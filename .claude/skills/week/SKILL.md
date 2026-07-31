@@ -1,3 +1,5 @@
+<!-- kit: attention/week@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: week
 description: The weekly pass — synthesis against the radar questions, near-miss audit, and the decay review that prunes the attention map. Run Saturday or when convenient.

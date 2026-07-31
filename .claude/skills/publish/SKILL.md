@@ -1,3 +1,5 @@
+<!-- kit: attention/publish@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: publish
 description: Push the attention map's public-flagged threads to theprojection.org — stages by default, --push to go live.

@@ -1,3 +1,5 @@
+<!-- kit: attention/daily@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: daily
 description: Produce/refresh today's intelligence read — finalize yesterday, check the expectations ledger, collect, curate + tag all three lenses, write thread timelines, render + republish the weekly page, then take Ben's steering.

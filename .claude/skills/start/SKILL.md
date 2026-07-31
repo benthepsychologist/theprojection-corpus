@@ -1,3 +1,5 @@
+<!-- kit: common/start@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/common/start/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: start
 description: Session-bootstrap card — fuses the generic continuation ritual (docs, memory, git log) with kestrel's live pipeline state (digest status, expectations due, flash rail, freshness, push safety). Read-only; run at the start of any session.

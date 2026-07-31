@@ -1,3 +1,5 @@
+<!-- kit: attention/crawl@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/crawl/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: crawl
 description: Backward crawl — pull the backstory of a thread or topic from the external sources into a finding with a provenance bundle. Depth on demand.

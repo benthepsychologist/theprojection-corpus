@@ -1,3 +1,5 @@
+<!-- kit: common/map@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/common/map/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: map
 description: Read-only status card of the attention map and pipeline — lenses, thread freshness, radar modes, last digest, open gates. Safe any time.

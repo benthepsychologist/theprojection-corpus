@@ -1,3 +1,5 @@
+<!-- kit: attention/classify@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: classify
 description: Place an actor on the board (attention/board.yaml) — propose its structural kind (state/kingdom/house), posture/condition, and axis estimate (capitalization/optionality/gravity) in neutral kinds, show the reasoning, apply on Ben's confirm. The judgment entry point for the power layer.

@@ -1,3 +1,5 @@
+<!-- kit: attention/steer@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/steer/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+
 ---
 name: steer
 description: Apply a steering utterance to the attention map — track X, drop Y, add a question, go deeper on Z. One command, small provenance-tagged edits, immediate.
