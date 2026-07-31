@@ -16,13 +16,13 @@ the dated notes under it).*
 > the rendered read page and a full staged publish came out
 > byte-identical before and after the move, running the tools with no
 > env fails loudly rather than silently reading stale paths, and the
-> bh-compliance instance's sweep was unaffected. Receipt links on the
+> therapybulletin (then bh-compliance) instance's sweep was unaffected. Receipt links on the
 > public site now point into this repo (private — Ben sees them, the
 > public 404s; a public receipt export is an open item on the engine's
 > ledger). Pre-split history: kestrel's git history, tag
-> `pre-engine-split` and earlier. **GitHub remote is wired but the repo
-> needs creating** (`benthepsychologist/theprojection-data`, private) —
-> until then this repo is local-only and unpushed.
+> `pre-engine-split` and earlier. GitHub repo created same day
+> (`benthepsychologist/theprojection-data`, private) — auto-init merged,
+> extraction history fully pushed.
 
 > **2026-07-30 (evening) — the Global Capital rename had silently orphaned
 > its own briefing; fixed, and the freshness gap that caused it closed.**

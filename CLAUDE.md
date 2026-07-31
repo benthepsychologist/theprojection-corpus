@@ -11,7 +11,7 @@ it (rendered page + daily digest archive; AGENTS.md disciplines 7–8).
 This repo is **instance #1** of the kestrel engine — the DATA (attention/,
 artifacts/, sources/, provenance/, templates/) plus the operating skills
 and docs. The CODE (collectors/, tools/) lives in `/workspace/kestrel`,
-which tends this repo and `bh-compliance-data` both. `kestrel.yaml` at this
+which tends this repo and `therapybulletin-data` both. `kestrel.yaml` at this
 root is the instance manifest.
 
 **Invocation rule:** any `tools/*.py` mentioned in the skills/docs means
