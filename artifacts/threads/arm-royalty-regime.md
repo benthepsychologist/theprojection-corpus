@@ -17,6 +17,16 @@ post-Qualcomm-settlement licensing landscape, royalty-rate trajectory, and
 whether Arm converts leverage into economics (or gets designed around —
 RISC-V).
 
+## 2026-07-31 — A one-day snapback: Arm +9% on the broad Tokyo chip rally
+
+- **Arm rose 9% overnight** as part of a broad Tokyo AI/semiconductor
+  rally (Nikkei 225 +4.37%) triggered by strong US tech earnings —
+  reversing, at least for one session, the guidance-cut selloff that
+  closed out 07-29's beat-and-raise coverage. See `softbank-all-in` for
+  the fuller Tokyo-session read (SoftBank itself hit limit-up the same
+  day, still ahead of its own 08-06 earnings).
+  ([Bloomberg Japan](https://www.bloomberg.com/jp/news/articles/2026-07-31/TJ0K57KJH6V400)) ⟨daily 2026-07-31⟩
+
 ## 2026-07-29 — A clean beat-and-raise, and the stock fell anyway
 
 - **Q1 FY2027: revenue $1.289B (+22%), royalty $715M (a Q1 record),

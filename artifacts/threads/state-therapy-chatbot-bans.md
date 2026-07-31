@@ -13,6 +13,18 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-07-31 — A federal companion-chatbot bill surfaces (see also `grok-companion-harm`)
+
+- **A federal bipartisan companion-chatbot bill for minors was
+  introduced 2026-07-28** (Sens. Andy Kim D-NJ / Jon Husted R-OH,
+  S.5154, "Children Harmed by AI Technology Act 2.0") — the preemption
+  pressure this thread's watch line has been tracking now has a concrete
+  federal vehicle: a tiered risk-based framework on AI companion
+  chatbots, referred to Senate Commerce. Full detail logged on
+  `grok-companion-harm`'s 07-31 entry; noted here for the preemption
+  angle specifically.
+  ([congress.gov S.5154](https://www.congress.gov/bill/119th-congress/senate-bill/5154)) ⟨daily 2026-07-31⟩
+
 ## 2026-07-29 — Maine in force; SB 903's Appropriations clock still unresolved
 
 - **Maine's LD 2082 barring AI-delivered therapy took effect today** —

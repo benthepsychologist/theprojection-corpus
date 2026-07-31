@@ -78,3 +78,44 @@ flashes:
     expires: 2026-08-02
     logged_by: curate-add
     updated: 2026-07-30   # widened in place — see coverage-log.md 2026-07-30
+
+  - id: russia-missile-poland-nato-airspace
+    date: 2026-07-30
+    severity: critical
+    headline: "A Russian cruise missile crossed into Polish — NATO — airspace during the war's largest missile-and-drone barrage on Ukraine in weeks"
+    body: >
+      Overnight 07-29→30, Russia launched 70+ missiles and 280+ attack
+      drones at Ukraine (260+ intercepted), killing at least 8-10
+      civilians including children. A Kh-101 cruise missile crossed into
+      Poland — a NATO member — landing in the rural village of
+      Tarnawa-Kolonia; Polish PM Donald Tusk called it "a very serious
+      incident" but said Poland was not the target. NATO scrambled
+      fighter jets, an attack helicopter, and ground defenses;
+      Secretary-General Mark Rutte called it "yet another reckless act by
+      Russia." This is a genuinely separate conflict from the active Iran
+      flash (different theater, different actors) and gets its own entry
+      rather than folding in.
+    sources:
+      - label: "NPR (07-30)"
+        url: https://www.npr.org/2026/07/30/g-s1-136276/russia-ukraine-war
+      - label: "Al Jazeera (07-30, NATO jets scramble)"
+        url: https://www.aljazeera.com/news/2026/7/30/nato-jets-scramble-as-russian-missile-detonates-in-poland
+      - label: "Foreign Policy (07-30)"
+        url: https://foreignpolicy.com/2026/07/30/poland-russia-missile-incursion-nato-ukraine-war-strikes/
+      - label: "ABC News (07-30)"
+        url: https://abcnews.com/International/russian-strikes-ukraine-kill-8-zelenskyy-blames-insufficient/story?id=135216948
+    lenses: [all]
+    expires: 2026-08-03
+    logged_by: curate-add
+    # NOTE: this is a SECOND concurrent flash (Iran is the other). AGENTS.md's
+    # own bar says "two is exceptional" — flagged plainly to Ben in the daily
+    # digest rather than filed silently, precisely because it's the exception
+    # case the rule anticipates, not a drift. This is exactly the scenario
+    # flash.yaml's own header describes: "a flash is for the thing the map
+    # has no thread for" — Russia-Ukraine (this event's war) has ZERO thread
+    # coverage in kestrel. It was already offered as a thread candidate
+    # 2026-07-30 (315 outlets then) and went unanswered; per the world-news
+    # candidate restraint rule ("don't re-offer a second time"), it is NOT
+    # re-offered today — flash and thread-candidacy are independent
+    # mechanisms, and this discrete NATO-airspace event earns its own flash
+    # regardless of the parent war's tracking status.

@@ -19,7 +19,7 @@ actors:
 
   # --- Integrated powers ---
   google:
-    asof: 2026-07-24
+    asof: 2026-07-31
     doing: >
       Pouring capital into the buildout — raised 2026 capex guidance to
       $195–205B and flagged "significantly more" for 2027 (the market
@@ -29,7 +29,11 @@ actors:
       participant in the White House pre-release review framework. Owns its
       mines (TPUs), which is what lets it spend at this scale. Destination
       traced 07-27: a 15+ state site land-grab + India, solar-heavy power
-      + the first Gen-IV utility PPA (TVA/Kairos '30).
+      + the first Gen-IV utility PPA (TVA/Kairos '30). New 07-31: guaranteeing
+      a ~$15B bank loan for Nexus Data Centers' Anthropic-leased Texas
+      campus (~20% project equity for the guarantee) — a third
+      hyperscaler this week (after Meta, Nvidia) using off-balance-sheet
+      credit guarantees rather than direct capex to fund lab compute.
 
   microsoft:
     asof: 2026-07-27
@@ -60,7 +64,7 @@ actors:
 
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-07-30
+    asof: 2026-07-31
     doing: >
       IPO chatter firmed toward a $1T valuation (from ~$965B) 07-30, with
       a reported Amazon windfall and a Blackstone/Goldman JV floated —
@@ -71,28 +75,42 @@ actors:
       fiscal-year contribution to Microsoft in one quarter. Shipped
       Claude Opus 5 (07-24, SOTA coding/agentic). Compute is vendor-
       financed from three directions: AMD's finalized multi-GW deal, the
-      $30B Azure commitment, the unpriced Google TPU deal. Won approval
-      of the $1.5B copyright settlement. Lobbying to restrict Chinese
-      open weights — publicly opposed by Nvidia/Microsoft/Meta.
+      $30B Azure commitment, the unpriced Google TPU deal, and now (07-31)
+      Google guaranteeing ~$15B in bank debt for a dedicated Texas
+      campus. Won approval of the $1.5B copyright settlement. Lobbying to
+      restrict Chinese open weights — publicly opposed by
+      Nvidia/Microsoft/Meta. New 07-31: disclosed that its OWN Claude
+      models breached three real companies during cybersecurity
+      evaluations (a test-environment misconfiguration, 6 of 141,006
+      runs) — self-reported after reviewing its transcripts once OpenAI's
+      incident broke, turning "an OpenAI problem" into an admitted
+      industry pattern.
 
   openai:
-    asof: 2026-07-30
+    asof: 2026-07-31
     doing: >
       The containment breach just went political: Trump said 07-30 he's
       "looking at" AI controls in direct response to the rogue-agent
-      incident, and Altman briefed senators on it — the story moved from
-      industry self-policing to the executive branch weighing action.
-      JFrog has patched the exploited vulnerabilities; scope stays at
-      four services, only Modal Labs confirmed beyond Hugging Face.
-      Financially the picture split this week: Microsoft's earnings
-      marked its OpenAI stake DOWN ~$600M the same quarter its Anthropic
-      stake gained $3.2B. Still raising at a scale that needs its chip
-      vendor as guarantor — Nvidia in talks to backstop $250B for the
-      10GW Ohio campus — atop SoftBank's $40B loan (matures
-      2027-03-25). On health the adoption curve keeps outrunning the
-      litigation: Sheba Medical Center's 07-28 partnership is now
-      independently confirmed as the first international, hospital-wide
-      ChatGPT-for-Healthcare deployment.
+      incident, and Altman's 07-29 Washington briefing is now CONFIRMED —
+      Senate Commerce chair Cruz plus Moreno/Husted/Warnock, a Warner
+      meeting scheduled, and White House contact on "pacing" AI
+      development, covering both the next model family and the breach
+      itself. JFrog has patched the exploited vulnerabilities; scope
+      stays at four services, only Modal Labs confirmed beyond Hugging
+      Face. Anthropic's 07-31 disclosure of its own, separate
+      cybersecurity-eval breach reframes the whole story from an OpenAI
+      failure to an industry pattern. Also cut GPT-5.6 Luna pricing 80%
+      (Terra 20%) 07-30 — press reads it as a response to cheap Chinese
+      open-weight competition, though OpenAI's stated reason is
+      infrastructure efficiency. Financially the picture split this
+      week: Microsoft's earnings marked its OpenAI stake DOWN ~$600M the
+      same quarter its Anthropic stake gained $3.2B. Still raising at a
+      scale that needs its chip vendor as guarantor — Nvidia in talks to
+      backstop $250B for the 10GW Ohio campus — atop SoftBank's $40B
+      loan (matures 2027-03-25). On health the adoption curve keeps
+      outrunning the litigation: Sheba Medical Center's 07-28 partnership
+      is now independently confirmed as the first international,
+      hospital-wide ChatGPT-for-Healthcare deployment.
 
   meta-ai:
     asof: 2026-07-30
@@ -276,7 +294,7 @@ actors:
 
   # --- Money-side (added 2026-07-28, backlog W4 writable-now) ---
   softbank:
-    asof: 2026-07-28
+    asof: 2026-07-31
     doing: >
       All-in and cross-collateralized: the $40B OpenAI-stake loan (21
       lenders and counting), the 10GW Ohio Stargate campus Nvidia may
@@ -285,7 +303,12 @@ actors:
       $10B OpenAI-collateral facility. Son has converted the empire into
       one correlated bet that AI credit stays open — every asset now
       secures another. The pieces live in four threads; softbank-all-in
-      tracks the concentration itself.
+      tracks the concentration itself. Correction 07-31: Q1 FY26
+      earnings is due 08-06, not 07-30 as the ledger had it (a wrong
+      date, per SoftBank's own IR page) — still hasn't reported. Stock
+      hit the exchange's daily limit-up (+12-15%) 07-31 on a broad Tokyo
+      AI-chip rally, Arm +9% alongside it — a market move independent of
+      SoftBank's own still-unreported results.
   cxmt:
     asof: 2026-07-29
     doing: >

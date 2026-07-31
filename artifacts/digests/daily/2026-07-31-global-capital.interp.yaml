@@ -1,0 +1,58 @@
+# <date>-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (a dedicated key namespace — see
+# tools/render_read.py's load_interpretations()). Validated by
+# tools/readouts.py's validate_interpretation() before being written here;
+# the bullet's own <!-- k: ... --> annotation carries interp=yes to point
+# at its entry.
+
+google-guarantees-a-15b-bank-loan-backing-anthrop:
+  mechanism: >
+    Hyperscalers are increasingly financing AI-lab buildout through
+    off-balance-sheet guarantees to third-party developers rather than
+    direct capex or public bond issuance — Google backstopping Nexus
+    Data Centers' bank debt for Anthropic's Texas campus is the same
+    structure already seen this week from Meta/BlackRock (El Paso) and
+    Nvidia/OpenAI. Read against the standing rate picture
+    (capital-context.yaml: 30-year Treasury near 5.24%, highest since
+    2007), a guarantee lets a AAA-adjacent balance sheet lower a
+    project's borrowing cost without the parent issuing debt itself or
+    carrying the asset on its own books — cheaper capital, but the
+    credit risk is real even if it's contingent rather than funded.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The pattern keeps spreading — more hyperscaler-guaranteed,
+        third-party-developer financing structures appear as the
+        default way to fund frontier-lab compute buildout, keeping
+        headline capex figures from fully capturing the hyperscalers'
+        true credit exposure.
+      why: >
+        Three such structures (Meta/BlackRock, Nvidia/OpenAI,
+        Google/Anthropic) landing inside one week suggests this is
+        becoming the standard playbook, not a one-off, especially while
+        long-end borrowing costs stay elevated.
+      precedent: >
+        Meta's El Paso JV with BlackRock (07-23/24, ~$10B/1GW) and
+        Nvidia's guarantee structure backing OpenAI's compute
+        commitments both used the same off-balance-sheet logic within
+        the same week, establishing the pattern this item extends.
+    - direction: >
+        A single high-profile default or credit event on one of these
+        guarantee structures forces rating agencies and lenders to
+        reprice the whole category, tightening terms across all of
+        them at once.
+      why: >
+        Contingent guarantees are, by construction, thinly disclosed
+        until something goes wrong — a cluster of similar structures
+        sharing correlated underlying risk (AI-compute demand) is
+        exactly the setup where one stress event repricing the group is
+        a known pattern in credit markets.
+      precedent: ""
+  context_note: >
+    Sits alongside this week's CoreWeave debt-repricing (spread widened
+    to 5.5pp over benchmark, priced at 96-97 cents on the dollar) as a
+    second data point on how AI-infrastructure credit is actually
+    priced right now, not just how much capex is guided — the standing
+    macro picture's elevated long-yield environment (capital-context.yaml
+    rate_regime) is the backdrop both are pricing against.

@@ -13,6 +13,16 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-07-31 — OpenAI cuts GPT-5.6 pricing 80%, read by the press as a China-pressure response
+
+- **OpenAI cut GPT-5.6 Luna pricing 80% (Terra 20%)** — press coverage
+  frames it as a response to cheap Chinese open-weight competition
+  (DeepSeek, Kimi K3, MiniMax) undercutting on price, though OpenAI's own
+  stated rationale was infrastructure efficiency (GPU utilization,
+  speculative decoding) — the China-competition read is press inference,
+  not a company statement.
+  ([the-decoder](https://the-decoder.com/openai-goes-full-china-pricing-mode-with-an-80-percent-cut-to-its-most-affordable-gpt-5-6-model/), [CNBC](https://www.cnbc.com/2026/07/30/open-ai-price-cut-gpt.html)) ⟨daily 2026-07-31⟩ — confidence: medium on the causal framing specifically.
+
 ## 2026-07-30 — Moonshot's raise closes smaller than reported; DeepSeek pauses its own
 
 - **Moonshot's Series F closed at $35B, not the $50B target** flagged

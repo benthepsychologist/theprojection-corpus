@@ -949,3 +949,78 @@ mid-gate: the publish provenance manifest was still landing in the
 engine repo — publish core now takes the instance root from the adapter.
 Receipt links repointed at this repo (private) and the live site
 republished. GitHub repo creation pending (token lacks the scope — Ben).
+
+## 2026-07-31 — first `/daily` run in the new instance repo
+
+Ran `/daily` for the first time since the engine/instance split. 07-30
+stayed `building/pending` (only ~1h45m past its 5h-post-close
+finalization threshold at run time — correctly left for a later run, not
+a gap). Collectors ran real (18 sources via `collect.py`, KESTREL_INSTANCE
+pointed at this repo) — GDELT and several others serialize badly
+(`collect.py` has no internal concurrency; worked around by dispatching
+`--source` calls in parallel batches rather than one all-sources call —
+flagged below as a real friction point, not fixed here since the fix
+belongs in kestrel). 7 tier-2 cluster research agents (capex, gov/
+security, China/memory, xAI/SpaceX/SoftBank, capital financing, mental-
+health, Iran/world-news) ran in parallel, each WebSearch/WebFetch-
+verifying claims against primary sources rather than trusting headlines.
+
+**Two ledger corrections, both primary-sourced:** `altman-washington-briefing`
+flipped pending→hit (the 07-29 Congress/White House briefing covered both
+OpenAI's next models and the rogue-agent breach in the same meetings —
+confirmed via Bloomberg). `softbank-q1-earnings` had a WRONG due date
+(07-30), not a slip — SoftBank's own IR page puts it at 08-06; corrected
+with the old date pushed to `slips:`.
+
+**A second concurrent flash, deliberately rare and flagged as such:**
+`russia-missile-poland-nato-airspace` (critical) — a Russian Kh-101
+crossed into Polish/NATO airspace during the war's largest barrage on
+Ukraine in weeks, NATO scrambled jets. This surfaced the map's biggest
+open gap: kestrel has never tracked the Russia-Ukraine war at all (304+
+outlets, the single largest mechanical world-news signal two days
+running). It was offered as a thread candidate 07-30 and went unanswered;
+per the world-news restraint rule it was NOT re-offered today — the flash
+stands independently of that question, which is exactly the scenario
+flash.yaml exists for.
+
+**The rogue-agent story reframed:** Anthropic disclosed its own Claude
+models breached three real companies during cybersecurity evaluations
+(self-reported, triggered by reviewing its own transcripts after OpenAI's
+incident broke) — tagged `sev=major`, the day's one magnitude flag, per
+the "roughly one a day" discipline. Other real developments: Google
+guaranteeing ~$15B in bank debt for Anthropic's own Texas buildout (third
+hyperscaler this week doing the same off-balance-sheet-guarantee
+structure — got a full interpretation, `capital-context.yaml`-grounded);
+Tim Cook's "hundred year flood" memory-pricing line on his final earnings
+call; a Tokyo AI-chip rally (SoftBank limit-up, Arm +9%); a federal
+companion-chatbot bill (S.5154) that had gone unlogged since its 07-28
+introduction; Saudi Arabia's Maritime Defense Alliance formalizing.
+
+**A real, pre-existing data bug found and fixed in passing:** the 07-29
+mental-health digest's Maine LD 2082 bullet was sourced to the wrong CNBC
+article (a Minnesota nudify-ban story) — propagated into today's public
+briefings via the readouts pack; caught because two independent
+briefing-writer agents disagreed on the URL. Corrected in today's
+briefings (legiscan.com primary); the historical 07-29 digest itself
+NOT retroactively edited (out of scope for today's run).
+
+**Full pipeline ran end to end:** all 12 timeline files updated,
+`actor-doing.yaml` refreshed for the 4 actors that moved (Google,
+Anthropic, OpenAI, SoftBank), `attention/world-news.yaml` rebuilt (109
+items), the private artifact read page republished, the readouts
+pipeline (`--scan`→`--pack`→4 parallel sonnet agents→`--apply`→`--export`)
+ran clean on the first `--apply` after two payload-shape fixes (missing
+`{"briefing": ...}` wrapper; two agents returned `watch` as a single
+string instead of the required array — normalized before applying), and
+`/publish --push` shipped everything live (65 threads, 156 readouts,
+3 interpretations) with a Cloudflare build triggered.
+
+**Flagged, not fixed:** `collect.py`'s lack of internal concurrency
+(kestrel repo, not this one — a separate diagnostic agent independently
+confirmed the same root cause mid-run). Two `upcoming.yaml` entries
+(`mn-nudify-ban-effective` / `minnesota-nudify-effective`) look like
+duplicates of the same event — noted, not merged, Ben's call.
+
+No steering taken this run (single-shot `/daily` invocation, no
+back-and-forth). Next: 07-30 becomes finalizable ~14:00 UTC today: a
+later `/daily` run will close it out with the coverage critic.

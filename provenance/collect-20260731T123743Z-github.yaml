@@ -1,0 +1,35 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-07-31T01:20:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: true
+fetched_at: '2026-07-31T12:37:43Z'
+items:
+- id: gh-release-363044169
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10203
+  ts: '2026-07-31T12:14:34Z'
+- id: gh-release-363028366
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10202
+  ts: '2026-07-31T11:41:04Z'
+- id: gh-release-362971924
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10201
+  ts: '2026-07-31T09:45:49Z'
+- id: gh-release-362973100
+  url: https://github.com/openai/codex/releases/tag/rust-v0.147.0-alpha.1.1
+  ts: '2026-07-31T09:48:25Z'
+- id: gh-release-362844608
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.29.2
+  ts: '2026-07-31T06:56:45Z'

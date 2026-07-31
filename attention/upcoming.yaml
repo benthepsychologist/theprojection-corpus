@@ -71,7 +71,19 @@ expectations:
     what_confirms: "reporting that the meetings happened (week of 07-27)"
     logged: 2026-07-22
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-07-29
+    evidence: >
+      Confirmed by primary reporting: Altman met Senate Commerce chair Ted
+      Cruz, plus Bernie Moreno, Jon Husted, Raphael Warnock, and was
+      scheduled with Mark Warner (Senate Intelligence) on 2026-07-29,
+      discussing OpenAI's next model family AND the rogue-agent breach in
+      the same meetings. He also told reporters he'd spoken with White
+      House officials (incl. a scheduled meeting with Chief of Staff
+      Susie Wiles) about "pacing" AI development and reviewed the EO
+      14409 framework. Sources: Bloomberg
+      (bloomberg.com/news/articles/2026-07-29/openai-ceo-sam-altman-discusses-next-ai-model-with-us-lawmakers),
+      corroborated by CNBC via cnycentral.com.
 
   - id: fomc-july-decision
     claim: "FOMC rate decision (market pricing ~24% hike odds as of 07-21)"
@@ -688,13 +700,21 @@ expectations:
 
   - id: softbank-q1-earnings
     claim: "SoftBank Q1 FY26 earnings — Arm's post-earnings slide and the OpenAI bridge loan both bear on the print"
-    due: 2026-07-30
+    # 07-31 ⟨daily⟩: due date was WRONG, not slipped. SoftBank's own IR page
+    # (group.softbank/en/event/earnings_2026q1) shows the Q1 FY2026 briefing
+    # scheduled for 2026-08-06, 4:30pm JST (report disclosed 3:30pm JST same
+    # day) — placeholders for all Q1 materials as of this check. The
+    # 07-30 date traced to a single secondary source (marketbeat.com) that
+    # was never corroborated. Old date pushed to slips:, corrected against
+    # the primary IR source.
+    due: 2026-08-06
     due_precision: day
+    slips: [2026-07-30]
     thread: softbank-all-in
     entities: [softbank, arm]
-    source: https://www.marketbeat.com/
-    confidence: reported
-    what_confirms: "SoftBank's own earnings release"
+    source: https://group.softbank/en/event/earnings_2026q1
+    confidence: confirmed
+    what_confirms: "SoftBank's own earnings release, 3:30pm JST 08-06"
     logged: 2026-07-30
     logged_by: curate-add
     status: pending
