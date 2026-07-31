@@ -51,7 +51,7 @@ renders one card, in this order:
    in `coverage-log.md`) for when `/week` last ran; newest
    `provenance/publish-*.yaml` timestamp for when `/publish` last ran.
 6. **Push safety** — run `git log @{u}..` in **both** `/workspace/kestrel`
-   and `/workspace/theprojection`. This is the one check `/map` doesn't
+   and `/workspace/theprojection-site`. This is the one check `/map` doesn't
    do and it's load-bearing: AGENTS.md §Session close documents that
    `/publish --push` pushes theprojection's deploy hook and **nothing**
    ever pushes kestrel automatically, so unpushed kestrel commits
