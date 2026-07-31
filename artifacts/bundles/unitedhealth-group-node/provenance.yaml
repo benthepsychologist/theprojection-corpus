@@ -1,0 +1,65 @@
+# Bundle — health node: unitedhealth-group (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml unitedhealth-group. EXTENDS the
+# axis strings on board.yaml with posture and the in/out/available/operating/
+# deployed breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: unitedhealth-group
+name: "UnitedHealth Group"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: at-war
+  basis: "DOJ criminal + civil Medicare probe (2025) + nH Predict AI claim-denial suit + post-Thompson claim-denial backlash define the moment; Optum stays the M&A lever but buybacks were slashed under the legal overhang."
+  sources:
+    - {figure: "under criminal and civil federal investigation over Medicare practices (2025); nH Predict / naviHealth algorithm suit alleges ~90% denial error rate; UnitedHealthcare CEO Brian Thompson killed Dec 4 2024 amid claim-denial backlash", label: "Wikipedia — UnitedHealth Group (recent developments)", url: "https://en.wikipedia.org/wiki/UnitedHealth_Group", as_of: "2026-07", confidence: med}
+    - {figure: "nH Predict suit ~ Estate of Lokken v. UnitedHealth (MA post-acute denials); origin ProPublica/STAT reporting — NOT fetched this session, verify vs primary docket", label: "general knowledge — flagged for verification", url: "", as_of: "2026-07", confidence: low}
+
+capital:
+  available:
+    value: "~$31.5B cash + ~$57.7B total investments (float/reserves); board carries ~$89B investable incl. regulated reserves"
+    sources:
+      - {figure: "cash & equivalents $31,468M; total investments $57,716M (Jun 30 2026)", label: "stockanalysis.com UNH balance sheet", url: "https://stockanalysis.com/stocks/UNH/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+      - {figure: "~$89B float", label: "kestrel board.yaml unitedhealth-group capitalization axis — needs primary", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  operating:
+    value: "~$447.6B FY25 revenue (~$450B TTM); operating cash flow ~$19.7B FY25 / ~$27.0B TTM"
+    sources:
+      - {figure: "revenue $447,567M FY25 / $450,129M TTM; OCF $19,697M FY25 / $27,017M TTM (TTM to Jun 30 2026)", label: "stockanalysis.com UNH financials", url: "https://stockanalysis.com/stocks/UNH/financials/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$3.6B capex + ~$4.5B acquisitions + ~$5.5B buybacks committed FY25 (buybacks cut to ~$1.6B TTM under the DOJ overhang)"
+    sources:
+      - {figure: "capex $3,622M FY25; acquisitions $4,509M FY25; buybacks $5,545M FY25 -> $1,646M TTM", label: "stockanalysis.com UNH cash-flow statement + financials", url: "https://stockanalysis.com/stocks/UNH/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  in:
+    value: "inflows — ~$447.6B FY25 premiums + Optum services revenue"
+    sources:
+      - {figure: "total revenue $447,567M FY25", label: "stockanalysis.com UNH financials", url: "https://stockanalysis.com/stocks/UNH/financials/", as_of: "2025-12", confidence: high}
+  out:
+    value: "outflows — medical costs (MLR ~85%+) dominate; then ~$7.9B dividends + ~$5.5B buybacks + ~$4.5B M&A FY25"
+    sources:
+      - {figure: "dividends paid $7,916M; buybacks $5,545M; acquisitions $4,509M FY25", label: "stockanalysis.com UNH cash-flow statement", url: "https://stockanalysis.com/stocks/UNH/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "mixed — MLR caps the insurance core; Optum (Health/Rx/Insight) is the free M&A lever, but buybacks dropping $5.5B FY25 -> $1.6B TTM signal capital preservation under DOJ/legal overhang."
+  sources:
+    - {figure: "buybacks $5,545M FY25 -> $1,646M TTM; acquisitions still $4,509M FY25 (Optum lever active)", label: "stockanalysis.com UNH cash-flow statement", url: "https://stockanalysis.com/stocks/UNH/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+
+gravity:
+  value: "GROSS ~$447.6B/yr care dollars routed; >50M insured members + Optum touches ~200M/yr — the largest US care-dollar router."
+  sources:
+    - {figure: ">50M people insured; Optum = OptumHealth/OptumInsight/OptumRx; United Behavioral Health is the MH subsidiary", label: "Wikipedia — UnitedHealth Group", url: "https://en.wikipedia.org/wiki/UnitedHealth_Group", as_of: "2026-07", confidence: med}
+    - {figure: "Optum touches ~200M/yr", label: "kestrel board.yaml unitedhealth-group gravity axis — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+thrust:
+  value: "capex $3.6B FY25 - depreciation $1.0B FY25 (property/equipment only, excl. software & intangible amortization) + M&A $3.9B TTM (Jun 2026) = ~$6.5B thrust/yr"
+  weight_basis: "$309.7B total assets, balance sheet, Jun 30 2026 (most recent quarter; FY25 year-end was $309.6B, essentially flat)"
+  gravity_basis: "gravity carried at GROSS ~$447.6B/yr care-dollars routed, but the figure that matters is reach: >50M insured members + Optum touching ~200M/yr -- system throughput this large breaking would cascade through US care access; rationale, not a bottom-up buildup"
+  optionality_band: "constrained -- MLR floor (~85% of premium revenue must fund medical costs) legally caps redeployable capital in the insurance core; DOJ Medicare-fraud probe + nH Predict litigation have already cut buybacks $5.5B FY25 -> $1.6B TTM. Not fully 'locked': Optum M&A ($3.9B TTM acquisitions) remains an active, uncapped lever -- wave-F band picked as constrained (not locked) to stay compatible with this file's existing 'mixed' optionality framing above."
+  buybacks_ttm: "$1.6B TTM (down from $5.5B FY25; cash-flow statement, already cited above)"
+  sources:
+    - {figure: "total assets $309,727M (Jun 30 2026, most recent quarter / TTM column); $309,581M FY2025 year-end (Dec 31 2025)", label: "stockanalysis.com UNH balance sheet", url: "https://stockanalysis.com/stocks/UNH/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+    - {figure: "depreciation expense (Property, Plant and Capitalized Software note) $1.0B FY2025, $1.0B FY2024 -- reported separately from capitalized computer software amortization ($1.7B FY2025 / $1.4B FY2024) and from intangible-asset amortization; this is the clean depreciation-only figure used for thrust, per canon's warning against netting acquisition-intangible amortization", label: "UnitedHealth Group FY2025 10-K, Note 6 Property, Plant and Capitalized Software (XBRL detail)", url: "https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/R57.htm", as_of: "2025-12-31", confidence: high}
+    - {figure: "cash paid for acquisitions, net of cash acquired, $3,873M TTM (Jun 30 2026); capex $3,400M TTM", label: "stockanalysis.com UNH cash-flow statement", url: "https://stockanalysis.com/stocks/UNH/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "business combinations consideration transferred $4,800M for the 12 months ended Dec 31 2025 (FY25 cross-check vs. stockanalysis's $4,509M FY25 cash-paid acquisitions -- 10-K figure likely includes non-cash/contingent consideration; used stockanalysis's cash-paid TTM figure for the thrust calc per recipe's 'cash paid' instruction)", label: "UnitedHealth Group FY2025 10-K, Note 3 Business Combinations (XBRL detail)", url: "https://www.sec.gov/Archives/edgar/data/731766/000073176626000062/R87.htm", as_of: "2025-12-31", confidence: med}
+
+axes_num: { weight: 309.7, thrust: 6.5, gravity: 447.6 }  # $B — wave F, agent-derive 2026-07-28
+
+notes: "Biggest uncertainty is the legal/regulatory trajectory — the DOJ criminal Medicare probe + nH Predict AI-denial litigation make UNH the EPICENTER of the payer-ai-claim-denial thread; outcome could force restructuring of Optum's algorithmic utilization-management. Behavioral-health arm: United Behavioral Health / Optum Behavioral Health (the MH-lens hook). Members and Optum-reach are board-anchor estimates, not re-fetched primary."

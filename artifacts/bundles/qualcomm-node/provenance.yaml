@@ -1,0 +1,43 @@
+# Bundle — node posture + capital-flow: qualcomm (2026-07-26)
+# Extends board.yaml qualcomm axes. Method: WebFetch PRIMARY
+# (stockanalysis.com QCOM statements; WebSearch exhausted this session).
+node: qualcomm
+name: "Qualcomm"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: hedging
+  basis: "Returns most FCF (~$11.8B/yr buybacks + $3.8B dividends) from the mature Snapdragon/Android core while hedging handset concentration (Apple in-housing modems) with auto/IoT + a datacenter re-entry. Alt read: expanding — flagged."
+  sources:
+    - {figure: "Snapdragon / on-device-AI edge play; mostly-free cash, attempting a datacenter return", label: "kestrel board.yaml qualcomm gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$9.8B cash+STI (Q2 FY26, ended Mar 29 2026; cash $5.4B + ST inv $4.4B); net debt ~-$5.5B (total debt $15.3B)"
+    sources:
+      - {figure: "cash $5,435M + ST investments $4,364M = $9,799M; total debt $15,270M; net debt $5,471M", label: "stockanalysis.com QCOM balance sheet", url: "https://stockanalysis.com/stocks/QCOM/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$12.5B/yr FCF (TTM to Mar-2026); TTM operating cash flow $14.3B; FY2025 FCF $12.8B"
+    sources:
+      - {figure: "TTM OCF $14,285M, capex $1,783M, FCF $12,502M; FY2025 OCF $14,012M, FCF $12,820M", label: "stockanalysis.com QCOM cash-flow statement", url: "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "TTM buybacks ~$11.8B + dividends ~$3.8B (>$15B/yr returned to shareholders); capex ~$1.8B; auto/IoT + datacenter R&D"
+    sources:
+      - {figure: "TTM buybacks $11,777M + dividends $3,820M; capex $1,783M; FY2025 buybacks $9,906M + dividends $3,805M", label: "stockanalysis.com QCOM cash-flow statement", url: "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  in:
+    value: "FY2025 revenue $44.3B; TTM revenue $44.5B; TTM net income $9.9B"
+    sources:
+      - {figure: "FY2025 revenue $44,284M; TTM revenue $44,487M; TTM net income $9,923M", label: "stockanalysis.com QCOM income statement", url: "https://stockanalysis.com/stocks/QCOM/financials/", as_of: "2026-03", confidence: high}
+  out:
+    value: "buybacks ~$11.8B + dividends ~$3.8B + capex ~$1.8B — capital-return dominates outflows (>$15B/yr)"
+    sources:
+      - {figure: "TTM buybacks $11.8B + dividends $3.8B dominate outflows", label: "stockanalysis.com QCOM cash-flow statement", url: "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "mostly free but return-committed — modest net debt, but the bulk of FCF is pre-allocated to buybacks + dividends, leaving less true dry powder than the 'mostly free' label suggests"
+  sources:
+    - {figure: "TTM FCF $12.5B vs $15.6B returned (buybacks+dividends); net debt $5.5B", label: "stockanalysis.com QCOM cash-flow + balance sheet", url: "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+gravity:
+  value: "GROSS — the premium-Android ecosystem (Snapdragon; ~39% app-processor, ~50% baseband share); on-device-AI edge, plus nascent auto/IoT/PC footprints"
+  sources:
+    - {figure: "premium-Android ecosystem; ~39% app-processor, ~50% baseband", label: "kestrel board.yaml qualcomm gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "TTM revenue $44.5B (ecosystem-scale proxy)", label: "stockanalysis.com QCOM income statement", url: "https://stockanalysis.com/stocks/QCOM/financials/", as_of: "2026-03", confidence: high}
+notes: "Biggest uncertainty: Apple in-housing its modems is the core concentration risk; the datacenter re-entry is unproven; the auto/IoT diversification is real but small vs handset. Posture is hedging vs expanding depending on how one weights capital-return (mature) vs diversification (forward). Market cap ~$176B is a separate label."

@@ -1,0 +1,29 @@
+# Bundle — axis estimates: blackrock (2026-07-25)
+# The cited-source appendix for board.yaml blackrock {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted; live SEC EDGAR
+  endpoints returned stale-cached data thru 2024, so the FY2023 Annual
+  Report PDF was extracted directly and current AUM corroborated via
+  stockanalysis + Wikipedia). Gravity deliberately EXCLUDES AUM (that is
+  capitalization) and prices the Aladdin dependency at what it earns.
+
+capitalization:
+  value: "commands ~$15.3T AUM; owns ~$170B (commands/owns ~90x)"
+  sources:
+    - {figure: "$15.3T AUM (Q2 2026, Jun 30)", label: "stockanalysis.com overview (corroborated by Wikipedia)", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: high}
+    - {figure: "$10.0T AUM at Dec 31 2023 (primary floor)", label: "BlackRock 2023 Form 10-K / Annual Report (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1364742/000119312524087274/d759940dars.pdf", as_of: "2023-12", confidence: high}
+    - {figure: "$12.53T AUM at Jun 30 2025 (intermediate anchor)", label: "Wikipedia BlackRock", url: "https://en.wikipedia.org/wiki/BlackRock", as_of: "2025-06", confidence: med}
+    - {figure: "own balance sheet: total assets $170.0B, cash $9.84B, equity $63.3B", label: "stockanalysis.com — BLK balance sheet (Q1 2026)", url: "https://stockanalysis.com/stocks/BLK/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "constrained — fiduciary, ~64% index-passive; free corporate cash ~$10B = ~0.06% of commanded"
+  sources:
+    - {figure: "iShares ETF $3.5T + institutional index $2.9T = ~$6.4T (~64%) index/passive; active $1.9T; cash-mgmt $765B (of $10.0T)", label: "BlackRock 2023 Form 10-K — AUM composition Dec 31 2023 (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1364742/000119312524087274/d759940dars.pdf", as_of: "2023-12", confidence: high}
+    - {figure: "corporate cash ~$9.8-12.8B vs AUM $15.3T (~0.06%)", label: "stockanalysis.com balance sheet — free-vs-commanded ratio", url: "https://stockanalysis.com/stocks/BLK/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+gravity:
+  value: "~$1-2B/yr value-added (Aladdin dependency) — gravity << capitalization by ~4 orders"
+  sources:
+    - {figure: "~$21.6T assets monitored on Aladdin (2020) — a STOCK, not a flow, not value-added", label: "Wikipedia — Aladdin (BlackRock)", url: "https://en.wikipedia.org/wiki/Aladdin_(BlackRock)", as_of: "2020-12", confidence: med}
+    - {figure: "Technology Services revenue $1.5B (FY2023, Aladdin majority) = the real VA the dependency captures; >130,000 Aladdin users", label: "BlackRock 2023 Form 10-K (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1364742/000119312524087274/d759940dars.pdf", as_of: "2023-12", confidence: high}
+uncertainty: "The KEY finding is structural, not numeric: gravity (~$1-2B/yr VA) is ~4 orders below commanded capital ($15.3T) — BlackRock's power is commanded capital, not ecosystem dependency. Aladdin is real infrastructure that monetizes thinly. Under-threaded in kestrel."

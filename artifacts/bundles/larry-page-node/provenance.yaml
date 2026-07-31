@@ -1,0 +1,54 @@
+# Bundle — node posture + capital-flow: larry-page (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Founder-billionaire — control weights over paper wealth.
+# Alphabet is co-controlled by Page but is board-held_by sundar-pichai (google
+# node) — Page is a PASSIVE supervoting co-controller, not the operator.
+node: larry-page
+name: "Larry Page"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: dormant
+  basis: "Passive co-controller since stepping down as Alphabet CEO in Dec-2019 — no earnings calls since 2013, no press conferences/product launches since 2015; described by executives as a 'futurist' pursuing personal moon-shot ventures, not directing Alphabet operations. Power is latent/reserve, not in motion."
+  sources:
+    - {figure: "CEO of Alphabet Jul-2015 to Dec-4-2019; stepped down from all executive/day-to-day roles", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2019-12", confidence: high}
+    - {figure: "no press conferences since 2015, no product-launch or earnings-call presence since 2013; executives describe him as a 'futurist' focused on moon-shot projects", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$334.1B personal net worth (Bloomberg/Forbes, 2026) — mostly Alphabet Class B supervoting stock; among the largest personal piles tracked on this board, but LATENT (passive, non-operating)"
+    sources:
+      - {figure: "Bloomberg Billionaires Index / Forbes ~$334.1B (2026), 2nd-wealthiest individual globally", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2026", confidence: high}
+      - {figure: "deployable anchor: ~$140B — Alphabet super-voting co-control, but passive (needs Brin to act)", label: "kestrel board.yaml larry-page deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "does NOT operate Alphabet — Sundar Pichai is CEO (since Dec-2019); the realm (google node) is $402.8B/yr GROSS FY25 revenue ecosystem (ads ~$315B + Cloud $77.6B), held_by sundar-pichai, not larry-page"
+    sources:
+      - {figure: "google node: held_by sundar-pichai; capitalization ~$292B commandable/12mo; gravity ~$402.8B/yr GROSS FY25 revenue", label: "kestrel board.yaml google axes", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+      - {figure: "Sundar Pichai CEO of Alphabet since Dec-2019 (also CEO of Google)", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2019-12", confidence: high}
+  deployed:
+    value: "personal ventures outside Alphabet, all far smaller than the parent company: Tesla (investor), Kitty Hawk Corporation (flying-car/eVTOL backer, ceased ops, folded into Wisk Aero/Boeing 2022), Opener (flying-car startup), Dynatomics (AI-powered manufacturing, founded 2023)"
+    sources:
+      - {figure: "Kitty Hawk Corporation strategic backer, ceased operations and merged into Wisk Aero/Boeing (2022)", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2022", confidence: med}
+      - {figure: "Dynatomics — AI-powered manufacturing optimization, founded 2023", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2023", confidence: med}
+  in:
+    value: "Class B share appreciation; no dividend or realized-sale figures found this pass"
+    sources:
+      - {figure: "no personal dividend/sale figures disclosed on the fetched page", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2026-07", confidence: low}
+  out:
+    value: "personal venture funding into Kitty Hawk / Opener / Dynatomics / Tesla — dollar amounts not disclosed in the fetched source"
+    sources:
+      - {figure: "venture involvement named (Tesla, Kitty Hawk, Opener, Dynatomics) without dollar figures", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "mixed — holds Class B supervoting stock and is 'one of two controlling shareholders,' but is PASSIVE: needs Sergey Brin's aligned vote to act, and Pichai runs operations day-to-day. Latent control, not exercised control."
+  sources:
+    - {figure: "Page and Brin each hold ~3% of all shares directly but, together with other insiders, control the majority of voting shares; exact combined Class B % / formal voting-coordination agreement not specified on the fetched page", label: "Wikipedia — Alphabet Inc.", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2026-07", confidence: low}
+    - {figure: "board member, employee, one of two controlling shareholders (with Brin); no day-to-day executive role since Dec-2019", label: "Wikipedia — Larry Page", url: "https://en.wikipedia.org/wiki/Larry_Page", as_of: "2019-12", confidence: high}
+
+gravity:
+  value: "latent/reserve — Alphabet's $402.8B/yr GROSS revenue ecosystem moves on Pichai's operating say-so, not Page's; Page's own directly-controlled gravity is confined to small moon-shot ventures (Kitty Hawk/Dynatomics), orders of magnitude below Alphabet itself"
+  sources:
+    - {figure: "google gravity: ~$402.8B/yr GROSS FY25 revenue ecosystem (ads ~$315B + Cloud $77.6B); held_by sundar-pichai", label: "kestrel board.yaml google gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+notes: "Biggest uncertainty: the fetched Alphabet page does not give Page's exact Class B share count or a combined Page+Brin voting percentage ('each ~3% of shares... together with other insiders control the majority of voting shares' is imprecise) — flagged confidence: low, would need a proxy-statement figure to tighten. Net worth (~$334.1B, 2026) is notably HIGHER than Bezos or Arnault in this batch and is the single most surprising figure in this set of four bundles — worth an independent sanity check against another source before treating it as load-bearing. Personal venture dollar amounts (Kitty Hawk, Dynatomics, Opener) were not disclosed and are confidence: low."

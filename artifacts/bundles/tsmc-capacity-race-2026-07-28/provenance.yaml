@@ -1,0 +1,126 @@
+# Bundle — crawl finding tsmc-capacity-race-2026-07-28
+artifact: artifacts/findings/tsmc-capacity-race-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebSearch treated as exhausted (session-shared budget likely spent by
+  same-day /daily and /week sweeps). Three sonnet subagents ran WebFetch
+  sweeps in parallel: capex-trajectory + pricing, global fab buildout
+  (Arizona/Japan/Germany/Taiwan), and AI-order-book + China/geopolitics.
+  Each fetched Google News RSS search feeds (news.google.com/rss/search)
+  plus direct outlet, primary-source (NIST.gov, TSMC/pr.tsmc.com), and
+  aggregator (Wikipedia) URLs. Google News redirect links almost never
+  resolved to article body text on WebFetch (JS shell only) — where that
+  happened, the citation is the RSS feed item itself (outlet/title/date
+  from feed metadata), marked medium confidence rather than high.
+  TrendForce was the one outlet that repeatedly resolved full body text
+  on direct fetch and is marked high where so. No URL or figure was
+  fabricated; several claims are explicitly marked thin or "not found"
+  in the finding rather than guessed.
+queries:
+  google_news_rss:
+    - "TSMC 2026 capex guidance"
+    - "TSMC Q1 2026 earnings capex"
+    - "TSMC Q4 2025 earnings guidance"
+    - "TSMC Q2 2026 earnings July 2026"
+    - "TSMC price hike 2027 wafer"
+    - "TSMC AI chip demand C.C. Wei"
+    - "TSMC capital expenditure raised"
+    - "TSMC Arizona fab 2026"
+    - "TSMC Arizona $100 billion"
+    - "TSMC Phoenix fab third fourth"
+    - "TSMC Kumamoto Japan fab 2"
+    - "TSMC JASM Japan second fab"
+    - "TSMC Dresden Germany ESMC"
+    - "TSMC 2nm Taiwan Kaohsiung Hsinchu"
+    - "TSMC Taiwan capacity split overseas"
+    - "TSMC CoWoS capacity 2026"
+    - "TSMC advanced packaging expansion"
+    - "TSMC 2nm customers Nvidia Apple"
+    - "TSMC Nvidia order allocation 2026"
+    - "TSMC advanced node market share"
+    - "TSMC China export controls 2026"
+    - "TSMC Nanjing fab China"
+    - "TSMC Taiwan Strait geopolitical risk 2026"
+    - "TSMC silicon shield"
+  direct_sources_attempted:
+    - "https://en.wikipedia.org/wiki/TSMC (direct fetch, succeeded, high)"
+    - "https://www.trendforce.com/news/... (multiple articles, several direct fetches succeeded, high)"
+    - "https://www.nist.gov/... (CHIPS/Arizona $100B press release, direct fetch succeeded, high)"
+    - "pr.tsmc.com (partial — some press-release items resolved via RSS metadata only)"
+    - "Reuters/Bloomberg/Digitimes/azcentral article guesses — mostly 403/404, cited via RSS metadata instead"
+items:
+  # --- CAPEX TRAJECTORY & PRICING ---
+  - {id: capex-q4-2025-original, figure: "Original 2026 capex guidance set at $52-56B (up from ~$40B actual 2025)", url: "https://www.trendforce.com/news/2026/01/15/", label: "TrendForce + Yahoo Finance + Wccftech (via Google News RSS)", as_of: "2026-01-15", confidence: medium}
+  - {id: capex-ceo-nervous, figure: "CEO C.C. Wei quoted as 'very nervous' re: AI overbuild risk (headline/fragment, not independently verified)", url: "https://www.barchart.com/", label: "Barchart (via Google News RSS)", as_of: "2026-01-20", confidence: thin}
+  - {id: capex-q1-2026-topend, figure: "Q1 2026 call: guidance held $52-56B, pointed to top of range; FY revenue growth raised toward 30%+", url: "https://news.google.com/rss/search?q=TSMC+Q1+2026+earnings+capex", label: "Reuters + SCMP + Bits&Chips (via Google News RSS)", as_of: "2026-04-16", confidence: medium}
+  - {id: capex-q2-2026-raise, figure: "2026 capex lifted 15% to $60-64B; FY revenue growth raised to 'over 40%'; Q3 revenue guide $44.6-45.8B (~37% YoY); Q3 gross margin 65-67%, operating margin 56-58%; N2 ramp costs 3-4pt margin, overseas expansion 2-3pt widening to 3-4pt", url: "https://www.trendforce.com/news/2026/07/16/news-tsmc-lifts-2026-capex-15-to-60-64b-hikes-sales-outlook-to-over-40-despite-q3-margin-dip/", label: "TrendForce — direct fetch, primary body text", as_of: "2026-07-16", confidence: high}
+  - {id: capex-q2-2026-netprofit, figure: "Q2 2026 net profit +77% YoY to record NT$706.6bn (~$22B)", url: "https://en.wikipedia.org/wiki/TSMC", label: "Wikipedia — TSMC (convergent secondary)", as_of: "2026-07", confidence: high}
+  - {id: capex-wei-2030-demand, figure: "C.C. Wei: AI demand will run 'through 2030' (not 2029) — tied to the $100B Arizona/Q2 announcement", url: "https://news.google.com/rss/search?q=TSMC+AI+chip+demand+C.C.+Wei", label: "finance.biggo.com x2 + The Loadstar + Nikkei Asia (via Google News RSS)", as_of: "2026-07-16", confidence: medium}
+  - {id: capex-stock-drop-5pct, figure: "TSM shares fell ~5% post-Q2-earnings on margin-dilution/capex concerns despite the beat-and-raise", url: "https://news.google.com/rss/search?q=TSMC+capital+expenditure+raised", label: "TradingView + TradingKey, 3+ convergent outlets (via Google News RSS)", as_of: "2026-07-17", confidence: medium}
+  - {id: capex-2027-analyst-forecast, figure: "Pre-earnings analyst estimate: 2027 capex ~$78B (forecast, not company guidance)", url: "https://finance.biggo.com/", label: "finance.biggo.com (via Google News RSS)", as_of: "2026-07-05", confidence: thin}
+  - {id: pricing-2027-hike, figure: "TSMC in talks to raise baseline prices 5-10% on advanced nodes for 2027, AI/HPC surcharges up to 25%; spokesperson says 'not opportunistic', mature nodes also covered", url: "https://www.bloomberg.com/news/articles/2026-07-21/tsmc-in-talks-to-raise-prices-by-up-to-10-in-2027-nikkey-says", label: "Bloomberg/Nikkei + Tom's Hardware + Wccftech (via Google News RSS)", as_of: "2026-07-21", confidence: medium}
+  - {id: pricing-apple-nvidia-focus, figure: "TrendForce names Apple and Nvidia specifically as customers 'in focus' for HPC price premiums", url: "https://news.google.com/rss/search?q=TSMC+price+hike+2027+wafer", label: "TrendForce (via Google News RSS)", as_of: "2026-07-22", confidence: medium}
+  - {id: pricing-intel-room, figure: "Price hike reportedly gives Intel Foundry fresh competitive pricing room", url: "https://news.google.com/rss/search?q=TSMC+price+hike+2027+wafer", label: "Digitimes (via Google News RSS)", as_of: "2026-07-22", confidence: medium}
+  # --- GLOBAL BUILDOUT ---
+  - {id: az-100b-add-265b-total, figure: "Additional $100B announced 2026-07-16, bringing total US commitment to $265B; covers '12 leading edge semiconductor and packaging facilities'", url: "https://www.nist.gov/", label: "NIST.gov press release — direct fetch, primary", as_of: "2026-07-16", confidence: high}
+  - {id: az-4-more-2nm-fabs, figure: "'At least four more 2nm fabs' framing for the new Arizona commitment", url: "https://news.google.com/rss/search?q=TSMC+Arizona+%24100+billion", label: "Tom's Hardware + azcentral + AZ Family (via Google News RSS)", as_of: "2026-07-16", confidence: medium}
+  - {id: az-fab2-3nm-2h27, figure: "Arizona Fab 2 targeted for 3nm mass production 2H 2027; 'four US fabs fully booked' pre-dates the $100B add", url: "https://news.google.com/rss/search?q=TSMC+Arizona+fab+2026", label: "TrendForce (via Google News RSS)", as_of: "2026-03-24", confidence: medium}
+  - {id: az-packaging-2029, figure: "Arizona chip-packaging plant targeted to open by 2029", url: "https://news.google.com/rss/search?q=TSMC+Arizona+fab+2026", label: "Reuters (via Google News RSS)", as_of: "2026-04-22", confidence: medium}
+  - {id: az-20b-subsidiary, figure: "Additional $20B deployed into TSMC's Arizona subsidiary", url: "https://news.google.com/rss/search?q=TSMC+Arizona+fab+2026", label: "Business Journals (via Google News RSS)", as_of: "2026-05-13", confidence: medium}
+  - {id: az-water-labor, figure: "Arizona project 'proceeds well but faces water, labor challenges'", url: "https://news.google.com/rss/search?q=TSMC+Arizona+fab+2026", label: "Taipei Times (via Google News RSS)", as_of: "2026-05-12", confidence: medium}
+  - {id: jp-fab1-profit, figure: "Kumamoto Fab 1 swings to profit in Q1 2026", url: "https://news.google.com/rss/search?q=TSMC+Kumamoto+Japan+fab+2", label: "Taipei Times + Focus Taiwan (via Google News RSS)", as_of: "2026-05-16", confidence: medium}
+  - {id: jp-fab2-3nm-upgrade, figure: "Kumamoto Fab 2 upgraded from mature node to 3nm after Dec-2025 pause; Taiwan MOEA: sub-5nm production ~85% Taiwan / 15% US by 2030 even after Fab2's 3nm", url: "https://www.trendforce.com/", label: "TrendForce — direct fetch", as_of: "2026-02-06", confidence: high}
+  - {id: jp-fab2-approved-2028, figure: "Taiwan government formally approved Kumamoto Fab 2's 3nm upgrade; launch now targeted 2028", url: "https://news.google.com/rss/search?q=TSMC+JASM+Japan+second+fab", label: "Reuters + Taipei Times (via Google News RSS)", as_of: "2026-04-01", confidence: medium}
+  - {id: jp-no-third-fab, figure: "No third JASM fab found in this crawl — only Fab 1 (operating, profitable) and Fab 2 (upgraded, 2028 target)", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  - {id: de-esmc-groundbreak, figure: "ESMC Dresden JV (TSMC/Bosch/Infineon/NXP) broke ground; €3.5B TSMC into €10B+ factory, German govt €5B", url: "https://en.wikipedia.org/wiki/TSMC", label: "Wikipedia + pr.tsmc.com (convergent)", as_of: "2024-08-20", confidence: high}
+  - {id: de-equipment-2h26, figure: "Dresden fab entering structural build, equipment move-in targeted 2H 2026", url: "https://news.google.com/rss/search?q=TSMC+Dresden+Germany+ESMC", label: "TrendForce (via Google News RSS)", as_of: "2025-11-20", confidence: medium}
+  - {id: de-2029-full-ops, figure: "Dresden fab full-operational target 2029; eventual capacity 40,000 12-inch wafers/month; specialty nodes 12/16/22/28nm", url: "https://en.wikipedia.org/wiki/TSMC", label: "Wikipedia — TSMC", as_of: "2026-07", confidence: high}
+  - {id: tw-n2-mass-prod, figure: "N2 (2nm) mass production started by end of 2025", url: "https://news.google.com/rss/search?q=TSMC+2nm+Taiwan+Kaohsiung+Hsinchu", label: "The Straits Times (via Google News RSS)", as_of: "2025-12-31", confidence: medium}
+  - {id: tw-10-fabs-2026, figure: "Up to 10 fabs under construction or starting in Taiwan in 2026; NT$900B investment tied to a 3-more-fab 2nm push", url: "https://news.google.com/rss/search?q=TSMC+2nm+Taiwan+Kaohsiung+Hsinchu", label: "TrendForce (via Google News RSS)", as_of: "2026-02-23", confidence: medium}
+  - {id: tw-roadmap-a16-delay, figure: "Roadmap update names A12/A13/N2U upcoming; A16 (1.6nm) postponed to 2027", url: "https://news.google.com/rss/search?q=TSMC+2nm+Taiwan+Kaohsiung+Hsinchu", label: "GIGAZINE (via Google News RSS)", as_of: "2026-04-23", confidence: medium}
+  - {id: tw-huang-pushback, figure: "Jensen Huang publicly disputes '40% of Taiwan capacity moving to America' framing, calls US fabs additive not substitutive", url: "https://news.google.com/rss/search?q=TSMC+Taiwan+capacity+split+overseas", label: "Tom's Hardware (via Google News RSS)", as_of: "2026-01-13", confidence: medium}
+  - {id: tw-us-cant-match, figure: "Taiwan minister reportedly says US unlikely to match Taiwan's chipmaking capacity (headline only, full text not resolved)", url: "https://news.google.com/rss/search?q=TSMC+Taiwan+capacity+split+overseas", label: "Taipei Times (via Google News RSS)", as_of: "2026-07-02", confidence: medium}
+  # --- AI ORDER BOOK / PACKAGING ---
+  - {id: cowos-nvidia-half-booked, figure: "Nvidia reportedly booked over half of 2026-27 CoWoS capacity", url: "https://news.google.com/rss/search?q=TSMC+CoWoS+capacity+2026", label: "Digitimes + Wccftech (via Google News RSS)", as_of: "2025-12-10", confidence: medium}
+  - {id: cowos-gap-narrowing, figure: "CoWoS supply-demand gap reportedly narrowing from 20% to 10% by end-2026", url: "https://news.google.com/rss/search?q=TSMC+CoWoS+capacity+2026", label: "TrendForce (via Google News RSS)", as_of: "2026-06-15", confidence: medium}
+  - {id: cowos-80pct-cagr, figure: "Advanced-packaging capacity growing at ~80% CAGR; CoWoS the AI bottleneck", url: "https://news.google.com/rss/search?q=TSMC+advanced+packaging+expansion", label: "Digitimes (via Google News RSS)", as_of: "2026-04-10", confidence: medium}
+  - {id: cowos-booked-2028, figure: "TSMC's advanced-chip capacity described as 'booked out through 2028'", url: "https://news.google.com/rss/search?q=TSMC+advanced+packaging+expansion", label: "Dataconomy (via Google News RSS)", as_of: "2026-03-31", confidence: medium}
+  - {id: chiayi-packaging-fabs, figure: "Three new packaging fabs confirmed for Chiayi Science Park Phase II, Taiwan", url: "https://news.google.com/rss/search?q=TSMC+advanced+packaging+expansion", label: "Taiwan minister via Taipei Times/Reuters (via Google News RSS)", as_of: "2026-07-12", confidence: medium}
+  - {id: amkor-packaging-partnership, figure: "Long-term TSMC-Amkor partnership to build out US advanced packaging; expanded with a Nvidia-Amkor $1.5B piece", url: "https://news.google.com/rss/search?q=TSMC+advanced+packaging+expansion", label: "Business Wire + Electronics For You Business (via Google News RSS)", as_of: "2026-06-16", confidence: medium}
+  - {id: nvidia-overtakes-apple, figure: "Nvidia reportedly overtakes Apple as TSMC's single biggest customer", url: "https://news.google.com/rss/search?q=TSMC+Nvidia+order+allocation+2026", label: "Wccftech (via Google News RSS)", as_of: "2026-02-27", confidence: medium}
+  - {id: n2-first-customers, figure: "N2 first customers: Apple, AMD, Nvidia, MediaTek (not Intel); ~15 early customers, 10 HPC-class", url: "https://news.google.com/rss/search?q=TSMC+2nm+customers+Nvidia+Apple", label: "TechPowerUp + Wccftech + TechSpot, 3 convergent outlets (via Google News RSS)", as_of: "2025-09-16", confidence: medium}
+  - {id: apple-half-2nm, figure: "Apple secures roughly half of 2026 2nm capacity for iPhone 18/A20 generation", url: "https://news.google.com/rss/search?q=TSMC+2nm+customers+Nvidia+Apple", label: "MacRumors (via Google News RSS)", as_of: "2025-08-27", confidence: medium}
+  - {id: amd-mi400-n2, figure: "AMD Instinct MI400/MI455X + Helios rack launched on N2 (CDNA5) at Advancing AI 2026 — AMD's first AI-GPU gen on TSMC 2nm", url: "https://news.google.com/rss/search?q=TSMC+2nm+customers+Nvidia+Apple", label: "TechPowerUp/Wccftech (via Google News RSS)", as_of: "2026-07-23", confidence: medium}
+  - {id: n2-pricing-30k, figure: "2nm wafer pricing reportedly ~$30K/wafer, cited as a reason Nvidia/Apple might explore Samsung GAA as a hedge", url: "https://news.google.com/rss/search?q=TSMC+2nm+customers+Nvidia+Apple", label: "Wccftech (via Google News RSS)", as_of: "2026-06-15", confidence: medium}
+  - {id: adv-node-share-industry, figure: "Advanced nodes (<7nm) to be 60% of all foundry shipments in 2026 (industry-wide, not TSMC-specific share)", url: "https://news.google.com/rss/search?q=TSMC+advanced+node+market+share", label: "Counterpoint Research (via Google News RSS)", as_of: "2026-03-23", confidence: medium}
+  - {id: tsmc-overall-share-70pct, figure: "TSMC overall foundry market share 70.2% (Q2 2025 data)", url: "https://news.google.com/rss/search?q=TSMC+advanced+node+market+share", label: "Tom's Hardware (via Google News RSS)", as_of: "2025-09-01", confidence: medium}
+  - {id: adv-node-share-tsmc-notfound, figure: "No 2026-dated source found giving TSMC's specific numeric share of the sub-7nm segment — board's ~90%+ figure is a carried internal anchor, not freshly confirmed this crawl", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  # --- CHINA / GEOPOLITICS ---
+  - {id: china-veu-revoked, figure: "US formally revokes TSMC's fast-track/VEU waiver for shipping chipmaking tools to its China (Nanjing) fabs, effective end-2025", url: "https://news.google.com/rss/search?q=TSMC+China+export+controls+2026", label: "Reuters + Tom's Hardware + SCMP + Taipei Times + UPI + Asia Financial, 7+ convergent (via Google News RSS)", as_of: "2025-09-02", confidence: high}
+  - {id: china-license-restored, figure: "US restores continuity via new annual tool-import license for TSMC's Nanjing fab, alongside Samsung/SK Hynix approvals", url: "https://news.google.com/rss/search?q=TSMC+China+export+controls+2026", label: "Reuters + SCMP + Taiwan News + Tom's Hardware + Tech in Asia, 5 convergent (via Google News RSS)", as_of: "2026-01-01", confidence: high}
+  - {id: china-nanjing-most-profitable, figure: "2025 full-year breakdown: China (Nanjing) was TSMC's most profitable overseas unit; Arizona newly profitable, Japan losses widening", url: "https://news.google.com/rss/search?q=TSMC+Nanjing+fab+China", label: "TrendForce (via Google News RSS)", as_of: "2026-03-02", confidence: medium}
+  - {id: taiwan-curbs-china-exports, figure: "Taiwan weighing curbs on AI-chip exports to China to align with US policy; TSMC shares slip on the news despite strong May sales", url: "https://news.google.com/rss/search?q=TSMC+China+export+controls+2026", label: "Taipei Times + Yahoo Finance (via Google News RSS)", as_of: "2026-06-09", confidence: medium}
+  - {id: china-weighs-ban-local, figure: "China reportedly weighing tighter controls that would ban local Chinese companies from using TSMC (reversal of direction vs. prior US-outbound friction)", url: "https://news.google.com/rss/search?q=TSMC+China+export+controls+2026", label: "Financial Times via Tech Times/Tom's Hardware (via Google News RSS)", as_of: "2026-07-21", confidence: medium}
+  - {id: silicon-shield-reopened, figure: "Jan-2026 US-Taiwan semiconductor deal reopens 'silicon shield' debate — CNBC/WSJ/SCMP framing, incl. 'Taiwan has just sold out TSMC and half its chips industry to the US'", url: "https://news.google.com/rss/search?q=TSMC+silicon+shield", label: "CNBC + WSJ + SCMP, 3 convergent outlets (via Google News RSS)", as_of: "2026-01-18", confidence: medium}
+  - {id: taiwan-crisis-cost-modeling, figure: "Standing analyst modeling of a Taiwan-crisis economic shock ('$10 Trillion Fight'; comparisons to Strait of Hormuz disruption)", url: "https://news.google.com/rss/search?q=TSMC+Taiwan+Strait+geopolitical+risk+2026", label: "Bloomberg + Chatham House (via Google News RSS)", as_of: "2026-02-11", confidence: medium}
+notes: >-
+  Confidence key matches prior bundle convention (e.g.
+  google-capex-2026-07-27): high = primary source fetched directly
+  (TrendForce full-body, NIST.gov, Wikipedia's convergent synthesis), or
+  3+ independent outlets converge same-day/same-week. medium = single
+  outlet or a small convergent cluster via RSS feed metadata (title/
+  source/date confirmed real via the RSS feed itself, article body not
+  independently re-fetched — Google News redirect links almost never
+  resolved to article text this session, the one consistent exception
+  being TrendForce which resolved on several direct-fetch attempts).
+  thin = single outlet, unclear methodology, a speculative/rumor framing,
+  a contradicted claim, or an explicit crawl gap. No URL or figure in
+  this bundle was fabricated. Explicit unresolved gaps carried into the
+  finding's "what to watch": (1) no per-facility node/timeline breakdown
+  for the 12-facility $265B Arizona commitment; (2) no fresh 2026 source
+  independently confirms the board's ~90%+ advanced-node TSMC-specific
+  share anchor; (3) the Apple-vs-Nvidia "who's TSMC's biggest customer /
+  who lost priority-shipment status" narrative has directly contradicting
+  same-week headlines that were not resolved to primary text and should
+  not be treated as settled; (4) no dollar/percentage split found for how
+  much of the $60-64B 2026 capex is packaging (CoWoS) vs. wafer capacity.

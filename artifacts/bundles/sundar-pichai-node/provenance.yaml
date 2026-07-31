@@ -1,0 +1,45 @@
+# Bundle — node posture + capital-flow: sundar-pichai (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Hired CEO — operating capital is the strong axis;
+# ultimate Alphabet control sits with Page/Brin's supervoting stock, not him.
+node: sundar-pichai
+name: "Sundar Pichai"
+kind: person
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Runs Google/Alphabet's operational buildout (Gemini, TPU, Cloud) at ~$132B/yr TTM AI-capex pace as CEO; his posture tracks the org's expanding stance, but the ultimate strategic call sits with Page/Brin's supervoting control, not him alone."
+  sources:
+    - {figure: "posture: expanding (buildout-race dominant)", label: "kestrel board.yaml google axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "CEO of Google (since 2015) and Alphabet (since 2019)", label: "Wikipedia — Sundar Pichai", url: "https://en.wikipedia.org/wiki/Sundar_Pichai", as_of: "2026-02", confidence: high}
+capital:
+  available:
+    value: "~$1.6B personal net worth (Feb-2026) — modest vs the ~$3.90T market cap he runs; single-estimate figure, not SEC-verified"
+    sources:
+      - {figure: "net worth estimated at US$1.6 billion (Feb-2026)", label: "Wikipedia — Sundar Pichai", url: "https://en.wikipedia.org/wiki/Sundar_Pichai", as_of: "2026-02", confidence: low}
+  operating:
+    value: "commands Alphabet's ~$292B/12mo commandable corporate capital as CEO (cash+STI $126.8B Dec-2025 + ~$164.7B/yr operating cash flow, low leverage) — this is the real axis, not his personal wealth"
+    sources:
+      - {figure: "~$292B commandable/12mo ($126.8B cash+STI Dec-2025 + ~$164.7B/yr operating cash flow)", label: "kestrel board.yaml google axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "as CEO, steering ~$132B/yr TTM AI capex (self-earmarked) into Gemini, TPU, and Google Cloud buildout — a corporate bet he directs, not personal capital at risk"
+    sources:
+      - {figure: "optionality: free-leaning-mixed — ~$132B/yr TTM AI capex is self-earmarked", label: "kestrel board.yaml google axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  in:
+    value: "compensation topped $200M in 2022, with a Bloomberg Law-cited stock award pushing a subsequent year's total near $226M — RSU-driven, no confirmed figure past 2022-23"
+    sources:
+      - {figure: "compensation topped $200 million in 2022; pay 'soars to $226 Million on Huge Stock Award' (Bloomberg Law, cited)", label: "Wikipedia — Sundar Pichai", url: "https://en.wikipedia.org/wiki/Sundar_Pichai", as_of: "2023", confidence: med}
+  out:
+    value: "no personal stock-sale or philanthropic-giving figures disclosed on Wikipedia — data gap, not zero activity"
+    sources:
+      - {figure: "no stock-sale or giving figures found on page", label: "Wikipedia — Sundar Pichai", url: "https://en.wikipedia.org/wiki/Sundar_Pichai", as_of: "2026-02", confidence: low}
+optionality:
+  value: "constrained — hired operating CEO; Larry Page and Sergey Brin hold Alphabet's supervoting Class B stock and retain ultimate control (Page co-controls passively per kestrel board notes, letting Pichai run day-to-day). His authority is delegated and revocable, not a founder's lock."
+  sources:
+    - {figure: "Larry Page: '~$140B — Alphabet super-voting co-control, but passive (needs Brin to act)'; 'google's held_by stays sundar-pichai'", label: "kestrel board.yaml larry-page actor entry", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+    - {figure: "appointed to the Alphabet Board of Directors in 2017; CEO of Alphabet since 2019", label: "Wikipedia — Sundar Pichai", url: "https://en.wikipedia.org/wiki/Sundar_Pichai", as_of: "2026-02", confidence: med}
+gravity:
+  value: "~$402.8B/yr GROSS FY25 Alphabet ecosystem (ads ~$315B + Cloud $77.6B) moves on the operational calls he makes as CEO"
+  sources:
+    - {figure: "~$402.8B/yr GROSS FY25 revenue ecosystem (ads ~$315B + Cloud $77.6B)", label: "kestrel board.yaml google gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+notes: "Biggest uncertainty: personal net worth ($1.6B) is a single Wikipedia/press estimate, not SEC-verified — treat as directional. The real control question is structural, not financial: Page/Brin's supervoting stock means Pichai's optionality is operational authority, not final say — discounted accordingly on the optionality axis."

@@ -1,0 +1,46 @@
+node: prudential-financial
+name: "Prudential Financial"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: consolidating
+  basis: "A 'BlackRock-lite' asset-gatherer — commands ~$1.5T via PGIM (~36x its own ~$42B market cap) while the on-balance-sheet life book is RBC-constrained; growth is through PGIM/fee scale and pension-risk-transfer reinsurance, not balance-sheet expansion."
+  sources:
+    - {figure: "PGIM AUM US$1.512T vs market cap ~$42B (~36x); no major 2024-26 M&A on record (last notable: Assurance IQ $2.35B, 2019)", label: "Wikipedia — Prudential Financial", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: med}
+capital:
+  available:
+    value: "~$15.9B cash & equivalents (Mar 2026) — but RBC-constrained; deployable headroom is regulatory capital surplus, not free dry powder. PGIM's $1.5T is third-party fiduciary, not Pru's own."
+    sources:
+      - {figure: "Cash & equivalents $15,936M (Mar 31 2026)", label: "stockanalysis.com — PRU balance sheet (TTM Q1 2026)", url: "https://stockanalysis.com/stocks/PRU/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$70.4B/yr total revenue (2024, premiums + fees + net investment income); net income ~$2.7B; operating income ~$3.2B."
+    sources:
+      - {figure: "Revenue US$70.41B; net income US$2.727B; operating income US$3.209B (2024)", label: "Wikipedia — Prudential Financial (2024 financials)", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: high}
+  deployed:
+    value: "~$474.1B own general-account investment portfolio (the long-duration pile, Mar 2026); PGIM manages ~$1.512T TOTAL AUM (mostly third-party). Total assets ~$765.4B (Mar 2026)."
+    sources:
+      - {figure: "Total investments $474,124M; total assets $765,396M (Mar 31 2026)", label: "stockanalysis.com — PRU balance sheet", url: "https://stockanalysis.com/stocks/PRU/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "AUM (PGIM) US$1.512T (2024)", label: "Wikipedia — Prudential Financial", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: high}
+      - {figure: "Total assets $721.1B (2024 ranking basis)", label: "Wikipedia — List of largest insurance companies (2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+  in:
+    value: "Premium/annuity inflows + pension-risk-transfer (PRT) block acquisitions (a big Pru inflow channel) + PGIM management fees on the $1.5T book; ~$70B/yr total revenue."
+    sources:
+      - {figure: "Total revenue $70.41B (2024)", label: "Wikipedia — Prudential Financial", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: high}
+  out:
+    value: "Policy/annuity benefits & claims; investment allocation into the $474B general account; shareholder returns (dividends + buybacks — Pru runs a steady repurchase program); reinsurance ceding."
+    sources:
+      - {figure: "Net income $2.727B supports dividends/buybacks (2024)", label: "Wikipedia — Prudential Financial", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: low}
+thrust:
+  value: "~$20B/yr est, conf LOW — organic premium-flow proxy only (28% of $70.41B 2024 revenue, mirroring the china-life premium-into-bonds/equities ratio; not a filed reinvestment line). No major 2024-26 M&A on record (last notable deal: Assurance IQ $2.35B, 2019, too stale to count as current-year thrust); pension-risk-transfer (PRT) block acquisitions are named as a real inflow channel in the capital.in note but not separately $-sized this session."
+  sources:
+    - {figure: "Total revenue $70.41B (2024); 28% organic-proxy ratio applied by analogy to china-life's $40B/$139.6B (28.6%) — no Prudential-specific reinvestment-rate filing pulled this session", label: "Wikipedia — Prudential Financial (2024 financials) + derived ratio, conf low", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: low}
+    - {figure: "No major 2024-26 acquisition identified; last notable M&A Assurance IQ $2.35B (2019)", label: "Wikipedia — Prudential Financial", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: med}
+optionality:
+  value: "constrained — RBC (risk-based capital) caps the life balance sheet; PGIM's $1.5T is fiduciary and cannot be redeployed. Free corporate cash (~$16B) is ~1% of commanded capital."
+  sources:
+    - {figure: "Own cash $15.9B vs $1.512T commanded AUM (~1%)", label: "stockanalysis.com + Wikipedia (free-vs-commanded ratio)", url: "https://stockanalysis.com/stocks/PRU/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+gravity:
+  value: "~$70B/yr GROSS revenue routed — thin vs the $474B general account and $1.5T commanded; PGIM adds real institutional-market weight but monetizes thinly (fee bps). gravity << capital."
+  sources:
+    - {figure: "Revenue $70.41B/yr vs $1.512T AUM + $474B general account", label: "Wikipedia — Prudential Financial + stockanalysis", url: "https://en.wikipedia.org/wiki/Prudential_Financial", as_of: "2024-12", confidence: high}
+notes: "Biggest uncertainty: the clean split between PGIM third-party AUM ($1.512T) and Pru's own general account ($474.1B, stockanalysis 'total investments') is corroborated but not cross-checked to the 10-K this session; premium-only inflow and buyback outflow are approximate. Figures USD. WEIGHT-BASIS FLAG (axes_num rollout, 2026-07-28): axes_num.weight uses own-balance-sheet total assets ~$765B (Mar 2026, stockanalysis) — NOT the $1.512T PGIM AUM figure, which (like Allianz/PIMCO) is mostly third-party fiduciary money managed for outside clients, off Prudential's own balance sheet. This is the same PIMCO-style question flagged for Allianz: PGIM's scale is real market reach, but it is fee-managed client capital, not Prudential's own policyholder-liability-backed pile — excluded from weight on that basis."

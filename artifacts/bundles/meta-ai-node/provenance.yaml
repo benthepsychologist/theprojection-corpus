@@ -1,0 +1,52 @@
+# Bundle — hyperscaler node: meta-ai (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml meta-ai. EXTENDS the axis
+# strings on board.yaml (no meta-axes bundle existed) with posture and the
+# in/out/available/operating/deployed breakdown.
+node: meta-ai
+name: "Meta"
+pocket: hyperscaler
+asof: 2026-07-26
+
+posture:
+  value: hedging
+  basis: "Superintelligence buildout financed by a first-ever ~$84B debt raise, with hedged compute (6GW AMD + Anthropic-cloud talks) rather than committing to a single silicon/model path — while under regulatory review (framework exclusion)."
+  sources:
+    - {figure: "board.yaml posture: hedging — '6GW AMD + Anthropic-cloud talks'; condition: under-review (framework exclusion)", label: "kestrel attention/board.yaml meta-ai (classify anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "total debt $86,769M at Q1-2026 (Meta historically near-zero debt) — confirms the ~$84B AI-buildout debt raise", label: "stockanalysis.com META balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/META/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+
+capital:
+  available:
+    value: "~$81B cash+STI (Q1-2026); ~$46B/yr free post-capex; new ~$87B debt taken on"
+    sources:
+      - {figure: "cash+STI $81,180M (cash $23,426M + ST investments $57,754M); total debt $86,769M — Q1 2026 ended Mar 31 2026", label: "stockanalysis.com META balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/META/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$116-124B/yr operating cash flow ($115.8B FY25; $124.0B TTM)"
+    sources:
+      - {figure: "operating cash flow $115,800M FY25; $124,000M TTM", label: "stockanalysis.com META cash-flow statement", url: "https://stockanalysis.com/stocks/META/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$70-76B/yr capex in-flight (FY25 $69.7B -> TTM $75.7B) + up to ~$84B debt earmarked to the AI buildout"
+    sources:
+      - {figure: "capex $69,691M FY25; $75,747M TTM", label: "stockanalysis.com META cash-flow statement", url: "https://stockanalysis.com/stocks/META/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+      - {figure: "debt raise up to ~$84B earmarked to AI capex (Meta was near-zero-debt before)", label: "kestrel board.yaml meta-ai optionality axis + $86.8B total debt at Q1-2026", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  in:
+    value: "~$196B/yr FY25 ad revenue (near-entirely advertising)"
+    sources:
+      - {figure: "~$196.2B/yr GROSS FY25 ad revenue", label: "kestrel board.yaml meta-ai gravity axis", url: "attention/board.yaml", as_of: "2025-12", confidence: med}
+  out:
+    value: "~$95B/yr out: ~$76B capex + ~$5B dividends + ~$13B buybacks (TTM); buybacks slowing"
+    sources:
+      - {figure: "capex $75,747M + dividends $5,341M + buybacks $13,494M (TTM); FY25 buybacks were $26,248M — repurchases cut as capex/debt-service rose", label: "stockanalysis.com META cash-flow statement", url: "https://stockanalysis.com/stocks/META/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+
+optionality:
+  value: "mixed — Zuckerberg dual-class control keeps governance free, but Meta has taken on ~$84-87B debt for the AI buildout, adding an interest claim it never had before"
+  sources:
+    - {figure: "total debt $86,769M (from ~zero historically); FCF still positive ~$48B TTM", label: "stockanalysis.com META balance sheet + cash-flow", url: "https://stockanalysis.com/stocks/META/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+    - {figure: "market cap ~$1.510T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com (aggregate page)", url: "https://companiesmarketcap.com/", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$196B/yr FY25 ad revenue — revenue-as-proxy, undeflated per board policy; no advertiser-ecosystem multiplier reconstructed (lower bound); no vassal dependents (Llama open-weight, not a rented platform)"
+  sources:
+    - {figure: "~$196.2B/yr FY25 ad revenue", label: "kestrel board.yaml meta-ai gravity axis", url: "attention/board.yaml", as_of: "2025-12", confidence: med}
+    - {figure: "'Imperial capex, no vassals' — buys legions (compute) but has conquered no structural dependents", label: "kestrel board.yaml meta-ai gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+notes: "Biggest uncertainty is the debt-financed hedge: Meta went from ~zero debt to ~$87B to fund an AI buildout whose payoff (superintelligence, structural dependents) is unproven — gravity is still just ad revenue with no vassals. Also under regulatory review (framework exclusion). FY25 ad-revenue figure is a board anchor, not re-fetched primary; all cash-flow/balance-sheet figures are stockanalysis-sourced high confidence."

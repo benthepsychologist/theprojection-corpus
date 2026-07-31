@@ -1,0 +1,64 @@
+# Bundle — health node: cvs-health (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml cvs-health. EXTENDS the axis
+# strings on board.yaml with posture and the in/out/available/operating/deployed
+# breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: cvs-health
+name: "CVS Health"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: retrenching
+  basis: "Digesting the Aetna + Oak Street + Signify debt load under new CEO David Joyner — ~900 store closures, buybacks cut to a token ~$158M, cash steered to debt paydown and the dividend."
+  sources:
+    - {figure: "CEO David Joyner (from Oct 2024); Oak Street Health acquired 2023 (~$10.6B EV); Signify Health 2022 (~$8B); ~900 stores being closed (~10% of footprint)", label: "Wikipedia — CVS Health (recent developments)", url: "https://en.wikipedia.org/wiki/CVS_Health", as_of: "2026-07", confidence: med}
+    - {figure: "buybacks only $158M FY25 vs $3,397M dividends — capital preservation, not return", label: "stockanalysis.com CVS cash-flow statement", url: "https://stockanalysis.com/stocks/CVS/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+capital:
+  available:
+    value: "~$9.5B cash + ~$2.3B short-term inv (~$34.7B total investments/float) against ~$78-80B total debt — the most leveraged payer here"
+    sources:
+      - {figure: "cash & equivalents $9,542M; short-term investments $2,260M; total investments $34,667M; total debt $78,345M (Mar 31 2026)", label: "stockanalysis.com CVS balance sheet", url: "https://stockanalysis.com/stocks/CVS/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$402B FY25 revenue (~$408B TTM); operating cash flow ~$10.6B FY25 / ~$10.3B TTM"
+    sources:
+      - {figure: "revenue $402,067M FY25 / $407,905M TTM; OCF $10,639M FY25 / $10,332M TTM (TTM to Mar 31 2026)", label: "stockanalysis.com CVS financials", url: "https://stockanalysis.com/stocks/CVS/financials/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$2.8B capex + ~$0.4B small acquisitions FY25; buybacks essentially halted (~$158M)"
+    sources:
+      - {figure: "capex $2,832M FY25; cash acquisitions $436M FY25; buybacks $158M FY25", label: "stockanalysis.com CVS cash-flow statement + financials", url: "https://stockanalysis.com/stocks/CVS/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+  in:
+    value: "inflows — ~$402B FY25 revenue: Aetna premiums + Caremark PBM + CVS Pharmacy retail"
+    sources:
+      - {figure: "total revenue $402,067M FY25; Caremark PBM serves 75M+ plan members", label: "stockanalysis.com CVS financials + Wikipedia", url: "https://stockanalysis.com/stocks/CVS/financials/", as_of: "2025-12", confidence: high}
+  out:
+    value: "outflows — medical + pharmacy cost of goods dominate; then ~$3.4B dividends, ~$0.4B M&A, minimal (~$0.16B) buybacks, plus debt service on ~$78-80B"
+    sources:
+      - {figure: "dividends paid $3,397M; buybacks $158M; acquisitions $436M FY25; total debt $78,345M", label: "stockanalysis.com CVS cash-flow statement + balance sheet", url: "https://stockanalysis.com/stocks/CVS/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "constrained — MLR caps the Aetna insurance core AND ~$78-80B debt + a near-frozen buyback (cash to deleverage) leaves little dry powder; the freest lever is retail/PBM cost-cutting, not deployment."
+  sources:
+    - {figure: "total debt $78,345M vs $9,542M cash; buybacks cut to $158M FY25", label: "stockanalysis.com CVS balance sheet + cash-flow statement", url: "https://stockanalysis.com/stocks/CVS/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+
+gravity:
+  value: "GROSS ~$402B/yr routed — Caremark PBM 75M+ members, ~9,100-9,600 pharmacies (~1/5 of US scripts), Aetna medical members; a payer-PBM-pharmacy triple choke-point."
+  sources:
+    - {figure: "Caremark 75M+ plan members; 9,135 stores (2024) / 9,600+ CVS Pharmacy locations; MinuteClinic 1,100+", label: "Wikipedia — CVS Health", url: "https://en.wikipedia.org/wiki/CVS_Health", as_of: "2026-07", confidence: med}
+    - {figure: "~$340B+/yr GROSS routed, ~1/5 of US scripts, Aetna", label: "kestrel board.yaml cvs-health gravity axis — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+thrust:
+  value: "capex $2,832M FY25 - depreciation-only $2,600M FY25 (10-K note; excl. ~$2,006M amortization) + M&A $436M FY25 (TTM cash acquisitions ~$421M) = ~$0.67B thrust/yr — thin relative to a $253B balance sheet, matches the payer profile; historical Aetna (~$8-10B+ EV)/Oak Street (~$10.6B)/Signify (~$8B) roll-up predates the TTM window and is excluded from this sum, noted for context only"
+  weight_basis: "$253.0B total assets — $252,974M, balance sheet, quarter-end Mar 31 2026"
+  gravity_basis: "Covered-lives/system-throughput reasoning, not a bottom-up buildup: Caremark PBM 75M+ plan members, ~9,100-9,600 pharmacies (~1/5 of US scripts), Aetna medical membership — a payer-PBM-pharmacy triple choke-point where care access for tens of millions depends on CVS continuing to operate; the $402B/yr gross revenue/care-dollars-routed figure from the gravity block above is carried forward as the $ proxy"
+  optionality_band: "constrained — MLR caps on the Aetna insurance core plus ~$78-80B debt load narrow capital-allocation freedom, but retail/PBM cost-cutting and dividend/debt-service levers remain live, so not locked (consistent with this file's existing optionality prose above, no conflict)"
+  buybacks_ttm: "$0.158B TTM (FY25 $158M; no more-current TTM buyback figure found, carried forward per recipe)"
+  sources:
+    - {figure: "total assets $252,974M", label: "stockanalysis.com CVS balance sheet", url: "https://stockanalysis.com/stocks/CVS/financials/balance-sheet/", as_of: "2026-03-31", confidence: high}
+    - {figure: "depreciation (property & equipment, excl. amortization) $2,600M FY25 / $2,600M FY24 / $2,500M FY23 (thin: pulled via automated SEC XBRL-viewer extraction that mislabeled units as 'thousands' — treated as $M based on cross-check against combined D&A $4,606M FY25, since $2.6M would be implausibly small for a company this size)", label: "SEC EDGAR 10-K filed 2026-02-10 — Significant Accounting Policies, Narrative (Details), XBRL viewer R49", url: "https://www.sec.gov/Archives/edgar/data/64803/000006480326000010/R49.htm", as_of: "2025-12-31", confidence: med}
+    - {figure: "capex $2,938M TTM; cash acquisitions $421M TTM (to Mar 31 2026)", label: "stockanalysis.com CVS cash-flow statement (TTM column)", url: "https://stockanalysis.com/stocks/CVS/financials/cash-flow-statement/", as_of: "2026-03-31", confidence: high}
+    - {figure: "combined D&A $4,606M FY25 (not split on the face of the cash-flow statement — used here only to cross-check the depreciation-only figure above)", label: "stockanalysis.com CVS cash-flow statement", url: "https://stockanalysis.com/stocks/CVS/financials/cash-flow-statement/", as_of: "2025-12-31", confidence: high}
+
+axes_num: { weight: 253.0, thrust: 0.67, gravity: 402 }  # $B — wave F, agent-derive 2026-07-28
+
+notes: "Biggest uncertainty is deleveraging speed — ~$78-80B debt with OCF ~$10.6B and a suspended-in-all-but-name buyback means the story is balance-sheet repair, not expansion. Behavioral-health arm: Aetna Behavioral Health (payer side) — thinner than UNH/Cigna/Elevance, a relative MH-lens gap. Gravity dollars and script-share are board-anchor estimates, not re-fetched primary."

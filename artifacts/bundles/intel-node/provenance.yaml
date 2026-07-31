@@ -1,0 +1,47 @@
+# Bundle — POSTURE + CAPITAL-FLOW: intel (foundry pocket, asof 2026-07-26)
+# WebFetch-primary (WebSearch exhausted). Primaries: stockanalysis.com INTC statements (USD,
+# no FX needed) + Wikipedia for the US-government equity stake, SoftBank buy, golden-share
+# warrant, and the 2025-26 restructuring. Note the govt stake IS a CHIPS-conversion capital source.
+node: intel
+name: "Intel"
+pocket: foundry
+asof: 2026-07-26
+posture:
+  value: retrenching
+  basis: "Turnaround under duress: ~24,000 jobs cut (~15%), Germany (Magdeburg) + Poland megafabs cancelled, Ohio under review; capex being trimmed; US govt took 9.9% + golden-share warrant tied to keeping >=51% of the foundry."
+  sources:
+    - {figure: "~24,000 employees cut (~15% of workforce) by end-2025; DE + PL megafabs scrapped; Ohio under review", label: "Wikipedia — Intel (2025-26 restructuring)", url: "https://en.wikipedia.org/wiki/Intel", as_of: "2025-07", confidence: high}
+    - {figure: "board.yaml anchor: 'locked/constrained — turnaround (24k layoffs, DE/PL fabs cancelled)'", label: "kestrel board.yaml — intel (internal anchor, 2026-07-25)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$29.7B cash + ST investments, but total debt ~$50.5B (net debt ~$20.8B) — a leveraged, not cushioned, balance sheet"
+    sources:
+      - {figure: "cash & equiv $12,874M + ST inv $16,853M = $29,727M; total debt $50,537M (Jun 27 2026)", label: "stockanalysis.com INTC balance sheet", url: "https://stockanalysis.com/stocks/INTC/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+  operating:
+    value: "~$14.9B/yr operating cash flow (TTM), recovering from FY2025 $9.7B — but largely eaten by capex"
+    sources:
+      - {figure: "OCF TTM $14,936M; FY2025 $9,697M", label: "stockanalysis.com INTC cash-flow statement", url: "https://stockanalysis.com/stocks/INTC/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$12.1B/yr capex (TTM, trimmed from FY2025 $14.6B as fabs cancelled); US-govt equity is the main capital injection (CHIPS grants converted to a 9.9% stake) rather than fresh subsidy"
+    sources:
+      - {figure: "capex TTM -$12,105M; FY2025 -$14,646M (trimmed as DE/PL fabs cancelled)", label: "stockanalysis.com INTC cash-flow statement", url: "https://stockanalysis.com/stocks/INTC/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+      - {figure: "US govt bought 433.3M shares @ $20.47 = ~$8.9B for 9.9% (largely CHIPS-converted, Aug-2025)", label: "Wikipedia — Intel (US government investment)", url: "https://en.wikipedia.org/wiki/Intel", as_of: "2025-08", confidence: high}
+  in:
+    value: "inflows: ~$53B/yr revenue + US-govt equity ~$8.9B (9.9%, CHIPS-converted) + SoftBank ~$2B (@ $23/sh); net FCF only modestly positive"
+    sources:
+      - {figure: "US govt 9.9% stake ~$8.9B (433.3M sh @ $20.47) + 5% warrant if foundry ownership < 51%; SoftBank bought @ $23/sh the prior week", label: "Wikipedia — Intel (US govt + SoftBank)", url: "https://en.wikipedia.org/wiki/Intel", as_of: "2025-08", confidence: high}
+      - {figure: "board.yaml anchor: '~$53B/yr GROSS revenue; US govt 9.9% (~$8.9B) + SoftBank ~$2B'", label: "kestrel board.yaml — intel (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  out:
+    value: "outflows: ~$12B/yr fab capex + debt service (on ~$50.5B debt); dividend was cut/suspended in the turnaround; FCF TTM ~+$2.8B (thin)"
+    sources:
+      - {figure: "FCF TTM +$2,831M (OCF $14.9B minus capex $12.1B); FY2025 -$4,949M", label: "stockanalysis.com INTC cash-flow statement", url: "https://stockanalysis.com/stocks/INTC/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+optionality:
+  value: "locked/constrained — turnaround leaves little free cash; the US golden-share warrant ties any dilution/sale to keeping >=51% of the foundry, fencing strategic options"
+  sources:
+    - {figure: "five-year warrant to buy an added 5% if Intel's foundry ownership falls below 51%", label: "Wikipedia — Intel (foundry ownership warrant)", url: "https://en.wikipedia.org/wiki/Intel", as_of: "2025-08", confidence: high}
+    - {figure: "board.yaml anchor: 'US golden-share warrant tied to keeping >=51% of the foundry'", label: "kestrel board.yaml — intel (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "GROSS ~$53B/yr revenue, but EXTERNAL foundry gravity is tiny (few marquee external customers at leading edge); its real gravity is STRATEGIC — the only US-owned leading-edge fab the state wants to exist — far exceeding commercial pull (undeflated)"
+  sources:
+    - {figure: "board.yaml anchor: 'external foundry gravity tiny, strategic gravity (domestic leading-edge the US wants) >> commercial'", label: "kestrel board.yaml — intel (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty is the turnaround trajectory: OCF/FCF have swung sharply (FY2025 FCF -$4.9B to TTM +$2.8B) and depend on Foundry-external-customer wins that aren't yet proven. Intel FY2025 revenue (~$53B) is a board anchor, not separately fetched. The ~$50.5B debt load makes the '~$29.7B available' figure misleading without the net-debt caveat."

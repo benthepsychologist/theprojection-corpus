@@ -1,0 +1,24 @@
+# Sidecar — how to re-fetch this digest's inputs
+digest: 2026-07-20-frontier-ai.md
+run_manifest: provenance/2026-07-20-daily-ai.yaml
+buffer: buffer/2026-07-20-ai-sweep.jsonl   # 30-day retention; regenerable
+collection_mode: agentic-interim (sonnet subagent web sweep; collectors not built)
+window: 2026-07-20T05:00-04:00 → 2026-07-20T17:45-04:00 (+ 3-week thread catch-up, briefing #0)
+cited:
+  - https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/
+  - https://phandroid.com/2026/07/20/samsungs-gaia-ai-accelerator-just-got-a-lot-more-interesting/
+  - https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems
+  - https://www.claimsjournal.com/news/national/2026/07/20/338917.htm
+  - https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/
+  - https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai
+  - https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/
+  - https://en.cryptonomist.ch/2026/07/20/china-us-ai-competition-kimi-k3/
+  - https://www.fxleaders.com/news/2026/07/20/nvidia-stock-nvda-tests-200-support-as-chinese-ai-competition-shakes-the-chip-rally/
+  - https://finance.yahoo.com/markets/live/stock-market-today-monday-july-20-dow-sp-500-nasdaq-111429441.html
+  - https://www.tradingkey.com/analysis/stocks/us-stocks/262037492-amd-stock-forecast-week-july-20-2026-advancing-ai-july-22-tradingkey
+  - https://www.benzinga.com/trading-ideas/movers/26/07/60560396/coreweave-stock-moves-higher-whats-happening-today
+  - https://www.engadget.com/2210308/openai-rolls-out-gpt5-6-july-9/
+  - https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html
+caveats: release-watch lines partly sourced to low-authority blogs (explainx.ai,
+  findskill.ai, mindstudio.ai, ragyfied) — directional until prediction-market
+  collectors land.

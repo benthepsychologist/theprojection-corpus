@@ -1,0 +1,69 @@
+# Bundle — capital node: softbank (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml softbank. EXTENDS the axis
+# strings on board.yaml (no softbank-axes bundle existed) with posture and the
+# available/operating/deployed/in/out breakdown. Method: WebFetch primary
+# (WebSearch exhausted) — stockanalysis 9984.T (JPY figures, current), Wikipedia
+# SoftBank Group + Vision Fund, Stargate LLC. JPY->USD at ~150 (flagged).
+node: softbank
+name: "SoftBank"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Expanding aggressively into AI — leads OpenAI's ~$40B round + 40%/$19B Stargate stake on top of 87.1% Arm; net income swung to ¥4.98T (~$33B) TTM. Free but LEVERED (debt ¥25.4T ~$169B)."
+  sources:
+    - {figure: "net income ¥4.98T TTM (up 333.7%); revenue ¥7.80T TTM; market cap ¥31.34T (~$209B)", label: "stockanalysis.com 9984.T (Tokyo) overview", url: "https://stockanalysis.com/quote/tyo/9984/", as_of: "2026-07", confidence: high}
+    - {figure: "SoftBank $19B / 40% Stargate commitment (of $500B target by 2029)", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-01", confidence: med}
+
+capital:
+  available:
+    value: "own cash+STI ¥5.36T (~$36B, Mar-2026) — levered against ¥25.4T (~$169B) total debt; plus undrawn Vision Fund commitments"
+    sources:
+      - {figure: "cash+STI ¥5,362,150M; total debt ¥25,404,311M; total assets ¥60,749,547M; equity ¥20,468,432M (Mar 31 2026)", label: "stockanalysis.com 9984.T balance sheet", url: "https://stockanalysis.com/quote/tyo/9984/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "revenue ¥7.80T (~$52B) TTM — mostly Arm + telecom operating businesses, not fund fees; net income ¥4.98T (~$33B) TTM"
+    sources:
+      - {figure: "revenue ¥7.80T TTM (+7.7% YoY); net income ¥4.98T TTM", label: "stockanalysis.com 9984.T overview", url: "https://stockanalysis.com/quote/tyo/9984/", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "directs ~$150-160B — Vision Fund 1 ~$100B raised / ~$134B AUM (Jun-2023) + VF2 ~$30B + ~$40B OpenAI + owns 87.1% of Arm"
+    sources:
+      - {figure: "VF1 $100B raised, $134B AUM (Jun-2023); VF2 expanded to $30B (May-2021, self-funded)", label: "Wikipedia — SoftBank Vision Fund", url: "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund", as_of: "2023-06", confidence: high}
+      - {figure: "directs ~$150-160B + owns 87.1% of Arm inside ~$200B market cap (commands/owns ~1x, INVERSE)", label: "kestrel board.yaml softbank capitalization axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  in:
+    value: "new commitments — leading OpenAI ~$40B round (2025) + $19B Stargate; VF1 external LPs PIF $45B / Mubadala $15B / Apple (2017); VF2 largely self-funded"
+    sources:
+      - {figure: "VF1 contributors: PIF $45B, SoftBank $28B, Mubadala $15B, Apple + others", label: "Wikipedia — SoftBank Vision Fund", url: "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund", as_of: "2017", confidence: high}
+      - {figure: "$40B OpenAI bridge/commitment (SoftBank-led)", label: "kestrel board.yaml softbank axis (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  out:
+    value: "deployments — ~$40B OpenAI + Stargate build; historical VF deployment collapsed to ~$300M/qtr (Q4-2022) then re-accelerated into AI; recurring large buybacks"
+    sources:
+      - {figure: "VF deployment fell to $300M in Oct-Dec 2022 quarter (down >90% YoY) then re-accelerated", label: "Wikipedia — SoftBank Vision Fund", url: "https://en.wikipedia.org/wiki/SoftBank_Vision_Fund", as_of: "2022-12", confidence: med}
+      - {figure: "recurring large share-buyback programs — dollar amount NOT captured this pass", label: "kestrel board.yaml softbank (general pattern, not fetched)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+# thrust block added 2026-07-28 (axes_num rollout wave D). Method: WebFetch
+# Wikipedia SoftBank Group + Stargate LLC + kestrel's own intel-rescue-2026-07-28
+# bundle (SEC EDGAR-sourced). CORRECTS the earlier posture/capital blocks above:
+# the OpenAI figure there ($40B) was the April-2025 ROUND TOTAL that SoftBank
+# merely led, not SoftBank's own contribution — the pinned SoftBank-specific
+# total is $30B (Oct-2025 installment + Feb-2026 round listing).
+thrust:
+  value: "~$42B (TTM-ish, Sep-2025 to Feb-2026) — OpenAI stake $30B + Stargate initial tranche $10B (debt-financed via Mizuho, counts as deployed per recipe) + Intel $2.0B (SEC-filing-confirmed). Recipe basis: net NEW-position deployment, not total AUM/commitment."
+  sources:
+    - {figure: "SoftBank 'approximately $30 billion investment' in OpenAI; $22.5B second installment approved Oct-2025 to complete the $30B total (~11% stake); drops to $20B if OpenAI restructuring fails", label: "Wikipedia — SoftBank Group (2025-2026 investment activity)", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2025-10", confidence: med}
+    - {figure: "OpenAI's Feb-2026 funding round lists 'SoftBank ($30 billion)' alongside Amazon and Nvidia — corroborates the $30B total (distinct from the $40B Apr-2025 ROUND TOTAL SoftBank led but didn't solely fund)", label: "Wikipedia — OpenAI (funding rounds)", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-02", confidence: med}
+    - {figure: "SoftBank's first Stargate $10B tranche 'expected to be borrowed from Mizuho and other lenders' (Apr-2025); by Aug-2025 'the project had not started and no funds were raised' beyond that toward the $500B budget — pins $10B as the only confirmed deployed tranche vs. the notional 40%/$500B target", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-08", confidence: med}
+    - {figure: "SoftBank $2.0B Intel stake: SPA executed 2025-08-28, closed 2025-09-26, 86,956,522 shares @ $23.00/share, Section 4(a)(2) private placement", label: "Intel 8-K, SEC EDGAR direct fetch (per kestrel intel-rescue-2026-07-28 bundle)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000126/a08182025form8-kex991.htm", as_of: "2025-09-26", confidence: high}
+
+optionality:
+  value: "free but LEVERED — Son ~71.36% voting control deploys at will, but ¥25.4T (~$169B) debt + ~1/3 of Son's personal stake pledged constrain the pile."
+  sources:
+    - {figure: "Masayoshi Son 71.36% voting (29.14% economic)", label: "Wikipedia — SoftBank Group", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2024", confidence: high}
+    - {figure: "total debt ¥25.4T (~$169B, Mar-2026); ~1/3 of Son's stake pledged", label: "stockanalysis.com 9984.T balance sheet + board.yaml pledge note", url: "https://stockanalysis.com/quote/tyo/9984/financials/balance-sheet/", as_of: "2026-03", confidence: med}
+
+gravity:
+  value: "REAL GROSS (not thin) — Arm underpins the world's mobile silicon + ~60 Vision Fund portfolio companies + Stargate/OpenAI anchoring; the largest single lever into the stack."
+  sources:
+    - {figure: "owns 87.1% of Arm (world mobile-silicon IP) + ~60 portfolio companies + Stargate/OpenAI anchor", label: "kestrel board.yaml softbank gravity axis + Wikipedia SoftBank Group", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2026-07", confidence: med}
+
+notes: "commands/owns ~1x (INVERSE of BlackRock) — power is its own levered balance sheet + 87.1% Arm stake, not a large fiduciary book. JPY->USD converted at ~150 (approximate). Biggest uncertainty: Vision Fund carrying marks + exact OpenAI drawdown; Wikipedia infobox lags (FY2023) vs stockanalysis TTM (Jul-2026)."

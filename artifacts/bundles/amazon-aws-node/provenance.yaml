@@ -1,0 +1,53 @@
+# Bundle — hyperscaler node: amazon-aws (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml amazon-aws. EXTENDS the axis
+# strings on board.yaml (no amazon-axes bundle existed) with posture and the
+# in/out/available/operating/deployed breakdown.
+node: amazon-aws
+name: "Amazon"
+pocket: hyperscaler
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Capacity land-grab — Trainium + Bedrock + the Rainier cluster for Anthropic; TTM capex ($151B) now exceeds operating cash flow, pushing free cash flow negative."
+  sources:
+    - {figure: "board.yaml posture: expanding — 'classify 2026-07-24 (buildout-race; AGI-research cuts a counter-signal)'", label: "kestrel attention/board.yaml amazon-aws (classify anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "capex $131.8B FY25 -> $151.0B TTM; FCF $7.7B FY25 -> -$2.5B TTM (capex overtook OCF)", label: "stockanalysis.com AMZN cash-flow statement", url: "https://stockanalysis.com/stocks/AMZN/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+
+capital:
+  available:
+    value: "~$143B cash+STI (Q1-2026); but total debt ~$210B and FCF is negative"
+    sources:
+      - {figure: "cash+STI $143,089M (cash $101,816M + ST investments $41,273M); total debt $209,888M — Q1 2026 ended Mar 31 2026", label: "stockanalysis.com AMZN balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/AMZN/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$140-149B/yr operating cash flow ($139.5B FY25; $148.5B TTM)"
+    sources:
+      - {figure: "operating cash flow $139,514M FY25; $148,531M TTM", label: "stockanalysis.com AMZN cash-flow statement", url: "https://stockanalysis.com/stocks/AMZN/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$132-151B/yr capex in-flight (FY25 $131.8B -> TTM $151.0B) — AWS/Trainium datacenters + Rainier for Anthropic"
+    sources:
+      - {figure: "capex $131,819M FY25; $151,003M TTM", label: "stockanalysis.com AMZN cash-flow statement", url: "https://stockanalysis.com/stocks/AMZN/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+      - {figure: "Project Rainier compute cluster earmarked for Anthropic (multi-$10B)", label: "kestrel threads.yaml / anthropic axis (internal reconstruction)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  in:
+    value: "~$717B FY25 net sales (~$743B TTM); AWS ~$137B of it"
+    sources:
+      - {figure: "total revenue FY25 $716,924M; TTM $742,776M", label: "stockanalysis.com AMZN financials", url: "https://stockanalysis.com/stocks/AMZN/financials/", as_of: "2026-03", confidence: high}
+      - {figure: "AWS segment ~$137B/yr", label: "kestrel board.yaml amazon-aws gravity axis", url: "attention/board.yaml", as_of: "2025-12", confidence: med}
+  out:
+    value: "~$151B/yr out: ~$151B capex + $0 dividends + $0 buybacks (all cash into capex)"
+    sources:
+      - {figure: "capex $151,003M TTM; no dividends and no share buybacks in FY25 or TTM", label: "stockanalysis.com AMZN cash-flow statement", url: "https://stockanalysis.com/stocks/AMZN/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+
+optionality:
+  value: "mixed/constrained — governance free (Bezos single-class, no returns to fund) but operating cash fully pre-committed to ~$150B/yr capex; FCF negative"
+  sources:
+    - {figure: "capex $151B TTM > OCF $148.5B TTM -> FCF -$2.5B; no dividend/buyback claim competing", label: "stockanalysis.com AMZN cash-flow statement", url: "https://stockanalysis.com/stocks/AMZN/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "market cap ~$2.496T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com (aggregate page)", url: "https://companiesmarketcap.com/", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$717B/yr FY25 net sales (~$743B TTM); incl. AWS ~$137B + third-party GMV ~$700B+ vs ~$177B booked cut — undeflated per board policy"
+  sources:
+    - {figure: "FY25 net sales $716,924M; TTM $742,776M", label: "stockanalysis.com AMZN financials", url: "https://stockanalysis.com/stocks/AMZN/financials/", as_of: "2026-03", confidence: high}
+    - {figure: "3P seller GMV ~$700B+ (only ~$177B booked as Amazon revenue) — the ecosystem larger than booked sales", label: "kestrel board.yaml amazon-aws gravity axis (GMV estimate)", url: "attention/board.yaml", as_of: "2025-12", confidence: low}
+
+notes: "Biggest uncertainty is durability of the buildout: TTM capex ($151B) has overtaken operating cash flow, FCF is negative (-$2.5B) and total debt is ~$210B — an aggressive expansion the balance sheet can carry but not indefinitely. The counter-signal (AGI-research cuts, noted in board classify log) sits against the expanding read. AWS segment size and 3P GMV are board-anchor estimates, not re-fetched primary."

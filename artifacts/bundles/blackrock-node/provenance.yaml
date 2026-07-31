@@ -1,0 +1,56 @@
+# Bundle — capital node: blackrock (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml blackrock. EXTENDS the axis
+# strings + artifacts/bundles/blackrock-axes/provenance.yaml (the axis-source
+# anchor) with posture and the available/operating/deployed/in/out breakdown.
+# Method: WebFetch primary (WebSearch exhausted) — stockanalysis BLK overview,
+# Wikipedia BlackRock, plus the FY2023 10-K figures carried in blackrock-axes.
+node: blackrock
+name: "BlackRock"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "AUM $10.0T (2023) -> $11.55T (2024) -> ~$15.3T (Q2-2026) on record net inflows + private-markets M&A (GIP, HPS, Preqin) — the pocket's growth leader."
+  sources:
+    - {figure: "AUM $15.3T (Q2-2026); FY24 AUM $11.551T; FY23 $10.0T floor", label: "stockanalysis.com BLK overview + Wikipedia BlackRock (AUM history)", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: high}
+    - {figure: "AUM $11.551T + total revenue $20.407B + net income $6.369B (FY2024)", label: "Wikipedia — BlackRock (financial table)", url: "https://en.wikipedia.org/wiki/BlackRock", as_of: "2024-12", confidence: high}
+
+capital:
+  available:
+    value: "own corporate cash ~$9.8B (Q1-2026); free/deployable treasury ~$10B — ~0.06% of what it commands"
+    sources:
+      - {figure: "balance sheet total assets $170.0B, cash $9.84B, equity $63.3B (Q1-2026)", label: "stockanalysis.com BLK balance sheet (via blackrock-axes anchor)", url: "https://stockanalysis.com/stocks/BLK/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "fee revenue ~$27.3B TTM ($24.2B FY25, $20.4B FY24); net income ~$6.58B TTM"
+    sources:
+      - {figure: "revenue TTM $27.30B; FY2025 $24.22B; net income TTM $6.58B; FY2025 $5.55B", label: "stockanalysis.com BLK overview", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: high}
+      - {figure: "FY2024 revenue $20.407B; net income $6.369B", label: "Wikipedia — BlackRock", url: "https://en.wikipedia.org/wiki/BlackRock", as_of: "2024-12", confidence: high}
+  deployed:
+    value: "AUM directed ~$15.3T (Q2-2026); ~64% index-passive (iShares $3.5T + institutional index $2.9T of the FY23 $10.0T book)"
+    sources:
+      - {figure: "AUM $15.3T (Q2-2026, Jun 30)", label: "stockanalysis.com BLK overview", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: high}
+      - {figure: "iShares ETF $3.5T + institutional index $2.9T = ~64% index/passive of $10.0T (Dec-2023)", label: "BlackRock 2023 Form 10-K (SEC EDGAR, via blackrock-axes)", url: "https://www.sec.gov/Archives/edgar/data/1364742/000119312524087274/d759940dars.pdf", as_of: "2023-12", confidence: high}
+  in:
+    value: "AUM grew $10.0T -> $15.3T (2023->2026) via record net inflows + acquisitions (GIP ~$100B AUM 2024, HPS ~$150B+ private credit 2025); Q2-2026 record net inflows"
+    sources:
+      - {figure: "AUM $10.0T (2023) -> $11.551T (2024) -> $15.03T (Q2-2026) — inorganic incl. GIP", label: "Wikipedia — BlackRock (AUM progression)", url: "https://en.wikipedia.org/wiki/BlackRock", as_of: "2026-06", confidence: med}
+      - {figure: "Q2-2026 'record net inflows' referenced — specific dollar amount NOT captured", label: "stockanalysis.com BLK overview", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: low}
+  out:
+    value: "capital returned to holders — dividend ~$22.92/yr per share (~$3.5B/yr) + buybacks; plus M&A cash for deployments (GIP/HPS, multi-$B)"
+    sources:
+      - {figure: "annual dividend $22.92/share (quarterly $5.73), yield 2.17%", label: "stockanalysis.com BLK overview", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: high}
+      - {figure: "share-buyback dollar amount NOT captured on fetched sources", label: "stockanalysis.com BLK overview (buyback not disclosed in overview)", url: "https://stockanalysis.com/stocks/BLK/", as_of: "2026-06", confidence: low}
+
+optionality:
+  value: "constrained — AUM is fiduciary/benchmark-bound (~64% index-passive); free corporate cash ~$10B is ~0.06% of what it commands"
+  sources:
+    - {figure: "~64% index/passive of AUM; corporate cash ~$9.8B vs AUM $15.3T (~0.06%)", label: "blackrock-axes bundle (10-K composition + balance sheet)", url: "artifacts/bundles/blackrock-axes/provenance.yaml", as_of: "2026-07", confidence: high}
+
+gravity:
+  value: "thin — Aladdin monitors ~$21.6T assets (2020, a STOCK not a flow); Tech Services rev ~$1.5B/yr (FY23) is the value captured. Gravity << capitalization by ~4 orders."
+  sources:
+    - {figure: "~$21.6T assets monitored on Aladdin (2020); >130,000 users", label: "Wikipedia — Aladdin (BlackRock)", url: "https://en.wikipedia.org/wiki/Aladdin_(BlackRock)", as_of: "2020-12", confidence: med}
+    - {figure: "Technology Services revenue $1.5B (FY2023, Aladdin majority)", label: "BlackRock 2023 Form 10-K (SEC EDGAR, via blackrock-axes)", url: "https://www.sec.gov/Archives/edgar/data/1364742/000119312524087274/d759940dars.pdf", as_of: "2023-12", confidence: high}
+
+notes: "commands/owns ~= 90x ($15.3T commanded vs ~$170B own balance sheet) — the board's sharpest commands-vs-owns case. Biggest uncertainty: exact net-flow $ not captured (AUM growth is the proxy) and buyback $ not disclosed on the fetched overview."

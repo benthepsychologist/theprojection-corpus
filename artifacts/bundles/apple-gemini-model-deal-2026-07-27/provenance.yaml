@@ -1,0 +1,50 @@
+# Bundle — crawl finding apple-gemini-model-deal-2026-07-27
+artifact: artifacts/findings/apple-gemini-model-deal-2026-07-27.md
+crawled_at: "2026-07-27T00:00:00Z"
+method: >
+  WebSearch budget exhausted (session-shared, spent by same-day /week and
+  /daily sweeps). A sonnet subagent ran the first WebFetch sweep against
+  Google News RSS (news.google.com/rss/search) and direct-outlet fetches.
+  The orchestrator then independently re-fetched two primary sources
+  directly (Google's Jan-12 joint statement, Apple's Jun-8 WWDC newsroom
+  post) and re-pulled three Google News RSS queries itself to get real,
+  resolvable citation links for the EU/DMA cluster and the iOS-27-beta
+  cluster, rather than relaying the subagent's paraphrased URLs (several
+  of the subagent's guessed direct-outlet URLs 403'd/404'd on
+  verification and are NOT cited below).
+queries:
+  google_news_rss:
+    - "Apple Google Gemini Siri billion"
+    - '"Siri" "Gemini" cloud extend'
+    - "iOS 27 public beta Siri AI"
+    - "EU DMA Apple Google AI assistants interoperability"
+items:
+  - {id: bloomberg-original-report, figure: "~$1B/yr Apple-to-Google Siri licensing figure, first reported", url: "https://news.google.com/rss/search?q=Apple+Google+Gemini+Siri+billion&hl=en-US&gl=US&ceid=US:en", label: "Bloomberg (via Google News RSS)", as_of: "2025-11-05", confidence: medium}
+  - {id: google-joint-statement, figure: "Multi-year Apple-Google Gemini partnership; Apple Foundation Models next-gen built on Gemini; hybrid on-device/Private Cloud Compute; no financial terms disclosed", url: "https://blog.google/company-news/inside-google/company-announcements/joint-statement-google-apple/", label: "Google — official joint statement", as_of: "2026-01-12", confidence: high}
+  - {id: macrumors-scope, figure: "Deal framed as broader than Siri alone", url: "https://news.google.com/rss/articles/CBMijwFBVV95cUxPem94djFUT3c1T1VYdzJNOTlGaDRzN0pTTWh2cmdxZmZvMTFaam5xYlVJU1dERDl4bDNuVTRPcGxkdHFoUmhvbmVGdnl3V2lOdlNLQU9IaW5hR2MyNjZ1cm9XeW9IWUJHc282VFBoekR4Sm1JeFBhV25jZ1lRcXJmaXdiMmtxN2twclRkU2ZUUQ?oc=5", label: "MacRumors (via Google News RSS)", as_of: "2026-01-12", confidence: medium}
+  - {id: thebull-5b-aggregate, figure: "Alternative $5B multi-year aggregate estimate (distinct from $1B/yr annual figure)", url: "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQZ0dybU5ScFc4YjhhM2YwQmE2XzhoQmt1Y2xhVTZfUzBtWFpzTnJuUDI4Q0NGMTVFUWxYWENYSlZ2dUN3NE9ad1lzdHF0SXlVbDVPNHFkSDEtVWVhMkI2M3lyX094NmxzVF82aFY4enZ3V1RfRmpGUnU1ZXd0X0tGdF9JZFVDUEF5?oc=5", label: "thebull.com.au (via Google News RSS)", as_of: "2026-01-17", confidence: thin}
+  - {id: gadgethacks-cloud-mar, figure: "Apple in talks to host Gemini-powered Siri on Google's cloud (The Information report)", url: "https://news.google.com/rss/articles/CBMikAFBVV95cUxPY1hXQmc1VVp6OXh1ZmRwbDhucVF1Mjk5d3dQXzlwRi0waksyUmVyak51T3VNaXc2R2Y5bHdNSlFMVDdLRFhKUDN3ZVY1bmNRRlpDUVJZd3RNN3ZKelM0b2lVZFV3OHBFQ2Npd3ZycWNvc1d5eUJYRVZCeW9LSFduSFpWYjFEbGppcko0amJUSmQ?oc=5", label: "Gadget Hacks (via Google News RSS)", as_of: "2026-03-02", confidence: medium}
+  - {id: appleinsider-nvidia, figure: "Google-cloud hosting to run on Nvidia Blackwell-class GPUs with confidential-compute framing", url: "https://news.google.com/rss/articles/CBMisAFBVV95cUxOS0piUjZlWmdGSFV5em5MaGJjLXZiUy04V0xvMkE0TG94S1ZTLXFvMjdoVnlSeWtCblBLbjc2LUlhZjBndE5Vc0ljMU1qTDZCbTVveE0xZ0RFZ1dXbHp0ZHhEQ1p6dnQwVDh5d2hxYVVJenVuSXVQSUhkOHNsdXdybE42NUxheU5hbE5POHpxcHdRNjBQZWhMLWxNMHJLem9rcGxrWXdrSm1lam1yQjhDVQ?oc=5", label: "AppleInsider (via Google News RSS)", as_of: "2026-06-04", confidence: medium}
+  - {id: apple-newsroom-wwdc, figure: "Apple Intelligence 'custom-built in collaboration with Google and its Gemini models'", url: "https://www.apple.com/newsroom/2026/06/apple-intelligence-brings-powerful-ai-capabilities-into-everyday-experiences/", label: "Apple Newsroom — official press release", as_of: "2026-06-08", confidence: high}
+  - {id: cnbc-wwdc, figure: "Apple partnering with Google and Nvidia for its most advanced AI model", url: "https://news.google.com/rss/articles/CBMic0FVX3lxTFB4TjFkZDFJdkg4ZVUwNmhSSENfbldRMDdRS1dYNTVMTXZMVUt5bldNTzFWdmkxQlo4U3JRUWJOZXU5S0tYdDhDSUFsRnlIQzZST283NUFST1BfbWMzbGhnYTBHdHVoenZzMXhjWnRwdk50Q0XSAXhBVV95cUxNRUI5M19abFhpcDlMVlJRV0NJUTFybXExZ2pkTWVBT0pLMGsxeklfSHJiMDlSOGVyTjNSQzJKaUxEX2R5NjdHdUJDUGYwWWluRkEtd1BjbFQ3TVFaLUpQcHZXeUs0V1h1MjdtbldGR2Z3Q0x1WDRkczE?oc=5", label: "CNBC (via Google News RSS)", as_of: "2026-06-08", confidence: medium}
+  - {id: eu-dma-block-reuters, figure: "EU regulators reject Apple's DMA exemption request; Siri AI withheld from EU iPhones at launch", url: "https://news.google.com/rss/articles/CBMitgFBVV95cUxPVzNjcTNvOF9vcGtjQlkwczJ2Znk2SGllam1yRlZ2OEdOOHVUdGV6dnl2OW1rMk13cEVxcFlXaHIyVW9FV2liTlhmVHdmT1FlZzFodV9qejNlM2ZRREZkLVNublllRTA0WGRHWnVKS3ViWFFaNEFvUm5JbkZUN0I1NC1MOFF6dXNZY2g0cUl1cFJZQVYwS3VVdnFwdmRFV0Y5TE9KVmFyc1NIMlpseDloU3FkRElFUQ?oc=5", label: "Reuters (via Google News RSS)", as_of: "2026-06-09", confidence: high}
+  - {id: eu-dma-block-euractiv, figure: "Apple blames EU's Big Tech rulebook for delaying Siri AI", url: "https://news.google.com/rss/articles/CBMijwFBVV95cUxOZVpCSXo2c0tSMjRyV1Bnc1FiTE5mRjllaHROcmZwWllwNVA2WW5tRHhmOXJDRWxFZDVmaUZRalczWEJCSmVPcXlucUhZeFpJOTQwd2poMGhtOGFDRmpjUWl3WWYyNkh5VmdBNm8wV2M5VGtDNjg4MjZHUldoYUR5bG5TNmNiVXJKQ3lKeGd6NA?oc=5", label: "euractiv.com (via Google News RSS)", as_of: "2026-06-09", confidence: high}
+  - {id: eu-dma-block-verge, figure: "'Apple wants Europe to blink' — Siri AI held back from EU pending DMA compliance", url: "https://news.google.com/rss/articles/CBMiiwFBVV95cUxPTndNVXAwRmo5Z3NHYzlfbHlpSUFJUUx3S3czX0JkSTdFN3V2Vl80NTdfYjlUQjQxamNXNnhPcXF3LVpfUUU5VWJ1VXExd2YtOWlwVFhvV0JfTDBSYzlNbWI5S0V0ODVGNUlJc1JvTWo0YWd6UlphTXdzWWJ1MHVpVWNPYXhjRV8xVG1F?oc=5", label: "The Verge (via Google News RSS)", as_of: "2026-06-09", confidence: high}
+  - {id: eu-google-android-order, figure: "Separate parallel case: EU orders Google to open Android/Search to AI rivals (not the Apple deal)", url: "https://news.google.com/rss/articles/CBMilwFBVV95cUxNaWkxdWZzRUwtWTk2TDdhNmRPZ3VTS3ZQNkRNeWVZUnloUlVKN0k0TGRWUE52amVRcEtfamJ1MWNJcTV2WHJwck40a3dEX1cweGk0OTRza2xlTXZWdWZIbERtV0toWnF4UjdTY2kxV0xnaTBxZGZWTzExRGJZRk1mYWxfQWpycVdyUGk3d2h2dzdhQ1Q5bWpF?oc=5", label: "The Verge (via Google News RSS)", as_of: "2026-07-16", confidence: medium}
+  - {id: techcrunch-beta, figure: "iOS 27 public beta opens Siri AI to everyone", url: "https://news.google.com/rss/articles/CBMipAFBVV95cUxNb2RidWstcDVSb1Y5RHV1a0tVRDBvaDl0bTRTUm5WNlFPQ2s5QWd1UFQ1MUplR20wV3RHWF9hUkM1U0ZRa2ZHc3VNemlzQUVDaEQwQkI4Q3NWLXNhcnRXZ0FDTXRQX1BWc2tSZUFRYmRZRXJQaWE5eUR1eHFuNHNKRDZCalF0UXhMU01vNE1XTmxkVGo0Sk94a1RJNTl3cE9adVhVaA?oc=5", label: "TechCrunch (via Google News RSS)", as_of: "2026-07-14", confidence: high}
+  - {id: engadget-beta, figure: "Siri AI public-beta hands-on", url: "https://news.google.com/rss/articles/CBMiZEFVX3lxTE81NFo4SUNHaGdnS19ZeU1zMUVMWjVKN3M4VlByWGUxeVlsNDQxY0pwYkZsak5GeEJUa2ExTkxTWVY0MVpaX0Y2M3hSalpRaE5wbVlvUFo1VzRZVHNXcllVdGlyV28?oc=5", label: "Engadget (via Google News RSS)", as_of: "2026-07-15", confidence: high}
+  - {id: msn-flagged-item, figure: "'might extend to cloud services: report' — the item the weekly sweep flagged; near-identical headline to the 2026-03-02 Gadget Hacks item; no independent corroboration found for a NEW 07-21/22 development", url: "https://news.google.com/rss/articles/CBMi1gFBVV95cUxOWWIta2dENEtBMEZFRDd3N1JIQUtNN01QTFFReTV6a3ZKVTE3cXg4ZTU5ekZVQ2J3ajNVLXpnTlRtOWFWNEJhc0JIWmo1bVZTZWpSQVhXWHRFbm1pYzNpUkNsbGhhTEM2OEFhQlRxY0lMNzJJMGlJa1Y2SS1QS2NXQ0xyT0szUUp3MXdZc2ZYVlBzaFlmeU9GVUF1VktheTBVekRseG1TTG00bm5yLTlVREVjbjBITUprZG9OVmhmNEJyYjByR2oxYTMxeGZ3TG1zZGZTYUp3?oc=5", label: "MSN, via Google News RSS (dated 2026-07-22 by the indexer)", as_of: "2026-07-22", confidence: thin}
+notes: >-
+  Confidence key: high = primary source fetched directly, or 3+
+  independent outlets converging same day. medium = single outlet,
+  RSS-listed (title/source/date confirmed real via WebFetch of the RSS
+  feed itself, but article body not independently re-fetched at the
+  destination — Google News redirect links generally don't resolve to
+  article text via WebFetch). thin = single outlet and/or unclear
+  methodology, or (for msn-flagged-item specifically) a negative finding —
+  confidence is thin FOR THE CLAIM THAT THIS IS NEW NEWS, not for the
+  underlying (well-established) deal facts. No URL or figure in this
+  bundle was fabricated; several plausible-looking direct-outlet URLs the
+  first-pass subagent proposed (e.g. guessed cnbc.com/reuters.com/
+  macrumors.com paths) 403'd or 404'd on verification and were dropped in
+  favor of the Google News RSS links actually returned by WebFetch.

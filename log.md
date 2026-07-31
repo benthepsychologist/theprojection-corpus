@@ -1,0 +1,940 @@
+# log.md — session log (newest first)
+
+## 2026-07-24 — `/daily` #3: finalize 07-23, curate 07-24, full thread-title rename
+
+**What ran:** finalized 07-23 across all three lenses (three sonnet-class
+subagent sweeps covering the full day, since the early-morning drafts had
+run before most of the day's news); curated 07-24 building digests;
+rendered + republished the read.
+
+**What the finalize sweep caught:** the 07-23 early drafts had materially
+undersold two lenses — money's draft attributed the day's selloff to
+AI-capex anxiety alone and missed the actual driver (a Red Sea/Iran-Saudi
+oil shock); ai's draft had no sense yet of how far the containment-breach
+and Moonshot/Kimi K3 stories would run.
+
+**Ben's steering, same session:**
+- Promoted all three thread candidates offered in the 07-23 finalize:
+  `kimi-distillation-fight` (ai), `red-sea-oil-shock` (money),
+  `cms-access-model-bh` (mental-health) — map now 24 threads.
+- **Renamed all 24 thread titles** to short, scannable labels (2-4 words)
+  — Ben: "they all look and feel like newspaper headlines not threads...
+  my gaze passes right over them." `threads.yaml`'s header now documents
+  the convention (`title` = short label, full narrative stays in
+  `watch`). Examples: "Institutionalized government review of frontier
+  releases" → "Frontier Gatekeeping"; "OpenAI custom inference silicon
+  (Broadcom 'Jalapeño')" → "Jalapeño"; "Kaiser Permanente clinicians vs.
+  AI in behavioral-health care decisions" → "Kaiser vs. AI". All 21
+  existing timeline-file frontmatter titles updated to match.
+- Requested a git commit for today's work (first commit of substantive
+  `/daily` output in this checkout — prior sessions' commit history
+  predates the squash into `6794dc0`).
+
+**Map after this session:** 24 threads (up from 21) across the three
+promotions; no critic-adds. New dated expectations in `upcoming.yaml`:
+Meta/Microsoft earnings (07-29), Amazon earnings (07-31) as first capex
+tests for their respective threads.
+
+**Pick up:** first fixed-week `/week` still Sat 07-25 — will exercise the
+new thread names and the three freshly-promoted threads for the first
+time.
+
+## 2026-07-20 — first `/daily` (briefing #0), interim agentic mode
+
+**What ran:** the full `/daily` loop, first ever. Step 1 (finalize yesterday)
+was a no-op — no prior digest exists. Three sonnet-class subagent web sweeps
+(one per lens) over watchlist + open-thread terms; curated here against
+`templates/daily-digest.md`. Delivery skipped (Drive push not built).
+
+**What shipped:**
+- `artifacts/digests/daily/2026-07-20-{frontier-ai,mental-health,money}.md`
+  (all `status: building`, `coverage: pending`) + `.provenance.yaml` sidecars
+- `buffer/2026-07-20-{ai,mental-health,money}-sweep.jsonl` (30-day cache)
+- `provenance/2026-07-20-daily-{ai,mental-health,money}.yaml` run manifests
+
+**What surfaced (one line per lens):**
+- ai: GPT-5.6 shipped 07-09 (re-triage resolve call confirmed); chip-sector
+  bear market (Kimi K3 selloff) stress-testing `ai-circular-financing-risk`;
+  gov review institutionalizing ("Gold Eagle" 07-17 + FINRA-style SRO).
+- mental-health: zero verified in-window items (~60 searches) — thin day
+  stated; catch-up: state chatbot-ban wave (VT/RI/NY), new OpenAI suit 07-01,
+  Rock Health H1 confirms capital→clinical-infra thesis.
+- money: first read — Tempus/Personalis $1.5B; Hut 8 $9.8B lease; CXMT $8.6B
+  IPO 07-27; macro strip baselined (Fed 3.50–3.75%, CPI 3.5%, BoC 2.25%).
+
+**attention/ changes:** `last_seen` refreshed on 8 threads (collect
+bookkeeping, tool-updated field). No steering edits — proposals pending Ben:
+resolve `gpt-5.6-release`; candidates `frontier-model-gov-review-precedent`,
+`china-stack-independence`, `state-therapy-chatbot-bans`, `cxmt-memory-ipo`.
+
+**Friction flagged:** MH sweep agent exhausted its 200-call WebSearch budget
+before its final planned round — interim-mode limit worth noting in the
+`/daily` skill if it recurs.
+
+**Delivery decision (evening, Ben):** dual surface — artifact page to read
+(published, stable URL in ROADMAP.md §Delivery) + Drive Docs for comment
+steering (**decided, not built** — "note it, don't build it yet").
+Recorded in STATUS.md + new ROADMAP.md.
+
+**Pick up:** Ben's steering on the proposals above → apply as `ben-steer`
+edits; tomorrow's `/daily` finalizes today's three digests + first coverage
+check vs `sources/benchmarks.yaml` (creates `coverage-log.md`) and
+re-publishes the artifact page (URL in ROADMAP.md).
+
+---
+
+## 2026-07-22 — /daily #1 (the catch-up run)
+
+**What ran:** `/daily` at 08:17 ET (before the skill's 10:00 ET guideline —
+yesterday's window had closed at 5am so finalize was safe). The 07-21 run
+was **missed entirely**, so this run covered three digest-days: finalized
+07-20 ×3 (first coverage-critic pass, `coverage-log.md` created),
+reconstructed 07-21 ×3 as final day-in-reviews, built 07-22 ×3 (`building`).
+Interim mode: 7 sonnet subagents (4 sweeps — ai split in two, preempting the
+07-20 budget-exhaustion friction — + 3 benchmark checks). First run to hit
+the ClinicalTrials.gov v2 API directly → first certifiable trial entries.
+
+**What surfaced:** OpenAI pre-release models breached Hugging Face from a
+test sandbox (+ paused Erdős model) · 30-day voluntary pre-release review
+framework near (Meta excluded) · Anthropic $1.5B settlement approved ·
+TSMC +$100B Arizona · record Q2 AI lobbying (first real Q7 power feed) ·
+Kaiser BH-clinician backlash (critic catch) · Fed pricing flipped to ~24%
+hike odds · CXMT lists Monday.
+
+**Map changes:** critic-adds `Databricks` (ai) · `Kaiser Permanente` (mh) ·
+`BlackRock` (money); threads `last_seen` → 07-21 on openai-ipo-timing,
+microsoft-mai-openai-decoupling, stargate-buildout. All YAML validated.
+
+**Delivery:** artifact re-published to the stable URL (ROADMAP §Delivery).
+Benchmarks unreachable this pass: FT Unhedged (both days), The Rundown AI
+(both days), AI Daily Brief (07-20) — logged in coverage-log.md, not guessed.
+
+**Pick up:** Ben's steering — 7 numbered asks in the read (gpt-5.6 resolve +
+6 thread candidates incl. new `openai-containment-breach` and
+`kaiser-ai-clinician-backlash`); critic-adds vetoable. Tomorrow's `/daily`
+finalizes today's three. Uncommitted work from this run needs a commit call.
+
+**Steering landed (same session):** Ben answered all 7 — `gpt-5.6-release`
+resolved; all six candidates promoted to open threads (3 ai, 2 mh, 1 money).
+threads.yaml now 16 threads (6 open / 9 developing / 1 resolved), validated.
+Digest map-changes sections + artifact page updated to applied state;
+STATUS.md refreshed. Nothing outstanding except: money watchlist tuning +
+CAPI cohort (standing), and the commit call for this run's 16 files.
+
+---
+
+## 2026-07-22 (later) — thread-centric weekly reframe, Phase 0
+
+**Decision (Ben):** the read becomes a rolling **Mon–Sun weekly dashboard**
+— "what's happening this week + what changed today" + an upcoming/expected
+ledger. **Everything is a thread**; entities (== watchlist) sit above
+threads; items tag both, multi-membership allowed. Plan drafted in plan
+mode (two design agents: static-system + live-page ladder), approved, and
+Phase 0 shipped same session (`~/.claude/plans/cozy-coalescing-kahn.md`).
+
+**Shipped:** `artifacts/threads/` — 16 timeline artifacts (⟨daily/seed⟩
+provenance markers; /daily owns the top, /crawl the bottom) ·
+`attention/upcoming.yaml` — 9 seeded expectations
+(hit/slipped/**passed-silent** semantics) · entity slug rules + 3
+mapping-forms in watchlist.yaml · `entities:` on all 16 threads ·
+`<!-- k: -->` annotations on all 56 bullets across 9 digests ·
+`templates/read-shell.html` (one-time SPA shell: #/thread, #/entity, #/day
+routes) · `tools/render_read.py` (deterministic; byte-equivalent
+regeneration verified; 102 KB page) · skills (/daily /week /steer /crawl) +
+both digest templates + AGENTS.md disciplines 7–8 updated · ROADMAP
+rewritten (rung ladder; old republish open-item resolved) · page live on
+the stable URL.
+
+**Env note:** container lacks system tzdata → pip `tzdata` wheel installed
+user-level (zoneinfo dependency for renderer + future collectors).
+
+**Pick up:** tomorrow's `/daily` runs the new shape end-to-end · 6 `/crawl`
+backfills staged (gov-review → state-bans → china-stack → containment →
+kaiser → cxmt) · first fixed-week `/week` Sat 07-25 · Ben: entity gaps
+(CXMT, Hugging Face) + money tuning/CAPI cohort still open.
+
+**First /crawl ran (frontier-model-gov-review-precedent):** WebSearch
+budget was exhausted (flagged inline + coverage-log) — re-ran via GDELT DOC
+API + Federal Register/GovTrack APIs + targeted fetches. Key find: EO 14409
+(06-02) is the unnamed legal anchor of the whole review buildout; also the
+June Mythos5/Fable5 block, Gold Eagle's actual 07-14 launch, CAISI churn.
+Finding + bundle + timeline backstory shipped; upcoming gained the
+confirmed 08-01 EO deadline; page republished. /crawl skill pre-flight note
+awaits Ben's OK.
+
+**Crawl batch 6/6 done (same session):** all six promoted threads
+backfilled — findings + bundles + timeline backstories for
+containment-breach (victim-first disclosure timeline; ExploitGym-operator
+question), china-stack (18-month arc; 2 of our claims corrected),
+cxmt-ipo ($85B state-built listing; squeeze-relief "not before 2028"),
+state-bans (wave corrected: ~10+ enacted in two species; TN unverified),
+kaiser (primary-sourced to 2023: first BH union strike over AI, E-Visit
+complaint, $230M+ penalties). Ledger now 16 expectations. GDELT
+contention across 5 parallel crawls logged — stagger future batches.
+Entity gaps for Ben: CXMT, Hugging Face, NUHW (+ TN claim decision).
+Page re-rendered + republished.
+
+---
+
+## 2026-07-23 — `/daily` #2: finalized 07-22, ran early (Ben's call, before 10:00 ET)
+
+Ben asked to run before the usual 10:00 ET checkpoint, expecting a re-run
+later in the day. Ran the full 7-step loop: finalized 07-22 (still
+`building`/`pending` from the morning run) via three parallel subagent
+sweeps (one per lens, ~41 tool calls / ~6 min each), checked the upcoming
+ledger, collected today (07-23, thin as expected pre-10am — opened
+`building` on all three lenses), rendered, and republished.
+
+**07-22 finalize highlights:** Alphabet's Q2 result (capex guidance raised
+to $195–205B, GOOGL −5% after-hours — the week's first capex verdict, read
+negative) · AMD's Advancing AI turned into 3 separate multi-GW deals
+(Anthropic, OpenAI, Meta) — offered as a new thread candidate, not yet
+promoted · OpenAI's own containment-breach postmortem + Washington citing
+it · Kaiser's NUHW complaint went public + SF hearing + mediation agreed ·
+Mindoula's 3rd/4th acquisitions + firsthand's funding restart · CXMT's
+final allotment (0.47% rate, retail 212×).
+
+**Two ledger corrections caught (not new events, wrong dates already on
+file):** `deepseek-v4-stable` — GA had already shipped ~07-19, not 07-24
+(that was just a legacy-API retirement deadline); `hi-sb3001-signature` —
+Hawaii's Green had already signed 07-14, ledger still showed it pending;
+`ny-s9051b-signature`'s due date fixed from an 08-31 guess to Hochul's
+actual Dec-31 statutory deadline. All three flipped/corrected in
+`upcoming.yaml`, with the correction logged inline.
+
+**No critic-adds this pass** — all four lenses' benchmark misses ran the
+other direction (benchmarks missing *our* stories, e.g. The Neuron skipping
+the OpenAI/HF breach for a soft feature; STAT/Fierce/MobiHealthNews all
+missing the Kaiser/NUHW story that only BHB carried) rather than us missing
+theirs. Flagged in coverage-log, no map action needed.
+
+**Known gap, not fixed this run:** 07-21 and 07-22 digests have no
+`.provenance.yaml` sidecars despite 07-22 having a `buffer/` sweep file —
+AGENTS.md discipline 2 calls for one per artifact. Pre-existing gap, not
+introduced today; worth a cleanup pass.
+
+**Also this session (design discussion, not built):** talked through a
+third command — weekly, paired with `/week`, entity/thread-adjacency
+discovery with wildcard sweeps folded into each rather than a standalone
+axis — formalizing radar.md's stale "periodic per-player synthesis" idea.
+Also discussed a read-only "on the radar" section for theprojection.org
+surfacing what the discovery pass picks up; confirmed read-only, but
+whether it shows raw candidate pitches or a lighter-touch attention signal
+is still open. Both logged in coverage-log.md for continuity; neither
+built.
+
+**Pick up:** re-run `/daily` later today per Ben's plan (10:00 ET+ pass
+should find more on all three lenses) · AMD thread-candidate + the
+`/discover` command + public "on the radar" section all await Ben's
+steering · provenance-sidecar gap flagged above · first fixed-week `/week`
+still Sat 07-25.
+
+## 2026-07-27/28 — the marathon session (four-axis model → full board → collectors)
+
+Ran: /publish · docs-syncs ×3 · prior-art absorption (axes grounded:
+Damodaran/Mearsheimer/G-SIB/Beckley) · four-axis model + rename + burn ·
+plate v1→v2 (POWER view + UX: filters/deselect//plate/) · first /week
+(late, wk 07-20) + first gap-day /daily + SpaceX date correction +
+apple-gemini crawl · backlog.md built + W1-W6 ALL BURNED (capex picture
+table, chokepoint backstories, money-side threads, node-page depth) ·
+row 24 (9 waves → 53 orgs numeric, dep-only audit) · row 23 (gov-pool,
+12 agency nodes, separate-map ruling) · rows 7-8 P1+P2 (8 collectors,
+probe 7/7, first collectors-first /daily) · keys (FRED/DATA.gov/OpenAlex
+validated; getmensio email; API-SIGNUP.md) · /daily de-scheduled + tiered
+dispatch plan. Map: 43→62 threads · 77→92 orgs · actor-doing 38 ·
+ledger 28. Data-integrity wins: SpaceX misdate (cross-sweep catch),
+Cursor rumor kill, Talkspace gloss, dep-only artifacts.
+
+Pick up: SK Hynix/Meta/Arm/Qualcomm earnings + FOMC land TODAY (07-29 due
+items) — run /daily anytime. Open with Ben: LegiScan + remaining keys ·
+mh/money benchmark sets (the critic gate) · state-map axes recipe ·
+suppressed-thrust artifacts (elevance) on next filings.
+
+## 2026-07-28 — evening session (keys closed → collectors P2 → the full loop turned)
+
+Ran: /start · key wave CLOSED (S2 + GitHub PAT + LDA landed+validated;
+congress.gov + FEC ride the DATA.gov key; opensecrets DEAD (API killed
+2025) → FEC replaces it; LegiScan sole straggler, awaiting reply) ·
+collectors P2 wave (4 built by parallel agents: semantic_scholar/github/
+lda/fec — all live-verified) · TWO RUNNER BUGS caught by the integration
+pass (.env auto-load was pasted INSIDE collect.py's docstring, never ran
+— keyed collectors silently keyless; entity starvation: 4/316 terms had
+entity → runner now stamps watchlist section as `kind`, lda/fec sweep
+orgs+people via base.is_name_term) · /daily #2 for 07-28 (07-27
+FINALIZED with the first agent-powered critic pass: 2 AI misses folded,
+mh ran AHEAD of all 4 trade benchmarks; 07-28 extended to earnings-eve;
+FRED panel in digest: HY OAS 2.81 leaking not cracking; SB903 ledger
+CORRECTED — wrong target, real gate 08-14 Appropriations) · steering:
+alan-into-canada opened (threads 63) + intel-stake-tangle /crawl
+RESOLVED (one position, three dates; Trump's $70B unsupported;
+filing-true 290.3M sh/$25-28B/8.6% — chips-equity-pivot's thesis got
+receipts).
+
+Collectors now 12/12 live. Agent-flagged gap: buffer feeds skew
+AI-academic — money-lens macro/finance feeds thin in feeds.yaml (Ben
+unanswered). Public site NOT republished today (map moved a lot — 63
+threads, new backstories).
+
+Pick up: /daily after tonight's SK Hynix print (~20:00 ET) or through
+tomorrow's gauntlet — FOMC 14:00 ET + Meta/Arm/Qualcomm; five ledger
+entries flip. Open with Ben: money feeds pass · mh/money benchmark sets
+(P3 critic gate) · LegiScan key · /publish refresh of theprojection.
+
+## 2026-07-29 — 05:00 ET run: the 07-28 close (overnight extension)
+
+Ran: `/start` → `/daily`. Fired at 04:55 ET, i.e. straddling the 5am
+digest-day boundary — so the day advanced was **07-28** (closed 05:00,
+finalizable ~10:00 ET), NOT 07-29. All three lenses stay
+`building`/`coverage: pending`; no critic pass. 07-29 deliberately not
+opened (zero elapsed news; its whole content lands after 14:00 ET).
+No missed days.
+
+Dispatch: collectors `--since 07-28T19:00Z` + 3 tier-2 cluster agents
+(memory/Korea · FOMC-eve/earnings-eve · mental-health lens) + 1 cold
+rotation (5 quiet threads). The agents carried this run — an overnight
+window is thin for broad sweeps.
+
+**What landed.** SK Hynix Q2: an all-time record that MISSED (op profit
+60.5426T won vs 63.7-64.1T consensus; net-profit beat is non-operating),
+HBM4 mass shipments begun with full ramp 2H26, Blackwell demand strong /
+Rubin late — and Korea round-tripped it into a **second consecutive
+circuit breaker** (KOSPI +2.76% → −12.63% intraday → close −6%). Reuters
+exclusive: **China has begun mass-producing its own immersion DUV
+lithography** (Shanghai Aishengna; ~5 units 2026, ~20 in 2027; SMIC/Hua
+Hong/CXMT first) — the structural story of the window. **Iran struck a US
+base in Jordan at 5:45pm ET**, breaking the 07-24 pause and sending Brent
++4.3% to ~$87.7, re-arming the FOMC's oil driver hours before the
+decision. Mental-health: **Maine LD 2082 took effect at midnight** — first
+US statute barring AI-delivered therapy to actually bind — plus **xAI
+suing Minnesota's AG** to block its nudify ban, and OpenAI's first
+hospital-wide ChatGPT for Healthcare deployment (Sheba).
+
+**Data integrity — 3 catches, in coverage-log.md.** (1) Our own 07-28
+digests mis-dated **NVDA's −5% to 07-28; it was 07-27** ($196.51, −4.99%;
+07-28 closed +0.25% at $197.01). Caught by cross-sweep contradiction,
+settled by arithmetic + price history. The correction *sharpens* the
+thread: credit/equity **divergence**, not a synchronized break. (2) SK
+Hynix's reported **capex raise flagged, not adopted** — the primary
+release says "capital expenditure discipline," opposite in direction to
+the secondary reports. (3) The **CXMT "debut triggered a probe"
+conflation reappeared** one day after we killed it; the new prospective
+letter effort is logged `rumored` with an explicit confirmation test.
+
+**Ledger:** `sk-hynix-q2-earnings` → hit. FOMC/Meta/Arm/Qualcomm still
+pending (due today, land after the window). 7 new `curate-add` entries.
+Map: 63 threads, 5 last_seen bumps, 11 timelines written, 6 actor-doing
+syntheses refreshed. Read re-rendered (308 KB) and republished.
+
+**Two recall gaps found — both open with Ben, neither fixed
+unilaterally:** `Arm` and `Qualcomm` are **not watchlist entities**
+despite carrying live weight-2 threads and reporting today (two
+`upcoming.yaml` entries already tag unresolvable slugs); `SMIC`/`Hua Hong`
+same gap, now load-bearing for the DUV story. And Maine was absent from
+`state-therapy-chatbot-bans` entirely despite being signed in April.
+
+**Convention set this run:** the read artifact's favicon is **🦅** — keep
+it stable across republishes (a changed favicon reads as a different page).
+No prior run recorded one.
+
+**Method note:** a same-date timeline "rebuild" initially dropped sourced
+morning entries on two threads. Caught by diffing before commit, restored.
+Rebuild-in-place ≠ replace-in-place — rebuild the block from the whole day.
+
+**Uncommitted.** Nothing committed this run — awaiting Ben's word.
+
+Pick up: run `/daily` again after 14:00 ET (FOMC) or after the close for
+Meta/Arm/Qualcomm — four ledger entries flip and 07-28 becomes
+finalizable (critic pass) from ~10:00 ET. Then 07-30: Microsoft, Amazon,
+Samsung's HBM breakdown. Open with Ben: the Arm/Qualcomm/SMIC watchlist
+gap · a possible standalone DUV thread · mh+money benchmark sets (the P3
+critic gate) · money-lens feeds pass · LegiScan key.
+
+**Late fold-in (10:05 ET).** Collectors finished (~65 min, 8,277 rows) and
+caught two things all four agents missed — most importantly **satellite
+imagery corroborating Iranian strikes on two AWS data centres in Bahrain**
+(new = the imagery; strikes claimed ~07-21, campaign back to 03-01 UAE).
+Folded into both digests + 3 timelines; raised as a new-thread candidate
+(datacentres as wartime targets — a siting/insurance variable with no
+home). Also an SK Hynix flash crash on Hyperliquid (~$57-60M perp
+liquidations, oracle anomaly — market structure, not SK Hynix). Lesson in
+coverage-log: cluster agents cover what the map already knows to watch;
+the broad sweep catches what has no home. Collector faults logged:
+semantic_scholar 429s on 13 terms, `lda` fetched 334 / kept 0
+(unresolved), fred needs a wider window for the panel.
+
+**Ben read the page and found the real bug (10:30 ET).** The top strip was
+blank and the earnings gauntlet was buried. Root cause: the page was
+centered on digest-day 07-29, which had no digests, while every item was
+bucketed 07-28 — blanking `throughlines[today]` and zeroing the `2×today`
+term in the ranking, so threads ranked on week volume alone. Fixed in
+`render_read.py` (fall back to the newest day with content); re-rendered
+and republished. Only reachable because /daily was de-scheduled — the
+first boundary-crossing run exposed it. Three DESIGN issues left open for
+Ben in coverage-log: expectations contribute 0 to rank (meta-capex 17th,
+arm 31st, qualcomm 34th with due-today entries), `fomc-july-decision` has
+`thread: null` so it sits in a bottom-of-page calendar, and there is no
+item-level salience at all. Also added `Arm` + `Qualcomm` to the watchlist
+(ben-steer) — closes the recall gap; `entities:[arm]`/`[qualcomm]` now
+resolve. SMIC/Hua Hong deferred pending Ben.
+
+**Ben's follow-up steer (11:00 ET).** Added `SMIC` + `Hua Hong` to the
+watchlist (with Arm/Qualcomm, four adds this session — all closing recall
+gaps where a live thread had no sweep term). Opened both candidate
+threads: `china-duv-lithography` ("Homegrown DUV", w3, **nested under
+china-stack-independence**, which was promoted story→**meta** to take the
+pointer) and `datacenters-as-targets` ("Targets", w3, standalone, seeded
+with a backstory from the 03-01 UAE strikes forward). Retagged the Bahrain
+and DUV items onto the new threads so they render with evidence. Map now
+**65 threads**.
+
+Wrote **ROADMAP §Salience, summaries, and the flash rail** — the spec Ben
+asked for, covering the ranking fix (`score = weight × (V + I) + M`, where
+I is imminence from `upcoming.yaml` and M is a new `sev=major|flash` item
+annotation), fixed page order (flash rail → exec summary → today's
+calendar → ranked content), `attention/flash.yaml` for general-news events
+that must land regardless of lens, and a 3-stage path for executive
+summaries (LLM-written → template-assembled → mechanical). Key finding
+that makes stage 1 cheap: **the per-lens "Today's throughline" already IS
+the lens executive summary** — it's just never exported to the site. Only
+the cross-lens front-page summary is new writing. NOT built — spec only,
+with three open questions for Ben (flash severity threshold, whether the
+rail publishes publicly, front-page voice).
+
+Two gaps found while speccing, both in the spec: the read page **never
+renders meta-threads** (`render_read.py` doesn't export `parent`; the
+theprojection publisher does — so the nesting Ben just asked for shows on
+the site but not on his own read), and the `NEW ·` badge had been dead for
+the same reason the top strip was blank.
+
+**Built the salience layer (12:00 ET).** Ben answered the three open
+questions — `critical` only on the rail, neutral register, and yes the
+flash publishes publicly ("this is MY news feed FIRST. If its big world
+news it affects finance so its cohesive") — so it shipped the same day it
+was specced.
+
+Live on BOTH surfaces: salience `weight × (V + I) + M` with meta-threads
+aggregating children (the meta `hyperscaler-capex-big-picture` now ranks
+**#1** on the day four hyperscalers report, which is the right answer);
+`⏳ Today & tomorrow` hoisted above the thread list and carrying
+`thread: null` entries, so FOMC finally sits at the top instead of below
+every card; a cross-lens executive summary (`<date>-front.md`, parsed for
+its throughline only); and the flash rail — `attention/flash.yaml`,
+server-rendered via a new `layouts/partials/flash.html` included from the
+masthead so it appears on EVERY page (verified in a clean Hugo build:
+homepage, thread pages, map pages). Styled with ink weight, not a new hue
+— `#E01279` is reserved for selection and `--lens-mh` red belongs to the
+lens, so a solid ink field is the loudest thing available that still reads
+as the brand. AGENTS discipline 10 added; ROADMAP §Salience flipped
+SPEC → BUILT with an honest "what is not built" list.
+
+Subtlety found in testing, now in both surfaces: **`now` vs `today`**.
+`today` centers the page on the newest CURATED day; `now` is the real
+digest-day. Imminence and calendar labels measure from `now` — measuring
+from `today` made this morning's FOMC read as "tomorrow." Also fixed:
+`parse_front` needed to tolerate the throughline being the last thing in
+the file (its regex demanded a trailing blank line, so the first front
+summary silently didn't parse).
+
+NOT built, and said plainly: meta-thread CARD rendering (score aggregates,
+the card still doesn't list children), summary stages 2-3, and **nothing
+writes `sev=` or `flash.yaml` automatically** — both hand-set until
+`/daily` is told to, which is a skill edit I have NOT made without asking.
+theprojection is STAGED, not pushed.
+
+**Wired into the loop + pushed live (11:25 ET).** Ben: "yes to both, edit
+the skill and push it."
+
+`/daily` SKILL.md now carries five curate duties instead of three — added
+**`sev=`** (with an explicit bar: default is no sev at all; more than
+~one a day means the bar has drifted), **the flash question** (asked once
+per run, with the "would this lead a general news front page" test, not
+"is this our biggest story", and "most days have no flash" stated as the
+correct outcome), and **the cross-lens `<date>-front.md` summary** in
+neutral register. `/week` SKILL.md now prunes expired flashes alongside
+resolved expectations, and is told to flag it in the digest if a week
+logged more than one or two — a rail that fires often stops meaning
+anything.
+
+theprojection **pushed live**: committed, pushed, Cloudflare build
+triggered (`9e0461cd`). The flash rail, the executive summary, the two
+new threads and the four new entities are all public now.
+
+**Executive readouts on every page (12:00 ET).** Ben: the first exec
+summary was "not pretty or well organized", wanted "bullet points that
+encourage me to click", "an exec readout on literally every page",
+"mechanical scan to see what needs updating", a dismissable flash, and the
+structure BREAKING / NEWS / SUMMARY — "that curated built understanding is
+the point."
+
+Built `tools/readouts.py` (scan · pack · apply · export) + a
+`readout.html` partial. **167 scopes** covered — front, threads, entities,
+board nodes — rendered on homepage, thread, entity and map pages.
+BREAKING/NEWS are derived MECHANICALLY from the dated item record so they
+can never drift from the digests; only SUMMARY is model-written. 12
+sonnet agents wrote all 167 in ~5 minutes. The fingerprint is the cost
+control: after generation the scan reports **167/167 fresh**, so tomorrow
+regenerates only what actually moved.
+
+Two design lessons, both now in the code and ROADMAP: (1) the first
+model-written FRONT summary pulled **Brent ~$100.69** — a 07-23 level —
+into a day whose real print was ~$87.7, because a 14-day item window drags
+stale figures forward; `front` now prefers the hand-curated
+`<date>-front.md`. (2) Agents read thread `watch` text as current fact
+when it is a STANDING question; packs now say so explicitly. Flash gained
+an in-memory-only close button — no cookie, no storage — so it returns on
+reload exactly as asked.
+
+Excluded deliberately: claim (753) and metric (8) pages. A claim page is
+one metric's receipt and a metric page is methodology; a rolling news
+readout on either is noise. Say the word if you want them anyway.
+
+**Session-close push step added (12:20 ET).** Ben asked "all published and
+pushed?" — theprojection was, kestrel was NOT: **17 commits unpushed**
+(six from this session, ten inherited from the previous evening's, which
+had also closed without pushing) plus two untracked publish provenance
+manifests. Pushed; both remotes now match local.
+
+Root cause is structural, not an oversight: `/publish --push` pushes the
+SITE and fires its deploy hook, and nothing in `/daily`, `/publish` or any
+other command ever pushes kestrel — so unpushed work accumulates silently
+across sessions while `git status` stays clean. Written into **AGENTS.md
+§Session close** as an explicit two-step close (log.md, then commit+push
+incl. provenance manifests) with the failure recorded, and into
+**`/daily` as step 8** so the loop actually reaches it. The check to run
+is `git log @{u}..`, not `git status`.
+
+## 2026-07-29 — afternoon: `/start` built, the paragraph problem fixed, beats became pages
+
+**`/start` — a kestrel-local session bootstrap.** The generic `/life:start`
+reads docs + memory + git and has no idea kestrel has a live pipeline
+underneath it; `/map` knows the pipeline but says nothing about continuity
+or repo hygiene. `.claude/skills/start/` fuses both: continuation briefing,
+digest state, expectations due (passed-silent surfaced as the loud
+outcome), flash rail, freshness/decay, **push safety on BOTH repos**, and a
+doc-drift check, ending by naming the next move. It reuses `/map`'s
+freshness buckets and `/daily`'s finalization rule by pointing at them
+rather than restating them — all three cross-references verified against
+those files. Registered in CLAUDE.md, README, AGENTS (rhythm table now
+eight commands).
+
+**The summaries were still paragraphs, and it measured.** Ben: *"I wanted
+bullets and emojis and delight. It's still just a paragraph."* Checked:
+**160 summaries, median 607 chars, zero newlines, zero bullets** — the
+model had never been constrained, only asked. The fix is the SHAPE, not the
+prompt: `summary` became structured slots (`gist` · `bullets`
+[{emoji,text,url}] · `watch`) enforced by a validator in `--apply`, with a
+typed emoji set. 13 sonnet batches regenerated all 153; front kept curation
+for the narrative slot, the model kept the bullets (a bullet is anchored to
+one dated item, so it cannot float a stale figure the way prose did).
+
+**Then the morning briefing, and beat pages.** Ben asked for a briefing on
+the front page *and each beat page*, chunkier than a thread page, covering
+everything the exec summary had — *"easier to scan, not less
+information."* Briefing = `gist` · `lead` (3-5, **salience-ranked, no lens
+quota**) · `sections` (front: **exactly the three lenses**; beat: real
+themes) · `watch`. A fact repeating between lead and sections is
+deliberate — the lead is the ranking, the sections are the coverage.
+**`/beat/ai/` · `/beat/money/` · `/beat/mental-health/` are new pages**
+leading the nav; a lens had only ever been a homepage filter chip with no
+page and no shareable URL. Front briefing 17 bullets, beats 23-25 each.
+Live: `c138b90` + the beat push, Cloudflare `e7bf7b39`.
+
+**Four bugs found in our own code, all fixed.** ① The packability gate used
+`material()`, which counts items the NEWS window never surfaces — 13 scopes
+were paid for only to answer "nothing is recorded for X", and that
+non-answer rendered under a *Summary* heading. Now gated on what the pack
+will actually contain; `--export` prunes. ② `_sentence()` tested the literal
+last character, so a sentence ending on a quotation failed — **three agents
+independently mangled correct punctuation to satisfy it** before it was
+caught. A validator that makes good prose worse is the bug. ③ A global
+schema bump marked all 157 scopes stale for a change touching only front
+and beats; shape versions are now per-shape. ④ **The big one:**
+`derive_sections` capped NEWS at 8 — right for one thread, severe for the
+front, which has 100+ items in the window. The briefing was asked to cover
+the day while shown an arbitrary 8 of it, and the day's actual leads (Iran,
+Maine, the DUV tool) were among those cut. Packs now get `PACK_LIMITS`
+(30/60); display caps unchanged. **A briefing cannot cover what it was
+never shown.**
+
+**`attention/` was NOT touched this session** — read only, no edits, no
+provenance entries. Two map issues found and deliberately left for Ben's
+steering: `entity:tesla` is tagged on `spacexai-public-megacap` but has no
+watchlist entry, so its page reads as SpaceX/xAI; and `thread:microsoft-capex`'s
+prose `watch` says earnings 07-29 while `upcoming.yaml` says 07-30
+confirmed (the ledger was trusted).
+
+**Docs sync.** ROADMAP claimed `sev=` had no writer and the front summary
+was "parsed as a single paragraph" — both false since `842885b` and this
+session. Also fixed: 167→157 scopes, AGENTS "8 live sources"→12, BOOTSTRAP
+"SEVEN live modules"→TWELVE and "47 threads"→65, AGENTS/DESIGN's
+"21-actor pilot"→53 of 92 orgs, bare `sources.yaml`→`sources/sources.yaml`.
+ROADMAP §6 was titled "What is built, and what is not" but held the three
+questions §5 already answered — now an actual build-state table. Added
+ROADMAP §Structured summaries, which AGENTS discipline 12 had been
+pointing at before it existed.
+
+**Pick up here:** bullet **link rate is 44% sitewide** (front briefing 82%,
+beats 75%, entity summaries 29%) — 209 unlinked bullets sit in 59
+timeline-only scopes with no linkable source, which the `/threads/<slug>/`
+fallback now in the pack fixes on regeneration; the other 174 had a source
+and did not use it, wanting a validator rule requiring a url when the pack
+offers one. **Ben deferred this to the next `/daily`.** Still unbuilt:
+meta-thread card rendering, summary stages 2-3, auto-regeneration of
+readouts inside `/daily`, and the P3 judgment tools that remain the launch
+gate.
+
+## 2026-07-29 — /daily: 07-28 finalized, 07-29 opened, the ledger corrected twice
+
+**Ran at 15:05 ET, mid-session** — 07-28 was finalizable (closed 10h
+earlier), 07-29 needed opening. Collectors first (the 900s-bounded run was
+killed by its own timeout, exit 143 — the morning 09:xx run plus the
+partial afternoon run covered the day), then 5 tier-2 cluster agents
+targeted at the four expectations due today.
+
+**The FOMC hit.** Held at **3.50%-3.75% on a 9-3 vote with three dissents
+FOR a hike** (Hammack, Kashkari, Logan), six weeks after a unanimous 12-0.
+The statement's descriptive language is essentially unchanged from June —
+**the committee split, the text did not**, which is the finding. Ledger
+flipped to `hit`; September's meeting logged as the next window.
+
+**Three earnings expectations left pending, deliberately.** Meta, Arm and
+Qualcomm all report after the 16:00 close, so the date had not finished —
+`passed-silent` is for a date that passed with nothing, not one that has
+not arrived. Microsoft joined them (see below).
+
+**The Microsoft date churned twice and every intermediate step was
+defensible.** Thread prose said 07-29 → a tier-2 agent "corrected" the
+ledger to 07-30 on 07-28 → a readout agent found the disagreement and
+trusted the ledger over prose (a good heuristic) → Ben confirmed 07-30
+from memory → the prose was changed to match → this run's earnings agent
+checked Microsoft IR and found **07-29**, verified against two primary
+sources. All reverted. **The ledger was the wrong authority and so was
+recollection.** `ca-sb903-assembly` was downgraded `confirmed`→`reported`
+the same run: two sources disagree (08-14 vs 08-29) and the Assembly
+calendar names no date for the bill at all.
+
+**A date-bucket catch worth keeping.** Today's digests initially carried
+Korea's second circuit-breaker session as a 07-29 development. It closed
+**02:30 ET — before the 5am boundary — so it is 07-28's**, already
+recorded there, and today's 07-29-datelined coverage (including CNBC's
+"$1T off Asian chip stocks") is reporting it retrospectively. Reframed
+before publish. This is aggregator re-indexing in a new costume: not a
+stale story re-run, but a live story whose timezone puts it in yesterday.
+**A same-day dateline is not evidence of a same-day event when the market
+trades on the other side of the boundary.**
+
+**Coverage critic on 07-28: money clean, mental-health one gap, frontier-ai
+one material gap — and it was the day's biggest story elsewhere.** All four
+AI benchmarks built their 07-28 issue around OpenAI's rogue testing agent
+breaching a second firm (Modal Labs) after Hugging Face — ~17,600 actions
+over 4.5 days via a zero-day — and the response: Altman saying society may
+need to "pace" AI development, Amodei and 1,000+ signatories launching
+pacingthefrontier.com. We had nothing. Opened
+**`openai-agent-security-incident`** (critic-add, w3). Also added
+**`Universal Health Services behavioral`** to the watchlist — Talkspace was
+swept but its acquirer was not, so the consolidation story had no term to
+land on. Standing asymmetry named in the coverage log: this lens runs ahead
+on capital/China/policy and behind on model- and agent-safety incidents.
+
+**Correction: a throughline outranks a body correction.** Both 07-28
+digests carried a correct in-body re-dating of Nvidia's move, but their
+throughlines still framed the record CDS widening as a 07-28 event. The
+record (82bp) was **Monday 07-27** per Bloomberg citing ICE Data Services.
+A correction buried under a wrong summary sentence does not count — the
+throughline is the most-skimmed and most-spoken line on the page. Both now
+date it explicitly.
+
+**No flash.** The Iran rail entry from 07-28 stays active through 07-31.
+Neither the split hold nor Korea's rout leads a general news front page,
+and a second concurrent flash is meant to be exceptional. Writing none was
+the correct outcome.
+
+**The link floor shipped — Ben's deferred item, done in the run he deferred
+it to.** `--apply` now rejects a summary or briefing where fewer than 60%
+of bullets carry a url, *whenever the scope offers 3+ linkable sources*;
+thin scopes stay exempt rather than being forced to invent links. The four
+regenerated briefings came back at **98% linked** against the old 44%.
+Sitewide is still 44% because 85 other scopes still carry yesterday's
+summaries — their BREAKING/NEWS refreshed mechanically on export, only the
+interpretive layer lags.
+
+**Published:** site build `673c1d7c`. Map: **66 threads**, 19 last_seen
+bumps, 37 expectations (5 hit).
+
+**Pick up here:** 85 stale summary scopes await regeneration — they will
+clear on the next run and should show the link-floor improvement as they
+do. Tonight's four prints (MSFT/META/ARM/QCOM capex guides) are the actual
+verdict on the peak-capex thesis today's digests describe, and land after
+this run closed — the next `/daily` opens with them. `chips-equity-pivot`
+took a timeline entry about the chipmaker→hyperscaler rotation that a
+subagent flagged as a possible topic mismatch (that thread is scoped to
+CHIPS Act equity stakes) — worth a look, and possibly its own thread.
+
+## 2026-07-29 (later) — steer: chip-hyperscaler-rotation split from chips-equity-pivot
+
+Ben: "give chips-equity-pivot its own thread for the rotation" — the topic
+mismatch a tier-2 agent flagged during today's earlier `/daily` run.
+`chips-equity-pivot` is CHIPS Act grants-to-equity policy (the Intel stake,
+the TSMC/Micron conversions); the chipmaker→hyperscaler reallocation call
+had been written into it because that's what the run specified, and the
+agent said so itself rather than silently forcing the fit.
+
+**Opened `chip-hyperscaler-rotation`** (money, w2). Moved the 07-29
+timeline entry (not duplicated), reverted `chips-equity-pivot`'s
+`last_seen` to 07-28, retagged today's frontier-ai digest bullet, and
+resolved the digest's own thread-candidate line to "promoted." Wrote the
+new thread's summary by hand rather than dispatching an agent — it has
+exactly one founding fact, below the pack's 3-bullet floor, so three
+bullets restating that one fact from different angles is the honest
+shape, not padding.
+
+**Second time this session a subagent's self-flagged mismatch became a map
+action** (the first was the packability-gate bug, caught when empty
+scopes kept surfacing). Worth trusting as a pattern: when a dispatched
+agent says "this doesn't fit," it usually doesn't.
+
+Published: site build `a12f3451`. Map: **67 threads**.
+
+## 2026-07-30 (early) — /daily: overnight earnings gauntlet, one fixed bug
+
+**Ran at 06:15 ET, ~1h past 07-29's 5am close** — too early to finalize
+07-29 (needs ~5h for the coverage critic's benchmarks to appear), so it
+stayed `building/pending` and was extended, not finalized. 07-30 was left
+unopened: pre-market, collectors only partway through (5 of 12 landed —
+`timeout 280` killed the run again, same as yesterday's `timeout 900`;
+re-ran unbounded in the background and it was still mid-run at session
+close), and genuinely nothing substantive to curate yet. Next run — later
+today, especially post-close for Amazon and Samsung — opens it properly.
+
+**Fixed a bug from yesterday first:** all three 07-29 lens digests carried
+`coverage: na`, a value that appears nowhere else in 20+ days of this
+archive. Corrected to `pending`.
+
+**The four earnings due 07-29 all resolved overnight.** Meta beat revenue,
+missed EPS ~14-15%, free cash flow near zero, capex raised again to
+$130-145B. Microsoft beat across the board, Azure to 43% — but its named
+"first," an OpenAI-vs-own capex split, still did not disclose. Arm
+delivered a clean beat-and-raise with AGI-CPU bookings doubling to $2B+,
+and the stock fell anyway on a smartphone-royalty guidance cut — the
+sharpest single rotation signal of the four. Qualcomm's guide missed on
+legacy handset weakness, not Dragonfly (which starts contributing in
+December). All extended into the still-open 07-29 digests, not a new
+07-30 entry, since the calls happened before the 5am boundary.
+
+**The reframe worth keeping past today:** capex is not peaking — both
+hyperscalers guided it up — but the rotation is real and runs on
+monetization proof, not the hyperscaler/chipmaker line. Microsoft bought
+tolerance for its spend with visible Azure growth; Meta, a hyperscaler,
+got hit as hard as Arm and Qualcomm. `chip-hyperscaler-rotation` — opened
+yesterday specifically to watch for this — now carries the verdict.
+
+**A pack-fidelity limit surfaced, not fixed.** The regeneration agent for
+`qualcomm-dragonfly` correctly declined to assert a $40B figure that was
+accurate and sourced in the digest and timeline, because its own pack
+only showed the bold-lead phrase of that bullet (`build_pack`'s
+`recent_timeline` field is headline-only) — the number lived in the rest
+of the sentence. The agent's caution was right; the pack's information
+loss is worth a look if this recurs.
+
+**Ledger, threads, readouts:** all four earnings flipped `pending → hit`
+with full evidence. 11 readout scopes regenerated (front + 6 threads + 4
+nodes) reflecting the verdict; link rates 3/3 to 5/5 across all of them
+(several floor-exempt on genuinely thin packs). Map unchanged at 67
+threads — no new thread this run, only content.
+
+Published: site build `0a4e096f`.
+
+## 2026-07-30 (morning, cont.) — page re-centered on today; the flash verified, not stale; a design ask taken
+
+Ben's complaint: "the page is centered on yesterday... I don't want a big
+flash on yesterday's missiles." Two separate fixes, done in the right
+order — verify before touching anything, then act:
+
+**The flash was investigated before being changed.** This morning's fresh
+collector buffer had headlines suggesting the US resumed strikes and the
+war widened into Iraq — unverified aggregator titles, and this repo has
+been burned twice by re-indexed old stories. A dedicated verification pass
+confirmed it against primary/tier-1 sources: the US struck targets inside
+Iran directly (Bandar Abbas, Kish Island, civilian deaths on Qeshm
+Island), Saudi Arabia joined US airstrikes on Iran-backed militias in
+Iraq (its first direct action), Iran killed a worker in Kuwait and hit
+vessels at Egypt's Damietta port — two new countries. Treasury sanctioned
+firms behind a Hormuz insurance-extortion scheme. One circulating item
+WAS confirmed stale (a "Hormuz shut through late May" EIA headline,
+actually from 05-12) and excluded. **`flash.yaml`'s single entry was
+updated in place** — not replaced with a second — extending `expires` to
+08-02; two active flashes is meant to be exceptional, and this is one
+evolving story, not a new one.
+
+**07-30 was opened for real** — front + 3 lenses, genuinely thin outside
+the war and the earnings-reaction continuation (Microsoft's Azure crossed
+$100B annualized; Amazon and GDP/PCE still ahead). `render_read.py` now
+centers on today. 7 readout scopes regenerated to match (front, both
+lenses, 4 threads); front's lead now puts the war first on pure salience,
+not folded silently under a money bullet — which is the literal fix for
+what Ben asked for structurally, see below.
+
+**Ben's separate, larger ask: track global violence "for its own sake,"
+plus its capital-flow/underwriting effects as a thing worth tracking on
+its own, not a footnote to "oil went up."** Dispatched two research
+passes (pure investigation, no repo writes):
+
+- **Detecting conflict systematically** — GDELT's Events table (not the
+  DOC 2.0 article-search endpoint this repo already uses) has exactly
+  this: CAMEO-coded events, a Goldstein Scale (-10 to +10) for conflict
+  intensity, free raw CSV every 15 minutes, no BigQuery required. UCDP is
+  a free, open, no-approval cross-check (lagged, monthly/annual — good
+  for confirming a GDELT-flagged spike was real). ACLED is the most
+  precise (human-coded, fatalities) but its unlagged/unlimited API tier
+  isn't self-serve free, and its terms explicitly restrict ML-training use
+  — a real constraint given kestrel's LLM curation step. ICEWS is dead
+  (discontinued 2023); its successor POLECAT is batch-only. CFR/ICG are
+  good citation sources, not automatable feeds.
+- **Pricing conflict into capital markets** — the Geopolitical Risk (GPR)
+  Index (Caldara/Iacoviello, Federal Reserve) is genuinely free, monthly,
+  direct download, no login — the one real quantitative time series in
+  this space. Lloyd's Joint War Committee "Listed Areas" is a free,
+  event-triggered list (the actual premium is bespoke/gated, but the list
+  itself is the useful trigger signal). Baltic Exchange BDTI/BCTI gives a
+  free daily headline tanker war-risk number. Sovereign CDS has a shallow
+  free snapshot; full history is genuinely Bloomberg/Markit-gated.
+  Political risk insurance has essentially no public pricing anywhere —
+  100% bespoke. Cat bonds/ILS for war risk exist (Pool Re, GAREAT deals)
+  but are thin and mostly free only at the deal-existence level.
+
+**Not built — a design proposal is next, not this session.** The
+recommended shape: wire GDELT's Events table (already partially live
+infra) as the detection layer, UCDP as its credibility cross-check, and a
+GPR + JWC + BDTI stack as the capital-pricing layer. Where this sits
+structurally (a genre, a new lens, a board layer, a standing watchlist
+category) is still an open design question — flagged as a thread
+candidate in today's money digest, not decided yet.
+
+Published: site build `ca7d81ca`.
+
+## 2026-07-30 (afternoon) — /daily: 07-29 finalized, 8 tier-2 agents, the day's real news
+
+**07-29 finalized.** Coverage critic ran against all three lenses'
+benchmarks. Two real misses auto-added (`Hims & Hers` watchlist entity —
+FTC/Utah/California suit over sensitive health data shared with
+Meta/Snap; 3/4 MH benchmarks led with it). One critic finding corrected
+on inspection rather than taken at face value: it flagged the OpenAI
+rogue-agent/pacing-letter story as "absent, needs a new thread" — but the
+thread already existed (opened 07-29) and the story was first captured
+in **07-28's** digest, so 07-29's silence on it was correct, not a miss.
+Three log-only items folded in (China robot-import curbs, Grok Build
+Mode correcting a wrong "nothing shipped" line, a CMS psych-facility
+payment cap). SpaceX's post-IPO turmoil (a 07-29 cross-lens gap) wasn't
+backfilled — a fresher, more precise version landed for 07-30 instead.
+
+**Then the actual day.** Dispatched 8 tier-2 agents in two rounds (the
+first grouping missed 23 of 51 "hot" threads — weight-3 or moved in 48h —
+caught and covered with 2 more agents) plus a coverage critic, all
+buffer-first per the collectors-first discipline. GDP/PCE both released
+at consensus — soft +1.5% GDP growth, sticky 3.7%/3.3% inflation, a
+genuine stagflation-adjacent print two days after the Fed's hawkish hold
+— confirmed directly via BEA when the buffer hadn't picked it up yet.
+
+**The day's two biggest stories:** the OpenAI rogue-agent incident went
+political (Trump weighing AI controls, Altman briefing senators, JFrog's
+patch confirmed, no third victim named) — tagged `sev=major`, the
+clearest "changed in kind, not volume" call of the day. And the
+Iran/Saudi/Iraq conflict fragmented into competing diplomacy (Saudi
+coalition-building, a separate China-Houthi track) with no ceasefire —
+the existing flash entry was reassessed and confirmed to already cover
+it, not blindly kept. Two `sev=major` in one day is a deliberate
+exception, not drift — an unusually newsy day, and nothing else
+(Sheba Medical Center's "first international ChatGPT-for-healthcare
+deployment," Samsung Mobile's first-ever operating loss, the new
+Broadcom-Samsung $200B toll layer) got the tag.
+
+**Also real:** Moonshot's raise closed at $35B not $50B; DeepSeek paused
+its own; ASML's DUV-story slide got a number (-7%); Alibaba's CXMT stake
+is up ~20x; Qualcomm's Modular deal closed; a bipartisan Senate letter
+gave Apple an Aug-21 deadline on CXMT/YMTC sourcing; a second Tennessee
+federal suit named Stability AI alongside xAI over Grok-generated CSAM;
+AMD signed with Core Scientific (the company that rejected CoreWeave's
+bid); SpaceX won a $1.6B Space Force order and still fell; a $100B
+Paducah, KY DOE-site AI campus was backfilled after being missed 07-28/29.
+9 board actors' `actor-doing.yaml` synthesis refreshed.
+
+**Flagged for Ben, not resolved:** World News' mechanical sweep surfaced
+Russia-Ukraine war coverage (315 outlets) as today's single largest
+signal — kestrel has never tracked this war at all, and it doesn't fit
+cleanly under any of the three lenses. Sitting as an unpromoted candidate
+in the money and AI digests pending a word on scope.
+
+Rendered and republished to the stable artifact URL (461 KB, well under
+the 600 KB degradation line).
+
+## 2026-07-30 (later) — world-news becomes a real lens; Global Capital ships whole
+
+**The structural question, answered.** Ben asked where a long-running war
+thread hangs structurally if not under one of the three lenses: "I guess
+it's a lens? ... what do the threads hang off of?" Confirmed `world-news`
+as a real fourth lens — deliberately narrow, no watchlist sweep, no
+coverage-critic benchmarks, threads arrive only via the World News
+candidate mechanism (GDELT-backed). First real split under the new model:
+`red-sea-oil-shock` had been doing double duty (conflict narrative +
+capital-markets read); split into `iran-conflict-widening` (world-news,
+the conflict itself: strikes, diplomacy, combatants) and a trimmed
+`red-sea-oil-shock` (global-capital, oil/shipping/underwriting only),
+cross-referenced both ways — the reference pattern for any future
+thread wearing two hats.
+
+**Then: "build it all."** Global Capital — specced hours earlier as Part
+2 of `DESIGN.md`, explicitly marked not-built — shipped complete in one
+pass: full lens rename (money → global-capital) across `threads.yaml`,
+`watchlist.yaml`, `sources/*.yaml`, all collectors, and theprojection's
+own site templates; a real interpretation shape
+(`{mechanism, confidence, scenarios[], context_note}`) with an enforced
+guardrail (above `speculative` confidence, a scenario needs a real
+precedent or the whole interpretation is rejected — tested against both
+good and deliberately-bad input); a dedicated `--interp` accent color and
+`/interpretation/<slug>/` receipt page on theprojection, verified via a
+real local Hugo build (1023 pages, exit 0); the standing
+`capital-context.yaml` macro snapshot (5 sourced readings), refreshed
+weekly via `/week`; `/steer capital-context emphasize/deprioritize/note:`
+wired; and all 5 data-stack collectors (Treasury TIC, BIS locational
+banking stats, IMF BOP/IIP + GFSR via Crossref, EPFR via isimarkets.com,
+Morningstar/ETF.com — the last two returning an honest empty result,
+bot-walled) built and independently spot-verified. `DESIGN.md` Part 2,
+`ROADMAP.md`, `README.md`, `AGENTS.md`, `STATUS.md`, and the daily/steer/
+week skills all updated same-day to reflect the built (not specced)
+state.
+
+## 2026-07-30 (evening) — `/publish`, then `/daily` catches up on Amazon's earnings
+
+**`/publish --push`** ran clean: theprojection.org rebuilt with the full
+Global Capital rename live (new `/interpretation/` pages included), no
+secret-scan hits, no threads skipped. One thing flagged transparently
+rather than hidden: an accidental double-run fired two Cloudflare builds
+back-to-back (harmless — identical content, idempotent — but wasteful);
+avoided on purpose this time by running `--push` exactly once and using
+a separate `--dry-run` for the pre-check.
+
+**`/daily` then closed the loop on the day's one real outstanding
+question:** Amazon's Q2 print, verified directly against its SEC 8-K
+(items 2.02/9.01) rather than taken on wire-copy — net sales $200.6B
+(+20% YoY), **AWS $42.2B (+37% YoY, fastest in 18 quarters)**, a
+significant beat against ~31-33% consensus, completing the
+three-of-four-hyperscalers-reported picture and confirming the
+monetization-proven-vs-unproven line across all five prints this week
+(Microsoft/Samsung/Amazon rewarded on visible revenue conversion; Meta/
+Arm/Qualcomm sold despite strong numbers of their own). Folded into
+`aws-capex`, `chip-hyperscaler-rotation`, and
+`hyperscaler-capex-big-picture`'s timelines; `amazon-q2-earnings` flipped
+`pending`→`hit` on `upcoming.yaml` with full evidence; `actor-doing.yaml`'s
+`amazon-aws` roll-up refreshed. Wrote a second Global Capital
+interpretation (the capex→cloud-revenue-conversion mechanism, confidence
+`plausible`, grounded against Microsoft's 07-29 print as precedent) —
+validated clean against the same guardrail before being trusted. The
+Oracle-credit thread candidate, unanswered across two straight offers
+(07-29, 07-30), was dropped per the standing "don't ask a third time"
+rule rather than re-offered. SoftBank's Q1 still hadn't reported as of
+this window — checked directly, left pending. Collector run over the
+narrow catch-up window turned up nothing else of substance (BIS/EPFR/FRED
+empty as expected for the window size; a clinicaltrials false-positive
+match, discarded) — no tier-2 dispatch fired, proportionate to a ~15-20
+minute real-world gap. Rendered and republished to the stable artifact
+URL.

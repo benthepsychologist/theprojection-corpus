@@ -1,0 +1,76 @@
+# Bundle — node posture + capital-flow: alibaba-qwen / Alibaba/Qwen (2026-07-26)
+# Extends artifacts/bundles/alibaba-qwen-axes/ (capitalization/optionality/gravity)
+# with posture + the 5-way capital-flow decomposition for board.yaml frontier-lab.
+# Method: WebFetch primary sources (WebSearch exhausted). Alibaba 20-F FY2026
+# (SEC) + stockanalysis balance sheet/segments; Qwen ecosystem via Wikipedia;
+# China state-influence via kestrel china-stack-independence thread. CNY->USD
+# at ~7.2 (assumption, flagged). Node = the Alibaba parent AND its Qwen model
+# line; capital is the parent's.
+#
+# 2026-07-28 pass — thrust-focused refresh. Added a `thrust:` block (capex-D&A
+# recipe, ¥380B/$53B buildout as core figure) plus fresh capex/D&A/buyback
+# actuals (stockanalysis cash-flow statement) and Qwen-specific gravity
+# datapoints (Apple Intelligence China selection, AI ARR target). IMPORTANT:
+# WEIGHT on this board is Qwen/AI-unit-ATTRIBUTABLE capital riding the Alibaba
+# parent balance sheet (the AI/compute buildout commitment + cash allocated to
+# it) — an attribution choice, NOT a separate Qwen entity's own raise. Qwen has
+# no independent balance sheet; every $ here answers to Alibaba's signature.
+node: alibaba-qwen
+name: "Alibaba/Qwen"
+pocket: frontier-lab
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Pouring ~$53B into an AI/compute buildout + an open Zhenwu/SAIL CUDA-alternative stack — operating income collapsed absorbing the capex."
+  sources:
+    - {figure: "~¥380B (~$53B) AI/compute buildout + Zhenwu M890 + open Zhenwu/SAIL CUDA-alternative stack", label: "The Register via kestrel china-stack thread", url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", as_of: "2026-05", confidence: med}
+    - {figure: "operating income collapsed ¥141B->¥50B (AI capex)", label: "stockanalysis.com — BABA income statement", url: "https://stockanalysis.com/stocks/BABA/financials/", as_of: "2026-03", confidence: high}
+capital:
+  available:
+    value: "~$44B liquid (cash+STI ¥316.9B Mar-2026), down ~45% in two years into the buildout; market cap ~$269B is a side-label"
+    sources:
+      - {figure: "cash+STI ¥316,894M at Mar 31 2026 (¥428B FY25, ¥571B FY24)", label: "stockanalysis.com — BABA balance sheet", url: "https://stockanalysis.com/stocks/BABA/financials/balance-sheet/", as_of: "2026-03", confidence: med}
+      - {figure: "Form 20-F FY2026 filed 2026-05-20 — primary backing", label: "SEC EDGAR — Alibaba 20-F FY2026", url: "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/0001193125-26-231755-index.htm", as_of: "2026-05", confidence: high}
+      - {figure: "market cap $268.78B", label: "companiesmarketcap.com — Alibaba", url: "https://companiesmarketcap.com/alibaba/marketcap/", as_of: "2026-07", confidence: high}
+  operating:
+    value: "FY2026 revenue ¥1,023,670M (~$142B); operating income collapsed ¥141B->¥50B absorbing AI capex (profitable, unlike the US pure-plays)"
+    sources:
+      - {figure: "FY2026 revenue ¥1,023,670M (~$142B); operating income ¥141B->¥50B", label: "stockanalysis.com — BABA income statement", url: "https://stockanalysis.com/stocks/BABA/financials/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~¥380B (~$53B) AI/compute buildout commitment + the Zhenwu M890 in-house chip program; FY2026 actual capex ¥126,063M is right on the 3-yr buildout's implied ¥126.7B/yr pace"
+    sources:
+      - {figure: "~¥380B (~$53B) AI/compute buildout + Zhenwu M890", label: "The Register via kestrel china-stack thread", url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", as_of: "2026-05", confidence: med}
+      - {figure: "¥380B/$52-53B AI+cloud infra investment explicitly confirmed as a THREE-YEAR plan (FY2026-FY2028, announced Feb 2025)", label: "Google News RSS aggregation (Network World / Express Tribune / Futu headlines)", url: "https://news.google.com/rss/search?q=Alibaba+%22380+billion%22+OR+%2253+billion%22+AI+three+years", as_of: "2026-07", confidence: med}
+      - {figure: "FY2026 (ended Mar 2026) capex ¥126,063M; D&A ¥47,118M", label: "stockanalysis.com — BABA cash flow statement", url: "https://stockanalysis.com/stocks/BABA/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  in:
+    value: "commerce + cloud revenue ~¥1.02T/yr (self-funding); Alibaba Cloud ¥158,132M (~$22B, +34% YoY)"
+    sources:
+      - {figure: "Alibaba Cloud revenue ¥158,132M FY2026 (~$22B, +34%) vs ¥118,028M FY2025", label: "stockanalysis.com — BABA segments", url: "https://stockanalysis.com/stocks/BABA/financials/?p=segments", as_of: "2026-03", confidence: high}
+  out:
+    value: "~¥380B AI buildout capex depressing operating income; state 'national team' ~$8.9B equity support (context, not Alibaba spend)"
+    sources:
+      - {figure: "~¥380B AI buildout capex", label: "The Register via kestrel china-stack thread", url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", as_of: "2026-05", confidence: med}
+      - {figure: "state 'national team' ~$8.9B injection to steady equities (07-19->21)", label: "Epoch Times via kestrel china-stack thread", url: "https://www.theepochtimes.com/china/after-a-1-48-trillion-selloff-chinas-national-team-steps-in-to-steady-stocks-6065409", as_of: "2026-07", confidence: low}
+  buybacks:
+    value: "PARENT-LEVEL capital return, distinct from Qwen-attributable thrust — FY2026 buyback collapsed to ¥7,638M (~$1.06B, buyback yield 0.43%) from ¥86,662M (~$12B, yield 5.11%) in FY2025, as capital redirects from repurchases to AI capex. Cumulative FY2022-FY2025 buybacks ~¥311,378M (~$43.2B), roughly matching press reports of a '~$45B buyback' program"
+    sources:
+      - {figure: "FY2026 repurchase of common stock ¥7,638M vs FY2025 ¥86,662M, FY2024 ¥88,745M, FY2023 ¥74,746M, FY2022 ¥61,225M", label: "stockanalysis.com — BABA cash flow statement (10Y view)", url: "https://stockanalysis.com/stocks/BABA/financials/cash-flow-statement/?p=10Y", as_of: "2026-03", confidence: high}
+      - {figure: "buyback yield/dilution 0.43% FY2026 vs 5.11% FY2025", label: "stockanalysis.com — BABA ratios", url: "https://stockanalysis.com/stocks/BABA/financials/ratios/", as_of: "2026-07", confidence: med}
+      - {figure: "'$45 billion buyback, reacquiring 66% of shares' (press framing of the cumulative multi-year program)", label: "Yahoo Finance via Google News RSS", url: "https://news.google.com/rss/search?q=Alibaba+Qwen+AI+capex+OR+buyback", as_of: "2025-07", confidence: low}
+optionality:
+  value: "constrained — cash-rich but China state-steered (MofCom weight-export consult, national-champion tilt, capital controls / VIE structure)"
+  sources:
+    - {figure: "MofCom reportedly consulting Alibaba/ByteDance on restricting overseas transfer of weights", label: "SCMP via kestrel china-stack thread", url: "https://www.scmp.com/tech/tech-war/article/3361625/global-ai-experts-push-back-us-distillation-claims-against-moonshots-kimi-k3-model", as_of: "2026-07", confidence: med}
+gravity:
+  value: "~$1.05T GMV GROSS (VERY gross — commerce GMV) + ~$22B/yr Cloud. VA-deflated ~$43B/yr (~6% VA, DEFERRED — the gross-vs-value-added trap). Qwen-OWN-attributable gravity (distinct from the commerce number above): monetized floor ~$4.2B/yr (Alibaba Cloud AI ARR target, thin) atop a much larger unmonetized open-weight/enterprise-adoption footprint (200k+ HF derivatives, 1B+ downloads, 234M app users, now + Apple Intelligence China selection)"
+  sources:
+    - {figure: "GMV 'US$1 trillion' last-official (FY2020); Cloud ¥158B; Qwen 200k+ HF derivative models, 1B downloads Apr-2026", label: "alibaba-qwen-axes bundle", url: "artifacts/bundles/alibaba-qwen-axes/provenance.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "Apple selected Qwen as the primary LLM for Apple Intelligence in China (Baidu handles visual search); approved ~mid-Jul-2026 after a 22-month review; BABA +4-7.9%, ~+$17B market cap on the news", label: "Google News RSS aggregation (multiple outlets)", url: "https://news.google.com/rss/search?q=Apple+Qwen+Alibaba+China+Apple+Intelligence", as_of: "2026-07", confidence: med}
+    - {figure: "Alibaba Cloud AI annual recurring revenue (ARR) 'expected to exceed ¥30B (~$4.2B) by year-end' (2026) — forward-looking company target, not yet a realized TTM figure, and is Alibaba-Cloud-AI-wide (not Qwen-model-line-isolated)", label: "Futu (via Google News RSS) — earnings commentary summary", url: "https://news.google.com/rss/search?q=Alibaba+%22380+billion%22+OR+%2253+billion%22+AI+three+years", as_of: "2026-07", confidence: low}
+thrust:
+  value: "~$11.0B/yr net (capex-D&A recipe, FY2026 actual: ¥126,063M capex - ¥47,118M D&A = ¥78,945M / 7.2 ~ $11.0B); cross-checked against the ¥380B/$53B buildout's implied 3-yr run-rate ¥126.7B/yr (~$17.6B/yr GROSS, i.e. before the D&A netting) — FY2026 actual capex (¥126,063M) landed almost exactly on that gross pace, so the buildout commitment is confirmed as the real driver. Time horizon: FY2026-FY2028 (3-yr plan announced Feb-2025). Does NOT separately break out acquisitions/strategic equity stakes/capitalized training runs/power-PPA PV — likely understates true thrust somewhat, but those line items aren't disclosed distinctly by Alibaba (thin on that component)"
+  sources:
+    - {figure: "FY2026 (ended Mar 2026) capex ¥126,063M; D&A ¥47,118M -> capex-D&A ¥78,945M (~$11.0B @7.2)", label: "stockanalysis.com — BABA cash flow statement", url: "https://stockanalysis.com/stocks/BABA/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "¥380B/$52-53B AI+cloud infra investment plan explicitly framed as a THREE-YEAR commitment (FY2026-FY2028)", label: "Google News RSS aggregation (Network World / Express Tribune / Futu headlines)", url: "https://news.google.com/rss/search?q=Alibaba+%22380+billion%22+OR+%2253+billion%22+AI+three+years", as_of: "2026-07", confidence: med}
+    - {figure: "~¥380B (~$53B) AI/compute buildout + Zhenwu M890 (original figure, unchanged since 2026-05)", label: "The Register via kestrel china-stack thread", url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", as_of: "2026-05", confidence: med}
+notes: "Biggest uncertainty: GMV->value-added conversion (VA-share 4-8% and dependency 40-60% swing gravity ~$30-65B); GMV is the last-official ~2020 figure. CNY/USD @7.2 assumed. Unlike the US pure-plays, Alibaba funds the buildout from a profitable operating base. THRUST reconciles two ways of reading the ¥380B figure (gross 3-yr run-rate vs capex-D&A net) and they land close together, which is reassuring; the netted actual ($11.0B/yr) is used as the point estimate since it best matches the public-corp recipe. WEIGHT throughout this bundle is Qwen/AI-unit-ATTRIBUTABLE capital riding the Alibaba parent (the buildout commitment + allocated cash), NOT a standalone Qwen entity raise — Qwen has no separate balance sheet."

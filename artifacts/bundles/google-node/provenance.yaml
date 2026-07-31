@@ -1,0 +1,53 @@
+# Bundle — hyperscaler node: google (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml google. EXTENDS the existing
+# axis strings on board.yaml (no google-axes bundle existed) with posture and
+# the in/out/available/operating/deployed breakdown.
+node: google
+name: "Alphabet/Google"
+pocket: hyperscaler
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "All-in buildout-race — TPU + Gemini scale-up with capex ramping to ~$132B/yr TTM (from ~$91B FY25); a ~$85B debt raise now funds the buildout."
+  sources:
+    - {figure: "board.yaml posture: expanding — 'classify 2026-07-24 (buildout-race dominant)'", label: "kestrel attention/board.yaml google (classify anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "capex jumped FY25 $91,447M -> TTM $132,402M (buildout acceleration)", label: "stockanalysis.com GOOGL cash-flow statement", url: "https://stockanalysis.com/stocks/GOOGL/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+
+capital:
+  available:
+    value: "~$242B cash+STI (Q2-2026) — but see note: up sharply from ~$127B Dec-2025 on a large debt raise"
+    sources:
+      - {figure: "cash+STI $242,474M (cash $55,911M + ST investments $186,563M); total debt $112,756M — Q2 2026 ended Jun 30 2026", label: "stockanalysis.com GOOGL balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/GOOGL/financials/balance-sheet/?p=quarterly", as_of: "2026-06", confidence: med}
+      - {figure: "board anchor: $126.8B cash+STI at Dec-2025 (~$292B commandable/12mo) — the Jun-2026 jump implies ~$85B new debt (total debt $28B->$113B)", label: "kestrel board.yaml google capitalization axis", url: "attention/board.yaml", as_of: "2025-12", confidence: med}
+  operating:
+    value: "~$186B/yr operating cash flow (TTM ended Jun-2026); $164.7B FY25"
+    sources:
+      - {figure: "operating cash flow $185,675M TTM; $164,713M FY25", label: "stockanalysis.com GOOGL cash-flow statement", url: "https://stockanalysis.com/stocks/GOOGL/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$132B/yr capex in-flight (TTM), up from ~$91B FY25 — TPU + datacenter estate"
+    sources:
+      - {figure: "capex $132,402M TTM; $91,447M FY25", label: "stockanalysis.com GOOGL cash-flow statement", url: "https://stockanalysis.com/stocks/GOOGL/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  in:
+    value: "~$446B TTM revenue (FY25 $402.8B); ads ~$315B + Cloud $77.6B (FY25)"
+    sources:
+      - {figure: "total revenue TTM $445,867M; FY25 $402,836M", label: "stockanalysis.com GOOGL financials", url: "https://stockanalysis.com/stocks/GOOGL/financials/", as_of: "2026-06", confidence: high}
+      - {figure: "FY25 split ads ~$315B + Google Cloud $77.6B", label: "kestrel board.yaml google gravity axis (segment split)", url: "attention/board.yaml", as_of: "2025-12", confidence: med}
+  out:
+    value: "~$188B/yr out: ~$132B capex + ~$10B dividends + ~$17B buybacks (TTM); buybacks slowing"
+    sources:
+      - {figure: "capex $132,402M + dividends $10,303M + buybacks $17,403M (TTM ended Jun 30 2026); FY25 buybacks were $45,709M — repurchases cut sharply as capex rose", label: "stockanalysis.com GOOGL cash-flow statement", url: "https://stockanalysis.com/stocks/GOOGL/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+
+optionality:
+  value: "free-leaning-mixed — dual-class founder control keeps it free, but ~$132B/yr TTM AI capex is self-earmarked; new debt adds an interest claim"
+  sources:
+    - {figure: "capex $132B/yr self-earmarked; buybacks cut $45.7B->$17.4B to fund it", label: "stockanalysis.com GOOGL cash-flow statement", url: "https://stockanalysis.com/stocks/GOOGL/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "market cap ~$3.902T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com (aggregate page)", url: "https://companiesmarketcap.com/", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$403B/yr FY25 revenue ecosystem (ads ~$315B + Cloud $77.6B; ~$446B TTM) — revenue-as-proxy, undeflated per board policy; NO partner-multiplier reconstruction done (lower bound)"
+  sources:
+    - {figure: "FY25 revenue $402,836M (ads ~$315B + Cloud $77.6B); TTM $445,867M", label: "stockanalysis.com GOOGL financials + board.yaml gravity axis", url: "https://stockanalysis.com/stocks/GOOGL/financials/", as_of: "2026-06", confidence: high}
+    - {figure: "no ecosystem/partner multiplier reconstructed (unlike microsoft) — gross here is booked revenue only, a lower bound", label: "derivation note", url: "", as_of: "2026-07", confidence: low}
+
+notes: "Biggest uncertainty is the available-capital figure: stockanalysis shows ~$242B cash+STI at Jun-2026 vs the ~$127B Dec-2025 board anchor and Alphabet's historical ~$95-125B norm — consistent with a large (~$85B) AI-buildout debt raise (total debt $28B->$113B) but flagged med confidence pending a primary 10-Q. Gravity is booked-revenue-as-proxy (no partner-multiplier reconstruction), a lower bound vs Microsoft's method."

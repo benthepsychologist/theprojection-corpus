@@ -1,0 +1,106 @@
+---
+thread: chip-hyperscaler-rotation
+title: "The Great Rotation"
+lens: money
+entities: []
+opened: 2026-07-29
+---
+
+# The Great Rotation — timeline
+
+*Watch:* The four prints answered, and they split the thesis: capex is not
+peaking (both hyperscalers raised guidance), but the rotation is real and
+runs on a different axis than assumed — monetization-proven vs.
+monetization-unproven, not hyperscaler-vs-chipmaker. Track whether this
+reframe holds through Amazon (07-30) and Samsung's breakdown, and whether
+it shows up in fund-flow data rather than just analyst notes and single-
+night price action.
+
+<!--
+  RULES (reframe Phase 0, 2026-07-22):
+  - Newest-first dated blocks. /daily REBUILDS today's block at the top
+    (rebuild-in-place; re-runs never duplicate). /crawl APPENDS backstory
+    at the bottom under the "## ← Backstory" divider. Two writers, two
+    zones, no collision.
+  - Every entry line ends with a provenance marker: ⟨daily YYYY-MM-DD⟩
+    (chain = that day's digest + sidecar) · ⟨crawl YYYY-MM-DD⟩ (chain =
+    finding + bundle) · ⟨seed YYYY-MM-DD⟩ (migration) · ⟨steer YYYY-MM-DD⟩
+    (Ben dictated). No entry without a marker.
+  - Entries are CURATED DEVELOPMENTS, not item mirrors — ambient matches
+    update last_seen in threads.yaml but don't earn an entry.
+  - Multi-thread items appear in each relevant timeline with prose fit to
+    that thread's narrative. The render layer dedupes items by URL;
+    timeline entries are prose and never deduped.
+  - Bullet format matches the digest rubric: bold lead phrase, one
+    sentence, one source link.
+  - Resolution closes the file with a "## YYYY-MM-DD — Resolved" entry;
+    the file is kept forever.
+  - Renames: slugs are immutable; a rename adds `was: old-slug` to
+    frontmatter via /steer only.
+-->
+
+## 2026-07-30 — Samsung answers half the watch question; the four prints show a bifurcated verdict, not a clean turn
+
+- **Samsung posted a blowout Q2** (chip-division profit ~250x YoY per
+  multiple outlets, AI-driven memory/HBM shortage pricing) and its stock
+  rose ~6-8% — the opposite reaction to Arm/Qualcomm's post-earnings
+  selloff two nights earlier, despite all three being "chipmakers."
+  Reinforces this thread's monetization-proven-vs-unproven reframe rather
+  than breaking it: Samsung's profit is realized, Arm's was bookings.
+  ([Reuters]) ⟨daily 2026-07-30⟩
+- **Amazon answered the other half: AWS grew 37% YoY, the fastest in 18
+  quarters** — a clean beat against the ~31-33% consensus, completing
+  this thread's own watch question. Full detail on `aws-capex`. The
+  monetization-proven-vs-unproven line now holds across all five prints
+  checked this week (Microsoft, Samsung, Amazon rewarded on visible
+  revenue conversion; Meta, Arm, Qualcomm sold on bookings/legacy
+  exposure without it). ⟨daily 2026-07-30⟩
+- **Restating the four-print verdict with today's fuller detail:**
+  Microsoft (+8-9%, Azure $100B annualized, cloud growth fastest since
+  2022) was rewarded for capex with visible revenue conversion; Meta
+  (-10%, FCF collapsed 91% to $784M despite +28% revenue, raised the LOW
+  end of its capex guide) was punished for capex framed as a bet without
+  near-term return; Qualcomm (EPS missed by $0.02 despite a revenue beat,
+  guided to a faster Apple-modem decline) and Arm (beat-and-raise, fell
+  anyway on a smartphone-royalty cut) both sold off on
+  legacy/smartphone-exposed revenue. The dividing line is
+  monetization-proven vs. monetization-unproven, confirmed again by
+  Samsung's opposite reaction. ⟨daily 2026-07-30⟩
+- **Macro crosscurrent stacked on the same tape:** Fed Chair Kevin
+  Warsh's credibility was publicly questioned after Tuesday's 9-3 split
+  vote; the Iran conflict widened further overnight with oil back above
+  $90 — both pulling on the same market as the earnings verdicts.
+  ⟨daily 2026-07-30⟩
+
+## 2026-07-29 — Opened: analysts call the rotation explicitly ⟨steer 2026-07-29⟩
+
+- **Split from `chips-equity-pivot`** (ben-steer) — that thread is CHIPS
+  Act grants-to-equity policy; this is the separate chipmaker-to-hyperscaler
+  reallocation trade a tier-2 agent had written into it by mistake, and
+  flagged as a topic mismatch itself. ⟨steer 2026-07-29⟩
+- **Analysts are framing the selloff as a rotation from chipmakers to
+  hyperscalers**, on fear that AI infrastructure capex is peaking faster
+  than expected — Morgan Stanley, UBS and Forrester; BofA dissents and
+  calls it mid-innings.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/ai-investors-may-pivot-hyperscalers-133026207.html)) ⟨daily 2026-07-29⟩
+- **This is the first time the thesis has been stated as an explicit
+  allocation call rather than inferred from price.** ⟨daily 2026-07-29⟩
+- **The four prints answered, and split the thesis in two.** "Capex is
+  peaking" is undercut — both hyperscalers that disclosed guidance moved
+  it up: Meta's floor rose to $130-145B (its second raise this year),
+  Microsoft guided FY27 to "grow year-over-year" plus $50B+/quarter.
+  Neither showed a peak. ⟨daily 2026-07-29⟩
+- **"Rotation to hyperscalers" is real but was the wrong axis.** Arm and
+  Qualcomm both fell on genuinely strong AI-specific numbers — Arm's
+  AGI-CPU bookings doubled to $2B+, Qualcomm's FY2029 data-center target
+  nearly doubled to $40B — capital left them regardless of the
+  fundamentals. But Meta, a hyperscaler, was hit as hard as the chip
+  names, on an EPS miss and near-zero free cash flow. The line the market
+  actually drew tonight was **monetization-proven vs.
+  monetization-unproven spend**, not hyperscaler vs. chipmaker: Microsoft
+  bought tolerance for its capex with 43% Azure growth; Meta did not.
+  ⟨daily 2026-07-29⟩
+
+## ← Backstory
+
+<!-- /crawl appends below; finding pointer goes in the heading line -->

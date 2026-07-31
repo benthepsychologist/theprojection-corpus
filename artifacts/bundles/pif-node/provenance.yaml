@@ -1,0 +1,67 @@
+# Bundle — capital node: pif (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml pif. EXTENDS the axis strings
+# on board.yaml (no pif-axes bundle existed) with posture and the flow
+# breakdown. Method: WebFetch primary (WebSearch exhausted) — Wikipedia Public
+# Investment Fund. Sovereign wealth fund: "operating" is investment return, not
+# fee revenue; "in" is government/Aramco transfers.
+node: pif
+name: "PIF"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "AUM $900B (May-2026) toward $1T+, fed by ~$78B/yr Aramco 4% stake transfers; deploying into NEOM + Humain (Saudi AI champion) + the Vision Fund."
+  sources:
+    - {figure: "AUM US$900B (May-2026); 2030 target over $1T", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: high}
+    - {figure: "4% Aramco stake transferred to PIF in 2022 and 2023 (2023 transfer ~$78B)", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2023", confidence: med}
+
+capital:
+  available:
+    value: "deployable sovereign capital within the $900B AUM; funded by government injections + Aramco stake transfers + ~8%/yr returns (2018-2022)"
+    sources:
+      - {figure: "AUM $900B (May-2026); ~8% annual return 2018-2022", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: med}
+  operating:
+    value: "no fee revenue (sovereign) — 'operating' is investment return (~8%/yr 2018-2022) + Aramco dividends"
+    sources:
+      - {figure: "~8% annual return between 2018 and 2022; Aramco dividend stream", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2022", confidence: med}
+  deployed:
+    value: "~$900B AUM (May-2026) — domestically NEOM, Red Sea, Qiddiya, Roshn; internationally $45B Vision Fund, $20B Blackstone, Lucid, gaming stakes; AI via Humain"
+    sources:
+      - {figure: "NEOM, Red Sea, Qiddiya, Roshn (domestic giga-projects); $45B Vision Fund, $20B Blackstone infra, Lucid, gaming (EA/Take-Two/Activision/Nintendo/Capcom/Nexon)", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: med}
+  in:
+    value: "~$78B/yr — 4% Aramco stake transferred to PIF in both 2022 and 2023 (2023 transfer ~$78B) + government injections"
+    sources:
+      - {figure: "2023 Aramco 4% stake transfer ~$78B; a further 4% transferred in 2022", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2023", confidence: med}
+  out:
+    value: "deployments — up to $45B Vision Fund (over 5yr), $20B Blackstone infra, NEOM giga-project capex, Lucid, Humain"
+    sources:
+      - {figure: "up to $45B Vision Fund over 5yr (2016); $20B Blackstone infrastructure commitment", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2016", confidence: high}
+
+# thrust block added 2026-07-28 (axes_num rollout wave D). Method: WebFetch
+# Wikipedia Humain (company) [404, no page found] + Google News RSS (WebSearch
+# budget exhausted this session). Also surfaces a materially updated AUM figure
+# (see notes) not yet reconciled into the capital block above.
+thrust:
+  value: "~$10-15B/yr (rough) — Humain/AI-deal run-rate: AWS+HUMAIN $5B+ (May-2025) + AirTrunk DC campus $3B (Oct-2025) + Humain AI-infra funding $1.2B (Jan-2026) + xAI Series E (Humain-backed) $3B (Feb-2026) + MIS AI-DC construction contract $501M (Mar-2026) ≈ $12.7B over ~14mo. A single-source $23B aggregate 'PIF bet on Humain' claim cross-checks loosely (same order of magnitude, low confidence)."
+  sources:
+    - {figure: "AWS and HUMAIN announce a joint investment of 'more than $5 billion' for AI adoption in Saudi Arabia", label: "About Amazon (AWS press release, via WebFetch summary)", url: "https://www.aboutamazon.com", as_of: "2025-05-13", confidence: med}
+    - {figure: "HUMAIN/AirTrunk data-center campus partnership, $3B", label: "reported (via Google News RSS, title/date only)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2025-10-28", confidence: med}
+    - {figure: "Humain secures $1.2B funding for AI infrastructure expansion", label: "Reuters / Arab News / Business Today (via Google News RSS)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-01-21", confidence: med}
+    - {figure: "HUMAIN backs xAI Series E with a $3B investment, gaining SpaceX exposure", label: "PR Newswire / Bloomberg / Arab News (via Google News RSS)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-02-18", confidence: med}
+    - {figure: "MIS AI data-center construction contract, $501M", label: "reported (via Google News RSS, title/date only)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-03-08", confidence: low}
+    - {figure: "'PIF's reported bet on Humain AI' aggregated at $23B — single low-tier-outlet source, cross-check only, not itemized", label: "houseofsaud.com (via Google News RSS)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-04-07", confidence: low}
+    - {figure: "Humain taps Goldman Sachs for $5.3B data-center financing — a FACILITY, not confirmed as drawn/deployed; EXCLUDED from the thrust sum per the recipe's guarantee/contingent-commitment rule", label: "Reuters / Finimize (via Google News RSS)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-05-19", confidence: low}
+    - {figure: "PIF total assets ~$1.21T (Jul-2026) after 2025 net profit doubled — MATERIALLY ABOVE the $900B (May-2026) figure in the capital block above; not yet reconciled into that block, flagged for the next capital-block refresh", label: "Eastern Herald (via Google News RSS)", url: "https://news.google.com/rss/search?q=PIF+Humain+AI+investment+billion+2026", as_of: "2026-07-02", confidence: low}
+
+optionality:
+  value: "free-ish but Vision-2030-directed — sovereign principal (MbS chairs), reversible + purpose-constrained to Saudi strategic goals (discounted from a pure free-capital pile)."
+  sources:
+    - {figure: "MbS-chaired; capital steered to Vision 2030 domestic + strategic aims", label: "Wikipedia — Public Investment Fund + kestrel board.yaml pif axis", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "real GROSS — the NEOM giga-project economy + $45B Vision Fund anchor + Humain (Saudi national AI champion) orbit far more than PIF directly runs."
+  sources:
+    - {figure: "NEOM + Red Sea + Qiddiya construction economy; $45B Vision Fund anchor; Humain AI", label: "Wikipedia — Public Investment Fund + kestrel board.yaml pif gravity axis", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: med}
+
+notes: "AUM $900B is directed sovereign capital = owned/commanded blur (the Saudi state owns it outright). Target commonly cited as $1T+ (some sources $2T by 2030). 'Operating' is investment return, not fee revenue. Humain (AI) is reported but not confirmed on the fetched page — treat as low."

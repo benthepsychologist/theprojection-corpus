@@ -1,0 +1,35 @@
+# Per-run fetch manifest — /daily 2026-07-20, ai lens (interim agentic mode)
+source_id: agentic-web-sweep   # interim: sonnet-class subagent web sweep; no collectors built yet
+params:
+  lens: ai
+  window_start: "2026-07-20T05:00:00-04:00"
+  as_of: "2026-07-20T17:30:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.ai — orgs, people, release_watch, themes)
+    - attention/threads.yaml (8 open ai threads — incl. 3-week catch-up checks, briefing #0)
+  exclusions: [reddit, pr-newswire]
+fetched_at: "2026-07-20T21:30:00Z"
+items:
+  - {id: zai-1gw-domestic-chips, url: "https://www.bloomberg.com/news/articles/2026-07-20/z-ai-completes-giant-data-center-with-chinese-chips-to-train-ai", ts: "2026-07-20"}
+  - {id: openai-open-weight-pushback, url: "https://techcrunch.com/2026/07/20/openai-is-scared-of-open-weight-models-should-the-us-be/", ts: "2026-07-20"}
+  - {id: kimi-k3-fallout, url: "https://en.cryptonomist.ch/2026/07/20/china-us-ai-competition-kimi-k3/", ts: "2026-07-20"}
+  - {id: nvda-200-support, url: "https://www.fxleaders.com/news/2026/07/20/nvidia-stock-nvda-tests-200-support-as-chinese-ai-competition-shakes-the-chip-rally/", ts: "2026-07-20"}
+  - {id: eu-ai-act-transparency-guidelines, url: "https://digital-strategy.ec.europa.eu/en/library/guidelines-transparency-obligations-providers-and-deployers-ai-systems", ts: "2026-07-20"}
+  - {id: aws-msft-capex-roi, url: "https://247wallst.com/investing/2026/07/20/heres-when-amazons-roi-will-pull-ahead-of-microsofts-in-the-ai-cloud-spend-war/", ts: "2026-07-20"}
+  - {id: stocks-mixed-earnings-week, url: "https://finance.yahoo.com/markets/live/stock-market-today-monday-july-20-dow-sp-500-nasdaq-111429441.html", ts: "2026-07-20"}
+  - {id: qwen38-max-preview, url: "https://www.marktechpost.com/2026/07/19/alibaba-previews-qwen3-8-max-a-2-4-trillion-parameter-multimodal-model-days-after-moonshots-kimi-k3-open-weight-launch/", ts: "2026-07-19"}
+  - {id: gpt56-bedrock, url: "https://aws.amazon.com/blogs/aws/aws-weekly-roundup-one-click-lambda-setup-prompt-openai-gpt-5-6-models-on-bedrock-and-more-july-20-2026/", ts: "2026-07-20"}
+  - {id: amd-advancing-ai-preview, url: "https://www.tradingkey.com/analysis/stocks/us-stocks/262037492-amd-stock-forecast-week-july-20-2026-advancing-ai-july-22-tradingkey", ts: "2026-07-20"}
+  - {id: samsung-gaia-accelerator, url: "https://phandroid.com/2026/07/20/samsungs-gaia-ai-accelerator-just-got-a-lot-more-interesting/", ts: "2026-07-20"}
+  - {id: coreweave-bofa, url: "https://www.benzinga.com/trading-ideas/movers/26/07/60560396/coreweave-stock-moves-higher-whats-happening-today", ts: "2026-07-20"}
+  # release-watch + thread-check sources are in the buffer JSONL (kind: release_watch / thread_check)
+notes: >-
+  GAPS reported by sweep: nothing current for Mistral AI or Liquid AI; no
+  standalone today item for Broadcom/TSMC/Oracle (context-only appearances);
+  no today-dated people-accountability or research-safety item (nearest:
+  Apple v. OpenAI trade-secrets suit 07-10/14, dismissed xAI v. OpenAI suit,
+  Anthropic Glasswing material — all >5 days old). No numeric prediction-market
+  odds locatable for Claude Opus 5 or Grok 5 ship dates; Gemini 3.5 Pro
+  by-July-31 Manifold market exists but probability not retrieved. Several
+  release-watch notes rest on low-authority blogs (explainx.ai, findskill.ai,
+  mindstudio.ai, ragyfied) — flagged for curation.

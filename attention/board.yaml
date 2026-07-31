@@ -1,0 +1,911 @@
+# attention/board.yaml — the power-structure layer over the attention map.
+#
+# THE SYSTEM. Classifies the major actors in NEUTRAL kinds only. The costume
+# ("Empire", "House Amodei", "The Church") lives entirely on the projection
+# (theprojection: data/labels.yaml), never here — swap it to re-skin without
+# reclassifying anyone. "The surface is never the system": this file is the
+# system; the site projects the surface, and a reader can flip it live.
+#
+# TWO ENTITY KINDS (Ben, 2026-07-24 — "people are not organizations, they
+# are Houses"):
+#   houses — PEOPLE. A ruler/principal who HOLDS one or more organizations.
+#            One House can hold many realms (Musk). A House can change the
+#            realm it holds (succession). Houses have no rank; their weight
+#            derives from what they hold.
+#   orgs   — ORGANIZATIONS. Ranked realms (empire/kingdom/…/state). An org
+#            is HELD BY at most one House (`held_by`) — except States, which
+#            are never personified. Succession = `held_by` changing hands.
+#
+# THE LINK lives on the org (`held_by: <house-slug>`), never as a `holds:`
+# list on the House — one source of truth, derive "what House X holds" by
+# inversion (same rule as parent-on-child, liege-on-vassal).
+#
+# HAND-MAINTAINED: rank (now just state/kingdom), held_by, liege, sphere,
+# holdings, condition, succession, gloss, + the AXES (commanded_capital,
+# thrust, gravity, optionality — $-estimates + a band, TBD pending research
+# for most actors; see axes_num below for the numeric pilot). DERIVED (never
+# typed): an org's open-thread list; its posture; a House's realms;
+# sovereignty (from the axes + geopolitical factors).
+#
+# THE MODEL CHANGED 2026-07-25 (Ben): the feudal rank ladder was the wrong
+# axis. Now just state + kingdom + house; actors are DIFFERENTIATED by the
+# AXES, not by sub-rank. See the `axes:` block below. Anomalies still stay
+# anomalous (a `gloss`).
+#
+# RENAME DONE (Ben, 2026-07-27): `capitalization` -> `commanded_capital`
+# schema-wide (board.yaml + publish_projection.py ALLOWED_ORG_FIELDS + the
+# site's realm-card/map templates) — 'capitalization' collided with market
+# cap; `commanded_capital` names what the field actually measures (spans
+# owned-deployable AND directed-fiduciary capital). THRUST PROMOTED
+# (2026-07-27): a fourth first-class axis alongside commanded_capital,
+# gravity, optionality — was implicit inside gravity/gloss prose before now,
+# see the `axes:` block below for the four-axis definitions + the
+# `axes_num:` numeric pilot on 22 actors.
+#
+# Provenance: designed with Ben 2026-07-24 (ben-steer) from "The Map" spec,
+# split into houses/orgs per his correction same day. EDITS carry a
+# `# ben-steer` or `# classify` tag (YYYY-MM-DD) + a coverage-log.md line,
+# same discipline as the rest of attention/. The judgment entry point is
+# `/classify` (proposes rank/posture against the tests); `/steer` board
+# verbs apply decided edits. RANK CHANGES ARE EVENTS — loud, logged, a
+# thread offered; never a silent edit (§8.5). After any edit, `/publish
+# --push` regenerates the site's data/board.json so /map/ reflects it.
+# YAML guardrail: safe_load after every LLM edit, or revert.
+
+schema_version: 2
+
+# ---------------------------------------------------------------------------
+# THE TAXONOMY — neutral kinds + falsifiable tests. Public. The site's label
+# config maps each slug to a display term + legend gloss.
+# ---------------------------------------------------------------------------
+
+# ranks COLLAPSED 2026-07-25 (Ben) — the feudal ladder (empire/kingdom/march/
+# vassal/…) was the wrong axis and gated on a brittle "owns compute" test. Now
+# just state + kingdom; DIFFERENTIATION comes from the AXES below
+# (commanded_capital / thrust / gravity / optionality), not sub-ranks.
+# `regulator` + `route-layer` kept as stubs pending re-home under the new
+# model.
+ranks:
+  state:       "A sovereign — GRADED, not binary (US/China apex · UK/France mid-high · Cape Verde nominal-only). On the same $-axes as kingdoms; a systemically-critical kingdom can out-sovereign a micro-state."
+  kingdom:     "Any corporate/organizational actor — Microsoft, Nvidia, OpenAI, a memory maker, a dependent app are ALL kingdoms now. The axes differentiate them, not a sub-rank."
+  regulator:   "STUB (2026-07-25) — a state-organ (CAISI/FDA/…), not a kingdom. Re-home under the new model."
+  route-layer: "STUB — the Silk Road container; not an actor. Kept pending rethink."
+
+# THE AXES (2026-07-25, Ben; THRUST PROMOTED to a fourth first-class axis
+# 2026-07-27) — the differentiators that replace the rank ladder. States AND
+# kingdoms sit on all four. These also shape the thread-capture lens: how an
+# actor spends its money + what's happening in its ecosystem = a big chunk of
+# "what it's doing." Per-actor STRING estimates (prose, in the org's
+# `commanded_capital`/`optionality`/`gravity`/`thrust` fields) remain the
+# primary record; a numeric `axes_num: {weight, thrust, gravity}` (in $B) is
+# now piloted on 22 actors (2026-07-27) so the site chart can be data-driven —
+# roll out wider as the estimates firm up.
+axes:
+  commanded_capital: "WEIGHT — $ stock of capital the actor COMMANDS (not just owns — BlackRock commands ~$15.3T AUM). Aggregate $ figure. RENAMED 2026-07-27 (Ben) from `capitalization`, which collided with market cap: `commanded_capital` spans owned-deployable AND directed-fiduciary capital; nearest terms of art are 'dry powder' / 'available liquidity' but neither fits the asset-manager case. Market cap / valuation is ALWAYS a separate label, never this field."
+  thrust:             "$/yr COMMITTED TO NEW POSITIONS — the actor's forward-motion rate, promoted to a first-class axis 2026-07-27 (Ben; was previously implicit inside gravity/gloss prose). ≈ capex − D&A for corporates (the organic reinvestment rate, isolating NEW commitment from maintenance); ≈ commitment run-rate for labs/OpenAI-style raisers (compute obligations ÷ term); ≈ net NEW deployment for funds/asset managers (not the gross AUM flow). Buybacks/dividends are a SEPARATE, negative signal (capital returned, not committed) — never netted into thrust."
+  gravity:            "$/yr third-party economy that depends on / orbits the actor and would break if the actor stopped — ATTRIBUTABLE, not gross. Per-actor prose fields still mostly STORE THE GROSS FIGURE (Ben, 2026-07-25 policy: the VA-share/multi-homing deflators are too weak to apply yet, and gross figures are on different bases across actors — Alibaba GMV vs Microsoft partner-revenue vs OpenAI anchored-capex — so not yet apples-to-apples; deflate later when comparing to nation-states, where GDP is already value-added). The deflation research + method is preserved in coverage-log.md 2026-07-25 and the per-actor bundles; it's deferred, not discarded. Treat `gravity` as the target definition (attributable) and existing per-actor text as the gross-basis placeholder pending that reconciliation."
+  optionality:        "How FREE the commanded capital is — a MEASURED ENCUMBRANCE BAND: free / mixed / constrained / locked (Microsoft cash = free · BlackRock AUM = fiduciary-mandated · OpenAI raises = earmarked + burning). NEVER derive it as thrust÷weight — that's a different ratio (deployment intensity), not encumbrance; optionality is about who else's claims sit on the pile, not how fast it's being spent. Aggregate + the free/mixed/constrained/locked split when estimable."
+# sovereignty is DERIVED + GRADED for all actors (not a primitive you score):
+#   f(commanded_capital, thrust, gravity, optionality, + geopolitical factors
+#   — military, autonomy, essentiality-to-national-security, state-backing).
+# dependency: the old vassal/`liege` idea becomes a DEPENDENCY relationship —
+#   STUB (2026-07-25), rename `liege`→`depends_on` when the model firms up.
+#
+# SPIN-UP SCOPE (Ben, 2026-07-25) — NOTE, not yet built. When we populate the
+# FULL board (not just the 6-actor axis prototype), the organizing frame is
+# "where the money, power, and infra is." Populate by POCKET (functional
+# cohort — a grouping over the board, NOT mutually exclusive; an actor can sit
+# in several, like dual_filed). Candidate pockets:
+#   MONEY  — the Big Four asset managers: BlackRock, State Street, Vanguard,
+#            Fidelity. (Only BlackRock is on the board today — add the other 3.)
+#   POWER  — hyperscalers: Microsoft, Alphabet, Amazon/AWS, Meta (+ Oracle?).
+#   POWER  — frontier model makers (OVERLAP the hyperscalers): OpenAI, Anthropic,
+#            Google DeepMind, xAI; non-US: Alibaba/Qwen, DeepSeek, Mistral.
+#   INFRA  — foundries: TSMC, Samsung, Intel.
+#   INFRA  — "chips" (Ben's resolution: collapse designers + intermediaries +
+#            memory into one broad pocket): Nvidia, AMD, Broadcom + the DRAM/
+#            memory makers (SK Hynix, Micron, Samsung, CXMT) + everyone else.
+#   So the silicon layer reduces to two pockets: FOUNDRIES and CHIPS.
+#   MONEY  — insurance (Ben, 2026-07-25): the big insurers/annuity writers are a
+#            pocket we DON'T have yet — add at spin-up (a major capital pool).
+#   HEALTH — the health pocket (Ben, 2026-07-25): payers/providers/health systems
+#            (Kaiser + NUHW are on the board via the labor fight; the rest missing).
+# DIRECTIVE (Ben, 2026-07-25): spin up ALL the major actors on this list, not just
+# the 6-actor axis prototype. That's the next big populate.
+# `pocket:`/cohort may become a real grouping field later — design idea, STUB.
+
+postures:  # CHOSEN by an org (derived from its open threads); one per org
+  at-war:        "Actively contesting a rival for the same ground."
+  hedging:       "Holding two incompatible bets open rather than committing."
+  consolidating: "Integrating gains, not seeking new ground."
+  expanding:     "Adding armies / mines / reach."
+  retrenching:   "Pulling back, cutting, or narrowing focus."
+  dormant:       "On the board but not a live mover this cycle."
+
+conditions:  # IMPOSED on an org; zero-or-more
+  in-succession: "The House holding it is changing hands — tracked as an event."
+  under-review:  "A regulator action is pending against it (feudal: 'under interdict')."
+
+genres:  # classify a THREAD (neutral slug on threads.yaml); backfill is next
+  succession:         "A ruler / control transition."
+  border-war:         "Two spheres or actors contesting a boundary."
+  partnership:        "Two actors binding together (feudal: 'marriage alliance')."
+  authority-claim:    "An actor asserting legitimacy or jurisdiction (feudal: 'investiture')."
+  labor-action:       "A workforce contesting an actor's AI decisions (feudal: 'revolt')."
+  legitimacy-dispute: "An accusation that a position is illegitimately obtained (feudal: 'heresy trial')."
+  hedge:              "An actor keeping incompatible bets open."
+  capital-flow:       "Value flowing from one actor to another (feudal: 'tribute')."
+  buildout-race:      "Mutual capacity buildout nobody can stop (feudal: 'siege')."
+  scarcity:           "A resource running short (feudal: 'famine')."
+  exogenous-shock:    "A shock originating off the board (feudal: 'act of god')."
+  coalition:          "An alliance forming across actors (feudal: 'confederation')."
+  resource-move:      "A move in the fabs/memory/power layer (feudal: 'mines')."
+  financing:          "An IPO, raise, or debt event (feudal: 'treasury')."
+
+spheres: [us, china, eu, uk, fr, gulf, jp, ca, none]   # ca added 2026-07-28 (gov-pool layer)
+
+# pockets — functional cohorts (Ben's spin-up organizing principle, 2026-07-25).
+# A `pocket:` on an actor is its membership edge into a G1 group node (below).
+pockets: [hyperscaler, frontier-lab, foundry, chips, capital, insurance, health, state-organ, none]
+
+# ---------------------------------------------------------------------------
+# THE NODE MODEL (Ben, 2026-07-26). Everything here is a NODE; relationships
+# are EDGES. Two ORTHOGONAL descriptors per node:
+#   kind  — WHAT it is: person · house · corp · state · agency (gov sub-body)
+#           · group (a pocket/sector — no agency, aggregates its members).
+#   level — WHERE it sits: L1 (nothing over it) → L2, L3… (depth of the parent
+#           chain). ASSIGNED, seeded rough, refined over time — NOT a formula.
+#           kind ⊥ level: a person may be L1 (Musk) or L2++ (most people); a
+#           corp may be L1 (independent) or a L2 subsidiary.
+# Edges: `parent` (containment → makes it L2+); `held_by` (person/house→corp);
+#   `depends_on`/`liege` (RELIANCE, not containment — stays L1); `pocket`/
+#   `member_of` (→ a group).
+# Actors are mostly a clean containment TREE; GROUPS are a messy many-to-many
+# GRAPH — a group can sit in several bigger groups (Finance ⊃ capital+insurance,
+# but hyperscalers are NOT in Finance). Group tiers (G1 pocket · G2 sector) are
+# a loose hint, not a tree. kind/level are DERIVED as a default seed in the
+# publisher (from rank/parent) and overridden per-node as we refine. Plenty of
+# nuance still to tinker with — this is the rough-but-moving version.
+# ---------------------------------------------------------------------------
+
+groups:   # group nodes — pockets (G1) + sectors (G2). `member_of` points UP.
+  # sectors (G2)
+  - { slug: finance, kind: group, tier: G2, gloss: "The capital pools — asset managers, sovereign funds, insurers." }
+  - { slug: power,   kind: group, tier: G2, gloss: "The model + platform powers." }
+  - { slug: infra,   kind: group, tier: G2, gloss: "The silicon everything else runs on." }
+  - { slug: care,    kind: group, tier: G2, gloss: "The care economy — payers + providers." }
+  # pockets (G1)
+  - { slug: capital,      kind: group, tier: G1, member_of: [finance], gloss: "Asset managers + sovereign funds; command money they don't own." }
+  - { slug: insurance,    kind: group, tier: G1, member_of: [finance], gloss: "Long-duration capital pools; mostly constrained." }
+  - { slug: hyperscaler,  kind: group, tier: G1, member_of: [power],   gloss: "Cloud + platform giants; own the compute and the distribution." }
+  - { slug: frontier-lab, kind: group, tier: G1, member_of: [power],   gloss: "The model-makers — capital is raised compute money." }
+  - { slug: foundry,      kind: group, tier: G1, member_of: [infra],   gloss: "The fabs. Whoever prints the silicon." }
+  - { slug: chips,        kind: group, tier: G1, member_of: [infra],   gloss: "Designers, intermediaries, and memory." }
+  - { slug: health,       kind: group, tier: G1, member_of: [care],    gloss: "Payers + providers — the care economy." }
+
+# ---------------------------------------------------------------------------
+# HOUSES — the people. A House holds its realm(s); the link lives on the org
+# (`held_by`), so no `holds:` list here. Slugs match watchlist `people`.
+# ---------------------------------------------------------------------------
+
+houses:
+  - { slug: sundar-pichai,    name: "Sundar Pichai" }
+  - { slug: satya-nadella,    name: "Satya Nadella" }
+  - { slug: andy-jassy,       name: "Andy Jassy" }
+  - { slug: dario-amodei,     name: "Dario Amodei" }
+  - { slug: sam-altman,       name: "Sam Altman" }
+  - { slug: mark-zuckerberg,  name: "Mark Zuckerberg", deployable: "~$170B — 61.2% Meta voting on 13.68% equity = unilateral control of a top AI capex budget", deployable_asof: 2026-07-25 }  # spin-up-board 2026-07-25
+  - { slug: tim-cook,         name: "Tim Cook", gloss: "Outgoing head of Apple; stays as executive chairman on policy after 2026-09-01 — a regent retained for foreign affairs." }
+  - { slug: john-ternus,      name: "John Ternus", gloss: "Incoming head of Apple, effective 2026-09-01." }
+  - { slug: jensen-huang,     name: "Jensen Huang", deployable: "~$120B — founder-CEO directing Nvidia's capital despite a ~3.6% stake", deployable_asof: 2026-07-25 }  # spin-up-board 2026-07-25
+  - { slug: larry-ellison,    name: "Larry Ellison", deployable: "~$160B — 42.9% Oracle founder-control + pledge capacity, directs Oracle AI capex", deployable_asof: 2026-07-25 }  # spin-up-board 2026-07-25
+  - { slug: elon-musk,        name: "Elon Musk", deployable: "~$250B — absolute supervoting control of SpaceX/xAI/Tesla + best raiser alive (NW $839-876B)", deployable_asof: 2026-07-25, gloss: "Holds two realms — SpaceXAI and Tesla. The board's only House holding multiple organizations; the 'personal union' is structural, not a footnote." }  # spin-up-board 2026-07-25
+  - { slug: demis-hassabis,   name: "Demis Hassabis" }
+  - { slug: mustafa-suleyman, name: "Mustafa Suleyman" }
+  - { slug: mohammed-bin-salman, name: "Mohammed bin Salman", deployable: "~$350B — chairs the $900B PIF + Saudi fiscal/Aramco; sovereign, so discounted from #1 (reversible, purpose-constrained)", deployable_asof: 2026-07-25, gloss: "Chairs PIF (~$900B) and directs Saudi fiscal/Aramco capacity; sovereign principal — controls PIF, though pif's held_by is left unwired." }  # spin-up-board 2026-07-25
+  - { slug: jeff-bezos, name: "Jeff Bezos", deployable: "~$150B — elite liquidity, weaker control; self-funds Blue Origin", deployable_asof: 2026-07-25, gloss: "Elite personal liquidity; stepped back from Amazon operations, self-funds Blue Origin (off-board)." }  # spin-up-board 2026-07-25
+  - { slug: bernard-arnault, name: "Bernard Arnault", deployable: "~$130B — 63% LVMH voting (Agache family) + serial acquirer", deployable_asof: 2026-07-25, gloss: "Controls LVMH (63% voting, Agache family) — an off-board realm; serial acquirer." }  # spin-up-board 2026-07-25
+  - { slug: larry-page, name: "Larry Page", deployable: "~$140B — Alphabet super-voting co-control, but passive (needs Brin to act)", deployable_asof: 2026-07-25, gloss: "Co-controls Alphabet via super-voting stock but is passive (Pichai runs it); google's held_by stays sundar-pichai." }  # spin-up-board 2026-07-25
+  - { slug: masayoshi-son, name: "Masayoshi Son", deployable: "~$110B — controls SoftBank + the Vision Fund raise machine, but personal stake levered (~1/3 pledged)", deployable_asof: 2026-07-25, gloss: "Controls SoftBank (~71% voting) and the Vision Fund raise machine; now wired as softbank's House." }  # spin-up-board 2026-07-25
+  - { slug: michael-dell, name: "Michael Dell", deployable: "~$120B — ~50% of Dell + a mega-deal record ($67B EMC)", deployable_asof: 2026-07-25, gloss: "Controls ~50% of Dell (off-board) with a mega-deal record ($67B EMC)." }  # spin-up-board 2026-07-25
+  # Not yet named as Houses (founders exist, holding left blank until steered):
+  # Mistral (Mensch, fr) · the China labs (Liang/Yang/Tang) · the capital &
+  # resource layers (institutional — SoftBank/Son is the obvious next dynast).
+
+# ---------------------------------------------------------------------------
+# ORGS — the organizations. Ranked realms; `held_by` points into `houses`.
+# ---------------------------------------------------------------------------
+
+orgs:
+
+  # --- States (no House, no costume — the asymmetry is the statement) ---
+  - { slug: united-states,  rank: state, sphere: us,    tier: apex }
+  - { slug: china,          rank: state, sphere: china, tier: apex }
+  - { slug: european-union, rank: state, sphere: eu,    tier: treaty-assembled, gloss: "Real law, contested sovereignty — the AI Act is its instrument." }
+  - { slug: united-kingdom, rank: state, sphere: uk,    tier: institutional-memory }
+  - { slug: france,         rank: state, sphere: fr,    tier: institutional-memory, gloss: "Court-favored national champion in Mistral." }
+  - { slug: uae,            rank: state, sphere: gulf,  tier: treasury, gloss: "Power projected through sovereign capital; surfaces in Money more than AI." }
+  - { slug: saudi-arabia,   rank: state, sphere: gulf,  tier: treasury }
+  - { slug: russia,         rank: state, sphere: none,  tier: dormant, gloss: "Matters via second-order effects (energy, geopolitics), not as a live AI actor. Listed, not inflated." }
+  - { slug: canada,         rank: state, sphere: ca,    tier: institutional-memory, gloss: "Enters via the gov-pool layer (sovereign compute, SIF, institutes) + the health system Ben works inside. State axes: recipe pending." }
+
+  # --- Integrated powers (all three tests pass) ---
+  - slug: google
+    rank: kingdom
+    held_by: sundar-pichai
+    sphere: us
+    pocket: hyperscaler   # spin-up-board 2026-07-25
+    armies: [gemini, deepmind]
+    mines: [tpu]
+    holdings: [gemini, deepmind, tpu, google-cloud]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$292B commandable/12mo ($126.8B cash+STI Dec-2025 + ~$164.7B/yr operating cash flow, low leverage); market cap ~$3.90T is a separate label"
+    thrust: "~$142B/yr — capex $132B−D&A $25B + Wiz $32B"  # agent-derive 2026-07-27
+    axes_num: { weight: 922, thrust: 140, gravity: 650 }  # audit 2026-07-28 — Wiz actual price $29.5B (was booked $32B); dep already clean
+    optionality: "free-leaning-mixed — dual-class founder control keeps it free, but ~$132B/yr TTM AI capex is self-earmarked"
+    gravity: "~$402.8B/yr GROSS FY25 revenue ecosystem (ads ~$315B + Cloud $77.6B); VA-deflation DEFERRED per board policy"
+    vassals-note: "broad Cloud + model-licensing dependents"
+    posture: expanding   # classify 2026-07-24 (buildout-race dominant)
+  - slug: microsoft
+    rank: kingdom
+    held_by: satya-nadella
+    sphere: us
+    pocket: hyperscaler   # spin-up-board 2026-07-25
+    armies: [mai, openai-stake, copilot]
+    mines: [maia, datacenter-estate]
+    holdings: [mai, azure, copilot, openai-stake]
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/microsoft-axes/
+    commanded_capital: "~$250B+ commandable/12mo (cash+STI $78B Mar-2026 + ~$170B/yr operating cash flow + AAA debt access); market cap kept as a separate label"
+    thrust: "~$57B/yr — capex $97B−D&A $44B + M&A"  # agent-derive 2026-07-27
+    axes_num: { weight: 694, thrust: 71, gravity: 500 }  # dep-only audit 2026-07-28 — '$44B D&A' was a dep+amort+other blend; true dep ~$30.3B (EDGAR)
+    optionality: "mixed — legally free discretionary treasury, but a rising majority self-earmarked to the AI buildout (capex ~$107B/yr, up from $64.6B FY25) + ~$25B/yr dividend"
+    gravity: "~$3.0T/yr GROSS ecosystem (reconstructed: TTM rev $318B x IDC partner multiplier; the popular $4T economy). VA-deflation DEFERRED (would be ~$0.9T value-added-dependent x0.5x0.6)"
+    vassals-note: "Azure-dependent ecosystem"
+    posture: hedging     # MAI build-out vs. the OpenAI stake
+  - slug: amazon-aws
+    rank: kingdom
+    held_by: andy-jassy
+    sphere: us
+    pocket: hyperscaler   # spin-up-board 2026-07-25
+    armies: [nova, bedrock]
+    mines: [trainium, aws]
+    holdings: [nova, bedrock, trainium, aws]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$263B commandable/12mo ($123B cash+STI + ~$139.5B/yr operating cash flow, but FCF only $7.7B); market cap ~$2.50T is a separate label"
+    thrust: "~$81B/yr — capex $151B−D&A $70B; $0 returned"  # agent-derive 2026-07-27
+    axes_num: { weight: 917, thrust: 81, gravity: 480 }  # agent-derive 2026-07-27
+    optionality: "mixed/constrained — governance free (single-class) but operating cash pre-committed to ~$132B/yr capex"
+    gravity: "~$716.9B/yr GROSS net sales (AWS $137B; 3P GMV ~$700B+ vs $177B booked cut); VA-deflation DEFERRED per board policy"
+    vassals-note: "Bedrock ecosystem"
+    posture: expanding   # classify 2026-07-24 (buildout-race; AGI-research cuts a counter-signal, see coverage-log)
+    gloss: "Promoted on the structural test, not on feed weight — coverage is still thin (AWS Capex opened quiet)."
+
+  # --- Sovereign actors (own model line + capital; may rent compute) ---
+  - slug: anthropic
+    rank: kingdom
+    held_by: dario-amodei
+    sphere: us
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [claude]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$120B cumulative raised (Series G $30B + H $65B dominate; + multi-$10B compute backing Amazon Rainier / Google TPU); valuation $965B (May-2026) is a separate label"
+    thrust: "~$15B/yr floor — $30B Azure ÷ 2-3yr; Google TPU deal unpriced"  # agent-derive 2026-07-27
+    axes_num: { weight: 122, thrust: 15, gravity: 25 }  # agent-derive 2026-07-27
+    optionality: "mixed — founder/board equity, no state; but heavily compute-earmarked and the Amazon/Google stakes are partly circular"
+    gravity: ">$5B/yr GROSS run-rate revenue, 300k+ business customers (Aug-2025, likely higher now)"
+    posture: expanding   # classify 2026-07-24 (AMD raise + 2GW compute; genre signal muddy, judgment)
+    gloss: "Great-power actor that RENTS its mines (AMD/Google/AWS compute) — the dependency is the point."
+  - slug: openai
+    rank: kingdom
+    held_by: sam-altman
+    sphere: us
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [gpt, sora]
+    posture: expanding   # classify 2026-07-24 (resource-move/financing/coalition all expansion)
+    gloss: "Great-power actor that rents its mines; Jalapeño is the attempt to change that."
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/openai-axes/
+    commanded_capital: "~$180B cumulative raised/committed (2019-2026); the $852B valuation is the mark, not drawable cash"
+    thrust: "~$150B/yr run-rate — ~$600B commitments ÷ 4yr (contested)"  # agent-derive 2026-07-27
+    axes_num: { weight: 180, thrust: 150, gravity: 60 }  # agent-derive 2026-07-27
+    optionality: "locked — ~85-90% pre-earmarked (~$1.0-1.4T compute obligations vs ~$180B raised) and burning (net -$9B 2025). The board's canonical cash-rich, freedom-poor actor"
+    gravity: "~$1.0-1.4T anchored-compute STOCK (~$175B/yr GROSS orbiting); no OpenAI-specific ecosystem study exists. VA-deflation DEFERRED (would be ~$57B/yr x0.5x0.65) — low confidence"
+  - slug: meta-ai
+    rank: kingdom
+    held_by: mark-zuckerberg
+    sphere: us
+    pocket: hyperscaler   # spin-up-board 2026-07-25
+    holdings: [llama]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$197B commandable/12mo ($81.6B cash+STI + ~$115.8B/yr operating cash flow, ~$46B free post-capex); market cap ~$1.51T is a separate label"
+    thrust: "~$74B/yr — capex−D&A $55B + Scale AI stake $14B"  # agent-derive 2026-07-27
+    axes_num: { weight: 395, thrust: 74, gravity: 350 }  # agent-derive 2026-07-27
+    optionality: "mixed — Zuckerberg dual-class control (free) but taking on debt up to ~$84B for the AI buildout"
+    gravity: "~$196.2B/yr GROSS FY25 ad revenue; VA-deflation DEFERRED per board policy"
+    posture: hedging               # 6GW AMD + Anthropic-cloud talks
+    condition: [under-review]      # framework exclusion
+    gloss: "Imperial capex, no vassals — keeps buying legions, has conquered no one. Kingdom, not integrated-power, until it has structural dependents."
+  - slug: apple
+    rank: kingdom
+    held_by: tim-cook
+    pocket: hyperscaler   # ben-steer 2026-07-27 (W3 — Big Tech placement; not a true hyperscaler, closest cohort)
+    sphere: us
+    holdings: [apple-intelligence, apple-foundation-models]
+    thrust: "≈$0 — capex $11B ≈ D&A $12.6B; returns $94B/yr instead"  # agent-derive 2026-07-27
+    axes_num: { weight: 371, thrust: 0.1, gravity: 275 }  # agent-derive 2026-07-27
+    optionality: "free"  # agent-derive 2026-07-27 — pilot band; entry had no optionality field
+    condition: [in-succession]
+    succession:
+      from: tim-cook
+      to: john-ternus
+      effective: 2026-09-01
+      note: "Cook stays as executive chairman on policy — a regent retained for foreign affairs."
+    gloss: "Outsources the model layer to Google (Apple × Gemini) while its House changes hands."
+  - slug: nvidia
+    rank: kingdom
+    held_by: jensen-huang
+    sphere: us
+    pocket: chips   # spin-up-board 2026-07-25
+    holdings: [gpu, cuda, nvlink]
+    posture: expanding   # classify 2026-07-24 (capital-flow out + buildout-race)
+    gloss: "ANOMALY, do not force. Owns the resource layer par excellence and holds half the industry as tributaries, but ships no model line. Dual-filed resource-layer — the ambiguity IS the circular-financing thesis."
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/nvidia-axes/
+    commanded_capital: "~$200-300B commandable/12mo (liquid $80.6B Apr-2026 + ~$119B/yr FCF + near-zero net debt); market cap ~$5T is a separate label"
+    thrust: "~$30B/yr — organic $3.3B + ~$27B ecosystem stakes (Nebius/Naver/Intel/Groq); stakes count per recipe"   # ben-steer 2026-07-27
+    axes_num: { weight: 260, thrust: 30, gravity: 750 }  # ben-steer 2026-07-27 — stakes into thrust per recipe (was 3.3 organic-only)
+    optionality: "free — no fiduciary mandate, near-zero leverage; ~$30B constrained slice = strategic equity stakes in its own buyers (the circular-financing loop)"
+    gravity: "~$1.0T/yr GROSS orbiting AI-infra (Nvidia DC run-rate + the hyperscaler capex it anchors) — dwarfs its capitalization either way; the holds-the-mines-everyone-rents profile. VA-deflation DEFERRED (would be ~$375B/yr x0.5x0.75)"
+  - slug: oracle
+    rank: kingdom
+    held_by: larry-ellison
+    sphere: us
+    pocket: hyperscaler   # spin-up-board 2026-07-25
+    holdings: [oci, stargate-stake, cerner]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$64B commandable/12mo ($31.9B cash+STI May-2026 + ~$32B/yr operating cash flow, but FCF -$23.7B, debt $156B D/E~3.6x); market cap ~$331B is a separate label"
+    thrust: "~$46B/yr — capex $56B−D&A $9B; RPO $638B"  # agent-derive 2026-07-27
+    axes_num: { weight: 262, thrust: 48, gravity: 90 }  # dep-only audit 2026-07-28 — Cerner amortization stripped (dep $7.6B of the $9.3B blend)
+    optionality: "constrained/locked — negative FCF, high leverage, cash pre-committed to the buildout; Ellison ~40%+ founder control"
+    gravity: "~$67.4B/yr GROSS FY26 revenue (Cloud $34B) + reported ~$450B+ RPO backlog post-Stargate (conf LOW, unverified); GROSS per board policy"
+    gloss: "Kingdom by capital + Stargate position; also the clinical-records substrate (Cerner) — surfaces in the MH lens."
+  - slug: mistral-ai
+    rank: kingdom
+    sphere: fr
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [mistral-models]
+    axes_asof: 2026-07-25
+    commanded_capital: "~$4.2B cumulative raised (€2B Sep-2025 incl ASML $1.5B/11%; $830M Mar-2026 for datacenters); valuation €12B/$14B is a separate label"
+    optionality: "mixed — VC + strategic industrials; EU-sovereignty tailwind, not state control"
+    gravity: "no clean $ figure — open-weight adoption + Accenture channel + $830M datacenter buildout (adoption proxy, not revenue)"
+    gloss: "Under French state patronage; the patronage relationship is its own genre. House not yet named (Mensch)."
+    axes_num: { weight: 6.5, thrust: 1.0, gravity: 0.4 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$0.5-2B/yr band — MSFT EU-infra deal 'multibillion' w/ zero specifics (thin)"   # agent-derive 2026-07-28
+  - slug: moonshot-ai
+    rank: kingdom
+    sphere: china
+    holdings: [kimi]
+    gloss: "Tight China-state fusion is the analytical point, not a reason to reclassify. House not yet named."
+    axes_num: { weight: 4, thrust: 3.5, gravity: 2 }  # agent-derive 2026-07-28 rollout — gravity est; optionality LIVE — WH GB300-via-Thailand accusation unresolved
+    thrust: "~$3-4B/yr via funding-round velocity (thin proxy); K3 signups paused on compute crunch"   # agent-derive 2026-07-28
+    optionality: "mixed"   # agent-derive 2026-07-28 rollout
+  - { slug: zhipu-ai,     rank: kingdom, sphere: china, holdings: [glm],
+      axes_num: { weight: 7.5, thrust: 0.6, gravity: 0.2 }, thrust: "~$0.3-1B/yr — 1GW all-domestic DC + $4B HK raise (thin)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - slug: deepseek
+    rank: kingdom
+    sphere: china
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [deepseek-v4]
+    axes_asof: 2026-07-25
+    commanded_capital: "self-funded via High-Flyer (Liang 84%); ~$300M first external round; core asset is a pre-export-control GPU stockpile; valuation ~$10B is a separate label"
+    optionality: "constrained — founder-controlled but compute export-locked and carrying PLA/state ties"
+    gravity: "no clean $ figure — heavy open-weight adoption + ultra-cheap API (impact proxy: #1 US iOS, ~$600B Nvidia 1-day loss Jan-2025)"
+    axes_num: { weight: 7.5, thrust: 0, gravity: 2 }  # agent-derive 2026-07-28 rollout — gravity est-uncited
+    thrust: "≈0 — riding a pre-2021 GPU stockpile; $1.5B infra round PAUSED 07-25/27 (thin)"   # agent-derive 2026-07-28
+  - slug: alibaba-qwen
+    rank: kingdom
+    sphere: china
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [qwen, zhenwu-stack]
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/alibaba-qwen-axes/
+    commanded_capital: "~$44B liquid (cash+STI Mar-2026), falling ~45% in two years into the ~¥380B AI buildout; market cap ~$269B"
+    optionality: "constrained — cash-rich but China state-steered (MofCom weight-export consult, national-champion capital tilt, capital controls / VIE structure)"
+    gravity: "~$1.05T GMV GROSS (VERY gross — commerce GMV) + ~$22B/yr Alibaba Cloud. VA-deflation DEFERRED (GMV deflates HARD, ~6% VA -> ~$43B) — the gross-vs-value-added trap, keep the GMV label loud"
+    axes_num: { weight: 53, thrust: 11, gravity: 4.2 }  # agent-derive 2026-07-28 rollout — weight = AI-unit-attributable slice of parent
+    thrust: "~$11B/yr — ¥380B/$53B 3-yr AI buildout on pace (FY26 actuals)"   # agent-derive 2026-07-28
+  - slug: spacex
+    rank: kingdom
+    held_by: elon-musk
+    sphere: us
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    holdings: [grok, colossus, starlink]
+    posture: expanding   # classify 2026-07-24 (buildout-race dominant — Colossus/Grok; 4 threads opened + crawled, no longer a coverage gap)
+    gloss: "SpaceXAI (the AI arm — Grok + the Colossus compute) inside the public parent SpaceX (Nasdaq: SPCX; IPO 06-12 ~$1.75T). OWNS its mines — Colossus, large enough to lease to Anthropic. One of House Musk's two realms. xAI is its L2 subnode — identity separate, MONEY CONSOLIDATED HERE (ben-steer 2026-07-28)."
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/spacex-axes/
+    commanded_capital: "~$16B cash + demonstrated ~$75B raise access (Jun-2026 IPO); market cap ~$1.52T (SPCX) is a separate label. NB basis differs from peers — see the axis-basis open question"
+    optionality: "free — Musk ~82% voting so outside holders cannot bind him; documented cross-venture redeployment; thin post-IPO locked overlay"
+    gravity: "~$85B/yr GROSS orbiting (Starlink + launch-dependent + compute leases); + ~$18B one-time Colossus buildout stock. VA-deflation DEFERRED (would be ~$30B/yr x0.5x0.7)"
+    axes_num: { weight: 102, thrust: 14.1, gravity: 85 }  # agent-derive 2026-07-28 rollout — weight = last pre-IPO filed; pro-forma ~$175-180B post-raise; first 10-Q 08-04; CONSOLIDATED SpaceXAI incl xai
+    thrust: "~$14.1B/yr dep-only — Colossus/Colossus-2 + Starlink; FY25 capex $20.8B − D&A $6.7B; 2026 run-rate higher (pre-10-Q)"   # agent-derive 2026-07-28
+  - slug: xai
+    rank: kingdom
+    kind: corp
+    level: L2
+    parent: spacex   # ben-steer 2026-07-28 — subnode like deepmind@google; legally dissolved into SpaceXAI 2026-07-06 (secondary press, no primary filing)
+    liege: spacex
+    sphere: us
+    pocket: frontier-lab
+    posture: expanding   # rides the parent's buildout posture; condition watch = talent exodus + CSAM suits
+    gloss: "The AI identity inside SpaceXAI — Grok + Colossus, kept distinct from rockets/satellites for threads and entities. THE MONEY IS WELDED TO SPACEX (ben-steer 2026-07-28): no separate axes here, all capital/thrust/gravity calculations consolidate at the parent."
+    commanded_capital: "CONSOLIDATED into spacex — ~$500M annualized revenue vs ~$1B/mo burn are operating color, not a separate capital base"
+  - slug: tesla
+    rank: kingdom
+    held_by: elon-musk
+    sphere: us
+    holdings: [fsd, optimus, dojo]
+    gloss: "House Musk's second realm — enters the board via robotics/autonomy AI, not a frontier LLM line."
+    axes_num: { weight: 148.5, thrust: 6.4, gravity: 104 }  # agent-derive 2026-07-28 rollout — first axes; gravity = gross outer bound
+    thrust: "~$6.4B/yr — capex $12.9B − D&A $6.5B TTM; treasury churn excluded"   # agent-derive 2026-07-28
+    optionality: "mixed"   # agent-derive 2026-07-28
+
+  # --- Subsidiary actors (a court inside an integrated-power) ---
+  - slug: deepmind
+    rank: kingdom
+    parent: google   # contained in Alphabet — corp @ L2
+    liege: google
+    depends_on: google
+    held_by: demis-hassabis
+    sphere: us
+    pocket: frontier-lab   # spin-up-board 2026-07-25
+    axes_asof: 2026-07-25
+    commanded_capital: "Alphabet-scale (parent commands $403B rev / $132B NI 2025 + $80B AI raise Jun-2026); own operating revenue only ~£1.33B — same capital pool as google, don't double-count"
+    optionality: "constrained — parent-directed, cannot independently raise capital"
+    gravity: "~$58.7B/yr GROSS Google Cloud revenue (2025) + Gemini embedded across Search/Workspace/Android"
+    gloss: "Alphabet subsidiary — parent-directed, cannot independently raise; same capital pool as google (don't double-count). Distinct science-rigor culture, frontier-facing, more research freedom than the capital."
+  - slug: microsoft-mai
+    rank: kingdom
+    parent: microsoft   # a Microsoft business unit — corp @ L2
+    liege: microsoft
+    held_by: mustafa-suleyman
+    sphere: us
+    commanded_capital: "CONSOLIDATED into microsoft (ben-steer 2026-07-28 — L2 subnode weld, xai precedent; no separate axes)"
+    gloss: "Microsoft's in-house model court — the most directly MH-AI-relevant lineage on the board (Suleyman → Inflection → MAI)."
+
+  # --- Dependent actors (position held at another's pleasure) ---
+  - { slug: coreweave, rank: kingdom, liege: nvidia, pocket: hyperscaler, sphere: us,
+      gloss: "GPU-cloud dependent — its balance sheet tracks Nvidia allocation.",
+      thrust: "~$13B/yr — capex $17B−D&A $3B, debt-financed", axes_num: { weight: 56, thrust: 13, gravity: 20 },
+      optionality: "constrained" }  # pocket ben-steer 2026-07-27 (W3 — neocloud); axes agent-derive 2026-07-27; gloss restored 2026-07-28 (an earlier inline edit let a comment swallow it)
+  - slug: broadcom
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$50-60B commandable/12mo ($19.6B cash + ~$33B/yr FCF) but net debt ~-$45B (VMware) pre-commits much of it; market cap $1.82T is a separate label"
+    thrust: "≈$0 — capex $0.9B ≈ physical depreciation; the −$7.9B was VMware AMORTIZATION, excluded per dep-only rule"   # ben-steer 2026-07-27
+    axes_num: { weight: 179, thrust: 0, gravity: 220 }  # ben-steer 2026-07-27 — dep-only rule; the −8 was VMware amortization
+    optionality: "mixed-to-constrained — free cash earmarked to deleveraging the VMware debt"
+    gravity: "~$63.9B/yr GROSS FY25 revenue — hyperscaler custom-AI ASICs (Google TPU / Meta MTIA / OpenAI inference) + AI networking + VMware"
+    gloss: "Royal armorer — co-develops OpenAI's Jalapeño ASIC; a supplier whose fortunes track its patrons."
+  - { slug: character-ai, rank: kingdom, sphere: us, double_dependent: true, gloss: "App-store + model-provider dependent; the lead defendant of the MH reckoning.",
+      axes_num: { weight: 0.19, thrust: 0.03, gravity: 0.05 }, thrust: "~$30M/yr (thin)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: slingshot-ai, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.093, thrust: 0.05, gravity: 0.1 }, thrust: "~$50M/yr (thin); Ash pulled from UK Jan-26", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: wysa, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.035, thrust: 0.007, gravity: 0.04 }, thrust: "~$7M/yr (thin)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: headspace, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.55, thrust: 0.05, gravity: 0.3 }, thrust: "~$50M/yr (thin)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: sondermind, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.2, thrust: 0.03, gravity: 0.12 }, thrust: "~$30M/yr (thin)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: spring-health, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.44, thrust: 1.25, gravity: 0.4 }, thrust: "~$1-1.5B one-time — Alma close 05-01 (band est)", optionality: "constrained" }  # agent-derive 2026-07-28 rollout
+  - { slug: talkspace, rank: kingdom, sphere: us, double_dependent: true, gloss: "UHS $835M acquisition PENDING (Q3-26 close, shareholder-approved); double-dependent like its peers. (Prior Teladoc-owned gloss was WRONG — they are competitors; fixed 2026-07-28.)",
+      axes_num: { weight: 0.136, thrust: 0.024, gravity: 0.229 }, thrust: "~$24M/yr; UHS $835M acquisition PENDING Q3-26", optionality: "locked" }  # agent-derive 2026-07-28 rollout
+  - { slug: replika, rank: kingdom, sphere: us, double_dependent: true,
+      axes_num: { weight: 0.011, thrust: 0.003, gravity: 0.02 }, thrust: "~$3M/yr (thin); total raised ~$11M", optionality: "mixed" }  # agent-derive 2026-07-28 rollout
+
+  # --- Regulators (organs of states; sphere names the state; not personified) ---
+  - { slug: caisi, rank: regulator, sphere: us, gloss: "The US frontier-review organ; three directors in a year (Frontier Gatekeeping)." }
+  - { slug: fda, rank: regulator, sphere: us }
+  - { slug: dmhc, rank: regulator, sphere: us, gloss: "California managed-care regulator; the Kaiser complaint's venue." }
+  - { slug: us-state-legislatures, rank: regulator, sphere: us, gloss: "The statehouse vector — the diocese doing the most AI-MH rule-writing (Chatbot Bans)." }
+  - { slug: mhra, rank: regulator, sphere: uk }
+  - { slug: eu-ai-act, rank: regulator, sphere: eu, gloss: "AI Act enforcement — the EU's instrument of jurisdiction." }
+  - { slug: proposed-sro, rank: regulator, sphere: us, gloss: "The FINRA-style self-regulatory body under discussion; not yet real." }
+  - { slug: nsa-frontier-review, rank: regulator, sphere: us, gloss: "The classified NSA-led frontier-threshold review (EO 14409)." }
+
+  # --- Gov capital pools (kind: agency, pocket gov-pool — ben-steer 2026-07-28, row 23; STATE-map layer, axes recipe pending; figures = findings us/canada-gov-pockets-2026-07-28) ---
+  - { slug: chips-act, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "$52.7B appropriated; ~$36B awarded/loaned to date; grants→EQUITY pivot (Intel 9.9% confirmed; TSMC/Micron contested)",
+      gloss: "The fab-capacity pool — milestone-gated to 2028, now taking stakes." }
+  - { slug: doe-ai-power, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "LPO authority ~$290B (thin); $17.5B nuclear loans + $1B TMI + $3B TX grid deployed — the EXPANDING pool",
+      gloss: "Loans not grants — the most AI-framed federal money (nuclear-for-AI, Genesis)." }
+  - { slug: darpa, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "$4.1B FY24 (FY26 contested across sources)", gloss: "RDT&E flow-through — AIxCC/ACE/SemaFor." }
+  - { slug: dod-ai, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "DAWG $226M FY26 → $54.6B FY27 REQUEST; reconciliation-funded, dodging appropriations",
+      gloss: "CDAO→DAWG consolidation; Replicator absorbed; GenAI.mil (Gemini/Grok access)." }
+  - { slug: nih-pool, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "~$47.5B FY26 enacted (Congress rejected the 40% cut) — but FOAs collapsed 787→84: throttled in practice",
+      gloss: "Health-research pool — Bridge2AI/AIM-AHEAD; the statutory fight won, the faucet still pinched." }
+  - { slug: barda, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "UNCONFIRMED this pass (budget pages unreachable); mRNA cuts ~$500M partly restored", gloss: "Biodefense pool — thin coverage, follow-up needed." }
+  - { slug: nsf-pool, rank: regulator, pocket: gov-pool, sphere: us,
+      commanded_capital: "$8.8B FY25 enacted; 60% cut rejected but the 5%-cap guardrail breached internally (MPS -30%); $1.5B X-Labs OTA bypasses peer review",
+      gloss: "Science base — NAIRR pilot + $583M+ Genesis lines." }
+  - { slug: canada-sovereign-compute, rank: regulator, pocket: gov-pool, sphere: ca,
+      commanded_capital: "$2B (2024) + possible $2B+ 'AI for All' overlap unclear; $234M of the $300M SMB compute fund STILL UNCOMMITTED",
+      gloss: "Canada's compute pool — slow to move." }
+  - { slug: canada-sif, rank: regulator, pocket: gov-pool, sphere: ca,
+      commanded_capital: "$1.26B base; SIF→Strategic Response Fund rebrand in progress, envelope unclear", gloss: "Industrial fund, no health stream." }
+  - { slug: cifar, rank: regulator, pocket: gov-pool, sphere: ca,
+      commanded_capital: "$441.6M (2021-2030) + $24M top-up (2026); locked to the Pan-Canadian AI Strategy", gloss: "The institutes' spine (Vector/Mila/Amii ride it)." }
+  - { slug: amii, rank: regulator, pocket: gov-pool, sphere: ca,
+      commanded_capital: "$50M/5yr + $10M Health Innovation Lab — the strongest gov-funded AI-in-health signal in Canada", gloss: "Alberta's institute; the health exception." }
+  - { slug: ontario-protect-fund, rank: regulator, pocket: gov-pool, sphere: ca,
+      commanded_capital: "$4B 'Protect Ontario' fund — free-ish direct-investment vehicle; health item so far = the hallucinating-scribes AUDIT", gloss: "The one provincial pool with real discretion." }
+
+  # --- Resource layer (the mines) ---
+  - slug: tsmc
+    rank: kingdom
+    pocket: foundry   # spin-up-board 2026-07-25
+    sphere: none
+    axes_asof: 2026-07-25
+    commanded_capital: "~$200B+ commandable/12mo (~$119B cash+mkt-securities Jun-2026 + ~$89B/yr operating cash flow, self-funded; + CHIPS $6.6B grant + $5B loans); market cap ~$1.1T+ is a separate label"
+    thrust: "~$18B/yr — capex $40B−D&A $22B, guidance to $60B+"  # agent-derive 2026-07-27
+    axes_num: { weight: 293, thrust: 18, gravity: 1500 }  # agent-derive 2026-07-27
+    optionality: "mixed — FCF-free but a rising slice locked to the forced AZ/JP/DE buildout ($165-265B Arizona; 2026 capex $60-64B)"
+    gravity: "~$150B/yr GROSS foundry revenue atop multi-trillion downstream (~70% foundry share, ~90%+ of <7nm; sole/main supplier to Nvidia/Apple/AMD/Broadcom/Qualcomm) — CHOKEPOINT"
+    gloss: "The chokepoint fab; raised 2026 capex to $60-64B + $100B Arizona."
+  - slug: samsung
+    rank: kingdom
+    pocket: foundry   # spin-up-board 2026-07-25
+    sphere: none
+    axes_asof: 2026-07-25
+    commanded_capital: "~$150B+ commandable/12mo ($98B cash Mar-2026 group + ~$50-60B/yr operating cash flow)"
+    optionality: "constrained — chaebol Lee-family control; HBM-vs-foundry capital tug; national champion"
+    gravity: "~$220.7B/yr GROSS group revenue; foundry slice small (~$15-20B/yr, loss-making, ~7-8% share, #2) — also a DRAM maker (chips overlap)"
+    axes_num: { weight: 433.8, thrust: 3.3, gravity: 250 }  # agent-derive 2026-07-28 rollout — group-level, not foundry-isolated
+    thrust: "$3.3B TTM backward — but FY26 guided capex $73.2B implies sharply higher forward rate"   # agent-derive 2026-07-28
+  - slug: sk-hynix
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: none
+    axes_asof: 2026-07-25
+    commanded_capital: "~$70B commandable/12mo ($39B cash+STI + ~$30B/yr FCF); market cap ~$930B is a separate label"
+    optionality: "mixed — capex-cyclical; SK chaebol control"
+    gravity: "~$70-80B/yr GROSS direct (the HBM the whole buildout needs; gated AI-infra far larger) — HBM CHOKEPOINT, Nvidia primary, ~29% DRAM revenue"
+    axes_num: { weight: 161.5, thrust: 10.6, gravity: 300 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$10.6B/yr — capex 28.89T − D&A 14.31T KRW (FX approx)"   # agent-derive 2026-07-28
+  - slug: micron
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$50-55B commandable/12mo ($26B cash+STI + ~$26B/yr FCF, net cash $24B); market cap $1.04T is a separate label"
+    optionality: "mixed — FCF earmarked to US megafabs + CHIPS"
+    gravity: "~22% of DRAM revenue GROSS across DC+AI+PC+auto (DRAM/NAND); HBM #3 and the only US DRAM maker — memory-chokepoint flank"
+    axes_num: { weight: 134.1, thrust: 16.2, gravity: 150 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$16.2B/yr — capex $25.26B − D&A $9.01B (SEC)"   # agent-derive 2026-07-28
+  - slug: cxmt
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: china
+    axes_asof: 2026-07-25
+    commanded_capital: "state-backed IPO ~$8.5-9.8B fresh + Big Fund; market cap ~$85B is the mark (separate label)"
+    thrust: "~$4B/yr est — state-funded fab buildout; IPO'd 2026-07-27"  # agent-derive 2026-07-27
+    axes_num: { weight: 13, thrust: 4, gravity: 100 }  # agent-derive 2026-07-27
+    optionality: "locked — state-directed (36.29% state pre-IPO, Entity-Listed)"
+    gravity: "~7.6% of DRAM revenue GROSS — China's domestic memory independence (feeds Alibaba/ByteDance/Xiaomi)"
+    gloss: "China's domestic DRAM push; STAR-Market IPO (CXMT IPO thread)."
+
+  # --- Capital layer (the treasury; institutional — Houses not yet named) ---
+  - slug: softbank
+    rank: kingdom
+    held_by: masayoshi-son
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: none
+    axes_asof: 2026-07-25
+    commanded_capital: "directs ~$150-160B (Vision Fund 1 ~$100B LP-heavy + VF2 + $40B OpenAI bridge) + owns 87.1% of Arm inside ~$200B market cap (commands÷owns ~1x — INVERSE)"
+    optionality: "free but LEVERAGED — Son ~71% voting, deploys at will"
+    gravity: "REAL not thin GROSS — Arm underpins world mobile silicon + 60 portfolio companies + Stargate/OpenAI anchoring"
+    gloss: "Carries the $40B OpenAI bridge loan; the largest single lever into the stack. House Son the obvious next dynast."
+    axes_num: { weight: 155, thrust: 42, gravity: 30 }  # agent-derive 2026-07-28 rollout — free-but-LEVERED; gravity est-rough; NB $30B = SoftBank's own money (the $40B was the round total it led)
+    thrust: "~$42B/yr — OpenAI equity $30B + Stargate funded tranche $10B (Mizuho-financed, counts) + Intel $2B"   # agent-derive 2026-07-28
+  - slug: mgx
+    rank: kingdom
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: gulf
+    axes_asof: 2026-07-25
+    commanded_capital: "commands ~$100B target (~$50B raised)"
+    optionality: "free/aggressive — state-backed (Mubadala + G42)"
+    gravity: "GROSS — AI-infra anchoring (Stargate, GAIIP, Aligned $40B)"
+    axes_num: { weight: 50, thrust: 10.5, gravity: 8 }  # agent-derive 2026-07-28 rollout — gravity est-rough
+    thrust: "~$10.5B/yr FLOOR — Stargate $7B + Binance $2B + Aligned $5B follow-on; mega-round tickets undisclosed, excluded"   # agent-derive 2026-07-28
+  - slug: blackrock
+    rank: kingdom
+    sphere: us
+    pocket: capital   # spin-up-board 2026-07-25
+    gloss: "The board's sharpest commands-vs-owns case, and the axis model's proof: a pure capitalization actor whose gravity is negligible. Under-threaded — a candidate for a dedicated power-position thread."
+    axes_asof: 2026-07-25   # axes 2026-07-25; sources in artifacts/bundles/blackrock-axes/
+    commanded_capital: "commands ~$15.3T AUM (Q2-2026) but owns only ~$170B (commands÷owns ≈ 90x) — the sharpest commands-vs-owns case on the board"
+    thrust: "~$30B/yr est new-position deployment (NOT the $698B flows)"  # agent-derive 2026-07-27
+    axes_num: { weight: 14000, thrust: 30, gravity: 20 }  # agent-derive 2026-07-27
+    optionality: "constrained — AUM is fiduciary/benchmark-bound (~64% index-passive); free corporate cash ~$10B is ~0.06% of what it commands"
+    gravity: "thin — Aladdin dependency ~$1.5B/yr tech-services rev (over ~$21.6T assets monitored, a stock not a flow). Gravity << capitalization by ~4 orders regardless of any deflation — a pure capitalization actor"
+  - slug: pif
+    rank: kingdom
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: gulf
+    axes_asof: 2026-07-25
+    commanded_capital: "commands ~$900B AUM (targeting $1T+)"
+    optionality: "free-ish but Vision-2030-directed"
+    gravity: "real GROSS — NEOM + $45B into Vision Fund 1"
+    gloss: "Saudi sovereign wealth; power projected through capital, not product."
+    axes_num: { weight: 1210, thrust: 12.5, gravity: 50 }  # agent-derive 2026-07-28 rollout — weight ~$1.21T Jul-26 (prior ~$900B stale); gravity est-rough
+    thrust: "~$12.5B/yr AI run-rate — AWS $5B + AirTrunk $3B + Humain $1.2B + xAI $3B"   # agent-derive 2026-07-28
+
+  # --- Guilds (institutional, non-AI-native) ---
+  - slug: kaiser-permanente
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$127.7B/yr revenue (non-profit; reserves mission-locked)"
+    optionality: "constrained — non-profit; Risant roll-up"
+    gravity: "GROSS — 13.1M members, 40 hospitals, 25,505 physicians (integrated payer+provider); strongest/live behavioral-health arm"
+    gloss: "EDGE CASE, flagged not forced. Integrated payer-provider, neither builder nor dependent — enters through the labor fight over its AI (Kaiser vs. AI), not a model line."
+    axes_num: { weight: 133.3, thrust: 1.5, gravity: 127.7 }  # agent-derive 2026-07-28 rollout — weight = KPMG-audited combined financials (bond disclosure)
+    thrust: "~$1.5B/yr — capex $4.8B − D&A $3.3B; Risant deals = non-cash member-substitution, $0 M&A"   # agent-derive 2026-07-28
+  - { slug: nuhw, rank: kingdom, sphere: us, gloss: "The union contesting Kaiser's AI deployment; a board actor via labor-action. Not yet a watchlist entity — steering gap flagged." }
+
+  # --- Route layer (not an actor) ---
+  - slug: silk-road
+    rank: route-layer
+    sphere: none
+    gloss: "NOT an actor — holds what moves between the US and China spheres: export controls, distillation disputes, chip-routing, border incidents. Chinese labs are filed as sovereign-actors in the china sphere; the Chinese state is a state; this holds the traffic between (China's Stack, Distillation Fight)."
+
+  # --- SPIN-UP BOARD 2026-07-25 — pockets: foundries · chips · capital · insurance · health ---
+
+  # foundries
+  - slug: intel
+    rank: kingdom
+    pocket: foundry   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$45B/12mo but consumed ($29.7B cash+STI + ~$14.9B/yr operating cash flow eaten by capex, net -$11.2B TTM); US govt 9.9% (~$8.9B) + SoftBank ~$2B, largely CHIPS-converted — govt stake carried at COST (~$8.9B), not mark (~$42B): ben-steer 2026-07-28, commanded ≠ market gains"
+    thrust: "≈$0 — capex $12.1B ≈ D&A $12.4B; building on outside capital"  # agent-derive 2026-07-27
+    axes_num: { weight: 205, thrust: 0.1, gravity: 200 }  # agent-derive 2026-07-27
+    optionality: "locked/constrained — turnaround (24k layoffs, DE/PL fabs cancelled); US golden-share warrant tied to keeping >=51% of the foundry"
+    gravity: "~$53B/yr GROSS revenue; external foundry gravity tiny, strategic gravity (domestic leading-edge the US wants) >> commercial"
+    gloss: "US leading-edge foundry turnaround under a golden-share; strategic gravity far exceeds commercial."
+  - slug: globalfoundries
+    rank: kingdom
+    pocket: foundry   # spin-up-board 2026-07-25
+    sphere: gulf
+    axes_asof: 2026-07-25
+    commanded_capital: "~$5B/12mo organic ($3B cash + ~$1.9B/yr operating cash flow; + CHIPS $1.5B + $375M quantum + Mubadala parent); market cap ~$29.5B is a separate label"
+    optionality: "mixed — self-funded but Mubadala 82% directs"
+    gravity: "~$6.84B/yr GROSS — specialty/mature nodes for auto/defense/RF; #3 foundry, trusted supplier"
+    gloss: "Mubadala controls 82% — specialty/mature-node foundry, trusted supplier to auto/defense/RF."
+    axes_num: { weight: 16.9, thrust: -0.4, gravity: 15 }  # agent-derive 2026-07-28 rollout
+    thrust: "genuinely negative — capex $0.87B < dep $1.27B, no M&A (real, not artifact)"   # agent-derive 2026-07-28
+
+  # chips
+  - slug: amd
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$25-35B commandable/12mo ($12.35B cash + ~$8.6B/yr FCF, net cash $8.5B); market cap $851B is a separate label"
+    optionality: "mostly free — net cash; self-earmarked to AI-GPU R&D + ZT/Xilinx integration"
+    gravity: "GROSS — x86 server + PC + DC-GPU on AMD silicon (AMD-claimed DC-accel TAM ~$500B by 2028; needs primary source)"
+    gloss: "The credible #2 AI-GPU challenger; net-cash and mostly free to deploy."
+    axes_num: { weight: 79.6, thrust: 5.3, gravity: 250 }  # agent-derive 2026-07-28 rollout — OpenAI warrant deal = contingent, NOT thrust until funded
+    thrust: "~$5.3B/yr — organic $0.3B + Anthropic $5B stake; dep isolated from Xilinx amortization (10-Q)"   # agent-derive 2026-07-28
+  - slug: qualcomm
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$25-30B commandable/12mo ($9.8B cash + ~$12.5B/yr FCF); market cap $176B is a separate label"
+    thrust: "~$2.6B/yr — Alphawave close ($2.3B: $1.8B stock + $301M cash, Dec-25); Modular ($3.9B) ANNOUNCED, close expected H2-26 — not yet counted"  # audit 2026-07-28
+    axes_num: { weight: 57, thrust: 2.6, gravity: 200 }  # agent-derive 2026-07-27
+    optionality: "mostly free"
+    gravity: "GROSS — premium-Android ecosystem (Snapdragon; ~39% app-processor, ~50% baseband)"
+    gloss: "Snapdragon / on-device-AI edge play; mostly-free cash, attempting a datacenter return."
+  - slug: asml
+    rank: kingdom
+    pocket: chips   # ben-steer 2026-07-27 (W3 — was the board's biggest absent node)
+    sphere: eu
+    axes_asof: 2026-07-27
+    commanded_capital: "~$60B total assets (€54.7B, Jun-2026); market cap is a separate label"
+    thrust: "~$2B/yr — organic $0.4B (capex €1.4B − dep €1.0B) + Mistral stake $1.5B (Sep-25)"   # agent-derive 2026-07-27
+    axes_num: { weight: 60, thrust: 2, gravity: 1500 }  # agent-derive 2026-07-27 (compute-chips wave)
+    optionality: "free — strong balance sheet, little encumbrance"
+    gravity: "GROSS — sole EUV supplier; no leading-edge chip is made anywhere without its tools (TSMC/Samsung/Intel all dependent)"
+    gloss: "The EUV monopoly — the tightest chokepoint on the board; rentier with an emerging AI-stakes tilt (Mistral 11%)."
+  - slug: arm
+    rank: kingdom
+    pocket: chips   # spin-up-board 2026-07-25
+    sphere: us
+    parent: softbank   # 87.1% SoftBank-controlled — corp @ L2
+    depends_on: softbank
+    axes_asof: 2026-07-25
+    commanded_capital: "~$5B/12mo ($3.6B cash + ~$1B/yr FCF) — TINY vs its gravity; market cap $278B is a separate label"
+    thrust: "~$0.3B/yr — capital-light licensor"  # agent-derive 2026-07-27
+    axes_num: { weight: 11, thrust: 0.3, gravity: 800 }  # agent-derive 2026-07-27
+    optionality: "constrained — 87.1% SoftBank-controlled"
+    gravity: "GROSS — ISA under ~99% of smartphones + DC (Grace/Graviton) + auto/IoT; device value ~$1T+/yr"
+    gloss: "SoftBank controls 87.1%. INVERSE profile — microscopic capital, planetary gravity (ISA under nearly all silicon)."
+
+  # capital
+  - slug: state-street
+    rank: kingdom
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "directs ~$5.4T AUM (SSGA) but administers ~$51.7T AUC/A in custody; owns ~$28B equity / ~$51B market cap (commands÷owns ~100-190x)"
+    thrust: "~$25B/yr est new-strategy flows"  # agent-derive 2026-07-27
+    axes_num: { weight: 4700, thrust: 25, gravity: 40 }  # agent-derive 2026-07-27
+    optionality: "constrained — fiduciary; Big-Three index / SPDR"
+    gravity: "thin GROSS — ~$13B/yr revenue ($51.7T custody is a monitored stock, not a flow)"
+    gloss: "BlackRock-profile capital actor — commands >>> owns, fiduciary-constrained, thin gravity."
+  - slug: vanguard
+    rank: kingdom
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "directs ~$10-12T AUM, owns ~$0 (client-owned at-cost mutual) — the most extreme commands-vs-owns on the board"
+    thrust: "~$40B/yr est net new deployment"  # agent-derive 2026-07-27
+    axes_num: { weight: 12000, thrust: 40, gravity: 8 }  # agent-derive 2026-07-27
+    optionality: "constrained/near-locked — index/passive, no free corporate capital"
+    gravity: "thin (extreme) GROSS — only the AUM depends on it"
+    gloss: "The most extreme commands-vs-owns case — client-owned mutual, directs $10-12T, owns ~nothing."
+  - slug: fidelity
+    rank: kingdom
+    pocket: capital   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "directs ~$7.0T discretionary + ~$17.9T AUA; private op-co (revenue $37.7B), ~40% Johnson family"
+    thrust: "~$40B/yr est; true new-position thrust lower"  # agent-derive 2026-07-27
+    axes_num: { weight: 7000, thrust: 40, gravity: 60 }  # agent-derive 2026-07-27
+    optionality: "constrained-but-softer — active franchise + family control"
+    gravity: "GROSS — the platform exception: 401k rails for 28,800+ businesses, 5.5M daily trades"
+    gloss: "Family-controlled private op-co; the platform exception among asset managers (401k rails)."
+
+  # insurance
+  - slug: berkshire-hathaway
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$550B+ investable (cash+T-bills $381.7B + float $171B FY24); market cap ~$1.1T is a separate label"
+    optionality: "free — Buffett/Abel, no mandate; the largest true dry powder on the board"
+    gravity: "~$371B/yr GROSS — not thin (real-economy conglomerate, gravity ~= capital)"
+    gloss: "The lone FREE deployer among insurers — largest dry powder; gravity ~= capital, not thin."
+    axes_num: { weight: 570, thrust: 26.5, gravity: 371 }  # agent-derive 2026-07-28 rollout
+    thrust: "$26.5B/yr acquisitions TTM (OxyChem/Taylor Morrison/Alphabet) — public book net-SELLING 15 straight quarters"   # agent-derive 2026-07-28
+  - slug: allianz
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: eu
+    axes_asof: 2026-07-25
+    commanded_capital: "~$2.7T AUM commanded (€2.512T, owns PIMCO); own general account ~$810B; market cap ~$184B is a separate label"
+    optionality: "constrained — Solvency II; ~€1.8T third-party fiduciary"
+    gravity: "~$202B/yr GROSS + PIMCO bond-market power"
+    gloss: "Solvency-II-constrained capital pool; owns PIMCO for bond-market reach."
+  - slug: ping-an
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: china
+    axes_asof: 2026-07-25
+    commanded_capital: "~$1.95T group assets (incl. bank); insurance portfolio ~$848B; market cap ~$144B is a separate label"
+    optionality: "constrained — NFRA C-ROSS + state-steered (Alibaba-style)"
+    gravity: "~$133B/yr GROSS + 240M-customer tech/health ecosystem"
+    gloss: "State-steered Chinese insurer with the strongest insurtech-AI angle (240M-customer ecosystem)."
+  - slug: china-life
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: china
+    axes_asof: 2026-07-25
+    commanded_capital: "~$958B assets (pure life general account); market cap ~$169B is a separate label"
+    thrust: "~$40B/yr proxy — premiums into bonds/equities"  # agent-derive 2026-07-27
+    axes_num: { weight: 1060, thrust: 40, gravity: 120 }  # agent-derive 2026-07-27
+    optionality: "locked — most state-directed; majority state-owned"
+    gravity: "~$140B/yr GROSS premium (<< the asset stock)"
+    gloss: "The most state-directed insurer on the board — majority state-owned life general account."
+  - slug: prudential-financial
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "PGIM $1.512T AUM + general account ~$450-500B; market cap ~$42B is a separate label (commands ~36x own market cap — BlackRock-lite)"
+    optionality: "constrained — RBC; PGIM fiduciary"
+    gravity: "~$70B/yr GROSS"
+    gloss: "BlackRock-lite via PGIM — commands ~36x its own market cap; RBC-constrained."
+  - slug: metlife
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$742B AUM / general account ~$480B via MIM; market cap ~$61B is a separate label"
+    optionality: "constrained"
+    gravity: "~$77B/yr GROSS + group-benefits reach"
+    gloss: "Large constrained life/annuity general account (MIM); broad group-benefits reach."
+  - slug: nippon-life
+    rank: kingdom
+    pocket: insurance   # spin-up-board 2026-07-25
+    sphere: jp
+    axes_asof: 2026-07-25
+    commanded_capital: "~$645B assets (mostly general account); no market cap (MUTUAL)"
+    optionality: "constrained — JGB liability-matching; policyholder-bound"
+    gravity: "~$40B/yr GROSS + systemic macro-gravity (a top global cross-border bond buyer)"
+    gloss: "Policyholder-owned Japanese mutual; systemic macro-gravity as a top cross-border bond buyer."
+
+  # health
+  - slug: unitedhealth-group
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$448B/yr revenue + ~$89B float"
+    optionality: "constrained (MLR) but Optum is a free lever (M&A)"
+    gravity: "~$380B+/yr GROSS routed + 50M members; Optum touches ~200M/yr"
+    gloss: "Largest US payer (+Optum) — a free M&A lever atop a constrained core; strong behavioral-health arm (Optum/UBH). Central to payer-ai-claim-denial."
+    axes_num: { weight: 309.7, thrust: 6.5, gravity: 447.6 }  # agent-derive 2026-07-28 rollout — gravity = covered-lives/revenue basis
+    thrust: "~$6.5B/yr — capex $3.6B − dep $1.0B + M&A $3.9B (clean 10-K split)"   # agent-derive 2026-07-28
+  - slug: cvs-health
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$400B/yr revenue"
+    optionality: "constrained + debt-laden (Aetna / Oak St)"
+    gravity: "~$340B+/yr GROSS — Caremark 75M, ~9,100 pharmacies (~1/5 of US scripts), Aetna"
+    gloss: "Payer-PBM-pharmacy (+Aetna/Caremark); debt-laden and constrained."
+    axes_num: { weight: 253, thrust: 0.67, gravity: 402 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$0.67B/yr — capex $2.8B − dep $2.6B + M&A $0.4B"   # agent-derive 2026-07-28
+  - slug: cigna
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$275B/yr revenue"
+    optionality: "constrained core / free Evernorth (Express Scripts)"
+    gravity: "GROSS — 185M+ relationships + 1.7M providers (widest footprint)"
+    gloss: "Evernorth / Express-Scripts PBM giant; widest footprint. Strong behavioral-health arm; PXDX in payer-ai-claim-denial."
+    axes_num: { weight: 153.3, thrust: 1.0, gravity: 274.9 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$1.0B/yr — capex $1.2B − dep $0.24B; zero completed M&A TTM (HCSC = divestiture)"   # agent-derive 2026-07-28
+  - slug: elevance-health
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$199B/yr revenue + >=$6B/yr operating cash flow"
+    optionality: "constrained + 11-state Blue license fence"
+    gravity: "GROSS — ~46.8M members"
+    gloss: "Blue-licensed payer (+Carelon); deepest payer behavioral-health bench (ex-Beacon)."
+    axes_num: { weight: 126.4, thrust: 0, gravity: 197.6 }  # agent-derive 2026-07-28 rollout — dep-split unavailable
+    thrust: "≈0 ARTIFACT-SUPPRESSED — no standalone dep disclosed since 2020; blended D&A gave a false −$0.5B (Broadcom-trap); true figure likely positive"   # agent-derive 2026-07-28
+  - slug: humana
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$130B/yr revenue"
+    optionality: "most constrained — ~85% govt MA/Medicaid, CMS-set rates"
+    gravity: "GROSS — #2 Medicare Advantage insurer (~5-6M MA members, flagged)"
+    gloss: "The most constrained payer — ~85% government-book (MA/Medicaid), CMS rate-set."
+    axes_num: { weight: 55.3, thrust: 0.77, gravity: 129.7 }  # agent-derive 2026-07-28 rollout
+    thrust: "~$0.77B/yr — MaxHealth close (~$908M, Feb-26) drives it"   # agent-derive 2026-07-28
+  - slug: hca-healthcare
+    rank: kingdom
+    pocket: health   # spin-up-board 2026-07-25
+    sphere: us
+    axes_asof: 2026-07-25
+    commanded_capital: "~$75.6B/yr revenue"
+    optionality: "free capital allocation (buybacks) / rate-constrained revenue"
+    gravity: "GROSS — 186 hospitals + ~2,000 sites across 21 states + UK (provider archetype)"
+    gloss: "The provider archetype — 186 hospitals; free to allocate capital, rate-constrained on revenue."
+    axes_num: { weight: 63.25, thrust: 1.9, gravity: 75.6 }  # agent-derive 2026-07-28 rollout — mixed = free allocator on a leveraged, rate-regulated base (two-axis tension noted)
+    thrust: "~$1.9B/yr — capex $4.9B − dep $3.5B + M&A $0.46B (clean split)"   # agent-derive 2026-07-28

@@ -1,0 +1,70 @@
+# Bundle — node posture + capital-flow + axes_num: tesla (2026-07-28)
+# House Musk's second realm (spacex-node is the first). Standard public-corp
+# recipe per /workspace/theprojection/content/metric/thrust.md: thrust =
+# capex - depreciation (TTM) + strategic stakes/M&A TTM; weight = total
+# assets; gravity = the FSD/robotaxi/energy-dependent economy attributable
+# (low confidence, no segment-level disclosure for FSD/robotaxi specifically);
+# optionality = Musk's actual control (a materially weaker band than SpaceX —
+# no supervoting class here); buybacks = TTM shareholder-return signal.
+# Method: WebFetch primary sources (WebSearch budget exhausted this session).
+# Primary: stockanalysis.com TSLA statements (USD, no FX needed) + Wikipedia
+# for governance/pay-package/robotaxi/FSD context. First bundle for this
+# node — board.yaml's tesla entry currently carries no axes at all.
+node: tesla
+name: "Tesla"
+# pocket: unset here — board.yaml's tesla entry carries no `pocket` today (unlike
+# spacex's frontier-lab); AI enters via FSD/robotaxi/Optimus, not a frontier LLM
+# line, so it wouldn't inherit frontier-lab either. Leaving pocket assignment to
+# a /classify pass rather than asserting one from a data-only bundle.
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Capex TTM $12.9B is up ~52% vs FY2025's $8.5B, funding the FSD/robotaxi buildout (now live in Austin/Dallas/Houston/Miami + SF Bay safety-driver service) and Energy storage growth (+? YoY) — but the market is pricing this as overreach, not confidence: stock down ~30% YTD, 'worst slump since 2022' after Q2-2026 earnings cited 'massive AI infrastructure capex' as the trigger."
+  sources:
+    - {figure: "capex TTM $12,923M vs FY2025 $8,527M — up ~52%", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "stock down ~30% YTD, 'worst slump since 2022' post Q2-2026 earnings citing AI-infra capex; share price $309.22, market cap $1.22T (07-27)", label: "stockanalysis.com — TSLA quote/news", url: "https://stockanalysis.com/stocks/TSLA/", as_of: "2026-07", confidence: high}
+    - {figure: "Robotaxi commercial service live: Austin/Dallas/Houston (TX), Miami (FL, from 07-03-2026); SF Bay Area safety-driver service; fleet still small (~135 vehicles as of Dec-2025) vs Waymo", label: "Wikipedia — Tesla Robotaxi", url: "https://en.wikipedia.org/wiki/Tesla_Robotaxi", as_of: "2026-07", confidence: high}
+capital:
+  available:
+    value: "~$43.5B cash + ST investments (TTM Jun-2026), lightly levered — total debt only ~$9.3B. Materially more liquidity-cushioned than SpaceX's ~$16B, and no IPO-style capital event pending."
+    sources:
+      - {figure: "cash & ST investments $43,524M; total debt $9,342M; total liabilities $61,005M; total equity $87,519M (TTM, Jun-30-2026)", label: "stockanalysis.com TSLA balance sheet", url: "https://stockanalysis.com/stocks/TSLA/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+  operating:
+    value: "~$18.7B/yr operating cash flow (TTM) — healthy, growing (+18.5% YoY per stockanalysis) despite the capex-driven investor anxiety."
+    sources:
+      - {figure: "OCF TTM $18,685M, +18.52% YoY growth", label: "stockanalysis.com TSLA ratios/cash-flow", url: "https://stockanalysis.com/stocks/TSLA/financials/ratios/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$12.9B/yr capex TTM (up from $8.5B FY2025) — the FSD/robotaxi/Optimus/Energy buildout; this is the line the market is punishing the stock for."
+    sources:
+      - {figure: "capex TTM -$12,923M; FY2025 -$8,527M", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  in:
+    value: "inflows: revenue $103.6B TTM + OCF $18.7B; no material external capital raise this TTM (unlike SpaceX/Intel, no state or IPO injection) — self-funded off operations."
+    sources:
+      - {figure: "total revenue TTM $103,619M (automotive sales $72,588M + energy gen/storage $12,799M + services $15,172M + reg. credits $1,485M + leasing $1,575M)", label: "stockanalysis.com TSLA financials", url: "https://stockanalysis.com/stocks/TSLA/financials/", as_of: "2026-06", confidence: high}
+  out:
+    value: "outflows: capex $12.9B/yr + ~$6.9B/yr net securities purchases (portfolio churn, not strategic stakes) + stock-comp dilution; FCF TTM only ~$5.8B — thin relative to the capex ramp, and buybacks are effectively zero (see optionality/thrust)."
+    sources:
+      - {figure: "FCF TTM $5,762M (FY2025 $6,220M); net investment purchases TTM -$6,902M (purchases $39,890M less proceeds $32,988M, portfolio/treasury activity)", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+optionality:
+  value: "mixed — materially weaker band than spacex. Musk holds ~13% Tesla equity (per Wikipedia infobox) with NO supervoting share class, so he lacks SpaceX-style structural lock; the board has been highly deferential (re-approved a $1T, 10-year pay package in Nov-2025 tied to an $8.5T market-cap milestone) but that deference is under live legal pressure — a Delaware court voided Musk's earlier $56B package in Dec-2024 for improper board process, and the same fact pattern (a friendly board, a Musk-picked comp committee) could resurface for the new package. Net: Musk runs Tesla day-to-day but, unlike SpaceX, outside holders/courts retain a real check."
+  sources:
+    - {figure: "Musk 13% equity stake (infobox); 'CEO and largest shareholder', no ownership/voting breakdown given beyond that", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2026-07", confidence: med}
+    - {figure: "Nov-2025: Tesla board approved a $1 trillion, 10-year pay package for Musk tied to milestones incl. $8.5T market cap", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-11", confidence: high}
+    - {figure: "Delaware court rejected Musk's prior $56B pay package in Dec-2024, ruling improper board approval — the precedent shadowing the new package", label: "Wikipedia — Elon Musk", url: "https://en.wikipedia.org/wiki/Elon_Musk", as_of: "2024-12", confidence: high}
+    - {figure: "buyback yield -0.58% TTM / -0.86% FY2025 — net DILUTION, not repurchase; no active buyback program found", label: "stockanalysis.com TSLA ratios", url: "https://stockanalysis.com/stocks/TSLA/financials/ratios/", as_of: "2026-06", confidence: high}
+gravity:
+  value: "GROSS outer bound = total revenue $103.6B/yr TTM (auto $72.6B + energy $12.8B + services $15.2B + credits $1.5B + leasing $1.6B). The FSD/robotaxi/energy-DEPENDENT slice specifically is LOW CONFIDENCE: Energy generation & storage ($12.8B/yr TTM) is the one hard, separately-disclosed number; FSD (subscription-only since Feb-2026, $99/mo) and Robotaxi (still ~135 vehicles, a handful of cities) have NO revenue breakout in any source found — their economic gravity today is directional/narrative, not measured. VA-deflation deferred per board policy."
+  sources:
+    - {figure: "Energy generation & storage revenue $12,799M TTM (~12% of total)", label: "stockanalysis.com TSLA financials", url: "https://stockanalysis.com/stocks/TSLA/financials/", as_of: "2026-06", confidence: high}
+    - {figure: "FSD: consumer purchase ended Feb-2026, subscription-only at $99/mo; historical take-rate declined 37%(2019)->22%(2020)->12%(2021); no revenue figure disclosed", label: "Wikipedia — Tesla Autopilot", url: "https://en.wikipedia.org/wiki/Tesla_Autopilot", as_of: "2026-02", confidence: med}
+    - {figure: "Robotaxi: ~135 vehicles total as of Dec-2025 (Austin/Dallas/Houston/Miami full commercial + SF Bay safety-driver); 7 more cities planned H1-2026; no revenue disclosed; still far behind Waymo's ride volume", label: "Wikipedia — Tesla Robotaxi", url: "https://en.wikipedia.org/wiki/Tesla_Robotaxi", as_of: "2026-07", confidence: med}
+thrust:
+  value: "~$6.4B/yr dep-only (capex $12.9B TTM minus combined D&A $6.5B TTM). No strategic stake/M&A confirmed to add on top this TTM — Tesla's ~$6.9B/yr net securities purchases are portfolio/treasury churn (marketable securities), excluded per the thrust recipe's own carve-out (not new-position formation); a Tesla-xAI tie-up is mentioned in press (Musk sourced early xAI funding partly 'from investors in SpaceX and Tesla', per Wikipedia) but NO disclosed Tesla-balance-sheet investment amount was found, so it is NOT counted here pending confirmation. Buybacks: effectively $0 — net dilution (buyback yield -0.58% TTM), no active repurchase program found."
+  basis: "Recipe: capex - depreciation (TTM) + stakes/M&A TTM, per thrust.md. Depreciation used un-split (filings report combined D&A, $6,477M TTM, not separately broken out) — same convention as the Intel/board-pilot examples. If a confirmed Tesla-xAI or other strategic stake surfaces, thrust should be revised upward."
+  sources:
+    - {figure: "capex TTM -$12,923M; combined D&A TTM $6,477M -> dep-only thrust ~$6.45B", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "FY2025 capex -$8,527M; combined D&A FY2025 $6,148M -> FY2025 dep-only thrust ~$2.38B (confirms the sharp TTM acceleration)", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "net investment purchases TTM -$6,902M (purchases $39,890M, proceeds $32,988M) — portfolio churn, excluded from thrust", label: "stockanalysis.com TSLA cash-flow statement", url: "https://stockanalysis.com/stocks/TSLA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "Musk obtained xAI funding in Jul-2023 partly 'from investors in SpaceX and Tesla' — ambiguous whether this is Tesla corporate capital or personal/investor money; no Tesla-balance-sheet stake amount disclosed", label: "Wikipedia — Elon Musk", url: "https://en.wikipedia.org/wiki/Elon_Musk", as_of: "2023-07", confidence: low}
+    - {figure: "buyback yield -0.58% TTM (net dilution); no active repurchase program found", label: "stockanalysis.com TSLA ratios", url: "https://stockanalysis.com/stocks/TSLA/financials/ratios/", as_of: "2026-06", confidence: high}
+notes: "First bundle for this node — no prior axes existed in board.yaml for tesla, unlike spacex which had a 2026-07-25 axes pass already. Biggest uncertainties: (1) FSD/robotaxi gravity is almost entirely narrative — no company-disclosed revenue line for either, so the 'dependent economy' figure Ben asked for is not independently measurable from public filings today, only the hard Energy number is; (2) the Tesla-xAI capital relationship is real (per Wikipedia) but the dollar amount and whether it's Tesla-corporate vs personal-Musk money is unconfirmed, so it's excluded from thrust rather than guessed; (3) depreciation is combined with amortization in every source checked (macrotrends.net returned 403, blocking a depreciation-only cross-check) — flagged for the W6 dep-only-recompute backlog item alongside Oracle/Qualcomm. WebSearch budget was exhausted mid-crawl this session; all figures came from WebFetch against stockanalysis.com + Wikipedia, no broader search was possible for corroboration."

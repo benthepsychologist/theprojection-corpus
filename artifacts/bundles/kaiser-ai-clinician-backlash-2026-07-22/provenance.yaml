@@ -1,0 +1,27 @@
+# Bundle — crawl finding kaiser-ai-clinician-backlash-2026-07-22
+artifact: artifacts/findings/kaiser-ai-clinician-backlash-2026-07-22.md
+crawled_at: "2026-07-22T21:30:00Z"
+method: >
+  WebSearch unavailable (session budget); GDELT fully rate-limited (~8
+  attempts, never succeeded — concurrent crawls contending). All sourcing
+  from directly-fetched primary/trade documents: NUHW site + complaint
+  PDF, SF Board of Supervisors agenda, KQED, DMHC survey PDF, BHB.
+items:
+  - {id: bhb-seed, url: "https://bhbusiness.com/2026/07/21/kaiser-permanente-continues-to-face-clinician-backlash-over-ais-use-in-behavioral-health-care/", ts: "2026-07-21"}
+  - {id: nuhw-complaint-pdf, url: "https://nuhw.org/wp-content/uploads/NUHW-KaiserNorCalE-VisitComplaint.7.20.2026.pdf", ts: "2026-07-20"}
+  - {id: sf-board-agenda, url: "https://media.api.sf.gov/documents/bag072126_agenda.pdf", ts: "2026-07-21"}
+  - {id: kqed-feature, url: "https://www.kqed.org/science/1999553", ts: "2025-12-11"}
+  - {id: dmhc-survey, url: "https://www.dmhc.ca.gov/desktopmodules/dmhc/medsurveys/surveys/055_nr_full%20service_022525.pdf", ts: "2025-02-25"}
+  - {id: nuhw-strike-recap, url: "https://home.nuhw.org/2026/03/23/mental-health-clinicians-hold-major-strike-with-support-from-kaiser-permanente-nurses-engineers/", ts: "2026-03-23"}
+  - {id: nuhw-strike-auth, url: "https://home.nuhw.org/2026/02/23/kaiser-mental-health-therapists-in-northern-california-and-central-valley-vote-to-authorize-strike/", ts: "2026-02-23"}
+  - {id: nuhw-strike-announce, url: "https://home.nuhw.org/2026/03/04/2400-kaiser-mental-health-therapists-to-strike-on-wednesday-march-18/", ts: "2026-03-04"}
+  - {id: nuhw-bargaining-0604, url: "https://home.nuhw.org/2026/06/05/ibhs-bargaining-update-june-4-2026/", ts: "2026-06-05"}
+  - {id: nuhw-bargaining-0430, url: "https://home.nuhw.org/2026/05/01/ibhs-bargaining-update-april-30-2026/", ts: "2026-05-01"}
+  - {id: nuhw-hearing-announce, url: "https://home.nuhw.org/2026/07/16/tuesday-sf-supervisors-to-hold-kaiser-mental-health-hearing-as-hmo-seeks-blank-check-on-a-i-implementation-and-replacing-therapists/", ts: "2026-07-16"}
+  - {id: nuhw-sb903, url: "https://home.nuhw.org/2026/06/25/mental-health-parity-fight-continues-in-hawaii-and-california-legislature/", ts: "2026-06-25"}
+  - {id: bhb-podcast, url: "https://behavioral-health-business.castos.com/episodes/inside-behavioral-healths-first-union-strike-over-ai", ts: "2026-04-13"}
+  - {id: dol-settlement, url: "https://www.dol.gov/newsroom/releases/ebsa/ebsa20260210", ts: "2026-02-10", note: 403 on fetch — cited via NUHW}
+notes: >-
+  Union-sourced facts (NUHW releases) are labeled as such in the finding
+  where Kaiser disputes the framing; Kaiser's public position captured
+  from BHB. NUHW is not a watchlist entity — flagged as a steering gap.

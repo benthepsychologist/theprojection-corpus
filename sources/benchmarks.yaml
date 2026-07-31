@@ -1,0 +1,34 @@
+# benchmarks.yaml — coverage-critic baselines, per lens (Ben, 2026-07-20).
+# The critic compares each finalized digest against what these led with:
+# "they led with → we missed" is the recall guarantee. Misses auto-grow
+# watchlist/threads (YAML-guardrail protected) and log to coverage-log.md.
+#
+# Access note: Money Stuff and FT Unhedged are partially paywalled — the
+# critic works from web search / public copies / issue summaries.
+
+critics:
+  ai:
+    daily:
+      - "The Rundown AI"        # therundown.ai
+      - "TLDR AI"               # tldr.tech/ai
+      - "The Neuron"            # theneurondaily.com
+      - "The AI Daily Brief"    # aidailybrief.ai
+    weekly_add:
+      - "Import AI"             # importai.substack.com
+      - "Last Week in AI"       # lastweekin.ai
+
+  mental-health:
+    daily:
+      - "Behavioral Health Business"   # bhbusiness.com — closest trade match
+      - "STAT Health Tech"             # statnews.com
+      - "Fierce Healthcare"            # flagged in a coverage-gap review
+      - "MobiHealthNews"               # flagged in a coverage-gap review
+
+  global-capital:   # renamed from `money` 2026-07-30 (full rename, DESIGN.md Part 2)
+    daily:
+      - "Money Stuff (Matt Levine)"    # financial structure; circular-financing genre
+      - "Axios Pro Rata"               # deals / VC / PE
+      - "FT Unhedged"                  # markets / macro
+      - "Bloomberg Technology"         # tech-capital news
+    weekly_add:
+      - "Odd Lots"                     # macro / market-plumbing, weekly-depth

@@ -1,0 +1,58 @@
+# Bundle — node posture + capital-flow: openai / OpenAI (2026-07-26)
+# Extends artifacts/bundles/openai-axes/ (capitalization/optionality/gravity)
+# with posture + the 5-way capital-flow decomposition for board.yaml frontier-lab.
+# Method: WebFetch primary sources (WebSearch exhausted). Private company —
+# figures are reported/leaked via Wikipedia's synthesis of Reuters/Bloomberg/
+# The Information; net-loss/revenue are company-guided. Anchored to the
+# openai-axes bundle; new capital-flow figures re-fetched 2026-07-26.
+node: openai
+name: "OpenAI"
+pocket: frontier-lab
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Filed for IPO (Jun 8 2026) on top of a ~$110-122B new round and ~$1.0-1.4T compute buildout — still burning, still raising."
+  sources:
+    - {figure: "OpenAI confirmed IPO filing with the SEC on Jun 8 2026; Altman: listing 'within the next year'", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-06", confidence: high}
+    - {figure: "~$110-122B committed Feb-Apr 2026 (Amazon $50B / SoftBank $30B / Nvidia $30B) at $730B->$852B", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-04", confidence: med}
+capital:
+  available:
+    value: "~$180B cumulative raised (of which the ~$110-122B Feb-2026 round is committed, not yet fully drawn); $852B valuation is the mark, not drawable cash"
+    sources:
+      - {figure: "$40B SoftBank-led round at $300B post-money", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-04", confidence: high}
+      - {figure: "Microsoft cumulative >$13B through 2023", label: "Wikipedia — OpenAI (attrib. Reuters)", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: high}
+      - {figure: "~$110-122B committed at $730B->$852B (Amazon/SoftBank/Nvidia)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-04", confidence: med}
+      - {figure: "$6.6B employee secondary at $500B (EXCLUDED — insider liquidity, not new capital)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-10", confidence: med}
+  operating:
+    value: "~$8-9B operating/net loss (2025); ~$14B loss estimated 2026; against ~$12B annualized revenue (2025)"
+    sources:
+      - {figure: "$8-9B projected operating loss 2025 (company projection)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+      - {figure: "revenue ~$12B annualized (reported Jul 2025)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-07", confidence: high}
+      - {figure: "~$14B 2026 loss estimate", label: "kestrel thread ai-circular-financing-risk", url: "attention/threads.yaml", as_of: "2026-07", confidence: low}
+  deployed:
+    value: "~$1.0-1.4T compute/infra commitments — Oracle $300B/5yr, Azure $250B, Stargate $500B/10GW, Nvidia up to $100B (unrealized), AMD 6GW MI450, CoreWeave $11.9B"
+    sources:
+      - {figure: "Oracle $300B compute over 5yr", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-09", confidence: med}
+      - {figure: "Azure $250B services agreement", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+      - {figure: "Stargate $500B/10GW; Bloomberg Aug-2025 'not started, no funds raised'", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-09", confidence: med}
+      - {figure: "Nvidia up to $100B — UNREALIZED as of Jan 2026, negotiations ongoing", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-01", confidence: low}
+      - {figure: "CoreWeave $11.9B over 5yr (Mar 2025)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-03", confidence: med}
+  in:
+    value: "funding rounds ($40B Apr-2025; ~$110-122B Feb-Apr 2026) + revenue ~$12B/yr annualized (2025)"
+    sources:
+      - {figure: "$40B SoftBank round + ~$110-122B 2026 round", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-04", confidence: high}
+      - {figure: "revenue ~$12B annualized", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-07", confidence: high}
+  out:
+    value: "~$8-9B net loss 2025 + phased compute drawdowns; planned spend ~$115B through 2029; cash-flow-positive projected 2029"
+    sources:
+      - {figure: "planned spend ~$115B through 2029; CF-positive projected 2029 (company guidance)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+      - {figure: "net loss $8-9B 2025", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+optionality:
+  value: "locked — ~85-90% pre-earmarked (~$1.0-1.4T compute obligations vs ~$180B raised) and burning; the board's canonical cash-rich, freedom-poor actor"
+  sources:
+    - {figure: "compute obligations ~$1.0-1.4T vs ~$180B raised; net -$9B 2025", label: "openai-axes bundle (Wikipedia OpenAI + Stargate LLC)", url: "artifacts/bundles/openai-axes/provenance.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "~$1.0-1.4T anchored-compute STOCK (~$175B/yr GROSS orbiting); VA-deflated ~$57B/yr (x0.5 x0.65, DEFERRED, low confidence)"
+  sources:
+    - {figure: "anchored compute commitments ~$1.0-1.4T; revenue ~$12-13B annualized 2025", label: "openai-axes bundle", url: "artifacts/bundles/openai-axes/provenance.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty: all figures private/leaked, not audited. The ~$1.4T aggregate double-counts Oracle-within-Stargate; and how much of the ~$110-122B committed round is actually drawable (vs contingent) is unknown. IPO filing could reset the disclosure picture."

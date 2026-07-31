@@ -1,0 +1,120 @@
+# Bundle — crawl finding broadcom-qualcomm-2026-07-28
+artifact: artifacts/findings/broadcom-qualcomm-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  Two sonnet subagents ran WebFetch sweeps in parallel, one per actor, per
+  the crawl skill's WebSearch-exhaustion pre-flight (session WebSearch
+  budget treated as already spent). Both fetched Google News RSS search
+  feeds (news.google.com/rss/search) plus direct outlet and company-primary
+  URLs (qualcomm.com newsroom, OpenAI newsroom, stockanalysis.com
+  financials). Direct full-text fetch was blocked (403/404, or unreachable
+  host) for reuters.com, bloomberg.com, cnbc.com, arstechnica.com,
+  theregister.com, macrumors.com, wsj.com, tomshardware.com, and qz.com
+  article URLs — those citations rest on RSS title/source/date metadata,
+  marked medium confidence, promoted toward high only where 3+ independent
+  outlets converged on the same dated fact. Company-primary sources and
+  stockanalysis.com resolved cleanly (high, or medium for the third-party
+  aggregator pending a primary 10-Q cross-check). No URL or figure was
+  fabricated; several items are explicitly marked thin, unconfirmed, or
+  "not found" rather than reconciled by guesswork. Builds on
+  artifacts/findings/arm-royalty-regime-2026-07-28.md (Qualcomm-Arm
+  litigation + Ventana/RISC-V background) rather than re-crawling it.
+queries:
+  google_news_rss:
+    - "Broadcom Google TPU 2026"
+    - "Broadcom Meta MTIA 2029"
+    - "Broadcom OpenAI Jalapeno chip"
+    - "Broadcom ByteDance AI chip"
+    - "Broadcom VMware backlash 2026"
+    - "Broadcom VMware lawsuit Tesco"
+    - "Broadcom Apple 2031 deal"
+    - "Broadcom capex depreciation 2026"
+    - "Broadcom Q3 fiscal 2026 earnings date"
+    - "Qualcomm Alphawave acquisition close"
+    - "Qualcomm Ventana integration"
+    - "Qualcomm Tenstorrent acquisition talks"
+    - "Qualcomm data center CPU roadmap"
+    - "Qualcomm Dragonfly data center"
+    - "Qualcomm Snapdragon 8 Elite Gen 6"
+    - "Qualcomm Snapdragon X2 PC"
+    - "Qualcomm Snapdragon Digital Chassis automotive"
+    - "Qualcomm Arm lawsuit 2026 update"
+    - "Qualcomm Arm FTC antitrust"
+    - "Qualcomm earnings July 2026"
+  direct_sources_attempted:
+    - "https://www.qualcomm.com/news/releases/2025/12/qualcomm-completes-acquisition-of-alphawave-semi (fetched, primary)"
+    - "https://www.qualcomm.com/news/releases/2026/06/qualcomm-unveils-comprehensive-data-center-roadmap-for-the-agent (fetched, primary)"
+    - "https://www.qualcomm.com/news/releases/2026/06/qualcomm-and-meta-announce-strategic-multi-generation-agreement- (fetched, primary)"
+    - "https://www.qualcomm.com/news/releases/2026/06/qualcomm-to-acquire-modular (fetched, primary)"
+    - "https://openai.com (Jalapeño unveiling, RSS-metadata confirmed; direct fetch 403'd)"
+    - "https://stockanalysis.com/stocks/AVGO/financials/cash-flow-statement/ (fetched, quarterly capex/D&A)"
+    - "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/ (fetched, quarterly capex/D&A)"
+    - "reuters.com, bloomberg.com, cnbc.com, arstechnica.com, theregister.com, macrumors.com, wsj.com, tomshardware.com, qz.com article URLs (403/404 on all attempted direct fetches this session)"
+items:
+  # --- BROADCOM: Google TPU ---
+  - {id: avgo-google-tpu-21b, figure: "Broadcom $21B Google TPU order reported", url: "https://news.google.com/rss/search?q=Broadcom+Google+TPU+2026", label: "analyticsindiamag.com RSS item", as_of: "2025-12-12", confidence: medium}
+  - {id: avgo-anthropic-tpu-multigw, figure: "Anthropic multi-gigawatt TPU deal with Google and Broadcom", url: "https://news.google.com/rss/search?q=Broadcom+Google+TPU+2026", label: "24/7 Wall St. / Data Center Knowledge / IT Pro, converging RSS items", as_of: "2026-04-07", confidence: medium}
+  # --- BROADCOM: Meta MTIA to 2029 ---
+  - {id: avgo-meta-mtia-2029, figure: "Meta extends custom-chip (MTIA) deal with Broadcom through 2029; Hock Tan leaves Meta board same week", url: "https://news.google.com/rss/search?q=Broadcom+Meta+MTIA+2029", label: "CNBC/Reuters/qz.com/TechSpot/Anadolu/The Fast Mode/Investing.com, 7+ converging RSS items", as_of: "2026-04-14", confidence: medium}
+  - {id: avgo-meta-mtia-35b, figure: "\"$35B\" extension value (single-source, thin)", url: "https://news.google.com/rss/search?q=Broadcom+Meta+MTIA+2029", label: "tech-insider.org", as_of: "2026-04-22", confidence: thin}
+  - {id: avgo-meta-mtia-1gw, figure: "\"1 gigawatt\" of committed custom chips", url: "https://news.google.com/rss/search?q=Broadcom+Meta+MTIA+2029", label: "CNBC RSS item", as_of: "2026-04-14", confidence: medium}
+  - {id: avgo-meta-iris-chip, figure: "Meta to start production of \"Iris\" AI chip Sept 2026 (Broadcom link not confirmed)", url: "https://news.google.com/rss/search?q=Broadcom+Meta+MTIA+2029", label: "Yahoo Finance RSS item", as_of: "2026-07-09", confidence: thin}
+  # --- BROADCOM: OpenAI Jalapeno ---
+  - {id: avgo-openai-jalapeno-unveil, figure: "OpenAI + Broadcom unveil \"Jalapeño\" LLM-inference chip", url: "https://openai.com", label: "OpenAI newsroom (primary, RSS-metadata confirmed) + Tom's Hardware/CNBC/VentureBeat/qz.com/The Verge/Forbes/The Tribune, 7+ converging items", as_of: "2026-06-24", confidence: medium}
+  - {id: avgo-openai-jalapeno-target, figure: "gigawatt-scale deployment targeted starting 2026", url: "https://news.google.com/rss/search?q=Broadcom+OpenAI+Jalapeno+chip", label: "The Tribune", as_of: "2026-06-24", confidence: medium}
+  - {id: avgo-openai-jalapeno-9mo, figure: "9-month design-to-unveil cycle claimed (unverified vs primary)", url: "https://news.google.com/rss/search?q=Broadcom+OpenAI+Jalapeno+chip", label: "The Futurum Group", as_of: "2026-06-26", confidence: medium}
+  # --- BROADCOM: ByteDance (not corroborated 2026) ---
+  - {id: avgo-bytedance-2024-scoop, figure: "ByteDance working with Broadcom on AI chip (background, pre-window)", url: "https://news.google.com/rss/search?q=Broadcom+ByteDance+AI+chip", label: "Reuters exclusive", as_of: "2024-06-24", confidence: high}
+  - {id: avgo-bytedance-2026-samsung, figure: "ByteDance in manufacturing talks with Samsung (no Broadcom mention)", url: "https://news.google.com/rss/search?q=Broadcom+ByteDance+AI+chip", label: "Reuters RSS item", as_of: "2026-02-10", confidence: medium}
+  # --- BROADCOM: VMware ---
+  - {id: avgo-vmware-tesco-suit, figure: "Tesco moves 40,000 server workloads off VMware, sues Broadcom, damages sought >£100M", url: "https://news.google.com/rss/search?q=Broadcom+VMware+lawsuit+Tesco", label: "Ars Technica/The Register/Crypto Briefing/TechRadar/Cyber Magazine/SDxCentral, 6+ converging items", as_of: "2026-06-17", confidence: medium}
+  - {id: avgo-vmware-negative-views, figure: "\"Negative\" views of Broadcom driving thousands of VMware migrations (rival claim)", url: "https://news.google.com/rss/search?q=Broadcom+VMware+backlash+2026", label: "Ars Technica", as_of: "2026-04-09", confidence: medium}
+  - {id: avgo-vmware-refugees-jul, figure: "\"VMware Refugees: Why Enterprises Are Fleeing Broadcom\" — continuing narrative", url: "https://news.google.com/rss/search?q=Broadcom+VMware+backlash+2026", label: "Mshale", as_of: "2026-07-23", confidence: medium}
+  # --- BROADCOM: Apple 2031 ---
+  - {id: avgo-apple-2031-deal, figure: "Broadcom-Apple custom-silicon supply deal extended through 2031, ~$30B", url: "https://news.google.com/rss/search?q=Broadcom+Apple+2031+deal", label: "Reuters/Bloomberg/MacRumors/The Register/Yahoo Finance/NBC News/The Globe and Mail/MSN, 8+ converging items", as_of: "2026-07-06", confidence: medium}
+  - {id: avgo-apple-15b-chips, figure: "\"15 billion chips\" production figure per Tim Cook (single-outlet)", url: "https://news.google.com/rss/search?q=Broadcom+Apple+2031+deal", label: "The Globe and Mail", as_of: "2026-07-11", confidence: medium}
+  # --- BROADCOM: financials ---
+  - {id: avgo-capex-depr-quarterly, figure: "Q3FY25 capex -$142M/D&A $2,202M; Q4FY25 -$237M/$2,233M; Q1FY26 -$250M/$2,153M; Q2FY26 -$231M/$2,165M; TTM capex -$860M vs TTM D&A $8,753M", url: "https://stockanalysis.com/stocks/AVGO/financials/cash-flow-statement/", label: "stockanalysis.com AVGO quarterly cash-flow statement", as_of: "2026-05", confidence: medium}
+  - {id: avgo-earnings-date-not-found, figure: "Broadcom Q3 FY2026 earnings date not found this session; Q2 FY26 reported 2026-06-03, Q4/FY25 reported 2025-12-11 (cadence reference only)", url: "https://investors.broadcom.com", label: "Broadcom newsroom primary (Q2/Q4 releases); Q3 date not located", as_of: "2026-06-03", confidence: high}
+  # --- QUALCOMM: Alphawave ---
+  - {id: qcom-alphawave-closed, figure: "Alphawave Semi acquisition completed, $2.4B / $2.48-per-share", url: "https://www.qualcomm.com/news/releases/2025/12/qualcomm-completes-acquisition-of-alphawave-semi", label: "Qualcomm newsroom (primary) + Business Wire/Investing.com/IT Pro", as_of: "2025-12-18", confidence: high}
+  - {id: qcom-alphawave-uk-court, figure: "England High Court sanctions the scheme of arrangement for the Alphawave deal", url: "https://news.google.com/rss/search?q=Qualcomm+Alphawave+acquisition+close", label: "Yahoo Finance RSS item", as_of: "2025-12-22", confidence: medium}
+  - {id: qcom-alphawave-no-holdup, figure: "No UK national-security or China SAMR regulatory-holdup narrative found — deal closed without reported obstacle", url: "https://news.google.com/rss/search?q=Qualcomm+Alphawave+CMA+national+security+regulatory+review", label: "targeted RSS query returned zero article items", as_of: "2025-12-22", confidence: medium}
+  # --- QUALCOMM: Ventana ---
+  - {id: qcom-ventana-wells-fargo, figure: "Wells Fargo raises Qualcomm price target to $150 citing Ventana + Alphawave AI acquisitions", url: "https://news.google.com/rss/search?q=Qualcomm+Ventana+integration", label: "TradingView/Seeking Alpha", as_of: "2026-02-24", confidence: medium}
+  - {id: qcom-ventana-veyron-gap, figure: "No 2026 reporting found on Veyron V2 shipments/roadmap; unclear relationship to June-2026 Dragonfly branding", url: "https://news.google.com/rss/search?q=Qualcomm+Ventana+integration", label: "gap — not found", as_of: "2026-07-28", confidence: thin}
+  # --- QUALCOMM: Tenstorrent ---
+  - {id: qcom-tenstorrent-talks, figure: "Qualcomm in talks to acquire Tenstorrent for up to $10B", url: "https://news.google.com/rss/search?q=Qualcomm+Tenstorrent+acquisition+talks", label: "Reuters + The Information + Yahoo Finance, converging", as_of: "2026-06-15", confidence: high}
+  - {id: qcom-tenstorrent-denial, figure: "Tenstorrent CEO denies Qualcomm acquisition talks", url: "https://news.google.com/rss/search?q=Qualcomm+Tenstorrent+acquisition+talks", label: "GuruFocus RSS item", as_of: "2026-06-29", confidence: medium}
+  - {id: qcom-tenstorrent-less-likely, figure: "\"Qualcomm's Tenstorrent Deal Looks Less Likely\" — no confirmed close, no July update found", url: "https://news.google.com/rss/search?q=Qualcomm+Tenstorrent+acquisition+talks", label: "TradingView", as_of: "2026-06-30", confidence: medium}
+  # --- QUALCOMM: Dragonfly / datacenter return ---
+  - {id: qcom-dragonfly-roadmap, figure: "Qualcomm unveils Dragonfly data center roadmap: Dragonfly C1000 CPU (250+ cores, up to 5GHz, deployment starting 2028), Dragonfly AI300 accelerator, HBC memory-bandwidth architecture", url: "https://www.qualcomm.com/news/releases/2026/06/qualcomm-unveils-comprehensive-data-center-roadmap-for-the-agent", label: "Qualcomm newsroom (primary) + StorageReview.com detail", as_of: "2026-06-24", confidence: high}
+  - {id: qcom-dragonfly-targets, figure: "$15B datacenter revenue by 2029; $40B total non-handset revenue by 2029 (roughly doubled prior guidance); stock popped 15%", url: "https://news.google.com/rss/search?q=Qualcomm+data+center+CPU+roadmap", label: "Reuters + CNBC + Benzinga, converging", as_of: "2026-06-24", confidence: high}
+  - {id: qcom-dragonfly-meta, figure: "Meta multi-generation CPU supply agreement with Qualcomm, deployment starting 2028", url: "https://www.qualcomm.com/news/releases/2026/06/qualcomm-and-meta-announce-strategic-multi-generation-agreement-", label: "Qualcomm newsroom (primary)", as_of: "2026-06-24", confidence: high}
+  - {id: qcom-dragonfly-msft, figure: "Microsoft early HBC-chip deployment", url: "https://news.google.com/rss/search?q=Qualcomm+Dragonfly+data+center", label: "Invezz", as_of: "2026-06-25", confidence: medium}
+  - {id: qcom-dragonfly-bytedance, figure: "ByteDance China-specific AI-chip production agreement, China-compliant export variants", url: "https://news.google.com/rss/search?q=Qualcomm+Dragonfly+data+center", label: "All-About-Industries + Tom's Hardware", as_of: "2026-06-24", confidence: medium}
+  - {id: qcom-modular-acquisition, figure: "Qualcomm to acquire Modular (AI-inference software) for $3.9B stock, framed as countering Nvidia CUDA moat", url: "https://www.qualcomm.com/news/releases/2026/06/qualcomm-to-acquire-modular", label: "Qualcomm newsroom (primary) + WSJ/Bloomberg/CNBC", as_of: "2026-06-24", confidence: high}
+  - {id: qcom-datacenter-reentry-framing, figure: "\"Qualcomm's Data Center Reentry\" — explicit re-entry framing post-Centriq (~2018)", url: "https://news.google.com/rss/search?q=Qualcomm+data+center+CPU+roadmap", label: "Futurum Group analyst commentary", as_of: "2026-06-29", confidence: medium}
+  # --- QUALCOMM: edge-AI / Snapdragon ---
+  - {id: qcom-snapdragon-8-gen6-leak, figure: "Snapdragon 8 Elite Gen 6 launch expected September 2026 (leak-tier)", url: "https://news.google.com/rss/search?q=Qualcomm+Snapdragon+8+Elite+Gen+6", label: "TelecomTalk", as_of: "2026-07-21", confidence: medium}
+  - {id: qcom-snapdragon-x2-launch, figure: "Snapdragon X2 Plus CPUs launched to compete with Intel", url: "https://news.google.com/rss/search?q=Qualcomm+Snapdragon+X2+PC", label: "The Register", as_of: "2026-01-05", confidence: high}
+  - {id: qcom-snapdragon-pc-share-gap, figure: "No 2026-dated PC market-share figure found; only stale 2024/2025 numbers", url: "https://news.google.com/rss/search?q=Qualcomm+Snapdragon+X2+PC", label: "gap — not found", as_of: "2026-07-28", confidence: thin}
+  - {id: qcom-auto-toyota, figure: "Snapdragon Digital Chassis powers new Toyota RAV4", url: "https://www.qualcomm.com", label: "Qualcomm newsroom (primary)", as_of: "2026-01-02", confidence: high}
+  - {id: qcom-auto-vw-loi, figure: "Volkswagen Group and Qualcomm sign letter of intent", url: "https://www.qualcomm.com", label: "Qualcomm/VW joint release (primary) + Automotive News", as_of: "2026-01-08", confidence: high}
+  - {id: qcom-auto-stellantis, figure: "Stellantis expands Digital Chassis partnership; stock +12% per TradingView", url: "https://www.qualcomm.com", label: "Stellantis/Qualcomm (primary) + TradingView", as_of: "2026-05-21", confidence: high}
+  # --- QUALCOMM: Arm relationship ---
+  - {id: qcom-arm-uk-withdrawal, figure: "Qualcomm withdrawing separate UK lawsuit over smartphone chip royalties", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+lawsuit+2026+update", label: "Yahoo Finance", as_of: "2026-02-17", confidence: medium}
+  - {id: qcom-arm-ftc-probe, figure: "Arm Holdings facing US FTC antitrust probe over chip tech", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+FTC+antitrust", label: "Reuters/Straits Times/Electronics Weekly/biggo.com, 4 converging items", as_of: "2026-05-15", confidence: medium}
+  - {id: qcom-arm-appeal-gap, figure: "No confirmation found of Arm formally filing/pursuing its Delaware appeal, or of reconciliation/new licensing terms", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+lawsuit+2026+update", label: "gap — not found (shared open question with arm-royalty-regime finding)", as_of: "2026-07-28", confidence: thin}
+  # --- QUALCOMM: financials ---
+  - {id: qcom-q2fy26-capex-depr, figure: "Q2 FY26 (period ended 2026-03-29) capex -$533M vs D&A $413M; TTM capex $1.78B, FCF $12.5B, cash+STI $9.8B — corroborates existing qualcomm-node bundle", url: "https://stockanalysis.com/stocks/QCOM/financials/cash-flow-statement/", label: "stockanalysis.com QCOM quarterly cash-flow statement", as_of: "2026-03-29", confidence: medium}
+  - {id: qcom-earnings-date-confirmed, figure: "Qualcomm fiscal Q3 FY2026 earnings confirmed 2026-07-29", url: "https://news.google.com/rss/search?q=Qualcomm+earnings+July+2026", label: "Stock Titan + AlphaStreet + Barchart + Yahoo Finance, 4 converging items", as_of: "2026-07-25", confidence: high}
+notes: >
+  Two clear brief-corrections this crawl surfaced: (1) the Tenstorrent
+  $8-10B deal did NOT close/corroborate as ongoing — talks were real but
+  publicly denied by month-end, superseded in the news cycle by the
+  smaller, different Modular acquisition; (2) Broadcom's Apple
+  relationship just extended to 2031 (~$30B) in the three weeks before
+  this crawl, a genuinely new fact not in the original brief. Both
+  actor-doing paragraphs and the merge-vs-new thread recommendation in the
+  crawl report are built on this bundle's items, not asserted independently.

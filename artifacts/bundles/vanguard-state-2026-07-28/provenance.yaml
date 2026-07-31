@@ -1,0 +1,65 @@
+# Bundle — crawl finding vanguard-state-2026-07-28
+# LIGHT crawl (~30-45 min) filling the missing actor-doing synthesis for
+# vanguard: AUM print, AI-infra/private-markets abstention check,
+# expense-ratio moves, proxy-voting/stewardship posture, CEO agenda.
+artifact: artifacts/findings/vanguard-state-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebFetch against Google News RSS search feeds (news.google.com/rss/search)
+  plus attempted direct fetches of corporate.vanguard.com (fast-facts and
+  press-release pages both 404'd, consistent with the prior vanguard-node
+  bundle's note about corporate.vanguard being unreliable to fetch). Google
+  News redirect links frequently resolve only to feed-item metadata
+  (outlet/title/date) rather than full article body — those citations are
+  marked medium confidence rather than high. No URL or figure fabricated;
+  explicit gaps (AI-governance proxy-vote specifics, $10.4T team-split
+  figure, exact passivity-pledge terms) are marked thin/not-found rather
+  than guessed.
+queries:
+  google_news_rss:
+    - "Vanguard AUM 2026 trillion"
+    - "Vanguard private markets Blackstone Wellington"
+    - "Vanguard expense ratio cut 2026"
+    - "Vanguard proxy voting AI governance 2026"
+    - "Vanguard CEO Salim Ramji 2026"
+    - "Vanguard Texas antitrust settlement coal passivity"
+    - "Vanguard crypto bitcoin ETF digital assets 2026"
+    - "Vanguard Nvidia OR Microsoft OR Meta shareholder vote AI 2026"
+    - "Vanguard $12 trillion OR $10 trillion assets"
+  direct_sources_attempted:
+    - "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are.html (404)"
+    - "https://corporate.vanguard.com/content/corporatesite/us/en/corp/press-releases.html (404)"
+items:
+  # --- AUM ---
+  - {id: aum-current, figure: "~$12T global AUM (2026)", url: "https://news.google.com/rss/search?q=Vanguard+AUM+2026+trillion&hl=en-US&gl=US&ceid=US:en", label: "Motley Fool / Yahoo Finance (via Google News RSS)", as_of: "2026-07-20", confidence: high}
+  - {id: aum-voo-1t, figure: "VOO (Vanguard S&P 500 ETF) crosses $1T — first ETF ever to do so", url: "https://news.google.com/rss/search?q=Vanguard+AUM+2026+trillion&hl=en-US&gl=US&ceid=US:en", label: "Morningstar / InvestmentNews (via Google News RSS)", as_of: "2026-06-04", confidence: high}
+  - {id: aum-intl-1t, figure: "Vanguard tops $1T in assets managed outside the US", url: "https://news.google.com/rss/search?q=Vanguard+AUM+2026+trillion&hl=en-US&gl=US&ceid=US:en", label: "Reuters, citing FT (via Google News RSS)", as_of: "2026-01-24", confidence: high}
+  # --- PRIVATE MARKETS / AI INFRA ABSTENTION ---
+  - {id: private-blackstone-funds-launch, figure: "Vanguard + Blackstone + Wellington launch two closed-end funds blending public/private market exposure for wealthy/retail investors", url: "https://news.google.com/rss/search?q=Vanguard+private+markets+Blackstone+Wellington&hl=en-US&gl=US&ceid=US:en", label: "WSJ / Reuters / Pensions & Investments (via Google News RSS)", as_of: "2026-07-22", confidence: high}
+  - {id: private-401k-next, figure: "Alliance eyeing retirement-specific (401k) products as next phase", url: "https://news.google.com/rss/search?q=Vanguard+private+markets+Blackstone+Wellington&hl=en-US&gl=US&ceid=US:en", label: "401k Specialist (via Google News RSS)", as_of: "2026-07-23", confidence: medium}
+  - {id: private-partnerships-not-acquisitions, figure: "Vanguard CEO: private-markets strategy 'rooted in partnerships, not acquisitions'", url: "https://news.google.com/rss/search?q=Vanguard+private+markets+Blackstone+Wellington&hl=en-US&gl=US&ceid=US:en", label: "Pensions & Investments (via Google News RSS)", as_of: "2025-06-26", confidence: medium}
+  - {id: private-nuveen-hire, figure: "Vanguard hires former Nuveen executive as head of private markets strategy", url: "https://news.google.com/rss/search?q=Vanguard+private+markets+Blackstone+Wellington&hl=en-US&gl=US&ceid=US:en", label: "trade press (via Google News RSS)", as_of: "2025-08", confidence: medium}
+  - {id: ai-infra-absence, figure: "No Vanguard-branded AI datacenter/chip/power deal found in this pass — abstention from direct AI-infrastructure capital appears intact", url: "https://news.google.com/rss/search?q=Vanguard+private+markets+Blackstone+Wellington&hl=en-US&gl=US&ceid=US:en", label: "absence of coverage across all queries run this session", as_of: "2026-07-28", confidence: medium}
+  # --- EXPENSE RATIOS ---
+  - {id: fees-feb-cut, figure: "Cut fees on 53 mutual funds/ETFs; avg expense ratio down to ~0.06%; ~$500-600M aggregate investor savings since 2025", url: "https://news.google.com/rss/search?q=Vanguard+expense+ratio+cut+2026&hl=en-US&gl=US&ceid=US:en", label: "PR Newswire (Vanguard release) / Morningstar / ETF.com / USA Today / Kiplinger (via Google News RSS)", as_of: "2026-02-02", confidence: high}
+  - {id: fees-ftse-allworld-cut, figure: "Cut fee on $77B FTSE All-World ETF by 25% — second cut to that fund within a year", url: "https://news.google.com/rss/search?q=Vanguard+expense+ratio+cut+2026&hl=en-US&gl=US&ceid=US:en", label: "ETF Stream / Investment Week / RankiaPro (via Google News RSS)", as_of: "2026-07-21", confidence: high}
+  # --- PROXY VOTING / STEWARDSHIP ---
+  - {id: stewardship-investor-choice, figure: "Investor Choice proxy-voting program expanded to $1.4T of S&P 500 fund assets", url: "https://news.google.com/rss/search?q=Vanguard+proxy+voting+AI+governance+2026&hl=en-US&gl=US&ceid=US:en", label: "Pensions & Investments (via Google News RSS)", as_of: "2025-10-21", confidence: medium}
+  - {id: stewardship-uk-pilot, figure: "Vanguard launches proxy-voting pilot for UK professional investors", url: "https://news.google.com/rss/search?q=Vanguard+proxy+voting+AI+governance+2026&hl=en-US&gl=US&ceid=US:en", label: "Citywire (via Google News RSS)", as_of: "2026-01-06", confidence: medium}
+  - {id: stewardship-betanxt, figure: "BetaNXT signed to support Vanguard Investor Choice program infrastructure", url: "https://news.google.com/rss/search?q=Vanguard+proxy+voting+AI+governance+2026&hl=en-US&gl=US&ceid=US:en", label: "PR Newswire (via Google News RSS)", as_of: "2026-04-29", confidence: medium}
+  - {id: stewardship-texas-settlement, figure: "Settled Republican-state-led (Texas et al.) antitrust suit alleging ESG-driven coal-supply collusion for $29.5M, with 'renewed passivity pledges'", url: "https://news.google.com/rss/search?q=Vanguard+Texas+antitrust+settlement+coal+passivity&hl=en-US&gl=US&ceid=US:en", label: "Reuters headline, corroborated by WSJ / ESG Dive / Investment Executive (via Google News RSS); exact pledge text not resolved past headline level", as_of: "2026-02-26", confidence: medium}
+  - {id: stewardship-ai-vote-gap, figure: "No specific record found of Vanguard's votes on AI-governance shareholder proposals at Microsoft/Google/Amazon/Meta/Nvidia in the 2026 proxy season", url: "https://news.google.com/rss/search?q=%22Vanguard%22+%22Nvidia%22+OR+%22Microsoft%22+OR+%22Meta%22+shareholder+vote+AI+2026&hl=en-US&gl=US&ceid=US:en", label: "absence of coverage — flagged as a genuine research gap, not a claim", as_of: "2026-07-28", confidence: thin}
+  # --- LEADERSHIP ---
+  - {id: leadership-hires, figure: "CEO Salim Ramji recruits senior hires from Goldman Sachs and BlackRock for key roles", url: "https://news.google.com/rss/search?q=Vanguard+CEO+Salim+Ramji+2026&hl=en-US&gl=US&ceid=US:en", label: "Bloomberg (via Google News RSS)", as_of: "2026-02-05", confidence: medium}
+  - {id: leadership-401k-hands-on, figure: "Ramji absorbs 401(k)/workplace-retirement chief duties, 'gets more hands-on'", url: "https://news.google.com/rss/search?q=Vanguard+CEO+Salim+Ramji+2026&hl=en-US&gl=US&ceid=US:en", label: "RIABiz (via Google News RSS)", as_of: "2026-06-16", confidence: medium}
+  - {id: leadership-team-split, figure: "Reported plan to split $10.4T across two distinct fund-management teams — single-source, not independently corroborated", url: "https://news.google.com/rss/search?q=Vanguard+CEO+Salim+Ramji+2026&hl=en-US&gl=US&ceid=US:en", label: "single trade-press source (via Google News RSS)", as_of: "2026", confidence: thin}
+  - {id: leadership-crypto-reversal, figure: "Drops long-standing crypto ban; opens bitcoin/ETH/XRP/SOL ETF trading to ~50M brokerage clients — described as '180 degree reversal'", url: "https://news.google.com/rss/search?q=Vanguard+crypto+bitcoin+ETF+digital+assets+2026&hl=en-US&gl=US&ceid=US:en", label: "multiple outlets (via Google News RSS)", as_of: "2025-12-02", confidence: high}
+  - {id: leadership-digital-assets-lead, figure: "Vanguard opens search for a dedicated 'digital assets leader'", url: "https://news.google.com/rss/search?q=Vanguard+crypto+bitcoin+ETF+digital+assets+2026&hl=en-US&gl=US&ceid=US:en", label: "trade press (via Google News RSS)", as_of: "2026-07-07", confidence: medium}
+notes: >
+  Existing vanguard-node bundle (artifacts/bundles/vanguard-node/) already
+  covers the full posture/capital/optionality/gravity axes for the board
+  entry — this bundle is a narrower point-in-time news crawl feeding the
+  actor-doing.yaml synthesis only, not a replacement for that node bundle.
+  corporate.vanguard.com continues to 404 on direct fetch (fast-facts and
+  press-releases pages both tried, both failed) — matches the prior
+  bundle's finding; all figures sourced via Google News RSS instead.

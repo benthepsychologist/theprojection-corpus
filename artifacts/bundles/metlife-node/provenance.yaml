@@ -1,0 +1,45 @@
+node: metlife
+name: "MetLife"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Executing the 'New Frontier' five-year growth plan (2024) — scaling MetLife Investment Management (MIM) third-party AUM and group benefits; a constrained general account with an offensive asset-management/fee growth agenda."
+  sources:
+    - {figure: "'New Frontier' 5-year strategy (2024); MIM asset-management growth focus (board framing)", label: "kestrel board.yaml + Wikipedia — MetLife (strategy corroboration weak this session)", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2024-12", confidence: low}
+capital:
+  available:
+    value: "~$22.7B cash & equivalents (Mar 2026) — RBC-constrained; deployable headroom is regulatory surplus, not free dry powder. The general account is liability-matched to policy obligations."
+    sources:
+      - {figure: "Cash & equivalents $22,687M (Mar 31 2026)", label: "stockanalysis.com — MET balance sheet (TTM Q1 2026)", url: "https://stockanalysis.com/stocks/MET/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$77.1B/yr total revenue (2025, premiums + fees + net investment income); net income ~$3.17B; operating income ~$4.66B."
+    sources:
+      - {figure: "Revenue US$77.08B; net income US$3.173B; operating income US$4.661B (2025)", label: "Wikipedia — MetLife (2025 financials, per 10-K)", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: high}
+  deployed:
+    value: "~$473.1B own general-account investment portfolio (the long-duration pile, Mar 2026); ~$741.7B total AUM via MIM (2025, incl. third-party). Total assets ~$743-745B."
+    sources:
+      - {figure: "Total investments $473,112M; total assets $743,211M (Mar 31 2026)", label: "stockanalysis.com — MET balance sheet", url: "https://stockanalysis.com/stocks/MET/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "AUM $741.7B; total assets $745.2B (2025)", label: "Wikipedia — MetLife (2025)", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: high}
+      - {figure: "Total assets $687.5B (2024 ranking basis)", label: "Wikipedia — List of largest insurance companies (2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+  in:
+    value: "Life/annuity + group-benefits premium inflows + MIM third-party management fees; ~$77B/yr total revenue. Group benefits gives a broad employer-channel inflow base."
+    sources:
+      - {figure: "Total revenue $77.08B (2025); organized into five segments incl. group benefits", label: "Wikipedia — MetLife", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: high}
+  out:
+    value: "Policy/annuity/group benefits & claims; investment allocation into the $473B general account; shareholder returns (MetLife runs sizable buybacks + dividends). Prior disposal: MetLife Auto & Home sold to Farmers (2021)."
+    sources:
+      - {figure: "Net income $3.173B supports dividends/buybacks; sold Auto & Home to Farmers (2021)", label: "Wikipedia — MetLife", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: med}
+thrust:
+  value: "~$22B/yr est, conf LOW — organic premium-flow proxy only (28% of $77.08B 2025 revenue, mirroring the china-life premium-into-bonds/equities ratio; not a filed reinvestment line). No major 2024-26 acquisition identified — the only recent portfolio move on record is the MetLife Auto & Home DISPOSAL to Farmers (2021, capital returned, excluded from thrust); MIM's third-party AUM growth under 'New Frontier' is fee business, not principal-book thrust."
+  sources:
+    - {figure: "Total revenue $77.08B (2025); 28% organic-proxy ratio applied by analogy to china-life's $40B/$139.6B (28.6%) — no MetLife-specific reinvestment-rate filing pulled this session", label: "Wikipedia — MetLife (2025 financials, per 10-K) + derived ratio, conf low", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: low}
+optionality:
+  value: "constrained — RBC caps the life balance sheet; the general account (~$473B) is liability-matched; MIM's third-party AUM is fiduciary. Free corporate cash (~$23B) is a small slice of commanded capital."
+  sources:
+    - {figure: "Own cash $22.7B vs $741.7B AUM (~3%)", label: "stockanalysis.com + Wikipedia (free-vs-commanded ratio)", url: "https://stockanalysis.com/stocks/MET/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+gravity:
+  value: "~$77B/yr GROSS revenue routed + broad group-benefits reach (employer-channel scale across the US) — thin vs the ~$742B AUM, but the group-benefits footprint gives real touchpoint gravity. gravity << capital."
+  sources:
+    - {figure: "Revenue $77.08B/yr vs $741.7B AUM; five business segments incl. group benefits", label: "Wikipedia — MetLife", url: "https://en.wikipedia.org/wiki/MetLife", as_of: "2025-12", confidence: high}
+notes: "Biggest uncertainty: the 'New Frontier' strategy label (posture basis) is board-sourced, not re-verified from a primary MetLife release this session (low confidence) — but the financial figures (AUM $741.7B, general account $473.1B) are firm. Figures USD. WEIGHT-BASIS FLAG (axes_num rollout, 2026-07-28): axes_num.weight uses own-balance-sheet total assets ~$743B (Mar 2026, stockanalysis) rather than the $741.7B MIM total-AUM figure — the two are numerically close because MIM's third-party (fiduciary) book appears smaller relative to the general account than Allianz/PIMCO or Prudential/PGIM's; still flagged as the same category question (fiduciary AUM vs own balance sheet) even though the dollar gap is small here."

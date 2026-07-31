@@ -1,0 +1,135 @@
+# Bundle — crawl finding canada-gov-pockets-2026-07-28
+artifact: artifacts/findings/canada-gov-pockets-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebSearch treated as exhausted (session-shared budget). Four sonnet
+  subagents ran WebFetch sweeps in parallel: (1) federal AI strategy +
+  Strategic Innovation Fund, (2) CIFAR/Vector/Mila/Amii institute funding,
+  (3) provincial pools (Ontario/Quebec/Alberta/BC) incl. health-system AI,
+  (4) CIHR + the 2025/2026 federal budget. Sources: Google News RSS
+  (news.google.com/rss/search) feed metadata (title/outlet/date; redirect
+  links mostly did not resolve to article bodies via WebFetch — JS shell),
+  canada.ca/ised-isde.canada.ca, budget.canada.ca, cifar.ca,
+  vectorinstitute.ai, mila.quebec, amii.ca, provincial gov sites, and
+  BetaKit (the most reliably direct-fetchable Canadian tech outlet this
+  session). cihr-irsc.gc.ca failed with a persistent TLS handshake error on
+  every attempt; GC InfoBase/Main Estimates rejected the fetcher outright —
+  no primary CIHR budget figure was obtainable. No URL or figure fabricated;
+  gaps explicitly marked (thin) or "not found" rather than guessed.
+queries:
+  google_news_rss:
+    - "Canada AI compute strategy 2026"
+    - "Canada sovereign AI supercomputer"
+    - "AI Compute Access Fund Canada"
+    - "Strategic Innovation Fund AI Canada"
+    - "CIFAR AI Chairs 2026"
+    - "Vector Institute funding 2026"
+    - "Mila AI Quebec funding 2026"
+    - "Amii Alberta AI funding 2026"
+    - "Ontario AI fund 2026 budget"
+    - "Ontario AI medical scribe hallucination auditor general"
+    - "Quebec AI health system pilot"
+    - "Alberta AI health innovation lab"
+    - "British Columbia AI strategy fund"
+    - "CIHR AI health research funding"
+    - "Canada federal budget 2025 AI infrastructure"
+    - "Canada federal budget 2025 mental health substance use"
+  direct_sources_attempted:
+    - "https://ised-isde.canada.ca/site/artificial-intelligence-strategy/en (fetched, succeeded, high)"
+    - "https://ised-isde.canada.ca/site/strategic-innovation-fund/en (fetched, succeeded, high)"
+    - "https://budget.canada.ca/2025/report-rapport/chap1-en.html (fetched, succeeded, high)"
+    - "https://budget.canada.ca/2025/report-rapport/chap3-en.html (fetched, succeeded, high)"
+    - "https://budget.canada.ca/2025/report-rapport/chap4-en.html (fetched, succeeded, high)"
+    - "https://cihr-irsc.gc.ca/... (TLS handshake failure, every attempt — no primary CIHR data obtained)"
+    - "GC InfoBase / Main Estimates (blocked fetcher outright)"
+    - "cifar.ca, cifar.ca/ai/canada-cifar-ai-chairs/ (fetched, succeeded)"
+    - "amii.ca/latest-from-amii (fetched, succeeded, high)"
+    - "mila.quebec/en/news (fetched, succeeded, high)"
+    - "vectorinstitute.ai/news (fetched, succeeded)"
+    - "en.wikipedia.org/wiki/Canadian_Institutes_of_Health_Research (fetched, secondary, thin — no primary CIHR budget figure found elsewhere)"
+
+items:
+  # --- FEDERAL AI STRATEGY / SOVEREIGN COMPUTE ---
+  - {id: fed-sovereign-compute-2b, figure: "$2B CAD Sovereign AI Compute Strategy: $1B public supercomputing ($200M existing facilities + $800M new sovereign supercomputer), $700M commercial AI data centres via SIF AI Compute Challenge, $300M AI Compute Access Fund", url: "https://betakit.com/federal-government-outlines-2-billion-in-ai-compute-spending-commitment/", label: "BetaKit", as_of: "2024-12-05", confidence: high}
+  - {id: fed-compute-access-disbursed, figure: "$66M of $300M AI Compute Access Fund disbursed to 44 SMB recipients; fund oversubscribed (Minister Evan Solomon); $234M still uncommitted", url: "https://betakit.com/feds-announce-66-million-for-44-businesses-through-ai-compute-access-fund/", label: "BetaKit", as_of: "2026-05-12", confidence: high}
+  - {id: fed-cohere-deal, figure: "up to $240M CAD federal backing toward Cohere's $725M compute buildout (with CoreWeave/Nvidia) — first investment under the Sovereign Compute Strategy", url: "https://betakit.com/cohere-secures-federal-backing-to-build-multibillion-dollar-canadian-ai-data-centre/", label: "BetaKit", as_of: "2024-12-06", confidence: high}
+  - {id: fed-uoft-compute, figure: "$42.5M committed for University of Toronto AI compute infrastructure expansion", url: "https://news.google.com/rss/search?q=Canada+AI+compute+strategy+2026", label: "BetaKit (via Google News RSS)", as_of: "2025-11-28", confidence: thin}
+  - {id: fed-ai-for-all-2026, figure: "Carney government launched new \"AI for All\" national strategy, promising over $2B more funding, targeting 250,000 jobs by 2031, new investment/startup fund taking equity stakes in AI firms — overlap with 2024 $2B unresolved", url: "https://news.google.com/rss/search?q=Canada+sovereign+AI+supercomputer", label: "CBC + Globe and Mail (via Google News RSS)", as_of: "2026-06-04", confidence: medium}
+  - {id: fed-caisi-unconfirmed, figure: "CAISI (Canadian AI Safety Institute) referenced in federal AI strategy material; no budget figure located", url: "https://ised-isde.canada.ca/site/artificial-intelligence-strategy/en", label: "ISED — direct fetch", as_of: "2026-07-28", confidence: thin}
+  # --- STRATEGIC INNOVATION FUND ---
+  - {id: sif-base-envelope, figure: "SIF launched 2017, initial $1.26B envelope over 5yr; cumulative claim (Mar-2025): 750+ SMBs supported, $1.7B+ investment drawn, 1,200+ jobs added", url: "https://betakit.com/canada-invests-36-6-million-in-strategic-innovation-fund-technology-networks/", label: "BetaKit", as_of: "2025-03-18", confidence: high}
+  - {id: sif-tech-networks, figure: "$36.6M across 5 SIF-backed technology networks (clean resources $10M, agri-food automation/AI $8M, food innovation $8.6M, natural products $5M, mining $5M) — only agri-food network explicitly AI-focused", url: "https://betakit.com/canada-invests-36-6-million-in-strategic-innovation-fund-technology-networks/", label: "BetaKit", as_of: "2025-03-18", confidence: high}
+  - {id: sif-srf-rebrand, figure: "ised-isde.canada.ca SIF page now describes a \"Strategic Response Fund (SRF)\" that builds on the former SIF, with AI Compute Challenge as one of three SRF priorities (alongside tariff response, general innovation); exact transition date and current SRF total not found", url: "https://ised-isde.canada.ca/site/strategic-innovation-fund/en", label: "ISED — direct fetch", as_of: "2026-07-28", confidence: thin}
+  # --- CIFAR / INSTITUTES ---
+  - {id: cifar-base-envelope, figure: "Pan-Canadian AI Strategy base envelope $441.6M (Budget 2021, 2021-22 to 2030-31); CIFAR's Talent & Research (AI Chairs) slice $208M of that; page last modified 2026-06-04, no further full-strategy renewal found", url: "https://ised-isde.canada.ca/site/artificial-intelligence-strategy/en", label: "ISED — direct fetch", as_of: "2026-07-28", confidence: high}
+  - {id: cifar-chairs-topup, figure: "$24M new federal investment in CIFAR AI Chairs program; BetaKit/PR Newswire say \"20 new appointees\", Amii's own site says it funds \"42 CIFAR AI Chair positions across Canada\" total (unresolved discrepancy)", url: "https://amii.ca/latest-from-amii", label: "BetaKit + PR Newswire Canada + Amii", as_of: "2026-05-21", confidence: medium}
+  - {id: cifar-ml-health-area, figure: "CIFAR AI Chairs program lists \"machine learning for health\" as one of several research areas — general, not a dedicated health envelope", url: "https://cifar.ca/ai/canada-cifar-ai-chairs/", label: "CIFAR — direct fetch", as_of: "2026-07-28", confidence: medium}
+  - {id: vector-bmo-partnership, figure: "BMO renewed a five-year partnership with Vector Institute; dollar amount not confirmed (source pages unreachable)", url: "https://news.google.com/rss/search?q=Vector+Institute+funding+2026", label: "BMO press release (via Google News RSS)", as_of: "2026-05-28", confidence: thin}
+  - {id: vector-scholarships, figure: "100 scholarships awarded to Ontario graduate students via Vector Institute", url: "https://news.google.com/rss/search?q=Vector+Institute+funding+2026", label: "GlobeNewswire (via Google News RSS)", as_of: "2026-05-12", confidence: medium}
+  - {id: vector-no-health, figure: "No 2025-2026 health/clinical-AI-directed funding or program found for Vector Institute in this crawl — notable gap vs. Amii/Mila", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  - {id: mila-quebec-36m, figure: "Quebec government committed $36M CAD to sustain Mila's AI research, part of Quebec's five-year innovation strategy", url: "https://betakit.com/", label: "BetaKit", as_of: "2026-02-27", confidence: high}
+  - {id: mila-ottawa-unconfirmed, figure: "Globe and Mail reported \"Ottawa plans major investment\" in Mila; dollar figure unconfirmed, article paywalled", url: "https://news.google.com/rss/search?q=Mila+AI+Quebec+funding+2026", label: "Globe and Mail (via Google News RSS)", as_of: "2026-02-19", confidence: thin}
+  - {id: mila-own-100m-fund, figure: "Mila raising its own $100M fund for AI startups — a venture vehicle, distinct from core research operating money", url: "https://news.google.com/rss/search?q=Mila+AI+Quebec+funding+2026", label: "Globe and Mail (via Google News RSS)", as_of: "2026-01-21", confidence: medium}
+  - {id: mila-roost-suicide-pilot, figure: "Mila + ROOST suicide-prevention guardrail pilot for AI chatbots — mental-health-adjacent research activity; no funding amount disclosed", url: "https://mila.quebec/en/news", label: "Mila — direct fetch", as_of: "2026-07-08", confidence: medium}
+  - {id: amii-alberta-50m, figure: "Alberta government committed $50M CAD over 5yr to Amii, spread across five provincial ministries, to expand impact/accelerate economic and societal benefits of AI", url: "https://amii.ca/latest-from-amii", label: "Digital Journal + BetaKit + Amii", as_of: "2026-07-09", confidence: high}
+  - {id: amii-health-lab-10m, figure: "Alberta + Amii Health Innovation Lab, ~$10M, explicitly building AI-enabled healthcare solutions integrated into the provincial health system — strongest health-AI government signal found in this crawl", url: "https://amii.ca/latest-from-amii", label: "Calgary.Tech + BetaKit + Amii — direct fetch", as_of: "2026-05-20", confidence: high}
+  - {id: amii-anthropic-credits, figure: "Anthropic committed $1M in API credits to Amii to accelerate Canada's AI adoption (note: conflicts with a separately reported $10M Anthropic-to-Canada figure attributed near Mila — likely a slice of a larger multi-institute commitment, unconfirmed)", url: "https://amii.ca/latest-from-amii", label: "Amii — direct fetch", as_of: "2026-07-14", confidence: thin}
+  # --- ONTARIO ---
+  - {id: on-protect-ontario-4b, figure: "$4 billion \"Protect Ontario\" investment fund announced in the 2026 Ontario budget for AI and other high-growth sectors; province searching for external private-sector manager", url: "https://thelogic.co", label: "The Logic + Bloomberg", as_of: "2026-03-27", confidence: high}
+  - {id: on-ai-scribe-hallucinate, figure: "Ontario auditor general found most Ontario-approved AI medical scribes/note-taking tools used in doctor visits hallucinated, generating factual errors during testing", url: "https://www.cbc.ca", label: "CBC + The Trillium", as_of: "2026-05-13", confidence: high}
+  - {id: on-oracle-ehr-wait, figure: "Oracle cloud + AI note-taking reportedly cut EHR wait times 71% in Ontario hospitals — vendor-reported, no dollar figure disclosed", url: "https://news.google.com/rss/search?q=Ontario+AI+fund+2026+budget", label: "Stock Titan (via Google News RSS)", as_of: "2026-02-09", confidence: thin}
+  - {id: on-sanofi-context, figure: "Sanofi's $294M AI Center of Excellence expansion in Toronto, publicly welcomed by Premier Ford — private funding, not provincial, cited for context only", url: "https://news.google.com/rss/search?q=Ontario+AI+fund+2026+budget", label: "Yahoo Finance Canada (via Google News RSS)", as_of: "2026-05-04", confidence: medium}
+  # --- QUEBEC ---
+  - {id: qc-sante-quebec-pilot, figure: "Santé Québec (provincial health authority) plans a 2026 AI pilot project focused on clinical documentation (\"notes médicales\") — no dollar figure or mental-health angle found", url: "https://www.lapresse.ca", label: "La Presse", as_of: "2025-08-11", confidence: thin}
+  - {id: qc-mgh-handhygiene, figure: "Montreal General Hospital AI hand-hygiene alert system — live in-hospital deployment, no funding figure, no mental-health angle", url: "https://www.lapresse.ca", label: "La Presse", as_of: "2026-04-29", confidence: thin}
+  - {id: qc-no-dedicated-fund, figure: "No dedicated province-wide Quebec AI strategy fund distinct from the Mila $36M commitment found", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  # --- ALBERTA ---
+  - {id: ab-tech-strategy-noamount, figure: "Alberta \"updated tech strategy\" + new equity-investment authority to back Alberta tech companies announced; no dollar figure disclosed", url: "https://news.google.com/rss/search?q=Alberta+AI+health+innovation+lab", label: "Digital Journal (via Google News RSS)", as_of: "2026-04-22", confidence: thin}
+  - {id: ab-datacenter-levy, figure: "Alberta regulatory levy framework on large-scale AI data centres — a cost imposed on operators, not capital deployed by the province", url: "https://calgaryherald.com", label: "Calgary Herald", as_of: "2025-08-28", confidence: medium}
+  - {id: ab-cancer-800m, figure: "$800M CAD Alberta investment in cancer care with Siemens Healthineers + Alberta Cancer Foundation, explicitly including AI-enabled diagnostics — cancer-specific, pre-dates 2026 window, not mental health", url: "https://www.siemens-healthineers.com", label: "Siemens Healthineers", as_of: "2025-03-21", confidence: high}
+  - {id: ab-scribe-pilot-ed, figure: "AI-scribe pilot in Alberta Health Services emergency departments (University of Alberta-led), expanded to three EDs — no funding figure, no mental-health angle", url: "https://www.ualberta.ca", label: "University of Alberta", as_of: "2026-03-02", confidence: medium}
+  # --- BRITISH COLUMBIA ---
+  - {id: bc-minister-of-state, figure: "BC appointed Rick Glumac as Minister of State for AI and New Technologies — a governance/policy role, not a funding vehicle", url: "https://betakit.com", label: "BetaKit", as_of: "2025-07-18", confidence: high}
+  - {id: bc-inbc-sfu-20m, figure: "InBC/SFU $20M strategic investment fund — general tech innovation, not AI-specific", url: "https://news.gov.bc.ca", label: "BC Gov News", as_of: "2026-05-12", confidence: medium}
+  - {id: bc-uvic-fund, figure: "UVic clean-tech/quantum fund, $1.9M — not AI-dedicated", url: "https://news.google.com/rss/search?q=British+Columbia+AI+strategy+fund", label: "BC Gov News (via Google News RSS)", as_of: "2026-02-19", confidence: thin}
+  - {id: bc-nothing-in-health, figure: "Nothing findable inside BC's public health system — no hospital, health-authority, or mental-health AI procurement/funding item surfaced despite targeted searches; BC explicitly weakest province on both dedicated AI fund and in-health-system AI", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  # --- CIHR ---
+  - {id: cihr-budget-thin, figure: "CIHR overall annual budget ~$1.3B CAD (FY2023-24 expenses figure) — thin, sourced to Wikipedia infobox not a primary CIHR/Treasury Board document; cihr-irsc.gc.ca TLS handshake failed on every fetch attempt this session, GC InfoBase/Main Estimates blocked the fetcher", url: "https://en.wikipedia.org/wiki/Canadian_Institutes_of_Health_Research", label: "Wikipedia (secondary; primary source unreachable)", as_of: "2026-07-28", confidence: thin}
+  - {id: cihr-no-ai-health-stream, figure: "No dedicated current (2025-2026) CIHR AI-in-health-research funding stream, competition, or initiative found; the one AI-competition item found (McGill) was from 2020 and excluded as stale", url: "https://www.newswire.ca/news/canadian-institutes-of-health-research/", label: "Newswire CIHR release archive — crawl gap", as_of: "2026-07-28", confidence: thin}
+  - {id: cihr-no-mh-ai, figure: "No dedicated mental-health/digital-MH-specific CIHR AI program found; only individual investigator grants surfaced (CHEO eating-disorder program grant Feb-2026; Sunnybrook ~$7M general CIHR award Aug-2025), none AI-specific", url: "https://www.newswire.ca/news/canadian-institutes-of-health-research/", label: "Newswire (via Google News RSS) — crawl gap", as_of: "2026-07-28", confidence: thin}
+  - {id: cihr-tricouncil-cut-softened, figure: "Budget 2025 softened the tri-council (CIHR/NSERC/SSHRC) savings target from 15% to 2% — an $83M/yr reduction in planned cuts vs. Budget 2024, i.e. an overall increase; ordinary council operations, not a new AI or MH line", url: "n/a", label: "Evidence for Democracy analysis (secondary, not primary budget text)", as_of: "2025-11", confidence: thin}
+  # --- 2025 FEDERAL BUDGET ---
+  - {id: budget2025-ai-infra-925m, figure: "$925.6M CAD over 5yr (starting 2025-26) for sovereign public AI infrastructure — $800M of it reallocated from existing fiscal-framework funds, not fully new money; AI-infrastructure only, no health angle", url: "https://budget.canada.ca/2025/report-rapport/chap1-en.html", label: "Government of Canada — Budget 2025, Chapter 1 — direct fetch, primary", as_of: "2025-11-04", confidence: high}
+  - {id: budget2025-statcan-measurement, figure: "$25M over 6yr + $4.5M ongoing for an AI & Technology Measurement Program (StatCan); not health-related", url: "https://budget.canada.ca/2025/report-rapport/chap1-en.html", label: "Government of Canada — Budget 2025, Chapter 1 — direct fetch, primary", as_of: "2025-11-04", confidence: high}
+  - {id: budget2025-dualuse-657m, figure: "$656.9M over 5yr (ISED) for dual-use technology commercialization spanning AI/aerospace/biodefence/life sciences — defence-adjacent, not health/MH-specific", url: "https://budget.canada.ca/2025/report-rapport/chap4-en.html", label: "Government of Canada — Budget 2025, Chapter 4 — direct fetch, primary", as_of: "2025-11-04", confidence: high}
+  - {id: budget2025-quantum-2_3b, figure: "$2.3B over 5yr for quantum/advanced-tech R&D (quantum, space, aerospace) + separate $334.3M quantum-anchoring line — no health tie", url: "https://budget.canada.ca/2025/report-rapport/chap4-en.html", label: "Government of Canada — Budget 2025, Chapter 4 — direct fetch, primary", as_of: "2025-11-04", confidence: high}
+  - {id: budget2025-no-new-mh-money, figure: "Multiple outlets reported Budget 2025 provided NO new funding for mental-health or substance-use programs, focusing instead on \"streamlining\" existing programs per the health minister", url: "https://news.google.com/rss/search?q=Canada+federal+budget+2025+mental+health+substance+use", label: "The Hill Times (via Google News RSS; headlines confirmed, full bodies not retrievable)", as_of: "2025-11-04", confidence: medium}
+  - {id: budget2025-hilltimes-followup, figure: "Follow-up coverage: health minister says feds are \"streamlining\" programs rather than adding new mental-health/substance-use money", url: "https://news.google.com/rss/search?q=Canada+federal+budget+2025+mental+health+substance+use", label: "The Hill Times (via Google News RSS)", as_of: "2025-11-10", confidence: medium}
+  - {id: budget2025-bilateral-lapse-2027, figure: "Advocates flag bilateral federal-provincial mental-health/substance-use funding agreements lapsing in 2027 with no budget replacement signaled", url: "https://news.google.com/rss/search?q=Canada+federal+budget+2025+mental+health+substance+use", label: "The Hill Times (via Google News RSS)", as_of: "2025-11-17", confidence: medium}
+  - {id: budget2025-ai-supercomputer-applications, figure: "\"Canada opens applications to build a public AI supercomputer\" — the $925.6M sovereign-compute budget line moving into 2026 implementation", url: "https://news.google.com/rss/search?q=Canada+federal+budget+2025+AI+infrastructure", label: "BetaKit (via Google News RSS)", as_of: "2026-04-16", confidence: medium}
+  - {id: budget2025-telus-sovereign-infra, figure: "\"Feds and TELUS advance work to build sovereign AI infrastructure\" — further post-budget implementation signal", url: "https://news.google.com/rss/search?q=Canada+federal+budget+2025+AI+infrastructure", label: "ReNew Canada (via Google News RSS)", as_of: "2026-05-13", confidence: medium}
+
+notes: >-
+  Confidence key matches prior bundle convention (e.g.
+  tsmc-capacity-race-2026-07-28): high = primary source fetched directly
+  (canada.ca/budget.canada.ca/ised-isde.canada.ca, amii.ca, mila.quebec —
+  all direct-fetch succeeded) or 3+ independent outlets converge.
+  medium = single outlet or small convergent cluster via RSS feed metadata
+  (title/source/date confirmed real via the feed, article body not
+  independently re-fetched). thin = single outlet, unclear methodology,
+  unconfirmed dollar figure, a genuinely-searched-for-and-not-found gap, or
+  a discrepancy between sources left unresolved. No URL or figure in this
+  bundle was fabricated.
+
+  Explicit unresolved gaps carried into the finding's "dated expectations":
+  (1) whether the Jun-2026 "AI for All" ~$2B is incremental to or restates
+  the Dec-2024 $2B Sovereign Compute Strategy; (2) SIF's rebrand into a
+  "Strategic Response Fund" — no confirmed transition date or current total
+  envelope; (3) CIFAR AI Chairs 2026 top-up scope ("20 new appointees" vs.
+  "42 positions across Canada" per Amii) unresolved; (4) no primary CIHR
+  budget or AI-program figure obtainable this session (site TLS failure +
+  GC InfoBase blocked) — the ~$1.3B figure is Wikipedia-sourced only;
+  (5) Anthropic's Canada commitment reported inconsistently ($1M in API
+  credits to Amii vs. $10M broadly attributed near Mila) — likely the same
+  underlying multi-institute commitment seen from two angles, not
+  independently reconciled.

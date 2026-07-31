@@ -1,0 +1,56 @@
+# Bundle — node posture + capital-flow: larry-ellison (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted); anchored to board.yaml deployable estimate. Key
+# nuance: Ellison's PERSONAL stake-control (42.9%, pledge capacity) reads
+# freer than Oracle's own ORG-level balance sheet, which board.yaml already
+# flags as constrained/locked (negative FCF, high leverage) — the two axes
+# diverge for this node.
+node: larry-ellison
+name: "Larry Ellison"
+kind: person
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Directs Oracle's AI-capex buildout (Stargate) despite the company's own negative free cash flow and high leverage, while personally deploying capital outside Oracle — his family trust funded Paramount Global's Aug-2025 merger with Skydance Media (led by son David Ellison) and is now the merged entity's largest shareholder."
+  sources:
+    - {figure: "In Aug-2025, Ellison's family trust provided funding for Paramount Global's merger with Skydance Media; the trust is now the largest shareholder of the merged entity", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2025-08", confidence: med}
+    - {figure: "oracle optionality: constrained/locked — negative FCF, high leverage, cash pre-committed to the buildout", label: "kestrel board.yaml oracle optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$160B — kestrel board.yaml deployable anchor (42.9% Oracle founder-control + pledge capacity, directs Oracle AI capex); against a reported net worth of $201-203B (Forbes, early 2026). Deployable sits below headline NW because much of Ellison's wealth is concentrated, leveraged Oracle equity (Oracle itself carries $156B debt, D/E ~3.6x) rather than freely pledgeable liquid capital."
+    sources:
+      - {figure: "net worth US$201-203 billion (Forbes, early 2026); briefly US$393 billion on Sep-10-2025 (world's wealthiest for a day) on an Oracle share spike", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2026", confidence: med}
+      - {figure: "deployable ~$160B — 42.9% Oracle founder-control + pledge capacity, directs Oracle AI capex", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  operating:
+    value: "Oracle corporate capital he directs as co-founder, CTO, and Executive Chairman (stepped down as CEO in 2014) — ~$64B commandable/12mo ($31.9B cash+STI May-2026 + ~$32B/yr operating cash flow, but FCF -$23.7B and debt $156B, D/E~3.6x); market cap ~$331B is a separate label."
+    sources:
+      - {figure: "~$64B commandable/12mo ($31.9B cash+STI May-2026 + ~$32B/yr op cash flow, but FCF -$23.7B, debt $156B D/E~3.6x); market cap ~$331B", label: "kestrel board.yaml oracle capitalization axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+      - {figure: "co-founder; stepped down as CEO Sep-18-2014 (Hurd/Catz named co-CEOs); serves as CTO and Executive Chairman", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2014-09", confidence: high}
+  deployed:
+    value: "Oracle-side: AI capex funded despite negative FCF (Stargate buildout, see board.yaml). Personal-side: family-trust funding of the Paramount-Skydance merger (Aug-2025) — no dollar figure found for the personal contribution itself, confirmed gap, confidence low."
+    sources:
+      - {figure: "family trust funded the Paramount-Skydance merger, Aug-2025 (amount not disclosed on the fetched page)", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2025-08", confidence: low}
+  in:
+    value: "Oracle stock appreciation — net worth peaked briefly at $393B (Sep-10-2025, world's wealthiest for a day) on an Oracle share spike, since settled to $201-203B (early 2026); no separate personal cash-compensation figure found."
+    sources:
+      - {figure: "net worth briefly US$393 billion on Sep-10-2025 following an Oracle stock price increase", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2025-09", confidence: high}
+  out:
+    value: "Giving Pledge (signed Aug-2010); ~$500M pledged to cancer research; $130M (2021-2023) plus a further $218M pledged to the Tony Blair Institute for Global Change; family-trust funding of the Paramount-Skydance merger (Aug-2025, amount unconfirmed)."
+    sources:
+      - {figure: "signed the Giving Pledge, Aug-2010 (majority of wealth to charitable causes)", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2010-08", confidence: high}
+      - {figure: "~$500 million pledged to cancer research; $130 million (2021-2023) plus a further $218 million pledged to the Tony Blair Institute for Global Change", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2023", confidence: med}
+
+optionality:
+  value: "mixed — Ellison's PERSONAL stake-control (42.9% of Oracle, as of late 2022) plus pledge/borrow capacity reads free-ish, but Oracle's own balance sheet is constrained/locked (negative FCF, $156B debt, D/E~3.6x per board.yaml), which caps how much of his stake value is actually liquid or deployable without pressuring the company. His personal moves outside Oracle (the Paramount-Skydance family-trust funding) show he still deploys capital independent of Oracle's constraints."
+  sources:
+    - {figure: "42.9% of Oracle Corporation shares (as of late 2022)", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2022", confidence: med}
+    - {figure: "oracle optionality: constrained/locked — negative FCF, high leverage, cash pre-committed to the buildout; Ellison ~40%+ founder control", label: "kestrel board.yaml oracle optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+gravity:
+  value: "~$67.4B/yr GROSS FY26 Oracle revenue (Cloud $34B) plus a reported ~$450B+ RPO backlog post-Stargate (board.yaml, confidence LOW/unverified) — plus, personally, the Paramount-Skydance media combination now anchored by his family trust as a second, smaller orbit outside Oracle."
+  sources:
+    - {figure: "~$67.4B/yr GROSS FY26 revenue (Cloud $34B) + reported ~$450B+ RPO backlog post-Stargate (conf LOW, unverified)", label: "kestrel board.yaml oracle gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+    - {figure: "family trust now the largest shareholder of the merged Paramount-Skydance entity", label: "Wikipedia — Larry Ellison", url: "https://en.wikipedia.org/wiki/Larry_Ellison", as_of: "2025-08", confidence: med}
+
+notes: "Oracle stake (42.9%) is dated to 'late 2022' on the fetched Wikipedia page — may have diluted or shifted since; treat as med confidence, not cross-checked against a recent proxy filing. Net worth swung from a one-day peak of $393B (Sep-2025) to $201-203B (early 2026) — Oracle-share-price-driven volatility is unusually large for this node, flagged as an outlier risk. No dollar figure was found for the personal Paramount-Skydance funding — confirmed as a real capital-flow event but the size is a gap (confidence low). The key structural nuance: Oracle's ORG-level optionality is constrained/locked (leverage), while Ellison's PERSONAL stake-control reads closer to free/mixed — the two axes genuinely diverge for this node."

@@ -1,0 +1,32 @@
+# Bundle — axis estimates: microsoft (2026-07-25)
+# The cited-source appendix for board.yaml microsoft {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted this session).
+  Microsoft FY26 Q3 + FY25 Q4 press releases (primary balance sheet /
+  cash flow), cross-checked against stockanalysis TTM. Gravity = the
+  famous "~$4T economy" reconstructed (TTM revenue × IDC partner
+  multiplier), then deflated to value-added-dependent per board rule.
+
+capitalization:
+  value: "~$78B cash+STI; ~$250B+ commandable/12mo"
+  sources:
+    - {figure: "cash + short-term investments $78,272M", label: "Microsoft FY26 Q3 press release — balance sheet (ended Mar 31 2026)", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+    - {figure: "operating cash flow $127,494M (9mo, ~$170B TTM); total debt $40,262M; equity $414,367M", label: "Microsoft FY26 Q3 press release — cash-flow + balance sheet", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+    - {figure: "cash+STI $94,565M at FY25 year-end (fell to $78B as capex ramped)", label: "Microsoft FY25 Q4 press release", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast", as_of: "2025-06", confidence: high}
+    - {figure: "AAA/Aaa credit rating (large discretionary debt-raise capacity)", label: "General knowledge — NOT fetched this session; VERIFY vs S&P/Moody's before relying", url: "", as_of: "2026-07", confidence: low}
+optionality:
+  value: "mixed — legally free, majority self-earmarked to AI capex"
+  sources:
+    - {figure: "capex (additions to P&E) $80,146M 9-mo FY26 (~$107B annualized)", label: "Microsoft FY26 Q3 press release — cash-flow statement", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+    - {figure: "capex $64,551M full FY25 (the earmark is rising)", label: "Microsoft FY25 Q4 press release", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2025-q4/press-release-webcast", as_of: "2025-06", confidence: high}
+    - {figure: "$725B combined 2026 hyperscaler capex (earmarking-pressure context)", label: "kestrel thread hyperscaler-capex-big-picture", url: "attention/threads.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "gross ~$3.0T reconstructed -> ~$0.9T value-added-dependent (× 0.5 × 0.6); range $0.6-1.3T"
+  sources:
+    - {figure: "$8.45 (services) / $10.93 (software) partner revenue per $1 of Microsoft revenue", label: "IDC #US52483124 'Microsoft Partners: Driving Economic Value and AI Maturity', Sept 2024 — SPONSORED BY MICROSOFT (vendor-commissioned, upper bound)", url: "https://partner.microsoft.com/en-us/blog/article/ai-value-for-partners", as_of: "2024-09", confidence: high}
+    - {figure: "same $8.45/$10.93 multipliers, 600+ partners (independent coverage)", label: "Technology Record — coverage of the IDC/Microsoft study", url: "https://www.technologyrecord.com/article/generative-ai-forecasted-to-grow-86-per-cent-by-2027-according-to-new-idc-study", as_of: "2024-09", confidence: high}
+    - {figure: "TTM revenue $318,273M (9-mo FY26 $241,832M + FY25 Q4 $76,441M) — base for the reconstruction", label: "Microsoft FY26 Q3 + FY25 Q4 press releases (cross-checked vs stockanalysis)", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+    - {figure: "gross total $3-4T is RECONSTRUCTED (revenue × multiplier; IDC/Microsoft state no aggregate $). VA-share 0.5 + dependency-share 0.6 are analytical, not sourced", label: "Derivation note — deflators flagged low confidence", url: "", as_of: "2026-07", confidence: low}
+uncertainty: "Gravity gross is a vendor-commissioned reconstruction; both deflators are judgment, so ~$0.9T could range $0.6-1.3T. Capitalization is rock-solid (10-Q primary). AAA rating asserted from general knowledge — verify before publishing."

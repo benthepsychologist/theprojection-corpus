@@ -1,0 +1,51 @@
+# Bundle — capital node: vanguard (2026-07-26)
+# Posture + capital-FLOW appendix for a NEW capital-pocket node (Vanguard is not
+# yet on board.yaml — the board notes 'add the other 3' Big Four managers).
+# Method: WebFetch primary (WebSearch exhausted) — Wikipedia The Vanguard Group.
+# Private + client-owned at-cost mutual structure: no external shareholders, no
+# disclosed revenue, so operating + flow figures are estimates/uncaptured and
+# flagged low. (corporate.vanguard fast-facts page 404'd on fetch.)
+node: vanguard
+name: "Vanguard"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "~$12T global AUM (2025) and the industry's net-inflow leader — a client-owned, at-cost index machine that grinds share from active managers year after year."
+  sources:
+    - {figure: "~$12T global AUM (2025); client-owned at-cost structure; ~20,000 employees (Dec-2025)", label: "Wikipedia — The Vanguard Group", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: high}
+
+capital:
+  available:
+    value: "n/a — client-owned mutual structure with no external shareholders or dry powder; retains only an at-cost operating buffer"
+    sources:
+      - {figure: "owned by the funds it manages (therefore by its own customers) — no external equity", label: "Wikipedia — The Vanguard Group (ownership structure)", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: high}
+  operating:
+    value: "revenue not disclosed (private, at-cost); ESTIMATE ~$9-10B/yr (~avg expense ratio ~0.08% x ~$12T AUM) — derived, low confidence"
+    sources:
+      - {figure: "revenue undisclosed; estimate derived from ~$12T AUM x ~0.08% asset-weighted expense ratio", label: "Wikipedia — The Vanguard Group (AUM + at-cost model); expense-ratio assumption is analytical", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: low}
+  deployed:
+    value: "~$12T AUM directed (2025), overwhelmingly index/passive across mutual funds + ETFs"
+    sources:
+      - {figure: "~$12T global AUM under management (2025)", label: "Wikipedia — The Vanguard Group", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: high}
+  in:
+    value: "consistently the largest net new cash of any fund family (industry-leading inflows, ~hundreds of $B/yr) — no cited dollar figure captured this pass"
+    sources:
+      - {figure: "industry net-inflow leader (magnitude ~hundreds of $B/yr) — specific figure NOT captured", label: "Wikipedia — The Vanguard Group (growth context, no flow figure on page)", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: low}
+  out:
+    value: "at-cost model returns value via recurring fee cuts (not buybacks/dividends — no external owners); redemptions modest vs inflows"
+    sources:
+      - {figure: "at-cost structure — profits returned to fund holders as lower fees; no external dividend/buyback", label: "Wikipedia — The Vanguard Group (at-cost model)", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: med}
+
+optionality:
+  value: "constrained — fiduciary index mandates; the client-owned structure means profits are returned as lower fees, leaving essentially no free corporate capital to redeploy."
+  sources:
+    - {figure: "client-owned + at-cost + index-fiduciary = no free discretionary corporate capital", label: "Wikipedia — The Vanguard Group (structure)", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: med}
+
+gravity:
+  value: "GROSS — ~$12T orbiting; #1/#2 globally in index funds + ETFs, a benchmark-setting shareholder weight in effectively every major public company."
+  sources:
+    - {figure: "~$12T AUM; top-2 global index/ETF manager; ubiquitous index-holder", label: "Wikipedia — The Vanguard Group", url: "https://en.wikipedia.org/wiki/The_Vanguard_Group", as_of: "2025", confidence: med}
+
+notes: "Private + client-owned = almost no 'owned' balance sheet distinct from the funds themselves; commanded ~= $12T, owned ~= the operating company only. Revenue + net-flow figures are estimates/uncaptured (low). corporate.vanguard fast-facts page 404'd on fetch. NEW node — not yet on board.yaml."

@@ -1,0 +1,46 @@
+# Bundle — node posture + capital-flow: john-ternus (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). INCOMING Apple CEO, effective 2026-09-01; currently
+# SVP Hardware Engineering — does not yet direct Apple's corporate capital.
+# Executive without a personal-fortune record; little public data exists.
+node: john-ternus
+name: "John Ternus"
+kind: person
+asof: 2026-07-26
+posture:
+  value: dormant
+  basis: "Not yet in the CEO seat — remains SVP Hardware Engineering until the announced 2026-09-01 succession takes effect; no independent strategic posture to assess until he holds the capital-allocation authority."
+  sources:
+    - {figure: "'It was later announced in April 2026 that Ternus would become chief executive on September 1, 2026'", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-04", confidence: high}
+    - {figure: "condition: in-succession; from tim-cook to john-ternus, effective 2026-09-01", label: "kestrel board.yaml apple succession block", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+capital:
+  available:
+    value: "no personal net worth, comp, or equity-holding figures found on Wikipedia — unlike Cook, Jassy, or Pichai, there is no public wealth record for Ternus at all. Presumably modest: a career Apple engineer/executive since 2001, not a founder or major disclosed shareholder."
+    sources:
+      - {figure: "no net worth, salary, stock holdings, or equity compensation figures given on page", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-07", confidence: low}
+  operating:
+    value: "does NOT yet direct Apple's corporate capital — currently SVP Hardware Engineering, reporting up, not a capital allocator. From 2026-09-01 he inherits Apple's ~$416B/yr FY25 revenue, ~$112B FY25 net income, ~$68.5B cash+ST-investments (Mar-2026), and ~$140B/yr TTM operating cash flow, contingent on the succession completing as announced."
+    sources:
+      - {figure: "SVP of Hardware Engineering since 2021, overseeing AirPods/Mac/iPad/iPhone/Apple Watch product lines", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-07", confidence: high}
+      - {figure: "FY2025 revenue $416B, net income $112B (Apple corporate figures he will inherit, not yet his to direct)", label: "Wikipedia — Apple Inc.", url: "https://en.wikipedia.org/wiki/Apple_Inc.", as_of: "2025-09", confidence: high}
+  deployed:
+    value: "none as a capital allocator yet — his current authority is product-line execution (iPhone, Mac, iPad, Apple Watch, AirPods hardware engineering) under Cook, not strategic capital deployment"
+    sources:
+      - {figure: "overseeing development of AirPods, Mac, iPad, iPhone, and Apple Watch product lines as SVP Hardware Engineering", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-07", confidence: high}
+  in:
+    value: "no compensation figures disclosed publicly for his current SVP role or the incoming CEO package"
+    sources:
+      - {figure: "no salary or compensation figures given on page", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-07", confidence: low}
+  out:
+    value: "no stock-sale or philanthropic-giving figures known"
+    sources:
+      - {figure: "no financial-outflow figures given on page", label: "Wikipedia — John Ternus", url: "https://en.wikipedia.org/wiki/John_Ternus", as_of: "2026-07", confidence: low}
+optionality:
+  value: "dormant/pre-seat now — no independent capital authority as an SVP under Cook. Once seated 2026-09-01, will be constrained like any hired CEO: Cook remains as Executive Chairman ('a regent retained for foreign affairs' per kestrel board notes), and Ternus holds no founder-class stock or supervoting lock."
+  sources:
+    - {figure: "'Cook stays as executive chairman on policy — a regent retained for foreign affairs'", label: "kestrel board.yaml apple succession block", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+gravity:
+  value: "none directly today; from 2026-09-01 inherits the ~$416B/yr GROSS FY25 Apple ecosystem that moves on the CEO's say-so, contingent on the succession completing on schedule"
+  sources:
+    - {figure: "revenue US$416 billion (FY2025) — the ecosystem Ternus is set to inherit control over", label: "Wikipedia — Apple Inc.", url: "https://en.wikipedia.org/wiki/Apple_Inc.", as_of: "2025-09", confidence: med}
+notes: "Almost no personal-capital data exists for Ternus — Wikipedia gives no net worth, compensation, or equity figures, a real gap rather than an oversight (he has never been a public-company CEO before). All operating/gravity figures here are Apple's own corporate numbers, framed as what he is SET TO inherit on 2026-09-01, not what he currently directs — treat the whole 'operating' axis as contingent/future until the succession date passes."

@@ -1,0 +1,35 @@
+# Bundle — axis estimates: spacex / SpaceXAI (2026-07-25)
+# The cited-source appendix for board.yaml spacex {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted). Public parent
+  SPCX via stockanalysis + the real SEC 424B4 (CIK 1181412); balance-sheet
+  items rely on kestrel's prior megacap-crawl extraction because the >10MB
+  prospectus exceeded the fetch limit. Gravity normalized to annual
+  value-added-dependent. NB capitalization here is stated as market cap;
+  the commanded-liquid basis (~$16B cash + ~$75B raise access) differs from
+  the operating-co peers — see the open axis-basis question.
+
+capitalization:
+  value: "~$16B cash + ~$75B demonstrated raise access; market cap ~$1.52T (side-label)"
+  sources:
+    - {figure: "$1.52T market cap; $115.07/share; 52-wk $110.85-$225.64", label: "stockanalysis.com — SPCX quote (07-24, corrects kestrel $1.56T anchor)", url: "https://stockanalysis.com/stocks/SPCX/", as_of: "2026-07", confidence: high}
+    - {figure: "IPO 06-12-2026 at $135/share, $1.77T valuation, $75B raised (largest IPO ever)", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+    - {figure: "424B4 IPO prospectus, CIK 0001181412, File 333-296070, filed 06-12-2026", label: "SEC EDGAR — Space Exploration Technologies Corp 424B4", url: "https://www.sec.gov/Archives/edgar/data/1181412/000162828026042639/0001628280-26-042639-index.htm", as_of: "2026-06", confidence: high}
+    - {figure: "Feb-2026 merger: xAI $250B + SpaceX $1T = $1.25T combined", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2026-02", confidence: high}
+    - {figure: "~$15.9B cash (down from $24.7B) end Q1-26; Aug-6 lock-up 911.5M shares", label: "kestrel finding (extracted from 424B4/S-1; prospectus >10MB, not re-fetchable)", url: "artifacts/findings/spacexai-public-megacap-2026-07-24.md", as_of: "2026-07", confidence: med}
+optionality:
+  value: "free — Musk ~82% voting; thin post-IPO locked overlay"
+  sources:
+    - {figure: "Musk 42% equity / 82% voting control", label: "Wikipedia — SpaceX infobox", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2025-12", confidence: high}
+    - {figure: "SpaceX invested $2B in xAI (Jul 2025); xAI acquired X (Mar 2025); SpaceX acquired xAI (Feb 2026) — cross-venture redeployment", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2026-02", confidence: high}
+gravity:
+  value: "gross ~$85B/yr -> ~$30B/yr value-added-dependent (× 0.5 × ~0.7); + ~$18B one-time Colossus stock"
+  sources:
+    - {figure: "Starlink $11.4B revenue FY2025, 12M subscribers (Jun 2026), ~75% of active maneuverable sats", label: "Wikipedia — Starlink", url: "https://en.wikipedia.org/wiki/Starlink", as_of: "2026-06", confidence: high}
+    - {figure: "SpaceX 165 of 330 global orbital launches in 2025 = 50% by count (higher by mass)", label: "Wikipedia — 2025 in spaceflight", url: "https://en.wikipedia.org/wiki/2025_in_spaceflight", as_of: "2025-12", confidence: high}
+    - {figure: "global space economy ~$414.75B (2018) — DATED anchor for the launch-dependent slice; $50B is DERIVED, not cited", label: "Wikipedia — Satellite industry", url: "https://en.wikipedia.org/wiki/Satellite_industry", as_of: "2018", confidence: low}
+    - {figure: "Google lease $920M/mo for 110k GPUs (~$11B/yr); Colossus ~230k GPUs, ~$18B buildout (SemiAnalysis)", label: "Wikipedia — Colossus (supercomputer)", url: "https://en.wikipedia.org/wiki/Colossus_(supercomputer)", as_of: "2026-06", confidence: med}
+    - {figure: "Anthropic leases all of Colossus 1 (~$1.25B/mo ~$40B through 2029; figures conflict)", label: "kestrel finding (CNBC/Bloomberg/Yahoo, not SEC-confirmed)", url: "artifacts/findings/spacex-colossus-2026-07-24.md", as_of: "2026-05", confidence: low}
+uncertainty: "Merged-entity accounting (consolidated SPCX vs SpaceX vs xAI standalone) doesn't reconcile cleanly. The $50B launch-dependent gravity slice is derived from launch share × a dated space-economy figure. Capitalization basis (market cap vs commanded-liquid) differs from peers."

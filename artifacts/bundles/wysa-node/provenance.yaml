@@ -1,0 +1,89 @@
+# Bundle — node posture + capital-flow: wysa / Wysa (Touchkin eServices)
+# axes_num rollout wave G (2026-07-28), one of 8 small mental-health-AI actors.
+# Recipe (Ben's spec for the wave):
+#   WEIGHT   = cumulative VC/grant capital raised across all rounds ($B).
+#   THRUST   = deployment run-rate, $/yr — capital committed in the last ~12mo
+#              to NEW positions (buildout, hiring/expansion, clinical/product
+#              commitments, enterprise/insurer rollout spend).
+#   GRAVITY  = attributable dependent economy (users/enterprise clients that
+#              actually depend on Wysa, in $ terms) — NOT gross download/
+#              headline-user counts.
+#   OPTIONALITY = how free the commanded capital is — default "constrained"
+#              for VC-backed private cos absent contrary evidence.
+#   Buybacks: n/a, $0 (private company).
+# Method: WebSearch budget was exhausted this session (200/200) before any
+# Wysa-specific queries ran; all research below is WebFetch against Google
+# News RSS (news.google.com/rss/search) and DuckDuckGo HTML search-result
+# pages, plus a direct Inc42 company-funding-page fetch. No Wikipedia page
+# exists for Wysa (404). Individual publisher article pages mostly blocked
+# WebFetch (403) or redirected to expired-domain parking pages — cited via
+# the Google News RSS search URL and headline/snippet instead, which are
+# real, clickable, and reproduce what WebFetch actually returned (not
+# fabricated). Funding-aggregator totals (Tracxn/Inc42/CB Insights) disagree
+# with each other by ~30-50% — flagged throughout, not resolved.
+node: wysa
+name: "Wysa"
+pocket: health
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "No new equity round since the 2022 Series B, but a steady drumbeat of inorganic/programmatic expansion: April Health merger (Mar-2025, primary-care behavioral-health access), US AI-chatbot patient-intake launch (Jun-2025), and a Wellcome Trust-funded India/UK scale-up study for adolescent-girls' mental health (£5.3M awarded Feb-2026) — expansion via partnerships/grants rather than fresh VC capital."
+  sources:
+    - {figure: "Wysa merges with April Health to combine AI and in-person mental healthcare", label: "MobiHealthNews via Google News", url: "https://news.google.com/rss/search?q=Wysa+April+Health+acquisition", as_of: "2025-03-13", confidence: med}
+    - {figure: "Wysa Launches AI-Powered Chatbot to Streamline Mental Health Patient Intake in the US", label: "Business Wire via Google News", url: "https://news.google.com/rss/search?q=Wysa+users+downloads+enterprise+clients+health+plans", as_of: "2025-06-11", confidence: med}
+    - {figure: "Wysa awarded £5.3m to address girls' mental health in rural India (Wellcome Trust)", label: "Health Tech World / FemTech World / Business Weekly / Imperial College London via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02-01/19", confidence: med}
+capital:
+  available:
+    value: "~$30-40M cumulative raised across all rounds+grants; aggregators disagree materially: Tracxn $30.5M/11 rounds, Inc42 $34.70M/8 rounds (latest tracked round May-2023, grant stage), CB Insights $40.14M/23 rounds. Named/confirmed equity rounds alone sum to ~$27.5M: pre-Series A ~Rs15cr/~$2M (Jun-2019, pi Ventures + Kae Capital), Series A $5.5M (May-2021, Google-backed per coverage), Series B $20M (Jul-2022, HealthQuad + British International Investment). The gap between $27.5M named-rounds and the $30-40M aggregator totals is grants/seed/angel tranches not individually confirmed here, incl. likely the Feb-2026 Wellcome Trust award (CB Insights logs a 'Grant - IV, $7.24M, Feb-2-2026' that is consistent in size/timing with the £5.3M Wellcome award found independently below)."
+    sources:
+      - {figure: "pre-Series A Rs 15 Cr (~$2M), led by pi Ventures + Kae Capital", label: "YourStory.com via Google News", url: "https://news.google.com/rss/search?q=Wysa+funding+round", as_of: "2019-06", confidence: med}
+      - {figure: "Series A $5.5M, closed May-2021, Google-backed", label: "PR Newswire via Google News", url: "https://news.google.com/rss/search?q=Wysa+funding+round", as_of: "2021-05", confidence: med}
+      - {figure: "Series B $20M, HealthQuad + British International Investment (BII)", label: "TechCrunch / Business Wire via Google News", url: "https://news.google.com/rss/search?q=Wysa+funding+round", as_of: "2022-07", confidence: high}
+      - {figure: "total funding $30.5M across 11 rounds, 25 institutional + 16 angel investors, latest round a 'Grant' Feb-2-2026", label: "Tracxn — Wysa company page (headline/snippet)", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+      - {figure: "total funding $34.70M across 8 rounds, latest tracked round May-2023 (grant stage)", label: "Inc42 — Wysa company page", url: "https://inc42.com/company/wysa/", as_of: "2026-07-27", confidence: med}
+      - {figure: "total funding $40.14M across 23 rounds; 'Grant - IV' $7.24M on Feb-2-2026", label: "CB Insights via DuckDuckGo search snippet", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+  operating:
+    value: "revenue not officially disclosed; third-party estimates disagree widely: CB Insights logs 2024 revenue $4.68M, Compworth estimates ~$23.9M annual revenue (5x apart, unreconciled) — treat as directional only."
+    sources:
+      - {figure: "2024 revenue $4.68M", label: "CB Insights via DuckDuckGo search snippet", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+      - {figure: "estimated annual revenue ~$23.9M", label: "Compworth via DuckDuckGo search snippet", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+  deployed:
+    value: "£5.3M (~$6.7M at ~1.27 GBP/USD) committed to the Wellcome Trust-funded India/UK scale-up study (adolescent-girls' mental health, rural India) — the one dollar-and-date-specific 2026 commitment found; April Health merger and the US patient-intake chatbot launch are real but carry no disclosed deal value."
+    sources:
+      - {figure: "Wysa awarded £5.3m by Wellcome Trust to address girls' mental health in rural India", label: "Health Tech World / FemTech World via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02-01/03", confidence: med}
+      - {figure: "Wellcome's £5.3m for digital mental health intervention for adolescent girls in India", label: "Business Weekly via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02-01", confidence: med}
+  in:
+    value: "historically VC (pi Ventures, Kae Capital, Google-backed round, HealthQuad, British International Investment); most recent 2026 inflow is philanthropic/research-grant capital (Wellcome Trust, £5.3M) rather than equity — no new priced VC round confirmed since the 2022 Series B."
+    sources:
+      - {figure: "Series B led by HealthQuad + British International Investment", label: "TechCrunch via Google News", url: "https://news.google.com/rss/search?q=Wysa+funding+round", as_of: "2022-07", confidence: high}
+      - {figure: "Wellcome Trust £5.3m award, Feb-2026", label: "Health Tech World / Business Weekly via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02", confidence: med}
+  out:
+    value: "April Health merger (Mar-2025, undisclosed terms) and US AI patient-intake chatbot launch (Jun-2025, undisclosed spend) both fall just outside the strict trailing-12mo window from this 2026-07-28 asof date; no disclosed multi-year capex/build commitment found."
+    sources:
+      - {figure: "Wysa Acquires Virtual Behavioral Health Provider April Health", label: "Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=Wysa+April+Health+acquisition", as_of: "2025-03-11", confidence: med}
+      - {figure: "Wysa Launches AI-Powered Chatbot to Streamline Mental Health Patient Intake in the US", label: "Business Wire via Google News", url: "https://news.google.com/rss/search?q=Wysa+users+downloads+enterprise+clients+health+plans", as_of: "2025-06-11", confidence: med}
+thrust:
+  value: "~$0.007B/yr (~$6.7M/yr) — thin. The only dollar-and-date-specific commitment to a NEW position inside the trailing 12mo window (Aug-2025 to Jul-2026) is the Wellcome Trust £5.3M scale-up-study grant (Feb-2026), treated here as a one-time program award rather than a true annual run-rate (no multi-year schedule disclosed, so the full amount is used as a single-year proxy). April Health (Mar-2025) and the US patient-intake launch (Jun-2025) are real expansion moves in the broader 2025-2026 stretch but fall just outside the strict 12mo window and carry no disclosed $ figures either way, so they are noted as context, not added to the number."
+  basis: "Recipe: capital committed in the last ~12mo to new positions (compute/build, hiring/expansion, new clinical/product commitments, enterprise/insurer rollout spend). Wysa has not disclosed a clean deployment/capex run-rate; the Wellcome grant is the only fully dated, fully quantified 2026 commitment found via Google News RSS across ~8 queries this session."
+  sources:
+    - {figure: "£5.3m Wellcome Trust award for India/UK adolescent-girls mental-health scale-up study, Feb-2026", label: "Health Tech World / FemTech World / Business Weekly / Imperial College London via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02-01/19", confidence: med}
+    - {figure: "no other dollar-and-date-specific 2026 commitment found across funding, partnership, and expansion RSS queries", label: "cross-check across Google News RSS passes", url: "https://news.google.com/rss/search?q=Wysa+2026+expansion+OR+hiring+OR+launch+OR+partnership", as_of: "2026-07-28", confidence: low}
+optionality:
+  value: "constrained — VC- and grant-funded private company; no evidence of founder/board super-control or self-funding independence. Investor base (pi Ventures, Kae Capital, HealthQuad, British International Investment — a UK DFI) implies standard board/investor oversight; the most recent large capital event (Wellcome Trust grant) is restricted-use program funding, if anything narrowing near-term discretion further, not loosening it."
+  sources:
+    - {figure: "Series A/B investor syndicate (pi Ventures, Kae Capital, HealthQuad, British International Investment)", label: "PR Newswire / TechCrunch via Google News", url: "https://news.google.com/rss/search?q=Wysa+funding+round", as_of: "2021-2022", confidence: med}
+    - {figure: "£5.3m Wellcome Trust award is a restricted research/scale-up grant, not general operating capital", label: "Health Tech World via Google News", url: "https://news.google.com/rss/search?q=Wysa+Wellcome+Trust+5.3+million+girls", as_of: "2026-02", confidence: med}
+gravity:
+  value: "~$0.03-0.05B/yr (rough, low confidence) — reasoned from disclosed/estimated revenue (~$4.7-24M/yr, third-party estimates 5x apart) plus enterprise/health-system channel reach (April Health primary-care network, NHS-adjacent IAPT integration via Mayden/iaptus, US enterprise patient-intake deployment), scaled up modestly for the value at stake to enterprise/health-system clients beyond Wysa's own direct revenue capture. Free-tier consumer downloads (commonly cited in the tens of millions in older/general coverage) are explicitly NOT used here — no current, sourced download/active-user figure was found this session, and per the wave-G recipe gross headline reach is excluded from gravity by design. This is the weakest-grounded axis in this bundle; treat the point estimate as a placeholder pending a harder user/contract-value source."
+  sources:
+    - {figure: "2024 revenue $4.68M", label: "CB Insights via DuckDuckGo search snippet", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+    - {figure: "estimated annual revenue ~$23.9M", label: "Compworth via DuckDuckGo search snippet", url: "https://html.duckduckgo.com/html/?q=Wysa+total+funding+raised+2026", as_of: "2026-07", confidence: low}
+    - {figure: "Mayden partners with Wysa to integrate with iaptus (NHS IAPT-adjacent talking-therapies software)", label: "Mayden via Google News", url: "https://news.google.com/rss/search?q=Wysa+mental+health+NHS+partnership", as_of: "2022-03-15", confidence: med}
+    - {figure: "Wysa merges with April Health (US primary-care-embedded behavioral health network)", label: "MobiHealthNews via Google News", url: "https://news.google.com/rss/search?q=Wysa+April+Health+acquisition", as_of: "2025-03-13", confidence: med}
+    - {figure: "no current sourced user/download count found this session; not used as a gravity basis", label: "cross-check across Google News RSS passes", url: "https://news.google.com/rss/search?q=Wysa+%22million+users%22+OR+%22million+downloads%22", as_of: "2026-07-28", confidence: low}
+buybacks:
+  value: "$0 — private VC/grant-backed company, no buyback mechanism applicable."
+  sources:
+    - {figure: "private company, all capital events are equity rounds or grants, no public listing or buyback activity found", label: "cross-check across all sources above", url: "https://inc42.com/company/wysa/", as_of: "2026-07-28", confidence: high}
+notes: "Pocket: health (closest existing board bucket) — this is the mental-health / AI-companion vertical specifically, smallest-capital-base actor in axes_num rollout wave G. Biggest uncertainties: (1) funding-aggregator totals disagree by ~30-50% (Tracxn $30.5M vs Inc42 $34.7M vs CB Insights $40.14M) with no single authoritative source found; (2) no official revenue disclosure, third-party estimates 5x apart ($4.68M vs $23.9M); (3) no current user/download count sourced this session — gravity is the softest axis here and should be revisited with a harder source in a later pass; (4) WebSearch was budget-exhausted before any Wysa query ran, so all research is WebFetch-only (Google News RSS + DuckDuckGo HTML), and several individual publisher pages 403'd or redirected to parked/expired domains — cited via the RSS/search URL instead of the dead article link."
+axes_num_estimate: { weight: 0.035, thrust: 0.007, gravity: 0.04 }  # agent-derive 2026-07-28 wave G

@@ -1,0 +1,55 @@
+# Bundle — node posture + capital-flow: sam-altman / Sam Altman (2026-07-26)
+# PERSON node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted): Wikipedia Sam Altman + Wikipedia OpenAI. AI-lab head —
+# his power is OPERATING (OpenAI's raised/earmarked compute capital) far more
+# than personal wealth; famously holds ~no direct OpenAI equity of note.
+node: sam-altman
+name: "Sam Altman"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "OpenAI closed $852B post-money valuation (Apr-2026) on the back of a $110B (extended to $120B) Feb-2026 round; personal posture tracks the org — stepped down as Oklo chairman Apr-2025 specifically to clear a conflict-of-interest path for OpenAI-Oklo dealmaking."
+  sources:
+    - {figure: "OpenAI closed funding at $852B post-money valuation", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-04", confidence: high}
+    - {figure: "Altman stepped down as Oklo Inc. chairman to avoid a conflict of interest / open up OpenAI-Oklo dealmaking", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2025-04", confidence: high}
+
+capital:
+  available:
+    value: "~$2-2.8B personal — Bloomberg Billionaires Index debut ~$2B (Mar-2024); investment portfolio (400+ companies) valued ~$2.8B (Jun-2024). BOTH figures are explicitly sourced from his venture investing (Hydrazine Capital, Reddit ~9% pre-IPO stake, Retro Biosciences, Worldcoin/Tools for Humanity, Helion, Stripe, Airbnb, Instacart) and EXCLUDE OpenAI equity — Wikipedia does not state he holds a direct OpenAI stake."
+    sources:
+      - {figure: "debuted on Bloomberg Billionaires Index Mar-2024 at ~$2B net worth, primarily from VC funds (Hydrazine Capital)", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2024-03", confidence: high}
+      - {figure: "investment portfolio: stakes in 400+ companies valued ~$2.8B (Jun-2024)", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2024-06", confidence: high}
+  operating:
+    value: "directs OpenAI's ~$180B cumulative raised/committed capital (2019-2026) as CEO and OpenAI Foundation board member; the $852B valuation is the mark, not drawable cash — the strong axis, not his personal balance sheet."
+    sources:
+      - {figure: "~$180B cumulative raised/committed (2019-2026); $852B valuation is the mark not drawable cash", label: "kestrel board.yaml openai capitalization axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+      - {figure: "CEO and co-founder; member of the OpenAI Foundation board of directors (nonprofit, renamed Oct-2025)", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-10", confidence: high}
+  deployed:
+    value: "the strategic bets he has set in motion as CEO — the org's ~$1.0-1.4T anchored-compute obligations (Stargate + partner deals) dwarf anything personally deployable; personally, his VC-style stakes across ~400 companies (Reddit, Stripe, Helion, Retro Biosciences $180M, Worldcoin/Tools for Humanity co-founded, raised $250M by 2023)."
+    sources:
+      - {figure: "~$1.0-1.4T compute obligations vs ~$180B raised — the board's canonical cash-rich, freedom-poor actor", label: "kestrel board.yaml openai optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+      - {figure: "Retro Biosciences ~$180M invested; Worldcoin/Tools for Humanity raised $250M from several investors by 2023 (co-founder, not sole funder)", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2023", confidence: med}
+  in:
+    value: "personal: portfolio appreciation across ~400 startup stakes (no OpenAI equity comp disclosed on Wikipedia); organizational: OpenAI's own $110-120B Feb-2026 round + the Apr-2026 close at $852B post-money."
+    sources:
+      - {figure: "OpenAI raised $110B (Feb-2026), later extended to $120B", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-02", confidence: high}
+      - {figure: "personal net worth ~$2-2.8B, sourced from VC/portfolio gains, not OpenAI equity", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2024-06", confidence: high}
+  out:
+    value: "personal: Hydrazine Capital ($21M fund, 2012) and portfolio stakes (Reddit, Stripe, Helion, Retro Biosciences $180M, Worldcoin, Airbnb, Instacart); stepped down as Oklo chairman (Apr-2025) rather than a capital outflow."
+    sources:
+      - {figure: "co-founded Hydrazine Capital ($21M fund, 2012), deployed ~75% into Y Combinator companies", label: "Wikipedia — Sam Altman", url: "https://en.wikipedia.org/wiki/Sam_Altman", as_of: "2012", confidence: high}
+
+optionality:
+  value: "mixed, and asymmetric between the two ledgers — personally FREE (his ~$2-2.8B VC portfolio is his own to deploy, no known lockup) but the lever he actually pulls (OpenAI's capital) is LOCKED per board.yaml: ~85-90% pre-earmarked against ~$1.0-1.4T in compute obligations. His personal equity stake in the OpenAI Group PBC (part of the 47% employee/investor pool as of the Oct-2025 restructuring) is undisclosed in sourced material — treat any specific % as unconfirmed."
+  sources:
+    - {figure: "OpenAI Group PBC ownership: Foundation 26%, Microsoft 27%, employees+other investors 47% (Oct-2025); Altman's personal share within the 47% not stated", label: "Wikipedia — OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-10", confidence: med}
+    - {figure: "locked — ~85-90% pre-earmarked (~$1.0-1.4T compute obligations vs ~$180B raised) and burning (net -$9B 2025)", label: "kestrel board.yaml openai optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+gravity:
+  value: "~$1.0-1.4T anchored-compute STOCK he directs as CEO (~$175B/yr GROSS orbiting) — an organizational gravity vastly larger than anything his personal $2-2.8B could anchor alone."
+  sources:
+    - {figure: "~$1.0-1.4T anchored-compute STOCK (~$175B/yr GROSS orbiting)", label: "kestrel board.yaml openai gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+notes: "Biggest uncertainty: whether/how much direct OpenAI equity Altman personally holds. Wikipedia's Sam Altman and OpenAI articles do not state a percentage or confirm the widely-reported claim that he holds ~no direct stake — his personal wealth figures ($2B Bloomberg Mar-2024 / $2.8B portfolio Jun-2024) are both explicitly sourced to VC investing, not OpenAI ownership, which is consistent with but does not prove the near-zero-equity claim. Treat any specific Altman-OpenAI-equity % as confidence: low / omitted pending a primary source."

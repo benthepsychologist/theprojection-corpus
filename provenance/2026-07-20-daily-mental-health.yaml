@@ -1,0 +1,31 @@
+# Per-run fetch manifest — /daily 2026-07-20, mental-health lens (interim agentic mode)
+source_id: agentic-web-sweep   # interim: sonnet-class subagent web sweep; no collectors built yet
+params:
+  lens: mental-health
+  window_start: "2026-07-20T05:00:00-04:00"
+  as_of: "2026-07-20T17:45:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.mental-health — orgs, people, themes, conditions)
+    - attention/threads.yaml (2 open mental-health threads — incl. 3-week catch-up, briefing #0)
+  exclusions: [reddit, pr-newswire]
+  note: ~60 distinct searches; agent's WebSearch session budget exhausted (200/200)
+    before a final planned round (Bloomberg/Forbes/TechCrunch/CNN/WaPo on Slingshot,
+    Character.AI, Talkspace, teen-chatbot-safety).
+fetched_at: "2026-07-20T21:45:00Z"
+items:
+  # ZERO items verifiable as published in the strict window (07-17..07-20).
+  # The four below are the nearest verified signal (07-01..07-15), carried
+  # as briefing-#0 catch-up, explicitly dated in the digest.
+  - {id: handspring-series-b, url: "https://bhbusiness.com/2026/07/08/handspring-health-raises-19m-invests-in-complex-behavioral-health-care/", ts: "2026-07-08"}
+  - {id: rock-health-h1-2026, url: "https://www.healthcaredive.com/news/digital-health-funding-first-half-2026-rock-health/825215/", ts: "2026-07-13"}
+  - {id: medcity-h1-moat, url: "https://medcitynews.com/2026/07/digital-health-capital-fundraise-startups/", ts: "2026-07-15"}
+  - {id: openai-bipolar-suit, url: "https://www.itechpost.com/articles/236541/20260702/openai-faces-chatgpt-lawsuit-over-ai-chatbots-alleged-role-self-harm.htm", ts: "2026-07-01"}
+notes: >-
+  GAPS reported by sweep: (1) ICER/PHTI/ORCHA — no 2026 MH-specific output
+  found (PHTI MH assessment on record is May 2025); (2) ClinicalTrials.gov —
+  status-change dates not certifiable from search snippets, TRIALS left empty
+  rather than guessed; (3) PA v. Character.AI — no injunction-ruling update
+  since 05-01 filing; (4) Woebot FDA De Novo claim rests on a low-quality
+  aggregator, uncorroborated vs FDA database; (5) MHRA pathway for Slingshot
+  Ash unresolved — MHRA "summer 2026" AI-regulation report not yet surfaced;
+  (6) WebSearch budget exhaustion (see params.note).

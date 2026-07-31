@@ -1,0 +1,46 @@
+# Bundle — node posture + capital-flow: andy-jassy (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Hired CEO — operating capital is the strong axis;
+# Bezos remains Executive Chairman and largest holder, above Jassy in ultimate
+# control.
+node: andy-jassy
+name: "Andy Jassy"
+kind: person
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Runs Amazon/AWS's buildout-race posture as CEO — pre-committing operating cash to ~$132B/yr capex — while Bezos, as Executive Chairman and largest shareholder, remains the backstop above him."
+  sources:
+    - {figure: "posture: expanding (buildout-race; AGI-research cuts a counter-signal)", label: "kestrel board.yaml amazon-aws axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "President and CEO of Amazon since July 2021", label: "Wikipedia — Andy Jassy", url: "https://en.wikipedia.org/wiki/Andy_Jassy", as_of: "2025-01", confidence: high}
+capital:
+  available:
+    value: "~$500M personal net worth (Jan-2025), held mostly as >2.16 million Amazon shares — modest vs. the ~$2.50T company he runs"
+    sources:
+      - {figure: "net worth estimated at almost $500 million (Jan-2025); holdings of over 2.160 million Amazon shares", label: "Wikipedia — Andy Jassy", url: "https://en.wikipedia.org/wiki/Andy_Jassy", as_of: "2025-01", confidence: low}
+  operating:
+    value: "commands Amazon's ~$263B/12mo commandable corporate capital as CEO (cash+STI $123B + ~$139.5B/yr operating cash flow, though FCF is only $7.7B after capex) — this is the real axis"
+    sources:
+      - {figure: "~$263B commandable/12mo ($123B cash+STI + ~$139.5B/yr operating cash flow, but FCF only $7.7B)", label: "kestrel board.yaml amazon-aws axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "as CEO, directing operating cash pre-committed to ~$132B/yr capex into AWS, Trainium, Bedrock, and Nova — a corporate bet he steers, not personal capital"
+    sources:
+      - {figure: "optionality: mixed/constrained — operating cash pre-committed to ~$132B/yr capex", label: "kestrel board.yaml amazon-aws axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  in:
+    value: "a 10-year compensation package worth $212.7M (mostly stock, vesting over the decade); 2024 disclosed compensation $40.1M"
+    sources:
+      - {figure: "10-year package $212.7 million, majority in stock vesting over the decade; 2024 compensation $40.1 million (disclosed April 2025)", label: "Wikipedia — Andy Jassy", url: "https://en.wikipedia.org/wiki/Andy_Jassy", as_of: "2025-04", confidence: med}
+  out:
+    value: "no personal stock-sale or philanthropic-giving figures disclosed on Wikipedia — data gap, not zero activity"
+    sources:
+      - {figure: "no charitable giving figures documented", label: "Wikipedia — Andy Jassy", url: "https://en.wikipedia.org/wiki/Andy_Jassy", as_of: "2025-01", confidence: low}
+optionality:
+  value: "mixed/constrained — hired CEO (promoted internally from AWS, not a founder); Jeff Bezos remains Executive Chairman and Amazon's largest individual shareholder, and personally designated Jassy as successor — Jassy's authority is a delegation from Bezos, revocable in principle, not a founder's lock of his own."
+  sources:
+    - {figure: "Bezos remains Executive Chairman and founder; designated Jassy as official successor in January 2021", label: "Wikipedia — Andy Jassy", url: "https://en.wikipedia.org/wiki/Andy_Jassy", as_of: "2021-01", confidence: high}
+    - {figure: "optionality: mixed/constrained — governance free (single-class) but operating cash pre-committed to ~$132B/yr capex", label: "kestrel board.yaml amazon-aws axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+gravity:
+  value: "~$716.9B/yr GROSS Amazon net-sales ecosystem (AWS $137B + 3P GMV ~$700B+ vs $177B booked cut) moves on his operational calls as CEO"
+  sources:
+    - {figure: "~$716.9B/yr GROSS net sales (AWS $137B; 3P GMV ~$700B+ vs $177B booked cut)", label: "kestrel board.yaml amazon-aws gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty: net worth ($500M, Jan-2025) is a single press estimate, dated 18 months before this asof — likely understates current holdings given share price moves, but no fresher figure was found. Bezos sits above Jassy structurally (Executive Chairman, largest holder, personal successor pick) — Jassy's optionality is real day-to-day authority but not a founder's lock."

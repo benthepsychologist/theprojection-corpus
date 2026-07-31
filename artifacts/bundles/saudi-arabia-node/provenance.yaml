@@ -1,0 +1,54 @@
+# Bundle — state node: saudi-arabia (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml saudi-arabia (rank state,
+# sphere gulf, tier treasury). Gulf sovereign-fund power: available = PIF +
+# FX reserves, in = oil resource income + tax, deployed = low debt + Vision
+# 2030 / NEOM commitments. Gravity = GDP. Cross-refs the existing pif-node
+# bundle (PIF as a capital node in its own right). Method: WebFetch primary
+# (WebSearch exhausted) — Wikipedia aggregate lists (IMF/SWF base).
+node: saudi-arabia
+name: "Saudi Arabia"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Deploying the ~$1.28T PIF into Vision 2030 — NEOM, Humain (national AI champion), global stakes — and running a modest oil-driven deficit (-3.03% of GDP, 2024) that low debt (32% of GDP) lets it borrow through. Expansion funded by sovereign capital + cheap leverage."
+  sources:
+    - {figure: "Saudi PIF ~$1,281B AUM", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: high}
+    - {figure: "2024 deficit -$33.35B (-3.03% of GDP); gross debt only 31.7% of GDP (2025)", label: "Wikipedia — govt budget (IMF 2024) + govt debt (IMF 2025)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+capital:
+  available:
+    value: "~$1.28T PIF (sovereign fund) + ~$487B FX reserves ≈ ~$1.77T dry powder — Vision-2030-directed, MbS-chaired (see kestrel pif-node bundle)"
+    sources:
+      - {figure: "PIF ~$1,281B AUM", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: high}
+      - {figure: "foreign-exchange reserves incl. gold $487,370M (31 May 2026)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2026-05", confidence: high}
+  operating:
+    value: "~$360B annual govt expenditure / ~$327B revenue (2024)"
+    sources:
+      - {figure: "2024 revenue $326.80B (29.69% of GDP); expenditure $360.15B (32.72% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt 31.7% of GDP (2025) ≈ ~$440B nominal (derived from GDP × ratio), net 22.5%; committed to Vision 2030 giga-projects — NEOM, Red Sea, Qiddiya (multi-hundred-billion program via PIF)"
+    sources:
+      - {figure: "gross debt 31.7% of GDP (2025), net 22.5%; nominal derived from IMF 2026 GDP ~$1.39T", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+      - {figure: "NEOM/Red Sea/Qiddiya Vision-2030 giga-project commitments (via PIF)", label: "kestrel pif-node bundle (Vision 2030 deployment)", url: "artifacts/bundles/pif-node/provenance.yaml", as_of: "2026-07", confidence: med}
+  in:
+    value: "~$327B revenue (2024) — oil/hydrocarbon-dominated resource income (Aramco) plus a widening non-oil tax base"
+    sources:
+      - {figure: "2024 revenue $326.80B (29.69% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$360B expenditure (2024); deficit -$33B (-3.03% of GDP) — deficit widens when oil prices soften"
+    sources:
+      - {figure: "2024 expenditure $360.15B; deficit -$33.35B (-3.03% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "mixed (leaning free) — huge fiscal freedom via the $1.28T PIF + low debt, but the riyal's hard USD peg subordinates monetary policy to the Fed and revenue is oil-price dependent, so freedom is high yet not unconditional."
+  sources:
+    - {figure: "$1.28T PIF + 31.7% debt (free) vs USD-pegged riyal + oil-revenue dependence (constraints)", label: "Wikipedia — SWF/debt lists + analytical (riyal peg, oil dependence)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "~$1.39T GDP (nominal, IMF 2026) — modest GDP gravity, but the ~$1.28T PIF gives capital reach well beyond its economic-activity footprint"
+  sources:
+    - {figure: "nominal GDP $1,388,676M (IMF 2026); $1,276,943M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Gulf sovereign-fund power (treasury tier) — leverage runs through the PIF, already modeled as its own capital node (pif-node). Biggest uncertainty is oil-price sensitivity: the deficit and the whole Vision-2030 spend depend on crude staying firm. Nominal debt derived (ratio×GDP), flagged low; PIF AUM and flow figures are directly sourced high."

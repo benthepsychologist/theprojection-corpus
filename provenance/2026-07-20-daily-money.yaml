@@ -1,0 +1,33 @@
+# Per-run fetch manifest — /daily 2026-07-20, money lens (interim agentic mode)
+source_id: agentic-web-sweep   # interim: sonnet-class subagent web sweep; no collectors built yet
+params:
+  lens: money
+  window_start: "2026-07-20T05:00:00-04:00"
+  as_of: "2026-07-20T17:15:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.money — orgs, themes)
+  macro_strip: web-checked current values (FRED/BoC indicator collectors not built)
+  exclusions: [reddit, pr-newswire]
+fetched_at: "2026-07-20T21:15:00Z"
+items:
+  - {id: tempus-personalis-8k, url: "https://www.sec.gov/Archives/edgar/data/0001717115/000119312526308469/d124162dex991.htm", ts: "2026-07-20"}
+  - {id: blackstone-futronic, url: "https://www.bloomberg.com/news/articles/2026-07-20/blackstone-agrees-to-invest-in-korean-robotics-supplier-futronic", ts: "2026-07-20"}
+  - {id: cuspai-series-b, url: "https://tech.eu/2026/07/20/jeff-bezos-and-sovereign-ai-back-cuspai-in-450m-raise/", ts: "2026-07-20"}
+  - {id: hut8-beacon-point-lease, url: "https://finance.yahoo.com/technology/ai/articles/hut-8-signs-9-8-103741725.html", ts: "2026-07-20"}
+  - {id: bms-nvidia-superpod, url: "https://finance.yahoo.com/healthcare/articles/bristol-myers-squibb-expands-nvidia-184044343.html", ts: "2026-07-20"}
+  - {id: finra-style-ai-body, url: "https://www.claimsjournal.com/news/national/2026/07/20/338917.htm", ts: "2026-07-20"}
+  - {id: cxmt-ipo-date, url: "https://www.marketscreener.com/news/china-s-changxin-memory-technologies-sets-july-27-listing-date-sources-say-ce7f5edcdc8bf420", ts: "2026-07-20"}
+  # macro strip readings
+  - {id: fed-funds-jun-fomc, url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm", ts: "2026-06-17"}
+  - {id: cpi-jun-2026, url: "https://www.bls.gov/news.release/archives/cpi_07142026.htm", ts: "2026-07-14"}
+  - {id: ust10y, url: "https://tradingeconomics.com/united-states/government-bond-yield", ts: "2026-07-20"}
+  - {id: boc-rate-jul, url: "https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/", ts: "2026-07-15"}
+  - {id: usdcad, url: "https://www.exchange-rates.org/exchange-rate-history/usd-cad-2026", ts: "2026-07-20"}
+  - {id: nvda-mktcap, url: "https://companiesmarketcap.com/nvidia/marketcap/", ts: "2026-07-20"}
+notes: >-
+  GAPS reported by sweep: no in-window items for Highmark, BCBS-MA (NCQA
+  accreditation 07-15), PBGH (hire 07-14), Bain Double Impact, Welsh Carson
+  (Select Medical close 07-01), General Atlantic, RWJF, Ballmer Group,
+  Commonwealth Fund, Wellcome Trust. SoftBank $10B OpenAI tranche and MGX
+  $49B AI fund close both 2026-07-01 — outside window. No clean daily
+  DRAM/HBM spot print found; Nvidia market cap used as AI-adjacent signal.

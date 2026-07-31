@@ -1,0 +1,59 @@
+# Bundle — node posture + capital-flow: mohammed-bin-salman (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). SOVEREIGN case: MbS has no reported personal fortune —
+# every figure here is STATE/sovereign capital he commands as Crown Prince +
+# PIF chairman, not personal wealth. See pif-node bundle for the fund's own
+# posture/flow detail; this bundle covers MbS as the person atop it.
+node: mohammed-bin-salman
+name: "Mohammed bin Salman"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Chairs PIF (~$900B AUM, targeting $1T+ by 2025) and was given personal control over Saudi Aramco by royal decree in 2015 (state controls ~98.19% of Aramco); Crown Prince since 2017 and Prime Minister since 2022. Sovereign capital fueling NEOM/Vision 2030, though NEOM itself has been scaled back since 2024."
+  sources:
+    - {figure: "identified as PIF chairman: 'the wealth fund has Crown Prince Mohammed bin Salman... as its chairman'; AUM US$900 billion (May 2026), target over $1 trillion by 2025", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: high}
+    - {figure: "given control over Saudi Aramco by royal decree in April 2015, following appointment as deputy crown prince", label: "Wikipedia — Mohammed bin Salman", url: "https://en.wikipedia.org/wiki/Mohammed_bin_Salman", as_of: "2015-04", confidence: high}
+    - {figure: "Crown Prince of Saudi Arabia since 21 June 2017; Prime Minister since 27 September 2022", label: "Wikipedia — Mohammed bin Salman", url: "https://en.wikipedia.org/wiki/Mohammed_bin_Salman", as_of: "2022-09", confidence: high}
+
+capital:
+  available:
+    value: "SOVEREIGN, not personal — the capital he commands as Crown Prince + PIF chairman: PIF's ~$900B AUM (target $1T+ by 2025) + the Saudi state's Aramco stake (state/PIF/Sanabil hold ~98.19% combined, Aramco market cap ~$1.66T, Nov-2025) + Saudi fiscal capacity. No personal net worth figure is published for MbS (unlike most billionaires on this board, he is not Forbes/Bloomberg ranked) — wealth here is sovereign. board.yaml's ~$350B 'deployable' anchor is this sovereign pile, already discounted for reversibility/purpose-constraint, NOT a personal fortune."
+    sources:
+      - {figure: "PIF AUM US$900 billion, May 2026; target over $1 trillion by 2025", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: high}
+      - {figure: "Saudi government owns 82.19% of Aramco directly; PIF holds 12%; Sanabil holds 4% — ~98.19% state-controlled combined; market cap ~US$1.66 trillion (Nov 2025)", label: "Wikipedia — Saudi Aramco", url: "https://en.wikipedia.org/wiki/Saudi_Aramco", as_of: "2025-11", confidence: high}
+      - {figure: "~$350B — chairs the $900B PIF + Saudi fiscal/Aramco; sovereign, so discounted from #1 (reversible, purpose-constrained)", label: "kestrel board.yaml mohammed-bin-salman deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "PIF (chairs it directly — commands ~$900B AUM, targeting $1T+ by 2025) + Saudi Aramco (state/PIF/Sanabil control ~98.19%, ~$1.66T market cap) + the Saudi government fiscal budget. No fee revenue (sovereign, like PIF itself) — 'operating' is PIF investment return plus Aramco production revenue/dividends flowing to the state he heads."
+    sources:
+      - {figure: "commands ~$900B AUM (targeting $1T+)", label: "kestrel board.yaml pif capitalization axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+      - {figure: "Saudi government + PIF + Sanabil hold ~98.19% of Aramco; market cap ~$1.66T (Nov 2025)", label: "Wikipedia — Saudi Aramco", url: "https://en.wikipedia.org/wiki/Saudi_Aramco", as_of: "2025-11", confidence: high}
+  deployed:
+    value: "NEOM + Red Sea + Qiddiya + Roshn giga-projects (Vision 2030's domestic pillar); ~$45B Vision Fund LP commitment; $20B Blackstone infra; Lucid; gaming stakes (EA/Take-Two/Activision/Nintendo/Capcom/Nexon) — all channeled through PIF. NEOM specifically was scaled back from 2024 amid reported cost-overrun/manipulation findings, and 'new contracts for Neom dried up' by 2025."
+    sources:
+      - {figure: "NEOM, Red Sea, Qiddiya, Roshn (domestic giga-projects); $45B Vision Fund, $20B Blackstone infra, Lucid, gaming stakes", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-05", confidence: med}
+      - {figure: "NEOM announced Oct-2017 as a 26,000 km2 'linear city'; by 2024 evidence of 'deliberate manipulation' surfaced and the project was substantially scaled back; by 2025 'new contracts for Neom dried up'", label: "Wikipedia — Mohammed bin Salman", url: "https://en.wikipedia.org/wiki/Mohammed_bin_Salman", as_of: "2025", confidence: med}
+      - {figure: "Humain (Saudi AI champion) is part of the kestrel task framing but NOT confirmed by name on the fetched Wikipedia pages — PIF's page instead references a 'Saudi Company for Artificial Intelligence' investment; treat 'Humain' naming as unverified", label: "kestrel — WebFetch of Wikipedia Public Investment Fund page", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2026-07-26", confidence: low}
+  in:
+    value: "~$78B-scale annual tranches — 4% Aramco stake transferred to PIF in both 2022 and 2023 (2023 tranche valued ~$78B) + government injections + Aramco production revenue/dividends into state coffers he directs."
+    sources:
+      - {figure: "2023 Aramco 4% stake transfer to PIF valued around $78 billion; a further 4% stake was transferred in 2022", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2023", confidence: high}
+  out:
+    value: "deployments channeled through PIF — up to $45B Vision Fund (over 5yr), $20B Blackstone infra commitment, NEOM/Vision 2030 giga-project capex, Lucid."
+    sources:
+      - {figure: "up to $45B Vision Fund over 5yr (2016 commitment); $20B Blackstone infrastructure commitment", label: "Wikipedia — Public Investment Fund", url: "https://en.wikipedia.org/wiki/Public_Investment_Fund", as_of: "2016", confidence: high}
+
+optionality:
+  value: "Political control is near-absolute (Crown Prince + PM, sole personal grant of Aramco control since 2015) but the CAPITAL itself is only free-ish — sovereign, reversible, Vision-2030-purpose-directed rather than a personal free pile. Control level: total over PIF's steering (chairman), near-total over Aramco (royal-decree grant), full over state fiscal policy as PM — but every pool is state-owned, not personally owned."
+  sources:
+    - {figure: "MbS-chaired PIF; capital steered to Vision 2030 domestic + strategic aims (free-ish but Vision-2030-directed, reversible + purpose-constrained)", label: "kestrel — pif-node bundle optionality axis", url: "attention/board.yaml", as_of: "2026-07-26", confidence: med}
+    - {figure: "given control over Saudi Aramco by royal decree, April 2015; Crown Prince since 2017; Prime Minister since 2022", label: "Wikipedia — Mohammed bin Salman", url: "https://en.wikipedia.org/wiki/Mohammed_bin_Salman", as_of: "2022-09", confidence: high}
+
+gravity:
+  value: "NEOM + Vision 2030 giga-project economy + the $45B Vision Fund anchor + the Saudi state/Aramco economy itself move on his say-so — one of the largest single levers into both the AI-capital stack and a national economy."
+  sources:
+    - {figure: "NEOM + Red Sea + Qiddiya construction economy; $45B Vision Fund anchor", label: "kestrel board.yaml pif gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+    - {figure: "Saudi government + PIF + Sanabil hold ~98.19% of Aramco (~$1.66T market cap, Nov 2025)", label: "Wikipedia — Saudi Aramco", url: "https://en.wikipedia.org/wiki/Saudi_Aramco", as_of: "2025-11", confidence: high}
+
+notes: "The sovereign/personal blur IS the key uncertainty: unlike every other person on this board, no personal net worth figure exists for MbS on Wikipedia — every dollar here is STATE capital he directs as Crown Prince, Prime Minister, and PIF chairman, not a private fortune. His control over Aramco stems from a 2015 royal decree, not equity ownership. 'Humain' (the Saudi AI champion named in the task brief) could not be confirmed by that name on the fetched PIF or MbS Wikipedia pages — flagged low-confidence pending a direct source fetch."

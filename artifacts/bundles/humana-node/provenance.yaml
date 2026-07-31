@@ -1,0 +1,66 @@
+# Bundle — health node: humana (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml humana. EXTENDS the axis strings
+# on board.yaml with posture and the in/out/available/operating/deployed
+# breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: humana
+name: "Humana"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: retrenching
+  basis: "The most CMS-exposed payer — a Medicare Advantage margin + Star-ratings shock crushed FY25 operating cash flow to ~$0.9B; it exited commercial employer group insurance (2023) and is falling back on CenterWell primary care / home health, with buybacks cut to a token ~$151M."
+  sources:
+    - {figure: "FY25 operating cash flow $921M (a collapse vs the multi-$B run-rate); buybacks only $151M FY25", label: "stockanalysis.com HUM financials + cash-flow statement", url: "https://stockanalysis.com/stocks/HUM/financials/", as_of: "2026-03", confidence: high}
+    - {figure: "exited employer-based commercial group insurance (Feb 2023); CEO Jim Rechtin; 2024 revenue ~$118B with operating income down to $2.56B", label: "Wikipedia — Humana (recent developments)", url: "https://en.wikipedia.org/wiki/Humana", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$5.0B cash (~$36.5B total investments/float) against a light ~$14.3B debt — thinnest free liquidity of the payers relative to its book"
+    sources:
+      - {figure: "cash & equivalents $4,951M; total investments $36,546M; total debt $14,290M (Mar 31 2026)", label: "stockanalysis.com HUM balance sheet", url: "https://stockanalysis.com/stocks/HUM/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$129.7B FY25 revenue (~$137.2B TTM); operating cash flow only ~$0.9B FY25 / ~$1.8B TTM (weakest of the group)"
+    sources:
+      - {figure: "revenue $129,664M FY25 / $137,200M TTM; OCF $921M FY25 / $1,844M TTM (TTM to Mar 31 2026)", label: "stockanalysis.com HUM financials", url: "https://stockanalysis.com/stocks/HUM/financials/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$0.5B capex + ~$0.15B buybacks FY25 — capital deployment frozen; CenterWell care-delivery build is the main reinvestment"
+    sources:
+      - {figure: "capex $546M FY25; share repurchases $151M FY25", label: "stockanalysis.com HUM financials + cash-flow statement", url: "https://stockanalysis.com/stocks/HUM/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+  in:
+    value: "inflows — ~$129.7B FY25, ~85% CMS-set government premiums (Medicare Advantage + Medicaid)"
+    sources:
+      - {figure: "total revenue $129,664M FY25", label: "stockanalysis.com HUM financials", url: "https://stockanalysis.com/stocks/HUM/financials/", as_of: "2025-12", confidence: high}
+      - {figure: "~85% government book (MA/Medicaid), CMS rate-set", label: "kestrel board.yaml humana optionality axis — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  out:
+    value: "outflows — MA medical costs (elevated utilization) dominate; then ~$0.43B dividends + ~$0.15B buybacks FY25"
+    sources:
+      - {figure: "dividends paid $430M; share repurchases $151M FY25; FCF $375M FY25", label: "stockanalysis.com HUM cash-flow statement", url: "https://stockanalysis.com/stocks/HUM/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "constrained (the MOST) — ~85% government book means CMS sets the rates and Star ratings set the bonus dollars; a Star-ratings downgrade + weak ~$0.9B OCF leaves almost no free capital."
+  sources:
+    - {figure: "buybacks cut to $151M FY25; OCF $921M FY25 — minimal dry powder", label: "stockanalysis.com HUM cash-flow statement + financials", url: "https://stockanalysis.com/stocks/HUM/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+    - {figure: "~85% government MA/Medicaid, CMS-set rates; #2 Medicare Advantage insurer", label: "kestrel board.yaml humana axes — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+gravity:
+  value: "GROSS ~$129.7B/yr routed — #2 Medicare Advantage insurer (~5-6M MA members) + CenterWell primary-care / home-health delivery."
+  sources:
+    - {figure: "revenue ~$118B (2024) concentrated in Medicare Advantage; exited commercial group to focus on it", label: "Wikipedia — Humana", url: "https://en.wikipedia.org/wiki/Humana", as_of: "2026-07", confidence: med}
+    - {figure: "#2 MA insurer, ~5-6M MA members", label: "kestrel board.yaml humana gravity axis — estimate (flagged)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+thrust:
+  value: "capex $546M FY25 - depreciation $773M FY25 (10-K cash-flow statement, depreciation-only line, excludes amortization) + M&A $992M TTM (Q2'25-Q1'26, driven almost entirely by the $908-911M MaxHealth acquisition closed Feb 13 2026) = ~$0.77B thrust/yr. Note: mixes FY25 capex/depreciation with TTM-through-Q1'26 M&A per task recipe (M&A explicitly time-boxed TTM; capex/depreciation reused from the file's existing FY25 figures) - a period mismatch worth flagging, not a data-quality issue."
+  weight_basis: "$55.3B total assets, balance sheet as of Mar 31 2026 (vs $48.9B at FY25 year-end Dec 31 2025) - NOT revenue, per wave-F recipe (deliberate change from the prose commanded_capital field on board.yaml, which uses revenue)."
+  gravity_basis: "~85% CMS-set Medicare Advantage/Medicaid book - #2 MA insurer, ~5-6M MA members (flagged board-anchor estimate) - a huge share of elderly/disabled beneficiaries' direct care access depends on Humana; covered-lives/system-throughput is the rationale, GROSS ~$129.7B/yr revenue routed is carried forward unchanged as the $ figure."
+  optionality_band: "locked - ~85% government book, CMS sets MA/Medicaid rates, Star ratings gate the bonus dollars, buybacks already cut to a token $151M FY25 against a collapsed ~$0.9B FY25 OCF; already the MOST constrained payer on the board, so wave-F rounds it to locked rather than merely constrained. Consistent with, not conflicting with, the file's existing optionality prose ('constrained (the MOST)') - this is the wave-F band classification layered on top."
+  buybacks_ttm: "$151M FY25 (near-frozen; no more current TTM buyback figure identified this pass, reused per task instruction)"
+  sources:
+    - {figure: "Total Assets $55,280M (Mar 31 2026, TTM balance-sheet snapshot); $48,909M (Dec 31 2025 FY-end)", label: "stockanalysis.com HUM balance sheet", url: "https://stockanalysis.com/stocks/HUM/financials/balance-sheet/", as_of: "2026-03-31", confidence: high}
+    - {figure: "Depreciation $773M FY2025 (cash-flow statement, depreciation-only line, separate from amortization); Amortization of intangibles $51M FY2025 (sums to the $824M D&A total already cross-checked against stockanalysis.com)", label: "Humana Inc FY2025 10-K, Consolidated Statement of Cash Flows", url: "https://www.sec.gov/Archives/edgar/data/49071/000004907126000009/R8.htm", as_of: "2025-12-31", confidence: high}
+    - {figure: "Cash paid for acquisitions, net of cash acquired: FY2025 $81M (10-K); Q1 2026 $911M (10-Q), almost entirely the MaxHealth acquisition (~$908M net cash, closed Feb 13 2026 - a Florida primary-care platform for adults/seniors; ~$800M allocated to goodwill)", label: "Humana Inc 10-Q (Q1 2026) - Acquisitions and Divestitures note + Condensed Consolidated Statement of Cash Flows", url: "https://www.sec.gov/Archives/edgar/data/49071/000004907126000023/R10.htm", as_of: "2026-03-31", confidence: high}
+    - {figure: "TTM (trailing four quarters, Q2'25-Q1'26) acquisitions sum to $992M ($1M + $4M + $76M + $911M) - cross-checked quarter-by-quarter against the SEC-sourced Q1 2026 figure above", label: "stockanalysis.com HUM quarterly cash-flow statement", url: "https://stockanalysis.com/stocks/HUM/financials/cash-flow-statement/?p=quarterly", as_of: "2026-03-31", confidence: med}
+
+axes_num: { weight: 55.3, thrust: 0.77, gravity: 129.7 }  # $B — wave F, agent-derived 2026-07-28
+
+notes: "Biggest uncertainty is CMS Star-ratings recovery — bonus dollars ride on it and the FY25 OCF collapse to $0.9B shows the exposure; a litigated Star-ratings dispute with CMS is the pivot. Behavioral-health arm is the THINNEST of the payers here (Humana Behavioral Health) — a relative MH-lens gap. MA membership figure is a flagged board-anchor estimate, not re-fetched primary."

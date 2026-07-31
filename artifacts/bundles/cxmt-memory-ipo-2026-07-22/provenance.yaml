@@ -1,0 +1,25 @@
+# Bundle — crawl finding cxmt-memory-ipo-2026-07-22
+artifact: artifacts/findings/cxmt-memory-ipo-2026-07-22.md
+crawled_at: "2026-07-22T20:40:00Z"
+method: >
+  WebSearch unavailable (session budget); GDELT DOC API partially
+  rate-limited ('"ChangXin Memory"' and 'CXMT entity list export controls'
+  succeeded; 4 query families rate-limited/rejected); 15 targeted fetches.
+items:
+  - {id: biggo-timeline, url: "https://finance.biggo.com/news/503cd6f5-6bde-4e19-8e0c-e4bd74249f8b", ts: "2026-07-22"}
+  - {id: scmp-oversub, url: "https://www.scmp.com/tech/article/3360892/chinese-memory-giant-cxmt-oversubscribed-212-times-mega-shanghai-ipo", ts: "2026-07-17"}
+  - {id: koreaherald-pricing-hbm, url: "https://www.koreaherald.com/article/10812818", ts: "2026-07-17"}
+  - {id: yahoo-explainer, url: "https://finance.yahoo.com/technology/articles/explainer-cxmt-did-become-chinas-092012402.html", ts: "2026-07"}
+  - {id: yahoo-caution, url: "https://finance.yahoo.com/markets/stocks/articles/cxmts-shanghai-ipo-more-200-114816593.html", ts: "2026-07-17"}
+  - {id: dealstreet-fees, url: "https://www.dealstreetasia.com/stories/chinese-banks-cxmt-ipo-489355", ts: "2026-07-17"}
+  - {id: register-squeeze, url: "https://www.theregister.com/systems/2026/07/17/chinese-memory-ban-would-cut-off-rampocalypse-relief/5273993", ts: "2026-07-17"}
+  - {id: tnw-valuation, url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", ts: "2026-07"}
+  - {id: eteknix-lockup, url: "https://www.eteknix.com/pc-makers-reserve-cxmts-dram-supply-until-2027/", ts: "2026-07-19", note: low-confidence aggregator}
+  - {id: apple-test, url: "https://www.explosion.com/201522/apple-tests-memory-chips-from-banned-chinese-supplier-cxmt/", ts: "2026-07", note: low-confidence aggregator citing FT}
+  - {id: digitimes-prospectus, url: "https://www.digitimes.com/news/a20260716VL215/cxmt-ipo-micron-samsung-dram.html", ts: "2026-07-16", note: headline-only (paywalled)}
+  - {id: chinamoney-launch, url: "https://www.chinamoneynetwork.com/2026/07/16/chinese-memory-chip-leader-cxmt-to-launch-85-billion-ipo", ts: "2026-07-16"}
+notes: >-
+  Flagged unresolved: Entity List vs DoD 1260H (secondary-only, each named
+  once); subscription-open date (07-16 vs 07-17); Digitimes "$4B" headline
+  figure vs $8.5-9.8B everywhere else; eteknix "match Micron by end-2026"
+  vs the 2-3yr HBM gap. None of these carried into digests as fact.

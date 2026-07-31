@@ -1,0 +1,80 @@
+# attention/flash.yaml — the FLASH RAIL. General-news events that must land
+# regardless of lens.
+#
+# WHY THIS EXISTS (Ben, 2026-07-29): "big world news always lands. 9/11?
+# front-page. US invades Venezuela? Front-page." The salience score ranks
+# what the map already knows to watch; a flash is for the thing the map has
+# no thread for and no lens model would surface — and which you would want
+# to know even if you had never heard of kestrel.
+#
+# THE BAR IS DELIBERATELY HIGH.
+#   - `critical` ONLY reaches the rail (Ben, 2026-07-29). `major` exists as a
+#     severity but is folded into the executive summary, never the rail.
+#   - Normally AT MOST ONE active flash. Two is exceptional. Three means the
+#     bar has drifted and the rail is worthless — if everything is a flash,
+#     nothing is.
+#   - A flash is NOT "our biggest story today." The executive summary already
+#     carries that. It is "this would lead a general news front page."
+#
+# VERIFICATION: a flash carries the same primary-source discipline as
+# everything else. Speed buys no exemption — a wrong flash is worse than a
+# late one. If it is unverified, the body says so on its face.
+#
+# PUBLIC: flashes DO publish to theprojection (Ben, 2026-07-29: "this is MY
+# news feed FIRST. If its big world news it affects finance so its
+# cohesive"). Same field allowlist discipline as everything else — nothing
+# here is private by construction, but write it as if it is public, because
+# it is.
+#
+# VOICE: neutral register (Ben, 2026-07-29) — the same frame-neutral voice
+# the digests use, not first person.
+#
+# LIFECYCLE: `expires` drops it off the rail automatically; /week prunes
+# expired entries out of this file. An expired flash is not deleted from the
+# record — its substance lives in the digests and timelines like any item.
+#
+# YAML guardrail: safe_load after every LLM edit, or git revert.
+#
+# Fields:
+#   id          stable slug
+#   date        YYYY-MM-DD the event happened (digest-day bucketing)
+#   severity    critical (reaches the rail) | major (summary only)
+#   headline    one line, plain, no hedging
+#   body        two sentences maximum — what happened, what is verified
+#   sources     [{label, url}] — primary where one exists
+#   lenses      [all] or an explicit subset when it genuinely is scoped
+#   expires     YYYY-MM-DD — auto-drops from the rail
+#   logged_by   ben-steer | curate-add
+
+flashes:
+
+  - id: iran-strikes-us-base-jordan
+    date: 2026-07-28
+    severity: critical
+    headline: "The Iran-US conflict widened sharply: direct US strikes on Iran, Saudi Arabia joins as a combatant, Kuwait and Egypt hit"
+    body: >
+      What began as an intercepted Iranian missile salvo on a US base in
+      Jordan (07-28, no casualties) escalated within 48 hours into a
+      multi-country exchange: the US struck targets inside Iran directly
+      (Bandar Abbas, Kish Island, Khuzestan's oil belt), killing civilians
+      on Qeshm Island; Saudi Arabia joined US airstrikes against
+      Iran-backed militias in Iraq, its first direct action of this kind;
+      an Iranian strike killed a worker in Kuwait, and a drone hit vessels
+      at Egypt's Damietta port — both first-time countries in this
+      conflict. The US Treasury separately sanctioned firms and tankers
+      tied to an Iranian scheme extorting insurance payments for Strait of
+      Hormuz passage. This is a wider war than the triggering event, not
+      an echo of it — updated in place rather than as a second flash.
+    sources:
+      - label: "Axios (07-28 Jordan strike)"
+        url: https://www.axios.com/2026/07/28/iran-missile-attack-us-base-jordan
+      - label: "NPR (07-30, US strikes on Iran)"
+        url: https://www.npr.org/2026/07/30/nx-s1-5913077
+      - label: "Al Jazeera live blog (07-29/30, Iraq/Kuwait/Egypt widening)"
+        url: https://www.aljazeera.com/where/iraq/
+      - label: "CNN live coverage"
+        url: https://edition.cnn.com/2026/07/28/world/live-news/iran-trump-news
+    lenses: [all]
+    expires: 2026-08-02
+    logged_by: curate-add
+    updated: 2026-07-30   # widened in place — see coverage-log.md 2026-07-30

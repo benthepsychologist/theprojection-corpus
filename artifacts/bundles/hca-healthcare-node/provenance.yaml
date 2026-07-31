@@ -1,0 +1,62 @@
+# Bundle — health node: hca-healthcare (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml hca-healthcare. EXTENDS the axis
+# strings on board.yaml with posture and the in/out/available/operating/deployed
+# breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: hca-healthcare
+name: "HCA Healthcare"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "The for-profit provider exception — a leveraged buyback + capacity machine: ~$10.1B of buybacks FY25 (more than net income, debt-funded, driving negative equity) alongside ~$4.9B capex to grow the ~186-hospital footprint."
+  sources:
+    - {figure: "share repurchases $10,067M FY25 (> FY25 net income ~$5.8B) + capex $4,944M; negative shareholders equity -$3,209M (leveraged-return model)", label: "stockanalysis.com HCA cash-flow statement + balance sheet", url: "https://stockanalysis.com/stocks/HCA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "186 hospitals + ~2,000 sites of care across 21 states and the UK (2024); 2024 net income $5.760B", label: "Wikipedia — HCA Healthcare (recent developments)", url: "https://en.wikipedia.org/wiki/HCA_Healthcare", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$1.0B cash — runs deliberately LEAN; 'available' capital is debt-capacity + ~$12.6B/yr operating cash flow, not a cash pile"
+    sources:
+      - {figure: "cash & equivalents $1,013M; total debt $51,552M; shareholders equity -$3,209M (Jun 30 2026)", label: "stockanalysis.com HCA balance sheet", url: "https://stockanalysis.com/stocks/HCA/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+  operating:
+    value: "~$75.6B FY25 revenue (~$78.0B TTM); operating cash flow ~$12.6B FY25 (strongest cash conversion of the group)"
+    sources:
+      - {figure: "revenue $75,600M FY25 / $78,013M TTM; OCF $12,636M FY25 (TTM to Jun 30 2026)", label: "stockanalysis.com HCA financials", url: "https://stockanalysis.com/stocks/HCA/financials/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$4.9B capex + ~$10.1B buybacks committed FY25 — capex builds capacity, buybacks are debt-funded returns"
+    sources:
+      - {figure: "capex $4,944M FY25; share repurchases $10,067M FY25 (-> $8,691M TTM)", label: "stockanalysis.com HCA financials + cash-flow statement", url: "https://stockanalysis.com/stocks/HCA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  in:
+    value: "inflows — ~$75.6B FY25 patient-service revenue from ~186 hospitals + ~2,000 care sites (commercial + Medicare + Medicaid mix)"
+    sources:
+      - {figure: "total revenue $75,600M FY25; 186 hospitals + ~2,000 sites of care", label: "stockanalysis.com HCA financials + Wikipedia", url: "https://stockanalysis.com/stocks/HCA/financials/", as_of: "2025-12", confidence: high}
+  out:
+    value: "outflows — labor + supply operating costs, then ~$10.1B buybacks + ~$0.7B dividends + debt service on ~$48-52B FY25"
+    sources:
+      - {figure: "share repurchases $10,067M; dividends paid $679M FY25; total debt $48,345M FY25 / $51,552M TTM", label: "stockanalysis.com HCA cash-flow statement + balance sheet", url: "https://stockanalysis.com/stocks/HCA/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "free (leveraged) — the FREEST capital allocator of the health nodes: for-profit, no MLR cap, buybacks the lever; only its revenue is rate-constrained (payer contracts + labor cost). The negative equity means the freedom is debt-financed."
+  sources:
+    - {figure: "buybacks $10,067M FY25 vs $679M dividends — capital-return machine; equity -$3,209M (financed by debt)", label: "stockanalysis.com HCA cash-flow statement + balance sheet", url: "https://stockanalysis.com/stocks/HCA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+
+gravity:
+  value: "GROSS ~$75.6B/yr routed — ~186 hospitals + ~2,000 sites of care across 21 states + the UK; the largest for-profit hospital network (provider-side care capacity)."
+  sources:
+    - {figure: "186 hospitals + ~2,000 sites of care, 21 states + UK; 316,000 employees (2024)", label: "Wikipedia — HCA Healthcare", url: "https://en.wikipedia.org/wiki/HCA_Healthcare", as_of: "2026-07", confidence: med}
+
+thrust:
+  value: "capex $4.944B (FY25) - depreciation $3.508B (FY25, depreciation-only per 10-K) + M&A $0.457B (TTM cash acquisitions) = ~$1.9B thrust/yr"
+  weight_basis: "$63.25B total assets, balance sheet, Jun 30 2026 (TTM quarter; FY25 year-end total assets $60.72B)"
+  gravity_basis: "~186-190 owned/operated hospitals + ~2,000 sites of care across ~19-21 states + the UK; provider-side acute-care capacity, not covered-lives — gravity is the fraction of regional hospital throughput/capacity HCA represents, not a payer member count."
+  optionality_band: "constrained — wave-F band applies to the regulated-REVENUE angle (Medicare/Medicaid rate-setting + CON capacity regulation on hospital expansion); the capital-ALLOCATION angle (what HCA does with cash once earned — buybacks) remains free/leveraged per this file's existing optionality block above. Flagging the tension explicitly, not silently resolving it: two different axes of 'optionality' point different ways for this actor."
+  buybacks_ttm: "$8.691B TTM (down from $10.067B FY25)"
+  sources:
+    - {figure: "total assets $63,250M (Jun 30 2026, TTM quarter) / $60,720M (Dec 31 2025, FY25 year-end)", label: "stockanalysis.com HCA balance sheet", url: "https://stockanalysis.com/stocks/HCA/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+    - {figure: "depreciation expense (excl. amortization) $3,508M FY2025 / $3,294M FY2024 / $3,052M FY2023", label: "HCA Healthcare FY2025 10-K, Accounting Policies - Additional Information note (R40)", url: "https://www.sec.gov/Archives/edgar/data/860730/000119312526044769/R40.htm", as_of: "2025-12", confidence: high}
+    - {figure: "combined D&A $3,523M FY25 / $3,674M TTM (implies amortization ~$15M FY25, immaterial vs. depreciation); capex TTM $5,127M; cash acquisitions $397M FY25 / $457M TTM", label: "stockanalysis.com HCA cash-flow statement", url: "https://stockanalysis.com/stocks/HCA/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+
+axes_num: { weight: 63.25, thrust: 1.9, gravity: 75.6 }  # $B — wave F, agent-derive 2026-07-28
+
+notes: "Biggest uncertainty is the leverage limit — the negative equity (-$3.2B) is a deliberate buyback-financed model, sustainable while OCF (~$12.6B) covers debt service but sensitive to rate/labor shocks. The board's lone provider node (not a payer): no claim-denial exposure, but the payer-side of the payer-ai-claim-denial fight bites HCA from the OTHER end — algorithmic denials by UNH/Cigna hit hospital revenue. Behavioral-health arm: HCA operates behavioral-health hospitals/units (provider capacity, not a payer MH network)."

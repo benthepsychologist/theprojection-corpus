@@ -1,0 +1,33 @@
+source_id: fec
+params:
+  endpoint: https://api.open.fec.gov/v1/filings/
+  since: '2026-07-20'
+  per_page: 25
+  sort: -receipt_date
+  terms_swept: 91
+fetched_at: '2026-07-28T18:31:54Z'
+items:
+- id: fec-1999660
+  url: https://docquery.fec.gov/pdf/080/202607209890909080/202607209890909080.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-2000844
+  url: https://docquery.fec.gov/pdf/615/202607209894366615/202607209894366615.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-2000003
+  url: https://docquery.fec.gov/pdf/296/202607209890946296/202607209890946296.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-2000352
+  url: https://docquery.fec.gov/pdf/685/202607209890999685/202607209890999685.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-1999928
+  url: https://docquery.fec.gov/pdf/039/202607209890940039/202607209890940039.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-2000497
+  url: https://docquery.fec.gov/pdf/309/202607209891045309/202607209891045309.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-1999807
+  url: https://docquery.fec.gov/pdf/173/202607209890924173/202607209890924173.pdf
+  ts: '2026-07-20T00:00:00Z'
+- id: fec-1999690
+  url: https://docquery.fec.gov/pdf/342/202607209890910342/202607209890910342.pdf
+  ts: '2026-07-20T00:00:00Z'

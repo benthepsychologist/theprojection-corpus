@@ -1,0 +1,68 @@
+# Bundle — POSTURE + CAPITAL-FLOW: samsung (foundry pocket, asof 2026-07-26)
+# WebFetch-primary (WebSearch exhausted). Primaries: stockanalysis.com Samsung Electronics
+# (KRX 005930, reported in KRW) + companiesmarketcap. GROUP figures — Samsung's foundry is a
+# subscale, loss-making slice inside a memory-led conglomerate; foundry-only splits are med/low.
+# FX ASSUMPTION: USD computed at ~1460 KRW/USD (x-rates datapoint); board.yaml 2026-07-25
+# implies ~1500. USD figures move ~+/-3% across that band.
+node: samsung
+name: "Samsung"
+pocket: foundry
+asof: 2026-07-26
+posture:
+  value: hedging
+  basis: "Capital tug-of-war: memory (HBM/DRAM) is booming and eating the capex, while the #2 foundry (~7-8% share) stays loss-making but is kept alive (Taylor, TX fab). Splits capital rather than committing to leading-edge foundry."
+  sources:
+    - {figure: "board.yaml anchor: 'HBM-vs-foundry capital tug; foundry slice small (~$15-20B/yr, loss-making, ~7-8% share, #2)'", label: "kestrel board.yaml — samsung (internal anchor, 2026-07-25)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "TTM net income doubled to KRW 83,333,739M (memory upcycle) vs FY2025 KRW 44,260,956M", label: "stockanalysis.com Samsung financials", url: "https://stockanalysis.com/quote/krx/005930/financials/", as_of: "2026-03", confidence: high}
+capital:
+  available:
+    value: "~$101B group cash + ST investments (KRW 147,378,074M at 1460; ~$50B is pure cash); total debt ~$19B (KRW 28,138,794M) — deep net-cash"
+    sources:
+      - {figure: "cash & equiv KRW 73,306,751M + ST inv KRW 74,048,085M = KRW 147,378,074M; total debt KRW 28,138,794M (Mar 31 2026)", label: "stockanalysis.com Samsung balance sheet", url: "https://stockanalysis.com/quote/krx/005930/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "USD/KRW 1460.07 (x-rates datapoint, Jan-2026); board.yaml implies ~1500", label: "x-rates USD->KRW", url: "https://www.x-rates.com/calculator/?from=USD&to=KRW&amount=1", as_of: "2026-01", confidence: low}
+  operating:
+    value: "~$75B/yr group operating cash flow (TTM KRW 109,008,388M at 1460; FY2025 KRW 85,315,148M ~$58B) — memory-driven"
+    sources:
+      - {figure: "OCF TTM KRW 109,008,388M; FY2025 KRW 85,315,148M", label: "stockanalysis.com Samsung cash-flow statement", url: "https://stockanalysis.com/quote/krx/005930/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$36B/yr group capex (TTM KRW 52,521,248M at 1460) — mostly memory/HBM lines; foundry share the minority; Taylor TX fab in flight; + US CHIPS ~$4.7B award (Taylor)"
+    sources:
+      - {figure: "capex TTM KRW 52,521,248M; FY2025 KRW 47,522,179M (group, memory-weighted)", label: "stockanalysis.com Samsung cash-flow statement", url: "https://stockanalysis.com/quote/krx/005930/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+      - {figure: "US CHIPS award ~$4.7B for Taylor, Texas foundry fab (not independently fetched this session)", label: "gov-subsidy note — flagged low-confidence, needs primary confirmation", url: "attention/board.yaml", as_of: "2024-12", confidence: low}
+  in:
+    value: "inflows: ~$266B/yr group revenue (TTM KRW 388,338,879M at 1460; FY2025 KRW 333,605,938M ~$229B) + US CHIPS ~$4.7B (Taylor); self-funded, Lee-family/chaebol equity control"
+    sources:
+      - {figure: "revenue TTM KRW 388,338,879M; FY2025 KRW 333,605,938M; net income TTM KRW 83,333,739M", label: "stockanalysis.com Samsung financials (income)", url: "https://stockanalysis.com/quote/krx/005930/financials/", as_of: "2026-03", confidence: high}
+      - {figure: "market cap ~$1.123T (SIDE-LABEL); +107% YoY off memory upcycle", label: "companiesmarketcap.com — Samsung", url: "https://companiesmarketcap.com/samsung/marketcap/", as_of: "2026-07", confidence: med}
+  out:
+    value: "outflows: ~$36B/yr capex + dividends; foundry runs at a loss (subsidized by memory profits); FCF TTM KRW 56,487,140M (~$39B)"
+    sources:
+      - {figure: "FCF TTM KRW 56,487,140M (OCF minus capex)", label: "stockanalysis.com Samsung cash-flow statement", url: "https://stockanalysis.com/quote/krx/005930/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "constrained — chaebol Lee-family voting control; HBM-vs-foundry capital tug; national champion status limits pure-profit reallocation away from foundry"
+  sources:
+    - {figure: "board.yaml anchor: 'constrained — chaebol Lee-family control; HBM-vs-foundry capital tug; national champion'", label: "kestrel board.yaml — samsung (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "GROSS ~$266B/yr group revenue orbits Samsung silicon, but the FOUNDRY slice is small (~$15-20B/yr, ~7-8% share, #2, loss-making); its heavier gravity is as a DRAM/HBM maker (overlaps the chips pocket) — undeflated"
+  sources:
+    - {figure: "group revenue TTM ~$266B (KRW 388,338,879M at 1460)", label: "stockanalysis.com Samsung financials", url: "https://stockanalysis.com/quote/krx/005930/financials/", as_of: "2026-03", confidence: high}
+    - {figure: "board.yaml anchor: 'foundry slice ~$15-20B/yr, loss-making, ~7-8% share, #2 — also a DRAM maker (chips overlap)'", label: "kestrel board.yaml — samsung (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+# --- axes_num wave C addendum (2026-07-28, agent-derive) ---
+weight:
+  value: "~$433.8B total assets (group, KRW 633,339,604M at ~1460 KRW/USD, Mar 31 2026)"
+  sources:
+    - {figure: "total assets KRW 633,339,604M; total liabilities KRW 146,703,628M; equity KRW 486,635,976M (Mar 31 2026 TTM basis)", label: "stockanalysis.com Samsung balance sheet", url: "https://stockanalysis.com/quote/krx/005930/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+thrust:
+  value: "~$3.3B/yr organic on a TTM basis (capex KRW 52.52T − D&A KRW 47.77T = KRW 4.75T, ~$3.25B at 1460) — but this UNDERSTATES the forward run-rate: FY2026 capex guidance was raised to ~$73.2B (110tn won, +22% YoY, announced 2026-03-19), well above the backward-looking TTM capex of ~$36B, implying thrust is accelerating through the year and not yet fully captured here. No Samsung-specific M&A/stakes surfaced this crawl."
+  dep_only_note: "D&A reported as one combined GROUP line by the aggregator (foundry vs memory not split, nor depreciation vs amortization) — flagged per the dep-only rule. Samsung has done no major recent acquisition that would materially inflate D&A via intangible amortization, so blended D&A is judged a reasonable dep-only proxy at the group level, though the GROUP-vs-FOUNDRY conflation (same caveat as the rest of this bundle) is the bigger source of imprecision here, not the dep/amort split."
+  sources:
+    - {figure: "capex TTM KRW 52,521,248M; D&A (combined) TTM KRW 47,774,444M ('Other Amortization' line shown as 0, i.e. no material non-fab intangible amortization)", label: "stockanalysis.com Samsung cash-flow statement", url: "https://stockanalysis.com/quote/krx/005930/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "2026 capex raised to ~$73.2B (110tn won), +22% YoY, announced 2026-03-19 — Pyeongtaek/Yongin/Taylor TX", label: "kestrel artifacts/findings/memory-trio-2026-07-28.md — Samsung section", url: "artifacts/findings/memory-trio-2026-07-28.md", as_of: "2026-07-28", confidence: med}
+buybacks_ttm:
+  value: "~$8.8B TTM (KRW 12,848,220M at 1460, up from KRW 8,189,263M FY2025) — notable and rising"
+  sources:
+    - {figure: "TTM share buybacks KRW 12,848,220M; FY2025 KRW 8,189,263M", label: "stockanalysis.com Samsung cash-flow statement", url: "https://stockanalysis.com/quote/krx/005930/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+axes_num: { weight: 433.8, thrust: 3.3, gravity: 250 }  # wave-C agent-derive 2026-07-28 — thrust is the TTM-backward figure; forward run-rate off the $73.2B guided capex would be materially higher (see thrust note). gravity is a rough estimate (group revenue $266B anchor + HBM chokepoint chase, discounted for a diversified non-chip conglomerate), low confidence
+
+notes: "Biggest uncertainty is FOUNDRY-ONLY isolation: fetched statements are GROUP-level (memory-dominated), so foundry-specific capex/revenue/loss are board-anchor estimates (~$15-20B/yr, med conf), not carved out of primaries. Samsung's Taylor-TX CHIPS award (~$4.7B) is flagged low — not independently fetched this session. FX (1460 vs 1500 KRW/USD) is a secondary ~3% swing. Wave-C addendum (07-28): the TTM-vs-guidance capex gap ($36B actual vs $73.2B guided FY2026) is the single biggest live uncertainty in the thrust number — full divisional detail + the Q2 call land 2026-07-30, two days after this crawl, and should sharpen this materially."

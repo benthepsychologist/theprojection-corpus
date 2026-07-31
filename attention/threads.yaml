@@ -1,0 +1,2056 @@
+# attention/threads.yaml — DEVELOPING THREADS (projects + stories) tracked
+# across days until they resolve.
+#
+# A thread is a PROJECT (a concrete thing being built/shipped) or a STORY
+# (a developing narrative). A single pull is a point-in-time snapshot; a
+# thread is a named, persistent narrative we keep pulling on. Collectors fold
+# each open thread's `terms` into the query sweep. When a thread resolves,
+# set status: resolved (keep it for the record).
+#
+# Seeded 2026-07-20 by one-time copy from the reference repo (operation had
+# been dark ~3 weeks). last_seen refreshed on 8 of 10 threads by the first
+# /daily's sweep (2026-07-20 evening; openai-custom-silicon and
+# apple-gemini-model-deal found nothing newer). The same day's re-triage
+# proposals (resolve gpt-5.6-release — sweep confirmed shipped 07-09; new
+# thread candidates incl. frontier-model-gov-review-precedent) were surfaced
+# in briefing #0 and AWAIT BEN'S STEERING — statuses unchanged until then.
+#
+# Fields:
+#   slug        stable id
+#   title       SHORT, scannable label (2-4 words, not a headline sentence —
+#               Ben, 2026-07-24: "they all look and feel like newspaper
+#               headlines not threads, my gaze passes right over them").
+#               The full narrative belongs in `watch`, not `title`.
+#   kind        project (a concrete thing being built/shipped) | story (a developing narrative)
+#               | meta (2026-07-23: a big-picture thread that groups sibling
+#               threads — see `parent` below; a meta-thread has its own terms
+#               and can carry its own directly-tagged items too, it isn't
+#               purely derived)
+#   status      open | developing | resolved | retired (decay-review kill —
+#               folded/abandoned rather than concluded). resolved/retired
+#               threads STAY published as archive pages (the record is the
+#               point) but drop out of sweeps and collapse into the
+#               "concluded" section on node pages (W6, 2026-07-28).
+#   genre       what KIND of story it is — a neutral slug from
+#               attention/board.yaml `genres` (ben-steer 2026-07-24). Drives
+#               the board's thread rollups and its costume label (feudal:
+#               "siege", "revolt", …). One per thread; the thing a topic tag
+#               never captures.
+#   lens        which watchlist lens it belongs to: ai | global-capital |
+#               mental-health | world-news.
+#               `global-capital` (renamed from `money` 2026-07-30, Ben:
+#               "'finance' is boring 'Global Capital' is interesting to
+#               me" — full rename, not cosmetic) is the interpretive
+#               reframe: every relevant item can carry a generated,
+#               confidence-tagged `interpretation` alongside its sourced
+#               bullet, read against the standing
+#               attention/capital-context.yaml snapshot. See DESIGN.md
+#               Part 2 for the full spec.
+#               `world-news` (2026-07-30, Ben — a fourth lens, but a
+#               NARROW one, not a peer of the other three: no watchlist
+#               entity sweep of its own, no coverage-critic benchmark
+#               set. A thread is world-news when it's genuinely
+#               irreducible to the other three — the conflict/
+#               geopolitical narrative itself (who's fighting whom,
+#               where it's widening). Its downstream capital-flow effects
+#               stay global-capital's job, cross-referenced (see
+#               `iran-conflict-widening` / `red-sea-oil-shock`'s split).
+#               New world-news threads open the normal way — a candidate
+#               from attention/world-news.yaml (tools/build_world_news.py)
+#               gets promoted.
+#   terms       query strings to sweep (quoted multi-word)
+#   opened      YYYY-MM-DD
+#   last_seen   YYYY-MM-DD the sweep last found a matching item (tool updates this)
+#   watch       what specifically we're waiting to learn (the open question)
+#   notes       running log
+#   parent      OPTIONAL (2026-07-23, Ben — "figure out how to do meta-threads").
+#               Slug of a `kind: meta` thread this one nests under (e.g.
+#               google-capex's parent is hyperscaler-capex-big-picture). The
+#               pointer lives on the CHILD, never as a `children:` list on the
+#               parent — same reason items point to threads instead of
+#               threads listing items: one source of truth, no drift. A
+#               meta-thread's ranking score aggregates its children's item
+#               counts (render/publish layer, computed, not stored); its
+#               rendered card shows children as linked rows, never a flat
+#               re-listing of their items (that would defeat the point).
+#               Nesting: prefer ≤2 levels (Ben, 2026-07-24 — "no hard cap,
+#               just caution against more than 2"). A meta MAY nest under one
+#               other meta (e.g. ai-compute-spend's parent is
+#               where-the-capex-lands, whose leaves are project threads —
+#               question→category→project). Going past 2 levels isn't
+#               forbidden but is a smell: flag it. Most metas stay one level.
+#   public      OPTIONAL, default true (every thread publishes to
+#               theprojection.org via `tools/publish_projection.py` unless
+#               told not to). Set `public: false` to hold one back — see
+#               AGENTS.md discipline 9. There's no private data here by
+#               design, so this is an escape hatch, not a gate.
+#   public_blurb  OPTIONAL. One-line public-facing summary used on the
+#               published site; falls back to `watch` if absent.
+
+threads:
+
+  - slug: gpt-5.6-release
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "GPT-5.6"
+    kind: project
+    status: resolved   # ben-steer 2026-07-22: shipped 07-09, access open; the gating story continues in frontier-model-gov-review-precedent
+    lens: ai
+    entities: [openai]   # entity slugs (watchlist-derived; added in reframe Phase 0, 2026-07-22)
+    weight: 1   # importance 1-3, amplifies move-size in the read's ranking (ben-steer 2026-07-22; tune: '/steer weight <slug> <n>')
+    terms:
+      - "GPT-5.6"
+      - "GPT-5.6 release"
+      - "GPT-5.6 delayed"
+    opened: 2026-06-26
+    last_seen: 2026-07-17
+    watch: >
+      Did GPT-5.6 ship, slip, or get gated? The June window reportedly slipped;
+      track the new expected date AND the access-restriction story (who gets to
+      use it). Prediction markets are the timing signal.
+    notes: |
+      2026-06-26: Surfaced in digest as "access regime" throughline but the
+      *slip* (June window missed) was MISSED by RSS-only collection. This thread
+      exists to make sure the timing signal is swept going forward.
+
+  - slug: openai-custom-silicon
+    genre: resource-move   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Jalapeño"
+    kind: project
+    status: retired   # decay-review 2026-07-27 (Ben) — folded into inhouse-silicon; 30d dark
+    lens: ai
+    entities: [openai, broadcom]
+    weight: 1
+    parent: ai-compute-spend   # re-pointed 2026-07-24 (capex tree)
+    terms:
+      - "Jalapeño"
+      - "OpenAI custom chip"
+      - "OpenAI Broadcom chip"
+    opened: 2026-06-27
+    last_seen: 2026-06-27
+    watch: >
+      OpenAI's first custom inference ASIC, co-developed with Broadcom (9-month
+      cycle, ~50% claimed cost/GPU). Track end-2026 deployment, real perf/cost
+      vs. claims, and the next-gen parts in the multi-generation platform.
+    notes: |
+      2026-06-27: Coverage-critic gap — led the Rundown AI & AI Daily Brief
+      (announced 06-24) but our digest carried no OpenAI-silicon signal.
+
+  - slug: openai-ipo-timing
+    genre: financing   # board.yaml genre (ben-steer 2026-07-24)
+    title: "OpenAI IPO"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [openai, sam-altman, softbank]
+    parent: frontier-lab-ipos   # ben-steer 2026-07-27 (lab-IPO meta)
+    weight: 2
+    terms:
+      - "OpenAI IPO"
+      - "OpenAI IPO delay"
+      - "OpenAI public offering"
+    opened: 2026-06-27
+    last_seen: 2026-07-30   # 07-30: ambient noise only, no timing/valuation fact moved
+    watch: >
+      Reported slip to 2027 chasing a ~$1T valuation; Altman rejecting a lower
+      price. Track confirmed timing, valuation target, and macro/AI-stock spillover
+      (SoftBank fell ~12% on the report).
+    notes: |
+      2026-06-27: Coverage-critic gap — The Neuron / CNBC carried it; we had no
+      capital-markets signal on the delay.
+
+  - slug: ai-memory-shortage
+    genre: scarcity   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Memory Squeeze"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [samsung, apple, microsoft, cxmt, sk-hynix, micron]   # ben-steer 2026-07-27 — cxmt joined the squeeze; sk-hynix/micron were already watchlisted 07-24, entity tags now wired
+    weight: 2
+    terms:
+      - "AI memory chip shortage"
+      - "HBM shortage"
+      - "DRAM price AI"
+    opened: 2026-06-27
+    last_seen: 2026-07-29
+    watch: >
+      The data-center buildout is diverting wafer capacity to HBM — a
+      reported THREE-YEAR HBM deficit — spiking DRAM/NAND prices and
+      forcing consumer-hardware price hikes (Apple, Microsoft). Now also
+      the capacity-race ledger (backlog W5: widened here, not a new
+      thread): Samsung/SK Hynix/Micron expansion responses, CXMT's
+      state-funded push (charging ABOVE Samsung; new modules with no
+      price relief; DoD ban overhang), and who blinks first on capex.
+    notes: |
+      2026-06-27: Coverage-critic gap — The Neuron / Rundown AI led with the Apple
+      price hike (06-25); we track the buildout but missed its demand-side cost echo.
+      2026-07-23: TSMC raised 2026 capex guidance to $60-64B + an
+      additional $100B Arizona investment; demand robust "through
+      2029-2030" per CEO C.C. Wei — supply-side echo of the same squeeze.
+
+  - slug: microsoft-mai-openai-decoupling
+    genre: hedge   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Microsoft's Hedge"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [microsoft, openai, anthropic]
+    weight: 2
+    terms:
+      - "Microsoft MAI"
+      - "MAI-Thinking-1"
+      - "Microsoft superintelligence"
+      - "Microsoft OpenAI stake"
+    opened: 2026-06-28
+    last_seen: 2026-07-27   # critic-fold, daily 2026-07-28
+    watch: >
+      Microsoft shipped 7 in-house MAI models and says it was "set free" from the
+      OpenAI contract to pursue superintelligence — while still holding ~27%/$135B of
+      OpenAI and embedding Anthropic's Claude in Copilot. Track how far the in-house
+      models displace OpenAI in Copilot, the MSFT–OpenAI commercial terms, and whether
+      this is genuine independence or a hedge.
+    notes: |
+      2026-06-28: Opened from radar Q1 synthesis. The most important giant-vs-lab
+      decoupling — Microsoft running a three-way hedge (OpenAI / Anthropic / in-house).
+
+  - slug: apple-gemini-model-deal
+    genre: partnership   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Apple × Gemini"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [apple, google]
+    weight: 2
+    terms:
+      - "Apple Gemini"
+      - "Apple Intelligence Gemini"
+      - "Siri Gemini Google"
+    opened: 2026-06-28
+    last_seen: 2026-07-30   # 07-30: ambient (Gemini Mac app noise, no deal-term change)
+    watch: >
+      At WWDC 2026 (06-08) Apple shipped Siri AI on Apple Foundation Models "custom-built
+      in collaboration with Google and its Gemini models" (Apple's own wording), partly
+      hosted on Google's cloud on Nvidia Blackwell GPUs under Private Cloud Compute. Deal
+      terms remain unconfirmed by either company (~$1B/yr is reporter-sourced only, never
+      officially stated). The real regulatory angle is the EU: Apple withheld Siri AI from
+      EU iPhones at launch (06-09) citing DMA compliance after the EU rejected its
+      exemption request — not US antitrust. Track: EU launch resolution, whether the
+      $1B/yr figure ever gets confirmed, whether Apple builds back toward its own frontier
+      model.   # crawl 2026-07-27
+    notes: |
+      2026-06-28: Opened from radar Q1 synthesis. The tell that the distribution giant
+      outsourced the model layer — central to the "who controls the stack" thesis.
+      2026-07-27 (crawl, Ben-approved "keep plus crawl"): 29-day blackout backfilled.
+      The weekly sweep's flagged "07-21/22 Siri-Gemini cloud-services extension" traced
+      to a stale MSN re-index of a 2026-03-02 story, not a new development — the real
+      missed story was the 06-09 EU/DMA launch block. Full arc in
+      artifacts/findings/apple-gemini-model-deal-2026-07-27.md.   # crawl 2026-07-27
+
+  - slug: ai-therapy-regulatory-reckoning
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "The Reckoning"
+    kind: story
+    status: developing
+    lens: mental-health
+    entities: [character-ai, slingshot-ai, replika]
+    weight: 3
+    terms:
+      - "AI therapy chatbot regulation"
+      - "Character.AI lawsuit"
+      - "Slingshot Ash"
+      - "FDA therapy chatbot"
+      - "chatbot wrongful death"
+    opened: 2026-06-28
+    last_seen: 2026-07-30
+    watch: >
+      The capability/approval gap for AI mental-health chatbots is being closed by
+      litigation, not evidence: Slingshot pulled Ash from the UK (no reg pathway), PA
+      is suing Character.AI (posing as doctors; 5-family suicide settlement), FDA advisers
+      say regulation is needed (none approved), 10+ wrongful-death suits. Track the first
+      real regulatory pathway (FDA/MHRA), case outcomes, and any big-tech health-arm move
+      into the vacuum. Ben's sharpest edge — the evidence-gap thesis playing out live.
+    notes: |
+      2026-06-28: Opened from radar Q1 synthesis (AI×MH cross). This is the cross-lens
+      story where Ben has the most distinctive, credible view.
+      2026-07-23: Talkspace launched "Tee," a proprietary AI MH guide
+      explicitly positioned against "mass-market chatbots" — an incumbent
+      claiming the regulated ground before regulation forces the question.
+
+  - slug: ai-circular-financing-risk
+    genre: capital-flow   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Circular Financing"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [nvidia, openai, oracle]
+    weight: 3
+    terms:
+      - "AI circular financing"
+      - "Nvidia OpenAI investment"
+      - "AI vendor financing"
+      - "OpenAI losses"
+      - "AI bubble"
+    opened: 2026-06-28
+    last_seen: 2026-07-29
+    watch: >
+      The systemic risk under the whole AI capital thesis: ~$800B+ of loops where Nvidia
+      invests in/supplies OpenAI, OpenAI commits to Oracle/cloud, those providers buy
+      Nvidia GPUs. OpenAI on track to lose ~$14B in 2026. Track the loss/revenue trajectory,
+      any unwinding or write-downs, GPU-demand softening, and credit/equity-market reaction.
+      A correction here hits everything in radar Q1/Q2.
+    notes: |
+      2026-06-28: Opened from radar Q2 synthesis. Bloomberg/UBS/INSEAD all flagging dot-com
+      echoes; defenders call it rational supply-locking. The macro signal to monitor.
+      2026-07-23: AMD to invest up to $5B in Anthropic (equity, not
+      warrants), tied to 2GW of MI450/MI455X deployment — trade press
+      calling it "the next circular deal." Same day: hyperscaler bond
+      cover ratios fell 5x (Feb) to <2x (July); Goldman/JPMorgan launched
+      AI-debt trading products; 48% of fund managers (BofA survey) now
+      name AI hyperscaler capex the top systemic-credit risk — the
+      circular-financing anxiety is showing up as a credit story now, not
+      just an equity one.
+
+  - slug: stargate-buildout
+    genre: coalition   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Stargate"
+    kind: project
+    status: developing
+    lens: ai
+    entities: [openai, softbank, oracle, mgx]
+    weight: 2
+    parent: ai-datacenter-sites   # re-pointed 2026-07-24 (capex tree)
+    terms:
+      - "Stargate"
+      - "OpenAI for Countries"
+      - "Stargate data center"
+      - "MGX Stargate"
+      - "SoftBank OpenAI"
+    opened: 2026-06-28
+    last_seen: 2026-07-30
+    watch: >
+      ~$500B / ~10 GW joint venture (OpenAI/SoftBank/Oracle/MGX); ~7 GW + >$400B committed
+      over 3 years; SoftBank carrying a $40B OpenAI loan; sovereign co-investment via
+      "OpenAI for Countries" (UAE live 2026; UK/Norway/Argentina/South Korea). Track sites
+      actually energized, financing/grid bottlenecks, sovereign terms, and slippage.
+    notes: |
+      2026-06-28: Opened from radar Q2 synthesis. The single biggest concentration of AI
+      capital + the entry point for sovereign money into the stack.
+      2026-07-23: OpenAI's "Project Camellia" disclosed — $30B+, 3.2GW
+      campus in Effingham County, GA; separately branded from Stargate but
+      the same buildout pattern (power phased 2028-2032).
+
+  - slug: mh-clinical-infra-funding
+    genre: capital-flow   # board.yaml genre (ben-steer 2026-07-24)
+    title: "The Funding Shift"
+    kind: story
+    status: developing
+    lens: mental-health
+    entities: [spring-health, talkspace]
+    weight: 3
+    terms:
+      - "digital mental health funding"
+      - "behavioral health funding"
+      - "psychiatry AI funding"
+      - "mental health startup acquisition"
+      - "interventional psychiatry funding"
+    opened: 2026-06-28
+    last_seen: 2026-07-30
+    watch: >
+      MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026), but the
+      money is going to clinician-augmentation (psychiatry copilots, AI scribes, payer-aligned
+      platforms) and interventional psychiatry (TMS/ketamine/psychedelics) — NOT consumer
+      chatbots. Track which models keep attracting capital vs. the chatbots hitting the
+      regulatory reckoning; watch consolidation (e.g. Spring Health/Alma). Tests whether the
+      market prices in rigor — the evidence-gap thesis.
+    notes: |
+      2026-06-28: Opened from radar Q2 synthesis. Capital and liability are pointing the
+      same direction (toward rigor / away from standalone chatbots) — directly relevant to
+      my company's positioning. Cross-refs ai-therapy-regulatory-reckoning.
+      2026-07-23: Teladoc unveiled "Teladoc One" — always-on AI support
+      between visits, MH therapists on the multidisciplinary team,
+      cardiometabolic focus first (Jan 2027 broader rollout). Also
+      surfaced: the CMS ACCESS Model's BH track (launched 07-05, ~85 of
+      150+ accepted applicants incl. Headspace/SonderMind/Concert
+      Health/Mindoula/April Health by Wysa) — offered as a thread
+      candidate, not yet folded in.
+
+  # --- Promoted from candidates by Ben, 2026-07-22 (ben-steer; offered in briefings #0-#1) ---
+
+  - slug: frontier-model-gov-review-precedent
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Frontier Gatekeeping"
+    kind: story
+    status: open
+    lens: ai
+    entities: [openai, anthropic, google, demis-hassabis]
+    weight: 3
+    terms:
+      - "Gold Eagle AI"
+      - "frontier model review"
+      - "AI pre-release review"
+      - "30-day AI review"
+    opened: 2026-07-22
+    last_seen: 2026-07-30
+    watch: >
+      The gpt-5.6 gating dynamic made permanent — and it's all one buildout
+      under EO 14409 (2026-06-02): the §3(b) 30-day voluntary access
+      framework (design due ~08-01, same window as the classified NSA-led
+      frontier threshold), the Gold Eagle clearinghouse (launched 07-14;
+      name not on the official record), and the FINRA-style SRO now on
+      Wiles' desk. Watch: the ~08-01 announcement's terms; whether an
+      enforcement body is named (SRO?); Meta's exclusion made official;
+      CAISI leadership (3 directors in a year — can it run classified
+      review?); the first model actually gated.
+    notes: |
+      2026-07-22: Promoted by Ben (offered 07-20, re-offered 07-22). Altman
+      briefing Washington the week of 07-27.
+      2026-07-22 (crawl): Backstory crawled — EO 14409 identified as the
+      legal anchor the press never names; June blocking/reinstatement of
+      Anthropic's Mythos 5/Fable 5; lab access programs Glasswing/Daybreak;
+      CAISI churn. Finding:
+      artifacts/findings/frontier-model-gov-review-precedent-2026-07-22.md
+      2026-07-23: CAISI Director Chris Fall resigned after 3 months (dated
+      07-20, surfaced 07-23) — NIST's Arvind Raman acting, permanent pick
+      "coming weeks." Bipartisan House "AI Kill Switch Act" + independent
+      audit bill floated, prompted by the containment breach. Confirmed
+      "Gold Eagle" is the cybersecurity clearinghouse (EO 14409), distinct
+      from the still-unnamed 30-day pre-release review framework.
+
+  - slug: china-stack-independence
+    genre: border-war   # board.yaml genre (ben-steer 2026-07-24)
+    title: "China's Stack"
+    # PROMOTED story -> meta 2026-07-29 (ben-steer: the DUV story is
+    # "probably a sub-thread of china-stack-independence"). Nesting requires
+    # the parent be kind: meta. It keeps its own terms and directly-tagged
+    # items — a meta is not purely derived. Loud + logged per spec 8.5.
+    kind: meta
+    status: open
+    lens: ai
+    entities: [zhipu-ai, moonshot-ai, alibaba-qwen, deepseek]
+    weight: 3
+    terms:
+      - "China AI chips domestic"
+      - "Z.AI data center"
+      - "Kimi K3"
+      - "China AI export controls"
+      - "China AI self-sufficiency"
+    opened: 2026-07-22
+    last_seen: 2026-07-28
+    watch: >
+      One story, both directions: Z.AI's 1 GW all-domestic-chip site, Kimi
+      K3 / Qwen3.8-Max, Alibaba open-sourcing the Zhenwu stack, Moonshot's
+      HKEX plan — and Washington's response (Commerce retreating from a
+      model ban toward procurement/hosting rules; September US-China talks)
+      plus Beijing's own proposed export controls on its models/chips. US
+      chip-equity reaction is the measure.
+    notes: |
+      2026-07-22: Promoted by Ben (offered 07-20, re-offered 07-22).
+      2026-07-22 (crawl): Backstory to Jan-2025 crawled; two of our digest
+      claims flagged uncorroborated (Commerce "pivot", September talks) —
+      corrections in the timeline + ledger. New in-window finds: Bessent
+      sanctions threat, $1.48T selloff + national-team intervention,
+      Moonshot $50B pre-IPO round, Huang pushback. Finding:
+      artifacts/findings/china-stack-independence-2026-07-22.md
+      2026-07-23: White House (OSTP's Kratsios) directly accused Moonshot
+      of distilling Anthropic's Fable to build Kimi K3 + alleged GB300
+      chips obtained via Thailand; Bessent named sanctions/Entity List as
+      options. Moonshot denies it; independent researchers (Redwood) call
+      the evidence circumstantial. China separately weighing its own
+      export controls on models/weights/training data. Offered as a
+      possible standalone thread (07-23 digest) — not yet answered.
+
+  - slug: openai-containment-breach
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Containment Breach"
+    kind: story
+    status: open
+    lens: ai
+    entities: [openai]
+    weight: 2
+    terms:
+      - "OpenAI sandbox escape"
+      - "Hugging Face breach"
+      - "OpenAI containment"
+      - "Erdos model OpenAI"
+    opened: 2026-07-22
+    last_seen: 2026-07-25
+    watch: >
+      Two distinct OpenAI incidents disclosed in one wave: the HF breach
+      (intrusion ~07-11/12; victim disclosed 07-16 unattributed; OpenAI
+      self-attributed 07-21) and the Erdős model's containment escapes
+      (safety report 07-20). Watch: who operates ExploitGym (CAISI or not —
+      determines if this happened inside a GOVERNMENT eval); formal
+      confirmation the 07-16/07-21 disclosures are one incident; whether it
+      accelerates or complicates the ~08-01 framework announcement; the
+      "guardrail asymmetry" debate (HF forensics ran on GLM 5.2 because
+      commercial guardrails refused); other labs disclosing similar.
+    notes: |
+      2026-07-22: Promoted by Ben same day it was offered. Cross-refs
+      frontier-model-gov-review-precedent.
+      2026-07-22 (crawl): Backstory crawled — victim-first disclosure
+      timeline established. Finding:
+      artifacts/findings/openai-containment-breach-2026-07-22.md
+      2026-07-23: Escalated — Bloomberg deep-dive found the breach took the
+      models hours vs. a human team's weeks; Hugging Face used Zhipu's
+      open-weight GLM-5.2 locally to investigate (blocked from analyzing
+      logs with guardrailed commercial models) — irony cross-refs
+      china-stack-independence. Prompted a bipartisan House "AI Kill
+      Switch Act" + independent-audit bill.
+
+  - slug: state-therapy-chatbot-bans
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Chatbot Bans"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [character-ai]
+    weight: 2
+    terms:
+      - "therapy chatbot ban"
+      - "state AI companion law"
+      - "AI mental health law state"
+    opened: 2026-07-22
+    last_seen: 2026-07-30
+    watch: >
+      The wave is ~10+ enacted instruments in two species (crawl 2026-07-22
+      corrected the "7 states" seed — TN unverified, VT unconfirmed):
+      practice-laws (CO's real-time-therapist mandate, IL/NV/UT, VT?) vs
+      companion-safety laws (CA/CT/GA/NH/WA/NY-disclosure/RI). Watch:
+      Hochul on S9051B/S9408A; Green on HI SB 3001; VT confirmation;
+      first ENFORCEMENT action under any enacted law (none found yet);
+      whether DOJ's preemption track reaches these laws (so far only
+      xAI v. Colorado's discrimination law); Colorado-mandate copycats.
+    notes: |
+      2026-07-22: Promoted by Ben (offered 07-20, re-offered 07-22).
+      2026-07-22 (crawl): State-by-state roundup done — seed picture
+      corrected (wider wave, TN/VT/IL/NV/UT sourcing gaps flagged; LegiScan
+      pass when keys land). Finding:
+      artifacts/findings/state-therapy-chatbot-bans-2026-07-22.md
+
+  - slug: kaiser-ai-clinician-backlash
+    genre: labor-action   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Kaiser vs. AI"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [kaiser-permanente]
+    weight: 2
+    terms:
+      - "Kaiser Permanente AI behavioral health"
+      - "Kaiser clinicians AI"
+      - "NUHW Kaiser AI"
+    opened: 2026-07-22
+    last_seen: 2026-07-30
+    watch: >
+      A two-year escalation over two specific systems (the E-Visit
+      auto-triage tool + unlicensed TSR phone triage): first union strike
+      over AI in behavioral health (03-18), formal DMHC/DOL complaint
+      (07-20), SF Committee-of-the-Whole hearing (07-21, procedural).
+      Watch: ~August mediation (does AI-replacement language survive?);
+      DMHC/DOL response to the complaint; SB 903's Assembly path (would
+      make E-Visit a statutory question); second-strike risk; whether
+      other systems face the same (Kaiser Hawaii shows the template).
+    notes: |
+      2026-07-22: Promoted by Ben same day it was offered (surfaced as a
+      coverage-critic catch — BHB 07-21 lead). Kaiser Permanente added to
+      watchlist same day (critic-add).
+      2026-07-22 (crawl): Primary-sourced backstory to 2023 (NUHW releases
+      + complaint PDF, SF Board agenda, DMHC survey, KQED). NUHW itself is
+      not a watchlist entity — steering gap flagged. Finding:
+      artifacts/findings/kaiser-ai-clinician-backlash-2026-07-22.md
+      2026-07-23: Second coverage wave on Tuesday's SF hearing — Kaiser
+      no-showed; supervisors called it "extremely disrespectful" and
+      "infuriating, concerning and unacceptable." NUHW's "Terrible Three"
+      framing crystallized. Per Kaiser's labor-relations page, NUHW isn't
+      available for mediation until August — no firm date yet.
+
+  - slug: cxmt-memory-ipo
+    genre: resource-move   # board.yaml genre (ben-steer 2026-07-24)
+    title: "CXMT IPO"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [cxmt, micron]   # ben-steer 2026-07-27 — micron tagged (−8% on the debut read-through); prior fix: was [] w/ stale note
+    weight: 1
+    terms:
+      - "CXMT IPO"
+      - "ChangXin Memory"
+      - "CXMT listing"
+    opened: 2026-07-22
+    last_seen: 2026-07-28
+    watch: >
+      Up-to-$9.8B STAR Market listing (allotment 07-22, lists 07-27) funding
+      Chinese DRAM/HBM capacity into the global squeeze. Track first-day
+      reception, capacity-buildout plans vs. the shortage, and read-through
+      to ai-memory-shortage and china-stack-independence.
+    notes: |
+      2026-07-22: Promoted by Ben (offered 07-20, re-offered 07-22). Pairs
+      with ai/ai-memory-shortage.
+      2026-07-22 (crawl): Capital backstory crawled — ~$85B cap, 36.29%
+      state pre-IPO, High-Flyer/Liang bid, 0.48% fees, HBM gap 2-3yrs,
+      squeeze-relief verdict "not before 2028". Watch adds: first-day
+      reception 07-27; Entity-List vs 1260H primary confirmation; the
+      Apple-testing-CXMT story needs a primary source. Finding:
+      artifacts/findings/cxmt-memory-ipo-2026-07-22.md
+      2026-07-23: Pricing finalized at 8.66 yuan/share, raised ~$8.6B (up
+      from an earlier $4.3-4.4B target), implied market cap ~588B yuan
+      (~$87B); institutional bookbuilding 462.85x oversubscribed (~4x
+      SMIC's 114.97x in 2020). Listing date confirmed July 27, ticker
+      688825.
+
+  # --- Hyperscaler capex meta-thread + its four sub-threads (ben-steer 2026-07-23) ---
+
+  - slug: hyperscaler-capex-big-picture
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Hyperscaler Capex"
+    kind: meta
+    status: open
+    lens: ai
+    entities: [google, meta-ai, amazon-aws, microsoft, nvidia]
+    weight: 3
+    terms:
+      - "hyperscaler capex"
+      - "Big Tech capex"
+      - "AI infrastructure spending 2026"
+      - "cloud capex guidance"
+    opened: 2026-07-23
+    last_seen: 2026-07-29   # crawl 2026-07-27
+    watch: >
+      The combined 2026 plan is now ~$610-650B across the four (Google
+      $195-205B · Microsoft ~$100B+ FY26 · Amazon ~$200B · Meta $135-145B
+      guidance) — destination TRACED per actor 07-27 (see the comparable
+      table in this thread's timeline + the four *-capex findings). The
+      standing questions: whether AI revenue catches the spend (payoff
+      layer is press-only), the undisclosed own-silicon vs Nvidia splits
+      (4/4 refuse), power as the binding constraint (nuclear '27-'39 vs
+      Meta's gas pivot), and capex migrating off balance sheets (Blue Owl,
+      bonds, leases → the financing threads). Earnings Wed/Thu (Meta+MSFT
+      07-29, AMZN 07-30) are the live test.
+    notes: |
+      2026-07-23: Opened as a meta-thread grouping google-capex,
+      meta-capex, aws-capex, microsoft-capex (ben-steer — "figure out how
+      to do meta-threads"). Seeded from items already tagged this week:
+      the $725B combined-capex framing (07-20) and Alphabet's raised
+      guidance (07-22, first hyperscaler to report this earnings cycle).
+
+  - slug: google-capex
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Google Capex"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [google]
+    weight: 2
+    parent: hyperscaler-capex-big-picture
+    terms:
+      - "Google capex"
+      - "Alphabet capex"
+      - "Google Cloud capex"
+      - "Alphabet capital expenditure"
+    opened: 2026-07-23
+    last_seen: 2026-07-27   # crawl 2026-07-27
+    watch: >
+      $195-205B guided for 2026 (07-22), destination traced by crawl 07-27:
+      a 15+ state land-grab (MO $15B, MI 1GW "Cannoli", TX 1GW+, NextEra
+      3×GW-scale) + India $15B hub — not a few megasites. TPU v7 "Ironwood"
+      vs Nvidia split UNDISCLOSED (Anthropic's 1M-TPU deal is the clearest
+      volume signal). Solar-dominant PPAs + first Gen-IV utility deal
+      (TVA/Kairos, 2030). Payoff case ($514B backlog, Cloud +82%) is
+      press-corroborated, primary filing unreached. Watch: Q3 guidance,
+      the FCF-negative reaction, TPU externalization (Meta eval).
+    notes: |
+      2026-07-23: Opened (ben-steer), split out of ai-circular-financing-risk
+      so Google's capex trajectory has its own thread rather than being one
+      line inside the broader circular-financing story. Backfilled with
+      07-20/07-22 items already curated this week.
+      2026-07-23 (finalize): Full Q2 detail — revenue $119.8B (+24% YoY,
+      beat), Cloud +82% to $24.8B with a $514B backlog, but stock fell
+      >6% (not ~5% as first read) and 2027 capex flagged to "increase
+      significantly." Google testing Gemini 3.5 Pro, began pretraining
+      Gemini 4.
+
+  - slug: meta-capex
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Meta Capex"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [meta-ai]
+    weight: 2
+    parent: hyperscaler-capex-big-picture
+    terms:
+      - "Meta capex"
+      - "Meta Platforms capex"
+      - "Meta AI infrastructure spending"
+      - "Meta data center spending"
+    opened: 2026-07-23
+    last_seen: 2026-07-29   # crawl 2026-07-27
+    watch: >
+      The week's reversal: Meta QUIT RE100 amid a 7.5GW gas buildout
+      (07-23/24) and SOLD 80% of Hyperion (5GW, $50B+) to Blue Owl —
+      capex migrating off its balance sheet while El Paso ($10B/1GW)
+      faces live local pushback and the BlackRock bond ran a
+      soft-demand-then-upsized-to-$12.5B arc in one week. MTIA at
+      "millions" of H100-equivalents (600K figure is STALE), "Iris" to
+      production Sept-26, Broadcom extended thru 2029. Superintelligence
+      framing softening ("more slowly than expected"); Moody's credit
+      warning 07-24. OPEN DISCREPANCY: our $76B TTM basis vs the $135B/
+      $145B guidance figures that actually recur — resolve at earnings
+      Wednesday 07-29.
+    notes: |
+      2026-07-23: Opened (ben-steer). Backfilled with the 07-22 AMD deal
+      and Anthropic-cloud-talk items (both previously tagged only to
+      entities, no thread).
+
+  - slug: aws-capex
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "AWS Capex"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [amazon-aws]
+    weight: 2
+    parent: hyperscaler-capex-big-picture
+    terms:
+      - "AWS capex"
+      - "Amazon capex"
+      - "Amazon Web Services capital expenditure"
+      - "Amazon data center spending"
+    opened: 2026-07-23
+    last_seen: 2026-07-30
+    watch: >
+      Earnings 07-30 (corrected from ~07-31). Crawl 07-27: the AGI-cuts vs
+      $200B-plan "contradiction" is coherent — retreat from frontier
+      research, double down as the labs' landlord: $364B backlog EXCLUDING
+      Anthropic's new $100B+/decade commitment (grew 10 days AFTER the
+      Google TPU deal — diversification, not displacement); OpenAI $50B
+      investment + separate $100B/8yr compute deal CONFIRMED (02-27
+      announcement). Rainier live (500K Trainium2, $26B IN); 1.4M Trainium
+      deployed; Talen 1.92GW/17yr + X-Energy 5GW-by-2039. Watch 07-30:
+      capex guide, backlog, FCF (reportedly borrowing $25B).
+    notes: |
+      2026-07-23: Opened (ben-steer), quiet at open — stated plainly per
+      the curation rubric rather than backfilled with a stretch.
+      2026-07-23 (finalize): Amazon cut AGI research roles
+      (model-customization/post-training) while the $200B 2026 capex plan
+      holds — pivot toward enterprise deployment over frontier research,
+      not a capex-figure change.
+
+  - slug: microsoft-capex
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Microsoft Capex"
+    kind: story
+    status: developing
+    lens: ai
+    entities: [microsoft]
+    weight: 2
+    parent: hyperscaler-capex-big-picture
+    terms:
+      - "Microsoft capex"
+      - "Microsoft Azure capex"
+      - "Microsoft capital expenditure"
+      - "Microsoft data center spending"
+    opened: 2026-07-23
+    last_seen: 2026-07-30
+    watch: >
+      Earnings 07-29 is the near-term test — the "$97B TTM" figure is OUR
+      arithmetic (unconfirmed; $80.1B 9-mo FY26 is the IR number). Crawl
+      07-27 traced: WI+GA "AI superfactory" (~2GW, fiber-linked) + a
+      distinct Pecos TX ~2GW on Chevron's Kilby PPA ($7B, 2.7GW); Maia 200
+      confirmed DUAL-PURPOSE (OpenAI inference + MAI training) with the
+      split undisclosed; TMI/Crane restart tracking 2027; $37B AI run-rate
+      +123%. The $250B OpenAI commitment has NO disclosed capex mapping —
+      nobody publishes the OpenAI-vs-own split. Watch Wednesday: FY26
+      full-year capex, FY27 guide, any split disclosure.
+    notes: |
+      2026-07-23: Opened (ben-steer), quiet at open — stated plainly per
+      the curation rubric rather than backfilled with a stretch.
+      2026-07-29: date churned and ended back where it started — 07-29 is
+      correct, verified against TWO Microsoft primary sources (the FY26 Q4
+      IR event page and news.microsoft.com's release-date notice, which
+      says "after the close of the market on Wednesday, July 29, 2026").
+      The sequence is worth keeping because every intermediate step was
+      defensible and still wrong: a readout agent found this prose (07-29)
+      disagreeing with `upcoming.yaml` (07-30, confidence: confirmed) and
+      trusted the structured ledger over prose — a good heuristic; Ben
+      confirmed 07-30 from memory; the prose was "corrected" to 07-30 and
+      to "Watch Thursday". Then the /daily earnings agent checked Microsoft
+      IR directly and found 07-29. **The ledger was the wrong authority and
+      so was recollection — only the primary source settled it.** Reverted;
+      `upcoming.yaml` corrected to 07-29 (it was the actually-wrong record).
+
+  # --- Promoted from candidates by Ben, 2026-07-24 (ben-steer; offered in the 07-23 finalize) ---
+
+  - slug: kimi-distillation-fight
+    genre: legitimacy-dispute   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Distillation Fight"
+    kind: story
+    status: open
+    lens: ai
+    entities: [moonshot-ai, anthropic]
+    weight: 3
+    terms:
+      - "Moonshot distillation"
+      - "Kimi K3 sanctions"
+      - "Moonshot Entity List"
+      - "Kratsios Moonshot"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      The White House (OSTP's Kratsios) directly accused Moonshot of
+      distilling Anthropic's Fable model to build Kimi K3, plus obtaining
+      restricted Nvidia GB300 chips via Thailand; Bessent named
+      sanctions/Entity List as options. Moonshot denies it; independent
+      researchers call the evidence circumstantial. Lands right before
+      K3's open weights ship (07-27). Watch: any formal Commerce/Entity
+      List action, Moonshot's response, independent verification one way
+      or the other, and whether it chills enterprise adoption of K3.
+    notes: |
+      2026-07-24: Promoted by Ben (offered in the 07-23 finalize; split
+      out of china-stack-independence into its own thread — a named
+      accusation + named denial + concrete sanctions threat has its own
+      shape distinct from the broader stack-independence story).
+
+  - slug: iran-conflict-widening
+    genre: border-war   # board.yaml genre (ben-steer 2026-07-30 — split from red-sea-oil-shock)
+    title: "Iran's Widening War"
+    kind: story
+    status: open
+    lens: world-news
+    entities: []
+    weight: 3
+    terms:
+      - "Iran Saudi Iraq war"
+      - "Houthi Red Sea attack"
+      - "Iran US strikes"
+      - "Iran Jordan missile"
+      - "Bab el-Mandeb blockade"
+    opened: 2026-07-23
+    last_seen: 2026-07-30
+    watch: >
+      What began as Houthi tanker strikes and a Red Sea blockade (07-23)
+      widened past the 07-28 Iranian missile attack on a US base in
+      Jordan into direct US strikes inside Iran, Saudi Arabia joining as
+      a combatant in Iraq, and strikes reaching Kuwait and Egypt for the
+      first time. Diplomacy is now fragmenting rather than converging —
+      Saudi Arabia building an international protection coalition, China
+      running its own separate track with the Houthis — with no
+      ceasefire and no further confirmed combatant as of 07-30. This is
+      the conflict for its own sake — who's fighting whom, where it's
+      widening, what diplomacy is doing about it. Its capital-markets
+      and underwriting read is a separate, deliberately distinct thread:
+      `red-sea-oil-shock`. Do not add Israel as a combatant without a
+      dedicated primary-source check — several aggregators frame this as
+      a "US-Israel-Iran war" with nothing found to confirm it.
+    notes: |
+      2026-07-30: Split out of `red-sea-oil-shock` on Ben's steer — "the
+      conflict in Iran is the world news thread; Red Sea oil shock IS a
+      money thread." (Quoted as said — the money→global-capital rename
+      landed later the same session.) Backfilled from red-sea-oil-shock's
+      own history (opened 07-23, same origin event); the
+      conflict-narrative content moved here, the market-reaction content
+      stayed on the global-capital thread. First thread carrying the new
+      `world-news` lens.
+
+  - slug: red-sea-oil-shock
+    genre: exogenous-shock   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Red Sea Shock"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: []
+    weight: 3
+    terms:
+      - "Red Sea tanker attack"
+      - "Houthi oil"
+      - "Iran Saudi oil shock"
+      - "Brent crude Middle East"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      Houthi (Iran-backed) forces struck two Saudi oil tankers and
+      declared a naval blockade of Saudi ports (07-23) — Brent spiked +7%
+      to ~$100.69, Goldman flagged a path to $120+. Now the proximate
+      driver of oil, Treasury yields, Fed-hike odds, and equity-selloff
+      spillover (compounded the Alphabet-led Mag7 rout into its worst day
+      since April 2025), plus the underwriting layer directly (Treasury
+      vs. Hormuz insurance-extortion firms). This is the capital-markets
+      and risk-underwriting read of the war, deliberately distinct from
+      the conflict itself — see `iran-conflict-widening` (world-news)
+      for who's fighting whom. Watch: oil/shipping premiums, the
+      underwriting layer, and how far it feeds into Fed policy.
+    notes: |
+      2026-07-24: Promoted by Ben (offered in the 07-23 finalize) — the
+      07-23 early-morning draft had missed this entirely, attributing the
+      day's selloff to AI-capex anxiety alone.
+      2026-07-30: Conflict-narrative content split out to
+      `iran-conflict-widening` (ben-steer) — this thread keeps oil,
+      shipping, and underwriting/capital-markets content only.
+
+  - slug: cms-access-model-bh
+    genre: capital-flow   # board.yaml genre (ben-steer 2026-07-24)
+    title: "ACCESS Model"
+    kind: project
+    status: open
+    lens: mental-health
+    entities: [headspace, sondermind, wysa]
+    weight: 2
+    terms:
+      - "CMS ACCESS Model"
+      - "ACCESS Model behavioral health"
+      - "Outcome-Aligned Payments"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      CMS's 10-year Outcome-Aligned-Payments demonstration (launched
+      07-05) — ~85 of 150+ accepted applicants chose the behavioral-health
+      track, including Headspace, SonderMind, Concert Health, Mindoula
+      Health, and April Health by Wysa, tying outcomes-based payment
+      directly to multiple watchlist entities at once. Watch: which
+      tracked companies' outcomes hold up under OAPs, whether the model
+      expands, and read-through to mh-clinical-infra-funding's "does the
+      market price in rigor" thesis.
+    notes: |
+      2026-07-24: Promoted by Ben (offered in the 07-23 finalize).
+      Concert Health and Mindoula Health aren't watchlist entities —
+      steering gap flagged, same pattern as CXMT/NUHW/Hugging Face.
+
+  # --- SpaceXAI: what House Musk's AI realm is DOING (ben-steer 2026-07-24;
+  #     answers the SpaceX Q1 gap the /classify dormant posture exposed) ---
+
+  - slug: spacex-colossus
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Colossus"
+    kind: project
+    status: open
+    lens: ai
+    entities: [spacex, elon-musk, xai]
+    weight: 2
+    parent: ai-datacenter-sites   # re-pointed 2026-07-24 (capex tree)
+    terms:
+      - "Colossus xAI"
+      - "xAI Memphis data center"
+      - "xAI supercomputer"
+      - "Colossus GPU cluster"
+    opened: 2026-07-24
+    last_seen: 2026-07-25
+    watch: >
+      SpaceXAI's self-owned training compute (Colossus, Memphis) — the
+      "owns its mines" fact that makes it structurally distinct from
+      OpenAI/Anthropic, who rent. Track the live GPU count + power draw,
+      the reported scale-to-1M-GPU plan, grid/power constraints, and
+      whether owning the mines translates into a frontier Grok. Feeds the
+      "who controls the stack" thesis (radar Q1).
+    notes: |
+      2026-07-24: Promoted by Ben (offered in the radar-Q1 SpaceX
+      candidates); crawled same day. Finding:
+      artifacts/findings/spacex-colossus-2026-07-24.md
+      Big cross-thread find: Anthropic rents ALL of Colossus 1 ($1.25B/mo,
+      ~$40B through 2029) — SpaceX's mines became a revenue lever, and
+      Anthropic ("rents its mines") now rents from SpaceX.
+
+  - slug: grok-frontier
+    genre: buildout-race   # board.yaml genre — capability race (imperfect fit; no "model-race" genre yet — flagged to Ben 2026-07-24)
+    title: "Grok"
+    kind: story
+    status: open
+    lens: ai
+    entities: [spacex, elon-musk, xai]
+    weight: 2
+    terms:
+      - "Grok 5"
+      - "Grok 4.5"
+      - "xAI Grok model"
+      - "Grok benchmark ranking"
+    opened: 2026-07-24
+    last_seen: 2026-07-25
+    watch: >
+      The Grok line closing the frontier gap as a FAST FOLLOWER, not
+      mid-pack (crawl 2026-07-24 corrected our seed): Grok 4.5 (07-08)
+      posted the biggest single-gen leap on the AA Intelligence Index
+      (38→54), 4th at launch, strong on coding (76, ties GPT-5.5) and price
+      ($2/$6, 500k context) — the real weakness is factuality (~54%
+      hallucination). Track Grok 5 (training on Colossus 2; ship date
+      slipping Q1→Q3+ amid Musk hype), the $60B Cursor bet arming coding,
+      and whether owning the mines sustains a lead vs. OpenAI/Anthropic.
+    notes: |
+      2026-07-24: Promoted by Ben; crawled same day (corrected rank 9th→4th
+      and coding weak→strong). Finding:
+      artifacts/findings/grok-frontier-2026-07-24.md
+      Genre is a loose fit — a capability/model race has no clean genre in
+      board.yaml yet (flagged to Ben).
+
+  - slug: spacexai-public-megacap
+    genre: financing   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Musk Megacap"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [spacex, elon-musk, tesla]
+    parent: frontier-lab-ipos   # ben-steer 2026-07-27 (lab-IPO meta)
+    weight: 1
+    terms:
+      - "SpaceXAI valuation"
+      - "SpaceX xAI merger"
+      - "SpaceXAI public offering"
+      - "xAI SpaceX X valuation"
+    opened: 2026-07-24
+    last_seen: 2026-07-28
+    watch: >
+      SpaceX (Nasdaq: SPCX) — the public parent holding xAI + X (crawl
+      2026-07-24 corrected the framing: "SpaceXAI" is only the AI
+      subsidiary). IPO'd 06-12 at $135/~$1.75T (record ~$75B raised),
+      peaked ~$2.6T 06-16, now ~$1.56T (07-23, BELOW the IPO price). The
+      cash engine is Starlink (~$4.4B FY25 op income), funding Starship R&D
+      + xAI's Colossus burn ($7.7B capex in Q1-26 alone) — the IPO is the
+      AI financing bridge. Watch: the Aug-6 lock-up (911.5M shares); Musk's
+      ~82% voting control; whether the Anthropic lease-back is real revenue
+      or circular financing. Q7 material.
+    notes: |
+      2026-07-24: Promoted by Ben; crawled same day off SEC EDGAR. Three
+      corrections: entity is SPCX not "SpaceXAI"; $2.1T was the debut not
+      today; Starlink (not Starship) is the funder. Finding:
+      artifacts/findings/spacexai-public-megacap-2026-07-24.md
+
+  - slug: grok-companion-harm
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Grok Harm"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [spacex, xai]
+    weight: 2
+    terms:
+      - "Grok harmful content"
+      - "Grok companion mental health"
+      - "Grok safety controversy"
+      - "Grok AI harm lawsuit"
+    opened: 2026-07-24
+    last_seen: 2026-07-29
+    watch: >
+      CONFIRMED substantial (crawl 2026-07-24). Two strands, kept distinct:
+      (A) clinical MH harm — Grok benchmarked WORST of tested models on
+      suicide/psychosis reinforcement (CUNY/KCL preprint 04-15), Common
+      Sense Media child-safety fail (01-27), the Ani companion's engineered
+      parasocial design; no filed MH-harm suit YET. (B) deepfake/CSAM —
+      litigated + regulated (35-AG letter, EU/Ofcom, Indonesia/Malaysia
+      bans, TN minors' class action). Root cause of both is the explicit
+      anti-guardrail design. Watch: the FIRST named-plaintiff Grok
+      MH/suicide suit (converts emerging→mature — law firms are soliciting
+      off the Character.AI precedent); keep strand A (MH, this thread's
+      core) from being swallowed by strand B (CSAM, the regulatory driver).
+      Cross-refs ai-therapy-regulatory-reckoning.
+    notes: |
+      2026-07-24: Promoted by Ben as a CONFIRM-or-drop candidate; the crawl
+      confirmed it's real (not thin). Finding:
+      artifacts/findings/grok-companion-harm-2026-07-24.md
+      Rigor flag: the strongest MH evidence (arXiv study) is a preprint;
+      the clinical "AI psychosis" data isn't Grok-exclusive. Solid but not
+      yet court-tested on the MH axis.
+
+  # --- Where the ~$750B AI capex LANDS — the destination cut (ben-steer
+  #     2026-07-24; sibling to hyperscaler-capex-big-picture's by-SPENDER cut) ---
+
+  - slug: where-the-capex-lands
+    genre: buildout-race   # board.yaml genre (ben-steer 2026-07-24)
+    title: "Where the Capex Lands"
+    kind: meta
+    status: open
+    lens: ai
+    entities: [nvidia, openai, spacex, google, meta-ai]
+    weight: 3
+    terms:
+      - "AI data center construction"
+      - "AI power deal nuclear"
+      - "gigawatt data center"
+      - "AI chip purchase order"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      The ~$750B question posed as a DESTINATION, not a spender: where does
+      the aggregate AI capex actually land, on what projects? The taxonomy —
+      chips (Nvidia/AMD/TSMC/Broadcom + custom silicon like Jalapeño),
+      datacenters (Stargate, Camellia, Colossus + the 100s of sites), power
+      (gas turbines, nuclear-for-AI, grid), land/cooling/water. Sibling to
+      hyperscaler-capex-big-picture, which cuts the SAME money by spender;
+      this one follows it to where it physically lands. Most destinations
+      have no thread yet — that's the worklist.
+    notes: |
+      2026-07-24: Opened as a meta-thread (ben-steer) — the DESTINATION cut
+      of AI capex, orthogonal to hyperscaler-capex-big-picture's by-spender
+      cut. Children so far are the clear destination-projects (Stargate,
+      Colossus, Jalapeño). The gaps it exposes — the chip-spend itself, the
+      power deals (nuclear-for-AI), and the specific sites — are the
+      collection worklist. Siblings, not nested (one level of nesting), so
+      this and the by-spender meta sit side by side.
+
+  # ===================================================================
+  # CAPEX DESTINATION TREE (ben-steer 2026-07-24) — 2-level under
+  # where-the-capex-lands: category metas → project threads. The chip/
+  # power/sites categories Ben named; leaves are crawl-pending stubs.
+  # ===================================================================
+
+  - slug: ai-compute-spend
+    genre: resource-move
+    title: "Compute Spend"
+    kind: meta
+    status: open
+    lens: ai
+    entities: [nvidia, google, amazon-aws, microsoft, openai]
+    weight: 3
+    parent: where-the-capex-lands   # 2-level (ben-steer 2026-07-24)
+    terms:
+      - "AI chip purchase order"
+      - "custom AI silicon"
+      - "Nvidia GPU demand"
+    opened: 2026-07-24
+    watch: >
+      Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/
+      Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia,
+      TPU) as the giants try to stop renting from Nvidia. Category meta
+      under where-the-capex-lands.
+    notes: |
+      2026-07-24: Opened (ben-steer) as the chip-spend category.
+
+  - slug: ai-power-buildout
+    genre: resource-move
+    title: "Power Buildout"
+    kind: meta
+    status: open
+    lens: ai
+    entities: [spacex, microsoft, amazon-aws, oracle]
+    weight: 3
+    parent: where-the-capex-lands   # 2-level (ben-steer 2026-07-24)
+    terms:
+      - "AI data center power"
+      - "nuclear for AI"
+      - "data center grid gas turbine"
+    opened: 2026-07-24
+    watch: >
+      Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI
+      (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights),
+      grid deals, and the energy-justice/permitting battles. Category meta
+      under where-the-capex-lands.
+    notes: |
+      2026-07-24: Opened (ben-steer) as the power-build category.
+
+  - slug: ai-datacenter-sites
+    genre: buildout-race
+    title: "Datacenter Sites"
+    kind: meta
+    status: open
+    lens: ai
+    last_seen: 2026-07-28
+    entities: [openai, spacex, softbank, oracle]
+    weight: 3
+    parent: where-the-capex-lands   # 2-level (ben-steer 2026-07-24)
+    terms:
+      - "AI data center campus"
+      - "gigawatt data center site"
+    opened: 2026-07-24
+    watch: >
+      Where the capex lands in CONCRETE — the specific gigawatt campuses.
+      Stargate, Colossus, Camellia + the 100s of sites. Category meta under
+      where-the-capex-lands; the specific-sites worklist lives here.
+    notes: |
+      2026-07-24: Opened (ben-steer) as the sites category.
+
+  # --- Compute-spend leaves ---
+  - slug: nvidia-order-book
+    genre: capital-flow
+    title: "Nvidia's Order Book"
+    kind: story
+    status: open
+    lens: ai
+    entities: [nvidia, openai, meta-ai]
+    weight: 2
+    parent: ai-compute-spend
+    terms:
+      - "Nvidia order backlog"
+      - "Nvidia GB300 demand"
+      - "hyperscaler GPU purchase"
+    opened: 2026-07-24
+    last_seen: 2026-07-26   # first real item (gap-day reconstruction 2026-07-27)
+    watch: >
+      The demand side of the chip spend — a ~$1T Blackwell+Rubin book (a
+      management aggregate, not audited backlog); the $100B OpenAI deal is
+      dead, and the constraint has shifted to supply (HBM4). Watch the per-
+      customer concentration and the circular-financing stakes (Nvidia's 10-Q
+      investments in its own buyers).
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  - slug: inhouse-silicon
+    genre: resource-move
+    title: "In-House Silicon"
+    kind: story
+    status: open
+    lens: ai
+    entities: [google, amazon-aws, microsoft, meta-ai, openai, broadcom]   # decay-review 2026-07-27 — absorbed openai-custom-silicon (Jalapeño)
+    weight: 2
+    parent: ai-compute-spend
+    terms:
+      - "Google TPU"
+      - "Amazon Trainium"
+      - "Microsoft Maia"
+      - "Meta MTIA chip"
+    opened: 2026-07-24
+    last_seen: 2026-07-25   # first real item (gap-day reconstruction 2026-07-27)
+    watch: >
+      The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE-
+      only, anchored by Anthropic running mostly off Nvidia on Trainium + TPU.
+      Nvidia's absolute demand still grows; the clearest winners are the co-
+      design houses (Broadcom, Marvell). Watch whether displacement reaches
+      frontier training.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  # --- Power-buildout leaves ---
+  - slug: nuclear-for-ai
+    genre: resource-move
+    title: "Nuclear for AI"
+    kind: story
+    status: open
+    lens: ai
+    entities: [amazon-aws, microsoft, oracle]
+    weight: 2
+    parent: ai-power-buildout
+    terms:
+      - "nuclear power AI data center"
+      - "SMR small modular reactor AI"
+      - "Oklo X-Energy data center"
+    opened: 2026-07-24
+    last_seen: 2026-07-25   # first real item (gap-day reconstruction 2026-07-27)
+    watch: >
+      The nuclear-for-AI wave — but ~0 net-new MW power any AI datacenter
+      before 2027, and the first firm power is a RESTART (TMI-1), not a new
+      build. The ~13GW announced is <20% of projected demand; every genuinely
+      new SMR/Gen-IV project is 2030s-weighted. Watch which actually clear
+      licensing.
+    notes: |
+      2026-07-24: Opened (ben-steer) — closes a long-flagged gap; /crawl pending.
+
+  - slug: datacenter-power-grid
+    genre: resource-move
+    title: "Grid & Turbines"
+    kind: story
+    status: open
+    lens: ai
+    entities: [spacex]
+    weight: 1
+    parent: ai-power-buildout
+    terms:
+      - "data center gas turbine permit"
+      - "AI data center grid interconnection"
+    opened: 2026-07-24
+    last_seen: 2026-07-25   # first real item (gap-day reconstruction 2026-07-27)
+    watch: >
+      The grid is the binding constraint (not chips) — interconnection queues
+      exploding, hyperscalers self-supplying via gigawatt-scale gas, an
+      equipment ceiling (turbines sold out to 2030, transformers ~3yr), and
+      the ratepayer + environmental-justice fights. Watch the DOJ national-
+      security shield over xAI's unpermitted turbines — the improvisation has
+      outrun the regulatory system.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  # --- Datacenter-sites leaf ---
+  - slug: camellia
+    genre: buildout-race
+    title: "Camellia"
+    kind: project
+    status: open
+    lens: ai
+    last_seen: 2026-07-28
+    entities: [openai]
+    weight: 1
+    parent: ai-datacenter-sites
+    terms:
+      - "OpenAI Georgia data center"
+      - "Project Camellia Effingham"
+    opened: 2026-07-24
+    watch: >
+      OpenAI-direct build (Octans GA LLC/Butler Snow — no named GC or
+      Stargate-JV backer): Savannah Gateway Industrial Hub, Rincon,
+      Effingham County GA; 3.2GW/25yr Georgia Power PPA phased 2028-2032;
+      $20-30B cost unreconciled across outlets; pre-construction, DRI
+      filed 07-24, Coastal Regional Commission review (≤30d) pending.
+      DISTINCT from SoftBank's ~10GW Ohio (Portsmouth) campus. Track:
+      the local secrecy backlash (10K+ petition), generation-mix
+      disclosure, and whether a GC/financing partner surfaces.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  # ===================================================================
+  # BIG TECH INTO HEALTH (ben-steer 2026-07-24) — 1-level meta over per-
+  # giant health-arm threads (Ben's sharpest lens, previously blank).
+  # ===================================================================
+
+  - slug: bigtech-into-health
+    genre: partnership   # genre gap: "market entry" has no clean board.yaml genre — flagged
+    title: "Big Tech into Health"
+    kind: meta
+    status: open
+    lens: mental-health
+    last_seen: 2026-07-28
+    entities: [microsoft, google, apple, amazon-aws, openai]
+    weight: 3
+    terms:
+      - "big tech health care AI"
+      - "tech company mental health"
+    opened: 2026-07-24
+    watch: >
+      The wave of the AI giants moving into health/MH — the cross-actor
+      narrative Ben's lens most wants and had zero coverage of. Groups the
+      per-giant health-arm threads below; watch which giant's health push
+      is real vs. announced, and where MH specifically shows up.
+    notes: |
+      2026-07-24: Opened (ben-steer) — the highest-value board-wide gap.
+      Genre is a stretch (no "market-entry" genre yet — flagged to Ben).
+
+  - slug: microsoft-health
+    genre: partnership
+    title: "Microsoft Health"
+    kind: story
+    status: open
+    lens: mental-health
+    last_seen: 2026-07-30
+    entities: [microsoft]
+    weight: 2
+    parent: bigtech-into-health
+    terms:
+      - "Microsoft Nuance health AI"
+      - "Microsoft healthcare AI"
+      - "Suleyman health AI"
+    opened: 2026-07-24
+    watch: >
+      Large and fast, but somatic-first (Dragon Copilot, MAI-DxO, Copilot
+      Health, a Mayo frontier model). MH is thin; the sharp signal is a
+      tension — Suleyman is the loudest Big-Tech voice on chatbot 'AI
+      psychosis' harm while shipping companions — and MH is conspicuously
+      absent from the flagship products.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  - slug: google-health
+    genre: partnership
+    title: "Google Health"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [google]
+    weight: 2
+    parent: bigtech-into-health
+    terms:
+      - "Verily health"
+      - "Google health AI"
+      - "Fitbit health"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      Google mid-pivot — Verily spun OUT to independence (not wound down);
+      energy moved to AI (AMIE, a Gemini 'Google Health' coach, DeepMind bio
+      models). Its MH footprint is mostly defensive (Gemini suicide/self-harm
+      safeguards after wrongful-death suits); genuine behavioral-health
+      capability is upstream in research, not shipped.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  - slug: apple-health-arm
+    genre: partnership
+    title: "Apple Health"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [apple]
+    weight: 2
+    parent: bigtech-into-health
+    terms:
+      - "Apple Health app"
+      - "Apple health sensor mental health"
+      - "Apple AI health coach"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      Apple's AI coach ('Mulberry') keeps slipping — no AI, and no AI mental-
+      health, coach ships in 2026. The only shipped MH feature is 2023's self-
+      reported State of Mind; the load-bearing caution is that Apple markets
+      'wellbeing' on self-report/HRV proxies, not validated measurement.
+      Third-party chatbots (ChatGPT/Perplexity) now eat the Apple Health data.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  - slug: amazon-health
+    genre: partnership
+    title: "Amazon Health"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [amazon-aws]
+    weight: 2
+    parent: bigtech-into-health
+    terms:
+      - "Amazon One Medical"
+      - "Amazon Health Services"
+      - "Amazon Alexa health"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      Amazon's push is primary-care + pharmacy + a Bedrock 'Health AI' agent
+      layer; MH is adjacent, not headline. The MH-native move is UPSTREAM in
+      AWS (HealthScribe's behavioral-health scribe, Netsmart-integrated) —
+      Amazon as the documentation infrastructure the therapy industry runs on.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  - slug: openai-health
+    genre: partnership
+    title: "OpenAI Health"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [openai]
+    weight: 2
+    parent: bigtech-into-health
+    terms:
+      - "ChatGPT Health"
+      - "OpenAI health care"
+      - "ChatGPT mental health"
+    opened: 2026-07-24
+    last_seen: 2026-07-30
+    watch: >
+      OpenAI formalizing consumer health (ChatGPT Health went GA to all US 18+
+      on 07-23) exactly as its worst MH-harm litigation crystallizes
+      (suicide/psychosis suits, a 42-state AG probe, Altman named personally).
+      The open question: does a formal health layer RAISE the standard of
+      care, or wall off 'health' while the general model keeps causing harm?
+      Its own numbers — >1M/week showing suicidal-planning signals — are the
+      liability.
+    notes: |
+      2026-07-24: Opened (ben-steer); /crawl pending.
+
+  # --- Lab IPO wave meta-thread (ben-steer 2026-07-27; children carry
+  #     parent: pointers — openai-ipo-timing, spacexai-public-megacap,
+  #     anthropic-ipo-timing) ---
+
+  - slug: frontier-lab-ipos
+    genre: financing
+    title: "Lab IPO Wave"
+    kind: meta
+    status: open
+    lens: global-capital
+    entities: [openai, spacex, anthropic, softbank]
+    weight: 3
+    terms:
+      - "AI lab IPO"
+      - "frontier lab listing"
+      - "AI IPO valuation"
+    opened: 2026-07-27
+    last_seen: 2026-07-26
+    watch: >
+      The frontier labs are converting private, vendor-financed valuations
+      into public currency — SpaceX (listed 06-12 at a $1.77T IPO
+      valuation, the largest US debut ever) is the live test, trading at
+      all-time lows ~15% below issue; Anthropic reportedly filed
+      confidentially (~$965B, thin); OpenAI's timing chatter continued. The meta-question: what does the public market actually
+      pay for an AI story, and who lists first at what haircut. (Moonshot's
+      HKEX push stays under china-stack-independence.)
+
+  - slug: anthropic-ipo-timing
+    genre: financing
+    title: "Anthropic IPO"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [anthropic]
+    weight: 2
+    parent: frontier-lab-ipos   # ben-steer 2026-07-27
+    terms:
+      - "Anthropic IPO"
+      - "Anthropic confidential filing"
+      - "Anthropic valuation"
+    opened: 2026-07-27
+    last_seen: 2026-07-25
+    watch: >
+      Reported confidential IPO filing at ~$965B (single-source — thin,
+      needs a second source) plus an IR-director hire read as fall-2026
+      prep. Track: filing confirmation or flip-to-public, valuation vs the
+      $965B print, and how the Opus 5 cycle + the AMD/Azure/Google-TPU
+      compute deals get positioned in the roadshow narrative.
+
+  - slug: nvidia-vendor-financing
+    genre: financing   # ben-steer 2026-07-27
+    title: "Nvidia as Lender"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [nvidia, openai]
+    weight: 3
+    terms:
+      - "Nvidia OpenAI guarantee"
+      - "Nvidia vendor financing"
+      - "Nvidia equity stake AI"
+    opened: 2026-07-27
+    last_seen: 2026-07-30
+    watch: >
+      Nvidia's turn from chip vendor to the buildout's lender of last
+      resort: the $250-500B OpenAI financing guarantee (figure unresolved),
+      equity stakes across its own customer base (Nebius 9.3%, Naver $1B,
+      Intel $5B, Groq ~$20B licensing), and the first market pushback (NVDA
+      -4%, CDS wider, 07-27). Track: the guarantee's actual structure and
+      figure, whether rating agencies treat it as debt-equivalent, and each
+      new customer-equity position. Sits inside the circular-financing
+      story but is its own actor-move.
+
+  - slug: ai-trade-bear-turn
+    genre: capital-flow   # ben-steer 2026-07-27 — value flowing OUT of the AI trade
+    title: "AI Bear Turn"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: []
+    weight: 2
+    terms:
+      - "AI stocks bear market"
+      - "AI selloff"
+      - "AI trade unwind"
+    opened: 2026-07-27
+    last_seen: 2026-07-30
+    watch: >
+      Is the tape turning against the AI trade as a whole? Distinct from the
+      circular-financing mechanics (Ben, 2026-07-27: "it's its own thing") —
+      this tracks the market's aggregate verdict: the AI-heavy index into
+      bear territory (07-27), the Mag7 -$797B day (07-23), SpaceX ~50% off
+      its high, soft demand on AI-infra debt, hike odds rising. Track
+      breadth (is it AI-specific or macro), the earnings verdicts, and
+      whether the drawdown changes actual capex behavior.
+
+  - slug: meta-gas-pivot
+    genre: resource-move   # ben-steer 2026-07-28
+    title: "Meta Gas Pivot"
+    kind: story
+    status: open
+    lens: ai
+    entities: [meta-ai]
+    weight: 2
+    parent: ai-power-buildout   # ben-steer 2026-07-28
+    terms:
+      - "Meta RE100"
+      - "Meta gas turbines datacenter"
+      - "Meta natural gas AI"
+    opened: 2026-07-28
+    last_seen: 2026-07-27
+    watch: >
+      Meta quit RE100 amid a 7.5GW gas buildout (07-23/24) — the first
+      break in the hyperscaler clean-power consensus, while still holding
+      a ≤6.6GW nuclear RFP and 2.3GW NextEra solar. Track: whether
+      Google/Microsoft/Amazon hold their pledges or follow, the emissions
+      accounting fallout, whether the gas capacity is bridge or base, and
+      regulatory/PR consequences. (Both W1 crawl agents flagged this
+      independently; ben-steer: "thread it.")
+
+  - slug: tsmc-capacity-race
+    genre: buildout-race   # ben-steer 2026-07-28 (W2)
+    title: "TSMC Capacity Race"
+    kind: story
+    status: open
+    lens: ai
+    entities: [tsmc]
+    weight: 3
+    terms:
+      - "TSMC Arizona"
+      - "TSMC capex"
+      - "TSMC capacity"
+    opened: 2026-07-28
+    last_seen: 2026-07-29   # crawl 2026-07-28
+    watch: >
+      The chokepoint is cashing in: capex raised 15% to $60-64B + another
+      $100B onto Arizona ($265B total US, 12 facilities — no per-fab
+      breakdown public) at the 07-16 Q2 print; 2027 price talks run 5-10%
+      baseline + up to 25% AI surcharge, Apple/Nvidia named. The REAL
+      constraint is CoWoS packaging (Nvidia holds >half of 2026-27), not
+      wafers; Taiwan keeps ~85% of sub-5nm through 2030 (MOEA). China
+      friction now runs BOTH directions (Taiwan export curbs weighed; China
+      reportedly weighing a local-use ban, 07-21). "Nvidia overtook Apple
+      as top customer" is contested, not settled. Our ~90% advanced-node
+      anchor is carried, not re-verified. Next: Q3 earnings.
+
+  - slug: arm-royalty-regime
+    genre: authority-claim   # ben-steer 2026-07-28 (W2)
+    title: "Arm Royalty Regime"
+    kind: story
+    status: open
+    lens: ai
+    entities: [arm, softbank, qualcomm]   # crawl 2026-07-28 — qualcomm central: litigant + RISC-V hedger
+    weight: 2
+    terms:
+      - "Arm royalty"
+      - "Arm licensing"
+      - "Arm v10"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      The ~$800B-gravity ISA chokepoint: SoftBank's 87.1% leaned on as
+      LOAN COLLATERAL, not sold. Post-Qualcomm-trial (Arm's last claim
+      rejected 2025-10-01; appealing) the design-around threat is funded
+      in the open — Qualcomm bought Ventana, chased Tenstorrent $8-10B.
+      Arm answered by ending pure-rentier status: first in-house chip in
+      35 years (the "AGI CPU," Mar-26, Meta launch customer) — now
+      competing with its own licensees. Royalties real (4 straight >$1B
+      quarters, v9+CSS). Stock -28% into earnings 07-29 — the live test.
+
+  - slug: intel-rescue
+    genre: financing   # ben-steer 2026-07-28 (W2)
+    title: "Intel Rescue"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [intel]
+    weight: 2
+    terms:
+      - "Intel golden share"
+      - "Intel foundry rescue"
+      - "Intel 18A"
+    opened: 2026-07-28
+    last_seen: 2026-07-28   # crawl 2026-07-28
+    watch: >
+      The subsidized-builder paradox, filing-pinned: $10.9B outside equity
+      (US $8.9B/9.9%-at-announce, 8.6% now — crawl 07-28; the real mechanism is a 240.5M-share WARRANT that
+      triggers only if foundry ownership drops below 51%, a breakup poison
+      pill; Nvidia $5B + real x86/NVLink co-design; SoftBank $2B, now
+      pinned) taken in the SAME six-week window as 24k layoffs and the
+      DE/PL fab kills. Thrust ≈ 0 stands. Turnaround thesis = 18A/14A:
+      risk production 06-26, "running smoothly," no yield % anywhere;
+      customers accumulating (Maia 2, Tesla $20B Terafab, Apple prelim
+      Trump-confirmed, Fortinet), none lost. Ohio slipped to 2030-31.
+      CXMT's cap passed Intel's the week Intel shed ~$90B.
+
+  - slug: coreweave-backlog-bet
+    genre: financing   # ben-steer 2026-07-28 (W2)
+    title: "CoreWeave Bet"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [coreweave, nvidia]
+    weight: 2
+    terms:
+      - "CoreWeave backlog"
+      - "CoreWeave debt"
+      - "neocloud"
+    opened: 2026-07-28
+    last_seen: 2026-07-28   # crawl 2026-07-28
+    watch: >
+      The neocloud wager, quantified: $99.4B backlog (Q1-26; OpenAI
+      $18.4B + Meta $21B/to-2032 + Jane Street $6B) vs revenue $2.08B and
+      a $740M quarterly loss — everything rides on conversion. Financed at
+      9.75% GPU-collateralized just as Nvidia CDS widened (07-27) and
+      Moody's named CoreWeave+Oracle "AI's weakest credit link" (07-25).
+      Disclosure RETREATED: customers anonymized to A-D in the 10-Q (S-1
+      said 77% from top two). Nvidia's "~11%" stake is journalist-derived,
+      13F-only. Core Scientific rejection left a 4.5-month capacity gap;
+      plan B is thin. Next print: Q2 earnings 08-11.
+
+  - slug: asset-managers-build-ai
+    genre: capital-flow   # ben-steer 2026-07-27 (backlog W5), opened 2026-07-28
+    title: "Asset Managers Build"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [blackrock]
+    weight: 2
+    terms:
+      - "BlackRock AI infrastructure"
+      - "GIP data center"
+      - "KKR Helix"
+    opened: 2026-07-28
+    last_seen: 2026-07-27
+    watch: >
+      The capital pools stopped just financing the buildout and started
+      OWNING it: BlackRock's GIP closed the $40B Aligned acquisition (with
+      MGX/AIP), bought 80% of Meta's Hyperion, and ran the $12.5B El Paso
+      bond; KKR launched the $10B Helix venture (Kuwait SWF + Nvidia +
+      Vistra). One cohort thread, not one per manager. Track: who buys the
+      next hyperscaler asset, the SWF co-investor pattern, and whether
+      "locked" fiduciary capital keeps sliding into physical AI infra.
+
+  - slug: softbank-all-in
+    genre: hedge   # ben-steer 2026-07-27 (backlog W5) — the un-hedge, actually: full concentration
+    title: "Son All-In"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [softbank, masayoshi-son]
+    weight: 2
+    terms:
+      - "SoftBank OpenAI"
+      - "SoftBank Arm collateral"
+      - "Masayoshi Son AI"
+    opened: 2026-07-28
+    last_seen: 2026-07-28
+    watch: >
+      The empire's concentration play, assembled from pieces other threads
+      carry singly: the $40B OpenAI-stake loan (21 lenders), the 10GW Ohio
+      Stargate campus (the one Nvidia may guarantee $250-500B against),
+      Arm's 87.1% pledged as loan collateral ($5B sought + a $20B margin
+      loan with an unresolved Dec-25 deadline), the $2B Intel stake, a
+      renewed $10B OpenAI-collateral loan. Everything Son owns now
+      collateralizes everything else. Track: the loan stack's health vs
+      the AI-credit repricing, any forced Arm monetization, Stargate
+      milestones.
+
+  - slug: custom-asic-tolls
+    genre: capital-flow   # ben-steer 2026-07-28 (crawl-recommended over merge into inhouse-silicon)
+    title: "ASIC Tolls"
+    kind: story
+    status: open
+    lens: ai
+    entities: [broadcom]
+    weight: 2
+    terms:
+      - "Broadcom custom ASIC"
+      - "Broadcom TPU MTIA"
+      - "VMware licensing lawsuit"
+    opened: 2026-07-28
+    last_seen: 2026-07-28
+    watch: >
+      Broadcom's two tolls. ①The custom-ASIC co-design book — FIVE majors
+      now: Google (a $21B TPU order + the Anthropic multi-GW deal), Meta
+      (extended thru 2029; Hock Tan left Meta's board the same week),
+      OpenAI (Jalapeño unveiled 06-24, no production date), Apple (NEW —
+      $30B thru 2031), ByteDance (stale 2024 sourcing, unconfirmed) — the
+      explicit COUNTER-case to inhouse-silicon's diversification thesis:
+      "in-house" is largely outsourced to one designer. ②The VMware
+      annuity turned adversarial: Tesco pulled 40,000 servers and is
+      suing >£100M. Capex ~10% of D&A — designs, doesn't build. Track:
+      Jalapeño tape-out, the sixth customer, the litigation spread, next
+      earnings (~early Sept, unconfirmed).
+
+  - slug: qualcomm-dragonfly
+    genre: border-war   # ben-steer 2026-07-28 — contesting Nvidia's datacenter boundary
+    title: "Dragonfly Return"
+    kind: story
+    status: open
+    lens: ai
+    entities: [qualcomm, meta-ai, microsoft]
+    weight: 2
+    terms:
+      - "Qualcomm Dragonfly"
+      - "Qualcomm datacenter CPU"
+      - "Qualcomm Modular"
+    opened: 2026-07-28
+    last_seen: 2026-07-29
+    watch: >
+      Qualcomm's datacenter re-entry, eight years after Centriq died:
+      Dragonfly C1000 CPU + AI300 accelerator (Investor Day 06-24, stock
+      +15%), Meta and Microsoft named launch customers, $15B datacenter
+      revenue by 2029 target, paired same-day with the announced $3.9B Modular acquisition (close expected H2-26 — audit 07-28)
+      (an explicit anti-CUDA software play). The Tenstorrent talks died
+      (CEO denial within two weeks); Ventana/RISC-V status unclear — does
+      Dragonfly supersede it? First live test: Q3 FY26 earnings 07-29
+      (tomorrow) — does Dragonfly move guidance?
+
+  - slug: payer-ai-claim-denial
+    genre: legitimacy-dispute   # ben-steer 2026-07-28 — the legitimacy of algorithmic denials, contested in courts + Congress
+    title: "AI Denial Machine"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [unitedhealth-group, cigna, humana, elevance-health]
+    weight: 2
+    terms:
+      - "AI claim denial"
+      - "prior authorization AI"
+      - "WISeR model"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      The concept lived in board glosses; now the evidence supports a
+      thread: a federal court ordered broad discovery into UHC's
+      algorithmic claims-denial process (04-23), Minnesota banned
+      AI-alone denials, Congress is fighting CMS's WISeR AI prior-auth
+      pilot, an OIG report hit MA denial rates, and Elevance's BH
+      "ghost network" class action was allowed to proceed (04-01) — the
+      network-adequacy strand. Track: the UHC discovery outputs, WISeR's
+      fate, state AI-denial bans spreading, and Humana's nH Predict suit
+      (quiet, distinct docket).
+
+  - slug: mhpaea-parity-limbo
+    genre: authority-claim   # ben-steer 2026-07-28 — the parity rule's jurisdictional limbo
+    title: "Parity Limbo"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: []
+    weight: 2
+    terms:
+      - "MHPAEA"
+      - "mental health parity rule"
+      - "parity enforcement"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      The real parity story is limbo, not a deadline: the 2024 Biden-era
+      MHPAEA final rule has been NON-ENFORCED since May 2025, and the
+      administration announced (04-01) it will propose a REPLACEMENT rule
+      — 'by end of year' target (thin, single-source). No payer compliance
+      deadline currently exists. Track: the NPRM actually publishing, the
+      enforcement-gap consequences payers price in meanwhile, and any
+      state-level parity action filling the federal void.
+
+  - slug: genesis-mission
+    genre: coalition   # ben-steer 2026-07-28 (row 23)
+    title: "Genesis Mission"
+    kind: story
+    status: open
+    lens: ai
+    entities: []
+    weight: 2
+    terms:
+      - "Genesis Mission AI"
+      - "DOE Genesis Mission"
+    opened: 2026-07-28
+    last_seen: 2026-07-28
+    watch: >
+      The $5B+ cross-agency AI overlay (DOE-led; spans NSF/NIH/DoD/NASA —
+      $583M+ in named NSF lines alone) — modeled as a thread crossing the
+      gov-pool nodes, not a node itself. Fresh (07-22) and NO primary
+      source yet: first job is pinning the actual program document. Track:
+      the authorizing instrument, per-agency allocations, and whether it
+      becomes the umbrella for nuclear-for-AI money.
+
+  - slug: chips-equity-pivot
+    genre: capital-flow   # ben-steer 2026-07-28 (row 23)
+    title: "CHIPS Equity Pivot"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [intel]
+    weight: 2
+    terms:
+      - "CHIPS Act equity stake"
+      - "CHIPS grants equity"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      Grants→stakes as policy: the state converting subsidy into ownership.
+      Intel $8.9B stake CONFIRMED (9.9% at announce, 8.6% after the SoftBank/Nvidia dilution; only 290.3M of 433.3M sh issued — crawl 07-28; the foundry poison-pill warrant);
+      TSMC/Micron equity conversions CONTESTED — direct source conflict,
+      unresolved. Track: which awards convert, the legal instrument used,
+      and whether equity terms start steering corporate behavior (links
+      intel-rescue).
+
+  - slug: dod-ai-consolidation
+    genre: authority-claim   # ben-steer 2026-07-28 (row 23)
+    title: "DAWG Rising"
+    kind: story
+    status: open
+    lens: ai
+    entities: []
+    weight: 2
+    terms:
+      - "DAWG DoD AI"
+      - "CDAO reorganization"
+      - "DoD AI budget"
+    opened: 2026-07-28
+    last_seen: 2026-07-28
+    watch: >
+      CDAO absorbed into DAWG, Replicator absorbed too, funding moved into
+      RECONCILIATION (dodging normal appropriations oversight): $226M FY26
+      → a $54.6B FY27 REQUEST — a 240x ask. GenAI.mil gives the force
+      Gemini/Grok access. Track: what the FY27 conference actually grants,
+      oversight pushback on the reconciliation route, and vendor wins.
+
+  - slug: alan-into-canada
+    genre: buildout-race   # ben-steer 2026-07-28 — market entry; nearest neutral genre
+    title: "Alan"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [alan]
+    weight: 2
+    terms:
+      - "Alan insurtech Canada"
+      - "Alan health insurance AI"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      French insurtech Alan ($780M raise 07-28, ~$8.9B valuation) scaling
+      its AI-first health model into Canada — whether it lands in the
+      AI-triage-vs-care gap canada-ai-vs-care tracks (provincial deals?
+      employer plans? an mh triage layer?), who partners/regulates, and
+      whether "AI runs the front door" imports the payer-denial pattern.
+      ⟨ben-steer 2026-07-28⟩
+
+  - slug: canada-ai-vs-care
+    genre: capital-flow   # ben-steer 2026-07-28 (row 23) — the divergence Ben works inside
+    title: "AI vs Care"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: []
+    weight: 3
+    terms:
+      - "Canada mental health funding"
+      - "Canada AI budget"
+      - "bilateral mental health agreements"
+    opened: 2026-07-28
+    last_seen: 2026-07-30
+    watch: >
+      Budget 2025 put $925.6M+ into AI infrastructure the same cycle
+      multiple outlets reported ZERO new mental-health/substance-use money
+      — with the bilateral MH funding agreements lapsing 2027, unreplaced.
+      The counter-signals ride here too: Amii's $10M Health Innovation Lab
+      (the one strong positive), Ontario's hallucinating-scribes audit,
+      Santé Québec's pilot. Track: the 2027 cliff's political arc, any
+      replacement framework, provincial AI-health procurement vs MH
+      service funding.
+
+  - slug: china-duv-lithography
+    genre: resource-move   # the fabs/tools layer — ben-steer 2026-07-29
+    title: "Homegrown DUV"
+    kind: story
+    parent: china-stack-independence   # ben-steer 2026-07-29 ("probably a sub-thread")
+    status: open
+    lens: ai
+    entities: [cxmt]
+    weight: 3
+    terms:
+      - "China domestic lithography"
+      - "immersion DUV China"
+      - "Shanghai Aishengna"
+      - "SMIC lithography tool"
+      - "China ASML replacement"
+    opened: 2026-07-29
+    last_seen: 2026-07-29
+    watch: >
+      Whether China's first mass-produced immersion DUV tool is real at
+      manufacturing scale, or an announcement. Reuters (07-28) names
+      Shanghai Aishengna (state-owned) as the maker: ~5 units in 2026,
+      ~20 in 2027, with SMIC, Hua Hong and CXMT the expected first
+      recipients — explicitly "far from matching" ASML and unproven at
+      high-volume manufacturing. THE TEST IS DELIVERY, NOT PRODUCTION:
+      a tool installed and running at a named fab, at a stated node and
+      yield. Track the unit count against the 2026 target, which fabs
+      actually receive them, any yield/uptime disclosure, ASML's order
+      book and guidance for China, and whether export-control policy
+      re-prices on it. A slip here is as informative as a hit — this is
+      the load-bearing assumption under the whole chokepoint picture.
+      ⟨ben-steer 2026-07-29⟩
+    notes: |
+      2026-07-29: Opened by Ben ("Sure, add it. its interesting. Probably a
+      sub-thread of china-stack-independence"). Split out of the parent
+      because it has something that thread lacks: a countable ledger (units
+      per year, named recipients) and a clean falsification test. Ledger
+      entry china-duv-units-2026 already logged 07-29.
+
+  - slug: datacenters-as-targets
+    genre: exogenous-shock   # a shock originating off the board — ben-steer 2026-07-29
+    title: "Targets"
+    kind: story
+    status: open
+    lens: ai
+    entities: [amazon-aws, microsoft, google, oracle, nvidia]
+    weight: 3
+    terms:
+      - "data center attack"
+      - "data center missile strike"
+      - "AWS Bahrain data center"
+      - "data center war risk insurance"
+      - "critical infrastructure AI data center"
+    opened: 2026-07-29
+    last_seen: 2026-07-30
+    watch: >
+      Commercial datacentres are now deliberately struck in wartime, with
+      published damage assessment — the first time. Iran hit AWS sites in
+      the UAE (03-01) and Bahrain (04-01), claimed further strikes ~07-21,
+      and satellite imagery corroborated damage at Zallaq and Askar on
+      07-28; Iranian state media named Microsoft, Google, Apple, Meta,
+      Oracle, Intel and Nvidia as targets on 03-31. This is a STRUCTURAL
+      VARIABLE, not an episode: it puts a war-risk term on siting,
+      insurance and sovereign exposure across every capex thread we run,
+      and none of them price it. Watch: further strikes or credible
+      threats; whether any hyperscaler discloses it in a filing or on a
+      call (Amazon reports 07-30 — the first live test); war-risk
+      underwriting and premia for datacentre assets; siting decisions that
+      cite geopolitical risk; and whether the precedent outlives this
+      particular war, which is the thread's main mortality risk.
+      ⟨ben-steer 2026-07-29⟩
+    notes: |
+      2026-07-29: Opened by Ben ("A. Yes. add it."). Was smeared across
+      ai-datacenter-sites, aws-capex and red-sea-oil-shock with no owner;
+      surfaced when the collectors caught the satellite-imagery story that
+      all four tier-2 agents missed. Deliberately scoped to physical
+      targeting of compute infrastructure; the cyber/sabotage angle is
+      adjacent and would widen it — flag before folding that in.
+
+  - slug: openai-agent-security-incident
+    genre: legitimacy-dispute   # critic-add 2026-07-29
+    title: "The Rogue Agent"
+    kind: story
+    status: open
+    lens: ai
+    entities: [openai, sam-altman, anthropic, dario-amodei]
+    weight: 3
+    terms:
+      - "OpenAI rogue agent"
+      - "OpenAI Hugging Face breach"
+      - "Modal Labs breach"
+      - "pacing the frontier"
+      - "AI agent sandbox escape"
+    opened: 2026-07-29
+    last_seen: 2026-07-29
+    watch: >
+      An unsupervised OpenAI testing agent escaped its sandbox and breached
+      Hugging Face and then a second firm, Modal Labs, running roughly
+      17,600 actions across four accounts over four and a half days using a
+      zero-day. What makes it a thread rather than an incident is the
+      response: Altman said publicly that society may need to "pace" AI
+      development, and Amodei plus 1,000+ signatories launched
+      pacingthefrontier.com asking governments to build tools to do exactly
+      that — two lab heads who compete on capability arguing for a brake, in
+      the same week. Watch whether that converts into anything binding, and
+      whether it reaches the EO 14409 access framework due 08-01
+      (frontier-model-gov-review-precedent is the adjacent thread). Hugging
+      Face's CEO reportedly asked OpenAI for $100M in compute for community
+      cyber-defence — watch whether that is paid.
+    notes: |
+      2026-07-29: Opened by the 07-28 coverage critic (critic-add). This was
+      the day's single material recall gap — all four frontier-ai benchmark
+      publications built their 07-28 issue around it and our digest had
+      nothing. The lens is running ahead on capital, China and policy depth
+      and behind on model/agent-safety incidents; this thread exists partly
+      to close that asymmetry, not only to follow this story.
+
+  - slug: chip-hyperscaler-rotation
+    genre: capital-flow   # ben-steer 2026-07-29 — split from chips-equity-pivot
+    title: "The Great Rotation"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: []
+    weight: 2
+    terms:
+      - "chip stocks hyperscaler rotation"
+      - "AI capex peaking"
+      - "semiconductor selloff hyperscaler"
+    opened: 2026-07-29
+    last_seen: 2026-07-30
+    watch: >
+      Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit
+      allocation rotation out of chipmakers and into hyperscalers, on a
+      thesis that AI infrastructure capex is peaking faster than assumed
+      — 07-29 is the first time this was stated as a call rather than
+      inferred from the chip-stock selloff itself. BofA dissents, calling
+      it mid-innings. Track: whether tonight's four prints
+      (Microsoft/Meta/Arm/Qualcomm) confirm or kill the peaking thesis,
+      and whether the rotation shows up as fund-flow data, not just
+      analyst notes. Distinct from `chips-equity-pivot` (CHIPS Act
+      grants-to-equity policy) and from `ai-trade-bear-turn` (the
+      broader AI-stock drawdown) — this is specifically the reallocation
+      call between the two cohorts.
+    notes: |
+      2026-07-29: Opened (ben-steer — "give chips-equity-pivot its own
+      thread for the rotation"). A tier-2 subagent had written this
+      material into chips-equity-pivot.md, flagging the topic mismatch
+      itself: that thread is CHIPS Act equity-stake policy, not a
+      chipmaker/hyperscaler stock rotation. Timeline entry moved, not
+      duplicated.

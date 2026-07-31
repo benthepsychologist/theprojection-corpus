@@ -1,0 +1,52 @@
+# Bundle — state node: china (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml china (rank state, sphere
+# china, tier apex). Fiscal reading: available = FX reserves + state SWFs (huge),
+# operating = central+general govt budget, deployed = govt debt (incl. LGFV
+# blur), in = tax/SOE revenue, out = expenditure. Gravity = GDP. Method:
+# WebFetch primary (WebSearch exhausted) — Wikipedia aggregate lists (IMF base).
+node: china
+name: "China"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Fiscal stimulus against a property-sector slowdown: ~$1.36T deficit (7.4% of GDP, 2024), state-directed industrial policy (chips/AI self-sufficiency); backed by the world's largest FX + SWF war-chest."
+  sources:
+    - {figure: "2024 deficit -$1,357.71B (-7.43% of GDP); expenditure 33.86% of GDP", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+    - {figure: "gross govt debt 99.2% of GDP (2025) — rising, incl. local-govt vehicle blur", label: "Wikipedia — List of countries by government debt (IMF 2025)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: med}
+
+capital:
+  available:
+    value: "~$3.85T FX reserves (May-2026) + ~$3.97T state SWFs (CIC + SAFE Investment + National Social Security Fund) — the largest sovereign dry powder on earth"
+    sources:
+      - {figure: "foreign-exchange reserves incl. gold $3,850,586M (1 May 2026)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2026-05", confidence: high}
+      - {figure: "China SWFs total ~$3,974B (CIC, SAFE Investment, National Social Security Fund)", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: med}
+  operating:
+    value: "~$6.18T annual govt expenditure / ~$4.83T revenue (2024)"
+    sources:
+      - {figure: "2024 revenue $4,829.65B (26.43% of GDP); expenditure $6,181.88B (33.86% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt 99.2% of GDP (2025) ≈ ~$18-20T nominal (derived from GDP × ratio) — includes large local-govt/LGFV exposure; committed to chip/AI self-sufficiency programs"
+    sources:
+      - {figure: "gross govt debt 99.2% of GDP (2025); nominal derived from IMF 2026 GDP ~$20.85T", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+  in:
+    value: "~$4.83T tax + SOE/land revenue (2024, 26.4% of GDP)"
+    sources:
+      - {figure: "2024 revenue $4,829.65B (26.43% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$6.18T expenditure (2024); deficit -$1.36T (-7.43% of GDP)"
+    sources:
+      - {figure: "2024 expenditure $6,181.88B; deficit -$1,357.71B (-7.43% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "mixed — massive net-creditor reserves + SWF firepower give real freedom, but the RMB is not a full reserve currency, capital controls bind, and the currency is state-managed. Fiscal freedom high; monetary/external freedom capped."
+  sources:
+    - {figure: "$3.85T reserves + $3.97T SWFs (creditor) vs capital controls + managed RMB", label: "Wikipedia — FX reserves + SWF lists; analytical (capital-control regime)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2026-05", confidence: med}
+
+gravity:
+  value: "~$20.85T GDP (nominal, IMF 2026) — the #2 single-state gravity; the state's gravity IS its GDP"
+  sources:
+    - {figure: "nominal GDP $20,851,593M (IMF 2026); $19,498,039M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Apex sovereignty (US/China top tier). Biggest uncertainty is the debt: official 99.2%/GDP understates true exposure once local-govt financing vehicles (LGFV) are consolidated — some analysts put it far higher. Nominal debt figure is derived (ratio×GDP), flagged low. Reserves + SWFs are the standout: largest sovereign liquidity pool globally."

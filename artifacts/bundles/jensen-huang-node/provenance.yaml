@@ -1,0 +1,52 @@
+# Bundle — node posture + capital-flow: jensen-huang (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted); anchored to board.yaml deployable estimate. Key
+# nuance: founder-CEO tenure, but only a ~3.6% stake on single-class shares —
+# authority/tenure-based control, not a voting lock like Musk or Zuckerberg.
+node: jensen-huang
+name: "Jensen Huang"
+kind: person
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "33-year founder-CEO tenure directing Nvidia's ~$1.0T/yr gravity orbit despite personally owning only ~3.6% — authority converts into capital deployment via board tenure/reputation rather than an equity lock. Personally scaling philanthropic giving in parallel (foundation >$12B, additional $60M NVDA stock contributed Jun-2025) alongside Nvidia's own buildout-race capex."
+  sources:
+    - {figure: "posture: expanding (capital-flow out + buildout-race)", label: "kestrel board.yaml nvidia axis, classify 2026-07-24", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "Founder, president, and CEO since Apr-5-1993 (33yr tenure); flat management hierarchy, ~60 direct reports (Nov-2024)", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2024-11", confidence: high}
+
+capital:
+  available:
+    value: "~$120B — kestrel board.yaml deployable anchor (founder-CEO directing Nvidia's capital despite a ~3.6% stake); against a reported net worth over $200B (Forbes, 2026, 7th-wealthiest globally). Net worth exceeds the deployable anchor because deployable weights CONTROL not paper wealth, and Huang's control is authority/tenure-based rather than a voting lock — discounting the effective deployable figure below raw NW."
+    sources:
+      - {figure: "net worth over US$200 billion (2026), 7th-wealthiest individual globally", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2026", confidence: med}
+      - {figure: "deployable ~$120B — founder-CEO directing Nvidia's capital despite a ~3.6% stake", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  operating:
+    value: "Nvidia corporate capital he directs as founder-CEO (single-class shares, no supervoting mechanism) — ~$200-300B commandable/12mo (liquid $80.6B Apr-2026 + ~$119B/yr FCF + near-zero net debt); market cap ~$5T is a separate label."
+    sources:
+      - {figure: "~$200-300B commandable/12mo (liquid $80.6B Apr-2026 + ~$119B/yr FCF + near-zero net debt); market cap ~$5T", label: "kestrel board.yaml nvidia capitalization axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "Personal: the Jen-Hsun & Lori Huang Foundation, valued >$12B (late 2025), funded by NVDA share contributions since its 2007 founding ($330M initial, +$60M Jun-2025). Corporate (Nvidia's own $80B buyback + ~$30B strategic-equity stakes he directs as CEO) is tracked separately on the nvidia-node bundle, not double-counted here."
+    sources:
+      - {figure: "Jen-Hsun & Lori Huang Foundation established 2007 with an initial US$330M in Nvidia shares; foundation value exceeded US$12 billion by late 2025", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2025", confidence: high}
+      - {figure: "additional US$60 million in Nvidia stock contributed to the foundation, Jun-2025", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2025-06", confidence: high}
+  in:
+    value: "Nvidia stock appreciation on his ~3.6% stake as NVDA rose toward ~$5T market cap (implies stake value roughly $180B, consistent with the >$200B Forbes NW including other assets); no separate cash-compensation figure found."
+    sources:
+      - {figure: "Huang owns 3.6% of Nvidia's stock (post-1999 IPO)", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2026", confidence: med}
+  out:
+    value: "Foundation disbursements: US$123M (2024), ~US$369M projected (2025); US$60M in NVDA stock contributed Jun-2025. No personal stock-sale figures found on the fetched page — confirmed gap, confidence low."
+    sources:
+      - {figure: "foundation dispersed US$123 million in 2024; projected US$369 million for 2025", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2025", confidence: high}
+
+optionality:
+  value: "mixed — founder-CEO for 33 years with flat-hierarchy authority and an unusually long personal tenure, but only a ~3.6% stake and Nvidia has single-class shares (no supervoting mechanism found). His control is reputational/authority-based, not a voting lock like Musk's SpaceX or Zuckerberg's Meta — structurally weaker even though behaviorally similar in practice."
+  sources:
+    - {figure: "3.6% stake; no supervoting/dual-class structure found for Nvidia on the fetched page", label: "Wikipedia — Jensen Huang", url: "https://en.wikipedia.org/wiki/Jensen_Huang", as_of: "2026", confidence: med}
+    - {figure: "nvidia optionality: free (org-level) — no fiduciary mandate, near-zero leverage", label: "kestrel board.yaml nvidia optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+gravity:
+  value: "~$1.0T/yr GROSS orbiting AI-infra that moves on Nvidia's (his) allocation decisions — Nvidia DC run-rate + the hyperscaler capex it anchors."
+  sources:
+    - {figure: "~$1.0T/yr GROSS orbiting AI-infra (Nvidia DC run-rate + the hyperscaler capex it anchors)", label: "kestrel board.yaml nvidia gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+notes: "Biggest uncertainty: how much of Nvidia's $1.0T/yr gravity is really 'his' to direct vs institutionally/board-constrained, given single-class shares and only a 3.6% stake — this is the mixed/weaker-than-supervoting-founders nuance flagged in the task brief. Net worth (Forbes >$200B, year 2026, no month given on the fetched page) sits above the board's $120B deployable anchor deliberately — deployable weights control, not paper wealth, and control here is authority-based, not equity-locked. Foundation giving figures are solid (Wikipedia, multiple years, high confidence); no personal stock-sale figure was found — flagged as a low-confidence gap."

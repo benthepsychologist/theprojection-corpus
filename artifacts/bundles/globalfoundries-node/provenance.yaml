@@ -1,0 +1,66 @@
+# Bundle — POSTURE + CAPITAL-FLOW: globalfoundries (foundry pocket, asof 2026-07-26)
+# WebFetch-primary (WebSearch exhausted). Primaries: stockanalysis.com GFS statements (USD,
+# no FX needed) + Wikipedia for Mubadala ownership, CHIPS award, and node/market specialization.
+# Note the CHIPS grant + quantum award + Mubadala parent are the government/sponsor capital sources.
+node: globalfoundries
+name: "GlobalFoundries"
+pocket: foundry
+asof: 2026-07-26
+posture:
+  value: consolidating
+  basis: "Profitable, self-funding specialty/mature-node player deepening a defensible niche (auto/defense/RF/essential chips) rather than racing leading-edge; capex ($0.9B/yr) well under operating cash flow; new US-backed quantum foundry ($375M). Steady, not expanding hard, not retrenching."
+  sources:
+    - {figure: "specialty processes 600nm-12nm (RF-SOI, FD-SOI, analog/mixed-signal) for auto, aero/defense, IoT, comms — not leading-edge", label: "Wikipedia — GlobalFoundries (node/market focus)", url: "https://en.wikipedia.org/wiki/GlobalFoundries", as_of: "2026-07", confidence: high}
+    - {figure: "board.yaml anchor: 'specialty/mature-node foundry, trusted supplier to auto/defense/RF; #3 foundry'", label: "kestrel board.yaml — globalfoundries (internal anchor, 2026-07-25)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$3.0B cash + ST investments; total debt ~$1.7B (net cash ~$1.3B) — modest but clean balance sheet"
+    sources:
+      - {figure: "cash & equiv $1,849M + ST inv $1,154M = $3,003M; total debt $1,724M (Mar 31 2026)", label: "stockanalysis.com GFS balance sheet", url: "https://stockanalysis.com/stocks/GFS/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$1.9B/yr operating cash flow (TTM $1,942M; FY2025 $1,731M) — comfortably self-funding"
+    sources:
+      - {figure: "OCF TTM $1,942M; FY2025 $1,731M", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$0.9B/yr capex (TTM $868M, well under OCF); CHIPS $1.5B (first major award, Feb-2024) + $375M quantum foundry (May-2026); Mubadala 82% parent backstop"
+    sources:
+      - {figure: "capex TTM $868M; FY2025 $722M", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+      - {figure: "CHIPS $1.5B (Feb-2024, first major award) + $375M for a domestic quantum foundry (May-2026) = ~$1.875B", label: "Wikipedia — GlobalFoundries (CHIPS Act)", url: "https://en.wikipedia.org/wiki/GlobalFoundries", as_of: "2026-05", confidence: high}
+  in:
+    value: "inflows: ~$6.84B/yr revenue (TTM; FY2025 $6,791M) + US CHIPS $1.5B + $375M quantum + Mubadala 82% sponsor capital"
+    sources:
+      - {figure: "revenue TTM $6,840M; FY2025 $6,791M; net income TTM $778M / FY2025 $885M", label: "stockanalysis.com GFS financials (income)", url: "https://stockanalysis.com/stocks/GFS/financials/", as_of: "2026-03", confidence: high}
+      - {figure: "Mubadala Investment Company majority owner at 82%", label: "Wikipedia — GlobalFoundries (ownership)", url: "https://en.wikipedia.org/wiki/GlobalFoundries", as_of: "2026-07", confidence: high}
+  out:
+    value: "outflows: ~$0.9B/yr fab capex; no meaningful dividend; FCF TTM ~$1.07B (positive) — retained/reinvested"
+    sources:
+      - {figure: "FCF TTM $1,074M; FY2025 $1,009M", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "mixed — self-funded and FCF-positive (real freedom at its scale), but Mubadala's 82% control directs strategy; small absolute cash pile caps big-bet capacity"
+  sources:
+    - {figure: "board.yaml anchor: 'mixed — self-funded but Mubadala 82% directs'", label: "kestrel board.yaml — globalfoundries (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "Mubadala 82% ownership steers capital allocation", label: "Wikipedia — GlobalFoundries (ownership)", url: "https://en.wikipedia.org/wiki/GlobalFoundries", as_of: "2026-07", confidence: high}
+gravity:
+  value: "GROSS ~$6.84B/yr revenue for specialty/mature nodes (auto/defense/RF/IoT); #3 foundry and a trusted, US-secure supplier — strategic reliability gravity beyond its modest dollar size (undeflated)"
+  sources:
+    - {figure: "revenue TTM ~$6.84B; #3 foundry, specialty/mature nodes for auto/aero-defense/RF/IoT", label: "stockanalysis.com GFS + Wikipedia (markets)", url: "https://en.wikipedia.org/wiki/GlobalFoundries", as_of: "2026-03", confidence: high}
+    - {figure: "board.yaml anchor: '#3 foundry, trusted supplier' (strategic gravity > dollar gravity)", label: "kestrel board.yaml — globalfoundries (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+# --- axes_num wave C addendum (2026-07-28, agent-derive) ---
+weight:
+  value: "$16.9B total assets (Mar 31 2026, balance sheet)"
+  sources:
+    - {figure: "total assets $16,897M; total liabilities $5,149M; equity $11,748M (Mar 31 2026 TTM basis)", label: "stockanalysis.com GFS balance sheet", url: "https://stockanalysis.com/stocks/GFS/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+thrust:
+  value: "≈$0, slightly negative organic — capex $0.868B TTM − D&A $1.273B TTM ≈ -$0.4B; no M&A/stakes identified this TTM"
+  dep_only_note: "D&A reported as a single COMBINED line by the aggregator (not split into depreciation vs intangible amortization) — flagged per the recipe's dep-only rule (blended figure used as proxy). Distortion risk is LOW relative to AMD: GF has no major recent acquisition driving large intangible amortization, so its D&A is overwhelmingly physical fab depreciation. Reads consistent with the 'consolidating' posture already on file — capex staying under D&A/OCF, not a growth-thrust profile."
+  sources:
+    - {figure: "capex TTM $868M; FY2025 $722M", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "D&A (combined) TTM $1,273M; FY2025 $1,314M", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+buybacks_ttm:
+  value: "$0.4B TTM (resumed after $0 in FY2025)"
+  sources:
+    - {figure: "TTM stock repurchases $400M; FY2025 $0", label: "stockanalysis.com GFS cash-flow statement", url: "https://stockanalysis.com/stocks/GFS/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+axes_num: { weight: 16.9, thrust: -0.4, gravity: 15 }  # wave-C agent-derive 2026-07-28 — gravity is a rough strategic-reliability estimate (revenue $6.84B floor + Intel-style strategic-trust premium for a US/Mubadala-aligned specialty foundry), low confidence
+
+notes: "Lowest-uncertainty node of the four — pure-USD statements, ownership and CHIPS awards are clean citable facts. Main open question is whether posture reads as 'consolidating' (steady niche-deepening, chosen here) vs 'expanding' (the quantum-foundry + essential-chips push could argue expanding); capex staying under OCF tips it to consolidating. Wave-C addendum (07-28): thrust reads slightly NEGATIVE (capex < D&A) — the clearest 'maintaining, not growing' signal on the board alongside Intel; buybacks resumed in 2026 after a $0 FY2025, a secondary confirming signal of a mature/self-funding rather than expansionary posture."

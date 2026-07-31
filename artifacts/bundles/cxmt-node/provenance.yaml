@@ -1,0 +1,48 @@
+# Bundle — node posture + capital-flow: cxmt (2026-07-26)
+# Extends board.yaml cxmt axes + artifacts/bundles/cxmt-memory-ipo-2026-07-22.
+# CXMT = China-state-backed (state-directed capital, not market-directed).
+# CURRENCY: reports in CNY/RMB. USD conversions use ~7.2 CNY/USD (FLAGGED).
+# Method: WebFetch of the IPO-crawl bundle's press URLs; WebSearch exhausted.
+node: cxmt
+name: "CXMT"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Record ~$8.5B STAR-Market IPO (Jul 2026) funding a state-directed domestic-DRAM capacity buildout — China's memory-independence push against Samsung/SK Hynix/Micron."
+  sources:
+    - {figure: "raised $8.5B (57.9B yuan), up to $9.8B w/ overallotment; $85B valuation; largest Chinese-semiconductor mainland listing", label: "The Next Web — CXMT record $85B Shanghai IPO", url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", as_of: "2026-07", confidence: high}
+capital:
+  available:
+    value: "~$8.5B fresh IPO proceeds (up to ~$9.8B with 15% overallotment); + state 'Big Fund' backing (Big Fund specifics low-confidence)"
+    sources:
+      - {figure: "raised ~$8.5B (57.9B yuan); ~$9.8B with overallotment; ~10% of company floated (~6.7B shares)", label: "The Next Web — CXMT IPO", url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", as_of: "2026-07", confidence: high}
+      - {figure: "IPO oversubscribed ~212x retail / ~463x institutional preliminary bids", label: "SCMP — CXMT oversubscribed 212 times", url: "https://www.scmp.com/tech/article/3360892/chinese-memory-giant-cxmt-oversubscribed-212-times-mega-shanghai-ipo", as_of: "2026-07", confidence: high}
+      - {figure: "36.29% state-owned pre-IPO + Big Fund (state semiconductor fund)", label: "kestrel board.yaml cxmt optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  operating:
+    value: "no clean operating-cash-flow / FCF figure (newly public, prospectus-only); revenue growing fast but profitability undisclosed here"
+    sources:
+      - {figure: "operating cash flow / FCF not disclosed in available sources", label: "flag — no primary CF statement located", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  deployed:
+    value: "IPO proceeds earmarked to domestic DRAM/HBM capacity expansion (specific capex figure not located — low confidence)"
+    sources:
+      - {figure: "proceeds fund fab capacity / memory-independence buildout (capex $ not disclosed here)", label: "kestrel cxmt-memory-ipo crawl bundle", url: "artifacts/bundles/cxmt-memory-ipo-2026-07-22/provenance.yaml", as_of: "2026-07", confidence: low}
+  in:
+    value: "IPO ~$8.5-9.8B + recent-period revenue ~$7.4B (50.8B yuan, +700% YoY). NB the $7.4B is reported as 'Q1 2026' but that scale implies an ANNUAL figure for a ~7.7% DRAM player — period AMBIGUOUS, flagged."
+    sources:
+      - {figure: "revenue ~$7.4B (50.8B yuan) +700% YoY, reported as Q1 2026", label: "The Next Web — CXMT IPO (period ambiguity flagged)", url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", as_of: "2026-07", confidence: low}
+  out:
+    value: "capacity capex (state-directed buildout); dividends/buybacks not applicable (growth-stage, state-backed) — figures not located"
+    sources:
+      - {figure: "capex outflow to fab buildout; magnitude not disclosed here", label: "flag — not located", url: "artifacts/bundles/cxmt-memory-ipo-2026-07-22/provenance.yaml", as_of: "2026-07", confidence: low}
+optionality:
+  value: "locked — state-directed capital (36.29% state pre-IPO); Entity-List/DoD-1260H constrained; strategic, not return-maximizing"
+  sources:
+    - {figure: "Pentagon added CXMT to 'Chinese military companies' (1260H) list; interagency cleared for Commerce Entity List (not yet effective)", label: "The Next Web — CXMT IPO (export-control status)", url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", as_of: "2026-07", confidence: med}
+    - {figure: "36.29% state-owned pre-IPO, state-directed", label: "kestrel board.yaml cxmt optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "~7.7% of the global DRAM market GROSS — China's domestic memory-independence supplier (feeds Alibaba / ByteDance / Xiaomi); strategic gravity >> its current commercial scale"
+  sources:
+    - {figure: "estimated 7.7% of global DRAM market", label: "The Next Web — CXMT IPO", url: "https://thenextweb.com/news/cxmt-ipo-shanghai-record-85-billion-valuation", as_of: "2026-07", confidence: med}
+    - {figure: "China's domestic DRAM push; feeds Alibaba/ByteDance/Xiaomi", label: "kestrel board.yaml cxmt gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty: (1) the ~$7.4B revenue period (Q1 vs annual — flagged low); (2) no operating-cash-flow / capex disclosure; (3) export-control trajectory (Entity List cleared but not yet effective). China-state-backed: capital is state-directed, so market-style optionality does not apply. Market cap ~$85B = the IPO valuation mark."

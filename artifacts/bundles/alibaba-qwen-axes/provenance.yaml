@@ -1,0 +1,33 @@
+# Bundle — axis estimates: alibaba-qwen (2026-07-25)
+# The cited-source appendix for board.yaml alibaba-qwen {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted). Alibaba 20-F FY2026
+  (SEC) + stockanalysis balance sheet/segments; Qwen ecosystem via Wikipedia;
+  China state-influence via kestrel china-stack-independence thread sources.
+  Gravity deliberately deflates GMV HARD (low VA-share) to avoid the
+  gross-vs-value-added trap. CNY->USD at ~7.2 (assumption, flagged).
+
+capitalization:
+  value: "~$44B liquid (falling ~45% in 2yr into the AI buildout); market cap ~$269B"
+  sources:
+    - {figure: "cash+STI ¥316,894M (¥131,530M cash + ¥185,364M STI) at Mar 31 2026 (¥428B FY25, ¥571B FY24)", label: "stockanalysis.com — BABA balance sheet", url: "https://stockanalysis.com/stocks/BABA/financials/balance-sheet/", as_of: "2026-03", confidence: med}
+    - {figure: "Form 20-F FY2026 (year ended Mar 31 2026), filed 2026-05-20 — primary backing", label: "SEC EDGAR — Alibaba 20-F FY2026", url: "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/0001193125-26-231755-index.htm", as_of: "2026-05", confidence: high}
+    - {figure: "market cap $268.78B", label: "companiesmarketcap.com — Alibaba", url: "https://companiesmarketcap.com/alibaba/marketcap/", as_of: "2026-07", confidence: high}
+    - {figure: "FY2026 revenue ¥1,023,670M (~$142B); operating income collapsed ¥141B->¥50B (AI capex)", label: "stockanalysis.com — BABA income statement", url: "https://stockanalysis.com/stocks/BABA/financials/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "constrained — cash-rich but China state-steered + capital controls"
+  sources:
+    - {figure: "MofCom reportedly consulting Alibaba/ByteDance on restricting overseas transfer of training data + model weights", label: "SCMP via kestrel china-stack-independence thread (2026-07-23)", url: "https://www.scmp.com/tech/tech-war/article/3361625/global-ai-experts-push-back-us-distillation-claims-against-moonshots-kimi-k3-model", as_of: "2026-07", confidence: med}
+    - {figure: "~¥380B (~$53B) AI/compute buildout + Zhenwu M890 + open Zhenwu/SAIL CUDA-alternative stack (national-champion tilt)", label: "The Register via kestrel china-stack thread (2026-05)", url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", as_of: "2026-05", confidence: med}
+    - {figure: "VIE/ADR + China capital controls constrain cross-border cash movement (20-F risk factors)", label: "SEC EDGAR — Alibaba 20-F (risk factors)", url: "https://www.sec.gov/Archives/edgar/data/1577552/000119312526231755/0001193125-26-231755-index.htm", as_of: "2026-05", confidence: med}
+    - {figure: "state 'national team' ~$8.9B injection to steady equities (07-19->21) — active state management", label: "Epoch Times via kestrel china-stack thread", url: "https://www.theepochtimes.com/china/after-a-1-48-trillion-selloff-chinas-national-team-steps-in-to-steady-stocks-6065409", as_of: "2026-07", confidence: low}
+gravity:
+  value: "~$43B/yr value-added-dependent ($1.05T GMV × ~6% VA × ~0.5 dep + cloud/Qwen); range $30-65B"
+  sources:
+    - {figure: "GMV 'US$1 trillion' (China retail ~RMB 7T) — LAST OFFICIAL disclosure (Alibaba stopped reporting GMV after ~FY2020); current est. higher ~$1.1T", label: "SEC EDGAR — Alibaba 20-F FY2020", url: "https://www.sec.gov/Archives/edgar/data/1577552/000110465920082409/baba-20200331x20f.htm", as_of: "2020-03", confidence: med}
+    - {figure: "Alibaba Cloud revenue ¥158,132M FY2026 (~$22B, +34%) vs ¥118,028M FY2025; China e-commerce rev ¥449,385M", label: "stockanalysis.com — BABA segments", url: "https://stockanalysis.com/stocks/BABA/financials/?p=segments", as_of: "2026-03", confidence: high}
+    - {figure: "Qwen: 200,000+ derivative models on Hugging Face; app 234M users (May 2026); 100+ open-weight models", label: "Wikipedia — Qwen", url: "https://en.wikipedia.org/wiki/Qwen", as_of: "2026-05", confidence: med}
+    - {figure: "Qwen passed 1B Hugging Face downloads (Apr 2026)", label: "Forbes via kestrel china-stack thread", url: "https://www.forbes.com/sites/jonmarkman/2026/04/28/chinas-deepseek-v4-and-qwen-reshape-the-open-source-ai-race/", as_of: "2026-04", confidence: med}
+uncertainty: "GMV->value-added conversion is the biggest uncertainty (VA-share 4-8% and dependency 40-60% swing gravity ~$30-65B); GMV is the last-official ~2020 figure. State-influence on optionality is well-evidenced in direction, not quantified. CNY/USD @7.2 assumed."

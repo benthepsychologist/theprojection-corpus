@@ -1,0 +1,79 @@
+# Bundle — node posture + capital-flow: zhipu-ai / Zhipu AI (Z.ai / GLM) (2026-07-28)
+# FIRST-EVER axes pass for zhipu-ai — board.yaml currently has only the bare
+# { slug: zhipu-ai, rank: kingdom, sphere: china, holdings: [glm] } entry, no
+# prior capitalization/optionality/gravity strings. Full bundle built from scratch.
+# Method: WebFetch (Wikipedia hub + Google News RSS); WebSearch budget was
+# exhausted mid-task by the parallel research wave, so this bundle leans more on
+# WebFetch/Google-News-RSS summarization than the reference bundles did — treat
+# figures pulled from news-RSS synthesis as med/low confidence unless corroborated
+# across sources, and note that where the summarizing tool may have conflated
+# adjacent-but-distinct funding events (2025 state-fund rounds especially).
+# Notable: Zhipu went from private lab to HK-listed (SEHK: 2513, Jan-2026) mid-course
+# of this dataset, then had an extremely volatile post-IPO run (peak ~$112B market
+# cap May-2026, reportedly halved after lock-up expiry Jul-2026) — cumulative capital
+# raised is used as the WEIGHT anchor (matching the private-lab methodology used for
+# mistral-ai/deepseek), not the volatile daily market cap; market-cap volatility is
+# flagged separately in notes.
+node: zhipu-ai
+name: "Zhipu AI (Z.ai)"
+pocket: frontier-lab
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Aggressive multi-front expansion through 2026: shipped GLM-5/5.1/5.2 (Feb/Apr/Jun-2026), completed HK IPO (Jan-2026, SEHK:2513), filed for a second Shanghai STAR-board listing (~$2.2B target, mid-2026), raised a $4B HK secondary offering (Jul-2026), and stood up a 1-gigawatt all-domestic-chip datacenter (announced Jul-2026) — expanding on capital-raising, model cadence, and compute-buildout axes simultaneously, despite a US Entity List listing and a sharply volatile post-IPO stock."
+  sources:
+    - {figure: "GLM-5 (Feb-2026), GLM-5.1 (Apr-2026), GLM-5.2 with 1M-token context (Jun-2026)", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2026-06", confidence: med}
+    - {figure: "HK IPO completed 8-Jan-2026, ticker SEHK:2513, ~$558M raised — 'China's first major LLM company to go public'", label: "Wikipedia — Zhipu AI / Z.ai (news synthesis)", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2026-01", confidence: med}
+    - {figure: "1-gigawatt AI datacenter completed using only Chinese-made chips (multiple 10,000-chip clusters, zero Nvidia silicon); stock +37% on the announcement", label: "Google News RSS — Zhipu AI compute/datacenter coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+compute+datacenter+chips+deal", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$7-8B cumulative capital raised across all rounds (2023 series ~$350M -> May-2024 $400M @ ~$3B valuation -> 2025 state-linked rounds ~$1.4-1.9B -> Jan-2026 HK IPO $558M -> Jul-2026 $4B HK secondary); post-IPO market cap has been extremely volatile (peak ~$112B, May-2026; reportedly halved after lock-up expiry, Jul-2026) so is NOT used as the anchor figure here"
+    sources:
+      - {figure: "2023: 2.5 billion yuan (~$350M) from Alibaba, Tencent, Meituan, Ant Group, Xiaomi, HongShan", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2023", confidence: med}
+      - {figure: "May-2024: $400M round incl. Saudi Prosperity7 Ventures, valuing the company at ~$3B", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2024-05", confidence: med}
+      - {figure: "Mar-2025: $137M and separately $207M raised from/incl. state funds within about a month (possible overlap between the two figures, not confirmed distinct)", label: "Google News RSS — Zhipu AI funding coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+GLM+funding", as_of: "2025-03", confidence: low}
+      - {figure: "Jul-2025: $1.4B strategic investment from Shanghai state funds, and separately $140M from Shanghai state funds (may be the same event reported at two granularities)", label: "Google News RSS — Zhipu AI funding coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+GLM+funding", as_of: "2025-07", confidence: low}
+      - {figure: "Jan-2026: HK IPO raised ~$558M (targeted $300-640M range with HK$3B cornerstone commitments)", label: "Google News RSS — Zhipu AI IPO coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+IPO+Hong+Kong+revenue", as_of: "2026-01", confidence: med}
+      - {figure: "Jul-2026: $4B HK secondary share sale, priced at low end of range, after stock had run up ~1,500% since the Jan-2026 IPO", label: "Google News RSS — Zhipu AI HK share sale coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+%22%244+billion%22+OR+%22HK%243%20billion%22+share+sale", as_of: "2026-07", confidence: med}
+      - {figure: "market cap hit a record ~$112B (May-2026); stock reportedly halved after lock-up expiry alongside MiniMax (Jul-2026) — extreme post-IPO volatility, not used as the WEIGHT anchor", label: "Google News RSS — Zhipu AI IPO/valuation coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+IPO+Hong+Kong+revenue", as_of: "2026-07", confidence: low}
+  operating:
+    value: "revenue figures reported but inconsistent across sources — 2024 ARR reported ~$168M; a post-IPO earnings report cited revenue growth of 132% yoy while total revenue stayed 'under $105M' (unclear if this is a half-year or full-year figure) — treat as directional (fast-growing, still sub-$200M/yr) not precise"
+    sources:
+      - {figure: "~$168M Annual Recurring Revenue (2024)", label: "Google News RSS — Zhipu AI funding/valuation coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+GLM+funding", as_of: "2024", confidence: low}
+      - {figure: "post-IPO earnings: revenue +132% yoy but 'under $105M' total (period unclear)", label: "Google News RSS — Zhipu AI IPO coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+IPO+Hong+Kong+revenue", as_of: "2026", confidence: low}
+  deployed:
+    value: "1-gigawatt AI datacenter built on all-domestic chips (multiple 10,000-chip clusters, zero Nvidia silicon) completed/announced Jul-2026, alongside a self-developed inference-chip effort — the marquee capital-deployment event of this bundle, but with no disclosed total dollar cost"
+    sources:
+      - {figure: "1GW datacenter, zero-Nvidia, multiple 10,000-chip clusters, framed as a step toward 'China's computing independence'; 'hundreds of millions' in infrastructure acquisition mentioned without a precise figure", label: "Google News RSS — Zhipu AI compute/datacenter coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+compute+datacenter+chips+deal", as_of: "2026-07", confidence: low}
+  in:
+    value: "VC + Big-Tech strategic (Alibaba/Tencent/Meituan/Ant/Xiaomi/HongShan 2023; Prosperity7 2024) -> Chinese state/government guidance funds (Shanghai, 2025) -> public capital markets (HK IPO Jan-2026, HK secondary Jul-2026, planned Shanghai STAR listing ~$2.2B)"
+    sources:
+      - {figure: "dual-listing strategy: HK IPO completed, Shanghai STAR-board listing (~$2.2B target) in tutoring/prep as of mid-2026", label: "Google News RSS — Zhipu AI IPO coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+IPO+Hong+Kong+revenue", as_of: "2026-06", confidence: med}
+      - {figure: "Hangzhou municipal government project agreement, 61.28 million yuan (~$8.5M)", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2025-05", confidence: med}
+  out:
+    value: "1GW domestic-chip datacenter buildout + self-developed inference chips; compute shortage reported Feb-2026 (user signup restrictions) suggests spend has not kept pace with demand"
+    sources:
+      - {figure: "'shortage of compute resources' leading to user complaints and signup restrictions", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2026-02", confidence: med}
+optionality:
+  value: "constrained — Chinese state/municipal guidance-fund investors (Shanghai, ~2025) sit alongside Big-Tech strategics (Alibaba/Tencent/Meituan/Ant); added to the US Commerce Dept Entity List (Jan-2025) over national-security concerns, cutting off legal access to advanced US chips and forcing the domestic-chip datacenter strategy; Tsinghua-University-spinout academic origin (founded 2019) gives it a state-adjacent research pedigree distinct from a pure VC-backed startup"
+  sources:
+    - {figure: "US Commerce Dept added Zhipu to the Entity List, Jan-2025, over national security concerns; Zhipu called itself 'not relying on U.S. large-model technology' and 'undeterred'", label: "Google News RSS — Zhipu AI entity list coverage (attrib. Reuters/WSJ/SCMP)", url: "https://news.google.com/rss/search?q=Zhipu+AI+entity+list+export+control", as_of: "2025-01", confidence: med}
+    - {figure: "received fresh funding from a Chinese state firm despite blacklist status (Mar-2025)", label: "Google News RSS — Zhipu AI entity list coverage (attrib. Reuters)", url: "https://news.google.com/rss/search?q=Zhipu+AI+entity+list+export+control", as_of: "2025-03", confidence: med}
+    - {figure: "Tsinghua University spinout, founded 2019", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2019", confidence: med}
+gravity:
+  value: "no clean $ figure — sub-$200M/yr disclosed revenue (2024 ARR ~$168M, growing fast per 2026 earnings) is the only hard number; broader touch includes open-weight GLM model adoption (GLM-4-9B/4-32B released MIT-licensed, widely self-hosted incl. on domestic chips), a Hangzhou government smart-city deployment (~$8.5M), and macro signal from the extreme post-IPO stock reaction (peak ~$112B cap, then halved) reflecting investor-perceived competitive relevance rather than metered economic activity"
+  sources:
+    - {figure: "~$168M ARR (2024)", label: "Google News RSS — Zhipu AI funding/valuation coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+GLM+funding", as_of: "2024", confidence: low}
+    - {figure: "GLM-4-9B/4-32B released MIT-licensed (Apr-2025), open-weight adoption ongoing including on Cambricon/Moore Threads domestic silicon", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2025-04", confidence: med}
+    - {figure: "Hangzhou municipal government deal, ~61.28M yuan (~$8.5M)", label: "Wikipedia — Zhipu AI / Z.ai", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2025-05", confidence: med}
+thrust:
+  value: "$0.3-1B/yr (thin) — no disclosed multi-year compute-commitment total to divide into a clean run-rate; best available proxy is 'hundreds of millions' in infrastructure acquisition tied to the 1GW all-domestic-chip datacenter completed Jul-2026, plus the $4B Jul-2026 secondary raise explicitly earmarked in coverage toward continued compute/chip buildout (only a fraction of which will land as this year's new-position formation) — treat this as an order-of-magnitude estimate, not a sourced commitment figure"
+  basis: "Commitment run-rate proxy: 1GW domestic-chip datacenter (completed/announced Jul-2026, 'hundreds of millions' in infrastructure acquisition per press coverage, no total contract value disclosed) + self-developed inference-chip program, funded in part by the $4B Jul-2026 HK secondary offering. No announced multi-year compute contract with a stated total to divide by years, unlike US hyperscaler-linked labs — flagging thrust as genuinely thin/unsourceable at precision, best-estimate only."
+  sources:
+    - {figure: "1GW datacenter, all-domestic chips, 'hundreds of millions' in infrastructure acquisition (no total disclosed)", label: "Google News RSS — Zhipu AI compute/datacenter coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+compute+datacenter+chips+deal", as_of: "2026-07", confidence: low}
+    - {figure: "$4B HK secondary offering, Jul-2026, priced at low end of range amid a ~1,500% post-IPO stock run", label: "Google News RSS — Zhipu AI HK share sale coverage", url: "https://news.google.com/rss/search?q=Zhipu+AI+%22%244+billion%22+OR+%22HK%243%20billion%22+share+sale", as_of: "2026-07", confidence: med}
+buybacks:
+  value: "$0 — no buyback program disclosed; only recently went public (HK IPO Jan-2026) and is still in capital-raising mode (Jul-2026 secondary, planned Shanghai STAR listing), the opposite of a buyback posture"
+  sources:
+    - {figure: "no buyback activity found in any source reviewed; company is actively issuing new equity (Jan-2026 IPO, Jul-2026 secondary, planned STAR listing)", label: "researcher synthesis — absence of any buyback coverage across Wikipedia + Google News RSS sweep", url: "https://en.wikipedia.org/wiki/Zhipu_AI", as_of: "2026-07", confidence: med}
+notes: "FIRST axes pass for zhipu-ai — board.yaml has no prior capitalization/optionality/gravity strings, so this bundle is a from-scratch build, not a refresh. Biggest uncertainties: (1) the 2025 state-fund financing figures ($137M/$207M/$140M/$1.4B) may partially double-count the same event reported at different granularities by different outlets — treat the ~$1.4-1.9B 2025 subtotal as directional, not additive-exact; (2) post-IPO market cap has been wildly volatile (peak ~$112B May-2026, reportedly halved by the Jul-2026 lock-up expiry) — cumulative capital raised (~$7-8B) is used as the WEIGHT anchor instead, consistent with the private-lab methodology in the mistral-ai/deepseek bundles, but Zhipu is no longer strictly private (dual HK/Shanghai listing) so this may need revisiting once a stable post-lock-up market cap emerges; (3) thrust has no disclosed multi-year commitment total — the 1GW domestic-chip datacenter is real and significant but its total cost is unreported, so the thrust figure here is a thin order-of-magnitude estimate, not a sourced run-rate; (4) revenue figures (2024 ARR ~$168M vs. a later 'under $105M' post-IPO earnings figure) are not reconciled across sources — likely different reporting periods, not a contradiction, but not verified. WebSearch quota was exhausted partway through this research pass (shared session budget across a parallel multi-agent wave), so verification leaned more heavily on WebFetch/Google-News-RSS synthesis than direct search corroboration — a follow-up pass with fresh WebSearch budget could tighten several of the low-confidence figures above, especially the 2025 funding-round reconciliation and the exact thrust total."

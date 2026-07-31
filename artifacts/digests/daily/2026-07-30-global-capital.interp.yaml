@@ -1,0 +1,71 @@
+# <date>-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (a dedicated key namespace — see
+# tools/render_read.py's load_interpretations()). Validated by
+# tools/readouts.py's validate_interpretation() before being written here;
+# the bullet's own <!-- k: ... --> annotation carries interp=yes to point
+# at its entry.
+
+both-released-on-schedule-q2-gdp-advance-estimate:
+  mechanism: >
+    Soft growth alongside inflation that hasn't cooled narrows the Fed's
+    room to cut, which typically supports the dollar and pressures
+    capital toward US assets even as growth itself softens.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The Fed holds its hawkish line, the dollar stays firm, and EM
+        capital outflows continue on the yield advantage.
+      why: >
+        A central bank on hold with above-target inflation has
+        historically kept real rates attractive relative to peers,
+        pulling portfolio flows toward the anchor currency.
+      precedent: >
+        The Fed's 2022 hiking cycle, held against still-sticky inflation,
+        produced sustained dollar strength (DXY +15% that year) and
+        visible EM outflow pressure, especially in currencies with
+        dollar-denominated debt.
+    - direction: >
+        Growth softness dominates pricing over the next few prints
+        instead, pulling rate-cut expectations forward despite today's
+        hawkish hold.
+      why: >
+        Markets often re-price toward growth risk once a soft print
+        repeats, overriding a central bank's stated inflation focus if
+        the labor/spending data turns further.
+      precedent: ""
+  context_note: >
+    Lands on top of an already-elevated geopolitical risk premium from
+    the widening Iran conflict (see World News), which independently
+    pressures the same safe-asset demand this print is testing.
+
+amazon-reported-net-sales-200-6b-20-yoy-aws:
+  mechanism: >
+    Amazon's AWS beat is the second hyperscaler print, after Microsoft,
+    showing AI capex converting into accelerating cloud revenue rather
+    than just backlog.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Capital markets keep rewarding hyperscalers that show real
+        revenue conversion, funding further capex rounds.
+      why: >
+        Two consecutive confirmed conversions in one week (Azure +43%,
+        AWS +37%) give the bull case a harder floor than backlog claims
+        alone.
+      precedent: >
+        Microsoft's 07-29 report showed the same pattern one day
+        earlier: Azure crossing $100B run-rate at +41% growth drove an
+        immediate +9% stock reaction, the week's first instance of this
+        conversion-reward pattern.
+    - direction: >
+        The bar keeps rising each quarter, so today's beat becomes next
+        quarter's baseline and eventually disappoints.
+      why: >
+        Markets that reward acceleration typically require the
+        acceleration to continue, not just repeat, or an equal beat
+        reads as deceleration.
+      precedent: ""
+  context_note: >
+    Reinforces rather than complicates the GDP/PCE read: this growth
+    traces to real enterprise cloud demand, not just capex accounting.

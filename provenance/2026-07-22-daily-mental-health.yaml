@@ -1,0 +1,21 @@
+# Per-run fetch manifest — /daily 2026-07-22, mental-health lens (interim agentic mode)
+# NOTE: window spans three digest-days (07-20 finalize tail, missed 07-21, 07-22 so far).
+source_id: agentic-web-sweep
+params:
+  lens: mental-health
+  window_start: "2026-07-20T18:00:00-04:00"
+  as_of: "2026-07-22T08:15:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.mental-health — orgs, people, themes, conditions)
+    - attention/threads.yaml (2 open mh threads)
+  exclusions: [reddit, pr-newswire]
+fetched_at: "2026-07-22T12:50:00Z"
+items_file: buffer/2026-07-22-mental-health-sweep.jsonl   # 4 items
+notes: >-
+  First run to query the ClinicalTrials.gov v2 API directly from this
+  container — two certifiable registry entries (NCT07714889 first-posted
+  07-20; NCT07218302 record update 07-21), replacing the 07-20 digest's
+  "none certifiable" caveat. News sweep found only one in-window item; the
+  coverage critic caught a missed BHB 07-21 lead (Kaiser Permanente clinician
+  backlash) — folded into the 07-21 digest with attribution and logged as a
+  miss in coverage-log.md.

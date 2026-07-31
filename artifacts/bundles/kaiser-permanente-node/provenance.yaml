@@ -1,0 +1,66 @@
+# Bundle — health node: kaiser-permanente (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml kaiser-permanente. EXTENDS the
+# axis strings on board.yaml with posture and the in/out/available/operating/
+# deployed breakdown. NON-PROFIT — no SEC filings; WebFetch from Wikipedia +
+# the existing kaiser-ai-clinician-backlash finding (WebSearch exhausted).
+node: kaiser-permanente
+name: "Kaiser Permanente"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Rolling up the non-profit health-system space through Risant Health (Geisinger 2023-24, Cone Health June 2024) — but at-war on one front: the NUHW labor fight over AI in behavioral-health triage (a 196-day SoCal mental-health strike Oct 2024-May 2025)."
+  sources:
+    - {figure: "Risant Health launched to acquire non-profit systems outside its regions: Geisinger (announced Apr 2023) + Cone Health, Greensboro NC (June 2024)", label: "Wikipedia — Kaiser Permanente (Risant expansion)", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2026-07", confidence: med}
+    - {figure: "NUHW 196-day Southern California mental-health strike Oct 2024-May 2025 over staffing / AI-assisted behavioral-health workflows", label: "kestrel finding kaiser-ai-clinician-backlash (BHB + NUHW sourced)", url: "https://bhbusiness.com/2026/07/21/kaiser-permanente-continues-to-face-clinician-backlash-over-ais-use-in-behavioral-health-care/", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "reserves / investment portfolio — mission-locked (non-profit, no equity markets); a stale ~$21.7B cash-reserves marker is the only fetched figure and is badly out of date"
+    sources:
+      - {figure: "~$21.7B cash reserves (~1,600% of CA regulatory minimum) — as-of 2015, STALE, current portfolio is materially larger and un-refetched", label: "Wikipedia — Kaiser Permanente (reserves)", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2015-12", confidence: low}
+  operating:
+    value: "~$127.7B 2025 operating revenue; operating income only ~$1.4B (~1.1% margin — thin, integrated payer+provider consumes nearly all revenue as care delivery)"
+    sources:
+      - {figure: "operating revenue $127.7B, operating income $1.4B (2025)", label: "Wikipedia — Kaiser Permanente (financials)", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2025-12", confidence: med}
+  deployed:
+    value: "no buybacks/dividends (non-profit); surplus recycled into facility capex + Risant Health acquisitions (Geisinger, Cone Health) — no fetched $ amount"
+    sources:
+      - {figure: "Risant Health roll-up (Geisinger + Cone Health) is the capital-deployment vehicle; dollar amounts not disclosed / not fetched", label: "Wikipedia — Kaiser Permanente (Risant)", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2026-07", confidence: low}
+  in:
+    value: "inflows — ~$127.7B 2025: member premiums (integrated payer) + care-delivery revenue (integrated provider)"
+    sources:
+      - {figure: "operating revenue $127.7B (2025); 13.1M members", label: "Wikipedia — Kaiser Permanente", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2025-12", confidence: med}
+  out:
+    value: "outflows — care delivery consumes ~99% of revenue (only ~$1.4B operating income); the rest is facility capex + Risant M&A. No shareholder outflows (non-profit)"
+    sources:
+      - {figure: "operating income $1.4B on $127.7B revenue (2025) implies ~$126B of operating/care outflow", label: "Wikipedia — Kaiser Permanente (financials)", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2025-12", confidence: med}
+
+optionality:
+  value: "constrained — non-profit with reserves mission-locked, no equity-capital-markets lever, and a razor-thin ~$1.4B operating margin; Risant Health is the one growth vehicle."
+  sources:
+    - {figure: "non-profit structure; operating income only $1.4B on $127.7B (2025); Risant the sole external-growth lever", label: "Wikipedia — Kaiser Permanente", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2025-12", confidence: med}
+    - {figure: "'constrained — non-profit; Risant roll-up' framing", label: "kestrel board.yaml kaiser-permanente optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$127.7B/yr routed — 13.1M members, 40 hospitals, 25,505 physicians, fully integrated payer+provider; the strongest / most-live behavioral-health arm on the board (the MH-lens hook)."
+  sources:
+    - {figure: "13.1M members; 40 hospitals; 25,505 physicians; 243,795 employees (2025-26)", label: "Wikipedia — Kaiser Permanente", url: "https://en.wikipedia.org/wiki/Kaiser_Permanente", as_of: "2026-07", confidence: med}
+
+thrust:
+  value: "capex $4.785B (2025 additions to land, buildings, equipment, software) − depreciation $3.301B (2025 'depreciation and software amortization', bundled/unsplit — thin) + M&A $0 (Geisinger + Cone Health both structured as non-cash 'member substitution' transactions, no consideration paid; no new Risant Health acquisitions have closed in the TTM window) = ~$1.5B/yr thrust"
+  weight_basis: "$133.3B total assets, audited combined financial statements FY2025 (Kaiser Foundation Health Plan, Inc. and Kaiser Foundation Hospitals, KPMG LLP-audited, not SEC — filed as bond continuing disclosure via EMMA/MSRB), up from $123.0B FY2024"
+  gravity_basis: "13.1M members in a fully integrated payer+provider system (40 hospitals, 25,505 physicians) have no alternative in-network system for their care — the ~$127.7B/yr routed is covered-lives/integrated-care throughput, not discretionary spend, so it's what breaks if Kaiser stops"
+  optionality_band: "locked — non-profit mission-lock: $82.3B net worth (KPMG-audited FY2025) has no equity holders and is legally bound to the charitable healthcare mission, cannot be distributed"
+  buybacks_ttm: "n/a (non-profit, no equity holders)"
+  sources:
+    - {figure: "total assets $133,328M ($133.3B) at Dec 31 2025 vs $123,029M ($123.0B) Dec 31 2024; net worth $82,336M ($82.3B)", label: "KPMG-audited Combined Financial Statements — Kaiser Foundation Health Plan, Inc. / Kaiser Foundation Hospitals FY2025 (filed via EMMA/MSRB bond continuing disclosure)", url: "https://emma.msrb.org/P22007650-P21529546-P21985532.pdf", as_of: "2025-12", confidence: high}
+    - {figure: "additions to land, buildings, equipment, and software (capex) $4,785M ($4.785B) in 2025 vs $3,661M in 2024", label: "KPMG-audited Combined Statements of Cash Flows FY2025", url: "https://emma.msrb.org/P22007650-P21529546-P21985532.pdf", as_of: "2025-12", confidence: high}
+    - {figure: "'depreciation and software amortization' (bundled line item, not separately split — thin for the canon's depreciation-only rule) $3,301M in 2025 vs $3,099M in 2024", label: "KPMG-audited Combined Statements of Cash Flows FY2025", url: "https://emma.msrb.org/P22007650-P21529546-P21985532.pdf", as_of: "2025-12", confidence: med}
+    - {figure: "Geisinger (closed Mar 31 2024) and Cone Health (closed Dec 1 2024) acquisitions both 'did not involve the payment of consideration' — non-cash member-substitution transactions; a Feb 1 2026 Renown Health/Hometown Health joint venture (controlling interest, northern Nevada) is disclosed as a subsequent event but with no dollar consideration figure — flagged, not quantified, not included in the $0 M&A figure", label: "KPMG-audited Notes to Combined Financial Statements, Note 3 (Acquisitions and Joint Venture Agreement)", url: "https://emma.msrb.org/P22007650-P21529546-P21985532.pdf", as_of: "2025-12 / subsequent event 2026-02", confidence: high}
+    - {figure: "capital spending $4.8B (2025), operating revenues $127.7B, operating income $1.4B, net income $9.3B — cross-check against the audited statements", label: "Kaiser Permanente and Risant Health report 2025 financial results (press release)", url: "https://about.kaiserpermanente.org/news/press-release-archive/kaiser-permanente-risant-health-report-2025-financial-results", as_of: "2026-07", confidence: high}
+
+axes_num: { weight: 133.3, thrust: 1.5, gravity: 127.7 }  # $B — wave F, agent-derived 2026-07-28
+
+notes: "Biggest uncertainty is the numbers themselves — no SEC filings, so figures are Wikipedia-sourced (med) and reserves are a stale 2015 marker (low); a Kaiser annual-report PDF would upgrade all of these. Kaiser is the board's EDGE CASE: integrated payer+provider, neither AI-builder nor dependent — it enters through the labor fight over its AI in behavioral health (NUHW / Kaiser-vs-AI), which is precisely the mental-health lens hook, not a model line. UPDATE 2026-07-28 (wave F): weight is now HIGH-confidence, sourced from KPMG-audited combined financial statements (Kaiser Foundation Health Plan/Hospitals FY2025, filed via EMMA/MSRB bond continuing disclosure) rather than Wikipedia — total assets $133.3B. Thrust is thinner: capex and the bundled depreciation+software-amortization figure are both hard audited numbers, but the canon wants depreciation-only and Kaiser's statements don't split it out, so thrust confidence is med with a (thin) flag on that netting term. M&A is confidently $0 for the TTM window — both Risant deals were non-cash contributions with no consideration paid, and no new Risant acquisition has closed since; a Feb 2026 Renown Health JV is a subsequent event with no disclosed dollar figure, flagged but not quantified. The stale 2015 reserves marker in capital.available above is now superseded by the audited $82.3B net-worth figure cited in the new optionality_band, though that field itself was left untouched per instructions."

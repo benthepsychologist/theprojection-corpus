@@ -1,0 +1,58 @@
+# Bundle — node posture + capital-flow: masayoshi-son (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Distinguishes Son's PERSONAL net worth (volatile,
+# levered) from SoftBank's DIRECTED capital (see softbank-node bundle for the
+# corporate-entity detail this bundle draws on).
+node: masayoshi-son
+name: "Masayoshi Son"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Aggressive AI push — leads OpenAI's ~$40B round, holds a $19B/40% Stargate stake, and (via SoftBank) owns 87.1% of Arm — all atop ~71.36% voting control of SoftBank (29.14% economic). Personal net worth briefly peaked at $100.7B (2-Jun-2026, Forbes Real-Time, momentarily Asia's richest) on the AI-stock run before slipping back days later; over a third of his personal SoftBank shares are pledged as loan collateral."
+  sources:
+    - {figure: "net worth reached $100.7 billion on Forbes Real-Time Billionaires List, 2 June 2026, briefly making him 'Asia's richest person'; slipped back behind Mukesh Ambani and Adani by 4 June 2026 as market enthusiasm cooled", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2026-06", confidence: high}
+    - {figure: "SoftBank $19B / 40% Stargate commitment (of $500B target by 2029)", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-01", confidence: med}
+    - {figure: "Masayoshi Son 71.36% voting (29.14% economic) of SoftBank Group", label: "Wikipedia — SoftBank Group", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2024", confidence: high}
+
+capital:
+  available:
+    value: "Personal net worth is volatile and DISTINCT from the ~$110B board.yaml 'deployable' figure. Wikipedia shows Son ranked only 65th on Forbes (~May-2025) / 177th on Bloomberg Billionaires (~May-2025), then spiking to a $100.7B peak on 2-Jun-2026 (briefly Asia's richest) before slipping back within days as the SoftBank AI rally cooled — no single stable figure exists. The board's ~$110B reflects his CONTROL over SoftBank's ~$150-160B directed capital, not this personal pile. Over a third of his SoftBank shares are pledged as collateral for margin loans (levered)."
+    sources:
+      - {figure: "net worth reached $100.7 billion (Forbes Real-Time, 2 June 2026), briefly Asia's richest; slipped back by 4 June 2026", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2026-06", confidence: high}
+      - {figure: "ranked 65th on Forbes World's Billionaires (May 2025); No. 177 on Bloomberg Billionaires Index (May 2025)", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2025-05", confidence: high}
+      - {figure: "over a third of Son's SoftBank shares reportedly posted as collateral for margin loans (March 2023)", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2023-03", confidence: high}
+      - {figure: "~$110B — controls SoftBank + the Vision Fund raise machine, but personal stake levered (~1/3 pledged)", label: "kestrel board.yaml masayoshi-son deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "Directs SoftBank Group's ~$150-160B — Vision Fund 1 ~$100B raised/~$134B AUM (Jun-2023) + VF2 ~$30B + ~$40B OpenAI + 87.1% of Arm — via 71.36% voting control (29.14% economic, 2024), though his direct equity stake has been reported as low as 34.2% at other points (Dec-2022, as founder/CEO/largest shareholder)."
+    sources:
+      - {figure: "Masayoshi Son 71.36% voting (29.14% economic)", label: "Wikipedia — SoftBank Group", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2024", confidence: high}
+      - {figure: "held a 34.2% stake in SoftBank as founder, CEO, and largest shareholder", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2022-12", confidence: med}
+      - {figure: "directs ~$150-160B — Vision Fund 1 $100B raised/$134B AUM (Jun-2023) + VF2 ~$30B + ~$40B OpenAI + owns 87.1% of Arm", label: "kestrel softbank-node bundle deployed axis", url: "attention/board.yaml", as_of: "2026-07-26", confidence: med}
+  deployed:
+    value: "~$40B OpenAI round (2025), $19B/40% Stargate commitment, the Vision Fund portfolio (~60 companies), and 87.1% ownership of Arm — all at the SoftBank level Son controls."
+    sources:
+      - {figure: "SoftBank $19B / 40% Stargate commitment (of $500B target by 2029)", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-01", confidence: med}
+      - {figure: "owns 87.1% of Arm + ~60 Vision Fund portfolio companies", label: "kestrel board.yaml softbank gravity/capitalization axes", url: "attention/board.yaml", as_of: "2026-07-26", confidence: med}
+  in:
+    value: "At the personal level, inflow has historically run NEGATIVE — Son personally owed SoftBank itself $4.7B (Nov-2022) from losses on the conglomerate's Vision Fund co-investments, totaling $5.1B per Bloomberg (Feb-2023). This is a personal liability, not new capital; fresh capital (OpenAI/Stargate LP commitments) flows to the corporate entity, not to Son directly."
+    sources:
+      - {figure: "Son personally owed SoftBank $4.7bn (Nov 2022) due to losses on the conglomerate's technology bets; totaled $5.1bn per Bloomberg calculations (Feb 2023)", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2023-02", confidence: high}
+  out:
+    value: "Personal debt service / collateral posting against pledged shares; at the SoftBank level he controls, ~$40B OpenAI + Stargate build-out (see softbank-node bundle for the corporate-entity detail)."
+    sources:
+      - {figure: "over a third of Son's SoftBank shares posted as collateral for margin loans", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2023-03", confidence: med}
+
+optionality:
+  value: "Free but LEVERED at both levels — 71.36% voting control lets him deploy SoftBank's capital at will, but personal debt owed to SoftBank itself (~$5.1B, Feb-2023) plus over a third of his personal shares pledged as collateral mean a SoftBank stock-price shock hits Son personally (margin calls), not just the corporate balance sheet. Control level: near-total voting control, materially constrained by personal leverage."
+  sources:
+    - {figure: "Masayoshi Son 71.36% voting (29.14% economic)", label: "Wikipedia — SoftBank Group", url: "https://en.wikipedia.org/wiki/SoftBank_Group", as_of: "2024", confidence: high}
+    - {figure: "over a third of shares pledged as collateral for margin loans; personal debt to SoftBank totaled $5.1B (Feb 2023)", label: "Wikipedia — Masayoshi Son", url: "https://en.wikipedia.org/wiki/Masayoshi_Son", as_of: "2023-03", confidence: high}
+
+gravity:
+  value: "Arm (world mobile-silicon IP) + ~60 Vision Fund portfolio companies + Stargate/OpenAI anchoring — the same real gravity as SoftBank itself, since Son's voting control makes him the will behind it."
+  sources:
+    - {figure: "owns 87.1% of Arm (world mobile-silicon IP) + ~60 portfolio companies + Stargate/OpenAI anchor", label: "kestrel board.yaml softbank gravity axis", url: "attention/board.yaml", as_of: "2026-07-26", confidence: med}
+
+notes: "Personal net worth vs. directed capital is the key distinction: Son's PERSONAL wealth swung from ~65th on Forbes (May-2025) to a brief $100.7B peak (2-Jun-2026, Asia's richest) and back within days — volatile, and NOT the same pile as the ~$150-160B SoftBank directs. Leverage is the real risk at both levels: over a third of his personal SoftBank stake is pledged as loan collateral, and he has personally owed SoftBank itself close to $5B from Vision Fund co-investment losses (2022-23) — a sustained stock-price shock could trigger forced selling / margin calls on the very stake his voting control depends on."

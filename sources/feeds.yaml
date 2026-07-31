@@ -1,0 +1,164 @@
+# sources/feeds.yaml — the RSS set, per lens.
+#
+# WHY THIS EXISTS (see attention/watchlist.yaml header): RSS only tells us
+# what a publisher chose to push — it's the "what got published" layer,
+# complementary to the query-based sweep collectors (GDELT/OpenAlex/EDGAR/
+# etc. in sources.yaml) that hunt for watchlist terms everywhere.
+#
+# Schema per lens: a flat list of
+#   { name: <human name>, url: <feed url>, axis: <coverage role>,
+#     status: dead (only present when dead), note: <why/when, if dead> }
+#
+# `axis` = the feed's coverage role within the lens (a coarse category for
+# the audit breakdown, not the board.yaml capital/optionality/gravity axes):
+#   official    — the org's own blog/newsroom (primary-source, low volume)
+#   press       — trade/tech journalism covering the lens
+#   newsletter  — curated digest (several are also coverage-critic baselines
+#                 in sources/benchmarks.yaml — the critic's daily/weekly_add
+#                 lists overlap this axis on purpose)
+#   research    — paper/preprint feeds (arXiv, agency research news)
+#   policy      — government/regulatory newsroom feeds
+#
+# PROVENANCE: bizdev's reference monitoring-feeds.yaml was the intended
+# one-time seed source per BOOTSTRAP.md §Seeding, but /workspace/bizdev does
+# not exist in this container (checked 2026-07-28 — no such path, nothing
+# matching *feed* under /workspace). Built fresh instead: every URL below
+# was HEAD/GET-probed live (stdlib urllib, kestrel UA, 10s timeout) on
+# 2026-07-28 before being added — see the collectors/rss.py audit output.
+# `mental-health` deliberately reuses the two named trade publications from
+# sources/benchmarks.yaml's critic baseline (Behavioral Health Business,
+# Fierce Healthcare's mh-adjacent coverage) per this week's steer to prefer
+# Google-News-independent sources.
+#
+# PRUNE DISCIPLINE (BOOTSTRAP.md): dead feeds are marked `status: dead` with
+# a note, never silently deleted — a loud skip, not a quiet drop.
+#
+# Checked-but-no-working-feed-found (not listed as entries — no real URL to
+# preserve, so nothing to mark dead): Anthropic (no public RSS as of
+# 2026-07-28) · Meta AI blog (ai.meta.com has no /feed; About Meta's general
+# newsroom feed exists but isn't AI-specific — left out as noise, not
+# signal) · SAMHSA newsroom · Psychiatry.org news room (both 404 on every
+# guessed path, no <link rel="alternate" type="application/rss+xml"> found
+# on their listing pages).
+
+lenses:
+
+  ai:
+    - name: "OpenAI News"
+      url: "https://openai.com/news/rss.xml"
+      axis: official
+    - name: "Google DeepMind Blog"
+      url: "https://deepmind.google/blog/rss.xml"
+      axis: official
+    - name: "Google AI Blog"
+      url: "https://blog.google/technology/ai/rss/"
+      axis: official
+    - name: "Hugging Face Blog"
+      url: "https://huggingface.co/blog/feed.xml"
+      axis: official
+    - name: "Nvidia Deep Learning Blog"
+      url: "https://blogs.nvidia.com/blog/category/deep-learning/feed/"
+      axis: official
+    - name: "TechCrunch AI"
+      url: "https://techcrunch.com/category/artificial-intelligence/feed/"
+      axis: press
+    - name: "VentureBeat AI"
+      url: "https://venturebeat.com/category/ai/feed/"
+      axis: press
+    - name: "The Verge AI"
+      url: "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+      axis: press
+    - name: "Ars Technica AI"
+      url: "https://arstechnica.com/tag/ai/feed/"
+      axis: press
+    - name: "MIT Technology Review AI"
+      url: "https://www.technologyreview.com/topic/artificial-intelligence/feed"
+      axis: press
+    - name: "Wired AI"
+      url: "https://www.wired.com/feed/tag/ai/latest/rss"
+      axis: press
+    - name: "Import AI"
+      url: "https://importai.substack.com/feed"
+      axis: newsletter  # also a benchmarks.yaml weekly_add critic baseline
+    - name: "Last Week in AI"
+      url: "https://lastweekin.ai/feed"
+      axis: newsletter  # also a benchmarks.yaml weekly_add critic baseline
+    - name: "The Neuron"
+      url: "https://www.theneurondaily.com/feed"
+      axis: newsletter  # also a benchmarks.yaml daily critic baseline
+      status: dead
+      note: "HTTP 200 on the initial HEAD probe (looked live) but the body is Cloudflare-challenge HTML (content-type text/html, __cf_bm cookie), not RSS XML — collectors/rss.py's live self-test hit an XML parse error here 2026-07-28 ('not well-formed'). No working feed found at this or nearby paths; the critic (benchmarks.yaml) falls back to web search."
+    - name: "TLDR AI"
+      url: "https://tldr.tech/api/rss/ai"
+      axis: newsletter  # also a benchmarks.yaml daily critic baseline
+    - name: "arXiv cs.AI"
+      url: "https://arxiv.org/rss/cs.AI"
+      axis: research
+    - name: "arXiv cs.CL"
+      url: "https://arxiv.org/rss/cs.CL"
+      axis: research
+
+  global-capital:   # renamed from `money` 2026-07-30 (full rename)
+    - name: "Fierce Healthcare"
+      url: "https://www.fiercehealthcare.com/rss.xml"
+      axis: press
+    - name: "MedCity News"
+      url: "https://medcitynews.com/feed/"
+      axis: press
+      status: dead
+      note: "HTTP 200 on HEAD (initial candidate check, 2026-07-28) but HTTP 403 Forbidden on GET, browser UA, reproduced 2x by collectors/rss.py's audit() — the actual collector needs GET, so this is dead in practice despite a HEAD probe suggesting otherwise. Bot-detection asymmetry, not a real 200."
+    - name: "Digital Health Business & Technology"
+      url: "https://www.digitalhealthbusiness.com/rss"
+      axis: press
+    - name: "Healthcare Dive"
+      url: "https://www.healthcaredive.com/feeds/news/"
+      axis: press
+    - name: "MedTech Dive"
+      url: "https://www.medtechdive.com/feeds/news/"
+      axis: press
+    - name: "Crunchbase News"
+      url: "https://news.crunchbase.com/feed/"
+      axis: press
+    - name: "KFF Health News"
+      url: "https://kffhealthnews.org/feed/"
+      axis: policy
+    - name: "Money Stuff (Matt Levine, Bloomberg)"
+      url: "https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss"
+      axis: newsletter  # also a benchmarks.yaml daily critic baseline; partially paywalled (noted there too)
+    - name: "Axios Business"
+      url: "https://www.axios.com/feed"
+      axis: press
+      status: dead
+      note: "HTTP 403 on both HEAD and GET, plain UA and browser UA, 2026-07-28 — Cloudflare bot-blocked."
+    - name: "PE Hub Healthcare"
+      url: "https://www.pehub.com/category/healthcare/feed/"
+      axis: press
+      status: dead
+      note: "HTTP 401 Unauthorized, 2026-07-28 — feed appears subscription-gated."
+
+  mental-health:
+    - name: "Behavioral Health Business"
+      url: "https://bhbusiness.com/feed/"
+      axis: press  # benchmarks.yaml daily critic baseline
+    - name: "STAT News"
+      url: "https://www.statnews.com/feed/"
+      axis: press  # benchmarks.yaml daily critic baseline ("STAT Health Tech")
+    - name: "OPEN MINDS"
+      url: "https://openminds.com/feed/"
+      axis: press  # behavioral-health market intelligence trade press
+    - name: "Addiction Treatment Business"
+      url: "https://www.addictiontreatmentbusiness.com/feed/"
+      axis: press
+    - name: "NIMH News"
+      url: "https://www.nimh.nih.gov/rss.xml"
+      axis: research
+    - name: "MobiHealthNews"
+      url: "https://www.mobihealthnews.com/feed"
+      axis: press
+      status: dead
+      note: "HTTP 403 on both HEAD and GET, plain UA and browser UA, 2026-07-28 — Cloudflare bot-blocked. Also a benchmarks.yaml critic baseline; the critic falls back to web search per its access note."
+    - name: "Psychiatric Times"
+      url: "https://www.psychiatrictimes.com/rss"
+      axis: press
+      status: dead
+      note: "HTTP 403 on both HEAD and GET, plain UA and browser UA, 2026-07-28 — Cloudflare bot-blocked."

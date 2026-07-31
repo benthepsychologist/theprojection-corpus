@@ -1,0 +1,57 @@
+# Bundle — node posture + capital-flow: elon-musk (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted); anchored to board.yaml deployable estimate. Musk holds
+# TWO realms (spacex, tesla) — the personal union is structural per board.yaml
+# gloss, not a footnote; this bundle nets both into one PERSON node.
+node: elon-musk
+name: "Elon Musk"
+kind: person
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Founder/supervoting control across two public realms mid-buildout-race — SpaceX just raised $75B in its Jun-2026 IPO (SPCX) funding the Starlink/Colossus/Grok expansion, and Tesla approved a milestone-gated $1T pay package (Nov-2025) tying his upside to continued growth."
+  sources:
+    - {figure: "SpaceX IPO Jun-12-2026, $135/share, $1.77T valuation, $75B raised — largest IPO by proceeds on record", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+    - {figure: "Tesla shareholders approved a $1 trillion pay package for Musk (Nov-2025), payable over 10yr if milestones are met", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-11", confidence: high}
+    - {figure: "posture: expanding — buildout-race dominant (Colossus/Grok)", label: "kestrel board.yaml spacex axis, classify 2026-07-24", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$250B personal deployable (kestrel board.yaml anchor — weights control over paper wealth) vs a reported net worth of $744B (Forbes, Jul-23-2026) to $839-876B (board.yaml, Jul-25-2026); trackers disagree by ~$100B day-to-day. Most of the headline NW is concentrated, largely illiquid equity across two ventures — deployable reflects pledge/borrow capacity plus what he can actually redeploy, not a liquidation value."
+    sources:
+      - {figure: "Forbes net worth US$744 billion (as of Jul-23-2026); Musk became a trillionaire (US$) in Jun-2026 per a separate tracker", label: "Wikipedia — Elon Musk", url: "https://en.wikipedia.org/wiki/Elon_Musk", as_of: "2026-07", confidence: med}
+      - {figure: "deployable ~$250B — absolute supervoting control of SpaceX/xAI/Tesla + best raiser alive (NW $839-876B)", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  operating:
+    value: "TWO realms directed as founder/CEO — SpaceX (~$16B cash + ~$75B demonstrated raise access via the Jun-2026 IPO; market cap ~$1.52T) and Tesla (FY2025: total assets $137.8B, total equity $82.14B — Tesla itself carries NO capitalization axis on board.yaml yet, gap flagged)."
+    sources:
+      - {figure: "SpaceX: ~$16B cash + ~$75B demonstrated raise access (Jun-2026 IPO); market cap ~$1.52T (SPCX)", label: "kestrel board.yaml spacex capitalization axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+      - {figure: "Tesla FY2025: total assets US$137.8B, total equity US$82.14B (Financials as of Dec-31-2025)", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-12", confidence: med}
+  deployed:
+    value: "SpaceX's $75B IPO proceeds (Jun-2026) funding the Starlink/Colossus/Grok buildout, plus a Jul-2025 $5B equity raise that routed $2B into xAI pre-merger; Tesla's $1T pay package is milestone-contingent and not yet realized/deployed."
+    sources:
+      - {figure: "Jul-2025 $5B SpaceX equity raise, incl. $2B invested into xAI", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2025-07", confidence: med}
+      - {figure: "SpaceX $75B IPO proceeds (Jun-2026)", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+  in:
+    value: "Tesla's $1T milestone-gated pay package (Nov-2025 approval, 10yr vest) — the largest comp package on record, contingent not realized; SpaceX equity appreciation (IPO $1.77T Jun-2026 vs a $1T xAI-merger mark Feb-2026 vs $127B in a 2022 private round)."
+    sources:
+      - {figure: "Tesla $1T pay package, 10yr, milestone-gated (Nov-2025)", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-11", confidence: high}
+      - {figure: "SpaceX valuation: $127B (2022 round) -> ~$1T (Feb-2026, post xAI acquisition) -> $1.77T (Jun-2026 IPO)", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+  out:
+    value: "No confirmed personal stock-sale or itemized philanthropic-giving figures found — the Musk Foundation is named on the fetched page but no disbursement figures are given. Confirmed gap, confidence low."
+    sources:
+      - {figure: "Musk Foundation exists; no giving figures disclosed on the fetched page", label: "Wikipedia — Elon Musk", url: "https://en.wikipedia.org/wiki/Elon_Musk", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "free — but the two realms differ in KIND of lock. SpaceX is a genuine supervoting lock (42% of outstanding shares, 85% of voting power via special stock — outside IPO holders cannot bind him). Tesla has no supervoting class (single-class common); his ~13% stake plus board deference plus the $1T pay package is influence-based control, not an equity lock — a real but lesser-order constraint than SpaceX's. xAI is folded into SpaceXAI, no separate stake."
+  sources:
+    - {figure: "SpaceX: Musk holds 42% of outstanding shares and controls 85% of voting power via super-voting stock", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+    - {figure: "Tesla: Musk owns 13% of Tesla (Financials as of Dec-31-2025); single class of common stock, no supervoting mechanism found", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-12", confidence: med}
+    - {figure: "spacex optionality: free — Musk ~82% voting so outside holders cannot bind him", label: "kestrel board.yaml spacex optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+gravity:
+  value: "combine both realms — SpaceX ~$85B/yr GROSS orbiting (Starlink + launch-dependent + compute leases) plus Tesla ~$94.8B/yr GROSS revenue (FY2025) — roughly ~$180B/yr GROSS across the economy that moves on his say-so. No VA-deflation applied (board policy defers this)."
+  sources:
+    - {figure: "spacex gravity: ~$85B/yr GROSS orbiting (Starlink + launch-dependent + compute leases)", label: "kestrel board.yaml spacex gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "Tesla revenue US$94.83 billion (2025)", label: "Wikipedia — Tesla, Inc.", url: "https://en.wikipedia.org/wiki/Tesla,_Inc.", as_of: "2025-12", confidence: high}
+
+notes: "Personal union across two public companies (SpaceX/SPCX + Tesla/TSLA) is structural per board.yaml gloss, not a footnote — netted into one PERSON node here. Net-worth trackers disagree by ~$100B depending on day/source (Forbes $744B Jul-23 vs board.yaml's $839-876B Jul-25) — treat the ~$250B deployable figure as load-bearing, not net worth. Tesla has NO board.yaml capitalization/optionality/gravity axes yet (only spacex does) — this bundle's Tesla figures are sourced fresh from Wikipedia, confidence med, and flagged as a board.yaml coverage gap. Tesla control is board/reputation-based (no supervoting class) — weaker than SpaceX's true equity lock; board.yaml's blanket 'absolute supervoting control of SpaceX/xAI/Tesla' phrasing overstates the Tesla leg specifically. No personal stock-sale or giving figures found for Musk on the fetched pages — 'out' flow is a confirmed gap (confidence low)."

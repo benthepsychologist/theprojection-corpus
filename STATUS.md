@@ -1,0 +1,479 @@
+# STATUS — kestrel
+
+*Hand-maintained. **As of 2026-07-30** (executive briefings un-morninged
+and re-wired into `/daily`, closing a gap the Global Capital rename had
+opened same day; top note below; prior states in the dated notes
+under it).*
+
+> **2026-07-30 (evening) — the Global Capital rename had silently orphaned
+> its own briefing; fixed, and the freshness gap that caused it closed.**
+> Ben noticed two things at once: Global Capital's beat-page briefing had
+> "disappeared," and the others still read "Morning briefing" well into
+> the afternoon. Root cause of the first: `readouts.py`'s lens constants
+> were updated for the rename (per the entry below) but the *stored*
+> briefing under the old `lens:money` key never got regenerated under
+> `lens:global-capital` — so the beat page looked up a scope that had
+> never been written, while the real (stale) content sat orphaned under
+> the dead key. Root cause of the second: the readouts pipeline
+> (`--scan → --pack-stale → agent → --apply`) had only ever been run by
+> hand, so a single morning generation just sat there all day with no
+> visible sign of it. Fixed three ways: regenerated all four
+> briefing-carrying scopes (front + 3 lenses) fresh via dispatched sonnet
+> agents and dropped the orphaned `lens:money` key; folded the same
+> pipeline into `/daily` step 6a so it can't go stale mid-day again;
+> dropped "Morning" from the label and — reversing the original
+> `display:none` design — made the generation timestamp visible
+> ("Updated Jul 30, 9:58 PM UTC") so staleness is legible at a glance
+> instead of invisible chrome. Verified with a real local Hugo build, not
+> just the JSON. One validator caught a real miss along the way: Global
+> Capital's first regeneration came back 13/23 bullets linked against a
+> 30-source pack, under the `LINK_FLOOR` (60%) — rejected by `--apply`
+> automatically, fixed by adding `/threads/<slug>/` links, re-applied
+> clean. Full spec: **ROADMAP §Executive readouts**.
+>
+> **2026-07-30 (later) — the world-news lens gets a real thread, and
+> Global Capital ships whole.** Ben, on where a war thread hangs
+> structurally: *"I guess it's a lens? ... what do the threads hang off
+> of?"* Confirmed: `world-news` is a real fourth lens, but a deliberately
+> narrow one (no watchlist sweep, no coverage-critic benchmarks). First
+> split: `red-sea-oil-shock` had been doing double duty — split into
+> `iran-conflict-widening` (world-news, the conflict itself) and a
+> trimmed `red-sea-oil-shock` (money, oil/shipping/underwriting only),
+> cross-referenced both ways.
+>
+> **Then: "build it all."** Global Capital — specced hours earlier as
+> Part 2 of `DESIGN.md`, explicitly not built — shipped complete, same
+> session. The full rename (`money` → `global-capital`) touched every
+> layer: `watchlist.yaml`, 13 threads, `sources/benchmarks.yaml`,
+> `readouts.py`'s lens constants, every collector that had hardcoded
+> `lens="money"` (`fred.py`, `sec_edgar.py`, `lda.py`/`fec.py`), the site's
+> nav + beat page + CSS tokens — with a backward-compat alias so
+> pre-rename archive items stay findable. The interpretation shape
+> (`{mechanism, confidence, scenarios[], context_note}`) landed with a
+> real, tested guardrail in `readouts.py`: above `speculative` confidence,
+> at least one scenario needs a genuine precedent or the whole thing is
+> rejected — verified against both a passing and a deliberately-broken
+> case. Visual identity: Ben said "look at it and make a call" — a muted
+> indigo-violet (`#5A4B8C`), distinct from every existing token. The
+> receipt page (`/interpretation/<slug>/`) is real, verified with an
+> actual local Hugo build, not just component checks — one live
+> interpretation (today's GDP/PCE print) on both surfaces. The standing
+> `attention/capital-context.yaml` snapshot has 5 real sourced readings;
+> its weekly refresh lives in `/week` step 4b; `/steer` can adjust its
+> `framing` only, never a reading's value directly. The data stack behind
+> it — Treasury TIC, BIS, IMF, EPFR, fund-flow reports — is 5 new
+> collectors, independently spot-checked: 4 return real live data
+> (Treasury's $9,371.1B foreign-holdings figure, BIS's $45.97T
+> cross-border credit figure, both matching each source's own published
+> numbers), and the fifth (fund-flow reports) an honest, evidenced empty
+> result — both Morningstar and ETF.com bot-wall this environment, logged
+> as such rather than faked. **17 collectors total now**, up from 12.
+> Full build log: `DESIGN.md` Part 2, `ROADMAP.md` §Global Capital.
+
+> **2026-07-30 — global violence gets its own signal, and money gets a
+> reframe.** Ben: *"global violence/military-action is important news
+> whenever it happens... I ALSO want its effects on global capital flows
+> and risk assessment underwriting."* Split into two tracks:
+>
+> **World News** (BUILT, same day) — a mechanical, cross-spectrum
+> attention signal, deliberately distinct from the editorial flash rail:
+> flash is Ben's own "would this lead a front page" judgment; World News
+> is a computed fact (N distinct outlets covering a story), never a model
+> or a curator. `tools/world_news.py` clusters google_news_rss by shared
+> title keywords; `tools/gdelt_dedup.py` deduplicates GDELT's Events table
+> (fixing two real noise sources found via live BigQuery testing —
+> re-crawl inflation and syndicate-network inflation, ~168 domains
+> collapsed into 17 real networks) and tags conflict intensity
+> (Goldstein/QuadClass) without using it as a filter. **Wired together
+> same day** by `tools/build_world_news.py`: both sources merged, matched
+> against `attention/threads.yaml` on two tiers (a country-pair proximity
+> check for headlines naming 2+ countries; keyword overlap against a
+> thread's title/terms/watch — never its full timeline — for everything
+> else), with a hand-curated exclusion list keeping generic vocabulary
+> (country names, common AI-infra terms, bare years) from driving false
+> matches on shared background words. First real run: **142 items, 54
+> confirmed against existing threads, 88 held as candidates**. `/daily`
+> now folds `candidate`-status items into the same 1–3 thread-candidate
+> slots it already offers, tagged `(world-news, N outlets)`; no new
+> persisted state needed — a promoted candidate becomes a real thread the
+> normal way, and the next build auto-matches it and drops it from the
+> pool on its own. Full writeup: ROADMAP §World News.
+>
+> **Global Capital** (SPECCED, not built) — Ben's reframe of the finance
+> lens from aggregation to interpretation: *"'finance' is boring 'Global
+> Capital' is interesting to me."* Confirmed via three decisions: a
+> standing macro-context artifact (sibling to `actor-doing.yaml`), a
+> pre-generated + cached receipt page per interpretation, and a **full**
+> rename (not cosmetic-only) up and down the beat. The interpretation
+> shape allows itself to be fuzzy — `{mechanism, confidence, scenarios[],
+> context_note}` — and is visually tagged as generated-interpretation,
+> distinct from cited fact. Full spec: DESIGN.md Part 2, ROADMAP §Global
+> Capital.
+>
+> **2026-07-29 — the page had no top, and the ranking couldn't see the
+> future.** Ben read the read and asked why the week's four biggest
+> scheduled events weren't on it. Root cause was a **render bug**: the page
+> centered on `digest_day()`, correctly naming 07-29, but 07-29 had no
+> digests — so the top throughline strip **rendered nothing**, the `NEW ·`
+> badge never fired, and the ranking's `2×today` term was silently zero,
+> leaving threads ranked on raw week volume. Fixed (fall back to the newest
+> day with content); only reachable since `/daily` was de-scheduled 07-28.
+> Three DESIGN gaps behind it are now **specced, not built** (ROADMAP
+> §Salience): dated expectations contribute **zero** to rank (the gauntlet
+> sat 17th/31st/34th, FOMC below every card on `thread: null`), there is no
+> item-level magnitude, and there is no executive summary or flash rail.
+> **The spec covers all three plus Ben's new requirement** — an executive
+> summary atop every page (front + AI/Finance/MH roll-ups), LLM-written
+> now, mechanical over time, and a **flash rail** so general-news events
+> ("9/11? front-page") land regardless of lens. Two gaps found while
+> speccing: the read page **never renders meta-threads** (`parent` isn't
+> exported; theprojection's publisher does export it), and the `NEW` badge
+> had been dead. Map: **65 threads** — `china-duv-lithography` (nested
+> under `china-stack-independence`, promoted story→**meta**) and
+> `datacenters-as-targets` opened by ben-steer; watchlist **+Arm
+> +Qualcomm +SMIC +Hua Hong**, closing a recall gap where live weight-2
+> threads had no sweep term at all.
+>
+> **Then it shipped the same day.** Ben decided the three open questions —
+> **`critical` only** on the rail, **neutral register**, and **yes the
+> flash publishes publicly** (*"this is MY news feed FIRST. If its big
+> world news it affects finance so its cohesive"*) — and the whole thing is
+> **BUILT** across `render_read.py`, `read-shell.html`,
+> `publish_projection.py`, `attention/flash.yaml`, and theprojection's new
+> `layouts/partials/flash.html`. Live now: salience scoring with imminence
+> + magnitude (the meta `hyperscaler-capex-big-picture` correctly ranks
+> **#1** on the day four hyperscalers report; FOMC is hoisted into a
+> top-of-page ⏳ Today & tomorrow section instead of sitting below every
+> card), a cross-lens **executive summary** (`<date>-front.md`), and a
+> **flash rail on every page of the site** — verified in a clean Hugo
+> build (homepage, thread pages, map pages). One subtlety found in
+> testing and now in both surfaces: **`now` vs `today`** — `today` centers
+> the page on the newest *curated* day, `now` is the real digest-day that
+> imminence measures from, or an event six hours out reads as "tomorrow."
+> **Still unbuilt, named in ROADMAP §6:** meta-thread *card* rendering and
+> summary stages 2-3. **`sev=` and `flash.yaml` are now wired into the
+> loop** (`842885b`): `/daily`'s curate step marks `sev=` on the
+> annotation when an item's magnitude warrants it (default none) and asks
+> once whether the day warrants a FLASH, writing `attention/flash.yaml`
+> when it does; `/week` prunes expired flashes past their `expires`.
+> theprojection is **pushed and live** — `main` in sync with
+> `origin/main`, five publish commits landed today (2026-07-29).
+>
+> **Then Ben read it again and the readouts got built.** His verdict on the
+> first executive summary — *"not pretty or well organized. bullet points
+> that encourage me to click"* — plus *"an exec readout on literally every
+> page"*, a mechanical staleness scan, and a dismissable flash. All BUILT:
+> **`tools/readouts.py`** + a `readout.html` partial now put
+> **BREAKING · NEWS · SUMMARY** on **167 scopes** (front, threads,
+> entities, board nodes) across homepage/thread/entity/map pages.
+> *(Coverage is **157** as of the later pass below — 13 empty scopes were
+> pruned, 3 lens scopes added.)*
+> BREAKING and NEWS are **mechanical** (derived from the dated item
+> record, no model, bullets always link); only SUMMARY is model-written,
+> by sonnet agents, and **only when a fingerprint over that scope's inputs
+> changes** — after the first full generation the scan reports 167/167
+> fresh, so a normal day regenerates a handful, not everything. `front`
+> **prefers curation** over the model after the first model-written front
+> dragged **Brent ~$100.69** (a 07-23 level) into a day whose print was
+> ~$87.7; packs now label `watch` as a standing question, not current
+> fact. Flash rail gained an **in-memory-only** close button (returns on
+> reload, by design). Claim + metric pages excluded deliberately — a
+> receipt and a methodology note don't want a news readout.
+>
+> **Then the paragraph problem got fixed properly, and the beats became
+> pages.** Ben: *"I wanted bullets and emojis and delight. It's still just
+> a paragraph."* Measured, he was exactly right — **160 summaries, median
+> 607 chars, zero newlines, zero bullets**. The fix was the SHAPE, not the
+> prompt: `summary` is now **structured slots** (`gist` · `bullets`
+> [{emoji,text,url}] · `watch`), enforced by a validator in `--apply`, so
+> it cannot drift back to prose. Then, per Ben, a fuller **morning
+> briefing** on the front page **and on each beat page** — `gist` · `lead`
+> (3-5, ranked by **salience with NO lens quota**) · `sections` (on the
+> front, **exactly the three lenses**, so no lens goes dark; on a beat,
+> real themes) · `watch`. A fact repeating between `lead` and `sections`
+> is deliberate — the lead is the ranking, the sections are the coverage.
+> **Beat pages are new** (`/beat/ai/` · `/beat/money/` ·
+> `/beat/mental-health/`, now leading the nav): a lens had only ever been
+> a client-side filter chip, with no page and no shareable URL. Live —
+> **157 scopes**, front briefing 17 bullets, beats 23-25 each.
+>
+> **Four bugs found in our own code during that pass, all fixed:** ① the
+> packability gate used `material()`, which counts items the NEWS window
+> never surfaces — 13 scopes were paid for only to answer "nothing is
+> recorded for X"; now gated on what the pack will actually contain, and
+> `--export` prunes them. ② `_sentence()` tested the literal last
+> character, so a sentence ending on a quotation failed — **three agents
+> independently mangled good punctuation to satisfy it** before it was
+> caught; a validator that makes prose worse is the bug. ③ a **global**
+> schema bump marked all 157 scopes stale for a change touching only the
+> front and beats — shape versions are now **per-shape**. ④ **the big
+> one:** `derive_sections` capped NEWS at 8 items, right for one thread
+> and severe for the front, which has 100+ items in the window. The
+> briefing was being asked to cover the day while shown an arbitrary 8 of
+> it, and the day's leads (Iran, Maine, the DUV tool) were among those
+> cut. Packs now get `PACK_LIMITS` (30/60); display caps are unchanged.
+>
+> **📋 Open for the next `/daily` (Ben's call, 2026-07-29 — "leave it for
+> the next daily"):** the sitewide **bullet link rate is 44%** (front
+> briefing 82%, beats 75%, entity summaries 29%). Two causes, both
+> addressable without new judgment: **209 unlinked bullets across 59
+> scopes had no linkable source** — timeline-only scopes, and
+> `recent_timeline` carries no url — which the `/threads/<slug>/` fallback
+> now in the pack fixes on regeneration (it landed mid-run, so it reached
+> the 4 briefings and almost none of the 153 summaries; only **3** bullets
+> sitewide use an internal link today). The other **174 are recoverable**:
+> a linkable source existed and the bullet did not use it, which wants a
+> validator rule requiring a url when the pack offers one — enforced,
+> the way shape is, rather than merely requested.
+
+> **2026-07-28 — the full board, the state layer, and real collectors.**
+> Row 24's 9-wave rollout took the board to **92 orgs / 53 with axes_num**
+> (dep-only audit applied: msft 71 · oracle 48 · google 140; welds:
+> xai→spacex, mai→microsoft, deepmind noted; data fixes: Talkspace's
+> "Teladoc-owned" gloss was wrong, Replika ~$11M not $70M). Row 23 seated
+> the **gov-pool layer** (12 agency nodes US+CA + `canada`; **states/
+> agencies go on a SEPARATE map** — Ben: "not competing for the same
+> space"; state-axes recipe open in row 24 remainder). Map: **62 threads**
+> (payer pair, gov four, W5 money-side, W2 chokepoints). Plate v2 = the
+> POWER view (size=gravity, heat=burn thrust÷weight, optionality columns,
+> neon rings, pocket filter, /plate/ big page). **Rows 7-8 P1+P2 BUILT:**
+> **12 live collectors** (google_news_rss · rss · gdelt · sec_edgar ·
+> federal_register · openalex · clinicaltrials · fred + the tier-2 wave
+> `dfc881e`: semantic_scholar · github · lda · fec) + runner/probe/
+> pdf_text — probe 7/7 UP, first collectors-first /daily ran (764 items
+> buffered, 1 agent vs the old 3-4). Keys: ALL landed but LegiScan
+> (awaiting reply; opensecrets API dead → FEC replaces it; signups =
+> ben@getmensio.com; boilerplate in sources/API-SIGNUP.md). Two runner
+> bugs caught by the tier-2 integration pass (.env auto-load was inside
+> a docstring — keyed collectors ran keyless; entity starvation → runner
+> now stamps watchlist `kind`, lda/fec sweep orgs+people). /daily
+> DE-SCHEDULED ("catch up to now") w/ the tiered dispatch plan. Launch
+> gate remaining: P3 judgment tools (critic blocked on Ben's mh+money
+> benchmark call).
+>
+
+> **2026-07-27 — four measured axes, and the board became a chart.** A
+> prior-art research pass grounded every axis in an established
+> formalization, and the model was corrected to **four measured axes**:
+> **commanded_capital** (renamed from `capitalization` — done, schema-wide),
+> **thrust** (NEW, promoted: $/yr into new positions ≈ capex−D&A / run-rate /
+> net new deployment; buybacks = separate signed channel), **gravity**
+> (method un-deferred and re-based **structural/attributable** —
+> substitutability × forward-linkage, never gross), **optionality**
+> (encumbrance band, measured — **never** thrust÷weight, per Dixit–Pindyck).
+> 5 derive-agents pulled sourced figures for **21 pilot actors** →
+> `axes_num` on the board. **The site leads with the plate now:** `/map/`
+> opens on the POWER view (v2, same day — v1's thrust × gravity was retired
+> when gross-AUM dot size misranked the finance actors): optionality
+> columns × log-weight, **size = gravity**, **fill = burn (thrust÷weight)
+> as heat**, neon sector rings, per-mark receipt w/ net-deployable line;
+> thrust rules hardened same day (stakes count; depreciation-only, never
+> amortization — the Broadcom artifact); **`/metric/` methodology pages** (7)
+> publish each recipe + prior art; claim pages restructured receipt-first.
+> Brand corrected in the same push: **light-only restored** (dark-mode
+> scaffolding was drift — the identity deliberately doesn't repaint), paper
+> scoped to board surfaces, `#E01279` reserved to selection/"new",
+> `--infra` → `#808040`, Piazzolla self-hosted. **The loop also turned over
+> for real:** first fixed-week `/week` ran (late, wk 07-20 — 3 weekly
+> digests, 5-hit/0-silent scorecard, decay review answered), first gap-day
+> `/daily` (07-25/26 reconstructed per the new missed-days rule), the
+> SpaceX-IPO-date error caught by cross-sweep conflict and primary-verified
+> (listed 06-12, not "priced 07-24"), apple-gemini crawled (real gap = the
+> 06-09 EU DMA block). Map: **47 threads** (lab-IPO meta + children,
+> nvidia-vendor-financing, ai-trade-bear-turn; Jalapeño retired into
+> inhouse-silicon). **`attention/backlog.md` created** — the big-player
+> build-out map (W1 capex-picture crawls → W6), headline finding:
+> the capex leaves are scaffolding (1-3 timeline entries each). Gaps still
+> open: `asml` absent; `apple`/`coreweave` unpocketed.
+>
+> **2026-07-26 — the board became a node + claim graph.** Every actor is now
+> a **node** with a `kind` (person · house · corp · state · agency · group)
+> and a `level` (L1 = nothing over it · L2+ = has a `parent`), the two
+> **orthogonal** (a person can be L1 or L2++). **Group nodes** replace tags:
+> **pockets** (`tier: G1` — cohorts of actors) and **sectors** (`tier: G2` —
+> cohorts of pockets), joined by `member_of` edges — **7 pockets + 4
+> sectors**. **Every metric is now a claim** (`b76257a`, `ec91742`): each
+> posture / axis value is a clickable `/claim/<node>--<dimension>/` page
+> backed by cited sources, generated into `data/claims.json` (**664 claims,
+> 88 of them group aggregates**). Source data lives in **per-node bundles** —
+> `artifacts/bundles/<node>-node/provenance.yaml` (posture + capital-as-flow
+> in/out/available/operating/deployed + optionality + gravity, each figure
+> sourced) — now **72 of them, covering the full board**, superseding the
+> 6-actor `-axes/` prototype noted below. The convention (claim = subject ×
+> dimension → value + sources; PKG/CAPI shapes, file-based, no DB) and the
+> whole pipeline are written up in **[`DESIGN.md`](DESIGN.md)** (new). Board
+> counts: **77 orgs · 19 Houses · 11 group nodes**. Published live across
+> several 07-26 runs (`provenance/publish-2026-07-26*`). Charter added to
+> `CLAUDE.md`: *a metric with no visible source is a bug.*
+>
+> **2026-07-25 — the rank ladder became axes, and the first 6 are populated.**
+> Ben rejected the feudal rank ladder (empire/kingdom/vassal/march) as "the
+> wrong axis." Collapsed to just **state + kingdom** (+ **house**;
+> `regulator`/`route-layer` stubs) — actors now differ by three **axes** in
+> `board.yaml`: **capitalization** ($ commanded), **optionality** (how free that
+> capital is), **gravity** ($ economy in orbit). Sovereignty derived + graded,
+> not a rung. `liege`→`depends_on` stubbed. Site synced, Hugo build clean.
+> **Axis prototype done:** 6 actors populated + cited (Microsoft, Nvidia, OpenAI,
+> BlackRock, SpaceXAI, Alibaba) — values on the board, a source appendix per
+> actor (`artifacts/bundles/<actor>-axes/`), a finding
+> (`artifacts/findings/board-axes-prototype-2026-07-25.md`). The payoff: the axes
+> separate what a rung flattens (BlackRock ~$15.3T commanded / ~$1.5B gravity vs
+> Nvidia inverse). **Decisions this session (all noted in `board.yaml`):**
+> ① `capitalization`→`commanded_capital` **rename pending** (collides with market
+> cap; market cap is always a separate label). ② **gravity is NOT deflated for
+> now** — the value-added deflators are too fragile; store GROSS, deflate only
+> when comparing to nation-states (method preserved in `coverage-log.md` 07-25 +
+> bundles). ③ **Spin up ALL major actors next** by pocket — incl. two pockets we
+> lack: **insurance** and **health** (see `board.yaml` SPIN-UP SCOPE). Not yet
+> published — `/map` doesn't render axes yet.
+
+> **2026-07-24 — the map became a board.** A whole power-structure layer
+> shipped: `attention/board.yaml` (56 orgs + 13 Houses in neutral kinds,
+> people-as-Houses split from the orgs they hold), projected into a
+> **swappable feudal/plain vocabulary** on theprojection's new **`/map/`
+> section** (per-actor pages with a standing "what they're doing now"
+> synthesis from `attention/actor-doing.yaml`, a "this week" strip, and
+> their threads). Threads grew 24→**43** (SpaceXAI ×4, the capex
+> **destination tree** `where-the-capex-lands`→compute/power/sites→leaves,
+> and **Big Tech into Health**), all crawled. New skills: **`/classify`**
+> (board judgment) + **`/steer` board verbs**; thread `genre` backfill;
+> all titles renamed short. ⚠ This STATUS + README/ROADMAP need a fuller
+> `/docs-sync` pass to fold the board in properly — flagged, not yet done.
+
+## Where things stand
+
+**Repo:** scaffolded and substantially seeded 2026-07-20 (10 commits,
+`20f41ca`…`1aec995`). **Done:** attention map seeded (ai + mental-health
+copied once; **money lens scoped by Ben** — capital-in-my-markets + macro +
+wealth/power, drafted in watchlist + radar Q7); critic **benchmarks set for
+all 3 lenses** (`sources/benchmarks.yaml`); **command layer + fixed
+templates shipped** (`/daily` `/week` `/steer` `/crawl` `/map` — live in
+sessions started from this repo; interim agentic mode until the pipeline
+lands); steering loop specified (AGENTS.md). **Daily rhythm live since
+2026-07-22** (`/daily` #1: 07-20 finalized with the first coverage pass,
+missed 07-21 reconstructed; all briefing-#0 steering asks answered by Ben
+same day). **The read is the thread-centric weekly dashboard** (reframe
+Phase 0 + thread-first home + weighted ranking, all 2026-07-22 —
+`def7c81`…`fc46c6b`): stable artifact URL, rendered by
+`tools/render_read.py`. **Delivery: dual** — the page (live) + Drive
+comment steering (**decided, NOT built**; ROADMAP §Delivery incl. rung
+ladder). **All six `/crawl` backfills ran same day** (findings + bundles +
+timeline backstories; two of our own claims corrected in the process —
+coverage-log.md). **Not built yet** (rev 07-28): P3 judgment tools
+(curate · coverage critic · digest state machine — the launch gate) +
+remaining tier-2 keys; Drive comment-delivery HELD. Collectors + feeds:
+BUILT (see top note).
+
+**Bootstrap:** seeding phase in progress — see [`BOOTSTRAP.md`](BOOTSTRAP.md)
+for per-item state. **Zero bizdev coupling** (Ben, 2026-07-20; scope pinned
+in BOOTSTRAP §Scope). Hub tracking: pm repo → project `kestrel` under
+`research-and-writing`.
+
+**Deep review ran 2026-07-20** (adversarial pass + reference-implementation
+extraction): verdict was *not executable as written* — the judgment layer
+(curation rubric, coverage-critic baseline) was a placeholder, zero-dependency
+was worded too absolutely, and the GDELT BigQuery backward-crawl path hides
+an interactive-auth gate. **All findings applied same day:** BOOTSTRAP
+rewritten with done-whens + gates; the reference implementation's conventions
+distilled into [`REBUILD-NOTES.md`](REBUILD-NOTES.md) so bizdev never needs
+consulting again; runner decided (this container — egress + authctl
+verified).
+
+## 🩺 Predecessor pipeline health check (run 2026-07-20)
+
+The bizdev digest operation is **dormant — 23 days dark**:
+
+| check | result |
+| --- | --- |
+| Cloud routine `daily-digest` | ☠ **dead** — last push to `origin/main` 2026-06-28; bizdev AGENTS.md ("disabled, egress blocked") is right, bizdev STATUS.md ("runs 07:00 UTC") is stale/wrong |
+| Last digests | 2026-06-27 (both lenses) |
+| Last feedback pull | 2026-06-26 |
+| Last store mutation (`runs.jsonl`) | 2026-06-26 |
+| bizdev checkout | sitting on side branch `captures-pending-closeout-2026-06-29` — noted for the record; **not kestrel's problem** under zero-dependency |
+
+**Egress from this container (live pings, 2026-07-20):**
+
+| API | result |
+| --- | --- |
+| ClinicalTrials.gov v2 | ✅ 200, fast |
+| OpenAlex | ✅ 200 |
+| Federal Register | ✅ 200 |
+| CourtListener (unauth, public endpoint) | ✅ 200 — but the mid-2026 membership gating of real API access is **unverified**; test the search endpoints with the token before Phase 3 |
+| GDELT DOC API | 🚧 reachable but slow; 429 on unauth tier — expect rate-limit handling in the collector, consider the BigQuery path for anything heavy |
+
+**Implication:** there is no running daily operation to preserve or
+coordinate with — kestrel launches fresh, which is exactly what
+zero-dependency wants anyway.
+
+## Next
+
+1. ✅ **`/daily` #1 ran 2026-07-22** (07-21 was missed → reconstructed;
+   07-20 finalized with the first coverage-critic pass, `coverage-log.md`
+   created; artifact re-published). **Ben steered same day:** resolved
+   `gpt-5.6-release`, promoted all 6 candidates to threads (3 ai, 2 mh,
+   1 money); 3 critic-adds (`Databricks`, `Kaiser Permanente`,
+   `BlackRock`). Map that day: 16 threads (6 open, 9 developing, 1 resolved) —
+   see item 7 below for the same-day-later growth to 21.
+2. **Reframe Phase 0 shipped 2026-07-22** (plan approved by Ben same day;
+   `~/.claude/plans/cozy-coalescing-kahn.md`): the read is now a rolling
+   **Mon–Sun weekly dashboard** built from **threads + entities** —
+   16 timeline artifacts (`artifacts/threads/`), entity layer derived from
+   the watchlist (slug rules in its header), `attention/upcoming.yaml`
+   expectations ledger (9 seeded), `<!-- k: -->` item annotations across
+   all 9 digests, one-time page shell (`templates/read-shell.html`) +
+   deterministic renderer (`tools/render_read.py`, byte-equivalent
+   regeneration verified), all 4 skills + both digest templates + AGENTS
+   updated. Page republished to the stable URL (ROADMAP §Delivery, incl.
+   the new live-page rung ladder).
+3. ✅ **All six `/crawl` backfills ran 2026-07-22** (same session; GDELT+
+   API path after WebSearch exhaustion — contention note in coverage-log).
+   Ledger now 16 expectations. Next: tomorrow's `/daily` runs the full new
+   shape end-to-end (its first expectation flips: Alphabet earnings,
+   DeepSeek V4); first fixed-week `/week` Sat 07-25.
+4. Finish seeding: `sources/feeds.yaml` copy · keys/`.env` (incl. tier-2
+   signups) · SOURCES.md knowledge fold-in (BOOTSTRAP §Seeding).
+5. Build collectors fresh, then the judgment-layer tools, then launch
+   (BOOTSTRAP §Building — done-whens per item; `tools/render_read.py`
+   landed early as the first judgment-free tool). Drive comment-delivery
+   builds when Ben calls it (ROADMAP.md §Delivery).
+6. Open with Ben: money watchlist entity tuning + the CAPI-style people
+   cohort (scope settled) · entity gaps: CXMT (money), Hugging Face (ai).
+7. ✅ **Public site scaffolded 2026-07-22, live 2026-07-23**:
+   `theprojection.org` ([repo](https://github.com/benthepsychologist/theprojection),
+   Hugo + Cloudflare Pages, butterfly brand system) plus
+   `tools/publish_projection.py` (AGENTS.md discipline 9) and the new
+   `/publish` command wrapping it. **Real traffic-ready now:** all 16
+   threads publish (default-on, nothing flagged `public: false`);
+   `/publish --push` ships content, commits, pushes, and fires the
+   Cloudflare deploy hook directly (no confirmation needed on this
+   pipeline — Ben, 2026-07-23). Same day: a mobile-usability pass
+   (highlights strip + collapsible thread cards — the first live version
+   read as "a long page nightmare" on mobile) and a "copy for AI chat"
+   button (thread pages + the homepage) so a visitor can paste kestrel's
+   tracked read into any AI chat without a login/backend. Also caught and
+   fixed same day: `about.md` and the site's own `README.md` both still
+   claimed "reviewed by hand before publication" — stale since the
+   2026-07-22 default-publish decision; corrected in both places, plus
+   two new `about.md` sections ("How it's built" / "How I use it") — the
+   latter is first-person and worth Ben's read-through.
+   ✅ **Meta-threads shipped same day** (ben-steer — "figure out how to do
+   meta-threads"): `kind: meta` + a `parent:` pointer on the child (one
+   source of truth, never a `children:` list on the parent). Opened
+   `hyperscaler-capex-big-picture` plus `google-capex`/`meta-capex`/
+   `aws-capex`/`microsoft-capex` — map now **21 threads** (7 open, 13
+   developing, 1 resolved; 1 of the 21 is the meta-thread). Google/Meta
+   backfilled from items already curated that week; AWS/Microsoft opened
+   quiet, stated plainly.
+   ✅ **Two rounds of direct usage feedback on the live site, same day**:
+   first the mobile-usability pass above; then, after Ben actually looked
+   at it, a second pass — bigger feed-card layout (thumbnail + headline +
+   body, not a dense list), real per-article thumbnails (`tools/thumbnails.py`,
+   og:image capture with a favicon-tile fallback, cached in `buffer/`,
+   backfilled 55/77 of the week's items), and whole-row click-through.
+   See `coverage-log.md` and `log.md` for the full arc.
+
+## Keeping this current
+
+Refresh **As of** + the affected section when the repo state moves. The
+work-state view for humans lives in the pm hub (`overview/PORTFOLIO.md`);
+this file is kestrel-local truth.

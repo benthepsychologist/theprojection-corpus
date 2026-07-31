@@ -1,0 +1,98 @@
+# Bundle — node posture + capital-flow: talkspace / Talkspace (2026-07-28)
+# axes_num rollout wave G (one of 8 small mental-health-AI actors this wave).
+# Talkspace is the ONE actor in wave G that is PUBLIC (NASDAQ: TALK), so it
+# follows a different recipe than its 7 (private) wave-mates:
+#   - WEIGHT = balance-sheet TOTAL ASSETS from the most recent 10-Q, NOT
+#     cumulative-raised (cumulative-raised is the private-company proxy;
+#     Talkspace discloses real financials so we use those directly).
+#   - Talkspace is MID-ACQUISITION: definitive merger agreement with
+#     Universal Health Services (UHS), NASDAQ: UHS, signed 2026-03-09,
+#     $5.25/share cash, ~$835M total. Stockholders APPROVED 2026-05-29.
+#     Expected close: Q3 2026 (per the 10-Q itself), i.e. PENDING as of
+#     this pass (2026-07-28) — not yet closed. This is confirmed directly
+#     from Talkspace's own SEC 10-Q (primary source), not just news.
+#     $32.4M termination fee disclosed. This materially shapes posture
+#     (sale-in-progress, not independent expansion) and optionality
+#     (locked — the board is executing a sale, not deploying capital).
+#   - THRUST = deployment run-rate is thin and was already thin pre-deal;
+#     no sign of a sharp visible cut yet in the one post-announcement
+#     quarter available (Q1 2026 covers only ~3 weeks post-signing), but
+#     the pending sale plausibly caps any NEW discretionary commitments
+#     for the remainder of the deal's pendency — flagged, not overstated.
+#   - GRAVITY = grounded in actual disclosed revenue (FY2025 + Q1 2026),
+#     not gross member/session counts — per recipe, USERS-IN-CARE /
+#     dependent-economy dollar terms.
+# Method: SEC EDGAR full-text primary sources (10-Q filed 2026-05-11 for
+# Q1 2026 period ended 2026-03-31; 10-K filed 2026-03-13 for FY2025) via
+# WebFetch, cross-checked against Google News RSS coverage (WebSearch
+# budget was exhausted this session). No figure below is fabricated; the
+# merger deal terms and financials are corroborated by both the 10-Q text
+# itself (primary/high-confidence) and independent news outlets (Reuters,
+# Fierce Healthcare, Healthcare Dive, Modern Healthcare, Yahoo Finance).
+#
+# FLAG for Ben: board.yaml's talkspace gloss reads "Teladoc-owned; double-
+# dependent like its peers." This is STALE/WRONG on both counts as of this
+# pass — (1) Talkspace and Teladoc are historically competitors in virtual
+# behavioral health, not parent/sub, and no source found supports a
+# Teladoc ownership relationship at any point; (2) the CURRENT live
+# ownership event is the UHS acquisition (pending, not closed), not
+# Teladoc. Not edited here per instructions — board.yaml is out of scope
+# for this bundle — but this should be corrected in board.yaml directly.
+node: talkspace
+name: "Talkspace"
+pocket: health
+asof: 2026-07-28
+axes_num_estimate: { weight: 0.136, thrust: 0.024, gravity: 0.229 }  # agent-derive 2026-07-28 wave G
+posture:
+  value: "sale-pending (mid-acquisition by UHS)"
+  basis: "Definitive merger agreement with Universal Health Services signed 2026-03-09 ($5.25/share cash, ~$835M); stockholders approved the deal 2026-05-29; expected close Q3 2026 per the company's own 10-Q. The company is executing a sale, not pursuing independent expansion — Q1 2026 G&A already carries ~$7.3M of transaction-related costs, and the board's posture is best read as 'in transition to a strategic acquirer' rather than 'expanding' or 'steady-state.'"
+  sources:
+    - {figure: "definitive merger agreement with Universal Health Services, Inc.; $5.25/share cash, ~$835M; expected closing Q3 2026; $32.4M termination fee; ~$7.3M transaction costs in Q1 2026 G&A", label: "Talkspace 10-Q (SEC EDGAR, period ended 2026-03-31)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+    - {figure: "Universal Health strikes $835 million Talkspace deal in mental health push", label: "Reuters via Google News", url: "https://news.google.com/rss/search?q=Talkspace+UHS+acquisition", as_of: "2026-03-09", confidence: med}
+    - {figure: "Talkspace Stockholders Approve Acquisition by Universal Health Services", label: "Quiver Quantitative via Google News", url: "https://news.google.com/rss/search?q=Talkspace+UHS+acquisition", as_of: "2026-05-29", confidence: med}
+capital:
+  available:
+    value: "$136.2M total assets (2026-03-31, most recent 10-Q), of which $31.4M cash & cash equivalents (down from $37.4M at 2025-12-31). This IS the weight axis for Talkspace per the wave-G recipe (public co. -> total assets, not cumulative-raised)."
+    sources:
+      - {figure: "total assets $136,192 thousand at 2026-03-31 vs. $134,863 thousand at 2025-12-31; cash & equivalents $31,411 thousand at 2026-03-31 vs. $37,352 thousand at 2025-12-31", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+  operating:
+    value: "FY2025 revenue $228.9M (vs. $187.6M FY2024, ~22% YoY growth). Q1 2026 revenue $61.7M (vs. $52.2M Q1 2025), an annualized run-rate of ~$247M if Q1 held flat across the year. Segments (Q1 2026): Payor $48.6M, DTE $9.6M, Consumer $3.5M — Payor dominates."
+    sources:
+      - {figure: "FY2025 revenue $228.9M; FY2024 revenue $187.6M", label: "Talkspace 10-K FY2025 (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526105146/talk-20251231.htm", as_of: "2026-03-13", confidence: high}
+      - {figure: "Q1 2026 revenue $61,679 thousand vs. Q1 2025 $52,182 thousand; Payor $48.6M / DTE $9.6M / Consumer $3.5M", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+  deployed:
+    value: "New-position deployment is thin: $3.2M capitalized internal-use software costs in Q1 2026 (vs. $2.0M Q1 2025) + $2.7M R&D expense in Q1 2026 -> annualized ~$23.6M/yr combined, the basis for the thrust estimate below. No new acquisitions, stakes, or capex line items disclosed in the quarter."
+    sources:
+      - {figure: "capitalized internal-use software costs $3,203 thousand (Q1 2026) vs. $1,988 thousand (Q1 2025, approx per +$1.2M YoY delta reported); R&D expense $2.7M (Q1 2026)", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+  in:
+    value: "No new external capital inflow this period — no financing round, no debt raise disclosed. The only inbound-capital event on the horizon is the UHS acquisition itself (an inflow to shareholders at close, not new operating capital to the company), which is PENDING, not closed."
+    sources:
+      - {figure: "no new financing/capital-raise activity found in Q1 2026 10-Q", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: med}
+  out:
+    value: "Capital returned to shareholders via buyback was active pre-deal but has stopped: $6.975M spent retiring 2.5M shares in Q1 2025; ZERO buybacks in Q1 2026 (paused, consistent with a company under a pending-acquisition agreement, which typically restricts share activity outside the deal). Also outbound: ~$7.3M of merger-transaction costs in Q1 2026 G&A."
+    sources:
+      - {figure: "Q1 2025: repurchased 2.5 million shares for retirement totaling $6.975 million; Q1 2026: no stock repurchases", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+      - {figure: "~$7.3 million of transaction-related costs related to the pending UHS merger, included in G&A", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+thrust:
+  value: "~$0.02-0.03B/yr (thin) — capitalized internal-use software ($3.2M/qtr) + R&D expense ($2.7M/qtr) annualized to ~$23.6M/yr as the best proxy for 'new positions' (product/clinical-network/AI-tool spend). Point estimate $0.024B/yr. Already small pre-deal given company size; the pending UHS acquisition (signed 2026-03-09, closing expected Q3 2026) plausibly caps further growth in this figure for the deal's duration, though the one available post-signing quarter (Q1 2026, ~3 weeks post-announcement) does not yet show a sharp visible cut vs. Q1 2025 — flagged as a expected-not-yet-fully-observed suppression, not asserted as already visible in the data."
+  basis: "Talkspace does not break out a single 'new positions' capex line; this combines capitalized software development (the closest thing to product/platform investment) with R&D expense (the closest thing to AI-tool/clinical-tech spend), both disclosed in the Q1 2026 10-Q cash-flow and income-statement sections, annualized x4 from the single quarter available."
+  sources:
+    - {figure: "capitalized internal-use software costs $3.2M (Q1 2026, vs. $2.0M Q1 2025); R&D expense $2.7M (Q1 2026)", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+    - {figure: "Sentia AI, LLC noted as a wholly-owned subsidiary dedicated to proprietary AI development; no separate $ budget disclosed", label: "Talkspace 10-K FY2025 (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526105146/talk-20251231.htm", as_of: "2026-03-13", confidence: med}
+optionality:
+  value: "locked (band: constrained-to-locked) — mid-acquisition by a strategic buyer (UHS), stockholder vote ALREADY passed (2026-05-29), expected close Q3 2026, $32.4M termination fee disclosed. Per the wave-G recipe, this is a textbook locked case: the board is executing a sale under a signed, shareholder-approved agreement, not deploying capital independently. The only residual freedom is regulatory/closing-condition risk (a deal could still in principle fail to close), which is why 'locked' is read as the practical state rather than an absolute one."
+  sources:
+    - {figure: "definitive merger agreement 2026-03-09; stockholders approved 2026-05-29; expected close Q3 2026; $32.4M termination fee", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+    - {figure: "Talkspace Stockholders Approve Acquisition by Universal Health Services", label: "Quiver Quantitative via Google News", url: "https://news.google.com/rss/search?q=Talkspace+UHS+acquisition", as_of: "2026-05-29", confidence: med}
+gravity:
+  value: "~$0.23B/yr, grounded directly in disclosed revenue (dependent-economy proxy = the payor/consumer economy that pays for and depends on Talkspace's care access), not gross session/member headlines. FY2025 revenue $228.9M is the anchor figure; Q1 2026 annualized run-rate (~$247M) is a directionally-higher alternate read. Session-volume context (not used as the gravity number itself, per recipe): 1,617,000 payor-covered sessions in 2025 (up from 1,229,200 in 2024), ~5,000 Consumer active members at 2025-12-31."
+  basis: "Recipe requires gravity grounded in actual revenue for a public company with disclosed financials, not gross user/member counts. Point estimate uses the audited FY2025 total (more conservative and fully-realized than a single-quarter annualization)."
+  sources:
+    - {figure: "FY2025 revenue $228.9M (FY2024: $187.6M)", label: "Talkspace 10-K FY2025 (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526105146/talk-20251231.htm", as_of: "2026-03-13", confidence: high}
+    - {figure: "Q1 2026 revenue $61.7M, annualized run-rate ~$247M", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+    - {figure: "1,617,000 Payor-covered sessions in 2025 (vs. 1,229,200 in 2024); ~5,000 Consumer active members at 2025-12-31 (down from 7,200 in 2024) -- context only, not used as the gravity $ figure itself", label: "Talkspace 10-K FY2025 (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526105146/talk-20251231.htm", as_of: "2026-03-13", confidence: high}
+buybacks:
+  value: "$6.975M in Q1 2025 (2.5M shares repurchased for retirement) -- confirmed small buyback history as the recipe anticipated. ZERO in Q1 2026, consistent with the pending UHS acquisition constraining capital-return activity outside the deal."
+  sources:
+    - {figure: "Q1 2025: repurchased 2.5 million shares for retirement totaling $6.975 million; Q1 2026: no stock repurchases", label: "Talkspace 10-Q (SEC EDGAR)", url: "https://www.sec.gov/Archives/edgar/data/1803901/000119312526217060/talk-20260331.htm", as_of: "2026-05-11", confidence: high}
+notes: "board.yaml's talkspace gloss ('Teladoc-owned; double-dependent like its peers') is STALE/WRONG -- flagged above and here, NOT corrected in board.yaml per task scope. Correct current event is the UHS acquisition (pending, expected close Q3 2026, not yet closed as of this 2026-07-28 pass). Weight uses total assets ($136.2M) per the public-company wave-G recipe, not cumulative-raised. Thrust is a proxy (capitalized software + R&D) since Talkspace doesn't disclose a single 'new positions' line; treat the ~$0.024B/yr figure as a reasoned estimate, not an exact run-rate. Gravity anchored on FY2025 audited revenue ($228.9M) rather than the higher single-quarter annualization, to stay conservative. All figures sourced directly from Talkspace's own SEC EDGAR 10-Q/10-K filings (primary, high-confidence) plus Google News RSS corroboration for the deal narrative (WebSearch budget was exhausted this session, per the standard fallback pattern used elsewhere in this repo)."

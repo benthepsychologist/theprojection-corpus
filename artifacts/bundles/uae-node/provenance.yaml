@@ -1,0 +1,54 @@
+# Bundle — state node: uae (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml uae (rank state, sphere gulf,
+# tier treasury; power projected through sovereign capital). Gulf sovereign-fund
+# power: available = the SWF stack (ADIA/Mubadala/ADQ/ICD/EIA) + FX reserves,
+# in = oil + non-oil resource/tax income, deployed = low debt + AI/infra
+# commitments (MGX, G42). Gravity = GDP. Method: WebFetch primary (WebSearch
+# exhausted) — Wikipedia aggregate lists (IMF/SWF base).
+node: uae
+name: "UAE"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Budget SURPLUS (+4.80% of GDP, 2024), low debt (34% of GDP), and ~$2.9T of sovereign-fund dry powder deployed aggressively into AI/global assets (Mubadala, MGX, G42). Projecting power through capital, not GDP."
+  sources:
+    - {figure: "2024 budget SURPLUS +$26.16B (+4.80% of GDP); expenditure only 23.49% of GDP", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+    - {figure: "UAE sovereign wealth funds total ~$2,902B (ADIA, Mubadala, ADQ, ICD, EIA)", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$2.9T sovereign-fund stack — ADIA + Mubadala + ADQ + ICD + Emirates Investment Authority — PLUS ~$210B FX reserves. Vastly exceeds annual GDP; this IS the UAE's power."
+    sources:
+      - {figure: "UAE SWFs total ~$2,902B (ADIA, Mubadala, ADQ, ICD, Emirates Investment Authority)", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: high}
+      - {figure: "foreign-exchange reserves incl. gold $210,000M (1 Nov 2024)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2024-11", confidence: high}
+  operating:
+    value: "~$128B annual govt expenditure / ~$154B revenue (2024) — small budget relative to the SWF stack"
+    sources:
+      - {figure: "2024 revenue $154.19B (28.29% of GDP); expenditure $128.03B (23.49% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt only 34.3% of GDP (2025) ≈ ~$210B nominal (derived from GDP × ratio); committed to AI/infra — MGX (targeting $100B+), G42, global data-centre and semiconductor stakes (general knowledge — flag)"
+    sources:
+      - {figure: "gross govt debt 34.3% of GDP (2025); nominal derived from IMF 2026 GDP ~$622B", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+      - {figure: "MGX/G42 AI-infra deployment vehicles — asserted from general knowledge, not on fetched pages", label: "analytical (MGX/G42) — cross-ref kestrel mgx-node bundle", url: "artifacts/bundles/mgx-node/provenance.yaml", as_of: "2026-07", confidence: low}
+  in:
+    value: "~$154B revenue (2024) — oil/hydrocarbon resource income plus a growing non-oil/tax base (Abu Dhabi oil, Dubai trade/services)"
+    sources:
+      - {figure: "2024 revenue $154.19B (28.29% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$128B expenditure (2024); runs a SURPLUS of +$26B (+4.80% of GDP) — the surplus feeds the SWFs"
+    sources:
+      - {figure: "2024 expenditure $128.03B; surplus +$26.16B (+4.80% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "free — surplus + low debt + ~$2.9T of net-creditor sovereign capital give near-total fiscal freedom. The one constraint is the dirham's hard peg to the USD, which subordinates monetary policy to the Fed."
+  sources:
+    - {figure: "budget surplus + 34% debt + $2.9T SWFs (free) vs USD-pegged dirham (monetary constraint)", label: "Wikipedia — budget/debt/SWF lists + analytical (dirham peg)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "~$622B GDP (nominal, IMF 2026) — modest GDP gravity, but the ~$2.9T SWF stack means its CAPITAL reach far exceeds its economic-activity gravity"
+  sources:
+    - {figure: "nominal GDP $621,546M (IMF 2026); $552,325M (World Bank 2024)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Gulf sovereign-fund power — the story is available capital ($2.9T SWFs), NOT gravity ($622B GDP); a state whose leverage runs through its treasury, exactly the 'treasury' tier board.yaml assigns it. Biggest uncertainty is the SWF split across ADIA/Mubadala/ADQ (aggregate is solid at ~$2.9T; per-fund numbers not broken out here) and the AI-deployment figures (MGX/G42), flagged low. Nominal debt derived (ratio×GDP)."

@@ -1,0 +1,50 @@
+# Bundle — capital node: fidelity (2026-07-26)
+# Posture + capital-FLOW appendix for a NEW capital-pocket node (Fidelity is not
+# yet on board.yaml — the board notes 'add the other 3' Big Four managers).
+# Method: WebFetch primary (WebSearch exhausted) — Wikipedia Fidelity
+# Investments. Privately held (Johnson family + employees); unusually for a
+# private manager it discloses revenue + operating income.
+node: fidelity
+name: "Fidelity"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "$7.0T discretionary AUM / $17.9T assets under administration (Mar-2026), revenue $37.7B (2025); broadening from funds into brokerage, workplace, and crypto."
+  sources:
+    - {figure: "$7.0T discretionary AUM + $17.9T assets under administration (Mar-2026); revenue $37.7B (2025)", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2026-03", confidence: high}
+
+capital:
+  available:
+    value: "own corporate capital is private (Johnson family ~40% + current/former employees ~60%); ~$12.7B/yr operating income (2025) self-funds expansion; specific cash not disclosed"
+    sources:
+      - {figure: "Johnson family ~40% + employees ~60% ownership; operating income $12.7B (2025)", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2025", confidence: high}
+  operating:
+    value: "revenue $37.7B (2025); operating income $12.7B (2025)"
+    sources:
+      - {figure: "revenue US$37.7B (2025); operating income US$12.7B (2025); 80,000 employees", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2025", confidence: high}
+  deployed:
+    value: "$7.0T discretionary AUM directed + $17.9T assets under administration serviced (Mar-2026)"
+    sources:
+      - {figure: "$7.0T discretionary AUM + $17.9T AUA (Mar-2026)", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2026-03", confidence: high}
+  in:
+    value: "net new assets / new customers (tens of millions of retail + workplace accounts); AUA growth is the proxy — no cited net-flow dollar captured this pass"
+    sources:
+      - {figure: "AUA $17.9T (Mar-2026) as growth proxy; specific net-flow dollar figure NOT captured", label: "Wikipedia — Fidelity Investments (no flow figure on page)", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2026-03", confidence: low}
+  out:
+    value: "private — no external buybacks; profits reinvested + distributed to Johnson-family + employee owners; plus client redemptions"
+    sources:
+      - {figure: "no external shareholders (private) — profit distributed to family + employee owners", label: "Wikipedia — Fidelity Investments (ownership)", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2025", confidence: med}
+
+optionality:
+  value: "mixed — a larger active-management book than the index giants + private ownership give real strategic freedom, but the great majority of AUM/AUA is client fiduciary."
+  sources:
+    - {figure: "private ownership + active-heavy book = more strategic freedom, but client-fiduciary bulk", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2026-03", confidence: med}
+
+gravity:
+  value: "GROSS — $17.9T assets under administration (Mar-2026) is the platform-orbit (recordkeeping / brokerage / 401(k) rails dependency); tens of millions of retail + workplace accounts ride Fidelity's infrastructure."
+  sources:
+    - {figure: "$17.9T AUA (Mar-2026); tens of millions of retail + workplace accounts", label: "Wikipedia — Fidelity Investments", url: "https://en.wikipedia.org/wiki/Fidelity_Investments", as_of: "2026-03", confidence: high}
+
+notes: "commands ($7.0T AUM / $17.9T AUA) >> owns (private, family + employee). Revenue $37.7B is unusually disclosed for a private manager (high confidence). Biggest uncertainty: net-flow figures + own-cash position not public. NEW node — not yet on board.yaml."

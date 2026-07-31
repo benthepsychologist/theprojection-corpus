@@ -1,0 +1,46 @@
+# Bundle — node posture + capital-flow: satya-nadella (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Hired CEO — operating capital is the strong axis.
+# Nadella is also board chairman, giving slightly more latitude than a pure
+# hired-CEO-with-no-board-seat case, but still no founder voting lock.
+node: satya-nadella
+name: "Satya Nadella"
+kind: person
+asof: 2026-07-26
+posture:
+  value: hedging
+  basis: "Runs Microsoft's own MAI model build-out while the company keeps its OpenAI stake alive in parallel — a straddle, not a full commit either direction, mirrored at the personal level since he directs both moves as CEO+chairman."
+  sources:
+    - {figure: "posture: hedging — MAI build-out vs. the OpenAI stake", label: "kestrel board.yaml microsoft axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "CEO of Microsoft since 2014; Chairman since June 16, 2021", label: "Wikipedia — Satya Nadella", url: "https://en.wikipedia.org/wiki/Satya_Nadella", as_of: "2026-07", confidence: high}
+capital:
+  available:
+    value: "no net-worth figure disclosed on Wikipedia — personal deployable capital is unverified; best proxy is his compensation history (RSU-heavy), not a net-worth estimate. Treat as modest vs. Microsoft's scale until a figure surfaces."
+    sources:
+      - {figure: "no net worth estimate given on page", label: "kestrel board.yaml microsoft axis (org-scale anchor, used in absence of a personal figure)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  operating:
+    value: "commands Microsoft's ~$250B+/12mo commandable corporate capital as CEO+chairman (cash+STI $78B Mar-2026 + ~$170B/yr operating cash flow + AAA debt access) — this is the real axis"
+    sources:
+      - {figure: "~$250B+ commandable/12mo (cash+STI $78B Mar-2026 + ~$170B/yr operating cash flow + AAA debt access)", label: "kestrel board.yaml microsoft axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "as CEO, directing a rising majority of operating cash into the AI buildout (capex ~$107B/yr, up from $64.6B FY25) plus ~$25B/yr dividend — corporate capital he steers, not personal capital"
+    sources:
+      - {figure: "capex ~$107B/yr (up from $64.6B FY25) + ~$25B/yr dividend, self-earmarked from operating cash", label: "kestrel board.yaml microsoft axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  in:
+    value: "compensation $79.1M (2024, up 63% YoY, stock-award driven); $48.5M (2023); $84.5M (2016) — RSU-heavy, no net-worth-building figure more recent than 2024 disclosed"
+    sources:
+      - {figure: "2024 compensation $79.1 million (63% increase YoY, driven by stock awards); 2023 $48.5 million; 2016 $84.5 million", label: "Wikipedia — Satya Nadella", url: "https://en.wikipedia.org/wiki/Satya_Nadella", as_of: "2024", confidence: med}
+  out:
+    value: "no personal stock-sale figures disclosed; donated profits from his 2017 book 'Hit Refresh' to Microsoft Philanthropies and nonprofits, amount unspecified"
+    sources:
+      - {figure: "profits from 'Hit Refresh' (2017) donated to Microsoft Philanthropies and nonprofit organizations, amount not detailed", label: "Wikipedia — Satya Nadella", url: "https://en.wikipedia.org/wiki/Satya_Nadella", as_of: "2017", confidence: low}
+optionality:
+  value: "mixed-constrained — hired CEO but also board chairman (since 2021), giving him more procedural latitude than a pure hired-CEO-no-board-seat case; still no founder-class supervoting stock, so ultimately serves at the board's pleasure."
+  sources:
+    - {figure: "optionality: mixed — legally free discretionary treasury, but a rising majority self-earmarked to the AI buildout", label: "kestrel board.yaml microsoft axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "became Chairman June 16, 2021, succeeding John W. Thompson", label: "Wikipedia — Satya Nadella", url: "https://en.wikipedia.org/wiki/Satya_Nadella", as_of: "2021", confidence: high}
+gravity:
+  value: "~$3.0T/yr GROSS Microsoft ecosystem (reconstructed via TTM revenue x IDC partner multiplier) moves on his dual CEO+chairman authority"
+  sources:
+    - {figure: "~$3.0T/yr GROSS ecosystem (reconstructed: TTM rev $318B x IDC partner multiplier; the popular $4T economy)", label: "kestrel board.yaml microsoft gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest gap: no personal net-worth figure found on Wikipedia (unlike Cook/Jassy/Pichai) — flagged low rather than fabricated. His chairman title (since 2021) is the one real deviation from the pure hired-CEO pattern; still no dual-class founder lock like Page/Brin at Alphabet or Zuckerberg at Meta."

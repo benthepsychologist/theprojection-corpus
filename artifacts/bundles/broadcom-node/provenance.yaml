@@ -1,0 +1,43 @@
+# Bundle — node posture + capital-flow: broadcom (2026-07-26)
+# Extends board.yaml broadcom axes. Method: WebFetch PRIMARY
+# (stockanalysis.com AVGO statements; WebSearch exhausted this session).
+node: broadcom
+name: "Broadcom"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Scaling hyperscaler custom-AI ASICs (Google TPU / Meta MTIA / OpenAI Jalapeño) + AI networking; but FCF earmarked to VMware-debt paydown, so capital-return is throttled."
+  sources:
+    - {figure: "royal armorer — co-develops OpenAI's Jalapeño ASIC; hyperscaler custom-AI ASICs + AI networking + VMware", label: "kestrel board.yaml broadcom gloss/axes", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$19.6B cash (Q2 FY26, ended May 3 2026); but net debt ~-$45.3B (VMware) pre-commits most of it; ~$50-60B commandable/12mo incl FCF"
+    sources:
+      - {figure: "cash & equivalents $19,628M; total debt $64,907M; net debt $45,279M (period ended May 3 2026)", label: "stockanalysis.com AVGO balance sheet", url: "https://stockanalysis.com/stocks/AVGO/financials/balance-sheet/?p=quarterly", as_of: "2026-05", confidence: high}
+  operating:
+    value: "~$33B/yr FCF (TTM to May-2026); FY2025 FCF $26.9B"
+    sources:
+      - {figure: "TTM operating cash flow $33.6B, FCF $32.8B; FY2025 OCF $27.5B, FCF $26.9B", label: "stockanalysis.com AVGO cash-flow statement", url: "https://stockanalysis.com/stocks/AVGO/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+  deployed:
+    value: "TTM dividends $11.8B; buybacks $0 in TTM (paused — deleveraging VMware); capex only ~$0.9B (fabless-lite)"
+    sources:
+      - {figure: "TTM dividends $11.8B, buybacks $0, capex $860M; FY2025 dividends $11.1B + buybacks $6.3B", label: "stockanalysis.com AVGO cash-flow statement", url: "https://stockanalysis.com/stocks/AVGO/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+  in:
+    value: "FY2025 revenue $63.9B; TTM revenue $75.5B (Semiconductor Solutions $47.8B + Infrastructure Software $27.7B)"
+    sources:
+      - {figure: "FY2025 revenue $63,887M; TTM revenue $75,465M (Semi $47,762M + Infra SW $27,703M)", label: "stockanalysis.com AVGO income statement", url: "https://stockanalysis.com/stocks/AVGO/financials/", as_of: "2026-05", confidence: high}
+  out:
+    value: "dividends ~$11.8B/yr + VMware-debt paydown (buybacks paused) + small capex ~$0.9B"
+    sources:
+      - {figure: "TTM dividends $11.8B, buybacks $0 (debt paydown), capex $860M", label: "stockanalysis.com AVGO cash-flow statement", url: "https://stockanalysis.com/stocks/AVGO/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+optionality:
+  value: "mixed-to-constrained — strong FCF but earmarked to deleveraging the ~$45B VMware net debt; buybacks paused"
+  sources:
+    - {figure: "net debt $45.3B (VMware) vs ~$33B/yr FCF; buybacks paused", label: "stockanalysis.com AVGO balance sheet + cash-flow", url: "https://stockanalysis.com/stocks/AVGO/financials/balance-sheet/?p=quarterly", as_of: "2026-05", confidence: high}
+gravity:
+  value: "~$63.9B (FY25) / $75.5B (TTM) GROSS revenue — supplier whose custom-AI ASICs (TPU/MTIA/Jalapeño) anchor a far larger hyperscaler-compute downstream"
+  sources:
+    - {figure: "TTM revenue $75.5B; Semiconductor Solutions $47.8B (custom-AI ASICs + networking)", label: "stockanalysis.com AVGO income statement", url: "https://stockanalysis.com/stocks/AVGO/financials/", as_of: "2026-05", confidence: high}
+    - {figure: "co-develops OpenAI's Jalapeño ASIC; TPU / MTIA custom silicon", label: "kestrel board.yaml broadcom gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty: how much of the custom-ASIC pipeline converts to sustained revenue vs one-off design wins; and the pace of VMware-debt paydown, which gates any return to buybacks. Market cap ~$1.82T is a separate label."

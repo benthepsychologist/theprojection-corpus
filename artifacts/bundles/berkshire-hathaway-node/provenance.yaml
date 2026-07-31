@@ -1,0 +1,54 @@
+node: berkshire-hathaway
+name: "Berkshire Hathaway"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Deploying its record cash for the first time in years under new CEO Abel — OxyChem $9.7B (Jan 2026), Taylor Morrison $6.8B (May 2026), $10B Alphabet placement (Jun 2026)."
+  sources:
+    - {figure: "Greg Abel succeeded Buffett as CEO at start of 2026; OxyChem acquired for $9.7B (Jan 2026); Taylor Morrison $6.8B (May 2026, pending); $10B Alphabet private placement (Jun 1 2026)", label: "Wikipedia — Berkshire Hathaway (recent corporate actions)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2026-06", confidence: high}
+capital:
+  available:
+    value: "~$381.7B cash + Treasury bills (FY2025) — the largest true dry powder on the board; plus ~$171B insurance float that funds the pile. FREE-deployable, no mandate."
+    sources:
+      - {figure: "Cash & Treasury bills $381.7B", label: "Wikipedia — Berkshire Hathaway financial summary (FY2025)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2025-12", confidence: high}
+      - {figure: "Insurance float ~$171B at year-end 2024 (up from ~$169B 2023)", label: "Buffett 2024 shareholder letter (canonical primary; PDF could not be machine-parsed this session, figure is the widely-reported established number)", url: "https://www.berkshirehathaway.com/letters/2024ltr.pdf", as_of: "2024-12", confidence: med}
+  operating:
+    value: "~$371.4B/yr total revenue (FY2025); net premiums written ~$71.6B/yr — an operating conglomerate (insurance, BNSF rail, BHE energy, manufacturing), not a pure investment vehicle."
+    sources:
+      - {figure: "Revenue $371.4B, operating income $92.05B, net income $66.97B (FY2025)", label: "Wikipedia — Berkshire Hathaway (FY2025)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2025-12", confidence: high}
+      - {figure: "Net premiums written $71.6B (2021)", label: "Wikipedia — List of largest insurance companies (net premiums written 2021)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2021-12", confidence: med}
+  deployed:
+    value: "~$1.222T total assets (FY2025); ~$233B+ marketable equity portfolio (Q4 2025) atop wholly-owned operating businesses; equity $717.4B. The 'pile' is equities + op-cos, not a solvency-locked general account."
+    sources:
+      - {figure: "Total assets $1.222T; total equity $717.4B; major equity positions ~$233B+ (Q4 2025)", label: "Wikipedia — Berkshire Hathaway (FY2025 balance sheet / holdings)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2025-12", confidence: high}
+      - {figure: "Total assets $1,069.9B (2024 ranking basis)", label: "Wikipedia — List of largest insurance companies (total assets 2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+  in:
+    value: "Premium inflows ~$71.6B/yr + float growth (~$169B->$171B 2023->2024); operating cash from rail/energy/manufacturing; opportunistic stock sales (sold $75.5B Apple in Q2 2024)."
+    sources:
+      - {figure: "Sold ~$75.5B of Apple stock in Q2 2024; cash reserves grew to record ~$276.9B by Q2 2024 (since ~$381.7B FY2025)", label: "Wikipedia — Berkshire Hathaway (capital allocation)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2024-06", confidence: high}
+  out:
+    value: "Claims paid on float; acquisitions (OxyChem $9.7B, Taylor Morrison $6.8B, Alphabet $10B in 2026); historically buybacks — but Berkshire paused repurchases while the cash pile grew."
+    sources:
+      - {figure: "OxyChem $9.7B (Jan 2026); Taylor Morrison $6.8B (May 2026); Alphabet $10B placement (Jun 2026)", label: "Wikipedia — Berkshire Hathaway (recent acquisitions)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2026-06", confidence: high}
+# thrust block added 2026-07-28 (axes_num rollout wave D). Method: WebFetch
+# Wikipedia Berkshire Hathaway + Google News RSS (WebSearch budget exhausted
+# this session). Recipe explicitly calls out Berkshire's thrust as "famously
+# LOW right now" — captured honestly below, not smoothed over.
+thrust:
+  value: "~$26.5B/yr TTM — net-NEW acquisitions/stakes only (OxyChem $9.7B Jan-2026 + Taylor Morrison $6.8B May-2026 + Alphabet $10B private placement Jun-2026). FAMOUSLY LOW relative to weight (~4-5% of the ~$570B pile/yr): the PUBLIC EQUITY portfolio is net-SHRINKING — a 15-QUARTER net-selling streak extending into Q2-2026, cash pile grown to ~$397-400B. Thrust = the acquisitions channel only; the portfolio-churn channel is negative and floored, not netted further negative."
+  sources:
+    - {figure: "OxyChem acquired from Occidental Petroleum for $9.7B cash (Jan-2026)", label: "Wikipedia — Berkshire Hathaway", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2026-01", confidence: high}
+    - {figure: "Agreed to buy Taylor Morrison Home Corporation for $6.8B cash (May-2026)", label: "Wikipedia — Berkshire Hathaway", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2026-05", confidence: high}
+    - {figure: "$10B Alphabet private placement (Jun-1-2026)", label: "Wikipedia — Berkshire Hathaway", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2026-06-01", confidence: high}
+    - {figure: "'Extended a Dubious 15-Quarter Net-Selling Streak' — net seller of stocks in Buffett's final quarter as CEO (reported Feb-2026) and continuing under Abel into Q2-2026; cash position grown to ~$397-400B", label: "Globe and Mail / CNBC (via Google News RSS)", url: "https://news.google.com/rss/search?q=Berkshire+Hathaway+stock+portfolio+net+buyer+seller+2026", as_of: "2026-07-28", confidence: med}
+
+optionality:
+  value: "free — Buffett/Abel discretion, no external mandate; ~$381.7B cash is genuinely unallocated dry powder, the exception among insurers whose piles are solvency- and liability-matched."
+  sources:
+    - {figure: "$381.7B cash+T-bills unencumbered vs solvency-constrained peers", label: "Wikipedia — Berkshire Hathaway (FY2025)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2025-12", confidence: high}
+gravity:
+  value: "~$371B/yr GROSS routed through the economy — NOT thin: real-economy operating conglomerate (BNSF, BHE, insurance, manufacturing), so gravity ~= capital, unlike the pure general-account peers."
+  sources:
+    - {figure: "Revenue $371.4B/yr; 387,800 employees", label: "Wikipedia — Berkshire Hathaway (FY2025)", url: "https://en.wikipedia.org/wiki/Berkshire_Hathaway", as_of: "2025-12", confidence: high}
+notes: "Biggest uncertainty: exact float ($171B) is from the 2024 letter (PDF unparsed this session, so med-confidence); and whether the 2026 deployment burst under Abel is a regime change or one-off. FY2025 headline figures are firm (Wikipedia-sourced)."

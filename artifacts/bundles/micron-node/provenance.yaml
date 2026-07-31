@@ -1,0 +1,62 @@
+# Bundle — node posture + capital-flow: micron (2026-07-26)
+# Extends board.yaml micron axes. Method: WebFetch PRIMARY
+# (stockanalysis.com MU statements; WebSearch exhausted this session).
+node: micron
+name: "Micron"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Riding the HBM up-cycle (revenue +142% YoY) into a heavy US-megafab + CHIPS capex ramp (~$25B/yr) — the only US DRAM maker scaling into the AI-memory shortage."
+  sources:
+    - {figure: "~22% of DRAM revenue; HBM #3; only US DRAM maker; FCF earmarked to US megafabs + CHIPS", label: "kestrel board.yaml micron axes", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$26.0B cash+STI (Q3 FY26, ended May 28 2026; cash $25.0B + ST inv $1.0B); net cash ~$19.6B (total debt $6.4B)"
+    sources:
+      - {figure: "cash $24,995M + ST investments $1,027M = $26,022M; total debt $6,376M; net cash $19,646M", label: "stockanalysis.com MU balance sheet", url: "https://stockanalysis.com/stocks/MU/financials/balance-sheet/?p=quarterly", as_of: "2026-05", confidence: high}
+  operating:
+    value: "~$51.4B/yr operating cash flow (TTM); ~$26.2B/yr FCF (TTM) — vs only $1.7B FCF FY25 (capex-heavy)"
+    sources:
+      - {figure: "TTM OCF $51.4B, capex $25.3B, FCF $26.2B; FY2025 OCF $17.5B, FCF $1.7B", label: "stockanalysis.com MU cash-flow statement", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+  deployed:
+    value: "TTM capex ~$25.3B (Idaho/NY megafabs + HBM); buybacks ~$1.4B TTM; dividend ~$0.57B/yr"
+    sources:
+      - {figure: "TTM capex $25.3B, buybacks $1.4B, dividends $0.57B", label: "stockanalysis.com MU cash-flow statement", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+  in:
+    value: "FY2025 revenue $37.4B; TTM revenue $90.3B (HBM-driven surge, +142% YoY); TTM net income $50.5B"
+    sources:
+      - {figure: "FY2025 revenue $37,378M; TTM revenue $90,274M; TTM net income $50,469M", label: "stockanalysis.com MU income statement", url: "https://stockanalysis.com/stocks/MU/financials/", as_of: "2026-05", confidence: high}
+  out:
+    value: "capex ~$25B/yr (US megafabs, CHIPS-supported) + small dividend + modest buybacks"
+    sources:
+      - {figure: "TTM capex $25.3B dominates outflows", label: "stockanalysis.com MU cash-flow statement", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+optionality:
+  value: "mixed — net cash and huge FCF, but a rising slice earmarked to US megafabs + CHIPS commitments; capex-cyclical"
+  sources:
+    - {figure: "TTM FCF $26.2B vs capex $25.3B; net cash $19.6B; CHIPS-tied US buildout", label: "stockanalysis.com MU cash-flow + board.yaml", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+gravity:
+  value: "~22% of global DRAM revenue GROSS across DC+AI+PC+auto; HBM #3 and the only US DRAM maker — a memory-chokepoint flank feeding the AI buildout"
+  sources:
+    - {figure: "~22% of DRAM revenue; HBM #3; only US DRAM maker", label: "kestrel board.yaml micron gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "TTM revenue $90.3B (memory demand proxy)", label: "stockanalysis.com MU income statement", url: "https://stockanalysis.com/stocks/MU/financials/", as_of: "2026-05", confidence: high}
+
+# --- axes_num wave C addendum (2026-07-28, agent-derive) ---
+weight:
+  value: "$134.1B total assets (May 28 2026, balance sheet)"
+  sources:
+    - {figure: "total assets $134,112M; total liabilities $33,388M; equity $100,724M (May 28 2026 TTM basis)", label: "stockanalysis.com MU balance sheet", url: "https://stockanalysis.com/stocks/MU/financials/balance-sheet/?p=quarterly", as_of: "2026-05", confidence: high}
+thrust:
+  value: "~$16.2B/yr organic — capex $25.26B TTM − D&A $9.01B TTM; no M&A/stakes identified this TTM (US megafab buildout is organic, already inside the capex line)"
+  dep_only_note: "SEC 10-Q (Q3 FY26) confirms D&A is reported as ONE combined line — 'Depreciation expense and amortization of intangible assets,' nine months ended May 28 2026: $6,862M (vs $6,203M prior-year nine months) — not split into depreciation-only vs intangible amortization. Flagged per the dep-only rule; distortion risk is judged LOW because Micron has done no major recent M&A (unlike AMD) — its D&A is almost entirely physical fab depreciation on a memory-manufacturing asset base, so blended D&A is a reasonable dep-only proxy here."
+  sources:
+    - {figure: "capex TTM $25.3B; D&A (combined) TTM $9.011B", label: "stockanalysis.com MU cash-flow statement", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+    - {figure: "'Depreciation expense and amortization of intangible assets' $6,862M for nine months ended May 28 2026 (single combined line, no split)", label: "SEC EDGAR — Micron 10-Q (Q3 FY2026)", url: "https://www.sec.gov/Archives/edgar/data/723125/000072312526000015/mu-20260528.htm", as_of: "2026-05", confidence: high}
+    - {figure: "$200B total US manufacturing commitment; $100B NY (Clay) megafab; $24B Singapore plant; CHIPS $6.1B finalized 2024-12-10 (context for the capex trajectory, not separately netted into thrust — organic buildout already inside the capex line)", label: "kestrel artifacts/findings/memory-trio-2026-07-28.md — Micron section", url: "artifacts/findings/memory-trio-2026-07-28.md", as_of: "2026-07-28", confidence: med}
+buybacks_ttm:
+  value: "$1.412B TTM (resumed after $0 in FY2025)"
+  sources:
+    - {figure: "TTM buybacks $1,412M; FY2025 $0", label: "stockanalysis.com MU cash-flow statement", url: "https://stockanalysis.com/stocks/MU/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+axes_num: { weight: 134.1, thrust: 16.2, gravity: 150 }  # wave-C agent-derive 2026-07-28 — gravity is a rough memory-chokepoint-flank estimate (TTM revenue $90.3B anchor, HBM #3/only-US-DRAM-maker strategic premium, below SK Hynix/Samsung's larger HBM share), low-med confidence
+
+notes: "Biggest uncertainty: the memory cycle — the TTM revenue/FCF surge is HBM-boom-driven and mean-reverts hard on a DRAM downturn, while the ~$25B/yr megafab capex is committed regardless. Market cap ~$1.04T is a separate label. Wave-C addendum (07-28): organic thrust (~$16.2B/yr) is the largest of the three memory actors in absolute $ terms even though Micron is HBM #3 — reflects the sheer scale of the US megafab buildout (Idaho/NY/Singapore) rather than HBM share; next earnings date unconfirmed per the memory-trio crawl (fiscal Q4 likely late Sept 2026)."

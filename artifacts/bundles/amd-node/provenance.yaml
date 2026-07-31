@@ -1,0 +1,64 @@
+# Bundle — node posture + capital-flow: amd (2026-07-26)
+# Extends board.yaml amd axes. Method: WebFetch PRIMARY
+# (stockanalysis.com AMD statements; WebSearch exhausted this session).
+node: amd
+name: "AMD"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "The credible #2 AI-GPU challenger — net-cash and self-funding MI-series DC-GPU R&D + the ZT Systems / Xilinx integration; a big Anthropic/Meta compute-win pipeline."
+  sources:
+    - {figure: "credible #2 AI-GPU challenger; net-cash and mostly free to deploy", label: "kestrel board.yaml amd gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$12.3B cash+STI (Q1 2026, ended Mar 31 2026; cash $5.6B + ST inv $6.8B); net cash ~$8.5B (total debt $3.9B)"
+    sources:
+      - {figure: "cash $5,585M + ST investments $6,762M = $12,347M; total debt $3,871M; net cash $8,476M", label: "stockanalysis.com AMD balance sheet", url: "https://stockanalysis.com/stocks/AMD/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$8.6B/yr FCF (TTM to Mar-2026); TTM operating cash flow $9.7B; FY2025 FCF $6.7B"
+    sources:
+      - {figure: "TTM OCF $9,725M, capex $1,151M, FCF $8,574M; FY2025 OCF $7,709M, FCF $6,697M", label: "stockanalysis.com AMD cash-flow statement", url: "https://stockanalysis.com/stocks/AMD/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "TTM buybacks ~$1.5B (FY25 $1.9B); capex ~$1.2B; AI-GPU R&D + ZT Systems / Xilinx integration; strategic partner equity (e.g. Anthropic-linked)"
+    sources:
+      - {figure: "TTM buybacks $1,499M, capex $1,151M; FY2025 buybacks $1,923M", label: "stockanalysis.com AMD cash-flow statement", url: "https://stockanalysis.com/stocks/AMD/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  in:
+    value: "FY2025 revenue $34.6B; TTM revenue $37.5B; TTM net income $5.0B"
+    sources:
+      - {figure: "FY2025 revenue $34,639M; TTM revenue $37,454M; TTM net income $5,009M", label: "stockanalysis.com AMD income statement", url: "https://stockanalysis.com/stocks/AMD/financials/", as_of: "2026-03", confidence: high}
+  out:
+    value: "R&D-led + capex ~$1.2B + buybacks ~$1.5B/yr + acquisition integration (ZT Systems); no dividend"
+    sources:
+      - {figure: "capex $1.15B + buybacks $1.5B TTM the main discretionary outflows", label: "stockanalysis.com AMD cash-flow statement", url: "https://stockanalysis.com/stocks/AMD/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "mostly free — net cash $8.5B, low leverage; self-earmarked to AI-GPU R&D + ZT/Xilinx integration, single-class governance"
+  sources:
+    - {figure: "net cash $8.5B; mostly free, self-earmarked", label: "stockanalysis.com AMD balance sheet + board.yaml", url: "https://stockanalysis.com/stocks/AMD/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+gravity:
+  value: "GROSS — x86 server + PC + DC-GPU on AMD silicon; AMD-claimed DC-accelerator TAM ~$500B by 2028 (AMD-sourced projection, needs primary — low confidence)"
+  sources:
+    - {figure: "AMD-claimed DC-accel TAM ~$500B by 2028", label: "kestrel board.yaml amd gravity axis (AMD-claimed, unverified)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+    - {figure: "TTM revenue $37.5B (silicon-demand proxy)", label: "stockanalysis.com AMD income statement", url: "https://stockanalysis.com/stocks/AMD/financials/", as_of: "2026-03", confidence: high}
+
+# --- axes_num wave C addendum (2026-07-28, agent-derive) ---
+weight:
+  value: "$79.6B total assets (Mar 28 2026, balance sheet)"
+  sources:
+    - {figure: "total assets $79,642M; total liabilities $15,180M; equity $64,462M (Mar 31 2026 TTM basis)", label: "stockanalysis.com AMD balance sheet", url: "https://stockanalysis.com/stocks/AMD/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+thrust:
+  value: "~$5.3B/yr — organic ~$0.3B (capex $1.15B TTM − depreciation-only ~$0.82B) + Anthropic equity stake $5B (2026-07-23, stakes rule)"
+  dep_only_note: "Depreciation isolated from acquisition-intangible amortization via AMD's Q1 2026 10-Q: 'Depreciation and amortization' $206M/qtr vs 'Amortization of acquisition-related intangibles' $551M/qtr (Xilinx/ZT Systems-driven) — kept OUT per the dep-only rule. Annualized dep-only ~$824M is a single-quarter run-rate (x4), not a fetched full-TTM sum — flagged thin. TTM blended D&A $3,019M would have produced a false near-zero/negative organic thrust (the Broadcom-VMware trap the recipe warns against) had it been netted directly."
+  ma_stakes_note: "AMD to invest up to $5B equity (not warrants) in Anthropic, tied to deployment of up to 2GW of Instinct MI450-series GPUs — announced 2026-07-22/23. Equity stake counts in full per the stakes rule (distinct from OpenAI's warrant-linked AMD deal, which is contingent and NOT counted until funded). The 2GW deployment implies further 'tens of billions' in server/chip sales over the deal's life, industry rule-of-thumb order-of-magnitude only — NOT independently sourced with a dollar figure this pass, excluded from the thrust number, flagged thin. ZT Systems (~$4.9B, closed Mar-2025) sits just outside this TTM window and is excluded to avoid stale double-counting."
+  sources:
+    - {figure: "Q1 2026 10-Q: 'Depreciation and amortization' $206M; 'Amortization of acquisition-related intangibles' $551M (three months ended Mar 28 2026)", label: "SEC EDGAR — AMD 10-Q (Q1 2026)", url: "https://www.sec.gov/Archives/edgar/data/2488/000000248826000076/amd-20260328.htm", as_of: "2026-03", confidence: high}
+    - {figure: "capex TTM $1,151M", label: "stockanalysis.com AMD cash-flow statement", url: "https://stockanalysis.com/stocks/AMD/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "'AMD and Anthropic Announce Strategic Partnership to Deploy Up to 2 Gigawatts of AMD Instinct MI450 Series GPUs' (2026-07-22)", label: "AMD Investor Relations — press release listing", url: "https://ir.amd.com/news-events/press-releases", as_of: "2026-07-22", confidence: high}
+    - {figure: "AMD to invest up to $5B in Anthropic (equity, not warrants), tied to 2GW MI450/MI455X deployment", label: "kestrel threads.yaml — ai-vendor-financing thread note (CNBC-sourced, 2026-07-22)", url: "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html", as_of: "2026-07-23", confidence: med}
+buybacks_ttm:
+  value: "$1.499B TTM (FY2025 $1.923B) — a separate, negative capital-returned signal, never netted into thrust"
+  sources:
+    - {figure: "TTM buybacks $1,499M; FY2025 buybacks $1,923M", label: "stockanalysis.com AMD cash-flow statement", url: "https://stockanalysis.com/stocks/AMD/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+axes_num: { weight: 79.6, thrust: 5.3, gravity: 250 }  # wave-C agent-derive 2026-07-28 — gravity is a rough GROSS-ecosystem estimate (TTM revenue $37.5B floor, AMD-claimed $500B-by-2028 TAM upper anchor), low confidence
+
+notes: "Biggest uncertainty: whether the MI-series converts design/partner wins (Anthropic, Meta) into sustained DC-GPU share against Nvidia's CUDA lock — the ~$500B TAM is AMD's own claim, not an independent figure. Market cap ~$851B is a separate label. Thrust is now DOMINATED by the Anthropic equity stake ($5B) rather than organic capex-minus-depreciation (~$0.3B) — a single large stake swings this actor's whole thrust reading; watch whether the deal actually funds and whether OpenAI's separate warrant-linked deal later converts (still excluded as contingent)."

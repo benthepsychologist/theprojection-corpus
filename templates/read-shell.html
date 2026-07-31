@@ -1,0 +1,563 @@
+<title>kestrel — daily read</title>
+<!--
+  read-shell.html — the ONE-TIME hand-written shell for kestrel's reading
+  surface (reframe Phase 0, 2026-07-22). /daily never edits this file's
+  HTML/JS; it only substitutes the JSON payload into the script slot below
+  (tools/render_read.py does the substitution) and republishes
+  artifacts/read/index.html to the stable artifact URL (ROADMAP §Delivery).
+
+  PAYLOAD CONTRACT (schema_version 1) — assembled by tools/render_read.py:
+    generated, schema_version, week_start (Monday), today, days[],
+    entities[{slug,name,kind,lenses[]}],
+    threads[{slug,title,lens,status,kind,parent?,genre?,entities[],watch,
+             opened,last_seen,crawled?,timeline[{date,html,tag}],
+             timeline_truncated}],
+    items[{id,day,lens,title,html,url,source,threads[],entities[],axis,sev?}],
+    throughlines{date:{lens:text}}  -- the "front" key is the cross-lens
+      executive summary (artifacts/digests/daily/<date>-front.md),
+    upcoming[], map_changes[{date,text}],
+    flash[{id,date,severity,headline,body,sources[],lenses[]}],
+    world_news[{id,headline,distinct_outlets,status,thread}],
+    asks[], weekly, weekly_prior
+  threads[] additionally carry parent (meta nesting) and genre.
+  All html fields are pre-rendered/sanitized by the generator from
+  kestrel-authored markdown; everything else is inserted via textContent.
+-->
+<style>
+  :root {
+    --paper:#f6f7f8; --ink:#23272d; --muted:#5c6672; --line:#d8dce1;
+    --accent:#b0521f; --accent-soft:#b0521f22; --slate:#46525f; --card:#fff;
+    --good:#3d7a45; --warn:#a8871f; --bad:#a03535;
+    --mono:ui-monospace,"SF Mono",Menlo,Consolas,monospace;
+  }
+  @media (prefers-color-scheme: dark){:root{
+    --paper:#191c20; --ink:#e4e1da; --muted:#9aa3ad; --line:#333a42;
+    --accent:#d97f47; --accent-soft:#d97f4726; --slate:#a8b4c0; --card:#21252b;
+    --good:#6fb377; --warn:#cfa940; --bad:#c96b6b;}}
+  :root[data-theme="dark"]{
+    --paper:#191c20; --ink:#e4e1da; --muted:#9aa3ad; --line:#333a42;
+    --accent:#d97f47; --accent-soft:#d97f4726; --slate:#a8b4c0; --card:#21252b;
+    --good:#6fb377; --warn:#cfa940; --bad:#c96b6b;}
+  :root[data-theme="light"]{
+    --paper:#f6f7f8; --ink:#23272d; --muted:#5c6672; --line:#d8dce1;
+    --accent:#b0521f; --accent-soft:#b0521f22; --slate:#46525f; --card:#fff;
+    --good:#3d7a45; --warn:#a8871f; --bad:#a03535;}
+  body{background:var(--paper);color:var(--ink);margin:0;
+    font:15px/1.55 -apple-system,"Segoe UI",Roboto,"Helvetica Neue",sans-serif;
+    padding:2rem 1rem 4rem;}
+  main{max-width:46rem;margin:0 auto;}
+  a{color:var(--accent);text-decoration-thickness:1px;text-underline-offset:2px;}
+  h1{font-family:Iowan Old Style,Palatino Linotype,Georgia,serif;font-size:1.7rem;margin:.2rem 0;text-wrap:balance;}
+  h2{font-family:Iowan Old Style,Palatino Linotype,Georgia,serif;font-size:1.25rem;
+     border-bottom:1px solid var(--line);padding-bottom:.25rem;margin:1.8rem 0 .6rem;text-wrap:balance;}
+  h3{font-size:.72rem;font-family:var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--slate);margin:1.1rem 0 .35rem;}
+  .kicker{font-family:var(--mono);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--accent);}
+  .masthead{border-bottom:3px double var(--line);padding-bottom:.8rem;margin-bottom:1rem;}
+  .dateline{color:var(--muted);font-size:.85rem;}
+  .crumb{font-family:var(--mono);font-size:.78rem;margin:.6rem 0;}
+  .chip{display:inline-block;font-family:var(--mono);font-size:.7rem;padding:.08rem .5rem;
+    border-radius:999px;border:1px solid var(--line);color:var(--slate);margin:.12rem .2rem .12rem 0;
+    text-decoration:none;cursor:pointer;background:var(--card);}
+  .chip.on{background:var(--accent-soft);color:var(--accent);border-color:var(--accent);}
+  .chip.ent{border-style:dashed;}
+  .tag{font-family:var(--mono);font-size:.68rem;padding:.05rem .4rem;border-radius:3px;
+    background:var(--accent-soft);color:var(--accent);white-space:nowrap;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:5px;padding:.7rem .9rem;margin:.5rem 0;}
+  .row{display:flex;gap:.6rem;align-items:baseline;flex-wrap:wrap;}
+  .grow{flex:1;}
+  .muted{color:var(--muted);}
+  .small{font-size:.82rem;}
+  ul{padding-left:1.15rem;margin:.35rem 0;}
+  li{margin:.4rem 0;}
+  .item-meta{font-family:var(--mono);font-size:.68rem;color:var(--muted);}
+  .new{color:var(--good);font-family:var(--mono);font-size:.68rem;font-weight:700;}
+  .status-pending{color:var(--muted)} .status-hit{color:var(--good);font-weight:700}
+  .status-slipped{color:var(--warn);font-weight:700} .status-passed-silent{color:var(--bad);font-weight:700}
+  .thread-row{display:flex;gap:.7rem;align-items:baseline;padding:.45rem 0;border-bottom:1px dotted var(--line);}
+  .count{font-family:var(--mono);font-size:.75rem;min-width:2.6rem;text-align:right;color:var(--accent);font-variant-numeric:tabular-nums;}
+  details.quiet-block summary{cursor:pointer;color:var(--muted);font-size:.85rem;}
+  .tl-entry{border-left:3px solid var(--line);padding:.1rem 0 .1rem .9rem;margin:.7rem 0;}
+  .tl-entry.thisweek{border-left-color:var(--accent);}
+  .tl-date{font-family:var(--mono);font-size:.75rem;color:var(--slate);}
+  .prov{font-family:var(--mono);font-size:.65rem;color:var(--muted);}
+  .back{font-family:var(--mono);font-size:.78rem;}
+  footer{margin-top:2.5rem;border-top:1px solid var(--line);padding-top:.8rem;font-size:.8rem;color:var(--muted);}
+  .verdict{background:var(--card);border:1px solid var(--line);border-left:4px solid var(--accent);border-radius:4px;padding:.7rem .95rem;margin:.9rem 0;}
+  /* Flash rail (ROADMAP §Salience, 2026-07-29) — critical general news only.
+     Deliberately the loudest object on the page; if it stops feeling loud,
+     the bar has drifted, not the styling. */
+  .flash{background:var(--bad);color:#fff;border-radius:5px;
+    padding:.85rem 1rem;margin:0 0 1.1rem;}
+  .flash a{color:#fff;text-decoration:underline;}
+  .flash-kicker{font-family:var(--mono);font-size:.7rem;letter-spacing:.16em;
+    text-transform:uppercase;opacity:.85;}
+  .flash-head{font-family:Iowan Old Style,Palatino Linotype,Georgia,serif;
+    font-size:1.15rem;line-height:1.35;margin:.25rem 0 .35rem;text-wrap:balance;}
+  .flash-body{font-size:.87rem;line-height:1.5;opacity:.95;}
+  .flash-src{font-family:var(--mono);font-size:.7rem;margin-top:.45rem;opacity:.9;}
+  .verdict.exec{border-left-width:6px;background:var(--accent-soft);}
+  /* World News strip (ROADMAP §World News, 2026-07-30) — the deliberate
+     OPPOSITE of the flash rail's treatment: quiet, small, no card, no
+     color. A mechanical cross-spectrum volume fact, not an alert. */
+  .world-news{font-size:.8rem;line-height:1.6;margin:0 0 1rem;
+    padding:.5rem .1rem .1rem;border-top:1px dotted var(--line);}
+  .world-news-kicker{font-family:var(--mono);font-size:.65rem;
+    letter-spacing:.14em;text-transform:uppercase;opacity:.6;margin-bottom:.3rem;}
+  .world-news-row{display:flex;gap:.5rem;align-items:baseline;padding:.15rem 0;}
+  .world-news-n{font-family:var(--mono);font-size:.7rem;opacity:.55;flex:none;
+    min-width:2.6em;}
+  .world-news-h{opacity:.85;}
+  .world-news-h a{color:inherit;}
+</style>
+
+<main id="app"><noscript>This page needs JavaScript to render the read.</noscript></main>
+
+<script id="kestrel-payload" type="application/json">
+{"__KESTREL_PAYLOAD__": true}
+</script>
+
+<script>
+(function(){
+"use strict";
+var P = JSON.parse(document.getElementById("kestrel-payload").textContent);
+if (P.__KESTREL_PAYLOAD__) { document.getElementById("app").textContent =
+  "Shell has no payload — run tools/render_read.py."; return; }
+var app = document.getElementById("app");
+var lensFilter = "all";
+var LENSES = ["ai","mental-health","global-capital","world-news"];
+// "money":"Money" kept in LENS_LABEL only (not LENSES) so archived
+// pre-rename items still display a real label instead of the raw slug —
+// renamed to global-capital 2026-07-30, not offered as a filter chip.
+var LENS_LABEL = {"ai":"Frontier AI","mental-health":"Mental health","global-capital":"Global Capital","money":"Money","frontier-ai":"Frontier AI","world-news":"World News"};
+
+function el(tag, cls, text){ var e=document.createElement(tag); if(cls)e.className=cls;
+  if(text!==undefined)e.textContent=text; return e; }
+function frag(html){ var d=document.createElement("div"); d.innerHTML=html; return d; }
+function entName(slug){ var e=P.entities.find(function(x){return x.slug===slug;});
+  return e?e.name:slug; }
+function threadBy(slug){ return P.threads.find(function(t){return t.slug===slug;}); }
+function lensOk(l){ if(lensFilter==="all")return true;
+  return l===lensFilter || (lensFilter==="ai"&&l==="frontier-ai")
+    || (lensFilter==="global-capital"&&l==="money"); }
+function itemsFor(pred){ return P.items.filter(function(it){return lensOk(it.lens)&&pred(it);}); }
+function link(hash, text, cls){ var a=el("a",cls||"",text); a.href=hash; return a; }
+
+function chipRow(parent){
+  var row=el("div","row");
+  ["all"].concat(LENSES).forEach(function(l){
+    var c=el("span","chip"+(lensFilter===l?" on":""), l==="all"?"all lenses":LENS_LABEL[l]||l);
+    c.onclick=function(){ lensFilter=l; render(); };
+    row.appendChild(c);
+  });
+  parent.appendChild(row);
+}
+function entChips(parent, slugs){
+  slugs.forEach(function(s){ parent.appendChild(link("#/entity/"+s, entName(s), "chip ent")); });
+}
+function threadChips(parent, slugs){
+  slugs.forEach(function(s){ var t=threadBy(s);
+    parent.appendChild(link("#/thread/"+s, t?t.title:s, "chip")); });
+}
+function itemLi(it, showDay){
+  var li=el("li");
+  li.appendChild(frag(it.html).firstChild || el("span","",it.title));
+  var meta=el("div","item-meta");
+  if(showDay) meta.appendChild(el("span","", it.day+" · "));
+  if(it.day===P.today) meta.appendChild(el("span","new","NEW · "));
+  meta.appendChild(el("span","", (LENS_LABEL[it.lens]||it.lens)+" "));
+  var wrap=el("span");
+  (it.threads||[]).forEach(function(s){ wrap.appendChild(link("#/thread/"+s,"🧵 "+s,"chip")); });
+  (it.entities||[]).forEach(function(s){ wrap.appendChild(link("#/entity/"+s, entName(s),"chip ent")); });
+  meta.appendChild(wrap);
+  li.appendChild(meta);
+  return li;
+}
+function masthead(sub){
+  var h=el("header","masthead");
+  h.appendChild(el("div","kicker","kestrel · the read"));
+  var t=el("h1","", "Week of "+P.week_start);
+  h.appendChild(t);
+  h.appendChild(el("div","dateline", sub));
+  return h;
+}
+
+/* ---------- home: thread-first (Ben, 2026-07-22) ----------
+   "Active threads this week" is the highest organizational structure —
+   each thread wraps its own evidence, latest move, and expectations.
+   Rank = weight × move size (Ben, 2026-07-22): threads.yaml weight (1-3,
+   '/steer weight <slug> <n>') × (2×today + week items); importance
+   amplifies movement, never fabricates it — weight 3 with zero moves
+   still reads as quiet. Ties: weight, then last_seen. */
+function renderHome(){
+  var upByThread={};
+  (P.upcoming||[]).forEach(function(u){
+    if(u.thread){ (upByThread[u.thread]=upByThread[u.thread]||[]).push(u); }});
+
+  // ===== 1. FLASH RAIL — general news that lands regardless of lens =====
+  // `critical` only (Ben, 2026-07-29). Above everything, including the
+  // masthead: the point is that it cannot be scrolled past.
+  (P.flash||[]).filter(function(f){return f.severity==="critical";})
+    .forEach(function(f){
+      var r=el("div","flash");
+      r.appendChild(el("div","flash-kicker","⚡ Flash · "+f.date));
+      r.appendChild(el("div","flash-head",f.headline));
+      if(f.body) r.appendChild(el("div","flash-body",f.body));
+      if((f.sources||[]).length){
+        var s=el("div","flash-src");
+        f.sources.forEach(function(x,i){
+          if(i) s.appendChild(document.createTextNode(" · "));
+          s.appendChild(link(x.url,x.label));
+        });
+        r.appendChild(s);
+      }
+      app.appendChild(r);
+    });
+
+  // ===== 1b. WORLD NEWS — quiet, cross-spectrum volume; not an alert =====
+  // A mechanical fact (N distinct outlets covered this), never a model or a
+  // curator (ROADMAP §World News). Deliberately styled as the OPPOSITE of
+  // the flash rail above: small, no color, no card — "on the radar, not
+  // drowning out my real targets." A `thread` pointer means the item
+  // corroborates something already tracked; its absence means it's a raw
+  // candidate with nothing on the map yet.
+  if((P.world_news||[]).length){
+    var wn=el("div","world-news");
+    wn.appendChild(el("div","world-news-kicker","🌍 World news · what's widely covered today"));
+    P.world_news.forEach(function(w){
+      var row=el("div","world-news-row");
+      row.appendChild(el("div","world-news-n",w.distinct_outlets+" outlets"));
+      var h=el("div","world-news-h");
+      if(w.thread){ h.appendChild(link("#/thread/"+w.thread,w.headline)); }
+      else{ h.appendChild(document.createTextNode(w.headline)); }
+      row.appendChild(h);
+      wn.appendChild(row);
+    });
+    app.appendChild(wn);
+  }
+
+  app.appendChild(masthead("centered on "+P.today+" · generated "+P.generated+
+    " · "+P.days.length+"/7 days in"));
+  chipRow(app);
+
+  // ===== 2. EXECUTIVE SUMMARY — front first, then the lens roll-ups =====
+  var th=(P.throughlines||{})[P.today]||{};
+  if(th.front && lensFilter==="all"){
+    var fc=el("div","verdict exec");
+    fc.appendChild(el("div","kicker","Executive summary · "+P.today));
+    fc.appendChild(el("div","small",th.front));
+    app.appendChild(fc);
+  }
+  LENSES.filter(lensOk).forEach(function(l){
+    if(th[l]){ var c=el("div","verdict");
+      c.appendChild(el("div","kicker",LENS_LABEL[l]+" · today"));
+      c.appendChild(el("div","small",th[l])); app.appendChild(c); }
+  });
+
+  // ===== 3. TODAY'S CALENDAR — hoisted above the threads =====
+  // Everything due today/tomorrow, INCLUDING thread:null entries. Previously
+  // these rendered in a flat list below every thread card, which is how the
+  // FOMC decision ended up at the bottom of the page (Ben, 2026-07-29).
+  var soon=(P.upcoming||[]).filter(function(u){
+    if(u.status==="passed-silent") return true;
+    if(u.status!=="pending") return false;
+    var n=dueDays(String(u.due));
+    return n>=0 && n<=1;
+  }).sort(function(a,b){return String(a.due)<String(b.due)?-1:1;});
+  var soonIds={};
+  if(soon.length){
+    var cs=el("section");
+    cs.appendChild(el("h2","","⏳ Today & tomorrow"+((P.now&&P.now!==P.today)?" (as of "+P.now+")":"")));
+    soon.forEach(function(u){
+      soonIds[u.id]=1;
+      var c=el("div","row card");
+      c.appendChild(el("span","tag",dueDays(String(u.due))===0?"TODAY":"tomorrow"));
+      var g=el("span","grow"); g.appendChild(document.createTextNode(u.claim));
+      if(u.thread){ g.appendChild(document.createTextNode(" · "));
+        var ut=threadBy(u.thread);
+        g.appendChild(link("#/thread/"+u.thread, ut?ut.title:u.thread, "chip")); }
+      c.appendChild(g);
+      c.appendChild(el("span","status-"+u.status,
+        u.status==="pending"?"pending":u.status.replace("-"," ")));
+      cs.appendChild(c);
+    });
+    app.appendChild(cs);
+  }
+
+  var counts={};
+  P.items.forEach(function(it){ (it.threads||[]).forEach(function(s){
+    counts[s]=counts[s]||{week:0,today:0,mag:0}; counts[s].week++;
+    if(it.day===P.today)counts[s].today++;
+    if(it.sev==="flash")counts[s].mag+=8; else if(it.sev==="major")counts[s].mag+=3;
+  }); });
+  // children of a meta-thread, for score aggregation + card rendering
+  var kids={};
+  P.threads.forEach(function(t){ if(t.parent)(kids[t.parent]=kids[t.parent]||[]).push(t); });
+
+  // SALIENCE (ROADMAP §Salience, 2026-07-29). Was volume-only, which ranked
+  // "what got written about most" instead of "what to look at first" — the
+  // week's four biggest scheduled events sat 17th/31st/34th/off-list.
+  //   score = weight × (V + I) + M
+  //   V volume    = 2×today + week items   (unchanged)
+  //   I imminence = the thread's pending expectations, by how close they are
+  //   M magnitude = curation's sev= flag; ADDITIVE, never weight-multiplied,
+  //                 because a major event on a weight-1 thread is still major
+  function dueDays(d){ // whole days from the REAL day (P.now) to a due date
+    var base=P.now||P.today;
+    return Math.round((Date.parse(d+"T00:00:00Z")-Date.parse(base+"T00:00:00Z"))/864e5);
+  }
+  function imminence(slug){
+    return (upByThread[slug]||[]).reduce(function(a,u){
+      if(u.status==="passed-silent") return a+5;      // the loud outcome
+      if(u.status!=="pending") return a;
+      var n=dueDays(String(u.due));
+      if(n<0) return a;
+      if(n===0) return a+6;
+      if(n===1) return a+4;
+      if(n<=3)  return a+2;
+      if(n<=7)  return a+1;
+      return a;
+    },0);
+  }
+  function score(t){
+    var c=counts[t.slug]||{week:0,today:0,mag:0};
+    var V=c.today*2+c.week, I=imminence(t.slug), M=c.mag;
+    (kids[t.slug]||[]).forEach(function(k){         // metas aggregate children
+      var ck=counts[k.slug]||{week:0,today:0,mag:0};
+      V+=ck.today*2+ck.week; I+=imminence(k.slug);
+    });
+    return (t.weight||2)*(V+I)+M;
+  }
+  function dots(t){ return "●●●".slice(0,t.weight||2)+"○○○".slice(0,3-(t.weight||2)); }
+
+  // ===== ACTIVE THREADS THIS WEEK — wraps everything =====
+  var ts=el("section");
+  ts.appendChild(el("h2","","🧵 Active threads this week"));
+  var act=P.threads.filter(function(t){return lensOk(t.lens)&&t.status!=="resolved";})
+    .sort(function(a,b){ return (score(b)-score(a))||
+      ((b.weight||2)-(a.weight||2))||(b.last_seen<a.last_seen?-1:1); });
+  var quiet=[];
+  act.forEach(function(t){
+    var c=counts[t.slug]||{week:0,today:0};
+    var ups=upByThread[t.slug]||[];
+    if(!c.week && !ups.length){ quiet.push(t); return; }
+    var card=el("div","card");
+    var head=el("div","row");
+    var g=el("span","grow");
+    g.appendChild(link("#/thread/"+t.slug,t.title));
+    g.appendChild(el("span","muted small","  · "+(LENS_LABEL[t.lens]||t.lens)));
+    head.appendChild(g);
+    head.appendChild(el("span","count",dots(t)+" · "+
+      (c.today?("+"+c.today+" today · "):"")+c.week+" this wk"));
+    card.appendChild(head);
+    // latest move (newest timeline entry in this week)
+    var tl=(t.timeline||[])[0];
+    if(tl && tl.date>=P.week_start){
+      var lm=el("div","small muted");
+      lm.appendChild(el("span","tl-date",tl.date+" — "));
+      lm.appendChild(frag("<span>"+tl.html.replace(/<ul>.*<\/ul>/s,"")+"</span>"));
+      card.appendChild(lm);
+    }
+    // this week's evidence, inside the thread
+    var wk=P.items.filter(function(it){return lensOk(it.lens)&&
+      (it.threads||[]).indexOf(t.slug)>=0;});
+    if(wk.length){ var ul=el("ul");
+      wk.forEach(function(it){ul.appendChild(itemLi(it,true));});
+      card.appendChild(ul); }
+    // the thread's expectations
+    ups.forEach(function(u){
+      var r=el("div","row small");
+      r.appendChild(el("span","tl-date","⏳ "+u.due));
+      var gu=el("span","grow",u.claim);
+      r.appendChild(gu);
+      r.appendChild(el("span","status-"+u.status,
+        u.status==="pending"?"pending":u.status.replace("-"," ")));
+      card.appendChild(r);
+    });
+    ts.appendChild(card);
+  });
+  if(quiet.length){
+    var d=el("details","quiet-block"), s=el("summary","",quiet.length+
+      " quiet threads (no evidence or dated expectations this week)");
+    d.appendChild(s);
+    quiet.forEach(function(t){ var r=el("div","thread-row");
+      r.appendChild(el("span","count","—"));
+      var g2=el("span","grow"); g2.appendChild(link("#/thread/"+t.slug,t.title));
+      g2.appendChild(el("span","muted small","  · last seen "+t.last_seen));
+      r.appendChild(g2); d.appendChild(r); });
+    ts.appendChild(d);
+  }
+  app.appendChild(ts);
+
+  // ambient: this week's items that belong to no thread
+  var loose=itemsFor(function(it){return !(it.threads||[]).length;});
+  if(loose.length){
+    var ls=el("section");
+    ls.appendChild(el("h2","","📎 Not yet a thread"));
+    ls.appendChild(el("p","muted small",
+      "Entity-tagged items with no thread — candidates if they recur."));
+    var ul2=el("ul"); loose.forEach(function(it){ul2.appendChild(itemLi(it,true));});
+    ls.appendChild(ul2);
+    app.appendChild(ls);
+  }
+
+  // calendar: expectations not attached to any thread
+  var noThread=(P.upcoming||[]).filter(function(u){return !u.thread && !soonIds[u.id];})
+    .sort(function(a,b){return a.due<b.due?-1:1;});
+  if(noThread.length){
+    var up=el("section");
+    up.appendChild(el("h2","","⏳ Also on the calendar"));
+    noThread.forEach(function(u){
+      var c=el("div","row card");
+      c.appendChild(el("span","tl-date",u.due));
+      c.appendChild(el("span","grow",u.claim));
+      c.appendChild(el("span","status-"+u.status,
+        u.status==="pending"?"pending":u.status.replace("-"," ")));
+      up.appendChild(c);
+    });
+    app.appendChild(up);
+  }
+
+  // entities
+  var es=el("section");
+  es.appendChild(el("h2","","👤 Active people & entities"));
+  var ec={};
+  P.items.filter(function(it){return lensOk(it.lens);}).forEach(function(it){
+    (it.entities||[]).forEach(function(s){ec[s]=(ec[s]||0)+1;}); });
+  var order=Object.keys(ec).sort(function(a,b){return ec[b]-ec[a];});
+  var rowE=el("div");
+  order.forEach(function(s){ rowE.appendChild(link("#/entity/"+s, entName(s)+" ×"+ec[s], "chip ent")); });
+  if(!order.length) rowE.appendChild(el("span","muted small","None under this filter."));
+  es.appendChild(rowE);
+  app.appendChild(es);
+
+  // weekly synthesis
+  if(P.weekly){ var w=el("section"); w.appendChild(el("h2","","🗓 The week, synthesized"));
+    w.appendChild(frag(P.weekly)); app.appendChild(w); }
+  if(P.weekly_prior){ var wp=el("details","quiet-block");
+    wp.appendChild(el("summary","","Last week's synthesis (carried through Tuesday)"));
+    wp.appendChild(frag(P.weekly_prior)); app.appendChild(wp); }
+
+  // map changes + asks
+  var mc=el("section");
+  mc.appendChild(el("h2","","🔄 Map changes this week"));
+  var ulm=el("ul");
+  (P.map_changes||[]).forEach(function(m){ var li=el("li","small");
+    li.appendChild(el("span","tl-date",m.date+" ")); li.appendChild(el("span","",m.text));
+    ulm.appendChild(li); });
+  mc.appendChild(ulm);
+  app.appendChild(mc);
+  if((P.asks||[]).length){
+    var as=el("section");
+    as.appendChild(el("h2","","💡 Open steering asks"));
+    var ol=el("ol");
+    P.asks.forEach(function(a){ ol.appendChild(el("li","",a)); });
+    as.appendChild(ol);
+    as.appendChild(el("p","muted small","Answer in chat — a word each is enough."));
+    app.appendChild(as);
+  }
+  // day links
+  var dl=el("p","small");
+  dl.appendChild(el("span","muted","Days: "));
+  P.days.forEach(function(d){ dl.appendChild(link("#/day/"+d, d, "chip")); });
+  app.appendChild(dl);
+}
+
+/* ---------- thread ---------- */
+function renderThread(slug){
+  var t=threadBy(slug);
+  app.appendChild(masthead(P.today));
+  var back=el("p","back"); back.appendChild(link("#/","← this week")); app.appendChild(back);
+  if(!t){ app.appendChild(el("p","","Unknown thread: "+slug)); return; }
+  app.appendChild(el("h2","","🧵 "+t.title));
+  var meta=el("p","small muted", (LENS_LABEL[t.lens]||t.lens)+" · "+t.kind+" · "+t.status+
+    " · opened "+t.opened+" · last seen "+t.last_seen);
+  app.appendChild(meta);
+  var ch=el("div"); entChips(ch,t.entities||[]); app.appendChild(ch);
+  if(t.watch){ var w=el("div","verdict");
+    w.appendChild(el("div","kicker","watching for"));
+    w.appendChild(el("div","small",t.watch)); app.appendChild(w); }
+  app.appendChild(el("h3","","timeline"));
+  (t.timeline||[]).forEach(function(e){
+    var d=el("div","tl-entry"+(e.date>=P.week_start?" thisweek":""));
+    d.appendChild(el("div","tl-date",e.date));
+    d.appendChild(frag(e.html));
+    d.appendChild(el("div","prov","⟨"+e.tag+"⟩"));
+    app.appendChild(d);
+  });
+  if(!(t.timeline||[]).length) app.appendChild(el("p","muted small","No timeline entries yet."));
+  if(t.timeline_truncated) app.appendChild(el("p","muted small",
+    "Older entries truncated — full record in artifacts/threads/"+slug+".md"));
+  if(!t.crawled) app.appendChild(el("p","muted small",
+    "Backstory thin — ask for /crawl "+slug+" to pull what came before."));
+  var wk=P.items.filter(function(it){return (it.threads||[]).indexOf(slug)>=0;});
+  if(wk.length){ app.appendChild(el("h3","","evidence this week"));
+    var ul=el("ul"); wk.forEach(function(it){ul.appendChild(itemLi(it,true));});
+    app.appendChild(ul); }
+  // siblings via shared entities
+  var sib={};
+  P.threads.forEach(function(o){ if(o.slug===slug)return;
+    if((o.entities||[]).some(function(s){return (t.entities||[]).indexOf(s)>=0;}))
+      sib[o.slug]=1; });
+  var sk=Object.keys(sib);
+  if(sk.length){ app.appendChild(el("h3","","related threads (shared entities)"));
+    var d2=el("div"); threadChips(d2,sk); app.appendChild(d2); }
+}
+
+/* ---------- entity ---------- */
+function renderEntity(slug){
+  app.appendChild(masthead(P.today));
+  var back=el("p","back"); back.appendChild(link("#/","← this week")); app.appendChild(back);
+  var e=P.entities.find(function(x){return x.slug===slug;});
+  app.appendChild(el("h2","","👤 "+(e?e.name:slug)));
+  if(e) app.appendChild(el("p","small muted", e.kind+" · lenses: "+(e.lenses||[]).join(", ")));
+  var ths=P.threads.filter(function(t){
+    if((t.entities||[]).indexOf(slug)>=0) return true;
+    return P.items.some(function(it){ return (it.entities||[]).indexOf(slug)>=0 &&
+      (it.threads||[]).some(function(s){return s===t.slug;}); }); });
+  app.appendChild(el("h3","","threads involving "+(e?e.name:slug)));
+  if(ths.length){ ths.forEach(function(t){
+    var r=el("div","thread-row");
+    r.appendChild(el("span","count",t.status==="resolved"?"✓":"•"));
+    var g=el("span","grow"); g.appendChild(link("#/thread/"+t.slug,t.title));
+    g.appendChild(el("span","muted small","  · "+t.status+" · last seen "+t.last_seen));
+    r.appendChild(g); app.appendChild(r); });
+  } else app.appendChild(el("p","muted small","No threads tagged to this entity yet."));
+  var wk=P.items.filter(function(it){return (it.entities||[]).indexOf(slug)>=0;});
+  if(wk.length){ app.appendChild(el("h3","","items this week"));
+    var ul=el("ul"); wk.forEach(function(it){ul.appendChild(itemLi(it,true));});
+    app.appendChild(ul); }
+}
+
+/* ---------- day ---------- */
+function renderDay(date){
+  app.appendChild(masthead(date+" (digest-day)"));
+  var back=el("p","back"); back.appendChild(link("#/","← this week")); app.appendChild(back);
+  chipRow(app);
+  var th=(P.throughlines||{})[date]||{};
+  LENSES.filter(lensOk).forEach(function(l){
+    var its=P.items.filter(function(it){return it.day===date&&(it.lens===l||(l==="ai"&&it.lens==="frontier-ai")||(l==="global-capital"&&it.lens==="money"));});
+    if(!its.length && !th[l]) return;
+    app.appendChild(el("h2","",LENS_LABEL[l]));
+    if(th[l]) app.appendChild(el("p","small muted",th[l]));
+    var ul=el("ul"); its.forEach(function(it){ul.appendChild(itemLi(it,false));});
+    app.appendChild(ul);
+  });
+}
+
+function render(){
+  app.textContent="";
+  var h=location.hash||"#/";
+  var m;
+  if((m=h.match(/^#\/thread\/(.+)$/))) renderThread(decodeURIComponent(m[1]));
+  else if((m=h.match(/^#\/entity\/(.+)$/))) renderEntity(decodeURIComponent(m[1]));
+  else if((m=h.match(/^#\/day\/(.+)$/))) renderDay(decodeURIComponent(m[1]));
+  else renderHome();
+  var f=el("footer");
+  f.appendChild(el("span","","Archive: artifacts/digests/daily/ · timelines: artifacts/threads/ · steering in chat — \"track X · drop Y · deeper on Z · expect C by D\""));
+  app.appendChild(f);
+  window.scrollTo(0,0);
+}
+window.addEventListener("hashchange",render);
+render();
+})();
+</script>

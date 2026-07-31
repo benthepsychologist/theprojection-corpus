@@ -1,0 +1,66 @@
+# Bundle — capital node: mgx (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml mgx. EXTENDS the axis strings
+# on board.yaml (no mgx-axes bundle existed) with posture and the flow
+# breakdown. Method: WebFetch primary (WebSearch exhausted) — Wikipedia MGX
+# (company) + Stargate LLC. Newest/most opaque node in the pocket; state fund,
+# no public financials, so figures are reported deal sizes with confidence set
+# accordingly.
+node: mgx
+name: "MGX"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Raised ~$50B (Jun-2026) toward a $100B target; co-led the $40B Aligned Data Centers buy (Oct-2025) + Stargate + GAIIP — the fastest-scaling new AI-infra pool."
+  sources:
+    - {figure: "raised close to $50B from regional + global investors (Jun-2026); $100B AUM target", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: high}
+    - {figure: "consortium (MGX, AIP, BlackRock GIP) acquired Aligned Data Centers for $40B (Oct-2025)", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2025-10", confidence: med}
+
+capital:
+  available:
+    value: "undrawn commitments toward the $100B AUM target; ~$50B raised (Jun-2026); state-backed dry powder (Mubadala + G42)"
+    sources:
+      - {figure: "target of managing US$100B in assets; ~$50B raised (Jun-2026)", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: high}
+      - {figure: "launched Mar-2024 by Mubadala (investment co) + G42 (AI firm); Abu Dhabi Government", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2024-03", confidence: high}
+  operating:
+    value: "n/a as fee revenue — a state-backed investment vehicle, no operating-cash disclosure; funded by Mubadala/G42 + LP commitments"
+    sources:
+      - {figure: "no fee-revenue / operating-cash disclosure for MGX (sovereign-backed fund)", label: "Wikipedia — MGX (company) (no financials disclosed)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: low}
+  deployed:
+    value: "into AI infra — $2B Binance (Mar-2025); part of the $40B Aligned Data Centers buy (Oct-2025); $7B Stargate; GAIIP (w/ BlackRock+Microsoft); Europe's largest AI DC (Mistral/Nvidia)"
+    sources:
+      - {figure: "$2B Binance (Mar-2025); $40B Aligned Data Centers consortium (Oct-2025); GAIIP w/ BlackRock+Microsoft (Sep-2024); Mistral/Nvidia EU DC (Jul-2025)", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: med}
+      - {figure: "MGX $7B contribution to Stargate (of $500B target, $100B initial)", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-01", confidence: med}
+  in:
+    value: "raised close to $50B from regional + global investors (Jun-2026); launched Mar-2024 with the $100B target"
+    sources:
+      - {figure: "raised close to $50B (Jun-2026)", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: high}
+  out:
+    value: "deployments — ~$7B Stargate + ~$40B Aligned (consortium share, not MGX-alone) + $2B Binance + GAIIP tickets"
+    sources:
+      - {figure: "$7B Stargate + $40B Aligned (consortium) + $2B Binance", label: "Wikipedia — MGX (company) + Stargate LLC", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: med}
+
+# thrust block added 2026-07-28 (axes_num rollout wave D). Method: WebFetch
+# Wikipedia MGX + Google News RSS (WebSearch budget exhausted this session).
+# FLOOR ONLY, not a full picture — see notes below.
+thrust:
+  value: "~$10-11B/yr run-rate (rough floor) — Stargate $7B (2025) + Binance $2B (Mar-2025) + Aligned Data Centers follow-on $5B (Jul-2026, BlackRock-MGX consortium post-close) summed over ~16mo. FLOOR ONLY: excludes MGX's unticketed participation in the 2026 OpenAI ($122B round), Anthropic (Series G $30B + Series H $65B), and xAI ($20B) mega-rounds where MGX's individual dollar share is not disclosed anywhere found — true run-rate is likely materially higher."
+  sources:
+    - {figure: "Oracle and MGX 'would each contribute $7 billion' to Stargate LLC", label: "Wikipedia — Stargate LLC", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-01", confidence: med}
+    - {figure: "MGX $2B minority investment in Binance via World Liberty Financial stablecoin (Mar-2025)", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2025-03", confidence: med}
+    - {figure: "'BlackRock-MGX consortium commits $5bn for Aligned Data Centres after closing acquisition' (Jul-21-2026) — resolves the earlier undisclosed MGX share of the $40B Aligned deal to this more specific, more recent follow-on figure", label: "The National News (via Google News RSS, title/date)", url: "https://news.google.com/rss/search?q=MGX+Abu+Dhabi+AI+investment+billion+2026", as_of: "2026-07-21", confidence: med}
+    - {figure: "MGX co-led/participated in: OpenAI $122B round (Apr-2026, $852B valuation); Anthropic Series G $30B (Feb-2026) + Series H $65B (May-2026); xAI $20B raise (Jan-2026, w/ Qatar). These are ROUND TOTALS — MGX's own ticket size not disclosed in any source found; excluded from the sum, flagged as the main gap", label: "FWDStart / The National News / CNBC (via Google News RSS)", url: "https://news.google.com/rss/search?q=MGX+Abu+Dhabi+AI+investment+billion+2026", as_of: "2026-07", confidence: low}
+    - {figure: "MGX's own AI fund raised ~$49-50B (closing Jun23-Jul1 2026), exceeding a $45B target — this is capital IN (weight), not thrust; included here only to show the fund is now substantially deployed, not still raising", label: "Bloomberg / CNBC / Axios / Semafor (via Google News RSS)", url: "https://news.google.com/rss/search?q=MGX+Abu+Dhabi+AI+investment+billion+2026", as_of: "2026-07-01", confidence: med}
+
+optionality:
+  value: "free/aggressive — state-backed (Mubadala + G42), Sheikh Tahnoun bin Zayed-chaired; sovereign-directed toward an AI/tech mandate with few fiduciary constraints."
+  sources:
+    - {figure: "Chairman Sheikh Tahnoun bin Zayed Al Nahyan; backed by Mubadala + G42", label: "Wikipedia — MGX (company)", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: high}
+
+gravity:
+  value: "GROSS — anchors the AI-infra economy: Stargate ($500B target), GAIIP (w/ BlackRock+Microsoft), Aligned Data Centers ($40B), Europe's largest AI DC (Mistral/Nvidia)."
+  sources:
+    - {figure: "GAIIP (BlackRock+Microsoft) + Stargate + $40B Aligned + Mistral/Nvidia EU DC", label: "Wikipedia — MGX (company) + Stargate LLC", url: "https://en.wikipedia.org/wiki/MGX_(company)", as_of: "2026-06", confidence: med}
+
+notes: "Newest + most opaque node — commanded ($100B target) vs owned (state capital) barely separable; exact deployed total and NAV undisclosed. The $40B Aligned figure is a consortium total, not MGX-alone. No operating/fee financials exist for a sovereign-backed vehicle."

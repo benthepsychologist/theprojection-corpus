@@ -1,0 +1,52 @@
+# Bundle — state node: united-states (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml united-states (rank state,
+# sphere us, tier apex). Fiscal reading: capital is the federal balance sheet —
+# available = FX reserves (thin; the real liquidity is dollar/Treasury issuance,
+# NOT a reserve pile), operating = federal budget, deployed = national debt,
+# in = tax revenue, out = federal outlays. Gravity = GDP. Method: WebFetch
+# primary (WebSearch exhausted) — Wikipedia aggregate lists (IMF/Treasury base).
+node: united-states
+name: "United States"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Deficit-financed: ~$2.2T deficit (7.6% of GDP, 2024), debt climbing $36.4T (Mar-2025) toward ~$39T; no austerity, reserve-currency privilege funds it. Geopolitically consolidating apex via export controls/CHIPS."
+  sources:
+    - {figure: "2024 federal deficit -$2,225.5B (-7.63% of GDP); expenditure 37.53% of GDP", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+    - {figure: "gross govt debt 123.9% of GDP (2025)", label: "Wikipedia — List of countries by government debt (IMF 2025)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: high}
+
+capital:
+  available:
+    value: "~$254B FX reserves (Aug-2025) — THIN for its size; the true liquidity is unlimited USD/Treasury issuance (dollar is the reserve currency), not a reserve stockpile"
+    sources:
+      - {figure: "foreign-exchange reserves incl. gold $253,767M (22 Aug 2025)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2025-08", confidence: high}
+  operating:
+    value: "~$10.9T annual federal outlays / ~$8.7T revenue (2024)"
+    sources:
+      - {figure: "2024 revenue $8,721.17B (29.90% of GDP); expenditure $10,894.16B (37.53% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "~$36.4T national debt (Mar-2025); ~$39.28T per Jun-2026 update — $29T held by public + $7.4T intragovernmental"
+    sources:
+      - {figure: "total national debt $36.4T (6 Mar 2025): $29T public + $7.4T intragovernmental; $39.28T (Jun-2026 update)", label: "Wikipedia — National debt of the United States", url: "https://en.wikipedia.org/wiki/National_debt_of_the_United_States", as_of: "2026-06", confidence: high}
+  in:
+    value: "~$8.7T tax revenue (2024, 29.9% of GDP)"
+    sources:
+      - {figure: "2024 revenue $8,721.17B (29.90% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$10.9T expenditure (2024); deficit -$2.23T (-7.63% of GDP)"
+    sources:
+      - {figure: "2024 expenditure $10,894.16B; deficit -$2,225.5B (-7.63% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "free — the dollar is the world reserve currency and Treasuries the deepest market, so 123.9%-of-GDP debt is financed at will (issuer of the settlement asset). Only real constraint is domestic politics, not markets."
+  sources:
+    - {figure: "reserve-currency issuer; gross debt 123.9% of GDP yet funds at benchmark rates", label: "Wikipedia — List of countries by government debt (IMF 2025) + analytical (reserve-currency status)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: high}
+
+gravity:
+  value: "~$32.4T GDP (nominal, IMF 2026) — largest single-state gravity; the state's gravity IS its GDP"
+  sources:
+    - {figure: "nominal GDP $32,383,920M (IMF 2026); $30,769,700M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Apex sovereignty (graded — US/China top tier). Biggest uncertainty is not the figures (rock-solid) but posture framing: 'expanding' captures the fiscal deficit stance; a 'consolidating' reading also holds for the defensive tech-containment geopolitics. Reserves figure is genuinely small relative to size — do not read as weakness; USD issuance is the real available capital."

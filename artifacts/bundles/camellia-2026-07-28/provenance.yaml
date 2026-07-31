@@ -1,0 +1,82 @@
+# Bundle — MINI-crawl camellia-2026-07-28
+# Scope: small, ~30min pass (no separate artifacts/findings/*.md this round —
+# distilled straight into artifacts/threads/camellia.md per dispatch scope).
+artifact: artifacts/threads/camellia.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  One sonnet subagent ran WebFetch against Google News RSS search feeds
+  (news.google.com/rss/search) plus direct outlet fetches. WebSearch was
+  reported exhausted (shared session budget) on first call, so the agent
+  ran API/RSS-only for the remainder. thecurrentga.org (The Current GA, a
+  Georgia nonprofit newsroom) was the one outlet whose article pages
+  resolved full body text on direct fetch and became the backbone of this
+  crawl — it is the most detailed local reporting found on the Effingham
+  County process. Other outlets (Bloomberg, AJC, CBS, GPB, Axios, Savannah
+  Morning News, ConstructConnect, Data Center Dynamics, Breitbart) were
+  citable only via RSS metadata (headline/outlet/date) since Google News
+  redirect links did not resolve to publisher body text — those are capped
+  at medium confidence. No URL or figure fabricated; explicit gaps
+  (generation mix, GC/financer name, groundbreak date) are marked
+  not-found rather than guessed.
+queries:
+  google_news_rss:
+    - "OpenAI Effingham data center opposition outrage residents"
+    - "SoftBank Ohio data center 10GW"
+    - "Kiewit EPC 1425 MW gas Georgia"
+  direct_sources:
+    - "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/ (direct fetch, succeeded, high)"
+    - "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/ (direct fetch, succeeded, high)"
+    - "https://thecurrentga.org/2026/07/24/2-effingham-voters-quiz-their-commissioner-why-a-data-center-why-so-secret/ (direct fetch, succeeded, high)"
+    - "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/ (direct fetch, succeeded, high)"
+    - "https://www.bloomberg.com/news/articles/2026-07-22/openai-plans-to-spend-over-30-billion-on-georgia-data-center (prior board citation, paywalled/headline-only)"
+items:
+  # --- LOCATION ---
+  - {id: site-name, figure: "Site is the Savannah Gateway Industrial Hub, a 2,600-acre industrial park near Rincon, Effingham County GA; data-center build itself ~101 acres across four buildings", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-22", confidence: high}
+  - {id: site-zoning, figure: "Land already zoned industrial (data centers fall under that use) — no rezoning vote required", url: "https://thecurrentga.org/2026/07/24/2-effingham-voters-quiz-their-commissioner-why-a-data-center-why-so-secret/", label: "The Current GA — direct fetch", as_of: "2026-07-22", confidence: high}
+  - {id: site-aquifer, figure: "Site sits in a groundwater 'Red Zone' south of GA-119 (Floridan aquifer protection area) — raises the water-source question separately from the closed-loop claim", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: medium}
+  # --- PARTNERS ---
+  - {id: partner-developer, figure: "Developer of record named in filings is Octans GA LLC, c/o Butler Snow (Macon-based law/registered-agent firm)", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-22", confidence: medium}
+  - {id: partner-no-stargate-jv, figure: "No general contractor, financial backer, or Oracle/SoftBank/MGX/Crusoe/Vantage Stargate-JV structure found in any Camellia-specific coverage — reads as OpenAI-direct, distinct from the Abilene TX Stargate consortium", url: "n/a", label: "Crawl gap — absence checked across ~10 outlets, explicit not-found", as_of: "2026-07-28", confidence: thin}
+  - {id: partner-kiewit-unrelated, figure: "A Kiewit-built 1,425MW gas plant for Oglethorpe Power in Monroe County GA is unrelated to Camellia — different county, different developer, predates the announcement", url: "https://news.google.com/rss/search?q=Kiewit+EPC+1425+MW+gas+Georgia", label: "POWER Magazine/power-eng.com/Construction Briefing (RSS metadata) — flagged non-matching", as_of: "2026-01-13", confidence: thin}
+  # --- POWER / GRID ---
+  - {id: power-ppa, figure: "Georgia Power signed a 25-year PPA with OpenAI for 3.2GW ('over 2 million homes' worth), phased 2028-2032", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch (matches Bloomberg's original figure)", as_of: "2026-07-23", confidence: high}
+  - {id: power-demand-response, figure: "OpenAI committed to provide up to 1GW of flexible demand response back to the grid", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: medium}
+  - {id: power-mix-blank, figure: "Generation mix (gas/nuclear/renewables) not specified — the DRI filing's 'energy supply' field was left blank", url: "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/", label: "The Current GA — direct fetch, explicit gap", as_of: "2026-07-22", confidence: high}
+  - {id: power-cooling, figure: "Closed-loop cooling system claimed, needing 'relatively less water', no local diversion; state separately developing Savannah River water delivery for regional industrial users", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: medium}
+  # --- TIMELINE ---
+  - {id: timeline-origins, figure: "Discussions began fall 2025 (IDA first contacted); county manager joined Jan 2026; county delegation visited OpenAI's Abilene TX site late Apr/early May 2026; OpenAI met privately with Gov. Kemp + Georgia Power June 2026 (no county officials present)", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA — direct fetch", as_of: "2026-07-22", confidence: high}
+  - {id: timeline-openhouse, figure: "Public announcement/open house held in Rincon, 2026-07-23", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA — direct fetch", as_of: "2026-07-22", confidence: high}
+  - {id: timeline-dri-filed, figure: "DRI (Development of Regional Impact) application submitted to the state 2026-07-24, filed by county senior planner Kimberly Barlett", url: "https://thecurrentga.org/2026/07/24/2-effingham-voters-quiz-their-commissioner-why-a-data-center-why-so-secret/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: high}
+  - {id: timeline-next-gate, figure: "Next step is a state Coastal Regional Commission review capped at 30 days, before county finalizes site plan (engineering/fire/stormwater/noise review still pending after)", url: "https://thecurrentga.org/2026/07/25/as-effingham-county-data-center-plan-advances-next-step-is-state-evaluation-process/", label: "The Current GA — direct fetch", as_of: "2026-07-25", confidence: high}
+  - {id: timeline-no-groundbreak, figure: "No confirmed formal groundbreaking date found — project is pre-construction/regulatory-review as of 2026-07-28", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: high}
+  # --- LOCAL REACTION / INCENTIVES ---
+  - {id: cost-discrepancy, figure: "Most Georgia local coverage cites $20B project cost vs. Bloomberg's original '$30B+' — unreconciled discrepancy across sources", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA vs. Bloomberg (contradicted)", as_of: "2026-07-22", confidence: medium}
+  - {id: incentive-tax-abatement, figure: "50% property-tax abatement for 15 years, after which OpenAI expected to become the county's largest taxpayer; 'Project Zero' initiative floated to potentially cut average homeowner property rates ~40% by early 2027", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: high}
+  - {id: incentive-community-benefits, figure: "$80M community benefits package (education/public safety/healthcare/small-business/sports fields) plus up to $71M in Codex software credits for GA college/technical students", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: high}
+  - {id: incentive-jobs, figure: "400 permanent on-site jobs promised plus thousands of construction jobs with local-contractor priority; independent annual audit of commitments pledged", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: high}
+  - {id: reaction-openhouse-turnout, figure: "~1,000 residents attended the open house, ~300 protested outside; Change.org petition hit 7,000+ signatures that evening", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: high}
+  - {id: reaction-petition-growth, figure: "Petition grew to 10,000+ signatures (a 30% jump post-announcement)", url: "https://thecurrentga.org/2026/07/22/20-billion-openai-data-center-to-open-in-effingham-county/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: high}
+  - {id: reaction-secrecy-complaint, figure: "Residents' core complaint is the secrecy of negotiations, not the project itself — no written deal existed 'until the last minute', per Commissioner Roger Burdette", url: "https://thecurrentga.org/2026/07/24/2-effingham-voters-quiz-their-commissioner-why-a-data-center-why-so-secret/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: high}
+  - {id: reaction-no-formal-vote, figure: "County commissioners approved the project without a formal public vote — decision made by the Industrial Development Authority, a quasi-independent body; the 07-21 commission meeting agenda did not list the data center despite the deal being imminent", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-24", confidence: high}
+  - {id: reaction-national-pickup, figure: "Opposition escalated into national coverage framing it as 'negotiated in secret'", url: "https://news.google.com/rss/search?q=OpenAI+Effingham+data+center+opposition+outrage+residents", label: "Breitbart (via Google News RSS)", as_of: "2026-07-26", confidence: medium}
+  - {id: reaction-regional-moratoriums, figure: "Camden County passed a data-center moratorium May 2026; Bulloch County/Port Wentworth residents separately pursuing one — suggests Camellia-style pushback is a regional GA trend, not one-off", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-05-21", confidence: thin}
+  # --- SOFTBANK OHIO RELATIONSHIP ---
+  - {id: ohio-distinct, figure: "Confirmed distinct project: SoftBank's ~10GW Ohio campus sits on the former DOE Portsmouth/PORTS uranium-enrichment site (Piketon, OH); OpenAI reportedly leasing capacity there rather than building/owning as at Camellia; no outlet found conflates the two", url: "https://news.google.com/rss/search?q=SoftBank+Ohio+data+center+10GW", label: "Data Center Dynamics (via Google News RSS, metadata-only)", as_of: "2026-07-27", confidence: medium}
+  - {id: ohio-nvidia-backstop, figure: "Nvidia reportedly discussing a $250B financial backstop for the Ohio project, plus separate ~$350B chip-financing talk (deal still 'in talks')", url: "https://news.google.com/rss/search?q=SoftBank+Ohio+data+center+10GW", label: "Data Center Dynamics (via Google News RSS, metadata-only)", as_of: "2026-07-27", confidence: thin}
+  - {id: ohio-power-plan, figure: "Ohio site power plan involves SB Energy tapped for a 9.2GW gas plant, part of a $550B US-Japan deal first tranche", url: "https://news.google.com/rss/search?q=SoftBank+Ohio+data+center+10GW", label: "POWER Magazine (via Google News RSS, metadata-only)", as_of: "2026-02-19", confidence: medium}
+  - {id: stargate-branding, figure: "Camellia is consistently reported under its own name, not the 'Stargate' brand; Georgia coverage references Stargate only as a comparison point (the $500B Abilene TX flagship, which does carry Oracle/SoftBank/MGX/Crusoe JV backing)", url: "https://thecurrentga.org/2026/07/23/openai-data-center-project-sparks-outrage-among-effingham-county-residents/", label: "The Current GA — direct fetch", as_of: "2026-07-23", confidence: medium}
+notes: >-
+  Confidence key matches prior bundle convention (e.g.
+  tsmc-capacity-race-2026-07-28): high = primary/direct-fetch source or 3+
+  convergent outlets; medium = single outlet or RSS-metadata-only citation
+  (headline/outlet/date confirmed via the feed, body text not
+  independently re-fetched); thin = single outlet, rumor framing, or an
+  explicit crawl gap. No URL or figure fabricated. Open gaps carried
+  forward into the thread's watch: (1) no generation-mix disclosure yet
+  (DRI filing left it blank); (2) no named general contractor or
+  financial backer — genuinely unclear whether this stays OpenAI-direct
+  or a partner surfaces later; (3) $20B vs. $30B+ cost figure unreconciled
+  between local GA press and Bloomberg; (4) no formal groundbreaking date.
+  Small/mini-crawl scope (~30min dispatch) — no separate
+  artifacts/findings/*.md written this round; the finding was distilled
+  straight into the thread timeline per the dispatch instructions.

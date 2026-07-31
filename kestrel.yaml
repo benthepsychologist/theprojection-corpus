@@ -1,0 +1,28 @@
+# kestrel.yaml — instance manifest (engine/instance split, kestrel
+# ROADMAP/DESIGN.md §2). This repo is instance #1: Ben's attention map +
+# derived artifacts, tended by the kestrel engine (/workspace/kestrel).
+#
+# kind: attention is the news-instance shape — distinct from `registry`
+# (bh-compliance). The engine's instance-reading tools locate this repo
+# via the KESTREL_INSTANCE env var; this manifest makes the repo
+# self-describing per the contract. The layout keys mirror what the
+# tools actually read today.
+kind: attention
+name: theprojection
+contract_version: 1
+layout:
+  attention: attention/          # the map: watchlist, threads, upcoming, board…
+  artifacts: artifacts/          # digests, timelines, bundles, readouts, read page
+  digests: artifacts/digests/daily/
+  threads: artifacts/threads/
+  sources: sources/              # sources.yaml, feeds.yaml, benchmarks.yaml
+  templates: templates/          # digest + read-shell templates
+  buffer: buffer/                # 30-day cache semantics — gitignored
+  snapshots: snapshots/          # page-diff prior-snapshot store (unused yet)
+  provenance: provenance/        # per-run fetch + publish manifests
+governance:
+  yaml: safe-load-or-revert
+  attention_edits: steering-loop-only   # provenance tag every change (CLAUDE.md)
+outputs:
+  site: /workspace/theprojection
+  adapter: theprojection

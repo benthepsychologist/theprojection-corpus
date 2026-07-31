@@ -1,0 +1,106 @@
+# Bundle — crawl finding us-gov-pockets-2026-07-28
+artifact: artifacts/findings/us-gov-pockets-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  Four parallel research sweeps (CHIPS+DOE · DARPA+DoD AI · NIH+BARDA+WISeR ·
+  NSF+July sweep). WebSearch was already exhausted (200/200) at the start of
+  every sweep, session-wide — all four routed through WebFetch against
+  Google News RSS, DuckDuckGo/Bing HTML search substitutes, agency sites
+  (nsf.gov, energy.gov, cms.gov, ai.mil, inl.gov), and SEC EDGAR / CRS where
+  reachable. Several primary PDFs (DARPA's FY26 Master Justification Book at
+  comptroller.war.gov, a CRS BARDA report, ASPR's HHS-wide budget-in-brief)
+  were located but returned unparseable binary streams, not text — flagged
+  per-item below as fetch-failed rather than silently dropped. Many direct
+  outlet URLs (Reuters, WSJ, CNBC, Data Center Dynamics) 403/404'd on direct
+  fetch; those facts are sourced via search-snippet/aggregator convergence
+  instead and are marked thin in the finding where that applies.
+items:
+  # --- CHIPS Act ---
+  - {id: chips-act-total, url: "https://en.wikipedia.org/wiki/CHIPS_and_Science_Act", title: "CHIPS and Science Act — $52.7B semiconductor appropriation ($39B mfg + $11B R&D) + $75B loan authorization", outlet: "Wikipedia (CRS-derived)", ts: "2026-07-28"}
+  - {id: chips-award-table, url: "https://marklapedus.substack.com/p/who-has-officially-obtained-chips", title: "Who has officially obtained CHIPS Act funds — company-by-company award table, $30.7-30.9B direct awards + $5.5B loans as of Jan 2025", outlet: "Mark LaPedus (Substack aggregation)", ts: "2026-07-28", note: "thin — secondary aggregation, not a primary Commerce dataset"}
+  - {id: chips-equity-trendforce, url: "https://www.trendforce.com/news/2025/08/21/news-u-s-eyes-tsmc-stake-legal-hurdles-shareholder-concerns-and-whats-at-play/", title: "U.S. eyes TSMC stake — legal hurdles, shareholder concerns", outlet: "Trendforce", ts: "2025-08-21"}
+  - {id: chips-equity-reuters-deny, url: "https://www.reuters.com/business/trump-administration-is-not-eyeing-equity-tsmc-micron-official-says-2025-08-21/", title: "Trump administration is not eyeing equity in TSMC, Micron, official says", outlet: "Reuters", ts: "2025-08-21", note: "direct conflict with the Trendforce item same day — flagged unresolved in the finding"}
+  - {id: chips-equity-cnbc, url: "https://www.cnbc.com/2025/08/20/trump-eyes-us-government-stakes-in-other-chip-makers-that-received-chips-act-funds-reuters.html", title: "Trump eyes US government stakes in other chip makers that received CHIPS Act funds", outlet: "CNBC (via Reuters)", ts: "2025-08-20"}
+  - {id: chips-startup-stake, url: "https://thehill.com/", title: "Trump administration taking $150M stake in chip startup", outlet: "The Hill", ts: "2025-12-02", note: "company name not captured — thin"}
+  - {id: chips-quantum-equity, url: "https://en.wikipedia.org/wiki/CHIPS_and_Science_Act", title: "May 2026 — same grants-to-equity mechanism applied to 9 quantum-computing firms, $2B in grants+equity (IBM ~half, Quantinuum/PsiQuantum/Atom Computing ~$100M each)", outlet: "Wikipedia summary", ts: "2026-07-28"}
+  - {id: chips-natcast-cut, url: "https://en.wikipedia.org/wiki/CHIPS_and_Science_Act", title: "Natcast (CHIPS R&D/NSTC operator) targeted for closure, most funding cut, layoffs starting Sept 2025", outlet: "Wikipedia summary", ts: "2026-07-28"}
+  - {id: chips-rescission-context, url: "https://epic.org/", title: "FY2026 appropriations included ~$56.4B in proposed rescissions government-wide; no confirmed CHIPS-specific rescission language found", outlet: "EPIC analysis", ts: "2026-01-21", note: "thin — no CHIPS-specific line confirmed"}
+
+  # --- DOE AI/datacenter power ---
+  - {id: doe-nuclear-supplychain-loans, url: "https://www.energy.gov/articles/department-energy-announces-american-nuclear-supply-chain-loans", title: "DOE announces $17.5B in conditional loans for American nuclear supply chain (10 AP1000 reactors, 11GW), via the Office of Energy Dominance Financing", outlet: "energy.gov (primary)", ts: "2026-06-23"}
+  - {id: doe-lpo-authority-thin, url: "https://www.energy.gov/lpo/loan-programs-office", title: "DOE Loan Programs Office total lending authority — figures conflict across aggregators ($400B vs $289B vs $290B Title 17)", outlet: "aggregated search summary", ts: "2026-07-28", note: "thin — not reconciled against a single primary document"}
+  - {id: doe-tmi-loan, url: "https://www.cnbc.com/", title: "DOE $1B loan to Constellation to restart Three Mile Island", outlet: "CNBC / Data Center Dynamics / Ynetnews (4-outlet convergence)", ts: "2025-11-18"}
+  - {id: doe-texas-grid-loan, url: "https://www.washingtonexaminer.com/", title: "Energy Department finalizes $3 billion loan to upgrade Texas grid for data center power demand", outlet: "Washington Examiner", ts: "2026-07-08"}
+  - {id: doe-prometheus-inl, url: "https://inl.gov/news-release/genesis-mission-funds-ai-innovation-to-speed-up-safe-affordable-nuclear-energy/", title: "Genesis Mission funds AI innovation to speed up nuclear energy — DOE Phase II award $60M over three years (Prometheus project)", outlet: "Idaho National Laboratory (primary)", ts: "2026-07-28", note: "pull date; original release undated"}
+  - {id: doe-prometheus-200m-headline, url: "https://ussanews.com/2026/07/21/oklo-x-energy-join-200-million-federal-nuclear-push-for-ai-bloomberg/", title: "Oklo, X-Energy join $200 million federal nuclear push for AI (headline conflates DOE's $60M direct award with ~$200M total industry cost-share across 32 partners — corrected in the finding)", outlet: "Bloomberg via ussanews.com", ts: "2026-07-21", note: "403'd on direct fetch, used via aggregator"}
+  - {id: doe-wright-nuclear-loans, url: "https://www.cnbc.com/", title: "Nuclear power will get the most Energy Department loans, Chris Wright says", outlet: "CNBC", ts: "2025-11-10"}
+  - {id: doe-speed-to-power, url: "https://www.hklaw.com/", title: "DOE 'Speed to Power Initiative' — accelerating multi-gigawatt grid interconnection for AI/reindustrialization", outlet: "Reuters / Holland & Knight", ts: "2025-09-18"}
+  - {id: doe-inl-land-lease, url: "https://www.hklaw.com/", title: "DOE opens federal land at Idaho National Laboratory for AI-datacenter lease", outlet: "Holland & Knight", ts: "2025-09-12"}
+
+  # --- DARPA ---
+  - {id: darpa-fy24-budget, url: "https://en.wikipedia.org/wiki/DARPA", title: "DARPA FY2024 topline $4.122B", outlet: "Wikipedia (sourced to DARPA budget docs)", ts: "2026-07-28"}
+  - {id: darpa-fy26-atd, url: "https://www.highergov.com/budget/darpa-advanced-technology-development-28aee15/", title: "DARPA Advanced Technology Development, FY2026 request $1,733.5M", outlet: "HigherGov (aggregates official DoD comptroller data)", ts: "2026-07-28"}
+  - {id: darpa-fy26-conflict-1, url: "https://www.linkedin.com/posts/jennifer-kan_darpas-budget-for-2026-is-49-billion-share-7444043909447557120-Mmk5", title: "DARPA's budget for 2026 is $4.9 billion, a 12% jump from 2025", outlet: "LinkedIn post", ts: "2026-07-28", note: "thin/unverifiable"}
+  - {id: darpa-fy26-conflict-2, url: "https://cabrilloclub.com/insights/federal-agencies/darpa", title: "DARPA FY2026 request $4.3B, +7.5% from FY2025's $4.0B", outlet: "cabrilloclub.com", ts: "2026-07-28", note: "thin, conflicts with other two DARPA-total figures"}
+  - {id: darpa-fy26-conflict-3, url: "https://www.pertamapartners.com/funding/darpa-defense-research-2026", title: "DARPA FY2026 $1.9B", outlet: "pertamapartners.com", ts: "2026-07-28", note: "thin, internally inconsistent with other DARPA-total figures — may conflate a sub-account"}
+  - {id: darpa-fy26-jbook-primary, url: "https://comptroller.war.gov/Portals/45/Documents/defbudget/FY2026/budget_justification/pdfs/03_RDT_and_E/RDTE_Vol1_DARPA_MasterJustificationBook_PB_2026.pdf", title: "DARPA FY2026 Master Justification Book (RDT&E Vol 1)", outlet: "DoD Comptroller (war.gov — post-rebrand domain)", ts: "2025-06-24", note: "located but PDF not text-extractable via WebFetch — needs a PDF-reading tool"}
+  - {id: darpa-aixcc, url: "https://en.wikipedia.org/wiki/DARPA", title: "AI Cyber Challenge (AIxCC) — DARPA + Anthropic/Google/Microsoft/OpenAI, autonomous vulnerability-finding AI", outlet: "Wikipedia", ts: "2026-07-28", note: "prize/funding total and 2025 DEF CON results not freshly re-verified this session"}
+
+  # --- DoD AI (CDAO / DAWG / Replicator) ---
+  - {id: cdao-mip-budget-zero, url: "https://www.highergov.com/budget/chief-digital-and-artificial-intelligence-officer-cdao-mip-446cf5e/", title: "CDAO MIP program element: FY23 $70.78M -> FY24 $45.33M -> FY25 $0 -> FY26 $0 requested; funding realigned to Navy/DIA, no replacement line items published", outlet: "HigherGov (official DoD comptroller data)", ts: "2026-07-28"}
+  - {id: cdao-activities-budget-zero, url: "https://www.highergov.com/budget/chief-digital-and-artificial-intelligence-officer-cdao-activities-2fd6947/", title: "CDAO Activities program element: FY23 $12.39M -> FY24 $12.96M -> FY25 $9.26M -> FY26 $0 requested; DoD did not provide FY26 line-item forecasts", outlet: "HigherGov", ts: "2026-07-28"}
+  - {id: dawg-absorbs-replicator, url: "https://breakingdefense.com/2026/04/pentagon-officials-broadly-detail-55-billion-drone-plan-under-dawg/", title: "Pentagon officials detail $55B drone plan under DAWG — Replicator absorbed into the new Defense Autonomous Warfare Group; FY26 baseline $225.9M, FY27 request $54.6B ($1.0B base + $53.6B reconciliation)", outlet: "Breaking Defense", ts: "2026-04-21"}
+  - {id: dawg-meta-defense, url: "https://meta-defense.fr/en/2026/05/25/replicator-absorbed-by-dawg-54-6bn/", title: "Replicator absorbed by DAWG — $54.6bn", outlet: "meta-defense.fr", ts: "2026-05-25"}
+  - {id: replicator-precrs-funding, url: "https://crsreports.congress.gov/", title: "Replicator initiative — $300M FY23 reprogramming request, then $200M secured in FY24 appropriations; launched Aug 2023 by Kathleen Hicks", outlet: "CRS In Focus IF12611", ts: "2026-07-28", note: "medium-thin, snippet-only, PDF fetch failed"}
+  - {id: dod-fy26-topline, url: "https://www.cbo.gov/publication/62301", title: "DoD total FY2026 budget request $961B, including $113B from the 2025 reconciliation act", outlet: "Congressional Budget Office (primary)", ts: "2026-07-28"}
+  - {id: ai-mil-pacesetting, url: "https://www.ai.mil", title: "CDAO 2025-2026 Pace-Setting Projects: Swarm Forge, Agent Network, Ender's Foundry, Open Arsenal, Project Grant, GenAI.mil, Enterprise Agents; GenAI.mil gives DoD personnel access to Google Gemini and xAI Grok at IL5+", outlet: "ai.mil (primary, fetched live)", ts: "2026-07-28"}
+
+  # --- NIH ---
+  - {id: nih-fy24-actual, url: "https://en.wikipedia.org/wiki/National_Institutes_of_Health", title: "NIH FY2024 actual budget $48.857B", outlet: "Wikipedia (citing NIH data)", ts: "2026-07-28"}
+  - {id: nih-fy26-request-cut, url: "https://officeofbudget.od.nih.gov/pdfs/FY26/br/Overview%20of%20FY%202026%20Executive%20Summary.pdf", title: "President's FY2026 budget request: $27.9B program level, an $18.1B cut from FY2025 (~40%)", outlet: "NIH Office of Budget (primary)", ts: "2026-07-28", note: "403 on direct fetch, figure corroborated independently via search index"}
+  - {id: nih-fy26-enacted-crs, url: "https://www.congress.gov/crs_external_products/R/PDF/R43341/R43341.58.pdf", title: "NIH FY2026 enacted total program funding level $47.493B", outlet: "CRS, 'NIH Funding: FY1996-FY2026'", ts: "2026-07-28"}
+  - {id: nih-fy26-enacted-acr, url: "https://www.acr.org/News-and-Publications/2026/congress-includes-increases-to-nih-in-fy2026-minibus", title: "Congress includes increases to NIH in FY2026 minibus — $47.2B base budget, +0.9% vs FY2025", outlet: "ACR", ts: "2026-07-28"}
+  - {id: nih-fy26-enacted-senate, url: "https://www.appropriations.senate.gov/imo/media/doc/fy26_lhhs_conference_bill_summary.pdf", title: "FY26 LHHS Conference Bill Summary — NIH $48.7B discretionary, +$415M vs FY2025", outlet: "Senate Appropriations Committee (primary)", ts: "2026-07-28"}
+  - {id: nih-fy27-cut-proposal, url: "https://rollcall.com/", title: "Sources: White House to propose 20 percent cut to NIH funding (FY2027)", outlet: "Roll Call", ts: "2026-03-27"}
+  - {id: nih-collins-inexplicable, url: "https://www.appropriations.senate.gov/", title: "Sen. Collins calls proposed cuts to biomedical research funding 'inexplicable'", outlet: "Senate Appropriations Committee news release", ts: "2026-05-21"}
+  - {id: nih-indirect-cap-proposed, url: "https://www.science.org/", title: "NIH slashes overhead payments for research, sparking outrage and lawsuit", outlet: "Science/AAAS", ts: "2025-02-07"}
+  - {id: nih-indirect-cap-dead, url: "https://www.statnews.com/", title: "Trump administration drops court fight to cap NIH payments", outlet: "STAT (corroborated by C&EN 2026-04-10)", ts: "2026-04-08"}
+  - {id: nih-terminations-cost, url: "https://www.forbes.com/", title: "NIH grant cuts already costing institutions $3.8 billion, study finds", outlet: "Forbes", ts: "2025-06-14"}
+  - {id: nih-foa-collapse, url: "https://www.forbes.com/", title: "Under Trump, NIH funding opportunity notices dropped from 787 to 84", outlet: "Forbes", ts: "2026-03-29"}
+  - {id: nih-bridge2ai, url: "https://commonfund.nih.gov/bridge2ai", title: "Bridge2AI — NIH Common Fund program, $130M, now Stage 2, shifted to AI health-tool safety frameworks", outlet: "NIH Common Fund", ts: "2026-07-28", note: "thin — page not directly fetchable, figure via search index"}
+  - {id: nih-aim-ahead, url: "https://aim-ahead.net", title: "AIM-AHEAD (AI/ML Consortium to Advance Health Equity) — NIH cooperative agreement 1OT2OD032581, 10,230+ members, active through 2026 Annual Meeting", outlet: "aim-ahead.net (primary, fetched)", ts: "2026-07-28"}
+
+  # --- BARDA ---
+  - {id: barda-mrna-cancel-hhs, url: "https://www.hhs.gov/", title: "HHS winds down mRNA vaccine development under BARDA — ~$500M across 22 projects cancelled", outlet: "HHS.gov", ts: "2025-08-05"}
+  - {id: barda-mrna-cancel-nyt, url: "https://www.nytimes.com/", title: "Kennedy cancels nearly $500 million in mRNA vaccine contracts", outlet: "New York Times", ts: "2025-08-05"}
+  - {id: barda-mrna-cancel-bbc, url: "https://www.bbc.com/", title: "RFK Jr cancels $500m in mRNA vaccine development in the US", outlet: "BBC", ts: "2025-08-06"}
+  - {id: barda-mrna-restore, url: "https://www.statnews.com/", title: "House appropriators snub Kennedy, include mRNA vaccine funding in spending bill", outlet: "STAT", ts: "2025-09-10"}
+  - {id: barda-fy26-ask-thin, url: "https://allianceforbiosecurity.org/", title: "Alliance for Biosecurity FY26 ask: $1.4B Advanced R&D + $300M for the Emerging Infectious Diseases program", outlet: "Alliance for Biosecurity", ts: "2026-07-28", note: "thin — an advocacy ask, not an appropriated figure; exact outlet/URL not fully captured"}
+  - {id: barda-ai-rfi-thin, url: "https://www.medicalcountermeasures.gov/", title: "BARDA RFI on AI-enabled discovery of broad-spectrum small-molecule filovirus therapeutics", outlet: "unconfirmed, single-source", ts: "2026-07-28", note: "thin — date and original URL not independently re-verified"}
+
+  # --- NSF ---
+  - {id: nsf-fy24-25-budget, url: "https://www.nsf.gov/about/budget", title: "NSF FY2024 enacted $9.06B, FY2025 enacted $8.826B", outlet: "nsf.gov (primary)", ts: "2026-04-10"}
+  - {id: nsf-fy26-request-60pct, url: "https://www.rdworldonline.com/", title: "NSF turns 75 with its doors closed, facing a 60% budget cut in 2026", outlet: "R&D World", ts: "2025-10-07"}
+  - {id: nsf-fy26-rejected, url: "https://www.nature.com/", title: "US lawmakers vote to reject Trump's massive science-budget cuts — but call for substantial decreases", outlet: "Nature", ts: "2026-04-30"}
+  - {id: nsf-cuts-internal-memo, url: "https://www.science.org/", title: "Exclusive: NSF slashes research programs to support new tech initiative — internal memos show Math & Physical Sciences down 30%/$260M, Biology down $200M, breaching the FY26 bill's 5%-per-directorate cap", outlet: "Science/AAAS (via eos.org summary)", ts: "2026-06-23"}
+  - {id: nsf-grants-halved, url: "https://eos.org/", title: "NSF cuts hundreds of science program budgets by up to 30% — grant-making down ~50% despite only a 3% topline reduction", outlet: "eos.org (summarizing Science/AAAS)", ts: "2026-06-22"}
+  - {id: nsf-xlabs, url: "https://www.nsf.gov/", title: "NSF announces $1.5B X-Labs initiative — Other Transaction Authority, bypasses standard grant/peer-review process, 10-year teams on quantum/AI/sensing", outlet: "nsf.gov (primary press release)", ts: "2026-05-14"}
+  - {id: nsf-director-acting, url: "https://www.nsf.gov/", title: "NSF public AI statements issued by Brian Stone, 'performing the duties of the NSF Director'", outlet: "nsf.gov", ts: "2026-07-22"}
+  - {id: nairr-pilot-status, url: "https://nairrpilot.org", title: "NAIRR (National AI Research Resource) — still a pilot, 820+ research projects, 82 classroom awards, 23 infrastructure/data-demo projects, all 50 states + DC + PR", outlet: "nairrpilot.org (primary, fetched)", ts: "2026-07-28", note: "reflects activity through ~June 2026"}
+  - {id: genesis-nsf-cloudlabs, url: "https://www.nsf.gov/", title: "NSF Genesis Mission contribution: $400M over 4 years for 20 Programmable Cloud Lab test-bed nodes", outlet: "nsf.gov (primary)", ts: "2026-07-22"}
+  - {id: genesis-nsf-idss, url: "https://www.nsf.gov/", title: "NSF announces $83M investment in integrated data systems and services (FabAID, National Data Platform, iDLab, BRIDGE, National Science Data Fabric, MESA) — complements NAIRR", outlet: "nsf.gov (primary)", ts: "2026-07-22"}
+  - {id: genesis-nsf-dataset-value, url: "https://www.nsf.gov/", title: "New NSF initiative to unlock dataset value for AI-enabled scientific discovery — up to $100M, $2-5M awards", outlet: "nsf.gov (primary)", ts: "2026-07-22"}
+
+  # --- Genesis Mission (cross-cutting) ---
+  - {id: genesis-mission-5b, url: "https://www.govconwire.com/", title: "White House commits over $5B to expand Genesis AI Mission — DOE-led, all-of-government; Google pledges $40M; US-Japan $1B/5yr co-investment", outlet: "GovCon Wire", ts: "2026-07-23", note: "Google/Japan figures thin, single-source"}
+  - {id: genesis-mission-politico, url: "https://www.politico.com/", title: "Trump administration steers $5B toward AI research", outlet: "Politico", ts: "2026-07-22"}
+  - {id: genesis-mission-hhs, url: "https://www.hhs.gov/", title: "HHS joins the Genesis Mission to end America's chronic disease epidemic", outlet: "HHS.gov (primary)", ts: "2026-07-22"}
+  - {id: genesis-mission-nih-bio, url: "https://www.nih.gov/", title: "Bio Genesis Mission — NIH joins Trump's $5B AI mission with biomedical research push", outlet: "NIH / Fierce Biotech", ts: "2026-07-22"}
+  - {id: genesis-mission-labs, url: "https://www.bizjournals.com/", title: "Federal AI program chooses Sandia for 6 missions, Los Alamos for 7", outlet: "Business Journals", ts: "2026-07-27"}
+  - {id: genesis-mission-primary-404, url: "https://www.whitehouse.gov/presidential-actions/2026/07/genesis-mission/", title: "Guessed primary White House URL for the Genesis Mission — 404, not located this session", outlet: "whitehouse.gov (attempted)", ts: "2026-07-28", note: "primary document unconfirmed — flagged as a gap in the finding"}
+
+  # --- WISeR (CMS pilot, health-side context) ---
+  - {id: wiser-cms-primary, url: "https://www.cms.gov/priorities/innovation/innovation-models/wiser", title: "Wasteful and Inappropriate Service Reduction (WISeR) Model — Section 1115A authority, AI+human prior-authorization pilot, 6 states (NJ/OH/OK/TX/AZ/WA), 6 performance years 2026-2031", outlet: "CMS.gov (primary, fetched)", ts: "2026-07-28"}
+  - {id: wiser-eff-suit, url: "https://www.eff.org/", title: "EFF sues CMS over WISeR transparency", outlet: "EFF", ts: "2026-03-25"}
+  - {id: wiser-senate-blocks-repeal, url: "https://www.statnews.com/", title: "Senate Republicans block Democratic resolution to overturn the WISeR Medicare AI prior-authorization pilot", outlet: "STAT / Fierce Healthcare / Healthcare Dive (3-outlet convergence)", ts: "2026-07-16"}
+  - {id: wiser-care-delays, url: "https://www.cbsnews.com/", title: "Medicare's AI push snarls patients and doctors in errors and delays", outlet: "CBS News", ts: "2026-06-23"}

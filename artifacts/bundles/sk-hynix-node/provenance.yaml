@@ -1,0 +1,64 @@
+# Bundle — node posture + capital-flow: sk-hynix (2026-07-26)
+# Extends board.yaml sk-hynix axes. Method: WebFetch PRIMARY
+# (stockanalysis.com KRX:000660 statements; WebSearch exhausted this session).
+# CURRENCY: SK Hynix reports in KRW. USD conversions below use ~1,380 KRW/USD
+# (approximate mid-2026 rate) and are FLAGGED — treat USD figures as med/low
+# confidence on the FX leg even where the KRW source figure is high confidence.
+node: sk-hynix
+name: "SK Hynix"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "The HBM chokepoint for the AI buildout (Nvidia primary customer); pouring ~$21B/yr capex into HBM/DRAM capacity (M15X, Yongin cluster) as revenue nearly doubled."
+  sources:
+    - {figure: "HBM CHOKEPOINT, Nvidia primary, ~29% DRAM revenue", label: "kestrel board.yaml sk-hynix gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$28-29B readily-liquid (cash 21.17T KRW + ST inv 18.25T KRW = 39.42T KRW / ~1,380); net cash ~$12.7B (total debt 21.83T KRW ~$15.8B). NB board.yaml cites ~$39B cash+STI, higher — likely counts broader short-term financial instruments beyond these two lines. FX-flagged."
+    sources:
+      - {figure: "cash 21,166,904M KRW + ST inv 18,251,846M KRW = 39.42T KRW; total debt 21,832,416M KRW (as of Mar 31 2026)", label: "stockanalysis.com SK Hynix (KRX:000660) balance sheet — KRW", url: "https://stockanalysis.com/quote/KRX/000660/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "USD ~$28.6B cash+STI at ~1,380 KRW/USD (FX approximate)", label: "FX conversion — mid-2026 KRW/USD, flagged", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  operating:
+    value: "~$30B/yr FCF (TTM 41.79T KRW / ~1,380); TTM operating cash flow ~$51B (70.68T KRW); FY2025 FCF ~$18.7B (25.85T KRW)"
+    sources:
+      - {figure: "TTM OCF 70,679,574M KRW, FCF 41,787,469M KRW; FY2025 OCF 53,373,126M KRW, FCF 25,854,202M KRW", label: "stockanalysis.com SK Hynix cash-flow statement — KRW", url: "https://stockanalysis.com/quote/KRX/000660/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$21B/yr capex (TTM 28.89T KRW ~$20.9B) — HBM/DRAM capacity (M15X, Yongin); FY2025 capex 27.52T KRW ~$19.9B"
+    sources:
+      - {figure: "TTM capex 28,892,105M KRW; FY2025 capex 27,518,924M KRW", label: "stockanalysis.com SK Hynix cash-flow statement — KRW", url: "https://stockanalysis.com/quote/KRX/000660/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  in:
+    value: "FY2025 revenue ~$70B (97.15T KRW); TTM revenue ~$96B (132.08T KRW, HBM surge); TTM net income ~$54B (75.14T KRW)"
+    sources:
+      - {figure: "FY2025 revenue 97,146,675M KRW; TTM revenue 132,083,821M KRW; TTM net income 75,142,382M KRW", label: "stockanalysis.com SK Hynix income statement — KRW", url: "https://stockanalysis.com/quote/KRX/000660/financials/", as_of: "2026-03", confidence: high}
+  out:
+    value: "capex ~$21B/yr dominates; dividends modest (not separately fetched — low confidence on the dividend line)"
+    sources:
+      - {figure: "capex 28.89T KRW/yr the dominant outflow", label: "stockanalysis.com SK Hynix cash-flow statement", url: "https://stockanalysis.com/quote/KRX/000660/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+optionality:
+  value: "mixed — strong FCF but capex-cyclical and HBM-capacity-committed; SK chaebol control (SK Square / SK group)"
+  sources:
+    - {figure: "capex-cyclical; SK chaebol control", label: "kestrel board.yaml sk-hynix optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+gravity:
+  value: "~$70-96B/yr GROSS direct revenue — supplies the HBM the whole AI buildout needs (Nvidia primary), ~29% of DRAM revenue; gated AI-infra far larger"
+  sources:
+    - {figure: "TTM revenue ~$96B (132.08T KRW); ~29% DRAM revenue; HBM chokepoint", label: "stockanalysis.com income statement + board.yaml", url: "https://stockanalysis.com/quote/KRX/000660/financials/", as_of: "2026-03", confidence: med}
+
+# --- axes_num wave C addendum (2026-07-28, agent-derive) ---
+weight:
+  value: "~$161.5B total assets (KRW 222,828,744M at ~1380 KRW/USD, Mar 31 2026)"
+  sources:
+    - {figure: "total assets KRW 222,828,744M; total liabilities KRW 58,448,945M; equity KRW 164,379,799M (Mar 31 2026 TTM basis)", label: "stockanalysis.com SK Hynix balance sheet", url: "https://stockanalysis.com/quote/KRX/000660/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+thrust:
+  value: "~$10.6B/yr organic — capex KRW 28.89T TTM − D&A KRW 14.31T TTM = KRW 14.58T (~$10.56B at 1380). No SK Hynix-specific M&A/stakes surfaced this crawl (the Indiana $3.87-4B packaging plant and Yongin cluster tranches are organic capacity capex, already inside the capex line, not M&A/stakes)."
+  dep_only_note: "D&A reported as ONE combined line ('the cash flow statement presents these as a combined line item without separate depreciation versus amortization breakdown') — flagged per the dep-only rule. As with Micron, distortion risk is judged LOW: SK Hynix has done no major recent acquisition; its D&A is overwhelmingly physical fab/HBM-line depreciation, so blended D&A is a reasonable dep-only proxy."
+  sources:
+    - {figure: "capex TTM 28,892,105M KRW; D&A (combined) TTM 14,313,694M KRW", label: "stockanalysis.com SK Hynix cash-flow statement", url: "https://stockanalysis.com/quote/KRX/000660/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "Yongin cluster new tranche KRW 21.6T (~$15.7B), 120tn won total across phases; Indiana (West Lafayette) HBM packaging plant $3.87-4B, backed by up to $458M CHIPS direct funding + $500M loans (context for capex trajectory, already inside the capex line)", label: "kestrel artifacts/findings/memory-trio-2026-07-28.md — SK Hynix section", url: "artifacts/findings/memory-trio-2026-07-28.md", as_of: "2026-07-28", confidence: med}
+buybacks_ttm:
+  value: "$0 — no share-repurchase/treasury-stock line found in the fetched cash-flow statement (issuance of common stock KRW 57,190M TTM instead, i.e. net issuer not net buyer)"
+  sources:
+    - {figure: "no repurchase/treasury-stock line item; 'Issuance of Common Stock' 57,190M KRW TTM / 65,035M KRW FY2025", label: "stockanalysis.com SK Hynix cash-flow statement", url: "https://stockanalysis.com/quote/KRX/000660/financials/cash-flow-statement/", as_of: "2026-03", confidence: med}
+axes_num: { weight: 161.5, thrust: 10.6, gravity: 300 }  # wave-C agent-derive 2026-07-28 — gravity is a rough HBM-chokepoint estimate (TTM revenue ~$96B anchor + a premium for gating ~60-70% of Nvidia's HBM4 Vera Rubin volume per the memory-trio crawl), med-low confidence
+
+notes: "Biggest uncertainty: (1) FX — all USD figures hinge on an approximate ~1,380 KRW/USD; (2) the ~$39B board figure vs the ~$28.6B cash+STI computed from the two balance-sheet lines (broader short-term financial instruments likely bridge the gap); (3) HBM-cycle durability. Market cap ~$930B is a separate label. Wave-C addendum (07-28): landed the same day as the 'Black Tuesday' Seoul selloff (stock -14.65%, unreconciled vs one source's -11.5%) triggered by CXMT's STAR-market debut — a live repricing event that predates and is NOT yet reflected in these balance-sheet/cash-flow figures (as of Mar 31 2026). Q2 2026 earnings land 2026-07-29 (tomorrow relative to this addendum) — record operating profit guided at ~$43.7B; will materially move the operating/FCF figures in the capital block above."

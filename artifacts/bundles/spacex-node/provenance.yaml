@@ -1,0 +1,71 @@
+# Bundle — node posture + capital-flow: spacex / SpaceXAI (2026-07-26; thrust+weight refresh 2026-07-28)
+# Extends artifacts/bundles/spacex-axes/ (capitalization/optionality/gravity)
+# with posture + the 5-way capital-flow decomposition for board.yaml frontier-lab.
+# Method: WebFetch primary sources (WebSearch exhausted). Public parent SPCX
+# (Nasdaq) post-Jun-2026 IPO; balance-sheet items via kestrel's 424B4 extraction
+# (prospectus >10MB, not re-fetchable). SpaceXAI = the AI arm (Grok + Colossus)
+# inside the public parent. NB merged-entity accounting (SPCX/SpaceX/xAI) does
+# not reconcile cleanly — capital-flow figures are directional.
+# 2026-07-28 (axes_num rollout wave B): added `thrust` block (dep-only capex
+# recipe) + refreshed weight (total-assets) and gravity (compute-lease)
+# sourcing via stockanalysis.com SPCX statements. First post-IPO 10-Q not yet
+# filed (reports 2026-08-04) — figures below are the last-filed pre-IPO
+# anchors plus pro-forma notes, flagged accordingly.
+node: spacex
+name: "SpaceXAI"
+pocket: frontier-lab
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Jun-2026 IPO raised ~$75B (largest ever); Colossus grown big enough to lease to Anthropic; Grok + xAI folded in via the Feb-2026 merger."
+  sources:
+    - {figure: "IPO 06-12-2026 at $135/share, $1.77T valuation, $75B raised", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: high}
+    - {figure: "SpaceX acquired xAI (Feb 2026); xAI $250B + SpaceX $1T = $1.25T combined", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2026-02", confidence: high}
+capital:
+  available:
+    value: "WEIGHT (total assets): $102.1B is the last-filed anchor (quarter ~Mar-2026, pre-IPO); post-IPO total assets not yet findable (first 10-Q as a public co. due 2026-08-04). Fallback basis: pre-IPO total assets ($102.1B, already includes cash+investments) + the Jun-2026 IPO's ~$75B raise pro-forma -> ~$175-180B, primary/secondary split UNCONFIRMED so treat the pro-forma add as low-confidence. Cash alone ~$16B + demonstrated ~$75B raise access; market cap ~$1.52T (SPCX) is a side-label, not weight."
+    sources:
+      - {figure: "total assets $102,094M (quarter ~Mar-2026, latest filed, pre-IPO)", label: "stockanalysis.com SPCX balance sheet", url: "https://stockanalysis.com/stocks/SPCX/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "total assets $92,079M FY2025 year-end (Dec-2025); total debt $22,896M FY2025 -> $30,265M by Mar-2026; total equity ~$41.3-41.6B both periods", label: "stockanalysis.com SPCX balance sheet", url: "https://stockanalysis.com/stocks/SPCX/financials/balance-sheet/", as_of: "2025-12", confidence: high}
+      - {figure: "~$15.9B cash (down from $24.7B) end Q1-26", label: "kestrel finding (extracted from 424B4/S-1; prospectus >10MB)", url: "artifacts/findings/spacexai-public-megacap-2026-07-24.md", as_of: "2026-07", confidence: med}
+      - {figure: "IPO 06-12-2026 raised $75B (largest IPO by proceeds on record) at $1.77T valuation; primary vs secondary split not disclosed in this source", label: "Wikipedia — SpaceX", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2026-06", confidence: med}
+      - {figure: "$1.50T market cap; $113.50/share, 52-wk $108.66-$225.64; first quarterly earnings as public co. due 2026-08-04", label: "stockanalysis.com — SPCX quote", url: "https://stockanalysis.com/stocks/SPCX/", as_of: "2026-07", confidence: high}
+  operating:
+    value: "no clean consolidated burn figure — launch/Starlink are cash-generative, the xAI/Colossus arm is loss-making; merged accounting does not reconcile"
+    sources:
+      - {figure: "cash drew down $24.7B->$15.9B over ~a quarter (net outflow signal)", label: "kestrel finding (424B4/S-1)", url: "artifacts/findings/spacexai-public-megacap-2026-07-24.md", as_of: "2026-07", confidence: med}
+  deployed:
+    value: "~$18B Colossus buildout (SemiAnalysis est, ~230k GPUs) + ~$2B SpaceX->xAI investment (Jul-2025)"
+    sources:
+      - {figure: "Colossus ~230k GPUs, ~$18B buildout (SemiAnalysis)", label: "Wikipedia — Colossus (supercomputer)", url: "https://en.wikipedia.org/wiki/Colossus_(supercomputer)", as_of: "2026-06", confidence: med}
+      - {figure: "SpaceX invested $2B in xAI (Jul 2025)", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2025-07", confidence: high}
+  in:
+    value: "IPO $75B (Jun-2026); Starlink $11.4B revenue FY2025; Colossus compute leases (Anthropic ~$1.25B/mo, conflicting)"
+    sources:
+      - {figure: "Starlink $11.4B revenue FY2025, 12M subscribers (Jun 2026)", label: "Wikipedia — Starlink", url: "https://en.wikipedia.org/wiki/Starlink", as_of: "2026-06", confidence: high}
+      - {figure: "Anthropic leases all of Colossus 1 (~$1.25B/mo ~$40B through 2029; figures conflict)", label: "kestrel finding (CNBC/Bloomberg/Yahoo, not SEC-confirmed)", url: "artifacts/findings/spacex-colossus-2026-07-24.md", as_of: "2026-05", confidence: low}
+  out:
+    value: "cash drew down ~$9B over a quarter; Colossus buildout capex; xAI operating losses inside the consolidated entity"
+    sources:
+      - {figure: "cash $24.7B->$15.9B; Aug-6 lock-up 911.5M shares", label: "kestrel finding (424B4/S-1)", url: "artifacts/findings/spacexai-public-megacap-2026-07-24.md", as_of: "2026-07", confidence: med}
+optionality:
+  value: "free-ish — Musk ~82-85% voting so outside holders cannot bind him; documented cross-venture redeployment; thin post-IPO locked overlay (Aug-6-2026 lock-up, 911.5M shares) + a real execution constraint: the consolidated AI arm is burning cash at a rate in the ~$1B+/mo neighborhood (directional, not exact), which pressures the pace of buybacks/discretion even though it doesn't touch Musk's control"
+  sources:
+    - {figure: "Musk 42% equity / 82% voting control (one section states 85%)", label: "Wikipedia — SpaceX infobox", url: "https://en.wikipedia.org/wiki/SpaceX", as_of: "2025-12", confidence: high}
+    - {figure: "xAI FY2025 operating loss -$6.4B (~$533M/mo run-rate); SpaceXAI Q1-26 cash burn ~$8.8B in the quarter (~$2.9B/mo, broader than just AI-arm opex)", label: "Wikipedia — xAI (company) + kestrel finding (424B4/S-1)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2026-07", confidence: low}
+gravity:
+  value: "~$85B/yr GROSS orbiting (Starlink + launch-dependent + compute leases, now firmed up by the Google Colossus-2 lease below); + ~$18B one-time Colossus buildout stock. VA-deflated ~$30B/yr (x0.5 x0.7, DEFERRED)"
+  sources:
+    - {figure: "Starlink $11.4B + ~50% of global orbital launches 2025 + Colossus leases", label: "spacex-axes bundle", url: "artifacts/bundles/spacex-axes/provenance.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "Google lease $920M/mo (~$11.0B/yr) for 110,000 GB200 GPUs at Colossus 2, Oct-2026 through Jun-2029", label: "Wikipedia — Colossus (supercomputer)", url: "https://en.wikipedia.org/wiki/Colossus_(supercomputer)", as_of: "2026-07", confidence: med}
+    - {figure: "Starlink 12M subscribers (Jun-2026), up from 10.3M (Mar-2026) and 8.9M (Dec-2025); 2025 op income $4.4B", label: "Wikipedia — Starlink", url: "https://en.wikipedia.org/wiki/Starlink", as_of: "2026-06", confidence: high}
+thrust:
+  value: "~$14.1B/yr dep-only (FY2025 capex $20.8B minus combined D&A $6.7B); components: Colossus/Colossus-2 buildout (110k GB200 GPUs, ~1M-GPU target) + continued Starlink constellation capex, not separately broken out in filings. 2026 run-rate is almost certainly materially higher (capex nearly doubled FY24->FY25) but the first post-IPO 10-Q isn't filed yet (due 2026-08-04) so this is the best-available anchor. Buybacks: $0 (none, per Ben's brief)."
+  basis: "Recipe: capex - D&A (dep-only intended; filings report combined D&A, not split — same convention used elsewhere on the board, e.g. Intel). SpaceX's $2B equity contribution into xAI's Jul-2025 raise predates the Feb-2026 SpaceX-xAI merger and is NOT added as a separate stake — post-merger it's already inside the same consolidated capex/investing base, so counting it again would double-count."
+  sources:
+    - {figure: "FY2025 capex -$20,788M; combined D&A $6,701M -> dep-only thrust ~$14.09B", label: "stockanalysis.com SPCX cash-flow statement", url: "https://stockanalysis.com/stocks/SPCX/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "FY2024 capex -$11,163M; combined D&A $3,824M -> capex nearly doubled YoY into FY2025", label: "stockanalysis.com SPCX cash-flow statement", url: "https://stockanalysis.com/stocks/SPCX/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "Colossus 2: 110,000 GB200 GPUs; Colossus overall targeted toward 1M+ GPUs; third building purchased Dec-2025 to push training capacity toward ~2GW", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2025-12", confidence: med}
+    - {figure: "SpaceX contributed $2B into the $5B equity leg of xAI's Jul-2025 $10B raise (pre-merger; now consolidated, not added separately)", label: "Wikipedia — xAI (company)", url: "https://en.wikipedia.org/wiki/XAI_(company)", as_of: "2025-07", confidence: high}
+    - {figure: "xAI capex $7.7B in Q1-26 alone (cash $24.7B->$15.9B in the quarter) — directional confirmation the FY2025 full-year capex anchor is still climbing", label: "kestrel finding (424B4/S-1 extraction)", url: "artifacts/findings/spacexai-public-megacap-2026-07-24.md", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty: merged-entity accounting (consolidated SPCX vs SpaceX vs xAI standalone) does not reconcile, so operating/out figures are directional. The Anthropic-Colossus lease terms conflict across CNBC/Bloomberg/Yahoo and are not SEC-confirmed. Thrust and weight both rest on the last PRE-IPO filed quarter (~Mar-2026) since SpaceX's first quarterly report as a public company isn't due until 2026-08-04 — revisit both once that lands. D&A used un-split (combined depreciation+amortization) per filing limits, matching board convention elsewhere (Intel)."

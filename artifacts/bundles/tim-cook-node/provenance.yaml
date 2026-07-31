@@ -1,0 +1,48 @@
+# Bundle — node posture + capital-flow: tim-cook (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Hired CEO, OUTGOING — succession to John Ternus
+# effective 2026-09-01; Cook stays on as executive chairman on policy.
+node: tim-cook
+name: "Tim Cook"
+kind: person
+asof: 2026-07-26
+posture:
+  value: consolidating
+  basis: "Handing over the CEO seat on a fixed, pre-announced clock (2026-09-01) while Apple keeps outsourcing the model layer to Google (Apple x Gemini) rather than building its own — a leadership and strategic hand-off, not expansion or retreat: revenue/net income are still growing, only the House is changing hands."
+  sources:
+    - {figure: "condition: in-succession; from tim-cook to john-ternus, effective 2026-09-01; Cook stays executive chairman on policy — 'a regent retained for foreign affairs'", label: "kestrel board.yaml apple succession block", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "Apple announced April 20, 2026 that Cook steps down as CEO Sept 1, 2026, becoming Executive Chairman; John Ternus (SVP Hardware Engineering) becomes CEO", label: "Wikipedia — Tim Cook", url: "https://en.wikipedia.org/wiki/Tim_Cook", as_of: "2026-04", confidence: high}
+    - {figure: "outsources the model layer to Google (Apple x Gemini) while its House changes hands", label: "kestrel board.yaml apple gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+capital:
+  available:
+    value: "~$2.6B personal net worth (Dec-2025, Forbes) — modest vs. Apple's ~$416B/yr FY25 revenue; built mainly from 14 years of RSU vesting as CEO, not founder equity"
+    sources:
+      - {figure: "net worth estimated at $2.6 billion (Dec-2025, Forbes)", label: "Wikipedia — Tim Cook", url: "https://en.wikipedia.org/wiki/Tim_Cook", as_of: "2025-12", confidence: low}
+  operating:
+    value: "still directs Apple's corporate capital as CEO until 2026-09-01: FY2025 revenue $416B, net income $112B; cash+ST-investments ~$68.5B (Mar-2026 qtr: cash $45.6B + ST investments $22.9B); TTM operating cash flow $140.2B, FCF $129.2B — but total debt $84.7B now exceeds cash+STI (net-cash-negative), a buyback-funded leverage build"
+    sources:
+      - {figure: "FY2025 (ended Sep 27 2025) revenue $416B, net income $112B, total assets $359B, total equity $74B", label: "Wikipedia — Apple Inc.", url: "https://en.wikipedia.org/wiki/Apple_Inc.", as_of: "2025-09", confidence: high}
+      - {figure: "cash & equivalents $45,572M + short-term investments $22,935M = ~$68.5B; total debt $84,711M (Q2 2026, ended Mar 28 2026)", label: "stockanalysis.com AAPL balance sheet", url: "https://stockanalysis.com/stocks/AAPL/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+      - {figure: "TTM (to Mar 28 2026) operating cash flow $140,222M, free cash flow $129,174M", label: "stockanalysis.com AAPL cash-flow statement", url: "https://stockanalysis.com/stocks/AAPL/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "as CEO, chose to outsource the model layer to Google (Apple Intelligence x Gemini) rather than fund an independent frontier build — a capital-conservation strategic bet, distinct from hyperscaler peers' capex race"
+    sources:
+      - {figure: "outsources the model layer to Google (Apple x Gemini)", label: "kestrel board.yaml apple gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  in:
+    value: "no single recent annual compensation figure found on Wikipedia; wealth accumulation has been RSU-vesting-driven over a 14-year tenure rather than one large disclosed package"
+    sources:
+      - {figure: "no itemized recent annual comp figure on page", label: "Wikipedia — Tim Cook", url: "https://en.wikipedia.org/wiki/Tim_Cook", as_of: "2025-12", confidence: low}
+  out:
+    value: "sold over 5 million Apple shares for ~$750M in Aug-2021 (10-year CEO anniversary); stated in March 2015 an intent to donate his fortune to charity, though it's unclear whether he formally joined the Giving Pledge"
+    sources:
+      - {figure: "sold over five million shares for ~$750 million, Aug-2021, marking ten years as CEO", label: "Wikipedia — Tim Cook", url: "https://en.wikipedia.org/wiki/Tim_Cook", as_of: "2021-08", confidence: med}
+      - {figure: "stated in March 2015 he planned to donate his fortune to charity; formal Giving Pledge status unconfirmed", label: "Wikipedia — Tim Cook", url: "https://en.wikipedia.org/wiki/Tim_Cook", as_of: "2015-03", confidence: low}
+optionality:
+  value: "constrained and winding down on a fixed clock — succession to Ternus already announced and dated (2026-09-01); post-transition Cook becomes Executive Chairman 'on policy' per kestrel board notes, a scope narrower than CEO but not yet quantified"
+  sources:
+    - {figure: "condition in-succession; effective 2026-09-01; 'Cook stays as executive chairman on policy — a regent retained for foreign affairs'", label: "kestrel board.yaml apple succession block", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+gravity:
+  value: "~$416B/yr GROSS FY25 Apple revenue ecosystem still moves on his say-so through 2026-08-31, then transfers to Ternus"
+  sources:
+    - {figure: "revenue US$416 billion (FY2025, ended Sep 27 2025)", label: "Wikipedia — Apple Inc.", url: "https://en.wikipedia.org/wiki/Apple_Inc.", as_of: "2025-09", confidence: high}
+notes: "Biggest uncertainty: the post-2026-09-01 Executive Chairman role's actual scope and influence is undefined ('on policy' per kestrel board note) — treat any post-transition authority estimate as speculative until observed. Posture judged as consolidating rather than retrenching: Apple's revenue/net income/cash flow are all still growing, so this reads as an orderly leadership hand-off, not a pullback."

@@ -1,0 +1,125 @@
+# Bundle — crawl finding memory-trio-2026-07-28
+artifact: artifacts/findings/memory-trio-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebSearch was pre-exhausted on all three lanes (session-shared budget)
+  before a single query ran. Three parallel sonnet subagents ran WebFetch
+  against Google News RSS search feeds (news.google.com/rss/search) and
+  DuckDuckGo HTML search (html.duckduckgo.com/html) as fallback, resolving
+  to publisher URLs where possible. Google News' own redirect links
+  (news.google.com/rss/articles/...) essentially never resolved to article
+  body text via WebFetch (empty JS shell) — those items are cited as RSS
+  metadata only (title/source/date), capped at medium confidence. High =
+  full article body or primary IR/press-release page directly fetched.
+  Medium = RSS/search-snippet metadata only, single outlet or a small
+  convergent cluster. Thin = single outlet, headline-only, unclear
+  methodology, or an uncross-verified outlier figure. Several outlets
+  (chosun.com, techtimes.com, reuters.com, wccftech.com on some URLs)
+  blocked direct WebFetch (403) — their claims carried at RSS/snippet
+  confidence only. No URL or figure fabricated; explicit gaps are marked
+  "not found" in the finding rather than guessed.
+queries:
+  google_news_rss:
+    - "Samsung HBM4 Nvidia qualification 2026"
+    - "Samsung HBM market share SK Hynix 2026"
+    - "Samsung HBM capacity expansion Pyeongtaek 2026"
+    - "Samsung DRAM price increase 2026"
+    - "Samsung CXMT China DRAM competition"
+    - "Samsung Electronics Q2 2026 earnings memory division"
+    - "SK Hynix HBM4 Nvidia qualification 2026"
+    - "SK Hynix Q2 2026 earnings record profit"
+    - "SK hynix sold out 2026 capacity"
+    - "SK hynix three year HBM shortage CFO earnings call"
+    - "SK hynix Reportedly to Supply About Two-Thirds of NVIDIA HBM4"
+    - "Micron HBM4 Nvidia qualification 2026"
+    - "Micron fiscal Q3 2026 earnings DRAM HBM"
+    - "Micron capacity expansion CHIPS Act fab 2026"
+    - "Micron China ban market status 2026"
+    - "Micron HBM4 Nvidia Rubin qualified cleared June 2026"
+    - "\"three-year HBM deficit\" OR \"HBM shortage\" three year"
+    - "DRAM price increase 2026 contract pricing"
+    - "CXMT \"three-year HBM deficit\""
+  duckduckgo_html:
+    - "Samsung 38.6% DRAM market share SK Hynix 2026"
+    - "Samsung Electronics Q2 2026 operating profit won memory division"
+    - "Samsung HBM market share 2026 finance.biggo.com reclaim lead"
+    - "Samsung $73 billion AI chip investment 2026 Pyeongtaek Xi'an"
+    - "winbuzzer Samsung Nvidia HBM4 volume order paid evaluation"
+    - "HBM shortage persist 2028 Morgan Stanley OR TrendForce OR SemiAnalysis structural deficit"
+    - "SK hynix Q2 2026 operating profit $43.7 billion record"
+    - "\"Black Tuesday\" Seoul stocks crash chip rout SK hynix"
+    - "SK hynix HBM market share 2026 percent"
+    - "SK hynix M15X Yongin cluster Indiana HBM capacity investment 2026"
+    - "SK hynix CXMT China competition response statement executive"
+    - "SK hynix market cap $1 trillion July 2026"
+    - "theinvestor.co.kr SK hynix HBM demand outpacing supply three years"
+direct_sources_fetched:
+  - "https://winbuzzer.com/2026/07/17/samsung-reportedly-awaits-nvidia-hbm4-volume-order-xcxwbn/ (Samsung — Nvidia HBM4 paid-evaluation status, high)"
+  - "https://thenextweb.com/news/samsung-q2-2026-operating-profit-record-ai-memory (Samsung Q2 2026 headline P&L + DRAM/NAND sequential pricing, high)"
+  - "https://pccentral.net/samsung-leads-dram-market-q1-2026-sk-hynix-hbm-cxmt-nand/ (Samsung/CXMT Q1 2026 DRAM revenue share, high)"
+  - "https://www.koreatimes.co.kr/business/companies/20260726/sk-hynix-expected-to-post-record-437-bil-in-q2-operating-profit-report (SK Hynix Q2 2026 preview, high)"
+  - "https://www.koreatimes.co.kr/economy/20260728/black-tuesday-seoul-stocks-crash-over-10-as-chip-rout-deepens (07-28 Seoul selloff, high)"
+  - "https://www.theinvestor.co.kr/article/10724368 (SK Hynix Q1 2026 results + three-year HBM deficit guidance, high)"
+  - "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter (Micron Q3 FY26 press release, high)"
+  - "https://investors.micron.com (Micron IR homepage — confirms latest report + KeyBanc 08-10 investor event, high)"
+items:
+  # --- SAMSUNG ---
+  - {id: sam-hbm-share-jan26, figure: "SK Hynix 55% vs Samsung 27% HBM share", url: "https://www.chosun.com/english/industry-en/2026/01/29/", label: "Chosun (snippet — chosun.com blocked direct fetch)", as_of: "2026-01-29", confidence: medium}
+  - {id: sam-hbm-share-2027-ubs, figure: "UBS forecasts Samsung reaching 41% HBM bit-capacity share vs SK Hynix 39% in 2027 (first-ever Samsung lead); Bernstein projects 45% by 2028", url: "https://finance.biggo.com/news/b05c3c02-a1ec-4790-b34d-9ea83df02f47", label: "finance.biggo.com — Samsung 'poised to reclaim HBM market lead'", as_of: "2026-07-16", confidence: medium}
+  - {id: sam-hbm4-eval-stage, figure: "Samsung still at Nvidia 'paid-evaluation' stage for HBM4 as of 07-17, no confirmed volume-production order; SK Hynix deepened Nvidia tie, Micron HBM3E-focused", url: "https://winbuzzer.com/2026/07/17/samsung-reportedly-awaits-nvidia-hbm4-volume-order-xcxwbn/", label: "winbuzzer.com — direct fetch, full text", as_of: "2026-07-17", confidence: high}
+  - {id: sam-hbm4-qualified-contra, figure: "Contra-report: Jensen Huang publicly validated Samsung/SK Hynix/Micron as qualified HBM4 Vera Rubin suppliers; Samsung began HBM4 mass production Feb 2026 at 11.7 Gbps/pin", url: "https://www.investing.com/", label: "Investing.com + blockonomi.com (RSS/snippet)", as_of: "2026-06-05", confidence: medium}
+  - {id: sam-hbm4e-1b-sales, figure: "Samsung passed $1B cumulative HBM4E sales by 06-23; first HBM4E 12-stack samples shipped May 2026, internal test yields >70%", url: "https://www.chosun.com/", label: "Chosun (snippet, chosun.com blocked direct fetch)", as_of: "2026-06-23", confidence: medium}
+  - {id: sam-capex-2026, figure: "2026 capex raised to ~$73.24B (110tn won), +22% YoY, announced 03-19; Pyeongtaek/Yongin (Korea) + Taylor TX named; Xi'an NOT substantiated", url: "n/a", label: "Analytics Insight + Reuters coverage (search-synthesis, not raw fetch)", as_of: "2026-03-19", confidence: medium}
+  - {id: sam-giheung-fab, figure: "New Giheung DRAM fab targeting 100K wafers/month 'to ride the HBM wave'", url: "https://finance.biggo.com/", label: "finance.biggo.com (RSS title)", as_of: "2026-07-15", confidence: thin}
+  - {id: sam-pricing-q2-2026, figure: "Q2 2026 sequential contract pricing: DRAM +44%, NAND +53% QoQ", url: "https://thenextweb.com/news/samsung-q2-2026-operating-profit-record-ai-memory", label: "TheNextWeb — direct fetch, full text", as_of: "2026-07-08", confidence: high}
+  - {id: sam-q3-hike-sought, figure: "Samsung seeking a further ~20% Q3 DRAM price hike", url: "n/a", label: "TrendForce + Korea Herald + Android Headlines + Aju Press + Seeking Alpha + TradingKey (multi-outlet, RSS-title level)", as_of: "2026-07-03", confidence: thin}
+  - {id: sam-vivo-oppo-reject, figure: "Vivo and Oppo reportedly rejected Samsung's latest DRAM price hike — 'crisis continues to escalate'", url: "n/a", label: "Notebookcheck + Memeburn (RSS titles)", as_of: "2026-07-21", confidence: thin}
+  - {id: sam-cxmt-response-notfound, figure: "No explicit 2026 Samsung statement price-matching or directly responding to CXMT found this crawl", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  - {id: sam-vnand-900layer, figure: "'World's first' 900-layer V-NAND announcement, framed by outlet as a competitive answer to CXMT's IPO push", url: "https://finance.biggo.com/", label: "finance.biggo.com (search-synthesis)", as_of: "2026-05-25", confidence: medium}
+  - {id: sam-q2-2026-results, figure: "Q2 2026 operating profit 89.4tn won (~$58.4B), +19x YoY, 3rd consecutive record; revenue 171tn won (below ~173tn won consensus); stock fell >6% same day; full divisional detail due 07-30", url: "https://thenextweb.com/news/samsung-q2-2026-operating-profit-record-ai-memory", label: "TheNextWeb — direct fetch, full text", as_of: "2026-07-08", confidence: high}
+  - {id: sam-89b-error-flag, figure: "A widely-run '$89B operating profit' headline is a likely won/dollar mix-up vs. the correctly-converted $58.4B figure — do not reuse", url: "n/a", label: "Cross-check flag (CNBC-TV18 RSS title vs. TheNextWeb direct fetch)", as_of: "2026-07-09", confidence: thin}
+  # --- SK HYNIX ---
+  - {id: skh-hbm-share, figure: "HBM share 50-62% range depending on source; best-sourced figure SK Hynix 55% (vs Samsung 27%)", url: "https://www.chosun.com/english/industry-en/2026/01/29/", label: "Chosun (snippet)", as_of: "2026-01-29", confidence: medium}
+  - {id: skh-hbm4-vera-rubin-share, figure: "SK Hynix first to clear Nvidia HBM4 Vera Rubin qualification, reportedly commands 60-70% of that volume vs Samsung 25-30%", url: "n/a", label: "TechTimes + StockWireX + TechRadar + Yahoo Finance CA (search-snippet level, no full article)", as_of: "2026-06-05", confidence: medium}
+  - {id: skh-m15x-cheongju, figure: "M15X (Cheongju) DRAM+HBM4 line begins operations May 2026 — interim capacity bridge", url: "n/a", label: "RSS title only", as_of: "2026-05", confidence: thin}
+  - {id: skh-yongin-cluster, figure: "Yongin cluster: 21.6tn won (~$15.7B) new investment tranche; 120tn won total across all phases; Phase 1 targeted May 2027", url: "n/a", label: "AJU Press (search-snippet)", as_of: "2026-02-25", confidence: medium}
+  - {id: skh-indiana-packaging, figure: "$3.87-4B Indiana (West Lafayette) HBM packaging plant — first US advanced-packaging fab, construction underway late Feb 2026, targeting operations by end-2028, ~7,000 jobs; CHIPS: up to $458M direct + $500M loans, ~25% ITC", url: "n/a", label: "Trade press cluster (search-snippet)", as_of: "2026-02", confidence: medium}
+  - {id: skh-revenue-concentration, figure: "KB Securities analyst Kim Dong-won: sales to global tech companies and AI datacenter operators expected to be ~70% of SK Hynix Q2 2026 total revenue", url: "https://www.koreatimes.co.kr/business/companies/20260726/sk-hynix-expected-to-post-record-437-bil-in-q2-operating-profit-report", label: "Korea Times — direct fetch, full text", as_of: "2026-07-26", confidence: high}
+  - {id: skh-tpu-conflict, figure: "SK Hynix HBM 'over half' of Google TPU stack (Chosun) directly conflicts with a separate claim crediting Samsung as primary Google TPU HBM3E supplier — unreconciled, do not cite either as settled", url: "n/a", label: "Conflicting snippets — flag only", as_of: "2025-11-28", confidence: thin}
+  - {id: skh-q1-2026-results, figure: "Q1 2026: sales 52.6tn won (~$39B), operating profit 37.6tn won (+405% YoY), op. margin ~72%, 4th consecutive record quarter; CFO Kim Woo-hyun cited AI-infrastructure investment; VP Park Joon-deok: favorable pricing conditions to continue", url: "https://www.theinvestor.co.kr/article/10724368", label: "theinvestor.co.kr — direct fetch, full text", as_of: "2026-04-23", confidence: high}
+  - {id: skh-q2-2026-consensus, figure: "Q2 2026 consensus (reports 07-29): operating profit 64.1tn won (~$43.7B), all-time high, beats prior FY2025 annual record of 47.2tn won; sales 84.1tn won; margin 75-77%", url: "https://www.koreatimes.co.kr/business/companies/20260726/sk-hynix-expected-to-post-record-437-bil-in-q2-operating-profit-report", label: "Korea Times + Yonhap (convergent, direct fetch on Korea Times)", as_of: "2026-07-26", confidence: high}
+  - {id: skh-ddr4-price-outliers, figure: "Unverified outlier claims: 8Gb DDR4 chip $1.30->$13 in one year; DRAM spot prices +~700% over past year — flagged, not independently confirmed", url: "n/a", label: "Abit.ee + Tech-Insider (thin, unverified)", as_of: "2026-03", confidence: thin}
+  - {id: skh-black-tuesday, figure: "SK Hynix stock fell ~14.65% (one source: -11.5%, unreconciled) in a 07-28 'Black Tuesday' Seoul selloff; KOSPI -10.84% with circuit breaker; direct cause: CXMT's 07-27 STAR-market debut, compounded by Wall St semiconductor selloff (Philly SOX -2.23%) and Middle East tension", url: "https://www.koreatimes.co.kr/economy/20260728/black-tuesday-seoul-stocks-crash-over-10-as-chip-rout-deepens", label: "Korea Times — direct fetch, full text", as_of: "2026-07-28", confidence: high}
+  - {id: skh-lpddr6-china, figure: "SK Hynix reportedly targeting Chinese clients with advanced LPDDR6 to counter CXMT's domestic gains; CXMT Q1 revenue ~1/5 of SK Hynix's level", url: "n/a", label: "Wccftech (URL unresolved, 403 on direct fetch — DDG snippet only)", as_of: "2026-07", confidence: thin}
+  - {id: skh-marketcap-1t, figure: "SK Hynix market cap crossed $1T for the first time 05-27-2026 (2nd Korean firm after Samsung); briefly overtook Samsung as Korea's most valuable company in early July; broke $1T again 07-26, just before the 07-28 crash", url: "n/a", label: "Reuters + Seoul E-Daily + TradingKey (search-snippet)", as_of: "2026-07-26", confidence: medium}
+  - {id: skh-three-year-deficit-origin, figure: "'Three-year HBM deficit' traced to SK Hynix's own Q1 2026 earnings call (04-23) — company guidance, not analyst estimate. CFO Kim Woo-hyun + VP Park Joon-deok guided HBM demand outpacing supply for at least the next three years", url: "https://www.theinvestor.co.kr/article/10724368", label: "theinvestor.co.kr — direct fetch, full text", as_of: "2026-04-23", confidence: high}
+  # --- MICRON ---
+  - {id: mic-hbm4-excluded-then-cleared, figure: "Micron reportedly excluded from early Vera Rubin HBM4 slots (Feb-Mar 2026), then reinstated alongside Samsung/SK Hynix by June — Jensen Huang quoted confirming all three cleared", url: "n/a", label: "TechPowerUp + Wccftech + Castellano + KED Global (Feb-Mar); Bloomberg + Seeking Alpha + Tech Times (Jun) — RSS/snippet convergent", as_of: "2026-06-04", confidence: medium}
+  - {id: mic-hbm4-high-volume, figure: "'HBM4, built on 1-beta DRAM technology, is in high-volume shipments'; HBM4E development underway", url: "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", label: "Micron IR — Q3 FY26 press release, direct fetch, full text", as_of: "2026-06-24", confidence: high}
+  - {id: mic-us-200b-commitment, figure: "$200B total US manufacturing commitment announced 06-12-2025 with President Trump", url: "n/a", label: "NIST.gov + Manufacturing Dive", as_of: "2025-06-12", confidence: medium}
+  - {id: mic-ny-megafab, figure: "$100B New York (Clay) Megafab site groundbreaking 01-16-2026; second Idaho (Boise) fab accelerated (11-11-2025 update)", url: "n/a", label: "Seeking Alpha + Tom's Hardware (RSS/snippet)", as_of: "2026-01-16", confidence: medium}
+  - {id: mic-singapore-24b, figure: "$24B Singapore plant investment, explicitly framed as 'AI boom strains global memory supply'", url: "n/a", label: "CNBC", as_of: "2026-01-27", confidence: medium}
+  - {id: mic-chips-6.1b, figure: "CHIPS Act award $6.1B finalized 12-10-2024 for Idaho + New York projects (separate $275M CHIPS figure appeared once, unreconciled to the $6.1B total)", url: "n/a", label: "CNBC + NIST.gov + NY Governor's office (convergent)", as_of: "2024-12-10", confidence: medium}
+  - {id: mic-q3-fy26-results, figure: "Q3 FY26 (reported 06-24-2026): revenue $41.456B (vs $23.86B prior quarter, $9.30B year-ago); GAAP gross margin 84.6%; GAAP net income $28.243B; GAAP diluted EPS $24.67; Q4 FY26 guidance revenue $50.0B +/- $1.0B, gross margin ~86%", url: "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", label: "Micron IR — direct fetch, full text", as_of: "2026-06-24", confidence: high}
+  - {id: mic-segment-revenue, figure: "Q3 FY26 segment revenue: Cloud Memory BU $13.769B; Core Data Center BU $11.524B; Mobile & Client BU $11.521B; Automotive & Embedded BU $4.634B — no separate DRAM/NAND/HBM dollar breakout disclosed", url: "https://investors.micron.com/news-releases/news-release-details/micron-technology-inc-reports-record-results-third-quarter", label: "Micron IR — direct fetch, full text", as_of: "2026-06-24", confidence: high}
+  - {id: mic-sold-out-claims, figure: "'Sold out' HBM/2026 framing recurs across Yahoo Finance, TradingKey, Startup Fortune — not cross-verified against Micron's own press release language", url: "n/a", label: "Yahoo Finance + TradingKey + Startup Fortune (RSS/snippet)", as_of: "2026-06-21", confidence: thin}
+  - {id: mic-china-exit-2023, figure: "Micron exited China's server/datacenter chip market entirely (2023 ban aftermath) — four independent outlets convergent", url: "n/a", label: "Reuters + Tom's Hardware + Business Times + TradingView (convergent, RSS/snippet)", as_of: "2025-10-17", confidence: medium}
+  - {id: mic-cxmt-response-notfound, figure: "No direct Micron statement or action responding to CXMT found this crawl", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-07-28", confidence: thin}
+  - {id: mic-marketcap-1.37t, figure: "Micron market cap $1.37T cited 06-25-2026, briefly overtaking Meta and Tesla by market cap", url: "n/a", label: "MLQ.ai + Moneycontrol (convergent, RSS/snippet)", as_of: "2026-06-25", confidence: medium}
+  - {id: mic-next-earnings-notfound, figure: "Next earnings date not found; only a KeyBanc investor-conference appearance (08-10-2026) located on IR site; fiscal Q4 (ends ~Aug 2026) would typically report late September 2026, unconfirmed", url: "https://investors.micron.com", label: "Micron IR homepage — direct fetch", as_of: "2026-07-28", confidence: thin}
+  - {id: mic-dram-pricing-context, figure: "Q1 2026 DRAM industry revenue +81% QoQ; Q3 2026 guidance: server DRAM contract prices +13-18% QoQ (wider analyst claims of +30-40% circulating, not Micron-specific)", url: "n/a", label: "TrendForce (RSS/snippet)", as_of: "2026-07-09", confidence: medium}
+notes: >-
+  Confidence key matches prior bundle convention (e.g.
+  tsmc-capacity-race-2026-07-28, google-capex-2026-07-27). Biggest
+  cross-actor tension left unresolved: Samsung vs. SK Hynix HBM
+  market-share figures conflict depending on outlet and whether "HBM
+  share" or "overall DRAM revenue share" is being cited — treat any single
+  percentage with caution and prefer the UBS 2027-forecast figure
+  (sam-hbm-share-2027-ubs) as the most analytically grounded one found.
+  The DRAM/NAND price-increase percentage for 2026 YTD is genuinely
+  unsettled across all three crawls — see the finding's trio-level
+  section. The single highest-value fact this crawl surfaced is
+  time-sensitive: the 2026-07-28 "Black Tuesday" Seoul selloff
+  (skh-black-tuesday) landed on the crawl date itself and should be
+  re-checked for durability once SK Hynix's 07-29 earnings and Samsung's
+  07-30 earnings print.

@@ -1,0 +1,31 @@
+# Bundle — axis estimates: nvidia (2026-07-25)
+# The cited-source appendix for board.yaml nvidia {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted, 200/200, this
+  session). Nvidia IR press releases cross-checked against stockanalysis.com
+  (agree to the dollar); gravity reconstructed from Nvidia DC run-rate +
+  kestrel capex threads. Gravity normalized to annual value-added-dependent
+  $ per board.yaml axes.gravity rule (× ~0.5 VA share × dependency share).
+
+capitalization:
+  value: "~$80.6B readily-liquid; ~$200-300B commandable/12mo; market cap ~$5T (separate label)"
+  sources:
+    - {figure: "cash $13.2B + marketable securities $67.3B = ~$80.6B; total debt $8.5B", label: "Nvidia IR — Q1 FY2027 results (ended Apr 26 2026)", url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", as_of: "2026-04", confidence: high}
+    - {figure: "cash $13,237M + ST investments $67,335M = $80,572M; total debt $8,470M (cross-check)", label: "stockanalysis.com NVDA balance sheet", url: "https://stockanalysis.com/stocks/NVDA/financials/balance-sheet/?p=quarterly", as_of: "2026-04", confidence: high}
+    - {figure: "FY2026 FCF $96.7B; TTM FCF $119.1B", label: "stockanalysis.com NVDA cash-flow statement", url: "https://stockanalysis.com/stocks/NVDA/financials/cash-flow-statement/", as_of: "2026-04", confidence: high}
+    - {figure: "market cap ~$5.009T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com — Nvidia", url: "https://companiesmarketcap.com/nvidia/marketcap/", as_of: "2026-07", confidence: med}
+optionality:
+  value: "free (dominant); ~$30B constrained strategic-equity slice"
+  sources:
+    - {figure: "$30.2B marketable equity securities (strategic stakes in own buyers); $80B buyback authorization; dividend $0.25", label: "Nvidia IR — Q1 FY2027 results", url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-first-quarter-fiscal-2027", as_of: "2026-04", confidence: high}
+    - {figure: "circular-financing loops; 10-Q investments in own buyers (constrained slice)", label: "kestrel threads ai-circular-financing-risk / nvidia-order-book (internal, reconstructed)", url: "attention/threads.yaml", as_of: "2026-07", confidence: low}
+gravity:
+  value: "gross ~$1.0T/yr -> ~$375B/yr value-added-dependent (× 0.5 × ~0.75)"
+  sources:
+    - {figure: "FY2026 revenue $215.9B, Data Center $193.7B; Q1 FY27 DC $75.2B/qtr (~$300B run-rate)", label: "Nvidia IR — FY2026 + Q1 FY2027 results", url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-fourth-quarter-and-fiscal-2026", as_of: "2026-04", confidence: high}
+    - {figure: "~$725B combined 2026 hyperscaler capex that lands on Nvidia", label: "kestrel thread hyperscaler-capex-big-picture (sourced to Q2-2026 hyperscaler earnings)", url: "attention/threads.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "~$1T Blackwell+Rubin order book (management aggregate, NOT audited backlog)", label: "kestrel nvidia-order-book + Nvidia Q3 FY2026 results", url: "https://nvidianews.nvidia.com/news/nvidia-announces-financial-results-for-third-quarter-fiscal-2026", as_of: "2026-07", confidence: low}
+    - {figure: "custom-silicon substitution real but inference-only (dependency-haircut basis)", label: "kestrel thread in-house-silicon (internal reasoning anchor)", url: "attention/threads.yaml", as_of: "2026-07", confidence: low}
+uncertainty: "Gravity dependency share (CUDA lock vs substitution) swings VA-dependent gravity ~$260-450B. Capitalization is the solid axis (primary 10-Q, two-source cross-check)."

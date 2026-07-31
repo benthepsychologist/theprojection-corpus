@@ -1,0 +1,52 @@
+# Bundle — state node: france (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml france (rank state, sphere fr,
+# tier institutional-memory; court-favored champion in Mistral). Fiscal reading:
+# available = FX reserves (euro member — no independent monetary issuance),
+# operating = govt budget, deployed = govt debt, in = tax revenue, out =
+# expenditure. Gravity = GDP. Method: WebFetch primary (WebSearch exhausted) —
+# Wikipedia aggregate lists (IMF base).
+node: france
+name: "France"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Forced fiscal consolidation under EU pressure — a -5.96% deficit (2024) and 116%-of-GDP debt put France in the EU excessive-deficit procedure; high-tax high-spend state (57% expenditure/GDP) trying to rein in amid political paralysis. Backs national AI champion Mistral."
+  sources:
+    - {figure: "2024 deficit -$189.18B (-5.96% of GDP); expenditure 57.24% of GDP (highest of the majors)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+    - {figure: "gross govt debt 116.0% of GDP (2025), net 108.8%", label: "Wikipedia — List of countries by government debt (IMF 2025)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: high}
+
+capital:
+  available:
+    value: "~$273B FX reserves (Nov-2024) — but France is a euro member: it CANNOT issue its own currency; monetary capacity sits with the ECB, not Paris. No sovereign wealth fund."
+    sources:
+      - {figure: "foreign-exchange reserves incl. gold $272,693M (1 Nov 2024)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2024-11", confidence: high}
+  operating:
+    value: "~$1.82T annual govt expenditure / ~$1.63T revenue (2024) — one of the largest state footprints as a share of GDP"
+    sources:
+      - {figure: "2024 revenue $1,627.36B (51.27% of GDP); expenditure $1,816.85B (57.24% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt 116.0% of GDP (2025) ≈ ~$3.9-4.2T nominal (derived from GDP × ratio); net 108.8%"
+    sources:
+      - {figure: "gross debt 116.0% of GDP (2025); nominal derived from IMF 2026 GDP ~$3.60T", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+  in:
+    value: "~$1.63T tax revenue (2024, 51.3% of GDP — very high tax take)"
+    sources:
+      - {figure: "2024 revenue $1,627.36B (51.27% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$1.82T expenditure (2024); deficit -$189B (-5.96% of GDP)"
+    sources:
+      - {figure: "2024 expenditure $1,816.85B; deficit -$189.18B (-5.96% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "constrained — euro membership removes independent monetary policy (no devalue/print; ECB-bound), 116%-of-GDP debt and the EU excessive-deficit procedure bind fiscal room, and domestic politics block consolidation. Least free of the Western majors."
+  sources:
+    - {figure: "euro member (no own currency) + gross debt 116.0% of GDP + EU excessive-deficit procedure", label: "Wikipedia — govt debt list + analytical (eurozone membership)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: med}
+
+gravity:
+  value: "~$3.60T GDP (nominal, IMF 2026) — mid single-state gravity; the state's gravity IS its GDP"
+  sources:
+    - {figure: "nominal GDP $3,596,094M (IMF 2026); $3,366,316M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Mid graded sovereignty (institutional-memory tier; UNSC seat + nuclear + EU-core weight above its GDP). Biggest uncertainty is whether consolidation actually lands — political paralysis has repeatedly stalled deficit reduction, so the 'consolidating' posture is intent more than achievement. Nominal debt is derived (ratio×GDP), flagged low; flow figures IMF-sourced high."

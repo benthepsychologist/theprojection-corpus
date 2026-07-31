@@ -1,0 +1,24 @@
+# Per-run fetch manifest — /daily 2026-07-22, ai lens (interim agentic mode)
+# NOTE: no /daily ran 2026-07-21, so this run's window spans THREE digest-days:
+# the 07-20 finalize tail, the full missed 07-21 (reconstructed), and 07-22 so far.
+source_id: agentic-web-sweep   # interim: sonnet-class subagent web sweeps; no collectors built yet
+params:
+  lens: ai
+  window_start: "2026-07-20T18:00:00-04:00"
+  as_of: "2026-07-22T08:15:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.ai — orgs, people, release_watch, themes)
+    - attention/threads.yaml (8 open ai threads)
+  sweep_split: two subagents (orgs/people/release-watch + themes/threads) —
+    preempting the 07-20 run's web-search budget exhaustion (ROADMAP open item)
+  exclusions: [reddit, pr-newswire]
+fetched_at: "2026-07-22T12:50:00Z"
+items_file: buffer/2026-07-22-ai-sweep.jsonl   # 23 items, day-bucketed (5am ET boundaries)
+notes: >-
+  Five 07-21 items rest on low-authority roundup blogs (BuildFastWithAI, Tech
+  Startups, AI Dispatch) — flagged inline in the buffer and carried into
+  digests with caveats where load-bearing (the White House 30-day review
+  framework is corroborated directionally by Bloomberg's Altman-briefing
+  report). Duplicate story angles merged at curation (HF breach: TechCrunch +
+  Unite.AI). Coverage-critic sources for the same window are logged in
+  coverage-log.md, not here.

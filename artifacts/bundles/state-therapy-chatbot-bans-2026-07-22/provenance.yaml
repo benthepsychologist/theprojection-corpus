@@ -1,0 +1,29 @@
+# Bundle — crawl finding state-therapy-chatbot-bans-2026-07-22
+artifact: artifacts/findings/state-therapy-chatbot-bans-2026-07-22.md
+crawled_at: "2026-07-22T21:00:00Z"
+method: >
+  WebSearch unavailable (session budget); GDELT DOC API partially
+  rate-limited (8 query families completed, 4 rate-limited/rejected);
+  ~20 targeted fetches — law-firm trackers (JD Supra/Mondaq) carried the
+  richest state-by-state detail. NCSL tracker 403-blocked.
+items:
+  - {id: aba-wave-overview, url: "https://www.abajournal.com/magazine/article/just-like-a-bad-suitor-ai-personalities-can-be-dangerous-some-states-say", ts: "2026-07"}
+  - {id: ct-sb5-mondaq, url: "https://www.mondaq.com/unitedstates/new-technology/1798380/connecticut-enacts-comprehensive-ai-legislation-key-obligations-for-developers-and-deployers", ts: "2026-06"}
+  - {id: ct-sb5-signed, url: "https://www.jdsupra.com/legalnews/senate-bill-5-and-the-new-compliance-5362550/", ts: "2026-05-27"}
+  - {id: co-hb1195, url: "https://www.forbes.com/sites/lanceeliot/2026/07/16/colorado-law-mandating-therapists-real-time-intervention-during-client-ai-psychotherapy-sets-dubious-precedent/", ts: "2026-07-16"}
+  - {id: ri-package, url: "https://www.progressive-charlestown.com/2026/07/legislation-enacted-to-provide-safety.html", ts: "2026-07-06"}
+  - {id: ga-sb540, url: "https://www.jdsupra.com/legalnews/georgia-joins-other-states-in-8186279/", ts: "2026-07"}
+  - {id: ny-pending-bills, url: "https://www.jdsupra.com/legalnews/trust-issues-july-2026-4886266/", ts: "2026-07-10"}
+  - {id: hi-sb3001, url: "https://www.hawaiinewsnow.com/2026/06/22/bill-requiring-ai-platforms-protect-minors-awaits-governors-signature/", ts: "2026-06-22"}
+  - {id: vt-h816-pending, url: "https://vtdigger.org/2026/05/07/whats-ais-place-in-mental-health-care-vermont-lawmakers-say-it-should-be-limited/", ts: "2026-05-07"}
+  - {id: ma-bill, url: "https://www.wbur.org/news/2026/05/07/artificial-intelligence-therapy-mental-health-care", ts: "2026-05-07"}
+  - {id: doj-xai-colorado, url: "https://www.westword.com/news/trump-administration-targets-colorado-ai-law-40911198/", ts: "2026-07-12"}
+  - {id: rollcall-midterms, url: "https://rollcall.com/2026/05/15/chatbot-bills-look-to-address-safety-fears-as-midterms-loom/", ts: "2026-05-15"}
+  - {id: id-ia-or-comparison, url: "https://www.jdsupra.com/legalnews/connecticut-enacts-sweeping-ai-law-2076352/", ts: "2026-06"}
+  - {id: april-tracker, url: "https://www.jdsupra.com/legalnews/proposed-state-ai-law-update-april-27-6502749/", ts: "2026-04-27"}
+notes: >-
+  Corrections to kestrel's seed logged in the finding: Tennessee
+  unverified; Vermont enactment unconfirmed past 05-07; IL/NV/UT bill
+  numbers unfound (LegiScan pass when keys land — BOOTSTRAP §Seeding).
+  Effective-date ledger candidates: CT 2027-01-01 · GA 2027-07-01 · WA
+  2027-01 · NY S9051B 2027-01-01-if-signed.

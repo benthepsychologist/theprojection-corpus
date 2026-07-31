@@ -1,0 +1,119 @@
+---
+# Bundle — crawl finding intel-rescue-2026-07-28
+artifact: artifacts/findings/intel-rescue-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  Two sonnet subagents ran parallel sweeps: one on the money side (US
+  government stake, Nvidia, SoftBank, other investor activity), one on
+  the operations side (24k layoffs, DE/PL fab cancellations, Ohio,
+  18A/14A execution + foundry customers, Altera divestment, CXMT market
+  cap). WebSearch was not used (session budget risk per crawl-skill
+  preflight) — WebFetch only, against Google News RSS
+  (news.google.com/rss/search), Intel's own newsroom/IR, and Nvidia's
+  newsroom. The money-side sweep additionally went straight to SEC EDGAR
+  full-text (Intel CIK 0000050863) and fetched three 8-K exhibits
+  directly — the strongest possible sourcing for the government/Nvidia/
+  SoftBank deal terms, all marked confidence: high accordingly. Most
+  direct-outlet URL guesses (Reuters, CNBC, The Verge, Axios, Columbus
+  Dispatch, PCMag, Windows Central) 403'd or 404'd this session; Google
+  News RSS `<link>` redirect URLs returned empty stub pages rather than
+  article bodies (a real tool limitation, not a search-quality problem).
+  Where only the RSS listing resolved, the citation is the RSS search URL
+  with title/date/outlet confirmed via the feed itself, confidence capped
+  at medium; single-outlet or snippet-level items are marked thin.
+queries:
+  google_news_rss:
+    - "Intel US government stake equity 10% CHIPS Act"
+    - "Intel Nvidia $5 billion investment September 2025"
+    - "Intel SoftBank $2 billion investment"
+    - "Intel layoffs 24,000 2025"
+    - "Intel data center layoffs July 2026"
+    - "Intel Magdeburg Germany fab cancel"
+    - "Intel Poland Wroclaw assembly test cancel 2025"
+    - "Intel Ohio DeWine construction slow life support"
+    - "Intel Ohio SK hynix acquisition talks"
+    - "Intel Ohio delay production timeline 2030 2031"
+    - "Intel 18A 14A process node 2026"
+    - "Intel 18A yield ramp 2026"
+    - "Intel Altera Silver Lake divestment close"
+    - "CXMT market cap Intel surpass"
+    - "CXMT market capitalization billion Intel dollar"
+  sec_edgar:
+    - "Intel Corp 8-K filings, CIK 0000050863, Aug-Dec 2025"
+  direct:
+    - "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products"
+items:
+  # US GOVERNMENT STAKE
+  - {id: govt-stake-8k, figure: "US Dept of Commerce Warrant and Common Stock Purchase Agreement, dated 2025-08-22, closed 2025-08-26; $8,869,800,000 total ($5,695,000,000 accelerated CHIPS Direct Funding + $3,174,800,000 Secure Enclave); 433,323,000 shares (274,583,000 at closing ~$20.74/sh + 158,740,000 escrowed at $20.00/sh); resulting 9.9% stake", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000129/intc-20250822.htm", label: "Intel 8-K, Accession 0000050863-25-000129 — SEC EDGAR direct fetch", as_of: "2025-08-25", confidence: high}
+  - {id: govt-warrant-terms, figure: "Warrant: 240,516,150 shares, strike $20.00/share, 5-year term from closing, exercisable only if Intel's foundry ownership drops below 51%; no board seat/observer/info rights; Commerce votes with Board recommendations except narrow carve-outs; 1-year lock-up; shelf registration due 2025-09-05", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000129/intc-20250822.htm", label: "Intel 8-K Exhibit 10.1 — SEC EDGAR direct fetch", as_of: "2025-08-25", confidence: high}
+  - {id: govt-warrant-corroboration, figure: "Independent corroboration of the foundry-ownership-trigger warrant mechanism", url: "https://news.google.com/rss/search?q=Intel+US+government+stake+equity+10%25+CHIPS+Act", label: "Data Center Dynamics (via Google News RSS, title/date)", as_of: "2025-09-01", confidence: medium}
+  - {id: govt-stake-value-now, figure: "US government's Intel stake value tracked to ~$35B (Apr 2026), ~$30B unrealized gain cited (May 2026), ~$42B (Jul 2026) as Intel stock rallied — press-summary figures, not new filings", url: "https://news.google.com/rss/search?q=Intel+US+government+stake+equity+10%25+CHIPS+Act", label: "CoinDesk/NewsCord, MoneyCheck, finance.biggo.com (via Google News RSS)", as_of: "2026-07-26", confidence: medium}
+  - {id: govt-stake-reaction, figure: "Political reaction: GOP complaints, 'stealth sovereign wealth fund' framing, parallel govt stakes in MP Materials/Lithium Americas, Trump statements ('will make deals like Intel stake all day long'; later 'should have asked for more')", url: "https://news.google.com/rss/search?q=Intel+US+government+stake+equity+10%25+CHIPS+Act", label: "The Hill / Reuters / Barron's / CNBC / Seeking Alpha (via Google News RSS, multi-outlet)", as_of: "2026-05-18", confidence: medium}
+
+  # NVIDIA
+  - {id: nvidia-deal-terms, figure: "$5B, SPA executed 2025-09-15, announced 2025-09-18, closed 2025-12-26; 214,776,632 shares at $23.28/share; co-development: Intel builds Nvidia-custom x86 CPUs for Nvidia AI infra, x86 SoCs integrating Nvidia RTX GPU chiplets, both use NVLink to connect ecosystems", url: "https://nvidianews.nvidia.com/news/nvidia-and-intel-to-develop-ai-infrastructure-and-personal-computing-products", label: "Nvidia newsroom — official press release, direct fetch", as_of: "2025-09-18", confidence: high}
+  - {id: nvidia-deal-closing-8k, figure: "Closing confirmation: 214,776,632 shares, $23.28/share, $5.0B aggregate, Securities Act 4(a)(2) private placement", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm", label: "Intel 8-K, filed 2025-12-29 — SEC EDGAR direct fetch", as_of: "2025-12-29", confidence: high}
+  - {id: nvidia-market-reaction, figure: "Intel stock +22% same day, best single-day gain in ~38 years; Jensen Huang called it 'an incredible investment'", url: "https://news.google.com/rss/search?q=Intel+Nvidia+%245+billion+investment+September+2025", label: "CNBC / WSJ / Bloomberg / NBC News (via Google News RSS, multi-outlet convergence)", as_of: "2025-09-18", confidence: high}
+
+  # SOFTBANK
+  - {id: softbank-announce-8k, figure: "SoftBank announced 2025-08-18/19, SPA executed 2025-08-28, closed 2025-09-26; $2.0B exactly, 86,956,522 shares at $23.00/share, Section 4(a)(2) private placement; ~2% stake computed (not filing-disclosed)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000126/a08182025form8-kex991.htm", label: "Intel 8-K exhibit (announcement) + closing 8-K (intc-20250926.htm) — SEC EDGAR direct fetch", as_of: "2025-09-29", confidence: high}
+  - {id: softbank-framing, figure: "Widely read as Masayoshi Son personally backing CEO Lip-Bu Tan; Son quote on semiconductors as industry foundation; Intel shares reportedly +~10% same day", url: "https://news.google.com/rss/search?q=Intel+SoftBank+%242+billion+investment", label: "Reuters / BBC / TradingNews (via Google News RSS, multi-outlet, title/date)", as_of: "2025-08-19", confidence: medium}
+  - {id: other-investor-talks, figure: "Apple reported in investment talks (2025-09-24/25); Intel approached TSMC, TSMC denied (2025-09-25/27); Samsung 'considering' a stake (2025-08-28, single-outlet); contradictory reporting on whether US govt would seek TSMC/Samsung/Micron stakes too — none of these closed", url: "https://news.google.com/rss/search?q=Intel+Apple+TSMC+Samsung+investment+talks+2025", label: "Reuters / NYT / SiliconANGLE / Taipei Times / Digitimes / KED Global (via Google News RSS)", as_of: "2025-09-27", confidence: thin}
+
+  # LAYOFFS / FABS / OHIO
+  - {id: layoffs-24k, figure: "~24,000 layoffs announced 2025-07-24/25 (~24-25% of workforce), target 75,000 'core employees' by end of 2025 (down from ~99-109k); tied to Q2 2025 earnings; Tan: 'no more blank checks'", url: "https://news.google.com/rss/search?q=Intel+layoffs+24%2C000+2025", label: "The Verge / Windows Central / Reuters / PCMag / SF Chronicle / IT Pro (via Google News RSS, 10+ outlet convergence)", as_of: "2025-07-25", confidence: high}
+  - {id: layoffs-2026-round, figure: "Second, distinct 2026 round: cuts in Data Center and AI Group despite 22% Q1 2026 revenue growth; no exact headcount disclosed; one report cites ~40,000 cumulative roles cut over two years", url: "https://news.google.com/rss/search?q=Intel+data+center+layoffs+July+2026", label: "Business Insider / Tom's Hardware / CRN / TechRadar / Benzinga (via Google News RSS, multi-outlet)", as_of: "2026-07-21", confidence: medium}
+  - {id: magdeburg-cancel, figure: "Magdeburg, Germany fab formally cancelled 2025-07-25, same wave as layoffs — multi-year, multi-billion-euro project killed after EU state-aid friction and a Neolithic-remains discovery delay; no write-off figure found", url: "https://news.google.com/rss/search?q=Intel+Magdeburg+Germany+fab+cancel", label: "Brussels Signal / heise online / PC Gamer / The Register / POLITICO Pro (via Google News RSS, 5-outlet convergence)", as_of: "2025-07-25", confidence: high}
+  - {id: poland-cancel, figure: "Poland (Wrocław) assembly/test facility scrapped, same 2025-07-25 announcement wave", url: "https://news.google.com/rss/search?q=Intel+Poland+Wroclaw+assembly+test+cancel+2025", label: "Notes From Poland / The Register / Computing UK (via Google News RSS)", as_of: "2025-07-25", confidence: medium}
+  - {id: ireland-followon, figure: "~$5B Ireland investment reported positioned to absorb Magdeburg's strategic role", url: "https://news.google.com/rss/search?q=Intel+Ireland+investment+Magdeburg+2026", label: "Tom's Hardware (via Google News RSS, single outlet, headline-level)", as_of: "2026-07-15", confidence: thin}
+  - {id: ohio-slow-2025, figure: "New Albany, Ohio construction 'further slowed' 2025-07-24 (same wave); by 2025-09-05/10 site described as 'on life support,' three years post-groundbreaking still unfinished, 5+ local leaders left", url: "https://news.google.com/rss/search?q=Intel+Ohio+DeWine+construction+slow+life+support", label: "Columbus Dispatch / WOSU Public Media / NBC4 WCMH-TV (via Google News RSS)", as_of: "2025-09-10", confidence: medium}
+  - {id: ohio-sk-hynix, figure: "SK Hynix reportedly in talks to acquire Intel's Ohio campus for US memory production (2026-07-21/22, 'exclusive'); SK Hynix categorically denied same day; Intel confirmed 2026-07-23 it's seeking a partner for Ohio generally and reassured its Ohio commitment; timeline slipped to a reported 2030-2031 range", url: "https://news.google.com/rss/search?q=%22Intel%22+%22Ohio%22+%22SK+hynix%22+acquisition+talks", label: "Korea JoongAng Daily / Yahoo Finance / Benzinga / Barron's / Columbus Dispatch (via Google News RSS, multi-outlet)", as_of: "2026-07-23", confidence: medium}
+  - {id: ohio-sentiment-shift, figure: "Sentiment shift toward Ohio as Intel stock rallied ('good vibes are back,' 2026-05-12); Apple foundry deal (see below) tied directly to hopes of reviving Ohio (2026-05-28)", url: "https://news.google.com/rss/search?q=Intel+Ohio+Apple+deal+plants+2026", label: "Axios / Columbus Dispatch (via Google News RSS)", as_of: "2026-05-28", confidence: thin}
+
+  # 18A / 14A / CUSTOMERS
+  - {id: node-18a-progress, figure: "18A positioned as valuation-turnaround node (Jan 2026); yield improvements across Intel 4/3/18A reported (Apr 2026); 18A-P enters risk production Jun 2026 (9% perf gain iso-power, 40% lower thermal resistance vs base 18A); 'finally running smoothly' reported Jul 2026 — no exact yield % sourced anywhere", url: "https://news.google.com/rss/search?q=Intel+18A+14A+process+node+2026", label: "Tom's Hardware / TechPowerUp / TechSpot (via Google News RSS)", as_of: "2026-07-07", confidence: medium}
+  - {id: node-14a-progress, figure: "14A: 'going big time into 14A' reversal (Jan 2026); risk production targeted 2028 (May 2026); yield milestone before trial production reported (Jun 2026, no number given)", url: "https://news.google.com/rss/search?q=Intel+18A+yield+ramp+2026", label: "Tom's Hardware / TechPowerUp (via Google News RSS)", as_of: "2026-06-16", confidence: medium}
+  - {id: customer-microsoft, figure: "Intel Foundry to build Microsoft's Maia 2 AI accelerator on 18A/18A-P (~Oct 2025, exact day unresolved)", url: "https://news.google.com/rss/search?q=Intel+Microsoft+Maia+18A+foundry", label: "Tom's Hardware (via Google News RSS, single outlet)", as_of: "2025-10-15", confidence: medium}
+  - {id: customer-tesla-terafab, figure: "Tesla/SpaceX's $20B Austin 'Terafab' to use Intel's 14A process — reported first named 14A customer; coincided with Intel Q1 2026 earnings; broader Tesla AI-chip buildout cost estimated up to $119B (May 2026)", url: "https://news.google.com/rss/search?q=Tesla+Terafab+Intel+14A+Austin", label: "Reuters / Yahoo Finance / FT / TechPowerUp / TrendForce / Data Center Dynamics / Benzinga (via Google News RSS, multi-outlet convergence, no primary article opened directly)", as_of: "2026-04-23", confidence: medium}
+  - {id: customer-apple, figure: "WSJ/Bloomberg report 'preliminary chip-making agreement' with Apple (2026-05-08, stock +13-15%); Trump publicly confirms 2026-06-18 (stock +6-10% further); node cited as 18A-P; TSMC still expected to remain Apple's primary chipmaker, production 'years away'", url: "https://news.google.com/rss/search?q=Intel+Apple+chip+agreement+18A", label: "WSJ / Bloomberg / CNBC / Reuters / 24/7 Wall St. (via Google News RSS, multi-outlet)", as_of: "2026-06-18", confidence: medium}
+  - {id: customer-fortinet, figure: "Fortinet signs on as Intel 4 (SP6 security chip) foundry customer, reported ~2026-07-27/28", url: "https://news.google.com/rss/search?q=Intel+Fortinet+foundry+Intel+4", label: "CNBC / MLQ.ai (via Google News RSS)", as_of: "2026-07-27", confidence: medium}
+  - {id: customer-nvidia-amd-exploring, figure: "Nvidia and AMD reported 'exploring' the 14A node — explicitly exploratory, not a signed order", url: "https://news.google.com/rss/search?q=Nvidia+AMD+Intel+14A+exploring", label: "TechPowerUp (via Google News RSS, single outlet)", as_of: "2025-12-18", confidence: thin}
+  - {id: customer-rejections-gap, figure: "No named customer explicitly rejecting/passing on 18A or 14A found in this crawl — flagged as a gap, not a negative finding", url: "https://news.google.com/rss/search?q=Intel+18A+customer+loss+rejection", label: "Search returned no distinct results beyond general 2025 'struggling to secure customers' framing", as_of: "2026-07-28", confidence: thin}
+
+  # ALTERA
+  - {id: altera-announce, figure: "Intel to sell 51% majority stake in Altera to Silver Lake for $4.46B cash, implying ~$8.75-9B enterprise valuation; Intel retains 49%", url: "https://news.google.com/rss/search?q=Intel+Altera+Silver+Lake+divestment+close", label: "Reuters / WSJ / Investopedia / The Logic (via Google News RSS, 4-outlet convergence)", as_of: "2025-04-14", confidence: high}
+  - {id: altera-close, figure: "Deal closes; Altera becomes 'world's largest pure-play FPGA solutions provider' under new structure; CEO frames it as opportunity to take share from AMD", url: "https://news.google.com/rss/search?q=Intel+Altera+Silver+Lake+deal+closed+completed", label: "Business Wire (official close release) / Yahoo Finance / CRN (via Google News RSS)", as_of: "2025-09-15", confidence: high}
+  - {id: altera-mgx, figure: "Abu Dhabi sovereign fund MGX reported to have joined Silver Lake in the purchase, contributing ~$3.3B of the stake", url: "https://news.google.com/rss/search?q=MGX+Silver+Lake+Altera+Abu+Dhabi", label: "Private Equity Wire / Bloomberg (via Google News RSS)", as_of: "2025-09-17", confidence: medium}
+
+  # CXMT
+  - {id: cxmt-surge, figure: "CXMT debuts on Shanghai STAR Market, shares surge ~465-500% intraday, briefly China's most valuable A-share company; multiple outlets state this surpassed Intel's market cap; no clean side-by-side dollar figure found for either company at the crossover moment", url: "https://news.google.com/rss/search?q=CXMT+market+cap+Intel+surpass", label: "Reuters / Nikkei Asia / Global Times / China Daily / Benzinga / Investing.com / TechPowerUp / TechNode (via Google News RSS, 7+ outlet convergence)", as_of: "2026-07-27", confidence: high}
+  - {id: cxmt-ipo-valuation, figure: "IPO raised $8.6-9.8B (outlet variance); pre-IPO target valuation ~$42B reported 2025-10-21/22, predating the actual debut-day pop — not the crossover figure", url: "https://news.google.com/rss/search?q=CXMT+IPO+valuation+billion", label: "Reuters / Business Times / Yahoo Finance (via Google News RSS)", as_of: "2025-10-22", confidence: medium}
+  - {id: intel-cap-pressure, figure: "Intel's own market cap under pressure in the same window: reported to have shed ~$79B ahead of earnings (Jul 17 2026) and a further ~$90B 'wipeout' (Jul 24 2026) — loss magnitudes, not absolute cap levels", url: "https://news.google.com/rss/search?q=Intel+market+cap+July+2026+billion", label: "TechStock² / Yahoo Finance Singapore (via Google News RSS)", as_of: "2026-07-24", confidence: medium}
+notes: >-
+  Confidence key matches prior bundles in this repo: high = primary
+  source fetched directly (SEC EDGAR 8-K exhibits, Nvidia's own
+  newsroom, Business Wire release), or 3+ independent outlets converging
+  same day/week. medium = single outlet or 2-3 converging outlets,
+  RSS-listed (title/source/date confirmed via the RSS feed itself, but
+  article body not independently re-fetched). thin = single outlet
+  and/or snippet/headline-level only, exploratory/unconfirmed claims, or
+  a negative/gap finding. No URL or figure in this bundle was
+  fabricated; guessed direct-outlet URLs (Reuters, CNBC, The Verge,
+  Axios, Columbus Dispatch, PCMag, Windows Central, Intel's own
+  newsroom deep-links) 403'd or 404'd on verification and were dropped
+  in favor of the Google News RSS search links actually returned by
+  WebFetch. Google News RSS `<link>` redirect URLs (as opposed to the
+  search-listing URLs cited above) returned empty interstitial stubs on
+  every attempt this session and could not be used to reach article
+  bodies — a tool limitation flagged for future crawls, not a sign the
+  underlying reporting doesn't exist.
+
+  The brief's three headline asks were all resolved: (1) the US
+  government's 9.9%/~$8.9B stake and its foundry-contingent warrant are
+  now filing-confirmed to the share/dollar/date; (2) Nvidia's $5B stake
+  and its x86-CPU/RTX-chiplet/NVLink co-development terms are
+  filing-and-press-release confirmed; (3) SoftBank's stake, previously
+  marked unconfirmed/thin in the seed thread, is now pinned exactly
+  ($2.0B, $23.00/share, 86,956,522 shares, closed 2025-09-26) via
+  Intel's own 8-K filings — the "thin" flag on SoftBank should be
+  removed going forward.

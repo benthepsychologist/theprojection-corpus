@@ -1,0 +1,44 @@
+node: ping-an
+name: "Ping An"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Pushing the tech/health ecosystem as the growth edge — integrated DeepSeek AI into Ping An Health (Feb 2025); health arm now spans 100+ top hospitals, ~50k doctors, ~233k pharmacies; eldercare in 64 cities. State-steered but offensively building."
+  sources:
+    - {figure: "DeepSeek AI integrated into Ping An Healthcare (Feb 2025); health ecosystem 100+ hospitals, 50,000 doctors, 233,000 pharmacies; eldercare in 64 cities, 120,000+ customers (Jun 2024)", label: "Wikipedia — Ping An Insurance (tech/health ecosystem)", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2025-02", confidence: high}
+capital:
+  available:
+    value: "~CN¥598B (~$83B) group cash & equivalents (Mar 2026) — but state-steered (NFRA) and split across the insurance/bank/tech legs; NOT free dry powder. FX: reported in CNY (~7.24/USD)."
+    sources:
+      - {figure: "Cash & equivalents CN¥598,247M (Mar 31 2026)", label: "stockanalysis.com — PNGAY balance sheet (group, TTM Q1 2026)", url: "https://stockanalysis.com/quote/otc/PNGAY/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~CN¥1,141B/yr (~$158B) total revenue (2024); net income ~CN¥126.6B (~$17.5B). Insurance premiums are the core inflow inside this. FX: CNY."
+    sources:
+      - {figure: "Total revenue CN¥1,141,346M; operating income CN¥1,028,925M; net income CN¥126,607M (2024)", label: "Wikipedia — Ping An Insurance (2024 financials)", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2024-12", confidence: high}
+  deployed:
+    value: "~CN¥8.83T (~$1.22T) total GROUP investments (Mar 2026, incl. Ping An Bank); the insurance-fund-only investment portfolio is ~$848B (2024). Group total assets ~CN¥14.17T (~$1.96T). FX: CNY."
+    sources:
+      - {figure: "Total investments CN¥8,831,925M; total assets CN¥14,169,947M (Mar 31 2026)", label: "stockanalysis.com — PNGAY balance sheet (group)", url: "https://stockanalysis.com/quote/otc/PNGAY/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+      - {figure: "Insurance-segment total assets ~$848.1B (2024) — the insurance pile excluding the banking arm", label: "Wikipedia — List of largest insurance companies (2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: med}
+  in:
+    value: "Life & P&C premium inflows + bank deposits + tech/health platform revenue; ~CN¥1.14T/yr total. 240M-customer retail base feeds cross-sell."
+    sources:
+      - {figure: "Total revenue CN¥1,141,346M (2024); ~240M retail customers (board framing)", label: "Wikipedia — Ping An Insurance", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2024-12", confidence: med}
+  out:
+    value: "Claims/benefits; investment allocation into the CN¥8.8T portfolio; ecosystem capex (health/AI, eldercare); dividends. State-directed allocation tilts (e.g. domestic priorities)."
+    sources:
+      - {figure: "Net income CN¥126.6B supports dividends/buildout; DeepSeek-AI and eldercare capex (2024-25)", label: "Wikipedia — Ping An Insurance", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2025-02", confidence: low}
+thrust:
+  value: "~$44B/yr est, conf LOW — organic premium-flow proxy only (28% of CN¥1,141B/~$158B 2024 revenue, mirroring the china-life premium-into-bonds/equities ratio; not a filed reinvestment line). No material capital M&A found this session — the DeepSeek AI integration (Feb 2025) and eldercare buildout are ecosystem/tech capex, not identified as separately-sized investment deployment or acquisitions."
+  sources:
+    - {figure: "Total revenue CN¥1,141,346M (~$158B, 2024); 28% organic-proxy ratio applied by analogy to china-life's $40B/$139.6B (28.6%) — no Ping An-specific reinvestment-rate filing pulled this session", label: "Wikipedia — Ping An Insurance (2024 financials) + derived ratio, conf low", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2024-12", confidence: low}
+optionality:
+  value: "constrained — NFRA C-ROSS solvency regime + state-steered (Beijing-directed allocation, Alibaba-style); the insurance general account is liability-matched, and the bank/tech legs are separately regulated."
+  sources:
+    - {figure: "NFRA / C-ROSS regime; state-steered SOE-adjacent posture (board framing)", label: "Wikipedia — Ping An Insurance", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2025-12", confidence: low}
+gravity:
+  value: "~$133B/yr GROSS routed (board) + a genuine 240M-customer tech/health ecosystem (Good Doctor, Autohome, Lufax, OneConnect) — gravity here is thicker than the pure general-account peers because of the platform reach."
+  sources:
+    - {figure: "Subsidiaries: Ping An Good Doctor, Autohome (48% stake), Lufax (NYSE 2020), OneConnect (NYSE 2019)", label: "Wikipedia — Ping An Insurance (ecosystem)", url: "https://en.wikipedia.org/wiki/Ping_An_Insurance", as_of: "2024-12", confidence: high}
+notes: "Biggest uncertainty: the ~CN¥8.83T total investments and ~CN¥14.17T assets are GROUP figures (include Ping An Bank); the insurance-only investment portfolio (~$848B) is a coarser 2024 ranking figure. Premium-only inflow and NFRA solvency headroom not separately pulled this session. All CNY; USD at ~7.24/USD. WEIGHT-BASIS FLAG (axes_num rollout, 2026-07-28): axes_num.weight uses GROUP on-balance-sheet total assets ~$1950B (CN¥14.17T, Mar 2026, board-established basis) — includes Ping An Bank's own balance sheet (fully consolidated, unlike a fiduciary AUM arm), not just the insurance-only ~$848B slice. No PIMCO-style third-party fiduciary arm identified for Ping An this session — the bank is owned/consolidated, not managed-for-others, so it stays inside weight rather than being flagged out."

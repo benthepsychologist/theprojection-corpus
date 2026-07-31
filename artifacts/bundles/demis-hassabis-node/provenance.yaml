@@ -1,0 +1,53 @@
+# Bundle — node posture + capital-flow: demis-hassabis / Demis Hassabis (2026-07-26)
+# PERSON node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted): Wikipedia Demis Hassabis. AI-lab head who is an
+# ALPHABET EXECUTIVE, not a founder-controller — DeepMind was acquired by
+# Google outright in 2014; no personal net-worth or equity figures are
+# disclosed anywhere in sourced material. Modest personal-capital case vs.
+# Altman/Amodei by design.
+node: demis-hassabis
+name: "Demis Hassabis"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Google DeepMind's posture (the Gemini frontier push, inside Alphabet's $80B AI raise Jun-2026) is the axis Hassabis directs as CEO; personally his 2024-2026 arc is honors/prestige (Nobel Prize, knighthood), not capital moves."
+  sources:
+    - {figure: "Alphabet-scale parent commands $403B rev / $132B NI 2025 + $80B AI raise Jun-2026", label: "kestrel board.yaml deepmind capitalization axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+    - {figure: "jointly awarded the 2024 Nobel Prize in Chemistry for AI protein-structure-prediction work (with John M. Jumper)", label: "Wikipedia — Demis Hassabis", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2024", confidence: high}
+
+capital:
+  available:
+    value: "no personal net-worth or equity figure is disclosed in sourced material. DeepMind was acquired OUTRIGHT by Google in 2014 (reported £400M) — unlike Amodei/Altman, Hassabis's underlying company has no independent equity for him to hold; any personal payout from the 2014 sale, or subsequent Alphabet stock/RSU compensation as CEO, is undisclosed. Mark LOW / effectively unknown."
+    sources:
+      - {figure: "Google acquired DeepMind in 2014 for a reported £400M; no personal payout to Hassabis stated", label: "Wikipedia — Demis Hassabis", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2014", confidence: low}
+  operating:
+    value: "directs Google DeepMind inside Alphabet's capital pool as CEO — parent-scale (~$403B rev / $132B NI 2025 + $80B AI raise Jun-2026), but DeepMind's OWN operating revenue is only ~£1.33B and this is the SAME capital pool as the google node (do not double-count)."
+    sources:
+      - {figure: "Alphabet-scale (parent commands $403B rev / $132B NI 2025 + $80B AI raise Jun-2026); own operating revenue only ~£1.33B — same capital pool as google, don't double-count", label: "kestrel board.yaml deepmind capitalization axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+  deployed:
+    value: "as CEO he also co-founded and runs Isomorphic Labs (2021) — Alphabet's AI-drug-discovery arm — a distinct strategic bet from the Gemini/DeepMind line, though its capitalization is not separately sourced here."
+    sources:
+      - {figure: "co-founder and CEO of Isomorphic Labs (founded 2021)", label: "Wikipedia — Demis Hassabis", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2021", confidence: high}
+  in:
+    value: "no personal compensation, salary, or equity-grant figures disclosed; presumably a standard Alphabet senior-executive package (cash + RSUs) but this is inference, not a sourced figure — omitted rather than guessed."
+    sources:
+      - {figure: "no personal comp/equity figure disclosed on the fetched page", label: "Wikipedia — Demis Hassabis (absence-of-figure check)", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2026-07", confidence: low}
+  out:
+    value: "no personal capital outflows disclosed in sourced material."
+    sources:
+      - {figure: "no personal outflow/giving figure disclosed on the fetched page", label: "Wikipedia — Demis Hassabis (absence-of-figure check)", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "constrained — parent-directed, cannot independently raise capital (org axis); personally, Hassabis is an Alphabet employee/executive with no founder supervoting stake of the kind Zuckerberg or Musk hold — his leverage is prestige and technical authority (Nobel laureate, knighted 2024, UK Government AI Adviser), not capital control."
+  sources:
+    - {figure: "constrained — parent-directed, cannot independently raise capital", label: "kestrel board.yaml deepmind optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+    - {figure: "Knight Bachelor 'for services to artificial intelligence' (2024); UK Government AI Adviser", label: "Wikipedia — Demis Hassabis", url: "https://en.wikipedia.org/wiki/Demis_Hassabis", as_of: "2024", confidence: high}
+
+gravity:
+  value: "~$58.7B/yr GROSS Google Cloud revenue (2025) + Gemini embedded across Search/Workspace/Android — an ecosystem gravity that is Alphabet's, directed by Hassabis, not a personal-wealth gravity."
+  sources:
+    - {figure: "~$58.7B/yr GROSS Google Cloud revenue (2025) + Gemini embedded across Search/Workspace/Android", label: "kestrel board.yaml deepmind gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+notes: "Biggest uncertainty / gap: NO personal net-worth, equity, or compensation figure for Hassabis exists in any fetched source — this is a genuine data gap, not an omission of convenience (contrast Amodei, where a third-party estimate at least exists). His power is entirely OPERATING (Alphabet-directed) and REPUTATIONAL (Nobel, knighthood), with essentially zero sourced personal-capital axis. Do not infer a wealth figure from Alphabet's scale or peer-CEO comps."

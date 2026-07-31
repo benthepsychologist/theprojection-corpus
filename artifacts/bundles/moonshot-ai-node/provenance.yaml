@@ -1,0 +1,86 @@
+# Bundle — node posture + capital-flow: moonshot-ai / Moonshot AI (Kimi) (2026-07-28)
+# FIRST-EVER axes pass for moonshot-ai — no prior bundle or board.yaml axis strings
+# existed before this. Built from scratch: posture, full 5-way capital-flow, thrust,
+# optionality, gravity, all new. Method: WebFetch (Wikipedia hub + citations, Google
+# News RSS) — WebSearch budget was exhausted mid-session for this actor, so coverage
+# leans on RSS headline/snippet extraction rather than full-article fetches in a few
+# spots; flagged inline. Landed mid a live news event: US White House accused
+# Moonshot of distilling Anthropic's model and using export-banned Nvidia GB300s
+# routed via Thailand for Kimi K3 training (~Jul 22-23, 2026), days before this asof.
+node: moonshot-ai
+name: "Moonshot AI"
+pocket: frontier-lab
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Kimi K3 (2.8T-param MoE, Jul-16-2026) triggered a demand surge strong enough to pause new subscriptions on compute strain and wipe an estimated $3.3T off global chip stocks; valuation run went $20B (May-2026, Meituan-led) -> $30B (Jun/Jul-2026 talk) -> $50B pre-IPO talks (Jul-21-2026) inside ten weeks, with a Hong Kong IPO targeted within six months. Landed in the same week as a US White House accusation of Anthropic-model distillation and export-banned GB300 use routed via Thailand."
+  sources:
+    - {figure: "Kimi K3: 2.8T params, 896 experts (16 active), 1M-token context, ranked 3rd on Artificial Analysis at launch", label: "Wikipedia — Kimi (chatbot)", url: "https://en.wikipedia.org/wiki/Kimi_(chatbot)", as_of: "2026-07-16", confidence: high}
+    - {figure: "Moonshot paused new Kimi K3 subscriptions as demand strained compute capacity", label: "TradingView/Reuters via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-20", confidence: med}
+    - {figure: "Kimi K3 launch wiped ~$3.3T from chip stocks; compared to 'DeepSeek flashbacks'", label: "Tech Times / WSJ / Yahoo Finance via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-17/20", confidence: med}
+    - {figure: "Moonshot in talks on pre-IPO funds at $50B valuation", label: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-21", confidence: med}
+    - {figure: "Moonshot AI accelerates fundraising push ahead of planned Hong Kong IPO, targeted within six months", label: "South China Morning Post via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-22", confidence: med}
+    - {figure: "White House accuses Moonshot AI of distilling Anthropic's model and training Kimi K3 on export-banned Nvidia GB300 chips routed via Thailand", label: "CyberScoop / XenoSpectrum / Startup Fortune via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+GB300+Thailand+export+control+White+House", as_of: "2026-07-22/23", confidence: med}
+thrust:
+  value: "~$3-4B/yr (thin) — no disclosed multi-year compute/build commitment; proxied from funding-round velocity (~$2.6B raised across Oct-2025 + May-2026 rounds in ~9 months, annualized), which is a capital-inflow proxy, not a committed-spend figure"
+  basis: "Moonshot has not disclosed a Stargate-style multi-year compute/datacenter commitment. The closest observable signal is round cadence accelerating sharply: $600M (Oct-2025, IDG-led) then $2B (May-2026, Meituan-led) in roughly nine months, against a compute-capacity crunch severe enough to pause new K3 signups — implying aggressive buildout, but the $ commitment behind that buildout is not itself disclosed. Treat the annualized raise rate as an upper-bound proxy for new-position formation, flagged thin."
+  sources:
+    - {figure: "$600M round led by IDG Capital, ~$3.8B pre-money valuation", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2025-10", confidence: med}
+    - {figure: "$2B round at $20B valuation, Meituan-led with HongShan and IDG Capital", label: "Google News RSS (Bloomberg headline: 'Kimi Chatbot Maker Moonshot AI Valued at $20 Billion in Meituan-Led Round')", url: "https://news.google.com/rss/search?q=Moonshot+AI+Meituan+HongShan+IDG+Capital+round+investors", as_of: "2026-05-06", confidence: med}
+    - {figure: "Kimi K3 demand strained compute capacity enough to pause new subscriptions; '36Kr: Computing Power Shortage'", label: "TradingView/Reuters + 36Kr via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+revenue+ARR+compute+cluster", as_of: "2026-07-20/22", confidence: med}
+    - {figure: "no disclosed multi-year compute/build commitment figure found in any source consulted", label: "absence noted across Wikipedia + Google News RSS passes", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2026-07-28", confidence: low}
+capital:
+  available:
+    value: "~$4B cumulative disclosed raised (self-summed: $60M seed + $1B Feb-2024 Alibaba-led + $300M Aug-2024 Tencent/Gaorong + $600M Oct-2025 IDG-led + $2B May-2026 Meituan-led); current valuation mark $20B confirmed (May-2026), $30B reported in talks (Jun/Jul-2026), $50B pre-IPO talks reported (Jul-21-2026, unconfirmed)"
+    sources:
+      - {figure: "seed: $60M at $300M valuation", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2023", confidence: med}
+      - {figure: "Feb-2024: $1B round led by Alibaba (Alibaba investing $800M for a 36% stake), $2.5B valuation", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2024-02", confidence: high}
+      - {figure: "Aug-2024: $300M from Tencent and Gaorong Capital, $3.3B valuation", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2024-08", confidence: high}
+      - {figure: "Oct-2025: ~$600M led by IDG Capital, $3.8B pre-money valuation", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2025-10", confidence: med}
+      - {figure: "Jan-2026: valuation up $500M, Alibaba-backed, following rivals' Hong Kong IPOs", label: "CNBC via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+state+backed+investors+Alibaba+Tencent+stake", as_of: "2026-01-19", confidence: med}
+      - {figure: "Mar-2026: $18B valuation reported", label: "Google News RSS aggregation (multiple outlets)", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-03", confidence: low}
+      - {figure: "May-2026: $2B round at $20B valuation, Meituan-led with HongShan/IDG participation", label: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Meituan+HongShan+IDG+Capital+round+investors", as_of: "2026-05-06", confidence: med}
+      - {figure: "Jun/Jul-2026: seeking $30B valuation, described as '6x up'", label: "tech-insider.org via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+state+backed+investors+Alibaba+Tencent+stake", as_of: "2026-07-14", confidence: low}
+      - {figure: "Jul-21-2026: in talks on pre-IPO funds at $50B valuation", label: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-21", confidence: med}
+  operating:
+    value: "no clean revenue/ARR figure disclosed; emerging monetization via subscription tiers (Moderato/Allegro/Allegretto/Vivace) and a new token-revenue-sharing deal with Chinasoft International (Jul-2026)"
+    sources:
+      - {figure: "four subscription tiers: Moderato, Allegro, Allegretto, Vivace, offering enhanced K2 access; free tier with rate limits", label: "Wikipedia — Kimi (chatbot)", url: "https://en.wikipedia.org/wiki/Kimi_(chatbot)", as_of: "2026", confidence: med}
+      - {figure: "Chinasoft International partners with Moonshot AI on token revenue sharing", label: "finance.biggo.com via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+revenue+ARR+compute+cluster", as_of: "2026-07-21", confidence: low}
+      - {figure: "no revenue/ARR figure found in any source consulted", label: "absence noted across Wikipedia + Google News RSS passes", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2026-07-28", confidence: low}
+  deployed:
+    value: "compute buildout scale not itself disclosed in $ terms; observable via strain (K3 subscription pause on capacity) and via the disputed GB300 allegation, not a confirmed capex figure"
+    sources:
+      - {figure: "Moonshot paused new Kimi K3 subscriptions as demand strained compute capacity", label: "TradingView/Reuters via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-20", confidence: med}
+      - {figure: "White House alleges Kimi K3 was trained on export-banned Nvidia GB300 chips routed via Thailand (disputed/unconfirmed by Moonshot)", label: "XenoSpectrum / Startup Fortune via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+GB300+Thailand+export+control+White+House", as_of: "2026-07-22/23", confidence: low}
+  in:
+    value: "VC + Chinese strategic-tech-platform rounds (Alibaba, Tencent/Gaorong, IDG Capital, Meituan, HongShan) escalating toward a Hong Kong IPO raise"
+    sources:
+      - {figure: "Alibaba led Feb-2024 $1B round with $800M / 36% stake", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2024-02", confidence: high}
+      - {figure: "Tencent Backs Moonshot As Chinese AI Firm Prepares Hong Kong IPO", label: "simplywall.st via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+state+backed+investors+Alibaba+Tencent+stake", as_of: "2026-07-23", confidence: med}
+      - {figure: "May-2026 $2B round: Meituan-led, HongShan + IDG Capital participating", label: "Bloomberg via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Meituan+HongShan+IDG+Capital+round+investors", as_of: "2026-05-06", confidence: med}
+      - {figure: "Hong Kong IPO targeted within six months as of Jul-2026", label: "South China Morning Post via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-22", confidence: med}
+  out:
+    value: "compute buildout to meet K3 demand + subsidized/rate-limited free-tier access; no disclosed capex or training-cost figure (contrast DeepSeek's disclosed ~$5.6M V3 run — Moonshot has not published an equivalent for K2/K3)"
+    sources:
+      - {figure: "K3 demand strained compute capacity, forcing a subscription pause — implies heavy training/serving spend not itself quantified", label: "TradingView/Reuters + 36Kr via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+revenue+ARR+compute+cluster", as_of: "2026-07-20/22", confidence: low}
+optionality:
+  value: "mixed-to-constrained — founder-controlled (Yang Zhilin, Tsinghua co-founders) but with heavy Chinese strategic-platform ownership (Alibaba's 36% stake at the Feb-2024 round, since diluted; Tencent, Meituan, HongShan, IDG Capital as later-round leads) and, as of this week, live exposure to US export-control/sanctions action following a White House accusation of Anthropic-model distillation and export-banned GB300 use routed via Thailand — China's government has signaled countermeasure rhetoric ('AI hegemonism') in response but no Moonshot-specific state statement was found"
+  sources:
+    - {figure: "Alibaba $800M for 36% stake (Feb-2024 round)", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2024-02", confidence: high}
+    - {figure: "CEO/co-founder Yang Zhilin, with Zhou Xinyu and Wu Yuxin, Tsinghua University schoolfriends", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2026", confidence: high}
+    - {figure: "White House accuses Moonshot AI of distilling Anthropic's model and using export-banned Nvidia GB300 chips routed via Thailand for Kimi K3 training; US Treasury threatened sanctions", label: "CyberScoop / XenoSpectrum via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+GB300+Thailand+export+control+White+House", as_of: "2026-07-22/23", confidence: med}
+    - {figure: "China accuses US of 'AI hegemonism' and warns of countermeasures amid sanctions threats (general, not Moonshot-specific in sourced coverage)", label: "Reuters / XenoSpectrum / Firstpost via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+China+commerce+ministry+countermeasures+sanctions+July+2026", as_of: "2026-07-27/28", confidence: low}
+    - {figure: "Anthropic separately accused Moonshot of using thousands of fraudulent accounts to generate millions of conversations for training (Feb-2026)", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2026-02", confidence: med}
+gravity:
+  value: "no clean $ figure — proxy via Kimi K3 launch wiping an estimated $3.3T off global chip-stock market cap (Jul-2026, echoing DeepSeek's Jan-2025 Nvidia hit), 36M+ MAU (Oct-2024), Kimi K2 as Hugging Face's most-downloaded model on release day (Jul-2025), and a new token-revenue-sharing enterprise deal with Chinasoft International (Jul-2026)"
+  sources:
+    - {figure: "Kimi K3 launch triggered an estimated $3.3T chip-stock selloff; compared to 'DeepSeek flashbacks'", label: "Tech Times / WSJ / Yahoo Finance via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-17/20", confidence: med}
+    - {figure: "monthly active users exceeded 36 million (Oct-2024, Kimi Explore Edition launch)", label: "Wikipedia — Kimi (chatbot)", url: "https://en.wikipedia.org/wiki/Kimi_(chatbot)", as_of: "2024-10", confidence: med}
+    - {figure: "Kimi K2 was the most-downloaded model on Hugging Face the day after release", label: "Wikipedia — Moonshot AI", url: "https://en.wikipedia.org/wiki/Moonshot_AI", as_of: "2025-07", confidence: med}
+    - {figure: "Chinasoft International partners with Moonshot AI on token-revenue-sharing model, sparking Hong Kong AI-application-stock surge", label: "finance.biggo.com via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+revenue+ARR+compute+cluster", as_of: "2026-07-21", confidence: low}
+buybacks:
+  value: "$0 — private company, no buyback activity applicable"
+  sources:
+    - {figure: "private company pre-IPO (Hong Kong listing targeted within six months as of Jul-2026); no equity buyback mechanism exists", label: "South China Morning Post via Google News", url: "https://news.google.com/rss/search?q=Moonshot+AI+Kimi+funding", as_of: "2026-07-22", confidence: high}
+notes: "FIRST-EVER axes pass for moonshot-ai — board.yaml currently has only slug/rank/sphere/holdings + a gloss, no axis strings; this bundle is the full build, not a refresh. Landed mid a fast-breaking, contested story: the White House's Jul-22/23-2026 accusation (Anthropic-model distillation + banned GB300s via Thailand) is itself the news, unconfirmed/disputed, and could move optionality toward 'locked' fast if sanctions land — re-check within days, not the usual cadence. Cumulative-raised figure ($4B) is self-summed from individual disclosed rounds, not a single cited aggregate — treat as directional. Valuation trajectory is extraordinarily fast (5x-ish in under 3 months: $20B May -> $50B-talk Jul) and the $30B/$50B marks are 'in talks' framing, not closed rounds. Thrust has no disclosed multi-year compute commitment at all (unlike hyperscalers or even some peer labs) — the $3-4B/yr figure is a funding-velocity proxy only, flagged thin. WebSearch tool budget was exhausted for this actor mid-research; all post-Wikipedia sourcing came from Google News RSS headline/snippet passes rather than full-article WebFetch, so several figures (valuation marks, investor stakes, MofCom response) are headline-level and worth a deeper follow-up fetch of the underlying Bloomberg/SCMP/Reuters articles when budget allows."

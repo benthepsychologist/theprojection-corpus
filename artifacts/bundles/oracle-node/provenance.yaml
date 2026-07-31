@@ -1,0 +1,55 @@
+# Bundle — hyperscaler node: oracle (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml oracle. EXTENDS the axis
+# strings on board.yaml (no oracle-axes bundle existed; board carries no
+# posture for oracle) with posture and the in/out/available/operating/deployed
+# breakdown.
+node: oracle
+name: "Oracle"
+pocket: hyperscaler
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "All-in OCI capacity buildout anchored to the OpenAI/Stargate ~$300B compute contract, financed into negative free cash flow (-$23.7B) and ~$156B debt — the most stretched balance sheet in the pocket."
+  sources:
+    - {figure: "capex $55.7B FY26 vs OCF $32.0B -> FCF -$23.7B; the buildout is debt-financed", label: "stockanalysis.com ORCL cash-flow statement", url: "https://stockanalysis.com/stocks/ORCL/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+    - {figure: "board.yaml carries no posture for oracle; gloss: 'Kingdom by capital + Stargate position' — posture=expanding assigned here from the capacity buildout", label: "kestrel attention/board.yaml oracle (no prior posture tag)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$31.9B cash+STI (Q4 FY26, May-2026) — thin against ~$156B debt"
+    sources:
+      - {figure: "cash+STI $31,894M (cash $31,289M + ST investments $605M); total debt $156,189M — Q4 FY26 ended May 31 2026", label: "stockanalysis.com ORCL balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/ORCL/financials/balance-sheet/?p=quarterly", as_of: "2026-05", confidence: high}
+  operating:
+    value: "~$32B/yr operating cash flow (FY26, +53.6% YoY)"
+    sources:
+      - {figure: "operating cash flow $31,977M FY26 (up 53.58% YoY)", label: "stockanalysis.com ORCL cash-flow statement", url: "https://stockanalysis.com/stocks/ORCL/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+  deployed:
+    value: "~$55.7B/yr capex in-flight (FY26) + reported ~$450B+ RPO backlog post-Stargate"
+    sources:
+      - {figure: "capex $55,663M FY26 (exceeds OCF -> negative FCF)", label: "stockanalysis.com ORCL cash-flow statement", url: "https://stockanalysis.com/stocks/ORCL/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+      - {figure: "~$450B+ RPO/backlog reported post-Stargate — UNVERIFIED, not found on the fetched overview", label: "kestrel board.yaml oracle gravity axis (flagged unverified)", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+  in:
+    value: "~$67.4B FY26 revenue (Cloud ~$34B, ~50% of total; +17.4% YoY) + debt-financed inflows"
+    sources:
+      - {figure: "total revenue $67,357M FY26 (+17.35% YoY); cloud revenue $33,990M (~50%)", label: "stockanalysis.com ORCL financials", url: "https://stockanalysis.com/stocks/ORCL/financials/", as_of: "2026-05", confidence: high}
+  out:
+    value: "~$61.7B/yr out: ~$55.7B capex + ~$5.8B dividends + ~$0.2B buybacks (FY26)"
+    sources:
+      - {figure: "capex $55,663M + dividends $5,787M + buybacks $206M (FY26)", label: "stockanalysis.com ORCL cash-flow statement", url: "https://stockanalysis.com/stocks/ORCL/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+
+optionality:
+  value: "constrained/locked — negative FCF (-$23.7B), high leverage (debt $156B, D/E ~3.6x), cash pre-committed to the buildout; Ellison ~40%+ founder control is the one free lever"
+  sources:
+    - {figure: "FCF -$23,686M FY26; total debt $156,189M vs $31.9B cash", label: "stockanalysis.com ORCL cash-flow + balance sheet", url: "https://stockanalysis.com/stocks/ORCL/financials/cash-flow-statement/", as_of: "2026-05", confidence: high}
+    - {figure: "Larry Ellison ~42.9% founder-control (per board.yaml houses), directs the AI capex", label: "kestrel board.yaml houses larry-ellison", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "market cap ~$331.2B (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com (aggregate page)", url: "https://companiesmarketcap.com/", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$67.4B/yr FY26 revenue (Cloud ~$34B) + reported ~$450B+ RPO backlog post-Stargate (LOW confidence, unverified) — undeflated per board policy"
+  sources:
+    - {figure: "FY26 revenue $67,357M; cloud $33,990M", label: "stockanalysis.com ORCL financials", url: "https://stockanalysis.com/stocks/ORCL/financials/", as_of: "2026-05", confidence: high}
+    - {figure: "~$450B+ RPO backlog post-Stargate — reported but NOT confirmed on fetched sources; treat as unverified", label: "kestrel board.yaml oracle gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+    - {figure: "also the clinical-records substrate (Cerner) — surfaces in the MH lens", label: "kestrel board.yaml oracle gloss", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+notes: "Biggest uncertainty is whether the OpenAI/Stargate-anchored buildout is fundable: Oracle is spending $55.7B capex on $32B operating cash flow (FCF -$23.7B) against $156B debt and only $31.9B cash — the pocket's most leveraged, most contract-dependent expansion. The ~$450B+ RPO backlog that justifies it is reported but unverified on fetched sources (LOW confidence). posture=expanding is assigned here (board.yaml had none)."

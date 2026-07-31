@@ -1,0 +1,53 @@
+# Bundle — POSTURE + CAPITAL-FLOW: tsmc (foundry pocket, asof 2026-07-26)
+# WebFetch-primary (WebSearch exhausted this session). Primaries: stockanalysis.com
+# TSMC statements (reported in TWD) + companiesmarketcap + Wikipedia for CHIPS/Arizona.
+# FX ASSUMPTION: USD figures computed at ~30 TWD/USD (working rate). x-rates showed
+# 32.34 (stale Jan-2026 datapoint); board.yaml 2026-07-25 implies ~29.6. USD swings
+# ~+/-8% across that 29.6-32.3 band — FX is the single biggest number-uncertainty here.
+node: tsmc
+name: "TSMC"
+pocket: foundry
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Raised 2026 capex to $60-64B (from $52-56B) on AI demand; $265B total US commitment (+$100B, Jul-2026); AZ/JP/DE fabs in flight; record revenue, ~70% foundry share."
+  sources:
+    - {figure: "2026 capex guidance raised to US$60-64B (from $52-56B), citing AI chip demand", label: "Wikipedia — TSMC (2026 capex)", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2026-07", confidence: med}
+    - {figure: "additional US$100B announced -> US$265B total planned US investment (Jul-2026)", label: "Wikipedia — TSMC (Arizona/US buildout)", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2026-07", confidence: med}
+    - {figure: "board.yaml anchor: 'raised 2026 capex to $60-64B + $100B Arizona; CHOKEPOINT'", label: "kestrel board.yaml — tsmc (internal anchor, 2026-07-25)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$117B cash + ST investments (~$109B-$119B across FX 29.6-32.3); TWD 3,518,013M at 30 TWD/USD; total debt ~$33B (TWD 982,447M)"
+    sources:
+      - {figure: "cash & equiv TWD 3,134,218M + ST inv TWD 383,795M = TWD 3,518,013M; total debt TWD 982,447M (Jun 30 2026)", label: "stockanalysis.com TSM balance sheet", url: "https://stockanalysis.com/stocks/TSM/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+      - {figure: "USD/TWD 32.34 (x-rates datapoint, stale Jan-2026); board.yaml implies ~29.6", label: "x-rates USD->TWD", url: "https://www.x-rates.com/calculator/?from=USD&to=TWD&amount=1", as_of: "2026-01", confidence: low}
+  operating:
+    value: "~$88B/yr operating cash flow (TTM TWD 2,634,679M at 30; FY2025 TWD 2,274,976M ~= $76B) — self-funded"
+    sources:
+      - {figure: "OCF TTM TWD 2,634,679M; FY2025 TWD 2,274,976M", label: "stockanalysis.com TSM cash-flow statement", url: "https://stockanalysis.com/stocks/TSM/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$50B/yr capex actually spent (TTM TWD 1,491,123M at 30) climbing toward $60-64B FY2026 guidance; AZ/JP/DE fab buildouts; + CHIPS $6.6B grant + up to $5B loans"
+    sources:
+      - {figure: "capex TTM TWD 1,491,123M (~$50B); FY2025 TWD 1,272,411M", label: "stockanalysis.com TSM cash-flow statement", url: "https://stockanalysis.com/stocks/TSM/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+      - {figure: "Commerce finalized binding US$6.6B CHIPS grant (Nov-2024) + up to US$5B proposed loans", label: "Wikipedia — TSMC (CHIPS Act award)", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2024-11", confidence: high}
+  in:
+    value: "inflows: ~$148B/yr revenue (TTM TWD 4,440,492M at 30; FY2025 TWD 3,809,054M ~$127B) + US CHIPS $6.6B grant + $5B loans; equity — self-funded, no recent raise"
+    sources:
+      - {figure: "revenue TTM TWD 4,440,492M; FY2025 TWD 3,809,054M; net income TTM TWD 1,279,042M", label: "stockanalysis.com TSM financials (income)", url: "https://stockanalysis.com/stocks/TSM/financials/", as_of: "2026-06", confidence: high}
+      - {figure: "US CHIPS $6.6B grant + $5B loans (gov subsidy inflow)", label: "Wikipedia — TSMC (CHIPS Act award)", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2024-11", confidence: high}
+  out:
+    value: "outflows: ~$50B/yr fab capex (rising to $60-64B) + dividends; FCF TTM TWD 1,143,557M (~$38B) after capex"
+    sources:
+      - {figure: "FCF TTM TWD 1,143,557M (OCF minus capex)", label: "stockanalysis.com TSM cash-flow statement", url: "https://stockanalysis.com/stocks/TSM/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+optionality:
+  value: "mixed — FCF-generative and self-funding, but a rising slice is locked to the forced AZ/JP/DE buildout ($265B US commitment; $60-64B 2026 capex)"
+  sources:
+    - {figure: "board.yaml anchor: 'FCF-free but a rising slice locked to the forced AZ/JP/DE buildout'", label: "kestrel board.yaml — tsmc (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "$265B US commitment + $60-64B 2026 capex constrain discretionary use", label: "Wikipedia — TSMC", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2026-07", confidence: med}
+gravity:
+  value: "GROSS ~$148B/yr foundry revenue sits under multi-trillion downstream — ~70% global foundry share, ~90%+ of <7nm; sole/main supplier to Nvidia/Apple/AMD/Broadcom/Qualcomm — CHOKEPOINT (undeflated)"
+  sources:
+    - {figure: "~70% global foundry market share", label: "Wikipedia — TSMC (market share)", url: "https://en.wikipedia.org/wiki/TSMC", as_of: "2026-07", confidence: med}
+    - {figure: "board.yaml anchor: '~90%+ of <7nm; sole/main supplier to Nvidia/Apple/AMD/Broadcom/Qualcomm — CHOKEPOINT'", label: "kestrel board.yaml — tsmc (internal anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "market cap ~$2.092T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com — TSMC", url: "https://companiesmarketcap.com/tsmc/marketcap/", as_of: "2026-07", confidence: med}
+notes: "Biggest uncertainty is the TWD->USD rate (all headline USD numbers move ~+/-8% across the 29.6-32.3 band; TTM capex ~$50B actual vs $60-64B FY2026 guidance is a timing, not contradiction, gap). Advanced-node (<7nm) share is a board/internal anchor, not independently fetched this session."

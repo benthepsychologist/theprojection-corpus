@@ -1,0 +1,54 @@
+# Bundle — hyperscaler node: microsoft (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml microsoft. EXTENDS the axis
+# strings + artifacts/bundles/microsoft-axes/provenance.yaml (the axis-source
+# anchor) with posture and the in/out/available/operating/deployed breakdown.
+node: microsoft
+name: "Microsoft"
+pocket: hyperscaler
+asof: 2026-07-26
+
+posture:
+  value: hedging
+  basis: "Building in-house MAI models (Suleyman) while still riding its ~27% OpenAI stake + $250B Azure/OpenAI compute deal — two incompatible AI bets kept open at once."
+  sources:
+    - {figure: "board.yaml posture: hedging — 'MAI build-out vs. the OpenAI stake'", label: "kestrel attention/board.yaml microsoft (classify anchor)", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "MAI in-house court under Suleyman; OpenAI stake + $250B Azure services agreement held in parallel", label: "kestrel threads.yaml (microsoft-mai / openai-stake lineage) — internal reconstruction", url: "attention/threads.yaml", as_of: "2026-07", confidence: low}
+
+capital:
+  available:
+    value: "~$78.3B cash+STI (Mar-2026); ~$250B+ commandable/12mo incl. AAA debt access"
+    sources:
+      - {figure: "cash+STI $78,272M (cash $32,105M + ST investments $46,167M); total debt $56,965M — Q3 FY26 ended Mar 31 2026", label: "stockanalysis.com MSFT balance sheet (quarterly)", url: "https://stockanalysis.com/stocks/MSFT/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+      - {figure: "cash + short-term investments $78,272M (primary balance sheet, ended Mar 31 2026)", label: "Microsoft FY26 Q3 press release — balance sheet", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+      - {figure: "'~$250B+ commandable/12mo' incl. AAA credit debt access — analytical, AAA rating asserted from general knowledge, not fetched", label: "kestrel board.yaml microsoft capitalization axis + microsoft-axes bundle", url: "artifacts/bundles/microsoft-axes/provenance.yaml", as_of: "2026-07", confidence: low}
+  operating:
+    value: "~$170B/yr operating cash flow (TTM ended Mar-2026)"
+    sources:
+      - {figure: "operating cash flow $170,141M TTM; $136,162M FY25", label: "stockanalysis.com MSFT cash-flow statement", url: "https://stockanalysis.com/stocks/MSFT/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$97-107B/yr capex in-flight + $250B Azure/OpenAI compute earmarked"
+    sources:
+      - {figure: "capex (P&E additions) $97,225M TTM (annualizing toward ~$107B); $64,551M FY25 — the earmark is rising", label: "stockanalysis.com MSFT cash-flow statement", url: "https://stockanalysis.com/stocks/MSFT/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+      - {figure: "$250B Azure services agreement to OpenAI (multi-year committed compute)", label: "Wikipedia OpenAI (attrib. reporting) — via kestrel openai-axes bundle", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+  in:
+    value: "~$318B TTM revenue (FY26 pace); Azure/cloud the growth engine"
+    sources:
+      - {figure: "TTM revenue $318,273M (9-mo FY26 $241,832M + FY25 Q4 $76,441M)", label: "Microsoft FY26 Q3 + FY25 Q4 press releases (cross-checked vs stockanalysis) — via microsoft-axes bundle", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", as_of: "2026-03", confidence: high}
+  out:
+    value: "~$145B/yr out: ~$97B capex + ~$26B dividends + ~$22B buybacks (TTM)"
+    sources:
+      - {figure: "capex $97,225M + dividends $25,856M + buybacks $22,238M (TTM ended Mar 31 2026)", label: "stockanalysis.com MSFT cash-flow statement", url: "https://stockanalysis.com/stocks/MSFT/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+
+optionality:
+  value: "mixed — legally free discretionary treasury, but a rising majority self-earmarked to the AI buildout (capex ~$107B/yr, up from $64.6B FY25) + ~$26B/yr dividend"
+  sources:
+    - {figure: "capex risen $64.6B (FY25) -> ~$97-107B (TTM); dividend $25.9B/yr", label: "stockanalysis.com MSFT cash-flow statement", url: "https://stockanalysis.com/stocks/MSFT/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "market cap ~$2.835T (SIDE-LABEL, not commanded capital)", label: "companiesmarketcap.com (aggregate page)", url: "https://companiesmarketcap.com/", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "GROSS ~$3.0T/yr reconstructed ecosystem (the popular '$4T economy': TTM rev $318B x IDC partner multiplier) — undeflated per board policy"
+  sources:
+    - {figure: "$8.45 (services)/$10.93 (software) partner revenue per $1 of Microsoft revenue", label: "IDC #US52483124 'Microsoft Partners...', Sept 2024 — SPONSORED BY MICROSOFT (vendor-commissioned, upper bound)", url: "https://partner.microsoft.com/en-us/blog/article/ai-value-for-partners", as_of: "2024-09", confidence: high}
+    - {figure: "gross ~$3-4T is RECONSTRUCTED (revenue x multiplier; IDC/MS state no aggregate $)", label: "microsoft-axes bundle derivation note", url: "artifacts/bundles/microsoft-axes/provenance.yaml", as_of: "2026-07", confidence: low}
+
+notes: "Biggest uncertainty is the hedge itself — whether MAI or the OpenAI stake wins decides Microsoft's posture; the two are structurally incompatible. Gravity gross is a vendor-commissioned reconstruction (upper bound). Capitalization is rock-solid (primary press release, two-source). AAA rating asserted from general knowledge — verify before publishing."

@@ -1,0 +1,51 @@
+# Bundle — state node: united-kingdom (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml united-kingdom (rank state,
+# sphere uk, tier institutional-memory). Fiscal reading: available = FX
+# reserves, operating = govt budget, deployed = govt debt, in = tax revenue,
+# out = expenditure. Gravity = GDP. Method: WebFetch primary (WebSearch
+# exhausted) — Wikipedia aggregate lists (IMF base).
+node: united-kingdom
+name: "United Kingdom"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Fiscal discipline under pressure — debt >100% of GDP, a -4.25% deficit (2024) with binding fiscal rules pushing restraint; post-Brexit institutional-memory power defending position rather than expanding footprint."
+  sources:
+    - {figure: "2024 deficit -$152.47B (-4.25% of GDP); expenditure 43.38% of GDP", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+    - {figure: "gross govt debt 102.3% of GDP (2025), net 93.8%", label: "Wikipedia — List of countries by government debt (IMF 2025)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: high}
+
+capital:
+  available:
+    value: "~$189B FX reserves (Nov-2024) — modest; sterling is its own (minor reserve) currency, so the Bank of England can issue, but no large sovereign fund"
+    sources:
+      - {figure: "foreign-exchange reserves incl. gold $189,228M (1 Nov 2024)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2024-11", confidence: high}
+  operating:
+    value: "~$1.56T annual govt expenditure / ~$1.40T revenue (2024)"
+    sources:
+      - {figure: "2024 revenue $1,403.80B (39.13% of GDP); expenditure $1,556.27B (43.38% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt 102.3% of GDP (2025) ≈ ~$4.0-4.4T nominal (derived from GDP × ratio); net 93.8%"
+    sources:
+      - {figure: "gross debt 102.3% of GDP (2025); nominal derived from IMF 2026 GDP ~$4.26T", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+  in:
+    value: "~$1.40T tax revenue (2024, 39.1% of GDP)"
+    sources:
+      - {figure: "2024 revenue $1,403.80B (39.13% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$1.56T expenditure (2024); deficit -$152B (-4.25% of GDP)"
+    sources:
+      - {figure: "2024 expenditure $1,556.27B; deficit -$152.47B (-4.25% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "mixed — retains its own currency + central bank (can print/devalue, unlike euro members), giving monetary flexibility; but >100%-of-GDP debt, a minor reserve-currency status, and post-Brexit market discipline (cf. the 2022 gilt episode) cap it."
+  sources:
+    - {figure: "own currency/central bank (flexible) vs gross debt 102.3% of GDP + minor reserve status", label: "Wikipedia — govt debt list + analytical (sterling monetary sovereignty)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: med}
+
+gravity:
+  value: "~$4.26T GDP (nominal, IMF 2026) — mid-high single-state gravity; the state's gravity IS its GDP"
+  sources:
+    - {figure: "nominal GDP $4,264,794M (IMF 2026); $4,002,588M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Mid graded sovereignty (institutional-memory tier — outsized soft/financial-hub weight relative to GDP via the City of London). Biggest uncertainty is posture framing: 'consolidating' captures the fiscal-restraint stance; some read continued deficit spending as mild expansion. Nominal debt is derived (ratio×GDP), flagged low; all flow figures are IMF-sourced high."

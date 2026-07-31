@@ -1,0 +1,53 @@
+# Bundle — node posture + capital-flow: jeff-bezos (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Founder-billionaire — control weights over paper wealth.
+# Bezos's primary realm (Amazon) is OFF the kestrel board (amazon-aws is
+# held_by andy-jassy, not bezos) — he stepped back to Executive Chairman.
+node: jeff-bezos
+name: "Jeff Bezos"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Stepped back from Amazon OPERATIONS (Executive Chairman since Jul-2021, Jassy is CEO) but actively expanding off-board deployments: Blue Origin self-funded via ~$1B/yr Amazon stock sales since 2016, Bezos Earth Fund, Day 1 Fund, accelerated stock sales (2024) diversifying into 'other ventures'."
+  sources:
+    - {figure: "stepped down as Amazon CEO Jul-2021, succeeded by Andy Jassy (former AWS CEO); retains Executive Chairman", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2021-07", confidence: high}
+    - {figure: "since 2016, selling ~$1B in Amazon stock per year to capitalize Blue Origin", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$279-284B personal net worth (Bloomberg/Forbes, 2026) — overwhelmingly Amazon stock; elite liquidity but a step removed from Amazon OPERATING control"
+    sources:
+      - {figure: "Bloomberg Billionaires Index ~$279B (May-2026, 4th wealthiest globally)", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2026-05", confidence: high}
+      - {figure: "Forbes ~$284B (2026)", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2026", confidence: high}
+      - {figure: "deployable anchor: ~$150B elite liquidity, weaker control; self-funds Blue Origin", label: "kestrel board.yaml jeff-bezos deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "does NOT operate Amazon day-to-day — Executive Chairman only; Andy Jassy (CEO) runs the realm. Amazon (amazon-aws) is off-board-held by jassy: ~$263B commandable/12mo, $716.9B/yr GROSS net sales"
+    sources:
+      - {figure: "amazon-aws: held_by andy-jassy; ~$263B commandable/12mo ($123B cash+STI + ~$139.5B/yr operating cash flow); gravity ~$716.9B/yr GROSS net sales", label: "kestrel board.yaml amazon-aws axes", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+  deployed:
+    value: "Blue Origin (self-funded, ~$1B/yr Amazon stock since 2016); The Washington Post ($250M cash, announced Aug-2013, closed Oct-2013); Bezos Earth Fund (climate); Day 1 Fund (homelessness services + preschools)"
+    sources:
+      - {figure: "Washington Post purchased for $250M cash (announced Aug 5 2013, closed Oct 1 2013)", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2013-10", confidence: high}
+      - {figure: "Blue Origin founded Sep-2000; Bezos Earth Fund + Day 1 Fund named as current focuses alongside Blue Origin/WaPo", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2026-07", confidence: high}
+  in:
+    value: "no dividend (Amazon pays none) — inflow is Amazon stock appreciation, realized only via periodic large share sales (e.g. $4B sold Feb-2024)"
+    sources:
+      - {figure: "Feb-2024: sold 24M shares worth $4B, plans to sell 50M shares over the following year", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2024-02", confidence: high}
+  out:
+    value: "~$1B/yr into Blue Origin (2016-present); $250M Washington Post (2013); 25% of his Amazon shares (~$36B) transferred to MacKenzie Scott in the 2019 divorce, while Bezos retained voting control"
+    sources:
+      - {figure: "2019 divorce: MacKenzie Scott received 25% of his Amazon shares, valued ~$36B; Bezos retained voting control", label: "Wikipedia — Jeff Bezos", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2019", confidence: high}
+
+optionality:
+  value: "mixed — elite personal liquidity (~$279-284B) is FREE to deploy, but Amazon OPERATING control is weaker: Executive Chairman not CEO, plus 25% of his Amazon stake left the family in the 2019 divorce"
+  sources:
+    - {figure: "Executive Chairman (not CEO) since Jul-2021; 25% Amazon-share transfer in 2019 divorce", label: "Wikipedia — Jeff Bezos + kestrel board.yaml jeff-bezos deployable anchor", url: "https://en.wikipedia.org/wiki/Jeff_Bezos", as_of: "2026-07", confidence: med}
+
+gravity:
+  value: "off-board directly, but adjacent — Blue Origin (space launch) + Washington Post (media) are his own; reserve/founder-halo influence over Amazon's $716.9B/yr GROSS realm he no longer runs day-to-day"
+  sources:
+    - {figure: "Blue Origin + Washington Post as his active personal-capital projects; Amazon realm ($716.9B/yr GROSS net sales) run by Jassy", label: "Wikipedia — Jeff Bezos + kestrel board.yaml amazon-aws gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+
+notes: "Net worth diverges Bloomberg ($279B, May-2026) vs Forbes ($284B, 2026) — both cited, treat as approximate range. His CURRENT Amazon stake % (post-2019-divorce, post ongoing multi-year share sales) was not found precisely on the fetched page — confidence: low on any exact percentage; the deployable/optionality discount (board.yaml) already prices in the weaker-control read. Biggest uncertainty: exact live Blue Origin annual burn rate beyond the historical '~$1B/yr' figure."

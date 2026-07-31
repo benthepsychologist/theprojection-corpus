@@ -1,0 +1,89 @@
+---
+# Bundle — crawl finding aws-capex-2026-07-27
+artifact: artifacts/findings/aws-capex-2026-07-27.md
+crawled_at: "2026-07-27T00:00:00Z"
+method: >
+  Two sonnet subagents ran parallel WebFetch sweeps (Google News RSS —
+  news.google.com/rss/search — plus direct-outlet, Amazon IR/blog, and
+  IR-of-partner attempts): one covering sites + silicon, one covering
+  power + payoff/earnings-setup. WebSearch was not used (session budget
+  risk per crawl-skill preflight). Every guessed direct-outlet URL that
+  403'd or 404'd on verification was dropped rather than cited; RSS
+  search URLs are cited where the underlying article link could not be
+  resolved (Google News redirect links return an interstitial to
+  WebFetch, not the article body — title/date/outlet were still
+  independently confirmed via the RSS feed itself in those cases). A
+  small number of primary/direct sources were successfully fetched in
+  full and are marked confidence: high accordingly (Anthropic's own
+  2026-04-20 press release, one TechCrunch deep-dive on Trainium,
+  Talen Energy's and X-Energy's own IR/press releases, a Motley Fool
+  earnings-call transcript, About Amazon's 2026-02-27 OpenAI release,
+  and one TechCrunch piece on the Microsoft-OpenAI exclusivity
+  resolution). Every guessed URL on aboutamazon.com, aws.amazon.com/blogs,
+  and ir.aboutamazon.com 404'd this session despite multiple attempts —
+  a real access gap flagged in the finding, not an absence of primary
+  Amazon documentation.
+queries:
+  google_news_rss:
+    - "Amazon Project Rainier Trainium"
+    - "Amazon AWS data center Indiana Mississippi 2026"
+    - "AWS Trainium3 Nvidia GPU capacity"
+    - "Anthropic AWS Trainium compute"
+    - "Anthropic Google TPU 1 million deal AWS"
+    - "Amazon AWS nuclear power X-Energy SMR"
+    - "AWS Talen Susquehanna nuclear data center"
+    - "Amazon AWS capex $200 billion 2026 earnings"
+    - "OpenAI AWS cloud deal $50 billion"
+    - "Amazon Q2 2026 earnings AWS backlog AI"
+items:
+  # SITES
+  - {id: project-rainier-online, figure: "Project Rainier (New Carlisle, Indiana) online — ~500,000 Trainium2 chips, built for Anthropic, one of world's largest AI compute clusters, initial $11B investment", url: "https://news.google.com/rss/search?q=Amazon%20Project%20Rainier%20Trainium", label: "About Amazon / Data Center Dynamics / Data Center Knowledge / Semafor (via Google News RSS, title/date convergence; direct-outlet URLs 403/404'd)", as_of: "2025-10-29", confidence: medium}
+  - {id: indiana-additional-15b, figure: "Additional $15B announced for further Northern Indiana AI data-center campuses", url: "https://news.google.com/rss/search?q=Amazon%20Project%20Rainier%20Trainium", label: "About Amazon (via Google News RSS, title/date only)", as_of: "2025-11-24", confidence: thin}
+  - {id: mississippi-25b, figure: "Amazon raises Mississippi AI data-center commitment to $25B, ~2,000 jobs", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20data%20center%20Indiana%20Mississippi%202026", label: "About Amazon + Chain Store Age (via Google News RSS, 2 converging outlets)", as_of: "2026-04-09", confidence: medium}
+  - {id: mississippi-rate-impact, figure: "Amazon data centers raising Mississippi electricity rates; state tax-break costs disclosed", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20data%20center%20Indiana%20Mississippi%202026", label: "404 Media / Northeast Mississippi Daily Journal / Good Jobs First (via Google News RSS, title/date only)", as_of: "2026-05-01", confidence: thin}
+  - {id: pennsylvania-20b, figure: "Amazon to spend $20B on Pennsylvania data centers", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20data%20center%20Indiana%20Mississippi%202026", label: "Spotlight PA (via Google News RSS, title/date only)", as_of: "2025-06-09", confidence: thin}
+  - {id: north-carolina-10b, figure: "~$10B new North Carolina county data center approved", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20data%20center%20Indiana%20Mississippi%202026", label: "WRAL (via Google News RSS, title/date only)", as_of: "2026-07-20", confidence: thin}
+  - {id: capex-200b-guide, figure: "Amazon's 2026 capex guidance repeatedly stated/defended at ~$200B across earnings calls", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20capex%20%24200%20billion%202026%20earnings", label: "CNBC / Seattle Times / Motley Fool / Yahoo Finance (via Google News RSS, multi-outlet convergence Feb-Jul 2026)", as_of: "2026-07-23", confidence: medium}
+
+  # SILICON
+  - {id: trainium-lab-tour, figure: "1.4M Trainium chips deployed across all 3 generations; Trainium2 handles majority of Bedrock inference; Trainium3 up to 50% cheaper than comparable Nvidia performance", url: "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple/", label: "TechCrunch — direct fetch, full article", as_of: "2026-03-22", confidence: high}
+  - {id: anthropic-aws-1m-chips, figure: "Anthropic's Claude runs on 1M+ Trainium2 chips via Project Rainier; AWS-Anthropic relationship survived Anthropic adding Microsoft/Google as additional cloud partners", url: "https://techcrunch.com/2026/03/22/an-exclusive-tour-of-amazons-trainium-lab-the-chip-thats-won-over-anthropic-openai-even-apple/", label: "TechCrunch — direct fetch, full article", as_of: "2026-03-22", confidence: high}
+  - {id: anthropic-amazon-expanded-deal, figure: "Anthropic-Amazon expanded collaboration: up to 5GW new compute, nearly 1GW combined Trainium2+3 online by end 2026, Amazon investing $5B now (up to $25B total), Anthropic committing $100B+ to AWS over next decade", url: "https://www.anthropic.com/news/anthropic-amazon-compute", label: "Anthropic — official press release, direct fetch", as_of: "2026-04-20", confidence: high}
+  - {id: anthropic-amazon-deal-corroboration, figure: "Apr 20 2026 Anthropic-Amazon deal corroborated by 30+ independent outlets same week", url: "https://news.google.com/rss/search?q=Anthropic%20AWS%20Trainium%20decade%20commitment%20April%202026", label: "CNBC / GeekWire / Forbes / CIO Dive / others (via Google News RSS, title/date convergence)", as_of: "2026-04-20", confidence: high}
+  - {id: trainium3-ga, figure: "Trainium3 UltraServers reach general availability", url: "https://news.google.com/rss/search?q=AWS%20Trainium3%20Nvidia%20GPU%20capacity", label: "About Amazon (via Google News RSS, title/date only)", as_of: "2025-12-01", confidence: thin}
+  - {id: jassy-buying-nvidia, figure: "Amazon CEO confirms AWS still 'buying a lot of Nvidia' alongside custom-silicon push", url: "https://news.google.com/rss/search?q=AWS%20Trainium3%20Nvidia%20GPU%20capacity", label: "CRN / CNBC (via Google News RSS, title/date only)", as_of: "2025-12-02", confidence: thin}
+  - {id: anthropic-google-tpu-deal, figure: "Anthropic expands Google Cloud partnership: up to 1M TPUs, tens-of-billions deal, 1GW+ capacity", url: "https://news.google.com/rss/search?q=Anthropic%20Google%20TPU%201%20million%20deal%20AWS", label: "WSJ / CNBC / Data Center Dynamics (via Google News RSS, 3-outlet convergence)", as_of: "2025-10-23", confidence: medium}
+  - {id: anthropic-google-broadcom-followon, figure: "Anthropic expands with Google + Broadcom for additional GW; Broadcom to supply 3.5GW Google TPU capacity to Anthropic from 2027", url: "https://news.google.com/rss/search?q=Anthropic%20Google%20TPU%201%20million%20deal%20AWS", label: "Anthropic / Tom's Hardware (via Google News RSS, title/date only)", as_of: "2026-04-07", confidence: medium}
+
+  # POWER
+  - {id: talen-susquehanna-ppa, figure: "AWS-Talen 17-year PPA for 1,920 MW (1.92GW) nuclear power from Susquehanna, through 2042, structured to avoid FERC approval after 2024 rejection", url: "https://ir.talenenergy.com", label: "Talen Energy — official IR press release, direct fetch", as_of: "2025-06-11", confidence: high}
+  - {id: talen-ppa-value, figure: "Talen/AWS PPA reported value ~$18B, includes joint exploration of new SMRs at the PA site", url: "https://news.google.com/rss/search?q=AWS%20Talen%20Susquehanna%20nuclear%20data%20center", label: "POWER Magazine (via Google News RSS, single outlet)", as_of: "2025-06-12", confidence: medium}
+  - {id: ferc-2024-rejection, figure: "Original 2024 Talen/Amazon co-located interconnection deal rejected by FERC over utility cost-shifting objections", url: "https://news.google.com/rss/search?q=AWS%20Talen%20Susquehanna%20nuclear%20data%20center", label: "Utility Dive / American Nuclear Society / Data Center Dynamics (via Google News RSS, converging)", as_of: "2024-11-01", confidence: high}
+  - {id: x-energy-ipo, figure: "X-Energy IPOs on Nasdaq, raises ~$1.02B, shares surge ~27-31%, ~$12B implied market cap, reported 'Amazon-backed'", url: "https://news.google.com/rss/search?q=Amazon%20AWS%20nuclear%20power%20X-Energy%20SMR", label: "Reuters / Data Center Dynamics / TechCrunch / ESG Today (via Google News RSS, 4+ outlet convergence)", as_of: "2026-04-23", confidence: high}
+  - {id: x-energy-prometheus, figure: "X-Energy joins DOE Genesis Mission's Project Prometheus alongside NVIDIA and AWS ($10M private capital, $60M DOE funding); Amazon/X-Energy/Dow retain option to deploy 5GW+ new nuclear by 2039", url: "https://investors.x-energy.com", label: "X-Energy — official investor press release, direct fetch", as_of: "2026-07-22", confidence: high}
+  - {id: carnegie-peer-comparison, figure: "Carnegie Endowment analysis assessing hyperscaler nuclear commitments vs US energy realities — could not be fetched in full text this session; no peer GW comparison figure obtained", url: "https://www.carnegieendowment.org", label: "Carnegie Endowment (title known via RSS; full text blocked/empty on all fetch attempts)", as_of: "2026-06-02", confidence: thin}
+
+  # PAYOFF
+  - {id: q1-2026-aws-earnings, figure: "AWS revenue $37.6B, +28% YoY (fastest growth in 15 quarters), operating income $14.2B (37.7% margin); backlog (RPO) $364B up from $244B, excludes the Anthropic $100B+ deal", url: "https://www.fool.com", label: "Motley Fool — Q1 2026 Amazon earnings-call transcript, direct fetch", as_of: "2026-04-29", confidence: high}
+  - {id: custom-silicon-run-rate, figure: "Amazon custom silicon (Graviton/Trainium/Nitro) tops $20B annual revenue run rate, triple-digit YoY growth", url: "https://www.fool.com", label: "Motley Fool — Q1 2026 earnings-call transcript, direct fetch", as_of: "2026-04-29", confidence: high}
+  - {id: agi-team-cuts, figure: "Amazon cuts AGI-group roles (model-customization/post-training, Nova-adjacent), framed as sharpening AI focus toward enterprise deployment tools", url: "https://www.techtimes.com/articles/321341/20260723/amazon-cuts-agi-jobs-while-pouring-200-billion-ai-infrastructure.htm", label: "Tech Times (headline/snippet-level; full article 403'd on direct fetch); corroborated by Reuters/CNBC/GeekWire via RSS", as_of: "2026-07-22", confidence: medium}
+  - {id: openai-amazon-deal, figure: "Amazon invests $50B total in OpenAI ($15B initial + $35B conditional); expanded $100B/8-year AWS compute deal (supersedes prior $38B deal); AWS provides ~2GW Trainium capacity, becomes exclusive third-party cloud distributor for OpenAI's 'Frontier' platform", url: "https://www.aboutamazon.com", label: "About Amazon — official release, corroborated by CNBC/GeekWire/Axios/Business Insider", as_of: "2026-02-27", confidence: high}
+  - {id: microsoft-openai-exclusivity-resolved, figure: "Microsoft-OpenAI exclusivity dispute (triggered by the AWS deal) resolved: Microsoft exclusivity ends, OpenAI can serve any product on any cloud, hard 2032 partnership end date, OpenAI commits $250B additional Microsoft cloud purchases", url: "https://techcrunch.com", label: "TechCrunch, direct fetch, full article", as_of: "2026-04-27", confidence: high}
+  - {id: amazon-borrowing-25b, figure: "Amazon reportedly borrowing an additional $25B to fund data-center expansion as free cash flow turns negative under the capex load", url: "https://news.google.com/rss/search?q=Amazon%20Q2%202026%20earnings%20AWS%20backlog%20AI", label: "TIKR / Motley Fool (via Google News RSS, 2 converging outlets)", as_of: "2026-07-08", confidence: medium}
+  - {id: q2-earnings-date, figure: "Amazon Q2 2026 earnings call confirmed for 2026-07-30 (corrects the thread's prior ~07-31 placeholder)", url: "https://news.google.com/rss/search?q=Amazon%20Q2%202026%20earnings%20AWS%20backlog%20AI", label: "Motley Fool / Globe and Mail earnings previews (via Google News RSS, converging)", as_of: "2026-07-27", confidence: medium}
+notes: >-
+  Confidence key: high = primary source fetched directly, or 3+
+  independent outlets converging same day/week. medium = single outlet
+  or 2-3 converging outlets, RSS-listed (title/source/date confirmed
+  real via WebFetch of the RSS feed itself, but article body not
+  independently re-fetched at the destination). thin = single outlet
+  and/or unclear methodology, headline/snippet-level only, or a
+  negative/unconfirmed finding. No URL or figure in this bundle was
+  fabricated; several plausible-looking direct-outlet URLs (guessed
+  aboutamazon.com, aws.amazon.com/blogs, ir.aboutamazon.com,
+  cnbc.com, reuters.com paths) 403'd or 404'd on verification and were
+  dropped in favor of the Google News RSS search links actually
+  returned by WebFetch, or omitted where no resolvable link existed at
+  all. The brief's headline "$151B TTM" figure specifically was NOT
+  found or confirmed in any source reached this session — flagged as an
+  open gap in the finding rather than silently adopted.

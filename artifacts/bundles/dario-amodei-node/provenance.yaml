@@ -1,0 +1,53 @@
+# Bundle — node posture + capital-flow: dario-amodei / Dario Amodei (2026-07-26)
+# PERSON node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted): Wikipedia Dario Amodei. AI-lab head — holds real
+# founder equity (unlike Altman), but Anthropic is private with no disclosed
+# ownership %, so personal figures are third-party estimates against the
+# company's own paper valuation, not a filed stake.
+node: dario-amodei
+name: "Dario Amodei"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Anthropic's own posture (Series H $65B at $965B May-2026, confidential IPO filing Jun-2026, multi-partner compute deals) is the org axis Amodei is directing as cofounder/CEO; no personal-level counter-signal found."
+  sources:
+    - {figure: "Series H $65B at $965B valuation — 'most valuable pure-play AI company'", label: "Wikipedia — Anthropic (via anthropic-node bundle)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+    - {figure: "filed confidential IPO papers targeting fall 2026 debut", label: "Wikipedia — Anthropic (via anthropic-node bundle)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-06", confidence: high}
+
+capital:
+  available:
+    value: "Forbes-estimated personal net worth ~$15.5B (Jun-2026) — but this is a THIRD-PARTY MARK against Anthropic's private $965B valuation, not disclosed liquid/deployable capital. His actual ownership percentage in Anthropic is not stated on Wikipedia, so this figure should be read as paper wealth, largely illiquid pending the confidential IPO."
+    sources:
+      - {figure: "Forbes-estimated net worth $15.5B (Jun-2026)", label: "Wikipedia — Dario Amodei (attrib. Forbes)", url: "https://en.wikipedia.org/wiki/Dario_Amodei", as_of: "2026-06", confidence: low}
+  operating:
+    value: "directs Anthropic's ~$120B cumulative raised capital (Series G $30B + H $65B dominate, plus multi-$10B compute backing) as cofounder/CEO — the strong axis, not a personal balance sheet."
+    sources:
+      - {figure: "~$120B cumulative raised (Series G $30B + H $65B dominate; + multi-$10B compute backing Amazon Rainier / Google TPU); valuation $965B (May-2026) is a separate label", label: "kestrel board.yaml anthropic capitalization axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+  deployed:
+    value: "strategic bets set in motion as CEO: multi-$10B+ compute commitments across Amazon (Rainier), Google (up to 1M TPUs), Azure/Nvidia ($30B), Akamai ($1.8B), AMD (2GW) — no comparable personal-scale deployment disclosed."
+    sources:
+      - {figure: "Amazon $8B cumulative, Google up to 1M TPUs, Azure/Nvidia $30B, Akamai $1.8B, AMD 2GW compute", label: "anthropic-node bundle (Wikipedia — Anthropic)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+  in:
+    value: "personal: no disclosed salary/equity-grant figures; the $15.5B Forbes estimate is the only inflow-adjacent figure, and it is a valuation mark, not a cash event. Organizational: funding rounds ($30B G + $65B H within ~7 months) plus >$5B/yr run-rate revenue."
+    sources:
+      - {figure: "$30B Series G (Feb) + $65B Series H (May) 2026", label: "anthropic-node bundle (Wikipedia — Anthropic)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+      - {figure: "Forbes-estimated net worth $15.5B (Jun-2026) — a paper mark, not a cash inflow", label: "Wikipedia — Dario Amodei (attrib. Forbes)", url: "https://en.wikipedia.org/wiki/Dario_Amodei", as_of: "2026-06", confidence: low}
+  out:
+    value: "no personal capital outflows disclosed (no reported giving, sales, or personal deployments); organizationally, compute drawdowns across Amazon/Google/Azure/Akamai/AMD."
+    sources:
+      - {figure: "compute obligations across Amazon/Google/Azure/Akamai/AMD; net burn not disclosed", label: "anthropic-node bundle (Wikipedia — Anthropic)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+
+optionality:
+  value: "mixed — Amodei holds real cofounder/board equity (unlike Altman) and no state or supervoting-class control sits over him, but (a) his actual ownership % is undisclosed, so the $15.5B figure is an estimate not a filed stake, and (b) it is almost entirely illiquid paper value in a private company pending the confidential IPO — closer to 'locked-until-liquidity-event' than to Zuckerberg/Musk-style free control."
+  sources:
+    - {figure: "mixed — founder/board equity, no state; but heavily compute-earmarked and the Amazon/Google stakes are partly circular", label: "kestrel board.yaml anthropic optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+    - {figure: "co-founder (2021, with sister Daniela and other ex-OpenAI staff); CEO", label: "Wikipedia — Dario Amodei", url: "https://en.wikipedia.org/wiki/Dario_Amodei", as_of: "2026", confidence: high}
+
+gravity:
+  value: ">$5B/yr GROSS run-rate revenue, 300k+ business customers — the economy that moves on Amodei's say-so as CEO, not a personal-wealth gravity."
+  sources:
+    - {figure: ">$5B/yr GROSS run-rate revenue, 300k+ business customers (Aug-2025, likely higher now)", label: "kestrel board.yaml anthropic gravity axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: low}
+
+notes: "Biggest uncertainty: Amodei's actual percentage ownership of Anthropic is not disclosed anywhere in the fetched sources — the $15.5B Forbes figure (Jun-2026) is a third-party estimate against the $965B valuation, and Wikipedia does not corroborate a specific stake. Treat personal 'available' capital as largely illiquid paper wealth (confidence: low) until a liquidity event (the confidential IPO) resolves it. Distinct from the org's own capitalization, which is well-sourced and high-confidence via board.yaml."

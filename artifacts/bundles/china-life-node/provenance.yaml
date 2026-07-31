@@ -1,0 +1,41 @@
+node: china-life
+name: "China Life"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: consolidating
+  basis: "The most state-directed insurer — pulled back from international capital markets (delisted its US ADS, final trade Sep 1 2022), no offensive overseas expansion; domestic life pool deploying at state direction (e.g. $3.5B into the Honghu private fund, 2023)."
+  sources:
+    - {figure: "Delisted American Depositary Shares, final trading Sep 1 2022; invested $3.5B in Honghu Private Securities Investment Fund with New China Life (2023)", label: "Wikipedia — China Life Insurance Company (recent activity)", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+capital:
+  available:
+    value: "No free dry powder — the pile is a liability-matched, state-directed life general account. Deployable headroom is C-ROSS solvency surplus only; allocation is steered by Beijing. Cash figure not separately pulled this session."
+    sources:
+      - {figure: "Majority state-owned (China Life Insurance Group 68.37% + China Securities Finance 2.03% + Central Huijin 0.42% = >70% state)", label: "Wikipedia — China Life Insurance Company (ownership)", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+  operating:
+    value: "~$139.6B/yr total revenue (2023, gross premiums the bulk); net result was a small LOSS (~-$841M) in 2023 — a weak investment-return year. Figures Wikipedia-reported in USD."
+    sources:
+      - {figure: "Total revenue US$139.6B; net income US$-841.2M (2023)", label: "Wikipedia — China Life Insurance Company (2023 financials)", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+  deployed:
+    value: "~$954-958B total assets — a nearly pure life general account, so the investment portfolio is ~90%+ of that (~$850-900B est.). No banking/tech dilution. Underlying CNY, Wikipedia gives USD."
+    sources:
+      - {figure: "Total assets US$954.0B (2023)", label: "Wikipedia — China Life Insurance Company", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+      - {figure: "Total assets $957.8B (2024 ranking basis)", label: "Wikipedia — List of largest insurance companies (2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+      - {figure: "Investment portfolio ~$850-900B (INFERRED as ~90%+ of assets for a pure life insurer; not a filed line item)", label: "derived estimate — flag low", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2024-12", confidence: low}
+  in:
+    value: "Gross life & annuity premium inflows ~$140B/yr (the bulk of the $139.6B revenue); domestic-only, no cross-border premium base."
+    sources:
+      - {figure: "~$140B/yr gross premium (board framing; total revenue $139.6B 2023)", label: "Wikipedia — China Life Insurance Company", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: med}
+  out:
+    value: "Policy benefits/claims; state-steered investment allocation (domestic equities via vehicles like Honghu, govt bonds, strategic SOE support); dividends to the state parent."
+    sources:
+      - {figure: "$3.5B into Honghu private securities fund (2023) as directed domestic deployment", label: "Wikipedia — China Life Insurance Company", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: med}
+optionality:
+  value: "locked — majority state-owned (>70%), most state-directed insurer on the board; capital allocation follows national policy, not return-maximization. Liability-matched life general account on top."
+  sources:
+    - {figure: "China Life Insurance Group 68.37% state ownership; central SOE", label: "Wikipedia — China Life Insurance Company", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+gravity:
+  value: "~$140B/yr GROSS premium routed — thin vs the ~$958B asset stock; no operating conglomerate or platform layer, so gravity << capital. Its weight is as a state-directed domestic capital allocator."
+  sources:
+    - {figure: "Revenue $139.6B/yr vs total assets $954-958B", label: "Wikipedia — China Life Insurance Company", url: "https://en.wikipedia.org/wiki/China_Life_Insurance_Company", as_of: "2023-12", confidence: high}
+notes: "Biggest uncertainty: the ADS delisting (2022) removed the US-filing trail, so the freshest firm figures are 2023 (Wikipedia) / 2024 (rankings table); the investment-portfolio line is INFERRED (low confidence) from total assets, and premium-only inflow is approximate. All underlying CNY."

@@ -1,0 +1,46 @@
+node: allianz
+name: "Allianz"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: consolidating
+  basis: "Reshaping the portfolio — bought HSBC Life Singapore ($2.09B, Jun 2025), exited the Bajaj Allianz India JV (sold 26% for EUR 2.6B, Mar 2025), blocked on Income Insurance (Singapore govt intervened, withdrew $1.63B offer Dec 2024)."
+  sources:
+    - {figure: "HSBC Life Singapore acquired for $2.09B (Jun 2025); Bajaj Allianz JV 26% stake sold for EUR 2.6B (Mar 2025); withdrew ~$1.63B Income Insurance offer after Singapore govt intervention (Dec 2024)", label: "Wikipedia — Allianz (recent strategic moves)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-06", confidence: high}
+capital:
+  available:
+    value: "Own general-account investments ~EUR 810B (~$890B) — but solvency-constrained, NOT free dry powder; deployable headroom is the Solvency-II surplus, not the whole pile. FX: reported in EUR (~$1.10/EUR)."
+    sources:
+      - {figure: "Own general account ~EUR 810B (board spin-up estimate; not independently re-verified this session)", label: "kestrel board.yaml spin-up figure — corroborate against Allianz annual report", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: low}
+  operating:
+    value: "~EUR 186.94B/yr total revenue/business volume (2025); operating profit ~EUR 17.37B; net income ~EUR 11.43B. FX flag: EUR."
+    sources:
+      - {figure: "Revenue EUR 186.94B, operating income EUR 17.37B, net income EUR 11.43B (2025)", label: "Wikipedia — Allianz (2025 financials)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: high}
+  deployed:
+    value: "~EUR 2.512T (~$2.76T) total AUM (2025) — but ~EUR 1.8T of that is THIRD-PARTY fiduciary money (PIMCO + Allianz Global Investors), not Allianz's own balance sheet. Total assets ~EUR 1.024T (~$1.085T). FX: EUR."
+    sources:
+      - {figure: "Total AUM EUR 2.512T; total assets EUR 1.024T (2025); owns PIMCO and Allianz Global Investors", label: "Wikipedia — Allianz (AUM / assets 2025)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: high}
+      - {figure: "Total assets $1,085.2B (2024 ranking basis)", label: "Wikipedia — List of largest insurance companies (2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+      - {figure: "Third-party AUM ~EUR 1.8T (PIMCO+AGI fiduciary; older infobox showed EUR 1.775T Q1 2021)", label: "Wikipedia — Allianz (third-party AUM)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2021-03", confidence: low}
+  in:
+    value: "Premium inflows across P&C, life/health, plus asset-management fee inflows on the EUR 1.8T third-party book; ~EUR 187B/yr business volume."
+    sources:
+      - {figure: "Business volume EUR 186.94B (2025)", label: "Wikipedia — Allianz", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: high}
+  out:
+    value: "Claims/benefits; acquisitions (HSBC Life SG $2.09B; Viridium consortium buy EUR 3.5B with BlackRock/T&D, Mar 2025); disposals return capital (Bajaj JV EUR 2.6B); Allianz runs recurring buybacks."
+    sources:
+      - {figure: "Viridium Group consortium purchase EUR 3.5B (Mar 2025); Hunter Premium Funding (Australia) sold (Mar 2025)", label: "Wikipedia — Allianz (acquisitions/disposals)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-03", confidence: high}
+thrust:
+  value: "~$60B/yr est, conf LOW — ~$57B organic proxy (28% of ~$205B/yr business volume, mirroring the china-life premium-into-bonds/equities ratio; not a filed reinvestment line) + ~$3.4B named 2025 M&A (HSBC Life Singapore $2.09B closed Jun 2025, Allianz's ~1/3 share of the Viridium consortium buy EUR 3.5B). The Bajaj Allianz India JV sale (EUR 2.6B, Mar 2025) is a DISPOSAL — capital returned, excluded from thrust per the never-net-buybacks-in rule."
+  sources:
+    - {figure: "Business volume EUR 186.94B (~$205B); 28% organic-proxy ratio applied by analogy to china-life's $40B/$139.6B (28.6%) — no Allianz-specific reinvestment-rate filing pulled this session", label: "Wikipedia — Allianz (2025 financials) + derived ratio, conf low", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: low}
+    - {figure: "HSBC Life Singapore acquired for $2.09B (closed Jun 2025); Viridium Group consortium purchase EUR 3.5B (Mar 2025, Allianz one of three consortium members with BlackRock/T&D — per-member share not separately disclosed, ~1/3 assumed)", label: "Wikipedia — Allianz (recent strategic moves)", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-06", confidence: med}
+optionality:
+  value: "constrained — Solvency II caps deployable capital to the surplus; ~EUR 1.8T of managed money is third-party fiduciary (cannot be redeployed). Own general account is liability-matched."
+  sources:
+    - {figure: "~EUR 1.8T third-party fiduciary vs own general account; Solvency II regime", label: "Wikipedia — Allianz", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: med}
+gravity:
+  value: "~EUR 187B/yr GROSS business volume routed + PIMCO bond-market reach (a top-tier global fixed-income voice) — gravity is thin vs the ~EUR 2.5T commanded pile, but PIMCO adds real market-shaping weight."
+  sources:
+    - {figure: "Business volume EUR 186.94B/yr; owns PIMCO (global bond manager) and Allianz Global Investors", label: "Wikipedia — Allianz", url: "https://en.wikipedia.org/wiki/Allianz", as_of: "2025-12", confidence: high}
+notes: "Biggest uncertainty: the split between Allianz's OWN general account (~EUR 810B, board estimate, low-confidence) and third-party AUM (~EUR 1.8T) is not cleanly re-verified from a primary filing this session — the total AUM EUR 2.512T and total assets EUR 1.024T are firm. All EUR; USD conversions at ~$1.10/EUR. WEIGHT-BASIS FLAG (axes_num rollout, 2026-07-28): axes_num.weight uses on-balance-sheet total assets ~$1085B (EUR 1.024T, 2024 USD ranking basis) — NOT the ~$2.76T total-AUM figure, which is ~EUR 1.8T (~65%) third-party PIMCO/AGI fiduciary money sitting off Allianz's own balance sheet. The PIMCO question: PIMCO's ~$2T is asset-management AUM (fee-generating, client-owned), structurally different from Allianz's own policyholder-liability-backed general account — excluded from weight, noted here as the dominant scale driver of Allianz's market reach regardless."

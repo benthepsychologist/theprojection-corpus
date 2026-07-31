@@ -1,0 +1,47 @@
+node: nippon-life
+name: "Nippon Life"
+pocket: insurance
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Aggressive overseas push despite mutual constraints — bought out Resolution Life Group (Bermudian reinsurer) for $8.2B (Dec 2024), valuing it at $10.6B, to scale in the US life market and integrate Australia's MLC Life. A rare offensive move for a Japanese mutual."
+  sources:
+    - {figure: "Acquired remaining Resolution Life Group for $8.2B (already held 23%), total valuation $10.6B; aims to expand US life + Australian MLC; deal expected to close H2 2025", label: "The Royal Gazette — 'Nippon Life takes over Bermudian reinsurer' (Dec 12 2024)", url: "https://www.royalgazette.com/reinsurance/business/article/20241212/nippon-life-takes-over-bermuda-reinsurer/", as_of: "2024-12", confidence: high}
+capital:
+  available:
+    value: "No market cap (MUTUAL, policyholder-owned) and no free dry powder in the Berkshire sense — but the $8.2B Resolution Life buy shows meaningful deployable capital. Deployable headroom is solvency-margin surplus; core is JGB liability-matched. FX: JPY."
+    sources:
+      - {figure: "Mutual company, not publicly listed (no market capitalization); funded $8.2B Resolution Life acquisition from balance sheet (2024)", label: "Wikipedia — Nippon Life + Royal Gazette", url: "https://en.wikipedia.org/wiki/Nippon_Life", as_of: "2024-12", confidence: high}
+  operating:
+    value: "Net premiums written ~$43.2B/yr (2021) — the core inflow; total revenue not separately pulled fresh this session. Largest Japanese life insurer by revenue. FX: underlying JPY."
+    sources:
+      - {figure: "Net premiums written $43.2B (2021)", label: "Wikipedia — List of largest insurance companies (net premiums written 2021)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2021-12", confidence: med}
+      - {figure: "'The largest Japanese life insurance company by revenue'", label: "Wikipedia — Nippon Life", url: "https://en.wikipedia.org/wiki/Nippon_Life", as_of: "2024-12", confidence: med}
+  deployed:
+    value: "~$645.1B total assets (2024) — mostly a JGB-heavy general account (investment portfolio ~90%+ of assets, ~$580-620B est.). A systemic buyer of Japanese govt bonds and foreign bonds. FX: underlying JPY (~¥70.6T at 2016 vintage; USD figure is the 2024 ranking basis)."
+    sources:
+      - {figure: "Total assets $645.1B (2024)", label: "Wikipedia — List of largest insurance companies (total assets 2024)", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: high}
+      - {figure: "70,608 billion yen in assets (2016) — older primary vintage", label: "Wikipedia — Nippon Life", url: "https://en.wikipedia.org/wiki/Nippon_Life", as_of: "2016-12", confidence: med}
+      - {figure: "Investment portfolio ~$580-620B (INFERRED as ~90%+ of assets for a life mutual; not a filed line item pulled this session)", label: "derived estimate — flag low", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2024-12", confidence: low}
+  in:
+    value: "Life & annuity premium inflows ~$43B/yr (2021) domestically + growing overseas premiums via Resolution Life / MLC; policyholder-funded, no equity issuance."
+    sources:
+      - {figure: "Net premiums written $43.2B (2021)", label: "Wikipedia — List of largest insurance companies", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2021-12", confidence: med}
+  out:
+    value: "Policy benefits + policyholder dividends (mutual — surplus returns to members, not shareholders); large JGB/foreign-bond investment allocation; overseas M&A ($8.2B Resolution Life, prior Reliance Life India stake)."
+    sources:
+      - {figure: "$8.2B Resolution Life buyout (2024); mutual pays policyholder dividends since 1898", label: "Royal Gazette + Wikipedia — Nippon Life", url: "https://www.royalgazette.com/reinsurance/business/article/20241212/nippon-life-takes-over-bermuda-reinsurer/", as_of: "2024-12", confidence: high}
+thrust:
+  value: "~$20B/yr est, conf LOW — ~$12B organic premium-flow proxy (28% of $43.2B net premiums written, 2021 vintage — the freshest premium figure on file, mirroring the china-life premium-into-bonds/equities ratio; not a filed reinvestment line) + the $8.2B Resolution Life buyout (Dec 2024, real M&A) folded in as a one-time/lumpy addition rather than a recurring run-rate. Flag: the premium base is stale (2021), so the organic slice is a rougher estimate than the peer set."
+  sources:
+    - {figure: "Net premiums written $43.2B (2021); 28% organic-proxy ratio applied by analogy to china-life's $40B/$139.6B (28.6%) — no fresher Nippon Life premium figure pulled this session", label: "Wikipedia — List of largest insurance companies (net premiums written 2021) + derived ratio, conf low", url: "https://en.wikipedia.org/wiki/List_of_largest_insurance_companies", as_of: "2021-12", confidence: low}
+    - {figure: "Acquired remaining Resolution Life Group for $8.2B (Dec 2024), total valuation $10.6B — real M&A, counted as a one-time thrust-year addition, not recurring", label: "The Royal Gazette — 'Nippon Life takes over Bermudian reinsurer' (Dec 12 2024)", url: "https://www.royalgazette.com/reinsurance/business/article/20241212/nippon-life-takes-over-bermuda-reinsurer/", as_of: "2024-12", confidence: high}
+optionality:
+  value: "constrained — JGB liability-matching + policyholder-bound (mutual, surplus owed to members); Japanese solvency-margin regime. Offshore M&A shows more latitude than pure constraint, but the core account is locked to liabilities."
+  sources:
+    - {figure: "Mutual, policyholder-owned; JGB-heavy liability-matched general account (structural)", label: "Wikipedia — Nippon Life", url: "https://en.wikipedia.org/wiki/Nippon_Life", as_of: "2024-12", confidence: med}
+gravity:
+  value: "~$43B/yr GROSS premium routed — thin vs the ~$645B pile — BUT outsized systemic macro-gravity: as a top global cross-border bond buyer, Nippon Life's allocation shifts move JGB and foreign-bond markets. gravity(systemic) > gravity(revenue)."
+  sources:
+    - {figure: "Net premiums $43.2B/yr vs $645B assets; among the largest life insurers globally (macro bond-buyer role, board framing)", label: "Wikipedia — List of largest insurance companies + Nippon Life", url: "https://en.wikipedia.org/wiki/Nippon_Life", as_of: "2024-12", confidence: med}
+notes: "Biggest uncertainty: as a mutual, Nippon Life has the thinnest public-filing trail here — freshest firm figure is $645.1B total assets (2024 ranking) and $43.2B premiums (2021); the investment-portfolio line is INFERRED (low confidence) and current-year revenue/surplus were not pulled (IR domain nissay.co.jp/english returned 404 this session). All underlying JPY. WEIGHT-BASIS FLAG (axes_num rollout, 2026-07-28): axes_num.weight uses total assets ~$645B (2024 ranking) — no separate third-party asset-management arm (no PIMCO/PGIM/MIM analog) was identified for Nippon Life this session, so no AUM-vs-balance-sheet split question applies here; the figure is the mutual's own balance sheet."

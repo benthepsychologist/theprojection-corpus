@@ -1,0 +1,37 @@
+# Bundle — axis estimates: openai (2026-07-25)
+# The cited-source appendix for board.yaml openai {capitalization, optionality, gravity}.
+artifact: artifacts/findings/board-axes-prototype-2026-07-25.md
+crawled_at: "2026-07-25T00:00:00Z"
+method: >
+  WebFetch against primary sources (WebSearch exhausted; OpenAI blog
+  403-blocked). Private company — figures are reported/leaked, sourced via
+  Wikipedia's synthesis of Reuters/Bloomberg/The Information (reflects the
+  current mid-2026 timeline matching kestrel) + kestrel threads. Gravity
+  normalized to annual value-added-dependent; the multi-year stock figure
+  (~$450B) is NOT the comparable number — use ~$57B/yr.
+
+capitalization:
+  value: "~$180B cumulative raised/committed; $852B valuation is the mark, not cash"
+  sources:
+    - {figure: "Microsoft cumulative >$13B", label: "Wikipedia OpenAI (attrib. Reuters)", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: high}
+    - {figure: "$6.6B at $157B valuation (Oct 2024)", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2024-10", confidence: high}
+    - {figure: "$40B SoftBank-led round at $300B post-money (Apr 2025)", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-04", confidence: high}
+    - {figure: "~$110-122B committed at $730B->$852B (Amazon $50B / SoftBank $30B / Nvidia $30B)", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-04", confidence: med}
+    - {figure: "~$10B employee secondary at $500B (EXCLUDED — insider liquidity, not new capital)", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-10", confidence: med}
+optionality:
+  value: "locked — ~85-90% earmarked+burning vs ~10-15% free"
+  sources:
+    - {figure: "Oracle $300B compute over 5yr", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-09", confidence: med}
+    - {figure: "Azure $250B services agreement", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+    - {figure: "Stargate $500B/10GW; Bloomberg Aug-2025 'not started, no funds raised'", label: "Wikipedia Stargate LLC (attrib. The Information, Bloomberg)", url: "https://en.wikipedia.org/wiki/Stargate_LLC", as_of: "2025-09", confidence: med}
+    - {figure: "Nvidia up to $100B — UNREALIZED as of Jan 2026, 'rethinking'", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2026-01", confidence: low}
+    - {figure: "net loss ~$9B (2025); planned spend ~$115B through 2029; CF-positive projected 2029", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: med}
+    - {figure: "~$14B 2026 loss estimate; ~$800B+ circular financing loops", label: "kestrel thread ai-circular-financing-risk", url: "attention/threads.yaml", as_of: "2026-07", confidence: low}
+gravity:
+  value: "gross ~$1.0-1.4T stock (anchored capex ~$175B/yr) -> ~$57B/yr value-added-dependent (× 0.5 × 0.65)"
+  sources:
+    - {figure: "anchored compute commitments ~$1.0-1.4T (Oracle+Azure+Stargate+Nvidia+AMD/Broadcom/Amazon)", label: "Wikipedia OpenAI + Stargate LLC", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025-2026", confidence: med}
+    - {figure: "OpenAI revenue ~$12-13B annualized (2025)", label: "Wikipedia OpenAI", url: "https://en.wikipedia.org/wiki/OpenAI", as_of: "2025", confidence: high}
+    - {figure: "NO OpenAI-specific developer-economy multiplier found; API-ecosystem gross is analyst estimate", label: "derived / not sourced", url: "", as_of: "2026-07", confidence: low}
+    - {figure: "VA deflator 0.5 + dependency 0.65 are board-method judgment, not cited", label: "board.yaml gravity method", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+uncertainty: "All figures private/leaked, not audited. ~$1.4T aggregate double-counts Oracle-within-Stargate. Earmark share is extreme (~85-90%) — exactly why optionality=locked. Gravity's deflators are analytical; the anchored-capex gross IS cited."

@@ -1,0 +1,55 @@
+# Bundle — node posture + capital-flow: michael-dell (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Founder-billionaire — control weights over paper wealth.
+# Dell Technologies is OFF the kestrel board but AI-ADJACENT (servers) — his
+# ~59% stake gives FREE operating control, unlike the passive/weaker reads for
+# Page/Bezos in this same batch.
+node: michael-dell
+name: "Michael Dell"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "AI-server demand is the live growth driver — FY2026 revenue reached $113.5B, and Dell struck a May-2026 partnership with OpenAI (Codex deployment via the Dell AI Data Platform) riding the same compute-buildout wave as the kestrel board's hyperscalers, even though Dell itself sits off-board."
+  sources:
+    - {figure: "Dell Technologies FY2026 revenue $113.5B (10-K filing)", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2026", confidence: high}
+    - {figure: "May-2026: OpenAI partnered with Dell Technologies to deploy Codex on-premises/hybrid via the Dell AI Data Platform", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2026-05", confidence: high}
+
+capital:
+  available:
+    value: "~$212.8B personal net worth (Bloomberg/Forbes, May-2026, 7th wealthiest globally) — dominated by his ~58.9% Dell Technologies stake plus DFO Management (family office) assets"
+    sources:
+      - {figure: "Bloomberg Billionaires Index / Forbes ~$212.8B (May-2026), 7th wealthiest person globally", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "2026-05", confidence: high}
+      - {figure: "deployable anchor: ~$120B — ~50% of Dell + a mega-deal record ($67B EMC)", label: "kestrel board.yaml michael-dell deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "Dell Technologies (founder, chairman, CEO) — FY2026 revenue $113.5B; ~58.9% ownership (Feb-2024) gives FREE operating control, unlike the passive/weaker reads on Page/Bezos"
+    sources:
+      - {figure: "58.9% ownership stake in Dell Technologies as of Feb-2024", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2024-02", confidence: high}
+      - {figure: "Dell Technologies FY2026 revenue $113.5B (10-K filing)", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2026", confidence: high}
+  deployed:
+    value: "2013 take-private LBO ($24.4B, largest management buyout since the Great Recession, closed Oct-2013, Dell received a 75% stake); 2016 EMC acquisition ($67B, 'the highest-valued tech acquisition in history' at the time, closed Sep-7-2016); MSD Capital/DFO Management (family office, founded 1998) directs the broader personal portfolio"
+    sources:
+      - {figure: "2013 take-private deal: $24.4B, completed Oct-2013, Dell received a 75% stake", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "2013-10", confidence: high}
+      - {figure: "EMC acquisition announced Oct-2015, $67B, finalized Sep-7-2016 — highest-valued tech acquisition in history", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "2016-09", confidence: high}
+      - {figure: "MSD Capital L.P. founded 1998, later renamed DFO Management", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "1998", confidence: high}
+  in:
+    value: "Dell Technologies dividends/equity value on the ~58.9% stake; a historical 40% VMware stake (as of Oct-2023) predates Broadcom's Nov-2023 acquisition of VMware — the proceeds/conversion from that are not confirmed this pass"
+    sources:
+      - {figure: "as of Oct-2023: wealth derived from a 50% Dell stake and a 40% VMware stake, plus DFO Management assets", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "2023-10", confidence: low}
+  out:
+    value: "$24.4B equity commitment in the 2013 buyout; $67B EMC acquisition (2016, LBO-financed, not pure cash); Michael & Susan Dell Foundation — over $3B donated across 26 years (founded 1999)"
+    sources:
+      - {figure: "Michael & Susan Dell Foundation founded 1999; over $3B donated across 26 years, primarily children's causes/health/education", label: "Wikipedia — Michael Dell", url: "https://en.wikipedia.org/wiki/Michael_Dell", as_of: "2026-07", confidence: high}
+
+optionality:
+  value: "free — ~58.9% of Dell Technologies (Feb-2024), founder/chairman/CEO, no external check on control; the $67B EMC deal demonstrates willingness and capacity to deploy at mega-scale"
+  sources:
+    - {figure: "58.9% ownership stake, Feb-2024; founder/chairman/CEO", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2024-02", confidence: high}
+
+gravity:
+  value: "off the kestrel board (Dell is enterprise hardware, not a board-listed AI lab/hyperscaler) but AI-ADJACENT — FY2026 revenue $113.5B, with an AI-server buildout (OpenAI Codex/Dell AI Data Platform partnership, May-2026) riding the same compute wave as the board's hyperscalers"
+  sources:
+    - {figure: "Dell Technologies FY2026 revenue $113.5B; May-2026 OpenAI/Dell AI Data Platform partnership", label: "Wikipedia — Dell Technologies", url: "https://en.wikipedia.org/wiki/Dell_Technologies", as_of: "2026-05", confidence: high}
+
+notes: "Ownership-percentage conflict across sources within the same fetch pass: the Michael Dell bio page states 50% Dell / 40% VMware (as of Oct-2023, pre-dating Broadcom's Nov-2023 VMware acquisition), while the Dell Technologies company page states 58.9% (Feb-2024) — treated the more recent, Dell-Technologies-specific 58.9% figure as primary; the older VMware-era figure is confidence: low and likely stale post-Broadcom. FY2026 revenue ($113.5B) came in well above the board.yaml gloss's rough $90-100B/yr guess — treat $113.5B as the higher-confidence figure since it cites a 10-K filing."

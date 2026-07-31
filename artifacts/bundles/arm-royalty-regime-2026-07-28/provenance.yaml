@@ -1,0 +1,126 @@
+# Bundle — crawl finding arm-royalty-regime-2026-07-28
+artifact: artifacts/findings/arm-royalty-regime-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  Two sonnet subagents ran WebFetch sweeps in parallel per the crawl
+  skill's WebSearch-exhaustion pre-flight (session WebSearch budget
+  treated as already spent by earlier same-day work): one against
+  QUALCOMM-DISPUTE + ROYALTY-RATE + SOFTBANK-STAKE + FY2026-FINANCIALS
+  questions, one against UP-STACK-SILICON + DATACENTER-SHARE + RISC-V +
+  STOCK-NARRATIVE questions. Both fetched Google News RSS search feeds
+  (news.google.com/rss/search) plus direct outlet and primary-source URLs
+  (Arm Newsroom, qualcomm.com, TechCrunch). Google News redirect links
+  largely did not resolve to article body text on direct WebFetch (same
+  pattern as prior bundles this window) — where that happened, the
+  citation is the RSS feed item itself (outlet/title/date from feed
+  metadata), marked medium confidence rather than high. The second
+  subagent additionally used html.duckduckgo.com/html/ search-snippet
+  lookups (not the session WebSearch tool) to recover real outlet URLs
+  behind Google News redirects, then fetched several directly — TechCrunch
+  and qualcomm.com resolved in full; CNBC returned 403; Reuters and
+  theregister.com mostly blocked or 404'd on direct fetch, cited via
+  search-snippet corroboration instead. No URL or figure was fabricated;
+  several claims are explicitly marked thin, unconfirmed, or flagged as
+  using incompatible scopes (e.g. the three non-comparable Arm datacenter
+  share figures) rather than reconciled by guesswork.
+queries:
+  google_news_rss:
+    - "Qualcomm Arm lawsuit 2026"
+    - "Qualcomm Arm settlement"
+    - "Qualcomm Arm appeal ruling"
+    - "Arm royalty rate v9 v10"
+    - "Arm royalty per device 2026"
+    - "Arm Total Access licensing"
+    - "SoftBank Arm stake 2026"
+    - "Arm Raspberry Pi"
+    - "Arm 20-F subsequent event Raspberry Pi"
+    - "Arm Holdings FY2026 results revenue"
+    - "Arm Holdings earnings fiscal 2026"
+    - "ARM stock earnings royalty revenue"
+    - "Arm own chips CSS chiplet"
+    - "Arm building server chip Meta"
+    - "Arm Neoverse CSS 2026"
+    - "Arm datacenter server market share 2026"
+    - "AWS Graviton Arm share"
+    - "Nvidia Grace Arm datacenter"
+    - "RISC-V Arm alternative 2026"
+    - "RISC-V China chips 2026"
+    - "Qualcomm RISC-V investment"
+    - "Arm Holdings stock 2026 analyst"
+    - "ARM stock AI chips valuation"
+  direct_sources_attempted:
+    - "https://www.qualcomm.com/news/releases/2025/12/qualcomm-acquires-ventana-micro-systems--deepening-risc-v-cpu-ex (fetched, primary)"
+    - "https://techcrunch.com/2026/03/24/arm-is-releasing-its-first-in-house-chip-in-its-35-year-history/ (fetched, primary)"
+    - "https://www.theregister.com/on-prem/2025/09/11/intel-outside-as-arms-data-center-cpu-share-grows-to-25/ (blocked/404 on direct fetch, content via search snippet)"
+    - "https://asia.nikkei.com/editor-s-picks/interview/softbank-chipmaker-arm-hits-50-share-in-top-ai-data-centers-exec (RSS metadata only)"
+    - "investors.arm.com / newsroom.arm.com FY2026 earnings pages (404/stripped — exact $4.92B/$2.61B digits NOT independently re-verified this session)"
+    - "https://www.cnbc.com (403 on Arm AGI CPU coverage refetch)"
+items:
+  # --- QUALCOMM DISPUTE ---
+  - {id: qcom-jury-verdict-dec24, figure: "Dec-2024 jury verdict: Qualcomm not liable on Nuvia license breach, deadlocked on the architecture-license claim (background, pre-window)", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+lawsuit+2026&hl=en-US&gl=US&ceid=US:en", label: "background per crawl brief, not independently refetched this session", as_of: "2024-12-01", confidence: medium}
+  - {id: qcom-delaware-ruling, figure: "Delaware judge rejects Arm's last remaining legal claim — Qualcomm wins trial-court case in full", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+lawsuit+2026&hl=en-US&gl=US&ceid=US:en", label: "The Register + EE Times + Barron's + FoneArena, 4+ outlets converge (via Google News RSS)", as_of: "2025-10-01", confidence: high}
+  - {id: qcom-appeal-planned, figure: "Arm plans to appeal the final ruling", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+appeal+ruling&hl=en-US&gl=US&ceid=US:en", label: "Reuters (via Google News RSS)", as_of: "2025-10-02", confidence: high}
+  - {id: qcom-dcd-confirm, figure: "Delaware judge rules in favor of Qualcomm/Nuvia in licensing dispute with Arm", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+settlement&hl=en-US&gl=US&ceid=US:en", label: "Data Center Dynamics (via Google News RSS)", as_of: "2025-10-03", confidence: high}
+  - {id: qcom-appeal-2026-status, figure: "No 2026 update located on appeal status (filed/court/outcome) — flagged gap, not a negative finding", url: "https://news.google.com/rss/search?q=Qualcomm+Arm+appeal+ruling&hl=en-US&gl=US&ceid=US:en", label: "absence of coverage — multiple targeted RSS queries returned nothing dated into 2026", as_of: "2026-07-28", confidence: thin}
+  # --- ROYALTY RATE ---
+  - {id: royalty-q1fy26, figure: "Q1 FY26: royalty revenue +25% YoY, Armv9 + CSS driving growth, revenue >$1B", url: "https://news.google.com/rss/search?q=Arm+royalty+rate+v9+v10&hl=en-US&gl=US&ceid=US:en", label: "EE Times + Investing.com (via Google News RSS)", as_of: "2025-07-31", confidence: medium}
+  - {id: royalty-q2fy26, figure: "Q2 FY26: revenue >$1B for a third consecutive quarter", url: "https://news.google.com/rss/search?q=Arm+Holdings+earnings+fiscal+2026&hl=en-US&gl=US&ceid=US:en", label: "Arm Newsroom (primary)", as_of: "2025-11-05", confidence: medium}
+  - {id: royalty-q3fy26, figure: "Q3 FY26: fourth consecutive billion-dollar revenue quarter", url: "https://news.google.com/rss/search?q=Arm+Holdings+earnings+fiscal+2026&hl=en-US&gl=US&ceid=US:en", label: "Arm Newsroom (primary)", as_of: "2026-02-04", confidence: medium}
+  - {id: royalty-fy26-full-year, figure: "FY2026 full-year 'record-breaking' results reported; exact $4.92B revenue / $2.61B royalty digits NOT independently re-verified (IR pages 404'd)", url: "https://news.google.com/rss/search?q=Arm+Holdings+FY2026+results+revenue&hl=en-US&gl=US&ceid=US:en", label: "Arm Newsroom + Business Wire + Investing.com, 3 sources converge on 'record results reported this date' (via Google News RSS)", as_of: "2026-05-06", confidence: medium}
+  - {id: royalty-15b-target-early, figure: "Arm says its $15B/yr chip-revenue target will arrive 'years early'", url: "https://news.google.com/rss/search?q=Arm+royalty+per+device+2026&hl=en-US&gl=US&ceid=US:en", label: "finance.biggo.com (via Google News RSS)", as_of: "2026-06-02", confidence: thin}
+  - {id: royalty-v10-not-found, figure: "No v10 architecture announcement found this crawl — v9 + CSS remains the driver through FY2026", url: "https://news.google.com/rss/search?q=Arm+Total+Access+licensing&hl=en-US&gl=US&ceid=US:en", label: "absence of coverage across targeted queries", as_of: "2026-07-28", confidence: thin}
+  # --- SOFTBANK STAKE ---
+  - {id: softbank-arm-collateral-5b, figure: "SoftBank seeking $5B loan using Arm shares as collateral to fund an OpenAI investment", url: "https://news.google.com/rss/search?q=SoftBank+Arm+stake+2026&hl=en-US&gl=US&ceid=US:en", label: "Tom's Hardware (via Google News RSS)", as_of: "2025-10-10", confidence: medium}
+  - {id: softbank-arm-margin-loan-20b, figure: "SoftBank's $20B margin loan against Arm Holdings faces a December 2025 deadline; outcome not found", url: "https://news.google.com/rss/search?q=SoftBank+Arm+stake+2026&hl=en-US&gl=US&ceid=US:en", label: "mexc.co + Blockonomi, 2 low-tier outlets, same headline (via Google News RSS)", as_of: "2025-12-27", confidence: medium}
+  - {id: softbank-openai-loan-10b-april, figure: "SoftBank separately pursues $10B loan collateralized by OpenAI shares (not Arm)", url: "https://news.google.com/rss/search?q=SoftBank+Arm+stake+2026&hl=en-US&gl=US&ceid=US:en", label: "NAI500 + Japan Times (via Google News RSS)", as_of: "2026-04-23", confidence: medium}
+  - {id: softbank-openai-loan-renewed, figure: "SoftBank renews talks for $10B loan against OpenAI stake, adds concessions", url: "https://news.google.com/rss/search?q=SoftBank+Arm+stake+2026&hl=en-US&gl=US&ceid=US:en", label: "Reuters, 'exclusive' (via Google News RSS)", as_of: "2026-07-01", confidence: high}
+  - {id: softbank-arm-300b-value, figure: "Arm market value surpasses $300B; SoftBank's 87% stake called the biggest winner", url: "https://news.google.com/rss/search?q=SoftBank+Arm+stake+2026&hl=en-US&gl=US&ceid=US:en", label: "TradingKey (via Google News RSS)", as_of: "2026-05-21", confidence: medium}
+  - {id: softbank-raspberrypi-50m, figure: "Arm subsidiary invests £50M into a £60M Raspberry Pi share placing (follow-on top-up, not new acquisition); inferred but NOT confirmed as the FY26 20-F subsequent event", url: "https://news.google.com/rss/search?q=Arm+Raspberry+Pi&hl=en-US&gl=US&ceid=US:en", label: "businesscloud.co.uk + London South East, 2 outlets converge on date/amount (via Google News RSS)", as_of: "2026-04-23", confidence: medium}
+  # --- UP-STACK / OWN SILICON ---
+  - {id: upstack-early-report-meta, figure: "Earliest report: Arm to develop in-house server CPUs, Meta as first customer", url: "https://news.google.com/rss/search?q=Arm+building+server+chip+Meta&hl=en-US&gl=US&ceid=US:en", label: "TechPowerUp (via Google News RSS)", as_of: "2025-02-14", confidence: medium}
+  - {id: upstack-q2fy26-guidance-drop, figure: "Arm shares fell ~8% after-hours (~13% next morning) on soft Q2 profit forecast + signaled investing profits into developing own chips", url: "https://news.google.com/rss/search?q=Arm+own+chips+CSS+chiplet&hl=en-US&gl=US&ceid=US:en", label: "Reuters, corroborated by Economic Times/Investopedia (via Google News RSS)", as_of: "2025-07-30", confidence: high}
+  - {id: upstack-css-csa-framing, figure: "Arm Newsroom frames CSS/CSA chiplet push as 'democratizing custom AI silicon'", url: "https://news.google.com/rss/search?q=Arm+Neoverse+CSS+2026&hl=en-US&gl=US&ceid=US:en", label: "Arm Newsroom (primary, promotional)", as_of: "2025-10-06", confidence: medium}
+  - {id: upstack-azure-cobalt200, figure: "Microsoft's Azure Cobalt 200 datacenter CPU confirmed built on Arm Neoverse CSS V3", url: "https://news.google.com/rss/search?q=Arm+Neoverse+CSS+2026&hl=en-US&gl=US&ceid=US:en", label: "Arm Newsroom (primary)", as_of: "2025-11-18", confidence: medium}
+  - {id: upstack-agi-cpu-launch, figure: "Arm unveils 'Arm AGI CPU' — first in-house chip in 35-year history, 136-core Neoverse-based, AI-inference; launch customer Meta; partners OpenAI/Cerebras/Cloudflare", url: "https://news.google.com/rss/search?q=Arm+own+chips+CSS+chiplet&hl=en-US&gl=US&ceid=US:en", label: "CNBC + TechCrunch (fetched full text) + The Information + Arm Newsroom, 4 sources converge", as_of: "2026-03-24", confidence: high}
+  - {id: upstack-agi-cpu-analysis, figure: "Follow-on trade-press analysis of the AGI CPU launch", url: "https://news.google.com/rss/search?q=Arm+own+chips+CSS+chiplet&hl=en-US&gl=US&ceid=US:en", label: "The Next Platform + ServeTheHome (via Google News RSS)", as_of: "2026-03-25", confidence: medium}
+  # --- DATACENTER SHARE ---
+  - {id: dc-share-25pct, figure: "Arm's server-CPU revenue share doubles YoY ~15%->25% (Nvidia Grace + custom cloud silicon); short of Arm's own 50%-by-end-2025 target", url: "https://www.theregister.com/on-prem/2025/09/11/intel-outside-as-arms-data-center-cpu-share-grows-to-25/", label: "The Register (blocked on direct refetch this session; content via search snippet)", as_of: "2025-09-11", confidence: medium}
+  - {id: dc-share-meta-grace, figure: "Meta to deploy standalone Nvidia Grace CPUs in production, up to 2x perf/watt on some workloads", url: "https://news.google.com/rss/search?q=Nvidia+Grace+Arm+datacenter&hl=en-US&gl=US&ceid=US:en", label: "Tom's Hardware + MarketWatch (via Google News RSS)", as_of: "2026-02-18", confidence: medium}
+  - {id: dc-share-meta-graviton5, figure: "Meta signs multiyear multibillion-dollar AWS deal for Graviton5 chips; outlets disagree on scale (tens of millions of cores per Amazon vs hundreds of thousands of chips per Reuters/CNBC/Bloomberg)", url: "https://news.google.com/rss/search?q=AWS+Graviton+Arm+share&hl=en-US&gl=US&ceid=US:en", label: "WSJ + Reuters + CNBC + Bloomberg + TechCrunch + Amazon press release, 5+ outlets converge on the deal itself", as_of: "2026-04-24", confidence: high}
+  - {id: dc-share-nonx86-idc, figure: "IDC: non-x86 platforms = 47.9% ($58.7B) of $122.6B Q1 2026 global server revenue (NOT Arm-specific scope — includes non-Arm accelerators)", url: "https://www.tomshardware.com/desktops/servers/arm-servers-capture-over-45-percent-of-data-center-market-revenue-gpu-clusters-and-high-end-ai-infrastructure-fuel-a-tectonic-shift-away-from-x86", label: "Tom's Hardware, citing IDC", as_of: "2026-06-22", confidence: medium}
+  - {id: dc-share-nikkei-50pct, figure: "Unnamed Arm executive claims Arm >50% share of hyperscale/'top AI' datacenters — no methodology disclosed", url: "https://asia.nikkei.com/editor-s-picks/interview/softbank-chipmaker-arm-hits-50-share-in-top-ai-data-centers-exec", label: "Nikkei Asia — company self-report via unnamed exec", as_of: "2026-06-25", confidence: thin}
+  # --- RISC-V ---
+  - {id: riscv-qcom-ventana, figure: "Qualcomm acquires Ventana Micro Systems (RISC-V datacenter CPU design firm); explicitly framed as hedge running Arm + RISC-V cores in parallel amid Qualcomm-Arm litigation", url: "https://www.qualcomm.com/news/releases/2025/12/qualcomm-acquires-ventana-micro-systems--deepening-risc-v-cpu-ex", label: "Qualcomm press release (primary) + The Register + CRN + Data Center Dynamics + Tom's Hardware", as_of: "2025-12-10", confidence: high}
+  - {id: riscv-arm-stock-dip, figure: "Arm's stock dipped on the Ventana acquisition news, read as pricing in a competitive threat", url: "https://news.google.com/rss/search?q=Qualcomm+RISC-V+investment&hl=en-US&gl=US&ceid=US:en", label: "Yahoo Finance (via Google News RSS), magnitude unconfirmed", as_of: "2025-12-22", confidence: thin}
+  - {id: riscv-qcom-tenstorrent-talks, figure: "Qualcomm reportedly in advanced talks to acquire Tenstorrent (RISC-V AI-chip startup, Jim Keller) for $8-10B; not confirmed closed", url: "https://news.google.com/rss/search?q=RISC-V+Arm+alternative+2026&hl=en-US&gl=US&ceid=US:en", label: "Tech Times + The Register (via Google News RSS)", as_of: "2026-06-24", confidence: medium}
+  - {id: riscv-alibaba-xuantie, figure: "Alibaba DAMO Academy unveils XuanTie C950, billed as most powerful RISC-V processor yet, optimized for China's top AI models", url: "https://news.google.com/rss/search?q=RISC-V+China+chips+2026&hl=en-US&gl=US&ceid=US:en", label: "The Register + South China Morning Post (via Google News RSS)", as_of: "2026-03-27", confidence: medium}
+  - {id: riscv-spacemit, figure: "SpacemiT (China) to launch server-class RISC-V processor after capital injection", url: "https://news.google.com/rss/search?q=RISC-V+China+chips+2026&hl=en-US&gl=US&ceid=US:en", label: "South China Morning Post (via Google News RSS)", as_of: "2026-01-15", confidence: thin}
+  - {id: riscv-nvidia-cuda-port, figure: "Nvidia ports CUDA to RISC-V — hedge signal even from one of Arm's own big (Grace) customers", url: "https://news.google.com/rss/search?q=RISC-V+Arm+alternative+2026&hl=en-US&gl=US&ceid=US:en", label: "TechPowerUp (via Google News RSS)", as_of: "2025-07-21", confidence: thin}
+  - {id: riscv-google-digitimes, figure: "'Qualcomm, Google bet big on RISC-V for AI dominance' — Google's specific commitments not independently confirmed beyond this single headline", url: "https://news.google.com/rss/search?q=RISC-V+China+chips+2026&hl=en-US&gl=US&ceid=US:en", label: "Digitimes (via Google News RSS)", as_of: "2026-01-06", confidence: thin}
+  # --- STOCK / VALUATION NARRATIVE ---
+  - {id: stock-240pct-ytd, figure: "ARM up 240% in 2026 YTD per one source; Street mean target 38% below then-current price — outsized figure, flagged for re-check", url: "https://news.google.com/rss/search?q=Arm+Holdings+stock+2026+analyst&hl=en-US&gl=US&ceid=US:en", label: "TIKR.com (via Google News RSS)", as_of: "2026-06-05", confidence: thin}
+  - {id: stock-china-export-drop, figure: "ARM down 17.4%, tied explicitly to global AI-chip pullback + China export concerns", url: "https://news.google.com/rss/search?q=ARM+stock+AI+chips+valuation&hl=en-US&gl=US&ceid=US:en", label: "simplywall.st (via Google News RSS)", as_of: "2026-07-18", confidence: medium}
+  - {id: stock-28pct-pre-earnings, figure: "ARM fallen 28% in the past month heading into 2026-07-29 Q1 FY2027 earnings", url: "https://news.google.com/rss/search?q=Arm+Holdings+stock+2026+analyst&hl=en-US&gl=US&ceid=US:en", label: "24/7 Wall St. (via Google News RSS)", as_of: "2026-07-27", confidence: medium}
+notes: >-
+  Confidence key matches prior bundle convention (e.g.
+  google-capex-2026-07-27): high = primary source fetched directly, or 3+
+  independent outlets converge same-day/same-week. medium = single outlet
+  or a small convergent cluster via RSS feed metadata (title/source/date
+  confirmed real via the RSS feed itself, article body not independently
+  re-fetched). thin = single outlet, unclear methodology, a
+  speculative/rumor framing ("reportedly", "eyeing", "talks"), a
+  self-reported/company-book claim (Nikkei's unnamed-exec 50% figure), or
+  an outsized/uncorroborated figure flagged explicitly in the finding. No
+  URL or figure in this bundle was fabricated. Explicit verification gaps
+  carried into the finding's "open questions": (1) Arm's appeal status in
+  the Qualcomm case has no 2026 coverage located; (2) the exact FY2026
+  $4.92B revenue / $2.61B royalty digits from the crawl brief rest on
+  directional corroboration (four straight >$1B quarters) rather than a
+  refetched primary filing — investors.arm.com and newsroom.arm.com
+  returned 404/stripped content this session; (3) the Raspberry Pi £50M
+  April-2026 top-up is inferred, not confirmed, as the FY26 20-F
+  "subsequent event"; (4) SoftBank's Dec-2025 $20B Arm-collateral loan
+  deadline outcome was not found; (5) the Qualcomm-Tenstorrent RISC-V deal
+  is reported as in-talks/rumored, not closed; (6) three Arm
+  datacenter-share figures (25% / ~47.9% non-x86 / >50% self-reported) use
+  incompatible scopes and are explicitly not reconciled into one number.

@@ -1,0 +1,29 @@
+# Provenance — intel-stake-tangle crawl, 2026-07-28
+# Trigger: ben-steer (daily 07-28 candidate accepted). Two report-only
+# sonnet agents: (A) EDGAR/primary terms trail, (B) public claims trail.
+# Main-session reconciliation where the two mechanisms conflicted (the
+# May figure: date-snapshot reading anchored by the article's own
+# date/price beat the coincidental warrant-intrinsic arithmetic match).
+finding: artifacts/findings/intel-stake-tangle-2026-07-28.md
+crawled: 2026-07-28
+method: >
+  EDGAR full-text + data.sec.gov filings via WebFetch (declared UA,
+  ben@getmensio.com) for the terms trail; WebSearch+WebFetch for the
+  claims trail; price path cross-verified across 3 secondary sources
+  (stockanalysis.com, stockinvest.us, contemporaneous coverage).
+sources:
+  filings:
+    - {label: "8-K deal announcement + exhibits (433.3M sh @ $20.469 blended, warrant 240.5M @ $20)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000129/a08222025form8-kex991.htm", as_of: 2025-08-22, confidence: filing-verified}
+    - {label: "Stock purchase agreement Ex-10.1 (ADF + Secure Enclave escrow mechanics)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000129/a08222025formex101stockand.htm", as_of: 2025-08-22, confidence: filing-verified}
+    - {label: "8-K closing (shares + warrant delivered)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000135/intc-20250827.htm", as_of: 2025-08-27, confidence: filing-verified}
+    - {label: "Q2 FY26 10-Q (290.3M issued; 143M escrowed; warrant not exercisable; 5,044M sh out)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086326000157/intc-20260627.htm", as_of: 2026-07-23, confidence: filing-verified}
+    - {label: "8-K SoftBank $2.0B @ $23 (86.96M sh)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000126/intc-20250818.htm", as_of: 2025-08-21, confidence: filing-verified}
+    - {label: "8-K Nvidia $5.0B @ $23.28 (214.78M sh, closed 2025-12-26)", url: "https://www.sec.gov/Archives/edgar/data/50863/000005086325000204/intc-20251226.htm", as_of: 2025-12-29, confidence: filing-verified}
+    - {label: "EDGAR SC 13D/13G search: NONE filed for the government position", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000050863&type=SC+13", as_of: 2026-07-28, confidence: filing-verified-absence}
+  claims:
+    - {figure: "$36B stake value", label: "Bloomberg — stake jumped 300% to $36B", url: "https://www.bloomberg.com/news/articles/2026-04-24/us-government-stake-in-intel-has-jumped-300-to-36-billion", as_of: 2026-04-24, confidence: reported}
+    - {figure: "$42B stake value", label: "Fortune — $27B federal portfolio, Intel position 'in no budget document'", url: "https://fortune.com/2026/07/26/the-u-s-government-invested-27-billion-in-corporate-stakes-good-luck-finding-them/", as_of: 2026-07-26, confidence: reported}
+    - {figure: "$47.6B gain / ~$56.5B value", label: "Yahoo Finance citing Kobeissi Letter, Apple-deal price peak ~$129", url: "https://finance.yahoo.com/markets/stocks/articles/trump-10-intel-intc-stake-175705778.html", as_of: 2026-05-08, confidence: reported-analyst}
+    - {figure: "$70B gain (claim)", label: "Trump on CNBC (Kernen) — 'made $60 or $70 billion in eight months'", url: "https://www.benzinga.com/news/topics/26/07/60686083/trump-says-the-governments-intel-stake-made-70-billion-in-eight-months-do-i-get-credit-for-that-no", as_of: 2026-07-26, confidence: reported-verbatim}
+    - {figure: "$30B gain (earlier claim)", label: "Trump late-April claim — tracked contemporaneous reality", url: "https://www.benzinga.com/markets/tech/26/04/52158908/trump-says-us-made-30-billion-on-intel-stock-in-just-90-days", as_of: 2026-04, confidence: reported}
+    - {figure: "price path 07-20..07-28", label: "INTC closes 105.45→86.30, post-earnings reversal", url: "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-july-24-221251196.html", as_of: 2026-07-28, confidence: secondary-cross-verified-x3}

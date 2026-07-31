@@ -1,0 +1,45 @@
+# Bundle — crawl finding china-stack-independence-2026-07-22
+artifact: artifacts/findings/china-stack-independence-2026-07-22.md
+crawled_at: "2026-07-22T20:10:00Z"
+method: >
+  WebSearch unavailable (session budget); GDELT DOC API partially
+  rate-limited (concurrent sibling crawls contending — several query
+  families abandoned, listed below); ~30 targeted fetches. Full 27-event
+  list in the crawl agent's output (session transcript); finding carries
+  the condensed arc.
+queries:
+  gdelt_doc_api_completed:
+    - 'Zhipu data center chips sourcelang:english'
+    - '"Kimi K3" sourcelang:english'
+    - 'Zhenwu Alibaba chip sourcelang:english'
+  gdelt_doc_api_rate_limited_or_unreached:
+    - '"Qwen3.8" OR "Qwen 3.8"'
+    - 'Huawei Ascend training chip 2026'
+    - 'China "export controls" AI models'
+    - '"DeepSeek V4"'
+    - 'Nvidia China export rule 2026'
+    - 'Moonshot "Hong Kong" listing'
+items:
+  - {id: forbes-v4-qwen, url: "https://www.forbes.com/sites/jonmarkman/2026/04/28/chinas-deepseek-v4-and-qwen-reshape-the-open-source-ai-race/", ts: "2026-04-28"}
+  - {id: zhenwu-m890, url: "https://finance.yahoo.com/sectors/technology/articles/alibaba-baba-unveils-zhenwu-m890-120131341.html", ts: "2026-05-20"}
+  - {id: register-volume-gap, url: "https://www.theregister.com/systems/2026/05/22/alibaba-just-admitted-its-struggling-to-keep-up-with-rival-chipmakers-and-ai-shops/5244665", ts: "2026-05-22"}
+  - {id: rtx-ban-post-visit, url: "https://nagalandpost.com/china-bans-nvidia-gaming-chip-hours-after-trumps-visit/", ts: "2026-05"}
+  - {id: token-economy, url: "https://jamestown.org/the-prcs-token-economy-takes-shape/", ts: "2026-06"}
+  - {id: nine-chips-procurement, url: "https://www.tomshardware.com/tech-industry/semiconductors/china-certifies-nine-domestic-ai-chips-for-government-procurement", ts: "2026-05-27", note: headline-only}
+  - {id: register-open-models, url: "https://www.theregister.com/ai-and-ml/2026/07/22/the-truth-nobody-wants-to-admit-chinese-or-not-open-models-are-competitive-now/5275879", ts: "2026-07-22"}
+  - {id: k3-launch, url: "https://finance.yahoo.com/technology/ai/articles/moonshots-kimi-k3-launch-shakes-124223269.html", ts: "2026-07-17"}
+  - {id: sail-open-source, url: "https://www.chinatechnews.com/2026/07/18/125849-alibaba-targets-nvidias-dominant-software-ecosystem-with-open-source-ai-stack", ts: "2026-07-18"}
+  - {id: qwen38-scmp, url: "https://www.scmp.com/tech/article/3361119/alibaba-says-newest-qwen-ai-model-second-only-anthropics-claude-fable-5", ts: "2026-07-19"}
+  - {id: stackperf-dispute, url: "https://thecherrycreeknews.com/alibaba-qwen-3-8-max-second-only-to-fable-5-first-benchmark-cherry_creek/", ts: "2026-07-20"}
+  - {id: national-team, url: "https://www.theepochtimes.com/china/after-a-1-48-trillion-selloff-chinas-national-team-steps-in-to-steady-stocks-6065409", ts: "2026-07-21"}
+  - {id: beijing-export-controls, url: "https://finance.yahoo.com/technology/ai/articles/china-considers-tighter-export-controls-041139427.html", ts: "2026-07-21"}
+  - {id: bessent-sanctions, url: "https://siliconangle.com/2026/07/21/u-s-treasury-secretary-bessent-threatens-sanctions-chinese-ai-model-makers/", ts: "2026-07-21"}
+  - {id: huang-pushback, url: "https://finance.yahoo.com/technology/ai/articles/jensen-huang-says-u-firms-131327067.html", ts: "2026-07-22"}
+  - {id: moonshot-50b, url: "https://technode.com/2026/07/22/moonshot-ai-reportedly-plans-final-pre-ipo-round-at-50-billion-valuation/", ts: "2026-07-22"}
+  - {id: deepseek-71b, url: "https://techstory.in/deepseek-weighs-second-fundraise-at-71-billion-valuation-and-eyes-ipo-as-early-as-2026/", ts: "2026-07-16"}
+  - {id: glm55-preview, url: "https://www.geeky-gadgets.com/glm-5-5-release-details/", ts: "2026-07"}
+notes: >-
+  Corrections logged in the finding: "Commerce procurement/hosting pivot"
+  and "September talks" uncorroborated; Z.AI 1GW single-sourced to
+  paywalled Bloomberg. Headline-only (403/404) items marked. Today-dated
+  items (Huang, Moonshot round) also folded into the 07-22 building digest.

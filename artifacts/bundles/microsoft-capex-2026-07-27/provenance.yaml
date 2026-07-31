@@ -1,0 +1,97 @@
+# Bundle — crawl finding microsoft-capex-2026-07-27
+artifact: artifacts/findings/microsoft-capex-2026-07-27.md
+crawled_at: "2026-07-27T00:00:00Z"
+method: >
+  Four parallel sonnet subagents, one per question (sites/silicon/power/
+  payoff), per the crawl skill's preflight (session WebSearch budget may
+  already be exhausted by same-day /daily and /week sweeps — none of the
+  four used the WebSearch tool). Each agent used WebFetch directly against
+  Google News RSS query URLs (news.google.com/rss/search) for
+  title/source/date discovery, plus direct WebFetch of Microsoft's own
+  blog (blogs.microsoft.com), Microsoft Source (news.microsoft.com/source),
+  and Microsoft Investor Relations (microsoft.com/en-us/investor) where
+  reachable. Google News RSS article redirect links mostly did not resolve
+  to readable article bodies via WebFetch (returned bare headers or
+  403/404) — in those cases the RSS-listed title/source/date is cited and
+  marked medium/thin rather than treated as a verified article body. One
+  agent (power) also used DuckDuckGo HTML search-result snippets (not the
+  WebSearch tool) to surface direct-outlet URLs when RSS redirects failed;
+  those facts are marked medium and flagged as snippet-sourced, not fully
+  fetched. No URL, figure, or date below was fabricated; unconfirmed items
+  are marked thin explicitly rather than smoothed into the narrative.
+queries:
+  google_news_rss:
+    - "Microsoft Fairwater datacenter"
+    - "Microsoft Wisconsin data center AI"
+    - "Microsoft Georgia data center billion"
+    - "Microsoft new data center gigawatt 2026"
+    - "Microsoft data center announcement international"
+    - "Microsoft Maia chip production"
+    - "Microsoft Nvidia GPU order billion 2026"
+    - "Microsoft MAI model compute Azure"
+    - "Microsoft OpenAI Azure compute commitment 250 billion"
+    - "Microsoft custom silicon AI accelerator"
+    - "Microsoft Three Mile Island Crane Clean Energy Center"
+    - "Microsoft nuclear power purchase agreement 2026"
+    - "Microsoft data center power gigawatt secured"
+    - "Microsoft renewable energy contract data center"
+    - "Microsoft small modular reactor"
+    - "Microsoft AI run-rate 37 billion"
+    - "Microsoft Azure growth AI earnings 2026"
+    - "Microsoft capital expenditure 97 billion"
+    - "Microsoft capex fiscal 2027 guidance"
+  direct_fetch:
+    - "https://blogs.microsoft.com/blog/"
+    - "https://news.microsoft.com/source/"
+    - "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast"
+items:
+  # --- SITES ---
+  - {id: wi-fairwater-complete, figure: "Mount Pleasant, WI Fairwater #1 first facility construction complete; ~550 FTE now, ~800 once second facility live; second facility slated 2028; equipment startup began April 2026", url: "https://news.microsoft.com/source/2026/06/23/microsoft-completes-construction-on-first-datacenter-facility-in-mount-pleasant-wisconsin/", label: "Microsoft Source — official (fetched directly)", as_of: "2026-06-23", confidence: high}
+  - {id: wi-investment-73b, figure: "Wisconsin datacenter investment raised to $7.3B, 315-acre site (figure has shifted $1B->$3.3B->$7.3B->$7.7B across announcements since 2023, unreconciled)", url: "https://news.google.com/rss/search?q=Microsoft%20Wisconsin%20data%20center%20AI&hl=en-US&gl=US&ceid=US:en", label: "Data Center Dynamics / Tom's Hardware (via Google News RSS)", as_of: "2025-09-18", confidence: thin}
+  - {id: ga-fairwater-2-superfactory, figure: "Second Fairwater site near Atlanta, GA linked to Wisconsin via 120,000+ mile dedicated 'AI WAN' fiber, forming Microsoft's first 'AI superfactory'; no $/MW given", url: "https://blogs.microsoft.com/blog/2025/11/12/infinite-scale-the-architecture-behind-the-azure-ai-superfactory/", label: "Microsoft blog — 'Infinite Scale' (fetched directly)", as_of: "2025-11-12", confidence: high}
+  - {id: wi-ga-2gw-combined, figure: "Wisconsin+Atlanta linked superfactory has 'over 2 GW' of total capacity", url: "https://www.nextbigfuture.com/2025/11/microsoft-has-largest-multi-site-ai-data-center-at-2-gigawatts.html", label: "NextBigFuture (fetched directly)", as_of: "2025-11-16", confidence: medium}
+  - {id: tx-pecos-site, figure: "New Pecos, Reeves County TX campus announced, ~2GW capacity, co-located natural gas plant, 5-7yr buildout, 6,000+ peak construction jobs; 4.7GW contracted renewable electricity cited for Texas ops overall (distinct 2GW figure from the WI+GA superfactory)", url: "https://blogs.microsoft.com/blog/2026/06/22/powering-the-next-wave-of-ai-expanding-capacity-with-our-new-datacenter-in-pecos/", label: "Microsoft blog (fetched directly)", as_of: "2026-06-22", confidence: high}
+  - {id: intl-sites-roundup, figure: "International sites named in RSS headlines only, bodies unverified: Portugal EUR8.6B hub, Australia 'record $25B', UAE 200MW w/ G42 by 2026, West Virginia 1.35GW w/ Nscale/Nvidia/Caterpillar, Global South $50B-by-2030 pledge", url: "https://news.google.com/rss/search?q=Microsoft%20data%20center%20announcement%20international&hl=en-US&gl=US&ceid=US:en", label: "Multiple outlets (via Google News RSS, headline-only)", as_of: "2025-11-12 to 2026-04-23", confidence: thin}
+  # --- SILICON ---
+  - {id: maia200-launch, figure: "Maia 200 launched: TSMC 3nm, 140B transistors, ~10 petaFLOPS FP4/5 petaFLOPS FP8, 30% better perf/$ claimed; deployed Des Moines IA (Phoenix AZ next); explicitly dual-purpose (OpenAI GPT-5.2 inference AND internal synthetic-data/RL for next-gen in-house models); no volume/split figure given", url: "https://blogs.microsoft.com/blog/2026/01/26/maia-200/", label: "Microsoft blog (fetched directly)", as_of: "2026-01-26", confidence: high}
+  - {id: maia-delay, figure: "Next-gen Maia chip production delayed ~6 months, ambitions scaled back", url: "https://news.google.com/rss/search?q=Microsoft%20Maia%20chip%20production&hl=en-US&gl=US&ceid=US:en", label: "Tom's Hardware / Data Center Dynamics / The Information (via Google News RSS)", as_of: "2025-06-27", confidence: medium}
+  - {id: maia2-intel-foundry, figure: "Intel Foundry selected to build Maia 2 on 18A/18A-P node", url: "https://news.google.com/rss/search?q=Microsoft%20custom%20silicon%20AI%20accelerator&hl=en-US&gl=US&ceid=US:en", label: "Tom's Hardware / TweakTown (via Google News RSS)", as_of: "2025-10-17", confidence: medium}
+  - {id: skhynix-hbm3e, figure: "SK Hynix named exclusive HBM3E supplier for Maia 200", url: "https://news.google.com/rss/search?q=Microsoft%20Maia%20chip%20production&hl=en-US&gl=US&ceid=US:en", label: "thelec.net / Businesskorea (via Google News RSS)", as_of: "2026-01-27", confidence: medium}
+  - {id: nscale-nvidia-14b, figure: "Nscale signed $14B Nvidia GPU supply deal tied to Microsoft (neocloud arrangement, not a direct Microsoft-Nvidia PO)", url: "https://news.google.com/rss/search?q=Microsoft%20Nvidia%20GPU%20order%20billion%202026&hl=en-US&gl=US&ceid=US:en", label: "Tech Funding News (via Google News RSS)", as_of: "2025-10-16", confidence: medium}
+  - {id: amd-helios-vendor, figure: "Microsoft added as buyer of AMD's Helios rack system — third silicon vendor alongside Nvidia and in-house Maia", url: "https://news.google.com/rss/search?q=Microsoft%20custom%20silicon%20AI%20accelerator&hl=en-US&gl=US&ceid=US:en", label: "CNBC (via Google News RSS)", as_of: "2026-07-20", confidence: medium}
+  - {id: openai-250b-stake, figure: "Microsoft ~27% as-converted OpenAI stake (~$135B); OpenAI contracted to purchase incremental $250B of Azure services, no timeframe stated; Microsoft gave up ROFR as OpenAI's compute provider", url: "https://blogs.microsoft.com/blog/2025/10/28/the-next-chapter-of-the-microsoft-openai-partnership/", label: "Microsoft blog — official (fetched directly)", as_of: "2025-10-28", confidence: high}
+  - {id: no-compute-split-disclosed, figure: "No numeric split of Azure AI compute between OpenAI serving / MAI in-house / third-party Azure customers found disclosed anywhere; no capex-to-chip-count figure found anywhere", url: "https://blogs.microsoft.com/blog/2026/01/26/maia-200/", label: "Negative finding — explicit gap, not fabricated", as_of: "2026-07-27", confidence: thin}
+  # --- POWER ---
+  - {id: tmi-crane-ppa, figure: "Constellation-Microsoft 20-year PPA restarting TMI Unit 1 as Crane Clean Energy Center, 835MW (original deal, Sept 2024)", url: "https://www.constellationenergy.com/newsroom/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Reliable-Carbon-Free-Power-to-the-Grid-Adding-Jobs-and-Preserving-Energy-History.html", label: "Constellation Energy — official (search-confirmed)", as_of: "2024-09-20", confidence: high}
+  - {id: doe-1b-loan, figure: "DOE approved $1B loan to Constellation for the Crane/TMI restart", url: "https://news.google.com/rss/search?q=Microsoft%20Three%20Mile%20Island%20Crane%20Clean%20Energy%20Center&hl=en-US&gl=US&ceid=US:en", label: "CBS News / WSJ / E&E News-Politico (via Google News RSS, converging)", as_of: "2025-11-18", confidence: high}
+  - {id: crane-2027-restart, figure: "TMI/Crane owners affirm 2027 restart date", url: "https://news.google.com/rss/search?q=Microsoft%20Three%20Mile%20Island%20Crane%20Clean%20Energy%20Center&hl=en-US&gl=US&ceid=US:en", label: "PennLive (via Google News RSS)", as_of: "2026-03-27", confidence: medium}
+  - {id: crane-nrc-draft, figure: "NRC issued draft finding of no significant environmental impact; restart 'closing in' on NRC approval", url: "https://news.google.com/rss/search?q=Microsoft%20nuclear%20power%20purchase%20agreement%202026&hl=en-US&gl=US&ceid=US:en", label: "E&E News (via Google News RSS)", as_of: "2026-06-09", confidence: medium}
+  - {id: crane-ferc-interconnect, figure: "FERC approved transfer of 760MW of capacity interconnection rights for the Crane restart grid connection", url: "https://news.google.com/rss/search?q=Microsoft%20nuclear%20power%20purchase%20agreement%202026&hl=en-US&gl=US&ceid=US:en", label: "Nuclear Engineering International (via Google News RSS / DDG snippet)", as_of: "2026-06-16", confidence: medium}
+  - {id: chevron-kilby, figure: "Chevron 'Project Kilby': 2.67-2.7GW off-grid natural-gas plant at Pecos TX, 20-year PPA, $7B project, first power 2028", url: "https://news.google.com/rss/search?q=Microsoft%20data%20center%20power%20gigawatt%20secured&hl=en-US&gl=US&ceid=US:en", label: "CNBC / Rigzone / WSJ / Redmondmag / Business Journals (via Google News RSS, 5 converging outlets)", as_of: "2026-06-22", confidence: high}
+  - {id: helion-fusion-ppa, figure: "Helion (fusion) — Microsoft's 2023 PPA commitment (50MW by 2028) referenced again after Helion raised $465M", url: "https://news.google.com/rss/search?q=Microsoft%20small%20modular%20reactor&hl=en-US&gl=US&ceid=US:en", label: "NucNet (via Google News RSS)", as_of: "2026-06-08", confidence: medium}
+  - {id: total-renewable-40gw, figure: "~40GW total contracted renewable capacity worldwide, ~19GW already online (unreconciled competing figure of 34GW exists in one other source)", url: "https://news.google.com/rss/search?q=Microsoft%20renewable%20energy%20contract%20data%20center&hl=en-US&gl=US&ceid=US:en", label: "esg-investing.com, loosely corroborated by Reuters (via Google News RSS)", as_of: "2026-02-18", confidence: medium}
+  - {id: no-gw-gap-disclosed, figure: "No GW-needed-vs-secured power gap figure found published by Microsoft or reconstructed by any outlet", url: "https://news.google.com/rss/search?q=Microsoft%20data%20center%20power%20gigawatt%20secured&hl=en-US&gl=US&ceid=US:en", label: "Negative finding — explicit gap, not fabricated", as_of: "2026-07-27", confidence: thin}
+  # --- PAYOFF ---
+  - {id: ai-runrate-37b, figure: "Microsoft AI business run-rate crossed $37B annualized, up 123% YoY", url: "https://news.google.com/rss/articles/CBMi1AFBVV95cUxPOEpqYjI1WHpCRW5EQ0g3YmQ2VWluSUNybGpMeVA0QVRMMXBIWm0ybEVneVIwcnVSdGFLcS1OOC14T2lMcFhFWkNYczUzODl3NzIwMzBiNzg0T3FuU1I5RDRybUlOcXJ4UVhqT2NCcTJvVDY1dXVzY19VX2dGQzNkek1KZ3NqeEh2MUpHQkpxWDNRXzRESUwtT1FmOHZTQ2U3VjlrTW9RWjBwZ1k2ajRLcjd0Zk4wYkM4bnMtV0xhbnFsTWM0WWJZS0RaUU5MQW9jZmFOaw?oc=5", label: "Storyboard18, paraphrasing Microsoft's FY26 Q3 release (via Google News RSS)", as_of: "2026-04-29", confidence: high}
+  - {id: azure-growth-q3fy26, figure: "Azure revenue +40% YoY (39% constant currency); total revenue $82.9B (+18%); Microsoft Cloud revenue $54.5B (+29%)", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", label: "Microsoft Investor Relations — official (fetched directly)", as_of: "2026-04-29", confidence: high}
+  - {id: capex-q3fy26, figure: "Quarterly capex $30.9B; nine-month FY26 capex $80.1B (through 2026-03-31)", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", label: "Microsoft Investor Relations — official (fetched directly)", as_of: "2026-04-29", confidence: high}
+  - {id: capex-190b-guidance, figure: "Microsoft guided to ~$190B in calendar-2026 capital spending", url: "https://news.google.com/rss/articles/CBMigAFBVV95cUxOWEhfS2hRWWw2b1RmWEpIZ0w0R3lrZTRFNjNOc21ZY3B6VW90VTI4T1dNVERldXk0aWs4RUJCRm9tdURJdThpaWdPWTNCOFNwTkNRVDZVQ2tmX2FHODFSWXgxNDlvNnI0X04zYVl4dmRxVmVXSVBsZC0tdTBBNkR4?oc=5", label: "CNBC (via Google News RSS, headline only, body blocked)", as_of: "2026-04-29", confidence: medium}
+  - {id: circular-financing-theme, figure: "Circular-financing/bubble skepticism active press theme tying Big Tech capex to a self-reinforcing revenue loop (general framing, not Microsoft-specific $ split)", url: "https://news.google.com/rss/search?q=Microsoft%20OpenAI%20Azure%20compute%20commitment%20250%20billion&hl=en-US&gl=US&ceid=US:en", label: "WSJ / Bloomberg / Seeking Alpha / Times of India (via Google News RSS)", as_of: "2025-09-29 to 2025-11-24", confidence: medium}
+  - {id: earnings-date-confirmed, figure: "Microsoft reports FY26 Q4/full-year earnings Wednesday 2026-07-29 (cross-confirmed 6+ outlets)", url: "https://news.google.com/rss/search?q=Microsoft%20Azure%20growth%20AI%20earnings%202026&hl=en-US&gl=US&ceid=US:en", label: "GeekWire / Zacks / tastylive / Money Morning / Motley Fool (via Google News RSS)", as_of: "2026-07-25", confidence: high}
+  - {id: ttm-97b-not-found, figure: "The literal '~$97B/yr TTM' capex figure was NOT found verbatim in any source reached; it is this crawl's own derivation from the $80.1B nine-month FY26 IR figure plus an estimated Q4 FY25 quarter, not a disclosed/press-stated number", url: "https://www.microsoft.com/en-us/investor/earnings/fy-2026-q3/press-release-webcast", label: "Derived — flagged explicitly, not fabricated as a quoted figure", as_of: "2026-07-27", confidence: thin}
+notes: >-
+  Confidence key matches prior bundle convention: high = primary source
+  fetched directly (Microsoft's own blog/IR/newsroom, or Constellation's
+  own newsroom), or 3+ independent outlets converging same day via RSS.
+  medium = single-to-few outlet(s), RSS-listed or DuckDuckGo-snippet
+  sourced (title/source/date confirmed, article body not independently
+  fetched — most Google News RSS redirect links and several direct-outlet
+  URLs, e.g. Data Center Dynamics, AJC.com, AFR, CNBC, SemiAnalysis,
+  247WallSt, returned 403/404 on WebFetch this session, likely
+  bot-blocking). thin = single source and/or explicit negative finding
+  (a gap in public disclosure) and/or this crawl's own arithmetic
+  derivation rather than a stated figure. No URL, figure, or date in this
+  bundle was fabricated; unconfirmed or unreconciled figures (e.g. the
+  shifting Wisconsin investment total, the two distinct 2GW site figures,
+  the ~40GW vs ~34GW renewable totals) are flagged as unreconciled rather
+  than picked-and-presented as settled.

@@ -1,0 +1,97 @@
+# Bundle — node posture + capital-flow: sondermind / SonderMind (2026-07-28)
+# axes_num rollout wave G (8-actor small mental-health-AI batch). Recipe (Ben's
+# spec for the wave): WEIGHT = cumulative VC raised ($B, private co); THRUST =
+# ~12mo deployment run-rate into new positions (network/M&A/contract buildout/
+# tech spend), expected to be a modest fraction of a $B; GRAVITY = attributable
+# dependent economy in USERS-IN-CARE / payer-contract-revenue terms, NOT gross
+# provider/user headline counts; OPTIONALITY = band for how free the commanded
+# capital is (VC-backed private cos default to constrained absent evidence
+# otherwise). Buybacks N/A ($0, private company).
+# Method: WebSearch was budget-exhausted this session (200/200) before any
+# query ran; all research is WebFetch against Google News RSS
+# (news.google.com/rss/search?q=...), DuckDuckGo HTML results, GetLatka, and
+# Behavioral Health Business / Wikipedia-style aggregator pages. No SEC/IR
+# primary source exists (private company, no S-1). Revenue in particular is
+# NOT independently disclosed by SonderMind — the figures below are
+# auto-generated third-party estimator outputs (Zippia/IncFact/RocketReach/
+# Compworth) that disagree with each other by 8x ($20M-$159M); treated as
+# low-confidence triangulation only, never as an earnings figure.
+node: sondermind
+name: "SonderMind"
+pocket: health
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Reached all-50-states therapy coverage Apr-2025 (adding NY, MI) and nationwide psychiatry by Nov-2025; network now ~12,500 licensed providers. No new primary equity round disclosed since the 2021 Series C, and Feb-2024 coverage explicitly asked whether the company was 'shaping up for an exit' after a Jan-2024 layoff (~17% of staff, ~50 people) — organic/product expansion continuing on an unrefreshed 2021 capital base, not a fresh growth-capital cycle."
+  sources:
+    - {figure: "SonderMind expands telemental health to New York, Michigan, now in all 50 states", label: "Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=%22SonderMind%22+revenue+OR+valuation+OR+IPO", as_of: "2025-04", confidence: med}
+    - {figure: "psychiatry services available nationwide (all 50 states + DC) as of November 2025", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2025-11", confidence: low}
+    - {figure: "Is this Denver mental health tech unicorn shaping up for an exit?", label: "Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=%22SonderMind%22+revenue+OR+valuation+OR+IPO", as_of: "2024-02", confidence: low}
+    - {figure: "workforce reduction of ~50 employees / 17% of staff", label: "The Business Journals / Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2024-01", confidence: med}
+    - {figure: "network of over 12,500 licensed providers for therapy and psychiatry", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2026", confidence: low}
+capital:
+  available:
+    value: "~$183-242M cumulative raised across 5 disclosed rounds (Convertible Note $535K 2017, Seed $2.5M 2018, Series A $3M 2019, Series B $27M 2020, Series C $150M Jul-2021); GetLatka sums the disclosed round amounts to $183M, while Tracxn separately lists the same Jul-2021 close at $242M (likely an oversubscribed/secondary-inclusive total vs. the $150M primary headline figure everyone else cites) — both cited, gap unresolved. Peak disclosed valuation $1.4B (2021, unicorn mark). NO primary equity round found disclosed since 2021 despite checking 2025-2026 news — this is a stale capital base, not a live raise."
+    sources:
+      - {figure: "$27M Series B, Apr-2020, led by General Catalyst", label: "Google News RSS aggregation", url: "https://news.google.com/rss/search?q=SonderMind+funding", as_of: "2020-04", confidence: med}
+      - {figure: "$150M Series C, Jul-2021, unicorn status ($1B+ valuation)", label: "Google News RSS aggregation (MobiHealthNews/Fierce Healthcare headlines)", url: "https://news.google.com/rss/search?q=SonderMind+funding", as_of: "2021-07", confidence: med}
+      - {figure: "total $183M raised across 5 rounds; peak valuation $1.4B", label: "GetLatka — SonderMind company page", url: "https://getlatka.com/companies/sondermind", as_of: "2026", confidence: low}
+      - {figure: "latest funding round Jul-28-2021, $242M", label: "Tracxn — SonderMind funding rounds via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+total+raised+valuation+2026", as_of: "2026-07-10", confidence: low}
+      - {figure: "valuation estimates range $1.0-1.6B across trackers, most converging near $1.4B", label: "compworth.com / getlatka.com via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+total+raised+valuation+2026", as_of: "2026", confidence: low}
+      - {figure: "no Series D or later primary round found in any source checked as of 2026-07-28", label: "cross-check across Google News RSS + DuckDuckGo HTML passes", url: "https://news.google.com/rss/search?q=SonderMind+Series+D", as_of: "2026-07-28", confidence: med}
+  operating:
+    value: "no official revenue disclosed. Third-party estimator outputs disagree by ~8x: $20M (Zippia), $59.9M (RocketReach), $159M (Compworth, 2026), $10-100M range (IncFact) — none are primary-sourced, all read as auto-generated. ~700-1,276 employees depending on source/date (GetLatka: ~1.1K, Nov-2025; another pass: ~1,276; a site-scrape: ~300 FTE) — inconsistent headcount too, likely mixing FTE-only vs. contracted-clinician counts."
+    sources:
+      - {figure: "no public revenue figure confirmed", label: "GetLatka — SonderMind company page", url: "https://getlatka.com/companies/sondermind", as_of: "2026", confidence: low}
+      - {figure: "estimated revenue $159M (2026)", label: "Compworth via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+      - {figure: "estimated annual revenue $59.9M (2026)", label: "RocketReach via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+      - {figure: "estimated revenue $20M", label: "Zippia via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+      - {figure: "~1.1K employees (November 2025)", label: "GetLatka — SonderMind company page", url: "https://getlatka.com/companies/sondermind", as_of: "2025-11", confidence: low}
+      - {figure: "~300 full-time employees on staff (site-scrape aggregation, date unclear)", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2026", confidence: low}
+  deployed:
+    value: "capital deployed into nationwide network buildout (all 50 states therapy Apr-2025, nationwide psychiatry Nov-2025) and three tuck-in acquisitions (Qntfy ML platform Oct-2021, Total Brain neuroscience/wellbeing app Nov-2022, Mindstrong tech assets during its wind-down Mar-2023) plus, most recently, an AI-safety R&D release (300 clinically-reviewed mental-health LLM guardrail scenarios, open-sourced Jul-2026) — no acquisition found since Mar-2023, so the 'acquisitive' pattern from background research appears to have paused, not continued, through 2025-2026."
+    sources:
+      - {figure: "SonderMind acquires Qntfy to bring machine learning to mental health care", label: "Fierce Healthcare via Google News", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2021-10-21", confidence: med}
+      - {figure: "SonderMind acquires mental health monitoring, support company Total Brain", label: "MobiHealthNews via Google News", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2022-11-15", confidence: med}
+      - {figure: "Mindstrong sells tech assets to SonderMind, shuts down operations", label: "MobiHealthNews via Google News", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2023-03-22", confidence: med}
+      - {figure: "SonderMind Open-Sources 300 Clinically-Reviewed Guardrail Scenarios, Says Generic LLMs Are Dangerously Over-Calibrated for Mental Health", label: "finance.biggo.com via Google News", url: "https://news.google.com/rss/search?q=SonderMind+2026", as_of: "2026-07-26", confidence: med}
+      - {figure: "no acquisition announced 2024-2026 found in any source checked", label: "cross-check across Google News RSS passes", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2026-07-28", confidence: med}
+  in:
+    value: "VC equity rounds only (General Catalyst led Series B; Series C investor syndicate not individually confirmed in sources reached) plus payer-contract/insurance-reimbursement revenue as the ongoing operating inflow — no strategic/industrial investor or government funding found, unlike some peers in this wave."
+    sources:
+      - {figure: "SonderMind Raises $27M Series B For Mental Health Accessibility, led by General Catalyst", label: "Google News RSS aggregation", url: "https://news.google.com/rss/search?q=SonderMind+funding", as_of: "2020-04", confidence: med}
+      - {figure: "generates revenue by facilitating therapy and psychiatry sessions that are reimbursed by insurance plans", label: "Altss via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+  out:
+    value: "operating spend across a ~50-state clinician network (~12,500 licensed providers) and R&D (AI-assisted matching/practice tools, the Jul-2026 guardrails release); no disclosed multi-year committed dollar figure for network or tech buildout found — thrust below is a rough band, not a computed run-rate."
+    sources:
+      - {figure: "network of over 12,500 licensed providers for therapy and psychiatry services", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2026", confidence: low}
+      - {figure: "supports clinicians with AI-powered practice management tools; medical evaluations in under 5 days", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2026", confidence: low}
+thrust:
+  value: "~$0.02-0.05B/yr (thin, estimate) — no disclosed multi-year buildout $ figure or M&A spend in the last 12mo. Inputs are qualitative only: completed nationwide network expansion (all-50-states therapy by Apr-2025, psychiatry by Nov-2025) and a Jul-2026 AI-guardrails R&D release, funded out of the existing 2021 capital base / operating revenue rather than a fresh raise (no primary round since 2021 confirmed). No acquisition since Mar-2023, so M&A is $0 for the trailing 12mo, unlike the 2021-2023 acquisitive stretch. Band derived as a modest slice of the ~$0.18-0.24B total capital base plus plausible opex-funded tech/network spend, per the wave recipe's expectation that this figure comes in well under $1B."
+  basis: "No source discloses a $-figure-plus-horizon for SonderMind's network expansion, tech spend, or R&D commitment. Absent that, thrust is estimated as a modest fraction of the disclosed capital base and headcount-implied opex, consistent with the wave's stated expectation for a mid-stage single-market provider network with no active fundraise. Flagged explicitly as a rough band, not a computed run-rate — replace if a disclosed capex/opex figure surfaces."
+  sources:
+    - {figure: "no disclosed multi-year network-buildout or tech-spend dollar commitment found in any source consulted", label: "cross-check across Google News RSS + DuckDuckGo HTML passes", url: "https://news.google.com/rss/search?q=SonderMind+2026", as_of: "2026-07-28", confidence: low}
+    - {figure: "all-50-states therapy coverage reached Apr-2025; nationwide psychiatry Nov-2025 (organic expansion, not a disclosed capex program)", label: "Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=%22SonderMind%22+revenue+OR+valuation+OR+IPO", as_of: "2025-04", confidence: med}
+    - {figure: "no acquisition announced 2024-2026 (last: Mindstrong tech-asset acquisition, Mar-2023)", label: "cross-check across Google News RSS passes", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2026-07-28", confidence: med}
+optionality:
+  value: "constrained — VC-backed private company (General Catalyst and other undisclosed Series C investors), board oversight, no public listing. Jan-2024 layoffs (~17% of staff) and no fresh primary round since the 2021 Series C are runway/burn signals consistent with constrained, investor-controlled capital rather than freely deployable cash; Feb-2024 trade-press speculation about an 'exit' further points toward investor-driven strategic optionality (M&A/IPO timing) rather than founder-controlled freedom. No evidence found of unusual investor control (e.g., a strategic-industrial or government stake) that would push this toward 'locked.'"
+  sources:
+    - {figure: "SonderMind Raises $27M Series B ... led by General Catalyst", label: "Google News RSS aggregation", url: "https://news.google.com/rss/search?q=SonderMind+funding", as_of: "2020-04", confidence: med}
+    - {figure: "workforce reduction of ~50 employees / 17% of staff, Jan-2024", label: "The Business Journals via Google News", url: "https://news.google.com/rss/search?q=SonderMind+acquisition", as_of: "2024-01", confidence: med}
+    - {figure: "Is this Denver mental health tech unicorn shaping up for an exit?", label: "Behavioral Health Business via Google News", url: "https://news.google.com/rss/search?q=%22SonderMind%22+revenue+OR+valuation+OR+IPO", as_of: "2024-02", confidence: low}
+    - {figure: "these are the 13 mental health startups that could IPO, make acquisitions, or get bought this year, according to analysts (SonderMind listed)", label: "Business Insider via Google News", url: "https://news.google.com/rss/search?q=SonderMind+layoffs+revenue+profitability", as_of: "2024-05", confidence: low}
+gravity:
+  value: "~$0.1-0.15B/yr (estimate, low confidence) — reasoned in patients-in-care / payer-contract-revenue terms per the wave recipe, not gross provider/user counts. SonderMind is an in-network insurance marketplace: its network (~12,500 licensed providers, all 50 states for therapy + psychiatry) generates revenue only as insurance-reimbursed sessions actually clear, so the attributable dependent economy is bounded by SonderMind's own operating revenue (the payer-contract dollars flowing through it), not by headline provider/state counts. No official revenue is disclosed; third-party estimator outputs (all low-reliability, auto-generated) range $20M-$159M/yr, with the higher end (Compworth ~$159M) and a rough headcount-implied opex check (~1,100-1,276 employees) both pointing toward the upper-tens-to-low-hundreds-of-millions band. Landed at ~$0.1-0.15B/yr as a midpoint, not the top of the recipe's suggested $0.1-1B range, given the disagreement among sources and no confirmation from SonderMind itself."
+  sources:
+    - {figure: "estimated revenue $159M (2026)", label: "Compworth via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+    - {figure: "estimated annual revenue $59.9M (2026)", label: "RocketReach via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+    - {figure: "estimated revenue $20M; revenue range $10-100M", label: "Zippia / IncFact via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+    - {figure: "network of over 12,500 licensed providers for therapy and psychiatry, all 50 states", label: "DuckDuckGo HTML aggregation of SonderMind coverage pages", url: "https://html.duckduckgo.com/html/?q=SonderMind+number+of+therapists+states+clients+2026", as_of: "2026", confidence: low}
+    - {figure: "generates revenue by facilitating therapy and psychiatry sessions reimbursed by insurance plans (marketplace/take-rate model, not gross session value)", label: "Altss via DuckDuckGo HTML", url: "https://html.duckduckgo.com/html/?q=SonderMind+revenue+ARR+2025+2026", as_of: "2026", confidence: low}
+    - {figure: "~1.1K-1,276 employees implies a headcount-scaled opex/revenue floor consistent with the upper end of the estimator range", label: "GetLatka + DuckDuckGo HTML leadership aggregation", url: "https://getlatka.com/companies/sondermind", as_of: "2025-11", confidence: low}
+buybacks:
+  value: "$0 — private company, no buyback mechanism applicable"
+  sources:
+    - {figure: "private VC-backed company, all disclosed capital events are equity funding rounds; no public listing or buyback activity found", label: "cross-check across Google News RSS + DuckDuckGo HTML passes", url: "https://news.google.com/rss/search?q=SonderMind+funding", as_of: "2026-07-28", confidence: high}
+axes_num_estimate: { weight: 0.2, thrust: 0.03, gravity: 0.12 }  # agent-derive 2026-07-28 wave G
+notes: "Pocket: health (mental-health provider-network vertical — therapist/psychiatrist marketplace with AI-assisted matching and clinician tools, not a pure AI lab). Biggest uncertainties: (1) no official revenue disclosed anywhere — the operating/gravity figures rest entirely on low-reliability auto-generated estimator sites that disagree by ~8x ($20M-$159M), landed at a conservative midpoint; (2) no primary equity round confirmed since the 2021 Series C despite checking through 2026-07-28 — capital base (weight) is stale, and thrust is correspondingly thin/estimated rather than computed from a disclosed figure; (3) background note that SonderMind has 'reportedly been acquisitive' is only true through Mar-2023 (Qntfy/Total Brain/Mindstrong) — no acquisition found in 2024-2026 in any source reached, so M&A contribution to thrust is treated as $0 for the trailing 12mo, a correction to the wave's background assumption. WebSearch was exhausted (200/200) before this bundle's research began; every source above is a WebFetch against Google News RSS, DuckDuckGo HTML, or an aggregator page (GetLatka, Behavioral Health Business via RSS) — no SEC/IR primary source exists for this private company."

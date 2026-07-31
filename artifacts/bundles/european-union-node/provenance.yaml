@@ -1,0 +1,54 @@
+# Bundle — state node: european-union (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml european-union (rank state,
+# sphere eu, tier treaty-assembled). CAVEAT: the EU is a treaty bloc, NOT a
+# unitary sovereign — contested sovereignty. Two fiscal readings coexist:
+# (a) the EU INSTITUTIONS' budget (~€170B/yr, tiny) and (b) the AGGREGATE of
+# 27 member-state fiscs (many trillions). Gravity = aggregate GDP. Figures
+# flagged accordingly. Method: WebFetch primary (WebSearch exhausted) —
+# Wikipedia aggregate lists + Budget of the EU page.
+node: european-union
+name: "European Union"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Treaty bloc building bloc-level instruments — joint NextGenEU debt, the AI Act as regulatory power, defense-spending push — while member fiscs diverge (France strained, Germany room). Geopolitically hedges between US security dependence and China trade."
+  sources:
+    - {figure: "EU institutions' annual budget €170.6B (2022); bloc acts via common law/joint instruments not a unitary treasury", label: "Wikipedia — Budget of the European Union", url: "https://en.wikipedia.org/wiki/Budget_of_the_European_Union", as_of: "2022", confidence: med}
+    - {figure: "board.yaml: 'Real law, contested sovereignty — the AI Act is its instrument'; tier treaty-assembled", label: "kestrel attention/board.yaml european-union entry", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "no single EU reserve pile — the EU institutions hold no large sovereign fund; liquidity is joint borrowing capacity (NextGenEU) + the sum of member-state FX reserves + ECB. AAA-rated EU joint issuance is the novel instrument."
+    sources:
+      - {figure: "EU institutions have no sovereign wealth fund on the SWF list; capacity is joint (NextGenEU) borrowing + member reserves", label: "Wikipedia — List of countries by sovereign wealth funds (no EU-institution fund) + analytical", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: low}
+  operating:
+    value: "EU-institution budget ~€170.6B/yr (2022) ≈ ~$185B — TINY; the member-state aggregate operating budget is many trillions (France alone ~$1.8T expenditure)"
+    sources:
+      - {figure: "EU institutions total revenue €170.6B = expenditure €170.6B (2022); ~$185B at ~€1=$1.08 (FX-converted, approx)", label: "Wikipedia — Budget of the European Union", url: "https://en.wikipedia.org/wiki/Budget_of_the_European_Union", as_of: "2022", confidence: med}
+  deployed:
+    value: "at bloc level: ~€750B NextGenEU joint recovery debt (2020, general knowledge — flag) + member-state debts governed by the 60%-of-GDP Stability & Growth Pact target (widely breached: France 116%, Italy higher)"
+    sources:
+      - {figure: "SGP target: general govt gross debt <=60% of GDP (member-level, widely breached)", label: "Wikipedia — List of countries by government debt (SGP note)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: med}
+      - {figure: "NextGenEU ~€750B joint recovery instrument (2020) — asserted from general knowledge, not on fetched page", label: "analytical (NextGenEU) — NOT confirmed on fetched Budget-of-EU excerpt", url: "https://en.wikipedia.org/wiki/Budget_of_the_European_Union", as_of: "2020", confidence: low}
+  in:
+    value: "EU-institution revenue ~€170.6B/yr — GNI-based member contributions + customs duties + a VAT share (own resources)"
+    sources:
+      - {figure: "EU institutions total revenue €170.6B (2022)", label: "Wikipedia — Budget of the European Union", url: "https://en.wikipedia.org/wiki/Budget_of_the_European_Union", as_of: "2022", confidence: med}
+  out:
+    value: "EU-institution expenditure ~€170.6B/yr (2022) — balanced by treaty (the EU budget must balance; no institution-level deficit)"
+    sources:
+      - {figure: "EU institutions total expenditure €170.6B (2022), = revenue (balanced-budget rule)", label: "Wikipedia — Budget of the European Union", url: "https://en.wikipedia.org/wiki/Budget_of_the_European_Union", as_of: "2022", confidence: med}
+
+optionality:
+  value: "mixed — the euro is the #2 global reserve currency (real monetary weight) and the ECB is credible, but fiscal power is fragmented across 27 members with veto points and no unified treasury; joint action (NextGenEU) is possible but exceptional, not routine."
+  sources:
+    - {figure: "euro = #2 reserve currency; but no unified fiscal sovereignty (27 members, SGP constraints, unanimity vetoes)", label: "analytical — treaty-bloc structure; board.yaml 'contested sovereignty'", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+gravity:
+  value: "~$23.03T aggregate GDP (nominal, IMF 2026) — bloc aggregate of 27 members; larger than China nominally, but it is a SUM of sovereigns, not one gravity well"
+  sources:
+    - {figure: "nominal GDP $23,034,637M (IMF 2026 aggregate); $19,497,000M (World Bank 2024)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Biggest uncertainty is the sovereignty framing itself — every capital figure has TWO valid readings (EU-institution vs member aggregate) and they differ by ~100x on the fiscal axes. Mid-tier graded sovereignty (real law, contested statehood). Gravity (aggregate GDP) is solid; the institution-budget figures are solid but small; NextGenEU nominal is general-knowledge, flagged low. Do not treat EU capital as a unitary treasury."

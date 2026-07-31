@@ -1,0 +1,264 @@
+# attention/watchlist.yaml — the entities Ben cares about, per lens. THE PRODUCT.
+#
+# WHY THIS EXISTS: RSS only tells us what a publisher chose to push. This file
+# drives the QUERY-based collection layer: every term here is actively swept
+# against news / prediction-market / discourse APIs. RSS = "what got published";
+# this = "what we're hunting for, everywhere."
+#
+# GROWING LIST — edits follow Ben's steering or the coverage critic (log why).
+# Keep terms precise (quote multi-word names; prefer distinctive strings); each
+# `term` is passed verbatim to the sweep collectors.
+#
+# ENTITY LAYER (reframe Phase 0, 2026-07-22): every entry here IS an entity.
+# Entity slug = lowercase(term), non-alphanumeric runs -> "-", trimmed
+# ("Character.AI" -> character-ai, "Google DeepMind" -> google-deepmind).
+# Entity kind = section (orgs -> org, people -> person, everything else ->
+# topic). Entries may use a mapping form when the sweep term and the entity
+# identity must differ:
+#   - term: "Elon Musk xAI"     # passed verbatim to the sweep, unchanged
+#     entity: elon-musk         # fixed slug
+#     name: "Elon Musk"         # display name
+# Readers: term = x if isinstance(x, str) else x["term"]. Item/thread entity
+# tags may only use slugs derivable from this file — a new tag means a
+# watchlist add through the steering loop first.
+#
+# Seeded 2026-07-20 by one-time copy from the reference repo (ai + mental-health
+# lenses as of 2026-06-28, incl. its coverage-critic auto-adds). This copy is
+# kestrel's alone — no sync-back. `money` scoped by Ben same day (see its block).
+
+lenses:
+
+  ai:
+    # Orgs of interest (radar Q1 "who are the players, what are they DOING" + Q5).
+    orgs:
+      # Frontier labs
+      - "OpenAI"
+      - "Anthropic"
+      - "Google DeepMind"
+      - "xAI"
+      - "Meta AI"
+      - "Mistral AI"
+      - "Safe Superintelligence"
+      - "DeepSeek"
+      - "Alibaba Qwen"
+      - "Moonshot AI"
+      - "Zhipu AI"
+      - "Liquid AI"  # auto-added 2026-06-27: non-transformer frontier lab (LFM 2.5 release) curated feeds led with, we missed
+      # The giants — what the biggest/most powerful players are doing (radar Q1)
+      - "Apple"
+      - "Samsung"
+      - "Microsoft"
+      - "Google"          # Alphabet broadly (DeepMind covers the lab)
+      - "Amazon AWS"
+      - "Oracle"
+      # Compute / silicon / infra
+      - "Nvidia"
+      - "Broadcom"
+      - "TSMC"
+      - "ASML"       # ben-steer 2026-07-27 (W3 — sole EUV supplier, boarded same day)
+      - "SK Hynix"   # board.yaml resource-layer — ben-steer 2026-07-24 (memory squeeze)
+      - "Micron"     # board.yaml resource-layer — ben-steer 2026-07-24 (memory squeeze)
+      - "SMIC"       # ben-steer 2026-07-29 — China's largest foundry. The map's chip
+                     # coverage was built on the US/Korea/Taiwan axis and had NO China
+                     # foundry; SMIC is a named first recipient of the domestic DUV
+                     # tools, so it's the confirmation mechanism for china-duv-lithography
+      - "Hua Hong"   # ben-steer 2026-07-29 — China's #2 foundry (mature nodes); same
+                     # reason: named DUV recipient, and delivery-to-a-named-fab is the
+                     # test that thread turns on
+      - "Arm"        # ben-steer 2026-07-29 — closes a recall gap: arm-royalty-regime (w2)
+                     # ran since 07-25 with NO sweep term; upcoming.yaml already
+                     # tagged entities:[arm], a slug that didn't resolve until now
+      - "Qualcomm"   # ben-steer 2026-07-29 — same gap: qualcomm-dragonfly (w2) had
+                     # no sweep term; entities:[qualcomm] now resolves
+      - "CoreWeave"
+      - "AMD"
+      # Data/AI platform capital
+      - "Databricks"  # auto-added 2026-07-22 (critic): $188B round led a benchmark 07-20, we missed
+      # Vertically-integrated AI majors (board.yaml — ben-steer 2026-07-24)
+      - "Tesla"
+      - "SpaceX"      # SpaceXAI post-merger (Grok / Colossus)
+
+    # Persons of interest (leadership, safety, policy)
+    people:
+      - "Sam Altman"
+      - "Dario Amodei"
+      - "Jakub Pachocki"
+      - "Demis Hassabis"
+      - "Ilya Sutskever"
+      - "Mira Murati"
+      - "Jan Leike"
+      - term: "Elon Musk xAI"
+        entity: elon-musk
+        name: "Elon Musk"
+      - "Noam Shazeer"  # auto-added 2026-06-27: departed Google for OpenAI; transformer co-author, major talent flow we missed
+      # House heads — board.yaml `houses` (ben-steer 2026-07-24: people are
+      # Houses, first-class and distinct from the orgs they hold)
+      - "Sundar Pichai"
+      - "Satya Nadella"
+      - "Andy Jassy"
+      - "Mark Zuckerberg"
+      - "Tim Cook"
+      - "John Ternus"
+      - "Jensen Huang"
+      - "Larry Ellison"
+      - "Mustafa Suleyman"
+
+    # RELEASE-WATCH — models expected / rumored. The point is to catch BOTH the
+    # ship AND the slip. Prediction markets ("released by <date>?") are the
+    # canonical signal for a delay; quote the exact model string.
+    release_watch:
+      - "GPT-5.6"
+      - "GPT-6"
+      - "Gemini 3"
+      - "Claude Opus 5"
+      - "Grok 5"
+      - "Llama 5"
+      - "DeepSeek V4"
+      - "Qwen 4"
+
+    # Themes — policy + MONEY/PROJECTS (radar Q2 "where is the money going")
+    themes:
+      # Policy / governance
+      - "AI export controls"
+      - "AI Act enforcement"
+      - "frontier model regulation"
+      - "AI licensing regime"
+      # Money & projects — funding, capex, deals, infra
+      - "AI funding round"
+      - "AI capex"
+      - "AI acquisition"
+      - "AI data center buildout"
+      - "AI chip supply"
+      - "AI memory chip shortage"  # auto-added 2026-06-27: HBM/DRAM squeeze from the buildout forcing Apple/Microsoft price hikes; demand-side macro signal we missed
+
+  mental-health:
+    # Orgs of interest (radar Q3 evidence, Q4 AI×MH, Q6 market)
+    orgs:
+      # DMHI vendors / platforms (from actors.md + entities.yaml)
+      - term: "Alan insurtech"
+        entity: alan
+        # ben-steer 2026-07-28: $780M raise (~$8.9B), French insurtech scaling
+        # AI-health into Canada — routes into alan-into-canada / canada-ai-vs-care
+      - "Cerebral"
+      - "Talkspace"
+      - "BetterHelp"
+      - "Headspace"
+      - "Spring Health"
+      - "Lyra Health"
+      - "Brightside Health"
+      - "Big Health"
+      - "Woebot"
+      - "Wysa"
+      - "Akili Interactive"
+      - "SonderMind"
+      - "Two Chairs"
+      - "Quartet Health"
+      - "Pear Therapeutics"
+      # AI × mental health — therapy bots / companion apps (radar Q4, my sharpest edge)
+      - "Slingshot AI"
+      - "Character.AI"
+      - "Replika"
+      - "Sonia"
+      # Evaluators / standards / accountability (radar Q3)
+      - "Peterson Health Technology Institute"   # PHTI
+      - "ICER"
+      - "ORCHA"
+      - "Coalition for Health AI"
+      # Big-tech health arms — what the giants are doing in health (radar Q1 ∩ Q4)
+      - "Apple Health"
+      - "Amazon Health"
+      - "Microsoft Nuance"
+      - "Verily"
+      # Health systems deploying AI in BH care (radar Q4 governance-by-labor angle)
+      - "Kaiser Permanente"  # auto-added 2026-07-22 (critic): BHB 07-21 lead — 2,400 BH clinicians contesting AI in care decisions; no term covered it
+      - term: "Universal Health Services behavioral"
+        entity: universal-health-services
+        name: "Universal Health Services"
+        # auto-added 2026-07-29 (critic): BHB's 07-28 lead was UHS diversifying
+        # its behavioral portfolio as its $835M Talkspace acquisition nears
+      - term: "Hims & Hers"
+        entity: hims-and-hers
+        name: "Hims & Hers"
+        # auto-added 2026-07-30 (critic): FTC + Utah/California suit alleges
+        # ~2.5M subscribers' sensitive health data (incl. mental-health
+        # conditions) shared with Meta/Snap without consent, plus deceptive
+        # billing — 3/4 MH benchmarks (STAT, Fierce Healthcare, MobiHealthNews)
+        # led with it 07-29; lands squarely on the already-scoped "FTC mental
+        # health app privacy" theme but had no term to catch it, same failure
+        # mode as the Kaiser/UHS auto-adds above
+        # close, against Medicaid headwinds. Talkspace was already swept; the
+        # ACQUIRER was not, so the consolidation story had no term to land on.
+        # Term is qualified ("behavioral") because bare "UHS" collides with
+        # the UK NHS trust abbreviation and with United Health Services.
+
+    # People of interest (founders, regulators, evaluators)
+    people:
+      - "Thomas Insel"
+
+    # Themes — regulatory, accountability, and MARKET/money (radar Q3, Q6)
+    themes:
+      - "prescription digital therapeutic"
+      - "digital mental health reimbursement"
+      - "FDA digital therapeutic clearance"
+      - "FTC mental health app privacy"
+      - "AI therapy chatbot regulation"
+      - "teletherapy"
+      # Market & money (radar Q6 + Q2 for the mh lens)
+      - "digital mental health funding"
+      - "mental health startup acquisition"
+      - "behavioral health market"
+
+    # Health-condition / intervention strings for ClinicalTrials.gov (mh lens only)
+    conditions:
+      - "digital mental health intervention"
+      - "smartphone depression intervention"
+      - "AI chatbot mental health"
+      - "digital therapeutic anxiety"
+      - "app-based cognitive behavioral therapy"
+
+  global-capital:   # renamed from `money` 2026-07-30 (Ben, full rename —
+    # "'finance' is boring 'Global Capital' is interesting to me") — the
+    # interpretive reframe, DESIGN.md Part 2. Entity/term scope is
+    # UNCHANGED by the rename; what changed is the editorial mode
+    # (interpretation, not just aggregation) and the standing
+    # attention/capital-context.yaml snapshot daily curation reads
+    # against.
+    # Scope (Ben, 2026-07-20): capital in my markets + macro backdrop +
+    # wealth/power tracking. Explicitly NOT a trading-signal lens.
+    # Macro rides indicator collectors (FRED/BoC series) plus the new
+    # global-capital data stack (Treasury TIC/BIS/IMF/EPFR/fund-flow
+    # reports, 2026-07-30), not query terms — themes below are only the
+    # news-shaped macro. DRAFT seed — Ben tunes.
+    orgs:
+      # Buyers / funders / PE in Ben's markets (seeded from internal research)
+      - "Highmark"
+      - term: "Blue Cross Blue Shield of Massachusetts"
+        entity: bcbs-ma
+        name: "BCBS of Massachusetts"
+      - term: "Purchaser Business Group on Health"
+        entity: pbgh
+        name: "PBGH"
+      - "Bain Capital Double Impact"
+      - "Welsh Carson"
+      - "General Atlantic"
+      - "Robert Wood Johnson Foundation"
+      - "Ballmer Group"
+      - "Commonwealth Fund"
+      - "Wellcome Trust"
+      # Capital concentration above the markets
+      - "SoftBank"
+      - "MGX"
+      - "BlackRock"  # auto-added 2026-07-22 (critic): missed its $12B+ Meta-DC debt sale (Bloomberg Tech 07-20); reappeared 07-21 in the Aligned $5B commitment
+      # board.yaml adds — ben-steer 2026-07-24
+      - "CXMT"       # China DRAM maker; closes the long-flagged entity gap (cxmt-memory-ipo)
+      - term: "Saudi Public Investment Fund"
+        entity: pif
+        name: "PIF"
+    people: []   # CAPI-style cohort (13F/insider/lobbying figures) — build with Ben
+    themes:
+      - "healthcare private equity"
+      - "digital health M&A"
+      - "healthcare lobbying"
+      - "AI lobbying"
+      - "sovereign wealth fund AI"
+      - "Federal Reserve rate decision"

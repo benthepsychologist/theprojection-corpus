@@ -1,0 +1,86 @@
+# Bundle — node posture + capital-flow: mistral-ai / Mistral (2026-07-26; thrust
+# pass 2026-07-28)
+# Extends board.yaml mistral-ai axis strings (no prior -axes bundle) with posture
+# + the 5-way capital-flow decomposition for the frontier-lab pocket.
+# Method: WebFetch primary sources (WebSearch exhausted). Private company —
+# funding rounds officially reported; NO revenue disclosed, so everything below
+# the raise is an adoption/buildout proxy. Smallest capital base in the pocket.
+# 2026-07-28 pass: added thrust: block + refreshed capital/gravity/optionality
+# with a week of fast-moving news (Microsoft "multibillion-dollar" EU-infra deal
+# Jul-21, Samsung ~€1B stake talks + EQT-led ~€3B round-in-talks Jul-16/22, a
+# third-party ARR estimate). WebSearch budget was exhausted this session too;
+# sourcing is Wikipedia + GetLatka (both full-fetch) + Google News RSS
+# headline/snippet passes (individual article URLs 404'd on WebFetch — cited via
+# the RSS search URL and Google News redirect links instead, both of which are
+# real/clickable, not fabricated).
+node: mistral-ai
+name: "Mistral"
+pocket: frontier-lab
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "€2B ASML-led round (Sep-2025) -> $830M for Paris/Sweden datacenters (Mar-2026) -> multibillion Microsoft partnership (Jul-21-2026) -> Samsung ~€1B stake talks + EQT-led ~€3B round in talks at €20B/$23B (Jul-16/22-2026): raising and building on every axis, accelerating week to week, just an order of magnitude smaller than the US peers."
+  sources:
+    - {figure: "$830M raised to build datacenters near Paris and in Sweden", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-03", confidence: med}
+    - {figure: "expanded partnership with Microsoft via a multibillion-dollar EU-infra agreement", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-07", confidence: med}
+    - {figure: "Samsung in talks to invest in Mistral at €20bn valuation; EQT €5B Scaleup Fund in talks to lead a ~€3B round", label: "Financial Times / Sifted via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-16/22", confidence: med}
+capital:
+  available:
+    value: "~$6.2-7B cumulative CLOSED raised (€2B Sep-2025 incl ASML lead + $830M Mar-2026); €12B/$14B valuation is the closed mark. PENDING, not yet closed as of 2026-07-28: a further ~€3B round in talks — Samsung weighing ~€1B/$1B (dual chip+AI-sovereignty stake) + EQT's €5B Scaleup Fund reportedly in talks to lead — at a €20B/$23B valuation mark. If it closes, cumulative raised would step to ~$9-10B; until then, do not fold it into the closed total."
+    sources:
+      - {figure: "Sept 2025 €2B round, ASML lead, €12B ($14B) valuation", label: "Wikipedia — Mistral AI (attrib. Bloomberg)", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2025-09", confidence: high}
+      - {figure: "March 2026 $830M round (Reuters)", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-03", confidence: med}
+      - {figure: "cumulative ~$6.2-7B across all rounds", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026", confidence: med}
+      - {figure: "Samsung in talks to invest in Mistral at €20bn valuation", label: "Financial Times via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-22", confidence: med}
+      - {figure: "Samsung weighs $1 billion / ~€1B investment (dual chip-and-AI sovereignty play)", label: "PYMNTS.com / Tech Times via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-22/23", confidence: med}
+      - {figure: "Samsung in talks to invest at $23 billion valuation", label: "The Economic Times via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-22", confidence: med}
+      - {figure: "EQT's €5bn Scaleup Fund in talks to lead a Mistral round", label: "Sifted via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+funding", as_of: "2026-07-16", confidence: med}
+      - {figure: "Mistral eyes a €3 billion raise as Europe pushes for AI-sovereignty scale", label: "ascendants.in via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+funding", as_of: "2026-07-27", confidence: low}
+      - {figure: "round not confirmed closed as of asof date — every source uses 'in talks'/'weighs'/'eyes'", label: "cross-check across all above sources", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-28", confidence: med}
+  operating:
+    value: "still no OFFICIAL revenue disclosed by Mistral. A third-party estimate (GetLatka, citing TechCrunch reporting) pegs 2026 ARR at ~$400M, up from ~$100M in 2025 (~300% YoY) and ~$42M in 2024 — unconfirmed by Mistral itself, treat as directional only, not an earnings figure"
+    sources:
+      - {figure: "no revenue figures disclosed", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026", confidence: low}
+      - {figure: "2026 ARR ~$400M (2025: ~$100M, 2024: ~$42M, 2023: ~$10M); $23B valuation marked 'Estimated', attrib. TechCrunch Jun-2026", label: "GetLatka — Mistral AI company page", url: "https://getlatka.com/companies/mistral-ai", as_of: "2026-07-03", confidence: low}
+  deployed:
+    value: "$830M earmarked to build datacenters near Paris and in Sweden (Mar-2026)"
+    sources:
+      - {figure: "$830M for new datacenters near Paris and in Sweden", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-03", confidence: med}
+  in:
+    value: "VC + strategic-industrial funding rounds (ASML $1.5B / ~11% in the €2B round); Accenture (Feb-2026, terms undisclosed) and Microsoft channel/partnership deals; PENDING further strategic-industrial inflow (Samsung ~€1B talks) + a financial-VC lead (EQT €5B Scaleup Fund, in talks) — a mix shifting slightly toward pure-financial VC alongside the strategic-industrial pattern"
+    sources:
+      - {figure: "ASML $1.5B / 11% as lead of the €2B round", label: "board.yaml mistral-ai capitalization (attrib. ASML announcement)", url: "attention/board.yaml", as_of: "2025-09", confidence: high}
+      - {figure: "multibillion Microsoft partnership for European AI infra", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-07", confidence: med}
+      - {figure: "Feb-2026 strategic partnership with Accenture (financial terms undisclosed)", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-02", confidence: med}
+      - {figure: "EQT's €5bn Scaleup Fund in talks to lead a Mistral round", label: "Sifted via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+funding", as_of: "2026-07-16", confidence: med}
+  out:
+    value: "datacenter buildout ($830M, Mar-2026, no disclosed multi-year horizon); plus a Jul-21-2026 'multibillion-dollar' Microsoft deal for European AI infrastructure/compute — reported consistently across ~10+ outlets (Reuters, WSJ, SiliconANGLE, euractiv, Yahoo Finance) but NONE disclose a specific dollar figure or contract length, only 'multibillion'/'billions'; ongoing operating spend still not disclosed"
+    sources:
+      - {figure: "$830M datacenter buildout", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-03", confidence: med}
+      - {figure: "Microsoft to fund Mistral's European AI expansion in multibillion-dollar deal", label: "Reuters via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-21", confidence: med}
+      - {figure: "Microsoft and Mistral expand strategic partnership to give enterprises and regulated industries frontier AI they can control (no $ figure in headline/snippet)", label: "Microsoft Source via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-21", confidence: med}
+      - {figure: "no specific dollar figure or contract-length disclosed for the Microsoft deal in any of ~10 outlets checked (Reuters, WSJ, SiliconANGLE, euractiv, Yahoo Finance, Tech Xplore, Blockspace Media, the-decoder.com)", label: "cross-check across Google News RSS results", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-28", confidence: med}
+thrust:
+  value: "~$0.5-2B/yr (thin) — no disclosed multi-year compute/build commitment with both a $ figure AND a time horizon. Two inputs, neither fully quantified: (1) $830M datacenter buildout (Paris + Sweden, Mar-2026) with no disclosed build-out horizon — spread over an assumed 2yr horizon that's ~$400M/yr; (2) the Jul-21-2026 Microsoft EU-infra deal, reported everywhere as 'multibillion-dollar' with no specific figure or years disclosed. Point estimate ~$1B/yr, but this is a rough band, not a computed run-rate — do not treat as precise."
+  basis: "The board's thrust method for private labs is committed multi-year compute/build $ ÷ years. Mistral has NOT disclosed either half of that ratio for its largest 2026 commitment (the Microsoft deal) — every outlet checked (Reuters, WSJ, SiliconANGLE, euractiv, Yahoo Finance, Tech Xplore, Blockspace Media, the-decoder.com, qz.com) independently reports only 'multibillion-dollar'/'billions', no number, no term. The $830M datacenter figure at least has a dollar amount but no disclosed build horizon either. Rather than fabricate a precise run-rate off two unquantified inputs, this is reported as an explicit thin/low-confidence band. If either figure gets a disclosed number+horizon in a later pass, replace this estimate."
+  sources:
+    - {figure: "$830M for datacenters near Paris and in Sweden (Mar-2026), no build-horizon disclosed", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-03", confidence: med}
+    - {figure: "Microsoft to fund Mistral's European AI expansion in a 'multibillion-dollar' deal — no specific $ figure or contract length in any source found", label: "Reuters / WSJ / SiliconANGLE / euractiv / Yahoo Finance via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-21", confidence: med}
+    - {figure: "no disclosed multi-year compute/build commitment figure (both $ and years) found in any source consulted", label: "absence noted across Wikipedia + Google News RSS passes", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-07-28", confidence: low}
+optionality:
+  value: "mixed — VC + strategic industrials; EU-sovereignty tailwind, not state control (no formal government equity stake). Talks this week (Samsung ~€1B chip-and-AI-sovereignty stake + EQT financial-VC lead) reinforce the mixed pattern rather than shifting it toward state control. One open nuance, low confidence: growing reliance on Microsoft for European compute capacity raises a genuine 'sovereignty vs Microsoft-dependency' question in commentary — flagged, not resolved, since only headline-level coverage of that framing was accessible."
+  sources:
+    - {figure: "no formal government equity stake; embodies 'France's AI hopes'", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026", confidence: med}
+    - {figure: "Samsung weighs ~€1B stake in a 'dual chip-and-AI sovereignty play'; EQT €5B fund in talks to lead — both financial/strategic-industrial, not state", label: "Tech Times / Sifted via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Samsung+investment", as_of: "2026-07-16/23", confidence: med}
+    - {figure: "'Microsoft and Mistral Expand Ties. Sovereignty, or Just Optionality?' (headline-level framing of the dependency question, full article not accessible)", label: "The Futurum Group via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-22", confidence: low}
+gravity:
+  value: "no clean $ figure for third-party economic activity — open-weight adoption + Accenture/Microsoft channel + $830M datacenter buildout (adoption proxy, not revenue) remains the best qualitative signal. A third-party ARR estimate (GetLatka: ~$400M 2026, ~$100M 2025, 300% YoY) is Mistral's OWN revenue, not third-party gravity by the board's definition, but is included as a floor/growth-rate proxy since no cleaner third-party-economy figure exists; unconfirmed by Mistral, low confidence."
+  sources:
+    - {figure: "open-weight adoption + Accenture channel + $830M buildout as an impact proxy", label: "board.yaml mistral-ai gravity", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+    - {figure: "2026 ARR ~$400M estimate, ~300% YoY growth (2025 ~$100M) — Mistral's own revenue, used here only as a growth-rate/floor proxy for third-party adoption scale, not as gravity proper", label: "GetLatka — Mistral AI company page", url: "https://getlatka.com/companies/mistral-ai", as_of: "2026-07-03", confidence: low}
+    - {figure: "Microsoft 'multibillion-dollar' EU-infra deal + Samsung dual chip-and-AI-sovereignty stake talks signal a step up in enterprise/sovereign-AI channel scale, size undisclosed", label: "Reuters / Tech Times via Google News", url: "https://news.google.com/rss/search?q=Mistral+AI+Microsoft+billion", as_of: "2026-07-21/23", confidence: low}
+buybacks:
+  value: "$0 — private company, no buyback mechanism applicable"
+  sources:
+    - {figure: "private company, all rounds are equity funding rounds, no public listing or buyback activity found", label: "Wikipedia — Mistral AI", url: "https://en.wikipedia.org/wiki/Mistral_AI", as_of: "2026-07-28", confidence: high}
+notes: "Biggest uncertainty: NO official revenue disclosed — every figure below the raise is a raise/adoption proxy or a third-party estimate (GetLatka ARR), not an audited earnings figure. Smallest capital base of the frontier labs (~10-40x below the US pure-plays). The Microsoft partnership complicates the 'EU-sovereign alternative' framing further as of the Jul-21-2026 expansion. THRUST is explicitly thin: Mistral has not disclosed a $-figure-plus-time-horizon for its largest 2026 commitment (Microsoft, 'multibillion-dollar' only) — re-check for a disclosed number in a later pass rather than trusting the ~$1B/yr band as precise. The ~€3B Samsung/EQT round is IN TALKS ONLY as of 2026-07-28, not closed — do not fold into capital.available's closed total until confirmed."

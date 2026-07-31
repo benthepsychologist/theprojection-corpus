@@ -1,0 +1,700 @@
+# attention/upcoming.yaml — dated expectations, checked every /daily.
+#
+# The generalized catch-the-slip mechanic: every dated claim we've seen gets
+# a ledger entry; /daily checks entries with due <= digest-day and flips
+# status. passed-silent is the LOUD outcome (a date passing with no evidence
+# is itself news) — it keeps a 3-day retro-flip grace before standing.
+# /week writes the week's scorecard into the weekly digest, then prunes
+# resolved entries older than the closing week.
+#
+# status: pending -> hit | slipped | passed-silent | withdrawn
+#   on slip: push old date onto slips:[], update due, status back to pending
+# logged_by: ben-steer | curate-add | crawl | critic-add
+#   (lighter bar than the map files — expectations are dated claims, not
+#   attention-map structure; see AGENTS.md provenance note)
+# confidence: rumored | reported | confirmed
+# YAML guardrail applies: safe_load after every LLM edit, or git revert.
+#
+# Seeded 2026-07-22 from the week's digests (Phase 0 of the thread-centric
+# reframe — plan approved by Ben 2026-07-22).
+
+expectations:
+
+  - id: kimi-k3-open-weights
+    claim: "Moonshot releases Kimi K3 open weights"
+    due: 2026-07-27
+    due_precision: day
+    thread: china-stack-independence
+    entities: [moonshot-ai]
+    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
+    confidence: reported
+    what_confirms: "weights actually downloadable (HF or equivalent)"
+    logged: 2026-07-22
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-26
+    evidence: >
+      Weights went live 2026-07-26 — a day AHEAD of the ledger date — billed
+      as the largest open-weight model to date; lands mid distillation-fight
+      and the $50B pre-IPO push. CONFIRMED downloadable 07-27 (qz.com /
+      Tom's Hardware — "competitive at 2-3x less compute", hardware-gated).
+
+  - id: cxmt-star-listing
+    claim: "CXMT lists on the STAR Market (up to $9.8B)"
+    due: 2026-07-27
+    due_precision: day
+    thread: cxmt-memory-ipo
+    entities: [cxmt]      # decay-review 2026-07-27 — cxmt on watchlist since 07-24
+    source: https://finance.biggo.com/news/503cd6f5-6bde-4e19-8e0c-e4bd74249f8b
+    confidence: confirmed
+    what_confirms: "first-day trading on the Shanghai STAR Market"
+    status: hit
+    resolved: 2026-07-27
+    evidence: >
+      Listed on the Shanghai STAR Market 2026-07-27: raised ~29.5B yuan
+      (~$4.2B by early print; ~$8.5-9.1B per day-end consensus — Asia's
+      biggest 2026 IPO), closed +466% at ~$489B — the most valuable
+      China-listed company, above Intel's market cap (CNBC/Nikkei day-end,
+      07-27). Read-through: Micron -8%. Overhangs: US DoD ban + 3-yr HBM
+      deficit. Use-of-proceeds: production-line/DRAM upgrades + R&D.
+    logged: 2026-07-22
+    logged_by: curate-add
+
+  - id: altman-washington-briefing
+    claim: "Altman briefs the administration + Congress on OpenAI's next models"
+    due: 2026-07-31
+    due_precision: week
+    thread: frontier-model-gov-review-precedent
+    entities: [sam-altman, openai]
+    source: https://www.bloomberg.com/news/articles/2026-07-21/openai-s-altman-to-brief-us-officials-on-next-wave-of-ai-models
+    confidence: reported
+    what_confirms: "reporting that the meetings happened (week of 07-27)"
+    logged: 2026-07-22
+    logged_by: curate-add
+    status: pending
+
+  - id: fomc-july-decision
+    claim: "FOMC rate decision (market pricing ~24% hike odds as of 07-21)"
+    due: 2026-07-29
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://www.cnbc.com/2026/07/22/treasury-yields-fed-rate-hike-bets.html
+    confidence: confirmed
+    what_confirms: "the FOMC statement; note hold vs hike vs cut against the flipped odds"
+    logged: 2026-07-22
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      HELD at 3.50%-3.75% on a 9-3 vote, 2:00pm ET — three dissents, all
+      FOR a quarter-point HIKE (Hammack, Kashkari, Logan). Primary source:
+      federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm.
+      The ~24% hike odds on record from 07-21 did NOT fire, but the
+      hawkish read was not wrong either: June's decision was unanimous
+      12-0 and this one split three ways. The statement prose is
+      essentially unchanged word-for-word from June — the committee
+      split, the language didn't, which is the finding.
+
+  - id: fomc-september-decision
+    claim: "FOMC rate decision — the hawkish bloc's next window after July's 9-3 hold"
+    due: 2026-09-16
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://www.federalreserve.gov/newsevents/2026-september.htm
+    confidence: confirmed
+    what_confirms: "the FOMC statement + the vote split; does the 3-dissent bloc grow, hold, or fold"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: gov-review-framework-announce
+    claim: "White House announces the 30-day voluntary pre-release review framework (Meta excluded)"
+    due: 2026-08-01
+    due_precision: day    # "before 08-01" — due is the by-date
+    thread: frontier-model-gov-review-precedent
+    entities: [openai, anthropic, google]
+    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
+    confidence: reported
+    what_confirms: "official announcement naming participants and the 30-day term"
+    logged: 2026-07-22
+    logged_by: curate-add
+    status: pending
+
+  - id: claude-opus-5-honeycomb
+    claim: "Claude Opus 5 ships (rumored 'Honeycomb' build, mid-Jul–early-Aug window)"
+    due: 2026-08-08
+    due_precision: month
+    thread: null
+    entities: [anthropic]
+    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
+    confidence: rumored
+    what_confirms: "official Anthropic release; window half-elapsed with no signal as of 07-22"
+    logged: 2026-07-22
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-24
+    evidence: >
+      Shipped 2026-07-24 (anthropic.com/news/claude-opus-5): same price as
+      Opus 4.8 ($5/$25 per M tokens), SOTA coding/ARC-AGI-3/computer-use,
+      "most aligned model to date." Landed HOURS after the 07-23 daily
+      logged "no ship" — the 07-24 budget-blocked sweep missed it; caught by
+      the /week sweep 07-27.
+
+  - id: us-china-ai-talks
+    claim: "First official US–China AI-policy talks ('later this year' — the September framing is UNSOURCED per crawl 2026-07-22)"
+    due: 2026-12-31
+    due_precision: month
+    thread: china-stack-independence
+    entities: []
+    source: https://www.theregister.com/ai-and-ml/2026/07/22/the-truth-nobody-wants-to-admit-chinese-or-not-open-models-are-competitive-now/5275879
+    confidence: reported
+    what_confirms: "confirmed dates/agenda; tighten due when a month is actually sourced"
+    logged: 2026-07-22
+    logged_by: curate-add   # due/source corrected by crawl 2026-07-22
+    status: pending
+
+  - id: eo14409-deadlines
+    claim: "EO 14409's two 60-day deliverables land: classified NSA-led frontier threshold + the Sec. 3(b) 30-day-access framework design (Treasury/War/CISA/NIST)"
+    due: 2026-08-01
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security
+    confidence: confirmed
+    what_confirms: "publication of the framework/threshold or reporting that the deadline slipped; likely arrives WITH the framework announcement (see gov-review-framework-announce)"
+    logged: 2026-07-22
+    logged_by: crawl
+    status: pending
+
+  - id: glm-5-5-release
+    claim: "Z.AI ships GLM-5.5 (>1T params, 1M context)"
+    due: 2026-08-31
+    due_precision: month
+    thread: china-stack-independence
+    entities: [zhipu-ai]
+    source: https://www.geeky-gadgets.com/glm-5-5-release-details/
+    confidence: reported
+    what_confirms: "official release / weights or API availability"
+    logged: 2026-07-22
+    logged_by: crawl
+    status: pending
+
+  - id: moonshot-preipo-round
+    claim: "Moonshot opens final pre-IPO round at ~$50B valuation (HKEX listing ~6 months later)"
+    due: 2026-08-31
+    due_precision: month
+    thread: china-stack-independence
+    entities: [moonshot-ai]
+    source: https://technode.com/2026/07/22/moonshot-ai-reportedly-plans-final-pre-ipo-round-at-50-billion-valuation/
+    confidence: reported
+    what_confirms: "round confirmed by filings/reporting; then track the listing window"
+    logged: 2026-07-22
+    logged_by: crawl
+    status: pending
+
+  - id: ny-s9051b-signature
+    claim: "Hochul signs (or pocket-vetoes) NY S9051B under-18 companion ban + S9408A AI-toy ban"
+    due: 2026-12-31   # corrected 07-23 (finalize sweep) — was 08-31 guess
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://www.multistate.ai/updates/vol-105-state-ai-companion-chatbot-laws
+    confidence: confirmed
+    what_confirms: "signature/veto reported; still unsigned as of 07-22; Dec 31 2026 is Hochul's actual statutory deadline, not a 30-day-from-delivery guess"
+    logged: 2026-07-22
+    logged_by: crawl   # due corrected by finalize sweep 2026-07-23
+    status: pending
+  - id: kaiser-nuhw-mediation
+    claim: "Kaiser-NUHW mediation begins (does the AI-replacement contract language survive?)"
+    due: 2026-08-31
+    due_precision: month
+    thread: kaiser-ai-clinician-backlash
+    entities: [kaiser-permanente]
+    source: https://home.nuhw.org/2026/07/16/tuesday-sf-supervisors-to-hold-kaiser-mental-health-hearing-as-hmo-seeks-blank-check-on-a-i-implementation-and-replacing-therapists/
+    confidence: reported
+    what_confirms: "mediation sessions reported begun; watch for outcome on the 'Terrible Three' proposals"
+    logged: 2026-07-22
+    logged_by: crawl
+    status: pending
+
+  - id: mn-nudify-ban-effective
+    claim: "Minnesota's HF1606 'nudify' ban takes effect — xAI's challenge is filed, not adjudicated"
+    due: 2026-08-01
+    due_precision: day
+    thread: grok-companion-harm
+    entities: [xai]
+    source: https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html
+    confidence: confirmed
+    what_confirms: "the statute in force on 08-01, OR xAI securing injunctive relief before it — a suit FILED is not a stay"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: ca-sb903-assembly
+    claim: "California SB 903 clears Assembly Appropriations (fiscal-committee deadline)"
+    # CORRECTED 2026-07-28 ⟨daily⟩: the tracked "July Assembly hearing" had
+    # ALREADY happened when this was logged — Assembly Privacy & Consumer
+    # Protection heard it 07-01, re-referred to Appropriations 07-02
+    # (amended). Legislature in recess until 08-03; fiscal committees must
+    # report by 08-14 (floor deadline 08-31). Not a slip — a wrong target,
+    # rewritten. Primary: leginfo.legislature.ca.gov bill history.
+    due: 2026-08-14
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    # 2026-07-29 ⟨daily⟩: confidence DOWNGRADED confirmed -> reported. A
+    # cluster agent reading CalMatters put the Appropriations hear/report
+    # deadline at 08-29, not 08-14, and found no SB 903-specific hearing
+    # date posted (its last action is still 07-02, re-referred to APPR).
+    # Checked the Assembly Appropriations suspense calendar directly: SB 903
+    # is not listed on it at all, so NEITHER date is bill-specific yet.
+    # Keeping 08-14 as the watch date (the earlier of the two, so we look
+    # early rather than late) with 08-29 as the outer statutory bound.
+    # Do not re-mark this `confirmed` without a calendar entry naming SB 903.
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903
+    confidence: reported
+    what_confirms: "an Appropriations calendar entry naming SB 903, then report-out; outer bound 08-29. Cross-feeds kaiser-ai-clinician-backlash (would make E-Visit statutory)"
+    logged: 2026-07-22
+    logged_by: crawl
+    status: pending
+
+  - id: meta-q2-earnings
+    claim: "Meta reports Q2 earnings — first real test of its AMD 6GW capacity commitment and capex trajectory"
+    due: 2026-07-29
+    due_precision: day
+    thread: meta-capex
+    entities: [meta-ai]
+    source: https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html
+    confidence: confirmed
+    what_confirms: "the earnings release + capex guidance commentary"
+    logged: 2026-07-24
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      Q2 revenue $60.8B (+28% YoY) beat; EPS $6.18 MISSED consensus by
+      ~14-15%; free cash flow $784M, near zero against an ~$12B/quarter
+      trailing average — the real scare. 2026 capex guide RAISED again to
+      $130-145B (floor up from $125-145B), the second raise this year. The
+      AMD 6GW commitment was NOT addressed on the call (checked the
+      transcript directly); the only new infra item was a BlackRock
+      1GW Texas data-center JV. Stock -8.5% premarket. Capex is NOT
+      peaking here — it rose — but Meta, a hyperscaler, took a hit as hard
+      as the chip names, on capex-outrunning-monetization optics. Primary:
+      stocktitan.net/news/META (press release), investing.com transcript.
+
+  - id: microsoft-q2-earnings
+    claim: "Microsoft reports FY26 Q4 earnings — test of Azure capex trajectory"
+    # 07-29: back to 07-29, and this one churned. A tier-2 agent "corrected"
+    # it to 07-30 on 07-28; that correction was WRONG and went unchallenged
+    # because the ledger is normally the authority over thread prose. Two
+    # Microsoft primary sources settle it — news.microsoft.com's release-date
+    # notice ("after the close of the market on Wednesday, July 29, 2026")
+    # and the FY26 Q4 IR event page. Reports TONIGHT, with Meta/Arm/Qualcomm.
+    due: 2026-07-29
+    due_precision: day
+    thread: microsoft-capex
+    entities: [microsoft]
+    source: https://www.cnbc.com/2026/07/22/google-earnings-q2-goog-live-updates.html
+    confidence: confirmed
+    what_confirms: "the earnings release + capex guidance commentary"
+    logged: 2026-07-24
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      Revenue $90.0B (+18% YoY) beat; EPS $4.81 (+32% YoY) beat, though it
+      includes a ~$3.2B unrealized mark-to-market gain on the Anthropic
+      stake — the core operating beat is real but smaller than the
+      headline. Azure grew 43% cc, well above the 39-40% guide. FY27
+      capex: qualitative only ("will grow year-over-year"), next quarter
+      guided "over $50B" — the widely-repeated $255-260B FY27 figure is
+      analyst-preview chatter, NOT something stated on the call; do not
+      cite it as confirmed. The named "first" — an OpenAI-vs-own capex
+      split — did NOT happen; the only OpenAI-adjacent disclosure was
+      commercial RPO +25% ex-OpenAI and the reiterated $250B Azure
+      commitment. Stock +8-9% after-hours, +8% premarket. Primary:
+      microsoft.com/en-us/investor (press release + transcript).
+
+  - id: amazon-q2-earnings
+    claim: "Amazon reports Q2 earnings — first real test of the $200B 2026 AWS capex plan against the AGI-team layoffs"
+    due: 2026-07-30   # corrected 07-27 (aws-capex crawl) — was ~07-31
+    due_precision: day
+    thread: aws-capex
+    entities: [amazon-aws]
+    source: https://www.sec.gov/Archives/edgar/data/1018724/000101872426000024/amzn-20260630xex991.htm
+    confidence: confirmed
+    what_confirms: "the earnings release + capex guidance commentary"
+    logged: 2026-07-24
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-30
+    evidence: >
+      8-K filed 2026-07-30 (items 2.02/9.01). Net sales $200.6B (+20% YoY,
+      beat ~$196-197B consensus). AWS revenue $42.2B (+37% YoY, "fastest
+      growth in 18 quarters") — beat the ~31-33% consensus growth rate
+      significantly, the clean answer to this thread's own test. AWS
+      operating margin 39.4%, operating income $16.6B (+64%). Operating
+      income $27.5B (+43%). Net income $62.6B / $5.75 EPS — driven mostly
+      by a $53.4B NON-OPERATING gain from Anthropic investments, not
+      organic earnings; property/equipment purchases up $66.1B YoY. Q3
+      guidance: net sales $197.0-202.0B, operating income $22.5-26.5B.
+
+  - id: grok-4-6-ship
+    claim: "Grok 4.6 ships (Musk: 'in two weeks', said 07-24)"
+    due: 2026-08-07
+    due_precision: week
+    thread: grok-frontier
+    entities: [xai]
+    source: https://news.google.com/rss/search?q=Grok+4.6+Musk+two+weeks
+    confidence: reported
+    what_confirms: "model actually available; Musk ship dates slip routinely"
+    logged: 2026-07-27
+    logged_by: curate-add   # /week sweep 07-27
+    status: pending
+
+  - id: grok-4-7-ship
+    claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24)"
+    due: 2026-08-21
+    due_precision: week
+    thread: grok-frontier
+    entities: [xai]
+    source: https://news.google.com/rss/search?q=Grok+4.7+Musk+four+weeks
+    confidence: rumored
+    what_confirms: "availability; double-slip risk on a chained promise"
+    logged: 2026-07-27
+    logged_by: curate-add   # /week sweep 07-27
+    status: pending
+
+  - id: anthropic-ipo-filing
+    claim: "Anthropic confidential IPO filing (reported $965B valuation; fall-2026 window signaled by IR-director hire)"
+    due: 2026-12-31
+    due_precision: month
+    thread: anthropic-ipo-timing   # ben-steer 2026-07-27 — child of frontier-lab-ipos
+    entities: [anthropic]
+    source: https://news.google.com/rss/search?q=Anthropic+confidential+IPO+filing+965
+    confidence: rumored   # single-source (Briefs Finance) — thin, needs corroboration
+    what_confirms: "second-source reporting or an actual public filing/flip"
+    logged: 2026-07-27
+    logged_by: curate-add   # /week sweep 07-27
+    status: pending
+
+  - id: spacex-q2-earnings
+    claim: "SpaceX (SPCX) first post-IPO earnings report"
+    due: 2026-08-04
+    due_precision: day
+    thread: spacexai-public-megacap
+    entities: [spacex]
+    source: https://news.google.com/rss/search?q=SpaceX+earnings+August+4
+    confidence: reported
+    what_confirms: "the release itself; watch Starlink/AI framing vs the zero-AI-value market read"
+    logged: 2026-07-27
+    logged_by: curate-add
+    status: pending
+
+  - id: spacex-insider-unlock
+    claim: "SpaceX insider-unlock/sale wave expected right after earnings"
+    due: 2026-08-06
+    due_precision: day
+    thread: spacexai-public-megacap
+    entities: [spacex]
+    source: https://news.google.com/rss/search?q=SpaceX+insider+unlock
+    confidence: reported
+    what_confirms: "actual insider-sale filings/volume; a supply overhang test at the lows"
+    logged: 2026-07-27
+    logged_by: curate-add
+    status: pending
+
+  - id: arm-q1fy27-earnings
+    claim: "Arm Q1 FY2027 earnings — stock -28% into the print; the royalty-growth + AGI-CPU story's live test"
+    due: 2026-07-29
+    due_precision: day
+    thread: arm-royalty-regime
+    entities: [arm]
+    # 07-29: upgraded reported -> confirmed. Arm's own release-date
+    # announcement (BusinessWire, 2026-07-08) names Wed 07-29 after close,
+    # call 17:00 ET. A /daily agent read `confidence: reported` as "already
+    # reported earnings" and proposed flipping it — worth knowing the field
+    # reads ambiguously: it is the confidence in the DATE, not the status.
+    source: https://www.businesswire.com/news/home/20260708344949/en/Arm-Announces-Earnings-Release-Date-for-First-Quarter-Fiscal-Year-Ended-2027
+    confidence: confirmed
+    what_confirms: "the release; watch royalty run-rate, AGI-CPU commentary, any v10 signal"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      Beat-and-raise: revenue $1.289B (+22%), royalty $715M (Q1 record),
+      licensing $574M (Q1 record), non-GAAP EPS $0.45 vs ~$0.4055 est.,
+      Q2 guide $1.38B/$0.47 above consensus. AGI-CPU demand now exceeds
+      $2B across FY27-FY28 (2x initial forecast), capacity sold out,
+      data-center royalty revenue more than doubled YoY. AND THE STOCK
+      STILL FELL — premarket -4.95%, extending the pre-earnings -28% run
+      rather than reversing it. What moved it: full-year royalty growth
+      guidance CUT to "high teens" from ~20% on smartphone weakness. A
+      clean beat with a strengthening AI narrative not being enough to buy
+      relief is the sharpest rotation-away-from-chips signal of the four
+      prints tonight. Primary: newsroom.arm.com/news/arm-q1-fye27-results.
+
+  - id: coreweave-q2-earnings
+    claim: "CoreWeave Q2 earnings (consensus EPS −$1.27, rev $2.56B) — backlog conversion + debt-cost commentary"
+    due: 2026-08-11
+    due_precision: day
+    thread: coreweave-backlog-bet
+    entities: [coreweave]
+    source: https://news.google.com/rss/search?q=CoreWeave+Q2+earnings+August+11
+    confidence: confirmed
+    what_confirms: "the release, 5pm ET"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: pending
+
+  - id: qualcomm-q3fy26-earnings
+    claim: "Qualcomm Q3 FY26 earnings — first live test of whether Dragonfly moves guidance"
+    due: 2026-07-29
+    due_precision: day
+    thread: qualcomm-dragonfly
+    entities: [qualcomm]
+    source: https://news.google.com/rss/search?q=Qualcomm+earnings+July+29
+    confidence: confirmed
+    what_confirms: "the release + any Dragonfly/datacenter guidance"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      Revenue $9.9B beat; EPS $2.21 roughly in-line. Q4 FY26 EPS GUIDE
+      $2.05-2.25 MISSED consensus (~$2.38) — driven entirely by the
+      legacy business (memory/input-cost inflation, an accelerated Apple-
+      modem revenue decline, now seen "materially lower" than the prior
+      ~20% estimate). Dragonfly did NOT move this guide — its two custom-
+      silicon engagements start contributing in the December quarter, one
+      quarter after this one. Longer-dated: FY2029 non-handset target
+      RAISED to $40B from $22B, including >$15B data-center revenue; HBC
+      Gen 1 taped out for a mid-2027 launch. Stock -8% after-hours, -4.8%
+      premarket. Net: the AI story genuinely improved but is a 2029 story;
+      the stock traded on legacy weakness. Primary: cnbc.com/2026/07/29/
+      qualcomm-qcom-earnings-report-q3-2026.
+
+  - id: sk-hynix-q2-earnings
+    claim: "SK Hynix Q2 earnings — guided to record ~$43.7B op profit; does Black Tuesday hold or reverse?"
+    due: 2026-07-29
+    due_precision: day
+    thread: ai-memory-shortage
+    entities: [sk-hynix]
+    source: https://news.google.com/rss/search?q=SK+Hynix+Q2+earnings
+    confidence: confirmed
+    what_confirms: "the release + guidance; the post-CXMT-selloff reaction"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: hit
+    resolved: 2026-07-29
+    evidence: >
+      Reported on schedule (Korea morning 07-29 KST = evening 07-28 ET, inside
+      the 07-28 digest-day). PRIMARY (news.skhynix.com, 2Q26 results): revenue
+      79.3187T won, operating profit 60.5426T won, operating margin 76%, net
+      profit 93.9226T won; op profit +557% YoY. A record in absolute terms but
+      a MISS on the guide the ledger cited — consensus clustered 63.7-64.1T won
+      (the "~$43.7B" figure; USD conversions ranged $43.7-46.1B across outlets
+      purely on FX, so the WON figure is the reliable one). Revenue also missed
+      (~83.6-83.9T consensus). The net-profit beat is non-operating gains, not
+      operations. HBM4: "began mass shipments of HBM4 in the second quarter and
+      will ramp up production in the second half"; ~10 customers signed to
+      long-term supply agreements. Blackwell/HBM3E demand called still strong;
+      Rubin (needs HBM4) running later than expected. ⚠ Secondary outlets
+      (DigiTimes) reported capex RAISED to the ~40T-won high end (~45T/$31B);
+      the primary release says only "capital expenditure discipline" and
+      phased investment "based on customer demand" — the raise is NOT confirmed
+      by the release and is flagged, not adopted. Reaction (Seoul 07-29 KST):
+      opened +1.09%, ran to +3.74% on relief, then reversed to close
+      -9.61% at 1,401,000 won.
+
+  - id: samsung-q2-breakdown
+    claim: "Samsung full Q2 divisional breakdown + call — HBM detail behind the record headline"
+    # Released Korea-morning 07-30, which lands ~19:00-21:00 ET on 07-29 —
+    # well before the 5am boundary, so it belongs to digest-day 07-29
+    # despite the 07-30 due date (same class as the Microsoft date churn:
+    # a "due" date set before the exact release-timezone was known).
+    due: 2026-07-30
+    due_precision: day
+    thread: ai-memory-shortage
+    entities: [samsung]
+    source: https://news.google.com/rss/search?q=Samsung+Q2+earnings+call
+    confidence: confirmed
+    what_confirms: "the divisional numbers + HBM4 qualification commentary"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: hit
+    resolved: 2026-07-29
+    evidence: |
+      Total operating profit KRW 89.49T (~$62B), +1,814% YoY, record. DS
+      (chip) division: KRW 89.2T operating profit on KRW 127.5T revenue
+      (~70% margin, first time above 70%) — 99.7% of total profit. MX
+      (mobile) division posted its FIRST-EVER operating loss, -KRW 0.7T
+      (~-$487M) — hurt by the same memory prices that made the chip side
+      record; first loss since MX began reporting in 2011. HBM4E samples
+      shipped to major customers; ~70% of capacity locked into long-term
+      supply deals reportedly incl. AWS/Microsoft/Google (TrendForce,
+      trade-press sourced — confidence flag). Guidance: DRAM/NAND/HBM
+      shortage seen persisting through 2028. Stock jumped +7-8% intraday
+      on the beat, then faded to close down ~1-1.2% — the same
+      "monetization proven vs. priced-in" pattern as Wednesday night's
+      four US prints; Kospi fell >1% same session, SK Hynix >5%. Primary:
+      news.samsung.com/global (press release + transcript via
+      investing.com).
+
+  - id: gdp-pce-2026-07-30
+    claim: "Q2 GDP advance estimate + June PCE inflation — first real catalyst after the 9-3 FOMC hold"
+    due: 2026-07-30
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://www.bea.gov/data/gdp/gross-domestic-product
+    confidence: confirmed
+    what_confirms: "the BEA release, 8:30am ET — core PCE consensus 3.3% YoY, headline 3.7%"
+    logged: 2026-07-30
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-07-30
+    evidence: >
+      Both released on schedule 2026-07-30. GDP advance estimate: +1.5%
+      annualized — below-trend, growth driven by consumer spending,
+      investment and exports, offset by a government-spending drag. PCE
+      inflation landed exactly at consensus: headline +3.7% YoY, core
+      +3.3% YoY. Soft growth plus still-elevated inflation, arriving two
+      days after the Fed's 9-3 hawkish hold — a genuine stagflation-
+      adjacent print, not a clean read either direction. (BEA primary
+      source, fetched directly; buffer/collector pull hadn't surfaced it
+      yet as of this check.)
+
+  - id: mhpaea-replacement-rule
+    claim: "Trump admin proposes the MHPAEA parity replacement rule (2024 rule non-enforced since May-25; 'by end of year' target)"
+    due: 2026-12-31
+    due_precision: month
+    thread: mhpaea-parity-limbo   # ben-steer 2026-07-28 — threaded
+    entities: []
+    source: https://news.google.com/rss/search?q=MHPAEA+replacement+rule+proposed
+    confidence: rumored   # Bloomberg Law snippet, thin single-source; a PROPOSED-RULE timeline, not a compliance deadline
+    what_confirms: "the NPRM actually publishing (or the target slipping)"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: pending
+
+  - id: fy2027-appropriations
+    claim: "FY2027 US appropriations deadline — the DAWG $54.6B request + NIH/NSF cut-fight round 2 land here (possible DOE Title 17 cliff same date, unconfirmed)"
+    due: 2026-09-30
+    due_precision: day
+    thread: dod-ai-consolidation
+    entities: []
+    source: https://news.google.com/rss/search?q=FY2027+appropriations+deadline
+    confidence: confirmed
+    what_confirms: "passage, CR, or shutdown — each is a different story"
+    logged: 2026-07-28
+    logged_by: crawl
+    status: pending
+
+  - id: colorado-hb1195-effective
+    claim: "Colorado HB 26-1195 (AI-in-psychotherapy practice law) takes effect"
+    due: 2026-08-12
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://leg.colorado.gov/bills/HB26-1195
+    confidence: confirmed
+    what_confirms: "the statute in force on the date (bill page is primary); watch for a delay or challenge"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: minnesota-nudify-effective
+    claim: "Minnesota's 'nudify' ban takes effect — now under federal challenge by xAI"
+    due: 2026-08-01
+    due_precision: month
+    thread: grok-companion-harm
+    entities: [xai]
+    source: https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html
+    confidence: reported
+    what_confirms: "the law in force, OR an injunction blocking it — the injunction is the louder outcome"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: cms-access-cohort-august
+    claim: "CMS ACCESS model next participant cohort starts"
+    due: 2026-08-17
+    due_precision: day
+    thread: cms-access-model-bh
+    entities: []
+    source: https://www.cms.gov/priorities/innovation/innovation-models/access
+    confidence: confirmed
+    what_confirms: "a participant list or cohort announcement on the CMMI page"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: cxmt-congress-letters
+    claim: "Bipartisan letters to the administration seeking a CXMT national-security probe ('coming days' as of 07-28)"
+    due: 2026-08-07
+    due_precision: week
+    thread: cxmt-memory-ipo
+    entities: [cxmt]
+    source: https://www.aol.com/articles/us-lawmakers-seek-national-security-141013000.html
+    confidence: rumored   # planned, not filed; and the surrounding press repeats a conflation the map already corrected 07-28
+    what_confirms: "an actual letter with signatories — NOT another restatement of the 07-16 Moolenaar/Whitesides letter"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: china-duv-units-2026
+    claim: "China ships ~5 homegrown immersion DUV lithography units in 2026 (~20 in 2027); SMIC, Hua Hong, CXMT first recipients"
+    due: 2026-12-31
+    due_precision: month
+    thread: china-stack-independence
+    entities: [cxmt]
+    source: https://www.globalbankingandfinance.com/exclusive-china-starts-production-home-grown-immersion-duv/
+    confidence: reported   # Reuters exclusive; capability at HVM scale explicitly unproven
+    what_confirms: "delivery/installation confirmed at a named fab — not a production announcement"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: skhynix-hbm4-full-ramp
+    claim: "SK Hynix HBM4 reaches 'full ramp' in 2H26 (HBM4E volume production targeted 2027)"
+    due: 2026-12-31
+    due_precision: month
+    thread: ai-memory-shortage
+    entities: [sk-hynix]
+    source: https://news.skhynix.com/en/q2-2026-business-results/
+    confidence: confirmed   # company statement in the Q2 release
+    what_confirms: "shipment/revenue disclosure in a later quarter; a slip here is the memory thread's core signal"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: softbank-openai-bridge-matures
+    claim: "SoftBank's $40B bridge loan against its OpenAI stake matures (21 new lenders added 07-27)"
+    due: 2027-03-25
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank, openai]
+    source: https://www.bloomberg.com/news/articles/2026-07-27/softbank-s-40-billion-loan-for-openai-stake-gets-21-new-lenders
+    confidence: confirmed   # loan terms
+    what_confirms: "refinancing, repayment, or extension — whichever, it dates the OpenAI liquidity clock"
+    logged: 2026-07-29
+    logged_by: curate-add
+    status: pending
+
+  - id: softbank-q1-earnings
+    claim: "SoftBank Q1 FY26 earnings — Arm's post-earnings slide and the OpenAI bridge loan both bear on the print"
+    due: 2026-07-30
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank, arm]
+    source: https://www.marketbeat.com/
+    confidence: reported
+    what_confirms: "SoftBank's own earnings release"
+    logged: 2026-07-30
+    logged_by: curate-add
+    status: pending

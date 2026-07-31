@@ -1,0 +1,77 @@
+# Bundle — node posture + capital-flow: spring-health / Spring Health (2026-07-28)
+# axes_num rollout wave G (8-actor batch, small mental-health-AI actors). Recipe
+# per Ben's spec: WEIGHT = cumulative VC raised ($B, private co); THRUST =
+# trailing-~12mo deployment run-rate, specifically checked for a recent
+# post-close acquisition (task brief flagged "spring-health post-close"
+# explicitly); GRAVITY = attributable dependent economy in $ terms (revenue/
+# contract scale), NOT gross covered-lives headlines; OPTIONALITY = band,
+# default "constrained" for VC-backed private cos absent contrary evidence.
+# Buybacks n/a ($0, private co).
+# Method: WebSearch budget was exhausted this session; sourced via WebFetch
+# against Wikipedia, GetLatka company pages, and Google News RSS / DuckDuckGo
+# HTML search-result pages (individual paywalled articles — WSJ, Fierce
+# Healthcare — were not directly fetchable; cited via the RSS/search URL that
+# surfaced the headline/snippet instead, which is real and clickable, not
+# fabricated).
+node: spring-health
+name: "Spring Health"
+pocket: health
+asof: 2026-07-28
+posture:
+  value: expanding
+  basis: "Steady VC step-ups (seed 2018 -> Series E Jul-2024 at $3.3B) plus a major consolidation move: announced (Jan-29-2026) and CLOSED (May-1-2026) acquisition of Alma, a clinician-facing mental-health insurance/billing platform — folding a second large network into Spring Health's employer/payer benefit business within the trailing 12mo. Combined entity billed as 'the first lifelong mental health platform.'"
+  sources:
+    - {figure: "$100M Series E, Jul-31-2024, $3.3B valuation", label: "GetLatka — Spring Health company page", url: "https://getlatka.com/companies/spring-health", as_of: "2024-07", confidence: med}
+    - {figure: "Spring Health to Buy Alma in Merger of Mental-Health Startups (announced)", label: "WSJ / MobiHealthNews via Google News", url: "https://news.google.com/rss/search?q=Spring+Health+acquisition", as_of: "2026-01-29", confidence: med}
+    - {figure: "Spring Health and Alma Complete Combination, Creating the First Lifelong Mental Health Platform (closed)", label: "citybiz / HIT Consultant via Google News", url: "https://news.google.com/rss/search?q=Spring+Health+acquisition", as_of: "2026-05-01", confidence: med}
+capital:
+  available:
+    value: "~$443M cumulative VC raised across 5 documented rounds (seed $6M 2018 -> Series B $76M 2020 -> Series C $190M 2021 -> Series D $71M 2023 -> Series E $100M 2024); last-marked valuation $3.3B (Jul-2024). Background brief's 'Generation Investment Management led the Series E' claim could NOT be independently corroborated this pass — no source fetched named a Series E lead investor; flagged, not asserted as fact."
+    sources:
+      - {figure: "seed $6M (2018), Series B $76M (2020), Series C $190M (2021), Series E $100M (2024) — 4 rounds, $372M subtotal", label: "GetLatka — Spring Health company page", url: "https://getlatka.com/companies/spring-health", as_of: "2026-07", confidence: med}
+      - {figure: "2023: $71M raise at $2.5B valuation (Series D)", label: "Wikipedia — Spring Health", url: "https://en.wikipedia.org/wiki/Spring_Health", as_of: "2023", confidence: med}
+      - {figure: "Sept-2021 $190M Series C at $2B valuation, led by Kinnevik", label: "Wikipedia — Spring Health", url: "https://en.wikipedia.org/wiki/Spring_Health", as_of: "2021-09", confidence: med}
+      - {figure: "Series E lead investor not named in any source fetched this pass (PR Newswire release URL 404'd; RSS snippets omit lead)", label: "PR Newswire / Healthcare Technology Report via Google News", url: "https://news.google.com/rss/search?q=%22Spring+Health%22+%22Series+E%22+%22100+million%22+lead", as_of: "2026-07-28", confidence: low}
+  operating:
+    value: "no official revenue disclosed by Spring Health. Third-party estimate (GetLatka): ~$281.3M ARR (2025). Team scale ~3.5K employees (2025), up from ~2.6K (2024) — both directional proxies, not audited figures."
+    sources:
+      - {figure: "2025 est. ARR $281.3M", label: "GetLatka — Spring Health company page", url: "https://getlatka.com/companies/spring-health", as_of: "2025-11-28", confidence: low}
+      - {figure: "2025: 3.5K employees; 2024: 2.6K employees", label: "GetLatka — Spring Health company page", url: "https://getlatka.com/companies/spring-health", as_of: "2026-07", confidence: low}
+  deployed:
+    value: "acquisition of Alma — CLOSED May-1-2026 (announced Jan-29-2026), folding Alma's clinician-insurance-billing network into Spring Health's employer/payer benefit business. Deal value: ONE low-confidence secondary source (briefglance.com, page itself unreachable on refetch — HTTP 525) cites '$1.5B deal'; every other outlet checked (Thoma Bravo press item, citybiz, HIT Consultant, acuity.news) explicitly states financial terms were NOT disclosed. Treat $1.5B as an unconfirmed single-source figure, not a disclosed deal value."
+    sources:
+      - {figure: "Spring Health to Acquire Alma in $1.5B Deal (headline only; source page unreachable on refetch)", label: "briefglance.com via DuckDuckGo HTML search", url: "https://html.duckduckgo.com/html/?q=%22Spring+Health%22+Alma+acquisition+deal+value+billion", as_of: "2026-01-29", confidence: low}
+      - {figure: "financial terms were not disclosed", label: "acuity.news via DuckDuckGo HTML search", url: "https://html.duckduckgo.com/html/?q=%22Spring+Health%22+Alma+acquisition+deal+value+billion", as_of: "2026-01-29", confidence: med}
+      - {figure: "no deal-value or financing-structure figure found in any of Thoma Bravo / citybiz / HIT Consultant / MobiHealthNews coverage checked", label: "Google News RSS cross-check", url: "https://news.google.com/rss/search?q=Spring+Health+Alma+integration+expansion+spend+2026", as_of: "2026-07-28", confidence: med}
+  in:
+    value: "pure financial-VC funding rounds (seed through Series E, no strategic-industrial investor identified in sources fetched this pass); Kinnevik led Series C (2021)."
+    sources:
+      - {figure: "Sept-2021 $190M Series C at $2B valuation, led by Kinnevik", label: "Wikipedia — Spring Health", url: "https://en.wikipedia.org/wiki/Spring_Health", as_of: "2021-09", confidence: med}
+  out:
+    value: "the Alma acquisition is the dominant 2025-2026 capital-out event (see deployed, above) — value unconfirmed (single low-confidence $1.5B mention, terms otherwise undisclosed). No other major disclosed outflow found."
+    sources:
+      - {figure: "Spring Health and Alma Complete Combination, Creating the First Lifelong Mental Health Platform", label: "citybiz / HIT Consultant via Google News", url: "https://news.google.com/rss/search?q=Spring+Health+acquisition", as_of: "2026-05-01", confidence: med}
+thrust:
+  value: "~$1-1.5B (trailing-12mo, dominated by the single Alma acquisition) — reported as a band, not a precise run-rate. This is a ONE-TIME acquisition commitment falling inside the trailing-12mo window (announced Jan-2026, closed May-2026), not an annualized recurring build rate; the $1.5B upper mark rests on a single unconfirmed secondary source, so treat the band as thin/low-confidence. If the deal value is later disclosed officially, replace this estimate."
+  basis: "Post-close acquisition is the explicit signal this wave's brief flagged for Spring Health, and it is confirmed real: announced 2026-01-29, closed 2026-05-01, well inside the trailing-12mo thrust window as of this 2026-07-28 asof. No other disclosed 2025-2026 capex/build commitment of comparable scale was found in sources fetched this pass, so the acquisition is treated as the whole of thrust rather than one component of it."
+  sources:
+    - {figure: "Spring Health to Buy Alma in Merger of Mental-Health Startups (announced 2026-01-29)", label: "WSJ via Google News", url: "https://news.google.com/rss/search?q=Spring+Health+acquisition", as_of: "2026-01-29", confidence: med}
+    - {figure: "Spring Health Completes Acquisition of Alma, Creating Lifelong Mental Health Platform (closed 2026-05-01)", label: "citybiz via Google News", url: "https://news.google.com/rss/search?q=Spring+Health+acquisition", as_of: "2026-05-01", confidence: med}
+    - {figure: "Spring Health to Acquire Alma in $1.5B Deal (single unconfirmed source)", label: "briefglance.com via DuckDuckGo HTML search", url: "https://html.duckduckgo.com/html/?q=%22Spring+Health%22+Alma+acquisition+deal+value+billion", as_of: "2026-01-29", confidence: low}
+    - {figure: "Alma 2025 est. ARR ~$230M, ~$130M total raised pre-acquisition (sanity-check floor for deal scale — a $1.5B price against ~$230M ARR is a ~6.5x revenue multiple, plausible but not confirmatory)", label: "GetLatka-attributed figures via Google News RSS", url: "https://news.google.com/rss/search?q=Alma+mental+health+startup+valuation+funding+total+raised", as_of: "2025-11", confidence: low}
+optionality:
+  value: "constrained — VC-backed private company, no IPO, board/investor oversight, runway-dependent between raises. No evidence found this pass of unusual founder/dual-class control or non-standard investor terms that would shift the band; default constrained per recipe holds."
+  sources:
+    - {figure: "5 VC funding rounds 2018-2024, no public listing found", label: "GetLatka / Wikipedia — Spring Health", url: "https://getlatka.com/companies/spring-health", as_of: "2026-07", confidence: med}
+gravity:
+  value: "~$0.3-0.5B/yr — grounded in revenue/ARR scale, not gross covered-lives headlines. Spring Health standalone ARR ~$281.3M (2025 est., GetLatka) plus Alma's own ~$230M (2025 est.) now folded in post-close (2026-05-01) puts combined platform revenue-through-scale in the ~$0.3-0.5B/yr band. Both figures are third-party estimates, not audited disclosures — explicitly NOT using the '50 million lives' / '170 million lives' gross covered-lives headlines the company markets, per the recipe's instruction to reason in dependent-economy dollar terms."
+  sources:
+    - {figure: "2025 est. ARR $281.3M (Spring Health standalone)", label: "GetLatka — Spring Health company page", url: "https://getlatka.com/companies/spring-health", as_of: "2025-11-28", confidence: low}
+    - {figure: "Alma 2025 est. ARR ~$230M (folded in post-close 2026-05-01)", label: "GetLatka-attributed figures via Google News RSS", url: "https://news.google.com/rss/search?q=Alma+mental+health+startup+valuation+funding+total+raised", as_of: "2025-11", confidence: low}
+    - {figure: "gross headline (excluded from gravity by recipe, noted for context only): 'more than 50 million lives through employers and health plans' (Jan-2026); 'over 400 employers, 10 million lives' (employer-benefit specific); '170 million lives' post-Alma", label: "company announcements via DuckDuckGo HTML search", url: "https://html.duckduckgo.com/html/?q=Spring+Health+covered+lives+employees+million+employers", as_of: "2026-01", confidence: med}
+buybacks:
+  value: "$0 — private company, no buyback mechanism applicable"
+  sources:
+    - {figure: "private company, all capital events found are equity funding rounds or the Alma acquisition; no public listing or buyback activity found", label: "GetLatka / Wikipedia — Spring Health", url: "https://getlatka.com/companies/spring-health", as_of: "2026-07-28", confidence: high}
+axes_num_estimate: { weight: 0.44, thrust: 1.25, gravity: 0.4 }  # agent-derive 2026-07-28 wave G
+notes: "Mental-health employer-benefit vertical (B2B benefits platform sold to large employers/health plans), placed in the health pocket. Biggest single finding this pass: the task brief's 'post-close' flag is CONFIRMED real — Spring Health announced (2026-01-29) and CLOSED (2026-05-01) an acquisition of Alma, a clinician-facing mental-health insurance/billing platform, creating a combined 'lifelong mental health platform.' Deal value is NOT officially disclosed; a single secondary source (briefglance.com, unreachable on refetch) cites $1.5B, which is used as a thin/low-confidence thrust estimate pending an official figure. Cumulative VC raised (~$443M across 5 rounds) is solid/medium-confidence (GetLatka + Wikipedia cross-check); note this is somewhat below the background brief's 'well over $400M' framing but consistent with it — the 5-round sum ($443M) is the more complete figure vs. GetLatka's own 4-round subtotal ($372M), which omits the 2023 Series D ($71M) that Wikipedia documents. Series E lead investor (background brief suggested Generation Investment Management) could NOT be corroborated by any source fetched this pass — flagged as unconfirmed, not included as fact in capital.available. Gravity intentionally uses revenue/ARR scale (~$0.3-0.5B/yr) rather than the company's own marketed gross covered-lives figures (50M / 170M lives), per the recipe's dependent-economy-dollars instruction — both ARR inputs (Spring Health's own $281M and Alma's $230M) are third-party estimates (GetLatka-attributed), not audited disclosures, so confidence throughout gravity is low-to-medium."

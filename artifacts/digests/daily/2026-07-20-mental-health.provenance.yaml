@@ -1,0 +1,18 @@
+# Sidecar — how to re-fetch this digest's inputs
+digest: 2026-07-20-mental-health.md
+run_manifest: provenance/2026-07-20-daily-mental-health.yaml
+buffer: buffer/2026-07-20-mental-health-sweep.jsonl   # 30-day retention; regenerable
+collection_mode: agentic-interim (sonnet subagent web sweep, ~60 searches; collectors not built)
+window: 2026-07-20T05:00-04:00 → 2026-07-20T17:45-04:00 (zero in-window items;
+  digest carries dated 07-01..07-15 catch-up, briefing #0)
+cited:
+  - https://telecomreseller.com/2026/06/22/talkspace-announces-tee-safe-ai-agent-to-help-navigate-mental-health-challenges/
+  - https://www.pa.gov/content/dam/copapwp-pagov/en/governor/documents/dos%20character.ai%20complaint%20marked%20accepted%2005.01.26.pdf
+  - https://www.itechpost.com/articles/236541/20260702/openai-faces-chatgpt-lawsuit-over-ai-chatbots-alleged-role-self-harm.htm
+  - https://www.healthcaredive.com/news/digital-health-funding-first-half-2026-rock-health/825215/
+  - https://medcitynews.com/2026/07/digital-health-capital-fundraise-startups/
+  - https://bhbusiness.com/2026/07/08/handspring-health-raises-19m-invests-in-complex-behavioral-health-care/
+  - https://www.stocktitan.net/news/TALK/talkspace-stockholders-vote-to-approve-acquisition-by-ircvs7tewygu.html
+caveats: state-ban-wave bullet cites the thread record, not per-state primary
+  sources — a /crawl on state chatbot laws would build the proper bundle.
+  Woebot FDA De Novo claim uncorroborated, excluded.

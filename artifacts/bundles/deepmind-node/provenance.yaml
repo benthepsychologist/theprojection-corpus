@@ -1,0 +1,52 @@
+# Bundle — node posture + capital-flow: deepmind / Google DeepMind (2026-07-26)
+# Extends board.yaml deepmind axis strings (no prior -axes bundle) with posture
+# + the 5-way capital-flow decomposition for the frontier-lab pocket.
+# Method: WebFetch primary sources (WebSearch exhausted). DeepMind is a WHOLLY-
+# OWNED Alphabet subsidiary — CAPITAL IS PARENT-DIRECTED; it cannot raise capital
+# independently. Its own P&L (UK Companies House) is a rounding error vs the
+# parent's. DO NOT double-count with the google node — same capital pool.
+node: deepmind
+name: "Google DeepMind"
+pocket: frontier-lab
+asof: 2026-07-26
+parent: alphabet   # capital is parent-directed; same pool as the google node — DO NOT double-count
+posture:
+  value: expanding
+  basis: "Parent-directed — Alphabet's $80B equity raise (Jun-2026, incl Berkshire $10B) and ~$650B collective-cohort 2026 AI capex fund the buildout; Gemini pushed across every Google surface."
+  sources:
+    - {figure: "Alphabet to raise $80B via equity offerings for AI infra; Berkshire $10B private placement", label: "Wikipedia — Alphabet Inc.", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2026-06", confidence: high}
+    - {figure: "Alphabet/Amazon/Meta/Microsoft collectively ~$650B AI infra in 2026 (Bridgewater est)", label: "Wikipedia — Alphabet Inc.", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2026", confidence: med}
+capital:
+  available:
+    value: "Alphabet-scale — parent commands $403B revenue / $132B net income (2025) + an $80B AI equity raise (Jun-2026); DeepMind's OWN operating revenue only ~£1.33B"
+    sources:
+      - {figure: "Alphabet total revenue $403B, net income $132B FY2025 (Form 10-K)", label: "Wikipedia — Alphabet Inc.", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2025", confidence: high}
+      - {figure: "$80B AI-infra equity raise (Jun 2026)", label: "Wikipedia — Alphabet Inc.", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2026-06", confidence: high}
+      - {figure: "DeepMind own operating revenue £1.33B (FY2024, Companies House)", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2024", confidence: high}
+  operating:
+    value: "DeepMind standalone: £1.33B revenue, £217M operating income, £174M net income (FY2024, Companies House); ~6,000 staff"
+    sources:
+      - {figure: "revenue £1.33B, operating income £217M, net income £174M (accounts filed Oct 2 2025)", label: "Wikipedia — Google DeepMind (UK Companies House)", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2024", confidence: high}
+      - {figure: "~6,000 employees (2025)", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2025", confidence: med}
+  deployed:
+    value: "part of Alphabet's ~$650B-collective-cohort 2026 AI capex (parent-directed, not DeepMind-specific line item)"
+    sources:
+      - {figure: "~$650B collective 2026 AI infra spend (Alphabet share not broken out)", label: "Wikipedia — Alphabet Inc. (Bridgewater est)", url: "https://en.wikipedia.org/wiki/Alphabet_Inc.", as_of: "2026", confidence: med}
+  in:
+    value: "no independent inflows — funded entirely by Alphabet parent; DeepMind cannot raise capital independently"
+    sources:
+      - {figure: "wholly-owned Alphabet subsidiary, no independent capital-raising capability", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2026", confidence: high}
+  out:
+    value: "R&D spend consolidated inside Alphabet; Gemini serving/inference costs embedded across products — not separately disclosed"
+    sources:
+      - {figure: "Gemini serving costs not separately reported; only the £1.33B UK entity P&L is public", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2024", confidence: low}
+optionality:
+  value: "constrained — parent-directed, cannot independently raise capital; more research freedom than the capital, but the capital is Alphabet's"
+  sources:
+    - {figure: "wholly-owned subsidiary; parent controls financial and strategic decisions", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2026", confidence: high}
+gravity:
+  value: "~$58.7B/yr GROSS Google Cloud revenue (2025) + Gemini embedded across Search/Workspace/Android"
+  sources:
+    - {figure: "Google Cloud ~$58.7B/yr (2025) — board anchor; not re-itemized in the Alphabet Wikipedia fetch", label: "board.yaml deepmind gravity", url: "attention/board.yaml", as_of: "2025", confidence: med}
+    - {figure: "Gemini integrated across Search, Workspace, Android, Cloud (adoption not quantified)", label: "Wikipedia — Google DeepMind", url: "https://en.wikipedia.org/wiki/Google_DeepMind", as_of: "2026", confidence: med}
+notes: "Capital is PARENT-DIRECTED (Alphabet) — do NOT double-count with the google node; DeepMind's own P&L (£1.33B) is a rounding error vs the parent's $403B. Biggest uncertainty: no DeepMind-specific compute/capex line exists — everything material runs through Alphabet's consolidated books, so 'deployed'/'out' are parent-level, not subsidiary-level, figures."

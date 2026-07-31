@@ -1,0 +1,80 @@
+# Bundle — node posture + capital-flow: slingshot-ai / Slingshot AI (2026-07-28)
+# axes_num rollout wave G — small mental-health-AI actors batch.
+# Recipe (Ben's spec for the wave): WEIGHT = cumulative VC raised ($B, private
+# co, all rounds summed). THRUST = deployment run-rate ($/yr, capital
+# committed in the trailing ~12mo to new positions — compute, hiring/expansion,
+# clinical/product commitments; small fractions of a $B expected here, that's
+# fine). GRAVITY = attributable dependent economy in USERS-IN-CARE /
+# dependent-economy $ terms, NOT gross headline user counts — reasoned from
+# actual patients/users depending on the product for care, not inflated.
+# OPTIONALITY = how free the commanded capital is — VC-backed private co
+# defaults to "constrained" absent evidence otherwise. Buybacks N/A ($0).
+# Method: WebSearch was budget-exhausted this session (200/200 used
+# immediately on the first two queries) — fell back to WebFetch against
+# Google News RSS (news.google.com/rss/search) and DuckDuckGo HTML search
+# results, plus direct WebFetch of a16z's announcement post and
+# slingshotai.com/press. No Wikipedia page exists for Slingshot AI (404).
+# All figures below are cross-checked across 2+ independent outlets where
+# possible; where only one weak source exists it is flagged confidence: low.
+node: slingshot-ai
+name: "Slingshot AI"
+pocket: health   # closest existing board pocket; actual vertical is mental-health / AI-psychiatry (see notes)
+asof: 2026-07-28
+posture:
+  value: "expanding-but-regulatory-constrained"
+  basis: "Raised in three tranches through Jul-2025 (cumulative $93M) and publicly launched its therapy chatbot Ash (Jul-2025) with a free iOS/Android app after an 18-month build and 50,000-user beta -- genuine product/capital expansion. But Jan-2026 it pulled Ash out of the UK market over regulatory concerns, and the FDA was separately reviewing a therapy-chatbot risk framework (Nov-2025) -- so expansion is now running into real regulatory friction, not a clean growth story. No new funding round found since Jul-2025 despite an active 2026 search."
+  sources:
+    - {figure: "Slingshot AI launches Ash, 'the first AI designed for therapy', after 18 months development and a 50,000-user beta; free iOS/Android app", label: "Slingshot AI — Press page (aggregating AP/Forbes/Behavioral Health Business coverage)", url: "https://slingshotai.com/press", as_of: "2025-07-22", confidence: med}
+    - {figure: "Slingshot pulls therapy chatbot Ash out of the U.K. over regulatory concerns", label: "STAT News via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2026-01-21", confidence: med}
+    - {figure: "FDA advisers examined risks associated with therapy chatbots, considering a regulatory framework", label: "coverage via Google News RSS (FDA advisory context)", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2025-11-05", confidence: low}
+capital:
+  available:
+    value: "$93M cumulative VC raised across three tranches (Aug-2024 $30M led by a16z; further close by Jan-2025 bringing cumulative to $40M; Jul-2025 $53M co-led by Radical Ventures + Forerunner Ventures bringing cumulative to $93M). No valuation figure was disclosed in any primary source found -- the commonly-repeated '~$600M valuation' figure (from this task's background brief) could NOT be confirmed by a16z's own announcement, Slingshot's press page, or Google News/DuckDuckGo searches; treat as unconfirmed, not fact. No Series B or later round found despite an explicit 2026 search (queries for 'Series B', '2026 funding', '$600 million valuation' all returned nothing)."
+    sources:
+      - {figure: "$30M round led by Andreessen Horowitz (a16z)", label: "Business Insider / Behavioral Health Business via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot+AI%22+funding", as_of: "2024-08-20/28", confidence: high}
+      - {figure: "Investing in Slingshot AI -- a16z-led round, syndicate incl. Cultural Leadership Fund, Felicis, Menlo, TMV, SV Angel, plus notable angels; total capital raised reaches $40M; no valuation disclosed", label: "a16z.com — 'Investing in Slingshot AI'", url: "https://a16z.com/announcement/investing-in-slingshot-ai/", as_of: "2025-01-14", confidence: high}
+      - {figure: "$53M additional raise, co-led by Radical Ventures and Forerunner Ventures, bringing cumulative total to $93M", label: "Endpoints News / Behavioral Health Business via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot+AI%22+funding", as_of: "2025-07-22/23", confidence: high}
+      - {figure: "no Series B, later round, or $600M valuation figure found in any search (Series B / 2026 funding / '$600 million' valuation queries all came back empty)", label: "cross-check across Google News RSS + DuckDuckGo HTML searches", url: "https://news.google.com/rss/search?q=%22Slingshot+AI%22+Series+B", as_of: "2026-07-28", confidence: med}
+  operating:
+    value: "no revenue disclosed anywhere found; Ash is a free consumer app (iOS/Android), so no confirmed monetization/operating-revenue figure exists as of this pass"
+    sources:
+      - {figure: "Ash launched as a free iOS and Android app", label: "Slingshot AI — Press page", url: "https://slingshotai.com/press", as_of: "2025-07-22", confidence: med}
+  deployed:
+    value: "capital deployed into: (1) an 18-month model build (proprietary 'foundation model for psychology' trained on real therapist sessions) preceding the Jul-2025 launch, (2) a 50,000-user beta program, (3) UK market entry and subsequent Jan-2026 withdrawal (sunk regulatory/market-entry cost, size undisclosed). No disclosed capex or infra-spend breakdown -- this is a software/model company, not a datacenter builder, so 'deployed' reads as product+clinical-model build rather than physical buildout."
+    sources:
+      - {figure: "18 months of development and a 50,000-user beta preceding public launch", label: "Slingshot AI — Press page", url: "https://slingshotai.com/press", as_of: "2025-07-22", confidence: med}
+      - {figure: "Ash pulled from the UK market over regulatory concerns (Jan-2026) -- implies prior UK market-entry spend now written off/paused", label: "STAT News via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2026-01-21", confidence: low}
+  in:
+    value: "pure VC equity, three tranches: a16z-led ($30M, Aug-2024) -> a16z-led extension (cumulative $40M, Jan-2025) -> Radical Ventures + Forerunner Ventures co-led ($53M, Jul-2025, cumulative $93M); broader syndicate across rounds includes Felicis, Menlo, TMV, SV Angel, plus individual angels (incl. founders from Replit, Hugging Face, ElevenLabs, and NBA players Aaron Gordon/Scottie Barnes per a16z's post). No strategic/corporate investor found (no Owl Ventures confirmed in any primary source checked, despite that name appearing in this task's background brief)."
+    sources:
+      - {figure: "a16z-led Series A syndicate: Cultural Leadership Fund, Felicis, Menlo, TMV, SV Angel, individual angels; Owl Ventures NOT mentioned in this announcement", label: "a16z.com — 'Investing in Slingshot AI'", url: "https://a16z.com/announcement/investing-in-slingshot-ai/", as_of: "2025-01-14", confidence: high}
+      - {figure: "$53M raise co-led by Radical Ventures and Forerunner Ventures, prior investors a16z/Felicis/Menlo participating", label: "Slingshot AI — Press page", url: "https://slingshotai.com/press", as_of: "2025-07-23", confidence: med}
+  out:
+    value: "no disclosed multi-year spend commitment or capex figure found; outflows are inferred from the model-build + beta-program + UK launch/withdrawal narrative above, not from any disclosed dollar figure"
+    sources:
+      - {figure: "no disclosed capex, opex, or multi-year commitment figure in any source consulted", label: "absence noted across a16z, Slingshot press page, and Google News RSS passes", url: "https://slingshotai.com/press", as_of: "2026-07-28", confidence: low}
+thrust:
+  value: "~$0.03-0.06B/yr (point estimate $0.05B/yr), thin/estimated -- no disclosed capex, headcount, or run-rate figure exists. Basis: the most recent tranche ($53M, Jul-2025) is the best available proxy for trailing-12mo new-position capital (model/product build-out, clinical team, UK-then-US market entry) since it was raised and is presumably being deployed across roughly this window; spread over ~12mo it lands in the $0.03-0.06B/yr range. This is a rough proxy, not a computed run-rate -- there is no disclosed clinical-hiring, compute, or infra-spend line item to build a bottoms-up figure from."
+  basis: "Private, VC-backed, pre-revenue mental-health app company; no capex/opex disclosure exists to compute thrust directly. Used the most recent funding tranche as a stand-in for trailing-12mo deployment into new positions (product build, clinical-model training/hosting, market entry incl. the UK launch-then-withdrawal), consistent with the wave-G expectation that thrust for a small private AI-psychiatry company will be a small fraction of a $B."
+  sources:
+    - {figure: "$53M raised Jul-2025, the most recent and largest single tranche, used as a proxy for trailing-12mo new-position deployment", label: "Endpoints News / Behavioral Health Business via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot+AI%22+funding", as_of: "2025-07-23", confidence: med}
+    - {figure: "no disclosed capex, headcount, or infra run-rate figure found in any source consulted", label: "absence noted across a16z, Slingshot press page, and Google News RSS passes", url: "https://slingshotai.com/press", as_of: "2026-07-28", confidence: low}
+optionality:
+  value: constrained
+  basis: "Standard VC-backed-private-company constraint (investor-controlled cap table across three funding tranches, board oversight implied, runway-dependent -- no revenue disclosed to self-fund). Reinforced by a second, non-financial constraint specific to this actor: real regulatory exposure -- Ash was pulled from the UK market in Jan-2026 over regulatory concerns, and the FDA was separately reviewing a therapy-chatbot risk framework in Nov-2025 that could constrain the US market too. No evidence of founder-controlled or free-optionality structure found."
+  sources:
+    - {figure: "three VC funding tranches (a16z-led x2, then Radical Ventures + Forerunner Ventures-led), no revenue disclosed", label: "a16z.com + Slingshot AI Press page (cross-checked)", url: "https://slingshotai.com/press", as_of: "2026-07-28", confidence: med}
+    - {figure: "Slingshot pulls therapy chatbot Ash out of the U.K. over regulatory concerns", label: "STAT News via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2026-01-21", confidence: med}
+    - {figure: "FDA advisers examined risks associated with therapy chatbots, considering a regulatory framework", label: "coverage via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2025-11-05", confidence: low}
+gravity:
+  value: "~$0.05-0.3B/yr (point estimate ~$0.1B/yr), LOW CONFIDENCE, estimate uncited for scale -- no 2026 active-user, revenue, or clinical-outcome figure was found in any source. The only hard public number is the pre-launch beta cohort (50,000 users, as of Jul-2025); Ash has been a free app for a year since with no confirmed current user count, and the UK withdrawal (Jan-2026) reduces rather than grows footprint. The point estimate applies a rough per-user dependent-care-value proxy (a few hundred to ~$1-2K/yr per active user, i.e. the value of the care/support relationship a user depends on) to an assumed post-launch active-user base in the low hundreds of thousands -- this multiplier and user count are BOTH unconfirmed assumptions, not sourced figures. Consistent with wave-G expectation (early-stage co, should read well under $1B, not tens of billions of gross-headline scale)."
+  sources:
+    - {figure: "50,000-user beta cohort prior to public launch (Jul-2025) -- the only hard, sourced user-count figure found for this actor", label: "Slingshot AI — Press page", url: "https://slingshotai.com/press", as_of: "2025-07-22", confidence: med}
+    - {figure: "Ash pulled from the UK market (Jan-2026) -- a footprint reduction since launch, weighs against assuming continued unconstrained user growth", label: "STAT News via Google News RSS", url: "https://news.google.com/rss/search?q=%22Slingshot%22+Ash+UK+regulatory", as_of: "2026-01-21", confidence: med}
+    - {figure: "no 2026 active-user count, revenue, or outcomes figure found in any source consulted -- gravity point estimate above is a reasoned proxy, not a sourced figure", label: "absence noted across a16z, Slingshot press page, and Google News RSS/DuckDuckGo passes", url: "https://slingshotai.com/press", as_of: "2026-07-28", confidence: low}
+buybacks:
+  value: "$0 -- not applicable; private VC-backed company, no buyback mechanism, no public listing"
+  sources:
+    - {figure: "private company, all capital events found are equity funding rounds, no buyback or public-market activity found", label: "cross-check across a16z, Slingshot press page, and Google News RSS passes", url: "https://slingshotai.com/press", as_of: "2026-07-28", confidence: high}
+axes_num_estimate: { weight: 0.093, thrust: 0.05, gravity: 0.1 }  # agent-derive 2026-07-28 wave G
+notes: "pocket: health is the closest existing board bucket; Slingshot AI's actual vertical is mental-health/AI-psychiatry (an AI-native therapy app, 'Ash'), a narrower slice than the payer/provider health pocket it's filed under here. Biggest caveats: (1) the ~$600M valuation figure carried in this task's background brief could NOT be confirmed by any primary source checked (a16z's own post, Slingshot's press page, or news search) -- no valuation was found disclosed anywhere, so it is omitted from capital.available rather than repeated as fact; (2) WEIGHT ($93M cumulative raised) is solid/high-confidence -- three tranches, cross-checked across 3+ independent outlets each; (3) THRUST and GRAVITY are both estimate/low-confidence -- no capex, headcount, revenue, or current (2026) active-user figures were disclosed anywhere found, so both are reasoned proxies off the raise size and the one hard beta-user number (50,000, mid-2025), not sourced run-rate/dependent-economy figures; (4) confirmed NO Series B or later round exists as of 2026-07-28 despite explicit searching (contra the background brief's suggestion one might exist by now); (5) genuinely new/notable finding this pass: Ash was pulled from the UK market in Jan-2026 over regulatory concerns -- a real optionality-relevant constraint not in the original background brief."

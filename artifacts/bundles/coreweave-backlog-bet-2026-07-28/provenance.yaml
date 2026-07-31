@@ -1,0 +1,151 @@
+---
+# Bundle — crawl finding coreweave-backlog-bet-2026-07-28
+artifact: artifacts/findings/coreweave-backlog-bet-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  Two sequential sonnet subagent WebFetch sweeps (no WebSearch — session
+  budget risk per crawl-skill preflight). Pass 1 covered the eight
+  brief-specified areas broadly via Google News RSS
+  (news.google.com/rss/search) plus direct IR/SEC guesses. Pass 2
+  targeted the five gaps pass 1 left open (Q2 2026 earnings date, Nvidia
+  stake %, Microsoft revenue concentration %, Core Scientific "plan B"
+  capacity moves, Q1 2026 net loss) and closed four of five directly
+  against CoreWeave's own SEC filings (10-Q filed 2026-05-08, accession
+  0001769628-26-000222; S-1 filed 2025-03-03) fetched in full from
+  EDGAR. Nvidia's 13F-HR (filed 2026-05-15, CIK 0001045810, accession
+  0001045810-26-000042) was identified as the source filing for the
+  widely-reported ~94.5% stake increase, but the 13F table itself
+  discloses share count/dollar value, not ownership percentage — the
+  ~11% figure circulating in press is a derived/journalist calculation,
+  not primary-source-stated, and is marked medium confidence
+  accordingly. CoreWeave's own IR site (ir.coreweave.com) returned DNS
+  failures throughout both passes; Reuters, CNBC, and Business Wire
+  direct fetches were frequently 403/404 blocked, so most non-SEC
+  figures below are RSS-title-derived (title/outlet/date confirmed via
+  the RSS feed itself) rather than confirmed against full article
+  text. Explicit care was taken throughout to disambiguate Nvidia's
+  CoreWeave stake from Nebius's unrelated, similarly-covered 9.3%
+  Nvidia stake (a live confusion risk flagged in the brief itself).
+queries:
+  google_news_rss:
+    - "CoreWeave Q3 2025 earnings backlog"
+    - "CoreWeave $66.8B backlog Q4 2025"
+    - "CoreWeave $99.4B backlog Q1 2026"
+    - "CoreWeave OpenAI $11.9 billion five years"
+    - "CoreWeave OpenAI expanded deal $6.5 billion"
+    - "CoreWeave Meta $21 billion deal 2032"
+    - "CoreWeave Anthropic cloud deal"
+    - "CoreWeave Jane Street deal"
+    - "CoreWeave IBM Granite partnership"
+    - "CoreWeave Nvidia order $6.3 billion"
+    - "CoreWeave Microsoft percent revenue concentration"
+    - "CoreWeave senior notes convertible debt 2026"
+    - "CoreWeave data center SPV bond GPU collateral"
+    - "Nvidia CDS credit default swap spreads widen July 2026"
+    - "AI infrastructure credit risk bond market anxiety 2026"
+    - "Oracle CoreWeave Moody's weakest credit link"
+    - "CoreWeave Core Scientific $9 billion acquisition"
+    - "Core Scientific shareholders reject CoreWeave deal"
+    - "Two Seas Capital Core Scientific vote against"
+    - "CoreWeave data center capacity lease after Core Scientific"
+    - "CoreWeave new data center deal 2026"
+    - "CoreWeave Poolside Texas data center terminated"
+    - "Nvidia CoreWeave stake percent SEC filing"
+    - "CoreWeave second quarter 2026 earnings date"
+    - "CoreWeave Q1 2026 net loss earnings"
+    - "CoreWeave IPO March 2025 Nasdaq"
+    - "CoreWeave stock performance since IPO"
+    - "CoreWeave market cap July 2026"
+  sec_edgar:
+    - "CoreWeave S-1 2025-03-03 (accession 0001193125-25-044231 lookup; confirmed text via 0001769628 CIK full-text search)"
+    - "CoreWeave 10-Q Q1 2026 (CIK 1769628, accession 0001769628-26-000222, filed 2026-05-08)"
+    - "Nvidia 13F-HR (CIK 0001045810, accession 0001045810-26-000042, filed 2026-05-15)"
+    - "EDGAR full-text search: Nvidia SC 13D/13G CoreWeave (zero hits — confirms 13F-only disclosure)"
+items:
+  # BACKLOG
+  - {id: backlog-q3-2025, figure: "Backlog doubled to $55.6B", url: "https://news.google.com/rss/search?q=CoreWeave%20Q3%202025%20earnings%20backlog", label: "Data Center Dynamics (via Google News RSS, title only)", as_of: "2025-11-11", confidence: thin}
+  - {id: backlog-q4-2025, figure: "Backlog $66.8B", url: "https://news.google.com/rss/search?q=CoreWeave%20%2466.8B%20backlog%20Q4%202025", label: "Yahoo Finance (via Google News RSS, title only; corroborates Ben's known reference figure)", as_of: "2026-03-06", confidence: medium}
+  - {id: backlog-q1-2026, figure: "Backlog $99.4B (~$99-100B), explicitly including Nvidia, Meta, Microsoft, OpenAI contracts", url: "https://news.google.com/rss/search?q=CoreWeave%20%2499.4B%20backlog%20Q1%202026", label: "grafa.com / TIKR.com / Yahoo Finance (via Google News RSS, 3-outlet convergence)", as_of: "2026-03-31", confidence: medium-high}
+  - {id: backlog-q2-2026-gap, figure: "No Q2 2026 backlog figure exists yet as of 2026-07-28 — only the earnings-date announcement has been made", url: "https://news.google.com/rss/search?q=CoreWeave%20second%20quarter%202026%20earnings%20date", label: "gap, not a sourcing failure", as_of: "2026-07-28", confidence: thin}
+
+  # CUSTOMER CONCENTRATION
+  - {id: openai-11-9b, figure: "OpenAI to pay CoreWeave $11.9B over 5 years for AI data centers/services; OpenAI received $350M CoreWeave equity", url: "https://news.google.com/rss/search?q=CoreWeave%20OpenAI%20%2411.9%20billion%20five%20years", label: "CNBC / Reuters / LinkedIn recap (via Google News RSS, 3-outlet same-day convergence)", as_of: "2025-03-10", confidence: high}
+  - {id: openai-expansion-6-5b, figure: "OpenAI-CoreWeave deal expanded by additional $6.5B", url: "https://news.google.com/rss/search?q=CoreWeave%20OpenAI%20expanded%20deal%20%246.5%20billion", label: "CNBC / WSJ / Reuters (via Google News RSS, 3-outlet same-day convergence)", as_of: "2025-09-25", confidence: high}
+  - {id: openai-cumulative-22-4b, figure: "Cumulative OpenAI-CoreWeave commitment reported as ~$22.4B (a separate, unreconciled $12B figure also circulated)", url: "https://news.google.com/rss/search?q=CoreWeave%20OpenAI%20expanded%20deal%20%246.5%20billion", label: "Yahoo Finance / PYMNTS (via Google News RSS)", as_of: "2025-09-26", confidence: medium}
+  - {id: meta-21b, figure: "Meta-CoreWeave $21B deal, contract through 2032", url: "https://news.google.com/rss/search?q=CoreWeave%20Meta%20%2421%20billion%20deal%202032", label: "Bloomberg / CNBC / Reuters / Business Wire (via Google News RSS, 4-outlet same-day convergence)", as_of: "2026-04-09", confidence: high}
+  - {id: anthropic-cloud-deal, figure: "Separate multi-year Anthropic-CoreWeave cloud deal", url: "https://news.google.com/rss/search?q=CoreWeave%20Anthropic%20cloud%20deal", label: "single RSS mention", as_of: "2026-04-10", confidence: thin}
+  - {id: jane-street-6b, figure: "Jane Street-CoreWeave $6B deal", url: "https://news.google.com/rss/search?q=CoreWeave%20Jane%20Street%20deal", label: "single RSS mention", as_of: "2026-04-15", confidence: thin}
+  - {id: ibm-granite-partnership, figure: "IBM-CoreWeave infrastructure/training partnership for IBM Granite models (no dollar figure disclosed)", url: "https://news.google.com/rss/search?q=CoreWeave%20IBM%20Granite%20partnership", label: "IBM Newsroom / StorageReview / Data Center Dynamics (via Google News RSS, 3-outlet convergence)", as_of: "2025-01-15", confidence: medium}
+  - {id: nvidia-order-6-3b, figure: "CoreWeave discloses $6.3B order from Nvidia", url: "https://news.google.com/rss/search?q=CoreWeave%20Nvidia%20order%20%246.3%20billion", label: "CNBC (via Google News RSS)", as_of: "2025-09-15", confidence: medium}
+  - {id: microsoft-concentration-gap, figure: "No current or historical Microsoft-specific revenue % ever confirmed; S-1 (FY2024) names '~77% from top two customers' without naming Microsoft's share, and the Q1 2026 10-Q anonymizes all customers as Customer A-D", url: "https://www.sec.gov/", label: "CoreWeave S-1 (filed 2025-03-03) + Q1 2026 10-Q (filed 2026-05-08, accession 0001769628-26-000222) — both fetched directly from EDGAR", as_of: "2026-05-08", confidence: high}
+  - {id: government-dod-gap, figure: "No government/DoD contract found for CoreWeave", url: "https://news.google.com/rss/search?q=CoreWeave%20Department%20of%20Defense%20government%20contract", label: "explicit gap, no results", as_of: "2026-07-28", confidence: thin}
+
+  # DEBT STACK
+  - {id: senior-notes-1-5b, figure: "Senior unsecured notes $1.5B; Moody's B1, CoreWeave corporate family rating Ba3", url: "https://news.google.com/rss/search?q=CoreWeave%20senior%20notes%20Moody%27s%20rating", label: "Investing.com (via Google News RSS)", as_of: "2025-05-19", confidence: medium}
+  - {id: convertible-notes-4b, figure: "Convertible notes $4B + senior notes $1.75B, senior notes yield 9.75%", url: "https://news.google.com/rss/search?q=CoreWeave%20senior%20notes%20convertible%20debt%202026", label: "Investing.com (via Google News RSS, single outlet)", as_of: "2026-04-14", confidence: thin}
+  - {id: addon-notes-1b, figure: "Add-on senior notes $1.0B, 9.750% due 2031, priced at 102%", url: "https://news.google.com/rss/search?q=CoreWeave%20senior%20notes%20convertible%20debt%202026", label: "TradingView (via Google News RSS, single outlet)", as_of: "2026-04-21", confidence: thin}
+  - {id: spv-junk-bond-900m, figure: "CoreWeave-linked data-center SPV junk bond, $900M (not CoreWeave corporate debt)", url: "https://news.google.com/rss/search?q=CoreWeave%20data%20center%20SPV%20bond%20GPU%20collateral", label: "Bloomberg (via Google News RSS, single outlet)", as_of: "2026-06-02", confidence: thin}
+  - {id: loan-facility-sought-8-5b, figure: "CoreWeave sought loan facility of $8.5B", url: "https://news.google.com/rss/search?q=CoreWeave%20data%20center%20SPV%20bond%20GPU%20collateral", label: "TheEnergyMag (via Google News RSS, single outlet)", as_of: "2026-02-25", confidence: thin}
+  - {id: usd-eur-notes, figure: "$1.25B USD + €2B EUR senior notes; first US AI issuer to sell euro junk bonds", url: "https://news.google.com/rss/search?q=CoreWeave%20senior%20notes%20convertible%20debt%202026", label: "Yahoo Finance / TradingView / Blockspace Media / Bloomberg (via Google News RSS, converging)", as_of: "2026-06-11", confidence: medium}
+  - {id: moodys-weakest-credit-link, figure: "Moody's flags Oracle and CoreWeave as AI's weakest credit link", url: "https://news.google.com/rss/search?q=Oracle%20CoreWeave%20Moody%27s%20weakest%20credit%20link", label: "Bitget (via Google News RSS, single outlet)", as_of: "2026-07-25", confidence: thin}
+  - {id: aggregate-debt-25b-estimate, figure: "Aggregate debt load analyst estimate ~$25B (not a single filed total)", url: "https://news.google.com/rss/search?q=CoreWeave%20aggregate%20debt%20total%202026", label: "multiple RSS titles, unreconciled estimate", as_of: "2026-05-01", confidence: thin}
+
+  # AI-CREDIT REPRICING (macro)
+  - {id: nvidia-cds-69bp, figure: "Nvidia's credit risk now exceeds Google's; CDS spreads widen to 69 basis points", url: "https://news.google.com/rss/search?q=Nvidia%20CDS%20credit%20default%20swap%20spreads%20widen%20July%202026", label: "Crypto Briefing (via Google News RSS, single outlet)", as_of: "2026-07-27", confidence: thin}
+  - {id: nvidia-cds-record-highs, figure: "Nvidia revolving-financing concerns mount; CDS spreads surge to record highs, shares plunge 5%", url: "https://news.google.com/rss/search?q=Nvidia%20CDS%20credit%20default%20swap%20spreads%20widen%20July%202026", label: "Futu (via Google News RSS; converges with nvidia-cds-69bp)", as_of: "2026-07-27", confidence: medium}
+  - {id: nvidia-debt-protection-surge, figure: "Nvidia's debt-protection costs surge amid $750B AI infrastructure spending wave", url: "https://news.google.com/rss/search?q=Nvidia%20CDS%20credit%20default%20swap%20spreads%20widen%20July%202026", label: "Crypto Briefing (via Google News RSS, single outlet)", as_of: "2026-07-27", confidence: thin}
+  - {id: bond-market-anxiety, figure: "Bond market anxiety is growing over AI capex budgets", url: "https://news.google.com/rss/search?q=AI%20infrastructure%20credit%20risk%20bond%20market%20anxiety%202026", label: "CNBC (via Google News RSS, primary-tier outlet, title-level)", as_of: "2026-07-24", confidence: medium}
+  - {id: oracle-cds-cycle-high, figure: "Tech credit risk rises as Oracle CDS hits cycle high, Nvidia spreads widen", url: "https://news.google.com/rss/search?q=AI%20infrastructure%20credit%20risk%20bond%20market%20anxiety%202026", label: "Seeking Alpha / MSN (via Google News RSS, 2-outlet convergence)", as_of: "2026-07-20", confidence: medium}
+  - {id: big-tech-ai-debt-spree, figure: "Big Tech's $182B AI debt spree reshaping credit markets (Meta, Nvidia, Amazon)", url: "https://news.google.com/rss/search?q=AI%20infrastructure%20credit%20risk%20bond%20market%20anxiety%202026", label: "Benzinga (via Google News RSS, single outlet)", as_of: "2026-07-16", confidence: thin}
+
+  # CORE SCIENTIFIC
+  - {id: core-scientific-deal-announced, figure: "CoreWeave announces ~$9B all-stock acquisition of Core Scientific", url: "https://news.google.com/rss/search?q=CoreWeave%20Core%20Scientific%20%249%20billion%20acquisition", label: "CNBC / Yahoo Finance same-day; WSJ reported talks 2025-06-26", as_of: "2025-07-07", confidence: high}
+  - {id: two-seas-opposition, figure: "Two Seas Capital (largest Core Scientific shareholder) says it will vote against, citing material undervaluation", url: "https://news.google.com/rss/search?q=Two%20Seas%20Capital%20Core%20Scientific%20vote%20against", label: "Reuters (via Google News RSS)", as_of: "2025-08-07", confidence: medium}
+  - {id: iss-glass-lewis-against, figure: "ISS (10-20) then Glass Lewis (10-21) both recommend voting against the deal", url: "https://news.google.com/rss/search?q=Core%20Scientific%20shareholders%20reject%20CoreWeave%20deal", label: "PR Newswire / Reuters / Yahoo Finance / Jefferies note (via Google News RSS, converging)", as_of: "2025-10-21", confidence: medium-high}
+  - {id: deal-rejected, figure: "Core Scientific shareholders reject the deal; Core Scientific announces termination same day. Exact vote tally not found.", url: "https://news.google.com/rss/search?q=Core%20Scientific%20shareholders%20reject%20CoreWeave%20deal", label: "Core Scientific's own release + Reuters/Bloomberg/WSJ/Investor's Business Daily (via Google News RSS, 5-source convergence)", as_of: "2025-10-30", confidence: high}
+  - {id: plan-b-bce-canada, figure: "BCE (Western Canada) data-center partnership", url: "https://news.google.com/rss/search?q=CoreWeave%20new%20data%20center%20deal%202026", label: "Bloomberg (via Google News RSS, single outlet)", as_of: "2026-03-16", confidence: medium}
+  - {id: plan-b-conapto-sweden, figure: "Conapto (Sweden) two-site data-center deal", url: "https://news.google.com/rss/search?q=CoreWeave%20new%20data%20center%20deal%202026", label: "Blockspace Media (via Google News RSS, single outlet)", as_of: "2026-06-24", confidence: thin}
+  - {id: plan-b-edgeconnex-texas, figure: "EdgeConneX / Cedar Creek TX: $440M campus commitment inside a $2.2B Bastrop County project", url: "https://news.google.com/rss/search?q=CoreWeave%20new%20data%20center%20deal%202026", label: "Data Center Dynamics / Business Journals / Community Impact (via Google News RSS, 3-outlet convergence)", as_of: "2026-07-27", confidence: high}
+  - {id: poolside-terminated, figure: "Separate ~2GW Texas data-center deal with Poolside (~$4B) was terminated — capacity retreat, not expansion", url: "https://news.google.com/rss/search?q=CoreWeave%20Poolside%20Texas%20data%20center%20terminated", label: "MLQ.ai / tech-insider.org (via Google News RSS, 2 lower-tier/aggregator outlets)", as_of: "2026-04-28", confidence: thin}
+  - {id: plan-b-gap, figure: "No new-capacity deal found in the ~4.5-month window (Nov 2025-Feb 2026) immediately after the rejection; that window's coverage was dominated by shareholder-litigation news (Pomerantz, GlobeNewswire), not new deals", url: "https://news.google.com/rss/search?q=CoreWeave%20data%20center%20capacity%20lease%20after%20Core%20Scientific", label: "gap, confirmed by absence across multiple query variants", as_of: "2026-02-01", confidence: thin}
+
+  # NVIDIA STAKE
+  - {id: nvidia-900m-stake-2025, figure: "Nvidia held $900M in CoreWeave stock per a March 2025 filing", url: "https://news.google.com/rss/search?q=Nvidia%20CoreWeave%20stake%20percent%20SEC%20filing", label: "CNBC (via Google News RSS)", as_of: "2025-05-15", confidence: medium}
+  - {id: nvidia-1-7b-win, figure: "Nvidia's CoreWeave stake framed as a '$1.7B win'", url: "https://news.google.com/rss/search?q=Nvidia%20CoreWeave%20stake%20percent%20SEC%20filing", label: "Barron's (via Google News RSS, single outlet)", as_of: "2025-05-19", confidence: thin}
+  - {id: nvidia-13f-filing, figure: "Nvidia 13F-HR filed, showing ~94.5% increase in CoreWeave position — the primary filing every outlet's percentage claim traces back to", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810", label: "SEC EDGAR — Nvidia 13F-HR, CIK 0001045810, accession 0001045810-26-000042, filing identified directly (table itself not independently re-fetched)", as_of: "2026-05-15", confidence: medium}
+  - {id: nvidia-stake-11pct-derived, figure: "Nvidia's CoreWeave ownership reported as ~11% — a journalist-derived calculation from the 13F share count, not a percentage stated in the filing itself", url: "https://news.google.com/rss/search?q=Nvidia%20CoreWeave%20stake%20percent%20SEC%20filing", label: "IndexBox / TradingView / CryptoRank / foreignpolicyjournal.com / TipRanks (via Google News RSS, 5-outlet convergence on the derived figure)", as_of: "2026-05-19", confidence: medium}
+  - {id: nvidia-no-13d-13g, figure: "No SC 13D/13G filed by Nvidia for its CoreWeave stake (EDGAR full-text search, zero hits) — confirms a passive/institutional-style 13F-only disclosure, not an activist stake", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&company=coreweave&type=SC+13", label: "SEC EDGAR full-text search, direct query, zero results", as_of: "2026-07-28", confidence: high}
+  - {id: nvidia-vendor-financing-gap, figure: "No formal 'vendor financing' or GPU-buyback arrangement between Nvidia and CoreWeave confirmed, despite the structural pattern (equity stake + $6.3B GPU order)", url: "https://news.google.com/rss/search?q=Nvidia%20CoreWeave%20vendor%20financing%20GPU%20buyback", label: "gap, no results found", as_of: "2026-07-28", confidence: thin}
+
+  # Q1 2026 EARNINGS + CALENDAR
+  - {id: q1-2026-revenue, figure: "Revenue $2,078M ($2.08B), +112% YoY", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628", label: "CoreWeave 10-Q, SEC EDGAR CIK 1769628, accession 0001769628-26-000222 — fetched directly", as_of: "2026-05-08", confidence: high}
+  - {id: q1-2026-net-loss, figure: "Net loss $740M (vs. $315M net loss on $982M revenue in Q1 2025 — loss more than doubled YoY)", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628", label: "CoreWeave 10-Q, SEC EDGAR CIK 1769628, accession 0001769628-26-000222 — fetched directly; corroborated by 24/7 Wall St. 2026-05-29", as_of: "2026-05-08", confidence: high}
+  - {id: q1-2026-stock-reaction, figure: "Stock fell 10% on weak guidance", url: "https://news.google.com/rss/search?q=CoreWeave%20Q1%202026%20net%20loss%20earnings", label: "CNBC (via Google News RSS, title only)", as_of: "2026-05-07", confidence: medium}
+  - {id: capex-guidance-2026, figure: "FY2026 capex guidance clustering $30-34B across sources reporting at different points as guidance was revised upward", url: "https://news.google.com/rss/search?q=CoreWeave%20capex%20guidance%202026", label: "tech-insider.org ($30B, 2026-04-01) / TechStock² ($34B, 2026-07-20)", as_of: "2026-07-20", confidence: medium}
+  - {id: q2-2026-earnings-date, figure: "Q2 2026 earnings call confirmed: Tuesday 2026-08-11, 5:00 PM ET", url: "https://www.stocktitan.net/news/CRWV/", label: "stocktitan.net republishing Business Wire release verbatim; independently corroborated by Benzinga's CRWV earnings page (consensus EPS -$1.27, revenue $2.56B)", as_of: "2026-07-27", confidence: medium}
+
+  # IPO CONTEXT
+  - {id: ipo-details, figure: "IPO 2025-03-28 on Nasdaq, priced at $40/share, initial valuation ~$23B — biggest US tech IPO since 2021", url: "https://news.google.com/rss/search?q=CoreWeave%20IPO%20March%202025%20Nasdaq", label: "CNBC (via Google News RSS, corroborated across the full timeline)", as_of: "2025-03-28", confidence: high}
+  - {id: stock-performance-arc, figure: "Shares rose past IPO price within days; up 250% by June 2025; wiped out 33% in two days 2025-08-15; up 322% by Oct 2025; WSJ 'Staggering Fall From Market Grace' 2025-12-15; founders reported to have sold $2.3B in stock since IPO by 2026-06-09", url: "https://news.google.com/rss/search?q=CoreWeave%20stock%20performance%20since%20IPO", label: "Reuters / Yahoo Finance / TradingView / 24/7 Wall St. / WSJ / Crain Currency (via Google News RSS, converging cluster across the timeline)", as_of: "2026-06-09", confidence: medium}
+  - {id: current-market-state, figure: "Trading around $71/share, market cap slipped under $50B", url: "https://news.google.com/rss/search?q=CoreWeave%20market%20cap%20July%202026", label: "Globe and Mail CFO share-sale disclosures + converging RSS title cluster 2026-07-13 through 2026-07-28", as_of: "2026-07-28", confidence: medium}
+notes: >-
+  Confidence key: high = primary source fetched directly (CoreWeave's own
+  10-Q/S-1 via EDGAR), or 3+ independent outlets converging same
+  day/week. medium = single primary-tier outlet, 2-3 converging outlets,
+  or a filing directly identified but not fully re-verified line by
+  line. thin = single lower-tier outlet, title/snippet-level only via
+  RSS, or a genuinely unreconciled/estimated figure. Direct fetches of
+  ir.coreweave.com, Reuters, CNBC, and Business Wire were frequently
+  blocked (DNS failure / 403 / 404) throughout this crawl; three claims
+  (Q1 2026 revenue, Q1 2026 net loss, the S-1's 77%-top-two-customers
+  disclosure) were confirmed against CoreWeave's own filings fetched in
+  full and are this bundle's strongest-sourced items.
+gaps:
+  - "No Q2 2026 backlog/earnings figures — not reported as of 2026-07-28; call is 2026-08-11."
+  - "Microsoft's specific % share of CoreWeave revenue, any year — never found; disclosure moved from named-but-unattributed (S-1) to fully anonymized (10-Q)."
+  - "Exact Core Scientific shareholder vote tally/percentage — not found."
+  - "Nvidia's ~11% CoreWeave stake is a derived/journalist estimate from a real 13F filing, not a primary-source-stated percentage."
+  - "No formal vendor-financing/GPU-buyback arrangement between Nvidia and CoreWeave confirmed."
+  - "~4.5-month dead zone (Nov 2025-Feb 2026) with no visible new-capacity deal after the Core Scientific rejection."
+  - "Total aggregate CoreWeave debt outstanding not reconciled to one filed figure."
+  - "No government/DoD contracts found."

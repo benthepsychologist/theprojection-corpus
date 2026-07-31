@@ -1,0 +1,63 @@
+# Bundle — health node: cigna (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml cigna. EXTENDS the axis strings
+# on board.yaml with posture and the in/out/available/operating/deployed
+# breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: cigna
+name: "Cigna"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Pivoting the whole group onto Evernorth / Express Scripts services — sold the Medicare Advantage book to HCSC ($3.7B, closed Mar 2025), walked away from the Humana merger (Dec 2023), and is buying back stock (~$3.6B) rather than expanding insurance risk."
+  sources:
+    - {figure: "sold Medicare Advantage / Part D / CareAllies to HCSC for $3.7B (closed Mar 19 2025); Humana merger talks (~$60B) ended Dec 2023; 2023 rebrand to The Cigna Group / Evernorth Health Services", label: "Wikipedia — Cigna (recent developments)", url: "https://en.wikipedia.org/wiki/Cigna", as_of: "2026-07", confidence: med}
+    - {figure: "PXDX algorithm denied 300,000+ requests over two months, ~1.2 seconds each, without opening files (ProPublica 2023)", label: "Wikipedia — Cigna (PXDX controversy)", url: "https://en.wikipedia.org/wiki/Cigna", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$7.0B cash + ~$0.8B short-term inv (~$18.9B total investments) — LIGHTER reserves than peers after shedding MA insurance risk"
+    sources:
+      - {figure: "cash & equivalents $7,040M; short-term investments $812M; total investments $18,902M; total debt $30,900M (Mar 31 2026)", label: "stockanalysis.com CI balance sheet", url: "https://stockanalysis.com/stocks/CI/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$274.9B FY25 revenue (~$277.9B TTM); operating cash flow ~$9.6B FY25 / ~$8.8B TTM"
+    sources:
+      - {figure: "revenue $274,900M FY25 / $277,892M TTM; OCF $9,601M FY25 / $8,812M TTM (TTM to Mar 31 2026)", label: "stockanalysis.com CI financials", url: "https://stockanalysis.com/stocks/CI/financials/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "~$1.2B capex + ~$3.6B buybacks committed FY25 — capital returned, not reinvested in insurance"
+    sources:
+      - {figure: "capex $1,212M FY25; share repurchases $3,621M FY25", label: "stockanalysis.com CI financials + cash-flow statement", url: "https://stockanalysis.com/stocks/CI/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+  in:
+    value: "inflows — ~$274.9B FY25: Evernorth/Express Scripts PBM services revenue now dominant + Cigna Healthcare premiums"
+    sources:
+      - {figure: "total revenue $274,900M FY25", label: "stockanalysis.com CI financials", url: "https://stockanalysis.com/stocks/CI/financials/", as_of: "2025-12", confidence: high}
+  out:
+    value: "outflows — medical + PBM drug costs dominate; then ~$3.6B buybacks + ~$1.6B dividends FY25"
+    sources:
+      - {figure: "share repurchases $3,621M; dividends paid $1,611M FY25; FCF $8,389M FY25", label: "stockanalysis.com CI cash-flow statement", url: "https://stockanalysis.com/stocks/CI/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "mixed — MLR caps the shrinking Cigna Healthcare insurance core, but Evernorth/Express Scripts services is the free lever and ~$3.6B FY25 buybacks show freer capital than debt-laden CVS."
+  sources:
+    - {figure: "buybacks $3,621M FY25 (robust) after selling the MA insurance book to HCSC — capital redirected to services + returns", label: "stockanalysis.com CI cash-flow statement + Wikipedia", url: "https://stockanalysis.com/stocks/CI/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+gravity:
+  value: "GROSS ~$274.9B/yr routed — 185M+ customer relationships + ~1.7M-provider network via Evernorth/Express Scripts (the widest footprint of the payers)."
+  sources:
+    - {figure: "Evernorth Health Services (Express Scripts PBM) is the dominant segment; 2023 rebrand consolidated the group under it", label: "Wikipedia — Cigna", url: "https://en.wikipedia.org/wiki/Cigna", as_of: "2026-07", confidence: med}
+    - {figure: "185M+ customer relationships + 1.7M providers (widest footprint)", label: "kestrel board.yaml cigna gravity axis — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+thrust:
+  value: "capex $1,212M (FY25) - depreciation $239M (FY25 annual, used as TTM proxy) + M&A $0 (TTM, no completed acquisitions Apr'25-Mar'26) = ~$973M (~$1.0B) thrust/yr (thin: depreciation not split quarterly)"
+  weight_basis: "$153.3B total assets, balance sheet, Mar 31 2026 (most recent quarter; down from $157.9B at FY25 year-end Dec 31 2025)"
+  gravity_basis: "care-economy/covered-lives rationale, not bottom-up buildup: 185M+ customer relationships + ~1.7M-provider network via Evernorth/Express Scripts — widest payer footprint; ~$274.9B/yr gross revenue carried forward as the $ proxy per this file's existing gravity block above"
+  optionality_band: "constrained — Cigna Healthcare's insurance core is capped by MLR rebate requirements on premium capital; this wave-F classification is narrower than this file's existing 'mixed' framing above, which also credits Evernorth/Express Scripts PBM services as a genuinely freer, unregulated lever"
+  buybacks_ttm: "$3.6B TTM (FY25 $3,621M already cited above; no more-current TTM figure found)"
+  sources:
+    - {figure: "total assets $153,266M (Mar 31 2026, most recent quarter); $157,919M (Dec 31 2025, FY25 year-end)", label: "stockanalysis.com CI balance sheet", url: "https://stockanalysis.com/stocks/CI/financials/balance-sheet/", as_of: "2026-03", confidence: high}
+    - {figure: "D&A reported combined only (not split) on cash-flow statement: TTM (Mar'26) $2,751M, FY2025 $2,775M; investing-activities 'Cash Acquisitions' line: TTM $0 (no activity, confirmed via two independent line-item fetches), FY2025 $597M, FY2024 $131M, FY2023 $447M", label: "stockanalysis.com CI cash-flow statement", url: "https://stockanalysis.com/stocks/CI/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+    - {figure: "Components of D&A Expense, FY2025/2024/2023 ($M): internal-use software 987/1021/1216 (amortization); other property & equipment 239/248/260 (depreciation-only — used as the thrust figure); value of business acquired 0/0/7 (amortization); other intangibles 1549/1506/1552 (amortization of acquisition intangibles — excluded per canon); total 2775/2775/3035. Depreciation-only isn't disclosed quarterly, so the FY2025 annual figure stands in as a TTM proxy (thin)", label: "Cigna Group FY2025 10-K (filed 2026-02-26), Note — Goodwill, Other Intangibles and Property and Equipment", url: "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000006/R154.htm", as_of: "2025-12-31", confidence: med}
+
+axes_num: { weight: 153.3, thrust: 1.0, gravity: 274.9 }  # $B — wave F, agent-derive 2026-07-28
+
+notes: "Biggest uncertainty is the PBM regulatory/legal front — Evernorth/Express Scripts sits in the FTC PBM crosshairs, and the PXDX algorithm is Cigna's entry in the payer-ai-claim-denial thread (batch denials without file review). Behavioral-health arm: Evernorth Behavioral Health. The 185M-relationship / 1.7M-provider figures are board-anchor estimates, not re-fetched primary."

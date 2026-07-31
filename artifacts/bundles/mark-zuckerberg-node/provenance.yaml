@@ -1,0 +1,56 @@
+# Bundle — node posture + capital-flow: mark-zuckerberg (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted); anchored to board.yaml deployable estimate. Key
+# nuance: board.yaml flags Meta's ORG-level optionality as "mixed" (debt-
+# funded buildout) — but that's a company balance-sheet nuance, not a
+# personal-control one. Zuckerberg's PERSONAL optionality is FREE given the
+# dual-class supervoting lock, so this bundle deliberately diverges from the
+# org-axis label on that one point.
+node: mark-zuckerberg
+name: "Mark Zuckerberg"
+kind: person
+asof: 2026-07-26
+posture:
+  value: hedging
+  basis: "Unilateral personal control (61.2% voting on 13.68% equity) of Meta's AI capex, currently hedging exposure — diversifying compute (a 6GW AMD deal) and cloud partnerships (Anthropic-cloud talks) rather than doubling down on one vendor/path, while funding the buildout partly via new debt (up to ~$84B) so the capex scale-up doesn't require diluting his voting control."
+  sources:
+    - {figure: "posture: hedging (6GW AMD deal + Anthropic-cloud talks)", label: "kestrel board.yaml meta-ai axis, classify 2026-07-24", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "deployable ~$170B — 61.2% Meta voting on 13.68% equity = unilateral control of a top AI capex budget", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "~$170B — kestrel board.yaml deployable anchor (61.2% Meta voting on 13.68% equity = unilateral control of a top AI capex budget); a reported net worth of $220B (Forbes, Dec-2025) is close/consistent — almost all of his wealth IS the controlling Meta stake, so deployable and net worth nearly converge here, unlike nodes where paper wealth and control diverge more sharply."
+    sources:
+      - {figure: "net worth US$220 billion (Forbes, Dec-2025)", label: "Wikipedia — Mark Zuckerberg", url: "https://en.wikipedia.org/wiki/Mark_Zuckerberg", as_of: "2025-12", confidence: med}
+      - {figure: "deployable ~$170B — 61.2% Meta voting on 13.68% equity", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+  operating:
+    value: "Meta corporate capital he directs as Chairman/CEO and controlling shareholder — ~$197B commandable/12mo ($81.6B cash+STI + ~$115.8B/yr operating cash flow, ~$46B free post-capex); market cap ~$1.51T is a separate label."
+    sources:
+      - {figure: "~$197B commandable/12mo ($81.6B cash+STI + ~$115.8B/yr operating cash flow, ~$46B free post-capex); market cap ~$1.51T", label: "kestrel board.yaml meta-ai capitalization axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+      - {figure: "controlling shareholder; chairman, chief executive officer", label: "Wikipedia — Mark Zuckerberg", url: "https://en.wikipedia.org/wiki/Mark_Zuckerberg", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "Meta's AI buildout — a 6GW AMD compute deal, capex financed partly via new debt (up to ~$84B) rather than equity dilution, preserving his voting control while scaling deployment. Personally, the Chan Zuckerberg Initiative (CZI) has been the vehicle receiving his pledged share transfers since Dec-2015."
+    sources:
+      - {figure: "optionality: mixed — Zuckerberg dual-class control (free) but taking on debt up to ~$84B for the AI buildout", label: "kestrel board.yaml meta-ai optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+  in:
+    value: "Meta stock appreciation on his controlling stake — net worth $220B (Dec-2025), up substantially from the $45B value of the pledged shares cited at the Dec-2015 CZI announcement; no separate cash-compensation figure found."
+    sources:
+      - {figure: "Dec-2015: pledge to transfer 99% of Facebook shares, then valued at US$45 billion", label: "Wikipedia — Mark Zuckerberg", url: "https://en.wikipedia.org/wiki/Mark_Zuckerberg", as_of: "2015-12", confidence: high}
+  out:
+    value: "Dec-2015 pledge to transfer 99% of his Facebook/Meta shares (then valued at $45B) over his lifetime to the Chan Zuckerberg Initiative (structured as an LLC, not a traditional charitable foundation); Giving Pledge signed 2010 (at least half of wealth). No recent personal stock-sale figures found — confirmed gap, confidence low."
+    sources:
+      - {figure: "Dec-2015 pledge to transfer 99% of shares (then $45B) to the Chan Zuckerberg Initiative (an LLC) over their lifetimes", label: "Wikipedia — Mark Zuckerberg", url: "https://en.wikipedia.org/wiki/Mark_Zuckerberg", as_of: "2015-12", confidence: high}
+      - {figure: "signed the Giving Pledge in 2010 (at least half of wealth to charity)", label: "Wikipedia — Mark Zuckerberg", url: "https://en.wikipedia.org/wiki/Mark_Zuckerberg", as_of: "2010", confidence: high}
+
+optionality:
+  value: "free — 61.2% voting control on just 13.68% equity (board.yaml) is a genuine dual-class supervoting lock, the same tier as Musk's SpaceX. The ~$84B in new debt Meta is taking on for the AI buildout is a company-level balance-sheet lever, not a personal constraint — it doesn't dilute his personal control, so board.yaml's 'mixed' label applies to the ORG axis (Meta's leverage), not the PERSON axis (his control), which is FREE."
+  sources:
+    - {figure: "61.2% Meta voting on 13.68% equity = unilateral control", label: "kestrel board.yaml deployable axis, spin-up-board 2026-07-25", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+    - {figure: "meta-ai optionality (org-level): mixed — dual-class control (free) but taking on debt up to ~$84B for the AI buildout", label: "kestrel board.yaml meta-ai optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+gravity:
+  value: "~$196.2B/yr GROSS FY25 Meta ad revenue moves on his say-so — the capital base funding the entire AI capex program he unilaterally directs."
+  sources:
+    - {figure: "~$196.2B/yr GROSS FY25 ad revenue", label: "kestrel board.yaml meta-ai gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+
+notes: "Board.yaml flags Meta's ORG-level optionality as 'mixed' (debt-funded buildout) — this bundle treats that as a company-balance-sheet nuance, not a personal-control one, and deliberately labels Zuckerberg's PERSONAL optionality as FREE given the supervoting lock (61.2% voting / 13.68% equity). No recent personal stock-sale or CZI disbursement-rate figures were found on the fetched page — flagged as gaps, confidence low. Net worth ($220B) and deployable capital (~$170B) nearly converge here since almost all his wealth is the controlling Meta stake itself, unlike nodes where paper wealth and deployable diverge more sharply."

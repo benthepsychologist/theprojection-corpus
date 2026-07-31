@@ -1,0 +1,21 @@
+# Per-run fetch manifest — /daily 2026-07-22, money lens (interim agentic mode)
+# NOTE: window spans three digest-days (07-20 finalize tail, missed 07-21, 07-22 so far).
+source_id: agentic-web-sweep
+params:
+  lens: money
+  window_start: "2026-07-20T18:00:00-04:00"
+  as_of: "2026-07-22T08:15:00-04:00"
+  terms_from:
+    - attention/watchlist.yaml (lenses.money — orgs, themes)
+    - CXMT candidate thread (offered in briefing #0, unanswered)
+  macro: web-checked indicators (FRED/BoC collectors not built)
+  exclusions: [reddit, pr-newswire]
+fetched_at: "2026-07-22T12:50:00Z"
+items_file: buffer/2026-07-22-money-sweep.jsonl   # 5 items + macro line
+notes: >-
+  Quiet watchlist orgs this window: Highmark, BCBS-MA, PBGH, Bain Double
+  Impact, Welsh Carson, General Atlantic, RWJF, Ballmer Group, Commonwealth
+  Fund, Wellcome Trust. MGX initially reported quiet by the money sweep but
+  the ai sweep caught its Aligned Data Centers commitment — cross-filed.
+  Macro delta of note: market now prices ~24% odds of a HIKE at the 07-28/29
+  FOMC (07-20 read had ~87% hold) on US-Iran-tension inflation concerns.

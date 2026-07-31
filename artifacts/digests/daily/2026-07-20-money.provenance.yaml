@@ -1,0 +1,24 @@
+# Sidecar — how to re-fetch this digest's inputs
+digest: 2026-07-20-money.md
+run_manifest: provenance/2026-07-20-daily-money.yaml
+buffer: buffer/2026-07-20-money-sweep.jsonl   # 30-day retention; regenerable
+collection_mode: agentic-interim (sonnet subagent web sweep; macro web-checked,
+  FRED/BoC indicator collectors not built)
+window: 2026-07-20T05:00-04:00 → 2026-07-20T17:30-04:00
+cited:
+  - https://www.sec.gov/Archives/edgar/data/0001717115/000119312526308469/d124162dex991.htm
+  - https://finance.yahoo.com/healthcare/articles/bristol-myers-squibb-expands-nvidia-184044343.html
+  - https://tech.eu/2026/07/20/jeff-bezos-and-sovereign-ai-back-cuspai-in-450m-raise/
+  - https://finance.yahoo.com/technology/ai/articles/hut-8-signs-9-8-103741725.html
+  - https://www.marketscreener.com/news/china-s-changxin-memory-technologies-sets-july-27-listing-date-sources-say-ce7f5edcdc8bf420
+  - https://www.bloomberg.com/news/articles/2026-07-20/blackstone-agrees-to-invest-in-korean-robotics-supplier-futronic
+  - https://www.claimsjournal.com/news/national/2026/07/20/338917.htm
+  - https://www.federalreserve.gov/newsevents/pressreleases/monetary20260617a.htm
+  - https://www.bls.gov/news.release/archives/cpi_07142026.htm
+  - https://tradingeconomics.com/united-states/government-bond-yield
+  - https://www.bankofcanada.ca/2026/07/fad-press-release-2026-07-15/
+  - https://www.exchange-rates.org/exchange-rate-history/usd-cad-2026
+  - https://companiesmarketcap.com/nvidia/marketcap/
+caveats: first money read — macro strip is baseline, deltas start next daily.
+  No daily DRAM/HBM spot print found; Nvidia mkt cap stands in as AI-adjacent
+  signal.

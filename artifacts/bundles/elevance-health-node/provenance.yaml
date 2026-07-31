@@ -1,0 +1,66 @@
+# Bundle — health node: elevance-health (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml elevance-health. EXTENDS the
+# axis strings on board.yaml with posture and the in/out/available/operating/
+# deployed breakdown. WebFetch-sourced (WebSearch exhausted this session).
+node: elevance-health
+name: "Elevance Health"
+pocket: health
+asof: 2026-07-26
+
+posture:
+  value: hedging
+  basis: "Absorbing a Medicaid-redetermination + ACA morbidity margin shock (FY25 operating cash flow collapsed to ~$4.3B) while leaning on the Carelon services/behavioral-health arm as the growth hedge; still buying back ~$2.6B of stock."
+  sources:
+    - {figure: "FY25 operating cash flow $4,290M — roughly half the ~$7-8B run-rate, a Medicaid/ACA margin shock signal; recovers to $7,464M TTM", label: "stockanalysis.com ELV financials + cash-flow statement", url: "https://stockanalysis.com/stocks/ELV/financials/", as_of: "2026-06", confidence: high}
+    - {figure: "Carelon services arm (incl. Beacon-derived behavioral health); acquiring BCBS Louisiana (+1.9M members, 15th state); Wellpoint rebrand of Amerigroup 2024", label: "Wikipedia — Elevance Health (recent developments)", url: "https://en.wikipedia.org/wiki/Elevance_Health", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$10.2B cash + ~$27.3B short-term inv (~$49.6B total investments/float) against ~$31-32B debt — well-reserved"
+    sources:
+      - {figure: "cash & equivalents $10,232M; short-term investments $27,282M; total investments $49,603M; total debt $31,044M (Jun 30 2026)", label: "stockanalysis.com ELV balance sheet", url: "https://stockanalysis.com/stocks/ELV/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+  operating:
+    value: "~$197.6B FY25 revenue (~$198.7B TTM); operating cash flow ~$4.3B FY25 (shock) / ~$7.5B TTM (recovering)"
+    sources:
+      - {figure: "revenue $197,584M FY25 / $198,718M TTM; OCF $4,290M FY25 / $7,464M TTM (TTM to Jun 30 2026)", label: "stockanalysis.com ELV financials", url: "https://stockanalysis.com/stocks/ELV/financials/", as_of: "2026-06", confidence: high}
+  deployed:
+    value: "~$1.1B capex + ~$2.6B buybacks committed FY25; near-zero M&A (~$88M) — capital held back during the margin shock"
+    sources:
+      - {figure: "capex $1,116M FY25; share repurchases $2,605M FY25; cash acquisitions $88M FY25", label: "stockanalysis.com ELV financials + cash-flow statement", url: "https://stockanalysis.com/stocks/ELV/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+  in:
+    value: "inflows — ~$197.6B FY25: Blue-licensed premiums (14-15 states) + Carelon services revenue"
+    sources:
+      - {figure: "total revenue $197,584M FY25", label: "stockanalysis.com ELV financials", url: "https://stockanalysis.com/stocks/ELV/financials/", as_of: "2025-12", confidence: high}
+  out:
+    value: "outflows — medical costs (rising MLR from Medicaid/ACA morbidity) dominate; then ~$2.6B buybacks + ~$1.5B dividends FY25"
+    sources:
+      - {figure: "share repurchases $2,605M; dividends paid $1,529M FY25; FCF $3,174M FY25", label: "stockanalysis.com ELV cash-flow statement", url: "https://stockanalysis.com/stocks/ELV/financials/cash-flow-statement/", as_of: "2025-12", confidence: high}
+
+optionality:
+  value: "constrained — the 14-15-state Blue Cross Blue Shield license fence blocks geographic expansion and MLR caps the core; Carelon services is the one relatively free lever."
+  sources:
+    - {figure: "Blue-licensed footprint ~14-15 states (BCBS Louisiana adds the 15th); Carelon Global Solutions is the services/BPO lever", label: "Wikipedia — Elevance Health", url: "https://en.wikipedia.org/wiki/Elevance_Health", as_of: "2026-07", confidence: med}
+    - {figure: "11-15-state Blue license fence framing", label: "kestrel board.yaml elevance-health optionality axis", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+gravity:
+  value: "GROSS ~$197.6B/yr routed — ~46.8M medical members across the Blue-licensed states + Carelon's deep behavioral-health bench."
+  sources:
+    - {figure: "BCBS Louisiana acquisition adds 1.9M members (bringing footprint to 15 states)", label: "Wikipedia — Elevance Health", url: "https://en.wikipedia.org/wiki/Elevance_Health", as_of: "2026-07", confidence: med}
+    - {figure: "~46.8M members", label: "kestrel board.yaml elevance-health gravity axis — estimate", url: "attention/board.yaml", as_of: "2026-07", confidence: low}
+
+thrust:
+  value: "capex $1,175M TTM - D&A (combined, not depreciation-only) $1,712M TTM + M&A $39M TTM = ~-$0.5B/yr thrust (thin: D&A not split — see flag below)"
+  weight_basis: "$126.4B total assets, balance sheet, quarter ended Jun 30 2026 (per 10-Q filed 2026-07-15)"
+  gravity_basis: "carries forward the existing GROSS ~$197.6B/yr routed figure above; reasoning is ~46.8M covered lives across the Blue-licensed states plus Carelon's behavioral-health bench — payer gravity is about care-access dependency (members can't easily switch mid-year, MLR ties dollars to care), not capex scale"
+  optionality_band: "constrained — the Blue Cross Blue Shield license fence blocks geographic expansion and MLR caps the core margin (wave-F regulated-capital framing); matches the existing optionality prose above verbatim, no conflict"
+  buybacks_ttm: "$2.705B TTM (Jun 30 2026); FY25 was $2.605B, already cited above — incremental increase, no new commitment found"
+  sources:
+    - {figure: "Total Assets $126,438M (Jun 30 2026) vs $121,494M (Dec 31 2025)", label: "stockanalysis.com ELV balance sheet", url: "https://stockanalysis.com/stocks/ELV/financials/balance-sheet/", as_of: "2026-06", confidence: high}
+    - {figure: "TTM (Jun 30 2026) column: D&A (combined) $1,712M; capex $1,175M; cash acquisitions $39M; share repurchases $2,705M — vs FY25 column: D&A $1,745M, capex $1,116M, acquisitions $88M, buybacks $2,605M", label: "stockanalysis.com ELV cash-flow statement (TTM column)", url: "https://stockanalysis.com/stocks/ELV/financials/cash-flow-statement/", as_of: "2026-06", confidence: high}
+    - {figure: "10-Q for quarter ended Jun 30 2026 (filed 2026-07-15): NO mention of Blue Cross Blue Shield of Louisiana anywhere in the filing; 'Purchases of subsidiaries, net of cash acquired' only $5M for H1 2026 (vs $54M H1 2025) — the BCBS Louisiana deal has NOT closed/funded as of this filing, so it is correctly excluded from the M&A TTM figure above", label: "SEC EDGAR — Elevance Health 10-Q, period Jun 30 2026", url: "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000060/elv-20260630.htm", as_of: "2026-07-15", confidence: high}
+    - {figure: "cash-flow statement reports one combined line, 'Depreciation and amortization: $720M' for six months ended Jun 30 2026 — no property-and-equipment-only depreciation figure or footnote found in the filing", label: "SEC EDGAR — Elevance Health 10-Q, period Jun 30 2026", url: "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000060/elv-20260630.htm", as_of: "2026-07-15", confidence: med}
+    - {figure: "EDGAR full-text search for the exact phrase 'depreciation expense' across all Elevance/Anthem/WellPoint filings (CIK 0001156039) returns zero hits since 2020 — the company has not disclosed a standalone depreciation-only figure in any current-decade 10-K/10-Q, so the D&A-combined fallback below is a filing-disclosure limit, not a lookup miss", label: "SEC EDGAR full-text search", url: "https://efts.sec.gov/LATEST/search-index?q=%22depreciation+expense%22&ciks=0001156039", as_of: "2026-07-28", confidence: med}
+
+axes_num: { weight: 126.4, thrust: -0.5, gravity: 197.6 }  # $B — wave F, agent-derive 2026-07-28
+
+notes: "Biggest uncertainty is the medical-cost trend — the FY25 OCF collapse to $4.3B shows how exposed the Medicaid/ACA book is; recovery hinges on repricing. Behavioral-health arm: Carelon Behavioral Health (ex-Beacon Health Options) — the DEEPEST payer behavioral-health bench, and the target of 'ghost network' behavioral-health lawsuits in NY/CT (its entry in the payer-ai-claim-denial / access thread). Membership figure is a board-anchor estimate, not re-fetched primary."

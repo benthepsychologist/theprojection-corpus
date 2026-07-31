@@ -1,0 +1,93 @@
+# Bundle — node posture + capital-flow: replika / Replika (Luka, Inc.)
+# axes_num rollout wave G (2026-07-28) — 1 of 8 small mental-health-AI actors in
+# this wave. Recipe (Ben's spec for the wave): WEIGHT = cumulative VC raised
+# ($B, private co.); THRUST = deployment run-rate, $/yr, capital committed in
+# the trailing ~12mo to new positions (compute/hiring/product); GRAVITY =
+# attributable dependent economy grounded in subscription-revenue estimates,
+# NOT gross user-count headlines (companion-chat apps are explicitly flagged
+# low-dollar-gravity in the wave brief); OPTIONALITY = how free the commanded
+# capital is (VC-backed private => constrained by default, pushed toward
+# mixed only with evidence of profitability/self-funding). Buybacks n/a ($0).
+# Method: WebSearch was budget-exhausted this session (200/200 used before any
+# query for this node landed) — all research below is WebFetch against
+# Wikipedia, Google News RSS (headline/snippet passes), and DuckDuckGo HTML
+# search-result pages (both used as fallback per the wave instructions).
+# getlatka.com and crunchbase.com full-page fetches 404'd/403'd directly; their
+# figures are cited via the DuckDuckGo search-results-page URL that surfaced
+# them instead (a real, clickable URL, not fabricated) — same pattern as the
+# mistral-ai-node bundle uses for Google News.
+#
+# IMPORTANT CORRECTION TO WAVE BACKGROUND: the brief's "~$70M total raised"
+# figure for Replika/Luka Inc did NOT check out. Three independently-sourced
+# trackers (Tracxn, PitchBook via a ground.news writeup, and a Sept-2022
+# en.ain.ua funding article) converge instead on cumulative funding of
+# ~$11-11.2M across 4 rounds, led by Khosla Ventures with ACME Capital,
+# Zillionize, AIX Ventures and others (9 investors total per Tracxn). No
+# funding-round news newer than ~2018-2022 was found in any source checked.
+# WEIGHT below uses the verified ~$11M figure, not the unverified ~$70M one.
+node: replika
+name: "Replika"
+pocket: health
+asof: 2026-07-28
+posture:
+  value: "contracting / under pressure"
+  basis: "Founder/CEO Eugenia Kuyda stepped aside Oct-2025 to launch a separate company (Wabi, a $20M pre-seed raise that is NOT Replika/Luka capital); Dmytro Klochko named CEO. Third-party ARR estimate shows revenue falling (~$14M in 2024 -> ~$4.8M estimated 2026, per GetLatka/Sensor Tower store-revenue read), though other revenue trackers disagree sharply (see gravity). Regulatory pressure continues: Italy's Garante fined Luka Inc. ~€5M/$5.6M in May-2025 and reaffirmed its Replika ban in Jun-2025 over children's-privacy concerns, echoing the original Feb-2023 Italy ban/erotic-content pull. No new funding round found since ~2018-2022, so financially the company reads as running on legacy VC + subscription revenue rather than fresh growth capital."
+  sources:
+    - {figure: "CEO of 'AI companion' startup Replika is stepping aside to launch a new company", label: "Business Insider via Google News", url: "https://news.google.com/rss/search?q=Replika+CEO+Dmytro+Klochko+Kuyda", as_of: "2025-10-09", confidence: med}
+    - {figure: "Dmytro Klochko became CEO (after Kuyda stepped aside)", label: "Wikipedia — Replika", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2025", confidence: med}
+    - {figure: "Italy's data watchdog fines AI company Replika's developer $5.6 million", label: "Reuters via Google News", url: "https://news.google.com/rss/search?q=Replika+Italy+data+protection+fine+2025", as_of: "2025-05-19", confidence: med}
+    - {figure: "Italy's DPA reaffirms ban on Replika over AI and children's privacy concerns", label: "IAPP / Techerati / Silicon UK / BABL AI via Google News", url: "https://news.google.com/rss/search?q=Replika+Italy+data+protection+fine+2025", as_of: "2025-06", confidence: med}
+    - {figure: "Replika founder raises $20M pre-seed for Wabi, the 'YouTube of apps' (separate company, launched late 2025)", label: "TechCrunch via Google News", url: "https://news.google.com/rss/search?q=Replika+subscription+revenue+million", as_of: "2025-11-05", confidence: med}
+capital:
+  available:
+    value: "~$11-11.2M cumulative raised across 4 rounds (Series A $4.4M led by Khosla Ventures + ACME Capital among 9 total investors); no funding-round news found newer than ~2018-2022. This directly contradicts the wave brief's ~$70M assumption — treat $11M as the verified figure."
+    sources:
+      - {figure: "Replika has raised a total funding of $11M over 4 rounds from 9 investors", label: "Tracxn — Replika company profile via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+total+funding+raised+2026", as_of: "2026-07-28", confidence: med}
+      - {figure: "~$11.2 million across 4 rounds", label: "PitchBook company profile via DuckDuckGo search results (ground.news/AIM Media House cross-refs)", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+funding+rounds+Crunchbase", as_of: "2026-07-28", confidence: med}
+      - {figure: "AI-chatbot Replika raised over $11M investment from the US", label: "en.ain.ua via Google News", url: "https://news.google.com/rss/search?q=Replika+Luka+funding+million", as_of: "2022-09-23", confidence: med}
+      - {figure: "Series A $4.4 million, led by Khosla Ventures, with ACME Capital and 7 others among 9 total investors", label: "Tracxn / Crunchbase cross-ref via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=%22Replika%22+%22Series+A%22+funding+round+amount+investors+list", as_of: "2026-07-28", confidence: low}
+  operating:
+    value: "No official revenue disclosed by Luka Inc. Third-party estimates disagree sharply: GetLatka/Sensor Tower store-revenue reads put current ARR around ~$4.8M (down from ~$14M in 2024); other trackers (Nikolaroza, CompWorth) estimate ~$24-35M/yr. Wikipedia notes roughly 25% of Replika's tens-of-millions user base pays an annual subscription, with no dollar figure attached. 115 employees per GetLatka."
+    sources:
+      - {figure: "2026 estimated ARR $4.8M (down from $14M in 2024); valuation $41.9M; 115 employees", label: "GetLatka — Replika company page via DuckDuckGo search results (direct getlatka.com fetch 404'd)", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+total+funding+raised+2026", as_of: "2026-07-28", confidence: low}
+      - {figure: "Sensor Tower reads ~$400K/mo current app-store revenue (~$4.8M annualized); AICompanionPick corroborates ~$400K/mo", label: "Sensor Tower / AICompanionPick via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+      - {figure: "2023 revenue ~$30M, 2024 ~$24M (declining trend, opposite sign from GetLatka's ARR series)", label: "Nikolaroza.com via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+      - {figure: "current annual revenue estimate ~$35.1M", label: "CompWorth via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+      - {figure: "roughly 25% of its user base paying an annual subscription fee (no $ figure given)", label: "Wikipedia — Replika", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026", confidence: med}
+  deployed:
+    value: "No disclosed capex/buildout commitment found (no datacenter deals, no disclosed compute-purchase agreements). Presumed spend is ordinary cloud/hosting + engineering payroll (115 employees per GetLatka) folded into operating costs, not broken out anywhere found."
+    sources:
+      - {figure: "no disclosed capex, datacenter, or compute-purchase commitment found in any source consulted", label: "absence noted across Wikipedia + Google News RSS + DuckDuckGo passes", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026-07-28", confidence: low}
+  in:
+    value: "Legacy VC (~$11M closed years ago, Khosla Ventures-led) plus ongoing subscription inflows (see operating, disputed range ~$4.8-35M/yr). No new institutional capital found flowing in during the trailing 12 months."
+    sources:
+      - {figure: "$11M over 4 rounds from 9 investors (Khosla Ventures, ACME Capital, Zillionize, AIX Ventures among them)", label: "Tracxn via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+total+funding+raised+2026", as_of: "2026-07-28", confidence: med}
+  out:
+    value: "No itemized capital-out disclosed; ordinary operating spend (compute/hosting/payroll) inferred from the ~$4.8-35M ARR range and 115-employee headcount, not broken out."
+    sources:
+      - {figure: "115 employees", label: "GetLatka via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+total+funding+raised+2026", as_of: "2026-07-28", confidence: low}
+thrust:
+  value: "~$0-5M/yr (thin, near-zero as a confirmed run-rate) — no disclosed new funding round, capex commitment, datacenter deal, or hiring surge found in the trailing 12 months. The one nearby capital event (Kuyda's $20M pre-seed for Wabi, Nov-2025) is explicitly a SEPARATE company, not Replika/Luka capital, and is excluded here. Point estimate ~$0.003B/yr reflects presumed ordinary compute/engineering opex growth only, not a quantified commitment — treat as a rough floor, not a computed figure."
+  basis: "The wave recipe defines thrust as capital committed in the last ~12mo to new positions (compute/model spend, new hiring, new product lines). No source found discloses any such commitment for Replika/Luka in the 2025-2026 window; the company's visible 2025-2026 news is a CEO transition and a regulatory fine, not a buildout. This is consistent with the wave brief's expectation that Replika 'has not raised large rounds recently as far as is publicly known' — confirmed here, and extended to find no disclosed operating buildout either."
+  sources:
+    - {figure: "no funding round, capex, or hiring-surge news found for Replika/Luka in the 2025-2026 window", label: "absence noted across Wikipedia + Google News RSS + DuckDuckGo passes", url: "https://news.google.com/rss/search?q=Replika+CEO+Dmytro+Klochko+Kuyda", as_of: "2026-07-28", confidence: low}
+    - {figure: "Kuyda's $20M pre-seed raise for Wabi (Nov-2025) is a separate company's funding, not Luka/Replika's", label: "TechCrunch via Google News", url: "https://news.google.com/rss/search?q=Replika+subscription+revenue+million", as_of: "2025-11-05", confidence: med}
+optionality:
+  value: "mixed, leaning constrained — a small early institutional stake (~$11M, Khosla Ventures-led, closed ~2018-2022) rather than the large-and-recent VC dependence typical of frontier-lab peers; the long gap since any new funding round plus continuous subscription revenue (disputed range ~$4.8-35M/yr, ~25% of users paying) suggest the company has been running substantially on its own subscription income for years, pushing toward mixed per the wave recipe's carve-out. Still a private company with original institutional investors presumably holding board seats, so not called free; confidence low given how thin the sourcing is on actual governance/control terms."
+  sources:
+    - {figure: "$11M over 4 rounds, Khosla Ventures-led, no round found since ~2018-2022", label: "Tracxn via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+Luka+Inc+total+funding+raised+2026", as_of: "2026-07-28", confidence: med}
+    - {figure: "roughly 25% of user base paying an annual subscription fee, sustained since well before the most recent funding gap", label: "Wikipedia — Replika", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026", confidence: med}
+    - {figure: "no governance/board-control details found in any source consulted", label: "absence noted across Wikipedia + DuckDuckGo passes", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026-07-28", confidence: low}
+gravity:
+  value: "~$0.005-0.035B/yr ($5-35M) — grounded in disputed subscription-revenue estimates, not Replika's ~40M+ lifetime user/download count, per the wave brief's explicit low-dollar-gravity call for companion-chat apps. Point estimate ~$0.02B/yr (~$20M), splitting the difference between the low GetLatka/Sensor Tower store-revenue read (~$4.8M) and the higher Nikolaroza/CompWorth estimates (~$24-35M) — genuinely wide disagreement across trackers, none of them Replika's own disclosed figures, so this whole axis is low confidence."
+  sources:
+    - {figure: "2026 estimated ARR $4.8M (Sensor Tower-style store-revenue read, down from $14M 2024)", label: "GetLatka / Sensor Tower via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+    - {figure: "2023 revenue ~$30M, 2024 ~$24M", label: "Nikolaroza.com via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+    - {figure: "current annual revenue estimate ~$35.1M", label: "CompWorth via DuckDuckGo search results", url: "https://html.duckduckgo.com/html/?q=Replika+app+revenue+Sensor+Tower+OR+data.ai+annual+2024+2025", as_of: "2026-07-28", confidence: low}
+    - {figure: "40M+ users by 2025 (Jan-2018: 2M -> Jan-2023: 10M -> Aug-2024: 30M+ -> 2025: 40M+), explicitly NOT used directly as gravity per the wave recipe (gross headline, not attributable dependent economy)", label: "Wikipedia — Replika", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026", confidence: med}
+buybacks:
+  value: "$0 — private company, no buyback mechanism applicable"
+  sources:
+    - {figure: "private company, funding is all equity VC rounds, no public listing or buyback activity found", label: "Tracxn / Wikipedia cross-ref", url: "https://en.wikipedia.org/wiki/Replika", as_of: "2026-07-28", confidence: high}
+axes_num_estimate: { weight: 0.011, thrust: 0.003, gravity: 0.02 }  # agent-derive 2026-07-28 wave G
+notes: "pocket: health is used as the closest existing board bucket; Replika sits in the AI-companion-app vertical, adjacent to but distinct from the clinical/telehealth mental-health peers (sondermind, spring-health, talkspace) already tagged double_dependent in that group — Replika is not itself double-dependent on a payer/provider chain the way those are. Biggest correction versus the wave brief: verified cumulative VC raised is ~$11M, not the assumed ~$70M — three independent trackers converge on the lower figure and no source found supports ~$70M. Second-biggest uncertainty: gravity/operating revenue estimates disagree by ~7x across trackers ($4.8M-$35M), none of them Luka Inc.'s own disclosed numbers (none were found) — treat the whole revenue picture as directional only. Notable posture context: Oct-2025 CEO transition (Kuyda -> Klochko) coincides with Kuyda launching an unrelated company (Wabi) that raised its own $20M pre-seed — do not attribute that raise to Replika/Luka. Regulatory history: Italy's Garante banned Replika Feb-2023 (restored partially May-2023), then fined Luka Inc. ~€5M/$5.6M and reaffirmed the ban in May/Jun-2025 over children's-privacy concerns — relevant to posture and a live constraint on the optionality band. WebSearch was exhausted for this entire session before this node's research began; all sourcing here is WebFetch-only (Wikipedia direct fetch + Google News RSS + DuckDuckGo HTML), consistent with the wave's stated fallback."

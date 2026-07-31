@@ -1,0 +1,56 @@
+# Bundle — node posture + capital-flow: mustafa-suleyman / Mustafa Suleyman (2026-07-26)
+# PERSON node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted): Wikipedia Mustafa Suleyman + Wikipedia Inflection AI.
+# EXECUTIVE WITHOUT A PERSONAL FORTUNE at Altman/Amodei/Hassabis scale —
+# division head inside Microsoft (microsoft-mai), not a founder-controller of
+# an independent capital base. Personal 'available' capital marked LOW /
+# operating-only per task instruction; least personal-capital data of the
+# four AI-lab-head nodes.
+node: mustafa-suleyman
+name: "Mustafa Suleyman"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: expanding
+  basis: "Building Microsoft AI's in-house model line (the MAI court) inside Microsoft's broader AI buildout; no personal capital move underlies this — the expansion is Microsoft's, which Suleyman directs as division CEO."
+  sources:
+    - {figure: "Microsoft's in-house model court — Suleyman -> Inflection -> MAI lineage", label: "kestrel board.yaml microsoft-mai node", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+    - {figure: "appointed Executive Vice President (EVP) and CEO of Microsoft's newly created consumer AI unit (2024)", label: "Wikipedia — Mustafa Suleyman", url: "https://en.wikipedia.org/wiki/Mustafa_Suleyman", as_of: "2024", confidence: high}
+
+capital:
+  available:
+    value: "LOW / effectively operating-only. No personal net-worth figure is disclosed anywhere in sourced material. The 2024 Microsoft-Inflection deal ($650M) paid to LICENSE Inflection's technology, and those proceeds went to REIMBURSE INFLECTION'S INVESTORS, not to Suleyman personally — Wikipedia does not state he received a direct payout. DeepMind's 2014 sale to Google (£400M) likewise discloses no personal payout to him as a cofounder. Treat personal deployable capital as unconfirmed/near-zero relative to the other three nodes."
+    sources:
+      - {figure: "Microsoft paid $650M to license Inflection AI's technology; proceeds used to reimburse Inflection's investors (not stated as personal payout to Suleyman)", label: "Wikipedia — Inflection AI", url: "https://en.wikipedia.org/wiki/Inflection_AI", as_of: "2024-03", confidence: med}
+      - {figure: "Google acquired DeepMind (cofounded by Suleyman) in 2014 for a reported £400M; no personal payout disclosed", label: "Wikipedia — Mustafa Suleyman", url: "https://en.wikipedia.org/wiki/Mustafa_Suleyman", as_of: "2014", confidence: low}
+  operating:
+    value: "directs Microsoft AI's model effort as a business-unit CEO inside Microsoft's parent-directed treasury (~$250B+ commandable/12mo) — he does not control this capital, he draws on it; microsoft-mai has no independently-raised capital of its own."
+    sources:
+      - {figure: "~$250B+ commandable/12mo (cash+STI $78B Mar-2026 + ~$170B/yr operating cash flow + AAA debt access)", label: "kestrel board.yaml microsoft capitalization axis (parent of microsoft-mai)", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+      - {figure: "microsoft-mai is a Microsoft business unit (parent: microsoft, liege: microsoft) — no independent capital base", label: "kestrel board.yaml microsoft-mai node", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+  deployed:
+    value: "the MAI in-house model buildout sits inside Microsoft's rising AI capex (~$107B/yr, up from $64.6B FY25) — a Microsoft-level commitment Suleyman executes against, not a personally deployed bet."
+    sources:
+      - {figure: "rising majority self-earmarked to the AI buildout (capex ~$107B/yr, up from $64.6B FY25)", label: "kestrel board.yaml microsoft optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+  in:
+    value: "no personal salary, equity-grant, or compensation figures disclosed for his Microsoft EVP role; the only dollar figure connected to his career transition ($650M Microsoft-Inflection license fee) is explicitly an investor reimbursement, not personal income."
+    sources:
+      - {figure: "$650M Microsoft-Inflection technology license fee, paid to reimburse Inflection's investors", label: "Wikipedia — Inflection AI", url: "https://en.wikipedia.org/wiki/Inflection_AI", as_of: "2024-03", confidence: med}
+  out:
+    value: "no personal capital outflows disclosed in sourced material."
+    sources:
+      - {figure: "no personal outflow/giving figure disclosed on the fetched page", label: "Wikipedia — Mustafa Suleyman (absence-of-figure check)", url: "https://en.wikipedia.org/wiki/Mustafa_Suleyman", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "constrained/locked — division head inside Microsoft (microsoft-mai is parent-directed, cannot independently raise capital), the same structural position as deepmind inside Alphabet. Personally, no fortune-scale figure exists to even assess lock-up against; his optionality is best read as purely operational (what he can direct inside Microsoft), not capital-based."
+  sources:
+    - {figure: "microsoft-mai: parent Microsoft, liege Microsoft — a Microsoft business unit, not an independent kingdom", label: "kestrel board.yaml microsoft-mai node", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+    - {figure: "mixed — legally free discretionary treasury, but a rising majority self-earmarked to the AI buildout (parent Microsoft's own optionality, which bounds MAI's)", label: "kestrel board.yaml microsoft optionality axis", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+gravity:
+  value: "whatever gravity MAI generates is folded into Microsoft's own ~$3.0T/yr GROSS ecosystem — microsoft-mai has no separately-sourced gravity figure of its own in board.yaml."
+  sources:
+    - {figure: "~$3.0T/yr GROSS ecosystem (reconstructed: TTM rev $318B x IDC partner multiplier)", label: "kestrel board.yaml microsoft gravity axis (parent of microsoft-mai)", url: "attention/board.yaml", as_of: "2026-07-25", confidence: low}
+
+notes: "Suleyman is the weakest personal-capital case of the four nodes by a wide margin: no net-worth figure, no confirmed personal payout from either the 2014 DeepMind sale or the 2024 Inflection deal, and no independently-raised capital for microsoft-mai (it is a Microsoft business unit, not a kingdom with its own board.yaml axes). Every capital figure here is Microsoft's, cited via the parent microsoft node with an explicit caveat that it bounds, not belongs to, Suleyman. Treat 'available' as effectively unknown rather than quantified-low."

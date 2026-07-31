@@ -1,0 +1,102 @@
+# Bundle — crawl finding xai-state-2026-07-28
+# Answers the missing actor-doing synthesis for xai as its own actor
+# (distinct from spacex): legal structure post-IPO, Colossus 2 capacity,
+# Grok 4.6/4.7 pipeline + revenue/API traction, the Arkansas CSAM suit +
+# NCOSE + Open Secure AI Alliance join, the 50+ staff exodus report, and
+# Memphis turbine/permit status.
+artifact: artifacts/findings/xai-state-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebFetch against Google News RSS search feeds (news.google.com/rss/search)
+  for feed-level listings (title/date/source reliably returned); individual
+  article redirect links (news.google.com/rss/articles/...) mostly resolved
+  to a bare "Google News" placeholder rather than article body when fetched
+  directly, so those were NOT treated as independently confirmed beyond the
+  feed-listing fact. WebSearch was available for only 5 queries before the
+  session budget was exhausted, so DuckDuckGo HTML search-result pages
+  (html.duckduckgo.com/html) via WebFetch carried most of the depth for the
+  legal-structure, Colossus 2 capacity, revenue, staff-exodus, and NCOSE
+  sections — these are a secondary-aggregation layer (search-result
+  snippets summarizing multiple outlets), not primary documents, and are
+  marked confidence: medium or thin throughout rather than high. No figure
+  or URL is fabricated. Read first: attention/threads.yaml (grok-frontier,
+  grok-companion-harm, spacex-colossus blocks), artifacts/threads/{grok-frontier,
+  spacex-colossus,grok-companion-harm}.md, and attention/actor-doing.yaml's
+  spacex entry (house style baseline).
+queries:
+  google_news_rss:
+    - "xAI SpaceX legal entity structure when:30d"
+    - "Colossus 2 xAI GPU capacity when:30d"
+    - "Grok 4.6 OR Grok 4.7 xAI when:30d"
+    - "xAI Grok revenue API when:30d"
+    - "xAI Arkansas lawsuit CSAM when:30d"
+    - "xAI NCOSE when:30d"
+    - "\"Open Secure AI Alliance\" when:30d"
+    - "xAI staff exodus employees leaving when:30d"
+    - "xAI Memphis turbines permits when:30d"
+    - "\"Colossus 2\" xAI GPU when:14d"
+  websearch_budget_exhausted_before_use:
+    - "Arkansas lawsuit xAI Grok CSAM Potts Law Firm July 2026"
+    - "xAI 50 staff exodus Meta Thinking Machines July 2026"
+    - "xAI SpaceXAI rebrand legal structure subsidiary July 2026"
+    - "Colossus 2 xAI GPU count power Memphis July 2026"
+    - "NCOSE xAI Grok CSAM demand July 2026"
+  duckduckgo_html_fallback:
+    - "Arkansas lawsuit xAI Grok CSAM Potts Law Firm"
+    - "xAI 50 staff exodus Meta Thinking Machines July 2026"
+    - "xAI legal structure subsidiary SpaceX 2026"
+    - "Colossus 2 xAI GPU count 2026"
+    - "NCOSE xAI Grok CSAM statement"
+    - "xAI dissolved merged SpaceX entity July 2026 SEC 8-K"
+    - "xAI Grok revenue 2026 annualized API enterprise customers"
+    - "xAI co-founders all left departures May 2026 The Information"
+items:
+  # --- LEGAL STRUCTURE ---
+  - {id: rebrand-spacexai, figure: "xAI dissolved as a separate entity, rebranded SpaceXAI, effective 2026-07-06", label: "ProPakistani ('Elon Musk's xAI Officially Rebrands as SpaceXAI') via Google News RSS; corroborated in DuckDuckGo-aggregated secondary coverage (Revenue Memo and others)", url: "https://news.google.com/rss/search?q=xAI+SpaceX+legal+entity+structure+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-07", confidence: medium}
+  - {id: separation-end-signaled, figure: "Musk first signaled ending xAI's separate-subsidiary status ~2026-05-06/07, two months before the formal rebrand", label: "DuckDuckGo-aggregated secondary coverage, no primary filing located", url: "https://html.duckduckgo.com/html/?q=xAI+dissolved+merged+SpaceX+entity+July+2026+SEC+8-K", as_of: "2026-05-07", confidence: thin}
+  - {id: feb2026-merger-structure, figure: "SpaceX acquired xAI Feb-2026 ($1.25T combined, $1T SpaceX + $250B xAI, all-stock 'triangular merger'); xAI initially remained a separately-held subsidiary (debt/contracts/liabilities isolated)", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=xAI+legal+structure+subsidiary+SpaceX+2026", as_of: "2026-02-02", confidence: medium}
+  # --- COLOSSUS 2 CAPACITY ---
+  - {id: colossus2-555k, figure: "555,000 GPUs (reported as of ~2026-01-15)", label: "DuckDuckGo-aggregated secondary coverage, uncited lineage vs. the 1.2M figure", url: "https://html.duckduckgo.com/html/?q=Colossus+2+xAI+GPU+count+2026", as_of: "2026-01-15", confidence: thin}
+  - {id: colossus2-1_2m, figure: "1.2 million GPUs reportedly 'going live' in 2026 (separate, non-reconciled lineage from the 555K figure)", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=Colossus+2+xAI+GPU+count+2026", as_of: "2026", confidence: thin}
+  - {id: colossus2-power-cost, figure: "1-2 GW power draw; ~$18B hardware cost (matches the 07-24 spacex-colossus finding's SemiAnalysis-derived figure — reconfirmed, not new)", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=Colossus+2+xAI+GPU+count+2026", as_of: "2026-07", confidence: medium}
+  - {id: colossus2-third-building, figure: "A third Memphis-area building reportedly purchased for further Colossus expansion (no sub-month date resolved)", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=Colossus+2+xAI+GPU+count+2026", as_of: "2026", confidence: thin}
+  # --- GROK 4.6/4.7 PIPELINE ---
+  - {id: grok46-47-promise, figure: "Musk: Grok 4.6 in two weeks, Grok 4.7 in four weeks (stated ~2026-07-24, reiterated through 07-27)", label: "NextBigFuture / Startup Fortune / IntraMind / Memeburn / Breakingthenews / Crypto Briefing / TechnoSports (via Google News RSS) — all repeating a single Musk statement, no independent verification of training status", url: "https://news.google.com/rss/search?q=Grok+4.6+OR+Grok+4.7+xAI+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-24", confidence: medium}
+  - {id: grok46-cadence-framing, figure: "'Shipping Grok 4.6 and 4.7 back to back, a release cadence no frontier lab has matched' — framing from a single Musk-adjacent outlet, not an independently verified competitive claim", label: "Startup Fortune via Google News RSS", url: "https://news.google.com/rss/search?q=Grok+4.6+OR+Grok+4.7+xAI+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-25", confidence: thin}
+  # --- REVENUE / API ---
+  - {id: revenue-500m-annualized, figure: "~$500M annualized revenue mid-2026, up from ~$350M in 2025; targeting $2B FY2026 (~4x growth)", label: "DuckDuckGo-aggregated secondary coverage, multiple outlets cited but not individually verified this pass", url: "https://html.duckduckgo.com/html/?q=xAI+Grok+revenue+2026+annualized+API+enterprise+customers", as_of: "2026-07", confidence: medium}
+  - {id: burn-rate-1b, figure: "Burn rate reported near $1B/month against ~$500M annualized revenue", label: "Bloomberg, cited in DuckDuckGo-aggregated coverage", url: "https://html.duckduckgo.com/html/?q=xAI+Grok+revenue+2026+annualized+API+enterprise+customers", as_of: "2026-07", confidence: medium}
+  - {id: x-ad-revenue-distinct, figure: "~$3.3B annualized revenue figure some coverage cites is X's (Twitter's) ad+subscription business, NOT xAI/Grok-specific — must be kept separate", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=xAI+Grok+revenue+2026+annualized+API+enterprise+customers", as_of: "2026-07", confidence: medium}
+  # --- ARKANSAS SUIT / NCOSE / OPEN SECURE AI ALLIANCE ---
+  - {id: arkansas-suit-filed, figure: "Arkansas suit filed 2026-07-23 (Potts Law Firm, federal court, Little Rock) alleging Grok-generated deepfake CSAM using authentic photos of a minor, tied to a Bentonville, AR photographer facing separate criminal CSAM charges; framed as a potential precedent-setter on generative-AI provider liability", label: "KCRA / PR Newswire (Potts Law Firm release) via Google News RSS; DuckDuckGo-aggregated corroboration", url: "https://news.google.com/rss/search?q=xAI+Arkansas+lawsuit+CSAM+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-23", confidence: high}
+  - {id: ncose-demand, figure: "NCOSE publicly demanded xAI institute strict CSAM-prevention safeguards, urged DOJ/FTC to investigate X for AI-related sexual exploitation; RAINN quoted calling CSAM generation 'sexual violence'", label: "NCOSE ('xAI Must Stop Grok From Creating Child Sexual Abuse Material') via Google News RSS; DuckDuckGo-aggregated coverage", url: "https://news.google.com/rss/search?q=xAI+NCOSE+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-27", confidence: medium}
+  - {id: ncmec-ca-ag, figure: "Allegations xAI failed to report AI-generated CSAM to NCMEC as required; California AG opened an investigation", label: "DuckDuckGo-aggregated secondary coverage, not independently confirmed this pass", url: "https://html.duckduckgo.com/html/?q=NCOSE+xAI+Grok+CSAM+statement", as_of: "2026-07", confidence: thin}
+  - {id: grok-controls-change, figure: "xAI reportedly announced Grok control changes to prevent non-consensual intimate image (NCII) generation following pressure", label: "DuckDuckGo-aggregated secondary coverage, single mention, no direct xAI statement located", url: "https://html.duckduckgo.com/html/?q=NCOSE+xAI+Grok+CSAM+statement", as_of: "2026-07", confidence: thin}
+  - {id: open-secure-ai-alliance, figure: "xAI joined the NVIDIA-led 'Open Secure AI Alliance' (37-40 members incl. Microsoft, SpaceX, IBM), announced 2026-07-27; OpenAI/Google/Anthropic/Meta notably absent; stated trigger was a Hugging Face breach + reported OpenAI breach, not the CSAM story", label: "NVIDIA Blog / The Hacker News / The Hill / Tom's Hardware / CoinDesk / BASENOR via Google News RSS", url: "https://news.google.com/rss/search?q=%22Open+Secure+AI+Alliance%22+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-27", confidence: medium}
+  # --- STAFF EXODUS ---
+  - {id: exodus-50-july, figure: "'50+ xAI staff' reportedly exit for Meta and Thinking Machines (most recent figure)", label: "Stocktwits via Google News RSS", url: "https://news.google.com/rss/search?q=xAI+staff+exodus+employees+leaving+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-25", confidence: medium}
+  - {id: exodus-80-may, figure: "'80+ researchers and engineers... in recent months' (earlier, ~May-2026 figure, higher than the July '50+' figure — the two are not reconciled)", label: "Metaintro and others, DuckDuckGo-aggregated", url: "https://html.duckduckgo.com/html/?q=xAI+co-founders+all+left+departures+May+2026+The+Information", as_of: "2026-05", confidence: medium}
+  - {id: exodus-cofounders-all-gone, figure: "All 11 original xAI co-founders departed, incl. chief engineer Igor Babuschkin; final two (Manuel Kroiss, Ross Nordeen) left late March 2026", label: "Fortune / Business Insider / Entrepreneur / TheNextWeb / Observer / aifirstfounders.com / tech-insider.org / greyjournal.net — named, wide outlet spread, DuckDuckGo-aggregated", url: "https://html.duckduckgo.com/html/?q=xAI+co-founders+all+left+departures+May+2026+The+Information", as_of: "2026-03", confidence: high}
+  - {id: exodus-destinations, figure: "Named destinations: Meta (~11), Thinking Machines (~7), Anthropic (unquantified); original reporting credited to The Information (Theo Wayt), picked up by TechCrunch/Bloomberg", label: "DuckDuckGo-aggregated secondary coverage", url: "https://html.duckduckgo.com/html/?q=xAI+co-founders+all+left+departures+May+2026+The+Information", as_of: "2026-05", confidence: medium}
+  # --- MEMPHIS TURBINES (reconfirms 07-24 spacex-colossus finding) ---
+  - {id: turbines-reuters, figure: "59 unpermitted gas turbines at Colossus 2 (Southaven, MS); pollution 'hits hardest in Black communities'", label: "Reuters via Google News RSS", url: "https://news.google.com/rss/articles/CBMixgFBVV95cUxPZ2RXajFFQnNrc2hrdlM4OURSbS1zUVUyR2xaUjdkNk1XZ0s0dml0NkctWWdtLWFhUU9FU0Vxa2Z0aFpqOWt4aU5JWDFTeDNjTlR1bUM5dXJVOHVxNEpfYlBKQXRFYjM5TnBIZmI3cnBSRVUybFQyZEFBdjZ6YzRJR1FhYkN4TkROc25RNDRLMzBsSDFqNXk4S05qcmpsWHVqOGFPcEdjcGt2aFRNWk5BME1fV1lWRDFtMnNXZ20xTnF3endCbUE", as_of: "2026-07-14", confidence: high}
+  - {id: turbines-mashable, figure: "Elon Musk's AI facility reportedly operating gas turbines without a permit (reconfirms, doesn't add to, turbine count)", label: "Mashable via Google News RSS", url: "https://news.google.com/rss/search?q=xAI+Memphis+turbines+permits+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-25", confidence: medium}
+  - {id: turbines-naacp-quote, figure: "NAACP called the facility a 'potential death sentence' — escalated rhetoric, same underlying fact pattern as the 07-24 finding (no new turbine count, no new permit action)", label: "International Business Times UK via Google News RSS", url: "https://news.google.com/rss/search?q=xAI+Memphis+turbines+permits+when:30d&hl=en-US&gl=US&ceid=US:en", as_of: "2026-07-18", confidence: medium}
+notes: >
+  Biggest open gaps, explicitly not resolved this pass rather than guessed:
+  (1) no primary SEC/Delaware filing confirming the xAI-to-SpaceXAI legal
+  dissolution — X/Musk's own account is the closest-to-primary channel
+  found; (2) Colossus 2 GPU count has two non-reconciled lineages (555K vs
+  1.2M) with no xAI disclosure for either; (3) the Grok 4.6/4.7 two-
+  week/four-week promise is single-sourced to Musk, same hype pattern
+  already flagged for Grok 5 in grok-frontier — worth checking against
+  actual ship dates ~2026-08-07 and ~2026-08-21; (4) the Open Secure AI
+  Alliance join landing the same week as the Arkansas suit and NCOSE
+  demand is a suggestive correlation, NOT a sourced causal hedge — the
+  Alliance's own stated trigger is a Hugging Face/OpenAI breach story,
+  not child-safety pressure, so no causal claim is made in the finding.
+  Session's WebSearch tool ran out of budget (5 queries used, all
+  returned "budget exhausted") almost immediately — most of the crawl's
+  non-Google-News-RSS material came from DuckDuckGo HTML search-result
+  pages instead, which is one layer further from primary sources than a
+  normal WebSearch pass; confidence levels reflect that throughout.

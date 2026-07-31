@@ -1,0 +1,54 @@
+# Bundle — capital node: state-street (2026-07-26)
+# Posture + capital-FLOW appendix for a NEW capital-pocket node (State Street is
+# not yet on board.yaml — the board notes 'add the other 3' Big Four managers).
+# Method: WebFetch primary (WebSearch exhausted) — stockanalysis STT overview,
+# Wikipedia State Street Corporation + State Street Global Advisors. State Street
+# is both an asset manager (SSGA) and the world's #2 custodian bank.
+node: state-street
+name: "State Street"
+pocket: capital
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "Steady custodian — $51.7T under custody + ~$5.4T AUM (Q3-2025), #3 ETF/SPDR franchise; modest growth, defends the moat, returns capital via dividend + buyback rather than aggressive expansion."
+  sources:
+    - {figure: "~$5.4T AUM + $51.7T under custody & administration (Q3-2025); #3 ETF manager", label: "Wikipedia — State Street Corporation", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2025-09", confidence: high}
+    - {figure: "market cap $50.93B (Jul 24 2026); dividend $3.68/yr (1.98%)", label: "stockanalysis.com STT overview", url: "https://stockanalysis.com/stocks/STT/", as_of: "2026-07", confidence: high}
+
+capital:
+  available:
+    value: "own corporate liquidity sits inside a regulated G-SIB bank balance sheet — not separately captured on the fetched overview"
+    sources:
+      - {figure: "total assets / cash not disclosed in the STT overview; G-SIB custodian balance sheet", label: "stockanalysis.com STT overview (balance-sheet detail absent)", url: "https://stockanalysis.com/stocks/STT/", as_of: "2026-07", confidence: low}
+  operating:
+    value: "total revenue ~$15.0B TTM ($13.0B FY24, $13.9B FY25); net income ~$3.22B TTM"
+    sources:
+      - {figure: "revenue TTM $15.02B; FY2025 $13.89B; net income TTM $3.22B; FY2025 $2.72B", label: "stockanalysis.com STT overview", url: "https://stockanalysis.com/stocks/STT/", as_of: "2026-07", confidence: high}
+      - {figure: "revenue $13.00B; net income $2.687B (FY2024)", label: "Wikipedia — State Street Corporation", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2024-12", confidence: high}
+  deployed:
+    value: "AUM directed ~$5.4T (State Street Investment Mgmt / SSGA, Q3-2025) + $51.7T assets under custody & administration serviced"
+    sources:
+      - {figure: "~$5.4T AUM + $51.7T AUC/AUA (Q3-2025)", label: "Wikipedia — State Street Corporation", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2025-09", confidence: high}
+      - {figure: "SSGA AUM ~$4.1T (Dec-2023); infobox $5.7T; invented the ETF (SPY, 1993)", label: "Wikipedia — State Street Global Advisors", url: "https://en.wikipedia.org/wiki/State_Street_Global_Advisors", as_of: "2023-12", confidence: med}
+  in:
+    value: "AUM grew ~$4.1T (Dec-2023) -> ~$5.4T (Q3-2025); SPDR/SSGA net inflows the driver (exact net-flow $ not captured)"
+    sources:
+      - {figure: "AUM $4.1T (Dec-2023) -> $5.4T (Q3-2025) growth; net-flow dollar figure NOT captured", label: "Wikipedia — State Street Global Advisors + State Street Corporation", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2025-09", confidence: low}
+  out:
+    value: "capital returned — dividend ~$3.68/yr per share (~$1.0B; 1.98% yield) + buybacks; deployment/custody-servicing costs"
+    sources:
+      - {figure: "annual dividend $3.68/share (1.98% yield); ~274.7M shares outstanding", label: "stockanalysis.com STT overview", url: "https://stockanalysis.com/stocks/STT/", as_of: "2026-07", confidence: high}
+      - {figure: "buyback dollar amount NOT captured on fetched sources", label: "stockanalysis.com STT overview (buyback not disclosed)", url: "https://stockanalysis.com/stocks/STT/", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "constrained — SSGA AUM is fiduciary/benchmark-bound index (SPY), custody is pure agency service, and its own capital is regulated G-SIB balance sheet; little free discretionary capital."
+  sources:
+    - {figure: "index/benchmark fiduciary AUM + agency custody + G-SIB regulatory capital", label: "Wikipedia — State Street Corporation + State Street Global Advisors", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2025-09", confidence: med}
+
+gravity:
+  value: "GROSS — $51.7T assets under custody & administration (Q3-2025) is the value-orbit (custody/servicing-fee dependency), the pocket's Aladdin analog; #3 global ETF platform via SPDR/SPY."
+  sources:
+    - {figure: "$51.7T assets under custody & administration (Q3-2025); #3 ETF manager after BlackRock + Vanguard", label: "Wikipedia — State Street Corporation + State Street Global Advisors", url: "https://en.wikipedia.org/wiki/State_Street_Corporation", as_of: "2025-09", confidence: high}
+
+notes: "commands ($5.4T AUM / $51.7T AUC) >> owns (market cap ~$50.9B, Jul-2026). Custody AUC is a STOCK; servicing fees are thin (~few bps). Own-cash / balance-sheet detail not separately captured on the fetched overview (flagged low). NEW node — not yet on board.yaml."

@@ -1,0 +1,44 @@
+# Bundle — node posture + capital-flow: arm (2026-07-26)
+# Extends board.yaml arm axes. ARM = SoftBank-controlled (87.1%) — capital
+# allocation is PARENT-DIRECTED (SoftBank/Son), not independently Arm's.
+# Method: WebFetch PRIMARY (stockanalysis.com ARM statements; WebSearch exhausted).
+node: arm
+name: "Arm"
+pocket: chips
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Moving up-stack from pure IP-licensing into compute subsystems (CSS) + Neoverse datacenter (Grace/Graviton), lifting royalty per chip — but the direction is SoftBank-directed (87.1% parent control)."
+  sources:
+    - {figure: "INVERSE profile — microscopic capital, planetary gravity (ISA under nearly all silicon); SoftBank controls 87.1%", label: "kestrel board.yaml arm gloss/axes", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+capital:
+  available:
+    value: "~$3.6B cash+STI (Q4 FY26, ended Mar 31 2026; cash $2.75B + ST inv $0.85B); net cash ~$3.2B (total debt $0.43B) — TINY vs its gravity"
+    sources:
+      - {figure: "cash $2,751M + ST investments $850M = $3,601M; total debt $432M; net cash $3,169M", label: "stockanalysis.com ARM balance sheet", url: "https://stockanalysis.com/stocks/ARM/financials/balance-sheet/?p=quarterly", as_of: "2026-03", confidence: high}
+  operating:
+    value: "~$1.5B/yr operating cash flow (FY26); FCF ~$1.0B (FY26 $979M)"
+    sources:
+      - {figure: "FY2026 OCF $1,524M, capex $545M, FCF $979M", label: "stockanalysis.com ARM cash-flow statement", url: "https://stockanalysis.com/stocks/ARM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  deployed:
+    value: "capex ~$0.55B (FY26); R&D-led up-stack push (CSS / compute subsystems, own-chiplet ambitions); no material buyback/dividend — capital allocation is SoftBank-directed"
+    sources:
+      - {figure: "FY2026 capex $545M; no material buyback/dividend", label: "stockanalysis.com ARM cash-flow statement", url: "https://stockanalysis.com/stocks/ARM/financials/cash-flow-statement/", as_of: "2026-03", confidence: high}
+  in:
+    value: "FY2026 revenue $4.92B (licensing + per-chip royalties); net income $904M"
+    sources:
+      - {figure: "FY2026 revenue $4,920M; net income $904M", label: "stockanalysis.com ARM income statement", url: "https://stockanalysis.com/stocks/ARM/financials/", as_of: "2026-03", confidence: high}
+  out:
+    value: "R&D + capex ~$0.55B; capital deployment is PARENT-DIRECTED (SoftBank 87.1%), so strategic outflows follow Son's allocation, not an independent Arm treasury"
+    sources:
+      - {figure: "87.1% SoftBank-controlled — parent-directed capital", label: "kestrel board.yaml arm parent/depends_on softbank", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+optionality:
+  value: "constrained — 87.1% SoftBank-controlled; capital is parent-directed (Son), and the pile is microscopic vs the gravity it commands"
+  sources:
+    - {figure: "87.1% SoftBank-controlled; ~$3.6B cash vs planetary ISA gravity", label: "kestrel board.yaml arm optionality axis + stockanalysis balance sheet", url: "attention/board.yaml", as_of: "2026-07", confidence: high}
+gravity:
+  value: "GROSS — the ISA under ~99% of smartphones + datacenter (Grace/Graviton) + auto/IoT; device value dependent on Arm designs ~$1T+/yr. INVERSE profile: tiny capital, planetary gravity."
+  sources:
+    - {figure: "ISA under ~99% of smartphones + DC (Grace/Graviton) + auto/IoT; device value ~$1T+/yr", label: "kestrel board.yaml arm gravity axis", url: "attention/board.yaml", as_of: "2026-07", confidence: med}
+    - {figure: "FY2026 revenue $4.92B captures only the royalty/license slice, not the device value it enables", label: "stockanalysis.com ARM income statement", url: "https://stockanalysis.com/stocks/ARM/financials/", as_of: "2026-03", confidence: high}
+notes: "Biggest uncertainty: (1) SoftBank-directed capital means Arm's 'posture' is partly Son's, not Arm's; (2) the up-stack move (own silicon / chiplets) risks channel conflict with licensees (Qualcomm/Apple/Nvidia); (3) gravity is huge but only a thin royalty slice is monetized. Market cap ~$278B is a separate label."

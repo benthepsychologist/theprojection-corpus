@@ -1,0 +1,60 @@
+# Bundle — crawl finding frontier-model-gov-review-precedent-2026-07-22
+# Re-fetch manifest (no captures — no evidence-grade vanishing-risk cites;
+# FR/GovTrack documents are stable primary records).
+artifact: artifacts/findings/frontier-model-gov-review-precedent-2026-07-22.md
+crawled_at: "2026-07-22T18:30:00Z"
+method: >
+  Session WebSearch budget was exhausted (200/200) before this crawl —
+  first news-arc dispatch returned honest-empty (logged in coverage-log).
+  Re-ran via GDELT DOC 2.0 API (paced ~6s, sourcelang:english) + targeted
+  WebFetch; official spine via Federal Register API + GovTrack API +
+  agency-page fetches. Two sonnet subagents.
+queries:
+  federal_register_api:
+    - 'term="frontier model"'
+    - 'term=artificial intelligence frontier model'
+    - 'term=pre-deployment testing artificial intelligence'
+    - 'presidential_document_type=executive_order & term=artificial intelligence'
+    - 'term="Center for AI Standards and Innovation"'
+    - 'term=Gold Eagle artificial intelligence (0 relevant hits — name not on official record)'
+    - 'term=self-regulatory organization artificial intelligence (0 relevant)'
+  govtrack_api:
+    - 'q=frontier artificial intelligence model'
+    - 'q="frontier model"'
+    - 'bill detail: H.R. 9363 · S. 4656'
+  gdelt_doc_api:
+    - '"Gold Eagle" AI White House sourcelang:english'
+    - '"GPT-5.6" government sourcelang:english'
+    - '"self-regulatory organization" frontier model sourcelang:english'
+    - 'Bessent frontier model sourcelang:english'
+    - 'Altman Congress briefing sourcelang:english'
+    - 'Meta excluded "open weight" White House sourcelang:english'
+    - '"AI Safety Institute" OR CAISI pre-deployment sourcelang:english'
+items:
+  # official record
+  - {id: eo-14409, url: "https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security", ts: "2026-06-05"}
+  - {id: eo-14179, url: "https://www.federalregister.gov/documents/2025/01/31/2025-02172/removing-barriers-to-american-leadership-in-artificial-intelligence", ts: "2025-01-31"}
+  - {id: eo-14110, url: "https://www.federalregister.gov/documents/2023/11/01/2023-24283/safe-secure-and-trustworthy-development-and-use-of-artificial-intelligence", ts: "2023-11-01"}
+  - {id: eo-14365, url: "https://www.federalregister.gov/documents/2025/12/16/2025-23092/ensuring-a-national-policy-framework-for-artificial-intelligence", ts: "2025-12-16"}
+  - {id: nist-ai-800-1-rfc, url: "https://www.federalregister.gov/documents/2025/01/15/2025-00698/request-for-comments-on-aisis-draft-document-managing-misuse-risk-for-dual-use-foundation-models", ts: "2025-01-15"}
+  - {id: caisi-agents-rfi, url: "https://www.federalregister.gov/documents/2026/01/08/2026-00206/request-for-information-regarding-security-considerations-for-artificial-intelligence-agents", ts: "2026-01-08"}
+  - {id: hr-9363, url: "https://www.govtrack.us/congress/bills/119/hr9363", ts: "2026-06-18"}
+  - {id: caisi-page, url: "https://www.nist.gov/caisi", ts: "2026-07-22"}
+  # news arc
+  - {id: gold-eagle-launch, url: "https://www.insurancejournal.com/news/national/2026/07/17/877965.htm", ts: "2026-07-17"}
+  - {id: gold-eagle-explainer, url: "https://www.executivegov.com/articles/white-house-gold-eagle-cybersecurity-initiative", ts: "2026-07"}
+  - {id: cnbc-voluntary, url: "https://www.cnbc.com/2026/07/17/white-house-ai-access-anthropic-openai.html", ts: "2026-07-17"}
+  - {id: tnw-defacto-gate, url: "https://thenextweb.com/news/white-house-dictating-frontier-ai-model-access-anthropic-openai", ts: "2026-07-18"}
+  - {id: claims-sro, url: "https://www.claimsjournal.com/news/national/2026/07/20/338917.htm", ts: "2026-07-20"}
+  - {id: pymnts-fall-resigns, url: "https://www.pymnts.com/personnel/2026/us-ai-safety-chief-chris-fall-resigns-after-3-months/", ts: "2026-07-20"}
+  - {id: pymnts-gold-eagle-live, url: "https://www.pymnts.com/cybersecurity/2026/banks-face-a-faster-cyber-clock-as-gold-eagle-goes-live/", ts: "2026-07"}
+  - {id: hassabis-watchdog, url: "https://www.justsecurity.org/147315/early-edition-july-15-2026/", ts: "2026-07-15"}
+  - {id: framework-roundup, url: "https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026", ts: "2026-07-21"}
+  - {id: hf-breach, url: "https://techcrunch.com/2026/07/21/openai-says-hugging-face-was-breached-by-its-pre-release-models/", ts: "2026-07-21"}
+  - {id: altman-brief-syndicated, url: "https://www.arkansasonline.com/news/2026/jul/22/altman-to-brief-white-house-on-ai/", ts: "2026-07-22"}
+notes: >-
+  Confidence markers carried in the finding: Gold Eagle name + FINRA-SRO
+  are reported-only (absent from the official record); Bloomberg
+  Altman-briefing body paywalled (headline-level only). Roundup-blog
+  claims (framework terms, Meta exclusion) corroborated directionally but
+  not primary-sourced.

@@ -1,0 +1,55 @@
+# Bundle — node posture + capital-flow: bernard-arnault (2026-07-26)
+# PERSON/House node — personal capital-flow + posture, cited. WebFetch primary
+# (WebSearch exhausted). Founder-billionaire — control weights over paper wealth.
+# LVMH is OFF the kestrel board entirely (luxury goods, not AI/compute) — his
+# relevance here is capital scale + serial-acquirer pattern; AI gravity is
+# near-zero and this bundle says so plainly rather than inflating it.
+node: bernard-arnault
+name: "Bernard Arnault"
+kind: person
+asof: 2026-07-26
+
+posture:
+  value: consolidating
+  basis: "LVMH revenue has declined for the fiscal year (2025: €80.8B) amid a luxury-sector slowdown, and no new major acquisition surfaced this pass — reads as defending the existing empire rather than actively expanding it. Family voting lock (65.89%) is unthreatened either way. Historical pattern (Dior/Bulgari/Tiffany) is a serial-acquirer one, but that is a past cadence, not a live 2026 deal."
+  sources:
+    - {figure: "LVMH FY2025 revenue €80.807B, net profit €10.878B (year ending Dec-31-2025)", label: "Wikipedia — LVMH", url: "https://en.wikipedia.org/wiki/LVMH", as_of: "2025-12", confidence: high}
+    - {figure: "no new major acquisition disclosed on the fetched Arnault/LVMH pages for 2025-2026", label: "Wikipedia — Bernard Arnault / LVMH", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2026-07", confidence: med}
+
+capital:
+  available:
+    value: "~$190-203B personal net worth (Forbes/Bloomberg, Dec-2025) — dominated by the value of his LVMH stake via the Agache holding structure"
+    sources:
+      - {figure: "Forbes ~$190.4B (Dec-2025)", label: "Wikipedia — Bernard Arnault", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2025-12", confidence: high}
+      - {figure: "Bloomberg Billionaires Index ~$203B (Dec-2025)", label: "Wikipedia — Bernard Arnault", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2025-12", confidence: high}
+      - {figure: "deployable anchor: ~$130B — 63% LVMH voting (Agache family) + serial acquirer", label: "kestrel board.yaml bernard-arnault deployable", url: "attention/board.yaml", as_of: "2026-07-25", confidence: med}
+  operating:
+    value: "LVMH (chairman + CEO) — FY2025 revenue €80.807B (~$88B), net profit €10.878B; off the kestrel board (luxury, not AI/compute)"
+    sources:
+      - {figure: "LVMH FY2025 revenue €80.807B, net profit €10.878B", label: "Wikipedia — LVMH", url: "https://en.wikipedia.org/wiki/LVMH", as_of: "2025-12", confidence: high}
+      - {figure: "chairman and chief executive officer of LVMH", label: "Wikipedia — Bernard Arnault", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2026-07", confidence: high}
+  deployed:
+    value: "Tiffany & Co. (~$16.2B announced Nov-2019, closed Jan-2021 at ~$131.50/share after a pandemic-era dispute); Christian Dior full-line integration (2017); Bulgari (50.4% of family shares, ~$5.2B, 2011) — a serial luxury-house acquirer, though no new deal surfaced this pass"
+    sources:
+      - {figure: "Tiffany & Co. acquisition ~$16.2B announced Nov-2019, closed Jan-2021 ~$131.50/share after pandemic-related dispute", label: "Wikipedia — Bernard Arnault", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2021-01", confidence: high}
+      - {figure: "Bulgari: LVMH acquired 50.4% of family shares, total transaction ~$5.2B (2011)", label: "Wikipedia — Bernard Arnault", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2011", confidence: high}
+  in:
+    value: "LVMH dividends + equity value accruing to the Agache/family holding (49.77% of shares, Dec-2025); no other personal inflow found this pass"
+    sources:
+      - {figure: "Arnault family: 49.77% of LVMH shares, 65.89% of votes (Dec-31-2025 infobox)", label: "Wikipedia — LVMH", url: "https://en.wikipedia.org/wiki/LVMH", as_of: "2025-12", confidence: high}
+  out:
+    value: "M&A capital into LVMH acquisitions (Tiffany ~$16.2B, Dior, Bulgari ~$5.2B) — financed primarily through the LVMH balance sheet rather than Arnault's personal purse directly"
+    sources:
+      - {figure: "LVMH-financed acquisitions (Tiffany, Dior, Bulgari) — financing structure (corporate balance sheet vs personal capital) not itemized in the fetched sources", label: "Wikipedia — Bernard Arnault / LVMH", url: "https://en.wikipedia.org/wiki/Bernard_Arnault", as_of: "2026-07", confidence: low}
+
+optionality:
+  value: "free — Agache/Pilinvest structure locks in Arnault family control at 65.89% of LVMH VOTES (49.77% of shares, Dec-2025), long-term and unthreatened; the deployable anchor's '63%' is a close prior-period read of the same lock"
+  sources:
+    - {figure: "Arnault family (49.77% of shares, 65.89% of votes) as of Dec-31-2025", label: "Wikipedia — LVMH", url: "https://en.wikipedia.org/wiki/LVMH", as_of: "2025-12", confidence: high}
+
+gravity:
+  value: "near-zero on the kestrel board — LVMH is luxury goods, not AI/compute, and sits entirely off-board. His relevance here is pure capital scale + serial-acquirer pattern, not AI gravity. LVMH's own ~€80.8B/yr revenue economy is real but outside kestrel's lens."
+  sources:
+    - {figure: "LVMH is not a board-listed AI/hyperscaler node; FY2025 revenue €80.807B is a luxury-sector figure", label: "Wikipedia — LVMH + kestrel board.yaml bernard-arnault gloss", url: "attention/board.yaml", as_of: "2026-07-25", confidence: high}
+
+notes: "Honesty flag per task framing: AI gravity here is essentially zero — tracked for capital/optionality completeness, not as an AI-lens actor. LVMH revenue EUR->USD conversion is approximate (~1.09 EUR/USD, not independently fetched this pass — confidence: low on the USD figure specifically). Financing split (LVMH balance sheet vs Arnault personal capital) for past acquisitions is inferred, not sourced — flagged low."

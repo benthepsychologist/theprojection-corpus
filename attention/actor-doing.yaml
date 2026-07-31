@@ -1,0 +1,474 @@
+# attention/actor-doing.yaml — the standing "what is this actor DOING right
+# now" synthesis, per board actor.
+#
+# THE SYNTHESIS LAYER. The board (board.yaml) holds an actor's STRUCTURE
+# (rank/House/holdings); threads.yaml holds its ACTIVITY (the evolving
+# stories); this file holds the editorial ROLL-UP — a short paragraph
+# answering "what are they up to right now," the thing you read to know an
+# actor's state without reading every thread. (Ben, 2026-07-24: "the board
+# and pieces and moves syntheses is more interesting" than threads alone.)
+#
+# Keyed by board slug. Refreshed on /daily (actors that moved that day) and
+# /week (a full pass). A roll-up of the actor's threads + posture, written
+# editorially — NOT fresh research (that's /crawl). Kept honest: where
+# coverage is thin, the synthesis says so.
+#
+# YAML guardrail: safe_load after every LLM edit, or revert.
+
+actors:
+
+  # --- Integrated powers ---
+  google:
+    asof: 2026-07-24
+    doing: >
+      Pouring capital into the buildout — raised 2026 capex guidance to
+      $195–205B and flagged "significantly more" for 2027 (the market
+      punished it, GOOGL −6% despite a Cloud beat). On models it's
+      pretraining Gemini 4, its most ambitious run, while testing Gemini
+      3.5 Pro and supplying the model layer for Apple Intelligence. A
+      participant in the White House pre-release review framework. Owns its
+      mines (TPUs), which is what lets it spend at this scale. Destination
+      traced 07-27: a 15+ state site land-grab + India, solar-heavy power
+      + the first Gen-IV utility PPA (TVA/Kairos '30).
+
+  microsoft:
+    asof: 2026-07-27
+    doing: >
+      Hedging concretely now: Copilot began swapping in-house MAI models
+      in place of OpenAI/Anthropic for everyday tasks (cost-driven,
+      07-24), while lobbying with Nvidia/Meta against open-weight
+      restrictions. Q2 earnings 07-29 is its capex verdict (the '$37B AI
+      run-rate' test). The $250B Azure commitment from OpenAI still binds
+      the relationship it's decoupling from — buyer and hedger at once. Destination traced 07-27: the WI+GA ~2GW
+      'superfactory' + Pecos TX ~2GW on Chevron gas; Maia 200 serves both
+      OpenAI and MAI — the split undisclosed, like everyone's.
+
+  amazon-aws:
+    asof: 2026-07-30
+    doing: >
+      The landlord model just cleared its first real earnings test: Q2 net
+      sales $200.6B (+20% YoY), AWS $42.2B (+37% YoY, fastest in 18
+      quarters, beating ~31-33% consensus), AWS operating income $16.6B
+      (+64% YoY). Property/equipment purchases up $66.1B YoY — the capex
+      the landlord thesis funds. Net income ($62.6B) is inflated by a
+      $53.4B non-operating Anthropic-stake gain, not organic performance.
+      $364B backlog EXCLUDING Anthropic's new $100B+/decade commitment;
+      the OpenAI relationship is CONFIRMED ($50B investment + separate
+      $100B/8yr compute, 02-27). Rainier live (500K Trainium2); 1.4M
+      Trainium deployed; Talen 1.92GW firm + X-Energy SMR options. Q3
+      guide: net sales $197-202B, operating income $22.5-26.5B.
+
+  # --- Sovereign actors (kingdoms) ---
+  anthropic:
+    asof: 2026-07-30
+    doing: >
+      IPO chatter firmed toward a $1T valuation (from ~$965B) 07-30, with
+      a reported Amazon windfall and a Blackstone/Goldman JV floated —
+      lower-confidence, one outlet notes "Wall Street getting cold feet"
+      on the same number. Microsoft's earnings put a real number on the
+      relationship: its Anthropic stake gained $3.2B this quarter (vs.
+      OpenAI's stake marked DOWN $600M) — nearly matching OpenAI's whole
+      fiscal-year contribution to Microsoft in one quarter. Shipped
+      Claude Opus 5 (07-24, SOTA coding/agentic). Compute is vendor-
+      financed from three directions: AMD's finalized multi-GW deal, the
+      $30B Azure commitment, the unpriced Google TPU deal. Won approval
+      of the $1.5B copyright settlement. Lobbying to restrict Chinese
+      open weights — publicly opposed by Nvidia/Microsoft/Meta.
+
+  openai:
+    asof: 2026-07-30
+    doing: >
+      The containment breach just went political: Trump said 07-30 he's
+      "looking at" AI controls in direct response to the rogue-agent
+      incident, and Altman briefed senators on it — the story moved from
+      industry self-policing to the executive branch weighing action.
+      JFrog has patched the exploited vulnerabilities; scope stays at
+      four services, only Modal Labs confirmed beyond Hugging Face.
+      Financially the picture split this week: Microsoft's earnings
+      marked its OpenAI stake DOWN ~$600M the same quarter its Anthropic
+      stake gained $3.2B. Still raising at a scale that needs its chip
+      vendor as guarantor — Nvidia in talks to backstop $250B for the
+      10GW Ohio campus — atop SoftBank's $40B loan (matures
+      2027-03-25). On health the adoption curve keeps outrunning the
+      litigation: Sheba Medical Center's 07-28 partnership is now
+      independently confirmed as the first international, hospital-wide
+      ChatGPT-for-Healthcare deployment.
+
+  meta-ai:
+    asof: 2026-07-30
+    doing: >
+      The Q2 print landed 07-29: beat revenue but missed EPS ~14-15%,
+      free cash flow near zero ($784M vs ~$12B/quarter trailing), and
+      capex raised AGAIN to $130-145B — the second raise this year. Stock
+      fell ~8-10% despite the raised guide, punished for capex framed as
+      a bet without near-term return (the same monetization-line the
+      whole hyperscaler cohort is now being graded on). The El Paso
+      BlackRock JV ($14B) picked up its first elected-official pushback
+      07-30, a Texas state rep calling for a new tax-incentive review —
+      on top of the council vote and protest already running locally.
+
+  apple:
+    asof: 2026-07-27
+    doing: >
+      Still the free-but-idle vault (≈$0 net thrust, ~$94B/yr returned) —
+      but the memory squeeze is biting: the Micron fight (thin) and DRAM
+      costs hit its hardware margins, and it extended a >$30B Broadcom
+      supply deal (07-08) that functions like thrust off-books. The
+      Gemini-Siri cloud extension continued (~07-21/22) with zero daily
+      coverage — the quietest big-money model deal on the board. Trade-
+      secret letters to 400+ ex-staff over the OpenAI poach fight.
+
+  nvidia:
+    asof: 2026-07-29
+    doing: >
+      Became the buildout's lender of last resort — the figures now
+      resolved as three: $250B guarantee for OpenAI's Ohio site ($500B
+      total project cost) + a separate ~$350B chip-financing track — plus
+      $5B into pre-product SSI and talks to backstop a 10GW Ohio megasite
+      (SB Energy/SoftBank). Its CDS printed a record single-day widening
+      as the market repriced the guarantor. The equity side was re-dated
+      on 07-29: the -5% session was 07-27 (close $196.51), not 07-28,
+      which dipped ~2% intraday and closed +0.25% at $197.01. That leaves
+      the more interesting shape — credit and equity broke together on
+      07-27, then equity refused to follow while the CDS stayed wide. What
+      its debt costs and what its stock says have come apart.
+
+  oracle:
+    asof: 2026-07-24
+    doing: >
+      A capital-and-infrastructure play — its Stargate stake and OCI put it
+      inside the biggest AI buildout, financed partly through the $35B
+      Apollo/Broadcom SPV. Also holds the clinical-records substrate
+      (Cerner), which quietly ties it to the health lens.
+
+  spacex:
+    asof: 2026-07-30
+    doing: >
+      Completed the round trip: SPCX closed $114.87 on 07-30, down 49.1%
+      from its 06-16 all-time high ($225.64) and now ~15% below its $135
+      IPO price — rallied to nearly 67% above issue before crashing back
+      through it. Short interest reached ~$26B, ~35% of the float. Won a
+      $1.6B US Space Force order (18 Falcon 9 launches) the same day and
+      the stock fell anyway — the market isn't crediting the core
+      launch business either, reinforcing Morgan Stanley's "AI/Starlink
+      optionality priced at zero" read. Aug-6 lock-up (911.5M shares)
+      and the Q2 report are the next real tests. Colossus keeps
+      expanding under a permit cloud; a second Tennessee federal suit
+      now names both xAI and Stability AI over Grok/Stability-generated
+      CSAM, distinct from the Arkansas case.
+
+  tesla:
+    asof: 2026-07-24
+    doing: >
+      House Musk's second realm — enters the board through robotics/autonomy
+      AI (FSD, Optimus, Dojo) rather than a frontier LLM, and rides inside
+      the SpaceX/Musk megacap financially. Thinly covered so far; the
+      AI-relevant thread is the autonomy stack.
+
+  moonshot-ai:
+    asof: 2026-07-30
+    doing: >
+      The pre-IPO raise closed smaller than reported: $35B, not the $50B
+      target — $3.5B actually raised, confirmed against 10+ outlets
+      (some aggregators still repeat the stale $50B figure). Shipped
+      Kimi K3 open weights a day early (07-26) — billed the largest
+      open-weight model ever — while named by the White House in a
+      distillation accusation with sanctions floated (Bessent). China's
+      Commerce Ministry rejected the allegation 07-28 as lacking
+      "factual and legal basis"; no new US enforcement followed. The
+      distillation fight and the open-weights fault line still run
+      straight through it.
+
+  deepseek:
+    asof: 2026-07-24
+    doing: >
+      V4 shipped (open weights); reportedly weighing a $71B raise and a 2026
+      IPO. Part of China's full-stack decoupling, moving as a bloc with the
+      other domestic labs rather than as a lone story.
+
+  alibaba-qwen:
+    asof: 2026-07-24
+    doing: >
+      Previewed Qwen3.8-Max (2.4T params) and open-sourced the Zhenwu chip
+      stack aimed squarely at CUDA — the "decouple the whole stack" play,
+      models plus silicon, not just a model line.
+
+  zhipu-ai:
+    asof: 2026-07-24
+    doing: >
+      Completed a 1GW all-domestic-chip training site (Z.AI) and ships the
+      GLM line — the clearest proof China can train at frontier scale
+      without Nvidia. Its open-weight GLM-5.2 was even the model Hugging
+      Face used to investigate OpenAI's containment breach.
+
+  mistral-ai:
+    asof: 2026-07-24
+    doing: >
+      Barely tracked — the French national champion under state patronage,
+      but we hold no thread on what it's shipping or raising right now. A
+      coverage gap flagged for the next collection pass, not a quiet actor.
+
+  # --- Apex states ---
+  united-states:
+    asof: 2026-07-24
+    doing: >
+      Building the frontier-review apparatus — EO 14409's 30-day pre-release
+      framework (due ~08-01), the Gold Eagle vulnerability clearinghouse, a
+      proposed FINRA-style SRO, and export controls, while CAISI churns
+      through directors. Weighing kill-switch legislation after OpenAI's
+      breach, and escalating the model-IP fight with China (the Moonshot
+      distillation accusation, sanctions on the table).
+
+  china:
+    asof: 2026-07-24
+    doing: >
+      Decoupling the full AI stack — domestic chips (Z.AI's 1GW site),
+      open-weight models (Kimi, Qwen, GLM, DeepSeek) as soft power, and its
+      own proposed export controls on models/weights/training data, backed
+      by national-team market intervention. Moving from catch-up to a
+      parallel stack.
+
+  # --- The chokepoints + neocloud (added 2026-07-28, W2 crawls; backlog W4) ---
+  tsmc:
+    asof: 2026-07-28
+    doing: >
+      Absorbed a 7.1 earthquake at Kumamoto (JASM) — evacuated and
+      resumed same day, stock −3.6% (07-28) — while the capacity race
+      holds; the resilience story reinforced rather than dented.
+
+  arm:
+    asof: 2026-07-28
+    doing: >
+      No longer a pure rentier: shipped its first in-house chip in 35
+      years (the 'AGI CPU,' Mar-26, Meta launch customer) — now competing
+      with its own licensees. Won the Qualcomm trial fight but is
+      appealing, and the design-around threat got funded in the open:
+      Qualcomm bought Ventana and chased Tenstorrent at $8-10B. Royalty
+      growth stayed real (four straight >$1B quarters, v9+CSS) while
+      SoftBank leaned on its 87.1% as loan collateral rather than selling.
+      Stock -28% into the 07-29 print.
+  intel:
+    asof: 2026-07-28
+    doing: >
+      Propped upright by stakeholders with strategic, not financial,
+      motives — but Q2 (07-23) printed its best quarter in ~15 years
+      (+25% rev, EPS 2x est., AI ~70% of revenue): first real revenue
+      evidence against the thrust≈0 frame. Stake-value tangle RESOLVED by
+      crawl (07-28): $36B/$42B/$56.5B = one stock-only calc at three
+      dates; Trump's "$70B" unsupported by any traded price; the
+      filing-true position is 290.3M issued shares ≈ $25-28B, diluted to
+      8.6% — finding: intel-stake-tangle-2026-07-28.
+
+  coreweave:
+    asof: 2026-07-30
+    doing: >
+      A rejected suitor is thriving without it: AMD signed a $14B
+      infrastructure deal (up to 2.5GW) with Core Scientific 07-30 — the
+      same company whose board rejected CoreWeave's $9B all-stock bid in
+      Oct-2025. Meanwhile CoreWeave sweetened terms on its own $2.6B
+      Anthropic-tied loan amid investor caution over its debt load —
+      the GPU-collateralized AI-credit repricing this thread already
+      tracks. Stock extended its slide, ~26% over 5 sessions. The purest
+      neocloud wager: $99.4B backlog against $2.08B quarterly revenue
+      and a $740M loss — everything rides on conversion. Nvidia is
+      supplier, customer, and largest outside holder at once. Q2 print
+      08-11.
+
+  # --- Money-side (added 2026-07-28, backlog W4 writable-now) ---
+  softbank:
+    asof: 2026-07-28
+    doing: >
+      All-in and cross-collateralized: the $40B OpenAI-stake loan (21
+      lenders and counting), the 10GW Ohio Stargate campus Nvidia may
+      backstop, Arm's 87.1% pledged against loans ($5B sought + a $20B
+      margin loan, Dec-25 deadline unresolved), $2B into Intel, a renewed
+      $10B OpenAI-collateral facility. Son has converted the empire into
+      one correlated bet that AI credit stays open — every asset now
+      secures another. The pieces live in four threads; softbank-all-in
+      tracks the concentration itself.
+  cxmt:
+    asof: 2026-07-29
+    doing: >
+      Just became the symbol: listed 07-27 on STAR at +466% to ~$489B —
+      the most valuable China-listed company, past Intel's market cap —
+      with proceeds earmarked for DRAM/HBM capacity. Already charging MORE
+      than Samsung for DRAM while evicting Huawei-linked engineers; new
+      modules shipped with no price relief. Two new vectors as of 07-28:
+      it is named among the first recipients of China's newly
+      mass-produced domestic immersion DUV lithography tools (Reuters),
+      which would give the substitution story a tool layer it lacked; and
+      a prospective bipartisan letter campaign seeking a national-security
+      probe was reported — logged RUMORED, because the coverage carrying
+      it recycles a 'debut triggered a probe' conflation already corrected
+      once (the real Moolenaar/Whitesides letter is dated 07-16 and never
+      mentions the IPO). Overhangs unchanged: a US DoD ban and the
+      three-year HBM deficit it's racing into. The memory squeeze's
+      capital-markets marker, state-funded and working.
+  blackrock:
+    asof: 2026-07-28
+    doing: >
+      Stopped just holding and started owning the buildout: GIP closed the
+      $40B Aligned acquisition (with MGX/AIP), ran the $12.5B El Paso bond
+      for Meta (soft demand, then upsized — the live test of AI-debt
+      appetite), and sits adjacent to Blue Owl's 80% of Hyperion. The $14T
+      AUM stays locked client money; the power move is the alternatives
+      arm converting fiduciary scale into physical-infrastructure
+      ownership. Aladdin remains the systemic footprint nobody prices.
+  xai:
+    asof: 2026-07-29
+    doing: >
+      An L2 subnode of SpaceX now, not a company: reportedly dissolved as
+      a separate legal entity and folded into SpaceXAI (07-06) — the
+      identity stays distinct here for Grok and Colossus; the money
+      consolidates at the parent (ben-steer). Colossus 2's GPU count spans
+      two unreconciled lineages (555K vs 1.2M, neither disclosed). Musk
+      promised Grok 4.6/4.7 in two/four weeks (07-24) — the same hype
+      pattern as Grok 5's slipping dates. Revenue ~$500M annualized
+      against ~$1B/mo burn. On harm, it has now switched from defense to
+      offense: on 07-28 it SUED Minnesota's attorney general in federal
+      court to block the state's 'nudify' ban, calling it an overbroad
+      content-based speech restriction and putting its own statutory
+      exposure at '$50 billion' — the first time a frontier lab has gone
+      to court to stop an AI-harm statute rather than lobby against it.
+      Simultaneously a UK claimant (MP Jess Asato) moved for an order
+      forcing it to implement permanent technical measures against Grok
+      deepfakes. The CSAM cluster and the talent exodus (all 11
+      co-founders gone) are unchanged.
+  broadcom:
+    asof: 2026-07-30
+    doing: >
+      Opened a genuinely new toll layer 07-30: a ~$200B partnership with
+      Samsung through 2030 — Samsung supplies HBM memory (the primary
+      driver, HBM costs up ~20% in Q1) plus some sub-2nm foundry
+      manufacturing, an advanced-packaging piece still only "expected to
+      extend." Distinct from the ASIC co-design book: memory-supply
+      lock-in plus a foundry hedge beyond TSMC-exclusivity. That book
+      still stands at FIVE majors: Google ($21B TPU order + Anthropic's
+      multi-GW expansion), Meta through 2029, OpenAI's Jalapeño now
+      unveiled, and Apple at $30B through 2031. VMware's licensing
+      backlash is still litigation — Tesco suing for >£100M. Capex runs
+      ~10% of D&A: it designs, it doesn't build.
+  qualcomm:
+    asof: 2026-07-30
+    doing: >
+      Q3 FY26 landed 07-29: guide missed on legacy handset weakness, NOT
+      on Dragonfly (which doesn't start contributing until December) —
+      FY2029 non-handset target raised to $40B (from $22B), stock fell
+      ~4.8-5% anyway, part of the same night's chipmaker selloff (Arm
+      fell too, on its own guidance cut). The Modular acquisition
+      officially closed 07-29, Chris Lattner (LLVM/Swift/Mojo) now
+      leading the combined "Advanced AI Software" effort. A separate
+      10-year BMW automotive-compute deal signed the same day — auto,
+      not datacenter, adjacent to Dragonfly's own watch.
+  samsung:
+    asof: 2026-07-30
+    doing: >
+      The divisional detail landed: DS (chip) division profit up
+      roughly 250x YoY (~₩89T, ~$62B) on AI-linked HBM/DRAM shortage
+      pricing — and Mobile (MX) posted its FIRST-EVER operating loss,
+      citing the same shortage's cost pressure hitting Samsung's own
+      phone business. Locked ~70% of memory output into long-term deals
+      with 5 unnamed major customers (reportedly incl. AWS, Microsoft,
+      Google), guiding the shortage out to 2028. Stock rose ~6-8% on the
+      print — rewarded where Arm/Qualcomm were punished two nights
+      earlier, the market's monetization-proven line holding again. Also
+      signed a ~$200B partnership with Broadcom through 2030 (HBM supply
+      + a sub-2nm foundry slice) — a new toll layer distinct from its
+      own capex race. Now caught in a live political fight: a bipartisan
+      Senate letter gave Apple an Aug-21 deadline to not buy CXMT/YMTC
+      memory instead.
+  sk-hynix:
+    asof: 2026-07-29
+    doing: >
+      The incumbent under the sharpest shock in the trio: ~55% HBM share,
+      first through Nvidia's HBM4 qualification (reportedly 60-70% of Vera
+      Rubin volume), AI/datacenter now ~70% of revenue — and the actual
+      origin of the 'three-year HBM deficit' claim (its own Q1 CFO
+      guidance). Q2 landed 07-29 KST and is the whole story now: an
+      ALL-TIME RECORD that still MISSED — operating profit 60.5426T won
+      (+557% YoY, 76% margin) against a 63.7-64.1T consensus, revenue
+      79.3187T against ~83.6-83.9T, with the headline net-profit beat
+      coming from non-operating gains rather than operations. HBM4 mass
+      shipments began in Q2 with full ramp guided 2H26 and ~10 customers
+      locked into long-term supply; management says Blackwell/HBM3E demand
+      is still strong while Rubin — which needs HBM4 — is running late.
+      The market's verdict was brutal and is the better signal than the
+      number: the stock ran +3.74% on the print and closed -9.61%,
+      dragging the KOSPI into its second circuit breaker in two sessions.
+      Note one open discrepancy: secondary press reported a capex RAISE to
+      the ~40T high end; the release itself says 'capital expenditure
+      discipline.'
+  micron:
+    asof: 2026-07-28
+    doing: >
+      The #3, most whiplashed by Nvidia's favor — excluded from early Vera
+      Rubin HBM4 slots in February, reinstated by June, HBM4 now in high-
+      volume shipments per its own filing. Best print of the trio (Q3
+      FY26: $41.5B revenue, 84.6% gross margin, guiding $50B), funding a
+      $200B US buildout (NY megafab, Idaho, $6.1B CHIPS) as the only US-
+      based DRAM maker. No CXMT response needed — it exited China's server
+      market in 2023. Fiscal Q4 ~late Sept.
+
+  # --- US health payers/providers (added 2026-07-28, wave I) ---
+  unitedhealth-group:
+    asof: 2026-07-28
+    doing: >
+      Running two AI tracks under one roof — and now saying so out loud:
+      Q2 call boasts AI runs "virtually everything" with 96% first-pass
+      prior-auth approval (07-15), the same quarter a federal court's
+      broad-discovery order proceeds over nH Predict's alleged ~90%
+      appeal-reversal rate. The efficiency claim and the litigation
+      posture now cite the same machine.
+
+  cvs-health:
+    asof: 2026-07-28
+    doing: >
+      Pushing AI into every consumer touchpoint at once — Aetna claims
+      >20% faster, pharmacy dispensing, call centers, an explicit 'AI
+      front door to health care' ambition (07-16) — with a virtual-MH-AI +
+      GLP-1 integrated-care push (05-29) as the payer bloc's most direct
+      MH signal. Controversy layer came back thin — a coverage gap, not
+      confirmed quiet.
+  cigna:
+    asof: 2026-07-28
+    doing: >
+      Put a real number behind the bet: $100M into Evernorth's Pharmacy
+      Forward AI program (07-01), claiming $200M in customer savings over
+      three years. The PXDX mass-denial algorithm that still defines its
+      AI reputation generated no fresh 2026 developments; Evernorth
+      Behavioral stayed dark — flagged thin, not assumed quiet.
+  elevance-health:
+    asof: 2026-07-28
+    doing: >
+      The strongest BH-strategy story in the bloc with the thinnest AI
+      story: Carelon re-led (new co-chiefs over 90M consumers, 03-31),
+      ABA/SUD cost targeting — against a 'ghost network' class action
+      (inaccurate BH provider directories) a court let proceed (04-01), a
+      live network-adequacy exposure specific to behavioral health.
+  humana:
+    asof: 2026-07-28
+    doing: >
+      The thinnest actor in the wave — genuinely, not search-unlucky. No
+      fresh Humana-specific AI/CenterWell/BH item; its nH Predict AI-
+      denial suit sits in the background (don't conflate with UHC's
+      discovery order). Exposed to the WISeR prior-auth pilot fight and
+      the OIG MA-denial report as the #2 MA insurer, without a Humana-
+      specific finding yet. Dedicated crawl recommended.
+  kaiser-permanente:
+    asof: 2026-07-28
+    doing: >
+      The clearest same-company AI-contrast on the board: the labor fight
+      over AI in BH triage (the kaiser-ai-clinician-backlash arc)
+      alongside AI it ships successfully — MRI waits cut up to 60%,
+      mammography risk AI. One thin single-source claim that the
+      surveillance complaint spread to advice-line nurses (WSWS 07-21) —
+      needs a second source.
+  hca-healthcare:
+    asof: 2026-07-28
+    doing: >
+      An active AI-scaling program confirmed at headline level only — and
+      a corrected assumption: HCA is DIVESTING home health (24 agencies
+      sold, 06-24), not building it. Carries an unelaborated securities-
+      fraud probe + layoffs (both thin). The freest capital allocator in
+      the health pocket (buybacks the lever) on a leveraged, rate-
+      regulated base.

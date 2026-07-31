@@ -1,0 +1,73 @@
+# Bundle — node posture + capital-flow: character-ai / Character.AI (2026-07-28)
+# axes_num rollout wave G (small mental-health-AI actors, 8-actor batch).
+# Recipe (Ben's spec for the wave): weight = cumulative VC raised, $B (private
+# co); thrust = deployment run-rate over the last ~12mo (compute buildout,
+# hiring/expansion, new commitments), $/yr; gravity = attributable
+# dependent-economy $/yr in USER-IN-CARE terms, NOT gross MAU headline count —
+# companion-chat apps are low-dollar gravity by design, ~$0.01-1B/yr expected,
+# no users x arbitrary-ARPU inflation; optionality = how free the commanded
+# capital is (VC-backed private co -> almost always constrained absent
+# evidence otherwise). Buybacks n/a ($0), skipped. Method: WebSearch budget
+# was exhausted this session; fell back to WebFetch against Wikipedia +
+# DuckDuckGo HTML search-result pages per repo convention.
+node: character-ai
+name: "Character.AI"
+pocket: health   # closest existing board pocket; this is the mental-health/companion-app vertical, not clinical health
+asof: 2026-07-28
+posture:
+  value: "contracting / under pressure"
+  basis: "Founders (Shazeer, De Freitas) departed to Google Aug-2024 in a ~$2.7B license+talent deal, not a straight equity acquisition; new CEO Karandeep Anand (ex-Meta) took over ~mid-2025 and pivoted strategy from AGI ambitions to entertainment/role-play; company reported (Aug-2025) to be exploring a sale or new funding round as compute costs mount, alongside a prior ~5% workforce reduction; reported valuation has been described as falling from $5-10B (early 2025 chatter) toward ~$1B (2026) amid the compute-cost pressure — this specific decline figure is aggregator-sourced, not a primary filing, so held at low confidence. Layered on top: an under-18 ban rolled out Nov-2025 and active wrongful-death litigation (Setzer, Peralta families) plus a May-2026 Pennsylvania AG suit over unlicensed practice of medicine — real regulatory/legal headwind, noted here rather than fully modeled."
+  sources:
+    - {figure: "Google hired co-founder Noam Shazeer (then CEO) and entered a non-exclusive license agreement for Character.AI's tech, Aug 2024", label: "Wikipedia — Character.ai", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2024-08", confidence: high}
+    - {figure: "$2.7B cash paid by Google to license tech and hire ~20% of staff; not ongoing equity/ownership", label: "DuckDuckGo HTML search aggregation (multiple outlets)", url: "https://html.duckduckgo.com/html/?q=Character.AI+total+funding+raised+%24193+million+Google+%242.7+billion+deal+details", as_of: "2024-08", confidence: med}
+    - {figure: "Karandeep Anand (ex-Meta VP) became CEO, took over ~June 2025, shifted focus from AGI to role-play/entertainment", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+2026+CEO+Karandeep+Anand+funding+compute+spend+users", as_of: "2025-06", confidence: med}
+    - {figure: "Character.AI in talks to sell or raise new funding as chatbot compute costs mount; prior ~5% workforce reduction; ~20M MAU at the time", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+%22talks%22+sell+OR+%22new+funding%22+2026+compute+costs", as_of: "2025-08", confidence: med}
+    - {figure: "reported valuation range $5-10B (early 2025) declining toward ~$1B (2026) amid rising compute costs", label: "DuckDuckGo HTML search aggregation, unconfirmed primary source", url: "https://html.duckduckgo.com/html/?q=Character.AI+compute+deal+cloud+GPU+spend+2025+2026+Google+Cloud+contract", as_of: "2026", confidence: low}
+    - {figure: "Pennsylvania Dept. of State / Board of Medicine sued Character.AI over unlicensed-practice-of-medicine chatbots", label: "Wikipedia — Character.ai (attrib. Norton Rose Fulbright)", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2026-05", confidence: med}
+    - {figure: "under-18 ban on chatbot creation/interaction announced, effective 2025-11-25", label: "Wikipedia — Character.ai", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2025-10", confidence: high}
+thrust:
+  value: 0.03
+  basis: "No primary source discloses a 12mo compute-buildout / hiring / new-commitment figure. No new funding round has closed as of this writing (talks reported since Aug-2025, unresolved) so any incremental deployment is most plausibly being funded out of ARR (~$50M end of 2025) rather than fresh capital, consistent with the reported cost pressure and a prior ~5% headcount cut rather than expansion. $0.03B/yr is a rough, unconfirmed estimate proxying modest incremental compute/infra spend to serve a growing MAU base — flagged low confidence / estimate, uncited to a hard figure."
+  sources:
+    - {figure: "no new funding round or capex figure disclosed; exploring sale/raise as compute costs mount; prior ~5% workforce reduction", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+%22talks%22+sell+OR+%22new+funding%22+2026+compute+costs", as_of: "2025-08", confidence: low}
+    - {figure: "no compute/cloud contract or capex figure found for Character.AI independently (only Google's own infra spend surfaced)", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+compute+deal+cloud+GPU+spend+2025+2026+Google+Cloud+contract", as_of: "2026", confidence: low}
+capital:
+  available:
+    value: "~$0.19B cumulative VC raised ($43M seed 2021 + $150M Series A Mar-2023, a16z-led, ~$1B post valuation); the Aug-2024 $2.7B Google payment was a license+talent fee that appears to have largely cashed out existing investors and redistributed ownership to employees, not fresh operating capital raised by the company — excluded from weight on that basis, noted here for context"
+    sources:
+      - {figure: "$43M seed (2021) + $150M Series A (Mar 2023, a16z-led, ~$1B valuation)", label: "Wikipedia — Character.ai", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2023-03", confidence: high}
+      - {figure: "total pre-Google funding $193M across funding rounds", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+total+funding+raised+%24193+million+Google+%242.7+billion+deal+details", as_of: "2024", confidence: med}
+      - {figure: "with the Google deal, Character.AI bought out its investors and distributed ownership among employees", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+total+funding+raised+%24193+million+Google+%242.7+billion+deal+details", as_of: "2024-08", confidence: low}
+  operating:
+    value: "~$0.05B/yr ARR (subscription revenue via c.ai+ at $9.99/mo), up from ~$32.2M (2024) and ~$15.2M (2023); no operating-expense/burn figure disclosed"
+    sources:
+      - {figure: "Character.AI projected to hit $50M ARR at end of 2025; hit $30M annualized in July 2025", label: "DuckDuckGo HTML search aggregation (attrib. Sacra)", url: "https://html.duckduckgo.com/html/?q=Character.AI+revenue+2025+ARR+subscription", as_of: "2025-12", confidence: med}
+      - {figure: "2024 estimated revenue $32.2M ARR, up from $15.2M in 2023", label: "DuckDuckGo HTML search aggregation (attrib. LATKA)", url: "https://html.duckduckgo.com/html/?q=Character.AI+revenue+2025+ARR+subscription", as_of: "2026-07-03", confidence: low}
+  deployed:
+    value: "no disclosed capex/infra buildout figure; presumed funded from ARR given no closed new funding round — see thrust"
+    sources:
+      - {figure: "no compute/capex figure found independent of Google's own infra spend", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+compute+deal+cloud+GPU+spend+2025+2026+Google+Cloud+contract", as_of: "2026", confidence: low}
+  in:
+    value: "VC rounds (seed + Series A, a16z-led) historically; Aug-2024 $2.7B Google license+talent payment (structured as buyout of investors, not new company capital); no new round closed since"
+    sources:
+      - {figure: "$150M Series A, a16z-led, Mar 2023", label: "Wikipedia — Character.ai", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2023-03", confidence: high}
+      - {figure: "$2.7B Google licensing/talent deal, Aug 2024", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+total+funding+raised+%24193+million+Google+%242.7+billion+deal+details", as_of: "2024-08", confidence: med}
+  out:
+    value: "ARR reinvested into product/compute (no figure); ~5% workforce reduction reported (cost-cutting, not deployment) prior to Aug-2025"
+    sources:
+      - {figure: "prior ~5% workforce reduction reported alongside sale/raise talks", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+%22talks%22+sell+OR+%22new+funding%22+2026+compute+costs", as_of: "2025-08", confidence: low}
+optionality:
+  value: "constrained"
+  basis: "Classic VC-backed private company profile pre-2024 (board/investor oversight, runway-dependent); post the Aug-2024 Google deal, reporting indicates the cap table shifted toward employee ownership after investors were bought out, but the company remains cash/runway-constrained — evidenced by its own reported exploration of a sale or new funding round as compute costs mount. No evidence of free/unconstrained capital at any point."
+  sources:
+    - {figure: "exploring sale or new funding round as compute costs mount (Aug-2025)", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+%22talks%22+sell+OR+%22new+funding%22+2026+compute+costs", as_of: "2025-08", confidence: med}
+    - {figure: "Google deal bought out investors and distributed ownership among employees", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+total+funding+raised+%24193+million+Google+%242.7+billion+deal+details", as_of: "2024-08", confidence: low}
+gravity:
+  value: 0.05
+  basis: "Reasoned in dependent-economy / user-in-care dollar terms, not gross MAU (platform reports ~45M active users / 75M+ downloads as of Sep-2025, tens of millions MAU into 2026 — NOT used directly). Grounded instead on the subscription economy that actually depends on the platform continuing to exist: c.ai+ ARR ~$50M/yr end of 2025 (~$0.05B), used here as the best available proxy for the attributable dependent economy since a true 'people relying on this for companionship/support' dollar figure isn't published. This likely understates true gravity somewhat (unpaid daily-active users who are emotionally dependent but not paying are a real but unquantifiable component; the wrongful-death/regulatory record suggests real dependency exists beyond the subscriber base) but a users x arbitrary-ARPU multiplication was explicitly avoided per the wave recipe. Held in the $0.01-1B/yr band as instructed."
+  sources:
+    - {figure: "~45M active users, 75M+ total downloads, Sep 2025", label: "DuckDuckGo HTML search aggregation", url: "https://html.duckduckgo.com/html/?q=Character.AI+revenue+2025+ARR+subscription", as_of: "2025-09", confidence: med}
+    - {figure: "c.ai+ subscription ARR ~$50M projected end of 2025", label: "DuckDuckGo HTML search aggregation (attrib. Sacra)", url: "https://html.duckduckgo.com/html/?q=Character.AI+revenue+2025+ARR+subscription", as_of: "2025-12", confidence: med}
+    - {figure: "wrongful-death lawsuits (Setzer, Peralta) and PA AG unlicensed-medicine suit indicate real user dependency/harm surface beyond paying subscribers, not separately dollarized here", label: "Wikipedia — Character.ai", url: "https://en.wikipedia.org/wiki/Character.ai", as_of: "2026-05", confidence: med}
+axes_num_estimate: { weight: 0.19, thrust: 0.03, gravity: 0.05 }  # agent-derive 2026-07-28 wave G
+notes: "Filed under pocket: health as the mental-health/companion-app vertical (board.yaml already lists character-ai as double_dependent under app-store + model-provider, no pocket set there — this bundle doesn't touch board.yaml). Biggest uncertainties: (1) thrust has no primary-source anchor at all — the $0.03B is a judgment estimate, not a cited figure, flagged low confidence throughout; (2) whether any of the $2.7B Google payment landed on Character.AI's own balance sheet vs. flowing entirely to bought-out investors/hired-away staff is unclear from secondary sources — treated as NOT part of weight/available capital here, which could understate weight if some portion was retained; (3) the 2026 valuation-decline figure ($5-10B -> ~$1B) is aggregator-sourced with no primary filing behind it, confidence low; (4) WebSearch was budget-exhausted for this session, so all research after the initial two queries used WebFetch against Wikipedia + DuckDuckGo HTML result pages rather than direct search — individual claims may reflect DDG's own summarization rather than the original outlet, so treat 'DuckDuckGo HTML search aggregation' sources as med/low confidence secondary attribution, not primary citations."

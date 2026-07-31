@@ -1,0 +1,55 @@
+# Bundle — node posture + capital-flow: anthropic / Anthropic (2026-07-26)
+# Extends board.yaml anthropic axis strings (no prior -axes bundle) with posture
+# + the 5-way capital-flow decomposition for the frontier-lab pocket.
+# Method: WebFetch primary sources (WebSearch exhausted). Private company —
+# funding rounds are officially announced (high confidence); revenue/burn are
+# NOT disclosed by Anthropic, so the run-rate is a kestrel-anchor estimate.
+node: anthropic
+name: "Anthropic"
+pocket: frontier-lab
+asof: 2026-07-26
+posture:
+  value: expanding
+  basis: "Series H $65B at $965B (May-2026) then confidential IPO filing (Jun 1 2026), stacked on multi-partner compute deals (Google 1M TPUs, Azure/Nvidia $30B)."
+  sources:
+    - {figure: "Series H $65B at $965B valuation — 'most valuable pure-play AI company'", label: "Wikipedia — Anthropic (attrib. Reuters)", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+    - {figure: "filed confidential IPO papers targeting fall 2026 debut", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-06", confidence: high}
+capital:
+  available:
+    value: "~$108.5B+ cumulative raised (Series E $3.5B -> F $13B -> G $30B -> H $65B); $965B valuation is the mark, not cash"
+    sources:
+      - {figure: "Series E $3.5B at $61.5B (Mar 2025)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2025-03", confidence: high}
+      - {figure: "Series F $13B at $183B (Sep 2025)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2025-09", confidence: high}
+      - {figure: "Series G $30B at $380B (Feb 2026)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-02", confidence: high}
+      - {figure: "Series H $65B at $965B (May 2026)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+  operating:
+    value: "revenue/burn NOT officially disclosed; kestrel anchor >$5B/yr GROSS run-rate, 300k+ business customers (Aug-2025, likely higher now)"
+    sources:
+      - {figure: "no annual revenue or run-rate disclosed by Anthropic", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026", confidence: med}
+      - {figure: ">$5B/yr GROSS run-rate revenue, 300k+ business customers", label: "board.yaml anthropic gravity (kestrel anchor)", url: "attention/board.yaml", as_of: "2025-08", confidence: low}
+  deployed:
+    value: "multi-$10B+ compute: Amazon $8B (Rainier), Google up to 1M TPUs (Oct-2025), Azure/Nvidia $30B (Nov-2025), Akamai $1.8B (May-2026), AMD 2GW"
+    sources:
+      - {figure: "Amazon $8B cumulative (AWS / Rainier)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2024", confidence: high}
+      - {figure: "Google up to 1M TPUs (custom hardware access)", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2025-10", confidence: high}
+      - {figure: "Microsoft Azure / Nvidia $30B computing capacity", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2025-11", confidence: high}
+      - {figure: "Akamai $1.8B cloud computing", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+      - {figure: "AMD 2GW compute + SpaceX/xAI Colossus data-center access", label: "board.yaml + Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: med}
+  in:
+    value: "funding rounds dominate ($65B H + $30B G within ~7 months) + revenue >$5B/yr run-rate"
+    sources:
+      - {figure: "$30B Series G (Feb) + $65B Series H (May) 2026", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+      - {figure: ">$5B/yr run-rate revenue", label: "board.yaml anthropic gravity", url: "attention/board.yaml", as_of: "2025-08", confidence: low}
+  out:
+    value: "compute drawdowns across Amazon/Google/Azure/Akamai; net burn not disclosed (the Amazon/Google stakes are partly compute-for-equity, i.e. circular)"
+    sources:
+      - {figure: "$8B Amazon + 1M Google TPUs + $30B Azure/Nvidia + $1.8B Akamai compute obligations", label: "Wikipedia — Anthropic", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: high}
+optionality:
+  value: "mixed — founder/board equity, no state; but heavily compute-earmarked and the Amazon/Google stakes are partly circular"
+  sources:
+    - {figure: "compute-for-equity from Amazon and Google; no state ownership", label: "Wikipedia — Anthropic + board.yaml", url: "https://en.wikipedia.org/wiki/Anthropic", as_of: "2026-05", confidence: med}
+gravity:
+  value: ">$5B/yr GROSS run-rate revenue, 300k+ business customers (Aug-2025, likely higher now)"
+  sources:
+    - {figure: ">$5B/yr GROSS run-rate, 300k+ business customers", label: "board.yaml anthropic gravity (kestrel anchor)", url: "attention/board.yaml", as_of: "2025-08", confidence: low}
+notes: "Biggest uncertainty: revenue AND burn are undisclosed — the >$5B run-rate is a kestrel-anchor estimate, not a filed figure; the confidential IPO could reset that. Cumulative-raised figure ($108.5B+ Wikipedia vs ~$120B board) differs by how the compute-backing is counted. How circular the Amazon/Google compute-for-equity loops are is the structural open question."

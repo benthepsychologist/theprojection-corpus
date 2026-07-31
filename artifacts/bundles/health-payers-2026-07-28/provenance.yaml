@@ -1,0 +1,91 @@
+# Bundle — crawl finding health-payers-2026-07-28
+artifact: artifacts/findings/health-payers-2026-07-28.md
+crawled_at: "2026-07-28T00:00:00Z"
+method: >
+  WebSearch was exhausted (session budget) before this crawl's first query
+  ran — zero WebSearch results obtained. Entirely Google News RSS
+  (news.google.com/rss/search, per-actor + per-topic queries) fetched via
+  WebFetch, plus a handful of direct publisher fetches. fiercehealthcare.com
+  (topic page), beckershospitalreview.com (article), and bhbusiness.com
+  (search) all returned 403 on direct WebFetch — one Becker's/Fierce hit
+  came through indirectly via a Bing News search page instead. Most Google
+  News redirect links resolve to headline+date+outlet reliably but resist
+  full-body extraction (the redirect needs JS Google's fetcher doesn't run
+  server-side) — items below are marked headline-only where the body could
+  not be confirmed.
+items:
+  # --- UnitedHealth Group / Optum ---
+  - {id: unh-ai-bots-calling, url: "https://news.google.com/rss/search?q=UnitedHealth+Optum+AI+when:90d", title: "UnitedHealth's $3B AI push has bots calling doctors", outlet: "Modern Healthcare", ts: "2026-06-19"}
+  - {id: unh-ai-employee-tracking, url: "https://news.google.com/rss/search?q=UnitedHealth+Optum+AI+when:90d", title: "UnitedHealth Tracks Workers' AI Use in Push to Transform Company", outlet: "Bloomberg", ts: "2026-05-15"}
+  - {id: optum-anthropic-becker, url: "https://www.beckershospitalreview.com/healthcare-information-technology/ai/optum-partners-with-anthropic/", title: "Optum partners with Anthropic", outlet: "Becker's Hospital Review", ts: "2026-07-15", note: "found via Bing News search; direct WebFetch of the URL itself 403'd"}
+  - {id: optum-anthropic-fierce, url: "https://www.fiercehealthcare.com/health-tech/tech-services-company-ust-integrates-anthropic-claude", title: "Anthropic bets bigger on healthcare with Optum tie-up, UST integration", outlet: "Fierce Healthcare", ts: "2026-07-14"}
+  - {id: optum-varshney, url: "https://news.google.com/rss/search?q=UnitedHealth+Optum+AI+when:90d", title: "UnitedHealth Group Optum Strengthens AI Leadership with Shobhit Varshney's Appointment", outlet: "Digital Health News", ts: "2026-07-18"}
+  - {id: unh-ai-discovery-order-1, url: "https://news.google.com/rss/search?q=naviHealth+nH+Predict+lawsuit+2026", title: "Federal Court Orders Broad Discovery Against UHC in AI Coverage Denial Lawsuit", outlet: "ArentFox Schiff", ts: "2026-04-23"}
+  - {id: unh-ai-discovery-order-2, url: "https://news.google.com/rss/search?q=naviHealth+nH+Predict+lawsuit+2026", title: "Court Allows Discovery Into Insurer's Use of AI to Deny Claims", outlet: "Hunton Andrews Kurth", ts: "2026-03-23"}
+  - {id: unh-1.5b-ai, url: "https://news.google.com/rss/search?q=UnitedHealth+Optum+AI+when:90d", title: "UnitedHealth Is Investing $1.5 Billion in AI and Targeting a 2-to-1 Return", outlet: "The Motley Fool", ts: "2026-07-14"}
+
+  # --- CVS Health / Aetna ---
+  - {id: aetna-claims-time, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "Aetna reduces claims processing time by more than 20% with AI to improve care experience", outlet: "(payer trade wire)", ts: "2026-05-26"}
+  - {id: cvs-ai-front-door, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS wants to become the AI front door to health care", outlet: "(trade press)", ts: "2026-07-16", note: "headline-only, body not fetchable via redirect"}
+  - {id: cvs-agentic-ai, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS Health tackles tactical agentic AI rollouts for healthcare", outlet: "(trade press)", ts: "2026-06-25"}
+  - {id: cvs-ai-academy, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS launched an AI Learning Academy for its workforce", outlet: "(trade press)", ts: "2026-06-08"}
+  - {id: cvs-pharmacy-ai, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS Health embeds AI into pharmacy dispensing", outlet: "(trade press)", ts: "2026-05-29"}
+  - {id: cvs-mh-glp1, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS Health Expands Integrated Care With Virtual Mental Health AI And GLP-1", outlet: "(trade press)", ts: "2026-05-29", note: "headline-only"}
+  - {id: cvs-salesforce, url: "https://news.google.com/rss/search?q=CVS+Health+Aetna+AI+when:90d", title: "CVS Health improves call center personalization with Salesforce", outlet: "(trade press)", ts: "2026-05-28"}
+
+  # --- Cigna / Evernorth ---
+  - {id: evernorth-pharmacy-forward, url: "https://news.google.com/rss/search?q=Cigna+Evernorth+AI+when:90d", title: "Evernorth unveils new AI-powered specialty pharmacy program, Pharmacy Forward", outlet: "(multiple, cross-posted)", ts: "2026-07-01"}
+  - {id: cigna-200m-savings, url: "https://news.google.com/rss/search?q=Cigna+Evernorth+AI+when:90d", title: "Cigna says AI tools to save customers $200 million in medical expenses over three years", outlet: "(trade press)", ts: "2026-07-23"}
+  - {id: cigna-care-mgmt-ai, url: "https://news.google.com/rss/search?q=Cigna+Evernorth+AI+when:90d", title: "Cigna uses AI to expand care management program", outlet: "(trade press)", ts: "2026-07-24"}
+
+  # --- Elevance Health / Carelon ---
+  - {id: elevance-aba-sud, url: "https://news.google.com/rss/search?q=Elevance+Carelon+behavioral+health+2026", title: "Elevance Health Eyes ABA, SUD in Looming Behavioral Health Cost Savings Effort", outlet: "(payer trade press)", ts: "2026-01-28"}
+  - {id: carelon-kaye, url: "https://news.google.com/rss/search?q=Elevance+Carelon+behavioral+health+2026", title: "CFO Mark Kaye to take the helm at Carelon in leadership shake-up at Elevance Health", outlet: "(payer trade press)", ts: "2026-02-27"}
+  - {id: carelon-90m, url: "https://news.google.com/rss/search?q=Elevance+Carelon+behavioral+health+2026", title: "New Carelon chiefs will oversee services for 90 million consumers", outlet: "(payer trade press)", ts: "2026-03-31"}
+  - {id: elevance-mh-gaps, url: "https://news.google.com/rss/search?q=Elevance+Carelon+behavioral+health+2026", title: "Elevance Health Advances Efforts to Close Critical Gaps in Mental Health Care", outlet: "(payer trade press)", ts: "2026-05-04", note: "headline-only"}
+  - {id: elevance-ghost-network, url: "https://news.google.com/rss/search?q=Elevance+Carelon+behavioral+health+2026", title: "Elevance Health 'ghost network' class action lawsuit allowed to proceed", outlet: "(legal trade press)", ts: "2026-04-01"}
+
+  # --- Humana / CenterWell (thinnest actor this pass) ---
+  - {id: wiser-pilot-vote, url: "https://news.google.com/rss/search?q=Humana+AI+prior+authorization+when:90d", title: "Congressional Democrats try to force a vote to end Medicare AI prior authorization pilot", outlet: "(health policy trade press)", ts: "2026-05-20"}
+  - {id: oig-ma-denials, url: "https://news.google.com/rss/search?q=Humana+AI+prior+authorization+when:90d", title: "OIG: Frequent MA prior authorization denials for long-term care hospitals, inpatient rehab", outlet: "(health policy trade press)", ts: "2026-06-11"}
+
+  # --- Kaiser Permanente (supplement to kaiser-ai-clinician-backlash-2026-07-22) ---
+  - {id: kaiser-mri-ai, url: "https://news.google.com/rss/search?q=Kaiser+Permanente+AI+2026+when:60d", title: "AI Cut MRI Wait Times Up to 60%", outlet: "Kaiser Permanente (org)", ts: "2026-06-24"}
+  - {id: kaiser-mammography-ai, url: "https://news.google.com/rss/search?q=Kaiser+Permanente+AI+2026+when:60d", title: "Breast cancer risk assessment improves with mammography AI and polygenic risk scores", outlet: "Kaiser Permanente Division of Research", ts: "2026-06-23"}
+  - {id: kaiser-nurse-surveillance, url: "https://news.google.com/rss/search?q=Kaiser+Permanente+AI+2026+when:60d", title: "Kaiser Permanente implementing invasive AI surveillance of advice hotline nurses", outlet: "World Socialist Web Site", ts: "2026-07-21", note: "single non-mainstream source, treat as thin/unconfirmed"}
+
+  # --- HCA Healthcare ---
+  - {id: hca-ai-strategy, url: "https://news.google.com/rss/search?q=HCA+Healthcare+AI+when:90d", title: "HCA Healthcare's strategic approach to scaling artificial intelligence", outlet: "(trade press)", ts: "2026-07-21", note: "headline-only"}
+  - {id: hca-mis-quarterly, url: "https://news.google.com/rss/search?q=HCA+Healthcare+AI+when:90d", title: "MIS Quarterly Executive: Insights from Leading AI Transformation at HCA Healthcare", outlet: "MIS Quarterly Executive", ts: "2026-06-12", note: "headline-only"}
+  - {id: hca-home-health-divest, url: "https://news.google.com/rss/search?q=HCA+Healthcare+AI+when:90d", title: "DAI To Acquire 24 Home Health Agencies From HCA", outlet: "(trade press)", ts: "2026-06-24"}
+  - {id: hca-securities-probe, url: "https://news.google.com/rss/search?q=HCA+Healthcare+AI+when:90d", title: "HCA Healthcare faces securities fraud probe", outlet: "(trade press)", ts: "2026-07-16", note: "headline-only"}
+  - {id: hca-layoffs, url: "https://news.google.com/rss/search?q=HCA+Healthcare+AI+when:90d", title: "HCA Healthcare confirms layoffs", outlet: "(trade press)", ts: "2026-04-30", note: "headline-only"}
+
+  # --- UHS-Talkspace (behavioral-health M&A, cross-ref mh-clinical-infra-funding) ---
+  - {id: uhs-talkspace-announce, url: "https://news.google.com/rss/search?q=Talkspace+UHS+acquisition+2026", title: "Universal Health Services, Inc. to Acquire Talkspace, Inc.", outlet: "PR Newswire", ts: "2026-03-09"}
+  - {id: uhs-talkspace-approved, url: "https://news.google.com/rss/search?q=Talkspace+UHS+acquisition+2026", title: "Talkspace Stockholders Approve Acquisition by Universal Health Services", outlet: "Quiver Quantitative", ts: "2026-05-29"}
+
+  # --- MHPAEA parity rule (cross-payer regulatory context) ---
+  - {id: parity-nonenforcement-1, url: "https://news.google.com/rss/search?q=mental+health+parity+MHPAEA+2026+rule", title: "Agencies say they won't enforce 2024 mental health parity final rule", outlet: "American Hospital Association", ts: "2025-05-15"}
+  - {id: parity-nonenforcement-2, url: "https://news.google.com/rss/search?q=mental+health+parity+MHPAEA+2026+rule", title: "Enforcement of Mental Health Parity Regulations Suspended", outlet: "McDermott Will & Schulte", ts: "2025-05-21"}
+  - {id: parity-step-backward, url: "https://news.google.com/rss/search?q=mental+health+parity+MHPAEA+2026+rule", title: "Behavioral Health Parity Takes Step Backward Under Trump Administration", outlet: "Georgetown University", ts: "2026-02-27"}
+  - {id: parity-new-rule-proposed, url: "https://news.google.com/rss/search?q=mental+health+parity+MHPAEA+2026+rule", title: "Trump Administration to Propose New Parity Rule", outlet: "Behavioral Health Business", ts: "2026-04-01"}
+  - {id: parity-stamp, url: "https://news.google.com/rss/search?q=mental+health+parity+MHPAEA+2026+rule", title: "Trump administration puts its stamp on mental health parity", outlet: "Mercer", ts: "2026-05-16"}
+  - {id: parity-by-end-of-year, url: "https://news.google.com/rss/search?q=%22mental+health+parity%22+rule+proposal+2026", title: "(snippet) agencies planning a mental health parity proposal by end of year", outlet: "Bloomberg Law", ts: "2026-03-31", note: "RSS snippet only, not the full article — corroborates but doesn't confirm a firm Dec-31 date"}
+
+  # --- Minnesota AI-decision ban (cross-payer regulatory heat, supports thread candidate) ---
+  - {id: mn-ai-ban, url: "https://news.google.com/rss/search?q=Humana+AI+prior+authorization+when:90d", title: "Minnesota Moves to Ban AI Decision-Making in Health Insurance Authorizations", outlet: "(state policy trade press)", ts: "2026-06-01"}
+
+notes: >-
+  Internal checks (not external sources): attention/upcoming.yaml grepped
+  directly for "parity"/"mhpaea"/"12-31" before writing the parity-rule
+  correction in the finding — confirmed no MHPAEA entry exists in the
+  ledger. attention/board.yaml and attention/actor-doing.yaml checked for
+  all seven actors before crawling to avoid re-deriving what's already
+  there (none of the seven had an actor-doing.yaml entry yet, confirming
+  the "nothing in the health layer" premise). Several outlets couldn't be
+  attributed precisely because Google News RSS snippets sometimes omit the
+  publication name cleanly — marked "(trade press)" generically where the
+  RSS fetch didn't clearly surface a named outlet; treat those as
+  lower-confidence on outlet attribution specifically (the headline/date
+  themselves are still RSS-verbatim).

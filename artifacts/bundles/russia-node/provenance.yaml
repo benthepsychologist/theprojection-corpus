@@ -1,0 +1,55 @@
+# Bundle — state node: russia (2026-07-26)
+# Posture + capital-FLOW appendix for board.yaml russia (rank state, sphere
+# none, tier dormant — matters via second-order energy/geopolitics, not as a
+# live AI actor). SANCTIONED state: available = reserves MINUS the ~$300B+
+# frozen abroad + the drawn-down National Wealth Fund, in = oil/gas + tax,
+# deployed = low debt + war spending, out = war-footing expenditure. Gravity =
+# GDP. Method: WebFetch primary (WebSearch exhausted) — Wikipedia lists +
+# sanctions page.
+node: russia
+name: "Russia"
+kind: state
+asof: 2026-07-26
+
+posture:
+  value: at-war
+  basis: "War-economy footing (Ukraine invasion) — swollen military spending on a -1.87% deficit (2024), heavily sanctioned, ~$300B+ of central-bank reserves frozen abroad, National Wealth Fund drawn down to plug the gap. Listed on the board, not inflated (dormant as an AI actor)."
+  sources:
+    - {figure: "~$300B of Russian central-bank reserves blocked (28 Feb 2022); $335B (€300B) frozen by late Jul 2023 — ~half of ~$612B total reserves", label: "Wikipedia — International sanctions during the Russian invasion of Ukraine", url: "https://en.wikipedia.org/wiki/International_sanctions_during_the_Russian_invasion_of_Ukraine", as_of: "2023-07", confidence: high}
+    - {figure: "2024 deficit -$40.85B (-1.87% of GDP); expenditure 37.32% of GDP (war-elevated)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+capital:
+  available:
+    value: "~$720B gross FX reserves (Jun-2026) BUT ~$300-335B is FROZEN abroad — usable reserves ~$390-420B; plus a National Wealth Fund of ~$174B (drawn down to fund the war)"
+    sources:
+      - {figure: "foreign-exchange reserves incl. gold $720,447M (30 Jun 2026)", label: "Wikipedia — List of countries by foreign-exchange reserves", url: "https://en.wikipedia.org/wiki/List_of_countries_by_foreign-exchange_reserves", as_of: "2026-06", confidence: high}
+      - {figure: "$335B (€300B) of reserves frozen abroad by late Jul 2023 (~$217-230B in Europe)", label: "Wikipedia — International sanctions during the Russian invasion of Ukraine", url: "https://en.wikipedia.org/wiki/International_sanctions_during_the_Russian_invasion_of_Ukraine", as_of: "2023-07", confidence: high}
+      - {figure: "Russian National Wealth Fund ~$174B", label: "Wikipedia — List of countries by sovereign wealth funds", url: "https://en.wikipedia.org/wiki/List_of_countries_by_sovereign_wealth_funds", as_of: "2026-07", confidence: med}
+  operating:
+    value: "~$815B annual govt expenditure / ~$774B revenue (2024)"
+    sources:
+      - {figure: "2024 revenue $774.34B (35.45% of GDP); expenditure $815.19B (37.32% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  deployed:
+    value: "gross govt debt only 17.2% of GDP (2025) ≈ ~$457B nominal (derived from GDP × ratio) — very low; the real 'deployment' is committed war spending, not sovereign debt"
+    sources:
+      - {figure: "gross govt debt 17.2% of GDP (2025); nominal derived from IMF 2026 GDP ~$2.66T", label: "Wikipedia — List of countries by government debt (IMF 2025) — nominal is arithmetic ratio×GDP", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_debt", as_of: "2025", confidence: low}
+  in:
+    value: "~$774B revenue (2024) — oil/gas hydrocarbon resource income (sanctioned/discounted, sold East) plus domestic tax"
+    sources:
+      - {figure: "2024 revenue $774.34B (35.45% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+  out:
+    value: "~$815B expenditure (2024); deficit -$41B (-1.87% of GDP) — war-elevated but held modest by NWF drawdown + oil income"
+    sources:
+      - {figure: "2024 expenditure $815.19B; deficit -$40.85B (-1.87% of GDP)", label: "Wikipedia — List of countries by government budget (IMF 2024)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_government_budget", as_of: "2024", confidence: high}
+
+optionality:
+  value: "locked — sanctioned and largely cut off from Western finance: ~$300-335B of reserves immobilized, SWIFT access curtailed, capital controls in force, energy sold at a discount to a narrowed buyer set. Low debt is moot when market access is blocked."
+  sources:
+    - {figure: "~$300-335B reserves frozen; broad Western financial sanctions since Feb 2022", label: "Wikipedia — International sanctions during the Russian invasion of Ukraine", url: "https://en.wikipedia.org/wiki/International_sanctions_during_the_Russian_invasion_of_Ukraine", as_of: "2023-07", confidence: high}
+
+gravity:
+  value: "~$2.66T GDP (nominal, IMF 2026) — mid single-state gravity; matters via energy/geopolitics second-order effects more than direct economic pull"
+  sources:
+    - {figure: "nominal GDP $2,656,452M (IMF 2026); $2,561,310M (World Bank 2025)", label: "Wikipedia — List of countries by GDP (nominal)", url: "https://en.wikipedia.org/wiki/List_of_countries_by_GDP_(nominal)", as_of: "2026", confidence: high}
+
+notes: "Sanctioned, war-footing state — dormant as an AI actor (board 'listed, not inflated'), live via energy/geopolitics. Biggest uncertainty is the reserve figures: gross reserves are reported but the usable fraction depends on how much stays frozen (~$300-335B), and nominal-USD GDP/budget figures are distorted by the managed, sanctioned ruble (FX-conversion caveat). Nominal debt derived (ratio×GDP), flagged low."
