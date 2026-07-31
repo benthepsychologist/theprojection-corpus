@@ -1,11 +1,24 @@
-<!-- kit: common/start@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/common/start/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/start@2026-07-31.2 — canonical: /workspace/kestrel/library/skills/attention/start/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: start
-description: Session-bootstrap card — fuses the generic continuation ritual (docs, memory, git log) with kestrel's live pipeline state (digest status, expectations due, flash rail, freshness, push safety). Read-only; run at the start of any session.
+description: Session-bootstrap card for an attention instance — fuses the generic continuation ritual (docs, memory, git log) with the attention pipeline's live state (digest status, expectations due, flash rail, freshness, push safety). Read-only; run at the start of any session.
 ---
 
-# /start — pick up kestrel where it was left
+# /start — pick up the attention pipeline where it was left
+
+This is the attention-kind sibling of `registry/start`, not a generic
+skill every instance shares — an attention instance's session state lives
+in digests, expectations, and a flash rail; a registry instance's lives in
+candidates, records, and changelog. Split into two kind-specific skills
+(2026-07-31) after therapybulletin (the first registry instance) surfaced
+that this file's "generic continuation ritual" framing was aspirational,
+not actual: every pipeline-state step below was already attention-shaped,
+so pretending it was `common/` just meant a registry instance either got
+sections that didn't apply or had to route around them by hand. The kit
+renderer resolves this file for any instance whose `kestrel.yaml` declares
+`kind: attention` (KITS.md §2's family selection); registry instances get
+`registry/start` instead, same slash name, different family, no collision.
 
 Generic `/life:start` (docs + memory + git log) doesn't know kestrel has a
 live pipeline underneath it; `/map` knows the pipeline but says nothing

@@ -1,4 +1,4 @@
-<!-- kit: attention/publish@2026-07-31.1 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/publish@2026-07-31.2 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: publish
