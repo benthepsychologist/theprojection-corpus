@@ -141,6 +141,15 @@ through `attention/`.
     global-capital's job, cross-referenced (`iran-conflict-widening` vs.
     `red-sea-oil-shock` is the reference split — same origin event, one
     thread per lens, deliberately, not one thread wearing two hats).
+    **The coverage bar, stated directly** (Ben, 2026-07-31, promoting
+    `russia-ukraine-war` after it sat as an unanswered candidate for a
+    day: "All active military conflicts that are not hyper-local get
+    coverage."). Read together with "kept deliberately small" above:
+    small applies to *detection volume* (the mechanical sweep itself
+    stays restrained, no term-list expansion), not to which real wars
+    clear the bar for promotion once surfaced — a genuine active
+    military conflict above hyper-local scale is a yes, not a judgment
+    call re-litigated per war.
 
 14. **Global Capital interprets; it doesn't just aggregate** (Ben,
     2026-07-30 — full rename from `money`: "'finance' is boring 'Global

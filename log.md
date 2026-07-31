@@ -1024,3 +1024,48 @@ duplicates of the same event — noted, not merged, Ben's call.
 No steering taken this run (single-shot `/daily` invocation, no
 back-and-forth). Next: 07-30 becomes finalizable ~14:00 UTC today: a
 later `/daily` run will close it out with the coverage critic.
+
+## 2026-07-31 (continued) — steering: Russia-Ukraine promoted, a real matcher bug caught, flash dismiss fixed live
+
+Ben's reaction to the `/daily` report: **"track Russia-Ukraine. All
+active military conflicts that are not hyper-local get coverage."**
+Opened `russia-ukraine-war` (lens: world-news, genre: border-war, weight
+3, ben-steer) — the standing candidate from 07-30 that went unanswered
+twice, closed by direct answer rather than a third re-offer. Recorded
+the coverage-scope principle in AGENTS.md discipline 13 for future
+promotion calls, not just this one.
+
+**A real bug surfaced and fixed while wiring it up:** re-running
+`build_world_news.py` after opening the thread, every `russia-ukraine-*`
+GDELT cluster (including the 304-outlet top signal) kept matching to
+`iran-conflict-widening` instead of the new thread. Traced to the
+country-proximity matcher: MY OWN cross-reference note inside
+`iran-conflict-widening.md` (written during today's earlier `/daily`
+pass) named "the Russia-Ukraine war" in one sentence, putting "Russia"
+and "Ukraine" 7 characters apart — an exact tie with the new thread's
+own title/terms, and ties resolve to whichever thread appears first in
+`threads.yaml`. Fixed by rewriting the cross-reference to never name
+both countries together inside a thread file — a real, generalizable
+lesson (not specific to this pair), now stated in today's world-news
+digest for the record.
+
+**Separately, a real product complaint, fixed live:** "the fucking flash
+messages never go away! Once I click it away it needs to stay gone. They
+are even accumulating over time! And they respawn on every page load."
+This reverses the 2026-07-29 flash-dismissal design (`layouts/partials/
+flash.html`), which was deliberately in-memory-only by explicit spec at
+the time — it broke down the moment a second concurrent flash actually
+landed (today). Rewrote dismissal to persist via `localStorage`, keyed
+by the flash's own `id` (still server-rendered, still no JS required to
+see a flash). Verified with a local Hugo build (1025 pages, exit 0)
+before shipping — committed, pushed, and deploy-hooked directly in
+`theprojection-site` (not part of `/publish`'s own pipeline, since that
+only touches generated content/data, never hand-authored layout files).
+
+Also dropped a design-only proposal (`kestrel/INBOX/2026-07-31-theprojection-data-collect-py-serial-gdelt-blocking.md`)
+for the `collect.py` serial-fan-out issue found earlier this session —
+ideas only, no implementation, per Ben's explicit ask; kestrel's own
+resident agent picks it up from there.
+
+Re-rendered and republished the private artifact + full public site
+(`/publish --push`) a second time to ship all of the above.

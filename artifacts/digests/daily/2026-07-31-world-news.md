@@ -21,14 +21,17 @@ candidate mechanism.*
 A second flash landed: a Russian cruise missile crossed into Polish —
 NATO — airspace overnight 07-29/30, during the war's largest
 missile-and-drone barrage on Ukraine in weeks. It's a genuinely separate
-conflict from Iran, not a second entry on the same story, and it exposes
-kestrel's biggest current gap — the Russia-Ukraine war has no thread at
-all, and remains the single largest mechanical world-news signal by a
-wide margin. It isn't re-offered as a candidate today (see below).
-Iran's war, meanwhile, saw no material escalation or de-escalation:
-Saudi Arabia's coalition-building crystallized into an actual signed
-14-nation Maritime Defense Alliance, but the existing flash already
-covers the conflict's fuller widening and doesn't need updating.
+conflict from Iran, not a second entry on the same story, and it exposed
+kestrel's biggest current gap — the Russia-Ukraine war had no thread at
+all despite being the single largest mechanical world-news signal by a
+wide margin. **Update, later the same session: Ben answered directly —
+"track Russia-Ukraine. All active military conflicts that are not
+hyper-local get coverage."** `russia-ukraine-war` is now a real thread
+(ben-steer 2026-07-31); see below. Iran's war, meanwhile, saw no material
+escalation or de-escalation: Saudi Arabia's coalition-building
+crystallized into an actual signed 14-nation Maritime Defense Alliance,
+but the existing flash already covers the conflict's fuller widening and
+doesn't need updating.
 
 ## 🚨 A second flash: Russia's missile crossed into NATO airspace
 
@@ -46,17 +49,34 @@ covers the conflict's fuller widening and doesn't need updating.
   duplicate.
   ([NPR](https://www.npr.org/2026/07/30/g-s1-136276/russia-ukraine-war), [Al Jazeera](https://www.aljazeera.com/news/2026/7/30/nato-jets-scramble-as-russian-missile-detonates-in-poland), [Foreign Policy](https://foreignpolicy.com/2026/07/30/poland-russia-missile-incursion-nato-ukraine-war-strikes/))
   <!-- k: t= e= axis=a-second-flash-russia-s-missile-crossed-into-nato-airspace sev=flash -->
-- **This exposes a real gap, not a new one: kestrel has never tracked
-  the Russia-Ukraine war.** It surfaced as the day's largest mechanical
-  world-news signal on 07-30 (315 outlets) and again today (304, still
-  #1 by a wide margin over Iran's confirmed clusters at 74-206) — offered
-  as a thread candidate 07-30 in both this digest and Frontier AI's, and
-  went unanswered. Per the world-news restraint rule ("don't re-offer a
-  second time"), it is **not** re-asked today. The flash above stands on
-  independent grounds regardless — flash and thread-candidacy are
-  separate mechanisms; a flash can fire for a war with no thread at all,
-  which is precisely the scenario `flash.yaml`'s own header describes.
-  <!-- k: t= e= axis=a-second-flash-russia-s-missile-crossed-into-nato-airspace -->
+- **This exposed a real gap, now closed: `russia-ukraine-war` is open.**
+  The day's largest mechanical world-news signal two days running (315
+  outlets 07-30, 304 today, both well ahead of Iran's confirmed clusters
+  at 74-206) had zero thread coverage — offered as a candidate 07-30 in
+  both this digest and Frontier AI's, unanswered, not re-asked today per
+  the restraint rule. Ben answered directly instead: **"track
+  Russia-Ukraine. All active military conflicts that are not hyper-local
+  get coverage."** New thread opened (lens: world-news, genre:
+  border-war, weight 3), opening development = today's Poland/NATO
+  incident above. The standing coverage principle is now recorded in
+  AGENTS.md discipline 13. The flash above stood on independent grounds
+  regardless of this — flash and thread-candidacy are separate
+  mechanisms; a flash can fire for a war with no thread at all, which is
+  precisely the scenario `flash.yaml`'s own header describes.
+  <!-- k: t=russia-ukraine-war e= axis=a-second-flash-russia-s-missile-crossed-into-nato-airspace -->
+- **A real matcher bug found and fixed while opening the thread:** this
+  digest's own earlier draft, cross-referencing "the Russia-Ukraine war"
+  by name inside THIS thread's timeline file, made `russia-ukraine-war`
+  and `iran-conflict-widening` tie on the world-news country-proximity
+  check (both had "Russia"/"Ukraine" 7 characters apart — the new
+  thread's own title, and an artifact of this file naming the other
+  conflict). Every `russia-ukraine-*` GDELT cluster was mis-matching to
+  `iran-conflict-widening` as a result. Fixed by rewriting the
+  cross-reference to not name both countries in the same breath here —
+  worth remembering generally: don't name another conflict's two
+  combatant countries together inside a thread file, or the mechanical
+  matcher can collide on it.
+  <!-- k: t=russia-ukraine-war,iran-conflict-widening e= axis=a-second-flash-russia-s-missile-crossed-into-nato-airspace -->
 
 ## Iran's widening war
 
@@ -86,24 +106,30 @@ covers the conflict's fuller widening and doesn't need updating.
 
 - `+ flash/russia-missile-poland-nato-airspace` — critical, expires
   08-03 (curate-add 07-31).
-- `~ attention/world-news.yaml` — rebuilt for 2026-07-31 (109 items,
-  `tools/build_world_news.py`).
-- `~ threads/iran-conflict-widening` — timeline block added (⟨daily
-  07-31⟩).
+- `+ thread russia-ukraine-war` (world-news, genre: border-war, weight
+  3) — opened on Ben's direct steer: "track Russia-Ukraine. All active
+  military conflicts that are not hyper-local get coverage." (ben-steer
+  07-31).
+- `~ AGENTS.md` discipline 13 — recorded the standing coverage-scope
+  principle above (ben-steer 07-31).
+- `~ attention/world-news.yaml` — rebuilt twice for 2026-07-31 (109
+  items each, `tools/build_world_news.py`) — the second rebuild after
+  the matcher-collision fix below.
+- `~ threads/iran-conflict-widening` — timeline block added, then
+  revised once to fix the matcher collision (⟨daily 07-31⟩).
 
 ## 🧵 Thread candidates
 
-- **Not re-offered:** Russia-Ukraine war coverage remains the single
-  largest mechanical signal (304 outlets) and has zero thread coverage,
-  but it was already offered 07-30 and went unanswered — per the
-  restraint rule, it isn't asked a second time today. Still standing,
-  still visible in `attention/world-news.yaml` for whenever it's worth
-  revisiting.
+- **Promoted, not offered:** Russia-Ukraine war coverage was the
+  standing unanswered candidate from 07-30 (single largest mechanical
+  signal, 304-315 outlets) — Ben promoted it directly in chat rather
+  than via a re-offer. See `russia-ukraine-war`.
 
 ---
 A second flash: a Russian missile crossed into Polish NATO airspace
 during the war's biggest barrage in weeks — genuinely separate from
-Iran, and it underlines that Russia-Ukraine has no thread here at all
-(not re-asked today, already offered once). Saudi Arabia's Red Sea
-coalition became an actual 14-nation alliance. Iran's conflict itself saw
-no material escalation.
+Iran. Ben promoted Russia-Ukraine to a real thread the same session,
+closing the map's biggest gap, and stated a standing rule: all active,
+non-hyper-local military conflicts get coverage going forward. Saudi
+Arabia's Red Sea coalition became an actual 14-nation alliance. Iran's
+conflict itself saw no material escalation.

@@ -851,6 +851,52 @@ threads:
       stayed on the global-capital thread. First thread carrying the new
       `world-news` lens.
 
+  - slug: russia-ukraine-war
+    genre: border-war   # board.yaml genre (ben-steer 2026-07-31)
+    title: "Russia-Ukraine War"
+    kind: story
+    status: open
+    lens: world-news
+    entities: []
+    weight: 3
+    terms:
+      - "Russia Ukraine war"
+      - "Russia Ukraine invasion"
+      - "Ukraine war"
+      - "Kyiv Moscow"
+      - "NATO Russia airspace"
+      - "Russia Ukraine ceasefire"
+    opened: 2026-07-31
+    last_seen: 2026-07-31
+    watch: >
+      The single largest signal in kestrel's own mechanical world-news
+      sweep, two days running (304-315 distinct outlets, well ahead of
+      Iran's confirmed clusters at 74-206) — and, until today, entirely
+      untracked here. Opening development: overnight 07-29/30 Russia
+      launched 70+ missiles and 280+ attack drones at Ukraine (260+
+      intercepted, 8-10+ civilians killed), and a Kh-101 cruise missile
+      crossed into Poland — a NATO member — landing near
+      Tarnawa-Kolonia; NATO scrambled jets, logged as a critical flash
+      (`russia-missile-poland-nato-airspace`). Track: territorial/combat
+      developments, any ceasefire or negotiation track, further
+      NATO-airspace or NATO-adjacent incidents, and Western
+      military/financial aid decisions. Distinct from any capital-markets
+      read (sanctions, energy, defense-spending), which would split out
+      to a global-capital sibling thread the same way
+      `iran-conflict-widening` / `red-sea-oil-shock` did, if and when
+      that read becomes substantial enough to carry on its own.
+    notes: |
+      2026-07-31 ⟨ben-steer⟩: "track Russia-Ukraine. All active military
+      conflicts that are not hyper-local get coverage." Promotes the
+      candidate first surfaced 07-30 (offered as a thread candidate that
+      day in the frontier-ai and world-news digests, unanswered — not
+      re-offered 07-31 per the world-news restraint rule, per Ben's own
+      direct answer here instead). Also recorded as a standing
+      coverage-scope principle in AGENTS.md discipline 13. No backstory
+      crawl yet — opens quiet, stated plainly, same as
+      `aws-capex`/`microsoft-capex` did 2026-07-24; a `/crawl` backfill
+      can fill in the war's pre-07-31 history on demand.
+
   - slug: red-sea-oil-shock
     genre: exogenous-shock   # board.yaml genre (ben-steer 2026-07-24)
     title: "Red Sea Shock"

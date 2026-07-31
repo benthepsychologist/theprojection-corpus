@@ -11,7 +11,8 @@ items:
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.98
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: iran-united-states-fight
   headline: 'Iran–United States: Fight'
   distinct_outlets: 206
@@ -50,14 +51,16 @@ items:
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.98
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: poland-russia-fight
   headline: 'Poland–Russia: Fight'
   distinct_outlets: 78
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.99
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: israel-pse-fight
   headline: 'Israel–PSE: Fight'
   distinct_outlets: 71
@@ -79,14 +82,16 @@ items:
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -10.0
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: russia-ukraine-assault
   headline: 'Russia–Ukraine: Assault'
   distinct_outlets: 53
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.06
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: ukraine-united-states-consult
   headline: 'Ukraine–United States: Consult'
   distinct_outlets: 53
@@ -100,7 +105,8 @@ items:
   source: gdelt
   severity: COOP
   goldstein_avg: 4.4
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: iran-israel-fight
   headline: 'Iran–Israel: Fight'
   distinct_outlets: 47
@@ -115,28 +121,32 @@ items:
   source: gdelt
   severity: MIXED
   goldstein_avg: -6.03
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: russia-ukraine-reject
   headline: 'Russia–Ukraine: Reject'
   distinct_outlets: 46
   source: gdelt
   severity: MIXED
   goldstein_avg: -4.03
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: russia-ukraine-disapprove
   headline: 'Russia–Ukraine: Disapprove'
   distinct_outlets: 45
   source: gdelt
   severity: MIXED
   goldstein_avg: -2.0
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: russia-ukraine-engage-in-diplomatic-cooperation
   headline: 'Russia–Ukraine: Engage in diplomatic cooperation'
   distinct_outlets: 43
   source: gdelt
   severity: COOP
   goldstein_avg: 4.13
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: israel-pse-yield
   headline: 'Israel–PSE: Yield'
   distinct_outlets: 40
@@ -158,7 +168,8 @@ items:
   source: gdelt
   severity: COOP
   goldstein_avg: 2.95
-  status: candidate
+  status: confirmed_thread
+  thread: russia-ukraine-war
 - id: sam-altman-meets-us-lawmakers-as-trump-mulls-ai-
   headline: Sam Altman meets US lawmakers as Trump mulls AI controls
   distinct_outlets: 28
