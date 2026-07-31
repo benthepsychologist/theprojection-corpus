@@ -1,9 +1,28 @@
-# STATUS — kestrel
+# STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-07-30** (executive briefings un-morninged
-and re-wired into `/daily`, closing a gap the Global Capital rename had
-opened same day; top note below; prior states in the dated notes
-under it).*
+*Hand-maintained. **As of 2026-07-31** (the engine/instance split's phase
+6: this repo is born — all instance data, skills, and docs extracted from
+kestrel, which is now the engine only; top note below; prior states in
+the dated notes under it).*
+
+> **2026-07-31 — extracted from kestrel (phase 6, Ben's call).** This
+> repo now holds everything the engine tends for The Projection: the
+> attention map, artifacts, sources config, provenance, templates, the
+> operating skills, and these docs. The engine (collectors, tools,
+> publish core) stays in `/workspace/kestrel`; every engine tool is
+> invoked with `KESTREL_INSTANCE=/workspace/theprojection-data` (the
+> rule lives in CLAUDE.md). `kestrel.yaml` at the root is the instance
+> manifest (`kind: attention`). The migration was gated, not assumed:
+> the rendered read page and a full staged publish came out
+> byte-identical before and after the move, running the tools with no
+> env fails loudly rather than silently reading stale paths, and the
+> bh-compliance instance's sweep was unaffected. Receipt links on the
+> public site now point into this repo (private — Ben sees them, the
+> public 404s; a public receipt export is an open item on the engine's
+> ledger). Pre-split history: kestrel's git history, tag
+> `pre-engine-split` and earlier. **GitHub remote is wired but the repo
+> needs creating** (`benthepsychologist/theprojection-data`, private) —
+> until then this repo is local-only and unpushed.
 
 > **2026-07-30 (evening) — the Global Capital rename had silently orphaned
 > its own briefing; fixed, and the freshness gap that caused it closed.**

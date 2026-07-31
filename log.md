@@ -938,3 +938,14 @@ empty as expected for the window size; a clinicaltrials false-positive
 match, discarded) — no tier-2 dispatch fired, proportionate to a ~15-20
 minute real-world gap. Rendered and republished to the stable artifact
 URL.
+
+## 2026-07-31 — phase 6: this repo is born
+
+**Extracted from kestrel** (engine/instance split, Ben: "create
+theprojection-data and move everything"). Data, skills, docs all moved;
+kestrel keeps the code. Gates: render + staged publish byte-identical
+pre/post, loud no-env failure, bh sweep unaffected. One leak caught
+mid-gate: the publish provenance manifest was still landing in the
+engine repo — publish core now takes the instance root from the adapter.
+Receipt links repointed at this repo (private) and the live site
+republished. GitHub repo creation pending (token lacks the scope — Ben).
