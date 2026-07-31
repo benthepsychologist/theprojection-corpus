@@ -1,4 +1,4 @@
-<!-- kit: attention/publish@2026-07-31.2 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/publish@2026-07-31.3 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: publish
@@ -8,8 +8,10 @@ argument-hint: [--push] [--dry-run]
 
 # /publish [--push] [--dry-run] — export to theprojection.org
 
-Runs `tools/publish_projection.py` (AGENTS.md discipline 9). Kestrel feeds
-the site; never the reverse, and no other path writes there.
+Runs `KESTREL_INSTANCE=/workspace/theprojection-data python3 /workspace/kestrel/tools/publish.py`
+(AGENTS.md discipline 9) — the generic engine CLI, which loads this repo's
+own `publish/adapter.py` (declared in `kestrel.yaml`'s `outputs.adapter`).
+Kestrel feeds the site; never the reverse, and no other path writes there.
 
 **Not part of `/daily`** — this is a separate, deliberate step. `/daily`
 only renders + republishes the private artifact page; nothing pushes to
@@ -82,8 +84,10 @@ a step to skip silently.
    counts, and — if `--push` — the commit range and the Cloudflare
    build_uuid from the deploy-hook response.
 4. `THEPROJECTION_SITE_DIR` env var (or `--site-dir`) overrides the
-   default site checkout path if it ever moves.
-5. **The deploy hook only fires automatically inside `publish_projection.py --push`,**
+   default site checkout path if it ever moves — set in **this repo's own
+   `.env`**, not kestrel's (the adapter is instance-owned, revised
+   2026-07-31).
+5. **The deploy hook only fires automatically inside `tools/publish.py --push`,**
    and only if `THEPROJECTION_DEPLOY_HOOK` is set — there's no fallback.
    Any *other* push to the site repo (a template/CSS/JS/code change, not a
    content publish) does **not** auto-trigger a Cloudflare build — fire it

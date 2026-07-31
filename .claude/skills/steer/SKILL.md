@@ -1,4 +1,4 @@
-<!-- kit: attention/steer@2026-07-31.2 — canonical: /workspace/kestrel/library/skills/attention/steer/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/steer@2026-07-31.3 — canonical: /workspace/kestrel/library/skills/attention/steer/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: steer

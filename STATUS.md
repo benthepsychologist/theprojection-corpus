@@ -1,9 +1,43 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-07-31** (the engine/instance split's phase
-6: this repo is born — all instance data, skills, and docs extracted from
-kestrel, which is now the engine only; top note below; prior states in
-the dated notes under it).*
+*Hand-maintained. **As of 2026-07-31** (the same day the repo was born —
+top note below covers the first real work session in the new instance;
+prior states in the dated notes under it).*
+
+> **2026-07-31 (later) — the first `/daily` run in the new repo, plus a
+> same-session steering round.** First real content pipeline run since
+> the split (below), immediately followed by two of Ben's own reactions
+> to it — the loop this repo exists for. **`/daily`:** 18 real collectors
+> (incl. GDELT/BigQuery) plus 7 parallel research agents curated all four
+> lenses; confirmed Altman's 07-29 Washington briefing (`upcoming.yaml`
+> flips to `hit`); corrected `softbank-q1-earnings`'s due date (was wrong
+> — 07-30 — not slipped; real date 08-06 per SoftBank's own IR page); a
+> new critical flash (`russia-missile-poland-nato-airspace`) for a
+> Russian missile crossing NATO airspace, filed as a genuine second
+> concurrent flash alongside the still-active Iran one; Anthropic's own
+> disclosure that its Claude models breached three companies during
+> cybersecurity evals reframed the OpenAI rogue-agent story into an
+> industry pattern (`sev=major`, the day's one magnitude flag). **Steering,
+> same session:** Ben promoted `russia-ukraine-war` — the map's biggest
+> gap, the single largest mechanical world-news signal two days running
+> with zero thread coverage — and stated a standing coverage principle
+> now in AGENTS.md discipline 13 ("all active military conflicts that are
+> not hyper-local get coverage"). A real bug surfaced opening it: a
+> cross-reference note naming two countries close together inside a
+> thread file tied with the new thread on the world-news
+> country-proximity matcher and mis-won on file order — fixed, and the
+> lesson (never name two conflicts' combatant countries together inside a
+> thread file) is recorded in the affected digest. **Separately, a live
+> site bug, fixed and shipped:** the flash rail's dismiss button was
+> working exactly as spec'd 2026-07-29 (in-memory-only, reappears on
+> reload) — that stopped being tolerable the moment a second concurrent
+> flash actually landed. Rewrote dismissal to persist via `localStorage`
+> keyed by the flash's own id; confirmed with Ben that the scope
+> (per-browser, not a shared/global dismiss — one visitor's click must
+> never suppress real news for another) is the intended design, not a
+> gap, and recorded that confirmation in-code so it isn't "fixed" wrong
+> later. Verified with a real local Hugo build before shipping. Full
+> detail: `log.md`.
 
 > **2026-07-31 — extracted from kestrel (phase 6, Ben's call).** This
 > repo now holds everything the engine tends for The Projection: the

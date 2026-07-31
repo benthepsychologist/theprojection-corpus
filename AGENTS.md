@@ -1,7 +1,10 @@
-# AGENTS.md — operating kestrel
+# AGENTS.md — operating theprojection-data
 
-You are operating Ben's personal intelligence layer. Read `README.md` first —
-it carries the principle, layout, contracts, and migration state. The design
+You are operating Ben's personal intelligence layer — this repo is
+**instance #1** of the kestrel engine (engine/instance split, 2026-07-31).
+Read `CLAUDE.md` first for the split itself (what lives here vs. in
+`/workspace/kestrel`, the `KESTREL_INSTANCE` invocation rule), then
+`README.md` for the principle, layout, and contracts below. The design
 of record lives in the pm hub:
 `streams/research-and-writing/projects/mh-tech-record/intelligence-feed-pivot.md`.
 
@@ -56,7 +59,7 @@ through `attention/`.
 9. **Public publish is default-on, field-allowlisted, machine-checked — not
    hand-gated** (Ben, 2026-07-22: "no private information on here... I
    don't want to hand gate the feed. This is MY feed."). `theprojection.org`
-   is a separate public repo kestrel feeds via `tools/publish_projection.py`
+   is a separate public repo kestrel feeds via `tools/publish.py`
    — never the reverse, and no other path writes there. Every thread
    publishes unless individually held back with `public: false` in
    `attention/threads.yaml` — an escape hatch, not a gate. What still holds
@@ -251,7 +254,7 @@ primitive you score. The old vassal/`liege` idea becomes a **dependency**
 relationship — stubbed (`liege`→`depends_on` rename pending). It's part of
 the map: edits accept a `classify` provenance tag alongside `ben-steer`,
 carry a coverage-log line, and republish through
-`tools/publish_projection.py` (`data/board.json` + `data/claims.json` → the
+`tools/publish.py` (`data/board.json` + `data/claims.json` → the
 `/map/` node/pocket/sector pages + a `/claim/<node>--<dimension>/` page per
 metric). **Every metric is a claim with a cited source** — the value is the
 summary, the claim page is the receipt (`CLAUDE.md`: *a metric with no
@@ -275,18 +278,22 @@ End substantive sessions with both steps, in order:
 
 1. **Append to `log.md`** (create on first real session): what ran, what
    surfaced, what changed in `attention/`, where to pick up.
-2. **Commit and PUSH kestrel** — `git push origin master`. Commit anything
-   outstanding first, including the run's **provenance manifests**
-   (discipline 2: an artifact without a re-fetch manifest is incomplete);
-   they are receipts, not scratch, and are easy to leave untracked because
-   the publisher writes them after the work is already committed.
+2. **Commit and PUSH this repo (theprojection-data)** — `git push origin
+   main`. Commit anything outstanding first, including the run's
+   **provenance manifests** (discipline 2: an artifact without a re-fetch
+   manifest is incomplete); they are receipts, not scratch, and are easy
+   to leave untracked because the publisher writes them after the work is
+   already committed.
 
-**Why step 2 is written down** (Ben, 2026-07-29): `/publish --push` pushes
-**theprojection**, not kestrel — it fires the site's deploy hook and
-nothing else. Nothing in `/daily`, `/publish` or any other command ever
-pushes this repo, so unpushed work accumulates *silently across sessions*
-and looks fine locally. Found 2026-07-29 with **17 commits unpushed** —
+**Why step 2 is written down** (Ben, 2026-07-29, pre-split — the reasoning
+holds, only the repo name changed): `/publish --push` pushes
+**theprojection-site**, not this repo — it fires the site's deploy hook
+and nothing else. Nothing in `/daily`, `/publish` or any other command
+ever pushes this repo on its own, so unpushed work accumulates *silently
+across sessions* and looks fine locally. Found 2026-07-29 (pre-split, in
+what was then kestrel's own working tree) with **17 commits unpushed** —
 six from that session and **ten inherited from the previous evening's**,
 which had also closed without pushing. A clean `git status` is not
-evidence the work is safe; check `git log @{u}..` before calling a session
-done.
+evidence the work is safe; check `git log @{u}..` — on this repo AND on
+`/workspace/kestrel` and `/workspace/theprojection-site`, since none of
+the three ever push each other — before calling a session done.
