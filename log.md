@@ -1191,3 +1191,84 @@ unmatched signal), and the 07-31 standing rule appears to reach it.
 No steering taken this run (single-shot invocation). Next: 07-31 becomes
 finalizable at 14:00 UTC today; a later run closes it with the coverage
 critic.
+
+## 2026-08-01 (continued) — steering: flash rules rewritten twice, Gaza opened, and a country-code bug that explains both of the day's misses
+
+Ben's reaction to the `/daily` report, verbatim: *"skip dupes, lapse
+flash, flash only new things, escalate means nee[d] flash, yes to gaza,
+sure check out tye spain thing, check it out and surface if theres
+anything there."* Then, mid-run: *"flash messages should expire in 24h
+typically. flash means today."*
+
+**Two standing rule changes to the flash rail, both recorded in
+`flash.yaml`'s header and AGENTS.md discipline 10:**
+
+1. **A flash is a NEW EVENT, never a running state.** It describes its
+   triggering event and is never edited to carry a conflict forward; it
+   lapses on its own date rather than being extended. **An escalation is
+   itself a new event and earns its own new flash.** This *reverses* the
+   2026-07-30 precedent where the Iran flash was widened in place via an
+   `updated:` field.
+2. **A flash lives 24 hours — "flash means today."** Default `expires` is
+   event date + 1; longer needs a stated reason. Corollary: something that
+   surfaces late still gets at most 24h from filing, with the lateness
+   noted — being missed does not buy a fresh lifespan. Supersedes the 3-5
+   day windows used through 07-31.
+
+Applied: the two old entries (07-28 Jordan, 07-29/30 Poland airspace) were
+**lapsed immediately** — under a 24h rule neither is today — and three new
+ones filed, all expiring 08-02. Rail went 2 → 5 → 3 within the session and
+is back inside its own bar.
+
+**The Spain call was the one that paid.** It was the least-supported thing
+put in front of Ben all session: a raw mechanical cluster (`Spain–MAR`,
+67/44/37 outlets) offered as explicitly UNVERIFIED because nobody had
+looked and GDELT's CAMEO "Fight" verb mis-fires on sport constantly. He
+said check it. It was the **Ceuta border crisis**: ~50,000 people crossed
+from Morocco into Ceuta over 07-30/31, reported deaths rising from 18 to
+57 across the window, Spanish armed forces deployed, Sánchez calling it
+"an attack on Spain's territorial integrity," and France, Italy, Finland,
+Austria, Sweden, Denmark and the Czech Republic reimposing or threatening
+Schengen controls. Flashed. Nothing in the four lenses would ever have
+surfaced it.
+
+**`gaza-war` opened** (ben-steer, world-news, border-war, weight 3), with
+a full timeline built from a research pass. **One premise corrected in the
+process:** this is NOT active large-scale war — a ceasefire has held since
+2025-10-10 under UNSC Resolution 2803, a violated low-intensity truce
+monitors call "neither war nor peace." Opened as a **sibling** of the
+Middle East conflict thread, not a child: the Houthi campaign was linked
+to this ceasefire in Nov 2025 but on resuming in Mar 2026 was re-framed
+around a different war, and Tehran's role in Gaza is financial/legacy
+(~$70-100M/yr), not operational. Casualty figures are contested in *both*
+directions and the thread says so on its face — the Health Ministry's
+~72,063 excludes starvation/disease, a Lancet survey put violent deaths
+34.7% HIGHER than the Ministry's own figure for the same window, and the
+IDF now accepts the Ministry range after two years of disputing it.
+
+**THE FINDING OF THE SESSION — one engine bug explains both misses.**
+`build_world_news.py`'s `COUNTRY_NAME` map has **36 entries**, and neither
+`PSE` (Palestinian Territories) nor `MAR` (Morocco) is in it. An unmapped
+code renders as the raw ISO3 string (hence the literal `Israel–PSE` and
+`Spain–MAR` headlines) and — the real damage — the country-pair matcher
+searches thread prose for country *names*, so `"PSE"` can never appear and
+**the pair can never match a thread, however well covered it is.**
+Verified empirically rather than assumed: after opening `gaza-war` with
+Israel and Gaza named throughout, a fresh rebuild still returned all three
+`Israel–PSE` clusters as `candidate`. This is a silent-miss class covering
+roughly 160 countries, and the asymmetry is the bad part — a high outlet
+count on an unmatched cluster makes it MORE likely to be a real major
+story, and nothing escalates on that. Filed to kestrel's INBOX
+(`2026-08-01-...-world-news-country-code-map-incomplete.md`), ideas only,
+nothing run or committed there. Live consequence: `gaza-war` is tracked
+but its clusters will keep reporting as candidates until the engine is
+fixed — a known false negative, not a miscoded thread.
+
+Also applied: the Minnesota ledger duplicates are **closed unmerged**
+("skip dupes"), recorded in-file so it is not re-raised. Front briefing
+regenerated to lead with Ceuta. Site republished.
+
+Deliberate non-collision: `gaza-war.md` names "Tehran" rather than "Iran"
+throughout its regional-linkage section, and names one external party at a
+time — the 07-31 matcher-collision lesson applied prospectively. Verified
+by a proximity check across four country pairs before publishing.

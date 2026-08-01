@@ -79,7 +79,29 @@ through `attention/`.
     and it **publishes to theprojection on every page** (Ben: *"this is MY
     news feed FIRST. If its big world news it affects finance so its
     cohesive"*). A flash carries the same primary-source discipline as
-    everything else — a wrong flash is worse than a late one. Executive
+    everything else — a wrong flash is worse than a late one.
+    **A flash is a NEW EVENT, never a running state** (Ben, 2026-08-01:
+    *"lapse flash, flash only new things, escalate means need flash"*).
+    It describes the discrete event that triggered it and is **never
+    edited to carry a conflict's evolving state forward**; when its
+    trigger recedes it **lapses on its own `expires` date** rather than
+    being extended. **An escalation is itself a new event and earns its
+    own new flash** — a materially bigger strike, a new theatre, a new
+    combatant, an ordered offensive. This **reverses** the 2026-07-30
+    update-in-place precedent (where the Iran flash was widened via an
+    `updated:` field). Accepted consequence: a fast-escalating conflict
+    can briefly put an old entry and its successor on the rail at once;
+    that overlap self-clears and is not the "bar has drifted" failure the
+    at-most-one rule describes.
+    **A flash lives 24 hours — "flash means today"** (Ben, 2026-08-01:
+    *"flash messages should expire in 24h typically. flash means today."*).
+    Default `expires` is **the event date + 1 day**; anything longer is an
+    exception needing a stated reason. If it is still on the rail after a
+    day it has stopped being a flash and become a headline. Corollary: an
+    event that surfaces **late** still gets at most 24h from filing and
+    carries a note saying so — being missed does not buy a fresh lifespan.
+    This supersedes the 3-5 day `expires` values used through 2026-07-31.
+    Executive
     summaries are written in the digests' **neutral register**; the
     per-lens "Today's throughline" *is* the lens summary, and
     `<date>-front.md` is the cross-lens one. Full spec + what is still
