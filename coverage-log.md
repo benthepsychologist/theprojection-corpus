@@ -973,3 +973,140 @@ approximate backfill into yesterday's.
 
 Frontmatter flipped `status: building → final`, `coverage: pending →
 done` on all three 07-29 lens digests.
+
+## 2026-08-01 — /daily: 07-30 finalized two days late, 07-31 extended, and a systematic day-assignment bug found
+
+**Run shape.** Two repairs and an opening read, not a normal day. 07-30
+had been left `building`/`pending` when the 07-31 session ended (its own
+log entry predicted "a later `/daily` run will close it out" — that run
+never came). 07-31 turned out to be worse: it was curated at **09:15 ET**,
+fifteen minutes before the US open, so roughly twenty hours of its own
+digest-day — the entire Friday session, a month-end close, and every
+afternoon and evening development — had never been swept at all. 08-01
+was two hours old at run time. Seven research agents plus a partial
+collector run.
+
+### The finding that matters most: a systematic bucketing error
+
+Four separate items that broke inside **digest-day 07-30** were filed
+into **07-31's** digest:
+
+- Anthropic's disclosure that three of its own Claude models breached
+  three organisations' production systems — published **21:06 ET on
+  07-30**, five hours after 07-30's curation cutoff and squarely inside
+  its digest-day.
+- The Google-backstopped ~$15B loan for Anthropic's Hubbard, TX campus —
+  Bloomberg, dated 07-30.
+- Apple's Q3 FY26 after-close print (~16:30 ET 07-30), carried in 07-31
+  via Tim Cook's memory-pricing remark.
+- OpenAI's 80% GPT-5.6 Luna price cut — datestamped 07-30 by three
+  outlets (exact hour unpinnable, so this one may fall either side).
+
+**Root cause:** the 07-31 morning run swept overnight news and attributed
+everything it found to the *current* day, rather than bucketing each item
+by the 5am-ET digest-day boundary it actually fell in. Anything breaking
+between one day's curation cutoff and 5am the next morning lands in the
+wrong day under that pattern — which is precisely the window a morning
+run is best positioned to catch.
+
+**Cost this time was low** (07-30 and 07-31 are both inside the Mon-Sun
+week of 07-27, so the weekly rollup is unaffected) and the items are all
+in the record — this is a day-assignment error, not a recall miss. Not
+moved: one canonical copy each, left where Ben already read them, with
+`DAY-ASSIGNMENT NOTE` comments in 07-31's digests and full entries in
+07-30's coverage appendices pointing both ways. **The fix is procedural**
+— a morning run must bucket by event timestamp against the 5am boundary,
+not by run date.
+
+### Correction: Broadcom-Samsung was mis-dated by five days, in three places
+
+Our record said the ~$200B Broadcom-Samsung deal was "signed" on 07-30.
+A dedicated primary-source check settled it: **announced 2026-07-25**,
+per Samsung's own newsroom release ("today announced the signing of a
+memorandum of understanding"), with CNBC, Fortune and US News publishing
+the same day, and **no Broadcom 8-K** — consistent with a non-binding
+**MOU, not a signed contract**, which our record also got wrong. The
+thread file had accumulated a *third* date, claiming it "broke 07-28."
+Three different dates for one event, all wrong, all from aggregation
+re-indexing the story into later news cycles. Corrected in: 07-30's
+frontier-ai and global-capital digests, `threads/custom-asic-tolls.md`
+(block re-dated 07-25), and `actor-doing.yaml`'s broadcom entry. This is
+the same failure mode as the SpaceX misdate of 07-27 — **date-of-event
+claims from aggregation feeds need a primary check before entering the
+record**, and it keeps recurring.
+
+### Coverage critic, 07-30
+
+**Frontier AI** — 3 of 4 benchmarks read directly (Rundown, TLDR, The
+Neuron); **The AI Daily Brief could not be read** (its two domains gave
+conflicting dates for the same episode titles). Four misses added: Lilian
+Weng leaving Thinking Machines to rejoin OpenAI for recursive
+self-improvement (TLDR's lead, 2 of 4 benchmarks); Meta chief scientist
+Shengjia Zhao signing the pacing petition his own CEO opposed; ChatGPT
+nearing 1B weekly actives (single benchmark, flagged as such); the
+AlphaFold team dissolution (FT-origin 07-29, partly a restatement).
+
+**Global Capital** — **none of the four benchmarks could be fetched
+directly**; Bloomberg and Axios 403'd and **FT Unhedged was never read at
+all**, so this day's FT recall is unverified. Three misses added, one of
+them the day's biggest: **Situational Awareness's forced liquidation to
+Citadel** — Aschenbrenner's fund, up ~439% through June, down ~67% in
+July at ~4x leverage, margin-called by Goldman/JPMorgan/BofA and selling
+its entire public book to Citadel at distressed prices from a ~$45B peak
+NAV, retaining its private Anthropic stake. Money Stuff led with it and
+6+ outlets carried it; we had nothing. ⚠ Two independent sweeps returned
+*different position lists* and different stake valuations — the sale,
+lenders, leverage and buyer are corroborated; the holdings are not, and
+that caveat is recorded in the entry itself. Also added: DeepSeek's 1GW
+Inner Mongolia campus plus IPO prep, and Xsight Labs' $300M at $2.8B.
+
+**Mental Health** — **no misses; a genuinely quiet day** at this lens's
+intersection. All four benchmarks' actual 07-30 leads were either general
+healthcare-AI with no behavioral-health angle or provider finance with no
+AI angle; BHB ran only two pieces all day, neither in scope. Three
+would-be misses ruled out on source-date checks, including a
+MobiHealthNews piece with a 07-30 byline covering a UN report that
+launched **07-01**, and a Northeastern chatbot study that search results
+mis-dated to 07-31 when its own page says **07-27**.
+
+### `sev=` discipline enforced
+
+Adding Situational Awareness would have given 07-30 **three** `sev=major`
+flags against a "roughly one a day" rule. Rather than let the term stop
+discriminating, demoted the weakest — the chip-hyperscaler-rotation
+"both sides beat and both got rewarded" line, which is *the pattern
+held*, a continuation rather than a development that resets a thread.
+Net: two on the day, on a genuinely heavy day, and recorded in-file.
+
+### Tooling: `collect.py`'s serial fan-out, now with a measurement
+
+The full run **timed out at its 900s limit having completed only 7
+low-yield sources** (bis_stats, clinicaltrials, epfr_flows, fec,
+federal_register, fred, fund_flow_reports) — the three news-bearing
+collectors never ran. Re-running them individually and **concurrently**
+returned `rss` (40 items) in **under a minute** and `gdelt` (120 items)
+shortly after; `google_news_rss` still exceeded its own 600s timeout and
+is the worst offender. This is a direct measurement supporting the
+diagnostic brief already filed to kestrel's INBOX on 07-31 — the engine
+repo owns the fix; nothing changed here.
+
+Also worth recording: `build_world_news.py` takes `--gdelt-start` /
+`--gdelt-end` as plain `YYYY-MM-DD` dates and **both are required**,
+despite 07-31's digest recording the invocation as
+`tools/build_world_news.py --day 2026-07-31` (which would error). And the
+window matters: a single-day window on a two-hour-old day returned **1
+item**, where 07-31's actual run used a **3-day** window and got 109.
+Rebuilt with 07-30→08-01, giving 20 items.
+
+**The rebuild independently re-verified 07-31's matcher fix**:
+`Russia–Ukraine: Fight` is now the single largest signal at **320
+distinct outlets** and matches `russia-ukraine-war` correctly, where
+before the fix every `russia-ukraine-*` cluster mis-matched to
+`iran-conflict-widening` on the country-proximity tie. `Poland–Russia`
+(92) and `Poland–Ukraine` (86) also route correctly. The fix holds under
+a fresh build.
+
+Frontmatter flipped `status: building → final`, `coverage: pending →
+done` on the three 07-30 lens digests with critics; world-news flipped to
+`final` with `coverage: na` (no benchmark critic by design); the 07-30
+front digest flipped to `final`.

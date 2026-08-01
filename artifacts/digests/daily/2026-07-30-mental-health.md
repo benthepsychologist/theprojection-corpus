@@ -1,10 +1,11 @@
 ---
 lens: mental-health
 date: 2026-07-30
-status: building
+status: final
 window_start: 2026-07-30T05:00:00-04:00
-as_of: 2026-07-30T16:00:00-04:00
-coverage: pending
+window_end: 2026-07-31T05:00:00-04:00
+finalized: 2026-08-01T06:20:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-07-30
@@ -72,6 +73,54 @@ tier-2 sweep and wasn't.
 ## 🧵 Thread candidates
 
 - None new today — both real developments landed on existing threads.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run at finalize, 2026-08-01 (two days late — 07-30 was left `building`
+when the 07-31 session ended). Benchmarks: Behavioral Health Business,
+STAT Health Tech, Fierce Healthcare, MobiHealthNews.*
+
+**Access:** BHB's 07-30 date archive and STAT Health Tech read directly.
+Fierce Healthcare returned 403 to both direct fetch and reader proxy —
+covered by targeted search only. MobiHealthNews read directly for one
+article, the rest via search.
+
+**They led with → we missed: nothing.** 07-30 was genuinely quiet at this
+lens's specific intersection. What the benchmarks led with that day was
+either general healthcare-AI with no behavioral-health angle (Stellarus's
+payer-service copilot, the Hims FTC suit, OpenAI's 100k-researcher
+program, clinical-LLM benchmarking) or provider finance with no AI angle
+(Acadia's bed strategy, the SUD M&A slowdown). BHB ran only two pieces
+all day, neither in scope.
+
+**Both covered:** nothing overlapping — the benchmarks and this digest
+did not intersect on 07-30.
+
+**We had → they didn't:** the Sheba Medical Center/OpenAI hospital-wide
+rollout, the second Tennessee class action naming xAI and Stability AI,
+the four arXiv preprints, and the teen mock-Senate policy exercise. All
+four were ours alone.
+
+**Ruled out, do not re-flag** (each checked against its actual source
+date, not an aggregator's):
+
+- MobiHealthNews's UN-backed AI report piece — in-scope content and a
+  07-30 byline, but the underlying UN Independent International Scientific
+  Panel preliminary report launched **2026-07-01** and was covered then. A
+  four-week-late vertical writeup, not a 07-30 development.
+- The Northeastern chatbot study (8 chatbots, 16 conditions, 81% failure
+  rates outside suicide-topic safeguards) — search results mis-dated this
+  to 07-31; the source page itself says **2026-07-27**. Ambient.
+- The Canadian ChatGPT suicide suit and the Soelberg murder-suicide suit
+  (June 11 / July 25), OpenAI's ChatGPT Health launch (07-23, and general
+  health records rather than mental health specifically), the Spring
+  Health/Alma deal (announced January, closed May), and Limbic's voice-AI
+  intake tool (May 2025) — all pre-window restatements.
+
+**Late-window (16:00 ET 07-30 → 05:00 ET 07-31): none found.** Searched
+specifically for FDA/FTC/congressional action, new companion-chatbot
+litigation, and Character.AI/Replika/OpenAI mental-health news in that
+span. Clean.
 
 ---
 Sheba Medical Center's OpenAI partnership is the first international,

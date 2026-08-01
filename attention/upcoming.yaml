@@ -132,7 +132,27 @@ expectations:
     what_confirms: "official announcement naming participants and the 30-day term"
     logged: 2026-07-22
     logged_by: curate-add
-    status: pending
+    # 2026-08-01 ⟨daily⟩: the by-date arrived with NO announcement. 3-day
+    # retro-flip grace runs to 2026-08-04 before this stands.
+    status: passed-silent
+    resolved: 2026-08-01
+    evidence: >
+      The 08-01 by-date passed with no announcement. Checked whitehouse.gov
+      directly: the only frontier-AI action published there remains the
+      original EO 14409 page (2026-06-02) — no successor press release, fact
+      sheet, or briefing-room post naming participants or the 30-day term.
+      As of 07-29 the framework was still a DRAFT circulated to OpenAI,
+      Anthropic and Google, who had jointly submitted revisions, with core
+      disputes unresolved over the definition of "frontier model" and
+      open-source exemptions (CNBC 07-29, Digitimes 07-29). Altman's
+      reported meeting with WH chief of staff Susie Wiles the week of 07-27
+      was itself because the framework was NOT final. Every outlet's framing
+      stayed forward-looking ("expected before August 1," "could come as
+      soon as the first week of August") — no outlet reports a signing or
+      publication event. NOTE: this is the SAME event as the Sec. 3(b) half
+      of eo14409-deadlines (same 60-day clock, same agencies, same 30-day
+      access mechanism) — they are one deliverable, not two, and both
+      passed silent together.
 
   - id: claude-opus-5-honeycomb
     claim: "Claude Opus 5 ships (rumored 'Honeycomb' build, mid-Jul–early-Aug window)"
@@ -178,7 +198,32 @@ expectations:
     what_confirms: "publication of the framework/threshold or reporting that the deadline slipped; likely arrives WITH the framework announcement (see gov-review-framework-announce)"
     logged: 2026-07-22
     logged_by: crawl
-    status: pending
+    # 2026-08-01 ⟨daily⟩: BOTH 60-day deliverables passed silent. 3-day
+    # retro-flip grace runs to 2026-08-04 before this stands.
+    status: passed-silent
+    resolved: 2026-08-01
+    evidence: >
+      EO 14409 was signed 2026-06-02, so its 60-day Sec. 3 deliverables came
+      due 2026-08-01. Verified against the EO text on whitehouse.gov
+      directly: Sec. 3 requires (a) Treasury / Dept of War-NSA / DHS-CISA,
+      consulting NIST/Commerce, to develop a CLASSIFIED benchmarking process
+      setting the threshold at which a model is designated a "covered
+      frontier model"; and (b) under Sec. 3(b), the same agencies to design
+      the voluntary framework for up to 30-day pre-release government
+      access. Neither landed. On the classified threshold there is no public
+      acknowledgment of completion at all — not even a terse
+      delivered-on-time statement from NSA, CISA, Treasury or NIST; targeted
+      searches returned only explainer and legal-alert pieces restating the
+      requirement, plus a CSA research note observing it found no public
+      confirmation the required structures were stood up as of early July.
+      CRS brief IF13268 (congress.gov, 2026-07-09) independently confirms
+      the same 60-day/08-01 deadline and agency list. The Sec. 3(b) half is
+      the SAME event as gov-review-framework-announce — one deliverable
+      tracked twice, both passed silent together. ⚠ The federalregister.gov
+      source URL itself could not be fetched (interstitial redirect to
+      unblock.federalregister.gov); the EO text was confirmed on
+      whitehouse.gov instead, and a govinfo.gov PDF mirror exists but was
+      not independently re-fetched.
 
   - id: glm-5-5-release
     claim: "Z.AI ships GLM-5.5 (>1T params, 1M context)"
@@ -242,7 +287,28 @@ expectations:
     what_confirms: "the statute in force on 08-01, OR xAI securing injunctive relief before it — a suit FILED is not a stay"
     logged: 2026-07-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-01
+    evidence: >
+      The statute took effect 2026-08-01 as scheduled, and xAI did NOT
+      secure relief — the exact filed-is-not-a-stay case this entry was
+      written to catch. PRIMARY (house.mn.gov/NewLaws/story/2026/5741, the
+      legislature's own New Laws page): HF1606*/SF1119/CH72 effective
+      2026-08-01, prohibiting "nudifying" images or video of real people,
+      civil penalties up to $500,000 per violation, private right of action.
+      xAI (X.AI LLC) sued MN AG Keith Ellison 2026-07-27 (No. 0:26-cv-03425,
+      D. Minn.; complaint confirmed via the RECAP mirror) on First and
+      Fourteenth Amendment grounds, and moved for a TRO 07-29. US District
+      Judge Donovan W. Frank DENIED the TRO on 2026-07-31, reasoning that
+      xAI's nearly three-month delay after the law was signed "suggests that
+      harm is not immediate." The law took effect the next morning. Not
+      adjudicated on the merits: Frank is treating the TRO motion as a
+      preliminary-injunction request, hearing set 2026-08-19 in St. Paul
+      (see xai-mn-preliminary-injunction). ⚠ The CourtListener docket page
+      itself returned HTTP 403; the docket sequence is reconstructed from
+      the RECAP complaint PDF plus five-plus independent outlets (Fox9, NBC
+      News, CBS Minnesota, Minnesota Reformer, CNBC) agreeing on judge,
+      dates, and posture — not read off the docket sheet directly.
 
   - id: ca-sb903-assembly
     claim: "California SB 903 clears Assembly Appropriations (fiscal-committee deadline)"
@@ -631,6 +697,51 @@ expectations:
     what_confirms: "the law in force, OR an injunction blocking it — the injunction is the louder outcome"
     logged: 2026-07-29
     logged_by: curate-add
+    # ⚠ DUPLICATE of mn-nudify-ban-effective — flagged 2026-07-31, confirmed
+    # 2026-08-01 ⟨daily⟩ by a dedicated check: both cite the same CNBC
+    # article, both ask about the SAME effective date AND the same injunction
+    # status in one sentence, and both were resolved by the one 07-31 court
+    # order. Neither tracks a separate axis (statute-only vs litigation-only)
+    # — the only differences are cosmetic wording and due_precision.
+    # Resolved identically here so the record is complete; MERGE IS BEN'S
+    # CALL, not taken unilaterally. Full evidence on mn-nudify-ban-effective.
+    status: hit
+    resolved: 2026-08-01
+    evidence: >
+      Same event, same outcome as mn-nudify-ban-effective: HF1606 took effect
+      2026-08-01 as scheduled (house.mn.gov/NewLaws/story/2026/5741), and the
+      louder outcome this entry watched for — an injunction blocking it — did
+      NOT occur: Judge Donovan W. Frank denied xAI's TRO 2026-07-31 (No.
+      0:26-cv-03425, D. Minn.). Preliminary-injunction hearing 2026-08-19.
+
+  - id: eu-ai-act-code-of-practice
+    claim: "EU AI Act Code of Practice obligations bind for general-purpose AI models"
+    due: 2026-08-02
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: [openai, anthropic, google, meta-ai]
+    source: https://openai.com/index/advancing-responsible-ai-across-europe/
+    confidence: reported   # date surfaced via OpenAI's own compliance post + trade press; NOT yet verified against the EU's own instrument
+    what_confirms: "the obligations actually in force on 08-02, and which providers have published conforming documentation; verify the date against the EU AI Act text itself before treating as confirmed"
+    logged: 2026-08-01
+    logged_by: curate-add
+    # 2026-08-01 ⟨daily⟩: caught only because OpenAI published a compliance
+    # post two days ahead of it. A hard, non-discretionary regulatory date
+    # that this map was not tracking at all — worth noting as a gap in its
+    # own right, given EO 14409's discretionary deadlines ARE tracked.
+    status: pending
+
+  - id: xai-mn-preliminary-injunction
+    claim: "xAI v. Ellison preliminary-injunction hearing on Minnesota's HF1606 'nudify' ban (TRO already denied 07-31; law in force since 08-01)"
+    due: 2026-08-19
+    due_precision: day
+    thread: grok-companion-harm
+    entities: [xai]
+    source: https://www.house.mn.gov/NewLaws/story/2026/5741
+    confidence: confirmed   # hearing date set from the bench by Judge Frank
+    what_confirms: "the hearing happening and any ruling on the preliminary injunction; briefing schedule is Ellison opposition due 08-12, xAI reply due 08-17, so a slip shows up in those dates first"
+    logged: 2026-08-01
+    logged_by: curate-add   # successor to mn-nudify-ban-effective, resolved hit 08-01
     status: pending
 
   - id: cms-access-cohort-august

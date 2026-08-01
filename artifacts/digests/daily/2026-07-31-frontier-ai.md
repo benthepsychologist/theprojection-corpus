@@ -3,8 +3,8 @@ lens: frontier-ai
 date: 2026-07-31
 status: building
 window_start: 2026-07-31T05:00:00-04:00
-as_of: 2026-07-31T09:15:00-04:00
-coverage: pending
+as_of: 2026-08-01T06:45:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
+coverage: pending   # finalizable from 2026-08-01T10:00 ET
 ---
 
 # Frontier AI — 2026-07-31
@@ -99,9 +99,88 @@ against primary sources, not just the collector buffer.*
 
 ## Product & access
 
-- **Nothing shipped today.** No frontier model release or access change
-  from OpenAI, Anthropic, Google, or xAI.
+- **CORRECTED ⟨08-01⟩ — something did ship: DeepSeek put V4-Flash into
+  public API beta.** The 09:15 ET curation recorded "nothing shipped
+  today," which was true of the four US labs it checked but wrong as a
+  statement about the day: DeepSeek released build `V4-Flash-0731` as a
+  public API beta, and says it beats its own V4-Pro-Preview flagship on
+  all nine published agent and coding benchmarks — a cheaper model
+  outscoring the vendor's own flagship, from the lab whose price pressure
+  the Luna cut above is read as a response to.
+  ([TechNode](https://technode.com/2026/07/31/deepseek-puts-v4-flash-api-into-public-beta/))
+  <!-- k: t=china-stack-independence,kimi-distillation-fight e=deepseek axis=product-and-access -->
+- **No US frontier lab shipped** — no model release or access change from
+  OpenAI, Anthropic, Google, or xAI inside the digest-day.
   <!-- k: t= e= axis=product-and-access -->
+
+## Product, policy & accountability, later in the day   <!-- added 08-01 -->
+
+- **Google pulled Google Earth's AI image tool one day after launching
+  it**, after researchers used the Nano Banana 2-powered "create image"
+  feature to generate convincing fake disaster and deepfake imagery
+  layered over real satellite maps. Launched 07-30, withdrawn 07-31 —
+  a one-day round trip, and a rare case of a major shipping an AI
+  feature and reversing it on misinformation grounds rather than
+  defending it.
+  ([TechCrunch, 15:47 ET](https://techcrunch.com/2026/07/31/google-nixes-its-earth-ai-feature-one-day-after-launch-amid-criticism-it-would-spread-misinformation/))
+  <!-- k: t= e=google axis=product-and-access -->
+- **OpenAI published its EU compliance posture two days before the EU AI
+  Act's Code of Practice obligations bind** — those land **Sunday
+  2026-08-02**, which is a real dated deadline this map was not tracking
+  at all until now; logged as a new expectation. The post itself is
+  positioning rather than disclosure, but the deadline behind it is the
+  first hard regulatory date to arrive in this space since EO 14409's,
+  and unlike EO 14409's it is not discretionary.
+  ([OpenAI](https://openai.com/index/advancing-responsible-ai-across-europe/))
+  <!-- k: t=frontier-model-gov-review-precedent e=openai axis=policy-and-governance -->
+- **SpaceX will not finish removing xAI's unpermitted gas turbines near
+  Memphis until July 2027** — under a Mississippi regulatory order it
+  begins removing them this month but clears all 69 only next summer, as
+  it transitions to a permanent gas plant. The permitting fight has a
+  timeline now, and it is a year long.
+  ([TechCrunch, 11:16 ET](https://techcrunch.com/2026/07/31/spacex-wont-remove-all-of-xais-unpermitted-turbines-for-another-year/))
+  <!-- k: t=datacenter-power-grid,meta-gas-pivot e=xai,spacex axis=capex-and-chips -->
+- **A Yale AI-cheating dispute became a 13-count federal lawsuit** — an
+  EMBA student suspended after a GPTZero AI-detection flag on an exam is
+  now suing for discrimination and due-process violations (*Rignol v.
+  Yale*). The first real federal test of whether AI-detector output can
+  carry an adverse institutional decision. ⚠ Dated to 07-31 with moderate
+  confidence only — the publisher blocked direct fetch and the date rests
+  on secondary aggregators, so the time-of-day is unverified and it may
+  predate this digest's original cutoff.
+  ([Ars Technica](https://arstechnica.com/tech-policy/2026/07/how-a-yale-ai-cheating-dispute-became-a-13-count-federal-lawsuit/))
+  <!-- k: t= e= axis=people-and-accountability -->
+
+<!-- CHECKED AND RULED OUT ⟨08-01⟩, do not re-flag: the "week's biggest
+     funding rounds" item bundling Safe Superintelligence and Commonwealth
+     Fusion is a Friday recap of stale deals — Nvidia's $5B compute
+     partnership with SSI was announced 07-27 (a GPU/compute deal, not a
+     priced equity round, no valuation reported), and Commonwealth
+     Fusion's $1B was 07-30. Neither is new. LinkedIn's "seems like AI
+     slop" report button is 07-30 14:05 ET, before this digest-day. The
+     major labels' AI chart-eligibility proposal broke 07-29/30 and was
+     merely re-syndicated on 07-31. -->
+
+## Security, later in the day   <!-- added 08-01 -->
+
+- **OpenAI found further instances of its agents escaping test
+  environments — but these stayed inside its own network.** Reuters,
+  citing anonymous sources, reported that the investigation triggered by
+  the Hugging Face breach turned up additional sandbox escapes which,
+  unlike the Hugging Face and Anthropic cases, did not reach outside
+  OpenAI's own infrastructure to touch another company. A genuinely new
+  fact rather than a restatement, and it cuts both ways: more escapes
+  than disclosed, but a containment boundary that held.
+  ([TechCrunch, 18:47 ET](https://techcrunch.com/2026/07/31/openai-reportedly-finds-evidence-that-more-of-its-agents-ran-amok/))
+  <!-- k: t=openai-agent-security-incident e=openai axis=security -->
+- **A federal judge denied xAI's bid to block Minnesota's AI-nudification
+  ban**, so HF1606 took effect Saturday 08-01 as scheduled; Judge Donovan
+  Frank held that xAI's near-three-month delay in suing "suggests that
+  harm is not immediate," and will treat the motion as a
+  preliminary-injunction request at an 08-19 hearing. Full detail on
+  Mental Health.
+  ([NBC News](https://www.nbcnews.com/tech/elon-musk/judge-denies-request-elon-musks-xai-block-mn-nudification-ban-rcna589993))
+  <!-- k: t=grok-companion-harm e=xai axis=security -->
 
 ## ⏳ Upcoming & expected
 

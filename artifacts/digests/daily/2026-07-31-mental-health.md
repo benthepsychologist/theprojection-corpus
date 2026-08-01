@@ -3,8 +3,8 @@ lens: mental-health
 date: 2026-07-31
 status: building
 window_start: 2026-07-31T05:00:00-04:00
-as_of: 2026-07-31T09:15:00-04:00
-coverage: pending
+as_of: 2026-08-01T06:50:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
+coverage: pending   # finalizable from 2026-08-01T10:00 ET
 ---
 
 # Mental Health — 2026-07-31
@@ -21,8 +21,14 @@ wire pickup dated 07-30, a genuine map gap now closed. It directly
 answers `state-therapy-chatbot-bans`'s standing "preemption pressure"
 watch question. Separately, a federal judge kept the Jane Doe plaintiffs
 in the Grok deepfake suit pseudonymous — incremental, not a reset.
-Otherwise quiet: no new movement on Kaiser mediation, MHPAEA, CMS
-ACCESS, or the state bills already on the ledger.
+
+**Extended 08-01:** the day's biggest development came later and was
+missed by the 09:15 curation — a second federal judge, in Minnesota,
+denied xAI's bid to block that state's AI-nudification ban, so HF1606
+took effect Saturday on schedule. Two adverse rulings against xAI, in two
+different federal courts, in two unrelated cases, on one day. The state
+bills were not quiet after all; Kaiser mediation, MHPAEA and CMS ACCESS
+genuinely were.
 
 ## Policy & governance
 
@@ -48,11 +54,32 @@ ACCESS, or the state bills already on the ledger.
   reset.
   ([Law360](https://www.law360.com/articles/2507907))
   <!-- k: t=grok-companion-harm e=xai axis=clinical-safety-and-harm -->
+- **A second, separate ruling went against xAI the same day: a federal
+  judge in Minnesota denied its bid to block that state's AI-nudification
+  ban, and HF1606 took effect Saturday 08-01 as scheduled.** Judge Donovan
+  W. Frank held that xAI's near-three-month delay between the law's
+  signing and its 07-27 suit "suggests that harm is not immediate" —
+  precisely the filed-is-not-a-stay distinction the ledger entry was
+  written to test. The statute carries civil penalties up to $500,000 per
+  violation and a private right of action. Not adjudicated on the merits:
+  Frank will treat the TRO motion as a preliminary-injunction request at
+  an 08-19 hearing in St. Paul, with the state's opposition due 08-12 and
+  xAI's reply 08-17. Two adverse rulings for xAI in two different federal
+  courts on the same day, in two different cases — worth not conflating
+  with the Jane Doe ruling above (that one is N.D. Cal., the Tennessee
+  CSAM-adjacent deepfake suit; this one is D. Minn., No. 0:26-cv-03425,
+  a First Amendment challenge to a state statute).
+  ([Minnesota Legislature, primary](https://www.house.mn.gov/NewLaws/story/2026/5741), [NBC News](https://www.nbcnews.com/tech/elon-musk/judge-denies-request-elon-musks-xai-block-mn-nudification-ban-rcna589993))
+  <!-- k: t=grok-companion-harm,state-therapy-chatbot-bans e=xai axis=clinical-safety-and-harm sev=major -->
 
 ## ⏳ Upcoming & expected
 
-- No flips today. `mn-nudify-ban-effective` / `minnesota-nudify-effective`
-  both due tomorrow (08-01); `colorado-hb1195-effective` 08-12;
+- **⟨08-01⟩ — the decisive event for both Minnesota entries happened
+  today, not on their due date.** Judge Frank's TRO denial (above) landed
+  07-31; the law then took effect 08-01, so `mn-nudify-ban-effective` and
+  `minnesota-nudify-effective` both flip **hit** in 08-01's digest, on
+  evidence generated inside this digest-day.
+- `colorado-hb1195-effective` 08-12;
   `ca-sb903-assembly` still unresolved (08-14 vs 08-29 unsettled);
   `kaiser-nuhw-mediation` due 08-31, checked — no firm date found, the
   thread's "no date yet" stands.
@@ -70,5 +97,6 @@ ACCESS, or the state bills already on the ledger.
 A federal companion-chatbot bill for minors (S.5154) surfaced — introduced
 07-28, only caught today, and it directly answers the state-ban thread's
 preemption question. A federal judge kept the Grok deepfake plaintiffs
-pseudonymous. Otherwise a quiet day: no movement on Kaiser mediation,
-MHPAEA, or CMS ACCESS.
+pseudonymous. And a second federal judge, in Minnesota, refused to block
+that state's AI-nudification ban — so the law took effect Saturday, and
+xAI lost twice in one day in two different courts.

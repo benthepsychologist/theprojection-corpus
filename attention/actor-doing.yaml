@@ -198,11 +198,21 @@ actors:
       straight through it.
 
   deepseek:
-    asof: 2026-07-24
+    asof: 2026-08-01
     doing: >
-      V4 shipped (open weights); reportedly weighing a $71B raise and a 2026
-      IPO. Part of China's full-stack decoupling, moving as a bloc with the
-      other domestic labs rather than as a lone story.
+      Shipping and building at once. On 07-31 it put V4-Flash-0731 into
+      public API beta, claiming it beats its own V4-Pro-Preview flagship
+      on all nine published agent and coding benchmarks — a cheaper model
+      outscoring its own top line, landing hours after OpenAI cut GPT-5.6
+      Luna pricing 80%. On 07-30 Bloomberg reported it is developing a
+      ~1GW campus in Ulanqab, Inner Mongolia (partial capacity late
+      2027/early 2028, building some and leasing the rest, Nvidia-vs-Huawei
+      silicon still undecided) and could file to IPO as soon as this year
+      after a reported $7B raise at ~$50B. Read against the 07-30 note
+      that it PAUSED a larger ~$74B raise: one round was paused, the
+      capital programme was not. Part of China's full-stack decoupling,
+      moving as a bloc with the other domestic labs rather than as a lone
+      story.
 
   alibaba-qwen:
     asof: 2026-07-24
@@ -338,8 +348,22 @@ actors:
       arm converting fiduciary scale into physical-infrastructure
       ownership. Aladdin remains the systemic footprint nobody prices.
   xai:
-    asof: 2026-07-29
+    asof: 2026-08-01
     doing: >
+      LOST TWICE IN FEDERAL COURT ON 07-31, in two unrelated cases on one
+      day. In Minnesota, Judge Donovan W. Frank DENIED its TRO against the
+      state's HF1606 'nudify' ban, holding that waiting nearly three
+      months after the law was signed before suing 'suggests that harm is
+      not immediate' — so the statute took effect on schedule 08-01, with
+      penalties to $500,000 per violation and a private right of action.
+      Its go-to-court-rather-than-lobby strategy has now been tested once
+      and failed at the first stage; the merits are still open at an
+      08-19 preliminary-injunction hearing (No. 0:26-cv-03425, D. Minn.).
+      Separately, in N.D. Cal., a court refused its bid to unmask the
+      Jane Doe plaintiffs in the Grok deepfake suit, finding their fear of
+      retaliation reasonable. Also 07-31: SpaceX will not finish removing
+      xAI's 69 unpermitted gas turbines near Memphis until July 2027
+      under a Mississippi order. Below, the standing picture as of 07-29:
       An L2 subnode of SpaceX now, not a company: reportedly dissolved as
       a separate legal entity and folded into SpaceXAI (07-06) — the
       identity stays distinct here for Grok and Colossus; the money
@@ -358,13 +382,17 @@ actors:
       deepfakes. The CSAM cluster and the talent exodus (all 11
       co-founders gone) are unchanged.
   broadcom:
-    asof: 2026-07-30
+    asof: 2026-08-01
     doing: >
-      Opened a genuinely new toll layer 07-30: a ~$200B partnership with
-      Samsung through 2030 — Samsung supplies HBM memory (the primary
-      driver, HBM costs up ~20% in Q1) plus some sub-2nm foundry
-      manufacturing, an advanced-packaging piece still only "expected to
-      extend." Distinct from the ASIC co-design book: memory-supply
+      Opened a genuinely new toll layer on 2026-07-25 (date corrected
+      08-01 — previously recorded here as 07-30, five days late, from an
+      aggregation re-index): a >$200B MEMORANDUM OF UNDERSTANDING with
+      Samsung through 2030 — note it is an MOU, not a definitive
+      contract, which is why no 8-K accompanies it. Samsung supplies
+      HBM4/HBM4E memory (the primary driver, HBM costs up ~20% in Q1),
+      runs 2nm-and-below wafer foundry for Broadcom, and the
+      advanced-packaging piece (2.3D/2.5D) is included rather than merely
+      "expected to extend." Distinct from the ASIC co-design book: memory-supply
       lock-in plus a foundry hedge beyond TSMC-exclusivity. That book
       still stands at FIVE majors: Google ($21B TPU order + Anthropic's
       multi-GW expansion), Meta through 2029, OpenAI's Jalapeño now

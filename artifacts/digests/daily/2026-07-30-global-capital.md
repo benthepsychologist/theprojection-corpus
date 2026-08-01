@@ -1,10 +1,11 @@
 ---
 lens: global-capital
 date: 2026-07-30
-status: building
+status: final
 window_start: 2026-07-30T05:00:00-04:00
-as_of: 2026-07-30T16:15:00-04:00
-coverage: pending
+window_end: 2026-07-31T05:00:00-04:00
+finalized: 2026-08-01T06:20:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-07-30
@@ -49,7 +50,13 @@ blockade, no clean print to cite. SoftBank still hasn't reported.
   completed the same line across all five prints this week: Microsoft,
   Samsung, and Amazon rewarded for visible revenue conversion; Meta, Arm,
   and Qualcomm sold despite their own strong numbers.
-  <!-- k: t=chip-hyperscaler-rotation,ai-compute-spend e=samsung axis=capital-in-my-markets sev=major -->
+  <!-- k: t=chip-hyperscaler-rotation,ai-compute-spend e=samsung axis=capital-in-my-markets -->
+  <!-- sev=major REMOVED ⟨finalize 08-01⟩: this is "the pattern held" — a
+       continuation, not a development that resets the thread. With the
+       Situational Awareness forced liquidation added below, the day carried
+       three sev=major flags against a "roughly one a day" discipline;
+       demoting the weakest rather than letting the term stop
+       discriminating. -->
 - **30-year Treasury yield sits near 5.24%**, its highest since 2007,
   continuing the post-FOMC bond selloff.
   <!-- k: t= e= axis=capital-in-my-markets -->
@@ -79,10 +86,55 @@ blockade, no clean print to cite. SoftBank still hasn't reported.
   the stock still fell ~3.3% on the day, underscoring the "AI business
   priced at zero" read on SpaceXAI.
   <!-- k: t=spacexai-public-megacap e=spacex axis=deals-and-filings -->
-- **Broadcom and Samsung signed a ~$200B partnership through 2030** — HBM
-  memory supply plus a foundry hedge; see Frontier AI for the full China/
-  chips read.
+- **CORRECTED ⟨finalize 08-01⟩ — Broadcom and Samsung's ~$200B
+  collaboration was announced 2026-07-25, not today, and it is an MOU, not
+  a signed contract.** Samsung's own newsroom release is datelined July 25
+  and says the two "today announced the signing of a memorandum of
+  understanding" at an event in San Francisco; CNBC, Fortune and US News
+  all published the same day. This digest filed it as a 07-30 development
+  — five days late — because the story was re-indexed into the 07-30 news
+  cycle by aggregation. The substance holds: >$200B through 2030 across
+  HBM4/HBM4E memory supply, 2nm-and-below wafer foundry, and 2.3D/2.5D
+  advanced packaging, positioning Samsung as Broadcom's second source
+  against single-supplier (TSMC) dependency. No Broadcom 8-K exists,
+  consistent with a non-binding MOU rather than a definitive agreement.
+  ([Samsung Global Newsroom, 07-25](https://news.samsung.com/global/samsung-electronics-and-broadcom-expand-strategic-collaboration-across-memory-and-foundry-technologies))
   <!-- k: t=custom-asic-tolls,ai-memory-shortage e=broadcom,samsung axis=deals-and-filings -->
+- **Leopold Aschenbrenner's Situational Awareness fund was forced to sell
+  its entire public-equity book to Citadel after margin calls** — the
+  sharpest reversal yet in the AI trade, and the first time a
+  concentrated AI-thesis fund has been broken by it. The fund was up
+  roughly 439% through June on leveraged AI-infrastructure positions; a
+  July drawdown of about 67%, against roughly 4x leverage, triggered
+  margin calls from Goldman Sachs, JPMorgan and Bank of America. Rather
+  than raise fresh capital it sold the public book to Ken Griffin's
+  Citadel at distressed prices, down from a peak NAV near $45B, while
+  retaining its private positions — including its Anthropic stake. ⚠ Two
+  independent sweeps returned DIFFERENT position lists (one naming SK
+  Hynix, SanDisk, Nebius, CoreWeave and Micron; the other Riot,
+  CleanSpark and Bloom Energy) and different Anthropic-stake figures — the
+  forced sale, the lenders, the leverage and the Citadel buyer are
+  corroborated across 6+ outlets, but treat the specific holdings and the
+  stake's valuation as unconfirmed.
+  ([CNBC](https://www.cnbc.com/2026/07/30/leopold-aschenbrenners-hedge-fund-is-facing-steep-ai-losses.html))
+  <!-- k: t=ai-circular-financing-risk,ai-trade-bear-turn,frontier-lab-ipos e=anthropic axis=deals-and-filings sev=major -->
+- **DeepSeek is developing a ~1GW AI data-center campus in Ulanqab, Inner
+  Mongolia, and may file for an IPO as soon as this year** — partial
+  capacity targeted for late 2027/early 2028, building some itself and
+  leasing the rest, with the chip vendor (Nvidia vs. Huawei) still
+  undecided; the IPO follows a reported $7B raise at roughly a $50B
+  valuation. Chinese AI firms are now raising infrastructure financing at
+  the same scale as their US counterparts.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-30/deepseek-is-developing-massive-ai-data-center-in-inner-mongolia))
+  <!-- k: t=china-stack-independence,frontier-lab-ipos,ai-datacenter-sites e=deepseek axis=deals-and-filings -->
+- **Xsight Labs raised more than $300M at a $2.8B valuation** — the
+  Tel Aviv fabless networking-silicon company (DPUs and switches for
+  hyperscale and AI data-center networks; its E1 is billed as the first
+  800G DPU to ship) closed a Fidelity-led round with Intel Capital,
+  T. Rowe Price and Battery Ventures, more than 5x its 2021 valuation.
+  Axios Pro Rata's lead deal of the day.
+  ([PR Newswire](https://www.prnewswire.com/news-releases/xsight-labs-raises-more-than-300-million-at-2-8-billion-valuation-to-power-next-generation-ai-and-cloud-networks-302838293.html))
+  <!-- k: t=custom-asic-tolls,ai-datacenter-sites e= axis=deals-and-filings -->
 
 ## Three of four hyperscalers report; Amazon the cleanest beat, SoftBank still ahead
 
@@ -180,6 +232,65 @@ blockade, no clean print to cite. SoftBank still hasn't reported.
   World News + Global Capital (built/specced 07-30). The Russia-Ukraine
   candidate that surfaced today moved to World News's own digest — it's
   not a money story.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run at finalize, 2026-08-01 (two days late — 07-30 was left `building`
+when the 07-31 session ended). Benchmarks: Money Stuff, Axios Pro Rata,
+FT Unhedged, Bloomberg Technology.*
+
+**Access:** none of the four could be fetched directly — Bloomberg and
+Axios returned 403, FT is blocked outright for WebFetch. Money Stuff,
+Axios Pro Rata and Bloomberg Technology were reconstructed from
+search-index snippets plus the underlying Bloomberg News articles (several
+with `/2026-07-30/` dated URLs). **FT Unhedged was never read at all** —
+its coverage is inferred only from a third-party aggregator citing it.
+Treat this day's FT recall as unverified.
+
+**They led with → we missed:**
+
+- **The Situational Awareness forced liquidation to Citadel** — Money
+  Stuff's lead ("The Situation Deteriorated", 07-30 1:59pm ET), corroborated
+  by 6+ independent outlets. Now added above with `sev=major`. This is the
+  day's real miss: an AI-thesis fund broken by the AI trade is a
+  first-of-its-kind, and it went entirely uncaptured.
+- **DeepSeek's 1GW Inner Mongolia campus + IPO prep** — Bloomberg's
+  tech-capital lead. Added above.
+- **Xsight Labs' $300M at $2.8B** — Axios Pro Rata's First Look deal of
+  the day. Added above.
+
+**Broke in this digest-day but recorded in 07-31's digest** (a
+day-assignment error, not a recall miss — both are in the record, filed
+one day late; see coverage-log for the root cause):
+
+- **The Google-backstopped ~$15B loan for Anthropic's Hubbard, Texas
+  campus** (Bloomberg, 07-30) — banks led by Morgan Stanley, a $14B bridge
+  plus revolver to Nexus Data Centers, a 1.6GW gas plant, Google
+  guaranteeing four leases and the PPAs for roughly 20% project equity,
+  Broadcom TPU costs under separate vendor financing. Squarely this lens's
+  genre and it belongs to 07-30.
+- **Apple's Q3 FY26 after-close print** (07-30, ~16:30 ET) — EPS $2.02 vs
+  $1.80 est., revenue $109.42B, Services missed, guidance light, stock
+  -6.65% after hours. Carried in 07-31 via Tim Cook's memory-pricing
+  remark.
+
+**Both covered:** the GDP/PCE print, the hyperscaler monetization split,
+Amazon's AWS beat, the Anthropic IPO chatter, the chip-stock rout as
+backdrop.
+
+**We had → they didn't:** the SpaceX/SPCX round trip with short-interest
+detail, the Paducah KY nuclear-site catch-up, the Genesis Mission $5B
+fact-check, the Texas rep's Meta-incentive review call, and the
+SoftBank-hasn't-reported check against primary IR.
+
+**Ruled out, do not re-flag:** Nvidia's $250B OpenAI Ohio backstop talks
+(broke 07-26/27); the chip rout's initial break (07-28/29); Jersey Mike's
+$1B IPO (out of lens); DataBahn's $40M Series B (minor, unled).
+
+**One correction made at finalize:** the Broadcom-Samsung ~$200B item was
+mis-dated to 07-30 — it was announced **2026-07-25** and is an **MOU**,
+not a signed contract. Verified against Samsung's own newsroom dateline.
+Corrected in place above.
 
 ---
 GDP and PCE both landed at consensus — soft growth, sticky inflation,

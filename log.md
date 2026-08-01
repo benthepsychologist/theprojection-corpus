@@ -1069,3 +1069,125 @@ resident agent picks it up from there.
 
 Re-rendered and republished the private artifact + full public site
 (`/publish --push`) a second time to ship all of the above.
+
+## 2026-08-01 — /daily: two repairs, a systematic bucketing bug, and a five-day date error in our own record
+
+**This run was not a normal day.** `/start` opened it looking like
+"finalize 07-30, open a thin Saturday." Reading the timestamps changed
+the shape entirely.
+
+**Repair 1 — 07-30 had never been finalized.** It sat `building`/
+`pending` since the 07-31 session ended; that session's own log entry
+predicted "a later `/daily` run will close it out," and no later run
+happened. Finalized now, two days late, with the full coverage-critic
+pass across all three benchmark-carrying lenses.
+
+**Repair 2 — 07-31 had only ever seen its first four hours.** Curated at
+**09:15 ET**, fifteen minutes before the US open. The entire Friday
+session, a **July month-end close**, and every afternoon and evening
+development had never been swept. Its global-capital digest contained the
+line "Brent held its range... no clean new print" and three bullets
+total; its frontier-ai digest said "nothing shipped today." Both were
+true at 09:15 and wrong about the day. Extended in place across all four
+lenses (07-31 stays `building` — it only becomes finalizable at 14:00
+UTC, after this run).
+
+**The finding worth keeping: a systematic day-assignment bug.** Four
+items that broke inside digest-day **07-30** were filed into **07-31** —
+Anthropic's own-models breach disclosure (published 21:06 ET on 07-30),
+the Google-backstopped $15B Anthropic loan, Apple's after-close Q3 print,
+and OpenAI's Luna price cut. Root cause: the 07-31 morning run swept
+overnight news and attributed it all to the *current* day instead of
+bucketing each item against the 5am-ET boundary it actually fell in.
+Anything breaking between one day's cutoff and 5am the next lands wrong
+under that pattern — exactly the window a morning run is best placed to
+catch. Cost was low this time (both days sit in the same Mon-Sun week, so
+the weekly rollup is unaffected) and nothing was lost, so the items were
+left where they are with cross-referencing notes both ways rather than
+moved. **The fix is procedural, and it belongs in how a morning run
+buckets, not in any file.**
+
+**A five-day date error in our own record, in three places.** Our digests
+said Broadcom-Samsung's ~$200B deal was "signed" 07-30; the thread file
+said it "broke 07-28." Both wrong: **announced 2026-07-25**, per
+Samsung's own newsroom dateline, and it is an **MOU, not a signed
+contract** (no Broadcom 8-K, consistent with non-binding). Three
+different dates for one event, all from aggregation re-indexing it into
+later news cycles — the same failure mode as the SpaceX misdate on
+07-27. Corrected in both 07-30 digests, `custom-asic-tolls`'s timeline
+(block re-dated), and `actor-doing.yaml`. Caught only because an agent
+mentioned it in passing as an aside and it was worth one verification
+pass; that is the cheap check that keeps paying.
+
+**Expectations: two loud silences and two hits.** `eo14409-deadlines` and
+`gov-review-framework-announce` both flipped **passed-silent** — EO
+14409's two 60-day deliverables (the classified NSA frontier threshold
+and the Sec. 3(b) 30-day access framework design) came due 08-01 and
+neither was published, with no acknowledgment even that the classified
+half was delivered. A dedicated check also established these two entries
+were tracking **the same deliverable**, not two. Three-day grace runs to
+08-04. Meanwhile `mn-nudify-ban-effective` and
+`minnesota-nudify-effective` both flipped **hit**: Judge Donovan Frank
+denied xAI's TRO on 07-31 ("harm is not immediate," given a
+near-three-month delay in suing), and Minnesota's HF1606 took effect
+08-01 on schedule — the filed-is-not-a-stay test resolving exactly as
+written. Those two entries are **confirmed duplicates**; merging is
+Ben's call and was not taken unilaterally. Two new expectations logged:
+`xai-mn-preliminary-injunction` (08-19) and `eu-ai-act-code-of-practice`
+(**08-02 — tomorrow**, a hard non-discretionary deadline this map was not
+tracking at all until an OpenAI compliance post surfaced it).
+
+**Biggest content miss recovered:** Situational Awareness's forced
+liquidation to Citadel — Aschenbrenner's fund, +439% through June, −67%
+in July at ~4x leverage, margin-called by Goldman/JPMorgan/BofA and
+selling its whole public book at distressed prices from a ~$45B peak.
+Money Stuff led with it 07-30 and 6+ outlets carried it; we had nothing.
+Added with `sev=major`, and with an explicit caveat that two independent
+sweeps returned *different* position lists — the sale is corroborated,
+the holdings are not.
+
+**`sev=` discipline enforced rather than let slide:** adding that would
+have put three `sev=major` on 07-30 against a "roughly one a day" rule,
+so the weakest was demoted — the "both sides beat and both got rewarded"
+line, which is the pattern holding, not a thread reset.
+
+**Tooling, measured not assumed.** `collect.py` **timed out at 900s
+having completed only 7 low-yield sources**; the three news-bearing
+collectors never ran. Re-running them individually and concurrently
+returned `rss` (40 items) in under a minute and `gdelt` (120 items)
+shortly after — `google_news_rss` still blew its own 600s timeout and is
+the worst offender. Direct evidence for the brief already sitting in
+kestrel's INBOX from 07-31; the engine owns the fix, nothing changed
+here. Also: `build_world_news.py` requires `--gdelt-start`/`--gdelt-end`
+as plain dates (07-31's digest records an invocation that would error),
+and window width matters a lot — a single-day window on a two-hour-old
+day returned **1 item** where a 3-day window returned 20.
+
+**A fix verified for free.** That rebuild independently confirmed
+07-31's matcher fix: `Russia–Ukraine: Fight` is now the largest signal at
+**320 distinct outlets** and routes to `russia-ukraine-war`, where before
+the fix every `russia-ukraine-*` cluster mis-matched to
+`iran-conflict-widening`. Holds under a fresh build, not just the one it
+was tested against.
+
+**Both wars escalated past what the flash rail describes.** Russia struck
+Kyiv overnight with 35 missiles and 185 drones, killing at least 9 — far
+deadlier than the airspace incursion the Russia flash actually covers.
+Trump ordered strikes on Iran "as soon as this weekend" (not executed as
+of this run), and the IRGC hit two tankers in the Strait of Hormuz, which
+is what moved Brent on Friday rather than the Saudi coalition. Neither
+flash is *wrong*, so neither was edited — but both expire within three
+days while both conflicts intensify, and that is a decision for Ben:
+let them lapse or update in place.
+
+**Open for Ben:** ① merge the two Minnesota ledger duplicates? ② the two
+flashes — lapse or update? ③ **Gaza as a thread** — now corroborated two
+ways, editorially (Trump's disputed Hamas disarmament framework) and
+mechanically (`Israel–PSE` clusters at 80/66/46 outlets, the largest
+unmatched signal), and the 07-31 standing rule appears to reach it.
+④ A `Spain–MAR` cluster (67/44/37) surfaced mechanically and is offered
+**unverified** — nobody has looked at what it actually is.
+
+No steering taken this run (single-shot invocation). Next: 07-31 becomes
+finalizable at 14:00 UTC today; a later run closes it with the coverage
+critic.

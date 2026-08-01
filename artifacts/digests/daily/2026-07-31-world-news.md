@@ -3,8 +3,8 @@ lens: world-news
 date: 2026-07-31
 status: building
 window_start: 2026-07-31T05:00:00-04:00
-as_of: 2026-07-31T09:15:00-04:00
-coverage: na
+as_of: 2026-08-01T06:55:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
+coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-07-31
@@ -98,6 +98,68 @@ doesn't need updating.
   08-02) does not need another in-place update.
   <!-- k: t=iran-conflict-widening e= axis=irans-widening-war -->
 
+## Later the same day — both wars escalated   <!-- added 08-01 -->
+
+*The 09:15 ET curation above concluded Iran saw "no material escalation."
+That was true at 09:15 and was overtaken within hours. Everything below
+happened after it.*
+
+- **Russia struck Kyiv overnight with 35 missiles and 185 drones, killing
+  at least 9 and wounding 28, four of them children** — a residential
+  building in the Shevchenkivskyi district partially collapsed. This is
+  the deadliest single event in either war this window and the first real
+  development on the newly-opened `russia-ukraine-war` thread. It also
+  reframes the flash: the Poland incursion was the NATO-territory
+  violation, but this barrage, two nights later and aimed squarely at the
+  capital, carried far the greater human cost.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/1/russian-missile-attack-kills-three-in-ukraines-kyiv), [AP via KSAT](https://www.ksat.com/news/world/2026/08/01/russia-hits-ukrainian-capital-with-ballistic-missiles-and-drones-killing-at-least-9/))
+  <!-- k: t=russia-ukraine-war e= axis=later-the-same-day sev=major -->
+- **Trump ordered new strikes on Iran "as soon as this weekend."** At a
+  Friday Cabinet meeting at Camp David he said the US "will be hitting
+  them very hard"; reported targets include missile sites, energy
+  infrastructure and possibly nuclear-linked sites, described as a
+  two-week bombardment plan. ⚠ As of this digest-day's close the strikes
+  had **not** been carried out — this is an announced intention, not an
+  executed action, and is recorded as such.
+  ([Bloomberg, citing WSJ](https://www.bloomberg.com/news/articles/2026-07-31/trump-orders-attacks-on-iran-as-soon-as-this-weekend-wsj-says), [Axios](https://www.axios.com/2026/07/31/trump-iran-strikes-energy-infrastructure-war))
+  <!-- k: t=iran-conflict-widening e= axis=later-the-same-day sev=major -->
+- **Iran's IRGC struck two tankers in the Strait of Hormuz** and
+  separately claimed a drone strike on US assets at Kuwait's Ahmad
+  Al-Jaber airbase, framed as retaliation for US strikes on Iranian
+  targets the day before. The tanker strikes are the first time the
+  blockade has moved from threat to direct action against transiting
+  vessels — and they, not the Saudi alliance, are what moved oil on
+  Friday (see Global Capital).
+  ([Washington Times](https://www.washingtontimes.com/news/2026/jul/31/irgc-says-struck-two-tankers-strait-hormuz-escorted-us-military/), [Al Jazeera](https://www.aljazeera.com/news/2026/7/31/irgc-strikes-us-targets-in-kuwait-a-day-after-us-hits-iran-latest-events))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=later-the-same-day -->
+- **Saudi Arabia is reportedly preparing a ground and naval offensive
+  against the Houthis**, redeploying troops toward al-Bayda governorate —
+  which would take it from an air participant and coalition convener to a
+  ground combatant in Yemen. Reported, not confirmed.
+  <!-- k: t=iran-conflict-widening e= axis=later-the-same-day -->
+- **Poland did not invoke NATO Article 4 over the missile incursion** — a
+  deliberate contrast with its response to the September 2025 drone
+  incursion, when it did. Tusk instead convened an emergency coordination
+  group and took bilateral solidarity pledges. A negative finding worth
+  recording: the alliance's formal consultation machinery was
+  specifically not triggered, which bounds how far the incident escalated
+  institutionally.
+  <!-- k: t=russia-ukraine-war e= axis=later-the-same-day -->
+- **Zelenskyy is pressing Washington for a licence to build Patriot
+  missiles domestically; Trump has refused so far** — "we have not agreed
+  to that... it's a hard thing to give away that kind of technology."
+  <!-- k: t=russia-ukraine-war e= axis=later-the-same-day -->
+
+**Flash rail checked, no change made.** Neither event clears the bar for a
+*new* flash: both are intensifications of conflicts already on the rail,
+not new categories of event, and the rail's own header warns that three
+active flashes means the bar has drifted. Both existing entries remain
+factually accurate — no correction needed. Enrichment for whoever next
+edits them: the Iran flash could note Trump's ordered weekend strikes,
+the Hormuz tanker strikes and the Kuwait airbase claim; the Russia flash
+could note Poland's deliberate non-invocation of Article 4 and this
+far deadlier Kyiv barrage.
+
 ## ⏳ Upcoming & expected
 
 - No dated expectations specific to this lens.
@@ -124,12 +186,27 @@ doesn't need updating.
   standing unanswered candidate from 07-30 (single largest mechanical
   signal, 304-315 outlets) — Ben promoted it directly in chat rather
   than via a re-offer. See `russia-ukraine-war`.
+- **candidate ⟨added 08-01⟩ — the Gaza war.** Trump announced a Hamas
+  disarmament "framework" through his "Board of Peace" on 07-31, calling
+  it a historic breakthrough; Hamas immediately disputed the sequencing,
+  saying Israeli withdrawal must come first, and outlets describe major
+  hurdles remaining. This is the third active military conflict with no
+  thread here, and your standing rule from 07-31 — "all active military
+  conflicts that are not hyper-local get coverage" — appears to reach it
+  on its face. Offering rather than opening it unilaterally, because the
+  rule was stated in the context of Russia-Ukraine and Gaza has an
+  existing tracked-conflict neighbour in `iran-conflict-widening` that
+  may or may not be where you'd want it to sit. Track it as its own
+  thread?
+  ([NPR](https://www.npr.org/2026/07/31/g-s1-136500/trump-hamas-gaza), [CNN](https://www.cnn.com/2026/07/31/middleeast/trump-hamas-disarmament-announcement-intl))
 
 ---
 A second flash: a Russian missile crossed into Polish NATO airspace
 during the war's biggest barrage in weeks — genuinely separate from
 Iran. Ben promoted Russia-Ukraine to a real thread the same session,
 closing the map's biggest gap, and stated a standing rule: all active,
-non-hyper-local military conflicts get coverage going forward. Saudi
-Arabia's Red Sea coalition became an actual 14-nation alliance. Iran's
-conflict itself saw no material escalation.
+non-hyper-local military conflicts get coverage going forward. Both wars
+then escalated after the morning read: Russia struck Kyiv overnight with
+35 missiles and 185 drones, killing at least nine, and Trump ordered
+fresh strikes on Iran for the weekend while the IRGC hit two tankers in
+the Strait of Hormuz. Poland pointedly did not invoke Article 4.

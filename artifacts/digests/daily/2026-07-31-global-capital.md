@@ -3,8 +3,8 @@ lens: global-capital
 date: 2026-07-31
 status: building
 window_start: 2026-07-31T05:00:00-04:00
-as_of: 2026-07-31T09:15:00-04:00
-coverage: pending
+as_of: 2026-08-01T06:40:00-04:00   # extended 08-01: the 09:15 curation missed the whole session
+coverage: pending   # finalizable from 2026-08-01T10:00 ET
 ---
 
 # Global Capital — 2026-07-31
@@ -27,8 +27,16 @@ guarantee a third-party developer's bank debt rather than fund AI
 buildout directly — backing Anthropic's own Texas data-center campus,
 the same structure Meta/BlackRock and Nvidia/OpenAI used days earlier.
 WSJ reported Tesla is weighing a sale of its China business ahead of a
-possible Tesla-SpaceX merger; Musk denied it same day. Oil held its range,
-no clean new print.
+possible Tesla-SpaceX merger; Musk denied it same day.
+
+**Extended 08-01:** the session itself then closed higher — S&P +0.70%,
+Nasdaq +1.00% — but the month is the number that matters. July finished
+with the Nasdaq down 3.2% against a flat S&P, which is the AI complex
+absorbing the month's damage almost by itself. Oil did break, and the
+morning read that it "held its range" was overtaken: Iran's IRGC struck
+two tankers in the Strait of Hormuz, taking Brent up about 1.1-1.2% and
+turning the blockade from a threat into a strike on transiting vessels.
+Two of the three FOMC hawks spent Friday publicly arguing their dissent.
 
 ## Capital in my markets — the Tokyo snapback
 
@@ -85,6 +93,85 @@ no clean new print.
   insider-selling/analyst chatter.
   <!-- k: t=coreweave-backlog-bet,qualcomm-dragonfly e= axis=deals-and-financing -->
 
+## The Friday close and the July month-end   <!-- added 08-01 -->
+
+*This digest was originally curated at 09:15 ET — fifteen minutes before
+the opening bell. Everything below was missing from it.*
+
+- **US indices closed higher on Friday: S&P 500 7,489.72 (+0.70%), Nasdaq
+  25,373.85 (+1.00%), Dow 52,485.03 (+0.53%)** — but the AI/semi complex
+  was mixed rather than uniformly bid, and single-name earnings moved the
+  tape more than chips did: Amazon +15.3% on the AWS beat, Apple -7.4% on
+  weak Services and China guidance.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html))
+  <!-- k: t=chip-hyperscaler-rotation,ai-trade-bear-turn e=amazon-aws,apple axis=capital-in-my-markets -->
+- **July finished with the AI trade carrying the month's damage: Nasdaq
+  -3.2%, S&P 500 roughly flat at -0.1%, Dow +0.32% (a fourth straight
+  monthly gain)** — a month whose mid-July chip selloff a strong Friday
+  only partly repaired. The spread between a flat S&P and a -3.2% Nasdaq
+  is the cleanest single number on what July actually did to the AI
+  complex. Deltas computed from index levels directly, then
+  cross-checked against independently stated monthly percentages.
+  <!-- k: t=ai-trade-bear-turn,chip-hyperscaler-rotation e= axis=capital-in-my-markets sev=major -->
+- **Micron fell 4.3-6.0% on Friday**, tied to forced-liquidation selling
+  out of the Situational Awareness unwind (see 07-30) and Michael Burry
+  adding to a short. ⚠ Friday closes for Nvidia, AMD and TSMC could not
+  be verified — repeated searches returned only 07-28/07-29 figures for
+  those names, so they are deliberately not stated here rather than
+  approximated.
+  ([Benzinga](https://www.benzinga.com/trading-ideas/movers/26/07/60845173/why-is-micron-stock-falling-on-friday))
+  <!-- k: t=ai-memory-shortage,ai-trade-bear-turn e=micron axis=capital-in-my-markets -->
+- **The 10-year Treasury yield hit 4.73%, its highest since January 2025.**
+  ⚠ The 30-year is the weaker number: the Fed's own H.15 series only runs
+  through Thursday 07-30 at 5.21%, and the 5.28% Friday close is
+  secondary-sourced only — consistent with the arithmetic but not
+  primary-confirmed, so treat it as moderate confidence. The 10-year
+  figure is the better-corroborated of the two.
+  ([Fed H.15](https://www.federalreserve.gov/releases/h15/))
+  <!-- k: t= e= axis=capital-in-my-markets -->
+- **Brent closed around $88-90/bbl, up roughly 1.1-1.2%** — the move
+  driven by Iran's Strait of Hormuz tanker strikes (below), not by the
+  Saudi maritime coalition. ⚠ Sources spread across the range ($90.12 in
+  two recaps against ~$88 in a direct fetch), so it is reported as a
+  range rather than a false single print.
+  <!-- k: t=red-sea-oil-shock e= axis=capital-in-my-markets -->
+
+## Deals & financing — the Friday session   <!-- added 08-01 -->
+
+- **Iran's IRGC struck two tankers in the Strait of Hormuz on Friday
+  morning**, saying it disabled vessels transiting under unauthorised
+  routes with US military escort — the day's actual oil catalyst, and the
+  first time the blockade has produced a direct strike on transiting
+  tankers rather than a threat. Corroborated by Iran's own Tasnim agency
+  and CNBC's oil desk.
+  ([Washington Times](https://www.washingtontimes.com/news/2026/jul/31/irgc-says-struck-two-tankers-strait-hormuz-escorted-us-military/))
+  <!-- k: t=red-sea-oil-shock,iran-conflict-widening e= axis=capital-in-my-markets -->
+- **MediaTek's board approved a $5B discretionary financing budget for AI
+  data-center ASICs**, disclosed on its Friday earnings call — CEO Rick
+  Tsai sized the custom-AI-chip market at $80B by 2027 (up from a prior
+  $70-80B range) and targeted 15-20% share, against smartphone chip
+  revenue down 20% in Q2. Another entrant paying to get into the
+  custom-silicon toll layer.
+  ([The Star](https://www.thestar.com.my/tech/tech-news/2026/07/31/mediatek-plans-5-billion-financing-for-ai-data-center-chips))
+  <!-- k: t=custom-asic-tolls,ai-compute-spend e= axis=deals-and-financing -->
+- **Two of the three FOMC hawks publicly defended their dissent** —
+  Cleveland's Beth Hammack and Minneapolis's Neel Kashkari each argued on
+  Friday for hiking now rather than waiting, extending Tuesday's 9-3 hold
+  rather than restating it. The dissenting bloc is arguing its case in
+  public, which is the thing to watch before September.
+  ([CNBC](https://www.cnbc.com/2026/07/31/fed-officials-who-voted-to-hike-rates-say-action-is-needed-now-against-inflation.html))
+  <!-- k: t= e= axis=capital-in-my-markets -->
+
+<!-- DAY-ASSIGNMENT NOTE ⟨08-01⟩: the Google/Anthropic $15B guarantee
+     above is dated 2026-07-30 at source and belongs to digest-day 07-30,
+     not 07-31. It was filed here because the 07-31 morning run swept
+     overnight news and attributed it to the current day rather than
+     bucketing by the 5am ET boundary. Left in place (one canonical copy,
+     and the render layer dedupes by URL); recorded in 07-30's coverage
+     appendix and in coverage-log.md. Same applies to Apple's Q3 print,
+     carried here via Tim Cook's memory-pricing remark — it was an
+     after-close 07-30 release. -->
+
 ## ⏳ Upcoming & expected
 
 - ✅ **hit — `altman-washington-briefing`**: full detail on Frontier AI.
@@ -112,9 +199,9 @@ no clean new print.
   map to a tracked thread; not offered.
 
 ---
-A broad Tokyo AI-chip rally sent SoftBank to limit-up and Arm +9%,
-independent of SoftBank's own results — which turn out to be due 08-06,
-not 07-30. Google became the third hyperscaler this week to guarantee a
-third-party developer's debt rather than fund AI buildout directly,
-backing Anthropic's Texas campus. WSJ reported Tesla is weighing a
-China-business sale ahead of a possible SpaceX merger; Musk denied it.
+A Tokyo AI-chip rally opened the day with SoftBank limit-up and Arm +9%,
+and the US session closed higher too — but July as a whole ended with the
+Nasdaq down 3.2% against a flat S&P, the AI complex carrying the month's
+losses on its own. Oil finally broke on a real event: Iran struck two
+tankers in the Strait of Hormuz, lifting Brent about 1.1%. Two of the
+three Fed hawks spent Friday publicly making the case for hiking now.
