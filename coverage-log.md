@@ -1251,11 +1251,22 @@ no traceable source at all.
 
 ### Tooling
 
-`collect.py`'s serial fan-out hit its limit for the **third consecutive
-run** — still working through news sources after two hours, so
-`world-news.yaml` could not be rebuilt and the 08-02 digest carries
-curator-noticed candidates only, with the gap stated on its face. The
-diagnostic brief has been in kestrel's INBOX since 07-31; the engine repo
-owns the fix. Also fixed here: `artifacts/threads/red-sea-oil-shock.md`
+**`collect.py` was KILLED by its 3000s timeout without finishing** — the
+third consecutive run to fail this way, and the first with an exact
+measurement: **15 of 18 registered collectors produced provenance;
+`gdelt`, `semantic_scholar` and `treasury_tic` never ran.** The diagnostic
+brief has been in kestrel's INBOX since 07-31; the engine repo owns the fix.
+
+⚠️ **Correcting an earlier line in this same entry**, which was drafted
+mid-run and said `world-news.yaml` could not be rebuilt so the 08-02
+digest would carry curator-noticed candidates only. **That was overtaken
+and is wrong** — the rebuild ran successfully afterwards (64 items, 31
+confirmed / 33 candidates) because `build_world_news.py` reaches GDELT
+through BigQuery directly rather than through the collector's buffer, so
+the `gdelt` collector's failure does not block it. The 08-02 digest
+carries the full mechanical sweep, including the `Israel–PSE` finding.
+The two other missing collectors matter little here: `treasury_tic` feeds
+`capital-context.yaml`, refreshed by `/week` step 4b rather than daily,
+and `semantic_scholar` is ambient research volume. Also fixed here: `artifacts/threads/red-sea-oil-shock.md`
 still carried `lens: money` in its frontmatter, stale since the
 2026-07-30 rename.

@@ -13,9 +13,12 @@ coverage: pending
 passes (agentic-interim; sources: European Commission, Anthropic's own
 newsroom, Meta newsroom, Unit 42/Palo Alto Networks, law-firm analyses of
 the Digital Omnibus). ⚠ Collector run incomplete at this writing —
-`collect.py` was still working through its news sources after two hours,
-the third consecutive run to hit the serial fan-out problem filed to the
-engine's INBOX on 07-31.*
+`collect.py` was killed by its timeout without finishing, the third
+consecutive run to hit the serial fan-out problem filed to the engine's
+INBOX on 07-31 — 15 of 18 collectors completed; `gdelt`,
+`semantic_scholar` and `treasury_tic` never ran. Nothing in this digest
+rests on the missing three, and the world-news mechanical sweep was
+unaffected (it reaches GDELT through BigQuery, not the collector buffer).*
 
 ## Today's throughline
 

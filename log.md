@@ -107,8 +107,22 @@ absent from `COUNTRY_NAME`. `Spain–MAR` (75/60/38) likewise. Predicted when
 the bug was filed to kestrel's INBOX on 08-01; now observed live.
 
 **Friction worth fixing, all hit in real operation:**
-- `collect.py`'s serial fan-out hit its limit for the **third consecutive
-  run** — still working after two hours. Already filed to kestrel's INBOX.
+- **`collect.py` was KILLED by its 3000s timeout without finishing** — the
+  third consecutive run to fail this way, and the first with an exact
+  measurement. **15 of 18 registered collectors produced provenance;
+  `gdelt`, `semantic_scholar` and `treasury_tic` never ran at all.**
+  (Earlier in this session I recorded it as "still working after two
+  hours"; that was what was observable at the time, but the run did not
+  merely lag — it terminated incomplete, exit 143.) Impact on this run is
+  small and worth stating precisely so the engine fix is scoped right:
+  `world-news.yaml` was **unaffected**, because `build_world_news.py`
+  pulls GDELT through BigQuery directly rather than from the collector's
+  buffer, and it returned 64 items normally. `treasury_tic` feeds
+  `capital-context.yaml`, whose refresh belongs to `/week` step 4b, not
+  daily. `semantic_scholar` is ambient research volume. The digests were
+  curated agentic-interim from the tier-2 sweeps, which is the documented
+  interim mode, so nothing published rests on the missing three. Already
+  filed to kestrel's INBOX.
 - **`render_read.py` tells the operator to "apply the degradation rule (drop
   item html >3 days old)" — and that rule exists nowhere.** Not in
   `read-shell.html` (grepped), not as a flag. The page shipped at **703 KB**
