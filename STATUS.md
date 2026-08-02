@@ -1,8 +1,45 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-07-31** (the same day the repo was born —
-top note below covers the first real work session in the new instance;
-prior states in the dated notes under it).*
+*Hand-maintained. **As of 2026-08-02**. Top note below covers the 08-02
+`/daily`; prior states in the dated notes under it.*
+
+> **2026-08-02 — the map corrected itself three times, and each correction
+> was bigger than the day's news.** A `/daily` clearing a two-day finalize
+> backlog (07-31 was overdue; 08-01 had been curated two hours into its own
+> digest-day, so 22 of its 24 hours had never been read) turned into an
+> audit of our own framing. **① The Iran war began 2026-02-28, not 07-23** —
+> a US-Israeli opening strike killed Supreme Leader **Ali Khamenei**, and
+> **Mojtaba Khamenei** has led Iran since 03-08. Confirmed by Iran's own
+> state media plus Al Jazeera/NBC/Britannica, and found **twice
+> independently** by sweeps sharing no sources, which is the only reason it
+> was treated as established. Root cause generalises: the thread was split
+> from `red-sea-oil-shock` and inherited its origin, but that thread was
+> opened off a Brent spike — **a price move's date silently became a war's
+> start date**. Any thread split from a capital-lens parent has the same
+> exposure. **② The Strait of Hormuz has been shut five months, not one
+> week** (transits ~10/day vs a 60-140 norm; Maersk/MSC/CMA CGM/Hapag-Lloyd
+> all suspended; war-risk insurance 3-10% of hull value vs ~0.25% pre-war).
+> **③ We had never named the Fed chair** — **Kevin Warsh since 2026-05-22**,
+> confirmed 54-45, the narrowest ever, with Powell staying on as a governor.
+> Every FOMC number we had recorded was right; what they were numbers
+> *about* was missing. `kevin-warsh`/`jerome-powell` added by critic
+> auto-add. **Ledger:** `eu-ai-act-code-of-practice` → hit but with the
+> **claim rewritten** (the Code has bound since 2025-08-02; what activated
+> is *enforcement*, €15M/3% fines, plus Article 50) — caught by the entry's
+> own `what_confirms`; `anthropic-ipo-filing` → hit, and it was Anthropic's
+> own 06-01 announcement covered by six outlets, i.e. **a two-month recall
+> gap on our side, not a thin source**. 44 expectations. **Flash:** filed
+> the Iran cancellation and **lapsed its predecessor a day early on accuracy
+> grounds** — it announced strikes publicly cancelled overnight, and flashes
+> render sitewide. **Open, unanswered:** Latin America has no coverage at
+> all (Colombia inaugurates 08-07); a M7.1 quake that killed ~36 people
+> entered this map three times, every one about whether TSMC's fab was
+> running. **Tooling:** `collect.py` killed by timeout, 15/18 collectors
+> (3rd straight failure, already in kestrel's INBOX); `render_read.py`
+> instructs applying a degradation rule that **exists nowhere** (page ships
+> 703 KB over a 600 KB cap); `readouts.py`'s shape spec taught all four
+> briefing agents the same wrong `watch` type. Full detail: `log.md`,
+> `coverage-log.md`.
 
 > **2026-07-31 (later) — the first `/daily` run in the new repo, plus a
 > same-session steering round.** First real content pipeline run since
