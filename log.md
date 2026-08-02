@@ -1,5 +1,136 @@
 # log.md — session log (newest first)
 
+## 2026-08-02 — `/daily`: finalize 07-31 (2 days late) + recover 08-01 (22 of 24 hours), and two framing errors of our own
+
+**What ran:** the two-day finalize backlog `/start` flagged this morning.
+07-31 sat `building` past its window; 08-01 had been curated at 07:15 ET,
+about two hours into its own digest-day, so twenty-two hours of it had
+never been read. Both are now `final` / `coverage: done`, 08-02 is open,
+the read is republished and the site is pushed. Eight tier-2 sweeps, two
+coverage critics, three targeted verification passes, two timeline-writing
+agents, four briefing agents.
+
+**THE SESSION'S FINDING IS THAT WE HAD THE WAR WRONG BY FIVE MONTHS.**
+`iran-conflict-widening` dated the conflict to 07-23. It began
+**2026-02-28**, when a US-Israeli opening strike wave killed Iran's Supreme
+Leader **Ali Khamenei** at his office in Tehran; **Mojtaba Khamenei** has
+led Iran since **2026-03-08**. Iran's own state media confirmed it and
+declared forty days of mourning. Two sweeps that shared no sources — a
+world-news check and a shipping/CRS-sourced capital check — hit the same
+February date independently within an hour of each other, which is the only
+reason it was treated as established rather than as one agent's stray
+claim. Cross-sweep *contradiction* is documented here as the error
+detector; this is the first time cross-sweep *agreement* did the work.
+
+**Root cause, and it generalises.** The thread was split out of
+`red-sea-oil-shock` on 07-30 and inherited its origin date — but that
+thread was opened 07-24 off a Brent spike. **A price move's date silently
+became a war's start date**, and nothing ever re-derived the conflict's own
+timeline from a primary source. Any thread split from a capital-lens parent
+is exposed to the same failure: the child inherits the parent's *framing*
+along with its content, and a markets parent dates events by when the
+market noticed them. Worth an audit.
+
+**Second correction, same root:** the Strait of Hormuz has been effectively
+**closed since 2026-02-28**, not since last week — transits ~10/day against
+a 60-140 norm, Maersk/MSC/CMA CGM/Hapag-Lloyd *all* suspended and rerouting
+via the Cape, war-risk insurance at **3-10% of hull value against ~0.25%
+pre-war**. `red-sea-oil-shock` had been tracking a price with no physical
+volumes underneath it. `opened:` left alone on both threads — that field
+records when this map opened a thread, not when the world event started,
+and conflating them would erase the evidence of being late.
+
+**Third, and the most embarrassing: we did not know who chairs the Fed.**
+The 07-31 coverage critic found FT Unhedged running two consecutive issues
+about the Fed chair while this map — which carries the 07-29 9-3 hold, the
+target range and all three dissenters by name — **had never named the chair
+anywhere**. Verified against federalreserve.gov: **Kevin Warsh, since
+2026-05-22**, confirmed **54-45 on 05-13, the narrowest in the office's
+history**; **Jerome Powell did not leave — he remains a governor**. Every
+number we had recorded was right. The thing they were numbers *about* was
+missing. `kevin-warsh` and `jerome-powell` added to the watchlist as a
+critic auto-add, with the CAPI-cohort note left intact since that cohort is
+still Ben's to build.
+
+**Ledger.** Two flips, both corrections rather than clean resolutions:
+- `eu-ai-act-code-of-practice` → **hit**, but the **claim was wrong while
+  the date was right**. The Code of Practice did not newly bind; it has been
+  the voluntary compliance route since **2025-08-02**. What activated on
+  08-02 is **enforcement** (fines to €15M or 3% of turnover) plus Article 50
+  transparency duties. Caught by the entry's own `what_confirms` telling us
+  to read the instrument. A correct date carrying a wrong claim is a failure
+  mode this ledger had not seen; `confidence: reported` on a regulatory
+  entry should mean *the instrument is unread*, not just *the date is soft*.
+- `anthropic-ipo-filing` → **hit**. Logged 07-27 as a thin single-source
+  rumor. It was **Anthropic's own announcement on 2026-06-01**, covered the
+  same day by six outlets. A two-month recall gap, not a sourcing problem.
+  What *does* stay unconfirmed is different from what we assumed: the
+  underwriters, the 06-03 date and the October target all trace to one
+  Bloomberg anonymous report, and **Nasdaq as venue has no source at all**.
+
+Three added: `anthropic-ipo-public-flip`, `colombia-presidential-inauguration`
+(08-07 — logged because **Latin America has no thread, no entity, no lens**
+in this map at all), `eu-ai-act-high-risk-deferred` (2027-12-02).
+
+**Flash rail: filed one, and lapsed one early on accuracy grounds.**
+`iran-strikes-cancelled-deal-claimed` — Trump cancelled the strikes he had
+ordered, claiming a Hormuz deal; Iran called it "simply a new lie" within
+hours. Filed as a new entry per the 08-01 rule. **Separately, the
+predecessor's `expires` was shortened 08-02 → 08-01.** It announced imminent
+strikes that had been publicly cancelled overnight, and flashes render on
+every page of a live public site — carrying it to term would have meant
+publishing something known to be false. That is an accuracy call, not
+expires-tampering, and the reasoning is recorded in-file so it is not
+misread later. Rail: 3 today, **1 from 08-03**.
+
+**Two late catches nobody had recorded at all** — Amazon raising FY2026
+capex to **~$220B from ~$200B on memory costs** (on threads whose whole
+subject is where the capex lands), and **SOXX −22.1% in July, its worst
+month since December 2002**, against a roughly flat Nvidia. Cumulative
+hyperscaler guidance of $720-745B against a chip complex down 22% in the
+same month is this map's central tension stated numerically, and it had
+neither number.
+
+**And one the world-news lens framed away entirely:** a **magnitude-7.1
+earthquake that killed ~36 people** in Kumamoto on 07-28 appears in this map
+three times — every one about whether TSMC's fab was operational. Offered as
+a thread candidate rather than auto-added: it may be a legitimate lens
+boundary, but it should be a decision, not an accident.
+
+**Mechanical sweep re-confirms the engine bug, and it now costs the top
+signal.** `world-news.yaml` rebuilt (64 items, 31 confirmed / 33 candidates).
+The 07-31 matcher fix **holds** — Russia–Ukraine at 309 outlets routes
+correctly, five Iran clusters route correctly. But the single largest
+*candidate* is **`Israel–PSE: Fight` at 107 outlets**, unmatched even though
+`gaza-war` exists and names Israel and Gaza throughout, because `PSE` is
+absent from `COUNTRY_NAME`. `Spain–MAR` (75/60/38) likewise. Predicted when
+the bug was filed to kestrel's INBOX on 08-01; now observed live.
+
+**Friction worth fixing, all hit in real operation:**
+- `collect.py`'s serial fan-out hit its limit for the **third consecutive
+  run** — still working after two hours. Already filed to kestrel's INBOX.
+- **`render_read.py` tells the operator to "apply the degradation rule (drop
+  item html >3 days old)" — and that rule exists nowhere.** Not in
+  `read-shell.html` (grepped), not as a flag. The page shipped at **703 KB**
+  over a 600 KB soft cap with no supported way to comply.
+- **`readouts.py`'s `shape` spec mis-taught `watch` to all four briefing
+  agents.** It reads "1-3 sentences, each 30-240 chars"; every agent returned
+  a single string and the validator measured its *length* as the item count
+  (319/402/393/407). Four for four is a spec-wording problem, not an agent
+  problem. The front's section headings must also match the lens labels
+  **exactly**, which the spec never says.
+- Seven factual errors were caught in the generated briefings before they
+  published — including a reintroduced stale **"SpaceX ~15% below issue"**
+  (it is ~20%, corrected earlier in this same run), a fabricated **S&P
+  "−0.1%"** precision no source supports, and **"Minnesota's nudify ban for
+  minors took effect today"** (not minors-specific, and effective 08-01).
+  The validator enforces shape and link floor; it cannot catch these.
+
+**Housekeeping:** 13 thread timeline files still carried `lens: money` from
+the 2026-07-30 rename — all corrected against `threads.yaml`, which is the
+source of truth the renderer actually reads. `artifacts/read/index.html`
+republished; site pushed; Cloudflare build queued.
+
 ## 2026-07-24 — `/daily` #3: finalize 07-23, curate 07-24, full thread-title rename
 
 **What ran:** finalized 07-23 across all three lenses (three sonnet-class

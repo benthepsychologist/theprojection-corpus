@@ -48,8 +48,16 @@ actors:
       OpenAI and MAI — the split undisclosed, like everyone's.
 
   amazon-aws:
-    asof: 2026-07-30
+    asof: 2026-08-02
     doing: >
+      CAPEX GUIDANCE RAISED to ~$220B for FY2026 from ~$200B on the 07-30
+      call, explicitly on higher MEMORY costs — with management saying
+      even $220B will not buy enough capacity to meet 2026 demand, and
+      expecting the same into 2027-28. This map missed the raise on the
+      day and caught it 08-02; it is the first instance here of
+      memory-price inflation moving a hyperscaler's capex line rather
+      than only its cost line. (An AWS backlog figure of $496B circulated
+      but is single-source and unconfirmed against Amazon's own release.)
       The landlord model just cleared its first real earnings test: Q2 net
       sales $200.6B (+20% YoY), AWS $42.2B (+37% YoY, fastest in 18
       quarters, beating ~31-33% consensus), AWS operating income $16.6B
@@ -64,9 +72,23 @@ actors:
 
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-07-31
+    asof: 2026-08-02
     doing: >
-      IPO chatter firmed toward a $1T valuation (from ~$965B) 07-30, with
+      THE IPO IS NOT CHATTER — Anthropic confidentially submitted a draft
+      Form S-1 to the SEC on 2026-06-01 and announced it itself the same
+      day (anthropic.com/news/confidential-draft-s1-sec); this map only
+      established that on 08-02, having logged it 07-27 as a thin rumor.
+      The ~$965B figure is the SERIES H round valuation (~$65B raised,
+      closed late May), not an IPO price — share count and price are not
+      set. Underwriters, a 06-03 bank-selection date and an October-2026
+      target all trace to one Bloomberg anonymously-sourced report; a
+      Nasdaq venue has no traceable source at all. No public S-1 on EDGAR
+      yet, consistent with confidential status. Separately disclosed its
+      own eval-environment failures 07-30: 141,006 evaluation runs
+      reviewed, 3 incidents, traced to a misconfiguration with eval
+      partner Irregular that left environments internet-connected; evals
+      suspended 07-23, affected organisations notified 07-27. Earlier
+      IPO chatter had firmed toward a $1T valuation (from ~$965B) 07-30, with
       a reported Amazon windfall and a Blackstone/Goldman JV floated —
       lower-confidence, one outlet notes "Wall Street getting cold feet"
       on the same number. Microsoft's earnings put a real number on the

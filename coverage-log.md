@@ -1110,3 +1110,152 @@ Frontmatter flipped `status: building → final`, `coverage: pending →
 done` on the three 07-30 lens digests with critics; world-news flipped to
 `final` with `coverage: na` (no benchmark critic by design); the 07-30
 front digest flipped to `final`.
+
+---
+
+## 2026-08-02 critic pass — finalized 07-31 (two days late) and 08-01
+
+Two days finalized in one run. `/daily` had not run since 08-01 morning,
+which itself only opened the day two hours in — so 07-31 sat `building`
+past its finalize window and 08-01 was curated from roughly two hours of
+a twenty-four-hour day. Both are now `final` / `coverage: done`.
+
+### The headline is not a recall miss — it is two framing errors this map made itself
+
+**① The Iran war began 2026-02-28, not 2026-07-23.** A US-Israeli opening
+strike wave killed Supreme Leader **Ali Khamenei** at his Tehran office;
+**Mojtaba Khamenei** has led Iran since 2026-03-08. Confirmed by Iran's
+own state media (Press TV, Tasnim, Mehr; 40-day mourning declared) plus Al
+Jazeera, NBC and Britannica. **Found twice independently on the same day
+by sweeps sharing no sources** — a world-news check and a
+shipping/CRS-sourced capital check — which is why it was treated as
+established rather than as one agent's claim. Cross-sweep contradiction
+detection is documented as this pipeline's error detector; this is the
+first time cross-sweep *agreement* did the work instead.
+
+**Root cause, which generalises.** `iran-conflict-widening` was split out
+of `red-sea-oil-shock` on 07-30 and inherited its origin date. But
+`red-sea-oil-shock` was opened 07-24 off a Brent spike — a *market
+reaction*. **A price move's date silently became a war's start date**, and
+nothing ever re-derived the conflict's timeline from a primary source.
+Worth auditing wherever else a thread was split from a parent: the child
+inherits the parent's framing along with its content, and a
+capital-lens parent dates things by when the market noticed.
+
+**② The Strait of Hormuz has been shut five months, not one week.**
+`red-sea-oil-shock` was tracking price without the physical volumes
+underneath it: transits ~10/day against a 60-140/day norm; Maersk, MSC,
+CMA CGM and Hapag-Lloyd all suspended and rerouting via the Cape;
+war-risk insurance at 3-10% of hull value against ~0.25% pre-war. Both
+threads' `watch` text rewritten; `opened:` left alone on both, since that
+field records when this map opened a thread, not when the world event
+started — conflating them would erase the evidence of being late.
+
+### ai / 2026-07-31 · global-capital / 2026-07-31 · mental-health / 2026-07-31
+
+**They led with → we missed:**
+- **frontier-ai:** Thinking Machines' *Inkling-Small* (276B MoE) — our "no
+  US lab shipped" line checked only OpenAI, Anthropic, Google and xAI, so
+  the gap was the width of the check. Sharper: **a federal judge
+  questioning the administration's evidence for Anthropic's "supply-chain
+  risk" label**, which lands directly on our own
+  `frontier-model-gov-review-precedent` thread and was absent entirely.
+- **global-capital:** **Couche-Tard/Żabka, ~$8.7B** — Axios Pro Rata's own
+  lead story, absent from deals-and-filings. Not a map add: general retail
+  M&A, outside this lens's AI-capital focus.
+- **mental-health:** **Woebot Health shutting down its app** — an
+  FDA-breakthrough-designated mental-health chatbot maker closing on the
+  same day this lens covered a federal companion-chatbot bill and two
+  adverse AI-chatbot rulings. On-theme and missed. Not a thread yet; the
+  pattern worth watching is AI-mental-health-chatbot companies under
+  distress, which wants a second instance.
+
+**THE STRUCTURAL ONE — the Fed chair.** FT Unhedged ran two consecutive
+issues (07-31, 08-01) about the Fed chair's positioning and long-bond
+credibility. **This map had never named the Fed chair anywhere** — not in
+`attention/`, not in any digest — while carrying detailed FOMC coverage
+including the 07-29 9-3 hold and all three dissenters by name. It did not
+know the office had changed hands.
+
+Verified against **federalreserve.gov directly**: **Kevin Warsh took
+office 2026-05-22**, four-year term to 2030-05-21. Nominated 2026-01-30,
+Senate Banking hearing 04-21 (delayed by a Tillis blockade tied to an
+investigation into Powell), **confirmed 54-45 on 05-13 — the narrowest in
+the position's history** — Fetterman the lone crossover, selected FOMC
+chairman unanimously on being sworn in. **Jerome Powell did not leave the
+Board; he remains a governor.** Our FOMC arithmetic was all correct — the
+vote, the target range, the three dissenters as confirmed 2026 voters. The
+thing it was arithmetic *about* was missing.
+
+**Map adds (critic auto-add, guardrail-protected):** `kevin-warsh` and
+`jerome-powell` into `watchlist.yaml` global-capital `people:`, plus a
+"Fed chair" theme. Provenance recorded in-file, including the note that
+the CAPI-style cohort that list was reserved for is still Ben's to build —
+this is one critic-driven add, not an attempt at that cohort.
+
+### 08-01 — a Saturday, and the benchmarks do not publish on Saturdays
+
+Confirmed by direct dated-URL fetches rather than assumed:
+`tldr.tech/ai/2026-08-01` resolves to a generic landing page, The AI Daily
+Brief's newest episode reads "Publish Date: Friday, July 31, 2026," and
+all four mental-health trade outlets' newest posts are 07-31 or earlier.
+**Eight of eleven benchmarks published nothing in-window**, so two of
+three lenses had nothing to miss. Money Stuff and Axios Pro Rata also had
+no weekend edition; FT Unhedged and Bloomberg Technology did publish.
+
+The one real 08-01 gap was the Warsh story above — caught by this
+pipeline's own next-day critic pass rather than externally, and remediated
+the same day. It stands on the 08-01 record; it did not survive past 08-02.
+
+### Two late catches nobody had recorded at all
+
+- **Amazon raised FY2026 cash capex to ~$220B from ~$200B on the 07-30
+  call, explicitly citing higher memory costs**, saying even $220B would
+  not buy enough capacity. This map recorded the quarter's revenue, AWS
+  growth and the Anthropic gain but never the capex raise — on threads
+  whose subject *is* where the capex lands. It also ties two threads
+  concretely: memory-price inflation now moves a hyperscaler's capex line,
+  not just its cost line.
+- **SOXX fell 22.1% in July, its worst month since December 2002**, while
+  Nvidia was roughly flat (+0.33%). The map had no record of the figure —
+  the cleanest single number for the rotation thesis it has tracked for a
+  week. Cumulative hyperscaler 2026 capex guidance of $720-745B against a
+  chip complex down 22% in the same month is the tension stated
+  numerically.
+
+### And one the world-news lens should have caught but framed away
+
+**A magnitude-7.1 earthquake was covered as a semiconductor story and
+never as a disaster.** Kumamoto (2026-07-28) appears three times in this
+map — TSMC's fab intact, Tokyo Electron's Kyushu exposure, a "limited
+impact" capacity verdict. The human event is absent: **~36 dead**, a
+shopping-mall gas explosion in Kashima after a floor collapse, ~35,000
+homes without power and 15,000 without water, ~8,800 people still in
+shelters under extreme heat. Offered as a thread candidate rather than
+auto-added — it may be a legitimate lens boundary, but it should be a
+decision rather than an accident.
+
+### Anthropic's IPO filing — a two-month recall gap, not a thin source
+
+Logged 07-27 as `rumored`, single-source, "thin, needs corroboration."
+It was none of those. **Anthropic announced the confidential draft S-1 on
+its own newsroom on 2026-06-01** and TechCrunch, Fortune (twice), PYMNTS,
+Fox Business and CNBC all covered it that day. The map simply missed a
+well-covered story during its own news cycle and picked it up eight weeks
+later from a small aggregator, at which point it looked thin. Flipped to
+`hit` / `confirmed` against the company's own statement, source replaced.
+What *does* stay unconfirmed, for a different reason than assumed: the
+underwriter trio, the 06-03 selection date and the October target all
+trace to one Bloomberg anonymously-sourced report, and Nasdaq as venue has
+no traceable source at all.
+
+### Tooling
+
+`collect.py`'s serial fan-out hit its limit for the **third consecutive
+run** — still working through news sources after two hours, so
+`world-news.yaml` could not be rebuilt and the 08-02 digest carries
+curator-noticed candidates only, with the gap stated on its face. The
+diagnostic brief has been in kestrel's INBOX since 07-31; the engine repo
+owns the fix. Also fixed here: `artifacts/threads/red-sea-oil-shock.md`
+still carried `lens: money` in its frontmatter, stale since the
+2026-07-30 rename.

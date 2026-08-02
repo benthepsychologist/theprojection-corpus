@@ -1,7 +1,7 @@
 ---
 thread: asset-managers-build-ai
 title: "Asset Managers Build"
-lens: money
+lens: global-capital   # corrected 2026-08-02 — was `money`, stale since the 2026-07-30 rename
 entities: [blackrock]
 opened: 2026-07-28
 ---

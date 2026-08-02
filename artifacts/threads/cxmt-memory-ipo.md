@@ -1,7 +1,7 @@
 ---
 thread: cxmt-memory-ipo
 title: "CXMT IPO"
-lens: money
+lens: global-capital   # corrected 2026-08-02 — was `money`, stale since the 2026-07-30 rename
 entities: []
 opened: 2026-07-22
 crawled: 2026-07-22

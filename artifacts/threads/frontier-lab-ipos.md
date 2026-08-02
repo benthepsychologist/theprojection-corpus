@@ -1,7 +1,7 @@
 ---
 thread: frontier-lab-ipos
 title: "Lab IPO Wave"
-lens: money
+lens: global-capital   # corrected 2026-08-02 — was `money`, stale since the 2026-07-30 rename
 entities: [openai, spacex, anthropic, softbank]
 opened: 2026-07-27
 ---

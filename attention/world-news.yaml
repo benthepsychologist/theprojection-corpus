@@ -1,13 +1,13 @@
-generated: '2026-08-01'
-method: tools/build_world_news.py --day 2026-08-01 --gdelt-start 2026-07-30 --gdelt-end
-  2026-08-01
+generated: '2026-08-02'
+method: tools/build_world_news.py --day 2026-08-02 --gdelt-start 2026-07-31 --gdelt-end
+  2026-08-02
 sources:
 - google_news_rss (tools/world_news.py)
 - GDELT Events, deduped (tools/gdelt_dedup.py)
 items:
 - id: russia-ukraine-fight
   headline: 'Russia–Ukraine: Fight'
-  distinct_outlets: 320
+  distinct_outlets: 309
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.98
@@ -15,147 +15,627 @@ items:
   thread: russia-ukraine-war
 - id: iran-united-states-fight
   headline: 'Iran–United States: Fight'
-  distinct_outlets: 175
+  distinct_outlets: 121
   source: gdelt
   severity: CONFLICT
-  goldstein_avg: -10.0
+  goldstein_avg: -9.99
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: iran-jordan-fight
-  headline: 'Iran–Jordan: Fight'
-  distinct_outlets: 114
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: poland-russia-fight
-  headline: 'Poland–Russia: Fight'
-  distinct_outlets: 92
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
-  status: confirmed_thread
-  thread: russia-ukraine-war
-- id: poland-ukraine-fight
-  headline: 'Poland–Ukraine: Fight'
-  distinct_outlets: 86
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.98
-  status: confirmed_thread
-  thread: russia-ukraine-war
 - id: israel-pse-fight
   headline: 'Israel–PSE: Fight'
-  distinct_outlets: 80
+  distinct_outlets: 107
   source: gdelt
   severity: CONFLICT
-  goldstein_avg: -9.96
+  goldstein_avg: -9.97
+  status: candidate
+- id: iran-israel-fight
+  headline: 'Iran–Israel: Fight'
+  distinct_outlets: 87
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: israel-pse-yield
+  headline: 'Israel–PSE: Yield'
+  distinct_outlets: 77
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 8.82
   status: candidate
 - id: spain-mar-fight
   headline: 'Spain–MAR: Fight'
-  distinct_outlets: 67
+  distinct_outlets: 75
   source: gdelt
   severity: CONFLICT
-  goldstein_avg: -9.65
+  goldstein_avg: -9.63
   status: candidate
-- id: israel-pse-yield
-  headline: 'Israel–PSE: Yield'
-  distinct_outlets: 66
+- id: spain-mar-consult
+  headline: 'Spain–MAR: Consult'
+  distinct_outlets: 60
   source: gdelt
   severity: COOP
-  goldstein_avg: 8.79
+  goldstein_avg: 3.08
   status: candidate
-- id: iraq-saudi-arabia-fight
-  headline: 'Iraq–Saudi Arabia: Fight'
+- id: israel-pse-express-intent-to-cooperate
+  headline: 'Israel–PSE: Express intent to cooperate'
   distinct_outlets: 58
   source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: russia-ukraine-assault
-  headline: 'Russia–Ukraine: Assault'
-  distinct_outlets: 51
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.05
-  status: confirmed_thread
-  thread: russia-ukraine-war
+  severity: COOP
+  goldstein_avg: 5.55
+  status: candidate
 - id: russia-ukraine-reject
   headline: 'Russia–Ukraine: Reject'
-  distinct_outlets: 49
+  distinct_outlets: 52
   source: gdelt
   severity: MIXED
   goldstein_avg: -4.0
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: israel-pse-express-intent-to-cooperate
-  headline: 'Israel–PSE: Express intent to cooperate'
-  distinct_outlets: 46
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 5.58
-  status: candidate
 - id: russia-ukraine-consult
   headline: 'Russia–Ukraine: Consult'
-  distinct_outlets: 45
+  distinct_outlets: 50
   source: gdelt
   severity: COOP
-  goldstein_avg: 4.45
+  goldstein_avg: 4.77
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: russia-ukraine-threaten
-  headline: 'Russia–Ukraine: Threaten'
-  distinct_outlets: 44
+- id: iran-kuwait-fight
+  headline: 'Iran–Kuwait: Fight'
+  distinct_outlets: 48
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: iran-united-states-threaten
+  headline: 'Iran–United States: Threaten'
+  distinct_outlets: 47
   source: gdelt
   severity: MIXED
-  goldstein_avg: -5.96
+  goldstein_avg: -5.87
   status: confirmed_thread
-  thread: russia-ukraine-war
-- id: iran-israel-fight
-  headline: 'Iran–Israel: Fight'
+  thread: iran-conflict-widening
+- id: spain-italy-express-intent-to-cooperate
+  headline: 'Spain–Italy: Express intent to cooperate'
   distinct_outlets: 44
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 4.19
+  status: candidate
+- id: iran-jordan-fight
+  headline: 'Iran–Jordan: Fight'
+  distinct_outlets: 42
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -10.0
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: spain-mar-consult
-  headline: 'Spain–MAR: Consult'
-  distinct_outlets: 44
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 3.23
-  status: candidate
-- id: iran-saudi-arabia-fight
-  headline: 'Iran–Saudi Arabia: Fight'
-  distinct_outlets: 38
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: poland-russia-consult
-  headline: 'Poland–Russia: Consult'
-  distinct_outlets: 38
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 2.37
-  status: confirmed_thread
-  thread: russia-ukraine-war
-- id: spain-fight
-  headline: 'SPAIN: Fight'
-  distinct_outlets: 37
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.79
-  status: candidate
 - id: russia-ukraine-disapprove
   headline: 'Russia–Ukraine: Disapprove'
-  distinct_outlets: 35
+  distinct_outlets: 39
   source: gdelt
   severity: MIXED
   goldstein_avg: -2.0
   status: confirmed_thread
   thread: russia-ukraine-war
+- id: israel-united-states-consult
+  headline: 'Israel–United States: Consult'
+  distinct_outlets: 38
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 4.71
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: spain-mar-engage-in-diplomatic-cooperation
+  headline: 'Spain–MAR: Engage in diplomatic cooperation'
+  distinct_outlets: 38
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 4.48
+  status: candidate
+- id: russia-ukraine-assault
+  headline: 'Russia–Ukraine: Assault'
+  distinct_outlets: 37
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.1
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: poland-russia-fight
+  headline: 'Poland–Russia: Fight'
+  distinct_outlets: 36
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: israel-lebanon-fight
+  headline: 'Israel–Lebanon: Fight'
+  distinct_outlets: 36
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.96
+  status: candidate
+- id: russia-ukraine-threaten
+  headline: 'Russia–Ukraine: Threaten'
+  distinct_outlets: 34
+  source: gdelt
+  severity: MIXED
+  goldstein_avg: -6.05
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: spain-fight
+  headline: 'SPAIN: Fight'
+  distinct_outlets: 34
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.77
+  status: candidate
+- id: spain-consult
+  headline: 'SPAIN: Consult'
+  distinct_outlets: 33
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 2.47
+  status: candidate
+- id: google-withdraws-new-earth-ai-tool
+  headline: Google withdraws new Earth AI tool
+  distinct_outlets: 24
+  outlets_sample:
+  - Android Central
+  - BBC
+  - Bangkok Post
+  - BestForAndroid
+  - Caliber.Az
+  source: google_news_rss
+  status: candidate
+- id: tech-democrats-want-answers-on-openai-anthropic
+  headline: 'Tech: Democrats want answers on OpenAI, Anthropic'
+  distinct_outlets: 20
+  outlets_sample:
+  - AOL.com
+  - ARYnews.tv
+  - Business Standard
+  - CFO Dive
+  - Crypto Briefing
+  source: google_news_rss
+  status: confirmed_thread
+  thread: microsoft-mai-openai-decoupling
+- id: sam-altman-calls-for-ai-slowdown-after-openai-br
+  headline: Sam Altman calls for AI slowdown after OpenAI breach
+  distinct_outlets: 18
+  outlets_sample:
+  - AOL.com
+  - Absolute Geeks
+  - Business Insider
+  - Cybernews
+  - Daily Times
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-ipo-timing
+- id: judge-denies-bid-by-musk-s-xai-to-block-minnesot
+  headline: Judge denies bid by Musk's xAI to block Minnesota nudification ban
+  distinct_outlets: 15
+  outlets_sample:
+  - Bring Me The News
+  - Crypto Briefing
+  - CryptoRank
+  - Gephardt Daily News
+  - InForum
+  source: google_news_rss
+  status: candidate
+- id: tim-cook-s-lasting-legacy-keeping-apple-s-eye-on
+  headline: 'Tim Cook’s lasting legacy: Keeping Apple’s eye on the ball'
+  distinct_outlets: 15
+  outlets_sample:
+  - AOL.com
+  - Crypto Briefing
+  - Khaleej Times
+  - Letem světem Applem
+  - MarketWatch
+  source: google_news_rss
+  status: candidate
+- id: wall-street-gains-as-amazon-eases-ai-concerns
+  headline: Wall Street gains as Amazon eases AI concerns
+  distinct_outlets: 14
+  outlets_sample:
+  - AOL.com
+  - AP News
+  - Crypto Briefing
+  - CryptoRank
+  - Devdiscourse
+  source: google_news_rss
+  status: candidate
+- id: why-did-openai-s-and-anthropic-s-ai-models-hack-
+  headline: Why did OpenAI's and Anthropic's AI models hack other companies?
+  distinct_outlets: 12
+  outlets_sample:
+  - Houston Public Media
+  - KALW
+  - KNAU
+  - Morehead State Public Radio
+  - NPR
+  source: google_news_rss
+  status: candidate
+- id: anthropic-says-claude-ai-hacked-three-companies-
+  headline: Anthropic says Claude AI hacked three companies during tests
+  distinct_outlets: 11
+  outlets_sample:
+  - CNBC
+  - KFOR.com
+  - Moneycontrol.com
+  - PRWeek
+  - Roya News
+  source: google_news_rss
+  status: confirmed_thread
+  thread: microsoft-mai-openai-decoupling
+- id: google-unveils-gemini-robotics-2-0
+  headline: Google Unveils Gemini Robotics 2.0
+  distinct_outlets: 10
+  outlets_sample:
+  - AOL.com
+  - Crypto Briefing
+  - Mix Vale
+  - Northeast Times
+  - TechnoSports Media Group
+  source: google_news_rss
+  status: confirmed_thread
+  thread: apple-gemini-model-deal
+- id: samsung-galaxy-z-fold-8-ultra
+  headline: Samsung Galaxy Z Fold 8 Ultra
+  distinct_outlets: 10
+  outlets_sample:
+  - Android Central
+  - Android Police
+  - MakeUseOf
+  - Notebookcheck
+  - SamMobile
+  source: google_news_rss
+  status: candidate
+- id: ai-firms-must-answer-for-rogue-bots-says-hugging
+  headline: AI firms must answer for rogue bots, says Hugging Face boss
+  distinct_outlets: 9
+  outlets_sample:
+  - BBC
+  - CBS News
+  - CNBC
+  - Crypto Briefing
+  - CryptoRank
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-containment-breach
+- id: openai-shuts-cambodia-linked-chatgpt-accounts-ov
+  headline: OpenAI shuts Cambodia-linked ChatGPT accounts over crypto scams
+  distinct_outlets: 8
+  outlets_sample:
+  - AOL.com
+  - Business Insider
+  - Chosunbiz
+  - Cryptopolitan
+  - The Economic Times
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-health
+- id: amazon-beats-q2-earnings-on-37-aws-growth-raises
+  headline: Amazon beats Q2 earnings on 37% AWS growth, raises capex to $220B
+  distinct_outlets: 8
+  outlets_sample:
+  - Asianet Newsable
+  - Bitget
+  - Crypto Briefing
+  - Investing.com UK
+  - Marketing4eCommerce
+  source: google_news_rss
+  status: candidate
+- id: was-this-the-week-mark-zuckerberg-lost-control-o
+  headline: Was this the week Mark Zuckerberg lost control of AI?
+  distinct_outlets: 7
+  outlets_sample:
+  - AOL.com
+  - Mashable
+  - Mix Vale
+  - The Independent
+  - Yahoo Tech
+  source: google_news_rss
+  status: candidate
+- id: apple-and-amazon-report-rising-revenues-as-inves
+  headline: Apple and Amazon report rising revenues as investors turn on some tech
+    stocks
+  distinct_outlets: 7
+  outlets_sample:
+  - AOL.com
+  - Crypto Briefing
+  - Samsung magazín
+  - WFMZ.com
+  - WINNFM 98.9
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenters-as-targets
+- id: who-is-leopold-aschenbrenner-ai-prophet-gets-mar
+  headline: Who is Leopold Aschenbrenner? ‘AI prophet’ gets married this weekend after
+    losing $35 billion
+  distinct_outlets: 7
+  outlets_sample:
+  - Business Insider
+  - Business Insider Africa
+  - New York Post
+  - The Economic Times
+  - Yahoo Finance
+  source: google_news_rss
+  status: candidate
+- id: oil-prices-rebound-amid-middle-east-tensions-n
+  headline: Oil prices rebound amid Middle East tensions; n...
+  distinct_outlets: 7
+  outlets_sample:
+  - Arab Times Kuwait News
+  - Crypto Briefing
+  - Economies.com
+  - Investing.com India
+  - Pluang
+  source: google_news_rss
+  status: confirmed_thread
+  thread: red-sea-oil-shock
+- id: ken-griffin-s-rescue-of-situational-awareness-sp
+  headline: Ken Griffin’s rescue of Situational Awareness sparks AI stock rally
+  distinct_outlets: 6
+  outlets_sample:
+  - Crypto Briefing
+  - Seeking Alpha
+  - Traders Union
+  - WTVB
+  - eciks.org
+  source: google_news_rss
+  status: candidate
+- id: apple-set-to-lose-nearly-500-billion-in-value-af
+  headline: Apple set to lose nearly $500 billion in value after weak forecast
+  distinct_outlets: 6
+  outlets_sample:
+  - Pakistan Connect
+  - Reuters
+  - The Economic Times
+  - The Indian Express
+  - The News International
+  source: google_news_rss
+  status: candidate
+- id: google-might-launch-a-pixel-tag
+  headline: Google might launch a ‘Pixel Tag’
+  distinct_outlets: 6
+  outlets_sample:
+  - AOL.com
+  - Android Authority
+  - Mashable
+  - The Verge
+  - WION
+  source: google_news_rss
+  status: candidate
+- id: august-2026
+  headline: August | 2026
+  distinct_outlets: 6
+  outlets_sample:
+  - Addleshaw Goddard LLP
+  - Destructoid
+  - Finbold
+  - Global Macro Monitor
+  - Pluang
+  source: google_news_rss
+  status: candidate
+- id: clear-street-launches-platform-for-pre-ipo-inve
+  headline: Clear Street launches platform for pre-IPO inve...
+  distinct_outlets: 6
+  outlets_sample:
+  - Bitget
+  - CNBC
+  - Crypto Briefing
+  - Cryptopolitan
+  - Pluang
+  source: google_news_rss
+  status: candidate
+- id: amazon-raises-fy26-capex-to-about-usd-220-bn-as-
+  headline: Amazon raises FY26 capex to about USD 220 bn as AI, AWS demand surges
+  distinct_outlets: 5
+  outlets_sample:
+  - ANI News
+  - Dailyhunt
+  - Devdiscourse
+  - The Tribune
+  - lokmattimes.com
+  source: google_news_rss
+  status: confirmed_thread
+  thread: hyperscaler-capex-big-picture
+- id: analysts-react-to-rout-in-south-korea-stocks
+  headline: Analysts react to rout in South Korea stocks
+  distinct_outlets: 5
+  outlets_sample:
+  - AOL.com
+  - The Economic Times
+  - inkl
+  - upi.com
+  - 헤럴드경제
+  source: google_news_rss
+  status: candidate
+- id: big-tech-commits-2t-to-power-the-ai-revolution
+  headline: Big Tech commits $2T to power the AI revolution
+  distinct_outlets: 5
+  outlets_sample:
+  - Communications Today
+  - The Economic Times
+  - grafa.com
+  - inkl
+  - thestreet.com
+  source: google_news_rss
+  status: candidate
+- id: openai-is-developing-a-new-ai-model-called-astra
+  headline: OpenAI is developing a new AI model called Astra for long-term tasks.
+  distinct_outlets: 4
+  outlets_sample:
+  - Crypto Briefing
+  - en.softonic.com
+  - kucoin.com
+  - storyboard18.com
+  source: google_news_rss
+  status: candidate
+- id: anthropic-s-claude-ai-hacked-three-companies-dur
+  headline: Anthropic's Claude AI hacked three companies during testing
+  distinct_outlets: 4
+  outlets_sample:
+  - KCENTV.com
+  - Tom's Hardware
+  - upi.com
+  - 디지털투데이
+  source: google_news_rss
+  status: confirmed_thread
+  thread: microsoft-mai-openai-decoupling
+- id: an-analyst-just-named-mark-zuckerberg-s-meta-a-t
+  headline: An Analyst Just Named Mark Zuckerberg's Meta a Top Large-Cap Long Idea,
+    Citing AI-Driven Ad Momentum and an Attractive Valuation
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  source: google_news_rss
+  status: confirmed_thread
+  thread: coreweave-backlog-bet
+- id: mark-zuckerberg-is-betting-up-to-145-billion-on-
+  headline: Mark Zuckerberg Is Betting Up to $145 Billion on AI Infrastructure in
+    2026
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  source: google_news_rss
+  status: candidate
+- id: microsoft-and-amazon-rally-while-meta-falls-what
+  headline: Microsoft and Amazon rally while Meta falls. What it means for our AI
+    theme
+  distinct_outlets: 4
+  outlets_sample:
+  - growbeansprout.com
+  - livemint.com
+  - unn.ua
+  - 매일경제
+  source: google_news_rss
+  status: confirmed_thread
+  thread: hyperscaler-capex-big-picture
+- id: how-to-use-gemini-in-google-messages
+  headline: How to use Gemini in Google Messages
+  distinct_outlets: 4
+  outlets_sample:
+  - 9to5Google
+  - Crypto Briefing
+  - Digital Trends
+  - timesofindia.indiatimes.com
+  source: google_news_rss
+  status: confirmed_thread
+  thread: apple-gemini-model-deal
+- id: apple-tried-to-make-apple-watch-work-with-androi
+  headline: Apple tried to make Apple Watch work with Android
+  distinct_outlets: 4
+  outlets_sample:
+  - Daily Record
+  - Mashable
+  - TechRadar
+  - technobezz.com
+  source: google_news_rss
+  status: candidate
+- id: microsoft-improves-windows-11-optimization-for-p
+  headline: Microsoft improves Windows 11 optimization for PCs with 8GB RAM
+  distinct_outlets: 4
+  outlets_sample:
+  - Tom's Hardware
+  - TweakTown
+  - Windows Central
+  - igor´sLAB
+  source: google_news_rss
+  status: candidate
+- id: google-traffic-wobble-sends-major-signal-for-sin
+  headline: Google traffic wobble sends major signal for sinking Reddit stock
+  distinct_outlets: 4
+  outlets_sample:
+  - The Indian Express
+  - Yahoo Finance Singapore
+  - arstechnica.com
+  - thestreet.com
+  source: google_news_rss
+  status: candidate
+- id: tata-talks-subassembly-production-with-asml
+  headline: Tata talks subassembly production with ASML
+  distinct_outlets: 4
+  outlets_sample:
+  - News On AIR
+  - The Economic Times
+  - Whalesbook
+  - newsbytesapp.com
+  source: google_news_rss
+  status: candidate
+- id: leopold-aschenbrenner-s-ai-hedge-fund-collapses-
+  headline: Leopold Aschenbrenner's AI hedge fund collapses after margin calls
+  distinct_outlets: 4
+  outlets_sample:
+  - Business Insider
+  - CNBC TV18
+  - Seeking Alpha
+  - qz.com
+  source: google_news_rss
+  status: candidate
+- id: wall-street-analysts-are-predicting-a-huge-move-
+  headline: Wall Street Analysts Are Predicting a Huge Move in SpaceX Stock by Mid-2027
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  source: google_news_rss
+  status: confirmed_thread
+  thread: chip-hyperscaler-rotation
+- id: spacex-stock-may-be-down-51-but-it-s-still-outpe
+  headline: SpaceX Stock May Be Down 51%, But It's Still Outperforming These 2 Other
+    Recent IPOs
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  source: google_news_rss
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: cathie-wood-is-buying-spacex-stock-as-it-sinks-5
+  headline: Cathie Wood Is Buying SpaceX Stock as it Sinks 50% Below Its Post-IPO
+    High. Should You Follow Her?
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  source: google_news_rss
+  status: confirmed_thread
+  thread: spacexai-public-megacap
+- id: sam-altman-briefs-washington-as-openai-pushes-ne
+  headline: Sam Altman briefs Washington as OpenAI pushes new AI agents
+  distinct_outlets: 4
+  outlets_sample:
+  - India Today
+  - Inshorts
+  - The Economic Times
+  - The Financial Express
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-ipo-timing
+- id: houthis-deny-plans-to-charge-red-sea-transit-fee
+  headline: Houthis deny plans to charge Red Sea transit fees
+  distinct_outlets: 4
+  outlets_sample:
+  - Al Jazeera
+  - Daily Times
+  - People Daily
+  - tippahnews.com
+  source: google_news_rss
+  status: confirmed_thread
+  thread: iran-conflict-widening

@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-07-31
-status: building
+status: final
 window_start: 2026-07-31T05:00:00-04:00
 as_of: 2026-08-01T06:50:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
-coverage: pending   # finalizable from 2026-08-01T10:00 ET
+coverage: done   # critic run 2026-08-02, two days late; appendix at foot
 ---
 
 # Mental Health — 2026-07-31
@@ -100,3 +100,40 @@ preemption question. A federal judge kept the Grok deepfake plaintiffs
 pseudonymous. And a second federal judge, in Minnesota, refused to block
 that state's AI-nudification ban — so the law took effect Saturday, and
 xAI lost twice in one day in two different courts.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-02 (two days late). Benchmarks: STAT Health Tech (accessed
+directly), Fierce Healthcare (homepage confirmed, subsections 403),
+Behavioral Health Business and MobiHealthNews (search-snippet only — both
+403'd every direct fetch, so absence of a finding there is not
+conclusive).*
+
+**They led with → we missed:**
+- **Woebot Health is shutting down its app** (MobiHealthNews, 07-31). A
+  named AI-mental-health-chatbot company — it held an FDA breakthrough
+  designation for a postpartum-depression chatbot — closing down on the
+  same day this lens covered a federal companion-chatbot bill and two
+  adverse AI-chatbot court rulings. Squarely on this lens's own theme and
+  entirely absent. ⚠ Only the headline, URL and date are confirmed; the
+  site blocked full-text fetch.
+  ([MobiHealthNews](https://www.mobihealthnews.com/news/woebot-health-shutting-down-its-app))
+
+**Both covered:** none — no benchmark surfaced the companion-chatbot bill,
+the Grok pseudonymity ruling or the Minnesota ruling in what was
+retrievable.
+
+**We had → they didn't:** the federal bipartisan companion-chatbot bill
+for minors (S.5154, Kim/Husted) · the Grok deepfake *Jane Doe*
+pseudonymity ruling (N.D. Cal.) · the Minnesota AI-nudification ruling
+against xAI (D. Minn.).
+
+**Correctly out of scope, not misses:** BayMark's bankruptcy risk,
+Acadia's bed-addition strategy, Precise Behavioral's $14.2M raise,
+Function Health's $450M raise, a CMS IPPS rule, a 340B rebate pilot,
+Alignment's Q2 — general healthcare-business items outside this lens's
+AI-and-mental-health scope.
+
+**Map adds:** none. Woebot is a single data point; the pattern worth
+watching is AI-mental-health-chatbot companies under financial distress,
+which wants a second instance before it earns a thread.

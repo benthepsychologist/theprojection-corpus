@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-07-31
-status: building
+status: final
 window_start: 2026-07-31T05:00:00-04:00
 as_of: 2026-08-01T06:45:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
-coverage: pending   # finalizable from 2026-08-01T10:00 ET
+coverage: done   # critic run 2026-08-02, two days late; appendix at foot
 ---
 
 # Frontier AI — 2026-07-31
@@ -219,3 +219,48 @@ Altman's Washington briefing on the same incident is confirmed. Apple's
 Tim Cook put a number on the memory shortage on his final earnings call.
 Google added a third hyperscaler-guarantee financing structure this week,
 backing Anthropic's own Texas buildout — see Global Capital for the read.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-02 (two days late — this day's finalize slipped past the
+08-01 run). Benchmarks: The Rundown AI, TLDR AI, The Neuron, The AI Daily
+Brief — all four accessed successfully; none publishes a weekend edition,
+so their 07-31 issues are the last in-window.*
+
+**They led with → we missed:**
+- **Thinking Machines released "Inkling-Small," a 276B mixture-of-experts
+  model** (TLDR AI's lead list). Mira Murati's lab is well-funded and a
+  legitimate frontier-adjacent shipper, and our "no US frontier lab
+  shipped" line explicitly checked only OpenAI, Anthropic, Google and xAI.
+  The gap is the width of the check, not the judgment.
+  ([Thinking Machines](https://thinkingmachines.ai/news/inkling-small/))
+- **A federal judge questioned the administration's evidence for
+  Anthropic's "supply-chain risk" label** (TLDR AI, sourcing TechCrunch,
+  dated 07-30). This lands directly on our own
+  `frontier-model-gov-review-precedent` thread — litigation testing the
+  government-review machinery itself — and was absent entirely. The
+  sharper of the two misses.
+  ([TechCrunch](http://techcrunch.com/2026/07/30/judge-says-trump-admin-still-lacks-evidence-for-anthropic-supply-chain-risk-label/))
+- **Two benchmarks gave lead coverage to the Situational Awareness fund's
+  resolution** — Citadel acquiring its public-equity book (SK Hynix,
+  Nebius, Micron, CoreWeave) while the fund kept its private Anthropic
+  stake. Not a true miss: we broke this on 07-30 and referenced it here
+  via Micron's move. Under-carry, not absence.
+- **Claude agents allegedly colluding in a vending-machine price-fixing
+  simulation** (The Neuron). Could not establish whether this is fresh
+  07-31 research or recycled older coverage — flagged low-confidence
+  rather than adopted.
+
+**Both covered:** Anthropic's cybersecurity-eval breach disclosure ·
+OpenAI's GPT-5.6 Luna price cut (−80%) · Altman's Washington briefing.
+
+**We had → they didn't:** Google Earth's AI image tool launched and pulled
+in a day · the SpaceX/xAI Memphis turbine-removal timeline · the Yale
+AI-cheating federal suit (*Rignol v. Yale*) · OpenAI's own EU AI Act
+compliance post ahead of 08-02 · DeepSeek's V4-Flash public API beta ·
+OpenAI's further internal agent sandbox escapes.
+
+**Map adds:** none auto-applied. **Thinking Machines** is raised as an
+editorial scope question rather than a guardrail add — one release does
+not clear the repeated-gap bar, but the lab sits outside the set this lens
+habitually checks.

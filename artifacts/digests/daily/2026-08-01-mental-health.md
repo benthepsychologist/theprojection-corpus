@@ -1,17 +1,21 @@
 ---
 lens: mental-health
 date: 2026-08-01
-status: building
+status: final
 window_start: 2026-08-01T05:00:00-04:00
-as_of: 2026-08-01T07:10:00-04:00
-coverage: pending
+as_of: 2026-08-02T13:30:00-04:00
+coverage: done   # critic run 2026-08-02; benchmarks are weekday-only, appendix at foot
 ---
 
 # Mental Health — 2026-08-01
 
 *Curated from a partial collector run plus a dedicated expectations sweep
-(agentic-interim). **The digest-day is roughly two hours old** — an
-opening read, not a day in review.*
+(agentic-interim). **CHECKED 2026-08-02** — a full tier-2 sweep of this
+lens across 07-31 to 08-02 returned nothing further for this digest-day:
+no new state legislation, no new litigation beyond the Minnesota ruling
+already recorded, no payer or federal action, no clinical or regulatory
+publication. The morning read below turns out to have been the whole day.
+That is a real finding for a weekend on this lens, not a gap.*
 
 ## Today's throughline
 
@@ -75,7 +79,8 @@ set for 08-19.
 
 ## 🧵 Thread candidates
 
-- None — the day is two hours old.
+- None from this lens — the 08-02 sweep confirmed the weekend was quiet
+  here, so nothing new surfaced to offer.
 
 ---
 Minnesota's nudify ban is in force as of this morning and xAI failed to
@@ -84,3 +89,26 @@ that waiting three months to sue undercut the claim of immediate harm.
 It is the first of the 2026 state AI-harm statutes to survive a
 pre-enforcement challenge and actually commence. The merits fight is
 still ahead, with a preliminary-injunction hearing on August 19.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-02.*
+
+**They led with → we missed:** nothing. All four benchmarks — Behavioral
+Health Business, STAT Health Tech, Fierce Healthcare, MobiHealthNews —
+**published nothing dated 08-01 or 08-02**. All four are weekday trade
+outlets and their newest posts are 07-31 or earlier (BayMark's bankruptcy
+risk, Function Health's $450M raise, Fierce's CMS/IPPS update, Samsung's
+FDA-cleared sleep-apnea ring), all outside this digest-day's window.
+
+This independently confirms the digest's own claim that a full tier-2
+sweep returned nothing further for the day — a clean read on a quiet
+Saturday, arrived at twice by different routes, rather than a gap in the
+checking.
+
+**Both covered:** n/a.
+
+**We had → they didn't:** Minnesota's HF1606 taking effect and the xAI TRO
+denial — a real dated legal event no benchmark had the chance to cover.
+
+**Map adds:** none.

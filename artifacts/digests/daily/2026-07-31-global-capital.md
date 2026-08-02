@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-07-31
-status: building
+status: final
 window_start: 2026-07-31T05:00:00-04:00
 as_of: 2026-08-01T06:40:00-04:00   # extended 08-01: the 09:15 curation missed the whole session
-coverage: pending   # finalizable from 2026-08-01T10:00 ET
+coverage: done   # critic run 2026-08-02, two days late; appendix at foot
 ---
 
 # Global Capital — 2026-07-31
@@ -205,3 +205,50 @@ Nasdaq down 3.2% against a flat S&P, the AI complex carrying the month's
 losses on its own. Oil finally broke on a real event: Iran struck two
 tankers in the Strait of Hormuz, lifting Brent about 1.1%. Two of the
 three Fed hawks spent Friday publicly making the case for hiking now.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-02 (two days late). Benchmarks: Axios Pro Rata (issue
+confirmed, partial body), FT Unhedged (headline/byline only — paywalled),
+Bloomberg Technology (search-snippet only — CAPTCHA blocked full text),
+Money Stuff (fully inaccessible; Bloomberg paywall plus CAPTCHA defeated
+every attempt). Two of four benchmarks were therefore only partially
+readable, and this appendix says so rather than implying a clean sweep.*
+
+**They led with → we missed:**
+- **Alimentation Couche-Tard agreed to buy Poland's Żabka Group for
+  ~$8.7B** — Axios Pro Rata's actual lead story for the day, also carried
+  by Bloomberg and Reuters. Żabka runs 13,000+ stores across Poland and
+  Romania; the deal follows Seven & i walking away from its own Żabka
+  talks, with SoftBank, PayPay and Sumitomo Mitsui separately agreeing to
+  put ~¥100B each into Seven & i in the same window. A clean, confirmed
+  miss — an $8.7B acquisition absent from deals-and-filings entirely.
+  ([Axios](https://www.axios.com/2026/07/31/alimentation-couche-tard-zabka))
+- **FT Unhedged ran two consecutive issues centred on the Fed chair, whom
+  it names as Kevin Warsh** — "What Warsh is (probably) up to" (07-31) and
+  "Warsh spooks long bonds" (08-01), on pro-volatility positioning and its
+  yield-curve effects. ⚠️ **This map has never named the Fed chair
+  anywhere** — not in `attention/`, not in any digest — despite carrying
+  detailed FOMC dissent coverage (Hammack, Kashkari, Logan). That is a
+  structural gap, not a missed story, and it is under direct verification
+  as of this writing.
+- **Bloomberg Technology: "Corporate America Cracks Down on AI Spending
+  After Rushing to Powerful Tools"** — an enterprise AI-spending-pullback
+  trend piece with no counterpart here. Moderate significance; possibly a
+  benchmark analysis angle rather than a hard news miss.
+
+**Both covered (loosely):** AI and hyperscaler capex holding up against
+market scepticism — Bloomberg Tech framed it as "$2T commitments," we came
+at it through the Amazon and Apple earnings moves.
+
+**We had → they didn't:** Google's $15B loan guarantee for Anthropic's
+Texas buildout (Nexus Data Centers) · Tesla weighing a China-business sale
+ahead of a possible Tesla-SpaceX merger (Musk denied) · the IRGC's Hormuz
+tanker strikes correctly identified as Friday's actual oil catalyst ·
+MediaTek's $5B AI-ASIC financing budget · the July month-end math,
+computed and cross-checked directly.
+
+**Map adds:** none auto-applied. The Couche-Tard deal is real but is
+general retail M&A, outside this lens's AI-capital focus — a process note,
+not a thread. **The Fed-chair naming gap is the one genuinely structural
+item** and is being resolved separately.

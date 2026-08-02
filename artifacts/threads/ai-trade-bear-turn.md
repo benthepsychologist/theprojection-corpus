@@ -1,7 +1,7 @@
 ---
 thread: ai-trade-bear-turn
 title: "AI Bear Turn"
-lens: money
+lens: global-capital   # corrected 2026-08-02 — was `money`, stale since the 2026-07-30 rename
 entities: []
 opened: 2026-07-27
 ---
@@ -10,6 +10,19 @@ opened: 2026-07-27
 
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
+
+## 2026-08-01 — July's real number was the semis index, not the Nasdaq
+
+- **The iShares Semiconductor ETF (SOXX) fell 22.1% in July, its worst
+  month since December 2002 (−23.3%), while still holding +67.7%
+  year-to-date.**
+  ([CNBC](https://www.cnbc.com/2026/07/28/chip-stocks-head-for-one-of-their-worst-months-ever-is-it-the-end.html)) ⟨daily 2026-08-01⟩
+- **The S&P 500 posted its first negative July since 2014** — outlets
+  confirmed the direction but none gave a precise monthly percentage, so
+  the magnitude is recorded as slight and unquantified.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-friday-july-31-dow-sp-500-nasdaq-081227738.html)) ⟨daily 2026-08-01⟩
+- **This map had no record of the SOXX figure at all, which is the
+  cleanest single number on the rotation thesis it has been tracking.** ⟨daily 2026-08-01⟩
 
 ## 2026-07-31 — July closes with the AI complex carrying the month's losses almost alone
 

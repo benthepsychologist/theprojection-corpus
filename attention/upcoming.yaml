@@ -452,11 +452,87 @@ expectations:
     due_precision: month
     thread: anthropic-ipo-timing   # ben-steer 2026-07-27 — child of frontier-lab-ipos
     entities: [anthropic]
-    source: https://news.google.com/rss/search?q=Anthropic+confidential+IPO+filing+965
-    confidence: rumored   # single-source (Briefs Finance) — thin, needs corroboration
+    source: https://www.anthropic.com/news/confidential-draft-s1-sec
+    # 2026-08-02 ⟨daily⟩: source REPLACED. Was a Google-News RSS query
+    # standing in for a Briefs Finance aggregation; now Anthropic's own
+    # announcement, which existed all along.
+    confidence: confirmed   # upgraded rumored -> confirmed 2026-08-02 against the company's own statement
     what_confirms: "second-source reporting or an actual public filing/flip"
     logged: 2026-07-27
     logged_by: curate-add   # /week sweep 07-27
+    status: hit
+    resolved: 2026-08-02
+    evidence: >
+      Confirmed, and this entry's own premise was wrong: it was never a
+      thin rumor. PRIMARY — Anthropic's own newsroom post
+      (anthropic.com/news/confidential-draft-s1-sec) states the company
+      "confidentially submitted a draft registration statement on Form S-1
+      to the U.S. Securities and Exchange Commission" on 2026-06-01. It was
+      a same-day company announcement covered on 06-01 by TechCrunch,
+      Fortune (twice), PYMNTS, Fox Business and CNBC. The $965B figure is
+      also real but is the SERIES H funding-round valuation (~$65B raised,
+      closed late May) — NOT an IPO price; Anthropic says share count and
+      price are not yet set. SEC EDGAR full-text search shows no public
+      S-1 or S-1/A, which is consistent with confidential draft status.
+      ⚠ What stays unconfirmed, and for a different reason than this entry
+      assumed: the underwriter trio (Goldman Sachs, Morgan Stanley,
+      JPMorgan), the 06-03 selection date, and the October-2026 target all
+      trace to ONE Bloomberg anonymously-sourced report, re-reported
+      downstream by CNBC (07-15) and everyone else including Briefs
+      Finance. CNBC's own hedge is the honest version: October is "the
+      earliest date under consideration" and "the company has not locked
+      anything in." NASDAQ as the venue has no traceable source at all and
+      should be treated as an aggregator assumption, not reported fact.
+      ROOT CAUSE OF THE GAP: this was a real, well-covered story on
+      2026-06-01 that this map simply missed during its own news cycle,
+      and only picked up on 07-27 when a small aggregator restated it —
+      at which point it looked thin and late when it was neither. The
+      recall failure is ours, not the sourcing's.
+
+  - id: anthropic-ipo-public-flip
+    claim: "Anthropic flips its S-1 public / lists (October 2026 is the earliest date under consideration, explicitly not locked in)"
+    due: 2026-12-31
+    due_precision: month
+    thread: anthropic-ipo-timing
+    entities: [anthropic]
+    source: https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html
+    confidence: reported   # Bloomberg anonymously-sourced, via CNBC; NOT a company statement
+    what_confirms: "a public S-1/S-1A on EDGAR, or a company announcement naming a date and venue. Do NOT treat the October window or a Nasdaq venue as confirmed — October is single-chain Bloomberg reporting and Nasdaq has no traceable source at all"
+    logged: 2026-08-02
+    logged_by: curate-add   # successor to anthropic-ipo-filing, resolved hit 08-02
+    status: pending
+
+  - id: colombia-presidential-inauguration
+    claim: "Abelardo De La Espriella inaugurated president of Colombia after a razor-thin June runoff (49.7% vs 48.7%, ~250,000 votes, record 26M+ turnout)"
+    due: 2026-08-07
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://www.npr.org/2026/06/22/colombia-election-runoff-espriella-cepeda
+    confidence: reported   # inauguration date is constitutionally fixed; the URL is the election report, not an inauguration notice
+    what_confirms: "the inauguration itself, plus first-day cabinet/policy signals — a Trump-endorsed right-wing outsider succeeding Petro is a regional realignment, not a routine handover"
+    logged: 2026-08-02
+    logged_by: curate-add
+    # 2026-08-02 ⟨daily⟩: surfaced by the catch-all world-news sweep, not by
+    # any lens. Latin America has no thread and no watchlist presence in
+    # this map at all — logging the date so the handover is at least seen.
+    status: pending
+
+  - id: eu-ai-act-high-risk-deferred
+    claim: "EU AI Act high-risk obligations (Annex III standalone systems) bind, after the Digital Omnibus deferred them from 2026-08-02"
+    due: 2027-12-02
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.gibsondunn.com/eu-ai-act-omnibus-agreement-postponed-high-risk-deadlines-and-other-key-changes/
+    confidence: reported   # multi-outlet law-firm analysis of the Omnibus text; not read against the instrument itself
+    what_confirms: "the obligations actually binding on the date, or a further deferral — this has already slipped once, so a second slip is the live scenario"
+    logged: 2026-08-02
+    logged_by: curate-add
+    # 2026-08-02 ⟨daily⟩: logged because today's EU check showed this map
+    # was tracking US discretionary AI deadlines while missing hard EU
+    # statutory ones entirely. Annex I embedded-product systems follow at
+    # 2028-08-02; Art. 6(1) classification rules at 2027-08-02.
     status: pending
 
   - id: spacex-q2-earnings
@@ -717,13 +793,25 @@ expectations:
       0:26-cv-03425, D. Minn.). Preliminary-injunction hearing 2026-08-19.
 
   - id: eu-ai-act-code-of-practice
-    claim: "EU AI Act Code of Practice obligations bind for general-purpose AI models"
+    # CLAIM CORRECTED 2026-08-02 ⟨daily⟩. Original wording: "EU AI Act Code
+    # of Practice obligations bind for general-purpose AI models" — the DATE
+    # was right, the MECHANISM was wrong, and the entry's own what_confirms
+    # ("verify the date against the EU AI Act text itself") is what caught
+    # it. Nothing about the Code of Practice newly binds today: the GPAI
+    # obligations (Art. 53/55) and the Code as their voluntary compliance
+    # route have applied since 2025-08-02, a full year earlier. What
+    # actually activates on 2026-08-02 is ENFORCEMENT, plus a separate and
+    # unrelated transparency chapter. Rewritten to what the primary source
+    # says. Lesson for the ledger: a correct date can still carry a wrong
+    # claim, and "reported" confidence on a regulatory date should mean the
+    # instrument is unread, not merely that the date is unconfirmed.
+    claim: "EU AI Act enforcement powers over GPAI activate (AI Office + member states can demand docs, evaluate models, fine to €15M/3% turnover); Article 50 transparency rules apply (chatbot disclosure, deepfake labelling, machine-readable AI-content marks)"
     due: 2026-08-02
     due_precision: day
     thread: frontier-model-gov-review-precedent
     entities: [openai, anthropic, google, meta-ai]
-    source: https://openai.com/index/advancing-responsible-ai-across-europe/
-    confidence: reported   # date surfaced via OpenAI's own compliance post + trade press; NOT yet verified against the EU's own instrument
+    source: https://digital-strategy.ec.europa.eu/en/news/commission-starts-enforcing-ai-act-rules-and-new-transparency-requirements-2-august
+    confidence: confirmed   # upgraded reported -> confirmed 2026-08-02: verified against the European Commission's own press release, not trade press
     what_confirms: "the obligations actually in force on 08-02, and which providers have published conforming documentation; verify the date against the EU AI Act text itself before treating as confirmed"
     logged: 2026-08-01
     logged_by: curate-add
@@ -731,7 +819,41 @@ expectations:
     # post two days ahead of it. A hard, non-discretionary regulatory date
     # that this map was not tracking at all — worth noting as a gap in its
     # own right, given EO 14409's discretionary deadlines ARE tracked.
-    status: pending
+    status: hit
+    resolved: 2026-08-02
+    evidence: >
+      In force today as scheduled, but not the thing this entry originally
+      described. PRIMARY (European Commission,
+      digital-strategy.ec.europa.eu, "Commission starts enforcing AI Act
+      rules and new transparency requirements"): from 2026-08-02 the AI
+      Office and member-state authorities begin actively ENFORCING the AI
+      Act against general-purpose AI providers — power to request technical
+      documentation, evaluate models, require corrective measures, and fine
+      up to €15M or 3% of global turnover. Separately and on the same date,
+      Article 50 transparency duties apply to a much broader set of systems:
+      chatbots must disclose they are AI, deepfakes must be labelled, and
+      AI-generated or altered content must carry machine-readable marks.
+      The GPAI obligations themselves (Art. 53/55) and the GPAI Code of
+      Practice as their voluntary compliance route have been live since
+      2025-08-02 — the Code was finalised 2025-07-10 and Commission-endorsed
+      2025-08-01. So today is the day the teeth arrive, not the day the
+      duties arrive. Provider posture: Meta REVERSED its July-2025 refusal
+      and signed the Article 50 Code of Practice on Transparency of
+      AI-Generated Content in late July 2026 (primary: about.fb.com);
+      Google signed the same code 2026-07-24 while warning the added
+      complexity cuts against EU competitiveness. ⚠ Note these are two
+      DIFFERENT instruments that trade press routinely conflates — the
+      Article 50 transparency code is not the Art. 53/55 GPAI code, and
+      Meta's reversal is on the former. The Digital Omnibus on AI
+      (Parliament vote 2026-06-16) deferred the HIGH-RISK obligations that
+      would otherwise also have landed today — Annex III standalone systems
+      to 2027-12-02, Annex I embedded-product systems to 2028-08-02 — but
+      explicitly left the GPAI enforcement and Article 50 dates untouched.
+      No enforcement action, fine, or named-company penalty has been
+      announced yet; today is the activation date, not an enforcement event.
+      ⚠ ec.europa.eu's presscorner URL (ip_26_1714) returned an empty shell
+      on fetch (JS-rendered); content confirmed via the digital-strategy.eu
+      mirror of the same release.
 
   - id: xai-mn-preliminary-injunction
     claim: "xAI v. Ellison preliminary-injunction hearing on Minnesota's HF1606 'nudify' ban (TRO already denied 07-31; law in force since 08-01)"

@@ -1,7 +1,7 @@
 ---
 lens: world-news
 date: 2026-07-31
-status: building
+status: final
 window_start: 2026-07-31T05:00:00-04:00
 as_of: 2026-08-01T06:55:00-04:00   # extended 08-01: 09:15 curation missed the rest of the day
 coverage: na   # this lens carries no benchmark critic by design

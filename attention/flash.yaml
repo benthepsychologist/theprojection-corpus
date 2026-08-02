@@ -83,6 +83,53 @@
 
 flashes:
 
+  - id: iran-strikes-cancelled-deal-claimed
+    date: 2026-08-01
+    severity: critical
+    headline: "Trump cancelled the strikes on Iran he had ordered a day earlier, saying a deal had been agreed to reopen the Strait of Hormuz — and Iran said no deal exists"
+    body: >
+      Late on 08-01 Trump posted that the United States was "locked and
+      loaded and ready to go against the Islamic Republic of Iran" but
+      that Iran and other regional states had asked him to hold off
+      because "the perimeters of a deal has been agreed to" — terms he
+      described as the "Immediate, Complete, and Total OPENING OF THE
+      HORMUZ STRAIT" and an end to Iran's nuclear threat, adding "The
+      Country of Israel joins me in this commitment." No US or Israeli
+      strike was carried out on 08-01 or 08-02. ⚠ Iran denies it: Mehr,
+      citing military officials, called the claim "simply a new lie,"
+      and Foreign Minister Abbas Araghchi warned of a "decisive response"
+      to any aggression. This is a cancellation asserted by one side and
+      an agreement denied by the other — not a ceasefire. Saudi Crown
+      Prince Mohammed bin Salman called Trump urging de-escalation, and
+      Qatar and Pakistan are reported working with US envoy Steve Witkoff
+      toward an Iran-Oman arrangement to reopen commercial transits.
+    sources:
+      - label: "NPR (08-02)"
+        url: https://www.npr.org/2026/08/02/nx-s1-5917113/trump-says-hes-cancelling-iran-strikes-deal-pending
+      - label: "Al Jazeera live (08-02, Tehran's response)"
+        url: https://www.aljazeera.com/news/liveblog/2026/8/2/iran-war-live-tehran-warns-of-decisive-response-to-any-us-aggression
+    lenses: [all]
+    expires: 2026-08-03
+    logged_by: curate-add
+    # NEW ENTRY, not an update to iran-us-strikes-ordered-hormuz-tankers
+    # (2026-08-01 rule: a new event earns its own flash). A de-escalation
+    # is a new event on the same terms an escalation is.
+    # ⚠️ THE PREDECESSOR WAS LAPSED A DAY EARLY — deliberately, and NOT to
+    # manage the rail count. `iran-us-strikes-ordered-hormuz-tankers`
+    # announced imminent strikes "as soon as this weekend." Those strikes
+    # were publicly cancelled overnight. Leaving that entry rendering on
+    # every page of a live public site today would be publishing something
+    # now known to be false, which is an accuracy failure, not a staleness
+    # one. The 24h rule governs how long a TRUE flash lives; nothing in it
+    # requires carrying a superseded one to term. Recorded here so the
+    # early lapse is not later mistaken for expires-tampering.
+    # Rail count today: 3 (this, ceuta, russia-kyiv-barrage). The other two
+    # expire 08-02, so the rail carries ONE entry from 08-03. That is the
+    # self-clearing overlap the header's own consequence clause describes.
+    # ⚠️ CONTEXT THIS FLASH SITS IN, corrected the same day: this is month
+    # five of a war that began 2026-02-28, not week two of one that began
+    # 07-23. See threads/iran-conflict-widening.
+
   - id: ceuta-mass-border-crossing
     date: 2026-07-30
     severity: critical
@@ -181,12 +228,22 @@ flashes:
       - label: "Al Jazeera (07-31, Kuwait airbase claim)"
         url: https://www.aljazeera.com/news/2026/7/31/irgc-strikes-us-targets-in-kuwait-a-day-after-us-hits-iran-latest-events
     lenses: [all]
-    expires: 2026-08-02
+    expires: 2026-08-01   # LAPSED A DAY EARLY 2026-08-02 — see below
     logged_by: curate-add
     # NEW ENTRY, not an update to iran-strikes-us-base-jordan (2026-08-01
     # rule). That entry covers the 07-28 Jordan strike and its widening and
     # lapses 08-02 on its own schedule; it was itself widened in place on
     # 07-30 under the OLD rule, which this supersedes.
+    # ⚠️ 2026-08-02 ⟨daily⟩: `expires` SHORTENED from 08-02 to 08-01. The
+    # strikes this entry announces as imminent were publicly cancelled by
+    # Trump late on 08-01 (see iran-strikes-cancelled-deal-claimed, which
+    # supersedes this). Flashes publish to every page of a live public
+    # site, so carrying this to its original term would have meant
+    # publishing a claim already known to be false. Shortened on ACCURACY
+    # grounds only. This is not the "don't extend expires" rule being bent
+    # — that rule stops a conflict being held on the rail past its event;
+    # this is the opposite case, a superseded entry being let go sooner.
+    # The body is left exactly as written; only the lifespan changed.
 
   - id: iran-strikes-us-base-jordan
     date: 2026-07-28

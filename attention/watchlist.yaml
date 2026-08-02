@@ -254,7 +254,28 @@ lenses:
       - term: "Saudi Public Investment Fund"
         entity: pif
         name: "PIF"
-    people: []   # CAPI-style cohort (13F/insider/lobbying figures) — build with Ben
+    people:
+      # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
+      # This lens has carried detailed FOMC coverage for two weeks (the 07-29
+      # 9-3 hold, all three dissenters by name, the GDP/PCE prints, Fed
+      # speaker calendars) and had NEVER NAMED THE FED CHAIR anywhere in
+      # attention/ or any digest. It did not know the chair had changed.
+      # Verified against federalreserve.gov directly: Kevin Warsh took office
+      # 2026-05-22 for a four-year term to 2030-05-21, succeeding Jerome
+      # Powell (chair since 2018-02-05). Nominated 2026-01-30, confirmed
+      # 54-45 on 2026-05-13 — the narrowest confirmation in the position's
+      # history — and selected FOMC chairman unanimously on being sworn in.
+      # Powell did NOT leave the Board; he remains a governor.
+      # Surfaced by FT Unhedged running two consecutive issues about him
+      # while this map had no record he existed.
+      # NOTE: the CAPI-style cohort below is still Ben's to build — this is
+      # one critic-driven add, not an attempt at that cohort.
+      - term: "Kevin Warsh"
+        entity: kevin-warsh
+        name: "Kevin Warsh"
+      - term: "Jerome Powell"
+        entity: jerome-powell
+        name: "Jerome Powell"
     themes:
       - "healthcare private equity"
       - "digital health M&A"
@@ -262,3 +283,4 @@ lenses:
       - "AI lobbying"
       - "sovereign wealth fund AI"
       - "Federal Reserve rate decision"
+      - "Fed chair"   # auto-added 2026-08-02 (critic), with the Warsh add above
