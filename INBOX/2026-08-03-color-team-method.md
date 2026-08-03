@@ -217,6 +217,14 @@ from **disjoint model families**, then compare at the finding level.
   lists it under "what genuinely does not exist anywhere." Running q1
   dual-family would be the fleet's first actual execution of the thing
   Ben remembers as the fancy mode.
+- ⚠️ **Environment reality (2026-08-03):** this workstation has Claude
+  models only — no other provider's credentials exist anywhere on it
+  (checked). So dual-family is not runnable as automation here. It
+  remains reachable **manually**: the seat prompts are self-contained by
+  design, so pasting them into another vendor's own interface and
+  returning the memos is a legitimate second-family pass. Mixing Claude
+  *tiers* across passes is tier-variance, not family-variance, and is
+  never to be recorded as dual-family.
 
 **Agreement semantics ⚙:** a finding surfaced by both families =
 highest-confidence, goes to the top of consolidation. A single-family
@@ -304,7 +312,7 @@ historical record at q1-skeleton-v2 §10.
 | --- | --- | --- |
 | a | **seat semantics** — adopt your four-function minimum as canon, with the v2.0 collisions (Blue, Green) resolved by relabeling extension seats | yes as written in §3 |
 | b | **q1 loadout** | core four; no charge sheets — seats choose their own probe points (§4.8); Pink stays declined |
-| c | **dual-family on q1** | yes — first real cross-model execution; triage discipline from §6 mandatory |
+| c | **dual-family on q1** | not automatable here (Claude-only environment); optional manual second pass via another vendor's UI, memos filed as `-b` — the Claude run proceeds either way |
 | d | **pass bar for q1** | ≤2 substantive carries, one round expected, targeted re-review if 3–5 band |
 | e | **memo location** | `INBOX/q1-color/` as in §8 |
 | f | **this doc's routing** | routes to kestrel with the q1/q2 bundle; it is also the seed of the proposed `/color-team` library skill |

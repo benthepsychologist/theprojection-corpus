@@ -240,4 +240,4 @@ message.
 | bar | ≤2 substantive carries | method doc §5 |
 | rounds | 1 + targeted re-review if the 3–5 band | full re-review only if a carry is frame-level |
 | tone | constructive-adversarial | design-stage rule, method doc §4.6 |
-| dual-family | pending Ben | same prompts, non-Claude family, `-b` memos, finding-level consolidation |
+| dual-family | ⛔ not runnable as automation here — this environment has Claude models only (verified 2026-08-03: no other provider credentials exist) | still reachable MANUALLY: the prompts are deliberately self-contained — paste them into another vendor's UI, return the four memos, they file as `-b` and consolidation runs finding-level. Optional; the Claude run does not wait on it |
