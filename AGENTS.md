@@ -215,9 +215,13 @@ against fixed templates (`templates/`):
 | `/publish [--push]` | on demand, separate from `/daily` (not auto-chained) | push public-flagged threads to theprojection.org; stages only by default, `--push` commits/pushes/deploys live — no confirmation needed on this pipeline (Ben, 2026-07-23), plus a quick fact-check that the site's own `about.md`/`README.md` claims still match this repo's actual publish behavior |
 
 Re-running `/daily` later the same day is safe (building digests rebuild in
-place). **Collection is collectors-first since 2026-07-28** (12 live sources
-via `tools/collect.py`; agents only fill gaps + tier-2 depth — the skill's
-dispatch plan); curation/critic remain agentic until P3 lands.
+place). **Collection is collectors-first since 2026-07-28** (18 registered
+sources via `tools/collect.py` as of 2026-08-03 — grown from the original
+12; agents only fill gaps + tier-2 depth — the skill's dispatch plan);
+curation/critic remain agentic until P3 lands. Known live limitation: the
+runner's serial fan-out has been killed by its own timeout on three
+consecutive runs (last measured 15/18 sources completing) — diagnosed and
+filed to kestrel's INBOX 07-31; the engine repo owns the fix.
 
 ## The steering loop (the growth mechanics — draft, Ben 2026-07-20)
 

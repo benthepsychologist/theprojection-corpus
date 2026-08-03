@@ -1,7 +1,30 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-08-02**. Top note below covers the 08-02
-`/daily`; prior states in the dated notes under it.*
+*Hand-maintained. **As of 2026-08-03**. Top note below covers the q1/q2
+research workshop; the 08-02 `/daily` note sits under it.*
+
+> **2026-08-03 — a second workstream opened: the buildout-research
+> skeletons, workshopped in `INBOX/`.** kestrel's engine session dropped a
+> q1 decomposition strawman ("what exactly are the hyperscalers spending
+> all that money on") 08-02; Ben workshopped it across two ruling rounds
+> and the result is **`INBOX/2026-08-02-q1-skeleton-v2.md`** — 15 recorded
+> rulings (flow map as primary construction · layers are activities not
+> companies · circularity as consolidation adjustment · provenance ≠
+> reliability, independent measurement first-class · nothing dark by
+> definition · full physical model with terminal-end materiality ·
+> living model, delta pass runs on demand · starting points never
+> hardcoded, the ⚙ convention). **Blocked on Ben twice:** his edit of the
+> red-team brief and his writing of the bar — then it routes to kestrel
+> and the adversarial pass runs. **q2 added 08-03** ("Who's buying
+> inference? How much? And what are those committed capacity contracts
+> worth?") as a sibling skeleton — no new schema, the commitment promoted
+> to a first-class object, backlog chain-rule, the order-of-magnitude
+> hypothesis pre-registered. ⚠ Numbering note: these research q's are
+> kestrel's namespace, NOT this repo's `attention/radar.md` Q1–Q7 —
+> radar Q2 ("Where is the money going?") ≈ research **q1**, and research
+> q2 is a different question from radar Q2. Don't cross-wire them.
+> Also this day: the 08-02 collector-failure record corrected (killed at
+> timeout, 15/18 — not "slow"; the world-news rebuild was unaffected).
 
 > **2026-08-02 — the map corrected itself three times, and each correction
 > was bigger than the day's news.** A `/daily` clearing a two-day finalize
