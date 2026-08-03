@@ -495,16 +495,21 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
             f.write(f"---\n{fm}\n---\n")
     print(f"  wrote {len(payload['entities'])} entity page(s)")
 
-    # Beat pages — one per lens (BEATS module constant above carries the
-    # rename history + rationale).
-    beat_dir = os.path.join(site_dir, "content", "beat")
-    os.makedirs(beat_dir, exist_ok=True)
+    # Beat pages — one per lens, now NESTED UNDER /news/ (Ben, 2026-08-03:
+    # the whole news feed — AI, Global Capital, Mental Health — moves under
+    # /news/ so the front page can become the projects hub). Each beat is a
+    # child page of the news section: content/news/<slug>.md -> /news/<slug>/,
+    # rendered by layouts/news/single.html. content/news/_index.md (the news
+    # dashboard, hand-authored) is left alone. BEATS carries the rename
+    # history; /beat/money/ -> /beat/global-capital/ -> /news/global-capital/.
+    news_dir = os.path.join(site_dir, "content", "news")
+    os.makedirs(news_dir, exist_ok=True)
     for slug, label in BEATS:
         fm = yaml.safe_dump({"title": label, "lens": slug},
                             sort_keys=False, allow_unicode=True).strip()
-        with open(os.path.join(beat_dir, f"{slug}.md"), "w") as f:
+        with open(os.path.join(news_dir, f"{slug}.md"), "w") as f:
             f.write(f"---\n{fm}\n---\n")
-    print(f"  wrote {len(BEATS)} beat page(s)")
+    print(f"  wrote {len(BEATS)} beat page(s) under /news/")
 
     os.makedirs(os.path.join(site_dir, "data"), exist_ok=True)
     with open(os.path.join(site_dir, "data", "payload.json"), "w") as f:
