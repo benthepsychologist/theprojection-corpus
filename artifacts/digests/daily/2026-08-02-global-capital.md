@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-02
-status: building
+status: final
 window_start: 2026-08-02T05:00:00-04:00
 as_of: 2026-08-02T13:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-08-02

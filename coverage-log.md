@@ -1163,12 +1163,25 @@ started — conflating them would erase the evidence of being late.
 - **global-capital:** **Couche-Tard/Żabka, ~$8.7B** — Axios Pro Rata's own
   lead story, absent from deals-and-filings. Not a map add: general retail
   M&A, outside this lens's AI-capital focus.
-- **mental-health:** **Woebot Health shutting down its app** — an
+- **mental-health:** ~~**Woebot Health shutting down its app** — an
   FDA-breakthrough-designated mental-health chatbot maker closing on the
   same day this lens covered a federal companion-chatbot bill and two
   adverse AI-chatbot rulings. On-theme and missed. Not a thread yet; the
   pattern worth watching is AI-mental-health-chatbot companies under
-  distress, which wants a second instance.
+  distress, which wants a second instance.~~
+  ⚠️ **RETRACTED 08-03 — this was NOT a real recall miss.** The 08-03
+  critic verified the MobiHealthNews article is dated **2026-04-25 (of
+  2025)**; the Woebot app retired **2025-06-30** — five mirrors + a
+  Feb-2026 Wayback capture agree. It is 15-month-old news that was logged
+  as a fresh 07-31 catch. **Root cause:** the item was accepted on a
+  headline+URL whose *date* was never confirmed against the digest window,
+  behind a hedge ("only the headline, URL and date are confirmed") that
+  itself named the date as unconfirmed. **Standing lesson (applies to
+  every lens):** a benchmark-recall "miss" only counts once its *date* is
+  confirmed inside the digest window against a primary or mirror source; a
+  bot-walled full-text fetch is a reason to date-check *harder*, not a
+  licence to log on the headline. The 07-31 and 08-02 MH digests carry the
+  matching retraction/correction annotations.
 
 **THE STRUCTURAL ONE — the Fed chair.** FT Unhedged ran two consecutive
 issues (07-31, 08-01) about the Fed chair's positioning and long-bond
@@ -1270,3 +1283,61 @@ The two other missing collectors matter little here: `treasury_tic` feeds
 and `semantic_scholar` is ambient research volume. Also fixed here: `artifacts/threads/red-sea-oil-shock.md`
 still carried `lens: money` in its frontmatter, stale since the
 2026-07-30 rename.
+
+---
+
+## 2026-08-03 critic pass — finalized 08-02 (Sunday)
+
+**Recall: clean.** 08-02 was a Sunday; the critic's benchmark publications
+(the mid-morning trade/legal/regulatory sources) were silent as expected,
+and the day's own throughline was self-correction rather than fresh news
+(the five-month Iran-war redating, the unnamed-Warsh Fed correction, the
+EU AI Act mechanism fix, the Anthropic-IPO recall gap — all already in the
+08-02 digests and the 08-02 critic block above). No benchmark surfaced a
+lens-relevant story the day's digests missed. Two items of business, one a
+retraction of a prior pass:
+
+### RETRACTION — the Woebot "miss" was 15-month-old news, not a 07-31 catch
+
+The 08-02 critic block above logged **"Woebot Health shutting down its
+app"** as an on-theme mental-health miss the benchmarks caught. It was not
+a miss and not from the window. The MobiHealthNews article is dated
+**2026-04-25 (of 2025)**; the Woebot app retired **2025-06-30** — five
+mirror sites and a Feb-2026 Wayback capture agree. This is 15-month-old
+news that entered the ledger as a fresh catch.
+
+- **Root cause:** the item was accepted on a headline + URL whose *date*
+  had never been confirmed against the digest window, behind a hedge
+  ("only the headline, URL and date are confirmed") that itself named the
+  date as one of the *unconfirmed* things — the crack was reading that
+  hedge as a caveat rather than a stop.
+- **Fix, applied across the record:** the 07-31 MH digest carries the
+  retraction, the 08-02 MH digest carries the correction, and the Woebot
+  line in the 08-02 critic block above is struck through with the
+  retraction inline. No watchlist/thread was ever auto-added off it, so
+  nothing downstream to unwind.
+- **Standing lesson (all lenses):** a benchmark-recall "miss" only counts
+  once its *date* is confirmed inside the window against a primary or
+  mirror source. A bot-walled full-text fetch is a reason to date-check
+  *harder*, not a licence to log on the headline. This is the same
+  date-of-event discipline the SpaceX-misdate and Iran-war-redating
+  lessons taught, applied to recall inputs and not just to our own
+  timeline entries.
+
+### Unconfirmed lead, NOT folded as a miss — OpenAI "Astra"
+
+An 08-02-sweep signal named an OpenAI model **"Astra"** (attached to an
+"math-proof" story). It is **not** entering the finalized 08-02 record as a
+miss, on exactly the discipline the Woebot retraction just restated.
+Today's (08-03) frontier sweep independently found "Astra" is
+**single-source-thin**: only NY Post uses the name (as a model "discussed"
+at the 08-04 White House meeting), and the 15-state GOP AG letter — which
+does name the two models in the OpenAI containment breach as **GPT-5.6 Sol**
+and "an unreleased, even more capable" model — pointedly does *not* use the
+"Astra" label. Until a primary or second independent outlet confirms the
+name and the story, "Astra" is logged here as an unverified lead only. The
+frontier-ai 08-02 digest carries the same flag.
+
+**Result:** 08-02 flips to `final` / `coverage: done` across all five lens
+files (world-news `coverage: na` by design). One retraction, zero real
+recall misses, one unconfirmed lead held out of the record.

@@ -13,6 +13,17 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-03 — SB 903 is confirmed calendared — Assembly Appropriations, Wed Aug 5
+
+- **California's SB 903 landed on the Assembly Appropriations calendar
+  for a 08-05 hearing** — dual-verified against raw HTML on the
+  legislature's first day back from recess (leginfo's Committee Hearing
+  Date field 08/05/26 and the committee's own Daily File naming SB 903,
+  Padilla, at 9am, Room 1100), the calendar entry that upgrades the
+  ledger from reported to confirmed; whether it is held on suspense or
+  moves forward is decided at/after the hearing.
+  ([California Legislature](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-03⟩
+
 ## 2026-07-31 — A federal companion-chatbot bill surfaces (see also `grok-companion-harm`)
 
 - **A federal bipartisan companion-chatbot bill for minors was

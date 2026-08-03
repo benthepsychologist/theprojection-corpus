@@ -39,6 +39,15 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-03 — Megacap chip names bounce, but SOXX breadth lags its own leaders
+
+- **The AI-megacap chips rallied while the chip index lagged** — on
+  Monday's risk-on tape NVDA rose +2.93%, QCOM +2.68% and AMD +1.78%, but
+  SOXX gained only +0.55% (ARM −0.26%), so July's rotation-away stabilized
+  at the megacap-leader level without breadth across the broader complex
+  recovering.
+  (Yahoo/Google Finance, stockanalysis.com, 08-03) ⟨daily 2026-08-03⟩
+
 ## 2026-08-01 — The chip complex fell 22% in July while Nvidia went sideways
 
 - **SOXX fell 22.1% in July, its worst month since December 2002, against

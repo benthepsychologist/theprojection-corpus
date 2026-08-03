@@ -14,6 +14,15 @@ trend across all four sub-threads (google-capex, meta-capex, aws-capex,
 microsoft-capex), credit-market reaction to debt-financed capex, and any
 hyperscaler actually pulling back.
 
+## 2026-08-03 — Oracle's stock jumps 9.2% while its credit still prices the same capex as distress
+
+- **Oracle rose 9.2% as equity and credit split on the same capex** —
+  ORCL closed $141.85 (+9.22%) on the risk-on tape plus an "expanded"
+  Google Cloud AI partnership, but this does not reverse its credit
+  story: S&P downgraded it to BBB-/A-3 on 07-09 over a projected $42B
+  FY2027 FCF deficit, and its CDS hit a record 198bp on 07-17.
+  (Motley Fool / stockanalysis.com; S&P/Forbes for credit, 08-03) ⟨daily 2026-08-03⟩
+
 ## 2026-08-01 — Cumulative 2026 capex guidance reaches $720-745B as the chip complex sells off
 
 - **The four hyperscalers' cumulative 2026 capex guidance now totals

@@ -123,8 +123,8 @@ expectations:
 
   - id: gov-review-framework-announce
     claim: "White House announces the 30-day voluntary pre-release review framework (Meta excluded)"
-    due: 2026-08-01
-    due_precision: day    # "before 08-01" — due is the by-date
+    due: 2026-08-04    # slipped from 08-01 (see slips + 08-03 comment)
+    due_precision: day
     thread: frontier-model-gov-review-precedent
     entities: [openai, anthropic, google]
     source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
@@ -134,10 +134,26 @@ expectations:
     logged_by: curate-add
     # 2026-08-01 ⟨daily⟩: the by-date arrived with NO announcement. 3-day
     # retro-flip grace runs to 2026-08-04 before this stands.
-    status: passed-silent
-    resolved: 2026-08-01
+    # 2026-08-03 ⟨daily⟩: RE-OPENED before the grace stood. Within the grace
+    # window, new evidence surfaced that the framework is not silent but
+    # moving: the White House (Office of the National Cyber Director, Sean
+    # Cairncross) will present the "finalized" Sec. 3(b) framework to
+    # staff-level reps from OpenAI, Google and Anthropic TUESDAY 08-04 — the
+    # last day of this very grace window. The Information reports "the policy
+    # has been finalized"; a WH official would not say whether it is already
+    # in effect, and NOTHING is public (no Federal Register notice, no NIST/
+    # CISA/OSTP publication — independently reconfirmed 08-03). So this is a
+    # SLIP to a concrete new date, not a silent stand: an off-record staff
+    # meeting is not the "official announcement naming participants and the
+    # 30-day term" that confirms this. 08-01 pushed to slips; due -> 08-04;
+    # status -> pending. Watch 08-04 for whether anything actually publishes.
+    slips: [2026-08-01]
+    status: pending
     evidence: >
-      The 08-01 by-date passed with no announcement. Checked whitehouse.gov
+      Presented to labs 08-04, publication still pending (see 08-03 comment
+      above for the re-open reasoning). ORIGINAL 08-01 passed-silent finding,
+      retained: the 08-01 by-date passed with no announcement. Checked
+      whitehouse.gov
       directly: the only frontier-AI action published there remains the
       original EO 14409 page (2026-06-02) — no successor press release, fact
       sheet, or briefing-room post naming participants or the 30-day term.
@@ -189,7 +205,7 @@ expectations:
 
   - id: eo14409-deadlines
     claim: "EO 14409's two 60-day deliverables land: classified NSA-led frontier threshold + the Sec. 3(b) 30-day-access framework design (Treasury/War/CISA/NIST)"
-    due: 2026-08-01
+    due: 2026-08-04    # slipped from 08-01 (Sec 3b half; threshold half still dark)
     due_precision: day
     thread: frontier-model-gov-review-precedent
     entities: []
@@ -200,9 +216,21 @@ expectations:
     logged_by: crawl
     # 2026-08-01 ⟨daily⟩: BOTH 60-day deliverables passed silent. 3-day
     # retro-flip grace runs to 2026-08-04 before this stands.
-    status: passed-silent
-    resolved: 2026-08-01
+    # 2026-08-03 ⟨daily⟩: RE-OPENED within grace, but ASYMMETRICALLY. The
+    # Sec. 3(b) 30-day-access-framework half is moving — presented to
+    # OpenAI/Google/Anthropic staff 08-04 (tracked in full on
+    # gov-review-framework-announce, its twin). The CLASSIFIED NSA-led
+    # threshold half remains completely dark: no public acknowledgment of
+    # completion at all, reconfirmed 08-03 (no Federal Register / NIST / CISA
+    # / OSTP publication). So the two halves have split — 3(b) slips to a
+    # concrete 08-04, the threshold half is still watch-for-silence. Slip to
+    # 08-04 (the 3(b) date) with the threshold caveat noted; status pending.
+    slips: [2026-08-01]
+    status: pending
     evidence: >
+      Presented-to-labs 08-04 covers only the Sec. 3(b) half; the classified
+      threshold half remains dark (see 08-03 comment above). ORIGINAL 08-01
+      passed-silent finding, retained:
       EO 14409 was signed 2026-06-02, so its 60-day Sec. 3 deliverables came
       due 2026-08-01. Verified against the EO text on whitehouse.gov
       directly: Sec. 3 requires (a) Treasury / Dept of War-NSA / DHS-CISA,
@@ -331,11 +359,39 @@ expectations:
     # Keeping 08-14 as the watch date (the earlier of the two, so we look
     # early rather than late) with 08-29 as the outer statutory bound.
     # Do not re-mark this `confirmed` without a calendar entry naming SB 903.
-    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903
-    confidence: reported
+    source: https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903
+    confidence: confirmed
     what_confirms: "an Appropriations calendar entry naming SB 903, then report-out; outer bound 08-29. Cross-feeds kaiser-ai-clinician-backlash (would make E-Visit statutory)"
     logged: 2026-07-22
     logged_by: crawl
+    # 2026-08-03 ⟨daily⟩: confidence UPGRADED reported -> confirmed. The
+    # calendar entry naming SB 903 — the exact thing this ledger was holding
+    # for — now exists. On the legislature's first day back from recess, both
+    # leginfo's bill-status page (Committee Hearing Date 08/05/26, Location
+    # "Asm Appropriations") AND the Assembly Appropriations Committee's own
+    # live Daily File (Wed Aug 5, 9am, Room 1100, Wicks chair; SB 903 named
+    # in the day's bill list) carry it, dual-verified against RAW HTML via
+    # curl — NOT the WebFetch summarizer, which fabricated an "Aug 5" date on
+    # the 08-02 sweep before it was real (that caution was correct for 08-02;
+    # the entry materialized 08-03). The 08-05 hearing itself is tracked as
+    # ca-sb903-appropriations-hearing; this entry stays pending on the 08-14
+    # report-out outcome. Source swapped billHistoryClient -> billStatusClient
+    # (the page that carries the live hearing-date field).
+    status: pending
+
+  - id: ca-sb903-appropriations-hearing
+    claim: "SB 903 heard by Assembly Appropriations (suspense-or-forward decision)"
+    due: 2026-08-05
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://apro.assembly.ca.gov/hearings
+    confidence: confirmed
+    what_confirms: "the hearing outcome — held on suspense, passed as-is, or amended; the Daily File does NOT label it a suspense hearing, so which path it takes is decided at/after 08-05"
+    logged: 2026-08-03
+    logged_by: curate-add
+    # Dual-verified 08-03 against raw HTML (leginfo billStatus + apro Daily
+    # File). Feeds ca-sb903-assembly's 08-14 report-out deadline.
     status: pending
 
   - id: meta-q2-earnings
@@ -951,5 +1007,72 @@ expectations:
     confidence: confirmed
     what_confirms: "SoftBank's own earnings release, 3:30pm JST 08-06"
     logged: 2026-07-30
+    logged_by: curate-add
+    status: pending
+
+  # ---- added 2026-08-03 ⟨daily⟩: the week-ahead calendar ----
+
+  - id: eu-ceuta-ministers-meeting
+    claim: "EU interior/migration ministers meet on the Ceuta mass-crossing crisis"
+    due: 2026-08-04
+    due_precision: day
+    thread: ""    # Ceuta is flash-rail + world-news, no dedicated thread yet
+    entities: []
+    source: https://www.bloomberg.com/news/articles/2026-07-31/sanchez-says-spain-under-attack-after-mass-migration-influx
+    confidence: reported
+    what_confirms: "the meeting happening + any Schengen-controls or Morocco-returns outcome; toll stood at 72 with EU emergency talks called"
+    logged: 2026-08-03
+    logged_by: curate-add
+    status: pending
+
+  - id: ism-services-cook-0805
+    claim: "ISM Services PMI (July) prints and Fed Gov. Lisa Cook speaks — 08-05"
+    due: 2026-08-05
+    due_precision: day
+    thread: ""    # no Fed thread yet (Warsh-Fed is a candidate, unpromoted)
+    entities: []
+    source: https://news.google.com/rss/search?q=ISM+services+PMI+August+2026
+    confidence: reported
+    what_confirms: "the ISM Services release + Cook remarks; pairs with ISM Mfg (55.6, released 08-03) for the services/goods split under the Warsh hold"
+    logged: 2026-08-03
+    logged_by: curate-add
+    status: pending
+
+  - id: jobs-report-july-0807
+    claim: "July US employment report (nonfarm payrolls) — 08-07"
+    due: 2026-08-07
+    due_precision: day
+    thread: ""    # no Fed thread yet (Warsh-Fed is a candidate, unpromoted)
+    entities: []
+    source: https://news.google.com/rss/search?q=nonfarm+payrolls+August+7+2026
+    confidence: reported
+    what_confirms: "the BLS release; the week's macro capstone against the 3.50-3.75% hold and the cut-pressure politics"
+    logged: 2026-08-03
+    logged_by: curate-add
+    status: pending
+
+  - id: qwen38-max-open-weights
+    claim: "Alibaba releases Qwen3.8-Max open weights to Hugging Face / ModelScope"
+    due: 2026-08-10
+    due_precision: week    # vendor said "next week" from an 08-03 unveil
+    thread: china-stack-independence
+    entities: [alibaba]
+    source: https://the-decoder.com/alibabas-open-weight-qwen3-8-max-takes-on-long-horizon-ai-tasks-with-2-4-trillion-parameters/
+    confidence: reported
+    what_confirms: "weights actually downloadable (HF/ModelScope); model was UNVEILED 08-03 (2.4T params, benchmarked head-to-head vs GPT-5.6 Sol), weights promised 'next week'"
+    logged: 2026-08-03
+    logged_by: curate-add
+    status: pending
+
+  - id: moonshot-hk-ipo-filing
+    claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"
+    due: 2026-08-31
+    due_precision: month
+    thread: kimi-distillation-fight
+    entities: [moonshot-ai]
+    source: https://wccftech.com/moonshot-chases-a-potential-50-billion-ipo-valuation-even-as-trump-administration-accuses-it-of-distilling-anthropics-fable-model/
+    confidence: rumored    # single-source-thin (Wccftech citing unnamed China reports)
+    what_confirms: "an actual HKEX filing; the $50B figure has no primary confirmation, sits above the $35B Series F, and rides atop the Fable-distillation dispute"
+    logged: 2026-08-03
     logged_by: curate-add
     status: pending

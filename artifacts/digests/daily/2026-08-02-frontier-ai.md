@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-02
-status: building
+status: final
 window_start: 2026-08-02T05:00:00-04:00
 as_of: 2026-08-02T13:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-08-02
@@ -151,6 +151,17 @@ worth naming — `confidence: reported` on a regulatory entry should mean
   traceable source at all.** A successor expectation now tracks the public
   flip with those caveats written into it.
   <!-- k: t=anthropic-ipo-timing e=anthropic axis=corrections -->
+- ⚠️ **Held OUT of the record (08-03 critic): an OpenAI model named
+  "Astra."** A sweep signal attached the name to an "AI math-proof" story.
+  It is **not** being folded in as a real development: the 08-03 frontier
+  sweep found "Astra" single-source-thin — only NY Post uses it (a model
+  "discussed" at the 08-04 White House meeting), and the 15-state GOP AG
+  letter, which does name the OpenAI-breach models as **GPT-5.6 Sol** and
+  "an unreleased, even more capable" one, pointedly does not use "Astra."
+  Logged as an unverified lead pending a primary or second-outlet
+  confirmation — the same date/sourcing discipline that just retracted the
+  Woebot false-catch on the Mental Health digest.
+  <!-- k: t= e=openai axis=corrections -->
 
 ## ⏳ Upcoming & expected
 

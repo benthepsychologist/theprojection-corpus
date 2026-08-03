@@ -1,0 +1,142 @@
+# 2026-08-03-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the bullet's
+# own bold lead phrase (first 50 chars), a dedicated key namespace. The
+# bullet's <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-07-30).
+
+monday-s-rally-was-bought-on-a-denied-iran-claim:
+  mechanism: >
+    A broad risk-on session transmitted through a single channel: the
+    claimed Iran/Hormuz de-escalation drove oil down ~5%, which cut
+    inflation-expectations pressure on Treasury yields, which lifted risk
+    assets — Bloomberg's own framing was "Stocks, Bonds Rise as US-Iran
+    Hopes Spur Oil Drop." Read against the standing rate picture
+    (capital-context.yaml rate_regime: Fed on a hawkish hold at
+    3.50-3.75%, 30-year near 5.24%, room to cut narrowing), a genuine oil
+    relief would be one of the few forces that eases the inflation side of
+    that squeeze without the Fed moving — which is exactly why equities
+    reached for it. But the premise is contested: Iran denies the deal,
+    and a second LNG tanker was hit in the same strait the same day, so
+    the rally is priced on a claim, not a settlement.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The denial hardens or another Hormuz incident lands, oil retraces
+        back toward and past $90, and Monday's yield-relief-driven rally
+        reverses as the inflation/yield fear it removed comes back.
+      why: >
+        The whole move rests on supply-relief hope with no confirmed deal
+        behind it; a chokepoint attack already pushed Brent to $90
+        intraday today, so the reversal trigger is live, not hypothetical.
+      precedent: >
+        The 14-point US-Iran memorandum signed June 17 in Switzerland
+        explicitly reopened the Strait and lifted the blockade, then fell
+        apart within weeks (commercial-ship strike, US retaliation, the
+        cycle resuming) — the Strait is still largely closed today despite
+        that deal. Markets that priced relief off the June claim had to
+        unwind it.
+    - direction: >
+        A real, durable passage arrangement actually holds (even an
+        Iran-Oman one on shipping only), oil stays down, and the
+        yield-relief channel gives the Fed cover the rate picture has been
+        denying it — a genuine risk-on regime rather than a one-day
+        sentiment spike.
+      why: >
+        If the supply premium in oil is actually removed rather than just
+        hoped away, the inflation-expectations easing is real and
+        persistent, and the equity move has a foundation.
+      precedent: ""
+  context_note: >
+    The tell to watch is breadth: SOXX gained only +0.55% while its own
+    megacap leaders (NVDA +2.93%, QCOM +2.68%) ran far ahead, so even on
+    the up day the market bought named AI winners rather than the whole
+    risk complex — a narrow rally is more fragile to a sentiment reversal
+    than a broad one. Sits on the rate_regime and fund_flows readings in
+    capital-context.yaml.
+
+oracle-jumped-9-2-as-its-credit-story-stayed-bad:
+  mechanism: >
+    Equity and credit markets are pricing the same AI-capex build in
+    opposite directions on the same day. Oracle's stock rose 9.2% rewarding
+    the AI-cloud growth narrative (the expanded Google Cloud partnership
+    plus the risk-on tape), while its credit still carries the distress the
+    identical capex created — an S&P downgrade to BBB-/A-3 (07-09) over a
+    projected $42B FCF deficit by FY2027, and a record 198bp CDS (07-17).
+    The equity holder is paid on growth; the credit holder is paid on
+    survival, and the AI buildout that funds the first story is what
+    stresses the second.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The divergence persists and widens — equity keeps rewarding
+        AI-cloud revenue growth while CDS/credit spreads stay elevated or
+        widen further, until a capex-funding or refinancing event forces
+        the two views to converge (usually toward the credit view).
+      why: >
+        The capex driving the growth story is the same capex driving the
+        cash burn; the two prices can diverge only as long as the market
+        treats the growth as self-funding, which the FCF deficit
+        projection disputes.
+      precedent: >
+        The 07-09 S&P downgrade and the 07-17 record 198bp CDS both
+        already repriced Oracle's credit off the AI-capex burn while the
+        equity was still being bid — this item is that same divergence
+        widening on an up day, not a new pattern.
+    - direction: >
+        The growth story validates — AI-cloud revenue ramps fast enough
+        that the FCF deficit narrows, credit spreads compress back toward
+        the equity's optimism, and the downgrade proves the low.
+      why: >
+        If Oracle's OCI/Gemini and Google Cloud AI revenue actually scales
+        into the guided capex, the cash-burn projection eases and the
+        credit fear was overdone.
+      precedent: ""
+  context_note: >
+    Track alongside the broader AI-infrastructure credit repricing
+    (CoreWeave's debt priced at 96-97 cents, ~5.5pp over benchmark; the
+    hyperscaler-guarantee financing structures) — Oracle is the listed-name
+    version of the same question the whole ai-circular-financing-risk
+    thread asks: is AI-capex debt priced for the growth or for the burn?
+
+softbank-s-stalled-openai-margin-loan-is-the-crack:
+  mechanism: >
+    SoftBank sits at the center of the AI circular-financing chain (the
+    $40B OpenAI bridge, the Arm stake, the OpenAI follow-on), and the
+    clearest lenders'-eye signal on that chain is which loans get made.
+    The funded $40B bridge exists; the separate $6-10B margin loan against
+    the OpenAI stake does not — it has stalled twice on "valuation
+    concerns." A margin loan is priced directly off the collateral's
+    assessed value, so lenders declining to extend one against the OpenAI
+    stake is a direct statement that they do not trust the implied OpenAI
+    valuation as collateral, even as the same valuation anchors the equity
+    and bridge-loan side of the structure.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The margin loan stays stalled or is repriced down through
+        Thursday's print and beyond, hardening as evidence that the
+        collateral value lenders will underwrite is below the marked
+        OpenAI valuation — a visible crack in the circular-financing chain.
+      why: >
+        Two stalls (06-10, 07-01) on the same "valuation concerns" with no
+        resolution is a pattern, not a timing issue; lenders repricing
+        collateral is how these chains actually tighten.
+      precedent: >
+        The margin loan was halted 06-10 and renewed talks 07-01 reached
+        no resolution — the stall is already twice-observed, so its
+        persistence is the base case, not a new risk.
+    - direction: >
+        The loan gets done at or near the marked valuation around the
+        earnings print, which would be a lender vote of confidence in the
+        OpenAI collateral and ease the circular-financing worry.
+      why: >
+        A completed margin loan against the stake would mean at least one
+        set of lenders underwrites the OpenAI valuation as real collateral,
+        partially validating the chain.
+      precedent: ""
+  context_note: >
+    Distinct from the funded $40B bridge (21-bank syndicate, March 2027
+    maturity) — conflating the two hides the signal. The unfunded loan is
+    the informative one because it is the one the market is refusing to
+    make. Feeds softbank-all-in and ai-circular-financing-risk; the print
+    lands 08-06, two days after SpaceX's.

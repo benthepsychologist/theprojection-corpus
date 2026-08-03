@@ -13,6 +13,16 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-03 — Alibaba ships Qwen3.8-Max, the first Chinese frontier-scale head-to-head vs a US model
+
+- **Alibaba unveiled Qwen3.8-Max, benchmarked head-to-head against
+  GPT-5.6 Sol** — 2.4T total / 95B active parameters (MoE), 1M-token-class
+  context, with open weights promised to Hugging Face/ModelScope "next
+  week"; it posts TerminalBench 2.1 86.6 (vs Sol's 88.8) and PaperBench
+  93, the first Chinese lab explicitly benchmarking at this scale against
+  a US frontier model.
+  ([the-decoder](https://the-decoder.com/alibabas-open-weight-qwen3-8-max-takes-on-long-horizon-ai-tasks-with-2-4-trillion-parameters/)) ⟨daily 2026-08-03⟩
+
 ## 2026-08-02 — DeepSeek used for an autonomous attack campaign after Claude and Codex refused
 
 - **A Zhuhai-based threat actor using the aliases *knaithe* and *KnYuan*

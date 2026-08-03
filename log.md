@@ -1479,3 +1479,91 @@ Deliberate non-collision: `gaza-war.md` names "Tehran" rather than "Iran"
 throughout its regional-linkage section, and names one external party at a
 time — the 07-31 matcher-collision lesson applied prospectively. Verified
 by a proximity check across four country pairs before publishing.
+
+---
+
+## 2026-08-03 — /daily: the populated week publishes
+
+Ran the full loop for digest-day 2026-08-03 (Monday, ~18:45 ET), the run
+Ben kicked off explicitly and the publish he'd been holding through the
+week-roll. Collectors ran (16/18; the world-news rebuild reaches GDELT via
+BigQuery independently, so unaffected). Five sweeps dispatched in one batch;
+all five landed and were curated here.
+
+**Finalized 08-02 (Sunday), recall clean — but with one retraction that was
+the integrity story of the run.** The 08-02 critic had logged "Woebot
+Health is shutting down its app" as a fresh 07-31 benchmark catch. It is
+15-MONTH-OLD NEWS: the MobiHealthNews article is dated 2026-04-25 *of 2025*,
+the app retired 2025-06-30 (five mirrors + a Feb-2026 Wayback capture
+agree). Retracted across the 07-31 MH digest, the 08-02 MH digest and the
+08-02 critic block in coverage-log, struck-through-not-deleted so the error
+and its fix both stay on the record. Root cause: the item was accepted on a
+headline+URL whose *date* was never confirmed against the window, behind a
+hedge that itself named the date as unconfirmed. Standing lesson recorded
+(all lenses): a recall "miss" only counts once its date is confirmed inside
+the window; a bot-walled fetch is a reason to date-check harder, not a
+licence to log on the headline. Separately HELD OUT of the finalized
+record: an OpenAI model "Astra" (an 08-02 sweep signal) — today's frontier
+sweep found it single-source-thin (NY Post only; the GOP AG letter names
+GPT-5.6 Sol + an unreleased model, not "Astra"), so it is an unverified
+lead, not a miss.
+
+**THE THROUGHLINE — claims arriving ahead of the things that would make
+them true.** Monday's broad risk-on rally (S&P 7,600.50 +1.48%, Nasdaq
++2.13%, Dow record) was bought on an Iran de-escalation claim Tehran flatly
+denies (Iran says it's talking to Oman, not the US), transmitted through a
+~5% oil drop (Brent ~$83.7, down from a $90 intraday) that cut inflation/
+yield fears — even as a second Qatari LNG tanker (GasLog Shanghai) was hit
+in Hormuz. The market priced peace on a claim one government calls false,
+in the very strait the claimed deal was meant to reopen; a June 17
+memorandum ran the identical deal-then-denial cycle and collapsed in weeks.
+The harder story moved too: the EO 14409 framework got an 08-04
+present-to-labs meeting date without publishing anything (both ledger twins
+re-opened from passed-silent to *slipped*, since a scheduled staff meeting
+isn't the official announcement that confirms them; the classified NSA
+threshold half stays fully dark). Alibaba shipped **Qwen3.8-Max**
+(2.4T/95B, first Chinese frontier-scale head-to-head vs GPT-5.6 Sol, weights
+next week). Fifteen GOP state AGs turned the OpenAI containment breach into
+a legal-exposure matter. And **SB 903 is confirmed calendared** — Assembly
+Appropriations, Wed 08-05, 9am — the calendar entry the MH lens was holding
+for, dual-verified against RAW HTML (leginfo bill-status + the committee
+Daily File), NOT the WebFetch summarizer that fabricated an "Aug 5" date on
+Sunday before it was real. Clean sequence, not a contradiction: on Sunday
+(recess) the entry genuinely didn't exist; Monday (back from recess) it
+materialized.
+
+**Ledger:** now 50 expectations. SB 903 reported→confirmed + new
+`ca-sb903-appropriations-hearing` 08-05; `gov-review-framework-announce` and
+`eo14409-deadlines` slipped 08-01→08-04; added the week-ahead calendar
+(SpaceX Q2 08-04, EU-Ceuta ministers 08-04, ISM Services+Cook 08-05,
+SoftBank + SpaceX unlock 08-06, jobs 08-07, Qwen weights ~08-10, Moonshot
+HK IPO ~month, thin). 13 thread timelines rebuilt (world+capital and
+frontier+MH, two disjoint sonnet dispatches), `last_seen` bumped, and
+`actor-doing` refreshed for alibaba-qwen/openai/oracle/softbank.
+
+**Flash:** one critical entry rides its last day (the Iran cancellation,
+lapses 08-04 on its own expiry). NO NEW FLASH filed — the correct outcome:
+the day's net was de-escalation pricing, the second tanker is a
+continuation the cancellation flash already frames, and the war is a
+running state, not a new discrete event.
+
+**Global-capital interpretations** (3, all validated + exported as
+/interpretation/ pages): Monday's rally-on-a-denied-claim (precedent: the
+June 17 memorandum that collapsed), Oracle's equity/credit divergence, and
+SoftBank's stalled OpenAI-collateral margin loan as the financing-chain
+crack.
+
+**Published the populated week.** `render_read` → 466 KB (30 items, 70
+threads, 139 entities). Readout packs refreshed (front + 3 lenses, 4 sonnet
+dispatches, all validated by the repo's own `validate_briefing`; one
+fix-and-reapply on a global-capital watch-field that came back as a string
+not a list). `/publish --push`: 42 entity pages, 3 /news/ beats, payload
+(29 items), board (19 houses/92 orgs), claims (753), readouts (156),
+interpretations (3), 122 map pages; site committed+pushed; Cloudflare build
+686be237-c7ea-47d6-9eeb-f51959326ab7 queued. The site now carries the
+populated week AND the projects-hub / /news restructure from earlier this
+session (a full rebuild renders both).
+
+Pick up: 08-03 finalizes on the next run (~5h past its close); watch 08-04
+for whether the EO framework actually publishes at the labs meeting and for
+SpaceX's first public earnings + the EU-Ceuta ministerial.

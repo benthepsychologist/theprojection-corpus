@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-02
-status: building
+status: final
 window_start: 2026-08-02T05:00:00-04:00
 as_of: 2026-08-02T13:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-08-02
@@ -56,8 +56,25 @@ confirmed without one.
 
 ## Clinical safety & harm
 
-- **Late catch from the 07-31 critic — Woebot Health is shutting down its
-  app.** A named AI-mental-health-chatbot company that held an FDA
+- ⚠️ **CORRECTION (08-03 critic) — the Woebot "late catch" was a
+  15-month-old story, retracted.** An earlier sweep this session logged
+  "Woebot Health is shutting down its app" as a fresh 07-31 catch. The
+  08-03 coverage critic verified the MobiHealthNews article is dated
+  **2026-04-25 — of 2025** — the app retired **2025-06-30**; five mirror
+  sites and a Feb-2026 Wayback capture agree. It is not news from this
+  window and never should have entered the ledger as a catch. The digest's
+  own hedge ("only the headline, URL and date are confirmed") was the crack
+  — the *date* was not actually confirmed against the window. Lesson,
+  recorded in coverage-log: confirm a story's date against the digest
+  window BEFORE logging it as new; a bot-walled full-text fetch is a reason
+  to date-check harder, not a licence to log on the headline alone.
+  <!-- k: t= e= axis=clinical-safety-and-harm -->
+
+<!-- superseded: the false Woebot "late catch" below is retracted per the
+     correction above; left struck through rather than deleted so the
+     error and its fix both stay on the record. -->
+- ~~**Late catch from the 07-31 critic — Woebot Health is shutting down its
+  app.**~~ ~~A named AI-mental-health-chatbot company that held an FDA
   breakthrough designation for a postpartum-depression chatbot, closing on
   the same day this lens covered a federal companion-chatbot bill and two
   adverse AI-chatbot rulings, and it did not register here at all. ⚠ Only

@@ -14,6 +14,16 @@ clearinghouse, the FINRA-style SRO proposal, and the voluntary 30-day
 review deal. The announced framework's terms, who joins/refuses, and the
 first model actually gated by it.
 
+## 2026-08-03 — The EO 14409 framework gets a date without getting published
+
+- **The White House will present the "finalized" framework to the labs
+  08-04** — the Office of the National Cyber Director (Sean Cairncross)
+  hosts staff-level reps from OpenAI, Google and Anthropic on Tuesday to
+  discuss the Sec. 3(b) pre-release framework, the last day of the grace
+  window, even as a fresh check confirms nothing has published (no
+  Federal Register notice, no NIST/CISA/OSTP statement).
+  ([NY Post](https://nypost.com/2026/08/03/business/ai-giants-anthropic-google-and-openai-to-meet-with-white-house-to-talk-regs-tuesday/)) ⟨daily 2026-08-03⟩
+
 ## 2026-08-02 — The EU AI Act becomes enforceable while Washington's own deadline stays silent
 
 - **From 08-02 the EU AI Office and member-state authorities begin

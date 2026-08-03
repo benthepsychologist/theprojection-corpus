@@ -110,13 +110,24 @@ Behavioral Health Business and MobiHealthNews (search-snippet only — both
 conclusive).*
 
 **They led with → we missed:**
-- **Woebot Health is shutting down its app** (MobiHealthNews, 07-31). A
-  named AI-mental-health-chatbot company — it held an FDA breakthrough
+- ⚠️ **RETRACTED (08-03 critic) — the Woebot "miss" was a 15-month-old
+  story, not a 07-31 development.** This appendix originally logged
+  "Woebot Health is shutting down its app" as a benchmark-recall catch. The
+  08-03 coverage critic verified the MobiHealthNews article is dated
+  **2026-04-25 — of 2025**; the app retired **2025-06-30** (five mirror
+  sites + a Feb-2026 Wayback capture agree). It is not from this window and
+  was never a real miss — the recall "win" is withdrawn. The failure was
+  logging on a headline+URL whose *date* had not actually been confirmed
+  against the digest window, behind the same hedge that flagged the fetch
+  as blocked. Root-cause and lesson are in `coverage-log.md`. Original
+  (now-false) text struck through below.
+  <br>~~**Woebot Health is shutting down its app** (MobiHealthNews, 07-31).
+  A named AI-mental-health-chatbot company — it held an FDA breakthrough
   designation for a postpartum-depression chatbot — closing down on the
   same day this lens covered a federal companion-chatbot bill and two
   adverse AI-chatbot court rulings. Squarely on this lens's own theme and
   entirely absent. ⚠ Only the headline, URL and date are confirmed; the
-  site blocked full-text fetch.
+  site blocked full-text fetch.~~
   ([MobiHealthNews](https://www.mobihealthnews.com/news/woebot-health-shutting-down-its-app))
 
 **Both covered:** none — no benchmark surfaced the companion-chatbot bill,

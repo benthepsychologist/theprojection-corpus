@@ -22,6 +22,15 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-03 — Oil craters ~5% on the de-escalation claim after touching $90 intraday
+
+- **Oil fell to a three-week low on Iran relief hope** — Brent settled
+  ~$83.5–83.9 (−4.5–5.0%) and WTI ~$80–81 (−4.6–5.5%), down ~7% from
+  Friday's $90.12 settle, after Brent touched $90 intraday on the second
+  Hormuz tanker strike; the catalyst is the claimed Hormuz-reopening deal
+  that Iran denies.
+  (TradingEconomics/USA Today/Guardian, 08-03) ⟨daily 2026-08-03⟩
+
 ## 2026-08-02 — ⚠️ SCALE CORRECTED: the strait has been shut for five months, not one week
 
 - **The Strait of Hormuz has been effectively closed since 2026-02-28**,

@@ -1,7 +1,7 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-08-03**. Top note below covers the q1/q2
-research workshop; the 08-02 `/daily` note sits under it.*
+*Hand-maintained. **As of 2026-08-03**. Top note covers the q1/q2 research
+workshop; the 08-03 and 08-02 `/daily` notes sit under it.*
 
 > **2026-08-03 — a second workstream opened: the buildout-research
 > skeletons, workshopped in `INBOX/`.** kestrel's engine session dropped a
@@ -25,6 +25,30 @@ research workshop; the 08-02 `/daily` note sits under it.*
 > q2 is a different question from radar Q2. Don't cross-wire them.
 > Also this day: the 08-02 collector-failure record corrected (killed at
 > timeout, 15/18 — not "slow"; the world-news rebuild was unaffected).
+
+> **2026-08-03 — `/daily`: the populated week publishes, on a throughline
+> of claims arriving ahead of the things that would make them true.**
+> Finalized 08-02 (Sunday, recall clean) and wrote the five 08-03 digests.
+> **Integrity fix:** the "Woebot Health shutting down" item logged as a
+> fresh 07-31 catch was a **15-month-old story** (article 2026-04-25 *of
+> 2025*; app retired 2025-06-30) — retracted across the 07-31/08-02 MH
+> digests and `coverage-log`, with a standing lesson (confirm a recall
+> item's *date* against the window before logging). **Throughline:**
+> Monday's risk-on rally (S&P 7,600.50 +1.48%, Dow record) was bought on an
+> Iran de-escalation claim Tehran denies while a second LNG tanker burned in
+> Hormuz; the harder story moved too — the **EO 14409 framework** got an
+> 08-04 meeting date without publishing (both ledger twins re-opened from
+> passed-silent to *slipped*, not a silent stand), **Alibaba shipped
+> Qwen3.8-Max** head-to-head vs GPT-5.6 Sol, **15 GOP state AGs** turned the
+> OpenAI containment breach into a legal matter, and **California's SB 903**
+> was **confirmed calendared** for an 08-05 Appropriations hearing
+> (dual-verified against raw HTML — the ledger flip the MH lens was holding
+> for). Ledger now 50 expectations (added the week-ahead calendar: SpaceX
+> 08-04, ISM Services/Cook 08-05, SoftBank 08-06, jobs 08-07, Qwen weights
+> ~08-10). **Flash:** one critical entry rides its last day (Iran
+> cancellation, lapses 08-04); **no new flash filed** — correct, the day's
+> net was de-escalation pricing. `/publish --push` shipped the populated
+> week (the publish Ben had been holding for the week-roll).
 
 > **2026-08-02 — the map corrected itself three times, and each correction
 > was bigger than the day's news.** A `/daily` clearing a two-day finalize

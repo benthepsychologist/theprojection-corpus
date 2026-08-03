@@ -14,6 +14,16 @@ financing, the Starlink→AI cash flow, Musk's supermajority-vote control, and
 whether the tiny float + index-forced buying trap passive holders in a
 money-losing AI mega-cap. The Aug-6 lock-up is the next event.
 
+## 2026-08-03 — First public earnings land tomorrow, two days before a historic insider unlock
+
+- **SpaceX reports its first post-IPO earnings 08-04** — consensus
+  revenue ~$6.75–6.9B on an EPS loss (−$0.23 to −$0.35 range), with the
+  investor question whether Starlink cash flow (10.3M subs, targeting
+  18M) can fund the xAI/Starship burn; SPCX closed $114.53 (+5.68%),
+  still ~15% below the $135 IPO issue, and the ~$116–123B insider lockup
+  opens 08-06.
+  (TipRanks/Moomoo/stockanalysis.com, 08-03) ⟨daily 2026-08-03⟩
+
 ## 2026-08-01 — SPCX trades ~20% below issue into an unconditional unlock
 
 - **SPCX closed 2026-08-01 at $108.37 against a $135.00 IPO price set
