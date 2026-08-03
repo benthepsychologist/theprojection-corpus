@@ -1,0 +1,80 @@
+<!-- q2 color-team · round 1 · RED seat · 2026-08-03
+     model: Claude (Fable-tier subagent, fresh context, single-family run; wave 2 after 529s)
+     artifact: INBOX/2026-08-03-q2-inference-demand-skeleton.md
+     foundation context: INBOX/2026-08-02-q1-skeleton-v2.md
+     prompt: INBOX/q2-color/PROMPTS.md §RED, dispatched verbatim
+     memo below is the seat's return, verbatim and unedited. -->
+
+# RED memo — q2 inference-demand skeleton (2026-08-03)
+
+Seat: RED, fresh context. Documents read: q1 skeleton v2 (foundation, rulings binding), q2 skeleton (under review). My findings are numbered R-1…R-14; q1 rulings are cited zero-padded ("q1 R-06") to avoid collision.
+
+---
+
+## Substantive findings
+
+**R-1. SUBSTANTIVE. The external/intra cut — q2's load-bearing distinction — is undefined for exactly the buyers who dominate current revenue.**
+→ q1 §3 dissolved the boundary as a roster: *"Inside/outside stops being a yes/no per company and becomes 'how far the money is traced.'"* q2 §2 requires the opposite: "External revenue — inference/capacity bought by parties **outside the system**" is the burn-metric numerator, and §3 calls boundary "the load-bearing cut." Worked case: an API aggregator (OpenRouter-shaped) or an AI-app company (Cursor-shaped, among the largest single buyers of lab inference) performs "inference selling" / "downstream revenue" — two of q1's twenty core activities, all live nodes per q1 R-06. By the activity roster they are **in-system**, so their purchases are transfers and the measurement point moves one hop out, to their (private, undisclosed) customers. Yet q2 §3's taxonomy lists "resellers/aggregators" *parallel to* "in-system AI companies," implying they're countable external buyers. Both readings are available; billions in the numerator and the §7 hypothesis flip on the choice. Worse, the boundary is **viral**: any buyer who resells AI capability becomes in-system, pushing the frontier outward hop by hop — q1 gave the spend side a terminal rule (F7) for exactly this regress; q2 has no revenue-side analog.
+→ Why it matters: without this rule the burn metric and the headline hypothesis are not one number each — they're a family of numbers indexed by an unstated classification.
+→ Remedy: a revenue-side F7 — e.g., a buyer counts as the external boundary when consumed capacity is not resold as compute/AI capability, or when its AI-resale share falls below a ⚙ threshold; otherwise trace one hop further. And buyer classification is a claim like any other: recorded with observations and rationale (q1 R-04), not a silent sourcer judgment.
+
+**R-2. SUBSTANTIVE. "Zero schema changes" is false at the seam it names: flows can't be tied to the commitments they draw down.**
+→ q2 §2 calls `amortized_to_date` "the seam: it is exactly what q1's deployed-rate rule consumes." But q1's edge carries `{type, destination category, period, observations}` — no commitment reference. OpenAI→Microsoft has multiple concurrent money relationships (the $250B commitment, ordinary pre-existing Azure spend, the restructured arrangement q2 §5 itself cites); Nvidia↔OpenAI has an equity edge (q1 F3's own example) plus purchase flows. When a Q3-2026 flow between a pair lands, nothing says which commitment it amortizes — so `amortized_to_date` is either a stored field that drifts from the flow record (two sources of truth) or a derived one that **requires a field q1 edges don't have**. q1 R-13's scope ruling stands untouched; its factual claim that the skeleton "confirms… zero schema changes" is what fails.
+→ Why it matters: this is precisely the rework-economics class q1 §1.5 says is expensive to change after data accumulates. Every flow observation recorded before the link exists must be re-attributed by hand later.
+→ Remedy: add a nullable `commitment_ref` to flow edges **now**, before sourcing. One field, cheap today, unpayable in six months.
+
+**R-3. SUBSTANTIVE. The chain rule for commitments (§6) is stated but unimplementable: the commitment object has no chain or containment relations.**
+→ §6's dedup requires knowing that Microsoft's neocloud procurement is "a hop of the same future dollar" as OpenAI's commitment to Microsoft. The object carries `funding_linkage` (origination — who funded it), but no *serves/pass-through* relation (which upstream obligation this commitment exists to fulfill). Separately, the seed register lists both "Stargate frame — up to $500B" and "OpenAI → Oracle >$300B" as sibling rows with no *frame ⊃ constituent* relation — if the Oracle contract is Stargate capacity (a "frame" contains *something*), any summation over the register double-counts and the object cannot even represent the overlap. So §6's sanctioned aggregate, "boundary-committed," is uncomputable as specified.
+→ Remedy: two relations on the commitment object — `serves_ref` (pass-through chains) and `part_of_ref` (frame/constituent) — plus a supply-side/demand-side discriminator (see R-4).
+
+**R-4. SUBSTANTIVE. The headline hypothesis references an aggregate the plan's own §6 bans, and compares a stock to a flow with no period rule.**
+→ §6, verbatim: commitment totals come **only** from (a) boundary-committed — *external* buyers' commitments — or (b) per-node registers. §7's LHS, "committed **intra-system** contract face value," is neither: it's a cross-node intra-system sum, the exact "industry backlog" construction §6 declares banned, over a register that chains within itself (R-3). The RHS, "realized external inference revenue," is per-period; the LHS is multi-year cumulative face — ~$1.4T of 4-to-10-year obligations against revenue per *what window*? Choose trailing-quarter and the ratio is ~100x; choose the contracts' full terms and it may be ~2x. The "order of magnitude" is a free parameter. Under q1 R-09 this hypothesis must be **graded**; as stated it cannot be.
+→ Remedy: restate now, in gradeable units — e.g., "intra-system committed face amortizing into the next 12 months, deduped via `serves_ref`/`part_of_ref` and filtered to demand-side commitments, exceeds trailing-12-month recognized external inference revenue by ≥10x" — and add the supply/demand discriminator the filter needs (the register currently mixes Stargate build commitments with OpenAI→Azure capacity contracts in one undifferentiated table).
+
+**R-5. SUBSTANTIVE. The recognized-only rule plus disclosure reality makes the external-revenue total structurally near-empty — the hypothesis then confirms by construction.**
+→ Decision (d): period totals quote recognized revenue only; stage-1 run-rate claims are "never mixed into a period total." Now run Tier A as written: OpenAI and Anthropic — the two largest external-inference sellers, dominating consumer and API revenue — are private and publish **no recognized revenue**; their only observations are stage-1 leaks, which the rule zeroes out. Hyperscaler AI segments are, per q2's own §4, only "upper bounds that *contain* inference" — bounds, not period entries. Neocloud revenue is overwhelmingly intra-system (CoreWeave's buyers: Microsoft, OpenAI, Nvidia). Government has its own problems (R-7). Net: the RHS undershoots reality not because external demand is small but because the rule filters out its main carriers — biasing the grade of §7 toward confirmation. A one-sided conservatism is not conservatism when the number sits in a ratio's denominator.
+→ Remedy: q1 §4 already contains the fix — the "inference from other claims" provenance class. Let a run-rate claim spawn a *derived* recognized-revenue estimate (annualization unwound, haircut, method note, low reliability), and let the weighted read do its job. Exclusion by stage is the rank-by-type q1 killed, sneaking back in.
+
+**R-6. SUBSTANTIVE. The revenue ladder has no carrier in the observation record.**
+→ q2 says a run-rate leak is "recorded as such." As *what*? The q1 observation is `{figure, as_of, period, source, provenance_class, capture_ref, reliability, rationale, method_note}` — no stage field, and a "$X ARR as of June" claim has no honest `period` at all (it's an instantaneous annualization, not a quarter's revenue). Whatever a sourcer writes into `period`, the edge's weighted read (q1 §4) will mix it into that period unless a machine-readable discriminator exists; `method_note` prose can't drive the "never mixed" rule. Same ambiguity on the other end: is a booked contract (stage 2) an observation on a revenue edge or on the commitment object? Oracle's RPO growth is both a stage-2 revenue observation and a face-value observation — recorded twice, reconciled never.
+→ Remedy: add a `measurand`/`stage` field to observations, and rule the placement: stages 1–2 attach to commitments, stages 3–4 to revenue edges, joined by `commitment_ref`.
+
+**R-7. SUBSTANTIVE. The government seam, as designed, sources ceilings and middlemen, not inference revenue.**
+→ q2 §3 sells procurement as "named buyers and named amounts." Operated for real: USAspending's headline award figures are obligations and IDIQ *ceilings* (JWCC: $9B ceiling, task orders orders-of-magnitude smaller in early years) — stage-2 on q2's own ladder, which decision (d) bars from period totals; FedRAMP authorization is a compliance status, not a purchase; and the vendor of record for AI purchases is routinely a reseller or cloud vehicle (Carahsoft, CSP partners, Bedrock consumption under an AWS contract), so the "named" seller is the middleman, not the AI seller. And the 2025 OneGov $1-per-agency ChatGPT/Claude deals mean the largest federal adoption events post **~zero dollars** in exactly these records. The prediction table's "government: high" will grade as a win while measuring the wrong quantity through the wrong counterparty.
+→ Remedy: spec the sweep to task-order-level actions and outlays, not award ceilings; capture `contract_vehicle` and maintain a vehicle→OEM unwinding map (a real sourcer deliverable, absent from Tier A); flag nominal-price awards as adoption evidence, not revenue.
+
+**R-8. SUBSTANTIVE. External buyers have no node type — every external revenue edge lacks a legal endpoint.**
+→ q1 nodes are entity×activity; q1 never needed anonymous counterparties because its externals (suppliers) are identifiable companies. q2's external buyers are *populations*: "consumers," "enterprise (coarse sector split)." A survey observation — "financial services is ~30% of enterprise AI spend" — attaches to no edge, because there is no financial-services entity; q1's `aggregated` state splits a node's edges among *entities/activities*, not among anonymous sectors, and F6 splits within firms. Even consumer subscriptions, the cleanest external revenue, have no representable buyer endpoint. Yet §3 promises the sector split as a deliverable and calls its estimates first-class.
+→ Remedy: declare a sanctioned external-population node class (`ext/consumer`, `ext/enterprise-<sector>`, `ext/gov-<jurisdiction>`) mirroring F6: inbound allocation is a claim with observations and reliability. This is a (small, honest) schema addition — better named now than improvised per-sourcer.
+
+**R-9. SUBSTANTIVE. Commitment terms move over time, and the object can't capture the movement — violating the design's own capture asymmetry.**
+→ q2 §5 names the canonical warning itself: "the restructured OpenAI–Microsoft arrangement is the canonical warning that terms move." Now look at the object: `structure`, `termination/contingency clauses` are scalar current-state fields; `observations[]` inherits q1's *figure*-shaped observation. The exact canonical case — face reiterated at $250B on the 07-29 call while structure transformed — records as "still $250B" and **loses the worth-relevant event entirely**. q1 §1.5: "you can rework anything except what you didn't capture. Sources rot." A clause state that was never captured with date and source is unrecoverable after the next renegotiation.
+→ Remedy: make each worth-bearing field (structure, clauses, linkage) observation-bearing in its own right — dated, sourced, superseding — so a commitment's term history is a sequence, not a mutable scalar.
+
+**R-10. SUBSTANTIVE. Two of ten register seeds aren't contracts — and the mismatch hides the register's missing diagnostic.**
+→ "CoreWeave backlog" and "AWS backlog $496B" are party-less RPO aggregates; they cannot carry `{parties, structure, termination clauses}` and are precisely the objects §6 says must never be summed. They don't belong *in* the register — they belong *against* it: sum of a node's active register faces vs its disclosed backlog, gap = unregistered committed inbound. That reconciliation is the demand-side analog of q1's conservation check, and q2 currently has no per-node identity doing diagnostic work at all. The doc even records the perfect seed fact — Anthropic→Amazon *excluded* from AWS's stated $364B backlog — and has nowhere structural to put it.
+→ Remedy: split the seeds into commitment entries vs node-level backlog observations; define backlog reconciliation as a first-class coverage surface.
+
+**R-11. SUBSTANTIVE. The overlay (decision a) estimates a capacity share, but the question is a revenue share — and the two diverge exactly where it matters.**
+→ Token economics, traffic, and subscriber math estimate *physical utilization* mix. Revenue mix requires the price mix: committed training capacity sells at discounted contract rates, retail API inference at far higher $/FLOP. If 60% of a hyperscaler's AI FLOPs are training and 40% inference, the revenue split can be 30/70. Multiplying a FLOP-share overlay into segment revenue systematically mis-splits precisely at the heterogeneous-contract sellers the plan cares most about.
+→ Remedy: scope the Tier B probe to build the overlay in revenue space — utilization × price-mix (price cards, disclosed contract rates) — or relabel its output as capacity share and forbid multiplying it into dollars.
+
+---
+
+## Line findings
+
+**R-12. LINE. Amortized capacity flows have no destination category.** When OpenAI→Azure amortizes into edges per F4, the sourcer must pick from q1's eight ⚙ categories — none fits purchased compute capacity, so q2's largest new flow class defaults to other/unallocated, degrading the rollup view q1 exists to serve. Remedy: add a "purchased compute capacity" category (the list is ruled re-cuttable).
+
+**R-13. LINE. The §7 prediction table conflates face-sourceability with worth-sourceability.** "In-system contracts: high" is true for face but §5 itself says structure is "usually the undisclosed part," and worth hangs on structure. Predict per field (face / structure / clauses) or the grade will score a win on the wrong measurand.
+
+**R-14. LINE. The consumer seed doesn't serve the stated method.** §7 prescribes "subscriber counts × price cards"; the seed is ~1B *weekly actives*. The paying-conversion rate — the number that dominates the estimate — is absent. Have the sourcer chase paying-subscriber counts and record conversion as its own estimated, sourced claim.
+
+---
+
+## Closing
+
+**(a) Overall read (~100 words).** The decomposition is right — WHO/HOW MUCH/WORTH as three distinct objects, the commitment promotion, the chain-rule extension are all sound moves. But the plan is not ready to source against yet. Its two headline surfaces — external revenue and the graded hypothesis — are undefined at the boundary that carries them, and the hypothesis is currently both uncomputable (§6 vs §7) and biased toward confirmation (recognized-only rule). The "zero schema changes" claim conceals the two relations and one measurand field the seam genuinely needs — exactly the rework-economics class q1 warns must land *before* data accumulates. One workshop round fixes all of it; then source.
+
+**(b) Count.** 11 SUBSTANTIVE · 3 LINE.
+
+**(c) Survival prediction.** Six or seven substantive. I expect R-2/R-3/R-6 to merge into one "seam needs a relation web + measurand" finding and R-4/R-5 into one "hypothesis ungradeable" finding; R-1, R-7, R-8, R-9 survive standalone; R-10 and R-11 are the coin flips.
