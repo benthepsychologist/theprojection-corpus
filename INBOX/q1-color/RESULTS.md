@@ -1,3 +1,15 @@
+# q1 color-team · RESULTS (rounds 1–3, complete)
+
+> **FINAL: ✅ CLEAN as of 2026-08-03.** Round 1 failed at 8 substantive
+> carries → v3 revision (+ Ben's rulings R-16/R-17/R-18: filters not
+> membership; no premature boundary rules; burn metric at q2) → round-2
+> targeted Red: 7/8 RESOLVED + 1 partial (the typing fix's own wording
+> re-admitted the failure at EPC/construction edges) → v3.1 amendments →
+> round-3 micro-recheck: **PASS, zero substantive residue**
+> (round-3-micro-recheck.md, joint memo with q2). The artifact is
+> INBOX/2026-08-03-q1-skeleton-v3.md (v3.1). Open: only **the bar**,
+> Ben's by design. Round-1 detail below.
+
 # q1 color-team · round 1 · RESULTS
 
 run:      2026-08-03 · single-family (Claude, Fable-tier seats, fresh

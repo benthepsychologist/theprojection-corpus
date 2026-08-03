@@ -47,6 +47,21 @@ feedback accumulated here extends it.
 applying the punch lists → targeted Red (q1 §3/§4) + verification pass
 (q2) → route to kestrel.
 
+**COMPLETION, same day:** Ben ruled (D1 honesty-fix; D2/D3 became
+R-16/R-17 — boundaries are FILTERS over the flow map, not memberships;
+premature boundary rules rejected, F9 dead; plus R-18). v3s drafted;
+round-2 passes each failed by exactly ONE (q1: the typing fix's own
+wording ejected EPC contracts from gross build; q2: the revenue ladder
+had no legal stage-enum encoding) — both reviewer-remedied same day as
+v3.1; round-3 micro-recheck: **PASS, zero substantive residue on both**.
+Full trail: INBOX/q{1,2}-color/ (13 memos + 2 RESULTS). Open across the
+whole program: the two bars (Ben's, drafts offered in-session). Then the
+bundle routes to kestrel — with the accumulated method meta-findings
+(Green rule-citations; Blue must stress-test remedies; machine-countable
+summaries; SUBSTANTIVE=requires-design-revision; the counting-unit pin;
+first-round bar calibration) extending the color-team skill proposal
+already dropped there.
+
 ## 2026-08-02 — `/daily`: finalize 07-31 (2 days late) + recover 08-01 (22 of 24 hours), and two framing errors of our own
 
 **What ran:** the two-day finalize backlog `/start` flagged this morning.

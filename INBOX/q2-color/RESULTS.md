@@ -1,3 +1,17 @@
+# q2 color-team · RESULTS (rounds 1–3, complete)
+
+> **FINAL: ✅ CLEAN as of 2026-08-03.** Round 1 failed at 10 substantive
+> carries ("must not route as-is") → v3 revision (+ Ben's R-16/R-17: the
+> F9 boundary rule REJECTED — cuts, not rules; reseller-level collection
+> mandated) → round-2 verification: 11/12 RESOLVED + 1 new substantive
+> (the revenue ladder had no legal encoding in the stage enum) → v3.1
+> amendments (the mapping table; zero-until-scheduled ⚙; bound
+> propagation; single-cut burn; consumer chase to Tier A) → round-3
+> micro-recheck: **PASS, zero substantive residue** (joint memo at
+> ../q1-color/round-3-micro-recheck.md). The artifact is
+> INBOX/2026-08-03-q2-skeleton-v3.md (v3.1). Open: only **the q2 bar**,
+> Ben's by design. Round-1 detail below.
+
 # q2 color-team · round 1 · RESULTS
 
 run:      2026-08-03 · single-family (Claude, Fable-tier seats, fresh
