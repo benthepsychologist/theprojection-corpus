@@ -198,8 +198,21 @@ from **disjoint model families**, then compare at the finding level.
 **Agreement semantics ⚙:** a finding surfaced by both families =
 highest-confidence, goes to the top of consolidation. A single-family
 finding is *triaged, not dismissed* — it is either family-specific noise
-or a real catch the other family's priors missed, and White decides
-which, explicitly, per finding.
+or a real catch the other family's priors missed, and the consolidation
+decides which, explicitly, per finding.
+
+⚠️ **Scope caution (Ben, 2026-08-03): most of the recorded
+convergence/reliability instrumentation is EXTRACTION machinery, not
+review machinery.** Jaccard agreement, claim-count convergence as a
+completeness check, dual-pass blind extraction — those measure whether
+two blind readers pull the same atoms out of a source, and none of it
+applies to evaluating a plan. What transfers to a plan review is exactly
+two things: the same-model-variance warning above, and the *habit* of
+splitting disagreements into mechanical-vs-substantive before reading
+the agreement level — applied qualitatively at consolidation, never
+computed as a statistic. The review-side machinery (substantive/line
+tags, carry counts, the ≤2 bar) is what governs a plan review; the
+extraction instruments stay with extraction.
 
 ## 7. Rigor is a dial
 
@@ -247,6 +260,12 @@ Red seat's charge sheet, upgraded here):
 - **Tone:** constructive-adversarial (it is a skeleton review — §4.6).
 - **Memos ⚙:** `INBOX/q1-color/round-1-{green,red,blue,white}.md`, with
   `-b` suffixed copies if the dual-family mode runs.
+- **The dispatch-ready seat prompts are written:**
+  `INBOX/q1-color/PROMPTS.md` — verbatim instructions for all four
+  seats in the manuscript protocol's PROMPT tradition, sequenced
+  Green ∥ Red → Blue → White, with the design-context tag semantics and
+  the anti-theater clauses embedded. Nothing runs until Ben approves
+  them.
 - **Dual-family:** recommended — one full pass with Claude-family seats,
   one with a non-Claude family, consolidation compares. It would be the
   fleet's first real cross-model run.
