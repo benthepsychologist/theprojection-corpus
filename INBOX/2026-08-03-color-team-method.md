@@ -86,6 +86,12 @@ friendly-reader functions become optional extension seats (new labels
 when used, to avoid the collision); Pink stays declined until there is
 prose. ⚙ Seat sets are per-loadout choices, not schema.
 
+**Information flow between seats (Ben, 2026-08-03):** Green and Red run
+blind to each other. **Blue reads the artifact and Red's memo only** —
+it answers Red's concerns, that is all; it is not a dispute-settler and
+never sees Green. **White is the only seat that reads everything**, and
+aggregation is its exclusive job.
+
 **One genuine gap the sweep proved:** nothing anywhere tests the
 *reviewer*. A dedicated grep of the manuscript repo for any
 checking-the-checker mechanism (`double agent`, `mole`, `collusion`,
@@ -138,6 +144,23 @@ in this sweep. Logged as an open seat concept, not invented into canon.
 7. **Red's single most transferable question**, verbatim: *"Is this
    source the actual basis for the claim, or a backfilled
    justification?"* Aimed at every citation and every hypothesis.
+8. **The plan's authors never write the test points** (Ben, 2026-08-03:
+   *"by writing in specific concerns for red to go after you're usurping
+   part of its role without the independence"*). A seat receives the
+   plan, its justification, its aims, and a description of what an agent
+   of its color tries to do — never a charge sheet, marker list, or
+   author-chosen scenario. An author-written charge sheet performs Red's
+   role with the least independent judgment available: the plan's own
+   authors. Where a reviewer chooses to probe is itself part of the
+   signal. Quality-bar constraints (findings must be demonstrated; zero
+   findings acceptable) are conduct rules, not direction, and survive.
+9. **The artifact must carry its own justification.** Reviewers are
+   fresh-context by rule 1; if the plan's philosophy, reasoning, and
+   aims live in a conversation the reviewers never see, they review a
+   skeleton without its why and White concludes from ignorance. Before a
+   color run, lay the justification into the document itself (q1's
+   §1.5 is the instance) — it is part of the plan, not commentary, and
+   it is the pro-case's raw material without being the pro-case.
 
 ## 5. The loop
 
@@ -232,32 +255,37 @@ dial; this document is the content that skill would encode.
 
 ## 8. First run — q1 Stage 1, instantiated
 
-Replaces the single-seat brief at q1-skeleton-v2 §10 (which becomes the
-Red seat's charge sheet, upgraded here):
+⚠️ **Corrected 2026-08-03 after Ben's second ruling on seat conduct.**
+The first draft of this section gave Green three author-chosen
+walkthrough dollars and Red a five-charge sheet. That violated the
+method's own independence principle (now §4.8): *"by writing in specific
+concerns for red to go after you're usurping part of its role without
+the independence."* The superseded charge-sheet survives only as
+historical record at q1-skeleton-v2 §10.
 
-- **Artifact under review:** q1-skeleton-v2 §3 (the flow-map model) + §4
-  (the evidence model). The rulings register (§2) is out of scope —
-  argue with consequences, not rulings.
-- **Seats (core four ⚙), fresh context each, none sees this discussion:**
-  - **Green** — construct the strongest *supported* case that the model
-    works: walk three real dollars through it end-to-end (a Meta capex
-    dollar; a vendor-financed OpenAI commitment dollar; a Hormuz
-    insurance dollar) and show each lands once, in the right place, with
-    the right tags.
-  - **Red** — the five charges: a dollar counted twice · a dollar never
-    counted · a dollar whose placement is arbitrary · an entity or flow
-    whose terminal-end/attribution treatment flips a headline total · a
-    rule that never binds. Worked constructions only; zero findings is
-    an acceptable outcome; plus the backfill question against every
-    evidence-model example.
-  - **Blue** — mitigation: for each Red construction, the smallest rule
-    amendment that defuses it without breaking Green's walkthroughs;
-    CONCEDE plainly where no mitigation exists.
-  - **White** — synthesis and adjudication: per-finding verdicts,
-    substantive/line tags, the carry count against the ≤2 bar, and the
-    four-way verdict (proceed / modify / abandon / research more).
+- **Artifact under review:** q1-skeleton-v2 in full — a plan, its
+  justification (§1.5, laid in for this purpose), and its aims. The
+  rulings register (§2) is decisions, not open questions: consequences
+  are reviewable, rulings are not re-litigated.
+- **Seats (core four ⚙), fresh context each, none sees this
+  discussion — and no seat receives author-chosen probe targets:**
+  - **Green** — *green-team it*: the strongest supported case that the
+    plan accomplishes its stated aims. What to demonstrate or argue is
+    Green's choice.
+  - **Red** — *red-team it*: find where the plan actually fails. Where
+    to attack is Red's choice; the only constraints are quality-bar
+    (findings concrete and demonstrated, remedy suggested, tagged
+    substantive/line, zero findings acceptable), never direction.
+  - **Blue** — answers Red. Reads the artifact and Red's memo ONLY —
+    not Green's. Per finding: position (CONCEDE / PARTIAL CONCEDE /
+    DEFEND / PARTIAL DEFEND) and the smallest honest answer, with NO
+    CLEAN ANSWER as an allowed state. Blue is not a dispute-settler.
+  - **White** — the only seat that reads everything. Aggregates,
+    adjudicates each Red/Blue exchange, weighs Green's case as evidence,
+    reports the substantive carry count against the ≤2 bar, and returns
+    the four-way verdict (proceed / modify / abandon / research more).
     Independent judgment, not averaging.
-- **Tone:** constructive-adversarial (it is a skeleton review — §4.6).
+- **Tone:** constructive-adversarial (it is a design-stage review — §4.6).
 - **Memos ⚙:** `INBOX/q1-color/round-1-{green,red,blue,white}.md`, with
   `-b` suffixed copies if the dual-family mode runs.
 - **The dispatch-ready seat prompts are written:**
@@ -275,7 +303,7 @@ Red seat's charge sheet, upgraded here):
 | # | decision | proposed ⚙ |
 | --- | --- | --- |
 | a | **seat semantics** — adopt your four-function minimum as canon, with the v2.0 collisions (Blue, Green) resolved by relabeling extension seats | yes as written in §3 |
-| b | **q1 loadout** | core four; methodologist function folds into Red's charge 4 for this run; Pink stays declined |
+| b | **q1 loadout** | core four; no charge sheets — seats choose their own probe points (§4.8); Pink stays declined |
 | c | **dual-family on q1** | yes — first real cross-model execution; triage discipline from §6 mandatory |
 | d | **pass bar for q1** | ≤2 substantive carries, one round expected, targeted re-review if 3–5 band |
 | e | **memo location** | `INBOX/q1-color/` as in §8 |
