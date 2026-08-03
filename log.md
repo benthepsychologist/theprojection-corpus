@@ -1,5 +1,52 @@
 # log.md — session log (newest first)
 
+## 2026-08-03 — the first color-team runs: q1 and q2 skeletons both FAIL their round, exactly as a first round should
+
+**What ran:** the fleet's first two full color-team reviews (method
+assembled this session from every trace in the workspace — the
+manuscript protocol v1-v9, the fleet register, RESEARCH.md — then ruled
+by Ben: four seats, Green ∥ Red → Blue reads Red only → White reads all;
+NO author-written test points; artifacts made self-justifying first).
+Eight seat memos + two RESULTS rollups in INBOX/q1-color/ and
+INBOX/q2-color/, every one verbatim with a record header. Five 529
+overload failures mid-run; recovered by backoff + one re-dispatch wave;
+zero lost work (fresh-context seats restart clean).
+
+**Results:** q1 — ⛔ 8 substantive carries vs the ≤2 bar, MODIFY. q2 —
+⛔ 10 carries (12 changes), MODIFY, "must not route as-is." Both
+verdicts share one diagnosis: the frames held completely (no finding
+touched a ruling in either run; the flow map is "forced, not merely
+defensible" — the margin alternative needs undisclosed data), but the
+designs specify REPRESENTATIONS precisely while leaving the OPERATIONS
+over them unspecified — membership, summation sets, reconciliation
+cells, stage discrimination, joins.
+
+**The method proved itself in ways worth keeping:**
+- Cross-run blind convergence: q2's Red independently found the same
+  missing boundary predicate q1's Red hit, with no sight of q1's memos.
+- White caught Green asserting: "no rule needed interpretation" was
+  checkable and false — Green had silently supplied the missing rules
+  itself. The no-markers rule's predicted failure mode, caught by the
+  seat built for it.
+- Blue-reads-Red-only earned its keep twice (material corrections of
+  Red that White upheld) — but q2's White found Blue adopts REMEDIES
+  uncritically; remedies need the same adversarial pass as charges.
+- Whites overruled seats in both directions on tags and surfaced their
+  own findings (q2 W-1: observations need point-vs-bound semantics).
+
+**On Ben's desk:** q1 — the R-9(b) burn-metric scope option and the
+consolidation perimeter's membership criteria. q2 — new decision (h):
+the F9 revenue-side boundary predicate (the AI-resale threshold + the
+reselling-vs-embedding line). Then: revise both per punch lists (q1: 8
+items; q2: 5 packages, 1–3 blocking), targeted/verification passes,
+THEN the bundle routes to kestrel. The kestrel INBOX drop
+(color-team-skill-proposal) predates these verdicts; the method
+feedback accumulated here extends it.
+
+**Where to pick up:** Ben's three rulings → I draft both v3 skeletons
+applying the punch lists → targeted Red (q1 §3/§4) + verification pass
+(q2) → route to kestrel.
+
 ## 2026-08-02 — `/daily`: finalize 07-31 (2 days late) + recover 08-01 (22 of 24 hours), and two framing errors of our own
 
 **What ran:** the two-day finalize backlog `/start` flagged this morning.
