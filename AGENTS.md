@@ -133,8 +133,9 @@ through `attention/`.
     front's **`sections` are exactly the three lenses**, so nothing goes
     dark while the ranking stays honest; a fact appearing in both is
     deliberate — the lead is the ranking, the sections are the coverage.
-    **The three lenses are pages** (`/beat/<lens>/`), not just the
-    homepage's filter chips. Emoji come from a fixed typed set and never
+    **The three lenses are pages** (`/news/<lens>/`, nested under the
+    `/news/` dashboard since the 2026-08-03 restructure), not just the
+    dashboard's filter chips. Emoji come from a fixed typed set and never
     carry a fact alone. Two rules learned building it: a validator that
     makes good prose worse is the bug (a sentence may end on a quotation),
     and **a briefing cannot cover what it was never shown** — packs get

@@ -403,8 +403,8 @@ data/interpretations.json                  → one entry per interpretation
 content/interpretation/<id>.md             → one stub per entry
        │  Hugo (theprojection), layouts/interpretation/single.html
        ▼
-/beat/global-capital/   the lens front — inline .interp-band under each
-                        item that carries one (layouts/beat/single.html)
+/news/global-capital/   the lens front — inline .interp-band under each
+                        item that carries one (layouts/news/single.html)
 /interpretation/<id>/   the receipt: mechanism · confidence · scenarios ·
                         precedent · context_note · linked threads
 ```

@@ -139,11 +139,13 @@ publishes every thread by default (Ben, 2026-07-22 — no hand-gating; hold
 one back with `public: false`) through a hardcoded field allowlist and a
 secret-scan pass, then stages `content/threads/*.md` + `data/payload.json` in
 the site repo's working tree — commits and pushes with `--push`. See
-AGENTS.md discipline 9. Each of the three primary lenses is a **beat page**
-(`/beat/ai/` · `/beat/global-capital/` · `/beat/mental-health/`, leading the nav)
-carrying its own **morning briefing** — `gist` · salience-ranked `lead` ·
-themed `sections` · `watch` — with the fuller cross-lens briefing on the
-homepage (AGENTS.md discipline 12). The site also carries the **`/map/`
+AGENTS.md discipline 9. Each of the three primary lenses is a **lens page
+under `/news/`** (`/news/ai/` · `/news/global-capital/` ·
+`/news/mental-health/` — nested under the `/news/` dashboard since the
+2026-08-03 restructure, when the front page became a projects hub and the
+news feed moved to `/news/`) carrying its own **morning briefing** — `gist`
+· salience-ranked `lead` · themed `sections` · `watch` — with the fuller
+cross-lens briefing on the **`/news/` dashboard** (AGENTS.md discipline 12). The site also carries the **`/map/`
 board section** — a node page per actor plus **pocket and sector pages**, with
 every posture/axis value linking to its **`/claim/<id>/` receipt** (cited
 sources) — and its own hand-authored `content/about.md` and `README.md`, the

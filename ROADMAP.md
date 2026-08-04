@@ -171,8 +171,9 @@ payload gets AI / Finance / MH roll-ups almost free. Only the
 - **Front page** — cross-lens: the day's highlights, 3-5 bullets, each
   pointing at a thread.
 - **Lens roll-ups (AI · Money · MH)** — that lens's throughline verdict
-  plus its own top movers. **Built 2026-07-29 as real beat pages**
-  (`/beat/<lens>/`), each carrying a full morning briefing — see
+  plus its own top movers. **Built 2026-07-29 as real lens pages**
+  (`/beat/<lens>/` then; relocated to `/news/<lens>/` in the 2026-08-03
+  restructure), each carrying a full morning briefing — see
   §Structured summaries below.
 - **Leaf pages** (a single thread, node, or claim) — a one-line
   **standfirst**, not a summary. The page *is* the detail; a summary above
@@ -239,7 +240,7 @@ the build state.)*
 | Flash rail, `critical` only, on every page | ✅ built |
 | Executive readouts, 157 scopes | ✅ built |
 | Structured summaries + the morning briefing | ✅ built |
-| Beat pages (`/beat/<lens>/`) | ✅ built |
+| Lens pages (`/news/<lens>/`, were `/beat/` before 2026-08-03) | ✅ built |
 | Meta-thread CARD rendering on the read page | 📋 not built |
 | Summary stages 2-3 (mechanise the words) | 📋 not built |
 | Auto-regeneration of readouts inside `/daily` | 📋 not built |
@@ -415,7 +416,7 @@ links to the unlinked bullets before re-applying.
 **`/daily` step 6a now runs this pipeline every time** (folded in
 2026-07-30 — see the daily skill), covering front + the 3 lens scopes
 specifically, since those are the only ones with a `briefing` and the
-only ones the public site's front/beat pages render. The other ~150
+only ones the public site's `/news/` dashboard + lens pages render. The other ~150
 thread/entity/node `summary` scopes are a separate backlog, refreshed on
 request rather than every run.
 
@@ -445,11 +446,21 @@ appearing in both `lead` and a section is deliberate** — the lead is the
 ranking, the sections are the coverage. That is what makes it read as a
 briefing rather than a list.
 
-**Beat pages are new:** `/beat/ai/` · `/beat/global-capital/` ·
-`/beat/mental-health/`, leading the site nav. A lens had only ever been a
-client-side filter chip on the homepage — no page, no shareable URL, and
-nowhere for a per-lens briefing to live. The homepage chips stay filters;
-turning them into links would kill the in-page filtering they exist for.
+**Lens pages** (built 2026-07-29): `/news/ai/` · `/news/global-capital/` ·
+`/news/mental-health/`. A lens had only ever been a client-side filter chip
+— no page, no shareable URL, and nowhere for a per-lens briefing to live.
+The dashboard chips stay filters; turning them into links would kill the
+in-page filtering they exist for.
+
+**Restructure, 2026-08-03 (Ben):** these were `/beat/<lens>/` and led the
+site nav until the front page became a **projects hub** (three cards — News
+· The Map · Research). The whole news surface — the dashboard, its filter
+chips, the cross-lens briefing, and the three lens beats — moved under
+**`/news/`** (beats now `/news/<lens>/`; `layouts/beat/` → `layouts/news/`;
+the adapter writes `content/news/` since commit `dccb200`). The nav now
+leads with **News**, not the individual beats. The projects-hub front page
+carries no briefing of its own; the cross-lens front briefing renders on
+the `/news/` dashboard.
 
 **Emoji are typed** (money · legal · buildout · research · risk · health ·
 geopolitics · market · deal · launch) and never carry a fact alone — the
