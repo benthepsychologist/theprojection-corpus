@@ -3,7 +3,7 @@ lens: global-capital
 date: 2026-08-03
 status: building
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-03T18:45:00-04:00
+as_of: 2026-08-04T05:40:00-04:00
 coverage: pending
 ---
 
@@ -13,6 +13,11 @@ coverage: pending
 sources: Yahoo/Google Finance and stockanalysis.com for levels, ISM.org
 and company IR primary where cited, TradingEconomics/USA Today for the oil
 move). Interpretations read against `capital-context.yaml` (asof 07-30).*
+
+*⏱ **Extended 2026-08-04 05:40 ET** by a second pass over this digest-day's
+unread evening/overnight tail — the Asian session and European morning that
+the 18:45 ET first pass could not have seen. Items added by that pass are
+marked **⟨overnight⟩**. Still `building`; finalization needs ~10:00 ET.*
 
 ## Today's throughline
 
@@ -47,6 +52,26 @@ Strait is still largely closed today.
   pick one. The catalyst is the claimed Hormuz-reopening deal — which Iran
   denies. (TradingEconomics, USA Today, Guardian)
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e= axis=markets-and-flows -->
+- **⟨overnight⟩ Asia mostly followed the US up, Hong Kong did not, and oil
+  gave back a little of Monday's crash.** Nikkei 225 **63,957.53 (+0.3%)**,
+  Kospi **6,358.95 (+1.6%)**, ASX 200 **9,145.80 (+1.4%)**, Shanghai
+  Composite **3,822.28 (+0.3%)** — but Hang Seng **25,852.92 (−0.6%)** went
+  the other way. **Brent recovered to $84.75 (+$0.98)** and **WTI to $80.49
+  (+$0.15)**: the de-escalation trade did not extend overnight, which is
+  what a third vessel being struck in Hormuz would predict. USD/JPY 157.80
+  (from 157.18), EUR/USD 1.1513. All figures from a single AP wire wrap
+  fetched directly, timestamped inside the window. (AP via WSLS, 08-03
+  23:34 ET, updated 08-04 04:35 ET)
+  ([AP](https://www.wsls.com/business/2026/08/04/asian-shares-mostly-dip-after-us-stocks-rally/))
+  <!-- k: t=red-sea-oil-shock e= axis=markets-and-flows -->
+- **⟨overnight⟩ ⚠ Not confirmed, recorded as unconfirmed:** gold near
+  $4,062.40/oz, the dollar index near 99.7, and a 10-year Treasury yield
+  around 4.67–4.69%. None could be verified on a fetched source page, and
+  the yield figure appears to describe **Monday's US session**, not an
+  overnight move — Treasury cash trading is thin overnight and no in-window
+  print was found. Carried here only so the gap is visible rather than
+  silently absent; do not cite these onward.
+  <!-- k: t= e= axis=markets-and-flows -->
 
 ## The AI-capex credit tension, live in two names
 
@@ -83,6 +108,42 @@ Strait is still largely closed today.
 - **SoftBank reports Q1 FY26 08-06** (primary: group IR, 3:30pm JST) — Arm's
   slide and the OpenAI bridge both bear on the print.
   <!-- k: t=softbank-all-in e=softbank,arm axis=markets-and-flows -->
+- **⟨overnight⟩ SpaceX's report time is pinned: after the close today,
+  webcast 4:30pm ET.** Audio-only, and it is the trigger for the first
+  insider-lockup tranche — up to 20% of ~911.5M restricted shares become
+  eligible **08-06**, two trading days later. ⚠ One consensus discrepancy
+  worth carrying: against the −$0.23/−$0.35 EPS band recorded above, a
+  Visible Alpha compilation puts the range far wider at **−$1.26 to
+  +$0.33**, which is less a forecast than an admission that nobody can model
+  a ~$40B/yr AI-infrastructure buildout inside this company yet. Reported
+  pre-print strength of +5% or more in SPCX is **not chart-verified** here.
+  (CNBC 07-21 for the date; CNN preview 08-04 08:00 UTC)
+  <!-- k: t=spacexai-public-megacap e=spacex axis=markets-and-flows -->
+- **⟨overnight⟩ ⚠ Entity distinction, flagged before it corrupts the thread:
+  the "record SoftBank Q1" crossing the wires overnight is *not* our
+  SoftBank.** **SoftBank Corp (9434)**, the Japanese domestic telecom
+  carrier, reported revenue **¥1,814.7B (+9% YoY)** and operating income
+  **¥302.3B**, crediting AI, cloud and financial services. That is a
+  different listed company from **SoftBank Group Corp (9984)** — the Vision
+  Fund/Arm/OpenAI holding vehicle this lens tracks, which still reports
+  **08-06** and issued nothing overnight. Same brand, same founder,
+  different balance sheet; conflating them would put a telecom carrier's
+  record quarter into the AI-financing story. ⚠ Moderate-confidence
+  sourcing — wire pickups of an earnings-call transcript, one direct fetch
+  returned an unrelated article. (Investing.com/MarketScreener, 08-04
+  ~07:06–07:26 UTC; SoftBank Group IR for the 08-06 date)
+  <!-- k: t=softbank-all-in e=softbank axis=markets-and-flows -->
+- **⟨overnight⟩ A Starlink supplier's results show SpaceX paying in
+  equity, not cash.** UK RF-component maker **Filtronic** (LSE: FTC)
+  reported FY2026 revenue **£55.50m**, down from £56.3m, with operating
+  profit collapsing to **£4m from £13.4m**. The company's own explanation:
+  "The revenue decline was driven by a £2.2 million reduction from a higher
+  amortization charge related to the **SpaceX share warrant agreement**,"
+  plus £2.0m of dollar-weakness FX drag. Small in absolute terms, but a
+  clean read on how SpaceX finances its supply chain — warrants rather than
+  cash — and how that lands on a supplier's reported numbers.
+  (Investing.com, 08-04 02:42 ET, fetched directly)
+  <!-- k: t=spacexai-public-megacap e=spacex axis=markets-and-flows -->
 - **ISM Manufacturing (July) printed 55.6% today**, up 2.3pts, a 7th
   straight expansion month; the employment index (52.8%) turned expansionary
   for the first time in 33 months, and a respondent named "semiconductor,
@@ -113,6 +174,23 @@ Strait is still largely closed today.
   — Oracle equity/credit divergence added (⟨daily 08-03⟩).
 - `~ threads/softbank-all-in` — the stalled OpenAI-collateral margin loan
   distinguished from the funded $40B bridge (⟨daily 08-03⟩).
+
+**⟨overnight extension, 08-04 05:40 ET⟩**
+
+- `~ threads/softbank-all-in` — **entity guard added**: SoftBank Corp
+  (9434, telecom carrier) vs SoftBank Group (9984, the AI vehicle) recorded
+  as a standing trap after an overnight "record SoftBank Q1" headline
+  referred to the wrong company (⟨daily 08-03⟩).
+- `~ threads/spacexai-public-megacap` — report time pinned (4:30pm ET
+  08-04), the −$1.26/+$0.33 consensus spread flagged, and the Filtronic
+  warrant-amortisation read on how SpaceX pays suppliers (⟨daily 08-03⟩).
+- `~ threads/red-sea-oil-shock` — overnight oil recovery, Brent $84.75
+  (⟨daily 08-03⟩).
+- `~ upcoming/spacex-q2-earnings` — time confirmed, still `pending`; not
+  resolvable before 16:30 ET (⟨curate-add 08-04⟩).
+- ⚠️ **Recorded as unverified, not as fact:** gold, the dollar index and an
+  overnight 10-year yield could not be confirmed on a fetched page and are
+  marked as such in the markets section rather than stated or dropped.
 
 ## 🧵 Thread candidates
 

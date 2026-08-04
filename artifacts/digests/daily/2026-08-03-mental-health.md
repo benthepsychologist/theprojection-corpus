@@ -9,6 +9,13 @@ coverage: pending
 
 # Mental Health — 2026-08-03
 
+*⚠ **NOT extended overnight.** The 08-04 05:40 ET extension pass covered
+the other three lenses; this lens's sweep did not return and nothing was
+written in its place. `as_of` deliberately stays at 18:45 ET — the only
+08-04 addition is a targeted re-verification of the SB 903 hearing in the
+⏳ section, which is an expectation re-check, not lens coverage. Treat
+this lens's evening/overnight window as **unread** until the next run.*
+
 *Curated from the tier-2 mental-health deep sweep (agentic-interim). ⚠
 Session WebSearch budget was exhausted before this lens ran; every claim
 was verified via WebFetch, direct `curl` against primary sources, and
@@ -93,6 +100,19 @@ lens.*
   report-out outcome.
 - **New to the ledger:** `ca-sb903-appropriations-hearing` **08-05** (the
   hearing itself — suspense-or-forward decision).
+- ✅ **Re-verified 08-04 05:50 ET, with new detail — and it shifts the odds.**
+  A targeted re-check of the committee's own hearings page (not a lens
+  sweep) confirms the hearing stands: **08-05, 9 a.m., 1021 O Street Room
+  1100, Assembly Appropriations, Wicks chairing**, agenda entry verbatim
+  "**S.B.No. 903 Padilla. Mental health professionals: artificial
+  intelligence.**" It sits under "**BILLS HEARD IN SIGN-IN ORDER**" and is
+  **not** labelled a suspense-file hearing. That matters for how to score
+  it: a bill heard in sign-in order at a regular hearing normally gets an
+  up-or-down committee action, so of the three paths this entry tracks —
+  held on suspense, passed as-is, amended — **"held on suspense" is now the
+  least likely rather than the default assumption.**
+  ([Assembly Appropriations](https://apro.assembly.ca.gov/hearings))
+  <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
 - ⚠️ **Two dates checked, neither adopted as new:** the SAMHSA **$73.2M**
   grant award (dated 07-31, general behavioral-health funding, not
   AI-specific — out of scope); an unconfirmed NY "restricting AI friends for
@@ -108,6 +128,20 @@ lens.*
 
 - `~ threads/state-therapy-chatbot-bans` — SB 903 confirmed calendared
   (08-05 hearing), `last_seen` → 08-03 (⟨daily 08-03⟩).
+
+**⟨08-04 05:50 ET — targeted expectation re-check only, NOT a lens sweep⟩**
+
+- `~ threads/state-therapy-chatbot-bans` — SB 903 re-verified on the
+  committee's own hearings page: 08-05 9 a.m., Room 1100, Wicks chairing,
+  listed under "BILLS HEARD IN SIGN-IN ORDER" and **not** a suspense-file
+  hearing; `last_seen` → 08-04 (⟨daily 08-04⟩).
+- `~ upcoming/ca-sb903-appropriations-hearing` — `what_confirms` sharpened:
+  because it is heard in sign-in order at a regular hearing, "held on
+  suspense" is now the least likely of the three paths rather than the
+  default assumption (⟨curate-add 08-04⟩).
+- ⚠️ **This lens was otherwise not extended** — its overnight sweep did not
+  return, `as_of` deliberately left at 18:45 ET, and its evening/overnight
+  window is **unread** until the next run.
 
 ## 🧵 Thread candidates
 

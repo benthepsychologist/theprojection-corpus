@@ -3,7 +3,7 @@ lens: world-news
 date: 2026-08-03
 status: building
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-03T18:45:00-04:00
+as_of: 2026-08-04T05:40:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -14,6 +14,12 @@ WebSearch budget was exhausted at the start, so every finding here came via
 WebFetch against Google News RSS and direct outlet fetches — Al Jazeera
 resolved directly, Reuters/AP/BBC were RSS-only, outlet named per item.
 The mechanical `world-news.yaml` cluster pool is a separate read.*
+
+*⏱ **Extended 2026-08-04 05:40 ET** by a second pass over this digest-day's
+unread evening/overnight tail (the first pass stopped at 18:45 ET; the
+digest-day runs to 05:00 ET 08-04). Items added by that pass are marked
+**⟨overnight⟩**. The day is still `building` — it cannot finalize until its
+coverage is checkable (~10:00 ET).*
 
 ## Today's throughline
 
@@ -61,6 +67,29 @@ claimed deal was meant to reopen.
   signal worth carrying forward on every claim in this thread. (NYT via
   RSS, 08-03)
   <!-- k: t=iran-conflict-widening e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ A third vessel was struck in Hormuz — a cargo ship hit by a
+  projectile off Oman, bridge damaged, no casualties.** The ship was hit
+  roughly 37 km (23 mi) northeast of Al Khasab, Oman, at about 02:00 local
+  Tuesday (~22:00 UTC 08-03). UKMTO and the security firm Ambrey both
+  confirmed it. This is a **distinct incident** from the GasLog Shanghai
+  above, making it the third vessel struck in this strait inside roughly a
+  month. Two independent wires carried it off the same primary maritime
+  sources. (AP via ClickOrlando 08-04 02:07 ET; Arab News 08-04 ~00:10 UTC)
+  ([AP](https://www.clickorlando.com/news/world/2026/08/04/cargo-ship-reports-being-struck-in-strait-of-hormuz-as-us-iran-claims-about-talks-diverge/))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ The reported shape of the Iran–Oman deal: a fee-collecting
+  corridor under Iranian control.** NYT reported the two are nearing terms
+  under which inbound ships would transit a corridor close to Iran's coast,
+  outbound ships a separate Oman-side route, and vessels would pay "service
+  fees" split evenly between Iran and Oman. A US official pushed back that
+  "temporary" routes would need neither Iranian approval nor tolls. If
+  accurate this is the substance the weekend's "deal" claim lacked — and it
+  describes Iran monetising the strait rather than simply reopening it.
+  ⚠ **Single-primary (NYT), read via relay** — the original was not
+  directly reachable; not independently cross-checked against a second
+  wire. (NYT via Times of Israel liveblog, 08-04 06:24 UTC)
+  ([ToI relay](https://www.timesofisrael.com/liveblog_entry/iran-oman-said-nearing-deal-splitting-hormuz-control-and-revenue-from-fees-between-them/))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=geopolitics-and-security -->
 
 ## Russia–Ukraine — record strikes both ways; an unconfirmed missile claim
 
@@ -72,6 +101,30 @@ claimed deal was meant to reopen.
   in occupied Crimea for the first time. Heavy but consistent with the
   war's tempo, not a step-change. (AP, PBS, Al Jazeera, Ukrinform, Kyiv
   Independent, 08-02/03)
+  <!-- k: t=russia-ukraine-war e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ A second Wildberries wave plus a refinery fire, night of
+  08-03/04.** Distinct from the strike above: Ukrainian drones hit the
+  Wildberries warehouse at **Chekhov**, ~65 km south of the Kremlin —
+  Moscow Oblast Governor Andrey Vorobyov reported **5 killed and 6
+  injured** — and a second at **Krasny Bor**, ~33 km from St Petersburg,
+  confirmed by both the Leningrad Oblast governor and Wildberries' own
+  press service. The **Syzran oil refinery** in Samara Oblast caught fire
+  after a strike; Kyiv has hit it repeatedly with long-range drones. The
+  logistics operator of Russian e-commerce is now being attrited across
+  two capitals' hinterlands in successive nights. ⚠ Kyiv Independent
+  states plainly it "cannot immediately verify the reports nor claims made
+  by Russian officials"; Ukraine's military had not commented. (Kyiv
+  Independent 08-04 06:16 Kyiv, updated 07:53)
+  ([Kyiv Independent](https://kyivindependent.com/russian-oil-refinery/))
+  <!-- k: t=russia-ukraine-war e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ The night's incoming tally: 1 ballistic missile and 136
+  drones, 117 neutralised.** Russia launched one Iskander-M and 136
+  attack/decoy drones between 18:00 08-03 and 08:00 08-04 Kyiv time;
+  Ukraine's Air Force reported 117 of the 136 shot down or suppressed.
+  Consistent with the nightly pattern rather than an escalation — the
+  specific tally is what is new. ⚠ **Single-sourced** to Ukrainian Air
+  Force reporting via one Ukrainian outlet; not independently checked.
+  (UNN, 08-04 05:18 Kyiv)
   <!-- k: t=russia-ukraine-war e= axis=geopolitics-and-security -->
 - ⚠️ **Ukraine claims a Russian *missile* — not a drone — violated NATO
   airspace over Poland; Poland is "examining" it.** A step up from the 07-30
@@ -105,9 +158,27 @@ claimed deal was meant to reopen.
   CBS, 08-02/03)
   <!-- k: t= e= axis=geopolitics-and-security -->
 - **EU interior ministers meet Tuesday 08-04 on the fallout — bloc expected
-  to back Spain** over Italy/Finland's Schengen-suspension push. No new
-  country has joined the suspension camp; no formal EU action yet. Outcome
-  ledgered for 08-04. (Euractiv, Politico EU, 08-03)
+  to back Spain** over the Schengen-suspension push. No new country has
+  joined the suspension camp; no formal EU action yet. Outcome ledgered for
+  08-04. (Euractiv, Politico EU, 08-03)
+  <!-- k: t= e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ ✏️ Correction — the suspension camp is Italy and *Denmark*,
+  not Italy/Finland.** This digest's earlier line named Finland; RTÉ,
+  reporting from the presidency-holder's own side, names **Italy and
+  Denmark** as the two states pushing to suspend Spain from Schengen.
+  Finland is struck from the record here. (RTÉ, 08-04 09:30 IST)
+  <!-- k: t= e= axis=geopolitics-and-security -->
+- **⟨overnight⟩ The meeting is formally convened: an emergency Justice and
+  Home Affairs Council, chaired by Ireland.** Irish Justice Minister **Jim
+  O'Callaghan** convened and chairs it, Ireland holding the EU Council
+  presidency; as of 09:30 IST it "will take place later today" and had not
+  yet occurred. Von der Leyen pre-framed it as a **"first step"**, urging
+  the bloc to "double down" across five areas including preventing
+  irregular migration and strengthening external borders — i.e. the
+  Commission is managing expectations downward before it starts. It follows
+  a letter signed by 22 EU heads of state on 08-01 calling for tighter
+  external-border controls. (RTÉ, 08-04 09:30 IST)
+  ([RTÉ](https://www.rte.ie/news/europe/2026/0804/1586312-ceuta-crisis/))
   <!-- k: t= e= axis=geopolitics-and-security -->
 
 ## Elsewhere — two to watch, one mass-casualty event
@@ -155,6 +226,24 @@ claimed deal was meant to reopen.
   Poland-missile claim logged as thin (⟨daily 08-03⟩).
 - `~ threads/gaza-war` — strikes continue through the peace-plan rollout
   (⟨daily 08-03⟩).
+
+**⟨overnight extension, 08-04 05:40 ET⟩**
+
+- `~ threads/iran-conflict-widening` — third vessel struck in Hormuz;
+  reported Iran–Oman corridor-and-fees terms added (⟨daily 08-03⟩).
+- `~ threads/red-sea-oil-shock` — overnight oil recovery (Brent $84.75) and
+  the toll-booth read on the reported deal terms (⟨daily 08-03⟩).
+- `~ threads/russia-ukraine-war` — second Wildberries wave (Chekhov, Krasny
+  Bor) plus the Syzran refinery fire; nightly intercept tally
+  (⟨daily 08-03⟩).
+- `✏️ correction` — the Schengen-suspension camp is **Italy and Denmark**,
+  not Italy/Finland as this digest first recorded. Struck and corrected
+  here and noted on `upcoming/eu-ceuta-ministers-meeting` (⟨daily 08-03⟩).
+- `~ upcoming/eu-ceuta-ministers-meeting` — convening confirmed as an
+  emergency Justice and Home Affairs Council chaired by Ireland; not yet
+  held at window close (⟨curate-add 08-04⟩).
+- **Gaza: no change** — the sweep found no in-window development, stated
+  rather than padded.
 
 ## 🧵 Thread candidates
 

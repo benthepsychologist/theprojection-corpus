@@ -13,6 +13,19 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-04 — The SB 903 hearing is not a suspense hearing, which changes what tomorrow decides
+
+- **Re-verified on the committee's own hearings page: SB 903 is calendared
+  08-05 at 9 a.m., 1021 O Street Room 1100, Assembly Appropriations (Wicks
+  chairing)**, listed verbatim as "S.B.No. 903 Padilla. Mental health
+  professionals: artificial intelligence."
+  ([Assembly Appropriations](https://apro.assembly.ca.gov/hearings)) ⟨daily 2026-08-04⟩
+- 💡 **The listing detail is the finding.** The bill sits under "BILLS HEARD
+  IN SIGN-IN ORDER" and the page does not label this a suspense-file
+  hearing — so the likeliest outcome is an up-or-down committee action
+  rather than the bill being parked on suspense, which is the path this
+  thread had been treating as the default. ⟨daily 2026-08-04⟩
+
 ## 2026-08-03 — SB 903 is confirmed calendared — Assembly Appropriations, Wed Aug 5
 
 - **California's SB 903 landed on the Assembly Appropriations calendar

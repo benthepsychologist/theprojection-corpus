@@ -122,11 +122,11 @@ expectations:
     status: pending
 
   - id: gov-review-framework-announce
-    claim: "White House announces the 30-day voluntary pre-release review framework (Meta excluded)"
+    claim: "White House announces the 30-day voluntary pre-release review framework (participants: OpenAI, Anthropic, Google AND Meta)"
     due: 2026-08-04    # slipped from 08-01 (see slips + 08-03 comment)
     due_precision: day
     thread: frontier-model-gov-review-precedent
-    entities: [openai, anthropic, google]
+    entities: [openai, anthropic, google, meta]
     source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
     confidence: reported
     what_confirms: "official announcement naming participants and the 30-day term"
@@ -147,6 +147,21 @@ expectations:
     # meeting is not the "official announcement naming participants and the
     # 30-day term" that confirms this. 08-01 pushed to slips; due -> 08-04;
     # status -> pending. Watch 08-04 for whether anything actually publishes.
+    # 2026-08-04 ⟨daily, overnight extension pass⟩: CLAIM REWRITTEN, not
+    # flipped. The claim's "(Meta excluded)" premise — carried from the
+    # 07-21 source since this entry was logged — is FALSIFIED. SiliconANGLE
+    # (08-03 19:41 ET) names the invitees as Anthropic, OpenAI, Google AND
+    # Meta Platforms. Claim text + entities updated; Meta added. Same
+    # handling as the eu-ai-act-code-of-practice rewrite: the entry's own
+    # what_confirms caught that what we were waiting to confirm was not
+    # quite the thing that was true. Status UNCHANGED (pending) — the
+    # rewrite corrects the premise, it does not satisfy what_confirms.
+    # Still no announcement as of 05:40 ET: whitehouse.gov and
+    # federalregister.gov both checked directly, nothing AI-framework
+    # specific. The framework is described as still a DRAFT the labs will
+    # "review" — not final terms handed down. The meeting itself is a
+    # DC-business-day event and cannot resolve before this run's window
+    # closed. Re-check after ~14:00 ET today.
     slips: [2026-08-01]
     status: pending
     evidence: >
@@ -225,6 +240,15 @@ expectations:
     # / OSTP publication). So the two halves have split — 3(b) slips to a
     # concrete 08-04, the threshold half is still watch-for-silence. Slip to
     # 08-04 (the 3(b) date) with the threshold caveat noted; status pending.
+    # 2026-08-04 ⟨daily, overnight extension pass⟩: NO SIGNAL on either half
+    # as of 05:40 ET. The split holds exactly as described above — the Sec.
+    # 3(b) half is a meeting scheduled for later today (still a DRAFT the
+    # labs will "review", per SiliconANGLE 08-03 19:41 ET, with Meta now
+    # confirmed among the invitees), and the classified NSA-led threshold
+    # half has had NO new reporting at all since the 08-01 deadline lapsed —
+    # not a slip announcement, not an acknowledgment, nothing. That silence
+    # is now three days old and is the loud part of this entry. Re-check
+    # both halves after ~14:00 ET today.
     slips: [2026-08-01]
     status: pending
     evidence: >
@@ -392,6 +416,16 @@ expectations:
     logged_by: curate-add
     # Dual-verified 08-03 against raw HTML (leginfo billStatus + apro Daily
     # File). Feeds ca-sb903-assembly's 08-14 report-out deadline.
+    # 2026-08-04 ⟨daily, overnight extension pass⟩: RE-CONFIRMED on the
+    # committee's own hearings page, with detail we did not have: the
+    # hearing is 08-05 at 9 a.m., 1021 O Street Room 1100, Appropriations,
+    # WICKS chairing, and the agenda entry reads verbatim "S.B.No. 903
+    # Padilla. Mental health professionals: artificial intelligence."
+    # Listed under "BILLS HEARD IN SIGN-IN ORDER" and NOT labelled a
+    # suspense-file hearing — which sharpens what_confirms: a bill heard in
+    # sign-in order at a regular hearing is one that gets an up-or-down
+    # committee action, so "held on suspense" is the LESS likely of the
+    # three paths, not the default. Score the outcome 08-05 after 9 a.m. PT.
     status: pending
 
   - id: meta-q2-earnings
@@ -602,6 +636,16 @@ expectations:
     what_confirms: "the release itself; watch Starlink/AI framing vs the zero-AI-value market read"
     logged: 2026-07-27
     logged_by: curate-add
+    # 2026-08-04 ⟨daily, overnight extension pass⟩: time CONFIRMED, not yet
+    # released. SpaceX reports after the US close today with an audio-only
+    # webcast at 4:30pm ET (CNBC 07-21, unchanged as of an 08-04 08:00 UTC
+    # preview) — hours after this run's 05:40 ET window closed, so it is
+    # correctly still pending rather than passed-silent. Consensus revenue
+    # ~$6.75-6.9B; note a WIDE EPS spread across compilers (-$0.23/-$0.35
+    # in one, -$1.26/+$0.33 via Visible Alpha) — the disagreement is itself
+    # the signal on how unmodellable the ~$40B/yr AI buildout is inside this
+    # company. Re-check after 16:30 ET today; the first insider-lockup
+    # tranche (up to 20% of ~911.5M restricted shares) follows 08-06.
     status: pending
 
   - id: spacex-insider-unlock
@@ -1023,6 +1067,18 @@ expectations:
     what_confirms: "the meeting happening + any Schengen-controls or Morocco-returns outcome; toll stood at 72 with EU emergency talks called"
     logged: 2026-08-03
     logged_by: curate-add
+    # 2026-08-04 ⟨daily, overnight extension pass⟩: CONVENING CONFIRMED, not
+    # yet held. It is an emergency Justice and Home Affairs Council,
+    # convened and chaired by Irish Justice Minister Jim O'Callaghan (Ireland
+    # holds the Council presidency); as of 09:30 IST it "will take place
+    # later today." Von der Leyen pre-framed it as a "first step" ahead of a
+    # fuller October summit, so a definitive Schengen/Morocco-returns
+    # outcome is UNLIKELY today — score what_confirms on the meeting
+    # happening, and treat any concrete outcome as upside.
+    # CORRECTION carried from the same source: the states pushing to suspend
+    # Spain from Schengen are ITALY and DENMARK. The 08-03 world-news digest
+    # said "Italy/Finland" — Finland is wrong and has been struck there.
+    # (RTE 08-04 09:30 IST, fetched directly.)
     status: pending
 
   - id: ism-services-cook-0805

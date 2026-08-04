@@ -1341,3 +1341,97 @@ frontier-ai 08-02 digest carries the same flag.
 **Result:** 08-02 flips to `final` / `coverage: done` across all five lens
 files (world-news `coverage: na` by design). One retraction, zero real
 recall misses, one unconfirmed lead held out of the record.
+
+## 2026-08-04 (05:40 ET) — the 08-03 overnight extension (no critic pass; day not yet finalizable)
+
+Same shape as the 07-29 extension entry above: the run opened 36 minutes
+after digest-day 08-04 began, so **08-03 could not be finalized** — the
+coverage critic's benchmark publications appear mid-morning and a day only
+flips to `final`/`coverage: done` once its coverage is checkable (~10:00
+ET). No critic pass ran. What this pass did instead was read the ~10 hours
+of digest-day 08-03 that had never been read: the first pass curated to
+18:45 ET and collection last ran 19:22 ET, against a digest-day that runs
+to 05:00 ET 08-04. Four tier-2 sweeps covered frontier-AI/governance,
+world-news conflicts, capital/capex/chips, and mental health.
+
+### 🚨 A real miss, found by us and not by the critic — Texas froze AI-datacenter grid connections
+
+**The story:** Governor Abbott ordered the Public Utility Commission of
+Texas and ERCOT to audit every data centre seeking a grid connection before
+it can energise, covering tax incentives, power and water use,
+community-impact mitigation and ownership, with non-compliant projects to
+be denied connection. ERCOT paused its "Batch Zero" transmission planning
+study in response. The queue behind it: **1,800+ projects requesting 474+
+GW, ~90% data centres, more than five times the grid's all-time
+peak-demand record**, against 335 operating and 248 planned Texas
+facilities.
+
+**Why it is a miss and not a late break.** It published **08-03 13:12 CT,
+updated 17:25 CT** — inside digest-day 08-03 and roughly twenty minutes
+before the first pass's own 18:45 ET cutoff. It was not behind a paywall,
+not single-sourced, and not obscure: **12 items on it were sitting in that
+day's `google_news_rss` buffer** (KFOX, Axios, Odessa American, KXXV,
+WFAA, Newsmax, ABC13, Click2Houston, Texas Border Business,
+crossroadstoday, EnergyNow, plus a duplicate), **every one of them routed
+to no thread and no entity**. Collection worked; curation did not look.
+
+**The generalisable lesson.** All 12 buffered items carried
+`threads: None, entities: None`. This thread family —
+`ai-power-buildout`, `where-the-capex-lands`, `ai-datacenter-sites` — is
+keyed on company and project names (NextEra, Stargate, Paducah, Colossus),
+so a story about *the grid operator and the state regulator* matched
+nothing, despite being the most consequential thing that has happened to
+the buildout's physical constraint. **A thread whose terms are all
+private-actor names cannot see a public-actor intervention in the same
+domain.** The fix is not a bigger term list for one story; it is that
+power/siting threads need regulator- and grid-operator-side terms (PUCT,
+ERCOT, interconnection queue, PJM, MISO, and equivalents) alongside the
+developer names. Filed as a term-coverage gap, not a one-off.
+
+**Applied:** new 08-03 timeline blocks written on all three affected
+threads, each carrying the miss on its face rather than silently backfilled;
+the frontier-ai digest entry is marked `sev=major` and states plainly that
+it was a curation miss.
+
+### Two of our own claims corrected
+
+- **"Meta excluded" from the White House frontier framework — wrong.**
+  Carried since a 07-21 source and repeated in the 08-03 frontier-ai
+  digest, which listed only Anthropic, Google and OpenAI. SiliconANGLE
+  (08-03 19:41 ET) names the invitees as **Anthropic, OpenAI, Google and
+  Meta Platforms**. The ledger claim text and entity list were rewritten;
+  status stayed `pending` because the rewrite corrects the premise without
+  satisfying `what_confirms`. Same handling as the
+  `eu-ai-act-code-of-practice` rewrite.
+- **"Italy/Finland" pushing to suspend Spain from Schengen — wrong.** The
+  08-03 world-news digest named Finland. RTÉ, reporting from the
+  presidency-holder's side (08-04 09:30 IST), names **Italy and Denmark**.
+  Corrected in the digest and noted on the ledger entry.
+
+### Sourcing discipline held, and is worth recording
+
+The sweeps rejected several plausible-looking items on date grounds rather
+than logging them — the failure mode the Woebot retraction was written
+about. Specifically: a Stocktwits piece headlined "OpenAI Is Laying
+Groundwork For A $1 Trillion September IPO" carried an **08-04 RSS
+timestamp on a body dated 2026-05-20**, and Anthropic's 07-31 cybersecurity-
+eval disclosure is being re-syndicated with fresh 08-03/04 timestamps by
+multiple outlets. Neither entered the record as new. Unverifiable figures
+(gold, DXY, an overnight 10-year yield) were carried into the
+global-capital digest **explicitly marked unconfirmed** rather than either
+stated as fact or silently dropped. A Naver/Nvidia/Brookfield item was
+dropped outright because the sweep could not reach the source page.
+
+### Known gaps in this pass, stated rather than papered over
+
+- **The mental-health lens was not extended.** Its sweep had not returned
+  when this pass closed; nothing was written to that digest rather than
+  guessed at. SB 903's Assembly Appropriations hearing (08-05) is
+  unverified as of this entry and needs checking on the next run.
+- **The collector run did not finish** — 8 of 18 sources at close
+  (bis_stats, clinicaltrials, epfr_flows, fec, federal_register, fred,
+  fund_flow_reports, github), still running. `google_news_rss` and `gdelt`
+  had not landed, so **`attention/world-news.yaml` was not rebuilt and
+  remains as generated 08-02**. This is the fourth consecutive run affected
+  by the serial fan-out problem already filed to kestrel's INBOX.
+- **No coverage-critic pass**, by design — see the top of this entry.

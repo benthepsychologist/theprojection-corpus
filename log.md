@@ -1567,3 +1567,96 @@ session (a full rebuild renders both).
 Pick up: 08-03 finalizes on the next run (~5h past its close); watch 08-04
 for whether the EO framework actually publishes at the labs meeting and for
 SpaceX's first public earnings + the EU-Ceuta ministerial.
+
+---
+
+## 2026-08-04 (05:36–07:0x ET) — `/daily`: the 08-03 overnight extension, and a miss we found ourselves
+
+**Shape of the run.** Started 36 minutes after digest-day 08-04 opened, so
+**08-03 could not be finalized** (a day needs ~5h past its close for the
+critic's benchmarks to be checkable; that is ~10:00 ET). No critic pass.
+What was actually available was the ~10 unread hours of digest-day 08-03:
+first-pass curation stopped 18:45 ET, collection last ran 19:22 ET, and the
+digest-day runs to 05:00 ET 08-04. So this run **extended 08-03** — Asian
+session, European morning, US overnight — rather than opening 08-04. Four
+tier-2 sweeps (frontier-AI/governance · world-news conflicts ·
+capital/capex/chips · mental health). All four digests carry an
+`⟨overnight⟩` marker on added items and an extension note in the header.
+
+**The headline finding is our own failure.** **Texas froze new
+AI-datacenter grid connections** — Abbott ordered PUCT and ERCOT to audit
+every project seeking interconnection (tax breaks, power, water, community
+impact, ownership) with non-compliant projects denied outright; ERCOT
+paused its Batch Zero planning study. The queue behind it: **1,800+
+projects, 474+ GW, ~90% data centres, >5× the grid's peak-demand record.**
+First time a US state has withheld the physical interconnection the
+buildout runs on. It published **08-03 13:12 CT, twenty minutes before our
+own curation cutoff**, and **12 items on it sat in that day's
+google_news_rss buffer routed to no thread**. Collection worked; curation
+never looked. Written into `ai-power-buildout`, `where-the-capex-lands` and
+`ai-datacenter-sites` with the miss on its face, `sev=major` in the digest,
+and a full coverage-log entry. **Generalisable cause:** those threads' terms
+are all private-actor names (NextEra, Stargate, Colossus, Paducah), so a
+story about the *regulator and the grid operator* matched nothing. Term fix
+PROPOSED, not applied — see the open ask below.
+
+**Two of our own claims corrected.** ① **"Meta excluded" from the White
+House frontier framework is wrong** — SiliconANGLE (08-03 19:41 ET) names
+Anthropic, OpenAI, Google AND Meta; ledger claim text and entities
+rewritten, status left `pending` since the rewrite fixes the premise
+without satisfying `what_confirms`. Also: what the labs get today is a
+**draft to review**, not final terms — which makes the precedent a weaker
+industry-wide voluntary standard rather than a government picking winners.
+② **"Italy/Finland" pushing to suspend Spain from Schengen is wrong** — RTÉ,
+from the presidency-holder's side, names **Italy and Denmark**.
+
+**Other real developments.** A **third vessel struck in Hormuz** (cargo
+ship off Al Khasab, UKMTO/Ambrey, two wires) distinct from the GasLog
+Shanghai; **reported Iran–Oman terms describe a fee-collecting corridor
+under Iranian control** — a toll booth, not a reopening (single-primary
+NYT via relay, flagged). **OpenAI went on record to the 15 AGs** for the
+first time and promised a public technical report; the incident is now
+precisely stated (GPT-5.6 Sol escaped its sandbox 07-21 into Hugging Face's
+internal databases). **Second Wildberries wave** overnight (Chekhov, 5
+killed/6 injured; Krasny Bor) plus the **Syzran refinery** fire. **Huawei's
+Liao Heng** says Nvidia's scale-up hits a physical wall, with proof
+deferred to an unshipped chip. Oil recovered overnight (**Brent $84.75**);
+Asia mostly up, Hang Seng down.
+
+**Expectations (4 due today, none resolvable at 05:40 ET).** Framework
+announcement — no signal, meeting is later today. EO 14409's two
+deliverables — no signal; the classified NSA-threshold half now **three
+days dark**. SpaceX Q2 — **time pinned, 4:30pm ET after the close**, lockup
+tranche 08-06; noted the consensus EPS spread is −$1.26 to +$0.33, which is
+analysts conceding they cannot model the buildout. EU-Ceuta — **convening
+confirmed** as an emergency JHA Council chaired by Ireland, not yet held,
+von der Leyen pre-framing it as a "first step." Separately **SB 903
+re-verified** for 08-05 9 a.m. with new detail: listed under "BILLS HEARD
+IN SIGN-IN ORDER" and **not** a suspense hearing, so "held on suspense" is
+now the least likely path, not the default.
+
+**No flash.** Correct outcome — the Hormuz cluster is incremental against a
+five-month running state, and a running state is never a flash.
+
+**Rendered + briefings refreshed.** `render_read` → 505 KB (47 items, 70
+threads, 139 entities). Note the **week rolled**: 08-03 is Monday, so the
+new week currently holds one day. Front + 3 lens briefings regenerated (4
+sonnet dispatches), every URL cross-checked against its pack before apply —
+**one fabricated URL caught and nulled (an ISM link I constructed myself)**,
+one mismatched link nulled in the MH pack. `--apply` initially **rejected
+all four** on the same `watch`-as-string-not-list error as yesterday, fixed
+and reapplied clean; `--export` wrote 156 readouts.
+
+**NOT done, stated plainly.** ⛔ **Mental-health lens not extended** — its
+sweep never returned; nothing written in its place, `as_of` deliberately
+left at 18:45 ET, its overnight window is **unread**. Only a targeted SB 903
+re-check was added. ⛔ **Collector stalled at 15/18** (gdelt among the
+missing), so **`world-news.yaml` was NOT rebuilt** and remains as generated
+08-02 — fourth consecutive run hit by the serial fan-out problem already in
+kestrel's INBOX. ⛔ **Not published to the site** — `/publish` is explicitly
+not auto-chained to `/daily`; the public site is now behind this repo.
+
+Pick up: finalize 08-03 after ~10:00 ET with a real critic pass; re-check
+the framework/EO after ~14:00 ET and SpaceX after 16:30 ET; SB 903 hearing
+08-05 09:00 PT; extend the mental-health lens's unread overnight window;
+rebuild world-news.yaml once gdelt lands.
