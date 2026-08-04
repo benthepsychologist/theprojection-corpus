@@ -1509,3 +1509,54 @@ future pass does not "improve" this by adding the generic term.
 
 **Provenance:** `ben-steer` 2026-08-04, answering the proposal filed in the
 overnight-extension entry above.
+
+### 2026-08-04 — why the mental-health lens went unread: a dispatched sweep hung on a single WebSearch for ~2 hours
+
+**What happened, per Ben's own observation of the running agent:** the
+mental-health tier-2 sweep dispatched at 09:39 ET sat on **one particular
+WebSearch call for nearly two hours**, never advancing past it. It only moved
+when Ben stopped it and told it to move on. It was not slow and it was not
+looping — it was blocked on a single call.
+
+**The corroborating evidence on our side:** that agent's transcript file was
+**139 bytes — a header and nothing else** — for its entire life. No tool
+result ever completed. Meanwhile the three sweeps that finished normally
+produced transcript files of *exactly the same 139 bytes* while running. So
+**file size gave no signal at all**: a hung agent and a healthy one looked
+identical from outside, which is why this session initially misread the
+silence as "probably still working."
+
+**Context that makes this more than a one-off.** WebSearch is already a
+known-scarce resource in this environment, and this repo has been working
+around it for at least two days: both the 08-03 world-news digest ("Session
+WebSearch budget was exhausted at the start, so every finding here came via
+WebFetch") and the 08-03 mental-health digest ("WebSearch budget was
+exhausted before this lens ran") record it. The `/daily` skill's own dispatch
+rules already say "WebSearch budget is reserved for tier 2."
+
+**What is new and worse:** previously exhaustion surfaced as an **error**,
+which agents handled correctly by falling back to WebFetch against Google
+News RSS. Today it surfaced as a **hang**. An error teaches the agent to
+switch tools; a hang teaches it nothing, returns nothing, and consumes the
+whole run. Root cause inside the harness is not visible from here and is NOT
+claimed — what is established is the failure mode and its cost.
+
+**Cost this session:** the mental-health lens was the only one of four not
+extended on the first pass. It was handled correctly — nothing was invented
+in its place, `as_of` was deliberately left at 18:45 ET, and the digest said
+plainly that the window was unread — and a re-dispatched sweep later returned
+in ~4 minutes and found three real items (the TikTok settlements, the second
+xAI suit, the NCSL piece) plus a new 08-05 ledger entry. So the lens was not
+lost, but it cost roughly two hours and a second dispatch.
+
+**Standing lessons, both directions:**
+
+1. **Never block on a single dispatched agent.** Wall-clock it. If a sweep
+   has not reported in materially longer than its siblings, re-dispatch
+   rather than wait — and mark the lens unread in the meantime rather than
+   guessing at its contents. That is what eventually worked here.
+2. **Sweep agents must not depend on WebSearch.** Discovery should run
+   WebFetch-first against Google News RSS, with WebSearch as an optional
+   accelerant that is abandoned — never retried — if it does not return
+   promptly. A brief proposing exactly this is queued for Ben rather than
+   applied, since the sweep prompts live in kestrel's shared skill library.
