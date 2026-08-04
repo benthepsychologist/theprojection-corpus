@@ -193,7 +193,7 @@ threads:
     kind: story
     status: developing
     lens: ai
-    entities: [microsoft, openai, anthropic]
+    entities: [microsoft, microsoft-mai, openai, anthropic]   # microsoft-mai tagged 2026-08-04 (ben-steer, board-pass fix) — its own coverage gap, not a new thread; this is where its content already lives
     weight: 2
     terms:
       - "Microsoft MAI"
@@ -381,7 +381,7 @@ threads:
     kind: story
     status: open
     lens: ai
-    entities: [openai, anthropic, google, demis-hassabis]
+    entities: [openai, anthropic, google, deepmind, demis-hassabis]   # deepmind tagged 2026-08-04 (ben-steer, board-pass fix) — its research/governance content (AlphaFold, Hassabis) already lands here
     weight: 3
     terms:
       - "Gold Eagle AI"
@@ -532,7 +532,7 @@ threads:
     kind: story
     status: open
     lens: mental-health
-    entities: [kaiser-permanente]
+    entities: [kaiser-permanente, nuhw]   # nuhw tagged 2026-08-04 (ben-steer, board-pass fix) — the union that filed the complaint; its whole story already lives here
     weight: 2
     terms:
       - "Kaiser Permanente AI behavioral health"

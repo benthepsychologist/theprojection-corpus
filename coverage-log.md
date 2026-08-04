@@ -1776,3 +1776,21 @@ explosion), ~48,300 households without power (restored 07-31), up to
 No live `world-news.yaml` candidate entry remained to mark dismissed —
 it had already aged out of the file on its own. No thread opened, no
 lens scope changed; a factual gap closed in place.
+
+## 2026-08-04 (later still) — steer: rest of the zero-coverage list — triage begins
+
+Ben: "do the rest of the zero-coverage list too" (16 remaining after
+AMD/ASML). Three of the 16 turned out to be tagging omissions, not real
+gaps — fixed directly, no crawl needed: **`microsoft-mai`** added to
+`microsoft-mai-openai-decoupling`'s entities (its own coverage gap; the
+thread already carries its content). **`deepmind`** added to
+`frontier-model-gov-review-precedent`'s entities (its research/
+governance content — AlphaFold, Hassabis — already lands there).
+**`nuhw`** added to `kaiser-ai-clinician-backlash`'s entities (the union
+that filed the complaint; its whole story already lives in that thread).
+The remaining 13 (mistral-ai, pif, globalfoundries, cvs-health,
+hca-healthcare, plus the 3-actor asset-manager pocket and 7-actor
+insurance pocket) are out on 7 parallel crawls — two pocket-level crawls
+were dispatched instead of ten separate ones, with explicit instructions
+to make a real curatorial call (existing-thread / new thread / genuinely
+quiet) rather than force coverage that isn't there.
