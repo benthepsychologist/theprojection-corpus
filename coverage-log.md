@@ -1751,3 +1751,28 @@ three-front China export-control fight (the MATCH Act, an open Commerce
 inquiry, China's own domestic DUV effort) is a risk to watch, not
 evidence its own trajectory is turning — still climbing. `board.yaml`
 edited directly; re-rendered and republished.
+
+## 2026-08-04 (later still) — steer: the Kumamoto lens-boundary call, ruled
+
+Ben: "do the Kumamoto earthquake lens-boundary call too." **Ruling: stays
+out of `world-news`.** The lens's own coverage bar (AGENTS.md discipline
+13, Ben 2026-07-31: "all active military conflicts that are not
+hyper-local get coverage") is scoped to conflict/geopolitical narratives;
+a natural disaster isn't one, and stretching the definition to fit it
+would be scope creep the lens wasn't built for. Also ruled out as a
+late flash: the event is a week old, was never actually hidden (just
+narrowly framed), and the flash rail's late-catch allowance exists for
+genuinely missed stories, not for re-framing an already-known one. **The
+real gap — the human toll absent from the record entirely — got fixed
+where it belongs**: `threads/tsmc-capacity-race.md` (the only place this
+event lived, and only through a chip-supply frame) now carries a sourced
+correction entry with the FINAL verified figures (re-checked live, not
+copied from the /week digest's rougher developing-disaster numbers): 38
+dead (up from developing-disaster counts of 13→18 that were still
+climbing when first logged), 127 injured, 7 of the deaths + ~55 injuries
+at one site (the Aeon Mall Kashima collapse + suspected gas-leak
+explosion), ~48,300 households without power (restored 07-31), up to
+84,000 without water, ~15,000 sheltered across 400 evacuation centers.
+No live `world-news.yaml` candidate entry remained to mark dismissed —
+it had already aged out of the file on its own. No thread opened, no
+lens scope changed; a factual gap closed in place.
