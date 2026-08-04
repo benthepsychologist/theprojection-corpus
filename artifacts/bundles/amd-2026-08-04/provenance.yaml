@@ -1,0 +1,88 @@
+# Bundle — crawl finding amd-2026-08-04
+artifact: artifacts/findings/amd-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Direct-agent crawl (this session, no subagent dispatch) combining
+  session WebSearch — confirmed available and NOT budget-exhausted
+  despite the skill's pre-flight caution, verified by a successful first
+  call — with WebFetch against AMD's own investor-relations press-release
+  pages for the three major 2025-2026 compute deals (OpenAI, Meta,
+  Anthropic), plus one direct SEC EDGAR filing-index lookup via
+  Bash+curl (no WebSearch quota used for that check) to confirm no Q2
+  2026 earnings 8-K had been filed as of the crawl. A GDELT DOC API query
+  was attempted via curl but rate-limited (>1 req/5s) before returning
+  results; not retried, since WebSearch covered the same ground
+  successfully. No URL or figure was fabricated; secondary/outlet-only
+  figures (implied deal dollar-values, one market-cap estimate, one
+  warrant-value estimate) are explicitly flagged medium/low confidence in
+  the finding rather than presented as AMD-confirmed.
+queries:
+  websearch:
+    - "AMD earnings Q2 2026 MI400 Instinct guidance August 2026"
+    - "AMD Meta 6 gigawatts MI450 Helios deal 2026"
+    - "AMD OpenAI warrant deal 2026 status"
+    - "AMD Advancing AI 2026 event July Helios MI400 launch date"
+    - "AMD OpenAI first gigawatt shipped warrant vested 2026"
+    - "AMD Anthropic deal update since July 22 2026"
+    - "AMD Q2 2026 earnings results actual revenue August 4"
+    - "AMD Microsoft Oracle Helios MI400 customer 2026"
+    - "AMD ZT Systems Xilinx integration 2026 divest server business"
+    - "AMD China export controls MI308 restrictions 2026"
+    - "AMD stock price market cap August 2026 Nvidia competition Rubin"
+  direct_sources_fetched:
+    - "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus (fetched, primary)"
+    - "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus (fetched, primary)"
+    - "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000002488&type=8-K (fetched via curl, primary EDGAR filing index)"
+  attempted_not_used:
+    - "https://api.gdeltproject.org/api/v2/doc/doc?query=AMD... (rate-limited, no data returned; not retried)"
+items:
+  # --- OPENAI DEAL ---
+  - {id: openai-6gw-announce, figure: "AMD-OpenAI strategic partnership: up to 6GW of AMD Instinct GPUs across multiple hardware generations; first 1GW (MI450-based) targeted H2 2026; AMD stock +23% same day", url: "https://www.cnbc.com/2025/10/06/openai-amd-chip-deal-ai.html", label: "CNBC", as_of: "2025-10-06", confidence: high}
+  - {id: openai-6gw-ir, figure: "Same deal, AMD's own press release", url: "https://ir.amd.com/news-events/press-releases/detail/1260/amd-and-openai-announce-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus", label: "AMD Investor Relations (primary)", as_of: "2025-10-06", confidence: high}
+  - {id: openai-warrant-structure, figure: "Warrant for up to 160M AMD shares (~10% outstanding), $0.01 exercise price, vesting on shipment tranches (1-6GW) + AMD share-price thresholds + OpenAI milestones; final tranche requires AMD stock at $600/share; warrants run ~5yr to Oct 2030", url: "https://www.tomshardware.com/pc-components/gpus/openai-signs-6gw-amd-gpu-deal", label: "Tom's Hardware", as_of: "2025-10-06", confidence: high}
+  - {id: openai-warrant-unvested-fy2025, figure: "As of FY2025 10-K/A (year ended Dec 27 2025): none of the OpenAI warrant shares met vesting/exercise conditions; zero financial-statement impact", url: "https://www.sec.gov/Archives/edgar/data/2488/000000248826000021/amd-20251227.htm", label: "SEC EDGAR — AMD 10-K/A FY2025", as_of: "2025-12-27", confidence: high}
+  # --- META DEAL ---
+  - {id: meta-6gw-announce, figure: "AMD-Meta expanded partnership: 6GW of AMD Instinct GPUs, days after Meta's expanded Nvidia GPU commitment; first-1GW shipments (MI450-based GPU + EPYC Venice CPU, Helios rack-scale, ROCm) begin H2 2026", url: "https://www.cnbc.com/2026/02/24/meta-to-use-6gw-of-amd-gpus-days-after-expanded-nvidia-ai-chip-deal.html", label: "CNBC", as_of: "2026-02-24", confidence: high}
+  - {id: meta-6gw-ir, figure: "Same deal, AMD's own press release: warrant for up to 160M shares, same three-part vesting structure as OpenAI's; dollar value not stated", url: "https://ir.amd.com/news-events/press-releases/detail/1279/amd-and-meta-announce-expanded-strategic-partnership-to-deploy-6-gigawatts-of-amd-gpus", label: "AMD Investor Relations (primary, fetched directly)", as_of: "2026-02-24", confidence: high}
+  - {id: meta-warrant-value-estimate, figure: "Combined OpenAI+Meta warrants ~20% of AMD share count; exercise cost ~$3.2M combined vs potential value ~$192B at full $600/share vesting (illustrative, not AMD-confirmed)", url: "https://x.com/ai/status/2026396297540858360", label: "single X/Twitter thread, unverified further", as_of: "2026-08-01", confidence: low}
+  - {id: meta-100b-implied, figure: "Outside estimate: Meta deal implies ~$100B hardware spend (not sourced to AMD/Meta directly)", url: "https://introl.com/blog/meta-amd-100-billion-gpu-deal-nvidia-exclusivity", label: "Introl blog", as_of: "2026-02-24", confidence: low}
+  # --- ANTHROPIC DEAL ---
+  - {id: anthropic-2gw-ir, figure: "AMD-Anthropic partnership: up to 2GW MI450 Series GPUs, first GW begins H1 2027; AMD strategic equity investment up to $5B tied to deployment milestones; joint ROCm/Claude engineering agreement; Su and Brown quotes", url: "https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus", label: "AMD Investor Relations (primary, fetched directly)", as_of: "2026-07-22", confidence: high}
+  - {id: anthropic-cnbc, figure: "Same deal, third-party confirmation: $5B equity investment, diversifies Anthropic's compute supply beyond Google TPU/Cloud", url: "https://www.cnbc.com/2026/07/22/amd-anthropic-ai-chip-investment.html", label: "CNBC", as_of: "2026-07-22", confidence: high}
+  - {id: anthropic-thrust-existing, figure: "Anthropic $5B stake already counted as AMD thrust (~$5.3B/yr total) under the board's stakes rule, since it is real equity not a warrant", url: "artifacts/bundles/amd-node/provenance.yaml", label: "kestrel board amd-node bundle (existing, 2026-07-28 wave-C addendum)", as_of: "2026-07-28", confidence: high}
+  # --- ADVANCING AI 2026 EVENT ---
+  - {id: advancingai-mi400-helios, figure: "Advancing AI 2026 event, San Francisco, 2026-07-22/23: MI400 accelerator family + Helios rack-scale platform (72x MI455X GPUs/rack, $5.0-5.5M/rack) reach volume production; EPYC Venice CPUs", url: "https://wccftech.com/watch-amd-advancing-ai-2026-event-live-here/", label: "wccftech + NAND Research", as_of: "2026-07-22", confidence: medium}
+  - {id: advancingai-microsoft, figure: "Microsoft Azure confirmed same-day it will deploy Helios racks; AMD expects delivery to Microsoft before end of 2026 for frontier-inference/Azure AI workloads", url: "https://www.cnbc.com/2026/07/20/amd-helios-microsoft-ai-nvidia.html", label: "CNBC", as_of: "2026-07-20", confidence: high}
+  - {id: advancingai-oracle, figure: "Oracle Cloud commits to 50,000-GPU rollout starting Q3 2026; expansion of a partnership originally announced 2025-10-14; TCS also named", url: "https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/", label: "Oracle newsroom (primary, original partnership) + follow-on coverage for the 07-2026 expansion detail", as_of: "2025-10-14", confidence: medium}
+  - {id: advancingai-12gw-combined, figure: "OpenAI + Meta commitments described as 12GW combined AMD accelerator capacity as of the Advancing AI event; +Anthropic's 2GW puts total disclosed pipeline near 14GW", url: "https://techwireasia.com/2026/07/amd-advancing-ai-2026-helios-openai-meta-anthropic/", label: "techwireasia", as_of: "2026-07", confidence: medium}
+  # --- CHINA EXPORT CONTROLS ---
+  - {id: china-800m-hit, figure: "AMD disclosed estimated ~$800M revenue hit from MI308 export restrictions", url: "https://qz.com/amd-lisa-su-china-export-restrictions-commerce-department", label: "qz.com", as_of: "2025-08", confidence: medium}
+  - {id: china-mi308-resumed, figure: "MI308 exports to China resumed under conditions-based arrangement requiring AMD to share China-sales revenue with US government (same mechanism as Nvidia H20)", url: "https://www.ainvest.com/news/amd-resumes-mi308-ai-chip-exports-china-trump-administration-reverses-policy-2507/", label: "ainvest.com", as_of: "2025-08", confidence: medium}
+  - {id: china-mi325x-licensing, figure: "New case-by-case US licensing regime began Jan 2026 requiring individual approval for MI325X shipments to China — tighter than the MI308 revenue-share arrangement", url: "https://cryptobriefing.com/amd-china-revenue-export-restrictions/", label: "cryptobriefing.com", as_of: "2026-01", confidence: medium}
+  - {id: china-20pct-revenue, figure: "Lisa Su: China remains ~20% of AMD revenue despite export controls (single-source figure, not independently corroborated this crawl)", url: "https://cryptobriefing.com/amd-china-revenue-export-restrictions/", label: "cryptobriefing.com", as_of: "2026-01", confidence: medium}
+  # --- ZT SYSTEMS ---
+  - {id: zt-acquisition-close, figure: "AMD's $4.9B ZT Systems acquisition closed March 2025", url: "https://www.datacenterdynamics.com/en/news/amd-completes-49bn-acquisition-of-hyperscale-server-maker-zt-systems/", label: "Data Center Dynamics", as_of: "2025-03", confidence: high}
+  - {id: zt-divest-sanmina-close, figure: "ZT Systems US data-center manufacturing business divested to Sanmina (~$3B cash+stock incl. up to $450M contingent), announced May 2025, closed 2025-10-27; AMD retained rack-scale design/customer-enablement teams", url: "https://newsroom.amd.com/news/amd-completes-divestiture-of-zt-systems-data-cente/", label: "AMD Newsroom (primary)", as_of: "2025-10-27", confidence: high}
+  # --- STOCK / EARNINGS ---
+  - {id: stock-marketcap-776b, figure: "AMD market cap ~$776B early August 2026, up ~126% YTD, outperforming Nvidia's YTD gain per this source", url: "https://www.heygotrade.com/en/blog/amd-stock-analysis-2026-how-amd-quietly-outperformed-nvidia-with-114-gain/", label: "heygotrade.com", as_of: "2026-08-01", confidence: medium}
+  - {id: q2-guide-and-consensus, figure: "AMD Q1-2026 guide for Q2: ~$11.2B revenue +/- $300M; Street consensus ~$11.3B revenue (+46-47% YoY), ~$1.61 non-GAAP EPS, Data Center segment ~$6.5B est.", url: "https://www.tikr.com/blog/amd-reports-q2-2026-earnings-august-4-what-the-stock-needs-to-show-after-its-anthropic-deal", label: "TIKR", as_of: "2026-08-01", confidence: medium}
+  - {id: q2-earnings-date-confirmed, figure: "AMD Q2 2026 earnings scheduled 2026-08-04 after market close, 5:00pm ET call", url: "https://x.com/MikeLongTerm/status/2083945772471505302", label: "X/Twitter (earnings-calendar post)", as_of: "2026-08-01", confidence: medium}
+  - {id: q2-no-8k-yet, figure: "As of this crawl, no 8-K reporting Q2 2026 results filed; most recent AMD 8-K on EDGAR dated 2026-07-01 (unrelated to earnings)", url: "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000002488&type=8-K", label: "SEC EDGAR filing index (fetched directly via curl)", as_of: "2026-08-04", confidence: high}
+notes: >-
+  Confidence key matches prior bundle convention: high = primary source
+  (AMD/Anthropic/Oracle press release, SEC EDGAR filing) fetched
+  directly, or 3+ independent outlets converge. medium = single
+  reputable outlet or WebSearch-synthesized summary not independently
+  refetched in full. low = single low-tier/social-media source, an
+  outsized or illustrative figure not confirmed by the principals. No
+  URL or figure was fabricated. Two items are explicitly flagged
+  low-confidence in the finding rather than stated as fact: the
+  combined-warrant-value estimate (id: meta-warrant-value-estimate) and
+  the implied $100B Meta-deal dollar value (id: meta-100b-implied).
+  Two known reconciliation gaps carried into the finding's open
+  questions: (1) AMD market cap cited at ~$776B here vs ~$851B in the
+  existing amd-node bundle (2026-07-28) — different as-of dates, not
+  reconciled; (2) whether the Oracle 50,000-GPU Q3-2026 rollout and the
+  OpenAI/Meta first-1GW H2-2026 shipment tranches actually land on
+  schedule is unresolved by definition — all are forward-dated past this
+  crawl.

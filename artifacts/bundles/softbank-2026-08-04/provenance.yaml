@@ -1,0 +1,92 @@
+# Bundle — crawl finding softbank-2026-08-04
+artifact: artifacts/findings/softbank-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  WebSearch was available and did the bulk of the work this crawl (not
+  budget-exhausted, unlike some same-day sibling crawls). Backstopped by
+  direct WebFetch on primary pages: SoftBank Group's own ABB-acquisition
+  press release (succeeded, high confidence) and an investing.com Q1
+  earnings-preview article (succeeded). Three fetches were blocked by
+  paywalls/gating (CNBC x2 — 403, S&P Global Ratings — 403,
+  Advisor Perspectives — 403, ad-hoc-news.de — 410); those facts are
+  carried through WebSearch's own synthesis of the page content instead
+  and marked medium rather than high confidence throughout the finding.
+  A GDELT DOC API sweep (3-day window, query "SoftBank Group OpenAI")
+  confirmed no Q1 FY2026 earnings report had actually landed as of
+  2026-08-04 and surfaced no material this crawl otherwise missed.
+queries:
+  websearch:
+    - "Masayoshi Son SoftBank Vision Fund performance 2026 concentration OpenAI bet"
+    - "SoftBank Vision Fund 2 portfolio results 2026 gains losses"
+    - "Masayoshi Son quote \"all in\" AI bet SoftBank risk 2026"
+    - "SoftBank $32 billion funding shortfall bond maturities ABB robotics 2026"
+    - "SoftBank Roze robotics IPO 2026 Physical AI unit"
+    - "SoftBank credit rating outlook Moody's S&P 2026 debt"
+    - "SoftBank Q1 fiscal 2026 earnings preview analyst expectations August 6"
+    - "S&P SoftBank Group outlook negative buyback 2.5 trillion yen date 2026"
+    - "SoftBank Arm ownership percentage 87.1% OR 90% 2026"
+    - "SoftBank Vision Fund 1 status wind down realizations 2026"
+    - "SoftBank sold Nvidia stake $5.8 billion October 2025 T-Mobile trim"
+  gdelt_doc_api:
+    - query: "SoftBank Group OpenAI"
+      params: "mode=artlist&maxrecords=15&sort=datedesc&timespan=3d"
+      run_at: "2026-08-04"
+  direct_fetch_attempted:
+    - "https://group.softbank/en/news/press/20251008 (ABB Robotics acquisition — succeeded, high)"
+    - "https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632 (succeeded)"
+    - "https://en.cryptonomist.ch/2026/08/04/softbank-openai-investment-q1-2026/ (succeeded)"
+    - "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html (403, carried via search synthesis)"
+    - "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101673310 (403, carried via search synthesis)"
+    - "https://www.advisorperspectives.com/articles/2026/04/21/softbank-going-openai-what-cost (403, carried via search synthesis)"
+    - "https://www.ad-hoc-news.de/boerse/news/ueberblick/softbank-s-infrastructure-bet-creates-a-32-billion-funding-gap/69276518 (410, carried via search synthesis)"
+items:
+  # --- FUNDING THE BET ---
+  - {id: nvidia-stake-sold, figure: "SoftBank sold its entire Nvidia stake, 32.1M shares, for $5.83B (shares sold Oct 2025, disclosed in Nov 11 2025 investor presentation), proceeds earmarked toward the OpenAI investment", url: "https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html", label: "CNBC + Tom's Hardware + Fortune (convergent)", as_of: "2025-11-11", confidence: medium}
+  - {id: tmobile-stake-trimmed, figure: "SoftBank sold part of its T-Mobile stake for $9.17B, same funding disclosure round", url: "https://www.cnbc.com/2025/11/11/softbank-sells-its-entire-stake-in-nvidia-for-5point83-billion.html", label: "CNBC (same investor presentation)", as_of: "2025-11-11", confidence: medium}
+  - {id: ltv-limit-25pct, figure: "Self-imposed 25% loan-to-value limit constrains further margin borrowing against remaining holdings", url: "https://en.cryptonomist.ch/2026/08/04/softbank-openai-investment-q1-2026/", label: "cryptonomist.ch (Reuters-sourced synthesis)", as_of: "2026-08-04", confidence: medium}
+  - {id: creditsights-32b-gap, figure: "CreditSights sizes a $32B funding gap over the next two years combining bond maturities and signed-deal obligations, incl. the ABB Robotics deal by name", url: "https://www.ad-hoc-news.de/boerse/news/ueberblick/softbank-s-infrastructure-bet-creates-a-32-billion-funding-gap/69276518", label: "ad-hoc-news.de, carried via search synthesis (direct fetch 410)", as_of: "2026-04-21", confidence: medium}
+  - {id: h2-2026-30b-due, figure: "$30B in obligations fall due specifically in H2 2026", url: "https://en.cryptonomist.ch/2026/08/04/softbank-openai-investment-q1-2026/", label: "cryptonomist.ch", as_of: "2026-08-04", confidence: medium}
+  # --- PHYSICAL AI / ABB / ROZE ---
+  - {id: abb-robotics-deal, figure: "SoftBank to acquire ABB's robotics division for $5.375B (~JPY818.7B); board approved 2025-09-22, agreement executed 2025-10-08; ABB spins unit into a new Zurich holdco, SoftBank buys 100%; expected close mid-to-late 2026 pending EU/China/US approval; unit has ~7,000 employees, $2.279B FY2024 revenue", url: "https://group.softbank/en/news/press/20251008", label: "SoftBank Group press release — direct fetch, primary", as_of: "2025-10-08", confidence: high}
+  - {id: roze-ipo-plan, figure: "SoftBank spinning out Roze (US-incorporated/listed) to bundle energy/land/digital-infra assets + ABB Robotics hardware for autonomous data-center construction; targeting IPO as early as H2 2026 at up to $100B valuation; KPMG engaged; July 2026 analyst day at a Texas data center", url: "https://finance.yahoo.com/sectors/technology/articles/softbank-plans-100b-u-ipo-115700056.html", label: "Yahoo Finance + Benzinga + Tech Startups (convergent)", as_of: "2026-04-30", confidence: medium}
+  # --- VISION FUND PERFORMANCE ---
+  - {id: vf-fy2025-46b-gain, figure: "Full FY2025 (year to March 2026): Vision Fund posted ~$46B gain, driven mainly by OpenAI", url: "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html", label: "CNBC, carried via search synthesis (direct fetch 403)", as_of: "2026-05-13", confidence: medium}
+  - {id: vf-q4fy25-20b-gain-losses, figure: "Q4 FY2025 (Jan-Mar 2026): ~$20B Vision Fund gain nearly all from OpenAI; losses same quarter on Coupang, DiDi Global, Klarna", url: "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html", label: "CNBC, carried via search synthesis", as_of: "2026-05-13", confidence: medium}
+  - {id: vf-q3fy25-openai-gains, figure: "Q3 FY2025 (Dec quarter): $4.2B OpenAI mark-up; $17B cumulative OpenAI gain Apr-Dec 2025", url: "https://www.cnbc.com/2026/02/12/softbank-vision-fund-openai.html", label: "CNBC, carried via search synthesis (direct fetch 403)", as_of: "2026-02-12", confidence: medium}
+  - {id: bytedance-markdown, figure: "ByteDance/TikTok stake markdown named as a portfolio drag in the same reporting stretch", url: "https://www.cnbc.com/2026/05/13/softbank-earnings-fy-2025-vision-fund-openai-stake.html", label: "CNBC, carried via search synthesis", as_of: "2026-05-13", confidence: medium}
+  - {id: cfo-60pct-asi, figure: "CFO Yoshimitsu Goto: ~60% of SoftBank's total assets now 'ASI-oriented investments'", url: "https://eu.36kr.com/en/p/3702617641972100", label: "36kr (via search synthesis)", as_of: "2026-02", confidence: medium}
+  - {id: vf1-realization-phase, figure: "Vision Fund 1's investment period ended 2019 at ~85% capital deployed; fund is in a long-tail exit/realization phase, not a live driver of current concentration story; no fresh 2026 VF1-specific performance figure found", url: "n/a", label: "Crawl gap — explicit thin/not-found", as_of: "2026-08-04", confidence: thin}
+  # --- CREDIT RATINGS ---
+  - {id: moodys-upgrade, figure: "Moody's upgraded SoftBank Group Corp CFR to Ba2 from Ba3 (senior unsecured Ba2, subordinated B1), outlook stable, citing leverage reduction and improved transparency", url: "https://www.bloomberg.com/news/articles/2025-09-17/moody-s-upgrades-softbank-s-debt-rating-on-credit-fundamentals", label: "Bloomberg + Investing.com (convergent)", as_of: "2025-09-17", confidence: medium}
+  - {id: sp-negative-outlook, figure: "S&P revised outlook to negative (no downgrade) in March 2026, citing doubts about financial discipline given a ~JPY2.5T ($24B) buyback program run alongside ~$41B of asset-sale fundraising", url: "https://www.spglobal.com/ratings/en/regulatory/article/-/view/sourceId/101673310", label: "S&P Global Ratings, carried via search synthesis (direct fetch 403)", as_of: "2026-03", confidence: medium}
+  # --- MARKET PRICING / Q1 RUN-UP ---
+  - {id: stock-down-50pct-june, figure: "SoftBank stock down roughly 50% since early June 2026", url: "https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632", label: "Investing.com — direct fetch", as_of: "2026-08-04", confidence: medium}
+  - {id: beat-and-drop-pattern, figure: "Three consecutive quarters of EPS beats (+103.4%, +32.2%, +407.6%) each followed by a stock decline (-1.55%, -6.70%, -3.62%) on report day", url: "https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632", label: "Investing.com — direct fetch, primary table", as_of: "2026-08-04", confidence: medium}
+  - {id: db-downgrade, figure: "Deutsche Bank downgraded SoftBank to Hold from Buy, citing limited upside, yen depreciation, OpenAI valuation-durability concerns", url: "https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632", label: "Investing.com — direct fetch", as_of: "2026-08-04", confidence: medium}
+  - {id: cds-widening, figure: "Credit default swap costs on SoftBank debt have risen, market-pricing increased default risk", url: "https://en.cryptonomist.ch/2026/08/04/softbank-openai-investment-q1-2026/", label: "cryptonomist.ch", as_of: "2026-08-04", confidence: medium}
+  - {id: dead-cross-arm-sympathy, figure: "Technical 'dead cross' (25dMA below 75dMA) formed 2026-07-28; SoftBank fell 2.6% on 2026-07-30 in sympathy with Arm's smartphone-royalty warning", url: "https://www.investing.com/news/stock-market-news/softbank-q1-earnings-preview-low-bar-arm-risk-and-the-beatanddrop-pattern-93CH-4832632", label: "Investing.com — direct fetch", as_of: "2026-07-30", confidence: medium}
+  - {id: arm-ownership-sec-864, figure: "Arm's own SEC 6-K filing: SoftBank beneficial ownership ~86.4% of Arm as of 2026-05-21", url: "https://www.sec.gov/Archives/edgar/data/0001973239/000197323926000114/arm-20260630.htm", label: "SEC EDGAR — Arm Holdings 6-K, primary filing", as_of: "2026-05-21", confidence: high}
+  # --- Q1 FY2026 RUN-UP ---
+  - {id: q1-not-yet-reported, figure: "SoftBank Group (9984) Q1 FY2026 has NOT reported as of 2026-08-04; still scheduled 2026-08-06 — confirmed via 3-day GDELT sweep finding no contradicting report", url: "https://api.gdeltproject.org/api/v2/doc/doc?query=SoftBank%20Group%20OpenAI", label: "GDELT DOC API sweep, run 2026-08-04", as_of: "2026-08-04", confidence: high}
+  - {id: reckoning-framing-wires, figure: "Reuters-originated 'SoftBank AI funding plans face reckoning at earnings' framing running across multiple wire pickups same week", url: "https://finance.yahoo.com/technology/ai/articles/softbanks-ai-funding-plans-face-061407936.html", label: "Yahoo Finance / Economic Times / Asharq Al-Awsat (convergent wire pickup)", as_of: "2026-08-04", confidence: medium}
+  - {id: q1-consensus-inconsistent, figure: "Consensus estimates for the Aug 6 print are inconsistent across sources: ~JPY148.4B (~$941.2M) net profit per an LSEG 4-analyst poll vs. a separately cited JPY24.62 EPS / JPY1.96T revenue figure that does not clearly reconcile", url: "n/a", label: "Crawl gap — flagged inconsistency, not resolved", as_of: "2026-08-04", confidence: thin}
+  - {id: entity-guard-still-live, figure: "SoftBank Corp (9434, telecom, already reported) still gets mixed into SoftBank Group (9984, pending) coverage in wires as of 2026-08-04 — same trap the thread flagged 2026-08-03", url: "n/a", label: "Crawl observation across multiple search/GDELT results", as_of: "2026-08-04", confidence: medium}
+  # --- SON'S FRAMING ---
+  - {id: izanagi-strategy-name, figure: "SoftBank's AI strategy branded 'Izanagi' in coverage of a 2026-02-26 stock surge", url: "https://markets.financialcontent.com/stocks/article/marketminute-2026-2-26-softbank-shares-surge-as-masayoshi-son-unleashes-the-izanagi-ai-strategy", label: "financialcontent.com marketminute — single outlet, unverified against a second source", as_of: "2026-02-26", confidence: thin}
+  - {id: son-asi-mission-quote, figure: "Son at a SoftBank shareholder meeting: 'SoftBank's mission is to drive human evolution and realize ASI (Artificial Super Intelligence)'; separately predicted ASI '10,000 times smarter than humans within a decade'", url: "https://genaiassembling.substack.com/p/masayoshi-sons-10000-iq-gamble-buying", label: "genaiassembling.substack.com + aol.com (via search synthesis), quoting shareholder-meeting coverage; exact meeting date not independently pinned down", as_of: "2026-04", confidence: medium}
+notes: >-
+  Confidence key matches prior bundle convention (e.g. tsmc-capacity-race-
+  2026-07-28): high = primary source fetched directly (SoftBank's own
+  press release, SEC/Arm's own 6-K filing, or a GDELT sweep run directly
+  by this crawl) or 3+ independent outlets converge. medium = search-
+  engine synthesis of a page this crawl could not directly fetch (CNBC,
+  S&P Global — both 403'd), or a single/small convergent cluster.
+  thin = single outlet, an internally inconsistent figure, or an explicit
+  crawl gap. No URL or figure in this bundle was fabricated. Explicit
+  unresolved gaps carried into the finding's "what to watch": (1) the
+  "Izanagi" branding is single-outlet sourced; (2) two circulating Q1
+  FY2026 consensus figures don't reconcile with each other; (3) Vision
+  Fund 1's current-year performance specifically was not found (treated
+  as dormant/realization-phase, not a live contributor); (4) Arm
+  ownership secondary sources range 86-90%, with the SEC's own 86.4%
+  (as-of 2026-05-21) as the one primary-sourced figure.

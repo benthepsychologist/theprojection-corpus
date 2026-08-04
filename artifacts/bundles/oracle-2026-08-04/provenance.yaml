@@ -1,0 +1,105 @@
+# Bundle — crawl finding oracle-2026-08-04
+artifact: artifacts/findings/oracle-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Free-topic backward crawl (no existing thread of its own; Oracle
+  previously appeared only as supporting cast on six other threads).
+  Direct SEC EDGAR fetch of Oracle's Q4 FY2026 earnings 8-K exhibit
+  (CIK 1341439, accession implied by the filed exhibit path
+  000119312526265848) for the primary revenue/RPO/cashflow/capex figures.
+  WebSearch used for the credit-rating action, RPO-credibility debate,
+  Stargate JV structure, Larry Ellison's own statements, and the
+  Cerner/Oracle Health angle — confirmed not yet exhausted this session
+  before use (first WebSearch call succeeded cleanly). One direct
+  corroboration attempt (CNBC's OpenAI-shortfall stock-reaction piece)
+  returned HTTP 403 and was worked around via a secondary aggregator
+  instead, flagged accordingly in the finding. GDELT's DOC API returned
+  HTTP 429 (rate-limited) on the one attempt made and was not retried,
+  per the crawl skill's guidance against blind retries on a
+  budget/rate-limit failure — no GDELT-sourced items in this bundle.
+queries:
+  sec_edgar:
+    - "Oracle Corp 10-Q filings list (CIK 0001341439, browse-edgar atom feed)"
+    - "Oracle Q4/FY2026 earnings 8-K exhibit, direct fetch"
+  web_search:
+    - "Oracle Q4 fiscal 2026 earnings RPO backlog remaining performance obligations"
+    - "Oracle free cash flow debt Moody's S&P credit rating downgrade AI capex 2026"
+    - "Oracle Stargate stake OpenAI SoftBank MGX site commitment 2026"
+    - "Oracle RPO backlog credibility skepticism analysts accounting concerns OpenAI concentration"
+    - "Larry Ellison Oracle statement AI data center buildout 2026 quote"
+    - "Oracle Cerner health records AI 2026"
+    - "Oracle Q1 fiscal 2027 earnings date September 2026"
+  web_fetch_direct:
+    - "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm"
+    - "https://finance.yahoo.com/markets/stocks/articles/oracle-stock-shrugs-off-p-185346661.html"
+    - "https://www.cnbc.com/2026/04/28/openai-reportedly-missed-revenue-targets-shares-of-oracle-and-these-chip-stocks-are-falling.html  (403, not used)"
+    - "https://finance.yahoo.com/markets/stocks/articles/openai-shortfall-puts-oracle-ai-050252163.html"
+    - "https://finance.yahoo.com/markets/stocks/articles/oracle-ai-round-trip-revenue-181048828.html"
+    - "https://www.theregister.com/ai-and-ml/2026/08/03/as-larry-ellison-bets-the-farm-oracle-says-it-loves-ai-written-code-just-not-in-openjdk/5281851"
+items:
+  # Q4/FY2026 RESULTS — primary SEC source
+  - {id: fy26-total-revenue, figure: "Total revenue FY26 $67.4B (+17% USD); Q4 $19.2B (+21% USD, +20% cc)", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release (8-K exhibit 99.1), SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: fy26-cloud-revenue, figure: "Total cloud revenue FY26 $34.0B (+39%); Q4 $9.9B (+47%)", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: fy26-oci-revenue, figure: "OCI/Cloud Infrastructure (IaaS) revenue FY26 $18.1B (+77% USD, +75% cc); Q4 $5.8B (+93% USD, +92% cc)", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: rpo-638b, figure: "RPO ended the quarter at $638B, up 363% YoY, up $85B sequentially from Q3; prepaid/customer-supplied-hardware slice of large AI contracts now $75B; management guides 12% of RPO ($76.6B) converting to revenue over next 12 months vs $67B generated in FY26", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly; supersedes board.yaml's carried '~$450B+ RPO, conf LOW, unverified' figure", as_of: "2026-06-10", confidence: high}
+  - {id: fy26-ocf, figure: "Operating cash flow FY26 $32.0B (+54%)", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: fy26-fcf, figure: "Free cash flow FY26 -$23.7B", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: fy26-capex-financing, figure: "FY26 capex $55.7B; raised $43B debt + $5B equity in FY26; FY27 expects to raise ~$40B more debt", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+  - {id: fy27-guidance, figure: "FY27 guidance: $90B total revenue confirmed, non-GAAP EPS raised to $8.05 (+18%); Q1 FY27 guided 27-29% revenue growth, 57-63% cloud revenue growth", url: "https://www.sec.gov/Archives/edgar/data/0001341439/000119312526265848/orcl-ex99_1.htm", label: "Oracle Q4 FY26 earnings press release, SEC EDGAR — fetched directly", as_of: "2026-06-10", confidence: high}
+
+  # FY27 ESCALATION
+  - {id: fy27-capex-70b, figure: "FY27 planned datacenter capex ~$70B, up from FY26's $55.7B", url: "https://www.theregister.com/ai-and-ml/2026/08/03/as-larry-ellison-bets-the-farm-oracle-says-it-loves-ai-written-code-just-not-in-openjdk/5281851", label: "The Register (single outlet, but consistent with S&P's independent $90-95B projection)", as_of: "2026-08-03", confidence: medium}
+  - {id: sp-capex-projection, figure: "S&P projects FY27 capex $90-95B, FY27 FCF deficit widening to ~-$42B, adjusted debt-to-leverage reaching mid-4x", url: "https://finance.yahoo.com/markets/stocks/articles/oracle-stock-shrugs-off-p-185346661.html", label: "Yahoo Finance, S&P downgrade coverage", as_of: "2026-07-09", confidence: medium-high}
+
+  # CREDIT RATING ACTION
+  - {id: sp-downgrade, figure: "S&P downgraded Oracle BBB -> BBB-, outlook stable, 2026-07-09 — one notch above junk; cited FY27 capex jump, FCF deficit, leverage, and OpenAI ~50% of RPO concentration", url: "https://finance.yahoo.com/markets/stocks/articles/oracle-stock-shrugs-off-p-185346661.html", label: "Yahoo Finance, S&P downgrade coverage", as_of: "2026-07-09", confidence: medium-high}
+  - {id: debt-figure-discrepancy, figure: "Total debt reported variously as $156B (board.yaml carried figure), $167B (one outlet), and $130-156B range (net debt ~$131B, LT borrowings >$122B, another outlet) — not reconciled to one filing this crawl", url: "https://www.computing.co.uk/news/2026/ai/oracle-under-pressure-after-ratings-downgrade-over-ai-expansion", label: "multi-outlet WebSearch compilation, unreconciled", as_of: "2026-07-09", confidence: thin}
+  - {id: moodys-negative-outlook, figure: "Moody's has assigned Oracle a negative outlook (exact rating letter/date not independently pinned down)", url: "https://www.insiderfinance.io/news/oracle-stock-near-low-after-ai-capex-fears", label: "WebSearch summary-level, not a fetched primary Moody's release", as_of: "2026-07-01", confidence: thin}
+  - {id: moodys-weakest-credit-link, figure: "Moody's named Oracle and CoreWeave 'AI's weakest credit link' (carried forward from the 2026-07-28 CoreWeave crawl, corroborating rather than new)", url: "https://news.google.com/rss/search?q=Oracle%20CoreWeave%20Moody%27s%20weakest%20credit%20link", label: "Bitget via Google News RSS, single outlet (see coreweave-backlog-bet-2026-07-28 bundle for original sourcing)", as_of: "2026-07-25", confidence: thin}
+  - {id: oracle-cds-cycle-high, figure: "Oracle CDS hit a cycle high (carried forward from the 2026-07-28 CoreWeave crawl); The Register (2026-08-03) states the CDS spread has spiked further since, without a specific bp figure", url: "https://www.theregister.com/ai-and-ml/2026/08/03/as-larry-ellison-bets-the-farm-oracle-says-it-loves-ai-written-code-just-not-in-openjdk/5281851", label: "Seeking Alpha/MSN (2026-07-20/21) + The Register (2026-08-03) — direction corroborated, no exact bp figure", as_of: "2026-08-03", confidence: medium}
+
+  # RPO CREDIBILITY / CONCENTRATION
+  - {id: openai-half-rpo, figure: "OpenAI accounts for roughly half of Oracle's RPO", url: "https://news.ssbcrack.com/oracles-638-billion-backlog-key-to-success-amid-skepticism/", label: "multi-outlet WebSearch compilation on RPO skepticism", as_of: "2026-07-09", confidence: medium}
+  - {id: openai-300b-54pct, figure: "~$300B / 54.25% of RPO tied to OpenAI/Stargate — analyst-level derivation, not Oracle-disclosed by counterparty", url: "https://finance.yahoo.com/markets/stocks/articles/openai-shortfall-puts-oracle-ai-050252163.html", label: "Yahoo Finance, aggregated analyst framing", as_of: "2026-04-29", confidence: medium}
+  - {id: luria-quote, figure: "Analyst Daniel Luria: concentration 'significantly reduces' enthusiasm, particularly if 'more than 90% came from OpenAI'", url: "https://finance.yahoo.com/markets/stocks/articles/openai-shortfall-puts-oracle-ai-050252163.html", label: "Yahoo Finance, quoted analyst", as_of: "2026-04-29", confidence: thin}
+  - {id: openai-missed-targets, figure: "OpenAI reportedly missed internal user and sales targets for 2026 — no clearly identified primary source found", url: "https://finance.yahoo.com/markets/stocks/articles/openai-shortfall-puts-oracle-ai-050252163.html", label: "secondary aggregation, unconfirmed primary source, flagged explicitly as thin/unconfirmed", as_of: "2026-04-29", confidence: thin}
+  - {id: cnbc-403-not-used, figure: "CNBC's direct OpenAI-shortfall/stock-reaction piece returned HTTP 403 on WebFetch — not used as a direct source, worked around via secondary aggregator (openai-missed-targets item above)", url: "https://www.cnbc.com/2026/04/28/openai-reportedly-missed-revenue-targets-shares-of-oracle-and-these-chip-stocks-are-falling.html", label: "blocked, method note only", as_of: "2026-04-28", confidence: thin}
+  - {id: round-trip-revenue, figure: "'Round-trip revenue' critique: Oracle equity investments in unprofitable AI labs (named: OpenAI, Anthropic) cycle back as Oracle cloud revenue; current accounting rules permit it; no named analyst or quantified scale given", url: "https://finance.yahoo.com/markets/stocks/articles/oracle-ai-round-trip-revenue-181048828.html", label: "Yahoo Finance, unnamed-analyst framing; same pattern already tracked by the ai-circular-financing-risk thread", as_of: "2026-05-25", confidence: thin}
+
+  # STARGATE STRUCTURE
+  - {id: stargate-jv-structure, figure: "Stargate JV initial equity funders: SoftBank, OpenAI, Oracle, MGX; SoftBank financial-responsibility / OpenAI operational-responsibility; initial $100B ramping to $500B over 4 years", url: "https://www.spglobal.com/market-intelligence/en/news-insights/research/softbabnk-openai-oracle-and-mgx-commit-to-100b-for-stargate-ai-infrastructure", label: "S&P Global Market Intelligence", as_of: "2026-01-01", confidence: medium-high}
+  - {id: oracle-openai-300b-bilateral, figure: "Oracle's own separate ~$300B, 5-year cloud-services contract with OpenAI (announced July 2025, 4.5GW capacity) — distinct from the Stargate JV equity stake; this bilateral contract is the bulk of the OpenAI RPO concentration", url: "https://cloudwars.com/ai/oracle-joins-openais-stargate-project-with-4-5gw-ai-infrastructure-boost/", label: "Cloud Wars", as_of: "2025-07-01", confidence: medium}
+  - {id: stargate-sites, figure: "Confirmed Stargate sites: Abilene TX (flagship, 1.2GW), Shackelford County TX, Doña Ana County NM, Lordstown OH, Wisconsin — ~7GW planned, $400B+ committed over 3 years, ahead of pace toward full $500B/10GW", url: "https://openai.com/index/five-new-stargate-sites/", label: "OpenAI's own site announcement", as_of: "2026-01-01", confidence: high}
+
+  # ELLISON QUOTES
+  - {id: ellison-datacenter-quote, figure: "Ellison, earnings call: 'Oracle will build more cloud infrastructure data centers than all of our infrastructure competitors combined.'", url: "https://cloudwars.com/innovation-leadership/larry-ellisons-2026-target-largest-and-fastest-growing-markets-in-history/", label: "Cloud Wars earnings-call coverage", as_of: "2026-06-10", confidence: medium}
+  - {id: ellison-ai-code-quote, figure: "Ellison, 2026-08-03: 'The code that Oracle is writing, Oracle isn't writing. Our AI models are writing.' — stated even as Oracle banned AI-generated code from OpenJDK contributions on safety/security grounds", url: "https://www.theregister.com/ai-and-ml/2026/08/03/as-larry-ellison-bets-the-farm-oracle-says-it-loves-ai-written-code-just-not-in-openjdk/5281851", label: "The Register", as_of: "2026-08-03", confidence: medium}
+
+  # CERNER / HEALTHCARE
+  - {id: oracle-health-ehr, figure: "Oracle Health launched a new 'AI-first' EHR built fresh on OCI (not atop legacy Cerner infra) for ambulatory providers, pending regulatory approval; acute-care functionality and broader AI agents (revenue cycle, nursing, clinical ops) planned for 2026; no material financial/credit event tied to Cerner found this window", url: "https://www.fiercehealthcare.com/health-tech/oracle-health-debuts-ai-powered-ehr-designed-voice-first-solution-embedded-agentic-ai", label: "FierceHealthcare", as_of: "2026-01-01", confidence: medium}
+
+  # NEXT DISCLOSURE
+  - {id: q1-fy27-earnings-date, figure: "Q1 FY2027 earnings: 2026-09-14, after market close", url: "https://www.stocktitan.net/news/ORCL/oracle-sets-the-date-for-its-first-quarter-fiscal-year-2026-earnings-yrnxpifeno9n.html", label: "StockTitan/aggregator convergence via WebSearch", as_of: "2026-08-04", confidence: medium}
+
+  # RATE-LIMITED / NOT USED
+  - {id: gdelt-429, figure: "GDELT DOC API returned HTTP 429 (rate-limited) on the one attempt made; not retried per crawl-skill guidance against blind retries", url: "https://api.gdeltproject.org/api/v2/doc/doc", label: "method note — no GDELT items in this bundle", as_of: "2026-08-04", confidence: thin}
+notes: >-
+  Confidence key matches sibling bundles: high = primary source fetched
+  directly (Oracle's own 8-K exhibit via SEC EDGAR, or OpenAI's own site
+  announcement). medium-high/medium = single primary-tier outlet or 2-3
+  converging outlets via WebSearch, not independently re-fetched against
+  a filing. thin = single lower-tier outlet, unnamed-analyst framing, an
+  unreconciled/estimated figure, or a claim whose primary source could
+  not be identified (the OpenAI-missed-targets claim specifically). The
+  $638B RPO figure is this bundle's strongest-sourced claim and directly
+  supersedes board.yaml's prior "~$450B+ RPO, conf LOW, unverified" note
+  — flagged for Ben's attention as a board-update candidate, not applied
+  here (out of this crawl's scope).
+gaps:
+  - "Total Oracle debt not reconciled to one filing: $156B (board) vs $167B vs a $130-156B range cited elsewhere."
+  - "Moody's exact rating letter and action date not independently confirmed against a primary release."
+  - "OpenAI's reported 2026 target miss has no clearly identified primary source in the coverage found."
+  - "The ~$300B/54.25%-of-RPO OpenAI figure is an analyst derivation; Oracle does not disclose RPO by counterparty."
+  - "Exact Oracle CDS basis-point levels not obtained from a primary CDS data source."
+  - "No material Cerner/Oracle Health financial or credit event found in the 2026-05-to-08 window."
+  - "GDELT DOC API rate-limited (429) on the one attempt; no GDELT-sourced very-recent-days coverage in this bundle."

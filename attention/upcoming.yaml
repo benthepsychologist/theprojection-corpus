@@ -1102,3 +1102,125 @@ expectations:
     logged: 2026-08-03
     logged_by: curate-add
     status: pending
+
+  - id: amd-q2-2026-earnings
+    claim: "AMD reports Q2 2026 earnings (guided ~$11.2B rev ± $300M; consensus ~$11.3B, ~$1.61 EPS, ~$6.5B Data Center)"
+    due: 2026-08-04
+    due_precision: day
+    thread: amd
+    entities: [amd]
+    source: https://www.tikr.com/blog/amd-reports-q2-2026-earnings-august-4-what-the-stock-needs-to-show-after-its-anthropic-deal
+    confidence: confirmed
+    what_confirms: "AMD 8-K / earnings press release + call, after market close 2026-08-04"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: amd-openai-meta-1gw-h2-2026
+    claim: "First 1GW shipment tranches (OpenAI and Meta deals separately) begin, per both deals' stated H2-2026 timeline — first real test of warrant-vesting shipment milestones"
+    due: 2026-12-31
+    due_precision: quarter
+    thread: amd
+    entities: [amd, openai, meta-ai]
+    source: https://www.tomshardware.com/pc-components/gpus/openai-signs-6gw-amd-gpu-deal
+    confidence: reported
+    what_confirms: "AMD/OpenAI/Meta disclosure of shipped GW capacity or a warrant-vesting event"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: amd-oracle-50k-gpu-q3-2026
+    claim: "Oracle Cloud begins 50,000-GPU rollout (AMD Instinct/Helios)"
+    due: 2026-09-30
+    due_precision: quarter
+    thread: amd
+    entities: [amd, oracle]
+    source: https://www.oracle.com/news/announcement/ai-world-oracle-and-amd-expand-partnership-to-help-customers-achieve-next-generation-ai-scale-2025-10-14/
+    confidence: reported
+    what_confirms: "Oracle or AMD disclosure of rollout start/progress"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: amd-anthropic-1gw-h1-2027
+    claim: "Anthropic's first 1GW of AMD MI450 deployment begins"
+    due: 2027-06-30
+    due_precision: half
+    thread: amd
+    entities: [amd, anthropic]
+    source: https://ir.amd.com/news-events/press-releases/detail/1292/amd-and-anthropic-announce-strategic-partnership-to-deploy-up-to-2-gigawatts-of-amd-instinct-mi450-series-gpus
+    confidence: reported
+    what_confirms: "AMD or Anthropic disclosure of deployment start / equity-milestone funding"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: asml-q3-2026-earnings
+    claim: "ASML reports Q3 2026 earnings and either holds or revises the €43-45B FY2026 guidance set 2026-07-15"
+    due: 2026-10-14
+    due_precision: month   # estimated from ASML's Q1(04-15)/Q2(07-15) reporting cadence — no confirmed date found
+    thread: asml
+    entities: [asml]
+    source: https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results
+    confidence: reported
+    what_confirms: "the Q3 2026 press release/earnings call, and whether it addresses the Shanghai Aishengna story or the Lutnick inquiry (neither had an ASML management response as of this crawl)"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: asml-samsung-highna-1h2026
+    claim: "Samsung's two purchased EXE:5200B High-NA EUV systems go operational for 2nm SF2/HBM4 mass production, targeted 1H 2026"
+    due: 2026-06-30
+    due_precision: month
+    thread: asml
+    entities: [asml, samsung]
+    source: "n/a (TrendForce/guru3d/tweaktown aggregation, 2025-10)"
+    confidence: reported
+    what_confirms: "a report of actual installation/operational status at a named Samsung fab — this crawl found only the 'targeted 1H 2026' purchase report, no operational confirmation"
+    logged: 2026-08-04
+    logged_by: crawl
+    # ⚠ logged with its due date already elapsed (crawl ran 2026-08-04,
+    # over a month past 06-30) — the crawl found no confirmation either
+    # way. A live passed-silent candidate for the next /daily's check, not
+    # hand-decided here since that determination needs an actual look, not
+    # an assumption from a logging gap.
+    status: pending
+
+  - id: oracle-q1-fy27-earnings
+    claim: "Oracle reports Q1 FY2027 earnings (updated RPO, FCF, capex guidance tracking)"
+    due: 2026-09-14
+    due_precision: day
+    thread: oracle-stargate-bet
+    entities: [oracle, openai]
+    source: https://www.stocktitan.net/news/ORCL/oracle-sets-the-date-for-its-first-quarter-fiscal-year-2026-earnings-yrnxpifeno9n.html
+    confidence: confirmed
+    what_confirms: "the Q1 FY27 earnings press release/8-K"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: softbank-roze-ipo
+    claim: "SoftBank targets an IPO for Roze (AI/robotics data-center-construction spinout, bundling ABB Robotics + energy/land/digital-infra assets) at up to $100B valuation"
+    due: 2026-12-31
+    due_precision: quarter
+    thread: softbank-all-in
+    entities: [softbank]
+    source: https://finance.yahoo.com/sectors/technology/articles/softbank-plans-100b-u-ipo-115700056.html
+    confidence: medium
+    what_confirms: "an actual IPO filing/prospectus, or SoftBank confirming/dropping the timeline"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: softbank-abb-robotics-close
+    claim: "SoftBank's $5.375B acquisition of ABB's robotics division closes"
+    due: 2026-10-31
+    due_precision: quarter
+    thread: softbank-all-in
+    entities: [softbank]
+    source: https://group.softbank/en/news/press/20251008
+    confidence: confirmed
+    what_confirms: "deal closing announcement, pending EU/China/US regulatory approval"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending

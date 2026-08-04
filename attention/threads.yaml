@@ -1874,7 +1874,7 @@ threads:
       - "SoftBank Arm collateral"
       - "Masayoshi Son AI"
     opened: 2026-07-28
-    last_seen: 2026-08-03
+    last_seen: 2026-08-04   # crawl 2026-08-04
     watch: >
       The empire's concentration play, assembled from pieces other threads
       carry singly: the $40B OpenAI-stake loan (21 lenders), the 10GW Ohio
@@ -1882,9 +1882,56 @@ threads:
       Arm's 87.1% pledged as loan collateral ($5B sought + a $20B margin
       loan with an unresolved Dec-25 deadline), the $2B Intel stake, a
       renewed $10B OpenAI-collateral loan. Everything Son owns now
-      collateralizes everything else. Track: the loan stack's health vs
-      the AI-credit repricing, any forced Arm monetization, Stargate
-      milestones.
+      collateralizes everything else. A fourth front, found by the
+      2026-08-04 crawl: SoftBank is SELF-FUNDING the bet by selling down
+      other holdings (its entire $5.83B Nvidia stake, $9.17B of T-Mobile),
+      while Vision Fund's ~$46B FY2025 gain is confirmed to trace almost
+      entirely to the OpenAI markup — a concentrated bet wearing a
+      diversified-fund wrapper, not a real hedge — against Coupang/DiDi/
+      Klarna/ByteDance losses in the same period. A new lever entirely:
+      a $5.375B ABB Robotics acquisition feeding a planned ~$100B "Roze"
+      physical-AI/data-center-robotics IPO targeted H2 2026. CreditSights
+      sizes a $32B two-year funding gap; rating agencies diverge (Moody's
+      stable Sep-25, S&P negative Mar-26 over buybacks-while-borrowing);
+      stock down ~50% since June on a beat-and-drop earnings pattern.
+      Track: the loan stack's health vs the AI-credit repricing, any
+      forced Arm monetization, Stargate milestones, the funding-gap
+      figure, and whether Roze/ABB actually reaches IPO.
+
+  - slug: oracle-stargate-bet
+    genre: financing   # ben-steer 2026-08-04 (crawl) — the RPO figure is well-sourced (Oracle's own 8-K); the live dispute is counterparty ability-to-pay and leverage, not guidance credibility, matching coreweave-backlog-bet's shape rather than arm-royalty-regime's
+    title: "Oracle's Stargate Bet"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [oracle, larry-ellison, openai, softbank, mgx]
+    weight: 2
+    terms:
+      - "Oracle RPO backlog"
+      - "Oracle free cash flow"
+      - "Oracle credit rating"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Whether the FY27 capex step-up (~$70-95B, depending on source) and
+      a reported (thinly sourced) OpenAI target-miss show up in the
+      2026-09-14 Q1 FY27 print; any further credit-rating action beyond
+      S&P's 2026-07-09 downgrade to BBB- (one notch above junk) or a CDS
+      move; whether the guided RPO-to-revenue conversion ($76.6B vs $67B
+      delivered in FY26) holds; any named counterparty breakdown of the
+      OpenAI-linked RPO slice ($638B total, roughly half tied to OpenAI
+      per multiple outlets).
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — Oracle was supporting cast
+      on six other threads (ai-circular-financing-risk, stargate-buildout,
+      ai-power-buildout, ai-datacenter-sites, nuclear-for-ai,
+      datacenters-as-targets) with no thread of its own. Its own arc is a
+      leveraged, single-customer-concentrated, debt-funded bet — FCF of
+      -$23.7B against $55.7B capex, funded by $43B in new debt — that
+      just took a credit-rating downgrade on exactly that thesis. The
+      $638B RPO figure (confirmed, Oracle's own SEC 8-K, 2026-06-10, up
+      363% YoY) supersedes board.yaml's stale "~$450B+, conf LOW,
+      unverified" note — flagged for a separate board-axes fix.
 
   - slug: custom-asic-tolls
     genre: capital-flow   # ben-steer 2026-07-28 (crawl-recommended over merge into inhouse-silicon)
@@ -1936,6 +1983,81 @@ threads:
       (CEO denial within two weeks); Ventana/RISC-V status unclear — does
       Dragonfly supersede it? First live test: Q3 FY26 earnings 07-29
       (tomorrow) — does Dragonfly move guidance?
+
+  - slug: amd
+    genre: border-war   # ben-steer 2026-08-04 (crawl) — contesting Nvidia's AI-GPU boundary via three hyperscaler/lab compute deals (OpenAI/Meta/Anthropic), same shape as qualcomm-dragonfly
+    title: "The #2 Cashes In"
+    kind: story
+    status: open
+    lens: ai
+    entities: [amd, nvidia, openai, anthropic, meta-ai]
+    weight: 2
+    terms:
+      - "AMD Instinct"
+      - "AMD MI400"
+      - "AMD Helios"
+      - "AMD Anthropic"
+      - "AMD OpenAI warrant"
+      - "AMD Meta GPU"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Whether the ~14GW of announced OpenAI/Meta/Anthropic compute deals
+      actually convert to shipped hardware and vested warrants on their
+      stated H2-2026/H1-2027 timelines, or stay a backlog/announcement
+      story — Q2 2026 earnings (reported 2026-08-04, after this crawl
+      closed) is the first real test. Also watching: China MI325X
+      licensing status, and whether the Oracle 50,000-GPU Q3-2026
+      rollout starts on schedule.
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — real board node with zero
+      thread coverage; three hyperscaler/lab compute deals (~14GW total)
+      plus a $5B Anthropic equity stake already dominate its thrust axis,
+      but none of it is proven in revenue yet — worth tracking as its
+      own story, not just a line inside Nvidia/OpenAI/Anthropic threads.
+
+  - slug: asml
+    genre: buildout-race   # ben-steer 2026-08-04 (crawl) — closest sibling is tsmc-capacity-race: a monopoly-adjacent capacity/capex buildout under geopolitical constraint, not a shortage or a border dispute
+    title: "ASML — the EUV Monopoly"
+    kind: story
+    status: open
+    lens: ai
+    entities: [asml, tsmc, samsung, intel, sk-hynix, mistral-ai]
+    weight: 3
+    terms:
+      - "ASML EUV"
+      - "ASML High-NA"
+      - "ASML China export controls"
+      - "MATCH Act semiconductor"
+      - "ASML earnings guidance"
+      - "ASML Mistral"
+      - "Shanghai Aishengna DUV"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Guidance is climbing (€36-40B to €43-45B for FY2026) while the
+      China fight runs on three fronts at once: the MATCH Act would
+      extend controls to DUV tools generally, not just EUV, and passed
+      House committee; Commerce's Lutnick opened a still-unresolved
+      inquiry into whether an EUV tool illegally reached China (ASML
+      denies it); and China's own Shanghai Aishengna is now shipping
+      domestic DUV units to SMIC/Hua Hong/CXMT, though independent
+      forecasts put a genuinely competitive 7nm domestic scanner a
+      decade out, not this year. High-NA adoption is splitting the big
+      three — Intel shipped first, TSMC opted out for A14 on cost,
+      Samsung/SK Hynix are ordering. The Mistral stake (11%, active
+      board seat) has no confirmed follow-on yet. Next: Q3 2026
+      earnings, MATCH Act's Senate/NDAA fate, Lutnick inquiry resolution.
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — ASML had ZERO thread
+      coverage despite being boarded 2026-07-27 as "the board's biggest
+      absent node" (kingdom rank, chips pocket, ~$60B commandable
+      capital, gravity called "sole EUV supplier; no leading-edge chip
+      is made anywhere without its tools"). Opened on structural-
+      chokepoint grounds per Ben's explicit framing, not news volume —
+      though this crawl found substantial real news flow anyway (guidance
+      raise, a High-NA production milestone, a new export-control bill,
+      an open federal inquiry, and China's first domestic DUV shipments).
 
   - slug: payer-ai-claim-denial
     genre: legitimacy-dispute   # ben-steer 2026-07-28 — the legitimacy of algorithmic denials, contested in courts + Congress

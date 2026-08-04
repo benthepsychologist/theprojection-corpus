@@ -1,0 +1,101 @@
+# Bundle — crawl finding asml-2026-08-04
+artifact: artifacts/findings/asml-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Two parallel sonnet subagents ran WebSearch + WebFetch sweeps: one on
+  Q2 2026 financials/guidance, High-NA EUV adoption, and the Mistral AI
+  stake; one on China export-control exposure (MATCH Act, Dutch/Japan
+  licensing, the Lutnick inquiry, and the Shanghai Aishengna domestic-DUV
+  story). Primary sources fetched directly where possible: ASML's own
+  press releases and SEC 6-K filings, ASML Q1/Q2 2026 earnings-call
+  transcripts (Motley Fool/stockanalysis.com), a Federal Register API
+  query, and one full-text policy piece (War on the Rocks). Elsewhere,
+  WebSearch snippets and convergent multi-outlet headline reporting stand
+  in where full article bodies could not be fetched (three items marked
+  thin for exactly this reason — two Tom's Hardware pieces and one
+  TechTimes piece from late July/early August 2026). No URL or figure was
+  fabricated; several items are explicitly marked "not found" in the
+  finding rather than guessed, and one direct source conflict (China
+  revenue share: 16% H1-actual vs ~20% CFO-stated) is carried unresolved
+  rather than silently picked.
+queries:
+  websearch_and_rss:
+    - "ASML Q2 2026 earnings results"
+    - "ASML Q1 2026 earnings guidance"
+    - "ASML full year 2026 guidance raised"
+    - "ASML net bookings Q4 2025"
+    - "ASML High-NA EUV Intel 18A"
+    - "ASML High-NA TSMC Samsung SK Hynix"
+    - "ASML EXE:5200 High-NA order"
+    - "ASML Mistral AI stake 2026"
+    - "Mistral AI funding round 2026 valuation"
+    - "ASML China revenue share 2026"
+    - "ASML export controls MATCH Act"
+    - "MATCH Act semiconductor equipment DUV"
+    - "Netherlands ASML export controls Washington visit"
+    - "Lutnick ASML EUV China investigation"
+    - "Shanghai Aishengna immersion DUV lithography"
+    - "China domestic DUV lithography SMIC Hua Hong CXMT"
+    - "ASML backlog 2026 EUV order"
+    - "Intel Apple foundry agreement 2026"
+  direct_sources_fetched:
+    - "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results (direct fetch, succeeded, high)"
+    - "https://www.globenewswire.com/news-release/2026/07/15/... (ASML Q2 2026 release via GlobeNewswire, succeeded, high)"
+    - "https://www.sec.gov/Archives/edgar/data/0000937966/... (ASML Q1 2026 6-K, succeeded, high)"
+    - "https://www.fool.com/earnings/call-transcripts/2026/07/15/asml-asml-q2-2026-earnings-call-transcript/ (succeeded, high)"
+    - "https://www.investing.com/news/transcripts/... (Q2 2026 call, succeeded, medium)"
+    - "https://www.federalregister.gov/api/v1/articles.json?conditions[term]=ASML+lithography (API query, succeeded — no 2026 EUV/DUV rule found)"
+    - "https://warontherocks.com/... (ASML EUV reverse-engineering piece, full text, succeeded, high)"
+    - "Tom's Hardware / TechTimes / SiliconANGLE / TrendForce direct article fetches — mostly succeeded; three late-window items (2026-07-30, 2026-08-02, 2026-08-04) blocked to nav/header only, headline-level via WebSearch snippet instead"
+items:
+  # --- Q2 2026 FINANCIALS ---
+  - {id: q1-2026-guidance-original, figure: "FY2026 guidance set at €36-40B net sales, 51-53% gross margin; CEO Fouquet: guidance bandwidth 'accommodates potential outcomes of ongoing discussions around export controls'", url: "https://www.sec.gov/Archives/edgar/data/0000937966/000162828026025147/pressreleasefinancialresul.htm", label: "ASML Q1 2026 SEC 6-K — direct fetch, primary", as_of: "2026-04-15", confidence: high}
+  - {id: q2-2026-results, figure: "Q2 2026: €9.3B net sales, €2.9B net income (31.3% margin), 54.0% gross margin, €7.59 EPS, 86 new + 5 used systems sold, logic 51%/memory 49%, FCF €1.3B", url: "https://www.asml.com/en/news/press-releases/2026/q2-2026-financial-results", label: "ASML press release — direct fetch, primary", as_of: "2026-07-15", confidence: high}
+  - {id: q2-2026-guidance-raise, figure: "FY2026 guidance raised to €43-45B net sales, 54-56% gross margin; Q3 2026 guided €11.0-12.0B revenue, 55-57% gross margin", url: "https://www.globenewswire.com/news-release/2026/07/15/3327450/0/en/asml-reports-9-3-billion-total-net-sales-and-2-9-billion-net-income-in-q2-2026.html", label: "ASML press release via GlobeNewswire", as_of: "2026-07-15", confidence: high}
+  - {id: bookings-q4-2025-last-hard-figure, figure: "Last disclosed quarterly net bookings: Q4 2025 €13.2B (€7.4B EUV); YE2025 backlog €38.8B; quarterly bookings disclosure appears to have stopped in 2026, H1 characterized only as 'very strong'", url: "https://futurumgroup.com/insights/asml-q4-fy-2025-earnings-record-orders-capacity-execution-in-focus/", label: "Futurum Q4 2025 recap + WebSearch aggregation", as_of: "2026-01", confidence: medium}
+  - {id: q1-2026-backlog-45-units, figure: "Q1 2026: reported record EUV backlog of 45 units, driven by simultaneous 2nm-and-below orders from TSMC, Samsung Foundry, Intel Foundry (single aggregator, not a primary ASML figure)", url: "n/a", label: "Aggregator roundup (unnamed primary), via WebSearch", as_of: "2026-04", confidence: thin}
+  - {id: 2027-capacity-plan, figure: "2027 EUV order coverage 'close to fully covered'; 30% capacity increase planned for low-NA EUV and DUV immersion systems in 2027, investigating further 30% for 2028; secondary count: 56 low-NA + 10 High-NA EUV tools scheduled for 2027 delivery", url: "https://www.fool.com/earnings/call-transcripts/2026/07/15/asml-asml-q2-2026-earnings-call-transcript/", label: "ASML Q2 2026 earnings call transcript (Motley Fool) + TechPowerUp aggregation", as_of: "2026-07-15", confidence: medium}
+  - {id: capex-not-found, figure: "ASML's own 2026 capex figure/guidance — not found; every search surfaced customer-side (TSMC, hyperscaler) capex instead", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-08-04", confidence: thin}
+  # --- HIGH-NA EUV ---
+  - {id: highna-intel-first-shipment, figure: "Intel Foundry first to ship high-volume commercial logic made with High-NA EUV — select 18A layers of Panther Lake (Core Ultra Series 3); dual-qualified layers, yields matching established NXE platform", url: "https://www.tomshardware.com/tech-industry/semiconductors/intel-becomes-the-first-company-to-ship-high-volume-logic-chips-made-with-asmls-high-na-euv-select-panther-lake-layers-on-18a-are-now-dual-qualified-for-0-55-na-scanners", label: "ASML press release, corroborated by SiliconANGLE/Tom's Hardware/TechTimes", as_of: "2026-07-15", confidence: high}
+  - {id: highna-tsmc-skips-a14, figure: "TSMC explicitly skipping High-NA EUV for A14 (1.4nm, 2028 production) — SVP Kevin Zhang cites up to 2.5x cost increase vs standard EUV multi-patterning", url: "https://www.tomshardware.com/tech-industry/semiconductors/tsmc-reiterates-it-doesnt-need-high-na-euv-for-1-4nm-class-process-technology", label: "Tom's Hardware, corroborated by wccftech/SemiWiki/eeNews Europe", as_of: "2026-06", confidence: high}
+  - {id: highna-samsung-order, figure: "Samsung purchased 2 EXE:5200B High-NA systems for 2nm SF2 (Exynos 2600, possibly Tesla AI chips) and HBM4, targeted 1H-2026 mass production — not confirmed installed/operational", url: "n/a", label: "TrendForce/guru3d/tweaktown (via WebSearch aggregation)", as_of: "2025-10", confidence: medium}
+  - {id: highna-skhynix-order, figure: "SK Hynix record ~$7.9-8B EUV order (~30 machines) through Dec 2027 for M15X HBM plant + Yongin cluster; ~2 units estimated High-NA", url: "https://www.tomshardware.com/tech-industry/semiconductors/sk-hynix-places-record-8-billion-order-for-asml-euv-lithography-machines", label: "SK Hynix regulatory filing via Tom's Hardware/MobileWorldLive", as_of: "2026-06", confidence: high}
+  - {id: highna-rd-install-base, figure: "5 EXE:5000 R&D scanners installed: Intel (2), TSMC, Samsung, ASML-imec High-NA Lab Veldhoven; ASML 2026 revenue-recognition guidance 4-5 High-NA systems", url: "n/a", label: "TrendForce/Flytronics aggregation + Motley Fool transcript", as_of: "2026-07", confidence: medium}
+  - {id: highna-micron-notfound, figure: "No Micron High-NA order or shipment news found", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-08-04", confidence: thin}
+  # --- MISTRAL AI STAKE ---
+  - {id: mistral-stake-original, figure: "ASML led Mistral AI Series C with €1.3B (~$1.5B), ~11% fully-diluted stake, Mistral valued ~$13.8-14B — ASML's largest shareholder", url: "https://www.cnbc.com/2025/09/09/ai-firm-mistral-valued-at-14-billion-as-asml-takes-major-stake.html", label: "CNBC + ASML press release (predates crawl window, baseline)", as_of: "2025-09-09", confidence: high}
+  - {id: mistral-governance-seat, figure: "ASML CFO Roger Dassen holds ASML's seat on Mistral's Strategic Committee — confirmed active into 2026", url: "n/a", label: "ASML governance page", as_of: "2026-07", confidence: high}
+  - {id: mistral-new-round-talks, figure: "Mistral reportedly in talks for new round at ~$23B valuation (~$3.5B raise) — ASML participation not confirmed either way", url: "https://finance.yahoo.com/sectors/technology/articles/mistral-ai-weighs-funding-23bn-091700112.html", label: "Yahoo Finance/Reuters-sourced coverage", as_of: "2026-07", confidence: medium}
+  - {id: mistral-debt-raise, figure: "Mistral raised $830M in debt financing (unrelated to ASML) for ~13,800 Nvidia chips, new Paris-area data center", url: "n/a", label: "WebSearch aggregation, single source", as_of: "2026-03", confidence: thin}
+  # --- CHINA REVENUE EXPOSURE ---
+  - {id: china-share-fy2025, figure: "China 33% of FY2025 revenue (36% of system sales in Q4 2025 specifically)", url: "n/a", label: "Asia Times / Yahoo Finance", as_of: "2026-01", confidence: medium}
+  - {id: china-share-q1-2026, figure: "China 19% of system sales in Q1 2026, down from 36% in Q4 2025", url: "n/a", label: "Yahoo Finance aggregation", as_of: "2026-04", confidence: medium}
+  - {id: china-share-h1-2026-actual, figure: "China share fell to 16% (~€2.6B) in H1 2026 actual, dropping to third-largest market behind Taiwan and South Korea", url: "n/a", label: "XenoSpectrum (citing The Information/Reuters)", as_of: "2026-07", confidence: medium}
+  - {id: china-share-cfo-quote, figure: "CFO Roger Dassen, Q2 2026 call: 'We still look at China as approximately 20% of our total net sales, so that percentage hasn't changed' — attributed to domestic-led logic demand moving in sync with global demand", url: "https://www.fool.com/earnings/call-transcripts/2026/07/15/asml-asml-q2-2026-earnings-call-transcript/", label: "ASML Q2 2026 earnings call transcript — direct quote, primary", as_of: "2026-07-15", confidence: high}
+  - {id: china-share-conflict-flag, figure: "16% (H1 actual) vs ~20% (CFO full-year stated) not reconciled by any source found — carried as an open conflict, not resolved", url: "n/a", label: "Crawl flag — explicit unresolved conflict", as_of: "2026-08-04", confidence: thin}
+  # --- EXPORT CONTROLS / MATCH ACT / DUTCH-US ---
+  - {id: match-act-introduced, figure: "MATCH Act introduced 2026-04-02/08 in House and Senate (S. 4281); would classify all DUV immersion lithography as 'covered semiconductor manufacturing equipment', 150-day Commerce certification window on allied-country controls or unilateral FDP Rule extension", url: "n/a", label: "Yahoo Finance, TechWireAsia, NBC News, ChinaTalk (convergent)", as_of: "2026-04-08", confidence: medium}
+  - {id: match-act-committee-passage, figure: "MATCH Act passed House Foreign Affairs Committee (cryogenic-etch countrywide ban stripped, DUV restrictions retained); one analysis predicts House passage this year but no enactment in the 119th Congress, Senate side possibly folded into NDAA", url: "https://www.manufacturingdive.com/news/lawmakers-push-restrictions-chipmaking-equipment-exports-china-match-act/816945/", label: "Manufacturing Dive + single analytical source for the 'won't become law' read", as_of: "2026-07", confidence: medium}
+  - {id: dutch-royal-visit, figure: "Dutch PM Rob Jetten: ASML export controls a primary reason for King Willem-Alexander/Queen Máxima's April 2026 Washington state visit, White House dinner with Trump; talks 'constructive but without consensus'", url: "n/a", label: "NL Times, MarketScreener, MLQ News (convergent)", as_of: "2026-04", confidence: medium}
+  - {id: dutch-irritation-june, figure: "Dutch government reported 'irritated' by new US ASML restriction plans", url: "n/a", label: "NL Times", as_of: "2026-06-24", confidence: medium}
+  - {id: lutnick-inquiry, figure: "Commerce Secretary Lutnick began privately questioning ASML execs (from April 2026) over concern an EUV system reached China in violation of export controls — would breach the Wassenaar Arrangement if confirmed", url: "n/a", label: "Implicator.ai, TechTimes, Techzine, Foreign Policy Journal (convergent)", as_of: "2026-04", confidence: medium}
+  - {id: asml-denial-euv-china, figure: "ASML publicly denies: none of its 314 operational EUV machines (26 decommissioned) are located in China; calls allegations 'false and reputation-damaging'; matter appears unresolved as of 2026-08-04", url: "https://www.techtimes.com/articles/318813/", label: "TechTimes + Asia Times", as_of: "2026-06-21", confidence: medium}
+  - {id: fdp-rule-baseline, figure: "Standing legal mechanism: BIS 2024-12-05 Federal Register rule, 0% de-minimis for certain lithography equipment, leverages Cymer (ASML's San Diego excimer-laser subsidiary)", url: "https://www.federalregister.gov/", label: "Federal Register (doc 2024-28270) — direct primary, predates crawl window", as_of: "2024-12-05", confidence: high}
+  - {id: dutch-duv-licensing-baseline, figure: "Dutch DUV export licensing to China (in force since 2024-09 via Dutch Customs/CDIU) unchanged this window; 41 Chinese companies hold valid licenses; no new 2026 Dutch rule found", url: "n/a", label: "SDxCentral, SemiWiki — baseline, predates crawl window", as_of: "2024-09", confidence: medium}
+  - {id: japan-nikon-canon-baseline, figure: "Japan/Nikon/Canon after-sales-service tightening for Chinese customers (Nov 2025) unchanged this window; no fresh 2026 Japan action found", url: "n/a", label: "Vision Times, TrendForce, Asia Times — baseline, predates crawl window", as_of: "2025-11", confidence: medium}
+  - {id: no-new-entity-list-flag, figure: "No new 2026 Entity List addition specifically tied to ASML customers found — most recent confirmed addition is December 2024", url: "n/a", label: "Crawl gap — explicit not-found", as_of: "2026-08-04", confidence: thin}
+  - {id: no-lawsuit-no-fedreg-flag, figure: "No lawsuit found tied to any 2026 export-control action; direct Federal Register API query (conditions[term]=ASML+lithography) returned no new 2026 rule naming ASML/EUV/DUV directly", url: "https://www.federalregister.gov/api/v1/articles.json?conditions[term]=ASML+lithography&order=newest", label: "Federal Register API — direct query, primary", as_of: "2026-08-04", confidence: high}
+  # --- CHINA DOMESTIC DUV (Shanghai Aishengna) ---
+  - {id: aishengna-identity, figure: "Shanghai Aishengna Electronic Technology Group — state-owned, founded 2023, ~7B yuan (~$1B) registered capital, two state-owned shareholders; absorbed engineering teams from Huawei-affiliated startup Yuliangsheng and state scanner maker SMEE", url: "n/a", label: "Seoul Economic Daily, TheNextWeb, IC&PCB Union (convergent trade press)", as_of: "2026-07-29", confidence: medium}
+  - {id: aishengna-production-plan, figure: "5 immersion DUV units targeted 2026, 20 in 2027; first deliveries to SMIC, Hua Hong, CXMT this year for production-line validation; SMIC testing a unit since 2025-09; local-supplier delays and partial Japan-sourced components constraining 2026 output", url: "https://www.trendforce.com/news/2026/07/28/news-china-reportedly-starts-mass-producing-immersion-duv-tools-smic-hua-hong-cxmt-deliveries-expected-this-year/", label: "TrendForce, corroborated by Tom's Hardware/TechPowerUp/TechTimes", as_of: "2026-07-28", confidence: medium}
+  - {id: aishengna-technical-assessment, figure: "Tool prints 28nm-class features single-exposure (7nm-class via multi-patterning); 'a generation behind' ASML; ASML holds ~98.7% of global immersion-lithography market", url: "n/a", label: "Convergent trade press", as_of: "2026-07-29", confidence: medium}
+  - {id: aishengna-2035-forecast, figure: "AI Futures Project (June 2026) forecasts a commercially viable domestic 7nm immersion scanner between 2032-2038, median 2035 — far longer horizon than initial 'delivered this year' framing", url: "n/a", label: "Tom's Hardware — headline/snippet confirmed, full body not retrievable", as_of: "2026-07-30", confidence: medium}
+  - {id: aishengna-roadmap-review, figure: "Roadmap review confirms ~5 DUV units/year pace; separate China EUV prototype effort (Shenzhen, Huawei-coordinated) has produced no usable chips yet", url: "n/a", label: "Tom's Hardware — headline-level via GDELT/WebSearch, full body not retrievable", as_of: "2026-08-04", confidence: thin}
+  - {id: cxmt-lpddr6-duv-ceiling, figure: "CXMT nearing LPDDR6 production; DUV-only manufacturing ceiling shows up as a 12.8 Gbps vs 14.4 Gbps performance gap (unverified — body blocked)", url: "n/a", label: "TechTimes — headline only, WebFetch blocked (403)", as_of: "2026-08-02", confidence: thin}
+  - {id: euv-china-explainer, figure: "ASML EUV machines: 100,000+ components (700,000 subsystem-level) from ~5,000 suppliers; ~$180M standard / ~$380M High-NA units; China's reverse-engineering effort (former ASML engineers, Dec-2025 report) captures component knowledge but not tacit systems-integration/yield knowledge; chokepoints outside China's reach: JSR/TOK/Shin-Etsu (photoresist), Tokyo Electron (EUV photoresist coaters/developers), Hoya/AGC (mask blanks), KLA (metrology), Lasertec (actinic mask inspection, near-monopoly); ~10,000 ASML field engineers, ~1yr training each", url: "https://warontherocks.com/", label: "War on the Rocks — direct fetch, full text, primary analysis", as_of: "2026-07-29", confidence: high}
+  - {id: shenzhen-euv-prototype, figure: "Separate Shenzhen EUV (not DUV) prototype effort, early-2025 origin, Huawei-coordinated, targeting first exposed wafer by 2028 (Reuters sources reportedly consider 2030 more realistic); no usable chips produced yet", url: "n/a", label: "Reuters (Dec-2025 sourcing, reiterated July 2026)", as_of: "2026-07", confidence: medium}
+  # --- BACKLOG / CUSTOMER CONCENTRATION ---
+  - {id: backlog-ye2025, figure: "YE2025 backlog €38.8B", url: "n/a", label: "WebSearch aggregation", as_of: "2026-01", confidence: medium}
+  - {id: top2-customers-38pct, figure: "Top 2 customers ~38% of revenue (customers not named, no primary filing cited)", url: "n/a", label: "Single aggregation source", as_of: "2026-08-04", confidence: thin}
+  - {id: intel-apple-foundry-talks, figure: "Intel and Apple reportedly in talks toward a multi-billion-euro Intel Foundry agreement — speculative, could drive further ASML orders if it materializes", url: "n/a", label: "ad-hoc-news.de, Simply Wall St, Yahoo Finance", as_of: "2026-07", confidence: thin}

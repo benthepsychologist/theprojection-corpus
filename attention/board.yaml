@@ -370,7 +370,7 @@ orgs:
     thrust: "~$46B/yr — capex $56B−D&A $9B; RPO $638B"  # agent-derive 2026-07-27
     axes_num: { weight: 262, thrust: 48, gravity: 90 }  # dep-only audit 2026-07-28 — Cerner amortization stripped (dep $7.6B of the $9.3B blend)
     optionality: "constrained/locked — negative FCF, high leverage, cash pre-committed to the buildout; Ellison ~40%+ founder control"
-    gravity: "~$67.4B/yr GROSS FY26 revenue (Cloud $34B) + reported ~$450B+ RPO backlog post-Stargate (conf LOW, unverified); GROSS per board policy"
+    gravity: "~$67.4B/yr GROSS FY26 revenue (Cloud $34B) + $638B RPO backlog (CONFIRMED — Oracle's own SEC 8-K, 2026-06-10, +363% YoY; crawl 2026-08-04 supersedes the prior '~$450B+, conf LOW, unverified' note, which the thrust field above had already moved past); GROSS per board policy"
     gloss: "Kingdom by capital + Stargate position; also the clinical-records substrate (Cerner) — surfaces in the MH lens."
   - slug: mistral-ai
     rank: kingdom
@@ -611,8 +611,9 @@ orgs:
     sphere: none
     axes_asof: 2026-07-25
     commanded_capital: "directs ~$150-160B (Vision Fund 1 ~$100B LP-heavy + VF2 + $40B OpenAI bridge) + owns 87.1% of Arm inside ~$200B market cap (commands÷owns ~1x — INVERSE)"
-    optionality: "free but LEVERAGED — Son ~71% voting, deploys at will"
+    optionality: "free but LEVERAGED — Son ~71% voting, deploys at will; crawl 2026-08-04: partly SELF-FUNDED by selling down other holdings (all of its $5.83B Nvidia stake, $9.17B of T-Mobile), with a CreditSights-sized $32B two-year funding gap — expansion under real financial strain, not comfortable expansion"
     gravity: "REAL not thin GROSS — Arm underpins world mobile silicon + 60 portfolio companies + Stargate/OpenAI anchoring"
+    posture: expanding   # classify 2026-08-04 (ben-steer, crawl) — actively adding commitments (continued OpenAI tranches, the new $5.375B ABB Robotics buy feeding a planned ~$100B "Roze" IPO), not consolidating; see optionality for the funding-strain caveat
     gloss: "Carries the $40B OpenAI bridge loan; the largest single lever into the stack. House Son the obvious next dynast."
     axes_num: { weight: 155, thrust: 42, gravity: 30 }  # agent-derive 2026-07-28 rollout — free-but-LEVERED; gravity est-rough; NB $30B = SoftBank's own money (the $40B was the round total it led)
     thrust: "~$42B/yr — OpenAI equity $30B + Stargate funded tranche $10B (Mizuho-financed, counts) + Intel $2B"   # agent-derive 2026-07-28

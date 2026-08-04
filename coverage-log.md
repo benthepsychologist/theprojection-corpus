@@ -1650,3 +1650,79 @@ the fuller entry's better fields folded into it so nothing was lost —
 only the redundant id went away, not the evidence. `xai-mn-preliminary-
 injunction` (due 08-19) still carries a lineage comment naming the old id;
 left as-is, a historical note, not a broken pointer.
+
+## 2026-08-04 (later still) — four /crawl backfills: AMD, ASML, Oracle, SoftBank
+
+Ben, on the board pass's zero-coverage findings: "do web crawls for AMD,
+ASML, Oracle and Softbank... pick up threads if only 'what are they
+doing' plus the world is gated on ASML lithography machines." Four
+parallel crawls (ben-steer, sonnet-class dispatch), each producing a
+finding + provenance bundle + timeline. Threads 72→75.
+
+**AMD (new thread `amd`, weight 2, lens ai, genre border-war):** the
+credible #2 AI-GPU challenger converted its position into a real
+compute-deal backlog — three back-to-back mega-deals (OpenAI 6GW
+Oct-2025, Meta 6GW Feb-2026, Anthropic 2GW Jul-2026), ~14GW total, each
+carrying a stock-linked equity kicker. MI400/Helios reached volume
+production 07-22/23; Microsoft Azure and Oracle Cloud added as
+customers. None of the OpenAI/Meta warrants have vested (shipment
+milestones + a $600 AMD share-price bar); the Anthropic $5B stake is
+real and already counted in AMD's board thrust. Reported Q2 2026
+earnings the same day this crawl ran (08-04) — the first real test of
+conversion to revenue. 4 new ledger entries (earnings + three shipment
+milestones through mid-2027).
+
+**ASML (new thread `asml`, weight 3, lens ai, genre buildout-race):**
+opened on Ben's own structural-chokepoint reasoning — sole global EUV
+supplier, no leading-edge chip made anywhere without its tools — not on
+news volume, though the crawl found real volume anyway: FY2026 revenue
+guidance raised twice (€36-40B → €43-45B) on a strong Q2 (€9.3B net
+sales); Intel became the first company shipping high-volume commercial
+chips on ASML's next-gen High-NA tool while TSMC opted out for its next
+node on cost and Samsung/SK Hynix queue up instead; a live three-front
+China fight (the MATCH Act, which would extend export controls to DUV
+tools generally; an open, unresolved Commerce inquiry into whether an
+EUV tool illegally reached China, which ASML denies; China's own
+Shanghai Aishengna shipping first domestic DUV units to SMIC/Hua
+Hong/CXMT, though independent forecasts put a competitive domestic 7nm
+scanner a decade out). The €1.5B, 11% Mistral AI stake is still active,
+no confirmed follow-on. 2 new ledger entries — one (`asml-samsung-
+highna-1h2026`) logged with its due date already elapsed and no
+confirmation found either way, flagged as a live passed-silent candidate
+for the next `/daily` to evaluate, not hand-decided here.
+
+**Oracle (new thread `oracle-stargate-bet`, weight 2, lens
+global-capital, genre financing):** Oracle had appeared on 6 other
+threads as supporting cast (ai-circular-financing-risk,
+stargate-buildout, ai-power-buildout, ai-datacenter-sites, nuclear-for-
+ai, datacenters-as-targets) with no thread of its own. Its own arc:
+$638B RPO backlog (CONFIRMED via Oracle's own SEC 8-K, 2026-06-10, +363%
+YoY) against FCF of **-$23.7B** and $156B of debt (D/E ~3.6x), funded by
+$43B in new debt; FY27 capex stepping up toward $70-95B (sources
+diverge); S&P downgraded Oracle one notch to BBB- (2026-07-09, one step
+above junk) citing the widening FCF deficit and that OpenAI accounts for
+roughly half of Oracle's RPO. **A real board.yaml staleness fix
+applied**: the `gravity` field still carried "~$450B+ RPO backlog...
+conf LOW, unverified" — already superseded by the `thrust` field's own
+$638B figure (agent-derive 2026-07-27) and now corrected with the
+confirmed source. 1 new ledger entry (Q1 FY27 earnings, 09-14).
+
+**SoftBank (backfilled existing thread `softbank-all-in`, `last_seen`
+bumped to 08-04):** genuinely new versus what the thread already
+carried: SoftBank is **self-funding** the AI concentration bet by
+selling down other holdings (its entire $5.83B Nvidia stake, $9.17B of
+T-Mobile), while Vision Fund's ~$46B FY2025 gain is confirmed to trace
+almost entirely to the OpenAI markup against losses on Coupang/DiDi/
+Klarna/ByteDance — a concentrated bet wearing a diversified-fund
+wrapper, not a real hedge. A genuinely new fourth lever: a $5.375B ABB
+Robotics acquisition feeding a planned ~$100B "Roze" physical-AI IPO
+targeted H2 2026. CreditSights sizes a $32B two-year funding gap; rating
+agencies diverge (Moody's stable Sep-25, S&P negative Mar-26 over
+buybacks-while-borrowing); stock down ~50% since June on a beat-and-drop
+earnings pattern across three quarters. **Posture classified `expanding`**
+(board.yaml had none) — actively adding commitments, not consolidating,
+but the funding-strain caveat is recorded in the `optionality` field
+rather than softened out of the posture word. 2 new ledger entries (the
+Roze IPO target, the ABB close).
+
+Re-rendered and republished after all four applied.
