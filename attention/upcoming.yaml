@@ -289,40 +289,6 @@ expectations:
     logged_by: crawl
     status: pending
 
-  - id: mn-nudify-ban-effective
-    claim: "Minnesota's HF1606 'nudify' ban takes effect — xAI's challenge is filed, not adjudicated"
-    due: 2026-08-01
-    due_precision: day
-    thread: grok-companion-harm
-    entities: [xai]
-    source: https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html
-    confidence: confirmed
-    what_confirms: "the statute in force on 08-01, OR xAI securing injunctive relief before it — a suit FILED is not a stay"
-    logged: 2026-07-29
-    logged_by: curate-add
-    status: hit
-    resolved: 2026-08-01
-    evidence: >
-      The statute took effect 2026-08-01 as scheduled, and xAI did NOT
-      secure relief — the exact filed-is-not-a-stay case this entry was
-      written to catch. PRIMARY (house.mn.gov/NewLaws/story/2026/5741, the
-      legislature's own New Laws page): HF1606*/SF1119/CH72 effective
-      2026-08-01, prohibiting "nudifying" images or video of real people,
-      civil penalties up to $500,000 per violation, private right of action.
-      xAI (X.AI LLC) sued MN AG Keith Ellison 2026-07-27 (No. 0:26-cv-03425,
-      D. Minn.; complaint confirmed via the RECAP mirror) on First and
-      Fourteenth Amendment grounds, and moved for a TRO 07-29. US District
-      Judge Donovan W. Frank DENIED the TRO on 2026-07-31, reasoning that
-      xAI's nearly three-month delay after the law was signed "suggests that
-      harm is not immediate." The law took effect the next morning. Not
-      adjudicated on the merits: Frank is treating the TRO motion as a
-      preliminary-injunction request, hearing set 2026-08-19 in St. Paul
-      (see xai-mn-preliminary-injunction). ⚠ The CourtListener docket page
-      itself returned HTTP 403; the docket sequence is reconstructed from
-      the RECAP complaint PDF plus five-plus independent outlets (Fox9, NBC
-      News, CBS Minnesota, Minnesota Reformer, CNBC) agreeing on judge,
-      dates, and posture — not read off the docket sheet directly.
-
   - id: ca-sb903-assembly
     claim: "California SB 903 clears Assembly Appropriations (fiscal-committee deadline)"
     # CORRECTED 2026-07-28 ⟨daily⟩: the tracked "July Assembly hearing" had
@@ -836,34 +802,44 @@ expectations:
     status: pending
 
   - id: minnesota-nudify-effective
-    claim: "Minnesota's 'nudify' ban takes effect — now under federal challenge by xAI"
+    claim: "Minnesota's HF1606 'nudify' ban takes effect — xAI's challenge is filed, not adjudicated"
     due: 2026-08-01
-    due_precision: month
+    due_precision: day
     thread: grok-companion-harm
     entities: [xai]
     source: https://www.cnbc.com/2026/07/28/spacexs-xai-sues-minnesota-over-law-to-ban-nudify-apps-.html
-    confidence: reported
-    what_confirms: "the law in force, OR an injunction blocking it — the injunction is the louder outcome"
+    confidence: confirmed
+    what_confirms: "the statute in force on 08-01, OR xAI securing injunctive relief before it — a suit FILED is not a stay"
     logged: 2026-07-29
     logged_by: curate-add
-    # ⚠ DUPLICATE of mn-nudify-ban-effective — flagged 2026-07-31, confirmed
-    # 2026-08-01 ⟨daily⟩ by a dedicated check: both cite the same CNBC
-    # article, both ask about the SAME effective date AND the same injunction
-    # status in one sentence, and both were resolved by the one 07-31 court
-    # order. Neither tracks a separate axis (statute-only vs litigation-only)
-    # — the only differences are cosmetic wording and due_precision.
-    # Resolved identically here so the record is complete; MERGE IS BEN'S
-    # CALL, not taken unilaterally. Full evidence on mn-nudify-ban-effective.
-    # ⟨ben-steer 2026-08-01⟩ ANSWERED: "skip dupes" — do NOT merge. Both
-    # entries stay as they are, resolved. Closed; do not re-raise this.
+    # de-duplicated 2026-08-04 (ben-steer): this entry and mn-nudify-ban-
+    # effective were the same event logged twice (flagged 07-31; Ben ruled
+    # 08-01 "skip dupes, do not merge" — reversed today on a direct ask to
+    # drop the duplicate and keep the newer id). This id survives;
+    # mn-nudify-ban-effective's fuller fields (confirmed confidence, day
+    # precision, full evidence) were folded in here rather than lost.
     status: hit
     resolved: 2026-08-01
     evidence: >
-      Same event, same outcome as mn-nudify-ban-effective: HF1606 took effect
-      2026-08-01 as scheduled (house.mn.gov/NewLaws/story/2026/5741), and the
-      louder outcome this entry watched for — an injunction blocking it — did
-      NOT occur: Judge Donovan W. Frank denied xAI's TRO 2026-07-31 (No.
-      0:26-cv-03425, D. Minn.). Preliminary-injunction hearing 2026-08-19.
+      The statute took effect 2026-08-01 as scheduled, and xAI did NOT
+      secure relief — the exact filed-is-not-a-stay case this entry was
+      written to catch. PRIMARY (house.mn.gov/NewLaws/story/2026/5741, the
+      legislature's own New Laws page): HF1606*/SF1119/CH72 effective
+      2026-08-01, prohibiting "nudifying" images or video of real people,
+      civil penalties up to $500,000 per violation, private right of action.
+      xAI (X.AI LLC) sued MN AG Keith Ellison 2026-07-27 (No. 0:26-cv-03425,
+      D. Minn.; complaint confirmed via the RECAP mirror) on First and
+      Fourteenth Amendment grounds, and moved for a TRO 07-29. US District
+      Judge Donovan W. Frank DENIED the TRO on 2026-07-31, reasoning that
+      xAI's nearly three-month delay after the law was signed "suggests that
+      harm is not immediate." The law took effect the next morning. Not
+      adjudicated on the merits: Frank is treating the TRO motion as a
+      preliminary-injunction request, hearing set 2026-08-19 in St. Paul
+      (see xai-mn-preliminary-injunction). ⚠ The CourtListener docket page
+      itself returned HTTP 403; the docket sequence is reconstructed from
+      the RECAP complaint PDF plus five-plus independent outlets (Fox9, NBC
+      News, CBS Minnesota, Minnesota Reformer, CNBC) agreeing on judge,
+      dates, and posture — not read off the docket sheet directly.
 
   - id: eu-ai-act-code-of-practice
     # CLAIM CORRECTED 2026-08-02 ⟨daily⟩. Original wording: "EU AI Act Code

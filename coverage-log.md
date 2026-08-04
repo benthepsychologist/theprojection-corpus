@@ -1633,3 +1633,20 @@ invitee list as Anthropic/OpenAI/Google **and** Meta; the exclusion
 premise traced to a stale 07-21 source and was wrong the whole time).
 `attention/board.yaml` edited directly; no thread action needed, this is
 a posture/condition correction, not a new development.
+
+## 2026-08-04 (later still) — steer: the Minnesota duplicate ledger entry, de-duplicated
+
+Ben, on the duplicate flagged in the /week read: "drop the Minnesota
+duplicate ledger entry, keep the newer id." This **reverses** the standing
+2026-08-01 ruling on the same duplicate ("skip dupes... do NOT merge...
+Closed; do not re-raise this") — noted here so the record isn't
+self-contradictory to a future reader; Ben is the authority to reverse his
+own prior call, and did so directly on being asked. `mn-nudify-ban-
+effective` (the fuller entry — confirmed confidence, day precision, full
+primary-sourced evidence) was removed; `minnesota-nudify-effective` (the
+entry the in-file comment itself described as the later-created
+"DUPLICATE of mn-nudify-ban-effective") survives under its own id, with
+the fuller entry's better fields folded into it so nothing was lost —
+only the redundant id went away, not the evidence. `xai-mn-preliminary-
+injunction` (due 08-19) still carries a lineage comment naming the old id;
+left as-is, a historical note, not a broken pointer.
