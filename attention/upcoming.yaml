@@ -422,10 +422,22 @@ expectations:
     # WICKS chairing, and the agenda entry reads verbatim "S.B.No. 903
     # Padilla. Mental health professionals: artificial intelligence."
     # Listed under "BILLS HEARD IN SIGN-IN ORDER" and NOT labelled a
-    # suspense-file hearing — which sharpens what_confirms: a bill heard in
-    # sign-in order at a regular hearing is one that gets an up-or-down
-    # committee action, so "held on suspense" is the LESS likely of the
-    # three paths, not the default. Score the outcome 08-05 after 9 a.m. PT.
+    # suspense-file hearing.
+    # ✏️ 2026-08-04 (later) — WALKING BACK the inference, not the fact. The
+    # earlier note here concluded that "held on suspense" was therefore the
+    # LEAST likely of the three paths. That was over-read. Re-checked on the
+    # committee's own page: the 08-05 calendar carries **360+ measures**, and
+    # a 360-bill August Appropriations hearing is exactly the shape of a
+    # suspense calendar in California practice, whatever the page calls it.
+    # A late-returning sweep also surfaced a secondary claim (a state
+    # psychology-board meeting document) that SB 903 was placed on the
+    # suspense file around 07-01 — NOT corroborated: leginfo's full history
+    # shows no suspense action, the latest being 07/02/26 "Read second time
+    # and amended. Re-referred to Com. on APPR."
+    # WHAT IS ESTABLISHED: neither primary source uses the word "suspense",
+    # and the bill's own history records no suspense placement.
+    # WHAT IS NOT: which of the three paths is likelier. All three stay open.
+    # Score the outcome 08-05 after 9 a.m. PT and do not pre-weight it.
     status: pending
 
   - id: meta-q2-earnings

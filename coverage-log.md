@@ -1560,3 +1560,58 @@ lost, but it cost roughly two hours and a second dispatch.
    accelerant that is abandoned — never retried — if it does not return
    promptly. A brief proposing exactly this is queued for Ben rather than
    applied, since the sweep prompts live in kestrel's shared skill library.
+
+### ✏️ Correction to the entry above — it was NOT WebSearch, it was a blocked WebFetch
+
+The stalled sweep finally returned on its own after **2 hours 2 minutes**,
+and its own account contradicts the diagnosis written above:
+
+> "a WebFetch call to `cohousedems.com` was declined mid-session (flagged by
+> you as possibly 'web search being out' — it was actually just that one
+> WebFetch, WebSearch ran clean throughout)."
+
+So the blocking call was a **single WebFetch that was declined**, i.e. it sat
+against a permission gate rather than a rate limit, and WebSearch was never
+the problem. Both the operator's initial read ("stalled on a web search")
+and this log's write-up of it were wrong about the mechanism.
+
+**What survives the correction, because it is what actually cost the run:**
+one un-answerable tool call can block a dispatched agent indefinitely,
+producing **zero output** and a transcript byte-size identical to a healthy
+agent's. The failure mode, its invisibility, and both standing lessons above
+(never block on a single agent; re-dispatch on wall-clock) are unchanged —
+only the named cause is corrected. The WebSearch-exhaustion history in the
+08-03 digests is real but was a red herring here.
+
+**One thing the correction changes materially:** the fix is not "stop
+depending on WebSearch." It is that a sweep agent must not be able to sit
+forever on any single call. That is a harness/permission-scope question, not
+a prompt-wording one, and it is Ben's to route.
+
+**Also recovered from the late return, and worth having:** the Stanford
+finding now has a primary URL and a fuller result — it appears in *Nature
+Human Behaviour*, and the striking detail is that **willingness to disclose
+sensitive information to an AI companion correlated with *lower* well-being,
+the opposite of the pattern in human relationships**. Still an 08-04 item by
+the digest-day boundary, so it stays held for tomorrow's record.
+
+### ✏️ And a second correction, this one to our own SB 903 call
+
+The same late sweep surfaced a claim that SB 903 was placed on the suspense
+file around 07-01. Checked against both primary sources: **not corroborated**
+— the committee page uses no suspense wording and leginfo's history records
+no suspense action (latest: 07/02/26 "Read second time and amended.
+Re-referred to Com. on APPR.").
+
+But re-checking prompted a harder look at our own inference, and it does not
+survive. This log and the 08-03 digest both concluded that because the
+hearing is not *labelled* a suspense hearing, "held on suspense" was the
+**least** likely of the three outcomes. The 08-05 calendar carries **360+
+measures** — an August Appropriations hearing of that size is exactly the
+shape of a suspense calendar in California practice, whatever the page calls
+it. The label was read as evidence about the *proceeding* when it is only
+evidence about the *page*.
+
+Corrected in `upcoming.yaml`, the mental-health digest and the
+`state-therapy-chatbot-bans` timeline: the sourced facts stand, the
+prediction is withdrawn, and all three outcomes are scored open tomorrow.

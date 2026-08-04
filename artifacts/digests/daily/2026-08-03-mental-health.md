@@ -136,12 +136,23 @@ lens.*
   1100, Assembly Appropriations, Wicks chairing**, agenda entry verbatim
   "**S.B.No. 903 Padilla. Mental health professionals: artificial
   intelligence.**" It sits under "**BILLS HEARD IN SIGN-IN ORDER**" and is
-  **not** labelled a suspense-file hearing. That matters for how to score
-  it: a bill heard in sign-in order at a regular hearing normally gets an
-  up-or-down committee action, so of the three paths this entry tracks —
-  held on suspense, passed as-is, amended — **"held on suspense" is now the
-  least likely rather than the default assumption.**
+  **not** labelled a suspense-file hearing; leginfo's full bill history
+  likewise records no suspense placement, its latest action being 07/02/26
+  "Read second time and amended. Re-referred to Com. on APPR."
   ([Assembly Appropriations](https://apro.assembly.ca.gov/hearings))
+  <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
+- **✏️ Correction to the line above — an inference walked back.** An earlier
+  version of this entry concluded that because the hearing is not labelled a
+  suspense hearing, "held on suspense" was therefore the **least** likely
+  outcome. That was over-read from the label. On re-check the 08-05 calendar
+  carries **360+ measures**, and an August Appropriations hearing of that
+  size is precisely the shape of a suspense calendar in California practice
+  regardless of what the page calls it. A late-returning sweep separately
+  surfaced a claim that SB 903 went onto the suspense file around 07-01 —
+  **not corroborated**, and contradicted by the bill's own history. So: the
+  *facts* stand (no suspense wording on either primary source), the
+  *prediction* does not. All three outcomes — held on suspense, passed as-is,
+  amended — stay open, and tomorrow gets scored without a thumb on the scale.
   <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
 - **⟨overnight⟩ 🆕 New to the ledger — a Senate markup tomorrow this lens
   did not know about.** The **Senate Commerce Committee marks up five kids'
