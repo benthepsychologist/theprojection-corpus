@@ -1724,3 +1724,73 @@ older library copy, which would have wiped the engine-split notes and the
 flash rules; `install --skip AGENTS.md` was used instead and the conflict
 left standing. The dirty-file guard works, but the two copies keep diverging.
 Ben's call whether to back-port.
+
+### Session close, 2026-08-04 — the second half
+
+Everything below happened after the `/daily` run and its addendum above.
+
+**Published, then corrected, then republished.** Ben gated the publish on the
+mental-health lens landing; it did, and the site shipped (Cloudflare
+`3eaa1ff8`). A later correction to SB 903 (below) meant the mental-health
+beat page carried a withdrawn inference, so it was fixed and republished
+(`afa9768a`). The second fix was a **targeted two-bullet `--apply`, not a
+regeneration** — both prior generations of that scope had produced a
+mismatched citation needing hand repair, so re-running an agent to fix
+wording would have risked a worse defect.
+
+**⏱ Flash 24h enforced in code** (Ben: "24h and gone"). Detail in the
+addendum above; engine commit `db22ff0`.
+
+**🧵 Two threads opened** (`horn-of-africa-war`, `europe-migration-schengen`)
+and **regulator terms added** to `ai-power-buildout` and
+`ai-datacenter-sites`. The terms were regression-tested against the 12 items
+curation walked past on 08-03: **0/12 under the old terms, 4/12 under the set
+first proposed to Ben, 10/12 as shipped.** The proposal was tested before
+shipping and found insufficient — the extra two terms are what made it a real
+fix rather than a gesture. The 2 still missed would need a bare "data
+centers" term that would flood the lens; recorded as a deliberate trade.
+
+**📄 AGENTS.md drift fixed at the source.** The file is rendered from
+kestrel's library and had diverged badly — the template contained none of the
+flash rules and none of the engine-split intro, and a kit dry-run wanted to
+overwrite the live file with that older copy. Adopted the live file into the
+template and re-tokenized; `kit.py render` now produces AGENTS.md
+byte-identical and `sync` reports this instance clean. Deliberately did NOT
+tokenize the two places naming the repo, because `{{instance_name}}` resolves
+to "theprojection", not "theprojection-data". The doc now carries a standing
+kit-managed warning and a third session-close step so the drift cannot recur
+silently.
+
+**✏️ Two corrections to things this session had already published.**
+① The stalled sweep's cause was **not** WebSearch exhaustion — the agent
+returned after 2h02m and reported a single **declined WebFetch**, a
+permission gate. Both Ben's first read and this log's write-up named the
+wrong mechanism. ② **SB 903: an inference withdrawn.** This session concluded
+that because the hearing is not *labelled* a suspense hearing, "held on
+suspense" was the least likely outcome. Over-read — the calendar carries
+**360+ measures**, which is the shape of a suspense calendar whatever the
+page calls it. The sourced facts stand; the prediction is gone; all three
+outcomes are scored open.
+
+**📮 Three briefs filed to kestrel and, on Ben's call, all 13 INBOX items
+committed and pushed** — a deliberate departure from drop-and-stop, because
+five briefs were sitting untracked on one machine with no backup. Committed
+explicitly as a backup, NOT as acknowledgement. The commit flags the
+underlying tension for whoever settles it: drop-and-stop needs a durability
+answer (push-on-drop, or briefs in the sender's repo with only a pointer
+dropped).
+
+**🧹 Operating lesson, my own bug.** Two background `until` loops ran for
+**3h12m and 2h45m** before Ben noticed them. Both waited on
+`until ! pgrep -f 'collect.py'` — which **matches the waiting shell's own
+command string**, since the literal text `collect.py` appears in the
+invocation. The condition could never go false; they were waiting on
+themselves. Killed. **Rule: never `pgrep` for a pattern that appears in the
+watcher's own command line** — match on a pidfile, a marker file, or
+`pgrep -f` a pattern the watcher does not itself contain.
+
+Pick up: finalize 08-03 with a real coverage-critic pass after ~10:00 ET;
+score the four 08-04 expectations (framework/EO after ~14:00, SpaceX after
+16:30); **08-05 is a double header** — SB 903 at Assembly Appropriations 9am
+PT and the CHATBOT Act markup in Senate Commerce 10am ET; the Stanford
+AI-companion study is held for the 08-04 record.
