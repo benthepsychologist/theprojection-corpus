@@ -1,0 +1,105 @@
+# Bundle — crawl finding globalfoundries-2026-08-04
+artifact: artifacts/findings/globalfoundries-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Free-topic backward crawl (no existing thread; board-pass audit flagged
+  zero thread coverage despite a kingdom-rank board entry). WebSearch used
+  first and was not exhausted this session (each call returned cleanly) —
+  used for earnings coverage, CHIPS award reporting, Mubadala stake-sale
+  coverage, customer-deal reporting, stock-move tracking, and AGM coverage.
+  Two direct WebFetches went straight to GlobalFoundries' own SEC EDGAR
+  filings (CIK 1709048) for primary-source Q1 2026 financials and AGM
+  results — both succeeded on first attempt. One direct-outlet WebFetch
+  (Data Center Dynamics, the $16B reshoring pledge) returned HTTP 403 and
+  was worked around via Vermont Business Magazine + GlobalFoundries' own
+  press release instead. A 14-day GDELT DOC API sweep was run as a
+  recency check (succeeded on retry with a browser-like User-Agent after
+  an empty-body first attempt) and surfaced nothing materially new beyond
+  what WebSearch had already found. No URL or figure was fabricated;
+  explicit gaps are flagged in the finding rather than guessed.
+queries:
+  web_search:
+    - "GlobalFoundries Q2 2026 earnings revenue capex"
+    - "GlobalFoundries CHIPS Act 2026"
+    - "GlobalFoundries quantum computing $375 million award"
+    - "GlobalFoundries Q1 2026 earnings results revenue capex depreciation"
+    - "GlobalFoundries $16 billion Vermont New York investment 2026"
+    - "GlobalFoundries Mubadala strategy 2026"
+    - "GlobalFoundries customer deal automotive defense 2026"
+    - "GlobalFoundries 2026 full year capex guidance depreciation amortization"
+    - "GlobalFoundries stock below $50 director insider sale August 2026"
+    - "GlobalFoundries GFS stock decline July 2026 why falling"
+  sec_edgar:
+    - "GlobalFoundries CIK 0001709048, browse-edgar 6-K atom feed"
+    - "Q1 2026 6-K (gfs-20260331.htm) — direct fetch"
+    - "2026-07-29 6-K AGM results (a2026-07form6xkagmresults.htm) — direct fetch"
+  gdelt:
+    - "query=GlobalFoundries, timespan=14d, sort=datedesc — recency check"
+  direct_fetch_attempted:
+    - "datacenterdynamics.com $16B reshoring pledge — 403, worked around"
+    - "benzinga.com $874M CHIPS AI push — succeeded"
+    - "theregister.com $300M photonics award — succeeded"
+    - "agbi.com Mubadala share sale — succeeded"
+    - "investors.gf.com Investor Day release — succeeded"
+items:
+  # --- THRUST / CAPEX-DEPRECIATION REVERSAL ---
+  - {id: q1-2026-revenue, figure: "Q1 2026 net revenue $1,634M, +3.1% YoY (Q1 2025: $1,585M)", url: "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm", label: "GlobalFoundries 6-K, SEC EDGAR — direct fetch, primary", as_of: "2026-05-05", confidence: high}
+  - {id: q1-2026-capex, figure: "Q1 2026 capex (PP&E purchases) $312M vs Q1 2025 $166M — +88% YoY", url: "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm", label: "GlobalFoundries 6-K, SEC EDGAR — direct fetch, primary", as_of: "2026-05-05", confidence: high}
+  - {id: q1-2026-da, figure: "Q1 2026 D&A $311M vs Q1 2025 $352M — -12% YoY, attributed to equipment reaching full depreciation", url: "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm", label: "GlobalFoundries 6-K, SEC EDGAR — direct fetch, primary", as_of: "2026-05-05", confidence: high}
+  - {id: q1-2026-netincome, figure: "Q1 2026 net income $104M vs Q1 2025 $211M", url: "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm", label: "GlobalFoundries 6-K, SEC EDGAR — direct fetch, primary", as_of: "2026-05-05", confidence: high}
+  - {id: fy2026-capex-guide, figure: "FY2026 non-IFRS net capex guided 15-20% of revenue, raised YoY, driven by oversubscribed capacity in silicon photonics/FDX/SiGe/advanced packaging", url: "https://www.stocktitan.net/sec-filings/GFS/6-k-globalfoundries-inc-current-report-foreign-issuer-2a3fcef50c8d.html", label: "StockTitan (6-K aggregation) — via WebSearch", as_of: "2026-05-05", confidence: medium}
+  - {id: q2-2026-guidance, figure: "Q2 2026 guidance: revenue $1.76B (±$25M), non-IFRS GM 28.5% (±100bps), diluted EPS $0.43 (±$0.05); actual results report 2026-08-05 pre-market", url: "https://www.msn.com/en-us/money/companies/globalfoundries-outlines-q2-2026-revenue-of-1-76b-while-targeting-silicon-photonics-to-exceed-1b-run-rate-by-exit-2028/ar-AA22szcz", label: "MSN/Seeking Alpha — via WebSearch", as_of: "2026-05-05", confidence: medium}
+  # --- CHIPS ACT AWARDS ---
+  - {id: chips-original-1.5b, figure: "Original CHIPS Act direct funding award: up to $1.5B, announced Nov 2024, for NY expansion + VT modernization", url: "https://gf.com/gf-press-release/globalfoundries-and-biden-harris-administration-announce-chips-and-science-act-funding-for-essential-chip-manufacturing/", label: "GlobalFoundries press release", as_of: "2024-11-01", confidence: high}
+  - {id: chips-quantum-375m, figure: "Quantum foundry: up to $375M CHIPS LOI (~2026-05-21), part of $2.013B across 9 quantum-sector LOIs, Commerce takes ~1% non-controlling equity stake per company; GF launches Quantum Technology Solutions unit same day", url: "https://thequantuminsider.com/2026/05/21/globalfoundries-launches-quantum-technology-solutions/", label: "The Quantum Insider", as_of: "2026-05-21", confidence: medium-high}
+  - {id: chips-quantum-partners, figure: "Quantum ecosystem partners named: PsiQuantum, Quantinuum, Diraq, Equal1, Microsoft Quantum", url: "https://www.techtimes.com/articles/317033/20260522/globalfoundries-opens-quantum-processor-unit-foundry-375m-chips-award-targets-qpu-scale.htm", label: "Tech Times", as_of: "2026-05-22", confidence: medium}
+  - {id: chips-photonics-300m, figure: "AI-datacenter photonics: up to $300M CHIPS LOI (~2026-07-29), part of $874M across 7 companies (largest single award of the group); targets SCALE co-packaged optics for 400Gb/s AI-datacenter interconnects", url: "https://www.theregister.com/public-sector/2026/07/29/uncle-sam-sees-the-light-offers-globalfoundries-300m-to-pursue-silicon-photonics-while-taking-1-stake/5280620", label: "The Register — direct fetch", as_of: "2026-07-29", confidence: high}
+  - {id: chips-photonics-equity, figure: "US government takes 1% equity stake in GlobalFoundries, reported worth ~$269M, as part of the $300M photonics LOI — explicitly compared to the Intel Aug-2025 CHIPS-to-~10%-equity precedent", url: "https://www.theregister.com/public-sector/2026/07/29/uncle-sam-sees-the-light-offers-globalfoundries-300m-to-pursue-silicon-photonics-while-taking-1-stake/5280620", label: "The Register — direct fetch", as_of: "2026-07-29", confidence: high}
+  - {id: chips-874m-breakdown, figure: "Full $874M AI-push breakdown: GlobalFoundries $300M, Kepler $245M, Multibeam $140M, Extropic/Thintronics/OBSIDIA/Aeluma $30-75M each; agreements preliminary, pending further review", url: "https://www.benzinga.com/markets/tech/26/07/60830001/trump-administration-unveils-874-million-chips-act-ai-push-with-globalfoundries-securing-top-award", label: "Benzinga — direct fetch", as_of: "2026-07-31", confidence: medium-high}
+  # --- MUBADALA OWNERSHIP / GOVERNANCE ---
+  - {id: mubadala-share-sale, figure: "Mubadala sold 22M GFS shares at $89.96/share (~$1.98B raised, Morgan Stanley brokered), 2026-05-26; resulting stake 73%, down from board's carried 82%", url: "https://www.agbi.com/finance/2026/05/mubadala-raises-2bn-from-globalfoundries-share-sale/", label: "AGBI — direct fetch", as_of: "2026-05-26", confidence: medium-high}
+  - {id: mubadala-board-seat, figure: "Mubadala CLO Samer Halawa joins GF board as Class III director + Strategy & Investment Committee member, 2026-02-03", url: "https://www.tipranks.com/news/company-announcements/globalfoundries-adds-mubadala-legal-chief-samer-halawa-to-board-and-strategy-committee", label: "TipRanks", as_of: "2026-02-03", confidence: medium}
+  # --- DIVIDEND / CAPITAL RETURN ---
+  - {id: first-dividend, figure: "Inaugural quarterly dividend $0.12/share, paid 2026-07-14, record date 2026-06-24 — GlobalFoundries' first-ever dividend", url: "https://investors.gf.com/news-releases/news-release-details/globalfoundries-outlines-long-term-growth-roadmap-and-announces", label: "GlobalFoundries Investor Relations — direct fetch, primary", as_of: "2026-01-01", confidence: high}
+  - {id: capital-return-framework, figure: "New framework: return up to 50% of trailing-12mo non-IFRS adjusted FCF via dividends + buybacks; $500M buyback authorized Feb 2026", url: "https://investors.gf.com/news-releases/news-release-details/globalfoundries-outlines-long-term-growth-roadmap-and-announces", label: "GlobalFoundries Investor Relations — direct fetch, primary", as_of: "2026-01-01", confidence: high}
+  - {id: ceo-ai-centric-framing, figure: "CEO Tim Breen frames strategy around 'AI-centric markets' — AI datacenters + 'physical world' (auto/industrial/defense) applications, not leading-edge logic", url: "https://investors.gf.com/news-releases/news-release-details/globalfoundries-outlines-long-term-growth-roadmap-and-announces", label: "GlobalFoundries Investor Relations — direct fetch, primary", as_of: "2026-01-01", confidence: high}
+  # --- CUSTOMER WINS ---
+  - {id: renesas-deal, figure: "Multi-billion-dollar Renesas manufacturing agreement for automotive-grade microcontrollers, production starting US facilities mid-2026, expanding internationally", url: "https://www.sahmcapital.com/news/content/globalfoundries-renesas-deal-deepens-auto-chip-focus-and-supply-security-2026-03-08", label: "Sahm Capital", as_of: "2026-03-08", confidence: medium}
+  - {id: malta2-expansion, figure: "Malta 2 (NY) project: $12B+ planned over next decade to triple campus capacity for automotive and defense chips", url: "https://matrixbcg.com/blogs/growth-strategy/gf", label: "MatrixBCG (via WebSearch)", as_of: "2026-01-01", confidence: medium}
+  - {id: 16b-reshoring-pledge, figure: "$16B reshoring pledge (~June 2025): $13B modernizing Malta NY + Essex Junction VT, $3B R&D (packaging, silicon photonics, GaN); customers named: Apple, SpaceX, AMD, Qualcomm, NXP, GM", url: "https://vermontbiz.com/news/2025/june/04/globalfoundries-announces-16b-us-investment-restore-chip-manufacturing-vermont", label: "Vermont Business Magazine", as_of: "2025-06-04", confidence: medium}
+  - {id: dcd-403-not-used, figure: "Data Center Dynamics' own $16B-pledge writeup returned HTTP 403 on direct WebFetch — not used directly, worked around via Vermont Business Magazine + GF's own release instead", url: "https://www.datacenterdynamics.com/en/news/globalfoundries-pledges-16bn-investment-to-reshore-chip-manufacturing-at-new-york-and-vermont-fabs/", label: "blocked, method note only", as_of: "2025-06-04", confidence: thin}
+  - {id: telsys-partnership, figure: "Israel-based Telsys partnership for local manufacturing-services access, ~Feb 2026 — headline-level only", url: "https://finance.yahoo.com/news/did-israel-telsys-partnership-mubadala-090816889.html", label: "Yahoo Finance (via WebSearch)", as_of: "2026-02-01", confidence: thin}
+  # --- STOCK MOVE ---
+  - {id: stock-selloff-magnitude, figure: "GFS $89.96 (2026-05-26, Mubadala sale day) to $49.89 (2026-07-30) — ~45% decline in ~2 months", url: "https://www.fool.com/coverage/filings/2026/08/02/globalfoundries-stock-has-slid-below-usd50-what-an-insider-filing-does-and-doesn-t-tell-you/", label: "Motley Fool via WebSearch synthesis", as_of: "2026-07-30", confidence: medium}
+  - {id: stock-red-streak, figure: "5-7 consecutive red trading days in mid-to-late July, cumulative -16% to -19%, ~$5.8B market value erased", url: "https://www.trefis.com/stock/gfs/articles/609300/5-red-days-in-a-row-globalfoundries-stock-is-down-17/2026-07-29", label: "Trefis (multiple dated posts, convergent)", as_of: "2026-07-29", confidence: medium}
+  - {id: stock-valuation-framing, figure: "Selloff attributed to valuation compression (P/E ~41.0 vs S&P median ~24.4 against ~0.8% TTM revenue growth), profit-taking, and a broader semiconductor selloff — no single company-specific negative catalyst identified", url: "https://www.trefis.com/stock/gfs/articles-v3/607736/5-red-days-in-a-row-globalfoundries-stock-is-down-16/2026-07-17", label: "Trefis synthesis — flagged as weakest-sourced claim in the finding", as_of: "2026-07-17", confidence: thin}
+  - {id: insider-sales, figure: "Three directors (Dorchak, Antaki, Languille) filed routine Form 4 sales 2026-07-20/07-29 — framed as tax-withholding/scheduled trades ahead of earnings blackout; ~$2.5M aggregate insider selling over trailing 3 months, no purchases", url: "https://www.gurufocus.com/news/8956122/insider-sell-samak-azar-sells-shares-of-globalfoundries-inc-gfs", label: "GuruFocus Form 4 coverage (via WebSearch)", as_of: "2026-08-02", confidence: medium}
+  # --- GOVERNANCE / AGM ---
+  - {id: agm-2026-results, figure: "2026-07-28 AGM: Kerko 99.53%, Lazar 94.44%, Obeid 82.35% re/elected (Class II, 3-yr terms); PwC ratified auditor 99.98%; Murphy resigned (no stated disagreement), Edelman did not seek re-election; board 13 -> 11 directors", url: "https://www.sec.gov/Archives/edgar/data/1709048/000170904826000154/a2026-07form6xkagmresults.htm", label: "GlobalFoundries 6-K, SEC EDGAR — direct fetch, primary", as_of: "2026-07-29", confidence: high}
+  # --- RECENCY CHECK ---
+  - {id: gdelt-14day-sweep, figure: "14-day GDELT DOC API sweep (query=GlobalFoundries) surfaced only stories already found via WebSearch (photonics award, insider sales, AGM) — no new material item", url: "https://api.gdeltproject.org/api/v2/doc/doc?query=GlobalFoundries&mode=artlist&timespan=14d", label: "GDELT DOC API — direct query, recency check only", as_of: "2026-08-04", confidence: thin}
+notes: >-
+  Confidence key matches sibling bundles: high = primary source (GF's own
+  SEC EDGAR filings, GF's own investor-relations press release, or a
+  direct-fetched outlet with a named on-record figure). medium-high =
+  single primary-tier outlet with converging corroboration. medium =
+  single outlet or small convergent cluster via WebSearch, not
+  independently re-fetched against a filing. thin = single lower-tier
+  outlet, unnamed-analyst synthesis, headline-only, or an explicit
+  method/blocked-fetch note. No URL or figure was fabricated. The
+  clearest board-update candidates this bundle surfaces: (1) thrust
+  should be re-examined given the Q1 2026 capex/D&A near-convergence —
+  the board's -0.4 thrust figure describes a trailing-year state, not
+  the current trajectory; (2) Mubadala's stake is 73%, not 82%, as of
+  2026-05-26; (3) total CHIPS-era commitments are now ~$2.175B, not
+  $1.5B, plus two new ~1%-scale government equity positions. None of
+  these are applied to board.yaml by this crawl — flagged for the
+  steering loop, per this repo's discipline that /crawl surfaces and
+  /steer decides.
+gaps:
+  - "No independently reconciled full-year 2026 capex or D&A dollar guidance — only the 15-20%-of-revenue range and Q1 actuals."
+  - "No discrete gross-margin or long-term capex target from the Investor Day beyond the dividend/buyback framework."
+  - "Stock-selloff causal narrative rests on one aggregator's synthesis, not a named analyst call or company statement."
+  - "No primary-source dollar figure for the Israel/Telsys partnership scope."
+  - "DCD's own $16B-pledge writeup blocked (403) — relied on Vermont Business Magazine + GF's own release instead."
+  - "Obeid's comparatively low (82.35%) AGM director-approval vote has no explanation in any source found."

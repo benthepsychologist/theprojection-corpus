@@ -563,6 +563,72 @@ threads:
       framing crystallized. Per Kaiser's labor-relations page, NUHW isn't
       available for mediation until August — no firm date yet.
 
+  - slug: hca-healthcare
+    genre: labor-action   # board.yaml genre — mirrors kaiser-ai-clinician-backlash's shape (staffing/AI-vendor tension), earlier-stage
+    title: "HCA's AI Scale-Up"
+    kind: story
+    status: open
+    lens: mental-health
+    entities: [hca-healthcare]
+    weight: 2
+    terms:
+      - "HCA Healthcare AI"
+      - "HCA Timpani Palantir"
+      - "HCA nurses AI staffing"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Six named AI initiatives at real hospital-system scale (Timpani
+      staffing/scheduling live at 130+ hospitals; Google-built Nurse
+      Handoff; ambient documentation pilot; GE HealthCare maternal-fetal
+      integration). Labor friction is real but far earlier-stage than
+      Kaiser: NUHW protested the Palantir partnership behind Timpani
+      (04-18 Frist Gala) over centralized staffing decisions and
+      surveillance-vendor data concerns, but no DMHC-equivalent
+      complaint, hearing, or strike has surfaced. Watch: whether the
+      Palantir dispute escalates the way Kaiser's did; any HCA public
+      response; whether AI ever appears in an HCA SEC filing (it
+      currently doesn't). A separate securities-fraud probe (07-14
+      guidance cut, payer-mix driven) is confirmed unrelated to AI —
+      track independently, don't conflate.
+    notes: |
+      2026-08-04 (crawl): Board-pass audit found zero HCA coverage despite
+      it being the largest hospital operator on the board; existing
+      health-pocket threads are all payer/Big-Tech side. NUHW is the sole
+      source on the Palantir/staffing dispute — no HCA rebuttal found,
+      flagged as one-sided. Finding:
+      artifacts/findings/hca-healthcare-2026-08-04.md
+
+  - slug: nippon-life-openai-suit
+    genre: legitimacy-dispute   # crawl 2026-08-04 — parallels payer-ai-claim-denial's framing: the legitimacy of holding an AI developer (not just its user) liable, contested in federal court
+    title: "Nippon Life v. OpenAI"
+    kind: story
+    status: open
+    lens: ai
+    entities: [nippon-life, openai]
+    weight: 2
+    terms:
+      - "Nippon Life OpenAI lawsuit"
+      - "ChatGPT hallucinated filings"
+      - "AI developer liability"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      A live federal case (1:26-cv-02448, N.D. Ill., filed 2026-03-04,
+      verified directly against the court docket) testing whether an AI
+      developer can be held liable when its chatbot helps a user breach a
+      legal settlement — a former Nippon Life claimant used ChatGPT to
+      draft ~44 post-settlement filings including a fabricated case
+      citation. Legal commentary (Stanford CodeX, Georgetown Law Journal
+      of Legal Ethics) frames it as a developer-liability precedent test.
+      Track: OpenAI's answer/motion activity past the original 2026-05-15
+      deadline, and whether other companies cite the case.
+    notes: |
+      2026-08-04: Opened from a whole-pocket insurance triage crawl. A
+      legal-liability story, not an AI-adoption one — distinct in kind
+      from the other insurance-pocket threads opened the same day.
+      Finding: artifacts/findings/insurance-pocket-2026-08-04.md
+
   - slug: cxmt-memory-ipo
     genre: resource-move   # board.yaml genre (ben-steer 2026-07-24)
     title: "CXMT IPO"
@@ -1933,6 +1999,161 @@ threads:
       363% YoY) supersedes board.yaml's stale "~$450B+, conf LOW,
       unverified" note — flagged for a separate board-axes fix.
 
+  - slug: pif-ai-buildout
+    genre: capital-flow   # ben-steer/crawl 2026-08-04 — sovereign capital moving from a giga-project (NEOM/The Line) into AI ownership/build, same shape as asset-managers-build-ai but at sovereign scale
+    title: "PIF Bets Out of Concrete, Into Compute"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [pif, xai]
+    weight: 3
+    terms:
+      - "HUMAIN AI Saudi Arabia"
+      - "PIF NEOM The Line"
+      - "PIF Vision 2030 AI investment"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Whether the NEOM/The Line capital retreat (halted past 2030, only
+      ~1.4% of the planned foundation built) keeps funding HUMAIN's AI
+      buildout (next tranches, next named position) or whether the same
+      fiscal pressure behind both moves (oil near $71/bbl, an Aramco
+      dividend cut of ~$40B, PIF cash reserves down to ~$15B) forces a
+      slowdown on the AI side too; the AMD/Cisco 1GW buildout's progress;
+      whether the xAI stake's reported conversion into SpaceX shares
+      completes; further US export-control movement specific to Saudi
+      Arabia (only one Saudi-specific chip approval — 35,000 Nvidia chips
+      to HUMAIN/G42 — is on record so far, vs. a UAE-only easing found
+      this pass); and reconciliation of board.yaml's $12.5B/yr AI thrust
+      figure against this crawl's larger ~$21-23B HUMAIN deal-book tally
+      (AMD $10B, AWS ~$5.3B, xAI $3B, AirTrunk ~$3B).
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — board-pass audit found PIF
+      had zero thread coverage despite ~$1.21T AUM; crawl surfaced the
+      NEOM-to-AI capital-reallocation story as the sharper frame than a
+      plain "sovereign fund invests in AI" line. Finding:
+      artifacts/findings/pif-2026-08-04.md
+
+  - slug: fidelity-buys-ai-labs
+    genre: capital-flow   # crawl 2026-08-04 — direct primary-market equity in the AI labs themselves, distinct in mechanism from asset-managers-build-ai's physical-infrastructure frame
+    title: "Fidelity Buys Into the AI Labs"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [fidelity]
+    weight: 2
+    terms:
+      - "Fidelity Anthropic"
+      - "Fidelity OpenAI"
+      - "Fidelity Management Research"
+    opened: 2026-08-04
+    last_seen: 2026-05-28   # crawl 2026-08-04 — last confirmed dated activity
+    watch: >
+      Fidelity's mutual-fund complex (FMR) taking growing primary-market
+      equity stakes in Anthropic ($183B → $380B → $965B valuation across
+      three rounds since Sept-2025) and OpenAI (~$1.09B across 33 funds,
+      participated in the March-2026 $852B round) — retail fund-holder
+      money buying directly into the frontier labs' cap tables, not
+      physical infrastructure. Track: continued participation in future
+      rounds, how private stakes get marked in fund NAVs, and what happens
+      to this exposure if/when either lab lists (Anthropic roadshow began
+      mid-Jul-2026; OpenAI reportedly leaning toward a 2027 listing).
+    notes: |
+      2026-08-04: Opened from an asset-manager-pocket triage crawl —
+      State Street and Vanguard checked and found genuinely quiet
+      (internal AI tooling only, no discretionary AI-investment capital
+      of their own); Fidelity's story is real and distinct enough from
+      BlackRock's infra play to warrant its own thread rather than a tag
+      on asset-managers-build-ai. Finding:
+      artifacts/findings/asset-manager-pocket-2026-08-04.md
+
+  - slug: berkshire-ai-capital-stance
+    genre: hedge   # crawl 2026-08-04 — Buffett's individual AI-capex bet vs. Abel's institutional "not AI for the sake of AI" is a textbook incompatible-bets-open case
+    title: "Berkshire's AI Bet"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [berkshire-hathaway]
+    weight: 2
+    terms:
+      - "Berkshire Alphabet stake"
+      - "Berkshire AI investing"
+      - "Buffett Abel AI"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Berkshire — the board's largest true dry powder and famously the
+      tech-skeptic conglomerate — built a fast-growing Alphabet position
+      ($4.3B disclosed Q3'25 → ~$28-41B incl. a $10B AI-infra private
+      placement Jun'26) that Buffett himself frames as an AI-capex bet,
+      even as new CEO Abel says "we're not going to do AI for the sake of
+      AI." Track: the Q2 2026 13F for whether the position kept growing or
+      any other AI-adjacent name appears, and further Buffett/Abel
+      commentary. Secondary, lower-priority strand: GEICO's June 2026 PA
+      AI-underwriting settlement and a reported (unconfirmed-subsidiary)
+      AI-liability policy exclusion — industry pattern more than
+      Berkshire-specific.
+    notes: |
+      2026-08-04: Opened from a whole-pocket insurance triage crawl.
+      Finding: artifacts/findings/insurance-pocket-2026-08-04.md
+
+  - slug: allianz-ai-claims-automation
+    genre: partnership   # crawl 2026-08-04 — the Anthropic deal is a literal alliance; the Evident AI Index ranking + Project Nemo are supporting context, not the genre driver
+    title: "Allianz AI Claims"
+    kind: story
+    status: open
+    lens: ai
+    entities: [allianz, anthropic]
+    weight: 2
+    terms:
+      - "Allianz Anthropic"
+      - "Allianz AI claims"
+      - "Project Nemo"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Allianz ranked #1 on the 2026 Evident AI Index for Insurance and
+      signed a named global partnership with Anthropic (2026-01-09, Claude
+      free to all employees, agentic claims AI for motor/health co-built
+      with Anthropic). Project Nemo (live in Australia since Jul 2025) is
+      already settling small claims ~80% faster. Track: whether the
+      Anthropic-built claims agents or Nemo expand scope/geography, and
+      any EU/Solvency-II regulatory response to agentic claims AI.
+    notes: |
+      2026-08-04: Opened from a whole-pocket insurance triage crawl — not
+      one of the two prioritized companies (Ping An/Berkshire) but the
+      evidence didn't support leaving it out. Finding:
+      artifacts/findings/insurance-pocket-2026-08-04.md
+
+  - slug: ping-an-insurtech-ai
+    genre: buildout-race   # crawl 2026-08-04 — Chinese insurers racing to automate underwriting/claims via LLMs; closest fit in the existing genre taxonomy
+    title: "Ping An AI"
+    kind: story
+    status: open
+    lens: ai
+    entities: [ping-an]
+    weight: 3
+    terms:
+      - "Ping An AI underwriting"
+      - "Ping An claims automation"
+      - "NFRA AI insurance guidance"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Ping An running AI-driven underwriting and claims at genuine
+      national scale (~60% of accident/health claims automated, some in
+      51 seconds; underwriting review cut to ~1.5hr; 93% of new auto
+      policies auto-issued) against a fresh sector-wide NFRA framework
+      (2026-06-18) that puts AI-decision liability on the insurer, not
+      the algorithm. Track: any Ping An-specific regulatory scrutiny
+      under that framework, the pending August 2026 interim results, and
+      whether the automation numbers keep climbing.
+    notes: |
+      2026-08-04: Opened from a whole-pocket insurance triage crawl —
+      confirms the board's own flag of Ping An as the strongest
+      insurtech-AI angle. Finding:
+      artifacts/findings/insurance-pocket-2026-08-04.md
+
   - slug: custom-asic-tolls
     genre: capital-flow   # ben-steer 2026-07-28 (crawl-recommended over merge into inhouse-silicon)
     title: "ASIC Tolls"
@@ -2059,13 +2280,84 @@ threads:
       raise, a High-NA production milestone, a new export-control bill,
       an open federal inquiry, and China's first domestic DUV shipments).
 
+  - slug: mistral-ai
+    genre: border-war   # ben-steer 2026-08-04 (crawl) — EU-sovereignty positioning against both US and Chinese labs, same spirit as china-stack-independence's non-US-lab-independence framing
+    title: "Mistral AI"
+    kind: story
+    status: open
+    lens: ai
+    entities: [mistral-ai, asml, microsoft]
+    weight: 2
+    terms:
+      - "Mistral AI funding round"
+      - "Mistral Medium"
+      - "Mistral Vibe"
+      - "Mistral AI valuation"
+      - "Mistral datacenter"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      The French national champion running two tracks at once: a fast,
+      broadening product cadence (chat models into robotics, formal math,
+      safety tooling) and a capital-plus-institutional-anchoring push (a
+      pending €3B/€20B round, a French defense framework, Airbus/BMW
+      industrial deals). Both serve the same pitch — "open and European"
+      as a market position that doesn't require beating GPT-5.5/Gemini/
+      Claude or the fastest Chinese open-weight labs on the leaderboard.
+      Track whether the ~€3B round (Samsung + EQT, in talks since
+      mid-June) closes and at what terms, whether the Microsoft EU-infra
+      deal ever discloses a dollar figure, and whether growing Microsoft
+      compute-channel dependence complicates the "sovereign alternative"
+      framing. Cross-refs asml (the ASML stake lives on that thread).
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — filling a confirmed
+      coverage gap; actor-doing.yaml flagged Mistral as "barely
+      tracked... a coverage gap flagged for the next collection pass,
+      not a quiet actor." One correction the crawl caught: "France Signs
+      $14B AI Deal with Mistral" headlines conflated Mistral's own
+      valuation with an undisclosed defense-contract figure.
+
+  - slug: globalfoundries
+    genre: financing   # ben-steer 2026-08-04 (crawl) — the throughline is government CHIPS-for-equity stakes (Intel-style) + Mubadala trimming its own stake, a capital-structure story, not a capacity buildout race
+    title: "GlobalFoundries — the Capex Reversal"
+    kind: story
+    status: open
+    lens: ai
+    entities: [globalfoundries, intel]
+    weight: 2
+    terms:
+      - "GlobalFoundries capex"
+      - "GlobalFoundries CHIPS Act"
+      - "GlobalFoundries quantum"
+      - "GlobalFoundries Mubadala"
+      - "GlobalFoundries dividend"
+      - "GlobalFoundries earnings"
+    opened: 2026-08-04
+    last_seen: 2026-08-04   # crawl 2026-08-04
+    watch: >
+      Whether the Q1 2026 capex/depreciation near-parity (thrust flipping
+      from clearly negative toward flat) holds through the Q2 2026 print
+      (2026-08-05) or reverses; whether the government's two new ~1%-scale
+      equity stakes (quantum + photonics) keep accumulating toward an
+      Intel-style larger position; whether Mubadala's stake keeps trimming
+      below 73% even as its board influence deepens; and whether the ~45%
+      stock decline since the May Mubadala sale gets explained or reversed
+      by the Q2 print.
+    notes: |
+      2026-08-04: Opened (ben-steer, crawl) — board.yaml's negative-thrust
+      characterization is now stale: Q1 2026 capex nearly doubled YoY
+      ($166M to $312M) while depreciation fell ($352M to $311M). Also
+      found stale on the board: Mubadala's stake is 73%, not 82%; total
+      CHIPS-era commitments are ~$2.175B, not $1.5B — flagged for a
+      separate board-axes fix.
+
   - slug: payer-ai-claim-denial
     genre: legitimacy-dispute   # ben-steer 2026-07-28 — the legitimacy of algorithmic denials, contested in courts + Congress
     title: "AI Denial Machine"
     kind: story
     status: open
     lens: mental-health
-    entities: [unitedhealth-group, cigna, humana, elevance-health]
+    entities: [unitedhealth-group, cigna, humana, elevance-health, cvs-health]   # cvs-health tagged 2026-08-04 (ben-steer, crawl) — named alongside UnitedHealth/Humana in a bipartisan Senate letter over AI care denials; Aetna carries its own active AI-denial suit mirroring Humana's nH Predict case
     weight: 2
     terms:
       - "AI claim denial"

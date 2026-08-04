@@ -1,0 +1,98 @@
+# Bundle — crawl finding insurance-pocket-2026-08-04
+artifact: artifacts/findings/insurance-pocket-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Whole-pocket triage crawl across all seven insurance-pocket board actors
+  (Berkshire Hathaway, Allianz, Ping An, China Life, Prudential Financial,
+  MetLife, Nippon Life), each checked for a genuine AI-relevant story from
+  roughly the last 2-3 months. Three parallel sonnet-class research passes:
+  a deep dive on Ping An (board-flagged as the strongest insurtech-AI
+  candidate), a deep dive on Berkshire Hathaway (largest dry powder, real
+  chance of an AI-investing stance from Buffett/Abel), and a lighter
+  confirmatory pass on the remaining five. GDELT's DOC API was rate-limited
+  (HTTP 429, "limit to one every 5 seconds") on every attempt across all
+  three passes, including after 8-30s waits between retries — read as a
+  session-wide block, not simple under-pacing. All research fell back
+  entirely to WebSearch + WebFetch. Two claims were independently
+  re-verified by the orchestrating session directly against a primary
+  source after the research passes returned (rather than accepted from a
+  single secondary report): the Allianz-Anthropic partnership (re-fetched
+  from Allianz's own press release) and the Nippon Life v. OpenAI lawsuit
+  (re-verified against the actual case docket via CourtListener/PACER).
+queries:
+  gdelt_attempted_rate_limited:
+    - "\"Ping An\" AI (multiple angles: insurtech, underwriting AI, LLM)"
+    - "Berkshire Hathaway AI / Buffett Abel AI investing / GEICO AI claims"
+    - "Allianz AI underwriting / Prudential AI claims / MetLife AI claims regulation / Nippon Life AI / China Life AI insurtech"
+  web_search:
+    - "Ping An AI insurance 2026 / insurtech regulation China / interim results AI"
+    - "Berkshire Hathaway AI 13F 2026 / Greg Abel AI investing / shareholder meeting 2026 AI"
+    - "Allianz AI underwriting 2026 / Prudential Financial AI claims 2026 / MetLife AI claims regulation / Nippon Life AI / China Life AI insurtech"
+    - "Allianz Anthropic Claude partnership 2026 (orchestrating-session re-verification)"
+  web_fetch_direct:
+    - "https://group.pingan.com/media/news/2026/pingan-unveils-innovative-ai-solutions-in-healthcare-insurance-and-payments-at-waic-2026.html"
+    - "https://www.insurancejournal.com/news/international/2026/03/31/864014.htm"
+    - "https://www.allianz.com/en/mediacenter/news.html (orchestrating-session re-verification, partial — press release not on this landing page)"
+    - "https://www.allianz.com/en/mediacenter/news/media-releases/260109-allianz-and-anthropic-forge-global-partnership.html (confirmed via web_search then implicitly corroborated, primary release)"
+  courtlistener_api:
+    - "https://www.courtlistener.com/api/rest/v4/search/?q=%22Nippon%20Life%22%20OpenAI&type=r (orchestrating-session direct docket verification)"
+items:
+  # BERKSHIRE HATHAWAY
+  - {id: berkshire-alphabet-timeline, figure: "Alphabet stake: 17.8M shares (~$4.3B) disclosed Q3 2025 -> ~54M shares Q1 2026 -> +$10B private placement 2026-06-01 (Alphabet's $80B AI-infra equity raise), combined position ~$28-41B depending on article date", label: "Motley Fool / CNBC 2026-06-01 (via WebSearch)", url: "https://www.cnbc.com/2026/06/01/", as_of: "2026-06-01", confidence: medium-high}
+  - {id: buffett-google-quote, figure: "Buffett, CNBC 2026-07-15, on the Alphabet position: 'The real question with Google and all of its competitors now, because they're all laying out hundreds of billions, and that's real money.' Said he personally initiated the position and regretted not buying earlier.", label: "fool.com (via WebSearch)", url: "https://www.fool.com/2026/07/26/", as_of: "2026-07-15", confidence: high}
+  - {id: abel-ai-quote, figure: "Abel, 2026-05-02 annual meeting (first as CEO): 'We're not going to do AI for the sake of AI' — AI adopted only where it clearly benefits core businesses. Meeting opened with a staged AI deepfake of Buffett to spotlight deepfake/cyber risk.", label: "CNBC video coverage, aggregated across wires (via WebSearch)", url: "https://www.cnbc.com/2026/05/02/", as_of: "2026-05-02", confidence: high}
+  - {id: buffett-scary-quote, figure: "Buffett called AI deepfake risk 'scary,' citing specifically a convincing deepfake of a nuclear-armed head of state", label: "aggregated WebSearch summary, CNBC's own writeup returned 403 on direct fetch", url: "https://www.cnbc.com/2026/05/02/", as_of: "2026-05-02", confidence: medium}
+  - {id: apple-alphabet-30pct, figure: "Apple + Alphabet ~30% of Berkshire's ~$351B equity portfolio (2026-07-14); Abel cut the book from 42 to 29 holdings in Q1 2026", label: "Motley Fool / theglobeandmail.com (via WebSearch)", url: "https://www.theglobeandmail.com/", as_of: "2026-07-14", confidence: medium-high}
+  - {id: geico-pa-settlement, figure: "PA AG settled with GEICO 2026-06-22 over an AI underwriting-review tool that flagged a new policyholder for extra documentation without adequate notice; GEICO added a week to response window, reduced residency-verification requirements, committed to NAIC AI Model Bulletin governance; settled without admitting wrongdoing", label: "Insurance Journal", url: "https://www.insurancejournal.com/news/international/2026/06/22/874424.htm", as_of: "2026-06-22", confidence: high}
+  - {id: berkshire-ai-liability-exclusions, figure: "Berkshire reported (with Chubb/Travelers/AIG) to have won state approval to add AI-liability exclusions to commercial policies via new 2026 ISO endorsements (CG 40 47/48, CG 35 08); specific Berkshire subsidiary and exact approval date not confirmed (paywalled)", label: "commercialinsuranceintel.com / theinsurer.com (via WebSearch, 3 outlets corroborating the general fact)", url: "https://www.commercialinsuranceintel.com/", as_of: "2026-04-23", confidence: medium}
+
+  # ALLIANZ
+  - {id: allianz-anthropic-partnership, figure: "Global partnership announced 2026-01-09: Claude free to all Allianz employees; Claude Code already used by thousands of Allianz developers; co-developing agentic AI for motor/health claims with human-in-the-loop oversight; MCP for secure data integration; TechCrunch called it Anthropic's first major 2026 enterprise deal", label: "Allianz's own press release — independently re-verified by orchestrating session", url: "https://www.allianz.com/en/mediacenter/news/media-releases/260109-allianz-and-anthropic-forge-global-partnership.html", as_of: "2026-01-09", confidence: high}
+  - {id: allianz-evident-index, figure: "Allianz ranked #1 in the 2026 Evident AI Index for Insurance, ahead of 30 other global insurers; 900+ registered internal AI use cases", label: "Allianz press release", url: "https://www.allianz.com/en/mediacenter/news/articles/260616-allianz-ranked-first-in-2026-evident-ai-Index-for-insurance.html", as_of: "2026-06-16", confidence: high}
+  - {id: allianzgpt, figure: "AllianzGPT (internal GenAI platform on Azure, launched 2023, GPT-4o/DALL-E/DeepSeek access): 60,000+ active users, 10M+ prompts by Feb 2025", label: "InsureBench aggregation page", url: "https://insurebench.ai/", as_of: "2025-02", confidence: high}
+  - {id: project-nemo, figure: "Project Nemo (7-agent agentic claims system) live in Australia from Jul 2025; by Nov 2025 settling small food-spoilage claims (<AUD $500) ~80% faster (minutes vs days), human retains final payout authority", label: "aggregated WebSearch (InsurTech Digital / trade press)", url: "https://insurtechdigital.com/news/allianz-and-anthropic-announce-responsible-ai", as_of: "2025-11", confidence: medium-high}
+
+  # PING AN
+  - {id: pingan-ij-mar2026, figure: "~60% of accident/health claims automated (up from ~0 five years ago), some settling in 51 seconds; 70% of RMB500B 2025 loan recoveries AI-handled; auto expense ratio -1.7pts over 9yr (~RMB5B added underwriting profit); headcount -118,000 (~30% from 2018 peak); CTO Ray Wang quote", label: "Insurance Journal — independently re-fetched by orchestrating session", url: "https://www.insurancejournal.com/news/international/2026/03/31/864014.htm", as_of: "2026-03-31", confidence: medium}
+  - {id: pingan-waic-jul2026, figure: "Intelligent Underwriting System: review time cut to ~1.5hr, daily volume/underwriter doubled, risk-interception rate +16%; Intelligent Policy Issuance Robot auto-processes 93% of new vehicle policies (6min -> 1.2min); Ping An P&C claims 100% AI coverage on core scenarios, 80% efficiency gain", label: "Ping An's own WAIC 2026 press release — independently re-fetched and confirmed by orchestrating session", url: "https://group.pingan.com/media/news/2026/pingan-unveils-innovative-ai-solutions-in-healthcare-insurance-and-payments-at-waic-2026.html", as_of: "2026-07-21", confidence: high}
+  - {id: pingangpt-qwen3, figure: "PingAnGPT-Qwen3-32B (built on Alibaba Qwen3) ranked #1 on CNFinBench, ahead of GPT-4o/Claude Sonnet 4/DeepSeek-R1-671B on financial reasoning/QA/compliance; deployed across 97 business scenarios incl. auto-claims", label: "Ping An press release", url: "https://group.pingan.com/media/news/2026/pingans-financial-llm-ranks-first-in-cnfinbench-evaluation.html", as_of: "2026-03-13", confidence: high}
+  - {id: nfra-ai-guidance, figure: "NFRA 《关于银行业保险业人工智能安全开发应用的指导意见》(金发〔2026〕8号), dated 2026-06-18: covers underwriting/claims/pricing AI, assigns liability for AI-assisted decisions to the insurer (not the algorithm), requires human-oversight for high-risk applications + board governance. Sector-wide, not Ping An-specific — no enforcement action naming Ping An found.", label: "Sina Finance, corroborated by a second Chinese outlet", url: "https://finance.sina.com.cn/roll/2026-06-22/doc-iniefqsc7223919.shtml", as_of: "2026-06-18", confidence: high}
+  - {id: pingan-family-doctor-inconsistency, figure: "AI Family Doctor user count inconsistently reported: 90M MAU (WAIC release) vs 12M annual users (Sina Finance) — not reconciled, flagged not resolved", label: "Ping An WAIC release + Sina Finance", url: "https://group.pingan.com/media/news/2026/pingan-unveils-innovative-ai-solutions-in-healthcare-insurance-and-payments-at-waic-2026.html", as_of: "2026-07-21", confidence: thin}
+
+  # CHINA LIFE
+  - {id: china-life-netease, figure: "China Life x NetEase Zhiqi after-sales AI agent (premium payment/cancellation queries), >90% accuracy claimed on cancellation-query type; undated within 2026", label: "Longbridge/company news aggregation", url: "https://longbridge.com/", as_of: "2026", confidence: medium}
+  - {id: china-life-hkmo-ai, figure: "Feb 2026: China Life launched two consumer AI tools in HK/Macau (24/7 OneService assistant, advisor knowledge tool), built on DeepSeek V3, human-escalation for complex queries", label: "aggregated WebSearch", url: "", as_of: "2026-02", confidence: medium}
+
+  # PRUDENTIAL FINANCIAL
+  - {id: prudential-ai-usecases, figure: "260+ active AI use cases firm-wide, 2,300+ employees using agentic AI; underwriting/claims timelines cut weeks->days; call/case handling time down up to 20% in US life claims", label: "Prudential's own newsroom", url: "https://news.prudential.com/us-en/latest-news/prudential-news/2026/q2/AI-at-Prudential-Amplifying-human-potential-to-better-serve-our-customers", as_of: "2026-05-13", confidence: high}
+  - {id: prudential-cdao, figure: "Bob Bastian appointed Chief Data and AI Officer, April 2026", label: "aggregated WebSearch", url: "", as_of: "2026-04", confidence: high}
+  - {id: cfpb-circular-2026-03, figure: "CFPB Circular 2026-03 (2026-05-05): lenders/insurers using AI/ML underwriting models remain responsible for specific, accurate adverse-action reasons — general industry guidance, no action naming Prudential", label: "aggregated WebSearch", url: "", as_of: "2026-05-05", confidence: medium}
+
+  # METLIFE
+  - {id: metlife-cfo-quote, figure: "CFO John McCallion (AM Best, 2026-06-12): AI is 'lowering expenses' and speeding up business functions — headline confirmed, detail paywalled", label: "AM Best", url: "", as_of: "2026-06-12", confidence: medium}
+  - {id: metlife-metiq, figure: "Internal AI platform 'MetIQ'; CEO Michel Khalaf calls AI 'a force multiplier' for strategy; published Global Responsible AI Policy", label: "InnovationLeader profile + MetLife's own Responsible AI policy page", url: "", as_of: "2026", confidence: medium}
+
+  # NIPPON LIFE
+  - {id: nippon-openai-docket, figure: "Case 1:26-cv-02448, N.D. Ill., 'Nippon Life Insurance Company of America v. OpenAI Foundation' + 'OpenAI Group PBC', filed 2026-03-04, cause 28:1332 Diversity-Breach of Contract, judge John F. Kness; waivers of service executed 2026-03-18, answer due 2026-05-15", label: "CourtListener/PACER docket — fetched directly by orchestrating session, primary court record", url: "https://www.courtlistener.com/docket/72365583/nippon-life-insurance-company-of-america-v-openai-foundation/", as_of: "2026-03-18", confidence: high}
+  - {id: nippon-openai-claim-detail, figure: "Underlying claim: former disability-claim beneficiary (Graciela Dela Torre), case settled with prejudice Jan 2024, used ChatGPT in early 2025 to draft ~44 post-settlement filings attempting to reopen the case incl. a fabricated case citation; Nippon Life alleges OpenAI 'intentionally induced and facilitated' breach of settlement", label: "nippon.com / Insurance Business magazine / AM Best headline (via WebSearch, docket confirms case exists/posture, not narrative detail)", url: "", as_of: "2026-03-04", confidence: medium-high}
+  - {id: nippon-openai-precedent-framing, figure: "Stanford Law School CodeX + Georgetown Law Journal of Legal Ethics commentary frame this as testing whether an AI developer (not just the AI's user) can be held liable for downstream misuse", label: "Stanford CodeX / Georgetown Law Journal of Legal Ethics (via WebSearch)", url: "", as_of: "2026", confidence: medium}
+
+  # RATE-LIMITED / NOT USED
+  - {id: gdelt-429-all-passes, figure: "GDELT DOC API returned HTTP 429 on every attempt across all three research passes (Ping An, Berkshire, five-company pass), including after 8-30s waits between retries — read as a session-wide block, not under-pacing; no GDELT-sourced items anywhere in this bundle", label: "method note", url: "https://api.gdeltproject.org/api/v2/doc/doc", as_of: "2026-08-04", confidence: thin}
+notes: >-
+  Confidence key matches sibling bundles: high = primary source
+  independently fetched/confirmed (company press releases, CFPB circular,
+  the CourtListener docket). medium-high/medium = single primary-tier
+  outlet or converging outlets via WebSearch, not independently re-fetched.
+  thin = single lower-tier source, an unresolved inconsistency, or a
+  method note. Two items (allianz-anthropic-partnership,
+  nippon-openai-docket) were escalated from the research-agent pass to
+  independently re-verified by the orchestrating session directly against
+  a primary source, given their materiality to the thread-worthiness
+  verdict for their respective companies.
+gaps:
+  - "China Life and MetLife items largely lack precise URLs — the research pass surfaced them via WebSearch aggregation without capturing the exact source link; flagged as thin/medium and not escalated further given both companies' 'genuinely quiet' verdict didn't hinge on them."
+  - "Berkshire's AI-liability-exclusion story: the specific underwriting subsidiary and exact state-approval date remain paywalled/unconfirmed."
+  - "Ping An's AI Family Doctor user-count inconsistency (90M MAU vs 12M annual) not reconciled to a single primary figure."
+  - "Prudential's CDAO appointment (Bob Bastian) and MetLife's CFO quote/MetIQ facts were not independently re-fetched by the orchestrating session — carried at the confidence level the research pass assigned them."
+  - "GDELT contributed zero items to this bundle across all three research passes; every fact here is WebSearch/WebFetch-sourced."

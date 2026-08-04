@@ -1224,3 +1224,84 @@ expectations:
     logged: 2026-08-04
     logged_by: crawl
     status: pending
+
+  - id: mistral-3b-round-close
+    claim: "Mistral closes its ~€3B round (Samsung + EQT-led) at ~€20B/$23B valuation"
+    due: 2026-08-31
+    due_precision: month
+    thread: mistral-ai
+    entities: [mistral-ai]
+    source: https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/
+    confidence: reported
+    what_confirms: "an official Mistral/Samsung/EQT funding-round announcement with disclosed terms"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: cvs-q2-2026-earnings
+    claim: "CVS Health Q2 2026 earnings call — watch for AI commentary echoing UHC's Hemsley remarks"
+    due: 2026-08-05
+    due_precision: day
+    thread: payer-ai-claim-denial
+    entities: [cvs-health]
+    source: https://www.cvshealth.com/news/company-news/cvs-health-to-hold-second-quarter-2026-earnings-conference-call.html
+    confidence: confirmed
+    what_confirms: "call happens 8am ET; watch for AI/claims-automation commentary"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: aetna-alma-rate-cut-effective
+    claim: "Aetna's reimbursement rate cuts to Alma-contracted therapists take effect (APA/American Psychiatric Association protested 06-04)"
+    due: 2026-07-15
+    due_precision: day
+    thread: payer-ai-claim-denial
+    entities: [cvs-health]
+    source: https://updates.apaservices.org/apa--american-psychiatric-association-urge-aetna-to-pause-reimbursement-rate-cuts-for-behavioral-health-clinicians
+    confidence: reported
+    what_confirms: "whether Aetna paused under APA pressure, proceeded as scheduled, or drew a formal complaint"
+    logged: 2026-08-04
+    logged_by: crawl
+    # ⚠ logged with its due date already elapsed (crawl ran 2026-08-04,
+    # three weeks past 07-15) — no outcome confirmed either way this pass.
+    # A live passed-silent candidate for the next /daily to evaluate.
+    status: pending
+
+  - id: globalfoundries-q2-2026-earnings
+    claim: "GlobalFoundries reports Q2 2026 results (guided revenue $1.76B ± $25M)"
+    due: 2026-08-05
+    due_precision: day
+    thread: globalfoundries
+    entities: [globalfoundries]
+    source: https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm
+    confidence: confirmed
+    what_confirms: "Q2 2026 earnings release/8-K or 6-K, before market open 2026-08-05"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: berkshire-q2-2026-13f
+    claim: "Berkshire Hathaway's Q2 2026 13F filing discloses whether the Alphabet position kept growing and whether any other AI-adjacent equity appears"
+    due: 2026-08-14
+    due_precision: day
+    thread: berkshire-ai-capital-stance
+    entities: [berkshire-hathaway]
+    source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001067983&type=13F
+    confidence: confirmed
+    what_confirms: "the 13F-HR filing itself appearing on SEC EDGAR"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending
+
+  - id: ping-an-h1-2026-interim-results
+    claim: "Ping An Healthcare and Technology's board meeting to approve H1 2026 results (and consider an interim dividend) is confirmed for Aug 18, 2026; the GROUP-level (parent, HK:2318/SH:601318) interim results date was not independently confirmed to a specific day this crawl"
+    due: 2026-08-18
+    due_precision: day
+    thread: ping-an-insurtech-ai
+    entities: [ping-an]
+    source: https://group.pingan.com/
+    confidence: reported
+    what_confirms: "the interim results announcement itself, ideally with an AI-contribution disclosure"
+    logged: 2026-08-04
+    logged_by: crawl
+    status: pending

@@ -1,0 +1,93 @@
+# Bundle — crawl finding mistral-ai-2026-08-04
+artifact: artifacts/findings/mistral-ai-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  Free-topic backward crawl opening a new thread (Mistral held zero thread
+  coverage; own actor-doing.yaml entry flagged this as a confirmed gap,
+  not a judgment call). Builds on the existing mistral-ai-node bundle
+  (2026-07-28 pass, posture/capital/thrust/optionality/gravity for the
+  board axes) rather than duplicating it — this bundle covers NEW ground:
+  product-shipping cadence, the Microsoft deal's actual shape, the French
+  defense framework, the Emmi acquisition + industrial partnerships, and
+  competitive positioning. WebSearch was available and used throughout
+  (not exhausted this session at time of use, contrary to the pre-flight
+  caution passed down). One direct WebFetch each against Mistral's own
+  news index (mistral.ai/news), the AI Now Summit page, and Wikipedia's
+  Le Chat (AI) article for primary/near-primary corroboration. GDELT's
+  DOC API needed query tuning — a bare `"AI"` term was rejected as
+  "too short" combined with "Mistral"; a quoted `"Mistral AI"` query
+  worked but the 7-day window returned only tangential hits (AI-market
+  roundups mentioning Mistral in passing), not used as a source for any
+  claim below.
+queries:
+  web_search:
+    - "Mistral AI news August 2026"
+    - "Mistral AI funding round valuation 2026"
+    - "Mistral AI €3 billion round closed Samsung EQT August 2026"
+    - "Mistral AI Microsoft multibillion deal European AI infrastructure details"
+    - "Mistral Medium 3.5 benchmark frontier model comparison 2026"
+    - "Mistral AI French government sovereignty EU defense deal 2026"
+    - "Mistral AI France Ministry Armed Forces framework agreement January 2026 $14 billion"
+    - "Mistral Le Chat users growth downloads 2026"
+    - "Mistral AI open weight strategy competitive Europe vs DeepSeek Qwen 2026"
+    - "Mistral AI Emmi acquisition Airbus BMW partnership industrial"
+    - "Mistral AI Samsung investment closed confirmed"
+    - "\"Mistral\" AI news this week August 3 2026"
+  web_fetch_direct:
+    - "https://mistral.ai/news"
+    - "https://www.gend.co/blog/mistral-ai-french-defence-framework"
+    - "https://mistral.ai/news/ai-now-summit-2026/"
+    - "https://en.wikipedia.org/wiki/Le_Chat_(AI)"
+  gdelt:
+    - "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Mistral%20AI%22&mode=artlist&maxrecords=20&sort=datedesc&format=json&timespan=7d — worked after query tuning; tangential 7-day hits only, not used as a source"
+items:
+  # FUNDING
+  - {id: cumulative-closed, figure: "~$6.2-7B cumulative CLOSED raised (€2B Sep-2025 ASML-led incl $1.5B/11% stake; $830M Mar-2026 datacenter round, 7-bank debt consortium); €12B/$14B valuation is the closed mark", url: "https://en.wikipedia.org/wiki/Mistral_AI", label: "carried from mistral-ai-node bundle 2026-07-28 pass (Wikipedia — Mistral AI)", as_of: "2026-07-28", confidence: medium}
+  - {id: pending-round-3b, figure: "~€3B ($3.5B) round in talks, would take valuation to ~€20B/$23B (67% step up); Samsung ~€1B/$1.1B (dual chip+AI-sovereignty framing), EQT's EC-backed €5B Scaleup Europe Fund reportedly leading, plus Novo Holdings and Santander; NOT confirmed closed as of this crawl — every source uses 'in talks'/'weighs'/'reportedly'", url: "https://techcrunch.com/2026/06/12/mistral-is-rumored-to-be-raising-e3b-at-e20-valuation/", label: "TechCrunch (attrib. Bloomberg), corroborated by Axios 2026-07-22 and Sifted", as_of: "2026-06-12/07-22", confidence: medium}
+  - {id: arr-estimate, figure: "2026 ARR ~$400M (2025: ~$100M, ~300% YoY), third-party estimate, unconfirmed by Mistral", url: "https://getlatka.com/companies/mistral-ai", label: "GetLatka — carried from mistral-ai-node bundle 2026-07-28 pass", as_of: "2026-07-03", confidence: low}
+
+  # PRODUCT CADENCE
+  - {id: product-cadence, figure: "Five ships in six weeks: OCR 4 (06-23, document intelligence), Leanstral 1.5 (07-02, formal math proofs), Robostral Navigate (07-08, first embodied-navigation model), Studio Prompts & Skills (07-09, dev tooling), Shieldstral (08-04, 3B open-weight multimodal safety classifier, Apache 2.0, runs on single 16GB GPU)", url: "https://mistral.ai/news/", label: "Mistral's own news index, fetched directly", as_of: "2026-08-04", confidence: high}
+  - {id: medium-3-5, figure: "Mistral Medium 3.5 (04-29-2026): 128B dense model, 256K context, vision encoder from scratch; 77.6% SWE-Bench Verified (vs Claude Sonnet 4.6's 79.6%), 91.4% tau-cubed-Telecom, AA Intelligence Index 30 — 'competitive but below closed leaders (Opus 4.8, GPT-5.5)'; consolidates prior Devstral 2/Magistral lines; priced $1.50in/$7.50out per M tokens, undercutting closed frontier competitors", url: "https://artificialanalysis.ai/models/mistral-medium-3-5", label: "Artificial Analysis model card, corroborated by Mistral's own model card (docs.mistral.ai)", as_of: "2026-04-29", confidence: medium-high}
+  - {id: le-chat-rebrand, figure: "Le Chat rebranded to 'Mistral Vibe', announced May 2026, new features bundled at rename; original Le Chat launched 2024-02-26, mobile app 2025-02-06", url: "https://en.wikipedia.org/wiki/Le_Chat_(AI)", label: "Wikipedia — Le Chat (AI), fetched directly", as_of: "2026-05", confidence: medium}
+  - {id: user-scale, figure: "Le Chat/Vibe reportedly 1M downloads in 14 days at launch, ~5M monthly users cited in aggregator coverage; 100M+ cumulative model downloads across the Mistral line (Mixtral 8x7B alone: 20M in first month, older datapoint for scale) — not a Mistral-disclosed figure, third-party aggregator sourced", url: "https://www.getpanto.ai/blog/mistral-ai-statistics", label: "getpanto.ai aggregator blog", as_of: "2026", confidence: low}
+
+  # MICROSOFT DEAL
+  - {id: msft-deal-shape, figure: "Announced 2026-07-21: Microsoft rents compute FROM Mistral's own EU datacenters (Paris + Sweden, €1.2B invested in Sweden facility) for Azure customers in regulated industries (finance/healthcare/manufacturing) — compute flows Mistral-to-Microsoft-customers, not Microsoft funding Mistral's build; adding 'thousands of Nvidia Vera Rubin GPUs'", url: "https://siliconangle.com/2026/07/21/mistral-ai-strikes-multibillion-dollar-deal-microsoft-build-azure-infrastructure-europe/", label: "SiliconANGLE, corroborated by France24, MLQ, AI Magazine, Neowin, Pulse2, Euronext, BigGo Finance", as_of: "2026-07-21", confidence: medium}
+  - {id: msft-model-integration, figure: "Mistral Medium 3.5 + OCR 4 added to Azure AI Foundry; further model integration planned across Foundry, Copilot Studio, Azure, Azure Local", url: "https://www.france24.com/en/france/20260721-microsoft-strikes-multi-billion-dollar-deal-to-expand-france-ai-firm-mistral", label: "France24", as_of: "2026-07-21", confidence: medium}
+  - {id: msft-no-figure, figure: "No dollar figure or contract length disclosed in any of 8 outlets checked (SiliconANGLE, MLQ, AI Magazine, Neowin, Pulse2, Euronext, France24, BigGo) despite universal 'multibillion-dollar' framing — same gap flagged in mistral-ai-node bundle 2026-07-28, still open 2 weeks later", url: "https://mlq.ai/news/microsoft-signs-multi-billion-dollar-deal-to-rent-mistrals-european-ai-data-centers/", label: "cross-check across all outlets found this crawl", as_of: "2026-08-04", confidence: medium}
+
+  # FRENCH DEFENSE DEAL
+  - {id: france-defense-framework, figure: "France's Ministry of the Armed Forces awarded Mistral a framework agreement 2026-01-08 (Reuters) covering armed forces, internal directorates, CEA, ONERA, SHOM — models/software/services for intelligence and logistics use, hosted entirely on French infrastructure, overseen by AMIAD, spanning 2026-2030", url: "https://www.gend.co/blog/mistral-ai-french-defence-framework", label: "gend.co summary of Reuters report (no primary govt release fetched directly)", as_of: "2026-01-08", confidence: medium}
+  - {id: valuation-vs-contract-correction, figure: "Headlines like 'France Signs $14B AI Deal with Mistral' conflate Mistral's COMPANY VALUATION ($14B) with the contract's value — actual defense-framework financial terms are undisclosed in every source checked, including the gend.co writeup which explicitly notes the $14B figure 'refers to Mistral's company valuation, not the value of the defense contract itself'", url: "https://www.webpronews.com/france-signs-14b-ai-deal-with-mistral-for-military-defense-boost/", label: "webpronews headline vs. gend.co's explicit correction, cross-checked directly", as_of: "2026-01-09", confidence: high}
+
+  # INDUSTRIAL AI / EMMI
+  - {id: emmi-acquisition, figure: "Mistral acquired Emmi AI, May 2026, ~€300M, 30+ researchers — physics-based AI simulating airflow/thermodynamics/fluid dynamics/material deformation in real time", url: "https://thenextweb.com/news/mistral-physical-ai-airbus-bmw-industrial-launch", label: "TheNextWeb, corroborated by KuCoin/CryptoBriefing/ValueTheMarkets", as_of: "2026-05-22", confidence: medium}
+  - {id: industrial-launch, figure: "'Mistral for Industrial Engineering' launched at first industry conference ~2026-05-28, Paris — launch customers Airbus (5-yr deal, aircraft/helicopter/space programs), BMW (manufacturing integration), EDF, CMA CGM; Les Ulis datacenter (Q3-2026 open target) announced same event, framed as compute-independence infrastructure", url: "https://mistral.ai/news/ai-now-summit-2026/", label: "Mistral's own AI Now Summit page, fetched directly", as_of: "2026-05-28", confidence: high}
+
+  # COMPETITIVE POSITION
+  - {id: market-share, figure: "1B+ param open-weight download segment: Meta 23.2%, Alibaba/Qwen 20%, Mistral 6.8%, DeepSeek 3.8% — Mistral is not the open-weight volume leader", url: "https://www.digitalapplied.com/blog/open-weight-model-q3-2026-projection-competitive-forecast", label: "Digital Applied Q3-2026 open-weight competitive forecast", as_of: "2026", confidence: medium}
+  - {id: sovereignty-differentiator, figure: "Coverage converges on 'open + European' jurisdiction/control as Mistral's actual competitive differentiator rather than raw benchmark leadership, where it trails both closed Western frontier (GPT-5.5, Opus 4.8, Gemini) and the fastest Chinese open-weight labs (DeepSeek V4/R1, Qwen 3, Kimi K2.6, GLM-5.2)", url: "https://kingy.ai/news/best-open-weight-ai-models-in-2026-glm-5-2-vs-deepseek-v4-vs-kimi-k2-6-vs-qwen-vs-mistral/", label: "multi-outlet WebSearch aggregation on open-weight landscape", as_of: "2026", confidence: medium}
+
+  # METHOD / GAPS
+  - {id: gdelt-tangential, figure: "GDELT DOC API 7-day query for 'Mistral AI' returned only tangential hits (passing mentions in AI-market roundups) — no additional Aug 1-4 Mistral-specific news found beyond the Shieldstral ship already captured above", url: "https://api.gdeltproject.org/api/v2/doc/doc?query=%22Mistral%20AI%22&mode=artlist&maxrecords=20&sort=datedesc&format=json&timespan=7d", label: "GDELT DOC API, method note", as_of: "2026-08-04", confidence: thin}
+notes: >-
+  Confidence key matches sibling bundles: high = primary source fetched
+  directly (Mistral's own news index/summit page, or a direct textual
+  correction check). medium-high/medium = single primary-tier outlet or
+  2+ converging outlets via WebSearch, not independently re-fetched
+  against a filing/release. low/thin = single lower-tier or aggregator
+  source, or a claim whose primary source could not be identified. This
+  bundle deliberately does NOT re-derive board.yaml's posture/capital/
+  thrust/optionality/gravity axes — those live in the mistral-ai-node
+  bundle (2026-07-28 pass) and are only cited here for trajectory
+  context. The valuation-vs-contract-value correction on the French
+  defense deal (id: valuation-vs-contract-correction) is this bundle's
+  most actionable finding for keeping the board accurate — several
+  outlets ran a headline figure that is not what it claims to be.
+gaps:
+  - "The ~€3B/€20B round's close date and final terms are unknown as of this crawl — every source through early August 2026 still frames it as 'in talks'."
+  - "The Microsoft deal's dollar figure and contract length remain undisclosed across every outlet checked."
+  - "The French defense framework's actual financial terms are undisclosed; only scope/hosting/oversight details are public."
+  - "Le Chat/Mistral Vibe user-count figures are third-party-aggregator sourced, not a Mistral disclosure — treat as directional."
+  - "GDELT's near-real-time query needed tuning (bare 'AI' term rejected as too short) and, once working, added no new information beyond WebSearch/WebFetch findings."

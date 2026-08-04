@@ -648,8 +648,8 @@ orgs:
     optionality: "free-ish but Vision-2030-directed"
     gravity: "real GROSS — NEOM + $45B into Vision Fund 1"
     gloss: "Saudi sovereign wealth; power projected through capital, not product."
-    axes_num: { weight: 1210, thrust: 12.5, gravity: 50 }  # agent-derive 2026-07-28 rollout — weight ~$1.21T Jul-26 (prior ~$900B stale); gravity est-rough
-    thrust: "~$12.5B/yr AI run-rate — AWS $5B + AirTrunk $3B + Humain $1.2B + xAI $3B"   # agent-derive 2026-07-28
+    axes_num: { weight: 1210, thrust: 12.5, gravity: 50 }  # agent-derive 2026-07-28 rollout — weight ~$1.21T Jul-26 (prior ~$900B stale); gravity est-rough; ⚠ thrust below is now stale too (crawl 2026-08-04) — flagged, not re-derived
+    thrust: "~$12.5B/yr AI run-rate — AWS $5B + AirTrunk $3B + Humain $1.2B + xAI $3B"   # agent-derive 2026-07-28 — STALE per crawl 2026-08-04: HUMAIN's actual AI deal book tallies ~$21-23B (adds AMD $10B, not carried here at all); numeric reconciliation not done this pass, flagged for the next axes refresh
 
   # --- Guilds (institutional, non-AI-native) ---
   - slug: kaiser-permanente
@@ -690,12 +690,12 @@ orgs:
     pocket: foundry   # spin-up-board 2026-07-25
     sphere: gulf
     axes_asof: 2026-07-25
-    commanded_capital: "~$5B/12mo organic ($3B cash + ~$1.9B/yr operating cash flow; + CHIPS $1.5B + $375M quantum + Mubadala parent); market cap ~$29.5B is a separate label"
-    optionality: "mixed — self-funded but Mubadala 82% directs"
+    commanded_capital: "~$5B/12mo organic ($3B cash + ~$1.9B/yr operating cash flow; + CHIPS ~$2.175B incl. two new gov-equity stakes for quantum+photonics + Mubadala parent); market cap ~$29.5B is a separate label"   # CHIPS figure corrected 2026-08-04 (crawl) — was $1.5B, missed two new ~1%-stake awards ($375M quantum + $300M photonics)
+    optionality: "mixed — self-funded but Mubadala 73% directs"   # corrected 2026-08-04 (crawl) — Mubadala trimmed from 82% to 73% via a $2B share sale (May 2026) while adding its own legal chief to the board
     gravity: "~$6.84B/yr GROSS — specialty/mature nodes for auto/defense/RF; #3 foundry, trusted supplier"
-    gloss: "Mubadala controls 82% — specialty/mature-node foundry, trusted supplier to auto/defense/RF."
-    axes_num: { weight: 16.9, thrust: -0.4, gravity: 15 }  # agent-derive 2026-07-28 rollout
-    thrust: "genuinely negative — capex $0.87B < dep $1.27B, no M&A (real, not artifact)"   # agent-derive 2026-07-28
+    gloss: "Mubadala controls 73% (trimmed from 82%, May 2026) — specialty/mature-node foundry, trusted supplier to auto/defense/RF."
+    axes_num: { weight: 16.9, thrust: -0.4, gravity: 15 }  # agent-derive 2026-07-28 rollout — ⚠ thrust below is now stale (crawl 2026-08-04); numeric re-derivation not done this pass
+    thrust: "Q1 2025 was genuinely negative (capex $0.87B < dep $1.27B), but Q1 2026 nearly closed the gap — capex $166M→$312M YoY while dep $352M→$311M (crawl 2026-08-04, per 10-Q); no longer 'genuinely negative,' flagged for the next axes refresh rather than re-derived here"
 
   # chips
   - slug: amd

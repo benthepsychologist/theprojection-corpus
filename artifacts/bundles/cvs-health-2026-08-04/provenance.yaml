@@ -1,0 +1,38 @@
+# Bundle — crawl finding cvs-health-2026-08-04
+artifact: artifacts/findings/cvs-health-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  WebSearch + WebFetch on primary/trade sources. GDELT DOC API rate-limited
+  after the first query (shared-session budget contention with concurrent
+  crawls) and was not the primary sourcing path. Several
+  behavioral-health-AI-denial search hits were excluded as unreliable
+  content-farm SEO blogs (muni.health, prombs.com, mozuhealth.com,
+  gomedicalbilling.com, claimback.app) — no verifiable specifics, not cited
+  in the finding.
+items:
+  - {id: stat-senate-probe, url: "https://www.statnews.com/2026/07/15/medicare-advantage-ai-care-denials-probe-blumenthal-hawley/", ts: "2026-07-15", note: "Blumenthal/Hawley letters to UnitedHealth, Humana, AND CVS Health over AI-driven post-acute denials — the direct thread-placement evidence"}
+  - {id: schall-investigation-open, url: "https://www.prnewswire.com/news-releases/cvsaetna-medicare-advantage-plans-policy-holders-have-opportunity-to-join-investigation-into-improper-claim-denial-for-post-acute-care-with-the-schall-law-firm-302563551.html", ts: "2025-09-22"}
+  - {id: schall-investigation-update, url: "https://distilinfo.com/2026/04/16/cvs-aetna-medicare-advantage-claim-denial-investigation/", ts: "2026-04-16"}
+  - {id: arnold-porter-fca-settlement, url: "https://www.arnoldporter.com/en/perspectives/blogs/fca-qui-notes/posts/2026/03/aetna-pays-settlements-government-intensifies-ma-scrutiny", ts: "2026-03-01", note: "$117.7M FCA settlement — not AI, but same regulatory-scrutiny climate; CIA refused"}
+  - {id: cvs-caremark-ai-pbm, url: "https://business.caremark.com/insights/2026/data-driven-pharmacy-benefits.html", ts: "2026-01-01", note: "company self-reported ePA automation figures (~43% immediate approval, ~30min median) — direct WebFetch 403'd, cited via WebSearch summary; treat as company-sourced, not independently verified"}
+  - {id: forbes-health100, url: "https://www.forbes.com/sites/brucejapsen/2026/03/05/cvs-health-and-google-launch-ai-business-to-personalize-healthcare/", ts: "2026-03-05"}
+  - {id: nbc-chicago-oak-street-closures, url: "https://www.nbcchicago.com/news/local/cvs-health-to-shut-down-16-underperforming-oak-street-health-clinics-including-1-in-chicago/3845554/", ts: "2026-01-01"}
+  - {id: investmentgrade-credit-rating, url: "https://investmentgrade.com/cvs-credit-rating-nnn-cap-rate/", ts: "2026-01-01", note: "S&P/Fitch/Moody's ratings + leverage figures"}
+  - {id: healthcaredive-q1-2026-earnings, url: "https://www.healthcaredive.com/news/cvs-hikes-outlook-aetna-improved-performance-q1-2026-earnings/819462/", ts: "2026-05-01"}
+  - {id: cvs-ir-q2-2026-call-notice, url: "https://www.cvshealth.com/news/company-news/cvs-health-to-hold-second-quarter-2026-earnings-conference-call.html", ts: "2026-07-15", note: "Q2 2026 earnings call scheduled 2026-08-05 08:00 ET — feeds upcoming.yaml"}
+  - {id: beckers-alma-rate-cuts, url: "https://www.beckersbehavioralhealth.com/behavioral-health-government-policies/psychiatry-psychology-groups-urge-aetna-to-pause-reimbursement-cuts-for-behavioral-health-clinicians/", ts: "2026-06-01"}
+  - {id: bhbusiness-alma-rate-cuts, url: "https://bhbusiness.com/2026/05/21/aetna-cuts-rates-with-alma-contracted-therapists/", ts: "2026-05-21", note: "fetch 403'd; cited via WebSearch summary only"}
+  - {id: apa-services-letter, url: "https://updates.apaservices.org/apa--american-psychiatric-association-urge-aetna-to-pause-reimbursement-rate-cuts-for-behavioral-health-clinicians", ts: "2026-06-04", note: "joint APA / American Psychiatric Association letter — no AI or MHPAEA language found; kept adjacent to both mental-health threads, not merged into either"}
+notes: >-
+  Primary editorial finding: CVS Health is named directly alongside
+  UnitedHealth and Humana (2 of payer-ai-claim-denial's 4 existing entities)
+  in the same 2026-07-15 Senate AI-denial inquiry, and Aetna carries its own
+  structurally-parallel AI-denial suit (Schall Law Firm) to Humana's nH
+  Predict docket already tracked on that thread. Recommendation: add
+  cvs-health to payer-ai-claim-denial's entities list and backfill its
+  timeline, rather than open a new thread. The Alma reimbursement-cut story
+  is real and mental-health-lens relevant but was kept OUT of both existing
+  mental-health threads (payer-ai-claim-denial is AI-specific; the letter
+  shows no AI mechanism, and mhpaea-parity-limbo is federal-rule-specific;
+  no MHPAEA citation was found in sources fetched) — flagged as a watch
+  item instead of force-fit.

@@ -1,0 +1,32 @@
+# Bundle — crawl finding hca-healthcare-2026-08-04
+artifact: artifacts/findings/hca-healthcare-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  GDELT contended/rate-limited by concurrent sibling crawls this session
+  (every attempt, including after backoff, returned a rate-limit notice or
+  ~1 unrelated article). All sourcing from WebSearch + directly-fetched
+  primary/trade sources: HCA's own "HCA Healthcare Today" editorial site,
+  National Nurses United press releases (union-side, flagged as such —
+  no HCA rebuttal found), SEC EDGAR (8-K guidance-cut exhibit + Q2 2026
+  10-Q, both fetched as primary text, no rate limits), and law-firm
+  investor-alert press releases for the securities-fraud probe (evented,
+  cross-checked across 5 independent firms for consistency).
+items:
+  - {id: hca-today-ai-strategy, url: "https://hcahealthcaretoday.com/2026/07/21/hca-healthcares-strategic-approach-to-scaling-artificial-intelligence/", ts: "2026-07-21"}
+  - {id: nnu-palantir-protest, url: "https://www.nationalnursesunited.org/press/union-nurses-to-protest-palantir-and-hca-collaboration-at-frist-gala", ts: "2026-04-18", note: "protest date; press release publish date not separately captured"}
+  - {id: nnu-17-facility-contracts, url: "https://www.nationalnursesunited.org/press/nurses-at-17-hca-facilities-in-six-states-ratify-new-union-contracts", ts: "2024-10-22", note: "background — predates the Palantir/Timpani-specific dispute, does not resolve it"}
+  - {id: fiercehealthcare-ai-deployment, url: "https://www.fiercehealthcare.com/ai-and-machine-learning/ai-already-playing-role-countrys-largest-profit-hospital-chain", ts: "2026", note: "403 on fetch — cited only via WebSearch snippet, not full text; treat corroborating detail as thin"}
+  - {id: sec-8k-guidance-cut, url: "https://www.sec.gov/Archives/edgar/data/860730/000119312526302539/hca-ex99_1.htm", ts: "2026-07-14"}
+  - {id: sec-10q-q2-2026, url: "https://www.sec.gov/Archives/edgar/data/860730/000119312526321077/hca-20260630.htm", ts: "2026-06-30"}
+  - {id: portnoy-law-investigation, url: "https://www.globenewswire.com/news-release/2026/07/22/3331642/0/en/hca-healthcare-inc-investigated-by-the-portnoy-law-firm.html", ts: "2026-07-22"}
+  - {id: kirby-mcinerney-investigation, url: "https://www.globenewswire.com/news-release/2026/07/21/3330167/0/en/hca-investor-alert-kirby-mcinerney-llp-announces-investigation-into-potential-securities-fraud.html", ts: "2026-07-21"}
+notes: >-
+  Union-sourced facts (NNU press releases) are labeled as such in the
+  finding — no HCA response to the Palantir/staffing-centralization
+  allegations was found this crawl. HCA's own AI-program inventory is
+  self-reported (company editorial site), separately flagged. The
+  securities-fraud probe and the AI story are confirmed editorially
+  SEPARATE — both broke in the same July 2026 window but no source ties
+  them together; do not merge them into one thread. No AI mention found
+  anywhere in the Q2 2026 10-Q — flagged as a real gap (AI is not yet a
+  disclosed financial-materiality item for HCA).

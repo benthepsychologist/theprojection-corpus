@@ -1,0 +1,72 @@
+# Bundle — crawl finding pif-2026-08-04
+# Backward-crawl backstory pull for PIF (Saudi Arabia's Public Investment
+# Fund), which had zero thread coverage despite a board.yaml entry
+# commanding ~$1.21T AUM and ~$12.5B/yr AI-specific run-rate. Covers
+# HUMAIN's launch/shipped product, the AWS/AirTrunk/xAI/AMD position
+# detail, Gulf chip-export policy context, and the headline finding: PIF's
+# 2025 retreat from NEOM's "The Line" and the capital reallocation into
+# HUMAIN's AI buildout.
+artifact: artifacts/findings/pif-2026-08-04.md
+crawled_at: "2026-08-04T00:00:00Z"
+method: >
+  WebSearch was available this pass (no session budget exhaustion hit).
+  WebFetch used against near-primary sources where reachable — AMD's own
+  investor-relations release confirms the AMD/HUMAIN deal directly; PIF's
+  own press release (pif.gov.sa) and Bloomberg's UAE export-control piece
+  both returned HTTP 403 on direct fetch and are sourced secondary via
+  aggregator pickups instead, flagged accordingly. houseofsaud.com (a
+  Saudi/Gulf giga-project trade blog, not a wire service) supplied the
+  NEOM/"The Line" budget-cut figures central to the headline finding;
+  corroborated directionally by AGBI and a Semafor pickup but the exact
+  dollar figures are single-sourced. Read first: attention/threads.yaml
+  (softbank-all-in, asset-managers-build-ai blocks) and their linked
+  artifacts/threads/*.md files for house style; attention/board.yaml's
+  pif entry and attention/watchlist.yaml (PIF already watchlisted,
+  confirming the thread gap) read to scope the crawl.
+queries:
+  websearch:
+    - "PIF Humain AI Saudi Arabia August 2026"
+    - "PIF AWS AirTrunk xAI investment 2026"
+    - "Saudi Arabia Gulf chip export controls Nvidia GAIN AI Act 2026"
+    - "HUMAIN xAI Grok data center Saudi Arabia July 2026"
+    - "PIF assets under management $1 trillion 2026 Vision 2030 target"
+    - "PIF Line NEOM suspended construction budget cut $71 billion $30 billion 2025"
+    - "Humain AMD $10 billion AI compute deal Saudi Arabia"
+    - "Saudi Arabia PIF sovereign AI fund new investment August 2026"
+    - "PIF talks $40 billion AI investment fund"
+  webfetch:
+    - "https://www.argaam.com/en/article/articledetail/id/1881662"
+    - "https://www.bloomberg.com/news/articles/2026-07-10/us-eases-export-curbs-on-uae-opening-door-for-ai-chip-sales"
+    - "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
+    - "https://houseofsaud.com/pif-2026-2030-strategy/"
+  webfetch_403_blocked:
+    - "https://www.bloomberg.com/news/articles/2026-07-10/us-eases-export-curbs-on-uae-opening-door-for-ai-chip-sales"
+    - "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/"
+  gdelt_doc_api:
+    - "rate-limited (429/backoff message) before a usable result returned; not relied on this pass"
+items:
+  # --- HUMAIN — LAUNCH, PRODUCT, ORG ---
+  - {id: humain-launch, figure: "HUMAIN launched 2025-05, chaired by Crown Prince Mohammed bin Salman, as PIF's vehicle to build the full AI stack (data centers, cloud, models, apps); consolidated existing national AI capabilities incl. capacity linked to Saudi Aramco/Aramco Digital", label: "PIF press release (pif.gov.sa) via search-index summary; AI Magazine, Data Centre Magazine corroboration", url: "https://www.pif.gov.sa/en/news-and-insights/press-releases/2025/hrh-crown-prince-launches-humain-as-global-ai-powerhouse/", as_of: "2025-05", confidence: medium}
+  - {id: humain-os, figure: "HUMAIN OS unveiled at the 2026 PIF Private Sector Forum in Riyadh — an 'AI-native,' intent-driven operating layer (CEO Tareq Amin)", label: "AI Magazine ('HUMAIN unveils HUMAIN OS at PIF Forum'); Data Centre Magazine corroboration", url: "https://aimagazine.com/news/humain-unveils-humain-os-at-pif-forum", as_of: "2026", confidence: medium}
+  - {id: humain-chat-allam, figure: "HUMAIN launched consumer app 'HUMAIN Chat' on August 25, built on Allam (an Arabic-language foundation model) — year ambiguous in source, likely 2025 (HUMAIN's launch year) but not confirmed", label: "Al Majalla ('HUMAIN: artificial intelligence with a Saudi imprint')", url: "https://en.majalla.com/node/328215/science-technology/humain-artificial-intelligence-saudi-imprint", as_of: "2025-08-25", confidence: thin}
+  - {id: humain-23b-tally, figure: "Within HUMAIN's first ~11 months, it secured roughly $23B in named technology partnerships (AMD $10B, AWS $5B+, xAI $3B, AirTrunk ~$3B)", label: "houseofsaud.com ('PIF Kills The Line, Bets $23B on Humain AI Instead') — the $23B sum is single-sourced as a tally; individual components corroborated separately", url: "https://houseofsaud.com/pif-2026-2030-strategy/", as_of: "2026", confidence: medium}
+  # --- THE FOUR NAMED AI POSITIONS ---
+  - {id: amd-10b-deal, figure: "AMD $10B multi-year partnership with HUMAIN: 50MW compute by Q4 2025 scaling to 500MW+ over 5 years; includes a Cisco joint venture targeting 1GW of AI infrastructure in Saudi Arabia", label: "AMD investor relations (primary press release)", url: "https://ir.amd.com/news-events/press-releases/detail/1250/amd-and-humain-form-strategic-10b-collaboration-to-advance-global-ai", as_of: "2025-11", confidence: high}
+  - {id: aws-5b-region, figure: "AWS ~$5.3B dedicated AI Zone / AWS region inside Saudi Arabia under the HUMAIN partnership, scheduled online 2026", label: "TechCrunch ('AWS enters into strategic partnership with Saudi Arabia-backed Humain')", url: "https://techcrunch.com/2025/05/13/aws-enters-into-strategic-partnership-with-saudi-arabia-backed-humain", as_of: "2025-05-13", confidence: medium}
+  - {id: xai-3b-seriese, figure: "HUMAIN invested $3B in xAI as part of a Series E round (reported ~Feb 2026); becomes a significant minority xAI shareholder, stake later reported to convert into SpaceX shares as part of xAI's merger into SpaceX", label: "Argaam ('HUMAIN invests $3B in xAI, converts stake into SpaceX shares')", url: "https://www.argaam.com/en/article/articledetail/id/1881662", as_of: "2026-02", confidence: medium}
+  - {id: xai-humain-datacenter, figure: "xAI and HUMAIN building a 500MW data-center hub in Saudi Arabia — xAI's first major deployment outside the US — initial cluster of 18,000 Nvidia GB300 GPUs; Grok deployed nationwide as a 'unified national AI layer' for government/private use", label: "DataCenterDynamics ('xAI, Humain to build 500MW Saudi Arabia data center'); x.ai/news/grok-goes-global; DigiTimes corroboration", url: "https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/", as_of: "2025-11-20", confidence: medium}
+  - {id: airtrunk-3b, figure: "HUMAIN and Blackstone/CPPIB-backed AirTrunk partnership; initial data-center campus costing ~$3B in Saudi Arabia", label: "PR Newswire (HUMAIN/AirTrunk partnership release); Real Assets/IPE corroboration", url: "https://www.prnewswire.com/news-releases/humain-and-blackstone-backed-airtrunk-announce-partnership-to-build-state-of-the-art-data-centers-in-the-kingdom-of-saudi-arabia-302596808.html", as_of: "2026", confidence: medium}
+  - {id: board-thrust-reconciliation-gap, figure: "board.yaml's current thrust line ('Humain $1.2B' as one of four named AI positions, ~$12.5B/yr total) is far smaller than this pass's HUMAIN deal-book tally (~$21-23B, AMD+AWS+xAI+AirTrunk) — not reconciled; may reflect an annualized run-rate vs. multi-year headline totals, but that's a /classify-layer judgment, not resolved here", label: "Internal comparison — attention/board.yaml pif entry vs. this crawl's items above", url: "", as_of: "2026-08-04", confidence: thin}
+  # --- CHIP ACCESS / EXPORT CONTROLS ---
+  - {id: nvidia-35k-approval, figure: "US approved sale of up to 35,000 advanced Nvidia chips (~$1B) to HUMAIN and UAE's G42, Nov 2025 — reported tied to Crown Prince Mohammed bin Salman's Washington visit; described as a major reversal of prior policy resisting direct advanced-chip exports to state-backed Gulf AI firms", label: "CNBC ('US greenlights AI chip exports to Gulf tech giants after Saudi Crown Prince's Washington visit')", url: "https://www.cnbc.com/2025/11/20/us-approves-ai-chip-exports-to-gulf-after-saudi-crown-prince-visit.html", as_of: "2025-11-20", confidence: medium}
+  - {id: uae-export-easing-0710, figure: "US eased export curbs on the UAE (not Saudi) for Nvidia/AMD AI chips, effective 2026-07-10, citing UAE steps to safeguard sensitive US technology — included as regional export-control context, not a Saudi-specific data point", label: "US News corroborating Bloomberg's dateline; Bloomberg article itself returned HTTP 403 on direct fetch", url: "https://www.usnews.com/news/world/articles/2026-07-10/us-makes-it-easier-to-export-certain-military-items-ai-chips-and-commercial-satellites-to-the-uae", as_of: "2026-07-10", confidence: medium}
+  - {id: gain-ai-act-not-found, figure: "No corroborating detail located this pass on a 'GAIN AI Act' or further Saudi-specific chip-policy action beyond the Nov-2025 35,000-chip approval — gap flagged, not filled", label: "Absence noted across this pass's WebSearch queries", url: "", as_of: "2026-08-04", confidence: thin}
+  # --- NEOM / THE LINE — CAPITAL REALLOCATION (headline finding) ---
+  - {id: line-suspended, figure: "PIF suspended construction on NEOM's 'The Line' 2025-09-16, after completing only ~2.4km of foundation against a planned 170km run (~1.4% delivery); site workforce cut ~35%, 1,000+ employees relocated from Tabuk Province to Riyadh", label: "AGBI ('PIF spending cuts slow giga-projects and trigger layoffs'); houseofsaud.com corroborating detail", url: "https://www.agbi.com/giga-projects/2025/03/pif-spending-cuts-slow-giga-projects-and-trigger-layoffs/", as_of: "2025-09-16", confidence: medium}
+  - {id: line-construction-cut, figure: "PIF construction contract commitments reportedly cut 58%, from $71B to $30B — described as the fund's largest-ever capex reversal", label: "houseofsaud.com ('PIF Kills The Line, Bets $23B on Humain AI Instead') — single-sourced for the exact dollar figures", url: "https://houseofsaud.com/pif-2026-2030-strategy/", as_of: "2025-09", confidence: thin}
+  - {id: line-halted-2030, figure: "2026-05-22: Semafor reported NEOM formally halted The Line until after 2030, redesignating Oxagon as the priority node; Oxagon itself reportedly re-pivoting toward data centers", label: "Semafor, via houseofsaud.com pickup ('NEOM Halts The Line, Pivots to Oxagon Data Centres') — single wire pickup, primary Semafor piece not directly fetched", url: "https://houseofsaud.com/neom-halts-the-line-oxagon-data-centre-pivot/", as_of: "2026-05-22", confidence: medium}
+  - {id: fiscal-pressure-context, figure: "Oil near $71/barrel through mid-2025 vs. ~$90+ needed for Saudi fiscal balance; Aramco cut its dividend ~$40B for 2025; PIF giga-project portfolio took an $8B write-down end-2024; PIF's 2024 investment return reported 'close to zero'; PIF cash reserves fell to ~$15B, lowest since 2020", label: "houseofsaud.com, citing reporting consistent with AGBI's independent spending-cuts coverage", url: "https://houseofsaud.com/pif-2026-2030-strategy/", as_of: "2025", confidence: medium}
+  # --- VISION 2030 / AUM TARGETS ---
+  - {id: pif-2030-strategy-approved, figure: "PIF board, chaired by MBS, approved a 2026-2030 strategy reported to recalibrate investment toward AI, events/entertainment, and housing", label: "PIF press release (pif.gov.sa, HTTP 403 on direct fetch this pass); The Saudi Times and Middle East Insider aggregator pickups used instead", url: "https://www.pif.gov.sa/en/news-and-insights/press-releases/2026/chaired-by-hrh-crown-prince-pif-board-of-directors-approves-pif-2026-2030-strategy/", as_of: "2026", confidence: thin}
+  - {id: aum-target-267t, figure: "PIF raised its 2030 AUM target to $2.67T (from an original $1.87T target), announced April 2025", label: "The National ('Saudi's PIF raises 2030 assets target to $2.67 trillion after exceeding last year's goal')", url: "https://www.thenationalnews.com/business/2025/04/27/saudis-pif-raises-2030-target-to-267-trillion-after-exceeding-last-years-goal/", as_of: "2025-04-27", confidence: medium}
+  - {id: aum-target-145t-conflict, figure: "Separately, modeling around the 2026-2030 strategy implies a path to only ~$1.45T AUM by 2030 (~9.4% CAGR off the ~$925B end-2024 base) — not reconciled against the $2.67T figure above; both are PIF-adjacent but not the same document", label: "themiddleeastinsider.com ('Inside Saudi PIF's New 2026-2030 Strategy')", url: "https://themiddleeastinsider.com/2026/05/19/saudi-pif-2026-2030-strategy-three-portfolios-april/", as_of: "2026-05-19", confidence: thin}

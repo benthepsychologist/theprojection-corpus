@@ -1794,3 +1794,101 @@ insurance pocket) are out on 7 parallel crawls — two pocket-level crawls
 were dispatched instead of ten separate ones, with explicit instructions
 to make a real curatorial call (existing-thread / new thread / genuinely
 quiet) rather than force coverage that isn't there.
+
+## 2026-08-04 (later still) — the rest of the zero-coverage list: all 7 crawls landed and applied
+
+Threads 75→84. Full results, per crawl:
+
+**Mistral AI (new thread `mistral-ai`, weight 2, lens ai):** confirmed
+its own actor-doing note was right — a real, active gap, not a quiet
+actor. Five product ships in six weeks (OCR 4, formal-math, its first
+embodied-robotics model, dev tooling, a safety classifier) alongside a
+capital-and-institutional push (a pending ~€3B/€20B round, a French
+defense framework, Airbus/BMW/EDF/CMA CGM industrial deals). One real
+correction: "France Signs $14B AI Deal with Mistral" headlines conflated
+Mistral's own valuation with an undisclosed defense-contract figure. The
+Microsoft deal board.yaml flagged "thin" turned out to be Microsoft
+RENTING compute FROM Mistral's own EU datacenters, not funding it.
+
+**PIF (new thread `pif-ai-buildout`, weight 3, lens global-capital):** a
+sharper story than "sovereign fund invests in AI" — PIF suspended NEOM's
+"The Line" (only ~1.4% of the planned foundation built, halted past
+2030) under the same fiscal squeeze (oil ~$71/bbl, an Aramco dividend
+cut of ~$40B, PIF cash down to ~$15B) funding a ~$21-23B HUMAIN AI deal
+book (AMD $10B, AWS ~$5.3B, xAI $3B, AirTrunk ~$3B) assembled in under a
+year. **board.yaml fix applied:** the $12.5B/yr thrust figure is now
+flagged stale against this larger tally (doesn't carry the AMD deal at
+all) — flagged for a numeric refresh, not re-derived this pass.
+
+**GlobalFoundries (new thread `globalfoundries`, weight 2, lens ai):**
+NOT quiet, contrary to its own negative-thrust board characterization —
+Q1 2026 capex nearly doubled YoY ($166M→$312M) while depreciation fell
+($352M→$311M), two new CHIPS Act awards structured as government equity
+stakes landed (Intel-golden-share-style, $375M quantum + $300M
+photonics), Mubadala trimmed its stake 82%→73% while adding its own
+legal chief to the board, first-ever dividend declared, stock down ~45%
+since the Mubadala sale heading into tomorrow's earnings. **board.yaml
+fixed**: Mubadala's stake (82%→73%), CHIPS commitments ($1.5B→$2.175B),
+and the thrust characterization (no longer "genuinely negative") all
+corrected with the crawl's sourcing.
+
+**CVS Health (tagged onto existing `payer-ai-claim-denial`, not a new
+thread):** named directly alongside UnitedHealth and Humana in a
+bipartisan Senate letter (Blumenthal/Hawley, 07-15) demanding AI records
+over post-acute-care denials; Aetna carries its own active AI-denial
+lawsuit investigation mirroring Humana's nH Predict case. A separate,
+unrelated behavioral-health thread (Aetna cutting Alma-therapist
+reimbursement, APA-protested) turned out to be a payment-rate dispute
+with no AI/parity angle — noted but not force-fit onto either MH thread.
+
+**HCA Healthcare (new thread `hca-healthcare`, weight 2, lens
+mental-health):** a real but quieter/earlier-stage labor story than
+Kaiser's — six named AI initiatives across 130+ hospitals (Timpani
+staffing/scheduling built with Palantir, a Google-built Nurse Handoff
+tool, ambient documentation, GE HealthCare maternal-fetal integration),
+one NUHW protest over the Palantir partnership (04-18), no regulatory
+complaint or strike yet. A separate securities-fraud probe (07-14
+guidance cut) confirmed unrelated to AI. AI does not appear anywhere in
+HCA's own Q2 2026 10-Q. `actor-doing.yaml`'s existing (07-28, thin)
+entry updated with the fuller picture.
+
+**Asset-manager pocket triage (State Street, Vanguard, Fidelity):**
+honest split — State Street and Vanguard genuinely quiet (their only AI
+stories are internal portfolio-analysis tooling, not investment; both
+now carry `actor-doing.yaml` notes saying so). Fidelity gets its own
+new thread (`fidelity-buys-ai-labs`, weight 2, lens global-capital): its
+mutual-fund complex has been taking direct primary-market equity in
+Anthropic (three rounds since Sep-2025, $183B→$965B valuation) and
+OpenAI (~$1.09B across 33 funds) — buying into the labs' cap tables
+directly, a different mechanism from BlackRock's physical-infrastructure
+play on `asset-managers-build-ai`, so not tagged onto that thread.
+
+**Insurance pocket triage (7 companies) — 4 real stories, 3 genuinely
+quiet.** New threads: **`ping-an-insurtech-ai`** (weight 3, lens ai) —
+confirms the board's own flag as strongest insurtech-AI angle: ~60% of
+claims automated (some in 51 seconds), underwriting review cut to
+~1.5hr, 93% of new auto policies auto-issued, against a fresh NFRA
+liability framework (06-18). **`allianz-ai-claims-automation`** (weight
+2, lens ai) — not one of the two companies prioritized going in, but the
+evidence didn't support skipping it: #1 on the 2026 Evident AI Index, a
+named global Anthropic partnership (01-09), Project Nemo settling small
+claims ~80% faster in Australia since Jul-2025. **`berkshire-ai-capital-
+stance`** (weight 2, lens global-capital) — a fast-built Alphabet
+position ($4.3B→~$28-41B in under a year, incl. a $10B AI-infra private
+placement) that Buffett frames as an AI-capex bet, in real tension with
+new CEO Abel's "not AI for the sake of AI." **`nippon-life-openai-suit`**
+(weight 2, lens ai) — a docket-verified federal case (1:26-cv-02448,
+N.D. Ill., filed 03-04) testing whether an AI developer can be held
+liable for a user's chatbot-assisted misuse of a legal settlement.
+**Genuinely quiet, `actor-doing.yaml` notes added, no thread forced:**
+China Life (real but thin — a chatbot, no underwriting-automation
+story), Prudential Financial (260+ AI use cases but no distinct
+narrative), MetLife (same pattern — tooling, no hook).
+
+**Ledger:** 6 new `upcoming.yaml` entries (Mistral's round close,
+CVS/GlobalFoundries Q2 earnings, Berkshire's 13F, Ping An's interim
+results) — one (`aetna-alma-rate-cut-effective`) logged with its due
+date already three weeks elapsed, no outcome confirmed either way,
+flagged as a live passed-silent candidate for the next `/daily`.
+
+Re-rendered and republished after all applied.

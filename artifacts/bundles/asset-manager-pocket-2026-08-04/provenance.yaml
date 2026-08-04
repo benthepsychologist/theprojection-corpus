@@ -1,0 +1,58 @@
+# Bundle — backward crawl: State Street / Vanguard / Fidelity AI-investment
+# triage (2026-08-04). Companion to
+# artifacts/findings/asset-manager-pocket-2026-08-04.md — the receipts behind
+# that finding's per-company verdicts. Not a capital/posture/gravity node
+# bundle (those already exist: state-street-node, vanguard-node,
+# fidelity-node) — this is a single-question crawl bundle: does each
+# company have AI-infrastructure/AI-company investment activity, y/n, sourced.
+crawl: asset-manager-pocket-2026-08-04
+asof: 2026-08-04
+method: >
+  WebSearch (this session's budget was intact throughout) + WebFetch on
+  primary/near-primary pages. GDELT DOC API rate-limited on every attempt
+  ("please limit requests to one every 5 seconds" persisted past repeated
+  backoff) — abandoned, WebSearch covered the window adequately.
+trigger: >
+  Board-pass audit: State Street/Vanguard/Fidelity all on board.yaml
+  (kingdom/capital/us) with zero thread coverage, while BlackRock alone
+  carries asset-managers-build-ai (opened 2026-07-28).
+
+state_street:
+  verdict: genuinely_quiet
+  claims:
+    - {figure: "SSGA alternatives platform spans private credit, real assets, infrastructure, private equity, hedge strategies (capability marketing, no dated 2026 deal found)", label: "State Street — Alternatives capability page", url: "https://www.ssga.com/us/en/institutional/capabilities/alternatives", as_of: "2026-08", confidence: med}
+    - {figure: "AI capex cycle framed as a market theme/opportunity, not a State Street position", label: "SSGA insights — 'Why the AI CapEx cycle may have more staying power than you think'", url: "https://www.ssga.com/us/en/institutional/insights/ai-capex-cycle-may-have-more-staying-power", as_of: "2026", confidence: med}
+    - {figure: "State Street Alpha platform (built on Charles River Development + Axioma) building generative-AI client-workflow features; ~400 AI practitioners, 6 recent patents cited", label: "State Street — 'Artificial intelligence and the future of intelligent investing'", url: "https://www.statestreet.com/alpha/insights/artificial-intelligence-investing", as_of: "2026", confidence: med}
+    - {figure: "AI framed as strategic approach to investment-management software, not an investment target", label: "SSGA — 'How AI is transforming investment management: State Street's strategic approach'", url: "https://www.ssga.com/us/en/intermediary/insights/how-ai-is-transforming-investment-management-state-street-strategic-approach", as_of: "2026", confidence: med}
+  notes: "Checked specifically for a GIP-style infra-fund deal per the crawl brief's instruction (State Street has an alternatives/infra arm unlike Vanguard) — none found. Only story is internal AI tooling / Aladdin-competing product, explicitly flagged as the weaker different-in-kind story."
+
+vanguard:
+  verdict: genuinely_quiet
+  claims:
+    - {figure: "Vanguard Growth ETF (VUG) $352B AUM, 160+ growth holdings — passive index exposure to AI/tech names, not a discretionary position", label: "24/7 Wall St — 'Is This the Best Vanguard AI ETF for 2026?'", url: "https://247wallst.com/investing/2026/03/27/is-this-the-best-vanguard-ai-etf-for-2026/", as_of: "2026-03", confidence: med}
+    - {figure: "Vanguard Real Estate ETF (VNQ) holds data-center REITs — passive index exposure", label: "Yahoo Finance — 'Vanguard's $10.8B ETF Made 19% Betting on AI Infrastructure'", url: "https://finance.yahoo.com/news/vanguard-10-8b-etf-made-193522720.html", as_of: "2026-01", confidence: med}
+    - {figure: "'Expert Insights' AI-enabled portfolio-analysis tool for advisors announced 2026-04-09; combines Vanguard portfolio expertise + generative AI; in pilot at announcement, broader rollout later in 2026", label: "Vanguard corporate press release", url: "https://corporate.vanguard.com/content/corporatesite/us/en/corp/who-we-are/pressroom/press-release-vanguard-launches-expert-insights-equipping-advisors-with-ai-powered-portfolio-analysis-expertise-04092026.html", as_of: "2026-04-09", confidence: high}
+  notes: "Confirms board gloss: client-owned at-cost mutual, ~$0 owned, no free corporate capital to deploy into any GIP-style position. Only dated real item is internal advisor tooling."
+
+fidelity:
+  verdict: deserves_own_thread
+  claims:
+    - {figure: "Fidelity Management & Research Co. co-led Anthropic Series F, Sept 2025: $13B raised at $183B post-money valuation", label: "web search synthesis (multiple outlets); not independently WebFetched this pass", url: "https://www.anthropic.com/news/series-h", as_of: "2025-09", confidence: med}
+    - {figure: "Fidelity named among investors in Anthropic Series G, Feb 2026: $30B raised, $380B valuation, GIC/Coatue-led", label: "web search synthesis", url: "https://www.anthropic.com/news/series-h", as_of: "2026-02", confidence: med}
+    - {figure: "Fidelity Management & Research Company named a 'significant investor' in Anthropic Series H, 2026-05-28: $65B raised, $965B post-money valuation; co-leads Capital Group/Coatue/D1/GIC/ICONIQ/XN; Fidelity alongside Blackstone/Brookfield/T. Rowe Price/Temasek", label: "Anthropic — official Series H announcement", url: "https://www.anthropic.com/news/series-h", as_of: "2026-05-28", confidence: high}
+    - {figure: "Fidelity holds ~$1.09B in OpenAI shares across 33 fund vehicles as of Q1 2026 — 3rd-largest fund sponsor by OpenAI exposure behind Capital Group (~$1.29B) and T. Rowe Price; broadest fund distribution of any sponsor", label: "leveragedposition.com — 'These 66 Funds hold OpenAI Shares' (sourced from SEC N-CSR filings)", url: "https://leveragedposition.com/blog/funds-that-hold-openai/", as_of: "2026-Q1", confidence: med}
+    - {figure: "Fidelity Management & Research Company participated as additional investor in OpenAI's March 31, 2026 round: $122B committed capital at $852B post-money valuation", label: "web search synthesis (multiple outlets)", url: "https://mungomash.com/orgs/openai/financials/", as_of: "2026-03-31", confidence: med}
+    - {figure: "Anthropic IPO roadshow/investor meetings underway mid-July 2026", label: "StartupHub.ai — Anthropic IPO watch", url: "https://www.startuphub.ai/ai-news/ipo-watch/2026/anthropic-ipo-roadshow-begins-2026-07-16", as_of: "2026-07-16", confidence: low}
+    - {figure: "OpenAI reportedly leaning toward waiting until 2027 to list rather than accept below-$1T valuation for a 2026 debut", label: "web search synthesis (late June 2026 reporting)", url: "https://forgeglobal.com/openai_ipo/", as_of: "2026-06", confidence: low}
+  notes: >
+    Distinguishing feature vs. BlackRock: Fidelity's AI-capital story is
+    primary-market EQUITY IN THE AI LABS THEMSELVES (Anthropic, OpenAI) via
+    its own mutual-fund complex — not physical infrastructure/data-center
+    ownership. Mechanically distinct from asset-managers-build-ai's
+    infra-buildout frame, hence the own-thread recommendation rather than
+    folding into that thread's entities. Some claims sourced via WebSearch
+    synthesis rather than direct WebFetch of a single primary page (search
+    results aggregated Anthropic's own release plus outlet reporting
+    consistently) — flagged med/low confidence accordingly; the Series H
+    figures are highest-confidence since WebFetched directly against
+    anthropic.com.
