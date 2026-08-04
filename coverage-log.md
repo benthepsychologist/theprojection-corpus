@@ -1737,3 +1737,17 @@ is pulling back. Same reasoning shape as SoftBank's classification
 earlier today — the leverage/distress side stays in `optionality`
 ("constrained/locked"), not folded into the posture word. `board.yaml`
 edited directly; re-rendered and republished.
+
+## 2026-08-04 (later still) — steer: AMD and ASML postures classified
+
+Ben: "classify AMD and ASML's postures too." Both **`expanding`**, and
+cleaner calls than Oracle/SoftBank — neither carries a distress caveat.
+**AMD:** three back-to-back mega compute-deals since Oct-2025 (OpenAI
+6GW, Meta 6GW, Anthropic 2GW, ~14GW total), MI400/Helios reaching volume
+production 07-22/23, net-cash and "mostly free" optionality already on
+the board. **ASML:** FY2026 revenue guidance raised twice (€36-40B →
+€43-45B) on a strong Q2, High-NA reaching volume production; the live
+three-front China export-control fight (the MATCH Act, an open Commerce
+inquiry, China's own domestic DUV effort) is a risk to watch, not
+evidence its own trajectory is turning — still climbing. `board.yaml`
+edited directly; re-rendered and republished.
