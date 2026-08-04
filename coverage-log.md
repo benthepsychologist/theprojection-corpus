@@ -1470,3 +1470,42 @@ should re-measure before rewriting the runner.**
 `.env` to the address already declared for the OpenAlex polite pool, and
 gdelt re-run on its own. Recorded here rather than silently, because the
 stale diagnosis is the more expensive of the two errors.
+
+### 2026-08-04 (later) — the term-coverage gap this entry identified is now closed (ben-steer)
+
+Ben approved the fix proposed above. Added to `attention/threads.yaml`:
+
+- **`ai-power-buildout`** — the regulator/grid-operator side: `ERCOT`,
+  `PUCT`, `interconnection queue`, `PJM`, `MISO`. PJM and MISO are the other
+  large US grid operators, so the same class of story in Virginia, Ohio or
+  Illinois is caught the way the Texas one now would be, rather than fixing
+  one state and waiting to be surprised by the next.
+- **`ai-datacenter-sites`** — the approval-gate side: `data center
+  moratorium`, `data center audit`, `data center approval`, `data center
+  project`, `interconnection queue`.
+
+**Regression-tested against the actual miss, not assumed.** Replaying the 12
+buffered items curation walked past on 08-03:
+
+| term set | items matched |
+| --- | --- |
+| terms as they were on 08-03 | **0 / 12** |
+| first proposal (grid-operator terms only) | **4 / 12** |
+| shipped set (+ `data center approval`, `data center project`) | **10 / 12** |
+
+The first proposal was tested before shipping and only recovered a third of
+them — the headlines mostly said "data center approvals halted" and named no
+grid body at all. That is why the shipped set is larger than the one
+proposed to Ben; the extra two terms are what took it from a partial fix to
+a real one.
+
+**The 2 still missed, stated rather than rounded away:** "Abbott orders audit
+of data centers seeking connection to Texas grid" and "Gov. Abbott: 'Texans
+Must Come First' on Data Centers". Both would need a bare `data centers`
+term, which is far too generic — it would match most of the AI lens every
+day and destroy the signal the thread exists to carry. **10/12 with a clean
+bar is the right trade against 12/12 with a flooded one.** Recorded so a
+future pass does not "improve" this by adding the generic term.
+
+**Provenance:** `ben-steer` 2026-08-04, answering the proposal filed in the
+overnight-extension entry above.

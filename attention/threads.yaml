@@ -1292,6 +1292,16 @@ threads:
       - "AI data center power"
       - "nuclear for AI"
       - "data center grid gas turbine"
+      # Regulator/grid-operator side (ben-steer 2026-08-04). Every term above
+      # is a company or project noun, so the 08-03 Texas interconnection
+      # freeze — a governor, a utility commission and a grid operator —
+      # matched NOTHING and 12 buffered items routed to no thread. These are
+      # the actors who can stop a build, as opposed to the ones doing it.
+      - "ERCOT"
+      - "PUCT"
+      - "interconnection queue"
+      - "PJM"
+      - "MISO"
     opened: 2026-07-24
     last_seen: 2026-08-03   # Texas PUCT/ERCOT audit-and-freeze (⟨daily 08-03⟩, caught 08-04)
     watch: >
@@ -1315,6 +1325,15 @@ threads:
     terms:
       - "AI data center campus"
       - "gigawatt data center site"
+      # Approval-gate side (ben-steer 2026-08-04) — the siting counterpart to
+      # ai-power-buildout's grid-operator terms. A site is now blockable by a
+      # state review, not only by land/water/fibre, and that story is written
+      # about regulators rather than developers.
+      - "data center moratorium"
+      - "data center audit"
+      - "data center approval"
+      - "data center project"
+      - "interconnection queue"
     opened: 2026-07-24
     watch: >
       Where the capex lands in CONCRETE — the specific gigawatt campuses.
