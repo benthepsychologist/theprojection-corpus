@@ -95,12 +95,28 @@ through `attention/`.
     at-most-one rule describes.
     **A flash lives 24 hours — "flash means today"** (Ben, 2026-08-01:
     *"flash messages should expire in 24h typically. flash means today."*).
-    Default `expires` is **the event date + 1 day**; anything longer is an
-    exception needing a stated reason. If it is still on the rail after a
-    day it has stopped being a flash and become a headline. Corollary: an
-    event that surfaces **late** still gets at most 24h from filing and
-    carries a note saying so — being missed does not buy a fresh lifespan.
-    This supersedes the 3-5 day `expires` values used through 2026-07-31.
+    **ENFORCED IN CODE since 2026-08-04**, not a convention the curator is
+    trusted to follow (Ben: *"fix the thing where flash messages stay for
+    longer than a day. 24h and gone."*). `render_read.flash_last_day()`
+    computes the cap: **a flash renders on its filing day and no longer.**
+    `filed` defaults to `date`; **`expires` can only SHORTEN a flash's life,
+    never extend it**, and an entry with no parsable filing day does not
+    render at all. There is no "exception with a stated reason" any more —
+    a longer `expires` is silently ignored rather than honoured. If it is
+    still on the rail after a day it has stopped being a flash and become a
+    headline. Corollary, still live: an event that surfaces **late** gets
+    24h **from filing**, which is why `filed` exists — set it explicitly on
+    a late catch and add a note saying so; being missed does not buy a fresh
+    lifespan, but it does not cost one either.
+    **Why this became code** (2026-08-04): the rule existed in this file
+    from 2026-08-01 and was violated immediately and repeatedly, because the
+    loader honoured whatever `expires` was hand-written —
+    `iran-strikes-cancelled-deal-claimed` ran **3 days**,
+    `ceuta-mass-border-crossing` ran **4**. A separate latent bug meant a
+    flash with no `expires` at all never expired. Same lesson as discipline
+    12's summary shape: *asking* for a constraint does not hold, so the
+    store enforces it. This supersedes the 3-5 day `expires` values used
+    through 2026-07-31.
     Executive
     summaries are written in the digests' **neutral register**; the
     per-lens "Today's throughline" *is* the lens summary, and

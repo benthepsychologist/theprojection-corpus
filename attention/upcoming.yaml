@@ -1081,6 +1081,27 @@ expectations:
     # (RTE 08-04 09:30 IST, fetched directly.)
     status: pending
 
+  - id: senate-commerce-kids-ai-markup
+    claim: "Senate Commerce marks up five kids' online-safety bills, incl. the CHATBOT Act (S.4407, Cruz/Schatz) requiring parent-managed 'family accounts' for minors using AI chatbots"
+    due: 2026-08-05
+    due_precision: day
+    thread: ai-therapy-regulatory-reckoning
+    entities: []
+    source: https://www.commerce.senate.gov/press/rep/release/chairman-cruz-announces-kids-safety-markup/
+    confidence: confirmed
+    what_confirms: "the markup happening + which of the five bills are reported out, amended, or held; the CHATBOT Act is the one on this lens"
+    logged: 2026-08-04
+    logged_by: curate-add
+    # 2026-08-04 ⟨daily, MH overnight pass⟩: markup is 08-05 10:00 ET, same
+    # morning as SB 903's California hearing (09:00 PT = 12:00 ET) — two
+    # separate AI-chatbot instruments moving in one day, one federal one
+    # state. ⚠ The CHATBOT Act (S.4407, Cruz/Schatz) is a DIFFERENT bill
+    # from the CHAT Act (Husted/Kim) already tracked in this lens: related
+    # subject, different sponsors, different number. Do not merge them.
+    # Announcement itself dated 07-29 (outside the sweep window) — logged
+    # now because the markup is tomorrow, not as a fresh catch.
+    status: pending
+
   - id: ism-services-cook-0805
     claim: "ISM Services PMI (July) prints and Fed Gov. Lisa Cook speaks — 08-05"
     due: 2026-08-05

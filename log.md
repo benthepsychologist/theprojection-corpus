@@ -1660,3 +1660,67 @@ Pick up: finalize 08-03 after ~10:00 ET with a real critic pass; re-check
 the framework/EO after ~14:00 ET and SpaceX after 16:30 ET; SB 903 hearing
 08-05 09:00 PT; extend the mental-health lens's unread overnight window;
 rebuild world-news.yaml once gdelt lands.
+
+### Addendum, same session — three corrections and two threads
+
+**✏️ The collector diagnosis in the entry above is wrong, and so was the
+standing one.** That entry was written mid-run and said the collector
+"stalled at 15/18 ... fourth consecutive run hit by the serial fan-out
+problem." It then **finished cleanly — 17/18, exit 0, ~50 minutes.** The one
+failure was **gdelt**, failing in milliseconds on
+`KESTREL_CONTACT_EMAIL is not set` — a deterministic config error, not a
+timeout. That variable was simply never set in this container's `.env`; the
+engine ships no default by design so the affected collectors (gdelt,
+sec_edgar, federal_register) fail loudly rather than send a fabricated
+contact. **Set it this session** to the address already declared for the
+OpenAlex polite pool, and re-ran gdelt on its own. ⚠ The "runner killed by
+its own timeout" story has been carried in STATUS.md, AGENTS.md and
+coverage-log across four runs and there is an INBOX item in kestrel filed on
+that premise — **it should be re-measured before anyone rewrites the
+runner.**
+
+**⏱ Flash lifetime is now enforced in code** (Ben: "24h and gone"). The 24h
+rule had existed in AGENTS.md discipline 10 since 08-01 and was violated
+immediately, because `load_flash()` honoured whatever `expires` the curator
+hand-wrote — real rail time on the six live entries was 2, 2, 3, 3, 4 and 4
+days. A second latent bug: the guard was `if exp and exp < today`, so a
+flash with **no** `expires` never expired at all. New
+`render_read.flash_last_day()` computes the cap instead of reading it — a
+flash renders on its **filing day** and no longer, `filed` defaults to
+`date` and exists so a late catch gets 24h from the catch, and `expires` may
+only SHORTEN. One function serves every surface (read page, publish adapter,
+readout fingerprints). Verified: all six entries now expire on their filing
+day and the rail is empty 08-02→08-04 where it previously carried stale
+entries. Engine committed+pushed (`db22ff0`); library skills updated to match
+and kits re-synced at `2026-08-04.1`.
+
+**🧵 Two threads opened (ben-steer).** `horn-of-africa-war` (Tigray
+reignition with cross-border spillover — opened deliberately QUIET, its
+background carried from the 08-03 digest and not re-verified, so it is owed
+a real sweep) and `europe-migration-schengen` (the POLICY fight, not the
+incident: the crossing and its toll stay in the digests, the thread carries
+what the bloc does — live today via the emergency Justice and Home Affairs
+Council). Both world-news lens, both answering candidates offered 08-03. Map
+now **72 threads**.
+
+**🏥 Mental-health lens extended after all**, on a re-run after the first
+sweep never returned. Three in-window items: TikTok settled three more teen
+harm suits ahead of the October trial (Meta/YouTube/Snap still going), a
+second family sued xAI over the Arkansas Grok CSAM case (thin sourcing,
+flagged), and a weakly-sourced NCSL tracker piece logged as a lead only. New
+ledger entry `senate-commerce-kids-ai-markup` **08-05** — a Senate Commerce
+markup of five kids' online-safety bills including the **CHATBOT Act
+(S.4407, Cruz/Schatz)**, which is a **different bill** from the CHAT Act
+(Husted/Kim) this lens already tracks; noted so they are not merged. One
+find — a Stanford study that AI companions deepen isolation in the already
+isolated — published 05:10 ET 08-04, **ten minutes past the digest-day
+boundary**, so it is held for the 08-04 record rather than backdated.
+
+⚠️ **Found, not fixed — AGENTS.md has drifted from its kit canonical.** The
+flash rules Ben set on 08-01 were written straight into this repo and never
+back-ported to `library/agentdocs/attention/AGENTS.md.tmpl`, which does not
+contain them at all. A kit dry-run wanted to overwrite AGENTS.md with the
+older library copy, which would have wiped the engine-split notes and the
+flash rules; `install --skip AGENTS.md` was used instead and the conflict
+left standing. The dirty-file guard works, but the two copies keep diverging.
+Ben's call whether to back-port.

@@ -1,4 +1,4 @@
-<!-- kit: attention/week@2026-07-31.3 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/week@2026-08-04.1 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: week
@@ -25,9 +25,12 @@ only ever grow it.
    week's hit/slipped/passed-silent scorecard into the weekly digest
    (⏳ section); prune resolved entries older than the closing week (the
    digest records them first — nothing is lost). **Also prune expired
-   flashes** from `attention/flash.yaml` (anything past its `expires`) —
-   the rail auto-hides them, this clears the file. Their substance already
-   lives in the digests and timelines; nothing is lost. If the week logged
+   flashes** from `attention/flash.yaml` — expired means past
+   `render_read.flash_last_day()` (the filing day; **not** the raw
+   `expires` field, which since 2026-08-04 can only shorten a flash and is
+   ignored when longer). This is now cosmetic tidying: the rail already
+   refuses to render them regardless. Their substance already lives in the
+   digests and timelines; nothing is lost. If the week logged
    **more than one or two flashes, say so in the digest** — a rail that
    fires often has a drifting bar and stops meaning anything
    (AGENTS discipline 10).

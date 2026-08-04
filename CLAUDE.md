@@ -36,8 +36,8 @@ a node + claim graph — schema shapes + pipeline).
 **The commands:** `/start` · `/daily` · `/week` · `/steer` · `/crawl` ·
 `/map` · `/publish` · `/classify` (`.claude/skills/`). Templates in
 `templates/`.
-Zero bizdev coupling — never read that repo; everything needed is distilled
-in `REBUILD-NOTES.md`.
+Zero coupling to sibling corpora — never read them; everything needed is
+distilled in `REBUILD-NOTES.md`.
 
 Never: canonicalize source data · edit `attention/` outside the steering
 loop (provenance tag every change) · let an LLM-edited YAML file go

@@ -1,4 +1,4 @@
-<!-- kit: attention/classify@2026-07-31.3 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/classify@2026-08-04.1 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
 
 ---
 name: classify

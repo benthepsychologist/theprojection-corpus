@@ -1435,3 +1435,38 @@ dropped outright because the sweep could not reach the source page.
   remains as generated 08-02**. This is the fourth consecutive run affected
   by the serial fan-out problem already filed to kestrel's INBOX.
 - **No coverage-critic pass**, by design — see the top of this entry.
+
+### ✏️ Correction to this entry — the collector did NOT time out, and the four-run diagnosis was wrong
+
+Written mid-run, when the runner was sitting at 8/18 and still going, this
+entry said the run was "affected by the serial fan-out problem already filed
+to kestrel's INBOX." **That was wrong, and so is the standing diagnosis it
+inherited.** The run went on to **complete cleanly: 17 of 18 sources, exit
+code 0**, in about 50 minutes. Nothing was killed.
+
+The single failure was **gdelt**, and it was not slowness at all:
+
+    [gdelt] fetched=0 kept=0 skipped_terms=ALL (collector error:
+    KESTREL_CONTACT_EMAIL is not set. This collector declares a contact
+    address in its User-Agent as required by the upstream source's
+    fair-access policy. Set it in your environment.)
+
+A **deterministic config failure that fails in milliseconds**, not a timeout.
+`collectors/gdelt.py`, `sec_edgar.py` and `federal_register.py` all read that
+variable and are designed to fail loudly rather than send a fabricated
+contact address; the engine deliberately ships no default. It was simply
+never set in this container's `.env`.
+
+**Why this matters beyond one variable.** The "runner killed by its own
+timeout, 15/18" story has been carried in STATUS.md, AGENTS.md and this log
+across four runs, and a fix request sits in kestrel's INBOX on that premise.
+At least for this run the premise is false. The 15/18 figure that made it
+look like a timeout is an artefact of *where alphabetically the run had got
+to* when someone looked, combined with gdelt contributing nothing — the
+serial fan-out is slow, but it finished. **Anyone acting on the INBOX item
+should re-measure before rewriting the runner.**
+
+**Fixed the same session:** `KESTREL_CONTACT_EMAIL` set in the engine's
+`.env` to the address already declared for the OpenAlex polite pool, and
+gdelt re-run on its own. Recorded here rather than silently, because the
+stale diagnosis is the more expensive of the two errors.

@@ -29,9 +29,34 @@
 # VOICE: neutral register (Ben, 2026-07-29) — the same frame-neutral voice
 # the digests use, not first person.
 #
-# LIFECYCLE: `expires` drops it off the rail automatically; /week prunes
-# expired entries out of this file. An expired flash is not deleted from the
-# record — its substance lives in the digests and timelines like any item.
+# LIFECYCLE — 24 HOURS, ENFORCED IN CODE (Ben, 2026-08-04: "24h and gone").
+# A flash renders on its FILING DAY AND NO LONGER. The cap is computed by
+# render_read.flash_last_day(), which every surface goes through (the read
+# page, the public site adapter, and the readout fingerprints all call
+# load_flash), so there is exactly one place this is decided.
+#
+#   date:     the event's own date.
+#   filed:    OPTIONAL — the day the flash was written. Defaults to `date`.
+#             Set it explicitly when catching a LATE event, so its 24h runs
+#             from the catch rather than from an event you already missed.
+#   expires:  OPTIONAL and can only ever SHORTEN the life. A value LONGER
+#             than the filing day is IGNORED, not honoured. Do not reach for
+#             it to keep something up — that is the exact drift this replaced.
+#
+# An entry with no parsable `filed`/`date` does NOT render (it used to render
+# forever). Writing a longer `expires` is now a no-op, so if a flash needs to
+# stay up, the honest move is to file a NEW flash for the NEW event — which
+# is what the "new event, never a running state" rule below already requires.
+#
+# WHY (2026-08-04): from 2026-08-01 the 24h rule lived only in AGENTS.md and
+# was violated immediately — `iran-strikes-cancelled-deal-claimed` sat on the
+# rail 3 days, `ceuta-mass-border-crossing` 4. The loader trusted a
+# hand-written `expires`. It no longer does.
+#
+# /week still prunes expired entries out of this file for tidiness, but that
+# is now cosmetic: an expired entry cannot render regardless. An expired
+# flash is not deleted from the record — its substance lives in the digests
+# and timelines like any item.
 #
 # A FLASH IS A NEW EVENT, NEVER A RUNNING STATE (Ben, 2026-08-01):
 # "lapse flash, flash only new things, escalate means need flash."

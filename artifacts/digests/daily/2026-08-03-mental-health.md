@@ -3,18 +3,19 @@ lens: mental-health
 date: 2026-08-03
 status: building
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-03T18:45:00-04:00
+as_of: 2026-08-04T07:40:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-03
 
-*⚠ **NOT extended overnight.** The 08-04 05:40 ET extension pass covered
-the other three lenses; this lens's sweep did not return and nothing was
-written in its place. `as_of` deliberately stays at 18:45 ET — the only
-08-04 addition is a targeted re-verification of the SB 903 hearing in the
-⏳ section, which is an expectation re-check, not lens coverage. Treat
-this lens's evening/overnight window as **unread** until the next run.*
+*⏱ **Extended 2026-08-04 07:40 ET**, on a re-run after this lens's first
+overnight sweep failed to return. The evening/overnight window is now read
+like the other three lenses; items from that pass are marked
+**⟨overnight⟩**. One item the sweep found — a Stanford study published
+05:10 ET 08-04 — falls **after** the 05:00 ET digest-day boundary and is
+therefore held for the 08-04 record, not folded in here; it is named in the
+⏳ section so it is not lost. Still `building`; finalization needs ~10:00 ET.*
 
 *Curated from the tier-2 mental-health deep sweep (agentic-interim). ⚠
 Session WebSearch budget was exhausted before this lens ran; every claim
@@ -77,6 +78,35 @@ and is confirmed on the record.
   Meta or xAI. The Minnesota xAI TRO denial (07-31) and 08-19 preliminary-
   injunction hearing are unchanged.
   <!-- k: t=state-therapy-chatbot-bans e=xai axis=policy-and-governance -->
+- **⟨overnight⟩ TikTok settled three more teen mental-health-harm suits
+  weeks before the October trial.** Settlements-in-principle with three teen
+  plaintiffs — a 15-year-old in Illinois, a 15-year-old in New Jersey and an
+  18-year-old in Mississippi, whose claims span self-harm, depression,
+  anxiety, addiction and eating disorders. Terms confidential. **Meta,
+  YouTube and Snap remain on track for the October trial**, so the effect is
+  that the one defendant most exposed on teen-harm keeps buying its way out
+  of a jury while the others do not. Cross-confirmed across five independent
+  outlets citing plaintiffs' counsel; the docket itself was not pulled.
+  ⚠ Distinct from an older TikTok settlement (Florida plaintiff, announced
+  06-30) that some search results conflate with it. (Claims Journal, Straits
+  Times 04:40 UTC, Japan Times 01:02 UTC, Newsmax/KSL/AOL 08-03 evening)
+  <!-- k: t= e= axis=policy-and-governance -->
+- **⟨overnight⟩ A second family sued xAI over the Arkansas Grok CSAM case.**
+  The first suit followed the 06-10 arrest of a Northwest Arkansas
+  photographer charged with 200 counts of creating and possessing
+  AI-generated child sexual abuse material made with Grok from photographs
+  of his juvenile clients; a second family has now filed. ⚠ **Thin
+  sourcing** — the primary outlet 403'd on direct fetch, so this rests on a
+  sister-station summary rather than a docket pull; treat the filing date as
+  unconfirmed. (5newsonline, 08-03 23:43 UTC)
+  <!-- k: t= e=xai axis=policy-and-governance -->
+- **⟨overnight⟩ ⚠ Weakly sourced, logged as a lead:** the National
+  Conference of State Legislatures published a tracker piece on state
+  chatbot/mental-health guardrail activity. NCSL's own site 403'd, so only
+  the aggregator summary was seen and the specific states and bills it
+  covers could not be confirmed. Not treated as a finding. (NCSL via
+  aggregator, 08-04 01:01 UTC)
+  <!-- k: t=state-therapy-chatbot-bans e= axis=policy-and-governance -->
 
 ## Clinical safety & harm
 
@@ -113,6 +143,29 @@ lens.*
   least likely rather than the default assumption.**
   ([Assembly Appropriations](https://apro.assembly.ca.gov/hearings))
   <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
+- **⟨overnight⟩ 🆕 New to the ledger — a Senate markup tomorrow this lens
+  did not know about.** The **Senate Commerce Committee marks up five kids'
+  online-safety bills Wednesday 08-05 at 10:00 ET**, among them the
+  **CHATBOT Act (S.4407, Cruz/Schatz)**, which would require AI companies to
+  provide parent-managed "family accounts" for minors using chatbots, plus
+  the Youth AI Privacy Act and the Children's AI Toy Safety Act. ⚠ **This is
+  a DIFFERENT bill from the CHAT Act (Husted/Kim) recorded above** — related
+  subject, different sponsors, different number. Announcement dated 07-29 so
+  it is not a fresh catch, surfaced now because the markup is tomorrow.
+  Logged as `senate-commerce-kids-ai-markup` **08-05**.
+  ([Senate Commerce](https://www.commerce.senate.gov/press/rep/release/chairman-cruz-announces-kids-safety-markup/))
+- **⟨overnight⟩ ➡️ Held for the 08-04 record, not folded in here:** Stanford
+  HAI published research finding that people with **already-restricted
+  social circles who turn to AI companions show reduced well-being** — the
+  tool deepening isolation in exactly the population most likely to reach
+  for it. It published **05:10 ET 08-04**, ten minutes past this
+  digest-day's 05:00 ET boundary, so it belongs to tomorrow's record. Named
+  here so it is not lost between days.
+- ⚠️ **Sweep rejected several items as older than they looked** — recap
+  coverage of the 07-31 Minnesota TRO denial re-dated to 08-03/04, and a
+  Tennessee Grok/Stability suit whose underlying amended complaint appears
+  to date to **07-07** despite a fresh publish date. Neither entered the
+  record. This is the Woebot lesson working.
 - ⚠️ **Two dates checked, neither adopted as new:** the SAMHSA **$73.2M**
   grant award (dated 07-31, general behavioral-health funding, not
   AI-specific — out of scope); an unconfirmed NY "restricting AI friends for
