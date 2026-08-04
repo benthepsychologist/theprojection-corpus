@@ -315,9 +315,43 @@ doing now" roll-up shown atop each `/map/<slug>/` page). The synthesis is
 refreshed on `/daily` (for actors that moved) and `/week` (full pass);
 it's a roll-up of threads + posture, not fresh research.
 
+## ⚠️ THIS FILE IS KIT-MANAGED — edit it and you must push the edit upstream
+
+`AGENTS.md` is rendered from
+`/workspace/kestrel/library/agentdocs/attention/AGENTS.md.tmpl` and tracked
+by hash in `.claude/kit.yaml`. **Editing it here without back-porting
+creates silent drift**, and the next `kit.py install` will either flag a
+conflict or — if someone resolves it the wrong way — overwrite your edit
+with an older copy.
+
+**This already happened.** Between 2026-08-01 and 2026-08-04 the flash
+lifetime rules (discipline 10) were written straight into this file and
+never reached the template, which did not contain them at all; a kit
+dry-run on 08-04 wanted to replace this file with a version missing them
+*and* missing the engine-split intro. Repaired 2026-08-04 by adopting this
+file into the template and re-tokenizing.
+
+**So, after ANY edit to this file (or `CLAUDE.md`), before you close the
+session:**
+
+```
+cd /workspace/kestrel
+python3 tools/kit.py install /workspace/theprojection-data --adopt AGENTS.md
+# then RE-TOKENIZE the template — adopt copies verbatim, so this instance's
+# literal values land in it; restore the template tokens
+# (instance_path / engine_path / site_sibling) by hand.
+python3 tools/kit.py render /workspace/theprojection-data --out /tmp/kitcheck
+diff /tmp/kitcheck/AGENTS.md /workspace/theprojection-data/AGENTS.md   # must be empty
+```
+
+`kit.py sync` reports drift across all instances and **never auto-applies
+to a dirty one** — that guard is what stopped the 08-04 overwrite, so a
+`dirty` line in its output is a real signal, not noise. Clear it properly
+rather than by discarding.
+
 ## Session close
 
-End substantive sessions with both steps, in order:
+End substantive sessions with these steps, in order:
 
 1. **Append to `log.md`** (create on first real session): what ran, what
    surfaced, what changed in `attention/`, where to pick up.
@@ -327,6 +361,9 @@ End substantive sessions with both steps, in order:
    manifest is incomplete); they are receipts, not scratch, and are easy
    to leave untracked because the publisher writes them after the work is
    already committed.
+3. **If you edited `AGENTS.md` or `CLAUDE.md`, back-port them** per the
+   kit-managed warning above, and push `/workspace/kestrel` too. A doc edit
+   that never reaches the library is a change that silently un-happens.
 
 **Why step 2 is written down** (Ben, 2026-07-29, pre-split — the reasoning
 holds, only the repo name changed): `/publish --push` pushes
