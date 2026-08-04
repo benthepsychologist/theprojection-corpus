@@ -47,12 +47,25 @@ its corrections; the q1/q2 research-workshop note and the 08-03/08-02
 > **🧵 Map: 72 threads** — `horn-of-africa-war` and `europe-migration-schengen`
 > opened (ben-steer), both world-news; the second is deliberately the POLICY
 > thread, not the incident.
-> **📄 AGENTS.md drift repaired at the source** — it is kit-rendered from
-> kestrel's library, and the template contained none of the flash rules nor
-> the engine-split intro; a kit dry-run wanted to overwrite the live file with
-> that older copy. Adopted + re-tokenized; `render` now produces it
-> byte-identical and `sync` reports this instance clean. The doc now carries a
-> standing kit-managed warning and a third session-close step.
+> **📄 AGENTS.md drift repaired at the source, then superseded by a bigger
+> rule the same day.** First pass: it is kit-rendered from kestrel's library,
+> and the template contained none of the flash rules nor the engine-split
+> intro; a kit dry-run wanted to overwrite the live file with that older
+> copy. Adopted + re-tokenized so `render` produced it byte-identical and
+> `sync` reported this instance clean — true only briefly. **⛔ Ben then set a
+> hard rule: this session's write zone is `theprojection-data` +
+> `theprojection-site` only** — no editing kestrel or any other repo without
+> explicit per-repo permission, prompted by a session that had made five
+> kestrel commits (two to engine code) off the back of an unrelated ask.
+> `INBOX/` drops stay allowed and need no permission. The rule now lives
+> where it's read every session — global `~/.claude/CLAUDE.md`, this
+> project's memory (`project_repo_scope.md`), and a warn-only PreToolUse
+> hook, all verified firing. **Consequence: `kit.py sync` now reports this
+> instance `dirty` on `AGENTS.md` permanently, and that is correct, not
+> regressed** — the fix can no longer be back-ported, so a brief was filed to
+> kestrel's `INBOX/` instead and the file itself, `README.md`, and every
+> in-repo instruction to "edit the canonical copy in kestrel" were rewritten
+> to route to a brief rather than a direct edit.
 > **Published twice** (Cloudflare `3eaa1ff8`, then `afa9768a` for the SB 903
 > correction). Full detail: `log.md`, `coverage-log.md`.
 
