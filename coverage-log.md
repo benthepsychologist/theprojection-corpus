@@ -1726,3 +1726,14 @@ rather than softened out of the posture word. 2 new ledger entries (the
 Roze IPO target, the ABB close).
 
 Re-rendered and republished after all four applied.
+
+## 2026-08-04 (later still) — steer: Oracle posture classified
+
+Ben: "classify Oracle's posture too." **`expanding`** — RPO backlog grew
+363% YoY (to $638B, confirmed) and FY27 capex is stepping UP (~$70-95B,
+from $55.7B) despite the 07-09 S&P downgrade to BBB-; the credit stress
+is the market pricing the expansion's risk, not evidence Oracle itself
+is pulling back. Same reasoning shape as SoftBank's classification
+earlier today — the leverage/distress side stays in `optionality`
+("constrained/locked"), not folded into the posture word. `board.yaml`
+edited directly; re-rendered and republished.
