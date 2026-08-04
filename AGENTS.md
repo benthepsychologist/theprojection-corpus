@@ -327,39 +327,45 @@ doing now" roll-up shown atop each `/map/<slug>/` page). The synthesis is
 refreshed on `/daily` (for actors that moved) and `/week` (full pass);
 it's a roll-up of threads + posture, not fresh research.
 
-## ⚠️ THIS FILE IS KIT-MANAGED — edit it and you must push the edit upstream
+## ⚠️ THIS FILE IS KIT-MANAGED — edit it freely, but never back-port it yourself
 
-`AGENTS.md` is rendered from
-`/workspace/kestrel/library/agentdocs/attention/AGENTS.md.tmpl` and tracked
-by hash in `.claude/kit.yaml`. **Editing it here without back-porting
-creates silent drift**, and the next `kit.py install` will either flag a
-conflict or — if someone resolves it the wrong way — overwrite your edit
-with an older copy.
+`AGENTS.md` is rendered from the attention agentdoc template in
+`/workspace/kestrel/library/` and tracked by hash in `.claude/kit.yaml`.
+So are `CLAUDE.md` and the eight files under `.claude/skills/`.
 
-**This already happened.** Between 2026-08-01 and 2026-08-04 the flash
-lifetime rules (discipline 10) were written straight into this file and
-never reached the template, which did not contain them at all; a kit
-dry-run on 08-04 wanted to replace this file with a version missing them
-*and* missing the engine-split intro. Repaired 2026-08-04 by adopting this
-file into the template and re-tokenizing.
+**You may still edit them — this is your repo.** What you must NOT do is go
+into kestrel to reconcile the template afterwards. **kestrel is outside this
+session's write zone** (Ben, 2026-08-04; see `project_repo_scope.md` in this
+project's memory and the "Your zone of responsibility" section of the global
+`~/.claude/CLAUDE.md`).
 
-**So, after ANY edit to this file (or `CLAUDE.md`), before you close the
-session:**
+**Therefore `kit.py sync` will report this instance `dirty`, and that is the
+correct state — not a problem to fix.** It accurately says "the instance has
+diverged; its owner must act." Kit **never auto-applies to a dirty target**,
+so a divergence here cannot be silently overwritten. Clearing it is
+kestrel's job, prompted by a brief.
 
-```
-cd /workspace/kestrel
-python3 tools/kit.py install /workspace/theprojection-data --adopt AGENTS.md
-# then RE-TOKENIZE the template — adopt copies verbatim, so this instance's
-# literal values land in it; restore the template tokens
-# (instance_path / engine_path / site_sibling) by hand.
-python3 tools/kit.py render /workspace/theprojection-data --out /tmp/kitcheck
-diff /tmp/kitcheck/AGENTS.md /workspace/theprojection-data/AGENTS.md   # must be empty
-```
+**So, after editing this file or `CLAUDE.md`:** if the change should reach
+the canonical template, **drop a brief into `/workspace/kestrel/INBOX/`**
+describing it — write the file, do not commit it, do nothing else in that
+repo. That is the sanctioned channel and it needs no permission.
 
-`kit.py sync` reports drift across all instances and **never auto-applies
-to a dirty one** — that guard is what stopped the 08-04 overwrite, so a
-`dirty` line in its output is a real signal, not noise. Clear it properly
-rather than by discarding.
+⛔ **Superseded, 2026-08-04:** an earlier version of this section instructed
+running `kit.py install --adopt` and re-tokenizing the template by hand.
+**Do not do that.** It was written before the write-zone rule and is exactly
+the pattern that rule exists to stop. Two other places in this repo still
+carry the same superseded advice — `README.md`'s `.claude/skills/` row (now
+corrected) and the line-1 header of each of the eight `SKILL.md` files, which
+say "edit the canonical copy... and run `/sync-kits`". **Leave those headers
+alone** (correcting them locally would drift all eight, and `/sync-kits` does
+not exist here) and ignore what they say.
+
+**The drift this section was originally written about, kept because it is
+the reason any of this is documented:** between 2026-08-01 and 2026-08-04 the
+flash lifetime rules (discipline 10) were written straight into this file and
+never reached the template, which did not contain them at all; a kit dry-run
+on 08-04 wanted to replace this file with a version missing them *and*
+missing the engine-split intro. The dirty-target guard is what stopped it.
 
 ## Session close
 
@@ -373,9 +379,12 @@ End substantive sessions with these steps, in order:
    manifest is incomplete); they are receipts, not scratch, and are easy
    to leave untracked because the publisher writes them after the work is
    already committed.
-3. **If you edited `AGENTS.md` or `CLAUDE.md`, back-port them** per the
-   kit-managed warning above, and push `/workspace/kestrel` too. A doc edit
-   that never reaches the library is a change that silently un-happens.
+3. **If you edited `AGENTS.md` or `CLAUDE.md` and the change should reach the
+   canonical template, drop a brief into `/workspace/kestrel/INBOX/`** — write
+   the file, do not commit it, touch nothing else there. Do **not** push
+   kestrel; it is outside this session's write zone. Leaving this instance
+   `dirty` in `kit.py sync` is the intended outcome (see the kit-managed
+   section above).
 
 **Why step 2 is written down** (Ben, 2026-07-29, pre-split — the reasoning
 holds, only the repo name changed): `/publish --push` pushes
@@ -386,6 +395,9 @@ across sessions* and looks fine locally. Found 2026-07-29 (pre-split, in
 what was then kestrel's own working tree) with **17 commits unpushed** —
 six from that session and **ten inherited from the previous evening's**,
 which had also closed without pushing. A clean `git status` is not
-evidence the work is safe; check `git log @{u}..` — on this repo AND on
-`/workspace/kestrel` and `/workspace/theprojection-site`, since none of
-the three ever push each other — before calling a session done.
+evidence the work is safe; check `git log @{u}..` on **this repo and
+`/workspace/theprojection-site`** — the two in this session's write zone,
+and neither pushes the other — before calling a session done. (Checking
+kestrel's status read-only is harmless, but you should have nothing to push
+there: it is outside the write zone. Unpushed commits in kestrel mean
+something went wrong, not that you forgot a push.)
