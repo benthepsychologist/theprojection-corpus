@@ -20,25 +20,6 @@
 
 expectations:
 
-  - id: kimi-k3-open-weights
-    claim: "Moonshot releases Kimi K3 open weights"
-    due: 2026-07-27
-    due_precision: day
-    thread: china-stack-independence
-    entities: [moonshot-ai]
-    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
-    confidence: reported
-    what_confirms: "weights actually downloadable (HF or equivalent)"
-    logged: 2026-07-22
-    logged_by: curate-add
-    status: hit
-    resolved: 2026-07-26
-    evidence: >
-      Weights went live 2026-07-26 — a day AHEAD of the ledger date — billed
-      as the largest open-weight model to date; lands mid distillation-fight
-      and the $50B pre-IPO push. CONFIRMED downloadable 07-27 (qz.com /
-      Tom's Hardware — "competitive at 2-3x less compute", hardware-gated).
-
   - id: cxmt-star-listing
     claim: "CXMT lists on the STAR Market (up to $9.8B)"
     due: 2026-07-27
@@ -184,26 +165,6 @@ expectations:
       of eo14409-deadlines (same 60-day clock, same agencies, same 30-day
       access mechanism) — they are one deliverable, not two, and both
       passed silent together.
-
-  - id: claude-opus-5-honeycomb
-    claim: "Claude Opus 5 ships (rumored 'Honeycomb' build, mid-Jul–early-Aug window)"
-    due: 2026-08-08
-    due_precision: month
-    thread: null
-    entities: [anthropic]
-    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
-    confidence: rumored
-    what_confirms: "official Anthropic release; window half-elapsed with no signal as of 07-22"
-    logged: 2026-07-22
-    logged_by: curate-add
-    status: hit
-    resolved: 2026-07-24
-    evidence: >
-      Shipped 2026-07-24 (anthropic.com/news/claude-opus-5): same price as
-      Opus 4.8 ($5/$25 per M tokens), SOTA coding/ARC-AGI-3/computer-use,
-      "most aligned model to date." Landed HOURS after the 07-23 daily
-      logged "no ship" — the 07-24 budget-blocked sweep missed it; caught by
-      the /week sweep 07-27.
 
   - id: us-china-ai-talks
     claim: "First official US–China AI-policy talks ('later this year' — the September framing is UNSOURCED per crawl 2026-07-22)"

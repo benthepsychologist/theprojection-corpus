@@ -17,7 +17,17 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-07-30
+asof: 2026-08-04
+
+# Refresh run 2026-08-04 (/week step 4b): treasury_tic re-checked, no new
+# month past 2026-05 (real ~2mo lag, not a fault — value/as_of left as-is
+# where genuinely unchanged, per this file's own discipline). bis_stats and
+# imf_data both had new quarters; bis_stats' 2026-Q1 figures are folded in
+# below. imf_data's own 2026-Q1 figures matched what was already recorded
+# (no change needed). epfr_flows returned one new item, folded in.
+# fund_flow_reports: STILL EMPTY — Morningstar (AWS WAF bot-challenge) and
+# ETF.com (Cloudflare 403) both bot-wall this environment, same as every
+# prior check since 2026-07-30. Honest empty result, not a fabricated one.
 
 framing:
   emphasis: []       # ben-steer additions: what the next refresh should weight
@@ -32,7 +42,12 @@ readings:
       hike — up from unanimous in June), two days after a stagflation-
       adjacent print (GDP +1.5% annualized, PCE 3.7%/3.3% headline/core).
       30-year Treasury yield near 5.24%, highest since 2007. The
-      committee's room to cut is narrowing even as growth softens.
+      committee's room to cut is narrowing even as growth softens. Chaired
+      by Kevin Warsh (confirmed 54-45 on 2026-05-13, the narrowest margin
+      in the office's history — this map only named him on 2026-08-02,
+      after weeks of tracking the FOMC vote without knowing whose committee
+      it was; Jerome Powell remains a governor, not a departure). Next
+      decision 2026-09-16.
     basis: "FRED policy-rate/curve series + the 07-29 FOMC decision"
     sources:
       - figure: "3.50%-3.75%, 9-3 vote"
@@ -43,20 +58,31 @@ readings:
         label: "BEA, Q2 2026 GDP advance estimate + June PCE"
         url: "https://www.bea.gov/data/gdp/gross-domestic-product"
         as_of: "2026-07-30"
-    as_of: "2026-07-30"
+      - figure: "Kevin Warsh confirmed 54-45, sworn in 2026-05-22"
+        label: "federalreserve.gov, Board of Governors"
+        url: "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm"
+        as_of: "2026-08-02"
+    as_of: "2026-08-04"
 
   cross_border_credit:
     value: >
-      Global cross-border bank claims at $45.97T (BIS locational banking
-      stats, 2025-Q4) — the balance-sheet channel through which a rate or
-      risk shock in one jurisdiction transmits to bank lending in another.
-    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API)"
+      Global cross-border bank claims rose to $47.62T in 2026-Q1 (BIS
+      locational banking stats), up from $45.97T in 2025-Q4 — the
+      balance-sheet channel through which a rate or risk shock in one
+      jurisdiction transmits to bank lending in another kept expanding
+      through the quarter. USD-denominated claims specifically: $21.80T
+      (up from $20.84T), still the dominant currency leg.
+    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API) — re-run 2026-08-04, new quarter available since the last refresh"
     sources:
-      - figure: "$45.97T"
-        label: "BIS locational banking statistics, 2025-Q4"
+      - figure: "$47.62T (was $45.97T)"
+        label: "BIS locational banking statistics, 2026-Q1"
         url: "https://stats.bis.org/api/v1"
-        as_of: "2025-Q4"
-    as_of: "2026-07-30"
+        as_of: "2026-Q1"
+      - figure: "$21.80T USD-denominated (was $20.84T)"
+        label: "BIS locational banking statistics, 2026-Q1"
+        url: "https://stats.bis.org/api/v1"
+        as_of: "2026-Q1"
+    as_of: "2026-08-04"
 
   external_position:
     value: >
@@ -80,13 +106,21 @@ readings:
   fund_flows:
     value: >
       EPFR's own weekly commentary (via ISI Markets' Global Navigator)
-      reads investor sentiment as notably calm against the backdrop below:
-      "investors tune out intensifying US-Iran conflict" ($75B moved the
-      week of 07-22) and "money keeps flowing despite Hormuz setback"
-      ($31B, week of 07-13) — flows are continuing through the conflict,
-      not fleeing it, at least so far.
-    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent)"
+      has moved from reading investor calm through a conflict backdrop
+      ("investors tune out intensifying US-Iran conflict," $75B moved the
+      week of 07-22; "money keeps flowing despite Hormuz setback," $31B,
+      week of 07-13) to a narrower, more selective read this week:
+      "technology story shines through the smoke" ($10B) — a smaller
+      headline figure and language that reads as rotation/selectivity
+      within tech rather than the broad risk-on flow of two weeks ago.
+      Worth watching against the earnings-gauntlet's own monetization-
+      proven-vs-unproven split (see the global-capital weekly digest).
+    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent) — re-run 2026-08-04"
     sources:
+      - figure: "$10B, technology story shines through the smoke"
+        label: "Global Navigator, 2026-08-04"
+        url: "https://isimarkets.com/publications/global-navigator-technology-story-shines-through-the-smoke/"
+        as_of: "2026-08-04"
       - figure: "$75B, investors tune out conflict"
         label: "Global Navigator, 2026-07-22"
         url: "https://isimarkets.com/publications/"
@@ -95,21 +129,32 @@ readings:
         label: "Global Navigator, 2026-07-13"
         url: "https://isimarkets.com/publications/"
         as_of: "2026-07-13"
-    as_of: "2026-07-30"
+    as_of: "2026-08-04"
 
   conflict_risk_premium:
     value: >
-      Iran's widening war (see `iran-conflict-widening`, world-news lens)
-      is pricing through two channels at once: the commodity (Brent
-      gyrating $87-92/bbl, still elevated vs. pre-conflict) and the
-      underwriting layer directly (US Treasury sanctioned 10 firms/8
-      tankers over a Hormuz insurance-extortion scheme, 07-29) — a rare
-      case of the actual mechanism Ben asked this lens to watch for
-      showing up as a dated, named event rather than an inference.
-    basis: "red-sea-oil-shock thread + Treasury sanctions action, cross-referenced against World News' iran-conflict-widening"
+      Iran's war is five months old, not the one week this lens carried
+      until 2026-08-02 — a US-Israeli opening strike killed Supreme Leader
+      Ali Khamenei on 2026-02-28, and the Strait of Hormuz has been
+      effectively shut since (transits ~10/day vs. a 60-140/day norm), not
+      newly disrupted. Pricing through two channels: the commodity (Brent
+      gyrating $87-92/bbl as of 07-30, still elevated vs. pre-conflict) and
+      the underwriting layer directly — war-risk insurance at 3-10% of
+      hull value against ~0.25% pre-war, plus US Treasury sanctioning 10
+      firms/8 tankers over a Hormuz insurance-extortion scheme (07-29). A
+      "strikes cancelled, deal claimed" de-escalation (08-01, Iran denies
+      any deal exists) did not reach this reading's re-pricing before it
+      lapsed off the flash rail on its own 24h clock (08-02) — the
+      underlying five-month conflict is the standing state, not the
+      week's headline oscillation.
+    basis: "red-sea-oil-shock + iran-conflict-widening threads, cross-referenced against the 2026-08-02 war-dating correction (see coverage-log.md) + Treasury sanctions action"
     sources:
+      - figure: "War began 2026-02-28, not 07-23"
+        label: "Iran state media (Press TV, Tasnim, Mehr) + Al Jazeera/NBC/Britannica, corroborated 2026-08-02"
+        url: "https://www.aljazeera.com/where/iran/"
+        as_of: "2026-08-02"
       - figure: "10 firms, 8 tankers sanctioned"
         label: "US Treasury, Hormuz insurance-extortion action, 2026-07-29"
         url: "https://www.bloomberg.com/"
         as_of: "2026-07-29"
-    as_of: "2026-07-30"
+    as_of: "2026-08-04"
