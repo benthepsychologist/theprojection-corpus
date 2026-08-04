@@ -1,8 +1,72 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-08-04**. Top note covers the 08-04 run and
-its corrections; the q1/q2 research-workshop note and the 08-03/08-02
-`/daily` notes sit under it.*
+*Hand-maintained. **As of 2026-08-04 (evening)**. Top note covers the
+08-04 `/week` run and the board-coverage push that followed it; the
+morning `/daily` note, the q1/q2 research-workshop note, and the
+08-03/08-02 `/daily` notes sit under it.*
+
+> **2026-08-04 (evening) — the first `/week` since 07-27 ran, then Ben
+> pushed the board's coverage gaps closed the same session.** Two
+> connected pieces of work, both same-day.
+>
+> **`/week` (closing week 07-27–08-02):** four lens weekly digests
+> written against the radar questions (`artifacts/digests/weekly/
+> 2026-07-27-*.md`) — frontier-ai's containment story generalizing past
+> OpenAI to Anthropic; global-capital's vendor-financing structure
+> meeting its first credit-market test (Nvidia's record CDS widening, the
+> Situational Awareness fund forced-sold to Citadel) and the discovery
+> this map had never named the sitting Fed chair; mental-health's Maine
+> LD 2082 becoming the first US statute actually binding AI-delivered
+> therapy; world-news's first real act (4 days old) catching that this
+> map had the Iran war's start date wrong by five months. **Decay
+> review: the map is clean** — zero threads past the 10-day staleness
+> bar; one bookkeeping fix (`ai-compute-spend`'s `last_seen` synced to
+> its real timeline entry). **Ledger pruned** (2 old resolved
+> expectations, 5 already-expired flash entries). **`capital-context.yaml`
+> refreshed** against the 5 real collectors — new BIS quarter, new EPFR
+> reading, Fed-chair + corrected Iran-timeline folded into the standing
+> readings. Radar Q1–Q7 working notes all updated. Full detail:
+> `coverage-log.md`.
+>
+> **Then a board pass found real coverage gaps, and Ben directed them
+> closed.** The pass found `meta-ai`'s posture stale (reclassified
+> `expanding`, a stale "framework exclusion" condition dropped — the
+> condition asserted Meta was excluded from the White House review
+> framework, already corrected earlier the same day) and **20 board
+> actors with zero thread coverage at all**. Ben: *"do web crawls for
+> AMD, ASML, Oracle and Softbank... the world is gated on ASML
+> lithography machines"* — four crawls, four new/backfilled threads
+> (`amd`, `asml`, `oracle-stargate-bet`, `softbank-all-in` deepened), all
+> four posture-classified `expanding`. A real internal contradiction in
+> `board.yaml` came out of the Oracle crawl (the `gravity` field's RPO
+> figure was stale against the `thrust` field's own confirmed number) —
+> fixed. Then Ben: *"do the rest of the zero-coverage list too"* — 13
+> more actors, 7 parallel crawls (5 individual + 2 pocket-level triage
+> crawls for the asset-manager and insurance pockets rather than 10
+> separate ones). Result: **9 more new threads** (Mistral AI, PIF,
+> GlobalFoundries, HCA Healthcare, Fidelity, Berkshire Hathaway, Allianz,
+> Ping An, Nippon Life v. OpenAI), **3 tagging fixes** where content
+> already existed but was untagged (`microsoft-mai`, `deepmind`, `nuhw`),
+> and **5 honest "genuinely quiet" verdicts** (State Street, Vanguard,
+> China Life, Prudential Financial, MetLife) documented rather than
+> forced into threads — the repo's own "inclusive surfacing, selective
+> promotion" discipline working as intended. Two more real board.yaml
+> staleness bugs surfaced and fixed (PIF's AI-thrust figure;
+> GlobalFoundries' Mubadala ownership, CHIPS commitments, and a
+> "genuinely negative thrust" characterization that a fresh 10-Q no
+> longer supports). Ben also ruled directly on two open editorial
+> questions: **the Kumamoto earthquake stays out of `world-news`**
+> (a natural disaster isn't the conflict/geopolitical narrative the lens
+> is scoped to; the actual gap — this map never recording the human toll,
+> 38 dead — was fixed in place on `tsmc-capacity-race` instead), and **the
+> duplicate Minnesota nudify-ban ledger entries were de-duplicated**
+> (reversing an 08-01 "skip dupes" ruling on the same duplicate, on a
+> direct ask).
+>
+> **🧵 Map: 84 threads** (was 72 this morning) · **board: 92 orgs, 13 now
+> posture-classified** (was 9) · **actor-doing: 43 entries** (was 38).
+> Re-rendered and republished after every change (multiple Cloudflare
+> builds today). Full detail: `coverage-log.md`.
 
 > **2026-08-04 — `/daily` extended 08-03's unread overnight, caught a story
 > we had missed, and corrected three of our own claims — one of them about
