@@ -1,7 +1,60 @@
 # STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
 
-*Hand-maintained. **As of 2026-08-03**. Top note covers the q1/q2 research
-workshop; the 08-03 and 08-02 `/daily` notes sit under it.*
+*Hand-maintained. **As of 2026-08-04**. Top note covers the 08-04 run and
+its corrections; the q1/q2 research-workshop note and the 08-03/08-02
+`/daily` notes sit under it.*
+
+> **2026-08-04 — `/daily` extended 08-03's unread overnight, caught a story
+> we had missed, and corrected three of our own claims — one of them about
+> our own tooling.** The run opened 36 minutes into digest-day 08-04, so
+> **08-03 could not be finalized** (a day needs ~5h past its close for the
+> critic's benchmarks to be checkable). Instead it read the ~10 unread hours
+> between the 18:45 ET curation cutoff and the 05:00 ET digest-day close.
+> **The miss:** Texas ordered PUCT/ERCOT to audit every data centre seeking a
+> grid connection and ERCOT paused its Batch Zero study — against a queue of
+> **1,800+ projects / 474+ GW / ~90% data centres / >5× the grid's peak-demand
+> record**. First time a US state has withheld the interconnection the
+> buildout depends on. It published *inside* the digest-day, 20 minutes before
+> our own cutoff, with **12 items on it sitting in that day's buffer routed to
+> no thread** — a curation miss, not a late break. Root cause generalises and
+> is now **fixed**: those threads' terms were all company/project nouns, so a
+> story about a regulator matched nothing; regulator/grid terms added to
+> `ai-power-buildout` and `ai-datacenter-sites` (ben-steer), regression-tested
+> **0/12 → 10/12** against the actual missed items.
+> **Three self-corrections.** ① "Meta excluded" from the White House frontier
+> framework is false — Meta is invited; ledger claim rewritten. ② The
+> Schengen-suspension camp is **Italy and Denmark**, not Italy/Finland.
+> ③ **SB 903: an inference withdrawn** — we had concluded that because the
+> 08-05 hearing is not *labelled* a suspense hearing, "held on suspense" was
+> least likely. Over-read: the calendar carries **360+ measures**, the shape
+> of a suspense calendar whatever the page calls it. Facts stand, prediction
+> gone, all three outcomes scored open.
+> **⏱ Flash lifetime is now ENFORCED IN CODE** (Ben: *"24h and gone"*). The
+> 24h rule had existed in discipline 10 since 08-01 and was violated
+> immediately — real rail time on the six live entries was **2, 2, 3, 3, 4 and
+> 4 days**, and a flash with no `expires` never expired at all.
+> `render_read.flash_last_day()` now computes the cap: renders on its **filing
+> day** and no longer, `expires` may only SHORTEN, new optional `filed` field
+> for late catches. Engine `db22ff0`.
+> **🔧 The collector diagnosis this repo carried for four runs was WRONG.**
+> `collect.py` is not killed by a timeout — it completed **17/18, exit 0, ~59
+> min**. The only failure was **gdelt erroring in milliseconds on an unset
+> `KESTREL_CONTACT_EMAIL`**, so it was contributing nothing while being blamed
+> for blocking everything. Variable set; gdelt returned **76 items** and
+> `world-news.yaml` rebuilt (90 items, had been stale since 08-02). Where the
+> time really goes: **semantic_scholar 23 min / google_news_rss 14 / gdelt
+> 11½**. Measured and filed to kestrel.
+> **🧵 Map: 72 threads** — `horn-of-africa-war` and `europe-migration-schengen`
+> opened (ben-steer), both world-news; the second is deliberately the POLICY
+> thread, not the incident.
+> **📄 AGENTS.md drift repaired at the source** — it is kit-rendered from
+> kestrel's library, and the template contained none of the flash rules nor
+> the engine-split intro; a kit dry-run wanted to overwrite the live file with
+> that older copy. Adopted + re-tokenized; `render` now produces it
+> byte-identical and `sync` reports this instance clean. The doc now carries a
+> standing kit-managed warning and a third session-close step.
+> **Published twice** (Cloudflare `3eaa1ff8`, then `afa9768a` for the SB 903
+> correction). Full detail: `log.md`, `coverage-log.md`.
 
 > **2026-08-03 — a second workstream opened: the buildout-research
 > skeletons, workshopped in `INBOX/`.** kestrel's engine session dropped a
@@ -25,6 +78,8 @@ workshop; the 08-03 and 08-02 `/daily` notes sit under it.*
 > q2 is a different question from radar Q2. Don't cross-wire them.
 > Also this day: the 08-02 collector-failure record corrected (killed at
 > timeout, 15/18 — not "slow"; the world-news rebuild was unaffected).
+> ✏️ **Superseded 2026-08-04** — that correction was itself wrong. The runner
+> is slow but does not time out; see the 08-04 note at the top.
 
 > **2026-08-03 — `/daily`: the populated week publishes, on a throughline
 > of claims arriving ahead of the things that would make them true.**
@@ -82,7 +137,9 @@ workshop; the 08-03 and 08-02 `/daily` notes sit under it.*
 > all (Colombia inaugurates 08-07); a M7.1 quake that killed ~36 people
 > entered this map three times, every one about whether TSMC's fab was
 > running. **Tooling:** `collect.py` killed by timeout, 15/18 collectors
-> (3rd straight failure, already in kestrel's INBOX); `render_read.py`
+> (3rd straight failure, already in kestrel's INBOX — ✏️ **this diagnosis was
+> wrong, superseded 2026-08-04**: the runner is slow, not killed; the real
+> failure was GDELT erroring instantly on an unset env var); `render_read.py`
 > instructs applying a degradation rule that **exists nowhere** (page ships
 > 703 KB over a 600 KB cap); `readouts.py`'s shape spec taught all four
 > briefing agents the same wrong `watch` type. Full detail: `log.md`,

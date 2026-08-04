@@ -136,9 +136,31 @@ flashes:
       two sentences maximum — what happened and what is verified
     sources: [{label: "...", url: "..."}]
     lenses: [all]              # or a subset when it genuinely is scoped
-    expires: 2026-07-31        # auto-drops from the rail; /week prunes the file
+    filed: 2026-07-28          # OPTIONAL — the day it was WRITTEN; defaults to
+                               # `date`. Set it explicitly on a LATE catch so
+                               # the 24h runs from the catch, not from the
+                               # event you missed.
+    expires: 2026-07-29        # OPTIONAL and can only ever SHORTEN. A value
+                               # LONGER than the filing day is IGNORED.
     logged_by: ben-steer | curate-add
 ```
+
+**Lifetime — 24 HOURS, ENFORCED IN CODE (Ben, 2026-08-04: "24h and gone").**
+A flash renders on its **filing day and no longer**. The cap is computed by
+`render_read.flash_last_day()`, which every surface goes through (read page,
+publish adapter, readout fingerprints all call `load_flash()`), so there is
+exactly one place this is decided. An entry with no parsable `filed`/`date`
+does not render at all.
+
+⚠️ **This replaced a convention that did not hold.** The 24h rule lived only
+in AGENTS.md discipline 10 from 2026-08-01, while the loader honoured whatever
+`expires` the curator hand-wrote — so real rail time on the six live entries
+was **2, 2, 3, 3, 4 and 4 days**, and a flash with no `expires` at all never
+expired. Writing a longer `expires` is now a no-op. If a story still warrants
+the rail tomorrow, that means a NEW event happened, and the
+new-event-never-a-running-state rule already says to file a new flash for it.
+`/week` still prunes expired entries, but that is now cosmetic tidying: an
+expired entry cannot render regardless.
 
 **The bar, deliberately high:** normally **at most one active flash**;
 two is exceptional; three means the bar has drifted and the rail is
