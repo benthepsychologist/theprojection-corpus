@@ -1615,3 +1615,21 @@ evidence about the *page*.
 Corrected in `upcoming.yaml`, the mental-health digest and the
 `state-therapy-chatbot-bans` timeline: the sourced facts stand, the
 prediction is withdrawn, and all three outcomes are scored open tomorrow.
+
+## 2026-08-04 (later) — steer: meta-ai reclassified, from the /week board pass
+
+Ben confirmed both proposals the `/week` board pass surfaced (classify
+2026-08-04, ben-steer). ① `meta-ai` posture `hedging` → **`expanding`** —
+the `hedging` tag rested on a "6GW AMD + Anthropic-cloud talks" basis from
+2026-07-25; none of meta-ai's current live threads (`meta-capex`,
+`where-the-capex-lands`, `inhouse-silicon`, `meta-gas-pivot`,
+`nvidia-order-book`, `qualcomm-dragonfly`) support it anymore — all read
+`buildout-race`/`resource-move`/`capital-flow`, the same profile as every
+other `expanding`-tagged actor. ② Dropped the `condition: [under-review]`
+("framework exclusion") field entirely — it asserted Meta was excluded
+from the White House's EO 14409 review framework, a claim this same day's
+earlier entry already corrected (SiliconANGLE 08-03 names the actual
+invitee list as Anthropic/OpenAI/Google **and** Meta; the exclusion
+premise traced to a stale 07-21 source and was wrong the whole time).
+`attention/board.yaml` edited directly; no thread action needed, this is
+a posture/condition correction, not a new development.
