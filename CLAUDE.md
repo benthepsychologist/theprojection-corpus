@@ -1,4 +1,4 @@
-# CLAUDE.md — theprojection-data (instance #1)
+# CLAUDE.md — theprojection-corpus (instance #1)
 
 Ben's personal intelligence layer: **buffer + extract, never own the source
 data**. Four lenses (ai · global-capital · mental-health · world-news); the

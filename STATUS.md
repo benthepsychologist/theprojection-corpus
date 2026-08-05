@@ -1,4 +1,4 @@
-# STATUS — theprojection-data (instance #1; formerly kestrel's in-tree data)
+# STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
 *Hand-maintained. **As of 2026-08-04 (evening)**. Top note covers the
 08-04 `/week` run and the board-coverage push that followed it; the

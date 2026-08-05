@@ -1,4 +1,4 @@
-# theprojection-data
+# theprojection-corpus
 
 **Ben's personal intelligence layer — instance #1** of the kestrel engine.
 Hovers over external sources, watches, and dives only when something
