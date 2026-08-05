@@ -12,6 +12,21 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-08-03 — Amazon crosses $3T market cap
+
+- **The fifth company ever to reach a $3T market cap** (after Apple,
+  Microsoft, Alphabet, Nvidia), on continued post-earnings rally from
+  the 07-30 Q2 beat (AWS +37% YoY) already tracked on this thread.
+  ([CNBC](https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html)) ⟨daily 2026-08-05, finalize pass⟩
+
+## 2026-08-04 — Amazon prices $25B in bonds, says done issuing 2026 debt
+
+- **An 8-tranche $25B bond sale**, funding part of the ~$220B FY2026
+  capex plan already tracked on this thread, part of a broader >$182B
+  Big Tech AI-debt wave year-to-date. Amazon says it will not issue
+  further debt in 2026.
+  ([Briefs.co](https://www.briefs.co/news/amazon-to-issue-25b-in-bonds-halts-further-debt-issuance-for-2026/)) ⟨daily 2026-08-04⟩
+
 ## 2026-08-01 — Late catch: Amazon raised FY2026 capex to ~$220B on memory costs
 
 - **On its 07-30 earnings call Amazon raised FY2026 cash capex guidance

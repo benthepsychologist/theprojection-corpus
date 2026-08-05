@@ -36,6 +36,20 @@ substantial enough to carry on its own.
     the file is kept forever.
 -->
 
+## 2026-08-04 — Kyiv's heaviest missile barrage in months; no interceptions reported
+
+- **24+ ballistic/anti-ship missiles plus over a hundred Shahed drones
+  hit Kyiv and its region overnight; Ukrainian reporting says none of
+  the missiles were intercepted.** 15-17 dead per regional officials;
+  warehouse and building fires burned across Brovary and nearby
+  villages. A real escalation in scale and interception rate against
+  this thread's own nightly-tally pattern (08-03 recorded 117/136 drones
+  intercepted the same week) — the near-zero missile-intercept rate here
+  is the new data point. Considered for the flash rail and not filed:
+  a severe escalation inside an already-tracked ongoing war, not a
+  novel, first-of-its-kind event.
+  ([Kyiv Independent](https://kyivindependent.com/russian-ballistic-missile-attack-on-kyiv-aug-5/), [CNN via KESQ](https://kesq.com/news/national-world/cnn-world/2026/08/05/russian-attack-kills-15-in-kyiv-region-ukraine-emergency-services-say/)) ⟨daily 2026-08-04⟩
+
 ## 2026-08-03 — Record strikes both ways; an unconfirmed claim a Russian missile crossed into NATO airspace
 
 - **Russia and Ukraine traded heavy strikes overnight** — Russia hit

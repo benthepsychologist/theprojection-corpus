@@ -11,6 +11,17 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-04 — Reported scale jumps an order of magnitude: up to $750B in talks
+
+- **Nvidia reportedly in talks for up to $750B in new AI-infrastructure
+  deals** — $500B+ with SK Group, and up to $250B in lease guarantees to
+  help OpenAI finance data-center compute (the same guarantee this
+  thread has tracked since 07-27, now at roughly 3x the previously
+  reported $250B figure on the OpenAI leg alone once the SK Group
+  component is included). Terms still in flux, unconfirmed by either
+  company.
+  ([Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-750-billion-deals-revive-102003935.html)) ⟨daily 2026-08-04⟩
+
 ## 2026-07-29 — CDS eases from the record; the record's date gets corrected
 
 - **The $250B guarantee remains unconfirmed by any company, with terms

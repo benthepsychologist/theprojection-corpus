@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-03
-status: building
+status: final
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-04T05:40:00-04:00
-coverage: pending
+as_of: 2026-08-05T06:45:00-04:00
+coverage: done
 ---
 
 <!-- ⏱ Extended 2026-08-04 05:40 ET by a second pass over this digest-day's
@@ -157,6 +157,26 @@ OpenAI containment breach turned into a legal matter.
   under 3% of TSMC's total capacity. (Focus Taiwan, 08-04 04:25 UTC)
   <!-- k: t=tsmc-capacity-race e=tsmc axis=models-and-releases -->
 
+## 🔍 Corrections to our own record
+
+- **"Astra" is real, and this map held it out too long.** The 08-02 digest
+  logged an OpenAI model named "Astra" as an unverified lead — "only NY
+  Post uses it," single-source-thin, deliberately not folded into the
+  record. The finalize-pass coverage critic found **three of the four
+  daily AI benchmarks (The Rundown AI, TLDR AI, The AI Daily Brief) led
+  with or top-billed it on 08-03** — no longer single-source. OpenAI
+  itself published a 249-page manuscript plus Lean 4 proof certificates
+  on GitHub (Apache 2.0, zero `sorry`s — every formalized step verified):
+  its next major model, still unreleased, generated solutions to **10
+  problems in math and theoretical CS unsolved for a decade or more**,
+  including an explicit construction of a non-sofic group (open since
+  Gromov, 1999). OpenAI says the tokens involved would have cost ~$2,000
+  at its Sol API rates. The results are not peer-reviewed and
+  mathematicians still need to confirm the claims match the original open
+  problems — genuinely significant, not yet independently vetted.
+  ([SiliconANGLE](https://siliconangle.com/2026/08/02/openais-astra-solves-10-long-open-math-problems-publishes-proofs/), [the Decoder](https://the-decoder.com/openai-announces-its-next-major-model-astra-by-dropping-ten-previously-unsolved-math-solutions/))
+  <!-- k: t= e=openai axis=corrections sev=major -->
+
 ## Capital & corporate
 
 - **Moonshot targets a ~$50B Hong Kong IPO amid the Fable-distillation
@@ -219,11 +239,22 @@ OpenAI containment breach turned into a legal matter.
   applied unilaterally: no critic pass ran this session, and term structure
   is map structure.
 
+**⟨finalize pass, 08-05⟩**
+
+- `+ thread-candidate` — "Astra" (OpenAI's unreleased next major model,
+  10 verified decade-plus-unsolved math/CS proofs) offered per the
+  coverage-critic catch below (⟨daily 08-05⟩).
+
 ## 🧵 Thread candidates
 
-- No new candidate today — items route to existing threads. (The
-  AI-offensive-cyber candidate offered 08-02 stands unanswered; not
-  re-offered per the once-then-drop rule.)
+- **candidate:** **OpenAI's "Astra" — an unreleased model that generated
+  verified proofs for 10 decade-plus-unsolved math/CS problems.** No
+  existing thread fits: it's not GPT-5.6 (a different, already-shipped
+  model), not the containment breach, not china-stack. A landmark AI
+  capability claim, primary-sourced (OpenAI's own GitHub release) but not
+  yet peer-reviewed. Track it? (critic-add, coverage-critic finalize pass)
+- The AI-offensive-cyber candidate offered 08-02 stands unanswered; not
+  re-offered per the once-then-drop rule.
 
 ---
 The EO 14409 framework got a concrete date — presented to OpenAI, Google
@@ -233,4 +264,30 @@ classified-threshold half still fully dark. Alibaba shipped Qwen3.8-Max,
 the first Chinese frontier-scale model benchmarked head-to-head against
 GPT-5.6 Sol, and fifteen Republican state AGs turned the OpenAI containment
 breach into a live legal-exposure question. Nothing shipped from the
-Western labs, and Grok 4.6 held its ~08-07 target.
+Western labs, and Grok 4.6 held its ~08-07 target. Finalizing this record
+two days later, the coverage critic caught a real miss: OpenAI's unreleased
+"Astra" model, held out 08-02 as single-source-thin, had in fact published
+verified Lean proofs for 10 decade-plus-unsolved math/CS problems, and
+three of four AI benchmarks led with it.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-08-05, checking The Rundown AI, TLDR AI, The Neuron,
+and The AI Daily Brief for what they covered on 2026-08-03.*
+
+**They led with → we missed:** three of four (The Rundown AI, TLDR AI, The
+AI Daily Brief) top-billed OpenAI's "Astra" math-proof story — now folded
+in above as a corrected-record item, since it was originally a 08-02 event
+this map had deliberately held out as unverified. The fourth, The Neuron,
+led with Mexico's UNAM voiding ~3,000 entrance-exam scores over suspected
+ChatGPT-assisted cheating — a real story, genuinely missed, not folded in
+here (out of window: it's an 08-03 story about an 08-02-and-earlier
+incident, thin on primary sourcing from this pass, logged as a gap rather
+than force-fit).
+**Both covered:** Qwen3.8-Max's open-weight release tracked across all
+four benchmarks and this digest.
+**We had → they didn't:** the EO 14409 framework meeting mechanics (the
+"draft, not final" correction, the Meta-invited correction), the 15-state
+AG letter's legal specifics, and the Texas PUCT/ERCOT grid-freeze catch —
+none of the four AI-focused benchmarks cover state-level energy regulation
+or maintain the same day-over-day ledger discipline this map does.

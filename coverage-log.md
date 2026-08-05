@@ -1892,3 +1892,69 @@ date already three weeks elapsed, no outcome confirmed either way,
 flagged as a live passed-silent candidate for the next `/daily`.
 
 Re-rendered and republished after all applied.
+
+---
+
+## 2026-08-05 critic pass — finalized 2026-08-03 (all four lenses; the
+day's real content had already been curated deep into 08-04 morning by
+the prior session's "overnight extension" pass — this finalize pass
+mainly ran the critic and closed the record two days late, since the
+session that curated it closed before the ~5h-past-close finalization
+window opened)
+
+### ai / 2026-08-03
+- **Missed:** OpenAI's "Astra" story (three of four benchmarks — The
+  Rundown AI, TLDR AI, The AI Daily Brief — led with or top-billed it):
+  an unreleased next-major-model generating verified Lean-proof solutions
+  to 10 math/CS problems unsolved for a decade-plus. This was NOT a fresh
+  miss — the 08-02 digest had already found the "Astra" name and
+  deliberately held it out as single-source-thin (only NY Post). The
+  critic pass reconfirmed it with real multi-outlet + primary-source
+  backing (OpenAI's own GitHub release) and it is now folded into the
+  08-03 record as a correction, sev=major, with a thread candidate
+  offered (no existing thread fits). The Neuron separately led with
+  Mexico's UNAM voiding ~3,000 exam scores over suspected
+  ChatGPT-assisted cheating — a second genuine miss, NOT folded in
+  (thin sourcing from this pass) and logged here as an open gap rather
+  than force-fit.
+- **Map effect:** `+ thread-candidate "Astra"` (critic-add, offered on
+  the 08-03 digest, awaiting Ben's word).
+- **Also caught, not critic-sourced:** the 08-03 global-capital digest was
+  missing Amazon's $3T market-cap crossing (genuinely dated 08-03) — a
+  same-day miss on this map's own part, added on finalize.
+- **A second claim was drafted, then caught as stale before publish.** The
+  same finalize pass initially credited Alphabet with an 08-03 FY26 capex
+  guidance raise to $195-205B, sourced from a "24/7 Wall St, Aug 3"
+  article. Cross-checking this map's own 07-22 digests showed the raise
+  actually happened 2026-07-22 — the Aug 3 article was a same-week
+  earnings-momentum recap, not a fresh report, and its own publish date
+  was mistaken for the event date. Struck before applying to
+  `threads/google-capex` or the ledger; the correction is recorded in the
+  08-03 global-capital digest itself rather than silently dropped. Worth
+  keeping as a standing lesson: a wrap/recap article's dateline is not
+  the underlying event's date, and this exact failure mode (Woebot,
+  SpaceX) has hit this map more than once.
+
+### mental-health / 2026-08-03
+- **Access blocked on 3 of 4 benchmarks** (Behavioral Health Business,
+  Fierce Healthcare, MobiHealthNews all 403'd direct fetch; only STAT
+  loaded, both its pieces paywalled). **No clear miss surfaced** in what
+  could be checked via search snippets, but confidence is explicitly LOW
+  given the access gap — recorded honestly rather than papered over as a
+  clean pass.
+
+### global-capital / 2026-08-03
+- **No clear miss.** Axios Pro Rata's lead (FIFA rejecting a
+  private-equity plan) is outside this lens's real scope. Bloomberg
+  Technology separately flagged the Amazon/AWS $3T crossing (folded in
+  above) and framed Qwen3.8-Max as rivaling Anthropic (frontier-ai's
+  territory). FT Unhedged could not be accessed at all — a genuine gap,
+  not a clean pass.
+
+### world-news / 2026-08-03
+- No benchmark critic by design (this lens carries none — see
+  `sources/benchmarks.yaml`'s header).
+
+Frontmatter flipped to `status: final` / `coverage: done` across all four
+lenses plus the front summary. Re-rendered and republished after all
+applied.

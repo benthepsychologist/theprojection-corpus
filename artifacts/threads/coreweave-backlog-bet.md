@@ -15,6 +15,13 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-08-04 — +20% on new government and international demand
+
+- **A Leidos partnership to supply AI cloud infrastructure to US
+  defense/intelligence agencies, plus a first APAC expansion** (three
+  Indonesia data centers, 360MW) — sets up the 08-11 Q2 print.
+  ([FX Leaders](https://www.fxleaders.com/news/2026/08/04/coreweave-crwv-stock-jumps-20-as-us-government-ai-deal-sparks-massive-rally/)) ⟨daily 2026-08-04⟩
+
 ## 2026-07-30 — A rejected suitor's rebound, and a sweetened loan
 
 - **AMD signed a $14B infrastructure deal with Core Scientific** — up to

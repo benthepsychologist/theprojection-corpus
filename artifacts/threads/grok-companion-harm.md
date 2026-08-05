@@ -14,6 +14,16 @@ on suicide/psychosis reinforcement; no filed MH suit yet) and (B) deepfake/
 CSAM (litigated + regulated). Root cause of both: the explicit anti-guardrail
 design. The catalyst to watch: the first named-plaintiff Grok MH/suicide suit.
 
+## 2026-08-04 — Five new suits filed as Minnesota's "nudify" ban stays in force
+
+- **A federal judge already denied xAI's bid to block HF 1606 (07-31);
+  with the ban in effect since 08-01, xAI now faces five additional
+  lawsuits.** The scheduled preliminary-injunction hearing (08-19, Judge
+  Donovan Frank) will be the first court test of the law's First
+  Amendment validity — AG Ellison's opposition brief due 08-12, xAI's
+  reply 08-17.
+  ([Tech Times](https://www.techtimes.com/articles/322899/20260804/grok-faces-five-new-lawsuits-minnesota-nudification-ban-takes-effect-after-court-defeat.htm)) ⟨daily 2026-08-04⟩
+
 ## 2026-07-31 (later) — xAI loses a second ruling the same day; Minnesota's nudify ban takes effect
 
 - **A federal judge in Minnesota denied xAI's bid to block HF1606, and

@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-03
-status: building
+status: final
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-04T07:40:00-04:00
-coverage: pending
+as_of: 2026-08-05T06:45:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-03
@@ -220,3 +220,29 @@ is very likely the same Kim/Husted companion-chatbot storyline already
 tracked, its bill number unconfirmed behind a CAPTCHA wall. Everything else
 — Colorado's approaching effective date, the litigation docket, Kaiser-NUHW
 — was genuinely quiet.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-08-05, checking Behavioral Health Business, STAT
+Health Tech, Fierce Healthcare, and MobiHealthNews for 2026-08-03
+coverage. Access was heavily blocked — Behavioral Health Business, Fierce
+Healthcare, and MobiHealthNews all returned HTTP 403 on direct fetch; only
+STAT's page loaded, and both its 08-03 pieces (AI scribes in medical
+education; Medicare cutting a "breakthrough device" payment pathway) sat
+behind STAT Plus. Confidence on this check is LOW given how much was
+inaccessible — named honestly rather than papered over.*
+
+**They led with → we missed:** no clear miss surfaced. What could be seen
+via search snippets — a BHB piece on TMS/neuromodulation devices and an
+executive appointment, MobiHealthNews's day dominated by HIMSS-conference
+funding/product announcements (including Amazon One Medical's health-AI
+agent) — reads as routine trade coverage, not a sector-shaking story this
+digest should have caught.
+**Both covered:** nothing confirmable given the access blocks.
+**We had → they didn't:** SB 903's confirmed calendar entry (dual-verified
+against raw HTML), the TikTok teen-harm settlements, and the second xAI
+CSAM suit — none surfaced in what could be checked of the benchmark set.
+**Honest gap:** this check is genuinely inconclusive, not clean — three of
+four outlets were unreadable. Worth a dedicated re-check with different
+access (an authenticated fetch or a direct newsletter subscription) if
+this lens's coverage-critic checks keep hitting the same wall.

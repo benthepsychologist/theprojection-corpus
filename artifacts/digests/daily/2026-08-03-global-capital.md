@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-03
-status: building
+status: final
 window_start: 2026-08-03T05:00:00-04:00
-as_of: 2026-08-04T05:40:00-04:00
-coverage: pending
+as_of: 2026-08-05T06:45:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-03
@@ -72,6 +72,21 @@ Strait is still largely closed today.
   print was found. Carried here only so the gap is visible rather than
   silently absent; do not cite these onward.
   <!-- k: t= e= axis=markets-and-flows -->
+
+## Hyperscaler capex, still hardening
+
+- **Amazon crossed a $3T market cap** — the fifth company ever to do so
+  (after Apple, Microsoft, Alphabet, Nvidia), on continued post-earnings
+  rally from its 07-30 Q2 beat (AWS +37% YoY). ⚠ **Self-correction:** a
+  first draft of this bullet also credited Alphabet with raising FY26
+  capex guidance to $195-205B "on its Q2 print" this same session — that
+  is WRONG. Alphabet's capex raise happened **2026-07-22** (already on
+  this map's own 07-22 digests), a full two weeks earlier; the source
+  found during finalize was a same-week wrap article recapping old
+  figures, not reporting a new one. Caught before publish, not after —
+  the lesson is recorded rather than the error being silently dropped.
+  ([CNBC](https://www.cnbc.com/2026/08/03/amazon-amzn-stock-market-cap-earnings.html))
+  <!-- k: t=aws-capex e=amazon-aws axis=markets-and-flows -->
 
 ## The AI-capex credit tension, live in two names
 
@@ -192,6 +207,14 @@ Strait is still largely closed today.
   overnight 10-year yield could not be confirmed on a fetched page and are
   marked as such in the markets section rather than stated or dropped.
 
+**⟨finalize pass, 08-05⟩**
+
+- `~ threads/aws-capex` — Amazon's $3T market-cap crossing added, missing
+  from the original pass (⟨daily 08-05⟩). A companion Alphabet-capex claim
+  was drafted and then caught as stale (07-22, not 08-03) before being
+  applied — see the self-correction note above; no edit made to
+  `threads/google-capex`.
+
 ## 🧵 Thread candidates
 
 - No new candidate today — the day's items route cleanly to existing
@@ -205,6 +228,35 @@ bought on an Iran de-escalation claim Tehran denies, transmitted through a
 the AI-capex credit tension in two names: Oracle's stock rose 9.2% while
 its credit still prices distress from the identical capex, and SoftBank
 heads into Thursday's print with the one OpenAI-collateral loan its lenders
-won't extend still stalled. The week builds toward SpaceX's first public
-earnings tomorrow, a historic insider unlock two days later, and Friday's
-jobs report.
+won't extend still stalled. Amazon crossed $3T market cap the same day —
+the fifth company ever to do so. The week builds toward SpaceX's first public earnings tomorrow,
+a historic insider unlock two days later, and Friday's jobs report.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-08-05, checking Money Stuff (Matt Levine), Axios Pro
+Rata, FT Unhedged, and Bloomberg Technology for 2026-08-03 coverage.
+Access was mixed — several outlets are paywalled by design (per
+`sources/benchmarks.yaml`'s own note) and the critic worked from public
+snippets where a full fetch wasn't possible.*
+
+**They led with → we missed:** none clearly — Axios Pro Rata's lead (FIFA
+rejecting a private-equity investment plan) is a niche deal story outside
+this lens's real scope. Bloomberg Technology's TV segment separately
+flagged Amazon/AWS crossing $3T market cap (genuinely new, now folded
+into this digest above) and framed Qwen3.8-Max as rivaling Anthropic —
+frontier-ai's territory, not this lens's. ⚠ A companion claim this
+finalize pass initially drafted — crediting Alphabet with an 08-03 capex
+raise — was itself a stale-recall error (the raise happened 07-22) and
+was caught and struck before publish; see the self-correction note in
+the digest body.
+**Both covered:** Money Stuff's 08-03 issue ("Hedgehog Hedge Fund," per
+snippet) touched situational-awareness hedging and an Anthropic-hacks
+story, both adjacent to threads already on this map.
+**We had → they didn't:** the Oracle equity/credit divergence (9.2% stock
+pop against a record-high CDS), the SoftBank margin-loan-vs-bridge-loan
+distinction, and the SoftBank-Corp-vs-SoftBank-Group entity-confusion
+guard — none of the four benchmarks carry this map's per-name financing-
+structure depth.
+**Access note:** FT Unhedged could not be accessed at all (no snapshot,
+no archive) — a genuine gap in this check, not a clean pass.

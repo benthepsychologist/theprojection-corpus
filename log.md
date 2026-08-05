@@ -1794,3 +1794,109 @@ score the four 08-04 expectations (framework/EO after ~14:00, SpaceX after
 16:30); **08-05 is a double header** — SB 903 at Assembly Appropriations 9am
 PT and the CHATBOT Act markup in Senate Commerce 10am ET; the Stanford
 AI-companion study is held for the 08-04 record.
+
+---
+
+## 2026-08-05 — `/daily` catches up a day and a half at once: 08-03 finalized, 08-04 fully reconstructed, 08-05 opened
+
+Ran cold off `/start` (previous session had closed without a `/daily`
+since early 08-04 morning). `collect.py` was kicked off in the background
+(`--since 2026-08-03T09:00:00Z`, covering all three digest-days in one
+sweep) but never produced output inside this session's window — this
+run's curation rests entirely on 9 parallel agentic research dispatches
+(WebSearch/WebFetch against primary sources), not the collector buffer.
+Flagged so a future session doesn't assume the buffer was used.
+
+**Upcoming check, 7 entries resolved:** `spacex-q2-earnings` and
+`amd-q2-2026-earnings` both **hit** — clean beats, both sold off hard
+after-hours on AI-capex/valuation concerns, the same pattern on two
+unrelated companies the same night. `gov-review-framework-announce` and
+`eo14409-deadlines` both resolved **passed-silent** on a real finding,
+not an absence one: the White House told the labs directly at the 08-04
+review meeting that it has **no plans to ever publish** the EO 14409
+framework — a deliberate non-disclosure decision. `eu-ceuta-ministers-meeting`
+**hit** (meeting held, solidarity statement only, no binding outcome —
+exactly as pre-registered). Two overdue passed-silent candidates
+evaluated for real: `asml-samsung-highna-1h2026` confirmed genuinely
+silent (ASML's own Q2 call names only Intel running High-NA in
+production); `aetna-alma-rate-cut-effective` was **not** silence — Aetna
+partially reversed the cuts and delayed the rest to 08-15, due date
+corrected and pushed to slips.
+
+**08-03 finalized** — lighter than expected, because the prior session's
+early-08-04 "overnight extension" pass had already curated most of the
+day in real depth (the Texas PUCT/ERCOT grid-freeze catch, the EO 14409
+meeting mechanics, Qwen3.8-Max). The coverage-critic pass caught one real
+miss worth keeping: **"Astra"** — an OpenAI model this map had
+deliberately held out 08-02 as single-source-thin — turned out to be
+real. Three of four AI benchmarks led with it 08-03: a 249-page
+manuscript plus verified Lean proofs on GitHub, 10 math/CS problems
+unsolved a decade-plus, ~$2,000 in inference cost. Offered as a thread
+candidate (critic-add), no existing thread fits it. **A second
+self-caught error, worth recording as its own lesson:** a first draft
+credited Alphabet with an 08-03 capex-guidance raise sourced from a
+"24/7 Wall St, Aug 3" article — cross-checked against this map's own
+07-22 digests and found stale by two weeks (the raise happened 07-22;
+the Aug-3 article was a same-week earnings-recap piece, and its dateline
+was mistaken for the event date). Caught and struck before publish, not
+after — the correction is recorded in the digest itself. Same failure
+family as the Woebot/SpaceX misdating lessons; worth remembering that a
+wrap article's publish date is never the underlying event's date.
+
+**08-04 fully reconstructed** (a genuinely missed day, zero prior
+content) — stays `building`, not finalized, since this run landed only
+~1.5h past its own 05:00 ET close. Real content: the WH's EO 14409
+non-disclosure finding; AMD's Q2 beat-and-sell-off; Anthropic hiring a
+Chief Global Affairs Officer; AI-datacenter operators tapping banks for
+billions in payment guarantees to unlock grid connections; Moonshot
+opening final pre-IPO talks; on global-capital, SpaceX/AMD's shared
+beat-then-sell-off pattern, Palantir's biggest single-day gain since
+2024, CoreWeave's Leidos government deal, Nvidia's reported $750B
+financing talks (revives the circular-financing question at ~3x the
+previously tracked scale); on world-news, **Kyiv's heaviest missile
+barrage in months** (15-17 dead, zero interceptions) — considered for
+the flash rail and deliberately NOT filed: a severe escalation inside an
+already-tracked ongoing war, not the novel first-of-its-kind event the
+rail exists for. Logged as a close call rather than a clean no, for
+Ben's own read. `europe-migration-schengen` and `horn-of-africa-war`
+(both opened 08-04 by the prior session) each got their day-2 content:
+the Ceuta council's actual (non-)outcome, continued Ethiopia/Sudan
+border fighting.
+
+**08-05 opened thin, honestly** — only ~1h45m into the digest-day at
+curation time, five real events still ahead (SB 903 hearing, CHATBOT Act
+markup, CVS/GlobalFoundries earnings, ISM Services) and none had
+happened yet. Stated plainly rather than padded.
+
+**Map moved:** 18 thread `last_seen` bumps (12 with real dated timeline
+entries, the rest ambient), one new `actor-doing.yaml` entry (AMD, newly
+posture-classified 08-04 and now with a real earnings test behind it),
+7 existing actor-doing entries refreshed (Amazon AWS, Anthropic, Nvidia,
+SpaceX, Moonshot, xAI, OpenAI — the last carrying the Astra correction
+too). One thread candidate offered and outstanding: Palantir as a
+standalone thread (currently untracked despite real, repeated
+relevance).
+
+**Site briefings refreshed** — front + all 3 lens scopes, via 4 parallel
+sonnet dispatches against fresh packs, one validation failure caught and
+fixed (a section with only 1 bullet against the 2-4 minimum) before
+`--apply` went clean. `--export` wrote 155 readouts (1 scope dropped as
+no-longer-packable: `entity:google-deepmind`). The other ~150
+thread/entity/node summary scopes were left alone per the routine
+step's own scope — a separate backlog, not touched this run.
+
+**Published twice:** the artifact read page (republished to the stable
+URL, 627 KB — over the 600 KB soft cap, degradation-rule warning only,
+not a failure) and the public site (`/publish --push`, Cloudflare build
+`d1c6b6f2`).
+
+Pick up: `collect.py`'s output should be checked next session — if it
+completed, fold anything it surfaced that the agentic sweep missed into
+the next `/daily`'s upcoming check. 08-04 needs finalizing once ~5h past
+its 05:00 ET close (after ~10:00 ET today). Five events land today:
+SB 903 (9am PT), the CHATBOT Act markup (10am ET), CVS earnings (8am
+ET), GlobalFoundries earnings (call 8:30am ET, unreleased as of this
+run), ISM Services + Fed Gov. Cook (10am ET) — all need checking against
+`upcoming.yaml`. The Astra and Palantir thread candidates are open for
+Ben's word. `spacex-insider-unlock` and `softbank-q1-earnings` both due
+tomorrow, 08-06.

@@ -14,6 +14,20 @@ clearinghouse, the FINRA-style SRO proposal, and the voluntary 30-day
 review deal. The announced framework's terms, who joins/refuses, and the
 first model actually gated by it.
 
+## 2026-08-04 — The White House tells the labs it has no plans to ever publish the framework
+
+- **A deliberate non-disclosure decision, not a delay.** The 08-04
+  meeting happened as scheduled (roughly a dozen companies including
+  OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia), but the
+  administration told attendees the framework "stays known only to a
+  select group of companies that may choose to participate," and it
+  remains unclear even to attendees whether it is finalized. CFR's Chris
+  McGuire: "We can't have secret, voluntary rules to regulate the most
+  important tech in the world." Both ledger twins (`gov-review-framework-
+  announce`, `eo14409-deadlines`'s Sec. 3(b) half) resolve passed-silent
+  today on this finding; the classified NSA-threshold half stays dark.
+  ([Fortune](https://fortune.com/2026/08/04/baffling-white-house-wont-publicly-release-ai-model-evaluation-framework-it-reviewed-today-with-openai-anthropic-microsoft-and-others/)) ⟨daily 2026-08-04⟩
+
 ## 2026-08-03 — The EO 14409 framework gets a date without getting published
 
 - **The White House will present the "finalized" framework to the labs
