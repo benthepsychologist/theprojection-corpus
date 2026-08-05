@@ -354,13 +354,7 @@ DIM_LABELS = {
 # theprojection-data 2026-08-05) is PRIVATE, so these receipts resolve for
 # Ben (logged in) and 404 for the public; a public receipt export is an
 # open follow-up (kestrel STATUS.md).
-# ⚠ URL below intentionally still points at the OLD repo name as of this
-# commit: the GitHub-side rename hasn't completed yet (blocked on repo-
-# admin token scope / Ben's action). Update to .../theprojection-corpus/
-# ONLY once github.com/benthepsychologist/theprojection-corpus actually
-# resolves — flipping it early would 404 every receipt link on the live
-# site. See the 2026-08-05 renamed-repo brief in kestrel/INBOX/.
-KESTREL_REPO_BLOB = "https://github.com/benthepsychologist/theprojection-data/blob/main/"
+KESTREL_REPO_BLOB = "https://github.com/benthepsychologist/theprojection-corpus/blob/main/"
 
 
 def _mk_source(s):
