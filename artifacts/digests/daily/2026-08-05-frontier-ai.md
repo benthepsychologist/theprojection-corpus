@@ -44,7 +44,7 @@ attempt on an open-source project.
   startup that Google itself is backing. Confirmed via Pichai's own post.
   This doesn't fit any thread currently on the map — offered below as a
   candidate. ([Axios](https://www.axios.com/2026/08/05/google-deepmind-demis-hassabis-ai), [CNBC](https://www.cnbc.com/2026/08/05/google-chief-scientist-jeff-dean-leaving-company-after-27-years.html))
-  <!-- k: t= e=demis-hassabis,google-deepmind,google axis=people-and-accountability sev=major -->
+  <!-- k: t=deepmind-leadership-transition e=demis-hassabis,google-deepmind,google axis=people-and-accountability sev=major -->
 
 ## Research & safety
 
@@ -177,13 +177,14 @@ attempt on an open-source project.
 - `+ coverage-log.md` — 08-04 finalize entry: AI-lens miss found and
   corrected (WH meeting ↔ containment-breach connection); mental-health
   and global-capital lenses read clean.
+- `+ threads/deepmind-leadership-transition` — opened (ben-steer 08-05,
+  "track the DeepMind thread"), promoted the same session it was offered
+  as a candidate.
 
 ## 🧵 Thread candidates
 
-- **candidate: Demis Hassabis steps down as DeepMind CEO (→ chairman +
-  Alphabet Chief Scientist); Jeff Dean leaves Google after 27 years.** A
-  leadership reset at a top-3 frontier lab with no thread to hang it on —
-  track it? (curator-noticed)
+None outstanding — today's one candidate (DeepMind leadership) was
+promoted the same session (see Map changes above).
 
 ---
 Google DeepMind's CEO just stepped upstairs and its longest-tenured

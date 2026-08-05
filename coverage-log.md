@@ -2059,3 +2059,15 @@ flagged for the main session's judgment, not auto-bumped. Frontmatter
 flipped to `status: final` across all five 08-04 files
 (`coverage: done` for ai/mental-health/global-capital, `coverage: na` for
 world-news, front.md status-only).
+
+### /steer — 2026-08-05
+- **`+ threads/deepmind-leadership-transition`** (ben-steer, "track the
+  DeepMind thread"). Promoted from the same-session `/daily` thread
+  candidate: Demis Hassabis stepping down as DeepMind CEO (→ chairman +
+  Alphabet Chief Scientist), Koray Kavukcuoglu promoted to DeepMind SVP,
+  Jeff Dean leaving Google after 27 years to found "Discovery Loop."
+  `genre: succession`, `lens: ai`, `weight: 2`, entities
+  `[demis-hassabis, google-deepmind, google]`. Seeded
+  `artifacts/threads/deepmind-leadership-transition.md`; today's
+  frontier-ai digest's `k:` annotation and Thread candidates section
+  updated to match.
