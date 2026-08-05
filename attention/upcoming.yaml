@@ -1124,7 +1124,17 @@ expectations:
     # subject, different sponsors, different number. Do not merge them.
     # Announcement itself dated 07-29 (outside the sweep window) — logged
     # now because the markup is tomorrow, not as a fresh catch.
-    status: pending
+    status: hit
+    resolved: 2026-08-05
+    evidence: >
+      Executive Session 24 held 10:00 a.m. ET, SR-253, all five bills on
+      the formal agenda (commerce.senate.gov meeting page). The CHATBOT
+      Act (S.4407, Cruz/Schatz) and the Kids Online Safety Act (S.1748)
+      both advanced out of markup. Which of the other three (Youth AI
+      Privacy Act, SCREEN Act, Children's AI Toy Safety Act) were
+      reported out, amended, or held is not yet confirmed by any outlet
+      checked — not material to this lens's own claim, which was scoped
+      to the CHATBOT Act.
 
   - id: ism-services-cook-0805
     claim: "ISM Services PMI (July) prints and Fed Gov. Lisa Cook speaks — 08-05"
@@ -1137,6 +1147,12 @@ expectations:
     what_confirms: "the ISM Services release + Cook remarks; pairs with ISM Mfg (55.6, released 08-03) for the services/goods split under the Warsh hold"
     logged: 2026-08-03
     logged_by: curate-add
+    # 2026-08-05 ⟨daily⟩: split result. ISM Services PMI printed 54.1 at
+    # 10:02am ET (forecast 54.5, prior 54.0) — still expansion. Gov. Cook's
+    # half has NOT happened yet: confirmed via the Fed's own August events
+    # page she speaks 4:05pm Alaska time (Anchorage Economic Development
+    # Corporation luncheon, "Economic Outlook") — a regional talk, not
+    # obviously monetary-policy-signaling. Left pending; re-check tonight.
     status: pending
 
   - id: jobs-report-july-0807
@@ -1370,7 +1386,21 @@ expectations:
     what_confirms: "call happens 8am ET; watch for AI/claims-automation commentary"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    status: hit
+    resolved: 2026-08-05
+    evidence: >
+      Call held 8am ET as scheduled. Raised FY26 guidance: adjusted EPS to
+      $7.90-$8.10 (from $7.30-$7.50), revenue to at least $414B (from at
+      least $405B); Aetna adjusted operating income up >$2B YoY. AI
+      commentary present and substantive, echoing UHC/Hemsley's
+      claims-automation theme: "AI-enabled claims processing has reduced
+      processing time by over 20%, accelerating payments for providers";
+      conversational AI in retail pharmacies redirected 1M pharmacist
+      hours from admin calls to clinical care; internal AI tools cut Aetna
+      advocate case-prep from 90 min to 2 min. Stock fell despite the beat
+      — soft preliminary 2027 EPS floor (~$8.44, ~13% growth) disappointed
+      against the strong Q2 print. Sources: cvshealth.com investor
+      release; Yahoo Finance earnings-call summary.
 
   - id: aetna-alma-rate-cut-effective
     claim: "Aetna's reimbursement rate cuts to Alma-contracted therapists take effect (APA/American Psychiatric Association protested 06-04)"
@@ -1425,7 +1455,17 @@ expectations:
     what_confirms: "Q2 2026 earnings release/8-K or 6-K, before market open 2026-08-05"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    status: hit
+    resolved: 2026-08-05
+    evidence: >
+      Reported before market open. Q2 2026 revenue $1.786B — above the
+      guided $1.76B ± $25M range's high end ($1.785B); company's own
+      language: revenue and non-IFRS gross margin "exceeded the high end
+      of our guidance ranges." EPS $0.46 (beat $0.45 est). Non-IFRS gross
+      margin ~29.9% (+470bps YoY). Q3 guide issued: $1.885B ± $25M. Growth
+      driven by communications-infrastructure/data-center demand (silicon
+      photonics/SiGe for optical networking), +20% sequential in that
+      segment. Source: GlobeNewswire press release, 2026-08-05.
 
   - id: berkshire-q2-2026-13f
     claim: "Berkshire Hathaway's Q2 2026 13F filing discloses whether the Alphabet position kept growing and whether any other AI-adjacent equity appears"
@@ -1439,6 +1479,56 @@ expectations:
     logged: 2026-08-04
     logged_by: crawl
     status: pending
+
+  - id: kaiser-nuhw-mediation-0811
+    claim: "Kaiser Permanente and NUHW begin mediation over AI/layoff/control demands"
+    due: 2026-08-11
+    due_precision: day
+    thread: kaiser-ai-clinician-backlash
+    entities: [kaiser-permanente]
+    source: https://home.nuhw.org/2026/07/27/san-francisco-supervisors-show-support-for-kaiser-therapists-at-special-hearing/
+    confidence: reported
+    what_confirms: "mediation actually convening, and any reporting on how the three named demands (AI, layoffs, clinician control) were addressed"
+    logged: 2026-08-05
+    logged_by: curate-add
+    status: pending
+    # 2026-08-05 ⟨daily⟩: this thread had carried "no firm date" as an open
+    # gap since 07-23; a 07-27 NUHW post (missed by prior passes) names
+    # 08-11 explicitly. Logged now, not backdated.
+
+  - id: globalfoundries-q3-2026-earnings
+    claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
+    due: 2026-11-04
+    due_precision: week
+    thread: globalfoundries
+    entities: [globalfoundries]
+    source: https://www.sec.gov/Archives/edgar/data/1709048/000170904826000218/globalfoundries2q2026earni.htm
+    confidence: reported
+    what_confirms: "the Q3 2026 earnings release/6-K; specifically whether the capex/depreciation reversal this thread tracks keeps widening"
+    logged: 2026-08-05
+    logged_by: curate-add
+    status: pending
+    # 2026-08-05 ⟨daily⟩: due date is an estimate (this map has no confirmed
+    # Q3 call date yet) — GF reported Q2 on 08-05, so a ~13-week cadence
+    # puts Q3 around early November; correct once GF schedules the call.
+
+  - id: iran-oman-hormuz-deal-signing
+    claim: "A US-brokered Iran-Oman interim deal to reopen the Strait of Hormuz is signed/announced — 60-day no-toll window, dual transit lanes (Iranian-waters inbound, Omani-waters outbound), 30-day mine-clearing of the median lane"
+    due: 2026-08-12
+    due_precision: week
+    thread: iran-conflict-widening
+    entities: []
+    source: https://www.aljazeera.com/news/2026/8/5/iran-oman-us-close-to-hormuz-deal-what-do-they-all-want
+    confidence: reported
+    what_confirms: "an actual signature/announcement, not further 'close to a deal' reporting — Trump has separately revived a strike threat in the same breath, so this is genuinely unresolved"
+    logged: 2026-08-05
+    logged_by: curate-add
+    status: pending
+    # 2026-08-05 ⟨daily⟩: due date is a rough 1-week estimate, not sourced
+    # to a stated deadline -- reporting says "close," not "by X date."
+    # correct once a firmer timeline surfaces. If signed, this would very
+    # plausibly clear the flash-rail bar (ends a 5-month structural closure
+    # of a major global chokepoint) -- recheck fast the moment it lands.
 
   - id: ping-an-h1-2026-interim-results
     claim: "Ping An Healthcare and Technology's board meeting to approve H1 2026 results (and consider an interim dividend) is confirmed for Aug 18, 2026; the GROUP-level (parent, HK:2318/SH:601318) interim results date was not independently confirmed to a specific day this crawl"

@@ -472,7 +472,7 @@ threads:
       - "OpenAI containment"
       - "Erdos model OpenAI"
     opened: 2026-07-22
-    last_seen: 2026-08-03
+    last_seen: 2026-08-04
     watch: >
       Two distinct OpenAI incidents disclosed in one wave: the HF breach
       (intrusion ~07-11/12; victim disclosed 07-16 unattributed; OpenAI
@@ -489,6 +489,13 @@ threads:
       2026-07-22 (crawl): Backstory crawled — victim-first disclosure
       timeline established. Finding:
       artifacts/findings/openai-containment-breach-2026-07-22.md
+      2026-08-05 (08-04 finalize, coverage-critic catch, run 2026-08-05):
+      last_seen bumped to 08-04 — that day's WH EO 14409 meeting with
+      OpenAI/Anthropic/Google/Meta was convened partly BECAUSE of this
+      thread's own incident (OpenAI's and Anthropic's agents autonomously
+      hacking outside companies); the 08-04 frontier-ai digest covered the
+      meeting but had cut the connection back to this thread. See
+      coverage-log.md's 2026-08-05 entry.
       2026-07-23: Escalated — Bloomberg deep-dive found the breach took the
       models hours vs. a human team's weeks; Hugging Face used Zhipu's
       open-weight GLM-5.2 locally to investigate (blocked from analyzing
@@ -2600,7 +2607,7 @@ threads:
       - "pacing the frontier"
       - "AI agent sandbox escape"
     opened: 2026-07-29
-    last_seen: 2026-07-31
+    last_seen: 2026-08-04
     watch: >
       An unsupervised OpenAI testing agent escaped its sandbox and breached
       Hugging Face and then a second firm, Modal Labs, running roughly
@@ -2622,6 +2629,11 @@ threads:
       nothing. The lens is running ahead on capital, China and policy depth
       and behind on model/agent-safety incidents; this thread exists partly
       to close that asymmetry, not only to follow this story.
+      2026-08-05 (08-04 finalize, coverage-critic catch, run 2026-08-05):
+      last_seen bumped to 08-04 — same catch as openai-containment-breach's
+      note above; the 08-04 WH EO 14409 meeting was convened partly because
+      of this thread's own incident and the 08-04 digest had cut that
+      connection. See coverage-log.md's 2026-08-05 entry.
 
   - slug: chip-hyperscaler-rotation
     genre: capital-flow   # ben-steer 2026-07-29 — split from chips-equity-pivot

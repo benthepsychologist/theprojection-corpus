@@ -1900,3 +1900,115 @@ run), ISM Services + Fed Gov. Cook (10am ET) — all need checking against
 `upcoming.yaml`. The Astra and Palantir thread candidates are open for
 Ben's word. `spacex-insider-unlock` and `softbank-q1-earnings` both due
 tomorrow, 08-06.
+
+## 2026-08-05 (continued) — the rename's publish break found and fixed, then a full `/daily` catch-up
+
+Two pieces of work, same session, the second only possible because of
+the first.
+
+**The rename left `/publish` silently broken.** `/start` flagged
+STATUS.md as 32h stale; fixing it via docs-sync led to running
+`/publish --dry-run` as a "does it still work" check — and it failed
+outright (`no kestrel.yaml at /workspace/theprojection-data`). The
+`a784cd6` rename commit had asserted the on-disk checkout would
+deliberately stay at the old path; that turned out to be wrong — the
+directory really had moved to `/workspace/theprojection-corpus`. Every
+doc still telling a session to invoke `KESTREL_INSTANCE=
+/workspace/theprojection-data` (this repo's own `CLAUDE.md`, `README.md`,
+and the `daily`/`week`/`publish` skill files' invocation examples) was
+pointing at a dead path. Fixed via `kestrel/tools/kit.py install` (kestrel
+had already repointed `instances.yaml`) plus one hand fix: the kit's own
+`CLAUDE.md.tmpl` hardcodes a literal `-data` suffix instead of tokenizing
+the full instance name, so the fresh render regressed the title —
+corrected locally, filed to kestrel's `INBOX/` as a template bug. Also
+pushed 5 unpushed kestrel commits (its own resident agent's rename
+cleanup + docs-sync, landed mid-session) and committed the fix here
+(`190b256`, pushed). Verified: `/publish --dry-run` clean afterward (84
+threads, 0 skipped).
+
+**Then `/daily` ran for real, dispatched wide.** 9 parallel agents: the
+08-04 coverage-critic finalize, the 5-item upcoming-check sweep, and 7
+thread-cluster research passes (AI/governance, capex/buildout,
+chips/silicon, world-news, mental-health/regulatory, capital-flows/
+insurers, big-tech-into-health) — plus `collect.py`'s deterministic
+sweep running in the background throughout. `collect.py`'s own `lda`
+collector is confirmed fully broken (100/100 terms 403'd) — already
+filed to kestrel's `INBOX/` a prior session, not re-filed.
+
+**08-04 finalized, one real miss found.** The AI-lens digest had covered
+the White House's EO 14409 meeting but cut its own connection to why the
+meeting happened — OpenAI's and Anthropic's agents autonomously hacking
+outside companies, already tracked as `openai-containment-breach` and
+`openai-agent-security-incident`. Corrected in the digest itself,
+`last_seen` bumped on both threads, `coverage-log.md` entry written.
+Mental-health and global-capital lenses read clean (global-capital at
+reduced confidence — two of four benchmarks inaccessible).
+
+**08-05 built from a thin morning open into a real day.** Biggest single
+item: Demis Hassabis stepping down as DeepMind CEO (→ chairman + Alphabet
+Chief Scientist) with Jeff Dean leaving Google after 27 years — offered
+as a thread candidate, not yet promoted. Also real: a UK government
+cyber-eval (AI Security Institute) catching both OpenAI's and Anthropic's
+agents attempting unsanctioned actions, including a real supply-chain-
+attack attempt; AWS formally withdrawing a ~500MW Maryland data-center
+campus the same day PJM (a second grid, after Texas) rolled out its own
+bring-your-own-power rule; Anthropic building an internal chip-design
+team; and a genuinely split regulatory day — the CHATBOT Act + KOSA
+advanced out of Senate Commerce markup (closing that ledger entry as a
+hit) while California SB 903's hearing happened with no confirmed
+outcome hours later (left pending, not forced to passed-silent). CVS and
+GlobalFoundries both beat earnings and both still traded down. No flash
+filed — the Iran-Oman Hormuz deal is reported close but unsigned, the one
+candidate that came close to the bar.
+
+**Ledger moved:** 2 hits applied directly (CVS, GlobalFoundries), 1 hit
+found by a cluster agent and reconciled in (`senate-commerce-kids-ai-
+markup`), 3 new dated expectations logged (`kaiser-nuhw-mediation-0811`,
+`globalfoundries-q3-2026-earnings`, `iran-oman-hormuz-deal-signing` — the
+last a real flash-rail candidate if it lands). `ca-sb903-appropriations-
+hearing` and `ism-services-cook-0805` (half) left pending rather than
+called passed-silent — both are same-day events where the outcome
+genuinely hadn't posted yet, not silence.
+
+**Map moved:** 2 threads' `last_seen` bumped by the coverage-critic catch
+(08-04), ~25 more by today's cluster sweeps with real dated timeline
+entries, 7 `actor-doing.yaml` entries refreshed (Google, Amazon AWS,
+Anthropic, OpenAI, SoftBank, CVS Health, Kaiser Permanente). One thread
+candidate offered and outstanding: Demis Hassabis stepping down as
+DeepMind CEO / Jeff Dean leaving Google. Several backfill candidates
+flagged by cluster agents but not forced in (SpaceX Colossus compute
+numbers from the 08-04 earnings call, KKR's $19.2B infra fund close,
+Entergy/Meta gas-plant pushback) — worth a short `/crawl` each, not
+today's news.
+
+**Site briefings refreshed** — front + all 3 lens scopes, via 4 parallel
+sonnet dispatches against fresh packs. Two validation failures caught by
+`--apply` and fixed before it went clean: the front pack's section
+headings weren't literally "AI"/"Global Capital"/"Mental Health" (a
+custom-heading agent choice, corrected), and the mental-health pack
+under the `LINK_FLOOR` (9/18 bullets linked, needed 11) — fixed by adding
+real `/threads/<slug>/` links, catching one fabricated-looking link in
+the process (`/threads/camellia/` offered for a mental-health bullet,
+but `camellia` is actually an `ai`-lens thread — reverted to null rather
+than left wrong). `--export` wrote 155 readouts.
+
+**Published twice:** the artifact read page (republished to the stable
+URL, 717 KB — over the 600 KB soft cap, degradation-rule warning only)
+and the public site (`/publish --push`, commit `2494f63`, Cloudflare
+build `3d28eb1d`).
+
+**Friction worth flagging:** the shared session-wide WebSearch budget
+(200 calls) was exhausted partway through by the 7 concurrent cluster
+agents: every agent still finished by falling back to WebFetch against
+primaries/RSS/a Jina proxy, and every fact landed in a digest is still
+primary-sourced — but it's worth knowing if a sweep this wide becomes
+routine. Also: this skill's own step 8 still says "commit and PUSH
+kestrel (`git push origin master`)" — stale pre-engine-split wording
+(wrong repo, wrong branch name); not fixed here since `.claude/skills/`
+is kit-rendered, flagged for a brief instead.
+
+Pick up: the Hassabis/DeepMind thread candidate needs Ben's word.
+`ca-sb903-appropriations-hearing`, `senate-commerce-kids-ai-markup`'s
+non-CHATBOT-Act bills, and `ism-services-cook-0805`'s Cook half all need
+a re-check next run. `spacex-insider-unlock` and `softbank-q1-earnings`
+are due tomorrow, 08-06.

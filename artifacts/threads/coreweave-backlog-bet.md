@@ -15,6 +15,15 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-08-05 — A supply-chain data point ahead of the 08-11 print: CoreWeave locks priority SSD access
+
+- **CoreWeave signed a multi-year deal with Solidigm for priority access
+  to enterprise SSD capacity**, per COO Sachin Jain "priority access to
+  the storage our roadmap depends on" — a minor item next to the backlog/
+  debt story, but a concrete sign capacity buildout is still accelerating
+  into the 08-11 earnings print.
+  ([Benzinga](https://www.benzinga.com/trading-ideas/movers/26/08/60952497/coreweave-draws-attention-ahead-of-earnings-and-new-capacity-plans)) ⟨daily 2026-08-05⟩
+
 ## 2026-08-04 — +20% on new government and international demand
 
 - **A Leidos partnership to supply AI cloud infrastructure to US

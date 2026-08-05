@@ -15,6 +15,22 @@ signal is a tension: Suleyman is the loudest Big-Tech voice on chatbot
 "AI psychosis" harm *while* shipping consumer AI companions, and MH is
 conspicuously absent from Microsoft's flagship health products.
 
+## 2026-08-05 — A second Israeli hospital-chain AI deal, same somatic pattern
+
+- **Microsoft and Assuta Medical Centers (Israel) announced an AI "doctor's
+  assistant"** — it pre-summarizes a patient's prior diagnoses/meds/labs
+  before a visit, transcribes the doctor-patient conversation, and drafts
+  visit documentation for physician review, with Assuta also migrating
+  its infrastructure to Microsoft's cloud. Pilot expected within a year.
+  Squarely administrative/somatic — a Dragon-Copilot-style ambient
+  documentation tool, no MH component — reinforcing this thread's
+  existing thesis that Microsoft's health push is physical-medicine-first.
+  Notable pattern: this is the second Israeli hospital-chain AI deployment
+  in under two weeks (OpenAI/Sheba Medical Center, 07-28) — international
+  hospital-chain AI rollout looks like a template both companies are now
+  running in parallel, worth a cross-reference on `openai-health`.
+  ([Jerusalem Post](https://www.jpost.com/health-and-wellness/article-904553)) ⟨daily 2026-08-05⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

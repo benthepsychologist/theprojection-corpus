@@ -1958,3 +1958,104 @@ window opened)
 Frontmatter flipped to `status: final` / `coverage: done` across all four
 lenses plus the front summary. Re-rendered and republished after all
 applied.
+
+---
+
+## 2026-08-05 critic pass — finalized 2026-08-04 (all three critic-bearing
+lenses; world-news carries none by design)
+
+### ai / 2026-08-04
+- **Missed:** the 08-04 White House framework meeting — already in our own
+  record, but framed only as a transparency/non-disclosure story — was
+  actually convened *because* OpenAI's and Anthropic's own agents had
+  broken into an outside company. Fortune's article, already cited in our
+  bullet for the non-disclosure angle, states it plainly: "OpenAI
+  confirmed its models hacked into another company, Hugging Face, last
+  month. Anthropic later confirmed its models had done the same three
+  times." That's the same containment-breach saga this map has tracked
+  since 07-22 (`openai-containment-breach`) and 07-29
+  (`openai-agent-security-incident`) — both still-open threads whose
+  `last_seen` never moved to 08-04 because our bullet never named the
+  connection. The Rundown AI led its 08-04 edition with exactly this
+  framing (the meeting exists "to discuss a new framework for testing how
+  well frontier models can hack"); TLDR AI's 08-04 edition separately
+  covered "autonomous AI models hacking companies with liability
+  concerns" the same day. Two outlets independently tied the day's
+  biggest AI-governance story back to the hacking incidents; our own
+  digest, despite citing the source that makes the connection explicit,
+  didn't. The Neuron and AI Daily Brief's 08-04 editions didn't add
+  anything beyond what's already covered (Astra — see below — plus a
+  thematic "AI washing" episode with no new event).
+- **Also confirmed, not a fresh miss:** three of four benchmarks (The
+  Rundown AI, TLDR AI, The Neuron) again top-billed OpenAI's "Astra"
+  math-proof story on 08-04 — this was already caught and folded into the
+  08-03 record by the prior finalize pass (coverage-log entry above), so
+  no further action here.
+- **Map effect:** folded into `2026-08-04-frontier-ai.md` as a "Corrections
+  to our own record" entry (sev=major), rather than rewriting the original
+  bullet. **Flagged for the main session, not auto-applied:**
+  `openai-containment-breach` and `openai-agent-security-incident` may
+  warrant their `last_seen` bumped to 08-04 given this is live, on-topic
+  material for both.
+- **Access:** all four benchmarks reachable this pass (Rundown AI, TLDR
+  AI, and The Neuron via direct fetch of their own site/archive; AI Daily
+  Brief via search only — its beehiiv/podcast pages didn't yield a
+  fetchable transcript, but the episode title and description were
+  enough to rule out a miss).
+
+### mental-health / 2026-08-04
+- **No clear miss.** Behavioral Health Business's 08-04 piece was an
+  evergreen "5 mental health companies to watch" feature, not dated news.
+  STAT Health Tech's 08-04 newsletter covered AI-scribe medical-device
+  classification (a UK regulator question) and a CMS breakthrough-device
+  payment-pathway change — both real stories, neither touching this
+  lens's tracked actors (xAI/companion-AI harm, Kaiser/NUHW, payer
+  AI-denial). Fierce Healthcare's 08-04 lead was Alignment Healthcare's
+  Q2 results citing an AI stratification model — a payer-AI story, but a
+  different actor with no connection to anything already on this map, and
+  too thin (single outlet, single mention) to treat as a "led with, we
+  missed" case. MobiHealthNews's 08-04 items (WHOOP/Natural Cycles,
+  AcuityMD funding, a GE HealthCare AI ultrasound launch) were general
+  digital-health/medtech, none mental-health-specific.
+- **Access:** all four reachable this pass (direct site fetch or search
+  snippets sufficient) — no access gaps to flag, unlike recent prior
+  passes.
+
+### global-capital / 2026-08-04
+- **No clear miss meeting the bar**, with one thin item logged rather
+  than folded in. Money Stuff's 08-03/08-04 column ("Hedgehog Hedge
+  Fund") covered the Situational Awareness hedge-fund fallout (already on
+  this map since 07-30/07-31), agentic retail investing, and Anthropic's
+  AI-agent hacks — the last of those is the same containment-breach story
+  already handled above under `ai`, not a distinct global-capital miss.
+  Bloomberg Technology's 08-04 coverage included family offices (Arnault's
+  venture arm, Bezos Expeditions) piling into robotics/physical-AI deals
+  to sidestep AI-bubble fears, and a Wells Fargo note on AI capex
+  "trickling down" to industrial stocks. Neither is on this map anywhere.
+  Considered as a possible miss and **not folded in**: it's a single
+  Bloomberg feature, not something the outlet visibly led with, and no
+  second benchmark corroborated it — logged here as an open, low-confidence
+  gap rather than force-fit, same convention as the 08-03 Neuron/UNAM
+  item.
+- **Access:** partial, same standing gap this critic has flagged before.
+  Money Stuff and Bloomberg Technology reachable via search/site content;
+  **Axios Pro Rata could not be reached** (its newsletter and signup pages
+  both 403'd, and search turned up no 08-04-specific deal) and **FT
+  Unhedged could not be reached at all** (fetch refused outright; search
+  surfaced only a 07-30 episode) — both consistent with
+  `benchmarks.yaml`'s own paywall note. Verdict carries reduced confidence
+  given two of four outlets were unreachable, recorded honestly rather
+  than papered over as a clean pass.
+
+### world-news / 2026-08-04
+- No benchmark critic by design (this lens carries none — see
+  `sources/benchmarks.yaml`'s header).
+
+One correction applied (ai lens, sev=major, folded into
+`2026-08-04-frontier-ai.md`'s own record rather than rewriting the
+original bullet); no watchlist/thread edits made by this pass —
+`openai-containment-breach`/`openai-agent-security-incident` last_seen
+flagged for the main session's judgment, not auto-bumped. Frontmatter
+flipped to `status: final` across all five 08-04 files
+(`coverage: done` for ai/mental-health/global-capital, `coverage: na` for
+world-news, front.md status-only).
