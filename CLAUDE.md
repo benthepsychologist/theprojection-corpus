@@ -17,10 +17,10 @@ root is the instance manifest.
 **Invocation rule:** any `tools/*.py` mentioned in the skills/docs means
 the ENGINE's tools, run as:
 
-    KESTREL_INSTANCE=/workspace/theprojection-data \
+    KESTREL_INSTANCE=/workspace/theprojection-corpus \
       python3 /workspace/kestrel/tools/<tool>.py
 
-Set `KESTREL_INSTANCE=/workspace/theprojection-data` for every engine tool
+Set `KESTREL_INSTANCE=/workspace/theprojection-corpus` for every engine tool
 invocation from this repo — without it the tools fall back to looking for
 instance data inside kestrel, where it no longer lives. Engine changes
 belong in kestrel (its `ROADMAP/DESIGN.md` is the split's design of

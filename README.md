@@ -38,7 +38,7 @@ operate here — the layout keys in it mirror what the tools actually read.
 **Every engine tool needs `KESTREL_INSTANCE` pointed at this repo:**
 
 ```
-KESTREL_INSTANCE=/workspace/theprojection-data python3 /workspace/kestrel/tools/collect.py
+KESTREL_INSTANCE=/workspace/theprojection-corpus python3 /workspace/kestrel/tools/collect.py
 ```
 
 Full rule + rationale: `CLAUDE.md`. Without the env var, an engine tool

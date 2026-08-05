@@ -1,9 +1,75 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-04 (evening)**. Top note covers the
-08-04 `/week` run and the board-coverage push that followed it; the
-morning `/daily` note, the q1/q2 research-workshop note, and the
-08-03/08-02 `/daily` notes sit under it.*
+*Hand-maintained. **As of 2026-08-05**. Top note covers the repo's
+identity rename and the `/daily` catch-up that followed it; the 08-04
+(evening) `/week` + board-coverage note, the morning `/daily` note, the
+q1/q2 research-workshop note, and the 08-03/08-02 `/daily` notes sit
+under it.*
+
+> **2026-08-05 — the repo renamed identity, then a day and a half of
+> missed digest coverage got caught up in one session.** Two unrelated
+> pieces of work, same day.
+>
+> **Rename: `theprojection-data` → `theprojection-corpus`.** Ben's call:
+> *"this repo is a research/writing corpus that owns a channel, not a
+> site's data backend — 'data' undersold it."* Every place the repo names
+> itself (README/AGENTS/CLAUDE/STATUS titles) was updated the same session
+> (`a784cd6`). The GitHub-side rename was confirmed live via the API
+> before the receipt-link URL in `publish/adapter.py` was flipped to the
+> new name (`8c6bf5e`) — flipping it earlier would have 404'd every
+> receipt link on the live site. The local git remote was repointed to the
+> new origin, fetch verified working. A brief covering kestrel-side stale
+> refs was filed to kestrel's own `INBOX/`; kestrel has since picked it up,
+> repointed `instances.yaml`'s `path:` to `/workspace/theprojection-corpus`,
+> and pushed its own engine-side rename refs (`e8027e1`). **Correction,
+> same day:** the `a784cd6` commit message asserted the on-disk checkout
+> would deliberately stay at `/workspace/theprojection-data` — that turned
+> out to be wrong. The directory itself **did** move to
+> `/workspace/theprojection-corpus` (confirmed directly: the old path
+> 404s, `pwd` inside this repo resolves to the new one). This broke
+> `/publish --dry-run` outright (`no kestrel.yaml at
+> /workspace/theprojection-data — not a valid instance repo`) until
+> `CLAUDE.md`/`README.md`'s `KESTREL_INSTANCE` examples and a re-run
+> `kit.py install` (picking up kestrel's already-fixed `instances.yaml`)
+> caught every stale invocation path up — verified fixed by re-running the
+> dry-run clean afterward (84 threads, 0 skipped). One canonical-template
+> bug found in the process and NOT fixed here (out of this session's write
+> zone): `CLAUDE.md.tmpl`'s title line hardcodes a literal `-data` suffix
+> rather than tokenizing the full instance name, so a fresh render
+> regressed this file's own title to "theprojection-data" — fixed locally,
+> filed to kestrel's `INBOX/` for the template itself. The historical
+> narrative elsewhere in this file, describing what was true under the old
+> name on past dates, is unchanged.
+>
+> **`/daily` catches up a day and a half** (`fbba882`): **08-03 finalized**
+> (the coverage-critic pass caught "Astra" — an OpenAI math-proof model
+> this map had deliberately held out 08-02 as single-source-thin — as a
+> real 3-of-4-benchmark story); **08-04 fully reconstructed** (a genuinely
+> missed day — the White House's EO 14409 non-disclosure finding, AMD's
+> beat-then-sell-off, Anthropic's Chief Global Affairs Officer hire,
+> Nvidia's reported $750B financing talks, Kyiv's heaviest missile barrage
+> in months considered for the flash rail and deliberately not filed as a
+> severe-but-not-novel escalation); **08-05 opened thin and honestly**
+> (~1h45m into the digest-day, five real events still ahead). **7 dated
+> expectations resolved**, including **3 that flipped to `passed-silent`**:
+> the White House's own voluntary review framework (`gov-review-framework-
+> announce`) and EO 14409's 60-day deliverables (`eo14409-deadlines`) both
+> resolved on a real finding — the WH told the labs directly at the 08-04
+> review meeting that it has no plans to ever publish the framework — and
+> ASML/Samsung's High-NA EUV systems (`asml-samsung-highna-1h2026`)
+> confirmed genuinely silent (ASML's own Q2 call names only Intel running
+> High-NA in production).
+>
+> **`collect.py` provenance backfill reached 18/18** (`60f6044`,
+> `07f8aef`) — the last 3 manifests (sec_edgar, treasury_tic,
+> semantic_scholar) captured, closing out the background sweep the
+> `/daily` run had kicked off.
+>
+> **🧵 Map: still 84 threads, board: still 92 orgs / 13 posture-classified**
+> (unchanged from the 08-04 evening note below) · **actor-doing: 44
+> entries** (was 43 — AMD added new, newly posture-classified 08-04 and
+> now with a real earnings test behind it). Full detail: `log.md`,
+> `coverage-log.md`.
 
 > **2026-08-04 (evening) — the first `/week` since 07-27 ran, then Ben
 > pushed the board's coverage gaps closed the same session.** Two
@@ -710,7 +776,7 @@ zero-dependency wants anyway.
 6. Open with Ben: money watchlist entity tuning + the CAPI-style people
    cohort (scope settled) · entity gaps: CXMT (money), Hugging Face (ai).
 7. ✅ **Public site scaffolded 2026-07-22, live 2026-07-23**:
-   `theprojection.org` ([repo](https://github.com/benthepsychologist/theprojection),
+   `theprojection.org` ([repo](https://github.com/benthepsychologist/theprojection-site),
    Hugo + Cloudflare Pages, butterfly brand system) plus
    `tools/publish_projection.py` (AGENTS.md discipline 9) and the new
    `/publish` command wrapping it. **Real traffic-ready now:** all 16

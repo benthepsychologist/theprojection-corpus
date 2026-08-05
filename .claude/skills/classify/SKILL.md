@@ -1,4 +1,4 @@
-<!-- kit: attention/classify@2026-08-04.1 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/classify@2026-08-05.1 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
 
 ---
 name: classify

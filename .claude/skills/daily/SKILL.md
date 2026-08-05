@@ -1,4 +1,4 @@
-<!-- kit: attention/daily@2026-08-04.1 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — edit the canonical copy and run /sync-kits, not this file. -->
+<!-- kit: attention/daily@2026-08-05.1 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
 
 ---
 name: daily
@@ -217,7 +217,7 @@ threads consume by ROUTING — so never dispatch per-thread (the same
 story would be fetched 58 times). Three tiers:
 
 1. **Lens sweeps — COLLECTORS FIRST (2026-07-28: collectors/ is real):**
-   run `KESTREL_INSTANCE=/workspace/theprojection-data python3 /workspace/kestrel/tools/collect.py` (all lenses, since last run) BEFORE any
+   run `KESTREL_INSTANCE=/workspace/theprojection-corpus python3 /workspace/kestrel/tools/collect.py` (all lenses, since last run) BEFORE any
    agent — 7 deterministic sources (google_news_rss, rss, gdelt,
    sec_edgar, federal_register, openalex, clinicaltrials) fill buffer/ +
    provenance in minutes, free. Then AT MOST 1-2 sonnet agents to cover
