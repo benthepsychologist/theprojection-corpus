@@ -176,12 +176,9 @@ Anthropic sought partial dismissal in a music-publishers' copyright suit.
 
 ## 🧵 Thread candidates
 
-- **candidate:** Meta ran ads containing AI-generated child sexual abuse
-  imagery — track it? (Wired, 08-05)
-- **candidate:** Anthropic's copyright/training-data legal exposure —
-  the Concord II music-publishers' suit plus the "Project Panama"
-  book-shredding investigation, landing the same day — track it? (Digital
-  Music News, Euronews, 08-05/06)
+Both promoted same-session (ben-steer): `+ threads/meta-ai-csam-ads`
+(lens: mental-health, alongside the sibling `grok-companion-harm`
+classification) and `+ threads/anthropic-copyright-exposure` (lens: ai).
 
 ---
 The DeepMind reshuffle got its market verdict — Alphabet down ~4-5%,

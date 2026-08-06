@@ -2790,3 +2790,73 @@ threads:
       unclear from initial coverage whether the two are connected or
       coincide by timing. No prior thread covered this; a genuinely new
       story, not a fold-in.
+
+  - slug: meta-ai-csam-ads
+    genre: authority-claim   # board.yaml genre (ben-steer 2026-08-06) — same
+      # genre as the sibling harm/liability threads grok-companion-harm and
+      # openai-containment-breach
+    title: "CSAM Ads"
+    kind: story
+    status: open
+    lens: mental-health   # classified alongside grok-companion-harm (also
+      # mental-health) rather than ai — both track AI-generated CSAM harm/
+      # liability specifically, distinct mechanism (ad platform vs. companion
+      # chatbot) but the same harm category this map groups together
+    entities: [meta-ai]
+    weight: 2
+    terms:
+      - "Meta AI CSAM ads"
+      - "Meta child sexual abuse imagery ads"
+      - "Meta AI-generated CSAM"
+    opened: 2026-08-06
+    last_seen: 2026-08-06
+    watch: >
+      Wired reported 2026-08-05 that Meta ran ads containing AI-generated
+      child sexual abuse imagery on its platforms. Distinct from the
+      companion-chatbot harm strand tracked on xAI/Grok
+      (`grok-companion-harm`) — this is a platform/ad-system liability
+      story, not a companion-AI one. Watch: Meta's own response and
+      moderation-failure explanation; whether regulators (FTC, state AGs)
+      open an inquiry; whether this becomes a pattern question across ad
+      platforms broadly, not just Meta; any parallel with the Grok/
+      Stability CSAM suits already tracked elsewhere on this map.
+    notes: |
+      2026-08-06: Opened (ben-steer — "track the Meta CSAM ads... thread,
+      good one"). Offered as a candidate the same day by the AI-lens
+      fresh-story sweep (buffer + web check, distinct from the
+      thread-update research pass). Single-source (Wired) as of opening;
+      watch for corroboration and Meta's own statement.
+
+  - slug: anthropic-copyright-exposure
+    genre: legitimacy-dispute   # board.yaml genre (ben-steer 2026-08-06) —
+      # matches payer-ai-claim-denial/nippon-life-openai-suit's framing:
+      # the legitimacy of how the training data was obtained, contested
+    title: "Copyright Exposure"
+    kind: story
+    status: open
+    lens: ai
+    entities: [anthropic]
+    weight: 2
+    terms:
+      - "Anthropic copyright lawsuit"
+      - "Anthropic Concord Music"
+      - "Anthropic Project Panama"
+      - "Anthropic book shredding"
+    opened: 2026-08-06
+    last_seen: 2026-08-06
+    watch: >
+      Two angles surfaced the same day (2026-08-05/06): Anthropic sought
+      partial dismissal in the "Concord II" music-publishers' copyright
+      suit, and a Euronews investigation ("Project Panama") detailed how
+      Anthropic physically shredded scanned books to train Claude. Distinct
+      from the $1.5B author copyright settlement already noted on
+      Anthropic's standing synthesis (a different, earlier case). Watch:
+      the Concord II dismissal ruling; further reporting on the
+      book-shredding practice and whether other labs did the same; any
+      read-through to Anthropic's IPO risk disclosures.
+    notes: |
+      2026-08-06: Opened (ben-steer — "track the Anthropic copyright...
+      thread, good one"). Offered as a candidate the same day by the
+      AI-lens fresh-story sweep. Two independent outlets (Digital Music
+      News, Euronews) converging on the same angle same-day was the signal
+      this was a real emerging story, not noise.

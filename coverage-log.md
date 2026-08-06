@@ -2170,3 +2170,25 @@ continuing to absorb it as a one-off each time.
 Frontmatter flipped to `status: final` across all five 08-05 files
 (`coverage: done` for ai/mental-health/global-capital, `coverage: na` for
 world-news, front.md status-only).
+
+### /steer — 2026-08-06
+- **`+ threads/meta-ai-csam-ads`** (ben-steer, "track the Meta CSAM ads...
+  thread, good one"). Promoted from the same-session AI-lens fresh-story
+  sweep: Meta ran ads containing AI-generated child sexual abuse imagery
+  (Wired, 08-05) — a platform/ad-system liability story, distinct
+  mechanism from the companion-chatbot harm strand already tracked on
+  xAI/Grok. `genre: authority-claim`, `lens: mental-health` (classified
+  alongside the sibling `grok-companion-harm` thread rather than `ai` —
+  both track AI-generated CSAM harm/liability specifically), `weight: 2`,
+  entities `[meta-ai]`. Seeded `artifacts/threads/meta-ai-csam-ads.md`.
+- **`+ threads/anthropic-copyright-exposure`** (ben-steer, "track the
+  Anthropic copyright... thread, good one"). Promoted from the same
+  sweep: Anthropic's copyright/training-data legal exposure surfacing
+  from two directions the same day — a bid to partially dismiss the
+  "Concord II" music-publishers' suit, and a Euronews "Project Panama"
+  investigation into it physically shredding scanned books to train
+  Claude. `genre: legitimacy-dispute`, `lens: ai`, `weight: 2`, entities
+  `[anthropic]`. Seeded `artifacts/threads/anthropic-copyright-exposure.md`.
+  Both threads' digest `k:` annotations and Thread candidates sections
+  updated to match; `attention/actor-doing.yaml`'s `meta-ai` entry
+  updated from "offered, not yet promoted" to reflect the promotion.
