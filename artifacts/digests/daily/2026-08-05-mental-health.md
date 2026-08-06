@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-05
-status: building
+status: final
 window_start: 2026-08-05T05:00:00-04:00
-as_of: 2026-08-05T13:47:00-04:00
-coverage: pending
+as_of: 2026-08-06T13:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-05
@@ -14,7 +14,10 @@ Nature, Stanford News, commerce.senate.gov, leginfo.legislature.ca.gov,
 NUHW, CVS investor release, Aflac/Wellness Matters survey coverage, direct
 outlet fetches). Session WebSearch budget was shared across concurrently
 running research agents and exhausted partway through; later verification
-used WebFetch against primaries.*
+used WebFetch against primaries. **Finalized 2026-08-06**: coverage critic
+run against the 4 daily mental-health benchmarks found 2 real misses
+(Aware Recovery Care's collapse, FDA/CMS closed-door clinical-AI
+meetings), both folded in below; SB 903's hearing outcome also resolved.*
 
 ## Today's throughline
 
@@ -40,15 +43,42 @@ payer-side language, not just UnitedHealth's.
   `upcoming.yaml`'s `senate-commerce-kids-ai-markup` as a hit.
   ([Commerce Executive Session 24](https://www.commerce.senate.gov/meetings/executive-session-24-08-05-2026/))
   <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans e= axis=policy-regulation-and-legal sev=major -->
-- **SB 903's hearing happened; the decision itself is still unconfirmed.**
-  California's Assembly Appropriations Committee (chaired by Wicks) held
-  its scheduled hearing at 9am PT with SB 903 on a ~282-bill sign-in-order
-  agenda — but neither the committee's own suspense-results page nor
-  leginfo's official bill history shows an outcome as of this check. Two
-  independent research passes both came up empty. Left pending rather than
-  called passed-silent — same-day legislative-outcome reporting lags this
-  committee's own pattern; re-check within the 3-day grace window.
+- **SB 903's hearing happened; update at finalize — placed on suspense, not
+  killed.** California's Assembly Appropriations Committee (chaired by
+  Wicks) held its scheduled hearing at 9am PT with SB 903 on a ~282-bill
+  sign-in-order agenda. Leginfo's own bill-history log now records the
+  outcome: "August 5 set for first hearing. Placed on suspense file." —
+  the same phrasing used for the bill's earlier Senate Appropriations
+  hearing (05/04), which was followed 10 days later by a release 7-0 to a
+  floor vote. Read against that precedent, the bill is alive; its real
+  up-or-down moment is a later suspense-file hearing (Assembly's typically
+  land mid-to-late August — ledgered as an estimate, `ca-sb903-
+  appropriations-hearing` now due ~08-18, slipped from 08-05).
+  ([leginfo SB 903 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903))
   <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
+- **⚠ Coverage-critic catch: Aware Recovery Care, an 11-state addiction-
+  treatment provider, is in simultaneous financial and operational
+  collapse.** A default eviction judgment took effect 08-05 after
+  $23,911.75/month in unpaid rent accrued since June 1; the company is
+  weighing an assignment for the benefit of creditors (effectively
+  liquidation) after a 21-day stay request filed 08-04; it's carrying an
+  $850,000 proposed settlement for a 290-employee misclassification suit;
+  and its former COO Matthew Eacott faces manslaughter and
+  evidence-tampering charges, plea date set September 24. A real
+  behavioral-health operator failure story, distinct from the AI-policy
+  news this lens otherwise tracked today.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/05/aware-recovery-care-caught-in-multiple-financial-operational-crises/))
+  <!-- k: t=mh-clinical-infra-funding e= axis=policy-regulation-and-legal -->
+- **⚠ Coverage-critic catch: federal regulators held closed-door clinical-AI
+  meetings with industry, including two mental-health-specific vendors.**
+  FDA and CMS officials hosted an unannounced "clinical AI demo day" (July
+  8, FDA's White Oak HQ) for 10 companies including Anthropic, Microsoft
+  AI, Amazon One Medical, and — notably for this lens — **Ellipsis Health**
+  (voice-based mental-health AI) and **Hippocratic AI**. A distinct
+  mechanism from the CHATBOT Act/KOSA legislative track above: executive-
+  branch/agency access, reported 08-05.
+  ([STAT News](https://www.statnews.com/2026/08/05/federal-regulators-invite-industry-closed-door-meetings-clinical-ai/))
+  <!-- k: t=ai-therapy-regulatory-reckoning e= axis=policy-regulation-and-legal -->
 
 ## Research & evidence
 
@@ -114,8 +144,9 @@ payer-side language, not just UnitedHealth's.
 
 - ✅ **`cvs-q2-2026-earnings` — hit** (see Capital & corporate above).
 - ✅ **`senate-commerce-kids-ai-markup` — hit** (see Policy above).
-- 🚧 **`ca-sb903-appropriations-hearing` — hearing occurred, decision
-  unconfirmed.** Left pending; re-check within grace window.
+- 🔄 **`ca-sb903-appropriations-hearing` — slipped, not resolved.**
+  Placed on suspense file (see Policy section above); due reset to
+  ~08-18 estimate.
 - **New to the ledger:** `kaiser-nuhw-mediation-0811` — 2026-08-11.
 - Next 7 days: nothing else due. `colorado-hb1195-effective` 08-12 ·
   `xai-mn-preliminary-injunction` 08-19 remain further out.
@@ -128,6 +159,10 @@ payer-side language, not just UnitedHealth's.
   (cross-lens with frontier-ai), `+ upcoming/iran-oman-hormuz-deal-signing`
   (cross-lens with world-news) — three new dated expectations logged
   today (⟨daily 08-05⟩).
+- `~ upcoming/ca-sb903-appropriations-hearing` — slipped, due → ~08-18.
+- `+ coverage-log.md` — 08-05 finalize entry: mental-health critic found 2
+  misses (Aware Recovery Care, FDA/CMS closed-door meetings), both folded
+  in above.
 
 ## 🧵 Thread candidates
 

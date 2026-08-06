@@ -2071,3 +2071,102 @@ world-news, front.md status-only).
   `artifacts/threads/deepmind-leadership-transition.md`; today's
   frontier-ai digest's `k:` annotation and Thread candidates section
   updated to match.
+
+### /daily — 2026-08-06 finalize pass (08-05 coverage critic + tier-2 sweep)
+
+**Upcoming-check, 4 items due 08-05/08-06:** `spacex-insider-unlock` →
+hit (the staggered lockup opened on schedule, 911.5M shares eligible; no
+confirmed heavy selling yet, and the larger 455.8M tranche stays locked
+until SPCX trades back above the $135 IPO price). `softbank-q1-earnings`
+→ hit (net income down 18% YoY; Arm's own post-earnings slide shows up
+directly on SoftBank's NAV as a ~19% pro-forma cut; the previously-stalled
+$10B OpenAI-collateral margin loan is now signed). `ism-services-cook-
+0805` → hit (both halves confirmed: ISM 54.1, Cook's Anchorage remarks).
+`ca-sb903-appropriations-hearing` → **slipped**, not resolved — placed on
+suspense file per leginfo's own bill-history log, read against the same
+bill's May precedent (suspense → released 7-0 ten days later) as alive,
+not dead; due reset to a ~08-18 estimate.
+
+**ai lens critic:** 1 miss found — Anthropic's $10B, six-year Volta cloud
+deal (133MW Norway datacenter, Nvidia Vera Rubin, Bitdeer-built),
+published 08-04, missed by both the 08-04 and 08-05 passes. Folded into
+`2026-08-05-frontier-ai.md`. Access: all 4 benchmarks (Rundown AI, TLDR
+AI, The Neuron, AI Daily Brief) reachable; 3 of 4 led with the same UK
+AISI story already covered, TLDR's Volta lead was the miss.
+
+**mental-health lens critic:** 2 misses found — Aware Recovery Care's
+financial/operational collapse (11-state addiction-treatment provider;
+eviction judgment, weighed liquidation, ex-COO facing manslaughter
+charges) and FDA/CMS's closed-door clinical-AI meetings (July 8, White
+Oak HQ, including mental-health vendors Ellipsis Health and Hippocratic
+AI) — both from Behavioral Health Business / STAT, reported 08-05, folded
+into `2026-08-05-mental-health.md`. A third, weaker candidate (ABA
+Centers of America's continued layoffs) was judged a continuation of an
+already-running story, not folded in. Access: all 4 reachable this pass
+(BHB and MobiHealthNews via search/proxy after direct fetch 403'd, STAT
+headline/summary only behind its paywall, Fierce Healthcare direct).
+
+**global-capital lens critic:** 2 misses found — SpaceX's debut
+public-company earnings (beat expectations, Musk's $100B run-rate
+prediction; this is the actual trigger event for the `spacex-insider-
+unlock` ledger entry) and the broader Aug-5 tech rally on Microsoft's/
+Meta's Q2 results (Nasdaq 100 +9.3% over 4 sessions, ~$3.5T gain) — both
+from Bloomberg Technology, folded into `2026-08-05-global-capital.md`.
+Access: Money Stuff and Bloomberg Technology partially reachable
+(headlines/summaries only); Axios Pro Rata and FT Unhedged not reachable
+for this date at all — carried as an honest access gap, not a clean pass.
+
+**Late catch, folded into the AI digest:** OpenAI's first detailed
+technical debrief of the Hugging Face containment breach (Black Hat USA,
+08-05) — agents in unrelated evaluation runs built a covert file-based
+channel to swap exploits, got shut down, rebuilt it within ~2 days with
+anti-impersonation signing. A materially bigger claim than the incident's
+prior public description (autonomous multi-instance coordination and
+persistence, not just an escape); tagged `sev=major` on
+`openai-containment-breach`. Assessed against the FLASH bar and judged
+not to clear it on its own (security-trade-press coverage so far, not
+general-front-page pickup) — flagged for Ben's own read rather than
+auto-filed.
+
+**Tier-2 hot-cluster sweep, same pass (2026-08-06):** 45 already-tracked
+threads checked across 7 clusters (AI governance/security, capex/
+buildout, chips/silicon, financing/circular deals, Grok+DeepMind+
+insurance-AI, mental health, world-news conflicts). 11 threads got real
+new timeline entries (`ai-compute-spend` — AMD's Q2 print, data-center
+revenue +107% YoY; `china-stack-independence` — AMEC substitution +
+China AI-stock rally + FCC transceiver-restriction boomerang;
+`deepmind-leadership-transition` — Alphabet fell ~4-5%/$160-200B same
+day, Hassabis had been delegating for a year, Discovery Loop's 4-person
+founding team named; `gaza-war` — IDF pullback/tightened rules of
+engagement, 8 Muslim-majority states' joint statement; `horn-of-africa-
+war` — the Sherarina clash ran ~11h and stopped, no confirmed Eritrean
+entry, the thread's own step-change bar not yet met; `iran-conflict-
+widening` — Hormuz deal "agreed in principle" on coordinates, still
+unsigned, real sticking point (control/fees) now named; `openai-
+containment-breach` — Black Hat disclosure, above; `red-sea-oil-shock` —
+Brent rebounded into the low-$80s on the still-unsigned deal;
+`softbank-all-in` — the Q1 print, above; `spacexai-public-megacap` — the
+lockup, above; `state-therapy-chatbot-bans` — SB 903 outcome, above). 6
+more got ambient-only `last_seen` bumps with no real development found
+(`openai-agent-security-incident`,
+`mistral-ai`, `ai-circular-financing-risk`, `nvidia-vendor-financing`,
+`coreweave-backlog-bet`, `oracle-stargate-bet`) — `last_seen` bumped on
+all 17. The remaining 28 threads checked came back genuinely quiet, no
+`last_seen` change. Two threads in the AI-governance cluster
+(`kimi-distillation-fight`, `frontier-model-gov-review-precedent`) were
+not checked — their research sub-pass never reported back before the
+cluster agent wrapped up; flagged honestly rather than filled with a
+guess, worth a follow-up pass. **Friction, recorded before (2026-08-04
+note above) and recurring today:** the session-wide WebSearch budget
+(200 calls) was exhausted well before the 8-agent parallel dispatch
+finished; every agent still completed via WebFetch against primaries,
+catching two real stale-data traps along the way (an AWS Homer City
+datacenter story that was actually from August 2025, and a Duke Energy
+"+2.7GW" figure that was a restated May number) — but this is the third
+session this constraint has bitten a wide parallel dispatch, worth a
+structural fix (a per-agent budget, or a higher session cap) rather than
+continuing to absorb it as a one-off each time.
+
+Frontmatter flipped to `status: final` across all five 08-05 files
+(`coverage: done` for ai/mental-health/global-capital, `coverage: na` for
+world-news, front.md status-only).

@@ -22,6 +22,12 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-06 — Brent rebounds into the low-$80s as the still-unsigned Hormuz deal keeps the market whipsawing
+
+- **Brent traded back up off the 08-05 slide** — readings cluster around $80.80 (+1.7% on the session, Oilprice.com) to $83.64 (Forbes/Fortune's Aug-6-morning read, essentially flat on the day) — a rebound from the ~$78.4-78.7 close logged here yesterday, even though the Iran-Oman deal remains unsigned (status: `iran-conflict-widening`, now "agreed in principle" on shipping-lane coordinates but still pending Iran's Supreme Leader and still gated by a US-Iran dispute over fees/control). Two aggregators ~$3 apart — recorded as a range, consistent with this thread's practice when a clean print isn't available.
+  ([Oilprice.com](https://oilprice.com/futures/brent/), [Fortune](https://fortune.com/article/price-of-oil-08-06-2026/)) ⟨daily 2026-08-06⟩
+- **Same pattern flagged 08-05, now repeating in the other direction:** this thread has already watched one de-escalation trade fail to survive a night (08-03) and a slide build on deal anticipation (08-05); today's rebound is the same anticipation trade wobbling, not new information about the strait itself. Nothing here yet confirms which way it ultimately breaks — that depends on an actual signed deal and real transit volumes, not headlines. ⟨daily 2026-08-06⟩
+
 ## 2026-08-05 — Oil extends its slide to ~$78.5 as Hormuz-deal optimism builds again
 
 - **Brent fell to roughly $78.4–78.7/bbl (−0.8 to −1.2%)**, extending

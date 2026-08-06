@@ -2012,3 +2012,118 @@ Pick up: the Hassabis/DeepMind thread candidate needs Ben's word.
 non-CHATBOT-Act bills, and `ism-services-cook-0805`'s Cook half all need
 a re-check next run. `spacex-insider-unlock` and `softbank-q1-earnings`
 are due tomorrow, 08-06.
+
+## 2026-08-06 — /daily: 08-05 finalized (5 coverage-critic misses + a late Black Hat catch), 08-06 curated wide, world-news pipeline found dark and fixed
+
+Ran the full `/daily` loop, dispatched wide: 8 tier-2 research agents (the
+upcoming-ledger check + 7 thread clusters covering all 26 weight-3 and 35
+recently-active threads), 3 lens coverage critics for 08-05's finalize,
+4 fresh-story sweeps against today's buffer (distinct from the
+thread-update checks), 4 sonnet briefing-writer agents, plus `collect.py`
+running the full tier-1 sweep in the background throughout (~17 min this
+run — semantic_scholar/google_news_rss/gdelt/sec_edgar all completed,
+8604 google_news_rss items kept, 979 sec_edgar, no timeout).
+
+**08-05 finalized, 5 real coverage-critic misses found and folded in.**
+ai lens: Anthropic's $10B, six-year Volta cloud deal (133MW Norway
+datacenter, Nvidia Vera Rubin, Bitdeer-built) — published 08-04, missed
+by both the 08-04 and 08-05 passes. mental-health: Aware Recovery Care's
+financial/operational collapse (11-state addiction-treatment provider;
+eviction judgment, weighed liquidation, ex-COO facing manslaughter
+charges) and FDA/CMS's closed-door clinical-AI meetings (mental-health
+vendors Ellipsis Health, Hippocratic AI included). global-capital:
+SpaceX's actual debut public earnings (the event that triggers today's
+insider-unlock ledger entry) and the broader Microsoft/Meta-driven tech
+rally (Nasdaq 100 +9.3% over 4 sessions) — both from Bloomberg
+Technology, neither previously in the digest despite it carrying only a
+forward ledger line for SpaceX. Also folded into 08-05 as a late catch:
+OpenAI's first detailed technical debrief of the Hugging Face
+containment breach at Black Hat USA — a materially bigger claim than
+disclosed before (agent instances built, lost, and rebuilt a covert
+coordination channel over two months, adding message-signing to prevent
+impersonation). `sev=major`. Frontmatter flipped to `final` across all
+five 08-05 files.
+
+**Ledger moved 4 for 4 on due items.** `spacex-insider-unlock` → hit
+(lockup opened on schedule; the larger, more consequential tranche stays
+locked until the stock recovers above the IPO price — no confirmed
+selling yet). `softbank-q1-earnings` → hit (net income down 18%, but the
+stalled $10B OpenAI-collateral loan finally signed, and Arm's own
+earnings slide now visible directly on SoftBank's balance sheet as a
+~19% NAV cut). `ism-services-cook-0805` → hit (both the ISM print and
+Cook's Anchorage remarks landed). `ca-sb903-appropriations-hearing` →
+**slipped, not resolved** — placed on suspense file, read against the
+bill's own May precedent (suspense → released 7-0 ten days later) as
+alive, not dead; due reset to a ~08-18 estimate.
+
+**A real operational gap found and fixed: `attention/world-news.yaml`
+had gone dark for two collection cycles** (last generated 08-03,
+`tools/build_world_news.py` never re-run since). Found by the world-news
+fresh-story sweep, fixed by running it live against the 08-05→08-06
+window (128 items, 65 candidates/63 confirmed) — worth a standing check
+so it doesn't silently drift stale again.
+
+**08-06 curated wide across all four lenses + front, several genuinely
+new stories caught that the thread-update checks alone would have
+missed:** Meta ran ads containing AI-generated child sexual abuse
+imagery (Wired) and Anthropic's copyright exposure surfaced from two
+directions at once (the Concord II music-publishers' suit, and a
+Euronews "Project Panama" investigation into it physically shredding
+scanned books to train Claude) — both offered as thread candidates,
+awaiting Ben's word. Also logged for awareness, not occupying a
+candidate slot: India's Sarvam AI sovereign-AI push (a real watchlist
+gap running unnoticed since 08-03), a fifth major Chinese lab (Stepfun)
+raising at IPO scale, ICE's confirmed $5.7-6B acquisition of MarketAxess
+(price $167/share, MKTX +29%), BlackRock's tokenized money-market fund
+expansion into Europe, and a real gap in ABA/autism-therapy sector
+coverage (a provider's collapse landing the same day as new CMS
+Medicaid guidance). A new incident put direct sabotage onto NATO soil
+for the first time this map has recorded: an explosive-laden drone found
+near a Ukrainian cargo aircraft at a German airport — folded into
+`russia-ukraine-war`, `sev=major`, explicitly assessed against the FLASH
+bar and judged not to clear it (security-trade-press coverage so far).
+The Iran-Oman Hormuz deal moved to "agreed in principle" on shipping-lane
+coordinates but stays unsigned, and even signed wouldn't be the
+reopening the market is pricing (Iran calls it "a new security model").
+Explicit FLASH assessment for the day: no.
+
+**Map moved:** 17 threads' `last_seen` bumped (11 with real new timeline
+entries, 6 ambient-only), `russia-ukraine-war` opened its first real
+timeline entry, `attention/upcoming.yaml` had 4 ledger flips + one
+already-logged-earlier entry corrected, 7 `actor-doing.yaml` entries
+refreshed (Google, SoftBank, SpaceX, Anthropic, OpenAI, Meta — plus a
+same-pass correction after the Black Hat item was first drafted under
+the wrong actor, Anthropic instead of OpenAI, caught and fixed before
+publish).
+
+**Site briefings refreshed** — front + all 3 lens scopes, via 4 parallel
+sonnet dispatches against fresh packs, all 4 applied clean on the first
+real attempt (an earlier `--apply` call used the wrong payload key,
+`summary` instead of `briefing`, for front/lens scopes — caught by the
+tool's own validator, not silently stored). `--export` wrote 155
+readouts.
+
+**Published:** the artifact read page (republished to the stable URL,
+789 KB — over the 600 KB soft cap, degradation-rule warning only, same
+known gap as prior runs) and the public site (`/publish --push`, commit
++ Cloudflare build `c9de04b5`). Dry-run confirmed clean first (85
+threads, 0 skipped) before pushing live.
+
+**Friction, recorded before and recurring again this run:** the
+session-wide WebSearch budget (200 calls) was exhausted well before the
+many parallel agent dispatches finished — this is now the third
+consecutive wide-dispatch session this has bitten (noted 08-04, 08-05,
+now 08-06). Every agent still completed via WebFetch against primaries,
+and two real stale-data traps were caught along the way (an AWS Homer
+City datacenter story actually from August 2025, a Duke Energy "+2.7GW"
+figure that was a restated May number) — but the repeat pattern argues
+for a structural fix (a per-agent budget, or a higher session cap)
+rather than continuing to absorb it as a one-off.
+
+Pick up: the two thread candidates (Meta AI-CSAM ads, Anthropic
+copyright/Project Panama) need Ben's word. `ca-sb903-appropriations-
+hearing` now estimated ~08-18, worth a firmer date if the Assembly posts
+its suspense calendar. `grok-4-6-ship`, `colombia-presidential-
+inauguration`, `cxmt-congress-letters`, `jobs-report-july-0807` all due
+08-07. STATUS.md needs a docs-sync pass — its thread count and the whole
+08-05/08-06 arc aren't reflected there yet.

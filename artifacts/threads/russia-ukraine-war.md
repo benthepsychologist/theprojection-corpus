@@ -18,6 +18,23 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-06 — An explosive-laden drone found near a Ukrainian cargo plane on German soil
+
+- **A drone carrying explosives was found at Leipzig/Halle Airport,
+  positioned near a Ukrainian cargo aircraft reportedly carrying
+  ammunition.** German police used a disposal robot to defuse it; the
+  airport briefly halted operations. Officials described it as a possible
+  "hybrid attack" with suspected state-actor involvement — no formal
+  attribution yet. Independently corroborated by Al Jazeera, CNN, The
+  Guardian, Euronews, Reuters and DW, all dated 2026-08-06.
+  ([Al Jazeera](https://news.google.com/rss/search?q=Leipzig+Halle+airport+drone+Ukraine)) ⟨daily 2026-08-06⟩
+- 💡 **First reported direct-sabotage incident on NATO/German soil this
+  thread has tracked.** A genuine escalation in kind (covert sabotage
+  targeting war-materiel logistics inside a NATO member state), distinct
+  from the front-line combat and airspace-incursion developments this
+  thread otherwise watches. No confirmed state actor named — watch for
+  attribution. ⟨daily 2026-08-06⟩
+
 <!--
   RULES (reframe Phase 0, 2026-07-22):
   - Newest-first dated blocks. /daily REBUILDS today's block at the top

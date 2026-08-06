@@ -363,8 +363,9 @@ expectations:
 
   - id: ca-sb903-appropriations-hearing
     claim: "SB 903 heard by Assembly Appropriations (suspense-or-forward decision)"
-    due: 2026-08-05
-    due_precision: day
+    due: 2026-08-18
+    due_precision: week
+    slips: [2026-08-05]
     thread: state-therapy-chatbot-bans
     entities: []
     source: https://apro.assembly.ca.gov/hearings
@@ -396,6 +397,18 @@ expectations:
     # and the bill's own history records no suspense placement.
     # WHAT IS NOT: which of the three paths is likelier. All three stay open.
     # Score the outcome 08-05 after 9 a.m. PT and do not pre-weight it.
+    # 2026-08-06 ⟨daily⟩: SLIPPED, not resolved. Leginfo's own bill-history
+    # log now reads "August 5 set for first hearing. Placed on suspense
+    # file." — the hearing happened on schedule but the actual
+    # release-or-die decision moved to a later suspense-file hearing.
+    # Precedent: the SAME phrasing was used for SB 903's earlier Senate
+    # Appropriations hearing (05/04/26 "Placed on APPR. suspense file"),
+    # followed 10 days later by a second suspense hearing where the
+    # committee released it 7-0 to a floor vote — read against that, the
+    # bill is alive, not dead. Assembly Appropriations suspense hearings
+    # typically land mid-to-late August; due reset to an estimate
+    # (2026-08-18) pending a firmer date. Primary-source only (leginfo);
+    # no second outlet independently corroborated this line yet.
     status: pending
 
   - id: meta-q2-earnings
@@ -652,7 +665,20 @@ expectations:
     what_confirms: "actual insider-sale filings/volume; a supply overhang test at the lows"
     logged: 2026-07-27
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-06
+    evidence: >
+      The staggered lockup opened on schedule 08-06: up to 911.5M shares
+      (~20% of restricted holdings, ~$101-116B) became eligible, two
+      trading days after the 08-04 earnings print as designed. No
+      confirmed actual selling (no Form 4s/sale reports) found as of this
+      check — only eligibility, not a realized sale wave. A separate,
+      larger 455.8M-share tranche stays fully locked because release
+      requires the stock above the $135 IPO price; SPCX closed $108.27
+      the day before, ~20% under issue. Calling this a `hit` on the
+      unlock mechanism itself (which is what the claim named); the
+      stronger "sale wave" framing is not yet evidenced.
+      (Yahoo Finance/AP, Motley Fool, Forbes)
 
   - id: arm-q1fy27-earnings
     claim: "Arm Q1 FY2027 earnings — stock -28% into the print; the royalty-growth + AGI-CPU story's live test"
@@ -1055,7 +1081,20 @@ expectations:
     what_confirms: "SoftBank's own earnings release, 3:30pm JST 08-06"
     logged: 2026-07-30
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-06
+    evidence: >
+      Q1 FY2026 released as scheduled: net income ¥347.3B, down 18% YoY
+      (investment gains +~300% YoY to ¥1.86T, almost entirely
+      ByteDance/Intel, not OpenAI — no OpenAI valuation gain this
+      quarter). Arm's own post-earnings slide shows up directly on
+      SoftBank's balance sheet: quarter-end NAV hit a record ¥72.3T, but
+      a same-release pro-forma mark as of 08-05 shows ¥58.3T (~19% cut),
+      driven by Arm's NAV contribution falling ¥43.4T → ¥31.1T. The
+      previously-stalled $10B OpenAI-stake margin loan is now signed
+      (Goldman/JPMorgan/Mizuho/Apollo/SMBC, agreed 08-05, drawdown this
+      month) — total OpenAI-linked SoftBank commitments now exceed $60B.
+      (Investing.com, Daily Sabah, Bloomberg)
 
   # ---- added 2026-08-03 ⟨daily⟩: the week-ahead calendar ----
 
@@ -1153,7 +1192,18 @@ expectations:
     # page she speaks 4:05pm Alaska time (Anchorage Economic Development
     # Corporation luncheon, "Economic Outlook") — a regional talk, not
     # obviously monetary-policy-signaling. Left pending; re-check tonight.
-    status: pending
+    status: hit
+    resolved: 2026-08-06
+    evidence: >
+      Both halves now confirmed. ISM Services PMI (July): 54.1, vs. 54.5
+      forecast, up from June's 54.0 — expansion territory, Business
+      Activity/New Orders both rose while Employment fell back into
+      contraction (47.4). Fed Gov. Lisa Cook delivered her Anchorage
+      speech 08-05/06: said an immediate hike isn't necessary but she's
+      "prepared to act" if disinflation stalls — real, on-record Fed
+      commentary landing in the same window as the print.
+      (PR Newswire ISM release, Federal Reserve — Cook speech text,
+      Bloomberg)
 
   - id: jobs-report-july-0807
     claim: "July US employment report (nonfarm payrolls) — 08-07"

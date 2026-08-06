@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-05
-status: building
+status: final
 window_start: 2026-08-05T05:00:00-04:00
-as_of: 2026-08-05T13:47:00-04:00
-coverage: pending
+as_of: 2026-08-06T13:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-05
@@ -13,13 +13,20 @@ coverage: pending
 Investing.com, TradingKey, ISM, Federal Reserve, Trading Economics,
 direct outlet fetches). Session WebSearch budget was shared across
 concurrently running research agents and exhausted partway through; later
-verification used WebFetch against primaries.*
+verification used WebFetch against primaries. **Finalized 2026-08-06**:
+coverage critic run against the 4 daily global-capital benchmarks found 2
+real misses (SpaceX's debut earnings, the broader tech rally), both
+folded in below.*
 
 ## Today's throughline
 
-CVS and GlobalFoundries both beat and both still traded down — the "good
-print, weak stock" pattern that's become the through-line of this whole
-earnings season on this map. The distinctive move belonged to SoftBank,
+SpaceX's debut public earnings, not the day's payer prints, turned out to
+be the throughline the digest itself missed on first pass: it beat
+expectations and helped power a four-session, ~$3.5T Nasdaq rally that
+this digest didn't capture at all. Inside what it did catch: CVS and
+GlobalFoundries both beat and both still traded down — the "good print,
+weak stock" pattern that's become the through-line of this whole earnings
+season on this map. The distinctive individual move belonged to SoftBank,
 up nearly 12% on Arm's overnight surge and a SoftBank Corp beat, a day
 ahead of the Group's own FY26 Q1 print that actually resolves the
 loan-stack/AI-credit question this thread tracks. Oil kept sliding on
@@ -51,6 +58,23 @@ Hormuz-deal optimism, dragging Brent down roughly 7% over two days.
 
 ## Deals & filings
 
+- **⚠ Coverage-critic catch: SpaceX's debut public-company earnings report
+  beat expectations**, revealing heavy AI-datacenter spending and an
+  ambitious Starlink expansion, with Musk predicting a $100B annual
+  revenue run-rate by year-end. This is the actual event that triggers
+  tomorrow's `spacex-insider-unlock` ledger entry, and the digest's only
+  prior reference to it was that forward ledger line with no earnings
+  content behind it.
+  ([Bloomberg Tech, Ed Ludlow](https://www.bloomberg.com/news/videos/2026-08-05/bloomberg-tech-8-5-2026-video))
+  <!-- k: t=spacexai-public-megacap e=spacex axis=deals-and-filings -->
+- **⚠ Coverage-critic catch: a broader Aug-5 tech rally on Microsoft's and
+  Meta's Q2 results — Nasdaq 100 up 9.3% over four sessions (~$3.5T
+  investor gain)** — with Bloomberg framing markets as now sorting AI
+  "winners and losers" between the two. Not previously tracked as an
+  aggregate move; this digest had SoftBank/Arm and GlobalFoundries/CVS
+  individually but not the hyperscaler-earnings rally driving the tape.
+  ([Bloomberg — "Tech Euphoria Has Come Back in Just Four Days"](https://www.bloomberg.com/news/newsletters/2026-08-05/tech-euphoria-has-come-back-in-just-four-days), [Bloomberg — "The Market Is Sorting Winners and Losers in the AI Race"](https://www.bloomberg.com/news/newsletters/2026-08-05/the-market-is-sorting-winners-and-losers-in-the-ai-race))
+  <!-- k: t=chip-hyperscaler-rotation e=microsoft,meta axis=deals-and-filings -->
 - **CoreWeave signed a multi-year Solidigm SSD priority-supply deal** ahead
   of its 08-11 earnings print — de-risking backlog delivery rather than
   adding to it.
@@ -64,11 +88,12 @@ Hormuz-deal optimism, dragging Brent down roughly 7% over two days.
 
 - **ISM Services PMI (July): 54.1**, vs. 54.5 forecast, up slightly from
   June's 54.0 — still expansion territory, pairs with the 55.6 ISM
-  Manufacturing print from 08-03. Fed Gov. Lisa Cook's remarks (the other
-  half of today's ledger entry) haven't happened yet — she speaks 4:05pm
-  Alaska time, a regional "Economic Outlook" talk in Anchorage, not
-  obviously monetary-policy-signaling. Left pending; re-check tonight.
-  ([Federal Reserve](https://www.federalreserve.gov/newsevents/2026-august.htm))
+  Manufacturing print from 08-03. **Update at finalize: Fed Gov. Lisa
+  Cook's half of this ledger entry has now happened** — her Anchorage
+  speech landed 08-05/06, saying an immediate hike isn't necessary but
+  she's "prepared to act" if disinflation stalls. `ism-services-cook-0805`
+  now closes as a full hit.
+  ([Federal Reserve](https://www.federalreserve.gov/newsevents/2026-august.htm), [Federal Reserve — Cook speech text](https://www.federalreserve.gov/newsevents/speech/cook20260805a.htm))
 - **Brent crude: ~$78.4–78.7/bbl**, down ~7% over two sessions (see
   Capital in my markets above).
 
@@ -92,6 +117,9 @@ Hormuz-deal optimism, dragging Brent down roughly 7% over two days.
 - `~ threads/softbank-all-in` — pre-earnings rally logged (⟨daily 08-05⟩).
 - `+ upcoming/iran-oman-hormuz-deal-signing` — new dated expectation
   (⟨daily 08-05⟩).
+- `~ upcoming/ism-services-cook-0805` — full hit at finalize (Cook spoke).
+- `+ coverage-log.md` — 08-05 finalize entry: global-capital critic found
+  2 misses (SpaceX earnings, tech rally), both folded in above.
 
 ## 🧵 Thread candidates
 
