@@ -236,21 +236,34 @@ place). **Collection is collectors-first since 2026-07-28** (18 registered
 sources via `tools/collect.py` as of 2026-08-03 — grown from the original
 12; agents only fill gaps + tier-2 depth — the skill's dispatch plan);
 curation/critic remain agentic until P3 lands. **Known live limitation —
-re-measured 2026-08-04, and the previous description of it was wrong.** The
-runner is a plain sequential loop with no concurrency, so it is SLOW: a full
-run takes **~59 minutes**. It does **not** hang and is **not** killed by a
-timeout — on 08-04 it completed **17/18, exit 0**. The earlier claim here
-("killed by its own timeout on three consecutive runs, 15/18 sources") was an
-artefact of reading the alphabetical progress mid-run while GDELT was
-separately failing in milliseconds on an unset `KESTREL_CONTACT_EMAIL`,
-contributing nothing. That variable is now set. Where the time actually goes:
-**semantic_scholar ~23 min (39%), google_news_rss ~14 min (24%), gdelt ~11½
-min (20%)**, everything else ~10 min combined. ⚠️ Budget a **full hour**, do
-not set a short timeout and read the kill as a bug, and do not parallelise
-*inside* `semantic_scholar` — `base.pace()` is a plain `time.sleep()`, not a
-shared limiter, so concurrent workers there would 429-storm. Measurements and
-the fix options are in kestrel's INBOX (`2026-08-04-…-collect-py-timings-
-remeasured.md`, amending the 07-31 item); the engine repo owns the fix.
+re-measured twice since, both times faster than the prior claim.** The
+runner is a plain sequential loop with no concurrency. 08-04's measurement
+put a full run at ~59 minutes (17/18, exit 0) — that has NOT held: **08-06's
+run completed all 18/18 in ~17 minutes** (13:02:06→13:19:12 UTC, timed off
+the run's own provenance-manifest timestamps), with comparable or larger
+per-collector volumes (`google_news_rss` alone kept 8,604 items). No
+configuration difference identified between the two runs; the swing is
+unexplained, not attributable to a fix. Treat both figures as real
+same-tool measurements on different days, not a resolved constant — budget
+for the slow case, don't be surprised by the fast one. 08-04's per-collector
+breakdown (**semantic_scholar ~23 min / 39%, google_news_rss ~14 min / 24%,
+gdelt ~11½ min / 20%**, everything else ~10 min combined) is the last time
+that split was independently re-measured; it may not still hold at the new
+speed. Do not parallelise *inside* `semantic_scholar` regardless — `base.
+pace()` is a plain `time.sleep()`, not a shared limiter, so concurrent
+workers there would 429-storm. ⚠️ **`KESTREL_CONTACT_EMAIL` is NOT
+persistently set** — the 08-04 note here said "that variable is now set,"
+but that was true only for that session's own ephemeral shell; 08-06 found
+it absent from this repo's `.env`, `~/.bashrc`/`.profile`/`.zshrc`, and
+`/etc/environment`, and had to set it by hand
+(`KESTREL_CONTACT_EMAIL=ben@getmensio.com`, matching `sources/API-SIGNUP.md`'s
+documented contact) for `federal_register`/`gdelt` to run keyed rather than
+fail. Set it explicitly at the start of every `/daily` run until it's baked
+into the container/instance setup — don't assume a prior session's fix
+persisted. Measurements and the fix options are in kestrel's INBOX
+(`2026-08-04-…-collect-py-timings-remeasured.md`, amending the 07-31 item);
+the engine repo owns the fix, and this 08-06 re-measurement is worth a
+follow-up brief there too.
 
 ## The steering loop (the growth mechanics — draft, Ben 2026-07-20)
 

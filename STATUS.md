@@ -1,10 +1,83 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-05**. Top note covers the repo's
-identity rename and the `/daily` catch-up that followed it; the 08-04
-(evening) `/week` + board-coverage note, the morning `/daily` note, the
-q1/q2 research-workshop note, and the 08-03/08-02 `/daily` notes sit
-under it.*
+*Hand-maintained. **As of 2026-08-06**. Top note covers a DeepMind-thread
+steer, a wide `/daily` run (08-05 finalized with 5 coverage-critic misses,
+08-06 curated fresh), and two more thread promotions; the 2026-08-05
+identity-rename note, the 08-04 (evening) `/week` + board-coverage note,
+the morning `/daily` note, the q1/q2 research-workshop note, and the
+08-03/08-02 `/daily` notes sit under it.*
+
+> **2026-08-06 — a big `/daily` run finalized 08-05 with real
+> coverage-critic catches, fixed a dark mechanical pipeline, and three
+> new threads got promoted across two steering rounds.** Four pieces of
+> work, same day.
+>
+> **`/daily` finalized 08-05 and found 5 real coverage-critic misses.**
+> ai lens: Anthropic's $10B, six-year Volta cloud deal (a 133MW
+> Nvidia-Vera-Rubin Norway datacenter built with Bitdeer) — published
+> 08-04, missed by both the 08-04 and 08-05 passes. mental-health: Aware
+> Recovery Care's financial/operational collapse (an 11-state
+> addiction-treatment provider — eviction, weighed liquidation, ex-COO
+> facing manslaughter charges) and FDA/CMS's closed-door clinical-AI
+> meetings (mental-health vendors Ellipsis Health and Hippocratic AI
+> among the ten companies invited). global-capital: SpaceX's actual
+> debut public earnings (the event that triggers the very next day's
+> insider-unlock ledger entry, previously carried only as a bare forward
+> line) and the broader Microsoft/Meta-driven tech rally (Nasdaq 100
+> +9.3% over 4 sessions). Also folded in as a late catch: OpenAI's first
+> detailed technical account of the Hugging Face containment breach
+> (Black Hat USA) — agent instances that built, lost, and rebuilt a
+> covert coordination channel over two months, a materially bigger claim
+> than previously disclosed, `sev=major`. Ledger went 4-for-4 on due
+> items (`spacex-insider-unlock`, `softbank-q1-earnings`,
+> `ism-services-cook-0805` all hit; `ca-sb903-appropriations-hearing`
+> slipped to a suspense-file hearing, ~08-18).
+>
+> **A real operational gap found and fixed: `attention/world-news.yaml`
+> had gone dark for two full collection cycles** (last generated 08-03,
+> its builder never re-run since). Found by a fresh-story sweep, fixed
+> by re-running `tools/build_world_news.py` live (128 items, 65
+> candidates/63 confirmed).
+>
+> **`collect.py` re-measured a second time, and the ~59-minute figure did
+> NOT hold:** 08-06's run completed all 18/18 collectors in **~17
+> minutes** (13:02:06→13:19:12 UTC, off the run's own provenance
+> timestamps), with comparable or larger per-collector volumes than
+> 08-04's slower run. No configuration difference identified — the swing
+> is unexplained, not a resolved fix; AGENTS.md now carries both figures
+> rather than treating either as settled. Separately, `KESTREL_CONTACT_EMAIL`
+> was found NOT persistently set (absent from `.env` and every shell
+> profile checked) despite an 08-04 note claiming it was — it was only
+> ever set in that session's own ephemeral shell. Set by hand this run;
+> AGENTS.md now says to set it explicitly every time until it's baked
+> into the container.
+>
+> **Three new threads promoted across two steering rounds, map now 87
+> threads (was 84):** `deepmind-leadership-transition` (ben-steer,
+> Hassabis stepping down as DeepMind CEO, Jeff Dean leaving Google after
+> 27 years — its market reaction, ~4-5%/$160-200B off Alphabet, landed
+> in the 08-06 `/daily` pass) plus, from today's AI-lens fresh-story
+> sweep (a check for genuinely new stories, distinct from the routine
+> thread-update research), `meta-ai-csam-ads` (Meta ran ads containing
+> AI-generated child sexual abuse imagery, lens: mental-health alongside
+> the sibling `grok-companion-harm` thread) and
+> `anthropic-copyright-exposure` (the Concord II music-publishers' suit
+> plus a Euronews "Project Panama" investigation into Anthropic
+> physically shredding scanned books to train Claude, lens: ai). Both
+> Ben's word, same-session ("track... good ones"). 17 threads' `last_seen`
+> bumped in the 08-06 `/daily` pass (11 real developments, 6 ambient), 7
+> `actor-doing.yaml` entries refreshed (Google, SoftBank, SpaceX,
+> Anthropic, OpenAI, Meta). Read page and public site republished after
+> every change (four publish passes today). Full detail: `log.md`,
+> `coverage-log.md`.
+>
+> **Friction, now recorded three sessions running (08-04, 08-05, 08-06):**
+> the shared session-wide WebSearch budget (200 calls) keeps getting
+> exhausted by wide parallel agent dispatches. Every agent still
+> completes via WebFetch against primaries, and real stale-data traps
+> keep getting caught along the way — but the repeat pattern argues for
+> a structural fix (a per-agent budget, or a higher session cap) rather
+> than continuing to absorb it as a one-off each run.
 
 > **2026-08-05 — the repo renamed identity, then a day and a half of
 > missed digest coverage got caught up in one session.** Two unrelated
