@@ -2295,3 +2295,17 @@ page's Q4/Q5/Q7/Q10 anchors refreshed. Book-side: 6 findings (incl. an
 internal date conflict two agents converged on and one falsified
 premise) filed to the-evidence-gap-src/INBOX/ — uncommitted, per
 protocol. /week should consume the memos for radar Q3/Q4 synthesis.
+
+### /steer — 2026-08-07 (second round, Ben's rulings on the wave's two candidates)
+
+- **`+ threads/neuromodulation-evidence`** (ben-steer: "neuromodulation
+  fits squarely in the evidence part of the MH feed. not just of
+  interest"). Full member of the `mh-evidence-watch` family (parent set),
+  not a peripheral watch — the What Works counter-case where a
+  sham-controlled confirmatory RCT (World Psychiatry 2026, 50.0% vs
+  20.8% remission) landed four years after 510(k) clearance and
+  replicated. Timeline seeded from the mh-q03 memo. Map 95 → 96.
+- **Alphabet capital-structure: STAYS FOLDED into `google-capex`**
+  (ben-steer: "leave alphabet capital-structure in google-capex"). The
+  bond-sale/spinout-fund material lives on that thread's timeline with
+  its "Alphabet bond" term; the candidate is closed, not deferred.
