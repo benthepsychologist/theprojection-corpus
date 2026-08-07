@@ -1,0 +1,205 @@
+# sources/outlet-credibility.yaml — domain-keyed credibility layer for
+# published source lists (the ground.news-style badge data). ben-steer
+# 2026-08-07: credibility FIRST, political lean parked indefinitely.
+#
+# Three layers, per the 2026-08-07 licensing audit (two crawler runs,
+# license text fetched verbatim — see log.md 08-07 entries):
+#   pc1  — Lin/Lasser/Lewandowsky/Cole/Gully/Rand/Pennycook 2023 ensemble
+#          (PNAS Nexus 2(9):pgad286, CC BY 4.0 paper), data
+#          github.com/hauselin/domain-quality-ratings (11k domains,
+#          static snapshot, data pushed 2023-09-14). 0-1, higher=better.
+#          USE pc1 ONLY — the CSV's component columns (afm_*, mbfc_*)
+#          inherit their raters' restrictive terms; the PCA aggregate is
+#          the authors' own published measure. License: informal
+#          "feel free to reuse" in README (no formal stamp) — written OK
+#          requested from the author 2026-08-07; keep INTERNAL until it
+#          lands or Ben rules otherwise.
+#   rsp  — Wikipedia perennial-sources tier (CC BY-SA 4.0, attribution
+#          required on render), parsed from the 8 subpages via the
+#          MediaWiki API on the build date. Live list; re-parse on
+#          rebuild. Values: generally-reliable / no-consensus /
+#          generally-unreliable / deprecated / blacklisted. Slash-joined
+#          values = the outlet has MULTIPLE RSP entries with different
+#          verdicts (e.g. forbes.com: staff journalism vs the contributor
+#          platform) — a domain-level join can't split those; render as
+#          "disputed/split" and link the RSP row, don't pick a side.
+#   (layer 3, pending) — instance practice-indicator ratings for
+#          gap_fill: candidate domains (trade press the ensemble
+#          misses). Rubric TBD on the methodology page before any
+#          rating ships; observable practices only, never truth verdicts.
+#
+# Fields per domain: pc1 · band (render hint: high>=0.8, solid>=0.6,
+#   mixed>=0.4, low<0.4) · rsp · class: primary-source (labs, registries,
+#   preprint servers, journal platforms — a news-credibility badge is a
+#   category error for these; render as "primary source" instead; where
+#   both class and rsp appear, class wins the render) · status: unrated
+#   (+ gap_fill: candidate where n30d>=8) · n30d (records in the 30-day
+#   buffer at build time — inclusion floor n30d>=3; rebuilt counts will
+#   drift, that's expected).
+#
+# Rebuild: re-download the CSV, re-fetch RSP subpages 1-8 wikitext, re-run
+# the join against buffer/ (gdelt+rss files only — google_news_rss URLs
+# are redirect links, not publisher domains). The builder should move
+# engine-side if this pattern spreads (kestrel INBOX brief, 2026-08-07).
+
+meta:
+  built: 2026-08-07
+  provenance: ben-steer 2026-08-07
+  buffer_window_files: 20
+  buffer_domains_total: 701
+  included_n30d_ge_3: 149
+  pc1_rated: 80
+  rsp_tagged: 41
+  primary_source: 6
+  gap_fill_candidates: 14
+
+domains:
+  960weli.iheart.com: {status: unrated, n30d: 3}
+  9to5mac.com: {pc1: 0.649, band: solid, n30d: 3}
+  abc.net.au: {pc1: 0.893, band: high, n30d: 3}
+  abcnews.com: {pc1: 0.668, band: solid, rsp: generally-reliable, n30d: 5}
+  adn.com: {pc1: 0.832, band: high, n30d: 3}
+  advocate-news.com: {pc1: 0.62, band: solid, n30d: 3}
+  americanbazaaronline.com: {status: unrated, n30d: 3}
+  aol.co.uk: {status: unrated, n30d: 7}
+  arstechnica.com: {pc1: 0.946, band: high, rsp: generally-reliable, n30d: 15}
+  arxiv.org: {rsp: generally-unreliable, class: primary-source, n30d: 4081}
+  arynews.tv: {status: unrated, n30d: 6}
+  asiaone.com: {status: unrated, n30d: 3}
+  asiaone.com:443: {status: unrated, n30d: 3}
+  baltimoresun.com: {pc1: 0.751, band: solid, n30d: 3}
+  benzinga.com: {pc1: 0.914, band: high, rsp: generally-unreliable, n30d: 17}
+  bhbusiness.com: {status: unrated, gap_fill: candidate, n30d: 34}
+  bignewsnetwork.com: {pc1: 0.811, band: high, n30d: 5}
+  blog.google: {class: primary-source, n30d: 6}
+  bloomberg.com: {pc1: 0.84, band: high, rsp: generally-reliable/no-consensus, n30d: 8}
+  bravenewcoin.com: {status: unrated, n30d: 3}
+  businessday.co.za: {status: unrated, n30d: 4}
+  businessinsider.com: {pc1: 0.805, band: high, rsp: no-consensus, n30d: 18}
+  businesstimes.com.sg: {status: unrated, n30d: 7}
+  chinatechnews.com: {status: unrated, n30d: 3}
+  cityam.com: {pc1: 0.671, band: solid, n30d: 4}
+  cnbc.com: {pc1: 0.85, band: high, n30d: 14}
+  cnbcafrica.com: {status: unrated, n30d: 4}
+  cnn.com: {pc1: 0.658, band: solid, rsp: generally-reliable, n30d: 3}
+  crn.com: {status: unrated, n30d: 4}
+  dailydemocrat.com: {pc1: 0.516, band: mixed, n30d: 3}
+  dailykos.com: {pc1: 0.414, band: mixed, rsp: generally-unreliable, n30d: 3}
+  dailylocal.com: {pc1: 0.623, band: solid, n30d: 3}
+  dailynews.com: {pc1: 0.842, band: high, n30d: 3}
+  dailypolitical.com: {status: unrated, n30d: 5}
+  deadline.com: {pc1: 0.836, band: high, rsp: generally-reliable, n30d: 6}
+  digit.in: {status: unrated, n30d: 7}
+  digitaljournal.com: {pc1: 0.906, band: high, n30d: 4}
+  economictimes.indiatimes.com: {pc1: 0.216, band: low, n30d: 27}
+  edition.cnn.com: {pc1: 0.682, band: solid, rsp: generally-reliable, n30d: 4}
+  el-balad.com: {status: unrated, n30d: 6}
+  en.shafaqna.com: {status: unrated, n30d: 4}
+  engadget.com: {pc1: 0.869, band: high, rsp: generally-reliable, n30d: 3}
+  english.news.cn: {pc1: 0.327, band: low, rsp: no-consensus, n30d: 6}
+  esecurityplanet.com: {status: unrated, n30d: 3}
+  europe.chinadaily.com.cn: {pc1: 0.372, band: low, rsp: no-consensus, n30d: 3}
+  explosion.com: {status: unrated, n30d: 4}
+  finance.yahoo.com: {pc1: 0.517, band: mixed, n30d: 68}
+  finanznachrichten.de: {status: unrated, n30d: 7}
+  fool.com: {pc1: 0.843, band: high, n30d: 32}
+  forbes.com: {pc1: 0.83, band: high, rsp: no-consensus/generally-reliable/generally-unreliable, n30d: 31}
+  fortune.com: {pc1: 0.876, band: high, n30d: 15}
+  foxbusiness.com: {pc1: 0.794, band: solid, rsp: no-consensus, n30d: 3}
+  freepressjournal.in: {status: unrated, n30d: 6}
+  freerepublic.com: {pc1: 0.368, band: low, n30d: 9}
+  frontiersin.org: {pc1: 0.712, band: solid, class: primary-source, n30d: 24}
+  github.com: {status: unrated, n30d: 3}
+  gizmodo.com: {pc1: 0.696, band: solid, rsp: generally-reliable, n30d: 9}
+  govinfosecurity.com: {status: unrated, n30d: 3}
+  healthcaredive.com: {status: unrated, gap_fill: candidate, n30d: 34}
+  heise.de: {pc1: 0.63, band: solid, n30d: 3}
+  hindustantimes.com: {pc1: 0.725, band: solid, n30d: 7}
+  hngn.com: {status: unrated, n30d: 6}
+  home.nzcity.co.nz: {status: unrated, n30d: 4}
+  huggingface.co: {class: primary-source, n30d: 4}
+  hurriyetdailynews.com: {pc1: 0.6, band: solid, n30d: 4}
+  ibtimes.co.uk: {rsp: generally-unreliable, status: unrated, gap_fill: candidate, n30d: 9}
+  ibtimes.com: {pc1: 0.713, band: solid, rsp: generally-unreliable, n30d: 6}
+  importai.substack.com: {status: unrated, n30d: 3}
+  indiagazette.com: {status: unrated, n30d: 3}
+  indianexpress.com: {pc1: 0.76, band: solid, rsp: generally-reliable, n30d: 5}
+  infotechlead.com: {status: unrated, n30d: 3}
+  insidermonkey.com: {status: unrated, n30d: 5}
+  investinglive.com: {status: unrated, n30d: 3}
+  irishtimes.com: {pc1: 0.775, band: solid, n30d: 3}
+  itbrief.co.nz: {status: unrated, n30d: 3}
+  itechpost.com: {status: unrated, n30d: 4}
+  itnewsonline.com: {status: unrated, n30d: 4}
+  journal-advocate.com: {pc1: 0.575, band: mixed, n30d: 3}
+  kffhealthnews.org: {status: unrated, gap_fill: candidate, n30d: 29}
+  livemint.com: {status: unrated, gap_fill: candidate, n30d: 18}
+  local10.com: {pc1: 0.705, band: solid, n30d: 3}
+  lowellsun.com: {pc1: 0.559, band: mixed, n30d: 4}
+  manilatimes.net: {pc1: 0.751, band: solid, n30d: 12}
+  mashable.com: {pc1: 0.656, band: solid, rsp: no-consensus/generally-unreliable, n30d: 3}
+  mediapost.com: {pc1: 0.87, band: high, n30d: 6}
+  medtechdive.com: {status: unrated, gap_fill: candidate, n30d: 28}
+  memeburn.com: {status: unrated, n30d: 6}
+  mercurynews.com: {pc1: 0.877, band: high, n30d: 3}
+  moneycontrol.com: {status: unrated, gap_fill: candidate, n30d: 14}
+  morningstar.com: {status: unrated, gap_fill: candidate, n30d: 8}
+  myhostnews.com: {status: unrated, n30d: 4}
+  naturalnews.com: {pc1: 0.0, band: low, rsp: blacklisted, n30d: 3}
+  nbcnews.com: {pc1: 0.844, band: high, rsp: generally-reliable, n30d: 3}
+  newkerala.com: {status: unrated, n30d: 6}
+  news.az: {status: unrated, n30d: 4}
+  news.crunchbase.com: {rsp: deprecated, status: unrated, gap_fill: candidate, n30d: 18}
+  news.webindia123.com: {status: unrated, n30d: 3}
+  newstalk1130.iheart.com: {status: unrated, n30d: 3}
+  nextbigfuture.com: {pc1: 0.854, band: high, n30d: 5}
+  nextplatform.com: {status: unrated, n30d: 3}
+  nypost.com: {pc1: 0.639, band: solid, rsp: generally-unreliable/no-consensus, n30d: 11}
+  observer.com: {pc1: 0.711, band: solid, n30d: 3}
+  ohnotheydidnt.livejournal.com: {rsp: generally-unreliable, status: unrated, n30d: 4}
+  openai.com: {class: primary-source, n30d: 12}
+  prnewswire.com: {pc1: 0.751, band: solid, rsp: generally-unreliable, n30d: 6}
+  proactiveinvestors.co.uk: {status: unrated, n30d: 3}
+  pymnts.com: {status: unrated, n30d: 3}
+  samaa.tv: {status: unrated, n30d: 3}
+  sciencedirect.com: {pc1: 0.91, band: high, class: primary-source, n30d: 60}
+  scmp.com: {pc1: 0.768, band: solid, rsp: generally-reliable, n30d: 4}
+  seekingalpha.com: {pc1: 0.694, band: solid, n30d: 4}
+  siliconangle.com: {status: unrated, gap_fill: candidate, n30d: 10}
+  siliconrepublic.com: {status: unrated, n30d: 3}
+  siliconvalley.com: {pc1: 0.73, band: solid, n30d: 3}
+  slguardian.org: {status: unrated, gap_fill: candidate, n30d: 8}
+  statnews.com: {pc1: 0.817, band: high, n30d: 125}
+  techcrunch.com: {pc1: 0.886, band: high, rsp: no-consensus, n30d: 116}
+  techdirt.com: {pc1: 0.84, band: high, n30d: 3}
+  technologyreview.com: {pc1: 0.909, band: high, n30d: 10}
+  techradar.com: {pc1: 0.643, band: solid, n30d: 3}
+  techtimes.com: {pc1: 0.502, band: mixed, n30d: 20}
+  the-independent.com: {status: unrated, n30d: 3}
+  theatlantic.com: {pc1: 0.804, band: high, rsp: generally-reliable, n30d: 3}
+  theepochtimes.com: {pc1: 0.263, band: low, rsp: deprecated, n30d: 3}
+  theglobeandmail.com: {pc1: 0.816, band: high, rsp: generally-reliable, n30d: 7}
+  theguardian.com: {pc1: 0.75, band: solid, rsp: generally-reliable/no-consensus, n30d: 4}
+  thehindu.com: {pc1: 0.705, band: solid, rsp: generally-reliable, n30d: 10}
+  thehindubusinessline.com: {pc1: 0.725, band: solid, n30d: 15}
+  themarketsdaily.com: {status: unrated, gap_fill: candidate, n30d: 11}
+  thenationalnews.com: {status: unrated, n30d: 3}
+  thenews.com.pk: {pc1: 0.811, band: high, n30d: 9}
+  thenextweb.com: {pc1: 0.798, band: solid, rsp: no-consensus, n30d: 7}
+  theregister.com: {rsp: generally-reliable, status: unrated, gap_fill: candidate, n30d: 8}
+  thestar.com.my: {pc1: 0.614, band: solid, n30d: 12}
+  thetimes-tribune.com: {pc1: 0.773, band: solid, n30d: 3}
+  theverge.com: {pc1: 0.882, band: high, rsp: generally-reliable, n30d: 68}
+  tickerreport.com: {status: unrated, gap_fill: candidate, n30d: 10}
+  timesherald.com: {pc1: 0.587, band: mixed, n30d: 3}
+  timesofindia.indiatimes.com: {pc1: 0.727, band: solid, rsp: no-consensus, n30d: 17}
+  tldr.tech: {status: unrated, n30d: 4}
+  tomsguide.com: {status: unrated, n30d: 3}
+  tomshardware.com: {status: unrated, n30d: 3}
+  tribune.com.pk: {status: unrated, n30d: 3}
+  us.cnn.com: {pc1: 0.658, band: solid, rsp: generally-reliable, n30d: 4}
+  usa.chinadaily.com.cn: {pc1: 0.372, band: low, rsp: no-consensus, n30d: 3}
+  wccftech.com: {status: unrated, n30d: 4}
+  wired.com: {pc1: 0.852, band: high, rsp: generally-reliable, n30d: 60}
+  yahoo.com: {pc1: 0.692, band: solid, n30d: 4}
+  zerohedge.com: {pc1: 0.272, band: low, rsp: deprecated, n30d: 12}
