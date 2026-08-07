@@ -1,0 +1,95 @@
+# 2026-08-07-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the bullet's
+# own bold lead phrase (first 50 chars), a dedicated key namespace. The
+# bullet's <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-04 — NOTE: its
+# rate_regime reading predates today's jobs print; flagged in the digest's
+# Map changes for the next /week refresh).
+
+july-nonfarm-payrolls-fell-23-000-a-genuine-decl:
+  mechanism: >
+    A negative payrolls print (-23k, vs ~+84k consensus) plus a 103k
+    combined downward revision to the two prior months lands on an FOMC
+    that just moved from a unanimous hold (June) to a 9-3 vote with three
+    dissents FOR A HIKE (July, on a stagflation-adjacent Q2: GDP +1.5%,
+    PCE 3.7%/3.3%). Weak employment data is the strongest tool the
+    non-hawkish majority has to push back on the hike case before 09-16 —
+    it directly undercuts the "the economy is running hot enough to hike"
+    argument the three dissents were making in real time.
+  confidence: plausible
+  # No named analyst/Fed-watcher coverage tying this print to September
+  # odds was findable yet (release ~15 min old at check) — this is the
+  # mechanism's logic, not yet a sourced market read. Re-check and
+  # potentially upgrade once reaction coverage exists.
+  scenarios:
+    - direction: >
+        The hawkish dissent bloc loses ground; 09-16 stays a hold or even
+        opens room for a cut discussion.
+      why: >
+        A negative payrolls print with large revisions is the kind of data
+        surprise that typically swings a split committee back toward the
+        majority's caution — it is hard to argue "hike because the labor
+        market is tight" the week after payrolls went negative.
+      precedent: >
+        The Fed's September 2024 rate cut (its first of that cycle, 50bp)
+        followed directly from the August 2, 2024 jobs report's sharp miss
+        (+114k vs ~175k consensus, unemployment up to 4.3%) — a surprise
+        weak print that triggered Sahm-rule recession commentary and
+        helped swing a previously cautious committee toward cutting within
+        six weeks. Same shape: a surprise negative labor print reshaping a
+        contested committee's next move.
+    - direction: >
+        The hawkish bloc holds anyway, reading the print as noisy against
+        still-elevated PCE (3.7%/3.3%).
+      why: >
+        A stagflation-adjacent backdrop gives hawks a ready
+        counter-argument — inflation didn't move, and a single volatile
+        payrolls print with large revisions (which read as noisy data
+        collection as much as a clean trend) doesn't overturn their case;
+        this committee has already shown willingness to dissent hawkish
+        once this cycle.
+  context_note: >
+    capital-context.yaml's rate_regime reading (as_of 2026-08-04)
+    describes the 9-3 hawkish-dissent hold and the stagflation-adjacent
+    GDP/PCE print but predates today's payrolls number — it is one real
+    data point stale, flagged for the next weekly refresh rather than
+    edited from /daily.
+
+the-cxmt-national-security-probe-letter-this-map-h:
+  mechanism: >
+    The tracked CXMT-probe-letter expectation reads as a proxy fight over
+    WHO gets pressured to decouple from Chinese memory suppliers —
+    Congress's actual bipartisan letter-writing energy landed on a buyer
+    (Apple) instead of the administration, while the Entity List addition
+    stays postponed amid live trade talks. Congress wants public pressure
+    now; the executive branch is holding its tool back as trade-talk
+    leverage.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The administration keeps the Entity List addition postponed
+        through the trade talks; congressional pressure stays aimed at
+        private buyers rather than a formal designation.
+      why: >
+        A formal Entity List addition would be a harder-to-reverse
+        escalation right as trade talks are live; leaning on Apple's
+        supply-chain choices is a lower-cost lever that needs no
+        executive-branch decision at all.
+      precedent: >
+        The 2026-06-16 DeepSeek/CXMT Entity List delay during the same
+        trade-talks window — the direct precedent for this exact
+        postponement pattern, already having happened once.
+    - direction: >
+        A trade-talks breakdown triggers the administration-facing letter
+        this expectation is actually tracking.
+      why: >
+        If talks stall, the executive branch loses its reason to hold
+        back, and the "coming days" congressional letter (unsent 10 days
+        past its own framing) would likely finally be sent to add
+        pressure.
+  context_note: >
+    capital-context.yaml carries no China-decoupling reading (its five
+    readings are rate_regime, cross_border_credit, external_position,
+    fund_flows, conflict_risk_premium) — this interpretation stands alone
+    rather than being cross-checked against a standing macro reading the
+    way the jobs one is.

@@ -13,6 +13,20 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-07 — NUHW's fight now named alongside SB 903 in national press
+
+- **An AP wire story on SB 903 ("As AI 'therapists' dish out advice,
+  California lawmakers try to set some limits"), syndicated nationally,
+  names NUHW as a backer of the bill** — the first time this thread's
+  labor fight and `state-therapy-chatbot-bans`' legislative track have
+  been tied together in one general-audience story rather than covered
+  separately. No new fact about the Kaiser dispute itself; logged here
+  because it's the first public linkage of the two threads' stories.
+  Full detail on the wire story lives on `state-therapy-chatbot-bans`'
+  own timeline (2026-08-07 entry). Published evening of 2026-08-06 ET,
+  ahead of the 2026-08-07 digest window.
+  ([News From The States, AP wire](https://www.newsfromthestates.com/article/ai-therapists-dish-out-advice-california-lawmakers-try-set-some-limits)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — The mediation date the thread had been missing: August 11
 
 - **NUHW confirms mediation with Kaiser starts August 11** — resolving the

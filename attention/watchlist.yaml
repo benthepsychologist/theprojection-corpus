@@ -164,6 +164,9 @@ lenses:
       - "ICER"
       - "ORCHA"
       - "Coalition for Health AI"
+      # EBP strand — psychedelic regulatory sprint (ben-steer 2026-08-07)
+      - "COMPASS Pathways"   # psilocybin NDA targeted Q4 2026 on a National Priority Voucher
+      - "Usona Institute"    # second psilocybin voucher-holder (MDD)
       # Big-tech health arms — what the giants are doing in health (radar Q1 ∩ Q4)
       - "Apple Health"
       - "Amazon Health"
@@ -194,6 +197,12 @@ lenses:
     # People of interest (founders, regulators, evaluators)
     people:
       - "Thomas Insel"
+      # EBP strand (ben-steer 2026-08-07, from the two deep evidence crawls —
+      # the people-thin watchlist was a named gap in the methodology review):
+      - "John Torous"        # Beth Israel/Harvard digital psychiatry — the field's most-quoted independent evaluator of AI/app claims
+      - "Pim Cuijpers"       # VU Amsterdam — anchor meta-analyst of psychotherapy outcomes (the 441-RCT absolute-response paper)
+      - "Jonathan Haidt"     # NYU — pro-causation side of the social-media fight; policy driver behind the ban wave
+      - "Nicholas Jacobson"  # Dartmouth — Therabot PI; COI angle (evaluates his own product) makes his publications thread events
 
     # Themes — regulatory, accountability, and MARKET/money (radar Q3, Q6)
     themes:
@@ -207,6 +216,16 @@ lenses:
       - "digital mental health funding"
       - "mental health startup acquisition"
       - "behavioral health market"
+      # EBP strand (ben-steer 2026-08-07: "We should add OpenAlex search
+      # items to this crawl" — these themes are aimed at the research
+      # collectors (openalex/semantic_scholar) as much as the news sweep):
+      - "psilocybin FDA approval"
+      - "measurement-based care"
+      - "AI psychosis"
+      - "AI chatbot suicide risk"
+      - "youth social media ban"
+      - "psychotherapy outcomes meta-analysis"
+      - "digital mental health RCT"
 
     # Health-condition / intervention strings for ClinicalTrials.gov (mh lens only)
     conditions:
@@ -215,6 +234,9 @@ lenses:
       - "AI chatbot mental health"
       - "digital therapeutic anxiety"
       - "app-based cognitive behavioral therapy"
+      # EBP strand (ben-steer 2026-08-07):
+      - "psilocybin depression"
+      - "single-session intervention"
 
   global-capital:   # renamed from `money` 2026-07-30 (Ben, full rename —
     # "'finance' is boring 'Global Capital' is interesting to me") — the

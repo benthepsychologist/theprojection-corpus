@@ -1,0 +1,50 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-06T11:45:51Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: true
+fetched_at: '2026-08-07T11:46:06Z'
+items:
+- id: gh-release-366697552
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10303
+  ts: '2026-08-07T11:15:38Z'
+- id: gh-release-366661128
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10301
+  ts: '2026-08-07T09:59:37Z'
+- id: gh-release-366578020
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10299
+  ts: '2026-08-07T07:15:32Z'
+- id: gh-release-366413240
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10298
+  ts: '2026-08-06T22:10:39Z'
+- id: gh-release-366252342
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10297
+  ts: '2026-08-06T13:42:02Z'
+- id: gh-release-366220844
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10295
+  ts: '2026-08-06T12:56:29Z'
+- id: gh-release-366468634
+  url: https://github.com/anthropics/claude-code/releases/tag/v2.1.224
+  ts: '2026-08-07T04:00:59Z'
+- id: gh-release-366471016
+  url: https://github.com/openai/codex/releases/tag/rust-v0.147.0
+  ts: '2026-08-07T01:41:49Z'
+- id: gh-release-366640695
+  url: https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.2
+  ts: '2026-08-07T09:23:15Z'
+- id: gh-release-366500315
+  url: https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.1
+  ts: '2026-08-07T03:20:28Z'

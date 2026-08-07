@@ -23,6 +23,13 @@ critics:
       - "STAT Health Tech"             # statnews.com
       - "Fierce Healthcare"            # flagged in a coverage-gap review
       - "MobiHealthNews"               # flagged in a coverage-gap review
+    weekly_add:   # ben-steer 2026-08-07: EBP is a first-class strand — the critic
+                  # now has an academic recall baseline, not just trade press.
+                  # Weekly tier because journals publish on journal cadence; a
+                  # research finding that leads one of these and isn't in the
+                  # week's digests is a logged miss like any trade-press miss.
+      - "JMIR Mental Health"           # mental.jmir.org — direct digital-MH-intervention journal
+      - "npj Digital Medicine"         # nature.com/npjdigitalmed — AI-in-clinical-care flagship
 
   global-capital:   # renamed from `money` 2026-07-30 (full rename, DESIGN.md Part 2)
     daily:

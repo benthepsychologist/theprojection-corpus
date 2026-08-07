@@ -11,6 +11,24 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-08-07 — A political-influence angle opens on the Ohio Stargate-adjacent campus: a $50M Trump-library donation preceded the federal lease by two months
+
+- **SoftBank confirmed it donated $50M to Trump's presidential library
+  in January 2026 — two months before the administration announced the
+  federal land-lease deal for SoftBank's 10GW Portsmouth, Ohio data
+  center** (the same campus this thread already tracks as the site
+  Nvidia may guarantee $250-500B against). SoftBank disclosed the
+  timing itself, in response to a June 2026 oversight letter from Sens.
+  Elizabeth Warren (D-MA) and Richard Blumenthal (D-CT) and Rep. Melanie
+  Stansbury (D-NM). Warren's quote to The Verge makes the question
+  explicit: "Are we expected to believe it's a coincidence that two
+  months after SoftBank donated $50 million to the Trump library, his
+  administration announced a massive lease deal for SoftBank's data
+  center?" This is a new axis on the thread — political influence over
+  how the Ohio campus got approved — distinct from the financing/
+  collateral mechanics already logged here.
+  ([The Verge](https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio), [Washington Post](https://www.washingtonpost.com/politics/2026/07/01/democrats-ask-softbank-explain-trump-library-donation/)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-06 — The Q1 FY26 print lands: net profit down 18%, Arm's post-earnings slide erases ¥14T of pro-forma NAV, and the stalled $10B OpenAI-collateral loan gets signed
 
 - **SoftBank Group's Q1 FY2026 (quarter to 2026-06-30) results, released as scheduled 2026-08-06 JST: net income ¥347.3B, down 18% YoY** (from ¥421.8B) despite investment gains surging roughly 300% YoY to ¥1.86T — the gain was almost entirely ByteDance (¥2,221M of a ¥2,394M SVF1 quarterly gain) and Intel (¥1.33T of unrealized gains), not OpenAI, which recorded no valuation gain this quarter. SoftBank Group shares fell **4.41%** on the print itself, reversing the pre-print rally recorded here 08-05.

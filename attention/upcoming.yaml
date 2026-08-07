@@ -589,7 +589,12 @@ expectations:
     # 2026-08-02 ⟨daily⟩: surfaced by the catch-all world-news sweep, not by
     # any lens. Latin America has no thread and no watchlist presence in
     # this map at all — logging the date so the handover is at least seen.
-    status: pending
+    # 2026-08-07 ⟨daily⟩: HIT — inaugurated on schedule, in Cali (first
+    # inauguration outside the capital since the 19th century). Rubio
+    # attended; Petro boycotted; first-day signals incl. a stated exit
+    # from China's Belt and Road toward the US. Full item: the 08-07
+    # world-news digest.
+    status: hit
 
   - id: eu-ai-act-high-risk-deferred
     claim: "EU AI Act high-risk obligations (Annex III standalone systems) bind, after the Digital Omnibus deferred them from 2026-08-02"
@@ -1216,7 +1221,11 @@ expectations:
     what_confirms: "the BLS release; the week's macro capstone against the 3.50-3.75% hold and the cut-pressure politics"
     logged: 2026-08-03
     logged_by: curate-add
-    status: pending
+    # 2026-08-07 ⟨daily⟩: HIT — BLS released on schedule 08:30 ET.
+    # Payrolls FELL 23,000 (consensus ~+84k); unemployment 4.1%; May/June
+    # revised down a combined 103,000. The print lands on a 9-3
+    # hawkish-dissent committee before 09-16 — sev=major in the digest.
+    status: hit
 
   - id: qwen38-max-open-weights
     claim: "Alibaba releases Qwen3.8-Max open weights to Hugging Face / ModelScope"
@@ -1591,4 +1600,17 @@ expectations:
     what_confirms: "the interim results announcement itself, ideally with an AI-contribution disclosure"
     logged: 2026-08-04
     logged_by: crawl
+    status: pending
+
+  - id: compass-psilocybin-nda
+    claim: "COMPASS Pathways files its psilocybin (COMP360) NDA for treatment-resistant depression — targeted Q4 2026, on an FDA National Priority Voucher compressing review to 1-2 months; Commissioner Makary has floated an approval decision by late 2026"
+    due: 2026-12-31
+    due_precision: month
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://ir.compasspathways.com/News--Events-/news
+    confidence: reported   # company-stated target + commissioner's public floating; two positive Phase 3s behind it (COMP005 Jun 2025, COMP006 Feb 2026)
+    what_confirms: "the NDA filing itself (or an approval decision) — either would be the first-ever US approval track for a classic psychedelic therapy; a slip past Q4 against the voucher timeline would itself be news"
+    logged: 2026-08-07
+    logged_by: curate-add   # EBP build-out deep crawl, ben-steer strand promotion
     status: pending

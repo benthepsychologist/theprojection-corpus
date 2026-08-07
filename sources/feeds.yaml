@@ -162,3 +162,33 @@ lenses:
       axis: press
       status: dead
       note: "HTTP 403 on both HEAD and GET, plain UA and browser UA, 2026-07-28 — Cloudflare bot-blocked."
+    # --- EBP strand (ben-steer 2026-08-07: "Evidence-based practice does
+    # become a first-class strand of MH... journal/guideline sources added,
+    # yes. JMIR and friends."). All 8 URLs live-verified 2026-08-07 (real
+    # RSS/Atom XML fetched, latest-entry dates read from the feed body) —
+    # full verification table incl. bot-walled rejects (Psychiatric
+    # Services, BMC Psychiatry, AHRQ) in coverage-log.md 2026-08-07.
+    - name: "npj Digital Medicine"
+      url: "https://www.nature.com/npjdigitalmed.rss"
+      axis: research  # top-tier digital-health/AI clinical journal, near-daily
+    - name: "JMIR Mental Health"
+      url: "https://mental.jmir.org/feed/atom"
+      axis: research  # the most direct digital-MH-intervention journal; also a benchmarks.yaml weekly critic baseline as of 2026-08-07
+    - name: "Frontiers in Psychiatry"
+      url: "https://www.frontiersin.org/journals/psychiatry/rss"
+      axis: research  # open-access mega-journal, very high volume — broad psychiatry w/ digital/AI mixed in
+    - name: "Internet Interventions"
+      url: "https://rss.sciencedirect.com/publication/science/22147829"
+      axis: research  # core digital-MH-intervention journal (app-based CBT, digital therapeutics trials)
+    - name: "Lancet Digital Health"
+      url: "https://www.thelancet.com/rssfeed/landig_current.xml"
+      axis: research  # top-tier AI-in-medicine; doubles as ai-lens-relevant
+    - name: "Nature Mental Health"
+      url: "https://www.nature.com/natmentalhealth.rss"
+      axis: research  # Nature-portfolio MH journal, several/week
+    - name: "PHTI reports"
+      url: "https://phti.org/feed/"
+      axis: policy  # digital-health economic-value/HTA assessments — first evidence-body source in this block; irregular cadence
+    - name: "JAMA Psychiatry"
+      url: "https://jamanetwork.com/rss/site_14/70.xml"
+      axis: research  # flagship psychiatry; monthly TOC cadence, kept for signal quality. Real site-id is 14/70 — the guessable jamapsychiatry.rss path 403s

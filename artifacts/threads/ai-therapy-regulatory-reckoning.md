@@ -13,6 +13,22 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-07 — OpenAI moves into the vacuum: a partnership with the American Psychological Association
+
+- **OpenAI announced a partnership with the American Psychological
+  Association to bring psychologists into its teen AI-safety work** — an
+  incumbent lab moving into the regulatory vacuum this thread has been
+  watching for, landing the same week SB 903 and a $567M Meta child-
+  mental-health ruling both put youth AI/mental-health harm back in the
+  news. Coverage so far is secondary-source only across three
+  independent outlets; no OpenAI or APA primary statement text was
+  located via the feeds checked, so the exact shape of the partnership
+  (advisory board vs. research collaboration vs. something more formal)
+  isn't yet confirmed. Announced evening of 2026-08-06 ET, ahead of the
+  2026-08-07 digest window; flagged for follow-up once a primary source
+  surfaces. Cross-refs `openai-health`.
+  ([Digital Watch Observatory](https://dig.watch/), [Crypto Briefing](https://cryptobriefing.com/)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — A new peer-reviewed study puts numbers on the evidence-gap thesis
 
 - **A Nature Human Behaviour study (Zhang et al.) found AI-companion effects on

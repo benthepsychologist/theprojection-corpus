@@ -2192,3 +2192,45 @@ world-news, front.md status-only).
   Both threads' digest `k:` annotations and Thread candidates sections
   updated to match; `attention/actor-doing.yaml`'s `meta-ai` entry
   updated from "offered, not yet promoted" to reflect the promotion.
+
+### /steer — 2026-08-07 (the EBP build-out)
+
+Ben promoted **evidence-based practice to a first-class strand of the MH
+feed** ("journal/guideline sources added, yes. JMIR and friends... We
+should add OpenAlex search items to this crawl") and pre-authorized the
+structural edits in place. Executed in one round, sourced from two deep
+research crawls (therapy-science + digital/AI science, ~70 searches
+combined, full reports preserved in the session scratchpad and distilled
+into the seeded timelines):
+
+- **+ 7 threads (map 87 → 94):** `mh-evidence-watch` (meta, "What
+  Works", w3) with children `ai-therapy-evidence`,
+  `psychedelic-regulatory-sprint`, `dtx-payment-paradox`,
+  `social-media-causality-fight`, `mh-evidence-infrastructure`; plus
+  standalone `ai-psychosis` (harm strand, cross-platform by design —
+  xAI-specific harm stays on `grok-companion-harm`). All ben-steer
+  2026-08-07, timelines seeded from the crawl reports with
+  ⟨steer 2026-08-07⟩ backstory entries.
+- **+ 8 feeds** (`sources/feeds.yaml` mental-health block, every URL
+  live-verified before adding; bot-walled rejects documented: Psychiatric
+  Services/psychiatryonline, BMC Psychiatry, Annual Reviews, AHRQ; NICE
+  and Cochrane CCMD confirmed to have no live feed at all): npj Digital
+  Medicine, JMIR Mental Health, Frontiers in Psychiatry, Internet
+  Interventions, Lancet Digital Health, Nature Mental Health, PHTI
+  reports, JAMA Psychiatry.
+- **+ academic critic benchmarks** (`sources/benchmarks.yaml`): JMIR
+  Mental Health + npj Digital Medicine as a weekly_add tier — the MH
+  critic's first non-trade-press recall baseline.
+- **Watchlist:** +4 people (Torous, Cuijpers, Haidt, Jacobson — the
+  people-thin gap named in the methodology review), +2 orgs (COMPASS
+  Pathways, Usona Institute), +7 themes (incl. research-collector-aimed
+  terms per the OpenAlex ask), +2 ClinicalTrials conditions.
+- **Ledger:** + `compass-psilocybin-nda` (due 2026-12-31 — the Q4 2026
+  NDA target on a National Priority Voucher).
+- **Site:** /news/ dashboard now links the three feeds visibly (Feeds
+  row + linked briefing headings; chips stay filters) and every feed
+  page carries a Methodology crumb → new `/methodology/` page: common
+  pipeline once, per-feed sections (questions · sources+named
+  benchmarks · threads · cadence · gaps). MH section rebuilt around the
+  10-question set synthesized from the crawls. Site commit `08885a5`,
+  Hugo build clean; goes live with the next /publish --push.
