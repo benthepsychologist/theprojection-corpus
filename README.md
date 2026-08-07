@@ -95,6 +95,9 @@ lists) keep one prior snapshot for deltas; everything else is fetch-on-demand.
 /classify <actor> place an actor on the board (attention/board.yaml) —
                   propose node kind (person/house/corp/state/agency/group)
                   + level + posture + axis estimate, apply on confirm
+/wrap             checkpoint the session (any time, several times a day):
+                  STATUS refresh, log.md, commits w/ receipts, verified
+                  push on both zone repos — LOCAL skill, not kit-rendered
 ```
 
 **The read is thread-centric** (Ben, 2026-07-22): a rolling Mon–Sun weekly
@@ -112,7 +115,7 @@ and shrinks through `/week`'s decay review — never by batch rewrites
 | `sources/` | `sources.yaml` (machine-readable source map) · `benchmarks.yaml` (coverage-critic baselines per lens) · `feeds.yaml` (RSS set) · `API-SIGNUP.md` (key-signup boilerplate + status) |
 | `INBOX/` | inbound handoff hopper (the cross-repo protocol in the global CLAUDE.md) — briefs dropped by other repos' sessions, plus workshop drafts replying to them; currently the q1/q2 buildout-research skeletons being workshopped with Ben |
 | `templates/` | fixed render templates: `daily-digest.md` · `weekly-digest.md` · `thread-timeline.md` · `read-shell.html` (the one-time page shell — its HTML/JS is hand-authored, never edited by `/daily`) |
-| `.claude/skills/` | this instance's commands: `/start` `/daily` `/week` `/steer` `/crawl` `/map` `/publish` `/classify` — installed/synced from kestrel's kit library (`.claude/kit.yaml` tracks the installed stamp). **These are kit-rendered, and kestrel is outside this session's write zone** (Ben, 2026-08-04) — so to change one, drop a brief into `/workspace/kestrel/INBOX/` rather than editing the canonical copy. Editing a file here is allowed but will show as `dirty` in `kit.py sync`, which is the intended signal. ⚠️ Each file's line-1 header still says "edit the canonical copy… run `/sync-kits`" — superseded, and `/sync-kits` does not exist here; ignore it. |
+| `.claude/skills/` | this instance's commands: `/start` `/daily` `/week` `/steer` `/crawl` `/map` `/publish` `/classify` (kit-installed) + `/wrap` (LOCAL, un-kit-tracked, 2026-08-07 — proposed to the library via kestrel INBOX brief) — installed/synced from kestrel's kit library (`.claude/kit.yaml` tracks the installed stamp). **These are kit-rendered, and kestrel is outside this session's write zone** (Ben, 2026-08-04) — so to change one, drop a brief into `/workspace/kestrel/INBOX/` rather than editing the canonical copy. Editing a file here is allowed but will show as `dirty` in `kit.py sync`, which is the intended signal. ⚠️ Each file's line-1 header still says "edit the canonical copy… run `/sync-kits`" — superseded, and `/sync-kits` does not exist here; ignore it. |
 | `buffer/` | git-ignored dated JSONL — pure cache, 30-day retention |
 | `artifacts/` | `digests/daily/` (canonical archive, `<!-- k: -->`-tagged) · `digests/weekly/` · `threads/` (per-thread timelines) · `read/` (derived page — a view, not an artifact) · `readouts/` · `findings/` · `bundles/` |
 | `provenance/` | per-run fetch manifests + `publish-*.yaml` public-export manifests (git-tracked, one per `/publish` run) |
@@ -145,7 +148,14 @@ under `/news/`** (`/news/ai/` · `/news/global-capital/` ·
 2026-08-03 restructure, when the front page became a projects hub and the
 news feed moved to `/news/`) carrying its own **morning briefing** — `gist`
 · salience-ranked `lead` · themed `sections` · `watch` — with the fuller
-cross-lens briefing on the **`/news/` dashboard** (AGENTS.md discipline 12). The site also carries the **`/map/`
+cross-lens briefing on the **`/news/` dashboard** (AGENTS.md discipline 12).
+Since 2026-08-07 the dashboard links the three feeds visibly (a Feeds
+row; the filter chips stay filters) and every feed page carries a
+**Methodology** crumb to **`/methodology/`** — one page: the common
+pipeline told once, per-feed sections (questions · sources with named
+critic benchmarks · threads · cadence · honest gaps), plus a
+coverage-check appendix mapping a working clinical team's source list
+against this feed's mechanisms, every verdict live-verified. The site also carries the **`/map/`
 board section** — a node page per actor plus **pocket and sector pages**, with
 every posture/axis value linking to its **`/claim/<id>/` receipt** (cited
 sources) — and its own hand-authored `content/about.md` and `README.md`, the

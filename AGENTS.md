@@ -217,8 +217,10 @@ through `attention/`.
 
 ## The operating rhythm — commands + cadence (set 2026-07-20)
 
-The loop runs on eight in-repo slash commands (`.claude/skills/`), rendered
-against fixed templates (`templates/`):
+The loop runs on nine in-repo slash commands (`.claude/skills/`) — eight
+kit-rendered against fixed templates (`templates/`), plus `/wrap`, a
+LOCAL skill (2026-08-07, deliberately un-kit-tracked; proposed to
+kestrel's library as `attention/wrap` via INBOX brief):
 
 | command | cadence | what |
 | --- | --- | --- |
@@ -230,6 +232,7 @@ against fixed templates (`templates/`):
 | `/map` | any time, read-only | status card: lenses, thread freshness, radar, pipeline state, gates, board |
 | `/classify <actor>` | on demand | propose an actor's node kind (person/house/corp/state/agency/group) + level + posture/condition + four-axis estimate (commanded_capital/thrust/gravity/optionality) → apply on confirm; `/classify postures` sweeps provisional postures (the logic `/week` runs) |
 | `/publish [--push]` | on demand, separate from `/daily` (not auto-chained) | push public-flagged threads to theprojection.org; stages only by default, `--push` commits/pushes/deploys live — no confirmation needed on this pipeline (Ben, 2026-07-23), plus a quick fact-check that the site's own `about.md`/`README.md` claims still match this repo's actual publish behavior |
+| `/wrap` | any time — a CHECKPOINT, not a closer (runs fine several times a day) | persist the session: sanity gate → STATUS.md refresh (anti-rot, rewrite-never-patch) → log.md append → commit incl. provenance receipts → site-tree triage → push + `git log @{u}..` verification on both zone repos (kestrel checked read-only, flag-never-push) → wrap card |
 
 Re-running `/daily` later the same day is safe (building digests rebuild in
 place). **Collection is collectors-first since 2026-07-28** (18 registered
@@ -241,9 +244,11 @@ runner is a plain sequential loop with no concurrency. 08-04's measurement
 put a full run at ~59 minutes (17/18, exit 0) — that has NOT held: **08-06's
 run completed all 18/18 in ~17 minutes** (13:02:06→13:19:12 UTC, timed off
 the run's own provenance-manifest timestamps), with comparable or larger
-per-collector volumes (`google_news_rss` alone kept 8,604 items). No
-configuration difference identified between the two runs; the swing is
-unexplained, not attributable to a fix. Treat both figures as real
+per-collector volumes (`google_news_rss` alone kept 8,604 items), **and
+08-07's full morning run repeated the ~17-minute figure** (8,663 items
+kept by google_news_rss) — the fast case is now the observed norm three
+runs running, the ~59-minute 08-04 run the outlier. Still no identified
+cause for the swing. Treat both figures as real
 same-tool measurements on different days, not a resolved constant — budget
 for the slow case, don't be surprised by the fast one. 08-04's per-collector
 breakdown (**semantic_scholar ~23 min / 39%, google_news_rss ~14 min / 24%,
@@ -344,7 +349,9 @@ it's a roll-up of threads + posture, not fresh research.
 
 `AGENTS.md` is rendered from the attention agentdoc template in
 `/workspace/kestrel/library/` and tracked by hash in `.claude/kit.yaml`.
-So are `CLAUDE.md` and the eight files under `.claude/skills/`.
+So are `CLAUDE.md` and eight of the nine files under `.claude/skills/` —
+`/wrap` is the exception: a LOCAL skill, not in `kit.yaml`, invisible to
+`kit.py sync` by design (2026-08-07).
 
 **You may still edit them — this is your repo.** What you must NOT do is go
 into kestrel to reconcile the template afterwards. **kestrel is outside this
@@ -382,7 +389,11 @@ missing the engine-split intro. The dirty-target guard is what stopped it.
 
 ## Session close
 
-End substantive sessions with these steps, in order:
+**`/wrap` (local skill, 2026-08-07) operationalizes this section** — it
+adds the sanity gate, the STATUS.md anti-rot refresh, the site-tree
+triage, and the verified-push checks around the three steps below.
+Running `/wrap` satisfies this section; the steps stay listed because
+they're the contract the skill implements:
 
 1. **Append to `log.md`** (create on first real session): what ran, what
    surfaced, what changed in `attention/`, where to pick up.

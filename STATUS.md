@@ -1,11 +1,86 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-06**. Top note covers a DeepMind-thread
-steer, a wide `/daily` run (08-05 finalized with 5 coverage-critic misses,
-08-06 curated fresh), and two more thread promotions; the 2026-08-05
-identity-rename note, the 08-04 (evening) `/week` + board-coverage note,
-the morning `/daily` note, the q1/q2 research-workshop note, and the
-08-03/08-02 `/daily` notes sit under it.*
+*Hand-maintained. **As of 2026-08-07**. Top note covers the biggest
+single day in the repo's history — the EBP strand build-out + research
+wave, two `/daily` passes (the jobs shock, Israel–Lebanon opened, the
+Mecca pact), 08-06 finalized with six critic catches, the site's
+methodology page + visible feed links, and the new `/wrap` skill; the
+08-06 note and everything older sit under it.*
+
+> **2026-08-07 — evidence-based practice became a first-class strand of
+> the MH feed, a ten-agent research wave rebuilt its question set, and
+> the site got one methodology page for all three feeds.** Plus two
+> `/daily` passes, an 08-06 finalize with real critic catches, and five
+> publishes. The largest single-day session on record; full detail:
+> `log.md` (three entries), `coverage-log.md`.
+>
+> **The EBP build-out (ben-steer, the centerpiece).** Ben promoted
+> evidence-based practice to a first-class strand: a "What Works"
+> meta-thread family (`mh-evidence-watch` + five children:
+> AI-therapy evidence, psychedelic sprint, DTx paradox, social-media
+> causality, evidence infrastructure) plus `ai-psychosis` and — second
+> ruling round — `neuromodulation-evidence` (the counter-case where a
+> confirmatory RCT landed post-clearance and replicated). Ten
+> live-verified journal/evidence-body feeds added across two rounds
+> (verified-dead documented too: Psychological Medicine bot-walled,
+> Cochrane's MH feed nonexistent since the group's 2023 retirement,
+> PsyberGuide defunct with its domain squatted by a supplement site);
+> the coverage critic gained its **first academic recall tier** (JMIR
+> Mental Health + npj Digital Medicine, weekly). MH watchlist now 35
+> orgs / 8 people / 17 themes / 7 trial-registry terms — the people gap
+> closed with the methodologist cohort (Torous, Cuijpers, Haidt,
+> Jacobson, Schueller, Pearson, Anderson).
+>
+> **The research wave: ten per-question memos**
+> (`artifacts/findings/mh-q01..q10-*-2026-08-07.md`), grounded in the
+> two morning survey crawls plus `the-evidence-gap-src`'s outlines
+> (read-only) as historical spine. Headline verdicts: effectiveness
+> flat-not-falling while reach scaled ~5x; the psychedelic sprint's
+> pivotal trials predate the trial-design fix they'd need; **Done
+> Global's sentencing confirmed** (07-07: He 72 months, Brody 24 — first
+> federal prison for digital-MH executives); zero independent Therabot
+> replication; the DTx payment paradox *relocated* (DiGA can't re-price
+> before 2027-04-15; CMS's new codes lack a national rate); governance
+> fragmenting at every layer. Yields: 3 new ledger entries, 27 timeline
+> folds across 8 threads, and a **6-item INBOX brief to
+> the-evidence-gap-src** (incl. a falsified Ch3 premise and an internal
+> date conflict two agents converged on). `/week` should consume the
+> memos for radar Q3/Q4.
+>
+> **The site now shows its work:** one `/methodology/` page (common
+> pipeline + per-feed sections: questions · sources with named
+> benchmarks · threads · cadence · honest gaps), visible feed links on
+> `/news/`, and a **coverage-check appendix** mapping a working clinical
+> team's real source list against this feed's mechanisms — every verdict
+> live-verified, entity-scrubbed per the standing rule.
+>
+> **The days themselves:** 08-07's story was the July jobs shock —
+> payrolls **-23k** vs +84k consensus, -103k revisions, on a 9-3
+> hawkish-dissent Fed (`sev=major`, interpretation held at `plausible`
+> on a split verdict after the midday reaction check: relief rally on
+> "quells rate-HIKE fears," zero Fed voices on record). Colombia's
+> inauguration hit on schedule; `israel-lebanon-escalation` opened under
+> the standing conflict rule (75-outlet signal); the midday extension
+> caught the **Saudi–Turkey–Pakistan Mecca mutual-defense pact** (flash
+> bar assessed, not cleared). 08-06 finalized across all five files with
+> **6 critic misses → 6 auto-adds** (LifeStance Health, CCBHC, Meta's
+> Muse Code line, Anthropic silicon reviving a stale `inhouse-silicon`,
+> "Alphabet bond" — the Alphabet capital-structure candidate then ruled
+> FOLDED into `google-capex`, Ben's word).
+>
+> **Ops:** `/wrap` exists now — a local, un-kit-tracked checkpoint skill
+> (pm's framing × cloud-governor's verification, encoding this repo's
+> five real close-out traps), routed to kestrel's INBOX as a proposed
+> `attention/wrap` library entry. collect.py ran 18/18 in ~17 min twice
+> today (fast case three runs running). The WebSearch budget survived a
+> ~40-agent day on WebFetch-first briefs with hard per-agent caps — the
+> first wide-dispatch session in four that didn't exhaust it. ⚠️ kestrel
+> has 4 unpushed engine-side commits (its residents' to push — flagged,
+> not touched; this morning's `/start` card misread that check as clean).
+>
+> **🧵 Map: 96 threads** (was 84 at the 08-05 note; 26 mental-health) ·
+> **ledger: 70 expectations, 42 pending** · **actor-doing: 44 entries** ·
+> **board: unchanged** (92 orgs / 13 posture-classified).
 
 > **2026-08-06 — a big `/daily` run finalized 08-05 with real
 > coverage-critic catches, fixed a dark mechanical pipeline, and three

@@ -34,8 +34,8 @@ history (tag `pre-engine-split` and earlier).
 a node + claim graph — schema shapes + pipeline).
 
 **The commands:** `/start` · `/daily` · `/week` · `/steer` · `/crawl` ·
-`/map` · `/publish` · `/classify` (`.claude/skills/`). Templates in
-`templates/`.
+`/map` · `/publish` · `/classify` (kit-installed) · `/wrap` (local,
+un-kit-tracked) (`.claude/skills/`). Templates in `templates/`.
 Zero coupling to sibling corpora — never read them; everything needed is
 distilled in `REBUILD-NOTES.md`.
 
