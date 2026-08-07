@@ -4,8 +4,10 @@
 single day in the repo's history — the EBP strand build-out + research
 wave, two `/daily` passes (the jobs shock, Israel–Lebanon opened, the
 Mecca pact), 08-06 finalized with six critic catches, the site's
-methodology page + visible feed links, and the new `/wrap` skill; the
-08-06 note and everything older sit under it.*
+methodology page + visible feed links, the new `/wrap` skill, and the
+afternoon's story-page arc (feed clicks re-pointed to thread pages +
+the source-multiplicity audit and engine brief); the 08-06 note and
+everything older sit under it.*
 
 > **2026-08-07 — evidence-based practice became a first-class strand of
 > the MH feed, a ten-agent research wave rebuilt its question set, and
@@ -68,6 +70,30 @@ methodology page + visible feed links, and the new `/wrap` skill; the
 > "Alphabet bond" — the Alphabet capital-structure candidate then ruled
 > FOLDED into `google-capex`, Ben's word).
 >
+> **Afternoon arc — feed clicks now land on OUR thread pages, and the
+> source-multiplicity gap is measured and briefed.** Ben's ask ("take me
+> to a story page on OUR site… are we only getting one article per
+> story??") got a two-crawler audit: the buffer holds the field
+> (Hassabis transition: 296 records / **198 distinct article URLs** over
+> two days; Hugging Face breach 51; world-news clusters count up to 204
+> outlets) and the collapse to one link happens at three points —
+> `build_world_news.py` drops the URL sample its own ranker computes,
+> curation's one-link convention (soft — real bullets carry 2-3), and
+> `render_read.py`'s first-match regex silently truncating even
+> multi-link curated bullets. **Stage 1 shipped same-day in the site
+> repo** (`360cec2`): feed-card clicks route to `/threads/<slug>/` with
+> the external article demoted to the inline source link (unthreaded
+> cards keep the external fallback), thread pages open story-first
+> (timeline directly under the header, kept inside `chat-copy-root` so
+> the copy-for-AI button still carries it), newest entry gets a "Latest"
+> kicker in the site's `--live` accent. **Stage 2 is a kestrel INBOX
+> brief** (`…-source-multiplicity.md`): keep all curated links
+> (`urls[]`), carry world-news URL samples through, and a per-item
+> `coverage: {outlet_count, articles[]}` cluster — the gating dependency
+> for the ground.news-style outlet list. Open with Ben: the outlet
+> bias/lean table (hand-curate ~100 recurring domains vs. license a
+> dataset; AllSides/Ad Fontes are proprietary).
+>
 > **Ops:** `/wrap` exists now — a local, un-kit-tracked checkpoint skill
 > (pm's framing × cloud-governor's verification, encoding this repo's
 > five real close-out traps), routed to kestrel's INBOX as a proposed
@@ -76,7 +102,10 @@ methodology page + visible feed links, and the new `/wrap` skill; the
 > ~40-agent day on WebFetch-first briefs with hard per-agent caps — the
 > first wide-dispatch session in four that didn't exhaust it. ⚠️ kestrel
 > has 4 unpushed engine-side commits (its residents' to push — flagged,
-> not touched; this morning's `/start` card misread that check as clean).
+> not touched; this morning's `/start` card misread that check as clean)
+> and its INBOX now holds **three** uncommitted corpus briefs awaiting
+> its resident session (wrap-skill + source-multiplicity from today, a
+> claude-md-tmpl one from 08-05).
 >
 > **🧵 Map: 96 threads** (was 84 at the 08-05 note; 26 mental-health) ·
 > **ledger: 70 expectations, 42 pending** · **actor-doing: 44 entries** ·

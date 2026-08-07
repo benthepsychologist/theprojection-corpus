@@ -2213,3 +2213,53 @@ spent). MH/AI lenses: genuinely nothing new in-window (OpenAI-APA still
 has no primary statement; Grok 4.6 still unconfirmed on its own due
 date). Front + GC briefings regenerated (validator clean, 100% link
 floors); publish pass 5. Delta collect ran in background (routine).
+
+## 2026-08-07 (afternoon) — story-forward clicks + the multiplicity audit
+
+Ben's ask, near-verbatim: the brief makes him want the THREAD, not the
+article — "take me to a story page on OUR site… summary and threadmap…
+opens on the summary and just the thread stream so far" — plus the
+suspicion "are we only getting one article for each story??" Two sonnet
+crawlers audited both halves. Findings that matter: the thread page
+already had ~the whole story-page anatomy (thread-scope readout on top,
+full timeline, entity chips, shared-entity related list) but the feed
+card's whole-row click bailed to the external article; and multiplicity
+is real at collection (Hassabis 296 records/198 distinct URLs across
+two days; HF breach 51; world-news counting up to 204 outlets) then
+discarded at three collapse points — build_world_news.py drops the URL
+sample its own rank() computes, the one-link curation convention
+(soft), and render_read.py's first-match regex truncating even
+deliberately multi-link bullets (CNBC+Semafor → CNBC). Ben green-lit
+Stage 1 and the Stage 2 hand-off in one word each.
+
+**Shipped (site, `360cec2`, pushed+verified):** threaded feed cards now
+click through same-tab to `/threads/<slug>/` (external article stays as
+the inline source link; unthreaded cards keep the external fallback);
+thread pages reordered story-first — timeline right under the header,
+kept inside `chat-copy-root` deliberately (the copy-for-AI button would
+otherwise silently lose the thread's content — good agent judgment
+worth repeating); first timeline entry gets a "Latest" kicker in
+`--live`. briefing.html confirmed un-fixable at this stage — its bullet
+schema carries no thread refs (a Stage 2 schema note, recorded).
+
+**Routed (kestrel INBOX, uncommitted):**
+`2026-08-07-theprojection-corpus-source-multiplicity.md` — three engine
+fixes + the new per-item `coverage: {outlet_count, articles[]}` cluster
+that gates the ground.news-style outlet list. Schema notes embedded:
+domain-keyed outlets (so a later bias-table join is trivial), capped
+sample preferring direct publisher URLs over Google redirects, distinct-
+URL counting (98 cross-day byte-identical dupes in the Hassabis set —
+per-(day,source) buffer dedup can't see across the boundary).
+
+**Open with Ben:** the outlet bias/lean table — mechanically a one-time
+domain-keyed table + render-time join; the real question is sourcing
+(AllSides/Ad Fontes are proprietary; hand-curating the ~100 recurring
+buffer domains is the defensible route). Not blocking anything.
+
+**Pick up:** unchanged from the midday entry — /week due Sat (wave
+memos → radar Q3/Q4, first academic recall check, 10 🔴 decay review).
+Plus: Ben's live acceptance test for Stage 1 is clicking a threaded
+card on /news/; Stage 2 waits on kestrel's resident session (its INBOX
+now holds three corpus briefs and the engine sits 4 commits unpushed).
+When Stage 2's coverage data lands, the site-side expandable outlet
+list is the corpus/site half of the job.
