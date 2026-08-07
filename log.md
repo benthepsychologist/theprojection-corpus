@@ -2263,3 +2263,46 @@ card on /news/; Stage 2 waits on kestrel's resident session (its INBOX
 now holds three corpus briefs and the engine sits 4 commits unpushed).
 When Stage 2's coverage data lands, the site-side expandable outlet
 list is the corpus/site half of the job.
+
+## 2026-08-07 (evening) — credibility-first: the ruling, the table, the email
+
+Ben's ruling, near-verbatim: independent quality/accuracy measures are
+"actually more important to our real aims" than political lean — lean
+parked indefinitely. Two license crawls settled the landscape with
+verbatim terms: every lean dataset is closed (AllSides CC BY-NC +
+anti-compete; Ad Fontes paid-only, $3,600/yr floor; MBFC no stated
+license at all; NewsGuard fee-based for every user category — and
+ground.news's "bias rating" is literally the average of those three,
+resting on private deals). Credibility, by contrast, has a real open
+stack: the Lin/Pennycook/Rand 2023 ensemble (11k domains, pc1 0-1
+aggregate, CC BY paper, informal-reuse data) + Wikipedia's
+perennial-sources tiers (CC BY-SA, edited daily, cleanly parseable via
+the MediaWiki API — row class carries status, RSPUSES carries domains).
+
+Built and shipped `sources/outlet-credibility.yaml` (ben-steer): 149
+domains (n30d>=3 in buffer), 80 pc1-rated, 41 RSP-tagged, 6
+primary-source, 14 gap_fill candidates (the trade press: bhbusiness,
+healthcaredive, kffhealthnews, theregister…). Design calls worth
+keeping: pc1 column ONLY (component columns inherit rater terms);
+RSP split verdicts preserved slash-joined (forbes.com maps to both the
+staff and contributor rows — render "disputed", never pick a side);
+class: primary-source outranks rsp at render (RSP rates arxiv
+"generally unreliable" as a WIKIPEDIA CITATION — wrong frame for a
+feed whose evidence hierarchy puts primary sources on top). Measured
+coverage: 57 of top-100 recurring domains, ~60% of news volume once
+arxiv (correctly unrated) is excluded. Second kestrel INBOX brief
+routes the pattern for therapybulletin + FYI's the coming
+mhinbrief-corpus rename (kestrel INBOX now holds FOUR uncommitted
+corpus briefs; engine still 4 commits unpushed — nobody's home).
+
+**The email: SENT.** Ben sent Hause Lin the permission ask (public pc1
+display with attribution, ~90-word final draft) the evening of
+2026-08-07. The credibility layer stays INTERNAL until his OK lands —
+that's written into the YAML header too.
+
+**Pick up — FIRST THING: ask Ben whether Hause Lin replied** (public
+pc1 display gates on it; email sent 08-07 evening; if a week passes
+silent, ask Ben whether to nudge or ship RSP-only). Then the standing
+queue: /week due Sat (wave memos → radar Q3/Q4, first academic recall
+check, 10 🔴 decay review); gap_fill rubric pass awaits Ben's go;
+Stage 2 + credibility badges both wait on a kestrel resident session.

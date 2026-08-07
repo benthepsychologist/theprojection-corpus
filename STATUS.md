@@ -6,8 +6,10 @@ wave, two `/daily` passes (the jobs shock, Israel–Lebanon opened, the
 Mecca pact), 08-06 finalized with six critic catches, the site's
 methodology page + visible feed links, the new `/wrap` skill, and the
 afternoon's story-page arc (feed clicks re-pointed to thread pages +
-the source-multiplicity audit and engine brief); the 08-06 note and
-everything older sit under it.*
+the source-multiplicity audit and engine brief) and the evening's
+credibility-first ruling (outlet-credibility table built; Lin
+permission email sent, reply pending); the 08-06 note and everything
+older sit under it.*
 
 > **2026-08-07 — evidence-based practice became a first-class strand of
 > the MH feed, a ten-agent research wave rebuilt its question set, and
@@ -93,6 +95,25 @@ everything older sit under it.*
 > for the ground.news-style outlet list. Open with Ben: the outlet
 > bias/lean table (hand-curate ~100 recurring domains vs. license a
 > dataset; AllSides/Ad Fontes are proprietary).
+>
+> **Evening arc — credibility-first sourcing ruled and built.** Ben
+> ruled credibility over political lean ("actually more important to
+> our real aims"; lean parked indefinitely — every lean dataset is
+> closed anyway: AllSides CC BY-NC + anti-compete, Ad Fontes paid-only,
+> MBFC unlicensed, NewsGuard fee-based for all users; license text
+> fetched verbatim across two crawler audits).
+> `sources/outlet-credibility.yaml` shipped: 149 buffer-recurring
+> domains — 80 pc1-rated (the open Lin/Pennycook/Rand 11k-domain
+> ensemble; pc1 column ONLY), 41 Wikipedia-RSP-tagged (split verdicts
+> preserved, e.g. Forbes staff-vs-contributors), 6 primary-source
+> classed, 14 trade-press `gap_fill` candidates awaiting a
+> practice-indicator rubric pass Ben hasn't yet green-lit. A second
+> kestrel INBOX brief routes the whole pattern for therapybulletin
+> (+ FYI on its coming `mhinbrief-corpus` rename).
+> ⏳ **Waiting on: Hause Lin's reply** — the permission email for
+> public pc1 display was **sent by Ben 2026-08-07 (evening)**; the
+> credibility layer stays internal-only until his OK lands. **The next
+> `/start` should ask Ben whether a reply arrived.**
 >
 > **Ops:** `/wrap` exists now — a local, un-kit-tracked checkpoint skill
 > (pm's framing × cloud-governor's verification, encoding this repo's
