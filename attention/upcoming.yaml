@@ -1614,3 +1614,42 @@ expectations:
     logged: 2026-08-07
     logged_by: curate-add   # EBP build-out deep crawl, ben-steer strand promotion
     status: pending
+
+  - id: raine-jccp-cmc-0923
+    claim: "Next case-management conference in the coordinated chatbot-death litigation (Raine v. OpenAI + four sibling suits, JCCP No. 5431)"
+    due: 2026-09-23
+    due_precision: day
+    thread: ai-therapy-regulatory-reckoning
+    entities: [openai]
+    source: https://www.courts.ca.gov/
+    confidence: reported   # Q6 research memo, from litigation-coverage cross-check; prior CMC held 2026-07-24
+    what_confirms: "the CMC occurring and any scheduling/consolidation orders out of it — the coordinated docket is where a liability standard would first take shape"
+    logged: 2026-08-07
+    logged_by: curate-add   # per-question research wave (mh-q06 memo)
+    status: pending
+
+  - id: diga-performance-data-delivery
+    claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
+    due: 2027-04-15
+    due_precision: day
+    thread: dtx-payment-paradox
+    entities: []
+    source: https://www.bfarm.de/EN/Medical-devices/Tasks/DiGA-and-DiPA/_node.html
+    confidence: reported   # Q7 research memo — the reform is law since 2026-01-01; this date is its first falsifiable checkpoint
+    what_confirms: "BfArM confirming receipt/first re-pricing decisions — or the deadline slipping, which would itself answer whether outcomes-linked pricing has teeth"
+    logged: 2026-08-07
+    logged_by: curate-add   # per-question research wave (mh-q07 memo)
+    status: pending
+
+  - id: transcend-empower1-completion
+    claim: "Transcend Therapeutics' EMPOWER-1 pivotal Phase 3 (methylone/PTSD) reaches primary completion — the voucher-holder whose voucher preceded its data (enrollment only began April 2026)"
+    due: 2027-12-31
+    due_precision: month
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://clinicaltrials.gov/
+    confidence: reported   # Q3 research memo, from the trial registration
+    what_confirms: "primary-completion posting on the registration, or topline results — against a National Priority Voucher already in hand"
+    logged: 2026-08-07
+    logged_by: curate-add   # per-question research wave (mh-q03 memo)
+    status: pending

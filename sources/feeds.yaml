@@ -192,3 +192,16 @@ lenses:
     - name: "JAMA Psychiatry"
       url: "https://jamanetwork.com/rss/site_14/70.xml"
       axis: research  # flagship psychiatry; monthly TOC cadence, kept for signal quality. Real site-id is 14/70 — the guessable jamapsychiatry.rss path 403s
+    # --- round 2 (ben-steer 2026-08-07, the coverage-demo pass): two more
+    # verified adds. Also verified-and-REJECTED the same day: Psychological
+    # Medicine (Cambridge /core/rss/ path is bot-walled on BOTH product IDs,
+    # 403 + Cloudflare challenge; ordinary journal pages load fine) and One
+    # Mind PsyberGuide (project DEFUNCT — One Mind's own site lists it as a
+    # "Past Program", and onemindpsyberguide.org is now a nootropic-
+    # supplement affiliate site squatting the old branding for SEO).
+    - name: "The Lancet Psychiatry"
+      url: "https://www.thelancet.com/rssfeed/lanpsy_current.xml"
+      axis: research  # flagship psychiatry; monthly current-issue cadence
+    - name: "Journal of Consulting and Clinical Psychology"
+      url: "https://psycnet.apa.org/journals/ccp.rss"
+      axis: research  # APA's clinical-trials flagship; issue-batch cadence. content.apa.org/journals/ccp.rss 301s here

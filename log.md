@@ -2127,3 +2127,70 @@ its suspense calendar. `grok-4-6-ship`, `colombia-presidential-
 inauguration`, `cxmt-congress-letters`, `jobs-report-july-0807` all due
 08-07. STATUS.md needs a docs-sync pass — its thread count and the whole
 08-05/08-06 arc aren't reflected there yet.
+
+## 2026-08-07 — /daily (jobs shock, Israel–Lebanon opened) + the EBP strand built + the per-question research wave + 08-06 finalized
+
+The session ran three arcs in parallel, all shipped.
+
+**The daily.** 08-07 curated and published twice (Cloudflare `9c2aed0a`,
+`fa1e7ed4`). The day's story: July payrolls FELL 23,000 vs +84k
+consensus, May/June revised down 103k combined, unemployment 4.1% — on a
+9-3 hawkish-dissent Fed before 09-16. sev=major + a full interpretation
+(2024-precedent scenario vs hawks-hold). Ledger went 2 hits (jobs,
+Colombia inauguration — Cali, Rubio present, BRI-exit signaled), CXMT
+held pending inside its week window (the letter that landed went to
+Apple, not the administration), Grok 4.6 unconfirmed past Musk's own
+date. `israel-lebanon-escalation` opened directly under the standing
+conflict rule (75-outlet signal, deaths on both sides amid collapsing
+round-7 talks). 22 last_seen bumps, 3 actor-doing refreshes (SoftBank
+gained a political-influence axis: the $50M Trump-library donation two
+months before the Ohio lease). world-news.yaml rebuilt live (141 items).
+
+**08-06 finalized** (all five files → final). Six late items folded to
+their true day (Meta $567M NM ruling, SB903's first national wire story,
+OpenAI-APA, Muse Spark + Kimi K3 containment disclosures — Muse Spark's
+sev deliberately removed as a third-major-in-one-day — SoftBank/Trump
+library). Critic ran all three lenses: **6 real misses, 6 auto-adds**
+(LifeStance Health org, CCBHC theme, Muse Spark/Muse Code themes,
+Anthropic onto a REVIVED inhouse-silicon, "Alphabet bond" onto
+google-capex). An Alphabet capital-structure thread is offered as a
+candidate — Ben's word pending.
+
+**The EBP build-out (ben-steer, the day's centerpiece).** Evidence-based
+practice became a first-class MH strand: 8 threads total incl. the "What
+Works" meta family + ai-psychosis + israel-lebanon (map 87 → 95); 10
+live-verified feeds added across two rounds (journals + evidence bodies;
+verified-dead documented: Psychological Medicine bot-walled, Cochrane MH
+feed nonexistent, PsyberGuide defunct w/ domain squatted); the critic's
+first academic tier (JMIR MH + npj Digital Medicine weekly);
+watchlist +7 people (incl. the book's methodologist cohort) +3 orgs
++9 themes +2 conditions. Site: /news/ feeds row + /methodology/ (one
+page, common + per-feed sections) + the coverage-check appendix vs the
+team's source list (EFS-scrubbed, every verdict live-verified).
+
+**The research wave.** Ten per-question memos
+(artifacts/findings/mh-q01..q10) grounded in the-evidence-gap-src's
+outlines (read-only). Cluster verdicts in coverage-log. Concrete yields:
+3 new ledger entries (Raine JCCP CMC 09-23, DiGA data-delivery
+2027-04-15, Transcend EMPOWER-1), Transcend watchlisted, 27 timeline
+entries folded across 8 threads, methodology Q4/Q5/Q7/Q10 anchors
+refreshed, and a 6-item INBOX brief to the-evidence-gap-src (Done Global
+sentencing confirmed 07-07 — He 72mo/Brody 24mo; the Ch3 EU-AI-Act
+premise falsified; a two-agent-confirmed internal date conflict on the
+PHTI report; NIH-cut rejection nuance; JCCP + Anthropic-safety-numbers
+as new material; two Raine date discrepancies). Uncommitted there, per
+protocol.
+
+**Ops notes.** collect.py: 18/18 in ~17 min again (fast case twice
+running). KESTREL_CONTACT_EMAIL still needs per-session setting. The
+WebSearch budget survived a ~40-agent day until the wave's tail —
+WebFetch-first briefs with hard per-agent caps (≤6) are the fix that
+held; worth making standard. The GC curator sat idle waiting on a timer
+until nudged — brief future agents to act on wake, not re-poll.
+
+**Pick up:** /week due (Sat) — decay review has 10 🔴 incl. two
+born-stale board threads; it should consume the wave memos for radar
+Q3/Q4 and run the FIRST academic-benchmark recall check (JMIR/npj).
+Candidates awaiting Ben: Alphabet capital-structure; possible
+neuromodulation "of interest" thread (Q3's counter-case). CXMT flips
+passed-silent if still dark next run. Grok 4.6 window closes ~08-09.

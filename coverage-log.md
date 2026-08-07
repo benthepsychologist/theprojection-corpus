@@ -2234,3 +2234,64 @@ into the seeded timelines):
   benchmarks · threads · cadence · gaps). MH section rebuilt around the
   10-question set synthesized from the crawls. Site commit `08885a5`,
   Hugo build clean; goes live with the next /publish --push.
+
+### /daily finalize — 2026-08-06 (run 2026-08-07)
+
+08-06 finalized across all five files (3 lens + world-news + front →
+`final`; coverage `done` on the three benchmarked lenses). Six late items
+folded to the day they belong to: Meta's $567M NM ruling, SB 903's first
+national wire story, OpenAI-APA (mental-health); Meta Muse Spark 1.1 +
+Kimi K3 containment disclosures (frontier-ai — Muse Spark's sev=major
+considered and removed, third major in one day dilutes the term);
+SoftBank's Trump-library/Ohio-lease timing (global-capital).
+
+**Critic: 6 real misses across the three lenses — every one produced an
+auto-add:**
+- MH (BHB ×2, Fierce ×1 — same CCBHC story twice): LifeStance Health Q2
+  (EBITDA +94%) → `+ org "LifeStance Health"`; CCBHC funding constraints
+  (3.4M served, 539 clinics) → `+ theme "CCBHC"`, folded item, feeds
+  `mh-clinical-infra-funding` (last_seen → 08-06). STAT + MobiHealthNews
+  clean.
+- AI (TLDR AI led + 2 more): Meta's Muse Code launch (Spark 1.2) →
+  `+ themes "Meta Muse Spark"/"Muse Code"`; Anthropic in-house
+  chip-design team → term + entity on `inhouse-silicon`, REVIVING a
+  thread that had gone stale precisely because its terms only swept
+  hyperscalers. Rundown/Neuron/Daily Brief clean on leads.
+- GC (Bloomberg Tech led, Axios led): Alphabet's jumbo bond (~$115B
+  order book) + the Google X spinout fund → `+ term "Alphabet bond"` on
+  `google-capex`, folded item, timeline entry; an Alphabet
+  capital-structure thread offered as a candidate. Money Stuff clean
+  (access-capped), FT Unhedged inconclusive (paywalled).
+
+### Research wave — 2026-08-07 (the per-question deep pull)
+
+Ten sonnet agents, one per MH standing question, each grounded in the
+morning's two survey crawls plus the-evidence-gap-src's outlines
+(read-only) as historical spine. All ten memos landed:
+`artifacts/findings/mh-q01..q10-*-2026-08-07.md`. Cluster verdicts:
+
+- **Evidence:** effectiveness flat-not-falling (the "CBT decline" was a
+  US-only artifact) while reach scaled ~5x; MBC's mandate solved
+  administration (100%) not use (~58%); the psychedelic sprint's pivotal
+  trials predate the trial-design fix they'd need (enrolled before even
+  the DRAFT guidance); Done Global sentencing CONFIRMED (07-07: He 72mo,
+  Brody 24mo — first federal prison for digital-MH executives) and the
+  NIH cut was REJECTED in the Feb-2026 approps law (litigation open).
+- **Technology:** zero independent Therabot replication (first
+  independent head-to-head RCTs completed 2025, unpublished); safety
+  eval maturing but vendor-graded (Raine coordinated into JCCP 5431,
+  next CMC 09-23 — ledgered); the payment paradox RELOCATED (DiGA can't
+  re-price before 2027-04-15 — ledgered; CMS codes live w/o a national
+  rate); causality fight one-sided in print, new causal designs null.
+- **Market/governance:** PE clinical-DD and AI-liability underwriting
+  are the fastest-growing buyer pockets (both zero watchlist coverage —
+  named gaps); fragmentation wins at every governance layer.
+
+Map effects: +3 ledger entries (raine-jccp-cmc-0923,
+diga-performance-data-delivery, transcend-empower1-completion),
++1 watchlist org (Transcend Therapeutics; Usona flagged
+no-visible-Phase-3), timelines folded across 8 threads, methodology
+page's Q4/Q5/Q7/Q10 anchors refreshed. Book-side: 6 findings (incl. an
+internal date conflict two agents converged on and one falsified
+premise) filed to the-evidence-gap-src/INBOX/ — uncommitted, per
+protocol. /week should consume the memos for radar Q3/Q4 synthesis.

@@ -130,6 +130,8 @@ lenses:
       - "AI data center buildout"
       - "AI chip supply"
       - "AI memory chip shortage"  # auto-added 2026-06-27: HBM/DRAM squeeze from the buildout forcing Apple/Microsoft price hikes; demand-side macro signal we missed
+      - "Meta Muse Spark"   # critic-add 2026-08-07: Muse Code launch (Spark 1.2) led TLDR AI + 2 more benchmarks, zero sweep coverage — Meta's agentic model line had no term
+      - "Muse Code"         # critic-add 2026-08-07 (same miss)
 
   mental-health:
     # Orgs of interest (radar Q3 evidence, Q4 AI×MH, Q6 market)
@@ -166,12 +168,14 @@ lenses:
       - "Coalition for Health AI"
       # EBP strand — psychedelic regulatory sprint (ben-steer 2026-08-07)
       - "COMPASS Pathways"   # psilocybin NDA targeted Q4 2026 on a National Priority Voucher
-      - "Usona Institute"    # second psilocybin voucher-holder (MDD)
+      - "Usona Institute"    # second psilocybin voucher-holder (MDD) — NOTE (wave, 08-07): no visible Phase 3; its NDA evidence base is an open question
+      - "Transcend Therapeutics"   # third voucher-holder (methylone/PTSD) — added by the research wave 2026-08-07: its pivotal EMPOWER-1 only began enrolling April 2026, voucher preceded data; ledger tracks Dec-2027 completion
       # Big-tech health arms — what the giants are doing in health (radar Q1 ∩ Q4)
       - "Apple Health"
       - "Amazon Health"
       - "Microsoft Nuance"
       - "Verily"
+      - "LifeStance Health"   # auto-added 2026-08-07 (critic): BHB led 08-06 with its Q2 (EBITDA +94%, guidance raised, tuck-in M&A resumed) — a scaled public outpatient MH provider this map had no term for
       # Health systems deploying AI in BH care (radar Q4 governance-by-labor angle)
       - "Kaiser Permanente"  # auto-added 2026-07-22 (critic): BHB 07-21 lead — 2,400 BH clinicians contesting AI in care decisions; no term covered it
       - term: "Universal Health Services behavioral"
@@ -203,6 +207,15 @@ lenses:
       - "Pim Cuijpers"       # VU Amsterdam — anchor meta-analyst of psychotherapy outcomes (the 441-RCT absolute-response paper)
       - "Jonathan Haidt"     # NYU — pro-causation side of the social-media fight; policy driver behind the ban wave
       - "Nicholas Jacobson"  # Dartmouth — Therabot PI; COI angle (evaluates his own product) makes his publications thread events
+      # Evaluator-institution leadership (ben-steer 2026-08-07, second round —
+      # completes the methodologist cohort alongside Torous above):
+      - "Stephen Schueller"  # UC Irvine — consumer-app evaluation methodology (ex-PsyberGuide ED; the project itself is defunct as of 2026)
+      - "Caroline Pearson"   # Peterson Health Technology Institute ED — the field's closest thing to an independent HTA referee
+      - term: "Brian Anderson CHAI"
+        name: "Brian Anderson"
+        # Coalition for Health AI CEO — the assurance/accreditation lane's
+        # central figure post-Assurance-Labs pivot. Term qualified because
+        # bare "Brian Anderson" is too common a name to sweep clean.
 
     # Themes — regulatory, accountability, and MARKET/money (radar Q3, Q6)
     themes:
@@ -216,6 +229,7 @@ lenses:
       - "digital mental health funding"
       - "mental health startup acquisition"
       - "behavioral health market"
+      - "CCBHC"   # auto-added 2026-08-07 (critic): the CCBHC funding-constraints story led BOTH BHB and Fierce 08-06 (3.4M served, 539 clinics, +13% YoY) with no term to catch it — feeds mh-clinical-infra-funding
       # EBP strand (ben-steer 2026-08-07: "We should add OpenAlex search
       # items to this crawl" — these themes are aimed at the research
       # collectors (openalex/semantic_scholar) as much as the news sweep):

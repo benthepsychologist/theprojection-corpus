@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-06
-status: building
+status: final
 window_start: 2026-08-06T05:00:00-04:00
 as_of: 2026-08-06T09:30:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-08-06
@@ -30,7 +30,13 @@ what could sell," not evidence anyone actually has. Underneath both:
 Brent whipsawed back up into the low-$80s on a still-unsigned Hormuz
 deal, and this map's own coverage-critic catch from yesterday's finalize
 — SpaceX's actual debut earnings, and the broader Microsoft/Meta-driven
-tech rally — is worth re-reading alongside today's follow-through.
+tech rally — is worth re-reading alongside today's follow-through. A late
+catch folded in at 08-07 finalize adds a different kind of scrutiny to
+the SoftBank column: a $50M Trump-library donation made in January
+turns out to predate the federal Ohio land-lease deal for SoftBank's
+Portsmouth campus by two months, and Senate Democrats are now asking
+whether that timing was a coincidence — a political-influence question
+sitting alongside, not inside, the financing story above.
 
 ## Capital in my markets
 
@@ -88,6 +94,35 @@ tech rally — is worth re-reading alongside today's follow-through.
   map, worth its own tag rather than folding into that thread.
   ([Reuters via aggregation](https://news.google.com/rss/search?q=ICE+MarketAxess+acquisition), [Finextra](https://www.finextra.com/pressarticle/ice-agrees-5-7-billion-marketaxess-acquisition), [fintech.global on BlackRock tokenization](https://news.google.com/rss/search?q=BlackRock+tokenized+money+market+Europe))
   <!-- k: e=blackrock axis=deals-and-filings -->
+- **SoftBank confirmed a $50M donation to Trump's presidential library
+  landed two months before the Ohio data-center land deal — and Congress
+  now wants to know if the timing was a coincidence (late catch, folded
+  at 08-07 finalize).** Responding to a June oversight letter from Sens.
+  Elizabeth Warren and Richard Blumenthal and Rep. Melanie Stansbury,
+  SoftBank confirmed it donated $50M to Trump's presidential library in
+  January — roughly two months before the administration announced the
+  federal land-lease deal underpinning SoftBank's 10GW Portsmouth, Ohio
+  data-center campus. Warren's quote to The Verge (08-06) makes the
+  quid-pro-quo question explicit: whether the donation bought favorable
+  treatment on the lease. This is a new political-influence axis on the
+  existing `softbank-all-in` thread, distinct from the financing/
+  collateral angle covered above in Capital in my markets — nothing here
+  resolves the timing question either way, it just makes it public.
+  ([The Verge](https://www.theverge.com/policy/976138/softbank-trump-library-data-center-ohio), [Washington Post](https://www.washingtonpost.com/politics/2026/07/01/democrats-ask-softbank-explain-trump-library-donation/))
+  <!-- k: t=softbank-all-in e=softbank axis=deals-and-filings -->
+
+
+- **Alphabet raised a jumbo bond and its order book told the real story —
+  ~$115B of demand, read as a market referendum on AI-capex appetite the
+  day after the DeepMind leadership shock (critic catch, folded at 08-07
+  finalize).** Bloomberg Technology led with it ("Alphabet Bond Demand
+  Signals AI Appetite Alive and Well"); Axios Pro Rata separately led
+  with a new Google fund/venture to commercialize Google X spinouts.
+  Neither appeared here — Alphabet's capital-structure moves had no term
+  and no thread; folded into the capex thread's financing side, and an
+  Alphabet-capital-structure thread is offered as a candidate today.
+  ([Bloomberg via critic](https://www.bloomberg.com/), [Axios Pro Rata](https://www.axios.com/newsletters/axios-pro-rata))
+  <!-- k: t=google-capex e=google axis=deals-and-filings -->
 
 ## 📊 Macro strip
 
@@ -132,3 +167,58 @@ Arm's slide now visible as a real ¥14 trillion NAV cut. SpaceX's lockup
 opened on schedule but the bigger tranche stays locked until the stock
 recovers, and oil whipsawed back up on a Hormuz deal that's still just
 "agreed in principle."
+
+## Coverage appendix (critic, run 2026-08-07)
+
+**Method:** checked what this lens's four benchmarks led with on 08-06 —
+Money Stuff (Matt Levine), Axios Pro Rata, FT Unhedged, Bloomberg
+Technology — and compared against what this digest actually carried.
+WebFetch was tried first against each outlet directly; Bloomberg (Money
+Stuff and the Bloomberg Technology newsletter), Axios's specific edition
+page, and FT all returned 403/paywall blocks, so those relied on
+WebSearch summaries instead (6 WebSearch calls used, at the session cap).
+
+- **Money Stuff (Matt Levine) — clean, with an access caveat.** The exact
+  Aug 6 column text wasn't retrievable (Bloomberg blocked direct fetch).
+  WebSearch surfaced titles only for the two adjacent days: Aug 4
+  ("SpaceX Unlocks Tomorrow") and Aug 5 ("Fake SpaceX Stock Isn't Worth
+  as Much"). Both are the same SpaceX-lockup story this digest already
+  covers in more depth in Capital in my markets (the 911.5M-share
+  eligible tranche vs. the 455.8M-share tranche still locked below the
+  $135 IPO price). No evidence turned up of an Aug-6-specific Levine lead
+  this digest missed.
+
+- **Axios Pro Rata — miss, moderate confidence.** The Aug 6 edition's own
+  headline pairing was "Loss leader" (lead item; exact story unconfirmed
+  — direct fetch blocked) plus "Google's AI spinout surprise" as the
+  secondary lead. The spinout item traces to Google structuring a new
+  AI-adjacent venture (reported elsewhere as "Discovery Loop," backed by
+  a dedicated fund built to commercialize Google X spinouts) in the same
+  week Google's AI-leadership departures wiped roughly $190B off
+  Alphabet's market value (08-05). No Google/Alphabet corporate-
+  structuring or AI-spinout story appears anywhere in this digest.
+  Flagged at moderate rather than high confidence because Axios's actual
+  top item ("Loss leader") couldn't be confirmed, and the spinout angle
+  may sit closer to the frontier-ai lens than global-capital.
+
+- **FT Unhedged — inconclusive, not clean.** Paywalled and unindexed by
+  search for the Aug 6 edition specifically; no lead story could be
+  identified at all, positive or negative. Logged as a benchmark gap
+  rather than asserted as covered.
+
+- **Bloomberg Technology — miss, high confidence.** The Aug 6 newsletter
+  led with "Alphabet Bond Demand Signals AI Appetite Alive and Well":
+  Alphabet drew ~$115B of orders on a jumbo bond sale, a concrete demand
+  signal for AI-boom-linked corporate debt after a recent selloff. This
+  sits squarely in-lens, directly adjacent to this digest's own SoftBank
+  margin-loan and OpenAI-collateral coverage above, and no dedicated
+  Alphabet/Google thread exists yet in `attention/threads/` to have
+  already absorbed it (checked via repo grep, not web). Real, clean miss.
+
+**Net:** 4 benchmarks checked — 2 clean-with-caveats (Money Stuff, FT
+Unhedged, the latter inconclusive rather than verified-clean), 2 flagged
+misses (Axios Pro Rata's Google-spinout angle at moderate confidence,
+Bloomberg Technology's Alphabet bond-demand lead at high confidence).
+Both misses converge on the same gap: Alphabet/Google's AI-era capital
+structure — debt issuance and corporate-spinout financing — has no
+presence on this map yet.

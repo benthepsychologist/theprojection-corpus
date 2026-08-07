@@ -353,7 +353,7 @@ threads:
       - "mental health startup acquisition"
       - "interventional psychiatry funding"
     opened: 2026-06-28
-    last_seen: 2026-07-30
+    last_seen: 2026-08-06   # critic catch: CCBHC funding story (08-06, folded at finalize)
     watch: >
       MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026), but the
       money is going to clinician-augmentation (psychiatry copilots, AI scribes, payer-aligned
@@ -719,6 +719,7 @@ threads:
       - "Alphabet capex"
       - "Google Cloud capex"
       - "Alphabet capital expenditure"
+      - "Alphabet bond"   # critic-add 2026-08-07: Bloomberg Tech led with the jumbo-bond ~$115B order book (08-06) and no term caught the financing side of the capex story
     opened: 2026-07-23
     last_seen: 2026-07-31   # reverted stale-recall correction 08-05
     watch: >
@@ -1447,7 +1448,7 @@ threads:
     kind: story
     status: open
     lens: ai
-    entities: [google, amazon-aws, microsoft, meta-ai, openai, broadcom]   # decay-review 2026-07-27 — absorbed openai-custom-silicon (Jalapeño)
+    entities: [google, amazon-aws, microsoft, meta-ai, openai, broadcom, anthropic]   # decay-review 2026-07-27 — absorbed openai-custom-silicon (Jalapeño); anthropic added critic-add 2026-08-07
     weight: 2
     parent: ai-compute-spend
     terms:
@@ -1455,8 +1456,9 @@ threads:
       - "Amazon Trainium"
       - "Microsoft Maia"
       - "Meta MTIA chip"
+      - "Anthropic chip design"   # critic-add 2026-08-07: 3/4 benchmarks carried Anthropic's in-house chip team (08-05) and this thread's terms only swept hyperscalers — exactly why it had gone stale
     opened: 2026-07-24
-    last_seen: 2026-07-25   # first real item (gap-day reconstruction 2026-07-27)
+    last_seen: 2026-08-06   # revived: Anthropic in-house chip-design team (critic catch, event 08-05, folded at 08-07 finalize)
     watch: >
       The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE-
       only, anchored by Anthropic running mostly off Nvidia on Trainium + TPU.
