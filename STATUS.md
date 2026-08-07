@@ -8,8 +8,9 @@ methodology page + visible feed links, the new `/wrap` skill, and the
 afternoon's story-page arc (feed clicks re-pointed to thread pages +
 the source-multiplicity audit and engine brief) and the evening's
 credibility-first ruling (outlet-credibility table built; Lin
-permission email sent, reply pending); the 08-06 note and everything
-older sit under it.*
+permission email sent, reply pending), and the late-evening /news/
+overhaul (push≠deploy root-caused, card feed retired — the brief IS
+the page); the 08-06 note and everything older sit under it.*
 
 > **2026-08-07 — evidence-based practice became a first-class strand of
 > the MH feed, a ten-agent research wave rebuilt its question set, and
@@ -115,18 +116,44 @@ older sit under it.*
 > credibility layer stays internal-only until his OK lands. **The next
 > `/start` should ask Ben whether a reply arrived.**
 >
+> **Late-evening arc — acceptance failed, root cause found, /news/
+> reshaped.** Ben's acceptance test failed: top stories didn't route to
+> threads and the cards sat "boring and below the fold." Half was a
+> deploy gap: **git push ≠ deploy** — this site ships only when the
+> Cloudflare deploy hook fires (normally `publish.py --push`'s job; URL
+> in the untracked `.env`), so Stage 1 sat pushed-but-undeployed for
+> hours. Encoded nowhere; a `/wrap` step-5 deploy check is proposed and
+> **awaits Ben's word**. The other half was real: briefing bullets had
+> no thread links — fixed in-zone via a payload URL→threads lookup
+> (site `c516ac3`): brief/readout bullets now link thread-first with a
+> quiet ↗ to the original article. Then Ben retired the `/news/` card
+> feed outright ("the STORIES of the day up top… and that's all"):
+> feed, lens filter chips, and the duplicate compact readout removed;
+> the same-day sections-collapse reversed (the brief IS the page); the
+> copy-week button survives via a detached-root render; lens pages
+> untouched. Live-verified ~20:47Z (deploys `0dceaa87` → `6945184b` →
+> `3ab5e08f`). Story-top thumbnails: parked, Ben's "we'll think about
+> it."
+>
+> **Kestrel woke up (late 08-07):** its resident session committed
+> (= acknowledged, per protocol) **all four corpus briefs**, pushed the
+> engine backlog clean, and merged registry+corpus into a "standing"
+> kind while adopting a new `benthepsychologist-corpus` instance into
+> the fleet. Stage 2 (story pages / source multiplicity) is now
+> genuinely in kestrel's queue rather than sitting unread.
+>
 > **Ops:** `/wrap` exists now — a local, un-kit-tracked checkpoint skill
 > (pm's framing × cloud-governor's verification, encoding this repo's
 > five real close-out traps), routed to kestrel's INBOX as a proposed
 > `attention/wrap` library entry. collect.py ran 18/18 in ~17 min twice
 > today (fast case three runs running). The WebSearch budget survived a
 > ~40-agent day on WebFetch-first briefs with hard per-agent caps — the
-> first wide-dispatch session in four that didn't exhaust it. ⚠️ kestrel
-> has 4 unpushed engine-side commits (its residents' to push — flagged,
-> not touched; this morning's `/start` card misread that check as clean)
-> and its INBOX now holds **three** uncommitted corpus briefs awaiting
-> its resident session (wrap-skill + source-multiplicity from today, a
-> claude-md-tmpl one from 08-05).
+> first wide-dispatch session in four that didn't exhaust it. The
+> kestrel unpushed-commits flag that stood most of the day (4 engine
+> commits; this morning's `/start` card misread the check as clean)
+> **resolved late-evening** when its resident session pushed the
+> backlog and acknowledged the brief stack — see the late-evening arc
+> below.
 >
 > **🧵 Map: 96 threads** (was 84 at the 08-05 note; 26 mental-health) ·
 > **ledger: 70 expectations, 42 pending** · **actor-doing: 44 entries** ·

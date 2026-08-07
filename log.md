@@ -2306,3 +2306,52 @@ silent, ask Ben whether to nudge or ship RSP-only). Then the standing
 queue: /week due Sat (wave memos → radar Q3/Q4, first academic recall
 check, 10 🔴 decay review); gap_fill rubric pass awaits Ben's go;
 Stage 2 + credibility badges both wait on a kestrel resident session.
+
+## 2026-08-07 (late evening) — acceptance fail → push≠deploy → /news/ becomes the brief
+
+Ben's acceptance test FAILED and both halves taught something. ① The
+feed cards' thread routing (Stage 1) was committed and pushed but never
+LIVE: this site deploys only when the Cloudflare deploy hook fires —
+publish.py --push's job, URL in the untracked .env — and no publish ran
+after Stage 1's git push. Live dashboard.js had zero occurrences of the
+new code; hook fired by hand, resolved. The lesson with teeth: **push ≠
+deploy, and no check anywhere encodes it** — /wrap step 5's @{u} checks
+called today "clean" while the live site served stale JS. A two-line
+/wrap edit (if layouts/static/assets changed, verify live or flag
+undeployed) is PROPOSED and awaits Ben's word — don't add it without
+him (skill-edit confirmation rule). ② The top brief bullets had no
+thread links at all (briefing schema carries no threads field) — fixed
+in-zone without waiting for Stage 2: a Hugo-side lookup joins each
+bullet's url against payload.items to find its threads; bullets now
+link thread-first with a small ↗ src-link to the original (site
+c516ac3, agent-implemented; also flipped readout.html to threads-first
+with a flex-wrap fix so the ↗ hugs the text).
+
+Then Ben went further: "the cards... can be retired... we want the
+STORIES of the day up top, linked to our summarized story page, and
+that's all." Done inline (retirement commit after c516ac3): /news/
+loses the JS card feed, the lens filter chips, and the duplicate
+compact readout; the briefing sections-collapse shipped hours earlier
+was REVERSED (with nothing below it the brief IS the page — hiding
+sections would hide the content); the copy-week button survives via a
+one-line detached-root render in dashboard.js (its data is computed
+inside render(), which the missing container used to bail out of);
+lens pages (/news/<lens>/) untouched — they're the team's per-feed
+surfaces. Deploys fired and live-verified by polling (~20:47Z, builds
+0dceaa87 → 6945184b → 3ab5e08f). Story-top thumbnails parked (Ben:
+"we'll think about whether").
+
+**Kestrel woke up.** Late-evening check found its tree clean and
+backlog pushed: the resident session COMMITTED all four corpus briefs
+(protocol acknowledgment), merged registry+corpus kinds into
+"standing", adopted a new benthepsychologist-corpus instance, and left
+a self-note about site agentdoc templates hardcoding instance literals
+(their side; no action ours). Stage 2 is now genuinely queued, not
+unread. The standing "nobody's home" flag is retired.
+
+**Pick up:** FIRST ask Ben re Lin's reply (unchanged). Ben's /news/
+retest is pending his next look — top stories should land on our
+thread pages now. /week due Sat. Awaiting Ben's word: the /wrap
+deploy-check edit · the 14-domain gap_fill rubric pass. Watch kestrel
+for Stage 2 movement (coverage field) — when it lands, the site-side
+outlet list + credibility badges are ready to wire.
