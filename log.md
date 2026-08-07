@@ -2194,3 +2194,22 @@ Q3/Q4 and run the FIRST academic-benchmark recall check (JMIR/npj).
 Candidates awaiting Ben: Alphabet capital-structure; possible
 neuromodulation "of interest" thread (Q3's counter-case). CXMT flips
 passed-silent if still dark next run. Grok 4.6 window closes ~08-09.
+
+## 2026-08-07 (midday extension) — the jobs verdict, the Mecca pact
+
+Second /daily of the day, ~10:50-11:15 ET. Two catches: ① the flagged
+jobs-reaction re-check — a broad RELIEF rally (Nasdaq +1.03%, Dow
+briefly at an all-time high) on "quells rate-HIKE fears" framing, the
+distinction kept honest (hike-relief ≠ cut-pricing; sourcing supports
+only the former); zero Fed voices on record yet, so the interpretation
+HELD at plausible on a split verdict (market half sourced, committee
+half unvoiced — upgrade only when a committee voice engages the print).
+② The midday delta sweep's real find: Saudi Arabia, Turkey, and
+Pakistan signed the trilateral "Mecca Joint Defence Agreement" —
+top-tier multi-outlet, wires at the morning cutoff — folded into
+iran-conflict-widening (cross-ref israel-lebanon-escalation), flash bar
+assessed and not cleared (diplomatic, not kinetic), no sev (day's flags
+spent). MH/AI lenses: genuinely nothing new in-window (OpenAI-APA still
+has no primary statement; Grok 4.6 still unconfirmed on its own due
+date). Front + GC briefings regenerated (validator clean, 100% link
+floors); publish pass 5. Delta collect ran in background (routine).

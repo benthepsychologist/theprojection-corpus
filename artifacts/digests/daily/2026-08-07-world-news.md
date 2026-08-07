@@ -3,7 +3,7 @@ lens: world-news
 date: 2026-08-07
 status: building
 window_start: 2026-08-07T05:00:00-04:00
-as_of: 2026-08-07T09:50:00-04:00
+as_of: 2026-08-07T11:05:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -16,8 +16,11 @@ coverage) and this morning's expectation-check agents.*
 
 ## Today's throughline
 
-Colombia inaugurated a president today, and a second Middle East front
-moved from talks toward re-escalation. Abelardo De La Espriella took
+Colombia inaugurated a president today, a second Middle East front
+moved from talks toward re-escalation — and by midday the region's
+powers answered with paper: Saudi Arabia, Turkey, and Pakistan signed a
+trilateral mutual-defense pact in Mecca, binding two regional powers to
+a nuclear-armed state while the fronts burn. Abelardo De La Espriella took
 office in Cali — the first Colombian inauguration held outside the
 capital in over a century — completing the regional realignment the June
 runoff set up: Marco Rubio attended, outgoing president Petro boycotted,
@@ -58,6 +61,20 @@ all active military conflicts that aren't hyper-local get coverage.
   coverage rule; backstory crawl to follow.
   ([Al Jazeera](https://www.aljazeera.com/), [WSJ](https://www.wsj.com/), [France 24](https://www.france24.com/), [L'Orient Today](https://today.lorientlejour.com/))
   <!-- k: t=israel-lebanon-escalation axis=world-news sev=major -->
+
+- **Saudi Arabia, Turkey, and Pakistan signed a trilateral mutual-defense
+  pact — the "Mecca Joint Defence Agreement" — framed explicitly as a
+  response to the region's turmoil (midday extension catch; earliest
+  wires landed at the morning cutoff).** Confirmed across Reuters, BBC,
+  NYT, Al Jazeera, and Al Arabiya. Two major regional powers binding
+  themselves to a nuclear-armed state mid-conflict is a structural move
+  in the same security architecture the Iran war and the Israel-Lebanon
+  escalation are stressing — filed to the regional-war thread,
+  cross-referenced to today's new `israel-lebanon-escalation`. Assessed
+  against the FLASH bar and judged below it: a diplomatic signing, not a
+  kinetic or market-halting event.
+  ([Reuters](https://www.reuters.com/), [BBC](https://www.bbc.com/news), [Al Jazeera](https://www.aljazeera.com/))
+  <!-- k: t=iran-conflict-widening axis=world-news -->
 
 - **Russia–Ukraine stayed the board's loudest standing signal** (204
   distinct domains on the mechanical sweep — ambient volume on the

@@ -1,0 +1,35 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-07T12:00:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: true
+fetched_at: '2026-08-07T14:49:18Z'
+items:
+- id: gh-release-366789479
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10308
+  ts: '2026-08-07T14:05:22Z'
+- id: gh-release-366761641
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10307
+  ts: '2026-08-07T13:19:38Z'
+- id: gh-release-366736459
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10306
+  ts: '2026-08-07T12:33:55Z'
+- id: gh-release-366721299
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10305
+  ts: '2026-08-07T12:03:40Z'
+- id: gh-release-366785099
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.4.2
+  ts: '2026-08-07T13:58:15Z'

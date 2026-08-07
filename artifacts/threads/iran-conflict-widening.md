@@ -24,6 +24,18 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-07 — Saudi Arabia, Turkey, and Pakistan sign the "Mecca Joint Defence Agreement"
+
+- **A trilateral mutual-defense pact, signed in Mecca and framed
+  explicitly as a response to the region's turmoil** — two major
+  regional powers binding themselves to a nuclear-armed state while the
+  Iran war's fronts (Hormuz, Israel–Lebanon) stay hot. Confirmed across
+  Reuters, BBC, NYT, Al Jazeera, Al Arabiya. A structural move in the
+  security architecture this thread tracks, cross-referenced to
+  `israel-lebanon-escalation` (opened the same day). Assessed against
+  the flash bar and judged below it (diplomatic signing, not kinetic).
+  ([Reuters](https://www.reuters.com/), [BBC](https://www.bbc.com/news)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-06 — "Agreed in principle" on the shipping-lane coordinates; still unsigned, and the real sticking point now has a name
 
 - **Iran says the Oman deal has moved from "close" to "agreed in principle"** — Foreign Ministry spokesman Baghaei said Tehran and Muscat have agreed the geographic coordinates of a navigable channel, with a joint statement "in the final stages," and state agency IRNA describing Iran and Oman as "putting the final touches on arrangements for jointly managing the passage." **Still not signed** — the statement also awaits sign-off from Iran's Supreme Leader.

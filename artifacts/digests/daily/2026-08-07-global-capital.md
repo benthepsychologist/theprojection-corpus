@@ -3,7 +3,7 @@ lens: global-capital
 date: 2026-08-07
 status: building
 window_start: 2026-08-07T05:00:00-04:00
-as_of: 2026-08-07T09:50:00-04:00
+as_of: 2026-08-07T11:05:00-04:00
 coverage: pending
 ---
 
@@ -13,9 +13,9 @@ coverage: pending
 2026-08-07 filtered to lens=global-capital — thin/noisy, mostly routine
 SEC filings; WebFetch-first against BLS primary + Google News RSS +
 direct outlet fetches). Jobs figures are BLS-primary, fetched ~08:44 ET,
-14 minutes after release; immediate market/Fed reaction was not yet
-indexed at that check and is stated as absent rather than guessed —
-re-check next run.*
+14 minutes after release. The market reaction was folded in at the
+~11:00 ET midday extension; Fed-official reaction did not yet exist on
+the record at that check and is stated as absent, not guessed.*
 
 ## Today's throughline
 
@@ -46,14 +46,32 @@ yesterday's window folds into 08-06's digest at today's finalize.
   earnings rose 2 cents to $37.62 (+3.2% YoY). Weakness concentrated in
   local-government education (-50,000), retail trade (-19,000), and
   financial activities (-14,000); health care still added 22,000 but at
-  half its prior 12-month pace. **No immediate market or Fed-official
-  reaction coverage was findable as of this check — too fresh to be
-  indexed.** This is the print the standing `rate_regime` reading gets
+  half its prior 12-month pace. **Reaction was too fresh to be indexed
+  at this item's 08:44 ET check — see the midday-extension item below
+  for the market's first verdict.** This is the print the standing `rate_regime` reading gets
   reweighed against: a committee that moved from unanimous (June) to
   9-3-with-3-hawkish-dissents (July) now has a negative payrolls print
   with a triple-digit-thousand revision in front of it before 09-16.
   ([BLS](https://www.bls.gov/news.release/empsit.nr0.htm))
   <!-- k: t= e=kevin-warsh axis=capital-in-my-markets sev=major interp=yes -->
+
+- **Markets read the payrolls shock as hike-relief, not recession — a
+  broad rally led by the Nasdaq (+1.03%), with the Dow briefly touching
+  an all-time high, on "quells rate-hike fears" framing (midday
+  extension, ~10:51 ET).** S&P 500 +0.49% (7,747.67), Dow +0.20%
+  (53,992.41, off an earlier >400-point spike), 10Y yield down ~3bp to
+  ~4.64% (single-source figure, direction consistent). The distinction
+  that matters: coverage attributes the rally by name to reduced odds
+  the 9-3 committee HIKES ("US stocks gain as surprise payrolls fall
+  quells rate-hike fears" — Reuters; rate futures "cut chances of
+  September rate hike"), not to a fresh September-cut bet — hike-relief
+  and cut-pricing are related but distinct claims, and today's sourcing
+  supports only the former. **Zero on-the-record Fed-official or
+  administration reaction to this print existed as of the check** — the
+  three July hawkish dissenters' only dated statements remain their
+  pre-print dissent justifications (07-30/31). Re-check next run.
+  ([Reuters via Google News](https://news.google.com/rss/search?q=stocks+payrolls+rate+hike+fears), [BLS](https://www.bls.gov/news.release/empsit.nr0.htm))
+  <!-- k: t= e=kevin-warsh axis=capital-in-my-markets -->
 
 - **SpaceX's insider lockup closed its first trading day up, not down —
   and no Form 4s or other insider-sale filings have surfaced as of this
@@ -102,9 +120,9 @@ yesterday's window folds into 08-06's digest at today's finalize.
 - **10Y-2Y spread: 0.44** (FRED, 2026-08-06), down a hair from 08-05's
   0.45 — this reading predates the jobs print (FRED updates end-of-day)
   and is the first thing to re-check once tomorrow's data lands.
-- **July payrolls: -23,000; unemployment 4.1%.** No Treasury-yield or
-  rate-cut-odds reaction available yet to log (release ~15 min old at
-  check time).
+- **July payrolls: -23,000; unemployment 4.1%.** Midday reaction:
+  relief rally (Nasdaq +1.03%, Dow briefly at an all-time high), 10Y
+  ~-3bp — "quells rate-hike fears" framing, no Fed voice on record yet.
 
 ## ⏳ Upcoming & expected
 
