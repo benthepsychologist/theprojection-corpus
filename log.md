@@ -2422,3 +2422,55 @@ has a thread but no entity, Lancium, Frontier Security). `/week` is now
 2 days overdue (due Sat 08-08) and should run next — wave memos still
 want radar Q3/Q4 synthesis, and the 🔴-stale thread count grew across
 the 2-day gap.
+
+## 2026-08-09 (later) — site UX crawl + fixes, then /week
+
+Two more pieces of work same day, after the /daily catch-up above.
+
+**Site UX crawl.** Asked to crawl theprojection.org with a first-time,
+non-technical visitor's eyes. Found the homepage never says plainly what
+the site is, and — the real finding — briefing/list links across
+/news/, lens pages, and thread lists were styled identical to plain text
+(no color, no underline until hover), so on a touch device there was no
+visible signal any of it was clickable. Fixed with Ben's go-ahead: link
+visibility CSS, a plain orientation sentence + rewritten meta
+description on the homepage, a status-word legend on lens/entity pages,
+and — the deepest fix — internal provenance markers (`⟨daily
+YYYY-MM-DD⟩`) and dead `` `slug` `` code-refs stripped from every
+reader-facing surface. That last one turned into 6 rounds of
+whack-a-mole across separate data paths (thread bodies, blurbs,
+map-changes, readout bullets, interpretation text, pre-rendered HTML
+items) before landing on one recursive sweep over the whole payload
+instead of patching fields by name. Verified clean against the full
+rendered site each round; pushed and live-verified by content check.
+
+**`/week`, closing week 08-03–08-09.** Four weekly digests (one sonnet
+agent per lens), synthesizing 7 days against radar.md's open questions.
+Heaviest week on record for mental-health (the EBP build-out) and
+world-news (Israel-Lebanon opened, the Mecca pact, Yemen's worst
+3-day stretch in 4 years) at once. Ledger: 11 hits, 4 passed-silent, 0
+overdue, 14 old entries pruned. Caught and fixed a recurring
+`last_seen`-vs-timeline sync bug (7 confirmed real instances; 5 more
+were agents overclaiming the pattern, caught by direct verification
+before touching anything). Board pass ran the dormant-actor
+cross-reference deferred from last `/week` — clean, no new gap — and
+found one real board.yaml staleness bug (Berkshire's text still said
+"net-selling 15 straight quarters" after Q2 earnings reversed that).
+`capital-context.yaml` and `actor-doing.yaml` (26 of 44 actors) both
+refreshed, every actor-doing update spot-checked against real thread
+data before applying. Full detail: `coverage-log.md`.
+
+**Two structural access gaps confirmed recurring, not fixed — open for
+Ben:** Axios Pro Rata + FT Unhedged unreachable in 6 of this week's 7
+global-capital critic passes; Behavioral Health Business 403'd on every
+single mental-health pass this week while being the single most
+miss-productive benchmark. **Also open:** a likely duplicate ledger
+entry (`kaiser-nuhw-mediation` vs. `kaiser-nuhw-mediation-0811`) flagged
+but not merged — the Minnesota precedent needed Ben's direct ruling to
+reverse a standing "do not merge" call, so this one waits for the same.
+Several decay-review keep/resolve/retire calls also still open (see
+coverage-log.md's table) — none applied without his word.
+
+**Pick up:** present the /week findings + open decisions to Ben. Both
+repos (this one, theprojection-site) pushed clean; kestrel untouched,
+read-only, clean.
