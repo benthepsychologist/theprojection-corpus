@@ -10,6 +10,37 @@ opened: 2026-08-04
 
 *Watch:* The policy fight the Ceuta mass-crossing set off — deliberately the POLICY thread, not the incident. Track whether the suspension camp grows beyond two states, whether any formal Schengen mechanism is actually triggered rather than threatened, what the October summit is being set up to decide, and whether a Morocco-returns arrangement materialises.
 
+## 2026-08-08 — The gap between threat and mechanism closes: Spain imposes its own reciprocal border checks on Italy
+
+- **Spain's Interior Ministry re-imposed border controls on travelers
+  arriving from Italy, effective from midnight Saturday (08-08) through
+  09-07** — checking passports/ID and, for third-country nationals,
+  visa or residence status, on a random basis at ports and airports.
+  Madrid's stated justification: Italy's "persistent irregular
+  migratory pressure," after Rome defied Sunday's ultimatum (below) and
+  said it would keep its own Spain-facing checks until at least 08-15.
+  This is the watch item this thread opened to track — "whether any
+  formal Schengen mechanism is actually triggered rather than
+  threatened" — now answered: both sides have live, reciprocal internal
+  border checks against each other, a first between two Schengen states
+  in this dispute.
+  ([ara.cat](https://en.ara.cat/society/escalate-the-diplomatic-shock-between-spain-and-italy-over-the-ceuta-crisis_1_5819154.html)) ⟨daily 2026-08-08⟩
+
+## 2026-08-07 — Spain gives Italy a Sunday deadline to lift its Schengen checks; Meloni refuses same day
+
+- **Spain issued Italy an ultimatum: lift the Schengen border checks
+  imposed over Ceuta by Sunday (08-09), or Madrid would "take
+  proportionate measures to protect the interests and dignity of its
+  citizens."** Rome refused within the day — Meloni's government said
+  it "does not accept ultimatums or impositions from abroad on matters
+  of national security and border control," and confirmed it would
+  keep the checks through at least 08-15, citing a social-media call
+  for a fresh mass Ceuta crossing on that date. First direct escalation
+  since the 08-04 ministerial's non-binding solidarity statement — the
+  suspension camp is no longer just rhetorical on Italy's side, and now
+  Spain is answering in kind (see 08-08 above).
+  ([eunews.it](https://www.eunews.it/en/2026/08/07/spain-issues-an-ultimatum-to-italy-over-the-migration-crisis-in-ceuta-reconsider-the-suspension-of-schengen-but-rome-is-not-having-it/), [elconstitucional.es](https://www.elconstitucional.es/en/international/meloni-defies-spain-and-will-maintain-schengen-controls-until-august-15-we-do-not-accept-ultimatums_6918_102.html)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-04 — Opened (ben-steer), on the day of the emergency ministerial
 
 - **Promoted from a standing thread candidate.** Offered 08-03 — "the Ceuta

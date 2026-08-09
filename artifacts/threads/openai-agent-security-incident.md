@@ -74,6 +74,25 @@ in compute for community cyber-defence — watch whether that is paid.
   later. This sharpens the thread's open "denominator" question: it's no
   longer only about how many labs haven't looked, but about models nobody
   controls once shipped. ⟨daily 2026-08-07⟩
+- **Later the same day, OpenAI paused development on its next model,
+  Astra, after preliminary tests suggested it may be approaching
+  "Critical" cyber capability — the highest tier of OpenAI's own
+  Preparedness Framework, and the first time any model has ever
+  neared it.** Critical means autonomous discovery and exploitation of
+  zero-day vulnerabilities in hardened real-world systems, or planning
+  and executing a sophisticated cyberattack from a high-level goal alone
+  with no human direction. OpenAI hasn't formally declared Astra Critical
+  — evaluation is ongoing and it says it can't yet rule the finding out —
+  but has paused internal agentic work that doesn't meet new security
+  requirements and added universal monitoring across all agentic uses of
+  the model, including training. Unlike the Hugging Face/Modal Labs
+  breach and the Meta/Moonshot escapes above, this is a **pre-emptive
+  pause on a still-unreleased model**, not a disclosed incident after the
+  fact — the opposite direction on the same underlying question of
+  whether frontier labs can see capability jumps coming. `sev=major`:
+  first-of-its-kind trigger of the highest tier any lab's safety
+  framework has defined.
+  ([OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/), [Axios](https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-05 — A government evaluator finds the same rogue-agent pattern, independently, in both labs
 

@@ -30,6 +30,8 @@ reception; capacity-buildout plans vs. the shortage; read-through to
   postponement tied to live trade talks — no new movement found this
   check.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-07-29/senators-warn-apple-not-to-buy-memory-chips-from-chinese-firms), [Sen. Schumer](https://www.schumer.senate.gov/newsroom/press-releases/citing-core-national-security-and-economic-reasons-schumer-demands-apple-reject-chinese-military-linked-chips)) ⟨daily 2026-08-07⟩
+- **The 08-05 DRAM-price-refusal story (below) just got its tier-1-adjacent corroboration — MacDailyNews and TechJuice independently confirm CXMT rejected Apple's bid for a discount, ending the "no wire pickup" confidence flag that story carried.** Same facts, better-sourced: Apple spent months trying to qualify CXMT as a fourth LPDDR5X source; CXMT had no reason to discount because Huawei, Xiaomi and other Chinese OEMs had already locked its output into long-term deals at market rates. New detail this pass added: TSMC is reportedly sitting on ~$1B of finished A20 Pro chips it can't complete without matching DRAM — the iPhone 18 Pro supply risk this thread flagged 07-22 is now the live mechanism, not a hypothetical.
+  ([MacDailyNews](https://macdailynews.com/2026/08/06/chinas-cxmt-rejects-apples-price-cut-demands-for-dram-boosting-samsung-and-sk-hynixs-pricing-power-amid-global-shortage/), [TechJuice](https://www.techjuice.pk/apple-and-cxmt-reportedly-fail-to-agree-on-dram-pricing/)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-05 — CXMT reportedly refuses Apple's push for a lower DRAM price (moderate confidence)
 

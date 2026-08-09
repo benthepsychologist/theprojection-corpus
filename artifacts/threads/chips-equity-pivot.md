@@ -16,6 +16,11 @@ unresolved. Track: which awards convert, the legal instrument used, and
 whether equity terms start steering corporate behavior (links
 intel-rescue).
 
+## 2026-08-07 — The portfolio hits exactly the "~30" figure this thread flagged two weeks ago
+
+- **Six more semiconductor firms signed letters of intent for CHIPS Act funding in exchange for "minority, non-controlling" equity, taking the government's total stock portfolio to 30 companies — the same "~30 deals" estimate this thread logged on 07-26 is now a confirmed, named count.** The new tranche: GlobalFoundries plus five smaller/earlier-stage firms (Kepler, Multibeam, Extropic, Thintronics, Obsidia Semiconductors, Aeluma), drawing on up to $874M from the 2022 CHIPS Act. Cumulative government position: ~$26.7B — unchanged from the 07-26 figure, meaning this tranche is additive rather than a revision to the earlier estimate. Intel remains the flagship (9.9% at announce, ~$42B on paper).
+  ([Yahoo Finance/AP](https://finance.yahoo.com/markets/article/trump-administration-adds-6-chipmakers-to-the-governments-stock-portfolio-which-now-spans-30-companies-140535555.html)) ⟨daily 2026-08-07⟩
+
 ## 2026-07-26 — The portfolio nobody can size
 
 - **The Intel conversion wasn't a one-off — it's one of ~30 equity/

@@ -13,6 +13,24 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-08-07 — Grok 4.6 misses its week; a new image model ships; an analyst case for the compute side
+
+- **Grok 4.6 did not ship this week**, its unofficial target (a single
+  Musk X reply, 07-24: "in two weeks"); no outlet reports the model
+  accessible or benchmarked. `upcoming.yaml`'s `grok-4-6-ship` (due
+  08-07, week-precision) flips to passed-silent. ⟨daily 2026-08-07⟩
+- **xAI shipped Grok Imagine Image 2.0**, an image-generation update xAI
+  says ranks second in Arena benchmarks behind OpenAI's GPT-Image-2 —
+  incremental product news, not a Grok 5/4.7 milestone.
+  ⟨daily 2026-08-07⟩
+- 💡 **Not verified as a signed deal**: SemiAnalysis published an analyst
+  projection that SpaceX could reach ~10GW of AI compute by end-2027
+  (modeled ~$300B ARR) with Microsoft as its largest offtaker, including a
+  reported ~3GW/~$150B deal "in talks." This is analyst modeling plus an
+  unconfirmed in-talks report, not a signed contract — flagged for the
+  thread, not stated as fact. Cross-refs `spacex-colossus`.
+  ([SemiAnalysis](https://newsletter.semianalysis.com/p/spacex-10gw-in-2027-why-its-real)) ⟨daily 2026-08-07⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

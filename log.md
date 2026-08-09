@@ -2355,3 +2355,70 @@ thread pages now. /week due Sat. Awaiting Ben's word: the /wrap
 deploy-check edit · the 14-domain gap_fill rubric pass. Watch kestrel
 for Stage 2 movement (coverage field) — when it lands, the site-side
 outlet list + credibility badges are ready to wire.
+
+## 2026-08-09 — /daily catches up a full missed day (08-08 never ran), three digest-days in one pass
+
+`/start` found the pipeline had gone quiet: no `/daily` since 08-07
+evening, 08-08 never opened at all, `/week` overdue since Sat 08-08. This
+run finalized 08-07, reconstructed 08-08 from zero, and opened 08-09 —
+across all four lenses, dispatched as four parallel sonnet agents (one
+per lens, each covering all three days independently), then synthesized
+here (front summaries, `last_seen` bumps, `actor-doing.yaml` refresh, map
+deltas).
+
+**Collection.** `collect.py`'s default `--since` is 24h-ago-from-now, not
+from-last-real-run — caught before it silently dropped the 08-07→08-08
+window; killed and restarted with an explicit `--since
+2026-08-07T15:08:00Z` (43h). 18/18 collectors ran clean (19 min);
+`lda` (congress.gov) came back network-blocked on all 111 terms — a live
+collector-health gap worth a kestrel brief, not a quiet day.
+
+**The finalize pass, unusually clean.** Zero real coverage-critic misses
+across the 3 benchmarked lenses on both 08-07 and 08-08 — the original
+same-day drafts and finalize sweeps had already caught what the
+newsletters led with. Two ledger entries flipped `passed-silent`, both
+verified against a primary source rather than an absence of hits:
+`grok-4-6-ship` (xAI's own API docs list no such model; a cluster of
+SEO/content-mill sites confidently claiming a launch traces to a
+misreading of Musk's own "around August 7" projection — live templated
+misinformation) and `cxmt-congress-letters` (a real adjacent letter
+exists, 07-30 Schumer/Banks to Apple — not to the administration, not
+asking for a probe). `ca-sb903-appropriations-hearing` tightened from an
+08-18 estimate to a confirmed 08-13 date.
+
+**What actually moved.** OpenAI paused development on Astra after
+internal tests suggested it may near "Critical" cyber capability under
+its own Preparedness Framework — no model has ever triggered this tier
+before; the biggest single story of the whole window, `sev=major`. Trump
+revived his effort to remove Fed Governor Lisa Cook — a fight this map
+had never tracked despite two weeks of FOMC coverage, now offered as a
+thread candidate. Berkshire Hathaway's Q2 earnings (Abel's first
+net-buying quarter in 14, $10B into Alphabet) landed the same week
+Alphabet itself moved to raise $25B more debt for AI capex. A New Mexico
+judge ordered Meta to pay $567M into a child mental-health fund.
+World-news's mechanical signal missed a real Yemen civil-war escalation
+(worst 3-day stretch in 4 years, UN warning of a return to full-scale
+war) because the RSS collector hadn't ingested it by the original 08-07
+build's cutoff — caught on cross-reference, folded into
+`iran-conflict-widening` rather than split into a new thread.
+
+**Map: 96 threads unchanged** (everything routed onto existing threads —
+no new thread opened this run); 23 threads' `last_seen` bumped; 5
+`actor-doing.yaml` refreshes (openai, anthropic, spacex, alibaba-qwen,
+google). Flash rail: assessed and declined every one of the 3 days —
+closest calls (Aramco refinery strikes, the Hormuz tanker attack) read as
+continuations of the standing 5-month war, not new events; rail stays
+empty. Rendered + republished (998 KB, over the 600 KB soft cap —
+`render_read.py` still only warns about the degradation rule, doesn't
+implement one, same gap named back on 08-02 and still unfixed). Site
+briefings refreshed for front + 3 lenses (4/4 applied clean, no
+LINK_FLOOR rejections); `/publish --push` ran and the Cloudflare deploy
+was live-verified by content check, not just a queued build_uuid — the
+exact discipline the 08-07 late-evening push≠deploy incident established.
+
+**Open for Ben:** promote or drop the "Fed independence fight" thread
+candidate; four flagged watchlist gaps (Lisa Cook, Berkshire Hathaway —
+has a thread but no entity, Lancium, Frontier Security). `/week` is now
+2 days overdue (due Sat 08-08) and should run next — wave memos still
+want radar Q3/Q4 synthesis, and the 🔴-stale thread count grew across
+the 2-day gap.

@@ -12,6 +12,17 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-07 — SK Hynix weighs selling down its China packaging plant
+
+- **SK Hynix is exploring a stake sale in its $3B Chongqing chip-packaging
+  plant** as export-control tightening around China-facing memory
+  operations continues; potential buyers include Chinese investment funds
+  and semiconductor firms, with SK Hynix possibly retaining a minority
+  stake. The plant handles NAND back-end packaging — separate from the
+  HBM lines that supply Nvidia — and the company says discussions are
+  early and nothing is decided. Cross-refs `china-stack-independence`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — The 2027 DRAM market closes with no room for a fourth supplier, and Apple's China hedge fails
 
 - **Apple gave up trying to qualify CXMT as a fourth DRAM supplier** —

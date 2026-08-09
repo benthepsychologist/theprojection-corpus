@@ -29,6 +29,15 @@ correction here hits everything in radar Q1/Q2.
 - **This is commentary and a next-moves story, not a new incident** — the
   collapse itself is the 07-30 entry below; logged here for continuity on
   an already-major thread. ⟨daily 2026-08-07⟩
+- **Nvidia will invest up to $3B in Lancium, the Blackstone-backed power
+  developer behind Stargate's Abilene, Texas campus** — $2B initial for a
+  ~20% stake, up to $1B more on grid-hookup milestones, valuing Lancium
+  (land + power interconnects) at roughly $10B; Lancium is weighing a 2027
+  IPO. Extends Nvidia's pattern of taking stakes in the infrastructure
+  layer under its own biggest customers — this time reaching past the
+  data-center layer into the power market itself. Cross-refs
+  `ai-power-buildout`, `nvidia-order-book`.
+  ([The Information](https://www.theinformation.com/articles/nvidia-invest-3-billion-blackstone-backed-power-firm-behind-stargate), [Reuters, via Investing.com](https://www.investing.com/news/stock-market-news/nvidia-to-invest-up-to-3-billion-in-lancium-the-information-reports-4847578)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-04 — The loop's headline number jumps to $750B; Oracle's CDS stays at record
 

@@ -18,6 +18,20 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-08 — Kyiv agrees, under US pressure, to spare non-Russian Black Sea oil tankers
+
+- **Ukraine has privately agreed not to target certain non-Russian oil
+  tankers and Black Sea infrastructure used to export Kazakh crude**,
+  a US official told Bloomberg — specifically CPC (Caspian Pipeline
+  Consortium) vessels and terminal infrastructure near Novorossiysk,
+  Russia, provided they aren't Ukraine-sanctioned, don't carry Russian
+  cargo, and aren't Russian-owned. Follows US-Ukraine talks after last
+  month's tanker strikes halted CPC loadings; Kyiv has set up contact
+  points for shipping companies to arrange safe passage. Targeting
+  policy is this thread's beat; the CPC/oil-flow market read (August
+  exports down roughly a third) belongs to a global-capital sibling.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-08/us-says-ukraine-to-avoid-targeting-tankers-black-sea-oil-site)) ⟨daily 2026-08-08⟩
+
 ## 2026-08-06 — An explosive-laden drone found near a Ukrainian cargo plane on German soil
 
 - **A drone carrying explosives was found at Leipzig/Halle Airport,

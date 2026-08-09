@@ -10,6 +10,18 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-07 — Nvidia buys into the power layer directly
+
+- **Nvidia will invest up to $3B in Lancium, the Blackstone-backed power
+  developer behind Stargate's Abilene, Texas campus** — $2B initial for a
+  ~20% stake, up to $1B more on grid-hookup milestones, valuing Lancium
+  (land + power interconnects) at roughly $10B; Lancium is weighing a
+  2027 IPO. First time Nvidia has taken a direct stake in a power
+  developer rather than a data-center operator or a lab — extends the
+  "compute landlord" pattern one layer further down. Cross-refs
+  `ai-circular-financing-risk`, `nvidia-order-book`.
+  ([The Information](https://www.theinformation.com/articles/nvidia-invest-3-billion-blackstone-backed-power-firm-behind-stargate)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — PJM's mirror to the Texas freeze: bring your own power, or the states cut you off
 
 - **PJM (the 13-state mid-Atlantic grid operator — separate from Texas's

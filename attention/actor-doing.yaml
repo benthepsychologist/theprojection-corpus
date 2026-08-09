@@ -19,8 +19,14 @@ actors:
 
   # --- Integrated powers ---
   google:
-    asof: 2026-08-06
+    asof: 2026-08-08
     doing: >
+      New 08-08: Berkshire Hathaway ended a 14-quarter net-selling streak
+      to deploy $10B into Alphabet — an explicit AI-infrastructure bet —
+      the same week Alphabet itself went to raise up to $25B more in debt
+      for AI capex. Two independent capital sources (Buffett's equity,
+      Alphabet's own balance sheet) pulling the same direction on the same
+      stock, same week.
       Pouring capital into the buildout — raised 2026 capex guidance to
       $195–205B and flagged "significantly more" for 2027 (the market
       punished it, GOOGL −6% despite a Cloud beat). On models it's
@@ -110,8 +116,13 @@ actors:
 
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-06
+    asof: 2026-08-07
     doing: >
+      New 08-07: loosened (while keeping gated) Fable 5's biosecurity
+      classifiers the same day Stanford/Arc Institute published proof
+      that generative AI can design functional, never-before-seen
+      viruses — landing alongside OpenAI's Astra pause as the day AI
+      safety stopped being a subplot for the lens.
       Named Mariano-Florentino "Tino" Cuéllar Chief Global Affairs
       Officer 08-04 — a governance/policy hire landing the same day the
       White House told the labs (Anthropic among them) it has no plans
@@ -169,8 +180,15 @@ actors:
       shredding scanned books to train Claude.
 
   openai:
-    asof: 2026-08-07
+    asof: 2026-08-09
     doing: >
+      New 08-07 (the big one): paused development on its next model,
+      Astra, after internal testing suggested it may be approaching
+      "Critical" cyber capability under OpenAI's own Preparedness
+      Framework — no model has ever triggered this tier before, meaning
+      autonomous discovery/exploitation of zero-day vulnerabilities with
+      no human direction. Made a small, undisclosed acquisition the next
+      day (NextSlide, a presentation-AI startup, folded into ChatGPT).
       New 08-07 (event late 08-06): announced a partnership with the
       American Psychological Association bringing psychologists into its
       teen AI-safety work — an incumbent lab moving into the regulatory
@@ -340,8 +358,11 @@ actors:
       health lens.
 
   spacex:
-    asof: 2026-08-06
+    asof: 2026-08-07
     doing: >
+      New 08-07: moved to formally close its $60B Cursor acquisition,
+      layering onto the same-week insider-unlock story — a capital
+      deployment decision landing right as the lockup opens.
       First post-IPO earnings landed 08-04: beat cleanly (revenue $7.8B,
       +92% YoY, vs ~$6.75-6.9B consensus; EPS -$0.09, far narrower than
       every tracked compiler's spread) and sold off anyway — shares ran
@@ -419,8 +440,13 @@ actors:
       story.
 
   alibaba-qwen:
-    asof: 2026-08-03
+    asof: 2026-08-07
     doing: >
+      New 08-07: plans a revenue share on large commercial deployers of
+      Qwen3.8-Max (weights stay free, big enterprise users owe a
+      negotiated cut) — mirroring Moonshot's Kimi K3 terms and the first
+      time a major Chinese lab has taxed deployment of an "open" model
+      rather than monetizing only via API. Weights due ~08-10.
       Shipped Qwen3.8-Max on 08-03 (2.4T total / 95B active MoE,
       1M-token-class context, open weights promised "next week") and
       benchmarked it head-to-head against GPT-5.6 Sol — TerminalBench 2.1

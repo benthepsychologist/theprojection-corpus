@@ -1,18 +1,22 @@
 ---
 lens: world-news
 date: 2026-08-07
-status: building
+status: final
 window_start: 2026-08-07T05:00:00-04:00
-as_of: 2026-08-07T11:05:00-04:00
+as_of: 2026-08-09T09:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-07
 
-*Curated from the rebuilt mechanical signal (`tools/build_world_news.py`
-run this morning: 141 items, 72 candidates / 69 confirmed against
-threads) plus targeted primary verification (Google News RSS, wire
-coverage) and this morning's expectation-check agents.*
+*Finalized 2026-08-09, backfilling a 2-day gap in the daily run. Curated
+from the rebuilt mechanical signal (`tools/build_world_news.py`, two
+snapshots: a 2026-08-07 morning run — 197 items, 105 candidates / 92
+confirmed against threads — and a wider 08-07→08-09 catch-up run used
+here to recover two items the morning snapshot's RSS collector hadn't
+yet ingested) plus targeted primary verification (Google News RSS, wire
+coverage) and cross-referencing against buffered article timestamps to
+confirm same-day dating.*
 
 ## Today's throughline
 
@@ -29,7 +33,14 @@ Belt and Road toward the US. Meanwhile the Israel–Lebanon track this map
 had never covered turned hot enough to demand a thread: deadly exchanges
 on both sides of the border amid a collapsing seventh round of
 US-facilitated talks — promoted directly under the standing rule that
-all active military conflicts that aren't hyper-local get coverage.
+all active military conflicts that aren't hyper-local get coverage. Two
+more threads moved today, caught only on this finalize pass because
+their coverage landed after the morning build's cutoff: Yemen's own
+civil war (Houthis vs. the Saudi-backed government, not just the Red Sea
+shipping campaign) had its worst day in four years, with the UN now
+warning of a full return to war; and Spain gave Italy a Sunday deadline
+to lift its Ceuta-triggered Schengen checks, which Rome refused within
+hours.
 
 ## Items
 
@@ -76,6 +87,34 @@ all active military conflicts that aren't hyper-local get coverage.
   ([Reuters](https://www.reuters.com/), [BBC](https://www.bbc.com/news), [Al Jazeera](https://www.aljazeera.com/))
   <!-- k: t=iran-conflict-widening axis=world-news -->
 
+- **Yemen's own civil war — Houthis vs. the Saudi-backed government —
+  had its worst day in four years, and the UN is now warning of a full
+  return to war.** Houthi missile/drone strikes killed at least 58
+  government troops in Marib and Hadramawt Thursday (08-06); a Friday
+  follow-on strike shelled Marib city itself, killing at least 2
+  civilians and wounding 14 (plus 8 more troops), with a third wave
+  Saturday (08-08) killing at least 10 more — logged in full on
+  tomorrow's finalize. UN Special Envoy Hans Grundberg said the
+  combination of these strikes and renewed Red Sea shipping attacks
+  leaves Yemen at its greatest risk of returning to large-scale civil
+  war since the 2022 truce. Distinct from, but clearly entangled with,
+  the Hormuz/Red Sea shipping campaign above.
+  ([France 24](https://www.france24.com/en/live-news/20260807-houthi-missile-attacks-kill-58-saudi-backed-yemeni-govt-forces-source), [Türkiye Today](https://www.turkiyetoday.com/region/houthi-strikes-kill-civilians-in-yemens-marib-as-forces-thwart-red-sea-tanker-attack-3225617))
+  <!-- k: t=iran-conflict-widening axis=world-news sev=major -->
+
+- **Spain gave Italy a Sunday (08-09) deadline to lift the Schengen
+  border checks it imposed over the Ceuta crossing, threatening
+  "proportionate measures"; Rome refused within the day.** Meloni's
+  government said it "does not accept ultimatums or impositions from
+  abroad on matters of national security," and confirmed it would keep
+  the checks through at least 08-15, citing a social-media call for a
+  fresh mass Ceuta crossing that date. First real escalation since the
+  08-04 ministerial's non-binding solidarity statement — filed to
+  `europe-migration-schengen`; Spain's own reciprocal checks against
+  Italy followed the next day (logged on the 08-08 digest).
+  ([eunews.it](https://www.eunews.it/en/2026/08/07/spain-issues-an-ultimatum-to-italy-over-the-migration-crisis-in-ceuta-reconsider-the-suspension-of-schengen-but-rome-is-not-having-it/), [elconstitucional.es](https://www.elconstitucional.es/en/international/meloni-defies-spain-and-will-maintain-schengen-controls-until-august-15-we-do-not-accept-ultimatums_6918_102.html))
+  <!-- k: t=europe-migration-schengen axis=world-news -->
+
 - **Russia–Ukraine stayed the board's loudest standing signal** (204
   distinct domains on the mechanical sweep — ambient volume on the
   existing thread, no single new dated development verified inside
@@ -100,10 +139,15 @@ all active military conflicts that aren't hyper-local get coverage.
 - **+ `threads/israel-lebanon-escalation`** (lens: world-news, w2,
   genre: border-war) — promoted directly under the standing rule (Ben,
   2026-07-31: "All active military conflicts that are not hyper-local
-  get coverage"), on a 75-outlet mechanical signal + primary
+  get coverage"), on an 88-outlet mechanical signal + primary
   verification. Cross-references `iran-conflict-widening` (distinct
   theatre, same regional war context).
 - `~ threads/russia-ukraine-war` — ambient bump (mechanical signal).
+- `~ threads/iran-conflict-widening` — Yemen civil-war escalation
+  (Marib/Hadramawt strikes, UN warning) added, found only on this
+  finalize pass.
+- `~ threads/europe-migration-schengen` — Spain's Sunday-deadline
+  ultimatum to Italy, and Rome's same-day refusal, added.
 
 ## 🧵 Thread candidates
 
@@ -113,6 +157,12 @@ all active military conflicts that aren't hyper-local get coverage.
   cluster (11 outlets) is global-capital material and a reminder the map
   still has no Fed thread — logged for awareness, not a world-news
   candidate.)
+- 💡 Not offered as a *new* thread but flagged for judgment: Yemen's
+  civil-war reignition (Houthis vs. the Saudi-backed government) is
+  folded into `iran-conflict-widening` above rather than split out —
+  it's the same widening-war combatant set, not a distinct theatre the
+  way `israel-lebanon-escalation` was. Worth a second look if the UN's
+  "full-scale war" warning firms up further.
 
 ---
 Colombia's handover happened on schedule and completed a visible
@@ -121,4 +171,9 @@ exit signaled. The Israel–Lebanon front earned its own thread the hard
 way: deaths on both sides while the talks that were supposed to prevent
 exactly this stall over withdrawal. Russia–Ukraine stayed the loudest
 standing signal, and one 13-outlet tanker-attack cluster was checked and
-held as a probable re-crawl of old news rather than logged as new.
+held as a probable re-crawl of old news rather than logged as new. This
+finalize pass also recovered two stories the morning build's RSS
+collector hadn't yet ingested: Yemen's own civil war turning into the
+deadliest stretch in four years, with the UN warning of a full return to
+war, and Spain's Schengen ultimatum to Italy landing and being refused
+the same day.

@@ -1,0 +1,105 @@
+# 2026-08-08-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-04 — its readings
+# predate both the jobs print and this digest's Berkshire/Alphabet
+# pairing; flagged in the digest's Map changes for the next weekly
+# refresh). Day reconstructed 2026-08-09 (see the digest's own
+# reconstructed-late note).
+
+berkshire-hathaway-s-q2-2026-earnings-marked-the-c:
+  mechanism: >
+    Berkshire ending a 14-quarter net-selling streak to put $10B into an
+    explicitly AI-infrastructure-tied Alphabet stake is a large, historically
+    tech-skeptical allocator putting real capital behind the AI capex
+    cycle continuing to pay off — at a moment (mid-2026) when the "AI
+    trade" has been whipsawing between euphoria and bear-turn narratives
+    this map tracks on `ai-trade-bear-turn`. Because Berkshire's own
+    brand is capital discipline, not momentum-chasing, the market tends
+    to read an Abel-era buy as closer to a fundamentals verdict than a
+    typical growth-fund position add.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Other large, discipline-branded allocators treat the Berkshire
+        move as validation and rotate back toward AI-capex-linked names,
+        reinforcing the "Big Tech stocks storm back" framing Bloomberg
+        led with on 08-07.
+      why: >
+        Berkshire's reputation for buying only when a business case is
+        genuinely durable gives this position outsized signaling value
+        relative to its dollar size — the same dynamic that made
+        Berkshire's earlier tech entry a watched signal industry-wide.
+      precedent: >
+        Berkshire's own Apple stake (built starting 2016, after decades
+        of Buffett publicly avoiding technology) became its largest
+        holding by 2018 and was widely read as legitimizing institutional
+        ownership of "growth tech" well beyond Berkshire itself — the
+        direct precedent for a concentrated Berkshire tech bet reshaping
+        how other allocators read the sector.
+    - direction: >
+        The juxtaposition with Alphabet's own debt-funded capex (below)
+        instead sharpens the bear case — even a vote of confidence from
+        Berkshire doesn't change that the underlying company is levering
+        up to fund the buildout, the exact structural risk
+        `ai-circular-financing-risk` has been tracking across Oracle,
+        CoreWeave and now Alphabet.
+      why: >
+        An equity buyer's confidence and a balance sheet's actual leverage
+        are separate facts — Berkshire owning the equity doesn't retire
+        the debt Alphabet is issuing in the same week to fund the same
+        buildout, and a bear case built on financing structure isn't
+        answered by who holds the stock.
+  context_note: >
+    capital-context.yaml carries no dedicated AI-financing-structure
+    reading (its five readings are rate_regime, cross_border_credit,
+    external_position, fund_flows, conflict_risk_premium) — this
+    interpretation stands alone rather than being cross-checked against
+    a standing macro reading.
+
+alphabet-is-raising-up-to-25b-in-fresh-debt-for-a:
+  mechanism: >
+    Alphabet's shift toward debt (nearly $70B raised or in progress in
+    under a year, on top of ~$85B of equity issuance) rather than relying
+    on its own enormous cash generation to fund AI capex is a financing-
+    structure signal about how sustainable the AI buildout actually is —
+    the same question this map has been asking about Oracle and
+    CoreWeave, now showing up at one of the best-capitalized companies in
+    the cohort.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Alphabet's far larger cash-generation base (unlike Oracle's,
+        which lacks comparable organic cash flow) means the debt load
+        stays serviceable and this reads as prudent balance-sheet
+        management, not distress — a different risk profile from
+        Oracle's version of the same behavior.
+      why: >
+        Debt-funded capex is only a red flag when it outruns a company's
+        ability to service it; Alphabet's core search/cloud cash flow is
+        an order of magnitude larger than Oracle's, so the same tactic
+        (debt over cash) doesn't carry the same solvency implication.
+      precedent: >
+        Oracle's own trajectory is the cautionary comparison already on
+        record: heavy AI-capex debt reliance (~$130B debt by May 2026,
+        capex up 162% to ~$56B) triggered a 2026-07-09 credit downgrade
+        to BBB- and roughly halved its market cap from its September
+        2025 peak — the real, already-realized version of what happens
+        when debt-funded AI capex outruns a company's organic cash flow.
+    - direction: >
+        Debt-funded AI capex becomes the market's next worry line
+        regardless of the borrower's credit quality, once enough
+        AI-adjacent names are doing it simultaneously — a sector-wide
+        financing-structure re-rating rather than a company-specific one.
+      why: >
+        Markets often re-price a *pattern* across a cohort once it's
+        visible in enough names at once, independent of whether any
+        single balance sheet can individually absorb it — the same
+        dynamic `chip-hyperscaler-rotation` already tracks as an
+        allocation-level call, not a stock-specific one.
+  context_note: >
+    Read alongside the Berkshire interpretation above — same underlying
+    event pair (Berkshire buys Alphabet equity; Alphabet borrows for AI
+    capex), two different mechanisms depending on which side of the
+    balance sheet you're reading.

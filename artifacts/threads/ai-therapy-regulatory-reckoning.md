@@ -13,6 +13,21 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-07 — Consumer Reports finds AI chatbots giving unreliable health answers
+
+- **Consumer Reports tested general-purpose AI chatbots against its own
+  experts' health and safety guidance and found real, confidently-stated
+  errors** — e.g. Google Gemini advised placing a carbon-monoxide alarm
+  inside an attached garage, which can damage the sensor. CR's advice:
+  use AI chatbots as a starting point only, never for diagnosis, and
+  keep sensitive health details out of them entirely (no HIPAA-equivalent
+  protection applies). Direct, independent evidence for this thread's
+  core "the capability/approval gap is being closed by litigation, not
+  evidence" thesis — and a real primary source, not a secondary
+  aggregation. Caught by the 08-07 finalize pass on 2026-08-09 (the
+  digest for that day ran two days late after an operational gap).
+  ([Consumer Reports](https://www.consumerreports.org/electronics/artificial-intelligence/can-you-trust-ai-for-health-questions-a8049609288/)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-07 — OpenAI moves into the vacuum: a partnership with the American Psychological Association
 
 - **OpenAI announced a partnership with the American Psychological
@@ -20,14 +35,17 @@ evidence-gap thesis playing out live.
   incumbent lab moving into the regulatory vacuum this thread has been
   watching for, landing the same week SB 903 and a $567M Meta child-
   mental-health ruling both put youth AI/mental-health harm back in the
-  news. Coverage so far is secondary-source only across three
-  independent outlets; no OpenAI or APA primary statement text was
-  located via the feeds checked, so the exact shape of the partnership
-  (advisory board vs. research collaboration vs. something more formal)
-  isn't yet confirmed. Announced evening of 2026-08-06 ET, ahead of the
-  2026-08-07 digest window; flagged for follow-up once a primary source
-  surfaces. Cross-refs `openai-health`.
-  ([Digital Watch Observatory](https://dig.watch/), [Crypto Briefing](https://cryptobriefing.com/)) ⟨daily 2026-08-07⟩
+  news. **Primary source now located** (found during the 08-09 finalize
+  pass, resolving the follow-up flagged below): OpenAI and the APA will
+  produce parent/caregiver resources on healthy AI use and signs
+  adult intervention may be needed, plus separate materials for
+  clinicians and school psychologists on recognizing unhealthy AI-use
+  patterns — a resource-and-research collaboration, not (yet) a formal
+  standards body or advisory-board structure. Announced evening of
+  2026-08-06 ET, ahead of the 2026-08-07 digest window. Cross-refs
+  `openai-health`.
+  ([OpenAI](https://openai.com/index/openai-and-apa-partner-to-advance-responsible-ai/),
+  [Digital Watch Observatory](https://dig.watch/updates/openai-apa-ai-youth-mental-health-partnership)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-05 — A new peer-reviewed study puts numbers on the evidence-gap thesis
 

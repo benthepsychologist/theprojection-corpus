@@ -15,6 +15,34 @@ via behind-the-meter gas at gigawatt scale, a hard equipment ceiling
 (turbines sold out to 2030, transformers ~3yr), and the ratepayer +
 environmental-justice fights that improvisation generates.
 
+## 2026-08-08 — DOJ backs xAI's bid to gut citizen-suit enforcement entirely
+
+- **The Justice Department intervened in the NAACP's Clean Air Act
+  citizen suit against xAI's unpermitted Southaven, Mississippi
+  turbines, arguing the Constitution lets the President and federal
+  agencies decide whether to enforce federal law at all** — not a
+  narrow defense of xAI's turbines specifically, but a challenge to the
+  citizen-suit provision itself, a cornerstone of environmental
+  enforcement for 50+ years. The DOJ separately argues shutting down
+  power to the turbines would harm national security because Colossus
+  "supports Department of War operations." Escalates this thread's
+  already-logged DOJ national-security shield into a precedent fight
+  that could outlive this specific case.
+  ([Fortune](https://fortune.com/2026/08/08/lazarus-26-years-citizen-suits-musk-xai/), [Earthjustice](https://earthjustice.org/press/2026/trump-administration-attempts-massive-power-grab-in-defense-of-musks-xai)) ⟨daily 2026-08-08⟩
+
+## 2026-08-07 — Trump publicly calls the Texas pause "a mistake"
+
+- **In a Punchbowl News interview, Trump called Texas's new data-center
+  construction pause "a mistake... it could be bigger than oil,"**
+  responding to Gov. Abbott's 08-03 moratorium on new grid connections
+  pending an ERCOT/PUCT power-and-water audit. First time the President
+  has weighed in directly on a specific state's data-center permitting
+  fight — pulls what had been a state-level grid/water dispute into
+  national politics. Same interview, Trump separately said Congress
+  wants to regulate AI "out of business" (logged on
+  `frontier-model-gov-review-precedent`).
+  ([Texas Tribune](https://www.texastribune.org/2026/08/07/donald-trump-texas-data-centers-greg-abbott/)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — PJM's answer to the same-week Texas freeze: bring your own power or get cut off
 
 - **PJM (the 13-state PA-to-Illinois grid operator) launched an "Interim

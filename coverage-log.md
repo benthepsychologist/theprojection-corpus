@@ -2309,3 +2309,91 @@ protocol. /week should consume the memos for radar Q3/Q4 synthesis.
   (ben-steer: "leave alphabet capital-structure in google-capex"). The
   bond-sale/spinout-fund material lives on that thread's timeline with
   its "Alphabet bond" term; the candidate is closed, not deferred.
+
+### /daily — 2026-08-09, catching up a 2-day gap (no run since 08-07 evening)
+
+`/daily` didn't run at all on 08-08 — the biggest gap since the
+de-scheduling. Three digest-days produced in one pass: 08-07 finalized
+(had a partial same-day draft), 08-08 reconstructed from zero (no file
+had ever existed), 08-09 opened. All four lenses dispatched in parallel
+(one sonnet agent per lens, each covering all three days), then front
+summaries + map deltas synthesized here. `collect.py` re-run with an
+explicit `--since 2026-08-07T15:08:00Z` (43h) after the default
+24h-lookback run was caught and killed before it could silently drop the
+08-07→08-08 window — worth remembering: **the default `--since` is 24h
+ago from NOW, not from the last real collection**, so any catch-up run
+spanning more than a day needs an explicit `--since`. 18/18 collectors
+ran (19 min); `lda` (congress.gov) came back network-blocked on all 111
+terms this run — a live collector-health gap, not a quiet day.
+
+**Critic: zero real misses across the 3 lenses this run** — a genuinely
+clean pass, unusual for a 2-day catch-up. AI: both TLDR/Rundown misses
+(Astra pause, virus-design paper) were already caught by the original
+same-day draft and the finalize pass; the newsletter did not publish on
+the Saturday (08-08), verified against its live archive rather than
+assumed. Global-capital: Money Stuff/Axios/FT Unhedged stayed unfetchable
+(paywalled, same standing limitation as every prior run); Bloomberg
+Technology's framing gap on the jobs-rally story (earnings-acceleration
+vs. our hike-relief read) noted as a framing difference, not a missed
+fact. Mental-health: all four daily benchmarks + the two new academic
+weekly-tier benchmarks (JMIR Mental Health, npj Digital Medicine) came
+back clean on both 08-07 and 08-08; BHB/STAT had genuinely nothing
+dated to 08-08 (STAT publishes Tue/Thu only).
+
+**Two expectations ledger entries flipped `passed-silent`, both checked
+against a primary source, not just an absence of hits:** `grok-4-6-ship`
+(xAI's own API docs list no grok-4.6 entry despite a cluster of
+SEO/content-mill sites confidently asserting a launch — traced to a
+misread of Musk's own "around August 7" projection post, a live case of
+templated misinformation outrunning real reporting) and
+`cxmt-congress-letters` (a real, adjacent 07-30 Schumer/Banks letter
+exists, but it went to Apple asking Apple not to buy CXMT/YMTC chips —
+not to the administration, not asking for a probe; doesn't satisfy the
+claim). One entry tightened: `ca-sb903-appropriations-hearing`'s due
+date moved from an 08-18 estimate to a confirmed 08-13 (Route
+Fifty/KPBS/CalMatters against the Assembly Appropriations calendar).
+
+**Real findings folded in, not critic-caught but found on the finalize
+sweep itself:** OpenAI paused development on Astra after internal tests
+suggested it may near "Critical" cyber capability under its own
+Preparedness Framework (first time any model has triggered this tier,
+`sev=major`) — the biggest single story of the whole window. Trump
+revived his effort to remove Fed Governor Lisa Cook (a genuinely
+untracked fight — Cook has appeared nowhere in `attention/` despite two
+weeks of FOMC vote-count coverage). Berkshire Hathaway's Q2 earnings
+(Greg Abel's first net-buying quarter in 14, $10B into Alphabet) landed
+the same week Alphabet itself moved to raise $25B more debt for AI
+capex. A New Mexico judge ordered Meta to pay $567M into a child
+mental-health fund. World-news's mechanical signal missed a real Yemen
+civil-war escalation (worst 3-day stretch in 4 years, UN warning of a
+full-scale-war return) because the RSS collector hadn't ingested it by
+the original 08-07 morning build's cutoff — caught by cross-referencing
+the wider catch-up snapshot's article timestamps back against the 08-07
+window.
+
+**Thread candidates offered, none yet promoted (Ben's call):** "Fed
+independence fight" (Trump vs. sitting Fed governors — Cook's removal
+effort + Warsh's own regime-change pressure, two distinct levers on one
+institution, never tracked before). **Watchlist gaps flagged, not
+applied:** Lisa Cook (person), Berkshire Hathaway (has a thread —
+`berkshire-ai-capital-stance` — but no watchlist entity, a pre-existing
+gap), Lancium (the Blackstone-backed power developer Nvidia took a $3B
+stake in), Frontier Security (the AI-safety evaluator central to the
+Kimi K3 sandbox-escape dispute).
+
+**Map:** 96 threads unchanged (no new threads opened this run — every
+finding routed onto an existing thread); 23 threads' `last_seen` bumped
+across all three days (real content on ~19, ambient-confirmed on the
+rest); `actor-doing.yaml` refreshed for 5 movers (openai, anthropic,
+spacex, alibaba-qwen, google). Flash rail: assessed and declined every
+day — nothing cleared the front-page-anywhere bar (closest calls: the
+Aramco refinery strikes and the Hormuz tanker attack, both judged
+continuations of the standing 5-month war, not new events). Rendered +
+republished (page ran 998 KB, over the 600 KB soft cap — `render_read.py`
+still only warns about the degradation rule, it doesn't implement one;
+same unfixed gap flagged back on 2026-08-02). Site briefings refreshed
+for front + 3 lenses via the standard scan→pack→apply→export pipeline
+(4/4 applied, no LINK_FLOOR rejections), `/publish --push` ran and the
+Cloudflare deploy was live-verified by content check (not just a queued
+build_uuid) — the discipline the 08-07 late-evening push≠deploy incident
+established.

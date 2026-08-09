@@ -13,6 +13,17 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-08-07 — Nvidia takes a $3B stake in the power layer under Stargate
+
+- **Nvidia will invest up to $3B in Lancium, the Blackstone-backed power
+  developer behind Stargate's Abilene, Texas campus** — $2B initial for a
+  ~20% stake, up to $1B more on grid milestones, valuing Lancium at
+  roughly $10B. Not a chip order, but the same customer-financing logic
+  one layer down: Nvidia now holds equity in the power infrastructure its
+  own GPU customers depend on. Cross-refs `ai-circular-financing-risk`,
+  `ai-power-buildout`.
+  ([The Information](https://www.theinformation.com/articles/nvidia-invest-3-billion-blackstone-backed-power-firm-behind-stargate)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — A new demand category: SpaceX commits exclusively to Nvidia for AI compute in orbit
 
 - **SpaceX unveiled Starmind AI1, an exclusive deal to run Nvidia Rubin

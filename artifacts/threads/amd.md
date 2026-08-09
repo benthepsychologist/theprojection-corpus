@@ -15,6 +15,17 @@ tonight's Q2 2026 earnings (due after this crawl closed) is the first
 real test. Also watching: China MI325X licensing status, and whether the
 Oracle 50,000-GPU Q3-2026 rollout starts on schedule.
 
+## 2026-08-06→07 — AMD buys a model-specific-silicon startup
+
+- **AMD acquired Taalas, a Toronto startup that hardwires specific AI
+  models directly into silicon** — its HC1 chip encodes Llama 3.1 8B
+  across 53B transistors, quoted at ~17,000 tokens/sec/user at ~200W;
+  Taalas says it can go from design to finished silicon in about two
+  months. AMD plans to fold the approach into its Instinct accelerator
+  roadmap as a differentiated-inference play; terms undisclosed. Announced
+  08-06, still leading AI-newsletter coverage into 08-07.
+  ([AMD Newsroom](https://newsroom.amd.com/news/amd-acquires-taalas-ai-inference/), [CNBC](https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-05 — Musk declares SpaceX/xAI "exclusive to Nvidia"; Wall Street re-rates AMD upward anyway
 
 - **On SpaceX's own earnings call, Elon Musk said SpaceX and xAI are now

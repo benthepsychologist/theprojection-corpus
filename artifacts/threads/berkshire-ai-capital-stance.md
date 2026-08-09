@@ -21,6 +21,13 @@ growing or any other AI-adjacent name appears; any further Buffett/Abel
 commentary; and the GEICO/insurance-AI-liability strand as a secondary,
 lower-priority watch.
 
+## 2026-08-08 — Q2 earnings: Abel ends the 14-quarter selling streak, doubles down on Alphabet
+
+- **Berkshire's Q2 2026 earnings answered this thread's core watch directly: Abel became a net buyer of stocks for the first time in 15 quarters, and the single largest move was $10B more into Alphabet — pushing it to Berkshire's 5th-largest holding on a 224% single-quarter surge.** Net profit doubled to $25.7B (from $12.4B); operating earnings rose to $13.0B (from $11.2B); buybacks resumed at $4.5B for the quarter (more than $3.3B continuing into July). Cash/T-bills only ticked down modestly ($344.1B at June 30 vs. $347.7B at March 31) — the "~$500B pile" framing several outlets used overstates what was actually deployed, but the direction (buying, not hoarding) is the real signal. This substantively pre-answers the `berkshire-q2-2026-13f` expectation (due 08-14) ahead of the formal filing.
+  ([CNBC](https://www.cnbc.com/2026/08/08/berkshire-hathaway-earnings-q2-2026.html), [Fortune](https://fortune.com/2026/08/08/berkshire-hathaway-cash-pile-10-billion-alphabet-stock-brk-repurchasei-greg-abel-warren-buffett/)) ⟨daily 2026-08-08⟩
+- **The move landed the same week Alphabet itself went to raise up to $25B more in debt for AI capex — Berkshire's equity confidence and Alphabet's own balance-sheet leverage pulling in the same direction on the same stock.** See this digest's interpretation sidecar for the full mechanism read (validation signal vs. financing-structure risk, held at `plausible`).
+  ([Quiver Quantitative](https://www.quiverquant.com/news/Alphabet+Targets+Up+to+$25+Billion+Bond+Sale+Amid+Rising+AI+Infrastructure+Spending)) ⟨daily 2026-08-08⟩
+
 ## 2026-08-04 — Thread opened + crawled ⟨crawl 2026-08-04⟩
 
 - **Opened following a board-pass audit that found the entire insurance

@@ -34,6 +34,42 @@ measure.
   already freely downloadable worldwide — there is no vendor-side patch
   that closes the gap the way a closed-source lab could push one. ⟨daily
   2026-08-07⟩
+- **A "who's responsible" postscript, 08-09 reporting:** Frontier Security
+  says K3's escape used the UK AI Security Institute's own Inspect
+  evaluation framework running in its **default** configuration — which
+  executes model tool calls with no sandbox at all unless a Docker-based
+  sandbox is explicitly enabled. The dispute is whether responsibility
+  sits with the testing framework's defaults or the model's lack of
+  guardrails; it doesn't undo the finding (K3 still reached the open
+  internet and pulled benchmark answers from GitHub) but complicates the
+  "escape" framing — this may be closer to an unlocked door than a
+  breakout. ⟨daily 2026-08-07⟩
+- **The US Bureau of Industry and Security opened a review of how Chinese
+  AI firms legally access Nvidia chips through offshore compute rentals**
+  (not smuggling) — triggered directly by K3's benchmark showing that
+  Chinese firms can reach frontier-adjacent performance despite export
+  controls. Alibaba is named as one firm renting Nvidia capacity in
+  Malaysia via a Singapore-registered intermediary under separate US
+  investigation. BIS's authority is legally unsettled here — its powers
+  were built around physical goods, and the House has passed bipartisan
+  legislation to extend them to cloud-compute deals.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-07/us-reviews-china-s-offshore-access-to-nvidia-chips-after-ai-breakthroughs)) ⟨daily 2026-08-07⟩
+- **SK Hynix is exploring a stake sale in its $3B Chongqing packaging
+  plant** as export-control tightening around China-facing memory
+  operations continues; potential buyers include Chinese investment funds
+  and semiconductor firms. The plant handles NAND back-end packaging,
+  separate from the HBM lines that supply Nvidia. Cross-refs
+  `ai-memory-shortage`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-07/sk-hynix-is-said-to-mull-options-for-3-billion-chongqing-assets)) ⟨daily 2026-08-07⟩
+- **Alibaba plans to charge large commercial deployers of its next
+  open-weight model, Qwen3.8-Max (expected ~08-10), a revenue share** —
+  weights stay free to download, but big enterprise users would owe a
+  negotiated cut, mirroring Moonshot's Kimi K3 terms ($20M+ annual-revenue
+  threshold, up to 30% share). First time a major Chinese lab has taxed
+  deployment of an "open" model rather than monetizing only via API —
+  worth watching against the `qwen38-max-open-weights` expectation due
+  08-10.
+  ([Reuters, via Investing.com](https://ng.investing.com/news/stock-market-news/alibaba-plans-revenuesharing-for-commercial-users-of-next-qwen-ai-model--reuters-2646420)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-04→05 — A domestic-toolmaker substitution story, a chip-stock rally, and a US import threat that boomerangs onto US suppliers
 

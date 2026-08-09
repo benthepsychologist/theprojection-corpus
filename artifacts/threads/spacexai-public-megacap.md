@@ -14,6 +14,11 @@ financing, the Starlink→AI cash flow, Musk's supermajority-vote control, and
 whether the tiny float + index-forced buying trap passive holders in a
 money-losing AI mega-cap. The Aug-6 lock-up is the next event.
 
+## 2026-08-07 — The Cursor deal (announced June) moves toward an actual close
+
+- **SpaceX formalized its $60B all-stock acquisition of AI coding startup Cursor in a merger agreement now on file, with Cursor telling staff internally that a close could land within days — first firm movement since the deal was announced back in June.** Cursor (crossed $1B annualized revenue in November) folds directly into SpaceXAI's structure rather than operating independently; some tools may end up under the Grok brand. The acquisition currency is SpaceX's own post-IPO stock — still trading below the $135 IPO price even after this week's lockup-driven rally (below) — meaning a second AI-lab-scale bet is being paid for in paper from a company whose own valuation is itself the thing this thread is questioning.
+  ([TechCrunch](https://techcrunch.com/2026/06/16/spacex-to-acquire-cursor-for-60b-in-stock-days-after-blockbuster-ipo/), [Seeking Alpha](https://seekingalpha.com/news/4629527-cursor-says-spacex-deal-could-be-done-by-end-of-next-week---report)) ⟨daily 2026-08-07⟩
+
 ## 2026-08-06 — The lockup opens on schedule, but the largest tranche stays locked because the stock is underwater
 
 - **The insider lockup this thread has tracked since 07-23 opened as scheduled on 2026-08-06: up to 911.5M shares (~20% of restricted holdings, reported at ~$101-116B depending on the price used) became eligible for sale**, two trading days after the 08-04 earnings report as designed — SpaceX built a staggered nine-tranche unlock (rather than a single 180-day cliff) specifically to reduce the risk of a sudden selling flood. A second tranche of 319M shares is scheduled 08-12, with further tranches through year-end.

@@ -24,7 +24,71 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
-## 2026-08-07 — Saudi Arabia, Turkey, and Pakistan sign the "Mecca Joint Defence Agreement"
+## 2026-08-09 — Iran's Revolutionary Guards publish a formal Hormuz price list; Houthis hit an Aramco refinery and a Red Sea port
+
+- **Iran's Revolutionary Guards went public with a formal list of
+  conditions for reopening the Strait of Hormuz, while denying direct
+  talks with the US.** Security chief Mohammad Bagher Zolghadr's
+  conditions: an end to "war and aggression" against Iran and its
+  allies in Lebanon, Palestine, Yemen and Iraq; lifting the US
+  counter-blockade of Iranian ports; sanctions relief; release of
+  frozen assets; and compensation for war damages. Foreign Minister
+  Araghchi said the separate Iran-Oman transit/management channel is
+  "approaching the final stages" but called direct US contact only an
+  exchange of messages via intermediaries — the first time Iran has
+  itemized its price this specifically since the 08-05/06 "agreed in
+  principle" reporting.
+  ([France 24](https://www.france24.com/en/live-news/20260809-iran-guards-say-won-t-reopen-hormuz-without-us-meeting-all-tehran-s-conditions), [CNN](https://www.cnn.com/2026/08/09/world/live-news/iran-war-trump)) ⟨daily 2026-08-09⟩
+- **Houthi drones struck an Aramco refinery in Jazan and missiles/drones
+  hit Mocha port — the Houthis say both were retaliation for Saudi
+  drone incursions into Houthi-held Hajjah and Saada.** Saudi Arabia's
+  Energy Ministry confirmed a fire at Jizan, extinguished, no injuries.
+  Not the first time this refinery has been hit (Jizan/Yanbu struck
+  07-25) — a continuation of the existing maritime/infrastructure
+  campaign, not a new escalation threshold; assessed below the flash
+  bar (no casualties, no confirmed production halt).
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/9/saudi-arabia-says-fire-extinguished-at-aramco-facility-in-jizan), [NPR](https://www.npr.org/2026/08/09/nx-s1-5926387/yemens-houthis-claim-attack-on-aramco-oil-facility-in-saudi-arabia-and-other-middle-east-news)) ⟨daily 2026-08-09⟩
+
+## 2026-08-08 — UAE says an Iranian missile hit an ADNOC tanker in the Strait of Hormuz; Yemen's civil-war reignition enters a third deadly day
+
+- **The UAE accused Iran's Revolutionary Guard of striking an ADNOC
+  (Abu Dhabi National Oil Company) tanker with a missile while it
+  transited the Strait of Hormuz early Saturday — no injuries this
+  time, but ADNOC says 15 of its vessels have now been hit by missiles
+  or drones since the war began, three of them this week, killing one
+  crew member and wounding 20.** UAE's Foreign Ministry called it an
+  act of piracy by the IRGC and demanded Iran halt the attacks and
+  reopen the strait unconditionally; Qatar joined the condemnation.
+  Reads as the same maritime-pressure campaign this thread has tracked
+  since the 07-23 tanker strikes, now reaching UAE-flagged shipping for
+  the first time.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/8/uae-says-iran-targeted-adnoc-tanker-in-hormuz-no-casualties-2), [CNBC](https://www.cnbc.com/2026/08/08/uae-ship-targeted-missile-us-iran-tensions-stay-high.html)) ⟨daily 2026-08-08⟩
+- **Yemen's own civil war — Houthis vs. the Saudi-backed government —
+  had its deadliest stretch in four years, and the UN is now warning of
+  a full return to war.** Houthi missile and drone strikes killed at
+  least 58 Saudi-backed government troops in Marib and Hadramawt
+  Thursday (08-06), the war's worst single day in years; a Friday
+  (08-07) follow-on strike shelled Marib city itself, killing at least
+  2 civilians and wounding 14 (plus 8 more troops killed, 12 wounded);
+  a third wave Saturday (08-08) killed at least 10 more. UN Special
+  Envoy Hans Grundberg said the combination of Marib/Hadramawt strikes
+  and renewed Red Sea/Gulf of Aden shipping attacks has left Yemen at
+  its greatest risk of returning to large-scale civil war since the
+  UN-brokered 2022 truce. Distinct from, but clearly entangled with,
+  this thread's Red Sea/Hormuz shipping campaign — the Houthis
+  themselves frame the Marib strikes as retaliation for a Saudi-backed
+  military buildup, and analysts read Yemen as being pulled into the
+  wider Iran war rather than fighting a separate war.
+  ([France 24](https://www.france24.com/en/live-news/20260807-houthi-missile-attacks-kill-58-saudi-backed-yemeni-govt-forces-source), [Times of Israel](https://www.timesofisrael.com/houthi-attacks-kill-10-in-yemen-as-un-warns-of-return-to-full-scale-civil-war/), [Al Jazeera](https://www.aljazeera.com/news/2026/8/7/houthi-attacks-on-govt-forces-hint-that-a-major-battle-in-yemen-is-brewing)) ⟨daily 2026-08-08⟩
+- 💡 **Flagged for the flash-rail judgment, not made here:** a truce that
+  had mostly held since 2022 is now the subject of an explicit UN
+  warning about full-scale resumption, on the back of the deadliest
+  three-day stretch in four years (58+10+2+ dead) and Saudi Arabia
+  binding itself into a fresh mutual-defense pact the same week. No
+  single event here clears the flash bar on its own; the trend line is
+  what's new. ⟨daily 2026-08-08⟩
+
+## 2026-08-07 — Saudi Arabia, Turkey, and Pakistan sign the "Mecca Joint Defence Agreement"; Marib shelling and a Spain–Italy Schengen ultimatum both land the same day
 
 - **A trilateral mutual-defense pact, signed in Mecca and framed
   explicitly as a response to the region's turmoil** — two major
@@ -35,6 +99,14 @@ concrete.
   `israel-lebanon-escalation` (opened the same day). Assessed against
   the flash bar and judged below it (diplomatic signing, not kinetic).
   ([Reuters](https://www.reuters.com/), [BBC](https://www.bbc.com/news)) ⟨daily 2026-08-07⟩
+- **Houthi strikes on Marib city killed at least 2 civilians and
+  wounded 14, plus 8 government troops killed nearby** — a day after
+  Thursday's (08-06) 58-troop death toll, the worst single day of
+  Yemen's civil war in four years. UN Special Envoy Hans Grundberg
+  warned the Marib/Hadramawt strikes plus renewed Red Sea shipping
+  attacks leave Yemen at its greatest risk of full-scale war since the
+  2022 truce. Full continuation logged 08-08 above.
+  ([France 24](https://www.france24.com/en/middle-east/20260807-houthi-attacks-kill-at-least-10-in-yemen-as-iran-backed-rebels-target-marib), [Türkiye Today](https://www.turkiyetoday.com/region/houthi-strikes-kill-civilians-in-yemens-marib-as-forces-thwart-red-sea-tanker-attack-3225617)) ⟨daily 2026-08-07⟩
 
 ## 2026-08-06 — "Agreed in principle" on the shipping-lane coordinates; still unsigned, and the real sticking point now has a name
 
