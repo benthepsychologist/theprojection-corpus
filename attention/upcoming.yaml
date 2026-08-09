@@ -238,25 +238,6 @@ expectations:
     logged: 2026-07-22
     logged_by: crawl   # due corrected by finalize sweep 2026-07-23
     status: pending
-  - id: kaiser-nuhw-mediation
-    claim: "Kaiser-NUHW mediation begins (does the AI-replacement contract language survive?)"
-    due: 2026-08-31
-    due_precision: month
-    thread: kaiser-ai-clinician-backlash
-    entities: [kaiser-permanente]
-    source: https://home.nuhw.org/2026/07/16/tuesday-sf-supervisors-to-hold-kaiser-mental-health-hearing-as-hmo-seeks-blank-check-on-a-i-implementation-and-replacing-therapists/
-    confidence: reported
-    what_confirms: "mediation sessions reported begun; watch for outcome on the 'Terrible Three' proposals"
-    logged: 2026-07-22
-    logged_by: crawl
-    # 2026-08-09 (/week): FLAGGED as a likely duplicate of
-    # kaiser-nuhw-mediation-0811 (logged 08-05, same claim, confirmed firm
-    # date 08-11 vs. this entry's imprecise ~08-31 estimate) — same shape
-    # as the 07-28 Minnesota nudify-ban duplicate. NOT auto-resolved: that
-    # precedent needed Ben's direct ruling ("drop the duplicate, keep the
-    # newer id"), reversing an even earlier standing "do NOT merge" call —
-    # dedup here is his decision to make, not the session's to assume.
-    status: pending
 
   - id: ca-sb903-assembly
     claim: "California SB 903 clears Assembly Appropriations (fiscal-committee deadline)"
@@ -1142,6 +1123,13 @@ expectations:
     # 2026-08-05 ⟨daily⟩: this thread had carried "no firm date" as an open
     # gap since 07-23; a 07-27 NUHW post (missed by prior passes) names
     # 08-11 explicitly. Logged now, not backdated.
+    # 2026-08-09 (/week, ben-steer "merge"): MERGED with the older
+    # kaiser-nuhw-mediation entry (logged 2026-07-22, ~08-31 month-precision
+    # estimate) — same event, this entry's confirmed day-precision date is
+    # simply better. Same shape as the 07-28 Minnesota nudify-ban
+    # duplicate; same resolution (keep the fuller/newer id, drop the other,
+    # nothing lost — the older entry's source and what_confirms language
+    # are both superseded by this one's).
 
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"

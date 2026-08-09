@@ -2106,6 +2106,41 @@ threads:
       2026-08-04: Opened from a whole-pocket insurance triage crawl.
       Finding: artifacts/findings/insurance-pocket-2026-08-04.md
 
+  - slug: fed-independence-fight
+    genre: legitimacy-dispute   # ben-steer 2026-08-09 — Trump's stated rationale for removing Cook is an accusation her seat was illegitimately obtained (alleged mortgage-application fraud), not a border-war or hedge
+    title: "Fed Independence Fight"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [lisa-cook, kevin-warsh]
+    weight: 2
+    terms:
+      - "Lisa Cook Fed"
+      - "Trump Fed governor removal"
+      - "Federal Reserve independence"
+    opened: 2026-08-09
+    last_seen: 2026-08-07   # the underlying event date (Cook removal effort revived); thread opened 08-09 on /week's own decay-review — flag any future last_seen touch here explicitly rather than trusting the two dates to auto-reconcile, per this same /week's sync-bug findings elsewhere
+    watch: >
+      Two distinct, simultaneous levers on the Fed's independence, offered
+      as a thread candidate 08-07 and promoted 08-09 (Ben: "yes to all").
+      Composition lever: Trump revived his effort to remove Governor Lisa
+      Cook on a hard three-week deadline (08-26), rebuilt to survive the
+      Supreme Court's due-process ruling that blocked his first attempt —
+      this map tracked two straight weeks of detailed FOMC vote-count
+      coverage without ever naming her. Messaging lever: Chair Kevin
+      Warsh's own forward-guidance-removal regime change is a separate,
+      non-composition pressure on the same institution. Track: whether
+      Cook's removal effort survives a second legal challenge before
+      08-26, and whether the Fed-composition fight becomes the dominant
+      global-capital story into the 09-16 FOMC decision — as of the
+      08-09 /week read, a bigger open question than anything purely
+      financial on this map.
+    notes: |
+      2026-08-09: Promoted from an unpromoted 08-07 thread-candidate
+      offer, on Ben's direct "yes to all." No /crawl backfill run yet —
+      opened directly off the global-capital weekly digest's own
+      synthesis (artifacts/digests/weekly/2026-08-03-global-capital.md).
+
   - slug: allianz-ai-claims-automation
     genre: partnership   # crawl 2026-08-04 — the Anthropic deal is a literal alliance; the Evident AI Index ranking + Project Nemo are supporting context, not the genre driver
     title: "Allianz AI Claims"

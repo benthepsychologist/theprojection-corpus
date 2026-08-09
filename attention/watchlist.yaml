@@ -72,6 +72,21 @@ lenses:
                      # no sweep term; entities:[qualcomm] now resolves
       - "CoreWeave"
       - "AMD"
+      - "Lancium"    # ben-steer 2026-08-09 — Blackstone-backed power developer
+                     # behind Stargate's Abilene, TX site; Nvidia took a $3B
+                     # (~20%) stake 2026-08-07. Flagged by the /daily
+                     # frontier-ai agent as a recurring unresolvable reference
+                     # across ai-power-buildout, nvidia-order-book, and
+                     # ai-circular-financing-risk with no entity slug.
+      - term: "Frontier Security"
+        entity: frontier-security
+        name: "Frontier Security"
+        # ben-steer 2026-08-09 — the AI-safety evaluator central to the
+        # Kimi K3 sandbox-escape dispute (whether the "escape" was a real
+        # breakout or an artifact of its own eval framework's default
+        # no-sandbox config, per its public disagreement with the UK AI
+        # Security Institute). Same recurring-unresolvable-reference gap
+        # as Lancium above.
       # Data/AI platform capital
       - "Databricks"  # auto-added 2026-07-22 (critic): $188B round led a benchmark 07-20, we missed
       # Vertically-integrated AI majors (board.yaml — ben-steer 2026-07-24)
@@ -290,6 +305,13 @@ lenses:
       - term: "Saudi Public Investment Fund"
         entity: pif
         name: "PIF"
+      - term: "Berkshire Hathaway"
+        entity: berkshire-hathaway
+        name: "Berkshire Hathaway"
+        # ben-steer 2026-08-09 — already has a board.yaml entry and a live
+        # thread (berkshire-ai-capital-stance, opened 2026-08-04) but was
+        # never actually on the watchlist itself — a pre-existing gap
+        # surfaced by this week's /daily and /week passes.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29
@@ -312,6 +334,15 @@ lenses:
       - term: "Jerome Powell"
         entity: jerome-powell
         name: "Jerome Powell"
+      - term: "Lisa Cook"
+        entity: lisa-cook
+        name: "Lisa Cook"
+        # ben-steer 2026-08-09 — Fed Governor; Trump revived his effort to
+        # remove her 2026-08-07 (a hard 3-week deadline, rebuilt to survive
+        # the Supreme Court's due-process ruling that blocked his first
+        # attempt). This map had detailed FOMC vote-count coverage for two
+        # straight weeks without ever naming her — the same shape of gap
+        # the Warsh add above closed on 2026-08-02.
     themes:
       - "healthcare private equity"
       - "digital health M&A"
