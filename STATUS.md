@@ -1,16 +1,103 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-07**. Top note covers the biggest
-single day in the repo's history — the EBP strand build-out + research
-wave, two `/daily` passes (the jobs shock, Israel–Lebanon opened, the
-Mecca pact), 08-06 finalized with six critic catches, the site's
-methodology page + visible feed links, the new `/wrap` skill, and the
-afternoon's story-page arc (feed clicks re-pointed to thread pages +
-the source-multiplicity audit and engine brief) and the evening's
-credibility-first ruling (outlet-credibility table built; Lin
-permission email sent, reply pending), and the late-evening /news/
-overhaul (push≠deploy root-caused, card feed retired — the brief IS
-the page); the 08-06 note and everything older sit under it.*
+*Hand-maintained. **As of 2026-08-09**. Top note covers a full day's
+arc: a 2-day pipeline gap caught and closed (`/daily` finalized 08-07,
+reconstructed 08-08 from a total blank, opened 08-09), a site UX crawl
+and fix pass for a non-technical first-time visitor, `/week`'s full
+synthesis + decay review, and six direct rulings from Ben closing out
+the week's open decisions. The 08-07 note and everything older sit
+under it.*
+
+> **2026-08-09 — the pipeline gap closed, the site got read for a
+> stranger's eyes and fixed, `/week` ran its full synthesis, and Ben
+> closed out six open decisions in one exchange.** Four pieces of work,
+> one day.
+>
+> **The gap: `/daily` hadn't run since 08-07 evening, and 08-08 had
+> zero digest files — a full day nobody opened.** Caught by `/start`'s
+> own push-safety + digest-state check. Closed in one pass: 08-07
+> finalized (zero real coverage-critic misses — a clean pass), 08-08
+> reconstructed from a total blank, 08-09 opened. Found along the way:
+> `collect.py`'s default lookback is 24h from *now*, not from the last
+> real run — caught before it silently dropped the gap window, same
+> class of bug as the earlier collector-timeout misdiagnoses this repo
+> has now corrected twice. Two expectations flipped `passed-silent`
+> after primary-source checks (`grok-4-6-ship` — a live case of
+> templated misinformation outrunning real reporting; `cxmt-congress-
+> letters` — a related but non-matching letter existed). The day's real
+> news: OpenAI paused Astra after internal tests suggested it may near
+> "Critical" cyber capability (`sev=major`); Trump revived the fight to
+> remove Fed Governor Lisa Cook; Berkshire's $10B Alphabet stake landed
+> the same week Alphabet borrowed $25B more; a NM judge ordered Meta to
+> pay $567M into a child mental-health fund; world-news's mechanical
+> signal missed a real Yemen civil-war escalation, caught on
+> cross-reference.
+>
+> **A site UX crawl, framed around Ben's own non-technical father as
+> the reader, found the single biggest barrier wasn't content — it was
+> that links didn't look like links.** `.briefing a`/`.readout li a`/
+> `.world-news-h a` were all styled identical to plain text (no color,
+> no underline until hover) — on a touch device, invisible. Fixed,
+> along with a homepage orientation sentence, a rewritten (and far less
+> jargon-heavy) sitewide meta description, a status-word legend on
+> lens/entity pages, and — the deep fix — internal provenance markers
+> (`⟨daily YYYY-MM-DD⟩`) and dead `` `slug` `` code-refs stripped from
+> every reader-facing surface, six rounds of whack-a-mole across
+> separate data paths before landing on one recursive sweep over the
+> whole payload rather than patching fields by name
+> (`publish/adapter.py`, +149 lines). **A real process gap surfaced
+> doing this work, not yet fixed**: the CSS/template fixes were made
+> directly in `theprojection-site`, then a subsequent `/publish --push`
+> run swept them into an anonymous `publish: <thread-list>` commit
+> (`7e12333`) instead of their own hand-authored commit — already
+> pushed and live, not rewritten, but now effectively unfindable in
+> git history by message. `/wrap`'s own step 4 exists specifically to
+> catch this and didn't get invoked in time; worth naming so it doesn't
+> repeat.
+>
+> **`/week`, closing week 08-03–08-09 — the heaviest week on record for
+> two lenses at once.** Mental-health: the EBP (evidence-based
+> practice) build-out, seven new threads, a ten-agent research wave
+> that found the field's one direct "does therapy get more effective
+> over time" test resolves to flat, not falling or rising. World-news:
+> Israel-Lebanon opened as a real war, the Saudi-Turkey-Pakistan Mecca
+> defense pact, Yemen's own civil war's worst 3-day stretch in 4 years.
+> Ledger: 11 hits, 4 passed-silent, 0 overdue, 14 old entries pruned. A
+> recurring `last_seen`-vs-timeline sync bug confirmed in 7 of 12
+> flagged instances (5 more were agent overclaims caught by direct
+> verification before applying anything — the standing discipline of
+> checking a crawl's judgment, not just its retrieval, earned its keep
+> again). Board pass: the dormant-actor cross-reference deferred from
+> the prior `/week` finally ran, clean, no new gap; one real
+> board.yaml staleness bug fixed (Berkshire's text still claimed
+> "net-selling 15 straight quarters" after Q2 earnings reversed that
+> direction). `capital-context.yaml` and `actor-doing.yaml` (26 of 44
+> actors) both refreshed, every actor-doing update spot-verified
+> against real thread data before being applied.
+>
+> **Ben's six rulings closed the week's open decisions in one
+> exchange:** the two structural source-access gaps (Axios Pro
+> Rata/FT Unhedged, Behavioral Health Business) and the PE-clinical-DD/
+> AI-liability-underwriter watchlist research (real names, sourced —
+> `Armilla`, `AIUC`, `Comvest Partners`, `Nautic Partners`, and more)
+> **noted, not fixed** — into `ROADMAP.md`'s Queue. The
+> `kaiser-nuhw-mediation` ledger duplicate **merged**, same resolution
+> as the 07-28 Minnesota precedent. **No drops** on the 7 decay-review
+> threads Ben doesn't have a settled retirement principle for yet — a
+> real thread-decay-principle review is now queued rather than guessed
+> at. **"Yes to all"** on the standing candidates: `fed-independence-
+> fight` promoted to a real thread (live), and all four pending
+> watchlist entities added (Lisa Cook, Berkshire Hathaway, Lancium,
+> Frontier Security). And **the Queue itself**: `ROADMAP.md`'s existing
+> "Open items" section (alive since 2026-07-20) formalized into a named
+> Queue, read every session via `/start` — Ben's own framing: "i feel
+> like i have to respond immediately or they are lost." this is the
+> mechanism that fixes that.
+>
+> **🧵 Map: 97 threads** (was 96 at 08-07) · **mental-health: 26** ·
+> **ledger: 55 expectations, 39 pending** (14 old resolved pruned) ·
+> **actor-doing: 44 entries, 26 refreshed this week** · **board: 92
+> orgs / 53 with axes_num, unchanged count, 1 staleness bug fixed**.
 
 > **2026-08-07 — evidence-based practice became a first-class strand of
 > the MH feed, a ten-agent research wave rebuilt its question set, and

@@ -2474,3 +2474,35 @@ coverage-log.md's table) — none applied without his word.
 **Pick up:** present the /week findings + open decisions to Ben. Both
 repos (this one, theprojection-site) pushed clean; kestrel untouched,
 read-only, clean.
+
+## 2026-08-09 (checkpoint) — /wrap: Ben closed all six /week decisions
+
+Ben answered every open item from the /week report in one exchange:
+noted (not fixed) the two source-access gaps + the PE/AI-liability
+watchlist research into `ROADMAP.md`'s Queue; merged the
+`kaiser-nuhw-mediation` duplicate (Minnesota precedent); no drops on
+the 7 decay-review threads, a real decay-principle review queued
+instead; "yes to all" on `fed-independence-fight` (now a live thread)
+and the four pending watchlist entities (Lisa Cook, Berkshire
+Hathaway, Lancium, Frontier Security); and agreed the Queue belongs in
+`ROADMAP.md` — that section is now the standing answer to "things
+surface mid-session and get lost." Re-rendered, republished, live-
+verified. Committed and pushed (`1f8e617`).
+
+**Sanity gate, run before this wrap:** all `attention/*.yaml` valid,
+digest frontmatter coherent (08-09 still correctly `building`/
+`pending`, not yet 5h past close), nothing stranded in `provenance/`.
+One real process gap found, not fixed here, named in STATUS.md's new
+top note: the site UX CSS/template fixes made earlier today rode a
+subsequent anonymous `publish:` commit (`7e12333`) in
+`theprojection-site` instead of getting their own hand-authored commit
+message — already pushed and live, history not rewritten, but
+effectively unfindable by commit message now. `/wrap` step 4 exists to
+catch exactly this; it didn't fire in time today. Worth watching for
+next time a site edit and a `/publish --push` land close together.
+
+**Pick up:** nothing blocking. `/week` is genuinely done for this
+cycle. Standing queue items live in `ROADMAP.md` (the two access-gap
+decisions, the decay-principle review, the PE/AI-liability watchlist
+promotions) — no urgency, they'll resurface on their own via `/start`.
+All three repos verified clean at wrap time.
