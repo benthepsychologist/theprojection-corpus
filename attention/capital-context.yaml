@@ -17,8 +17,25 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-08-04
+asof: 2026-08-09
 
+# Refresh run 2026-08-09 (/week step 4b, closing week 08-03–08-09): all 5
+# collectors re-run against an explicit --since 2026-08-04 window (the
+# default 24h lookback would have missed anything published between the
+# last refresh and 5 days ago — same lesson learned earlier this session
+# with /daily's collect.py). Result: genuinely NOTHING NEW anywhere.
+# treasury_tic/bis_stats/imf_data: zero items, real successful API calls
+# (confirmed via provenance — not an access failure), consistent with
+# their real-world lag (Treasury ~2mo, BIS ~6wk, IMF quarterly) simply not
+# having released a new figure in 5 days. epfr_flows: re-caught the SAME
+# "technology story shines through the smoke ($10B)" report already on
+# file as of 08-04 — no new Global Navigator issue this week.
+# fund_flow_reports: STILL EMPTY — Morningstar (AWS WAF bot-challenge) and
+# ETF.com (Cloudflare 403) both bot-wall this environment, same as every
+# prior check since 2026-07-30. All values/as_of below left exactly as
+# they were on 08-04 — this file's own discipline: don't rewrite a reading
+# for the sake of it when the underlying data hasn't moved.
+#
 # Refresh run 2026-08-04 (/week step 4b): treasury_tic re-checked, no new
 # month past 2026-05 (real ~2mo lag, not a fault — value/as_of left as-is
 # where genuinely unchanged, per this file's own discipline). bis_stats and
@@ -39,30 +56,41 @@ readings:
   rate_regime:
     value: >
       Fed on a hawkish hold at 3.50%-3.75% (9-3 vote, three dissents FOR a
-      hike — up from unanimous in June), two days after a stagflation-
-      adjacent print (GDP +1.5% annualized, PCE 3.7%/3.3% headline/core).
-      30-year Treasury yield near 5.24%, highest since 2007. The
-      committee's room to cut is narrowing even as growth softens. Chaired
-      by Kevin Warsh (confirmed 54-45 on 2026-05-13, the narrowest margin
-      in the office's history — this map only named him on 2026-08-02,
-      after weeks of tracking the FOMC vote without knowing whose committee
-      it was; Jerome Powell remains a governor, not a departure). Next
-      decision 2026-09-16.
-    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision"
+      hike — up from unanimous in June). The July jobs report (published
+      08-07) landed as the sharpest challenge yet to that hawkish read:
+      payrolls FELL 23,000 against a consensus +83-85k gain, with a
+      combined 103,000-job downward revision to May/June — the strongest
+      data point yet to push back on the hike-dissent bloc before the
+      09-16 decision, though markets read it as hike-relief (a rally, not
+      a recession signal) with no Fed voice yet on the record. Chaired by
+      Kevin Warsh (confirmed 54-45, narrowest margin in the office's
+      history; Jerome Powell remains a governor, not a departure). NEW
+      this week and genuinely a different axis: Trump revived his effort
+      to remove Fed Governor Lisa Cook (hard three-week deadline, 08-26),
+      rebuilt to survive the Supreme Court's due-process ruling that
+      blocked his first attempt — pressure on the committee's COMPOSITION,
+      distinct from Warsh's own low-guidance messaging regime. 30-year
+      Treasury yield near 5.24% as of the last check, highest since 2007.
+      Next decision 2026-09-16.
+    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the Lisa Cook removal fight (radar Q7)"
     sources:
       - figure: "3.50%-3.75%, 9-3 vote"
         label: "Federal Reserve press release, 2026-07-29"
         url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
         as_of: "2026-07-29"
-      - figure: "GDP +1.5% annualized; PCE 3.7%/3.3%"
-        label: "BEA, Q2 2026 GDP advance estimate + June PCE"
-        url: "https://www.bea.gov/data/gdp/gross-domestic-product"
-        as_of: "2026-07-30"
+      - figure: "Payrolls -23,000 vs +83-85k consensus; -103k combined revision"
+        label: "BLS, July 2026 Employment Situation"
+        url: "https://www.bls.gov/news.release/empsit.nr0.htm"
+        as_of: "2026-08-07"
       - figure: "Kevin Warsh confirmed 54-45, sworn in 2026-05-22"
         label: "federalreserve.gov, Board of Governors"
         url: "https://www.federalreserve.gov/aboutthefed/bios/board/warsh.htm"
         as_of: "2026-08-02"
-    as_of: "2026-08-04"
+      - figure: "Lisa Cook removal effort revived, 08-26 deadline"
+        label: "NPR, 2026-08-07"
+        url: "https://www.npr.org/2026/08/07/nx-s1-5925167/trump-lisa-cook-federal-reserve"
+        as_of: "2026-08-07"
+    as_of: "2026-08-09"
 
   cross_border_credit:
     value: >
@@ -133,28 +161,46 @@ readings:
 
   conflict_risk_premium:
     value: >
-      Iran's war is five months old, not the one week this lens carried
-      until 2026-08-02 — a US-Israeli opening strike killed Supreme Leader
-      Ali Khamenei on 2026-02-28, and the Strait of Hormuz has been
-      effectively shut since (transits ~10/day vs. a 60-140/day norm), not
-      newly disrupted. Pricing through two channels: the commodity (Brent
-      gyrating $87-92/bbl as of 07-30, still elevated vs. pre-conflict) and
-      the underwriting layer directly — war-risk insurance at 3-10% of
-      hull value against ~0.25% pre-war, plus US Treasury sanctioning 10
-      firms/8 tankers over a Hormuz insurance-extortion scheme (07-29). A
-      "strikes cancelled, deal claimed" de-escalation (08-01, Iran denies
-      any deal exists) did not reach this reading's re-pricing before it
-      lapsed off the flash rail on its own 24h clock (08-02) — the
-      underlying five-month conflict is the standing state, not the
-      week's headline oscillation.
-    basis: "red-sea-oil-shock + iran-conflict-widening threads, cross-referenced against the 2026-08-02 war-dating correction (see coverage-log.md) + Treasury sanctions action"
+      Iran's war is now nearly six months old (opened 2026-02-28), and this
+      week widened rather than resolved on every front it touches. The
+      Iran-Oman reopening deal — reported "final drafting" earlier — hit a
+      real setback: Iran's Revolutionary Guard went public with six
+      maximalist conditions (war-damage compensation, an end to the US
+      counter-blockade, sanctions relief, frozen assets released),
+      explicitly separating Hormuz reopening from the Oman channel
+      entirely. Houthi drones struck Saudi Aramco's Jazan refinery twice
+      this week (a repeat target, first hit ~07-25/27), and Iran's IRGC
+      hit a 16th ADNOC tanker with a missile in Hormuz (UAE-flagged, no
+      casualties) — both continuations of the standing war, not new
+      fronts. TWO GENUINELY NEW theatres opened this week: Israel-Lebanon
+      turned deadly (soldiers and civilians killed on both sides amid a
+      collapsing seventh round of talks), promoted under the standing
+      "all active conflicts get coverage" rule; and Yemen's OWN civil war
+      (Houthis vs. the Saudi-backed government, distinct from the Red Sea
+      shipping campaign) had its worst 3-day stretch in four years, with
+      the UN's Yemen envoy on record warning of a return to full-scale
+      war. Regional powers answered with structure: Saudi Arabia, Turkey,
+      and Pakistan signed a trilateral mutual-defense pact in Mecca —
+      two regional powers binding themselves to a nuclear-armed state
+      while the fronts burn. Underwriting layer (war-risk insurance
+      3-10% of hull value vs. ~0.25% pre-war) unchanged this week, no new
+      check found.
+    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, closing week 08-03-08-09)"
     sources:
+      - figure: "Six-condition Hormuz reopening demand, separated from Oman talks"
+        label: "Punch NG, 2026-08-09, citing IRGC statement"
+        url: "https://punchng.com/iran-wont-reopen-hormuz-until-us-meets-all-conditions-revolutionary-guards/"
+        as_of: "2026-08-09"
+      - figure: "Second Aramco Jazan refinery strike this week"
+        label: "NPR, 2026-08-09"
+        url: "https://www.npr.org/2026/08/09/nx-s1-5926387/yemens-houthis-claim-attack-on-aramco-oil-facility-in-saudi-arabia-and-other-middle-east-news"
+        as_of: "2026-08-09"
+      - figure: "Yemen civil war's worst 3-day stretch in 4 years"
+        label: "Times of Israel, 2026-08-09, citing UN Yemen envoy"
+        url: "https://www.timesofisrael.com/houthi-attacks-kill-10-in-yemen-as-un-warns-of-return-to-full-scale-civil-war/"
+        as_of: "2026-08-09"
       - figure: "War began 2026-02-28, not 07-23"
         label: "Iran state media (Press TV, Tasnim, Mehr) + Al Jazeera/NBC/Britannica, corroborated 2026-08-02"
         url: "https://www.aljazeera.com/where/iran/"
         as_of: "2026-08-02"
-      - figure: "10 firms, 8 tankers sanctioned"
-        label: "US Treasury, Hormuz insurance-extortion action, 2026-07-29"
-        url: "https://www.bloomberg.com/"
-        as_of: "2026-07-29"
-    as_of: "2026-08-04"
+    as_of: "2026-08-09"

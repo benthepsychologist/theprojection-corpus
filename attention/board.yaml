@@ -787,13 +787,23 @@ orgs:
     rank: kingdom
     pocket: insurance   # spin-up-board 2026-07-25
     sphere: us
-    axes_asof: 2026-07-25
+    axes_asof: 2026-08-09   # /week decay-review board pass — thrust text corrected, see below
     commanded_capital: "~$550B+ investable (cash+T-bills $381.7B + float $171B FY24); market cap ~$1.1T is a separate label"
     optionality: "free — Buffett/Abel, no mandate; the largest true dry powder on the board"
     gravity: "~$371B/yr GROSS — not thin (real-economy conglomerate, gravity ~= capital)"
     gloss: "The lone FREE deployer among insurers — largest dry powder; gravity ~= capital, not thin."
-    axes_num: { weight: 570, thrust: 26.5, gravity: 371 }  # agent-derive 2026-07-28 rollout
-    thrust: "$26.5B/yr acquisitions TTM (OxyChem/Taylor Morrison/Alphabet) — public book net-SELLING 15 straight quarters"   # agent-derive 2026-07-28
+    axes_num: { weight: 570, thrust: 26.5, gravity: 371 }  # agent-derive 2026-07-28 rollout — thrust NUMBER not re-derived this pass, only the stale prose claim below; flagged for a fresh figure next full axes rollout
+    # 2026-08-09 (/week decay-review board pass): STALE CLAIM CORRECTED, not
+    # just refreshed for its own sake — Q2 2026 earnings (reported 08-08)
+    # show Greg Abel ENDED the net-selling streak this text still asserted:
+    # $23.5B bought vs. $3.7B sold, first net-BUYING quarter in 14 (not the
+    # "15 straight quarters net-selling" this field claimed until today),
+    # including a new $10B Alphabet stake read as an explicit AI-infra bet.
+    # Direction reversed, not just aged — this was actively wrong, not
+    # merely old. `thrust` NUMBER above still the 07-28 estimate; a fresh
+    # figure incorporating the $23.5B buying quarter is a real follow-up,
+    # not done here. Posture is a separate open question — see coverage-log.
+    thrust: "$26.5B/yr acquisitions TTM (OxyChem/Taylor Morrison/Alphabet) — reversed 08-08: first net-BUYING quarter in 14 ($23.5B bought vs $3.7B sold), incl. a new $10B Alphabet stake"
   - slug: allianz
     rank: kingdom
     pocket: insurance   # spin-up-board 2026-07-25

@@ -2397,3 +2397,121 @@ for front + 3 lenses via the standard scan→pack→apply→export pipeline
 Cloudflare deploy was live-verified by content check (not just a queued
 build_uuid) — the discipline the 08-07 late-evening push≠deploy incident
 established.
+
+## /week — 2026-08-09, closing week 2026-08-03–2026-08-09
+
+Four weekly digests written (`artifacts/digests/weekly/2026-08-03-
+{frontier-ai,global-capital,mental-health,world-news}.md`), one sonnet
+agent per lens, each synthesizing the week's 7 daily digests against
+`radar.md`'s open questions rather than re-aggregating news. Heaviest
+week on record for two lenses at once: mental-health (the EBP build-out —
+7 new threads, a ten-agent research wave) and world-news (Israel-Lebanon
+opened, the Mecca defense pact, Yemen's worst 3-day stretch in 4 years,
+Spain-Italy Schengen checks going live).
+
+**Expectations scorecard:** 11 hits, 4 passed-silent, 0 still-pending
+overdue — a clean ledger, everything due this week got resolved. 14 old
+resolved entries (due before 08-03) pruned per the standing housekeeping
+rule; substance already lived in their own weeks' digests, nothing lost.
+
+**A recurring `last_seen`-vs-timeline sync bug, confirmed real in 7 of 12
+flagged instances — the rest were agents overclaiming a real pattern onto
+threads that didn't actually show it, caught by direct verification
+before applying anything.** Confirmed and fixed: `bigtech-into-health`,
+`google-health`, `microsoft-health`, `payer-ai-claim-denial` (all had a
+real 08-05 entry never synced), `genesis-mission` (real 08-04 entry),
+`anthropic-ipo-timing` (real 08-02 entry — the confidential-filing
+confirmation — never synced, true staleness 7 days not 15), and
+`fidelity-buys-ai-labs` (a different bug: `last_seen` was set to the
+underlying EVENT date in May, not the thread's actual 08-04 opening —
+not stale at all). NOT confirmed despite agent claims of fresh content:
+`mhpaea-parity-limbo`, `nuclear-for-ai`, `camellia`, `tsmc-capacity-race`,
+`qualcomm-dragonfly` — these remain genuinely stale, left as decay-review
+candidates for Ben's call. This is the second `/week` in a row to find
+this exact bug class (last week caught `ai-compute-spend`) — worth
+considering whether `last_seen` should derive from the timeline file
+automatically rather than being hand-set.
+
+**Decay review, 16 threads assessed (2 already correctly archived —
+`gpt-5.6-release` resolved, `openai-custom-silicon` retired — no action
+needed):**
+
+| slug | proposal | why |
+|---|---|---|
+| spacex-colossus | keep | live coverage, agent-verified |
+| nuclear-for-ai | keep (Ben's call — genuinely quiet) | no fresh content found; still relevant per frontier-ai agent's reasoning, but the "not stale" claim itself didn't hold |
+| microsoft-mai-openai-decoupling | keep | agent-verified |
+| meta-gas-pivot | resolve or fold into ai-power-buildout | core fact complete, open question would surface there anyway |
+| genesis-mission | keep (last_seen fixed → 08-04) | real activity confirmed |
+| camellia | keep (Ben's call — genuinely quiet) | no fresh content found this week |
+| dod-ai-consolidation | weakest — consider crawl or retire | genuinely empty 12 days, unlike siblings opened the same day |
+| tsmc-capacity-race | keep (Ben's call — genuinely quiet) | no fresh content found this week |
+| qualcomm-dragonfly | keep (Ben's call — genuinely quiet) | no fresh content found this week |
+| china-duv-lithography | keep | agent-verified |
+| fidelity-buys-ai-labs | keep (last_seen fixed → 08-04) | not stale — was a date-source bug; real gap: "Fidelity"/"FMR" isn't a swept term anywhere |
+| anthropic-ipo-timing | keep (last_seen fixed → 08-02) | genuinely quiet since the 08-02 filing confirmation, true gap only 7d |
+| asset-managers-build-ai | keep | genuinely quiet, sweep working correctly |
+| intel-rescue | keep | covered via sibling thread chips-equity-pivot (same entity tag) |
+| bigtech-into-health | keep (last_seen fixed → 08-05) | real activity confirmed |
+| mhpaea-parity-limbo | keep (Ben's call — genuinely quiet) | no fresh content found despite agent's claim |
+
+**Board pass:** dormant-actor cross-reference (deferred from the 08-04
+`/week`, per Q1's working note) finally run — 35 zero-live-thread orgs
+found, but 30 are intentionally-thin state/regulator/gov-pool stub nodes
+by the board's own "separate map" design (not real gaps), and the 5 real
+dormant corporates (State Street, Vanguard, China Life, MetLife,
+Prudential Financial) match an already-documented 08-04 "genuinely
+quiet" verdict — confirmed stable, no new gap. One real board.yaml
+staleness bug found and fixed: Berkshire Hathaway's `thrust` field still
+asserted "net-SELLING 15 straight quarters" after Q2 earnings (08-08)
+showed the direction reversed — Abel's first net-buying quarter in 14,
+$23.5B bought vs $3.7B sold, incl. a new $10B Alphabet stake. Direction
+reversed, not just aged — text corrected in `board.yaml`; the `thrust`
+NUMBER (still the 07-28 estimate) not re-derived this pass, flagged for
+a fresh figure next full axes rollout. Posture assignment (Berkshire has
+none set) is a separate open question, not resolved here.
+
+**Near-miss audit — two structural access gaps confirmed recurring, not
+incidental, across multiple critic passes this week:**
+- **Axios Pro Rata and FT Unhedged** (global-capital benchmarks):
+  unreachable in 6 of 7 this week's critic passes (08-03, 08-04, 08-07,
+  08-08, 08-09, and effectively 08-06 too) — logged honestly each time
+  but never fixed. Worth deciding: alternate access route, or drop from
+  the benchmark set.
+- **Behavioral Health Business** (mental-health benchmark): 403'd on
+  every single access attempt this week without exception, worked around
+  via Google News/RamaOnHealthcare mirror every time — and every real
+  coverage-critic miss this week traced back to BHB directly or
+  indirectly (LifeStance, Aware Recovery Care, the FDA/CMS meetings, the
+  CCBHC story). Simultaneously this lens's most miss-productive
+  benchmark and its least accessible one. `bhbusiness.com` is also one
+  of the 14 unrated `gap_fill` domains in the new outlet-credibility
+  layer — two separate workstreams converging on the same domain.
+- **frontier-ai pattern**: 3 of 4 real misses this week (Anthropic's
+  Volta deal, Meta's Muse Code, Anthropic's chip team) share one shape —
+  a lab's own infrastructure/product move outside any existing thread's
+  term list. `inhouse-silicon` had to be revived mid-week for exactly
+  this reason. Recommend a periodic term-coverage check per major lab,
+  timed to `/week`.
+- **world-news pattern**: the mechanical signal's morning-build cutoff
+  missed real overnight news THREE times this week (the 08-03 Hormuz
+  strikes, `world-news.yaml` going fully dark for 2 cycles 08-03→08-06,
+  and the Yemen civil-war escalation) — argued as structural, not a
+  one-off, given the week's escalation-heavy shape. Recommend either a
+  later default cutoff or making the overnight-extension pass standard.
+
+**Capital-context.yaml refreshed** (`/week` step 4b): all 5 macro
+collectors re-run with an explicit `--since 2026-08-04` window (the
+default 24h lookback would have missed the gap) — genuinely NOTHING NEW
+from any of the 5 sources this week (treasury_tic/bis_stats/imf_data:
+real successful calls, zero new data, consistent with their real-world
+lag; epfr_flows re-caught the same report already on file; fund_flow_
+reports: still bot-walled, same as every check since 07-30). `rate_regime`
+and `conflict_risk_premium` readings updated directly from this week's
+thread activity (the jobs report + Lisa Cook fight; the Aramco strikes +
+Yemen escalation + Israel-Lebanon opening) — not from the 5 collectors,
+which don't cover those.
+
+**Radar.md**: all 7 questions (Q1-Q7) got a new `week 08-09` working
+note, synthesized from the 4 digests' proposals (Q2 and Q6 each merge
+two lenses' contributions). None looked answered or dead this cycle.
