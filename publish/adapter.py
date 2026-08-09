@@ -77,7 +77,11 @@ ALLOWED_THREAD_FIELDS = ("slug", "title", "lens", "status", "opened", "last_seen
 
 
 def thread_blurb(t):
-    return (t.get("public_blurb") or " ".join((t.get("watch") or "").split())).strip()
+    raw = (t.get("public_blurb") or " ".join((t.get("watch") or "").split())).strip()
+    # linkify=False: rendered by the site as plain escaped text ({{ . }} in
+    # _default/single.html's .dek), not markdown — see clean_reader_facing_body's
+    # docstring for why a real link would be wrong here.
+    return clean_reader_facing_body(raw, linkify=False)
 
 
 def load_threads_yaml():
@@ -96,6 +100,134 @@ def strip_internal_header(body):
     return body[m.start():] if m else body
 
 
+_PROVENANCE_MARKER = re.compile(
+    # Started as a keyword+date allowlist (daily|crawl|seed|...); widened to
+    # match ANY ⟨...⟩ span after a full sweep of every digest turned up 23
+    # distinct real variants — free-text asides like ⟨overnight extension,
+    # 08-04 05:40 ET⟩ and ⟨sourced this morning⟩, not just the strict
+    # ⟨keyword YYYY-MM-DD⟩ form the thread-timeline template documents.
+    # Verified none of the 23 are reader-facing content — ⟨ ⟩ (U+27E8/9) is
+    # used nowhere in this corpus except as the provenance-aside delimiter.
+    r"\s*⟨[^⟩]*⟩"
+)
+_CODE_SPAN = re.compile(r"`([^`]+)`")
+_HTML_CODE_SPAN = re.compile(r"<code>([^<]+)</code>")
+_SLUG_TITLE_CACHE = None
+
+
+def _slug_title_map():
+    """Lazily built, memoized: thread slug -> title, for resolving inline
+    backtick cross-references. Reads threads.yaml once per publish run."""
+    global _SLUG_TITLE_CACHE
+    if _SLUG_TITLE_CACHE is None:
+        _SLUG_TITLE_CACHE = {t["slug"]: t["title"] for t in load_threads_yaml()}
+    return _SLUG_TITLE_CACHE
+
+
+def clean_reader_facing_body(text, linkify=True, html_safe=False):
+    """Two things leak from internal curation practice straight into public
+    reader-facing prose, found on a 2026-08-09 site UX crawl: the
+    `⟨daily YYYY-MM-DD⟩`-style provenance markers appended to nearly every
+    timeline bullet (production metadata, zero reader value, never
+    explained anywhere on the site — the five keywords here are every one
+    actually in use across artifacts/threads/*.md, confirmed by grep, not
+    guessed), and inline `` `thread-slug` `` cross-references rendered as
+    raw monospace code with no link and no gloss. Fixed here, not by
+    hand-editing artifacts/threads/*.md, because the markers ARE meant to
+    stay in the internal timeline files (that's where provenance is a
+    feature, not a bug) — this only touches what crosses the publish
+    boundary into public prose.
+
+    Provenance markers: stripped outright, they carry no public meaning.
+    Backtick spans naming a known public thread slug: with `linkify=True`
+    (the timeline body, which Hugo renders as markdown) turned into a real
+    `[Title](/threads/slug/)` link. With `linkify=False` (the `blurb`
+    front-matter field, which the site's `.dek` partial outputs as plain
+    escaped text via `{{ . }}` — markdown syntax there would show up
+    LITERALLY as bracket/paren text, not a link) resolved to just the
+    plain title instead. Any other backtick span (curator shorthand like
+    `sev=major`) is unwrapped to plain text in both modes — it reads fine
+    as plain words once it's not styled as code the reader was never told
+    how to interpret.
+
+    A third case, orthogonal to `linkify`: `<code>slug</code>` spans —
+    found 2026-08-09 on the "Items this week" list, whose `.html` field
+    arrives PRE-RENDERED (kestrel's md_html() already turned a backtick
+    span into a real `<code>` tag before this function ever sees the
+    string). Only unwrapped to a real `<a href="/threads/slug/">Title</a>`
+    tag when the CALLER explicitly passes `html_safe=True` — meaning the
+    caller knows for certain this string is inserted via Hugo's `safeHTML`
+    (raw HTML), not auto-escaped `{{ . }}` output, where an injected `<a>`
+    tag would show up as literal angle-bracket text instead of a link.
+    Deliberately NOT inferred from the tag's mere presence — right now
+    every real `<code>` span in this corpus happens to come from an
+    `html_safe` context, but that's an invariant about today's data, not
+    a property of the string itself, so it isn't safe to assume silently.
+    Without `html_safe`, a `<code>` span just unwraps to its plain content
+    text (still fine to read, just not a link).
+    """
+    text = _PROVENANCE_MARKER.sub("", text)
+
+    def _resolve_span(m):
+        content = m.group(1)
+        title = _slug_title_map().get(content)
+        if not title:
+            return content
+        return f"[{title}](/threads/{content}/)" if linkify else title
+
+    text = _CODE_SPAN.sub(_resolve_span, text)
+
+    def _resolve_html_span(m):
+        content = m.group(1)
+        title = _slug_title_map().get(content)
+        if not title:
+            return content
+        return f'<a href="/threads/{content}/">{title}</a>' if html_safe else title
+
+    return _HTML_CODE_SPAN.sub(_resolve_html_span, text)
+
+
+# The only dict key anywhere in this payload whose value is inserted via
+# Hugo's safeHTML rather than auto-escaped {{ . }} — items' pre-rendered
+# `.html` field (news/single.html, entities/single.html: `{{ .html |
+# safeHTML }}`). _deep_clean_reader_facing passes html_safe=True ONLY for
+# this key, so a resolved `<code>slug</code>` span becomes a real `<a>`
+# link there and nowhere else — see clean_reader_facing_body's docstring
+# for why that has to be explicit rather than inferred from the tag alone.
+_HTML_SAFE_KEYS = {"html"}
+
+
+def _deep_clean_reader_facing(value, html_safe=False):
+    """Recursive sweep for the same leak, applied to a whole JSON-shaped
+    structure at once. Landed 2026-08-09 after individually patching five
+    separate fields (thread bodies, blurbs, map-changes, readout bullets,
+    interpretation sub-fields) and still finding a sixth (throughlines) on
+    the next sweep — chasing each field by name doesn't converge, because
+    any string anywhere in this payload can carry one of these markers.
+
+    Cheap and safe by construction: only strings actually CONTAINING '⟨', a
+    backtick, or a `<code>` tag get touched (the three sub-patterns inside
+    `clean_reader_facing_body` are no-ops on anything else), and none of
+    those appear in this corpus's urls, slugs, ids, or dates — verified by
+    grep, not assumed — so this can run unconditionally over every string
+    in the structure with no per-field allowlist to maintain or forget.
+    linkify is always False (nothing in this payload is markdown-rendered);
+    html_safe defaults False too and is threaded through recursion only
+    for keys in `_HTML_SAFE_KEYS` — everything else stays a plain-text
+    unwrap even if a `<code>` tag somehow shows up somewhere unexpected.
+    """
+    if isinstance(value, str):
+        if "⟨" in value or "`" in value or "<code>" in value:
+            return clean_reader_facing_body(value, linkify=False, html_safe=html_safe)
+        return value
+    if isinstance(value, dict):
+        return {k: _deep_clean_reader_facing(v, html_safe=(k in _HTML_SAFE_KEYS))
+                for k, v in value.items()}
+    if isinstance(value, list):
+        return [_deep_clean_reader_facing(v, html_safe=html_safe) for v in value]
+    return value
+
+
 def build_thread_page(t):
     slug = t["slug"]
     path = os.path.join(ROOT, "artifacts/threads", f"{slug}.md")
@@ -106,6 +238,7 @@ def build_thread_page(t):
     fm_match = re.match(r"---\n.*?\n---\n", src, re.S)
     body = src[fm_match.end():] if fm_match else src
     body = strip_internal_header(body).rstrip() + "\n"
+    body = clean_reader_facing_body(body)
 
     fm = core.apply_allowlist(t, ALLOWED_THREAD_FIELDS)
     fm["thread_kind"] = t.get("kind", "story")
@@ -222,7 +355,7 @@ def build_payload(pub_slugs, today=None):
     all_entities = {e["slug"]: e for e in _load_watchlist_entities()}
     entities = core.referenced_only(referenced, all_entities)
 
-    return {
+    payload = {
         "schema_version": 1,
         "generated": datetime.now(timezone.utc).strftime("%Y-%m-%dT%H:%M:%SZ"),
         "week_start": week_start.isoformat(), "today": today.isoformat(),
@@ -242,6 +375,12 @@ def build_payload(pub_slugs, today=None):
         # flash does, still through the allowlist + secret-scan backstop.
         "world_news": load_world_news(now),
     }
+    # 2026-08-09: strip the same provenance-marker/backtick-slug leak from
+    # EVERY string in this payload at once — see _deep_clean_reader_facing's
+    # docstring for why a per-field approach kept missing fields (items'
+    # interpretation sub-object, throughlines, map_changes text all turned
+    # up on successive sweeps before this replaced them).
+    return _deep_clean_reader_facing(payload)
 
 
 # Board fields allowed across the boundary. The board is neutral by
@@ -545,6 +684,14 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
                 for b in rec.get(sec) or []:
                     b["threads"] = [t for t in (b.get("threads") or [])
                                     if t in pub_slugs]
+                    # Same provenance-marker leak as thread bodies/blurbs/
+                    # map-changes (2026-08-09 sweep) — BREAKING/NEWS bullet
+                    # text is pulled straight from digest item records,
+                    # which carry the same ⟨...⟩ asides. Rendered via
+                    # readout.html's {{ .text }} — plain escaped text, so
+                    # linkify=False, matching the blurb/map-changes cases.
+                    if b.get("text"):
+                        b["text"] = clean_reader_facing_body(b["text"], linkify=False)
             kept[scope] = rec
         with open(os.path.join(site_dir, "data", "readouts.json"), "w") as f:
             f.write(json.dumps({"schema_version": ro.get("schema_version", 1),
