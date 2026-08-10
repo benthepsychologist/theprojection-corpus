@@ -1,0 +1,606 @@
+# research/q1-flows/edges.yaml — q1 flow map: entity-to-entity money/capacity
+# flows, classification-free (R-16: boundaries are filters, applied at query
+# time, never stored here).
+#
+# Schema: q1 skeleton v3 (INBOX/2026-08-03-q1-skeleton-v3.md) sec 3 (edges)
+# + sec 4 (observations). This is real sourced data, not a placeholder set —
+# every entry below carries at least one observation with a live, checked
+# citation. Two provenance classes of capture_ref appear:
+#   - "step0-audit:<record-id>" = the underlying claim was already
+#     live-fetched and verified 2026-08-03 by the shelf audit
+#     (INBOX/2026-08-03-q1-step0-audit.md); this file re-expresses that
+#     VERIFIED-LIVE finding as a flow edge, it does not re-fetch.
+#   - "session-webfetch:<date>" = fetched and verified fresh in this build
+#     pass (2026-08-10) — two real new flows surfaced this way (edges 16-17
+#     below), not in the original 56-record shelf.
+#
+# What this is NOT: a complete q1 map. This is a first Tier-A tranche
+# (materiality floor and tier definitions: q1 skeleton sec 5, sec 12).
+# Coverage is asymptotic by design (R-19) — there is no done state.
+#
+# Discipline: never fabricate a figure or URL (CLAUDE.md, this repo's
+# citation rule). Every "value" below is either a directly-quoted figure
+# from its source, or explicitly marked derived/computed with the method
+# stated. Dollar amounts genuinely not disclosed in a source are recorded
+# as unmeasured, never estimated silently.
+#
+# YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
+
+schema_ref: "INBOX/2026-08-03-q1-skeleton-v3.md#3"
+built: "2026-08-10"
+
+edges:
+- id: tsmc-capital--tsmc-foundry-construction--2020-az-intent
+  from: tsmc/capital
+  to: tsmc/foundry-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: aggregated
+  coverage_note: TSMC's Arizona fab serves all its customers (Apple, AMD, Nvidia, Qualcomm and others),
+    not AI-dedicated. No defensible AI-attributable share was found this pass (F8) — the full capex figure
+    is recorded at the parent (TSMC/foundry-construction), unsplit. This is an honest aggregated state,
+    not a placeholder.
+  observations:
+  - value:
+      type: point
+      amount_usd: 12000000000
+      note: $12B, 2021-2029
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2021-01-01'
+      end: '2029-12-31'
+      schedule: known
+    source:
+      label: TSMC corporate announcement (Arizona Phoenix fab intent)
+      url: https://pr.tsmc.com/english/latest-news
+      figure: $12B, 5nm, 20,000 wafers/month, 2021-2029
+      as_of: '2020'
+    provenance_class: company statement
+    capture_ref: step0-audit:tsmc-arizona-fab-intent-2020
+    reliability: 0.85
+    rationale: Primary TSMC source; figures matched exactly on live re-fetch 2026-08-03 per the step-0
+      shelf audit (VERIFIED-LIVE).
+- id: tsmc-capital--tsmc-foundry-construction--2025-us-expansion
+  from: tsmc/capital
+  to: tsmc/foundry-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: aggregated
+  coverage_note: Same shared-fab caveat as the 2020 entry — five new AZ fabs, general leading-edge capacity,
+    no AI-specific split published.
+  observations:
+  - value:
+      type: point
+      amount_usd: 100000000000
+      note: additional $100B; brings total US commitment to ~$165B
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2025-03-03'
+      end: null
+      schedule: unscheduled
+    source:
+      label: White House statement w/ direct Trump/C.C. Wei quotes
+      url: https://www.whitehouse.gov/
+      figure: $100B additional, 5 new AZ fabs, ~$165B total US commitment
+      as_of: '2025-03-03'
+    provenance_class: regulatory filing
+    capture_ref: step0-audit:tsmc-100b-us-expansion-mar2025
+    reliability: 0.88
+    rationale: Primary source, direct quote match confirmed on live re-fetch 2026-08-03 (VERIFIED-LIVE,
+      step-0 audit).
+- id: ext-public-equity-market--coreweave-capital--2025-ipo
+  from: ext/public-equity-market
+  to: coreweave/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: point
+      amount_usd: 1500000000
+      note: 37.5M shares @ $40, ~$1.5B raised; ~$23B fully diluted valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2025-03-28'
+      end: '2025-03-28'
+      schedule: known
+    source:
+      label: CoreWeave IPO press release
+      url: https://www.coreweave.com/news
+      figure: $40/share, 37.5M shares, ~$1.5B proceeds, Nasdaq CRWV, trading began 2025-03-28
+      as_of: '2025-03-28'
+    provenance_class: company statement
+    capture_ref: step0-audit:coreweave-ipo-mar2025
+    reliability: 0.95
+    rationale: Primary press release on its own completed transaction; every figure matched exactly on
+      live re-fetch 2026-08-03 (VERIFIED-LIVE).
+- id: openai-datacenter-operation--amd-chip-design--2025-6gw
+  from: openai/datacenter-operation
+  to: amd/chip-design
+  type: asset purchase
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: measured
+  coverage_note: Physical capacity (chip volume/GW) is disclosed; the dollar price of the chip purchase
+    itself is NOT disclosed in this source — recorded as unmeasured rather than estimated. Only the accompanying
+    warrant (next edge) carries a stated instrument.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: 6GW AMD Instinct deployment (first 1GW MI450 series, H2 2026); dollar price of the chip purchase
+        not disclosed
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2026-07-01'
+      end: null
+      schedule: known (first tranche H2 2026)
+    source:
+      label: AMD/OpenAI joint press release
+      url: https://www.amd.com/en/newsroom
+      figure: 6GW Instinct deployment, first 1GW MI450 H2 2026
+      as_of: '2025-10-06'
+    provenance_class: company statement
+    capture_ref: step0-audit:amd-openai-6gw-oct2025
+    reliability: 0.9
+    rationale: 'Primary joint release, internally detailed and consistent; confirmed verbatim on live
+      re-fetch 2026-08-03 (VERIFIED-LIVE). Dollar value of the chip purchase itself: attempt log — not
+      stated on this page, no other source checked this pass; unmeasured, not zero.'
+- id: amd-chip-design--openai-capital--2025-warrant
+  from: amd/chip-design
+  to: openai/capital
+  type: non-cash consideration
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: null
+      note: warrant for up to 160M AMD shares (~10% of AMD), vesting on deployment/share-price milestones;
+        no fixed $ value at signing since it is a contingent equity instrument
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2025-10-06'
+      end: null
+      schedule: milestone-vested, unscheduled
+    source:
+      label: AMD/OpenAI joint press release
+      url: https://www.amd.com/en/newsroom
+      figure: warrant up to 160M shares (~10%), vesting on deployment and AMD share-price milestones
+      as_of: '2025-10-06'
+    provenance_class: company statement
+    capture_ref: step0-audit:amd-openai-6gw-oct2025
+    reliability: 0.9
+    rationale: Same primary source as the paired asset-purchase edge; warrant terms confirmed verbatim
+      (VERIFIED-LIVE, step-0 audit).
+- id: anthropic-model-training--google-cloud-capacity--2025-tpu
+  from: anthropic/model-training
+  to: google/cloud-capacity
+  type: capacity/service payment
+  destination_category: purchased compute capacity (services)
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: '"tens of billions" (Anthropic''s own characterization); up to 1M TPUs, >1GW capacity online
+        2026'
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2025-10-23'
+      end: null
+      schedule: unscheduled (">1GW online 2026")
+    source:
+      label: Anthropic press release
+      url: https://www.anthropic.com/news
+      figure: up to 1M TPUs, >1GW online 2026, deal worth tens of billions
+      as_of: '2025-10-23'
+    provenance_class: company statement
+    capture_ref: step0-audit:anthropic-google-tpu-oct2025
+    reliability: 0.9
+    rationale: Primary, self-corroborating; confirmed nearly verbatim on live re-fetch 2026-08-03 (VERIFIED-LIVE).
+- id: ext-investor-syndicate-xai-2023--xai-capital--2023-formd
+  from: ext/investor-syndicate--xai-2023
+  to: xai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: point
+      amount_usd: 134700000
+      note: $134.7M sold against a $1B ceiling ($865.3M remaining) per SEC Form D
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2023-12-01'
+      end: '2023-12-31'
+      schedule: known
+    source:
+      label: xAI SEC Form D (relayed by CoinDesk)
+      url: https://www.sec.gov/cgi-bin/browse-edgar
+      figure: $1B ceiling, $134.7M sold, $865.3M remaining
+      as_of: 2023-12
+    provenance_class: regulatory filing
+    capture_ref: step0-audit:xai-sec-1b-dec2023
+    reliability: 0.85
+    rationale: Reporting directly off a public SEC filing; confirmed verbatim on live re-fetch 2026-08-03
+      (VERIFIED-LIVE).
+- id: amazon-capital--anthropic-capital--2023-09-initial
+  from: amazon/capital
+  to: anthropic/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 4000000000
+      note: up to $4B commitment; $1.25B confirmed as the initial delivered tranche
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-03'
+    period:
+      start: '2023-09-01'
+      end: null
+      schedule: option structure, partially unscheduled
+    source:
+      label: TechCrunch
+      url: https://techcrunch.com/
+      figure: Amazon commits up to $4B (initial $1.25B), AWS primary cloud, Trainium/Inferentia, Bedrock
+      as_of: 2023-09
+    provenance_class: named-source press
+    capture_ref: step0-audit:anthropic-amazon-4b-sep2023
+    reliability: 0.8
+    rationale: TechCrunch named byline, company-confirmed deal; every figure and detail confirmed verbatim
+      on live re-fetch 2026-08-03 (VERIFIED-LIVE).
+- id: google-capital--anthropic-capital--2023-02
+  from: google/capital
+  to: anthropic/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: point
+      amount_usd: 300000000
+      note: ~$300M for ~10% stake, plus a Cloud preferred-provider deal
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2023-02-01'
+      end: '2023-02-28'
+      schedule: known
+    source:
+      label: SiliconANGLE (relaying FT's scoop)
+      url: https://siliconangle.com/
+      figure: $300M, ~10% stake, Cloud commitment
+      as_of: 2023-02
+    provenance_class: named-source press
+    capture_ref: step0-audit:anthropic-google-300m-feb2023
+    reliability: 0.65
+    rationale: Secondhand relay of an FT scoop; core figures confirmed verbatim on live re-fetch 2026-08-03
+      (VERIFIED-LIVE), reliability capped for the secondhand chain.
+- id: ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
+  from: ext/investor-syndicate--mistral-2023
+  to: mistral/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  below_materiality_floor: true
+  materiality_note: €105M/$113M is well under the ⚙$1B/yr materiality floor (q1 sec 12) that governs purchase-tracing/node
+    instantiation; recorded anyway as a financing-inflow observation feeding the funding-pool/origination
+    layer (sec 3), not as a traced node. Flagged for a ruling — see report.
+  observations:
+  - value:
+      type: point
+      amount_usd: 113000000
+      note: €105M/$113M at €240M/$260M valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2023-06-01'
+      end: '2023-06-30'
+      schedule: known
+    source:
+      label: TechCrunch
+      url: https://techcrunch.com/
+      figure: €105M/$113M seed, €240M/$260M valuation, led by Lightspeed w/ Redpoint, Index, Niel, Bpifrance,
+        Schmidt
+      as_of: 2023-06
+    provenance_class: named-source press
+    capture_ref: step0-audit:mistral-seed-105m-jun2023
+    reliability: 0.8
+    rationale: TechCrunch named byline, detailed named-investor reporting; confirmed on live re-fetch
+      2026-08-03 (VERIFIED-LIVE).
+- id: ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
+  from: ext/investor-syndicate--inflection-2023
+  to: inflection/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  coverage_note: Inflection was substantially acquihired by Microsoft Mar 2024 (staff + tech license)
+    — recorded here as a calendar-2023 baseline event; the entity is largely dissolved as an independent
+    node going forward.
+  observations:
+  - value:
+      type: point
+      amount_usd: 1300000000
+      note: $1.3B at $4B valuation, funds a 22,000-H100 cluster w/ CoreWeave
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2023-06-01'
+      end: '2023-06-30'
+      schedule: known
+    source:
+      label: TechCrunch
+      url: https://techcrunch.com/
+      figure: $1.3B at $4B, led by Microsoft/Nvidia/Hoffman/Gates/Schmidt
+      as_of: 2023-06
+    provenance_class: named-source press
+    capture_ref: step0-audit:inflection-1-3b-jun2023
+    reliability: 0.8
+    rationale: TechCrunch named byline, detailed and specific; every figure and investor confirmed on
+      live re-fetch 2026-08-03 (VERIFIED-LIVE).
+- id: ext-investor-syndicate-cohere-2024--cohere-capital--2024-seriesd
+  from: ext/investor-syndicate--cohere-2024
+  to: cohere/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: point
+      amount_usd: 500000000
+      note: $500M Series D at $5.5B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2024-07-01'
+      end: '2024-07-31'
+      schedule: known
+    source:
+      label: BetaKit
+      url: https://betakit.com/
+      figure: $500M at $5.5B, led by PSP Investments w/ Cisco, Fujitsu, AMD Ventures, EDC, Nvidia, Salesforce
+        Ventures
+      as_of: 2024-07
+    provenance_class: named-source press
+    capture_ref: step0-audit:cohere-series-d-jul2024
+    reliability: 0.75
+    rationale: Detailed direct reporting; amount, valuation and full investor list confirmed on live re-fetch
+      2026-08-03 (VERIFIED-LIVE).
+- id: ext-investor-syndicate-cohere-2025--cohere-capital--2025-round
+  from: ext/investor-syndicate--cohere-2025
+  to: cohere/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  observations:
+  - value:
+      type: point
+      amount_usd: 500000000
+      note: $500M at $6.8B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2025-08-01'
+      end: '2025-08-31'
+      schedule: known
+    source:
+      label: Company announcement
+      url: https://cohere.com/
+      figure: $500M at $6.8B, led by Radical/Inovia w/ AMD Ventures, Nvidia, PSP, Salesforce Ventures
+      as_of: 2025-08
+    provenance_class: company statement
+    capture_ref: step0-audit:cohere-500m-aug2025
+    reliability: 0.8
+    rationale: Primary company announcement despite incomplete body retrieval at audit time; $500M and
+      $6.8B confirmed via headline on live re-fetch 2026-08-03 (VERIFIED-LIVE).
+- id: amazon-capital--anthropic-capital--2024-11-additional
+  from: amazon/capital
+  to: anthropic/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  audit_grade: PARTIAL, not VERIFIED-LIVE — included as a bonus 17th entry beyond the 16-record verified
+    set because its core $4B figure and primary-corporate provenance are solid (reliability 0.85); the
+    cumulative $8B is arithmetic (4B prior Sep-2023 tranche + this $4B), not a figure printed on the page
+    — recorded as derived.
+  observations:
+  - value:
+      type: point
+      amount_usd: 4000000000
+      note: additional $4B, delivered
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2024-11-01'
+      end: '2024-11-30'
+      schedule: known
+    source:
+      label: Amazon corporate announcement
+      url: https://www.aboutamazon.com/
+      figure: additional $4B investment; AWS primary training partner; Annapurna/Trainium collaboration
+      as_of: 2024-11
+    provenance_class: company statement
+    capture_ref: step0-audit:anthropic-amazon-8b-nov2024
+    reliability: 0.85
+    rationale: Primary corporate announcement; the $4B and collaboration terms confirmed on live re-fetch
+      2026-08-03 (PARTIAL grade — the $8B cumulative figure is arithmetic, not printed on this page).
+  - value:
+      type: point
+      amount_usd: 8000000000
+      note: cumulative total across the Sep-2023 ($4B commitment) and Nov-2024 ($4B) tranches
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-03'
+    period:
+      start: '2023-09-01'
+      end: '2024-11-30'
+      schedule: known
+    source:
+      label: Derived — sum of amazon-capital--anthropic-capital--2023-09-initial and this edge's own Nov-2024
+        observation
+      url: n/a — derived, not a single source
+      figure: n/a
+      as_of: 2024-11
+    provenance_class: inference from other claims
+    capture_ref: derived
+    reliability: 0.7
+    rationale: Arithmetic sum, not independently sourced; the $8B figure is widely reported in press but
+      this observation records it as derived from the two dated tranches per q1's own discipline (F2 —
+      nothing is 'assigned once'; every hop stays visible).
+    method_note: sum of two dated equity tranches
+    derived_from:
+    - amazon-capital--anthropic-capital--2023-09-initial
+- id: nvidia-chip-design--xai-datacenter-operation--2024-colossus
+  from: nvidia/chip-design
+  to: xai/datacenter-operation
+  type: asset purchase
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: measured
+  coverage_note: Physical GPU count is disclosed and verified; no dollar figure appears in this source.
+    Recorded as unmeasured-dollar rather than estimated — a real materiality-relevant gap (xAI/Colossus
+    is one of the largest single AI compute buildouts and its chip-purchase dollar value is not in the
+    public record via this citation).
+  observations:
+  - value:
+      type: point
+      amount_usd: null
+      note: 100,000 H100 GPUs at initial online (~Sep 2024), built in ~122 days, doubled to ~200,000 GPUs
+        within months; dollar value of the chip purchase not disclosed
+    stage: delivered
+    basis: delivery
+    as_of: '2026-08-03'
+    period:
+      start: '2024-09-01'
+      end: '2024-09-30'
+      schedule: known
+    source:
+      label: Nvidia/xAI joint press release
+      url: https://nvidianews.nvidia.com/
+      figure: 100,000 Hopper GPUs, 122-day build, doubling to 200,000
+      as_of: 2024-09
+    provenance_class: company statement
+    capture_ref: step0-audit:xai-colossus-memphis-2024
+    reliability: 0.85
+    rationale: 'Primary vendor announcement, figures self-corroborating; confirmed verbatim on live re-fetch
+      2026-08-03 (VERIFIED-LIVE). Dollar value: attempt log — not stated on this page, no other source
+      checked this pass.'
+- id: anthropic-model-training--xai-datacenter-operation--2026-colossus1-lease
+  from: anthropic/model-training
+  to: xai/datacenter-operation
+  type: capacity/service payment
+  destination_category: purchased compute capacity (services)
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NOT in the original 56-record shelf — surfaced and verified fresh this build pass (2026-08-10),
+    the single largest new flow found this session. Sourced from SpaceX's own S-1 filing per TechCrunch's
+    reporting chain; the S-1 itself was not independently fetched this pass (flagged for a follow-up primary-source
+    capture).
+  observations:
+  - value:
+      type: point
+      amount_usd: 1250000000
+      note: $1.25B/month rate; >$40B total over the full term; 300MW of compute; Colossus 1 (Memphis),
+        all 220,000+ Nvidia GPUs (H100/H200/GB200)
+    stage: contract
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-05-20'
+      end: '2029-05-31'
+      schedule: known — monthly rate through May 2029; 90-day mutual termination notice
+    source:
+      label: TechCrunch, direct fetch
+      url: https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
+      figure: $1.25 billion per month; over $40 billion in revenue through May 2029; 300 megawatts' worth
+        of compute
+      as_of: '2026-05-20'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.8
+    rationale: Direct WebFetch of the TechCrunch article this pass, not just search snippets; the deal
+      traces to SpaceX's own SEC S-1 filing per the article, corroborated by 8+ other outlets found in
+      the same search (DCD, CNBC-adjacent coverage, ActuIA, Yahoo Finance) with converging figures. Reliability
+      capped below 'primary' because the S-1 itself was not independently fetched this pass.
+- id: google-ai-compute-procurement--xai-datacenter-operation--2026-lease
+  from: google/ai-compute-procurement
+  to: xai/datacenter-operation
+  type: capacity/service payment
+  destination_category: purchased compute capacity (services)
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: 'NOT in the original 56-record shelf — surfaced and verified fresh this build pass (2026-08-10).
+    Facility assignment is explicitly UNCONFIRMED by the primary press source (TechCrunch: "SpaceX didn''t
+    say which specific data center Google would be using" — and notes Colossus 2 is described elsewhere
+    as "reserved for xAI"). Recorded against xai/datacenter-operation at the corporate-aggregate level,
+    NOT a specific facility, precisely because the facility claim doesn''t survive its own source (R-17:
+    name the ambiguity, don''t legislate it). A different search pass (non-primary blogs) claimed this
+    was Colossus 2 specifically — that claim is NOT adopted here; flagged as a live disagreement.'
+  observations:
+  - value:
+      type: point
+      amount_usd: 920000000
+      note: $920M/month; ~110,000 Nvidia GPUs + CPUs/memory/components; ramp-up through Sep 2026 at reduced
+        rate, full rate Oct 2026
+    stage: contract
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-10-01'
+      end: '2029-06-30'
+      schedule: known — monthly rate Oct 2026 through Jun 2029 (~33mo); delivery-milestone gate 2026-09-30;
+        90-day mutual termination after 2026-12-31
+    source:
+      label: TechCrunch, direct fetch
+      url: https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/
+      figure: $920 million per month from October 2026 through June 2029; approximately 110,000 NVIDIA
+        GPUs, CPUs, memory, and other related components
+      as_of: '2026-06-05'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.75
+    rationale: Direct WebFetch of the TechCrunch article this pass, corroborated by CNBC, Data Center
+      Dynamics and MLQ in the same search (CNBC itself 403'd on direct fetch this pass — bot-wall, same
+      pattern the step-0 audit already documented for this domain). Reliability set below the Anthropic
+      edge because the facility is explicitly unconfirmed.
+    method_note: ~$30B total is a computed estimate (rate x ~33 months), not a figure stated as a single
+      headline number by the primary source; treat as derived, not quoted.

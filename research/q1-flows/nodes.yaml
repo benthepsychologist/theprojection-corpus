@@ -1,0 +1,185 @@
+# research/q1-flows/nodes.yaml — entity x activity nodes instantiated by
+# edges.yaml (q1 skeleton sec 3: "Nodes are entity x activity units...
+# Where disclosure doesn't support the split, an edge terminates at the
+# entity and the node carries the aggregated state until an allocation
+# claim splits it.")
+#
+# `coverage_state`: measured | aggregated | unmeasured (q1 sec 3 table).
+# `ext/*` nodes borrow q2's population-node convention (q2 skeleton sec 3)
+# for unnamed capital-provider counterparties on financing edges — q1 itself
+# doesn't specify this case; flagged as a judgment call in the build report,
+# not a ruling.
+#
+# YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
+
+schema_ref: "INBOX/2026-08-03-q1-skeleton-v3.md#3"
+built: "2026-08-10"
+
+nodes:
+- id: tsmc/capital
+  entity: TSMC
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - tsmc-capital--tsmc-foundry-construction--2020-az-intent
+  - tsmc-capital--tsmc-foundry-construction--2025-us-expansion
+- id: tsmc/foundry-construction
+  entity: TSMC
+  activity: foundry construction (fab capex)
+  coverage_state: aggregated
+  note: Shared asset (all TSMC customers, not AI-dedicated); AI-attributable share unresolved (F8) — full
+    capex sits aggregated at this node.
+  instantiated_by:
+  - tsmc-capital--tsmc-foundry-construction--2020-az-intent
+  - tsmc-capital--tsmc-foundry-construction--2025-us-expansion
+- id: ext/public-equity-market
+  entity: ext (population)
+  activity: public equity capital provision
+  coverage_state: aggregated
+  note: Population node, not a named entity — IPO buyers as a class.
+  instantiated_by:
+  - ext-public-equity-market--coreweave-capital--2025-ipo
+- id: coreweave/capital
+  entity: CoreWeave
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - ext-public-equity-market--coreweave-capital--2025-ipo
+- id: openai/datacenter-operation
+  entity: OpenAI
+  activity: datacenter operation (buyer side)
+  coverage_state: measured
+  instantiated_by:
+  - openai-datacenter-operation--amd-chip-design--2025-6gw
+- id: amd/chip-design
+  entity: AMD
+  activity: chip design
+  coverage_state: measured
+  instantiated_by:
+  - openai-datacenter-operation--amd-chip-design--2025-6gw
+  - amd-chip-design--openai-capital--2025-warrant
+- id: openai/capital
+  entity: OpenAI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - amd-chip-design--openai-capital--2025-warrant
+- id: anthropic/model-training
+  entity: Anthropic
+  activity: model training (compute consumption)
+  coverage_state: measured
+  instantiated_by:
+  - anthropic-model-training--google-cloud-capacity--2025-tpu
+  - anthropic-model-training--xai-datacenter-operation--2026-colossus1-lease
+- id: google/cloud-capacity
+  entity: Google
+  activity: cloud/TPU capacity provision (seller side)
+  coverage_state: measured
+  instantiated_by:
+  - anthropic-model-training--google-cloud-capacity--2025-tpu
+- id: google/ai-compute-procurement
+  entity: Google
+  activity: AI compute procurement (buyer side — distinct facet from cloud-capacity, which sells)
+  coverage_state: measured
+  instantiated_by:
+  - google-ai-compute-procurement--xai-datacenter-operation--2026-lease
+- id: xai/datacenter-operation
+  entity: xAI
+  activity: datacenter operation
+  coverage_state: measured
+  instantiated_by:
+  - nvidia-chip-design--xai-datacenter-operation--2024-colossus
+  - anthropic-model-training--xai-datacenter-operation--2026-colossus1-lease
+  - google-ai-compute-procurement--xai-datacenter-operation--2026-lease
+  note: See research/q3-datacenter-census/attribution.yaml for the facility-level ownership structure
+    behind this node (Colossus 1/2, CTC Property LLC, the May-2026 SpaceX-xAI merger).
+- id: xai/capital
+  entity: xAI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - ext-investor-syndicate-xai-2023--xai-capital--2023-formd
+- id: ext/investor-syndicate--xai-2023
+  entity: ext (population)
+  activity: private equity capital provision
+  coverage_state: aggregated
+  note: SEC Form D does not name individual buyers.
+  instantiated_by:
+  - ext-investor-syndicate-xai-2023--xai-capital--2023-formd
+- id: amazon/capital
+  entity: Amazon
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - amazon-capital--anthropic-capital--2023-09-initial
+  - amazon-capital--anthropic-capital--2024-11-additional
+- id: anthropic/capital
+  entity: Anthropic
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - amazon-capital--anthropic-capital--2023-09-initial
+  - google-capital--anthropic-capital--2023-02
+  - amazon-capital--anthropic-capital--2024-11-additional
+- id: google/capital
+  entity: Google
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - google-capital--anthropic-capital--2023-02
+- id: ext/investor-syndicate--mistral-2023
+  entity: ext (population)
+  activity: VC capital provision
+  coverage_state: measured
+  note: 'Named: Lightspeed (lead), Redpoint, Index, Xavier Niel, Bpifrance, Eric Schmidt.'
+  instantiated_by:
+  - ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
+- id: mistral/capital
+  entity: Mistral AI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
+- id: ext/investor-syndicate--inflection-2023
+  entity: ext (population)
+  activity: VC/strategic capital provision
+  coverage_state: measured
+  note: 'Named: Microsoft, Nvidia, Reid Hoffman, Bill Gates, Eric Schmidt.'
+  instantiated_by:
+  - ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
+- id: inflection/capital
+  entity: Inflection AI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: Largely dissolved as an independent entity post Microsoft acquihire (Mar 2024) — see step0-audit:microsoft-inflection-acquihire-mar2024
+    (PARTIAL grade, not included as a q1 edge this pass since its $650M licensing figure did not appear
+    on the cited page per the audit).
+  instantiated_by:
+  - ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
+- id: ext/investor-syndicate--cohere-2024
+  entity: ext (population)
+  activity: strategic/institutional capital provision
+  coverage_state: measured
+  note: 'Named: PSP Investments (lead), Cisco, Fujitsu, AMD Ventures, EDC, Nvidia, Salesforce Ventures.'
+  instantiated_by:
+  - ext-investor-syndicate-cohere-2024--cohere-capital--2024-seriesd
+- id: ext/investor-syndicate--cohere-2025
+  entity: ext (population)
+  activity: strategic/institutional capital provision
+  coverage_state: measured
+  note: 'Named: Radical Ventures/Inovia (lead), AMD Ventures, Nvidia, PSP, Salesforce Ventures.'
+  instantiated_by:
+  - ext-investor-syndicate-cohere-2025--cohere-capital--2025-round
+- id: cohere/capital
+  entity: Cohere
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by:
+  - ext-investor-syndicate-cohere-2024--cohere-capital--2024-seriesd
+  - ext-investor-syndicate-cohere-2025--cohere-capital--2025-round
+- id: nvidia/chip-design
+  entity: Nvidia
+  activity: chip design
+  coverage_state: measured
+  instantiated_by:
+  - nvidia-chip-design--xai-datacenter-operation--2024-colossus

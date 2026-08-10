@@ -1,0 +1,72 @@
+# research/q1-flows/filters/cut-core-buildout.yaml — the v1 spend-side
+# consolidation filter (q1 skeleton sec 3 / sec 12: "cut:core-buildout").
+#
+# R-16 (binding ruling, not open to relitigation): boundaries are FILTERS
+# over the flow map, not memberships baked into the map itself. This file
+# is that filter — a named, versioned, dated membership list stored as
+# data. Applying it to research/q1-flows/edges.yaml classifies each edge's
+# endpoints as inside/outside; flows between two "inside" entities are
+# transfers under this cut, flows crossing the boundary are the group's
+# external cost/revenue. A different cut (e.g. drawn at retail inference,
+# per R-17) is a NEW filter file, never a rewrite of this one or a
+# re-sourcing of the map.
+#
+# Coverage note: this v1 roster covers the entities already instantiated in
+# nodes.yaml as of this build pass (2026-08-10) — it is deliberately not
+# yet the exhaustive roster the skeleton describes (hyperscaler AI ops,
+# frontier labs, neoclouds, AI chip lines, semicap, memory, packaging,
+# networking, datacenter builders, AI-dedicated power projects). Extend as
+# new nodes instantiate; membership changes are versioned, never silent.
+
+id: "cut:core-buildout"
+version: 1
+dated: "2026-08-10"
+description: >
+  Spend-side default cut (q1 skeleton sec 3/12): hyperscaler AI operations,
+  frontier labs, neoclouds, AI chip lines, semicap, memory, packaging,
+  networking, datacenter builders, AI-dedicated power projects. Capital
+  providers and governments sit OUTSIDE this cut by design — their money
+  into the group reads as inflow, not a transfer.
+
+members:
+  # frontier labs
+  - anthropic
+  - openai
+  - xai
+  - mistral
+  - inflection    # historical (2023 baseline); largely absorbed into
+                   # Microsoft Mar-2024, see nodes.yaml note
+  - cohere
+  # hyperscaler AI operations
+  - amazon
+  - google
+  - microsoft
+  - meta
+  # AI chip lines / chip design
+  - nvidia
+  - amd
+  # semicap / foundry
+  - tsmc
+  # neoclouds
+  - coreweave
+
+explicitly_outside:
+  # capital providers — their inbound money to a member reads as inflow,
+  # never a transfer, under this cut (R-16).
+  members:
+    - ext/public-equity-market
+    - ext/investor-syndicate--xai-2023
+    - ext/investor-syndicate--mistral-2023
+    - ext/investor-syndicate--inflection-2023
+    - ext/investor-syndicate--cohere-2024
+    - ext/investor-syndicate--cohere-2025
+  note: >
+    Amazon and Google appear as BOTH members (hyperscaler AI ops) and
+    financing counterparties (amazon/capital, google/capital -> Anthropic)
+    in the current edge set. This is correct under R-16, not a
+    contradiction: the filter classifies flows by whether BOTH endpoints
+    are inside the group. Amazon->Anthropic and Google->Anthropic are
+    inside<->inside under this cut (both members) and read as TRANSFERS,
+    not external capital inflow to the group — worth Ben's eye, since press
+    coverage of these deals almost universally frames them as "external"
+    investment. Flagged, not resolved, per R-17 (name the ambiguity).

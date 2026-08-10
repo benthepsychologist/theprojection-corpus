@@ -1,0 +1,643 @@
+# research/q3-datacenter-census/attribution.yaml — the owner/operator/
+# propco/tenant attribution layer over Epoch AI's datacenter census
+# (sources/external/epoch-datacenters/), per the sotg finding (INBOX/sotg/)
+# that Epoch already IS ~80% of q3's census for free, and the genuinely
+# open work is this attribution graph, which Epoch does NOT model.
+#
+# Spine: sources/external/epoch-datacenters/data_centers.2026-08-03.csv
+# (75 facilities, CC-BY, snapshotted 2026-08-03 — see that dir's
+# PROVENANCE.md). Epoch's own per-row "Selected Sources" column already
+# carries real citations for the base owner/user facts; this layer adds
+# what Epoch's schema doesn't have — the SPLIT between who owns the land
+# and shell (propco), who built/operates the technical infrastructure
+# (operator), who leases capacity as a business matter (tenant), and who
+# actually consumes the compute (end-user) — which are frequently four
+# different entities collapsed into Epoch's single "Owner" field.
+#
+# Discipline: import as a source to verify and reconcile, never as truth
+# to copy (this repo's rule, restated in epoch-datacenters/PROVENANCE.md).
+# Every record below either (a) cites Epoch's own already-verified
+# per-facility source, explicitly noted as such, or (b) cites fresh
+# WebSearch/WebFetch research done this build pass (2026-08-10) where the
+# owner/operator/propco/tenant split isn't visible from Epoch's columns
+# alone — those are marked new_research: true with their own citations,
+# independently fetched and quoted, not fabricated.
+#
+# Coverage: top facilities by current MW (materiality-ordered, echoing q1's
+# materiality-floor logic) — NOT the full 75-row census. This is a first
+# tranche; extending it is direct, mechanical follow-on work (walk further
+# down the MW-sorted list, apply the same research pattern).
+#
+# control_cut values (this repo's own taxonomy, not Epoch's):
+#   vertically-integrated       — one corporate family owns land, builds,
+#                                  operates, AND consumes (no external
+#                                  tenant at all)
+#   vertically-integrated-leased-out — owner/operator is a hyperscaler;
+#                                  capacity is sold/dedicated to an
+#                                  external AI-lab customer under a
+#                                  compute contract (not a real-estate
+#                                  lease) — e.g. AWS building for Anthropic
+#   propco-lease                — landlord/developer (propco) owns the
+#                                  land+shell; a separate operator or
+#                                  tenant leases the technical
+#                                  infrastructure; sometimes a further
+#                                  sub-tenant actually consumes the compute
+#   unconfirmed                 — Epoch's own owner/user fields are blank
+#                                  or unresolved and this pass did not
+#                                  clear it
+#
+# YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
+
+schema_ref: "INBOX/sotg/2026-08-03-state-of-the-game-SYNTHESIS.md"
+epoch_snapshot: "sources/external/epoch-datacenters/data_centers.2026-08-03.csv"
+built: "2026-08-10"
+
+records:
+- facility: OpenAI Stargate Abilene
+  epoch_current_mw: 421
+  country: United States
+  control_cut: propco-lease
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Oracle #confident (per Epoch''s Owner field)'
+    operator: Crusoe Energy Systems — built and operates the physical campus ("flagship" Stargate site,
+      8 buildings, topped out)
+    propco: Crusoe, financed via a $2.3B loan (Crusoe + Blue Owl Capital + Primary Digital Infrastructure)
+      plus $11.6B additional debt/equity secured May 2025 (~$15B total committed capital — matches Epoch's
+      own $15.95B capital-cost figure for this facility almost exactly, a real cross-check)
+    tenant_capacity_buyer: Oracle — reported ~15-year lease for the facility's initial capacity (Oracle
+      Cloud Infrastructure)
+    end_user: OpenAI, under the Stargate program (OpenAI/Oracle/SoftBank)
+  sources:
+  - label: Epoch AI (per-row Selected Sources — Crusoe 2024 Impact Report, Mortenson project profile)
+    url: https://www.mortenson.com/projects/abilene-data-center-development
+    as_of: '2026-08-03'
+    figure: 'Owner: Oracle #confident; Investors: Softbank,OpenAI,Oracle; Construction: Mortenson'
+  - label: Crusoe Energy Systems newsroom
+    url: https://www.crusoe.ai/resources/newsroom/crusoe-announces-flagship-abilene-data-center-is-live
+    as_of: '2026-08-10'
+    figure: Crusoe built and operates the flagship Abilene campus; topped out final (8th) building
+  - label: ConnectCRE
+    url: https://www.connectcre.com/stories/oracle-to-lease-abilene-data-center/
+    as_of: '2026-08-10'
+    figure: Oracle under long-term (~15yr) lease for the facility's initial capacity
+  - label: Construction Review Online
+    url: https://constructionreviewonline.com/crusoe-11-6b-to-expand-ai-data-center-campus-in-abilene-texas/
+    as_of: '2026-08-10'
+    figure: Crusoe secured $11.6B additional debt/equity (May 2025), ~$15B total committed capital
+  notes: 'Live disagreement worth flagging to Ben: Bloomberg (2026-03-24, "Microsoft to Rent Texas Data
+    Center Dropped by OpenAI, Oracle") and Data Center Dynamics report Oracle/OpenAI DROPPED PLANS TO
+    EXPAND at this campus and Microsoft is now renting capacity there, with Meta in talks for more — both
+    dated BEFORE Epoch''s 2026-08-03 snapshot, yet Epoch''s row still reads Owner=Oracle/Users=OpenAI
+    only, no Microsoft or Meta. Two readings are possible: (a) Epoch''s row tracks only the original 8-building
+    flagship deal, undisturbed, while the tenant churn concerns a separate expansion phase; or (b) Epoch''s
+    snapshot needs a coverage-extension update. NOT resolved here — recorded per R-16/R-19 (name the ambiguity,
+    don''t legislate it). This is exactly the kind of world-event delta the typed delta ledger (q1 sec
+    3) exists to catch.'
+  new_research_this_pass: true
+- facility: CoreWeave Denton TX
+  epoch_current_mw: 262
+  country: United States
+  control_cut: propco-lease
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'CoreWeave #confident (per Epoch''s Owner field)'
+    operator: Core Scientific — "builder and landlord" (site is a converted Core Scientific bitcoin-mining
+      campus)
+    propco: Core Scientific
+    tenant_capacity_buyer: CoreWeave — leases capacity from Core Scientific (a colocation-plus-power contract,
+      most recently extended to 78 acres / 394MW)
+    end_user: OpenAI — CoreWeave subleases/re-sells this capacity to OpenAI once construction finishes
+  sources:
+  - label: Core Scientific investor press release (Epoch's own first cited source)
+    url: https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site
+    as_of: '2026-08-03'
+    figure: Core Scientific/CoreWeave $1.2B expansion at Denton, TX
+  - label: dentonrc.com (Denton Record-Chronicle)
+    url: https://dentonrc.com/news/denton_municipal_electric/core-scientific-which-has-a-denton-ai-data-center-will-be-sold-to-n-j/article_d0b3318b-303e-4543-b3ad-55f3bfcb5e58.html
+    as_of: '2026-08-10'
+    figure: Core Scientific (Denton AI DC operator) proposed $9B all-stock sale to CoreWeave
+  - label: Construction Review Online
+    url: https://constructionreviewonline.com/core-scientific-to-invest-6-1-billion-in-converting-crypto-mine-in-denton-into-ai-data-center/
+    as_of: '2026-08-10'
+    figure: Core Scientific = builder/landlord; total investment up to $6.1B; lease extended to 78 acres
+      / 394MW
+  notes: 'Important correction to the naive reading of Epoch''s Owner field ("CoreWeave #confident"):
+    CoreWeave does NOT own this facility. Core Scientific does. CoreWeave and Core Scientific signed a
+    $9B all-stock MERGER agreement 2025-07-07 that would have converted this from an arm''s-length lease
+    into vertical integration — but Core Scientific''s stockholders VOTED IT DOWN at a special meeting
+    2025-10-30, and Core Scientific terminated the agreement immediately. The companies stated they''d
+    continue the commercial (lease) relationship. So as of this pass, propco-lease is the correct control_cut,
+    not vertically-integrated — but this is a live, recently-contested boundary worth a standing watch
+    (a natural candidate for this repo''s own thread-tracking, separate from this static attribution record).'
+  new_research_this_pass: true
+- facility: Microsoft Fairwater Atlanta
+  epoch_current_mw: 636
+  country: United States
+  control_cut: propco-lease
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Microsoft #confident (per Epoch''s Owner field)'
+    operator: Microsoft — builds and operates the AI supercomputer inside; "world's first planet-scale
+      AI superfactory," directly linked to Fairwater Wisconsin
+    propco: QTS Data Centers (Blackstone-owned) — owns the underlying 615+313-acre Fayetteville, GA campus;
+      acquired the original parcel Aug 2022 for $153.8M, assembled 313 more acres in 2024-2025
+    tenant_capacity_buyer: Microsoft — leases the land/site from QTS, builds its own technical infrastructure
+      on it
+    end_user: 'OpenAI and Microsoft (per Epoch''s own #likely tags)'
+  sources:
+  - label: Epoch AI (per-row Selected Sources — 2023 Air Permit, Bloomberg)
+    url: https://www.bloomberg.com/news/features/2024-12-08/georgia-s-blackstone-backed-qts-data-center-hits-resistance-over-ai-power-needs
+    as_of: '2026-08-03'
+    figure: 'Owner: Microsoft #confident; Energy: Georgia Power; Bloomberg source already names Blackstone/QTS'
+  - label: Measured AI Substack (build-out profile)
+    url: https://measuredai.substack.com/p/microsoft-fairwater-atlanta-data-center
+    as_of: '2026-08-10'
+    figure: Built on leased land held by Blackstone-owned QTS Data Centers, powered exclusively from the
+      Georgia Power grid
+  - label: Bisnow
+    url: https://www.bisnow.com/national/news/data-center/blackstones-data-center-subsidiary-lands-15b-loan-to-refinance-pair-of-us-properties-130011
+    as_of: '2026-08-10'
+    figure: QTS = Blackstone data-center subsidiary; $1.5B refinancing loan on its properties
+  notes: 'A second real correction to Epoch''s naive Owner field: Epoch''s own citation (the Bloomberg
+    piece) already names Blackstone/QTS in its headline, but the CSV''s Owner column reads only "Microsoft
+    #confident" — Epoch is tracking the OPERATOR, not the propco. This is precisely the gap the sotg synthesis
+    (INBOX/sotg/) flagged as nobody-publishes: "owner/operator/propco/tenant attribution."'
+  new_research_this_pass: true
+- facility: Anthropic-Amazon New Carlisle (Project Rainier)
+  epoch_current_mw: 910
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Amazon #confident'
+    operator: Amazon (AWS)
+    propco: Amazon (AWS)
+    tenant_capacity_buyer: Anthropic — dedicated compute customer under a capacity contract, not a real-estate
+      lease
+    end_user: Anthropic
+  sources:
+  - label: Epoch AI (per-row source — Air Construction Permit)
+    url: https://www.aboutamazon.com/news/aws/aws-project-rainier-ai-trainium-chips-compute-cluster
+    as_of: '2026-08-03'
+    figure: 'Owner: Amazon #confident; Users: Anthropic #confident; Project: Project Rainier #confident'
+  notes: No new research needed — Amazon vertically owns/operates AWS datacenters; Anthropic is a named
+    compute customer (per this repo's own step0-audit:anthropic-amazon-4b-sep2023/nov2024 findings in
+    research/q1-flows/edges.yaml). Clean case.
+- facility: Amazon Madison Mega Site
+  epoch_current_mw: 284
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Amazon #confident'
+    operator: Amazon (AWS)
+    propco: Amazon (AWS)
+    tenant_capacity_buyer: Anthropic (#speculative in Epoch — lower confidence than New Carlisle)
+    end_user: Anthropic (speculative)
+  sources:
+  - label: Epoch AI CSV row
+    url: https://www.nytimes.com/2025/06/24/technology/amazon-ai-data-centers.html
+    as_of: '2026-08-03'
+    figure: 'Owner: Amazon #confident; Users: Anthropic #speculative; Project: Project Rainier #speculative'
+  notes: 'Epoch itself tags the Anthropic tenancy #speculative here (vs. #confident at New Carlisle) —
+    carried through unchanged, not upgraded without independent confirmation.'
+- facility: Amazon Ridgeland
+  epoch_current_mw: 228
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Amazon #confident'
+    operator: Amazon (AWS)
+    propco: Amazon (AWS)
+    tenant_capacity_buyer: Anthropic (#speculative in Epoch — lower confidence than New Carlisle)
+    end_user: Anthropic (speculative)
+  sources:
+  - label: Epoch AI CSV row
+    url: https://www.nytimes.com/2025/06/24/technology/amazon-ai-data-centers.html
+    as_of: '2026-08-03'
+    figure: 'Owner: Amazon #confident; Users: Anthropic #speculative; Project: Project Rainier #speculative'
+  notes: 'Epoch itself tags the Anthropic tenancy #speculative here (vs. #confident at New Carlisle) —
+    carried through unchanged, not upgraded without independent confirmation.'
+- facility: Microsoft Fairwater Wisconsin
+  epoch_current_mw: 369
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Microsoft #confident'
+    operator: Microsoft
+    propco: Microsoft (no QTS/third-party propco found in Epoch's own sourcing for this specific site,
+      unlike the Atlanta twin)
+    tenant_capacity_buyer: OpenAI, Microsoft (#likely both, per Epoch)
+    end_user: OpenAI, Microsoft
+  sources:
+  - label: Microsoft engineering blog (Epoch's own primary source)
+    url: https://blogs.microsoft.com/blog/2025/09/18/inside-the-worlds-most-powerful-ai-datacenter/
+    as_of: '2026-08-03'
+    figure: '"World''s most powerful AI datacenter," Fairwater/AI-WAN linkage to the Atlanta site'
+  notes: Not independently re-checked for a hidden propco this pass (unlike Atlanta, where Epoch's own
+    citation surfaced Blackstone/QTS unprompted) — flagged as an open question, not asserted vertically-integrated
+    with full confidence.
+- facility: Microsoft Goodyear
+  epoch_current_mw: 202
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Microsoft #confident'
+    operator: Microsoft
+    propco: Microsoft (not independently checked for a hidden propco this pass)
+    tenant_capacity_buyer: OpenAI (#likely/#speculative per Epoch)
+    end_user: OpenAI
+  sources:
+  - label: Epoch AI CSV row
+    url: https://gis.maricopa.gov/aqd/recordsviewer/#
+    as_of: '2026-08-03'
+    figure: 'Owner: Microsoft #confident; Users: OpenAI #likely, Microsoft #confident'
+- facility: Microsoft Project Osmium
+  epoch_current_mw: 190
+  country: United States
+  control_cut: vertically-integrated-leased-out
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Microsoft #confident'
+    operator: Microsoft
+    propco: Microsoft (not independently checked for a hidden propco this pass)
+    tenant_capacity_buyer: OpenAI (#likely/#speculative per Epoch)
+    end_user: OpenAI
+  sources:
+  - label: Epoch AI CSV row
+    url: https://newsletter.semianalysis.com/p/microsofts-ai-strategy-deconstructed
+    as_of: '2026-08-03'
+    figure: 'Owner: Microsoft #confident; Users: OpenAI #speculative'
+- facility: Meta Prometheus
+  epoch_current_mw: 631
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Meta #confident'
+    operator: Meta
+    propco: Meta
+    tenant_capacity_buyer: Meta
+    end_user: Meta (internal — Llama training/inference, no external tenant)
+  sources:
+  - label: Meta Data Centers (Epoch's own primary source)
+    url: https://engineering.fb.com/2025/09/29/data-infrastructure/metas-infrastructure-evolution-and-the-advent-of-ai/
+    as_of: '2026-08-03'
+    figure: Meta blog post with details on Prometheus
+- facility: Meta Rosemount
+  epoch_current_mw: 178
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Meta #confident'
+    operator: Meta
+    propco: Meta
+    tenant_capacity_buyer: Meta
+    end_user: Meta (internal — Llama training/inference, no external tenant)
+  sources:
+  - label: Meta Data Centers (Epoch's own primary source)
+    url: https://datacenters.atmeta.com/2024/03/hello-rosemount/
+    as_of: '2026-08-03'
+    figure: Meta datacenter announcement
+- facility: Meta Jeffersonville
+  epoch_current_mw: 178
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Meta #confident'
+    operator: Meta
+    propco: Meta
+    tenant_capacity_buyer: Meta
+    end_user: Meta (internal — Llama training/inference, no external tenant)
+  sources:
+  - label: Meta Data Centers (Epoch's own primary source)
+    url: https://datacenters.atmeta.com/wp-content/uploads/2025/02/Meta_s-Jeffersonville-Data-Center.pdf
+    as_of: '2026-08-03'
+    figure: Meta datacenter fact sheet
+- facility: Meta Montgomery
+  epoch_current_mw: 153
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Meta #confident'
+    operator: Meta
+    propco: Meta
+    tenant_capacity_buyer: Meta
+    end_user: Meta (internal — Llama training/inference, no external tenant)
+  sources:
+  - label: Meta Data Centers (Epoch's own primary source)
+    url: https://datacenters.atmeta.com/2024/05/hello-montgomery/
+    as_of: '2026-08-03'
+    figure: Meta datacenter announcement
+- facility: Meta Kuna
+  epoch_current_mw: 152
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'Meta #confident'
+    operator: Meta
+    propco: Meta
+    tenant_capacity_buyer: Meta
+    end_user: Meta (internal — Llama training/inference, no external tenant)
+  sources:
+  - label: Meta Data Centers (Epoch's own primary source)
+    url: https://datacenters.atmeta.com/wp-content/uploads/2025/02/Meta_s-Kuna-Data-Center.pdf
+    as_of: '2026-08-03'
+    figure: Meta datacenter fact sheet
+- facility: Google New Albany
+  epoch_current_mw: 339
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://sustainability.google/reports/google-2025-environmental-report/
+    as_of: '2026-08-03'
+    figure: Google 2025 Environmental Report
+  notes: 'end_user is Epoch''s own #speculative tag, not independently upgraded — Google publishes no
+    per-site workload breakdown.'
+- facility: Google Columbus
+  epoch_current_mw: 303
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://www.datacenterdynamics.com/en/news/google-breaks-ground-on-columbus-ohio-data-center/
+    as_of: '2026-08-03'
+    figure: DCD — Google breaks ground on Columbus, Ohio DC
+- facility: Google Bristow
+  epoch_current_mw: 279
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://sustainability.google/reports/google-2026-environmental-report/
+    as_of: '2026-08-03'
+    figure: Google 2026 Environmental Report
+- facility: Google Council Bluffs (East)
+  epoch_current_mw: 237
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://programs.iowadnr.gov/easyair/Public/EnSuite/Shared/Pages/Util/ServerRptViewer.aspx?sr=/IDNR/Reports/EASY/RPT_Construction_Application_A_GEN&SUBMISSION_RID=67330&SUB_FORM_RID=148293
+    as_of: '2026-08-03'
+    figure: Iowa DNR construction permit application
+  notes: 'end_user is Epoch''s own #speculative tag, not independently upgraded — Google publishes no
+    per-site workload breakdown.'
+- facility: Google Omaha
+  epoch_current_mw: 237
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://sustainability.google/reports/google-2025-environmental-report/
+    as_of: '2026-08-03'
+    figure: Google 2025 Environmental Report
+  notes: 'end_user is Epoch''s own #speculative tag, not independently upgraded — Google publishes no
+    per-site workload breakdown.'
+- facility: Google Papillion
+  epoch_current_mw: 237
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://sustainability.google/reports/google-2025-environmental-report/
+    as_of: '2026-08-03'
+    figure: Google 2025 Environmental Report, p.109
+  notes: 'end_user is Epoch''s own #speculative tag, not independently upgraded — Google publishes no
+    per-site workload breakdown.'
+- facility: Google Storey County
+  epoch_current_mw: 161
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://ndep-onbase.nv.gov/
+    as_of: '2026-08-03'
+    figure: Nevada Division of Environmental Protection filing
+- facility: Google The Dalles
+  epoch_current_mw: 154
+  country: United States
+  control_cut: vertically-integrated
+  coverage_state: aggregated
+  attribution:
+    owner_of_record_per_epoch: 'Google #confident'
+    operator: Google
+    propco: Google
+    tenant_capacity_buyer: Google
+    end_user: Google DeepMind (#speculative per Epoch — Google doesn't publicly break out which sites
+      serve DeepMind vs. Search/Cloud/other workloads)
+  sources:
+  - label: Epoch AI CSV row primary source
+    url: https://static1.squarespace.com/static/5e9a1686f716835e61268f2a/t/63659cb153e00407c9cd0bc9/1667603634454/SPR%2B512-22%2C%2BNOD%2C%2B10-31-22%2B%281%29.pdf
+    as_of: '2026-08-03'
+    figure: Local land-use filing
+- facility: QTS Richmond 1
+  epoch_current_mw: 238
+  country: United States
+  control_cut: unconfirmed
+  coverage_state: unmeasured
+  attribution:
+    owner_of_record_per_epoch: (blank in Epoch's Owner field)
+    operator: QTS Data Centers (Blackstone-owned)
+    propco: QTS Data Centers (Blackstone-owned)
+    tenant_capacity_buyer: unconfirmed — no AI-specific tenant named in Epoch's Users field or in this
+      pass's research
+    end_user: unconfirmed
+  sources:
+  - label: QTS Richmond 1 facfsheet
+    url: https://qtsdatacenters.com/data-centers/richmond-1/
+    as_of: '2026-08-03'
+    figure: 'QTS-branded facility; Energy company: Dominion Energy'
+  notes: 'A real correction to Epoch''s own row: Epoch leaves Owner BLANK for both Richmond sites even
+    though its own cited source is a QTS-branded factsheet. Recorded here as QTS/Blackstone-owned (propco+operator),
+    with the AI-specific tenant genuinely unconfirmed — this is a colo facility, not a single-tenant AI
+    campus, so a specific AI buyer may not exist or may not be public.'
+  new_research_this_pass: true
+- facility: QTS Richmond 2
+  epoch_current_mw: 180
+  country: United States
+  control_cut: unconfirmed
+  coverage_state: unmeasured
+  attribution:
+    owner_of_record_per_epoch: (blank in Epoch's Owner field)
+    operator: QTS Data Centers (Blackstone-owned)
+    propco: QTS Data Centers (Blackstone-owned)
+    tenant_capacity_buyer: unconfirmed — no AI-specific tenant named in Epoch's Users field or in this
+      pass's research
+    end_user: unconfirmed
+  sources:
+  - label: QTS Richmond 1 facfsheet
+    url: https://qtsdatacenters.com/data-centers/richmond-1/
+    as_of: '2026-08-03'
+    figure: 'QTS-branded facility; Energy company: Dominion Energy'
+  notes: 'A real correction to Epoch''s own row: Epoch leaves Owner BLANK for both Richmond sites even
+    though its own cited source is a QTS-branded factsheet. Recorded here as QTS/Blackstone-owned (propco+operator),
+    with the AI-specific tenant genuinely unconfirmed — this is a colo facility, not a single-tenant AI
+    campus, so a specific AI buyer may not exist or may not be public.'
+  new_research_this_pass: true
+- facility: Colossus 1
+  epoch_current_mw: 340
+  country: United States
+  control_cut: propco-lease
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'SpaceXAI #confident (per Epoch)'
+    operator: CTC Property LLC — a wholly-owned xAI subsidiary (Nevada LLC) that holds/operates the Tennessee
+      campuses
+    propco: CTC Property LLC (xAI/SpaceX)
+    tenant_capacity_buyer: Anthropic — leases the ENTIRE facility (220,000+ Nvidia GPUs, 300MW) at $1.25B/month
+      through May 2029 (>$40B total), per this build's q1 edge anthropic-model-training--xai-datacenter-operation--2026-colossus1-lease
+    end_user: Anthropic
+  sources:
+  - label: Epoch AI (per-row source)
+    url: https://www.anthropic.com/news/higher-
+    as_of: '2026-08-03'
+    figure: 'Owner: SpaceXAI #confident; Users: Anthropic #confident'
+  - label: TechCrunch, direct fetch (also the q1 edge's source)
+    url: https://techcrunch.com/2026/05/20/anthropic-will-pay-xai-1-25-billion-per-month-for-compute/
+    as_of: '2026-05-20'
+    figure: $1.25B/month, >$40B total through May 2029, 300MW, Colossus 1
+  notes: SpaceX formally acquired xAI in an all-stock deal (closed May 2026, ~$1.25T combined valuation
+    per this pass's research) — so "SpaceXAI" in Epoch's Owner field is not a typo, it names the merged
+    entity. Prior to the Anthropic lease, Colossus 1 reportedly ran at only ~11% utilization under xAI's
+    own training workload (xAI had migrated primary training to Colossus 2) — the lease is SpaceX/xAI
+    monetizing an underused asset, not new capacity. Context, not independently verified beyond the search-result
+    synthesis this pass; flagged as lower-confidence background, distinct from the lease terms above which
+    ARE independently fetch-verified.
+  new_research_this_pass: true
+- facility: Colossus 2
+  epoch_current_mw: 946
+  country: United States
+  control_cut: propco-lease
+  coverage_state: measured
+  attribution:
+    owner_of_record_per_epoch: 'SpaceXAI #confident (per Epoch)'
+    operator: CTC Property LLC (xAI/SpaceX)
+    propco: CTC Property LLC (xAI/SpaceX)
+    tenant_capacity_buyer: 'xAI itself (primary training use) — Epoch also lists Anthropic #confident
+      and Cursor #confident as users'
+    end_user: xAI, Anthropic, Cursor (per Epoch); a separate, lower-confidence source this pass claimed
+      ~110,000 GPUs on Colossus 2 are leased to Google, but the primary TechCrunch reporting on that Google
+      deal EXPLICITLY states the facility is unconfirmed and describes Colossus 2 as "reserved for xAI"
+      — that claim is NOT adopted here (see the paired q1 edge google-ai-compute-procurement--xai-datacenter-operation--2026-lease,
+      which deliberately does NOT name a facility)
+  sources:
+  - label: Epoch AI (per-row source — WSJ profile)
+    url: https://www.wsj.com/tech/elon-musk-xai-memphis-tennessee-power-dec4c70d
+    as_of: '2026-08-03'
+    figure: 'Owner: SpaceXAI #confident; Users: Anthropic #confident, Cursor #confident, SpaceXAI #confident'
+  - label: TechCrunch, direct fetch (the Google-xAI deal's actual reporting)
+    url: https://techcrunch.com/2026/06/05/google-will-pay-spacex-920m-per-month-for-compute/
+    as_of: '2026-06-05'
+    figure: '"SpaceX didn''t say which specific data center Google would be using"; Colossus 2 described
+      as reserved for xAI'
+  notes: 'One data point worth Ben''s eye, already flagged by the sotg synthesis before this build pass:
+    Anthropic is a confirmed user of capacity that sits on SpaceX/xAI-owned infrastructure — a frontier
+    lab renting from a direct competitor''s corporate family, at real dollar scale ($1.25B/month for the
+    sibling facility, Colossus 1).'
+  new_research_this_pass: true
+- facility: Huawei Horinger
+  epoch_current_mw: 241.8
+  country: China
+  control_cut: unconfirmed
+  coverage_state: unmeasured
+  attribution:
+    owner_of_record_per_epoch: 'Huawei #confident'
+    operator: not researched this pass
+    propco: not researched this pass
+    tenant_capacity_buyer: (blank)
+    end_user: (blank)
+  sources:
+  - label: Epoch AI CSV row
+    url: https://web.archive.org/web/20260623185431/https://finance.sina.com.cn/tech/roll/2025-07-14/doc-inffmier6612415.shtml
+    as_of: '2026-08-03'
+    figure: 'Owner: Huawei #confident; CloudMatrix384 use announced at campus launch'
+  notes: Deliberately NOT deep-attributed this pass, consistent with q3's "ex-CN/RU" framing (INBOX/sotg/2026-08-03-state-of-the-game-SYNTHESIS.md
+    sec on Ben's bet) — recorded from Epoch for census completeness only, propco/operator research on
+    Chinese facilities is a deliberate scope exclusion for this tranche, not an oversight. Flag for a
+    ruling if that scoping should change.
+- facility: VNET Bayin Ulanqab
+  epoch_current_mw: 221
+  country: China
+  control_cut: unconfirmed
+  coverage_state: unmeasured
+  attribution:
+    owner_of_record_per_epoch: 'VNET #confident'
+    operator: not researched this pass
+    propco: not researched this pass
+    tenant_capacity_buyer: 'ByteDance #speculative'
+    end_user: 'ByteDance #speculative'
+  sources:
+  - label: Epoch AI CSV row
+    url: https://web.archive.org/web/20260619185141/https://www.vnet.com/resource.html
+    as_of: '2026-08-03'
+    figure: 'Owner: VNET #confident; Users: ByteDance #speculative; Project: 10 GW Hyperscale 2.0 #confident'
+  notes: Deliberately NOT deep-attributed this pass, consistent with q3's "ex-CN/RU" framing (INBOX/sotg/2026-08-03-state-of-the-game-SYNTHESIS.md
+    sec on Ben's bet) — recorded from Epoch for census completeness only, propco/operator research on
+    Chinese facilities is a deliberate scope exclusion for this tranche, not an oversight. Flag for a
+    ruling if that scoping should change.

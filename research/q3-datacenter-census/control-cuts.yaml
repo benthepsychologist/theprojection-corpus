@@ -1,0 +1,60 @@
+# research/q3-datacenter-census/control-cuts.yaml — definitions for the
+# `control_cut` values used in attribution.yaml. This is descriptive
+# taxonomy (this repo's own, since Epoch does not model this seam at all),
+# not a q1-style versioned filter — it classifies facilities, it does not
+# reclassify flows. Kept as a separate small file so attribution.yaml's
+# per-record `control_cut` values have one place they're defined.
+
+schema_ref: "INBOX/sotg/2026-08-03-state-of-the-game-SYNTHESIS.md"
+built: "2026-08-10"
+
+definitions:
+  vertically-integrated:
+    label: "Vertically integrated"
+    meaning: >
+      One corporate family owns the land, builds and operates the
+      infrastructure, AND consumes the compute. No external tenant at any
+      layer. Example: Meta's own campuses (Prometheus, Rosemount, ...) and
+      Google's own campuses (New Albany, Columbus, ...) for internal
+      workloads (Meta AI / Google DeepMind).
+
+  vertically-integrated-leased-out:
+    label: "Vertically integrated, capacity sold to an external customer"
+    meaning: >
+      The owner/operator is a hyperscaler that both owns and runs the
+      physical infrastructure, but the compute itself is dedicated (by
+      contract, not real-estate lease) to a named external AI-lab customer.
+      Example: Amazon owns and operates New Carlisle; Anthropic is the
+      compute customer under a capacity contract (this repo's
+      research/q1-flows/edges.yaml carries the dollar side of that
+      relationship). Distinguished from `propco-lease` because the
+      owner/operator layer is NOT split — only the tenant/end-user layer
+      is external.
+
+  propco-lease:
+    label: "Propco/developer leases to an operator or capacity buyer"
+    meaning: >
+      The entity that owns the land and shell (the propco — often a
+      real-estate/infrastructure investor like Blackstone via QTS, or a
+      dedicated AI-infrastructure developer like Crusoe or Core Scientific)
+      is a DIFFERENT entity from whoever leases and runs the technical
+      infrastructure inside, which may itself be different again from the
+      end-user actually consuming the compute. This is the genuinely hard,
+      previously-unmapped seam the sotg research sweep (INBOX/sotg/)
+      identified as nobody's open dataset. Three real examples this build
+      pass, each with an independent-entity propco: OpenAI Stargate Abilene
+      (Crusoe propco/operator -> Oracle lessee -> OpenAI end-user);
+      CoreWeave Denton TX (Core Scientific propco/operator -> CoreWeave
+      lessee -> OpenAI sub-tenant); Microsoft Fairwater Atlanta (QTS/
+      Blackstone propco -> Microsoft operator/lessee -> OpenAI+Microsoft
+      end-users).
+
+  unconfirmed:
+    label: "Unconfirmed"
+    meaning: >
+      Epoch's own owner/user fields are blank, low-confidence, or this
+      research pass did not clear the ownership/tenancy question. Recorded
+      honestly as open rather than guessed — the q1/q3 shared discipline
+      that "nothing is dark by definition ... darkness is an outcome or a
+      priority" (q1 R-06) applies here too: these are named gaps, not
+      silent omissions.
