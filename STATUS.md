@@ -61,6 +61,26 @@ correctly. The 08-09 note and everything older sit under it.*
 > inside grace. 08-09 stays `building`/`coverage: pending` (still short
 > of the ~5h-past-close window the coverage critic needs); 08-10 opened
 > thin. All three repos verified clean at wrap time.
+>
+> **2026-08-10 (later) — a light ~100-minute gap-fill pass, and the
+> week-boundary mechanism confirmed working correctly.** A second
+> `/daily` run: mental-health came back clean (nothing new — a real,
+> expected result), while AI (Meta's "Muse Glimmer" open-weight model +
+> a Zuckerberg essay against concentrated frontier AI, House Democrats
+> asking for OpenAI/Anthropic/Meta CEO testimony) and global-capital
+> (Intel's $15B common-stock offering for its foundry buildout) each
+> found one real item. `sec_edgar` and `clinicaltrials.gov` both
+> confirmed recovered from this morning's outages. With genuine
+> 08-10-dated content now on record, the live artifact payload picked
+> it up correctly (3 items, day: 08-10) — confirming this morning's gap
+> was specifically about 08-09 content falling into last week's bucket,
+> not a general malfunction. A real staleness catch along the way:
+> `intel-rescue`'s `last_seen` had been stuck at 07-28 despite real
+> activity since — flagged for a decay-review look, not chased further.
+> Rendered, republished, briefings refreshed, `/publish --push` clean,
+> deploy live-verified (a first content check ran before the Cloudflare
+> build had actually finished — "queued" isn't "live," re-checked after
+> the real deploy landed). All three repos verified clean.
 
 > **2026-08-09 — the pipeline gap closed, the site got read for a
 > stranger's eyes and fixed, `/week` ran its full synthesis, and Ben

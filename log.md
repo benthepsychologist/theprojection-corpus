@@ -2577,3 +2577,42 @@ raising with Ben — does he want a "last 7 curated days" rolling window
 instead of a fixed Mon-Sun bucket, or is Monday-morning thinness
 acceptable since the briefing pages (the surface he actually shows his
 team) aren't affected? All three repos verified clean at wrap time.
+
+## 2026-08-10 (later) — /daily: a light ~100-minute gap-fill pass, 08-10 opens for real
+
+Second `/daily` run of the day, ~90 minutes after the first closed the
+08-09 backlog. `collect.py` re-ran since the prior collect (18/18;
+`sec_edgar` recovered from its earlier 500s, `clinicaltrials.gov`
+confirmed recovered by a direct spot-check — 200 OK). Given the short
+window, ran three lighter gap-fill agents (one per lens) instead of a
+full backlog sweep: mental-health came back genuinely clean (nothing
+survived verification — a real, expected null result); AI and
+global-capital each found one real item. AI: Meta released "Muse
+Glimmer" (a 30B-parameter open-weight model small enough for one
+consumer GPU) alongside a Zuckerberg essay against concentrating
+frontier AI, and House Democrats formally asked Speaker Johnson to
+compel the OpenAI/Anthropic/Meta CEOs to testify on the rogue-agent
+pattern — the next beat that thread's own watch note had already
+anticipated. Global-capital: Intel launched a $15B common-stock
+offering for its foundry buildout, stacked on the CHIPS-Act equity
+stake already tracked (a real staleness catch along the way:
+`intel-rescue`'s `last_seen` had been stuck at 07-28 despite real
+activity since — flagged in `threads.yaml` for a decay-review look, not
+investigated further here). A second global-capital lead (MSC/BlackRock
+withdrawing a Barcelona port stake bid) was held back on a single
+unconfirmed Reuters headline rather than published.
+
+Confirms the week-boundary mechanism named in the morning's entry: with
+3 real items now dated 2026-08-10, `render_read.py`'s payload correctly
+picked them up this time (days: ['2026-08-10'], 3 items) — the gap was
+specifically about yesterday's content falling into last week's bucket,
+not a general malfunction. Rendered + republished; refreshed front + ai
++ global-capital briefings (mental-health briefing left as-is, nothing
+changed); `/publish --push` ran clean, Cloudflare deploy live-verified
+by content check (Glimmer/House Democrats/foundry buildout all present
+after the second deploy completed — the first check ran before the
+build had finished, a reminder that "queued" isn't "live").
+
+**Pick up:** 08-09 is now getting close to finalizable (~14:00 UTC) —
+next `/daily` pass should run the coverage critic on it. Nothing else
+blocking. All three repos verified clean at wrap time.

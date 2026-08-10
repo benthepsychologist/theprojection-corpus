@@ -18,6 +18,16 @@ customer wins (Microsoft, Tesla, Apple, Fortinet so far), whether the
 state stake changes behavior, Ohio's fate. Backstory crawled 2026-07-28 —
 see `artifacts/findings/intel-rescue-2026-07-28.md`.
 
+## 2026-08-10 — Intel raises $15B in fresh equity for the foundry buildout
+
+- **Intel launched a $15 billion common-stock offering to fund its
+  foundry buildout**, J.P. Morgan, Goldman Sachs, Morgan Stanley, and
+  Citigroup as joint bookrunners, with a 30-day underwriter option for
+  another $2.25B. A private capital raise stacked on top of the
+  CHIPS-Act equity stake and the Nvidia/SoftBank investments this
+  thread already tracks.
+  ([Intel Newsroom](https://newsroom.intel.com/corporate/intel-announces-proposed-15-billion-common-stock-offering)) ⟨daily 2026-08-10⟩
+
 ## 2026-07-26 — The stake, marked to market: $8.9B → $36-42B
 
 - **The government's Intel stake is now worth $36-42B**, up from the

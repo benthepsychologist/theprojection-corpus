@@ -1,0 +1,744 @@
+source_id: sec_edgar
+params:
+  since: '2026-08-10'
+  companies:
+  - AAPL
+  - MSFT
+  - GOOGL
+  - AMZN
+  - META
+  - ORCL
+  - NVDA
+  - AVGO
+  - TSM
+  - ASML
+  - MU
+  - AMD
+  - CRWV
+  - TSLA
+  - UNH
+  - CI
+  - HUM
+  - ELV
+  - BLK
+  - TALK
+  terms:
+  - OpenAI
+  - Anthropic
+  - Google DeepMind
+  - xAI
+  - Meta AI
+  - Mistral AI
+  - Safe Superintelligence
+  - DeepSeek
+  - Alibaba Qwen
+  - Moonshot AI
+  - Zhipu AI
+  - Liquid AI
+  - Apple
+  - Samsung
+  - Microsoft
+  - Google
+  - Amazon AWS
+  - Oracle
+  - Nvidia
+  - Broadcom
+  - TSMC
+  - ASML
+  - SK Hynix
+  - Micron
+  - SMIC
+  - Hua Hong
+  - Arm
+  - Qualcomm
+  - CoreWeave
+  - AMD
+  - Lancium
+  - Frontier Security
+  - Databricks
+  - Tesla
+  - SpaceX
+  - Sam Altman
+  - Dario Amodei
+  - Jakub Pachocki
+  - Demis Hassabis
+  - Ilya Sutskever
+  - Mira Murati
+  - Jan Leike
+  - Elon Musk xAI
+  - Noam Shazeer
+  - Sundar Pichai
+  - Satya Nadella
+  - Andy Jassy
+  - Mark Zuckerberg
+  - Tim Cook
+  - John Ternus
+  - Jensen Huang
+  - Larry Ellison
+  - Mustafa Suleyman
+  - AI export controls
+  - AI Act enforcement
+  - frontier model regulation
+  - AI licensing regime
+  - AI funding round
+  - AI capex
+  - AI acquisition
+  - AI data center buildout
+  - AI chip supply
+  - AI memory chip shortage
+  - Meta Muse Spark
+  - Muse Code
+  - Highmark
+  - Blue Cross Blue Shield of Massachusetts
+  - Purchaser Business Group on Health
+  - Bain Capital Double Impact
+  - Welsh Carson
+  - General Atlantic
+  - Robert Wood Johnson Foundation
+  - Ballmer Group
+  - Commonwealth Fund
+  - Wellcome Trust
+  - SoftBank
+  - MGX
+  - BlackRock
+  - CXMT
+  - Saudi Public Investment Fund
+  - Berkshire Hathaway
+  - Kevin Warsh
+  - Jerome Powell
+  - Lisa Cook
+  - healthcare private equity
+  - digital health M&A
+  - healthcare lobbying
+  - AI lobbying
+  - sovereign wealth fund AI
+  - Federal Reserve rate decision
+  - Fed chair
+  - Alan insurtech
+  - Cerebral
+  - Talkspace
+  - BetterHelp
+  - Headspace
+  - Spring Health
+  - Lyra Health
+  - Brightside Health
+  - Big Health
+  - Woebot
+  - Wysa
+  - Akili Interactive
+  - SonderMind
+  - Two Chairs
+  - Quartet Health
+  - Pear Therapeutics
+  - Slingshot AI
+  - Character.AI
+  - Replika
+  - Sonia
+  - Peterson Health Technology Institute
+  - ICER
+  - ORCHA
+  - Coalition for Health AI
+  - COMPASS Pathways
+  - Usona Institute
+  - Transcend Therapeutics
+  - Apple Health
+  - Amazon Health
+  - Microsoft Nuance
+  - Verily
+  - LifeStance Health
+  - Kaiser Permanente
+  - Universal Health Services behavioral
+  - Hims & Hers
+  - Thomas Insel
+  - John Torous
+  - Pim Cuijpers
+  - Jonathan Haidt
+  - Nicholas Jacobson
+  - Stephen Schueller
+  - Caroline Pearson
+  - Brian Anderson CHAI
+  - prescription digital therapeutic
+  - digital mental health reimbursement
+  - FDA digital therapeutic clearance
+  - FTC mental health app privacy
+  - AI therapy chatbot regulation
+  - teletherapy
+  - digital mental health funding
+  - mental health startup acquisition
+  - behavioral health market
+  - CCBHC
+  - psilocybin FDA approval
+  - measurement-based care
+  - AI psychosis
+  - AI chatbot suicide risk
+  - youth social media ban
+  - psychotherapy outcomes meta-analysis
+  - digital mental health RCT
+  - digital mental health intervention
+  - smartphone depression intervention
+  - AI chatbot mental health
+  - digital therapeutic anxiety
+  - app-based cognitive behavioral therapy
+  - psilocybin depression
+  - single-session intervention
+  - OpenAI IPO
+  - OpenAI IPO delay
+  - OpenAI public offering
+  - HBM shortage
+  - DRAM price AI
+  - Microsoft MAI
+  - MAI-Thinking-1
+  - Microsoft superintelligence
+  - Microsoft OpenAI stake
+  - Apple Gemini
+  - Apple Intelligence Gemini
+  - Siri Gemini Google
+  - Character.AI lawsuit
+  - Slingshot Ash
+  - FDA therapy chatbot
+  - chatbot wrongful death
+  - AI circular financing
+  - Nvidia OpenAI investment
+  - AI vendor financing
+  - OpenAI losses
+  - AI bubble
+  - Stargate
+  - OpenAI for Countries
+  - Stargate data center
+  - MGX Stargate
+  - SoftBank OpenAI
+  - behavioral health funding
+  - psychiatry AI funding
+  - interventional psychiatry funding
+  - Gold Eagle AI
+  - frontier model review
+  - AI pre-release review
+  - 30-day AI review
+  - China AI chips domestic
+  - Z.AI data center
+  - Kimi K3
+  - China AI export controls
+  - China AI self-sufficiency
+  - OpenAI sandbox escape
+  - Hugging Face breach
+  - OpenAI containment
+  - Erdos model OpenAI
+  - therapy chatbot ban
+  - state AI companion law
+  - AI mental health law state
+  - Kaiser Permanente AI behavioral health
+  - Kaiser clinicians AI
+  - NUHW Kaiser AI
+  - HCA Healthcare AI
+  - HCA Timpani Palantir
+  - HCA nurses AI staffing
+  - Nippon Life OpenAI lawsuit
+  - ChatGPT hallucinated filings
+  - AI developer liability
+  - CXMT IPO
+  - ChangXin Memory
+  - CXMT listing
+  - hyperscaler capex
+  - Big Tech capex
+  - AI infrastructure spending 2026
+  - cloud capex guidance
+  - Google capex
+  - Alphabet capex
+  - Google Cloud capex
+  - Alphabet capital expenditure
+  - Alphabet bond
+  - Meta capex
+  - Meta Platforms capex
+  - Meta AI infrastructure spending
+  - Meta data center spending
+  - AWS capex
+  - Amazon capex
+  - Amazon Web Services capital expenditure
+  - Amazon data center spending
+  - Microsoft capex
+  - Microsoft Azure capex
+  - Microsoft capital expenditure
+  - Microsoft data center spending
+  - Moonshot distillation
+  - Kimi K3 sanctions
+  - Moonshot Entity List
+  - Kratsios Moonshot
+  - Red Sea tanker attack
+  - Houthi oil
+  - Iran Saudi oil shock
+  - Brent crude Middle East
+  - CMS ACCESS Model
+  - ACCESS Model behavioral health
+  - Outcome-Aligned Payments
+  - Colossus xAI
+  - xAI Memphis data center
+  - xAI supercomputer
+  - Colossus GPU cluster
+  - Grok 5
+  - Grok 4.5
+  - xAI Grok model
+  - Grok benchmark ranking
+  - SpaceXAI valuation
+  - SpaceX xAI merger
+  - SpaceXAI public offering
+  - xAI SpaceX X valuation
+  - Grok harmful content
+  - Grok companion mental health
+  - Grok safety controversy
+  - Grok AI harm lawsuit
+  - AI data center construction
+  - AI power deal nuclear
+  - gigawatt data center
+  - AI chip purchase order
+  - custom AI silicon
+  - Nvidia GPU demand
+  - AI data center power
+  - nuclear for AI
+  - data center grid gas turbine
+  - ERCOT
+  - PUCT
+  - interconnection queue
+  - PJM
+  - MISO
+  - AI data center campus
+  - gigawatt data center site
+  - data center moratorium
+  - data center audit
+  - data center approval
+  - data center project
+  - Nvidia order backlog
+  - Nvidia GB300 demand
+  - hyperscaler GPU purchase
+  - Google TPU
+  - Amazon Trainium
+  - Microsoft Maia
+  - Meta MTIA chip
+  - Anthropic chip design
+  - nuclear power AI data center
+  - SMR small modular reactor AI
+  - Oklo X-Energy data center
+  - data center gas turbine permit
+  - AI data center grid interconnection
+  - OpenAI Georgia data center
+  - Project Camellia Effingham
+  - big tech health care AI
+  - tech company mental health
+  - Microsoft Nuance health AI
+  - Microsoft healthcare AI
+  - Suleyman health AI
+  - Verily health
+  - Google health AI
+  - Fitbit health
+  - Apple Health app
+  - Apple health sensor mental health
+  - Apple AI health coach
+  - Amazon One Medical
+  - Amazon Health Services
+  - Amazon Alexa health
+  - ChatGPT Health
+  - OpenAI health care
+  - ChatGPT mental health
+  - AI lab IPO
+  - frontier lab listing
+  - AI IPO valuation
+  - Anthropic IPO
+  - Anthropic confidential filing
+  - Anthropic valuation
+  - Nvidia OpenAI guarantee
+  - Nvidia vendor financing
+  - Nvidia equity stake AI
+  - AI stocks bear market
+  - AI selloff
+  - AI trade unwind
+  - Meta RE100
+  - Meta gas turbines datacenter
+  - Meta natural gas AI
+  - TSMC Arizona
+  - TSMC capex
+  - TSMC capacity
+  - Arm royalty
+  - Arm licensing
+  - Arm v10
+  - Intel golden share
+  - Intel foundry rescue
+  - Intel 18A
+  - CoreWeave backlog
+  - CoreWeave debt
+  - neocloud
+  - BlackRock AI infrastructure
+  - GIP data center
+  - KKR Helix
+  - SoftBank OpenAI
+  - SoftBank Arm collateral
+  - Masayoshi Son AI
+  - Oracle RPO backlog
+  - Oracle free cash flow
+  - Oracle credit rating
+  - HUMAIN AI Saudi Arabia
+  - PIF NEOM The Line
+  - PIF Vision 2030 AI investment
+  - Fidelity Anthropic
+  - Fidelity OpenAI
+  - Fidelity Management Research
+  - Berkshire Alphabet stake
+  - Berkshire AI investing
+  - Buffett Abel AI
+  - Lisa Cook Fed
+  - Trump Fed governor removal
+  - Federal Reserve independence
+  - Allianz Anthropic
+  - Allianz AI claims
+  - Project Nemo
+  - Ping An AI underwriting
+  - Ping An claims automation
+  - NFRA AI insurance guidance
+  - Broadcom custom ASIC
+  - Broadcom TPU MTIA
+  - VMware licensing lawsuit
+  - Qualcomm Dragonfly
+  - Qualcomm datacenter CPU
+  - Qualcomm Modular
+  - AMD Instinct
+  - AMD MI400
+  - AMD Helios
+  - AMD Anthropic
+  - AMD OpenAI warrant
+  - AMD Meta GPU
+  - ASML EUV
+  - ASML High-NA
+  - ASML China export controls
+  - MATCH Act semiconductor
+  - ASML earnings guidance
+  - ASML Mistral
+  - Shanghai Aishengna DUV
+  - Mistral AI funding round
+  - Mistral Medium
+  - Mistral Vibe
+  - Mistral AI valuation
+  - Mistral datacenter
+  - GlobalFoundries capex
+  - GlobalFoundries CHIPS Act
+  - GlobalFoundries quantum
+  - GlobalFoundries Mubadala
+  - GlobalFoundries dividend
+  - GlobalFoundries earnings
+  - AI claim denial
+  - prior authorization AI
+  - WISeR model
+  - MHPAEA
+  - mental health parity rule
+  - parity enforcement
+  - Genesis Mission AI
+  - DOE Genesis Mission
+  - CHIPS Act equity stake
+  - CHIPS grants equity
+  - DAWG DoD AI
+  - CDAO reorganization
+  - DoD AI budget
+  - Alan insurtech Canada
+  - Alan health insurance AI
+  - Canada mental health funding
+  - Canada AI budget
+  - bilateral mental health agreements
+  - China domestic lithography
+  - immersion DUV China
+  - Shanghai Aishengna
+  - SMIC lithography tool
+  - China ASML replacement
+  - data center attack
+  - data center missile strike
+  - AWS Bahrain data center
+  - data center war risk insurance
+  - critical infrastructure AI data center
+  - OpenAI rogue agent
+  - OpenAI Hugging Face breach
+  - Modal Labs breach
+  - pacing the frontier
+  - AI agent sandbox escape
+  - chip stocks hyperscaler rotation
+  - AI capex peaking
+  - semiconductor selloff hyperscaler
+  - Demis Hassabis DeepMind
+  - Jeff Dean Google
+  - Koray Kavukcuoglu
+  - DeepMind CEO
+  - Discovery Loop
+  - Meta AI CSAM ads
+  - Meta child sexual abuse imagery ads
+  - Meta AI-generated CSAM
+  - Anthropic copyright lawsuit
+  - Anthropic Concord Music
+  - Anthropic Project Panama
+  - Anthropic book shredding
+  - evidence-based practice mental health
+  - psychotherapy effectiveness research
+  - AI therapy chatbot RCT
+  - Therabot
+  - generative AI therapy trial
+  - VERA-MH
+  - psilocybin FDA
+  - psychedelic therapy approval
+  - digital therapeutics reimbursement
+  - DiGA
+  - prescription digital therapeutic pricing
+  - social media adolescent mental health
+  - Australia social media ban
+  - school phone ban
+  - NIMH funding cuts
+  - NIH mental health research grants
+  - NICE depression guideline
+  - psychotherapy clinical practice guideline
+  - chatbot delusion
+  - ChatGPT mania psychosis
+  - accelerated TMS
+  - SAINT depression
+  - Stanford neuromodulation therapy
+  forms:
+  - 8-K
+  - 10-Q
+  - 10-K
+fetched_at: '2026-08-10T12:08:07.573951+00:00'
+items:
+- id: 0001104659-26-092900
+  url: https://www.sec.gov/Archives/edgar/data/800177/000110465926092900/0001104659-26-092900-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341289
+  url: https://www.sec.gov/Archives/edgar/data/1974640/000119312526341289/0001193125-26-341289-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009806
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009806/0001214659-26-009806-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009804
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009804/0001214659-26-009804-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009807
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009807/0001214659-26-009807-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009805
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009805/0001214659-26-009805-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009802
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009802/0001214659-26-009802-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009803
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009803/0001214659-26-009803-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009808
+  url: https://www.sec.gov/Archives/edgar/data/753967/000121465926009808/0001214659-26-009808-index.htm
+  ts: '2026-08-10'
+- id: 0001213900-26-086838
+  url: https://www.sec.gov/Archives/edgar/data/19617/000121390026086838/0001213900-26-086838-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341260
+  url: https://www.sec.gov/Archives/edgar/data/1127508/000119312526341260/0001193125-26-341260-index.htm
+  ts: '2026-08-10'
+- id: 0001852338-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1852338/000185233826000003/0001852338-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001789082-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/1789082/000178908226000004/0001789082-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0001965176-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1965176/000196517626000003/0001965176-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009789
+  url: https://www.sec.gov/Archives/edgar/data/1419999/000121465926009789/0001214659-26-009789-index.htm
+  ts: '2026-08-10'
+- id: 0001214659-26-009810
+  url: https://www.sec.gov/Archives/edgar/data/1766907/000121465926009810/0001214659-26-009810-index.htm
+  ts: '2026-08-10'
+- id: 0001941040-26-000537
+  url: https://www.sec.gov/Archives/edgar/data/1767435/000194104026000537/0001941040-26-000537-index.htm
+  ts: '2026-08-10'
+- id: 0001730478-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1730478/000173047826000003/0001730478-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0002072569-26-000006
+  url: https://www.sec.gov/Archives/edgar/data/2072569/000207256926000006/0002072569-26-000006-index.htm
+  ts: '2026-08-10'
+- id: 0002055907-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/2055907/000205590726000003/0002055907-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001762539-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/1762539/000176253926000004/0001762539-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0002053339-26-000012
+  url: https://www.sec.gov/Archives/edgar/data/2053339/000205333926000012/0002053339-26-000012-index.htm
+  ts: '2026-08-10'
+- id: 0002034566-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/2034566/000203456626000003/0002034566-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0002099997-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/2099997/000209999726000004/0002099997-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0001986156-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/1986156/000198615626000004/0001986156-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0001171843-26-005368
+  url: https://www.sec.gov/Archives/edgar/data/1215838/000117184326005368/0001171843-26-005368-index.htm
+  ts: '2026-08-10'
+- id: 0001965653-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1965653/000196565326000003/0001965653-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001104659-26-092914
+  url: https://www.sec.gov/Archives/edgar/data/2096095/000110465926092914/0001104659-26-092914-index.htm
+  ts: '2026-08-10'
+- id: 0001437749-26-026648
+  url: https://www.sec.gov/Archives/edgar/data/1173489/000143774926026648/0001437749-26-026648-index.htm
+  ts: '2026-08-10'
+- id: 0002052594-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/2052594/000205259426000004/0002052594-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0000947517-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/947517/000094751726000003/0000947517-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0002021232-26-000005
+  url: https://www.sec.gov/Archives/edgar/data/2021232/000202123226000005/0002021232-26-000005-index.htm
+  ts: '2026-08-10'
+- id: 0001740839-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/1740839/000174083926000004/0001740839-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0001438934-26-000587
+  url: https://www.sec.gov/Archives/edgar/data/1665446/000143893426000587/0001438934-26-000587-index.htm
+  ts: '2026-08-10'
+- id: 0001896150-26-000010
+  url: https://www.sec.gov/Archives/edgar/data/1896150/000189615026000010/0001896150-26-000010-index.htm
+  ts: '2026-08-10'
+- id: 0001720235-26-000006
+  url: https://www.sec.gov/Archives/edgar/data/1720235/000172023526000006/0001720235-26-000006-index.htm
+  ts: '2026-08-10'
+- id: 0001317348-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1317348/000131734826000003/0001317348-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001085146-26-000578
+  url: https://www.sec.gov/Archives/edgar/data/1727593/000108514626000578/0001085146-26-000578-index.htm
+  ts: '2026-08-10'
+- id: 0001802284-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/1802284/000180228426000004/0001802284-26-000004-index.htm
+  ts: '2026-08-10'
+- id: 0001535452-26-000005
+  url: https://www.sec.gov/Archives/edgar/data/1535452/000153545226000005/0001535452-26-000005-index.htm
+  ts: '2026-08-10'
+- id: 0001085146-26-000575
+  url: https://www.sec.gov/Archives/edgar/data/1308016/000108514626000575/0001085146-26-000575-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341001
+  url: https://www.sec.gov/Archives/edgar/data/1824920/000119312526341001/0001193125-26-341001-index.htm
+  ts: '2026-08-10'
+- id: 0001834488-26-000046
+  url: https://www.sec.gov/Archives/edgar/data/1834488/000183448826000046/0001834488-26-000046-index.htm
+  ts: '2026-08-10'
+- id: 0001482880-26-000013
+  url: https://www.sec.gov/Archives/edgar/data/1482880/000148288026000013/0001482880-26-000013-index.htm
+  ts: '2026-08-10'
+- id: 0001930002-26-000013
+  url: https://www.sec.gov/Archives/edgar/data/1930002/000193000226000013/0001930002-26-000013-index.htm
+  ts: '2026-08-10'
+- id: 0001918704-26-023225
+  url: https://www.sec.gov/Archives/edgar/data/1682472/000191870426023225/0001918704-26-023225-index.htm
+  ts: '2026-08-10'
+- id: 0001085146-26-000579
+  url: https://www.sec.gov/Archives/edgar/data/1846995/000108514626000579/0001085146-26-000579-index.htm
+  ts: '2026-08-10'
+- id: 0001493152-26-036713
+  url: https://www.sec.gov/Archives/edgar/data/2009312/000149315226036713/0001493152-26-036713-index.htm
+  ts: '2026-08-10'
+- id: 0001493152-26-036693
+  url: https://www.sec.gov/Archives/edgar/data/2090646/000149315226036693/0001493152-26-036693-index.htm
+  ts: '2026-08-10'
+- id: 0001213900-26-086938
+  url: https://www.sec.gov/Archives/edgar/data/1899123/000121390026086938/0001213900-26-086938-index.htm
+  ts: '2026-08-10'
+- id: 0001448793-26-000005
+  url: https://www.sec.gov/Archives/edgar/data/1448793/000144879326000005/0001448793-26-000005-index.htm
+  ts: '2026-08-10'
+- id: 0001583672-26-000003
+  url: https://www.sec.gov/Archives/edgar/data/1583672/000158367226000003/0001583672-26-000003-index.htm
+  ts: '2026-08-10'
+- id: 0001768744-26-000008
+  url: https://www.sec.gov/Archives/edgar/data/1768744/000176874426000008/0001768744-26-000008-index.htm
+  ts: '2026-08-10'
+- id: 0001438934-26-000584
+  url: https://www.sec.gov/Archives/edgar/data/1784277/000143893426000584/0001438934-26-000584-index.htm
+  ts: '2026-08-10'
+- id: 0000924805-26-000047
+  url: https://www.sec.gov/Archives/edgar/data/924805/000092480526000047/0000924805-26-000047-index.htm
+  ts: '2026-08-10'
+- id: 0001046179-26-000471
+  url: https://www.sec.gov/Archives/edgar/data/1046179/000104617926000471/0001046179-26-000471-index.htm
+  ts: '2026-08-10'
+- id: 0001046179-26-000519
+  url: https://www.sec.gov/Archives/edgar/data/2114023/000104617926000519/0001046179-26-000519-index.htm
+  ts: '2026-08-10'
+- id: 0001104659-26-092986
+  url: https://www.sec.gov/Archives/edgar/data/2108192/000110465926092986/0001104659-26-092986-index.htm
+  ts: '2026-08-10'
+- id: 0001140361-26-031910
+  url: https://www.sec.gov/Archives/edgar/data/1185072/000114036126031910/0001140361-26-031910-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341199
+  url: https://www.sec.gov/Archives/edgar/data/1329394/000119312526341199/0001193125-26-341199-index.htm
+  ts: '2026-08-10'
+- id: 0001213900-26-086834
+  url: https://www.sec.gov/Archives/edgar/data/19617/000121390026086834/0001213900-26-086834-index.htm
+  ts: '2026-08-10'
+- id: 0000950103-26-012089
+  url: https://www.sec.gov/Archives/edgar/data/200245/000095010326012089/0000950103-26-012089-index.htm
+  ts: '2026-08-10'
+- id: 0000950103-26-012088
+  url: https://www.sec.gov/Archives/edgar/data/831001/000095010326012088/0000950103-26-012088-index.htm
+  ts: '2026-08-10'
+- id: 0001062993-26-004109
+  url: https://www.sec.gov/Archives/edgar/data/1513193/000106299326004109/0001062993-26-004109-index.htm
+  ts: '2026-08-10'
+- id: 0001493152-26-036726
+  url: https://www.sec.gov/Archives/edgar/data/2087035/000149315226036726/0001493152-26-036726-index.htm
+  ts: '2026-08-10'
+- id: 0001213900-26-086831
+  url: https://www.sec.gov/Archives/edgar/data/1882198/000121390026086831/0001213900-26-086831-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341149
+  url: https://www.sec.gov/Archives/edgar/data/1333986/000119312526341149/0001193125-26-341149-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341133
+  url: https://www.sec.gov/Archives/edgar/data/1333986/000119312526341133/0001193125-26-341133-index.htm
+  ts: '2026-08-10'
+- id: 0001527469-26-000056
+  url: https://www.sec.gov/Archives/edgar/data/1527469/000152746926000056/0001527469-26-000056-index.htm
+  ts: '2026-08-10'
+- id: 0001140361-26-031922
+  url: https://www.sec.gov/Archives/edgar/data/2081043/000114036126031922/0001140361-26-031922-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-341032
+  url: https://www.sec.gov/Archives/edgar/data/1067983/000119312526341032/0001193125-26-341032-index.htm
+  ts: '2026-08-10'
+- id: 0001081316-26-000017
+  url: https://www.sec.gov/Archives/edgar/data/1081316/000108131626000017/0001081316-26-000017-index.htm
+  ts: '2026-08-10'
+- id: 0001903596-26-000302
+  url: https://www.sec.gov/Archives/edgar/data/1894954/000190359626000302/0001903596-26-000302-index.htm
+  ts: '2026-08-10'
+- id: 0001213900-26-086864
+  url: https://www.sec.gov/Archives/edgar/data/2145659/000121390026086864/0001213900-26-086864-index.htm
+  ts: '2026-08-10'
+- id: 0001628280-26-054966
+  url: https://www.sec.gov/Archives/edgar/data/1598599/000162828026054966/0001628280-26-054966-index.htm
+  ts: '2026-08-10'
+- id: 0001654954-26-007406
+  url: https://www.sec.gov/Archives/edgar/data/1116578/000165495426007406/0001654954-26-007406-index.htm
+  ts: '2026-08-10'
+- id: 0001175454-26-000050
+  url: https://www.sec.gov/Archives/edgar/data/1175454/000117545426000050/0001175454-26-000050-index.htm
+  ts: '2026-08-10'
+- id: 0001193125-26-340582
+  url: https://www.sec.gov/Archives/edgar/data/1920145/000119312526340582/0001193125-26-340582-index.htm
+  ts: '2026-08-10'
+- id: 0001692819-26-000019
+  url: https://www.sec.gov/Archives/edgar/data/1692819/000169281926000019/0001692819-26-000019-index.htm
+  ts: '2026-08-10'
+- id: 0001812477-26-000021
+  url: https://www.sec.gov/Archives/edgar/data/1812477/000181247726000021/0001812477-26-000021-index.htm
+  ts: '2026-08-10'
+- id: 0001812477-26-000023
+  url: https://www.sec.gov/Archives/edgar/data/1812477/000181247726000023/0001812477-26-000023-index.htm
+  ts: '2026-08-10'

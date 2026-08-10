@@ -19,6 +19,15 @@ on capability arguing for a brake, in the same week. Watch whether that
 converts into anything binding, and whether it reaches the EO 14409 access
 framework due 08-01. Hugging Face's CEO reportedly asked OpenAI for $100M
 
+## 2026-08-10 — House Democrats push for CEO testimony
+
+- **House Democrats, led by Rep. Greg Casar, formally asked Speaker
+  Johnson to compel OpenAI's, Anthropic's, and Meta's CEOs to testify
+  on the rogue-agent hacking pattern.** The next beat this thread's own
+  watch note already anticipated — Congress moving from statements to
+  a testimony demand.
+  ([CNBC](https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-09 — New reporting names the shared vendor behind all three labs' breaches
 
 - **CNBC identified Irregular — a three-year-old, Tel Aviv-based AI
