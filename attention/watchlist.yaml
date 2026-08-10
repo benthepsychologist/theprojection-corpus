@@ -213,6 +213,59 @@ lenses:
         # Term is qualified ("behavioral") because bare "UHS" collides with
         # the UK NHS trust abbreviation and with United Health Services.
 
+      # PE / behavioral-health roll-up sponsors (ben-steer 2026-08-10, from
+      # the 08-09 /week Queue research — market backdrop: 180 behavioral-
+      # health deals in 2025, 56 by PE specifically, +47% YoY). Two firms
+      # from the original seed list (Waud Capital, Kelso & Company) were
+      # source-checked and EXCLUDED — both have exited behavioral health.
+      - "Comvest Partners"       # owns Your Behavioral Health (17 SoCal facilities); acquired Insight Treatment Programs Apr 2024
+      - "Nautic Partners"        # multi-platform: Pyramid Healthcare (80+ facilities), Odyssey Behavioral Health, Sagent
+      - "The Vistria Group"      # Behavioral Health Group, Sandstone Care, Advanced Recovery Systems
+      - term: "TPG Rise Fund behavioral health"
+        entity: tpg-rise-fund
+        name: "TPG (The Rise Fund)"
+        # Banyan Treatment Centers (17 sites/8 states, 2023); also an anchor holder in public LifeStance Health
+      - "Bain Capital"           # Pathway Healthcare (outpatient SUD/MH/Spravato), expanding through 2024-2025
+      - "Revelstoke Capital Partners"   # with CDPQ — Crossroads Treatment Centers, 100+ OUD/MAT locations
+      - "Linden Capital Partners"       # Pinnacle Treatment Centers (138 locations, 11+ states)
+      - term: "Webster Equity Partners behavioral health"
+        entity: webster-equity-partners
+        name: "Webster Equity Partners"
+        # REAL CAVEAT, not a clean add: owns BayMark Health Services (280+
+        # facilities), but its OTHER platform, Discovery Behavioral Health,
+        # went into creditor control (Capital One + HPS) after a Feb 2026
+        # default. Track both sides.
+      - "Varsity Healthcare Partners"   # lower-confidence: names Ideal Option, states behavioral health as a fund focus
+      - "Lee Equity Partners"           # lower-confidence: Bradford Health Services
+      - term: "Beecken Petty O'Keefe behavioral health"
+        entity: beecken-petty-okeefe
+        name: "Beecken Petty O'Keefe"
+        # lower-confidence: names behavioral health as a core specialization, no current holding independently verified
+
+      # AI-liability insurance underwriters (ben-steer 2026-08-10, same
+      # Queue research — market: $6.8B written 2025, projected $34.2B by
+      # 2034 per Dataintelo; Chubb/AIG confirmed as leading traditional
+      # carriers but no single named product surfaced for either).
+      - term: "Armilla AI"
+        entity: armilla
+        # first MGA/Lloyd's coverholder built solely around AI liability (hallucinations, model drift, underperformance); backed by Chaucer/Axis/Convex/Swiss Re/Greenlight Re; launched Vanguard AI with Chaucer Feb 2026 ($25M+ bundled limits)
+      - "AIUC"                   # Artificial Intelligence Underwriting Company — pairs an AI-safety audit standard ("AIUC-1", SOC-2-modeled) with liability coverage; secured Beazley underwriting capacity May 2026
+      - term: "Munich Re aiSure"
+        entity: munich-re
+        name: "Munich Re"
+        # runs aiSure (performance-warranty line incl. AI-bias/discrimination coverage); capacity partner on Google Cloud's Risk Protection Program
+      - term: "HSB AI liability"
+        entity: hsb
+        name: "HSB (Hartford Steam Boiler)"
+        # Munich Re subsidiary; dedicated SMB AI-liability product launched Mar 2026
+      - "Beazley"                # capacity partner on Google Cloud's program; separately underwrites AIUC's product
+      - "Relm Insurance"         # three named AI products launched Jan 2025 (NOVAAI, PONTAAI, RESCAAI)
+      - "Testudo"                # MGA launched Jan 2026 for mid-market AI liability (Lloyd's Lab-backed; panel incl. Apollo/Atrium/QBE; up to $9.25M limits)
+      - term: "W.R. Berkley AI exclusion"
+        entity: wr-berkley
+        name: "W.R. Berkley"
+        # the inverse case: filed an "absolute" AI EXCLUSION across D&O/E&O/fiduciary lines for 2025-2026 — not underwriting AI risk, excluding it, part of why the standalone products above exist
+
     # People of interest (founders, regulators, evaluators)
     people:
       - "Thomas Insel"
