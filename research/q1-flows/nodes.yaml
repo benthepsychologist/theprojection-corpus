@@ -1518,22 +1518,27 @@ nodes:
   date: '2025-01-21'
   round_type: infrastructure joint-venture equity formation
   total_amount_usd: 52000000000
-  leads: [openai/capital, softbank/capital]
+  leads: []
   note: NEW this pass ("continue the build" debt/project-finance category).
     Source (Wikipedia's Stargate LLC article, citing The Information and the
     Wall Street Journal — NOT independently primary-fetched this pass, both
     underlying outlets are paywalled) states OpenAI and SoftBank each
     committed $19B for a 40% ownership stake apiece, while Oracle and MGX
-    each contributed $7B. No source uses the word "lead" for any party;
-    marking OpenAI and SoftBank as leads here is a JUDGMENT CALL reflecting
-    their equal, larger (40% vs ~13.5%) stakes, not a verbatim "co-led"
-    claim like Cohere/Together AI's — flagged explicitly per R-17 rather
-    than silently asserted as equivalent to those cases. Reliability set
-    lower than this pass's SEC-filing-sourced entries to reflect the
-    secondary-only sourcing. SoftBank's own $19B is itself reported as
-    substantially debt-financed (see softbank/capital's node note) — that
-    leverage layer is NOT modeled as a separate edge this pass, thin
-    sourcing only.
+    each contributed $7B. No source uses the word "lead" for any party.
+    RESOLVED (P-02, 2026-08-10): `leads` was originally set to
+    [openai/capital, softbank/capital] as a judgment call reflecting their
+    equal, larger (40% vs ~13.5%) stakes — Ben was asked to rule on
+    whether that was fair; his answer ("i have no idea. make sure the
+    decision is logged") deferred to a general policy instead of this one
+    case, and the resulting policy (research/PRINCIPLES.md P-02) is that
+    an unsourced inference never occupies the `leads` field, only a
+    verbatim source claim does. `leads` cleared to empty; the stake-size
+    observation is preserved right here, just not in the structured field.
+    Reliability set lower than this pass's SEC-filing-sourced entries to
+    reflect the secondary-only sourcing. SoftBank's own $19B is itself
+    reported as substantially debt-financed (see softbank/capital's node
+    note) — that leverage layer is NOT modeled as a separate edge this
+    pass, thin sourcing only.
   sources:
   - label: Wikipedia, "Stargate LLC" (citing The Information and the Wall
       Street Journal; neither underlying outlet independently fetched this

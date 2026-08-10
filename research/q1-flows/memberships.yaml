@@ -707,20 +707,25 @@ memberships:
   amount_usd: null
   source_ref: vantage-data-centers/2025-mufg-jpmorgan-facility#sources[0]
 
-# --- stargate/2025-jv-financing --- (OpenAI + SoftBank at $19B/40% each
-# marked lead per the round node's flagged judgment call; Oracle + MGX
-# at $7B each as participant; every party's own check size IS disclosed,
-# same pattern as ASML on Mistral's Series C)
+# --- stargate/2025-jv-financing --- (OpenAI + SoftBank at $19B/40% each,
+# Oracle + MGX at $7B each — every party's own check size IS disclosed,
+# same pattern as ASML on Mistral's Series C. No source calls any party
+# "lead"; RESOLVED per P-02 (research/PRINCIPLES.md) — an unsourced
+# stake-size inference does not get role: lead, so all four are
+# participant. See stargate/2025-jv-financing's node note for the full
+# history: the original lead tag was Ben's to rule on, he deferred to a
+# general policy instead ("i have no idea. make sure the decision is
+# logged"), P-02 is that policy.)
 - id: openai-capital--is-member-of--stargate-2025-jv-financing
   from: openai/capital
   to: stargate/2025-jv-financing
-  role: lead
+  role: participant
   amount_usd: 19000000000
   source_ref: stargate/2025-jv-financing#sources[0]
 - id: softbank-capital--is-member-of--stargate-2025-jv-financing
   from: softbank/capital
   to: stargate/2025-jv-financing
-  role: lead
+  role: participant
   amount_usd: 19000000000
   source_ref: stargate/2025-jv-financing#sources[0]
 - id: oracle-capital--is-member-of--stargate-2025-jv-financing

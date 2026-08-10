@@ -69,3 +69,38 @@ must accommodate that from the start; retrofitting it later (as happened
 here) is strictly worse than designing it right the first time, because
 every record written under the too-narrow version has already silently
 lost information by the time the retrofit happens.
+
+---
+
+## P-02 — a structured field records what a source says, not what we infer
+
+**The rule:** `role: lead` (and any comparably load-bearing structured
+field elsewhere in this program) may only be set when a source explicitly
+uses that word or its clear equivalent ("co-led," "led by"). An inference
+from indirect evidence — larger stake size, being named first, being the
+counterparty everyone else is compared against — is real analysis and
+belongs in a `note`, never in the structured field itself. The structured
+field is a citation-backed claim; a note is commentary. Collapsing the two
+lets an inference silently read, to any later query, as identical in
+weight to a sourced fact.
+
+**Where this was ruled:** pass 3 built `stargate/2025-jv-financing`
+(OpenAI + SoftBank at $19B/40% each, Oracle + MGX at $7B each) and tagged
+OpenAI and SoftBank `leads` in `nodes.yaml`/`role: lead` in
+`memberships.yaml` — flagged in the node's own note as an inference from
+stake size, since no source uses the word "lead" for any Stargate party
+(unlike Cohere's or Together AI's genuinely sourced co-lead language).
+Ben's ruling on the question (2026-08-10, verbatim): *"i have no idea.
+make sure the decision is logged."* — he deferred the call rather than
+rule on Stargate specifically, so this principle is the actual decision,
+applied generally rather than resolving one instance in isolation: an
+unsourced inference does not get to occupy the same field a sourced claim
+does, regardless of how reasonable the inference is.
+
+**The fix applied:** Stargate's `leads: [openai/capital, softbank/capital]`
+became `leads: []`; both memberships' `role: lead` became `role:
+participant`; the stake-size observation stays fully intact as the node's
+own note (nothing was deleted, the inference is still fully visible —
+it just no longer occupies the structured field). Same rule applies to
+every future round: `leads`/`role: lead` requires the source to actually
+say so.
