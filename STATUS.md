@@ -81,6 +81,72 @@ correctly. The 08-09 note and everything older sit under it.*
 > deploy live-verified (a first content check ran before the Cloudflare
 > build had actually finished — "queued" isn't "live," re-checked after
 > the real deploy landed). All three repos verified clean.
+>
+> **2026-08-10 (later still) — the Queue closed out, two of three
+> source-access gaps fixed, and a brand-new `research/` program stood
+> up from nothing in three real build passes.** Ben's promotion call on
+> the PE-clinical-DD/AI-liability-underwriter Queue item ("yes to all
+> four categories, add them") landed 19 entities in
+> `attention/watchlist.yaml`'s mental-health block; the item closed out
+> of `ROADMAP.md`'s Queue per its own discipline. Two of the three
+> structural source-access gaps also closed: FT Unhedged has a public
+> RSS endpoint (`ft.com/unhedged?format=rss`, no paywall gate) and
+> Behavioral Health Business's 403s traced to Cloudflare blocking
+> `WebFetch`'s own crawler signature specifically (its `robots.txt`
+> names ClaudeBot/GPTBot explicitly) — a plain `curl`/`urllib` fetch of
+> the identical feed URL, already correctly configured, works fine.
+> Axios Pro Rata stays genuinely unresolved: every `axios.com` path,
+> including unrelated sections, 403s identically — a domain-wide bot
+> block, not a paywall or URL problem, no automated fix found. Checked
+> whether Axios Pro (a separate $599-$2,499/yr paid product) or an
+> email-based ingestion path would help — Pro Rata is already free, so
+> paying doesn't touch a bot-detection block; email ingestion is a real
+> unbuilt option, flagged, not started.
+>
+> **`research/` — new top-level directory, kestrel's dormant
+> buildout-research program (q1 money-flows, q3 datacenter census)
+> actually built for the first time**, stalled since 2026-08-03 despite
+> being fully designed and color-team-reviewed. Three passes, same day:
+> pass 1 stood up the first cited tranche (17 flow edges, 28 q3
+> attribution records, 3 real corrections to Epoch AI's own datacenter
+> dataset). Pass 2 implemented Ben's review — a new **round-node**
+> pattern (a financing round is its own node, investors connect via
+> `is_member_of`, the actual dollar edge runs round→receiver) replacing
+> an anonymous-syndicate placeholder; the materiality floor dropped
+> $1B→$100M with a signal-biased override favoring fast-rising players
+> over raw size; six new Tier-A categories (power, grid, memory/HBM,
+> packaging, networking, construction) — 138 nodes, 49 edges. Pass 3
+> extended the round-node pattern to debt syndicates (Ben: "those
+> co-lending parties might be interesting if patterns exist, and they
+> def do"), fixed a real schema defect where a single `lead` field had
+> silently dropped real co-leads (Cohere, Together AI) — recorded as a
+> durable principle in new `research/PRINCIPLES.md` (Ben: "schemas
+> can't conflict with the world") rather than patched silently — and
+> added international financing + debt/project-finance structures
+> (Stargate LLC's full $52B JV, Moonshot AI, Helsing, Synthesia, a
+> genuine negative finding that DeepSeek has no external financing on
+> record 2023-2025). **180 nodes, 66 edges, 114 memberships.** One
+> unsourced inference (Stargate's OpenAI/SoftBank "lead" tag, based on
+> stake size, no source actually says "lead") got its own resolution
+> after Ben declined to rule on the specific case ("i have no idea.
+> make sure the decision is logged") — recorded as principle P-02
+> instead: a structured field holds what a source says, never an
+> inference, however reasonable. **One real process failure, caught
+> and fixed within the same turn**: a commit landed with a YAML syntax
+> error because a validation command's failure didn't actually block
+> the following `git commit`/`push` (they weren't chained on the
+> command's exit code) — caught by re-validating after push, fixed in
+> the next commit, no lasting damage, but worth remembering: chain
+> validate→commit, don't just run them adjacently.
+>
+> `research/`'s relationship to the rest of this repo, clarified in
+> conversation and logged in `ROADMAP.md`'s Queue: threads *surface*
+> candidates for `research/`, they don't feed it automatically, and the
+> claims/citation layers (`research/`'s own citations vs. the board's
+> `/claim/` pages) are confirmed-separate today with a real future
+> merge direction, not yet built. `README.md`'s layout table had no
+> `research/` entry at all (didn't exist before today) — fixed same
+> session via `/life:docs-sync`.
 
 > **2026-08-09 — the pipeline gap closed, the site got read for a
 > stranger's eyes and fixed, `/week` ran its full synthesis, and Ben
