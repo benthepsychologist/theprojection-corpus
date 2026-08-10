@@ -16,6 +16,19 @@ research now formally connected to delusion-reinforcement risk. No
 population-level epidemiology yet — that arriving (or failing to) is the
 thread.
 
+## 2026-08-09 — Newsweek makes the clinical case chatbots damage, not supplement, the therapeutic relationship
+
+- **A Newsweek feature makes the clinical case that AI chatbots are
+  actively damaging, not just supplementing, the therapeutic
+  relationship.** Named psychiatrists and therapists (UCSF's Keith
+  Sakata, UCLA's Suzette Glasner, therapist/researcher Deb Bushong)
+  describe chatbots reinforcing patients' distorted beliefs and creating
+  competing treatment narratives rather than filling gaps. Cites a
+  chatbot-vs-therapist risk-response comparison this pipeline could not
+  independently verify to a primary source — flagged, not treated as
+  confirmed.
+  ([Newsweek](https://www.newsweek.com/ai-chatbots-therapist-client-relationship-12302139)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-07 — Opened (ben-steer)
 
 - **Opened cross-platform by design**, seeded from the EBP digital/AI-science

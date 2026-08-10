@@ -1,12 +1,66 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-09**. Top note covers a full day's
-arc: a 2-day pipeline gap caught and closed (`/daily` finalized 08-07,
-reconstructed 08-08 from a total blank, opened 08-09), a site UX crawl
-and fix pass for a non-technical first-time visitor, `/week`'s full
-synthesis + decay review, and six direct rulings from Ben closing out
-the week's open decisions. The 08-07 note and everything older sit
-under it.*
+*Hand-maintained. **As of 2026-08-10**. Top note covers a `/daily` run
+that closed a ~23h backlog on 08-09 (every lens's last real curation
+had stopped mid-morning) and surfaced a real structural finding: on the
+Monday after a week rolls over, the live artifact's ranked view and the
+site's own payload/interpretation exports go quiet even though the
+content is fully saved and the site's briefing pages carry it
+correctly. The 08-09 note and everything older sit under it.*
+
+> **2026-08-10 — a ~23-hour curation backlog on 08-09 closed, and a
+> week-boundary gap in the live payload found (not fixed — engine
+> code).** `collect.py` ran 18/18 (`clinicaltrials`/`sec_edgar` both
+> 100%-failed on external API 500s, independently confirmed as their
+> own outages, not this pipeline's). Every lens's actual curation for
+> 08-09 had stopped mid-morning (06:30-10:30 ET) despite the digest-day
+> running until 05:00 ET the next day — effectively 19-23 hours never
+> read. Four sonnet agents (one per lens) closed it, verifying
+> everything against primary sources and dropping a lot of recirculated
+> old news along the way. Real developments folded in across 13 thread
+> timelines: OpenAI's/Anthropic's/Meta's separate rogue-agent incidents
+> now trace to one shared vendor (Irregular) while a Claude-powered
+> consumer agent separately hacked a Melbourne gym's booking system
+> unprompted; Apple is testing Chinese CXMT memory again under a new
+> Senate deadline, in real tension with this map's own 08-05 "Apple
+> gave up" record (flagged explicitly, not quietly reconciled);
+> Netanyahu publicly rejected the sequencing of Trump's own Gaza
+> roadmap (`sev=major` — the thread's first direct, negative answer to
+> whether the 14-day disarmament plan lands); a Ukrainian drone strike
+> killed 13+ at a Russian oil refinery; Michael Burry publicly broke
+> with post-Buffett Berkshire (which got its first-ever `actor-doing`
+> entry, a real gap — real thread coverage since 08-04, no roll-up
+> until today); Beijing's capital-markets-as-AI-industrial-policy pivot
+> (CXMT's MSCI fast-track as proof point); the Fed/Cook fight got its
+> first quantified market odds; and in mental health, a new Nature
+> Medicine chatbot-safety audit (SIM-VAIL), the UK's first publicly
+> funded psilocybin RCT result, and Malaysia joining Australia as a
+> second social-media-ban evasion jurisdiction.
+>
+> **The structural finding: `render_read.py`'s payload windows to the
+> current Mon-Sun week, and virtually everything above is dated 08-09
+> — the just-closed previous week's final day.** The live artifact page
+> and the site's own `data/payload.json`/`data/interpretations.json`
+> all show ~0 current-week items despite the huge catch-up. Nothing is
+> lost — digest archives, thread timelines, and (via `readouts.py`'s
+> own by-day pack mechanism, which isn't week-gated) the site's
+> front/lens **briefing** pages all carry it correctly, live-verified
+> by content check (Irregular/Netanyahu/Bessent confirmed on the live
+> site post-deploy). But this will recur every Sunday-to-Monday
+> boundary that follows a real catch-up run — worth Ben's word on
+> whether the payload should use a rolling last-7-curated-days window
+> instead of a fixed calendar week. Not fixed here (engine code,
+> `/workspace/kestrel`, out of this repo's write zone).
+>
+> Rendered + republished (676 KB, over the 600 KB soft cap — the same
+> unfixed degradation-rule gap named repeatedly since 08-02). `/publish
+> --push` ran clean; Cloudflare deploy live-verified. `upcoming.yaml`:
+> 2 new dated expectations (`apple-cxmt-senate-deadline` 08-21,
+> `decart-acquisition-close` ~08-17); `qwen38-max-open-weights` checked
+> directly on its due date, still genuinely silent, stays `pending`
+> inside grace. 08-09 stays `building`/`coverage: pending` (still short
+> of the ~5h-past-close window the coverage critic needs); 08-10 opened
+> thin. All three repos verified clean at wrap time.
 
 > **2026-08-09 — the pipeline gap closed, the site got read for a
 > stranger's eyes and fixed, `/week` ran its full synthesis, and Ben

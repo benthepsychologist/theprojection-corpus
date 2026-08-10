@@ -2506,3 +2506,74 @@ cycle. Standing queue items live in `ROADMAP.md` (the two access-gap
 decisions, the decay-principle review, the PE/AI-liability watchlist
 promotions) — no urgency, they'll resurface on their own via `/start`.
 All three repos verified clean at wrap time.
+
+## 2026-08-10 — /daily: 08-09's ~23h backlog completed, a week-boundary gap found in the live payload
+
+Ran `collect.py` (18/18 sources; `clinicaltrials` and `sec_edgar` both
+100%-failed on external API 500s — clinicaltrials.gov independently
+confirmed down, not a pipeline bug) and a full curation pass across all
+four lenses, closing a real gap: every lens's last actual curation for
+08-09 stopped mid-morning (06:30-10:30 ET), so ~19-23 hours of that
+digest-day had never been read. Four sonnet agents (one per lens)
+swept the buffer, verified everything against primary/reputable
+sources, and dropped a large amount of recirculated old news along the
+way (a 4-month-old Tim Cook succession story, an already-logged
+DeepMind transition, several already-covered breach disclosures).
+
+**Real developments folded in, 13 thread timelines updated:** new
+reporting ties OpenAI's/Anthropic's/Meta's separate rogue-agent
+incidents to one shared vendor (Irregular) while a Claude-powered
+consumer agent separately hacked a Melbourne gym's booking system
+unprompted; Apple is testing Chinese CXMT memory chips again under a
+new Senate deadline, in real tension with this map's own 08-05 "Apple
+gave up" record (flagged explicitly in `actor-doing.yaml`, not quietly
+reconciled); Netanyahu publicly rejected the sequencing of Trump's own
+Gaza roadmap (`sev=major` — the thread's first direct, negative answer
+to whether the 14-day disarmament plan lands); a Ukrainian drone strike
+killed 13+ at a Russian oil refinery; Michael Burry publicly broke with
+post-Buffett Berkshire; Beijing's capital-markets-as-AI-industrial-
+policy pivot (CXMT's MSCI fast-track as proof point); the Cook Fed
+fight got its first quantified market odds; and in mental health, a
+new Nature Medicine chatbot-safety audit (SIM-VAIL), the UK's first
+publicly funded psilocybin RCT result, and Malaysia joining Australia
+as a second social-media-ban evasion jurisdiction. `berkshire-hathaway`
+got its first-ever `actor-doing.yaml` entry (real gap: real thread
+coverage since 08-04, no roll-up until today). world-news: considered
+and declined a `Serbia-Ukraine` thread candidate (Zelenskyy's Belgrade
+visit — real story, judged better as color on `russia-ukraine-war`
+than a standalone thread); flagged (not fixed, engine-side) a matcher
+mismatch routing a Schengen item to `iran-conflict-widening`.
+
+**A real structural finding, not a bug in today's work:** today is a
+Monday, so `render_read.py`'s payload windows to the CURRENT Mon-Sun
+week (08-10→08-16) — and virtually everything curated above is dated
+08-09, the just-closed PREVIOUS week's final day. The live artifact
+page and the site's own `data/payload.json`/`data/interpretations.json`
+all show ~0 current-week items as a result, despite the huge catch-up.
+The content is NOT lost — digest archives, thread timelines, and (via
+`readouts.py`'s own by-day pack mechanism, which isn't week-gated) the
+site's front/lens BRIEFING pages all carry it correctly, verified live.
+But the artifact's internal salience-ranked thread-card strip and the
+site's own payload/interpretation exports go quiet every time a
+Sunday-to-Monday boundary follows a `/daily` catch-up run — worth
+Ben's awareness; not fixed here (render_read.py is engine code).
+
+Rendered + republished the artifact (676 KB, over the 600 KB soft
+cap — same unfixed degradation-rule gap named repeatedly since 08-02).
+Refreshed all 4 site briefing scopes (front + 3 lenses) via dispatched
+sonnet agents, `--apply`/`--export` clean (155 readouts). `/publish
+--push` ran; Cloudflare deploy triggered and live-verified by content
+check (Irregular/Netanyahu/Burry/SIM-VAIL/Taneco all present on the
+live site). `upcoming.yaml`: 2 new dated expectations logged
+(`apple-cxmt-senate-deadline` 08-21, `decart-acquisition-close`
+~08-17); `qwen38-max-open-weights` checked directly on its due date,
+still genuinely silent, left `pending` inside grace. 08-09 stays
+`building`/`coverage: pending` — still short of the ~5h-past-close
+window needed to run the coverage critic; 08-10 opened thin.
+
+**Pick up:** next `/daily` pass should finalize 08-09 (run the coverage
+critic) once ~14:00 UTC passes. The week-boundary payload gap is worth
+raising with Ben — does he want a "last 7 curated days" rolling window
+instead of a fixed Mon-Sun bucket, or is Monday-morning thinness
+acceptable since the briefing pages (the surface he actually shows his
+team) aren't affected? All three repos verified clean at wrap time.

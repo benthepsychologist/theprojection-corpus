@@ -3,29 +3,34 @@ lens: global-capital
 date: 2026-08-09
 status: building
 window_start: 2026-08-09T05:00:00-04:00
-as_of: 2026-08-09T07:00:00-04:00
+as_of: 2026-08-10T06:30:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-09
 
-*Curated from `buffer/2026-08-09-*.jsonl`'s catch-up sweep, bucketed to
-this digest-day (from 05:00 ET today through the sweep's own cutoff,
-~06:21 ET) — genuinely thin so far, only ~2 hours into the digest day.
-WebSearch-verified against Reuters/Al Jazeera/Gulf News/Punch/NPR. This
-stays `building`; too early to finalize or run the coverage critic.*
+*Curated from `buffer/2026-08-09-*.jsonl`'s catch-up sweep, then a full
+~23h backlog sweep completing the day (agentic-interim; collect.py 18/18,
+`--since 2026-08-09T10:15:00Z`; sources: Google News RSS, sec_edgar
+(returned 0 — EDGAR's own API 500'd all day, a real external outage, not
+a pipeline bug), rss, federal_register). Most of the 805-item deduped
+buffer was recirculation of stories already logged 08-04 through 08-08
+(Nvidia-SpaceX, the $750B "circular financing" story, Intel-Fortinet,
+SpaceX's lock-up expiry) — dropped after verification. Day now complete;
+still `building` — the coverage critic needs ~5h past the 05:00 ET close,
+waiting for the next pass.*
 
 ## Today's throughline
 
-**Thin day, stated plainly — the only real thread moving is the Red Sea
-conflict's capital-markets read, continuing directly from last night's
-Houthi strike on Saudi Aramco's Jazan refinery.** Iran's Revolutionary
-Guard hardened its own position overnight, separating the Strait of
-Hormuz reopening question from the Oman deal entirely and listing six
-maximalist conditions — a genuine risk signal for the
-`iran-oman-hormuz-deal-signing` expectation (due ~08-12, not yet due).
-Everything else on the record so far is continuing coverage of stories
-already captured in the 08-08 digest (Berkshire's spending spree).
+**Two real threads moved: a chip-supply-chain story (Apple testing
+Chinese CXMT memory despite an unresolved pricing standoff, against
+Beijing's explicit pivot to capital markets to fund AI champions) and a
+sentiment crack in the Berkshire succession story (Michael Burry
+publicly breaking with it).** The Red Sea/Hormuz situation — the only
+item in the morning's thin first pass — kept generating headlines all
+day but nothing materially new happened to it beyond a firmer oil price;
+the IRGC's six conditions and the second Jazan strike stand as reported
+this morning. Nothing today clears the flash-rail bar.
 
 ---
 
@@ -39,42 +44,113 @@ already captured in the 08-08 digest (Berkshire's spending spree).
   ([Punch](https://punchng.com/iran-wont-reopen-hormuz-until-us-meets-all-conditions-revolutionary-guards/), [Gulf News](https://gulfnews.com/world/iran-sets-new-conditions-for-hormuz-reopening-1.500635088))
   <!-- k: t=red-sea-oil-shock axis=capital-in-my-markets -->
 
+- **Michael Burry publicly broke with Berkshire Hathaway, saying he no
+  longer finds it "an attractive investment going forward" and reading
+  new CEO Greg Abel's early cash deployment as "more framing moves than
+  investment moves."** This is the first public negative read on a story
+  this digest had been carrying positively — Abel's Q2 print (net stock
+  buyer for the first time in 14 quarters, a $10B Alphabet stake add,
+  $4.5B+ in buybacks) had been read as Berkshire finally deploying its
+  ~$365-400B cash pile. Burry doesn't dispute the facts; he disputes what
+  they mean, framing Abel as lacking Buffett's "patience for the fat
+  pitch."
+  ([Stocktwits](https://stocktwits.com/news-articles/markets/equity/post-buffett-berkshire-hathaway-can-t-keep-up-with-s-and-p-500-michael-burry-says-it-s-lost-its-attractive-tag/cZojiQnRJar))
+  <!-- k: t=berkshire-ai-capital-stance e=berkshire-hathaway axis=capital-in-my-markets interp=yes -->
+
+## Deals & filings
+
+- **Apple is testing memory chips from China's CXMT for iPhones and
+  MacBooks, days after CXMT rejected Apple's price-cut demands.** The
+  talks are early-stage, scoped to China-market devices, driven by the
+  AI boom's DRAM squeeze — CXMT can hold firm on price because Huawei
+  and Xiaomi have already locked up its output at similarly high levels,
+  flipping the usual buyer-leverage dynamic. HP and Acer already ship
+  CXMT chips in non-US markets. Separately, CXMT was fast-tracked into
+  the MSCI China All Shares Index effective today via a mega-IPO
+  exemption, five weeks after a Shanghai debut that made it mainland
+  China's most valuable stock.
+  ([Reuters via Yahoo Finance](https://finance.yahoo.com/technology/articles/apple-tests-chinas-cxmt-memory-120655649.html), [SCMP](https://www.scmp.com/business/china-business/article/3363490/how-china-dram-champion-cxmts-msci-entry-could-lure-fund-inflows-cement-its-top-ranking))
+  <!-- k: t=cxmt-memory-ipo,ai-memory-shortage e=cxmt,apple axis=deals-and-filings interp=yes -->
+
+- **Beijing is explicitly using its $28 trillion combined stock-and-bond
+  market as an AI industrial-policy tool — a break from its traditional
+  subsidy/state-investment playbook, with CXMT's Shanghai debut as the
+  marquee proof point.** Chinese tech firms have raised ~$217B via
+  IPOs/bonds over two years, versus more than 6x that per dollar raised
+  by US peers — the move opens access to China's $26T household-savings
+  pool to narrow that gap.
+  ([Bloomberg Law syndication](https://news.bloomberglaw.com/daily-labor-report/china-taps-28-trillion-capital-markets-to-challenge-us-in-ai))
+  <!-- k: t=cxmt-memory-ipo axis=deals-and-filings interp=yes -->
+
+## Power & lobbying
+
+- **The Trump-vs-Cook Fed removal fight is starting to get a market price
+  rather than just political commentary — analyst/prediction-market reads
+  now put real odds (roughly 13-31%, varying by source and horizon) on
+  Trump succeeding in removing Governor Lisa Cook before year-end.** The
+  underlying action (the White House's letter via Deputy Chief of Staff
+  Dan Scavino, giving Cook three weeks to respond to the same
+  mortgage-fraud allegations) isn't new — it's the 08-07 revival
+  `capital-context.yaml` already logged. What's new is the quantified
+  market read on it.
+  ([Semafor](https://www.semafor.com/article/08/10/2026/trump-takes-his-second-swing-at-feds-cook))
+  <!-- k: t=fed-independence-fight e=kevin-warsh,lisa-cook axis=power-and-lobbying interp=yes -->
+
 ## 📊 Macro strip
 
-- **Brent crude: up ~1% on Hormuz-tension headlines** (no independently
-  confirmed EOD close available this early in the day — directional only).
+- **Brent crude: confirmed ~$84.20/bbl, up modestly** — replaces the
+  morning's directional-only note with an actual verified price; still
+  Hormuz-tension-driven, no new incident behind the move.
+- **30-year Treasury yield: ~5.20%** (TLT ETF data via Invezz) —
+  essentially flat vs. `capital-context.yaml`'s 08-06 FRED read of 5.24%.
+- **US public debt nearing $40 trillion** (Invezz, 08-09) — a fresh
+  figure worth flagging outside the standing FRED-series pulls.
 - **10Y-2Y spread: 0.44** (FRED, 2026-08-06 — no newer read surfaced;
-  now four real data points stale, unchanged from 08-08's note).
+  FRED/BoC collectors returned zero new items this run, normal cadence).
 
 ## ⏳ Upcoming & expected
 
 - No entries due today for this lens.
-- ⚠️ **`iran-oman-hormuz-deal-signing` (due ~08-12) — risk flag, not a
-  flip.** The IRGC's overnight framing (above) treats reopening as
-  separate from and harder than the Oman deal itself, which is the
-  opposite direction from "final drafting" language tracked in 08-07's
-  digest. Worth a close re-check as 08-12 approaches; still `pending`,
-  not touched here.
-- Next 7 days: `qwen38-max-open-weights` ~08-10 · `coreweave-q2-earnings`
-  08-11 · `iran-oman-hormuz-deal-signing` ~08-12 (now at risk, above) ·
-  `berkshire-q2-2026-13f` 08-14 (substantively pre-answered 08-08).
+- ⚠️ **`iran-oman-hormuz-deal-signing` (due ~08-12) — risk flag carried
+  forward unchanged.** The IRGC's six conditions vs. the Foreign
+  Minister's "final stages" contradiction stand exactly as reported this
+  morning; no new movement toward or away from signing found in this
+  window.
+- `coreweave-q2-earnings` (08-11, 5pm ET) — swept clean, no pre-earnings
+  signal either direction.
+- `berkshire-q2-2026-13f` (08-14) — Q2 substance already broke 08-08
+  (pre-answered); today's wrinkle is Burry's public negative read above,
+  which the actual 13F line-items will make independently checkable.
+- New candidates from today's sweep: `apple-cxmt-senate-deadline` 08-21
+  (shared with the ai lens) · CXMT's next domestic-index inclusion step
+  (STAR 50, ~December 2026, minor/mechanical).
 
 ## 🔄 Map changes
 
 - `~ threads/red-sea-oil-shock` — real development (second Jazan
   refinery hit, IRGC hardening); timeline entry written.
-- Nothing else moved yet — too early in the digest day for a broader
-  sweep to be meaningful.
+- `~ threads/cxmt-memory-ipo` — real development (Apple/CXMT testing +
+  MSCI fast-track); timeline entry written.
+- `~ threads/berkshire-ai-capital-stance` — real development (Burry's
+  public break); timeline entry written.
+- `~ threads/fed-independence-fight` — light update (the market-pricing
+  angle is new; the underlying action is not).
 
 ## 🧵 Thread candidates
 
-- None yet — too early in the day. Yesterday's `Fed independence fight`
-  candidate (08-07 digest) remains open and unanswered.
+- **candidate:** China's explicit capital-markets-as-AI-industrial-policy
+  pivot (the $28T Bloomberg framing) — arguably bigger than the CXMT
+  story it rode in on. Folded into `cxmt-memory-ipo` for now rather than
+  split into its own thread; flagging in case Ben wants it broken out.
+- Yesterday's `Fed independence fight` candidate (08-07 digest) was
+  promoted to a live thread by Ben's 08-09 ruling — resolved, not
+  carried forward as a candidate anymore.
 
 ---
-Thin morning so far: the Red Sea conflict is the only real story moving,
-with a second Houthi strike on Saudi Aramco's Jazan refinery and Iran's
-Revolutionary Guard hardening its Hormuz-reopening conditions overnight
-— a real risk signal for the deal-signing expectation due around 08-12.
-Everything else on the record is still yesterday's news. Check back
-later today as more of the digest window fills in.
+The Red Sea conflict was the only story moving this morning; the rest of
+the day brought two real developments instead — Apple quietly testing
+Chinese memory chips despite Beijing's broader capital-markets-for-AI
+push, and Michael Burry publicly souring on post-Buffett Berkshire —
+plus a market now pricing real odds on the Fed's Cook fight. Everything
+else in the day's buffer, including the Nvidia-SpaceX deal and the
+SpaceX lock-up rally, checked out as older news re-syndicating.

@@ -13,6 +13,17 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-09 — Talkspace publicly stakes out its clinical-safety framing ahead of regulation
+
+- **Talkspace is publicly building its clinical-safety case for its AI
+  guide ahead of any binding regulation.** A feature interview with its
+  Head of Clinical Operations and Quality lays out guardrails for what
+  the "Tee" tool will and won't do (support, not diagnosis or
+  treatment) — continuing the pattern of an incumbent staking out
+  "responsible AI" ground while SB 903 and similar bills are still
+  pending, first noted when the tool launched 07-23.
+  ([Tom's Guide](https://www.tomsguide.com/ai/raising-the-standard-inside-talkspaces-bold-new-ai-mental-health-support-tool)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-07 — Consumer Reports finds AI chatbots giving unreliable health answers
 
 - **Consumer Reports tested general-purpose AI chatbots against its own

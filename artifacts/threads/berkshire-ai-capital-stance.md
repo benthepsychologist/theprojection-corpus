@@ -21,6 +21,17 @@ growing or any other AI-adjacent name appears; any further Buffett/Abel
 commentary; and the GEICO/insurance-AI-liability strand as a secondary,
 lower-priority watch.
 
+## 2026-08-09 — Michael Burry publicly breaks with post-Buffett Berkshire
+
+- **Michael Burry publicly broke with Berkshire Hathaway, saying he no
+  longer finds it "an attractive investment going forward" and reading
+  Abel's early cash deployment (below) as "more framing moves than
+  investment moves."** The first public negative read on the Q2 story
+  this thread had been carrying positively — Burry doesn't dispute the
+  facts, he disputes what they mean, framing Abel as lacking Buffett's
+  "patience for the fat pitch."
+  ([Stocktwits](https://stocktwits.com/news-articles/markets/equity/post-buffett-berkshire-hathaway-can-t-keep-up-with-s-and-p-500-michael-burry-says-it-s-lost-its-attractive-tag/cZojiQnRJar)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-08 — Q2 earnings: Abel ends the 14-quarter selling streak, doubles down on Alphabet
 
 - **Berkshire's Q2 2026 earnings answered this thread's core watch directly: Abel became a net buyer of stocks for the first time in 15 quarters, and the single largest move was $10B more into Alphabet — pushing it to Berkshire's 5th-largest holding on a 224% single-quarter surge.** Net profit doubled to $25.7B (from $12.4B); operating earnings rose to $13.0B (from $11.2B); buybacks resumed at $4.5B for the quarter (more than $3.3B continuing into July). Cash/T-bills only ticked down modestly ($344.1B at June 30 vs. $347.7B at March 31) — the "~$500B pile" framing several outlets used overstates what was actually deployed, but the direction (buying, not hoarding) is the real signal. This substantively pre-answers the `berkshire-q2-2026-13f` expectation (due 08-14) ahead of the formal filing.

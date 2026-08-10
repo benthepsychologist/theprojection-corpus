@@ -18,6 +18,19 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-09 — Deadly Ukrainian drone strike on a Russian oil refinery
+
+- **A Ukrainian drone strike hit Russia's Taneco oil refinery in
+  Nizhnekamsk, Tatarstan, killing at least 13 people including a child
+  and injuring at least 39 — one of the deadliest single Ukrainian
+  strikes inside Russia of the war.** City mayor Radmir Belyayev
+  confirmed the toll; regional head Rustam Minnikhanov declared a period
+  of mourning. Ukraine's military confirmed hitting the refinery — the
+  same complex it also struck in June 2026, forcing a full refining
+  halt. Read as a continuation of Kyiv's energy-infrastructure campaign,
+  not a new kind of target.
+  ([RTE](https://www.rte.ie/news/2026/0810/1587221-ukraine-russia/)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-08 — Kyiv agrees, under US pressure, to spare non-Russian Black Sea oil tankers
 
 - **Ukraine has privately agreed not to target certain non-Russian oil

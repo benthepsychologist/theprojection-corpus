@@ -48,6 +48,21 @@ concrete.
   campaign, not a new escalation threshold; assessed below the flash
   bar (no casualties, no confirmed production halt).
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/9/saudi-arabia-says-fire-extinguished-at-aramco-facility-in-jizan), [NPR](https://www.npr.org/2026/08/09/nx-s1-5926387/yemens-houthis-claim-attack-on-aramco-oil-facility-in-saudi-arabia-and-other-middle-east-news)) ⟨daily 2026-08-09⟩
+- **Yemen's government confirmed the first casualty figures from Sunday's
+  Mocha port strikes — 7 dead (4 military, 3 civilian), 30 wounded.**
+  Houthi spokesman Yahya Saree said the strikes targeted Saudi troop
+  concentrations and weapons depots, though residential areas were also
+  hit; Yemeni government forces have since launched retaliatory strikes
+  on Houthi positions.
+  ([Al-Monitor](https://www.al-monitor.com/originals/2026/08/yemeni-military-says-houthi-attack-mocha-kills-7-wounds-30)) ⟨daily 2026-08-09⟩
+- **Trump is reportedly ready to abandon linking a Hormuz reopening to a
+  formal Iran nuclear deal — a shift from weeks of tying the two
+  together — and Treasury Secretary Bessent called the Strait
+  "irrelevant" going forward, arguing new pipelines will eventually route
+  around it.** Read by analysts as the administration signaling it may
+  step back from actively brokering a resolution; Iran's own published
+  conditions (above) are unchanged.
+  ([Reuters "Morning Bid" via Yahoo Finance](https://finance.yahoo.com/markets/articles/morning-bid-suddenly-strait-hormuz-043231428.html)) ⟨daily 2026-08-09⟩
 
 ## 2026-08-08 — UAE says an Iranian missile hit an ADNOC tanker in the Strait of Hormuz; Yemen's civil-war reignition enters a third deadly day
 

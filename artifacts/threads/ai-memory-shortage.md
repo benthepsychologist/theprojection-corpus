@@ -12,6 +12,20 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-09 — Apple tests Chinese CXMT memory under a Senate deadline not to
+
+- **Apple is testing memory chips from China's CXMT for China-market
+  iPhones/MacBooks, days after CXMT rejected Apple's price-cut demands.**
+  A bipartisan Senate group (Shaheen, Banks, Schumer and colleagues) has
+  given Apple until 2026-08-21 to publicly commit to rejecting CXMT and
+  YMTC, both Pentagon-designated Chinese-military-linked suppliers;
+  Micron is lobbying against Apple's plan. CXMT can hold firm on price
+  because Huawei and Xiaomi have already locked up its output at
+  similarly high levels — AI-driven DRAM scarcity flipping the usual
+  buyer-leverage dynamic. HP and Acer already ship CXMT chips outside
+  the US.
+  ([eWeek](https://www.eweek.com/news/apple-chinese-memory-chip-pressure/)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-07 — SK Hynix weighs selling down its China packaging plant
 
 - **SK Hynix is exploring a stake sale in its $3B Chongqing chip-packaging

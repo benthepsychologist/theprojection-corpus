@@ -51,6 +51,12 @@ decision.
   detailed FOMC vote-count coverage without ever naming her — the same
   shape of gap the Kevin Warsh watchlist add closed on 2026-08-02.
   ([NPR](https://www.npr.org/2026/08/07/nx-s1-5925167/trump-lisa-cook-federal-reserve)) ⟨steer 2026-08-09⟩
+- **The removal fight is starting to get a market price rather than just
+  political commentary — analyst/prediction-market reads now put real
+  odds (roughly 13-31%, varying by source and horizon) on Trump
+  succeeding in removing Cook before year-end.** The underlying action
+  isn't new; the quantified market read on it is.
+  ([Semafor](https://www.semafor.com/article/08/10/2026/trump-takes-his-second-swing-at-feds-cook)) ⟨daily 2026-08-09⟩
 
 ## ← Backstory
 

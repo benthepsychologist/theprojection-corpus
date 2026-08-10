@@ -15,6 +15,17 @@ rejected MDMA on unblinding/safety grounds and then wrote new trial-design
 rules (July 2026) addressing exactly the problem the accelerating trials
 share. The live question: is approval outrunning the methodology fix?
 
+## 2026-08-09 — UK's first publicly funded psilocybin trial reports a real, sustained effect
+
+- **The PsiDeR trial — South London and Maudsley NHS Trust with King's
+  College London, NIHR-funded — gave 60 treatment-resistant-depression
+  patients a single 25mg psilocybin dose with structured psychological
+  support, producing significantly greater depression-score improvement
+  than placebo at 3 and 6 weeks.** Independent of the COMPASS NDA track;
+  notable both for the result and for showing the treatment can be
+  delivered outside a hospital setting.
+  ([News-Medical](https://www.news-medical.net/news/20260810/Single-dose-psilocybin-shows-promise-for-treatment-resistant-depression-in-NHS-trial.aspx)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-07 — VA launches the first federal-government-sponsored psilocybin trial
 
 - **COMPASS Pathways is donating COMP360 to the VA's "PIVOT" trial**

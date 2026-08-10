@@ -846,6 +846,39 @@ expectations:
     logged: 2026-08-03
     logged_by: curate-add
     status: pending
+    # 2026-08-10 ⟨daily⟩: checked directly on the due date. Alibaba's own
+    # Hugging Face org page (458 models) carries no Qwen3.8-Max entry;
+    # ModelScope's listing is a JS shell so couldn't be checked directly,
+    # but no press source claims a landing there either. Every source
+    # since the 08-03 launch repeats the same vague "next week"/"week of
+    # 08-10" language with no firmer date issued. Still inside the claim's
+    # grace window — stays pending, not flipped to passed-silent yet.
+
+  - id: apple-cxmt-senate-deadline
+    claim: "Apple publicly commits to rejecting memory chips from China's CXMT and YMTC, per a bipartisan Senate deadline"
+    due: 2026-08-21
+    due_precision: day
+    thread: ai-memory-shortage
+    entities: [apple, cxmt]
+    source: https://www.eweek.com/news/apple-chinese-memory-chip-pressure/
+    confidence: reported
+    what_confirms: "Apple publicly rejects CXMT/YMTC sourcing, or proceeds with Chinese-supplier sourcing (China-market devices) despite Senate pressure — either resolves the claim"
+    logged: 2026-08-09
+    logged_by: curate-add
+    status: pending
+
+  - id: decart-acquisition-close
+    claim: "Israeli real-time-video AI startup Decart is acquired for $6-7B, reportedly by SpaceX"
+    due: 2026-08-17
+    due_precision: week    # sourcing said "next week" from an 08-09/10 report
+    thread: null
+    entities: [spacex]
+    source: https://www.calcalistech.com/ctechnews/article/hjhzrluuml
+    confidence: reported
+    what_confirms: "deal closes and buyer is confirmed — SpaceX as currently reported, or Amazon/Nebius instead"
+    logged: 2026-08-09
+    logged_by: curate-add
+    status: pending
 
   - id: moonshot-hk-ipo-filing
     claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"

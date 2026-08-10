@@ -1,0 +1,147 @@
+# 2026-08-09-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-06 — its readings
+# predate this digest's Fed-pricing and China-capital-markets items;
+# flagged in the digest's Map changes for the next weekly refresh).
+# Backlog completed 2026-08-10 (see the digest's own as_of note).
+
+michael-burry-publicly-broke-with-berkshire-hathaw:
+  mechanism: >
+    A high-profile contrarian is publicly contesting the bullish read on
+    the same Q2 data this digest already logged — a fight over
+    interpretation, not over facts. Berkshire's premium is partly
+    attributed to Buffett's personal capital-allocation reputation; Burry
+    is explicitly arguing that premium no longer transfers to Abel.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        Burry's framing gains traction and compresses Berkshire's
+        valuation premium as a "lost the Buffett premium" narrative takes
+        hold beyond one Substack post.
+      why: >
+        Berkshire's premium is partly attributed to Buffett's personal
+        capital-allocation reputation; a credible public voice arguing
+        that premium no longer applies could matter if picked up by
+        mainstream coverage. No historical precedent offered — kept at
+        speculative confidence per the discipline that above-speculative
+        confidence needs one.
+    - direction: >
+        The market shrugs it off as one manager's opinion and Abel's
+        actual Q2 buying pattern (the $10B Alphabet add, resumed
+        buybacks) keeps being read as the operative signal instead.
+      why: >
+        A single Substack post from one investor, however well-known,
+        doesn't automatically move consensus the way a data print does —
+        Burry's own public track record since his 2008 call has been
+        mixed, which caps how much weight the market gives any one call.
+  context_note: >
+    Directly sits against this thread's own throughline — Abel's net-buying
+    reversal was logged as the positive turn as of 08-08's pre-answer;
+    this is the first public pushback on that same read.
+
+apple-is-testing-memory-chips-from-china-s-cxmt-fo:
+  mechanism: >
+    AI-driven DRAM/HBM scarcity is overriding US-China tech-decoupling
+    logic — a marquee Western OEM is testing supply from a chipmaker
+    sitting adjacent to export-control scrutiny because the physical
+    shortage is now more binding than the political preference to avoid
+    Chinese silicon.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Apple formalizes CXMT sourcing for China-market devices only,
+        deepening a two-track supply chain.
+      why: >
+        The testing is explicitly scoped to devices sold in China, and
+        HP/Acer already ship CXMT chips outside the US — a bifurcation
+        pattern already forming.
+      precedent: >
+        Post-2018 trade-war regionalization of auto/electronics supply
+        chains, where OEMs ran China-specific vs. rest-of-world component
+        sourcing rather than one global chain.
+    - direction: >
+        Political/security backlash halts the relationship before it
+        formalizes.
+      why: >
+        CXMT sits next to the same export-control fight that produced the
+        Huawei precedent; a visible Apple-CXMT deal would be a
+        high-profile test case.
+      precedent: >
+        The 2019 Huawei Entity List action, which cut a major Chinese tech
+        firm off from US suppliers on national-security grounds amid live
+        commercial relationships.
+  context_note: >
+    capital-context.yaml carries no chip-supply-chain reading at all (its
+    five readings are rate regime, cross-border credit, external
+    position, fund flows, conflict risk premium) — this sits outside the
+    standing snapshot entirely, not in tension with anything on file.
+
+beijing-is-explicitly-using-its-28-trillion-combi:
+  mechanism: >
+    A funding-model substitution — capital-markets mobilization replacing
+    subsidy-driven industrial policy — meant to close a real, quantified
+    funding gap with the US (~$217B raised by Chinese tech via IPOs/bonds
+    over two years vs. more than 6x that per dollar for US peers).
+  confidence: plausible
+  scenarios:
+    - direction: >
+        More fast-tracked mega-IPOs follow CXMT's template, accelerating
+        China's domestic AI/chip funding base.
+      why: >
+        MSCI already fast-tracked CXMT into its China index via a
+        mega-IPO exemption just five weeks post-listing — a reusable
+        regulatory template.
+      precedent: >
+        South Korea's use of chaebol-linked public listings to fund its
+        strategic semiconductor buildout in the 1990s-2000s.
+    - direction: >
+        Retail-driven enthusiasm outruns fundamentals, producing a
+        correction that discredits the channel.
+      why: >
+        The playbook explicitly leans on household retail savings and a
+        single stock's large debut pop — the same ingredients that
+        inflated a prior bubble.
+      precedent: >
+        China's 2015 stock-market crash, triggered by a retail/margin-
+        financed run-up that reversed once state support stepped back.
+  context_note: >
+    Same gap as the CXMT interpretation above — capital-context.yaml's
+    cross-border-credit and external-position readings track USD-system
+    flows (BIS/TIC/IMF), not China-domestic capital markets. This is a
+    genuinely new axis the standing snapshot doesn't yet cover.
+
+the-trump-vs-cook-fed-removal-fight-is-starting-to:
+  mechanism: >
+    A political dispute over Fed governance is starting to get priced by
+    markets directly, turning narrative risk into something Fed-sensitive
+    asset pricing can lean on.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Odds keep climbing toward the deadline and Fed-sensitive assets
+        (long yields, dollar) begin pricing committee-composition risk
+        directly.
+      why: >
+        Markets are already assigning non-trivial odds (13-31%) to an
+        unprecedented sitting-governor removal.
+      precedent: >
+        Turkey's lira and rate-market volatility around Erdogan's repeated
+        central-bank-governor removals (2019-2021), where markets began
+        pricing institutional-independence risk directly into the
+        currency and bond curve once removals became a credible repeat
+        pattern.
+    - direction: >
+        The three-week response window passes without escalation and the
+        odds compress back down, since a removal attempt would still face
+        a real legal fight courts haven't resolved.
+      why: >
+        Fed governors have for-cause removal protection that has never
+        been tested this directly; markets may be pricing headline risk
+        ahead of the actual legal odds of a successful removal.
+  context_note: >
+    Directly extends capital-context.yaml's rate_regime reading, which
+    already flags the Cook fight as pressure on the committee's
+    COMPOSITION, distinct from Warsh's own low-guidance messaging regime —
+    this is the first quantified market read on that exact risk axis.

@@ -14,6 +14,25 @@ reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
 (Entity gap: CXMT isn't a watchlist org — steering ask open.)
 
+## 2026-08-09 — Apple tests CXMT memory as Beijing pivots to capital markets to fund AI champions
+
+- **Apple is testing memory chips from China's CXMT for China-market
+  iPhones/MacBooks, days after CXMT rejected Apple's price-cut demands.**
+  The talks are early-stage; CXMT can hold firm on price because Huawei
+  and Xiaomi have already locked up its output at similarly high levels.
+  Separately, CXMT was fast-tracked into the MSCI China All Shares Index
+  effective today via a mega-IPO exemption, five weeks after a Shanghai
+  debut that made it mainland China's most valuable stock.
+  ([Reuters via Yahoo Finance](https://finance.yahoo.com/technology/articles/apple-tests-chinas-cxmt-memory-120655649.html), [SCMP](https://www.scmp.com/business/china-business/article/3363490/how-china-dram-champion-cxmts-msci-entry-could-lure-fund-inflows-cement-its-top-ranking)) ⟨daily 2026-08-09⟩
+- **Beijing is explicitly using its $28 trillion combined stock-and-bond
+  market as an AI industrial-policy tool — a break from its traditional
+  subsidy/state-investment playbook, with CXMT's Shanghai debut as the
+  marquee proof point.** Chinese tech firms have raised ~$217B via
+  IPOs/bonds over two years, versus more than 6x that per dollar raised
+  by US peers — opening access to China's $26T household-savings pool to
+  narrow the gap.
+  ([Bloomberg Law syndication](https://news.bloomberglaw.com/daily-labor-report/china-taps-28-trillion-capital-markets-to-challenge-us-in-ai)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-07 — The tracked "coming days" administration letter still hasn't landed; Congress's actual letter went to Apple instead, over a week ago
 
 - **The `cxmt-congress-letters` expectation (bipartisan letters to the

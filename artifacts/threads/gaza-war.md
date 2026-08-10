@@ -39,6 +39,20 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-09 — Netanyahu publicly rejects the sequencing of Trump's own Gaza roadmap
+
+- **Netanyahu publicly rejected the core of Trump's own 15-point Gaza
+  roadmap, insisting Israel will not withdraw until Hamas is
+  "genuinely," not "fictitiously," disarmed.** Trump's plan (published
+  07-31) envisioned Hamas disarmament and Israeli withdrawal happening
+  in parallel, phased steps; Netanyahu's comments to his ministers
+  reject that sequencing outright, demanding disarmament come first —
+  new daylight between Israel and the US-brokered framework the Board of
+  Peace itself endorsed just a week earlier. First direct, on-record
+  answer to whether the 14-day disarmament roadmap actually lands, and a
+  negative one.
+  ([Washington Post](https://www.washingtonpost.com/world/2026/08/09/netanyahu-rejects-trump-backed-plan-hamas-disarm-israel-leave-gaza/)) ⟨daily 2026-08-09⟩
+
 ## 2026-08-06 — IDF reports pulling back and tightening rules of engagement; eight Muslim-majority states accuse Israel of breaching international law
 
 - **A foreign official involved in implementing the disarmament roadmap said the IDF has shown restraint and pulled back operations** — "After a challenging start, we've seen some steps in the right direction," describing this as material to advancing the phased sequencing between disarmament and withdrawal. Reporting also indicates Israel has tightened its rules of engagement, now requiring approval from the IDF chief of staff before strikes proceed — a real change of posture from the near-daily strikes logged here 08-02/03.

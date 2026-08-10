@@ -1,13 +1,13 @@
-generated: '2026-08-09'
-method: tools/build_world_news.py --day 2026-08-09 --gdelt-start 2026-08-07 --gdelt-end
-  2026-08-09
+generated: '2026-08-10'
+method: tools/build_world_news.py --day 2026-08-10 --gdelt-start 2026-08-08 --gdelt-end
+  2026-08-10
 sources:
 - google_news_rss (tools/world_news.py)
 - GDELT Events, deduped (tools/gdelt_dedup.py)
 items:
 - id: russia-ukraine-fight
   headline: 'Russia–Ukraine: Fight'
-  distinct_outlets: 255
+  distinct_outlets: 275
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.99
@@ -15,167 +15,153 @@ items:
   thread: russia-ukraine-war
 - id: pakistan-saudi-arabia-engage-in-diplomatic-coope
   headline: 'Pakistan–Saudi Arabia: Engage in diplomatic cooperation'
-  distinct_outlets: 163
+  distinct_outlets: 103
   source: gdelt
   severity: COOP
-  goldstein_avg: 7.8
+  goldstein_avg: 7.72
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: saudi-arabia-turkey-engage-in-diplomatic-coopera
-  headline: 'Saudi Arabia–Turkey: Engage in diplomatic cooperation'
-  distinct_outlets: 67
+- id: pakistan-turkey-engage-in-diplomatic-cooperation
+  headline: 'Pakistan–Turkey: Engage in diplomatic cooperation'
+  distinct_outlets: 55
   source: gdelt
   severity: COOP
-  goldstein_avg: 7.71
+  goldstein_avg: 7.84
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: israel-palestine-yield
+  headline: 'Israel–Palestine: Yield'
+  distinct_outlets: 52
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 8.98
   status: confirmed_thread
   thread: gaza-war
 - id: russia-ukraine-reject
   headline: 'Russia–Ukraine: Reject'
-  distinct_outlets: 50
+  distinct_outlets: 49
   source: gdelt
   severity: MIXED
-  goldstein_avg: -4.01
+  goldstein_avg: -4.0
   status: confirmed_thread
   thread: russia-ukraine-war
+- id: saudi-arabia-turkey-engage-in-diplomatic-coopera
+  headline: 'Saudi Arabia–Turkey: Engage in diplomatic cooperation'
+  distinct_outlets: 47
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 7.74
+  status: confirmed_thread
+  thread: gaza-war
 - id: iran-united-states-fight
   headline: 'Iran–United States: Fight'
   distinct_outlets: 44
   source: gdelt
   severity: CONFLICT
-  goldstein_avg: -10.0
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: iran-israel-fight
-  headline: 'Iran–Israel: Fight'
-  distinct_outlets: 43
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
+  goldstein_avg: -9.98
   status: confirmed_thread
   thread: iran-conflict-widening
 - id: serbia-ukraine-consult
   headline: 'Serbia–Ukraine: Consult'
-  distinct_outlets: 42
+  distinct_outlets: 43
   source: gdelt
   severity: COOP
-  goldstein_avg: 3.49
+  goldstein_avg: 3.69
   status: candidate
-- id: iran-saudi-arabia-fight
-  headline: 'Iran–Saudi Arabia: Fight'
+- id: russia-ukraine-assault
+  headline: 'Russia–Ukraine: Assault'
+  distinct_outlets: 41
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.18
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: iran-israel-fight
+  headline: 'Iran–Israel: Fight'
   distinct_outlets: 40
   source: gdelt
   severity: CONFLICT
-  goldstein_avg: -10.0
+  goldstein_avg: -9.99
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: spain-italy-threaten
-  headline: 'Spain–Italy: Threaten'
-  distinct_outlets: 40
+- id: iran-united-states-consult
+  headline: 'Iran–United States: Consult'
+  distinct_outlets: 39
   source: gdelt
-  severity: MIXED
-  goldstein_avg: -5.57
+  severity: COOP
+  goldstein_avg: 5.31
   status: confirmed_thread
-  thread: europe-migration-schengen
+  thread: iran-conflict-widening
+- id: israel-palestine-fight
+  headline: 'Israel–Palestine: Fight'
+  distinct_outlets: 38
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.96
+  status: confirmed_thread
+  thread: gaza-war
 - id: russia-ukraine-disapprove
   headline: 'Russia–Ukraine: Disapprove'
-  distinct_outlets: 40
+  distinct_outlets: 36
   source: gdelt
   severity: MIXED
   goldstein_avg: -2.0
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: spain-italy-reject
-  headline: 'Spain–Italy: Reject'
-  distinct_outlets: 36
+- id: iran-united-states-yield
+  headline: 'Iran–United States: Yield'
+  distinct_outlets: 35
   source: gdelt
-  severity: MIXED
-  goldstein_avg: -4.08
+  severity: COOP
+  goldstein_avg: 8.02
   status: confirmed_thread
-  thread: europe-migration-schengen
+  thread: iran-conflict-widening
 - id: russia-ukraine-yield
   headline: 'Russia–Ukraine: Yield'
   distinct_outlets: 34
   source: gdelt
   severity: COOP
-  goldstein_avg: 7.0
+  goldstein_avg: 7.49
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: russia-ukraine-assault
-  headline: 'Russia–Ukraine: Assault'
-  distinct_outlets: 34
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.08
-  status: confirmed_thread
-  thread: russia-ukraine-war
-- id: iran-united-states-make-statement
-  headline: 'Iran–United States: Make statement'
-  distinct_outlets: 34
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 0.02
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: russia-ukraine-consult
-  headline: 'Russia–Ukraine: Consult'
-  distinct_outlets: 34
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 3.37
-  status: confirmed_thread
-  thread: russia-ukraine-war
-- id: spain-consult
-  headline: 'SPAIN: Consult'
-  distinct_outlets: 33
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 2.82
-  status: candidate
-- id: pakistan-saudi-arabia-express-intent-to-cooperat
-  headline: 'Pakistan–Saudi Arabia: Express intent to cooperate'
+- id: iran-united-states-appeal
+  headline: 'Iran–United States: Appeal'
   distinct_outlets: 32
   source: gdelt
   severity: COOP
-  goldstein_avg: 4.16
+  goldstein_avg: 2.93
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: israel-lebanon-fight
-  headline: 'Israel–Lebanon: Fight'
+- id: israel-palestine-reject
+  headline: 'Israel–Palestine: Reject'
   distinct_outlets: 32
   source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.92
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: israel-palestine-fight
-  headline: 'Israel–Palestine: Fight'
-  distinct_outlets: 32
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.95
+  severity: MIXED
+  goldstein_avg: -4.06
   status: confirmed_thread
   thread: gaza-war
-- id: russia-ukraine-threaten
-  headline: 'Russia–Ukraine: Threaten'
+- id: russia-ukraine-consult
+  headline: 'Russia–Ukraine: Consult'
+  distinct_outlets: 32
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 3.14
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: russia-ukraine-engage-in-diplomatic-cooperation
+  headline: 'Russia–Ukraine: Engage in diplomatic cooperation'
+  distinct_outlets: 32
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 3.8
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: iran-united-states-reject
+  headline: 'Iran–United States: Reject'
   distinct_outlets: 31
   source: gdelt
   severity: MIXED
-  goldstein_avg: -6.31
-  status: confirmed_thread
-  thread: russia-ukraine-war
-- id: indonesia-make-statement
-  headline: 'INDONESIA: Make statement'
-  distinct_outlets: 31
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 0.02
-  status: candidate
-- id: iran-oman-consult
-  headline: 'Iran–Oman: Consult'
-  distinct_outlets: 31
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 4.21
+  goldstein_avg: -4.26
   status: confirmed_thread
   thread: iran-conflict-widening
 - id: serbia-ukraine-engage-in-diplomatic-cooperation
@@ -183,777 +169,13 @@ items:
   distinct_outlets: 31
   source: gdelt
   severity: COOP
-  goldstein_avg: 4.72
+  goldstein_avg: 4.79
   status: candidate
-- id: spain-italy-appeal
-  headline: 'Spain–Italy: Appeal'
+- id: spain-italy-consult
+  headline: 'Spain–Italy: Consult'
   distinct_outlets: 30
   source: gdelt
   severity: COOP
-  goldstein_avg: 2.65
-  status: confirmed_thread
-  thread: europe-migration-schengen
-- id: saudi-arabia-yemen-fight
-  headline: 'Saudi Arabia–Yemen: Fight'
-  distinct_outlets: 30
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -10.0
+  goldstein_avg: 2.81
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: italy-consult
-  headline: 'ITALY: Consult'
-  distinct_outlets: 30
-  source: gdelt
-  severity: COOP
-  goldstein_avg: 2.5
-  status: candidate
-- id: openai-pauses-some-work-on-new-astra-model-on-cy
-  headline: OpenAI pauses some work on new Astra model on cyber concerns
-  distinct_outlets: 28
-  outlets_sample:
-  - ANI News
-  - Aju Press
-  - Axios
-  - Business Standard
-  - Chosunbiz
-  source: google_news_rss
-  status: candidate
-- id: apple-brings-alibaba-s-qwen-ai-to-macs-in-china
-  headline: Apple brings Alibaba's Qwen AI to Macs in China
-  distinct_outlets: 16
-  outlets_sample:
-  - AOL.com
-  - Crypto Briefing
-  - Dunya News
-  - ET Telecom
-  - Global Times
-  source: google_news_rss
-  status: candidate
-- id: deepmind-founder-ascends-to-singular-ai-role-at-
-  headline: DeepMind founder ascends to singular AI role at Google
-  distinct_outlets: 12
-  outlets_sample:
-  - AOL.co.uk
-  - Computerworld
-  - InfoWorld
-  - Invezz
-  - Lavender Hotel
-  source: google_news_rss
-  status: confirmed_thread
-  thread: google-health
-- id: amazon-plans-massive-texas-ai-campus-and-an-enor
-  headline: Amazon plans massive Texas AI campus—and an enormous gas power plant
-  distinct_outlets: 12
-  outlets_sample:
-  - AOL.com
-  - Chron
-  - Crypto Briefing
-  - Data Center Dynamics
-  - NewsBytes
-  source: google_news_rss
-  status: candidate
-- id: nvidia-plans-3b-investment-in-stargate-developer
-  headline: Nvidia plans $3b investment in Stargate developer Lancium
-  distinct_outlets: 12
-  outlets_sample:
-  - BusinessLine
-  - ET CIO
-  - Nepalnews.com
-  - NewsBytes
-  - Reuters
-  source: google_news_rss
-  status: candidate
-- id: bills-get-first-feel-for-new-highmark-stadium
-  headline: Bills get first feel for new Highmark Stadium
-  distinct_outlets: 12
-  outlets_sample:
-  - 13wham.com
-  - Audacy
-  - Bills Wire
-  - Buffalo News
-  - Democrat and Chronicle
-  source: google_news_rss
-  status: candidate
-- id: tesla-s-elon-musk-is-having-a-generational-meltd
-  headline: Tesla’s Elon Musk is having a generational meltdown
-  distinct_outlets: 10
-  outlets_sample:
-  - AOL.com
-  - Crypto Briefing
-  - Moomoo
-  - New York Post
-  - Space
-  source: google_news_rss
-  status: candidate
-- id: meta-ordered-to-pay-567m-in-child-safety-case
-  headline: Meta ordered to pay $567M in child safety case
-  distinct_outlets: 10
-  outlets_sample:
-  - Crypto Briefing
-  - Graphic Online
-  - KSL News
-  - KSL NewsRadio
-  - MLex
-  source: google_news_rss
-  status: candidate
-- id: uae-oil-tanker-attacked-by-missile-in-the-strait
-  headline: UAE oil tanker attacked by missile in the Strait of Hormuz
-  distinct_outlets: 10
-  outlets_sample:
-  - Arabian Business
-  - Business Standard
-  - Crypto Briefing
-  - Iran International
-  - Laodong.vn
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: trump-calls-texas-data-center-opposition-a-mista
-  headline: Trump calls Texas’ data center opposition a “mistake”
-  distinct_outlets: 10
-  outlets_sample:
-  - E&E News by POLITICO
-  - KERA News
-  - KETK.com
-  - KRGV
-  - Odessa American
-  source: google_news_rss
-  status: candidate
-- id: meta-fined-567-million-over-child-mental-health-
-  headline: Meta fined $567 million over child mental health harm
-  distinct_outlets: 9
-  outlets_sample:
-  - 101 WIXX
-  - Business Reporter
-  - LiveNOW from FOX
-  - Philstar.com
-  - Techlusive
-  source: google_news_rss
-  status: candidate
-- id: fed-reform-agenda-under-kevin-warsh-faces-market
-  headline: Fed reform agenda under Kevin Warsh faces market resistance
-  distinct_outlets: 9
-  outlets_sample:
-  - AOL.com
-  - Crypto Briefing
-  - Fox Business
-  - The Independent
-  - Traders Union
-  source: google_news_rss
-  status: candidate
-- id: trump-renews-push-to-fire-fed-governor-lisa-cook
-  headline: Trump renews push to fire Fed Governor Lisa Cook
-  distinct_outlets: 9
-  outlets_sample:
-  - Houston Style Magazine
-  - KCCI
-  - NPR
-  - NST Online
-  - Scotsman Guide
-  source: google_news_rss
-  status: candidate
-- id: who-is-liable-after-openai-anthropic-and-meta-ai
-  headline: Who is liable after OpenAI Anthropic and Meta AI breaches?
-  distinct_outlets: 8
-  outlets_sample:
-  - Crypto Briefing
-  - ISNA News Agency
-  - Invezz
-  - Martin Cid Magazine
-  - NewsBytes
-  source: google_news_rss
-  status: confirmed_thread
-  thread: frontier-lab-ipos
-- id: anthropic-to-build-in-house-chip-design-team-for
-  headline: Anthropic to build in-house chip design team for Claude
-  distinct_outlets: 8
-  outlets_sample:
-  - 9to5Mac
-  - AOL.com
-  - Crypto Briefing
-  - MLQ.ai
-  - Mezha
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-mai-openai-decoupling
-- id: google-shows-us-the-pixel-watch-5
-  headline: Google Shows Us the Pixel Watch 5
-  distinct_outlets: 8
-  outlets_sample:
-  - 9to5Google
-  - ARYnews.tv
-  - Digital Trends
-  - Droid Life
-  - GSMArena.com
-  source: google_news_rss
-  status: candidate
-- id: amd-to-buy-chip-startup-taalas
-  headline: AMD to buy chip startup Taalas
-  distinct_outlets: 8
-  outlets_sample:
-  - Data Center Dynamics
-  - ETEnterpriseai.com
-  - Financial Post
-  - Network World
-  - The Manila Times
-  source: google_news_rss
-  status: candidate
-- id: trump-renews-push-to-oust-federal-reserve-govern
-  headline: Trump renews push to oust Federal Reserve governor Lisa Cook
-  distinct_outlets: 8
-  outlets_sample:
-  - CT Insider
-  - CityNews Toronto
-  - Financial Times
-  - Fox Business
-  - Northeast Times
-  source: google_news_rss
-  status: candidate
-- id: openai-acquires-presentation-startup-nextslide
-  headline: OpenAI acquires presentation startup NextSlide
-  distinct_outlets: 7
-  outlets_sample:
-  - Crypto Briefing
-  - Storyboard18
-  - Tech in Asia
-  - TechCrunch
-  - The Daily Star
-  source: google_news_rss
-  status: candidate
-- id: openai-provides-more-details-on-the-hugging-face
-  headline: OpenAI provides more details on the Hugging Face incident
-  distinct_outlets: 7
-  outlets_sample:
-  - AOL.com
-  - CNBC
-  - Fortune
-  - LinkedIn
-  - Nairametrics
-  source: google_news_rss
-  status: confirmed_thread
-  thread: openai-containment-breach
-- id: apple-and-openai-escalate-legal-battle-over-devi
-  headline: Apple and OpenAI escalate legal battle over devices
-  distinct_outlets: 7
-  outlets_sample:
-  - AOL.com
-  - Digital Journal
-  - ETEnterpriseai.com
-  - Kuwait Times
-  - Letem světem Applem
-  source: google_news_rss
-  status: confirmed_thread
-  thread: custom-asic-tolls
-- id: openai-anthropic-model-tests-reveal-more-hacking
-  headline: OpenAI, Anthropic model tests reveal more hacking, deception
-  distinct_outlets: 7
-  outlets_sample:
-  - BusinessLine
-  - Cyprus Mail
-  - Scientific American
-  - The Daily Star
-  - Yahoo Tech
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-mai-openai-decoupling
-- id: michael-burry-bets-against-oracle-and-nebius-st
-  headline: Michael Burry bets against Oracle and Nebius st...
-  distinct_outlets: 7
-  outlets_sample:
-  - Business Insider Africa
-  - International Business Times UK
-  - Pluang
-  - Seeking Alpha
-  - TipRanks
-  source: google_news_rss
-  status: candidate
-- id: ex-sk-hynix-employee-jailed-for-leaking-chip-tec
-  headline: 'Ex-SK Hynix employee jailed for leaking chip tech to Chinese firm: report'
-  distinct_outlets: 7
-  outlets_sample:
-  - Investing.com
-  - Reuters
-  - SRN News
-  - The Daily Star
-  - The News International
-  source: google_news_rss
-  status: candidate
-- id: sk-hynix-to-expand-in-south-korea
-  headline: SK Hynix to expand in South Korea
-  distinct_outlets: 7
-  outlets_sample:
-  - CTV News
-  - NeoFeed
-  - New Scientist
-  - Taipei Times
-  - The Register
-  source: google_news_rss
-  status: candidate
-- id: govt-asks-meta-for-algorithm-changes-to-curb-dee
-  headline: Govt asks Meta for algorithm changes to curb deepfakes, propaganda
-  distinct_outlets: 7
-  outlets_sample:
-  - Business Standard
-  - BusinessLine
-  - ETEnterpriseai.com
-  - Fortune India
-  - Moneycontrol.com
-  source: google_news_rss
-  status: candidate
-- id: alibaba-plans-revenue-sharing-for-qwen-ai-model
-  headline: Alibaba plans revenue sharing for Qwen AI model
-  distinct_outlets: 6
-  outlets_sample:
-  - Mix Vale
-  - Tech in Asia
-  - The American Bazaar
-  - The Daily Star
-  - TipRanks
-  source: google_news_rss
-  status: candidate
-- id: kimi-k3-moonshot-s-rising-star
-  headline: Kimi K3 | Moonshot’s rising star
-  distinct_outlets: 6
-  outlets_sample:
-  - Crypto Briefing
-  - CryptoRank
-  - Cryptopolitan
-  - The Hindu
-  - csoonline.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: china-stack-independence
-- id: samsung-galaxy-z-fold-8-review-the-best-foldable
-  headline: 'Samsung Galaxy Z Fold 8 review: The best foldable for most people'
-  distinct_outlets: 6
-  outlets_sample:
-  - 9to5Google
-  - Android Central
-  - TechRadar
-  - The Indian Express
-  - Tom's Guide
-  source: google_news_rss
-  status: candidate
-- id: saudi-turkey-pakistan-enter-mutual-defense-pact
-  headline: Saudi, Turkey, Pakistan enter mutual defense pact
-  distinct_outlets: 6
-  outlets_sample:
-  - Bangladesh Sangbad Sangstha (BSS)
-  - Crypto Briefing
-  - EnterpriseAM
-  - Gulf Times
-  - Reuters
-  source: google_news_rss
-  status: confirmed_thread
-  gdelt_confirmation:
-    severity: COOP
-    goldstein_avg: 7.96
-    effective_domains: 106
-  thread: iran-conflict-widening
-- id: liv-golf-to-play-beyond-2026-ceo
-  headline: LIV Golf to play beyond 2026 – CEO
-  distinct_outlets: 6
-  outlets_sample:
-  - Daily Express US
-  - Golfweek
-  - Qatar Tribune
-  - The Manila Times
-  - The Mirror US
-  source: google_news_rss
-  status: candidate
-- id: openai-pauses-some-work-on-new-ai-model-over-cyb
-  headline: OpenAI Pauses Some Work on New AI Model Over Cybersecurity Concerns
-  distinct_outlets: 5
-  outlets_sample:
-  - Bitcoin World
-  - Bloomberg.com
-  - CryptoRank
-  - WSJ
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: openai-unveils-more-advanced-versions-of-chatgpt
-  headline: OpenAI unveils more advanced versions of ChatGPT
-  distinct_outlets: 5
-  outlets_sample:
-  - AzerNews
-  - MarketScale
-  - PCWorld
-  - wandtv.com
-  - Українські Національні Новини (УНН)
-  source: google_news_rss
-  status: confirmed_thread
-  thread: nippon-life-openai-suit
-- id: cathie-wood-s-ark-piled-into-nvidia-and-taiwan-s
-  headline: Cathie Wood's Ark Piled Into Nvidia and Taiwan Semiconductor After Meta's
-    Earnings Miss. Here's What It Signals for Arti…
-  distinct_outlets: 5
-  outlets_sample:
-  - AOL.com
-  - Longbridge
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: apple-might-soon-shatter-iphone-18-pro-illusions
-  headline: Apple might soon shatter iPhone 18 Pro illusions
-  distinct_outlets: 5
-  outlets_sample:
-  - 9to5Mac
-  - Báo VietNamNet
-  - MacDailyNews
-  - PhoneArena
-  - indiatoday.in
-  source: google_news_rss
-  status: candidate
-- id: samsung-galaxy-watch-ultra2-review
-  headline: Samsung Galaxy Watch Ultra2 review
-  distinct_outlets: 5
-  outlets_sample:
-  - AL.com
-  - GSMArena.com
-  - Gulf News
-  - Yahoo Tech
-  - ZDNET
-  source: google_news_rss
-  status: candidate
-- id: amd-just-made-bold-move-to-challenge-nvidia
-  headline: AMD just made bold move to challenge Nvidia
-  distinct_outlets: 5
-  outlets_sample:
-  - Gagadget.com
-  - Invezz
-  - Martin Cid Magazine
-  - howtogeek.com
-  - thestreet.com
-  source: google_news_rss
-  status: candidate
-- id: meat-packer-jbs-agrees-joint-venture-with-indone
-  headline: Meat packer JBS agrees joint venture with Indonesian wealth fund arm
-  distinct_outlets: 5
-  outlets_sample:
-  - 102.7 WBOW
-  - Investing.com
-  - Reuters
-  - The Lufkin Daily News
-  - TradingView
-  source: google_news_rss
-  status: candidate
-- id: kyle-shanahan-says-his-tesla-was-on-autopilot-be
-  headline: Kyle Shanahan says his Tesla was on autopilot before accident
-  distinct_outlets: 5
-  outlets_sample:
-  - MARCA
-  - The Mercury News
-  - The New York Times
-  - nbcsports.com
-  - sfchronicle.com
-  source: google_news_rss
-  status: candidate
-- id: uae-condemns-houthis-attack-on-saudi-arabia
-  headline: UAE Condemns Houthis’ Attack On Saudi Arabia
-  distinct_outlets: 5
-  outlets_sample:
-  - Al Arabiya English
-  - Fast Company Middle East
-  - Ommcom News
-  - frontiersin.org
-  - ua.news
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: houthi-strikes-kill-2-and-target-red-sea-tanker
-  headline: Houthi strikes kill 2 and target Red Sea tanker
-  distinct_outlets: 5
-  outlets_sample:
-  - Anadolu Ajansı
-  - Latest news from Azerbaijan
-  - Lloyd's List
-  - Middle East Monitor
-  - turkiyetoday.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: abbott-orders-texas-data-centers-audit-halts-gri
-  headline: Abbott orders Texas data centers audit, halts grid connections
-  distinct_outlets: 5
-  outlets_sample:
-  - Heartlander News
-  - Port Arthur News
-  - The Economic Times
-  - Yahoo
-  - thecooldown.com
-  source: google_news_rss
-  status: candidate
-- id: openai-slows-astra-model-release-after-cybersecu
-  headline: OpenAI Slows Astra Model Release After Cybersecurity Warnings
-  distinct_outlets: 4
-  outlets_sample:
-  - Analytics Insight
-  - Benzinga
-  - CXOToday.com
-  - Eurasia Business News
-  source: google_news_rss
-  status: candidate
-- id: the-openai-smart-speaker-will-cost-between-300-a
-  headline: The OpenAI smart speaker will cost between $300 and $400
-  distinct_outlets: 4
-  outlets_sample:
-  - Bandwidth Blog
-  - Fortune
-  - New York Post
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: openai-acquires-nextslide-the-ai-presentation-st
-  headline: OpenAI Acquires NextSlide, the AI Presentation Startup
-  distinct_outlets: 4
-  outlets_sample:
-  - Bitcoin World
-  - finance.biggo.com
-  - unite.ai
-  - Межа. Новини України.
-  source: google_news_rss
-  status: candidate
-- id: who-is-liable-when-ai-goes-rogue-lawyers-see-new
-  headline: Who is liable when AI goes rogue? Lawyers see new risks
-  distinct_outlets: 4
-  outlets_sample:
-  - Minnesota Lawyer
-  - New Orleans CityBusiness
-  - Reuters
-  - WTVB
-  source: google_news_rss
-  status: candidate
-- id: new-chinese-ai-model-kimi-k3-escapes-security-te
-  headline: New Chinese AI model Kimi K3 escapes security test sandbox
-  distinct_outlets: 4
-  outlets_sample:
-  - Firstpost
-  - TechCrunch
-  - WION
-  - dev.ua
-  source: google_news_rss
-  status: candidate
-- id: review-the-samsung-galaxy-z-fold-8-makes-phones-
-  headline: 'Review: The Samsung Galaxy Z Fold 8 makes phones interesting again'
-  distinct_outlets: 4
-  outlets_sample:
-  - Android Central
-  - Android Police
-  - Mashable SEA
-  - Yahoo Tech
-  source: google_news_rss
-  status: candidate
-- id: why-google-maps-isn-t-built-for-hikers-even-with
-  headline: Why Google Maps isn't built for hikers, even with AI
-  distinct_outlets: 4
-  outlets_sample:
-  - Android Police
-  - Nation’s Restaurant News
-  - howtogeek.com
-  - mashable.com
-  source: google_news_rss
-  status: candidate
-- id: google-earth-s-potential-disinformation-nightmar
-  headline: Google Earth’s potential disinformation nightmare
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - Fortune
-  - The Daily Star
-  - mashable.com
-  source: google_news_rss
-  status: candidate
-- id: alphabet-ceo-sundar-pichai-just-made-a-decision-
-  headline: Alphabet CEO Sundar Pichai Just Made a Decision That Could Move Nvidia
-    and Broadcom Stock
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - Crypto Briefing
-  - Currently.com
-  - The Motley Fool
-  source: google_news_rss
-  status: confirmed_thread
-  thread: qualcomm-dragonfly
-- id: sk-hynix-building-new-dram-and-nand-fabs
-  headline: SK Hynix building new DRAM and NAND fabs
-  distinct_outlets: 4
-  outlets_sample:
-  - Blocks & Files
-  - Investing.com UK
-  - KED Global
-  - Neowin
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: sk-hynix-earmarks-38b-for-ai-memory
-  headline: SK Hynix earmarks $38B for AI memory
-  distinct_outlets: 4
-  outlets_sample:
-  - Mobile World Live
-  - Yahoo Finance
-  - Yahoo Finance UK
-  - Yahoo! Finance Canada
-  source: google_news_rss
-  status: candidate
-- id: south-korea-stock-volatility-eases-as-leveraged-
-  headline: South Korea stock volatility eases as leveraged trades unwind
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
-  - Insurance Business
-  - Investing.com
-  - The Business Times
-  source: google_news_rss
-  status: candidate
-- id: trump-says-congress-wants-to-regulate-ai-industr
-  headline: Trump says Congress wants to regulate AI industry 'out of business'
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Recorder
-  - Reuters
-  - The Straits Times
-  - livemint.com
-  source: google_news_rss
-  status: candidate
-- id: jeff-bezos-amazon-just-raised-its-ai-spending-to
-  headline: Jeff Bezos' Amazon Just Raised Its AI Spending to $220 Billion for 2026.
-    Here's What That Capex Hike Means for Investors.
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: hyperscaler-capex-big-picture
-- id: is-ai-snitching-on-big-tech
-  headline: Is AI Snitching On Big Tech?
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - The Daily Star
-  - The Lever
-  - The Times
-  source: google_news_rss
-  status: candidate
-- id: bills-debut-new-highmark-stadium-with-return-of-
-  headline: Bills debut new Highmark Stadium with Return of Blue and Red
-  distinct_outlets: 4
-  outlets_sample:
-  - Buffalo Bills
-  - Democrat and Chronicle
-  - WGRZ
-  - WIVB News 4
-  source: google_news_rss
-  status: candidate
-- id: trump-warsh-talk-about-economy-all-the-time-hass
-  headline: Trump, Warsh Talk About Economy ‘All the Time,’ Hassett Says
-  distinct_outlets: 4
-  outlets_sample:
-  - Bloomberg.com
-  - Yahoo Finance
-  - Yahoo Finance UK
-  - bloomingbit
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: market-expert-doubts-fed-will-raise-rates-after-
-  headline: Market expert doubts Fed will raise rates after July jobs report
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
-  - Fox News
-  - hngnews.com
-  - marketplace.org
-  source: google_news_rss
-  status: confirmed_thread
-  thread: red-sea-oil-shock
-- id: us-president-trump-warsh-is-great-and-i-won-t-cr
-  headline: 'US President Trump: Warsh is great and I won’t criticize him'
-  distinct_outlets: 4
-  outlets_sample:
-  - Demócrata
-  - Mitrade
-  - Seeking Alpha
-  - The Edge Malaysia
-  source: google_news_rss
-  status: candidate
-- id: trump-imposes-15-tariff-on-key-chip-material-to-
-  headline: Trump imposes 15% tariff on key chip material to counter China
-  distinct_outlets: 4
-  outlets_sample:
-  - Big News Network.com
-  - CNBC
-  - MyJoyOnline
-  - Plataforma Media
-  source: google_news_rss
-  status: candidate
-- id: alphabet-eyes-20b-25b-from-bond-sale
-  headline: Alphabet eyes $20B-$25B from bond sale
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
-  - Newswav
-  - The Manila Times
-  - TipRanks
-  source: google_news_rss
-  status: candidate
-- id: houthi-missiles-and-drones-hit-saudi-backed-forc
-  headline: Houthi missiles and drones hit Saudi-backed forces in Yemen
-  distinct_outlets: 4
-  outlets_sample:
-  - Al Jazeera
-  - Gulf Today
-  - albawaba.com
-  - shafaq.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: 10-killed-in-houthi-attack-on-oil-rich-marib-yem
-  headline: 10 killed in Houthi attack on oil-rich Marib, Yemen
-  distinct_outlets: 4
-  outlets_sample:
-  - 24NewsHD
-  - NST Online
-  - The Manila Times
-  - france24.com
-  source: google_news_rss
-  status: candidate
-- id: energy-vault-secures-1-25-gw-ai-data-center-powe
-  headline: Energy Vault secures 1.25 GW AI data center power contract in Texas
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
-  - Investing.com Canada
-  - Investing.com Nigeria
-  - Investing.com South Africa
-  source: google_news_rss
-  status: candidate
-- id: gov-abbott-pauses-new-texas-data-center-approval
-  headline: Gov. Abbott pauses new Texas data center approvals
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - ConchoValleyHomepage.com
-  - NewsNation
-  - Yahoo
-  source: google_news_rss
-  status: candidate
-- id: berkshire-hathaways-new-ceo-greg-abel-spends-a-c
-  headline: Berkshire Hathaways new CEO Greg Abel spends a chunk of the companys massive
-    cashpile
-  distinct_outlets: 4
-  outlets_sample:
-  - CNBC
-  - Pluang
-  - The Economic Times
-  - livemint.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
