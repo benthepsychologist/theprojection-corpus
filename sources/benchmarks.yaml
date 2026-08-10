@@ -3,8 +3,41 @@
 # "they led with → we missed" is the recall guarantee. Misses auto-grow
 # watchlist/threads (YAML-guardrail protected) and log to coverage-log.md.
 #
-# Access note: Money Stuff and FT Unhedged are partially paywalled — the
-# critic works from web search / public copies / issue summaries.
+# Access note: Money Stuff is partially paywalled — the critic works from
+# web search / public copies / issue summaries.
+#
+# ACCESS FIXES (investigated 2026-08-10, in response to a week of recurring
+# 403s on 3 of these benchmarks — see coverage-log.md 2026-08-09 /week):
+#
+# - **FT Unhedged: FIXED.** `https://www.ft.com/unhedged?format=rss` is FT's
+#   own public stream endpoint — no login, no paywall gate, verified live
+#   (curl, no UA needed). Returns ~25 dated items, each with the day's real
+#   headline + a two-line subhead — exactly what the critic needs to check
+#   "did we catch what Unhedged led with." Use this URL directly instead of
+#   web search/public copies for this one benchmark.
+#
+# - **Behavioral Health Business: FIXED, but the tool matters.** The feed at
+#   https://bhbusiness.com/feed/ (already the URL in sources/feeds.yaml) is
+#   correct and returns full current content via a PLAIN HTTP client (curl,
+#   python urllib, kestrel's own collector UA all verified working, 200 OK).
+#   The 403s traced specifically to Cloudflare's AI-crawler blocklist
+#   (robots.txt names ClaudeBot/GPTBot/etc. explicitly) — Anthropic's own
+#   WebFetch tool identifies as one of these and gets blocked at the edge,
+#   independent of anything else about the request. CONSEQUENCE: when the
+#   critic (or any Claude session) checks this benchmark, fetch the feed via
+#   Bash (curl/python urllib), never via the WebFetch tool directly — same
+#   URL, different transport, no block.
+#
+# - **Axios Pro Rata: NO FIX FOUND — open decision for Ben, not resolved.**
+#   Every axios.com path (Pro Rata, the bare homepage, an unrelated tech
+#   section) returns an identical Cloudflare "Attention Required!" block —
+#   this is a domain-wide bot-protection rule against non-browser/cloud-IP
+#   traffic, not a paywall or a specific-URL problem, so no RSS/API variant
+#   fixes it. No free-tier digest exists distinct from Pro Rata itself. The
+#   only real options: (a) drop it from this file's daily critic set and
+#   accept the gap honestly, or (b) route through infrastructure that can
+#   clear a Cloudflare challenge (headless-browser render, non-cloud IP) —
+#   a meaningfully bigger lift than a config change. Needs Ben's call.
 
 critics:
   ai:
