@@ -348,71 +348,12 @@ is a waiting room, not an archive.
   (a time bound? a "genuinely dead vs. just between developments"
   test? something else?) before the next `/week` decay review runs into
   the same ambiguity again.
-- **PE clinical-DD / AI-liability underwriter candidates, researched
-  2026-08-09 per Ben's ask — awaiting his promotion call on which (if
-  any) join `attention/watchlist.yaml`.** Every name below was web-
-  searched and source-checked this session, not assumed from the
-  original brief (two of the six firms in the seed list — Waud Capital,
-  Kelso & Company — turned out to have EXITED behavioral health entirely
-  and are excluded below as a result).
-
-  **PE / behavioral-health roll-ups** (market backdrop: 180 behavioral-
-  health deals in 2025, 56 by PE specifically, +47% YoY —
-  [Mental Wealth Solutions](https://mentalwealthsolutions.org/blog/private-equity-behavioral-health-acquisitions-patient-care)):
-  - **Comvest Partners** — owns Your Behavioral Health (17 SoCal
-    facilities), which itself acquired Insight Treatment Programs
-    Apr 2024.
-  - **Nautic Partners** — multi-platform sponsor: Pyramid Healthcare
-    (80+ facilities), Odyssey Behavioral Health, Sagent.
-  - **The Vistria Group** — Behavioral Health Group, Sandstone Care,
-    Advanced Recovery Systems.
-  - **TPG (The Rise Fund)** — Banyan Treatment Centers (17 sites/8
-    states, 2023); also an anchor holder in public LifeStance Health.
-  - **Bain Capital** — Pathway Healthcare (outpatient SUD/MH/Spravato),
-    expanding through 2024-2025.
-  - **Revelstoke Capital Partners** (with CDPQ) — Crossroads Treatment
-    Centers, 100+ OUD/MAT locations.
-  - **Linden Capital Partners** — Pinnacle Treatment Centers (138
-    locations, 11+ states).
-  - Lower-confidence but real: **Varsity Healthcare Partners** (Ideal
-    Option; states behavioral health as a named fund focus),
-    **Lee Equity Partners** (Bradford Health Services), **Beecken Petty
-    O'Keefe** (names behavioral health as a core specialization, no
-    current holding independently verified).
-  - **Webster Equity Partners** — flagged with a real caveat, not a
-    clean recommendation: owns BayMark Health Services (280+ facilities)
-    but its OTHER platform, Discovery Behavioral Health, went into
-    creditor control (Capital One + HPS) after a Feb 2026 default.
-
-  **AI-liability insurance underwriters** (market: $6.8B written 2025,
-  projected $34.2B by 2034 — Dataintelo, cited across search results;
-  Chubb/AIG confirmed as the leading traditional carriers but no single
-  named product surfaced for either, worth a follow-up search):
-  - **Armilla (Armilla AI)** — the clearest specialist: first MGA/Lloyd's
-    coverholder built solely around AI liability (hallucinations, model
-    drift, underperformance); backed by Chaucer, Axis, Convex, Swiss Re,
-    Greenlight Re; launched **Vanguard AI** with Chaucer Feb 2026
-    ($25M+ bundled limits).
-  - **AIUC (Artificial Intelligence Underwriting Company)** — pairs an
-    AI-safety audit standard ("AIUC-1," SOC-2-modeled) with liability
-    coverage, pricing tied to audit results; secured Beazley underwriting
-    capacity May 2026.
-  - **Munich Re** — runs aiSure (a performance-warranty line incl.
-    AI-bias/discrimination coverage); capacity partner on Google Cloud's
-    Risk Protection Program.
-  - **HSB (Hartford Steam Boiler, Munich Re)** — dedicated SMB
-    AI-liability product launched Mar 2026.
-  - **Beazley** — capacity partner on Google Cloud's program; separately
-    underwrites AIUC's product.
-  - **Relm Insurance** — three named AI products launched Jan 2025
-    (NOVAAI, PONTAAI, RESCAAI).
-  - **Testudo** — MGA launched Jan 2026 for mid-market AI liability
-    (Lloyd's Lab-backed; panel incl. Apollo, Atrium, QBE; up to $9.25M
-    limits).
-  - **W.R. Berkley** — the inverse case, real but worth noting precisely:
-    filed an "absolute" AI EXCLUSION across D&O/E&O/fiduciary lines for
-    2025-2026 — not underwriting AI risk, excluding it, which is itself
-    part of why the standalone products above exist.
+- ~~PE clinical-DD / AI-liability underwriter candidates~~ **RESOLVED
+  2026-08-10** — Ben: "yes to all four categories, add them." All 19
+  names (11 PE behavioral-health roll-up sponsors, 8 AI-liability
+  underwriting entities) added to `attention/watchlist.yaml`'s
+  mental-health orgs block, with confidence caveats preserved as
+  comments (`d5c5946`).
 
 **Built 2026-07-29:**
 
