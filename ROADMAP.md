@@ -325,15 +325,18 @@ is a waiting room, not an archive.
 - Container gap (2026-07-22): no system tzdata — `tzdata` pip wheel
   installed user-level for zoneinfo (render_read + future collectors
   depend on it); bake into env setup when collectors land.
-- **Structural source-access gaps, confirmed recurring across multiple
-  `/daily`/`/week` critic passes, not a one-off** (surfaced 2026-08-09
-  `/week`): Axios Pro Rata + FT Unhedged (global-capital benchmarks)
-  unreachable in 6 of the week's 7 critic passes; Behavioral Health
-  Business (mental-health benchmark) 403'd on every single access
-  attempt all week while being simultaneously the most miss-productive
-  benchmark this lens has. Decision needed: find an alternate access
-  route for all three, or drop them from `sources/benchmarks.yaml` and
-  accept the gap honestly instead of re-logging it every pass.
+- **Structural source-access gaps** (surfaced 2026-08-09 `/week`) —
+  **2 of 3 RESOLVED 2026-08-10** (`8832e1d`, see `sources/benchmarks.yaml`
+  for the full writeup): FT Unhedged has a working public RSS endpoint
+  (`ft.com/unhedged?format=rss`, no paywall gate); Behavioral Health
+  Business's feed URL was already correct — the 403s were Cloudflare
+  blocking WebFetch's own crawler signature specifically, not the URL;
+  fixed by fetching via Bash/curl instead. **Axios Pro Rata still open,
+  genuinely no automated path found** — a domain-wide Cloudflare block
+  (the bare homepage and unrelated sections 403 identically), not a
+  paywall or URL problem. Decision needed: drop it from
+  `sources/benchmarks.yaml`'s critic set and accept the gap, or invest
+  in a bigger fix (headless-browser render / non-cloud IP routing).
 - **Thread-decay/retirement principle needs a real review — Ben doesn't
   have a settled view yet** (surfaced 2026-08-09 `/week`: "threads dont
   decay. not sure what our principle is here... no drops"). Seven
