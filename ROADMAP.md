@@ -319,6 +319,21 @@ note of the resolution folded into whichever section actually owns that
 decision (Sequence table, a discipline in AGENTS.md, etc.) — this list
 is a waiting room, not an archive.
 
+- **`research/`'s citation layer and the board's claims layer should
+  eventually merge — confirmed direction, not built** (Ben, 2026-08-10:
+  "so long as the merge is in the roadmap"). Today they're fully
+  separate: the claims layer (`/claim/<node>--<dimension>/` pages) is
+  tied to `board.yaml`'s axis values only; `research/`'s edges carry
+  their own parallel citation format (`capture_ref`, source URLs).
+  Nothing technically connects `attention/threads.yaml` to `research/`
+  either — the relationship is "threads surface things research/ might
+  want," a human/agent noticing overlap and manually promoting a news
+  item into a cited `research/` edge, not an automated pipe. The
+  plausible future shape: an interpretation citing a `research/` flow
+  edge as its evidentiary basis, the same way it cites a news URL
+  today. No design work done yet — flagging so the direction survives
+  between sessions, per this section's own purpose.
+
 - Interim-mode friction (2026-07-20): one lens sweep exhausted its
   web-search budget — mitigated 2026-07-22 by splitting the ai sweep in
   two; keep splitting on recurrence.
