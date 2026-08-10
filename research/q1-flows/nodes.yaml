@@ -20,12 +20,32 @@
 # construction-project JV that is structurally the same shape — 2+ named
 # co-investors funding one recipient — even though it isn't a startup
 # equity round). Fields: company, date, round_type, total_amount_usd
-# (nullable), lead (an investor node id, or null if the source names no
-# single lead), sources. A round node does NOT carry `instantiated_by`
-# in the entity×activity sense; its own id is what edges.yaml's money-flow
-# edge points FROM, and what memberships.yaml's is_member_of edges point
-# TO. Full pattern writeup, including why debt syndicates are handled
-# differently, lives in edges.yaml's header and memberships.yaml's header.
+# (nullable), leads (a LIST of investor node ids — empty list if the
+# source names no single/multiple lead at all), sources.
+#
+# `leads` is a LIST, not a single nullable field (Ruling 5, 2026-08-10
+# THIRD pass — schema fix, see PRINCIPLE P-01 in research/PRINCIPLES.md
+# for the durable rule this codifies). Pass 2 shipped `lead` as a single
+# nullable slot and hit a real case it couldn't represent honestly —
+# Cohere's 2025 round was co-led by Radical Ventures AND Inovia, and the
+# single-slot field forced picking one and recording the other as a
+# demoted "participant." Ben's ruling: "The schema shouldn't have 1 lead
+# slot then. schemas can't conflict with the world." `leads` now holds
+# every investor a source actually names as a lead — zero entries when no
+# lead is disclosed, one for an ordinary single-lead round, two or more
+# for a genuine co-lead. memberships.yaml's `role` field follows the same
+# rule: every co-lead gets `role: lead`, never demoted to `participant`
+# to satisfy a single-slot field the world doesn't respect.
+#
+# A round node does NOT carry `instantiated_by` in the entity×activity
+# sense; its own id is what edges.yaml's money-flow edge points FROM, and
+# what memberships.yaml's is_member_of edges point TO. Full pattern
+# writeup, including how debt syndicates are handled (Ruling 4, 2026-08-10
+# third pass — debt syndicates get the SAME round/membership treatment as
+# equity rounds whenever 2+ lenders are named; a verified single-lender
+# loan stays a direct edge, which is a fact about that loan, not a
+# different rule for debt), lives in edges.yaml's header and
+# memberships.yaml's header.
 #
 # Investor nodes below are deliberately MINIMAL per Ruling 1 ("if an
 # investor doesn't have a node yet, create a minimal one") — entity +
@@ -80,6 +100,10 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - ext-public-equity-market--coreweave-capital--2025-ipo
+  - coreweave/2023-blackstone-magnetar-facility
+  - coreweave/2026-ddtl55-facility
+  - coreweave/2025-ddtl5-amendment
+  - ext-bond-market--coreweave-capital--2025-senior-notes
 - id: openai/datacenter-operation
   entity: OpenAI
   activity: datacenter operation (buyer side)
@@ -99,6 +123,7 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - amd-chip-design--openai-capital--2025-warrant
+  - stargate/2025-jv-financing
 - id: anthropic/model-training
   entity: Anthropic
   activity: model training (compute consumption)
@@ -134,6 +159,7 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - ext-investor-syndicate-xai-2023--xai-capital--2023-formd
+  - xai-2026-series-e-round--xai-capital--2026-round
 - id: amazon/capital
   entity: Amazon
   activity: capital (treasury/financing facet)
@@ -198,7 +224,7 @@ nodes:
   date: '2023-12'
   round_type: SEC Form D (no round letter disclosed)
   total_amount_usd: 134700000
-  lead: null
+  leads: []
   note: Retrofit of the first pass's ext/investor-syndicate--xai-2023 placeholder.
     Form D discloses only the aggregate sold amount ($134.7M against a $1B ceiling)
     — no investor is named anywhere in the source, so this round's entire membership
@@ -215,7 +241,7 @@ nodes:
   date: '2023-06'
   round_type: seed
   total_amount_usd: 113000000
-  lead: lightspeed/capital
+  leads: [lightspeed/capital]
   note: Retrofit of the first pass's ext/investor-syndicate--mistral-2023 placeholder.
     €105M/$113M at €240M/$260M valuation.
   sources:
@@ -230,7 +256,7 @@ nodes:
   date: '2023-06'
   round_type: growth/strategic round (stage label not disclosed in the source)
   total_amount_usd: 1300000000
-  lead: null
+  leads: []
   note: Retrofit of the first pass's ext/investor-syndicate--inflection-2023 placeholder.
     Source language ("led by Microsoft/Nvidia/Hoffman/Gates/Schmidt") names five
     parties without singling out one lead — all five recorded as role:participant
@@ -247,7 +273,7 @@ nodes:
   date: '2024-07'
   round_type: Series D
   total_amount_usd: 500000000
-  lead: psp-investments/capital
+  leads: [psp-investments/capital]
   note: Retrofit of the first pass's ext/investor-syndicate--cohere-2024 placeholder.
   sources:
   - label: BetaKit
@@ -261,12 +287,16 @@ nodes:
   date: '2025-08'
   round_type: follow-on round (stage label not disclosed publicly)
   total_amount_usd: 500000000
-  lead: radical-ventures/capital
-  note: Retrofit of the first pass's ext/investor-syndicate--cohere-2025 placeholder.
-    Source describes Radical Ventures AND Inovia as co-leads; the schema allows
-    exactly one role:lead, so Radical Ventures (listed first) carries it here and
-    Inovia is recorded as role:participant — a judgment call, not a claim that
-    Inovia was secondary. Flagged for Ben.
+  leads: [radical-ventures/capital, inovia/capital]
+  note: 'Retrofit of the first pass''s ext/investor-syndicate--cohere-2025 placeholder.
+    Source describes Radical Ventures AND Inovia as co-leads. Pass 2 recorded
+    only Radical Ventures as role:lead (the schema then allowed exactly one)
+    and demoted Inovia to role:participant — flagged for Ben at the time.
+    Ben''s ruling 2026-08-10 (Ruling 5) — verbatim: "The schema shouldn''t
+    have 1 lead slot then. schemas can''t conflict with the world." Fixed
+    this pass — `leads` is now a list and both co-leads carry role:lead in
+    memberships.yaml. See research/PRINCIPLES.md P-01 for the durable
+    principle this case now illustrates.'
   sources:
   - label: Company announcement
     url: https://cohere.com/
@@ -279,7 +309,7 @@ nodes:
   date: '2025-09-09'
   round_type: Series C
   total_amount_usd: 1989000000
-  lead: asml/capital
+  leads: [asml/capital]
   note: NEW this pass (Ruling 2/3) — Mistral's next round after the 2023 seed
     tracked in the first pass. €1.7B raised (~$1.989B at the ~1.17 EUR/USD rate
     prevailing around the announcement date — a derived conversion, not a figure
@@ -300,7 +330,7 @@ nodes:
   date: '2024-12-12'
   round_type: Series D
   total_amount_usd: 600000000
-  lead: founders-fund/capital
+  leads: [founders-fund/capital]
   note: NEW this pass (Ruling 2) — signal-biased addition, a fast-rising AI-infrastructure
     neocloud already present in this map at the facility level (research/q3-datacenter-census/attribution.yaml,
     Colossus notwithstanding — Crusoe here is the Abilene/Stargate builder-operator,
@@ -318,7 +348,7 @@ nodes:
   round_type: seed / early-stage (two rounds combined per source, not individually
     broken out)
   total_amount_usd: 230000000
-  lead: null
+  leads: []
   note: NEW this pass (Ruling 2) — signal-biased addition (Fei-Fei Li's spatial-intelligence
     lab, "over $1B" valuation on $230M raised — a strong new/fast-rising signal
     despite being far under the old $1B floor). Sources name NEA and a16z prominently
@@ -340,14 +370,16 @@ nodes:
   date: '2025-02-20'
   round_type: Series B
   total_amount_usd: 305000000
-  lead: general-catalyst/capital
-  note: NEW this pass (Ruling 2) — signal-biased addition (AI inference/training
+  leads: [general-catalyst/capital, prosperity7/capital]
+  note: 'NEW this pass (Ruling 2) — signal-biased addition (AI inference/training
     infrastructure provider). Source describes General Catalyst AND Prosperity7
-    as co-leads; General Catalyst (listed first) carries role:lead here, Prosperity7
-    role:participant — same single-lead-field judgment call as cohere/2025-round.
+    as co-leads. Pass 2 gave role:lead to General Catalyst only (schema then
+    allowed exactly one) and demoted Prosperity7 to role:participant — same
+    judgment call flagged on cohere/2025-round. Fixed 2026-08-10 (Ruling 5)
+    — `leads` is a list, both co-leads carry role:lead in memberships.yaml.
     Source also lists "and more" beyond the named investors — captured as a
     single ext/undisclosed-investors--together-ai-2025-series-b-round edge in
-    memberships.yaml.
+    memberships.yaml.'
   sources:
   - label: Together AI company announcement
     url: https://www.together.ai/blog/together-ai-announcing-305m-series-b
@@ -362,7 +394,7 @@ nodes:
   date: '2024-12-02'
   round_type: strategic equity financing (not staged as a lettered Series)
   total_amount_usd: 700000000
-  lead: null
+  leads: []
   note: NEW this pass (Ruling 2) — signal-biased addition (AI-infrastructure
     neocloud). Source explicitly states no single investor was formally designated
     lead; Goldman Sachs acted as placement agent, not an investor, and is not
@@ -380,7 +412,7 @@ nodes:
   date: '2024-02-15'
   round_type: Series C
   total_amount_usd: 320000000
-  lead: usit/capital
+  leads: [usit/capital]
   note: NEW this pass (Ruling 2) — signal-biased addition (GPU cloud provider).
     Valuation ($1.5B) is search-sourced, not independently confirmed on the
     fetched company blog — recorded at low confidence, flagged rather than
@@ -398,7 +430,7 @@ nodes:
   date: '2024-04-24'
   round_type: Series B
   total_amount_usd: 62700000
-  lead: daniel-gross/capital
+  leads: [daniel-gross/capital]
   note: NEW this pass (Ruling 2) — signal-biased addition (AI search). Records
     ONLY the April 24, 2024 close (Daniel Gross-led, Latham & Watkins deal-counsel
     primary source, full investor list) — a separate, earlier January 2024 close
@@ -421,7 +453,7 @@ nodes:
   date: '2024-12'
   round_type: Series B
   total_amount_usd: 105000000
-  lead: thrive-capital/capital
+  leads: [thrive-capital/capital]
   note: NEW this pass (Ruling 2) — signal-biased addition (AI coding assistant,
     fast-rising). Source names only Thrive Capital as lead; no other investor
     is itemized in the fetched article, so the remainder of the round's membership
@@ -438,7 +470,7 @@ nodes:
   date: '2024-10-15'
   round_type: real-estate/infrastructure JV equity (initial formation)
   total_amount_usd: 3400000000
-  lead: blue-owl-capital/capital
+  leads: [blue-owl-capital/capital]
   note: NEW this pass (datacenter construction, Tier-A). Structurally the same
     shape as a startup financing round — 2+ named co-investors (Blue Owl Capital's
     Real Estate platform + Primary Digital Infrastructure) funding one recipient
@@ -460,7 +492,7 @@ nodes:
   round_type: real-estate/infrastructure JV debt+equity (phase 2 expansion, unitemized
     split)
   total_amount_usd: 11600000000
-  lead: blue-owl-capital/capital
+  leads: [blue-owl-capital/capital]
   note: NEW this pass. Same two JV partners as the 2024 formation round, expanding
     the Abilene campus from 2 to 8 buildings (1.2GW total). The $11.6B figure
     is corroborated across multiple trade-press outlets (RCR Wireless, DataCenterDynamics,
@@ -539,7 +571,7 @@ nodes:
     — the same worth-Ben's-eye pattern cut-core-buildout.yaml already flags for
     Amazon/Google, now sharper and broader. See that filter's notes.
   instantiated_by: [inflection/2023-round, crusoe/2024-series-d-round, world-labs/2024-seed-round,
-    mistral/2025-series-c-round]
+    mistral/2025-series-c-round, synthesia/2026-series-e-round]
 - id: reid-hoffman/capital
   entity: Reid Hoffman
   activity: capital (individual angel investment facet)
@@ -554,7 +586,11 @@ nodes:
   entity: PSP Investments
   activity: capital (institutional investment facet)
   coverage_state: measured
-  instantiated_by: [cohere/2024-series-d-round, cohere/2025-round]
+  note: 'Synthesia''s 2026 Series E names "PSP Growth" as a participant — recorded
+    against this same node on a same-entity assumption (PSP Investments'' growth
+    arm), not independently confirmed as the identical legal vehicle this
+    pass; flagged, not resolved.'
+  instantiated_by: [cohere/2024-series-d-round, cohere/2025-round, synthesia/2026-series-e-round]
 - id: cisco/capital
   entity: Cisco
   activity: capital (strategic investment facet)
@@ -648,7 +684,8 @@ nodes:
   entity: New Enterprise Associates (NEA)
   activity: capital (VC investment facet)
   coverage_state: measured
-  instantiated_by: [world-labs/2024-seed-round, perplexity/2024-series-b-round]
+  instantiated_by: [world-labs/2024-seed-round, perplexity/2024-series-b-round,
+    synthesia/2025-series-d-round, synthesia/2026-series-e-round]
 - id: marc-benioff/capital
   entity: Marc Benioff
   activity: capital (individual angel investment facet)
@@ -668,7 +705,7 @@ nodes:
   entity: Kleiner Perkins
   activity: capital (VC investment facet)
   coverage_state: measured
-  instantiated_by: [together-ai/2025-series-b-round]
+  instantiated_by: [together-ai/2025-series-b-round, synthesia/2026-series-e-round]
 - id: march-capital/capital
   entity: March Capital
   activity: capital (VC investment facet)
@@ -698,12 +735,12 @@ nodes:
   entity: Coatue
   activity: capital (VC/growth investment facet)
   coverage_state: measured
-  instantiated_by: [together-ai/2025-series-b-round]
+  instantiated_by: [together-ai/2025-series-b-round, coreweave/2023-blackstone-magnetar-facility]
 - id: accel/capital
   entity: Accel
   activity: capital (VC investment facet)
   coverage_state: measured
-  instantiated_by: [nebius/2024-strategic-financing-round]
+  instantiated_by: [nebius/2024-strategic-financing-round, synthesia/2026-series-e-round]
 - id: orbis-investments/capital
   entity: Orbis Investments
   activity: capital (institutional investment facet)
@@ -788,12 +825,22 @@ nodes:
   entity: JPMorgan Chase
   activity: capital (lending facet)
   coverage_state: measured
-  note: Debt syndicates/loans (as opposed to equity financing rounds) are recorded
-    as direct edges.yaml flows, not round-node memberships — a single named
-    lender node like this one, with syndicate co-lenders noted in the edge's
-    coverage_note rather than modeled as separate is_member_of edges. Judgment
-    call, flagged for Ben; see edges.yaml header.
-  instantiated_by: [jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan]
+  note: 'This node was first instantiated (pass 2) with a flagged judgment call
+    about whether debt syndicates should get the round/membership pattern.
+    Ruling 4 (2026-08-10 third pass) resolved that generally in favor of the
+    same pattern equity rounds use (see memberships.yaml header) — but this
+    SPECIFIC loan was independently re-verified this pass (direct fetch of
+    Newmark''s own PRNewswire release plus Construction Review Online''s project
+    team listing) and confirmed to have exactly one lender, JPMorgan Chase.
+    Newmark was the borrower-side broker/arranger, not a co-lender; no other
+    bank is named in any source found. It correctly stays a plain edges.yaml
+    flow with no round node — see that edge''s coverage_note. JPMorgan Chase
+    also appears as a co-lead lender (with MUFG) on two OTHER facilities this
+    pass that DO get the round-node treatment: coreweave/2026-ddtl55-facility
+    below, and the pending (not yet closed as of its source date)
+    vantage-data-centers/2025-mufg-jpmorgan-facility.'
+  instantiated_by: [jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan,
+    coreweave/2026-ddtl55-facility, vantage-data-centers/2025-mufg-jpmorgan-facility]
 
 # ============================================================
 # Power generation + grid interconnection nodes (Tier-A, 2026-08-10
@@ -1028,7 +1075,8 @@ nodes:
   entity: Vantage Data Centers
   activity: datacenter construction (developer side)
   coverage_state: measured
-  instantiated_by: [vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc]
+  instantiated_by: [vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc,
+    vantage-data-centers/2025-mufg-jpmorgan-facility]
 - id: turner-construction/epc-services
   entity: Turner Construction Company
   activity: EPC/general-contractor services (seller side)
@@ -1101,3 +1149,518 @@ nodes:
     is itemized in the fetched article, though the round is widely reported
     as multi-investor.
   instantiated_by: [anysphere/2024-series-b-round]
+
+# ============================================================
+# Debt/project-finance syndicate nodes (Ruling 4, 2026-08-10 third pass —
+# "continue the build" debt/project-finance category). See
+# memberships.yaml's header for the full policy: a debt facility with 2+
+# named lenders gets the SAME round-node + is_member_of pattern as an
+# equity round; a facility confirmed to have exactly one lender (the
+# jpmorgan-chase/capital node above) stays a plain edge. Lender/investor
+# nodes below are MINIMAL per the same Ruling-1 convention already used
+# for equity-round investors — entity + activity (`capital`) only.
+# ============================================================
+- id: blackstone/capital
+  entity: Blackstone
+  activity: capital (private-credit lending facet)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: magnetar-capital/capital
+  entity: Magnetar Capital
+  activity: capital (private-credit lending facet)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: digitalbridge/capital
+  entity: DigitalBridge (DigitalBridge Credit)
+  activity: capital (private-credit lending facet)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: blackrock/capital
+  entity: BlackRock
+  activity: capital (institutional lending facet — funds managed by BlackRock)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: pimco/capital
+  entity: PIMCO
+  activity: capital (institutional lending facet — funds managed by PIMCO)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: carlyle/capital
+  entity: Carlyle (Carlyle Funding)
+  activity: capital (institutional lending facet)
+  coverage_state: measured
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: great-elm/capital
+  entity: Great Elm
+  activity: capital (institutional lending facet)
+  coverage_state: measured
+  note: Named only on CoreWeave's own account of this deal, not on Blackstone's
+    press release; kept as a participant since the more-detailed of the two
+    primary-adjacent sources names it explicitly.
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+- id: mufg/capital
+  entity: MUFG (Mitsubishi UFJ Financial Group)
+  activity: capital (lending facet)
+  coverage_state: measured
+  instantiated_by: [coreweave/2026-ddtl55-facility, vantage-data-centers/2025-mufg-jpmorgan-facility]
+- id: ext/undisclosed-lenders--coreweave-2025-ddtl5-amendment
+  entity: ext (population)
+  activity: syndicated lending capital provision
+  coverage_state: aggregated
+  note: CoreWeave's own 8-K for this facility names only the administrative/collateral
+    agent (U.S. Bank Trust Company, N.A.) and refers to "the Lenders party
+    thereto" without itemizing them. Per Ruling 4's shape-preservation clause,
+    the round node is still created (a syndicate is confirmed to exist) with
+    this single stand-in member rather than either fabricating names or
+    dropping the debt entirely from the map.
+  instantiated_by: [coreweave/2025-ddtl5-amendment]
+- id: ext/bond-market
+  entity: ext (population)
+  activity: public bond-market capital provision
+  coverage_state: aggregated
+  note: Population node for anonymous corporate-bond buyers, parallel to
+    ext/public-equity-market's treatment of IPO buyers as a class (nodes.yaml
+    header convention). Underwriting banks (e.g. Citigroup/Morgan Stanley on
+    Meta's notes, BofA/Citi/Deutsche/Goldman/HSBC/JPMorgan on Oracle's) place
+    the securities but are not themselves the capital providers — they are
+    noted in the relevant edge's coverage_note, not modeled as is_member_of
+    participants, exactly as IPO underwriters are not modeled on the
+    CoreWeave IPO edge.
+  instantiated_by: [ext-bond-market--coreweave-capital--2025-senior-notes,
+    ext-bond-market--meta-capital--2025-senior-notes, ext-bond-market--oracle-capital--2026-senior-notes]
+- id: oracle/capital
+  entity: Oracle
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: First Oracle node instantiated in this map. Oracle is a Stargate JV
+    partner and a large-scale AI-cloud capital raiser (two 2026 capital-markets
+    deals below) — added to cut:core-buildout.yaml v3 as a hyperscaler/cloud-operator
+    member this pass.
+  instantiated_by: [ext-bond-market--oracle-capital--2026-senior-notes, ext-public-equity-market--oracle-capital--2026-preferred,
+    stargate/2025-jv-financing]
+- id: meta/capital
+  entity: Meta
+  activity: capital (treasury/financing facet — distinct from meta/datacenter-operation,
+    which buys grid interconnection, and meta/datacenter-construction, which
+    receives JV investment)
+  coverage_state: measured
+  instantiated_by: [ext-bond-market--meta-capital--2025-senior-notes]
+- id: meta/datacenter-construction
+  entity: Meta
+  activity: datacenter construction (Hyperion campus, Richland Parish LA —
+    JV recipient side, distinct from meta/datacenter-operation's grid-interconnection
+    edge)
+  coverage_state: measured
+  instantiated_by: [blue-owl-capital-capital--meta-datacenter-construction--2025-hyperion-jv]
+- id: softbank/capital
+  entity: SoftBank Group
+  activity: capital (strategic/JV investment facet)
+  coverage_state: measured
+  note: Per Wikipedia (citing The Information/WSJ, not independently primary-fetched
+    this pass), SoftBank's own $19B Stargate commitment is itself substantially
+    debt-financed — "its first $10 billion funding was expected to be borrowed
+    from Japanese bank Mizuho and other lenders" (announced 2025-04-01) — a
+    real further layer of leverage this map does NOT model as a separate edge
+    this pass (secondary-sourced, "expected to be," not independently
+    verified); flagged as an open item for a follow-up capture pass rather
+    than built on thin sourcing.
+  instantiated_by: [stargate/2025-jv-financing]
+- id: mgx/capital
+  entity: MGX
+  activity: capital (sovereign AI-investment vehicle facet — UAE, co-founded
+    by Mubadala and G42)
+  coverage_state: measured
+  instantiated_by: [stargate/2025-jv-financing]
+- id: stargate/datacenter-construction
+  entity: Stargate LLC (joint venture — OpenAI/SoftBank/Oracle/MGX)
+  activity: datacenter construction (JV entity — umbrella receiver of committed
+    capital; specific sites e.g. Crusoe's Abilene campus are tracked separately
+    at the facility level in research/q3-datacenter-census/attribution.yaml
+    and may overlap with this JV's own buildout)
+  coverage_state: measured
+  instantiated_by: [stargate/2025-jv-financing]
+
+# ============================================================
+# International (non-US) financing rounds — "continue the build," 2026-08-10
+# third pass. Every US-based tracker used in passes 1-2 (TechCrunch, CB
+# Insights, Crunchbase) is US-biased; this section fills a real gap the
+# map was blind to. Investor nodes MINIMAL per the existing convention.
+# ============================================================
+- id: deepseek/capital
+  entity: DeepSeek
+  activity: capital (treasury/financing facet)
+  coverage_state: unmeasured
+  note: 'A genuine finding, not a search gap: DeepSeek took NO external
+    financing at all from founding (2023) through 2025 — funded purely by
+    its parent hedge fund, High-Flyer. Reuters reported (2026-06-03,
+    corroborated by CNBC/TechStartups, DeepSeek''s own site 403''d on direct
+    fetch) that DeepSeek is preparing its first-ever external round, ~50
+    billion yuan (~$7.4B) targeting a ~350-400 billion yuan (~$52-59B)
+    valuation, with founder Liang Wenfeng committing ~20 billion yuan himself
+    and Tencent/CATL/China''s national AI fund/NetEase/JD.com/IDG
+    Capital/Monolith Management named as parties "considering" or "in
+    discussions" — explicitly NOT a closed transaction at reporting time
+    ("could be completed within the next few weeks"). Per F5 (an event
+    enters the map only when real resources or claims on capacity change
+    hands) this is recorded as a coverage_state: unmeasured node with this
+    note, not as an edge — recording a pending, unclosed, sources-say
+    report as a flow edge would misrepresent it as delivered. Revisit once
+    (if) the round closes.'
+  sources:
+  - label: Reuters (direct fetch blocked, corroborated by CNBC and TechStartups'
+      quotation of the same wire report)
+    url: https://www.reuters.com/business/retail-consumer/deepseek-slated-draw-7-billion-maiden-fundraising-sources-say-2026-06-03/
+    figure: DeepSeek preparing to raise ~50 billion yuan ($7.4B), first-ever
+      external round, targeting 350-400 billion yuan ($52-59B) valuation;
+      not yet closed as of 2026-06-03
+    as_of: '2026-06-03'
+  instantiated_by: []
+- id: moonshot-ai/capital
+  entity: Moonshot AI (Kimi)
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [moonshot-ai/2024-02-alibaba-round, moonshot-ai/2024-08-series-b-round]
+- id: alibaba/capital
+  entity: Alibaba
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [moonshot-ai/2024-02-alibaba-round]
+- id: hongshan/capital
+  entity: HongShan (formerly Sequoia Capital China)
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [moonshot-ai/2024-02-alibaba-round]
+- id: tencent/capital
+  entity: Tencent
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [moonshot-ai/2024-08-series-b-round]
+- id: gaorong-capital/capital
+  entity: Gaorong Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [moonshot-ai/2024-08-series-b-round]
+- id: helsing/capital
+  entity: Helsing
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [helsing/2025-series-d-round]
+- id: prima-materia/capital
+  entity: Prima Materia (Daniel Ek's investment vehicle)
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [helsing/2025-series-d-round]
+- id: synthesia/capital
+  entity: Synthesia
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [synthesia/2025-series-d-round, synthesia/2026-series-e-round]
+- id: google-ventures/capital
+  entity: GV (Google Ventures)
+  activity: capital (corporate VC facet — distinct from any future Google/Alphabet
+    treasury node)
+  coverage_state: measured
+  instantiated_by: [synthesia/2026-series-e-round]
+- id: air-street-capital/capital
+  entity: Air Street Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [synthesia/2026-series-e-round]
+- id: firstmark/capital
+  entity: FirstMark
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [synthesia/2026-series-e-round]
+- id: mmc-ventures/capital
+  entity: MMC Ventures
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [synthesia/2026-series-e-round]
+- id: g42/capital
+  entity: G42
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: UAE (Abu Dhabi) AI/cloud-infrastructure operator; MGX (mgx/capital
+    above) was co-founded by G42 and Mubadala, and G42 sits at the center of
+    the UAE's AI-datacenter buildout — added to cut:core-buildout.yaml v3
+    as an international operator member this pass, distinct from MGX's own
+    role as a sovereign capital-provider vehicle.
+  instantiated_by: [microsoft-capital--g42-capital--2024-investment]
+- id: humain/capital
+  entity: Humain (Saudi Arabia, wholly owned by the Public Investment Fund)
+  activity: capital (sovereign strategic investment facet)
+  coverage_state: measured
+  note: Launched 2025-05-13 by Crown Prince Mohammed bin Salman, wholly owned
+    by Saudi Arabia's Public Investment Fund. Its $3B check into xAI's
+    Series E is the one individually-disclosed investor amount in that
+    round (see xai/2026-series-e-round) — same pattern as ASML's disclosed
+    €1.3B check on Mistral's Series C.
+  instantiated_by: [xai/2026-series-e-round]
+
+# ============================================================
+# Round nodes for the debt/project-finance tranche (Ruling 4, third pass).
+# ============================================================
+- id: coreweave/2023-blackstone-magnetar-facility
+  kind: round
+  company: CoreWeave
+  date: '2023-08-03'
+  round_type: private-credit debt facility (GPU-purchase/expansion financing)
+  total_amount_usd: 2300000000
+  leads: [blackstone/capital, magnetar-capital/capital]
+  note: NEW this pass (Ruling 4 — debt syndicates get the SAME round/membership
+    treatment as equity rounds when 2+ lenders are named). Both Blackstone
+    and Magnetar Capital are explicitly named "led by" in Blackstone's own
+    press-release headline — a clean real-world co-lead case in the debt
+    space, the same shape as the Cohere/Together AI equity co-leads (Ruling
+    5 / research/PRINCIPLES.md P-01). CoreWeave's own company blog additionally
+    names Coatue, DigitalBridge, BlackRock, PIMCO, Carlyle and Great Elm as
+    participants.
+  sources:
+  - label: Blackstone press release (headline/figure confirmed via a search
+      result page; direct WebFetch of blackstone.com returned HTTP 403 this
+      pass)
+    url: https://www.blackstone.com/news/press/coreweave-secures-2-3-billion-debt-financing-facility-led-by-magnetar-capital-and-blackstone-to-meet-surging-demand-and-ongoing-expansion-of-specialized-cloud-infrastructure-to-power-ai/
+    figure: $2.3 billion debt financing facility led by Magnetar Capital and
+      Blackstone, with strategic participation from Coatue, DigitalBridge
+      Credit, and funds managed by BlackRock, PIMCO, and Carlyle
+    as_of: '2023-08-03'
+  - label: CoreWeave company blog (own account of the same deal, directly
+      fetched)
+    url: https://www.coreweave.com/blog/coreweave-secures-2-3-billion-debt-financing-magnetar-capital-blackstone
+    url_note: page's own schema metadata carries a "2026-05-20" timestamp —
+      evidently a republish/canonical date, not the event date. The
+      2023-08-03 event date is corroborated independently by the Blackstone
+      press-release URL/headline above and by contemporaneous PRNewswire
+      distribution found in the same search pass.
+    figure: 'we secured a $2.3 billion debt facility... Led by Blackstone and
+      Magnetar... Additional participation from Coatue, DigitalBridge,
+      BlackRock, PIMCO, Carlyle and Great Elm'
+    as_of: '2023-08-03'
+- id: coreweave/2026-ddtl55-facility
+  kind: round
+  company: CoreWeave
+  date: '2026-08-07'
+  round_type: delayed-draw term loan facility ("DDTL 5.5")
+  total_amount_usd: 2600000000
+  leads: [jpmorgan-chase/capital, mufg/capital]
+  note: NEW this pass (Ruling 4). JPMorgan Chase Bank, N.A. and MUFG Bank,
+    Ltd. are both named "joint lead arranger, joint bookrunner and joint
+    syndication agent" in the same 8-K — a second co-lead worked example
+    (Ruling 5 / P-01), this time with explicit dual "joint lead" titles.
+    Individual lender roster beyond the two named agents is not itemized in
+    the filing exhibit fetched this pass.
+  sources:
+  - label: CoreWeave, Inc. SEC Form 8-K (Aug 7, 2026)
+    url: https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm
+    figure: $2.6 billion incremental delayed-draw term loan facility (DDTL
+      5.5); JPMorgan Chase Bank, N.A. and MUFG Bank, Ltd., as joint lead
+      arrangers, joint bookrunners and joint syndication agents; entered
+      into primarily to finance capital expenditures required to perform
+      certain customer contracts, including the acquisition of GPU servers
+      and related infrastructure
+    as_of: '2026-08-07'
+- id: coreweave/2025-ddtl5-amendment
+  kind: round
+  company: CoreWeave (borrower entity — CoreWeave Compute Acquisition Co. IV,
+    LLC)
+  date: '2025-09-29'
+  round_type: delayed-draw term loan credit-agreement amendment ("Fifth
+    Amendment" — shape-only, individual lenders not named)
+  total_amount_usd: 3000000000
+  leads: []
+  note: NEW this pass (Ruling 4's shape-preservation clause — "if the source
+    at least confirms 'a syndicate of banks' or similar" the round node is
+    still created even without named members). The 8-K names only U.S. Bank
+    Trust Company, N.A. as administrative/collateral agent (not itself a
+    lender) and refers generically to "the Lenders party thereto" without
+    itemizing them; this round node's sole member is the
+    ext/undisclosed-lenders--coreweave-2025-ddtl5-amendment stand-in, not a
+    fabricated roster.
+  sources:
+  - label: CoreWeave, Inc. SEC Form 8-K (filed 2025-10-02, period of report
+      2025-09-29)
+    url: https://www.sec.gov/Archives/edgar/data/1769628/000119312525227562/d910811d8k.htm
+    figure: 'Fifth Amendment to the Credit Agreement, adding an incremental
+      $3.0 billion tranche of delayed draw term loans; borrower CoreWeave
+      Compute Acquisition Co. IV, LLC; U.S. Bank Trust Company, National
+      Association as administrative and collateral agent; U.S. Bank National
+      Association as depository bank'
+    as_of: '2025-09-29'
+- id: vantage-data-centers/2025-mufg-jpmorgan-facility
+  kind: round
+  company: Vantage Data Centers (Texas megacampus — site/name not independently
+    confirmed this pass)
+  date: '2025-08-22'
+  round_type: construction/project-finance loan (REPORTED IN TALKS — not
+    confirmed closed as of the source date)
+  total_amount_usd: 22000000000
+  leads: []
+  note: NEW this pass (Ruling 4 + "continue the build" debt category). JPMorgan
+    Chase and MUFG are named as the two parties "in talks to underwrite" this
+    facility per Reuters/FT reporting relayed by GCN — explicitly a
+    not-yet-closed deal at the time of the source ("in talks," "close to
+    securing"), recorded with that status stated plainly on its face per
+    R-17 (name the ambiguity, don't legislate it) rather than presented as
+    a completed transaction. No lead is designated between the two named
+    parties in the source. A specific campus name ("Frontier," Shackelford
+    County) appeared only in unverified search-result snippets this pass —
+    NOT independently confirmed, so recorded generically as "Texas
+    megacampus." Revisit to confirm closing and site once better-sourced.
+  sources:
+  - label: GCN (syndicating Reuters/FT reporting)
+    url: https://gcn.com/jpmorgan-mufg-close-to-22b-texas-data-center-deal/6460/
+    figure: 'U.S. lender JPMorgan Chase and Japan''s Mitsubishi UFJ Financial
+      Group are in talks to underwrite a $22 billion loan'
+    as_of: '2025-08-22'
+- id: stargate/2025-jv-financing
+  kind: round
+  company: Stargate LLC (joint venture)
+  date: '2025-01-21'
+  round_type: infrastructure joint-venture equity formation
+  total_amount_usd: 52000000000
+  leads: [openai/capital, softbank/capital]
+  note: NEW this pass ("continue the build" debt/project-finance category).
+    Source (Wikipedia's Stargate LLC article, citing The Information and the
+    Wall Street Journal — NOT independently primary-fetched this pass, both
+    underlying outlets are paywalled) states OpenAI and SoftBank each
+    committed $19B for a 40% ownership stake apiece, while Oracle and MGX
+    each contributed $7B. No source uses the word "lead" for any party;
+    marking OpenAI and SoftBank as leads here is a JUDGMENT CALL reflecting
+    their equal, larger (40% vs ~13.5%) stakes, not a verbatim "co-led"
+    claim like Cohere/Together AI's — flagged explicitly per R-17 rather
+    than silently asserted as equivalent to those cases. Reliability set
+    lower than this pass's SEC-filing-sourced entries to reflect the
+    secondary-only sourcing. SoftBank's own $19B is itself reported as
+    substantially debt-financed (see softbank/capital's node note) — that
+    leverage layer is NOT modeled as a separate edge this pass, thin
+    sourcing only.
+  sources:
+  - label: Wikipedia, "Stargate LLC" (citing The Information and the Wall
+      Street Journal; neither underlying outlet independently fetched this
+      pass — both are subscription-gated)
+    url: https://en.wikipedia.org/wiki/Stargate_LLC
+    figure: 'Softbank and OpenAI have each committed $19 billion of capital
+      to initially fund Stargate and would each hold 40% ownership interest
+      in the joint venture, while Oracle and MGX would each contribute $7
+      billion; On January 21, 2025, President Donald Trump announced the
+      venture at a White House press conference'
+    as_of: '2025-01-21'
+
+# ============================================================
+# Round nodes for the international financing tranche (third pass).
+# ============================================================
+- id: moonshot-ai/2024-02-alibaba-round
+  kind: round
+  company: Moonshot AI (Kimi)
+  date: '2024-02'
+  round_type: growth round (TechCrunch calls it Series B; other secondary
+    sources label it Series A — round-label DISAGREEMENT across sources,
+    named not resolved, per R-17)
+  total_amount_usd: 1000000000
+  leads: [alibaba/capital, hongshan/capital]
+  note: NEW this pass (international tranche, China). Alibaba and HongShan
+    (formerly Sequoia Capital China) are both reported leading this round in
+    the sourcing found; recorded as co-leads. Valuation reported at ~$2.5B.
+  sources:
+  - label: TechCrunch (direct fetch; Bloomberg's own reporting of the same
+      round was 403'd on direct fetch this pass, corroborated via search
+      snippet only)
+    url: https://techcrunch.com/2024/02/21/moonshot-ai-funding-china/
+    figure: Moonshot AI has raised over $1 billion in a round backed by
+      Alibaba and HongShan, valuing the company at about $2.5 billion
+    as_of: '2024-02-21'
+- id: moonshot-ai/2024-08-series-b-round
+  kind: round
+  company: Moonshot AI (Kimi)
+  date: '2024-08'
+  round_type: growth round (secondary sources label variably; not independently
+    resolved this pass)
+  total_amount_usd: 300000000
+  leads: [tencent/capital, gaorong-capital/capital]
+  note: NEW this pass (international tranche, China). Aggregator-corroborated
+    (not independently primary-fetched this pass beyond the search-result
+    level) — Tencent and Gaorong Capital named as co-leads, valuation
+    reported at ~$3.3B.
+  sources:
+  - label: Aggregator-level reporting (search-result corroboration only;
+      not independently primary-fetched this pass — flagged at lower
+      reliability accordingly)
+    url: https://techcrunch.com/2024/02/21/moonshot-ai-funding-china/
+    url_note: this URL is the same TechCrunch article covering the Feb-2024
+      round above, which ALSO references Moonshot's subsequent funding
+      trajectory; the Aug-2024 Tencent/Gaorong figures specifically were
+      corroborated via search-result snippets during this pass's research,
+      not an independently fetched dedicated article — recorded at reduced
+      reliability for that reason.
+    figure: Moonshot AI raised ~$300M in an Aug-2024 round led by Tencent
+      and Gaorong Capital, valuation ~$3.3B
+    as_of: '2024-08'
+- id: helsing/2025-series-d-round
+  kind: round
+  company: Helsing
+  date: '2025-06-17'
+  round_type: Series D
+  total_amount_usd: 600000000
+  leads: [prima-materia/capital]
+  note: NEW this pass (international tranche, Germany — defense AI). Helsing's
+    own newsroom rate-limited on direct fetch this pass; figures corroborated
+    via tech.eu (primary-adjacent trade press).
+  sources:
+  - label: tech.eu
+    url: https://tech.eu/2025/06/17/helsing-raises-600-million-elevating-valuation-to-eur12bn/
+    figure: Helsing raises €600 million, led by Prima Materia (Daniel Ek's
+      investment vehicle), valuation €12 billion
+    as_of: '2025-06-17'
+- id: synthesia/2025-series-d-round
+  kind: round
+  company: Synthesia
+  date: '2025-01-15'
+  round_type: Series D
+  total_amount_usd: 180000000
+  leads: [nea/capital]
+  note: NEW this pass (international tranche, UK).
+  sources:
+  - label: Synthesia company blog
+    url: https://www.synthesia.io/post/synthesia-secures-180m-in-series-d-funding
+    figure: $180M Series D, led by NEA, $2.1B valuation
+    as_of: '2025-01-15'
+- id: synthesia/2026-series-e-round
+  kind: round
+  company: Synthesia
+  date: '2026-01-26'
+  round_type: Series E
+  total_amount_usd: 200000000
+  leads: [google-ventures/capital]
+  note: NEW this pass (international tranche, UK). Nvidia's NVentures
+    participated via the existing nvidia/capital node (already instantiated);
+    PSP Growth recorded against the existing psp-investments/capital node
+    (same underlying institution as Cohere's PSP Investments lead, per this
+    pass's reading — flagged as a same-entity assumption, not independently
+    confirmed as the identical legal vehicle).
+  sources:
+  - label: Synthesia company blog
+    url: https://www.synthesia.io/post/series-e-200-million-4-billion-valuation-future-work
+    figure: $200M Series E, led by GV (Google Ventures), $4B valuation;
+      Nvidia's NVentures, Accel, Kleiner Perkins, NEA, PSP Growth, Air Street
+      Capital, FirstMark, MMC Ventures participating
+    as_of: '2026-01-26'
+- id: xai/2026-series-e-round
+  kind: round
+  company: xAI
+  date: '2026-02-18'
+  round_type: Series E
+  total_amount_usd: null
+  leads: []
+  note: NEW this pass (international tranche, Saudi Arabia via Humain). Only
+    Humain's own $3B piece of this round is disclosed in the source found —
+    the round's TOTAL size is NOT stated in Humain's own release and was not
+    independently found this pass, so total_amount_usd is null (unmeasured
+    at the round level) even though this one member's own check size IS
+    known (recorded on the membership edge, same pattern as ASML on
+    Mistral's Series C). This round preceded xAI's merger into SpaceX
+    (referenced elsewhere in this map, see xai/datacenter-operation's note).
+  sources:
+  - label: Humain (PRNewswire company release)
+    url: https://www.prnewswire.com/news-releases/humain-backs-xai-with-3-billion-series-e-investment-ahead-of-historic-spacex-merger-302691510.html
+    figure: HUMAIN today announced a $3 billion strategic investment in xAI
+    as_of: '2026-02-18'

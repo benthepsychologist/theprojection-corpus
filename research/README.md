@@ -6,6 +6,12 @@ repo's `radar.md` Q1–Q7). The design is not here and is not repeated
 here: it lives in `INBOX/`, and this directory follows it exactly.
 **Read the design before touching this data:**
 
+**`PRINCIPLES.md`** — durable schema-design principles distilled from
+Ben's rulings (P-01, P-02, ...), separate from the frozen R-01–R-20
+rulings register below: rulings are one-off decisions with their own
+date/context, principles are the general rule a ruling revealed. Check
+this file before designing any new schema field anywhere in `research/`.
+
 1. `INBOX/2026-08-03-where-we-are.md` — orientation.
 2. `INBOX/2026-08-03-q1-skeleton-v3.md` — q1's schema + rulings register
    (R-01–R-20, binding — do not relitigate here).
@@ -63,6 +69,42 @@ now carries 44 edges** (17 retrofitted/unchanged + 27 new), **nodes.yaml
 `cut:core-buildout` is now **v2** with roughly triple the original
 roster. Full build report (scoping estimate, threshold rationale, open
 judgment calls) handed to Ben alongside this pass.
+
+**Third pass** (2026-08-10, three more rulings applied plus a "continue
+the build" instruction): **Ruling 4** — debt syndicates now get the SAME
+round-node/`is_member_of` treatment as equity rounds when 2+ lenders are
+named (reversing pass 2's judgment call to keep debt off the pattern).
+The one existing debt edge (JPMorgan Chase's $2.3B Crusoe/Abilene
+construction loan) was independently re-verified this pass and confirmed
+to have exactly one lender — it correctly stays a plain edge, not a
+retrofit. **Ruling 5** — the round-node schema's `lead` field (a single
+nullable slot) couldn't represent a real co-lead (Cohere's 2025 round,
+Radical Ventures + Inovia), so pass 2 had silently picked one and
+demoted the other. Fixed: `lead` → `leads` (a list); both flagged
+demotions (Cohere 2025, Together AI 2025 Series B) corrected to record
+every named co-lead as `role: lead`. The general principle is now
+recorded durably in **`research/PRINCIPLES.md`** (new file, P-01 — "a
+schema field must match the real-world cardinality of what it
+represents"), separate from the frozen R-01–R-20 register. **Ruling 6**
+— light-touch reworded the Nvidia cross-membership note in
+`cut-core-buildout.yaml` so it reads as documentation, not a pending
+question. **Continue the build** — two previously-uncovered categories:
+debt/project-finance structures beyond simple construction loans (bond
+issuances, private-credit facilities, infrastructure-fund JVs,
+sovereign-backed project finance — CoreWeave's Blackstone+Magnetar and
+JPMorgan+MUFG co-led facilities, Meta's and Oracle's bond/preferred
+issuances, the Meta/Blue Owl Hyperion JV, the pending Vantage/MUFG $22B
+facility, and the Stargate LLC joint-venture structure), and
+international (non-US) financing rounds filling the US-tracker bias gap
+(DeepSeek — a confirmed **negative** finding, no external financing
+through 2025 — Moonshot AI, Helsing, Synthesia, G42, and Humain's $3B
+check into xAI's Series E). Net: **nodes.yaml now carries 180 nodes**
+(+42), **edges.yaml 66 edges** (+22), **memberships.yaml 114
+`is_member_of` edges** (+33), **26 round nodes total**, and
+`cut:core-buildout` is now **v3**. Every new figure carries a real,
+fetched citation; every referential edge/membership resolves to a real
+node id (swept via `yaml.safe_load` + a full from/to/leads integrity
+check after every write this pass).
 
 ## Discipline (inherited from this repo's root CLAUDE.md, restated here
 because this directory is new)

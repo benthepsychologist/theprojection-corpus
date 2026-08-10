@@ -19,7 +19,7 @@
 # new nodes instantiate; membership changes are versioned, never silent.
 
 id: "cut:core-buildout"
-version: 2
+version: 3
 dated: "2026-08-10"
 description: >
   Spend-side default cut (q1 skeleton sec 3/12): hyperscaler AI operations,
@@ -28,12 +28,20 @@ description: >
   providers and governments sit OUTSIDE this cut by design — their money
   into the group reads as inflow, not a transfer.
 version_note: >
-  v2 (2026-08-10, second build pass) extends v1's roster to match the
-  second Tier-A tranche (memberships.yaml/edges.yaml this pass) — semicap
-  beyond TSMC, memory/HBM, advanced packaging, networking, datacenter
-  builders, and AI-dedicated power/grid infrastructure, none of which had
-  an instantiated node under v1. Every v1 member is unchanged; this is
-  additive only, versioned per R-16 (membership changes are never silent).
+  v2 (2026-08-10, second build pass) extended v1's roster to match the
+  second Tier-A tranche — semicap beyond TSMC, memory/HBM, advanced
+  packaging, networking, datacenter builders, and AI-dedicated power/grid
+  infrastructure. v3 (2026-08-10, third build pass) extends it again for
+  the debt/project-finance and international tranches: Oracle (a
+  hyperscaler/cloud operator, newly instantiated via its own bond/preferred
+  financing and its Stargate JV stake) and five international operators —
+  DeepSeek, Moonshot AI, Baichuan-tier peers not yet instantiated, Helsing,
+  Synthesia, and G42 — join `members`. A long list of debt-side capital
+  providers (banks, private-credit funds, bond underwriters' counterpart
+  buyers) and additional international capital providers (sovereign
+  vehicles, foreign VCs) join `explicitly_outside`. Every v1/v2 member is
+  unchanged; this is additive only, versioned per R-16 (membership changes
+  are never silent).
 
 members:
   # frontier labs
@@ -48,11 +56,23 @@ members:
   - together-ai     # NEW v2 — signal-biased Ruling 2 addition
   - perplexity      # NEW v2 — signal-biased Ruling 2 addition
   - anysphere       # NEW v2 — signal-biased Ruling 2 addition (Cursor)
+  - deepseek        # NEW v3 — international tranche (China); node is
+                     # coverage_state: unmeasured, no funding edge yet —
+                     # membership recorded ahead of coverage per R-06
+                     # (nothing is dark by definition)
+  - moonshot-ai     # NEW v3 — international tranche (China)
+  - helsing         # NEW v3 — international tranche (Germany, defense AI)
+  - synthesia       # NEW v3 — international tranche (UK)
   # hyperscaler AI operations
   - amazon
   - google
   - microsoft
   - meta
+  - oracle          # NEW v3 — Stargate JV partner + own bond/preferred
+                     # financing this pass
+  # international operators (NEW v3 — distinct from the sovereign capital
+  # vehicles below, which sit outside the cut as capital providers)
+  - g42
   # AI chip lines / chip design
   - nvidia
   - amd
@@ -153,6 +173,37 @@ explicitly_outside:
     - blue-owl-capital
     - primary-digital-infrastructure
     - jpmorgan-chase
+    # debt/project-finance capital providers (NEW v3 — banks, private-credit
+    # funds, and population/stand-in nodes; see memberships.yaml for which
+    # facility each backs)
+    - mufg
+    - blackstone
+    - magnetar-capital
+    - digitalbridge
+    - blackrock
+    - pimco
+    - carlyle
+    - great-elm
+    - ext/bond-market
+    - ext/undisclosed-lenders--coreweave-2025-ddtl5-amendment
+    # Stargate JV capital providers (NEW v3) — SoftBank and MGX are capital
+    # backers of the JV, not core-buildout OPERATORS in this specific flow;
+    # Oracle is inside `members` above because it's also a genuine
+    # hyperscaler/cloud operator independent of this one JV stake
+    - softbank
+    - mgx
+    # international capital providers (NEW v3 — VC/strategic/sovereign
+    # investors named across the international tranche's round nodes)
+    - alibaba
+    - hongshan
+    - tencent
+    - gaorong-capital
+    - prima-materia
+    - google-ventures
+    - air-street-capital
+    - firstmark
+    - mmc-ventures
+    - humain
   note: >
     Amazon and Google appear as BOTH members (hyperscaler AI ops) and
     financing counterparties (amazon/capital, google/capital -> Anthropic)
@@ -177,6 +228,19 @@ explicitly_outside:
     the same filtered group, so its outbound checks to AI labs are, by
     this cut's own logic, the industry investing in itself at a scale
     and breadth that goes well beyond the original Amazon/Google
-    observation. Flagged, not resolved, per R-17 — worth Ben's eye
-    before this cut's "external inflow" totals are read at face value
-    for any round Nvidia participated in.
+    observation. This is documentation of how the cut's own mechanical
+    rule (R-16: classify by whether BOTH endpoints are inside the group)
+    plays out here, not an open question — no decision is being asked of
+    Ben. It is named per R-17 (name ambiguity, don't legislate it) so
+    that anyone reading this cut's "external inflow" totals knows Nvidia
+    and AMD's own checks to AI labs are counted as transfers, not
+    inflow, under this specific cut's rule — exactly the same mechanical
+    treatment the Amazon/Google case above gets.
+
+    v3 (third pass, international tranche) adds a third instance of the
+    same mechanical pattern: Microsoft (a core-buildout member) invested
+    $1.5B in G42 (also now a member, added this pass) — under this cut,
+    that flow reads as an inside<->inside transfer, not external inflow
+    to G42, for the same reason the Amazon/Google->Anthropic and
+    Nvidia/AMD-into-AI-labs flows do. Documentation only, same as above —
+    no decision pending.

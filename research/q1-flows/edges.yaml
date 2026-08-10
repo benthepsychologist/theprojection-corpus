@@ -50,15 +50,31 @@
 # outside the buildout group, which is the reason this flow needed a
 # type at all rather than being skipped.
 #
-# What this is NOT: a complete q1 map. This is now a SECOND Tier-A
-# tranche (materiality floor and tier definitions: q1 skeleton sec 5,
-# sec 12) — the first pass covered model-training/cloud-capacity/chip-design
-# flows plus early capital-megarounds; this pass adds power generation,
+# What this is NOT: a complete q1 map. This is now a THIRD Tier-A tranche
+# (materiality floor and tier definitions: q1 skeleton sec 5, sec 12) —
+# the first pass covered model-training/cloud-capacity/chip-design flows
+# plus early capital-megarounds; the second pass added power generation,
 # grid interconnection, semicap beyond TSMC, memory/HBM, advanced
 # packaging, networking, and datacenter construction as its own purchase
-# category, plus the Ruling 2 materiality-floor tranche (see this pass's
-# build report for the scoping estimate and threshold rationale). Coverage
-# is asymptotic by design (R-19) — there is no done state.
+# category, plus the Ruling 2 materiality-floor tranche; this THIRD pass
+# (2026-08-10, same-dated as the second per this file's own convention —
+# distinguish by content/notes) adds two more previously-uncovered
+# categories per Ben's direct request: (a) DEBT/PROJECT-FINANCE structures
+# beyond simple construction loans — bond issuances, private-credit
+# facilities, infrastructure-fund JVs, sovereign-backed project finance —
+# under Ruling 4 (debt syndicates get the SAME round-node treatment as
+# equity rounds when 2+ lenders are named; see memberships.yaml header);
+# and (b) INTERNATIONAL (non-US) financing rounds, filling a real US-bias
+# gap in every tracker used through pass 2. Coverage is asymptotic by
+# design (R-19) — there is no done state.
+#
+# ext/bond-market (NEW node this pass, nodes.yaml) is the debt-side analogue
+# of the existing ext/public-equity-market population node: anonymous
+# corporate-bond buyers. Underwriting banks named on a bond deal (e.g.
+# Citigroup/Morgan Stanley on Meta's notes) are noted in that edge's
+# coverage_note, never modeled as is_member_of participants — the same
+# treatment the CoreWeave IPO edge already gives its own underwriters
+# (none modeled).
 #
 # Discipline: never fabricate a figure or URL (CLAUDE.md, this repo's
 # citation rule). Every "value" below is either a directly-quoted figure
@@ -1515,13 +1531,21 @@ edges:
   commitment_ref: null
   coverage_state: measured
   new_this_pass: true
-  coverage_note: Single named lender (debt facility, not an equity round —
-    see nodes.yaml/memberships.yaml headers on why debt syndicates are recorded
-    as direct edges rather than round-node memberships). A secondary source
-    (Construction Review Online) named a different arranger ("Newmark") for
-    the same $2.3B figure — the deal counsel's own release (more authoritative)
-    names JPMorgan Chase, adopted here; the discrepancy is flagged, not silently
-    resolved.
+  coverage_note: 'VERIFIED single-lender, third pass (2026-08-10), per Ruling 4
+    (debt syndicates now get the SAME round-node treatment as equity rounds
+    when 2+ lenders are named — see memberships.yaml header). Re-checked
+    directly: Newmark''s own PRNewswire release (https://www.prnewswire.com/news-releases/newmark-arranges-2-3-billion-construction-financing-for-206-mw-build-to-suit-data-center-302357767.html,
+    dated 2025-01-22) states "Newmark Group, Inc. ... announces the firm has
+    arranged a $2.3 billion loan ... The loan was provided by JP Morgan," on
+    behalf of Blue Owl Capital, Crusoe Energy Systems and Primary Digital
+    Infrastructure — i.e. Newmark is the borrower-side broker/arranger, not a
+    lender. Construction Review Online''s own project-team listing
+    independently corroborates this, naming "Lead lender: JPMorgan Chase" and
+    "Initial financing partner: Blue Owl Capital." No source found names any
+    second bank as a co-lender on this specific $2.3B facility. This is a
+    genuinely single-lender loan, not a syndicate under-modeled as one — it
+    correctly stays a plain flow edge rather than getting the round-node
+    pattern.'
   observations:
   - value:
       type: point
@@ -1942,3 +1966,664 @@ edges:
       not disclosed on the company's own page, recorded as unmeasured rather
       than estimated per the coverage_note's caveat on the circulating $1.6B
       figure.
+
+# ============================================================
+# Debt / project-finance tranche — Ruling 4 (2026-08-10 third pass). Round
+# nodes' own money-flow edges (round -> receiver's capital node), same
+# shape as every equity round's own edge above, plus simple two-party
+# debt/equity edges where only one capital provider is named (no syndicate
+# to model). See nodes.yaml (the round nodes themselves, with full
+# sourcing) and memberships.yaml (who's a member, who leads) for the
+# membership layer behind the round-node edges below.
+# ============================================================
+- id: coreweave-2023-blackstone-magnetar-facility--coreweave-capital--2023-debt
+  from: coreweave/2023-blackstone-magnetar-facility
+  to: coreweave/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 4) — a genuine co-led debt syndicate, the
+    worked example the ruling was written to catch. See the round node
+    (nodes.yaml) for the full lender roster and both corroborating sources.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2300000000
+      note: $2.3B debt facility led by Blackstone and Magnetar Capital, with
+        participation from Coatue, DigitalBridge, BlackRock, PIMCO, Carlyle
+        and Great Elm
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2023-08-03'
+      end: '2023-08-03'
+      schedule: known
+    source:
+      label: Blackstone press release (headline/figure; CoreWeave's own
+        blog corroborates independently — see nodes.yaml round node)
+      url: https://www.blackstone.com/news/press/coreweave-secures-2-3-billion-debt-financing-facility-led-by-magnetar-capital-and-blackstone-to-meet-surging-demand-and-ongoing-expansion-of-specialized-cloud-infrastructure-to-power-ai/
+      figure: $2.3 billion debt financing facility led by Magnetar Capital
+        and Blackstone
+      as_of: '2023-08-03'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Direct WebFetch of Blackstone's press-release URL returned
+      HTTP 403 this pass; the figure and headline were confirmed via a
+      search-result page and independently corroborated by a direct fetch
+      of CoreWeave's own company blog (same $2.3B figure, same two named
+      leads, additional participant list). Reliability held below 0.9 for
+      not having fetched Blackstone's own page directly.
+- id: coreweave-2026-ddtl55-facility--coreweave-capital--2026-debt
+  from: coreweave/2026-ddtl55-facility
+  to: coreweave/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 4) — second co-lead debt worked example, explicit
+    dual "joint lead" titles in the same SEC filing.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2600000000
+      note: $2.6B incremental delayed-draw term loan facility (DDTL 5.5),
+        JPMorgan Chase Bank and MUFG Bank as joint lead arrangers/bookrunners/syndication
+        agents
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-08-07'
+      end: '2031-09-30'
+      schedule: known — matures September 2031
+    source:
+      label: CoreWeave, Inc. SEC Form 8-K (Aug 7, 2026)
+      url: https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/crwv-20260807.htm
+      figure: $2.6 billion DDTL 5.5 facility, JPMorgan Chase Bank N.A. and
+        MUFG Bank Ltd. as joint lead arrangers, joint bookrunners and joint
+        syndication agents
+      as_of: '2026-08-07'
+    provenance_class: regulatory filing
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing, directly fetched this pass.
+- id: coreweave-2025-ddtl5-amendment--coreweave-capital--2025-debt
+  from: coreweave/2025-ddtl5-amendment
+  to: coreweave/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: aggregated
+  new_this_pass: true
+  coverage_note: NEW (Ruling 4's shape-preservation clause) — individual
+    lenders not named in the source, only the administrative/collateral
+    agent; recorded via the ext/undisclosed-lenders stand-in (memberships.yaml),
+    not a fabricated roster.
+  observations:
+  - value:
+      type: point
+      amount_usd: 3000000000
+      note: Fifth Amendment to CoreWeave's Credit Agreement, adding an
+        incremental $3.0B tranche of delayed draw term loans; borrower is
+        CoreWeave Compute Acquisition Co. IV, LLC; U.S. Bank Trust Company
+        N.A. as administrative/collateral agent
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-09-29'
+      end: '2025-09-29'
+      schedule: known
+    source:
+      label: CoreWeave, Inc. SEC Form 8-K (filed 2025-10-02, period of
+        report 2025-09-29)
+      url: https://www.sec.gov/Archives/edgar/data/1769628/000119312525227562/d910811d8k.htm
+      figure: Fifth Amendment, incremental $3.0B delayed draw term loan
+        tranche
+      as_of: '2025-09-29'
+    provenance_class: regulatory filing
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary SEC filing, directly fetched this pass; dollar
+      amount and instrument type are exact, individual lenders genuinely
+      not itemized in the filing exhibit reached.
+- id: vantage-data-centers-2025-mufg-jpmorgan-facility--vantage-data-centers-datacenter-construction--2025-debt
+  from: vantage-data-centers/2025-mufg-jpmorgan-facility
+  to: vantage-data-centers/datacenter-construction
+  type: debt
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: 'NOT a confirmed-closed transaction — recorded at stage:
+    guidance rather than contract/delivered specifically because the
+    source itself frames this as "in talks," per R-17 (name the ambiguity,
+    don''t legislate it). Revisit for a closing confirmation in a future
+    pass.'
+  observations:
+  - value:
+      type: point
+      amount_usd: 22000000000
+      note: 'JPMorgan Chase and MUFG "in talks to underwrite" a $22B loan
+        for a Vantage Data Centers Texas megacampus — not confirmed closed'
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-08-22'
+      end: null
+      schedule: unscheduled — deal status "in talks" as of source date
+    source:
+      label: GCN (syndicating Reuters/FT reporting)
+      url: https://gcn.com/jpmorgan-mufg-close-to-22b-texas-data-center-deal/6460/
+      figure: JPMorgan Chase and Mitsubishi UFJ Financial Group in talks
+        to underwrite a $22 billion loan
+      as_of: '2025-08-22'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.6
+    rationale: Reuters/FT reporting relayed via GCN, directly fetched this
+      pass; reliability held low both for the secondhand relay chain and
+      because the deal is explicitly reported as not yet closed.
+- id: stargate-2025-jv-financing--stargate-datacenter-construction--2025-formation
+  from: stargate/2025-jv-financing
+  to: stargate/datacenter-construction
+  type: equity
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Secondary-sourced (Wikipedia citing The Information/WSJ,
+    neither independently fetched this pass — both paywalled). Recorded
+    at reduced reliability accordingly; see the round node's own note
+    (nodes.yaml) for the co-lead judgment-call flag.
+  observations:
+  - value:
+      type: point
+      amount_usd: 52000000000
+      note: OpenAI and SoftBank each committed $19B (40% ownership each);
+        Oracle and MGX each contributed $7B; sum $52B initial JV capital
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-21'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Wikipedia, "Stargate LLC" (citing The Information and the
+        Wall Street Journal)
+      url: https://en.wikipedia.org/wiki/Stargate_LLC
+      figure: Softbank and OpenAI have each committed $19 billion of capital
+        to initially fund Stargate and would each hold 40% ownership
+        interest, while Oracle and MGX would each contribute $7 billion
+      as_of: '2025-01-21'
+    provenance_class: inference from other claims
+    capture_ref: session-webfetch:2026-08-10
+    reliability: 0.6
+    rationale: Tertiary source (Wikipedia) relaying two paywalled primary
+      outlets (The Information, WSJ) neither independently fetched this
+      pass; figures are widely corroborated in general circulation but
+      reliability held at 0.6 to reflect the sourcing depth actually
+      reached this pass.
+- id: ext-bond-market--coreweave-capital--2025-senior-notes
+  from: ext/bond-market
+  to: coreweave/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Public bond issuance — buyers are an anonymous market,
+    modeled via ext/bond-market per this file's header, not as individual
+    is_member_of participants.
+  observations:
+  - value:
+      type: point
+      amount_usd: 1750000000
+      note: $1.75B, 9.000% senior notes due 2031, Rule 144A/Reg S private
+        placement
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-07-25'
+      end: '2025-07-25'
+      schedule: known
+    source:
+      label: CoreWeave SEC filing (relayed via dispatched research
+        subagent this pass; specific exhibit URL not independently
+        re-verified by the orchestrating session)
+      url: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001769628&type=8-K
+      figure: $1.75B 9.000% senior notes due 2031, closed July 25 2025
+      as_of: '2025-07-25'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.75
+    rationale: Subagent-fetched from SEC EDGAR this pass; reliability held
+      below this pass's directly-fetched SEC entries because the specific
+      exhibit URL was not independently re-verified by the orchestrating
+      session (only the underlying figure was cross-checked for
+      plausibility against the other CoreWeave debt facilities recorded
+      alongside it).
+- id: ext-bond-market--meta-capital--2025-senior-notes
+  from: ext/bond-market
+  to: meta/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Underwriters (Citigroup Global Markets and Morgan Stanley
+    as joint book-running managers; Allen & Company, Blaylock Van,
+    CastleOak Securities, R. Seelaus & Co., and Siebert Williams Shank as
+    co-managers) place the securities but are not the capital providers —
+    noted here, not modeled as is_member_of participants, per this file's
+    header.
+  observations:
+  - value:
+      type: point
+      amount_usd: 30000000000
+      note: $30B senior notes across six tranches (2030-2065, coupons
+        4.200%-5.750%), priced Oct 30 2025, closed Nov 3 2025
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-10-30'
+      end: '2025-11-03'
+      schedule: known
+    source:
+      label: Meta Platforms, Inc. SEC free-writing prospectus (FWP)
+      url: https://www.sec.gov/Archives/edgar/data/1326801/000119312525258837/d61769dfwp.htm
+      figure: $30B senior notes, six tranches 2030-2065, joint book-running
+        managers Citigroup Global Markets Inc. and Morgan Stanley & Co. LLC
+      as_of: '2025-10-30'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing, fetched by a dispatched research
+      subagent this pass and cross-checked by the orchestrating session
+      against the closing 8-K it also cites (CIK 1326801, accession
+      0001193125-25-262593).
+- id: blue-owl-capital-capital--meta-datacenter-construction--2025-hyperion-jv
+  from: blue-owl-capital/capital
+  to: meta/datacenter-construction
+  type: equity
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Blue Owl's own ~$7B cash contribution is itself partly
+    debt-financed — a private securities offering bought by PIMCO and
+    other unnamed bond investors, with Morgan Stanley & Co. LLC as
+    exclusive financial advisor and sole bookrunner — NOT modeled as a
+    separate edge this pass (would require tracing Blue Owl's own
+    funding pool, a level deeper than this pass's scope; flagged as an
+    open item for a future pass, same treatment as SoftBank's own
+    Mizuho-borrowed Stargate contribution above). Total Hyperion
+    development cost is ~$27B; this edge records only Blue Owl's own
+    disclosed cash contribution to avoid conflating total project cost
+    with the financing edge's own dollar value (same discipline as the
+    Core Scientific/CoreWeave Denton edge's revenue-vs-capex distinction
+    in the second pass).
+  observations:
+  - value:
+      type: point
+      amount_usd: 7000000000
+      note: Blue Owl-managed funds contribute ~$7B cash for an 80% JV
+        interest in the Hyperion (Richland Parish, LA) datacenter campus;
+        Meta retains 20% and received a ~$3B one-time distribution; total
+        development cost ~$27B
+    stage: contract
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-10-21'
+      end: '2025-10-21'
+      schedule: known
+    source:
+      label: Meta newsroom
+      url: https://about.fb.com/news/2025/10/meta-blue-owl-capital-develop-hyperion-data-center/
+      figure: Funds managed by Blue Owl Capital will own an 80% interest
+        in the joint venture, while Meta will retain the remaining 20%
+        ownership; ~$7B cash contribution, ~$27B total development cost
+      as_of: '2025-10-21'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary Meta newsroom release, fetched by a dispatched
+      research subagent this pass and cross-checked by the orchestrating
+      session; the $7B figure is this pass's own reading of "Blue Owl
+      contributed ~$7B cash" in the subagent's report, held slightly
+      below 0.9 pending independent re-fetch of the newsroom page by the
+      orchestrating session itself.
+- id: ext-bond-market--oracle-capital--2026-senior-notes
+  from: ext/bond-market
+  to: oracle/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Lead underwriters (BofA Securities, Citigroup, Deutsche
+    Bank, Goldman Sachs, HSBC, J.P. Morgan Securities) place the
+    securities but are not the capital providers — noted here, not
+    modeled as is_member_of participants.
+  observations:
+  - value:
+      type: point
+      amount_usd: 25000000000
+      note: $25B senior notes across 8 tranches ($500M floating through
+        $2.75B 30-year fixed at 6.850%); proceeds for capex, debt
+        repayment, future investments/acquisitions
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-02-04'
+      end: '2026-02-04'
+      schedule: known
+    source:
+      label: Oracle Corporation SEC Form 8-K
+      url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526037840/d23732d8k.htm
+      figure: $25B senior notes, 8 tranches, lead underwriters BofA
+        Securities, Citigroup, Deutsche Bank, Goldman Sachs, HSBC, J.P.
+        Morgan Securities
+      as_of: '2026-02-04'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing, fetched by a dispatched research
+      subagent this pass.
+- id: ext-public-equity-market--oracle-capital--2026-preferred
+  from: ext/public-equity-market
+  to: oracle/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Mandatory convertible preferred stock, not common equity
+    or debt — recorded as type equity (closest fit in q1's enum; same
+    convention as every other non-common-share instrument this map treats
+    as "equity" absent a dedicated preferred-stock type). Same lead
+    underwriter roster as the senior-notes edge above, plus a longer
+    co-manager list; underwriters not modeled as participants, same
+    reasoning as the bond edges.
+  observations:
+  - value:
+      type: point
+      amount_usd: 5000000000
+      note: 100M depositary shares x $50, 6.50% Series D Mandatory
+        Convertible Preferred Stock
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-02-02'
+      end: '2026-02-02'
+      schedule: known
+    source:
+      label: Oracle Corporation SEC filing exhibit
+      url: https://www.sec.gov/Archives/edgar/data/1341439/000119312526039344/d63638dex11.htm
+      figure: $5B (100M depositary shares at $50), 6.50% Series D
+        Mandatory Convertible Preferred Stock
+      as_of: '2026-02-02'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing exhibit, fetched by a dispatched
+      research subagent this pass.
+
+# ============================================================
+# International (non-US) financing rounds — third pass, filling the
+# US-tracker bias gap. See nodes.yaml round nodes for full sourcing.
+# ============================================================
+- id: moonshot-ai-2024-02-alibaba-round--moonshot-ai-capital--2024-round
+  from: moonshot-ai/2024-02-alibaba-round
+  to: moonshot-ai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 1000000000
+      note: over $1B raised, backed by Alibaba and HongShan, ~$2.5B
+        valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-02-01'
+      end: '2024-02-29'
+      schedule: known
+    source:
+      label: TechCrunch
+      url: https://techcrunch.com/2024/02/21/moonshot-ai-funding-china/
+      figure: Moonshot AI has raised over $1 billion in a round backed by
+        Alibaba and HongShan, valuing the company at about $2.5 billion
+      as_of: '2024-02-21'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.75
+    rationale: TechCrunch direct fetch; round LABEL disagrees across
+      sources (Series A vs Series B) though the amount/lead investors are
+      consistent — reliability held at 0.75 for that unresolved
+      disagreement, per R-17.
+- id: moonshot-ai-2024-08-series-b-round--moonshot-ai-capital--2024-round
+  from: moonshot-ai/2024-08-series-b-round
+  to: moonshot-ai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 300000000
+      note: ~$300M raised, led by Tencent and Gaorong Capital, ~$3.3B
+        valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-08-01'
+      end: '2024-08-31'
+      schedule: known
+    source:
+      label: Aggregator-level reporting (search-result corroboration
+        only, not an independently fetched dedicated article this pass)
+      url: https://techcrunch.com/2024/02/21/moonshot-ai-funding-china/
+      figure: Moonshot AI raised ~$300M in an Aug-2024 round led by
+        Tencent and Gaorong Capital
+      as_of: '2024-08'
+    provenance_class: analyst/model estimate
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.5
+    rationale: Not independently primary-fetched this pass — corroborated
+      only at the search-result-snippet level; recorded at reduced
+      reliability accordingly rather than omitted, per this map's
+      not-dark-by-default discipline (R-06), with the gap stated plainly.
+- id: helsing-2025-series-d-round--helsing-capital--2025-round
+  from: helsing/2025-series-d-round
+  to: helsing/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: EUR is the primary quoted figure; a USD conversion is
+    deliberately NOT computed this pass (unlike Mistral's Series C
+    edge) because the EUR/USD spot rate around 2025-06-17 was not
+    independently verified this pass — recording an unverified derived
+    figure would violate this file's own never-estimate-silently
+    discipline more than leaving amount_usd null does.
+  observations:
+  - value:
+      type: point
+      amount_eur: 600000000
+      amount_usd: null
+      note: €600M Series D, led by Prima Materia, €12B valuation; USD
+        conversion not computed this pass, EUR/USD spot rate not
+        independently verified
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-06-17'
+      end: '2025-06-17'
+      schedule: known
+    source:
+      label: tech.eu
+      url: https://tech.eu/2025/06/17/helsing-raises-600-million-elevating-valuation-to-eur12bn/
+      figure: Helsing raises €600 million, led by Prima Materia, valuation
+        €12 billion
+      as_of: '2025-06-17'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.8
+    rationale: Primary-adjacent trade press (tech.eu), fetched by a
+      dispatched research subagent this pass; Helsing's own newsroom
+      rate-limited on direct fetch.
+- id: synthesia-2025-series-d-round--synthesia-capital--2025-round
+  from: synthesia/2025-series-d-round
+  to: synthesia/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 180000000
+      note: $180M Series D, led by NEA, $2.1B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-15'
+      end: '2025-01-15'
+      schedule: known
+    source:
+      label: Synthesia company blog
+      url: https://www.synthesia.io/post/synthesia-secures-180m-in-series-d-funding
+      figure: $180M Series D, led by NEA, $2.1B valuation
+      as_of: '2025-01-15'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary company blog release, fetched by a dispatched
+      research subagent this pass.
+- id: synthesia-2026-series-e-round--synthesia-capital--2026-round
+  from: synthesia/2026-series-e-round
+  to: synthesia/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 200000000
+      note: $200M Series E, led by GV (Google Ventures), $4B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-01-26'
+      end: '2026-01-26'
+      schedule: known
+    source:
+      label: Synthesia company blog
+      url: https://www.synthesia.io/post/series-e-200-million-4-billion-valuation-future-work
+      figure: $200M Series E, led by GV, $4B valuation
+      as_of: '2026-01-26'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary company blog release, fetched by a dispatched
+      research subagent this pass.
+- id: microsoft-capital--g42-capital--2024-investment
+  from: microsoft/capital
+  to: g42/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 1500000000
+      note: $1.5B minority-stake investment; Brad Smith joined G42's board;
+        joint $1B developer fund established; governed by a US-UAE
+        Intergovernmental Assurance Agreement
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-04-16'
+      end: '2024-04-16'
+      schedule: known
+    source:
+      label: Microsoft newsroom
+      url: https://news.microsoft.com/source/2024/04/16/microsoft-invests-1-5-billion-in-abu-dhabis-g42-to-accelerate-ai-development-and-global-expansion/
+      figure: Microsoft will invest $1.5 billion in G42 for a minority
+        stake
+      as_of: '2024-04-16'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Microsoft newsroom release, fetched by a
+      dispatched research subagent this pass.
+- id: xai-2026-series-e-round--xai-capital--2026-round
+  from: xai/2026-series-e-round
+  to: xai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: aggregated
+  new_this_pass: true
+  coverage_note: Only Humain's own $3B piece of this round is disclosed
+    in the source found — recorded here as scope-qualified (a lower
+    bound on the round's true total, not the full round amount) rather
+    than as the round's point total, to avoid implying the round was
+    only $3B.
+  observations:
+  - value:
+      type: lower-bound
+      amount_usd: 3000000000
+      note: at least $3B (Humain's own disclosed contribution); the
+        round's total size is not stated in the source found
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2026-02-18'
+      end: '2026-02-18'
+      schedule: known
+    source:
+      label: Humain (PRNewswire company release)
+      url: https://www.prnewswire.com/news-releases/humain-backs-xai-with-3-billion-series-e-investment-ahead-of-historic-spacex-merger-302691510.html
+      figure: HUMAIN today announced a $3 billion strategic investment in
+        xAI
+      as_of: '2026-02-18'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary company release, fetched by a dispatched research
+      subagent this pass, independently corroborated per the subagent's
+      report by Reuters/Bloomberg/NYT search snippets (not independently
+      fetched by the orchestrating session).

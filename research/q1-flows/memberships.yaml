@@ -18,10 +18,18 @@
 #   id            — <investor-node-id-slug>--is-member-of--<round-node-id-slug>
 #   from          — the investor's own capital node id (nodes.yaml)
 #   to            — the round node id (nodes.yaml, kind: round)
-#   role          — lead | participant (exactly one `lead` per round where
-#                   a source discloses a single lead; see the round node's
-#                   own `lead` field and note for rounds where no single
-#                   lead was named — those rounds carry zero `lead` edges)
+#   role          — lead | participant. MULTIPLE rows may carry role:lead
+#                   on the same round (Ruling 5, 2026-08-10 third pass —
+#                   see research/PRINCIPLES.md P-01): when a source
+#                   discloses two or more co-leads, every one of them
+#                   gets role:lead here, matching the round node's own
+#                   `leads` list (nodes.yaml) exactly. Zero rows carry
+#                   role:lead where no lead at all was named. Pass 2
+#                   originally allowed only one role:lead per round and
+#                   demoted a real second co-lead (Cohere 2025: Radical
+#                   Ventures + Inovia; Together AI 2025 Series B: General
+#                   Catalyst + Prosperity7) to role:participant — both
+#                   fixed this pass; see their entries below.
 #   amount_usd    — nullable; filled ONLY when a source discloses that
 #                   specific investor's individual check size (rare —
 #                   ASML's €1.3B-of-€1.7B contribution to Mistral's
@@ -38,17 +46,40 @@
 # stand-in node carries that fact — never fabricated names, never a
 # silently dropped "and more."
 #
-# DEBT SYNDICATES ARE NOT MODELED HERE (judgment call, flagged for Ben,
-# not a ruling): bank-loan syndicates (e.g. the Vantage/MUFG construction
-# loan) are recorded as direct edges.yaml flows from the lead lender's
-# capital node, with co-lenders named in that edge's coverage_note —
-# not as is_member_of edges into a round node. Rationale: Ruling 1's own
-# language ("named investor," "role: lead where a lead is disclosed") is
-# written for equity-style financing rounds; a creditor taking no
-# ownership stake in exchange for a loan isn't naturally a "member" of
-# a round in the same sense a co-investor is. This reading is NOT
-# obviously the only correct one — flagging it explicitly rather than
-# assuming it's settled.
+# DEBT SYNDICATES GET THE SAME TREATMENT AS EQUITY ROUNDS (Ruling 4,
+# 2026-08-10 third pass — REVERSES the judgment call pass 2 made here).
+# Pass 2 reasoned a lender taking no ownership stake isn't naturally a
+# "member" of a round the way a co-investor is, and kept debt facilities
+# as plain edges.yaml flows even when multiple banks co-lent. Ben
+# overruled this: "I'd probably give it a named syndicate also, just
+# because those sorts of co-lending parties might be interesting if
+# patterns exist (and they def do)." A debt facility with 2+ identifiable
+# lenders now gets the SAME round-node + is_member_of pattern as an
+# equity round: a syndicate/facility node in nodes.yaml (kind: round,
+# round_type describing the debt instrument), is_member_of edges here for
+# every named lender (role:lead for the lead arranger/bookrunner/agent —
+# per Ruling 5, MULTIPLE lenders can carry role:lead when a source names
+# co-leads, e.g. CoreWeave's 2023 Blackstone+Magnetar facility and its
+# 2026 JPMorgan+MUFG DDTL 5.5 facility, both below), and the actual
+# money-flow edge in edges.yaml running syndicate-node -> borrower,
+# exactly like an equity round's own money-flow edge.
+#
+# Where a facility's co-lenders are confirmed to exist as a class
+# ("the Lenders party thereto," a syndicated term loan) but aren't
+# individually named anywhere found, the round node still gets created
+# with a single ext/undisclosed-lenders--<facility-id> stand-in member —
+# same convention as ext/undisclosed-investors on an equity round — so
+# the SHAPE is right even when membership is partly unknown (see
+# coreweave/2025-ddtl5-amendment below for a worked example).
+#
+# A loan VERIFIED to have exactly one lender (the JPMorgan Chase $2.3B
+# Crusoe/Abilene construction loan — Newmark, named in a secondary trade
+# source, turned out on direct fetch to be the deal's broker/arranger,
+# not a co-lender; no other bank is named anywhere found) correctly stays
+# a plain edges.yaml flow with no round node — that is a fact about that
+# specific loan having one lender, not a different rule for debt as a
+# category. See edges.yaml's jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan
+# entry for the verification detail.
 #
 # YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
 
@@ -178,9 +209,10 @@ memberships:
   amount_usd: null
   source_ref: cohere/2024-series-d-round#sources[0]
 
-# --- cohere/2025-round --- (Radical Ventures carries role:lead per the
-# single-lead-field judgment call noted on the round node; Inovia is a
-# co-lead per the source, recorded as participant)
+# --- cohere/2025-round --- (Radical Ventures AND Inovia are both named
+# co-leads per the source; both carry role:lead per Ruling 5's schema fix
+# — pass 2 had demoted Inovia to role:participant to fit a single-lead
+# field, corrected 2026-08-10)
 - id: radical-ventures-capital--is-member-of--cohere-2025-round
   from: radical-ventures/capital
   to: cohere/2025-round
@@ -190,7 +222,7 @@ memberships:
 - id: inovia-capital--is-member-of--cohere-2025-round
   from: inovia/capital
   to: cohere/2025-round
-  role: participant
+  role: lead
   amount_usd: null
   source_ref: cohere/2025-round#sources[0]
 - id: amd-capital--is-member-of--cohere-2025-round
@@ -344,10 +376,11 @@ memberships:
   amount_usd: null
   source_ref: world-labs/2024-seed-round#sources[0]
 
-# --- together-ai/2025-series-b-round --- (General Catalyst carries
-# role:lead per the single-lead-field judgment call; Prosperity7 is a
-# co-lead per the source, recorded as participant; "and more" beyond
-# the named list is the undisclosed stand-in)
+# --- together-ai/2025-series-b-round --- (General Catalyst AND
+# Prosperity7 are both named co-leads per the source; both carry
+# role:lead per Ruling 5's schema fix — pass 2 had demoted Prosperity7 to
+# role:participant, corrected 2026-08-10; "and more" beyond the named
+# list is the undisclosed stand-in)
 - id: general-catalyst-capital--is-member-of--together-ai-2025-series-b-round
   from: general-catalyst/capital
   to: together-ai/2025-series-b-round
@@ -357,7 +390,7 @@ memberships:
 - id: prosperity7-capital--is-member-of--together-ai-2025-series-b-round
   from: prosperity7/capital
   to: together-ai/2025-series-b-round
-  role: participant
+  role: lead
   amount_usd: null
   source_ref: together-ai/2025-series-b-round#sources[0]
 - id: salesforce-ventures-capital--is-member-of--together-ai-2025-series-b-round
@@ -578,3 +611,241 @@ memberships:
   role: participant
   amount_usd: null
   source_ref: crusoe/2025-abilene-phase2-financing#sources[0]
+
+# ============================================================
+# Debt/project-finance tranche (Ruling 4, third pass) — round-node
+# memberships for the syndicates in nodes.yaml/edges.yaml.
+# ============================================================
+
+# --- coreweave/2023-blackstone-magnetar-facility --- (co-led per
+# Blackstone's own press-release headline — worked example for Ruling 4)
+- id: blackstone-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: blackstone/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: lead
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: magnetar-capital-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: magnetar-capital/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: lead
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: coatue-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: coatue/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[1]
+- id: digitalbridge-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: digitalbridge/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: blackrock-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: blackrock/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: pimco-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: pimco/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: carlyle-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: carlyle/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[0]
+- id: great-elm-capital--is-member-of--coreweave-2023-blackstone-magnetar-facility
+  from: great-elm/capital
+  to: coreweave/2023-blackstone-magnetar-facility
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2023-blackstone-magnetar-facility#sources[1]
+
+# --- coreweave/2026-ddtl55-facility --- (both named "joint lead
+# arranger/bookrunner/syndication agent" in the same 8-K)
+- id: jpmorgan-chase-capital--is-member-of--coreweave-2026-ddtl55-facility
+  from: jpmorgan-chase/capital
+  to: coreweave/2026-ddtl55-facility
+  role: lead
+  amount_usd: null
+  source_ref: coreweave/2026-ddtl55-facility#sources[0]
+- id: mufg-capital--is-member-of--coreweave-2026-ddtl55-facility
+  from: mufg/capital
+  to: coreweave/2026-ddtl55-facility
+  role: lead
+  amount_usd: null
+  source_ref: coreweave/2026-ddtl55-facility#sources[0]
+
+# --- coreweave/2025-ddtl5-amendment --- (shape-only, individual lenders
+# not named — single undisclosed-lenders stand-in, per Ruling 4)
+- id: ext-undisclosed-lenders-coreweave-2025-ddtl5-amendment--is-member-of--coreweave-2025-ddtl5-amendment
+  from: ext/undisclosed-lenders--coreweave-2025-ddtl5-amendment
+  to: coreweave/2025-ddtl5-amendment
+  role: participant
+  amount_usd: null
+  source_ref: coreweave/2025-ddtl5-amendment#sources[0]
+
+# --- vantage-data-centers/2025-mufg-jpmorgan-facility --- (reported "in
+# talks," no lead disclosed between the two named parties)
+- id: jpmorgan-chase-capital--is-member-of--vantage-data-centers-2025-mufg-jpmorgan-facility
+  from: jpmorgan-chase/capital
+  to: vantage-data-centers/2025-mufg-jpmorgan-facility
+  role: participant
+  amount_usd: null
+  source_ref: vantage-data-centers/2025-mufg-jpmorgan-facility#sources[0]
+- id: mufg-capital--is-member-of--vantage-data-centers-2025-mufg-jpmorgan-facility
+  from: mufg/capital
+  to: vantage-data-centers/2025-mufg-jpmorgan-facility
+  role: participant
+  amount_usd: null
+  source_ref: vantage-data-centers/2025-mufg-jpmorgan-facility#sources[0]
+
+# --- stargate/2025-jv-financing --- (OpenAI + SoftBank at $19B/40% each
+# marked lead per the round node's flagged judgment call; Oracle + MGX
+# at $7B each as participant; every party's own check size IS disclosed,
+# same pattern as ASML on Mistral's Series C)
+- id: openai-capital--is-member-of--stargate-2025-jv-financing
+  from: openai/capital
+  to: stargate/2025-jv-financing
+  role: lead
+  amount_usd: 19000000000
+  source_ref: stargate/2025-jv-financing#sources[0]
+- id: softbank-capital--is-member-of--stargate-2025-jv-financing
+  from: softbank/capital
+  to: stargate/2025-jv-financing
+  role: lead
+  amount_usd: 19000000000
+  source_ref: stargate/2025-jv-financing#sources[0]
+- id: oracle-capital--is-member-of--stargate-2025-jv-financing
+  from: oracle/capital
+  to: stargate/2025-jv-financing
+  role: participant
+  amount_usd: 7000000000
+  source_ref: stargate/2025-jv-financing#sources[0]
+- id: mgx-capital--is-member-of--stargate-2025-jv-financing
+  from: mgx/capital
+  to: stargate/2025-jv-financing
+  role: participant
+  amount_usd: 7000000000
+  source_ref: stargate/2025-jv-financing#sources[0]
+
+# ============================================================
+# International (non-US) financing tranche (third pass).
+# ============================================================
+
+# --- moonshot-ai/2024-02-alibaba-round --- (co-led per source)
+- id: alibaba-capital--is-member-of--moonshot-ai-2024-02-alibaba-round
+  from: alibaba/capital
+  to: moonshot-ai/2024-02-alibaba-round
+  role: lead
+  amount_usd: null
+  source_ref: moonshot-ai/2024-02-alibaba-round#sources[0]
+- id: hongshan-capital--is-member-of--moonshot-ai-2024-02-alibaba-round
+  from: hongshan/capital
+  to: moonshot-ai/2024-02-alibaba-round
+  role: lead
+  amount_usd: null
+  source_ref: moonshot-ai/2024-02-alibaba-round#sources[0]
+
+# --- moonshot-ai/2024-08-series-b-round --- (co-led per source)
+- id: tencent-capital--is-member-of--moonshot-ai-2024-08-series-b-round
+  from: tencent/capital
+  to: moonshot-ai/2024-08-series-b-round
+  role: lead
+  amount_usd: null
+  source_ref: moonshot-ai/2024-08-series-b-round#sources[0]
+- id: gaorong-capital-capital--is-member-of--moonshot-ai-2024-08-series-b-round
+  from: gaorong-capital/capital
+  to: moonshot-ai/2024-08-series-b-round
+  role: lead
+  amount_usd: null
+  source_ref: moonshot-ai/2024-08-series-b-round#sources[0]
+
+# --- helsing/2025-series-d-round ---
+- id: prima-materia-capital--is-member-of--helsing-2025-series-d-round
+  from: prima-materia/capital
+  to: helsing/2025-series-d-round
+  role: lead
+  amount_usd: null
+  source_ref: helsing/2025-series-d-round#sources[0]
+
+# --- synthesia/2025-series-d-round ---
+- id: nea-capital--is-member-of--synthesia-2025-series-d-round
+  from: nea/capital
+  to: synthesia/2025-series-d-round
+  role: lead
+  amount_usd: null
+  source_ref: synthesia/2025-series-d-round#sources[0]
+
+# --- synthesia/2026-series-e-round --- (GV leads; NVentures/Accel/Kleiner
+# Perkins/NEA/PSP Growth/Air Street/FirstMark/MMC Ventures participate)
+- id: google-ventures-capital--is-member-of--synthesia-2026-series-e-round
+  from: google-ventures/capital
+  to: synthesia/2026-series-e-round
+  role: lead
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: nvidia-capital--is-member-of--synthesia-2026-series-e-round
+  from: nvidia/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: accel-capital--is-member-of--synthesia-2026-series-e-round
+  from: accel/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: kleiner-perkins-capital--is-member-of--synthesia-2026-series-e-round
+  from: kleiner-perkins/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: nea-capital--is-member-of--synthesia-2026-series-e-round
+  from: nea/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: psp-investments-capital--is-member-of--synthesia-2026-series-e-round
+  from: psp-investments/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: air-street-capital-capital--is-member-of--synthesia-2026-series-e-round
+  from: air-street-capital/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: firstmark-capital--is-member-of--synthesia-2026-series-e-round
+  from: firstmark/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+- id: mmc-ventures-capital--is-member-of--synthesia-2026-series-e-round
+  from: mmc-ventures/capital
+  to: synthesia/2026-series-e-round
+  role: participant
+  amount_usd: null
+  source_ref: synthesia/2026-series-e-round#sources[0]
+
+# --- xai/2026-series-e-round --- (Humain is the ONE known member; round
+# total otherwise unmeasured — see nodes.yaml round node note)
+- id: humain-capital--is-member-of--xai-2026-series-e-round
+  from: humain/capital
+  to: xai/2026-series-e-round
+  role: participant
+  amount_usd: 3000000000
+  source_ref: xai/2026-series-e-round#sources[0]
