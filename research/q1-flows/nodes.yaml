@@ -10,6 +10,41 @@
 # doesn't specify this case; flagged as a judgment call in the build report,
 # not a ruling.
 #
+# `kind: round` (NEW, Ruling 1 — 2026-08-10 second pass, replacing the
+# ext/investor-syndicate--<company>-<year> placeholder pattern the first
+# pass used): a round node represents a one-time financing EVENT, not an
+# entity×activity facet — analogous to a paper being the object authors
+# `is_member_of`, even though that specific collaboration happens once.
+# Naming convention: `<company>/<year>-<round-slug>-round` (financing
+# rounds proper) or `<company>/<year>-<project-slug>-financing` (a
+# construction-project JV that is structurally the same shape — 2+ named
+# co-investors funding one recipient — even though it isn't a startup
+# equity round). Fields: company, date, round_type, total_amount_usd
+# (nullable), lead (an investor node id, or null if the source names no
+# single lead), sources. A round node does NOT carry `instantiated_by`
+# in the entity×activity sense; its own id is what edges.yaml's money-flow
+# edge points FROM, and what memberships.yaml's is_member_of edges point
+# TO. Full pattern writeup, including why debt syndicates are handled
+# differently, lives in edges.yaml's header and memberships.yaml's header.
+#
+# Investor nodes below are deliberately MINIMAL per Ruling 1 ("if an
+# investor doesn't have a node yet, create a minimal one") — entity +
+# activity (`capital`) + coverage_state only, no independent research
+# beyond what the round's own citation already names. Individuals get
+# person-slug ids (e.g. `daniel-gross/capital`), not `ext/*` — they are
+# named entities, not an anonymous population.
+#
+# `instantiated_by` convention differs for investor/round nodes vs. every
+# other node in this file: an ordinary entity×activity node's
+# `instantiated_by` points at the edges.yaml money-flow edge id that
+# brought it live. An investor node's own "flow" is its round
+# membership, not a dollar edge — no per-investor amount exists in the
+# general case — so its `instantiated_by` points at the ROUND NODE id
+# (e.g. `mistral/2023-seed-round`) it's a member of, not at an
+# edges.yaml id or a memberships.yaml id. Round nodes themselves are not
+# instantiated by anything (they ARE the event); they carry no
+# `instantiated_by` field at all.
+#
 # YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
 
 schema_ref: "INBOX/2026-08-03-q1-skeleton-v3.md#3"
@@ -99,13 +134,6 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - ext-investor-syndicate-xai-2023--xai-capital--2023-formd
-- id: ext/investor-syndicate--xai-2023
-  entity: ext (population)
-  activity: private equity capital provision
-  coverage_state: aggregated
-  note: SEC Form D does not name individual buyers.
-  instantiated_by:
-  - ext-investor-syndicate-xai-2023--xai-capital--2023-formd
 - id: amazon/capital
   entity: Amazon
   activity: capital (treasury/financing facet)
@@ -127,26 +155,12 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - google-capital--anthropic-capital--2023-02
-- id: ext/investor-syndicate--mistral-2023
-  entity: ext (population)
-  activity: VC capital provision
-  coverage_state: measured
-  note: 'Named: Lightspeed (lead), Redpoint, Index, Xavier Niel, Bpifrance, Eric Schmidt.'
-  instantiated_by:
-  - ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
 - id: mistral/capital
   entity: Mistral AI
   activity: capital (treasury/financing facet)
   coverage_state: measured
   instantiated_by:
   - ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
-- id: ext/investor-syndicate--inflection-2023
-  entity: ext (population)
-  activity: VC/strategic capital provision
-  coverage_state: measured
-  note: 'Named: Microsoft, Nvidia, Reid Hoffman, Bill Gates, Eric Schmidt.'
-  instantiated_by:
-  - ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
 - id: inflection/capital
   entity: Inflection AI
   activity: capital (treasury/financing facet)
@@ -156,20 +170,6 @@ nodes:
     on the cited page per the audit).
   instantiated_by:
   - ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
-- id: ext/investor-syndicate--cohere-2024
-  entity: ext (population)
-  activity: strategic/institutional capital provision
-  coverage_state: measured
-  note: 'Named: PSP Investments (lead), Cisco, Fujitsu, AMD Ventures, EDC, Nvidia, Salesforce Ventures.'
-  instantiated_by:
-  - ext-investor-syndicate-cohere-2024--cohere-capital--2024-seriesd
-- id: ext/investor-syndicate--cohere-2025
-  entity: ext (population)
-  activity: strategic/institutional capital provision
-  coverage_state: measured
-  note: 'Named: Radical Ventures/Inovia (lead), AMD Ventures, Nvidia, PSP, Salesforce Ventures.'
-  instantiated_by:
-  - ext-investor-syndicate-cohere-2025--cohere-capital--2025-round
 - id: cohere/capital
   entity: Cohere
   activity: capital (treasury/financing facet)
@@ -183,3 +183,921 @@ nodes:
   coverage_state: measured
   instantiated_by:
   - nvidia-chip-design--xai-datacenter-operation--2024-colossus
+
+# ============================================================
+# Round nodes (Ruling 1 retrofit + Ruling 2 new tranche, 2026-08-10
+# second pass). Kind: round. See this file's header + edges.yaml header
+# for the pattern. The five REFOFIT entries below replace the first
+# pass's ext/investor-syndicate--<company>-<year> placeholders; those
+# ids no longer appear as edge endpoints anywhere in edges.yaml as of
+# this pass.
+# ============================================================
+- id: xai/2023-formd-round
+  kind: round
+  company: xAI
+  date: '2023-12'
+  round_type: SEC Form D (no round letter disclosed)
+  total_amount_usd: 134700000
+  lead: null
+  note: Retrofit of the first pass's ext/investor-syndicate--xai-2023 placeholder.
+    Form D discloses only the aggregate sold amount ($134.7M against a $1B ceiling)
+    — no investor is named anywhere in the source, so this round's entire membership
+    is the single ext/undisclosed-investors--xai-2023-formd-round stand-in in memberships.yaml,
+    not a roster of named participants.
+  sources:
+  - label: xAI SEC Form D (relayed by CoinDesk)
+    url: https://www.sec.gov/cgi-bin/browse-edgar
+    figure: $1B ceiling, $134.7M sold, $865.3M remaining
+    as_of: 2023-12
+- id: mistral/2023-seed-round
+  kind: round
+  company: Mistral AI
+  date: '2023-06'
+  round_type: seed
+  total_amount_usd: 113000000
+  lead: lightspeed/capital
+  note: Retrofit of the first pass's ext/investor-syndicate--mistral-2023 placeholder.
+    €105M/$113M at €240M/$260M valuation.
+  sources:
+  - label: TechCrunch
+    url: https://techcrunch.com/
+    figure: €105M/$113M seed, €240M/$260M valuation, led by Lightspeed w/ Redpoint,
+      Index, Niel, Bpifrance, Schmidt
+    as_of: 2023-06
+- id: inflection/2023-round
+  kind: round
+  company: Inflection AI
+  date: '2023-06'
+  round_type: growth/strategic round (stage label not disclosed in the source)
+  total_amount_usd: 1300000000
+  lead: null
+  note: Retrofit of the first pass's ext/investor-syndicate--inflection-2023 placeholder.
+    Source language ("led by Microsoft/Nvidia/Hoffman/Gates/Schmidt") names five
+    parties without singling out one lead — all five recorded as role:participant
+    in memberships.yaml, none as role:lead. Flagged, not resolved (R-17 — name
+    the ambiguity).
+  sources:
+  - label: TechCrunch
+    url: https://techcrunch.com/
+    figure: $1.3B at $4B, led by Microsoft/Nvidia/Hoffman/Gates/Schmidt
+    as_of: 2023-06
+- id: cohere/2024-series-d-round
+  kind: round
+  company: Cohere
+  date: '2024-07'
+  round_type: Series D
+  total_amount_usd: 500000000
+  lead: psp-investments/capital
+  note: Retrofit of the first pass's ext/investor-syndicate--cohere-2024 placeholder.
+  sources:
+  - label: BetaKit
+    url: https://betakit.com/
+    figure: $500M at $5.5B, led by PSP Investments w/ Cisco, Fujitsu, AMD Ventures,
+      EDC, Nvidia, Salesforce Ventures
+    as_of: 2024-07
+- id: cohere/2025-round
+  kind: round
+  company: Cohere
+  date: '2025-08'
+  round_type: follow-on round (stage label not disclosed publicly)
+  total_amount_usd: 500000000
+  lead: radical-ventures/capital
+  note: Retrofit of the first pass's ext/investor-syndicate--cohere-2025 placeholder.
+    Source describes Radical Ventures AND Inovia as co-leads; the schema allows
+    exactly one role:lead, so Radical Ventures (listed first) carries it here and
+    Inovia is recorded as role:participant — a judgment call, not a claim that
+    Inovia was secondary. Flagged for Ben.
+  sources:
+  - label: Company announcement
+    url: https://cohere.com/
+    figure: $500M at $6.8B, led by Radical/Inovia w/ AMD Ventures, Nvidia, PSP,
+      Salesforce Ventures
+    as_of: 2025-08
+- id: mistral/2025-series-c-round
+  kind: round
+  company: Mistral AI
+  date: '2025-09-09'
+  round_type: Series C
+  total_amount_usd: 1989000000
+  lead: asml/capital
+  note: NEW this pass (Ruling 2/3) — Mistral's next round after the 2023 seed
+    tracked in the first pass. €1.7B raised (~$1.989B at the ~1.17 EUR/USD rate
+    prevailing around the announcement date — a derived conversion, not a figure
+    Mistral's own release states in dollars; recorded here as the USD field with
+    the EUR figure as the primary quoted amount). ASML contributed €1.3B of the
+    €1.7B directly — a real, named investor-level split, captured on ASML's
+    is_member_of edge in memberships.yaml rather than here.
+  sources:
+  - label: Mistral AI company announcement
+    url: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/
+    figure: €1.7B raised, led by ASML (€1.3B of the round), post-money valuation
+      €11.7B; co-investors DST Global, Andreessen Horowitz, Bpifrance, General
+      Catalyst, Index Ventures, Lightspeed, NVIDIA
+    as_of: '2025-09-09'
+- id: crusoe/2024-series-d-round
+  kind: round
+  company: Crusoe Energy Systems
+  date: '2024-12-12'
+  round_type: Series D
+  total_amount_usd: 600000000
+  lead: founders-fund/capital
+  note: NEW this pass (Ruling 2) — signal-biased addition, a fast-rising AI-infrastructure
+    neocloud already present in this map at the facility level (research/q3-datacenter-census/attribution.yaml,
+    Colossus notwithstanding — Crusoe here is the Abilene/Stargate builder-operator,
+    a distinct role from xAI's own facilities).
+  sources:
+  - label: Crusoe Energy Systems newsroom
+    url: https://www.crusoe.ai/resources/newsroom/crusoe-closes-series-d-funding
+    figure: $600M Series D at $2.8B valuation, led by Founders Fund w/ Fidelity,
+      Long Journey Ventures, Mubadala, NVIDIA, Ribbit Capital, Valor Equity Partners
+    as_of: '2024-12-12'
+- id: world-labs/2024-seed-round
+  kind: round
+  company: World Labs
+  date: '2024-09-13'
+  round_type: seed / early-stage (two rounds combined per source, not individually
+    broken out)
+  total_amount_usd: 230000000
+  lead: null
+  note: NEW this pass (Ruling 2) — signal-biased addition (Fei-Fei Li's spatial-intelligence
+    lab, "over $1B" valuation on $230M raised — a strong new/fast-rising signal
+    despite being far under the old $1B floor). Sources name NEA and a16z prominently
+    but do not single out one as lead; recorded with no role:lead, all named
+    parties as role:participant.
+  sources:
+  - label: TechCrunch
+    url: https://techcrunch.com/2024/09/13/fei-fei-lis-world-labs-comes-out-of-stealth-with-230m-in-funding/
+    figure: $230M across two rounds, investors include Andreessen Horowitz, NEA,
+      Radical Ventures, Marc Benioff, Nvidia's NVentures; valuation "over $1B"
+    as_of: '2024-09-13'
+  - label: Forbes
+    url: https://www.forbes.com/sites/charliefink/2024/09/19/fei-fei-lis-world-labs-ai-out-of-stealth-with-230-million-new-snap-specs-neuralink-targets-blindness/
+    figure: Same investor list corroborated
+    as_of: '2024-09-19'
+- id: together-ai/2025-series-b-round
+  kind: round
+  company: Together AI
+  date: '2025-02-20'
+  round_type: Series B
+  total_amount_usd: 305000000
+  lead: general-catalyst/capital
+  note: NEW this pass (Ruling 2) — signal-biased addition (AI inference/training
+    infrastructure provider). Source describes General Catalyst AND Prosperity7
+    as co-leads; General Catalyst (listed first) carries role:lead here, Prosperity7
+    role:participant — same single-lead-field judgment call as cohere/2025-round.
+    Source also lists "and more" beyond the named investors — captured as a
+    single ext/undisclosed-investors--together-ai-2025-series-b-round edge in
+    memberships.yaml.
+  sources:
+  - label: Together AI company announcement
+    url: https://www.together.ai/blog/together-ai-announcing-305m-series-b
+    figure: $305M Series B at $3.3B valuation, co-led by General Catalyst and
+      Prosperity7, w/ Salesforce Ventures, DAMAC Capital, NVIDIA, Kleiner Perkins,
+      March Capital, Emergence Capital, Lux Capital, SE Ventures, Greycroft,
+      Coatue, and more
+    as_of: '2025-02-20'
+- id: nebius/2024-strategic-financing-round
+  kind: round
+  company: Nebius
+  date: '2024-12-02'
+  round_type: strategic equity financing (not staged as a lettered Series)
+  total_amount_usd: 700000000
+  lead: null
+  note: NEW this pass (Ruling 2) — signal-biased addition (AI-infrastructure
+    neocloud). Source explicitly states no single investor was formally designated
+    lead; Goldman Sachs acted as placement agent, not an investor, and is not
+    recorded as a member.
+  sources:
+  - label: BusinessWire (Nebius company release via wire service)
+    url: https://www.businesswire.com/news/home/20241202575315/en/Nebius-Announces-Oversubscribed-Strategic-Equity-Financing-of-USD-700-Million-to-Accelerate-Roll-out-of-Full-stack-AI-Infrastructure
+    figure: $700M oversubscribed strategic equity financing; investors include
+      Accel, NVIDIA, and accounts managed by Orbis Investments; Goldman Sachs
+      as placement agent
+    as_of: '2024-12-02'
+- id: lambda/2024-series-c-round
+  kind: round
+  company: Lambda
+  date: '2024-02-15'
+  round_type: Series C
+  total_amount_usd: 320000000
+  lead: usit/capital
+  note: NEW this pass (Ruling 2) — signal-biased addition (GPU cloud provider).
+    Valuation ($1.5B) is search-sourced, not independently confirmed on the
+    fetched company blog — recorded at low confidence, flagged rather than
+    dropped.
+  sources:
+  - label: Lambda company blog
+    url: https://lambda.ai/blog/lambda-raises-320m-to-build-a-gpu-cloud-for-ai
+    figure: $320M Series C, led by US Innovative Technology Fund (USIT) w/ B
+      Capital, SK Telecom, T. Rowe Price Associates (new); Crescent Cove, Mercato
+      Partners, 1517 Fund, Bloomberg Beta, Gradient Ventures (existing)
+    as_of: '2024-02-15'
+- id: perplexity/2024-series-b-round
+  kind: round
+  company: Perplexity AI
+  date: '2024-04-24'
+  round_type: Series B
+  total_amount_usd: 62700000
+  lead: daniel-gross/capital
+  note: NEW this pass (Ruling 2) — signal-biased addition (AI search). Records
+    ONLY the April 24, 2024 close (Daniel Gross-led, Latham & Watkins deal-counsel
+    primary source, full investor list) — a separate, earlier January 2024 close
+    (~$73.6M, IVP-led, per aggregator sources only, not independently WebFetched)
+    is real per multiple secondary reports but is NOT added as a second edge
+    this pass to avoid compounding an unverified figure into the map; noted here
+    for context only. IVP and Nvidia appear as investors in BOTH closes per
+    available reporting — recorded once each in memberships.yaml against this
+    round, not double-counted.
+  sources:
+  - label: Latham & Watkins press release (deal counsel)
+    url: https://www.lw.com/en/news/2024/04/latham-watkins-advises-perplexity-ai-in-us62-7-million-series-b-funding-round
+    figure: US$62.7M Series B round, led by Daniel Gross, w/ Jeff Bezos, NVIDIA,
+      Tobi Lütke, Elad Gil, Nat Friedman, Naval Ravikant, Andrej Karpathy, IVP,
+      NEA; "more than US$1 billion" valuation
+    as_of: '2024-04-24'
+- id: anysphere/2024-series-b-round
+  kind: round
+  company: Anysphere (Cursor)
+  date: '2024-12'
+  round_type: Series B
+  total_amount_usd: 105000000
+  lead: thrive-capital/capital
+  note: NEW this pass (Ruling 2) — signal-biased addition (AI coding assistant,
+    fast-rising). Source names only Thrive Capital as lead; no other investor
+    is itemized in the fetched article, so the remainder of the round's membership
+    is a single ext/undisclosed-investors--anysphere-2024-series-b-round edge
+    in memberships.yaml.
+  sources:
+  - label: Crunchbase News
+    url: https://news.crunchbase.com/ai/anysphere-cursor-venture-funding-thrive/
+    figure: $105M Series B at $2.6B valuation, led by Thrive Capital
+    as_of: '2024-12'
+- id: crusoe/2024-abilene-jv-financing
+  kind: round
+  company: Crusoe Energy Systems (Abilene, TX campus JV — initial formation)
+  date: '2024-10-15'
+  round_type: real-estate/infrastructure JV equity (initial formation)
+  total_amount_usd: 3400000000
+  lead: blue-owl-capital/capital
+  note: NEW this pass (datacenter construction, Tier-A). Structurally the same
+    shape as a startup financing round — 2+ named co-investors (Blue Owl Capital's
+    Real Estate platform + Primary Digital Infrastructure) funding one recipient
+    (Crusoe's Abilene "Lancaster Clean Campus," aka the Stargate site tracked
+    at the facility level in research/q3-datacenter-census/attribution.yaml) —
+    so the round-node pattern applies even though this is not a company equity
+    raise. Individual investor split not disclosed.
+  sources:
+  - label: Crusoe Energy Systems newsroom
+    url: https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture
+    figure: $3.4B joint venture (fully funded forward takeout structure), Lancium
+      Clean Campus, Abilene TX, 206MW, 998,000 sq ft, two buildings, 100% long-term
+      leased to a Fortune 100 hyperscale tenant
+    as_of: '2024-10-15'
+- id: crusoe/2025-abilene-phase2-financing
+  kind: round
+  company: Crusoe Energy Systems (Abilene, TX campus JV — phase 2 expansion)
+  date: '2025-05-21'
+  round_type: real-estate/infrastructure JV debt+equity (phase 2 expansion, unitemized
+    split)
+  total_amount_usd: 11600000000
+  lead: blue-owl-capital/capital
+  note: NEW this pass. Same two JV partners as the 2024 formation round, expanding
+    the Abilene campus from 2 to 8 buildings (1.2GW total). The $11.6B figure
+    is corroborated across multiple trade-press outlets (RCR Wireless, DataCenterDynamics,
+    Yahoo Finance, Nasdaq) but does not appear verbatim on Crusoe's own Globenewswire
+    release, which confirms only the $15B cumulative JV total and the 1.2GW/8-building
+    scope — recorded as measured with that caveat stated on its face, per R-17.
+  sources:
+  - label: RCR Wireless (trade press, corroborated by DCD/Yahoo Finance/Nasdaq)
+    url: https://www.rcrwireless.com/20250522/ai-ml/crusoe-openai-stargate
+    figure: $11.6B additional debt+equity financing (unitemized), expanding Abilene
+      from 2 to 8 buildings, 1.2GW total, brings cumulative JV capital to ~$15B
+    as_of: '2025-05-22'
+  - label: Crusoe Energy Systems / Globenewswire company release
+    url: https://www.globenewswire.com/news-release/2025/05/21/3085765/
+    url_note: URL retrieved incomplete (truncated slug) during this pass's research
+      — kept as a paper trail, not re-verified as a live link; the $15B/1.2GW
+      figures it's cited for are corroborated independently by the RCR Wireless
+      source above.
+    figure: '"Second phase of a $15 billion joint venture," 1.2GW total capacity
+      — does not itemize the $11.6B phase-2-specific figure on the page'
+    as_of: '2025-05-21'
+
+# ============================================================
+# Investor / financier nodes (Ruling 1 retrofit + Ruling 2 new rounds +
+# datacenter-construction financiers). MINIMAL nodes per the ruling —
+# entity + activity (`capital`) only, populated from what the round's
+# own citation already names, no independent per-investor research
+# this pass. Individuals use person-slug ids, not ext/*.
+# ============================================================
+- id: lightspeed/capital
+  entity: Lightspeed Venture Partners
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round]
+- id: redpoint/capital
+  entity: Redpoint Ventures
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round]
+- id: index-ventures/capital
+  entity: Index Ventures
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round, mistral/2025-series-c-round]
+- id: xavier-niel/capital
+  entity: Xavier Niel
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round]
+- id: bpifrance/capital
+  entity: Bpifrance
+  activity: capital (sovereign/strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round, mistral/2025-series-c-round]
+- id: eric-schmidt/capital
+  entity: Eric Schmidt
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2023-seed-round, inflection/2023-round]
+- id: microsoft/capital
+  entity: Microsoft
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: First Microsoft node instantiated in this map — Microsoft is a listed
+    cut:core-buildout member but had no node until this pass's Inflection round-node
+    retrofit surfaced it as a named investor.
+  instantiated_by: [inflection/2023-round]
+- id: nvidia/capital
+  entity: Nvidia
+  activity: capital (strategic/VC investment facet — distinct from nvidia/chip-design,
+    which sells)
+  coverage_state: measured
+  note: Nvidia appears as a named investor across an unusually large share of
+    this pass's new rounds (Inflection, Crusoe, World Labs, Coherent, Lumentum,
+    Mistral Series C) while simultaneously being a core-buildout chip-line member
+    — the same worth-Ben's-eye pattern cut-core-buildout.yaml already flags for
+    Amazon/Google, now sharper and broader. See that filter's notes.
+  instantiated_by: [inflection/2023-round, crusoe/2024-series-d-round, world-labs/2024-seed-round,
+    mistral/2025-series-c-round]
+- id: reid-hoffman/capital
+  entity: Reid Hoffman
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [inflection/2023-round]
+- id: bill-gates/capital
+  entity: Bill Gates
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [inflection/2023-round]
+- id: psp-investments/capital
+  entity: PSP Investments
+  activity: capital (institutional investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round, cohere/2025-round]
+- id: cisco/capital
+  entity: Cisco
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round]
+- id: fujitsu/capital
+  entity: Fujitsu
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round]
+- id: amd/capital
+  entity: AMD (AMD Ventures)
+  activity: capital (corporate VC facet — distinct from amd/chip-design, which
+    sells)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round, cohere/2025-round]
+- id: edc/capital
+  entity: Export Development Canada
+  activity: capital (sovereign/strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round]
+- id: radical-ventures/capital
+  entity: Radical Ventures
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2025-round, world-labs/2024-seed-round]
+- id: inovia/capital
+  entity: Inovia Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2025-round]
+- id: salesforce-ventures/capital
+  entity: Salesforce Ventures
+  activity: capital (corporate VC facet)
+  coverage_state: measured
+  instantiated_by: [cohere/2024-series-d-round, cohere/2025-round, together-ai/2025-series-b-round]
+- id: asml/capital
+  entity: ASML
+  activity: capital (strategic investment facet — distinct from any future ASML
+    equipment-sales node, not yet instantiated)
+  coverage_state: measured
+  note: Contributed €1.3B of Mistral's €1.7B Series C directly — the largest
+    single named check in any round this pass.
+  instantiated_by: [mistral/2025-series-c-round]
+- id: dst-global/capital
+  entity: DST Global
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2025-series-c-round]
+- id: a16z/capital
+  entity: Andreessen Horowitz
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2025-series-c-round, world-labs/2024-seed-round]
+- id: general-catalyst/capital
+  entity: General Catalyst
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [mistral/2025-series-c-round, together-ai/2025-series-b-round]
+- id: founders-fund/capital
+  entity: Founders Fund
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: fidelity/capital
+  entity: Fidelity
+  activity: capital (institutional investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: long-journey-ventures/capital
+  entity: Long Journey Ventures
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: mubadala/capital
+  entity: Mubadala
+  activity: capital (sovereign wealth investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: ribbit-capital/capital
+  entity: Ribbit Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: valor-equity-partners/capital
+  entity: Valor Equity Partners
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-series-d-round]
+- id: nea/capital
+  entity: New Enterprise Associates (NEA)
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [world-labs/2024-seed-round, perplexity/2024-series-b-round]
+- id: marc-benioff/capital
+  entity: Marc Benioff
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [world-labs/2024-seed-round]
+- id: prosperity7/capital
+  entity: Prosperity7 Ventures
+  activity: capital (sovereign/strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: damac-capital/capital
+  entity: DAMAC Capital
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: kleiner-perkins/capital
+  entity: Kleiner Perkins
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: march-capital/capital
+  entity: March Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: emergence-capital/capital
+  entity: Emergence Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: lux-capital/capital
+  entity: Lux Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: se-ventures/capital
+  entity: SE Ventures
+  activity: capital (corporate VC facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: greycroft/capital
+  entity: Greycroft
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: coatue/capital
+  entity: Coatue
+  activity: capital (VC/growth investment facet)
+  coverage_state: measured
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: accel/capital
+  entity: Accel
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [nebius/2024-strategic-financing-round]
+- id: orbis-investments/capital
+  entity: Orbis Investments
+  activity: capital (institutional investment facet)
+  coverage_state: measured
+  instantiated_by: [nebius/2024-strategic-financing-round]
+- id: usit/capital
+  entity: US Innovative Technology Fund (USIT)
+  activity: capital (institutional investment facet)
+  coverage_state: measured
+  instantiated_by: [lambda/2024-series-c-round]
+- id: b-capital/capital
+  entity: B Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [lambda/2024-series-c-round]
+- id: sk-telecom/capital
+  entity: SK Telecom
+  activity: capital (strategic investment facet)
+  coverage_state: measured
+  instantiated_by: [lambda/2024-series-c-round]
+- id: t-rowe-price/capital
+  entity: T. Rowe Price Associates
+  activity: capital (institutional investment facet)
+  coverage_state: measured
+  instantiated_by: [lambda/2024-series-c-round]
+- id: ivp/capital
+  entity: IVP
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: jeff-bezos/capital
+  entity: Jeff Bezos
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: daniel-gross/capital
+  entity: Daniel Gross
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: tobi-lutke/capital
+  entity: Tobi Lütke
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: elad-gil/capital
+  entity: Elad Gil
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: nat-friedman/capital
+  entity: Nat Friedman
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: naval-ravikant/capital
+  entity: Naval Ravikant
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: andrej-karpathy/capital
+  entity: Andrej Karpathy
+  activity: capital (individual angel investment facet)
+  coverage_state: measured
+  instantiated_by: [perplexity/2024-series-b-round]
+- id: thrive-capital/capital
+  entity: Thrive Capital
+  activity: capital (VC investment facet)
+  coverage_state: measured
+  instantiated_by: [anysphere/2024-series-b-round]
+- id: blue-owl-capital/capital
+  entity: Blue Owl Capital (Real Estate platform)
+  activity: capital (institutional/real-estate investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-abilene-jv-financing, crusoe/2025-abilene-phase2-financing]
+- id: primary-digital-infrastructure/capital
+  entity: Primary Digital Infrastructure
+  activity: capital (institutional/real-estate investment facet)
+  coverage_state: measured
+  instantiated_by: [crusoe/2024-abilene-jv-financing, crusoe/2025-abilene-phase2-financing]
+- id: jpmorgan-chase/capital
+  entity: JPMorgan Chase
+  activity: capital (lending facet)
+  coverage_state: measured
+  note: Debt syndicates/loans (as opposed to equity financing rounds) are recorded
+    as direct edges.yaml flows, not round-node memberships — a single named
+    lender node like this one, with syndicate co-lenders noted in the edge's
+    coverage_note rather than modeled as separate is_member_of edges. Judgment
+    call, flagged for Ben; see edges.yaml header.
+  instantiated_by: [jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan]
+
+# ============================================================
+# Power generation + grid interconnection nodes (Tier-A, 2026-08-10
+# second pass — previously uncovered activities per q1 skeleton sec 5).
+# ============================================================
+- id: amazon/ai-compute-procurement
+  entity: Amazon
+  activity: AI compute/power procurement (buyer side — distinct facet from amazon/capital,
+    which finances Anthropic, and from any Amazon datacenter-operation node)
+  coverage_state: measured
+  instantiated_by: [amazon-ai-compute-procurement--talen-energy-capital--2024-cumulus-purchase,
+    amazon-ai-compute-procurement--talen-energy-power-generation--2025-susquehanna-ppa]
+- id: talen-energy/capital
+  entity: Talen Energy
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [amazon-ai-compute-procurement--talen-energy-capital--2024-cumulus-purchase]
+- id: talen-energy/power-generation
+  entity: Talen Energy
+  activity: power generation (nuclear — Susquehanna plant)
+  coverage_state: measured
+  instantiated_by: [amazon-ai-compute-procurement--talen-energy-power-generation--2025-susquehanna-ppa]
+- id: microsoft/ai-compute-procurement
+  entity: Microsoft
+  activity: AI compute/power procurement (buyer side)
+  coverage_state: measured
+  instantiated_by: [microsoft-ai-compute-procurement--constellation-energy-power-generation--2024-tmi-ppa]
+- id: constellation-energy/power-generation
+  entity: Constellation Energy
+  activity: power generation (nuclear — Crane Clean Energy Center / Three Mile
+    Island Unit 1)
+  coverage_state: measured
+  instantiated_by: [microsoft-ai-compute-procurement--constellation-energy-power-generation--2024-tmi-ppa]
+- id: crusoe/capital
+  entity: Crusoe Energy Systems
+  activity: capital (treasury/financing facet — distinct from crusoe/datacenter-construction,
+    which receives)
+  coverage_state: measured
+  instantiated_by: [crusoe-capital--ge-vernova-turbine-manufacturing--2025-turbine-order]
+- id: ge-vernova/turbine-manufacturing
+  entity: GE Vernova
+  activity: gas turbine manufacturing (AI-datacenter-dedicated aeroderivative units)
+  coverage_state: measured
+  instantiated_by: [crusoe-capital--ge-vernova-turbine-manufacturing--2025-turbine-order]
+- id: sb-energy/datacenter-operation
+  entity: SB Energy
+  activity: datacenter operation (buyer side — Piketon, OH campus developer)
+  coverage_state: measured
+  instantiated_by: [sb-energy-datacenter-operation--aep-ohio-grid-interconnection--2025-piketon-line]
+- id: aep-ohio/grid-interconnection
+  entity: AEP Ohio (American Electric Power)
+  activity: grid interconnection / transmission infrastructure
+  coverage_state: measured
+  instantiated_by: [sb-energy-datacenter-operation--aep-ohio-grid-interconnection--2025-piketon-line]
+- id: meta/datacenter-operation
+  entity: Meta
+  activity: datacenter operation (buyer side)
+  coverage_state: measured
+  note: First Meta node instantiated in this map — Meta is a listed cut:core-buildout
+    member but had no node until this pass's grid-interconnection edge.
+  instantiated_by: [meta-datacenter-operation--entergy-louisiana-grid-interconnection--2025-smalling-substation]
+- id: entergy-louisiana/grid-interconnection
+  entity: Entergy Louisiana
+  activity: grid interconnection / transmission infrastructure
+  coverage_state: measured
+  instantiated_by: [meta-datacenter-operation--entergy-louisiana-grid-interconnection--2025-smalling-substation]
+
+# ============================================================
+# Semicap + memory/HBM nodes (Tier-A, 2026-08-10 second pass).
+# ============================================================
+- id: sk-hynix/capital
+  entity: SK hynix
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [sk-hynix-capital--sk-hynix-memory-fab-construction--2026-yongin-cheongju]
+- id: sk-hynix/memory-fab-construction
+  entity: SK hynix
+  activity: memory fab construction (DRAM/HBM)
+  coverage_state: measured
+  instantiated_by: [sk-hynix-capital--sk-hynix-memory-fab-construction--2026-yongin-cheongju]
+- id: micron/capital
+  entity: Micron Technology
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [micron-capital--micron-hbm-packaging-construction--2025-singapore,
+    micron-capital--micron-memory-fab-construction--2022-idaho]
+- id: micron/hbm-packaging-construction
+  entity: Micron Technology
+  activity: HBM advanced-packaging facility construction
+  coverage_state: measured
+  instantiated_by: [micron-capital--micron-hbm-packaging-construction--2025-singapore]
+- id: micron/memory-fab-construction
+  entity: Micron Technology
+  activity: memory fab construction (leading-edge DRAM)
+  coverage_state: measured
+  instantiated_by: [micron-capital--micron-memory-fab-construction--2022-idaho]
+- id: samsung/capital
+  entity: Samsung Electronics
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [samsung-capital--samsung-foundry-construction--2021-taylor-tx]
+- id: samsung/foundry-construction
+  entity: Samsung Electronics
+  activity: foundry construction (fab capex)
+  coverage_state: aggregated
+  note: Same shared-fab caveat pattern as tsmc/foundry-construction — Taylor,
+    TX serves mobile/5G/HPC/AI customers broadly, no AI-attributable share published
+    (F8).
+  instantiated_by: [samsung-capital--samsung-foundry-construction--2021-taylor-tx]
+- id: ext/us-government
+  entity: ext (population — US federal government, as a capital-provider counterparty)
+  activity: subsidy/grant capital provision
+  coverage_state: measured
+  note: Borrows the ext/* population-node convention already used for unnamed
+    capital-provider counterparties, extended here to a named-but-institutional
+    (not "unnamed") government counterparty — a government grant doesn't fit
+    any existing q1 edge-type value cleanly, so this pass adds "grant / subsidy"
+    as a new edge type (see edges.yaml header); flagged for Ben's review, not
+    a ruling.
+  instantiated_by: [ext-us-government--intel-foundry-construction--2024-chips-act]
+- id: intel/foundry-construction
+  entity: Intel
+  activity: foundry construction (fab capex — Foundry/IFS division)
+  coverage_state: aggregated
+  instantiated_by: [ext-us-government--intel-foundry-construction--2024-chips-act]
+
+# ============================================================
+# Advanced packaging + networking nodes (Tier-A, 2026-08-10 second pass).
+# ============================================================
+- id: amkor/capital
+  entity: Amkor Technology
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [amkor-capital--amkor-packaging-construction--2025-arizona]
+- id: amkor/packaging-construction
+  entity: Amkor Technology
+  activity: advanced packaging/test facility construction
+  coverage_state: measured
+  instantiated_by: [amkor-capital--amkor-packaging-construction--2025-arizona]
+- id: amkor/packaging-assembly
+  entity: Amkor Technology
+  activity: advanced packaging/test services (seller side)
+  coverage_state: measured
+  instantiated_by: [nvidia-ai-compute-procurement--amkor-packaging-assembly--2026-supply-agreement]
+- id: nvidia/ai-compute-procurement
+  entity: Nvidia
+  activity: AI-infrastructure component procurement (buyer side — Nvidia as
+    purchaser of packaging/optics capacity, distinct from nvidia/chip-design,
+    which sells, and nvidia/capital, which invests)
+  coverage_state: measured
+  instantiated_by: [nvidia-ai-compute-procurement--amkor-packaging-assembly--2026-supply-agreement,
+    nvidia-ai-compute-procurement--coherent-optical-components--2026-purchase-commitment,
+    nvidia-ai-compute-procurement--lumentum-optical-components--2026-purchase-commitment]
+- id: tsmc/advanced-packaging-construction
+  entity: TSMC
+  activity: advanced packaging construction (CoWoS — distinct facet from tsmc/foundry-construction)
+  coverage_state: aggregated
+  note: TSMC's FY2026 capex guidance buckets "advanced packaging, testing, mask
+    making, and others" together at 10-20% of total capex — no standalone CoWoS-only
+    figure is disclosed; this node's edge records a derived range, not a company-stated
+    single figure.
+  instantiated_by: [tsmc-capital--tsmc-advanced-packaging-construction--2026-capex-share]
+- id: ase/capital
+  entity: ASE Technology
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [ase-capital--ase-packaging-construction--2026-capex]
+- id: ase/packaging-construction
+  entity: ASE Technology
+  activity: advanced packaging/test capacity construction (LEAP program)
+  coverage_state: measured
+  instantiated_by: [ase-capital--ase-packaging-construction--2026-capex]
+- id: coherent/capital
+  entity: Coherent Corp.
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [nvidia-capital--coherent-capital--2026-equity]
+- id: coherent/optical-components
+  entity: Coherent Corp.
+  activity: optical networking components (seller side — lasers, transceivers)
+  coverage_state: measured
+  instantiated_by: [nvidia-ai-compute-procurement--coherent-optical-components--2026-purchase-commitment]
+- id: lumentum/capital
+  entity: Lumentum Holdings
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [nvidia-capital--lumentum-capital--2026-equity]
+- id: lumentum/optical-components
+  entity: Lumentum Holdings
+  activity: optical networking components (seller side — lasers, transceivers)
+  coverage_state: measured
+  instantiated_by: [nvidia-ai-compute-procurement--lumentum-optical-components--2026-purchase-commitment]
+
+# ============================================================
+# Datacenter construction nodes (Tier-A, as its own purchase category
+# distinct from entity-level capex edges already recorded — 2026-08-10
+# second pass).
+# ============================================================
+- id: crusoe/datacenter-construction
+  entity: Crusoe Energy Systems
+  activity: datacenter construction (Abilene, TX campus — builder/operator side)
+  coverage_state: measured
+  instantiated_by: [crusoe-2024-abilene-jv-financing--crusoe-datacenter-construction--2024-jv-formation,
+    jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan,
+    crusoe-2025-abilene-phase2-financing--crusoe-datacenter-construction--2025-phase2]
+- id: core-scientific/capital
+  entity: Core Scientific
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [core-scientific-capital--core-scientific-datacenter-construction--2024-denton-investment]
+- id: core-scientific/datacenter-construction
+  entity: Core Scientific
+  activity: datacenter construction (Denton, TX site — propco/operator side)
+  coverage_state: measured
+  note: See research/q3-datacenter-census/attribution.yaml for the facility-level
+    propco-lease structure (Core Scientific propco/operator, CoreWeave lessee,
+    OpenAI sub-tenant) behind this node.
+  instantiated_by: [core-scientific-capital--core-scientific-datacenter-construction--2024-denton-investment,
+    coreweave-datacenter-operation--core-scientific-datacenter-construction--2025-denton-expansion]
+- id: coreweave/datacenter-operation
+  entity: CoreWeave
+  activity: datacenter operation (buyer/tenant side — distinct facet from coreweave/capital,
+    which raises)
+  coverage_state: measured
+  instantiated_by: [coreweave-datacenter-operation--core-scientific-datacenter-construction--2025-denton-expansion]
+- id: vantage-data-centers/capital
+  entity: Vantage Data Centers
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc]
+- id: vantage-data-centers/datacenter-construction
+  entity: Vantage Data Centers
+  activity: datacenter construction (developer side)
+  coverage_state: measured
+  instantiated_by: [vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc]
+- id: turner-construction/epc-services
+  entity: Turner Construction Company
+  activity: EPC/general-contractor services (seller side)
+  coverage_state: measured
+  instantiated_by: [vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc]
+
+# ============================================================
+# Receiver capital nodes for the Ruling 2 new-round tranche (the
+# companies raising, on the receiving end of each round's money-flow
+# edge in edges.yaml).
+# ============================================================
+- id: world-labs/capital
+  entity: World Labs
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [world-labs-2024-seed-round--world-labs-capital--2024-seed]
+- id: together-ai/capital
+  entity: Together AI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [together-ai-2025-series-b-round--together-ai-capital--2025-series-b]
+- id: nebius/capital
+  entity: Nebius
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [nebius-2024-strategic-financing-round--nebius-capital--2024-strategic]
+- id: lambda/capital
+  entity: Lambda
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [lambda-2024-series-c-round--lambda-capital--2024-series-c]
+- id: perplexity/capital
+  entity: Perplexity AI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [perplexity-2024-series-b-round--perplexity-capital--2024-series-b]
+- id: anysphere/capital
+  entity: Anysphere (Cursor)
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  instantiated_by: [anysphere-2024-series-b-round--anysphere-capital--2024-series-b]
+
+# ============================================================
+# Undisclosed-participant stand-in nodes (Ruling 1) — one per round
+# whose source names no investors at all, or names some and waves at
+# "and other investors" for the rest. Never a roster of fabricated
+# names; always exactly one edge per round capturing "there were
+# others" without inventing who.
+# ============================================================
+- id: ext/undisclosed-investors--xai-2023-formd-round
+  entity: ext (population)
+  activity: private equity capital provision
+  coverage_state: aggregated
+  note: SEC Form D does not name individual buyers — same underlying fact the
+    first pass's ext/investor-syndicate--xai-2023 placeholder recorded, now
+    attached to the round node instead.
+  instantiated_by: [xai/2023-formd-round]
+- id: ext/undisclosed-investors--together-ai-2025-series-b-round
+  entity: ext (population)
+  activity: VC/strategic capital provision
+  coverage_state: aggregated
+  note: Together AI's own announcement lists eleven named investors "and more"
+    without naming the rest.
+  instantiated_by: [together-ai/2025-series-b-round]
+- id: ext/undisclosed-investors--anysphere-2024-series-b-round
+  entity: ext (population)
+  activity: VC capital provision
+  coverage_state: aggregated
+  note: Crunchbase News names only Thrive Capital as lead; no other participant
+    is itemized in the fetched article, though the round is widely reported
+    as multi-investor.
+  instantiated_by: [anysphere/2024-series-b-round]

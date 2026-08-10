@@ -32,19 +32,37 @@ here: it lives in `INBOX/`, and this directory follows it exactly.
   the split Epoch's own schema does not carry) and `control-cuts.yaml`
   (the taxonomy those records use).
 
-## What's actually in here as of this build (2026-08-10)
+## What's actually in here as of this build (2026-08-10, two passes)
 
-A first Tier-A tranche, not a complete pass — coverage is asymptotic by
-design (R-19, no done state). Concretely: 17 q1 flow edges (mostly
-re-expressing the step-0 audit's 16 VERIFIED-LIVE records as proper flow
-edges, plus one high-confidence PARTIAL and two genuinely new flows found
-and independently fetch-verified this session — the Anthropic-xAI and
-Google-xAI Colossus capacity leases, neither in the original 56-record
-shelf); 24 q1 nodes; one q1 consolidation filter (`cut:core-buildout` v1);
-and 28 q3 facility attribution records (the top facilities by current MW
-in Epoch's census, three of them real owner/operator/propco/tenant
-corrections to Epoch's own single-field "Owner" tag — Abilene, Denton,
-Fairwater Atlanta — found by tracing Epoch's own citations further).
+Coverage is asymptotic by design (R-19, no done state) — this is not a
+complete pass at any point.
+
+**First pass:** 17 q1 flow edges (mostly re-expressing the step-0 audit's
+16 VERIFIED-LIVE records as proper flow edges, plus one high-confidence
+PARTIAL and two genuinely new flows found and independently
+fetch-verified — the Anthropic-xAI and Google-xAI Colossus capacity
+leases, neither in the original 56-record shelf); 24 q1 nodes; one q1
+consolidation filter (`cut:core-buildout` v1); and 28 q3 facility
+attribution records (the top facilities by current MW in Epoch's census,
+three of them real owner/operator/propco/tenant corrections to Epoch's
+own single-field "Owner" tag — Abilene, Denton, Fairwater Atlanta — found
+by tracing Epoch's own citations further).
+
+**Second pass** (same day, Ben's rulings applied): introduced the
+**round-node pattern** (Ruling 1) — a new node kind for financing EVENTS
+with 2+ investors, replacing the first pass's `ext/investor-syndicate--*`
+placeholder — plus a new `memberships.yaml` file for the `is_member_of`
+edges it requires; **lowered the materiality floor** from ~$1B to ~$100M
+with a signal-biased override (Ruling 2) and added 8 new financing rounds
+under it, several well under $1B; and built out Tier-A coverage for six
+previously-uncovered activities (power generation, grid interconnection,
+semicap beyond TSMC, memory/HBM, advanced packaging, networking, and
+datacenter construction as its own purchase category). Net: **edges.yaml
+now carries 44 edges** (17 retrofitted/unchanged + 27 new), **nodes.yaml
+143 nodes**, a new **memberships.yaml with 81 `is_member_of` edges**, and
+`cut:core-buildout` is now **v2** with roughly triple the original
+roster. Full build report (scoping estimate, threshold rationale, open
+judgment calls) handed to Ben alongside this pass.
 
 ## Discipline (inherited from this repo's root CLAUDE.md, restated here
 because this directory is new)

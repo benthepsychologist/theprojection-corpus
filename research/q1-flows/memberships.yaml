@@ -1,0 +1,580 @@
+# research/q1-flows/memberships.yaml — is_member_of edges (Ruling 1,
+# 2026-08-10 second pass): the round-node membership layer.
+#
+# WHY THIS IS A SEPARATE FILE, NOT MORE ROWS IN edges.yaml: Ruling 1 is
+# explicit that the round node and its membership edges are "new
+# structure that sits alongside" the existing money-flow edge — the one
+# edge per round that fits edges.yaml's from/to/value/observation schema
+# is the round -> receiver capital flow (recorded in edges.yaml itself).
+# A membership edge carries no dollar value of its own in the general
+# case (per-investor check sizes are almost never individually
+# disclosed) and no observation stack — it is a roster fact, not a flow
+# — so forcing it into edges.yaml's schema would mean padding every row
+# with empty observation fields. Keeping memberships in their own file
+# with their own minimal schema keeps both files honest about what kind
+# of claim each one is.
+#
+# Schema, one row per is_member_of edge:
+#   id            — <investor-node-id-slug>--is-member-of--<round-node-id-slug>
+#   from          — the investor's own capital node id (nodes.yaml)
+#   to            — the round node id (nodes.yaml, kind: round)
+#   role          — lead | participant (exactly one `lead` per round where
+#                   a source discloses a single lead; see the round node's
+#                   own `lead` field and note for rounds where no single
+#                   lead was named — those rounds carry zero `lead` edges)
+#   amount_usd    — nullable; filled ONLY when a source discloses that
+#                   specific investor's individual check size (rare —
+#                   ASML's €1.3B-of-€1.7B contribution to Mistral's
+#                   Series C is the one case this pass), null otherwise
+#   source_ref    — points back at the round node's own `sources` list
+#                   in nodes.yaml rather than re-stating the citation —
+#                   the citation lives once, at the round, since it is
+#                   almost always one article naming the whole investor
+#                   list at once, not per-investor sourcing
+#
+# UNDISCLOSED PARTICIPANTS (Ruling 1): where a source says "and other
+# investors" (or, for xAI's SEC Form D, names no investors at all), ONE
+# is_member_of edge from a generic ext/undisclosed-investors--<round-id>
+# stand-in node carries that fact — never fabricated names, never a
+# silently dropped "and more."
+#
+# DEBT SYNDICATES ARE NOT MODELED HERE (judgment call, flagged for Ben,
+# not a ruling): bank-loan syndicates (e.g. the Vantage/MUFG construction
+# loan) are recorded as direct edges.yaml flows from the lead lender's
+# capital node, with co-lenders named in that edge's coverage_note —
+# not as is_member_of edges into a round node. Rationale: Ruling 1's own
+# language ("named investor," "role: lead where a lead is disclosed") is
+# written for equity-style financing rounds; a creditor taking no
+# ownership stake in exchange for a loan isn't naturally a "member" of
+# a round in the same sense a co-investor is. This reading is NOT
+# obviously the only correct one — flagging it explicitly rather than
+# assuming it's settled.
+#
+# YAML validated via yaml.safe_load on every write (CLAUDE.md guardrail).
+
+schema_ref: "INBOX/2026-08-03-q1-skeleton-v3.md (Ruling 1, this pass's build report)"
+built: "2026-08-10"
+
+memberships:
+# --- xai/2023-formd-round --- (no named investors at all; single stand-in)
+- id: ext-undisclosed-investors-xai-2023-formd-round--is-member-of--xai-2023-formd-round
+  from: ext/undisclosed-investors--xai-2023-formd-round
+  to: xai/2023-formd-round
+  role: participant
+  amount_usd: null
+  source_ref: xai/2023-formd-round#sources[0]
+
+# --- mistral/2023-seed-round ---
+- id: lightspeed-capital--is-member-of--mistral-2023-seed-round
+  from: lightspeed/capital
+  to: mistral/2023-seed-round
+  role: lead
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+- id: redpoint-capital--is-member-of--mistral-2023-seed-round
+  from: redpoint/capital
+  to: mistral/2023-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+- id: index-ventures-capital--is-member-of--mistral-2023-seed-round
+  from: index-ventures/capital
+  to: mistral/2023-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+- id: xavier-niel-capital--is-member-of--mistral-2023-seed-round
+  from: xavier-niel/capital
+  to: mistral/2023-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+- id: bpifrance-capital--is-member-of--mistral-2023-seed-round
+  from: bpifrance/capital
+  to: mistral/2023-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+- id: eric-schmidt-capital--is-member-of--mistral-2023-seed-round
+  from: eric-schmidt/capital
+  to: mistral/2023-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2023-seed-round#sources[0]
+
+# --- inflection/2023-round --- (no single lead disclosed; all five participant)
+- id: microsoft-capital--is-member-of--inflection-2023-round
+  from: microsoft/capital
+  to: inflection/2023-round
+  role: participant
+  amount_usd: null
+  source_ref: inflection/2023-round#sources[0]
+- id: nvidia-capital--is-member-of--inflection-2023-round
+  from: nvidia/capital
+  to: inflection/2023-round
+  role: participant
+  amount_usd: null
+  source_ref: inflection/2023-round#sources[0]
+- id: reid-hoffman-capital--is-member-of--inflection-2023-round
+  from: reid-hoffman/capital
+  to: inflection/2023-round
+  role: participant
+  amount_usd: null
+  source_ref: inflection/2023-round#sources[0]
+- id: bill-gates-capital--is-member-of--inflection-2023-round
+  from: bill-gates/capital
+  to: inflection/2023-round
+  role: participant
+  amount_usd: null
+  source_ref: inflection/2023-round#sources[0]
+- id: eric-schmidt-capital--is-member-of--inflection-2023-round
+  from: eric-schmidt/capital
+  to: inflection/2023-round
+  role: participant
+  amount_usd: null
+  source_ref: inflection/2023-round#sources[0]
+
+# --- cohere/2024-series-d-round ---
+- id: psp-investments-capital--is-member-of--cohere-2024-series-d-round
+  from: psp-investments/capital
+  to: cohere/2024-series-d-round
+  role: lead
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: cisco-capital--is-member-of--cohere-2024-series-d-round
+  from: cisco/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: fujitsu-capital--is-member-of--cohere-2024-series-d-round
+  from: fujitsu/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: amd-capital--is-member-of--cohere-2024-series-d-round
+  from: amd/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: edc-capital--is-member-of--cohere-2024-series-d-round
+  from: edc/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: nvidia-capital--is-member-of--cohere-2024-series-d-round
+  from: nvidia/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+- id: salesforce-ventures-capital--is-member-of--cohere-2024-series-d-round
+  from: salesforce-ventures/capital
+  to: cohere/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2024-series-d-round#sources[0]
+
+# --- cohere/2025-round --- (Radical Ventures carries role:lead per the
+# single-lead-field judgment call noted on the round node; Inovia is a
+# co-lead per the source, recorded as participant)
+- id: radical-ventures-capital--is-member-of--cohere-2025-round
+  from: radical-ventures/capital
+  to: cohere/2025-round
+  role: lead
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+- id: inovia-capital--is-member-of--cohere-2025-round
+  from: inovia/capital
+  to: cohere/2025-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+- id: amd-capital--is-member-of--cohere-2025-round
+  from: amd/capital
+  to: cohere/2025-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+- id: nvidia-capital--is-member-of--cohere-2025-round
+  from: nvidia/capital
+  to: cohere/2025-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+- id: psp-investments-capital--is-member-of--cohere-2025-round
+  from: psp-investments/capital
+  to: cohere/2025-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+- id: salesforce-ventures-capital--is-member-of--cohere-2025-round
+  from: salesforce-ventures/capital
+  to: cohere/2025-round
+  role: participant
+  amount_usd: null
+  source_ref: cohere/2025-round#sources[0]
+
+# --- mistral/2025-series-c-round ---
+- id: asml-capital--is-member-of--mistral-2025-series-c-round
+  from: asml/capital
+  to: mistral/2025-series-c-round
+  role: lead
+  amount_usd: 1300000000
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: dst-global-capital--is-member-of--mistral-2025-series-c-round
+  from: dst-global/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: a16z-capital--is-member-of--mistral-2025-series-c-round
+  from: a16z/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: bpifrance-capital--is-member-of--mistral-2025-series-c-round
+  from: bpifrance/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: general-catalyst-capital--is-member-of--mistral-2025-series-c-round
+  from: general-catalyst/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: index-ventures-capital--is-member-of--mistral-2025-series-c-round
+  from: index-ventures/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: lightspeed-capital--is-member-of--mistral-2025-series-c-round
+  from: lightspeed/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+- id: nvidia-capital--is-member-of--mistral-2025-series-c-round
+  from: nvidia/capital
+  to: mistral/2025-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: mistral/2025-series-c-round#sources[0]
+
+# --- crusoe/2024-series-d-round ---
+- id: founders-fund-capital--is-member-of--crusoe-2024-series-d-round
+  from: founders-fund/capital
+  to: crusoe/2024-series-d-round
+  role: lead
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: fidelity-capital--is-member-of--crusoe-2024-series-d-round
+  from: fidelity/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: long-journey-ventures-capital--is-member-of--crusoe-2024-series-d-round
+  from: long-journey-ventures/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: mubadala-capital--is-member-of--crusoe-2024-series-d-round
+  from: mubadala/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: nvidia-capital--is-member-of--crusoe-2024-series-d-round
+  from: nvidia/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: ribbit-capital-capital--is-member-of--crusoe-2024-series-d-round
+  from: ribbit-capital/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+- id: valor-equity-partners-capital--is-member-of--crusoe-2024-series-d-round
+  from: valor-equity-partners/capital
+  to: crusoe/2024-series-d-round
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-series-d-round#sources[0]
+
+# --- world-labs/2024-seed-round --- (no single lead disclosed)
+- id: a16z-capital--is-member-of--world-labs-2024-seed-round
+  from: a16z/capital
+  to: world-labs/2024-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: world-labs/2024-seed-round#sources[0]
+- id: nea-capital--is-member-of--world-labs-2024-seed-round
+  from: nea/capital
+  to: world-labs/2024-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: world-labs/2024-seed-round#sources[0]
+- id: radical-ventures-capital--is-member-of--world-labs-2024-seed-round
+  from: radical-ventures/capital
+  to: world-labs/2024-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: world-labs/2024-seed-round#sources[0]
+- id: marc-benioff-capital--is-member-of--world-labs-2024-seed-round
+  from: marc-benioff/capital
+  to: world-labs/2024-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: world-labs/2024-seed-round#sources[0]
+- id: nvidia-capital--is-member-of--world-labs-2024-seed-round
+  from: nvidia/capital
+  to: world-labs/2024-seed-round
+  role: participant
+  amount_usd: null
+  source_ref: world-labs/2024-seed-round#sources[0]
+
+# --- together-ai/2025-series-b-round --- (General Catalyst carries
+# role:lead per the single-lead-field judgment call; Prosperity7 is a
+# co-lead per the source, recorded as participant; "and more" beyond
+# the named list is the undisclosed stand-in)
+- id: general-catalyst-capital--is-member-of--together-ai-2025-series-b-round
+  from: general-catalyst/capital
+  to: together-ai/2025-series-b-round
+  role: lead
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: prosperity7-capital--is-member-of--together-ai-2025-series-b-round
+  from: prosperity7/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: salesforce-ventures-capital--is-member-of--together-ai-2025-series-b-round
+  from: salesforce-ventures/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: damac-capital-capital--is-member-of--together-ai-2025-series-b-round
+  from: damac-capital/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: nvidia-capital--is-member-of--together-ai-2025-series-b-round
+  from: nvidia/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: kleiner-perkins-capital--is-member-of--together-ai-2025-series-b-round
+  from: kleiner-perkins/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: march-capital-capital--is-member-of--together-ai-2025-series-b-round
+  from: march-capital/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: emergence-capital-capital--is-member-of--together-ai-2025-series-b-round
+  from: emergence-capital/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: lux-capital-capital--is-member-of--together-ai-2025-series-b-round
+  from: lux-capital/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: se-ventures-capital--is-member-of--together-ai-2025-series-b-round
+  from: se-ventures/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: greycroft-capital--is-member-of--together-ai-2025-series-b-round
+  from: greycroft/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: coatue-capital--is-member-of--together-ai-2025-series-b-round
+  from: coatue/capital
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+- id: ext-undisclosed-investors-together-ai-2025-series-b-round--is-member-of--together-ai-2025-series-b-round
+  from: ext/undisclosed-investors--together-ai-2025-series-b-round
+  to: together-ai/2025-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: together-ai/2025-series-b-round#sources[0]
+
+# --- nebius/2024-strategic-financing-round --- (no lead disclosed)
+- id: accel-capital--is-member-of--nebius-2024-strategic-financing-round
+  from: accel/capital
+  to: nebius/2024-strategic-financing-round
+  role: participant
+  amount_usd: null
+  source_ref: nebius/2024-strategic-financing-round#sources[0]
+- id: nvidia-capital--is-member-of--nebius-2024-strategic-financing-round
+  from: nvidia/capital
+  to: nebius/2024-strategic-financing-round
+  role: participant
+  amount_usd: null
+  source_ref: nebius/2024-strategic-financing-round#sources[0]
+- id: orbis-investments-capital--is-member-of--nebius-2024-strategic-financing-round
+  from: orbis-investments/capital
+  to: nebius/2024-strategic-financing-round
+  role: participant
+  amount_usd: null
+  source_ref: nebius/2024-strategic-financing-round#sources[0]
+
+# --- lambda/2024-series-c-round ---
+- id: usit-capital--is-member-of--lambda-2024-series-c-round
+  from: usit/capital
+  to: lambda/2024-series-c-round
+  role: lead
+  amount_usd: null
+  source_ref: lambda/2024-series-c-round#sources[0]
+- id: b-capital-capital--is-member-of--lambda-2024-series-c-round
+  from: b-capital/capital
+  to: lambda/2024-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: lambda/2024-series-c-round#sources[0]
+- id: sk-telecom-capital--is-member-of--lambda-2024-series-c-round
+  from: sk-telecom/capital
+  to: lambda/2024-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: lambda/2024-series-c-round#sources[0]
+- id: t-rowe-price-capital--is-member-of--lambda-2024-series-c-round
+  from: t-rowe-price/capital
+  to: lambda/2024-series-c-round
+  role: participant
+  amount_usd: null
+  source_ref: lambda/2024-series-c-round#sources[0]
+
+# --- perplexity/2024-series-b-round ---
+- id: daniel-gross-capital--is-member-of--perplexity-2024-series-b-round
+  from: daniel-gross/capital
+  to: perplexity/2024-series-b-round
+  role: lead
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: jeff-bezos-capital--is-member-of--perplexity-2024-series-b-round
+  from: jeff-bezos/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: nvidia-capital--is-member-of--perplexity-2024-series-b-round
+  from: nvidia/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: tobi-lutke-capital--is-member-of--perplexity-2024-series-b-round
+  from: tobi-lutke/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: elad-gil-capital--is-member-of--perplexity-2024-series-b-round
+  from: elad-gil/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: nat-friedman-capital--is-member-of--perplexity-2024-series-b-round
+  from: nat-friedman/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: naval-ravikant-capital--is-member-of--perplexity-2024-series-b-round
+  from: naval-ravikant/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: andrej-karpathy-capital--is-member-of--perplexity-2024-series-b-round
+  from: andrej-karpathy/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: ivp-capital--is-member-of--perplexity-2024-series-b-round
+  from: ivp/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+- id: nea-capital--is-member-of--perplexity-2024-series-b-round
+  from: nea/capital
+  to: perplexity/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: perplexity/2024-series-b-round#sources[0]
+
+# --- anysphere/2024-series-b-round ---
+- id: thrive-capital-capital--is-member-of--anysphere-2024-series-b-round
+  from: thrive-capital/capital
+  to: anysphere/2024-series-b-round
+  role: lead
+  amount_usd: null
+  source_ref: anysphere/2024-series-b-round#sources[0]
+- id: ext-undisclosed-investors-anysphere-2024-series-b-round--is-member-of--anysphere-2024-series-b-round
+  from: ext/undisclosed-investors--anysphere-2024-series-b-round
+  to: anysphere/2024-series-b-round
+  role: participant
+  amount_usd: null
+  source_ref: anysphere/2024-series-b-round#sources[0]
+
+# --- crusoe/2024-abilene-jv-financing --- (real-estate JV, not a
+# startup round, but same 2+-named-co-investor shape — see nodes.yaml
+# header)
+- id: blue-owl-capital-capital--is-member-of--crusoe-2024-abilene-jv-financing
+  from: blue-owl-capital/capital
+  to: crusoe/2024-abilene-jv-financing
+  role: lead
+  amount_usd: null
+  source_ref: crusoe/2024-abilene-jv-financing#sources[0]
+- id: primary-digital-infrastructure-capital--is-member-of--crusoe-2024-abilene-jv-financing
+  from: primary-digital-infrastructure/capital
+  to: crusoe/2024-abilene-jv-financing
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2024-abilene-jv-financing#sources[0]
+
+# --- crusoe/2025-abilene-phase2-financing --- (same two JV partners)
+- id: blue-owl-capital-capital--is-member-of--crusoe-2025-abilene-phase2-financing
+  from: blue-owl-capital/capital
+  to: crusoe/2025-abilene-phase2-financing
+  role: lead
+  amount_usd: null
+  source_ref: crusoe/2025-abilene-phase2-financing#sources[0]
+- id: primary-digital-infrastructure-capital--is-member-of--crusoe-2025-abilene-phase2-financing
+  from: primary-digital-infrastructure/capital
+  to: crusoe/2025-abilene-phase2-financing
+  role: participant
+  amount_usd: null
+  source_ref: crusoe/2025-abilene-phase2-financing#sources[0]

@@ -5,18 +5,60 @@
 # Schema: q1 skeleton v3 (INBOX/2026-08-03-q1-skeleton-v3.md) sec 3 (edges)
 # + sec 4 (observations). This is real sourced data, not a placeholder set —
 # every entry below carries at least one observation with a live, checked
-# citation. Two provenance classes of capture_ref appear:
+# citation. Three provenance classes of capture_ref appear:
 #   - "step0-audit:<record-id>" = the underlying claim was already
 #     live-fetched and verified 2026-08-03 by the shelf audit
 #     (INBOX/2026-08-03-q1-step0-audit.md); this file re-expresses that
 #     VERIFIED-LIVE finding as a flow edge, it does not re-fetch.
-#   - "session-webfetch:<date>" = fetched and verified fresh in this build
-#     pass (2026-08-10) — two real new flows surfaced this way (edges 16-17
-#     below), not in the original 56-record shelf.
+#   - "session-webfetch:<date>" = fetched and verified fresh in the build
+#     pass dated in the capture_ref (first pass 2026-08-10 found the
+#     Anthropic-xAI and Google-xAI Colossus leases; the SAME-DATED second
+#     pass, also 2026-08-10, retrofit the round-node pattern and added the
+#     Ruling 2 / Tier-A tranche below — both passes share a build date,
+#     distinguish by edge content and the "NEW this pass"/"retrofit" notes).
+#   - "subagent-webfetch:<date>" = fetched and verified by a dispatched
+#     research subagent during the second 2026-08-10 pass, cross-checked
+#     by the orchestrating session before being written here — same
+#     verification standard as session-webfetch, distinguished only so a
+#     future reader can tell which pass's tooling did the fetch.
 #
-# What this is NOT: a complete q1 map. This is a first Tier-A tranche
-# (materiality floor and tier definitions: q1 skeleton sec 5, sec 12).
-# Coverage is asymptotic by design (R-19) — there is no done state.
+# ROUND NODES (Ruling 1, second 2026-08-10 pass — see nodes.yaml's header
+# for the full node-kind writeup, memberships.yaml for the is_member_of
+# edges). Every financing round with 2+ investors gets its own round node
+# (kind: round, in nodes.yaml) instead of the first pass's
+# ext/investor-syndicate--<company>-<year> placeholder. The round node
+# carries date/amount/stage/sources; is_member_of edges (memberships.yaml)
+# record who participated and who led; and — the piece that lives HERE,
+# in edges.yaml, unchanged in shape from every other edge in this file —
+# exactly ONE money-flow edge per round, from the round node to the
+# receiver's own capital node, carrying the actual disclosed total dollar
+# amount. The five edges below whose `from` field is a round node
+# (`.../<year>-...-round`) are either a first-pass RETROFIT (the `from`
+# field changed; the edge `id`, receiver, and every observation are
+# untouched) or NEW this pass (Ruling 2's added rounds). Retrofit notes
+# say which.
+#
+# NEW EDGE TYPE this pass: "grant / subsidy" — added for the one
+# government-to-company flow in this tranche (Intel's CHIPS Act award).
+# The original seven-value type enum (asset purchase · capacity/service
+# payment · equity · debt · prepayment · revenue · non-cash consideration)
+# has no clean home for a non-repayable government grant; "equity" would
+# misrepresent it (no shares issued) and there is no seventh alternative
+# in q1 skeleton sec 3. This extension is flagged for Ben's review, not
+# a ruling — cut:core-buildout.yaml's own filter description already
+# names "governments" as an expected capital-provider class sitting
+# outside the buildout group, which is the reason this flow needed a
+# type at all rather than being skipped.
+#
+# What this is NOT: a complete q1 map. This is now a SECOND Tier-A
+# tranche (materiality floor and tier definitions: q1 skeleton sec 5,
+# sec 12) — the first pass covered model-training/cloud-capacity/chip-design
+# flows plus early capital-megarounds; this pass adds power generation,
+# grid interconnection, semicap beyond TSMC, memory/HBM, advanced
+# packaging, networking, and datacenter construction as its own purchase
+# category, plus the Ruling 2 materiality-floor tranche (see this pass's
+# build report for the scoping estimate and threshold rationale). Coverage
+# is asymptotic by design (R-19) — there is no done state.
 #
 # Discipline: never fabricate a figure or URL (CLAUDE.md, this repo's
 # citation rule). Every "value" below is either a directly-quoted figure
@@ -217,12 +259,18 @@ edges:
     reliability: 0.9
     rationale: Primary, self-corroborating; confirmed nearly verbatim on live re-fetch 2026-08-03 (VERIFIED-LIVE).
 - id: ext-investor-syndicate-xai-2023--xai-capital--2023-formd
-  from: ext/investor-syndicate--xai-2023
+  from: xai/2023-formd-round
   to: xai/capital
   type: equity
   destination_category: n/a — financing
   commitment_ref: null
   coverage_state: measured
+  retrofit_note: Ruling 1 (second 2026-08-10 pass) — `from` changed from the
+    first pass's ext/investor-syndicate--xai-2023 placeholder to the new
+    xai/2023-formd-round round node; edge id, receiver, and every observation
+    below are unchanged. See nodes.yaml (xai/2023-formd-round) and
+    memberships.yaml for the round's membership (a single undisclosed-investors
+    stand-in — SEC Form D names nobody).
   observations:
   - value:
       type: point
@@ -304,16 +352,23 @@ edges:
     rationale: Secondhand relay of an FT scoop; core figures confirmed verbatim on live re-fetch 2026-08-03
       (VERIFIED-LIVE), reliability capped for the secondhand chain.
 - id: ext-investor-syndicate-mistral-2023--mistral-capital--2023-seed
-  from: ext/investor-syndicate--mistral-2023
+  from: mistral/2023-seed-round
   to: mistral/capital
   type: equity
   destination_category: n/a — financing
   commitment_ref: null
   coverage_state: measured
-  below_materiality_floor: true
-  materiality_note: €105M/$113M is well under the ⚙$1B/yr materiality floor (q1 sec 12) that governs purchase-tracing/node
-    instantiation; recorded anyway as a financing-inflow observation feeding the funding-pool/origination
-    layer (sec 3), not as a traced node. Flagged for a ruling — see report.
+  below_materiality_floor: false
+  materiality_note: €105M/$113M was flagged in the first pass as below the then-⚙$1B/yr
+    materiality floor. Ruling 2 (second 2026-08-10 pass) lowered the floor to
+    ⚙$100M with a signal-biased override (see this pass's build report) —
+    $113M clears the new floor outright. Field kept (now false) as an audit
+    trail of the ruling rather than silently deleted.
+  retrofit_note: Ruling 1 (second 2026-08-10 pass) — `from` changed from the
+    first pass's ext/investor-syndicate--mistral-2023 placeholder to the new
+    mistral/2023-seed-round round node; edge id, receiver, and every observation
+    below are unchanged. See nodes.yaml (mistral/2023-seed-round) and
+    memberships.yaml for the round's six named investors (Lightspeed lead).
   observations:
   - value:
       type: point
@@ -338,7 +393,7 @@ edges:
     rationale: TechCrunch named byline, detailed named-investor reporting; confirmed on live re-fetch
       2026-08-03 (VERIFIED-LIVE).
 - id: ext-investor-syndicate-inflection-2023--inflection-capital--2023-round
-  from: ext/investor-syndicate--inflection-2023
+  from: inflection/2023-round
   to: inflection/capital
   type: equity
   destination_category: n/a — financing
@@ -347,6 +402,14 @@ edges:
   coverage_note: Inflection was substantially acquihired by Microsoft Mar 2024 (staff + tech license)
     — recorded here as a calendar-2023 baseline event; the entity is largely dissolved as an independent
     node going forward.
+  retrofit_note: Ruling 1 (second 2026-08-10 pass) — `from` changed from the
+    first pass's ext/investor-syndicate--inflection-2023 placeholder to the
+    new inflection/2023-round round node; edge id, receiver, and every
+    observation below are unchanged. Source names five parties
+    ("led by Microsoft/Nvidia/Hoffman/Gates/Schmidt") without singling out one
+    lead — memberships.yaml records all five as role:participant, none as
+    role:lead. This is the first Microsoft node instantiated anywhere in this
+    map.
   observations:
   - value:
       type: point
@@ -370,12 +433,17 @@ edges:
     rationale: TechCrunch named byline, detailed and specific; every figure and investor confirmed on
       live re-fetch 2026-08-03 (VERIFIED-LIVE).
 - id: ext-investor-syndicate-cohere-2024--cohere-capital--2024-seriesd
-  from: ext/investor-syndicate--cohere-2024
+  from: cohere/2024-series-d-round
   to: cohere/capital
   type: equity
   destination_category: n/a — financing
   commitment_ref: null
   coverage_state: measured
+  retrofit_note: Ruling 1 (second 2026-08-10 pass) — `from` changed from the
+    first pass's ext/investor-syndicate--cohere-2024 placeholder to the new
+    cohere/2024-series-d-round round node; edge id, receiver, and every
+    observation below are unchanged. See memberships.yaml for the round's
+    seven named investors (PSP Investments lead).
   observations:
   - value:
       type: point
@@ -400,12 +468,19 @@ edges:
     rationale: Detailed direct reporting; amount, valuation and full investor list confirmed on live re-fetch
       2026-08-03 (VERIFIED-LIVE).
 - id: ext-investor-syndicate-cohere-2025--cohere-capital--2025-round
-  from: ext/investor-syndicate--cohere-2025
+  from: cohere/2025-round
   to: cohere/capital
   type: equity
   destination_category: n/a — financing
   commitment_ref: null
   coverage_state: measured
+  retrofit_note: Ruling 1 (second 2026-08-10 pass) — `from` changed from the
+    first pass's ext/investor-syndicate--cohere-2025 placeholder to the new
+    cohere/2025-round round node; edge id, receiver, and every observation
+    below are unchanged. Source describes Radical Ventures AND Inovia as
+    co-leads; memberships.yaml gives role:lead to Radical Ventures (listed
+    first) per the schema's single-lead field, Inovia role:participant — a
+    judgment call, flagged for Ben.
   observations:
   - value:
       type: point
@@ -604,3 +679,1266 @@ edges:
       edge because the facility is explicitly unconfirmed.
     method_note: ~$30B total is a computed estimate (rate x ~33 months), not a figure stated as a single
       headline number by the primary source; treat as derived, not quoted.
+
+# ============================================================
+# Ruling 2 tranche — signal-biased sub-$1B/$100M+ financing rounds
+# (round-node pattern; see this file's header + nodes.yaml + memberships.yaml).
+# All fetched by dispatched research subagents this pass (2026-08-10, second
+# pass), cross-checked by the orchestrating session against each fetched
+# page's own quoted text before being written here.
+# ============================================================
+- id: mistral-2025-series-c-round--mistral-capital--2025-series-c
+  from: mistral/2025-series-c-round
+  to: mistral/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2/3) — Mistral's next round after the seed tracked
+    in the first pass, closing the gap the first pass's audit already flagged
+    (Mistral was tracked only at its earliest, smallest round).
+  observations:
+  - value:
+      type: point
+      amount_eur: 1700000000
+      amount_usd: 1989000000
+      note: €1.7B raised; USD figure is a derived conversion (~1.17 EUR/USD
+        around the announcement date), not a figure Mistral's own release
+        states in dollars
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-09-09'
+      end: '2025-09-09'
+      schedule: known
+    source:
+      label: Mistral AI company announcement
+      url: https://mistral.ai/news/mistral-ai-raises-1-7-b-to-accelerate-technological-progress-with-ai/
+      figure: €1.7B raised, led by ASML (€1.3B of the round), post-money valuation
+        €11.7B
+      as_of: '2025-09-09'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary company release, directly fetched by a dispatched research
+      subagent this pass; EUR figure is the quoted primary value, USD is a
+      clearly-labelled derived conversion per F2/method_note discipline.
+    method_note: USD = EUR amount × ~1.17 (approximate EUR/USD spot around
+      2025-09-09), not a company-stated figure.
+- id: crusoe-2024-series-d-round--crusoe-capital--2024-series-d
+  from: crusoe/2024-series-d-round
+  to: crusoe/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (fast-rising AI-infrastructure
+    neocloud, already present in this map at the facility level via
+    research/q3-datacenter-census/attribution.yaml).
+  observations:
+  - value:
+      type: point
+      amount_usd: 600000000
+      note: $600M Series D at $2.8B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-12-12'
+      end: '2024-12-12'
+      schedule: known
+    source:
+      label: Crusoe Energy Systems newsroom
+      url: https://www.crusoe.ai/resources/newsroom/crusoe-closes-series-d-funding
+      figure: $600M Series D at $2.8B valuation, led by Founders Fund w/ Fidelity,
+        Long Journey Ventures, Mubadala, NVIDIA, Ribbit Capital, Valor Equity
+        Partners
+      as_of: '2024-12-12'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary company release, directly fetched by a dispatched research
+      subagent this pass.
+- id: world-labs-2024-seed-round--world-labs-capital--2024-seed
+  from: world-labs/2024-seed-round
+  to: world-labs/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (Fei-Fei Li's spatial-intelligence
+    lab; "over $1B" valuation on a $230M raise is a strong new/fast-rising
+    signal well under the old $1B floor — exactly the kind of record Ben asked
+    the lowered floor to catch).
+  observations:
+  - value:
+      type: point
+      amount_usd: 230000000
+      note: $230M raised across two rounds (not individually broken out by the
+        source), valuation "over $1B"
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-09-13'
+      end: '2024-09-13'
+      schedule: known
+    source:
+      label: TechCrunch
+      url: https://techcrunch.com/2024/09/13/fei-fei-lis-world-labs-comes-out-of-stealth-with-230m-in-funding/
+      figure: $230M across two rounds, investors include Andreessen Horowitz,
+        NEA, Radical Ventures, Marc Benioff, Nvidia's NVentures; valuation "over
+        $1B"
+      as_of: '2024-09-13'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.8
+    rationale: Directly fetched by a dispatched research subagent this pass;
+      corroborated by an independently-fetched Forbes article with the same
+      investor list.
+- id: together-ai-2025-series-b-round--together-ai-capital--2025-series-b
+  from: together-ai/2025-series-b-round
+  to: together-ai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (AI inference/training
+    infrastructure provider).
+  observations:
+  - value:
+      type: point
+      amount_usd: 305000000
+      note: $305M Series B at $3.3B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2025-02-20'
+      end: '2025-02-20'
+      schedule: known
+    source:
+      label: Together AI company announcement
+      url: https://www.together.ai/blog/together-ai-announcing-305m-series-b
+      figure: $305M Series B at $3.3B valuation, co-led by General Catalyst
+        and Prosperity7
+      as_of: '2025-02-20'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary company release, directly fetched by a dispatched research
+      subagent this pass.
+- id: nebius-2024-strategic-financing-round--nebius-capital--2024-strategic
+  from: nebius/2024-strategic-financing-round
+  to: nebius/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (AI-infrastructure
+    neocloud).
+  observations:
+  - value:
+      type: point
+      amount_usd: 700000000
+      note: $700M oversubscribed strategic equity financing; no valuation stated
+        in the release
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-12-02'
+      end: '2024-12-02'
+      schedule: known
+    source:
+      label: BusinessWire (Nebius company release via wire service)
+      url: https://www.businesswire.com/news/home/20241202575315/en/Nebius-Announces-Oversubscribed-Strategic-Equity-Financing-of-USD-700-Million-to-Accelerate-Roll-out-of-Full-stack-AI-Infrastructure
+      figure: $700M oversubscribed strategic equity financing; Accel, NVIDIA,
+        Orbis Investments-managed accounts named; Goldman Sachs placement agent
+      as_of: '2024-12-02'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Company release distributed via wire service, directly fetched
+      by a dispatched research subagent this pass.
+- id: lambda-2024-series-c-round--lambda-capital--2024-series-c
+  from: lambda/2024-series-c-round
+  to: lambda/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (GPU cloud provider).
+    Valuation ($1.5B) is search-sourced, not independently confirmed on the
+    fetched company blog — recorded at lower confidence in the note, not
+    included in the observation's own figure.
+  observations:
+  - value:
+      type: point
+      amount_usd: 320000000
+      note: $320M Series C; a $1.5B valuation is reported in trade press (DCD,
+        The Next Platform) but was not confirmed on the fetched company blog
+        itself
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-02-15'
+      end: '2024-02-15'
+      schedule: known
+    source:
+      label: Lambda company blog
+      url: https://lambda.ai/blog/lambda-raises-320m-to-build-a-gpu-cloud-for-ai
+      figure: $320M Series C, led by US Innovative Technology Fund (USIT) w/
+        B Capital, SK Telecom, T. Rowe Price Associates (new); Crescent Cove,
+        Mercato Partners, 1517 Fund, Bloomberg Beta, Gradient Ventures (existing)
+      as_of: '2024-02-15'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary company release, directly fetched by a dispatched research
+      subagent this pass.
+- id: perplexity-2024-series-b-round--perplexity-capital--2024-series-b
+  from: perplexity/2024-series-b-round
+  to: perplexity/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (AI search, fast-rising).
+    Records only the April 24, 2024 close — see perplexity/2024-series-b-round's
+    node note for why an earlier January 2024 close (~$73.6M, aggregator-sourced
+    only) is not added as a second edge this pass.
+  observations:
+  - value:
+      type: point
+      amount_usd: 62700000
+      note: US$62.7M Series B round; "more than US$1 billion" valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-04-24'
+      end: '2024-04-24'
+      schedule: known
+    source:
+      label: Latham & Watkins press release (deal counsel)
+      url: https://www.lw.com/en/news/2024/04/latham-watkins-advises-perplexity-ai-in-us62-7-million-series-b-funding-round
+      figure: US$62.7M Series B round, led by Daniel Gross, w/ Jeff Bezos, NVIDIA,
+        Tobi Lütke, Elad Gil, Nat Friedman, Naval Ravikant, Andrej Karpathy,
+        IVP, NEA; "more than US$1 billion" valuation
+      as_of: '2024-04-24'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Deal counsel's own release on its own closed transaction, directly
+      fetched by a dispatched research subagent this pass — a primary-adjacent
+      source, not the company's own statement, hence 0.85 rather than 0.9+.
+- id: anysphere-2024-series-b-round--anysphere-capital--2024-series-b
+  from: anysphere/2024-series-b-round
+  to: anysphere/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW (Ruling 2) — signal-biased addition (AI coding assistant,
+    fast-rising).
+  observations:
+  - value:
+      type: point
+      amount_usd: 105000000
+      note: $105M Series B at $2.6B valuation
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-12-01'
+      end: '2024-12-31'
+      schedule: known
+    source:
+      label: Crunchbase News
+      url: https://news.crunchbase.com/ai/anysphere-cursor-venture-funding-thrive/
+      figure: $105M Series B at $2.6B valuation, led by Thrive Capital
+      as_of: 2024-12
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.75
+    rationale: Named-source trade press, directly fetched by a dispatched research
+      subagent this pass — reliable but not the company's own statement, and
+      other investors beyond Thrive are not itemized in this article (see
+      memberships.yaml's undisclosed-investors stand-in for this round).
+
+# ============================================================
+# Semicap (beyond TSMC) + memory/HBM — Tier-A, previously uncovered
+# (2026-08-10 second pass). All within-firm capex edges follow the same
+# pattern as the first pass's tsmc/capital -> tsmc/foundry-construction
+# edges (F8: shared-asset caveat where applicable).
+# ============================================================
+- id: sk-hynix-capital--sk-hynix-memory-fab-construction--2026-yongin-cheongju
+  from: sk-hynix/capital
+  to: sk-hynix/memory-fab-construction
+  type: asset purchase
+  destination_category: memory & storage
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 38100000000
+      note: 54 trillion won (~$38.1B) combined board-approved investment — 35.2
+        trillion won for the Yongin Y2 fab + 19.1 trillion won for the Cheongju
+        M17 fab
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2027-07-01'
+      end: '2029-12-31'
+      schedule: known — Y2 breaks ground Jul 2027 (first cleanroom Jun 2029);
+        M17 breaks ground Feb 2027 (first cleanroom Dec 2028)
+    source:
+      label: SK hynix newsroom
+      url: https://news.skhynix.com/en/fab-facility-investment-2026/
+      figure: 54 trillion won (~$38.1B) board-approved for Yongin Y2 (HBM +
+        next-gen DRAM) and Cheongju M17
+      as_of: '2026-08-07'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official SK hynix newsroom release, directly fetched
+      by a dispatched research subagent this pass, explicitly framed as an
+      HBM/AI-era response.
+- id: micron-capital--micron-hbm-packaging-construction--2025-singapore
+  from: micron/capital
+  to: micron/hbm-packaging-construction
+  type: asset purchase
+  destination_category: memory & storage
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 7000000000
+      note: SG$9.5B (~$7B) HBM advanced-packaging facility, through the end
+        of the decade and beyond
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-08'
+      end: null
+      schedule: unscheduled — groundbreaking 2025-01-08, operations targeted
+        2026, meaningful capacity from 2027
+    source:
+      label: Micron company release (EIN Presswire/GlobeNewswire wire reproduction)
+      url: https://www.einpresswire.com/article/775015845/micron-breaks-ground-on-new-hbm-advanced-packaging-facility-in-singapore
+      figure: SG$9.5B (~$7B) HBM advanced-packaging facility in Singapore
+      as_of: '2025-01-08'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Wire-service reproduction of Micron's own release with a named
+      CEO quote, directly fetched by a dispatched research subagent this pass
+      — not fetched from micron.com's own domain, hence 0.85 rather than 0.9+.
+- id: micron-capital--micron-memory-fab-construction--2022-idaho
+  from: micron/capital
+  to: micron/memory-fab-construction
+  type: asset purchase
+  destination_category: memory & storage
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Pre-2023 baseline event, included (like the first pass's TSMC
+    2020 AZ intent) because the source explicitly ties it to AI-driven demand,
+    not general capacity.
+  observations:
+  - value:
+      type: point
+      amount_usd: 15000000000
+      note: $15B "through the end of the decade" for a new leading-edge memory
+        fab in Boise, Idaho
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2022-09-01'
+      end: '2029-12-31'
+      schedule: unscheduled
+    source:
+      label: Micron investor relations release
+      url: https://investors.micron.com/news-releases/news-release-details/micron-invest-15-billion-new-idaho-fab-bringing-leading-edge
+      figure: $15B new leading-edge memory fab, explicitly tied to "domestic
+        supply of leading-edge memory required for ... data center, fueled
+        by accelerating adoption of artificial intelligence"
+      as_of: '2022-09-01'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Micron investor-relations release, directly
+      fetched by a dispatched research subagent this pass.
+- id: samsung-capital--samsung-foundry-construction--2021-taylor-tx
+  from: samsung/capital
+  to: samsung/foundry-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: aggregated
+  new_this_pass: true
+  coverage_note: Same shared-fab caveat as tsmc/foundry-construction — Taylor,
+    TX serves mobile/5G/HPC/AI customers broadly, no AI-attributable share
+    published (F8). Trade press reports this figure later grew to $37-44B,
+    but that was NOT confirmed on an official Samsung page this pass — recorded
+    here at the original $17B, the only figure independently verified.
+  observations:
+  - value:
+      type: point
+      amount_usd: 17000000000
+      note: $17B original investment; later reported growth to $37-44B is
+        unconfirmed on an official source this pass
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2021-11-23'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Samsung newsroom
+      url: https://news.samsung.com/us/samsung-new-advanced-semiconductor-fab-site-taylor-texas
+      figure: $17B investment for "advanced logic semiconductor solutions"
+        serving mobile, 5G, HPC, and AI
+      as_of: '2021-11-23'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Samsung newsroom release, directly fetched
+      by a dispatched research subagent this pass.
+- id: ext-us-government--intel-foundry-construction--2024-chips-act
+  from: ext/us-government
+  to: intel/foundry-construction
+  type: grant / subsidy
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: New edge type this pass — "grant / subsidy" — see this file's
+    header. This is the CHIPS Act direct-funding award only (excludes Intel's
+    separately-disclosed CHIPS loan guarantees); it is a real government-to-company
+    flow, not company self-capex, and is distinguished from the Ohio "more
+    than $20B" investment figure, which is Intel's own stated capex (self-funded,
+    partly enabled by this award) rather than the award amount itself.
+  observations:
+  - value:
+      type: point
+      amount_usd: 7860000000
+      note: $7.86B direct CHIPS Act funding, finalized 2024-11-26 (down from
+        "up to $8.5B" preliminary terms announced 2024-03-20)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-11-26'
+      end: '2024-11-26'
+      schedule: known
+    source:
+      label: Intel Newsroom — US CHIPS Act funding press kit
+      url: https://newsroom.intel.com/press-kit/us-chips-act-funding-intel
+      figure: $7.86B direct CHIPS Act funding finalized Nov 26 2024; more than
+        $20B stated for the Ohio ("Silicon Heartland") investment
+      as_of: '2024-11-26'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Official Intel newsroom press-kit page, directly fetched by
+      a dispatched research subagent this pass; a separate intc.com investor-relations
+      URL for the same figure was retrieved incomplete (truncated) and is
+      not cited here.
+
+# ============================================================
+# Advanced packaging + networking — Tier-A, previously uncovered
+# (2026-08-10 second pass).
+# ============================================================
+- id: nvidia-ai-compute-procurement--amkor-packaging-assembly--2026-supply-agreement
+  from: nvidia/ai-compute-procurement
+  to: amkor/packaging-assembly
+  type: prepayment
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Nvidia is prepaying to help fund Amkor's US capacity build-out
+    — recorded as a prepayment per F3 (converts to build once spent; not yet
+    reallocated to a specific asset-purchase edge this pass).
+  observations:
+  - value:
+      type: point
+      amount_usd: 1500000000
+      note: $1.5B multi-year advanced packaging and development agreement,
+        spanning Asia and Arizona facilities
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-07-23'
+      end: null
+      schedule: unscheduled — "multi-year"
+    source:
+      label: Amkor Technology investor relations
+      url: https://ir.amkor.com/news-releases/news-release-details/amkor-technology-announces-strategic-partnership-nvidia-expand
+      figure: $1.5B multi-year advanced packaging and development agreement
+        with NVIDIA
+      as_of: '2026-07-23'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Amkor investor-relations release, directly
+      fetched by a dispatched research subagent this pass.
+- id: amkor-capital--amkor-packaging-construction--2025-arizona
+  from: amkor/capital
+  to: amkor/packaging-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Self-funded capex (like tsmc/capital -> tsmc/foundry-construction);
+    named anchor customers Apple and Nvidia are quoted as partners in the release
+    but do not themselves disclose a dollar commitment toward this figure.
+  observations:
+  - value:
+      type: point
+      amount_usd: 7000000000
+      note: $7B total Arizona advanced packaging/test campus, up from an original
+        ~$2B plan
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-10-06'
+      end: '2028-03-31'
+      schedule: known — groundbreaking Oct 2025, production targeted early
+        2028
+    source:
+      label: Amkor Technology investor relations
+      url: https://ir.amkor.com/news-releases/news-release-details/amkor-technology-breaks-ground-new-semiconductor-advanced
+      figure: $7B expanded Arizona advanced packaging and test campus; Apple
+        and Nvidia named as anchor customers
+      as_of: '2025-10-06'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Amkor investor-relations release, directly
+      fetched by a dispatched research subagent this pass.
+- id: tsmc-capital--tsmc-advanced-packaging-construction--2026-capex-share
+  from: tsmc/capital
+  to: tsmc/advanced-packaging-construction
+  type: asset purchase
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: aggregated
+  new_this_pass: true
+  coverage_note: TSMC buckets "advanced packaging, testing, mask making, and
+    others" together at 10-20% of total FY2026 capex — no standalone CoWoS-only
+    figure is disclosed. This observation records the DERIVED range (10-20%
+    of the $60-64B total range), not a company-stated single figure; management
+    separately confirmed on the same call that CoWoS is the "primary bottleneck"
+    and received most of a ~$10B year-to-date capex increase, without giving
+    a dollar figure for that increase either.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      lower_bound_usd: 6000000000
+      upper_bound_usd: 12800000000
+      note: derived range — 10-20% of TSMC's $60-64B FY2026 capex guidance,
+        bucketed with testing and mask-making, not a company-stated standalone
+        figure
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-01-01'
+      end: '2026-12-31'
+      schedule: known — FY2026
+    source:
+      label: TSMC Q2 2026 earnings call transcript
+      url: https://www.investing.com/news/transcripts/earnings-call-transcript-tsmc-lifts-2026-outlook-as-ai-demand-stays-hot-in-q2-2026-93CH-4794777
+      figure: FY2026 capex raised to $60-64B; 70-80% advanced process, ~10%
+        specialty, 10-20% advanced packaging/testing/mask-making/other
+      as_of: '2026-07-16'
+    provenance_class: inference from other claims
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.55
+    rationale: Transcript of the actual TSMC earnings call (high reliability
+      as a record of what was said), but the dollar range itself is arithmetic
+      on a stated percentage-of-range bucket that also includes testing and
+      mask-making, not an isolated packaging figure — reliability set low to
+      reflect the derivation, per F2/method_note discipline.
+    method_note: lower/upper bound = 0.10/0.20 × [$60B, $64B] FY2026 capex guidance.
+- id: ase-capital--ase-packaging-construction--2026-capex
+  from: ase/capital
+  to: ase/packaging-construction
+  type: asset purchase
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: point
+      amount_usd: 10500000000
+      note: 2026 capex raised to $10.5B (from a prior $8.5B forecast); ~$4B
+        to new fabs/infrastructure, ~$6.5B to production equipment for LEAP
+        (Leading-Edge Advanced Packaging), mainstream packaging, and test
+        capacity
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-01-01'
+      end: '2026-12-31'
+      schedule: known — FY2026
+    source:
+      label: TrendForce
+      url: https://www.trendforce.com/news/2026/07/31/news-ase-again-raises-2026-capex-to-record-us10-5b-eyes-2x-leading-edge-advanced-packaging-revenue-by-2027/
+      figure: ASE raises 2026 capex to a record $10.5B, LEAP revenue already
+        exceeded a $3.5B target for 2026
+      as_of: '2026-07-30'
+    provenance_class: analyst/model estimate
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.7
+    rationale: Reputable semiconductor trade press (TrendForce) reporting figures
+      sourced from ASE's own earnings call/guidance, directly fetched by a
+      dispatched research subagent this pass — not ASE's own primary release,
+      hence 0.7 rather than 0.85+.
+- id: nvidia-capital--coherent-capital--2026-equity
+  from: nvidia/capital
+  to: coherent/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Paired with the asset-purchase edge below (same announcement
+    day, same SEC filing) — mirrors the first pass's AMD-OpenAI warrant/chip-purchase
+    pairing.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2000000000
+      note: $2B investment to support R&D, future capacity, and operations
+        as Coherent builds US-based manufacturing capacity
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-03-02'
+      end: '2026-03-02'
+      schedule: known
+    source:
+      label: Coherent Corp. SEC Form 8-K exhibit
+      url: https://www.sec.gov/Archives/edgar/data/820318/000119312526084366/d42735dex991.htm
+      figure: $2B NVIDIA investment in Coherent plus a multi-billion-dollar
+        (unspecified) purchase commitment
+      as_of: '2026-03-02'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing exhibit, directly fetched by a dispatched
+      research subagent this pass.
+- id: nvidia-ai-compute-procurement--coherent-optical-components--2026-purchase-commitment
+  from: nvidia/ai-compute-procurement
+  to: coherent/optical-components
+  type: asset purchase
+  destination_category: networking & optics
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: The paired purchase-commitment side of the equity edge above
+    — the source states only "multi-billion-dollar purchase commitment," no
+    number, for co-packaged-optics products aimed at reducing cost/power in
+    AI switch-to-GPU interconnects.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: "\"multi-billion-dollar purchase commitment\" for advanced laser\
+        \ and optical networking products — no specific figure disclosed"
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-03-02'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Coherent Corp. SEC Form 8-K exhibit
+      url: https://www.sec.gov/Archives/edgar/data/820318/000119312526084366/d42735dex991.htm
+      figure: "\"an NVIDIA multi-billion-dollar purchase commitment\" — figure\
+        \ not itemized"
+      as_of: '2026-03-02'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Same primary SEC filing as the paired equity edge; dollar figure
+      genuinely not disclosed, recorded as unmeasured rather than estimated.
+- id: nvidia-capital--lumentum-capital--2026-equity
+  from: nvidia/capital
+  to: lumentum/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Same announcement day as the Coherent pair above — Nvidia
+    split a combined ~$4B commitment evenly between the two optical-components
+    suppliers.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2000000000
+      note: $2B private placement of 2,876,415 shares of Series A Convertible
+        Preferred Stock at $695.31/share
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-03-02'
+      end: '2026-03-02'
+      schedule: known
+    source:
+      label: Lumentum Holdings SEC Form 8-K exhibit
+      url: https://www.sec.gov/Archives/edgar/data/1633978/000119312526085412/d41019dex991.htm
+      figure: $2B private placement (2,876,415 shares at $695.31/share) plus
+        a multi-billion (unspecified) purchase commitment; funds support Lumentum's
+        new US-based fab
+      as_of: '2026-03-02'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary SEC filing exhibit, directly fetched by a dispatched
+      research subagent this pass.
+- id: nvidia-ai-compute-procurement--lumentum-optical-components--2026-purchase-commitment
+  from: nvidia/ai-compute-procurement
+  to: lumentum/optical-components
+  type: asset purchase
+  destination_category: networking & optics
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: "\"multi-billion\" purchase commitment and future capacity access\
+        \ rights for advanced laser components — no specific figure disclosed"
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2026-03-02'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Lumentum Holdings SEC Form 8-K exhibit
+      url: https://www.sec.gov/Archives/edgar/data/1633978/000119312526085412/d41019dex991.htm
+      figure: "\"an NVIDIA multi-billion purchase commitment and future capacity\
+        \ access rights\" — figure not itemized"
+      as_of: '2026-03-02'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Same primary SEC filing as the paired equity edge; dollar figure
+      genuinely not disclosed, recorded as unmeasured rather than estimated.
+
+# ============================================================
+# Datacenter construction as its OWN purchase category — Tier-A,
+# previously uncovered (2026-08-10 second pass), distinct from the
+# entity-level capex edges already recorded (e.g. TSMC's own foundry
+# capex above) and from the facility-level attribution work in
+# research/q3-datacenter-census/attribution.yaml, which this section
+# is designed to sit alongside (Crusoe/Abilene and Core Scientific/Denton
+# are both already tracked there at the facility level).
+# ============================================================
+- id: crusoe-2024-abilene-jv-financing--crusoe-datacenter-construction--2024-jv-formation
+  from: crusoe/2024-abilene-jv-financing
+  to: crusoe/datacenter-construction
+  type: equity
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Round-node pattern applied to a real-estate/infrastructure
+    JV, not a startup raise — see nodes.yaml header for why. Individual split
+    between Blue Owl and Primary Digital Infrastructure is not disclosed.
+  observations:
+  - value:
+      type: point
+      amount_usd: 3400000000
+      note: $3.4B joint venture (fully funded forward takeout structure) —
+        Lancium Clean Campus, Abilene TX, 206MW, two buildings, 100% long-term
+        leased to a Fortune 100 hyperscale tenant
+    stage: delivered
+    basis: cash
+    as_of: '2026-08-10'
+    period:
+      start: '2024-10-15'
+      end: '2024-10-15'
+      schedule: known
+    source:
+      label: Crusoe Energy Systems newsroom
+      url: https://www.crusoe.ai/resources/newsroom/crusoe-blue-owl-capital-primary-digital-joint-venture
+      figure: $3.4B JV with Blue Owl Capital (Real Estate platform) and Primary
+        Digital Infrastructure
+      as_of: '2024-10-15'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Crusoe newsroom release, directly fetched by
+      a dispatched research subagent this pass.
+- id: jpmorgan-chase-capital--crusoe-datacenter-construction--2025-construction-loan
+  from: jpmorgan-chase/capital
+  to: crusoe/datacenter-construction
+  type: debt
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Single named lender (debt facility, not an equity round —
+    see nodes.yaml/memberships.yaml headers on why debt syndicates are recorded
+    as direct edges rather than round-node memberships). A secondary source
+    (Construction Review Online) named a different arranger ("Newmark") for
+    the same $2.3B figure — the deal counsel's own release (more authoritative)
+    names JPMorgan Chase, adopted here; the discrepancy is flagged, not silently
+    resolved.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2300000000
+      note: $2.3B construction loan for the same Abilene, TX campus (206MW)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-23'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Kirkland & Ellis LLP press release (deal counsel for Blue Owl)
+      url: https://www.kirkland.com/news/press-release/2025/01/kirkland-ellis-advises-bo-funds-on-jv-and-financing-for-development-of-adc
+      figure: $2.3B construction loan from JPMorgan Chase for the Abilene,
+        TX campus JV
+      as_of: '2025-01-23'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.8
+    rationale: Deal counsel's own release on its own transaction, directly
+      fetched by a dispatched research subagent this pass; a conflicting arranger
+      name in a separate trade-press source is noted above, not adopted.
+- id: crusoe-2025-abilene-phase2-financing--crusoe-datacenter-construction--2025-phase2
+  from: crusoe/2025-abilene-phase2-financing
+  to: crusoe/datacenter-construction
+  type: debt
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: type recorded as "debt" per q1's procurement-based edge-typing
+    test even though the underlying financing is an unitemized debt+equity
+    mix — the dominant instrument per the source's own framing ("additional
+    debt and equity financing") is debt-like project finance; flagged as an
+    approximation, not a clean single-instrument fact.
+  observations:
+  - value:
+      type: point
+      amount_usd: 11600000000
+      note: $11.6B additional debt+equity financing (unitemized), expanding
+        Abilene from 2 to 8 buildings (1.2GW total)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-05-21'
+      end: null
+      schedule: unscheduled
+    source:
+      label: RCR Wireless (corroborated by DataCenterDynamics, Yahoo Finance,
+        Nasdaq)
+      url: https://www.rcrwireless.com/20250522/ai-ml/crusoe-openai-stargate
+      figure: $11.6B additional debt and equity financing, phase 2 of the Abilene
+        JV
+      as_of: '2025-05-22'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.75
+    rationale: Not itemized on Crusoe's own release (see nodes.yaml's crusoe/2025-abilene-phase2-financing
+      note), but the figure is corroborated across multiple independent trade-press
+      outlets found in the same search pass.
+  - value:
+      type: point
+      amount_usd: 15000000000
+      note: cumulative total committed capital across the 2024 JV formation
+        ($3.4B) and this 2025 phase-2 tranche ($11.6B)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-10-15'
+      end: '2025-05-21'
+      schedule: known
+    source:
+      label: Crusoe Energy Systems / Globenewswire company release
+      url: https://www.globenewswire.com/news-release/2025/05/21/3085765/
+      figure: '"Second phase of a $15 billion joint venture"'
+      as_of: '2025-05-21'
+    provenance_class: inference from other claims
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.6
+    rationale: The $15B cumulative figure IS company-stated on this page (unlike
+      the pattern in the Amazon-Anthropic $8B derived edge in the first pass),
+      but the URL was retrieved incomplete/truncated this pass and was not
+      independently re-verified as live — recorded at reduced reliability
+      pending re-capture, per F2 (every hop stays visible).
+    method_note: $15B = $3.4B (2024 formation) + $11.6B (2025 phase 2), consistent
+      with both tranches recorded independently above.
+    derived_from: [crusoe-2024-abilene-jv-financing--crusoe-datacenter-construction--2024-jv-formation]
+- id: core-scientific-capital--core-scientific-datacenter-construction--2024-denton-investment
+  from: core-scientific/capital
+  to: core-scientific/datacenter-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Self-funded real-property investment (like tsmc/capital ->
+    tsmc/foundry-construction) — the primary source is the City of Denton's
+    own council approval, relayed by two independent local/trade outlets since
+    a direct fetch of the city's own page and DataCenterDynamics both failed
+    this pass.
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 6100000000
+      note: up to $6.1B real-property investment (HPC infrastructure + office
+        complex construction) on 78.85 leased acres, 394MW total campus power
+        capacity
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-11-19'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Construction Review Online (corroborated by Voice of Denton, both
+        citing the Denton City Council approval)
+      url: https://constructionreviewonline.com/core-scientific-to-invest-6-1-billion-in-converting-crypto-mine-in-denton-into-ai-data-center/
+      figure: up to $6.1B real-property investment approved by Denton City
+        Council 2024-11-19
+      as_of: '2026-08-10'
+    provenance_class: named-source press
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.7
+    rationale: Two independent trade/local-news outlets corroborate the same
+      figure and both cite the city council approval as their source, but
+      the primary government release itself could not be fetched this pass
+      (404/403) — reliability set to reflect secondary-only sourcing.
+- id: coreweave-datacenter-operation--core-scientific-datacenter-construction--2025-denton-expansion
+  from: coreweave/datacenter-operation
+  to: core-scientific/datacenter-construction
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: The source's headline "$1.2B expansion" figure is CONTRACTED
+    REVENUE to Core Scientific over the lease term, not construction spend
+    — the direct capex figure Core Scientific itself states for this expansion
+    is $104M ($1.5M/MW powered shell for 70MW); recorded here at $104M to
+    keep this edge in the "purchase" category honestly, with the $1.2B revenue
+    framing noted rather than mistakenly recorded as a second purchase amount
+    (would double-count against the Denton facility's other q1/q3 records).
+  observations:
+  - value:
+      type: point
+      amount_usd: 104000000
+      note: $104M Core Scientific-funded capex for a 70MW expansion (powered
+        shell, $1.5M/MW), bringing the Denton site to ~260MW critical IT load
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-02-26'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Core Scientific investor relations
+      url: https://investors.corescientific.com/news-events/press-releases/detail/110/core-scientific-and-coreweave-announce-1-2-billion-expansion-at-denton-tx-site
+      figure: $104M Core Scientific-funded capex portion of a 70MW Denton expansion;
+        the release's own headline "$1.2 billion" figure is contracted revenue
+        to Core Scientific over the 12-year relationship, not construction
+        spend
+      as_of: '2025-02-26'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Core Scientific investor-relations release,
+      directly fetched by a dispatched research subagent this pass; the revenue-vs-capex
+      distinction is stated explicitly on the page itself, not inferred.
+- id: vantage-data-centers-capital--turner-construction-epc-services--2024-new-albany-epc
+  from: vantage-data-centers/capital
+  to: turner-construction/epc-services
+  type: asset purchase
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: Typed as asset purchase per q1's own procurement-based edge-typing
+    test ("an EPC, construction, or engineering contract for a datacenter
+    the buyer will operate is asset acquisition, not a service") — this is
+    the clean, directly-applicable case that test was written for.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2000000000
+      note: $2B general-contractor/EPC contract, New Albany OH campus, 192MW,
+        1.5M+ sq ft, 70 acres — Vantage's first Midwest facility
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-11-04'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Turner Construction Company
+      url: https://www.turnerconstruction.com/insights/turner-selected-for-2-billion-expansion-project-for-vantage-data-centers
+      figure: $2B general-contractor/EPC contract for Vantage's New Albany,
+        OH campus
+      as_of: '2024-11-04'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.9
+    rationale: Primary official Turner Construction release naming both parties
+      and the dollar figure, directly fetched by a dispatched research subagent
+      this pass.
+
+# ============================================================
+# Power generation + grid interconnection — Tier-A, previously uncovered
+# (2026-08-10 second pass). This category turned out to be MW/term-rich
+# but price-poor across the sourcing pass — most nuclear/gas PPAs simply
+# do not disclose a dollar figure anywhere in the public record, primary
+# or secondary. Recorded honestly as unmeasured-dollar rather than
+# estimated, per this file's own longstanding discipline (see the
+# openai/AMD and nvidia/xAI edges above for the same pattern in the
+# first pass). One finding from the dispatched research pass was
+# explicitly NOT recorded as an edge: a reported ~$650M AWS acquisition
+# of the "Cumulus Data Assets" campus adjacent to Talen's Susquehanna
+# plant — neither research subagent could produce a source for it beyond
+# an unsourced background mention, so per F5/the never-fabricate rule
+# it is omitted here rather than added on a secondhand echo. Flag for a
+# follow-up capture pass if Ben wants it pursued.
+# ============================================================
+- id: sb-energy-datacenter-operation--aep-ohio-grid-interconnection--2025-piketon-line
+  from: sb-energy/datacenter-operation
+  to: aep-ohio/grid-interconnection
+  type: capacity/service payment
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: 'Cost-allocation ambiguity, named not legislated (R-17): the
+    source does not state whether this $4.2B sits in AEP''s general rate base
+    (spread across all ratepayers) or is funded/recovered specifically through
+    SB Energy''s large-load tariff — the edge is recorded from SB Energy to
+    AEP Ohio because the line exists FOR SB Energy''s named campus, but the
+    actual payer-of-record mechanics are not confirmed.'
+  observations:
+  - value:
+      type: point
+      amount_usd: 4200000000
+      note: $4.2B new 765kV transmission line serving a planned ~10GW SB Energy
+        datacenter campus in Piketon, OH
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-01'
+      end: null
+      schedule: unscheduled
+    source:
+      label: AEP (American Electric Power) news release
+      url: https://www.aep.com/news/stories/view/10823/
+      figure: $4.2B 765kV transmission line for a planned 10GW datacenter campus
+        in Piketon, OH
+      as_of: '2026-08-10'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.8
+    rationale: Primary AEP-owned press page, directly fetched by a dispatched
+      research subagent this pass; reliability held below 0.9 for the unresolved
+      cost-allocation ambiguity noted above.
+- id: meta-datacenter-operation--entergy-louisiana-grid-interconnection--2025-smalling-substation
+  from: meta/datacenter-operation
+  to: entergy-louisiana/grid-interconnection
+  type: asset purchase
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: A separate ~$1.2B figure for an associated 500kV transmission
+    line serving the same Richland Parish (Hyperion) campus appears only in
+    trade press (Transformer Magazine, citing a MISO transmission plan) —
+    NOT on Entergy's own release, and NOT merged into this edge's amount to
+    avoid citing an unconfirmed figure as if it were primary-sourced.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: Meta funds the new Smalling Substation "in its entirety" (direct
+        quote) — no dollar figure stated for the substation itself
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-01-01'
+      end: null
+      schedule: unscheduled
+    source:
+      label: Entergy Louisiana press release
+      url: https://www.entergylouisiana.com/entergy-louisiana-breaks-ground-on-key-substation-to-power-data-center-in-richland-parish
+      figure: New substation connecting Meta's Richland Parish datacenter to
+        the grid, funded by Meta "in its entirety"
+      as_of: '2026-08-10'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary Entergy-owned press page with a direct quote on the
+      funding structure, directly fetched by a dispatched research subagent
+      this pass; the funding STRUCTURE is primary-confirmed even though the
+      substation's own dollar figure is not disclosed.
+- id: crusoe-capital--ge-vernova-turbine-manufacturing--2025-turbine-order
+  from: crusoe/capital
+  to: ge-vernova/turbine-manufacturing
+  type: asset purchase
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: 29 LM2500XPRESS aeroderivative gas turbine units (19 booked June
+        2025 + 10 ordered Dec 2024), combined ~1GW, explicitly for AI datacenters
+        — no purchase price disclosed
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-12-01'
+      end: '2025-06-30'
+      schedule: known — two tranches, Dec 2024 and Jun 2025
+    source:
+      label: GE Vernova press release
+      url: https://www.gevernova.com/news/press-releases/ge-vernova-crusoe-announce-major-29-unit-aeroderivative-gas-turbine-deliver-ai-data-centers
+      figure: 29 LM2500XPRESS aeroderivative turbine units, combined ~1GW,
+        for AI datacenters
+      as_of: '2026-08-10'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary GE Vernova-owned press page, directly fetched by a
+      dispatched research subagent this pass; dollar value genuinely not
+      disclosed, recorded as unmeasured rather than estimated.
+- id: amazon-ai-compute-procurement--talen-energy-power-generation--2025-susquehanna-ppa
+  from: amazon/ai-compute-procurement
+  to: talen-energy/power-generation
+  type: capacity/service payment
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: A widely-repeated "$18 billion" headline figure for this deal
+    is NOT recorded here — it is a PowerMag-calculated notional value derived
+    from footnotes in a Talen investor presentation, not a price Talen's own
+    SEC filing discloses. The filing confirms megawatts and term only.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: up to 1,920MW by 2032 (of Talen's 2.5GW Susquehanna nuclear plant),
+        17-year PPA through 2042 — no dollar figure disclosed in the filing
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2025-06-11'
+      end: '2042-12-31'
+      schedule: known — 17-year term through 2042, restructured deal announced
+        2025-06-11
+    source:
+      label: Talen Energy SEC Form 8-K (Q2 2025 earnings release exhibit)
+      url: https://www.sec.gov/Archives/edgar/data/1622536/000162828025038538/a20250807q22025earningsrel.htm
+      figure: up to 1,920MW by 2032, 17-year term through 2042 — no price disclosed
+      as_of: '2025-08-07'
+    provenance_class: regulatory filing
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary SEC filing, directly fetched by a dispatched research
+      subagent this pass; dollar value genuinely not disclosed anywhere in
+      the public record found this pass, recorded as unmeasured rather than
+      estimated per the coverage_note's caveat on the circulating $18B figure.
+- id: microsoft-ai-compute-procurement--constellation-energy-power-generation--2024-tmi-ppa
+  from: microsoft/ai-compute-procurement
+  to: constellation-energy/power-generation
+  type: capacity/service payment
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: A widely-repeated "$1.6 billion" figure for this deal is NOT
+    the PPA price — it is Utility Dive's third-party estimate of Constellation's
+    OWN restart capex for the plant, not a Microsoft-paid transaction value,
+    and is not recorded here as this edge's amount.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: ~835MW, 20-year PPA — Constellation's own release states no capex
+        or price figure at all, only a third-party economic-impact study (not
+        a transaction value)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-10'
+    period:
+      start: '2024-09-20'
+      end: null
+      schedule: 20-year PPA beginning at restart (targeted 2027) — not yet
+        begun as of this pass
+    source:
+      label: Constellation Energy newsroom
+      url: https://www.constellationenergy.com/news/2024/Constellation-to-Launch-Crane-Clean-Energy-Center-Restoring-Jobs-and-Carbon-Free-Power-to-The-Grid.html
+      figure: Crane Clean Energy Center (Three Mile Island Unit 1) restart,
+        20-year PPA with Microsoft, ~835MW — no price/capex figure on the
+        page itself
+      as_of: '2024-09-20'
+    provenance_class: company statement
+    capture_ref: subagent-webfetch:2026-08-10
+    reliability: 0.85
+    rationale: Primary official Constellation newsroom release, directly fetched
+      by a dispatched research subagent this pass; dollar value genuinely
+      not disclosed on the company's own page, recorded as unmeasured rather
+      than estimated per the coverage_note's caveat on the circulating $1.6B
+      figure.

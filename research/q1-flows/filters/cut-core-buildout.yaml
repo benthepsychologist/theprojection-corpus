@@ -19,7 +19,7 @@
 # new nodes instantiate; membership changes are versioned, never silent.
 
 id: "cut:core-buildout"
-version: 1
+version: 2
 dated: "2026-08-10"
 description: >
   Spend-side default cut (q1 skeleton sec 3/12): hyperscaler AI operations,
@@ -27,6 +27,13 @@ description: >
   networking, datacenter builders, AI-dedicated power projects. Capital
   providers and governments sit OUTSIDE this cut by design — their money
   into the group reads as inflow, not a transfer.
+version_note: >
+  v2 (2026-08-10, second build pass) extends v1's roster to match the
+  second Tier-A tranche (memberships.yaml/edges.yaml this pass) — semicap
+  beyond TSMC, memory/HBM, advanced packaging, networking, datacenter
+  builders, and AI-dedicated power/grid infrastructure, none of which had
+  an instantiated node under v1. Every v1 member is unchanged; this is
+  additive only, versioned per R-16 (membership changes are never silent).
 
 members:
   # frontier labs
@@ -37,6 +44,10 @@ members:
   - inflection    # historical (2023 baseline); largely absorbed into
                    # Microsoft Mar-2024, see nodes.yaml note
   - cohere
+  - world-labs      # NEW v2 — signal-biased Ruling 2 addition
+  - together-ai     # NEW v2 — signal-biased Ruling 2 addition
+  - perplexity      # NEW v2 — signal-biased Ruling 2 addition
+  - anysphere       # NEW v2 — signal-biased Ruling 2 addition (Cursor)
   # hyperscaler AI operations
   - amazon
   - google
@@ -45,21 +56,103 @@ members:
   # AI chip lines / chip design
   - nvidia
   - amd
-  # semicap / foundry
+  # semicap / foundry / memory / packaging (NEW v2 — all instantiated
+  # this pass; TSMC carries over from v1)
   - tsmc
+  - samsung
+  - intel
+  - sk-hynix
+  - micron
+  - amkor
+  - ase
+  # networking (NEW v2)
+  - coherent
+  - lumentum
   # neoclouds
   - coreweave
+  - crusoe          # NEW v2
+  - nebius          # NEW v2 — signal-biased Ruling 2 addition
+  - lambda          # NEW v2 — signal-biased Ruling 2 addition
+  # datacenter builders (NEW v2)
+  - core-scientific
+  - vantage-data-centers
+  - turner-construction
+  # AI-dedicated power / grid infrastructure (NEW v2)
+  - constellation-energy
+  - talen-energy
+  - sb-energy
+  - aep-ohio
+  - entergy-louisiana
+  - ge-vernova
 
 explicitly_outside:
   # capital providers — their inbound money to a member reads as inflow,
   # never a transfer, under this cut (R-16).
   members:
     - ext/public-equity-market
-    - ext/investor-syndicate--xai-2023
-    - ext/investor-syndicate--mistral-2023
-    - ext/investor-syndicate--inflection-2023
-    - ext/investor-syndicate--cohere-2024
-    - ext/investor-syndicate--cohere-2025
+    - ext/undisclosed-investors--xai-2023-formd-round
+    - ext/undisclosed-investors--together-ai-2025-series-b-round
+    - ext/undisclosed-investors--anysphere-2024-series-b-round
+    - ext/us-government
+    # VC / institutional / strategic / sovereign / angel investors named
+    # across this pass's round nodes (memberships.yaml) — kept as one
+    # flat list rather than broken out per round, since a single firm
+    # (e.g. Nvidia's own investment arm, AMD Ventures) can appear across
+    # several rounds.
+    - lightspeed
+    - redpoint
+    - index-ventures
+    - xavier-niel
+    - bpifrance
+    - eric-schmidt
+    - reid-hoffman
+    - bill-gates
+    - psp-investments
+    - cisco
+    - fujitsu
+    - edc
+    - radical-ventures
+    - inovia
+    - salesforce-ventures
+    - asml
+    - dst-global
+    - a16z
+    - general-catalyst
+    - founders-fund
+    - fidelity
+    - long-journey-ventures
+    - mubadala
+    - ribbit-capital
+    - valor-equity-partners
+    - nea
+    - marc-benioff
+    - prosperity7
+    - damac-capital
+    - kleiner-perkins
+    - march-capital
+    - emergence-capital
+    - lux-capital
+    - se-ventures
+    - greycroft
+    - coatue
+    - accel
+    - orbis-investments
+    - usit
+    - b-capital
+    - sk-telecom
+    - t-rowe-price
+    - ivp
+    - jeff-bezos
+    - daniel-gross
+    - tobi-lutke
+    - elad-gil
+    - nat-friedman
+    - naval-ravikant
+    - andrej-karpathy
+    - thrive-capital
+    - blue-owl-capital
+    - primary-digital-infrastructure
+    - jpmorgan-chase
   note: >
     Amazon and Google appear as BOTH members (hyperscaler AI ops) and
     financing counterparties (amazon/capital, google/capital -> Anthropic)
@@ -70,3 +163,20 @@ explicitly_outside:
     not external capital inflow to the group — worth Ben's eye, since press
     coverage of these deals almost universally frames them as "external"
     investment. Flagged, not resolved, per R-17 (name the ambiguity).
+
+    v2 sharpens this same pattern with a second, broader case: Nvidia's
+    own investment arm (nvidia/capital) is a named investor in SIX of
+    this pass's rounds — Inflection, Crusoe, World Labs, Cohere (both
+    2024 and 2025), Together AI, and Mistral's Series C — while Nvidia
+    the chip-design entity is simultaneously a core-buildout member. AMD
+    (via AMD Ventures) shows the same shape at smaller scale across both
+    Cohere rounds. Under this cut, every one of those investment edges
+    reads as an inside<->inside transfer once the receiving company is
+    itself a core-buildout member (all six of the above are, as of v2) —
+    Nvidia's chip revenue and its venture-investing arm both sit inside
+    the same filtered group, so its outbound checks to AI labs are, by
+    this cut's own logic, the industry investing in itself at a scale
+    and breadth that goes well beyond the original Amazon/Google
+    observation. Flagged, not resolved, per R-17 — worth Ben's eye
+    before this cut's "external inflow" totals are read at face value
+    for any round Nvidia participated in.
