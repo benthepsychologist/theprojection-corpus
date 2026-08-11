@@ -421,15 +421,33 @@ lenses:
         # offering in the same window. DELIBERATELY narrow: bare "JPMorgan"
         # would match most of the financial press every day and tell us
         # nothing about the buildout, which is the only reason it is here.
-      - term: "Global AI data center"
+      # Global AI — the company. Ben, 2026-08-11: "Global AI by itself as a
+      # topic is pretty much the whole feed isn't it?" — correct, and the
+      # problem is unfixable by qualification because the company's LEGAL
+      # NAME is the topic phrase. "Global AI data center" was tried first
+      # and retired the same day: on this feed that string matches the
+      # subject matter of nearly every AI-capital item we carry.
+      #
+      # Resolved by searching for things only this company can be, not for
+      # its name. Founded 2024, CEO Sami Issa, $6.2B contracted revenues
+      # with ~$1B built and delivered, pitches "sovereign AI infrastructure"
+      # to states and private firms; first-ever debt raise was the
+      # JPMorgan-led $441M senior secured facility (2026-08-10).
+      - term: "Sami Issa"
         entity: global-ai
         name: "Global AI"
-        # The two-year-old AI-infrastructure firm behind the JPMorgan-led
-        # $441M facility. ⚠️ Weakest term in this block by some distance —
-        # "Global AI" is close to a generic phrase, and even qualified this
-        # will pull noise. Kept because the entity is real and recurring;
-        # expect to retune or drop it at the next decay review if the
-        # precision does not hold.
+        # The CEO's name is the only unambiguous handle on this entity. He
+        # is quoted in essentially all of its coverage, so recall stays
+        # usable while precision goes to near-perfect.
+      - term: "Global AI sovereign infrastructure"
+        entity: global-ai
+        name: "Global AI"
+        # Second handle, deliberately narrow: their own positioning phrase.
+        # Two entries pointing at one entity slug is fine — both route to
+        # `global-ai` on match. ⚠️ Watch this one specifically: "sovereign
+        # AI" is itself becoming common usage, so if it starts pulling
+        # unrelated state-AI-programme stories, drop it and keep the CEO
+        # term alone.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29
