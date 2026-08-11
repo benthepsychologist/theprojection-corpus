@@ -1,12 +1,75 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-10**. Top note covers a `/daily` run
-that closed a ~23h backlog on 08-09 (every lens's last real curation
-had stopped mid-morning) and surfaced a real structural finding: on the
-Monday after a week rolls over, the live artifact's ranked view and the
-site's own payload/interpretation exports go quiet even though the
-content is fully saved and the site's briefing pages carry it
-correctly. The 08-09 note and everything older sit under it.*
+*Hand-maintained. **As of 2026-08-11**. Top note covers the largest
+single day of change this instance has had: a new public object type
+(story pages, one per timeline entry, 529 of them), a site-wide link
+policy that removes external story links from every feed, a
+credibility layer rebuilt from 149 to 399 domains, and two `/daily`
+runs that closed a 21-hour gap and then finalized 08-10 on time. The
+08-10 note and everything older sit under it.*
+
+> **2026-08-11 — story pages, the link policy, a credibility rebuild,
+> and the day's own two `/daily` runs.** 22 commits. Counts computed at
+> wrap: **99 threads** (85 open · 12 developing), **61 expectations**
+> (45 pending · 12 hit · 4 passed-silent), **193 watchlist entries**,
+> 45 actor roll-ups, **529 story pages**, **399 credibility-rated
+> domains**, 15 publishes.
+>
+> **The link policy (Ben's ask, second attempt).** Feed bullets were
+> still resolving to individual news articles. The 08-07 fix was right
+> in intent but looked bullets up in `payload.items`, which
+> `render_read.py` windows to the current Mon-Sun week — that table held
+> **3 items against ~40 bullets**, so nearly every lookup missed and
+> fell through to the external-link branch. The fallback *was* the bug,
+> in three separate branches, and an audit found the same defect in
+> `readout.html`, which renders atop every thread, lens, entity and map
+> page. Now one implementation (`story-link.html` + `story-index.html`)
+> resolving against the un-windowed readouts set, failing CLOSED to
+> plain text. Verified live: **0 external story links** across 1,135
+> feed/readout bullets.
+>
+> **Story pages — the object the site was missing.** Ben: clicking a
+> claim landed on a thread, "a non-intuitive UX leap." A thread is an
+> arc over weeks; a story is one event with many witnesses. 520 stories
+> were backfilled from every dated timeline block, each with its own
+> sources and credibility badges. `publish/adapter.py` gained
+> `build_stories()`; `layouts/story/single.html` renders it.
+>
+> **Credibility rebuilt, 33% → 87% badge coverage.** The root cause was
+> the UNIVERSE, not the data: the 08-07 build selected by buffer
+> frequency, which excluded the domains we actually cite — 224 of 267
+> were missing, including Al Jazeera (22 citations), NPR, SEC and the
+> Washington Post. Now cited-domains ∪ buffer(n≥3), with a committed
+> builder (`sources/build_outlet_credibility.py`) so a rebuild is one
+> command rather than the ad-hoc process that let it go stale. Layer 3
+> shipped too — 37 outlets rated on **published practices**, rubric
+> published on `/methodology/` first per its own gate, rendered as a
+> count on its own scale because it measures transparency, not accuracy.
+>
+> **Two `/daily` runs.** The morning closed a ~21h gap on 08-10 and
+> finalized 08-09 (30h overdue); the afternoon finalized 08-10 **on
+> time** — 3.5h after its window opened, the first on-time finalize in
+> a week — and extended 08-11. Coverage critics produced 5 real misses,
+> the largest being Claude's Riemann-zeta bound (41.6%→67.2%, and
+> explicitly NOT progress toward proving the hypothesis). Found without
+> any benchmark: CoreWeave's $2.6B loan at SOFR+550, flexed WIDER from
+> S+425-450 — the first confirmed transaction-level coupon in this map's
+> AI-debt record.
+>
+> **A flash is live** for the first time in weeks: a M7.4 earthquake in
+> western Colombia (USGS red alert). It touches no lens, which is what
+> the rail is for. Its casualty figures are attributed, not asserted.
+>
+> **Six briefs to kestrel's INBOX**, all uncommitted per protocol: the
+> silent pack-extractor truncation, the clinicaltrials collector's
+> missing first-posted date, the payload window, the summary shape
+> permitting process narration, the briefing-link instruction, and
+> `semantic_scholar` skipping the SAME ~220 terms every run (0%
+> coverage, permanently, invisible in provenance).
+>
+> ⚠ Still unfixed and now named on three consecutive days: the read
+> artifact is **855 KB against a 600 KB soft cap** and the degradation
+> rule the warning points at has never been built.
 
 > **2026-08-10 — a ~23-hour curation backlog on 08-09 closed, and a
 > week-boundary gap in the live payload found (not fixed — engine

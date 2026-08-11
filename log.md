@@ -3066,3 +3066,52 @@ HB 26-1195 takes effect 08-12 and should grade as `hit`. The flash expires on
 its own at end of day 08-11 — no action needed, and per the rule, if Colombia
 still warrants the rail tomorrow that means a NEW event, which earns a new
 flash. Six briefs now sit in kestrel's INBOX from today.
+
+## 2026-08-11 (wrap) — session checkpoint
+
+Not a close — a save point. Three `/daily`-adjacent arcs ran today and are
+all committed, pushed and live-verified; this entry is the session-level
+view the three detailed entries above don't give on their own.
+
+**What the day actually was:** one ask from Ben ("fix the damn clickable
+claims") opened into four connected pieces of work, each surfaced by doing
+the previous one. The link fix needed a lookup table, which exposed that
+`payload.items` was week-windowed to 3 items. Building the right table
+raised the question of what a bullet should link TO, which Ben answered
+with story pages. Story pages needed sources with credibility badges, which
+exposed that the credibility layer's universe was selected by the wrong
+criterion (buffer frequency, not what we cite). Rebuilding that left one
+population unrated — trade press — which is what layer 3 exists for, and
+its rubric had been gated on a methodology page that had no credibility
+section at all.
+
+**The through-line worth keeping:** every one of the day's real findings
+was a claim degrading as it moved down the pipeline, caught by someone
+checking rather than assuming. A qualifier that survived the source and the
+digest, then died in a briefing bullet. A brief I wrote that carried a
+critic's framing without re-verifying it, wrong twice, caught by the
+curator. A WebFetch summary that misdated a live earthquake by four months
+where the raw feed was correct. `lstrip("www.")` eating the first letter of
+every w-domain. A coverage metric that omitted the very layer it was
+measuring. None of these were found by a rule; all were found by looking.
+
+**Agents pushed back on me twice, correctly.** The mental-health briefing
+declined an "11% uptake" figure I had put in its own prompt, because it was
+not in the data pack — "the brief requires every fact trace to the pack,
+not to outside/prompt-level context." The global-capital briefing excluded
+four items rather than cite links that don't support their facts. That is
+the behaviour to keep asking for.
+
+**Pick up:** `coreweave-q2-earnings` resolves after tonight's 5pm ET print;
+`kaiser-nuhw-mediation-0811` once either party posts a readout (neither had
+by 14:00 ET); `colorado-hb1195-effective` should grade `hit` tomorrow. The
+Colombia flash expires on its own at end of 08-11 — no action, and a new
+event would need a NEW flash rather than an extension. `/week` closes the
+08-10→08-16 week on Sunday. Six briefs sit in kestrel's INBOX.
+
+**Open for Ben, still:** the 62 stories with no badged source are mostly
+trade press already flagged `gap_fill: candidate` — layer 3's rubric now
+exists, so those are ratable whenever wanted. And the read artifact has
+been over the 600 KB soft cap for three days running with the degradation
+rule still unbuilt; that one is engine-side and has no brief yet because it
+is already named in ROADMAP.
