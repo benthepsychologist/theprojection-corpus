@@ -75,8 +75,8 @@ decoupling preference, at least for one supplier relationship.
 
 ## Policy & governance
 
-- ⚠️ **Critic-caught, added 2026-08-11:** AI data-center opposition has
-  become a defining bipartisan issue in the 2026 midterms. NPR
+- **AI data-center opposition has become a defining bipartisan issue in
+  the 2026 midterms** — critic-caught, added 2026-08-11. NPR
   published original campaign-trail reporting on 2026-08-08: Abdul
   El-Sayed's Michigan Senate primary win followed campaigning against
   an OpenAI-Oracle data center in Saline Township ("I stand with local

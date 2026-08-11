@@ -58,9 +58,9 @@ the bottom.
   slipped from 08-05).
   ([leginfo SB 903 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903))
   <!-- k: t=state-therapy-chatbot-bans e= axis=policy-regulation-and-legal -->
-- ⚠ **Late catch (folded at 08-07 finalize): a New Mexico judge ordered
-  Meta to pay $567M into a child mental-health abatement fund, ruling
-  the platform's algorithmic design a "public nuisance."** Judge Bryan
+- **A New Mexico judge ordered Meta to pay $567M into a child
+  mental-health abatement fund, ruling the platform's algorithmic design
+  a "public nuisance"** — late catch, folded at the 08-07 finalize. Judge Bryan
   Biedscheid's order — on top of March's $375M jury penalty in the same
   case, for a combined $942M — splits the new fund $420M to youth
   treatment services and $147M to prevention, screening, and awareness
@@ -73,9 +73,9 @@ the bottom.
   tracked together rather than split.
   ([CNBC](https://www.cnbc.com/2026/08/06/meta-to-pay-into-567-million-fund-after-child-harms-case-new-mexico.html), [PBS](https://www.pbs.org/newshour/nation/new-mexico-court-orders-meta-to-pay-567-million-over-mental-health-harms-to-kids-online))
   <!-- k: t=meta-ai-csam-ads e=meta-ai axis=policy-regulation-and-legal -->
-- ⚠ **Late catch (folded at 08-07 finalize): SB 903 got its first
-  national wire coverage, explicitly tying it to the Kaiser labor
-  fight.** An AP story, syndicated widely, names NUHW — Kaiser's
+- **SB 903 got its first national wire coverage, explicitly tying it to
+  the Kaiser labor fight** — late catch, folded at the 08-07 finalize.
+  An AP story, syndicated widely, names NUHW — Kaiser's
   therapist union, already tracked on this map's labor thread — as a
   backer of the bill, the first time a single story has connected the
   state therapy-chatbot-bans thread and the Kaiser/AI-clinician-backlash
@@ -101,8 +101,8 @@ the bottom.
 
 ## Clinical safety & harm
 
-- ⚠ **Late catch (folded at 08-07 finalize): OpenAI announced a
-  teen-safety partnership with the American Psychological Association.**
+- **OpenAI announced a teen-safety partnership with the American
+  Psychological Association** — late catch, folded at the 08-07 finalize.
   Announced the evening of 08-06 with no primary OpenAI or APA press
   release located — this item rests on an OpenAI social post plus
   secondary coverage across three outlets, so treat scope and timeline

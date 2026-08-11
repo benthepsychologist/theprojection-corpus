@@ -135,8 +135,9 @@ shipped.
   Instinct accelerator roadmap; terms weren't disclosed.
   ([AMD Newsroom](https://newsroom.amd.com/news/amd-acquires-taalas-ai-inference/), [CNBC](https://www.cnbc.com/2026/08/06/amd-buys-taalas-startup-that-hardwires-ai-models-into-its-silicon.html))
   <!-- k: t=amd axis=capital-and-corporate -->
-- 💡 **Also circulating, not verified as a discrete deal**: SemiAnalysis
-  published an analyst projection that SpaceX could reach ~10GW of AI
+- **SemiAnalysis projects SpaceX could reach ~10GW of AI compute by
+  end-2027, with Microsoft as its largest offtaker** — also circulating,
+  not verified as a discrete deal. The analyst note
   compute by end-2027 (driving a modeled ~$300B ARR) with Microsoft as
   its largest offtaker, including a reported ~3GW/~$150B deal "in talks"
   — this is analyst modeling plus an unconfirmed in-talks report, not a
@@ -160,10 +161,10 @@ shipped.
   ([OpenAI](https://openai.com/index/responding-next-frontier-critical-cyber-capabilities/), [Axios](https://www.axios.com/2026/08/07/openai-astra-model-delay-cybersecurity-risks), [TechCrunch](https://techcrunch.com/2026/08/07/openai-says-it-slowed-astra-model-development-over-security-concerns/))
   <!-- k: t=openai-agent-security-incident,frontier-model-gov-review-precedent e=openai axis=research-and-safety sev=major -->
 - **Anthropic cut false-positive biology-safety refusals on Claude Fable 5
-  by roughly 85%, the same day a Stanford/Arc Institute team published in
-  *Science* that their Evo 1/Evo 2 models designed functional bacteriophage
-  genomes never seen in nature** (302 AI-designed sequences synthesized;
-  16 came alive and killed *E. coli* in lab dishes). Anthropic rewrote its
+  by roughly 85%** — the same day a Stanford/Arc Institute team published
+  in Science that their Evo 1/Evo 2 models designed functional
+  bacteriophage genomes never seen in nature (302 AI-designed sequences
+  synthesized; 16 came alive and killed *E. coli* in lab dishes). Anthropic rewrote its
   safety classifier to separate ordinary health questions from genuine
   dual-use research — virology, toxicology and molecular design stay
   gated, and the company says it's building a separate vetted-access path

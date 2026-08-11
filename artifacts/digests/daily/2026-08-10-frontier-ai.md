@@ -110,9 +110,9 @@ celebratory.
 
 ## China
 
-- **Late catch, true event date 2026-08-07:** the Financial Times
-  reported ByteDance is pretraining a model of up to 10 trillion
-  parameters — more than 3x Moonshot's Kimi K3 (~2.8T), explicitly
+- **ByteDance is pretraining a model of up to 10 trillion parameters,
+  more than 3x Moonshot's Kimi K3** — late catch, true event date
+  2026-08-07. The Financial Times reported the effort is explicitly
   aimed at matching Anthropic's Mythos — via its Seed division, which
   FT says has avoided distillation from other labs' outputs for over a
   year. Scale and architecture aren't finalized; 10T is described as an
@@ -194,10 +194,10 @@ celebratory.
   technology itself works.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-10/jpmorgan-leads-441-million-debt-deal-for-ai-infrastructure-firm), [Bloomberg Opinion](https://www.bloomberg.com/opinion/newsletters/2026-08-10/aindicators-hint-at-doubts-in-credit-markets))
   <!-- k: t=ai-circular-financing-risk axis=capital-and-corporate -->
-- **Late catch, true event date 2026-08-07:** Australian AI-datacenter
-  builder Firmus raised $2B (Coatue, Nvidia, Blackstone Tactical
-  Opportunities and Jane Street), more than doubling its valuation to
-  $10.5B in four months, to fund its Project Southgate AI-factory
+- **Australian AI-datacenter builder Firmus raised $2B, more than
+  doubling its valuation to $10.5B in four months** — late catch, true
+  event date 2026-08-07. The round (Coatue, Nvidia, Blackstone Tactical
+  Opportunities and Jane Street) funds its Project Southgate AI-factory
   buildout and APAC expansion — a former bitcoin miner turned pure
   AI-infrastructure builder, now over $3B raised in the past 12 months.
   Missed in the 08-05→08-09 digests; folded in now, dated to its real
