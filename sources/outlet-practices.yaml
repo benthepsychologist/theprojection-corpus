@@ -1,0 +1,863 @@
+# sources/outlet-practices.yaml — LAYER 3 of the credibility stack:
+# our own observations of an outlet's PUBLISHED PRACTICES.
+#
+# Rubric (published BEFORE any rating shipped, which is this layer's own
+# gate): https://theprojection.org/methodology/
+#
+# These are transparency indicators, NOT accuracy or quality. An outlet can
+# score 7/7 and publish badly; a one-person specialist newsletter can be the
+# best source on a beat and score 2/7. What a high count means is that the
+# outlet has made itself accountable — you can find who wrote a piece, who
+# owns the publication, and how to get an error fixed.
+#
+# `null` on an indicator means COULD NOT CHECK (the page was blocked), not
+# 'does not have'. Nulls drop out of the denominator so a badge reads 3/4
+# rather than penalising an outlet for bot-blocking.
+#
+# Lives in its own file because sources/outlet-credibility.yaml is
+# REGENERATED from external data on every rebuild — these observations must
+# survive that, so the builder merges this in rather than owning it.
+
+meta:
+  rubric: https://theprojection.org/methodology/#layer-3--published-practice-indicators
+  checked: '2026-08-11'
+  indicators:
+  - masthead
+  - bylines
+  - corrections
+  - ownership
+  - standards
+  - ad_separation
+  - primary_sourcing
+  principle: observable published practices only — never a judgement about accuracy, bias or quality
+  null_means: could not be checked (page blocked); dropped from the denominator, never counted as absent
+  domains_rated: 37
+  domains_not_rated: 2
+domains:
+  ad-hoc-news.de:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: false
+      corrections: true
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.ad-hoc-news.de/redaktion (names ~20 editorial staff plus Chefredaktion Rafael
+        Müller)
+      corrections: https://www.ad-hoc-news.de/impressum (states readers can email to have inaccurate reporting
+        about them corrected/removed)
+      ownership: https://www.ad-hoc-news.de/impressum (AD HOC NEWS Portal Aktiengesellschaft, Handelsregister
+        Berlin HRB 110418)
+    note: German financial/news portal; content is substantially aggregated wire copy (dpa, dts-nachrichtenagentur)
+      rather than staff-written — sampled articles were attributed to the wire agency, not a named reporter,
+      and did not hyperlink the underlying study/report they described. Impressum lists board chair Rafael
+      Müller as collectively responsible; /redaktion separately names ~20 editorial staff, satisfying
+      masthead. No 'Anzeige'/'Sponsored'/'Werbung' labels found on the sampled homepage or Wirtschaft
+      section, and no separate editorial-standards/ethics page found.
+  aol.co.uk:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.aol.com/articles/ai-hyperscalers-upend-usual-earnings-161405000.html
+      ownership: https://www.aol.co.uk/about-us/
+      ad_separation: https://adspecs.aol.com/ad-policy
+    note: aol.co.uk redirects to a regional AOL portal (aol.ca content served under the .co.uk/.com umbrella)
+      that mostly republishes wire-service and licensed content rather than running original reporting
+      - flagging as a syndication portal, not an original newsroom. The About page ('AOL joins Bending
+      Spoons. New ownership...') discloses current ownership by Bending Spoons but names no editorial
+      staff. Checked article byline is Reuters reporter Saqib Iqbal Ahmed, credited as Reuters wire copy,
+      not an AOL staff writer - bylines exist but are inherited from syndicated sources. That same article
+      cited ORATS data without a hyperlink to it.
+  arynews.tv:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      bylines: https://arynews.tv/pti-demands-judicial-inquiry-into-rawalpindi-firing-incident
+    note: About page names no editors/leadership and discloses no parent company/network. The site's own
+      'Writers' directory page (https://arynews.tv/en/writers/) is an empty alphabetical-filter template
+      with no populated names, even though individual articles do carry named reporter bylines (e.g. 'By
+      Asim Mallick'). Checked article is narrative wire-style reporting attributed only to 'ARY News reported',
+      with no hyperlinks to any official statement or document.
+  bhbusiness.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      masthead: https://bhbusiness.com/about/
+      bylines: https://bhbusiness.com/2026/08/05/aba-centers-of-america-continues-to-shed-jobs/
+      ownership: https://bhbusiness.com/about/
+      ad_separation: https://bhbusiness.com/2026/08/05/aba-centers-of-america-continues-to-shed-jobs/
+    note: Cloudflare blocks WebFetch and default-UA curl (403); reached via curl with a Googlebot user-agent.
+      About page names 5 staff and states the site 'is part of Arrowfly.' The one article checked has
+      inline 'Advertisement' labels breaking up the body but no links to source documents.
+  buildfastwithai.com:
+    checked: '2026-08-11'
+    by: agent-check
+    rated: false
+    reason: AI training and consulting company; publishes no journalism, so the rubric does not apply
+  businesstimes.com.sg:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.businesstimes.com.sg/about-us
+      bylines: https://www.businesstimes.com.sg/companies-markets/reits-property/centurion-accommodation-reit-eyes-sponsor-pipeline-acquisitions-h1-results-beat-ipo-forecast
+      ownership: https://www.businesstimes.com.sg/about-us
+    note: About page lists an extensive named newsroom leadership roster (Chen Huifen - Editor, Lee Su
+      Shyan - Associate Editor, and ~20 more named editors) and states plainly 'The Business Times is
+      published by SPH Media.' Contact page says readers can 'report errors that require correction' by
+      email, but no published corrections policy/page was found. About page's 'Content Marketing' service
+      description mentions advertorials 'integrated into editorial content' but no distinctly labelled
+      sponsored article or advertise-page policy statement was found to confirm a visible ad-separation
+      convention. Two checked articles (one wire-credited to 'The Business Times' generically, one bylined
+      to reporter Jeanne Mah) had no hyperlinks to underlying filings/official documents.
+  canarymedia.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://www.canarymedia.com/about/staff
+      bylines: https://www.canarymedia.com/articles/utilities/3-ways-fix-california-utility-spending
+      corrections: https://www.canarymedia.com/editorial-and-ethics-policies
+      ownership: https://www.canarymedia.com/about (nonprofit 501(c)(3), EIN 86-2478288; links to https://www.canarymedia.com/supporters)
+      standards: https://www.canarymedia.com/editorial-and-ethics-policies
+      ad_separation: https://www.canarymedia.com/articles/sponsored/the-missing-link-to-vpp-success
+      primary_sourcing: https://www.canarymedia.com/articles/utilities/3-ways-fix-california-utility-spending
+    note: Nonprofit climate/energy outlet; cleanest sheet of the ten. Editorial-and-ethics-policies page
+      explicitly states a firewall between editors and donors/advertisers and a published correction process
+      ('we post a correction note that explains the change'). Checked article hyperlinked directly to
+      a CA Senate bill, a UC Berkeley CLEE study, and other primary filings/reports.
+  claimsjournal.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      bylines: https://www.claimsjournal.com/news/national/2026/08/11/339430.htm
+      ownership: https://www.claimsjournal.com/contact/ (© 2026 by Wells Media Group, Inc.)
+      ad_separation: https://www.claimsjournal.com/ (labelled /sponsored/ article path, e.g. https://www.claimsjournal.com/sponsored/wisedocs/2026/08/11/339409.)
+      primary_sourcing: https://www.claimsjournal.com/news/national/2026/08/11/339420.htm
+    note: Trade pub, sibling of Insurance Journal in the Wells Media Group Network (both disclosed on
+      each other's site). No dedicated About/staff page (/about/ and /editors/ both 404) so masthead is
+      'not found' rather than absent-in-principle. Named bylines on articles (Gautam Naik, Brian K. Sullivan,
+      Emma Court, L.S. Howard), though some briefs run under 'Staff.' One article checked linked out to
+      an AM Best press release as its primary source; a second (Swiss Re-based) piece named its sources
+      but didn't hyperlink them — mixed but leaning toward the practice existing.
+  datacenterdynamics.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: null
+      bylines: null
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: null
+    evidence:
+      ownership: 'https://www.datacenterdynamics.com/en/ (footer: "Data Centre Dynamics Ltd (DCD)... DCD
+        is a subsidiary of InfraXmedia")'
+      ad_separation: https://www.datacenterdynamics.com/en/ (homepage MarketWatch section, items explicitly
+        tagged 'Sponsored', e.g. "Sponsored Don’t bring yesterday’s optics to tomorrow’s AI fabric")
+    blocked:
+    - masthead
+    - bylines
+    - primary_sourcing
+    note: 'IMPORTANT ACCESS CAVEAT: individual article, author-profile, and team-page URLs (/en/news/<slug>/,
+      /en/profile/<name>/, /en/work-with-us/our-team/, /en/authors/...) all returned Cloudflare bot-challenge
+      403s to both WebFetch and curl with a browser user-agent, while listing/category pages (homepage,
+      /en/news/, /en/whitepapers/) loaded fine. So masthead/bylines/primary_sourcing are marked ''not
+      found'' rather than confirmed-absent — third-party evidence (Muck Rack) independently shows DCD
+      has named staff journalists (e.g. Georgia Butler, Dan Swinhoe, Zachary Skidmore) and a search hit
+      for an ''Our Team'' page at /en/work-with-us/our-team/, but I could not load that page myself to
+      verify per the sourcing rule, so I did not credit it. Ownership and ad_separation were confirmed
+      on pages that did load: the homepage footer discloses DCD is a subsidiary of InfraXmedia, and its
+      ''MarketWatch''/sponsored-post section is explicitly labelled ''Sponsored'' distinct from the ''Latest
+      News'' wire items above it.'
+  digit.in:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: true
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.digit.in/about-us
+      bylines: https://www.digit.in/news/general/apple-faces-class-action-over-alleged-icloud-private-relay-privacy-failures-report.html
+      standards: https://www.digit.in/about-us
+    note: About page names named editors with titles (Jayesh Shinde - Executive Editor, Mithun Mohandas
+      - Managing Editor, etc.) and states 'All our staff (not just editorial) follow a strict ethical
+      and moral code of conduct' - counted as standards but it is one sentence, not a linked policy document.
+      No parent-company disclosure found anywhere (footer copyright is just '(c) 2026 Digit.in'); Digit
+      is commonly known to be part of the 9.9 Group but that name never appears on the site itself. Disclaimer/Advertise-with-us
+      links on the about page point to in-page anchors whose content could not be retrieved. Checked article
+      had no links to the underlying lawsuit/report it describes.
+  esgtoday.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.esgtoday.com/about-us/our-team/
+      bylines: https://www.esgtoday.com/google-purchases-entire-output-from-rwe-u-s-solar-project/
+    note: About/Team page names only the founder (Mark Segal); no parent company, corrections page, standards
+      page, or ad-labelling policy found; two articles checked had bylines but no links to primary documents.
+  fiercehealthcare.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: null
+      bylines: true
+      corrections: null
+      ownership: true
+      standards: null
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.fiercehealthcare.com/providers/trump-signs-executive-order-overhaul-pediatric-vaccine-recommendations
+      ownership: https://www.fiercehealthcare.com/
+    blocked:
+    - masthead
+    - corrections
+    - standards
+    note: Cloudflare 403s the '/fiercehealthcarecom/about-us' and '/editorial-advisory-council' paths
+      specifically (via both WebFetch and curl with 3 user agents, including a referer header); homepage
+      and most article pages are reachable. Ownership evidence is the homepage footer copyright line,
+      '©2026 Questex LLC All rights reserved.' Masthead/corrections/standards could not be verified because
+      the pages that would carry them are blocked -- treat as 'not found' rather than confirmed absent.
+  globalbankingandfinance.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.globalbankingandfinance.com/about-us
+      bylines: https://www.globalbankingandfinance.com/european-stocks-pause-near-record-highs-oil-rally-keeps/
+      corrections: https://www.globalbankingandfinance.com/about-us
+      ownership: https://www.globalbankingandfinance.com/about-us
+      standards: https://www.globalbankingandfinance.com/about-us
+    note: About page names CEO/Editor-in-Chief and other editorial staff, discloses two owning entities
+      (GBAF Publications Ltd, UK; GBAF Media Publications LLC FZ, UAE, with a UK company registration
+      number), and links to a dedicated Corrections Policy, Editorial Code of Ethics, Fact Checking Policy
+      and Publishing Principles. The one article checked is a Reuters wire reprint with a named byline
+      but no primary-document links; a separate advertising page did not describe how sponsored content
+      is labeled.
+  healthcaredive.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://www.healthcaredive.com/editors/
+      bylines: https://www.healthcaredive.com/news/cassidy-sanders-press-doj-former-steward-ceos-contempt-referral-ralph-de-la-torre/827566/
+      corrections: https://www.healthcaredive.com/contact/
+      ownership: https://www.healthcaredive.com/about/
+      ad_separation: https://www.healthcaredive.com/spons/why-health-plans-are-leaving-surgical-cost-savings-on-the-table/821904/
+      primary_sourcing: https://www.healthcaredive.com/news/cassidy-sanders-press-doj-former-steward-ceos-contempt-referral-ralph-de-la-torre/827566/
+    note: Owned by Informa TechTarget/Informa PLC (disclosed on /about/). Corrections evidence is a 'Report
+      a correction' option in the contact form, not a standalone policy document. No dedicated editorial-standards/ethics
+      page found.
+  hitconsultant.net:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://hitconsultant.net/about-us/
+      bylines: https://hitconsultant.net/2026/08/10/silent-breakdown-revenue-cycle-management-rcm/
+    note: About page names Fred Pennic (Founder & Editor in Chief) and 3 other staff. No ownership/parent-company
+      disclosure, no corrections or editorial-standards policy found (only Op-Ed submission guidelines).
+      The /advertise/ page lists 'Sponsored Content' as something advertisers can buy but does not state
+      how it's visually labeled, and no labeled sponsored item was found on the homepage, so ad_separation
+      is scored false rather than guessed true. Article checked (a contributed opinion piece) cited statistics
+      with no source links.
+  insurancejournal.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://www.insurancejournal.com/about/
+      bylines: https://www.insurancejournal.com/news/national/2026/08/11/881053.htm
+      ownership: https://www.insurancejournal.com/about/
+      ad_separation: https://www.insurancejournal.com/ (homepage 'Sponsored Newswire' section)
+      primary_sourcing: https://www.insurancejournal.com/news/national/2026/08/11/881053.htm
+    note: Trade publication owned by Wells Media Group, Inc. (disclosed in footer/about). About page names
+      editors/contributors (Catherine Oak, Andrea Wells, Chad Hemenway, Andrew G. Simpson, etc.) by name
+      and role. Checked article links directly to CDC.gov and AP. No dedicated corrections or standards/ethics
+      page found (editorial-guidelines and about-us URLs both 404).
+  kffhealthnews.org:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: null
+      primary_sourcing: true
+    evidence:
+      masthead: https://kffhealthnews.org/about-us/
+      bylines: https://kffhealthnews.org/health-industry/hospital-mergers-monopolies-drive-healthcare-costs-asheville-north-carolina/
+      corrections: https://kffhealthnews.org/ethics-guidelines/
+      ownership: https://kffhealthnews.org/about-us/
+      standards: https://kffhealthnews.org/ethics-guidelines/
+      primary_sourcing: https://kffhealthnews.org/health-industry/hospital-mergers-monopolies-drive-healthcare-costs-asheville-north-carolina/
+    not_applicable:
+      ad_separation: carries no advertising of any kind
+    note: Nonprofit newsroom; About page discloses it is a program of KFF (Henry J. Kaiser Family Foundation)
+      and lists named funders. Ethics Guidelines page has an explicit corrections clause. Site states
+      it accepts no advertising, but that's not the same as a labelled-sponsored-content example, so ad_separation
+      is recorded as not found.
+  livemint.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.livemint.com/companies/news/openai-lets-employees-cash-out-7-billion-ahead-of-potential-ipo-11786456232588.html
+      corrections: https://www.livemint.com/mint-code
+      ownership: https://www.livemint.com/about-us
+      standards: https://www.livemint.com/mint-code
+      ad_separation: https://www.livemint.com/mint-code
+    note: WebFetch could not load this domain at all; fetched via curl with a browser user-agent instead
+      (worked directly, no proxy needed). 'Mint Code of Journalistic Conduct' (https://www.livemint.com/mint-code)
+      covers a zero-tolerance corrections policy and an explicit editorial/advertising firewall; a separate
+      DNPA-based 'Code of Ethics' page also exists. About page discloses HT Media Group as publisher.
+      No named individual editorial staff/leadership found on About page or elsewhere; three articles
+      checked (named bylines each time) had no links to primary source documents.
+  marketscreener.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: false
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.marketscreener.com/legal-notice
+      ownership: https://www.marketscreener.com/legal-notice
+    note: Legal notice names a 'publication director' (Franck Morel) and the operating company (Surperformance
+      SAS). Three news items checked were all wire/press-release attributions (MT Newswires, Publicnow/Apple
+      Inc.), not named individual bylines; no corrections, standards, or advertising-separation page found.
+  medtechdive.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://www.medtechdive.com/editors/
+      bylines: https://www.medtechdive.com/news/teledyne-inks-11b-takeover-of-varex-imaging/827526/
+      corrections: https://www.medtechdive.com/contact/
+      ownership: https://www.medtechdive.com/about/
+      ad_separation: https://www.medtechdive.com/spons/expert-insights-to-transform-your-evidence-generation-strategy/824427/
+      primary_sourcing: https://www.medtechdive.com/news/teledyne-inks-11b-takeover-of-varex-imaging/827526/
+    note: Same Informa TechTarget ownership pattern and same 'Report a correction' contact-form mechanism
+      as sibling site healthcaredive.com; checked independently on its own URLs. No dedicated editorial-standards/ethics
+      page found.
+  memeburn.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      bylines: https://memeburn.com/tsmc-265-billion-us-investment-ai-chips/
+      ad_separation: https://memeburn.com/news/partnered/
+    note: 'About page (https://memeburn.com/about/) names no editorial staff/leadership and states no
+      ownership beyond ''(c) 2026 MemeBurn''; the page <title> tag reads ''About Burn Media'' but that
+      name never appears in the visible body text, so not counted as a disclosure. ''Partnered'' and ''Press
+      Release'' are separate nav categories, each item on /news/partnered/ tagged ''Partnered'' distinct
+      from regular bylined news. Checked 2 articles for primary sourcing: one linked TSMC''s own investor-relations
+      page, the other (Bitcoin ETF story) had no external source links, so not counted as a routine practice.'
+  moneycontrol.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: null
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.moneycontrol.com/news/business/companies/vodafone-idea-sees-no-postpaid-churn-from-airtel-s-5g-fast-lane-14002196.html
+      ownership: https://www.moneycontrol.com/cdata/disclaim.php
+    blocked:
+    - ad_separation
+    note: The canonical /about-us/ URL consistently returns HTTP 503 (Akamai edge error); used the working
+      mirror at /cdata/aboutus.php plus the disclaimer page instead, both of which name Network18 Media
+      & Investments Limited as the copyright holder/publisher but no individual leadership. Three articles
+      checked all had named bylines but no links to primary documents. No corrections, editorial-standards,
+      or clearly-labelled sponsored-content page was found (an advertising-page check also 503'd).
+  morningstar.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: null
+    evidence:
+      masthead: https://www.morningstar.com/people/michael-field
+      bylines: https://www.morningstar.com/editorial-policy
+      corrections: https://www.morningstar.com/editorial-policy
+      ownership: https://www.morningstar.com/people/michael-field
+      standards: https://www.morningstar.com/editorial-policy
+      ad_separation: https://www.morningstar.com/editorial-policy
+    blocked:
+    - primary_sourcing
+    note: Author bio pages (e.g. /people/michael-field) name specific analysts/editors with titles and
+      disclose 'Morningstar Holland BV, a wholly owned subsidiary of Morningstar, Inc.' The /editorial-policy
+      page is a full published standards document covering independence, automation/AI disclosure, conflicts
+      of interest, an explicit 'Corrections and Clarifications' section, and an explicit ad-separation
+      line ('any sponsored content... must be distinguishable from our editorial content'). A dedicated
+      /corrections page and /company/about-us page exist in nav but returned HTTP 202 bot-challenge responses
+      on every attempt and could not be read directly - citing editorial-policy instead since it contains
+      the same corrections commitment inline. Could not access individual stock-analysis articles (also
+      202-blocked) to directly verify routine primary-source linking, so primary_sourcing is left as not-confirmed
+      rather than assumed from reputation.
+  newsfromthestates.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: false
+      primary_sourcing: true
+    evidence:
+      bylines: https://www.newsfromthestates.com/article/court-pauses-pentagon-blacklist-middletown-pharma-plant-co
+      corrections: https://www.newsfromthestates.com/ethics-policy
+      ownership: https://www.newsfromthestates.com/about-us
+      standards: https://www.newsfromthestates.com/ethics-policy
+      primary_sourcing: https://www.newsfromthestates.com/article/federal-contract-documents-show-ice-24-hour-call-center-planned-adams-tennessee
+    note: Site blocks WebFetch/curl with a Cloudflare JS challenge; content was retrieved via the r.jina.ai
+      reader proxy. About page and parent org (States Newsroom) never name individual editorial leadership,
+      only generic role descriptions. Parent states it runs no advertising, so there's no sponsored-content
+      item to check for labelling.
+  pymnts.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: false
+      corrections: false
+      ownership: true
+      standards: true
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      ownership: https://www.pymnts.com/about/ ("PYMNTS.com is a wholly owned subsidiary of What's Next
+        Media & Analytics")
+      standards: https://www.pymnts.com/cpi/our-editorial-policy/
+    note: 'No staff/leadership names found anywhere on About or Contact pages. Sampled news articles (retail,
+      AI, economy, payments) all carried a generic ''PYMNTS'' byline, no individual reporter named. The
+      one editorial-policy page found is scoped explicitly to the CPI (Competition Policy International)
+      vertical PYMNTS owns, not to pymnts.com''s news content generally — flagging this as borderline;
+      counted true since it''s a real, hosted, on-domain policy document. Checked an Anthropic-IPO article:
+      it named a WSJ report as its source but did not hyperlink it, and other outbound links were only
+      to PYMNTS''s own prior coverage — no corrections page or sponsored-content labelling found on the
+      pages checked.'
+  semafor.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://www.semafor.com/about
+      bylines: https://www.semafor.com/article/08/06/2026/the-us-has-a-sanctions-problem
+      ad_separation: https://www.semafor.com/about
+      primary_sourcing: https://www.semafor.com/article/08/07/2026/trump-unveils-new-critical-minerals-investments
+    note: About page lists 25+ named editors/leaders and states 'All advertising is clearly presented
+      as commercial content, distinct from editorial content.' No dedicated corrections page or formal
+      ethics/standards policy found; no ownership/investor disclosure found on-site.
+  siliconangle.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://siliconangle.com/about-us/
+      bylines: https://siliconangle.com/2026/08/11/nvidia-releases-nemotron-3-5-lightning-nemo-switchyard-give-enterprise-ai-capability-options/
+      ownership: https://siliconangle.com/about-us/
+    note: The plain '/about/' URL returns HTTP 200 with an empty body in this environment; the real page
+      is '/about-us/', which names founders John Furrier and Dave Vellante and states SiliconANGLE Media
+      is independent (est. 2010) -- counted for both masthead and ownership. Checked article and Terms
+      of Use page showed no corrections/standards policy and no primary-document links (it linked only
+      to a prior SiliconANGLE article).
+  slguardian.org:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: true
+    evidence:
+      bylines: https://www.slguardian.org/gazas-board-of-pieces/
+      ownership: https://www.slguardian.org/about/
+      primary_sourcing: https://www.slguardian.org/gazas-board-of-pieces/
+    note: About/disclaimer pages describe it as 'an online newspaper founded in August 2007 by a group
+      of concerned Sri Lankan citizens... independent and nonprofit' - counted as ownership disclosure
+      though no individuals/funders are named, just its non-profit collective structure. No named editorial
+      staff found anywhere. Comment-policy page mentions 'a variety of complaints handling mechanisms'
+      but never describes or links one, so not counted as a corrections policy. Primary-sourcing verdict
+      rests on one confirmed article (a Chris Hedges opinion piece linking BBC, Al Jazeera, UN, ICJ, World
+      Bank sources); a second article's byline could not be checked (403 blocked) and another had no listed
+      byline, so this may not generalize evenly across the site.
+  southernmarylandchronicle.com:
+    checked: '2026-08-11'
+    by: agent-check
+    rated: false
+    unreachable: true
+    reason: Every URL tried -- homepage, /about/, /contact/ -- returned HTTP 429 'Too Many Requests' via
+      curl (tried with 3 different user agents and cumulative backoffs of roughly 90+ seconds) and HTTP
+      403/429 via WebFetch. No page on this domain could be retrieved during this session, so no indicators
+      could be checked.
+  stockanalysis.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: false
+      corrections: true
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://stockanalysis.com/about/
+      corrections: https://stockanalysis.com/about/
+      ownership: https://stockanalysis.com/about/
+    note: 'Primarily a stock-data/screener platform, not a byline newsroom: its About page names the founder
+      and part-owners (counts as ownership disclosure), but its /news/ page aggregates headlines from
+      other outlets (WSJ, CNBC, TipRanks) rather than publishing its own bylined articles, so bylines
+      and primary_sourcing are scored false. Corrections indicator rests on an informal invite-a-correction
+      line on the About page, not a dedicated policy page.'
+  stocktitan.net:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: false
+      corrections: true
+      ownership: false
+      standards: true
+      ad_separation: false
+      primary_sourcing: true
+    evidence:
+      corrections: https://www.stocktitan.net/editorial-policy
+      standards: https://www.stocktitan.net/editorial-policy
+      primary_sourcing: https://www.stocktitan.net/news/GTM/zoom-info-data-now-integrated-with-microsoft-copilot-studio-and-hi07eemvpt25.html
+    note: Editorial policy page describes a collective 'Editorial Team' with no individual names (masthead
+      false), states factual errors 'are corrected as soon as they are verified' (corrections) and lists
+      exclusion criteria for rumors/opinion/promotional content (standards). No parent-company/investor
+      disclosure found (ownership false). The one article checked is an automated press-release rewrite
+      with only a PR contact, not a byline, and links directly to the original Business Wire release --
+      matching the policy page's own claim that 'news and filing pages link to the original issuer press
+      release or SEC filing.'
+  technode.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      masthead: https://technode.com/about/ ("Our staff" section names Jill Shen, Jessie Wu, Shuang Jing
+        with roles/bios)
+      bylines: https://technode.com/about/
+      ownership: https://technode.com/about/ ("Started in 2007 by Dr. Lu Gang"; TechNode Group as parent)
+      standards: https://technode.com/about/ ("Both sites stress ethical and professional journalism;
+        respect for our sources...")
+      ad_separation: 'https://technode.com/2026/08/07/off-the-grid-explorer-ed-stafford-jetour-test-off-road-boundaries-in-harbin/
+        ("Editor’s note: sponsored post")'
+    note: 'About page names staff reporters with bios and states general ethical-journalism commitments
+      (no separate formal standards document beyond that page). Homepage/category listings mostly show
+      generic ''TechNode Staff'' or ''TechNode Feed'' bylines on wire-style briefs pulled from Chinese
+      sources (e.g. one brief credited only ''[Ebrun, in Chinese]'' with no hyperlink) — primary_sourcing
+      marked false on the pattern observed, though longer features by named staff reporters may differ;
+      a sponsored post is explicitly labelled ''Editor''s note: sponsored post.'' technode.com blocks
+      generic fetch tools (403) so verification relied on a browser-UA curl. Correcting a copy-paste evidence-URL
+      error: bylines evidence is https://technode.com/about/ (staff bios) plus the generic ''TechNode
+      Staff''/''TechNode Feed'' bylines visible on https://technode.com/category/news/ — named individuals
+      are established staff, but the sampled recent articles themselves were not bylined to them, so this
+      is marked true on the strength of the About page identifying named reporters as current staff, with
+      a caveat.'
+  the-decoder.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://the-decoder.com/about
+      bylines: https://the-decoder.com/nvidia-guarantees-its-own-chips-value-to-unlock-500-billion-in-ai-infrastructure-financing/
+      corrections: https://the-decoder.com/review-and-ethics-guidelines/
+      ownership: https://the-decoder.com/legal-notice
+      standards: https://the-decoder.com/review-and-ethics-guidelines/
+      ad_separation: https://the-decoder.com/about
+      primary_sourcing: https://the-decoder.com/nvidia-guarantees-its-own-chips-value-to-unlock-500-billion-in-ai-infrastructure-financing/
+    note: Legal notice (Impressum) names Deep Content GmbH (trading as THE DECODER, part of Heise); About
+      page names the team and states ads are marked 'advertisement'; Review and Ethics Guidelines page
+      contains an explicit corrections process.
+  themarketsdaily.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: false
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.themarketsdaily.com/2026/08/11/research-analysts-recent-ratings-updates-for-surgery-partners-sgry.html
+    note: Automated stock-alert generator (MarketBeat-network site, same scripts/CDN as marketbeat.com),
+      not a staffed newsroom. Named bylines appear on template-driven ratings posts but no team/about
+      page names staff, no ownership disclosure appears on-site itself, and articles link only to other
+      MarketBeat/themarketsdaily posts, never to filings or press releases.
+  thenationalnews.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.thenationalnews.com/about-us/
+      bylines: https://www.thenationalnews.com/business/energy/2026/08/10/how-us-conditions-on-saudi-nuclear-accord-could-torpedo-the-deal/
+      corrections: https://www.thenationalnews.com/about-us/
+      ownership: https://www.thenationalnews.com/about-us/
+      standards: https://www.thenationalnews.com/about-us/
+    note: About page names Editor-in-Chief Mina Al-Oraibi and other named editors, discloses acquisition
+      by International Media Investures in 2017, and states the outlet is a member of the UK's Independent
+      Press Standards Organisation (IPSO), abiding by the Editors' Code of Practice, with a named London
+      Bureau Chief (Damien McElroy) as complaints contact — counted as satisfying both standards and corrections
+      since it's a formal regulatory membership with a named complaints route, though there's no separate
+      dedicated /corrections page. Bylines mix named columnists (Robin Mills, Ken Fisher) with unattributed
+      'Staff' pieces. Two articles checked for outbound links to primary documents came back internal-only
+      (cross-links to the paper's own prior coverage), and no sponsored-content labelling was found on
+      the pages sampled.
+  theneurondaily.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: true
+      primary_sourcing: true
+    evidence:
+      masthead: https://theneurondaily.com/authors
+      bylines: https://theneurondaily.com/p/claude-hacked-a-gym-website
+      ownership: 'https://theneurondaily.com/ (footer: © 2026 TechnologyAdvice, LLC.)'
+      ad_separation: https://theneurondaily.com/p/claude-hacked-a-gym-website
+      primary_sourcing: https://theneurondaily.com/p/claude-hacked-a-gym-website
+    note: AI newsletter (beehiiv platform, 700k subscribers), not a conventional news site. Named writers
+      (Eric Gerard Ruiz, Grant Harvey, Matthew Robinson) byline every issue and link out to the original
+      reporting (TechCrunch, Reuters, Bloomberg, ABC News) each roundup draws from; issues carry a labelled
+      'FROM OUR PARTNERS' sponsor section. /authors names only one person (Grant Harvey) with a role,
+      so masthead is thin but present. No corrections or standards page found.
+  tickerreport.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: false
+      ad_separation: false
+      primary_sourcing: false
+    evidence:
+      bylines: https://tickerreport.com/banking-finance/13538826/haemonetics-nysehae-sets-new-12-month-high-still-a-buy.html
+      ownership: https://tickerreport.com/about-tickerreport-com/
+    note: Automated stock-alert generator, not a staffed newsroom. About page states plainly it is 'owned
+      by MarketBeat Media, LLC' and the footer copyright repeats 'Ticker Report MarketBeat Media, LLC'
+      with a Sioux Falls, SD address. Disclaimer page (https://www.tickerreport.com/about-tickerreport-com/disclaimer)
+      is an investment-advice disclaimer, not a corrections policy. Checked article cites analyst firms
+      by name (JPMorgan, BofA, etc.) without linking their reports.
+  tomshardware.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: true
+      bylines: true
+      corrections: true
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      masthead: https://www.tomshardware.com/about-us
+      bylines: https://www.tomshardware.com/pc-components/cpus/amd-highlights-ryzen-5-5500-briefly-topping-amazon-cpu-best-sellers-beating-9800x3d-usd80-ddr4-cpu-remains-a-top-seller-during-memory-crunch
+      corrections: https://www.tomshardware.com/about-us
+      ownership: https://www.tomshardware.com/about-us
+      standards: https://www.tomshardware.com/about-us
+      ad_separation: https://www.tomshardware.com/about-us
+    note: 'About page''s ''Ethics and Standards'' section states Tom''s Hardware is IPSO-regulated, follows
+      the Editors'' Code of Practice, and gives a complaints contact (legal@futurenet.com) -- counted
+      as both standards and corrections evidence. Ownership: ''Tom''s Hardware is part of Future US Inc.''
+      Three articles checked (2 news, 1 review) cited sources/company statements but did not routinely
+      link out to primary documents.'
+  tradingkey.com:
+    checked: '2026-08-11'
+    by: agent-check
+    indicators:
+      masthead: false
+      bylines: true
+      corrections: false
+      ownership: true
+      standards: true
+      ad_separation: true
+      primary_sourcing: false
+    evidence:
+      bylines: https://www.tradingkey.com/analysis/stocks/us-stocks/262096478-intel-intc-20-billion-stock-offering-ai-foundry-price-recovery-tradingkey
+      ownership: https://www.tradingkey.com/about-us
+      standards: https://www.tradingkey.com/about-us/editorial-policy
+      ad_separation: https://www.tradingkey.com/about-us/editorial-policy
+    note: 'Bylines are inconsistent by section: longer ''Analysis'' pieces carry a named author with a
+      title (e.g. Andy Chen, Financial Editor), but the /news market-mover/wire feed is credited only
+      to ''TradingKey'' or a wire source like ''Fxstreet.'' No individual staff/leadership names found
+      on the About page (masthead false).'

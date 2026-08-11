@@ -364,7 +364,12 @@ def build_stories(pub_slugs, threads_by_slug):
                                  "pc1": None if redirect else c.get("pc1"),
                                  "band": None if redirect else c.get("band"),
                                  "rsp": None if redirect else c.get("rsp"),
-                                 "class": None if redirect else c.get("class")})
+                                 "class": None if redirect else c.get("class"),
+                                 # layer 3 — published-practice COUNT, not a
+                                 # score, and rendered on its own scale so it
+                                 # can't be misread as a quality band
+                                 "practices": None if redirect else c.get("practices"),
+                                 "practices_of": None if redirect else c.get("practices_of")})
             stories.append({
                 "id": sid, "headline": headline, "date": date,
                 "thread": slug, "thread_title": t.get("title", slug),
@@ -872,7 +877,8 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
         f.write(json.dumps(stories, default=str))
     n_src = sum(len(s["sources"]) for s in stories)
     n_badged = sum(1 for s in stories for x in s["sources"]
-                   if x.get("band") or x.get("rsp") or x.get("class"))
+                   if x.get("band") or x.get("rsp") or x.get("class")
+                   or x.get("practices") is not None)
     print(f"  wrote data/stories.json ({len(stories)} stories, "
           f"{n_src} sources, {n_badged} credibility-badged)")
 

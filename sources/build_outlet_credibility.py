@@ -117,6 +117,32 @@ def classify_primary(domain):
     return None
 
 
+INDICATORS = ["masthead", "bylines", "corrections", "ownership", "standards",
+              "ad_separation", "primary_sourcing"]
+PRACTICES_FILE = os.path.join(ROOT, "sources/outlet-practices.yaml")
+MIN_CHECKED = 4   # below this, publish no rating rather than a thin one
+
+
+def load_practices():
+    """Layer 3 — our OWN published-practice observations, per domain.
+
+    Kept in a SEPARATE committed file on purpose. pc1 and rsp are re-derived
+    from external sources on every rebuild and can be thrown away safely;
+    these are observations we made, with evidence urls and a checked date, and
+    a rebuild must never silently discard them. Merged in below.
+
+    The rubric is published at /methodology/ BEFORE any rating ships — that
+    gate is written into this layer's own spec ("Rubric TBD on the methodology
+    page before any rating ships; observable practices only, never truth
+    verdicts") and is the reason layer 3 sat unbuilt from 2026-08-07 to
+    2026-08-11.
+    """
+    if not os.path.exists(PRACTICES_FILE):
+        return {}
+    import yaml
+    return (yaml.safe_load(open(PRACTICES_FILE)) or {}).get("domains", {}) or {}
+
+
 def band_of(pc1):
     return "high" if pc1 >= 0.8 else "solid" if pc1 >= 0.6 else "mixed" if pc1 >= 0.4 else "low"
 
@@ -208,6 +234,9 @@ def main():
     print("fetching Wikipedia perennial sources …", flush=True)
     rsp = load_rsp()
     print(f"  {len(rsp)} domains with a verdict")
+    practices = load_practices()
+    if practices:
+        print(f"practice sheets on file: {len(practices)}")
     cited, buf = load_universe()
     universe = sorted(set(cited) | {d for d, v in buf.items() if v >= BUFFER_FLOOR})
     print(f"universe: {len(universe)} domains "
@@ -231,6 +260,30 @@ def main():
         if cls:
             rec["class"] = cls
             stats["primary"] += 1
+        # Layer 3 — published-practice indicators, our own observations.
+        # A count, never a score: it measures whether an outlet has made
+        # itself ACCOUNTABLE (who wrote this, who owns it, how to get an
+        # error fixed), not whether it is right.
+        pr = practices.get(d)
+        if pr and pr.get("indicators") and not pr.get("unreachable"):
+            ind = pr["indicators"]
+            # An indicator recorded as null/None was NOT CHECKABLE — the page
+            # it lives on blocked us — and is dropped from the denominator.
+            # Counting a blocked About page as an absent one would turn a
+            # transparency check into a penalty for bot-blocking, which is a
+            # different measurement. fiercehealthcare.com is the live case:
+            # articles serve fine, /about-us and /editorial-advisory-council
+            # hard-403.
+            checked = [k for k in INDICATORS if ind.get(k) is not None]
+            if len(checked) >= MIN_CHECKED:
+                rec["practices"] = sum(1 for k in checked if ind[k])
+                rec["practices_of"] = len(checked)
+                rec["practices_checked"] = str(pr.get("checked", ""))
+                if len(checked) < len(INDICATORS):
+                    rec["practices_partial"] = True
+                stats["practices"] += 1
+            else:
+                stats["practices_too_thin"] += 1
         if not rec:
             rec["status"] = "unrated"
             stats["unrated"] += 1
@@ -244,11 +297,13 @@ def main():
         domains[d] = rec
 
     cit_total = sum(cited.values())
+    # `practices` counts as a badge — it is layer 3, and excluding it would
+    # under-report exactly the trade-press coverage this layer exists to add.
     cit_cov = sum(n for d, n in cited.items()
-                  if any(k in domains[d] for k in ("pc1", "rsp", "class")))
+                  if any(k in domains[d] for k in ("pc1", "rsp", "class", "practices")))
     print(f"\n  pc1-rated {stats['pc1']} · rsp {stats['rsp']} ({stats['rsp_split']} split) · "
-          f"primary-source {stats['primary']} · unrated {stats['unrated']} "
-          f"({stats['gap_fill']} gap_fill)")
+          f"primary-source {stats['primary']} · practices {stats['practices']} · "
+          f"unrated {stats['unrated']} ({stats['gap_fill']} gap_fill)")
     print(f"  CITATION COVERAGE: {cit_cov}/{cit_total} = {100*cit_cov//max(cit_total,1)}%")
 
     if args.dry_run:
@@ -267,6 +322,7 @@ def main():
                       "pc1_rated": stats["pc1"], "rsp_tagged": stats["rsp"],
                       "rsp_split": stats["rsp_split"],
                       "primary_source": stats["primary"],
+                      "practice_rated": stats["practices"],
                       "unrated": stats["unrated"], "gap_fill_candidates": stats["gap_fill"]},
              "domains": domains}
     with open(OUT, "w") as f:
