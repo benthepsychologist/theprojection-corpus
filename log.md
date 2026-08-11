@@ -2962,3 +2962,107 @@ accumulate citations. Layer 3's rubric could be re-run periodically (the
 sheets carry a `checked` date), and a handful of the checks are worth a
 second pass with a real browser where bot-blocking beat the agents:
 fiercehealthcare, datacenterdynamics, morningstar, moneycontrol.
+
+## 2026-08-11 (afternoon) — /daily: 08-10 finalized ON TIME, and the first flash in weeks
+
+The first on-time finalize in a week: run 3.5h after 08-10's coverage window
+opened rather than a day late. All four lenses plus the front page closed
+`final`; 08-11 extended through its ~6 uncurated hours.
+
+**FLASH FILED — M7.4 earthquake, western Colombia** (08-10 12:34 UTC, 110km
+deep, USGS red alert — its highest impact category — MMI VIII, no tsunami).
+Touches none of the four lenses, which is exactly what the rail is for. Filed
+08-11 per this file's own late-catch rule so its 24h runs from the catch, not
+from the day we missed.
+
+⚠ **Two verification lessons, both mine.** First: a WebFetch summary of the
+USGS feed reported the event as dated **2026-04-08** — four months stale. On
+that summary I would have rejected a real event as a re-index. Parsing the
+raw geojson showed 2026-08-10. **The summarizer was wrong; the data was
+right** — parse primary data, don't read summaries of it, on any decision
+that goes public. Second: the front-page briefing flattened "2,700 missing on
+citizen-run tracking sites (unconfirmed by authorities)" into a bare "2,700
+more reported missing". Restored before publish. A qualifier that survives
+the source and the digest and then dies at the last layer before the reader
+is the exact failure this pipeline exists to prevent. The flash body itself
+states plainly which facts are USGS's and which are attributed reporting —
+web-search budget was exhausted (200/200) so the toll could not be
+independently re-verified.
+
+**A M7.4 disaster went uncarried by this map for ~29 hours.** World-news has
+no collector lane by design; that is the cost, shown concretely.
+
+**COVERAGE CRITICS — 5 real misses.**
+- **ai (4)** — Claude's Riemann-zeta bound (41.6%→67.2%, ~60 subagents over
+  1.5 days after 650 failed approaches, Lean-verified, and explicitly NOT
+  progress toward proving the hypothesis, which is Anthropic's own
+  qualifier); Amazon's Pecos County site acquisition + gas-plant power
+  contract (plant permitted >30Mt CO2/yr); Google's TPU Raiden release,
+  which answers `google-capex`'s own standing "TPU externalization" watch
+  item; North Korea's Kimsuky running self-hosted AI tooling. Pattern the
+  critic named: all three non-Riemann misses are infrastructure- or
+  security-adjacent, what a sweep tuned for big-lab capital moves
+  under-indexes on.
+- **global-capital (1 + one instructive false positive)** — Moody's on
+  banks' AI-vendor concentration, logged at its true 08-09 date on
+  `ai-buildout-debt-risk` rather than reopening a closed digest. The flagged
+  "miss", Microsoft's Maia 300, was NOT one: already in the ai digest, on
+  `microsoft-capex`, and on the ledger. **A per-lens critic reads only its
+  own lens's digest, so a correctly-placed cross-lens story reads as a
+  gap.** Recorded as a property of the critic's design; it will recur.
+- **mental-health (0)** — and the reason is the finding: no benchmark
+  published MH content that day, and BHB's two 08-10 posts were already our
+  own lead bullets.
+
+**MY BRIEF WAS WRONG TWICE AND THE CURATOR CAUGHT IT.** I passed the critic's
+framing through without re-verifying: the Amazon item is a site acquisition
+plus power contract, not "financing", and its event date is 08-07 not 08-08.
+The curator also could not verify two corroborators my brief named for the
+Kimsuky story and dropped them rather than cite unverified. That is the
+tier-1/tier-2 overlap doing its job — the curator checked the brief instead
+of trusting it.
+
+**FOUND WITHOUT A BENCHMARK: CoreWeave closed a $2.6B delayed-draw term loan
+at SOFR+550 — 10.44% YTM — after guidance flexed WIDER from S+425-450.**
+Confirmed against the SEC 8-K. The direction of the flex is the fact: lenders
+demanded more than first offered, three days before the Q2 print. First
+confirmed transaction-level coupon in this map's AI-debt record; resolves a
+`coreweave-backlog-bet` flag open since 07-30.
+
+**COLLECTOR BUG FILED.** `semantic_scholar` exhausted its 600s lane budget on
+BOTH runs today (228 and 222 terms skipped). The cap is deliberate and fine.
+The defect is that terms iterate in list order with no rotation, so the
+skipped tail is **the same ~220 terms every run** — swept at 0% permanently
+while the first ~185 are swept at 100% — and the manifest records only a
+count, never which, so it leaves no trace in provenance. This is the academic
+lane, the EBP strand's primary feed. Brief proposes a rotating offset
+modelled on `/daily`'s own cold-rotation pattern.
+
+**Agents refusing bad input, worth keeping:** the mental-health briefing
+declined an "11% uptake" figure I had put in its prompt context, because the
+number is not in the data pack — "the brief requires every fact trace to the
+pack, not to outside/prompt-level context." It also dropped a CCBHC item
+whose only url was a Google News *search query*. The global-capital briefing
+excluded four items rather than cite links that don't support their facts (a
+bond-yield page offered as the source for a Warsh quote, a bare bloomberg.com
+root, two google-news redirects). The ai briefing fixed a sourcing error
+mid-build, moving a citation from an adjacent item to the one that carries
+the claim.
+
+Map: 7 `last_seen` bumps (`google-capex` 07-31→08-10, off the morning's stale
+list); 5 actor roll-ups refreshed; `datacenter-power-grid` gained
+`amazon-aws`, which it needed for its own largest instance; 5 ledger entries
+annotated with evening evidence, all correctly still pending.
+
+Published and **live-verified**: flash rail rendering with its USGS-sourced
+body, the restored qualifier live on the front feed, 10 story links and 0
+external links in the feed bullets. Artifact 855 KB / 58 items, still over
+the 600 KB cap.
+
+**Pick up:** CoreWeave's Q2 print lands 5pm ET today — `coreweave-q2-earnings`
+resolves on the next pass, as does `kaiser-nuhw-mediation-0811` once a
+readout appears (neither party had posted one by 14:00 ET). Colorado's
+HB 26-1195 takes effect 08-12 and should grade as `hit`. The flash expires on
+its own at end of day 08-11 — no action needed, and per the rule, if Colombia
+still warrants the rail tomorrow that means a NEW event, which earns a new
+flash. Six briefs now sit in kestrel's INBOX from today.
