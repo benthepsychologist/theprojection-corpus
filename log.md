@@ -2616,3 +2616,126 @@ build had finished, a reminder that "queued" isn't "live").
 **Pick up:** 08-09 is now getting close to finalizable (~14:00 UTC) —
 next `/daily` pass should run the coverage critic on it. Nothing else
 blocking. All three repos verified clean at wrap time.
+
+## 2026-08-11 — /daily: 08-09 finalized 30h late, 08-10's ~21h gap closed, and story links purged from every feed
+
+Two tracks, run together at Ben's instruction ("fix the clickable claims
+while daily runs").
+
+**Track B — the link fix, which is the second attempt at it.** Ben:
+feed bullets "still go to individual news stories which should never be a
+link target anywhere on the site EXCEPT where a thread or story page lists
+SOURCES. every one of those feed links is a story with multiple sources not
+a link to source." The 2026-08-07 fix was right in intent — look the bullet's
+url up, redirect to its thread page — but built on `payload.items`, which
+`render_read.py` windows to the current Mon-Sun week. Today that payload held
+THREE items against ~40 briefing bullets, so nearly every lookup missed and
+fell through to the external-link branch. **The fallback was the bug**, and it
+existed in three separate branches.
+
+An audit of all 28 layout files found the same defect in `readout.html` —
+the executive readout at the top of every thread, lens, entity and map page,
+whose summary block had no internal-redirect attempt at all. Five call sites
+in total, not the two Ben named.
+
+Fixed with two new partials so the policy has ONE implementation:
+`story-index.html` (url→thread map built once per build from the un-windowed
+readouts news set: 451 items, 428 thread-tagged) and `story-link.html`
+(resolution order: item's own .threads → internal url → index lookup → PLAIN
+TEXT). Failing closed is the point. The trailing "↗ original source" icon is
+gone from every surface too — it was still an external story link on a feed.
+The path to sources is feed → thread → the timeline's own inline citations.
+
+**Verified on the live site after deploy: 119 bullets across the front feed,
+three lens feeds and a thread page — 85 internal thread links, 0 external
+story links, 0 source icons. The thread page still carries its 16 inline
+source citations.** Sources lists elsewhere (claim pages, the flash rail)
+untouched.
+
+A performance claim I made and then had to retract: I wrote a comment saying
+the first implementation caused a multi-minute build regression, then measured
+it properly against a pre-fix worktree — 1m45s before, 1m48s with the slice
+version, 1m50s with the maps, all within noise. The build is dominated by
+rendering ~155 scope pages against large JSON. No regression existed; the
+correction is in the file's comment and its commit message.
+
+**Track A — the daily.** 08-09's finalization was ~30h overdue (its coverage
+window opened mid-morning 08-10; both of that day's sessions went to the
+research/ build). Running the critics surfaced the bigger problem: 08-10
+itself had been curated only to 12:07 UTC, leaving ~21 hours of the biggest
+capital-news day in weeks uncollected.
+
+08-09 FINALIZED. Critic results: frontier-ai 1 miss (data-centre opposition
+as a bipartisan midterm issue — recorded honestly as a narrative/synthesis
+miss, since several facts inside it date to March-June); global-capital 1
+miss (Nvidia's $500B platform, event-dated 08-10, so written there rather
+than retro-fitted); mental-health 0 misses, but logged as a NULL RESULT —
+three of its four benchmarks are weekday-only trade outlets and 08-09 was a
+Sunday, so that outcome is close to structural.
+
+08-10's actual story: AI-buildout financing moved off the principals'
+balance sheets. Nvidia's $500B+ MOUs (not final agreements) with Apollo,
+BlackRock, Blackstone, Brookfield, KKR and Goldman, `sev=major` with an
+interpretation. Anthropic/Macquarie/GIC's Theseus venture, which will OWN
+data centres and lease them back. Plus Anthropic/Riot $9.1B, Microsoft's
+reported 300k-unit Maia 300 order, a JPMorgan $441M facility, Bloomberg's
+AIndicators tracker. **The counter-pressure landed the same day and is the
+part worth keeping**: Anthropic contractually covering consumer electricity
+increases, OpenAI and Meta signing Texas data-centre consumer-protection
+standards, and siting turning into an electoral issue. The financing
+structure and the political structure are responding to each other.
+
+The Theseus cross-link was written by hand: the frontier-ai agent had it in
+the AI digests and the global-capital agent had Nvidia, but the thread whose
+own watch text names "the SWF co-investor pattern" had neither. The
+world-news signal rebuild independently ranked the Nvidia story first at 54
+distinct outlets and surfaced Theseus at 19 — that is how it was caught.
+
+**A real bug found by three agents independently.** All three reported pack
+items arriving truncated mid-word and dropped the facts rather than guess —
+seven items between them, including the Meta $567M child-safety ruling,
+OpenAI's APA partnership, ByteDance's 10T model, Firmus's $2B raise, and the
+data-centre-backlash story a critic had caught as a recall miss THAT MORNING.
+The digests were fine; `readouts.py`'s extractor falls back to a fixed 80-char
+slice when the `**Bold lead** — sentence.` convention doesn't match. Four
+triggers: emoji before the bold marker with a colon inside it; bold closed
+then `:` instead of ` — `; nested `*italics*` inside the bold span; and a bold
+lead that was a label carrying no fact. Normalised all seven (content
+preserved), regenerated the packs, 7 broken → 0, then re-ran the three
+affected briefings so the recovered facts actually shipped.
+
+**Two INBOX briefs to kestrel** (uncommitted, per protocol): the silent-
+truncation half of the above, and the clinicaltrials collector having no
+first-posted date — a curator read 135 records as new trial registrations,
+and re-checking each against the CT.gov API found 2.
+
+Map: 19 `last_seen` bumps (max-only, so `china-stack-independence` did not
+regress to an 08-07 backfill); `grok-4-6-ship` and `cxmt-congress-letters`
+confirmed passed-silent past grace with evidence (the CXMT trap held — the
+only new letter went to Apple's Tim Cook, not the administration); 4 new
+expectations; 5 pending entries given verification notes; nvidia/anthropic/
+microsoft/blackrock roll-ups refreshed; benchmarks.yaml records that
+MobiHealthNews now blocks plain curl too (r.jina.ai proxy works).
+
+Collector 18/18, 11,521 items — but `semantic_scholar` hit HTTP 429s and
+exhausted its 600s budget, skipping 228 terms. Partial run on the academic
+lane, which matters most to the mental-health evidence strand.
+
+I declined the frontier-ai agent's recommendation to flip
+`qwen38-max-open-weights` to `slipped`: a slip needs an announced new date,
+and what exists is a date passing with nothing — still inside grace to 08-13.
+
+Artifact 786 KB, still over the 600 KB soft cap (degradation rule unbuilt
+since 08-02). Published, pushed, Cloudflare deploy live-verified by content
+check AND by the link-policy audit above.
+
+**Pick up:** CoreWeave's Q2 earnings landed 5pm ET 08-11 and
+`coreweave-q2-earnings` is still `pending` — the next pass can resolve it,
+along with `kaiser-nuhw-mediation-0811` (mediation convened today, no readout
+existed at run time) and `colorado-hb1195-effective` (due 08-12). Open for
+Ben: seven watchlist entities the day's news needed and the map doesn't have
+(Riot Platforms, Macquarie, GIC, ByteDance, Firmus, JPMorgan, Global AI); two
+thread candidates (AI-buildout debt/credit risk; Anthropic's serial
+infrastructure buildout — four large arrangements in three months); and the
+still-unanswered week-boundary payload question. All three repos verified
+clean at wrap time.
