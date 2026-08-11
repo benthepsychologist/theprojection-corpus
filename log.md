@@ -2886,3 +2886,79 @@ that gate. No ratings invented.
 **Pick up:** layer 3's rubric is the next real decision and it is Ben's —
 it would take badge coverage from 77% toward ~90% and is the last big gap on
 the story pages. Everything else from today is shipped and live.
+
+## 2026-08-11 (evening) — layer 3: published-practice ratings, badge coverage to 87%
+
+Ben: "yes, do the layer 3 rubric."
+
+**The gate came first.** Layer 3's own spec carried it — "Rubric TBD on the
+methodology page before any rating ships; observable practices only, never
+truth verdicts" — which is why it had sat unbuilt since 08-07. The
+methodology page turned out to have NO credibility section at all despite
+story pages already rendering badges publicly, so that got written too: all
+three layers, their licences, their limits, and the governing sentence that a
+badge describes an outlet's record or practices, never the article in front
+of you.
+
+**Seven indicators** — masthead, bylines, corrections, ownership, standards,
+ad separation, primary sourcing. Each a yes/no answerable from the outlet's
+own site; each answer stores an evidence url, a date, and who checked, so
+anyone can re-run it and disagree. Rendered as `practices 5/7`: a COUNT, in
+neutral slate, on a deliberately different visual scale from layer 1's
+high/solid/mixed band. Giving it the quality greens would invite reading 7/7
+as "high quality", which is the exact misreading the rubric forbids.
+
+**37 rated, 2 not.** canarymedia.com and the-decoder.com at 7/7; trade press
+clustering 4-6; automated stock-alert generators at 1-2/7. Coverage 77% ->
+**87%**; stories with no badged source 88 -> 62.
+
+**Four cases refused as failures, each traced to the checking agent's own
+caveat rather than a second opinion:** fiercehealthcare.com 2/4 and
+datacenterdynamics.com 2/4 (the pages this rubric reads are hard-blocked
+while their articles serve fine); morningstar.com 6/6 (every article URL
+bot-challenged, so sourcing was never observable — "a couldn't tell, not a
+considered no"); kffhealthnews.org 6/6 (runs NO advertising, so "is sponsored
+content labelled?" has no answer). **A denominator below 7 is itself the
+signal.** Counting a blocked About page as an absent one would measure
+bot-blocking, not transparency.
+
+That last case was a category the rubric did not anticipate: NOT-APPLICABLE
+is distinct from blocked and from absent, and now records as its own reason.
+buildfastwithai.com gets no rating at all (an AI training company — 0/7 would
+imply it failed a test it never took); southernmarylandchronicle.com likewise
+(domain-wide 429).
+
+**The finding worth keeping:** tickerreport.com and themarketsdaily.com run
+the SAME automated stock-alert stack. tickerreport DISCLOSES its MarketBeat
+ownership; themarketsdaily does not. One point between technically identical
+sites — the rubric measuring what it claims to, which is not quality but
+whether anyone stands behind the words.
+
+**Three of my own bugs, all caught before or at ship:** a build-breaking
+template bug (`$` is the page context and `with` rebinds the dot, so
+`$.practices_of` was unreachable — Hugo failed the build rather than
+rendering empty, the right failure mode); a metric bug (coverage counted
+pc1/rsp/class but NOT practices, under-reporting exactly the trade-press
+coverage this layer adds — 77% reported against a real 87%); and a process
+slip (a second `git commit` ran in the site directory because `cd` persisted
+through a compound command, so the corpus commit silently didn't happen —
+caught on the next status check).
+
+**Architecture:** `sources/outlet-practices.yaml` is deliberately SEPARATE
+from the generated credibility file. pc1 and rsp are refetched every rebuild
+and disposable; these are our own observations and a rebuild must never wipe
+them, so the builder merges rather than owns. That is the same failure mode
+which produced the morning's stale layer, designed out rather than
+documented.
+
+**Verified live:** `practices 6/7` (tomshardware) and `practices 2/4`
+(fiercehealthcare, reduced denominator) both render; the rubric and the
+"couldn't check drops out of the denominator" rule are both published at
+/methodology/.
+
+**Pick up:** the remaining 62 unbadged stories are a long tail of one-off
+domains rather than a systematic gap — the next rebuild picks them up as they
+accumulate citations. Layer 3's rubric could be re-run periodically (the
+sheets carry a `checked` date), and a handful of the checks are worth a
+second pass with a real browser where bot-blocking beat the agents:
+fiercehealthcare, datacenterdynamics, morningstar, moneycontrol.
