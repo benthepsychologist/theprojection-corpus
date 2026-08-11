@@ -2827,3 +2827,62 @@ are plainly primary sources, a class the file supports but applies to just 6
 domains. That is a data job, not a code one. v2 story pages (the full master
 source list, needing google-redirect resolution) are roadmap. Five briefs
 sit in kestrel's INBOX from today, all uncommitted per protocol.
+
+## 2026-08-11 (later still) — credibility layer rebuilt: 33% → 77% badge coverage
+
+Ben: "yes, rebuild the credibility layer."
+
+**The root cause was the UNIVERSE, not the data.** The 2026-08-07 build
+selected domains by BUFFER FREQUENCY (n30d>=3). That silently excluded the
+domains we actually CITE: **224 of the 267 source domains on our own story
+pages were absent** — aljazeera.com (22 citations), npr.org (11), sec.gov
+(9), washingtonpost.com (6). They were never judged unrateable; they were
+never looked up. A frequency-of-collection floor is the wrong selector for a
+layer whose job is badging the sources we publish.
+
+Universe is now **CITED-DOMAINS ∪ BUFFER(gdelt+rss, n30d>=3)**.
+
+    domains          149 -> 399
+    pc1-rated         80 -> 174    (re-downloaded, 11,520 rows)
+    rsp-tagged        41 ->  65    (re-parsed, 773 domains with a verdict)
+    primary-source     6 ->  60
+    CITATION COVERAGE 33% -> 77%   (477 of 615 story sources badged)
+
+Of the 615: 190 carry a quality score, 184 score + Wikipedia tier, 98 are
+primary sources, 5 tier-only. 267 stories now have every source badged; 88
+have none.
+
+**primary-source 6 -> 60, audited before writing** because a misclassified
+news outlet is worse than an unrated one: 18 government/legislature/court, 9
+platforms/registries, 33 curated corporate own-channels, and ZERO from the
+structural prefix rule. Own-channels are a CURATED LIST rather than a
+`news.*` pattern deliberately — news.crunchbase.com is Crunchbase NEWS, a
+publication, not an announcement channel, and a pattern would have badged a
+news outlet as primary.
+
+**Two structural fixes.** There is now a committed builder
+(`sources/build_outlet_credibility.py`, with `--dry-run`); the 08-07 layer
+had none, was assembled ad hoc against a prose procedure nobody could run,
+and that is exactly why it went stale. And a second domain-parsing bug in
+the same family as the morning's `lstrip("www.")` defect: the old build
+emitted `asiaone.com:443` as a domain distinct from `asiaone.com`, splitting
+one outlet's rating across two keys. Ports now stripped in both builders.
+
+**Verified live:** the Nvidia story's NVIDIA Newsroom went from `unrated` to
+`primary source`; CNBC renders `high 0.85`, Bloomberg `high 0.84 disputed /
+split`; a ClinicalTrials.gov-sourced story renders both NCT registrations as
+`primary source`; the PNAS Nexus + Wikipedia attribution renders on every
+story page as both licences require. 27 stories now carry a `.gov` primary
+source.
+
+**NOT DONE, deliberately.** The 88 stories with no badged source are mostly
+trade press (bhbusiness, stockanalysis, tomshardware, siliconangle) — exactly
+the population the file's own LAYER 3 exists for: instance
+practice-indicator ratings, "observable practices only, never truth
+verdicts", whose rubric is TBD and explicitly gated on the methodology page
+before any rating ships. 39 domains flagged `gap_fill: candidate` awaiting
+that gate. No ratings invented.
+
+**Pick up:** layer 3's rubric is the next real decision and it is Ben's —
+it would take badge coverage from 77% toward ~90% and is the last big gap on
+the story pages. Everything else from today is shipped and live.
