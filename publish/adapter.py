@@ -258,6 +258,121 @@ def build_thread_page(t):
     return slug_out, front + body
 
 
+def load_outlet_credibility():
+    """domain -> credibility record, from sources/outlet-credibility.yaml.
+
+    PUBLICATION CLEARED ben-steer 2026-08-11, verbatim: "outlet credibility
+    can be public, no problem. even the stuff we're waiting to hear back on.
+    It already says feel free to use it. We are oss on the web. We should
+    feel free until we hear back. permission granted." That supersedes the
+    keep-INTERNAL hold the file previously carried on `pc1`.
+
+    Two attribution obligations travel WITH the data and are rendered by
+    layouts/story/single.html, not optional:
+      pc1 — Lin et al. 2023, PNAS Nexus 2(9):pgad286 (CC BY 4.0)
+      rsp — Wikipedia perennial sources (CC BY-SA 4.0, attribution on render)
+    """
+    p = os.path.join(ROOT, "sources/outlet-credibility.yaml")
+    if not os.path.exists(p):
+        return {}
+    return (yaml.safe_load(open(p)) or {}).get("domains", {}) or {}
+
+
+def _source_domain(url):
+    """Host of a source url, minus a leading `www.`.
+
+    NOT `lstrip("www.")` — that strips any leading run of the CHARACTERS
+    w/./, so washingtonpost.com became "ashingtonpost.com" and wired.com
+    became "ired.com", and every w-initial domain silently missed its
+    credibility lookup. Caught by eyeballing the unbadged-domain list.
+    """
+    m = re.match(r"https?://([^/]+)", url or "")
+    if not m:
+        return ""
+    host = m.group(1).lower()
+    return host[4:] if host.startswith("www.") else host
+
+
+def build_stories(pub_slugs, threads_by_slug):
+    """Every dated block in a published thread's timeline becomes a STORY.
+
+    Ben, 2026-08-11, on clicking a briefing bullet and landing on a thread:
+    "a non-intuitive UX leap… what I really want is a STORY page, that lists
+    the story headline, a summary of the story and its coverage, and links to
+    sources with the accuracy/credibility ratings we picked up."
+
+    A THREAD is a narrative arc over time; a STORY is one event with many
+    witnesses. Those are different objects and the site only had the first,
+    so every story-level click had to resolve to the arc that contained it.
+
+    v1 derives stories from the timeline rather than inventing a new curation
+    artifact, which is what makes the backfill immediate — 520 dated blocks
+    across 99 threads, 387 of them already carrying at least one source link
+    (689 links, ~1.8 per sourced story). Sources are the block's own inline
+    citations, badged from the outlet-credibility layer.
+
+    Known v1 limits, deliberate and on the roadmap rather than hidden:
+      - A story's source list is what CURATION CITED, not every outlet that
+        covered it. The wider count exists (world-news.yaml clustered the
+        Nvidia financing story at 54 distinct outlets) but keeps only five
+        outlet NAMES and no urls, and most of that breadth arrives as
+        google_news_rss redirect links rather than publisher domains — so a
+        true master source list is v2 and needs redirect resolution.
+      - A block with no inline citation yields a story with no sources. It
+        still gets a page (the prose is the record) but says so plainly.
+    """
+    cred = load_outlet_credibility()
+    stories, seen = [], {}
+    for slug in sorted(pub_slugs):
+        t = threads_by_slug.get(slug) or {}
+        path = os.path.join(ROOT, "artifacts/threads", f"{slug}.md")
+        if not os.path.exists(path):
+            continue
+        src = open(path).read()
+        fm_match = re.match(r"---\n.*?\n---\n", src, re.S)
+        body = src[fm_match.end():] if fm_match else src
+        body = strip_internal_header(body)
+        for block in re.split(r"^## ", body, flags=re.M)[1:]:
+            head, _, rest = block.partition("\n")
+            m = re.match(r"(\d{4}-\d{2}-\d{2})\s*(?:—|-|–)?\s*(.*)$", head.strip())
+            if not m:
+                continue                      # "← Backstory" and other dividers
+            date, headline = m.group(1), (m.group(2) or "").strip()
+            if not headline:
+                headline = f"{t.get('title', slug)} — {date}"
+            sid = f"{slug}--{date}"
+            seen[sid] = seen.get(sid, 0) + 1
+            if seen[sid] > 1:
+                sid = f"{sid}-{seen[sid]}"    # two blocks share a date
+            prose = clean_reader_facing_body(rest.strip(), html_safe=True)
+            sources = []
+            for label, url in re.findall(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", rest):
+                if any(s["url"] == url for s in sources):
+                    continue
+                dom = _source_domain(url)
+                c = cred.get(dom, {})
+                # A google-news link is a REDIRECT, not a publisher — curation
+                # is supposed to never cite one, but 45 made it into the
+                # timelines historically. Flag rather than drop: the reader
+                # should see that the citation doesn't resolve to an outlet,
+                # and a silent drop would make a story look unsourced when it
+                # is really mis-sourced. Nothing gets a credibility badge here
+                # because the domain isn't the publisher's.
+                redirect = dom in ("news.google.com", "google.com")
+                sources.append({"url": url, "label": label.strip(), "domain": dom,
+                                 "redirect": redirect,
+                                 "pc1": None if redirect else c.get("pc1"),
+                                 "band": None if redirect else c.get("band"),
+                                 "rsp": None if redirect else c.get("rsp"),
+                                 "class": None if redirect else c.get("class")})
+            stories.append({
+                "id": sid, "headline": headline, "date": date,
+                "thread": slug, "thread_title": t.get("title", slug),
+                "lens": t.get("lens", ""), "html": prose, "sources": sources,
+            })
+    return stories
+
+
 def build_payload(pub_slugs, today=None):
     """Assemble the weekly read payload — same shape render_read.py builds
     for the internal page, filtered to what's publishable. today defaults to
@@ -748,6 +863,35 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
         with open(os.path.join(interp_dir, f"{i['id']}.md"), "w") as f:
             f.write(f"---\n{fm}\n---\n")
     print(f"  wrote {len(interps)} interpretation page(s)")
+
+    # --- STORY pages: data/stories.json + one content stub per story
+    # (/story/<id>/), rendered by layouts/story/single.html. See
+    # build_stories() for why a story is a different object from a thread.
+    stories = build_stories(pub_slugs, {t["slug"]: t for t in load_threads_yaml()})
+    with open(os.path.join(site_dir, "data", "stories.json"), "w") as f:
+        f.write(json.dumps(stories, default=str))
+    n_src = sum(len(s["sources"]) for s in stories)
+    n_badged = sum(1 for s in stories for x in s["sources"]
+                   if x.get("band") or x.get("rsp") or x.get("class"))
+    print(f"  wrote data/stories.json ({len(stories)} stories, "
+          f"{n_src} sources, {n_badged} credibility-badged)")
+
+    story_dir = os.path.join(site_dir, "content", "story")
+    os.makedirs(story_dir, exist_ok=True)
+    story_ids = {s["id"] for s in stories}
+    for fname in os.listdir(story_dir):
+        if fname == "_index.md":
+            continue
+        s_id = fname[:-3] if fname.endswith(".md") else fname
+        if fname.endswith(".md") and s_id not in story_ids:
+            os.remove(os.path.join(story_dir, fname))
+    for s in stories:
+        fm = yaml.safe_dump({"title": s["headline"], "story_id": s["id"],
+                              "date": s["date"], "lens": s["lens"]},
+                             sort_keys=False, allow_unicode=True).strip()
+        with open(os.path.join(story_dir, f"{s['id']}.md"), "w") as f:
+            f.write(f"---\n{fm}\n---\n")
+    print(f"  wrote {len(stories)} story page(s)")
 
     # Per-actor Map pages — one content stub per org + House, rendered by
     # layouts/map/single.html from board.json (same pattern as entity stubs).
