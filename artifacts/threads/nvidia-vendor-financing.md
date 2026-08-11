@@ -11,6 +11,37 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-10 — Nvidia signs MOUs with six asset managers to mobilize $500B+ in third-party financing
+
+- **Nvidia signed MOUs with six of the largest asset managers — Apollo,
+  BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR — to
+  establish "compute financing platforms" aiming to mobilize over $500
+  billion in third-party capital for AI infrastructure, treating GPU
+  capacity as a collateralizable asset class rather than depreciating
+  hardware.** Non-binding — Nvidia's own release states the partnerships
+  "remain subject to execution of the final agreements." Structured
+  through private placements and special-purpose-entity bonds "capable
+  of raising tens of billions at a time," off Nvidia's own balance
+  sheet, aimed at the same frontier-lab/enterprise/cloud customer base
+  this thread already tracks Nvidia backstopping directly (the OpenAI
+  guarantee, the Nebius/Naver/Intel/Groq stake ladder). Goldman Sachs,
+  the lone bank among the six, is positioned to lead public debt
+  issuance while its own asset-management arm distributes the resulting
+  returns. CEO Jensen Huang told CNBC he approached only these six firms
+  and none turned him down, framing the goal as making AI compute "a new
+  class of productive, investable infrastructure: AI factories" — a
+  structural answer to this thread's own 07-27 entry (the first time the
+  market priced Nvidia's own credit as the risk).
+  ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital), [CNBC](https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html)) ⟨daily 2026-08-10⟩
+- **The same day, Bloomberg Opinion launched "AIndicators," a credit-market
+  framework tracking whether lenders financing the AI buildout are
+  getting cold feet** (wider risk compensation, shorter loan durations,
+  tighter covenants) — framed against 19th-century railroad
+  overbuilding. A second, independent data point that AI-financing
+  credit risk is becoming its own watched beat, alongside this thread's
+  CDS-widening story.
+  ([Bloomberg Opinion](https://www.bloomberg.com/opinion/newsletters/2026-08-10/aindicators-hint-at-doubts-in-credit-markets)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-04 — Reported scale jumps an order of magnitude: up to $750B in talks
 
 - **Nvidia reportedly in talks for up to $750B in new AI-infrastructure

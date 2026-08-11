@@ -13,6 +13,55 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
+## 2026-08-10 — Nvidia turns compute into a Wall Street asset class; two more capital moves feed the loop
+
+- **Nvidia partnered with six Wall Street asset managers — Apollo,
+  BlackRock, Blackstone, Brookfield, Goldman Sachs and KKR — on
+  financing platforms designed to raise over $500B in third-party
+  capital for AI infrastructure, with Jensen Huang saying Nvidia itself
+  can backstop up to $125B (25%) of the resulting deals.** These are
+  MOUs, not final agreements — Nvidia's own release says the
+  partnerships "remain subject to execution of the final agreements" —
+  but the explicit design is real: treat AI compute like commercial
+  real estate or toll roads, an asset class investors can lend against,
+  with capital raised off Nvidia's own balance sheet via
+  special-purpose entities. Nvidia shares fell on the announcement even
+  as the framing extends the stake-taking pattern already on this
+  thread (Lancium, SSI, 07-28/08-07 entries below) to Wall Street-scale
+  securitization. Cross-refs `nvidia-order-book`.
+  ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital), [CNBC](https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html)) ⟨daily 2026-08-10⟩ `<!-- k: sev=major -->`
+- 💡 **First-of-its-kind structural shift, not an incremental deal size.**
+  Every prior entry on this thread describes a vendor financing its own
+  customer (Nvidia→SSI, Nvidia→OpenAI, Broadcom→Anthropic). This is
+  Nvidia recruiting *outside* institutional capital at Wall Street scale
+  to lend against compute as a standing asset class — the loop widening
+  from vendor-financed-demand to securitized-infrastructure-finance.
+  ⟨daily 2026-08-10⟩
+- **Anthropic signed a $9.1B, 20-year compute deal with bitcoin
+  miner-turned-AI-landlord Riot Platforms** — 191MW at Riot's Rockdale,
+  TX campus through June 2048 (96MW initial by Dec 2027, full
+  deployment by June 2028), with two 5-year extension options that
+  could take total contract value to $16.1B; Riot shares jumped 25%
+  after-hours. Anthropic's third large compute-procurement deal in as
+  many months, after ~$45B with SpaceX (May) and $10B with Volta (last
+  month) — a pattern this thread hasn't tracked under Anthropic's name
+  before (its entity list is nvidia/openai/oracle); see the thread
+  candidate this proposes in today's digest.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-11/anthropic-strikes-9-billion-deal-with-cloud-computing-firm-riot)) ⟨daily 2026-08-10⟩
+- **JPMorgan led a $441M debt financing for Global AI, a two-year-old
+  AI-infrastructure firm with $6.2B in contracted revenue ($1B already
+  delivered) and a 1GW-by-2029 target** — continuing the debt-market
+  financing story this thread has tracked since Goldman/JPMorgan
+  launched AI-debt trading products in July (07-23 entry below). Same
+  day, Bloomberg Opinion's John Authers and Richard Abbey launched
+  "AIndicators," a new framework tracking lender confidence across data
+  centers, chip fabrication, power and networking — designed to flag
+  financing-structure stress (covenants tightening, loan durations
+  shortening) rather than whether the technology itself works. A new
+  measurement tool arriving for exactly the risk this thread exists to
+  watch.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-10/jpmorgan-leads-441-million-debt-deal-for-ai-infrastructure-firm), [Bloomberg Opinion](https://www.bloomberg.com/opinion/newsletters/2026-08-10/aindicators-hint-at-doubts-in-credit-markets)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-07 — Aschenbrenner is back making large bets; Novogratz's verdict on the collapse
 
 - **Leopold Aschenbrenner is making large new bets weeks after his

@@ -13,6 +13,20 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-10 — China bans AI-companion apps outright over mental-health harm
+
+- **China ordered ByteDance, Alibaba, and Tencent to pull their
+  AI-companion apps, under a rule effective July 15 barring any AI
+  service from being designed to "replace social interaction" and
+  requiring risk warnings.** The move follows People's Daily reporting
+  on emotional-dependence harms, with researchers citing US
+  companion-chatbot suicide cases as part of the rationale. The most
+  concrete regulatory pathway of any jurisdiction this thread tracks —
+  Beijing banned the product category outright rather than litigating it
+  case by case, the opposite approach from the FDA/court track this
+  thread otherwise watches.
+  ([BNN Bloomberg](https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/08/10/chinese-users-of-ai-companions-bereft-after-government-tightens-regulations/)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-09 — Talkspace publicly stakes out its clinical-safety framing ahead of regulation
 
 - **Talkspace is publicly building its clinical-safety case for its AI

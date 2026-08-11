@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-09
-status: building
+status: final
 window_start: 2026-08-09T05:00:00-04:00
-as_of: 2026-08-10T06:30:00-04:00
-coverage: pending
+as_of: 2026-08-11T07:40:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-09
@@ -154,3 +154,23 @@ push, and Michael Burry publicly souring on post-Buffett Berkshire —
 plus a market now pricing real odds on the Fed's Cook fight. Everything
 else in the day's buffer, including the Nvidia-SpaceX deal and the
 SpaceX lock-up rally, checked out as older news re-syndicating.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Nvidia's $500B+ AI-compute financing
+platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs
+and KKR — **1 real miss**, event-dated 2026-08-10 (just past this day's
+05:00 ET cutoff), written up in the 08-10 digest instead. No other real
+miss found against this day's own window.
+
+**Benchmarks checked:**
+- **Money Stuff** (Matt Levine, Bloomberg) — accessible via search; its
+  08-10 column ("The Situation Is Fine") was retrospective on the
+  07-30/31 Situational Awareness fund collapse, not new to this window.
+- **Axios Pro Rata** — Cloudflare-blocked to direct fetch, as documented
+  on prior passes.
+- **FT Unhedged** — public RSS worked; its 08-10 edition led on the
+  BoJ/jobs report, nothing AI-capital-specific for this lens.
+- **Bloomberg Technology** — 403 on direct fetch, worked via search; no
+  AI-capital miss surfaced beyond the Nvidia platform already logged
+  above.

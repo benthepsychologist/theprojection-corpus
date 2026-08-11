@@ -22,6 +22,31 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-11 — Brent extends its rally to $92.54, a second straight sharp move
+
+- **Brent crude rose another 5.69% ($4.99) to $92.54/bbl — a second
+  consecutive sharp daily move, ~10% over two sessions — as the
+  Trump-Iran compensation stand-off logged yesterday keeps the Hormuz
+  reopening unresolved.** No new incident identified behind today's leg
+  specifically; the market is continuing to price the same stalemate
+  rather than reacting to fresh news.
+  ([Fortune](https://fortune.com/article/price-of-oil-08-11-2026/)) ⟨daily 2026-08-11⟩
+
+## 2026-08-10 — Trump counters Iran's compensation demand with his own; Brent posts its steepest one-day jump of the war
+
+- **Brent crude jumped 4.95% to $87.69/bbl — the steepest single-day
+  rise this thread has recorded since the war began — after President
+  Trump countered Iran's 08-09 six-condition list with his own
+  compensation demand: payment for "50 years" of Iran-caused damages,
+  including 52,000 deaths and the 17 US sailors killed in the 2000 USS
+  Cole attack.** Each side is now holding a compensation demand against
+  the other — a new, mutual sticking point on top of the still-unsigned
+  `iran-oman-hormuz-deal-signing` expectation. Iran's Foreign Ministry
+  maintained the Oman channel itself was "progressing smoothly and
+  constructively" on shipping-route mapping, the same
+  IRGC-hardline-vs-Foreign-Ministry-conciliatory split flagged 08-09.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue), [Fortune](https://fortune.com/article/price-of-oil-08-10-2026/)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-09 — A second Jazan refinery hit, and Iran's IRGC separates "reopening" from the Oman talks entirely
 
 - **Yemen's Houthis hit Saudi Aramco's Jazan refinery for a second time (first was 07-25/27) — fire extinguished, no injuries, framed by the Houthi spokesman as retaliation for Saudi airspace incursions into Saada/Hajjah.** Aramco itself reported Q2 profit +33% YoY to $33.4B on 08-04 (realized crude $108.1/bbl, +62% YoY) — the same war repeatedly hitting its refining assets is also the reason its upstream earnings are up sharply, a tension worth holding rather than resolving.

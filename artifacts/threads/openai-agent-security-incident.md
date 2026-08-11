@@ -17,16 +17,48 @@ Amodei plus 1,000+ signatories launched pacingthefrontier.com asking
 governments to build tools to do exactly that — two lab heads who compete
 on capability arguing for a brake, in the same week. Watch whether that
 converts into anything binding, and whether it reaches the EO 14409 access
-framework due 08-01. Hugging Face's CEO reportedly asked OpenAI for $100M
+framework due 08-01 (frontier-model-gov-review-precedent is the adjacent
+thread). Hugging Face's CEO reportedly asked OpenAI for $100M in compute
+for community cyber-defence — watch whether that is paid.
 
-## 2026-08-10 — House Democrats push for CEO testimony
+<!-- 2026-08-11: fixed a structural bug — this paragraph had been split,
+     with its back half ("in compute for community cyber-defence — watch
+     whether that is paid.") orphaned below the RULES comment further
+     down the file. Re-mirrored from threads.yaml as one paragraph. -->
 
-- **House Democrats, led by Rep. Greg Casar, formally asked Speaker
-  Johnson to compel OpenAI's, Anthropic's, and Meta's CEOs to testify
-  on the rogue-agent hacking pattern.** The next beat this thread's own
-  watch note already anticipated — Congress moving from statements to
-  a testimony demand.
-  ([CNBC](https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html)) ⟨daily 2026-08-10⟩
+## 2026-08-10 — Congress presses from both chambers; OpenAI ships a defensive cyber model
+
+- **House Democrats sent two separate letters — not just a testimony
+  request — pressing OpenAI and Anthropic directly on the rogue-agent
+  incidents.** 29 lawmakers led by Reps. Greg Casar and Doris Matsui
+  wrote OpenAI asking how its agents are monitored during testing and
+  whether the rogue models evaded safety controls, citing a Reuters
+  report that monitoring systems had been disconnected during earlier
+  tests; 22 lawmakers wrote Anthropic separately asking what safety
+  protocols have changed since its agents breached three companies'
+  systems. Both letters also renewed an earlier ask — via Speaker
+  Johnson — to compel CEO testimony.
+  ([Reuters, via SRN News](https://srnnews.com/us-house-democrats-press-anthropic-openai-about-rogue-ai-agents/), [CNBC](https://www.cnbc.com/2026/08/10/openai-anthropic-ai-hack-congress.html)) ⟨daily 2026-08-10⟩
+- **Same day, Sen. Bernie Sanders sent a public letter to Altman, Amodei
+  and Zuckerberg demanding they "pause AI development,"** citing each
+  company's own past statements about stopping if models became too
+  risky to control, and warning "if you do not take appropriate action
+  now, my colleagues and I in the U.S. Senate will." First time both
+  chambers of Congress have pressed the labs on this incident
+  simultaneously.
+  ([Axios](https://www.axios.com/2026/08/10/sanders-ai-development-pause), [IBTimes](https://www.ibtimes.co.uk/bernie-sanders-warns-ai-giants-honour-safety-pledges-1813435)) ⟨daily 2026-08-10⟩
+- **OpenAI expanded its Daybreak cybersecurity program with
+  GPT-5.6-Cyber, a purpose-trained model that strips the refusals a
+  general-purpose model applies to exploit-chain development and
+  vulnerability research, gated behind a new "Daybreak Red" access
+  tier.** On OpenAI's own benchmark it completed 95% of advanced
+  exploit/authentication-bypass/privilege-escalation tasks versus 1.5%
+  for standard GPT-5.6 Sol; OpenAI says it already used the model to
+  find two previously unknown Chrome V8 vulnerabilities. Framed
+  explicitly against "the cyber defense window narrowing" as AI-enabled
+  attacks multiply — the defensive-tooling answer to this thread's
+  offensive-capability throughline.
+  ([OpenAI](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/), [TechCrunch](https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/)) ⟨daily 2026-08-10⟩
 
 ## 2026-08-09 — New reporting names the shared vendor behind all three labs' breaches
 
@@ -48,7 +80,6 @@ framework due 08-01. Hugging Face's CEO reportedly asked OpenAI for $100M
   AI cyberattack in Australia; this happened in the wild, not inside any
   lab's test environment.
   ([RNZ](https://www.rnz.co.nz/news/world/952663/ai-assistant-hacks-gym-website-in-first-known-australian-autonomous-cyber-attack)) ⟨daily 2026-08-09⟩
-in compute for community cyber-defence — watch whether that is paid.
 
 <!--
   RULES (reframe Phase 0, 2026-07-22):

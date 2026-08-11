@@ -5,6 +5,20 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-10 — Talks reported unlikely to resume before end of summer
+
+- **Israel-Lebanon talks are unlikely to resume before the end of
+  summer, a Lebanese diplomatic source told Al Mayadeen (as reported by
+  Haaretz), after the seventh round in Rome closed without a withdrawal
+  agreement.** The source said the US and Israel have rejected expanding
+  the "pilot zones" in south Lebanon from which Israeli forces would
+  withdraw until more progress is made in the two zones already
+  designated — where the Lebanese army has so far taken over only the
+  northern one. This is the diplomatic track's own account of the stall
+  flagged 08-07 below (a reported four-week window before "a military
+  option returns").
+  ([Haaretz, citing Al Mayadeen](https://www.haaretz.com/israel-news/israel-security/2026-08-10/ty-article/.premium/lebanon-israel-unlikely-to-resume-talks-in-the-coming-month-source-says/0000019f-ea81-dfd7-a19f-ebcf9e5f0000)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-07 — Deadly exchanges on both sides while the seventh round of talks stalls
 
 - **At least one Lebanese person and two Israeli soldiers killed in

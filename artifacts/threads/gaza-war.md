@@ -39,6 +39,16 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-11 — WaPo: the Trump-Netanyahu rift is widening under election pressure
+
+- **A Washington Post analysis frames the Trump-Netanyahu relationship as
+  an actively widening rift, driven by each leader's separate
+  election-year pressures pulling their Middle East visions in opposite
+  directions.** This contextualizes 08-09's already-logged development
+  (Netanyahu's on-record rejection of Trump's Gaza roadmap sequencing)
+  rather than adding a new fact on the ground.
+  ([Washington Post](https://www.washingtonpost.com/politics/2026/08/11/trump-netanyahu-experience-tension-critical-election-year/)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-09 — Netanyahu publicly rejects the sequencing of Trump's own Gaza roadmap
 
 - **Netanyahu publicly rejected the core of Trump's own 15-point Gaza

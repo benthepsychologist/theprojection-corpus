@@ -17,6 +17,21 @@ proposes $47B→$29B), contested guidelines on both sides of the Atlantic
 and the NHS Talking Therapies evidence fight (official ~50% recovery vs.
 the placebo-equivalence critique; no independent evaluation ever run).
 
+## 2026-08-11 — UK launches a £50M mental-health digital-innovation infrastructure programme
+
+- **MHDI (Mental Health Digital Innovation) formally launched, backed by
+  up to £50M over five years from the Office for Life Sciences and
+  delivered through the Medical Research Council.** The digital
+  workstream of the UK government's Mental Health Goals programme, led
+  by the University of Manchester, aims to build shared infrastructure —
+  data, digital technology, genomics, clinical trials, lived-experience
+  partnerships — so digital MH tools can move from pilot to routine NHS
+  care, naming fragmented procurement and unclear reimbursement pathways
+  as the actual blockers to adoption. A rare funding-*increase*
+  counterpoint to this thread's run of US funding-cut coverage (NIMH,
+  NICE).
+  ([MHDI](https://www.mhdi.uk/)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-07 — Opened (ben-steer)
 
 - **Opened as a dedicated child thread of `mh-evidence-watch`**, seeded

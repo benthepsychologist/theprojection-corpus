@@ -1,0 +1,58 @@
+# 2026-08-10-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-09).
+
+nvidia-signed-mous-with-six-of-the-largest-asset-m:
+  mechanism: >
+    Nvidia is engineering third-party balance sheets to absorb the AI
+    buildout's financing risk, off its own books — treating GPU compute
+    as a collateralizable, cash-flow-generating real asset (like toll
+    roads or commercial real estate) rather than a depreciating chip.
+    This shifts systemic exposure from Nvidia's own balance sheet toward
+    the asset-management industry, which now has a direct financial
+    incentive to keep compute financing flowing regardless of Nvidia's
+    own credit story — a structural answer to the market pushback this
+    thread has tracked since 07-27 (NVDA -4%, CDS wider).
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The platform becomes a durable new asset class, deepening
+        capital availability for the buildout and further decoupling
+        Nvidia's own credit risk from the buildout's financing risk.
+      why: >
+        Real institutional capital — six major asset managers, a $500B
+        target — is beginning to treat compute as an investable
+        infrastructure class rather than a vendor-financed bet.
+      precedent: >
+        The securitization of toll roads, cell towers, and data centers
+        themselves into investable infrastructure asset classes over the
+        past two decades — once an asset type proves it can generate
+        structured, reliable cash flows, institutional capital treats it
+        as its own investable category.
+    - direction: >
+        The MOU stage never converts to final agreements at anything
+        like the announced scale, and/or the underlying compute assets
+        don't hold value the way toll roads/CRE do (GPUs depreciate fast,
+        models obsolesce), producing a mismatch between the special-
+        purpose-entity bonds' duration and the collateral's real economic
+        life.
+      why: >
+        These are explicitly non-binding MOUs — Nvidia's own release
+        reserves execution of final agreements — and the "collateralizable
+        real asset" framing is contested precisely because compute
+        hardware depreciates far faster than the toll-road/CRE analogy
+        implies.
+      precedent: >
+        The 2000s mortgage-backed-securities/CDO buildup, where an asset
+        class was securitized on the assumption of stable, structured
+        cash flows and long collateral life that didn't hold under
+        stress — the closest historical analogy for "a novel asset class
+        gets securitized before its true risk profile is proven."
+  context_note: >
+    capital-context.yaml's rate_regime reading already tracks the
+    credit-market backdrop this platform would issue into (30-year yield
+    near 5.24%, hawkish Fed hold) — a novel securitization vehicle
+    launching into an already-elevated-rate environment is a genuinely
+    new interaction point the standing snapshot doesn't yet carry.

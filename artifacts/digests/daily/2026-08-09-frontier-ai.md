@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-09
-status: building
+status: final
 window_start: 2026-08-09T05:00:00-04:00
-as_of: 2026-08-10T06:30:00-04:00
-coverage: pending
+as_of: 2026-08-11T07:40:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-09
@@ -73,6 +73,35 @@ decoupling preference, at least for one supplier relationship.
   ([TechCrunch](https://techcrunch.com/2026/08/09/anthropic-is-turning-claude-codes-auto-mode-on-by-default/))
   <!-- k: e=anthropic axis=product-and-access -->
 
+## Policy & governance
+
+- ⚠️ **Critic-caught, added 2026-08-11:** AI data-center opposition has
+  become a defining bipartisan issue in the 2026 midterms. NPR
+  published original campaign-trail reporting on 2026-08-08: Abdul
+  El-Sayed's Michigan Senate primary win followed campaigning against
+  an OpenAI-Oracle data center in Saline Township ("I stand with local
+  and state elected officials saying that we cannot approve any more
+  of these until we have federal-level guardrails"); Ohio's Republican
+  nominee Vivek Ramaswamy released an "Ohioans-first" anti-data-center
+  pledge (data centers now "a top concern... second only to property
+  taxes") while Democrat Amy Acton runs on a conditional moratorium;
+  Wisconsin gubernatorial candidate Francesca Hong is centering
+  opposition ("press control+alt+delete... until we have the new
+  regulations we need"); Michigan's 7th-district candidate William
+  Lawrence found the issue came up unprompted from voters. A cited
+  Gallup poll puts opposition at 7-in-10 Americans. **What's new here is
+  the synthesis, not the underlying facts** — Michigan's HB 5594-5596
+  moratorium bills date to March 2026, the Port Washington, WI
+  referendum was 2026-04-08, and the Sanders/AOC federal moratorium
+  bill (S.4214/H.R.9442) dates to March/June 2026; none of that is
+  being reported as new. What NPR establishes as new is the
+  reporting itself — this has become a defining midterm dynamic, plus
+  El-Sayed's fresh primary win as a first concrete electoral result of
+  it. Missed in the original 08-09 digest; the coverage critic caught
+  it against The Neuron's 08-09 issue, which led with it.
+  ([NPR](https://www.npr.org/2026/08/08/g-s1-137853/data-centers-primaries-midterms))
+  <!-- k: t=datacenter-power-grid axis=policy-and-governance -->
+
 ## China
 
 - **Apple is testing memory chips from China's CXMT for China-market
@@ -140,3 +169,38 @@ Melbourne independently hacked a gym's booking system — the same week
 Anthropic made autonomous "auto mode" the default. Apple is quietly
 testing Chinese CXMT memory chips under Senate pressure not to. The
 Qwen3.8-Max weights are still not out; still just "next week."
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-11, checking this digest against four benchmark AI
+newsletters' actual 08-09-dated coverage (not their recirculation on
+later days).*
+
+**They led with → we missed:** The Neuron (publishes Sundays; its
+08-09 issue led with AI data-center opposition as a defining 2026
+midterm-election issue — the NPR campaign-trail reporting on El-Sayed's
+Michigan primary win, Ramaswamy's and Acton's Ohio positions, and
+Francesca Hong's Wisconsin campaign). This was the one real miss —
+folded in above as a critic-caught late addition.
+
+**Both covered:** The Rundown AI (weekday-only; its 08-10 issue led on
+OpenAI's Astra pause, which is a recirculation of the 08-07 event this
+lens already carries, not new 08-09 news) and TLDR AI (08-10 issue, six
+items, every one independently verified as either recirculation of
+already-logged stories or generic explainer content, none a fresh
+08-09 development) both effectively agreed with this digest's
+judgment that 08-09's real news was the rogue-agent vendor synthesis
+and the auto-mode default — neither newsletter surfaced anything from
+08-09 this digest didn't already have.
+
+**We had → they didn't:** The Apple/CXMT memory-chip story (China
+axis) and the Decart acquisition-talks story (Capital & corporate) —
+neither appeared in any of the four benchmarks' 08-09 or 08-10 issues
+checked.
+
+**Benchmarks checked:** The Rundown AI (weekday-only publication; no
+08-09 issue exists, checked its 08-10 issue for anything it carried
+dated to 08-09) · TLDR AI (08-10 issue, six items, all verified) · The
+Neuron (publishes Sundays; its 08-09 issue is the relevant one — see
+miss above) · The AI Daily Brief (weekday-only; no 08-09 episode
+exists).

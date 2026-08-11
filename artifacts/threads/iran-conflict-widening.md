@@ -24,6 +24,54 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-10 — Trump adds a compensation precondition as Hormuz traffic collapses; Tehran denies Khamenei health rumors; Houthis kill three more
+
+- **Trump added a new precondition to any Hormuz deal, demanding Iran pay
+  compensation for U.S. deaths and damage — including, by his own
+  account, the 2000 USS Cole bombing that killed 17 American sailors — a
+  shift that further clouds talks Iran's own foreign ministry had called
+  "progressing smoothly."** Iran's spokesman reiterated Tehran's
+  conditions (an end to US "hostile actions" and the naval blockade,
+  sanctions relief) and called the blockade "an act of aggression"; a
+  June interim understanding on shipping routes has since broken down
+  over enforcement disputes. Neither side reads as closer to a signed
+  agreement than before.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue), [CNN](https://www.cnn.com/2026/08/10/world/live-news/iran-war-trump)) ⟨daily 2026-08-10⟩
+- **Shipping data show the Strait of Hormuz is now practically shut: only
+  six vessels transited Monday, against a 10-day average of about 11 and
+  a pre-war norm of roughly 130-140** — a collapse Al-Monitor ties to
+  fading hopes of a near-term U.S.-Iran deal. Bab el-Mandeb traffic held
+  roughly steady by comparison (25 vessels vs. a 24-vessel 10-day
+  average), underlining the collapse is specific to Hormuz.
+  ([Al-Monitor](https://www.al-monitor.com/originals/2026/08/gulf-shipping-traffic-strait-hormuz-falls-six-vessels)) ⟨daily 2026-08-10⟩
+- **A Washington Post investigation, corroborated by other outlets,
+  reported that Trump flew out of last month's NATO summit in Ankara,
+  Turkey on a decoy aircraft after intelligence indicated an Iranian
+  assassination threat** — reporters and some White House staff were led
+  to believe he remained aboard the newly-refurbished Air Force One he'd
+  flown in on, while he actually departed on an older backup jet. Not
+  previously disclosed; the threat itself dates to the NATO summit,
+  weeks before this report broke.
+  ([Washington Post](https://www.washingtonpost.com/national-security/2026/08/10/trump-flew-secrecy-amid-iran-threat-air-force-one-became-decoy/)) ⟨daily 2026-08-10⟩
+- **Iran's government moved to publicly quash reports that Supreme
+  Leader Mojtaba Khamenei is gravely ill: President Pezeshkian said
+  Khamenei is "completely healthy" after an in-person meeting, telling
+  state media "someone who can sit and discuss for seven to eight hours
+  cannot have any health problems."** The denial follows Israeli media
+  reports the previous Friday describing Khamenei as in "extremely
+  critical condition," and a state-run Mehr News Agency video released
+  Sunday showing him appearing well. Neither claim is independently
+  verifiable — Khamenei has made no unscripted public appearance since
+  succeeding his father in March, flagged here since 08-02.
+  ([Tribune India, citing Iran's ISNA news agency](https://www.tribuneindia.com/news/iran-leadership-reshuffle/irans-supreme-leader-mojtaba-khamenei-completely-healthy-president-pezeshkian)) ⟨daily 2026-08-10⟩
+- **A Houthi missile attack on a commercial cargo vessel in the Bab
+  el-Mandeb Strait off Al Mokha, Yemen killed three crew members — two
+  Pakistani nationals and one Indonesian — per Saudi state media outlet
+  Al Hadath.** The UK's Maritime Trade Operations authority gave a more
+  cautious account, confirming only that the vessel was struck by "an
+  unknown projectile," without confirming Houthi responsibility.
+  ([Jerusalem Post](https://www.jpost.com/middle-east/article-905168)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-09 — Iran's Revolutionary Guards publish a formal Hormuz price list; Houthis hit an Aramco refinery and a Red Sea port
 
 - **Iran's Revolutionary Guards went public with a formal list of

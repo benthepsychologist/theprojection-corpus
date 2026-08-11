@@ -2515,3 +2515,92 @@ which don't cover those.
 **Radar.md**: all 7 questions (Q1-Q7) got a new `week 08-09` working
 note, synthesized from the 4 digests' proposals (Q2 and Q6 each merge
 two lenses' contributions). None looked answered or dead this cycle.
+
+## 2026-08-11 critic pass — finalized 2026-08-09 (all three critic-bearing
+lenses; world-news carries none by design)
+
+Run two days late: 08-09's coverage window opened ~14:00 UTC on 08-10 and
+the 08-10 sessions went to the `research/` build instead, so this pass
+closed a day-old finalization rather than a same-morning one.
+
+### ai / 2026-08-09
+- **Missed:** **AI data-centre opposition as a defining bipartisan issue in
+  the 2026 midterms.** The Neuron led its 08-09 issue with it ("The AI Data
+  Center Backlash Is Going Bipartisan"); eWeek ran a matching piece the same
+  day. The underlying reporting is NPR's own campaign-trail work of 08-08
+  (npr.org/2026/08/08/g-s1-137853/data-centers-primaries-midterms): Abdul
+  El-Sayed's Michigan Senate primary win after campaigning against an
+  OpenAI-Oracle data centre in Saline Township; Vivek Ramaswamy's
+  "Ohioans-first" anti-data-centre pledge against Amy Acton's conditional
+  moratorium; Francesca Hong centering opposition in Wisconsin. A cited
+  Gallup poll puts opposition near 7-in-10.
+- ⚠ **Date discipline, recorded because the miss is softer than it looks:**
+  several facts cited INSIDE that narrative are months old and were NOT
+  treated as new — Michigan's HB 5594-5596 moratorium bills (March 2026),
+  the Port Washington WI referendum (2026-04-08), the Sanders/AOC federal
+  moratorium bill S.4214/H.R.9442 (March/June 2026). What is genuinely new
+  is the SYNTHESIS plus the fresh El-Sayed result. Logged as a real miss,
+  but a narrative/framing one rather than a clean hard-news event.
+- **Map effect:** folded into `2026-08-09-frontier-ai.md` and written to
+  `datacenter-power-grid`, whose own watch text already named the ratepayer
+  and environmental-justice fights. No new thread, no watchlist add.
+- **Secondary gap found, not a lead-story miss:** ByteDance's reported
+  ~10-trillion-parameter model (FT) and Firmus's $2B AI-datacentre raise
+  (Bloomberg), both event-dated 2026-08-07 and absent from the 08-05→08-09
+  digests. Neither was any benchmark's lead, so neither counts under this
+  critic's strict standard; both were folded into thread timelines at their
+  true 08-07 event date on this pass.
+- **Access:** all four reachable. The Rundown AI, TLDR AI and The AI Daily
+  Brief are weekday-only, so their first post-weekend issues are 08-10; The
+  Neuron publishes Sundays, which is why it alone carried the 08-09 lead.
+- **Pattern:** this lens runs strong on lab/product/capital-markets stories
+  and thin on AI as a live electoral/political issue at state and
+  congressional level — the same soft spot the 08-07 appendix already named.
+
+### mental-health / 2026-08-09
+- **No misses**, and the reason matters more than the verdict: none of the
+  four benchmarks published mental-health content inside the window at all.
+  BHB's feed ran from Fri 08-07 15:32 UTC straight to Mon 08-10 20:17 UTC,
+  both ends outside the window and both non-MH. STAT's one in-window item
+  (08-09) was a Sanofi drug shortage. Fierce's Monday leads were a vaccine
+  schedule EO, health-plan losses, hospital pricing, a Steward contempt
+  case and a Doximity AI assistant. MobiHealthNews had nothing 08-08/08-09.
+- ⚠ **Read a weekend "no misses" as a null result, not a passed check.**
+  Three of the four are weekday-only B2B trade outlets and 2026-08-09 was a
+  Sunday, so this outcome is close to structural. A Sunday's real recall
+  risk sits with the primary/academic/consumer-press channels this critic
+  set does not cover — which is exactly where that day's own digest content
+  (SIM-VAIL, the UK psilocybin RCT, Malaysia) actually came from.
+- **Access — one benchmark escalated:** MobiHealthNews now blocks a plain
+  `curl` too, not just WebFetch's crawler signature. Reached via the
+  `r.jina.ai` reader proxy. That is a step past the BHB case (where plain
+  HTTP still works) and is now recorded in `sources/benchmarks.yaml`, along
+  with the resulting rule: re-test all three "fixed" benchmarks periodically
+  rather than assuming a fix stays fixed.
+
+### global-capital / 2026-08-09
+- **Missed, with a fair dating caveat:** **Nvidia's $500B+ AI-compute
+  financing platform** with Apollo, BlackRock, Blackstone, Brookfield,
+  Goldman Sachs and KKR — MOUs, not final agreements, treating GPU capacity
+  as a collateralizable real asset, funded via private placements and
+  SPE bonds. Verified against NVIDIA's own newsroom release and Blackstone's
+  matching press page. **Event-dated 2026-08-10**, i.e. just past the 08-09
+  digest's cutoff, and every outlet covering it published same-day. Logged
+  as the pass's miss because it is the period's biggest capital story, but
+  it belongs to 08-10 and was written there, not retro-fitted into 08-09.
+- **Map effect:** written to `nvidia-vendor-financing` and
+  `asset-managers-build-ai` (the latter stale since 07-27 — a significant
+  revival), `sev=major`, with an interpretation attached.
+- **Access:** Money Stuff via search (its 08-10 column was retrospective on
+  the 07-30/31 Situational Awareness collapse, not new). FT Unhedged's
+  public RSS worked (its 08-10 edition led on the BoJ and the jobs report).
+  Bloomberg Technology 403'd on direct fetch, worked via search. **Axios Pro
+  Rata blocked as documented** — one attempt, expected Cloudflare block, not
+  retried; still the one unresolved access gap in this file.
+- **Structural note the critic raised, worth Ben's eye:** 08-10 was unusually
+  dense for AI-capital news (Nvidia, Maia 300/TSMC, AIndicators, the
+  JPMorgan deal all same-day), and several benchmarks cover that cluster as
+  same-day breaking rather than next-morning recap. On days like it, a
+  digest whose curation stops mid-morning structurally misses the day's own
+  biggest stories — which is what happened here and was only caught because
+  08-10 was still `building` when this pass ran.

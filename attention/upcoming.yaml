@@ -356,7 +356,18 @@ expectations:
     # Templated misinformation getting ahead of the actual event, not
     # verified reporting — a live case of exactly the aggregation-masquerades-
     # as-news trap this map has been burned by before.
+    # 2026-08-11 ⟨daily⟩: re-checked past grace — STANDS passed-silent, still
+    # not shipped. x.ai/news 403s to us, so verified a different way:
+    # OpenRouter's live x-ai model list (openrouter.ai/x-ai) shows Grok 4.5,
+    # 4.3, 4.20 Multi-Agent and Build 0.1 — no 4.6 entry, and OpenRouter
+    # lists models as providers ship them, so it is a good real-time proxy.
+    # xAI's public developer docs still name 4.5 as the flagship; no model
+    # card, API identifier, pricing or benchmark table exists for 4.6.
+    # NOT reclassified as `slipped`: on the 08-04 SpaceX earnings call Musk
+    # moved to "probably next week" (an 08-10→08-16 window), but a slip needs
+    # an actual announced date and continued vagueness is not one.
     status: passed-silent
+    resolved: 2026-08-11
 
   - id: grok-4-7-ship
     claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24)"
@@ -548,6 +559,14 @@ expectations:
     what_confirms: "the release, 5pm ET"
     logged: 2026-07-28
     logged_by: crawl
+    # 2026-08-11 ⟨daily⟩: date CONFIRMED against CoreWeave's own IR page
+    # (investors.coreweave.com) — Q2 2026 call is Tue 2026-08-11, 5:00pm ET.
+    # This run happened ~07:15 ET, i.e. ~10h before the release, so the
+    # entry CANNOT resolve today until after the close; it stays pending by
+    # arithmetic, not for lack of checking. Consensus re-checked: EPS ≈
+    # −$1.21 to −$1.27 (sources vary) on ~$2.56B revenue, consistent with
+    # the claim as logged. Baseline for judging the backlog-conversion
+    # commentary: Q1 reported ~$100B backlog and $40B+ of new commitments.
     status: pending
 
   - id: mhpaea-replacement-rule
@@ -587,6 +606,15 @@ expectations:
     what_confirms: "the statute in force on the date (bill page is primary); watch for a delay or challenge"
     logged: 2026-07-29
     logged_by: curate-add
+    # 2026-08-11 ⟨daily⟩: pre-checked a day early against the primary source.
+    # leg.colorado.gov records the bill as "Became Law", signed by the
+    # governor 2026-06-03, codified as Chapter 358 of the 2026 Session Laws.
+    # The effective date is mechanical, and the record states the mechanism
+    # outright: "Because the General Assembly adjourned on May 13, 2026, any
+    # legislation enacted without a safety clause goes into effect on August
+    # 12, 2026." No amendment, delay or legal challenge anywhere in the
+    # legislative record. Corroborated by a Colorado Senate Democrats
+    # release framing the same date. Stays pending — due is tomorrow.
     status: pending
 
   - id: xai-mn-preliminary-injunction
@@ -633,7 +661,21 @@ expectations:
     # to Apple's Tim Cook, asking Apple not to use CXMT/YMTC chips — not to
     # the administration, and not asking for a probe. Doesn't satisfy
     # what_confirms; noted here so the distinction isn't lost.
+    # 2026-08-11 ⟨daily⟩: re-checked past grace — STANDS passed-silent. Swept
+    # forward through 08-11 for any letter to the ADMINISTRATION requesting a
+    # CXMT probe; found only the two already-known documents, neither of
+    # which qualifies: the 07-16 Moolenaar/Whitesides letter to Commerce
+    # Secretary Lutnick (the restatement trap what_confirms names), and the
+    # 07-30 seven-senator letter (Shaheen, Banks, Schumer, Crapo, Kim, Risch,
+    # Ricketts) — addressed to Apple's Tim Cook, asking Apple to forgo
+    # CXMT/YMTC chips, response requested by 08-21. The "coming days" letters
+    # described on 07-28 never materialised in the form claimed.
+    # ⚠ Residual uncertainty, stated rather than buried: individual committee
+    # letters pages (e.g. chinaselectcommittee.house.gov/media/letters) were
+    # not each fetched directly, so a letter that simply never surfaced in
+    # search can't be fully ruled out. Confidence medium, not high.
     status: passed-silent
+    resolved: 2026-08-11
 
   - id: china-duv-units-2026
     claim: "China ships ~5 homegrown immersion DUV lithography units in 2026 (~20 in 2027); SMIC, Hua Hong, CXMT first recipients"
@@ -853,6 +895,16 @@ expectations:
     # since the 08-03 launch repeats the same vague "next week"/"week of
     # 08-10" language with no firmer date issued. Still inside the claim's
     # grace window — stays pending, not flipped to passed-silent yet.
+    # 2026-08-11 ⟨daily⟩: re-checked, same finding, still inside grace (which
+    # runs through 08-13). huggingface.co/Qwen fetched directly — 458 models,
+    # no Qwen3.8 or Qwen3.8-Max repo. ModelScope's org page is still a
+    # JS-rendered shell and returned no model list, so it remains unchecked
+    # rather than checked-and-clear. The announcement/artifact distinction is
+    # the whole point of this entry: the MODEL has been API-accessible since
+    # 08-03, the WEIGHTS are what's promised and they are not posted.
+    # ⚠ One low-quality source (emergent.sh) floats 08-12 as the weights
+    # date; uncorroborated anywhere else and not an Alibaba statement, so
+    # it is NOT being recorded as a slip date.
 
   - id: apple-cxmt-senate-deadline
     claim: "Apple publicly commits to rejecting memory chips from China's CXMT and YMTC, per a bipartisan Senate deadline"
@@ -1152,6 +1204,19 @@ expectations:
     what_confirms: "mediation actually convening, and any reporting on how the three named demands (AI, layoffs, clinician control) were addressed"
     logged: 2026-08-05
     logged_by: curate-add
+    # 2026-08-11 ⟨daily⟩: date CONFIRMED from both sides — Kaiser's own
+    # labor-relations page ("Kaiser Permanente and NUHW Move to Mediation",
+    # about.kaiserpermanente.org) and NUHW's own reporting both put the start
+    # at today, 2026-08-11. The three demands in the claim also check out
+    # against NUHW's account of the sticking points: (1) AI — Kaiser wants
+    # the ability to replace therapists with AI and refuses the "not to
+    # replace" language it accepted in Southern California; (2) layoffs and
+    # outsourcing to third-party contractors; (3) sole discretion over the
+    # behavioral-health operating/clinical model, with no collaborative
+    # requirement. NOT yet resolvable: this run happened ~07:15 ET and no
+    # same-day reporting confirms the session convened or produced a
+    # readout. Labor-mediation readouts typically surface evening or next
+    # day, so the next pass should be able to close this.
     status: pending
     # 2026-08-05 ⟨daily⟩: this thread had carried "no firm date" as an open
     # gap since 07-23; a 07-27 NUHW post (missed by prior passes) names
@@ -1191,6 +1256,21 @@ expectations:
     what_confirms: "an actual signature/announcement, not further 'close to a deal' reporting — Trump has separately revived a strike threat in the same breath, so this is genuinely unresolved"
     logged: 2026-08-05
     logged_by: curate-add
+    # 2026-08-11 ⟨daily⟩: NOT signed, and the trajectory turned AWAY from a
+    # signing in this window rather than toward one. The claim's mechanical
+    # terms are confirmed real draft terms (Axios "US nears Iran deal to
+    # reopen Strait of Hormuz" 08-05, Israel Hayom 08-05) — the 60-day
+    # toll-free window, the dual lanes, the 30-day median-lane mine-clearing
+    # are not a garbled or different deal. But CBS's live page (through
+    # 08-08) and Al Jazeera (08-05/06) still describe it as only "close" /
+    # "on the verge," and Araghchi has said reopening stays "subject to
+    # other conditions" including US amends for an alleged June memorandum
+    # violation. The material development: a CNN live update dated 08-10
+    # reports Trump added a NEW precondition requiring compensation from
+    # Iran, which the reporting says "appeared to diminish prospects for a
+    # quick deal, despite optimism last week an agreement was near."
+    # Stays pending — due 08-12, and this is exactly the genuinely-unresolved
+    # state what_confirms anticipated, not "close" being mistaken for signed.
     status: pending
     # 2026-08-05 ⟨daily⟩: due date is a rough 1-week estimate, not sourced
     # to a stated deadline -- reporting says "close," not "by X date."
@@ -1261,4 +1341,56 @@ expectations:
     what_confirms: "primary-completion posting on the registration, or topline results — against a National Priority Voucher already in hand"
     logged: 2026-08-07
     logged_by: curate-add   # per-question research wave (mh-q03 memo)
+    status: pending
+
+  - id: france-social-media-ban-effective
+    claim: "France's under-15 social-media ban takes effect with HARD identity verification — not Australia's self-declaration model"
+    due: 2026-09-01
+    due_precision: month   # the effective date reported 08-10; no single announced day yet
+    thread: social-media-causality-fight
+    entities: []
+    source: https://www.legifrance.gouv.fr/
+    confidence: reported
+    what_confirms: "reporting that new accounts are ACTUALLY blocked for under-15s in France — not merely that the rule is in force. The verification method is the whole point of this entry: Australia's declaration-based ban produced two documented evasion jurisdictions (Australia itself, then Malaysia, logged 08-09), so a hard-ID regime is the first real test of whether verification changes the outcome or just moves the workaround."
+    logged: 2026-08-11
+    logged_by: curate-add   # /daily 08-11, mental-health lens
+    status: pending
+
+  - id: nvidia-500b-financing-first-close
+    claim: "A first concrete deal is signed under Nvidia's $500B compute-financing platform — the MOUs of 2026-08-10 converting into an actual transaction"
+    due: 2026-09-15
+    due_precision: month
+    thread: nvidia-vendor-financing
+    entities: [nvidia, blackrock]
+    source: https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+    confidence: reported
+    what_confirms: "a NAMED deal announced by Nvidia or one of the six partners (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) — the 08-10 announcement was explicitly memorandums of understanding, NOT final agreements, so this entry exists to catch the gap between the headline number and any money actually moving. Restating the $500B figure does not confirm it."
+    logged: 2026-08-11
+    logged_by: curate-add   # /daily 08-11, frontier-ai + global-capital both surfaced it
+    status: pending
+
+  - id: microsoft-maia-300-unveil
+    claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
+    due: 2026-09-30
+    due_precision: month
+    thread: microsoft-capex
+    entities: [microsoft]
+    source: https://www.bloomberg.com/
+    confidence: reported   # sourced to The Information via Bloomberg; the ORDER is reported, the chip is not announced
+    what_confirms: "a Microsoft announcement or keynote naming the part and its specs — not further reporting on the order volume"
+    logged: 2026-08-11
+    logged_by: curate-add   # /daily 08-11, frontier-ai lens
+    status: pending
+
+  - id: openai-ethics-lead-replacement
+    claim: "OpenAI names a replacement head of AI ethics after Chloé Bakalar's departure"
+    due: 2026-09-30
+    due_precision: month
+    thread: openai-ipo-timing
+    entities: [openai]
+    source: https://www.bloomberg.com/
+    confidence: reported
+    what_confirms: "an OpenAI announcement or a reported hire into the role. Bakalar was OpenAI's ONLY dedicated ethicist and left in July — reported 08-10, never announced by the company, and not yet replaced. A silent pass here is itself the finding: it would mean the role was quietly retired rather than refilled, against a reported pattern of roughly half of OpenAI's safety researchers leaving this year."
+    logged: 2026-08-11
+    logged_by: curate-add   # /daily 08-11, frontier-ai lens
     status: pending

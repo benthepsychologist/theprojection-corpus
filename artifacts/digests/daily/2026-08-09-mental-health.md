@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-09
-status: building
+status: final
 window_start: 2026-08-09T05:00:00-04:00
-as_of: 2026-08-10T06:30:00-04:00
-coverage: pending
+as_of: 2026-08-11T07:40:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-09
@@ -148,3 +148,34 @@ relationship. Clinical-trials coverage is unavailable today due to a
 real clinicaltrials.gov outage, not a quiet day. Three ledger items
 (Kaiser/NUHW mediation, Colorado's new law, SB 903's hearing) close in
 over the next several days.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Nothing. All four standing benchmarks for
+this lens were reachable this pass, and the critic found **no misses** —
+every benchmark either published nothing mental-health-relevant inside
+the 08-09 digest-day window, or its one in-window item was off-topic.
+
+- **Behavioral Health Business** — reachable via plain `curl` (no
+  blocking). Its RSS feed has a hard weekend gap: last pre-window post
+  Friday 08-07, next post Monday 08-10 — after this window's cutoff —
+  and both of those posts are non-MH. Nothing published inside the
+  window at all.
+- **STAT Health Tech** — one item published inside the window, a Sanofi
+  drug-shortage story. Not mental-health content.
+- **Fierce Healthcare** — homepage loaded cleanly. Its Monday items
+  (the next posts after the weekend) were a vaccine-schedule executive
+  order, health-plan enrollment losses, hospital pricing, a Steward
+  Health Care contempt ruling, and a Doximity AI-assistant launch — none
+  mental-health.
+- **MobiHealthNews** — blocked to both WebFetch and plain `curl`;
+  reached instead via the `r.jina.ai` reader proxy. No items at all
+  posted 08-08 or 08-09; its Monday items were non-MH.
+
+**Structural read:** three of the four benchmarks are weekday-only B2B
+trade outlets, and 2026-08-09 was a Sunday. A weekend "no misses" result
+is a genuine null finding — the benchmarks simply didn't publish, not
+that this digest matched genuinely competitive coverage — rather than a
+passed head-to-head check. Treat 08-09's clean record as an artifact of
+the calendar, not evidence this lens is ahead of trade press on a
+representative day.

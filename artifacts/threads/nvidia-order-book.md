@@ -13,6 +13,22 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-08-10 — Nvidia recruits Wall Street to finance $500B of demand-side buildout
+
+- **Nvidia partnered with six asset managers — Apollo, BlackRock,
+  Blackstone, Brookfield, Goldman Sachs and KKR — on financing
+  platforms designed to raise over $500B in third-party capital for AI
+  infrastructure, with Jensen Huang saying Nvidia itself can backstop
+  up to $125B (25%) of the resulting deals — MOUs, not final
+  agreements yet.** Not a chip order, but the demand-side counterpart
+  to this thread's whole story: outside capital now being recruited at
+  Wall Street scale specifically to fund the infrastructure that
+  generates Nvidia's order book, treating compute as a lend-against
+  asset class rather than one-off vendor financing. Nvidia shares fell
+  on the announcement. Full detail on `ai-circular-financing-risk`
+  (`sev=major` there).
+  ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital), [CNBC](https://www.cnbc.com/2026/08/10/nvidia-wall-street-asset-managers-500-billion-ai-push.html)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-07 — Nvidia takes a $3B stake in the power layer under Stargate
 
 - **Nvidia will invest up to $3B in Lancium, the Blackstone-backed power

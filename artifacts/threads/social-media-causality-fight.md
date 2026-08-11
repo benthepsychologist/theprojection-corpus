@@ -15,6 +15,19 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-10 — France requires hard ID verification instead of Australia's declaration model
+
+- **France's under-15 social-media ban (new accounts blocked starting
+  September 2026) requires every user, not just minors, to verify age
+  with a passport, driver's license, or national ID.** Platforms choose
+  the verification method, subject to the French privacy regulator's
+  approval — a structurally different bet than Australia's and
+  Malaysia's declaration-based bans, both already shown leaking around
+  age checks. A third national approach to the same underlying question
+  this thread tracks: whether age-gating actually reduces use, distinct
+  from whether reduced use would improve outcomes even if it worked.
+  ([Reclaim The Net](https://reclaimthenet.org/france-social-media-ban-under-15-digital-id-age-verification)) ⟨daily 2026-08-10⟩
+
 ## 2026-08-09 — Malaysia becomes a second country whose under-16 ban is being evaded
 
 - **A second country's under-16 social-media ban is running into the
