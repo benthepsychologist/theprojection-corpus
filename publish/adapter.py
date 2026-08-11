@@ -289,7 +289,7 @@ def _source_domain(url):
     m = re.match(r"https?://([^/]+)", url or "")
     if not m:
         return ""
-    host = m.group(1).lower()
+    host = m.group(1).lower().split(":")[0]   # drop :port — `asiaone.com:443`
     return host[4:] if host.startswith("www.") else host
 
 
