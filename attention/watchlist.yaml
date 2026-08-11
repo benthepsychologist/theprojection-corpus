@@ -435,13 +435,13 @@ lenses:
       # JPMorgan-led $441M senior secured facility (2026-08-10).
       - term: "Sami Issa"
         entity: global-ai
-        name: "Global AI"
+        name: "Global AI (globalai.com)"
         # The CEO's name is the only unambiguous handle on this entity. He
         # is quoted in essentially all of its coverage, so recall stays
         # usable while precision goes to near-perfect.
       - term: "Global AI sovereign infrastructure"
         entity: global-ai
-        name: "Global AI"
+        name: "Global AI (globalai.com)"
         # Second handle, deliberately narrow: their own positioning phrase.
         # Two entries pointing at one entity slug is fine — both route to
         # `global-ai` on match. ⚠️ Watch this one specifically: "sovereign

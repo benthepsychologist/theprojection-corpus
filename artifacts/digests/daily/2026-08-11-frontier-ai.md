@@ -18,11 +18,11 @@ don't carry a dated development. Nothing new and verified yet.*
 
 ## Today's throughline
 
-Too early to say — the digest-day is about two hours old. The active
-story lines carrying over from yesterday: Nvidia's new $500B Wall
-Street financing platform, Anthropic's Riot Platforms and Macquarie/GIC
-deals, and Congress's two-chamber pressure on OpenAI/Anthropic over the
-rogue-agent incidents (all on 2026-08-10's digest).
+Nothing new has broken this morning. The story lines still running from
+yesterday: Nvidia's $500B Wall Street financing platform, Anthropic's
+Riot Platforms and Macquarie/GIC data-centre deals, and Congress
+pressing OpenAI and Anthropic from both chambers over the rogue-agent
+incidents.
 
 ## ⏳ Upcoming & expected
 
