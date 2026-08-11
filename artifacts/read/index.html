@@ -139,7 +139,39 @@ function threadBy(slug){ return P.threads.find(function(t){return t.slug===slug;
 function lensOk(l){ if(lensFilter==="all")return true;
   return l===lensFilter || (lensFilter==="ai"&&l==="frontier-ai")
     || (lensFilter==="global-capital"&&l==="money"); }
-function itemsFor(pred){ return P.items.filter(function(it){return lensOk(it.lens)&&pred(it);}); }
+
+/* ---------- TIME VIEWS (Ben, 2026-08-11) ----------------------------------
+   "Why don't we just provide button-views like the feed lenses? Let me decide
+   on the fly what I want to see with a default view alongside any other cuts?"
+
+   So the window is a VIEW, not a build-time decision. Each view is a pair:
+   how far BACK over the payload's days, and how far FORWARD over the
+   expectations ledger.
+
+   The forward half works fully today — render_read.py ships the ENTIRE
+   ledger unwindowed (61 entries out to 2027), and the old hardcoded
+   `n>=0 && n<=1` was throwing all of it away at display time.
+
+   The backward half is capped by whatever the payload contains, which is
+   currently the calendar week (render_read.py:347) — the Monday bug that
+   started this. `backLabel()` therefore describes the days actually present
+   rather than promising a span, and a "last 7 days" chip appears on its own
+   the moment the payload carries more than a week. No second change needed
+   here when that lands; see kestrel INBOX 2026-08-11.
+---------------------------------------------------------------------------*/
+var VIEWS=[
+  {id:"today", label:"today",        back:0,    fwd:0},
+  {id:"week",  label:"the week",     back:null, fwd:1},
+  {id:"fwd7",  label:"+ next 7 days",back:null, fwd:7},
+  {id:"fwd30", label:"+ next 30",    back:null, fwd:30},
+  {id:"all",   label:"full horizon", back:null, fwd:36500}
+];
+var viewFilter="week";                       // the default view
+function view(){ for(var i=0;i<VIEWS.length;i++) if(VIEWS[i].id===viewFilter) return VIEWS[i];
+  return VIEWS[1]; }
+function dayOk(d){ var v=view(); return v.back===null ? true : d===P.today; }
+function itemsFor(pred){ return P.items.filter(function(it){
+  return lensOk(it.lens)&&dayOk(it.day)&&pred(it);}); }
 function link(hash, text, cls){ var a=el("a",cls||"",text); a.href=hash; return a; }
 
 function chipRow(parent){
@@ -149,6 +181,21 @@ function chipRow(parent){
     c.onclick=function(){ lensFilter=l; render(); };
     row.appendChild(c);
   });
+  parent.appendChild(row);
+}
+/* The time-view chips, same idiom as the lens row directly above — that
+   parallel is deliberate, it is what Ben asked for ("like the feed lenses").
+   Rendered as a second row so a lens choice and a window choice compose
+   rather than replacing one another. */
+function viewRow(parent){
+  var row=el("div","row");
+  VIEWS.forEach(function(v){
+    var c=el("span","chip"+(viewFilter===v.id?" on":""), v.label);
+    c.onclick=function(){ viewFilter=v.id; render(); };
+    row.appendChild(c);
+  });
+  var n=(P.days||[]).length;
+  row.appendChild(el("span","small muted"," "+n+" day"+(n===1?"":"s")+" of items on file"));
   parent.appendChild(row);
 }
 function entChips(parent, slugs){
@@ -238,6 +285,7 @@ function renderHome(){
   app.appendChild(masthead("centered on "+P.today+" · generated "+P.generated+
     " · "+P.days.length+"/7 days in"));
   chipRow(app);
+  viewRow(app);
 
   // ===== 2. EXECUTIVE SUMMARY — front first, then the lens roll-ups =====
   var th=(P.throughlines||{})[P.today]||{};
@@ -257,20 +305,26 @@ function renderHome(){
   // Everything due today/tomorrow, INCLUDING thread:null entries. Previously
   // these rendered in a flat list below every thread card, which is how the
   // FOMC decision ended up at the bottom of the page (Ben, 2026-07-29).
+  var FWD=view().fwd;
   var soon=(P.upcoming||[]).filter(function(u){
     if(u.status==="passed-silent") return true;
     if(u.status!=="pending") return false;
     var n=dueDays(String(u.due));
-    return n>=0 && n<=1;
+    return n>=0 && n<=FWD;
   }).sort(function(a,b){return String(a.due)<String(b.due)?-1:1;});
   var soonIds={};
   if(soon.length){
     var cs=el("section");
-    cs.appendChild(el("h2","","⏳ Today & tomorrow"+((P.now&&P.now!==P.today)?" (as of "+P.now+")":"")));
+    var fwdLabel = FWD===0?"Due today"
+                 : FWD===1?"Today & tomorrow"
+                 : FWD>=36500?"The full horizon"
+                 : "Next "+FWD+" days";
+    cs.appendChild(el("h2","","⏳ "+fwdLabel+((P.now&&P.now!==P.today)?" (as of "+P.now+")":"")));
     soon.forEach(function(u){
       soonIds[u.id]=1;
       var c=el("div","row card");
-      c.appendChild(el("span","tag",dueDays(String(u.due))===0?"TODAY":"tomorrow"));
+      var n=dueDays(String(u.due));
+      c.appendChild(el("span","tag", n===0?"TODAY" : n===1?"tomorrow" : "in "+n+"d"));
       var g=el("span","grow"); g.appendChild(document.createTextNode(u.claim));
       if(u.thread){ g.appendChild(document.createTextNode(" · "));
         var ut=threadBy(u.thread);
