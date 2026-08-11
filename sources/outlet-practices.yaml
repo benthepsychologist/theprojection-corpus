@@ -33,6 +33,7 @@ meta:
   null_means: could not be checked (page blocked); dropped from the denominator, never counted as absent
   domains_rated: 37
   domains_not_rated: 2
+  second_pass: 2026-08-11 (reader proxy; Chrome extension unavailable)
 domains:
   ad-hoc-news.de:
     checked: '2026-08-11'
@@ -194,22 +195,20 @@ domains:
     checked: '2026-08-11'
     by: agent-check
     indicators:
-      masthead: null
-      bylines: null
+      masthead: true
+      bylines: true
       corrections: false
       ownership: true
       standards: false
       ad_separation: true
-      primary_sourcing: null
+      primary_sourcing: false
     evidence:
       ownership: 'https://www.datacenterdynamics.com/en/ (footer: "Data Centre Dynamics Ltd (DCD)... DCD
         is a subsidiary of InfraXmedia")'
       ad_separation: https://www.datacenterdynamics.com/en/ (homepage MarketWatch section, items explicitly
         tagged 'Sponsored', e.g. "Sponsored Don’t bring yesterday’s optics to tomorrow’s AI fabric")
-    blocked:
-    - masthead
-    - bylines
-    - primary_sourcing
+      masthead: https://www.datacenterdynamics.com/en/profile/matthew-gooding/
+      bylines: https://www.datacenterdynamics.com/en/news/xai-humain-data-center-elon-musk/
     note: 'IMPORTANT ACCESS CAVEAT: individual article, author-profile, and team-page URLs (/en/news/<slug>/,
       /en/profile/<name>/, /en/work-with-us/our-team/, /en/authors/...) all returned Cloudflare bot-challenge
       403s to both WebFetch and curl with a browser user-agent, while listing/category pages (homepage,
@@ -220,7 +219,12 @@ domains:
       verify per the sourcing rule, so I did not credit it. Ownership and ad_separation were confirmed
       on pages that did load: the homepage footer discloses DCD is a subsidiary of InfraXmedia, and its
       ''MarketWatch''/sponsored-post section is explicitly labelled ''Sponsored'' distinct from the ''Latest
-      News'' wire items above it.'
+      News'' wire items above it. | SECOND PASS 2026-08-11 (reader proxy): FULLY RESOLVED, all seven checked.
+      Bylines are named and link a profile page that states role and history (''Senior editor, DatacenterDynamics''),
+      so masthead is satisfied by per-author profiles even though there is no staff directory — /en/authors/
+      404s and /work-with-us/our-team/ lists SALES staff (Head of Account Management, Head of Sales),
+      not journalists. primary_sourcing is a resolved FALSE: the article links only DCD''s own prior coverage,
+      quoting an announcement it never links.'
   digit.in:
     checked: '2026-08-11'
     by: agent-check
@@ -263,7 +267,7 @@ domains:
     checked: '2026-08-11'
     by: agent-check
     indicators:
-      masthead: null
+      masthead: false
       bylines: true
       corrections: null
       ownership: true
@@ -273,15 +277,22 @@ domains:
     evidence:
       bylines: https://www.fiercehealthcare.com/providers/trump-signs-executive-order-overhaul-pediatric-vaccine-recommendations
       ownership: https://www.fiercehealthcare.com/
+      masthead_checked: https://www.fiercehealthcare.com/fiercehealthcarecom/about-us
     blocked:
-    - masthead
     - corrections
     - standards
-    note: Cloudflare 403s the '/fiercehealthcarecom/about-us' and '/editorial-advisory-council' paths
+    note: 'Cloudflare 403s the ''/fiercehealthcarecom/about-us'' and ''/editorial-advisory-council'' paths
       specifically (via both WebFetch and curl with 3 user agents, including a referer header); homepage
       and most article pages are reachable. Ownership evidence is the homepage footer copyright line,
-      '©2026 Questex LLC All rights reserved.' Masthead/corrections/standards could not be verified because
-      the pages that would carry them are blocked -- treat as 'not found' rather than confirmed absent.
+      ''©2026 Questex LLC All rights reserved.'' Masthead/corrections/standards could not be verified
+      because the pages that would carry them are blocked -- treat as ''not found'' rather than confirmed
+      absent. | SECOND PASS 2026-08-11 (reader proxy): the About page is now readable and names NO editorial
+      staff — only the parent, Questex LLC — so masthead is a resolved FALSE, not a block. /editorial-advisory-council
+      returns an empty body and /about/editorial-team does not exist. Corrections and standards remain
+      unverified: no policy page was located either way. DISCREPANCY LOGGED: primary_sourcing is recorded
+      false, but the one article of theirs we actually cite links three cms.gov primary pages (innovation
+      centre, participant portal, accepted-applicants list) — one sample is not ''routinely'', so the
+      value stands, but it is worth a wider recheck.'
   globalbankingandfinance.com:
     checked: '2026-08-11'
     by: agent-check
@@ -488,11 +499,13 @@ domains:
       ownership: https://www.moneycontrol.com/cdata/disclaim.php
     blocked:
     - ad_separation
-    note: The canonical /about-us/ URL consistently returns HTTP 503 (Akamai edge error); used the working
+    note: 'The canonical /about-us/ URL consistently returns HTTP 503 (Akamai edge error); used the working
       mirror at /cdata/aboutus.php plus the disclaimer page instead, both of which name Network18 Media
       & Investments Limited as the copyright holder/publisher but no individual leadership. Three articles
       checked all had named bylines but no links to primary documents. No corrections, editorial-standards,
-      or clearly-labelled sponsored-content page was found (an advertising-page check also 503'd).
+      or clearly-labelled sponsored-content page was found (an advertising-page check also 503''d). |
+      SECOND PASS 2026-08-11: /advertise-with-us/ returns a genuine Akamai 503 through the reader proxy
+      too — a broken page, not a bot block. Still unverifiable.'
   morningstar.com:
     checked: '2026-08-11'
     by: agent-check
@@ -513,16 +526,17 @@ domains:
       ad_separation: https://www.morningstar.com/editorial-policy
     blocked:
     - primary_sourcing
-    note: Author bio pages (e.g. /people/michael-field) name specific analysts/editors with titles and
-      disclose 'Morningstar Holland BV, a wholly owned subsidiary of Morningstar, Inc.' The /editorial-policy
+    note: 'Author bio pages (e.g. /people/michael-field) name specific analysts/editors with titles and
+      disclose ''Morningstar Holland BV, a wholly owned subsidiary of Morningstar, Inc.'' The /editorial-policy
       page is a full published standards document covering independence, automation/AI disclosure, conflicts
-      of interest, an explicit 'Corrections and Clarifications' section, and an explicit ad-separation
-      line ('any sponsored content... must be distinguishable from our editorial content'). A dedicated
+      of interest, an explicit ''Corrections and Clarifications'' section, and an explicit ad-separation
+      line (''any sponsored content... must be distinguishable from our editorial content''). A dedicated
       /corrections page and /company/about-us page exist in nav but returned HTTP 202 bot-challenge responses
       on every attempt and could not be read directly - citing editorial-policy instead since it contains
       the same corrections commitment inline. Could not access individual stock-analysis articles (also
       202-blocked) to directly verify routine primary-source linking, so primary_sourcing is left as not-confirmed
-      rather than assumed from reputation.
+      rather than assumed from reputation. | SECOND PASS 2026-08-11: not re-attempted — morningstar is
+      not cited by any story, so its one open indicator is low-value. Still 6/6.'
   newsfromthestates.com:
     checked: '2026-08-11'
     by: agent-check
