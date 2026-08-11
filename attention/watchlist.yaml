@@ -92,6 +92,29 @@ lenses:
       # Vertically-integrated AI majors (board.yaml — ben-steer 2026-07-24)
       - "Tesla"
       - "SpaceX"      # SpaceXAI post-merger (Grok / Colossus)
+      # ben-steer 2026-08-11 ("yes to all seven watchlist entities, add
+      # them") — every one of these carried a real 08-10/08-11 story the
+      # curators had to leave UNTAGGED because no slug existed. Terms are
+      # deliberately qualified rather than bare: the same /daily run dropped
+      # ~60 NFL stories to a bare "Highmark" colliding with the Buffalo
+      # Bills' stadium sponsor, so a generic term is a known failure mode
+      # here, not a hypothetical one.
+      - term: "ByteDance AI"
+        entity: bytedance
+        name: "ByteDance"
+        # Reported (FT, event-dated 08-07) to be pretraining a model of up
+        # to 10T parameters via its Seed division. Qualified as "ByteDance
+        # AI" rather than bare "ByteDance" to keep TikTok divestiture/ban
+        # politics out of the sweep — that is a different story on a
+        # different beat.
+      - term: "Firmus AI data center"
+        entity: firmus
+        name: "Firmus"
+        # Australian AI-datacenter builder; raised $2B (Coatue, Nvidia,
+        # Blackstone Tactical Opportunities, Jane Street) at a $10.5B
+        # valuation, event-dated 08-07. Same shape as Lancium above — an
+        # infrastructure counterparty that kept surfacing with nowhere to
+        # land.
 
     # Persons of interest (leadership, safety, policy)
     people:
@@ -365,6 +388,48 @@ lenses:
         # thread (berkshire-ai-capital-stance, opened 2026-08-04) but was
         # never actually on the watchlist itself — a pre-existing gap
         # surfaced by this week's /daily and /week passes.
+
+      # --- ben-steer 2026-08-11 ("yes to all seven, add them") ---
+      # The 08-10 financing story ran through counterparties this map could
+      # not name. Macquarie and GIC ARE the Theseus venture; JPMorgan led the
+      # $441M facility and was simultaneously an Intel bookrunner; Riot is
+      # Anthropic's $9.1B landlord. Terms qualified on purpose — see the
+      # Highmark/Buffalo-Bills collision noted in the ai block above.
+      - term: "Macquarie Asset Management"
+        entity: macquarie
+        name: "Macquarie Asset Management"
+        # Co-owner of Theseus Infrastructure with GIC (08-10), funding the
+        # majority of equity per project. Scoped to the asset-management arm
+        # rather than bare "Macquarie", which is a full-service bank and
+        # would drag in unrelated market coverage daily.
+      - term: "GIC Singapore"
+        entity: gic
+        name: "GIC (Singapore)"
+        # Singapore's sovereign wealth fund; Theseus co-owner. Bare "GIC" is
+        # an unusable acronym (it collides with insurers, guaranteed
+        # investment certificates, and several trade bodies), hence the
+        # country qualifier.
+      - term: "Riot Platforms"
+        entity: riot-platforms
+        name: "Riot Platforms"
+        # Bitcoin miner turned AI landlord; signed a $9.1B, 20-year compute
+        # deal with Anthropic (08-10). Distinctive enough to run unqualified.
+      - term: "JPMorgan AI data center"
+        entity: jpmorgan
+        name: "JPMorgan"
+        # Led a $441M AI-datacenter debt facility and book-ran Intel's $15B
+        # offering in the same window. DELIBERATELY narrow: bare "JPMorgan"
+        # would match most of the financial press every day and tell us
+        # nothing about the buildout, which is the only reason it is here.
+      - term: "Global AI data center"
+        entity: global-ai
+        name: "Global AI"
+        # The two-year-old AI-infrastructure firm behind the JPMorgan-led
+        # $441M facility. ⚠️ Weakest term in this block by some distance —
+        # "Global AI" is close to a generic phrase, and even qualified this
+        # will pull noise. Kept because the entity is real and recurring;
+        # expect to retune or drop it at the next decay review if the
+        # precision does not hold.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

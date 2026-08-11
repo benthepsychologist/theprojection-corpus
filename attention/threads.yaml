@@ -3160,3 +3160,89 @@ threads:
       member of the mh-evidence-watch family, sourced from the mh-q03
       research memo. Same ruling round: the Alphabet capital-structure
       candidate stays FOLDED into google-capex, no new thread.
+
+  - slug: ai-buildout-debt-risk
+    genre: financing   # ben-steer 2026-08-11
+    title: "AI Debt Gets Rated"
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [nvidia, blackrock, jpmorgan, global-ai]
+    weight: 2
+    terms:
+      - "AI data center debt"
+      - "AI infrastructure bonds"
+      - "AI credit risk"
+      - "data center asset-backed securities"
+      - "AI debt downgrade"
+    opened: 2026-08-11
+    last_seen: 2026-08-11
+    watch: >
+      Whether AI-buildout debt is becoming its own underwritten, rated,
+      publicly-watched risk category rather than a footnote inside each
+      borrower's story. Three data points converged on 2026-08-10 at three
+      very different scales: Bloomberg Opinion launched "AIndicators," a
+      credit-market framework built specifically to flag whether lenders are
+      mispricing AI infrastructure; JPMorgan led a $441M debt facility for
+      Global AI, a two-year-old AI-infrastructure firm; and Nvidia's $500B+
+      MOUs propose special-purpose-entity bonds collateralized by GPU
+      capacity itself. Track: whether rating agencies publish an explicit
+      methodology for compute-collateralized paper, whether any of it prices
+      wide of comparable real-asset debt, the first covenant breach or
+      restructuring, and whether Nvidia's CDS (already record-wide on 07-27)
+      moves with issuance volume. The open question this thread exists to
+      answer is whether GPU compute behaves like an infrastructure asset with
+      a 20-year life or like equipment on a 3-4 year depreciation clock —
+      the two produce very different recovery rates in a default.
+    notes: |
+      2026-08-11: Opened (ben-steer — "plus the threads"). Proposed by the
+      global-capital curator after the third data point landed in one day;
+      until now all three were being folded into nvidia-vendor-financing,
+      which is an ACTOR thread (what Nvidia is doing) and could not hold a
+      market-structure question (what the debt is worth). Deliberately
+      scoped to the DEBT, not the buildout: capex volume belongs to
+      hyperscaler-capex-big-picture, vendor equity stakes to
+      nvidia-vendor-financing, and asset-manager ownership to
+      asset-managers-build-ai. This thread is only about how the borrowing
+      is priced, rated and recovered.
+
+  - slug: anthropic-infrastructure-buildout
+    genre: buildout-race   # ben-steer 2026-08-11
+    title: "Anthropic Rents the Buildout"
+    kind: story
+    status: open
+    lens: ai
+    entities: [anthropic, macquarie, gic, riot-platforms, nvidia]
+    weight: 2
+    terms:
+      - "Anthropic compute deal"
+      - "Anthropic data center"
+      - "Anthropic capacity agreement"
+      - "Theseus Infrastructure"
+    opened: 2026-08-11
+    last_seen: 2026-08-11
+    watch: >
+      Anthropic has signed four large infrastructure arrangements in roughly
+      three months — SpaceX (~$45B), Volta ($10B, six-year, a 133MW Nvidia
+      Vera Rubin site in Norway), Riot Platforms ($9.1B, 20-year, announced
+      2026-08-10) and, the same day, the Theseus Infrastructure venture with
+      Macquarie Asset Management and Singapore's GIC, which will OWN
+      purpose-built data centres and lease them back with Anthropic as
+      anchor tenant. The pattern worth naming: it is renting and anchoring
+      rather than owning, so the capex sits on someone else's balance sheet
+      while the lease obligation sits on its own. Track: total contracted
+      capacity and its implied annual lease cost against a company that has
+      confidentially filed an S-1; whether any arrangement converts to
+      ownership; the counterparty mix drifting from clouds toward miners and
+      infrastructure funds; and the Theseus consumer-electricity commitment,
+      which is the first contractual concession this map has seen a lab make
+      to ratepayer politics. Read against ai-circular-financing-risk, which
+      asks whether this money is circular — this thread asks a narrower
+      question, who ends up holding the asset.
+    notes: |
+      2026-08-11: Opened (ben-steer — "plus the threads"). Proposed by the
+      frontier-ai curator, which noted these deals had no clean home:
+      ai-circular-financing-risk's entity list is nvidia/openai/oracle with
+      no Anthropic, and anthropic-ipo-timing is about the listing, not the
+      capacity. Four arrangements accumulated across three months with each
+      one logged to a different thread and the pattern never stated.
