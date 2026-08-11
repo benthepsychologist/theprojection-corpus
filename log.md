@@ -2739,3 +2739,91 @@ thread candidates (AI-buildout debt/credit risk; Anthropic's serial
 infrastructure buildout — four large arrangements in three months); and the
 still-unanswered week-boundary payload question. All three repos verified
 clean at wrap time.
+
+## 2026-08-11 (later) — story pages: the object the site was missing
+
+Ben clicked a briefing bullet about Nvidia's $500B financing platform and
+landed on `ai-circular-financing-risk` — "a non-intuitive UX leap… what I
+really want is a STORY page, that lists the story headline, a summary of the
+story and its coverage, and links to sources with the accuracy/credibility
+ratings we picked up." He also noted, fairly, that this was literally what he
+had asked for earlier in the day.
+
+**A thread is a narrative arc over weeks; a story is ONE event with many
+witnesses.** The site only had the first, so every story-level click had to
+resolve to the arc containing it. That's the whole bug.
+
+**v1 shipped, with the backfill Ben asked for "right away":** 520 story pages
+derived from the dated blocks of every published thread timeline — 387 with
+at least one source, 660 source links, 222 credibility-badged. Deriving them
+from the timeline rather than inventing a new curation artifact is what made
+the backfill immediate; the record already existed, it just had no page.
+`publish/adapter.py` gains `build_stories()` + `load_outlet_credibility()`;
+`layouts/story/single.html` renders headline · what happened · sources with
+badges · link out to the containing thread.
+
+**Credibility publication cleared** — ben-steer, verbatim: "outlet
+credibility can be public, no problem. even the stuff we're waiting to hear
+back on. It already says feel free to use it. We are oss on the web. We
+should feel free until we hear back. permission granted." Recorded in
+`sources/outlet-credibility.yaml` itself, superseding its own keep-INTERNAL
+hold, with the note that the outstanding written-OK request is what gets
+revisited if the author answers with a restriction. Both datasets are
+attributed on every story page as their licences require. Three judgement
+calls encoded rather than fudged: `primary-source` WINS over any news rating
+(a reliability score on a lab or company newsroom is a category error, not a
+low score); an outlet with conflicting Wikipedia entries renders "disputed /
+split" rather than the page picking a side; unrated says unrated.
+
+**Three bugs, one of them mine and one of them my own instruction:**
+
+- `lstrip("www.")` strips a leading run of the CHARACTERS w/./ rather than
+  the prefix, so washingtonpost.com became "ashingtonpost.com" and wired.com
+  became "ired.com" — every w-initial domain silently missed its credibility
+  lookup. Caught by reading the unbadged-domain list instead of trusting the
+  33% number.
+- 45 timeline citations point at `news.google.com`, a redirect rather than a
+  publisher, so they can be neither attributed nor rated. Flagged on the page
+  rather than dropped: a silent drop makes a MIS-sourced story look UNsourced.
+- **33 of 87 briefing bullets carried `/threads/` urls — because I told the
+  briefing agents this morning to prefer internal thread links.** Right when
+  no stories existed, and precisely the thing blocking story resolution
+  afterwards, since a thread link is ambiguous by construction. Repaired
+  deterministically (token-overlap match of each bullet against its own
+  pack's news items; 32 of 33 confident, most at 1.00, the weak one left
+  alone) rather than re-running four agents.
+
+**Upstream, per "yes to changing upstream right away":** the digest
+template's "exactly one source link" rule is retired. It was destroying work
+— curators already consult 2-4 sources per bullet to verify against a primary
+source, then discarded all but one, and those discarded links are exactly
+what a story page wants. Now: cite every source used, primary first, never a
+google-news redirect. That rule lived only in the template (mine); the
+`/daily` skill does not duplicate it, so no brief was needed for that half.
+
+**Verified live after deploy:** `/story/nvidia-vendor-financing--2026-08-10/`
+returns 200 and lists NVIDIA Newsroom (unrated), CNBC (high, 0.85) and
+Bloomberg (high, 0.84, disputed/split) with attribution present. Ben's exact
+bullet on /news/ now points at it. Across the built site: 1,016 feed/readout
+bullets — 473 to /story/, 100 to /threads/, **0 external**.
+
+**Also this session:** thread and entity pages reordered so the page names
+itself before showing a news list, and the thread pages' duplicate item block
+removed (it duplicated "This week's evidence" exactly, AND its bullets linked
+back to the page the reader was already on). 15 scopes stopped narrating the
+pipeline to readers — the root cause being that several packs have EMPTY
+news arrays, so a model reaches for the only thing in them that looks like
+content: our own `⟨crawl …⟩` bookkeeping. A disproven claim was corrected in
+`actor-doing.yaml` (the Apple/Gemini "cloud extension" that never happened;
+the correction had reached the thread but never propagated to the standing
+synthesis). Time-window view buttons added to the artifact — the forward
+horizon was being thrown away behind a hardcoded `n<=1` despite the full
+61-entry ledger already shipping in the payload.
+
+**Pick up:** the single highest-value follow-up is a credibility-layer
+rebuild — only 33% of source links carry a badge, and the gaps are concrete
+(`sec.gov`, `aljazeera.com`, `npr.org`, company newsrooms), several of which
+are plainly primary sources, a class the file supports but applies to just 6
+domains. That is a data job, not a code one. v2 story pages (the full master
+source list, needing google-redirect resolution) are roadmap. Five briefs
+sit in kestrel's INBOX from today, all uncommitted per protocol.
