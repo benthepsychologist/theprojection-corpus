@@ -516,7 +516,7 @@ threads:
       - "state AI companion law"
       - "AI mental health law state"
     opened: 2026-07-22
-    last_seen: 2026-08-10
+    last_seen: 2026-08-11
     watch: >
       The wave is ~10+ enacted instruments in two species (crawl 2026-07-22
       corrected the "7 states" seed — TN unverified, VT unconfirmed):
@@ -546,7 +546,7 @@ threads:
       - "Kaiser clinicians AI"
       - "NUHW Kaiser AI"
     opened: 2026-07-22
-    last_seen: 2026-08-07
+    last_seen: 2026-08-11
     watch: >
       A two-year escalation over two specific systems (the E-Visit
       auto-triage tool + unlicensed TSR phone triage): first union strike
@@ -721,7 +721,7 @@ threads:
       - "Alphabet capital expenditure"
       - "Alphabet bond"   # critic-add 2026-08-07: Bloomberg Tech led with the jumbo-bond ~$115B order book (08-06) and no term caught the financing side of the capex story
     opened: 2026-07-23
-    last_seen: 2026-07-31   # reverted stale-recall correction 08-05
+    last_seen: 2026-08-10   # reverted stale-recall correction 08-05
     watch: >
       $195-205B guided for 2026 (07-22), destination traced by crawl 07-27:
       a 15+ state land-grab (MO $15B, MI 1GW "Cannoli", TX 1GW+, NextEra
@@ -901,7 +901,7 @@ threads:
       - "Mojtaba Khamenei"          # added 2026-08-02 — successor, see ORIGIN CORRECTED
       - "Iran nuclear deal Hormuz"  # added 2026-08-02 — the 08-01 cancellation/deal track
     opened: 2026-07-23
-    last_seen: 2026-08-10
+    last_seen: 2026-08-11
     watch: >
       ⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent
       its first ten days framing the war as beginning 07-23/07-28. That
@@ -1499,7 +1499,11 @@ threads:
     kind: story
     status: open
     lens: ai
-    entities: [spacex]
+    entities: [spacex, amazon-aws]   # amazon-aws added 2026-08-11 ⟨daily⟩:
+    # the 08-07 Pecos County item (an ~8,000-acre site plus contracted power
+    # from a gas plant permitted above 30Mt CO2/yr) is this thread's largest
+    # single instance and had no entity to hang on. Flagged by the curator
+    # that wrote it.
     weight: 1
     parent: ai-power-buildout
     terms:
@@ -1901,7 +1905,7 @@ threads:
       - "CoreWeave debt"
       - "neocloud"
     opened: 2026-07-28
-    last_seen: 2026-08-08
+    last_seen: 2026-08-10
     watch: >
       The neocloud wager, quantified: $99.4B backlog (Q1-26; OpenAI
       $18.4B + Meta $21B/to-2032 + Jane Street $6B) vs revenue $2.08B and
@@ -2912,7 +2916,7 @@ threads:
     kind: meta
     status: open
     lens: mental-health
-    last_seen: 2026-08-07
+    last_seen: 2026-08-11
     entities: []
     weight: 3
     terms:
@@ -3102,7 +3106,7 @@ threads:
     kind: story
     status: open
     lens: world-news
-    last_seen: 2026-08-10   # /daily 2026-08-09 (ambient — Rome round-7 talks continue, no new dated development)
+    last_seen: 2026-08-11   # /daily 2026-08-09 (ambient — Rome round-7 talks continue, no new dated development)
     entities: []
     weight: 2
     terms:

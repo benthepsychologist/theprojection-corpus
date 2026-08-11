@@ -2604,3 +2604,113 @@ closed a day-old finalization rather than a same-morning one.
   digest whose curation stops mid-morning structurally misses the day's own
   biggest stories — which is what happened here and was only caught because
   08-10 was still `building` when this pass ran.
+
+## 2026-08-11 critic pass — finalized 2026-08-10 (all three critic-bearing
+lenses; world-news carries none by design)
+
+Run the same day the digest-day closed, ~3.5h after the coverage window
+opened — the first genuinely on-time finalize in a week.
+
+### ai / 2026-08-10
+- **FOUR real misses**, the most a single lens has produced in one pass.
+- **Claude improved a century-old bound tied to the Riemann Hypothesis** —
+  the proven share of zeta-function zeros on the critical line raised from
+  41.6% to 67.2%, by ~60 coordinated subagents over ~1.5 days after 650
+  failed approaches, machine-verified in Lean. Anthropic is explicit this is
+  incremental progress on an existing line of work, NOT movement toward
+  proving the hypothesis — the qualifier travels with the claim. Primary:
+  anthropic.com/research/riemann-zeta. It was TLDR AI's #1 item and a
+  Rundown lead; we had nothing. No thread fits an AI-capability-research
+  milestone — offered as a thread candidate rather than forced onto one.
+- **Amazon's Pecos County power deal** — and this one arrived at the digest
+  with TWO errors in the brief it was handed, both caught by the curator
+  before publication: the framing was not "financing" (Amazon acquired an
+  ~8,000-acre site and contracted for power from Pacifico Energy's plant),
+  and the event date was 08-07, not 08-08. Written as a late catch on
+  `datacenter-power-grid` at its true date. The plant is permitted above 30
+  million tons CO2/year.
+- **Google open-sourced TPU Raiden** (Apache-2.0 KV-cache transfer library,
+  the TPU answer to Nvidia's NIXL) — flagged first by SemiAnalysis, not
+  announced by Google. Directly answers `google-capex`'s own standing
+  "TPU externalization" watch item, which had not moved since 07-31.
+- **North Korea's Kimsuky group running local, self-hosted AI tooling**
+  (Ollama, GPT4All, RAG pipelines, Cursor) to scale intrusion work without
+  touching a commercial provider. ⚠ The brief named Japan Times and Manila
+  Times as corroborators; the curator could not verify either and dropped
+  them rather than cite unverified — Genians' own report plus Al Jazeera and
+  Business Standard stand. Logged ambient: no watchlist entity exists for
+  North Korea or Kimsuky, which is itself the gap.
+- **Access:** TLDR AI and The Neuron fetched directly for both 08-10 and
+  08-11. The Rundown AI's archive doesn't expose per-date URLs; its 08-11
+  issue was found by title, its 08-10 lead never independently pinned. The
+  AI Daily Brief had only an 08-10 episode, pure recirculation.
+- **Pattern the critic named, worth keeping:** all three non-Riemann misses
+  are infrastructure- or security-adjacent — exactly what a sweep tuned for
+  big-lab capital moves and lab-safety incidents under-indexes on. Two of
+  them (Amazon, Raiden) sit on threads this map already tracks, so this was
+  not a coverage-category gap, just missed items inside a watched category.
+
+### global-capital / 2026-08-10
+- **No genuine miss within this lens** — but the pass produced two real
+  additions and one instructive false positive.
+- ⚠ **The critic's reported "miss" was not one.** It flagged Microsoft's
+  Maia 300 / TSMC talks; that story is already in the 08-10 frontier-ai
+  digest, on `microsoft-capex`, and logged as a dated expectation. **A
+  per-lens critic reads only its own lens's digest, so a correctly-placed
+  cross-lens story reads as a gap.** Recorded as a non-miss with that
+  reason. This will recur and is a property of the critic's design, not a
+  coverage failure.
+- **Genuine gap the critic did surface: Moody's on banks' AI-vendor
+  dependence** (08-09, Guardian) — concentrated operational dependence on a
+  small set of foundation-model and cloud providers, naming OpenAI and
+  Anthropic, with cascade and pricing-power risk. Verified NOT already in
+  the record (the Moody's entries already on our threads are different
+  stories). 08-09 is closed, so it was logged at its true event date on
+  `ai-buildout-debt-risk` rather than reopening that digest.
+- **Found independently, flagged by no benchmark: CoreWeave closed a $2.6B
+  delayed-draw term loan at SOFR+550 — a 10.44% yield, flexed WIDER from
+  initial guidance of S+425-450.** Confirmed against the SEC 8-K and
+  CoreWeave's own release. This is the first CONFIRMED transaction-level
+  coupon in this map's AI-debt record, it resolves a flag
+  `coreweave-backlog-bet` left open on 07-30, and it landed three days
+  before the Q2 call.
+- **Dropped after five resolution attempts:** a "banks hit concentration
+  limits, sending data-centre debt to pension funds" item — only an
+  MSN-syndicated copy with relative dating, no reachable byline or body.
+  Not published. An unverifiable claim on-theme is still unverifiable.
+- **Access:** FT Unhedged's public RSS worked over plain curl (WebFetch
+  refuses ft.com outright). Axios Pro Rata 403'd as documented, one attempt.
+  Money Stuff and Bloomberg Technology via search; both bloomberg.com and
+  ft.com 403 direct fetches.
+
+### mental-health / 2026-08-10
+- **No misses**, and the reason is the finding: none of the four benchmarks
+  published mental-health content in the window at all. Behavioral Health
+  Business's two 08-10 posts were **already this digest's own lead
+  bullets**; MobiHealthNews ran orthopedics, maternity and general HIT;
+  STAT ran general pharma/FDA/hospital economics; Fierce had no MH content.
+- **The critic's own read, worth keeping:** this lens carried more MH depth
+  that day than any single benchmark did — the China/France/US regulatory
+  divergence, the JMIR engagement study and both behavioural-health money
+  stories all came from primary reporting rather than a benchmark lead.
+- **Access, all three routes re-verified today:** BHB now needs a GOOGLEBOT
+  user-agent (a normal browser UA has started getting the Cloudflare
+  interstitial too — this domain has tightened twice in five days);
+  MobiHealthNews needs the r.jina.ai reader proxy; STAT's RSS works over
+  plain curl. New quirk found: Fierce Healthcare's /behavioral-health tag
+  page 403s as well, wider than the About/policy paths already recorded.
+- **Adjacent item checked and correctly excluded:** STAT's 08-11 piece on
+  nurses organising against clinical AI names Kaiser and National Nurses
+  United, but its own sourcing (a 07-13 Guardian piece, a July CalMatters
+  piece) is already inside `kaiser-ai-clinician-backlash`. No new dated
+  fact, so not a miss.
+
+### Collection note — a permanent blind spot, not a slow day
+`semantic_scholar` exhausted its 600s lane budget on BOTH of today's runs
+(228 and 222 terms skipped). The cap is deliberate and well-reasoned. The
+defect is that the collector iterates terms in list order with no rotation,
+so the skipped tail is **the same ~220 terms every run** — swept at 0%,
+permanently, while the first ~185 are swept at 100%. The manifest records
+only a count, never which, so it leaves no trace in provenance. This is the
+academic lane, i.e. the EBP strand's primary feed. Filed to kestrel's INBOX
+with a rotation fix modelled on `/daily`'s own cold-rotation pattern.

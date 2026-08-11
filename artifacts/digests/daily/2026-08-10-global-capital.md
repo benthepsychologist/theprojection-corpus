@@ -1,18 +1,18 @@
 ---
 lens: global-capital
 date: 2026-08-10
-status: building
+status: final
 window_start: 2026-08-10T05:00:00-04:00
-as_of: 2026-08-11T07:20:00-04:00
-coverage: pending
+as_of: 2026-08-11T14:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-10
 
 *Opened thin (~1.5h in), then a light gap-fill check covering the next
-~100 minutes (10:30→12:07 UTC, one item: Intel's $15B offering). This
-pass closes the remaining ~21h gap (12:07 ET 08-10 → 05:00 ET 08-11,
-agentic-interim) against `buffer/2026-08-10-*.jsonl` and
+~100 minutes (10:30→12:07 UTC, one item: Intel's $15B offering). A
+second pass closed the remaining ~21h gap (12:07 ET 08-10 → 05:00 ET
+08-11, agentic-interim) against `buffer/2026-08-10-*.jsonl` and
 `buffer/2026-08-11-*.jsonl`'s global-capital lens (~2,766 tagged records
 across both files, heavily google_news_rss-dominated). Dropped as
 recirculation/false-positive: ~60 "Highmark Stadium" NFL sightline-
@@ -26,7 +26,17 @@ via WebSearch/WebFetch against primary/secondary sources: the Nvidia
 financing platform (the day's real story), a JPMorgan-led AI-debt deal,
 Bloomberg Opinion's new AI-credit tracker, and the MSC/BlackRock
 Barcelona port withdrawal this digest held back yesterday for
-single-sourcing — now confirmed by four independent outlets.*
+single-sourcing — now confirmed by four independent outlets.
+This finalize pass (2026-08-11) adds two more: a genuine coverage-critic
+catch (Moody's 08-09 warning on banks' AI-vendor dependence, dated to
+its true event date) and a second finding surfaced independently this
+pass — CoreWeave's $2.6B debt facility closing at a wider-than-guided
+spread, three days ahead of its own earnings call. A third critic lead
+("banks hit concentration limits, sending data-center debt to pension
+funds") could not be pinned to a real byline or firm publication date
+after several resolution attempts and was dropped rather than published
+unverified — see the coverage appendix below. Coverage is now closed for
+this digest-day: status `final`.*
 
 ## Today's throughline
 
@@ -49,7 +59,13 @@ MSC and BlackRock's TiL unit formally withdrew their EU merger-approval
 request, now confirmed by four independent outlets. Carrying forward:
 `coreweave-q2-earnings` due today (08-11, 5pm ET) ·
 `iran-oman-hormuz-deal-signing` still at risk (~08-12) ·
-`berkshire-q2-2026-13f` due 08-14.
+`berkshire-q2-2026-13f` due 08-14. Two items land late in this finalize
+pass, both on the same AI-debt question the day's throughline already
+turns on: Moody's warned (08-09, a genuine coverage-critic catch) that
+banks' AI adoption is building a concentrated dependence on a handful of
+vendors, and CoreWeave itself closed a $2.6B loan at a wider-than-guided
+spread — real-money confirmation, not commentary, landing three days
+ahead of its own earnings call.
 
 ## Capital in my markets
 
@@ -81,6 +97,24 @@ request, now confirmed by four independent outlets. Carrying forward:
   but a signal that AI-financing credit risk is becoming its own beat.
   ([Bloomberg Opinion](https://www.bloomberg.com/opinion/newsletters/2026-08-10/aindicators-hint-at-doubts-in-credit-markets))
   <!-- k: t=nvidia-vendor-financing axis=capital-in-my-markets -->
+
+- **Moody's warned that banks' rapid AI adoption is building a
+  concentrated "vendor dependence risk" on a small set of foundation-
+  model and cloud providers — naming OpenAI and Anthropic specifically —
+  that could let a single outage cascade across the financial sector and
+  eventually let dominant vendors dictate pricing to the banks that
+  depend on them.** The rating agency separately flagged AI-enabled data
+  privacy and cybersecurity exposure, "deposit flight" risk (AI makes it
+  easier for customers to shop rates and switch banks), and a 20% odds-
+  by-2030 estimate that AI could perform "solid mid-level employee" work.
+  This is dated to its true 2026-08-09 publication — a genuine gap this
+  digest's coverage critic surfaced (the Guardian/Bloomberg-style AI-
+  credit coverage already on file was about spending threatening
+  hyperscaler credit quality, a different question from banks'
+  operational dependence on the vendors themselves) — logged now as a
+  late catch rather than reopening the already-closed 08-09 digest.
+  ([The Guardian](https://www.theguardian.com/business/2026/aug/09/ai-push-banks-tech-firms-moodys-risks-financial-sector), [NewsBytes](https://www.newsbytesapp.com/news/business/banks-ai-rush-could-lead-to-systemic-risks-moody-s/story), [The Tech Edvocate](https://www.thetechedvocate.org/this-unforeseen-threat-is-quietly-dominating-banks-and-it-could-crumble-markets/))
+  <!-- k: t=ai-buildout-debt-risk axis=capital-in-my-markets interp=yes sev=major -->
 
 ## Deals & filings
 
@@ -126,6 +160,25 @@ request, now confirmed by four independent outlets. Carrying forward:
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-10/jpmorgan-leads-441-million-debt-deal-for-ai-infrastructure-firm), [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/jpmorgan-leads-441-million-debt-150000863.html))
   <!-- k: axis=deals-and-filings -->
 
+- **CoreWeave closed a $2.6 billion delayed-draw term loan led by
+  JPMorgan and Mitsubishi UFJ, pricing at SOFR+550 (a 10.44%
+  yield-to-maturity) after guidance was flexed wider from an initial
+  S+425-450 — real-money confirmation, not commentary, that AI-
+  infrastructure lenders are demanding a bigger risk premium, landing
+  three days ahead of CoreWeave's own Q2 earnings call.** The facility
+  (rated Ba2/Moody's, BB+/Fitch, ~5-year term through a December-2026
+  draw window) finances GPU purchases against shorter, 3-year customer
+  contracts — including Anthropic, Jane Street, Midjourney, Hudson River
+  Trading and Anysphere — rather than the longer commitments CoreWeave's
+  earlier facilities required, which CoreWeave framed as lenders growing
+  comfortable financing shorter-dated deals. It brings CoreWeave's 2026
+  secured capital past $30B and resolves a flag this digest's own
+  `coreweave-backlog-bet` thread left open on 07-30 ("exact new yield
+  not independently confirmed") — this is that yield, now on the record
+  via CoreWeave's own SEC filing.
+  ([SEC EDGAR 8-K/credit agreement](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/0001769628-26-000357-index.htm), [CoreWeave press release via AOL](https://www.aol.com/articles/coreweave-closes-2-6-billion-200500000.html), [Yahoo Finance Canada](https://ca.finance.yahoo.com/news/coreweave-completes-2-6b-term-190052227.html))
+  <!-- k: t=ai-buildout-debt-risk,coreweave-backlog-bet e=coreweave,jpmorgan axis=deals-and-filings interp=yes sev=major -->
+
 ## Power & lobbying
 
 - **MSC and BlackRock's TiL joint venture formally withdrew their EU
@@ -155,6 +208,14 @@ request, now confirmed by four independent outlets. Carrying forward:
 - **30-year Treasury yield: ~5.20%** (TLT ETF data via Invezz, 08-09) —
   carried forward; buffer chatter referenced a "Bessent targets yield
   surge" story but no clean new print surfaced to replace this read.
+- **VIX: 15.46** (FRED, 2026-08-10) — new to this digest; a calm reading,
+  no equity-vol stress despite the day's AI-debt and Iran headlines.
+- **High-yield credit spread (ICE BofA US HY OAS): 2.70** (FRED,
+  2026-08-10) — new to this digest; still historically tight, i.e. broad
+  credit markets are not (yet) pricing the AI-buildout-debt-risk question
+  above as a systemic stress signal.
+- **Investment-grade credit spread (ICE BofA US IG OAS): 0.78** (FRED,
+  2026-08-10) — new to this digest; same read, tight and unstressed.
 
 ## ⏳ Upcoming & expected
 
@@ -180,16 +241,23 @@ request, now confirmed by four independent outlets. Carrying forward:
   withdrawal lead is now second-sourced (four independent outlets) and
   published above, tagged `e=blackrock` (no existing thread fits — not
   AI-related).
+- `+ thread ai-buildout-debt-risk` — the AI-debt candidate this digest
+  flagged yesterday was promoted (ben-steer, 2026-08-11): "AI Debt Gets
+  Rated," scope deliberately narrow to how the debt itself is priced,
+  rated and recovered (not buildout capex or vendor equity, which stay
+  on `nvidia-vendor-financing`/`asset-managers-build-ai`). This finalize
+  pass adds its 4th and 5th data points (Moody's late catch, CoreWeave's
+  loan close) and its entities list now includes `coreweave`.
+- `~ threads/coreweave-backlog-bet` — the CoreWeave loan-close entry
+  above resolves this thread's own 07-30 open flag ("exact new yield not
+  independently confirmed"); timeline entry written.
 
 ## 🧵 Thread candidates
 
-- **candidate:** AI-buildout debt/credit risk as its own trackable axis —
-  Bloomberg Opinion's AIndicators launch, the JPMorgan/Global AI deal,
-  and the existing CDS-widening story (`nvidia-vendor-financing`'s 07-27
-  entry) are three separate data points now pointing at the same
-  emerging beat. Folded into `nvidia-vendor-financing` for today rather
-  than split out; flagging in case Ben wants a dedicated thread once
-  there's a fourth data point.
+- Yesterday's candidate — AI-buildout debt/credit risk as its own
+  trackable axis — was promoted to `ai-buildout-debt-risk` today
+  (ben-steer, 2026-08-11); see Map changes. Not carried forward as a
+  candidate.
 - Yesterday's held-back Barcelona port lead resolved into a published
   item today (see Map changes) — not carried forward as a candidate.
 
@@ -202,4 +270,61 @@ alongside two smaller signals on the same axis, a new Bloomberg AI-credit
 tracker and a $441 million JPMorgan debt deal, plus Iran's war pushing
 oil up nearly five percent in a day after Trump matched Iran's own
 compensation demand with one of his own. Also resolved: yesterday's
-single-sourced Barcelona port lead, now confirmed.
+single-sourced Barcelona port lead, now confirmed. This finalize pass
+added two more real-money and real-warning data points on the same
+AI-debt question — Moody's flagged banks' vendor-concentration risk, and
+CoreWeave itself closed $2.6 billion of debt at a wider spread than
+guided — enough to promote the AI-debt candidate flagged yesterday into
+its own thread.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Moody's 2026-08-09 warning that banks'
+rapid AI adoption creates concentrated "vendor dependence risk" on a
+handful of foundation-model/cloud providers (The Guardian, Kalyeena
+Makortoff) — a genuine miss on a different question from the AI-spending
+coverage already on file (that thread was about AI capex threatening
+hyperscaler credit quality; this is about banks' own operational
+dependence on AI vendors). Folded in above as a late catch, dated to its
+true 08-09 event date, and logged on `ai-buildout-debt-risk`. A second
+critic lead — "banks hit concentration limits, sending data-center debt
+to pension funds" — could not be confirmed: the only trace found was an
+MSN-syndicated "Tech Times" item with relative ("1d") dating and no
+reachable byline, original publish date, or article body after five
+separate resolution attempts (direct fetch, Bing, DuckDuckGo, archive
+proxies). Dropped rather than published on an unverifiable source, per
+this digest's own sourcing discipline.
+
+**Both covered:** Bloomberg Technology's own leads for the period were
+the Nvidia $500B+ financing platform and Intel's $15B stock offering —
+both already this digest's headline items, independently sourced to
+Nvidia's and Intel's own newsrooms.
+
+**We had → they didn't:** the JPMorgan/Global AI $441M debt deal,
+Bloomberg Opinion's AIndicators tracker launch, the MSC/BlackRock
+Barcelona port EU-merger withdrawal, and — found independently this
+finalize pass, not surfaced by any benchmark — CoreWeave's $2.6B loan
+closing at a wider-than-guided spread three days ahead of its own
+earnings call.
+
+**Benchmarks checked:** FT Unhedged (public RSS, reachable via curl;
+its 08-10 "Your move, BoJ" edition analyzed the 08-07 jobs print —
+three-day-old analysis, not a new event) · Axios Pro Rata (403, the
+known domain-wide Cloudflare block, one attempt only) · Money Stuff
+(08-10 "The Situation Is Fine" — a hedge-fund loss, the running
+GameStop/eBay saga, tick sizes; no AI-capital content) · Bloomberg
+Technology (via search; leads listed above, both already ours).
+
+**Non-miss, logged for the critic's own record:** Microsoft's Maia 300 /
+TSMC 300k-unit-talks item the critic flagged is NOT a miss — it is
+already in the 08-10 frontier-ai digest, on the `microsoft-capex` thread
+(ai lens), and logged as a dated expectation. The critic reads only this
+lens's own digest, so a correctly-placed ai-lens story reads as a
+global-capital gap; worth noting as the critic's own blind spot rather
+than re-adding here.
+
+**Verdict:** One genuine miss found and fixed (Moody's), one lead
+checked and dropped as unverifiable (bank concentration limits/pension
+funds), one false-positive from the critic's own single-lens blind spot
+(Maia 300), and no misses against the four outlets checked directly.
+Coverage closed: `status: final`, `coverage: done`.

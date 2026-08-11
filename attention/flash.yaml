@@ -106,7 +106,39 @@
 #   expires     YYYY-MM-DD — auto-drops from the rail
 #   logged_by   ben-steer | curate-add
 
-flashes: []
+flashes:
+  # Filed 2026-08-11 ⟨daily⟩. A LATE CATCH: the event is 2026-08-10, so `filed`
+  # is set to today per this file's own rule, and its 24h runs from the catch
+  # rather than from the day we missed. This lens has no collector lane, so a
+  # magnitude-7.4 disaster went uncarried by this map for ~29 hours — the gap
+  # that produced the late catch is itself worth noting.
+  #
+  # Clears the bar deliberately, not by enthusiasm: the test is "would this
+  # lead a general news front page whether or not it touches our lenses"
+  # (Ben, 2026-07-29). It touches none of the four lenses, which is precisely
+  # the case this rail exists for.
+  - id: colombia-earthquake-m7-4
+    date: 2026-08-10
+    filed: 2026-08-11
+    severity: critical
+    headline: "A magnitude 7.4 earthquake has struck western Colombia"
+    body: >
+      The earthquake struck 5km south of San José del Palmar at 12:34 UTC on
+      10 August at a depth of 110km. The US Geological Survey has assigned it
+      a red alert — the highest of its four impact categories, reserved for
+      events where mass casualties or losses above $1bn are expected — with
+      maximum shaking intensity VIII and more than a thousand felt reports.
+      No tsunami was generated. Colombia has declared a national state of
+      emergency and international assistance is arriving. Casualty figures
+      are still being established: reporting puts the confirmed dead above
+      200 with substantially more unaccounted for, and those numbers were
+      still rising when this was filed. The magnitude, location, depth and
+      alert level here are from the USGS record; the toll is attributed to
+      reporting and has not been independently confirmed.
+    sources:
+      - label: "USGS — M7.4, 5 km S of San José del Palmar (red alert)"
+        url: https://earthquake.usgs.gov/earthquakes/eventpage/us6000tjl2
+    lenses: [all]
 # Pruned 2026-08-04 (/week step 2): all 5 prior entries had already passed
 # their filing day under flash_last_day() and no longer render regardless —
 # cosmetic tidy only, nothing was live. Substance lives on in the digests

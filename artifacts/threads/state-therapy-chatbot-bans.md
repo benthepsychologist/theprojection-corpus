@@ -13,6 +13,21 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-11 — Pre-effective-date check: HB 26-1195 has no delay, amendment, or challenge on file
+
+- **A dedicated check of Colorado's legislative record ahead of HB
+  26-1195's August 12 effective date found no delay, amendment, or legal
+  challenge.** The bill — the country's first law requiring a licensed
+  therapist to stay in the loop for AI use in psychotherapy — was signed
+  June 3, 2026 and takes effect August 12 by mechanical operation (any
+  bill enacted without a safety clause takes effect once the legislature
+  adjourns, which it did May 13). A Colorado Senate Democrats release
+  corroborates the date. Not to be confused with xAI's separate federal
+  preliminary-injunction fight against Colorado's broader AI Act
+  (SB 26-189) — legal trackers confirm this bill and its companion
+  HB 26-1139 proceed unaffected.
+  ([Colorado General Assembly](https://leg.colorado.gov/bills/HB26-1195)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-10 — ITIF warns the state patchwork could copy social media's failed playbook
 
 - **A report from the Information Technology and Innovation Foundation

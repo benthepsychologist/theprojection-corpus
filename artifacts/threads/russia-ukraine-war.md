@@ -20,18 +20,24 @@ substantial enough to carry on its own.
 
 ## 2026-08-10 — Russia's Zaporizhzhia/Kyiv barrage; Zelenskyy alleges North Korean missiles
 
-- **Russia carried out one of its larger single-night barrages of the war
-  early Tuesday, hitting Zaporizhzhia and Kyiv with missiles and aerial
-  bombs — killing at least six and wounding 19 in Zaporizhzhia, per
-  regional administration head Ivan Fedorov, and wounding one in Kyiv,
-  where a ballistic-missile strike damaged a children's hospital and set
-  a warehouse ablaze.** President Zelenskyy said North Korean-made
-  ballistic missiles were used and separately warned Russia may deploy
-  30,000-50,000 North Korean troops onto its own territory; Russia's
-  Defense Ministry said it had targeted "defence industry facilities and
-  transport and logistics centres." Casualty figures moved through the
-  day as the toll was updated — recorded here as of Al Jazeera's account,
-  the most complete found.
+- **Russia's early-Tuesday barrage killed at least 12 people across
+  Ukraine — six Zaporizhstal steel-plant workers caught by a ballistic
+  strike on their way to shelter in Zaporizhzhia (21+ others wounded
+  there), plus six more combined in the Dnipropetrovsk and Donetsk
+  regions — with an infectious-diseases hospital struck in Kyiv, a drone
+  injury in Mykolaiv, and power outages in Kherson and Kharkiv; the toll
+  climbed through the day as fuller reporting came in (initially recorded
+  here as "at least six," corrected on the 08-11 finalize pass).**
+  President Zelenskyy said the strikes used North Korean-made ballistic
+  missiles alongside Zircon hypersonic missiles and guided aerial bombs —
+  "a vicious attack, calculated to inflict maximum damage specifically on
+  civilian infrastructure" — and tied it to a broader warning that
+  Russia's missile production, its use of North Korean equipment, and
+  mobilization preparations "show that Moscow is preparing not for peace,
+  but for escalation," separately citing a risk of 30,000-50,000 North
+  Korean troops deploying onto Russian territory. Russia's Defense
+  Ministry said it had targeted "defence industry facilities and
+  transport and logistics centres."
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/11/russian-attacks-kill-six-in-ukraines-zaporizhzhia)) ⟨daily 2026-08-10⟩
 
 ## 2026-08-09 — Deadly Ukrainian drone strike on a Russian oil refinery

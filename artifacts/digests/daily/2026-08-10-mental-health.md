@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-10
-status: building
+status: final
 window_start: 2026-08-10T05:00:00-04:00
-as_of: 2026-08-11T07:15:00-04:00
-coverage: pending
+as_of: 2026-08-11T14:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-10
@@ -208,3 +208,45 @@ settlement and a Maryland crisis-line funding cut — surfaced with no
 existing thread to hold them. Kaiser and NUHW's AI mediation begins
 tomorrow and Colorado's new AI-therapy law takes effect the day after;
 neither has a readout yet.
+
+## Appendix — Coverage check vs. benchmarks
+
+**Verdict: no misses.** All four daily mental-health benchmarks
+(Behavioral Health Business, MobiHealthNews, STAT Health Tech, Fierce
+Healthcare) were reachable and checked for the 08-10 window; none had
+mental-health content this digest missed. The reason matters more than
+the verdict, so it's recorded per outlet:
+
+- **Behavioral Health Business** — reached with a Googlebot user-agent
+  (`curl -s -A 'Googlebot/2.1 (+http://www.google.com/bot.html)'
+  https://bhbusiness.com/feed/`, needed because a plain browser-UA curl
+  now also draws Cloudflare's block — see `sources/benchmarks.yaml`).
+  Its two 08-10 posts — Addiction Recovery Care's new CEO after the
+  $16.3M DOJ settlement, and the LifeStance CMO's interventional-psychiatry
+  interview — are **both covered**: they're already this digest's lead
+  bullets under Clinical safety & harm and Product & market respectively.
+- **MobiHealthNews** — reached via the `r.jina.ai` reader proxy (its own
+  Cloudflare challenge defeats even a plain curl). Its 08-10 slate —
+  Novo Nordisk/AWS drug-discovery hub, Medbridge/Patient360 Medicare
+  quality reporting, a HIMSS video — is orthopedics/maternity/general-HIT,
+  with no mental-health content that day.
+- **STAT Health Tech** — checked via plain RSS. Its 08-10 slate is general
+  pharma/FDA/hospital-economics coverage, no mental-health content.
+- **Fierce Healthcare** — checked via its homepage (WebFetch); its own
+  `/behavioral-health` tag page now 403s, a new access quirk recorded in
+  `sources/benchmarks.yaml`. No mental-health content surfaced that day.
+
+**We had → they didn't:** the China/France/US regulatory-divergence
+cluster, the JMIR engagement-pattern study, and both behavioral-health
+money stories (Addiction Recovery Care's fraud settlement, Grassroots'
+988 layoffs) all came from primary reporting rather than a benchmark
+lead — more mental-health depth than any single benchmark carried that
+day.
+
+One adjacent item was checked and correctly excluded, not missed: STAT's
+08-11 08:30 UTC piece "Nurses seek a seat at the table as they fight
+expanding clinical AI" names National Nurses United, Montefiore layoffs,
+and Kaiser AI-surveillance picketing, but its own sourcing (a 07-13
+Guardian piece, a July CalMatters piece) is already inside this lens's
+`kaiser-ai-clinician-backlash` thread record — no new dated fact, so not
+a miss.

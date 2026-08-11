@@ -31,6 +31,25 @@ itself (who's fighting whom, where it's widening) — see
   specifically; the market is continuing to price the same stalemate
   rather than reacting to fresh news.
   ([Fortune](https://fortune.com/article/price-of-oil-08-11-2026/)) ⟨daily 2026-08-11⟩
+- **EPFR's weekly Global Navigator report, published the same day, reads
+  this oil move as one of two forces pushing inflation risk back up —
+  the other being AI-buildout "chipflation" (chip/electricity costs) —
+  with the Fed, ECB and BoJ all holding rates steady through the
+  reporting period despite both.** The direct Fed-policy-feed-through
+  question this thread already tracks (`capital-context.yaml`'s
+  `rate_regime` reading) now has a named second driver sitting alongside
+  the war-risk premium, not a replacement for it.
+  ([ISI Markets / Global Navigator](https://isimarkets.com/publications/global-navigator-central-banks-hold-firm-as-inflation-risks-re-emerge-and-oil-prices-resurge/)) ⟨daily 2026-08-11⟩
+- **The EIA's own Short-Term Energy Outlook, also published today,
+  raised its Brent forecast citing "continued severe constraints on
+  Strait of Hormuz transits" — but its own forward figure (~$85/bbl
+  through Q3 2026, easing to ~$69 in 2027) sits well below today's
+  ~$92.54 spot price, reading the current spike as elevated-but-not-
+  permanent.** The government's own model expects the ~0.6 million-
+  barrel-per-day disruption to persist through late 2027 without
+  ratcheting further — the first standing forward-looking benchmark this
+  thread has against its own day-to-day spot-price reads.
+  ([EIA Short-Term Energy Outlook](https://www.eia.gov/outlooks/steo/), 2026-08-11) ⟨daily 2026-08-11⟩
 
 ## 2026-08-10 — Trump counters Iran's compensation demand with his own; Brent posts its steepest one-day jump of the war
 

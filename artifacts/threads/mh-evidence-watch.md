@@ -16,6 +16,22 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-08-11 — FACE app RCT: another "reach vs. efficacy" data point, this time for prevention
+
+- **A randomised controlled trial of the FACE app — a guided, two-component
+  digital selective-prevention program for emerging adults with a history
+  of adverse childhood experiences — found its primary well-being outcomes
+  null against care-as-usual, but its more targeted proximal mechanisms
+  (self-efficacy for managing emotions, fear of negative evaluation,
+  negative problem orientation) moved favorably.** 167 of 1,514 eligible
+  people enrolled (11% uptake) from a population-based Swiss cohort; the
+  authors' own read is that limited uptake in unselected high-risk
+  populations, not efficacy, is the bigger open problem for this kind of
+  tool. Fits this thread's running pattern: digital tools extend reach and
+  move specific mechanisms, but broad outcome measures (well-being,
+  resilience) aren't moving with them.
+  ([DOI: 10.1016/j.invent.2026.100987](https://doi.org/10.1016/j.invent.2026.100987), *Internet Interventions*) ⟨daily 2026-08-11⟩
+
 ## 2026-08-07 — Opened (ben-steer): EBP promoted to a first-class MH strand
 
 - **Ben directed the mental-health lens to fan out into a dedicated

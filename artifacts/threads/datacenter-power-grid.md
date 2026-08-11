@@ -37,6 +37,23 @@ environmental-justice fights that improvisation generates.
   in the past decade. Cross-refs `ai-power-buildout`, `meta-gas-pivot`.
   ([France24/AFP](https://www.france24.com/en/live-news/20260811-ai-s-hunger-for-power-sparks-us-private-gas-plant-boom)) ⟨daily 2026-08-10⟩
 
+## 2026-08-07 (late catch, added 2026-08-11) — Amazon is behind the single largest instance in the buildout's own aggregate dataset
+
+- **Amazon has confirmed plans to buy power from Pacifico Energy's "GW
+  Ranch" gas plant on an ~8,000-acre site it acquired in Pecos County,
+  Texas — permitted for up to 7.65GW (35 turbines, 5GW nominal delivered
+  output) and up to 33 million tons of CO2/year, which the New York
+  Times reports could make it the single largest climate-pollution
+  source in the country if built out to its full permit.** Cleanview's
+  own satellite-imagery-and-permit tracing broke this 2026-08-07, NYT
+  corroborated 2026-08-08 — the same firm and the same underlying
+  dataset (60 planned sites, 97GW) this thread's 08-10 entry already
+  cites in aggregate, without its largest single instance. Amazon's
+  statement: it "believes in paying the full costs of powering our
+  operations," and the campus is "powered by new on-site generation
+  that won't raise electricity costs for Texas families."
+  ([Cleanview](https://newsletter.cleanview.co/p/scoop-amazon-is-behind-one-of-the), [DataCenterDynamics](https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/), [Pacifico Energy](https://www.pacificoenergy.com/post/pacifico-energy-announces-gw-ranch-project-bringing-5-gigawatts-of-reliable-off-grid-power-for-ai-i)) ⟨daily 2026-08-10, added 2026-08-11⟩
+
 ## 2026-08-08 — DOJ backs xAI's bid to gut citizen-suit enforcement entirely
 
 - **The Justice Department intervened in the NAACP's Clean Air Act

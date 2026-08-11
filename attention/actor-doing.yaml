@@ -19,8 +19,17 @@ actors:
 
   # --- Integrated powers ---
   google:
-    asof: 2026-08-08
+    asof: 2026-08-10
     doing: >
+      New 08-10: quietly open-sourced TPU Raiden, an Apache-2.0 library for
+      moving KV-cache data between chips during serving — the TPU-stack answer
+      to Nvidia's NIXL. It was flagged by SemiAnalysis rather than announced,
+      and the repo itself says it is not yet recommended for general use. Small
+      as code, larger as a signal: it is the first concrete move toward
+      externalising the TPU stack the way Nvidia externalised CUDA, which is
+      the standing open question on this actor's own capex thread.
+
+
       New 08-08: Berkshire Hathaway ended a 14-quarter net-selling streak
       to deploy $10B into Alphabet — an explicit AI-infrastructure bet —
       the same week Alphabet itself went to raise up to $25B more in debt
@@ -102,8 +111,18 @@ actors:
       "superfactory" + Pecos TX ~2GW on Chevron gas; Maia 200 serves both
       OpenAI and MAI — the split undisclosed, like everyone's.
   amazon-aws:
-    asof: 2026-08-05
+    asof: 2026-08-11
     doing: >
+      New 08-07 (caught late, 08-11): acquired an ~8,000-acre site in Pecos
+      County, Texas and contracted for power from a private gas plant built by
+      Pacifico Energy — permitted to emit over 30 million tons of CO2 a year,
+      which would make it the largest single greenhouse-gas source in the
+      United States. Traced by Cleanview from satellite imagery and new
+      construction permits rather than disclosed. Worth stating plainly: this
+      map already cited the same Cleanview dataset in aggregate while missing
+      its largest single instance.
+
+
       Crossed a $3T market cap 08-03 — the fifth company ever to do so,
       on continued post-earnings rally. Priced a $25B, 8-tranche bond
       sale 08-04 funding part of its capex plan and said it is done
@@ -137,8 +156,25 @@ actors:
 
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-10
+    asof: 2026-08-11
     doing: >
+      New 08-11: two moves in different registers on the same day. It began
+      embedding invisible C2PA watermarks in everything Claude produces —
+      text, images, files — across Claude, Claude Code, Cowork, Tag and the
+      API, WORLDWIDE rather than only in the EU. The trigger is the EU AI
+      Act's transparency code (effective 08-02), but the choice to ship it
+      everywhere rather than geofence it is the notable part: compliance built
+      once, applied globally. Models launched since 08-02 are marked at
+      launch; older ones are being retrofitted. Separately, its Claude
+      improved a century-old bound tied to the Riemann Hypothesis, lifting the
+      proven share of zeta-function zeros on the critical line from 41.6% to
+      67.2% — ~60 coordinated subagents over ~1.5 days, after 650 failed
+      approaches, machine-verified in Lean. Anthropic is explicit this is
+      incremental progress on an existing line of mathematics, NOT movement
+      toward proving the hypothesis; the qualifier is theirs, not a hedge
+      added here.
+
+
       New 08-10: two more compute arrangements in a single day, both moving the
       asset off its own balance sheet. With Macquarie Asset Management and
       Singapore's sovereign fund GIC it launched Theseus Infrastructure, which
@@ -229,8 +265,17 @@ actors:
       shredding scanned books to train Claude.
 
   openai:
-    asof: 2026-08-09
+    asof: 2026-08-11
     doing: >
+      New 08-11: COO Brad Lightcap announced he is leaving "to start something
+      new" — no successor named, no effective date given. He had already
+      stepped back from day-to-day COO duties earlier this year. That makes
+      three senior departures this board has logged in a fortnight, alongside
+      ethics lead Chloé Bakalar (reported 08-10, never announced by the
+      company) and the earlier alignment leads. The pattern is now the story
+      rather than any single exit.
+
+
       New 08-07 (the big one): paused development on its next model,
       Astra, after internal testing suggested it may be approaching
       "Critical" cyber capability under OpenAI's own Preparedness
@@ -786,8 +831,19 @@ actors:
       filing-true position is 290.3M issued shares ≈ $25-28B, diluted to
       8.6% — finding: intel-stake-tangle-2026-07-28.
   coreweave:
-    asof: 2026-08-08
+    asof: 2026-08-11
     doing: >
+      New 08-10: closed a $2.6B delayed-draw term loan at SOFR+550 — a 10.44%
+      yield-to-maturity — after guidance was flexed WIDER from an initial
+      S+425-450. The direction of that flex is the fact: lenders demanded more
+      than the arranger first offered, three days before the Q2 print. It is
+      also the first confirmed transaction-level coupon in this board's record
+      of AI-buildout debt, resolving a flag left open here on 07-30 that the
+      exact new yield was not independently confirmed. Q2 earnings land 08-11
+      at 5pm ET against a consensus loss of $1.18-$1.27 a share on ~$2.56B,
+      with the $99.4B Q1 backlog the number to read conversion against.
+
+
       New 08-04→08-08, all landing ahead of the 08-11 Q2 print: the stock jumped
       +20% (08-04) on a Leidos partnership to supply AI cloud infrastructure to US
       defense/intelligence agencies plus a first APAC expansion (three Indonesia

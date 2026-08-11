@@ -56,3 +56,114 @@ nvidia-signed-mous-with-six-of-the-largest-asset-m:
     near 5.24%, hawkish Fed hold) — a novel securitization vehicle
     launching into an already-elevated-rate environment is a genuinely
     new interaction point the standing snapshot doesn't yet carry.
+
+moody-s-warned-that-banks-rapid-ai-adoption-is-bu:
+  mechanism: >
+    This is a different exposure than the credit-market question the
+    rest of this digest tracks (whether AI-buildout DEBT is mispriced).
+    Moody's is instead flagging OPERATIONAL/vendor-concentration risk on
+    the banking system's demand side: a small number of foundation-model
+    and cloud providers becoming load-bearing infrastructure for banks'
+    own operations, so that a single provider's outage, price change, or
+    failure could transmit directly into the financial system rather
+    than staying contained to the tech sector. The financing-side risk
+    (Nvidia's platform, CoreWeave's spread) and this operational-side
+    risk are two faces of the same underlying fact: the AI buildout is
+    concentrating both capital AND infrastructure dependence in a
+    handful of firms.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Regulators formalize AI/cloud vendor concentration as a
+        supervised risk category, requiring resilience testing,
+        capital buffers, or direct oversight of the vendors themselves
+        rather than only the banks that depend on them.
+      why: >
+        Moody's framing (a "handful of Silicon Valley companies"
+        becoming systemically load-bearing) is the same shape of
+        argument that already produced direct regulatory oversight of
+        cloud providers as financial-sector infrastructure.
+      precedent: >
+        The UK's Critical Third Parties regime (effective 2025), under
+        which the Bank of England and FCA directly designate and
+        supervise cloud/tech vendors — including AWS, Microsoft and
+        Google — as systemically important to finance, precisely because
+        banks' own operational dependence on them had become
+        concentrated enough to be a financial-stability question rather
+        than a vendor-management one.
+    - direction: >
+        A concentrated-vendor outage actually materializes and cascades
+        across sectors before any resilience framework is in place,
+        making the warning retrospectively look under-heeded rather
+        than precautionary.
+      why: >
+        Moody's own language — a single outage could "spread quickly
+        across customers and sectors" — describes a failure mode that
+        has already happened once outside banking specifically.
+      precedent: >
+        The July 2024 CrowdStrike outage, where a single vendor's
+        software update grounded airlines and disrupted banks and
+        hospitals worldwide in hours — the clearest real-world case of
+        concentrated vendor dependence turning into a cross-sector
+        cascade, the exact mechanism Moody's is warning about here.
+  context_note: >
+    capital-context.yaml doesn't currently carry an operational/vendor-
+    concentration reading at all — only rate_regime, cross_border_credit,
+    external_position, fund_flows and conflict_risk_premium. This item
+    is a candidate for a new reading dimension at the next /week refresh
+    if bank-AI-vendor coverage keeps recurring, rather than something to
+    force into an existing reading.
+
+coreweave-closed-a-2-6-billion-delayed-draw-term:
+  mechanism: >
+    This is the financing-side counterpart to the Moody's item above,
+    and a direct answer to what Bloomberg's AIndicators tracker (this
+    same digest, above) says it exists to detect: are AI-infrastructure
+    lenders demanding more compensation for the risk they're taking on.
+    CoreWeave's own guidance-to-final-pricing gap (S+425-450 flexed to
+    S+550) is a real, transaction-level data point that they are —
+    distinct from equity-market sentiment or CDS moves, this is a
+    completed loan with a confirmed coupon.
+  confidence: likely
+  scenarios:
+    - direction: >
+        The repricing generalizes: other AI-infrastructure borrowers
+        without CoreWeave's scale or backlog see similar or larger
+        spread-widening, raising the sector's overall cost of capital
+        and slowing the pace of buildout financing.
+      why: >
+        CoreWeave is one of the buildout's most closely-watched, best-
+        collateralized borrowers (a $99.4B revenue backlog); if even its
+        debt needed a 100bp+ guidance flex to clear, less-established
+        borrowers (like the $441M Global AI facility elsewhere in this
+        digest) face a harder version of the same repricing.
+      precedent: >
+        Bloomberg Opinion's own framing for AIndicators, on this same
+        digest: 19th-century railroad financing, where too much debt-
+        funded capacity chasing uncertain future revenue eventually
+        forced lenders to reprice the whole sector at once rather than
+        borrower-by-borrower.
+    - direction: >
+        This is priced as CoreWeave-specific risk (customer
+        concentration, leverage, a public track record of debt-market
+        skittishness around its stock) rather than a sector-wide
+        repricing, and better-diversified or better-capitalized
+        borrowers continue to clear closer to original guidance.
+      why: >
+        CoreWeave's own 10-Q anonymizes its top customers to letters
+        A-D and its S-1 disclosed 77% revenue concentration in its top
+        two — a borrower-specific risk factor distinct from the AI-debt
+        asset class as a whole.
+      precedent: >
+        Core Scientific's own 2022-2023 bankruptcy — a single over-
+        leveraged infrastructure operator's debt collapsed on
+        company-specific concentration and timing risk without dragging
+        the broader data-center/crypto-infrastructure lending market
+        down with it.
+  context_note: >
+    Directly extends this digest's own `nvidia-vendor-financing` and new
+    `ai-buildout-debt-risk` threads — this is the first CONFIRMED
+    (not "not independently confirmed," per `coreweave-backlog-bet`'s
+    07-30 entry) transaction-level coupon in the record, and belongs in
+    any future capital-context.yaml reading on AI-buildout credit
+    conditions.

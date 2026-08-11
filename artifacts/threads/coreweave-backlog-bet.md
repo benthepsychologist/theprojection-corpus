@@ -15,6 +15,24 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-08-10 — The $2.6B loan closes; the 07-30 yield question is now answered
+
+- **CoreWeave closed the $2.6B delayed-draw term loan this thread
+  flagged on 07-30 as "sweetened" with an unconfirmed yield — it's now
+  on the record via CoreWeave's own SEC filing: SOFR+550 (10.44%
+  yield-to-maturity), guidance flexed wider from an initial S+425-450,
+  rated Ba2 (Moody's) / BB+ (Fitch).** JPMorgan and Mitsubishi UFJ led
+  as joint bookrunners; the facility backs shorter (3-year) customer
+  contracts — Anthropic, Jane Street, Midjourney, Hudson River Trading,
+  Anysphere — which CoreWeave frames as lenders growing comfortable
+  financing shorter-dated deals rather than only its longest-duration
+  commitments. Brings 2026 secured capital past $30B, closing three days
+  ahead of the 08-11 Q2 print this thread is already watching for.
+  ([SEC EDGAR 8-K/credit agreement](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/0001769628-26-000357-index.htm), [CoreWeave press release via AOL](https://www.aol.com/articles/coreweave-closes-2-6-billion-200500000.html), [Yahoo Finance Canada](https://ca.finance.yahoo.com/news/coreweave-completes-2-6b-term-190052227.html)) ⟨daily 2026-08-10⟩
+- **Also logged on `ai-buildout-debt-risk`** as that thread's first
+  confirmed transaction-level coupon — this loan is both a CoreWeave-
+  specific data point and a market-structure one. ⟨daily 2026-08-10⟩
+
 ## 2026-08-08 — A second quant-finance customer scales up, three days ahead of the Q2 print
 
 - **CoreWeave expanded its AI-cloud partnership with quant trading firm IMC to a materially larger capacity commitment — the second confirmation this week that quantitative-finance demand is a real, growing leg of the backlog, not just AI-lab concentration.** Flow Traders has already standardized on CoreWeave; combined with Jane Street's existing $6B platform commitment, $1B equity stake, and planned $11B refinance already on this thread's record, financial-sector customers are diversifying the backlog away from the OpenAI/Meta concentration this thread has flagged as the real risk (10-Q anonymized customers to A-D; S-1 said 77% from top two). Worth weighing directly against Tuesday's (08-11) earnings print.

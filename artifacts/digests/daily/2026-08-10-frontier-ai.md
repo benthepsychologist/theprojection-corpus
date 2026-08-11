@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-10
-status: building
+status: final
 window_start: 2026-08-10T05:00:00-04:00
-as_of: 2026-08-11T07:15:00-04:00
-coverage: pending
+as_of: 2026-08-11T13:55:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-10
@@ -19,7 +19,13 @@ matches, dropped entirely) and arXiv was trimmed per rubric. Two items
 with a verified true event date of 2026-08-07 (ByteDance's ~10T-parameter
 model, Firmus's $2B raise) were critic-flagged gaps from the 08-05→08-09
 window; folded in below and on their threads, dated to their real event
-dates, since the 08-07 digest itself is outside this pass's write scope.*
+dates, since the 08-07 digest itself is outside this pass's write scope.
+This finalize pass adds a second coverage-critic check against The Neuron,
+TLDR AI, The Rundown AI and The AI Daily Brief, catching four more real
+misses (Claude's Riemann-zeta result, Amazon's Pecos County gas plant,
+Google's TPU Raiden, and Kimsuky's local AI toolchain) — folded in below,
+with the critic's own appendix at the end of this file. Day closed:
+`status: final`, `coverage: done`.*
 
 ## Today's throughline
 
@@ -58,6 +64,17 @@ celebratory.
   still-unproven AI strategy, despite the open-source framing above.
   ([TechCrunch](https://techcrunch.com/2026/08/10/mark-zuckerbergs-ai-manifesto-is-exactly-why-people-dont-like-ai/), [The Verge](https://www.theverge.com/ai-artificial-intelligence/977623/mark-zuckerberg-ai-manifesto-dim-vision), [Ars Technica](https://arstechnica.com/ai/2026/08/with-new-open-models-meta-pitches-another-reboot-of-its-struggling-ai-strategy/))
   <!-- k: e=meta-ai,mark-zuckerberg axis=product-and-access -->
+- **Google quietly open-sourced "TPU Raiden," an Apache-2.0 library for
+  moving KV-cache data between chips during LLM serving — the TPU-stack
+  answer to Nvidia's NIXL library.** Coverage-critic catch: flagged
+  first by SemiAnalysis rather than announced by Google itself; Google's
+  own repo is explicit that it's "under active development and not yet
+  recommended for general use." Directly answers this thread's own
+  standing watch item ("TPU externalization") — the first concrete sign
+  Google is building shared infrastructure around its TPU stack the way
+  Nvidia has around its GPU stack.
+  ([GitHub](https://github.com/google/tpu-raiden), [OfficeChai](https://officechai.com/ai/google-has-open-sourced-its-tpu-raiden-inference-library-in-apparent-bid-to-externalize-tpu-stack/), [Dataconomy](https://dataconomy.com/2026/08/10/google-open-sources-tpu-raiden-for-faster-ai-inference/))
+  <!-- k: t=google-capex e=google axis=product-and-access -->
 
 ## Policy & governance
 
@@ -107,6 +124,37 @@ celebratory.
   trend this thread has tracked all week.
   ([OpenAI](https://openai.com/index/expanding-daybreak-as-the-cyber-defense-window-narrows/), [TechCrunch](https://techcrunch.com/2026/08/10/as-ai-led-attacks-multiply-openai-launches-a-new-cyber-model/))
   <!-- k: t=openai-agent-security-incident e=openai axis=research-and-safety -->
+- **An unreleased Anthropic research model raised the proven lower bound
+  on Riemann zeta-function zeros lying on the critical line from 41.6%
+  to 67.2%** — incremental progress on a decades-old open problem, and
+  Anthropic is explicit this is NOT movement toward proving the Riemann
+  Hypothesis itself. Coverage-critic catch: working through Claude Code,
+  it spent roughly 1.5 days and 31M output tokens
+  coordinating ~60 Claude subagents (2,400 shell commands, hundreds of
+  Python scripts), first exhausting 650 candidate approaches before
+  finding the one that worked, and produced a machine-checked proof in
+  the Lean formal-proof language. Two Anthropic mathematicians (Levent
+  Alpöge, Ralph Furman) reviewed the work; outside number theorists
+  Brian Conrey and Dan Goldston also weighed in. Was TLDR AI's #1 item
+  and a lead for The Rundown AI. No existing thread tracks AI-driven
+  research milestones as their own pattern; offered as a thread
+  candidate below.
+  ([Anthropic](https://www.anthropic.com/research/riemann-zeta), [TechCrunch](https://techcrunch.com/2026/08/11/an-unreleased-anthropic-model-made-progress-on-one-of-maths-biggest-unsolved-problems/))
+  <!-- k: e=anthropic axis=research-and-safety -->
+- **North Korea's Kimsuky hacking group has built a local AI toolchain —
+  Ollama, GPT4All (with RAG via a "localdocs" database), Msty and the
+  Cursor AI code editor, plus agent frameworks (LangChain, Microsoft's
+  Semantic Kernel/Agents.AI) — to generate phishing decoys, help build
+  malware and automate attacks entirely offline, avoiding any data
+  exposure to third-party cloud AI services.** Coverage-critic catch:
+  reported by South Korean threat-intel firm Genians, corroborated the
+  same day by Al Jazeera and Business Standard among others; Genians
+  found no evidence of independent model training, only integration of
+  existing open tools. No thread or watchlist entity currently covers
+  nation-state AI-tooling adoption; not forced onto an existing thread,
+  and offered as a candidate below instead.
+  ([Genians](https://www.genians.co.kr/en/blog/threat_intelligence/kimsuky_ai_llm), [Al Jazeera](https://www.aljazeera.com/economy/2026/8/10/north-koreas-hackers-using-ai-for-attacks-cybersecurity-firm-says), [Business Standard](https://www.business-standard.com/world-news/ai-cyberattacks-north-korean-hacking-group-builds-ai-tools-to-automate-cyberattacks-report-126081000809_1.html))
+  <!-- k: axis=research-and-safety -->
 
 ## China
 
@@ -215,6 +263,24 @@ celebratory.
   decade.
   ([France24/AFP](https://www.france24.com/en/live-news/20260811-ai-s-hunger-for-power-sparks-us-private-gas-plant-boom))
   <!-- k: t=datacenter-power-grid axis=capital-and-corporate -->
+- **Amazon is the buyer behind the single largest instance in that same
+  Cleanview dataset — an ~8,000-acre Pecos County, Texas site where it
+  has confirmed plans to buy power from Pacifico Energy's "GW Ranch" gas
+  plant, permitted for up to 7.65GW (35 turbines, 5GW nominal delivered
+  output) and up to 33 million tons of CO2/year, which the New York
+  Times reports could make it the single largest climate-pollution
+  source in the country if built out to its full permit.**
+  Coverage-critic catch, and a late catch: Cleanview's own
+  satellite-and-permit tracing broke this 2026-08-07, NYT corroborated
+  2026-08-08 — missed in this
+  window's original sweep even though the SAME Cleanview aggregate
+  dataset (60 sites, 97GW) was already cited above without its largest
+  single instance. Amazon's statement: it "believes in paying the full
+  costs of powering our operations," and the campus is "powered by new
+  on-site generation that won't raise electricity costs for Texas
+  families."
+  ([Cleanview](https://newsletter.cleanview.co/p/scoop-amazon-is-behind-one-of-the), [DataCenterDynamics](https://www.datacenterdynamics.com/en/news/amazon-acquires-8000-acre-site-in-pecos-texas-for-natural-gas-powered-behind-the-meter-data-center-report/), [Pacifico Energy](https://www.pacificoenergy.com/post/pacifico-energy-announces-gw-ranch-project-bringing-5-gigawatts-of-reliable-off-grid-power-for-ai-i))
+  <!-- k: t=datacenter-power-grid e=amazon-aws axis=capital-and-corporate -->
 - **OpenAI completed a ~$7B tender offer letting current and former
   employees sell stock at its existing $852B valuation** — unchanged
   from March's round, and self-funded (bought back from employees
@@ -257,7 +323,12 @@ celebratory.
   one paragraph.
 - `~ threads/datacenter-power-grid` — real development (Texas
   OpenAI/Meta compliance letters, AFP gas-buildout analysis); timeline
-  entry written.
+  entry written. Plus a coverage-critic late catch (Amazon's Pecos
+  County "GW Ranch" gas plant, true date 08-07); separate timeline entry
+  written for that date.
+- `~ threads/google-capex` — coverage-critic catch (Google open-sources
+  "TPU Raiden," true date 08-10) — first update to this thread since
+  07-31; timeline entry written.
 - `~ threads/ai-circular-financing-risk` — real developments (Nvidia
   $500B platform `sev=major`, Anthropic-Riot $9.1B, JPMorgan/Global AI
   + AIndicators); timeline entry written.
@@ -291,7 +362,20 @@ celebratory.
   separate Macquarie/GIC sovereign-capital venture, all landing on
   `ai-circular-financing-risk` (entities: nvidia, openai, oracle — no
   Anthropic) or `ai-datacenter-sites` without a dedicated home. Track
-  it? (This digest's Capital & corporate section, above.)
+  it? (This digest's Capital & corporate section, above.) — ✅ **promoted**
+  same day as `anthropic-infrastructure-buildout` (ben-steer 08-11).
+- **candidate:** **AI-driven research milestones, as their own pattern**
+  — Claude's Riemann-zeta bound (this digest's Research & safety
+  section) is the first item this map has carried of a lab using AI
+  itself to advance an open research problem, distinct from a product
+  launch or a safety incident. If labs keep publishing results like
+  this, there's currently nowhere on the map to track the pattern
+  across labs. Track it?
+- **candidate:** **Nation-state AI-tooling adoption** — Kimsuky's local
+  AI toolchain (this digest's Research & safety section) is the first
+  item this map has carried on a state-linked threat actor building AI
+  capability for attacks. No thread and no watchlist entity (North
+  Korea/Kimsuky) currently covers it. Track it?
 
 ---
 A capital day: Nvidia partnered with six Wall Street firms to raise
@@ -302,4 +386,57 @@ venture, and Microsoft was reported chasing 300,000 custom chips from
 TSMC. Congress pressed AI labs from both chambers on the rogue-agent
 story, and OpenAI and Meta both signed onto Texas's data-center rules.
 Two late catches from 08-07 got folded in: ByteDance's ~10-trillion
-parameter model and Firmus's $2B raise.
+parameter model and Firmus's $2B raise. A second coverage-critic pass
+added four more: Claude quietly advancing a century-old Riemann-zeta
+bound, Amazon's 7.65GW private gas plant in Pecos County, Google
+open-sourcing its TPU-stack "Raiden" library, and North Korea's Kimsuky
+group running phishing and malware development on local AI tools.
+
+## Appendix — Coverage check vs. benchmarks
+
+**Benchmarks checked:** The Neuron and TLDR AI were fetched directly for
+both the 08-10 and 08-11 issues. The Rundown AI's 08-11 issue was
+located by title only, not independently pinned to a URL, and its 08-10
+lead could not be independently confirmed. The AI Daily Brief had only
+an 08-10 episode published, and it was pure recirculation of stories
+already logged on this digest — no independent lead to check against.
+
+**They led with → we missed (4):**
+1. **Anthropic's Claude improving the proven lower bound on Riemann
+   zeta-function zeros from 41.6% to 67.2%** — TLDR AI's #1 item and a
+   lead for The Rundown AI. Folded in above, Research & safety.
+2. **Amazon financing/buying into a 7.65GW private gas plant ("GW
+   Ranch," Pacifico Energy, Pecos County, TX), permitted for up to 33M
+   tons CO2/year.** Folded in above, Capital & corporate — the sharpest
+   of the four misses: this digest already cited the SAME Cleanview
+   dataset in aggregate (60 sites, 97GW) while missing its largest
+   single instance.
+3. **Google open-sourcing "TPU Raiden,"** a KV-cache-transfer inference
+   library positioned as the TPU-stack answer to Nvidia's NIXL. Folded
+   in above, Product & access.
+4. **North Korea's Kimsuky group building a local AI toolchain** (Ollama,
+   GPT4All, Msty, Cursor, RAG, agent frameworks) to run phishing,
+   malware development and attack automation entirely offline. Folded
+   in above, Research & safety.
+
+**The pattern:** three of the four misses — Amazon, Google, Kimsuky —
+are infrastructure- or security-adjacent stories, not big-lab capital
+moves or model releases. That's exactly the shape of story a sweep
+tuned to catch Nvidia/OpenAI/Anthropic capital moves and product
+launches under-indexes on. Only the Riemann item is a "big lab" story,
+and even that one is a pure-research capability result — a different
+shape from the financing/product news this lens's sweep is built to
+catch first.
+
+**Both covered:** Nvidia's $500B Wall Street financing platform,
+Anthropic-Riot Platforms, Anthropic-Macquarie/GIC's Theseus venture, the
+House Democrats letters, Sanders's pause letter, OpenAI's
+Daybreak/GPT-5.6-Cyber launch, and Zuckerberg's manifesto/Muse Glimmer
+were all already on this digest before this pass, matching what the
+benchmarks led with — this pass's four misses were genuinely additive,
+not a wholesale rebuild.
+
+**We had → they didn't:** not independently re-checked this pass — the
+07-28/08-05 practice of confirming exclusives against the same
+benchmarks wasn't repeated here; this appendix covers only the
+misses-check the critic ran.

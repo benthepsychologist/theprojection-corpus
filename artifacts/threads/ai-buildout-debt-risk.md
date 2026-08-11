@@ -2,7 +2,7 @@
 thread: ai-buildout-debt-risk
 title: "AI Debt Gets Rated"
 lens: global-capital
-entities: [nvidia, blackrock, jpmorgan, global-ai]
+entities: [nvidia, blackrock, jpmorgan, global-ai, coreweave]
 opened: 2026-08-11
 ---
 
@@ -33,7 +33,7 @@ very different recovery rates in a default.
   `asset-managers-build-ai`. This thread is only about how the debt is
   priced, rated and recovered. ⟨steer 2026-08-11⟩
 
-## 2026-08-10 — Three scales of AI debt in one day ⟨daily 2026-08-10⟩
+## 2026-08-10 — AI debt priced four ways in one day ⟨daily 2026-08-10⟩
 
 - **Bloomberg Opinion launched "AIndicators," a free credit-market
   framework built specifically to flag whether lenders are mispricing AI
@@ -53,6 +53,31 @@ very different recovery rates in a default.
   public debt issuance. These are MOUs, not final agreements, and no
   transaction has been named.
   ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital)) ⟨daily 2026-08-10⟩
+- **A fourth data point, found independently during the 08-11 finalize
+  pass rather than flagged by any of the above: CoreWeave closed its own
+  $2.6B delayed-draw term loan (JPMorgan/MUFG-led) at SOFR+550 — a
+  10.44% yield-to-maturity — after guidance was flexed wider from an
+  initial S+425-450.** This is the first CONFIRMED transaction-level
+  coupon in this thread's record, not commentary or an unconfirmed
+  report — it resolves `coreweave-backlog-bet`'s own 07-30 flag ("exact
+  new yield not independently confirmed") and lands three days ahead of
+  CoreWeave's Q2 earnings call.
+  ([SEC EDGAR 8-K/credit agreement](https://www.sec.gov/Archives/edgar/data/1769628/000176962826000357/0001769628-26-000357-index.htm), [CoreWeave press release via AOL](https://www.aol.com/articles/coreweave-closes-2-6-billion-200500000.html)) ⟨daily 2026-08-10⟩
+
+## 2026-08-09 (late catch, added 2026-08-11) — Moody's flags banks' own AI-vendor dependence as a risk category
+
+- **Moody's warned that banks' rapid AI adoption is building a
+  concentrated "vendor dependence risk" on a small set of foundation-
+  model and cloud providers — naming OpenAI and Anthropic specifically —
+  that could let a single outage cascade across the financial sector and
+  eventually let dominant vendors dictate pricing to the banks that
+  depend on them.** A different axis from the rest of this thread (which
+  tracks how AI-buildout DEBT is priced): this is banks' own operational
+  dependence on AI vendors, the demand-side mirror of the financing-side
+  risk above. Surfaced by this digest's coverage critic as a genuine
+  miss against the original 08-09 digest; logged here at its true event
+  date rather than reopening that already-closed digest.
+  ([The Guardian](https://www.theguardian.com/business/2026/aug/09/ai-push-banks-tech-firms-moodys-risks-financial-sector), [NewsBytes](https://www.newsbytesapp.com/news/business/banks-ai-rush-could-lead-to-systemic-risks-moody-s/story)) ⟨daily 2026-08-10⟩
 
 ## 2026-07-27 — The prior signal this thread was split out of ⟨daily 2026-07-27⟩
 

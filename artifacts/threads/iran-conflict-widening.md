@@ -24,6 +24,24 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-11 — Baghaei says Oman talks "progressing smoothly," shipping map agreed; Trump escalates to a 50-year compensation demand
+
+- **Iran's Hormuz negotiation stayed unsigned and moved further from
+  resolution: foreign-ministry spokesman Esmaeil Baghaei said talks with
+  Oman are "progressing smoothly and constructively" with the
+  shipping-route map now agreed and only "some technical issues"
+  outstanding, while Trump in the same window escalated his compensation
+  demand to cover "50 years" of alleged US deaths and damages — citing
+  52,000 Iranian deaths over four months and reiterating the 2000 USS
+  Cole bombing.** Charles Kupchan, a former Obama NSC official, called
+  the exchange "banter," saying "neither the Iranians nor the Trump
+  administration is being serious." Two preconditions (Trump's
+  compensation demand, Iran's own reparations/blockade-end demands) are
+  now stacked against a due date that is effectively tomorrow (the
+  `iran-oman-hormuz-deal-signing` ledger expectation, due 08-12), with no
+  new target date announced by either side.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/11/trump-demands-compensation-from-iran-as-talks-on-strait-of-hormuz-continue)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-10 — Trump adds a compensation precondition as Hormuz traffic collapses; Tehran denies Khamenei health rumors; Houthis kill three more
 
 - **Trump added a new precondition to any Hormuz deal, demanding Iran pay

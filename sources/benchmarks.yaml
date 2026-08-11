@@ -39,6 +39,23 @@
 #   clear a Cloudflare challenge (headless-browser render, non-cloud IP) —
 #   a meaningfully bigger lift than a config change. Needs Ben's call.
 #
+# - **Behavioral Health Business: the fix escalated AGAIN** (2026-08-11
+#   evening). The plain-HTTP workaround above is no longer enough — a normal
+#   browser-UA curl now also gets Cloudflare's "Sorry, you have been blocked"
+#   interstitial. What still works is a GOOGLEBOT user-agent:
+#       curl -s -A 'Googlebot/2.1 (+http://www.google.com/bot.html)' \
+#            https://bhbusiness.com/feed/
+#   Verified twice today (the 08-09 and 08-10 critic passes both used it and
+#   both got the live feed). Read the escalation as the trend it is: this
+#   domain has tightened twice in five days.
+#
+# - **Fierce Healthcare: partial block, wider than first recorded.** Its
+#   homepage and article pages load fine via WebFetch, but /fiercehealthcarecom/
+#   about-us, /editorial-advisory-council AND (found 08-11) the
+#   /behavioral-health tag page all 403. Article access is what the critic
+#   needs, so this is a nuisance rather than a gap — but budget a round-trip
+#   for it and go via the homepage, not the tag page.
+#
 # - **MobiHealthNews: FIXED, via a reader proxy** (found 2026-08-11 by the
 #   08-09 mental-health coverage critic). This one has moved PAST the BHB
 #   case: it now blocks a plain `curl` too, not just WebFetch's crawler

@@ -13,6 +13,18 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-11 — Mediation began today; confirmed absence of a readout, checked directly
+
+- **Mediation between Kaiser and NUHW began today, and a direct check of
+  both parties' own channels found no readout yet.** NUHW's news page
+  still tops out at its July 27 post; Kaiser's own mediation page
+  (`about.kaiserpermanente.org`) still shows only its original June 11
+  announcement that the parties agreed to mediate, with nothing added
+  since. This is a confirmed absence rather than a coverage gap —
+  labor-mediation readouts typically surface evening or the next day —
+  but worth stating plainly rather than assumed silent.
+  ([NUHW](https://home.nuhw.org/news/); [Kaiser labor relations](https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining/nuhw-messages-employees/kaiser-permanente-and-nuhw-move-to-mediation)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-07 — NUHW's fight now named alongside SB 903 in national press
 
 - **An AP wire story on SB 903 ("As AI 'therapists' dish out advice,
