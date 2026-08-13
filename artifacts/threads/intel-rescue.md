@@ -18,6 +18,16 @@ customer wins (Microsoft, Tesla, Apple, Fortinet so far), whether the
 state stake changes behavior, Ohio's fate. Backstory crawled 2026-07-28 —
 see `artifacts/findings/intel-rescue-2026-07-28.md`.
 
+## 2026-08-11 — The offering upsizes to $20B on 5x institutional demand
+
+- **Intel upsized the offering logged yesterday from $15B to $20 billion,
+  pricing 210.5 million shares at $95 each after institutional demand
+  topped $100 billion — roughly 5x oversubscribed — with underwriters
+  holding a 30-day option on another 31.6 million shares.** Net proceeds
+  land near $19.7B, still earmarked for "general corporate purposes"
+  including foundry capex; the offering closed 08-12.
+  ([Intel Newsroom](https://newsroom.intel.com/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering), [CNBC](https://www.cnbc.com/2026/08/10/intel-intc-stock-offering-ai.html)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-10 — Intel raises $15B in fresh equity for the foundry buildout
 
 - **Intel launched a $15 billion common-stock offering to fund its

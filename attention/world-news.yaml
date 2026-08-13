@@ -1,1174 +1,168 @@
-generated: '2026-08-11'
-method: tools/build_world_news.py --day 2026-08-11 --gdelt-start 2026-08-10 --gdelt-end
-  2026-08-11
+generated: '2026-08-12'
+method: tools/build_world_news.py --day 2026-08-12 --gdelt-start 2026-08-11 --gdelt-end
+  2026-08-13
 sources:
 - google_news_rss (tools/world_news.py)
 - GDELT Events, deduped (tools/gdelt_dedup.py)
 items:
 - id: russia-ukraine-fight
   headline: 'Russia–Ukraine: Fight'
-  distinct_outlets: 254
+  distinct_outlets: 266
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.99
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: nvidia-and-wall-street-partner-on-500b-ai-financ
-  headline: Nvidia and Wall Street partner on $500B AI financing
-  distinct_outlets: 54
-  outlets_sample:
-  - Axios
-  - BBC
-  - BizNews
-  - Bloomberg.com
-  - Business Post
-  source: google_news_rss
+- id: iran-united-states-fight
+  headline: 'Iran–United States: Fight'
+  distinct_outlets: 66
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.99
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: russia-ukraine-assault
+  headline: 'Russia–Ukraine: Assault'
+  distinct_outlets: 63
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.13
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: russia-united-states-yield
+  headline: 'Russia–United States: Yield'
+  distinct_outlets: 59
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 6.8
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: pakistan-saudi-arabia-engage-in-diplomatic-coope
+  headline: 'Pakistan–Saudi Arabia: Engage in diplomatic cooperation'
+  distinct_outlets: 50
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 7.81
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: israel-palestine-fight
+  headline: 'Israel–Palestine: Fight'
+  distinct_outlets: 49
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -9.94
+  status: confirmed_thread
+  thread: gaza-war
+- id: russia-ukraine-yield
+  headline: 'Russia–Ukraine: Yield'
+  distinct_outlets: 47
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 8.04
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: colombia-provide-aid
+  headline: 'COLOMBIA: Provide aid'
+  distinct_outlets: 47
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 7.34
   status: candidate
 - id: russia-ukraine-reject
   headline: 'Russia–Ukraine: Reject'
-  distinct_outlets: 45
+  distinct_outlets: 44
   source: gdelt
   severity: MIXED
   goldstein_avg: -4.03
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: pakistan-saudi-arabia-engage-in-diplomatic-coope
-  headline: 'Pakistan–Saudi Arabia: Engage in diplomatic cooperation'
-  distinct_outlets: 45
+- id: russia-ukraine-disapprove
+  headline: 'Russia–Ukraine: Disapprove'
+  distinct_outlets: 43
   source: gdelt
-  severity: COOP
-  goldstein_avg: 7.79
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: meta-ai-zuckerberg
-  headline: Meta-AI-Zuckerberg
-  distinct_outlets: 44
-  outlets_sample:
-  - AP News
-  - Action News Jax
-  - Business Standard
-  - CBC
-  - CBS News
-  source: google_news_rss
-  status: candidate
-- id: russia-ukraine-assault
-  headline: 'Russia–Ukraine: Assault'
-  distinct_outlets: 44
-  source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.2
+  severity: MIXED
+  goldstein_avg: -2.0
   status: confirmed_thread
   thread: russia-ukraine-war
-- id: israel-palestine-yield
-  headline: 'Israel–Palestine: Yield'
-  distinct_outlets: 38
+- id: indonesia-make-statement
+  headline: 'INDONESIA: Make statement'
+  distinct_outlets: 39
   source: gdelt
   severity: COOP
-  goldstein_avg: 9.0
+  goldstein_avg: -0.06
+  status: candidate
+- id: russia-ukraine-appeal
+  headline: 'Russia–Ukraine: Appeal'
+  distinct_outlets: 39
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 3.02
   status: confirmed_thread
-  thread: gaza-war
+  thread: russia-ukraine-war
 - id: colombia-express-intent-to-cooperate
   headline: 'COLOMBIA: Express intent to cooperate'
-  distinct_outlets: 35
+  distinct_outlets: 39
   source: gdelt
   severity: COOP
-  goldstein_avg: 4.16
+  goldstein_avg: 4.52
   status: candidate
-- id: russia-ukraine-engage-in-diplomatic-cooperation
-  headline: 'Russia–Ukraine: Engage in diplomatic cooperation'
+- id: iran-israel-fight
+  headline: 'Iran–Israel: Fight'
+  distinct_outlets: 37
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: russia-ukraine-consult
+  headline: 'Russia–Ukraine: Consult'
+  distinct_outlets: 36
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 3.53
+  status: confirmed_thread
+  thread: russia-ukraine-war
+- id: colombia-make-statement
+  headline: 'COLOMBIA: Make statement'
+  distinct_outlets: 34
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 0.29
+  status: candidate
+- id: united-kingdom-united-states-consult
+  headline: 'United Kingdom–United States: Consult'
+  distinct_outlets: 34
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 3.46
+  status: candidate
+- id: north-korea-ukraine-fight
+  headline: 'North Korea–Ukraine: Fight'
+  distinct_outlets: 33
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: candidate
+- id: iran-united-states-express-intent-to-cooperate
+  headline: 'Iran–United States: Express intent to cooperate'
+  distinct_outlets: 33
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 4.92
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: iran-united-states-engage-in-diplomatic-cooperat
+  headline: 'Iran–United States: Engage in diplomatic cooperation'
   distinct_outlets: 32
   source: gdelt
   severity: COOP
-  goldstein_avg: 3.98
+  goldstein_avg: 7.19
   status: confirmed_thread
-  thread: russia-ukraine-war
-- id: iran-united-states-fight
-  headline: 'Iran–United States: Fight'
+  thread: iran-conflict-widening
+- id: colombia-consult
+  headline: 'COLOMBIA: Consult'
   distinct_outlets: 31
   source: gdelt
-  severity: CONFLICT
-  goldstein_avg: -9.98
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: bills-players-wowed-by-highmark-stadium
-  headline: Bills players wowed by Highmark Stadium
-  distinct_outlets: 29
-  outlets_sample:
-  - AOL.com
-  - Audacy
-  - Bills Wire
-  - Buffalo News
-  - ClutchPoints
-  source: google_news_rss
-  status: candidate
-- id: mark-zuckerberg-doesn-t-understand-how-to-live
-  headline: Mark Zuckerberg doesn’t understand how to live
-  distinct_outlets: 26
-  outlets_sample:
-  - Adgully.com
-  - Alaska's News Source
-  - CBC
-  - Fortune
-  - GeekWire
-  source: google_news_rss
-  status: candidate
-- id: apple-tests-chinese-memory-chips
-  headline: Apple tests Chinese memory chips
-  distinct_outlets: 25
-  outlets_sample:
-  - Breakingthenews.net
-  - Cult of Mac
-  - Digital Trends
-  - FOX One
-  - Fox Business
-  source: google_news_rss
-  status: candidate
-- id: history-will-never-forget-manmohan-singh-sonia-g
-  headline: 'History Will Never Forget Manmohan Singh: Sonia Gandhi'
-  distinct_outlets: 24
-  outlets_sample:
-  - ANI News
-  - Babushahi.com
-  - Bhaskar English
-  - Business Today
-  - INDToday
-  source: google_news_rss
-  status: candidate
-- id: microsoft-to-unveil-maia-300-ai-chip-in-septembe
-  headline: Microsoft to unveil Maia 300 AI chip in September
-  distinct_outlets: 20
-  outlets_sample:
-  - BOL News
-  - Business Standard
-  - Crypto Briefing
-  - CryptoRank
-  - Cryptopolitan
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-capex
-- id: anthropic-macquarie-gic-ink-data-center-deal
-  headline: Anthropic, Macquarie, GIC ink data center deal
-  distinct_outlets: 19
-  outlets_sample:
-  - AFR
-  - Breakingthenews.net
-  - Business Standard
-  - Capital Brief
-  - Crypto Briefing
-  source: google_news_rss
-  status: candidate
-- id: a-major-apple-watch-redesign-may-be-coming
-  headline: A major Apple Watch redesign may be coming
-  distinct_outlets: 19
-  outlets_sample:
-  - 36Kr
-  - 9to5Mac
-  - Creative Bloq
-  - Digital Trends
-  - Indian Television Dot Com
-  source: google_news_rss
-  status: candidate
-- id: what-does-the-warsh-era-mean-for-fed-policy
-  headline: What does the Warsh era mean for Fed policy?
-  distinct_outlets: 17
-  outlets_sample:
-  - Breakingthenews.net
-  - CNBC
-  - Investing.com
-  - Investing.com Australia
-  - Longbridge
-  source: google_news_rss
-  status: candidate
-- id: tsmc-sony-to-invest-in-sensor-plant
-  headline: TSMC, Sony to invest in sensor plant
-  distinct_outlets: 16
-  outlets_sample:
-  - Automotive World
-  - Euronews.com
-  - Evertiq
-  - Investing.com
-  - Investing.com UK
-  source: google_news_rss
-  status: candidate
-- id: hims-hers-stock-plunges-as-investors-spot-a-red-
-  headline: Hims & Hers stock plunges as investors spot a red flag
-  distinct_outlets: 16
-  outlets_sample:
-  - Investing.com
-  - Investing.com India
-  - Investing.com Nigeria
-  - Invezz
-  - Modern Healthcare
-  source: google_news_rss
-  status: candidate
-- id: openai-wraps-7-billion-share-sale-ahead-of-poten
-  headline: OpenAI wraps $7 billion share sale ahead of potential IPO
-  distinct_outlets: 14
-  outlets_sample:
-  - AOL.com
-  - CNBC
-  - Chosunbiz
-  - Crypto Briefing
-  - NewsBytes
-  source: google_news_rss
-  status: confirmed_thread
-  thread: openai-ipo-timing
-- id: meta-s-muse-glimmer-ai-runs-on-a-single-pc
-  headline: Meta's Muse Glimmer AI Runs on a Single PC
-  distinct_outlets: 14
-  outlets_sample:
-  - BetaNews
-  - Mashable
-  - Mashable SEA
-  - Pluang
-  - Seeking Alpha
-  source: google_news_rss
-  status: candidate
-- id: us-house-democrats-press-anthropic-openai-about-
-  headline: US House Democrats press Anthropic, OpenAI about rogue AI agents
-  distinct_outlets: 13
-  outlets_sample:
-  - Al Arabiya English
-  - Business Standard
-  - CNA
-  - Crypto Briefing
-  - CryptoRank
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-mai-openai-decoupling
-- id: meta-launches-ai-coding-tool-muse-code-to-challe
-  headline: Meta launches AI coding tool Muse Code to challenge OpenAI, Anthropic
-  distinct_outlets: 13
-  outlets_sample:
-  - AOL.com
-  - CNBC
-  - Crypto Briefing
-  - France 24
-  - India Today
-  source: google_news_rss
-  status: confirmed_thread
-  thread: frontier-lab-ipos
-- id: meta-commits-to-texas-data-center-standards-abbo
-  headline: 'Meta commits to Texas data center standards: Abbott'
-  distinct_outlets: 13
-  outlets_sample:
-  - El Paso Matters
-  - KABB
-  - KBTX News 3
-  - KCENTV.com
-  - KFOX
-  source: google_news_rss
-  status: candidate
-- id: microsoft-plans-maia-300-chip-reveal-in-septembe
-  headline: Microsoft plans Maia 300 chip reveal in September - Information
-  distinct_outlets: 12
-  outlets_sample:
-  - Bitget
-  - CNA
-  - Investing.com
-  - Reuters
-  - The Business Times
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-capex
-- id: novo-nordisk-aws-launch-ai-drug-discovery-hub
-  headline: Novo Nordisk, AWS launch AI drug discovery hub
-  distinct_outlets: 12
-  outlets_sample:
-  - AI Magazine
-  - AI News
-  - Amazon Web Services (AWS)
-  - BankInfoSecurity
-  - FirstWord Pharma
-  source: google_news_rss
-  status: candidate
-- id: claude-code-puts-auto-mode-in-the-driver-s-seat
-  headline: Claude Code puts auto mode in the driver's seat
-  distinct_outlets: 11
-  outlets_sample:
-  - Audacy
-  - CryptoRank
-  - Help Net Security
-  - Interesting Engineering
-  - Mashable
-  source: google_news_rss
-  status: candidate
-- id: yemen-s-houthis-attack-oil-facility-in-saudi-ara
-  headline: Yemen's Houthis attack oil facility in Saudi Arabia
-  distinct_outlets: 11
-  outlets_sample:
-  - Al Jazeera
-  - Arabian Business
-  - Fast Company Middle East
-  - Geelong Advertiser
-  - Jang
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: a-round-apple-watch-is-possible-but-an-apple-rin
-  headline: A round Apple Watch is possible, but an Apple Ring more likely
-  distinct_outlets: 11
-  outlets_sample:
-  - 9to5Mac
-  - AppleInsider
-  - Appleosophy
-  - Dimsum Daily
-  - MacDailyNews
-  source: google_news_rss
-  status: candidate
-- id: samsung-sdi-to-buy-out-gms-indiana-battery-plant
-  headline: Samsung SDI to buy out GMs Indiana battery plant
-  distinct_outlets: 11
-  outlets_sample:
-  - Aju Press
-  - Automotive News
-  - Automotive World
-  - Investing.com
-  - Just Auto
-  source: google_news_rss
-  status: candidate
-- id: vinspace-partners-with-spacex-vietnam-investment
-  headline: VinSpace partners with SpaceX - Vietnam Investment Review
-  distinct_outlets: 11
-  outlets_sample:
-  - AP News
-  - Al Jazeera
-  - GazetteXtra
-  - Hürriyet Daily News
-  - Investing.com
-  source: google_news_rss
-  status: candidate
-- id: apple-tests-china-s-cxmt-memory-chips-for-iphone
-  headline: Apple tests China's CXMT memory chips for iPhones and MacBooks, WSJ reports
-  distinct_outlets: 11
-  outlets_sample:
-  - Investing.com
-  - Investing.com Australia
-  - Reuters
-  - Seeking Alpha
-  - The Business Times
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: riot-platforms-signs-9-1-billion-deal-with-anthr
-  headline: Riot Platforms Signs $9.1 Billion Deal with Anthropic
-  distinct_outlets: 10
-  outlets_sample:
-  - Blockonomi
-  - Bloomberg.com
-  - ForkLog
-  - Moomoo
-  - NDTV Profit
-  source: google_news_rss
-  status: candidate
-- id: nvidia-investing-up-to-3-billion-in-lancium-for-
-  headline: Nvidia investing up to $3 billion in Lancium for Stargate
-  distinct_outlets: 10
-  outlets_sample:
-  - Dealroom
-  - ET Datacenters
-  - Moomoo
-  - TipRanks
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: riot-platforms-signs-9-1b-ai-deal-reportedly-wit
-  headline: Riot Platforms signs $9.1B AI deal reportedly with Anthropic
-  distinct_outlets: 9
-  outlets_sample:
-  - CoinDesk
-  - Crypto Briefing
-  - Investing.com
-  - Moomoo
-  - NewsBytes
-  source: google_news_rss
-  status: candidate
-- id: meta-releases-30b-parameter-muse-glimmer-ai-mode
-  headline: Meta releases 30B-parameter Muse Glimmer AI model weights
-  distinct_outlets: 9
-  outlets_sample:
-  - Business Standard
-  - BusinessLine
-  - FoneArena.com
-  - Martin Cid Magazine
-  - Neowin
-  source: google_news_rss
-  status: confirmed_thread
-  thread: custom-asic-tolls
-- id: nvidia-500bn-ai-tie-up-unnerves-investors
-  headline: Nvidia $500bn AI tie-up unnerves investors
-  distinct_outlets: 9
-  outlets_sample:
-  - Alternatives Watch
-  - BBC
-  - Inshorts
-  - MyJoyOnline
-  - The Next Web
-  source: google_news_rss
-  status: candidate
-- id: trump-takes-his-second-swing-at-fed-s-cook
-  headline: Trump takes his second swing at Fed’s Cook
-  distinct_outlets: 9
-  outlets_sample:
-  - Butler Eagle
-  - Crypto Briefing
-  - Forex Factory
-  - Investing.com
-  - Investing.com Australia
-  source: google_news_rss
-  status: confirmed_thread
-  thread: fed-independence-fight
-- id: oil-prices-steady-as-hormuz-reopening-talks-face
-  headline: Oil prices steady as Hormuz reopening talks face hurdles
-  distinct_outlets: 9
-  outlets_sample:
-  - CBS News
-  - Investing.com
-  - Investing.com Australia
-  - Invezz
-  - Middle East Monitor
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: yemen-s-houthis-claim-attack-on-saudi-oil-facili
-  headline: Yemen’s Houthis claim attack on Saudi oil facility and Yemeni port
-  distinct_outlets: 9
-  outlets_sample:
-  - AP News
-  - Chattanooga Times Free Press
-  - DT Next
-  - Daily Gate City
-  - Dunya News
-  source: google_news_rss
-  status: candidate
-- id: yemen-houthis-hit-saudi-oil-refinery
-  headline: Yemen Houthis hit Saudi oil refinery
-  distinct_outlets: 9
-  outlets_sample:
-  - 13newsnow.com
-  - Arabian Gulf Business Insight | AGBI
-  - Citizen Digital
-  - Inquirer.net
-  - Middle East Eye
-  source: google_news_rss
-  status: candidate
-- id: openai-expands-daybreak-cybersecurity-research-p
-  headline: OpenAI expands Daybreak cybersecurity research program
-  distinct_outlets: 8
-  outlets_sample:
-  - Business Standard
-  - CNBC
-  - CyberScoop
-  - SiliconANGLE
-  - Social Samosa
-  source: google_news_rss
-  status: candidate
-- id: openai-halts-astra-model-testing
-  headline: OpenAI halts Astra model testing
-  distinct_outlets: 8
-  outlets_sample:
-  - Business Standard
-  - Cointribune
-  - Mobile World Live
-  - NewsBytes
-  - PressReader
-  source: google_news_rss
-  status: candidate
-- id: meta-unveils-muse-glimmer-for-single-gpu-use
-  headline: Meta unveils Muse Glimmer for single-GPU use
-  distinct_outlets: 8
-  outlets_sample:
-  - AI News
-  - Crypto Briefing
-  - MLQ.ai
-  - The Next Web
-  - Yahoo Tech
-  source: google_news_rss
-  status: candidate
-- id: alibaba-ai-apple-launches-with-qwen-in-china
-  headline: 'Alibaba AI: Apple launches with Qwen in China'
-  distinct_outlets: 8
-  outlets_sample:
-  - AppleMagazine
-  - CryptoRank
-  - Cryptopolitan
-  - MacDailyNews
-  - TechNode
-  source: google_news_rss
-  status: candidate
-- id: apple-tests-cxmt-dram-for-iphones-and-macbooks
-  headline: Apple Tests CXMT DRAM for iPhones and MacBooks
-  distinct_outlets: 8
-  outlets_sample:
-  - AOL.com
-  - AppleMagazine
-  - Business Standard
-  - Crypto Briefing
-  - Tech Edition
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: what-to-expect-from-google-s-2026-pixel-hardware
-  headline: What to expect from Google’s 2026 Pixel hardware launch event
-  distinct_outlets: 8
-  outlets_sample:
-  - Android Authority
-  - Mix Vale
-  - PhoneArena
-  - The Verge
-  - Tom's Guide
-  source: google_news_rss
-  status: candidate
-- id: greg-abel-puts-berkshire-cash-to-work-in-first-b
-  headline: Greg Abel puts Berkshire cash to work in first big quarter
-  distinct_outlets: 8
-  outlets_sample:
-  - Investing.com Canada
-  - Invezz
-  - Reuters
-  - WTVB
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
-- id: berkshire-hathaway-beats-q2-earnings-expectatio
-  headline: Berkshire Hathaway beats Q2 earnings expectatio...
-  distinct_outlets: 8
-  outlets_sample:
-  - CNBC
-  - Crypto Briefing
-  - Investing.com
-  - MarketWatch
-  - New York Post
-  source: google_news_rss
-  status: candidate
-- id: trump-calls-texas-data-center-opposition-a-mista
-  headline: Trump calls Texas’ data center opposition a “mistake”
-  distinct_outlets: 8
-  outlets_sample:
-  - Audacy
-  - Baltimore Sun
-  - E&E News by POLITICO
-  - KEYE
-  - KWTX
-  source: google_news_rss
-  status: candidate
-- id: anthropic-macquarie-and-gic-form-venture-for-ai-
-  headline: Anthropic, Macquarie and GIC Form Venture for AI Data Centers
-  distinct_outlets: 7
-  outlets_sample:
-  - Bloomberg.com
-  - Data Center Richness | Substack
-  - FourWeekMBA
-  - HPCwire
-  - Sovereign Wealth Fund Institute | SWFI
-  source: google_news_rss
-  status: candidate
-- id: amazon-texas-data-center-could-become-the-larges
-  headline: Amazon Texas data center could become the largest US climate polluter
-  distinct_outlets: 7
-  outlets_sample:
-  - ARYnews.tv
-  - San Antonio Current
-  - SiliconANGLE
-  - The Times of India
-  - datacenterdynamics.com
-  source: google_news_rss
-  status: candidate
-- id: bryson-dechambeau-addresses-saudi-pif-appearance
-  headline: Bryson DeChambeau addresses Saudi PIF appearance at LIV Golf event
-  distinct_outlets: 7
-  outlets_sample:
-  - AOL.com
-  - Daily Express US
-  - Fox News
-  - 'NewsBreak: Local News & Alerts'
-  - The Mirror US
-  source: google_news_rss
-  status: confirmed_thread
-  thread: pif-ai-buildout
-- id: berkshire-hathaway-q2-2026-earnings-greg-abel-de
-  headline: 'Berkshire Hathaway Q2 2026 earnings: Greg Abel deploys cash'
-  distinct_outlets: 7
-  outlets_sample:
-  - Butler Eagle
-  - Investing.com
-  - The Economic Times
-  - The Times
-  - livemint.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
-- id: bernie-sanders-calls-on-tech-companies-to-pause-
-  headline: Bernie Sanders calls on tech companies to pause AI
-  distinct_outlets: 6
-  outlets_sample:
-  - NewsNation
-  - The Next Web
-  - Yahoo
-  - firstpost.com
-  - qz.com
-  source: google_news_rss
-  status: candidate
-- id: google-stock-drops-amid-deepmind-leadership-shak
-  headline: Google stock drops amid DeepMind leadership shake-up
-  distinct_outlets: 6
-  outlets_sample:
-  - AOL.com
-  - Mix Vale
-  - NewsBytes
-  - Storyboard18
-  - The Times of India
-  source: google_news_rss
-  status: confirmed_thread
-  thread: google-health
-- id: august-2026-2
-  headline: August 2026.2
-  distinct_outlets: 6
-  outlets_sample:
-  - AppleValleyNewsNow.com
-  - Buttondown
-  - CG Channel
-  - Paribu
-  - destructoid.com
-  source: google_news_rss
-  status: candidate
-- id: meta-open-sources-muse-glimmer-a-30b-agentic-ai-
-  headline: 'Meta Open Sources Muse Glimmer: A 30B Agentic AI Model'
-  distinct_outlets: 6
-  outlets_sample:
-  - Glitchwire
-  - MarkTechPost
-  - NewsCord
-  - Open Source For You
-  - finance.biggo.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: meta-capex
-- id: spacex-jumps-20-and-moves-back-above-its-ipo-pri
-  headline: SpaceX jumps 20% and moves back above its IPO price
-  distinct_outlets: 6
-  outlets_sample:
-  - CNBC
-  - Invezz
-  - MarketWatch
-  - marketscreener.com
-  - qz.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: spacexai-public-megacap
-- id: blackrock-canada-launches-etf-with-3-bitcoin-all
-  headline: BlackRock Canada launches ETF with 3% Bitcoin allocation
-  distinct_outlets: 6
-  outlets_sample:
-  - FXStreet
-  - Pluang
-  - TradingView
-  - crypto.news
-  - roundtable.io
-  source: google_news_rss
-  status: candidate
-- id: how-kevin-warsh-is-rewiring-the-fed
-  headline: How Kevin Warsh is rewiring the Fed
-  distinct_outlets: 6
-  outlets_sample:
-  - AOL.com
-  - Axios
-  - Crypto Briefing
-  - Forex Factory
-  - Mshale
-  source: google_news_rss
-  status: confirmed_thread
-  thread: fed-independence-fight
-- id: ems-director-drowns-at-north-carolina-beach
-  headline: EMS director drowns at North Carolina beach
-  distinct_outlets: 6
-  outlets_sample:
-  - AOL.com
-  - 'NewsBreak: Local News & Alerts'
-  - The Asheville Citizen Times
-  - Toimihenkilöliitto Erto
-  - WECT | TV6
-  source: google_news_rss
-  status: candidate
-- id: hims-hers-health-q2-earnings-call-highlights
-  headline: Hims & Hers Health Q2 Earnings Call Highlights
-  distinct_outlets: 6
-  outlets_sample:
-  - GuruFocus
-  - Investing.com
-  - Investing.com UK
-  - TradingView
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: gpt-5-6-cyber-refuses-security-researchers-reque
-  headline: GPT-5.6-Cyber refuses security researchers’ requests far less often
-  distinct_outlets: 5
-  outlets_sample:
-  - Help Net Security
-  - The Cryptonomist
-  - The Times of India
-  - VentureBeat
-  - firstpost.com
-  source: google_news_rss
-  status: candidate
-- id: gov-abbott-says-meta-will-follow-standards-texas
-  headline: Gov. Abbott says Meta will follow standards Texas establishes for data
-    centers
-  distinct_outlets: 5
-  outlets_sample:
-  - KTSM 9 News
-  - KVUE
-  - 'NewsBreak: Local News & Alerts'
-  - WFAA
-  - Yahoo
-  source: google_news_rss
-  status: candidate
-- id: big-tech-steps-up-coding-ai-push-arms-with-china
-  headline: Big Tech steps up coding AI push, arms with China AI performance
-  distinct_outlets: 5
-  outlets_sample:
-  - The Courier Mail
-  - euractiv.com
-  - healthcare.digital
-  - san.com
-  - 디지털투데이
-  source: google_news_rss
-  status: candidate
-- id: morgan-stanley-sends-blunt-spacex-message-to-inv
-  headline: Morgan Stanley sends blunt SpaceX message to investors
-  distinct_outlets: 5
-  outlets_sample:
-  - Invezz
-  - Moomoo
-  - PANews
-  - thestreet.com
-  - 富途牛牛
-  source: google_news_rss
-  status: confirmed_thread
-  thread: chip-hyperscaler-rotation
-- id: microsoft-word-1-1-from-1990-has-been-ported-to-
-  headline: Microsoft Word 1.1 from 1990 has been ported to Windows 11
-  distinct_outlets: 5
-  outlets_sample:
-  - Notebookcheck
-  - TechRadar
-  - TweakTown
-  - Windows Latest
-  - neowin.net
-  source: google_news_rss
-  status: candidate
-- id: google-play-adds-venmo-as-a-payment-option
-  headline: Google Play adds Venmo as a payment option
-  distinct_outlets: 5
-  outlets_sample:
-  - PhoneArena
-  - TechCrunch
-  - Telecompaper
-  - The Next Web
-  - blog.google
-  source: google_news_rss
-  status: candidate
-- id: south-korea-pushes-to-build-chip-cluster
-  headline: South Korea pushes to build chip cluster
-  distinct_outlets: 5
-  outlets_sample:
-  - Chosunbiz
-  - Finshots
-  - infrastructureinvestor.com
-  - upi.com
-  - 동아일보
-  source: google_news_rss
-  status: candidate
-- id: vote-on-proposed-data-center-moratorium-in-mario
-  headline: Vote on proposed data center moratorium in Marion County
-  distinct_outlets: 5
-  outlets_sample:
-  - Fox 59
-  - IndyStar
-  - WESH
-  - WSVN
-  - Yahoo
-  source: google_news_rss
-  status: candidate
-- id: tesla-and-spacex-want-their-own-chip-factory-wit
-  headline: Tesla and SpaceX want their own chip factory with 3,000 workers
-  distinct_outlets: 5
-  outlets_sample:
-  - Investing.com South Africa
-  - Reuters
-  - The Lufkin Daily News
-  - The News International
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: pif-ai-buildout
-- id: jpmorgan-lifts-s-p-500-target-to-8-000-on-strong
-  headline: JPMorgan lifts S&P 500 target to 8,000 on strong earnings
-  distinct_outlets: 5
-  outlets_sample:
-  - Business Insider Africa
-  - New York Post
-  - StreetInsider
-  - Yahoo Finance Singapore
-  - businessinsider.com
-  source: google_news_rss
-  status: candidate
-- id: apple-tests-cxmt-chips-memory-crunch-puts-supply
-  headline: Apple Tests CXMT Chips, Memory Crunch Puts Supply Under Pressure
-  distinct_outlets: 5
-  outlets_sample:
-  - AOL.com
-  - Analytics Insight
-  - HOKANEWS.COM
-  - TradingView
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: donald-trump-is-not-done-with-the-fed
-  headline: Donald Trump Is Not Done With the Fed
-  distinct_outlets: 5
-  outlets_sample:
-  - AOL.com
-  - Daily Express US
-  - The Mirror US
-  - The Salt Lake Tribune
-  - marketscreener.com
-  source: google_news_rss
-  status: candidate
-- id: yemen-s-houthis-claim-attack-on-aramco-oil-facil
-  headline: Yemen's Houthis claim attack on Aramco oil facility in Saudi Arabia
-  distinct_outlets: 5
-  outlets_sample:
-  - CBC
-  - Daily Excelsior
-  - Just The News
-  - New York Post
-  - The Hans India
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: openai-unveils-new-chatgpt-models-adds-security-
-  headline: OpenAI unveils new ChatGPT models, adds security features for teens
-  distinct_outlets: 4
-  outlets_sample:
-  - The Independent
-  - The Next Web
-  - Yahoo
-  - aol.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: nippon-life-openai-suit
-- id: meta-mark-zuckerberg-launch-new-muse-glimmer-ai-
-  headline: Meta, Mark Zuckerberg launch new Muse Glimmer AI model
-  distinct_outlets: 4
-  outlets_sample:
-  - Big News Network.com
-  - Chosunbiz
-  - Times Now
-  - USA Today
-  source: google_news_rss
-  status: candidate
-- id: unitree-ipo-puts-physical-ai-in-investor-spotlig
-  headline: Unitree IPO puts physical AI in investor spotlight
-  distinct_outlets: 4
-  outlets_sample:
-  - The Business Times
-  - The Edge Malaysia
-  - The Straits Times
-  - chinadailyhk
-  source: google_news_rss
-  status: candidate
-- id: report-apple-watch-could-get-its-biggest-overhau
-  headline: 'Report: Apple Watch could get its biggest overhaul ever'
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Standard
-  - FoneArena.com
-  - WFSB
-  - neowin.net
-  source: google_news_rss
-  status: candidate
-- id: apple-hit-with-rare-downgrade-as-jefferies-sees-
-  headline: Apple hit with rare downgrade as Jefferies sees pressure on iPhone pricing
-  distinct_outlets: 4
-  outlets_sample:
-  - 9to5Mac
-  - CNBC
-  - Invezz
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: samsung-galaxy-z-fold-8-survives-the-ultimate-st
-  headline: Samsung Galaxy Z Fold 8 survives the ultimate stress test
-  distinct_outlets: 4
-  outlets_sample:
-  - Android Authority
-  - CNN
-  - Chrome Unboxed
-  - Mashable
-  source: google_news_rss
-  status: candidate
-- id: galaxy-s26-fe-specs-leak-alongside-a-higher-pric
-  headline: Galaxy S26 FE specs leak alongside a higher price tag
-  distinct_outlets: 4
-  outlets_sample:
-  - 9to5Google
-  - GSMArena.com
-  - PhoneArena
-  - The Economic Times
-  source: google_news_rss
-  status: candidate
-- id: google-pixel-buds-pro-2-release-date-price-and-s
-  headline: Google Pixel Buds Pro 2 release date, price and specs
-  distinct_outlets: 4
-  outlets_sample:
-  - Android Police
-  - Business Standard
-  - TechCabal
-  - thehindu.com
-  source: google_news_rss
-  status: candidate
-- id: amazon-ai-data-center-in-west-texas-sparks-emiss
-  headline: Amazon AI data center in West Texas sparks emissions concerns
-  distinct_outlets: 4
-  outlets_sample:
-  - The Economic Times
-  - Tom's Hardware
-  - cbs19.tv
-  - firstpost.com
-  source: google_news_rss
-  status: candidate
-- id: nvidia-wall-st-firms-plan-500b-ai-infrastructure
-  headline: Nvidia, Wall St firms plan $500b AI infrastructure push
-  distinct_outlets: 4
-  outlets_sample:
-  - Daily Sabah
-  - Namoi Valley Independent
-  - Port Stephens Examiner
-  - St George & Sutherland Shire Leader
-  source: google_news_rss
-  status: candidate
-- id: tsmc-revenue-surges-as-ai-chip-demand-hold
-  headline: TSMC Revenue Surges as AI Chip Demand Hold
-  distinct_outlets: 4
-  outlets_sample:
-  - Briefs Finance
-  - Electronics For You BUSINESS
-  - Yahoo Finance
-  - finance.biggo.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-compute-spend
-- id: micron-technology-inc-ubs-remains-its-buy-rating
-  headline: 'Micron Technology, Inc. : UBS remains its Buy rating'
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com
-  - Investing.com Nigeria
-  - Investing.com UK
-  - marketscreener.com
-  source: google_news_rss
-  status: candidate
-- id: insyde-firmware-qualified-on-arm-agi-cpu-platfor
-  headline: Insyde firmware qualified on Arm AGI CPU platforms
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Wire
-  - Engineering.com
-  - The Daily Tribune News
-  - The Killeen Daily Herald
-  source: google_news_rss
-  status: confirmed_thread
-  thread: arm-royalty-regime
-- id: qualcomm-plans-16m-expansion-of-north-austin-res
-  headline: Qualcomm plans $16M expansion of North Austin research and office facility
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - KXAN Austin
-  - The Real Deal
-  - Yahoo
-  source: google_news_rss
-  status: candidate
-- id: coreweave-crwv-us
-  headline: $CoreWeave (CRWV.US)$
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com
-  - Moomoo
-  - Seeking Alpha
-  - Smartkarma
-  source: google_news_rss
-  status: candidate
-- id: amd-buys-taalas-to-sharpen-inference
-  headline: AMD buys Taalas to sharpen inference
-  distinct_outlets: 4
-  outlets_sample:
-  - Jon Peddie Research
-  - New Electronics
-  - W.Media
-  - manufacturingtodayindia.com
-  source: google_news_rss
-  status: candidate
-- id: vietnam-s-vinspace-signs-spacex-launch-deal-for-
-  headline: Vietnam's VinSpace signs SpaceX launch deal for 2027
-  distinct_outlets: 4
-  outlets_sample:
-  - The Times of India
-  - TradingView
-  - manufacturing.economictimes.indiatimes.com
-  - technode.global
-  source: google_news_rss
-  status: candidate
-- id: openai-completes-7-billion-employee-share-buybac
-  headline: OpenAI Completes $7 Billion Employee Share Buyback, IPO May Be Delayed
-    to 2027
-  distinct_outlets: 4
-  outlets_sample:
-  - NAI500
-  - TradingKey
-  - finance.biggo.com
-  - Межа. Новини України.
-  source: google_news_rss
-  status: confirmed_thread
-  thread: openai-ipo-timing
-- id: blackrock-signs-deal-with-unions-for-ai-construc
-  headline: BlackRock Signs Deal With Unions for AI Construction Jobs
-  distinct_outlets: 4
-  outlets_sample:
-  - Bloomberg.com
-  - Moomoo
-  - Yahoo Finance
-  - marketscreener.com
-  source: google_news_rss
-  status: candidate
-- id: msc-and-blackrock-retreat-from-barcelona-termina
-  headline: MSC and BlackRock retreat from Barcelona terminal deal
-  distinct_outlets: 4
-  outlets_sample:
-  - Baird Maritime
-  - MLex
-  - Reuters
-  - Splash247
-  source: google_news_rss
-  status: candidate
-- id: apple-testing-cxmt-chips-amid-supply-crunch
-  headline: Apple Testing CXMT Chips Amid Supply Crunch
-  distinct_outlets: 4
-  outlets_sample:
-  - Yahoo Finance
-  - Yahoo! Finance Canada
-  - marketscreener.com
-  - 富途牛牛
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: warren-buffett-personally-initiated-berkshire-s-
-  headline: Warren Buffett Personally Initiated Berkshire's $30 Billion Alphabet Stake,
-    a Sign He's Still Making Calls Despite Stepp…
-  distinct_outlets: 4
-  outlets_sample:
-  - Longbridge
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
-- id: trump-says-he-spoke-with-fed-s-warsh-last-week
-  headline: Trump says he spoke with Fed's Warsh last week
-  distinct_outlets: 4
-  outlets_sample:
-  - Devdiscourse
-  - StreetInsider
-  - The Business Standard
-  - The Standard (HK)
-  source: google_news_rss
-  status: confirmed_thread
-  thread: fed-independence-fight
-- id: trump-revives-effort-to-fire-fed-governor-lisa-c
-  headline: Trump Revives Effort to Fire Fed Governor Lisa Cook
-  distinct_outlets: 4
-  outlets_sample:
-  - CU Today
-  - Law.com
-  - streamlinefeed.co.ke
-  - Межа. Новини України.
-  source: google_news_rss
-  status: confirmed_thread
-  thread: fed-independence-fight
-- id: brad-pitt-felt-suicidal-amid-family-drama
-  headline: Brad Pitt felt ‘suicidal’ amid ‘family’ drama
-  distinct_outlets: 4
-  outlets_sample:
-  - News.com.au
-  - Yahoo
-  - Yahoo News Canada
-  - Yahoo News UK
-  source: google_news_rss
-  status: candidate
-- id: big-bear-bald-eagle-jackie-dies-after-lingering-
-  headline: Big Bear bald eagle Jackie dies after lingering health issues
-  distinct_outlets: 4
-  outlets_sample:
-  - ABC7 Bay Area
-  - Action News Now
-  - CBS News
-  - The Economic Times
-  source: google_news_rss
-  status: candidate
-- id: bain-capital-specialty-q2-earnings-snapshot
-  headline: 'Bain Capital Specialty: Q2 Earnings Snapshot'
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com UK
-  - Quiver Quantitative
-  - TradingView
-  - WKYC
-  source: google_news_rss
-  status: candidate
-- id: robert-mayo-ai-data-centers-what-north-dakota-ne
-  headline: 'Robert Mayo: AI data centers: What North Dakota needs to know'
-  distinct_outlets: 4
-  outlets_sample:
-  - Health and Human Services North Dakota (.gov)
-  - North Dakota Monitor
-  - The Bismarck Tribune
-  - Valley News Live
-  source: google_news_rss
-  status: candidate
-- id: new-mexico-tests-a-new-way-to-rein-in-meta
-  headline: New Mexico tests a new way to rein in Meta
-  distinct_outlets: 4
-  outlets_sample:
-  - Aaj English TV
-  - Mashable
-  - Politico
-  - bestmediainfo.com
-  source: google_news_rss
-  status: candidate
-- id: alphabet-s-cloud-computing-business-just-posted-
-  headline: Alphabet's Cloud Computing Business Just Posted 82% Revenue Growth. Next
-    Quarter Could Be Even Better.
-  distinct_outlets: 4
-  outlets_sample:
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  - aol.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: coreweave-backlog-bet
-- id: wisconsin-rapids-moves-closer-to-moratorium-for-
-  headline: Wisconsin Rapids moves closer to moratorium for data centers
-  distinct_outlets: 4
-  outlets_sample:
-  - WAOW
-  - WSAU
-  - WSAW
-  - wisconsinrapidstribune.com
-  source: google_news_rss
+  severity: COOP
+  goldstein_avg: 2.58
   status: candidate

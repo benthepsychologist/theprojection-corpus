@@ -15,6 +15,28 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-12 — The evidence fight reaches an actual jury: Meta/TikTok youth-safety trial opens in Oakland
+
+- **A federal trial testing whether Meta and TikTok designed their
+  platforms to addict and harm young users' mental health opened jury
+  selection in Oakland today, after the Ninth Circuit refused to block
+  it.** The consolidated case combines design-harm claims from Colorado,
+  Kentucky, California, and New Jersey with a separate claim from 29
+  states that Meta illegally collected children's data; opening
+  statements start 08-18, with Mark Zuckerberg and Instagram head Adam
+  Mosseri both expected to testify across a seven-week trial — the
+  largest test yet of this causality fight reaching an actual jury verdict
+  rather than settling or staying in the legislative/academic lanes this
+  thread otherwise tracks. It lands one week after a separate New Mexico
+  state court ordered Meta to pay $567M into a youth-mental-health
+  treatment fund (screening, prevention, referral, and care coordination,
+  not individual compensation) after finding the company created a
+  public nuisance — two different courts now testing materially the same
+  underlying claim at once, with Meta appealing the New Mexico judgment.
+  Distinct from `meta-ai-csam-ads` (platform/ad-system liability); this is
+  the design-harm/data-collection claim specifically.
+  ([Claims Journal](https://www.claimsjournal.com/news/national/2026/08/12/339459.htm), [PBS NewsHour, New Mexico ruling](https://www.pbs.org/newshour/nation/new-mexico-court-orders-meta-to-pay-567-million-over-mental-health-harms-to-kids-online)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-10 — France requires hard ID verification instead of Australia's declaration model
 
 - **France's under-15 social-media ban (new accounts blocked starting

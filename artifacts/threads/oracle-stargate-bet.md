@@ -15,6 +15,23 @@ confirmation) or CDS move; whether Oracle's RPO-to-revenue conversion
 rate ($76.6B guided vs $67B delivered in FY26) holds; any named
 counterparty breakdown of the OpenAI-linked RPO slice.
 
+## 2026-08-12 — 52-week low to a 5.9% jump, riding CoreWeave's and Nebius's earnings as demand read-across
+
+- **Oracle stock swung from a fresh 52-week low to a 5.9% single-day
+  jump, riding CoreWeave's and Nebius's earnings beats as read-across
+  for the neocloud demand its own Stargate bet depends on.** Oracle had
+  fallen as much as 57% over ten months on capex/balance-sheet worries
+  and an unresolved New Mexico permitting fight over a natural-gas
+  pipeline for its 2.5GW Project Jupiter data center — state regulators
+  have twice denied the right-of-way, and an Oracle VP told local
+  officials there is no contingency plan if the site's air-quality
+  permit also fails. CoreWeave's 112%-revenue-growth print (08-11,
+  `coreweave-backlog-bet`) and Nebius's reported 454% sales growth
+  reassured investors the demand Oracle is betting its balance sheet on
+  is real — though one analyst flagged the same read-across cuts both
+  ways: "too much debt to serve a highly concentrated customer base."
+  ([Motley Fool](https://www.fool.com/investing/2026/08/12/why-oracle-stock-just-jumped/), [Data Center Dynamics](https://www.datacenterdynamics.com/en/news/new-mexico-regulators-reject-natural-gas-pipeline-for-oracles-25gw-project-jupiter-data-center/)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-04 — Opened: Oracle's own arc, separated from six threads that only carry it as supporting cast ⟨crawl 2026-08-04⟩
 
 - **Oracle is a `kingdom`-rank board entry** (~$64B commandable capital)

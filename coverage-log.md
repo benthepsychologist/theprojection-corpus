@@ -2714,3 +2714,113 @@ permanently, while the first ~185 are swept at 100%. The manifest records
 only a count, never which, so it leaves no trace in provenance. This is the
 academic lane, i.e. the EBP strand's primary feed. Filed to kestrel's INBOX
 with a rotation fix modelled on `/daily`'s own cold-rotation pattern.
+
+## 2026-08-12 critic pass — finalized 2026-08-11 (all three critic-bearing
+lenses; world-news carries none by design)
+
+Run ~20h after the digest-day closed (05:00 ET 08-12) — later than usual;
+the prior run had stalled with 08-11 sitting `building`/`pending` and 08-12
+entirely uncurated until this pass caught up both days at once (see
+`log.md` for the full session account). Four sonnet agents, one per lens,
+ran in parallel: each finalized 08-11 with its own critic pass and built
+08-12 today-so-far.
+
+### ai / 2026-08-11
+- **One minor miss, cross-lens.** TLDR AI linked a WSJ piece on Anthropic's
+  September/October IPO target (~$965B valuation) in its Miscellaneous
+  section — a more substantive version of an IPO-prep story this digest
+  had already flagged (and correctly held back a thinner NY Post piece on).
+  Not written into this lens's digest: the owning thread,
+  `anthropic-ipo-timing`, is global-capital's, not ai's — logged here as
+  the honest record of what the benchmark caught, not duplicated as a
+  bullet.
+- **We had, they didn't:** TSMC's $29.4B capex + Sony JV, the IBM/Together
+  AI deal, Oracle's next layoff round, CoreWeave's Q2 print, xAI's Grok
+  Bot, Google Gemini's 1B-user milestone, and — the sharpest one — an
+  Israeli security firm's account of what looks like the first fully
+  autonomous AI cyberattack against a government target (China-linked
+  actors, Taiwan), which none of the four benchmarks led with despite it
+  arguably being the day's most significant single item.
+- **Both covered:** all three checkable benchmarks' actual leads (Riemann-
+  zeta, Muse Glimmer, GPT-5.6-Cyber/Daybreak, the Zoom bug, Nvidia's $500B
+  platform, the Astra deep-dive) were already on the 08-10 finalize or this
+  digest. The Rundown AI's archive wouldn't resolve a dated 08-11 issue —
+  not independently checked this pass.
+- **A real recall trap avoided, worth keeping as a pattern note:** several
+  headlines that read as fresh on a shallow buffer pass turned out on
+  primary-source verification to be older stories resurfacing via a
+  different aggregator on a different day — the DeepMind leadership
+  reshuffle/Jeff Dean exit (really 08-05/06), OpenAI's Astra pause (really
+  08-07), Chloé Bakalar's exit (already on 08-10), a 15-AG letter (really
+  08-03), Kimi K3's GitHub-cheating incident (really 08-06),
+  Microsoft-Chevron's power deal (really June), and Musk's California
+  AI-law loss / Anthropic's Reddit-suit remand (both really March). All
+  checked and dropped rather than re-reported as new.
+
+### global-capital / 2026-08-11
+- **Two real misses, both found and fixed during the check itself rather
+  than left standing.** Bloomberg Technology's own lead was Intel upsizing
+  its stock offering from $15B to $20B on 5x demand — folded in as a full
+  bullet with primary-source detail. Money Stuff covered a
+  Change-in-Control clause in Tesla's pay package that a SpaceX-Tesla
+  merger could exploit — also folded in.
+- **No misses against FT Unhedged** (direct RSS, no paywall gate). Axios
+  Pro Rata skipped per the standing Cloudflare-block record — no new
+  attempt.
+- **Found independently, flagged by no benchmark: CoreWeave's Q2 print**
+  (reported 5pm ET 08-11) — revenue $2.575B and adjusted EPS -$1.03 both
+  beat consensus, while net interest expense hit $640M, up 140% YoY from
+  $267M — the first look this map has at backlog growth and debt cost
+  moving together in one borrower's own numbers, resolving the
+  `coreweave-q2-earnings` ledger entry as `hit`. Also the first fatal
+  Houthi/US-military exchange in the Red Sea/Gulf of Oman since the war
+  began.
+
+### mental-health / 2026-08-11
+- **One near-miss, self-caught during finalize, not left standing.** A CMS
+  interim rule cutting off Medicaid work-requirement exemptions for
+  substance-use-disorder patients after five years in "stable recovery"
+  (providers call the standard undocumentable) posted to Behavioral Health
+  Business after the original 14:00 ET cutoff — caught this pass and
+  written in. Two clinical-trial registrations (psilocybin for
+  methamphetamine-use-disorder in HIV patients; an NYU Rohingya
+  intergenerational-trauma cohort) were also caught by a direct registry
+  query that the original broad term-match pull had missed.
+- **No further misses.** STAT ran no MH content (a Medicaid
+  gender-affirming-care story was weighed and set aside as a different
+  clinical/regulatory lane); Fierce Healthcare ran no MH content (its
+  `/behavioral-health` tag page still 403s); MobiHealthNews (via the
+  `r.jina.ai` proxy) ran no MH content.
+- **The day's real resolution:** `kaiser-nuhw-mediation-0811` flipped to
+  `passed-silent` — the AI/layoffs/clinician-control mediation was
+  scheduled to begin today but neither party's own channel confirms it
+  convened, checked three times across the day. This dispute has a real
+  precedent for a scheduled mediation round going quiet mid-stream (2025),
+  so the silence is being treated as itself worth recording, not waved off
+  as "probably fine."
+
+### world-news / 2026-08-11 (no critic — carries `coverage: na` by design)
+- Extension pass added one dated development for the 14:00 ET→close gap:
+  an overnight Russia-Ukraine barrage (Iskander-M, Kh-31P, Kh-35 missiles +
+  138 Shahed drones; 8 dead, 57 injured across nine oblasts).
+
+### A previously uncaptured story, flagged not filed: the DRC's Ebola
+outbreak passed 2,011 confirmed deaths this week (Bundibugyo strain, no
+approved vaccine/treatment, spread into Uganda, WHO PHEIC). The world-news
+agent flagged it as a possible flash; checked directly against the primary
+source before deciding — the WHO's actual emergency declaration was
+2026-05-15, three months ago, so crossing 2,000 deaths this week is a
+running-total milestone, not a new discrete event, and doesn't clear the
+flash rail's "new event only" bar. Registered as a thread candidate
+instead (see 🧵 Map deltas / thread candidates for 08-12).
+
+### Collection note: `lda` (lobbying disclosure) fully blocked this run —
+142/142 swept terms failed with HTTP 403, "very likely blocked at the
+network edge," per the collector's own log. `semantic_scholar` hit its
+600s lane budget again (187 terms skipped) — same permanent-blind-spot
+pattern already filed to kestrel's INBOX, not a new finding. `sec_edgar`
+threw individual-term 500s throughout the run but still returned 1,516
+items overall — a noisy run, not an outage. `gdelt` needed heavy 429
+backoff on several terms (Google DeepMind, xAI, Meta AI, Safe
+Superintelligence all fully dropped after 3 retries) but the collector as a
+whole still returned 97 items.

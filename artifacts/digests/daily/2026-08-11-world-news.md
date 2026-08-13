@@ -1,22 +1,27 @@
 ---
 lens: world-news
 date: 2026-08-11
-status: building
+status: final
 window_start: 2026-08-11T05:00:00-04:00
-as_of: 2026-08-11T14:00:00-04:00
+as_of: 2026-08-12T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-11
 
-*Digest-day ~9h in. Curated agentic-interim from the same
-`buffer/2026-08-11-google_news_rss.jsonl` sweep used to close out 08-10
-(see that digest for method), restricted here to items dated after
-2026-08-11T09:00Z — but that buffer file stops refreshing at ~10:55 UTC
-(~6:55am ET), only about two hours into this digest-day, so everything
-past that point (the Hormuz and UNIFIL items below) came from direct
-Al Jazeera fetches rather than the mechanical buffer sweep. Extending a
-~6-hour uncurated gap per this session's standing instructions.*
+*Curated agentic-interim from the same `buffer/2026-08-11-google_news_rss.jsonl`
+sweep used to close out 08-10 (see that digest for method) for the
+morning items, direct wire/primary-source fetches (Al Jazeera, Kyiv
+Independent) for everything past ~10:55 UTC once the buffer stopped
+refreshing (the standing gap noted at 14:00 ET). Finalize pass
+(2026-08-12): extended through the actual 05:00 ET close with one
+additional dated development — an overnight Russia-Ukraine barrage
+(Kyiv Independent, published 08-12 but covering "the past day," i.e.
+attacks landing before this digest-day's close). Trump's continuing
+"100% control of Hormuz" rhetoric and Iran's Hormuz posture are pinned
+to Wednesday (08-12) US-time statements and carried in the next digest
+instead, to avoid a same-claim split across two files. Day complete;
+`status: final`.*
 
 ## Today's throughline
 
@@ -35,7 +40,11 @@ mandate is heading toward a year-end phase-out, its role already
 sidelined from the pilot-zone withdrawals this thread has been tracking.
 The Iran-Oman Hormuz deal-signing expectation is due tomorrow
 (2026-08-12); today's items make it look further from landing, not
-closer.
+closer. Closing out the day: Russia hit Ukraine again overnight into
+08-12 with ballistic and guided missiles plus 138 Shahed-type drones,
+killing at least 8 and injuring 57 across nine oblasts — a smaller,
+more dispersed barrage than 08-10's Zaporizhzhia/Kyiv strike rather than
+a further escalation in scale.
 
 ## Items
 
@@ -84,6 +93,21 @@ closer.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/11/future-southern-lebanon-peacekeeping-uncertain-amid-unifil-phase-out))
   <!-- k: t=israel-lebanon-escalation axis=world-news -->
 
+- **Russia hit Ukraine again overnight into 08-12 with an Iskander-M
+  ballistic missile, a Kh-31P anti-radiation missile, Kh-35 guided
+  air-launched missiles and 138 Shahed-type drones, killing at least 8
+  people and injuring 57 across nine oblasts — Ukrainian air defenses
+  intercepted 112 of the drones.** Casualties were scattered rather than
+  concentrated: 2 killed/3 injured in Odesa Oblast (a strike on an oil
+  tanker truck), 2 killed/14 injured in Kherson Oblast (33 settlements
+  targeted), 2 killed/4 injured in Sumy Oblast, 1 killed/14 injured in
+  Donetsk Oblast, 1 killed/9 injured in Zaporizhzhia Oblast, plus injuries
+  in Kharkiv, Chernihiv, Dnipropetrovsk and Kyiv oblasts. A smaller,
+  more dispersed barrage than 08-10's Zaporizhzhia/Kyiv strike (12
+  dead, concentrated) rather than a further step up in scale.
+  ([Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-8-injure-57-across-ukraine-over-past-day-as-deadly-strike-hits-oil-tanker-truck-in-odesa-oblast/))
+  <!-- k: t=russia-ukraine-war axis=world-news -->
+
 ## ⏳ Upcoming & expected
 
 - No world-news-lens ledger flips yet today. The Iran-Oman Hormuz
@@ -104,11 +128,15 @@ closer.
 - `~ threads/israel-lebanon-escalation` — real development (UNIFIL
   mandate phase-out, pilot-zone sidelining); timeline entry written at
   the top of the thread file.
-- `~ threads/russia-ukraine-war`, `~ threads/horn-of-africa-war`,
-  `~ threads/europe-migration-schengen` — nothing newly dated to 08-11
-  found; Russia-Ukraine's 08-10 casualty toll was updated in place on
-  that digest instead (same event, fuller reporting), not a new dated
-  item here.
+- `~ threads/russia-ukraine-war` — real development on the finalize pass
+  (overnight Aug 11-12 barrage, 8 dead/57 injured across nine oblasts);
+  new `## 2026-08-11` timeline block added, distinct from the 08-10
+  Zaporizhzhia/Kyiv entry (different event, different casualty pattern).
+- `~ threads/horn-of-africa-war`, `~ threads/europe-migration-schengen` —
+  nothing newly dated to 08-11 found on either the interim or finalize
+  pass; Tigray fighting that de-escalated 08-01/02 has no new reporting,
+  and both Schengen suspensions remain on their existing timelines
+  (Italy through 09-01, Spain since 08-10).
 
 ## 🧵 Thread candidates
 
@@ -126,6 +154,7 @@ negotiation. A Washington Post piece described the Trump-Netanyahu
 relationship as an actively widening rift, continuing rather than
 resetting what was already logged 08-09, and Al Jazeera reported UNIFIL's
 south-Lebanon peacekeeping mandate is heading toward a year-end
-phase-out, already sidelined from the stalled withdrawal talks. The
-Iran-Oman Hormuz deal-signing deadline is tomorrow and looks unlikely to
-be met.
+phase-out, already sidelined from the stalled withdrawal talks. Russia
+closed the day with another barrage on Ukraine overnight, killing at
+least 8 across nine scattered oblasts, and the Iran-Oman Hormuz
+deal-signing deadline passed into tomorrow still unmet.

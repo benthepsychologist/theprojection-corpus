@@ -13,6 +13,24 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-12 — HB 26-1195 takes effect: the flip, not just the check
+
+- **Colorado's HB 26-1195 took effect today — the country's first law
+  requiring a real, licensed therapist to stay in the loop for AI use in
+  psychotherapy actually bound, as opposed to being previewed.** It bars
+  AI from directly conducting therapeutic communication, generating
+  unreviewed treatment recommendations, or performing unsupervised
+  diagnosis/emotional-state detection, while still allowing AI for
+  administrative/documentation support under full clinician
+  responsibility. Yesterday's entry already confirmed no delay,
+  amendment, or challenge on the legislative record; today's development
+  is simply the law becoming binding law rather than a pending one — the
+  `upcoming.yaml` ledger entry (`colorado-hb1195-effective`) flips to
+  **hit**. Colorado's separate, broader AI Act (SB 26-189) remains under
+  its own federal injunction fight and does not touch this bill or its
+  companion HB 26-1139.
+  ([Colorado General Assembly](https://leg.colorado.gov/bills/HB26-1195)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-11 — Pre-effective-date check: HB 26-1195 has no delay, amendment, or challenge on file
 
 - **A dedicated check of Colorado's legislative record ahead of HB

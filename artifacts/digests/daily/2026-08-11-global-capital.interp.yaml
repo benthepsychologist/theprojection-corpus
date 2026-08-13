@@ -2,59 +2,72 @@
 # interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
 # bullet's own bold lead phrase (first 50 chars). The bullet's
 # <!-- k: ... --> annotation carries interp=yes to point here.
-# Read against capital-context.yaml (asof 2026-08-09).
+# Read against capital-context.yaml (asof 2026-08-09) and against the
+# 08-10 sidecar's own Nvidia/Moody's/CoreWeave entries, which this
+# quarter's print is the first empirical test of.
 
-epfr-s-weekly-global-navigator-report-published-t:
+coreweave-beat-q2-consensus-on-both-lines-2-575b-r:
   mechanism: >
-    Two independent inflation channels are being read together for the
-    first time in this record: the war-risk oil premium
-    (red-sea-oil-shock) and AI-buildout "chipflation" (higher tech-goods
-    and electricity costs from the compute buildout itself). Both are
-    real-economy cost-push channels rather than demand-side overheating,
-    which is why central banks holding steady through both is itself
-    informative — a demand-driven inflation scare would normally draw a
-    faster hawkish response than a cost-push one, where tightening does
-    less to fix the actual cause.
-  confidence: plausible
+    This earnings print is the first time backlog growth (bullish) and
+    financing-cost growth (bearish) show up together in CoreWeave's own
+    numbers rather than as separate data points on separate days: net
+    interest expense rose 140% YoY ($640M vs $267M) — faster than the
+    112% YoY revenue growth — in the same quarter backlog grew to
+    roughly $129B including new Q3 commitments. It is the first
+    real-world test of whether the SOFR+550 spread that priced three
+    days before this print (see `coreweave-backlog-bet`) reflects
+    CoreWeave-specific risk or a genuine, broader repricing of
+    AI-infrastructure debt — the exact open question `ai-buildout-debt-
+    risk` was opened to track.
+  confidence: likely
   scenarios:
     - direction: >
-        The two channels compound into a genuine second-round inflation
-        problem — oil feeding transport/energy costs, AI buildout
-        feeding tech-goods/electricity costs — forcing central banks off
-        their current hold sooner than the 09-16 FOMC date this lens is
-        already tracking.
+        The market treats this as confirmation CoreWeave can service a
+        growing debt load while still growing revenue and backlog, and
+        financing keeps flowing at the current, already-repriced spread
+        without further widening — capital keeps flowing, just
+        permanently more expensively than early-2026 levels.
       why: >
-        capital-context.yaml's own rate_regime reading already flags a
-        hawkish 9-3 FOMC vote with three dissents FOR a hike; two
-        simultaneous cost-push channels newly on the record are exactly
-        the kind of data that could move that vote count further before
-        09-16.
+        Shares jumped as much as 14% after hours and management raised
+        full-year revenue guidance rather than trimming it — the
+        market's real-time verdict was "still investable" despite the
+        interest-expense jump, and Oracle's own stock (a different,
+        larger neocloud-adjacent bet) rallied 5.9% the next day
+        explicitly on this print as read-across for buildout demand.
       precedent: >
-        The 2021-2022 semiconductor-shortage episode, where a narrow,
-        sector-specific input-cost shock (chip scarcity) fed through
-        into broad vehicle and electronics CPI prints well beyond the
-        chip sector itself, forcing central banks to treat what started
-        as a supply-chain story as a genuine inflation input.
+        AMD's own Q2 2026 double beat (revenue and EPS both ahead of
+        guidance) reassured markets on a highly-levered AI growth story
+        the same way — a pattern also visible in 1990s-2000s telecom/
+        cable operators, which kept raising debt capital through
+        repeated earnings beats even as leverage climbed, until the
+        growth-vs-debt-service gap eventually became the story itself.
     - direction: >
-        Both channels stay sector-contained — oil in energy/transport,
-        AI buildout costs in tech-goods/electricity — without showing up
-        as a broad CPI mover, and the current hold survives to 09-16
-        unchanged.
+        The $640M interest bill is an early symptom of a financing
+        treadmill: CoreWeave must keep growing its backlog faster than
+        debt-service costs compound, and a single quarter of guidance
+        miss would expose the gap Bloomberg's own AIndicators tracker
+        (this map's 08-10 digest) was built specifically to watch for.
       why: >
-        Neither channel has produced a specific fund-flow or CPI figure
-        yet in this week's EPFR report (unlike the $10B/$75B/$31B reads
-        capital-context.yaml already carries from prior weeks) — the
-        report itself frames this as a risk re-emerging, not a
-        confirmed broad print.
+        Interest-expense growth (+140% YoY) is outpacing revenue growth
+        (+112% YoY) in the same quarter — a modest but real gap moving
+        in the wrong direction for a company already carrying $30B+ of
+        2026 secured debt, on top of the new $3.1B DDTL's 1.35x DSCR
+        covenant, which is the first hard financial covenant this map
+        has recorded anywhere in the AI-buildout debt stack.
       precedent: >
-        The 2017-2019 solar-panel-tariff cost pressure, a real,
-        sustained sector-specific input-cost increase that never
-        registered as a broad CPI mover because it stayed contained to
-        one narrow goods category.
+        The Bank for International Settlements' own June 2026 warning
+        on vendor-financed, cash-flow-dependent AI-infrastructure debt
+        (cited in this same digest's Lambda-loan coverage, and echoed
+        in Moody's 08-09 vendor-dependence warning on this map's
+        `ai-buildout-debt-risk` thread) — the risk in both cases
+        materializes only once revenue growth decelerates below
+        debt-service growth, which this quarter's numbers show the gap
+        beginning to form without yet triggering.
   context_note: >
-    capital-context.yaml's fund_flows reading is still keyed to EPFR's
-    08-04 report ("technology story shines through the smoke," $10B) —
-    this week's report is qualitatively new (a named second inflation
-    channel) but carries no dollar figure, so it isn't yet a clean
-    like-for-like update to that reading; worth flagging for the next
-    /week refresh rather than forcing into fund_flows now.
+    `capital-context.yaml` doesn't carry an AI-debt-specific reading yet
+    — flagged as a candidate in the 08-10 sidecar's Moody's entry. This
+    quarter's numbers are the first company-level empirical test of the
+    mechanism that candidate reading would need to track, and the first
+    quarter where this map can compare debt-service growth to revenue
+    growth for the same borrower rather than reading them as separate
+    financing-side and operating-side stories.

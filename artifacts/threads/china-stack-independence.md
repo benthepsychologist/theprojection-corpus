@@ -13,6 +13,29 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-12 — Qwen3.8-Max lands as open weights, with a first-of-its-kind revenue-share attached; DeepSeek ships V4 Pro same day
+
+- **Alibaba's Qwen3.8-Max — a 2.4-trillion-parameter MoE model (~95B
+  active per token, 1M-token context) — landed on Hugging Face as open
+  weights**, resolving `upcoming.yaml`'s `qwen38-max-open-weights`
+  expectation, which had slipped past its original 08-10 date.
+  ([Hugging Face](https://huggingface.co/Qwen/Qwen3.8-2.4T-A95B)) ⟨daily 2026-08-12⟩
+- **Alibaba paired the release with a new monetization policy: large
+  commercial cloud hosts generating significant revenue from the model
+  will be asked to negotiate a revenue-share** — mirroring the freemium
+  structure Moonshot introduced for Kimi K3 (30% above $20M/year in
+  provider revenue). The first time Alibaba has attached a commercial
+  string to an open-weight Qwen release; Alibaba shares rose 4.5% (US
+  premarket) / 7% (Hong Kong) on the news.
+  ([Open Source For You](https://www.opensourceforu.com/2026/08/alibaba-to-introduce-revenuesharing/)) ⟨daily 2026-08-12⟩
+- **The same day, DeepSeek shipped the official release of V4 Pro**, its
+  flagship 1.6T-parameter open-weight coding/reasoning model, at
+  $0.435/$0.87 per million input/output tokens (~1/30th comparable
+  Western frontier pricing), 80.6% on SWE-bench Verified. Several
+  outlets read the same-day Qwen/DeepSeek/Grok 4.6 cluster as an
+  explicit price war opening among frontier labs.
+  ([Unite.AI](https://www.unite.ai/deepseek-ships-v4-pro-as-its-flagship-model-leaves-preview/)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-07 (late catch, added 2026-08-11) — ByteDance is pretraining a ~10-trillion-parameter model aimed at Anthropic's Mythos
 
 - **The Financial Times reported ByteDance is pretraining a model of up

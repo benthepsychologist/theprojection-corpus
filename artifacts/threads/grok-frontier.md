@@ -13,6 +13,31 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-08-12 — Grok 4.6 ships, reversing the 08-07 miss
+
+- **Grok 4.6 shipped — a new flagship built for long-running agent
+  tasks, reviewing its own work mid-task per xAI's own description of
+  the RL training behind it.** Scored 61 on the Artificial Analysis
+  Intelligence Index (matching GPT-5.6 Sol, within a point of Claude
+  Fable 5); priced at $2/$6 per million input/output tokens, roughly
+  half of rival frontier pricing. Live same day in Cursor, xAI's own
+  "Grok Build," and via API. Resolves this thread's 08-07 note that
+  Grok 4.6 had missed its unofficial ship target.
+  ([Unite.AI](https://www.unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/), [TechTimes](https://www.techtimes.com/articles/324156/20260812/grok-46-arrives-spacex-claims-all-employee-work-ai-training-material.htm)) ⟨daily 2026-08-12⟩
+- **Separately, xAI launched "Grok Bot" in beta — an always-on AI agent
+  that runs on its own persistent cloud computer**, available to
+  SuperGrok Heavy/Cursor Ultra/Cursor Teams Premium subscribers. A
+  product-line move rather than a model milestone, noted here for
+  continuity with the Grok Imagine Image 2.0 update logged 08-07.
+  ([Unite.AI](https://www.unite.ai/xai-launches-grok-bot-always-on-ai-teammates-with-their-own-cloud-computers/)) ⟨daily 2026-08-11⟩
+- 💡 **SpaceX's $60B all-stock acquisition of Cursor (Anysphere) is
+  reportedly nearing close** — Musk said regulatory review is "nearly
+  complete" on SpaceX's first quarterly earnings call as a public
+  company. The deal's financing/structure is `spacexai-public-megacap`'s
+  (global-capital), not this thread's; noted here only because Cursor
+  will be absorbed into xAI's own product structure, adjacent to Grok
+  Bot's positioning. ⟨daily 2026-08-12⟩
+
 ## 2026-08-07 — Grok 4.6 misses its week; a new image model ships; an analyst case for the compute side
 
 - **Grok 4.6 did not ship this week**, its unofficial target (a single

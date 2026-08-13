@@ -14,6 +14,23 @@ financing, the Starlink→AI cash flow, Musk's supermajority-vote control, and
 whether the tiny float + index-forced buying trap passive holders in a
 money-losing AI mega-cap. The Aug-6 lock-up is the next event.
 
+## 2026-08-11 — A Change-in-Control clause could let a SpaceX-Tesla merger bypass Musk's pay-package milestones entirely
+
+- **A SpaceX-Tesla merger would let Musk bypass his Tesla pay package's
+  operational milestones entirely, per analysis triggered by a Matt
+  Levine Money Stuff column today — Tesla's 2025 CEO Performance Award
+  recalculates on acquisition price under a "Change in Control" clause,
+  not on the 20M-vehicle/1M-robotaxi/1M-Optimus targets currently gating
+  it.** The award's maximum has already shrunk from a $1T-valuation
+  target to $824B (recent stock issuance diluted it); the acquisition
+  formula pays out proportionally per $500B of deal price, with an
+  $8.5T price triggering the full 424M-share award. No merger has been
+  proposed — Musk has been evasive rather than denying it ("we can't
+  talk about combining companies... on earnings calls") — but the
+  mechanism itself is real and on the record in Tesla's own filing, not
+  speculation about the filing.
+  ([Money Stuff](https://www.bloomberg.com/opinion/newsletters/2026-08-11/pick-and-shovel-seller-financing), [Gizmodo](https://gizmodo.com/all-you-have-to-do-is-be-bought-a-spacex-tesla-merger-could-be-musks-1-trillion-payout-cheat-code-2000796904)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-07 — The Cursor deal (announced June) moves toward an actual close
 
 - **SpaceX formalized its $60B all-stock acquisition of AI coding startup Cursor in a merger agreement now on file, with Cursor telling staff internally that a close could land within days — first firm movement since the deal was announced back in June.** Cursor (crossed $1B annualized revenue in November) folds directly into SpaceXAI's structure rather than operating independently; some tools may end up under the Grok brand. The acquisition currency is SpaceX's own post-IPO stock — still trading below the $135 IPO price even after this week's lockup-driven rally (below) — meaning a second AI-lab-scale bet is being paid for in paper from a company whose own valuation is itself the thing this thread is questioning.

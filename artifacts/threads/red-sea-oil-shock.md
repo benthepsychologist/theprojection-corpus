@@ -22,6 +22,29 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-12 — The Hormuz deal slips; Saudi Arabia reroutes around the Red Sea entirely; oil barely moves
+
+- **The US-brokered Iran-Oman deal to reopen the Strait of Hormuz
+  officially slipped past its ~08-12 due window with no signature, while
+  Saudi Arabia is now routing oil around the Red Sea entirely rather
+  than waiting on the fight.** Iran's Foreign Ministry called the deal
+  "very close" but said final approval is still pending from higher
+  authorities, then separately rejected further talks and added new
+  demands (an end to the US naval blockade, sanctions relief, troop
+  withdrawal, war reparations) beyond the deal's original terms. On the
+  ground the response is structural, not diplomatic: Saudi exports
+  through Yanbu/Bab al-Mandeb fell roughly 90% (to 1.3M bbl the week of
+  08-03, from 11M bbl the week the Houthi blockade was declared), while
+  exports through the Egypt-Mediterranean pipeline route (Sidi Kerir)
+  more than doubled to ~2.3M bpd.
+  ([CNBC](https://www.cnbc.com/2026/08/12/saudi-arabia-iran-oil-red-sea-houthi-suez-canal-strait-hormuz.html)) ⟨daily 2026-08-12⟩
+- **Brent and WTI both closed effectively flat ($88.98 and $83.27, +$0.07
+  each) despite this week's fatal Red Sea/Gulf of Oman escalation** —
+  the first time this thread has recorded a muted price reaction to a
+  genuine escalation, reading as the market pricing continued stalemate
+  with a structural workaround rather than fresh risk.
+  ([CNBC](https://www.cnbc.com/2026/08/12/oil-prices-today-wti-brent-red-sea.html)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-11 — Brent extends its rally to $92.54, a second straight sharp move
 
 - **Brent crude rose another 5.69% ($4.99) to $92.54/bbl — a second
@@ -50,6 +73,16 @@ itself (who's fighting whom, where it's widening) — see
   ratcheting further — the first standing forward-looking benchmark this
   thread has against its own day-to-day spot-price reads.
   ([EIA Short-Term Energy Outlook](https://www.eia.gov/outlooks/steo/), 2026-08-11) ⟨daily 2026-08-11⟩
+- **Houthi missiles killed six aboard the Tanzanian-flagged cargo ship
+  Tihamah in the Bab al-Mandeb strait after dark — the first shipping
+  fatalities linked to Yemen's Houthis since the war began in
+  February — while US forces separately fired on a Panama-flagged
+  vessel in the Gulf of Oman for allegedly trying to breach Washington's
+  blockade of Iranian ports.** The standing Hormuz/Red Sea risk premium
+  has, for the first time, attached to an actual death toll rather than
+  tanker damage and diplomatic stalemate; the market's own reaction was
+  muted (see 08-12), not a fresh repricing.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says)) ⟨daily 2026-08-11⟩
 
 ## 2026-08-10 — Trump counters Iran's compensation demand with his own; Brent posts its steepest one-day jump of the war
 

@@ -12,6 +12,22 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-05 (late catch, added 2026-08-11) — Nvidia tests cutting Rubin Ultra's own memory to cope with the shortage it's helping cause
+
+- **Nvidia is reportedly testing lower-memory configurations of its
+  next-generation Rubin Ultra accelerator — designs as small as 192GB
+  (stepping back to 8-Hi HBM4) versus the 288GB on the current Vera
+  Rubin, a 33% cut** — per an August 4 TrendForce report. Driven by tight
+  HBM wafer allocation across SK Hynix, Samsung and Micron, the same
+  three suppliers this thread already tracks on the supply side. A
+  lower-memory Rubin Ultra means buyers need more GPUs for the same
+  workload — more power, rack space and interconnect cost — the first
+  entry on this thread showing the squeeze reaching into Nvidia's own
+  next-gen chip spec, not just consumer-hardware pricing or supplier
+  capacity plans. Missed by every digest since 08-05; folded in now on
+  the 08-11 finalize's coverage-critic pass.
+  ([Tom's Hardware](https://www.tomshardware.com/pc-components/gpus/nvidia-reportedly-testing-lower-memory-configs-of-rubin-ultra-as-memory-shortage-bites-back-designs-tested-include-as-little-as-192-gb-and-step-back-to-hbm4)) ⟨daily 2026-08-11, added 2026-08-11⟩
+
 ## 2026-08-09 — Apple tests Chinese CXMT memory under a Senate deadline not to
 
 - **Apple is testing memory chips from China's CXMT for China-market

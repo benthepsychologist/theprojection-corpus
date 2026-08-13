@@ -15,6 +15,31 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-08-11 — Q2 print: consensus beat on both lines, backlog to ~$129B, and debt service climbing right alongside it
+
+- **CoreWeave beat Q2 consensus on both lines — $2.575B revenue (+112%
+  YoY) against a ~$2.56B estimate, and a narrower-than-expected adjusted
+  per-share loss of $1.03 against the $1.18-$1.27 range this thread was
+  carrying — while GAAP net loss nearly doubled to $626M (~$1.14/share
+  diluted) from $290M a year earlier, driven by net interest expense
+  that climbed to $640M from $267M.** Backlog stood at $104B at
+  quarter-end before more than $25B of net-new Q3 commitments pushed the
+  total toward ~$129B — a $29.6B jump in roughly six weeks. Also
+  disclosed: over $10B in new unsecured debt/converts plus a separate
+  $3.1B delayed-draw term loan at SOFR+450 (a 1.35x debt-service-
+  coverage covenant from 09-30-26), on top of the $2.6B SOFR+550
+  facility this thread closed 08-10. Management raised full-year
+  revenue guidance to $12.4-13.2B (from $12-13B) and guided Q3 to
+  $3.4-3.6B; shares jumped as much as 14% after hours. The next day,
+  Oracle's own stock rallied 5.9% off a 52-week low explicitly citing
+  this print (and Nebius's) as demand read-across for the wider
+  neocloud bet.
+  ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000362/crwv-20260811.htm), [CNBC](https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html), [Quartz](https://qz.com/coreweave-q2-2026-earnings-revenue-losses-interest-costs-081126)) ⟨daily 2026-08-11⟩
+- **Also logged on `ai-buildout-debt-risk`** — this is the thread's
+  first quarter where debt-service growth (+140% YoY) and revenue growth
+  (+112% YoY) can be compared for the same borrower, rather than read as
+  separate financing-side and operating-side stories. ⟨daily 2026-08-11⟩
+
 ## 2026-08-10 — The $2.6B loan closes; the 07-30 yield question is now answered
 
 - **CoreWeave closed the $2.6B delayed-draw term loan this thread

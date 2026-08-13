@@ -572,7 +572,23 @@ expectations:
     # 08-10 item. Consensus re-checked at a $1.18-$1.27 per-share loss on
     # ~$2.56B, against the $99.4B backlog reported at Q1 — a wider spread than
     # the single -$1.27 figure this entry was logged with.
-    status: pending
+    # 2026-08-12 ⟨daily⟩: HIT. Reported on schedule 08-11 after close (IR
+    # release + SEC 8-K exhibit as primary sources). Revenue $2.575B beat the
+    # ~$2.56B consensus; adjusted EPS -$1.03 beat the -$1.20/-$1.27 range
+    # logged above. GAAP net loss widened to $626M ($(1.14)/share diluted)
+    # from $290M a year earlier. Backlog ~$104B at quarter-end, EXCLUDING
+    # >$25B of net new commitments added in early Q3. Net interest expense
+    # $640M this quarter vs $267M a year ago — direct confirmation debt
+    # service is climbing, consistent with the $2.6B SOFR+550 facility
+    # reported 3 days pre-print; also disclosed >$10B in new unsecured
+    # debt/converts plus a separate $3.1B DDTL at SOFR+450 (1.35x DSCR
+    # covenant from 09-30-26). No management quote located reconciling the
+    # SOFR+550 spread specifically. Shares +~14% after-hours. A 36%/24mo,
+    # 75%/4yr backlog-conversion split appears in secondary sources but
+    # could NOT be confirmed against CoreWeave's own filing — not carried
+    # as fact.
+    status: hit
+    resolved: 2026-08-12
 
   - id: mhpaea-replacement-rule
     claim: "Trump admin proposes the MHPAEA parity replacement rule (2024 rule non-enforced since May-25; 'by end of year' target)"
@@ -625,7 +641,18 @@ expectations:
     # has a federal preliminary-injunction fight against Colorado's BROADER AI
     # Act (SB 26-189). Legal trackers state the healthcare-specific bills,
     # HB 26-1139 and this one, proceed unaffected. On track to hit tomorrow.
-    status: pending
+    # 2026-08-12 ⟨daily⟩: HIT. The date itself is the confirming event (a
+    # statute's effective date isn't a news event, so the lack of press
+    # coverage is expected, not a gap) — leg.colorado.gov's own record
+    # re-confirmed: signed 2026-06-03, codified Chapter 358, in force from
+    # today under the no-safety-clause default-effective-date mechanism.
+    # Corroborated independently by two outside compliance trackers (Snell
+    # & Wilmer, an AI-regulation tracker site) citing the identical date. No
+    # lawsuit, injunction or delay found targeting this specific bill — the
+    # only nearby litigation is against the separate, broader SB 26-189,
+    # which commentary explicitly distinguishes as not touching this one.
+    status: hit
+    resolved: 2026-08-12
 
   - id: xai-mn-preliminary-injunction
     claim: "xAI v. Ellison preliminary-injunction hearing on Minnesota's HF1606 'nudify' ban (TRO already denied 07-31; law in force since 08-01)"
@@ -904,7 +931,25 @@ expectations:
     # on neither Hugging Face (fetched directly: 458 Qwen models, no 3.8-Max)
     # nor, as far as can be told, ModelScope. Commercially available and openly
     # unavailable at the same time. Inside grace to 08-13.
-    status: pending
+    # 2026-08-12 ⟨daily⟩: HIT. Confirmed directly against Hugging Face, not
+    # secondary coverage (several blog sources were stale, still reporting
+    # "no repo as of 08-10"): two live repos, `Qwen/Qwen3.8-2.4T-A95B` and
+    # `Qwen/Qwen3.8-2.4T-A95B-FP8`, both Safetensors/BF16, "updated ~15h ago"
+    # at check time, license `qwen3.8-max`, benchmark table matching the
+    # 08-03 unveil. Stronger corroboration: 30 derivative repos already built
+    # on it (unsloth/AMD/RadixArk/FlagRelease quantizations/distillations) —
+    # those only appear once base weights are genuinely downloadable, not
+    # from an announcement alone. ModelScope itself couldn't be independently
+    # confirmed (JS-shell page, no clean fetch), but the claim's HF-or-
+    # ModelScope bar is already met by HF alone. ⚠ Naming nuance for the
+    # record: the shipped repo is literally `Qwen3.8-2.4T-A95B`, not
+    # `Qwen3.8-Max` — the model card itself says "Qwen3.8-Max is the official
+    # version based on Qwen3.8-2.4T-A95B with more features" (vision input,
+    # larger context, built-in tools). What shipped open is the foundation
+    # checkpoint the hosted Max product sits on — the exact pattern this
+    # entry was tracking, just not an exact-string name match.
+    status: hit
+    resolved: 2026-08-12
     # 2026-08-10 ⟨daily⟩: checked directly on the due date. Alibaba's own
     # Hugging Face org page (458 models) carries no Qwen3.8-Max entry;
     # ModelScope's listing is a JS shell so couldn't be checked directly,
@@ -1240,7 +1285,20 @@ expectations:
     # the normal pattern (mediation readouts land evening or next morning),
     # NOT evidence the session failed to convene — which also could not be
     # independently confirmed, only that it was scheduled. Stays pending.
-    status: pending
+    # 2026-08-12 ⟨daily⟩: PASSED-SILENT. 3-day retro-flip grace runs to
+    # 2026-08-14 before this stands. Both sides' own channels re-checked
+    # directly and re-confirmed dark: NUHW's site (news index + dedicated
+    # Kaiser-IBHS bargaining page) still tops out at 07-27, Kaiser's own
+    # labor-relations page still at 07-02/June messaging — nothing dated
+    # after 07-27 on either side confirms the session convened, continued,
+    # or produced a readout on the three named demands. Worth weighting:
+    # this exact dispute had a mediation round publicly SUSPENDED mid-stream
+    # in the 2025 precedent (home.nuhw.org, 2026-03-13 statement), so a
+    # scheduled date quietly stalling has real history here — silence is
+    # not being read as a proxy for "it happened and nobody wrote it up."
+    slips: []
+    status: passed-silent
+    resolved: 2026-08-12
     # 2026-08-05 ⟨daily⟩: this thread had carried "no firm date" as an open
     # gap since 07-23; a 07-27 NUHW post (missed by prior passes) names
     # 08-11 explicitly. Logged now, not backdated.
@@ -1302,6 +1360,24 @@ expectations:
     # Two preconditions now stacked against a due date that is essentially now.
     # No new target date announced by either side, so NOT a slip — just
     # continued non-resolution.
+    # 2026-08-12 ⟨daily⟩: SLIPPED. Due window closed with no signature and the
+    # trajectory kept worsening: Al Jazeera (08-08) — Iran's FM calls it "very
+    # close" but says final approval is still pending from higher Iranian
+    # authorities; Fortune (08-09) — Iran REJECTS further talks for now and
+    # its Supreme National Security Council adds sweeping new demands (end to
+    # the US naval blockade, sanctions relief, troop withdrawal, war
+    # reparations) well beyond this claim's terms; CNBC (08-12, two pieces) —
+    # Strait shipping traffic at a 3-month low, deal explicitly "in doubt,"
+    # Trump "slamming Iran" after a Houthi attack killed six in the Red Sea;
+    # CNN's 08-12 live blog confirms still-low traffic, no signing, oil
+    # climbing on the delay. No signature, joint statement, or government
+    # release anywhere through 08-12 — every source describes negotiation,
+    # not execution. This is at least the second Hormuz arrangement to
+    # collapse mid-negotiation this year (an earlier June MOU reportedly also
+    # fell apart over undefined shipping routes), so the new date below is a
+    # LOW-CONFIDENCE placeholder for re-check cadence, not a real forecast.
+    slips: [2026-08-12]
+    due: 2026-08-19
     status: pending
     # 2026-08-05 ⟨daily⟩: due date is a rough 1-week estimate, not sourced
     # to a stated deadline -- reporting says "close," not "by X date."
@@ -1424,4 +1500,17 @@ expectations:
     what_confirms: "an OpenAI announcement or a reported hire into the role. Bakalar was OpenAI's ONLY dedicated ethicist and left in July — reported 08-10, never announced by the company, and not yet replaced. A silent pass here is itself the finding: it would mean the role was quietly retired rather than refilled, against a reported pattern of roughly half of OpenAI's safety researchers leaving this year."
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, frontier-ai lens
+    status: pending
+
+  - id: spacex-cursor-close
+    claim: "SpaceX's $60B all-stock acquisition of Cursor (Anysphere) closes"
+    due: 2026-08-31
+    due_precision: month
+    thread: spacexai-public-megacap
+    entities: [spacex, xai]
+    source: https://seekingalpha.com/news/4629527-cursor-says-spacex-deal-could-be-done-by-end-of-next-week---report
+    confidence: reported
+    what_confirms: "an announced closing, or SEC/company filings reflecting the combination; Musk said regulatory review was 'nearly complete' and the deal expected to close 'within days or by end of August'"
+    logged: 2026-08-12
+    logged_by: curate-add   # /daily 08-12, frontier-ai lens
     status: pending

@@ -12,6 +12,21 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-08-11 — Board approves $29.4B more capex; a new Sony sensor JV lands alongside it
+
+- **TSMC's board approved roughly $29.4B in new capital appropriations
+  for advanced-node capacity and packaging, citing AI/HPC demand** —
+  weeks after raising 2026 equipment-spend guidance to $60-64B. The
+  capacity race keeps compounding rather than plateauing.
+  ([TipRanks](https://www.tipranks.com/news/company-announcements/tsmc-board-approves-us29-4-billion-capex-q2-dividend-and-sony-image-sensor-jv)) ⟨daily 2026-08-11⟩
+- **Separately, TSMC and Sony executed a definitive agreement to jointly
+  build a next-generation image-sensor fab in Kumamoto, Japan** (Sony
+  contributing ~¥465B, TSMC ~¥282B; production targeted 2029), aimed at
+  sensors for AI-driven robotics and vehicles — a capacity commitment
+  adjacent to, not competing with, the core logic/AI-accelerator race
+  this thread tracks.
+  ([Sony Semiconductor Solutions](https://www.sony-semicon.com/en/news/2026/2026081101.html)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-05 — The real constraint gets a number: TSMC pushes CoWoS front-end work out to OSATs
 
 - **TSMC is reportedly expanding outsourcing of the CoW (chip-on-wafer)

@@ -24,6 +24,42 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-12 — Trump/Iran trade "total control" claims as deal slips; Houthi attack kills six; blockade turns lethal
+
+- **Trump declared "I THINK WE WILL KEEP IT!" of the US Navy's "100%"
+  control over the Strait of Hormuz on Wednesday, calling the naval
+  blockade a "Wall of Steel" and Iran "all talk and no action, the Bully
+  of the Middle East No Longer" — but Iran's Persian Gulf Strait
+  Authority directly rejected the claim, stating the strait "remains
+  blocked and will not be reopened until Iran's conditions are
+  accepted," and independent shipping data back Iran's read over
+  Trump's.** Vessel transits sat at a five-day average of roughly 13,
+  near a three-month low and about 90% below the pre-war norm of ~130
+  daily. Mohsen Rezaei — installed as Supreme National Security Council
+  secretary this month, replacing Mohammad Bagher Zolghadr — repeated
+  Wednesday that Hormuz "will not open fully" until Washington meets
+  Tehran's demands, which an 08-09 SNSC statement laid out in full: a
+  region-wide ceasefire, an end to the US naval blockade, war-damage
+  compensation, unfreezing of Iranian assets, and sanctions relief —
+  considerably beyond the shipping-route terms the `iran-oman-hormuz-deal-signing`
+  ledger expectation was tracking, which formally slipped today (due
+  2026-08-12, new due 2026-08-19, low confidence).
+  ([Al-Monitor](https://www.al-monitor.com/originals/2026/08/irans-hormuz-authority-denies-trump-claims-control-over-strait-what-know), [Times of Israel](https://www.timesofisrael.com/liveblog-august-12-2026/)) ⟨daily 2026-08-12⟩
+- **A Houthi double-tap missile attack on the Egyptian-owned cargo ship
+  Tihamah in the Bab el-Mandeb Strait killed six people Tuesday — the
+  first Red Sea shipping deaths since the US-Israel war on Iran began in
+  February — with Trump responding by mocking Iran's military rather
+  than announcing new retaliation.** Three ballistic missiles hit the
+  ship in the first strike (killing 4 crew: three Pakistani nationals and
+  one Indonesian, wounding 7 more), then a second missile struck during
+  the rescue operation, killing two Yemeni National Resistance Forces
+  personnel. Separately Monday, US Central Command disabled the
+  Panama-flagged M/V Vela Nova's steering gear with two Hellfire missiles
+  after the vessel ignored warnings while approaching an Iranian port —
+  the third vessel CENTCOM has disabled and the 55th it has redirected
+  since the blockade's July 14 reimposition.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says), [Al Jazeera](https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-11 — Baghaei says Oman talks "progressing smoothly," shipping map agreed; Trump escalates to a 50-year compensation demand
 
 - **Iran's Hormuz negotiation stayed unsigned and moved further from

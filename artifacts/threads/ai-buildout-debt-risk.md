@@ -18,6 +18,43 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
+## 2026-08-12 — A second neocloud shows the same circular-financing shape: Lambda prices $917M against Nvidia's own compute
+
+- **Lambda priced a $917 million leveraged loan — led by Morgan Stanley,
+  nearly $2B oversubscribed — to buy the Nvidia GPUs that Nvidia itself
+  is both financing and leasing back.** The loan (S+375bps, priced at 99
+  cents, 4.4-year maturity with full amortization) funds Lambda's side
+  of a ~$1.5B, 18,000-server contract under which Nvidia leases back the
+  compute it sold — meaning Nvidia sits simultaneously as Lambda's
+  investor, chip supplier, largest customer, and counterparty to the
+  debt that pays for all three. The Bank for International Settlements
+  flagged this exact structure — echoing Google's own TPU model — in a
+  June 2026 warning that vendor-financed circular deals are "typically
+  poorly disclosed, with risks of the same asset being pledged multiple
+  times." Second confirmed transaction-level data point in this thread,
+  after CoreWeave's own loan — the watch question (20-year
+  infrastructure asset vs. 3-4-year depreciating equipment) is now
+  testable across two borrowers, not one.
+  ([The Next Web](https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-12/ai-cloud-provider-lambda-prices-loan-for-nvidia-tied-chip-deal)) ⟨daily 2026-08-12⟩
+
+## 2026-08-11 (later) — CoreWeave's own Q2 print puts backlog growth and financing cost in the same quarter for the first time
+
+- **CoreWeave's Q2 earnings are the first data point in this thread
+  where backlog growth and financing-cost growth show up in the SAME
+  company's own numbers at once: net interest expense rose 140% YoY
+  ($640M vs $267M) — faster than 112% YoY revenue growth — in the same
+  quarter backlog grew to roughly $129B including new Q3 commitments.**
+  It is the first real-world test of whether the SOFR+550 spread that
+  priced three days before this print reflects CoreWeave-specific risk
+  or a broader AI-infrastructure debt repricing — this thread's central
+  open question. Also disclosed: over $10B in new unsecured debt/
+  converts and a separate $3.1B DDTL carrying a 1.35x DSCR covenant from
+  09-30-26 — the first hard financial covenant this thread has recorded
+  anywhere in the AI-buildout debt stack. Shares still jumped 14% after
+  hours and guidance was raised, not trimmed — see the full print on
+  `coreweave-backlog-bet`.
+  ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000362/crwv-20260811.htm), [CNBC](https://www.cnbc.com/2026/08/11/coreweave-crwv-q2-earnings-report-2026.html)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-11 — Opened (ben-steer)
 
 - **Opened after three data points landed on the same day at three very

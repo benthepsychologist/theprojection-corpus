@@ -18,6 +18,38 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-12 — Ukraine hits Novorossiysk and Crimea overnight; Zelenskyy says Kyiv handed US new peace proposals
+
+- **Ukraine hit Russia's Black Sea port of Novorossiysk in a large
+  overnight drone attack that killed three people (a child among them,
+  24 wounded) and knocked out two major grain terminals, while separate
+  drone strikes hit occupied Crimea near Sevastopol and the Kerch
+  (Crimean) Bridge.** The attack came hours after President Zelenskyy
+  said in his nightly address that Ukraine had handed US negotiators
+  Steve Witkoff and Jared Kushner new proposals for ending the war,
+  centered on Washington strengthening Ukraine's air defenses and
+  pressuring Russia to actually prepare for an end to the fighting rather
+  than prolonging it; no detail on the proposals' contents has surfaced.
+  This is Ukraine's own offensive action, distinct from Russia's
+  overnight-into-08-12 barrage logged below (8 dead, 57 injured).
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/three-killed-in-overnight-attacks-on-russian-ukrainian-port), [Kyiv Independent](https://kyivindependent.com/drone-attacks-hit-russias-novorossiysk-occupied-crimea/)) ⟨daily 2026-08-12⟩
+
+## 2026-08-11 — Overnight barrage into 08-12: 8 dead, 57 injured across nine scattered oblasts
+
+- **Russia hit Ukraine again overnight into 08-12 with an Iskander-M
+  ballistic missile, a Kh-31P anti-radiation missile, Kh-35 guided
+  air-launched missiles and 138 Shahed-type drones, killing at least 8
+  people and injuring 57 across nine oblasts — Ukrainian air defenses
+  intercepted 112 of the drones.** Casualties were scattered rather than
+  concentrated: 2 killed/3 injured in Odesa Oblast (a strike on an oil
+  tanker truck), 2 killed/14 injured in Kherson Oblast (33 settlements
+  targeted), 2 killed/4 injured in Sumy Oblast, 1 killed/14 injured in
+  Donetsk Oblast, 1 killed/9 injured in Zaporizhzhia Oblast, plus injuries
+  in Kharkiv, Chernihiv, Dnipropetrovsk and Kyiv oblasts. A smaller, more
+  dispersed barrage than 08-10's Zaporizhzhia/Kyiv strike (12 dead,
+  concentrated) rather than a further step up in scale.
+  ([Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-8-injure-57-across-ukraine-over-past-day-as-deadly-strike-hits-oil-tanker-truck-in-odesa-oblast/)) ⟨daily 2026-08-11⟩
+
 ## 2026-08-10 — Russia's Zaporizhzhia/Kyiv barrage; Zelenskyy alleges North Korean missiles
 
 - **Russia's early-Tuesday barrage killed at least 12 people across

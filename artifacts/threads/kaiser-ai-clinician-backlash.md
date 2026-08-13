@@ -13,16 +13,23 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
-## 2026-08-11 — Mediation began today; confirmed absence of a readout, checked directly
+## 2026-08-11 — Mediation began today and closed the digest-day confirmed passed-silent
 
-- **Mediation between Kaiser and NUHW began today, and a direct check of
-  both parties' own channels found no readout yet.** NUHW's news page
-  still tops out at its July 27 post; Kaiser's own mediation page
-  (`about.kaiserpermanente.org`) still shows only its original June 11
-  announcement that the parties agreed to mediate, with nothing added
-  since. This is a confirmed absence rather than a coverage gap —
-  labor-mediation readouts typically surface evening or the next day —
-  but worth stating plainly rather than assumed silent.
+- **Mediation between Kaiser and NUHW began today, and by the time the
+  digest-day closed, a direct check of both parties' own channels — run
+  three separate times across the day — found no readout at all.** NUHW's
+  news page never moved past its July 27 post; Kaiser's own mediation
+  page (`about.kaiserpermanente.org`) never added anything past its
+  original June 11 announcement that the parties agreed to mediate. The
+  `upcoming.yaml` ledger entry (`kaiser-nuhw-mediation-0811`) is now
+  formally flipped to **passed-silent** — the loud outcome this ledger is
+  built to flag rather than an assumed gap: a scheduled mediation session
+  came and went with neither side saying anything publicly, and this same
+  dispute had a mediation round go silent before (2025 precedent). Watch
+  next for whether either side breaks silence in the days after, and
+  whether SB 903's Assembly path (appropriations hearing 08-13) becomes
+  the venue where the AI-replacement language actually gets decided
+  instead.
   ([NUHW](https://home.nuhw.org/news/); [Kaiser labor relations](https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining/nuhw-messages-employees/kaiser-permanente-and-nuhw-move-to-mediation)) ⟨daily 2026-08-11⟩
 
 ## 2026-08-07 — NUHW's fight now named alongside SB 903 in national press

@@ -1,0 +1,179 @@
+# 2026-08-12-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-09) and against the
+# 08-10/08-11 sidecars' own Nvidia/CoreWeave/Moody's entries, which
+# today's items extend directly.
+
+july-cpi-cooled-to-3-4-annually-cutting-the-odds-t:
+  mechanism: >
+    capital-context.yaml's standing `rate_regime` reading already frames
+    the committee as split — a hawkish 9-3 July hold with three dissents
+    FOR a hike, against a 09-16 decision. Today's CPI print is a direct
+    input into that same vote count: a softer inflation read lowers the
+    political and economic cost of holding again, which is exactly what
+    the CME FedWatch move (48% hike odds down to 38-42%) shows the
+    market pricing in real time. This is the mechanism by which a single
+    data print moves a specific, already-tracked committee vote, not a
+    generic "inflation is cooling" story.
+  confidence: likely
+  scenarios:
+    - direction: >
+        Further disinflation data (August jobs, the next PCE read) keeps
+        confirming today's direction before 09-16, and the hawkish
+        dissent bloc's case erodes further — the Fed holds again without
+        a hike, and Warsh's low-guidance regime continues rather than
+        pivoting hawkish.
+      why: >
+        Today's print is already the second soft data point in a row
+        after the 08-07 jobs report (payrolls -23,000 vs. +83-85k
+        consensus) — both land on the same side of the argument, and
+        capital-context.yaml's own framing already reads the jobs miss
+        as "the strongest data point yet to push back on the
+        hike-dissent bloc."
+      precedent: >
+        The same transmission mechanism by which a run of softer US
+        inflation prints through mid-2024 let the Fed hold steady on
+        rates despite hawkish rhetoric earlier that year — a committee
+        vote count moving in response to sustained, not single-print,
+        disinflation evidence.
+    - direction: >
+        Today's cooler print proves a blip against a backdrop of real,
+        still-building price pressure — Brent's own ~10% two-day spike
+        and EPFR's "chipflation" channel (both logged in yesterday's
+        digest) feed through to August/September data, and the hawkish
+        case rebuilds in time for 09-16.
+      why: >
+        July's own energy category still rose 14.7% y/y even as the
+        headline cooled (gasoline +24.6% y/y) — the oil spike this map
+        has tracked since 08-10 hadn't fully worked through the July
+        reference period yet, so a cooler July print doesn't yet reflect
+        it.
+      precedent: >
+        The 2021 "transitory inflation" misread, where early
+        energy-and-goods-driven price spikes were read as temporary by
+        policymakers only to persist and force a much larger tightening
+        response once the transitory framing failed — the live risk any
+        single soft print gets over-read the same way.
+  context_note: >
+    Directly updates `capital-context.yaml`'s `rate_regime` reading,
+    which was last refreshed 2026-08-09 (before this print) and doesn't
+    yet carry today's CME FedWatch move — a candidate line for the next
+    /week-adjacent refresh rather than something to edit directly from
+    /daily.
+
+the-us-brokered-iran-oman-deal-to-reopen-the-strai:
+  mechanism: >
+    This is a genuine decoupling test between geopolitical headline risk
+    and price impact: the diplomatic deal has now definitively failed to
+    land on schedule, and this week separately produced the first fatal
+    Red Sea/Gulf of Oman escalation of the war (yesterday's digest) — yet
+    Brent and WTI both closed essentially flat. The mechanism is
+    physical substitution, not sentiment: Saudi Arabia's own export data
+    shows the Red Sea route down ~90% while the Egypt-Mediterranean
+    pipeline route more than doubled, meaning the market's own read is
+    that the physical disruption this thread has priced since 07-24 is
+    increasingly hedged by an alternate route, even while the political
+    standoff itself gets worse, not better.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The substitution proves durable and the war-risk premium
+        continues eroding even without a deal — alternate routing caps
+        the physical-disruption channel structurally, so further
+        diplomatic setbacks (or even further attacks short of hitting
+        the pipeline route itself) stop moving price the way they did
+        in early August.
+      why: >
+        The reroute is already large in absolute terms (Sidi Kerir
+        volume more than doubling to ~2.3M bpd) and happened fast — this
+        isn't a plan, it's already-observed flow, which is a stronger
+        signal than a stated intention to reroute.
+      precedent: >
+        The 2019 Abqaiq attack on Saudi Aramco processing facilities,
+        where alternate routing and strategic-reserve releases capped
+        both the size and duration of the price spike despite a genuine,
+        large physical supply shock at the source.
+    - direction: >
+        The pipeline route itself becomes a target, or hits a capacity
+        ceiling the market hasn't priced, and any further Red Sea/
+        Hormuz escalation snaps the premium back sharply because the
+        market had priced in a hedge that turns out not to hold at
+        scale.
+      why: >
+        The Mediterranean route is a partial substitute, not a full one
+        — it doesn't restore Bab al-Mandeb transit capacity for
+        non-Saudi shippers, and this week's attacks (six killed) show
+        the Houthis are still capable of imposing real physical risk on
+        vessels that haven't rerouted.
+      precedent: >
+        The 2019 Strait of Hormuz tanker-seizure episode, where war-risk
+        insurance premiums spiked sharply once substitution options were
+        seen by underwriters as exhausted — the same underwriting-layer
+        reaction `capital-context.yaml`'s `conflict_risk_premium`
+        reading already tracks (3-10% of hull value vs. ~0.25%
+        pre-war), which has NOT moved yet on this week's escalation.
+  context_note: >
+    Extends `capital-context.yaml`'s `conflict_risk_premium` reading
+    (asof 2026-08-09) with a genuinely new fact it doesn't yet carry:
+    the structural rerouting response, which is a capital-flow/logistics
+    fact this lens tracks that the reading's current war-narrative
+    framing (sourced mostly from world-news threads) doesn't capture.
+
+lambda-priced-a-917-million-leveraged-loan-led-by:
+  mechanism: >
+    This is the same circular-financing pattern flagged in this map's
+    08-10 Nvidia-MOU interpretation (Nvidia engineering third-party
+    balance sheets to absorb buildout risk), but showing up now at the
+    individual-transaction level rather than the platform-MOU level —
+    and it is the SECOND neocloud (after CoreWeave) confirmed borrowing
+    against Nvidia-tied contracts, which starts to look like a pattern
+    across the sector rather than a CoreWeave-specific structure. Unlike
+    CoreWeave's loan, Lambda's financing closes the circle explicitly:
+    Nvidia is simultaneously Lambda's investor, its exclusive chip
+    supplier, its largest customer (leasing back the compute), and the
+    counterparty this specific loan pays.
+  confidence: likely
+  scenarios:
+    - direction: >
+        Circular vendor-financing becomes the standard model for
+        neocloud GPU procurement, and it holds up because the underlying
+        compute demand is real — the same demand signal Oracle's own
+        stock rally (this digest, above) is reading off CoreWeave's and
+        Nebius's earnings.
+      why: >
+        Order books for Lambda's loan reached nearly $2B against a $917M
+        raise — real investor appetite for this specific structure, not
+        a forced or thin placement.
+      precedent: >
+        The infrastructure-securitization path already cited in this
+        map's 08-10 Nvidia interpretation — toll roads, cell towers, and
+        data centers themselves became their own investable asset class
+        once they proved reliable, structured cash flows, which is the
+        same bet being made here at smaller scale.
+    - direction: >
+        The Bank for International Settlements' own June 2026 warning
+        proves prescient once AI-compute demand growth decelerates —
+        the same GPU collateral pledged across Nvidia's equity stake,
+        its supply contract, and its lease-back commitment becomes hard
+        to unwind cleanly in a restructuring, exactly the "risk of the
+        same asset being pledged multiple times" the BIS named.
+      why: >
+        Nvidia occupying four simultaneous roles in one transaction is
+        an unusually concentrated structure even by this thread's own
+        standard — CoreWeave's lenders are at least a different set of
+        parties than its equity/customer relationships.
+      precedent: >
+        The dot-com-era telecom-equipment vendor-financing wave (Lucent,
+        Nortel, and peers financing customers to buy their own gear),
+        which unwound violently in 2001-2002 once demand growth stalled
+        and the vendors themselves absorbed the resulting credit losses
+        — the closest historical analogy for a chip/equipment maker
+        financing its own customer base at scale.
+  context_note: >
+    Directly extends `ai-buildout-debt-risk` (opened 08-11) with a
+    second confirmed transaction-level data point after CoreWeave's own
+    loan — the thread's own watch question (whether GPU compute behaves
+    like a 20-year infrastructure asset or 3-4-year depreciating
+    equipment) is now testable across two borrowers, not one.

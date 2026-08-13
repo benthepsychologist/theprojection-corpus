@@ -5,6 +5,22 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-12 — Katz vows Israeli troops are "here to stay" in south Lebanon; Salam condemns; September Rome round announced
+
+- **Israeli Defense Minister Israel Katz visited southern Lebanon
+  Wednesday and vowed Israeli troops are "here to stay" in the security
+  zone, saying forces are "destroying the underground infrastructure"
+  and "destroying all the houses" used by Hezbollah — drawing formal
+  condemnation from Lebanese PM Nawaf Salam, who called it "systematic
+  destruction of homes, infrastructure, government buildings and places
+  of worship."** In apparent tension with that hardening ground reality,
+  US mediators and Lebanese President Michel Aoun separately voiced
+  optimism about a fresh round of Rome talks now set for September, after
+  the seventh round closed 08-06 without an agreement. Read alongside
+  08-11's UNIFIL phase-out reporting, this is the diplomatic track
+  sounding more hopeful than the facts on the ground support.
+  ([Times of Israel](https://www.timesofisrael.com/liveblog-august-12-2026/)) ⟨daily 2026-08-12⟩
+
 ## 2026-08-11 — UNIFIL's mandate heads toward a year-end phase-out, already sidelined from the pilot-zone talks
 
 - **UNIFIL's south-Lebanon peacekeeping mandate is heading toward a
