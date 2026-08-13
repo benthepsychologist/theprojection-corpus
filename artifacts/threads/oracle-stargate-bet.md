@@ -15,6 +15,17 @@ confirmation) or CDS move; whether Oracle's RPO-to-revenue conversion
 rate ($76.6B guided vs $67B delivered in FY26) holds; any named
 counterparty breakdown of the OpenAI-linked RPO slice.
 
+## 2026-08-13 — A fresh round of layoffs is drawn up, on top of ~21,000 already cut, as AI capex keeps climbing
+
+- **Oracle has drawn up plans for a fresh round of layoffs this month,
+  on top of the roughly 21,000 jobs already cut in fiscal 2026, while
+  running $55.7B of AI capex.** Business Insider (sources familiar with
+  the plans) reports cuts could run to double-digit percentages on some
+  teams, targeted before September 1 — the same capex-vs-balance-sheet
+  tension this thread opened on, now showing up as a cost-cutting move
+  rather than just a stock-price reaction.
+  ([Business Insider](https://www.businessinsider.com/oracle-is-planning-another-round-of-job-cuts-this-month-2026-8)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — 52-week low to a 5.9% jump, riding CoreWeave's and Nebius's earnings as demand read-across
 
 - **Oracle stock swung from a fresh 52-week low to a 5.9% single-day

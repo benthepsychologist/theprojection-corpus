@@ -1,0 +1,136 @@
+# 2026-08-13-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-09, notably NOT yet
+# refreshed with 08-12's CPI print or today's OPEC/EIA data — see each
+# entry's context_note) and against the 08-12 sidecar's own Iran-Oman
+# entry, which today's item extends directly.
+
+iran-flatly-rejected-trump-s-wednesday-night-claim:
+  mechanism: >
+    This is the same physical-substitution/decoupling mechanism the
+    08-12 sidecar named for the Hormuz standoff, now sharpened by a
+    cleaner natural experiment: Wednesday night produced the hardest
+    rhetorical escalation either side has made on the record (Trump's
+    "total control," Iran's flat rejection the next morning), yet the
+    price that is supposed to track war risk fell, not rose, on the
+    same day. The mechanism doing the work is NOT that the market is
+    ignoring the standoff — it's that two independent, larger physical
+    signals (OPEC's own demand-growth downgrade, a big US inventory
+    build) are dominating the war-risk premium in the price-formation
+    process today. Rhetoric and price are being driven by genuinely
+    different inputs right now, not by the same one.
+  confidence: likely
+  scenarios:
+    - direction: >
+        The fundamentals-dominate pattern holds and repeats: further
+        rhetorical escalation on the Hormuz standoff (from either side)
+        continues to move headlines without moving price, because the
+        market has already priced the standoff as a stalemate with a
+        working physical workaround (Saudi Arabia's Red Sea reroute,
+        logged 08-12) and now reads new rhetoric as no new information.
+      why: >
+        This is now the SECOND time in two days (08-12's muted Brent/
+        WTI reaction to the week's fatal Red Sea escalation, and today's
+        outright decline despite harder rhetoric) that this exact
+        pattern has shown up — a repeat, not a one-off.
+      precedent: >
+        The 2019 Abqaiq attack precedent already cited in the 08-12
+        sidecar: alternate routing and demand-side softness can cap a
+        price response to genuine physical/political escalation when
+        the market judges the disruption itself to be bounded or
+        hedged.
+    - direction: >
+        The OPEC/inventory-driven decline proves temporary and gets
+        overwhelmed the moment either side takes a physical action
+        (a strike on the Mediterranean reroute pipeline, an actual
+        blockade enforcement action) rather than a statement — at which
+        point the war-risk premium reasserts itself sharply BECAUSE it
+        had been suppressed by the demand-side data, not resolved.
+      why: >
+        Iran's own language today ("will not be reopened until Iran's
+        conditions are accepted") is not de-escalatory — it is a harder
+        line than the "very close" framing from earlier in the week
+        (08-12 digest), even though price moved the opposite direction.
+        A rhetoric/price divergence this sharp is itself a setup for a
+        correction if the physical situation moves.
+      precedent: >
+        The 2019 Strait of Hormuz tanker-seizure episode (already cited
+        08-12): war-risk insurance premiums spiked sharply once
+        underwriters judged substitution options exhausted, even after
+        a period where price had been unresponsive to escalating
+        rhetoric.
+  context_note: >
+    capital-context.yaml's `conflict_risk_premium` reading (asof
+    2026-08-09) predates both the 08-12 Trump/Saudi-reroute
+    developments and today's rejection/oil-decline pair — none of this
+    week's Hormuz movement is reflected in the standing snapshot yet.
+    Candidate line for the next /week-adjacent refresh, not something to
+    edit directly from /daily.
+
+anthropic-s-own-investors-are-reportedly-targeting:
+  mechanism: >
+    This is a direct extension of the `anthropic-ipo-timing` thread's
+    core question (valuation vs. the $965B print, per the thread's own
+    watch line) with the first concrete number since that print — and
+    the mechanism worth naming is WHERE the number comes from: not a
+    company statement (Anthropic is in its SEC quiet period and
+    declined to comment) but investor expectation reported by FT,
+    anchored to a specific revenue trajectory ($100-120B annualized by
+    year-end, versus $47B in May). A valuation built on a revenue
+    RUN-RATE more than doubling in seven months is a bet on the growth
+    curve continuing, not a bet on today's numbers — the same kind of
+    forward-multiple bet this map has flagged elsewhere in the AI-
+    buildout story (Oracle's Stargate bet, CoreWeave's backlog).
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The October IPO prices at or near the $2T figure, and it holds
+        or grows post-listing — validating that enterprise/API AI
+        revenue is compounding fast enough to support a valuation this
+        far ahead of trailing revenue, and setting the reference price
+        every other frontier-lab valuation (OpenAI, xAI) gets read
+        against going forward.
+      why: >
+        The revenue trajectory cited is not purely aspirational — it is
+        investor expectation built on Anthropic's own May $47B
+        annualized figure actually materializing into a reported
+        number, and the underwriter syndicate (Morgan Stanley, Goldman
+        Sachs, JPMorgan) is a top-tier bookrunner group unlikely to
+        anchor public price talk this far from a defensible range.
+      precedent: >
+        SpaceX's own record-setting public debut, which this same
+        report explicitly frames Anthropic as trying to eclipse — a
+        recent, direct comparable for the market successfully pricing a
+        pre-IPO growth narrative at a scale well above prior private
+        marks.
+    - direction: >
+        The $2T figure proves to be investor anchoring that gets
+        compressed once real roadshow price discovery starts — FT's own
+        hedge (Anthropic executives have "not fixed a valuation
+        target... even in private conversations") means this number has
+        not been tested against institutional demand yet, and the
+        thread's own listed headwinds (pricing above competitors,
+        June's export controls, the DoD litigation, customer cost
+        sensitivity) are all real, not hypothetical.
+      why: >
+        A valuation move this large (>2x in under three months) without
+        an intervening equity round is unusual even in this cycle —
+        it is backers' expectation, not a transaction, and expectation
+        gaps between backers and roadshow investors are exactly where
+        IPO price ranges get cut.
+      precedent: >
+        The dot-com-era pattern of late-stage private marks compressing
+        significantly at the actual IPO price once public-market
+        investors, rather than existing backers, set the number — the
+        same general risk this map has flagged for other AI-era
+        richly-valued pre-IPO names.
+  context_note: >
+    Directly extends `anthropic-ipo-timing` (opened 07-27, `hit` on the
+    confidential-filing confirmation 08-02) — this is the first reported
+    number since the $965B May print, and updates the
+    `anthropic-ipo-public-flip` upcoming.yaml entry's own October-window
+    framing (previously sourced to a single Bloomberg/CNBC chain calling
+    October "the earliest date under consideration, not locked in") with
+    a second, independent FT sourcing chain naming the same month.

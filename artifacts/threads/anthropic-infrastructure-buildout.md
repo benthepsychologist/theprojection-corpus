@@ -18,6 +18,23 @@ counterparty mix drifting from clouds toward miners and infrastructure
 funds; and the Theseus consumer-electricity commitment, the first
 contractual concession this map has seen a lab make to ratepayer politics.
 
+## 2026-08-13 — A fifth move, but a different shape: an outright acquisition, not a lease
+
+- **Anthropic is reportedly in talks to acquire Israeli AI infrastructure
+  startup Decart for roughly $6B — what would be Anthropic's largest
+  acquisition ever, and its first outright purchase in this run rather
+  than a rental/anchor-tenant arrangement.** Decart builds chip-efficiency
+  and optimization software (plus its own real-time video and
+  robotics-simulation models); Anthropic reportedly wants the technology
+  to help Claude's infrastructure absorb rising demand ahead of a public
+  listing. Answers this thread's own watch question — "whether any
+  arrangement converts to ownership" — in the opposite direction: instead
+  of an existing lease converting to ownership, this would be Anthropic
+  buying the capability outright from the start. Decart had reportedly
+  been close to a deal with Nvidia before higher offers emerged; talks
+  are early-stage and could fall through.
+  ([Fortune](https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/), [Calcalist](https://www.calcalistech.com/ctechnews/article/mrrffazk1)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-11 — Opened (ben-steer)
 
 - **Opened because four arrangements accumulated across three months with

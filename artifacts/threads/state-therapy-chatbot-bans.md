@@ -13,6 +13,20 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-13 — SB 903's suspense-file hearing convenes; outcome still unknown
+
+- **SB 903 is confirmed on Assembly Appropriations' suspense calendar for
+  today's Daily File, but as of this pass the disposition (held on
+  suspense, released, or amended) is not yet known.** The committee's own
+  hearings page lists "S.B.No. 903 Padilla. Mental health professionals:
+  artificial intelligence," Wicks chairing, hearing time "Upon adjournment
+  of Session," Room 1100 — confirming the bill remains alive and treated
+  as a suspense-file matter, consistent with its August 5 hearing.
+  Leginfo's bill-status page had not posted a post-hearing action as of
+  this check, and California's legislature had not yet adjourned session.
+  Feeds the `ca-sb903-assembly` 08-14 fiscal report-out deadline.
+  ([Assembly Appropriations Committee](https://apro.assembly.ca.gov/hearings), [California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — HB 26-1195 takes effect: the flip, not just the check
 
 - **Colorado's HB 26-1195 took effect today — the country's first law

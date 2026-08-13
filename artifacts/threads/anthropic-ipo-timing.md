@@ -12,6 +12,28 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-13 — Investors reportedly target a $2T-plus October valuation, and a separate $6B acquisition is in talks
+
+- **Anthropic's own investors are reportedly targeting a $2 trillion
+  valuation, or higher, for an October IPO — more than double the $965B
+  private-market print this thread has carried since May.** The
+  Financial Times reports "half a dozen" backers expect annualized
+  revenue to reach $100-120B by year-end (versus $47B in May); Anthropic
+  itself declined to comment and is in its SEC quiet period, so this is
+  investor expectation, not a company-confirmed number. Morgan Stanley,
+  Goldman Sachs and JPMorgan are leading the offering.
+  ([Yahoo Finance/FT](https://finance.yahoo.com/technology/ai/articles/anthropic-investors-target-2-trillion-132255261.html)) ⟨daily 2026-08-13⟩
+- **Separately, Anthropic is reported in advanced talks to acquire
+  Israeli AI startup Decart for roughly $6 billion** — what would be its
+  largest acquisition, days before the valuation report above. Decart
+  makes compute-efficiency infrastructure software; Bloomberg's report
+  (neither company confirmed; deal "could fall through") puts the price
+  at ~50% over Decart's own ~$4B May valuation. This conflicts with an
+  earlier 08-09/10 report naming SpaceX, not Anthropic, as Decart's
+  buyer (tracked on `attention/upcoming.yaml`'s `decart-acquisition-close`
+  entry) — an open buyer question, not yet resolved either way.
+  ([Yahoo Finance/Bloomberg](https://finance.yahoo.com/technology/ai/articles/anthropic-talks-acquire-israeli-ai-121409676.html)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-02 — The confidential filing is confirmed, and it happened two months ago
 
 - **Anthropic confidentially submitted a draft Form S-1 registration

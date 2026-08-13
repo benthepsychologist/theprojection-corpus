@@ -33,6 +33,20 @@ substantial enough to carry on its own.
   This is Ukraine's own offensive action, distinct from Russia's
   overnight-into-08-12 barrage logged below (8 dead, 57 injured).
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/three-killed-in-overnight-attacks-on-russian-ukrainian-port), [Kyiv Independent](https://kyivindependent.com/drone-attacks-hit-russias-novorossiysk-occupied-crimea/)) ⟨daily 2026-08-12⟩
+- **Closing the day: overnight into 08-13, Russia hit Ukraine with 133
+  Shahed-type drones (111 intercepted), killing at least 8 and injuring
+  50 — including the driver and conductor of a passenger train struck by
+  a jet-powered attack drone in Odesa Oblast (no passengers hurt) — while
+  Ukraine struck deep into Russia, hitting the Gazprom Neftekhim Salavat
+  refinery in Bashkortostan, 1,300km from the border.** Regional
+  casualty breakdown: Kherson Oblast 3 dead/19 injured (28 settlements
+  targeted), Donetsk 2 dead/6 injured, Zaporizhzhia 1 dead/4 injured,
+  plus injuries in Sumy, Kharkiv, Dnipropetrovsk and Chernihiv (a
+  10-year-old girl among the injured). The refinery — one of Russia's
+  largest, ~10M tons/year capacity — was previously struck by Ukraine on
+  07-14; no casualty/damage figures confirmed yet. Both sides closed the
+  day trading blows rather than de-escalating.
+  ([Kyiv Independent](https://kyivindependent.com/train-crew-killed-as-russian-attacks-kill-at-least-8-injure-50-across-ukraine-over-past-day/), [Kyiv Independent](https://kyivindependent.com/russian-gazprom-oil-refinery-1-300-km-from-ukraine-hit-general-staff-confirms/)) ⟨daily 2026-08-12⟩
 
 ## 2026-08-11 — Overnight barrage into 08-12: 8 dead, 57 injured across nine scattered oblasts
 

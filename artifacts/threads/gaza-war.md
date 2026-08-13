@@ -39,6 +39,32 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-13 — Second targeted strike this week hits a Hamas commander in Khan Younis; West Bank siege draws a US "act of terror" charge
+
+- **Israel's military carried out its second targeted strike this week —
+  after a seven-day pause broken 08-12 — killing a man in Khan Younis it
+  described as a Hamas company commander "planning attacks on Israeli
+  forces," while Palestinian media separately reported one death from an
+  Israeli strike on a motorcycle in the same area (IDF had not commented
+  on that second incident).** This continues the pattern logged 08-12:
+  strikes resuming inside the same disarmament-sequencing dispute, with
+  peace-plan mediators pushing Israel to halt targeted operations to
+  protect the process while Netanyahu holds to full disarmament before
+  any withdrawal.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/)) ⟨daily 2026-08-13⟩
+- **Separately, a four-day-old siege of Palestinian homes in Qusra
+  village (south of Nablus, West Bank) drew a US diplomatic rebuke: US
+  Ambassador Mike Huckabee called it "a horrific act of terror,"
+  intimidation meant to force residents out.** Israeli settlers blocked
+  three families' homes with rocks and tents, cutting water, electricity
+  and supply access; the IDF said it dismantled two illegal outposts on
+  Qusra's outskirts, confiscated equipment, and detained one Israeli, and
+  separately issued (then reportedly walked back) an evacuation order
+  covering 15 Palestinian homes — local residents said six families had
+  already left before the reversal. No injuries reported. Continues the
+  West Bank friction first noted alongside 08-12's Beit Lahiya strike.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/us-diplomat-calls-israeli-settler-siege-of-west-bank-homes-act-of-terror), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — First announced targeted strike since 08-03 hits a Hamas commander in Beit Lahiya
 
 - **Israel's military carried out its first announced targeted strike in

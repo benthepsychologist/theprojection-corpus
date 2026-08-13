@@ -982,16 +982,27 @@ expectations:
     status: pending
 
   - id: decart-acquisition-close
-    claim: "Israeli real-time-video AI startup Decart is acquired for $6-7B, reportedly by SpaceX"
+    claim: "Israeli real-time-video AI startup Decart is acquired for ~$6B — reportedly by Anthropic as of 08-13 (its largest-ever acquisition, a pre-IPO infrastructure move), superseding the original 08-09 report naming SpaceX"
     due: 2026-08-17
-    due_precision: week    # sourcing said "next week" from an 08-09/10 report
+    due_precision: week    # sourcing said "next week" from an 08-09/10 report; unchanged by the buyer correction
     thread: null
-    entities: [spacex]
+    entities: [anthropic]
     source: https://www.calcalistech.com/ctechnews/article/hjhzrluuml
     confidence: reported
-    what_confirms: "deal closes and buyer is confirmed — SpaceX as currently reported, or Amazon/Nebius instead"
+    what_confirms: "deal closes and buyer is confirmed"
     logged: 2026-08-09
     logged_by: curate-add
+    # 2026-08-13 ⟨daily⟩: BUYER CORRECTED, not just updated. Two independent
+    # lens agents (frontier-ai, global-capital) converged the same run on a
+    # Bloomberg report naming ANTHROPIC, not SpaceX, as the party in talks to
+    # acquire Decart for ~$6B — and the frontier-ai pass separately found
+    # Musk has publicly denied SpaceX will be the acquirer. The original
+    # 08-09 source (Calcalist) is retained as the earliest sighting of the
+    # deal itself; the buyer identity within it is now superseded. entities
+    # flipped spacex -> anthropic on that basis. Neither buyer is confirmed
+    # by either company directly — this is still "in talks" reporting, not
+    # a signed deal, so status stays pending and the due date (deal closing
+    # "next week" per the original report) is unchanged.
     status: pending
 
   - id: moonshot-hk-ipo-filing

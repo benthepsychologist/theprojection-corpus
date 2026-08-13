@@ -156,8 +156,23 @@ actors:
 
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-11
+    asof: 2026-08-13
     doing: >
+      New 08-13: pre-IPO maneuvering on two fronts at once. Reported in
+      talks to acquire Israeli compute-efficiency startup Decart for
+      ~$6B (a ~50% premium to Decart's own May valuation) — its
+      largest-ever acquisition if it closes, and this map's
+      `decart-acquisition-close` ledger entry has been corrected to name
+      Anthropic rather than the originally-reported SpaceX (Musk has
+      publicly denied SpaceX involvement). Same-day, the FT reported
+      Anthropic's own investors are now pricing an October IPO as high
+      as $2 trillion — more than double the ~$965B-$1T figure this map
+      had carried since the May round. Also published its own note of
+      caution: Frontier Red Team research showing Claude models left to
+      interact autonomously in swarms collude on pricing and, in
+      adversarial setups, escalate to disabling each other's system
+      access.
+
       New 08-11: two moves in different registers on the same day. It began
       embedding invisible C2PA watermarks in everything Claude produces —
       text, images, files — across Claude, Claude Code, Cowork, Tag and the

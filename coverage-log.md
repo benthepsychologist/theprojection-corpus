@@ -2824,3 +2824,94 @@ items overall — a noisy run, not an outage. `gdelt` needed heavy 429
 backoff on several terms (Google DeepMind, xAI, Meta AI, Safe
 Superintelligence all fully dropped after 3 retries) but the collector as a
 whole still returned 97 items.
+
+## 2026-08-13 critic pass — finalized 2026-08-12 (all three critic-bearing
+lenses; world-news carries none by design)
+
+Run ~4.6h after the digest-day closed (05:00 ET 08-13) — inside the
+normal finalize window. Four sonnet agents, one per lens, each finalized
+08-12 with its own critic pass and built 08-13 today-so-far.
+
+### ai / 2026-08-12
+- **Two real misses.** TLDR AI led with Nvidia's Nemotron 3.5 Lightning
+  model + NeMo Switchyard (an agent-routing library) and Microsoft's
+  MAI-Code-1.1-Flash update — neither caught by the original pass.
+- **A judgment call worth keeping as a pattern note:** a heavy overnight
+  newswire wave of "DeepMind leadership shakeup" / "Hassabis pitched an
+  AI-oversight body" stories read as fresh but were confirmed, on
+  primary-source dates, to be recirculation — TechCrunch dates Hassabis's
+  public oversight-body call to 07-14, the-decoder.com dates the actual
+  CEO-to-chair transition to 08-05/09. Documented explicitly rather than
+  silently dropped or, worse, silently re-reported as new.
+- **We had, they didn't:** Thrive Holdings' OpenAI-backed $2B raise at a
+  $12B valuation, folded in during finalize.
+
+### global-capital / 2026-08-12
+- **Partial check — WebSearch exhausted mid-pass.** The shared 200-call
+  session budget ran out before Money Stuff or Bloomberg Technology could
+  be checked directly; the agent fell back to Bing-via-WebFetch, which
+  worked for open-web stories but couldn't reach either paywalled
+  archive. Disclosed honestly in both digests rather than claimed clean.
+  Same recurring friction this file has logged three sessions running
+  now (08-04/05/06) — still no structural fix, still absorbed per-run.
+- **Real finds, not benchmark-sourced:** Lambda's GPU-financing loan
+  repriced at final terms ($926M vs. the preliminary $917M, tightened to
+  SOFR+300bps, Moody's Baa2 — the first investment-grade Term Loan B a
+  private neocloud has carried); a live claim conflict on the map itself
+  (see below).
+- **A ledger claim corrected, not just updated:** `decart-acquisition-close`
+  named SpaceX as Decart's buyer (08-09 report); both this lens and the
+  ai lens independently converged the same run on Bloomberg reporting
+  Anthropic instead, with Musk publicly denying SpaceX involvement.
+  Corrected in `upcoming.yaml`, original source retained, buyer identity
+  flagged unconfirmed by either company (still "in talks," not a signed
+  deal).
+
+### mental-health / 2026-08-12
+- **One real miss, self-caught: HHS's "treatment first" addiction
+  toolkit** (STAT), explicitly rejecting harm-reduction/housing-first
+  doctrine by name — missed by the original pass, caught checking STAT's
+  actual 08-12 output.
+- **Found independently, no benchmark carried it — the most significant
+  single item this pass produced across any lens:** a Middlesex County,
+  MA prosecutor has publicly tied a 17-year-old's double homicide of his
+  mother and brother to his ChatGPT use (searches for "theoretical ideas
+  or fantasy stories regarding the killing of his family," per the DA's
+  own statement). First case on this map tying a *general-purpose*
+  chatbot, not a therapy/companion product, to a completed killing of a
+  third party — a genuinely new pattern, not a repeat of the
+  suicide-focused cases already tracked (`sev=major`). None of the four
+  trade benchmarks carried it — it's a Boston-regional crime story, only
+  surfaced by broadening past the standard benchmark set during finalize.
+- **A real, correctly-cautious non-resolution:** `ca-sb903-appropriations-
+  hearing`, due today, checked directly against Assembly Appropriations'
+  own hearings page and leginfo — the bill sits on today's suspense
+  calendar but California's legislature had not yet adjourned session as
+  of the check, which is the hearing's own trigger condition. Left
+  `pending` rather than guessed at.
+
+### world-news / 2026-08-12 (no critic — carries `coverage: na` by design)
+- Finalize pass ran entirely on direct WebFetch (Al Jazeera, Kyiv
+  Independent, Times of Israel) rather than WebSearch — that budget was
+  already exhausted before this pass started, same shared-budget
+  friction as global-capital's note above. Three developments folded in:
+  IRGC Quds Force commander Qaani lobbying Iraq against its militia-
+  disarmament deadline (a new Iraq front on `iran-conflict-widening`), a
+  Pentagon review disclosing 153 Yemeni civilians killed in 2025 US
+  strikes, and the digest-day's actual close (a 133-Shahed overnight
+  barrage into Ukraine, 8 dead, answered by a Ukrainian strike on a
+  Russian refinery 1,300km from the border).
+
+### Collection note: `lda` fully blocked again (143/143 terms, HTTP 403)
+— now filed to kestrel's INBOX as of yesterday's pass, not a new finding.
+Otherwise a clean 18-collector run.
+
+### Structural friction, now worth naming plainly rather than absorbing
+again: **the shared session-wide WebSearch budget (200 calls) was
+exhausted by TWO of four parallel lens agents this pass** (global-capital,
+world-news), each falling back to WebFetch-via-search-engine for the
+remainder of their research. Both still reached a reasonable sourcing
+bar, but this is now a recurring, dated pattern (08-04, 08-05, 08-06,
+and now 08-13) rather than a one-off — the fix each time has been
+absorbing it mid-run, never a structural change to the budget itself or
+how four parallel agents share it.

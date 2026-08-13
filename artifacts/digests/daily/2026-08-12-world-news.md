@@ -1,27 +1,32 @@
 ---
 lens: world-news
 date: 2026-08-12
-status: building
+status: final
 window_start: 2026-08-12T05:00:00-04:00
-as_of: 2026-08-12T21:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-12
 
-*Digest-day ~16h in, built from a cold start — no curation had touched
-this digest-day before this pass. Curated agentic-interim:
-`attention/world-news.yaml`'s mechanical GDELT/Google-News sweep (21
-candidate/confirmed items, regenerated this session against the 08-11 to
-08-13 window) used as the lead list, each item WebSearch/WebFetch-verified
-against primary/wire sources — Al Jazeera, CNBC (via mirrors; direct
-cnbc.com fetches 403'd this session), Al-Monitor, Kyiv Independent, Times
-of Israel, Bloomberg (via secondary republication where the original
-403'd). Two Aug-11-dated developments are carried here rather than in the
-already-finalized 08-11 digest, per this session's brief: the Houthi Bab
-el-Mandeb attack and Trump's "100%/total control" Hormuz claims both
-cluster with Wednesday (08-12) statements and reactions, so splitting the
-same story across two files would have fragmented it.*
+*Built from a cold start — no curation had touched this digest-day
+before the interim pass. Curated agentic-interim:
+`attention/world-news.yaml`'s mechanical GDELT/Google-News sweep used as
+the lead list, each item WebSearch/WebFetch-verified against
+primary/wire sources — Al Jazeera, CNBC (via mirrors; direct cnbc.com
+fetches 403'd), Al-Monitor, Kyiv Independent, Times of Israel, Bloomberg
+(via secondary republication where the original 403'd). Two Aug-11-dated
+developments are carried here rather than in the already-finalized 08-11
+digest, per that session's brief: the Houthi Bab el-Mandeb attack and
+Trump's "100%/total control" Hormuz claims both cluster with Wednesday
+(08-12) statements and reactions, so splitting the same story across two
+files would have fragmented it. **Finalize pass (2026-08-13):** extended
+through the actual 05:00 ET close via direct WebFetch against Al Jazeera
+and Kyiv Independent (WebSearch was unavailable this session — its
+budget was already exhausted before this pass started) — three further
+dated developments found: Iran's Quds Force chief lobbying against Iraq's
+militia-disarmament deadline, a Pentagon review of 2025 Yemen civilian
+casualties, and a further overnight Russia-Ukraine exchange closing out
+the day. Day complete; `status: final`.*
 
 ## Today's throughline
 
@@ -45,7 +50,16 @@ Kyiv has handed the US new peace proposals, and — outside this lens's six
 tracked conflict threads — Colombia's earthquake toll passed 265 with an
 economic emergency declared, and a previously uncaptured story surfaced
 on this sweep: the DRC's Ebola outbreak, the fastest-spreading on record,
-just passed 2,000 deaths.
+just passed 2,000 deaths. **Finalize pass, extending to the actual close:**
+Iran's regional-proxy track widened further as IRGC Quds Force
+commander Esmail Qaani lobbied Iraqi officials against Baghdad's
+September 30 deadline to disarm Shia militias, a Pentagon review
+disclosed that 2025 US strikes in Yemen killed 153 civilians (accountability
+context for the still-live Houthi blockade fight), and the day closed
+with both sides trading further blows overnight: Russia hit Ukraine with
+133 Shahed-type drones (8 dead, 50 injured, including a train crew killed
+in Odesa Oblast) while Ukraine struck a major Russian oil refinery 1,300km
+from the border.
 
 ## Items
 
@@ -90,6 +104,34 @@ just passed 2,000 deaths.
   approaching an Iranian port — the third vessel CENTCOM has disabled and
   the 55th it has redirected since the blockade's July 14 reimposition.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says), [Al Jazeera](https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade))
+  <!-- k: t=iran-conflict-widening axis=world-news -->
+
+- **[Finalize catch] IRGC Quds Force commander Esmail Qaani visited Iraq
+  to lobby against Baghdad's push to disarm Iran-aligned Shia militias by
+  a September 30 deadline, with Iran conveying there should be "no
+  handing over of weapons of the factions at the present time."** Iraqi
+  PM Ali al-Zaidi is pursuing state monopoly on arms — folding Kataib
+  Hezbollah and Harakat al-Nujaba (both part of the Coordination
+  Framework Shia political bloc) under government control, aligned with
+  a 2024 US-led coalition agreement and backed by the US and Saudi
+  Arabia. This is a new front in the widening conflict distinct from the
+  Hormuz/Red Sea track above: a direct Iraq-sovereignty-vs-Tehran-influence
+  standoff that risks its own escalation if the deadline is forced.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/top-iranian-commander-visited-iraq-to-discuss-disarmament-plan-source))
+  <!-- k: t=iran-conflict-widening axis=world-news -->
+
+- **[Finalize catch] A Pentagon review disclosed that US strikes in
+  Yemen killed 153 civilians and wounded 243 in 2025 — all from three
+  April 2025 strikes on Houthi targets, the deadliest a Ras Isa fuel-port
+  attack that killed 80 — a sharp jump from just two civilian deaths
+  assessed in 2024.** The unclassified review, first reported by NBC
+  News, surfaced 08-12 and will go to Congress in coming months; the
+  Pentagon found the strikes "more likely than not" caused civilian harm
+  but concluded condolence payments were not warranted. CENTCOM said the
+  strikes were "not intended to harm the people of Yemen," targeting
+  Houthi fuel supplies and revenue. Accountability-track context for the
+  still-live blockade fight above rather than a new dated combat event.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/us-strikes-in-yemen-killed-153-civilians-in-2025-says-pentagon-review))
   <!-- k: t=iran-conflict-widening axis=world-news -->
 
 - **Israel's military carried out its first announced targeted strike in
@@ -137,6 +179,23 @@ just passed 2,000 deaths.
   on the 08-11 finalize (8 dead, 57 injured) — this is Ukraine's own
   offensive action, not a further Russian strike.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/three-killed-in-overnight-attacks-on-russian-ukrainian-port), [Kyiv Independent](https://kyivindependent.com/drone-attacks-hit-russias-novorossiysk-occupied-crimea/))
+  <!-- k: t=russia-ukraine-war axis=world-news -->
+
+- **[Finalize catch, closing the day] Overnight into 08-13, Russia hit
+  Ukraine with 133 Shahed-type drones (111 intercepted), killing at
+  least 8 and injuring 50 — including the driver and conductor of a
+  passenger train struck by a jet-powered attack drone in Odesa Oblast
+  (no passengers hurt) — while Ukraine struck deep into Russia, hitting
+  the Gazprom Neftekhim Salavat refinery in Bashkortostan, 1,300km from
+  the border.** Regional casualty breakdown: Kherson Oblast 3 dead/19
+  injured (28 settlements targeted), Donetsk 2 dead/6 injured,
+  Zaporizhzhia 1 dead/4 injured, plus injuries in Sumy, Kharkiv,
+  Dnipropetrovsk and Chernihiv (a 10-year-old girl among the injured).
+  The refinery — one of Russia's largest, ~10M tons/year capacity — was
+  previously struck by Ukraine on 07-14; no casualty/damage figures
+  confirmed yet. Both sides closed the digest-day trading blows rather
+  than de-escalating, consistent with the day's broader direction.
+  ([Kyiv Independent](https://kyivindependent.com/train-crew-killed-as-russian-attacks-kill-at-least-8-injure-50-across-ukraine-over-past-day/), [Kyiv Independent](https://kyivindependent.com/russian-gazprom-oil-refinery-1-300-km-from-ukraine-hit-general-staff-confirms/))
   <!-- k: t=russia-ukraine-war axis=world-news -->
 
 - **Colombia's earthquake death toll rose to 265 with 496 officially
@@ -203,6 +262,9 @@ just passed 2,000 deaths.
 - `~ threads/iran-conflict-widening` — real development (Trump/PGSA
   control dispute, Houthi Bab el-Mandeb attack, Vela Nova blockade
   enforcement, SNSC demands backfilled); timeline entry written.
+  **Finalize pass:** two further bullets added to the same 08-12 block —
+  Qaani's Iraq-disarmament lobbying and the Pentagon Yemen civilian-
+  casualties review.
 - `~ threads/gaza-war` — real development (first targeted strike since
   08-03); timeline entry written.
 - `~ threads/israel-lebanon-escalation` — real development (Katz "here to
@@ -211,8 +273,12 @@ just passed 2,000 deaths.
 - `~ threads/russia-ukraine-war` — real development (Novorossiysk/Crimea
   strikes, Zelenskyy's proposals to US negotiators); timeline entry
   written, distinct from the overnight barrage already logged 08-11.
+  **Finalize pass:** one further bullet added to the same 08-12 block —
+  the overnight-into-08-13 barrage/refinery-strike exchange that closed
+  the digest-day.
 - `~ threads/horn-of-africa-war`, `~ threads/europe-migration-schengen` —
-  ambient `last_seen` bumps only; no new dated development found.
+  ambient `last_seen` bumps only; no new dated development found, on
+  either the interim or finalize pass.
 - No map edit for the Colombia earthquake or DRC Ebola items — neither
   matches a tracked thread slug and this lens doesn't own
   `attention/threads.yaml`; both offered as thread candidates below.
@@ -252,10 +318,15 @@ demands are met — and shipping data backs Iran, with traffic near a
 three-month low as the Hormuz deal formally slipped today. The blockade
 turned lethal for the first time since February, with a Houthi attack
 killing six on a Red Sea cargo ship and separately the US Navy disabling
-a vessel that tried to run the blockade. Israel's defense minister vowed
-troops are staying in south Lebanon, Israel struck a Hamas commander in
-Gaza for the first time since 08-03, and Ukraine hit a Russian Black Sea
-port and Crimea overnight while handing Washington new peace proposals.
-Outside this lens's usual threads, Colombia's earthquake toll passed 265
-with an economic emergency declared, and the DRC's Ebola outbreak — the
-fastest-spreading on record — quietly passed 2,000 deaths.
+a vessel that tried to run the blockade; Iran's proxy fight widened into
+Iraq too, with its Quds Force chief lobbying against a militia-disarmament
+deadline, while a Pentagon review disclosed 153 Yemeni civilians killed by
+US strikes last year. Israel's defense minister vowed troops are staying
+in south Lebanon, Israel struck a Hamas commander in Gaza for the first
+time since 08-03, and Ukraine hit a Russian Black Sea port and Crimea
+overnight while handing Washington new peace proposals — then both sides
+traded further blows overnight into 08-13, Russia killing 8 with drones
+including a train crew, Ukraine striking a major refinery deep inside
+Russia. Outside this lens's usual threads, Colombia's earthquake toll
+passed 265 with an economic emergency declared, and the DRC's Ebola
+outbreak — the fastest-spreading on record — quietly passed 2,000 deaths.

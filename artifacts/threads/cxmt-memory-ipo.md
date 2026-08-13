@@ -2,7 +2,7 @@
 thread: cxmt-memory-ipo
 title: "CXMT IPO"
 lens: global-capital   # corrected 2026-08-02 — was `money`, stale since the 2026-07-30 rename
-entities: []
+entities: [cxmt]   # entity gap closed — CXMT added to attention/watchlist.yaml (ben-steer 07-24); note below was stale
 opened: 2026-07-22
 crawled: 2026-07-22
 ---
@@ -12,7 +12,15 @@ crawled: 2026-07-22
 *Watch:* Up-to-$9.8B STAR Market listing (lists 07-27); first-day
 reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
-(Entity gap: CXMT isn't a watchlist org — steering ask open.)
+
+## 2026-08-13 — CXMT overtakes Tencent to become China's most valuable listed company, 17 days after its IPO
+
+- **CXMT overtook Tencent to become China's most valuable listed
+  company, at a $524B market cap, 17 days after its own IPO.** The rally
+  is attributed to strong investor demand for AI-linked names generally
+  — the same HBM/DRAM shortage story (`ai-memory-shortage`) and the
+  Apple sourcing-test angle logged 08-09 below.
+  ([Free Press Journal](https://www.freepressjournal.in/business/memory-chip-maker-cxmt-overtakes-tencent-as-chinas-most-valuable-company)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-09 — Apple tests CXMT memory as Beijing pivots to capital markets to fund AI champions
 

@@ -22,7 +22,22 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
-## 2026-08-12 — The Hormuz deal slips; Saudi Arabia reroutes around the Red Sea entirely; oil barely moves
+## 2026-08-13 — Iran rejects Trump's "total control" claim; oil falls anyway on OPEC's demand-cut and a big inventory build
+
+- **Iran flatly rejected Trump's overnight claim to "total control" of
+  the Strait of Hormuz, while oil prices fell on demand-side
+  fundamentals unrelated to the standoff.** Iran's military spokesman
+  Ebrahim Zolfaghari said the strait is "under the complete management
+  and control of the Islamic Republic of Iran"; the Persian Gulf Strait
+  Authority said it "will not be reopened until Iran's conditions are
+  accepted." Brent fell to $87.98/bbl (-1.15%) and WTI to $83.27/bbl on
+  OPEC's fourth consecutive downward revision to 2026 demand growth
+  (now 580,000 bpd) plus a 17.4M-barrel US inventory build — the second
+  straight day this thread has logged rhetoric hardening while price
+  moves the other way.
+  ([CBS News](https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-donald-trump-tehran-control-threatens-keep-it/)) ⟨daily 2026-08-13⟩
+
+## 2026-08-12 — The Hormuz deal slips; Saudi Arabia reroutes around the Red Sea entirely; Trump claims "total control" that evening
 
 - **The US-brokered Iran-Oman deal to reopen the Strait of Hormuz
   officially slipped past its ~08-12 due window with no signature, while
@@ -38,6 +53,15 @@ itself (who's fighting whom, where it's widening) — see
   exports through the Egypt-Mediterranean pipeline route (Sidi Kerir)
   more than doubled to ~2.3M bpd.
   ([CNBC](https://www.cnbc.com/2026/08/12/saudi-arabia-iran-oil-red-sea-houthi-suez-canal-strait-hormuz.html)) ⟨daily 2026-08-12⟩
+- **Late that evening Trump escalated on Truth Social, claiming the US
+  has "total control over the Strait of Hormuz" and "I THINK WE WILL
+  KEEP IT!"** — a claim to outright control rather than a negotiated
+  reopening, sharper than anything either side had said on the record
+  before. Strait transits had already thinned to 8 vessels the prior day
+  (08-11), the lowest daily count since 08-05 against a ~12-vessel
+  10-day average. Iran had not responded as this digest-day's window
+  closed.
+  ([CBS News](https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-donald-trump-tehran-control-threatens-keep-it/)) ⟨daily 2026-08-13⟩
 - **Brent and WTI both closed effectively flat ($88.98 and $83.27, +$0.07
   each) despite this week's fatal Red Sea/Gulf of Oman escalation** —
   the first time this thread has recorded a muted price reaction to a

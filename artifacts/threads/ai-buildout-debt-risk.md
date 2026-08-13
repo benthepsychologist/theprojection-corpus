@@ -18,24 +18,31 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
-## 2026-08-12 — A second neocloud shows the same circular-financing shape: Lambda prices $917M against Nvidia's own compute
+## 2026-08-12 — A second neocloud shows the same circular-financing shape, and closes the day with a first: an investment-grade rating
 
-- **Lambda priced a $917 million leveraged loan — led by Morgan Stanley,
-  nearly $2B oversubscribed — to buy the Nvidia GPUs that Nvidia itself
-  is both financing and leasing back.** The loan (S+375bps, priced at 99
-  cents, 4.4-year maturity with full amortization) funds Lambda's side
-  of a ~$1.5B, 18,000-server contract under which Nvidia leases back the
-  compute it sold — meaning Nvidia sits simultaneously as Lambda's
-  investor, chip supplier, largest customer, and counterparty to the
-  debt that pays for all three. The Bank for International Settlements
-  flagged this exact structure — echoing Google's own TPU model — in a
-  June 2026 warning that vendor-financed circular deals are "typically
-  poorly disclosed, with risks of the same asset being pledged multiple
-  times." Second confirmed transaction-level data point in this thread,
-  after CoreWeave's own loan — the watch question (20-year
-  infrastructure asset vs. 3-4-year depreciating equipment) is now
-  testable across two borrowers, not one.
-  ([The Next Web](https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-12/ai-cloud-provider-lambda-prices-loan-for-nvidia-tied-chip-deal)) ⟨daily 2026-08-12⟩
+- **Lambda's Nvidia-GPU loan priced at a final $926 million — led by
+  Morgan Stanley, nearly $2B oversubscribed — to buy the Nvidia GPUs
+  that Nvidia itself is both financing and leasing back, and picked up a
+  Moody's Baa2 rating: the first investment-grade Term Loan B a private
+  neocloud has carried.** Final terms (SOFR+300bps, tightened 75bps
+  during syndication, 99.5 cents, maturing 2030-12-31 with full
+  amortization) came in bigger and tighter than the $917M/S+375bps
+  preliminary terms reported earlier the same day. The loan funds
+  Lambda's side of a ~$1.5B, 18,000-server contract under which Nvidia
+  leases back the compute it sold — meaning Nvidia sits simultaneously
+  as Lambda's investor, chip supplier, largest customer, and
+  counterparty to the debt that pays for all three. The Bank for
+  International Settlements flagged this exact structure — echoing
+  Google's own TPU model — in a June 2026 warning that vendor-financed
+  circular deals are "typically poorly disclosed, with risks of the same
+  asset being pledged multiple times." Second confirmed
+  transaction-level data point in this thread, after CoreWeave's own
+  loan — and the Baa2 rating is the first sign a rating agency, not just
+  syndicate demand, is willing to treat this exact structure as
+  investment-grade; the watch question (20-year infrastructure asset vs.
+  3-4-year depreciating equipment) is now testable across two borrowers,
+  not one.
+  ([The Next Web](https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-12/ai-cloud-provider-lambda-prices-loan-for-nvidia-tied-chip-deal), [Yahoo Finance/Lambda release](https://finance.yahoo.com/technology/ai/articles/lambda-prices-926-million-senior-202000064.html)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-11 (later) — CoreWeave's own Q2 print puts backlog growth and financing cost in the same quarter for the first time
 

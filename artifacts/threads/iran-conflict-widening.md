@@ -24,6 +24,20 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-13 — Araghchi warns of a "bigger miscalculation"; Basij commander claims the strait "under Iran's control"
+
+- **Iran's Foreign Minister Abbas Araghchi said the US had already
+  "miscalculated" over the Iran war due to intelligence failures and
+  warned Washington risks a "bigger miscalculation" over the Strait of
+  Hormuz, while Basij Organisation commander Hossein Taeb (IRGC-affiliated
+  paramilitary) asserted the strait "is under Iran's control and
+  management."** This directly contradicts Trump's 08-12 "100% US Navy
+  control" claim rather than settling it — the standoff is now a direct
+  rhetorical clash between the two sides' most senior voices, not just
+  agency-level statements (PGSA vs. Trump on 08-12), with no new shipping
+  data yet to arbitrate the competing claims.
+  ([Al Jazeera liveblog](https://www.aljazeera.com/news/liveblog/2026/8/13/iran-war-live-us-and-iran-exchange-opposing-claims-over-hormuz-control)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — Trump/Iran trade "total control" claims as deal slips; Houthi attack kills six; blockade turns lethal
 
 - **Trump declared "I THINK WE WILL KEEP IT!" of the US Navy's "100%"
@@ -59,6 +73,29 @@ concrete.
   the third vessel CENTCOM has disabled and the 55th it has redirected
   since the blockade's July 14 reimposition.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/six-killed-in-houthi-attack-on-bab-al-mandeb-ship-yemens-government-says), [Al Jazeera](https://www.aljazeera.com/news/2026/8/11/us-military-fires-on-cargo-vessel-it-said-sought-to-break-iran-blockade)) ⟨daily 2026-08-12⟩
+- **IRGC Quds Force commander Esmail Qaani visited Iraq to lobby against
+  Baghdad's push to disarm Iran-aligned Shia militias by a September 30
+  deadline, conveying there should be "no handing over of weapons of the
+  factions at the present time."** Iraqi PM Ali al-Zaidi is pursuing state
+  monopoly on arms — folding Kataib Hezbollah and Harakat al-Nujaba (both
+  part of the Coordination Framework Shia political bloc) under
+  government control, aligned with a 2024 US-led coalition agreement and
+  backed by the US and Saudi Arabia. A new front distinct from the
+  Hormuz/Red Sea track: a direct Iraq-sovereignty-vs-Tehran-influence
+  standoff that risks its own escalation if the deadline is forced.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/top-iranian-commander-visited-iraq-to-discuss-disarmament-plan-source)) ⟨daily 2026-08-12⟩
+- **A Pentagon review disclosed that US strikes in Yemen killed 153
+  civilians and wounded 243 in 2025 — all from three April 2025 strikes
+  on Houthi targets, the deadliest a Ras Isa fuel-port attack that killed
+  80 — a sharp jump from just two civilian deaths assessed in 2024.** The
+  unclassified review, first reported by NBC News, surfaced 08-12 and
+  will go to Congress in coming months; the Pentagon found the strikes
+  "more likely than not" caused civilian harm but concluded condolence
+  payments were not warranted. CENTCOM said the strikes were "not
+  intended to harm the people of Yemen," targeting Houthi fuel supplies
+  and revenue. Accountability-track context for the still-live blockade
+  fight above.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/12/us-strikes-in-yemen-killed-153-civilians-in-2025-says-pentagon-review)) ⟨daily 2026-08-12⟩
 
 ## 2026-08-11 — Baghaei says Oman talks "progressing smoothly," shipping map agreed; Trump escalates to a 50-year compensation demand
 
