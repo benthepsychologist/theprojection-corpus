@@ -3302,3 +3302,63 @@ capacity contraction, perinatal/postpartum psychiatric care, and a new
 one this pass — AI chatbots tied to violence against third parties,
 distinct from the existing suicide-focused threads). The Acton case's
 arraignment outcome is also unresolved as of this pass.
+
+## 2026-08-13 (later) — /daily: extended today, and the audio briefing's
+## first fully-unassisted run
+
+No finalization due this pass — 08-13 stays open until 05:00 ET 08-14 —
+so this was a straight extend: four lens agents took each digest from
+its 10:30 ET snapshot through ~15:30 ET, collect.py swept the gap since
+this morning's run, and the front page was rewritten to fold the
+afternoon in.
+
+**The two real findings resolved cleanly.** The Acton, MA case landed a
+concrete outcome: the accused teen was arraigned in Concord District
+Court and held without bail, probable-cause hearing set September 11.
+SB 903 moved procedurally but stayed genuinely unresolved — California's
+Assembly adjourned its floor session (the hearing's own trigger
+condition) and the Assembly Appropriations suspense-file hearing
+convened, but the bill's actual disposition hasn't posted to the
+legislature's own records — correctly left `pending` rather than guessed
+at; may carry into tomorrow given how California usually posts
+suspense-file outcomes.
+
+**Real afternoon content across all four lenses:** Google shipped Gemini
+3.7 Flash at half its predecessor's token price; OpenAI saw more
+executive churn (a new CRO, and word — not yet independently confirmed
+elsewhere — that AGI-deployment chief Fidji Simo has also stepped down);
+AMD is raising its largest-ever bond sale explicitly tied to its own $5B
+Anthropic stake, the first time this map's circular-financing thread has
+seen debt at the chipmaker layer rather than the neocloud layer
+(`ai-circular-financing-risk`'s entity list corrected to include
+amd/anthropic, which it had been missing since the thread opened);
+Databricks closed a $5B round at $190B; a second Houthi strike hit
+Aramco's Jazan refinery and oil kept falling anyway; the West Bank
+settler siege drew condemnation from inside the settlement movement
+itself; and an anonymous US State Department official broke publicly
+with Israel's own defense minister for the first time on south Lebanon.
+
+**Collector friction, filed:** `openalex` hit a total outage today —
+every single term 429'd for 35+ minutes with zero yield before I killed
+the run, unlike `semantic_scholar`'s own 600s wall-clock budget which
+cuts a bad day off cleanly. Filed to kestrel's INBOX (asking for the same
+circuit-breaker pattern). Separately, kestrel's own resident session
+closed out yesterday's `lda` brief the same day it was filed — confirmed
+permanently dead (Akamai edge block, no code-side fix exists), collector
+log message rewritten so it stops reading as a hypothesis worth
+re-chasing.
+
+**The audio briefing, tested for real this time — not a manual script
+call, an actual `/daily` publish pass with no assistance.** Deleted
+today's existing mp3 first (it only covered the 10:30 ET morning
+snapshot, and the digest had since grown) to force a genuine fresh
+generation rather than the idempotent re-stage path. `publish.py --push`
+generated and staged `2026-08-13-front.mp3` (3m51s, covering the full
+extended day) as an ordinary line in its own output — confirms both the
+automatic wiring from 08-13's earlier session AND the Gemini-engine
+switch (also from earlier today, after Ben's "sounds TERRIBLE" verdict
+on Kokoro) survive a completely normal, unassisted run.
+
+All four repos verified clean and pushed at close: theprojection-corpus,
+theprojection-site, and two clean drops into kestrel's INBOX (no
+commits, per protocol).
