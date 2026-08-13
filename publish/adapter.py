@@ -32,6 +32,8 @@ import collections
 import json
 import os
 import re
+import shutil
+import subprocess
 import sys
 from datetime import datetime, timedelta, timezone
 
@@ -68,6 +70,23 @@ DEPLOY_HOOK_URL = os.environ.get("THEPROJECTION_DEPLOY_HOOK")
 # Site checkout path — mirrors DEPLOY_HOOK_URL: a per-site env var this
 # adapter resolves and hands to the CLI shim as the --site-dir default.
 SITE_DIR = os.environ.get("THEPROJECTION_SITE_DIR")
+
+# Audio-briefing generation (Ben, 2026-08-13: "an AUDIO briefing... this
+# shouldn't run automatically in other repos... a local extension of the
+# upstream protocol"). Deliberately NOT a kestrel engine feature — this
+# whole block lives only in this instance-owned adapter, so no other
+# kestrel instance (therapybulletin-data, etc.) is touched by it; each
+# instance's own adapter.py would need to opt in separately if it wanted
+# the same thing. The generator (sources/generate_audio_briefing.py)
+# needs a dedicated venv with kokoro+soundfile installed
+# (/workspace/.venvs/kokoro-tts, ~5.2GB — see that script's own docstring
+# for why it's not the adapter's normal Python env) plus system
+# espeak-ng/ffmpeg. Hardcoded rather than env-configurable for now,
+# matching this adapter's existing style of hardcoding what's genuinely
+# fixed about this one site (BEATS, LENS_OF_FILE) rather than adding
+# config surface for a value that has exactly one correct answer today.
+AUDIO_VENV_PYTHON = "/workspace/.venvs/kokoro-tts/bin/python3"
+AUDIO_GEN_SCRIPT = os.path.join(ROOT, "sources", "generate_audio_briefing.py")
 
 # Front-matter fields allowed across the boundary for a thread page. Nothing
 # else from a threads.yaml entry — notably never `notes` (explicitly the
@@ -712,6 +731,50 @@ def build_claims(board):
 BEATS = [("ai", "AI"), ("global-capital", "Global Capital"), ("mental-health", "Mental Health")]
 
 
+def stage_audio_briefing(site_dir, today_iso):
+    """Generate (if needed) and stage the day's narrated front-page mp3.
+
+    Idempotent per day: if artifacts/audio/<today>-front.mp3 already
+    exists (this run or an earlier one today), generation is skipped and
+    the existing file is just re-staged — a day's briefing text is
+    finalized once, not re-narrated on every one of a day's several
+    publish passes. Never fatal: audio is a nice-to-have layered on top
+    of the text site, not a requirement of it, so any failure here
+    (venv missing, kokoro/espeak-ng broken, generation error) is caught,
+    printed, and the rest of the publish run continues untouched —
+    matching this function's neighbors' own graceful-skip style (see the
+    readouts.json block above: "no readouts store yet — skipped").
+    """
+    audio_dir = os.path.join(ROOT, "artifacts", "audio")
+    mp3_path = os.path.join(audio_dir, f"{today_iso}-front.mp3")
+
+    if not os.path.exists(mp3_path):
+        if not os.path.exists(AUDIO_VENV_PYTHON):
+            print(f"  no audio venv at {AUDIO_VENV_PYTHON} — skipped audio briefing")
+            return
+        try:
+            subprocess.run(
+                [AUDIO_VENV_PYTHON, AUDIO_GEN_SCRIPT, "--date", today_iso],
+                cwd=ROOT, check=True, capture_output=True, text=True, timeout=600,
+            )
+        except subprocess.CalledProcessError as e:
+            print(f"  audio generation failed for {today_iso} — skipped audio briefing\n"
+                  f"    {e.stderr.strip().splitlines()[-1] if e.stderr.strip() else e}")
+            return
+        except subprocess.TimeoutExpired:
+            print(f"  audio generation timed out for {today_iso} — skipped audio briefing")
+            return
+        if not os.path.exists(mp3_path):
+            print(f"  audio generation reported success but {mp3_path} is missing — skipped")
+            return
+        print(f"  generated audio/{today_iso}-front.mp3")
+
+    site_audio_dir = os.path.join(site_dir, "static", "audio")
+    os.makedirs(site_audio_dir, exist_ok=True)
+    shutil.copyfile(mp3_path, os.path.join(site_audio_dir, f"{today_iso}-front.mp3"))
+    print(f"  staged static/audio/{today_iso}-front.mp3")
+
+
 def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_blob, pub_slugs):
     """Write every page + data file this run produces into the site repo's
     working tree. Validates site_dir itself — nothing gets written to a
@@ -819,6 +882,9 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
         print(f"  wrote data/readouts.json ({len(kept)} readouts)")
     else:
         print("  no readouts store yet — skipped data/readouts.json")
+
+    stage_audio_briefing(site_dir, payload["today"])
+
     claim_dir = os.path.join(site_dir, "content", "claim")
     os.makedirs(claim_dir, exist_ok=True)
     claim_ids = {c["id"] for c in claims}
