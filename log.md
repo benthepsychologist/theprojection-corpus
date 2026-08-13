@@ -3225,3 +3225,80 @@ watchlist entity sit unanswered for Ben. The uncommitted
 `build_outlet_credibility.py` change from 08-11 evening (three
 own-channel domains) is being committed alongside this run's work rather
 than held any longer.
+
+## 2026-08-13 — /daily: 08-12 finalized, 08-13 opened, and the audio briefing's first unassisted run
+
+The point of this run, beyond the normal cycle: confirm the audio
+briefing wired into `publish/adapter.py` yesterday actually fires on its
+own inside a real `/daily` pass, with no manual script call. **It did** —
+`generated audio/2026-08-13-front.mp3` / `staged static/audio/2026-08-13-
+front.mp3` appeared as ordinary lines in `publish.py --push`'s own
+output, alongside every other automatic write. Confirmed clean before
+the run (no 2026-08-13 mp3 existed anywhere), confirmed valid after
+(4m11s, staged on the live site, site repo committed and pushed
+automatically in the same command — `f200204`).
+
+**Collection + four-lens dispatch, same shape as 08-12's run**, scoped to
+a lighter ~4.6h-to-~12h gap depending on lens rather than a multi-day
+catch-up. `lda` blocked again (143/143, already filed). One agent
+(mental-health) reported a broken/placeholder result on its first pass —
+"waiting on the SB 903 agent to complete," despite being the only agent
+assigned that check and having done 44 real tool calls — resumed via
+`SendMessage` with a direct correction; the retry finished properly and
+surfaced the run's most significant single finding.
+
+**The finding: a Massachusetts prosecutor has publicly tied a 17-year-
+old's double homicide of his mother and brother to his ChatGPT use** —
+searches for "theoretical ideas or fantasy stories regarding the killing
+of his family," per the DA's own on-record statement. First case this
+map has tracked where a *general-purpose* chatbot, not a therapy or
+companion product, is tied by a prosecutor to a completed act of lethal
+violence against a third party. Missed by all four mental-health
+benchmarks (it's a Boston-regional story); caught only by broadening
+past the standard critic set during finalize.
+
+**A live ledger conflict, resolved.** Two lens agents (frontier-ai,
+global-capital) independently converged on the same finding: Bloomberg
+reports Anthropic, not the originally-reported SpaceX, is the party in
+talks to acquire Israeli startup Decart for ~$6B — and Musk has publicly
+denied SpaceX involvement. `decart-acquisition-close` corrected in
+`upcoming.yaml` (entities flipped, original source retained, buyer
+still unconfirmed by either company). Anthropic also had the day's
+largest capital story on its own: a separate FT report that its
+investors are pricing an October IPO as high as $2 trillion, more than
+double the figure this map carried since May, the same day its own
+Frontier Red Team published research on Claude agent swarms colluding
+and sabotaging each other.
+
+**Structural friction, now dated four times, not absorbed silently
+this time:** the shared 200-call WebSearch budget was exhausted by two
+of four parallel lens agents mid-run (global-capital, world-news), both
+falling back to WebFetch-via-search-engine. Logged plainly in
+`coverage-log.md` as a recurring pattern (08-04, 08-05, 08-06, 08-13)
+rather than re-absorbed as a one-off each time.
+
+**Kestrel brief filed:** `2026-08-13-theprojection-base-vs-instance-
+scoping-needs-documenting.md` — the canonical `/daily` skill template
+and shared docs don't state the engine/instance ownership boundary
+plainly (I told Ben yesterday the audio feature would need a kestrel
+change; it didn't, `publish/adapter.py` already IS the sanctioned local-
+extension point, I only found that by accident). Asks for a stated
+map of what's engine- vs instance-owned, and a named protocol for
+adding a local-only extension, so the next instance doesn't rediscover
+both the hard way.
+
+Render + publish otherwise routine: artifact page republished, all four
+readout packs applied clean on the first try (front's section-heading
+rule, which broke yesterday, held this time), site committed and
+pushed, Cloudflare build triggered automatically by `publish.py --push`
+itself — worth noting for next time, since yesterday I manually curled
+the deploy hook a second time not realizing `--push` already does it.
+
+**Pick up:** `ca-sb903-appropriations-hearing` still unresolved —
+California's legislature hadn't adjourned session as of this pass, so
+the actual outcome (suspense / release / amendment) needs a later check.
+Three thread candidates sit unanswered (PE-owned behavioral-health
+capacity contraction, perinatal/postpartum psychiatric care, and a new
+one this pass — AI chatbots tied to violence against third parties,
+distinct from the existing suicide-focused threads). The Acton case's
+arraignment outcome is also unresolved as of this pass.
