@@ -37,6 +37,20 @@ itself (who's fighting whom, where it's widening) — see
   moves the other way.
   ([CBS News](https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-donald-trump-tehran-control-threatens-keep-it/)) ⟨daily 2026-08-13⟩
 
+## 2026-08-13 (later) — A second strike on the same refinery, and oil falls further instead of reversing
+
+- **Houthi drones hit Aramco's Jazan refinery again this afternoon — the
+  second strike on that facility in under a week, per Bloomberg's own
+  count — and oil extended its morning decline rather than reversing on
+  it.** Brent fell further to $87.11/bbl (-2.1%) and WTI to $81.29/bbl
+  (-2.38%), both below the levels logged in this morning's entry above.
+  Third time this week this thread has logged a real physical/rhetorical
+  escalation landing on the tape without moving the war-risk premium the
+  expected direction — see this digest's own interpretation of the
+  mechanism (OPEC's demand-growth downgrade and the US inventory build
+  still dominating price formation over headline risk).
+  ([Reuters](https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-aramco-refinery-jazan-with-two-drones-2026-08-13/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/houthis-say-they-ve-targeted-aramco-refinery-in-jazan-again)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — The Hormuz deal slips; Saudi Arabia reroutes around the Red Sea entirely; Trump claims "total control" that evening
 
 - **The US-brokered Iran-Oman deal to reopen the Strait of Hormuz

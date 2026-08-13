@@ -18,6 +18,26 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
+## 2026-08-13 — The debt shows up one layer up: a chipmaker, not a neocloud, raises AI-tied bonds
+
+- **AMD is raising up to $5 billion in its largest-ever dollar bond
+  sale, and Reuters/Yahoo Finance both frame it against AMD's own AI-chip
+  agreements and its $5B equity stake in Anthropic specifically — the
+  first time in this thread's record that debt has surfaced at the
+  chipmaker layer rather than the neocloud/data-center layer (CoreWeave,
+  Lambda) that has carried every prior entry.** The four-tranche offering
+  (3- to 10-year maturities, led by Barclays, Bank of America, Citigroup,
+  JPMorgan, Morgan Stanley, and Wells Fargo) is officially for "general
+  corporate expenses, which may include the repayment of debt" — AMD has
+  $875M maturing next month — so the AI/Anthropic framing is press
+  narrative around a nominally generic raise, not an earmarked use of
+  proceeds; worth tracking whether that framing holds up or whether AMD
+  itself ever ties debt explicitly to the stake. Reads directly against
+  `ai-circular-financing-risk` (ai lens), whose entity list (Nvidia/
+  OpenAI/Oracle) doesn't yet include AMD/Anthropic despite this being the
+  same shape of question.
+  ([Yahoo Finance/Bloomberg](https://finance.yahoo.com/technology/ai/articles/amd-raise-much-5-billion-151416792.html)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — A second neocloud shows the same circular-financing shape, and closes the day with a first: an investment-grade rating
 
 - **Lambda's Nvidia-GPU loan priced at a final $926 million — led by

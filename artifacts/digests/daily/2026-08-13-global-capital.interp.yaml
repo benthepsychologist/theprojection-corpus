@@ -134,3 +134,126 @@ anthropic-s-own-investors-are-reportedly-targeting:
     framing (previously sourced to a single Bloomberg/CNBC chain calling
     October "the earliest date under consideration, not locked in") with
     a second, independent FT sourcing chain naming the same month.
+
+july-s-producer-price-index-came-in-flat-while-job:
+  mechanism: >
+    The mechanism worth naming here is a composition split, not a single
+    number: PPI printed genuinely cool (final demand flat, goods prices
+    actually falling 0.7%) while jobless claims came in soft (209K,
+    above both the 202K estimate and last week's 200K) — two different
+    data series, collected two different ways, both leaning the same
+    direction on the same day. That's a stronger signal into the Fed's
+    own open 9-3 hawkish-hold split (capital-context.yaml's rate_regime
+    reading) than either series alone would be, because it removes the
+    "one noisy print" objection each series could otherwise carry on its
+    own. It does not resolve the split — no FOMC voice moved today — but
+    it changes what evidence the hike-dissent bloc has to argue against
+    before 09-16.
+  confidence: likely
+  scenarios:
+    - direction: >
+        The soft-data pair repeats through August's remaining releases
+        (the next jobs report, the next PPI/CPI pair) and the Warsh-led
+        committee's hawkish-hold posture erodes into an actual hold-or-cut
+        vote by 09-16, ending the three-dissent-for-a-hike bloc's run.
+      why: >
+        This is the SECOND soft print in two weeks after the 08-07 jobs
+        report (payrolls -23K, -103K combined revision) — a repeat
+        pattern, not a one-off, and the kind of accumulating evidence
+        that typically moves a data-dependent committee even when no
+        single print is decisive alone.
+      precedent: >
+        The Fed's own 2024 cutting cycle, which followed several
+        consecutive soft labor prints after a year of hawkish holds — the
+        committee moved once the DATA pattern accumulated, not on any
+        single release.
+    - direction: >
+        The hawkish-hold bloc treats today's data as noise inside a
+        still-elevated inflation regime (core PPI still +4.7% y/y, well
+        above target) and the 09-16 decision holds or even hikes, with
+        Hammack's public "act now" framing this week reflecting where the
+        committee's center of gravity actually sits, not just a dissent.
+      why: >
+        A single week of soft claims data is exactly the kind of noisy
+        weekly series (Michigan/New York-driven per the day's own
+        reporting) that historically gets revised, and core PPI's y/y
+        figure — the number a hawkish committee member would point to —
+        did NOT improve today, only the month-over-month read.
+      precedent: >
+        2023's repeated head-fakes on "the Fed is about to pivot" calls,
+        several of which were built on a single soft data point that
+        proved transitory once the following month's print reverted.
+  context_note: >
+    Reads directly against capital-context.yaml's rate_regime entry
+    (asof 2026-08-09), which already flags the 08-07 jobs report as "the
+    strongest data point yet to push back on the hike-dissent bloc" with
+    "no Fed voice yet on the record" reacting to it — today supplies both
+    a second soft data point AND the first on-the-record Fed voices
+    (Hammack hawkish, Barkin noncommittal) responding to the accumulating
+    pattern. Candidate line for the next refresh, not an edit to make
+    directly from /daily.
+
+amd-is-raising-up-to-5-billion-in-its-largest-eve:
+  mechanism: >
+    The mechanism worth isolating: this is the first time in this map's
+    AI-buildout-debt record that PUBLIC DEBT has been raised by a
+    chipmaker itself, rather than by the neocloud/data-center layer that
+    has carried every prior data point in `ai-buildout-debt-risk`
+    (CoreWeave's term loan, Lambda's Nvidia-tied loan). AMD is not
+    borrowing to buy GPUs or build a data center — the proceeds are
+    officially generic ("general corporate expenses...may include the
+    repayment of debt") — but Reuters/Yahoo Finance both frame the raise
+    against AMD's own AI-chip customer agreements and its $5B Anthropic
+    equity stake specifically. That framing, even if not a legally
+    earmarked use of proceeds, is the market treating chipmaker balance
+    sheets as now bearing some of the same AI-capex-financing burden
+    previously isolated to the compute-operator layer — widening, not
+    just adding to, the circular-financing question `ai-circular-
+    financing-risk` already tracks (Nvidia/OpenAI/Oracle) to now visibly
+    include AMD/Anthropic.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        This proves to be the first of several chipmaker-level debt
+        raises explicitly tied to AI-lab equity stakes, and rating
+        agencies eventually build a distinct sub-category for it — the
+        same trajectory `ai-buildout-debt-risk` has already observed at
+        the neocloud layer (Lambda's Baa2 rating as "the first sign a
+        rating agency...is willing to treat this exact structure as
+        investment-grade").
+      why: >
+        AMD is a large, investment-grade-rated company with real
+        operating cash flow, unlike the neocloud borrowers in this
+        thread so far — if the market accepts this framing from AMD, it
+        lowers the bar for other chipmakers/vendors with equity stakes
+        in AI labs to do the same.
+      precedent: >
+        Lambda's and CoreWeave's own debt raises earlier this month,
+        both of which normalized market acceptance of AI-buildout debt
+        at the neocloud layer within a span of days — a fast-normalizing
+        pattern this thread has now watched twice.
+    - direction: >
+        This is a one-off, ordinary refinancing (AMD does have $875M
+        maturing next month) that got AI-narrative framing from the
+        press rather than reflecting any real change in how AMD funds
+        its Anthropic stake, and no second chipmaker-level raise follows.
+      why: >
+        The official use-of-proceeds language is genuinely generic, not
+        earmarked to the Anthropic stake — a company as large as AMD
+        issues investment-grade debt routinely, and attaching an AI
+        narrative to a routine bond sale is exactly the kind of framing
+        this map has flagged elsewhere as investor-expectation rather
+        than confirmed structure (see the Anthropic $2T entry above).
+      precedent: >
+        Large-cap tech issuers routinely price "general corporate
+        purposes" bonds that get retrospectively narrated around
+        whatever the market's current story is, without the proceeds
+        actually being restricted to that story.
+  context_note: >
+    New data point for `ai-buildout-debt-risk` (opened 2026-08-11, lens:
+    global-capital) — see the thread's own 2026-08-13 timeline entry.
+    Also touches `amd` (frontier-ai lens, entities [amd, nvidia, openai,
+    anthropic, meta-ai]) and `ai-circular-financing-risk` (ai lens,
+    entities [nvidia, openai, oracle] — does not yet include amd/
+    anthropic, a possible entity-list gap worth flagging to the next
+    steering pass rather than editing directly from here).

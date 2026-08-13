@@ -13,7 +13,23 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
-## 2026-08-13 — SB 903's suspense-file hearing convenes; outcome still unknown
+## 2026-08-13 (afternoon) — Session adjourns, the hearing goes live, disposition still unposted
+
+- **The trigger condition the morning entry was waiting on has now
+  cleared: California's Assembly has adjourned its floor session for the
+  day, and SB 903's Appropriations suspense-file hearing is underway.**
+  The Assembly's own homepage reads "The Assembly has adjourned until
+  Monday, August 17th, 2026 at 1:00 p.m.," and the Appropriations
+  Committee's hearing (calendared "upon adjournment of Session," Room
+  1100) shows as live. Leginfo's bill-status page, however, still shows
+  the 08/05/26 "Placed on suspense file" entry as SB 903's most recent
+  recorded action — no post-hearing outcome (held / released / amended)
+  has posted as of this check. California suspense-file results often
+  aren't reflected online until the next business day, so the actual
+  disposition may not resolve until tomorrow's check.
+  ([California Assembly](https://www.assembly.ca.gov/), [California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-13⟩
+
+## 2026-08-13 (morning) — SB 903's suspense-file hearing convenes; outcome still unknown
 
 - **SB 903 is confirmed on Assembly Appropriations' suspense calendar for
   today's Daily File, but as of this pass the disposition (held on

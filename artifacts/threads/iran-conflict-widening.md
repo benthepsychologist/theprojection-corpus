@@ -24,7 +24,7 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
-## 2026-08-13 — Araghchi warns of a "bigger miscalculation"; Basij commander claims the strait "under Iran's control"
+## 2026-08-13 — Araghchi warns of a "bigger miscalculation"; Basij commander claims the strait "under Iran's control"; UN Security Council debates Yemen's Houthi escalation
 
 - **Iran's Foreign Minister Abbas Araghchi said the US had already
   "miscalculated" over the Iran war due to intelligence failures and
@@ -35,8 +35,23 @@ concrete.
   control" claim rather than settling it — the standoff is now a direct
   rhetorical clash between the two sides' most senior voices, not just
   agency-level statements (PGSA vs. Trump on 08-12), with no new shipping
-  data yet to arbitrate the competing claims.
+  data yet to arbitrate the competing claims. Re-checked at 15:00 ET: the
+  same claims stood, unrebutted and un-arbitrated by any new data.
   ([Al Jazeera liveblog](https://www.aljazeera.com/news/liveblog/2026/8/13/iran-war-live-us-and-iran-exchange-opposing-claims-over-hormuz-control)) ⟨daily 2026-08-13⟩
+- **Separately, the UN Security Council held an open debate on Yemen
+  today (its 10208th meeting), warning that escalating Houthi missile
+  strikes on Saudi Arabia and commercial vessels risk collapsing the
+  fragile 2022 truce.** The session cited the 08-11 strike on a
+  commercial ship in the Bab al-Mandab Strait that killed six (already
+  logged 08-12 as part of this war's Red Sea dimension), and followed an
+  08-07 Council statement condemning the Houthi attacks — a real,
+  process-level escalation of international concern, distinct from
+  today's Hormuz-control exchange above. Not fully confirmed: a
+  wire-syndicated report (9 outlets, reading as an AP story) that a
+  Pentagon review found 153 civilian deaths from US strikes on Houthi
+  positions over the past year — every link tried for it 404'd or
+  blocked the fetch this session, so it is not written up as established.
+  ([UN News](https://news.un.org/en/story/2026/08/1168131), [UN Press — SC/10208th meeting](https://press.un.org/en)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-12 — Trump/Iran trade "total control" claims as deal slips; Houthi attack kills six; blockade turns lethal
 

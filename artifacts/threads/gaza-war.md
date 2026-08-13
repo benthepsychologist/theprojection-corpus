@@ -39,7 +39,7 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
-## 2026-08-13 — Second targeted strike this week hits a Hamas commander in Khan Younis; West Bank siege draws a US "act of terror" charge
+## 2026-08-13 — A second Khan Younis strike, then a third in Gaza City kills Hamas's Gaza police chief; West Bank siege draws a US "act of terror" charge, then a settler-leader condemnation of its own
 
 - **Israel's military carried out its second targeted strike this week —
   after a seven-day pause broken 08-12 — killing a man in Khan Younis it
@@ -52,18 +52,41 @@ stated flat.** See the note at the foot of this file.
   protect the process while Netanyahu holds to full disarmament before
   any withdrawal.
   ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/)) ⟨daily 2026-08-13⟩
-- **Separately, a four-day-old siege of Palestinian homes in Qusra
-  village (south of Nablus, West Bank) drew a US diplomatic rebuke: US
-  Ambassador Mike Huckabee called it "a horrific act of terror,"
-  intimidation meant to force residents out.** Israeli settlers blocked
-  three families' homes with rocks and tents, cutting water, electricity
-  and supply access; the IDF said it dismantled two illegal outposts on
-  Qusra's outskirts, confiscated equipment, and detained one Israeli, and
-  separately issued (then reportedly walked back) an evacuation order
-  covering 15 Palestinian homes — local residents said six families had
-  already left before the reversal. No injuries reported. Continues the
-  West Bank friction first noted alongside 08-12's Beit Lahiya strike.
+- **Separately and later the same day, a strike in Gaza City killed a man
+  the IDF identifies as Jamal Mahmoud Abu Kamil, a Hamas commander it says
+  took part in the October 7, 2023 invasion and had continued "advancing
+  attacks against troops"; Hamas's own Interior Ministry confirmed the
+  death and named him its Gaza police chief.** This is at least the third
+  targeted strike this week. It is independently reported by two Israeli
+  outlets (Times of Israel, Jerusalem Post) with Hamas's own confirmation
+  of the death itself, but no Palestinian or wire (Reuters/AP/AJ) account
+  had it as of this fetch — treat the "police chief" framing and
+  circumstances as IDF/Hamas-Ministry-sourced pending independent
+  wire verification.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Jerusalem Post](https://www.jpost.com/israel-news)) ⟨daily 2026-08-13⟩
+- **A four-day-old siege of Palestinian homes in Qusra village (south of
+  Nablus, West Bank) drew a US diplomatic rebuke: US Ambassador Mike
+  Huckabee called it "a horrific act of terror," intimidation meant to
+  force residents out.** Israeli settlers blocked three families' homes
+  with rocks and tents, cutting water, electricity and supply access; the
+  IDF said it dismantled two illegal outposts on Qusra's outskirts,
+  confiscated equipment, and detained one Israeli, and separately issued
+  (then reportedly walked back) an evacuation order covering 15
+  Palestinian homes — local residents said six families had already left
+  before the reversal. No injuries reported. Continues the West Bank
+  friction first noted alongside 08-12's Beit Lahiya strike.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/us-diplomat-calls-israeli-settler-siege-of-west-bank-homes-act-of-terror), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/)) ⟨daily 2026-08-13⟩
+- **The Qusra story escalated further that afternoon on two fronts.**
+  Palestinian residents reported that IDF soldiers damaged their homes
+  during the same operation meant to dismantle the besieging settler
+  outposts — one family said money and security-camera equipment had
+  also been taken. Separately, and more notably, Yesha Council chair
+  Yisrael Ganz and other settler leaders publicly condemned the Qusra
+  violence themselves, warning it does "irreversible damage" to Israel
+  and the settlement movement — a rebuke from inside the settler movement
+  rather than from outside it. Huckabee praised Ganz's statement, framing
+  it as a distinction between "settlers" and "unsettlers" (extremists).
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Jerusalem Post](https://www.jpost.com/israel-news)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-12 — First announced targeted strike since 08-03 hits a Hamas commander in Beit Lahiya
 

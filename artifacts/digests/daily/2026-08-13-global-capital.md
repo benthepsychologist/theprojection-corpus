@@ -3,7 +3,7 @@ lens: global-capital
 date: 2026-08-13
 status: building
 window_start: 2026-08-13T05:00:00-04:00
-as_of: 2026-08-13T10:00:00-04:00
+as_of: 2026-08-13T15:00:00-04:00
 coverage: pending
 ---
 
@@ -36,6 +36,27 @@ already-covered 08-10 story, not new fact), and continued Berkshire
 Q2-earnings-reaction recirculation (the print itself was 08-08, already
 logged; the 13F this lens is actually waiting on is due 08-14).*
 
+*Extended through ~15:00 ET: this session's own WebSearch budget ran out
+partway through, so verification from here shifted to Bing News search
+via WebFetch, resolving each real Google News redirect back to its
+original publisher (Reuters, Bloomberg, BLS.gov, tradingeconomics.com,
+Forbes) before citing it — consistent with the morning pass's own
+workaround. Four more real developments cleared the bar: July's PPI
+report plus a weaker jobless-claims read landing squarely on the Fed's
+own open rate debate, AMD's largest-ever dollar bond sale explicitly
+tied to funding its own $5B Anthropic stake, Databricks closing a $5B
+round at a $190B valuation, and the Vantage data-center-IPO story from
+this morning turning out to be one of three (CyrusOne, Switch also
+named) rather than one-off. Oil extended its morning decline through a
+second Houthi drone strike on the same Aramco refinery rather than
+reversing on it. Checked and left out: a CoreWeave "Q2 earnings" story
+recirculating today that turned out to be the same 08-11 print this
+map's `ai-buildout-debt-risk` thread already has on file (not new), a
+Globe and Mail piece adding SpaceX+OpenAI+Anthropic market-value
+estimates to "$3 trillion" (commentary/aggregation on the already-logged
+$2T Anthropic figure, not a new number), and a thin, unconfirmed Pershing
+Square pre-IPO-fund snippet with no size or target disclosed.*
+
 ## Today's throughline
 
 Trump's Wednesday-night claim of "total control" over the Strait of
@@ -65,6 +86,20 @@ exploring a ~$100B IPO or sale, and China's CXMT overtook Tencent to
 become China's most valuable listed company at $524B, 17 days after its
 own IPO.
 
+Through the afternoon, the same fundamentals-over-headlines pattern
+sharpened rather than broke: a second Houthi drone strike on Aramco's
+Jazan refinery landed and oil kept falling anyway, down to $87.11/$81.29
+by 15:00 ET. A fresh macro data pair — July PPI flat, jobless claims
+above estimate — fed straight into the Fed's own open rate-hike debate
+ahead of September 16. And the AI-capital story picked up a new layer:
+AMD is raising its largest-ever bond sale explicitly to help fund its
+own $5B Anthropic stake, the first time debt has shown up at the
+chipmaker layer rather than the neocloud layer this map's
+`ai-buildout-debt-risk` thread has tracked so far. Databricks closed a
+$5B round at $190B, and this morning's single Vantage IPO story turned
+out to be a three-company pattern (Vantage, CyrusOne, Switch) once the
+day's coverage caught up.
+
 ## Capital in my markets
 
 - **Iran flatly rejected Trump's Wednesday-night claim of "total
@@ -83,6 +118,33 @@ own IPO.
   move went the other way.
   ([CBS News](https://www.cbsnews.com/live-updates/iran-war-us-strait-of-hormuz-donald-trump-tehran-control-threatens-keep-it/))
   <!-- k: t=red-sea-oil-shock axis=capital-in-my-markets interp=yes -->
+
+- **Houthi drones hit the same Aramco Jazan refinery again this
+  afternoon — the second strike on that facility in under a week — and
+  oil kept falling instead of reversing on it.** Brent slid further to
+  $87.11/bbl (-2.1%) and WTI to $81.29/bbl (-2.38%) by this digest's
+  as-of time, both below the levels logged at 10:30 ET ($87.98/$83.27).
+  Reuters and Bloomberg both confirm the Houthis' own claim of a
+  two-drone attack; this is the same fundamentals-over-headlines pattern
+  already interpreted in this morning's entry below, now showing up a
+  third time this week against an even more direct physical hit.
+  ([Reuters](https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-aramco-refinery-jazan-with-two-drones-2026-08-13/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/houthis-say-they-ve-targeted-aramco-refinery-in-jazan-again), [oilprice.com live quote])
+  <!-- k: t=red-sea-oil-shock axis=capital-in-my-markets -->
+
+- **July's producer-price index came in flat while jobless claims rose
+  above estimate, sharpening the Fed's already-live rate debate ahead of
+  its September 16 decision.** BLS reported final-demand PPI unchanged
+  month-over-month (goods -0.7%, services +0.2%) with core PPI (ex food,
+  energy, and trade services) up 0.4% m/m and 4.7% y/y; separately,
+  initial jobless claims for the week of 08-08 rose 9,000 to 209,000,
+  above the 202,000 consensus estimate and the prior week's 200,000.
+  Neither figure resolves the hawkish-hold committee's own 9-3 split from
+  the 07-29 decision, but both hand more ammunition to the side arguing
+  the economy is already cooling on its own — the same data axis
+  `capital-context.yaml`'s `rate_regime` reading has been tracking since
+  the July jobs report.
+  ([BLS PPI release, 2026-08-13](https://www.bls.gov/news.release/ppi.nr0.htm), [tradingeconomics.com, citing DOL, 2026-08-13](https://tradingeconomics.com/united-states/jobless-claims))
+  <!-- k: axis=capital-in-my-markets interp=yes -->
 
 ## Deals & filings
 
@@ -151,26 +213,66 @@ own IPO.
   ([Free Press Journal](https://www.freepressjournal.in/business/memory-chip-maker-cxmt-overtakes-tencent-as-chinas-most-valuable-company), [Financial Post](https://www.msn.com/en-ca/money/topstories/what-is-cxmt-the-chipmaker-that-soared-466-monday-and-is-now-chinas-most-valuable-public-company/ar-AA28UKxW))
   <!-- k: t=cxmt-memory-ipo,ai-memory-shortage e=cxmt axis=deals-and-filings -->
 
+- **AMD is raising up to $5 billion in its largest-ever dollar bond
+  sale, explicitly to fund AI capex that includes its own $5 billion
+  equity stake in Anthropic.** The four-tranche offering (3- to 10-year
+  maturities, led by Barclays, Bank of America, Citigroup, JPMorgan,
+  Morgan Stanley, and Wells Fargo) is officially "for general corporate
+  expenses, which may include the repayment of debt" — AMD has $875M in
+  bonds maturing next month — but Reuters/Yahoo Finance both frame it
+  against AMD's own AI-chip agreements with Anthropic and Microsoft,
+  including the $5B Anthropic equity commitment this map's `amd` thread
+  (frontier-ai lens) already tracks. This is a new layer for
+  `ai-buildout-debt-risk`: the borrowing has been happening at the
+  neocloud/data-center layer (CoreWeave, Lambda) so far, and this is the
+  first time a chipmaker itself has raised public debt explicitly framed
+  around funding an AI-lab equity stake — read against
+  `ai-circular-financing-risk`'s standing question of whether this money
+  loops back on itself.
+  ([Yahoo Finance/Bloomberg](https://finance.yahoo.com/technology/ai/articles/amd-raise-much-5-billion-151416792.html))
+  <!-- k: t=ai-buildout-debt-risk e=anthropic axis=deals-and-filings interp=yes -->
+
+- **Databricks closed a $5 billion round at a $190 billion valuation**,
+  up from a $188B term sheet, led by Coatue, Blackstone, MGX, and T.
+  Rowe Price with Sixth Street Growth joining as a new investor. Forbes
+  reports the company has crossed a $7B annualized revenue run rate,
+  growing over 80% year-over-year — a real, disclosed revenue base behind
+  the number, unlike Anthropic's own investor-expectation figure above.
+  ([Forbes](https://www.forbes.com/sites/victordey/2026/08/13/databricks-hits-190-billion-valuation-as-ceo-ali-ghodsi-claims-agi-already-arrived))
+  <!-- k: e=databricks axis=deals-and-filings -->
+
+- **The Vantage Data Centers IPO logged this morning turns out to be one
+  of at least three: CyrusOne is now weighing a public debut by 2027 and
+  Switch is reportedly exploring an IPO of its own at an ~$80B
+  valuation, raising up to $10B.** Data Center Dynamics frames this as a
+  sector-wide "revival in public listings," not a single-company story —
+  strengthening this morning's thread-candidate question below (does the
+  data-center-landlord layer deserve its own thread, or fold into
+  `ai-buildout-debt-risk`) rather than opening a new one.
+  ([Yahoo Finance](https://finance.yahoo.com/technology/articles/vantage-data-centers-explores-ipo-174824386.html), [Data Center Dynamics](https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/))
+  <!-- k: axis=deals-and-filings -->
+
 ## 📊 Macro strip
 
-- **Brent crude: $87.98/bbl, -1.15%** (news-index sourcing, 2026-08-13
-  morning) — down on OPEC's demand-cut report + a large US inventory
-  build; see above. Down from 08-12's $88.98 close.
-- **WTI crude: $83.27/bbl** (news-index sourcing, 2026-08-13) — the
-  figure available this pass matches 08-12's own CNBC-sourced close
-  exactly; today's demand-cut framing is clearly moving Brent, but a
-  same-source WTI delta couldn't be confirmed this pass — treat as
-  roughly flat pending a cleaner primary read next pass.
+- **Brent crude: $87.11/bbl, -2.1%** (oilprice.com live quote, ~15:00 ET
+  2026-08-13) — down further from this morning's $87.98/-1.15%, despite
+  a second Houthi drone strike on Aramco's Jazan refinery this afternoon;
+  see above.
+- **WTI crude: $81.29/bbl, -2.38%** (oilprice.com live quote, ~15:00 ET
+  2026-08-13) — down from this morning's $83.27, resolving this
+  morning's flagged same-source-delta gap with a cleaner live read.
+- **July PPI: final demand unchanged m/m; core (ex food/energy/trade)
+  +0.4% m/m, +4.7% y/y** (BLS, released 2026-08-13) — new this pass; see
+  above.
+- **Initial jobless claims: 209,000 (week of 08-08), vs 202,000 est.,
+  vs 200,000 prior week** (DOL, via tradingeconomics.com, 2026-08-13) —
+  new this pass; see above.
 - **OPEC 2026 demand-growth forecast: 580,000 bpd** (OPEC Monthly Oil
-  Market Report, 2026-08-12) — fourth consecutive downward revision.
+  Market Report, 2026-08-12) — fourth consecutive downward revision,
+  unchanged since this morning.
 - **US crude inventories: +17.4M bbl** (EIA weekly report referenced in
-  today's oil-market coverage, 2026-08-13) — a large build, the other
-  leg pressuring price down alongside the OPEC revision.
-- **10Y-2Y Treasury spread: 0.48** (FRED, 2026-08-12) — unchanged;
-  no new FRED read yet for 08-13 at this digest's as-of time.
-- **2-year / 10-year Treasury yields:** no new primary read since
-  yesterday's post-CPI levels (~4.17% / ~4.66%); unchanged as of this
-  digest's as-of time.
+  today's oil-market coverage, 2026-08-13) — unchanged since this
+  morning, still the other leg pressuring price down alongside OPEC.
 
 ## ⏳ Upcoming & expected
 
@@ -187,38 +289,46 @@ own IPO.
 - `iran-oman-hormuz-deal-signing` (due 08-19) — no new signature; today's
   exchange (Trump's claim, Iran's rejection) is a rhetorical escalation
   on the same unresolved standoff, not a new due-date event.
-- `berkshire-q2-2026-13f` (due 08-14) — 1 day out, no new movement.
+- `berkshire-q2-2026-13f` (due 08-14) — 1 day out; several outlets ran
+  13F-preview speculation pieces (Benzinga, others) today, but that's
+  analyst guessing ahead of the filing, not the filing itself — no flip.
 - No other global-capital-relevant expectations came due today.
 
 ## 🔄 Map changes
 
 - `~ threads/red-sea-oil-shock` — Iran's rejection of Trump's "total
-  control" claim + oil's fall on demand fundamentals; timeline entry
-  written.
+  control" claim + oil's morning fall, then a second Houthi Jazan strike
+  and oil's continued afternoon decline; two timeline entries written
+  (morning + "later").
 - `~ threads/anthropic-ipo-timing` — the $2T IPO-valuation report and
   the Decart acquisition talks; timeline entry written.
 - `~ threads/oracle-stargate-bet` — the fresh round of planned layoffs;
   timeline entry written.
 - `~ threads/cxmt-memory-ipo` — CXMT overtaking Tencent as China's most
   valuable listed company; timeline entry written.
+- `~ threads/ai-buildout-debt-risk` — AMD's $5B bond offering tied to its
+  Anthropic stake; timeline entry appended (new layer: chipmaker debt,
+  not just neocloud debt).
 
 ## 🧵 Thread candidates
 
-- **candidate:** data-center landlord/REIT-style capital raises (Vantage
-  Data Centers exploring a ~$100B IPO or sale, Reuters) are a distinct
-  angle from the compute-operator debt story this lens already tracks
-  (CoreWeave, Lambda) — same AI-buildout capital wave, different layer
-  of the stack (who owns the building vs. who owns the GPUs inside it).
-  Worth its own thread, or fold into `ai-buildout-debt-risk`'s scope
-  since the underlying driver (AI compute demand needing financing) is
-  identical? (Reuters, 2026-08-13)
+- **candidate (updated, same offer as this morning — not re-counted):**
+  data-center landlord/REIT-style capital raises turn out to be a
+  three-company pattern, not one: Vantage (~$100B IPO or sale, ~$10B
+  raise), CyrusOne (weighing a 2027 debut), and Switch (~$80B valuation,
+  up to $10B IPO) all surfaced the same day. Same open question as this
+  morning — own thread, or fold into `ai-buildout-debt-risk` since the
+  underlying driver (AI compute demand needing financing) is identical —
+  now with three data points instead of one. (Reuters, Data Center
+  Dynamics, Yahoo Finance, 2026-08-13)
 
-**Flash test:** No. Trump's Hormuz rhetoric and Iran's rejection are a
-continuation of an already-tracked standoff, not a new front-page-of-
-the-world event; the $2T Anthropic IPO number is a large figure but an
-investor expectation, not a confirmed transaction — none of today's
-items clear the "would this lead a general news front page independent
-of these lenses" bar.
+**Flash test: still No.** Nothing since 10:30 ET clears the "would this
+lead a general news front page independent of these lenses" bar either —
+PPI and jobless claims are routine scheduled data (moved markets at the
+margin, not the story of the day), AMD's bond sale and Databricks' round
+are real but ordinary-sized financing events next to this week's $2T
+Anthropic IPO number, and the data-center IPO wave is a trend confirming
+itself, not a single dramatic event.
 
 ---
 Iran flatly rejected Trump's overnight claim to "total control" of the
@@ -234,6 +344,12 @@ earlier report naming SpaceX as Decart's buyer, an open question this
 map is now tracking rather than resolving in either direction. Oracle is
 drawing up fresh layoffs even as its AI capex keeps climbing, Vantage
 Data Centers is exploring a ~$100B IPO or sale on the data-center-
-landlord side of the same buildout, and China's CXMT overtook Tencent to
-become the country's most valuable listed company, 17 days after its
-own IPO.
+landlord side of the same buildout — and by afternoon that turned out to
+be one of three, with CyrusOne and Switch also weighing IPOs — and
+China's CXMT overtook Tencent to become the country's most valuable
+listed company, 17 days after its own IPO. Through the afternoon, a
+second Houthi strike on the same Saudi refinery still didn't reverse
+oil's decline, July producer prices and a weaker jobless-claims read
+sharpened the Fed's own open rate-hike debate, AMD moved to raise its
+largest-ever bond sale explicitly to help fund its own Anthropic stake,
+and Databricks closed a $5 billion round at a $190 billion valuation.

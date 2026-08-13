@@ -3,46 +3,66 @@ lens: world-news
 date: 2026-08-13
 status: building
 window_start: 2026-08-13T05:00:00-04:00
-as_of: 2026-08-13T10:00:00-04:00
+as_of: 2026-08-13T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-13
 
-*Digest-day ~5h in. Curated agentic-interim: `attention/world-news.yaml`'s
-mechanical GDELT/Google-News sweep (214 candidate/confirmed items,
-regenerated this session against the 08-12 to 08-13 window) used as the
-lead list, cross-checked against direct WebFetch of primary/wire sources
-— Al Jazeera, Times of Israel (liveblog), Kyiv Independent. WebSearch was
-unavailable for this pass (session budget exhausted before it started),
-so sourcing relied entirely on direct fetches of known wire/outlet pages
-rather than search; a few secondary leads (e.g. a Sevastopol sabotage
-report) were not independently corroborated and are omitted rather than
-run on a single unconfirmed mention. Two overnight Russia-Ukraine
-developments (a Russian drone barrage and Ukraine's own refinery strike,
-both landing before the 05:00 ET close) are carried in yesterday's
-finalized 08-12 digest rather than here, per that digest-day's actual
-boundary.*
+*Digest-day ~10h in; this is an EXTENSION of the morning pass (as_of moved
+10:00→15:00 ET), not a rebuild — the morning's Hormuz/Gaza/West
+Bank/Lebanon items are kept and only extended where the afternoon added
+real substance. Re-consulted `attention/world-news.yaml` (258
+candidate/confirmed items, mechanical GDELT/Google-News sweep) as the
+lead list; verification ran via direct WebFetch of primary/wire pages —
+re-fetched Al Jazeera and Times of Israel liveblogs, plus Jerusalem Post,
+Naharnet (Lebanon), UN News/press.un.org (today's Security Council Yemen
+session), and Al Jazeera's Colombia coverage. WebSearch was not used —
+this session's shared web-search quota was already exhausted before this
+pass started, so every claim below is sourced to a direct outlet fetch,
+not a search snippet. One yaml lead — a wire-syndicated report that a
+Pentagon review found 153 civilian deaths from US strikes on Houthi
+targets over the past year — could not be independently confirmed against
+a working link this session (every outlet tried 404'd or blocked the
+fetch); it is flagged, not written up as verified fact. Two overnight
+Russia-Ukraine developments that landed before 05:00 ET are carried in
+yesterday's finalized 08-12 digest rather than here, per that digest-day's
+actual boundary; nothing further moved on Russia-Ukraine in today's
+window.*
 
 ## Today's throughline
 
-The Hormuz standoff escalated from agency-level statements to direct
-words from each side's senior officials: Iran's Foreign Minister Abbas
-Araghchi warned the US risks a "bigger miscalculation" over the strait,
-while IRGC-affiliated Basij commander Hossein Taeb asserted it is
-"under Iran's control and management" — a direct contradiction of
-Trump's 08-12 "100% US Navy control" claim, now traded between the two
-governments' own principals rather than subordinate agencies. In Gaza,
-Israel carried out its second targeted strike this week (a Hamas company
-commander in Khan Younis), continuing the pattern resumed 08-12 after a
-seven-day pause. In the West Bank, a four-day-old settler siege of three
-Palestinian families in Qusra drew a US ambassador's rebuke as "an act of
-terror" — a rare public break in tone from the Trump administration. In
-Lebanon, PM Nawaf Salam escalated 08-12's condemnation of Israeli strikes
-into a formal "violation of international law" charge, while Beirut
-denied reports it had settled on a shortlist of countries to verify
-Hezbollah's disarmament. Colombia's earthquake toll and the DRC's Ebola
-count show no change from what was already logged 08-12.
+The afternoon sharpened three of the morning's four threads without
+resolving any of them. In Gaza, this morning's single Khan Younis strike
+was joined by a separate, later Gaza City strike that killed a man the
+IDF names as a Hamas commander and Hamas's own Interior Ministry
+identifies as its Gaza police chief — Jamal Mahmoud Abu Kamil, who the
+IDF says took part in the October 7, 2023 invasion. In the West Bank, the
+Qusra settler siege that drew a US ambassador's "act of terror" rebuke
+this morning escalated on two fronts at once: residents now accuse IDF
+soldiers of damaging their homes during the very operation meant to clear
+the besieging outposts, while — separately and notably — Yesha Council
+chair Yisrael Ganz and other settler leaders publicly condemned the siege
+themselves, warning it does "irreversible damage" to Israel and the
+settlement movement; a rare rebuke from inside the movement rather than
+from outside it. In Lebanon, PM Salam's political and legal rebukes
+gained an unexpected co-signer: an anonymous US State Department official
+told reporters that Defense Minister Katz's "here to stay" stance on
+south Lebanon is "not consistent with the commitments made in the
+framework" — the first daylight gap between Washington and Israel's own
+defense ministry on this specific point, not just Lebanese criticism —
+while Israeli and US officials joined Lebanon's own denial of the
+reported Hezbollah-verification country shortlist, broadening what this
+morning had only as a single Lebanese denial. The Hormuz standoff itself
+did not move past this morning's Araghchi/Taeb exchange, but the UN
+Security Council held an open debate on Yemen today warning that
+escalating Houthi strikes on Saudi Arabia and commercial shipping risk
+collapsing the fragile 2022 truce — a process-level development on the
+same conflict's Red Sea/Houthi dimension. Colombia's earthquake search
+operation entered its declared "final phase" as the 72-hour
+best-odds-of-survival window closed, still at 265 dead — a real update,
+even though the toll itself didn't move. Nothing today clears a general
+front-page bar independent of these lens threads.
 
 ## Items
 
@@ -55,72 +75,134 @@ count show no change from what was already logged 08-12.
   Trump's 08-12 "100% US Navy control" claim rather than resolving it —
   the standoff has moved from agency-level statements (Iran's Persian
   Gulf Strait Authority vs. Trump, 08-12) to direct words from each
-  side's own senior officials, with no new shipping-transit data yet to
-  arbitrate between the competing claims.
+  side's own senior officials. Nothing moved further on this specific
+  exchange through the afternoon — the same claims stood, unrebutted and
+  un-arbitrated by any new shipping-transit data, when the liveblog was
+  re-checked at 15:00 ET.
   ([Al Jazeera liveblog](https://www.aljazeera.com/news/liveblog/2026/8/13/iran-war-live-us-and-iran-exchange-opposing-claims-over-hormuz-control))
   <!-- k: t=iran-conflict-widening axis=world-news -->
 
+- **Separately, the UN Security Council held an open debate on Yemen
+  today (its 10208th meeting), warning that escalating Houthi missile
+  strikes on Saudi Arabia and commercial vessels risk collapsing the
+  fragile 2022 truce.** The session cited an 08-11 strike on a commercial
+  ship in the Bab al-Mandab Strait that killed six — already logged on
+  08-12's digest as part of the same widening war's Red Sea dimension —
+  and followed an 08-07 Council statement condemning the Houthi attacks.
+  No named speaker quotes were available from the public writeup, but the
+  meeting itself is a real, dated escalation of international concern
+  distinct from this morning's Hormuz-control exchange. Worth flagging
+  but not fully confirming: a separate wire-syndicated report (9 outlets
+  in this session's sweep — LA Times, KSAT, and others carrying what
+  reads as an AP story) says a Pentagon review found US strikes targeting
+  Houthi positions killed 153 civilians in Yemen over the past year; every
+  link tried for it either 404'd or blocked the fetch this session, so it
+  is noted here as unconfirmed rather than written up as established.
+  ([UN News](https://news.un.org/en/story/2026/08/1168131), [UN Press — SC/10208th meeting](https://press.un.org/en))
+  <!-- k: t=iran-conflict-widening axis=world-news -->
+
 - **Israel's military carried out its second targeted strike this week —
-  after resuming operations 08-12 following a seven-day pause — killing
-  a man in Khan Younis it described as a Hamas company commander
-  "planning attacks on Israeli forces," while Palestinian media
-  separately reported one death from an Israeli strike on a motorcycle
-  in the same area (the IDF had not commented on that second incident by
-  the time of reporting).** Continues the pattern logged 08-12: strikes
-  resuming inside the same disarmament-sequencing dispute — Hamas has
-  accepted "decommissioning" in principle, Netanyahu insists on full
-  disarmament before any withdrawal, and mediators have pushed Israel to
-  halt targeted operations to protect the process.
-  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/))
+  after resuming operations 08-12 following a seven-day pause — killing a
+  man in Khan Younis it described as a Hamas company commander "planning
+  attacks on Israeli forces," while Palestinian media separately reported
+  one death from an Israeli strike on a motorcycle in the same area (the
+  IDF had not commented on that second incident by the time of
+  reporting).** Separately and later, a strike in Gaza City killed a man
+  the IDF identifies as Jamal Mahmoud Abu Kamil, a Hamas commander it
+  says took part in the October 7, 2023 invasion and had continued
+  "advancing attacks against troops"; Hamas's own Interior Ministry
+  confirmed the death and named him its Gaza police chief. The killing is
+  independently reported by two Israeli outlets (Times of Israel,
+  Jerusalem Post) with Hamas's own confirmation of the death itself, but
+  no Palestinian or wire (Reuters/AP/AJ) account had it by the time of
+  this fetch — treat the "police chief" framing and circumstances as
+  IDF/Hamas-Ministry-sourced, not yet independently wire-verified.
+  Together these are at least the second and third targeted strikes this
+  week, continuing the pattern logged 08-12: operations resuming inside
+  the same disarmament-sequencing dispute — Hamas has accepted
+  "decommissioning" in principle, Netanyahu insists on full disarmament
+  before any withdrawal, and mediators have pushed Israel to halt
+  targeted operations to protect the process.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Jerusalem Post](https://www.jpost.com/israel-news))
   <!-- k: t=gaza-war axis=world-news -->
 
 - **A four-day-old siege of Palestinian homes in Qusra village (south of
-  Nablus, West Bank) drew a US diplomatic rebuke: Ambassador Mike
-  Huckabee called it "a horrific act of terror" meant "to intimidate and
-  harass this family."** Israeli settlers blockaded three families'
-  homes with rocks and tents, cutting water, electricity and supply
-  access, out of fear of losing the properties if they left. The IDF said
-  it dismantled two illegal outposts on Qusra's outskirts, confiscated
-  equipment and detained one Israeli, and separately issued — then
-  reportedly walked back — an evacuation order covering 15 Palestinian
-  homes; local residents said six families had already left before the
-  reversal. No injuries reported. A US ambassador publicly calling
-  settler action "terror" is a notable break in tone worth flagging even
-  though the underlying event (a land/access dispute, not combat) sits
-  below this lens's usual bar.
-  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/us-diplomat-calls-israeli-settler-siege-of-west-bank-homes-act-of-terror), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/))
+  Nablus, West Bank) drew a US diplomatic rebuke this morning: Ambassador
+  Mike Huckabee called it "a horrific act of terror" meant "to intimidate
+  and harass this family."** The afternoon escalated the story on two
+  separate fronts. First, Palestinian residents reported that IDF
+  soldiers damaged their homes during the same operation meant to
+  dismantle the besieging settler outposts — one family documented the
+  damage and said money and security-camera equipment had been taken.
+  Second, and more notably, Yesha Council chair Yisrael Ganz and other
+  settler leaders publicly condemned the Qusra violence themselves,
+  warning it causes "irreversible damage" to Israel and the settlement
+  movement — a rebuke from inside the settler movement, distinct from
+  this morning's US ambassadorial criticism from outside it; Huckabee in
+  turn praised Ganz's statement, framing it as a distinction between
+  "settlers" and "unsettlers" (extremists). Earlier IDF actions — two
+  outposts dismantled, one Israeli detained, an evacuation order for 15
+  homes issued and then reportedly walked back — stand as reported this
+  morning; no injuries reported at any point. A US ambassador calling
+  settler action "terror," now followed by a settler-movement leader's
+  own public condemnation, is a genuinely two-sided break in tone worth
+  flagging even though the underlying event (a land/access dispute, not
+  combat) sits below this lens's usual bar.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/us-diplomat-calls-israeli-settler-siege-of-west-bank-homes-act-of-terror), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Jerusalem Post](https://www.jpost.com/israel-news))
   <!-- k: t=gaza-war axis=world-news -->
 
 - **Lebanese PM Nawaf Salam rejected Israel's assertion that villages
   destroyed in south Lebanon were legitimate military targets, calling
   the strikes a violation of international law — escalating 08-12's
-  condemnation of Defense Minister Katz's "here to stay" statement from
-  a political rebuke into a formal legal charge.** Separately, a Lebanese
-  official denied Reuters reporting that Beirut had agreed with Israel on
-  a shortlist of countries (reportedly Britain, Italy, Switzerland,
-  Indonesia) to verify Hezbollah's disarmament, saying talks on a
-  verification mechanism with the US remain ongoing rather than settled —
-  another sign, read alongside 08-12's September Rome-round announcement,
-  that the diplomatic track keeps getting described more optimistically
-  than what's actually been agreed.
-  ([Al Jazeera](https://www.aljazeera.com/where/lebanon/), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/))
+  condemnation of Defense Minister Katz's "here to stay" statement from a
+  political rebuke into a formal legal charge.** The afternoon added a
+  second, more consequential voice to that criticism: an anonymous US
+  State Department official told Naharnet that a "permanent Israeli
+  military presence in South Lebanon is not consistent with the
+  commitments made in the framework or the long-term peace and security
+  of both states" — direct US pushback on Katz's own "under no
+  circumstances do we retreat" / "here to stay in the security zones in
+  Lebanon, Syria and Gaza" remarks, and the first time this specific
+  Katz position has drawn a US rebuke rather than only a Lebanese one.
+  Separately, Israeli and US officials (including a spokesperson for
+  Israel's Washington embassy) joined Lebanon's own denial that Beirut
+  had agreed with Israel on a shortlist of countries (reportedly Britain,
+  Italy, Switzerland, Indonesia) to verify Hezbollah's disarmament —
+  broadening this morning's single Lebanese-official denial into a
+  three-sided one, while all sides confirm talks on a verification
+  mechanism are ongoing rather than settled. Read alongside 08-12's
+  September Rome-round announcement, the diplomatic track keeps getting
+  described more optimistically than what's actually been agreed — and
+  now the gap between description and agreement runs through Washington
+  too, not just Beirut.
+  ([Al Jazeera](https://www.aljazeera.com/where/lebanon/), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Naharnet — Katz criticism](https://www.naharnet.com/stories/en/321812-us-official-criticizes-katz-s-remarks-on-staying-in-lebanon), [Naharnet — troop-deployment denial](https://www.naharnet.com/stories/en/321815-israeli-us-officials-deny-deal-reached-on-deploying-foreign-troops-to-lebanon))
   <!-- k: t=israel-lebanon-escalation axis=world-news -->
 
-- **Colombia's earthquake toll and the DRC's Ebola count show no change
-  from what was already logged on 08-12's finalize (265 dead/496 missing;
-  2,011 Ebola deaths).** Continued aid coverage (a 36-outlet GDELT
-  cluster on Colombian aid delivery) reflects ongoing response rather
-  than a new dated fact — international search-and-rescue teams from
-  Peru, Mexico and El Salvador are active, and Colombia's president
-  reiterated the recovery effort is "focused on the disappeared." Neither
-  story is repeated in full below; see 08-12 for the sourced detail.
+- **Colombia's earthquake search operation entered its declared "final
+  phase" today as rescue crews passed the 72-hour mark since Monday's
+  quake — the window when trapped survivors are statistically most
+  likely to still be found alive — with the death toll unchanged at 265
+  and "nearly 500" still missing (consistent with 08-12's 496).** Cali
+  Mayor Alejandro Eder: "That doesn't mean there won't be survivors
+  afterwards, but it is more difficult." President Abelardo de la
+  Espriella declared an economic emergency and pledged a fund to rebuild
+  hospitals, schools and infrastructure, calling it "a tragedy of
+  immense proportions"; official figures now put 3,500+ wounded and
+  9,550+ homes destroyed. This is a real, dated operational-status
+  change — not just ambient aid coverage — even though the headline toll
+  didn't move; it does not match a tracked thread slug, so no map edit
+  follows. The DRC's Ebola count shows no change from 08-12's logged
+  2,011 deaths; not repeated in full here.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/search-efforts-in-colombia-enter-final-phase-as-quake-toll-reaches-265))
   <!-- k: t= e= axis=world-news -->
 
 - **The Horn of Africa (Tigray) and Europe/Schengen show no verified new
-  dated development in this window.** Tigray's early-August clashes
-  remain de-escalated since 08-02; Italy's suspension of Spain from
-  Schengen (through 09-01) and Spain's reciprocal checks (since 08-10)
-  remain unchanged. Ambient `last_seen` bumps only.
+  dated development in this window** — re-checked against this
+  afternoon's `attention/world-news.yaml` sweep, which surfaced nothing
+  under either conflict's terms. Tigray's early-August clashes remain
+  de-escalated since 08-02; Italy's suspension of Spain from Schengen
+  (through 09-01) and Spain's reciprocal checks (since 08-10) remain
+  unchanged. Ambient `last_seen` bumps only.
   <!-- k: t=horn-of-africa-war,europe-migration-schengen axis=world-news -->
 
 ## ⏳ Upcoming & expected
@@ -128,48 +210,67 @@ count show no change from what was already logged 08-12.
 - No world-news-lens ledger flips today. `iran-oman-hormuz-deal-signing`
   (the Iran-Oman Hormuz interim deal) sits `pending` at its re-set due
   date of 2026-08-19 (slipped 08-12) — not due this window; today's
-  Araghchi/Taeb exchange above is the latest signal it remains far from
-  landing. No other world-news-lens items found in
-  `attention/upcoming.yaml` due through the next 7 days.
+  Araghchi/Taeb exchange and the UN's Yemen-truce warning are both
+  further signal it remains far from landing, not evidence toward it. No
+  other world-news-lens items found in `attention/upcoming.yaml` due
+  through the next 7 days.
 
 ## 🔄 Map changes
 
 - `~ threads/iran-conflict-widening` — real development (Araghchi's
-  "bigger miscalculation" warning, Taeb's Hormuz-control claim); timeline
-  entry written.
-- `~ threads/gaza-war` — real development (second targeted strike in
-  Khan Younis, Qusra settler-siege/Huckabee statement); timeline entry
-  written.
+  "bigger miscalculation" warning, Taeb's Hormuz-control claim, plus the
+  afternoon's UN Security Council Yemen debate); timeline entry extended.
+- `~ threads/gaza-war` — real development (Khan Younis strike, the
+  afternoon's separate Gaza City strike killing Abu Kamil, and the Qusra
+  siege's two-sided afternoon escalation — IDF-damage claim and the
+  settler-leader condemnation); timeline entry extended.
 - `~ threads/israel-lebanon-escalation` — real development (Salam's
-  "violation of international law" charge, verification-countries denial);
-  timeline entry written.
-- `~ threads/russia-ukraine-war` — no new development in this digest-day's
-  window; the overnight barrage/refinery-strike exchange that landed
-  before 05:00 ET belongs to and is logged on 08-12's finalized digest.
+  "violation of international law" charge, plus the afternoon's US State
+  Department criticism of Katz and the broadened three-sided denial of
+  the verification-countries shortlist); timeline entry extended.
+- `~ threads/russia-ukraine-war` — no new development in this
+  digest-day's window; the overnight barrage/refinery-strike exchange
+  that landed before 05:00 ET belongs to and is logged on 08-12's
+  finalized digest.
 - `~ threads/horn-of-africa-war`, `~ threads/europe-migration-schengen` —
-  ambient `last_seen` bumps only; no new dated development found.
+  ambient `last_seen` bumps only; no new dated development found, morning
+  or afternoon.
 - No map edit for Colombia earthquake or DRC Ebola; neither matches a
-  tracked thread slug and no new dated fact emerged today regardless.
+  tracked thread slug. Colombia did get a real dated update today (search
+  entering "final phase") — logged in Items above — even without a map
+  edit to attach it to.
 
 ## 🧵 Thread candidates
 
-- None offered today. The Colombia earthquake received its final offer
-  on 08-12 (per the template's "once, then drop" rule) and is not
-  repeated. The DRC Ebola outbreak was offered once, new, on 08-12; no
-  new development justifies a second offer today, so it is not repeated
-  either — both remain open for a word from Ben whenever convenient.
+- None offered this extension. The Colombia earthquake received its
+  final offer on 08-12 (per the template's "once, then drop" rule) and
+  is not repeated even though it has a real update today. The DRC Ebola
+  outbreak was offered once, new, on 08-12; no new development justifies
+  a second offer. This afternoon's re-sweep of `attention/world-news.yaml`
+  did not surface a new non-confirmed_thread candidate with a real
+  world-news story behind it — the highest-outlet candidates outside
+  already-tracked threads were a vague GDELT-only "INDONESIA: Make
+  statement" cluster (30 outlets, no retrievable substance behind the
+  category label) and the unconfirmed Pentagon/Houthi-civilian-toll
+  report flagged above (9 outlets, not independently verified) — neither
+  clears the bar for an offer. Colombia and DRC Ebola both remain open
+  for a word from Ben whenever convenient.
 
 ---
-Iran's Hormuz standoff escalated from agency-level statements to direct
-words between the two governments' senior officials: Iran's foreign
-minister warned the US risks a "bigger miscalculation," while an
-IRGC-affiliated commander claimed the strait is "under Iran's control" —
-directly contradicting Trump's claim from yesterday. Israel carried out
-its second targeted Gaza strike this week, in Khan Younis, while a
-four-day West Bank settler siege drew a rare US ambassador's rebuke as
-"an act of terror." Lebanon's prime minister escalated his criticism of
-Israeli south-Lebanon strikes into a formal violation-of-international-law
-charge, and Beirut denied a report it had settled verification terms for
-Hezbollah's disarmament. Nothing new on Colombia's earthquake or the DRC's
-Ebola outbreak since yesterday, and nothing today clears a general
+The afternoon extended three of this morning's four threads. A second,
+separate Gaza City strike killed a man Israel calls a Hamas commander and
+Hamas's own Interior Ministry calls its police chief, hours after this
+morning's Khan Younis strike; in the West Bank, the Qusra settler siege
+now draws condemnation from inside the settler movement itself, even as
+residents accuse IDF soldiers of damaging their homes during the same
+clearing operation. In Lebanon, an anonymous US State Department official
+directly rebuked Israeli Defense Minister Katz's "here to stay" stance as
+inconsistent with the agreed framework — the first US, not just Lebanese,
+pushback on that specific point — while Israeli and US officials joined
+Lebanon in denying the reported Hezbollah-verification country shortlist.
+The Hormuz standoff itself didn't move past this morning's exchange, but
+the UN Security Council held an open debate today warning Houthi strikes
+on Saudi Arabia and shipping risk collapsing Yemen's 2022 truce. Colombia's
+earthquake search entered its declared "final phase" at the 72-hour
+survival window, toll still at 265, and nothing today clears a general
 front-page bar independent of this lens's own conflict threads.
