@@ -101,6 +101,14 @@ PRIMARY_OWN_CHANNEL = {
     "home.nuhw.org", "nuhw.org", "nationalnursesunited.org",
     "unit42.paloaltonetworks.com", "news.stanford.edu", "chai.org",
     "psychotherapy.org.uk", "phti.org", "mhdi.uk", "gibsondunn.com",
+    # added 2026-08-11 (evening): each is the subject's OWN channel for the
+    # story we cited it for, which is what this class means — not a quality
+    # judgement. pacificoenergy.com is the developer of the Pecos County gas
+    # plant; newsletter.cleanview.co is the market-intelligence firm that
+    # traced that project from satellite imagery and permits, publishing its
+    # own analysis; jstreet.org is an advocacy organisation cited for its own
+    # position.
+    "pacificoenergy.com", "newsletter.cleanview.co", "jstreet.org",
 }
 # Structural own-channel markers, applied only to a domain that is NOT already
 # a known news publisher. Kept narrow on purpose.
