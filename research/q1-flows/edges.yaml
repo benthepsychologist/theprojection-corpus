@@ -2627,3 +2627,267 @@ edges:
       subagent this pass, independently corroborated per the subagent's
       report by Reuters/Bloomberg/NYT search snippets (not independently
       fetched by the orchestrating session).
+
+# ============================================================
+# 2026-08-12 pass (theprojection-corpus /daily session) — five new
+# edges instantiating the five new/extended nodes added at the end of
+# nodes.yaml this same pass. All sourcing relayed from same-session
+# WebFetch/SEC-filing verification by the daily curation agents rather
+# than independently re-fetched by this pass (reliability scored down
+# from the 0.9-0.95 tier reserved for a direct primary-source fetch in
+# this same pass, per this file's own established convention).
+# ============================================================
+- id: ext-public-equity-market--intel-capital--2026-stock-offering
+  from: ext/public-equity-market
+  to: intel/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Intel's first capital-node-instantiating edge in
+    this model. Announced 08-10 at $15B, upsized and priced 08-11 at
+    $20B on reported 5x institutional demand; this edge records the
+    priced/upsized figure, not the initial $15B announcement.
+  observations:
+  - value:
+      type: point
+      amount_usd: 20000000000
+      note: 210.5M shares at $95/share, upsized from an initial $15B
+        announcement (08-10) to $20B on pricing (08-11); explicitly to
+        fund the foundry buildout, stacked on top of the existing
+        CHIPS Act government equity stake
+    stage: contract
+    basis: cash
+    as_of: '2026-08-11'
+    period:
+      start: '2026-08-11'
+      end: '2026-08-11'
+      schedule: known
+    source:
+      label: Intel Newsroom — offering upsize and pricing announcement
+      url: https://newsroom.intel.com/corporate/intel-announces-upsize-and-pricing-of-20-billion-common-stock-offering
+      figure: 210.5 million shares of common stock at $95.00 per share for
+        gross proceeds of approximately $20 billion
+      as_of: '2026-08-11'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.85
+    rationale: Primary company press release, relayed via this pass's
+      daily-curation lens agents rather than independently re-fetched.
+- id: coreweave-2026-q2-ddtl-facility--coreweave-capital--2026-debt
+  from: coreweave/2026-q2-ddtl-facility
+  to: coreweave/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — disclosed alongside CoreWeave's Q2 2026 earnings
+    (08-11), distinct from the already-modeled 2026-ddtl55-facility
+    ($2.6B, disclosed 08-07) and 2025-ddtl5-amendment. This is a second,
+    separate facility disclosed four days later at the earnings print
+    itself, carrying its own DSCR covenant.
+  observations:
+  - value:
+      type: point
+      amount_usd: 3100000000
+      note: $3.1B delayed-draw term loan at SOFR+450, minimum
+        debt-service-coverage covenant of 1.35x effective after
+        2026-09-30; disclosed alongside Q2 earnings, which also showed
+        net interest expense of $640M for the quarter (vs. $267M a year
+        earlier) and over $10B in additional new unsecured debt and
+        convertible bonds raised the same quarter (that $10B+ figure is
+        NOT separately edge-modeled here — aggregate quarter-level
+        disclosure, not a single named facility — flagged as a coverage
+        gap rather than silently omitted)
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-11'
+    period:
+      start: '2026-08-11'
+      end: '2026-09-30'
+      schedule: known — DSCR covenant effective from 2026-09-30
+    source:
+      label: CoreWeave Q2 2026 earnings release / SEC 8-K exhibit
+      url: https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000362/crwv-20260811.htm
+      figure: $3.1 billion delayed-draw term loan, SOFR+450, 1.35x DSCR
+        covenant effective 2026-09-30; net interest expense $640M for
+        the quarter vs $267M a year earlier
+      as_of: '2026-08-11'
+    provenance_class: regulatory filing
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.8
+    rationale: SEC 8-K exhibit, relayed via this pass's daily-curation
+      research agent (CoreWeave-earnings ledger check) rather than
+      independently re-fetched this pass — scored below the 0.9-0.95
+      direct-fetch tier on that basis, not on doubt about the filing
+      itself.
+- id: lambda-2026-leveraged-loan--lambda-capital--2026-debt
+  from: lambda/2026-leveraged-loan
+  to: lambda/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Lambda's first debt-facility edge in this model
+    (its only prior capital edge was the 2024 Series C equity round).
+    Notable as a second neocloud, after CoreWeave, financing GPU
+    purchases from Nvidia with debt where Nvidia is simultaneously
+    investor, supplier, customer and counterparty.
+  observations:
+  - value:
+      type: point
+      amount_usd: 917000000
+      note: $917M leveraged loan, led by Morgan Stanley, reported nearly
+        $2B oversubscribed; proceeds to purchase Nvidia GPUs, on the same
+        circular-financing pattern (Nvidia as investor/supplier/customer/
+        counterparty at once) the BIS flagged in June 2026
+    stage: contract
+    basis: cash
+    as_of: '2026-08-12'
+    period:
+      start: '2026-08-12'
+      end: '2026-08-12'
+      schedule: known
+    source:
+      label: TheNextWeb (deal reporting, Morgan Stanley as lead)
+      url: https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley
+      figure: $917 million leveraged loan, led by Morgan Stanley, nearly
+        $2 billion oversubscribed
+      as_of: '2026-08-12'
+    provenance_class: news reporting
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.6
+    rationale: Secondary deal-reporting outlet, not Lambda's or Morgan
+      Stanley's own primary release — relayed via this pass's
+      daily-curation lens agent, not independently corroborated against
+      a primary filing this pass. Lower reliability tier reflects the
+      secondary sourcing, not a doubt beyond that.
+- id: tsmc-2026-q2-capex-approval--tsmc-foundry-construction--2026-capex
+  from: tsmc/capital
+  to: tsmc/foundry-construction
+  type: capex
+  destination_category: land, shell & materials
+  commitment_ref: null
+  coverage_state: aggregated
+  new_this_pass: true
+  coverage_note: NEW — TSMC board's Q2 2026 capex approval, additive to
+    the two prior tsmc/foundry-construction edges (2020 AZ intent, 2025
+    US expansion). Shared-asset caveat on tsmc/foundry-construction's own
+    node (AI-attributable share unresolved, F8) applies here too — this
+    edge records the board-approved total, not an AI-only allocation.
+  observations:
+  - value:
+      type: point
+      amount_usd: 29400000000
+      note: Board-approved capital appropriations of roughly $29.4B for
+        advanced-node capacity and packaging, cited to AI/HPC demand;
+        approved alongside a Sony image-sensor joint venture and a Q2
+        dividend in the same board action
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-11'
+    period:
+      start: '2026-08-11'
+      end: '2026-08-11'
+      schedule: known
+    source:
+      label: TSMC board capex-approval announcement (via TipRanks)
+      url: https://www.tipranks.com/news/company-announcements/tsmc-board-approves-us29-4-billion-capex-q2-dividend-and-sony-image-sensor-jv
+      figure: Board approves US$29.4 billion capex, Q2 dividend, and Sony
+        image sensor JV
+      as_of: '2026-08-11'
+    provenance_class: news reporting
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.55
+    rationale: Aggregator relay of a board announcement, not TSMC's own
+      investor-relations release directly fetched — relayed via this
+      pass's daily-curation lens agent. Lowest-reliability addition this
+      pass; a follow-up pass should re-source against TSMC's own IR site
+      before this figure is treated as settled.
+- id: ext-bond-market--google-capital--2026-25b-bond
+  from: ext/bond-market
+  to: google/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Google/Alphabet's third bond sale of 2026 per the
+    source found; this model has no prior debt edge for google/capital to
+    compare against, so "third of 2026" is carried as the source's own
+    claim, not independently reconciled against two earlier ones this
+    pass.
+  observations:
+  - value:
+      type: point
+      amount_usd: 25000000000
+      note: up to $25B in fresh debt for AI infrastructure, reported as
+        Alphabet's third bond sale of 2026, pushing total 2026 debt
+        raised toward ~$70B
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-12'
+    period:
+      start: '2026-08-12'
+      end: '2026-08-12'
+      schedule: known — targeted, not yet confirmed priced
+    source:
+      label: QuiverQuant (deal reporting)
+      url: https://www.quiverquant.com/news/Alphabet+Targets+Up+to+$25+Billion+Bond+Sale+Amid+Rising+AI+Infrastructure+Spending
+      figure: Alphabet targets up to $25 billion bond sale amid rising AI
+        infrastructure spending
+      as_of: '2026-08-12'
+    provenance_class: news reporting
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.55
+    rationale: Secondary aggregator, "targets" language means this is
+      pre-pricing — stage recorded as commitment, not contract, on that
+      basis. Relayed via this pass's daily-curation lens agent, not
+      independently corroborated against a primary filing this pass.
+- id: nvidia-capital--nvidia-2026-compute-financing-platforms--2026-commitment
+  from: nvidia/capital
+  to: nvidia/2026-compute-financing-platforms
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — see nodes.yaml's nvidia/2026-compute-financing-platforms
+    entry for the full structural-judgment-call note on why this is
+    modeled as a node+edge pair rather than a round. This edge records
+    only Nvidia's OWN sourced commitment (the $125B backstop figure); the
+    $500B platform-wide target is recorded on the node itself, not
+    duplicated here as if it were Nvidia's own dollar flow.
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 125000000000
+      note: Nvidia to "potentially backstop" up to $125B of the platforms'
+        total mobilized third-party capital — an upper bound on Nvidia's
+        own exposure, not a committed/delivered figure
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-11'
+    period:
+      start: '2026-08-11'
+      end: null
+      schedule: unknown — framework announcement, no drawdown schedule
+        disclosed
+    source:
+      label: Nvidia (company newsroom release)
+      url: https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+      figure: financing platforms designed to mobilize over $500 billion
+        of third-party capital for AI compute infrastructure; Nvidia to
+        potentially backstop up to $125 billion of the total
+      as_of: '2026-08-11'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-12
+    reliability: 0.75
+    rationale: Primary company press release, relayed via this pass's
+      daily-curation lens agent rather than independently re-fetched;
+      reliability held below the 0.9+ direct-fetch tier on that basis,
+      and further tempered by the upper-bound/framework nature of the
+      figure itself (an "up to," not a delivered amount).

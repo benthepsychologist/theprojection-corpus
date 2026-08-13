@@ -1669,3 +1669,132 @@ nodes:
     url: https://www.prnewswire.com/news-releases/humain-backs-xai-with-3-billion-series-e-investment-ahead-of-historic-spacex-merger-302691510.html
     figure: HUMAIN today announced a $3 billion strategic investment in xAI
     as_of: '2026-02-18'
+
+# ============================================================
+# 2026-08-12 pass (theprojection-corpus /daily session) — five items
+# surfaced by the same day's news sweep, none previously in this model.
+# Sourcing is same-session WebFetch/SEC-filing verification by the daily
+# curation agents, relayed here rather than independently re-fetched by
+# this pass — see each edge's rationale for exactly what that means for
+# reliability.
+# ============================================================
+- id: intel/capital
+  entity: Intel
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: NEW node this pass — Intel previously had no capital-facet node in
+    this model, only intel/foundry-construction. A real gap given Intel is
+    now an active AI-buildout equity issuer (CHIPS Act stake plus two
+    common-stock raises in three days, 08-10 and 08-11).
+  instantiated_by:
+  - ext-public-equity-market--intel-capital--2026-stock-offering
+- id: ext/apollo-global-management
+  entity: Apollo Global Management
+  activity: capital
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as a named co-arranger on
+    nvidia/2026-compute-financing-platforms; no independent research on
+    Apollo itself done this pass.
+  instantiated_by: []
+- id: ext/brookfield-asset-management
+  entity: Brookfield Asset Management
+  activity: capital
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as a named co-arranger on
+    nvidia/2026-compute-financing-platforms; no independent research on
+    Brookfield itself done this pass.
+  instantiated_by: []
+- id: ext/goldman-sachs
+  entity: Goldman Sachs
+  activity: capital
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as a named co-arranger on
+    nvidia/2026-compute-financing-platforms; no independent research on
+    Goldman Sachs itself done this pass.
+  instantiated_by: []
+- id: ext/kkr
+  entity: KKR
+  activity: capital
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as a named co-arranger on
+    nvidia/2026-compute-financing-platforms; no independent research on
+    KKR itself done this pass.
+  instantiated_by: []
+- id: nvidia/2026-compute-financing-platforms
+  kind: financing-platform
+  note: >
+    STRUCTURAL JUDGMENT CALL, flagged rather than silently resolved (same
+    practice as the Stargate `leads` question, PRINCIPLES.md P-02): this
+    does not fit the existing `kind: round` shape, because a round is
+    capital flowing INTO a company from investors, and this is the
+    inverse — Nvidia plus six asset managers (Apollo, BlackRock,
+    Blackstone, Brookfield, Goldman Sachs, KKR) announcing they will
+    jointly establish financing platforms designed to mobilize "over
+    $500 billion" of THIRD-PARTY capital for AI-compute-infrastructure
+    borrowers not yet named. No dollars have flowed to any named
+    recipient as of this pass — the $500B figure is a target/framework
+    figure, not a completed transaction, and is recorded as such (stage:
+    commitment) rather than backdated to look settled. The one concrete,
+    sourced dollar figure attributable to a single named entity is
+    Nvidia's own commitment to potentially backstop up to $125B of the
+    total — that piece is recorded as a real edge (see edges.yaml) from
+    nvidia/capital to this node. The six co-arrangers are recorded here
+    as named partners, not run through memberships.yaml's is_member_of
+    pattern — that pattern is specifically for investor-into-round
+    relationships and would misrepresent a co-arranger as an "investor
+    in a round," which none of them are.
+  partners: [nvidia/capital, blackrock/capital, blackstone/capital,
+    ext/apollo-global-management, ext/brookfield-asset-management,
+    ext/goldman-sachs, ext/kkr]
+  total_target_usd: 500000000000
+  sources:
+  - label: Nvidia (company newsroom release)
+    url: https://nvidianews.nvidia.com/news/nvidia-partners-with-apollo-blackrock-blackstone-brookfield-goldman-sachs-and-kkr-to-establish-ai-compute-infrastructure-financing-platforms-to-mobilize-over-500-billion-of-third-party-capital
+    figure: financing platforms designed to mobilize over $500 billion of
+      third-party capital for AI compute infrastructure; Nvidia to
+      potentially backstop up to $125 billion of the total
+    as_of: '2026-08-11'
+- id: coreweave/2026-q2-ddtl-facility
+  kind: round
+  company: CoreWeave
+  date: '2026-08-11'
+  round_type: delayed-draw term loan facility (disclosed at Q2 2026 earnings)
+  total_amount_usd: 3100000000
+  leads: []
+  note: NEW this pass. Administrative/collateral agent not named in the
+    source this pass relied on (relayed via the daily-curation earnings
+    ledger-check agent, not independently re-fetched) — leads left empty
+    per P-02 rather than guessed, same treatment as
+    coreweave/2025-ddtl5-amendment's aggregated lender record. Carries a
+    1.35x minimum debt-service-coverage covenant effective 2026-09-30.
+  sources:
+  - label: CoreWeave Q2 2026 earnings release / SEC 8-K exhibit
+    url: https://www.sec.gov/Archives/edgar/data/0001769628/000176962826000362/crwv-20260811.htm
+    figure: $3.1 billion delayed-draw term loan, SOFR+450, 1.35x DSCR
+      covenant effective 2026-09-30
+    as_of: '2026-08-11'
+- id: ext/morgan-stanley
+  entity: Morgan Stanley
+  activity: capital
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as lead on
+    lambda/2026-leveraged-loan; no independent research on Morgan Stanley
+    itself done this pass.
+  instantiated_by: []
+- id: lambda/2026-leveraged-loan
+  kind: round
+  company: Lambda
+  date: '2026-08-12'
+  round_type: leveraged loan
+  total_amount_usd: 917000000
+  leads: [ext/morgan-stanley]
+  note: NEW this pass. Lambda's first debt-facility node in this model
+    (its only prior node, lambda/capital, carries just the 2024 Series C
+    equity round). Reported nearly $2B oversubscribed; proceeds to
+    purchase Nvidia GPUs.
+  sources:
+  - label: TheNextWeb (deal reporting, Morgan Stanley as lead)
+    url: https://thenextweb.com/news/lambda-917-million-gpu-leveraged-loan-nvidia-morgan-stanley
+    figure: $917 million leveraged loan, led by Morgan Stanley, nearly
+      $2 billion oversubscribed
+    as_of: '2026-08-12'
