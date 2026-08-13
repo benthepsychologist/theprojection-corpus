@@ -77,14 +77,18 @@ SITE_DIR = os.environ.get("THEPROJECTION_SITE_DIR")
 # whole block lives only in this instance-owned adapter, so no other
 # kestrel instance (therapybulletin-data, etc.) is touched by it; each
 # instance's own adapter.py would need to opt in separately if it wanted
-# the same thing. The generator (sources/generate_audio_briefing.py)
-# needs a dedicated venv with kokoro+soundfile installed
-# (/workspace/.venvs/kokoro-tts, ~5.2GB — see that script's own docstring
-# for why it's not the adapter's normal Python env) plus system
-# espeak-ng/ffmpeg. Hardcoded rather than env-configurable for now,
-# matching this adapter's existing style of hardcoding what's genuinely
-# fixed about this one site (BEATS, LENS_OF_FILE) rather than adding
-# config surface for a value that has exactly one correct answer today.
+# the same thing. The generator (sources/generate_audio_briefing.py) calls
+# the Gemini API (needs GEMINI_API_KEY in this repo's own .env — switched
+# same-day from a self-hosted Kokoro model Ben heard and called "sounds
+# TERRIBLE"; see that script's own docstring for the full engine history
+# and why Gemini's TTS was picked over the other researched options) via a
+# dedicated venv with google-genai installed (/workspace/.venvs/kokoro-tts
+# — name is a holdover from the Kokoro era, not worth a rename) plus
+# system ffmpeg for the wav->mp3 step. Hardcoded rather than
+# env-configurable for now, matching this adapter's existing style of
+# hardcoding what's genuinely fixed about this one site (BEATS,
+# LENS_OF_FILE) rather than adding config surface for a value that has
+# exactly one correct answer today.
 AUDIO_VENV_PYTHON = "/workspace/.venvs/kokoro-tts/bin/python3"
 AUDIO_GEN_SCRIPT = os.path.join(ROOT, "sources", "generate_audio_briefing.py")
 
@@ -740,7 +744,7 @@ def stage_audio_briefing(site_dir, today_iso):
     finalized once, not re-narrated on every one of a day's several
     publish passes. Never fatal: audio is a nice-to-have layered on top
     of the text site, not a requirement of it, so any failure here
-    (venv missing, kokoro/espeak-ng broken, generation error) is caught,
+    (venv missing, GEMINI_API_KEY unset/invalid, API error) is caught,
     printed, and the rest of the publish run continues untouched —
     matching this function's neighbors' own graceful-skip style (see the
     readouts.json block above: "no readouts store yet — skipped").

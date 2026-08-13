@@ -10,23 +10,51 @@ browser speechSynthesis, no file produced) and this — a real mp3, narrated
 once a day in a fixed voice, for anyone who wants better quality than
 whatever TTS engine their own device happens to ship.
 
+ENGINE HISTORY: shipped first with self-hosted Kokoro TTS (free, ran
+locally). Ben's verdict after hearing it: "sounds TERRIBLE." Replaced
+same-day with the Gemini API's native TTS (`gemini-2.5-flash-preview-tts`)
+— independently reviewed as sounding "crisp, clear, incredibly natural"
+and the only one of the three real options researched (the others were
+Google Cloud TTS's Chirp3-HD and Azure Neural TTS, both viable fallbacks
+if this one ever proves unstable) that Google explicitly builds for this
+exact job — long-form narration, podcast/audiobook style — rather than
+general-purpose or conversational use. Tested end-to-end at full briefing
+length (3,323 chars / ~3m10s of audio, one API call, no truncation or
+errors) before being adopted as the default, specifically because
+Google's own docs warn of quality drift on outputs "longer than a few
+minutes" and this use case sits close to that boundary.
+
+Known risk, accepted deliberately: the model is still Preview, not GA —
+Google can change or deprecate it with less notice than a stable product.
+If it ever breaks or degrades, Chirp3-HD (`google-cloud-texttospeech`,
+GA, marketed for "news reading and broadcast content") is the researched
+fallback — not built here, since the Gemini path works today and building
+a second full path preemptively would be speculative engineering against
+a problem that hasn't happened. Kokoro's code is not kept as a fallback:
+its output is exactly the thing this switch was made to get away from,
+so silently falling back to it on a Gemini outage would be worse than
+just skipping the day's audio (which is what happens now — see
+publish/adapter.py's stage_audio_briefing(), which treats any failure
+here as non-fatal to the rest of the publish run).
+
 WHAT THIS NEEDS TO RUN (not yet baked into a shared image, so document it
 here rather than let it go tribal):
-  - A Python venv with `kokoro` + `soundfile` installed — see
-    /workspace/.venvs/kokoro-tts (NOT inside any git repo: this is local
-    build tooling, not instance data, same reasoning as gitignoring
-    artifacts/read/ derived output). ~5.2 GB on disk (kokoro pulls in
-    torch/transformers/spacy as real dependencies, not optional extras —
-    that weight is real, not a config mistake).
-  - System `espeak-ng` (`sudo apt-get install -y espeak-ng`) — kokoro's
-    phonemizer (misaki -> espeakng-loader) ships a hardcoded path from ITS
-    OWN CI build environment that doesn't exist on a fresh machine
-    ("/home/runner/work/espeakng-loader/..."); the two env vars below
-    override it to the real system install. Confirmed broken without this
-    fix, confirmed working with it, same session, both re-tested directly.
-  - System `ffmpeg`, for the wav -> mp3 conversion at the end (kokoro/
-    soundfile only writes wav; nothing in this pipeline writes mp3
-    natively).
+  - A `GEMINI_API_KEY` env var (this repo's own `.env` — same var name
+    `tools/publish.py` already loads instance `.env` files by convention).
+    A Google AI Studio key (aistudio.google.com/apikey), not a bare GCP
+    Console credential — the latter needs the Generative Language API
+    explicitly enabled and isn't the same issuance flow. Confirmed the
+    hard way: an initial key failed with API_KEY_INVALID; regenerating
+    via AI Studio directly fixed it immediately.
+  - A Python venv with `google-genai` installed — see
+    /workspace/.venvs/kokoro-tts (name is a holdover from the Kokoro era;
+    NOT inside any git repo, this is local build tooling, not instance
+    data, same reasoning as gitignoring artifacts/read/ derived output).
+    Reused rather than renamed since it already has the wav/mp3 tooling
+    this script also needs (soundfile no longer required by this path,
+    but ffmpeg still is).
+  - System `ffmpeg`, for the wav -> mp3 conversion at the end (the Gemini
+    API returns raw PCM, not an already-encoded file).
 
 Run it with:
     /workspace/.venvs/kokoro-tts/bin/python3 sources/generate_audio_briefing.py
@@ -37,15 +65,12 @@ prose (deliberately the same category of cleanup as ~/bin/spoken-extract's
 clean_for_speech() — strip markdown/headers/links/emoji, keep plain
 sentences — this is a second, independent implementation, not a shared
 import, since spoken-extract lives on a different machine entirely and
-narrates live chat, not a file), synthesizes it with Kokoro (voice
-af_heart, American English), and writes an mp3 to the given output
-directory (default: this repo's own artifacts/audio/, from which a
-publish step is expected to copy it into theprojection-site's static/).
-
-NOT YET WIRED INTO /daily OR tools/publish.py — this is a manual/callable
-script today, not an automated pipeline step. Wiring it into the actual
-publish flow touches kestrel's publish/adapter.py (engine code, out of
-this repo's write zone) — flag as a follow-up brief, don't build it here.
+narrates live chat, not a file), synthesizes it via the Gemini API in one
+call (voice "Kore"), and writes an mp3 to the given output directory
+(default: this repo's own artifacts/audio/, from which publish/adapter.py's
+stage_audio_briefing() copies it into theprojection-site's static/ as
+part of every normal `/daily` publish pass — see that function for the
+automatic-generation wiring; this script is the piece it shells out to).
 """
 
 import argparse
@@ -53,6 +78,7 @@ import os
 import re
 import subprocess
 import sys
+import wave
 from datetime import date
 from pathlib import Path
 
@@ -60,14 +86,8 @@ REPO_ROOT = Path(__file__).resolve().parent.parent
 DIGESTS_DIR = REPO_ROOT / "artifacts" / "digests" / "daily"
 DEFAULT_OUT_DIR = REPO_ROOT / "artifacts" / "audio"
 
-# Same override this file's own docstring explains: kokoro's phonemizer
-# ships a build-time path from its own CI runner that doesn't exist here.
-os.environ.setdefault(
-    "PHONEMIZER_ESPEAK_LIBRARY", "/usr/lib/x86_64-linux-gnu/libespeak-ng.so.1"
-)
-os.environ.setdefault(
-    "ESPEAK_DATA_PATH", "/usr/lib/x86_64-linux-gnu/espeak-ng-data"
-)
+GEMINI_TTS_MODEL = "gemini-2.5-flash-preview-tts"
+GEMINI_TTS_VOICE = "Kore"
 
 
 def clean_for_speech(text):
@@ -119,18 +139,38 @@ def load_front_digest_text(digest_date):
 
 
 def synthesize(text, wav_path):
-    from kokoro import KPipeline
-    import soundfile as sf
-    import numpy as np
+    from google import genai
+    from google.genai import types
 
-    pipeline = KPipeline(lang_code="a")
-    chunks = []
-    for _, _, audio in pipeline(text, voice="af_heart"):
-        chunks.append(audio)
-    if not chunks:
-        sys.exit("kokoro produced no audio chunks")
-    full = np.concatenate([c.numpy() if hasattr(c, "numpy") else c for c in chunks])
-    sf.write(str(wav_path), full, 24000)
+    api_key = os.environ.get("GEMINI_API_KEY")
+    if not api_key:
+        sys.exit("GEMINI_API_KEY not set — see this script's own docstring")
+
+    client = genai.Client(api_key=api_key)
+    response = client.models.generate_content(
+        model=GEMINI_TTS_MODEL,
+        contents="Read this in a clear, measured news-narration tone: " + text,
+        config=types.GenerateContentConfig(
+            response_modalities=["AUDIO"],
+            speech_config=types.SpeechConfig(
+                voice_config=types.VoiceConfig(
+                    prebuilt_voice_config=types.PrebuiltVoiceConfig(
+                        voice_name=GEMINI_TTS_VOICE
+                    )
+                )
+            ),
+        ),
+    )
+    audio_bytes = response.candidates[0].content.parts[0].inline_data.data
+    if not audio_bytes:
+        sys.exit("Gemini TTS returned no audio data")
+
+    # The API returns raw 24kHz/16-bit/mono PCM, not an encoded file.
+    with wave.open(str(wav_path), "wb") as wf:
+        wf.setnchannels(1)
+        wf.setsampwidth(2)
+        wf.setframerate(24000)
+        wf.writeframes(audio_bytes)
 
 
 def wav_to_mp3(wav_path, mp3_path):
