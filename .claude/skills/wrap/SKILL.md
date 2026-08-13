@@ -1,9 +1,4 @@
-<!-- LOCAL skill — NOT kit-rendered. No kit stamp on purpose: this file was
-     drafted in-repo (2026-08-07) and is not tracked in .claude/kit.yaml, so
-     kit.py sync ignores it entirely. If it proves out and should become
-     canonical for attention instances (an `attention/wrap` library entry,
-     sibling of attention/start), that's a brief to /workspace/kestrel/INBOX/
-     — never a direct library edit. Ben's call. -->
+<!-- kit: attention/wrap@2026-08-13.2 — canonical: /workspace/kestrel/library/skills/attention/wrap/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
 
 ---
 name: wrap
@@ -21,8 +16,8 @@ watching the pipeline.
 
 **Scope — what this skill writes, and what it does not** (the
 cloud-governor discipline): it writes `STATUS.md`, `log.md`, git commits
-and pushes in the two zone repos (this repo + `theprojection-site`), and
-at most one uncommitted brief into `/workspace/kestrel/INBOX/`. It does
+and pushes in the two zone repos (this repo + the site sibling), and at
+most one uncommitted brief into `/workspace/kestrel/INBOX/`. It does
 **NOT** write digest content or frontmatter (that's `/daily`'s state
 machine), `attention/` steering files (that's `/steer`/`/daily`), or
 publish content (that's `/publish`). A wrap that finds those needing work
@@ -96,8 +91,8 @@ awaiting Ben's word — name those in the report).
 
 ### 4 — site repo state, BEFORE any push decision
 
-Check `theprojection-site`'s working tree. Two different situations,
-never conflated:
+Check the site sibling's (`/workspace/theprojection-site`) working tree. Two different
+situations, never conflated:
 
 - **Hand-authored edits** (layouts, css, hand-written content like
   `methodology.md`) → their **own commit with a real message, now**.
@@ -113,40 +108,40 @@ never conflated:
 
 - `git push origin main` on this repo.
 - **Verify, never assume:** `git log @{u}..` must print **nothing** on
-  BOTH this repo and `theprojection-site`. A clean `git status` is not
+  BOTH this repo and `/workspace/theprojection-site`. A clean `git status` is not
   evidence — only the upstream check is (AGENTS.md §Session close).
-- **kestrel: read-only check, flag-never-push.** `git -C
-  /workspace/kestrel log @{u}..` — unpushed commits there mean its
+- **Engine repo (`/workspace/kestrel`): read-only check, flag-never-push.**
+  `git -C /workspace/kestrel log @{u}..` — unpushed commits there mean its
   resident session missed a push; that's a report flag addressed to Ben,
   and pushing it from here is a write-zone violation even though it
   would "help."
-- ⏱ **Timing caveat (root-caused 2026-08-07):** `hugo` runs ~2 min and
-  `publish.py --push` ~1–2 min; a chained command on the default 120s
-  Bash timeout got its tail silently killed — the build succeeded and
-  the push never ran, leaving a committed-but-unpushed site that looked
-  done. Long site commands get explicit timeouts (≥300s) and their own
-  invocation, never the tail of a chain.
+- ⏱ **Timing caveat (root-caused 2026-08-07, from a real incident):**
+  `hugo` runs ~2 min and `publish.py --push` ~1–2 min. A chained command
+  on the default 120s Bash timeout **got its tail silently killed** — the
+  build succeeded and the push never ran, leaving a committed-but-unpushed
+  site that looked done. Long site commands get explicit timeouts (≥300s)
+  and their own invocation, never the tail of a chain.
 
 ### 6 — cross-repo hand-offs, then the report
 
 - If `AGENTS.md`/`CLAUDE.md`/kit-tracked skills changed this session and
   the change should reach the canonical template: **one uncommitted
-  brief into `/workspace/kestrel/INBOX/`** (the `/life:handoff`
-  protocol) — write the file, commit nothing there, touch nothing else.
+  brief into `/workspace/kestrel/INBOX/`** (the `/life:handoff` protocol) —
+  write the file, commit nothing there, touch nothing else.
 - **The report** — the wrap card, house style: one-line verdict; a table
   of lanes (daily state · map counts with deltas · publishes today with
   build ids · push state ×3 repos); what's waiting on Ben (unanswered
   candidates, open decisions — each a self-contained ask, never a bare
   label); the obvious next move (`/daily` finalizable at HH:MM, `/week`
-  due, etc.); flags (kestrel unpushed, `kit.py sync` dirty — expected
+  due, etc.); flags (engine repo unpushed, `kit.py sync` dirty — expected
   and correct, say so — read-page size over the 600 KB soft cap, dead
   feeds). Report only — fix nothing from inside the report.
 
 ## Do not
 
-- Do not push, commit, build, or lint in **kestrel** — flag, never fix
-  (write zone, Ben 2026-08-04). The INBOX drop is the one sanctioned
-  write, and it stays uncommitted.
+- Do not push, commit, build, or lint in the **engine repo**
+  (`/workspace/kestrel`) — flag, never fix (write zone, Ben 2026-08-04). The
+  INBOX drop is the one sanctioned write, and it stays uncommitted.
 - Do not flip digest frontmatter, edit `attention/` steering files, or
   run a publish from here — name the need, leave it to `/daily`,
   `/steer`, `/publish`.

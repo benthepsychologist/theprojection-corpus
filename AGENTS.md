@@ -1,4 +1,6 @@
-# AGENTS.md — operating theprojection-corpus
+<!-- kit: attention/AGENTS@2026-08-13.2 — canonical: /workspace/kestrel/library/agentdocs/attention/AGENTS.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+
+# AGENTS.md — operating theprojection
 
 You are operating Ben's personal intelligence layer — this repo is
 **instance #1** of the kestrel engine (engine/instance split, 2026-07-31).
@@ -217,10 +219,8 @@ through `attention/`.
 
 ## The operating rhythm — commands + cadence (set 2026-07-20)
 
-The loop runs on nine in-repo slash commands (`.claude/skills/`) — eight
-kit-rendered against fixed templates (`templates/`), plus `/wrap`, a
-LOCAL skill (2026-08-07, deliberately un-kit-tracked; proposed to
-kestrel's library as `attention/wrap` via INBOX brief):
+The loop runs on nine in-repo slash commands (`.claude/skills/`), rendered
+against fixed templates (`templates/`):
 
 | command | cadence | what |
 | --- | --- | --- |
@@ -232,43 +232,52 @@ kestrel's library as `attention/wrap` via INBOX brief):
 | `/map` | any time, read-only | status card: lenses, thread freshness, radar, pipeline state, gates, board |
 | `/classify <actor>` | on demand | propose an actor's node kind (person/house/corp/state/agency/group) + level + posture/condition + four-axis estimate (commanded_capital/thrust/gravity/optionality) → apply on confirm; `/classify postures` sweeps provisional postures (the logic `/week` runs) |
 | `/publish [--push]` | on demand, separate from `/daily` (not auto-chained) | push public-flagged threads to theprojection.org; stages only by default, `--push` commits/pushes/deploys live — no confirmation needed on this pipeline (Ben, 2026-07-23), plus a quick fact-check that the site's own `about.md`/`README.md` claims still match this repo's actual publish behavior |
-| `/wrap` | any time — a CHECKPOINT, not a closer (runs fine several times a day) | persist the session: sanity gate → STATUS.md refresh (anti-rot, rewrite-never-patch) → log.md append → commit incl. provenance receipts → site-tree triage → push + `git log @{u}..` verification on both zone repos (kestrel checked read-only, flag-never-push) → wrap card |
+| `/wrap` | any time — a **CHECKPOINT, not a closer** (runs fine several times a day) | persist the session: sanity gate → `STATUS.md` refresh (anti-rot, rewrite-never-patch) → `log.md` append → commit incl. provenance receipts → site-tree triage → push + `git log @{u}..` verification on both zone repos (the engine checked read-only, **flag-never-push**) → wrap card |
 
 Re-running `/daily` later the same day is safe (building digests rebuild in
 place). **Collection is collectors-first since 2026-07-28** (18 registered
 sources via `tools/collect.py` as of 2026-08-03 — grown from the original
 12; agents only fill gaps + tier-2 depth — the skill's dispatch plan);
-curation/critic remain agentic until P3 lands. **Known live limitation —
-re-measured twice since, both times faster than the prior claim.** The
-runner is a plain sequential loop with no concurrency. 08-04's measurement
-put a full run at ~59 minutes (17/18, exit 0) — that has NOT held: **08-06's
-run completed all 18/18 in ~17 minutes** (13:02:06→13:19:12 UTC, timed off
-the run's own provenance-manifest timestamps), with comparable or larger
-per-collector volumes (`google_news_rss` alone kept 8,604 items), **and
-08-07's full morning run repeated the ~17-minute figure** (8,663 items
-kept by google_news_rss) — the fast case is now the observed norm three
-runs running, the ~59-minute 08-04 run the outlier. Still no identified
-cause for the swing. Treat both figures as real
-same-tool measurements on different days, not a resolved constant — budget
-for the slow case, don't be surprised by the fast one. 08-04's per-collector
-breakdown (**semantic_scholar ~23 min / 39%, google_news_rss ~14 min / 24%,
-gdelt ~11½ min / 20%**, everything else ~10 min combined) is the last time
-that split was independently re-measured; it may not still hold at the new
-speed. Do not parallelise *inside* `semantic_scholar` regardless — `base.
-pace()` is a plain `time.sleep()`, not a shared limiter, so concurrent
-workers there would 429-storm. ⚠️ **`KESTREL_CONTACT_EMAIL` is NOT
-persistently set** — the 08-04 note here said "that variable is now set,"
-but that was true only for that session's own ephemeral shell; 08-06 found
-it absent from this repo's `.env`, `~/.bashrc`/`.profile`/`.zshrc`, and
-`/etc/environment`, and had to set it by hand
-(`KESTREL_CONTACT_EMAIL=ben@getmensio.com`, matching `sources/API-SIGNUP.md`'s
-documented contact) for `federal_register`/`gdelt` to run keyed rather than
-fail. Set it explicitly at the start of every `/daily` run until it's baked
-into the container/instance setup — don't assume a prior session's fix
-persisted. Measurements and the fix options are in kestrel's INBOX
-(`2026-08-04-…-collect-py-timings-remeasured.md`, amending the 07-31 item);
-the engine repo owns the fix, and this 08-06 re-measurement is worth a
-follow-up brief there too.
+curation/critic remain agentic until P3 lands. **Sweep runtime — the
+figures here were stale twice and are now reconciled (2026-08-13).** The
+short version: **a full sweep runs in roughly a third of the time the old
+note claimed, because the engine changed underneath it.**
+
+`tools/collect.py` **stopped running collectors serially on 2026-08-05** —
+it now fans them out across a thread pool, so wall clock collapses toward
+the single slowest collector's own lane instead of summing every lane.
+That is the cause of the drop, and it is worth stating plainly because the
+instance-side sessions that re-measured it could see the speedup but not
+its reason:
+
+- **~59 min** — measured 2026-08-04, **pre-parallelisation**, 17/18 sources,
+  exit 0. Correct for its day; obsolete now.
+- **~17 min** — measured 08-06 (18/18, timed off the run's own provenance
+  manifests) and repeated 08-07, both **post-parallelisation**, at
+  comparable or larger volumes.
+
+⚠️ The 08-04 per-collector split (**semantic_scholar ~23 min / 39%,
+google_news_rss ~14 min / 24%, gdelt ~11½ min / 20%**) is a **serial-era**
+measurement and almost certainly no longer describes where time goes —
+treat it as history, not a budget. It does **not** hang and is **not**
+killed by a timeout; an earlier claim that it was ("killed on three
+consecutive runs, 15/18 sources") was an artefact of reading alphabetical
+progress mid-run while GDELT failed separately in milliseconds.
+
+⚠️ **Do not parallelise *inside* `semantic_scholar`** regardless of the
+above — `base.pace()` is a plain `time.sleep()`, not a shared limiter, so
+concurrent workers in that one lane would 429-storm. The fan-out is across
+collectors, never within one.
+
+⚠️ **`KESTREL_CONTACT_EMAIL` is NOT persistently set**, correcting this
+file's own earlier "that variable is now set" — which was true only of the
+session that wrote it. A later check found it absent from the instance's
+`.env`, `~/.bashrc`/`.profile`/`.zshrc`, and `/etc/environment`. Set it
+explicitly at the start of a run (matching the contact documented in the
+instance's own source docs) or `federal_register`/`gdelt` run unkeyed.
+Measurements and the fix options are in kestrel's INBOX
+(`2026-08-04-…-collect-py-timings-
+remeasured.md`, amending the 07-31 item); the engine repo owns the fix.
 
 ## The steering loop (the growth mechanics — draft, Ben 2026-07-20)
 
@@ -345,83 +354,78 @@ doing now" roll-up shown atop each `/map/<slug>/` page). The synthesis is
 refreshed on `/daily` (for actors that moved) and `/week` (full pass);
 it's a roll-up of threads + posture, not fresh research.
 
-## ⚠️ THIS FILE IS KIT-MANAGED — edit it freely, but never back-port it yourself
+## ⚠️ THIS FILE IS KIT-RENDERED — a local edit is legitimate, but it doesn't reach kestrel by itself
 
-`AGENTS.md` is rendered from the attention agentdoc template in
-`/workspace/kestrel/library/` and tracked by hash in `.claude/kit.yaml`.
-So are `CLAUDE.md` and eight of the nine files under `.claude/skills/` —
-`/wrap` is the exception: a LOCAL skill, not in `kit.yaml`, invisible to
-`kit.py sync` by design (2026-08-07).
+`AGENTS.md` is rendered from
+`/workspace/kestrel/library/agentdocs/attention/AGENTS.md.tmpl` and tracked
+by hash in `.claude/kit.yaml`. Editing it here is fine — that's how a real
+correction gets made and read immediately — but it is a **local** edit
+only. It does not update the canonical template, and it is not supposed
+to.
 
-**You may still edit them — this is your repo.** What you must NOT do is go
-into kestrel to reconcile the template afterwards. **kestrel is outside this
-session's write zone** (Ben, 2026-08-04; see `project_repo_scope.md` in this
-project's memory and the "Your zone of responsibility" section of the global
-`~/.claude/CLAUDE.md`).
+**Jurisdiction is explicit, not assumed** (Ben, 2026-08-04, after a
+session edited kestrel's engine code — `tools/render_read.py` and a
+structural change to `tools/kit.py`'s selection logic — while only asked
+to fix two other repos: *"your zone of responsibility is this repo and
+its site. You should NEVER EVER edit ANYTHING in any other repo without
+explicit permission for that specific repo."*). **This session's write
+zone is `/workspace/theprojection-corpus` and `/workspace/theprojection-site` only.** `/workspace/kestrel`
+— kestrel, the engine — is out of zone. Being right about what the
+template should say is not authority to write it there yourself.
 
-**Therefore `kit.py sync` will report this instance `dirty`, and that is the
-correct state — not a problem to fix.** It accurately says "the instance has
-diverged; its owner must act." Kit **never auto-applies to a dirty target**,
-so a divergence here cannot be silently overwritten. Clearing it is
-kestrel's job, prompted by a brief.
+**What that means in practice:**
 
-**So, after editing this file or `CLAUDE.md`:** if the change should reach
-the canonical template, **drop a brief into `/workspace/kestrel/INBOX/`**
-describing it — write the file, do not commit it, do nothing else in that
-repo. That is the sanctioned channel and it needs no permission.
+- After editing this file (or `CLAUDE.md`), **`kit.py sync` will report
+  this instance `dirty`. That is the correct outcome, not a fault to
+  clear.** It means "this instance has diverged from the template; its
+  owner should look," and `kit.py` never auto-applies to a dirty target,
+  so nothing is at risk in the meantime.
+- **Never** run `kit.py install --adopt` from here to pull the fix back
+  into the canonical template — that command writes into
+  `/workspace/kestrel`, which is exactly the out-of-zone write above.
+- Instead, write up the change as a brief:
+  `/workspace/kestrel/INBOX/<date>-theprojection-<slug>.md` (format:
+  global `CLAUDE.md`'s "Handing dev work to another repo" section).
+  **Drop it there; do not commit it, and do not push kestrel.** kestrel's
+  own resident agent or Ben decides whether it belongs in the template.
 
-⛔ **Superseded, 2026-08-04:** an earlier version of this section instructed
-running `kit.py install --adopt` and re-tokenizing the template by hand.
-**Do not do that.** It was written before the write-zone rule and is exactly
-the pattern that rule exists to stop. Two other places in this repo still
-carry the same superseded advice — `README.md`'s `.claude/skills/` row (now
-corrected) and the line-1 header of each of the eight `SKILL.md` files, which
-say "edit the canonical copy... and run `/sync-kits`". **Leave those headers
-alone** (correcting them locally would drift all eight, and `/sync-kits` does
-not exist here) and ignore what they say.
-
-**The drift this section was originally written about, kept because it is
-the reason any of this is documented:** between 2026-08-01 and 2026-08-04 the
-flash lifetime rules (discipline 10) were written straight into this file and
-never reached the template, which did not contain them at all; a kit dry-run
-on 08-04 wanted to replace this file with a version missing them *and*
-missing the engine-split intro. The dirty-target guard is what stopped it.
+**Why this replaced the old instruction (2026-08-04):** the previous
+version of this section told the reader to `cd /workspace/kestrel` and run
+`kit.py install --adopt` themselves, then push kestrel — written in good
+faith on 2026-08-01 to stop a real drift problem, but it institutionalized
+the exact write the zone rule above now prohibits. It was itself one of
+three places this instance's docs told a reader to go edit kestrel
+directly; the fix is filed as a brief, not applied here, for the same
+reason everything else above routes through one.
 
 ## Session close
 
-**`/wrap` (local skill, 2026-08-07) operationalizes this section** — it
-adds the sanity gate, the STATUS.md anti-rot refresh, the site-tree
-triage, and the verified-push checks around the three steps below.
-Running `/wrap` satisfies this section; the steps stay listed because
-they're the contract the skill implements:
+End substantive sessions with these steps, in order:
 
 1. **Append to `log.md`** (create on first real session): what ran, what
    surfaced, what changed in `attention/`, where to pick up.
-2. **Commit and PUSH this repo (theprojection-corpus)** — `git push origin
+2. **Commit and PUSH this repo (theprojection)** — `git push origin
    main`. Commit anything outstanding first, including the run's
    **provenance manifests** (discipline 2: an artifact without a re-fetch
    manifest is incomplete); they are receipts, not scratch, and are easy
    to leave untracked because the publisher writes them after the work is
    already committed.
-3. **If you edited `AGENTS.md` or `CLAUDE.md` and the change should reach the
-   canonical template, drop a brief into `/workspace/kestrel/INBOX/`** — write
-   the file, do not commit it, touch nothing else there. Do **not** push
-   kestrel; it is outside this session's write zone. Leaving this instance
-   `dirty` in `kit.py sync` is the intended outcome (see the kit-managed
-   section above).
+3. **If you edited `AGENTS.md` or `CLAUDE.md`, do not back-port them
+   yourself.** Per the jurisdiction rule above, file a brief in
+   `/workspace/kestrel/INBOX/` describing the change and why, and stop there
+   — no commit, no push of `/workspace/kestrel`. This instance showing
+   `dirty` in `kit.py sync` afterward is expected until kestrel's owner
+   acts on the brief.
 
 **Why step 2 is written down** (Ben, 2026-07-29, pre-split — the reasoning
-holds, only the repo name changed): `/publish --push` pushes
-**theprojection-site**, not this repo — it fires the site's deploy hook
-and nothing else. Nothing in `/daily`, `/publish` or any other command
+holds, only the repo name changed): `/publish --push` pushes the **site
+repo** (`/workspace/theprojection-site`), not this repo — it fires the site's deploy
+hook and nothing else. Nothing in `/daily`, `/publish` or any other command
 ever pushes this repo on its own, so unpushed work accumulates *silently
 across sessions* and looks fine locally. Found 2026-07-29 (pre-split, in
 what was then kestrel's own working tree) with **17 commits unpushed** —
 six from that session and **ten inherited from the previous evening's**,
 which had also closed without pushing. A clean `git status` is not
-evidence the work is safe; check `git log @{u}..` on **this repo and
-`/workspace/theprojection-site`** — the two in this session's write zone,
-and neither pushes the other — before calling a session done. (Checking
-kestrel's status read-only is harmless, but you should have nothing to push
-there: it is outside the write zone. Unpushed commits in kestrel mean
-something went wrong, not that you forgot a push.)
+evidence the work is safe; check `git log @{u}..` — on this repo AND on
+`/workspace/kestrel` and `/workspace/theprojection-site`, since none of
+the three ever push each other — before calling a session done.

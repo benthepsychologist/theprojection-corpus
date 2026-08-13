@@ -1,4 +1,6 @@
-# CLAUDE.md — theprojection-corpus (instance #1)
+<!-- kit: attention/CLAUDE@2026-08-13.2 — canonical: /workspace/kestrel/library/agentdocs/attention/CLAUDE.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+
+# CLAUDE.md — theprojection (instance #1)
 
 Ben's personal intelligence layer: **buffer + extract, never own the source
 data**. Four lenses (ai · global-capital · mental-health · world-news); the
@@ -8,11 +10,11 @@ it (rendered page + daily digest archive; AGENTS.md disciplines 7–8).
 
 ## The engine/instance split (2026-07-31)
 
-This repo is **instance #1** of the kestrel engine — the DATA (attention/,
+This repo is an instance of the kestrel engine — the DATA (attention/,
 artifacts/, sources/, provenance/, templates/) plus the operating skills
 and docs. The CODE (collectors/, tools/) lives in `/workspace/kestrel`,
-which tends this repo and `therapybulletin-data` both. `kestrel.yaml` at this
-root is the instance manifest.
+which tends this repo and every sibling instance registered in its
+`instances.yaml`. `kestrel.yaml` at this root is the instance manifest.
 
 **Invocation rule:** any `tools/*.py` mentioned in the skills/docs means
 the ENGINE's tools, run as:
@@ -34,8 +36,8 @@ history (tag `pre-engine-split` and earlier).
 a node + claim graph — schema shapes + pipeline).
 
 **The commands:** `/start` · `/daily` · `/week` · `/steer` · `/crawl` ·
-`/map` · `/publish` · `/classify` (kit-installed) · `/wrap` (local,
-un-kit-tracked) (`.claude/skills/`). Templates in `templates/`.
+`/map` · `/publish` · `/classify` (`.claude/skills/`). Templates in
+`templates/`.
 Zero coupling to sibling corpora — never read them; everything needed is
 distilled in `REBUILD-NOTES.md`.
 
