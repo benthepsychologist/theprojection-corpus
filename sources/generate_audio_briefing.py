@@ -89,15 +89,57 @@ DEFAULT_OUT_DIR = REPO_ROOT / "artifacts" / "audio"
 GEMINI_TTS_MODEL = "gemini-2.5-flash-preview-tts"
 GEMINI_TTS_VOICE = "Kore"
 
+_MONTH_NAMES = [
+    "January", "February", "March", "April", "May", "June",
+    "July", "August", "September", "October", "November", "December",
+]
+
+
+def _spoken_date(month, day, year=None):
+    """(8, 13, '2026') -> 'August 13, 2026'; (8, 13) -> 'August 13'.
+    Falls back to returning None (caller keeps the original text) for
+    anything outside a real calendar date, so a coincidental MM-DD-shaped
+    number is never silently mangled."""
+    if not (1 <= month <= 12 and 1 <= day <= 31):
+        return None
+    spoken = f"{_MONTH_NAMES[month - 1]} {day}"
+    return f"{spoken}, {year}" if year else spoken
+
 
 def clean_for_speech(text):
     """Markdown -> plain speakable prose. Independent of, but the same
     category of cleanup as, ~/bin/spoken-extract's clean_for_speech()."""
+    # Dates -> spoken form (2026-08-13 real listen-test finding: Gemini TTS
+    # read "08-13" as "oh-eight thirteen" rather than "August 13th" — minor,
+    # but a plain giveaway of machine-read text a human wouldn't produce).
+    # Full ISO dates first (they're everywhere in this repo's own dated
+    # references, e.g. "resolved 2026-08-05"), then this repo's own bare
+    # MM-DD shorthand for cross-referencing other digest-days (e.g. "since
+    # 08-10") once the four-digit-year form can no longer swallow them.
+    text = re.sub(
+        r"\b(\d{4})-(\d{2})-(\d{2})\b",
+        lambda m: _spoken_date(int(m.group(2)), int(m.group(3)), m.group(1)) or m.group(0),
+        text,
+    )
+    text = re.sub(
+        r"\b(0[1-9]|1[0-2])-([0-3]\d)\b",
+        lambda m: _spoken_date(int(m.group(1)), int(m.group(2))) or m.group(0),
+        text,
+    )
     # Drop YAML frontmatter.
     text = re.sub(r"^---\n.*?\n---\n", "", text, flags=re.DOTALL)
     # Drop fenced code blocks and inline code markers (keep the content).
     text = re.sub(r"```.*?```", "", text, flags=re.DOTALL)
     text = text.replace("`", "")
+    # Drop the italic "*Curated from ...*" methodology/provenance line every
+    # digest opens with (2026-08-13, real listen-test finding: it was the
+    # FIRST thing spoken — "curated from four lenses, pipeline plus
+    # agentic-interim WebFetch verification, collection window..." — dry
+    # collection metadata nobody wants read aloud, and a genuinely bad
+    # first impression regardless of voice quality. It's always the first
+    # italic block right after the title, so remove it before the generic
+    # bold/italic stripping below would otherwise just de-markup it in place.
+    text = re.sub(r"^\*Curated from.*?\*\s*\n", "", text, flags=re.DOTALL | re.MULTILINE)
     # Headers -> just the text.
     text = re.sub(r"^#{1,6}\s*", "", text, flags=re.MULTILINE)
     # Links [text](url) -> text; bare autolinks dropped.
@@ -124,7 +166,18 @@ def clean_for_speech(text):
     # Collapse whitespace.
     text = re.sub(r"[ \t]+", " ", text)
     text = re.sub(r"\n{3,}", "\n\n", text)
-    return text.strip()
+    text = text.strip()
+    # Mark paragraph breaks with an explicit pause cue (2026-08-13, real
+    # listen-test finding: without this, a Gemini-listens-to-itself check
+    # described the read as jumping between wholly unrelated topics -
+    # Anthropic corporate news, Iran/Hormuz, a crime story, state
+    # legislation - "without meaningful pauses or shift in vocal tone." A
+    # blank line alone wasn't enough signal. Re-verified via the same
+    # listening check that this marker gets HONORED as a pause, not read
+    # aloud as literal text - if that behavior ever changes on Google's
+    # side, that's the first thing to re-test before trusting this output.
+    text = re.sub(r"\n\n", ' <break time="700ms"/> ', text)
+    return text
 
 
 def load_front_digest_text(digest_date):
@@ -147,9 +200,22 @@ def synthesize(text, wav_path):
         sys.exit("GEMINI_API_KEY not set — see this script's own docstring")
 
     client = genai.Client(api_key=api_key)
+    style_instruction = (
+        "Read this news briefing the way an experienced broadcast journalist "
+        "reads a morning news roundup: warm and conversational, not rushed. "
+        "Take a real, natural breath and a genuine beat between separate "
+        "stories, especially where the subject changes completely (finance "
+        "to geopolitics to a local crime story, for example) — do not "
+        "barrel from one topic straight into the next at the same flat "
+        "pace. Vary your pacing and emphasis based on what actually "
+        "matters in each sentence, the way a person telling someone real "
+        "news would, not a machine reading text top to bottom. Text marked "
+        "<break time=\"700ms\"/> is a paragraph boundary — pause there "
+        "audibly rather than reading the marker itself. Now read: "
+    )
     response = client.models.generate_content(
         model=GEMINI_TTS_MODEL,
-        contents="Read this in a clear, measured news-narration tone: " + text,
+        contents=style_instruction + text,
         config=types.GenerateContentConfig(
             response_modalities=["AUDIO"],
             speech_config=types.SpeechConfig(
