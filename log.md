@@ -3115,3 +3115,113 @@ exists, so those are ratable whenever wanted. And the read artifact has
 been over the 600 KB soft cap for three days running with the degradation
 rule still unbuilt; that one is engine-side and has no brief yet because it
 is already named in ROADMAP.
+
+## 2026-08-12 — /daily: two dark digest-days closed, four-lens parallel catch-up
+
+No session had touched this repo since the 08-11 (wrap) checkpoint — a
+~1.75-day gap. Digest-day 08-11 was left `building`/`pending` past its
+finalize window, and digest-day 08-12 had had zero curation at all for
+its first ~16 hours. `/start`'s own check caught both before this run.
+
+**Collection.** `collect.py --since 2026-08-11T17:25:00Z` (explicit, not
+the default 24h-ago, per the standing lesson that the default silently
+drops multi-day gaps) — 20 collectors, ~506 terms. Two real findings:
+`lda` (lobbying disclosure) came back fully network-blocked, 142/142 terms
+403'd — a recurring pattern (also seen 08-08), now filed to kestrel's
+INBOX since it didn't have a standing entry yet. `semantic_scholar` hit
+its 600s lane budget again (187 skipped) — the same already-filed
+rotation-bug pattern, not new.
+
+**Upcoming-ledger check.** Three sonnet agents swept the six expectations
+due or overdue as of 08-12, each verifying against primary sources before
+a flip: `coreweave-q2-earnings` → **hit** (beat consensus on both lines;
+net interest expense more than doubled YoY to $640M, the first look at
+backlog growth and financing cost moving together in one borrower's own
+numbers). `colorado-hb1195-effective` → **hit** (statute's own
+effective-date mechanism, corroborated by two outside trackers).
+`qwen38-max-open-weights` → **hit** (confirmed live on Hugging Face via
+direct repo fetch, 30 derivative repos already built on it — though the
+shipped repo is named `Qwen3.8-2.4T-A95B`, not literally `Qwen3.8-Max`).
+`kaiser-nuhw-mediation-0811` → **passed-silent** (scheduled mediation;
+neither party's own channel confirms it convened, checked three times —
+this exact dispute has a 2025 precedent for a round going quiet
+mid-stream, so the silence was taken seriously rather than assumed
+benign). `iran-oman-hormuz-deal-signing` → **slipped** to 08-19,
+low-confidence (the due window closed with the trajectory actively
+worsening — Iran adding sweeping new demands, shipping traffic at a
+3-month low, a fatal Houthi attack in the interim).
+
+**Four lens agents, dispatched in parallel, each finalized 08-11 (with
+its own coverage-critic pass) and built 08-12 from scratch.** No file
+collisions; write-scope discipline (each agent's own digest files + its
+own thread timelines only, everything shared PROPOSED not written) held
+across all four. Real content, not just process: CoreWeave's Q2 print;
+Intel upsizing its stock offering $15B→$20B on 5x demand; an Israeli
+security firm's account of what looks like the first fully autonomous
+AI cyberattack on a government target (Taiwan); dueling Grok 4.6 / DeepSeek
+V4 Pro launches; July CPI cooling to 3.4%; a second neocloud (Lambda)
+pricing debt on CoreWeave's same circular-financing shape; a federal
+Meta/TikTok youth-mental-health trial opening in Oakland a week after
+Meta's $567M New Mexico judgment on the same claim; Colorado's AI-therapy
+law taking effect unchallenged; Definium's second positive Phase 3
+psychedelic readout in two months. Coverage-critic misses: ai lens found
+one (cross-lens, correctly not duplicated into its own digest);
+global-capital found two and fixed both inline (Intel's upsize, a Tesla
+pay-package clause); mental-health found one near-miss, also fixed inline
+(a CMS Medicaid SUD rule). world-news carries no critic by design.
+
+**A judgment call worth recording:** the world-news agent flagged the
+DRC's Ebola outbreak (2,011 deaths, fastest-growing on record) as a
+possible flash. Checked directly against the primary source before
+deciding: the WHO's actual PHEIC declaration was 2026-05-15, three months
+ago — crossing 2,000 deaths now is a running-total milestone, not a new
+discrete event, so it doesn't clear the flash rail's "new event only"
+bar. No flash filed; registered as a thread candidate instead. The
+standing Colombia-earthquake flash expired on its own 24h schedule as
+designed.
+
+**Map deltas applied centrally** (agents proposed, main session wrote,
+avoiding races on shared files): `spacex-cursor-close` added to
+`upcoming.yaml` ($60B SpaceX-Anysphere deal, due 08-31); `nvidia` added
+to `ai-memory-shortage`'s entity list (it's a buyer in the squeeze, not
+just an observer); `Definium Therapeutics` added to the mental-health
+watchlist (second real psychedelic-pharma player after COMPASS).
+`coverage-log.md` got the full three-lens critic writeup.
+`actor-doing.yaml` refreshed for the three actors that clearly moved
+(CoreWeave, Intel, Kaiser Permanente) — Oracle/xAI/Alibaba not touched
+this pass, a lighter-touch gap worth a future look. Four thread
+candidates offered across the lenses (PE-owned behavioral-health capacity
+contracting, perinatal/postpartum psychiatric care, sovereign-wealth
+funds broadening into AI compute, a standing "Fed under Warsh" thread)
+plus world-news's two (Colombia earthquake — final offer per the
+once-then-drop rule — and the DRC Ebola candidate); none promoted, all
+queued for Ben's steering.
+
+**Render + publish.** `render_read.py` → 959 KB (over the 600 KB cap,
+same unbuilt-degradation-rule gap named repeatedly since 08-02, not
+re-litigated here) — republished to the stable artifact URL. Site
+briefings: four sonnet agents wrote the `{gist, lead, sections, watch}`
+packs for front + all three lenses; the front pack's first draft used
+thematic section headings instead of the required exact AI/Global
+Capital/Mental Health three, caught by `--apply`'s own validation and
+fixed centrally before re-applying clean. `--export` → 155 readouts;
+`publish.py --push` → site repo committed and pushed
+(`a37f623`), Cloudflare build triggered (queued). Live-content
+re-verification was not completed this run — the live domain wasn't
+findable in tracked docs inside the time this run had, only the
+`the-projection` Cloudflare project name and a wrong pages.dev guess;
+worth fixing by recording the actual URL somewhere `/daily` can find it
+next time, rather than re-guessing.
+
+**Push safety:** this repo and `theprojection-site` both verified clean
+after their pushes. kestrel was not touched beyond one uncommitted
+INBOX drop (the `lda` brief), per protocol.
+
+**Pick up:** `iran-oman-hormuz-deal-signing` next checkable ~08-19 (low
+confidence on that date holding). `ca-sb903-appropriations-hearing` due
+08-13 (today, by the time this reads), `ca-sb903-assembly` and
+`berkshire-q2-2026-13f` due 08-14. Five thread candidates + one
+watchlist entity sit unanswered for Ben. The uncommitted
+`build_outlet_credibility.py` change from 08-11 evening (three
+own-channel domains) is being committed alongside this run's work rather
+than held any longer.
