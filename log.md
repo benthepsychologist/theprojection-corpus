@@ -3362,3 +3362,71 @@ on Kokoro) survive a completely normal, unassisted run.
 All four repos verified clean and pushed at close: theprojection-corpus,
 theprojection-site, and two clean drops into kestrel's INBOX (no
 commits, per protocol).
+
+## 2026-08-13 (wrap) — session checkpoint
+
+Not a close — a save point. Two `/daily` cycles and one new feature ran
+today, all committed and pushed; this entry is the session-level view
+the detailed entries above don't give on their own.
+
+**What today actually was:** picking up from the 08-11 wrap with nothing
+having run since, then Ben's ask ("add an AUDIO briefing") opened into a
+genuinely multi-pass build — not because the first attempt was rushed,
+but because each pass's own real-world test surfaced a problem the
+previous pass's testing couldn't have caught. That pattern — ship,
+actually check with the real signal available, find a real problem, fix
+it — repeated three times today and is worth naming as the shape of the
+day, not just the three individual fixes.
+
+**The two `/daily` arcs, briefly** (full detail in their own entries
+above): closed a 1.75-day gap (08-11 finalize, 08-12 reconstructed from
+blank), then ran a normal cycle (08-12 finalize, 08-13 open-then-extend).
+Real findings: the Acton, MA ChatGPT-tied double homicide (first
+general-purpose-chatbot-to-violence case this map has tracked, missed by
+every benchmark, caught on finalize); a ledger buyer correction
+(`decart-acquisition-close`, SpaceX to Anthropic, two agents converging
+independently plus a public denial); several real coverage-critic
+misses, each self-caught and folded in rather than left standing.
+
+**The audio briefing's actual arc, worth keeping as the session's real
+lesson:** shipped with Kokoro (free, real engineering to get running at
+all), which Ben heard and called "sounds TERRIBLE" — a reminder that
+"it generates without erroring" and "it sounds good" are different
+claims, and only one of them had been tested. Switched to Gemini's
+native TTS after researching real alternatives against Ben's own
+existing accounts rather than defaulting to a new vendor. Wired into
+automatic generation by finding `publish/adapter.py` was already the
+sanctioned instance-local extension point — after first, wrongly,
+telling Ben it would need a kestrel change. Then "still sounds like
+shit" came back twice, and the two causes were different in kind: the
+first was a real caching bug (immutable header on a filename that gets
+overwritten), verified fixed by checksumming the live URL against the
+local file; the second was a real audio-quality bug (a dry methodology
+preamble read aloud, no pacing between unrelated topics) that could only
+be caught by building a way to actually listen — a second Gemini call
+given the audio file and asked to describe exactly what it heard. That
+diagnostic is worth reusing: this session has no ears, and guessing at
+audio quality from whether an API call succeeded was the same category
+of mistake as claiming a UI works without opening a browser.
+
+**Two collector-health briefs, one already closed same-day:** `lda`
+(kestrel's own resident session confirmed it permanently dead and fixed
+the misleading log message, same day it was filed) and `openalex` (a
+fresh finding — total outage, no circuit breaker, still open).
+
+**`research/q1-flows` got real work too**, separate from the audio
+arc: five new financings including a genuine schema judgment call
+(Nvidia's $500B platform doesn't fit the existing round-node shape,
+flagged explicitly rather than force-fit), and the first real
+`/research/q1/` page replaced what had been a pure "nothing published
+yet" stub.
+
+**Pick up:** 08-13 is still open (closes 05:00 ET 08-14) and was last
+extended ~15:30 ET — a finalize pass is owed once ~5h past that close.
+SB 903's actual disposition still hadn't posted to California's own
+legislative records as of the last check; worth a look before assuming
+it resolved. `openalex`'s circuit-breaker gap and the base-vs-instance
+scoping doc gap both sit in kestrel's INBOX, unresolved. The audio
+engine still reads as identifiable-AI on close listen per its own
+diagnostic (repetitive intonation, "sterile" delivery on names) — not
+broken, but worth knowing if a further quality pass is ever wanted.

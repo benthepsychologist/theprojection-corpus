@@ -1,12 +1,105 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-11**. Top note covers the largest
-single day of change this instance has had: a new public object type
-(story pages, one per timeline entry, 529 of them), a site-wide link
-policy that removes external story links from every feed, a
-credibility layer rebuilt from 149 to 399 domains, and two `/daily`
-runs that closed a 21-hour gap and then finalized 08-10 on time. The
-08-10 note and everything older sit under it.*
+*Hand-maintained. **As of 2026-08-13**. Top note covers two full
+`/daily` cycles (a 1.75-day gap closed, then a normal extend day) and
+one genuinely new capability built end-to-end: a daily audio briefing,
+tried with a free engine that turned out to sound bad, switched to a
+paid one, then debugged for real quality problems using a technique
+worth keeping — having a second model listen to the file and report
+back, since this session has no ears of its own. The 08-11 note and
+everything older sit under it.*
+
+> **2026-08-13 (wrap) — two `/daily` cycles, and the audio briefing:
+> built, judged bad, switched, debugged with a self-listening check,
+> fixed.** 17 commits since the 08-11 wrap. Counts computed at wrap:
+> **99 threads** (85 open · 12 developing · 1 resolved · 1 retired),
+> **62 expectations** (42 pending · 15 hit · 5 passed-silent — was 61 /
+> 45 / 12 / 4 at the 08-11 wrap), **194 watchlist entries** (was 193),
+> 45 actor roll-ups, 5 publishes today, **research/q1-flows: 189 nodes
+> / 72 edges** (was 180/66), first published `/research/q1/` page live.
+>
+> **The two `/daily` arcs.** First closed a ~1.75-day gap (nothing had
+> run since the 08-11 wrap): 08-11 finalized, 08-12 reconstructed from a
+> total blank, four lens agents in parallel each running its own
+> coverage-critic pass. Second was a normal cycle: 08-12 finalized,
+> 08-13 opened and later extended through the afternoon. Full detail on
+> both, including the coverage-critic misses each pass caught (STAT's
+> HHS addiction-toolkit story, TLDR's Nvidia Nemotron lead, others) and
+> a ledger correction (`decart-acquisition-close` — Bloomberg's
+> Anthropic report superseding the original SpaceX report, corroborated
+> by a public Musk denial, caught independently by two parallel lens
+> agents the same run): `log.md`, `coverage-log.md`.
+>
+> **The single most significant finding either run produced:** a
+> Middlesex County, MA prosecutor has publicly tied a 17-year-old's
+> double homicide of his mother and brother to his ChatGPT use — the
+> first case this map has tracked involving a *general-purpose* chatbot
+> (not a therapy/companion product) and lethal violence against a third
+> party. Missed by all four mental-health benchmarks (a Boston-regional
+> story); caught only by broadening past the standard critic set on
+> finalize. The case reached a real outcome the same week: arraigned,
+> held without bail, probable-cause hearing set September 11.
+>
+> **The audio briefing — the actual new work this session.** Ben asked
+> for a daily audio version of the front-page briefing. Built in three
+> real passes, each one landing on a problem the previous pass's own
+> testing hadn't caught:
+>
+> 1. **Kokoro (free, self-hosted) — shipped, then rejected on the
+>    merits.** Real engineering to get it running at all (a stale
+>    `espeak-ng` phonemizer path, fixed by installing the system
+>    package and pointing two env vars at it) — but once actually
+>    heard, Ben's verdict was "sounds TERRIBLE." Researched real
+>    alternatives against Ben's own existing GCP/Azure accounts rather
+>    than assuming a new vendor was needed; **Gemini's native TTS**
+>    (`gemini-2.5-flash-preview-tts`) won on the one independent quality
+>    signal found ("crisp, clear, incredibly natural") and on being the
+>    only option its own maker builds specifically for long-form
+>    narration.
+> 2. **Automatic generation, discovered to already have a home.** Told
+>    Ben this would need a kestrel engine change; that was wrong.
+>    `publish/adapter.py` already IS the instance-owned local-extension
+>    point kestrel.yaml's `outputs.adapter` names — wiring the
+>    generation step in needed zero kestrel changes and, by
+>    construction, cannot affect any other kestrel instance. Filed a
+>    brief asking the canonical docs say this plainly, since the wrong
+>    assumption cost a real round of bad advice before an accidental
+>    deep-read caught it.
+> 3. **"Still sounds like shit" — twice, two different causes.** First
+>    time was a genuine bug, not a quality complaint: `_headers` cached
+>    the mp3 `immutable` for a year under a filename that gets
+>    overwritten in place, so a browser that had already fetched the
+>    Kokoro version never even checked for a new one. Fixed with a
+>    shorter cache policy plus a `?v=` query param tied to the
+>    payload's own `generated` timestamp, verified by downloading the
+>    live URL and checksumming it against the local file — twice, byte
+>    for byte, both times a match. Second time was real: the deploy was
+>    correct, the *audio itself* had two fixable problems (an opening
+>    that read the digest's own dry methodology line before reaching
+>    any news, and zero pacing variation between unrelated topics).
+>    Caught both by having a separate Gemini call listen to the file
+>    and describe exactly what it heard — the first time this session
+>    built a way to self-verify a sense it doesn't have — fixed, and
+>    re-verified with the same listening check before shipping again.
+>
+> **Two collector-health briefs filed, one already closed same-day by
+> kestrel's own resident session:** `lda` (recurring full block,
+> confirmed permanently dead — Akamai edge block, no code-side fix
+> exists, collector's own log message rewritten so it stops reading as
+> a hypothesis worth re-chasing) and `openalex` (a fresh finding: every
+> single term 429'd for 35+ minutes with zero yield, no wall-clock
+> circuit breaker unlike `semantic_scholar`'s own 600s budget — still
+> open).
+>
+> **`research/q1-flows` got a real data pass and its first published
+> page**, separate from the audio work: five new financings (Nvidia's
+> $500B multi-firm compute-financing platform, modeled as a new node
+> type rather than forced into the existing round-node shape since
+> money flows the opposite direction; Intel's first capital-facet node;
+> CoreWeave's second Q2 debt facility; Lambda's leveraged loan; TSMC's
+> capex approval), and `/research/q1/` went from a stub reading
+> "nothing published yet" to a real hand-authored snapshot of the
+> model's current state.
 
 > **2026-08-11 — story pages, the link policy, a credibility rebuild,
 > and the day's own two `/daily` runs.** 22 commits. Counts computed at
