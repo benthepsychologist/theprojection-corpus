@@ -37,10 +37,20 @@ them.}
 
 ## 🍂 Decay review
 
-{Threads with `last_seen` > 10 days, one row each:
-`slug · stale since · proposal (keep / resolve / retire) · why`.
-**Ben answers in this read**; applied as `decay-review` edits. If none:
-"Nothing decaying." }
+{A staleness REPORT, not a retirement queue (Ben, 2026-08-14) — staleness
+alone is never grounds to resolve or retire a thread; most real stories
+move on their own irregular cadence and going quiet for a week or two
+says nothing about whether they're over. Threads with `last_seen` > 10
+days, one row each: `slug · stale since · note` — informational only.
+Add a `proposed: resolve` or `proposed: retire` ONLY when there's a
+concrete, evidence-based reason (the story demonstrably concluded
+elsewhere, or it's a confirmed dead end / duplicate / explicitly
+abandoned) — state the reason plainly. No reason, no proposal — just
+note the thread is quiet. **Ben answers any real proposal in this
+read**; applied as `decay-review` edits, never silently. If nothing is
+proposed: "N threads stale, nothing proposed." (never "nothing
+decaying" when threads ARE stale — say so, just without framing it as
+an action needed).}
 
 ## 🔍 Near-miss audit
 

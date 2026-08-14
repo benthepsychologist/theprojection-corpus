@@ -39,11 +39,36 @@ only ever grow it.
    *pattern* implies a watchlist/source gap. Also flag: any entity with
    heavy item traffic but no thread (candidate signal) and any thread whose
    tags never appear (retire signal).
-4. **Decay review** — threads whose `last_seen` is older than **10 days**
-   as prune candidates (slug · stale since · keep/resolve/retire · why),
-   plus **stale timelines** (thread active in yaml but no timeline entry in
-   14 days) and unresolved passed-silent expectations. **Ben answers in the
-   same read**; apply as `decay-review` edits. Never retire silently.
+4. **Decay review — a staleness REPORT, not a retirement queue** (Ben,
+   2026-08-14: "I don't understand why we would ever retire a thread...
+   why would we decay retire anything?"). List threads whose `last_seen`
+   is older than **10 days** (slug · stale since · a one-line note on
+   why it's plausibly still quiet), plus **stale timelines** (thread
+   active in yaml but no timeline entry in 14 days) and unresolved
+   passed-silent expectations — purely as information. **Being stale is
+   not itself grounds to resolve or retire anything.** Most real stories
+   move on their own irregular cadence (a regulatory process, a budget
+   cycle, a court date, a slow product cadence) — going quiet for a week
+   or two says nothing about whether the story is over, and the 2026-08-14
+   run's own numbers prove it: 27 stale threads reviewed, 26 came back
+   "keep." **Only propose a resolve/retire when there's a concrete,
+   evidence-based reason on the table** — the story demonstrably
+   concluded elsewhere (resolve), or it's a confirmed dead end / a
+   duplicate / explicitly abandoned (retire) — never staleness alone.
+   State the reason plainly when proposing one; if there isn't a real
+   reason, don't propose anything — just note the thread is quiet and
+   move on. **Ben still answers any real proposal in the same read;
+   never resolve or retire silently.**
+   ⚠️ **Why this is a mechanical distinction, not just an editorial
+   one**: `resolved`/`retired` threads drop out of `/daily`'s collector
+   term sweep (AGENTS.md discipline 1 — "a thread that's done stops
+   costing API calls"). An `open` thread keeps being watched regardless
+   of how stale it looks; retiring is a decision to **stop watching**,
+   not a decision to stop displaying. `/map`'s own freshness buckets
+   (🟢🟡🔴, by `last_seen`) already carry the pure display-only
+   staleness signal — that's the tool for "hasn't been active in a
+   while." Treating every stale thread as a resolve/retire candidate by
+   default quietly turns a display concern into a coverage-loss risk.
    **Board pass** (2026-07-24; axis model 2026-07-25): run the `/classify
    postures` logic — propose a posture for every org marked `# provisional`
    or whose posture no longer matches its open-thread genres, flag any actor
