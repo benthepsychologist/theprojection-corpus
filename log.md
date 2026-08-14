@@ -3525,3 +3525,92 @@ worth a look next session, it's read-only from here but still the
 headline push-safety flag `/start` exists to catch. `decart-acquisition-close`
 stays unresolved — SpaceX vs. Anthropic as the real buyer, per two
 conflicting reports neither company has confirmed.
+
+## 2026-08-14 (continued) — `/week`: weekly synthesis, decay review,
+board pass, full actor-doing rewrite, capital-context refresh —
+week_of 2026-08-10, partial week (Mon–Fri, run mid-week per the skill's
+own "any convenient day works" allowance)
+
+**Nine agents dispatched in parallel.** Four wrote weekly digests
+(`artifacts/digests/weekly/2026-08-10-{frontier-ai,mental-health,
+global-capital,world-news}.md`), each synthesizing against its lens's
+open radar questions from the five 08-10–08-14 dailies plus a coverage-
+log near-miss audit and a decay-candidate list. Five refreshed
+`attention/actor-doing.yaml` in batches of 9, covering all 45 board
+actors — every actor reviewed, most genuinely-quiet ones got a one-line
+"no change" confirmation rather than padded prose, real movers (Google,
+Microsoft, Anthropic, OpenAI, Meta, Apple, AMD, Nvidia, Oracle, SpaceX,
+xAI, China/CXMT/SMIC, TSMC, Berkshire, Samsung, Micron, Kaiser
+Permanente, and more) got real rewrites. Applied centrally via a script
+that surgically replaced each actor's `asof`/`doing` block by regex,
+preserving every section-header comment and all 45 actors validated
+clean against `yaml.safe_load`.
+
+**Two real ledger bugs caught and fixed, not just decayed threads:**
+`tsmc-capacity-race` had a real 08-11 timeline entry (the $29.4B capex
+approval + Sony JV) written without its `last_seen` ever being bumped;
+`anthropic-ipo-timing` had two real 08-13 hits (the $2T IPO-valuation
+report, the Decart acquisition talks) with the same gap. Both fixed
+directly — these aren't decay, they're the ledger not reflecting work
+that already happened.
+
+**Radar.md (`attention/radar.md`) got a new dated working-note entry on
+all seven questions** except Q2 (frontier-ai judged nothing this week
+reframes it beyond what Q1/Q5 and Q7 already carry) — full text applied
+verbatim from each lens agent's digest. Highlights: Q1 flagged a real
+process gap (two developments — Microsoft's Copilot merge, Apple's
+China model — squarely answered an open thread's watch question but
+landed ambient/untagged instead); Q5 named DeepSeek's own price hike as
+the first supply-side crack in the price-war-compounding thesis; Q7
+converged three independent voices (Moody's, Jefferies, Michael Burry)
+on the same AI-financing skepticism in one week, while credit pricing
+itself (HY/IG OAS, VIX) hasn't moved yet — a real gap between narrative
+and market confirmation, worth tracking.
+
+**`attention/capital-context.yaml` refreshed** — treasury_tic/bis_stats/
+imf_data all returned genuinely nothing new (real successful API calls,
+consistent with their multi-week/quarterly lag); epfr_flows caught one
+new Global Navigator issue, recorded honestly as a rate/inflation piece
+rather than forced into the old flow-figure format it doesn't carry;
+`rate_regime` and `conflict_risk_premium` updated from this week's real
+`/daily` findings (the 30-year Treasury auction at a 2001-high yield,
+the PPI/claims pair, the Hormuz/Israel-Lebanon widening).
+
+**Flash rail pruned** (cosmetic — `colombia-earthquake-m7-4` had already
+stopped rendering under `flash_last_day()`). **Board pass**: zero orgs
+marked `# provisional`; the dormant-actor cross-reference (35 zero-
+thread orgs, 30 intentionally-thin state/gov-pool stubs by design, 5
+real corporates — State Street, Vanguard, China Life, Prudential,
+MetLife) matches the 08-09 finding exactly, no new gap.
+
+**Rendered and republished** the read artifact (1174 KB, still over the
+600 KB soft cap — the degradation rule remains an unbuilt, warning-only
+engine gap, unchanged from every prior note on it) and ran a full
+`kestrel publish --push` to sync the site (threads, entities, board,
+claims, readouts, stories, map pages) and the day's already-generated
+audio briefing.
+
+**Decay review and the board-pass findings were surfaced to Ben for a
+decision, not auto-applied** — per the skill's own "never retire
+silently" rule. Candidates (slug/proposal/why) are in the four weekly
+digests' own Decay review sections and this session's chat report; none
+were retired or resolved without his word. One `upcoming.yaml` entry
+was pruned (`anthropic-ipo-filing`, hit, resolved 08-02 — older than any
+closing week since; its substance already lives in radar.md's Q1 08-04
+note and its successor entry `anthropic-ipo-public-flip` carries the
+live tracking forward).
+
+**Pick up:** several decay/board-pass items are waiting on Ben's word —
+see chat. `pif-ai-buildout` and `fidelity-buys-ai-labs` sit right at the
+10-day border (both `last_seen` 08-04) and are worth a look next `/week`
+if neither picks up a fresh hit. Axios Pro Rata's Cloudflare block is
+now a confirmed, five-plus-pass-recurring gap (FT Unhedged's parallel
+gap looks resolved) — still needs Ben's call on an alternate route vs.
+dropping it from the benchmark set. Mental-health's near-miss audit
+flagged a real structural timing gap: BHB/STAT items posting late in
+the day get missed by the digest's building pass and only caught at
+finalize, three of four checkable days this week — worth a later
+cutoff or a recheck timed to those outlets' real publishing cadence.
+Since this week is only Mon–Fri so far, Sat/Sun remain uncovered by
+this pass — a normal `/daily` run this weekend (or next week's `/week`)
+picks them up.

@@ -17,8 +17,28 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-08-09
+asof: 2026-08-14
 
+# Refresh run 2026-08-14 (/week step 4b, partial week 08-10–08-14): all 5
+# collectors re-run against an explicit --since 2026-08-09 window.
+# treasury_tic/bis_stats/imf_data: zero items again, real successful API
+# calls (confirmed via provenance), consistent with their real-world lag —
+# none of the three has released a new figure since the last refresh, five
+# days being well inside all three's normal cadence. epfr_flows returned
+# ONE new Global Navigator issue (08-11, "Central banks hold firm as
+# inflation risks re-emerge and oil prices resurge") — folded into
+# `fund_flows` below, but note its shape is different from prior issues:
+# it's a rate/inflation-sentiment piece, not a flow-of-funds report, so it
+# does NOT carry a comparable "$X moved" headline figure — recorded
+# honestly as what it actually says rather than forced into the old
+# format. fund_flow_reports: STILL EMPTY — etf.com's Cloudflare challenge
+# confirmed again this run, same bot-wall as every check since 2026-07-30.
+# `rate_regime` and `conflict_risk_premium` updated from this week's real
+# `/daily` findings (30-year Treasury auction, PPI/jobless-claims pair,
+# the Hormuz/Israel-Lebanon widening) rather than a fresh collector run —
+# those two readings are fed by the news sweep, not the 5 macro
+# collectors, per this file's own `basis` fields.
+#
 # Refresh run 2026-08-09 (/week step 4b, closing week 08-03–08-09): all 5
 # collectors re-run against an explicit --since 2026-08-04 window (the
 # default 24h lookback would have missed anything published between the
@@ -71,8 +91,21 @@ readings:
       blocked his first attempt — pressure on the committee's COMPOSITION,
       distinct from Warsh's own low-guidance messaging regime. 30-year
       Treasury yield near 5.24% as of the last check, highest since 2007.
-      Next decision 2026-09-16.
-    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the Lisa Cook removal fight (radar Q7)"
+      Next decision 2026-09-16. THIS WEEK (08-10–08-14): two fresh data
+      points cut in opposite directions on the same 09-16 decision. July's
+      producer-price index came in flat month-over-month (core ex food/
+      energy/trade +0.4% m/m, +4.7% y/y) while initial jobless claims rose
+      9,000 to 209,000 (above the 202,000 estimate) — both add to the
+      case the economy is cooling on its own, the same direction as the
+      July jobs report above. Cutting the other way: the Treasury sold
+      $25B of 30-year bonds at 5.216%, the highest yield for that maturity
+      since 2001 and the THIRD 2026 auction to clear above 5% (May 5.046%,
+      July 5.058%) — a structural federal-borrowing-cost pressure distinct
+      from, but compounding, the Fed's own rate debate. Market-implied
+      September rate-hike probability sat around 30.4% as of 08-14,
+      pricing in the softer data without fully discounting a hike. The
+      Lisa Cook removal fight's 08-26 deadline has not yet resolved.
+    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the Lisa Cook removal fight (radar Q7)"
     sources:
       - figure: "3.50%-3.75%, 9-3 vote"
         label: "Federal Reserve press release, 2026-07-29"
@@ -90,7 +123,15 @@ readings:
         label: "NPR, 2026-08-07"
         url: "https://www.npr.org/2026/08/07/nx-s1-5925167/trump-lisa-cook-federal-reserve"
         as_of: "2026-08-07"
-    as_of: "2026-08-09"
+      - figure: "PPI flat m/m, core +0.4% m/m; jobless claims 209,000 vs 202,000 est."
+        label: "BLS PPI release + tradingeconomics.com (DOL), 2026-08-13"
+        url: "https://www.bls.gov/news.release/ppi.nr0.htm"
+        as_of: "2026-08-13"
+      - figure: "30-year Treasury auction, 5.216% yield, highest since 2001"
+        label: "Bloomberg, 2026-08-13"
+        url: "https://www.bloomberg.com/news/articles/2026-08-13/us-braces-for-30-year-bond-auction-at-highest-yield-since-2001"
+        as_of: "2026-08-13"
+    as_of: "2026-08-14"
 
   cross_border_credit:
     value: >
@@ -100,7 +141,7 @@ readings:
       jurisdiction transmits to bank lending in another kept expanding
       through the quarter. USD-denominated claims specifically: $21.80T
       (up from $20.84T), still the dominant currency leg.
-    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API) — re-run 2026-08-04, new quarter available since the last refresh"
+    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API) — re-run 2026-08-14, no new quarter since 2026-08-04 (real ~6wk lag, confirmed via provenance, value/as_of left as-is)"
     sources:
       - figure: "$47.62T (was $45.97T)"
         label: "BIS locational banking statistics, 2026-Q1"
@@ -119,7 +160,7 @@ readings:
       and net international investment position -$21.27T (both 2026-Q1) —
       the US remains a large net external debtor, the structural backdrop
       any dollar-flow story sits on top of.
-    basis: "collectors/treasury_tic.py (Treasury TIC Table 5) + collectors/imf_data.py (IMF BOP/IIP via api.imf.org)"
+    basis: "collectors/treasury_tic.py (Treasury TIC Table 5) + collectors/imf_data.py (IMF BOP/IIP via api.imf.org) — both re-run 2026-08-14, no new month/quarter since 2026-07-30 (real ~2mo/quarterly lag, confirmed via provenance, value/as_of left as-is)"
     sources:
       - figure: "$9,371.1B foreign-held Treasuries"
         label: "Treasury TIC, Major Foreign Holders, 2026-05"
@@ -134,17 +175,28 @@ readings:
   fund_flows:
     value: >
       EPFR's own weekly commentary (via ISI Markets' Global Navigator)
-      has moved from reading investor calm through a conflict backdrop
-      ("investors tune out intensifying US-Iran conflict," $75B moved the
-      week of 07-22; "money keeps flowing despite Hormuz setback," $31B,
-      week of 07-13) to a narrower, more selective read this week:
-      "technology story shines through the smoke" ($10B) — a smaller
-      headline figure and language that reads as rotation/selectivity
-      within tech rather than the broad risk-on flow of two weeks ago.
-      Worth watching against the earnings-gauntlet's own monetization-
-      proven-vs-unproven split (see the global-capital weekly digest).
-    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent) — re-run 2026-08-04"
+      shifted register this week rather than continuing the flow-figure
+      trend — the 08-11 issue ("Central banks hold firm as inflation
+      risks re-emerge and oil prices resurge") is a rate/inflation-
+      sentiment piece, not a flow-of-funds report, and carries no
+      comparable "$X moved" headline number. Its actual content: the
+      Fed, BoJ and ECB all held rather than pivoting into a fresh
+      tightening cycle despite oil-driven inflation pressure; its Net
+      Inflation Sentiment Score rose sharply (US/Germany/Italy leading),
+      attributed to both Gulf instability/oil and "chipflation" — the
+      thesis that AI-infrastructure buildout sustains upward pressure on
+      tech-goods and electricity prices. Read alongside `rate_regime`
+      above (the 08-13 PPI/claims pair, the 30-year auction), this is
+      the same rate-debate axis from the fund-flow side rather than a
+      new one. The last genuine flow figure stays $10B (08-04, "technology
+      story shines through the smoke") — not superseded, just not
+      re-measured this week.
+    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent) — re-run 2026-08-14"
     sources:
+      - figure: "Central banks hold firm; Net Inflation Sentiment Score rises on oil + \"chipflation\""
+        label: "Global Navigator, 2026-08-11"
+        url: "https://isimarkets.com/publications/global-navigator-central-banks-hold-firm-as-inflation-risks-re-emerge-and-oil-prices-resurge/"
+        as_of: "2026-08-11"
       - figure: "$10B, technology story shines through the smoke"
         label: "Global Navigator, 2026-08-04"
         url: "https://isimarkets.com/publications/global-navigator-technology-story-shines-through-the-smoke/"
@@ -157,7 +209,7 @@ readings:
         label: "Global Navigator, 2026-07-13"
         url: "https://isimarkets.com/publications/"
         as_of: "2026-07-13"
-    as_of: "2026-08-04"
+    as_of: "2026-08-14"
 
   conflict_risk_premium:
     value: >
@@ -182,25 +234,46 @@ readings:
       war. Regional powers answered with structure: Saudi Arabia, Turkey,
       and Pakistan signed a trilateral mutual-defense pact in Mecca —
       two regional powers binding themselves to a nuclear-armed state
-      while the fronts burn. Underwriting layer (war-risk insurance
-      3-10% of hull value vs. ~0.25% pre-war) unchanged this week, no new
-      check found.
-    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, closing week 08-03-08-09)"
+      while the fronts burn. THIS WEEK (08-10–08-14): the pattern this
+      reading has tracked for weeks — oil prices falling even as
+      rhetoric/incidents escalate — held again and again. Two ADNOC-owned
+      tankers were struck by drones transiting Hormuz (08-13 evening), a
+      second Gulf state's vessels hit (distinct from Saudi Aramco's Jazan
+      refinery, itself struck twice this week); the UAE formally blamed
+      Iran's Revolutionary Guard as "acts of piracy" (08-14), Canada
+      sanctioned five Iranian officials, and Trump escalated rhetorically
+      ("I'll be declaring the Hormuz Strait a territory of the United
+      States" once Iran is "defeated") — a claim with no stated
+      implementation mechanism. Yet Brent/WTI kept falling on OPEC's
+      fourth straight demand-growth downgrade and a large US inventory
+      build, not rising on the incidents. A second theatre sharpened
+      further: Israel is reportedly besieging ~40 Hezbollah fighters
+      trapped in a tunnel network beneath the Ali al-Taher ridge (cutting
+      supply lines, awaiting a US "green light" for an assault) — the
+      most concrete step toward renewed ground combat that front has
+      seen — the same day Hezbollah's Qassem publicly rejected the
+      Rome-talks framework. Underwriting layer (war-risk insurance 3-10%
+      of hull value vs. ~0.25% pre-war) unchanged, no new check found.
+    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, partial week 08-10-08-14)"
     sources:
       - figure: "Six-condition Hormuz reopening demand, separated from Oman talks"
         label: "Punch NG, 2026-08-09, citing IRGC statement"
         url: "https://punchng.com/iran-wont-reopen-hormuz-until-us-meets-all-conditions-revolutionary-guards/"
         as_of: "2026-08-09"
-      - figure: "Second Aramco Jazan refinery strike this week"
-        label: "NPR, 2026-08-09"
-        url: "https://www.npr.org/2026/08/09/nx-s1-5926387/yemens-houthis-claim-attack-on-aramco-oil-facility-in-saudi-arabia-and-other-middle-east-news"
-        as_of: "2026-08-09"
-      - figure: "Yemen civil war's worst 3-day stretch in 4 years"
-        label: "Times of Israel, 2026-08-09, citing UN Yemen envoy"
-        url: "https://www.timesofisrael.com/houthi-attacks-kill-10-in-yemen-as-un-warns-of-return-to-full-scale-civil-war/"
-        as_of: "2026-08-09"
       - figure: "War began 2026-02-28, not 07-23"
         label: "Iran state media (Press TV, Tasnim, Mehr) + Al Jazeera/NBC/Britannica, corroborated 2026-08-02"
         url: "https://www.aljazeera.com/where/iran/"
         as_of: "2026-08-02"
-    as_of: "2026-08-09"
+      - figure: "UAE blames Iran's IRGC for ADNOC tanker drone attack, \"acts of piracy\""
+        label: "JPost / Spectrum News wire, 2026-08-14"
+        url: "https://www.jpost.com/international/article-905560"
+        as_of: "2026-08-14"
+      - figure: "Israel besieging ~40 Hezbollah fighters at Ali al-Taher, awaiting US \"green light\""
+        label: "Haaretz / ynetnews / JFeed, 2026-08-14"
+        url: "https://www.haaretz.com/middle-east-news/lebanonnews/2026-08-14/ty-article/.premium/hezbollah-chief-rejects-lebanon-deal-as-israel-reportedly-readies-assault/000001a0-014e-d75f-a3be-197e24080000"
+        as_of: "2026-08-14"
+      - figure: "Brent $87.11-$88.38, WTI $81.29-$83.27 through the week, falling on OPEC/inventory data despite escalation"
+        label: "oilprice.com / tradingeconomics.com, 2026-08-13/14"
+        url: "https://tradingeconomics.com/commodity/brent-crude-oil"
+        as_of: "2026-08-14"
+    as_of: "2026-08-14"

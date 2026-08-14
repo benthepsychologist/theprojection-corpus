@@ -1737,7 +1737,7 @@ threads:
       - "Anthropic confidential filing"
       - "Anthropic valuation"
     opened: 2026-07-27
-    last_seen: 2026-08-02
+    last_seen: 2026-08-13   # ledger-bug fix (/week 2026-08-14): two real 08-13 hits ($2T IPO-valuation report, Decart acquisition talks) were never bumped at the time
     watch: >
       Reported confidential IPO filing at ~$965B (single-source — thin,
       needs a second source) plus an IR-director hire read as fall-2026
@@ -1829,7 +1829,7 @@ threads:
       - "TSMC capex"
       - "TSMC capacity"
     opened: 2026-07-28
-    last_seen: 2026-07-29   # crawl 2026-07-28
+    last_seen: 2026-08-11   # ledger-bug fix (/week 2026-08-14): a real timeline entry (board approves $29.4B more capex) was written 08-11 but last_seen was never bumped at the time
     watch: >
       The chokepoint is cashing in: capex raised 15% to $60-64B + another
       $100B onto Arizona ($265B total US, 12 facilities — no per-fab

@@ -17,6 +17,13 @@
 #
 # Seeded 2026-07-22 from the week's digests (Phase 0 of the thread-centric
 # reframe — plan approved by Ben 2026-07-22).
+#
+# Pruned 2026-08-14 (/week step 2): anthropic-ipo-filing (hit, resolved
+# 2026-08-02 — older than any closing week since). Substance preserved:
+# its successor entry anthropic-ipo-public-flip (below) carries the live
+# tracking forward, and radar.md's Q1 08-04 working note already records
+# the full finding (the filing was a real, well-covered 06-01 company
+# announcement this map initially mis-logged as a thin rumor).
 
 expectations:
 
@@ -402,49 +409,6 @@ expectations:
     logged: 2026-07-27
     logged_by: curate-add   # /week sweep 07-27
     status: pending
-
-  - id: anthropic-ipo-filing
-    claim: "Anthropic confidential IPO filing (reported $965B valuation; fall-2026 window signaled by IR-director hire)"
-    due: 2026-12-31
-    due_precision: month
-    thread: anthropic-ipo-timing   # ben-steer 2026-07-27 — child of frontier-lab-ipos
-    entities: [anthropic]
-    source: https://www.anthropic.com/news/confidential-draft-s1-sec
-    # 2026-08-02 ⟨daily⟩: source REPLACED. Was a Google-News RSS query
-    # standing in for a Briefs Finance aggregation; now Anthropic's own
-    # announcement, which existed all along.
-    confidence: confirmed   # upgraded rumored -> confirmed 2026-08-02 against the company's own statement
-    what_confirms: "second-source reporting or an actual public filing/flip"
-    logged: 2026-07-27
-    logged_by: curate-add   # /week sweep 07-27
-    status: hit
-    resolved: 2026-08-02
-    evidence: >
-      Confirmed, and this entry's own premise was wrong: it was never a
-      thin rumor. PRIMARY — Anthropic's own newsroom post
-      (anthropic.com/news/confidential-draft-s1-sec) states the company
-      "confidentially submitted a draft registration statement on Form S-1
-      to the U.S. Securities and Exchange Commission" on 2026-06-01. It was
-      a same-day company announcement covered on 06-01 by TechCrunch,
-      Fortune (twice), PYMNTS, Fox Business and CNBC. The $965B figure is
-      also real but is the SERIES H funding-round valuation (~$65B raised,
-      closed late May) — NOT an IPO price; Anthropic says share count and
-      price are not yet set. SEC EDGAR full-text search shows no public
-      S-1 or S-1/A, which is consistent with confidential draft status.
-      ⚠ What stays unconfirmed, and for a different reason than this entry
-      assumed: the underwriter trio (Goldman Sachs, Morgan Stanley,
-      JPMorgan), the 06-03 selection date, and the October-2026 target all
-      trace to ONE Bloomberg anonymously-sourced report, re-reported
-      downstream by CNBC (07-15) and everyone else including Briefs
-      Finance. CNBC's own hedge is the honest version: October is "the
-      earliest date under consideration" and "the company has not locked
-      anything in." NASDAQ as the venue has no traceable source at all and
-      should be treated as an aggregator assumption, not reported fact.
-      ROOT CAUSE OF THE GAP: this was a real, well-covered story on
-      2026-06-01 that this map simply missed during its own news cycle,
-      and only picked up on 07-27 when a small aggregator restated it —
-      at which point it looked thin and late when it was neither. The
-      recall failure is ours, not the sourcing's.
 
   - id: anthropic-ipo-public-flip
     claim: "Anthropic flips its S-1 public / lists (October 2026 is the earliest date under consideration, explicitly not locked in)"
