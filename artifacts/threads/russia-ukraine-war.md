@@ -18,6 +18,30 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-14 — Ukraine declares an eight-month, 745 km² counteroffensive complete, stripping Russia of nearly all its Dnipropetrovsk gains
+
+- **Ukraine declared an eight-month counteroffensive complete, saying it
+  has retaken 745 km² and liberated 26 settlements across Dnipropetrovsk,
+  Donetsk and Zaporizhzhia since January — stripping Russia of nearly
+  all the territory it seized in the Dnipropetrovsk region after
+  entering it in June 2025.** President Zelenskyy said the operation went
+  "exactly as it was determined" and claimed nearly 10,000 Russian
+  soldiers were killed in the process; that casualty figure is Ukraine's
+  own and unverified independently — flagged, not stated flat. The
+  US-based Institute for the Study of War, using its own independently
+  verified open-source methodology, more conservatively assessed at
+  least 627 km² recaptured — still a large reversal, just materially
+  smaller than Kyiv's own figure. This is the most significant
+  territorial claim logged on this thread since it opened — a real reset
+  of the southern front line, not an incremental exchange.
+  ([Kyiv Independent](https://kyivindependent.com/ukraine-liberated-745-square-kilometers-in-oleksandrivka-sector-since-january-zelensky-says/), [Al Jazeera](https://www.aljazeera.com/news/2026/8/14/ukraine-liberates-dnipropetrovsk-as-russia-intensifies-missile-attacks), [Jerusalem Post](https://www.jpost.com/international/internationalrussia-ukraine-war/article-905343)) ⟨daily 2026-08-14⟩
+- **Russia claimed it shot down 553 Ukrainian drones overnight across 19
+  regions, and Kyiv residents reported empty supermarket shelves as a
+  consequence of the sustained strike campaign on infrastructure and
+  supply lines.** Read together with the counteroffensive above, both
+  sides are describing real strain on the other, not a lull.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/14/ukraine-liberates-dnipropetrovsk-as-russia-intensifies-missile-attacks)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-12 — Ukraine hits Novorossiysk and Crimea overnight; Zelenskyy says Kyiv handed US new peace proposals
 
 - **Ukraine hit Russia's Black Sea port of Novorossiysk in a large

@@ -39,6 +39,34 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-14 — Kushner heads to Israel/Egypt after Netanyahu's plan rejection; Qusra siege hits day six as Katz moves settler policing to police
+
+- **Jared Kushner, Board of Peace high representative Nickolay Mladenov
+  and executive board member Tony Blair will travel to Israel and Egypt
+  next week to try to "find a pathway to move forward" on Trump's
+  20-point Gaza plan, a direct diplomatic response to Netanyahu's public
+  rejection of the plan's 15-point disarmament/withdrawal sequencing
+  (Netanyahu, 08-09: "Israel rejects the 15-point document" — already
+  logged on this thread that day).** The group arrives in Israel Sunday,
+  then travels to Cairo, where a Palestinian technocratic group meant to
+  assume Gaza governance under the ceasefire deal has been meeting for
+  months. Hamas has separately reaffirmed it remains committed to the
+  plan despite Israel's rejection. No detail yet on what concessions, if
+  any, Kushner will seek from Netanyahu.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/14/kushner-to-visit-israel-after-netanyahu-rejects-gaza-board-of-peace-plan), [Haaretz liveblog](https://www.haaretz.com/israel-news/israel-security/2026-08-14/ty-article-live/sources-kushner-to-visit-israel-and-egypt-next-week-to-push-trumps-gaza-plan/0000019f-fdf5-d337-a7df-fffd11570000)) ⟨daily 2026-08-14⟩
+- **The Qusra village siege entered its sixth day Friday, with Israeli
+  soldiers turning back activists who marched toward the besieged homes
+  carrying food and water for the three trapped Palestinian families.**
+  Separately, Defense Minister Israel Katz announced he will transfer all
+  enforcement powers over Israeli civilians in the West Bank from the
+  military to Israel's police — critics say the move entrenches Israel's
+  de facto annexation of the territory by applying civilian rather than
+  military-occupation law to settlers there. Palestinian officials cite
+  1,476 settler attacks recorded in 2026 and 87 Palestinians killed by
+  settlers or soldiers in the West Bank this year. Ambassador Huckabee's
+  08-13 "act of terror" charge stands unretracted.
+  ([AP, via KSAT](https://www.ksat.com/news/world/2026/08/14/palestinians-besieged-in-west-bank-village-fear-israeli-settlers-will-seize-their-homes/), [The National](https://www.thenationalnews.com/news/mena/2026/08/14/what-we-know-about-israeli-settlers-siege-on-palestinian-homes-in-qusra/)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-13 — A second Khan Younis strike, then a third in Gaza City kills Hamas's Gaza police chief; West Bank siege draws a US "act of terror" charge, then a settler-leader condemnation of its own
 
 - **Israel's military carried out its second targeted strike this week —
@@ -50,8 +78,16 @@ stated flat.** See the note at the foot of this file.
   strikes resuming inside the same disarmament-sequencing dispute, with
   peace-plan mediators pushing Israel to halt targeted operations to
   protect the process while Netanyahu holds to full disarmament before
-  any withdrawal.
-  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/)) ⟨daily 2026-08-13⟩
+  any withdrawal. **[Finalize catch]** The man killed was later named by
+  Israeli reporting as Hudhaifa Khaled Suleiman Qawari, a Khan Younis
+  brigade company commander; the IDF said it took steps "to mitigate harm
+  to civilians" ahead of the strike, which also wounded seven. Notably,
+  Israel National News reports this was the IDF's *first* assassination
+  strike in Gaza since Israel's political leadership instructed the
+  military last week not to carry out such strikes without the IDF chief
+  of staff's own approval — a policy constraint worth tracking against
+  the pattern of resumed strikes this thread has logged since 08-12.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Israel National News](https://www.israelnationalnews.com/news/431726)) ⟨daily 2026-08-13⟩
 - **Separately and later the same day, a strike in Gaza City killed a man
   the IDF identifies as Jamal Mahmoud Abu Kamil, a Hamas commander it says
   took part in the October 7, 2023 invasion and had continued "advancing

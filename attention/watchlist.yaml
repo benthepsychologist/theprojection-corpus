@@ -115,6 +115,14 @@ lenses:
         # valuation, event-dated 08-07. Same shape as Lancium above — an
         # infrastructure counterparty that kept surfacing with nowhere to
         # land.
+      - term: "Vantage Data Centers"
+        entity: vantage-data-centers
+        name: "Vantage Data Centers"
+        # curate-add 2026-08-14: Silver Lake/DigitalBridge-backed, partnered
+        # with Oracle/OpenAI on a Stargate-linked Wisconsin campus, now
+        # exploring a ~$100B IPO or sale — the largest data-center listing on
+        # record. Carried tagged only to ai-datacenter-sites + the oracle
+        # entity before this, for lack of its own slug.
 
     # Persons of interest (leadership, safety, policy)
     people:
@@ -308,6 +316,7 @@ lenses:
         # Coalition for Health AI CEO — the assurance/accreditation lane's
         # central figure post-Assurance-Labs pivot. Term qualified because
         # bare "Brian Anderson" is too common a name to sweep clean.
+      - "Michael Heinz"  # curate-add 2026-08-14: Dartmouth psychiatrist, first author on the Therabot clinical trial — parallel to Nicholas Jacobson above, a likely recurring on-record source on ai-therapy-evidence
 
     # Themes — regulatory, accountability, and MARKET/money (radar Q3, Q6)
     themes:
@@ -449,6 +458,22 @@ lenses:
         # AI" is itself becoming common usage, so if it starts pulling
         # unrelated state-AI-programme stories, drop it and keep the CEO
         # term alone.
+      - term: "Silver Lake"
+        entity: silver-lake
+        name: "Silver Lake"
+        # curate-add 2026-08-14: now a named principal in three separate
+        # stories in one week — EA's $55B LBO closed 08-04, Vantage Data
+        # Centers' IPO exploration, and Workday's $43B take-private talks
+        # (08-14). Same shape of gap as the Macquarie/GIC/Riot adds
+        # (ben-steer 08-11) — a recurring, unqualified counterparty this map
+        # kept naming without tracking.
+      - term: "Jane Street"
+        entity: jane-street
+        name: "Jane Street"
+        # curate-add 2026-08-14: recurring AI-capital counterparty —
+        # CoreWeave's $6B platform commitment + $1B equity stake, and a
+        # $2.25B bond guarantor role (08-14) — three appearances with no
+        # watchlist entry.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

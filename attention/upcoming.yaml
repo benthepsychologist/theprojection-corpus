@@ -278,7 +278,18 @@ expectations:
     # ca-sb903-appropriations-hearing; this entry stays pending on the 08-14
     # report-out outcome. Source swapped billHistoryClient -> billStatusClient
     # (the page that carries the live hearing-date field).
-    status: pending
+    # 2026-08-14 ⟨daily⟩: HIT, one day ahead of its own 08-14 due date — the
+    # 08-13 Appropriations "Do pass" action (see ca-sb903-appropriations-
+    # hearing) IS this entry's report-out. Bill now on the Assembly's own
+    # "3rd Reading File," dated 08-17-2026, item 269 (leginfo, raw HTML).
+    status: hit
+    resolved: 2026-08-13
+    evidence: >
+      Same 08-13 Appropriations committee action tracked on
+      ca-sb903-appropriations-hearing ("Do pass," 13-0) is the fiscal
+      report-out this entry was waiting on. leginfo now shows SB 903 on
+      the Assembly 3rd Reading File (08-17-2026, item 269) — next real
+      date is the floor vote.
 
   - id: ca-sb903-appropriations-hearing
     claim: "SB 903 heard by Assembly Appropriations (suspense-or-forward decision)"
@@ -332,7 +343,17 @@ expectations:
     # 2026-08-13 hearing date — Route Fifty, KPBS, and CalMatters all carry
     # it against the Assembly Appropriations suspense-file calendar; no
     # longer primary-source-only.
-    status: pending
+    # 2026-08-14 ⟨daily⟩: HIT. leginfo's own bill-history log: "08/13/26
+    # From committee: Do pass. (Ayes 13. Noes 0.)" — released from
+    # suspense, not held. Verified against raw HTML (leginfo billHistory),
+    # not a search summary. Feeds ca-sb903-assembly's own 08-14 report-out
+    # deadline, resolved below on the same finding.
+    status: hit
+    resolved: 2026-08-14
+    evidence: >
+      leginfo.legislature.ca.gov bill-history: "08/13/26 From committee:
+      Do pass. (Ayes 13. Noes 0.)" SB 903 released from the Assembly
+      Appropriations suspense file 13-0, not held or amended.
 
   - id: grok-4-6-ship
     claim: "Grok 4.6 ships (Musk: 'in two weeks', said 07-24)"
@@ -1264,7 +1285,21 @@ expectations:
     what_confirms: "the 13F-HR filing itself appearing on SEC EDGAR"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    # 2026-08-14 ⟨daily⟩: HIT, on deadline. Filed 2026-08-14 16:05 ET (SEC
+    # EDGAR accession 0001193125-26-352200, period of report 2026-06-30).
+    status: hit
+    resolved: 2026-08-14
+    evidence: >
+      SEC EDGAR 13F-HR, accession 0001193125-26-352200, confirmed directly
+      from the XML holdings table (not secondary reporting): Alphabet
+      stake nearly doubled in share count (57.83M -> 106.0M combined Class
+      A/C shares, +83%) and value ($16.63B -> $37.76B, +127%); no other
+      AI-adjacent equity name appears anywhere in the 29-issuer portfolio.
+      Total disclosed equity value $299.25B (was $263.1B) — 13Fs disclose
+      long equity only, not cash. Non-AI moves in the same filing:
+      Constellation Brands exited entirely, Bank of America/Capital
+      One/Kroger trimmed, Delta grown sharply (+44%), a token new D.R.
+      Horton toehold opened.
 
   - id: kaiser-nuhw-mediation-0811
     claim: "Kaiser Permanente and NUHW begin mediation over AI/layoff/control demands"
@@ -1320,6 +1355,28 @@ expectations:
     # duplicate; same resolution (keep the fuller/newer id, drop the other,
     # nothing lost — the older entry's source and what_confirms language
     # are both superseded by this one's).
+
+  - id: kaiser-nuhw-mediation-window-close
+    claim: "Kaiser Permanente and NUHW's mediation window (Kaiser's own stated 'August 11 to 14') closes with a public outcome"
+    due: 2026-08-14
+    due_precision: day
+    thread: kaiser-ai-clinician-backlash
+    entities: [kaiser-permanente]
+    source: https://about.kaiserpermanente.org/
+    confidence: reported
+    what_confirms: "either party's own channel posting a readout — resolution, extension, or breakdown of the three named demands (AI, layoffs, clinician control)"
+    logged: 2026-08-14
+    logged_by: curate-add   # /daily 2026-08-14, mental-health lens
+    # New entry, distinct from kaiser-nuhw-mediation-0811 above (which only
+    # tracked whether mediation BEGAN, resolved passed-silent 2026-08-12).
+    # Kaiser's own description of the window as "August 11 to 14" gives it
+    # a real close date nothing was tracking. Checked both parties' own
+    # channels directly today (Kaiser labor-relations page, NUHW news page)
+    # — neither has posted anything dated past 07-27/07-02. Logged pending
+    # rather than resolved on first sight; the normal 3-day passed-silent
+    # grace applies on the next check.
+    slips: []
+    status: pending
 
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
@@ -1524,4 +1581,12 @@ expectations:
     what_confirms: "an announced closing, or SEC/company filings reflecting the combination; Musk said regulatory review was 'nearly complete' and the deal expected to close 'within days or by end of August'"
     logged: 2026-08-12
     logged_by: curate-add   # /daily 08-12, frontier-ai lens
-    status: pending
+    # 2026-08-14 ⟨daily⟩: HIT, ~17 days ahead of its 08-31 due date. Flagged
+    # by the ai-lens curation pass even though this entry's owning thread is
+    # global-capital's — the entities overlap the ai-lens watchlist and the
+    # ai-lens digest covered the close directly.
+    status: hit
+    resolved: 2026-08-14
+    evidence: >
+      SpaceX completed the $60B all-stock Cursor (Anysphere) acquisition
+      2026-08-14 (Bloomberg; SpaceX 8-K).

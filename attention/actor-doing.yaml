@@ -916,18 +916,26 @@ actors:
     # New entry 2026-08-09 — a real gap, not a refresh: this board actor
     # has had real thread coverage since 08-04 (berkshire-ai-capital-stance)
     # but never had an actor-doing roll-up until today.
-    asof: 2026-08-09
+    asof: 2026-08-14
     doing: >
-      Michael Burry publicly broke with Berkshire's post-Buffett
-      direction (08-09), saying he no longer finds it "an attractive
-      investment going forward" and reading new CEO Greg Abel's early
-      cash deployment as "more framing moves than investment moves" —
-      the first public negative read on a story this map had been
-      carrying positively. Q2 earnings (08-08) showed Abel ending a
-      14-quarter net-selling streak: a $10B Alphabet stake add (explicitly
-      framed as an AI-capex bet) plus $4.5B+ in buybacks, deploying part
-      of Berkshire's ~$365-400B cash pile. Q2 2026 13F due 08-14 will make
-      whether the Alphabet position kept growing independently checkable.
+      The Q2 2026 13F (filed 08-14, on deadline) confirmed what the 08-08
+      earnings call described in dollar terms: the Alphabet stake nearly
+      doubled in share count over the quarter (57.83M -> 106.0M combined
+      Class A/C shares, +83%; value $16.63B -> $37.76B), with no other
+      AI-adjacent equity joining it anywhere in the 29-issuer portfolio.
+      Elsewhere the portfolio rebalanced toward housing/away from a
+      handful of consumer names (Constellation Brands exited entirely,
+      Delta grown +44%, a token new D.R. Horton toehold) — real active
+      management under Abel, not passive holding. Burry's 08-09
+      skepticism ("more framing moves than investment moves") now has
+      its first hard data point to be tested against.
+
+      Prior read (08-09), for continuity: Michael Burry publicly broke
+      with Berkshire's post-Buffett direction, saying he no longer finds
+      it "an attractive investment going forward." Q2 earnings (08-08)
+      had shown Abel ending a 14-quarter net-selling streak: a $10B
+      Alphabet stake add plus $4.5B+ in buybacks, deploying part of
+      Berkshire's ~$365-400B cash pile.
   softbank:
     asof: 2026-08-07
     doing: >
@@ -1257,16 +1265,25 @@ actors:
       the OIG MA-denial report as the #2 MA insurer, without a Humana-
       specific finding yet. Dedicated crawl recommended.
   kaiser-permanente:
-    asof: 2026-08-12
+    asof: 2026-08-14
     doing: >
-      New 08-12: the NUHW mediation's 08-11 start date resolved
-      `passed-silent` — checked three times through the day against both
-      parties' own channels, neither posted a readout confirming the
-      session convened. This exact dispute has a 2025 precedent for a
-      scheduled mediation round going quiet mid-stream, so the silence is
-      being read as itself worth recording, not assumed benign; watch for
-      whether a readout surfaces late or the round has genuinely stalled
-      again.
+      Kaiser's own stated mediation window with NUHW ("August 11 to 14")
+      reached its scheduled close today with still no public outcome from
+      either party — checked directly against both channels. A new
+      dated-expectation entry (kaiser-nuhw-mediation-window-close) now
+      tracks this specifically, distinct from the 08-11 start date, which
+      already resolved `passed-silent` on 08-12 (see prior read below).
+      The three named sticking points (AI-replacement language for the
+      E-Visit triage tool, layoffs/outsourcing, sole clinical-model
+      discretion) remain unresolved either way.
+
+      Prior read (08-12), for continuity: the NUHW mediation's 08-11
+      start date resolved `passed-silent` — checked three times through
+      the day against both parties' own channels, neither posted a
+      readout confirming the session convened. This exact dispute has a
+      2025 precedent for a scheduled mediation round going quiet
+      mid-stream, so the silence was read as itself worth recording, not
+      assumed benign.
 
       The clearest same-company AI-contrast on the board: the labor fight
       over AI in BH triage (the kaiser-ai-clinician-backlash arc)

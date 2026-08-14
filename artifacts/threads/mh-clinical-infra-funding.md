@@ -12,6 +12,22 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-08-13 — Coverage-critic catch: behavioral health hits a new high on the Inc. 5000 growth list
+
+- **Behavioral Health Business counted 52 behavioral-health companies on
+  this year's Inc. 5000 fastest-growing private-company list, a new
+  all-time high (45 last year), and read it as confirmation that
+  industry growth is concentrating in newer entrants rather than
+  established providers.** A paywalled BHB+ annual trend feature, not a
+  single-company story — the underlying access/demand imbalance hasn't
+  changed, but operating conditions keep shifting under it. The most
+  direct trade-press articulation this window of this thread's own
+  thesis: capital keeps finding behavioral health, just not evenly
+  across the field. Missed in the 2026-08-13 digest's earlier building
+  pass; caught by that day's coverage critic and folded into the
+  finalize.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/13/50-companies-make-growth-list-as-startups-outpace-established-providers/)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-10 — LifeStance's clinical chief makes the public case for interventional psychiatry going mainstream
 
 - **LifeStance Health CMO Dr. Stephanie Eken argued in a trade-press

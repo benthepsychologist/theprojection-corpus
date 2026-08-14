@@ -13,6 +13,25 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-14 — Mediation window's scheduled last day closes with no outcome posted either side
+
+- **The mediation window Kaiser itself described as "August 11 to 14"
+  reaches its scheduled end today, and a direct check of both parties'
+  own channels found nothing new: Kaiser's labor-relations page still
+  shows its August 11 "next steps" message as the newest post, and
+  NUHW's news page hasn't moved past July 27.** That August 11 message
+  restates Kaiser's offer in full — 17.5% total wage increase over four
+  years — and confirms Kaiser's proposed joint AI committee for NUHW is
+  still on the table, explicitly modeled on the existing AI framework
+  agreement Kaiser already has with the Alliance of Health Care Unions
+  (recognized by MIT Sloan as "the first comprehensive effort by a major
+  healthcare employer and its union partners to integrate worker voice
+  into all phases of AI decision-making"). Echoes the same
+  silence-not-signal pattern that produced a passed-silent flip on the
+  mediation's opening day; unlike that entry, no `upcoming.yaml`
+  expectation currently covers this specific close date.
+  ([Kaiser Permanente — NUHW bargaining](https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining), [NUHW](https://home.nuhw.org/)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-11 — Mediation began today and closed the digest-day confirmed passed-silent
 
 - **Mediation between Kaiser and NUHW began today, and by the time the

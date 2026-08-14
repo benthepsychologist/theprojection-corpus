@@ -5,6 +5,36 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-14 — Qassem rejects the Rome-talks framework as Israel reportedly awaits a US green light to seize Ali al-Taher, where ~40 Hezbollah fighters are besieged
+
+- **Hezbollah Secretary-General Naim Qassem rejected the Lebanese
+  government's Rome-talks negotiations with Israel and the US in a
+  Friday evening speech, saying Beirut "is signing Israeli-imposed terms
+  with Israeli ink" and calling for the framework — which pairs Lebanese
+  army deployment in the south with Hezbollah disarmament — to be
+  reversed.** The rejection is Hezbollah's own leadership going on record
+  against the talks track this thread has followed since 08-07/08-10,
+  not just a procedural complaint.
+  ([Haaretz](https://www.haaretz.com/middle-east-news/lebanonnews/2026-08-14/ty-article/.premium/hezbollah-chief-rejects-lebanon-deal-as-israel-reportedly-readies-assault/000001a0-014e-d75f-a3be-197e24080000)) ⟨daily 2026-08-14⟩
+- **The same day, Lebanese and Israeli reporting converged on a sharper
+  fact: the IDF has spent recent days tightening a siege on roughly 40
+  Hezbollah fighters trapped inside an extensive tunnel network beneath
+  the Ali al-Taher ridge near Nabatieh — cutting water supply lines and
+  blocking resupply — and is reportedly "awaiting a green light from the
+  United States" for a "precise, surgical" operation to seize the
+  position outright, per Lebanon's Al Joumhouria (cited by Ynet).** A
+  Lebanese security source: "The Israelis need this achievement and will
+  not back down from it." Israel's first attempt to take Ali al-Taher
+  earlier this year cost four IDF soldiers' lives, and the underground
+  complex — tunnels extending over a kilometer, believed to house a
+  command-and-control center and weapons stockpiles — has been described
+  as Hezbollah's south-Lebanon "nerve center." Israeli officials assess
+  the besieged fighters' food, water and power will run out "within
+  days." Talks are separately said to be aiming to resume in "early
+  September." This is the most concrete step toward renewed ground
+  combat this thread has logged since it opened.
+  ([ynetnews](https://www.ynetnews.com/article/hjzl9e3ife), [JFeed](https://www.jfeed.com/news-israel/idf-hezbollah-tunnel-siege), [L'Orient Today](https://today.lorientlejour.com/article/1539466/several-hezbollah-fighters-reportedly-trapped-in-tunnel-beneath-ali-al-taher-hill.html)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-13 — Salam calls south-Lebanon strikes a violation of international law; a US State Dept official rebukes Katz directly; verification-countries shortlist denied by all three sides
 
 - **Lebanese PM Nawaf Salam rejected Israel's assertion that villages

@@ -13,6 +13,62 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-14 — Zhipu claims a cybersecurity edge on Anthropic's own restricted model; Apple becomes the first foreign firm cleared to run its own model in China
+
+- **Zhipu (Z.ai) launched GLM-5.3, claiming it edges out Anthropic's
+  restricted-access Claude Mythos 5 on the CyberGym cybersecurity
+  benchmark (84.5% vs. 83.8%) — though it trails badly on ExploitBench
+  (54.4% vs. 78%).** Same 743B-parameter MoE base as GLM-5.2 (~40B
+  active/token). Zhipu is holding weights back from Hugging Face until
+  ~08-28 for its own safety review, gating the most sensitive
+  cybersecurity functions behind a "trusted access" program — the first
+  time a Chinese open-weight lab in this thread has voluntarily gated a
+  release this way, mirroring the access controls Anthropic itself uses
+  for Mythos. Distinct from `upcoming.yaml`'s pending `glm-5-5-release`
+  (a later, different version, still due 08-31) — not a flip.
+  ([South China Morning Post](https://www.scmp.com/tech/big-tech/article/3364077/zhipu-launches-flagship-model-glm-53-china-seeks-mythos-level-edge-cyber-defence), [Cryptopolitan](https://www.cryptopolitan.com/better-than-mythos-5-z-ai-glm-5-3-claim/)) ⟨daily 2026-08-14⟩
+- **Apple confirmed it trained a proprietary China-specific AI model
+  with Alibaba's support, ending reliance on third-party models for
+  Apple Intelligence in mainland China — Alibaba's Qwen integrates into
+  the China experience across iOS/iPadOS/macOS/visionOS.** Follows
+  China's cyberspace regulator registering Apple Intelligence, clearing
+  a rollout in the coming months; reportedly makes Apple the first
+  foreign company Beijing has cleared to deploy its own proprietary AI
+  model domestically. Distinct from the `apple-gemini-model-deal`
+  thread, which tracks Apple's rest-of-world Gemini partnership — this
+  is a separate, China-only build.
+  ([Japan Times](https://www.japantimes.co.jp/business/2026/08/14/apple-ai-model-china-alibaba/), [MacRumors](https://www.macrumors.com/2026/08/14/apple-trained-own-ai-model-for-china/)) ⟨daily 2026-08-14⟩
+
+## 2026-08-13 — Chip earnings turn the AI-demand story into a China-chipmaker P&L story; DeepSeek's low-cost pricing shows its first real strain
+
+- **SMIC's Q2 profit more than tripled year-over-year to $479.2M
+  (nearly double the $253.4M analysts expected) on revenue up 36% to
+  over $3B, beating estimates — driven by AI-chip demand outside the
+  traditional CPU/GPU categories, with most orders from Chinese
+  customers.** SMIC said it will adjust capacity and accelerate new
+  production lines to ease supply constraints through H2. Same-day
+  pattern as CXMT overtaking Tencent (global-capital's
+  `cxmt-memory-ipo`, cross-referenced) — Chinese chipmaker earnings are
+  becoming a direct AI-demand read, not just a decoupling story.
+  ([Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/smic-profit-more-triples-ai-093758638.html), [South China Morning Post](https://www.scmp.com/tech/tech-trends/article/3363929/ai-demand-drives-triple-digit-quarterly-profit-growth-chinese-foundries-smic-hua-hong)) ⟨daily 2026-08-13⟩
+- **DeepSeek raised API prices for its V4 models by 50% to as much as
+  1,100% effective 08-17, introducing peak/off-peak tiered pricing for
+  the first time** — V4-Pro output goes from a flat $0.87/1M tokens to
+  $3.96/1M peak ($1.98 off-peak). The company frames it as workload
+  redistribution, but it's the clearest sign yet that the low-cost-first
+  playbook that made V4 competitive is straining under real demand.
+  ([U.S. News/Reuters](https://money.usnews.com/investing/news/articles/2026-08-13/deepseek-raises-api-pricing-for-its-v4-models), [Engadget](https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/)) ⟨daily 2026-08-13⟩
+- **A Reuters exclusive details Microsoft's quiet five-year China
+  retreat — at least 15 branch offices/joint ventures closed — but not
+  a full exit: it still services Chinese multinationals like ByteDance
+  needing Western cloud/AI tools abroad, and keeps a presence for
+  engineering-talent access.** US export controls and Beijing's
+  domestic-software push are the cited binding constraints. Not the
+  same axis as the rest of this thread (a US firm's retreat, not
+  China's own stack build), but the clearest data point yet on where a
+  hyperscaler draws the line.
+  ([Reuters, via Investing.com](https://www.investing.com/news/stock-market-news/exclusivemicrosoft-retreats-in-china-but-ai-boom-helps-it-keep-a-window-open-4857136)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — Qwen3.8-Max lands as open weights, with a first-of-its-kind revenue-share attached; DeepSeek ships V4 Pro same day
 
 - **Alibaba's Qwen3.8-Max — a 2.4-trillion-parameter MoE model (~95B

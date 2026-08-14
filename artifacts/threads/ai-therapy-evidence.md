@@ -16,6 +16,33 @@ chatbot improves clinical outcomes — vs. the promotional framing. Safety
 evaluation maturing into a real subfield: VERA-MH benchmark, RAND's
 intermediate-risk failures, EmoAgent.
 
+## 2026-08-13 — Therabot's own first author, on the record: seven years in, still research-only, doubts FDA will ever approve it
+
+- **A regional feature let Dartmouth psychiatrist Michael Heinz, first
+  author on the Therabot clinical trial, lay out his own account of what
+  the tool is and isn't, seven years into the project.** Therabot
+  remains available only inside approved research studies — Heinz
+  "couldn't say when, or whether, it will reach the market" — while
+  products merely calling themselves AI therapists are already
+  downloadable with no trial data behind them. He doubts Therabot will
+  ever win FDA approval, not for any flaw in it but because "the FDA is
+  more used to looking at things that are static, that are fixed in
+  time — drugs, apps that aren't going to change. It may be kind of
+  trying to fit a square peg into a round hole." Dartmouth trained its
+  own model from scratch on data written to match therapeutic best
+  practice rather than renting a frontier model, explicitly to avoid
+  optimizing for engagement — "we are never optimizing toward engagement
+  for the sake of engagement" — but Heinz still acknowledged the
+  sycophancy risk directly: "these models ... can be sycophantic, they
+  can be overly agreeable," and it showed up in the trial itself, with
+  some participants forming a real therapeutic alliance with the bot and
+  reportedly disappointed when the study ended. A private-practice
+  psychologist quoted alongside him (uninvolved in the project) credited
+  its clinical-data training and CBT grounding but raised the harder
+  question the design can't resolve: "the app can't read behavior or
+  emotional reactions ... there's a total person here."
+  ([Concord Monitor / Valley News](https://www.concordmonitor.com/2026/08/13/dartmouth-ai-therapy-chatbot/)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-10 — A JMIR study: engagement pattern, not raw use, tracks with symptom severity
 
 - **A cross-sectional JMIR study of 112 users of "Mental" app's

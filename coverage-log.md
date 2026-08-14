@@ -2915,3 +2915,108 @@ bar, but this is now a recurring, dated pattern (08-04, 08-05, 08-06,
 and now 08-13) rather than a one-off — the fix each time has been
 absorbing it mid-run, never a structural change to the budget itself or
 how four parallel agents share it.
+
+## 2026-08-14 critic pass — finalized 2026-08-13 (all three critic-bearing
+lenses; world-news carries none by design)
+
+Run well past the checkable window (digest-day closed 05:00 ET 08-14; run
+started ~16:00 ET, ~11h after close). Four sonnet agents, one per lens,
+each finalized 08-13 with its own critic pass and built 08-14
+today-so-far, dispatched after a full collector sweep (all 15
+registered collectors, since the last successful run 08-11).
+
+### ai / 2026-08-13
+
+Checked this lens's four daily critic outlets against what they actually
+led with on 08-13: TLDR AI and The Neuron's dated issues were readable
+directly; The Rundown AI's archive didn't surface a distinct 08-13 entry;
+The AI Daily Brief's episode topic (Grok 4.6) was already logged 08-12.
+
+**They led with → we missed:** DeepSeek's V4 API price hike and Elon
+Musk's Grok 4.7 tease — both caught in this finalize pass. **Two items
+traced to the wrong day, not missed so much as mis-shelved by the source
+newsletters:** The Neuron's "Anthropic reviews 56 retraining studies"
+piece and Google's Pixel 11 launch (DeepMind sign-language model, Gemini
+Intelligence suite) both verified via direct fetch to be 2026-08-12
+events — neither appears in that day's (already-finalized) digest, a
+real miss on 08-12 specifically, flagged here rather than fixed (outside
+this pass's write scope; 08-12 is already closed).
+
+**Both covered:** Claude Cowork's Chrome integration, Grok 4.6, DeepSeek
+V4-Pro's release, Qwen3.8-2.4T-A95B — all logged 08-12, still circulating
+in 08-13's benchmark issues.
+
+**We had → they didn't:** Anthropic's $6B Decart talks + $2T IPO
+pricing, Anthropic's Frontier Red Team multiagent research, CXMT
+overtaking Tencent and SMIC's tripled profit, Microsoft's China-retreat
+exclusive, Databricks' $5B round, AMD's $4.75B bond sale, Vantage's
+$100B IPO exploration, Meta's NABTU pact, and OpenAI's CRO/Simo news.
+
+### mental-health / 2026-08-13
+
+Checked all four daily benchmarks (Behavioral Health Business via
+Googlebot-UA curl; STAT News via its RSS feed; Fierce Healthcare via
+WebFetch homepage + targeted search, its /behavioral-health tag page
+still 403s per the standing access note; MobiHealthNews via the
+r.jina.ai reader proxy).
+
+**Miss found:** BHB's own lead for the day, its annual Inc. 5000 trend
+feature (52 behavioral-health companies made the list this year vs. 45
+last year), wasn't in the 08-13 digest's earlier building pass. Folded
+into the finalize as a Capital & corporate bullet and into
+mh-clinical-infra-funding's timeline.
+
+**No miss found** on STAT (nothing MH-AI-specific that day), Fierce
+Healthcare (no MH-AI lead found on accessible surfaces or search), or
+MobiHealthNews (front-page snapshot showed nothing MH-specific).
+
+**Both covered:** none — a thin day for benchmark/digest overlap.
+
+**We had → they didn't:** SB 903's Appropriations release (primary
+leginfo source, not yet in trade press as of this check), a new
+Character.AI federal suit (filer's own press release, not yet in trade
+press), the Acton, MA case (general/local news, outside this benchmark
+set's trade-press scope by design), and a Dartmouth Therabot feature
+confirming Vermont's AI-therapy law (regional outlet, not a benchmark).
+Stronger day for the digest than for the benchmark set specifically.
+
+### global-capital / 2026-08-13
+
+**Benchmarks checked:** FT Unhedged (direct RSS, worked cleanly),
+Bloomberg Technology (WebSearch — its 08-13 newsletter), Money Stuff
+(WebSearch), Axios Pro Rata (blocked).
+
+**They led with → we missed:** nothing. FT Unhedged's 08-13 issue ("The
+most difficult dilemma") covers monetary policy colliding with a supply
+shock — the same Fed-debate-meets-oil-fundamentals throughline this
+digest carried all day. Bloomberg Technology's 08-13 lead ("Wall Street
+Opens Spigots for AI Debt and Stock Offerings") named the same Vantage
+$100B IPO, Decart talks, and AI-startup-valuation material already in
+this digest. Money Stuff's 08-13 column was off-axis by design
+(prediction markets); Levine is on vacation through 08-24.
+
+**Axios Pro Rata: recurred, not new.** axios.com returned Cloudflare's
+domain-wide bot block again today (plain fetch and Googlebot UA both
+403'd) — the same open, unresolved gap `sources/benchmarks.yaml` already
+documents. Recording the recurrence per that file's own request; still
+needs Ben's call on a headless-render fix vs. accepting the gap.
+
+**Both covered:** AMD's Anthropic-tied bond sale, Anthropic's $2T
+IPO-valuation chatter/Decart talks, the Vantage-led data-center IPO wave.
+
+**We had → they didn't:** the Iran/oil fundamentals-over-rhetoric read
+(tested four separate times that day), PPI/jobless-claims vs. the Fed's
+9-3 split, CXMT overtaking Tencent, Oracle's fresh layoffs vs. its
+capex, the Jefferies hyperscaler FCF number, Burry naming Nvidia's
+platform specifically, Silver Lake/Workday, and the Jane Street junk-
+rated bond.
+
+### Collector note — full 15-collector sweep, `lda` still 100% dead
+
+All 15 registered collectors ran (since=2026-08-13T20:08:39Z, ~24h
+window). `lda`: 143/143 terms failed, HTTP 403 — confirmed still
+permanently dead from this container's egress (Akamai edge block,
+documented since 08-05), not a fresh finding. `semantic_scholar` hit its
+600s lane wall-clock budget and skipped ~169 terms — the accepted,
+by-design cutoff, not an outage. `gdelt` ran through repeated 429
+backoffs but completed cleanly. No other collector errors.

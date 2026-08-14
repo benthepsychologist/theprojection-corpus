@@ -1,0 +1,86 @@
+# 2026-08-14-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase (first 50 chars). The bullet's
+# <!-- k: ... --> annotation carries interp=yes to point here.
+# Read against capital-context.yaml (asof 2026-08-09, not yet refreshed
+# with anything from this week — see the entry's own context_note) and
+# against berkshire-ai-capital-stance's own 08-08/08-09 sidecar entries,
+# which today's 13F directly answers.
+
+berkshire-hathaway-s-q2-2026-13f-filed-2026-08-14-:
+  mechanism: >
+    The mechanism worth naming is that this is the first HARD, filed
+    confirmation of a pattern this thread had so far only seen through
+    earnings-call framing and investor commentary: Berkshire's Alphabet
+    position is not a one-quarter add but a compounding one — it grew in
+    Q1 2026 (per the prior 13F), grew again through Q2 per the 08-08
+    earnings call's "$10B more" figure, and the 13F now shows the actual
+    share-count mechanics (57.8M to 106.0M combined shares, +83%) behind
+    that dollar figure. The absence of any OTHER AI-adjacent name (no
+    Nvidia, no Microsoft, no OpenAI-adjacent public vehicle) is equally
+    load-bearing: Berkshire's AI exposure is a concentrated, single-name
+    bet on Alphabet specifically, not a diversified AI-sector position —
+    a distinction that matters because a single-name bet inherits
+    Alphabet's own idiosyncratic risk (regulatory, Gemini-cycle
+    competitive position) rather than the AI-buildout's systemic risk
+    this lens tracks elsewhere (debt, circular financing).
+  confidence: likely
+  scenarios:
+    - direction: >
+        Berkshire continues adding to Alphabet through Q3/Q4 2026,
+        eventually making it a top-3 holding outright (currently 4th by
+        disclosed value behind Apple, Amex, Coca-Cola) — validating
+        Buffett's own framing of this as a considered, high-conviction
+        AI-capex bet rather than a one-off allocation, and cementing
+        Berkshire as a genuine (if concentrated) institutional validator
+        of the Alphabet-specific AI thesis distinct from the broader
+        Nvidia/OpenAI-centered buildout story.
+      why: >
+        This is now the THIRD consecutive quarter of growth in the same
+        direction (Q4 2025 disclosed add, Q1 2026 13F growth, Q2 2026
+        13F growth now confirmed) — a repeating, accelerating pattern
+        rather than a single decision, and one that has survived a CEO
+        transition (Abel taking over) without reversing.
+      precedent: >
+        Berkshire's own historical pattern with concentrated, multi-year
+        compounding positions (Apple being the most direct precedent —
+        built gradually from 2016 into what became its largest holding)
+        is the thread's own on-file example of exactly this kind of
+        conviction-building position sizing.
+    - direction: >
+        The Alphabet position growth decelerates or reverses once Abel's
+        own stated caution ("not AI for the sake of AI," on file from
+        this thread's 08-04 opening) reasserts itself now that the
+        position has grown large enough to represent real single-name
+        concentration risk (12.6% of disclosed equity value at $37.8B of
+        $299.25B) — with the non-AI rebalancing seen elsewhere in this
+        same 13F (Constellation Brands exit, Delta growth, D.R. Horton
+        toehold) read as the leading edge of Abel diversifying AWAY from
+        concentrated bets generally, Alphabet eventually included.
+      why: >
+        This is the same 13F that shows real portfolio rebalancing
+        elsewhere — an active CEO trimming some positions and adding
+        others is not a passive index-style manager, and Buffett himself
+        (per this thread's 08-04 opening) is the one who "personally
+        initiated" the Alphabet buy, not Abel — a succession-risk angle
+        this thread has carried since it opened.
+      precedent: >
+        Berkshire's own historical willingness to trim or exit even
+        long-held, successful positions when concentration or conviction
+        changes (this thread does not yet have a directly AI-adjacent
+        precedent on file; the Apple trim in 2024 — reducing a position
+        that had also grown into deep concentration — is the closest
+        analog available, cited with the caveat that its own rationale
+        was never fully disclosed by Berkshire).
+  context_note: >
+    Directly resolves `berkshire-ai-capital-stance`'s core watch item
+    (opened 2026-08-04) and the `berkshire-q2-2026-13f` upcoming.yaml
+    expectation (due 2026-08-14, now HIT). Extends the thread's own
+    08-08 entry (Abel's Q2 earnings-call framing, "$10B more into
+    Alphabet") from a dollar figure into confirmed share-count mechanics,
+    and reads directly against Michael Burry's 08-09 skepticism on the
+    same thread — this 13F is itself the first hard data point either
+    side of that disagreement can point to since Burry's comment.
+    Candidate line for `capital-context.yaml`'s next /week-adjacent
+    refresh (no dedicated reading currently tracks single-actor AI equity
+    concentration) — not an edit to make directly from /daily.

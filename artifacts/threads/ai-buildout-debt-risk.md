@@ -18,7 +18,7 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
-## 2026-08-13 — The debt shows up one layer up: a chipmaker, not a neocloud, raises AI-tied bonds
+## 2026-08-13 — The debt shows up one layer up (a chipmaker, not a neocloud), then a named bear case, a cross-hyperscaler cash-flow number, and the first junk-rated print
 
 - **AMD is raising up to $5 billion in its largest-ever dollar bond
   sale, and Reuters/Yahoo Finance both frame it against AMD's own AI-chip
@@ -35,8 +35,40 @@ very different recovery rates in a default.
   itself ever ties debt explicitly to the stake. Reads directly against
   `ai-circular-financing-risk` (ai lens), whose entity list (Nvidia/
   OpenAI/Oracle) doesn't yet include AMD/Anthropic despite this being the
-  same shape of question.
-  ([Yahoo Finance/Bloomberg](https://finance.yahoo.com/technology/ai/articles/amd-raise-much-5-billion-151416792.html)) ⟨daily 2026-08-13⟩
+  same shape of question. **Priced the next morning (08-14) at $4.75B**
+  across the four tranches, with the longest tranche tightening ~0.25pt
+  from initial talk to +0.9pt over Treasuries; AMD shares +5.6% on the
+  print.
+  ([Yahoo Finance/Bloomberg](https://finance.yahoo.com/technology/ai/articles/amd-raise-much-5-billion-151416792.html), [Bloomberg, pricing](https://www.bloomberg.com/news/articles/2026-08-13/amd-plans-to-raise-as-much-as-5-billion-from-debt-offering)) ⟨daily 2026-08-13⟩
+- **A Jefferies note (strategist Christopher Wood) quantified the
+  capex-vs-cash-flow tension across all four largest hyperscalers at
+  once for the first time on this thread's record: combined free cash
+  flow fell to $7B in Q2 2026 from $60B in Q4 2025, against $165B of
+  combined quarterly AI capex.** Jefferies' own read is not bearish
+  (cloud revenue +38% y/y is framed as the return side), but the
+  compression number itself generalizes what this thread had so far only
+  seen company-by-company (Oracle's FCF, CoreWeave's debt service).
+  ([BusinessToday](https://www.businesstoday.in/technology/story/ai-booms-hidden-bill-big-techs-spending-hits-165-billion-as-free-cash-flow-shrinks-549283-2026-08-14)) ⟨daily 2026-08-13⟩
+- **Michael Burry named Nvidia's 08-10 $500B Wall Street financing
+  platform directly, calling its credit structures "abnormal" and its
+  revenue "largely financed through circular arrangements" that are
+  "off-balance-sheet and undisclosed" — this thread's first named,
+  specific bear case rather than general AI-boom skepticism.** He also
+  flagged private-equity-owned insurers filling balance sheets with
+  illiquid, AI-tied asset-backed paper — the same structural shape as
+  the Jane Street bond below. See this digest's interpretation sidecar
+  for the full mechanism read (held at `plausible`, both directions
+  argued).
+  ([Tekedia](https://www.tekedia.com/michael-burry-warns-ai-linked-private-credit-could-become-source-of-broader-financial-contagion/)) ⟨daily 2026-08-13⟩
+- **A data-center developer sold $2.25B of green bonds — rated below
+  investment grade by Moody's — backed by a 15-year Jane Street lease on
+  a 149-megawatt Oklahoma facility; this thread's first sub-investment-
+  grade AI-datacenter asset-backed print.** Priced at 99.5 cents on the
+  dollar to yield almost 9%. Sustainable/green-labeled data-center bond
+  issuance is already up sharply industry-wide (Bloomberg: $11.2B in
+  2025 vs $7.6B in 2024) — a junk-rated tranche inside that growth is
+  exactly the shape of data point this thread exists to catch.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-12 — A second neocloud shows the same circular-financing shape, and closes the day with a first: an investment-grade rating
 

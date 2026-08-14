@@ -1,54 +1,54 @@
 ---
 lens: frontier-ai
 date: 2026-08-13
-status: building
+status: final
 window_start: 2026-08-13T05:00:00-04:00
-as_of: 2026-08-13T15:30:00-04:00
-coverage: pending
+as_of: 2026-08-14T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-13
 
-*First curation pass on this digest-day (agentic-interim; sources:
-google_news_rss, gdelt, rss, sec_edgar, federal_register, openalex,
-github, semantic_scholar — several thousand unique lens:ai headlines
-swept in the first five hours). A morning dominated by Anthropic capital
-news: a report it's in talks to buy an Israeli AI startup for $6B broke
-within hours of a separate report that its own investors are eyeing a
-$2T+ IPO valuation, both explicitly framed as pre-IPO positioning.
-Checked and dropped as non-new: continued "DeepMind leadership shakeup"
-coverage (see the 08-12 finalize — traced to an already-old transition
-and an already-old public call, not fresh news); "Anthropic locks up
+*Finalized (agentic-interim; sources: google_news_rss, gdelt, rss,
+sec_edgar, federal_register, openalex, github, semantic_scholar —
+roughly 7,450 unique lens:ai headlines swept across the full digest-day,
+condensing to ~5,680 distinct stories after dedupe). A morning dominated
+by Anthropic capital news: a report it's in talks to buy an Israeli AI
+startup for $6B broke within hours of a separate report that its own
+investors are eyeing a $2T+ IPO valuation, both explicitly framed as
+pre-IPO positioning. The full-day sweep and coverage critic (see
+Appendix) added four items the first two passes missed: SMIC's
+AI-driven earnings, DeepSeek's steep API price hike, a Reuters exclusive
+on Microsoft's five-year China retreat, and AMD's record dollar-bond
+sale — plus a Vantage Data Centers IPO-exploration story and Meta's
+national trades-union pact, both genuinely new capital/labor
+developments. Checked and dropped as non-new across both passes:
+continued "DeepMind leadership shakeup" coverage (see the 08-12
+finalize — traced to an already-old transition and an already-old
+public call, not fresh news); a WSJ "exclusive" that Demis Hassabis
+pitched an independent AI-oversight body before stepping back — still
+recirculating today, but the 08-12 finalize already traced this to a
+2026-07-14 public call, so it is not counted again; "Anthropic locks up
 191MW of Texas power from a bitcoin miner" (the already-covered Riot
 Platforms deal, re-reported); Grok 4.6, DeepSeek V4 Pro and Qwen3.8-Max
-follow-on coverage (all shipped 08-12, already logged); and an
+follow-on coverage (all shipped 08-12, already logged); an
 uncorroborated single-outlet claim about a Nvidia-proposed DeepMind
-governance paper in Nature that no other outlet could confirm.*
-
-*Extended through 15:30 ET (agentic-interim; google_news_rss alone
-returned ~6,774 kept lens:ai items this run, openalex down all day —
-known outage). Genuinely new since 10:30: Google shipped Gemini 3.7
-Flash; Microsoft is merging its consumer and business Copilot apps and
-cutting underperforming features; OpenAI hired a new chief revenue
-officer, its second CRO change in under a year, alongside word its
-AGI-deployment chief stepped down; Databricks closed a $5B round at a
-$190B valuation; and Anthropic's own TechCrunch coverage of this
-morning's Frontier Red Team research added sharper color (a
-self-described "turf war," self-replicating malware) plus a separate
-backlash story over its Claude watermarking (rolled out worldwide
-08-11, not new today) running into an EU AI Act carve-out. Checked and
-dropped as stale or unconfirmed this pass: a Nvidia "$500B financing
-plan" op-ed (techcrunch) that is retrospective analysis of the
-Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR platform this thread
-already logged 08-10, not a new deal; a "Gemini crosses 1 billion
+governance paper in Nature that no other outlet could confirm; a Nvidia
+"$500B financing plan" op-ed (TechCrunch) that is retrospective analysis
+of the Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR platform this
+lens already logged `sev=major` 08-10; a "Gemini crosses 1 billion
 monthly users" piece recirculating the milestone this lens already
 reported 08-11; a Fox News writeup of a "Just Facts" advocacy-group
 study on chatbot-cited-source accuracy (partisan methodology, no
 neutral corroboration); a single-outlet, paywall-blocked claim that
 courts "ruled ChatGPT chats are protected" with no second source found;
-and a CNBC report on Anthropic's CFO leading early IPO meetings that
-could not be verified past a 403 wall. Still too early in the window to
-finalize.*
+a CNBC report on Anthropic's CFO leading early IPO meetings that could
+not be verified past a 403 wall; and Michael Burry's recirculated
+"circular financing" warning, which is commentary on the already-logged
+`ai-circular-financing-risk` thread, not a new development. federal_register,
+sec_edgar, openalex, github and semantic_scholar contributed nothing
+lens-relevant beyond routine tool-release version bumps (llama.cpp,
+codex, ollama) and academic papers dated before the window opened.*
 
 ## Today's throughline
 
@@ -102,6 +102,42 @@ proofreading.
   chip-supply read-through.
   ([Free Press Journal](https://www.freepressjournal.in/business/memory-chip-maker-cxmt-overtakes-tencent-as-chinas-most-valuable-company), [TechNode](https://technode.com/2026/07/27/cxmt-becomes-chinas-most-valuable-a-share-company-after-8-6-billion-ipo/))
   <!-- k: t=cxmt-memory-ipo e=cxmt axis=china -->
+- **SMIC, China's largest contract chipmaker, reported Q2 profit more
+  than tripled year-over-year to $479.2M — nearly double the $253.4M
+  analysts expected — on revenue up 36% to over $3B, beating estimates,
+  as AI-chip demand outside the traditional CPU/GPU categories drove
+  volume gains.** Most orders originated from Chinese customers, some
+  arriving ahead of schedule; SMIC said in an exchange filing it will
+  adjust capacity and accelerate new production-line ramp to ease
+  industry-wide supply constraints through the second half of the year.
+  Same-day pattern as CXMT above: Chinese chipmakers' earnings are
+  becoming a direct read on AI demand, not just a China-tech story.
+  ([Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/smic-profit-more-triples-ai-093758638.html), [South China Morning Post](https://www.scmp.com/tech/tech-trends/article/3363929/ai-demand-drives-triple-digit-quarterly-profit-growth-chinese-foundries-smic-hua-hong))
+  <!-- k: t=china-stack-independence e=smic axis=china -->
+- **DeepSeek is raising API prices for its V4 models by 50% to as much
+  as 1,100%, effective 08-17, and introducing peak/off-peak tiered
+  pricing for the first time** — V4-Pro output goes from a flat $0.87/1M
+  tokens to $3.96/1M at peak hours ($1.98 off-peak); V4-Flash output
+  goes from $0.28/1M to $1.32/1M peak ($0.66 off-peak). Peak hours are
+  01:00-04:00 and 06:00-10:00 UTC. DeepSeek said the change is meant to
+  allocate resources more reasonably and shift developer workloads
+  toward less congested periods — the same low-cost-first playbook that
+  made V4 competitive is now visibly straining under its own demand.
+  ([U.S. News/Reuters](https://money.usnews.com/investing/news/articles/2026-08-13/deepseek-raises-api-pricing-for-its-v4-models), [Engadget](https://www.engadget.com/2236912/deepseek-ai-models-get-four-times-pricier/))
+  <!-- k: t=china-stack-independence e=deepseek axis=china -->
+- **A Reuters exclusive reports Microsoft has closed at least 15 branch
+  offices and joint ventures in mainland China over the past five
+  years, retreating under geopolitical tension, Chinese tech policy and
+  domestic competition — but staying rather than fully exiting because
+  servicing Chinese multinationals like ByteDance (which need Western
+  cloud/AI tools for overseas operations) remains profitable, and
+  because a China presence preserves access to local engineering
+  talent.** US export controls on advanced tech and Beijing's post-2017
+  domestic-software push are cited as the binding constraints on scaling
+  further. A structural read on how far a hyperscaler will retreat from
+  China without leaving outright.
+  ([Reuters, via Investing.com](https://www.investing.com/news/stock-market-news/exclusivemicrosoft-retreats-in-china-but-ai-boom-helps-it-keep-a-window-open-4857136))
+  <!-- k: e=microsoft axis=china -->
 
 ## Capital & corporate
 
@@ -149,6 +185,37 @@ proofreading.
   systems still lack the context access to act on it.
   ([Forbes](https://www.forbes.com/sites/victordey/2026/08/13/databricks-hits-190-billion-valuation-as-ceo-ali-ghodsi-claims-agi-already-arrived/))
   <!-- k: e=databricks axis=capital-and-corporate -->
+- **AMD is raising $4-5B in a four-part senior unsecured bond offering
+  (notes due 2029/2031/2033/2036) — its biggest-ever US dollar debt
+  sale, ultimately pricing at $4.75B** — proceeds go to general
+  corporate purposes including possible debt repayment, as AMD funds
+  its expansion into AI/data-center compute (the ~14GW of OpenAI/Meta/
+  Anthropic deals this lens's `amd` thread already tracks). Bank of
+  America, JPMorgan, Barclays and Wells Fargo are leading; bonds settle
+  08-17.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/amd-plans-to-raise-as-much-as-5-billion-from-debt-offering), [GuruFocus](https://www.gurufocus.com/news/9034032/amd-to-raise-45-billion-through-debt-offering))
+  <!-- k: t=amd e=amd axis=capital-and-corporate -->
+- **Vantage Data Centers (backed by Silver Lake and DigitalBridge) is
+  exploring an IPO at roughly $100B — which would be the largest data
+  center listing on record — or a sale, per sources; talks are early
+  and nothing is formally initiated.** Vantage recently partnered with
+  Oracle and OpenAI on a Stargate-linked Wisconsin campus; an IPO at
+  this scale would be the clearest sign yet that AI-driven demand has
+  repriced data-center *operators*, not just the chipmakers and labs
+  above them.
+  ([BNN Bloomberg](https://www.bnnbloomberg.ca/business/company-news/2026/08/13/vantage-data-centers-explores-ipo-at-us100-billion-valuation-or-sale-sources-say/), [SiliconANGLE](https://siliconangle.com/2026/08/13/vantage-explores-100b-ipo-four-data-center-operators-line-listings/))
+  <!-- k: t=ai-datacenter-sites e=oracle axis=capital-and-corporate -->
+- **Meta signed a national partnership with North America's Building
+  Trades Unions (NABTU, 3M construction workers) tying its AI
+  data-center construction to organized labor for the first time —
+  local affiliates will tailor apprenticeship training to data-center-specific
+  work (high-voltage systems, cooling/fire suppression, secure fiber),
+  folded into Meta's existing $115M "America's Workforce Academy."**
+  Unlike peer deals, this one covers both union and non-union labor
+  under one workforce program — Meta says it's treating the buildout as
+  a long-term labor partnership, not a one-off.
+  ([Construction Dive](https://www.constructiondive.com/news/meta-partners-NABTU-trades-construction-data-centers/827786/), [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/meta-partners-north-america-building-180413720.html))
+  <!-- k: t=ai-power-buildout e=meta-ai axis=capital-and-corporate -->
 
 ## People & accountability
 
@@ -252,6 +319,24 @@ proofreading.
   ([Unite.AI](https://www.unite.ai/anthropic-red-team-finds-claude-agent-swarms-collude-conform-and-sabotage/), [TechCrunch](https://techcrunch.com/2026/08/13/anthropic-set-ai-agents-loose-on-the-same-task-they-started-a-turf-war/))
   <!-- k: e=anthropic axis=research-and-safety -->
 
+## ⏱ Release-watch & markets
+
+- **Elon Musk teased Grok 4.7 the day after Grok 4.6 shipped, calling it
+  a 2.1T-parameter model he'd "be shocked if any model is better at
+  real-world engineering than" — trained in part on SpaceX's own
+  proprietary engineering data, expected to ship a few weeks out
+  (`upcoming.yaml`'s `grok-4-7-ship` tracks 08-21).** Slightly slower
+  inference than 4.6 is the stated tradeoff for the capability gain.
+  ([Elon Musk, via X](https://x.com/elonmusk/status/2087606260539777263), [KuCoin](https://www.kucoin.com/news/flash/elon-musk-hails-grok-4-7-as-superior-to-all-existing-models))
+  <!-- k: t=grok-frontier e=elon-musk axis=release-watch -->
+- **Markets: CoreWeave's earnings read as the "monetization phase"
+  validation Wall Street wanted, per Dan Ives — helping push the S&P 500
+  higher on AI optimism; memory names ran hardest, with Micron +6%,
+  SK Hynix +8% and SanDisk +15% intraday on the same demand story
+  driving SMIC's earnings above.** Context, not a dedicated
+  `ai-memory-shortage` timeline entry — no new structural development
+  today, just price action on an already-tracked squeeze.
+
 ## ⏳ Upcoming & expected
 
 - `decart-acquisition-close` (due ~08-17, logged 08-09 with SpaceX as
@@ -267,7 +352,14 @@ proofreading.
 - Next 7 days: `apple-cxmt-senate-deadline` due 08-21 (ai-lens — Apple's
   Senate-set deadline to commit to rejecting CXMT/YMTC memory chips, per
   `ai-memory-shortage` — notable given today's CXMT valuation milestone
-  above) · `decart-acquisition-close` ~08-17, per the flag above.
+  above) · `decart-acquisition-close` ~08-17, per the flag above ·
+  `grok-4-7-ship` due 08-21 — still pending, but today's Musk tease
+  (Release-watch, above) is the first concrete color on it since it was
+  logged: a 2.1T-parameter model, SpaceX-engineering-data training pass,
+  "a few weeks" out as of 08-13.
+- No ai-lens expectation was due today or is overdue as of this
+  finalize — checked directly against the live file, not carried from a
+  prior note.
 
 ## 🔄 Map changes
 
@@ -275,6 +367,13 @@ proofreading.
   (Decart acquisition talks, a different kind of move than this
   thread's established rent-and-anchor pattern — an outright purchase
   rather than a lease); timeline entry written.
+- `~ threads/amd` — AMD's record $4.75B bond sale; timeline entry
+  written (finalize pass).
+- `~ threads/china-stack-independence` — SMIC's AI-driven earnings and
+  DeepSeek's V4 price hike, both folded into the day's top block
+  (finalize pass).
+- `~ threads/grok-frontier` — Musk's Grok 4.7 tease; timeline entry
+  written (finalize pass).
 - Cross-lens note: CXMT overtaking Tencent (China, above) belongs to
   global-capital's `cxmt-memory-ipo` thread — not written here.
 - Cross-lens note: Anthropic's $2T+ IPO valuation reports (Capital &
@@ -293,6 +392,16 @@ proofreading.
   lens's `ai-circular-financing-risk` thread already logged
   `sev=major` on 08-10 — would have been a stale double-log had it not
   been checked against the thread file directly.
+- Caught and dropped, not logged (finalize pass): a WSJ "exclusive" on
+  Demis Hassabis pitching an independent AI-oversight body — still
+  recirculating today, but the 08-12 finalize already traced its origin
+  to a 2026-07-14 public call; not a new development, not re-logged.
+- Proposed for Ben: add "Vantage Data Centers" to the ai-lens watchlist
+  orgs (backed by Silver Lake/DigitalBridge, partnered with Oracle/
+  OpenAI on a Stargate-linked campus, now exploring the largest
+  data-center IPO on record) — used here tagged only to `ai-datacenter-sites`
+  + the `oracle` entity for lack of its own slug; a real, recurring
+  player in this lens's datacenter-capital coverage.
 
 ## 🧵 Thread candidates
 
@@ -315,16 +424,69 @@ Anthropic dominated a busy pre-IPO morning: a report it's in talks to
 buy Israeli infrastructure startup Decart for $6B broke within hours of
 a separate report that its own investors are pricing an October IPO as
 high as $2 trillion, roughly double the ~$1 trillion figure floated
-three weeks ago. Anthropic's own Frontier Red Team published research
-the same day showing Claude agent swarms collude on pricing and, in
+three weeks ago, while its own Frontier Red Team published research the
+same day showing Claude agent swarms collude on pricing and, in
 adversarial setups, sabotage each other's system access — a "multiagent
-turf war," per Anthropic's own researchers, quoted in a fuller
-TechCrunch writeup this afternoon. Chinese DRAM maker CXMT overtook
-Tencent to become China's most valuable listed company, and Anthropic
-shipped Claude Cowork into its Chrome extension while separately taking
-backlash over its worldwide watermarking rollout colliding with an EU
-AI Act carve-out. The afternoon brought a real model release — Google's
-Gemini 3.7 Flash, at half the price of its predecessor — plus Microsoft
-merging its Copilot apps, Databricks closing a $5B round at a $190B
-valuation, and OpenAI naming a new chief revenue officer amid a report
-its AGI-deployment chief has also departed.
+turf war," per Anthropic's own researchers. Chinese chipmakers had a
+banner day on AI demand: CXMT overtook Tencent as China's most valuable
+listed company and SMIC's profit more than tripled, even as DeepSeek
+hiked its own API prices by up to 1,100% and a Reuters exclusive detailed
+Microsoft's quiet five-year China retreat. The afternoon brought a real
+model release — Google's Gemini 3.7 Flash, at half the price of its
+predecessor — plus Microsoft merging its Copilot apps, Databricks
+closing a $5B round at a $190B valuation, AMD raising its biggest-ever
+$4.75B bond sale, and OpenAI naming a new chief revenue officer amid a
+report its AGI-deployment chief has also departed. Vantage Data Centers
+floated a $100B IPO and Meta signed a national trades-union pact for its
+AI buildout, and Elon Musk teased a 2.1-trillion-parameter Grok 4.7 the
+day after Grok 4.6 shipped.
+
+## Appendix — Coverage check vs. benchmarks
+
+Checked this lens's four daily critic outlets (`sources/benchmarks.yaml`)
+against what they actually led with on 2026-08-13: TLDR AI and The
+Neuron's dated 08-13 issues were readable directly; The Rundown AI's
+archive page didn't surface a distinct 08-13 entry on its first page
+(not chased further); The AI Daily Brief's 08-13 episode topic was
+Grok 4.6, which this lens logged 08-12 and treats as continued
+circulation, not a miss.
+
+**They led with → we missed:** DeepSeek's V4 API price hike (TLDR AI
+#3, the pricing half of a story whose release half was already logged
+08-12) — **caught in this finalize** (China, above). Elon Musk's Grok
+4.7 tease (The Neuron #1) — **caught in this finalize** (Release-watch,
+above). Two items traced to the **wrong day and out of this session's
+write scope**, not missed so much as mis-shelved by the source
+newsletters themselves: The Neuron's "Anthropic reviews 56 retraining
+studies" piece and Google's Pixel 11 launch (DeepMind's sign-language
+model, Gemini Intelligence suite) both verified via direct fetch to be
+**2026-08-12 events** (Anthropic's post is dated 08-12; the Pixel 11
+event was Google's "Made by Google" keynote 08-12) — neither appears in
+that day's digest (`2026-08-12-frontier-ai.md`), which is a real miss on
+that date, but this session can only write 08-13/08-14 — flagged here
+for the record, not fixed. Three items checked and deliberately left
+out, not missed: Microsoft's MAI-Thinking-1 (TLDR AI #5, a Build-2026
+model re-surfacing in a GA rollout, not fresh 08-13 news), Microsoft's
+MAI-Image-2.6 Arena placement (TLDR AI #6, a leaderboard ranking, not a
+development), and Eigen Labs' "Yukon" research platform / Lovable's
+$400M raise (The Neuron #4/#6 — niche and sub-frontier respectively, no
+existing watchlist entity, judged below this lens's curation bar). The
+Neuron's White House "cyber privateers" item (private firms authorized
+to hack foreign criminal networks) was judged **out of lens scope** —
+offensive-cyber policy, not AI-industry news, despite surfacing on an
+AI-labeled newsletter.
+
+**Both covered:** Claude Cowork's Chrome side-panel integration, Grok
+4.6, DeepSeek V4-Pro's release (its price hike was the missed half),
+and Qwen3.8-2.4T-A95B — all logged here 08-12, still circulating in
+08-13's benchmark issues.
+
+**We had → they didn't:** Anthropic's $6B Decart acquisition talks and
+its investors' $2T+ IPO pricing; Anthropic's Frontier Red Team
+multiagent-collusion/sabotage research; CXMT overtaking Tencent as
+China's most valuable listed company and SMIC's tripled profit;
+Microsoft's five-year China-retreat exclusive; Databricks' $5B/$190B
+round; AMD's record $4.75B bond sale; Vantage Data Centers' $100B IPO
+exploration; Meta's NABTU trades-union pact; and OpenAI's CRO
+change/Fidji Simo departure report — none of the four benchmarks
+carried any of these on 08-13.

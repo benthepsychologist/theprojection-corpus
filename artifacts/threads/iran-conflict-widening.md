@@ -24,6 +24,33 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-14 — UAE blames Iran's IRGC for the tanker attack as "piracy"; Trump says he'll "declare" Hormuz US territory; Bessent previews measures "never before seen"
+
+- **The UAE's Foreign Ministry formally blamed Iran for Thursday
+  evening's drone attack on two ADNOC-operated tankers transiting Hormuz
+  (logged 08-13), calling it a "flagrant violation" of freedom of
+  navigation and accusing "Iran's Revolutionary Guard Corps" of "acts of
+  piracy."** Iran gave no immediate response. Separately, Canada
+  sanctioned five Iranian officials, including IRGC members, over
+  "activities that obstructed navigation rights" around Hormuz, and nine
+  European countries aligned with an existing EU sanctions decision
+  targeting six more Iranians over human-rights violations — a real
+  widening of the diplomatic-pressure track, distinct from the
+  shipping-incident track itself.
+  ([JPost](https://www.jpost.com/international/article-905560), [Spectrum News](https://spectrumlocalnews.com/me/maine/international/2026/08/14/oil-tankers-drone-strikes-strait-of-hormuz-uae-blames-iran)) ⟨daily 2026-08-14⟩
+- **Trump escalated his own rhetoric sharply, telling a law-enforcement
+  audience "after we finish defeating Iran, which is being very badly
+  defeated — pretty soon, I'll be declaring the Hormuz Strait a territory
+  of the United States," reasoning "we have the blockade, no ships get
+  through unless we want them to."** No stated implementation mechanism
+  and no sign this reflects a formal administration proposal rather than
+  a rhetorical flourish. Treasury Secretary Bessent separately previewed
+  economic measures against Iran "never before seen," beginning next
+  week. Yemen's Houthis claimed a drone strike on a Saudi Aramco facility
+  in Najran, citing "Saudi airspace violations" — a further, so-far
+  unconfirmed data point on the same war's Red Sea/Yemen dimension.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-14-2026/)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-13 — Araghchi warns of a "bigger miscalculation"; Basij commander claims the strait "under Iran's control"; UN Security Council debates Yemen's Houthi escalation
 
 - **Iran's Foreign Minister Abbas Araghchi said the US had already
@@ -52,6 +79,18 @@ concrete.
   positions over the past year — every link tried for it 404'd or
   blocked the fetch this session, so it is not written up as established.
   ([UN News](https://news.un.org/en/story/2026/08/1168131), [UN Press — SC/10208th meeting](https://press.un.org/en)) ⟨daily 2026-08-13⟩
+- **[Finalize catch] Iran's military rejected as "lies" Trump's claims of
+  US control over Hormuz, insisting Thursday the strait remains fully
+  under Iranian control** — the same standoff logged above, now escalated
+  from Araghchi/Taeb to Iran's military itself speaking directly.
+  Separately, two tankers owned by Abu Dhabi's state-owned oil company
+  ADNOC were struck by drones Thursday evening while transiting the
+  strait; the UK Maritime Trade Operations Center reported both suffered
+  only minor damage with no injuries, and neither government had
+  formally assigned blame before this digest-day's close (the UAE's
+  "acts of piracy" statement blaming Iran's IRGC came the next morning —
+  see 08-14).
+  ([JPost](https://www.jpost.com/international/article-905560), [Spectrum News, via US News wire](https://spectrumlocalnews.com/me/maine/international/2026/08/14/oil-tankers-drone-strikes-strait-of-hormuz-uae-blames-iran)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-12 — Trump/Iran trade "total control" claims as deal slips; Houthi attack kills six; blockade turns lethal
 

@@ -21,6 +21,30 @@ growing or any other AI-adjacent name appears; any further Buffett/Abel
 commentary; and the GEICO/insurance-AI-liability strand as a secondary,
 lower-priority watch.
 
+## 2026-08-14 — The Q2 13F answers the thread's own core watch: Alphabet nearly doubled, nothing else AI-adjacent joined it
+
+- **Berkshire's Q2 2026 13F, filed 2026-08-14 at 16:05 ET — on the SEC's
+  own deadline — shows the Alphabet position nearly doubled in share
+  count over the quarter (57.83M to 106.0M combined Class A/C shares,
+  +83%) and grew from $16.63B to $37.76B in disclosed value, while no
+  other AI-adjacent equity name appears anywhere in the 29-issuer
+  portfolio.** Pulled directly from EDGAR's XML holdings table
+  (accession 0001193125-26-352200) rather than secondary reporting. This
+  is the first FILED confirmation of the pattern the 08-08 earnings call
+  described in dollar terms ("$10B more into Alphabet") — now with the
+  actual share-count mechanics behind it. Elsewhere in the same filing,
+  the portfolio moved in a distinctly non-AI direction: Constellation
+  Brands exited entirely, Bank of America/Capital One/Kroger trimmed,
+  Delta grown sharply (+44%), and a token new toehold opened in D.R.
+  Horton — real rebalancing sitting alongside, not displacing, the
+  Alphabet bet. Total disclosed equity value: $299.25B, up from $263.1B.
+  Directly answers this thread's own core watch and the
+  `berkshire-q2-2026-13f` upcoming.yaml expectation: **HIT**. See this
+  digest's interpretation sidecar for the full mechanism read (held at
+  `likely`, both directions on whether the concentration continues or
+  gets trimmed argued with precedent).
+  ([SEC EDGAR filing index](https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm), [13F information table (XML)](https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/56757.xml)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-09 — Michael Burry publicly breaks with post-Buffett Berkshire
 
 - **Michael Burry publicly broke with Berkshire Hathaway, saying he no

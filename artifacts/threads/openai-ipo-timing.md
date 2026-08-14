@@ -12,6 +12,23 @@ opened: 2026-06-27
 lower price. Track confirmed timing, valuation target, and macro/AI-stock
 spillover.
 
+## 2026-08-14 — Revenue crosses over into enterprise as the executive exits keep stacking up
+
+- **CFO Sarah Friar told investors OpenAI's enterprise revenue has
+  overtaken consumer for the first time — "those lines have now
+  crossed" — putting annualized revenue at $40B, ahead of the firm's
+  own earlier guidance of parity by end-2026.** Same day, CRO Denise
+  Dresser publicly confirmed her own exit "in the coming weeks" (Dali
+  Rajic named her replacement, logged 08-13); CNBC ran a feature quoting
+  AI-startup founder Kevin McCormick calling the departure pattern
+  (Lightcap, Dresser, plus the ethics/safety/futurist leads) a "huge red
+  flag" for the IPO unless departing executives are "made whole."
+  Growth and turnover arriving in the same news cycle — this lens's
+  thread-candidate offer (frontier-ai digest, 08-14) is tracking whether
+  the churn becomes the dominant IPO-readiness story or stays background
+  noise against genuinely strong numbers.
+  ([CNBC — Friar](https://www.cnbc.com/2026/08/14/openai-cfo-friar-tells-investors-that-enterprise-bigger-than-consumer.html), [CNBC — red flag](https://www.cnbc.com/2026/08/14/open-ai-ipo-red-flag.html)) ⟨daily 2026-08-14⟩
+
 ## 2026-08-10 — A $7B tender offer, at a flat valuation
 
 - **OpenAI completed a ~$7B tender offer letting current and former

@@ -3430,3 +3430,98 @@ scoping doc gap both sit in kestrel's INBOX, unresolved. The audio
 engine still reads as identifiable-AI on close listen per its own
 diagnostic (repetitive intonation, "sterile" delivery on names) — not
 broken, but worth knowing if a further quality pass is ever wanted.
+
+## 2026-08-14 — kit sync adopted, then a full `/daily`: finalize 08-13,
+open 08-14, four lenses dispatched in parallel
+
+**Kit sync first.** The session opened on an uncommitted kit sync
+already sitting in the working tree (installed 15:44 UTC, pulling
+kestrel's own 2026-08-14 restructuring — the package turn's `kestrel
+<verb>` CLI, `CLAUDE.md`/`OPERATING.md` split, and sites released from
+kit management entirely). Reviewed line-by-line before committing:
+caught one real bug fix worth flagging positively (`/daily`'s own
+session-close step previously told the agent to *push kestrel* —
+exactly the out-of-zone write the zone rule prohibits — now correctly
+pushes this repo and never kestrel), and one convention change that
+made this session's own memory stale (briefs now route to a new sibling
+repo, `kestrel-ops`, and get *committed* there, not dropped uncommitted
+into kestrel's own INBOX). Committed both repos (`53e5fc1` here,
+`54923a3` on the site), plus two 08-13 provenance receipts the prior
+wrap had left uncommitted, and updated this project's own memory to the
+new convention before it could mislead a future session.
+
+**Then a full `/daily`.** 08-13 was still `building` (last extended
+~15:30 ET the prior session) — well past its checkable window. Ran a
+full 15-collector sweep first (`lda` still 100% dead, confirmed again;
+`semantic_scholar` hit its 600s budget wall as designed; everything
+else clean), then dispatched **four sonnet-class curation agents in
+parallel, one per lens** (frontier-ai, mental-health, global-capital,
+world-news), each finalizing 08-13 with its own coverage-critic pass
+and opening/curating 08-14 through the afternoon. Applied every
+agent's proposed map edits centrally (agents propose, main session
+writes — the disjoint-write-scope discipline, since four parallel
+agents can't safely share `threads.yaml`/`upcoming.yaml` at once):
+
+- **Four `upcoming.yaml` hits:** `ca-sb903-appropriations-hearing` and
+  `ca-sb903-assembly` both resolved the same way — California's SB 903
+  cleared Assembly Appropriations 13-0 on 08-13 and is now on the
+  Assembly's 3rd Reading File for 08-17; `berkshire-q2-2026-13f` hit
+  on deadline (Alphabet stake nearly doubled, +83% shares/+127% value,
+  no other AI-adjacent equity joined it); `spacex-cursor-close` hit
+  ~17 days early (SpaceX completed its $60B Cursor acquisition, folding
+  it into a rebranded "SpaceXAI" division). One new entry logged,
+  `kaiser-nuhw-mediation-window-close` — Kaiser's own stated mediation
+  window with NUHW ("August 11 to 14") closed with no outcome posted by
+  either side; distinct from the already-resolved question of whether
+  mediation *began*.
+- **Six watchlist additions** across three lenses: Michael Heinz
+  (Dartmouth's Therabot PI), Silver Lake and Jane Street (both
+  recurring, previously untracked AI-capital counterparties), Vantage
+  Data Centers (exploring the largest data-center IPO on record).
+- **Real findings across the two days:** a Jefferies note quantifying
+  hyperscaler free-cash-flow compression ($7B in Q2, from $60B in Q4
+  2025, against $165B of capex) alongside Michael Burry naming Nvidia's
+  $500B financing platform directly as "abnormal" — the first real
+  skepticism this map's AI-financing thread has carried; a Jane
+  Street-backed data-center bond priced *below* investment grade, this
+  map's first such print; Ukraine's largest single territorial claim of
+  the war (745 km² retaken since January, `sev=major`) sitting right at
+  the edge of the flash bar and correctly not clearing it (a campaign's
+  culmination, not a discrete new event); Israel reportedly besieging
+  ~40 Hezbollah fighters in a tunnel network, awaiting a US "green
+  light" — the most concrete step toward renewed ground combat that
+  thread has logged. Flash test ran clean (no) across both days, all
+  four lenses, checked repeatedly.
+- **OpenAI's leadership-churn thread candidate hit its second and
+  final offer** (per the reappear-once rule) — CFO Sarah Friar's
+  enterprise-revenue-crossover disclosure landed the same day CNBC ran
+  outside coverage calling the pattern of departures a "huge red flag."
+  Global-capital's data-center-landlord candidate (Vantage/CyrusOne/
+  Switch) also hit its final offer and drops if unanswered. Both are
+  open for Ben.
+
+**Render, publish, site briefings.** `kestrel render-read` regenerated
+the read artifact (1176 KB — over the 600 KB soft cap; the degradation
+rule remains an unbuilt engine-side warning-only gap, named repeatedly
+since 08-02, not something this session can fix) and republished it to
+the stable artifact URL. Dispatched four more sonnet agents in parallel
+to write the `front`/`lens:ai`/`lens:global-capital`/`lens:mental-health`
+briefing scopes against `kestrel readouts`' own embedded shape spec —
+all four applied clean on the first pass (`applied 4; skipped 0`), no
+malformed rejections. `kestrel publish --push` shipped everything to
+the site and triggered a Cloudflare build; the day's audio-briefing
+generation hit a transient Gemini API 500 and was skipped gracefully
+(by design — audio is a nice-to-have layered on top of the text site,
+never fatal to a publish run) — retried directly afterward.
+
+**Pick up:** 08-14 is still open (closes 05:00 ET 08-15) and was last
+extended ~17:00 ET — a finalize pass is owed once ~5h past that close.
+`/week` hasn't run since 2026-08-03 (11 days) — at least one Saturday
+cadence cycle was skipped, and 27 threads are now >10 days stale,
+several of them still `open`/`developing` rather than legitimately
+quiet; worth the decay review it's designed to catch. `kestrel`'s own
+unpushed-commit count (34 at session start) wasn't rechecked at close —
+worth a look next session, it's read-only from here but still the
+headline push-safety flag `/start` exists to catch. `decart-acquisition-close`
+stays unresolved — SpaceX vs. Anthropic as the real buyer, per two
+conflicting reports neither company has confirmed.

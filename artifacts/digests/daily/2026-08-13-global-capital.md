@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-13
-status: building
+status: final
 window_start: 2026-08-13T05:00:00-04:00
-as_of: 2026-08-13T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-14T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-13
@@ -57,6 +57,33 @@ estimates to "$3 trillion" (commentary/aggregation on the already-logged
 $2T Anthropic figure, not a new number), and a thin, unconfirmed Pershing
 Square pre-IPO-fund snippet with no size or target disclosed.*
 
+*Finalized through this digest-day's 05:00 ET close: five more real
+developments landed overnight. The Treasury's 30-year bond auction sold at
+a 5.216% yield — the highest since 2001 — a hard number on the same
+federal-borrowing-cost story this lens has carried since 30-year yields
+first cleared 5% in earlier 2026 auctions. Two ADNOC-owned tankers were
+hit by drones transiting the Strait of Hormuz Thursday evening; the UAE
+directly blamed Iran, a second flagged-vessel nation now naming Tehran on
+the record. A Jefferies research note (Christopher Wood) quantified the
+AI-capex-vs-cash-flow tension this lens has tracked all week: the four
+largest hyperscalers' combined free cash flow fell to $7B in Q2 from $60B
+in Q4 2025, against $165B of combined quarterly capex. Michael Burry
+escalated his public break from the AI-financing story (logged on this
+lens 08-09 re: Berkshire) with a specific target — Nvidia's $500B Wall
+Street financing platform (Apollo/BlackRock/Blackstone/Brookfield/
+Goldman/KKR, announced 08-10) — calling its credit structures "abnormal"
+and its revenue "largely financed through circular arrangements." And two
+real financing deals closed: Silver Lake is in talks to take Workday
+private near a $43B valuation (Reuters exclusive, shares +18%), and a
+data-center developer sold $2.25B of below-investment-grade green bonds
+backed by a 15-year Jane Street lease — this map's first below-
+investment-grade AI-datacenter ABS print. Checked and left out: the
+EA/PIF/Silver Lake $55B leveraged buyout closed 08-04 and is still
+recirculating in today's coverage (LIV Golf financial-distress crossover
+pieces, buyout-debt explainers) — nine days old, not new; and Nvidia's own
+$500B financing-platform announcement itself is 08-10, so only Burry's
+fresh commentary on it clears the bar here, not the platform again.*
+
 ## Today's throughline
 
 Trump's Wednesday-night claim of "total control" over the Strait of
@@ -99,6 +126,19 @@ chipmaker layer rather than the neocloud layer this map's
 $5B round at $190B, and this morning's single Vantage IPO story turned
 out to be a three-company pattern (Vantage, CyrusOne, Switch) once the
 day's coverage caught up.
+
+Overnight, the day's two throughlines — Hormuz risk the market keeps
+underpricing, and AI capital's own financing structure coming under
+scrutiny — both sharpened again. A second Gulf state's tankers took drone
+fire (two ADNOC vessels, UAE blaming Iran directly this time, distinct
+from Saudi Aramco's Jazan refinery hit twice already this week), while
+the US government itself paid the most for 30-year money since 2001. And
+the AI-financing-structure question that opened with AMD's chipmaker-
+layer bond sale got its sharpest skeptical read yet: a Jefferies note
+quantifying hyperscaler cash-flow compression alongside Michael Burry
+naming Nvidia's new $500B Wall Street financing platform directly, plus
+this map's first sub-investment-grade AI-datacenter bond print (Jane
+Street's Oklahoma lease-back).
 
 ## Capital in my markets
 
@@ -145,6 +185,46 @@ day's coverage caught up.
   the July jobs report.
   ([BLS PPI release, 2026-08-13](https://www.bls.gov/news.release/ppi.nr0.htm), [tradingeconomics.com, citing DOL, 2026-08-13](https://tradingeconomics.com/united-states/jobless-claims))
   <!-- k: axis=capital-in-my-markets interp=yes -->
+
+- **The US Treasury sold $25 billion of 30-year bonds at a 5.216% yield
+  Thursday, the highest rate for that maturity since 2001.** Bloomberg
+  frames it as "an investor warning" to Treasury Secretary Bessent: this
+  is the third 30-year auction of 2026 to clear above 5% (May 5.046%, July
+  5.058%), each one a fresh multi-decade high, as the scale of federal
+  borrowing needed to service a growing national debt adds structural
+  pressure distinct from — but compounding — the Fed's own rate-hold
+  debate above.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/us-braces-for-30-year-bond-auction-at-highest-yield-since-2001), [Seeking Alpha](https://seekingalpha.com/news/4632700-u-s-sells-30-year-t-bonds-at-highest-yield-since-2001))
+  <!-- k: axis=capital-in-my-markets interp=yes -->
+
+- **Two ADNOC-owned tankers were hit by drones transiting the Strait of
+  Hormuz Thursday evening, and the UAE directly blamed Iran — a second
+  Gulf state now naming Tehran on the record, distinct from the Saudi
+  Aramco Jazan refinery Houthi drone strikes logged twice already this
+  week.** UK Maritime Trade Operations confirmed both vessels took minor
+  damage transiting the strait; no injuries. The UAE Foreign Ministry
+  called the strikes "acts of piracy" and a "flagrant violation" of
+  freedom-of-navigation principles. Brent held in the high $80s
+  overnight rather than spiking — the same fundamentals-over-headlines
+  pattern this thread has tracked all week, now tested against an attack
+  on a second nation's flagged vessels rather than a repeat hit on the
+  same Saudi facility.
+  ([Washington Post/AP](https://www.washingtonpost.com/business/2026/08/14/iran-uae-us-strait-hormuz-august-14-2026/d0e3173a-97bf-11f1-9ef9-1be722184483_story.html))
+  <!-- k: t=red-sea-oil-shock axis=capital-in-my-markets -->
+
+- **A Jefferies note (strategist Christopher Wood) put a hard number on
+  the AI-capex-vs-cash-flow tension this lens has tracked through Oracle
+  and CoreWeave individually: the four largest US hyperscalers'
+  (Microsoft, Amazon, Alphabet, Meta) combined free cash flow fell to
+  just $7 billion in Q2 2026, from $60 billion in Q4 2025, against $165
+  billion of combined quarterly AI capex.** Jefferies' own read is not
+  bearish — cloud revenue for the same three (ex-Meta) rose 38% y/y to
+  $126B in Q2, which the note frames as the return side of the
+  investment — but the cash-flow-compression number itself is the first
+  time this lens has seen the mechanism quantified across all four
+  hyperscalers at once rather than one borrower at a time.
+  ([BusinessToday](https://www.businesstoday.in/technology/story/ai-booms-hidden-bill-big-techs-spending-hits-165-billion-as-free-cash-flow-shrinks-549283-2026-08-14))
+  <!-- k: t=ai-buildout-debt-risk axis=capital-in-my-markets interp=yes -->
 
 ## Deals & filings
 
@@ -252,54 +332,96 @@ day's coverage caught up.
   ([Yahoo Finance](https://finance.yahoo.com/technology/articles/vantage-data-centers-explores-ipo-174824386.html), [Data Center Dynamics](https://www.datacenterdynamics.com/en/news/vantage-cyrusone-and-dayone-all-plan-ipos-with-potential-record-breaking-valuations/))
   <!-- k: axis=deals-and-filings -->
 
+- **Michael Burry warned that Nvidia's $500 billion Wall Street financing
+  platform — announced 08-10 with Apollo, BlackRock, Blackstone,
+  Brookfield, Goldman Sachs and KKR — is spreading "abnormal" credit
+  structures, and said Nvidia's revenue is "largely financed through
+  circular arrangements" that are "off-balance-sheet and undisclosed."**
+  This is Burry's first specific, named critique of the actual financing
+  platform this map logged 08-10 (rather than general AI-boom
+  skepticism), and directly extends both `ai-buildout-debt-risk` (the
+  platform itself) and `ai-circular-financing-risk` (ai lens) — he also
+  separately flagged private-equity-owned insurers filling balance
+  sheets with illiquid, AI-tied asset-backed paper, the same structural
+  shape as the Jane Street bond below.
+  ([Tekedia](https://www.tekedia.com/michael-burry-warns-ai-linked-private-credit-could-become-source-of-broader-financial-contagion/), [BiGGo Finance](https://finance.biggo.com/news/dd9ec3c6-05f0-4c54-a2db-37403a9b6e0c))
+  <!-- k: t=ai-buildout-debt-risk axis=deals-and-filings interp=yes -->
+
+- **Silver Lake is in talks to take Workday private in a deal that could
+  value the company near $43 billion — one of the largest software
+  buyouts on record.** Reuters' exclusive (sourced to people familiar
+  with the matter) sent Workday shares up as much as 18% to a record
+  single-day gain; the talks are described as preliminary and
+  in-progress, with Workday's own fiscal Q2 print (08-27) a likely
+  milestone. No thread currently tracks enterprise-software take-private
+  deals; flagged as ambient rather than forced onto an AI-capital thread
+  it doesn't belong to.
+  ([Yahoo Finance/Reuters](https://finance.yahoo.com/markets/stocks/articles/exclusive-silver-lake-talks-buy-183537331.html))
+  <!-- k: axis=deals-and-filings -->
+
+- **A data-center developer sold $2.25 billion of green bonds — rated
+  below investment grade by Moody's — to fund a facility in Central
+  Oklahoma backed by a 15-year triple-net lease and guaranty from trading
+  firm Jane Street.** The five-year notes priced at 99.5 cents on the
+  dollar to yield almost 9%; the 149-megawatt facility is built by Zenith
+  Arc, with Jane Street covering base rent and every property expense
+  under the lease. This is this map's first below-investment-grade
+  AI-datacenter asset-backed print — sustainable/green-labeled
+  data-center bond issuance is already up sharply (Bloomberg cites $11.2B
+  in 2025 vs $7.6B in 2024), and a junk-rated tranche inside that growth
+  is exactly the kind of data point `ai-buildout-debt-risk` exists to
+  catch.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/jane-street-lease-backs-2-25-billion-of-green-data-center-bonds))
+  <!-- k: t=ai-buildout-debt-risk axis=deals-and-filings -->
+
 ## 📊 Macro strip
 
 - **Brent crude: $87.11/bbl, -2.1%** (oilprice.com live quote, ~15:00 ET
   2026-08-13) — down further from this morning's $87.98/-1.15%, despite
-  a second Houthi drone strike on Aramco's Jazan refinery this afternoon;
-  see above.
+  a second Houthi drone strike on Aramco's Jazan refinery and, overnight,
+  the drone attack on two ADNOC tankers; held in the high $80s through
+  the close, not spiking.
 - **WTI crude: $81.29/bbl, -2.38%** (oilprice.com live quote, ~15:00 ET
-  2026-08-13) — down from this morning's $83.27, resolving this
-  morning's flagged same-source-delta gap with a cleaner live read.
+  2026-08-13) — down from this morning's $83.27.
+- **30-year Treasury yield: 5.216%** (US Treasury auction result,
+  2026-08-13) — new this pass; highest since 2001, the third 2026
+  auction of this maturity to clear above 5%; see above.
 - **July PPI: final demand unchanged m/m; core (ex food/energy/trade)
-  +0.4% m/m, +4.7% y/y** (BLS, released 2026-08-13) — new this pass; see
-  above.
+  +0.4% m/m, +4.7% y/y** (BLS, released 2026-08-13) — see above.
 - **Initial jobless claims: 209,000 (week of 08-08), vs 202,000 est.,
   vs 200,000 prior week** (DOL, via tradingeconomics.com, 2026-08-13) —
-  new this pass; see above.
-- **OPEC 2026 demand-growth forecast: 580,000 bpd** (OPEC Monthly Oil
-  Market Report, 2026-08-12) — fourth consecutive downward revision,
-  unchanged since this morning.
-- **US crude inventories: +17.4M bbl** (EIA weekly report referenced in
-  today's oil-market coverage, 2026-08-13) — unchanged since this
-  morning, still the other leg pressuring price down alongside OPEC.
+  see above.
+- **VIX: 14.63** (FRED, 2026-08-13) — down from 15.28 (FRED, 08-11);
+  credit spreads unchanged (HY OAS 2.71 vs 2.72; IG OAS 0.79 flat;
+  10Y-2Y spread 0.48 flat) — none of today's real developments (Burry's
+  warning included) have moved credit pricing yet.
 
 ## ⏳ Upcoming & expected
 
-- `decart-acquisition-close` (due ~08-17) — **CLAIM CONFLICT, not yet
-  resolvable.** The entry as logged (08-09/10) names SpaceX as the
-  reported acquirer; today's Bloomberg report names Anthropic instead,
-  at a similar ~$6-7B price. Neither report is confirmed by any party.
-  This is the same shape of gap `what_confirms` exists to catch — a
-  rumor whose *premise* (which company is buying) may simply be wrong,
-  not just its timing. Proposing to Ben/the next `/daily` pass: treat
-  this as an open buyer question rather than picking one report over
-  the other, and resolve on whichever company's name appears in an
-  actual close/filing.
-- `iran-oman-hormuz-deal-signing` (due 08-19) — no new signature; today's
-  exchange (Trump's claim, Iran's rejection) is a rhetorical escalation
-  on the same unresolved standoff, not a new due-date event.
-- `berkshire-q2-2026-13f` (due 08-14) — 1 day out; several outlets ran
-  13F-preview speculation pieces (Benzinga, others) today, but that's
-  analyst guessing ahead of the filing, not the filing itself — no flip.
+- `berkshire-q2-2026-13f` (due 2026-08-14) — **0 days out at this
+  window's close; not yet filed.** SEC EDGAR shows no 13F-HR from
+  Berkshire Hathaway (CIK 0001067983) as of this digest's 05:00 ET
+  close. Several outlets ran preview/speculation pieces today, but
+  that's analyst guessing ahead of the filing, not the filing itself.
+  Carries forward to tomorrow's digest-day, which is when the filing
+  (typically an after-market-close event) is most likely to actually
+  land.
+- `decart-acquisition-close` (due ~08-17) — **still a claim conflict,
+  not resolved today.** WebSearch found no new reporting past the
+  08-13 Anthropic report and Musk's denial that SpaceX is the buyer;
+  neither company has confirmed either version. Stays an open buyer
+  question per yesterday's proposal.
+- `iran-oman-hormuz-deal-signing` (due 08-19) — no new signature; the
+  overnight ADNOC tanker attack is a further escalation on the same
+  unresolved standoff, not a new due-date event.
 - No other global-capital-relevant expectations came due today.
 
 ## 🔄 Map changes
 
 - `~ threads/red-sea-oil-shock` — Iran's rejection of Trump's "total
-  control" claim + oil's morning fall, then a second Houthi Jazan strike
-  and oil's continued afternoon decline; two timeline entries written
-  (morning + "later").
+  control" claim + oil's morning fall, a second Houthi Jazan strike, and
+  overnight, drone strikes on two ADNOC tankers with the UAE directly
+  blaming Iran; three timeline entries written across the day.
 - `~ threads/anthropic-ipo-timing` — the $2T IPO-valuation report and
   the Decart acquisition talks; timeline entry written.
 - `~ threads/oracle-stargate-bet` — the fresh round of planned layoffs;
@@ -307,49 +429,90 @@ day's coverage caught up.
 - `~ threads/cxmt-memory-ipo` — CXMT overtaking Tencent as China's most
   valuable listed company; timeline entry written.
 - `~ threads/ai-buildout-debt-risk` — AMD's $5B bond offering tied to its
-  Anthropic stake; timeline entry appended (new layer: chipmaker debt,
-  not just neocloud debt).
+  Anthropic stake, Jefferies' hyperscaler free-cash-flow note, Michael
+  Burry naming Nvidia's $500B financing platform directly, and the Jane
+  Street junk-rated data-center bond print; timeline entries appended
+  (new layers: chipmaker debt, a named bear case, and the first
+  sub-investment-grade AI-datacenter ABS on this thread's record).
 
 ## 🧵 Thread candidates
 
-- **candidate (updated, same offer as this morning — not re-counted):**
-  data-center landlord/REIT-style capital raises turn out to be a
-  three-company pattern, not one: Vantage (~$100B IPO or sale, ~$10B
-  raise), CyrusOne (weighing a 2027 debut), and Switch (~$80B valuation,
-  up to $10B IPO) all surfaced the same day. Same open question as this
-  morning — own thread, or fold into `ai-buildout-debt-risk` since the
-  underlying driver (AI compute demand needing financing) is identical —
-  now with three data points instead of one. (Reuters, Data Center
-  Dynamics, Yahoo Finance, 2026-08-13)
+- **candidate (carried forward from this morning, unanswered — offering
+  once more per the reappearance rule, then dropping):** data-center
+  landlord/REIT-style capital raises turn out to be a three-company
+  pattern, not one: Vantage (~$100B IPO or sale, ~$10B raise), CyrusOne
+  (weighing a 2027 debut), and Switch (~$80B valuation, up to $10B IPO)
+  all surfaced the same day. Own thread, or fold into
+  `ai-buildout-debt-risk` since the underlying driver (AI compute demand
+  needing financing) is identical? (Reuters, Data Center Dynamics, Yahoo
+  Finance, 2026-08-13)
 
-**Flash test: still No.** Nothing since 10:30 ET clears the "would this
-lead a general news front page independent of these lenses" bar either —
-PPI and jobless claims are routine scheduled data (moved markets at the
-margin, not the story of the day), AMD's bond sale and Databricks' round
-are real but ordinary-sized financing events next to this week's $2T
-Anthropic IPO number, and the data-center IPO wave is a trend confirming
-itself, not a single dramatic event.
+**Flash test: still No, for the full day.** Nothing today clears the
+"would this lead a general news front page independent of these lenses"
+bar: PPI, jobless claims, and the 30-year auction are routine scheduled
+data/events (real market movers, not front-page events on their own);
+the ADNOC tanker attack is a continuation of a week-old standoff rather
+than a discrete new shock; AMD's bond sale, Databricks' round, Silver
+Lake/Workday, and the Jane Street bond are real but ordinary-sized
+financing events next to this week's $2T Anthropic IPO number; and
+Burry's warning is commentary, not an event.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** nothing found. **FT Unhedged**'s 08-13
+issue ("The most difficult dilemma") covers monetary policy colliding
+with a supply shock — the same Fed-rate-debate-meets-oil-fundamentals
+throughline this digest carried all day (Iran/Hormuz rhetoric vs. actual
+price, PPI/claims feeding the rate debate). **Bloomberg Technology**'s
+08-13 newsletter led "Wall Street Opens Spigots for AI Debt and Stock
+Offerings" — its own named examples (a $100B data-center IPO, Anthropic's
+Decart talks, AI-startup valuations) are the same Vantage/Decart/
+Anthropic-IPO material this digest already carried. **Money Stuff**'s
+08-13 column ("Bilateral OTC Goat Hedge") is off-axis by design — a
+prediction-markets piece with a note that Matt Levine is on vacation
+through 08-24 — nothing to miss there. **Axios Pro Rata** could not be
+checked: axios.com returned Cloudflare's domain-wide bot block again
+today (plain fetch and Googlebot user-agent both 403'd), the same open,
+unresolved gap `sources/benchmarks.yaml` already documents — recurring,
+not new, and still needing Ben's call on whether it's worth a
+headless-render fix.
+
+**Both covered:** AMD's Anthropic-tied bond sale, Anthropic's $2T
+IPO-valuation chatter and Decart talks, and the Vantage-led data-center
+IPO wave — all three appeared in Bloomberg Technology's own 08-13 lead
+and in this digest.
+
+**We had → they didn't:** the Iran/oil fundamentals-over-rhetoric read
+held across four separate tests today (OPEC/inventory data, a second
+Houthi Jazan strike, the overnight ADNOC attack); the PPI/jobless-claims
+read directly against the Fed's 9-3 hawkish-hold split; CXMT overtaking
+Tencent; Oracle's fresh layoffs against its AI capex; the Jefferies
+hyperscaler free-cash-flow number; Michael Burry naming Nvidia's $500B
+platform specifically; Silver Lake/Workday; and the Jane Street
+junk-rated bond print — none of which any of the three reachable
+benchmarks carried today.
 
 ---
 Iran flatly rejected Trump's overnight claim to "total control" of the
 Strait of Hormuz this morning, but oil fell anyway — OPEC's fourth
 straight demand-growth downgrade and a big US inventory build outweighed
-the geopolitical rhetoric, the same fundamentals-over-headlines pattern
-this lens has tracked since yesterday. Anthropic had two capital-markets
-stories at once: investors reportedly targeting a $2 trillion-plus
-October IPO valuation, more than double this thread's prior $965B mark,
-and a separate report that the company is in advanced talks to buy
-Israeli AI startup Decart for about $6 billion — which conflicts with an
-earlier report naming SpaceX as Decart's buyer, an open question this
-map is now tracking rather than resolving in either direction. Oracle is
-drawing up fresh layoffs even as its AI capex keeps climbing, Vantage
-Data Centers is exploring a ~$100B IPO or sale on the data-center-
-landlord side of the same buildout — and by afternoon that turned out to
-be one of three, with CyrusOne and Switch also weighing IPOs — and
-China's CXMT overtook Tencent to become the country's most valuable
-listed company, 17 days after its own IPO. Through the afternoon, a
-second Houthi strike on the same Saudi refinery still didn't reverse
-oil's decline, July producer prices and a weaker jobless-claims read
-sharpened the Fed's own open rate-hike debate, AMD moved to raise its
-largest-ever bond sale explicitly to help fund its own Anthropic stake,
-and Databricks closed a $5 billion round at a $190 billion valuation.
+the geopolitical rhetoric, a pattern that held up through a second
+Houthi refinery strike, a drone attack on two ADNOC tankers overnight,
+and the US government's own worst 30-year borrowing terms since 2001.
+Anthropic had two capital-markets stories at once — investors reportedly
+targeting a $2 trillion-plus October IPO valuation, and a separate,
+still-unconfirmed report that the company (not SpaceX, per an earlier
+report) is in advanced talks to buy Israeli AI startup Decart for about
+$6 billion — while Oracle drew up fresh layoffs even as its AI capex
+kept climbing, and China's CXMT overtook Tencent as the country's most
+valuable listed company 17 days after its own IPO. The AI-financing
+story picked up real skepticism for the first time this week: a
+Jefferies note quantified hyperscaler free-cash-flow compression, Michael
+Burry named Nvidia's new $500B financing platform directly as spreading
+"abnormal" credit structures, and a Jane Street-backed data-center bond
+priced below investment grade — even as AMD raised its largest-ever bond
+sale to help fund its own Anthropic stake, Databricks closed at a $190
+billion valuation, Silver Lake moved on Workday at a $43 billion
+valuation, and the morning's single Vantage data-center IPO story turned
+into a three-company pattern. Berkshire's Q2 13F, due today, had not yet
+appeared by this digest's close.

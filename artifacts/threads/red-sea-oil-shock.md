@@ -51,6 +51,22 @@ itself (who's fighting whom, where it's widening) — see
   still dominating price formation over headline risk).
   ([Reuters](https://www.reuters.com/world/middle-east/yemens-houthis-say-they-attacked-saudi-aramco-refinery-jazan-with-two-drones-2026-08-13/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/houthis-say-they-ve-targeted-aramco-refinery-in-jazan-again)) ⟨daily 2026-08-13⟩
 
+## 2026-08-13 (overnight) — A second Gulf state's tankers take drone fire, and the UAE names Iran directly; oil still doesn't spike
+
+- **Two ADNOC-owned tankers were hit by drones transiting the Strait of
+  Hormuz Thursday evening, and the UAE directly blamed Iran — the first
+  time this thread has logged a Gulf state other than Saudi Arabia
+  naming Tehran on the record for an attack on its own flagged vessels.**
+  UK Maritime Trade Operations confirmed both vessels took minor damage;
+  no injuries reported. The UAE Foreign Ministry called the strikes
+  "acts of piracy" and a "flagrant violation" of freedom-of-navigation
+  principles. Brent held in the high $80s through the overnight session
+  rather than spiking — a fourth test this week of the same
+  fundamentals-over-headlines pattern, now against an attack that widens
+  the set of directly-targeted nations rather than repeating a hit on
+  the same Saudi facility.
+  ([Washington Post/AP](https://www.washingtonpost.com/business/2026/08/14/iran-uae-us-strait-hormuz-august-14-2026/d0e3173a-97bf-11f1-9ef9-1be722184483_story.html)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — The Hormuz deal slips; Saudi Arabia reroutes around the Red Sea entirely; Trump claims "total control" that evening
 
 - **The US-brokered Iran-Oman deal to reopen the Strait of Hormuz

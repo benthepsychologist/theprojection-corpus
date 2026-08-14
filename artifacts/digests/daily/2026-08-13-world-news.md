@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-08-13
-status: building
+status: final
 window_start: 2026-08-13T05:00:00-04:00
-as_of: 2026-08-13T15:00:00-04:00
+as_of: 2026-08-14T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -28,7 +28,18 @@ fetch); it is flagged, not written up as verified fact. Two overnight
 Russia-Ukraine developments that landed before 05:00 ET are carried in
 yesterday's finalized 08-12 digest rather than here, per that digest-day's
 actual boundary; nothing further moved on Russia-Ukraine in today's
-window.*
+window. **Finalize pass (2026-08-14), closing the day out to the actual
+05:00 ET boundary:** re-swept via WebSearch/WebFetch against Israel
+National News, Times of Israel, Al Jazeera, UAE Foreign Ministry
+reporting (via US News/Spectrum wire pickups) and ABC/Yahoo Colombia
+coverage. Three further developments found and folded in below: Iran's
+military publicly rejected Trump's Hormuz-control claim as "lies," two
+Abu Dhabi-owned ADNOC tankers were hit by drones transiting the strait
+Thursday evening, and Colombia's earthquake toll and missing count both
+moved. The UAE's formal "acts of piracy" blame statement on the tanker
+attack, and Trump's own Friday remarks, came after this digest-day's
+05:00 ET close and are carried in 08-14 instead. Day complete; `status:
+final`.*
 
 ## Today's throughline
 
@@ -61,8 +72,16 @@ collapsing the fragile 2022 truce — a process-level development on the
 same conflict's Red Sea/Houthi dimension. Colombia's earthquake search
 operation entered its declared "final phase" as the 72-hour
 best-odds-of-survival window closed, still at 265 dead — a real update,
-even though the toll itself didn't move. Nothing today clears a general
-front-page bar independent of these lens threads.
+even though the toll itself didn't move. **The evening added two more
+data points without changing the overall picture:** Iran's military
+publicly called Trump's Hormuz-control claim a "lie" while insisting the
+strait remains fully under Iranian control — hardening, not resolving,
+the same Araghchi/Taeb standoff — and two Abu Dhabi-owned tankers were
+struck by drones while transiting Hormuz Thursday evening (minor damage,
+no injuries, formal blame not yet assigned before this digest-day's
+close). Colombia's toll kept climbing after the "final phase" framing,
+reaching 281 dead with the missing count revised down to 379. Nothing
+today clears a general front-page bar independent of these lens threads.
 
 ## Items
 
@@ -178,22 +197,34 @@ front-page bar independent of these lens threads.
   ([Al Jazeera](https://www.aljazeera.com/where/lebanon/), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-13-2026/), [Naharnet — Katz criticism](https://www.naharnet.com/stories/en/321812-us-official-criticizes-katz-s-remarks-on-staying-in-lebanon), [Naharnet — troop-deployment denial](https://www.naharnet.com/stories/en/321815-israeli-us-officials-deny-deal-reached-on-deploying-foreign-troops-to-lebanon))
   <!-- k: t=israel-lebanon-escalation axis=world-news -->
 
-- **Colombia's earthquake search operation entered its declared "final
-  phase" today as rescue crews passed the 72-hour mark since Monday's
-  quake — the window when trapped survivors are statistically most
-  likely to still be found alive — with the death toll unchanged at 265
-  and "nearly 500" still missing (consistent with 08-12's 496).** Cali
-  Mayor Alejandro Eder: "That doesn't mean there won't be survivors
-  afterwards, but it is more difficult." President Abelardo de la
-  Espriella declared an economic emergency and pledged a fund to rebuild
-  hospitals, schools and infrastructure, calling it "a tragedy of
-  immense proportions"; official figures now put 3,500+ wounded and
-  9,550+ homes destroyed. This is a real, dated operational-status
-  change — not just ambient aid coverage — even though the headline toll
-  didn't move; it does not match a tracked thread slug, so no map edit
-  follows. The DRC's Ebola count shows no change from 08-12's logged
-  2,011 deaths; not repeated in full here.
-  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/13/search-efforts-in-colombia-enter-final-phase-as-quake-toll-reaches-265))
+- **[Finalize catch] Iran's military rejected as "lies" Trump's claims of
+  US control over the Strait of Hormuz, insisting Thursday the waterway
+  remains fully under Iranian control — the same rhetorical fight logged
+  earlier today between Araghchi and Taeb, now escalated to Iran's
+  military itself.** Separately, two tankers owned by Abu Dhabi's
+  state-owned oil company ADNOC were struck by drones Thursday evening
+  while transiting the strait; the UK Maritime Trade Operations Center
+  reported both suffered only minor damage with no injuries. Neither the
+  UAE nor Iran had formally assigned blame before this digest-day's 05:00
+  ET close — the UAE's "acts of piracy" statement blaming Iran's IRGC
+  came the next morning and is carried in the 08-14 digest instead, to
+  keep the event and the accusation on the day each actually happened.
+  ([JPost](https://www.jpost.com/international/article-905560), [Spectrum News, via US News wire](https://spectrumlocalnews.com/me/maine/international/2026/08/14/oil-tankers-drone-strikes-strait-of-hormuz-uae-blames-iran))
+  <!-- k: t=iran-conflict-widening axis=world-news -->
+
+- **[Finalize catch] Colombia's earthquake toll kept climbing after
+  today's "final phase" framing, reaching 281 dead (up from 265) with the
+  missing count revised down to 379 (from "nearly 500"), per President
+  Abelardo de la Espriella's latest Thursday update — 3,971 injured and
+  more than 12,000 homes destroyed.** The revised, lower missing figure
+  is itself informative: it reads as accounting catching up with the toll
+  (people confirmed dead being moved off the missing list) more than as
+  new survivors being found, consistent with officials' own "final
+  phase" framing that survival odds are now low. Still no map edit — this
+  does not match a tracked thread slug. The DRC's Ebola count shows no
+  change from 08-11/08-12's logged 2,011 deaths; not repeated in full
+  here.
+  ([ABC News](https://abcnews.com/International/colombia-earthquake-rescue-operations-continue-224-dead/story?id=135571163), [Yahoo News, wire](https://www.yahoo.com/news/world/articles/colombia-earthquake-rescue-operations-continue-110504860.html))
   <!-- k: t= e= axis=world-news -->
 
 - **The Horn of Africa (Tigray) and Europe/Schengen show no verified new
@@ -218,8 +249,11 @@ front-page bar independent of these lens threads.
 ## 🔄 Map changes
 
 - `~ threads/iran-conflict-widening` — real development (Araghchi's
-  "bigger miscalculation" warning, Taeb's Hormuz-control claim, plus the
-  afternoon's UN Security Council Yemen debate); timeline entry extended.
+  "bigger miscalculation" warning, Taeb's Hormuz-control claim, the
+  afternoon's UN Security Council Yemen debate, plus the evening's
+  finalize catches — Iran's military calling Trump's control claim a
+  "lie," and the Thursday-evening ADNOC tanker drone attack); timeline
+  entry extended.
 - `~ threads/gaza-war` — real development (Khan Younis strike, the
   afternoon's separate Gaza City strike killing Abu Kamil, and the Qusra
   siege's two-sided afternoon escalation — IDF-damage claim and the
@@ -236,41 +270,44 @@ front-page bar independent of these lens threads.
   ambient `last_seen` bumps only; no new dated development found, morning
   or afternoon.
 - No map edit for Colombia earthquake or DRC Ebola; neither matches a
-  tracked thread slug. Colombia did get a real dated update today (search
-  entering "final phase") — logged in Items above — even without a map
-  edit to attach it to.
+  tracked thread slug. Colombia got two real dated updates today (search
+  entering "final phase," then the toll rising to 281 with missing
+  revised to 379) — logged in Items above — even without a map edit to
+  attach them to.
 
 ## 🧵 Thread candidates
 
-- None offered this extension. The Colombia earthquake received its
-  final offer on 08-12 (per the template's "once, then drop" rule) and
-  is not repeated even though it has a real update today. The DRC Ebola
-  outbreak was offered once, new, on 08-12; no new development justifies
-  a second offer. This afternoon's re-sweep of `attention/world-news.yaml`
+- None offered at finalize. The Colombia earthquake received its final
+  offer on 08-12 (per the template's "once, then drop" rule) and is not
+  repeated even though it has real updates today. The DRC Ebola outbreak
+  was offered once, new, on 08-12; no new development justifies a second
+  offer. This digest-day's full re-sweep of `attention/world-news.yaml`
   did not surface a new non-confirmed_thread candidate with a real
   world-news story behind it — the highest-outlet candidates outside
   already-tracked threads were a vague GDELT-only "INDONESIA: Make
   statement" cluster (30 outlets, no retrievable substance behind the
   category label) and the unconfirmed Pentagon/Houthi-civilian-toll
-  report flagged above (9 outlets, not independently verified) — neither
-  clears the bar for an offer. Colombia and DRC Ebola both remain open
-  for a word from Ben whenever convenient.
+  report flagged in the afternoon pass (9 outlets, not independently
+  verified) — neither clears the bar for an offer. Colombia and DRC
+  Ebola both remain open for a word from Ben whenever convenient.
 
 ---
-The afternoon extended three of this morning's four threads. A second,
-separate Gaza City strike killed a man Israel calls a Hamas commander and
-Hamas's own Interior Ministry calls its police chief, hours after this
-morning's Khan Younis strike; in the West Bank, the Qusra settler siege
-now draws condemnation from inside the settler movement itself, even as
-residents accuse IDF soldiers of damaging their homes during the same
-clearing operation. In Lebanon, an anonymous US State Department official
-directly rebuked Israeli Defense Minister Katz's "here to stay" stance as
-inconsistent with the agreed framework — the first US, not just Lebanese,
-pushback on that specific point — while Israeli and US officials joined
-Lebanon in denying the reported Hezbollah-verification country shortlist.
-The Hormuz standoff itself didn't move past this morning's exchange, but
-the UN Security Council held an open debate today warning Houthi strikes
-on Saudi Arabia and shipping risk collapsing Yemen's 2022 truce. Colombia's
-earthquake search entered its declared "final phase" at the 72-hour
-survival window, toll still at 265, and nothing today clears a general
-front-page bar independent of this lens's own conflict threads.
+The day extended three of the morning's four threads and added two
+finalize catches at the close. A second, separate Gaza City strike killed
+a man Israel calls a Hamas commander and Hamas's own Interior Ministry
+calls its police chief, hours after the morning's Khan Younis strike; in
+the West Bank, the Qusra settler siege drew condemnation from inside the
+settler movement itself, even as residents accused IDF soldiers of
+damaging their homes during the same clearing operation. In Lebanon, an
+anonymous US State Department official directly rebuked Israeli Defense
+Minister Katz's "here to stay" stance as inconsistent with the agreed
+framework — the first US, not just Lebanese, pushback on that specific
+point — while Israeli and US officials joined Lebanon in denying the
+reported Hezbollah-verification country shortlist. The Hormuz standoff
+hardened further by evening: Iran's military called Trump's control claim
+a "lie," and two Abu Dhabi tankers were struck by drones transiting the
+strait, though blame wasn't formally assigned before the day closed.
+Colombia's earthquake search entered its declared "final phase" and the
+toll kept climbing after that, reaching 281 dead with the missing count
+revised to 379, and nothing today cleared a general front-page bar
+independent of this lens's own conflict threads.

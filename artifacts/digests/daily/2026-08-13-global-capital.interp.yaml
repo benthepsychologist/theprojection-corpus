@@ -257,3 +257,204 @@ amd-is-raising-up-to-5-billion-in-its-largest-eve:
     entities [nvidia, openai, oracle] — does not yet include amd/
     anthropic, a possible entity-list gap worth flagging to the next
     steering pass rather than editing directly from here).
+
+# --- Overnight/finalize additions (this digest-day's 05:00 ET close) ---
+
+the-us-treasury-sold-25-billion-of-30-year-bonds-a:
+  mechanism: >
+    The mechanism is a straightforward supply-and-demand one for
+    long-duration government debt, but it now sits directly underneath
+    every AI-capex financing story this lens tracks: the same investor
+    base setting the discount rate on 30-year Treasuries (the reference
+    "risk-free" long rate) is being asked, in the same weeks, to absorb a
+    wave of AI-linked corporate and asset-backed debt (AMD's bond above,
+    the Jane Street data-center bond below) at spreads OVER that
+    Treasury base. A rising, structurally-pressured base rate makes every
+    dollar of that AI-buildout debt more expensive to service without any
+    change in the borrowers' own AI-demand story — a macro channel this
+    lens has mostly discussed as "the Fed's rate debate" but which
+    operates on long-end Treasury auctions independently of anything the
+    FOMC itself decides at 09-16.
+  confidence: likely
+  scenarios:
+    - direction: >
+        30-year yields continue grinding higher through 2026 as federal
+        borrowing needs keep growing faster than auction demand, and the
+        AI-buildout debt wave (AMD, Jane Street, CoreWeave, Oracle) prices
+        at increasingly wide spreads over an already-elevated base rate —
+        making debt-funded AI capex measurably more expensive by year-end
+        than it was this summer, independent of any single borrower's
+        credit story.
+      why: >
+        This is the THIRD consecutive 2026 30-year auction to set a fresh
+        multi-decade high (May 5.046%, July 5.058%, today 5.216%) — a
+        repeating pattern, not a one-off print, and one that has held
+        through a period when the Fed itself has been on hold rather than
+        hiking.
+      precedent: >
+        The 2023 long-end Treasury selloff (30-year yields cresting above
+        5% for the first time since 2007, driven by supply/deficit
+        concerns rather than Fed policy) repriced corporate long-duration
+        debt wider across the board even for issuers with no credit
+        deterioration of their own — the same transmission channel this
+        scenario describes.
+    - direction: >
+        Today's auction proves to be a peak rather than a trend — soft
+        inflation data (July PPI, jobless claims, both logged above) feed
+        through into lower near-term rate expectations, pulling the long
+        end down with it even if the deficit-driven structural pressure
+        persists, and AI-buildout debt continues pricing on issuer-
+        specific credit merits rather than a rising macro floor.
+      why: >
+        The same day's PPI and jobless-claims prints both leaned soft,
+        and 30-year yields (unlike 2-year/10-year) are also a bet on
+        long-run growth and inflation expectations, not just near-term
+        Fed policy — a single auction result does not yet establish which
+        force is dominant.
+      precedent: >
+        Prior 2026 episodes where a hot long-end auction was followed
+        within weeks by a retracement once softer data arrived (this
+        lens does not yet have a confirmed instance on file for 30-year
+        specifically; flagged as a WEAKER precedent than the first
+        scenario's, which is why this scenario is not read as the base
+        case).
+  context_note: >
+    New reading for `capital-context.yaml`'s `rate_regime` snapshot (asof
+    2026-08-09), which currently describes the Fed's own hawkish-hold
+    posture and the Cook removal fight but has no long-end Treasury
+    auction data on file yet — candidate line for the next /week-adjacent
+    refresh, not an edit to make directly from /daily.
+
+a-jefferies-note-strategist-christopher-wood-put-a:
+  mechanism: >
+    The mechanism is a direct, quantified version of the capex-vs-cash-
+    generation tension this lens has tracked qualitatively through
+    individual borrowers (Oracle's -$23.7B FCF against $55.7B capex,
+    CoreWeave's own debt-service growth outpacing revenue growth) — this
+    is the first time the same compression has been measured across all
+    four largest hyperscalers simultaneously rather than one company at a
+    time, which changes the read from "some AI-capex bets look
+    stretched" to "the AI-capex cohort as a whole is spending faster than
+    it generates cash," a structural rather than company-specific
+    reading. Jefferies' own framing (cloud revenue +38% y/y) is the
+    counter-mechanism: whether the revenue growth eventually outpaces the
+    capex growth is exactly the open question `ai-buildout-debt-risk`
+    exists to track.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The FCF compression proves temporary — a normal lag between
+        capex spend and revenue recognition — and reverses within 2-3
+        quarters as the $165B in current-quarter capex converts into the
+        cloud-revenue growth Jefferies already sees accelerating (38%
+        y/y), validating the "earnings-accretive" framing Jefferies itself
+        favors.
+      why: >
+        Jefferies' own note is not bearish — it explicitly reads the
+        capex as return-generating based on the same-quarter cloud
+        revenue acceleration, and a capex-to-revenue lag is a normal
+        feature of large infrastructure buildouts, not by itself evidence
+        of overinvestment.
+      precedent: >
+        Hyperscaler capex cycles in 2023-2024 (the initial post-ChatGPT
+        buildout) showed a similar capex-ahead-of-monetization pattern
+        that did resolve into revenue growth within roughly a year, per
+        the same companies' own subsequent quarters.
+    - direction: >
+        The FCF compression continues or worsens as depreciation from the
+        current capex wave layers on top of new capex commitments (the
+        note's own figure — depreciation up 24% y/y already), forcing
+        one or more of the four hyperscalers toward external financing
+        (debt or equity) for the first time at this layer of the
+        buildout, which this lens has so far only tracked at the
+        neocloud/chipmaker layers (CoreWeave, AMD, Oracle).
+      why: >
+        Depreciation on a rising capex base is mechanically forward-
+        loaded — this quarter's $165B in capex guarantees a HIGHER
+        depreciation drag in future quarters even if capex growth slows
+        from here, which is a structural headwind independent of whether
+        revenue keeps accelerating.
+      precedent: >
+        Oracle's own FY26 trajectory (capex growing from $21.2B to
+        $55.7B while FCF went to -$23.7B) is this lens's own on-file
+        example of exactly this dynamic playing out at a single company
+        before it showed up in a credit-rating downgrade.
+  context_note: >
+    New data point for `ai-buildout-debt-risk` (opened 2026-08-11) — the
+    first cross-hyperscaler quantification on this thread's record,
+    complementing the company-specific data points already logged
+    (Oracle's FCF, CoreWeave's debt service, AMD's bond sale above). Also
+    read against `oracle-stargate-bet`'s own capex-vs-FCF watch, which
+    this note effectively generalizes past Oracle alone.
+
+michael-burry-warned-that-nvidia-s-500-billion-wal:
+  mechanism: >
+    The mechanism worth isolating is WHO is making this claim and about
+    WHAT, not just that a bear voice exists: Burry's 08-09 break with
+    Berkshire (on file in `berkshire-ai-capital-stance`) was general
+    skepticism about post-Buffett capital allocation; today's statement
+    names a specific structure — Nvidia's 08-10 $500B financing platform
+    with six named Wall Street firms — and makes a specific, falsifiable
+    claim (revenue "largely financed through circular arrangements,"
+    financing "off-balance-sheet and undisclosed"). That specificity is
+    what makes this a genuine escalation rather than more of the same
+    general AI-boom skepticism this lens has logged from other voices
+    (the FXStreet/Bitcoin World "$570B of AI debt" pieces already noted
+    08-13 morning) — a named critique of a named structure can actually
+    be checked against subsequent disclosure, where generic skepticism
+    cannot.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Burry's specific claim proves at least partly checkable and
+        partly correct: some portion of the $500B platform's underlying
+        demand does trace back to circular arrangements (the same
+        vendor-financing/equity-stake loops `ai-circular-financing-risk`
+        already tracks for Nvidia/OpenAI/Oracle), and subsequent
+        disclosure (an SEC filing, a rating-agency methodology note, or
+        Nvidia's own 10-Q) confirms at least one leg of it — turning a
+        public accusation into a documented structural finding.
+      why: >
+        Nvidia's own MOUs with the six financing partners are explicitly
+        NOT fully disclosed yet (per this lens's own 08-10 note: "did not
+        disclose how much money has already been raised... or whether
+        any amount has been formally committed") — an information gap
+        that is exactly the kind of space where an undisclosed circular
+        structure could exist without yet being visible.
+      precedent: >
+        Burry's own public track record of naming a specific structural
+        risk (the 2008 mortgage-CDO thesis) ahead of its becoming
+        visible in disclosure is the precedent his own credibility here
+        rests on — cited neutrally, since this lens does not take a
+        position on whether that track record predicts this call.
+    - direction: >
+        The claim proves to be rhetorical overreach not borne out by
+        subsequent disclosure — Nvidia's financing platform structure,
+        once its MOUs convert to definitive agreements, shows genuine
+        third-party capital (the stated purpose) rather than undisclosed
+        circularity, and Burry's public positioning (he holds disclosed
+        short positions against AI-adjacent names per this lens's own
+        08-13 morning note on Nebius/Palantir) is read as a financially
+        interested voice rather than a neutral warning.
+      why: >
+        "Off-balance-sheet and undisclosed" is, on its own, also simply a
+        description of any MOU-stage financing platform that hasn't yet
+        converted to definitive agreements — the absence of disclosure so
+        far is consistent with normal deal-stage opacity, not necessarily
+        with concealment.
+      precedent: >
+        Burry has made prior public AI-boom warnings (this lens's own
+        08-09 Berkshire item, plus the Nvidia/Micron short position
+        already on file) that have not yet been borne out by subsequent
+        events as of this digest — a real base rate for weighing this
+        specific claim against.
+  context_note: >
+    Directly extends `ai-buildout-debt-risk`'s own 08-10 entry on
+    Nvidia's financing platform (which this lens logged without a named
+    critic) and `berkshire-ai-capital-stance`'s 08-09 Burry entry (general
+    skepticism, now sharpened to a specific target). Also touches
+    `ai-circular-financing-risk` (ai lens) directly — its entity list
+    (Nvidia/OpenAI/Oracle) is the same one this lens flagged 08-13 morning
+    as not yet including AMD/Anthropic; Burry's claim argues for treating
+    that gap as more urgent, not something to close unilaterally from
+    here.

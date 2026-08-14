@@ -13,35 +13,60 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
-## 2026-08-13 (afternoon) — Session adjourns, the hearing goes live, disposition still unposted
+## 2026-08-13 — Resolved: SB 903 released from suspense 13-0, ordered to third reading
 
-- **The trigger condition the morning entry was waiting on has now
-  cleared: California's Assembly has adjourned its floor session for the
-  day, and SB 903's Appropriations suspense-file hearing is underway.**
-  The Assembly's own homepage reads "The Assembly has adjourned until
-  Monday, August 17th, 2026 at 1:00 p.m.," and the Appropriations
-  Committee's hearing (calendared "upon adjournment of Session," Room
-  1100) shows as live. Leginfo's bill-status page, however, still shows
-  the 08/05/26 "Placed on suspense file" entry as SB 903's most recent
-  recorded action — no post-hearing outcome (held / released / amended)
-  has posted as of this check. California suspense-file results often
-  aren't reflected online until the next business day, so the actual
-  disposition may not resolve until tomorrow's check.
-  ([California Assembly](https://www.assembly.ca.gov/), [California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-13⟩
+- **SB 903 was released from Assembly Appropriations' suspense file
+  today, not held: the committee reported "Do pass" on a unanimous 13-0
+  vote, the bill was read a second time, and it was ordered to third
+  reading — clearing both open expectations on this bill
+  (`ca-sb903-appropriations-hearing`, due yesterday, and the
+  `ca-sb903-assembly` 08-14 fiscal report-out deadline) a day early.**
+  Leginfo's own bill-history log shows today's sequence in order:
+  "Assembly Rule 63 suspended" (waiving the normal in-print waiting
+  period before floor action), "From committee: Do pass. (Ayes 13. Noes
+  0.)," then "Read second time. Ordered to third reading." The bill now
+  sits on the Assembly's own "3rd Reading File" for Senate bills, dated
+  08-17-2026 (item 269) — matching the Assembly's adjournment notice
+  ("adjourned until Monday, August 17th") the morning and afternoon
+  passes below were tracking before the resolution posted. SB 903
+  already passed the Senate floor 39-0 back on 05/19/26; the next and
+  final Assembly step is the floor vote itself, after which any Assembly
+  amendments would need Senate concurrence before the bill reaches the
+  Governor's desk.
+  ([California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903), [California Legislature — SB 903 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-13⟩
+- **Earlier the same day (afternoon check): the trigger condition the
+  morning pass was waiting on had cleared — the Assembly adjourned its
+  floor session and the suspense-file hearing was underway — but no
+  disposition had posted yet.** The Assembly's own homepage read "The
+  Assembly has adjourned until Monday, August 17th, 2026 at 1:00 p.m.,"
+  and the Appropriations Committee's hearing (calendared "upon
+  adjournment of Session," Room 1100) showed as live, while leginfo
+  still showed only the 08/05/26 "Placed on suspense file" entry as the
+  most recent action. Superseded within hours by the resolution above.
+  ⟨daily 2026-08-13⟩
+- **Earlier still (morning check): SB 903 was confirmed on Assembly
+  Appropriations' suspense calendar for the day's Daily File, disposition
+  not yet known.** The committee's own hearings page listed "S.B.No. 903
+  Padilla. Mental health professionals: artificial intelligence," Wicks
+  chairing, hearing time "Upon adjournment of Session," Room 1100 —
+  confirming the bill remained alive and treated as a suspense-file
+  matter, consistent with its August 5 hearing. ⟨daily 2026-08-13⟩
 
-## 2026-08-13 (morning) — SB 903's suspense-file hearing convenes; outcome still unknown
+## 2026-08-13 — Vermont's H.816 confirmed signed, resolving this thread's "VT confirmation" watch item
 
-- **SB 903 is confirmed on Assembly Appropriations' suspense calendar for
-  today's Daily File, but as of this pass the disposition (held on
-  suspense, released, or amended) is not yet known.** The committee's own
-  hearings page lists "S.B.No. 903 Padilla. Mental health professionals:
-  artificial intelligence," Wicks chairing, hearing time "Upon adjournment
-  of Session," Room 1100 — confirming the bill remains alive and treated
-  as a suspense-file matter, consistent with its August 5 hearing.
-  Leginfo's bill-status page had not posted a post-hearing action as of
-  this check, and California's legislature had not yet adjourned session.
-  Feeds the `ca-sb903-assembly` 08-14 fiscal report-out deadline.
-  ([Assembly Appropriations Committee](https://apro.assembly.ca.gov/hearings), [California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-13⟩
+- **A regional feature on Dartmouth's Therabot research confirmed
+  Vermont's H.816 is signed law, not still pending: it requires a
+  licensed professional to review AI-generated mental-health advice
+  before it reaches a patient.** Signed in June 2026, after Rep. Daisy
+  Berbeco introduced it citing "stories of people doing self-harm ...
+  when they interact with chatbots." The same reporting found New
+  Hampshire's own attempt — Sen. Howard Pearl's bill to regulate AI
+  mental-health tools as unlicensed practice, a workaround for the
+  federal executive order discouraging direct state AI regulation —
+  stalled into a study committee rather than passing, after stakeholders
+  couldn't agree. Closes a watch item open since this thread's 2026-07-22
+  seed correction ("Vermont unconfirmed past its 05-07 pending stage").
+  ([Concord Monitor / Valley News](https://www.concordmonitor.com/2026/08/13/dartmouth-ai-therapy-chatbot/)) ⟨daily 2026-08-13⟩
 
 ## 2026-08-12 — HB 26-1195 takes effect: the flip, not just the check
 

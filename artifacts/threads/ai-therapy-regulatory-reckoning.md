@@ -13,6 +13,23 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-13 — A new Character.AI suit lands, naming Google and both co-founders
+
+- **A new federal lawsuit against Character.AI was filed today in the
+  U.S. District Court for the Northern District of California, naming
+  Google and Character.AI co-founders Noam Shazeer and Daniel De Freitas
+  as co-defendants alongside Character Technologies itself.** Filed by
+  the law firm Gibbs Mura, it alleges the product's anthropomorphic
+  design and simulated emotional intimacy foster unhealthy dependence in
+  minors, citing addiction, depression, anxiety, self-harm, suicidal
+  ideation, sexual exploitation, psychosis, and disordered eating as the
+  harms it seeks damages for. It's a fresh, distinct filing from the
+  five earlier Character.AI/Google wrongful-death and harm suits that
+  settled confidentially in January — this thread's litigation-not-
+  evidence pattern generating new named plaintiffs even after a
+  settlement round, rather than the wave receding.
+  ([Businesswire — Gibbs Mura press release](https://www.businesswire.com/news/home/20260813331103/en/Character.AI-Charged-With-Teen-Mental-Health-Harm-in-Lawsuit-by-Gibbs-Mura-A-Law-Group)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-10 — China bans AI-companion apps outright over mental-health harm
 
 - **China ordered ByteDance, Alibaba, and Tencent to pull their

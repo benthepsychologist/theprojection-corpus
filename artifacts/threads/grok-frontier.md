@@ -13,6 +13,29 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-08-14 — Cursor formally folds into "SpaceXAI"
+
+- **SpaceX completed its $60B all-stock acquisition of Cursor
+  (Anysphere), issuing ~391M SpaceX Class A shares; Cursor now operates
+  as a wholly owned subsidiary under a newly rebranded "SpaceXAI"
+  division, with its team gaining access to SpaceX's Colossus
+  supercomputer.** This thread logged the deal "nearing close" 08-12;
+  today's close is the concrete structural event — a coding-tool
+  acquisition folded directly into xAI's product line rather than run
+  independently, extending Grok's reach into agentic coding. Financing
+  mechanics remain global-capital's `spacexai-public-megacap` thread.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/spacex-completes-its-60-billion-cursor-acquisition)) ⟨daily 2026-08-14⟩
+
+## 2026-08-13 — Musk teases Grok 4.7 the day after 4.6 ships
+
+- **Elon Musk teased Grok 4.7 — a 2.1T-parameter model he said he'd "be
+  shocked if any model is better at real-world engineering than,"
+  trained in part on SpaceX's own proprietary engineering data, with
+  slightly slower inference than 4.6 as the stated tradeoff.** Expected
+  "a few weeks" out per Musk; `upcoming.yaml`'s `grok-4-7-ship` tracks
+  08-21.
+  ([Elon Musk, via X](https://x.com/elonmusk/status/2087606260539777263), [KuCoin](https://www.kucoin.com/news/flash/elon-musk-hails-grok-4-7-as-superior-to-all-existing-models)) ⟨daily 2026-08-13⟩
+
 ## 2026-08-12 — Grok 4.6 ships, reversing the 08-07 miss
 
 - **Grok 4.6 shipped — a new flagship built for long-running agent

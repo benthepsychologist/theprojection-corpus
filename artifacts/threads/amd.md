@@ -8,6 +8,20 @@ opened: 2026-08-04
 
 # AMD — timeline
 
+## 2026-08-13 — AMD prices its biggest-ever dollar bond sale to fund the buildout
+
+- **AMD launched a four-part senior unsecured bond offering targeting
+  $4-5B (notes due 2029/2031/2033/2036), ultimately pricing at $4.75B —
+  its largest-ever US dollar debt raise.** Proceeds are for general
+  corporate purposes including possible debt repayment, as AMD funds its
+  expansion into the AI/data-center compute this thread already tracks
+  (the ~14GW of OpenAI/Meta/Anthropic deals, above). Bank of America,
+  JPMorgan, Barclays and Wells Fargo led; bonds settle 08-17. First time
+  this thread has seen AMD reach for public debt rather than cash/equity
+  to fund the buildout — a leverage signal worth watching alongside the
+  hardware-delivery timeline.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-13/amd-plans-to-raise-as-much-as-5-billion-from-debt-offering)) ⟨daily 2026-08-13⟩
+
 *Watch:* Whether the ~14GW of announced OpenAI/Meta/Anthropic compute
 deals actually convert to shipped hardware and vested warrants on their
 stated H2-2026/H1-2027 timelines, or stay a backlog/announcement story —
