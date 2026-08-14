@@ -29,3 +29,15 @@ outputs:
   # this file directly (no per-site code lives in the kestrel checkout;
   # relocated 2026-07-31 out of tools/publish/adapters/theprojection.py).
   adapter: publish/adapter.py
+
+# Scheduled recurring work (kestrel ROADMAP/FLEET.md §4.3). Declared HERE,
+# in this repo's own manifest, because which of its skills may run
+# unattended is this repo's decision — a crontab line cannot express it.
+# `kestrel fleet cron` converts these to UTC crontab lines; installing
+# them is the operator's, and kestrel never launches anything itself.
+cadence:
+  timezone: America/Toronto
+  runs:
+    - skill: daily
+      at: ["10:00", "15:00"]   # -> 14:00 / 19:00 UTC while EDT
+      unattended: true

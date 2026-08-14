@@ -1,4 +1,4 @@
-<!-- kit: attention/wrap@2026-08-13.2 — canonical: /workspace/kestrel/library/skills/attention/wrap/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+<!-- kit: attention/wrap@2026-08-14.13 — canonical: /workspace/kestrel/library/skills/attention/wrap/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: wrap
@@ -17,7 +17,7 @@ watching the pipeline.
 **Scope — what this skill writes, and what it does not** (the
 cloud-governor discipline): it writes `STATUS.md`, `log.md`, git commits
 and pushes in the two zone repos (this repo + the site sibling), and at
-most one uncommitted brief into `/workspace/kestrel/INBOX/`. It does
+most one brief into `/workspace/kestrel-ops/INBOX/`. It does
 **NOT** write digest content or frontmatter (that's `/daily`'s state
 machine), `attention/` steering files (that's `/steer`/`/daily`), or
 publish content (that's `/publish`). A wrap that finds those needing work
@@ -126,8 +126,9 @@ situations, never conflated:
 
 - If `AGENTS.md`/`CLAUDE.md`/kit-tracked skills changed this session and
   the change should reach the canonical template: **one uncommitted
-  brief into `/workspace/kestrel/INBOX/`** (the `/life:handoff` protocol) —
-  write the file, commit nothing there, touch nothing else.
+  brief into `/workspace/kestrel-ops/INBOX/`** (the `/life:handoff` protocol; dev-shaped
+  requests go to the engine's issue tracker instead) —
+  write the file, commit it there, touch nothing else.
 - **The report** — the wrap card, house style: one-line verdict; a table
   of lanes (daily state · map counts with deltas · publishes today with
   build ids · push state ×3 repos); what's waiting on Ben (unanswered
@@ -141,7 +142,10 @@ situations, never conflated:
 
 - Do not push, commit, build, or lint in the **engine repo**
   (`/workspace/kestrel`) — flag, never fix (write zone, Ben 2026-08-04). The
-  INBOX drop is the one sanctioned write, and it stays uncommitted.
+  brief is the one sanctioned write, and it no longer goes there at all:
+  ops briefs go to `/workspace/kestrel-ops/INBOX/` and **are committed** (that repo is a
+  filing cabinet, and an uncommitted brief is a dirty tree the next
+  operation may lose); dev-shaped requests go to the issue tracker.
 - Do not flip digest frontmatter, edit `attention/` steering files, or
   run a publish from here — name the need, leave it to `/daily`,
   `/steer`, `/publish`.

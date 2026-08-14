@@ -1,73 +1,29 @@
-<!-- kit: attention/CLAUDE@2026-08-13.2 — canonical: /workspace/kestrel/library/agentdocs/attention/CLAUDE.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+<!-- kit: attention/CLAUDE@2026-08-14.13 — canonical: /workspace/kestrel/library/agentdocs/attention/CLAUDE.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
-# CLAUDE.md — theprojection (instance #1)
+# CLAUDE.md — theprojection
 
-Ben's personal intelligence layer: **buffer + extract, never own the source
-data**. Four lenses (ai · global-capital · mental-health · world-news); the
-product is the attention map (`attention/` — watchlist entities, weighted
-threads, expectations ledger) and the thread-centric weekly read built from
-it (rendered page + daily digest archive; AGENTS.md disciplines 7–8).
+**This file is a router, not a manual.** Everything durable lives in
+harness-neutral files beside it, so that this repo reads the same to any
+agent runtime. Nothing is stated only here.
 
-## The engine/instance split (2026-07-31)
+> ## ⚠️ Read these, in this order, before doing anything
+>
+> 1. **`OPERATING.md`** — the shared contract: how to run engine tools,
+>    **what you own vs. what the engine owns**, the local-extension
+>    protocol, jurisdiction, and how to close a session. Identical in
+>    every repo the engine tends.
+> 2. **`AGENTS.md`** — the disciplines specific to this **attention** kind.
+> 3. **`README.md`** — what this particular repo is and how it is laid
+>    out.
 
-This repo is an instance of the kestrel engine — the DATA (attention/,
-artifacts/, sources/, provenance/, templates/) plus the operating skills
-and docs. The CODE (collectors/, tools/) lives in `/workspace/kestrel`,
-which tends this repo and every sibling instance registered in its
-`instances.yaml`. `kestrel.yaml` at this root is the instance manifest.
+**What this repo is:** a personal news/attention map — it buffers and extracts from external sources, and never owns the source data. It is an instance of the kestrel engine
+(`/workspace/kestrel`); the engine holds the code, this repo holds the
+data and its own local extensions.
 
-**Invocation rule:** any `tools/*.py` mentioned in the skills/docs means
-the ENGINE's tools, run as:
+**Fastest orientation:** run the repo's `/start` skill. It reads the docs
+above plus live state and tells you where the work actually is.
 
-    KESTREL_INSTANCE=/workspace/theprojection-corpus \
-      python3 /workspace/kestrel/tools/<tool>.py
-
-Set `KESTREL_INSTANCE=/workspace/theprojection-corpus` for every engine tool
-invocation from this repo — without it the tools fall back to looking for
-instance data inside kestrel, where it no longer lives. Engine changes
-belong in kestrel (its `ROADMAP/DESIGN.md` is the split's design of
-record); this repo's history before 2026-07-31 lives in kestrel's git
-history (tag `pre-engine-split` and earlier).
-
-**Read first:** `AGENTS.md` (disciplines, operating rhythm, steering loop) →
-`README.md` (layout + contracts) → `STATUS.md` (where things stand) →
-`ROADMAP.md` (decisions + sequence, incl. the delivery surfaces) →
-`BOOTSTRAP.md` (build state, done-whens, gates) → `DESIGN.md` (the board as
-a node + claim graph — schema shapes + pipeline).
-
-**The commands:** `/start` · `/daily` · `/week` · `/steer` · `/crawl` ·
-`/map` · `/publish` · `/classify` (`.claude/skills/`). Templates in
-`templates/`.
-Zero coupling to sibling corpora — never read them; everything needed is
-distilled in `REBUILD-NOTES.md`.
-
-Never: canonicalize source data · edit `attention/` outside the steering
-loop (provenance tag every change) · let an LLM-edited YAML file go
-unvalidated (`yaml.safe_load` or revert).
-
-## Cite every metric — the source is the receipt (Ben, 2026-07-26)
-
-**Every claim on the board carries a cited source — above all the four
-measured axes (commanded_capital / thrust / gravity / optionality) and
-posture.** The value on the board is a *summary*;
-the source is the *receipt*, and Ben must be able to **see and click the
-justification for every claim**, especially the cap/opt/grav metrics.
-
-- **Where sources live:** a per-node bundle
-  `artifacts/bundles/<node-slug>-node/provenance.yaml`, shape:
-  `{ posture: {value, basis, sources[]}, capital: {available|operating|
-  deployed|in|out: {value, sources[]}}, optionality: {value, sources[]},
-  gravity: {value, sources[]} }` — each source is
-  `{figure, label, url, as_of, confidence}`. Capital is a **flow** (in ·
-  out · available · operating · deployed), not one static pile — fill what's
-  gettable, rough is fine.
-- **Discipline:** no cap/opt/grav or posture claim ships without at least
-  one source, or an explicit `confidence: low` / "estimate, uncited" flag.
-  WebFetch primary sources (SEC/EDGAR, IR, gov filings) + reputable trackers;
-  never fabricate a URL or figure — flag low-confidence instead.
-- **The publisher exports the bundle sources into `data/board.json`**, and
-  the `/map` node + pocket pages **render the justification inline and
-  clickable** under each metric. A metric with no visible source is a bug.
-- The board.yaml axis strings stay the one-line summary; the bundle is the
-  evidence layer behind them (same relationship as a thread → its `/crawl`
-  bundle).
+⚠️ **If you take one thing from this file:** before concluding that some
+fix belongs in the engine, apply the ownership test in `OPERATING.md` §1.
+The answer is usually that the file is yours — a session once reported
+otherwise to the operator and was wrong.

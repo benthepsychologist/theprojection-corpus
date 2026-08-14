@@ -1,4 +1,4 @@
-<!-- kit: attention/start@2026-08-13.2 — canonical: /workspace/kestrel/library/skills/attention/start/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+<!-- kit: attention/start@2026-08-14.13 — canonical: /workspace/kestrel/library/skills/attention/start/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: start
@@ -72,7 +72,7 @@ renders one card, in this order:
 6. **Push safety** — run `git log @{u}..` in **both** `/workspace/kestrel`
    and `/workspace/theprojection-site`. This is the one check `/map` doesn't
    do and it's load-bearing: AGENTS.md §Session close documents that
-   `/publish --push` pushes theprojection's deploy hook and **nothing**
+   `/publish --push` pushes the SITE's deploy hook and **nothing**
    ever pushes kestrel automatically, so unpushed kestrel commits
    accumulate silently across sessions (found once at 17 commits deep,
    inherited across two closed sessions). **A clean `git status` is not
@@ -84,7 +84,7 @@ renders one card, in this order:
    from step 1's git log). Flag anything the top note asserts that the
    newest commits have already overtaken; fix nothing — just name the
    drift. Not hypothetical: earlier the same day on 2026-07-29, STATUS's
-   top note still said `sev=`/`flash.yaml` were unwired and theprojection
+   top note still said `sev=`/`flash.yaml` were unwired and the site
    was unpushed, when both had already shipped in commits sitting right
    above it.
 8. **Name the obvious next move** — one plain line, e.g. "07-28 is

@@ -1,4 +1,4 @@
-<!-- kit: attention/crawl@2026-08-13.2 — canonical: /workspace/kestrel/library/skills/attention/crawl/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+<!-- kit: attention/crawl@2026-08-14.13 — canonical: /workspace/kestrel/library/skills/attention/crawl/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: crawl

@@ -1,4 +1,4 @@
-<!-- kit: attention/publish@2026-08-13.2 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to kestrel's INBOX/, never a direct edit. -->
+<!-- kit: attention/publish@2026-08-14.13 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: publish
@@ -8,7 +8,7 @@ argument-hint: [--push] [--dry-run]
 
 # /publish [--push] [--dry-run] — export to theprojection.org
 
-Runs `KESTREL_INSTANCE=/workspace/theprojection-corpus python3 /workspace/kestrel/tools/publish.py`
+Runs `kestrel publish --instance /workspace/theprojection-corpus`
 (AGENTS.md discipline 9) — the generic engine CLI, which loads this repo's
 own `publish/adapter.py` (declared in `kestrel.yaml`'s `outputs.adapter`).
 Kestrel feeds the site; never the reverse, and no other path writes there.
@@ -83,13 +83,16 @@ a step to skip silently.
 3. Report what ran: threads published, threads skipped (+ why), payload
    counts, and — if `--push` — the commit range and the Cloudflare
    build_uuid from the deploy-hook response.
-4. `THEPROJECTION_SITE_DIR` env var (or `--site-dir`) overrides the
+4. This instance's own site-dir env var (named in its `.env.example`), or
+   `--site-dir`, overrides the
    default site checkout path if it ever moves — set in **this repo's own
    `.env`**, not kestrel's (the adapter is instance-owned, revised
    2026-07-31).
-5. **The deploy hook only fires automatically inside `tools/publish.py --push`,**
-   and only if `THEPROJECTION_DEPLOY_HOOK` is set — there's no fallback.
+5. **The deploy hook only fires automatically inside `kestrel publish --push`,**
+   and only if this instance's deploy-hook env var is set — there's no
+   fallback. Its exact name is declared in this repo's own `.env.example`;
+   a shared template cannot know it (see `OPERATING.md` §1).
    Any *other* push to the site repo (a template/CSS/JS/code change, not a
    content publish) does **not** auto-trigger a Cloudflare build — fire it
-   by hand: `curl -X POST "$THEPROJECTION_DEPLOY_HOOK"`. Learned
+   by hand: `curl -X POST "$<this repo's deploy-hook var>"`. Learned
    2026-07-23 doing the mobile-fix and copy-chat-feature pushes directly.
