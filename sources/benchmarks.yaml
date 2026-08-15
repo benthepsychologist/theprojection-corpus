@@ -28,16 +28,24 @@
 #   Bash (curl/python urllib), never via the WebFetch tool directly — same
 #   URL, different transport, no block.
 #
-# - **Axios Pro Rata: NO FIX FOUND — open decision for Ben, not resolved.**
-#   Every axios.com path (Pro Rata, the bare homepage, an unrelated tech
-#   section) returns an identical Cloudflare "Attention Required!" block —
-#   this is a domain-wide bot-protection rule against non-browser/cloud-IP
-#   traffic, not a paywall or a specific-URL problem, so no RSS/API variant
-#   fixes it. No free-tier digest exists distinct from Pro Rata itself. The
-#   only real options: (a) drop it from this file's daily critic set and
-#   accept the gap honestly, or (b) route through infrastructure that can
-#   clear a Cloudflare challenge (headless-browser render, non-cloud IP) —
-#   a meaningfully bigger lift than a config change. Needs Ben's call.
+# - **Axios Pro Rata: FIXED 2026-08-15, via a reader proxy** (Ben, 2026-08-14:
+#   "yes to find workaround" — this was the domain-wide Cloudflare block
+#   flagged unresolved through five-plus coverage-critic passes since
+#   08-03). A real Chrome session wasn't available to test in this
+#   container (no browser extension connected), so the fix that actually
+#   worked is the same class already proven on MobiHealthNews below: the
+#   r.jina.ai reader proxy, which renders past Cloudflare's JS challenge
+#   server-side and returns clean article text. Plain curl (with or
+#   without a Googlebot/bingbot UA) still 403s every axios.com path — only
+#   the proxy clears it. The URL that matters: the newsletter's own
+#   persistent page, NOT a guessed `/pro-rata` path (that 404s) —
+#       https://r.jina.ai/https://www.axios.com/newsletters/axios-pro-rata
+#   Verified live 2026-08-14/15: returned that day's actual dated issue in
+#   full (headline, byline, every item's real text), not a stub or a stale
+#   cache. Use this prefix for this outlet specifically going forward —
+#   same discipline as MobiHealthNews below, and worth re-testing
+#   periodically rather than assuming a fix stays fixed (see the
+#   escalation pattern noted there).
 #
 # - **Behavioral Health Business: the fix escalated AGAIN** (2026-08-11
 #   evening). The plain-HTTP workaround above is no longer enough — a normal
@@ -65,9 +73,10 @@
 #   reader proxy, which renders the challenge and returns clean text:
 #       https://r.jina.ai/https://www.mobihealthnews.com/
 #   Use that prefix for this outlet specifically. Note the escalation
-#   pattern across the three fixed benchmarks — WebFetch-signature block
-#   (BHB) → full non-browser block (MobiHealthNews) → domain-wide block
-#   with no known route (Axios). Worth re-testing all three periodically
+#   pattern across all four fixed benchmarks — WebFetch-signature block
+#   (BHB) → full non-browser block (MobiHealthNews) → domain-wide block,
+#   also resolved by the same reader-proxy class of fix once found
+#   (Axios Pro Rata, 08-15). Worth re-testing all four periodically
 #   rather than assuming a fix stays fixed.
 #
 # - **Weekend shape (2026-08-11): three of the four mental-health daily
