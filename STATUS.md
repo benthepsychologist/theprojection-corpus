@@ -1,13 +1,93 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-13**. Top note covers two full
-`/daily` cycles (a 1.75-day gap closed, then a normal extend day) and
-one genuinely new capability built end-to-end: a daily audio briefing,
-tried with a free engine that turned out to sound bad, switched to a
-paid one, then debugged for real quality problems using a technique
-worth keeping — having a second model listen to the file and report
-back, since this session has no ears of its own. The 08-11 note and
-everything older sit under it.*
+*Hand-maintained. **As of 2026-08-14**. Top note covers a kit sync
+adopted from kestrel's own package-turn restructuring, a full `/daily`
+(finalize + open, four lenses dispatched in parallel), a full `/week`
+(weekly synthesis, a complete 45-actor `actor-doing.yaml` rewrite, a
+`capital-context.yaml` refresh), and a real process correction: Ben
+pushed back on why the map would ever *retire* a thread over mere
+staleness, which turned out to have a genuine mechanical answer (retiring
+drops a thread from `/daily`'s own collector sweep, not just its
+display) — fixed in the skill template and filed upstream to kestrel.
+The 08-13 note and everything older sit under it.*
+
+> **2026-08-14 (wrap) — kit sync, a full `/daily` + `/week`, and a real
+> policy fix to how threads get retired.** 5 commits since the 08-13
+> wrap. Counts computed at wrap: **99 threads** (85 open · 12 developing
+> · 1 resolved · 1 retired — unchanged count, most refreshed content),
+> **62 expectations** (39 pending · 18 hit · 5 passed-silent — was 62 /
+> 42 / 15 / 5 at the 08-13 wrap; four hits this run, one new entry
+> logged, one stale hit pruned), **198 watchlist entries** (was 194 —
+> Michael Heinz, Silver Lake, Jane Street, Vantage Data Centers), all
+> **45 actor roll-ups refreshed** (a full `/week` pass, not just movers),
+> 3 publishes today.
+>
+> **Kit sync, reviewed before committing, not just accepted.** The
+> session opened on an uncommitted sync already in the working tree,
+> pulling kestrel's 2026-08-14 restructuring (the package turn's
+> `kestrel <verb>` CLI, a `CLAUDE.md`/`OPERATING.md` split, sites
+> released from kit management). Read it line-by-line rather than
+> rubber-stamping it: caught a real bug fix worth keeping (`/daily`'s
+> own session-close step used to tell the agent to push *kestrel* —
+> exactly the out-of-zone write the zone rule prohibits — now pushes
+> this repo and never kestrel) and a convention change that made this
+> session's own memory stale (briefs now route to a new sibling repo,
+> `kestrel-ops`, committed there, not dropped uncommitted into kestrel's
+> own INBOX) — updated project memory before it could mislead a future
+> session.
+>
+> **`/daily`: finalize 08-13, open/curate 08-14, four lenses in
+> parallel.** A full 15-collector sweep, then four sonnet agents — one
+> per lens — each finalized 08-13 with its own coverage-critic pass and
+> curated 08-14 through the afternoon. Real findings: California's SB
+> 903 cleared Assembly Appropriations 13-0 and now sits on the Assembly's
+> 08-17 floor-vote file; Berkshire's Q2 13F showed its Alphabet stake
+> nearly doubling (+83% shares/+127% value) with no other AI-adjacent
+> equity added; SpaceX closed its $60B Cursor acquisition ~17 days
+> early; a Jefferies note quantifying hyperscaler free-cash-flow
+> compression landed the same week Michael Burry named Nvidia's $500B
+> financing platform directly — the first real skepticism this map's
+> AI-financing thread has carried; Ukraine's largest territorial claim
+> of the war (745 km²) was correctly held below the flash-rail bar as a
+> campaign culmination, not a discrete event. Two real ledger bugs
+> caught in the same pass and fixed directly (not decay): `tsmc-capacity-race`
+> and `anthropic-ipo-timing` each had real hits whose `last_seen` never
+> got bumped at the time.
+>
+> **`/week`: weekly synthesis, a full actor-doing rewrite, capital-context
+> refreshed.** Four weekly digests synthesized against each lens's open
+> radar questions; all 45 board actors reviewed and refreshed (genuinely-
+> quiet ones got a one-line confirmation, real movers got real rewrites),
+> applied via a script that surgically replaced each actor's block while
+> preserving every surrounding comment. `capital-context.yaml` re-run
+> against all 5 macro collectors (mostly real "nothing new," consistent
+> with their own multi-week lag) plus this week's real rate/conflict
+> findings. Board pass: zero provisional orgs, the dormant-actor
+> cross-reference matched the prior week's finding exactly, no new gap.
+>
+> **The most consequential thing this session did wasn't a finding —
+> it was a correction to how the map itself is allowed to shrink.** The
+> `/week` decay review surfaced its usual list of stale threads with
+> keep/resolve/retire framing, and Ben pushed back hard on the premise:
+> *"I don't understand why we would ever retire a thread... why would we
+> decay retire anything?"* The answer turned out to be mechanical, not a
+> matter of taste — `resolved`/`retired` threads drop out of `/daily`'s
+> own collector term sweep (a thread that's done stops costing API
+> calls), so retiring isn't a display decision, it's a decision to
+> **stop watching**. An `open` thread keeps being swept regardless of
+> staleness; `/map`'s own freshness buckets already carry the correct
+> display-only staleness signal. The data backed him up immediately:
+> this run's own decay pass reviewed 27 stale threads and proposed
+> "keep" on 26 of them. Rewrote the `/week` skill and the weekly-digest
+> template so staleness alone never frames a retire/resolve decision —
+> only a stated, evidence-based reason does. Filed upstream as
+> [kestrel#20](https://github.com/benthepsychologist/kestrel/issues/20)
+> so the fix reaches every attention-kind instance, not just this one.
+>
+> **Two decisions are sitting with Ben, unresolved as of this wrap:**
+> whether to consolidate `spacex-colossus`/`camellia` into sibling
+> threads, and the recurring Axios Pro Rata Cloudflare block (5th+
+> occurrence) — an alternate route, or drop it from the benchmark set.
 
 > **2026-08-13 (wrap) — two `/daily` cycles, and the audio briefing:
 > built, judged bad, switched, debugged with a self-listening check,

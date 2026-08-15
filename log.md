@@ -3614,3 +3614,64 @@ cutoff or a recheck timed to those outlets' real publishing cadence.
 Since this week is only Mon–Fri so far, Sat/Sun remain uncovered by
 this pass — a normal `/daily` run this weekend (or next week's `/week`)
 picks them up.
+
+## 2026-08-14 (wrap) — session checkpoint: kit sync, `/daily`, `/week`,
+and a real correction to how the map is allowed to shrink
+
+Not a close — a save point. Kit sync, one full `/daily`, and one full
+`/week` all ran and are committed and pushed; this entry is the
+session-level view the detailed entries above don't give on their own.
+
+**What today actually was, in order:** reviewed and committed an
+uncommitted kit sync that had been sitting in the working tree since
+before the session opened (kestrel's 2026-08-14 package-turn
+restructuring); ran `/daily` to finalize 08-13 and open/curate 08-14
+across all four lenses; ran `/week` for the first time this week
+(`week_of` 2026-08-10, partial Mon–Fri); then, mid-review of that
+`/week` output, Ben stopped the pipeline on a premise question rather
+than a content one — and that correction is the thing worth remembering
+from today, more than any single finding.
+
+**The decay-retirement correction, in full, because it's the kind of
+fix that's easy to lose in a wrap summary:** presenting `/week`'s decay
+review (27 stale threads, most proposed "keep") drew a direct challenge:
+Ben doesn't believe staleness should ever be grounds to retire a
+thread, full stop. Working through why, the real answer wasn't
+philosophical — it's that `resolved`/`retired` threads drop out of
+`/daily`'s own collector term sweep (AGENTS.md discipline 1: "a thread
+that's done stops costing API calls"), so retiring a thread is a
+decision to stop watching for developments on it, not a decision to
+stop showing it. An `open` thread keeps getting swept regardless of how
+stale it looks; `/map`'s freshness buckets already give the right
+display-only staleness signal. The data agreed with him before the fix
+even landed: this run's own decay pass proposed "keep" on 26 of 27
+stale threads, and the one real retire candidate had an actual reason
+(a dead rumor with zero follow-up), not staleness alone. Rewrote
+`.claude/skills/week/SKILL.md` step 4 and `templates/weekly-digest.md`'s
+Decay review section so a resolve/retire proposal now requires a stated
+reason — staleness alone gets listed as information, never framed as an
+action needed. Saved as a standing feedback memory. Filed upstream as
+kestrel issue #20 (with the exact diff and the mechanical rationale)
+since this is a template-level correction every attention-kind instance
+should inherit, not a one-off local preference.
+
+**The `/daily` and `/week` runs themselves, briefly** (full detail in
+their own entries above): `/daily` resolved four dated expectations
+(SB 903 twice over, Berkshire's Q2 13F, SpaceX/Cursor early) and caught
+the AI-financing story's first real skepticism (Jefferies + Burry, same
+week). `/week` did a full 45-actor `actor-doing.yaml` rewrite (not just
+movers), refreshed `capital-context.yaml` against all 5 macro
+collectors, ran a board pass (no new dormant-actor gap), and caught two
+real ledger bugs — `tsmc-capacity-race` and `anthropic-ipo-timing` —
+where a real hit had landed without its `last_seen` ever being bumped.
+
+**Pick up:** two decisions are sitting with Ben — whether to
+consolidate `spacex-colossus`/`camellia` into sibling threads, and
+Axios Pro Rata's recurring Cloudflare block (route around it, or drop
+it from the benchmark set). `/week`'s own coverage is Mon–Fri only;
+Sat/Sun still need a normal `/daily` pass or next week's `/week` to
+close the week out. `kestrel`'s own unpushed-commit count (34 at this
+session's `/start`) still hasn't been rechecked — read-only from here,
+but worth a look next session since it's exactly the flag `/start`
+exists to catch. `decart-acquisition-close` stays unresolved (SpaceX
+vs. Anthropic as the real buyer).
