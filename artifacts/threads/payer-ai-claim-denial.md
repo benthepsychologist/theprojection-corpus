@@ -11,6 +11,24 @@ opened: 2026-07-28
 *Watch:* the UHC discovery outputs · WISeR's fate · state bans spreading ·
 the ghost-network/network-adequacy strand.
 
+## 2026-08-15 — Aetna's Alma rate cuts land, softer than proposed but real
+
+- **Aetna's reimbursement cuts to Alma-contracted therapists took effect
+  today as scheduled, after a partial July rollback — and they're
+  state-specific: New York therapists lose 10.6% on a 60-minute session
+  (CPT 90837) and 9.7% on intake (90791), New Jersey loses 15.2% and
+  16.8% on the same two codes, and 30-minute sessions are untouched
+  everywhere.** The two biggest originally-proposed cuts — collapsing
+  90837/90834 into a single rate, and flattening reimbursement across
+  license levels (LCSW vs. PhD) — are the parts Aetna walked back in July
+  after APA/APA Services protested; what actually landed today is real
+  money out of therapists' pockets, just softer than first proposed. No
+  formal announcement marked the date from either Aetna or Alma —
+  confirmed instead by a practice-management blog publishing the exact
+  new rate tables today.
+  ([ClearHealthCosts](https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/),
+  [Matthew Ryan, LCSW](https://www.matthewryanlcsw.com/blog/the-aetna-and-alma-rate-cuts-hit-august-15-heres-what-actually-changed)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-05 — CVS Health's earnings call delivers exactly the AI commentary this thread was watching for
 
 - **CVS Health's Q2 2026 earnings (reported today) named two specific AI

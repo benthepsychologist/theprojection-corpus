@@ -18,6 +18,26 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-15 — Ukraine strikes a MiG-31K/Kinzhal airbase deep inside Russia; overnight drone barrage kills an infant in the just-recaptured south
+
+- **Ukraine struck Russia's Savasleyka military airbase in Nizhny
+  Novgorod Oblast — roughly 650-700km from the border, and home to
+  MiG-31K jets capable of carrying Kh-47M2 Kinzhal ballistic missiles —
+  using domestically produced Flamingo cruise missiles, President
+  Zelenskyy confirmed.** The same strike wave hit a Roscosmos facility in
+  Samara Oblast. Footage published by the monitoring channel Exilenova+
+  showed fire at the Savasleyka airfield, with Russian aircraft reportedly
+  being evacuated as the attack continued.
+  ([Kyiv Independent](https://kyivindependent.com/ukraine-reportedly-strikes-russian-military-airbase-behind-ballistic-missile-attacks-as-rockets-target-samara-oblast/), [Euronews](https://www.euronews.com/my-europe/2026/08/15/ukraine-says-it-has-struck-russian-rocket-and-space-centre)) ⟨daily 2026-08-15⟩
+- **Russia hit back overnight with 152 Shahed-type drones and loitering
+  munitions (124 intercepted), killing a 3-month-old infant and injuring
+  11 people, including two children, in Dnipropetrovsk Oblast — 49
+  injured nationwide.** This directly follows Ukraine's own 08-14
+  declaration that it had stripped Russia of nearly all its
+  Dnipropetrovsk gains, reading as retaliatory pressure on the same
+  just-recaptured region rather than a lull.
+  ([Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-infant-injure-49-across-ukraine-over-past-day/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — Ukraine declares an eight-month, 745 km² counteroffensive complete, stripping Russia of nearly all its Dnipropetrovsk gains
 
 - **Ukraine declared an eight-month counteroffensive complete, saying it

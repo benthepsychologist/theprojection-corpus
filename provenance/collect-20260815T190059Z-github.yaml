@@ -1,0 +1,62 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-14T19:00:47Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-08-15T19:00:59Z'
+items:
+- id: gh-release-371128615
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10444
+  ts: '2026-08-15T18:42:10Z'
+- id: gh-release-371120586
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10443
+  ts: '2026-08-15T18:04:03Z'
+- id: gh-release-371075600
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10442
+  ts: '2026-08-15T14:58:24Z'
+- id: gh-release-371032005
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10441
+  ts: '2026-08-15T11:24:40Z'
+- id: gh-release-370966730
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10437
+  ts: '2026-08-15T05:24:03Z'
+- id: gh-release-370953802
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10436
+  ts: '2026-08-15T04:11:49Z'
+- id: gh-release-370853602
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10435
+  ts: '2026-08-14T22:27:16Z'
+- id: gh-release-370777838
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10434
+  ts: '2026-08-14T19:22:14Z'
+- id: gh-release-370771819
+  url: https://github.com/ollama/ollama/releases/tag/v0.32.13
+  ts: '2026-08-14T19:16:07Z'
+- id: gh-release-370769524
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openrouter%3D%3D0.2.8
+  ts: '2026-08-14T19:03:45Z'
+- id: gh-release-370762090
+  url: https://github.com/anthropics/claude-code/releases/tag/v2.1.233
+  ts: '2026-08-14T22:20:57Z'
+- id: gh-release-370932293
+  url: https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.19
+  ts: '2026-08-15T02:21:24Z'
+- id: gh-release-370843752
+  url: https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.18
+  ts: '2026-08-14T21:58:41Z'
+- id: gh-release-370780016
+  url: https://github.com/openai/codex/releases/tag/rust-v0.148.0-alpha.17
+  ts: '2026-08-14T19:26:52Z'

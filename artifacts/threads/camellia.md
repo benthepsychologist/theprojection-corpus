@@ -11,6 +11,18 @@ crawled: 2026-07-28
 
 *Watch:* OpenAI-direct build (Octans GA LLC/Butler Snow, no named GC or Stargate-JV backer) — Savannah Gateway Industrial Hub, Rincon, Effingham County GA; 3.2GW/25yr Georgia Power PPA phased 2028→2032; $20-30B cost unreconciled across outlets; pre-construction, DRI filed 07-24, Coastal Regional Commission review pending. Distinct from SoftBank's ~10GW Ohio (Portsmouth/PORTS) campus. Track: local opposition (10K+ petition signatures, regional moratorium trend), generation-mix disclosure (DRI left it blank), and whether a GC/financing partner surfaces.
 
+## 2026-08-15 — Investigative piece reconstructs how the secret deal actually got made
+
+- **The Current published "Anatomy of a secret Coastal Georgia data center
+  deal,"** the first detailed reconstruction of the negotiation process
+  itself — confirming talks between OpenAI and Effingham County's
+  development authority began confidentially the previous fall (2025),
+  with Georgia Power brokering the arrangement before OpenAI and county
+  officials reached final agreement on July 21. Republished by Georgia
+  Public Broadcasting Aug 12, giving the secrecy narrative this thread has
+  tracked since 07-22 its most detailed origin-story account yet.
+  ([The Current](https://thecurrentga.org/2026/08/08/anatomy-of-a-secret-coastal-georgia-data-center-deal/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-05 — County government responds directly for the first time: no NDAs, staff threats, forum dates set
 
 - **Effingham commissioners denied signing any NDA with OpenAI** — at an

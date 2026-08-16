@@ -10,6 +10,21 @@ opened: 2026-07-24
 
 *Watch:* The wave of the AI giants moving into health/MH — the cross-actor narrative Ben's lens most wants and had zero coverage of. Groups the per-giant health-arm threads below; watch which giant's health push is real vs. announced, and where MH specifically shows up.
 
+## 2026-08-15 — Google ships its health push into hardware, but the MH layer doesn't move with it
+
+- **At its "Made by Google" event on August 12, Google unveiled the Pixel
+  Watch 5 with passive blood-pressure and insulin-resistance tracking plus
+  a deeper Gemini integration, and a $9.99/month Google Health Premium
+  coaching tier** — a second giant, after OpenAI's Sheba Medical Center
+  deal, moving its health push from software announcement into a shipping
+  consumer product with real distribution. This is the "real vs.
+  announced" test this meta-thread tracks landing in Google's column, but
+  the mental-health layer is the same carryover stress/sleep tracking from
+  the prior generation — no new MH-specific feature accompanied the
+  launch, unlike Google's April Gemini crisis-hotline update, which this
+  thread had not yet logged.
+  ([TechCrunch](https://techcrunch.com/2026/08/12/google-unveils-the-pixel-watch-5-with-a-smarter-gemini-and-advanced-health-monitoring/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-05 — A cross-actor data point: Gen Z/millennials now default to AI before a doctor
 
 - **Aflac's fourth annual Wellness Matters survey found 76% of Gen Z and

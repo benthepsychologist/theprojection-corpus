@@ -24,6 +24,41 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-15 — Iran and Oman agree a Hormuz "shipping map" but rule out US talks; a third ADNOC tanker and a bulk carrier are hit; Israeli strikes kill 11 in Lebanon
+
+- **Iran and Oman reached agreement on a "shipping map" governing vessel
+  routes through the Strait of Hormuz — an independent bilateral
+  arrangement Iranian Foreign Ministry spokesman Esmail Baghaei said will
+  "uphold their sovereignty and ensure the safe transit of vessels,"
+  though transit fees and security arrangements remain unresolved and
+  further negotiation rounds are planned.** Foreign Minister Abbas
+  Araghchi was explicit this is not an opening to Washington: "this does
+  not constitute negotiation. We have not yet made a decision to resume
+  negotiations with the US." The US was not party to the talks and
+  opposes any arrangement that restricts free passage.
+  ([Fortune, citing Bloomberg](https://fortune.com/2026/08/15/iran-oman-hormuz-strait-deal-shipping-map-routes-attacks/)) ⟨daily 2026-08-15⟩
+- **Ship attacks kept mounting even as the diplomacy moved: a third
+  ADNOC-operated tanker was struck transiting Hormuz Friday evening — the
+  third UAE state-oil vessel hit in a single week — and UK Maritime Trade
+  Operations reported a bulk carrier struck by an unknown projectile in
+  the strait on Saturday, no injuries in either case.** The UAE called on
+  Iran to cease "unprovoked strikes." A running tally now stands at
+  roughly 65 confirmed shipping incidents and 17 seafarer deaths since
+  the war began.
+  ([CNBC](https://www.cnbc.com/2026/08/15/iran-rebuffs-trumps-claim-over-hormuz-amid-report-of-ship-strike.html), [KSAT/AP](https://www.ksat.com/news/2026/08/15/israeli-strike-kills-7-in-lebanon-a-vessel-attacked-in-hormuz-and-other-news-from-the-middle-east/)) ⟨daily 2026-08-15⟩
+- **Israeli airstrikes killed at least 11 people in southern Lebanon
+  Saturday — 7 in a strike on Ansar village (three children among them),
+  4 more in a strike on Deir al-Zahrani — with Israel's military saying
+  it targeted a Hezbollah battalion commander at a headquarters and
+  alleging the commander's family present were "used as human shields."**
+  Three Israeli soldiers were separately seriously wounded, reportedly by
+  an explosive drone. Netanyahu's spokesman said the strikes are meant to
+  "jumpstart" rather than derail the next US-mediated Israel-Lebanon
+  round, scheduled for early September — a further, distinct widening
+  data point alongside the Hormuz/Gulf theatre this thread already
+  tracks.
+  ([KSAT/AP](https://www.ksat.com/news/2026/08/15/israeli-strike-kills-7-in-lebanon-a-vessel-attacked-in-hormuz-and-other-news-from-the-middle-east/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — UAE blames Iran's IRGC for the tanker attack as "piracy"; Trump says he'll "declare" Hormuz US territory; Bessent previews measures "never before seen"
 
 - **The UAE's Foreign Ministry formally blamed Iran for Thursday

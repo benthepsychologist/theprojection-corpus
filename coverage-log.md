@@ -3020,3 +3020,116 @@ documented since 08-05), not a fresh finding. `semantic_scholar` hit its
 600s lane wall-clock budget and skipped ~169 terms — the accepted,
 by-design cutoff, not an outage. `gdelt` ran through repeated 429
 backoffs but completed cleanly. No other collector errors.
+
+## 2026-08-15 critic pass — finalized 08-14 (three critic-bearing lenses;
+world-news carries none by design)
+
+Run well past the checkable window (digest-day closed 05:00 ET 08-15;
+run started ~10:00 ET, ~5h after close). Three sonnet agents, one per
+critic-bearing lens, each checked 08-14's already-building digest
+against that lens's benchmark set.
+
+### ai / 2026-08-14
+
+**They led with → we missed:** Google's Gemini 3.7 Flash launch (08-13,
+still leading 08-14 coverage; a coding/agent-focused model with a
+50%-off intro price through year-end) — all four benchmarks (TLDR AI,
+The Neuron, The AI Daily Brief, The Rundown AI) had it. OpenAI's
+"Ultrafast" mode for GPT-5.6 Sol (a Cerebras-hardware API tier at 750
+output tokens/sec, first opened to Jane Street/Podium) — TLDR AI, The
+Neuron, The Rundown AI (3 of 4). DeepSeek's V4-Pro release (adjustable
+"thinking levels," steep peak/off-peak price changes) — The Neuron,
+corroborated Caixin/CGTN. OpenAI's "Computer History" Mac-app feature
+(opt-in activity tracking, replacing "Chronicle") — The Neuron, The AI
+Daily Brief. Lower-confidence: Microsoft's quiet 5-year China office/JV
+retreat — The Neuron only.
+
+**Map effect:** none — google, openai, and deepseek are all already
+watchlist entities, and deepseek already sits on the open
+`china-stack-independence` thread. Item-level sweep misses on a day the
+digest was pulled toward the SpaceX/Cursor close and OpenAI IPO-churn
+story, not a map gap.
+
+**Both covered:** SpaceX/Cursor close, OpenAI CRO Denise Dresser's exit,
+Apple's China-specific Alibaba model, Anthropic's multiagent research
+(both sides correctly treated as 08-13 recirculation, not new).
+
+**We had → they didn't:** Zhipu/Z.ai's GLM-5.3-vs-Anthropic-Mythos-5
+cybersecurity claim, Google's watermark opt-out toggle, OpenAI CFO Sarah
+Friar's $40B ARR disclosure, the YMTC v. Micron Lanham Act dismissal,
+Jiahui Yu's Meta departure to found TBD Lab.
+
+**Unverifiable:** The Rundown AI's per-issue dated content — its archive
+page doesn't expose issue dates, so its attributed items above are
+reconstructed from secondary snippets, not a verbatim fetch.
+
+### mental-health / 2026-08-14
+
+**Clean pass — no misses found** across all four benchmarks (BHB via
+Googlebot-UA curl, STAT Health Tech, Fierce Healthcare via homepage,
+MobiHealthNews via the r.jina.ai reader proxy).
+
+**Both covered:** the VA's 20th active psychedelic-therapy clinical
+trial (psilocybin, treatment-resistant depression in veterans) — BHB's
+own lead, also the digest's lead item.
+
+**We had → they didn't:** the Kaiser/NUHW mediation window closing with
+no outcome from either side, and 3 of 4 newly-registered clinical trials
+(MDMA/PTSD, a Singapore TMS trial, a Utah maternal-mental-health AI
+tool, a Michigan postpartum-depression intervention) — expected
+outperformance, trade press doesn't track clinicaltrials.gov
+registrations the way this lens does.
+
+**Map effect:** none — both threads the digest touched
+(`kaiser-ai-clinician-backlash`, `psychedelic-regulatory-sprint`) are
+already tracked.
+
+### global-capital / 2026-08-14
+
+**They led with → we missed:** Applied Materials' fiscal Q3 2026
+earnings (reported after close 08-13, reaction through 08-14) — record
+$9.12B revenue (+25% YoY), an EPS beat, and a guidance raise to $10.25B
+for Q4 vs. $9.55B consensus, driven explicitly by AI chip-equipment
+demand. Covered by Bloomberg same-day, and this repo's own world-news
+crawl had already flagged it as a 6-outlet story — but with no
+watchlist entity, it never reached either the 08-13 or 08-14 digest.
+
+**Map effect:** `+ org global-capital/"Applied Materials"` (critic-add
+2026-08-15) — a semiconductor-capex-chain peer of Nvidia/TSMC/ASML,
+already on this list.
+
+**Both covered:** Silver Lake/Workday take-private (now $51B, Axios's
+08-14 lead — an update on the 08-13 digest item, not new information) ·
+Databricks' $5B round at $190B (Axios's top VC item, already logged
+08-13) · CXMT/China-tech-earnings and Nvidia's $500B financing platform
+(both explicitly logged in the digest header as 08-13 recirculation,
+independently confirmed).
+
+**We had → they didn't:** Berkshire's full Q2 2026 13F read directly off
+SEC EDGAR (Alphabet stake near-doubling, the Delta/D.R. Horton
+rebalancing, the Constellation Brands exit) · AMD's final $4.75B
+bond-pricing tranche detail.
+
+**Unverifiable:** Bloomberg Technology — Cloudflare/CAPTCHA-blocked on
+direct fetch, and (new finding) the r.jina.ai reader proxy that clears
+Axios/MobiHealthNews does NOT clear Bloomberg's block either; fell back
+to WebSearch, which only partially reconstructs "what they led with."
+Money Stuff — no 08-14 edition found; its 08-13 column notes Levine is
+off next week through 08-24, read as verified-likely-absent rather than
+a blocked source.
+
+**Axios Pro Rata: access fix confirmed working.** The r.jina.ai
+reader-proxy fix logged in `sources/benchmarks.yaml` (08-15) held up on
+this pass — full issue text returned, no Cloudflare block.
+
+**Watch, not yet thread-worthy:** FT Unhedged has now run a yen/BOJ-
+intervention theme five times in under two weeks (08-03, 04, 10, 12,
+14), all analyst commentary rather than a discrete event — consistent
+with this digest's existing commentary-filter discipline (cf. Burry's
+warning, logged 08-13 as commentary not an event). Flag only if it
+turns into an actual BOJ/Treasury action.
+
+### Collector note
+
+Full sweep for 08-15 (since the 08-14 ~20:xx ET run) kicked off ahead of
+this critic pass; see the next entry for its results.

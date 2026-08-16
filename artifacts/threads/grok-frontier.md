@@ -13,6 +13,19 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-08-15 — Nvidia's own books show the xAI bet converted into a $21B SpaceX stake
+
+- **Nvidia's Aug-14 13F filing disclosed a $21B SpaceX equity position —
+  Nvidia's second-largest disclosed holding after Intel ($30B) — the
+  visible result of Nvidia's original ~$10B xAI investment converting
+  into SpaceX shares once xAI merged into SpaceX (Feb 2026, logged on
+  this thread's backstory).** Intel and SpaceX together now make up
+  roughly 80% of Nvidia's disclosed public-equity portfolio; the same
+  filing shows Nvidia completely exited its Arm position (selling its
+  1.1M shares). First time this thread has a hard, filed number for what
+  Nvidia's stake in the merged SpaceXAI entity is actually worth today.
+  ([Fortune](https://fortune.com/2026/08/15/nvidia-21-billion-spacex-stake-30-billion-intel-shares/), [Tom's Hardware](https://www.tomshardware.com/tech-industry/nvidia-turns-usd5b-intel-stock-bet-into-usd30b-windfall-filing-reveals-new-usd21b-spacex-stake-and-complete-exit-from-arm-stock)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — Cursor formally folds into "SpaceXAI"
 
 - **SpaceX completed its $60B all-stock acquisition of Cursor

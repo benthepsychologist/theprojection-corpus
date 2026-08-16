@@ -17,6 +17,25 @@ proposes $47B→$29B), contested guidelines on both sides of the Atlantic
 and the NHS Talking Therapies evidence fight (official ~50% recovery vs.
 the placebo-equivalence critique; no independent evaluation ever run).
 
+## 2026-08-15 — A proposed "facts label" standard for AI mental-health apps
+
+- **A seven-researcher team spanning the University of Toronto, NYU, UT
+  Southwestern, and the American Psychiatric Association (co-author
+  Darlene King chairs APA mental-health-IT work) proposed a standardized
+  "facts label" for AI-enabled mental-health technology — an eight-section
+  disclosure covering developer info, intended use, crisis-appropriateness
+  warnings, performance limits, model architecture, clinical-evidence
+  availability, accessibility, and privacy, plain-language for patients
+  with technical detail layered underneath for clinicians.** It's
+  explicitly designed to give practical teeth to transparency rules that
+  already exist on paper — the FDA's Good Machine Learning Practice
+  guidance, NIST's AI Risk Management Framework, the EU AI Act — none of
+  which currently has a mental-health-specific implementation mechanism.
+  The paper's own audit found few recent FDA-cleared AI devices disclose
+  training-data demographics, and that 89% of mental-health apps carry
+  problematic privacy policies.
+  ([Frontiers in Psychiatry](https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-11 — UK launches a £50M mental-health digital-innovation infrastructure programme
 
 - **MHDI (Mental Health Digital Innovation) formally launched, backed by

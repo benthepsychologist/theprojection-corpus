@@ -11,6 +11,22 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-15 — The guarantee is cut in half, and narrowed to phase one
+
+- **Nvidia scaled back its planned OpenAI Ohio data-center guarantee
+  from $250B to under $120B, and now covers only the first phase of the
+  10-gigawatt SB Energy (SoftBank subsidiary) build on DOE land in Pike
+  County rather than the whole project** — the change followed investor
+  pushback over Nvidia's own exposure to the commitment, per WSJ; a deal
+  could be signed "as soon as this weekend." This is the first hard
+  resolution of "the guarantee's actual structure and figure" this
+  thread has tracked since 07-27 — the number has moved $250B (07-28) →
+  up to $750B in combined SK Group + OpenAI talks (08-04) → back down to
+  under $120B for phase one alone (08-15). OpenAI is reportedly still
+  negotiating a binding lease for the full project despite the narrower
+  backstop — the guarantee shrank, the underlying build didn't.
+  ([WSJ via Investing.com](https://www.investing.com/news/company-news/nvidia-cuts-planned-openai-data-center-guarantee-to-below-120-billion--wsj-4861735)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-10 — Nvidia signs MOUs with six asset managers to mobilize $500B+ in third-party financing
 
 - **Nvidia signed MOUs with six of the largest asset managers — Apollo,

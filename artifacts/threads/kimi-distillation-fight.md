@@ -12,6 +12,32 @@ opened: 2026-07-24
 independent verification one way or the other, and whether it chills
 enterprise adoption of Kimi K3's open weights (due 07-27).
 
+## 2026-08-15 — Beijing, not Washington, is what actually derails Moonshot's IPO clock
+
+- **Moonshot converted from a limited-liability company to a joint-stock
+  company in early August and is unwinding the offshore "red-chip"
+  entity it used to raise foreign capital, after Beijing tightened rules
+  barring strategic-tech firms with overseas holding structures from
+  listing abroad.** Reported by the Financial Times (08-08); officials
+  reportedly hardened the policy after Meta's acquisition of Manus AI
+  raised concern about foreign influence over domestic AI firms'
+  governance. Insiders now say a Hong Kong listing is unlikely before
+  2027 unless the restructuring — either overseas investors standing up
+  onshore vehicles, or selling out and rebuying onshore — clears quickly.
+  ([Seoul Economic Daily, citing FT](https://en.sedaily.com/international/2026/08/10/moonshot-ai-overhauls-structure-under-beijing-pressure), [National Technology](https://nationaltechnology.co.uk/Chinas_Moonshot_restructures_in_bid_for_Beijing_approval_of_listing.php)) ⟨daily 2026-08-15⟩
+- **This reverses the trajectory this thread has tracked since 08-03/08-04
+  — Moonshot was chasing a ~$50B Hong Kong listing "as soon as this
+  month" and had opened final pre-IPO talks; the same listing is now
+  pushed out at least a year.** Notably, neither source ties the delay to
+  the Kratsios/Bessent distillation accusation or an Entity List threat —
+  this is Beijing's own capital-control anxiety over foreign ownership of
+  strategic AI IP, a second-order consequence of the same "who controls
+  China's frontier AI" question this thread's *Watch* line is built
+  around, running on a different axis than the US side of the dispute.
+  Moonshot reportedly has ample funding (~$30-50B valuation across two
+  rounds, the second backed by Chinese state funds) to wait out the
+  delay without urgency. ⟨daily 2026-08-15⟩
+
 ## 2026-08-04 — Moonshot opens final pre-IPO talks
 
 - **Opened final pre-IPO funding talks**, targeting up to $50B pre-money

@@ -1,0 +1,12 @@
+source_id: fec
+params:
+  endpoint: https://api.open.fec.gov/v1/filings/
+  since: '2026-08-14'
+  per_page: 25
+  sort: -receipt_date
+  terms_swept: 147
+fetched_at: '2026-08-15T14:03:39Z'
+items:
+- id: fec-img-202608140300358791
+  url: https://docquery.fec.gov/pdf/791/202608140300358791/202608140300358791.pdf
+  ts: '2026-08-14T00:00:00Z'

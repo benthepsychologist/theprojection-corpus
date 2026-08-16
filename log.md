@@ -3675,3 +3675,87 @@ session's `/start`) still hasn't been rechecked — read-only from here,
 but worth a look next session since it's exactly the flag `/start`
 exists to catch. `decart-acquisition-close` stays unresolved (SpaceX
 vs. Anthropic as the real buyer).
+
+## 2026-08-15 — `/daily`: picked up an interrupted finalize pass, curated
+a full day across four lenses, closed two ledger bugs
+
+**Session opened on an interrupted prior run, not a missed day.** `/start`
+found the 08-14 coverage-critic finalize pass complete but uncommitted,
+plus three collector sweeps already run for 08-15 with no digest built.
+The real clock (2026-08-15 20:16 ET) showed 08-15 was still the OPEN
+digest-day (closes 05:00 ET 08-16), not a missed day needing
+reconstruction — so this run refreshed collection for the last ~5 hours,
+then curated 08-15 as a normal `/daily` pass across all four lenses (one
+sonnet agent per lens, dispatched in parallel, per the interim dispatch
+plan). 08-14's finalize work is included in this commit alongside 08-15's.
+
+**Real findings, by lens.** *ai:* Nvidia's own 13F filing put hard numbers
+on holdings that had only been estimated — a $21B SpaceX stake (the
+original ~$10B xAI bet, converted) and a $30B Intel stake, alongside a
+full Arm exit — the same day Nvidia was reported to have cut its planned
+OpenAI Ohio guarantee from $250B to under $120B, phase-one-only. Texas's
+data-center compliance audit produced its first real case; an
+investigative piece reconstructed how OpenAI's Georgia "Camellia" deal
+got made. *global-capital:* Bloomberg quantified the AI-financing
+skepticism Michael Burry raised alone two days ago into a real number —
+~$70B in off-balance-sheet guarantees (Nvidia, Broadcom, Meta), with
+Moody's/DoubleLine/CreditSights now on record with the same concern; two
+interpretations attached (shadow-credit-backstop mechanism, oil's
+rhetoric-vs-incidents divergence). *mental-health:* a quiet, genuinely
+thin Saturday — a proposed AI-app "facts label" disclosure standard, a
+Stockholm RCT finding AI-delivered psychodynamic and CBT therapy produce
+comparable outcomes, and Aetna's softened rate cuts to Alma therapists
+confirmed landing as scheduled. *world-news:* the deadliest day in
+southern Lebanon since the ceasefire (11+ dead), the deepest verified
+Ukrainian strike into Russia this war has logged (650-700km, Savasleyka
+airbase + Samara space center), and a new M7.7 Indonesia earthquake
+(47+ dead) offered once as a thread candidate. No flash on any lens —
+all four checked and declined.
+
+**Two real ledger bugs caught and fixed, both data-integrity, not
+judgment calls.** `grok-4-6-ship` had stood `passed-silent` since 08-11
+even though Grok 4.6 actually shipped 08-12 (confirmed against its own
+thread's timeline) — flipped to `hit`. A duplicate expectation for Ping
+An's H1 2026 results (`pingan-h1-2026-interim-results`, logged 08-15 by
+a crawl that didn't check for the existing entry) was merged into the
+original `ping-an-h1-2026-interim-results`. One new expectation logged:
+`nvidia-openai-guarantee-signing` (due 08-17). One watchlist entity
+added: **Intel** (ai lens — recurring unresolvable reference, confirmed
+by today's own 13F story). Counts at close: **99 threads** (85 open · 12
+developing · 1 resolved · 1 retired, unchanged), **65 expectations** (40
+pending · 19 hit · 6 passed-silent), **168 watchlist entries** (+1,
+Intel). 27 threads got real or ambient `last_seen` bumps today; 8 board
+actors (nvidia, spacex, anthropic, openai, moonshot-ai, intel, broadcom,
+plus xai already current) got their `actor-doing.yaml` synthesis
+refreshed.
+
+**Full pipeline run: rendered, published, and shipped to the public
+site.** `kestrel render-read` rebuilt the artifact read page (1275 KB,
+over the 600 KB soft cap — no degradation mechanism is actually built
+yet despite the ROADMAP note, so this is the same "fine for now"
+condition prior sessions have accepted) and republished it to the
+stable URL. The front + 3 lens briefings were regenerated via the
+readouts pipeline (`--scan`/`--pack`/four parallel sonnet agents/
+`--apply`/`--export` — applied 4, skipped 0) and shipped live via
+`kestrel publish --push`: 99 threads, 65 entities, 3 beat pages, 753
+claim pages, 8 interpretation pages, 603 story pages, 122 map pages,
+committed and pushed to the site repo, Cloudflare build triggered.
+
+**A minor operational note, not a bug:** `build_world_news.py`'s
+`--gdelt-start`/`--gdelt-end` flags want plain `YYYY-MM-DD`, not ISO
+timestamps — passing a timestamp throws a parse error. Also,
+`KESTREL_INSTANCE` now prints a deprecation notice ("prefer an explicit
+`--instance PATH`") on every engine-tool invocation — still works, but
+kestrel's own CLI convention appears to be migrating; worth using
+`--instance` explicitly in future sessions once confirmed this isn't a
+one-off notice.
+
+**Pick up:** the Indonesia M7.7 earthquake thread candidate is waiting
+on Ben's word. `decart-acquisition-close` (due 08-17) and the
+Anthropic-vs-SpaceX buyer question remain unresolved. `/week` is now due
+— today closes out the 08-10–08-16 Mon-Sun week, and Sat/Sun (08-15,
+08-16) need a normal `/daily` pass or `/week` itself to close the week.
+`kestrel`'s own unpushed-commit count is still worth rechecking (last
+known 34, not rechecked since 08-14's `/start`). STATUS.md's top note
+still says "As of 2026-08-14" — due for a `/wrap` refresh, not done in
+this `/daily`-only session.

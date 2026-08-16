@@ -18,6 +18,34 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
+## 2026-08-15 — Bond traders converge on the same concern Burry raised alone two days ago: $70B of "shadow credit backstops"
+
+- **Bloomberg reports bond traders are now pricing roughly $70 billion of
+  off-balance-sheet "residual value" guarantees across the AI buildout —
+  contingent obligations that let a chipmaker or hyperscaler backstop its
+  own customers' financing without the guarantee showing up as a
+  liability on its own books.** Named exposures: Nvidia can backstop up
+  to 25% of its own $500B compute-financing platform (per Jensen Huang
+  directly); Broadcom is backstopping Anthropic's $35B "Big Sky" chip
+  deal; Meta's "Beignet" ($27B) and "Sopaipilla" ($13B) data-center debt
+  deals are cited as the template these newer guarantees are copying.
+  Moody's warned "multiple such transactions over a short period" pose a
+  primary risk to a guarantor's own credit profile; DoubleLine's Mariya
+  Entina called the ratings treatment "gaming the system"; CreditSights
+  called the structure "pro-cyclical" — "nearly costless in the boom
+  phase, but becomes most relevant in a severe, abrupt downturn." The
+  first time this thread has multiple named credit-desk sources
+  converging on the same specific concern Michael Burry raised alone on
+  08-13.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops), [Yahoo Finance, mirror](https://finance.yahoo.com/technology/ai/articles/bond-traders-agonizing-over-70-190000845.html)) ⟨daily 2026-08-15⟩
+- **The same day, `nvidia-vendor-financing` logged Nvidia narrowing its
+  own OpenAI Ohio guarantee from up to $250B in talk to under $120B,
+  phase-one only — the first concrete instance of a backstop actually
+  shrinking rather than growing, even as the aggregate shadow-guarantee
+  figure across the ecosystem (Broadcom, Meta) keeps expanding.** See
+  this digest's interpretation sidecar for the full mechanism read.
+  ⟨daily 2026-08-15⟩
+
 ## 2026-08-13 — The debt shows up one layer up (a chipmaker, not a neocloud), then a named bear case, a cross-hyperscaler cash-flow number, and the first junk-rated print
 
 - **AMD is raising up to $5 billion in its largest-ever dollar bond

@@ -14,6 +14,23 @@ crawled: 2026-07-24
 Anthropic. Live scale, the power/permit constraints, and whether owning the
 mines yields a frontier Grok.
 
+## 2026-08-15 — Congress presses on the turbines as a fourth data center is confirmed
+
+- **A House Energy and Commerce Committee ranking member demanded SpaceXAI
+  turn over records and open Colossus 1/2 to site tours** — Rep. Frank
+  Pallone (D-NJ) wrote CEO Elon Musk saying the unpermitted gas turbines
+  created "a massive health risk," requesting a full turbine list, internal
+  communications, and emissions/power/water documentation by Aug 11.
+  ([CNBC](https://www.cnbc.com/2026/07/29/spacex-memphis-ai-data-centers-face-house-energy-committee-demands.html)) ⟨daily 2026-08-15⟩
+- **Musk confirmed a fourth Memphis-area data center ("Minihard"), sited
+  next to Colossus 2 and Macroharder**, to run 220,000 GB300 GPUs in a
+  denser configuration than the existing sites — while SpaceXAI began
+  removing the 69 unpermitted turbines at the Southaven (Colossus 2) site,
+  to be replaced by a permanent 1.2GW, 41-turbine power plant; removal
+  starts in August and is expected to run through July 2027, so the permit
+  fight resolves on a multi-year clock, not immediately.
+  ([Data Center Dynamics](https://www.datacenterdynamics.com/en/news/musk-confirms-fourth-spacexai-data-center-in-memphis-company-starts-removing-illegal-gas-turbines/)) ⟨daily 2026-08-15⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer) — answering the SpaceXAI Q1 gap the board's

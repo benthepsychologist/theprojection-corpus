@@ -13,6 +13,21 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-15 — California's SB 903 clears its last committee hurdle, closest this thread's tracked bills have come to a floor vote
+
+- **SB 903 — Sen. Steve Padilla's "Wellness and Oversight for Psychological
+  Resources Act," which would bar anyone (including AI) from offering or
+  advertising therapy in California without a licensed professional
+  responsible for the care, and require patient consent before AI is used
+  to record or triage therapy sessions — passed the Assembly Appropriations
+  Committee 13-0 on August 13 and was ordered to third reading.** Having
+  already passed the Senate unanimously in May and cleared two Assembly
+  policy committees, this is the first of the state-level bills this
+  thread tracks to reach the edge of an actual floor vote rather than
+  sitting in committee — a live test of whether the litigation-driven
+  reckoning is about to get a real regulatory pathway to sit alongside it.
+  ([Tech Times](https://www.techtimes.com/articles/324338/20260813/california-ai-bills-face-final-vote-today-chatbot-safety-copyright-us-first-commission.htm), [Transparency Coalition legislative tracker](https://www.transparencycoalition.ai/news/ai-legislative-update-august14-2026)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-13 — A new Character.AI suit lands, naming Google and both co-founders
 
 - **A new federal lawsuit against Character.AI was filed today in the

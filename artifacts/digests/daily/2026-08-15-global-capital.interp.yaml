@@ -1,0 +1,152 @@
+# 2026-08-15-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase. The bullet's <!-- k: ... --> annotation
+# carries interp=yes to point here. Read against capital-context.yaml
+# (asof 2026-08-14) — both entries below extend readings already on
+# file there (rate_regime, conflict_risk_premium) rather than inventing
+# new context.
+
+bond-traders-start-pricing-70-billion-in-off-balance-sheet-ai-shadow-credit-backstops-and-multiple-named-credit-desk-sources-converge-on-the-same-concern-michael-burry-raised-alone-two-days-earlier:
+  mechanism: >
+    Off-balance-sheet residual-value guarantees let asset-heavy AI
+    vendors and hyperscalers keep debt off their own balance sheets by
+    pledging to cover losses if the financed compute assets depreciate
+    faster than expected or the borrowing customer defaults — Nvidia
+    backstopping up to 25% of its own $500B compute-financing platform,
+    Broadcom backstopping Anthropic's $35B "Big Sky" chip deal, Meta's
+    earlier "Beignet"/"Sopaipilla" data-center debt serving as the
+    template both are copying. The guarantee transfers counterparty risk
+    to whichever entity issues it while making the underlying debt look
+    safer to the asset manager or SPV buying it, and — this is the part
+    Moody's flagged specifically — nothing currently aggregates exposure
+    ACROSS guarantors and across "multiple such transactions in a short
+    period" the way a single balance sheet's disclosed liabilities would,
+    so the same $70B compounds concentration risk across the ecosystem
+    without showing up as concentrated anywhere.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The guarantees function as designed through the remainder of the
+        buildout — utilization stays high, no defaults trigger, and the
+        backstops remain the "nearly costless" contingent liabilities
+        CreditSights describes, letting Nvidia, Broadcom and Meta keep
+        financing their own customers at investment-grade-adjacent rates
+        without the guarantees ever converting into real cash outflows.
+      why: >
+        This is the same boom-phase economics every vendor-financing
+        arrangement on this map (the OpenAI guarantee, the Nebius/Naver/
+        Intel/Groq equity ladder) has run on so far, and it holds as long
+        as demand for compute keeps outstripping supply — which every
+        hyperscaler capex commitment this map currently tracks implies
+        through at least 2027.
+      precedent: >
+        Investment-grade equipment lessors and vendor-finance arms have
+        run structurally identical residual-value-guarantee models for
+        decades in stable-demand sectors (aircraft leasing, industrial
+        equipment) without the guarantee ever becoming a live liability,
+        as long as underlying demand growth doesn't stall.
+    - direction: >
+        A downturn — a utilization disappointment, one large customer
+        default, or a sharp capex pullback — triggers several of these
+        guarantees at once, and because they're concentrated in the same
+        underlying compute assets and the same customer base, losses
+        cascade across Nvidia, Broadcom and Meta's balance sheets
+        together rather than diversifying away, the "too interconnected
+        to fail quietly" mechanism SiliconANGLE's Dave Vellante named the
+        same day.
+      why: >
+        Three independent credit-desk voices (Moody's, DoubleLine,
+        CreditSights) converged on the same specific concern in the same
+        week Michael Burry raised it alone — a clustering of skepticism
+        this thread hasn't seen before — and it lands the same day Nvidia
+        itself cut its own OpenAI guarantee in half, at minimum
+        consistent with a guarantor already managing down exposure even
+        as the ecosystem-wide total keeps growing elsewhere.
+      precedent: >
+        Lucent and Nortel both guaranteed billions of dollars in customer
+        telecom-equipment purchases through vendor loans and equity
+        commitments during the late-1990s telecom buildout; when that
+        capex bubble burst in 2000-2001, the guarantees converted from
+        "nearly costless" into write-downs that were a primary driver of
+        both companies' subsequent collapse — the same vendor-financing
+        shape, one sector earlier.
+  context_note: >
+    Reads directly against `ai-buildout-debt-risk`'s own 08-13 entry
+    (Burry naming Nvidia's financing structures "abnormal" and
+    "off-balance-sheet and undisclosed") — this is the first time a
+    mainstream credit-desk source has independently corroborated that
+    specific concern rather than it standing as one bear's view. Also
+    reads against `nvidia-vendor-financing`'s same-day entry: the
+    OpenAI guarantee shrinking is the first concrete instance of a
+    backstop actually contracting, even as the aggregate shadow-
+    guarantee figure across Broadcom and Meta keeps expanding — the two
+    facts don't resolve to a single direction yet. Not currently
+    reflected in any `capital-context.yaml` reading — no field tracks
+    aggregate vendor-guarantee exposure; candidate line for the next
+    /week-adjacent refresh, not a same-day edit.
+
+brent-snaps-its-slide-closing-the-week-up-more-than-5-on-an-indefinite-hormuz-blockade-warning-not-on-any-of-this-weeks-several-tanker-strikes:
+  mechanism: >
+    Oil price this week broke the pattern `capital-context.yaml`'s own
+    `conflict_risk_premium` reading has now documented across two
+    consecutive weekly refreshes (08-09, 08-14): individual attack
+    incidents landing without a matching price spike, because the market
+    has settled into pricing incident risk as a stable, largely-absorbed
+    tail-risk premium rather than a fresh shock each time. An "indefinite"
+    official blockade statement is a different kind of input — a claimed
+    CHANGE in the standing policy regime around Hormuz, not a repeat of a
+    known risk type — so it repriced the curve where a fourth or fifth
+    tanker strike this week did not.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        This week's move fades once the blockade claim is either walked
+        back or shown to have no real enforcement mechanism behind it —
+        Brent gives back some or all of the +5% by mid-next-week, and the
+        broader pattern (rhetoric moving price short-term, physical
+        supply reasserting itself once a claim isn't operationalized)
+        continues.
+      why: >
+        This thread's own record already shows this exact fade-pattern
+        repeating: Trump's "total control" claim (08-13/14) and Bessent's
+        "economic isolation" warning both moved sentiment without moving
+        the fundamentals, and OPEC's own demand-growth downgrades and a
+        large US inventory build kept Brent/WTI FALLING through most of
+        this week's escalation — right up until this specific blockade
+        claim reversed it.
+      precedent: >
+        The 1980s Tanker War (Iran-Iraq, 1984-88) shows the same
+        desensitization curve: early attacks on Gulf shipping spiked oil
+        sharply, but the market's reaction to each subsequent, similar
+        attack shrank over time as physical supply kept flowing despite
+        them — while policy-level escalations (the US reflagging Kuwaiti
+        tankers in 1987, a genuine enforcement-regime change) moved price
+        far more than any single attack did. This week's asymmetry —
+        rhetoric moving price, repeated incidents not — reproduces that
+        same split.
+    - direction: >
+        The blockade claim is the leading edge of an actual US
+        enforcement shift, not just rhetoric, and starts constraining
+        real tanker traffic through Hormuz within days — price keeps
+        climbing through next week rather than fading, because this time
+        the claim is followed by observable interdiction.
+      why: >
+        The claim came from the US directly (not Iran or a proxy) the
+        same week a third ADNOC-operated tanker was struck and the UAE
+        formally blamed Iran's Revolutionary Guard by name — a more
+        charged environment for an actual US enforcement step than at any
+        prior point in this six-month-old war.
+      precedent: >
+        Not yet available on this thread's own record — every prior
+        rhetorical escalation logged here has faded rather than
+        converting into real enforcement, so this scenario is the
+        weaker-precedent side of the two and is held at plausible rather
+        than higher confidence for that reason.
+  context_note: >
+    Extends `capital-context.yaml`'s `conflict_risk_premium` reading,
+    which has tracked the incidents-not-moving-price pattern through two
+    straight weekly refreshes — this week's move is the first case in
+    that reading's own record of price breaking the pattern in the
+    other direction rather than reinforcing it. Not a `/steer` edit;
+    flagged here as a live data point for the next /week-adjacent
+    refresh.

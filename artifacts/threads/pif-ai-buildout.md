@@ -21,6 +21,23 @@ this pass was UAE-only); and reconciliation of `board.yaml`'s $12.5B/yr
 AI thrust figure against this crawl's larger ~$21-23B HUMAIN deal-book
 tally.
 
+## 2026-08-15 — Oxagon's AI-data-center pivot gets a construction timeline
+
+- **NEOM's Oxagon zone — the site the 08-04 entry below flagged as
+  "reportedly re-pivoting toward data centers" — now has a concrete
+  build timeline: developer DataVolt told AGBI (08-05) it expects to
+  break ground on the 1.5GW Oxagon AI data-center campus within two to
+  three months, funded by an initial $5B DataVolt investment, with
+  project financing expected within six months and operations targeted
+  for 2028.** The DataVolt/NEOM agreement itself is not new (signed
+  Feb 2025), but the construction timeline is the first concrete
+  progress marker since this thread opened — direct evidence the
+  capital retreat from "The Line" is in fact re-landing as AI
+  infrastructure spend, the exact question this thread's watch line
+  asks. DataVolt declined to disclose first-phase capacity, customer
+  identities, or contract values.
+  ([AGBI](https://www.agbi.com/tech/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-04 — Opening the thread: the giga-project-to-AI capital pivot, and the deal book behind the board's four named positions ⟨crawl 2026-08-04⟩
 
 - **The headline finding: PIF suspended construction on NEOM's "The

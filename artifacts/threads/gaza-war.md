@@ -39,6 +39,28 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-15 — Two ceasefire violations logged inside 24 hours; the Qusra siege turns on a repair crew
+
+- **The IDF reported two separate incidents it says violate the truce: a
+  tank was struck by a Hamas-planted explosive device near the "Yellow
+  Line" security perimeter (no injuries), and two "terror operatives" who
+  crossed the line "in an attempt to sabotage weapons" were killed by
+  Paratroopers Brigade soldiers.** The military said it views both
+  incidents "gravely" and signaled intent to respond — the first entries
+  this thread has logged of an actual armed clash inside the truce line,
+  rather than a targeted strike or a siege.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-15-2026/)) ⟨daily 2026-08-15⟩
+- **The Qusra siege, now into its second week, escalated to a new target:
+  settlers attacked a Palestinian Authority municipal crew attempting to
+  restore electricity to the two besieged homes, and Israeli forces
+  detained three of the municipal workers.** Footage showed residents
+  blocking a repair tractor from reaching the homes. Separately, a
+  Palestinian nurse was reportedly paralyzed after settlers opened fire
+  near his home on 08-14, and a 16-year-old was injured in a second
+  settler attack the same day — both feeding the same escalating pattern
+  this thread has tracked since the siege began.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-15-2026/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — Kushner heads to Israel/Egypt after Netanyahu's plan rejection; Qusra siege hits day six as Katz moves settler policing to police
 
 - **Jared Kushner, Board of Peace high representative Nickolay Mladenov

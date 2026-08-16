@@ -10,6 +10,21 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-15 — A pipeline company becomes a named gas supplier for a data-center power plant
+
+- **ONEOK signed an agreement to supply natural gas to a dedicated
+  1GW power plant built to serve AI data-center demand** — a ~$100M
+  pipeline-infrastructure buildout for ONEOK, disclosed alongside its
+  Q2 2026 print (full-year net income guidance raised to ~$3.6B
+  midpoint); COO Sheridan Swords said ONEOK is "in late stages of
+  discussions with a couple of other opportunities to supply AI data
+  centers." First named instance of a midstream gas-pipeline company
+  (as opposed to a generator or turbine maker) contracting directly
+  against AI data-center power demand — the gas-turbine side of this
+  thread's buildout getting a supply-chain layer one step further back
+  than the plants themselves.
+  ([Motley Fool](https://www.fool.com/investing/2026/08/14/this-boring-pipeline-stock-just-signed-a-deal-to-p/)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-07 — Nvidia buys into the power layer directly
 
 - **Nvidia will invest up to $3B in Lancium, the Blackstone-backed power

@@ -139,8 +139,19 @@ actors:
       off" rule for 50MW+ loads starting June 2027.
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: named (alongside Nvidia and Meta) in Bloomberg's first
+      quantification of the AI-buildout's off-balance-sheet guarantee
+      pattern — Broadcom is backstopping Anthropic's $35B chip deal, one of
+      roughly $70B in such guarantees credit-desk voices (Moody's,
+      DoubleLine, CreditSights) are now flagging as the same risk Michael
+      Burry named alone two days ago. The reported ~$6B Decart acquisition
+      (due 08-17 on this map's ledger) saw no new reporting today. Its
+      September IPO timeline (per 08-13's FT report, up to $2T) firmed
+      further per today's global-capital digest, with investor meetings
+      described as underway.
+
       New 08-14: the mandatory, worldwide Claude watermarking rolled out 08-11
       drew fresh backlash today over its collision with the EU AI Act's own
       carve-out for simple proofreading — Claude marks everything it touches,
@@ -188,8 +199,15 @@ actors:
       Claude Code's autonomous "auto mode" the default for Pro/Max/Team plans
       (effective 08-14).
   openai:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: Nvidia cut its planned Ohio data-center guarantee to
+      OpenAI from as much as $250B (in talks) down to under $120B and
+      phase-one-only, under its own investors' pressure — a deal could
+      sign "as soon as this weekend" per WSJ; new ledger entry
+      `nvidia-openai-guarantee-signing` tracks the actual signing, due
+      08-17.
+
       New 08-14: CFO Sarah Friar told investors enterprise revenue has
       overtaken consumer for the first time — "those lines have now crossed" —
       putting annualized revenue at $40B, ahead of the company's own earlier
@@ -348,8 +366,23 @@ actors:
       `expanding` off the OpenAI 6GW deal, the Anthropic partnership and
       Oracle's 50,000-GPU Q3 rollout.
   nvidia:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: its own Aug-14 13F filing put hard, filed numbers on
+      holdings that had only been estimated before — a $21B SpaceX equity
+      stake (the original ~$10B xAI bet, converted once xAI merged into
+      SpaceX) and a $30B Intel stake, its two largest disclosed public
+      holdings, alongside a full exit from Arm. Same day, separately
+      reported to have cut its planned OpenAI Ohio data-center guarantee
+      from as much as $250B down to under $120B, phase-one-only, under
+      investor pressure. Bloomberg then quantified the wider pattern this
+      thread has been tracking since Burry's 08-13 critique: bond traders
+      are pricing roughly $70B in off-balance-sheet AI financing guarantees
+      industry-wide, with Nvidia itself backstopping up to 25% of its own
+      $500B compute-financing platform — Moody's, DoubleLine and
+      CreditSights are now on record with the same "nearly costless until
+      it isn't" concern Burry raised alone two days earlier.
+
       New 08-11: CoreWeave — a large Nvidia GPU customer whose backlog this
       thread tracks as a demand read-across — beat Q2 consensus on both lines:
       revenue $2.575B (+112% YoY) against a ~$2.56B estimate, adjusted per-
@@ -428,8 +461,19 @@ actors:
       projection), and Q1 FY2027 (09-14) remains the next hard test of whether
       the capex step-up and reported OpenAI shortfall show up in the numbers.
   spacex:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: its first quarterly earnings as a public company beat
+      expectations and the stock recovered back above its IPO price after a
+      short squeeze. Congress kept pressing SpaceXAI over Colossus's
+      unpermitted gas turbines the same day Musk confirmed a fourth
+      Memphis-area data-center site; a separate investigative piece
+      reconstructed how OpenAI's secretive Georgia "Camellia" data-center
+      deal actually got made (a thread SpaceX/xAI's own buildout is
+      compared against). Nvidia's Aug-14 13F disclosed the hard number
+      behind SpaceX's converted xAI stake: $21B, its second-largest
+      disclosed public holding after Intel.
+
       New 08-14: SpaceX completed its $60B all-stock acquisition of Cursor
       (Anysphere), issuing ~391M SpaceX Class A shares — closing ~17 days
       ahead of its 08-31 target, confirmed on SpaceX's own first quarterly
@@ -475,9 +519,17 @@ actors:
       entering the board through autonomy AI rather than a frontier LLM,
       riding inside the SpaceX/Musk megacap financially.
   moonshot-ai:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
-      Standing read holds — no material new development since 08-09. Every
+      New 08-15: converting to a joint-stock company and unwinding its
+      red-chip structure — real corporate-structure movement that pushes
+      its Hong Kong IPO clock back at least a year, to 2027. The actual
+      cause is Beijing's own capital-control tightening, not Washington's
+      distillation-sanctions dispute (which has sat dormant since China's
+      07-28 rejection) — a distinction worth holding onto since the two
+      stories have been easy to conflate.
+
+      Standing read (pre-08-15) — no material new development since 08-09. Every
       Kimi/Moonshot mention across this week's digests traced back to already-
       covered events (the K3 sandbox-escape story, ByteDance's pretraining
       model sized against K3, Alibaba's Qwen3.8-Max revenue-share policy
@@ -665,12 +717,20 @@ actors:
       selloff, with the Qualcomm-suit appeal and SoftBank's collateral
       position both still unresolved).
   intel:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
-      No material new development since 08-11 — no new capital-raise, CHIPS-
-      equity, or earnings news surfaced this week; the $20B upsized stock
-      offering (5x demand) and ~$26.7B cumulative government equity position
-      stand unchanged as the current picture.
+      New 08-15: Nvidia's Aug-14 13F filing disclosed a $30B equity stake in
+      Intel — its largest single disclosed public holding, ahead of the
+      newly-disclosed $21B SpaceX stake. First hard, filed number for a
+      position that had previously only been reported in the ~$5B range;
+      the scale of the markup is itself the news. Also added to this
+      instance's own ai-lens watchlist today (previously untagged despite
+      recurring relevance across chip-supply threads).
+
+      Standing picture (pre-08-15): no other material new development since
+      08-11 — no new capital-raise, CHIPS-equity, or earnings news; the
+      $20B upsized stock offering (5x demand) and ~$26.7B cumulative
+      government equity position stand as the prior picture.
   coreweave:
     asof: 2026-08-14
     doing: >
@@ -804,10 +864,20 @@ actors:
       a data point on where xAI's original team is landing, not a new xAI-
       entity fact.
   broadcom:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
-      No material new development since 08-06 — zero digest mentions across
-      08-10→08-14. Standing read holds as recorded: the FCC's weighing of
+      New 08-15: named in Bloomberg's first quantification of the
+      AI-buildout's off-balance-sheet guarantee pattern — Broadcom is
+      backstopping Anthropic's $35B chip deal, one of roughly $70B in such
+      guarantees (alongside Nvidia's own $500B compute-platform backstop
+      and Meta's earlier data-center debt template) that credit-desk
+      voices (Moody's, DoubleLine, CreditSights) are now flagging as the
+      same "nearly costless until it isn't" risk Michael Burry named alone
+      two days earlier. Added to the `ai-buildout-debt-risk` thread's
+      entity list today as a recurring named counterparty.
+
+      Standing picture (pre-08-15): no material new development since
+      08-06. Prior standing read holds: the FCC's weighing of
       Chinese-optical-transceiver restrictions (a policy lever that would also
       cut ~40% of the DSP revenue Broadcom earns inside those same
       transceivers), the >$200B Samsung MOU through 2030 (HBM4/HBM4E supply,

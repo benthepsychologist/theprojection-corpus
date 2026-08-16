@@ -54,6 +54,10 @@ lenses:
       # Compute / silicon / infra
       - "Nvidia"
       - "Broadcom"
+      - "Intel"      # curate-add 2026-08-15 — recurring unresolvable reference:
+                     # Nvidia's Q2 13F disclosed a $30B stake in Intel same day,
+                     # and Intel recurs across chip-supply/foundry threads with
+                     # no entity slug to tag it
       - "TSMC"
       - "ASML"       # ben-steer 2026-07-27 (W3 — sole EUV supplier, boarded same day)
       - "SK Hynix"   # board.yaml resource-layer — ben-steer 2026-07-24 (memory squeeze)
@@ -474,6 +478,18 @@ lenses:
         # CoreWeave's $6B platform commitment + $1B equity stake, and a
         # $2.25B bond guarantor role (08-14) — three appearances with no
         # watchlist entry.
+      - term: "Applied Materials"
+        entity: applied-materials
+        name: "Applied Materials"
+        # auto-added 2026-08-15 (critic): fiscal Q3 2026 earnings (reported
+        # after close 08-13, market reaction through 08-14) — record $9.12B
+        # revenue (+25% YoY), EPS beat, and a guidance raise to $10.25B for
+        # Q4 vs. $9.55B consensus, driven explicitly by AI chip-equipment
+        # demand. Bloomberg Technology led with it 08-14 and this repo's own
+        # world-news crawl had already flagged it as a 6-outlet story
+        # (attention/world-news.yaml), but with no watchlist entity it never
+        # reached either the 08-13 or 08-14 digest. Semiconductor-capex-chain
+        # peer of Nvidia/TSMC/ASML already on this list.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

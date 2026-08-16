@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-14
-status: building
+status: final
 window_start: 2026-08-14T05:00:00-04:00
-as_of: 2026-08-14T17:30:00-04:00
-coverage: pending
+as_of: 2026-08-15T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-14
@@ -150,3 +150,23 @@ through today closes with no outcome posted by either side, echoing the
 same silence that closed the mediation's opening day. Yesterday's two big
 stories — SB 903's resolution and the Acton, Massachusetts case — both
 went quiet, with nothing new to report on either.
+
+## Appendix — Coverage check vs. benchmarks
+
+**Clean pass — no misses found** across all four daily benchmarks
+(Behavioral Health Business via Googlebot-UA curl, STAT Health Tech,
+Fierce Healthcare via homepage, MobiHealthNews via the r.jina.ai reader
+proxy).
+
+**Both covered:** the VA's 20th active psychedelic-therapy clinical
+trial — BHB's own lead, also this digest's lead item.
+
+**We had → they didn't:** the Kaiser/NUHW mediation window closing with
+no outcome, and 3 of 4 newly-registered clinical trials (MDMA/PTSD, a
+Singapore TMS trial, a Utah maternal-mental-health AI tool, a Michigan
+postpartum-depression intervention) — expected outperformance; trade
+press doesn't track clinicaltrials.gov registrations the way this lens
+does.
+
+No map effect — both threads touched today are already tracked. Full
+detail in `coverage-log.md`'s 2026-08-15 entry.

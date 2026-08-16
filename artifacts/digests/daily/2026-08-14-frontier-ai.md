@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-14
-status: building
+status: final
 window_start: 2026-08-14T05:00:00-04:00
-as_of: 2026-08-14T16:30:00-04:00
-coverage: pending
+as_of: 2026-08-15T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-14
@@ -253,3 +253,28 @@ foreign company Beijing has cleared to deploy proprietary AI there.
 Google rounded out the day by letting users turn off its visible AI
 watermarks, a pointed contrast to Anthropic taking backlash for the
 opposite choice just yesterday.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Google's Gemini 3.7 Flash launch (08-13,
+still leading 08-14 coverage; coding/agent-focused, 50%-off intro price
+through year-end) — all four benchmarks (TLDR AI, The Neuron, The AI
+Daily Brief, The Rundown AI) had it. OpenAI's "Ultrafast" mode for
+GPT-5.6 Sol (Cerebras-hardware API tier, 750 output tokens/sec, first
+opened to Jane Street/Podium) — 3 of 4. DeepSeek's V4-Pro release
+(adjustable "thinking levels," steep price changes) — The Neuron,
+corroborated Caixin/CGTN. OpenAI's "Computer History" Mac-app feature —
+The Neuron, The AI Daily Brief. Lower-confidence: Microsoft's quiet
+5-year China office/JV retreat — The Neuron only.
+
+**Both covered:** SpaceX/Cursor close, OpenAI CRO Denise Dresser's exit,
+Apple's China-specific Alibaba model, Anthropic's multiagent research
+(both correctly read as 08-13 recirculation, not new).
+
+**We had → they didn't:** Zhipu/Z.ai's GLM-5.3-vs-Anthropic-Mythos-5
+claim, Google's watermark opt-out toggle, OpenAI CFO Sarah Friar's $40B
+ARR disclosure, the YMTC v. Micron dismissal, Jiahui Yu's Meta departure
+to found TBD Lab.
+
+No map effect — google/openai/deepseek are already-tracked entities;
+full detail in `coverage-log.md`'s 2026-08-15 entry.

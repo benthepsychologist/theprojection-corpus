@@ -12,6 +12,20 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-15 — The timeline firms from "chatter" to a concrete September target, with investor meetings already underway
+
+- **WSJ reports Anthropic is targeting a September or early-October
+  Nasdaq listing, ahead of OpenAI, and is already holding investor
+  meetings where prospective backers are pressing on cheaper Chinese AI
+  models, tensions with the Trump administration, and local opposition
+  to data-center construction.** A materially more advanced stage than
+  this thread's own 07-30 entry, which described the same idea as
+  "chatter" the company was showing "cold feet" on. Confidential S-1
+  remains filed since 06-01; the ~$965B-$1T valuation range from 07-30
+  is referenced as unchanged in this report, distinct from the
+  $2T-plus investor-target figure logged below on 08-13.
+  ([Investing.com/WSJ](https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-13 — Investors reportedly target a $2T-plus October valuation, and a separate $6B acquisition is in talks
 
 - **Anthropic's own investors are reportedly targeting a $2 trillion

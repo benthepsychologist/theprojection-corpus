@@ -394,8 +394,31 @@ expectations:
     # NOT reclassified as `slipped`: on the 08-04 SpaceX earnings call Musk
     # moved to "probably next week" (an 08-10→08-16 window), but a slip needs
     # an actual announced date and continued vagueness is not one.
-    status: passed-silent
-    resolved: 2026-08-11
+    # 2026-08-15 ⟨daily, ledger-integrity fix⟩: CORRECTED — this had stood
+    # passed-silent since 08-11, but Grok 4.6 actually shipped 2026-08-12
+    # (Unite.AI, TechTimes; see thread grok-frontier's 08-12 timeline entry:
+    # "Grok 4.6 ships, reversing the 08-07 miss" — new flagship for
+    # long-running agent tasks, 61 on the Artificial Analysis Intelligence
+    # Index, live same day in Cursor/Grok Build/API). The passed-silent flip
+    # was correct AT THE TIME (nothing had shipped by the 08-07 due date, and
+    # the 3-day grace ran out before the 08-12 ship), but the ledger never
+    # got reopened once the model actually shipped five days later — found
+    # while cross-checking this entry against the thread's own timeline
+    # during today's curation. Flipping to hit, old date to slips.
+    slips: [2026-08-07]
+    due: 2026-08-12
+    status: hit
+    resolved: 2026-08-12
+    evidence: >
+      Grok 4.6 shipped 2026-08-12 — new flagship built for long-running
+      agent tasks with mid-task self-review; scored 61 on the Artificial
+      Analysis Intelligence Index (matching GPT-5.6 Sol, within a point of
+      Claude Fable 5); priced at $2/$6 per million input/output tokens,
+      roughly half of rival frontier pricing; live same day in Cursor,
+      xAI's own "Grok Build," and via API. Sources: Unite.AI
+      (unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/),
+      TechTimes (techtimes.com/articles/324156/20260812/
+      grok-46-arrives-spacex-claims-all-employee-work-ai-training-material.htm).
 
   - id: grok-4-7-ship
     claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24)"
@@ -1203,7 +1226,16 @@ expectations:
     # slips.
     due: 2026-08-15
     slips: [2026-07-15]
-    status: pending
+    status: passed-silent
+    # 2026-08-15 ⟨daily⟩: checked same-day. Every source findable
+    # (matthewryanlcsw.com's writeup, BHBusiness, the APA Services letter)
+    # was written BEFORE 08-15 describing what was scheduled to happen —
+    # none confirms what actually happened today. ClearHealthCosts'
+    # corroborating piece 403'd on direct fetch. No article dated 08-15 or
+    # later found confirming Aetna implemented the softened cuts as
+    # scheduled, paused further under APA pressure, or drew a new formal
+    # complaint. Flipping to passed-silent same-day since due<=today and no
+    # evidence either way; 3-day grace stays open for trade-press lag.
     evidence: >
       Partial rollback confirmed 07-08: Aetna dropped the two biggest
       proposed cuts (session-length and E&M-complexity code
@@ -1339,8 +1371,19 @@ expectations:
     # — neither has posted anything dated past 07-27/07-02. Logged pending
     # rather than resolved on first sight; the normal 3-day passed-silent
     # grace applies on the next check.
+    # 2026-08-15 ⟨daily⟩: second check, same result. Kaiser's labor-relations
+    # hub's newest dated item is 08-11 ("NUHW Bargaining Next Steps") and only
+    # restates the pre-mediation framing ("Mediation is the best path to
+    # contract resolution"); NUHW's own site's newest post is still 07-27.
+    # Neither party's channel has posted a resolution, extension, or
+    # breakdown readout. (One search false-positive worth logging: two
+    # WebSearch summaries surfaced what looked like an 08-14 outcome with a
+    # follow-up session "Tuesday, September 30" — both pages, fetched
+    # directly, turned out dated August 2025, a prior bargaining cycle, not
+    # this year's.) Flipping to passed-silent; 3-day grace continues watching
+    # for a late readout.
     slips: []
-    status: pending
+    status: passed-silent
 
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
@@ -1428,7 +1471,20 @@ expectations:
     what_confirms: "the interim results announcement itself, ideally with an AI-contribution disclosure"
     logged: 2026-08-04
     logged_by: crawl
+    # 2026-08-15 ⟨daily, ledger-integrity fix⟩: MERGED a duplicate entry,
+    # `pingan-h1-2026-interim-results` (logged 2026-08-15 via a tier-2
+    # China-chip-stack-cluster crawl that didn't check for this existing
+    # entry first — same underlying event, a different due date, 08-20 vs
+    # this entry's 08-18). Kept this entry (more specific: distinguishes
+    # the subsidiary board-meeting date from the unconfirmed group-level
+    # date) and folded the duplicate's 08-20 date in as a secondary
+    # data point below rather than tracking both as separate claims.
     status: pending
+    note: >
+      A second, less specific sourcing pass (2026-08-15, pingan.com) named
+      2026-08-20 for "Ping An reports H1 2026 interim results" without
+      distinguishing subsidiary vs. group level — kept here as a secondary
+      date to watch if 08-18 passes without the group-level release.
 
   - id: compass-psilocybin-nda
     claim: "COMPASS Pathways files its psilocybin (COMP360) NDA for treatment-resistant depression — targeted Q4 2026, on an FDA National Priority Voucher compressing review to 1-2 months; Commissioner Makary has floated an approval decision by late 2026"
@@ -1554,3 +1610,44 @@ expectations:
     evidence: >
       SpaceX completed the $60B all-stock Cursor (Anysphere) acquisition
       2026-08-14 (Bloomberg; SpaceX 8-K).
+
+  - id: pif-oxagon-groundbreaking
+    claim: "DataVolt breaks ground on the 1.5GW Oxagon AI campus (NEOM), per its own 2-3 month timeline stated 2026-08-05"
+    due: 2026-11-05
+    due_precision: month
+    thread: pif-ai-buildout
+    entities: [pif]
+    source: https://www.agbi.com/
+    confidence: reported
+    what_confirms: "a dated groundbreaking/construction-start report from DataVolt, NEOM, or AGBI/Reuters coverage"
+    logged: 2026-08-15
+    logged_by: crawl   # tier-2 deep check, AI financing/IPO cluster
+    slips: []
+    status: pending
+
+  - id: pif-oxagon-financing-close
+    claim: "DataVolt's Oxagon 1.5GW AI campus financing closes (initial $5B DataVolt investment, per its own 6-month timeline stated 2026-08-05)"
+    due: 2027-02-05
+    due_precision: month
+    thread: pif-ai-buildout
+    entities: [pif]
+    source: https://www.agbi.com/
+    confidence: reported
+    what_confirms: "a dated financing-close report from DataVolt, NEOM, or AGBI/Reuters coverage"
+    logged: 2026-08-15
+    logged_by: crawl   # tier-2 deep check, AI financing/IPO cluster
+    slips: []
+    status: pending
+
+  - id: nvidia-openai-guarantee-signing
+    claim: "Nvidia and OpenAI sign the narrowed (<$120B, phase-1-only) Ohio data-center guarantee"
+    due: 2026-08-17
+    due_precision: week
+    thread: nvidia-vendor-financing
+    entities: [nvidia, openai]
+    source: https://www.investing.com/news/company-news/nvidia-cuts-planned-openai-data-center-guarantee-to-below-120-billion--wsj-4861735
+    confidence: reported
+    what_confirms: "an actual signed agreement announced by either company — WSJ reported a deal 'could be signed as soon as this weekend'"
+    logged: 2026-08-15
+    logged_by: curate-add
+    status: pending

@@ -5,6 +5,34 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-15 — Israeli strikes kill 11 in Lebanon's deadliest day since the ceasefire, after a Hezbollah drone wounds three IDF soldiers; Israel shells the besieged Ali al-Taher ridge
+
+- **Israeli airstrikes killed at least 11 people in southern Lebanon
+  Saturday — 7 in a strike on Ansar village (including three children),
+  4 more in a strike on Deir al-Zahrani, with 19 wounded across both
+  sites — the deadliest single day of Israeli strikes in Lebanon since
+  the ceasefire.** The sequence began when a Hezbollah-launched explosive
+  drone severely wounded three IDF soldiers; Israel's military said it
+  struck a Hezbollah headquarters in response, targeting a battalion
+  commander it holds responsible, and said it discovered the commander's
+  family present only after the strike — Netanyahu's office called it
+  Hezbollah using "human shields." Hezbollah called the strikes a
+  "massacre," vowed an "appropriate" response, and urged Lebanese
+  authorities to halt "humiliating" negotiations with Israel. A
+  Netanyahu spokesman separately said the strikes are meant to
+  "jumpstart," not derail, the next US-mediated round of talks — still
+  aiming for early September — while also telling reporters Israel wants
+  "more serious" talks going forward.
+  ([AP via KSAT](https://www.ksat.com/news/2026/08/15/israeli-strike-kills-7-in-lebanon-a-vessel-attacked-in-hormuz-and-other-news-from-the-middle-east/), [Haaretz liveblog](https://www.haaretz.com/israel-news/israel-security/2026-08-15/ty-article-live/yemen-government-says-houthi-missiles-kill-four-civilians-in-port-city/000001a0-036c-d337-a7f0-ffecc3e90004), [France24](https://www.france24.com/en/middle-east/20260815-middle-east-live-trump-threatens-us-takeover-of-hormuz-as-iran-vows-to-retain-control)) ⟨daily 2026-08-15⟩
+- **Separately, Israeli forces shelled the besieged Ali al-Taher ridge —
+  where roughly 40 Hezbollah fighters have been trapped in a tunnel
+  network since earlier in the week (logged 08-14) — with artillery,
+  machine-gun fire and phosphorus shells,** per Hezbollah-affiliated Al
+  Mayadeen. Read together with the Ansar/Deir al-Zahrani strikes, this is
+  the sharpest combat escalation this thread has logged since it opened,
+  even as both sides say they still want the diplomatic track to hold.
+  ([Haaretz liveblog](https://www.haaretz.com/israel-news/israel-security/2026-08-15/ty-article-live/yemen-government-says-houthi-missiles-kill-four-civilians-in-port-city/000001a0-036c-d337-a7f0-ffecc3e90004)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — Qassem rejects the Rome-talks framework as Israel reportedly awaits a US green light to seize Ali al-Taher, where ~40 Hezbollah fighters are besieged
 
 - **Hezbollah Secretary-General Naim Qassem rejected the Lebanese

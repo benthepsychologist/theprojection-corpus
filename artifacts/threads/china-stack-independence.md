@@ -13,6 +13,21 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-15 — Qwen becomes the most-downloaded open-weight model family, ahead of Google and Meta combined
+
+- **Alibaba's Qwen family passed 3 billion cumulative downloads across
+  460+ open-sourced model variants, more than Google's ~418 million and
+  Meta's ~227 million combined — making Qwen the most-downloaded
+  open-weight model family in the world, per Hugging Face's "state of
+  open models" report.** The Qwen ecosystem has spawned 300,000+
+  derivative fine-tunes; Alibaba distributes it through its own cloud
+  platform into Southeast Asia and Africa, a reach US open-weight
+  competitors mostly lack. First hard usage-share data point this thread
+  has on China's stack winning adoption outside China, distinct from the
+  benchmark-parity claims (Zhipu/GLM-5.3, 08-14 below) this thread has
+  tracked so far.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google), [Business Standard](https://www.business-standard.com/world-news/alibaba-s-qwen-ai-models-cross-3-billion-downloads-overtake-meta-google-126081501092_1.html)) ⟨daily 2026-08-15⟩
+
 ## 2026-08-14 — Zhipu claims a cybersecurity edge on Anthropic's own restricted model; Apple becomes the first foreign firm cleared to run its own model in China
 
 - **Zhipu (Z.ai) launched GLM-5.3, claiming it edges out Anthropic's

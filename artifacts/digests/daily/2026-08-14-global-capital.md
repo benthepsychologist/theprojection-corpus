@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-14
-status: building
+status: final
 window_start: 2026-08-14T05:00:00-04:00
-as_of: 2026-08-14T16:45:00-04:00
-coverage: pending
+as_of: 2026-08-15T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-14
@@ -158,3 +158,31 @@ circulating — Anthropic's $2 trillion IPO chatter, CXMT's new-most-
 valuable-in-China status, Kevin Warsh commentary — with oil ticking back
 up slightly on Thursday night's tanker attack but nothing sharp enough to
 call a new event.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Applied Materials' fiscal Q3 2026
+earnings (reported after close 08-13, reaction through 08-14) — record
+$9.12B revenue (+25% YoY), an EPS beat, and a guidance raise to $10.25B
+for Q4 vs. $9.55B consensus, driven explicitly by AI chip-equipment
+demand. Bloomberg covered it same-day; this repo's own world-news crawl
+had already flagged it as a 6-outlet story, but with no watchlist entity
+it never reached the digest.
+
+**Map effect:** `+ org global-capital/"Applied Materials"` (critic-add
+2026-08-15) — semiconductor-capex-chain peer of Nvidia/TSMC/ASML.
+
+**Both covered:** Silver Lake/Workday take-private (now $51B — an update
+on the 08-13 digest item) · Databricks' $5B round at $190B (already
+logged 08-13) · CXMT/China-tech-earnings and Nvidia's $500B financing
+platform (both logged as 08-13 recirculation, independently confirmed).
+
+**We had → they didn't:** Berkshire's full Q2 13F read off SEC EDGAR ·
+AMD's final $4.75B bond-pricing tranche detail.
+
+**Unverifiable:** Bloomberg Technology — Cloudflare/CAPTCHA-blocked, and
+the r.jina.ai reader proxy that clears Axios/MobiHealthNews does not
+clear Bloomberg's block either. Money Stuff — no 08-14 edition found;
+Levine is off through 08-24 per his 08-13 column.
+
+Full detail in `coverage-log.md`'s 2026-08-15 entry.
