@@ -17,8 +17,25 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-08-14
+asof: 2026-08-15
 
+# Refresh run 2026-08-15 (/week step 4b, partial week 08-10–08-15): all 5
+# collectors re-run against an explicit --since 2026-08-14 window.
+# treasury_tic/bis_stats/imf_data: zero items, real successful API calls
+# (confirmed via provenance), same real-world lag as every prior week —
+# none has released a new figure since the last refresh. epfr_flows:
+# 36 Global Navigator entries seen, 3 keyword-matched, ZERO published
+# since the 08-14 cutoff (confirmed via provenance `items: []`) — no new
+# issue this week. fund_flow_reports: STILL EMPTY, etf.com's Cloudflare
+# challenge confirmed again, same bot-wall as every check since
+# 2026-07-30. `rate_regime` and `conflict_risk_premium` updated from this
+# week's real `/daily`/`/week` findings (Friday's retail-sales/consumer-
+# sentiment miss, the AI-financing shadow-credit-backstop story, the
+# Hormuz shipping-map agreement, Israel-Lebanon's deadliest day since the
+# ceasefire) rather than a fresh collector run — those two readings are
+# fed by the news sweep, not the 5 macro collectors, per this file's own
+# `basis` fields.
+#
 # Refresh run 2026-08-14 (/week step 4b, partial week 08-10–08-14): all 5
 # collectors re-run against an explicit --since 2026-08-09 window.
 # treasury_tic/bis_stats/imf_data: zero items again, real successful API
@@ -105,8 +122,19 @@ readings:
       September rate-hike probability sat around 30.4% as of 08-14,
       pricing in the softer data without fully discounting a hike. The
       Lisa Cook removal fight's 08-26 deadline has not yet resolved.
-    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the Lisa Cook removal fight (radar Q7)"
+      FRIDAY (08-15): two more data points landed on the cooling side of
+      the ledger, not yet reflected in the September-hike probability
+      above (still 30.4% as of Thursday). July retail sales fell 0.6%
+      against a forecast +0.1% gain, and preliminary August consumer
+      sentiment cratered to 51.0, its weakest reading since the 2024
+      election — both consistent with the jobs/PPI/claims data already
+      cooling into 09-16, not a new signal on their own.
+    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the 08-15 retail-sales/consumer-sentiment prints + the Lisa Cook removal fight (radar Q7)"
     sources:
+      - figure: "Retail sales -0.6% m/m vs +0.1% forecast; consumer sentiment 51.0, weakest since 2024 election"
+        label: "Census Bureau retail sales + preliminary UMich consumer sentiment, 2026-08-15"
+        url: "https://www.census.gov/retail/sales.html"
+        as_of: "2026-08-15"
       - figure: "3.50%-3.75%, 9-3 vote"
         label: "Federal Reserve press release, 2026-07-29"
         url: "https://www.federalreserve.gov/newsevents/pressreleases/monetary20260729a.htm"
@@ -131,7 +159,7 @@ readings:
         label: "Bloomberg, 2026-08-13"
         url: "https://www.bloomberg.com/news/articles/2026-08-13/us-braces-for-30-year-bond-auction-at-highest-yield-since-2001"
         as_of: "2026-08-13"
-    as_of: "2026-08-14"
+    as_of: "2026-08-15"
 
   cross_border_credit:
     value: >
@@ -254,7 +282,21 @@ readings:
       seen — the same day Hezbollah's Qassem publicly rejected the
       Rome-talks framework. Underwriting layer (war-risk insurance 3-10%
       of hull value vs. ~0.25% pre-war) unchanged, no new check found.
-    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, partial week 08-10-08-14)"
+      FRIDAY/SATURDAY (08-14–08-15): the falling-oil pattern broke for
+      the first time all week. Brent closed the week up more than 5% not
+      on any physical incident but on the US floating an "indefinite"
+      Hormuz blockade — the first time this reading's own tracked pattern
+      (rhetoric/incidents up, oil down on fundamentals) reversed. A third
+      ADNOC tanker was hit the same week. Iran and Oman announced a
+      partial "shipping map" agreement over the weekend — real forward
+      movement, but explicitly short of the tracked interim deal's own
+      terms (60-day no-toll window, dual transit lanes, mine-clearing);
+      `upcoming.yaml`'s `iran-oman-hormuz-deal-signing` stays pending, due
+      08-19. Israel-Lebanon turned genuinely deadlier: Israeli strikes on
+      two Lebanese villages killed at least 11 — the deadliest single day
+      since the ceasefire — after a Hezbollah drone attack severely
+      wounded three IDF soldiers.
+    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, partial week 08-10-08-15)"
     sources:
       - figure: "Six-condition Hormuz reopening demand, separated from Oman talks"
         label: "Punch NG, 2026-08-09, citing IRGC statement"
@@ -276,4 +318,12 @@ readings:
         label: "oilprice.com / tradingeconomics.com, 2026-08-13/14"
         url: "https://tradingeconomics.com/commodity/brent-crude-oil"
         as_of: "2026-08-14"
-    as_of: "2026-08-14"
+      - figure: "Brent closes week up 5%+ on \"indefinite\" Hormuz blockade rhetoric, not a physical incident — pattern reversal"
+        label: "CNBC, 2026-08-14"
+        url: "https://www.cnbc.com/2026/08/14/oil-prices-today-brent-wti-hormuz.html"
+        as_of: "2026-08-14"
+      - figure: "Israeli strikes on two Lebanese villages kill 11+, deadliest day since the ceasefire"
+        label: "world-news weekly digest, 2026-08-15"
+        url: "https://www.timesofisrael.com/liveblog-august-15-2026/"
+        as_of: "2026-08-15"
+    as_of: "2026-08-15"

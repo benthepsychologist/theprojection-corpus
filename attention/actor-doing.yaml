@@ -244,8 +244,20 @@ actors:
       confirmed. Settled DOJ claims ($3.2M) over H-1B hiring — a distinct
       labor-law matter.
   meta-ai:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: named as the template, not a new party, in Bloomberg's
+      first quantification of ~$70B in off-balance-sheet AI financing
+      guarantees industry-wide — Meta's earlier "Beignet" ($27B) and
+      "Sopaipilla" ($13B) data-center debt deals are cited as the pattern
+      Nvidia (backstopping up to 25% of its own $500B compute-financing
+      platform) and Broadcom (backstopping Anthropic's $35B chip deal) are
+      now copying. Moody's, DoubleLine and CreditSights are on record with
+      the same "costless until it isn't" concern Michael Burry raised
+      about the wider loop two days earlier — Meta's own two deals aren't
+      newly scrutinized here, but the reporting places them as the
+      structure's origin point.
+
       New 08-14: Jiahui Yu — a lead researcher on Meta's
       multimodal/superintelligence team (Muse Spark, Voice Mode, Muse Image,
       Muse Video) and a marquee 2025 hire poached from OpenAI — announced he
@@ -564,8 +576,19 @@ actors:
       build, and the paused-vs-not distinction on its capital raises (a $74B
       round paused, a separate ~$7B raise at ~$50B still proceeding).
   alibaba-qwen:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: Qwen's open-weight family passed 3 billion cumulative
+      downloads across 460+ variants — more than Google's ~418M and Meta's
+      ~227M open-weight downloads combined — per Hugging Face's "state of
+      open models" report, with 300,000+ derivative fine-tunes and
+      distribution into Southeast Asia/Africa through Alibaba's own cloud
+      that most US open-weight competitors lack. First hard usage-share
+      number this map has on China's stack winning real adoption outside
+      China, distinct from the benchmark-parity claims (Zhipu's GLM-5.3 vs.
+      Anthropic's Mythos 5, 08-14) the china-stack-independence thread has
+      tracked so far.
+
       New 08-12→08-14: Qwen3.8-Max's open weights landed on Hugging Face 08-12
       (2.4T total/~95B active MoE, 1M-token context), resolving the "due
       ~08-10" flag on the prior entry after a brief slip, paired with the
@@ -644,8 +667,24 @@ actors:
       08-14, unresolved. The Moonshot distillation-sanctions fight with China
       remains dormant since Commerce's 07-28 rejection.
   china:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      New 08-15: the stack-independence story got its first real usage-share
+      number rather than another benchmark claim — Alibaba's Qwen family
+      passed 3 billion cumulative open-weight downloads (460+ variants,
+      300,000+ derivative fine-tunes), more than Google and Meta's
+      open-weight downloads combined, per Hugging Face, with distribution
+      into Southeast Asia and Africa most US open-weight competitors lack.
+      Separately, Moonshot's Hong Kong IPO clock (targeted "as soon as this
+      month" per 08-03 reporting) slipped to unlikely-before-2027 — the
+      cause is Beijing's own capital-control tightening (converting to a
+      joint-stock company, unwinding the offshore "red-chip" structure used
+      to raise foreign capital, after Beijing hardened rules on strategic-
+      tech firms with overseas holding structures, reportedly sharpened
+      further after Meta's Manus AI acquisition raised foreign-influence
+      concerns) rather than Washington's distillation-sanctions dispute,
+      which stays dormant since China's 07-28 rejection.
+
       New 08-10→08-14: the stack-independence story broadened from models into
       a capital-markets and industrial-policy story with real numbers
       attached. Memory chipmakers now anchor it — CXMT overtook Tencent
@@ -787,8 +826,23 @@ actors:
       sheet — quarter-end NAV ¥72.3T vs a pro-forma mark of ¥58.3T (~19% cut).
       Cash fell ¥3.5T→¥2.3T; loan-to-value steady at 13% (25% cap).
   cxmt:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The week's clearest single data point for how
+      completely the AI buildout has repriced Chinese semiconductor names —
+      CXMT overtook Tencent as China's most valuable listed company (08-13,
+      ~$524B vs. Tencent's ~$510B) just 17 days after its 07-27 STAR Market
+      IPO, boosted by MSCI adding the stock to its China All Shares Index
+      (effective 08-10). The supply-lock story that explains why CXMT can
+      hold price held all week: Huawei/Xiaomi's high-level output lock-up,
+      Apple's rebuffed discount push and separately-reported re-testing of
+      CXMT chips, and the bipartisan Senate letter demanding Apple commit to
+      never use CXMT/YMTC memory (reply due 08-21) all stand unresolved. No
+      08-15-specific development beyond continued no-movement on the Senate
+      deadline. Board-pass note: `commanded_capital`'s "market cap ~$85B"
+      annotation is now six-fold stale against the ~$524B mark — flagged in
+      this pass's BOARD PASS PROPOSALS, not corrected here (no write access).
+
       New 08-13: CXMT overtook Tencent to become China's most valuable listed
       company — a market cap of roughly $524B against Tencent's ~$510B (down
       26%+ this year despite rising AI spending) — just 17 days after its
@@ -811,8 +865,22 @@ actors:
       without matching DRAM. Overhangs unchanged: a possible US DoD ban and
       the three-year HBM deficit it's racing into.
   blackrock:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The week opened with BlackRock joining five
+      other managers (Apollo, Blackstone, Brookfield, Goldman Sachs, KKR) on
+      Nvidia's $500B+ MOU cohort to mobilize third-party AI-compute capital
+      (08-10), and closed with the first named, specific external pushback on
+      that exact platform — Michael Burry calling it a source of "abnormal,"
+      circularly-financed credit structures (08-13). Bloomberg's 08-15
+      quantification of ~$70B in off-balance-sheet AI-buildout guarantees
+      (Nvidia, Broadcom, Meta) is the same concern generalized by named
+      credit-desk voices (Moody's, DoubleLine, CreditSights), but doesn't
+      itself name BlackRock as a guarantor — it's the environment the MOU
+      exposes it to, not a new BlackRock-specific liability. No further
+      BlackRock-specific move after 08-13; standing infrastructure picture
+      (GIP/Aligned, El Paso bond, Barcelona terminal withdrawal) unchanged.
+
       New 08-13: Michael Burry escalated from general AI-boom skepticism to a
       named critique of the specific platform BlackRock joined — calling
       Nvidia's $500B+ Wall Street financing platform (with Apollo, Blackstone,
@@ -836,8 +904,21 @@ actors:
       arm converting fiduciary scale into physical-infrastructure ownership,
       with Aladdin's systemic footprint still unpriced.
   xai:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The busiest actor in this half of the board
+      this week. Product shipped for real (Grok 4.6 on 08-12, reversing the
+      prior "missed its own deadline" read; Grok Bot beta on 08-11; Grok 4.7
+      teased 08-13 for a ~08-21 target), and the corporate merge into
+      SpaceXAI closed with SpaceX's $60B all-stock Cursor acquisition
+      (08-14). New 08-15: Nvidia's own SEC 13F filing put a hard number on
+      what Nvidia's original ~$10B xAI investment is worth now that it
+      converted into SpaceX equity when xAI merged into SpaceX in February —
+      a $21B disclosed SpaceX stake, second only to Nvidia's $30B Intel
+      position, filed alongside a full Nvidia exit from Arm. Litigation
+      unchanged: the Minnesota "nudify"-ban injunction hearing stays set for
+      08-19, DOJ's Southaven Clean Air Act intervention stands as recorded.
+
       New 08-11→08-14: the standing picture flips on two fronts at once. Grok
       4.6 actually shipped 08-12 — reversing the 08-07/08-08 read that it
       missed its own "two weeks" target — built for long-running agent tasks
@@ -866,6 +947,20 @@ actors:
   broadcom:
     asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): A quiet structural week (no move since 08-06)
+      that closed with the week's single sharpest Broadcom-specific
+      development — 08-15's Bloomberg reporting named Broadcom as one of
+      three counterparties (with Nvidia and Meta) backstopping roughly $70B
+      of off-balance-sheet AI-buildout guarantees, specifically its $35B
+      chip-deal backstop for Anthropic, drawing on-record concern from
+      Moody's, DoubleLine and CreditSights that echoes Michael Burry's
+      08-13 solo warning. That's now a named, recurring entity on the
+      `ai-buildout-debt-risk` thread rather than a one-off mention. Every
+      other structural fact — the FCC's Chinese-optical-transceiver review
+      (~40% of Broadcom's transceiver DSP revenue exposed), the >$200B
+      Samsung MOU through 2030, the five-major ASIC co-design book, the
+      Tesco VMware suit — is unchanged across the full 08-10→08-15 window.
+
       New 08-15: named in Bloomberg's first quantification of the
       AI-buildout's off-balance-sheet guarantee pattern — Broadcom is
       backstopping Anthropic's $35B chip deal, one of roughly $70B in such
@@ -886,8 +981,14 @@ actors:
       the ongoing Tesco VMware-licensing suit (>£100M) are all unchanged this
       week.
   qualcomm:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15) — standing picture holds. The only appearance in this
+      week's coverage was as a comparison point in Samsung's own 08-12 story
+      (Samsung sizing its Claude-Code chip-design push against Qualcomm's
+      ~52,000-person System LSI workforce), not a Qualcomm-side move.
+
       No Qualcomm-specific development since 08-05 — the only mention across
       this week's digests was Samsung citing Qualcomm's ~52,000-person System
       LSI chip workforce as the scale it's racing against with AI tooling
@@ -897,8 +998,22 @@ actors:
       Chris Lattner, and the BMW automotive-compute deal all stand as last
       recorded.
   samsung:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The week's headline was Samsung's own
+      operational AI story rather than a chips-supply move — its System LSI
+      division disclosed (08-12) deploying Anthropic's Claude Code in
+      semiconductor design, cutting one SoC verification workflow from over
+      a month to two days (~15x, some tasks up to 30x), explicitly framed
+      as competing against Qualcomm's ~52,000-person System LSI headcount
+      with Samsung's own ~6,000 — with real caveats (engineers still review
+      output; some cases of the AI altering error messages or modifying
+      design code without authorization). No further development after
+      08-12; the structural picture (Hwaseong NAND-to-DRAM conversion, AMEC
+      equipment-testing hedge, ~70% of memory output locked to 5 major
+      customers through 2028, the ~$200B Broadcom MOU, the Aug-21 Senate
+      CXMT/YMTC deadline for Apple) is unchanged across 08-10→08-15.
+
       New 08-12: Samsung's System LSI chip division disclosed deploying
       Anthropic's Claude Code in semiconductor design, cutting one SoC
       verification workflow from over a month down to two days (~15x, with
@@ -921,8 +1036,22 @@ actors:
       bipartisan Senate letter giving Apple an Aug-21 deadline over CXMT/YMTC
       memory sourcing.
   sk-hynix:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No new structural development this week —
+      the only movement was a +8% intraday price pop (08-13, alongside
+      Micron +6%, SanDisk +15%) explicitly read as CoreWeave's earnings
+      validating the memory-demand "monetization phase" story, flagged
+      in-digest as price action only. The standing structural picture
+      (recorded 08-07 — ~55% HBM share, first through Nvidia's HBM4
+      qualification, an all-time-record but consensus-missing Q2 operating
+      profit of ₩60.5426T/+557% YoY that still triggered a -9.61% close and
+      a second KOSPI circuit breaker, the AMEC equipment-testing hedge, the
+      early-stage Chongqing packaging-plant stake-sale talks) is unchanged
+      across the full 08-10→08-15 window. Board-pass note: that Q2 print
+      post-dates the board's 07-25 axes derivation and hasn't been rolled
+      into `axes_num` — flagged in BOARD PASS PROPOSALS.
+
       New 08-13: SK Hynix ran +8% intraday (alongside Micron +6%, SanDisk
       +15%) as CoreWeave's earnings read as the 'monetization phase'
       validation Wall Street wanted for the memory-demand story — flagged in-
@@ -934,8 +1063,24 @@ actors:
       and a second KOSPI circuit breaker, the AMEC equipment-testing hedge,
       and the early-stage Chongqing packaging-plant stake-sale talks.
   micron:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): Two developments this week, both favorable
+      but secondary to the standing structural picture: a US judge dismissed
+      (08-14) YMTC's Lanham Act suit against Micron and PR firm DCI Group
+      over 2021-22 "China Tech Threat" messaging, ruling the statements
+      protected political speech rather than commercial false advertising
+      (the separate 3D NAND patent fight running since Nov 2023 continues
+      untouched); and Micron ran +6% intraday (08-13) on the same
+      memory-demand optimism lifting SK Hynix and SanDisk, price action
+      only. The structural picture (recorded 08-05 — the fully-booked 2027
+      DRAM market behind CXMT's failed Apple bid, HBM4 reinstatement into
+      Vera Rubin's early slots, the trio's best print at Q3 FY26 $41.5B
+      revenue/84.6% gross margin, the $200B US buildout as the only
+      US-based DRAM maker) is unchanged across 08-10→08-15. Board-pass
+      note: that Q3 print also post-dates the board's 07-25 axes
+      derivation — see BOARD PASS PROPOSALS.
+
       New 08-14: a US judge dismissed YMTC's Lanham Act suit against Micron
       and PR firm DCI Group over 2021-22 "China Tech Threat" messaging that
       linked YMTC's chips to military espionage — the court ruled the
@@ -956,8 +1101,17 @@ actors:
       margin, guiding $50B), and is funding a $200B US buildout (NY megafab,
       Idaho, $6.1B CHIPS) as the only US-based DRAM maker.
   unitedhealth-group:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15) — confirmed against the `payer-ai-claim-denial` thread,
+      which moved twice this window (CVS 08-05, Aetna/Alma 08-15) but not on
+      a UnitedHealth-specific item. Standing picture unchanged since 07-28:
+      "virtually everything" runs through AI per the Q2 call, a 96%
+      first-pass prior-auth approval claim, and a federal court's
+      broad-discovery order proceeding over nH Predict's alleged ~90%
+      appeal-reversal rate.
+
       No new development since 07-28 — no digest mentions across 08-10→08-14
       and no update to the payer-ai-claim-denial thread (last_seen 08-05)
       beyond what's already recorded. Standing read holds: AI runs "virtually
@@ -965,8 +1119,24 @@ actors:
       claim, the same quarter a federal court's broad-discovery order proceeds
       over nH Predict's alleged ~90% appeal-reversal rate.
   cvs-health:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The one open thread item from last week's
+      Q2 print resolved this week — Aetna's reimbursement cuts to
+      Alma-contracted behavioral-health therapists took effect 08-15 as
+      scheduled, after a partial July rollback that dropped the two most
+      aggressive original proposals (collapsing the 90837/90834 codes into
+      one rate, flattening pay across license levels). What actually landed
+      is real and state-specific: New York therapists lose 10.6% on a
+      60-minute session and 9.7% on intake, New Jersey loses 15.2%/16.8% on
+      the same codes, 30-minute sessions untouched everywhere. Neither Aetna
+      nor Alma issued a formal announcement — confirmed instead via a
+      practice-management blog's published rate tables. Otherwise the 08-05
+      Q2 standing picture holds: FY26 guidance raised (adj. EPS $7.90-8.10,
+      revenue >=$414B), Aetna operating income up >$2B YoY behind the
+      2nd-gen "Aetna Claims Assist Manager" tool, 1M pharmacist hours
+      redirected to clinical care, stock still soft on the 2027 EPS floor.
+
       No new development since the 08-05 Q2 print — no digest mentions across
       08-10→08-14. Standing read holds: FY26 guidance raised (adj. EPS
       $7.90-$8.10, revenue >=$414B), Aetna operating income up >$2B YoY behind
@@ -977,8 +1147,17 @@ actors:
       item, tracked in upcoming.yaml as due 08-15 with no outcome confirmed
       either way.
   cigna:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15) — the `payer-ai-claim-denial` thread it shares with
+      four other payers moved twice this window (CVS 08-05, Aetna/Alma
+      08-15) but neither touches Cigna specifically. Standing picture
+      unchanged: the $100M bet on Evernorth's Pharmacy Forward AI program
+      (claimed $200M in customer savings over three years), the PXDX
+      mass-denial algorithm with no fresh 2026 developments, Evernorth
+      Behavioral still dark.
+
       No new development since 07-28 — no digest mentions across 08-10→08-14
       and no update to the payer-ai-claim-denial thread (last_seen 08-05)
       specific to Cigna. Standing read holds: the $100M bet on Evernorth's
@@ -986,8 +1165,16 @@ actors:
       three years), the PXDX mass-denial algorithm with no fresh 2026
       developments, and Evernorth Behavioral still dark.
   elevance-health:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15), re-checked through today's digests and the
+      `payer-ai-claim-denial` thread, which moved on CVS (08-05) and
+      Aetna/Alma (08-15) but not on any Elevance-specific item. Standing
+      picture unchanged: Carelon re-led (new co-chiefs over 90M consumers,
+      03-31), ABA/SUD cost targeting, the BH "ghost network"
+      network-adequacy class action a court let proceed (04-01).
+
       Checked threads.yaml and all five daily digests through 08-14 — no new
       Elevance-specific development this week; the payer-ai-claim-denial
       thread it anchors last moved 08-05 on an unrelated CVS Health entity
@@ -996,16 +1183,38 @@ actors:
       targeting, and the BH 'ghost network' network-adequacy class action a
       court let proceed (04-01).
   humana:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15) — re-checked through today's digests and the
+      `payer-ai-claim-denial` thread, still nothing Humana-specific beyond
+      its background exposure (nH Predict AI-denial suit, WISeR prior-auth
+      fight, OIG MA-denial report). Standing read holds: the thinnest actor
+      in the payer wave, a dedicated crawl still the recommended next step.
+
       Checked threads.yaml and all five daily digests through 08-14 — still
       nothing Humana-specific beyond the background nH Predict AI-denial suit
       and its exposure via the payer-ai-claim-denial thread (WISeR prior-auth
       fight, OIG MA-denial report). Standing read holds unchanged: the
       thinnest actor in the wave, dedicated crawl still recommended.
   kaiser-permanente:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): The NUHW mediation, this actor's live thread
+      all week, ended in silence on both dates that mattered — the 08-11
+      start date resolved `passed-silent` (checked three times that day
+      against both parties' channels), and the stated "August 11 to 14"
+      window's close also passed with no outcome from either side, confirmed
+      again by a direct 08-15 check finding nothing new. The three sticking
+      points (AI-replacement language for the E-Visit triage tool,
+      layoffs/outsourcing, sole clinical-model discretion) remain
+      unresolved. This dispute has 2025 precedent for a mediation round
+      going quiet mid-stream, so the silence itself is being tracked, not
+      assumed benign. The clearest same-company AI-contrast on the board
+      continues to hold: labor conflict over AI in BH triage alongside AI
+      Kaiser ships successfully elsewhere (MRI waits cut up to 60%,
+      mammography risk AI).
+
       Kaiser's own stated mediation window with NUHW ("August 11 to 14")
       reached its scheduled close today with still no public outcome from
       either party — checked directly against both channels. A new dated-
@@ -1029,8 +1238,18 @@ actors:
       thin single-source claim that the surveillance complaint spread to
       advice-line nurses (WSWS 07-21) — needs a second source.
   hca-healthcare:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week
+      (08-10→08-15) — the `hca-healthcare` thread is still last_seen 08-04.
+      Standing picture unchanged: six AI initiatives live at 130+ hospitals
+      (Timpani staffing/scheduling with Palantir, Google-built Nurse
+      Handoff, ambient documentation, GE HealthCare maternal-fetal
+      integration), labor friction earlier-stage than Kaiser's (one NUHW
+      protest, 04-18, no complaint or strike), the securities-fraud probe
+      confirmed unrelated to AI, and "AI" still absent from HCA's own Q2
+      2026 10-Q.
+
       Checked threads.yaml (hca-healthcare thread still last_seen 08-04) and
       this week's digests — no new HCA-specific development since the 08-04
       crawl. Standing read holds unchanged: six AI initiatives live at 130+
@@ -1041,8 +1260,18 @@ actors:
       confirmed unrelated to AI, and "AI" still absent from HCA's own Q2 2026
       10-Q.
   state-street:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week — the
+      third consecutive check (2026-08-09, 08-14, and now 08-15) to find
+      State Street genuinely quiet. Standing read holds unchanged: no dated
+      2026 infrastructure deal even in its alternatives/infra arm; its only
+      real AI story remains internal (State Street Alpha's generative-AI
+      features competing with BlackRock's Aladdin) — selling AI tooling, not
+      investing in AI. Board-pass note: three straight quiet checks with no
+      posture field set at all in board.yaml — a `dormant` candidate; see
+      BOARD PASS PROPOSALS.
+
       Re-checked against threads.yaml and this week's digests — still
       genuinely quiet, confirming the 2026-08-09 radar note. Standing read
       holds unchanged: no dated 2026 infrastructure deal even in its
@@ -1050,8 +1279,18 @@ actors:
       Street Alpha's generative-AI features competing with BlackRock's
       Aladdin) — selling AI tooling, not investing in AI.
   vanguard:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week — the
+      third consecutive check (2026-08-09, 08-14, and now 08-15) to find
+      Vanguard genuinely quiet. Standing read holds unchanged: the most
+      extreme passive/no-discretionary-capital case among the Big Four
+      (client-owned at-cost mutual, ~$0 owned); no new dated item beyond the
+      04-09 "Expert Insights" internal AI portfolio-analysis tool for
+      advisors. Board-pass note: three straight quiet checks with no
+      posture field set at all in board.yaml — a `dormant` candidate; see
+      BOARD PASS PROPOSALS.
+
       Re-checked against threads.yaml and this week's digests — still
       genuinely quiet, confirming the 2026-08-09 radar note. Standing read
       holds unchanged: the most extreme passive/no-discretionary-capital case
@@ -1059,8 +1298,18 @@ actors:
       dated item beyond the 04-09 "Expert Insights" internal AI portfolio-
       analysis tool for advisors.
   china-life:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week — the
+      third consecutive check (2026-08-09, 08-14, and now 08-15) to find
+      China Life genuinely quiet. Standing read holds unchanged: a
+      customer-service chatbot and two consumer AI tools in HK/Macau, no
+      underwriting/claims-automation story like Ping An's — the most
+      state-directed, least insurtech-ambitious of the seven insurance-
+      pocket actors. Board-pass note: three straight quiet checks with no
+      posture field set at all in board.yaml — a `dormant` candidate; see
+      BOARD PASS PROPOSALS.
+
       Re-checked against threads.yaml and this week's digests — still
       genuinely quiet, confirming the 2026-08-09 radar note. Standing read
       holds unchanged: a customer-service chatbot and two consumer AI tools in
@@ -1068,16 +1317,33 @@ actors:
       most state-directed, least insurtech-ambitious of the seven insurance-
       pocket actors.
   prudential-financial:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week — the
+      third consecutive check (2026-08-09, 08-14, and now 08-15) to find
+      Prudential genuinely quiet. Standing read holds unchanged: real facts
+      (260+ AI use cases, a Chief Data and AI Officer) but no distinct
+      narrative — no controversy, no regulatory friction, no standout
+      number. Board-pass note: three straight quiet checks with no posture
+      field set at all in board.yaml — a `dormant` candidate; see BOARD
+      PASS PROPOSALS.
+
       Re-checked against threads.yaml and this week's digests — still
       genuinely quiet, confirming the 2026-08-09 radar note. Standing read
       holds unchanged: real facts (260+ AI use cases, a Chief Data and AI
       Officer) but no distinct narrative — no controversy, no regulatory
       friction, no standout number.
   metlife:
-    asof: 2026-08-14
+    asof: 2026-08-15
     doing: >
+      week 2026-08-10 (/week): No material new development this week — the
+      third consecutive check (2026-08-09, 08-14, and now 08-15) to find
+      MetLife genuinely quiet. Standing read holds unchanged: same pattern
+      as Prudential — a CFO cost-savings quote, an internal AI platform, a
+      responsible-AI policy page, nothing with a hook. Board-pass note:
+      three straight quiet checks with no posture field set at all in
+      board.yaml — a `dormant` candidate; see BOARD PASS PROPOSALS.
+
       Re-checked against threads.yaml and this week's digests — still
       genuinely quiet, confirming the 2026-08-09 radar note. Standing read
       holds unchanged: same pattern as Prudential — a CFO cost-savings quote,

@@ -3759,3 +3759,95 @@ Anthropic-vs-SpaceX buyer question remain unresolved. `/week` is now due
 known 34, not rechecked since 08-14's `/start`). STATUS.md's top note
 still says "As of 2026-08-14" — due for a `/wrap` refresh, not done in
 this `/daily`-only session.
+
+## 2026-08-15 (continued) — `/week`: weekly synthesis (week_of 08-10,
+partial through Saturday), a real board pass, capital-context refresh,
+11 stale expectations pruned
+
+Closed out the Mon–Sat portion of the 2026-08-10 week (Sunday 08-16
+hadn't opened yet in digest-day terms when this ran). One sonnet agent
+per lens rewrote each weekly digest against `radar.md`'s open questions
+(Q1–Q7), two more split the board pass and `actor-doing.yaml` refresh
+across roughly half the 92-org roster each, dispatched in parallel per
+the interim dispatch plan.
+
+**Radar working notes.** New dated paragraphs applied to all seven
+questions: Q1 (the board frame outrunning the ledger — SpaceX/xAI closed
+the Cursor deal, Nvidia's 13F quantified its own converted xAI stake at
+$21B), Q2 (a new entry — the first week written primarily from
+global-capital's own data, money landing at every AI-stack layer at
+once), Q3 (an APA-affiliated "facts label" transparency proposal, a
+Stockholm RCT on AI-delivered therapy), Q4 (a second Kaiser/NUHW silent
+outcome on the same dispute), Q5 (DeepSeek's own price hike as the first
+supply-side ceiling on capability compounding), Q6 (Aetna's softened
+rate cut landing exactly as scheduled, with real numbers), Q7 (Nvidia
+cutting its own OpenAI Ohio guarantee by more than half the same day
+Bloomberg quantified ~$70B in shadow-credit-backstops — the platform
+architect visibly hedging its own exposure). World-news carries no radar
+question of its own; its weekly digest covers the six live conflict
+threads' arcs directly.
+
+**Board pass — 7 actors moved to `posture: dormant`** (classify
+provenance, 2026-08-15): `arm`, `mistral-ai` (both genuinely quiet, no
+live thread), and five insurance/capital actors — `state-street`,
+`vanguard`, `china-life`, `prudential-financial`, `metlife` — confirmed
+quiet on three consecutive `/week` passes (08-09, 08-14, 08-15) with no
+posture field previously set. One stale prose annotation corrected:
+`cxmt`'s `commanded_capital` still cited a ~$85B market cap six-fold
+stale against its real ~$524B mark (it overtook Tencent 08-13). Two
+axis-staleness flags surfaced but NOT corrected this pass, left for a
+dedicated numeric re-derivation: Nvidia's `thrust` figure predates its
+own 13F disclosing $51B across two stakes (Intel + SpaceX) that were
+previously bundled into a rougher $27B four-company estimate; SK Hynix's
+and Micron's `axes_num` predate both companies' record Q2/Q3 earnings
+prints. `actor-doing.yaml` refreshed for all 45 tracked actors — 11 with
+real new weekly content, the rest reconfirmed with one-line "no material
+change" notes rather than skipped.
+
+**Expectations ledger: pruned 11 entries resolved before this closing
+week** (already recorded in the 08-03 weekly digests — nothing lost).
+Counts at close: **99 threads** (unchanged — 85 open · 12 developing · 1
+resolved · 1 retired), **54 expectations** (40 pending · 10 hit · 4
+passed-silent, down from 65 pre-prune), **168 watchlist entries**
+(unchanged since this morning's `/daily`).
+
+**Capital-context refresh:** all 5 macro collectors re-run — Treasury
+TIC/BIS/IMF confirmed zero new releases (real lag, not access failures);
+EPFR saw 36 candidate entries, 0 published since the last cutoff;
+`fund_flow_reports` still fully blocked by etf.com's Cloudflare
+challenge, unchanged since 2026-07-30. `rate_regime` and
+`conflict_risk_premium` updated from this week's real news-sweep
+findings (Friday's weak retail-sales/consumer-sentiment prints; oil's
+first pattern-break of the week, closing +5% on blockade rhetoric rather
+than any incident; Israel-Lebanon's deadliest day since the ceasefire).
+
+**Axios Pro Rata's access fix confirmed holding** — one live test so far
+(the 08-14 critic pass), flagged in radar.md's Q7 note for a one-time
+re-check next week before calling it permanently closed.
+
+**Decay review: 30 threads stale (>10 days), zero resolve/retire
+proposals with real evidence** — matches the 08-14 run's own finding (27
+reviewed, 26 kept) and the standing [[decay-review-not-retirement-queue]]
+rule. One carryover from last week: `alan-into-canada` still carries an
+unanswered resolve/retire proposal from a prior `/week`, repeated rather
+than newly confirmed — sitting with Ben.
+
+Re-rendered and republished the read page (weekly synthesis panel now
+covers 2026-08-10 through 08-15) and ran `kestrel publish --push` so
+`/map/`'s board pages reflect the new dormant postures and refreshed
+actor synthesis.
+
+**Pick up:** Sunday (08-16) still needs a normal `/daily` pass to close
+the week out fully. `decart-acquisition-close` (due 08-17) and the
+Anthropic-vs-SpaceX buyer question remain unresolved.
+`nvidia-openai-guarantee-signing` (due 08-17) is new since this morning.
+Two open decisions sitting with Ben: `alan-into-canada`'s resolve/retire
+proposal (carried two weeks now), and whether to re-derive Nvidia's/SK
+Hynix's/Micron's stale `axes_num` figures against this week's hard
+disclosures. A recurring `last_seen`-write-back gap was flagged again
+this week (three different threads this time — `oracle-stargate-bet`,
+`coreweave-backlog-bet`, `intel-rescue` — after two others self-corrected
+from last week's flag) — worth a structural look at the write-back
+mechanism itself rather than another per-thread patch next week.
+STATUS.md's top note is now three sessions stale (still "As of
+2026-08-14") — due for a `/wrap` refresh.

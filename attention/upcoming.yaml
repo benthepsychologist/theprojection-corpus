@@ -24,6 +24,16 @@
 # tracking forward, and radar.md's Q1 08-04 working note already records
 # the full finding (the filing was a real, well-covered 06-01 company
 # announcement this map initially mis-logged as a thin rumor).
+#
+# Pruned 2026-08-15 (/week step 2, week_of 2026-08-10): 11 entries
+# resolved before this closing week and already recorded in the 08-03
+# weekly digests — gov-review-framework-announce, eo14409-deadlines
+# (both passed-silent 08-05), spacex-q2-earnings, spacex-insider-unlock,
+# softbank-q1-earnings, eu-ceuta-ministers-meeting,
+# senate-commerce-kids-ai-markup, ism-services-cook-0805,
+# amd-q2-2026-earnings, cvs-q2-2026-earnings, globalfoundries-q2-2026-
+# earnings (all hit, resolved 08-04–08-06). Nothing lost — each week's
+# own weekly digest already carries the finding.
 
 expectations:
 
@@ -40,88 +50,6 @@ expectations:
     logged_by: curate-add
     status: pending
 
-  - id: gov-review-framework-announce
-    claim: "White House announces the 30-day voluntary pre-release review framework (participants: OpenAI, Anthropic, Google AND Meta)"
-    due: 2026-08-04    # slipped from 08-01 (see slips + 08-03 comment)
-    due_precision: day
-    thread: frontier-model-gov-review-precedent
-    entities: [openai, anthropic, google, meta]
-    source: https://www.buildfastwithai.com/blogs/ai-news-today-july-21-2026
-    confidence: reported
-    what_confirms: "official announcement naming participants and the 30-day term"
-    logged: 2026-07-22
-    logged_by: curate-add
-    # 2026-08-01 ⟨daily⟩: the by-date arrived with NO announcement. 3-day
-    # retro-flip grace runs to 2026-08-04 before this stands.
-    # 2026-08-03 ⟨daily⟩: RE-OPENED before the grace stood. Within the grace
-    # window, new evidence surfaced that the framework is not silent but
-    # moving: the White House (Office of the National Cyber Director, Sean
-    # Cairncross) will present the "finalized" Sec. 3(b) framework to
-    # staff-level reps from OpenAI, Google and Anthropic TUESDAY 08-04 — the
-    # last day of this very grace window. The Information reports "the policy
-    # has been finalized"; a WH official would not say whether it is already
-    # in effect, and NOTHING is public (no Federal Register notice, no NIST/
-    # CISA/OSTP publication — independently reconfirmed 08-03). So this is a
-    # SLIP to a concrete new date, not a silent stand: an off-record staff
-    # meeting is not the "official announcement naming participants and the
-    # 30-day term" that confirms this. 08-01 pushed to slips; due -> 08-04;
-    # status -> pending. Watch 08-04 for whether anything actually publishes.
-    # 2026-08-04 ⟨daily, overnight extension pass⟩: CLAIM REWRITTEN, not
-    # flipped. The claim's "(Meta excluded)" premise — carried from the
-    # 07-21 source since this entry was logged — is FALSIFIED. SiliconANGLE
-    # (08-03 19:41 ET) names the invitees as Anthropic, OpenAI, Google AND
-    # Meta Platforms. Claim text + entities updated; Meta added. Same
-    # handling as the eu-ai-act-code-of-practice rewrite: the entry's own
-    # what_confirms caught that what we were waiting to confirm was not
-    # quite the thing that was true. Status UNCHANGED (pending) — the
-    # rewrite corrects the premise, it does not satisfy what_confirms.
-    # Still no announcement as of 05:40 ET: whitehouse.gov and
-    # federalregister.gov both checked directly, nothing AI-framework
-    # specific. The framework is described as still a DRAFT the labs will
-    # "review" — not final terms handed down. The meeting itself is a
-    # DC-business-day event and cannot resolve before this run's window
-    # closed. Re-check after ~14:00 ET today.
-    # 2026-08-05 ⟨daily⟩: RESOLVED, and not by a slip — by a deliberate
-    # non-disclosure decision. The 08-04 meeting happened (roughly a dozen
-    # companies: OpenAI, Anthropic, Google, Meta, Microsoft, Nvidia, and
-    # smaller labs). But per Fortune (08-04), the White House told
-    # attendees it has NO PLANS to publicly release the framework at all —
-    # it stays known only to the companies invited to review it, and it is
-    # UNCLEAR even to attendees whether it is finalized or still in
-    # progress. Attendees floated a possible follow-up session rather than
-    # closing the process out. CFR's Chris McGuire, on record: "We can't
-    # have secret, voluntary rules to regulate the most important tech in
-    # the world." federalregister.gov re-confirmed clean (only the original
-    # EO 14409 page). This is the loud outcome the passed-silent status
-    # exists for — not "nothing happened," but "the government chose not
-    # to make this public, and said so." Marking passed-silent rather than
-    # hit: the tracked claim ("White House announces the framework") did
-    # not occur and there is now direct evidence it is not intended to.
-    slips: [2026-08-01]
-    status: passed-silent
-    resolved: 2026-08-05
-    evidence: >
-      Presented to labs 08-04, and the White House told them directly it
-      has no plans to publish the framework at all (Fortune, Axios, CNN —
-      see 08-05 comment above). ORIGINAL 08-01 passed-silent finding,
-      retained: the 08-01 by-date passed with no announcement. Checked
-      whitehouse.gov
-      directly: the only frontier-AI action published there remains the
-      original EO 14409 page (2026-06-02) — no successor press release, fact
-      sheet, or briefing-room post naming participants or the 30-day term.
-      As of 07-29 the framework was still a DRAFT circulated to OpenAI,
-      Anthropic and Google, who had jointly submitted revisions, with core
-      disputes unresolved over the definition of "frontier model" and
-      open-source exemptions (CNBC 07-29, Digitimes 07-29). Altman's
-      reported meeting with WH chief of staff Susie Wiles the week of 07-27
-      was itself because the framework was NOT final. Every outlet's framing
-      stayed forward-looking ("expected before August 1," "could come as
-      soon as the first week of August") — no outlet reports a signing or
-      publication event. NOTE: this is the SAME event as the Sec. 3(b) half
-      of eo14409-deadlines (same 60-day clock, same agencies, same 30-day
-      access mechanism) — they are one deliverable, not two, and both
-      resolve together, passed-silent, on the same finding.
-
   - id: us-china-ai-talks
     claim: "First official US–China AI-policy talks ('later this year' — the September framing is UNSOURCED per crawl 2026-07-22)"
     due: 2026-12-31
@@ -134,78 +62,6 @@ expectations:
     logged: 2026-07-22
     logged_by: curate-add   # due/source corrected by crawl 2026-07-22
     status: pending
-
-  - id: eo14409-deadlines
-    claim: "EO 14409's two 60-day deliverables land: classified NSA-led frontier threshold + the Sec. 3(b) 30-day-access framework design (Treasury/War/CISA/NIST)"
-    due: 2026-08-04    # slipped from 08-01 (Sec 3b half; threshold half still dark)
-    due_precision: day
-    thread: frontier-model-gov-review-precedent
-    entities: []
-    source: https://www.federalregister.gov/documents/2026/06/05/2026-11415/promoting-advanced-artificial-intelligence-innovation-and-security
-    confidence: confirmed
-    what_confirms: "publication of the framework/threshold or reporting that the deadline slipped; likely arrives WITH the framework announcement (see gov-review-framework-announce)"
-    logged: 2026-07-22
-    logged_by: crawl
-    # 2026-08-01 ⟨daily⟩: BOTH 60-day deliverables passed silent. 3-day
-    # retro-flip grace runs to 2026-08-04 before this stands.
-    # 2026-08-03 ⟨daily⟩: RE-OPENED within grace, but ASYMMETRICALLY. The
-    # Sec. 3(b) 30-day-access-framework half is moving — presented to
-    # OpenAI/Google/Anthropic staff 08-04 (tracked in full on
-    # gov-review-framework-announce, its twin). The CLASSIFIED NSA-led
-    # threshold half remains completely dark: no public acknowledgment of
-    # completion at all, reconfirmed 08-03 (no Federal Register / NIST / CISA
-    # / OSTP publication). So the two halves have split — 3(b) slips to a
-    # concrete 08-04, the threshold half is still watch-for-silence. Slip to
-    # 08-04 (the 3(b) date) with the threshold caveat noted; status pending.
-    # 2026-08-04 ⟨daily, overnight extension pass⟩: NO SIGNAL on either half
-    # as of 05:40 ET. The split holds exactly as described above — the Sec.
-    # 3(b) half is a meeting scheduled for later today (still a DRAFT the
-    # labs will "review", per SiliconANGLE 08-03 19:41 ET, with Meta now
-    # confirmed among the invitees), and the classified NSA-led threshold
-    # half has had NO new reporting at all since the 08-01 deadline lapsed —
-    # not a slip announcement, not an acknowledgment, nothing. That silence
-    # is now three days old and is the loud part of this entry. Re-check
-    # both halves after ~14:00 ET today.
-    # 2026-08-05 ⟨daily⟩: RESOLVED, both halves, passed-silent. The Sec.
-    # 3(b) half resolves on the SAME finding as its twin
-    # gov-review-framework-announce: the 08-04 meeting happened, but the
-    # White House told attendees it has no plans to publicly release the
-    # framework at all (Fortune/Axios/CNN, 08-04) — a deliberate
-    # non-disclosure decision, not a delay. The classified NSA-led
-    # threshold half stays fully dark with zero new reporting of any kind
-    # since the 08-01 deadline lapsed — now four days of total silence on
-    # that half specifically, the longer and louder of the two silences.
-    slips: [2026-08-01]
-    status: passed-silent
-    resolved: 2026-08-05
-    evidence: >
-      Presented-to-labs 08-04 covers only the Sec. 3(b) half, which
-      resolves passed-silent on the same White-House-declined-to-publish
-      finding as gov-review-framework-announce (see 08-05 comment above).
-      The classified threshold half remains dark (see 08-03 comment
-      above) with no new reporting at all. ORIGINAL 08-01
-      passed-silent finding, retained:
-      EO 14409 was signed 2026-06-02, so its 60-day Sec. 3 deliverables came
-      due 2026-08-01. Verified against the EO text on whitehouse.gov
-      directly: Sec. 3 requires (a) Treasury / Dept of War-NSA / DHS-CISA,
-      consulting NIST/Commerce, to develop a CLASSIFIED benchmarking process
-      setting the threshold at which a model is designated a "covered
-      frontier model"; and (b) under Sec. 3(b), the same agencies to design
-      the voluntary framework for up to 30-day pre-release government
-      access. Neither landed. On the classified threshold there is no public
-      acknowledgment of completion at all — not even a terse
-      delivered-on-time statement from NSA, CISA, Treasury or NIST; targeted
-      searches returned only explainer and legal-alert pieces restating the
-      requirement, plus a CSA research note observing it found no public
-      confirmation the required structures were stood up as of early July.
-      CRS brief IF13268 (congress.gov, 2026-07-09) independently confirms
-      the same 60-day/08-01 deadline and agency list. The Sec. 3(b) half is
-      the SAME event as gov-review-framework-announce — one deliverable
-      tracked twice, both passed silent together. ⚠ The federalregister.gov
-      source URL itself could not be fetched (interstitial redirect to
-      unblock.federalregister.gov); the EO text was confirmed on
-      whitehouse.gov instead, and a govinfo.gov PDF mirror exists but was
-      not independently re-fetched.
 
   - id: glm-5-5-release
     claim: "Z.AI ships GLM-5.5 (>1T params, 1M context)"
@@ -484,78 +340,6 @@ expectations:
     # 2028-08-02; Art. 6(1) classification rules at 2027-08-02.
     status: pending
 
-  - id: spacex-q2-earnings
-    claim: "SpaceX (SPCX) first post-IPO earnings report"
-    due: 2026-08-04
-    due_precision: day
-    thread: spacexai-public-megacap
-    entities: [spacex]
-    source: https://news.google.com/rss/search?q=SpaceX+earnings+August+4
-    confidence: reported
-    what_confirms: "the release itself; watch Starlink/AI framing vs the zero-AI-value market read"
-    logged: 2026-07-27
-    logged_by: curate-add
-    # 2026-08-04 ⟨daily, overnight extension pass⟩: time CONFIRMED, not yet
-    # released. SpaceX reports after the US close today with an audio-only
-    # webcast at 4:30pm ET (CNBC 07-21, unchanged as of an 08-04 08:00 UTC
-    # preview) — hours after this run's 05:40 ET window closed, so it is
-    # correctly still pending rather than passed-silent. Consensus revenue
-    # ~$6.75-6.9B; note a WIDE EPS spread across compilers (-$0.23/-$0.35
-    # in one, -$1.26/+$0.33 via Visible Alpha) — the disagreement is itself
-    # the signal on how unmodellable the ~$40B/yr AI buildout is inside this
-    # company. Re-check after 16:30 ET today; the first insider-lockup
-    # tranche (up to 20% of ~911.5M restricted shares) follows 08-06.
-    status: hit
-    resolved: 2026-08-04
-    evidence: >
-      Reported after close 2026-08-04 as scheduled. Revenue $7.8B (+92%
-      YoY), beating the ~$6.75-6.9B consensus by ~$0.9-1.1B; EPS -$0.09,
-      far narrower than every compiler's tracked spread (net loss $541M,
-      down from $1B a year ago); adjusted EBITDA $3.5B (+191% YoY).
-      Starlink/Connectivity led revenue at $4.3B (1.7M net subscriber
-      adds, 12M total, ARPU down to $66 from $85 a year ago) — the only
-      profitable segment. AI segment revenue nearly tripled to $2.6B
-      (+247% YoY) but posted a $1.3B operating loss. Capex hit $18.4B,
-      up 6x YoY, with $15.8B specifically AI-infrastructure spend — THIS,
-      not the beat, is what moved the stock: shares ran +9.4% intraday
-      into the print then fell as much as -8.6% after-hours as investors
-      focused on AI cash burn over the beat, directly matching the
-      "zero-AI-value" framing (Morgan Stanley's 07-24 note argued a ~$100
-      share price implies zero value for the AI segment). Management
-      guided to a $100B annualized revenue run-rate by end of 2026.
-      Primary/corroborating: CNBC, NPR, Yahoo Finance, Shacknews,
-      TradingKey, Investing.com earnings-call transcript — high
-      confidence on the figures (converging secondary outlets; SEC EDGAR
-      not independently re-fetched). Insider-lockup first tranche (up to
-      20% of ~911.5M restricted shares, ~$123B) remains on schedule for
-      08-06; no confirmed insider selling yet.
-
-  - id: spacex-insider-unlock
-    claim: "SpaceX insider-unlock/sale wave expected right after earnings"
-    due: 2026-08-06
-    due_precision: day
-    thread: spacexai-public-megacap
-    entities: [spacex]
-    source: https://news.google.com/rss/search?q=SpaceX+insider+unlock
-    confidence: reported
-    what_confirms: "actual insider-sale filings/volume; a supply overhang test at the lows"
-    logged: 2026-07-27
-    logged_by: curate-add
-    status: hit
-    resolved: 2026-08-06
-    evidence: >
-      The staggered lockup opened on schedule 08-06: up to 911.5M shares
-      (~20% of restricted holdings, ~$101-116B) became eligible, two
-      trading days after the 08-04 earnings print as designed. No
-      confirmed actual selling (no Form 4s/sale reports) found as of this
-      check — only eligibility, not a realized sale wave. A separate,
-      larger 455.8M-share tranche stays fully locked because release
-      requires the stock above the $135 IPO price; SPCX closed $108.27
-      the day before, ~20% under issue. Calling this a `hit` on the
-      unlock mechanism itself (which is what the claim named); the
-      stronger "sale wave" framing is not yet evidenced.
-      (Yahoo Finance/AP, Motley Fool, Forbes)
-
   - id: coreweave-q2-earnings
     claim: "CoreWeave Q2 earnings (consensus EPS −$1.27, rev $2.56B) — backlog conversion + debt-cost commentary"
     due: 2026-08-11
@@ -761,149 +545,6 @@ expectations:
     logged_by: curate-add
     status: pending
 
-  - id: softbank-q1-earnings
-    claim: "SoftBank Q1 FY26 earnings — Arm's post-earnings slide and the OpenAI bridge loan both bear on the print"
-    # 07-31 ⟨daily⟩: due date was WRONG, not slipped. SoftBank's own IR page
-    # (group.softbank/en/event/earnings_2026q1) shows the Q1 FY2026 briefing
-    # scheduled for 2026-08-06, 4:30pm JST (report disclosed 3:30pm JST same
-    # day) — placeholders for all Q1 materials as of this check. The
-    # 07-30 date traced to a single secondary source (marketbeat.com) that
-    # was never corroborated. Old date pushed to slips:, corrected against
-    # the primary IR source.
-    due: 2026-08-06
-    due_precision: day
-    slips: [2026-07-30]
-    thread: softbank-all-in
-    entities: [softbank, arm]
-    source: https://group.softbank/en/event/earnings_2026q1
-    confidence: confirmed
-    what_confirms: "SoftBank's own earnings release, 3:30pm JST 08-06"
-    logged: 2026-07-30
-    logged_by: curate-add
-    status: hit
-    resolved: 2026-08-06
-    evidence: >
-      Q1 FY2026 released as scheduled: net income ¥347.3B, down 18% YoY
-      (investment gains +~300% YoY to ¥1.86T, almost entirely
-      ByteDance/Intel, not OpenAI — no OpenAI valuation gain this
-      quarter). Arm's own post-earnings slide shows up directly on
-      SoftBank's balance sheet: quarter-end NAV hit a record ¥72.3T, but
-      a same-release pro-forma mark as of 08-05 shows ¥58.3T (~19% cut),
-      driven by Arm's NAV contribution falling ¥43.4T → ¥31.1T. The
-      previously-stalled $10B OpenAI-stake margin loan is now signed
-      (Goldman/JPMorgan/Mizuho/Apollo/SMBC, agreed 08-05, drawdown this
-      month) — total OpenAI-linked SoftBank commitments now exceed $60B.
-      (Investing.com, Daily Sabah, Bloomberg)
-
-  # ---- added 2026-08-03 ⟨daily⟩: the week-ahead calendar ----
-
-  - id: eu-ceuta-ministers-meeting
-    claim: "EU interior/migration ministers meet on the Ceuta mass-crossing crisis"
-    due: 2026-08-04
-    due_precision: day
-    thread: ""    # Ceuta is flash-rail + world-news, no dedicated thread yet
-    entities: []
-    source: https://www.bloomberg.com/news/articles/2026-07-31/sanchez-says-spain-under-attack-after-mass-migration-influx
-    confidence: reported
-    what_confirms: "the meeting happening + any Schengen-controls or Morocco-returns outcome; toll stood at 72 with EU emergency talks called"
-    logged: 2026-08-03
-    logged_by: curate-add
-    # 2026-08-04 ⟨daily, overnight extension pass⟩: CONVENING CONFIRMED, not
-    # yet held. It is an emergency Justice and Home Affairs Council,
-    # convened and chaired by Irish Justice Minister Jim O'Callaghan (Ireland
-    # holds the Council presidency); as of 09:30 IST it "will take place
-    # later today." Von der Leyen pre-framed it as a "first step" ahead of a
-    # fuller October summit, so a definitive Schengen/Morocco-returns
-    # outcome is UNLIKELY today — score what_confirms on the meeting
-    # happening, and treat any concrete outcome as upside.
-    # CORRECTION carried from the same source: the states pushing to suspend
-    # Spain from Schengen are ITALY and DENMARK. The 08-03 world-news digest
-    # said "Italy/Finland" — Finland is wrong and has been struck there.
-    # (RTE 08-04 09:30 IST, fetched directly.)
-    # 2026-08-05 ⟨daily⟩: HIT, exactly as scored — the meeting happened,
-    # no binding decision. The emergency JHA Council videoconference ran
-    # 08-04 as planned, chaired by O'Callaghan. Outcome: a statement of EU
-    # solidarity, not a measure — Migration Commissioner Magnus Brunner
-    # said the EU stands in "full solidarity" with Spain, calling it "a
-    # test of our European resilience." No Schengen-suspension decision
-    # came out of the Council (Italy's unilateral suspension of free
-    # movement with Spain, imposed ~07-31-08-04, remains national, not
-    # EU-level); no Morocco-returns agreement. Von der Leyen's pre-framing
-    # held exactly — explicitly deferred to the October European Council.
-    # Death toll held at 72; by 08-04 all but ~2,000 of the crossers had
-    # already returned to Morocco on their own.
-    status: hit
-    resolved: 2026-08-04
-    evidence: >
-      The meeting happened as scheduled 08-04 (Consilium's own meeting
-      page; corroborated by RTE, France24, Euronews, Fortune). Concrete
-      outcome: none — a solidarity statement, explicitly deferred to the
-      October European Council, matching the pre-registered "unlikely
-      today" expectation. Sources: Euronews
-      (euronews.com/my-europe/2026/08/04/full-solidarity-with-spain...),
-      The National, The New Arab.
-
-  - id: senate-commerce-kids-ai-markup
-    claim: "Senate Commerce marks up five kids' online-safety bills, incl. the CHATBOT Act (S.4407, Cruz/Schatz) requiring parent-managed 'family accounts' for minors using AI chatbots"
-    due: 2026-08-05
-    due_precision: day
-    thread: ai-therapy-regulatory-reckoning
-    entities: []
-    source: https://www.commerce.senate.gov/press/rep/release/chairman-cruz-announces-kids-safety-markup/
-    confidence: confirmed
-    what_confirms: "the markup happening + which of the five bills are reported out, amended, or held; the CHATBOT Act is the one on this lens"
-    logged: 2026-08-04
-    logged_by: curate-add
-    # 2026-08-04 ⟨daily, MH overnight pass⟩: markup is 08-05 10:00 ET, same
-    # morning as SB 903's California hearing (09:00 PT = 12:00 ET) — two
-    # separate AI-chatbot instruments moving in one day, one federal one
-    # state. ⚠ The CHATBOT Act (S.4407, Cruz/Schatz) is a DIFFERENT bill
-    # from the CHAT Act (Husted/Kim) already tracked in this lens: related
-    # subject, different sponsors, different number. Do not merge them.
-    # Announcement itself dated 07-29 (outside the sweep window) — logged
-    # now because the markup is tomorrow, not as a fresh catch.
-    status: hit
-    resolved: 2026-08-05
-    evidence: >
-      Executive Session 24 held 10:00 a.m. ET, SR-253, all five bills on
-      the formal agenda (commerce.senate.gov meeting page). The CHATBOT
-      Act (S.4407, Cruz/Schatz) and the Kids Online Safety Act (S.1748)
-      both advanced out of markup. Which of the other three (Youth AI
-      Privacy Act, SCREEN Act, Children's AI Toy Safety Act) were
-      reported out, amended, or held is not yet confirmed by any outlet
-      checked — not material to this lens's own claim, which was scoped
-      to the CHATBOT Act.
-
-  - id: ism-services-cook-0805
-    claim: "ISM Services PMI (July) prints and Fed Gov. Lisa Cook speaks — 08-05"
-    due: 2026-08-05
-    due_precision: day
-    thread: ""    # no Fed thread yet (Warsh-Fed is a candidate, unpromoted)
-    entities: []
-    source: https://news.google.com/rss/search?q=ISM+services+PMI+August+2026
-    confidence: reported
-    what_confirms: "the ISM Services release + Cook remarks; pairs with ISM Mfg (55.6, released 08-03) for the services/goods split under the Warsh hold"
-    logged: 2026-08-03
-    logged_by: curate-add
-    # 2026-08-05 ⟨daily⟩: split result. ISM Services PMI printed 54.1 at
-    # 10:02am ET (forecast 54.5, prior 54.0) — still expansion. Gov. Cook's
-    # half has NOT happened yet: confirmed via the Fed's own August events
-    # page she speaks 4:05pm Alaska time (Anchorage Economic Development
-    # Corporation luncheon, "Economic Outlook") — a regional talk, not
-    # obviously monetary-policy-signaling. Left pending; re-check tonight.
-    status: hit
-    resolved: 2026-08-06
-    evidence: >
-      Both halves now confirmed. ISM Services PMI (July): 54.1, vs. 54.5
-      forecast, up from June's 54.0 — expansion territory, Business
-      Activity/New Orders both rose while Employment fell back into
-      contraction (47.4). Fed Gov. Lisa Cook delivered her Anchorage
-      speech 08-05/06: said an immediate hike isn't necessary but she's
-      "prepared to act" if disinflation stalls — real, on-record Fed
-      commentary landing in the same window as the print.
-      (PR Newswire ISM release, Federal Reserve — Cook speech text,
-      Bloomberg)
-
   - id: jobs-report-july-0807
     claim: "July US employment report (nonfarm payrolls) — 08-07"
     due: 2026-08-07
@@ -1026,45 +667,6 @@ expectations:
     logged_by: curate-add
     status: pending
 
-  - id: amd-q2-2026-earnings
-    claim: "AMD reports Q2 2026 earnings (guided ~$11.2B rev ± $300M; consensus ~$11.3B, ~$1.61 EPS, ~$6.5B Data Center)"
-    due: 2026-08-04
-    due_precision: day
-    thread: amd
-    entities: [amd]
-    source: https://www.tikr.com/blog/amd-reports-q2-2026-earnings-august-4-what-the-stock-needs-to-show-after-its-anthropic-deal
-    confidence: confirmed
-    what_confirms: "AMD 8-K / earnings press release + call, after market close 2026-08-04"
-    logged: 2026-08-04
-    logged_by: crawl
-    status: hit
-    resolved: 2026-08-04
-    evidence: >
-      Reported after close 2026-08-04 as scheduled — double beat. Revenue
-      $11.536B (record, +50% YoY), above the $11.2B ± $300M guide and
-      ~$11.3B consensus. Non-GAAP EPS $1.66 (GAAP $1.38) vs ~$1.61
-      consensus; non-GAAP gross margin 56%. Data Center segment $6.718B
-      (+107% YoY, 58% of revenue) vs ~$6.5B consensus. Q3 guide ~$13B
-      (range $12.7-13.3B), ~41% YoY growth, margin held at ~56%. Deal
-      detail: the Anthropic MI450/Helios partnership (up to 2GW) was
-      reaffirmed, with the first gigawatt now slated for H1 2027 (not
-      H2 2026 as originally framed); Helios rack shipments named OpenAI,
-      Meta, Microsoft, Oracle and Anthropic among recipients but gave no
-      per-customer GW/timeline detail; CEO Su said Helios shipments begin
-      later in Q3 2026, ramping into 2027, with demand running ahead of
-      AMD's internal forecasts. Despite the clean beat, shares fell
-      ~8-9% after-hours to ~$472 — coverage attributes this to stretched
-      valuation (AMD trading above Nvidia multiples) and flat margin
-      guidance; Wall Street wanted a blowout Q3 forecast, not an in-line
-      one. Same pattern as SpaceX the same night: beat-and-sell-off.
-      Primary: AMD IR press release
-      (ir.amd.com/news-events/press-releases/detail/1295); corroborated
-      by StockTitan, CNBC, Yahoo Finance earnings-call recap, Benzinga,
-      TradingKey. Medium confidence on call-quote specifics (secondary
-      summaries, not a raw transcript) — verify the Meta-vs-OpenAI
-      warrant-vesting numbers against AMD's 8-K/10-Q before citing
-      precisely.
-
   - id: amd-openai-meta-1gw-h2-2026
     claim: "First 1GW shipment tranches (OpenAI and Meta deals separately) begin, per both deals' stated H2-2026 timeline — first real test of warrant-vesting shipment milestones"
     due: 2026-12-31
@@ -1169,33 +771,6 @@ expectations:
     logged_by: crawl
     status: pending
 
-  - id: cvs-q2-2026-earnings
-    claim: "CVS Health Q2 2026 earnings call — watch for AI commentary echoing UHC's Hemsley remarks"
-    due: 2026-08-05
-    due_precision: day
-    thread: payer-ai-claim-denial
-    entities: [cvs-health]
-    source: https://www.cvshealth.com/news/company-news/cvs-health-to-hold-second-quarter-2026-earnings-conference-call.html
-    confidence: confirmed
-    what_confirms: "call happens 8am ET; watch for AI/claims-automation commentary"
-    logged: 2026-08-04
-    logged_by: crawl
-    status: hit
-    resolved: 2026-08-05
-    evidence: >
-      Call held 8am ET as scheduled. Raised FY26 guidance: adjusted EPS to
-      $7.90-$8.10 (from $7.30-$7.50), revenue to at least $414B (from at
-      least $405B); Aetna adjusted operating income up >$2B YoY. AI
-      commentary present and substantive, echoing UHC/Hemsley's
-      claims-automation theme: "AI-enabled claims processing has reduced
-      processing time by over 20%, accelerating payments for providers";
-      conversational AI in retail pharmacies redirected 1M pharmacist
-      hours from admin calls to clinical care; internal AI tools cut Aetna
-      advocate case-prep from 90 min to 2 min. Stock fell despite the beat
-      — soft preliminary 2027 EPS floor (~$8.44, ~13% growth) disappointed
-      against the strong Q2 print. Sources: cvshealth.com investor
-      release; Yahoo Finance earnings-call summary.
-
   - id: aetna-alma-rate-cut-effective
     claim: "Aetna's reimbursement rate cuts to Alma-contracted therapists take effect (APA/American Psychiatric Association protested 06-04)"
     due: 2026-07-15
@@ -1246,29 +821,6 @@ expectations:
       APA Services' own statement (still open-ended, no resolution
       claimed). Re-check after 08-15 for whether the softened remainder
       actually takes effect.
-
-  - id: globalfoundries-q2-2026-earnings
-    claim: "GlobalFoundries reports Q2 2026 results (guided revenue $1.76B ± $25M)"
-    due: 2026-08-05
-    due_precision: day
-    thread: globalfoundries
-    entities: [globalfoundries]
-    source: https://www.sec.gov/Archives/edgar/data/1709048/000170904826000112/gfs-20260331.htm
-    confidence: confirmed
-    what_confirms: "Q2 2026 earnings release/8-K or 6-K, before market open 2026-08-05"
-    logged: 2026-08-04
-    logged_by: crawl
-    status: hit
-    resolved: 2026-08-05
-    evidence: >
-      Reported before market open. Q2 2026 revenue $1.786B — above the
-      guided $1.76B ± $25M range's high end ($1.785B); company's own
-      language: revenue and non-IFRS gross margin "exceeded the high end
-      of our guidance ranges." EPS $0.46 (beat $0.45 est). Non-IFRS gross
-      margin ~29.9% (+470bps YoY). Q3 guide issued: $1.885B ± $25M. Growth
-      driven by communications-infrastructure/data-center demand (silicon
-      photonics/SiGe for optical networking), +20% sequential in that
-      segment. Source: GlobeNewswire press release, 2026-08-05.
 
   - id: berkshire-q2-2026-13f
     claim: "Berkshire Hathaway's Q2 2026 13F filing discloses whether the Alphabet position kept growing and whether any other AI-adjacent equity appears"

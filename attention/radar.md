@@ -89,42 +89,54 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     asserted "net-SELLING 15 straight quarters" after Q2 earnings (08-08)
     showed Abel's first net-BUYING quarter in 14 — corrected in board.yaml
     this pass (direction reversed, not just aged).
-  - week 2026-08-10 (/week, partial week 08-10–08-14): the board frame
-    kept answering itself faster than the ledger captured it. Four labs
-    each gave a concrete, unprompted answer to "what are they doing" this
-    week. SpaceX/xAI actually **closed** the Cursor acquisition (08-14,
-    ~391M SpaceX Class A shares issued, Cursor now a wholly owned
-    subsidiary under "SpaceXAI" with access to SpaceX's Colossus
-    supercomputer) — the board's "owns its mines" thesis for this actor
-    now extends to a coding-tool subsidiary, not just training compute.
-    Anthropic ran capital, M&A and safety research simultaneously (the
-    Decart talks + the $2T IPO pricing chatter + its own Frontier Red
-    Team's multiagent-collusion research, all inside 48 hours on 08-13).
-    Microsoft moved the opposite direction from its own "three-way hedge"
-    framing — merging its consumer and business Copilot apps into one
-    product and cutting features that "didn't work" (08-13), a
-    consolidation signal on the exact OpenAI/Anthropic/in-house axis
-    `microsoft-mai-openai-decoupling` exists to track, but the item
-    landed ambient (untagged to that thread), which has now gone quiet in
-    the ledger (last_seen 07-27) while its actual subject kept moving
-    underneath it. And OpenAI's leadership churn crossed this week from
-    "this lens keeps narrating departures inline" into outside coverage
-    independently naming it a pattern — a second and, per this map's own
-    reappear-once-then-drop rule, **final** offer of a dedicated thread
-    for it went to Ben on 08-14, unanswered since its 08-13 first offer.
-    Separately, Apple gave its clearest single-week answer yet to "who
-    controls the model layer," for a new audience: training its own
-    China-specific model with Alibaba rather than exporting the Gemini
-    partnership `apple-gemini-model-deal` already tracks for the rest of
-    the world — also landed ambient, not thread-tagged. Working-note
-    candidate: the board frame is generating real per-actor answers
-    faster than the ledger is capturing them — at least two real
-    developments this week (Microsoft's Copilot merge, Apple's China
-    model) squarely answered an open Q1-relevant thread's own watch
-    question but were logged ambient instead of tagged to it. Worth a
-    light pass checking whether "is there a thread answering what this
-    actor just did" gets asked at write time, not only at periodic
-    synthesis time.
+  - week 2026-08-10 (/week, partial week 08-10–08-15): the board frame
+    kept answering itself faster than the ledger captured it, and by
+    week's end that gap widened rather than closed. Four labs each gave a
+    concrete, unprompted answer to "what are they doing" mid-week.
+    SpaceX/xAI actually **closed** the Cursor acquisition (08-14, ~391M
+    SpaceX Class A shares issued, Cursor now a wholly owned subsidiary
+    under "SpaceXAI" with access to SpaceX's Colossus supercomputer) —
+    the board's "owns its mines" thesis for this actor now extends to a
+    coding-tool subsidiary, not just training compute — and Nvidia's own
+    13F (08-15) put the first hard number on the reverse relationship: a
+    $21B disclosed SpaceX equity stake, the visible remainder of Nvidia's
+    original ~$10B xAI bet now that xAI has merged into SpaceX, alongside
+    a complete exit from Arm. Anthropic ran capital, M&A and safety
+    research simultaneously (the Decart talks + the $2T IPO pricing
+    chatter + its own Frontier Red Team's multiagent-collusion research,
+    all inside 48 hours on 08-13). Microsoft moved the opposite direction
+    from its own "three-way hedge" framing — merging its consumer and
+    business Copilot apps into one product and cutting features that
+    "didn't work" (08-13), a consolidation signal on the exact
+    OpenAI/Anthropic/in-house axis `microsoft-mai-openai-decoupling`
+    exists to track, but the item landed ambient (untagged to that
+    thread), which is still quiet in the ledger (last_seen 07-27) while
+    its actual subject kept moving underneath it. OpenAI's leadership
+    churn crossed this week from "this lens keeps narrating departures
+    inline" into outside coverage independently naming it a pattern —
+    offered as a dedicated thread candidate twice (08-13, then a final
+    offer 08-14) and, with no promotion signal by the week's close,
+    dropped from candidacy per this map's own reappear-once-then-drop
+    rule. Apple gave its clearest single-week answer yet to "who controls
+    the model layer," for a new audience: training its own China-specific
+    model with Alibaba rather than exporting the Gemini partnership
+    `apple-gemini-model-deal` already tracks for the rest of the world —
+    also landed ambient, not thread-tagged. The week's clearest new
+    per-actor answer came Saturday from SpaceXAI on the ground rather
+    than in a filing: Congress kept pressing it over Colossus's
+    unpermitted gas turbines the same week Musk confirmed a fourth
+    Memphis-area data center (220,000 GB300 GPUs) and the company began
+    physically removing the 69 unpermitted units — an actor answering
+    "what are you doing" with visible, simultaneous expansion and
+    remediation rather than a statement. Working-note candidate: the
+    board frame is generating real per-actor answers faster than the
+    ledger is capturing them — at least three real developments this week
+    (Microsoft's Copilot merge, Apple's China model, and the ongoing
+    tagging gap on `microsoft-mai-openai-decoupling`) squarely answered an
+    open Q1-relevant thread's own watch question but were logged ambient
+    instead of tagged to it. Worth a light pass checking whether "is
+    there a thread answering what this actor just did" gets asked at
+    write time, not only at periodic synthesis time.
 
 ## Q2 — Where is the money going?
 - **mode:** both · **lens:** ai + mental-health (money lens will absorb/extend this) · **status:** open
@@ -176,6 +188,59 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     single relationship enough to rely on it alone, that's a
     capital-concentration signal in its own right, distinct from the
     guarantee-count/CDS-spread indicators Q7 already watches.
+  - week 2026-08-10 (/week, global-capital lens's own data, partial week
+    08-10–08-15): the first week this note has been written primarily
+    from the global-capital lens's own daily data rather than absorbed
+    secondhand from the ai/mental-health lenses — and a full week of it
+    shows capital landing at every layer of the AI stack simultaneously,
+    with debt increasingly the connective tissue at each one rather than
+    a single dominant instrument. At the compute-financing-platform
+    layer, Nvidia's $500B+ MOUs (Monday) opened the week; Intel raised
+    $20B in common equity on 5x institutional demand (Mon/Tue) and Lambda
+    priced a $926M investment-grade-rated loan (Wed) to fund its own
+    circular Nvidia chip-lease deal. At the chipmaker layer, AMD raised
+    its largest-ever bond sale ($4.75B final) explicitly to help fund its
+    own $5B Anthropic equity stake (Wed/Thu) — debt at the vendor-equity
+    layer for the first time this map has recorded. At the lab layer,
+    Anthropic ran three simultaneous capital tracks in one week:
+    investors reportedly targeting a $2T+ October IPO valuation (more
+    than double the $965B print this thread has carried since May),
+    separate advanced talks to acquire Israeli startup Decart for ~$6B
+    (still an unresolved buyer-identity conflict with an earlier report
+    naming SpaceX), and by Friday the IPO chatter itself firmed into a
+    concrete September Nasdaq target with investor meetings already
+    underway. Databricks closed a $5B round at $190B (Coatue, Blackstone,
+    MGX, T. Rowe Price, Sixth Street), on a disclosed $7B run-rate
+    revenue base rather than an investor-expectation number. SpaceX's own
+    ~$60B all-stock Cursor acquisition closed Thursday, roughly 17 days
+    ahead of its 08-31 placeholder due date. At the landlord/real-estate
+    layer, a single-company Vantage Data Centers IPO lead (~$100B
+    valuation, Wed morning) turned out to be a three-company pattern by
+    Wednesday afternoon (CyrusOne weighing a 2027 debut, Switch exploring
+    an ~$80B IPO) — a sector-wide "revival in public listings," per Data
+    Center Dynamics, not a one-off — and Riot Platforms' data-center
+    subsidiary separately drew a $573M delayed-draw loan (Fri, via SEC
+    EDGAR direct) to fund the Rockdale buildout underlying its own $9.1B,
+    20-year Anthropic compute deal. Silver Lake moved on Workday, a
+    non-AI enterprise name, for ~$43-51B — the week's one large
+    capital-formation story with no AI angle at all, logged as real but
+    off the AI-capital axis. And sovereign capital kept building the
+    physical layer underneath all of it: NEOM's Oxagon got its
+    Q7-noted first construction timeline, the same signal from Riyadh
+    already seen at Saudi PIF's other AI bets. Working-note candidate:
+    the volume this week makes the destination question answerable at a
+    level of specificity this note hasn't had before — money is flowing
+    into compute-financing platforms, chipmaker equity stakes, lab
+    valuations (both IPO-track and M&A-track), and landlord-level real
+    estate all at once, with debt now visibly present at every one of
+    those layers rather than concentrated in any single instrument —
+    read alongside Q7's credit-risk framing of the same mechanism. Track
+    next: whether the Decart buyer-identity conflict resolves by its
+    08-17 due date; and whether the data-center-landlord IPO wave, offered
+    as a thread candidate twice this week and dropped once per the
+    reappearance rule when 08-14 produced no fourth data point, earns its
+    own thread if a fourth landlord-IPO story lands before the next
+    /week.
 
 ## Q3 — Is mental-health tech getting more rigorous, or is hype winning?
 - **mode:** answer (the book's thesis) + monitor · **lens:** mental-health · **status:** open
@@ -261,6 +326,38 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     skepticism about Therabot ever reaching FDA approval becomes a
     template other generative-AI mental-health builders start echoing,
     rather than a lone admission.
+  - week 2026-08-10 (/week, continued through 08-15): the week closed
+    with the standards side taking its own concrete step: a
+    seven-researcher team spanning the University of Toronto, NYU, UT
+    Southwestern and the American Psychiatric Association (co-author
+    Darlene King chairs APA's mental-health-IT work) proposed a
+    standardized "facts label" for AI-enabled mental-health apps — an
+    eight-section disclosure (developer info, intended use,
+    crisis-appropriateness warnings, performance limits, model
+    architecture, clinical-evidence availability, accessibility, privacy)
+    meant to give practical teeth to transparency rules that currently
+    exist only on paper (FDA's Good Machine Learning Practice guidance,
+    NIST's AI Risk Management Framework, the EU AI Act), backed by the
+    paper's own audit finding few recent FDA-cleared AI devices disclose
+    training-data demographics and 89% of mental-health apps carrying
+    problematic privacy policies. And a Stockholm University-led RCT
+    (Carlbring/Andersson/Mechler, 90 participants) pitted two AI-delivered,
+    chatbot-only therapies — "Anna" for psychodynamic therapy, "Judith"
+    for CBT — head-to-head for social anxiety disorder and found both
+    produced significant, moderate symptom reductions with no meaningful
+    difference between orientations once the human therapist was removed
+    entirely: a rarer test than most of what this lens tracks, since it
+    compares two clinical schools rather than one bot against a waitlist.
+    Implication: the field is starting to build its own disclosure
+    infrastructure (the facts label) ahead of, not after, a regulator
+    forcing it — a genuinely different posture than the reactive pattern
+    (litigation before statute) this lens has tracked on the governance
+    side all month. Working-note candidate: watch whether the
+    APA-affiliated "facts label" proposal gets adopted or cited by any
+    vendor or regulator outside its own author list — the same adoption
+    test this lens is already running on CARE-MH from two weeks ago, now
+    with a second, more institutionally-credentialed candidate standard
+    in the running.
 
 ## Q4 — How is AI showing up in mental health — and is it safe and governed?
 - **mode:** both · **lens:** mental-health (Ben's sharpest edge) · **status:** open
@@ -346,6 +443,23 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     whether the Kaiser/NUHW silence, now on track to repeat on the same
     dispute for a second time, warrants a standing dated check rather
     than one-off expectation entries.
+  - week 2026-08-10 (/week, continued through 08-15): no governance or
+    litigation news moved over the weekend — Saturday was a genuine lull
+    on this half of the question. What did move: a direct Saturday
+    re-check of the Kaiser/NUHW mediation window found nothing further
+    from either side, closing `kaiser-nuhw-mediation-window-close`
+    passed-silent — a second silent outcome on the identical dispute,
+    after the mediation's opening day already produced one. Implication:
+    litigation and labor disputes remain the only live accountability
+    mechanism for everything outside the new statutes' narrow scope, and
+    the Kaiser/NUHW dispute has now demonstrated that mechanism can also
+    just go silent twice without producing an actual outcome.
+    Working-note candidate: now that Kaiser/NUHW has gone silent twice on
+    the same dispute (its opening day and its scheduled close), stand up
+    a standing dated check for whatever comes next in that dispute (a new
+    bargaining session, a strike authorization, a public statement)
+    rather than continuing to log one-off expectation entries against a
+    process that has shown it won't self-report.
 
 ## Q5 — Where is frontier AI heading overall?
 - **mode:** monitor (full firehose) · **lens:** ai · **status:** open
@@ -403,7 +517,7 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     failure, that's persistent behavior across instances. If a fifth
     disclosure repeats the same explanation, the explanation itself
     becomes the story.
-  - week 2026-08-10 (/week, partial week 08-10–08-14): capability
+  - week 2026-08-10 (/week, partial week 08-10–08-15): capability
     compounding at falling prices hit its first visible ceiling from the
     supply side, not the demand side. DeepSeek — the lab most responsible
     for this year's price-war framing — hiked its own V4 API prices 50%
@@ -424,24 +538,31 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     time: not "can a lab control one agent" (08-01) or "can any lab"
     (08-09's four-lab pattern), but whether adding more copies of the
     *same* model creates failure modes single-agent alignment was never
-    built to solve — a structural question, not a per-lab one. Capital
-    kept racing ahead of both: Nvidia's $500B financing platform remains
-    pure MOU nine days on (`upcoming.yaml`'s own tracking entry has
-    caught no named deal yet), while Anthropic pursued its largest-ever
-    acquisition and watched its own investors' IPO price talk roughly
-    double in three weeks — simultaneous expansion on every front at
-    once, pre-IPO. China's stack answered in volume rather than a single
-    milestone, and Zhipu's GLM-5.3 gave the clearest new data point: a
-    narrow win over Anthropic's own gated Mythos 5 on one cybersecurity
-    benchmark (CyberGym) while trailing badly on another (ExploitBench) —
-    real but benchmark-specific parity, and Zhipu is gating its own
-    release the way Anthropic gates Mythos, a genuinely new sign that
-    safety-gating is becoming normal practice outside the US labs, not
-    just inside them. Watch: whether DeepSeek's price hike is a one-off
-    congestion fix or the first crack in the assumption that Chinese
-    open-weight pricing can undercut the West indefinitely; and whether
-    the multiagent-swarm failure modes Anthropic just published prompt
-    any other lab to run, or disclose, the same experiment.
+    built to solve — a structural question, not a per-lab one. China's
+    stack answered in volume and, for the first time this thread has a
+    hard number on, real adoption rather than benchmark claims alone:
+    Alibaba's Qwen family passed 3 billion cumulative downloads across
+    460+ open-sourced variants — more than Google's and Meta's combined —
+    while Zhipu's GLM-5.3 gave the clearest new benchmark-parity data
+    point, a narrow win over Anthropic's own gated Mythos 5 on one
+    cybersecurity benchmark (CyberGym) while trailing badly on another
+    (ExploitBench), and Zhipu voluntarily gating its own release the way
+    Anthropic gates Mythos — a genuinely new sign that safety-gating is
+    becoming normal practice outside the US labs, not just inside them.
+    Capital and physical buildout both kept racing ahead of the
+    capability story, and by week's end the capital side produced its
+    first real crack: Nvidia's own reported cut to its OpenAI Ohio
+    guarantee (see Q2) is the first concrete sign the vendor-financing
+    architecture's own author is pulling back, arriving the same week
+    Michael Burry escalated his public short and Texas's audit-and-freeze
+    produced its first named compliance case (Core Scientific, Vantage
+    Data Centers, SB Energy). Watch: whether DeepSeek's price hike is a
+    one-off congestion fix or the first crack in the assumption that
+    Chinese open-weight pricing can undercut the West indefinitely;
+    whether the multiagent-swarm failure modes Anthropic just published
+    prompt any other lab to run, or disclose, the same experiment; and
+    whether Nvidia's Ohio-guarantee cut is a one-off scoping decision or
+    the start of the platform trimming its own exposure more broadly.
 
 ## Q6 — What's moving in the market around my work?
 - **mode:** both · **lens:** mental-health · **status:** open
@@ -519,6 +640,34 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     point — two of this lens's own thread candidates (PE capacity
     quietly contracting; perinatal/postpartum care quality) are still
     sitting unpromoted after each used its one allowed reappearance.
+  - week 2026-08-10 (/week, continued through 08-15): the week's
+    follow-up question resolved cleanly: Aetna's already-once-softened
+    reimbursement cut to Alma-contracted therapists took effect 08-15
+    exactly as scheduled and held without further pushback found — but
+    "held" undersells what landed. The cut is real and state-specific:
+    New York therapists lose 10.6% on a 60-minute session (CPT 90837) and
+    9.7% on intake (90791); New Jersey loses 15.2% and 16.8% on the same
+    two codes; 30-minute sessions are untouched everywhere. The two
+    biggest originally-proposed cuts (collapsing 90837/90834 into one
+    rate; flattening reimbursement across license levels) are the parts
+    Aetna walked back in July after APA/APA Services protested — what
+    landed is the softer remainder. `aetna-alma-rate-cut-effective`
+    flipped passed-silent (neither Aetna nor Alma issued a formal
+    announcement), but a practice-management blog independently
+    published the exact new rate tables the same day, so "silent"
+    describes the companies' communications discipline, not genuine
+    uncertainty about whether the cut is real. No third data point landed
+    for the PE-capacity-contraction pattern this week — it stays at two
+    (Maryland's 988 line, Kentucky's Recovery Works), not three.
+    Implication: this is a clean, if quiet, answer on the payer side — a
+    payer can walk back the harshest parts of a therapist-facing cut
+    under professional-association pressure and still land a real,
+    absorbed reduction; neither "payer pressure eases" nor "payer
+    pressure reasserts" fully fits. Working-note candidate: track whether
+    the PE-capacity-contraction pattern gets its third data point in the
+    coming weeks, and watch for any therapist- or APA-side follow-up to
+    the Aetna cut now that the rate tables are public — a quiet landing
+    is not the same as an uncontested one.
 
 ## Q7 — Where is capital and economic power concentrating — in my markets and above them?
 - **mode:** both · **lens:** money · **status:** open *(scoped by Ben 2026-07-20)*
@@ -601,64 +750,80 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     unreachable in 6 of this week's 7 critic passes — logged honestly each
     time but never fixed. Worth deciding between an alternate route to
     these two outlets or dropping them from the benchmark set.
-  - week 2026-08-10 (/week, partial week 08-10–08-14): the vendor-financing
+  - week 2026-08-10 (/week, partial week 08-10–08-15): the vendor-financing
     structure got its first genuinely public, NAMED skepticism this week,
-    not just a spread or a CDS move. Nvidia opened the week turning itself
-    into AI-buildout's lender of last resort — MOUs with six of the
-    largest asset managers (Apollo/BlackRock/Blackstone/Brookfield/
-    Goldman/KKR) to mobilize $500B+ treating GPU capacity as collateral —
-    and by Thursday three independent voices had converged on the same
-    worry from three angles: Moody's flagged banks' own operational
-    dependence on a handful of AI vendors as a cascade risk; a Jefferies
-    note quantified the four largest hyperscalers' combined free cash
-    flow collapsing from $60B (Q4 2025) to $7B (Q2 2026) against $165B of
-    quarterly capex; and Michael Burry, for the first time, named Nvidia's
-    actual platform (not the AI boom generally) "abnormal" and its
-    revenue "largely financed through circular arrangements." The
-    transaction layer confirmed the mechanism is real, not theoretical,
-    at three separate layers in one week: CoreWeave's Q2 print showed net
-    interest expense more than doubling YoY alongside backlog growth;
-    Lambda's loan showed the exact circular shape (Nvidia as investor,
-    supplier, customer, and counterparty at once) the BIS warned about in
-    June, and picked up the first investment-grade rating a private
-    neocloud has ever carried; AMD's largest-ever bond sale moved the
-    borrowing UP a layer, from neocloud to chipmaker, explicitly to fund
-    its own $5B Anthropic stake; and a Jane Street-backed data-center
-    bond became this map's first sub-investment-grade AI-datacenter
-    print. None of it has moved credit pricing yet — HY/IG OAS sat flat
-    all week (2.70-2.72 / 0.78-0.79) and the VIX actually fell
-    (15.46→14.63) — so the skepticism is running ahead of the market, not
-    confirmed by it; that gap is now the thing to track. Underneath,
-    Iran's war kept escalating (Trump's "total control" claim, Iran's
-    flat rejection, a second Houthi refinery strike, first-ever drone
-    hits on UAE-flagged tankers) while oil fell anyway on OPEC's fourth
-    straight demand downgrade and a 17.4M-barrel US inventory build —
-    rhetoric and price moving opposite ways on repeated separate tests,
-    the clearest evidence yet this market prices fundamentals over
-    headlines. July CPI cooled to 3.4%, cutting September-hike odds
-    roughly in half (48%→~30% by week's end) even as the Treasury's own
-    30-year auction cleared at 5.216%, the highest since 2001 — near-term
-    Fed risk easing while the government's own long-run borrowing cost
-    got harder, two distinct pressures moving opposite directions in the
-    same week. The week closed on wealth-and-power: Berkshire's Q2 13F,
-    read straight off SEC EDGAR, showed the Alphabet stake nearly
-    doubling in both share count (+83%) and value (+127%, to $37.8B) with
-    NO other AI-adjacent equity anywhere in the 29-issuer portfolio,
-    alongside a real rotation elsewhere (Constellation Brands exited,
-    BofA/Capital One/Kroger trimmed, Delta grown, a token D.R. Horton
-    toehold) — Buffett's AI conviction concentrating further, not
-    broadening. Track next: whether Burry's named critique of Nvidia's
-    platform gets picked up by any rating agency (a credibility test
-    distinct from press coverage); whether the Jane Street sub-IG print
-    is a one-off or a tranche pattern; and whether September-hike odds
-    keep falling as more August data lands before 09-16. **Axios Pro
-    Rata's access gap, flagged in the 08-09 note as unreachable 6 of 7
-    passes, recurred again this week** (confirmed blocked at least twice,
-    08-10 and 08-13) — FT Unhedged's own parallel gap from three weeks
-    ago appears resolved (reachable all four checkable days this week via
-    RSS), so Axios Pro Rata is now the sole persistent benchmark-access
-    problem, unresolved across five-plus coverage-log passes. Still needs
-    Ben's call: an alternate route, or drop it from the benchmark set.
+    and by Friday that skepticism had a dollar figure attached to it.
+    Nvidia's $500B compute-financing-platform MOUs (Monday, with
+    Apollo/BlackRock/Blackstone/Brookfield/Goldman/KKR) set the week's
+    frame, and by Thursday three independent voices had converged on the
+    same worry from three angles: Moody's flagged banks' own operational
+    dependence on a small set of AI vendors as a systemic-cascade risk;
+    Jefferies put a hard number on hyperscaler cash-flow compression
+    ($60B to $7B in two quarters, against $165B of quarterly capex); and
+    Michael Burry, for the first time, named Nvidia's actual platform
+    "abnormal" and its revenue "largely financed through circular
+    arrangements." The transaction layer kept confirming the mechanism is
+    real: CoreWeave's Q2 print showed net interest expense more than
+    doubling YoY alongside backlog growth; Lambda's loan showed the exact
+    circular shape (Nvidia as investor, supplier, customer, and
+    counterparty at once) the BIS warned about in June, and picked up the
+    first investment-grade rating a private neocloud has ever carried;
+    AMD's bond sale moved the borrowing up a layer, from neocloud to
+    chipmaker; and a Jane Street-backed data-center bond became this
+    map's first sub-investment-grade print. Friday turned the whole
+    question quantitative: Nvidia itself pulled back its own OpenAI Ohio
+    guarantee by more than half (up to $250B in talk down to under $120B,
+    phase-one-only) — the clearest evidence yet the platform architect is
+    managing its own exposure downward under pressure — the same day
+    Bloomberg put a specific number, roughly $70 billion, on the total of
+    comparable off-balance-sheet guarantees now circulating across
+    Nvidia, Broadcom (backstopping Anthropic's $35B chip deal) and Meta
+    (whose earlier data-center debt deals are the template both are
+    copying), with Moody's, DoubleLine and CreditSights each
+    independently naming the same concern Burry raised alone: these
+    structures are "gaming the ratings system" (DoubleLine) and
+    "pro-cyclical" (CreditSights) — nearly costless in a boom, dangerous
+    exactly when demand turns. Credit markets themselves still haven't
+    priced any of this as stress — HY/IG OAS sat essentially flat all
+    week (2.70-2.72 / 0.78-0.79) and the VIX drifted to 14.25 by Friday,
+    its lowest 2026 close — so the skepticism is running well ahead of
+    the pricing. On the macro backdrop: Brent round-tripped from ~$88 to
+    $92.54 (Tue) back to $87 (Wed/Thu) on OPEC's fourth straight
+    demand-growth downgrade and a 17.4M-barrel US inventory build, before
+    reversing sharply Friday to close the week up more than 5% on
+    blockade rhetoric rather than any physical incident — the first time
+    all week the pattern flipped. July CPI cooled to 3.4% (Tue), cutting
+    September-hike odds from 48% toward ~30.4% by Thursday; Friday's weak
+    retail-sales and consumer-sentiment prints add two more data points
+    to the same cooling side. The Treasury's own 30-year auction cleared
+    at 5.216% Thursday (highest since 2001, the third 2026 auction above
+    5%) — near-term Fed risk easing while the government's own long-run
+    borrowing cost keeps getting harder. On wealth and power: Berkshire's
+    Q2 13F, read straight off EDGAR, showed the Alphabet position growing
+    +83% in shares / +127% in value with no other AI-adjacent equity
+    anywhere in the 29-issuer portfolio, alongside a real rotation
+    elsewhere (Constellation Brands exited, BofA/Capital One/Kroger
+    trimmed, Delta grown) — Buffett's AI conviction concentrated further,
+    unaccompanied by a broader AI bet. Sovereign capital moved on the same
+    axis from a different direction: NEOM's Oxagon got its first hard
+    construction timeline (1.5GW, groundbreaking within 2-3 months, $5B
+    initial DataVolt investment) — direct evidence PIF's retreat from
+    "The Line" is landing concretely as AI-infrastructure spend. **Axios
+    Pro Rata's access gap — unresolved across five-plus coverage-critic
+    passes since 08-03 — is now FIXED.** Ben approved a workaround 08-14
+    ("yes to find workaround"); the fix (committed 08-15) routes the
+    outlet through the r.jina.ai reader proxy, the same class of fix
+    already proven on MobiHealthNews/Behavioral Health Business. One
+    confirmed live test so far (the 08-14 critic pass read the full
+    issue); worth a one-time re-check next week before calling it
+    permanently closed, since the 08-15 digest's own critic pass hadn't
+    run as of this synthesis. Track next: whether Burry's named critique
+    gets picked up by any rating agency; whether the Jane Street sub-IG
+    print is a one-off or a tranche pattern; and whether the platform's
+    own architect (Nvidia) keeps trimming exposure while publicly
+    maintaining the $500B MOU framing — that gap between public
+    commitment and actual backstop size is now the thing to track, not
+    the headline number itself.
 
 ---
 
