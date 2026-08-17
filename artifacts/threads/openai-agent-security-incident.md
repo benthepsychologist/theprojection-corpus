@@ -44,6 +44,28 @@ for community cyber-defence — watch whether that is paid.
   08-16 entry below). OpenAI is now making the public case for
   AI-native defense with less of the internal capacity that would
   have graded the offense Brockman describes. ⟨daily 2026-08-17⟩
+- **Brockman went on CNBC the same day and called the executive exodus
+  "not that atypical" — without the Preparedness team coming up.** On
+  *Squawk Box* he argued the departures draw disproportionate notice:
+  "I actually think that the difference between OpenAI and other
+  organizations is that we are so much in the spotlight, so every
+  departure gets scrutinized in a way that it doesn't otherwise," and
+  "there have been different eras where we have different sets of
+  leaders in place. I'm a constant, Sam is a constant." The departures
+  at issue are commercial and product leadership — CRO Denise Dresser,
+  Brad Lightcap, Fidji Simo, Kevin Weil, Bill Peebles, Srinivas
+  Narayanan — not the safety org.
+  ([Yahoo Finance / CNBC](https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html)) ⟨daily 2026-08-17⟩
+- ⚠️ **Correction to this map's own 15:00 ET reading.** An afternoon
+  sweep concluded OpenAI had made *no* on-the-record response to the
+  Preparedness dissolution, and the digest said so. That was wrong as
+  stated — the president gave a broadcast interview. It holds in the
+  narrower sense that matters here: **Preparedness was not raised and
+  Brockman did not address it.** The day's shape is therefore an essay
+  on catastrophic agent risk, a television defence of leadership churn,
+  and silence on the team built to evaluate the risk in the essay. No
+  departing researcher, external safety organisation or lawmaker has
+  commented. ⟨daily 2026-08-17⟩
 
 ## 2026-08-16 — FT: OpenAI dissolved its Preparedness team days after this thread's breach went public
 

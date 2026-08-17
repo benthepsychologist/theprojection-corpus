@@ -11,34 +11,68 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
-## 2026-08-17 — Signed: structure confirmed at primary source, the figure still isn't
+## 2026-08-17 — Signed, and priced at $105B in the 8-K the press release didn't mention
 
 - **Nvidia, OpenAI and SoftBank's SB Energy jointly announced the signed
-  PORTS-Pike Technology Campus in Pike County, Ohio, with named quotes
-  from Jensen Huang, Sam Altman and Masayoshi Son.** Nvidia provides
-  credit support on land, power and shell buildout for an initial 4.25
-  IT-GW, with an option on the remaining 3.75; OpenAI is named customer
-  for 8 IT-GW total. Nvidia also confirmed a **$1.5B direct investment
-  in SB Energy**, correcting weekend reports of "up to $3B" that
-  described pre-announcement talks rather than the final terms.
+  PORTS-Pike Technology Campus in Pike County, Ohio, with named quotes from
+  Jensen Huang, Sam Altman and Masayoshi Son.** Nvidia provides credit
+  support on land, power and shell buildout for an initial 4.25 IT-GW, with
+  an option on the remaining 3.75; OpenAI is named customer for 8 IT-GW
+  total. Nvidia also confirmed a **$1.5B direct investment in SB Energy**,
+  correcting weekend reports of "up to $3B" that described pre-announcement
+  talks rather than final terms.
   ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute), [OpenAI](https://openai.com/index/openai-joins-ports-pike-project)) ⟨daily 2026-08-17⟩
-- **The structure is now confirmed at primary source; the dollar figure
-  on the guarantee itself is not — the release prints no number at
-  all.** The "under $120B" figure this thread has carried since 08-15
-  remains WSJ reporting, well corroborated in press but never
-  company-confirmed. Trajectory to date: $250B (07-28) → up to $750B in
-  combined SK Group/OpenAI talks (08-04) → under $120B, phase-one only
-  (08-15) → signed, phase-one, unpriced (08-17). ⟨daily 2026-08-17⟩
-- **Separately, Crunchbase reports semiconductor companies have
-  participated in more than $250B of AI/robotics startup financings in
-  2026 to date, with Nvidia leading at 59 rounds year-to-date (up from
-  53 in all of 2025)** — including co-leading OpenAI's $122B round in
-  March and a $5B cheque into Safe Superintelligence in July; AMD backed
-  19 startups including at least four $1B+ rounds, Samsung at least 17.
-  The relevance to this thread: chip-vendor financing reads as a
-  sector-wide systemic pattern, not just the handful of headline
-  Nvidia-OpenAI deals tracked above.
+- **The guarantee figure this thread has chased since 07-27 is now
+  company-stated: $105 billion, capped, in NVIDIA's 8-K.** "NVIDIA's
+  aggregate payment obligation is cumulatively capped at $105 billion for
+  its initial commitment under the Agreements." Full trajectory: $250B
+  (07-28) → up to $750B in combined SK Group/OpenAI talks (08-04) → under
+  $120B, phase-one only, WSJ-sourced (08-15) → **$105B, filed** (08-17). The
+  WSJ number was correct in direction and close in magnitude.
+  ([NVIDIA 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm)) ⟨daily 2026-08-17⟩
+- **The instrument is a residual-value guarantee, not a project backstop —
+  and OpenAI indemnifies Nvidia for anything Nvidia pays.** Nvidia covers
+  "any shortfall between the guaranteed minimum value of a lease and amounts
+  recovered through a replacement lease or sale" across ~4.25 GW of IT load.
+  A "Trigger Event" is "(i) OpenAI's insolvency resulting in a default under
+  a lease, or (ii) OpenAI's failure to make payments under a lease."
+  Obligations run to each lease's 20th anniversary and attach only once
+  ready-for-service conditions are met, expected beginning in 2028. Nvidia
+  may extend credit support to ~3.8 GW more at sole discretion. And: "OpenAI
+  has agreed to reimburse and indemnify NVIDIA for any and all amounts
+  actually paid by NVIDIA to the Lessor" — recourse runs back to the party
+  whose insolvency is the trigger.
+  ([NVIDIA 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm)) ⟨daily 2026-08-17⟩
+- **⚠️ Map-integrity note: the 8-K was public at 04:41 ET, four hours before
+  this map's morning pass recorded the figure as missing.** The morning read
+  stopped at exhibit EX-99.1, the press release. The lesson carried forward:
+  on any deal creating a financial obligation, the 8-K BODY (Items
+  1.01/2.03) is the primary source and the press-release exhibit is not. ⟨daily 2026-08-17⟩
+- **Groq — rung four on this thread's stake ladder — raised $350M at $3.5B,
+  half its $6.9B September valuation, with Nvidia in the round.** Led by
+  Disruptive with planned Nvidia participation. Nvidia hired founder/CEO
+  Jonathan Ross and much of the senior silicon team in a $20B licensing deal
+  in December; Groq has since abandoned its own LPU architecture and become
+  a neocloud running Nvidia systems — 13 data centres, 6M+ developers,
+  scaling 54 MW to 200+ MW in 2027. This is the first rung on the ladder
+  (Nebius 9.3% · Naver $1B · Intel $5B · Groq ~$20B licensing) with a
+  visible outcome, and the outcome is that an independent silicon competitor
+  became a customer.
+  ([TechCrunch](https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/groq-valued-at-3-5-billion-in-funding-round-after-nvidia-deal)) ⟨daily 2026-08-17⟩
+- **Separately, Crunchbase reports semiconductor companies have participated
+  in more than $250B of AI/robotics startup financings in 2026 to date, with
+  Nvidia leading at 59 rounds year-to-date (up from 53 in all of 2025)** —
+  including co-leading OpenAI's $122B round in March and a $5B cheque into
+  Safe Superintelligence in July; AMD backed 19 startups including at least
+  four $1B+ rounds, Samsung at least 17. Chip-vendor financing reads as a
+  sector-wide systemic pattern, not just the headline Nvidia-OpenAI deals.
   ([Crunchbase News](https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/)) ⟨daily 2026-08-17⟩
+- **Nvidia's own stock barely moved on it: +0.21% at $225.64.** ⚠️ A
+  widely-circulating claim of a ~4.5% drop with a record CDS-spread jump is
+  MISDATED — its sources reference a "$250B" deal size, the late-July
+  figure, so the reaction described is the earlier one re-indexed. Not
+  carried.
+  ([Yahoo Finance live blog](https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html)) ⟨daily 2026-08-17⟩
 
 ## 2026-08-15 — The guarantee is cut in half, and narrowed to phase one
 

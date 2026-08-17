@@ -12,6 +12,26 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-17 — Caught late: the revenue number behind the Anthropic listing
+
+- **🕰 Anthropic's Q2 revenue exceeded $11.5B, up roughly 14x
+  year-on-year — reported by Bloomberg on 2026-08-14 and missing from
+  this map until today.** Preliminary figures from documents Bloomberg
+  reviewed: $11.5B against $787M in Q2 2025 and $4.73B in Q1 2026, with
+  positive adjusted operating income for the quarter. For a thread about
+  what public markets will pay for an AI story, this is the single most
+  material input on the candidate closest to listing — and it was
+  absent while the thread carried the listing's *timing* in detail.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter),
+  [CNBC](https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html)) ⟨daily 2026-08-17⟩
+- **The gap is instructive about this thread's own coverage shape.** The
+  08-15 entry below records the IPO timeline firming to a
+  September–October Nasdaq target with investor meetings underway and
+  backers pressing management on Chinese model competition — a
+  process-and-sentiment read with no fundamentals attached, written the
+  day after the fundamentals published. Logged under its true date; the
+  08-14 and 08-15 digests are not reopened. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — SpaceX recovers above issue price on its first earnings; Anthropic's IPO timeline firms, and a seller picks its stock over cash
 
 - **SpaceX (SPCX) reported its first-ever quarterly earnings as a public

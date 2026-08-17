@@ -91,6 +91,16 @@ lenses:
                      # frontier-ai agent as a recurring unresolvable reference
                      # across ai-power-buildout, nvidia-order-book, and
                      # ai-circular-financing-risk with no entity slug.
+      - "Groq"       # added 2026-08-17 (daily, 15:00 extension pass) — same
+                     # failure mode as Lancium above: `nvidia-vendor-financing`
+                     # has carried "Groq ~$20B licensing (Dec-25)" on Nvidia's
+                     # stake ladder since the thread was spun out, with no
+                     # entity slug to resolve it. Today it became the first
+                     # rung on that ladder with an outcome — a $350M round at
+                     # $3.5B, half its $6.9B September valuation, after Nvidia
+                     # hired founder Jonathan Ross and the LPU team and Groq
+                     # abandoned its own silicon to run Nvidia systems.
+                     # Unique corporate string; safe bare.
       - term: "Frontier Security"
         entity: frontier-security
         name: "Frontier Security"
@@ -276,6 +286,33 @@ lenses:
         # `meta-ai`, so the fix is correcting the digests, not adding a
         # duplicate entity), `masayoshi-son`, `jeff-dean`, `allianz`,
         # `globalfoundries` (one use each). Left for Ben's call.
+      - term: "UnitedHealth"
+        entity: unitedhealth-group
+        name: "UnitedHealth Group / Optum"
+        # added 2026-08-17 (daily, 15:00 extension pass): the largest US
+        # payer, sitting directly on this lens's `payer-ai-claim-denial`
+        # thread, had NO watchlist term at all. The cost showed today:
+        # three same-day UnitedHealth items — an IRS transfer-pricing
+        # probe covering 2017-2020, an amended investor complaint
+        # alleging a shut-down internal audit over $200M in unsupportable
+        # diagnosis codes, and $2B+ in Change Healthcare breach costs —
+        # reached this map only through a generic global-capital RSS
+        # feed, not through any term the map owns. Same failure mode as
+        # the Kaiser / UHS / LifeStance / Hims & Hers auto-adds below and
+        # above: a subject already being tracked in prose with no term to
+        # catch it. Unlike "Arm" / "Sonia" / "Cerebral" — all
+        # disambiguated this morning for returning near-pure noise —
+        # "UnitedHealth" is a unique corporate string with no common-word
+        # collision, so it is safe as a bare term.
+      - term: "Centene"
+        entity: centene
+        name: "Centene"
+        # added 2026-08-17 (daily, 15:00 extension pass): the largest US
+        # Medicaid managed-care organisation, and Medicaid behavioural
+        # health is the seam this lens tracks hardest. Surfaced today on
+        # a CFO succession (Drew Asher out 12-31, Chris Neczypor in
+        # 01-01) against a $1.1B Q2 profit swing, and had no term.
+        # Unique corporate string, safe bare.
       - term: "Hims & Hers"
         entity: hims-and-hers
         name: "Hims & Hers"

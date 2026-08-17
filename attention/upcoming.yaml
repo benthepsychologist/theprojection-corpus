@@ -863,6 +863,22 @@ expectations:
       claimed). Re-check after 08-15 for whether the softened remainder
       actually takes effect.
 
+      ⚠️ FALSE-ALARM GUARD, added 2026-08-17 (daily, 15:00 extension) —
+      READ THIS BEFORE RE-DERIVING. A sweep this afternoon reported that
+      the trade press "consistently" dates these cuts to JULY 15, not
+      August 15 (ClearHealthCosts, Behavioral Health Business,
+      HarborVisibility, Bomi Health all describing the same three changes:
+      90837/90834 session-length parity, doctoral-to-master's rate
+      flattening, 99215→99214 E/M downgrade), and concluded this entry's
+      premise looked wrong. IT IS NOT. July 15 was the ORIGINAL date and is
+      already recorded in this entry's own `slips:` list; Aetna's 07-08
+      partial rollback dropped the two largest cuts and pushed the softened
+      remainder to 08-15, which is what `due` now tracks. The July-dated
+      coverage describes the PRE-SLIP package and mostly predates the
+      rollback. Any future sweep rediscovering "July 15" has found the
+      history, not a contradiction. Status unchanged: passed-silent, grace
+      through 08-18, still nothing dated on or after 08-15 either way.
+
   - id: berkshire-q2-2026-13f
     claim: "Berkshire Hathaway's Q2 2026 13F filing discloses whether the Alphabet position kept growing and whether any other AI-adjacent equity appears"
     due: 2026-08-14
@@ -975,6 +991,19 @@ expectations:
     # directly, turned out dated August 2025, a prior bargaining cycle, not
     # this year's.) Flipping to passed-silent; 3-day grace continues watching
     # for a late readout.
+    # 2026-08-17 ⟨daily, 15:00 extension⟩: third check, same result — Kaiser's
+    # hub still newest at 08-11, NUHW's press archive still newest at 07-27,
+    # both fetched directly rather than via search summary. ⚠️ AND A SECOND
+    # DATE-ECHO, which makes this entry a repeat magnet for them: a search
+    # summary returned, with full confidence, "NUHW agreed to an open-ended
+    # strike on Monday, August 15th, after negotiations with Kaiser failed."
+    # Traced to source, that is a real NUHW press release dated AUGUST 2022 —
+    # a different strike that also began on a Monday the 15th. Combined with
+    # the August-2025 false positive logged on 08-15 above, this entry has
+    # now attracted stale-content matches from two different prior years,
+    # both landing on plausible-sounding August dates. RULE FOR THIS ENTRY:
+    # accept nothing that is not fetched directly from nuhw.org or
+    # about.kaiserpermanente.org with a visible 2026 date on the page itself.
     slips: []
     status: passed-silent
 
@@ -1261,15 +1290,95 @@ expectations:
     # Timing worth noting: WSJ (via qz.com, 08-17 11:45 GMT) was still
     # calling the deal "nearing" hours before the release went out — a
     # check run earlier today would have read passed-silent.
+    # 2026-08-17 ⟨daily, 15:00 extension⟩: the precision point above is
+    # RESOLVED, and the resolution corrects this map rather than the press.
+    # The dollar figure WAS published by NVIDIA today — not in the press
+    # release, but in the 8-K filed alongside it (accession
+    # 0001045810-26-000069, accepted 08:41:33 UTC = 04:41 ET, i.e. public
+    # roughly four hours BEFORE the 10:00 ET pass that recorded it as
+    # missing). The morning read stopped at exhibit EX-99.1, the press
+    # release, and did not open the 8-K body where Items 1.01 and 2.03
+    # state the terms. Lesson for future runs: on any deal that creates a
+    # financial obligation, the 8-K BODY is the primary source and the
+    # press-release exhibit is not.
     status: hit
     resolved: 2026-08-17
     evidence: >
-      NVIDIA newsroom joint press release, 2026-08-17, with Huang/Altman/Son
-      quotes: NVIDIA guarantees SB Energy's PORTS-Pike campus in Pike County,
-      Ohio, providing credit support on land, power and shell buildout for an
-      initial 4.25 IT-GW with an option on the remaining 3.75 IT-GW; OpenAI
-      named as customer for 8 IT-GW. Dollar figure (<$120B) is WSJ-sourced,
-      not stated in the release.
+      NVIDIA 8-K, 2026-08-17 (accession 0001045810-26-000069), Items 1.01 /
+      2.03 / 7.01. Guarantee is QUANTIFIED at primary source: "NVIDIA's
+      aggregate payment obligation is cumulatively capped at $105 billion for
+      its initial commitment under the Agreements." Structure is a
+      RESIDUAL-VALUE guarantee, not a project backstop — NVIDIA pays "any
+      shortfall between the guaranteed minimum value of a lease and amounts
+      recovered through a replacement lease or sale" on ~4.25 GW of IT load.
+      Trigger Event is "(i) OpenAI's insolvency resulting in a default under a
+      lease, or (ii) OpenAI's failure to make payments under a lease."
+      Terminates at the 20th anniversary of each lease; attaches only once
+      ready-for-service conditions are met, expected beginning 2028. NVIDIA
+      may add credit support for ~3.8 GW more at sole discretion. Critically:
+      "OpenAI has agreed to reimburse and indemnify NVIDIA for any and all
+      amounts actually paid by NVIDIA to the Lessor." Accompanying newsroom
+      release (with Huang/Altman/Son quotes) confirms the phase-one shape:
+      initial 4.25 IT-GW, option on remaining 3.75, OpenAI customer for 8
+      IT-GW, NVIDIA equity in SB Energy $1.5B. This entry's own "<$120B"
+      claim text is therefore CONFIRMED correct in direction and close in
+      magnitude — the filed number is $105B.
+
+  - id: likud-primary-results
+    claim: "Likud publishes its primary result — the candidate list for the 2026-10-27 general election"
+    due: 2026-08-18
+    due_precision: day
+    thread: gaza-war
+    entities: []
+    source: https://www.timesofisrael.com/liveblog-august-17-2026/
+    confidence: confirmed
+    what_confirms: "the published slate, and whether Netanyahu's picks for the nine top slots he controlled hold"
+    logged: 2026-08-17
+    logged_by: curate-add
+    # Polls opened 10:00 IDT and closed 21:00 IDT = 14:00 ET, INSIDE the
+    # 15:00 ET extension pass's own window — one of very few items today
+    # with a hard timestamp rather than a "Monday" dateline. Turnout ~53.5%,
+    # down from ~58% in 2022. Netanyahu had secured control over nine top
+    # list slots ahead of the vote; polling suggests Likud could shed about
+    # a third of its seats in October.
+    status: pending
+
+  - id: russia-duma-election
+    claim: "Russia holds parliamentary elections 2026-09-18/20 — the first with Yabloko, its only openly anti-war party, barred from the ballot"
+    due: 2026-09-20
+    due_precision: day
+    thread: russia-ukraine-war
+    entities: []
+    source: https://www.bloomberg.com/news/articles/2026-08-17/russia-sentences-politician-to-11-years-for-opposing-putin-s-war
+    confidence: confirmed
+    what_confirms: "the result, turnout, and whether any anti-war voice appears on a ballot at all"
+    logged: 2026-08-17
+    logged_by: curate-add
+    # Logged 08-17 after two same-day rulings: a Pskov court sentenced
+    # Yabloko deputy chair Lev Shlosberg to 11 years 1 month for
+    # "discrediting the military," and the Supreme Court upheld barring
+    # Yabloko from this ballot, rejecting its appeal — both three weeks
+    # before the vote. The pairing is why this is worth a ledger entry
+    # rather than a timeline line: it makes the election's competitive
+    # shape a dated, checkable claim.
+    status: pending
+
+  - id: israel-general-election
+    claim: "Israel holds its general election 2026-10-27"
+    due: 2026-10-27
+    due_precision: day
+    thread: gaza-war
+    entities: []
+    source: https://www.timesofisrael.com/liveblog-august-17-2026/
+    confidence: confirmed
+    what_confirms: "the result, and whether Likud's projected loss of roughly a third of its seats materialises"
+    logged: 2026-08-17
+    logged_by: curate-add
+    # The domestic-political clock running underneath the Gaza and Lebanon
+    # files. Logged now because today's Likud primary is its first
+    # checkable waypoint and nothing in the ledger tracked the election
+    # itself.
+    status: pending
 
   - id: israel-lebanon-rome-round-8
     claim: "Eighth round of Israel-Lebanon negotiations convenes in Rome"

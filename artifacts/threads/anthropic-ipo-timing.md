@@ -12,6 +12,23 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-17 — Caught late: the Q2 revenue print this map never carried
+
+- 🕰 **Anthropic's Q2 revenue exceeded $11.5B, up roughly 14x year-on-year —
+  reported by Bloomberg on 2026-08-14 and missing from this map until
+  today.** Preliminary figures from documents Bloomberg reviewed: $11.5B
+  against $787M in Q2 2025 and $4.73B in Q1 2026, with positive adjusted
+  operating income for the quarter.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter), [CNBC](https://www.cnbc.com/2026/08/15/anthropic-revenue-jumps-to-over-11point5-billion-in-q2-report.html)) ⟨daily 2026-08-17⟩
+- **The gap is worth naming because of what this thread WAS carrying at the
+  time.** The 08-15 digest covered Anthropic's IPO timeline firming to a
+  September–October Nasdaq target with investor meetings underway and
+  backers pressing management on Chinese model competition — without the
+  revenue print that had landed the day before. Logged under its true date;
+  the 08-14 and 08-15 digests are not reopened. It surfaced today only
+  because an afternoon sweep mis-reported it as fresh news and checking the
+  date found the gap instead. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — The timeline firms to September, and a seller picks Anthropic stock over a higher Nvidia cash bid
 
 - **WSJ reports Anthropic is targeting a September or early-October

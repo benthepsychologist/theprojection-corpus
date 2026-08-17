@@ -24,21 +24,47 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
-## 2026-08-17 — The 60-day US–Iran memorandum expires with no deal, confirming a collapse already underway since July
+## 2026-08-17 — The framework expires; maximal rhetoric, motionless markets
 
 - **The 60-day US–Iran memorandum of understanding expired Monday with
-  no deal.** The June 17 Versailles MoU ran to 14 points: an immediate
-  multi-front ceasefire covering Lebanon and Gaza, Iranian mine-clearing
-  and safe passage through Hormuz, and in exchange a US pledge to end
-  its naval blockade, lift sanctions and fund a $300B reconstruction
-  package. It had been effectively void since Trump declared it "over"
-  on July 7, after a June 25 tanker strike and June 27 US retaliation.
-  Iranian Foreign Ministry spokesman Esmail Baghaei said no talks were
-  ever initiated, citing the US's "gross and widespread violation." The
-  deadline passing confirms a collapse already underway rather than
-  causing a new one — worth logging precisely because it reads like
-  news.
+  no deal, formally closing a framework dead in practice since July.**
+  The June 17 Versailles MoU ran to 14 points — a multi-front
+  ceasefire covering Lebanon and Gaza, Iranian mine-clearing and safe
+  passage through Hormuz, against a US pledge to lift its naval
+  blockade, end sanctions and fund a $300B reconstruction package.
+  Void since Trump declared it "over" on July 7. Iranian Foreign
+  Ministry spokesman Esmail Baghaei said no talks were ever initiated,
+  citing "gross and widespread violation." Confirmation, not change.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart)) ⟨daily 2026-08-17⟩
+- **Trump demanded Iran's surrender, claimed an IRGC backchannel, and
+  threatened to bomb Oman — the mediator.** In a Fox News phone
+  interview he said Iran should "put up the white flag of surrender,"
+  that he has "no time schedule" and the midterms are not factoring
+  in, and asserted a direct channel to the Revolutionary Guard:
+  "They're good poker players, but they're dying." On Hormuz: "If Oman
+  gets in the way, we'll bomb the s*** out of them." Oman is the
+  counterparty whose confirmation `iran-oman-hormuz-deal-signing` (due
+  08-19) is waiting on.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/17/trump-demands-iran-put-up-the-white-flag-of-surrender-as-mou-expires)) ⟨daily 2026-08-17⟩
+- **The IRGC called the backchannel claim a "delusion" within hours.**
+  Spokesman Hossein Mohebbi said no IRGC–US dialogue is occurring and
+  that even Iran's diplomats are not negotiating, citing US "breach of
+  promises." Baghaei separately dismissed Axios reporting — which had
+  US negotiators reaching the IRGC in May via Iraqi Kurdistan
+  President Nechirvan Barzani, with an alleged secret Erbil meeting —
+  as "media techniques and psychological operations used to sow
+  discord," and called the expired deadline "no longer relevant" and
+  "entirely moot."
+  ([Anadolu](https://www.aa.com.tr/en/us-israel-iran-war/iran-s-irgc-dismisses-trump-s-claim-of-backchannel-talks-as-lies-/4029695)) ⟨daily 2026-08-17⟩
+- **Iran separately claimed a Hormuz transit-route "understanding"
+  with Oman that Oman has not confirmed, and Brent ignored all of
+  it.** Baghaei described ships entering near Iran and exiting near
+  Oman without tolls during an interim period, while conceding the
+  full map and joint statement are unfinished. Brent held near $89–90
+  and gave up early gains through the US session. A full day of
+  two-sided maximal headlines with a flat tape is the strongest
+  available evidence that the market prices a frozen stalemate rather
+  than a directional break. ⟨daily 2026-08-17⟩
 
 ## 2026-08-15 — Iran and Oman agree a Hormuz "shipping map" but rule out US talks; a third ADNOC tanker and a bulk carrier are hit; Israeli strikes kill 11 in Lebanon
 

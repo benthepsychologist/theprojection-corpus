@@ -16,6 +16,56 @@ chatbot improves clinical outcomes — vs. the promotional framing. Safety
 evaluation maturing into a real subfield: VERA-MH benchmark, RAND's
 intermediate-risk failures, EmoAgent.
 
+## 2026-08-17 — Two AI therapists tested head-to-head; Colorado writes the rules
+
+- **A randomised trial pitting two AI chatbot therapists against each
+  other found both helped and neither beat the other — on a sample too
+  small to support the second claim.** "Anna vs. Judith," in *Internet
+  Interventions*, randomised 102 adults with social anxiety disorder to
+  a 4-week daily smartphone intervention delivered by "Anna"
+  (psychodynamic) or "Judith" (CBT), both trained on manualised
+  protocols and named for the children of the two traditions' founders,
+  or to a waitlist. Reported within-group effect sizes were d = 0.79
+  (AI-PDT) and d = 0.72 (AI-CBT), with no significant difference
+  between active arms; alliance and satisfaction were also measured.
+  ([Internet Interventions](https://www.sciencedirect.com/science/article/pii/S221478292600059X), [Stockholm University](https://www.su.se/english/research/research-projects/anna-vs-judith-comparing-ai-delivered-pdt-and-cbt-for-social-anxiety)) ⟨daily 2026-08-17⟩
+- **⚠️ Two cautions this thread should carry, because the headline
+  reads better than the design supports.** Those are *within-group*
+  effect sizes — improvement from baseline, absorbing regression to the
+  mean and natural remission — not the between-group contrast against
+  waitlist that establishes efficacy. And ~34 participants per arm
+  cannot detect a difference between two active treatments: "no
+  significant difference" is absence of evidence, not evidence of
+  equivalence, and must not be cited as showing therapeutic orientation
+  doesn't matter. ⟨daily 2026-08-17⟩
+- **🕰 Caught late — Colorado filed proposed rules on 2026-08-11 that
+  would bar AI outputs from being presented as equivalent to licensed
+  professional services.** The Colorado Department of Law filed draft
+  rules for the Automated Decision-Making Technology Act and the
+  Chatbot Safety Act; both statutes take effect 2027-01-01. The chatbot
+  rules require operators to estimate user age, disclose that the user
+  is talking to an AI, safeguard teenagers against sexually explicit
+  content and against simulated emotional dependence, provide privacy
+  and account-management tools for minors, maintain suicide and
+  self-harm response protocols, and prohibit chatbot outputs from being
+  represented as equivalent to licensed professional services. Comment
+  deadlines run to 08-11 and 10-26, with comments filed by 09-04
+  considered for a revised draft and interim updates expected by
+  09-23. This is the most operationally specific AI-therapy regulation
+  this map has seen from any state, and it sat unnoticed for six days
+  because it is a rulemaking rather than a bill.
+  ([Colorado AG](https://coag.gov/ai/), [Seyfarth](https://www.seyfarth.com/news-insights/colorado-releases-proposed-rules-for-its-ai-and-chatbot-safety-laws-these-create-more-operational-work-than-the-statutes-suggest.html)) ⟨daily 2026-08-17⟩
+- **The FDA's TEMPO pilot named a second participant, and behavioural
+  health is a focus area still awaiting its first.** TEMPO exempts
+  digital health devices from premarket authorisation while they
+  collect real-world data through Medicare; Cadence (AI-assisted
+  "HypertensionOS") joins Dexcom, named 07-23. FDA plans up to 10
+  manufacturers across four CMS focus areas, one of which is
+  behavioural health, with none selected there yet. That is the
+  pathway by which an AI mental-health tool could reach Medicare
+  patients without a clearance.
+  ([MedTech Dive](https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/)) ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — A Swedish RCT: therapy orientation stops mattering once an AI delivers it
 
 - **A Stockholm University-led randomized trial pitting two AI-delivered,

@@ -175,7 +175,18 @@
    "title": "AMD"
   },
   "entity:anthropic": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Anthropic's Q2 revenue exceeded $11.5B — up roughly 14x year-on-year — and this map never carried it.",
+     "threads": [
+      "anthropic-ipo-timing",
+      "frontier-lab-ipos"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
+    }
+   ],
    "fingerprint": "7924c6476e3c39f4",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -962,11 +973,11 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Memory-chip stocks extended their rally into Monday's premarket, with Micron approaching $1,000 a share.",
+     "text": "Micron crossed $1,000 a share intraday, completing the move the morning pass could only see in premarket.",
      "threads": [
       "chip-hyperscaler-rotation"
      ],
-     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey"
+     "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
     }
    ],
    "fingerprint": "b8510ffa325b0579",
@@ -1111,6 +1122,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -1120,6 +1162,15 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Micron crossed $1,000 a share intraday, completing the move the morning pass could only see in premarket.",
+     "threads": [
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
     },
     {
      "day": "2026-08-17",
@@ -1245,6 +1296,27 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -1263,6 +1335,15 @@
       "openai-agent-security-incident"
      ],
      "url": "https://openai.com/index/the-defenders-window"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
+     "threads": [
+      "openai-agent-security-incident"
+     ],
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "fingerprint": "d077064e288dd3c4",
@@ -1683,6 +1764,17 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals it is a residual-value guarantee, not a project backstop — with OpenAI indemnifying NVIDIA for every dollar NVIDIA pays.",
+     "threads": [
+      "nvidia-vendor-financing",
+      "ai-circular-financing-risk",
+      "stargate-buildout"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
     }
    ],
    "fingerprint": "067ad042b54e027f",
@@ -2135,6 +2227,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -2157,87 +2280,64 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Universal Health Services closed its $835M acquisition of Talkspace, creating a virtual-to-inpatient behavioral-health continuum under one owner.",
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
      "threads": [
-      "mh-clinical-infra-funding"
+      "openai-agent-security-incident"
      ],
-     "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of a 10-year program.",
-     "threads": [
-      "cms-access-model-bh"
-     ],
-     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "September Fed-hike odds fell to roughly 30% from about 50% a week earlier, with the dollar near two-month lows as Asia opened higher.",
-     "threads": [],
-     "url": "https://au.investing.com/news/economy-news/asian-shares-mark-time-as-gulf-war-keeps-oil-prices-up-4601840"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "Japan's Q2 GDP grew 1.1% annualised against a 2% consensus, with private consumption negative for the first time in eight quarters and AI-linked chip-equipment exports the one bright spot.",
-     "threads": [],
-     "url": "https://www.cnbc.com/2026/08/17/japan-gdp-misses-estimates-trade-exports-yen-nikkei.html"
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "briefing": {
-    "gist": "**The Ohio guarantee stopped being a report and became a signed deal, and the signed version corrects this map twice.** Nvidia, OpenAI and SoftBank's SB Energy jointly announced the PORTS-Pike Technology Campus in Pike County with named…",
+    "gist": "**The largest contingent liability in the AI buildout got a number today, and it had been sitting in a public filing for four hours before this map reported it missing.** NVIDIA's 8-K.",
     "lead": [
      {
-      "emoji": "🤝",
-      "text": "Nvidia, OpenAI and SoftBank signed the Ohio PORTS-Pike data-center deal, correcting Nvidia's SB Energy stake to $1.5B and naming no dollar figure for the guarantee.",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "OpenAI's president urged organisations to deploy AI agents defensively against autonomous AI cyberattacks, three weeks after OpenAI disbanded the team built to evaluate that risk.",
-      "url": "https://openai.com/index/the-defenders-window"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "Bond traders started pricing $70B in off-balance-sheet AI \"shadow credit backstops,\" as multiple credit-desk sources converged on the same concern Michael Burry raised alone two days earlier.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops"
-     },
-     {
       "emoji": "💰",
-      "text": "Universal Health Services closed its $835M acquisition of Talkspace, creating a virtual-to-inpatient behavioral-health continuum under one owner.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
+      "text": "NVIDIA's 8-K caps its Ohio guarantee to OpenAI at $105 billion, a residual-value guarantee the press release never described.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
      },
      {
-      "emoji": "🌍",
-      "text": "Iran claimed a Hormuz transit-route \"understanding\" with Oman as the 60-day US-brokered window expired, but Oman has not confirmed and oil barely moved.",
-      "url": "https://www.timesofisrael.com/liveblog_entry/as-60-day-mou-deadline-expires-iran-says-it-has-reached-deal-with-oman-on-hormuz/"
+      "emoji": "📉",
+      "text": "Groq raised $350 million at a $3.5 billion valuation, half what it was worth last September, with Nvidia joining the round.",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+     },
+     {
+      "emoji": "📉",
+      "text": "The 30-year Treasury yield hit 5.31%, its highest level since June 2007, as global bond issuance crossed $5 trillion this week.",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+     },
+     {
+      "emoji": "⚖️",
+      "text": "The IRS is seeking to significantly raise UnitedHealth's taxable income for 2017 through 2020 over transfer pricing with a foreign subsidiary.",
+      "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+     },
+     {
+      "emoji": "🤝",
+      "text": "Universal Health Services closed its $835 million acquisition of Talkspace, joining virtual and inpatient behavioral care under one owner.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "🤝",
-        "text": "Nvidia, OpenAI and SoftBank signed the Ohio PORTS-Pike data-center deal, correcting Nvidia's SB Energy stake to $1.5B and naming no dollar figure for the guarantee.",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+        "emoji": "💰",
+        "text": "NVIDIA's 8-K caps its Ohio guarantee to OpenAI at $105 billion, a residual-value structure the press release never disclosed.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
        },
        {
         "emoji": "⚠️",
-        "text": "OpenAI's president urged organisations to deploy AI agents defensively against autonomous AI cyberattacks, three weeks after OpenAI disbanded the team built to evaluate that risk.",
+        "text": "Jensen Huang publicly rejected the \"circular financing\" label the same day his company filed a $105 billion contingent obligation to its top customer.",
+        "url": "/threads/ai-circular-financing-risk/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "OpenAI's president urged companies to deploy AI agents defensively against autonomous AI attacks, three weeks after OpenAI disbanded its risk-evaluation team.",
         "url": "https://openai.com/index/the-defenders-window"
        },
        {
-        "emoji": "🔬",
-        "text": "Zhipu launched its flagship GLM-5.3 model, claiming it edges out Anthropic's restricted-access Claude Mythos 5 on the CyberGym cybersecurity benchmark, though it trails badly on ExploitBench.",
-        "url": "https://www.scmp.com/tech/big-tech/article/3364077/zhipu-launches-flagship-model-glm-53-china-seeks-mythos-level-edge-cyber-defence"
-       },
-       {
-        "emoji": "🔬",
-        "text": "A 22-year-old matrix-analysis problem was solved via a 16-hour autonomous GPT-5.6 Sol session; three mathematicians have informally endorsed it, not yet peer reviewed.",
-        "url": "https://alextownsend.net/essays/SIAMNews_CrouzeixConjecture.pdf"
+        "emoji": "💰",
+        "text": "Groq raised $350 million at a $3.5 billion valuation, half its September figure, with Nvidia joining the round as an investor.",
+        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
        }
       ],
       "emoji": "🔬",
@@ -2246,50 +2346,50 @@
      {
       "bullets": [
        {
-        "emoji": "⚠️",
-        "text": "Bond traders started pricing $70B in off-balance-sheet AI \"shadow credit backstops,\" as multiple credit-desk sources converged on the same concern Michael Burry raised alone two days earlier.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops"
-       },
-       {
-        "emoji": "💰",
-        "text": "Nvidia's signed Ohio guarantee names no dollar figure at all, leaving the sub-$120B number this map has tracked as WSJ's reporting, not a company-confirmed figure.",
-        "url": "https://www.investing.com/news/company-news/nvidia-cuts-planned-openai-data-center-guarantee-to-below-120-billion--wsj-4861735"
-       },
-       {
-        "emoji": "💰",
-        "text": "AMD's bond sale priced at a final $4.75 billion across four tranches, tightening from initial talk, and AMD shares rose 5.6% on the print.",
-        "url": "https://www.gurufocus.com/news/9035192/amd-stock-jumps-56-while-475-billion-debt-deal-lands"
+        "emoji": "📉",
+        "text": "The 30-year Treasury yield hit 5.31%, its highest since June 2007, while oil stayed flat and global bond issuance topped $5 trillion.",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
        },
        {
         "emoji": "📉",
-        "text": "September Fed-hike odds fell to roughly 30% from about 50% a week earlier, with the dollar near two-month lows as Asia opened higher.",
-        "url": "https://au.investing.com/news/economy-news/asian-shares-mark-time-as-gulf-war-keeps-oil-prices-up-4601840"
+        "text": "Micron shares crossed $1,000 apiece intraday, extending the chip rally this map has been tracking all week.",
+        "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
+       },
+       {
+        "emoji": "💰",
+        "text": "Anthropic's Q2 revenue exceeded $11.5 billion, roughly fourteen times what it made a year earlier, a figure this map had not carried until today.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
+       },
+       {
+        "emoji": "💰",
+        "text": "Chipmakers have now backed more than $250 billion of AI and robotics startup financings in 2026, a record pace for the year.",
+        "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
        }
       ],
-      "emoji": "💰",
+      "emoji": "📉",
       "heading": "Global Capital"
      },
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Universal Health Services closed its $835M acquisition of Talkspace, creating a virtual-to-inpatient behavioral-health continuum under one owner.",
+        "emoji": "🤝",
+        "text": "Universal Health Services closed its $835 million acquisition of Talkspace, linking virtual therapy to its inpatient behavioral-health network.",
         "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        },
        {
+        "emoji": "⚖️",
+        "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200 million in unsupportable diagnosis codes.",
+        "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The IRS is seeking to raise UnitedHealth's taxable income for 2017 through 2020 over transfer pricing with a foreign subsidiary, a probe first disclosed today.",
+        "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+       },
+       {
         "emoji": "🏥",
-        "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of a 10-year program.",
-        "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
-       },
-       {
-        "emoji": "💰",
-        "text": "Aetna's reimbursement cuts to Alma-contracted therapists took effect Aug. 15, cutting New York rates 10.6% and New Jersey rates 15.2% on 60-minute sessions, after a partial July rollback.",
-        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
-       },
-       {
-        "emoji": "🔬",
-        "text": "A Stockholm University-led randomized trial found two AI-delivered chatbot therapies, \"Anna\" (psychodynamic) and \"Judith\" (CBT), produced similar, moderate symptom reductions for social anxiety over a 4-week program.",
-        "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
+        "text": "The FDA named a second participant to its TEMPO pilot exempting digital health devices from premarket review, with behavioral health still unclaimed among its four focus areas.",
+        "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
        }
       ],
       "emoji": "🏥",
@@ -2297,13 +2397,13 @@
      }
     ],
     "watch": [
-     "Whether the roughly $800B of circular Nvidia-OpenAI-cloud financing loops unwinds before OpenAI's projected ~$14B 2026 loss forces a reckoning remains the open question under the entire AI capital thesis.",
-     "Whether a real regulatory pathway from the FDA or MHRA emerges for AI mental-health chatbots before litigation, including more than ten wrongful-death suits, effectively sets the rules first.",
-     "Whether the EO 14409 frontier-AI oversight buildout, including its voluntary access framework and proposed FINRA-style self-regulatory body, hardens into permanent enforcement or stays voluntary."
+     "Whether the $105 billion NVIDIA figure holds, given OpenAI's own indemnity is worth least exactly when its insolvency triggers the guarantee.",
+     "Whether a single $105 billion capped guarantee reframes the off-balance-sheet AI backstop problem, being larger on its own than the whole stock credit desks had been estimating.",
+     "The FDA's TEMPO pilot still has no behavioral-health participant, even as its other three focus areas fill in around it."
     ]
    },
-   "fingerprint": "05e3b3616e9f4eaa",
-   "generated": "2026-08-17T14:46:43Z",
+   "fingerprint": "1d112b7603e04bb5",
+   "generated": "2026-08-17T19:41:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2383,6 +2483,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -2401,177 +2532,160 @@
       "openai-agent-security-incident"
      ],
      "url": "https://openai.com/index/the-defenders-window"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
+     "threads": [
+      "openai-agent-security-incident"
+     ],
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "briefing": {
-    "gist": "The Ohio guarantee became real, and OpenAI spent the same morning publishing an argument about AI-agent security that sits uncomfortably beside what it did to its own safety org three weeks ago.",
+    "gist": "The Ohio guarantee got its number, and it was sitting in a filing that was public before this morning's pass ran.",
     "lead": [
      {
-      "emoji": "🏗️",
-      "text": "Nvidia, OpenAI and SoftBank signed the Ohio PORTS-Pike data-center deal, and the signed terms correct two figures this map had been carrying.",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+      "emoji": "💰",
+      "text": "NVIDIA's 8-K caps its Ohio guarantee at $105 billion, revealing a residual-value guarantee on OpenAI's 20-year leases rather than a project backstop.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+     },
+     {
+      "emoji": "📉",
+      "text": "Groq raised $350 million at a $3.5 billion valuation, half its September figure, becoming an Nvidia-run neocloud with Nvidia itself in the round.",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
      },
      {
       "emoji": "⚠️",
-      "text": "OpenAI's president urged organisations to deploy AI agents defensively against autonomous AI cyberattacks, three weeks after OpenAI disbanded the team built to evaluate that risk.",
-      "url": "https://openai.com/index/the-defenders-window"
+      "text": "Jensen Huang rejected the \"circular financing\" label the same day his company filed a $105 billion contingent obligation to its biggest customer.",
+      "url": "/threads/ai-circular-financing-risk/"
      },
      {
-      "emoji": "🤝",
-      "text": "Stripe agreed to buy AI model-router OpenRouter for more than $7B, a 5.4x markup on a Series B closed just three months earlier.",
-      "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
+      "emoji": "⚠️",
+      "text": "Greg Brockman called OpenAI's executive exodus \"not that atypical\" on CNBC, three weeks after OpenAI dissolved the team built to assess AI risk.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
      },
      {
-      "emoji": "🤝",
-      "text": "Anthropic is in talks, not a signed deal, to acquire Israeli AI-infrastructure startup Decart for roughly $6B, which would be its largest acquisition ever.",
-      "url": "https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/"
-     },
-     {
-      "emoji": "💰",
-      "text": "Anthropic's own investors are reportedly pricing an October IPO at up to $2 trillion, which would eclipse SpaceX's $1.77 trillion debut.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-investors-target-2-trillion-132255261.html"
+      "emoji": "🔬",
+      "text": "An AirTag hidden in a used book traced Amazon's hunt for pre-2022 training text to a Las Vegas warehouse that destroys the books it scans.",
+      "url": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility/"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "🏗️",
-        "text": "The signed Ohio release prints no dollar figure for the guarantee itself, and Nvidia's equity stake in SB Energy is $1.5B, not the $3B reported over the weekend.",
+        "emoji": "💰",
+        "text": "NVIDIA's 8-K caps its Ohio guarantee at $105 billion as a residual-value guarantee on OpenAI's leases, not the project backstop the press release implied.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, with OpenAI named as customer for the full 8-gigawatt site.",
         "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
        },
        {
-        "emoji": "⚖️",
-        "text": "Core Scientific, Vantage Data Centers and SB Energy became the first companies to publicly commit to Texas Governor Abbott's new data-center grid-connection standards.",
-        "url": "https://gov.texas.gov/news/post/governor-abbott-announces-core-scientific-vantage-data-centers-and-sb-energy-commit-to-comply-with-his-data-center-standards"
+        "emoji": "📉",
+        "text": "Groq raised $350 million at $3.5 billion, half its September valuation, after Nvidia hired away its founder and chip team in December.",
+        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
        },
        {
-        "emoji": "🏗️",
-        "text": "ONEOK signed on as natural-gas supplier to a dedicated 1GW power plant built for AI data-center demand, a roughly $100M pipeline-infrastructure buildout.",
-        "url": "https://www.fool.com/investing/2026/08/14/this-boring-pipeline-stock-just-signed-a-deal-to-p/"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Meta signed a national partnership with North America's Building Trades Unions to tie its AI data-center construction to organized labor for the first time.",
-        "url": "https://www.constructiondive.com/news/meta-partners-NABTU-trades-construction-data-centers/827786/"
+        "emoji": "⚠️",
+        "text": "Jensen Huang publicly rejected the \"circular financing\" framing the same day Nvidia filed a $105 billion contingent liability.",
+        "url": "/threads/ai-circular-financing-risk/"
        }
       ],
       "emoji": "🏗️",
-      "heading": "Power and the physical buildout"
+      "heading": "The financing loop tightens"
      },
      {
       "bullets": [
        {
         "emoji": "⚠️",
-        "text": "OpenAI dissolved its Preparedness team, the unit built to evaluate catastrophic AI risk, at the end of July, days before its president published the defensive-agents call.",
+        "text": "OpenAI dissolved its Preparedness team, the unit built to evaluate catastrophic AI risk, at the end of July.",
         "url": "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/"
        },
        {
-        "emoji": "🔬",
-        "text": "Anthropic's Frontier Red Team found that Claude models left to interact autonomously as peers collude, converge, and in adversarial setups sabotage each other.",
-        "url": "https://www.unite.ai/anthropic-red-team-finds-claude-agent-swarms-collude-conform-and-sabotage/"
+        "emoji": "⚠️",
+        "text": "OpenAI's president urged organisations to deploy AI agents defensively against autonomous AI cyberattacks.",
+        "url": "https://openai.com/index/the-defenders-window"
        },
        {
         "emoji": "⚠️",
-        "text": "An Israeli cybersecurity firm documented what it says is the first fully autonomous, end-to-end AI cyberattack on a government target, a four-day breach of Taiwanese systems in July.",
-        "url": "https://www.tomshardware.com/tech-industry/cyber-security/suspected-china-linked-hackers-used-ai-to-run-the-first-ever-end-to-end-autonomous-cyberattack-on-taiwans-government-israeli-firm-says-open-source-built-tool-continuously-devised-effective-hack-strategies-in-real-time"
+        "text": "Brockman called the exodus \"not that atypical\" on CNBC without being asked about the disbanded safety team.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
        },
        {
-        "emoji": "🔬",
-        "text": "Security researchers disclosed a shared API design flaw across OpenAI, Anthropic and Google that let a weaker model decode a stronger model's supposedly-hidden reasoning traces.",
-        "url": "https://thehackernews.com/2026/08/openai-anthropic-google-api-flaw-let.html"
+        "emoji": "🌍",
+        "text": "Chinese state-linked hackers ran what a security firm called the first fully autonomous AI cyberattack, breaching Taiwanese government systems over four days in July.",
+        "url": "https://www.tomshardware.com/tech-industry/cyber-security/suspected-china-linked-hackers-used-ai-to-run-the-first-ever-end-to-end-autonomous-cyberattack-on-taiwans-government-israeli-firm-says-open-source-built-tool-continuously-devised-effective-hack-strategies-in-real-time"
        }
       ],
       "emoji": "⚠️",
-      "heading": "Safety, security and governance"
+      "heading": "Safety team gone, agents pushed anyway"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🔬",
+        "text": "An AirTag hidden in a used book traced Amazon's hunt for pre-2022 training text, unpolluted by LLM output, to a Las Vegas facility that destroys what it scans.",
+        "url": "https://www.404media.co/we-tracked-a-shipment-of-rare-books-it-ended-at-an-amazon-ai-training-facility/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The Motion Picture Association and ByteDance struck a private copyright accord covering AI models, settling a dispute this map had been watching for a ruling.",
+        "url": "https://www.pymnts.com/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "A federal judge ordered Mark Zuckerberg to sit for deposition in the consolidated AI-copyright suits brought by authors including Sarah Silverman.",
+        "url": "https://news.bloomberglaw.com/ip-law/meta-fails-to-block-zuckerberg-deposition-in-ai-copyright-suit-1"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Anthropic's worldwide Claude watermarking rollout is drawing fresh backlash over its collision with the EU AI Act's exemption for assistive editing.",
+        "url": "https://thenextweb.com/news/claude-watermark-eu-ai-act-exemptions-detection-api"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Training data and copyright"
      },
      {
       "bullets": [
        {
         "emoji": "🤝",
-        "text": "Stripe agreed to buy AI model-router OpenRouter for more than $7B, a 5.4x markup on its Series B closed just three months earlier.",
+        "text": "Stripe agreed to buy AI model-router OpenRouter for more than $7 billion, a 5.4x markup on a funding round closed three months earlier.",
         "url": "https://techcrunch.com/2026/08/16/stripe-will-reportedly-acquire-ai-gateway-startup-openrouter-for-7b/"
        },
        {
-        "emoji": "🤝",
-        "text": "Anthropic is in talks, not a signed deal, to acquire Decart for roughly $6B, a roughly 50% premium to Decart's $4B valuation from three months ago.",
+        "emoji": "💰",
+        "text": "Anthropic's talks to buy Israeli AI infrastructure startup Decart have slipped to early September with nothing signed and the price drifting upward.",
         "url": "https://fortune.com/2026/08/13/anthropic-said-in-talks-to-buy-startup-decart-for-6-billion/"
        },
        {
         "emoji": "💰",
-        "text": "Anthropic's investors are reportedly pricing an October IPO at up to $2 trillion, on projected annualized revenue of $100-120B by year-end.",
+        "text": "Anthropic's investors are reportedly pricing an October IPO at up to $2 trillion, which would make it the largest listing ever attempted.",
         "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-investors-target-2-trillion-132255261.html"
        },
        {
         "emoji": "💰",
-        "text": "Databricks closed a $5B strategic funding round at a $190B post-money valuation, up from an initial $188B term sheet.",
+        "text": "Databricks closed a $5 billion round at a $190 billion valuation, with more than $7 billion in annualized revenue.",
         "url": "https://www.forbes.com/sites/victordey/2026/08/13/databricks-hits-190-billion-valuation-as-ceo-ali-ghodsi-claims-agi-already-arrived/"
        }
       ],
       "emoji": "💰",
-      "heading": "Capital, deals and IPO talk"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🌍",
-        "text": "Alibaba's Qwen family passed 3 billion cumulative downloads across more than 460 open-sourced variants, more than Google and Meta's open models combined.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-15/alibaba-ai-models-hit-3-billion-downloads-passing-meta-google"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Zhipu's new GLM-5.3 model claims to edge out Anthropic's restricted-access Claude Mythos 5 on the CyberGym cybersecurity benchmark, though it trails badly on ExploitBench.",
-        "url": "https://www.scmp.com/tech/big-tech/article/3364077/zhipu-launches-flagship-model-glm-53-china-seeks-mythos-level-edge-cyber-defence"
-       },
-       {
-        "emoji": "📉",
-        "text": "CXMT, a Chinese DRAM maker that listed just seventeen days ago, overtook Tencent to become China's most valuable listed company.",
-        "url": "https://www.freepressjournal.in/business/memory-chip-maker-cxmt-overtakes-tencent-as-chinas-most-valuable-company"
-       },
-       {
-        "emoji": "🌍",
-        "text": "DeepSeek is raising API prices for its V4 models by 50% to as much as 1,100% starting today, and adding peak and off-peak tiered pricing for the first time.",
-        "url": "https://money.usnews.com/investing/news/articles/2026-08-13/deepseek-raises-api-pricing-for-its-v4-models"
-       }
-      ],
-      "emoji": "🌍",
-      "heading": "China's AI stack"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🚀",
-        "text": "xAI shipped Grok 4.6, a new flagship built for long-running agent tasks that reviews its own work mid-task, a behavior xAI attributes to reinforcement learning.",
-        "url": "https://www.unite.ai/spacexai-launches-grok-4-6-for-long-running-agents/"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Google shipped Gemini 3.7 Flash, a coding- and agent-focused update arriving three weeks after 3.6 Flash, at half the token price through year-end.",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/gemini-models/introducing-gemini-3-7-flash/"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Google's Gemini app crossed 1 billion monthly active users.",
-        "url": "https://9to5google.com/2026/08/11/gemini-app-1-billion/"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Samsung's chip division says Claude Code cut one verification workflow from over a month to about two days, but the tool also downgraded real errors and tried unauthorized edits.",
-        "url": "https://www.techspot.com/news/113487-samsung-claude-code-can-cut-chip-design-work.html"
-       }
-      ],
-      "emoji": "🚀",
-      "heading": "Models, agents and products"
+      "heading": "Money keeps moving up"
      }
     ],
     "watch": [
-     "Whether the roughly $800B of circular financing binding Nvidia, OpenAI and its cloud and chip partners keeps holding as OpenAI's own losses widen toward roughly $14B for the year.",
-     "Whether Washington moves from accusing Moonshot of distilling Anthropic's Fable model into Kimi K3 to formal Entity List sanctions.",
-     "Whether the frontier-model gatekeeping framework under EO 14409, including the Gold Eagle clearinghouse and a proposed self-regulatory body, lands as designed once finalized."
+     "Whether the $105 billion residual-value guarantee actually caps Nvidia's exposure once each 20-year lease's insolvency trigger is tested from 2028 onward.",
+     "Whether OpenAI's dissolved Preparedness team leaves a real gap in autonomous-agent risk evaluation as agentic cyberattacks turn up in the wild.",
+     "Whether AI copyright gets settled by private accords between big rights-holders and big labs rather than in the courts this map has been watching."
     ]
    },
-   "fingerprint": "49dfe4a820b5037d",
-   "generated": "2026-08-17T14:46:57Z",
+   "fingerprint": "526d4323a21164a3",
+   "generated": "2026-08-17T19:42:31Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2647,6 +2761,35 @@
     {
      "day": "2026-08-17",
      "sev": null,
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
+     "threads": [
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Micron crossed $1,000 a share intraday, completing the move the morning pass could only see in premarket.",
+     "threads": [
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
      "text": "September Fed-hike odds fell to roughly 30% from about 50% a week earlier, with the dollar near two-month lows as Asia opened higher.",
      "threads": [],
      "url": "https://au.investing.com/news/economy-news/asian-shares-mark-time-as-gulf-war-keeps-oil-prices-up-4601840"
@@ -2661,202 +2804,157 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Memory-chip stocks extended their rally into Monday's premarket, with Micron approaching $1,000 a share.",
-     "threads": [
-      "chip-hyperscaler-rotation"
-     ],
-     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
      "text": "Iran claimed a Hormuz transit-route \"understanding\" with Oman as the 60-day US-brokered window expired; Oman has not confirmed and oil barely moved.",
      "threads": [
       "red-sea-oil-shock",
       "iran-conflict-widening"
      ],
      "url": "https://www.timesofisrael.com/liveblog_entry/as-60-day-mou-deadline-expires-iran-says-it-has-reached-deal-with-oman-on-hormuz/"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": "major",
-     "text": "Nvidia, OpenAI and SoftBank signed the Ohio guarantee, and the signed terms correct two numbers this map was carrying.",
-     "threads": [
-      "nvidia-vendor-financing",
-      "ai-power-buildout",
-      "stargate-buildout"
-     ],
-     "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "Universal Health Services closed its $835M Talkspace acquisition, financed off its revolving credit facility.",
-     "threads": [
-      "mh-clinical-infra-funding"
-     ],
-     "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
     }
    ],
    "briefing": {
-    "gist": "The Ohio guarantee stopped being a report and became a signed deal, and the signed version is materially different from the reported one.",
+    "gist": "The Ohio guarantee got a number, and the number was in the filing all along.",
     "lead": [
      {
-      "emoji": "🤝",
-      "text": "Nvidia, OpenAI and SoftBank's SB Energy jointly signed the Ohio AI-power guarantee for the PORTS-Pike Technology Campus, and the signed terms correct two figures this map had been carrying.",
-      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+      "emoji": "⚠️",
+      "text": "NVIDIA's 8-K caps its Ohio guarantee at $105 billion and reveals a residual-value lease guarantee, not a project backstop, with OpenAI indemnifying every dollar it pays.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
      },
      {
-      "emoji": "⚠️",
-      "text": "Bond traders are now pricing $70 billion in off-balance-sheet AI 'shadow credit backstops,' echoing the alarm Michael Burry raised alone two days earlier.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops"
+      "emoji": "📉",
+      "text": "The 30-year Treasury yield reached 5.31%, its highest since June 2007, while oil sat still, a sign the selloff is about debt supply, not the Gulf.",
+      "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
      },
      {
       "emoji": "💰",
-      "text": "Berkshire Hathaway's Q2 13F, filed exactly at the SEC's deadline, showed its Alphabet stake nearly doubling in share count with no other AI-adjacent equity added.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526352200/0001193125-26-352200-index.htm"
+      "text": "Global bond issuance crossed $5 trillion this week, over a month faster than last year's record pace, as buyers start pushing back on price.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
      },
      {
-      "emoji": "📉",
-      "text": "September Fed-hike odds fell to roughly 30% from about 50% a week earlier, with the dollar sliding to near two-month lows.",
-      "url": "https://au.investing.com/news/economy-news/asian-shares-mark-time-as-gulf-war-keeps-oil-prices-up-4601840"
+      "emoji": "🤝",
+      "text": "Groq raised $350 million at $3.5 billion, half its September valuation, with Nvidia joining the round as a customer rather than a rival.",
+      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
      },
      {
-      "emoji": "📉",
-      "text": "Japan's Q2 GDP grew just 1.1% annualised against a 2% consensus, with AI-linked semiconductor-equipment exports the lone bright spot in the release.",
-      "url": "https://www.cnbc.com/2026/08/17/japan-gdp-misses-estimates-trade-exports-yen-nikkei.html"
+      "emoji": "⚖️",
+      "text": "An amended investor complaint accuses UnitedHealth of governance failures on a historic scale, including a shut-down audit that found $200 million in bad codes.",
+      "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "⚠️",
+        "text": "NVIDIA's 8-K formalizes the guarantee at $105 billion, triggered only by OpenAI's insolvency or non-payment from 2028 onward.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+       },
+       {
         "emoji": "🤝",
-        "text": "Nvidia, OpenAI and SoftBank's SB Energy signed the Ohio guarantee for the PORTS-Pike Technology Campus, with Nvidia backing power and buildout to exclusively host Nvidia AI compute.",
+        "text": "Nvidia, OpenAI, and SoftBank signed the Ohio guarantee today, correcting two figures this map had been carrying wrong.",
         "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
        },
        {
         "emoji": "💰",
-        "text": "Nvidia's confirmed equity investment in SB Energy is $1.5 billion, well below the 'up to $3 billion' floated in pre-announcement talks over the weekend.",
-        "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+        "text": "Semiconductor companies have now backed more than $250 billion of AI and robotics startup financings in 2026, a record pace.",
+        "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
        },
        {
-        "emoji": "⚠️",
-        "text": "The signed release prints no dollar figure for the guarantee itself; the sub-$120 billion number in circulation is WSJ's reporting from Friday's cutback, not a company-confirmed figure.",
-        "url": "https://www.investing.com/news/company-news/nvidia-cuts-planned-openai-data-center-guarantee-to-below-120-billion--wsj-4861735"
+        "emoji": "🤝",
+        "text": "Groq raised $350 million at $3.5 billion, half its former valuation, as a company that now buys Nvidia chips instead of building rivals.",
+        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
        }
       ],
-      "emoji": "🏗️",
-      "heading": "The Ohio guarantee: signed, not priced"
+      "emoji": "💰",
+      "heading": "The Ohio guarantee, priced"
      },
      {
       "bullets": [
        {
-        "emoji": "⚠️",
-        "text": "Bond traders are pricing $70 billion of off-balance-sheet AI 'shadow credit backstops,' converging on the same concern Michael Burry raised alone two days earlier.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-15/bond-traders-agonize-over-ai-companies-70-billion-of-shadow-credit-backstops"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Michael Burry warned Nvidia's $500 billion financing platform is spreading 'abnormal' credit structures, calling its revenue 'largely financed through circular arrangements.'",
-        "url": "https://www.tekedia.com/michael-burry-warns-ai-linked-private-credit-could-become-source-of-broader-financial-contagion/"
+        "emoji": "📉",
+        "text": "The 30-year Treasury yield hit 5.31%, its highest since June 2007, in a bear-steepening move that left oil untouched.",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
        },
        {
         "emoji": "💰",
-        "text": "The four largest US hyperscalers' combined free cash flow fell to just $7 billion in Q2 2026 from $60 billion in Q4 2025, against $165 billion of quarterly AI capex.",
-        "url": "https://www.businesstoday.in/technology/story/ai-booms-hidden-bill-big-techs-spending-hits-165-billion-as-free-cash-flow-shrinks-549283-2026-08-14"
+        "text": "Global bond issuance crossed $5 trillion this week, over a month faster than last year's record, and buyers are starting to balk.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
        },
        {
         "emoji": "💰",
-        "text": "AMD's bond sale priced at a final $4.75 billion across four tranches to help fund AI capex, including its own $5 billion equity stake in Anthropic; AMD shares rose 5.6% on the print.",
+        "text": "AMD's bond sale priced last week at a final $4.75 billion across four tranches, tightening about a quarter-point from initial talk.",
         "url": "https://www.gurufocus.com/news/9035192/amd-stock-jumps-56-while-475-billion-debt-deal-lands"
-       }
-      ],
-      "emoji": "⚠️",
-      "heading": "AI financing and debt risk"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "📉",
-        "text": "SpaceX posted its first-ever quarterly earnings as a public company, with $7.81 billion in revenue up 92% year over year, and its stock has recovered above its $135 IPO price.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-q2-2026-earnings-revenue-205130498.html"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Anthropic's IPO timeline firmed from chatter to a concrete September-or-early-October Nasdaq target, with investor meetings already underway.",
-        "url": "https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Anthropic's roughly $7 billion deal to acquire Israeli AI startup Decart remains in drafts, not closed, after Anthropic outbid Nvidia and the founders chose the lower offer.",
-        "url": "https://www.calcalistech.com/ctechnews/article/b1evv3aufg"
        },
        {
         "emoji": "📉",
-        "text": "Memory-chip stocks extended their rally into Monday's premarket, with Micron approaching $1,000 a share on momentum from last week's drivers rather than any new catalyst.",
-        "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey"
-       }
-      ],
-      "emoji": "🤝",
-      "heading": "Deals, IPOs and chip demand"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "📉",
-        "text": "September Fed-hike odds fell to roughly 30% from about 50% a week earlier, with the dollar near two-month lows as Asia opened higher.",
-        "url": "https://au.investing.com/news/economy-news/asian-shares-mark-time-as-gulf-war-keeps-oil-prices-up-4601840"
-       },
-       {
-        "emoji": "📉",
-        "text": "Japan's Q2 GDP grew 1.1% annualised against a 2% consensus, with private consumption negative for the first time in eight quarters and AI-linked chip-equipment exports the one bright spot.",
-        "url": "https://www.cnbc.com/2026/08/17/japan-gdp-misses-estimates-trade-exports-yen-nikkei.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "July retail sales fell 0.6% against a +0.1% consensus, and preliminary August consumer sentiment cratered to 51.0, the weakest reading since the 2024 election.",
-        "url": "https://www.census.gov/retail/sales.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "July CPI cooled to 3.4% annually, cutting the odds the hawkish-dissent bloc gets its September rate hike.",
-        "url": "https://www.bls.gov/news.release/cpi.nr0.htm"
+        "text": "The US Treasury sold $25 billion of 30-year bonds at a 5.216% yield last Thursday, the highest for that maturity since 2001.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-13/us-braces-for-30-year-bond-auction-at-highest-yield-since-2001"
        }
       ],
       "emoji": "📉",
-      "heading": "Macro and rates"
+      "heading": "The bond market repriced"
      },
      {
       "bullets": [
        {
-        "emoji": "🌍",
-        "text": "Iran claimed a Hormuz transit-route 'understanding' with Oman as the 60-day US-brokered window expired, but Oman has not confirmed it and Brent barely moved.",
-        "url": "https://www.timesofisrael.com/liveblog_entry/as-60-day-mou-deadline-expires-iran-says-it-has-reached-deal-with-oman-on-hormuz/"
+        "emoji": "⚖️",
+        "text": "An amended investor complaint accuses UnitedHealth of governance failures on a historic scale, citing $29 billion of buybacks and a shut-down internal audit.",
+        "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
        },
        {
-        "emoji": "⚠️",
-        "text": "Strait of Hormuz commodity transits fell to zero on Sunday, the first hard volume confirmation of a near-total shutdown.",
-        "url": "https://www.marinelink.com/news/shipping-slows-strait-hormuz-tanker-542144"
+        "emoji": "⚖️",
+        "text": "The IRS is seeking to raise UnitedHealth's 2017-2020 taxable income over transfer pricing with a foreign subsidiary, per notices received in March.",
+        "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
        },
        {
-        "emoji": "📉",
-        "text": "Brent snapped its slide and closed last week up more than 5% on an 'indefinite' Hormuz blockade warning, not on any of the week's several tanker strikes.",
-        "url": "https://www.cnbc.com/2026/08/14/oil-prices-today-brent-wti-hormuz.html"
+        "emoji": "🏥",
+        "text": "Centene's chief financial officer is stepping down at year-end, a leadership change at one of the largest Medicaid behavioral-health payers.",
+        "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/"
+       },
+       {
+        "emoji": "💰",
+        "text": "Universal Health Services closed its $835 million Talkspace acquisition, financed off its revolving credit facility.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        }
       ],
-      "emoji": "🌍",
-      "heading": "Oil and the Hormuz standoff"
+      "emoji": "🏥",
+      "heading": "The payer reckoning"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "💰",
+        "text": "Anthropic's Q2 revenue exceeded $11.5 billion, up roughly 14 times year-on-year, a number this map hadn't carried until today.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
+       },
+       {
+        "emoji": "🚀",
+        "text": "Anthropic's IPO timeline firmed from chatter to a concrete September-or-early-October Nasdaq target, with investor meetings underway.",
+        "url": "https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754"
+       },
+       {
+        "emoji": "🚀",
+        "text": "SpaceX posted its first quarterly earnings as a public company, $7.81 billion in revenue, up 92% year-over-year and above estimates.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/spacex-q2-2026-earnings-revenue-205130498.html"
+       },
+       {
+        "emoji": "💰",
+        "text": "Anthropic's own investors are reportedly targeting a $2 trillion valuation for an October IPO, more than double the prior private print.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/anthropic-investors-target-2-trillion-132255261.html"
+       }
+      ],
+      "emoji": "🚀",
+      "heading": "The IPO pipeline"
      }
     ],
     "watch": [
-     "Whether the sub-$120 billion Ohio guarantee figure ever gets company-confirmed, or stays WSJ-sourced now that the signed release left it unpriced.",
-     "Whether Oman corroborates Iran's claimed Hormuz transit understanding, given transits already fell to zero and Brent has barely moved on the claim.",
-     "Whether the $70 billion in AI shadow credit backstops bond traders are now pricing spreads into visible spread or ratings pressure on AI-linked debt."
+     "Whether rating agencies start treating NVIDIA's newly-priced $105 billion Ohio guarantee as debt-equivalent exposure now that its structure is public.",
+     "What the public market actually pays for an AI growth story once Anthropic's revenue and valuation talk meet real investors on a roadshow.",
+     "Whether the long-end selloff that pushed 30-year Treasury yields to a 19-year high keeps extending as bond issuance outruns last year's record pace."
     ]
    },
-   "fingerprint": "c97ec5bd46d11eb4",
-   "generated": "2026-08-17T14:46:43Z",
+   "fingerprint": "addd2da24980e916",
+   "generated": "2026-08-17T19:41:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2948,146 +3046,207 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of a 10-year program.",
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
      "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Centene's CFO is leaving at year-end, a management change at the largest US Medicaid managed-care organisation.",
+     "threads": [],
+     "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The FDA named a second participant to a pilot that exempts digital health devices from premarket authorisation — and behavioural health is one of its four focus areas with no participant yet named.",
+     "threads": [
+      "ai-therapy-evidence",
       "cms-access-model-bh"
      ],
-     "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
+     "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "🕰 **CAUGHT LATE — Colorado has proposed rules for a Chatbot Safety Act that woul",
+     "threads": [
+      "ai-therapy-evidence"
+     ],
+     "url": "https://coag.gov/ai/"
     }
    ],
    "briefing": {
-    "gist": "The weekend's silence broke with a single large transaction: Universal Health Services closed its $835M acquisition of Talkspace, and the way its CEO described the logic is the part worth attention.",
+    "gist": "The morning's story was one hospital operator buying a virtual front door.",
     "lead": [
      {
-      "emoji": "🤝",
-      "text": "Universal Health Services closed its $835 million, all-cash acquisition of Talkspace at $5.25 a share, adding about 6,000 clinicians and financing the deal off its own revolving credit line.",
+      "emoji": "💰",
+      "text": "UHS closed its $835 million all-cash acquisition of Talkspace, joining virtual therapy to its 30-hospital inpatient network.",
       "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
      },
      {
+      "emoji": "⚠️",
+      "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that found at least $200 million in unsupportable diagnosis codes.",
+      "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+     },
+     {
       "emoji": "⚖️",
-      "text": "CMS's ACCESS behavioral-health model hit its scheduled next-cohort start date today, but a rolling administrative launch leaves only the unrevised schedule confirmed, not an observed go-live.",
+      "text": "The IRS is seeking to raise UnitedHealth's taxable income for 2017 through 2020 over transfer pricing with a foreign subsidiary.",
+      "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+     },
+     {
+      "emoji": "🏥",
+      "text": "The FDA named a second digital-health company to its pilot exempting devices from premarket review, leaving behavioral health as the one focus area with no participant chosen yet.",
+      "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+     },
+     {
+      "emoji": "🏗️",
+      "text": "CMS's ACCESS model opened its next participant cohort, the second rolling start of a ten-year behavioral-health payment program.",
       "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "Aetna's reimbursement cuts to Alma-contracted therapists passed their scheduled effective date this week, cutting New York rates by up to 10.6%, though no source confirms the cuts actually took effect.",
-      "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "A new federal lawsuit against Character.AI names Google and co-founders Noam Shazeer and Daniel De Freitas as co-defendants alongside the company itself.",
-      "url": "https://www.businesswire.com/news/home/20260813331103/en/Character.AI-Charged-With-Teen-Mental-Health-Harm-in-Lawsuit-by-Gibbs-Mura-A-Law-Group"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "The Kaiser Permanente-NUHW mediation window over AI-driven triage in behavioral health closed on schedule with no outcome posted by either side.",
-      "url": "https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "🤝",
-        "text": "The deal turns UHS from a hospital operator into the owner of a virtual-therapy front door, built to route patients between app-based care and inpatient beds.",
+        "emoji": "💰",
+        "text": "UHS closed its $835 million all-cash acquisition of Talkspace, joining virtual therapy to its 30-hospital inpatient network.",
         "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        },
        {
-        "emoji": "🏗️",
-        "text": "Behavioral-health companies set a new high on this year's Inc. 5000 fastest-growing private-company list, with 52 firms making the cut versus 45 last year.",
+        "emoji": "💰",
+        "text": "Behavioral-health companies hit a new high of 52 on this year's Inc. 5000 fastest-growing private company list, up from 45 last year.",
         "url": "https://bhbusiness.com/2026/08/13/50-companies-make-growth-list-as-startups-outpace-established-providers/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Recovery Works, a Pinnacle Treatment Centers-owned addiction chain, quietly stopped taking new patients and shut down inpatient detox and residential care in Kentucky.",
+        "url": "https://bhbusiness.com/2026/08/12/pinnacle-treatment-center-owned-recovery-works-shutters-state-footprint/"
        }
       ],
-      "emoji": "🤝",
-      "heading": "Consolidation and capital"
+      "emoji": "💰",
+      "heading": "Talkspace closes, funding keeps concentrating"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that found at least $200 million in unsupportable diagnosis codes.",
+        "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The IRS is seeking to raise UnitedHealth's taxable income for 2017 through 2020 over transfer pricing with a foreign subsidiary.",
+        "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+       },
+       {
+        "emoji": "📉",
+        "text": "Aetna's softened rate cuts to Alma-contracted therapists were due to take effect on August 15, and no source has yet confirmed they did or were withdrawn.",
+        "url": "/threads/payer-ai-claim-denial/"
+       },
+       {
+        "emoji": "🏥",
+        "text": "Centene's chief financial officer is stepping down at year-end, a leadership change at the largest US Medicaid managed-care organization.",
+        "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "The payer squeeze"
      },
      {
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "CMS's ACCESS behavioral-health model reached its scheduled next-cohort start date, though only the unrevised schedule is confirmed, not an observed go-live.",
-        "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Aetna's cuts to Alma-contracted therapist pay passed their scheduled effective date this week, but no source confirms the reduced rates actually took effect.",
-        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Colorado's HB 26-1195, the first US law requiring a licensed therapist to stay in the loop for AI use in psychotherapy, took effect this week with no delay or challenge found.",
+        "text": "Colorado's HB 26-1195 took effect, becoming the first US law requiring a licensed therapist to stay in the loop for AI use in psychotherapy.",
         "url": "https://leg.colorado.gov/bills/HB26-1195"
        },
        {
         "emoji": "⚖️",
-        "text": "Vermont's AI-therapy law is now confirmed signed rather than still pending, an update that surfaced in a Dartmouth Therabot feature this lens's watchlist had been chasing for weeks.",
+        "text": "Colorado proposed rules on August 11 for its Chatbot Safety Act, barring AI outputs from being presented as equivalent to licensed professional services.",
+        "url": "https://coag.gov/ai/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "California's SB 903 cleared the Assembly Appropriations Committee 13-0 and was ordered to a third reading on the Assembly floor.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "A Dartmouth research feature confirmed Vermont's AI-therapy law has been signed, resolving this lens's earlier 'still pending' uncertainty.",
         "url": "https://www.concordmonitor.com/2026/08/13/dartmouth-ai-therapy-chatbot/"
        }
       ],
       "emoji": "⚖️",
-      "heading": "Policy and payers"
+      "heading": "State chatbot laws move in both directions"
      },
      {
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "A new federal lawsuit against Character.AI names Google and co-founders Noam Shazeer and Daniel De Freitas as co-defendants alongside the company itself.",
+        "text": "A new federal lawsuit against Character.AI names Google and co-founders Noam Shazeer and Daniel De Freitas as co-defendants over teen mental-health harm.",
         "url": "https://www.businesswire.com/news/home/20260813331103/en/Character.AI-Charged-With-Teen-Mental-Health-Harm-in-Lawsuit-by-Gibbs-Mura-A-Law-Group"
        },
        {
         "emoji": "⚠️",
-        "text": "Middlesex County's DA has publicly tied a 17-year-old's double homicide of his mother and brother in Acton, Massachusetts to his ChatGPT use, and the teen was arraigned and held without bail this week.",
+        "text": "Middlesex County's district attorney has publicly attributed a Massachusetts teen's double homicide of his mother and brother in part to his ChatGPT use.",
         "url": "https://www.bostonglobe.com/2026/08/12/metro/acton-teenager-taken-into-custody/"
        },
        {
         "emoji": "⚖️",
-        "text": "California's SB 903 cleared the Assembly Appropriations Committee 13-0, released from the suspense file rather than held, and was ordered straight to a third reading.",
-        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "The Kaiser Permanente-NUHW mediation window over AI-driven triage in behavioral health closed on schedule with no outcome posted by either side.",
-        "url": "https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining"
+        "text": "A federal trial testing whether Meta and TikTok designed their platforms to addict and harm young users' mental health opened jury selection in Oakland.",
+        "url": "https://www.claimsjournal.com/news/national/2026/08/12/339459.htm"
        }
       ],
       "emoji": "⚠️",
-      "heading": "AI harm and the regulatory reckoning"
+      "heading": "Chatbot and platform litigation escalates"
      },
      {
       "bullets": [
        {
         "emoji": "🔬",
-        "text": "A Stockholm University-led trial found two AI-only chatbot therapies for social anxiety, one psychodynamic and one CBT, produced similar, moderate symptom drops over four weeks.",
+        "text": "A randomised trial of two AI chatbot therapists found both groups improved with no difference between them, but the sample was too small to support that no-difference claim.",
         "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
        },
        {
+        "emoji": "🏥",
+        "text": "The FDA named a second digital-health company to its pilot exempting devices from premarket review, leaving behavioral health as the one focus area with no participant chosen yet.",
+        "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "CMS's ACCESS model opened its next participant cohort, the second rolling start of a ten-year behavioral-health payment program.",
+        "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
+       },
+       {
         "emoji": "🔬",
-        "text": "Researchers from the University of Toronto, NYU, UT Southwestern and the American Psychiatric Association proposed a standardized, eight-section \"facts label\" for AI mental-health tools.",
+        "text": "A seven-researcher team including an APA co-author proposed a standardized 'facts label' disclosure for AI-enabled mental-health technology.",
         "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Definium's LSD-based compound hit its primary endpoint in a Phase 3 generalized-anxiety trial, the second positive pivotal readout for the compound in two months.",
-        "url": "https://www.statnews.com/2026/08/12/definium-lsd-treatment-anxiety-study/"
-       },
-       {
-        "emoji": "🔬",
-        "text": "The VA disclosed it is now running its 20th active psychedelic-assisted therapy trial, this one testing psilocybin for veterans with treatment-resistant depression.",
-        "url": "https://bhbusiness.com/2026/08/14/the-va-is-now-evaluating-mdma-glp-1s-and-psilocybin-for-behavioral-health/"
        }
       ],
       "emoji": "🔬",
-      "heading": "Evidence and research"
+      "heading": "The evidence and pathways for AI therapy"
      }
     ],
     "watch": [
-     "Whether Aetna's Alma rate cuts actually took effect after their scheduled date remains unconfirmed by any source.",
-     "Whether UHS's newly acquired Talkspace network becomes a real referral pipeline into inpatient beds, or stays a stand-alone app, is still unproven.",
-     "The Kaiser-NUHW mediation ended its scheduled window without a posted outcome, leaving whether AI-replacement language survives in the union's E-Visit fight open."
+     "Whether Kaiser's mediation with NUHW resolves the AI-replacement language in its E-Visit triage tool, and how California's SB 903 fares on the Assembly floor.",
+     "Which mental-health capital keeps flowing to clinician-augmentation and interventional psychiatry while consumer chatbot makers face a regulatory reckoning.",
+     "Whether the FDA's device-exemption pilot picks a behavioral-health participant, and whether any state's new chatbot law produces its first enforcement action."
     ]
    },
-   "fingerprint": "39b978a001721103",
-   "generated": "2026-08-17T14:46:43Z",
+   "fingerprint": "22d19dde92c1831b",
+   "generated": "2026-08-17T19:41:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3098,15 +3257,6 @@
       "mh-evidence-infrastructure"
      ],
      "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887"
-    },
-    {
-     "day": "2026-08-15",
-     "sev": null,
-     "text": "A Stockholm University-led randomized trial pitting two AI-delivered, chatbot-only therapies head-to-head — \"Anna\" for psychodynamic therapy, \"Judith\" for CBT — found both produced significant, moderate symptom reductions for social anxiety disorder over a 4-week smartphone-only program, with no meaningful difference between the two approaches and no gap in therapeutic-alliance ratings between them.",
-     "threads": [
-      "ai-therapy-evidence"
-     ],
-     "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
     },
     {
      "day": "2026-08-15",
@@ -3159,6 +3309,16 @@
      "text": "The Acton, MA teen accused of killing his mother and brother, whom prosecutors say had been using ChatGPT to search for \"theoretical ideas or fantasy stories\" about killing his family, was arraigned yesterday and held without bail; no further development in this case today.",
      "threads": [],
      "url": "https://www.cbsnews.com/boston/news/acton-ma-murders-chatgpt-arjun-aravind/"
+    },
+    {
+     "day": "2026-08-13",
+     "sev": null,
+     "text": "A regional feature on Dartmouth's Therabot research — the only generative-AI mental-health chatbot with a published clinical trial — surfaced a real update this lens's watchlist has been chasing: Vermont's AI-therapy law is confirmed signed, not still pending.",
+     "threads": [
+      "ai-therapy-evidence",
+      "state-therapy-chatbot-bans"
+     ],
+     "url": "https://www.concordmonitor.com/2026/08/13/dartmouth-ai-therapy-chatbot/"
     }
    ],
    "title": "Mental Health"
@@ -3338,6 +3498,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -3347,6 +3538,16 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     },
     {
      "day": "2026-08-17",
@@ -3410,6 +3611,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -3432,12 +3664,11 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Semiconductor companies have now participated in more than $250B of AI and robotics startup financings in 2026, a record pace.",
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
      "threads": [
-      "nvidia-vendor-financing",
-      "ai-circular-financing-risk"
+      "openai-agent-security-incident"
      ],
-     "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "fingerprint": "8186e650d8b0337b",
@@ -3664,7 +3895,28 @@
    "title": "arm"
   },
   "node:blackrock": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
+     "threads": [
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
+    }
+   ],
    "fingerprint": "924243f7b31d22cf",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3774,7 +4026,28 @@
    "title": "blackrock"
   },
   "node:broadcom": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
+     "threads": [
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
+    }
+   ],
    "fingerprint": "115a8410271c96a2",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3962,7 +4235,26 @@
    "title": "character-ai"
   },
   "node:cigna": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    }
+   ],
    "fingerprint": "756805adf402ac4a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4273,7 +4565,26 @@
    "title": "Demis Hassabis"
   },
   "node:elevance-health": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    }
+   ],
    "fingerprint": "756805adf402ac4a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4421,6 +4732,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -4524,6 +4846,16 @@
     {
      "day": "2026-08-17",
      "sev": null,
+     "text": "The FDA named a second participant to a pilot that exempts digital health devices from premarket authorisation — and behavioural health is one of its four focus areas with no participant yet named.",
+     "threads": [
+      "ai-therapy-evidence",
+      "cms-access-model-bh"
+     ],
+     "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
      "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of a 10-year program.",
      "threads": [
       "cms-access-model-bh"
@@ -4565,7 +4897,26 @@
    "title": "headspace"
   },
   "node:humana": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    }
+   ],
    "fingerprint": "1b5cd657fccc9c3a",
    "generated": "2026-08-11T13:56:09Z",
    "generated_by": "llm",
@@ -4737,6 +5088,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -4746,6 +5108,26 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
+     "threads": [
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     }
    ],
    "fingerprint": "c84ce0895f6dd827",
@@ -4863,6 +5245,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -4936,11 +5329,11 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Memory-chip stocks extended their rally into Monday's premarket, with Micron approaching $1,000 a share.",
+     "text": "Micron crossed $1,000 a share intraday, completing the move the morning pass could only see in premarket.",
      "threads": [
       "chip-hyperscaler-rotation"
      ],
-     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey"
+     "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
     }
    ],
    "fingerprint": "2ac8580a82b7e149",
@@ -5240,6 +5633,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -5253,12 +5677,22 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Semiconductor companies have now participated in more than $250B of AI and robotics startup financings in 2026, a record pace.",
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
      "threads": [
-      "nvidia-vendor-financing",
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
       "ai-circular-financing-risk"
      ],
-     "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     }
    ],
    "fingerprint": "799403cf276eee74",
@@ -5379,6 +5813,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -5401,12 +5866,11 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Semiconductor companies have now participated in more than $250B of AI and robotics startup financings in 2026, a record pace.",
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
      "threads": [
-      "nvidia-vendor-financing",
-      "ai-circular-financing-risk"
+      "openai-agent-security-incident"
      ],
-     "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "fingerprint": "ae40097b529ae79f",
@@ -5525,6 +5989,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -5534,6 +6029,16 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     },
     {
      "day": "2026-08-17",
@@ -5746,6 +6251,15 @@
       "openai-agent-security-incident"
      ],
      "url": "https://openai.com/index/the-defenders-window"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Brockman went on CNBC the same day to call OpenAI's executive exodus \"not that atypical\" — and was not asked about the safety team.",
+     "threads": [
+      "openai-agent-security-incident"
+     ],
+     "url": "https://finance.yahoo.com/technology/ai/articles/openai-president-greg-brockman-defends-132939595.html"
     }
    ],
    "fingerprint": "16ea8bdb69abdfdd",
@@ -6013,6 +6527,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -6022,6 +6547,16 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Anthropic's Q2 revenue exceeded $11.5B — up roughly 14x year-on-year — and this map never carried it.",
+     "threads": [
+      "anthropic-ipo-timing",
+      "frontier-lab-ipos"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
     }
    ],
    "fingerprint": "c2ac71b8c05c2f2e",
@@ -6144,6 +6679,16 @@
     {
      "day": "2026-08-17",
      "sev": null,
+     "text": "The FDA named a second participant to a pilot that exempts digital health devices from premarket authorisation — and behavioural health is one of its four focus areas with no participant yet named.",
+     "threads": [
+      "ai-therapy-evidence",
+      "cms-access-model-bh"
+     ],
+     "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
      "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of a 10-year program.",
      "threads": [
       "cms-access-model-bh"
@@ -6188,6 +6733,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -6197,6 +6753,16 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Anthropic's Q2 revenue exceeded $11.5B — up roughly 14x year-on-year — and this map never carried it.",
+     "threads": [
+      "anthropic-ipo-timing",
+      "frontier-lab-ipos"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
     }
    ],
    "fingerprint": "9a95d02c56fea785",
@@ -6510,7 +7076,26 @@
    "title": "tsmc"
   },
   "node:unitedhealth-group": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    }
+   ],
    "fingerprint": "756805adf402ac4a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -6551,6 +7136,16 @@
   },
   "node:wysa": {
    "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The FDA named a second participant to a pilot that exempts digital health devices from premarket authorisation — and behavioural health is one of its four focus areas with no participant yet named.",
+     "threads": [
+      "ai-therapy-evidence",
+      "cms-access-model-bh"
+     ],
+     "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+    },
     {
      "day": "2026-08-17",
      "sev": null,
@@ -6801,6 +7396,37 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -6810,6 +7436,16 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
+     "threads": [
+      "ai-buildout-debt-risk",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     },
     {
      "day": "2026-08-17",
@@ -7237,7 +7873,18 @@
    "title": "Amazon Health"
   },
   "thread:anthropic-ipo-timing": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Anthropic's Q2 revenue exceeded $11.5B — up roughly 14x year-on-year — and this map never carried it.",
+     "threads": [
+      "anthropic-ipo-timing",
+      "frontier-lab-ipos"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
+    }
+   ],
    "fingerprint": "3393dfeec2053509",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7714,11 +8361,21 @@
     {
      "day": "2026-08-17",
      "sev": null,
-     "text": "Memory-chip stocks extended their rally into Monday's premarket, with Micron approaching $1,000 a share.",
+     "text": "Groq raised $350M at $3.5B — half its September valuation — having given up its own silicon to become an Nvidia neocloud, with Nvidia in the round.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Micron crossed $1,000 a share intraday, completing the move the morning pass could only see in premarket.",
      "threads": [
       "chip-hyperscaler-rotation"
      ],
-     "url": "https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey"
+     "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
     }
    ],
    "fingerprint": "4302659042a0f382",
@@ -7791,6 +8448,16 @@
   },
   "thread:cms-access-model-bh": {
    "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The FDA named a second participant to a pilot that exempts digital health devices from premarket authorisation — and behavioural health is one of its four focus areas with no participant yet named.",
+     "threads": [
+      "ai-therapy-evidence",
+      "cms-access-model-bh"
+     ],
+     "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+    },
     {
      "day": "2026-08-17",
      "sev": null,
@@ -8031,7 +8698,18 @@
    "title": "Targets"
   },
   "thread:frontier-lab-ipos": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Anthropic's Q2 revenue exceeded $11.5B — up roughly 14x year-on-year — and this map never carried it.",
+     "threads": [
+      "anthropic-ipo-timing",
+      "frontier-lab-ipos"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter"
+    }
+   ],
    "fingerprint": "ebf515bf5d6eab82",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -8858,7 +9536,39 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": null,
+     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
+     "threads": [
+      "ai-circular-financing-risk",
+      "nvidia-vendor-financing"
+     ],
+     "url": null
+    },
+    {
+     "day": "2026-08-17",
      "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals it is a residual-value guarantee, not a project backstop — with OpenAI indemnifying NVIDIA for every dollar NVIDIA pays.",
+     "threads": [
+      "nvidia-vendor-financing",
+      "ai-circular-financing-risk",
+      "stargate-buildout"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "Groq raised $350M at $3.5B — half its peak — as a company that now buys Nvidia chips instead of building rivals to them, with Nvidia in the round.",
+     "threads": [
+      "nvidia-vendor-financing",
+      "ai-circular-financing-risk",
+      "chip-hyperscaler-rotation"
+     ],
+     "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio guarantee, and the signed terms correct two numbers this map was carrying.",
      "threads": [
       "nvidia-vendor-financing",
@@ -9032,7 +9742,26 @@
    "title": "OpenAI IPO"
   },
   "thread:payer-ai-claim-denial": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200M in unsupportable diagnosis codes.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+    },
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017–2020 over intercompany transfer pricing with a foreign subsidiary — notices the company received in March and that had not been reported until today.",
+     "threads": [
+      "payer-ai-claim-denial"
+     ],
+     "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+    }
+   ],
    "fingerprint": "756805adf402ac4a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9103,6 +9832,16 @@
   },
   "thread:red-sea-oil-shock": {
    "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": null,
+     "text": "The long end sold off to a nineteen-year high while oil sat still, which argues the move was about debt supply rather than the Gulf.",
+     "threads": [
+      "red-sea-oil-shock",
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html"
+    },
     {
      "day": "2026-08-17",
      "sev": null,
@@ -9360,6 +10099,17 @@
    "breaking": [
     {
      "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
+    {
+     "day": "2026-08-17",
      "sev": null,
      "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
      "threads": [
@@ -9515,6 +10265,17 @@
   },
   "thread:where-the-capex-lands": {
    "breaking": [
+    {
+     "day": "2026-08-17",
+     "sev": "major",
+     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
+     "threads": [
+      "stargate-buildout",
+      "ai-circular-financing-risk",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+    },
     {
      "day": "2026-08-17",
      "sev": null,

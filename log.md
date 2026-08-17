@@ -3969,3 +3969,138 @@ tool is available in this session. Five orphan entity slugs and the
 with no sidecar entry ever written; left rather than invented after the
 fact. STATUS.md's top note is still "As of 2026-08-14", now four sessions
 stale.
+
+## 2026-08-17 (continued) — `/daily`: 15:00 ET extension pass; the $105B
+## guarantee found in a filing this map had already read past
+
+A second `/daily` on the same digest-day, run at 15:00 ET to extend the
+morning's 05:00–10:00 pass through the US session. 08-17 stays
+`building`/`coverage: pending` — correctly, since the day does not close
+until 05:00 ET tomorrow. Nothing was finalized this pass; 08-16 was
+already `final`.
+
+**The finding that matters is a correction to this map's own morning
+run.** NVIDIA's 8-K (accession 0001045810-26-000069) was accepted at
+**04:41 ET** — four hours before the morning pass — and states, under
+Items 1.01/2.03, that NVIDIA's "aggregate payment obligation is
+cumulatively capped at **$105 billion** for its initial commitment." The
+morning pass read only exhibit EX-99.1, the press release, and reported
+in three places that no dollar figure existed anywhere. It existed one
+document over. The structure is also not what "guarantee" implied: a
+**residual-value guarantee** on OpenAI's 20-year leases — NVIDIA pays the
+shortfall between a guaranteed minimum lease value and re-lease/sale
+recovery, triggered by OpenAI's insolvency or non-payment, attaching only
+from ~2028 — and **"OpenAI has agreed to reimburse and indemnify NVIDIA
+for any and all amounts actually paid,"** so the recourse runs back to
+the party whose insolvency is the trigger. Lesson written into the ledger
+entry: on any deal creating a financial obligation, the 8-K BODY is the
+primary source and the press-release exhibit is not.
+
+Pleasingly, the morning's own *interpretation* had predicted this. Its
+first scenario said the figure would surface "in NVIDIA's securities
+disclosure rather than in press reporting." That resolved inside five
+hours and is marked ✅ RESOLVED in the sidecar rather than quietly edited.
+
+**The rest of the day.** The long bond went to **5.31%** at 2:14pm ET, a
+nineteen-year high, while Brent gave up its early gains near $89–90 even
+as the US–Iran framework expired and Trump threatened to bomb Oman — the
+divergence locates the repricing in debt supply, and the mechanism turned
+up in the same session (global issuance crossed **$5 trillion** Monday,
+US IG at $136B in a fortnight, investors pulling ~36% of initial orders).
+**Groq** raised $350M at $3.5B, half its September valuation, as a
+company that abandoned its own silicon to run Nvidia's, with Nvidia in
+the round — the first rung on the vendor-financing stake ladder with a
+visible outcome. **UnitedHealth** drew an IRS transfer-pricing probe and
+a governance suit alleging it shut down an audit that found $200M in
+unsupportable diagnosis codes. Lebanon's Aoun broke with Hezbollah and
+asked for direct talks with Israel. Russia jailed Yabloko's deputy chair
+for 11 years and barred the party from next month's ballot the same day.
+No flash, checked twice.
+
+**Three aggregation traps caught, every one by cross-sweep
+disagreement** — the overlap-is-the-error-detector rule earning its keep
+three times in one pass. (1) Nvidia did **not** fall 4.5% today; the
+sources carrying that referenced a "$250B" deal size, i.e. late-July
+reporting re-indexed. It traded +0.21% at $225.64. (2) AMD's 5.6% jump
+was **08-14**, already in that day's digest; today is only the mechanical
+settlement date. (3) Anthropic's $11.5B Q2 was Bloomberg on **08-14** —
+and that trap concealed a real gap.
+
+**Two caught-late items, both logged under their true dates rather than
+backdated into finalized digests.** Anthropic's Q2 revenue ($11.5B,
+~14x YoY, positive adjusted operating income) was reported 08-14 and this
+map never carried it — while the 08-15 digest covered the IPO timeline in
+detail. And **Colorado filed proposed Chatbot Safety Act rules on
+08-11** that would bar AI outputs from being represented as equivalent to
+licensed professional services, plus age estimation, AI disclosure,
+anti-emotional-dependence safeguards for teens and suicide/self-harm
+protocols. Both were missed for a structural reason worth naming: a sweep
+looking for dockets and bills does not find rulemakings and private
+accords, which is increasingly where AI policy actually settles. The
+MPA/ByteDance copyright accord was missed the same way.
+
+**Ledger.** `nvidia-openai-guarantee-signing` → **hit**, evidence
+rewritten around the $105B filing. `cms-access-cohort-august` → **hit**.
+`decart-acquisition-close` → slipped to early September. A **false-alarm
+guard** was written into `aetna-alma-rate-cut-effective`: a sweep
+reported trade press dates the cuts to July 15 and read that as breaking
+the entry's premise — it does not, July 15 is already in `slips` and
+Aetna's 07-08 partial rollback pushed the remainder to 08-15. Both
+Kaiser/NUHW entries re-checked at source; one drew a search summary
+tracing to an NUHW release from **August 2022**, the second stale-year
+match on that entry after an August-2025 one on 08-15, so it now carries
+a rule to accept nothing not fetched directly with a visible 2026 date.
+Three new entries: `likud-primary-results` (08-18), `russia-duma-election`
+(09-20), `israel-general-election` (10-27). 58 total.
+
+**Map.** 18 threads moved, all with `last_seen` written back — the gap
+flagged in the last two `/week` runs did not recur. Three entity adds,
+each closing a recall gap rather than widening scope:
+**`unitedhealth-group`** (the largest US payer, named in this map's own
+`payer-ai-claim-denial` thread, with no term at all — which is why three
+same-day UnitedHealth stories arrived through a generic finance feed),
+**`centene`**, and **`groq`** (carried in prose on the stake ladder since
+the thread was spun out, never resolvable). All three are unique
+corporate strings, unlike the "Arm"/"Sonia"/"Cerebral" collisions the
+morning had to disambiguate. One gap left open deliberately: no slug fits
+Amazon's AI-training-data operation and a bare "Amazon" would swamp the
+sweep.
+
+Rendered (992 KB) and published: 155 readouts, 629 story pages, 6
+interpretation pages, 122 map pages, 753 claims; site repo pushed and
+Cloudflare build triggered. All four lens briefings refreshed —
+`lens:ai` was rejected on first `--apply` because three URLs were not in
+its own source pack, which is the validator working correctly; fixed and
+re-applied. 62 briefing bullets, 100% linked against a 60% floor.
+
+**Pick up:**
+⚠️ The **`week_of 08-10` weekly digest is still incomplete** — written
+"partial through Sat" before 08-16 existed. A `/week` re-run would close
+it. Carried from the last two sessions.
+⚠️ The read page is **992 KB** against a 600 KB soft cap, and its
+prescribed degradation rule ("drop item html >3 days old") is again a
+**no-op** — all 41 items are same-day. The size is structural (99
+threads, 203 entities). Needs Ben's call; the rule as written cannot
+help.
+⚠️ **`world-news.yaml`'s candidate pool has a quality problem.**
+Regenerated this pass (131 items, 75 candidates) after being stale since
+08-15. Its top entries by outlet count are stories this map already
+holds — the Ohio deal (57 outlets, headline garbling the figure as
+"almost $150b"), Berkshire's 13F (25), the Amodei/Baker exchange (22),
+Stripe/OpenRouter (19) — and below those sit two **Sonia Gandhi**
+political stories at 16 outlets each plus "Best Google Pixel 11 fast
+chargers" at 12. The Sonia hits are the exact collision the watchlist
+disambiguated this morning; today's buffer still holds 95 Sonia-titled
+items carrying `term: None`, i.e. arriving via the general feed pull
+rather than a term match, and the candidate builder reads the buffer. So
+the fix cleaned the term-matched surface without cleaning the builder's
+input. Collector and builder are engine-side, outside this repo's write
+zone — flagged for Ben, brief not filed unasked.
+⚠️ Collector health: `semantic_scholar` hit repeated HTTP 429s and
+exhausted its 600s wall-clock budget with **240 terms skipped**;
+`sec_edgar` returned some HTTP 500s. Both degraded rather than failed.
+📋 Still open from prior sessions: five orphan entity slugs and the
+`meta`→`meta-ai` typo sit with Ben; one 08-11 bullet carries `interp=yes`
+with no sidecar entry; STATUS.md's top note still reads "As of
+2026-08-14", now five sessions stale. The claude.ai artifact URL was
+again **not** republished — no Artifact tool in this session.

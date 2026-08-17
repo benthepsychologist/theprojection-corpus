@@ -18,6 +18,36 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
+## 2026-08-17 — Long end to a 19-year high while oil sits still
+
+- **The 30-year Treasury yield reached 5.31% at 2:14pm ET, its highest since
+  June 2007**, after opening the session at 5.28%; the 10-year sat at
+  4.71–4.72% and the 2-year eased to ~4.17% — a bear steepening rather than
+  a parallel shift.
+  ([Yahoo Finance live blog](https://finance.yahoo.com/markets/live/stock-market-today-monday-august-17-dow-sp-500-nasdaq-094421171.html)) ⟨daily 2026-08-17⟩
+- **The cross-asset divergence is the signal: crude did not move.** The
+  US–Iran framework formally expired the same day and Trump threatened to
+  bomb Oman, yet Brent gave up its early gains and held near $89–90. A
+  geopolitical supply shock lifts crude and breakevens together; a
+  fiscal/supply repricing lifts long nominal yields alone. Today gave the
+  second pattern cleanly, pointing at term premium — issuance into a debt
+  stock near $40T, and inflation persistence — rather than at the Gulf. ⟨daily 2026-08-17⟩
+- **The supply mechanism is concrete: global bond issuance crossed $5
+  trillion Monday, over a month faster than last year's record.** US
+  investment-grade ran $136B in two weeks with August on track for a monthly
+  record, and $1.4T year-to-date — 9% above the pace of 2020, which finished
+  at a record $1.75T. Blue-chip borrowers are funding "everything from
+  acquisitions to the artificial intelligence buildout," and investors
+  pulled ~36% of initial orders on average this week after final pricing was
+  squeezed, twice the prior week's rate.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge)) ⟨daily 2026-08-17⟩
+- **Why it bites on this thread specifically: AI datacenter financing is
+  long-duration and discounts off the long end, not the policy rate.** The
+  PORTS-Pike leases Nvidia guaranteed today attach from 2028 and run 20
+  years. A persistent rise in term premium raises the hurdle rate for
+  exactly that cash-flow profile, independent of what the Fed does in
+  September. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — Bond traders converge on the same concern Burry raised alone two days ago: $70B of "shadow credit backstops"
 
 - **Bloomberg reports bond traders are now pricing roughly $70 billion of

@@ -39,17 +39,31 @@ night price action.
     frontmatter via /steer only.
 -->
 
-## 2026-08-17 — Memory-chip rally extends into Monday premarket on no new catalyst
+## 2026-08-17 — Micron through $1,000; an independent silicon effort ends
 
-- **Micron, SanDisk, Western Digital and Seagate rose 2-6% in Monday
-  premarket trading, with Micron approaching $1,000/share after roughly
-  13% gains over five sessions.** Drivers are pre-window: SanDisk's
-  08-13 investor day (targeting 80% non-GAAP gross margins by FY2030,
-  ~$94B in disclosed long-term contracts) and the standing AI-driven
-  DRAM/HBM tightness this thread has tracked since the rotation debate
-  opened. No new Monday catalyst was identified — this reads as
-  momentum on drivers already priced, not a fresh repricing.
-  ([TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey)) ⟨daily 2026-08-17⟩
+- **Micron crossed $1,000 a share intraday, up about 5% and roughly 240%
+  year-to-date.** JPMorgan's Jay Kwon and KeyBanc's John Vinh both
+  attributed the move to memory demand broadening from GPU to CPU and
+  outstripping supply through 2027 — a demand-mix thesis rather than
+  momentum, which retires this map's morning caveat that no Monday-specific
+  catalyst was identifiable.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html)) ⟨daily 2026-08-17⟩
+- **⚠️ One circulating explanation is excluded as unverified:** that the
+  memory move was tied to a lifted Huawei export restriction. The primary
+  write-ups on the $1,000 crossing make no mention of export controls and no
+  source for the claim survived checking. Recorded as rejected, not omitted. ⟨daily 2026-08-17⟩
+- **Groq raised $350M at $3.5B, half its $6.9B September valuation, having
+  abandoned its own LPU silicon to run Nvidia systems.** Nvidia hired
+  founder Jonathan Ross and the senior silicon team in a $20B licensing deal
+  in December; the remaining company is now an Nvidia customer — 13 data
+  centres, 6M+ developers, scaling from 54 MW to over 200 MW in 2027, with
+  Nvidia a planned participant in the round. The rotation this thread tracks
+  usually shows up as share shift between incumbents; here it shows up as an
+  independent alternative ceasing to exist.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/groq-valued-at-3-5-billion-in-funding-round-after-nvidia-deal)) ⟨daily 2026-08-17⟩
+- **Nvidia itself was flat on its largest-ever financial commitment: +0.21%
+  at $225.64.** ⚠️ A circulating ~4.5%-drop claim is misdated late-July
+  reporting on the earlier $250B figure; not carried. ⟨daily 2026-08-17⟩
 
 ## 2026-08-08 — The scare that triggered the rotation debate starts unwinding
 

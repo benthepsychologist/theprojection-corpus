@@ -39,6 +39,43 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-17 — Kushner shuttles Cairo to Jerusalem; the deadlock holds and Likud votes
+
+- **Kushner met Netanyahu in Jerusalem a day after meeting Hamas's
+  political chief in Cairo, with the 15-point roadmap still rejected by
+  both sides for opposite reasons.** Jared Kushner met Netanyahu Monday
+  alongside Tony Blair and Board of Peace director Nickolay Mladenov,
+  following a two-hour Sunday session in Cairo with Hamas political
+  chief Khalil al-Hayya. Netanyahu has publicly rejected the US-backed
+  roadmap specifically over its Hamas-disarmament and
+  governance-transfer provisions; Hamas says it will disarm only if
+  Israel reciprocates. The shape of the deadlock is stable — each side
+  rejects the same document over the same clause from opposite ends,
+  and the mediation continues anyway.
+  ([Washington Post](https://www.washingtonpost.com/world/2026/08/17/kushner-trump-netanyahu-board-of-peace-mladenov/056fcb78-9a19-11f1-9cc4-2dc9b46e2d5c_story.html)) ⟨daily 2026-08-17⟩
+- **Low-grade strikes continued and Israel released 35 Palestinian
+  prisoners into Gaza.** Israeli artillery shelled Gaza City's Al-Tuffah
+  neighbourhood, wounding three, with two further airstrikes east of
+  Gaza City and shelling on Al-Tina Street south of Khan Younis — all
+  described by Gaza medics as ceasefire violations. A quadcopter strike
+  hit Khan Younis and another wounded several in the Nuseirat refugee
+  camp, per Gaza medical sources. Rights groups put the number still
+  held in Israeli detention above 9,400. Casualty figures are
+  attributed to Gaza medical sources and are not independently
+  verified.
+  ([Anadolu](https://www.aa.com.tr/en/middle-east/3-palestinians-injured-in-israeli-artillery-shelling-in-latest-gaza-ceasefire-violation/4029331)) ⟨daily 2026-08-17⟩
+- **Likud's primary closed at 14:00 ET with turnout down five points, on
+  a list Netanyahu had already shaped.** Polls opened 10:00 IDT and
+  closed 21:00 IDT — one of the few items today with a hard timestamp
+  rather than a "Monday" dateline. Turnout was roughly 53.5%, down from
+  about 58% in 2022. Netanyahu had secured control over nine top list
+  slots ahead of the **October 27** general election; polling suggests
+  Likud could shed about a third of its seats. Tracked as the
+  domestic-political clock running underneath this file, via new ledger
+  entries `likud-primary-results` (08-18) and `israel-general-election`
+  (10-27).
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-17-2026/)) ⟨daily 2026-08-17⟩
+
 ## 2026-08-16 — Eight Arab/Muslim-majority states blame Israel for thwarting the peace plan as strikes kill two and a Hamas delegation reaches Cairo
 
 - **Foreign ministers of eight Arab and Muslim-majority states —

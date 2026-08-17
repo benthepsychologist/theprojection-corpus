@@ -11,6 +11,43 @@ opened: 2026-07-28
 *Watch:* the UHC discovery outputs · WISeR's fate · state bans spreading ·
 the ghost-network/network-adequacy strand.
 
+## 2026-08-17 — UnitedHealth's payment layer under scrutiny from three directions
+
+- **An amended investor complaint alleges UnitedHealth shut down an
+  internal audit that had found at least $200M in unsupportable
+  diagnosis codes.** Filed 2026-08-07 by a Rhode Island public pension
+  fund and Swedish asset manager Länsförsäkringar Fondförvaltning AB,
+  surfacing in trade press today. It alleges "corporate governance
+  failures on a historic scale": directors deceiving investors while
+  the company repurchased roughly $29B of its own shares, executives
+  rushing the Change Healthcare acquisition to make separation "nearly
+  impossible" had the DOJ blocked it, and known security gaps — "a
+  deficient firewall and improper access controls" — preceding a
+  breach that has cost over $2B. A confidential witness is quoted:
+  "when you rush, you miss things." UnitedHealth declined to comment.
+  Filing date is 08-07; what happened today is its surfacing.
+  ([Healthcare Dive](https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/)) ⟨daily 2026-08-17⟩
+- **The diagnosis-code allegation is the one that belongs to this
+  thread rather than the business pages.** Risk-adjustment coding is
+  how Medicare Advantage plans are paid; an audit that surfaces
+  unsupportable codes and is then closed is a claim about the
+  integrity of the payment layer, which is the same layer this thread
+  watches for denial behaviour. ⟨daily 2026-08-17⟩
+- **The IRS is separately seeking to significantly increase
+  UnitedHealth's taxable income for 2017–2020 over intercompany
+  transfer pricing with a foreign subsidiary.** Notices received in
+  March, disclosed in a regulatory filing, and not previously reported
+  until STAT surfaced them today; the IRS may pursue years after 2020.
+  UnitedHealth says its "tax positions are properly supported" and it
+  will "pursue all available administrative and judicial remedies."
+  No dollar exposure is visible in the accessible filing text.
+  ([STAT](https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/)) ⟨daily 2026-08-17⟩
+- **⚠️ Recall note: none of this reached the map through a term the
+  map owned.** UnitedHealth — the largest US payer, named in this
+  thread — had NO watchlist entry until today, so all three items
+  arrived via a generic global-capital RSS feed. `unitedhealth-group`
+  and `centene` were added to the watchlist this pass. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — Aetna's Alma rate cuts land, softer than proposed but real
 
 - **Aetna's reimbursement cuts to Alma-contracted therapists took effect

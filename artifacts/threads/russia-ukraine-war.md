@@ -18,6 +18,27 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-17 — Anti-war party's deputy chair jailed; party barred from the ballot
+
+- **A Pskov court sentenced Yabloko deputy chair Lev Shlosberg to 11
+  years and one month in a penal colony** on charges of "discrediting
+  the military" and spreading "false information," tied to his
+  criticism of the war in Ukraine.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/russia-sentences-politician-to-11-years-for-opposing-putin-s-war), [AP via WRAL](https://www.wral.com/news/ap/f2ee3-russian-court-jails-a-kremlin-critic-for-11-years-for-opposing-the-war-in-ukraine/)) ⟨daily 2026-08-17⟩
+- **The same day, Russia's Supreme Court upheld barring Yabloko — the
+  only Russian party formally opposing the war — from the September
+  18–20 parliamentary elections**, rejecting its appeal. Two rulings,
+  one day, three weeks before the vote; the sequencing is the story.
+  Logged to the ledger as `russia-duma-election` (due 2026-09-20). ⟨daily 2026-08-17⟩
+- **⚠️ Still unverified and still not carried: claimed Russian
+  advances near Orikhiv and on the Dnipropetrovsk axis.** Re-checked
+  at 15:00 ET and unchanged — a single low-confidence aggregator
+  (`news-pravda.com`) reports advances near Orikhiv in Zaporizhzhia
+  and the taking of Khristoforovka. If true it would contradict
+  Ukraine's own 08-14 claim that its Dnipropetrovsk counteroffensive
+  was complete. No corroboration from Reuters, AP, or ISW/Critical
+  Threats. No entry is being written on the claim itself. ⟨daily 2026-08-17⟩
+
 ## 2026-08-16 — Ukraine's ~600-drone barrage hits Moscow Oblast's Wildberries logistics hubs; Russia's return strike kills 7; a Ukrainian strike on Belgorod kills 6
 
 - **Ukraine launched roughly 600 drones at Moscow Oblast in one of the

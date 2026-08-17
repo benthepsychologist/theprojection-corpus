@@ -163,6 +163,16 @@ actors:
       institutions generally and conceding the fairer criticism is that AI
       companies "haven't yet delivered on our big promises" — two of the
       four AI benchmark publications led with the exchange.
+      🕰 CAUGHT LATE on 08-17, dated 08-14 — the single most material
+      number about this company was missing from this map entirely.
+      Bloomberg reported preliminary Q2 revenue above $11.5B, roughly 14x
+      year-on-year: $11.5B against $787M in Q2 2025 and $4.73B in Q1
+      2026, with positive adjusted operating income for the quarter. The
+      map spent 08-15 covering the IPO timeline firming to a
+      September–October Nasdaq target, with investor meetings underway
+      and backers pressing management on Chinese model competition —
+      without the revenue print that had landed the day before. Logged
+      under its true date; the 08-14/08-15 digests are not reopened.
       New 08-15: named (alongside Nvidia and Meta) in Bloomberg's first
       quantification of the AI-buildout's off-balance-sheet guarantee
       pattern — Broadcom is backstopping Anthropic's $35B chip deal, one of
@@ -228,10 +238,13 @@ actors:
       deal: OpenAI is named customer for 8 IT-GW at SB Energy's PORTS-Pike
       campus, with NVIDIA credit-supporting an initial 4.25 IT-GW and
       holding an option on the remaining 3.75; OpenAI added $40M to SB
-      Energy's $40M community-benefits fund. Note the number that is NOT
-      in the release: no guarantee dollar figure appears anywhere in it,
-      so the "<$120B" this map carries remains WSJ reporting rather than
-      company fact. On safety: the Financial Times reported (08-16) that
+      Energy's $40M community-benefits fund. The guarantee dollar figure
+      is absent from the release but PRESENT in NVIDIA's 8-K (public from
+      04:41 ET, read at 15:00 ET): capped at $105B, as a residual-value
+      guarantee triggered by OpenAI's insolvency or non-payment — and
+      OpenAI has "agreed to reimburse and indemnify NVIDIA for any and
+      all amounts actually paid," so OpenAI's own balance sheet stands
+      behind the backstop written for it. On safety: the Financial Times reported (08-16) that
       OpenAI dissolved its Preparedness team — catastrophic cyber, bio and
       loss-of-control evaluation — at the end of July, characterised as
       streamlining ahead of the IPO after Altman told staff to cut "side
@@ -240,7 +253,20 @@ actors:
       2026). One day later Greg Brockman published "The Defender's Window"
       urging organisations to field defensive AI agents against autonomous
       AI cyberattacks, citing the same rogue-agent infiltration this map
-      tracks. Separately, Bloomberg reported 08-13 that OpenAI's annualized
+      tracks. Later 08-17: Brockman also went on CNBC's "Squawk Box" and
+      called the run of senior departures "not that atypical," arguing
+      "we are so much in the spotlight, so every departure gets
+      scrutinized in a way that it doesn't otherwise" and that "there
+      have been different eras where we have different sets of leaders in
+      place. I'm a constant, Sam is a constant." The departures at issue
+      are commercial and product leadership — Dresser, Lightcap, Fidji
+      Simo, Kevin Weil, Bill Peebles, Srinivas Narayanan. He was not
+      asked about, and did not address, the Preparedness dissolution. So
+      the day's shape is: an essay on catastrophic agent risk, a
+      television defence of leadership churn, and silence on the team
+      built to evaluate the risk in the essay. No departing researcher,
+      external safety organisation or lawmaker has commented.
+      Separately, Bloomberg reported 08-13 that OpenAI's annualized
       revenue run-rate has topped $40B, roughly double end-2025 — a leak,
       not a disclosure; OpenAI declined to comment.
       New 08-15: Nvidia cut its planned Ohio data-center guarantee to
@@ -431,10 +457,30 @@ actors:
       compute provider, with OpenAI named customer for 8 IT-GW. Two figure
       corrections fall out: the equity stake is $1.5B, not the "up to $3B"
       reported over the weekend from pre-announcement talks — and the
-      release prints NO dollar figure for the guarantee, so the "<$120B"
-      widely attributed to this deal is WSJ's reporting, not company-
-      confirmed. The structure question this map has tracked since 07-27
-      is resolved; the price is not. Separately, Crunchbase put Nvidia at
+      PRESS RELEASE prints no dollar figure for the guarantee, which led
+      this map's 10:00 ET pass to record the price as still unconfirmed.
+      UPDATED 15:00 ET: it was confirmed, in the 8-K filed alongside that
+      release and public from 04:41 ET. NVIDIA's "aggregate payment
+      obligation is cumulatively capped at $105 billion for its initial
+      commitment." The instrument is a RESIDUAL-VALUE guarantee, not a
+      project backstop: NVIDIA covers the shortfall between a guaranteed
+      minimum lease value and what is recovered via replacement lease or
+      sale, triggered by OpenAI's insolvency or non-payment, running to
+      each lease's 20th anniversary and attaching only from ~2028 — and
+      OpenAI indemnifies NVIDIA for every dollar NVIDIA pays, meaning the
+      recourse runs back to the party whose insolvency is the trigger.
+      Both the structure question and the price question this map has
+      tracked since 07-27 are now resolved at primary source.
+      Also 08-17: Groq — rung four on Nvidia's stake ladder — raised
+      $350M at $3.5B, half its $6.9B September valuation, with Nvidia a
+      planned participant. Nvidia's $20B December licensing deal took
+      founder Jonathan Ross and the LPU team; Groq has since abandoned
+      its own silicon and become a neocloud running Nvidia systems. It is
+      the first rung on that ladder with a visible outcome, and the
+      outcome is that an independent silicon competitor became a
+      customer. Nvidia's own stock was flat on all of it (+0.21%,
+      $225.64); a circulating ~4.5%-drop claim is misdated late-July
+      reporting on the earlier $250B figure. Separately, Crunchbase put Nvidia at
       59 startup rounds year-to-date (vs. 53 in all of 2025) within a
       sector-wide $250B+ of semiconductor participation in AI/robotics
       financings — the vendor-financing pattern is systemic, not confined

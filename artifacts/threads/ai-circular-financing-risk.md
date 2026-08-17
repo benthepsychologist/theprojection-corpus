@@ -13,27 +13,38 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
-## 2026-08-17 — The Ohio guarantee is signed; the number it's actually worth is still the one thing missing
+## 2026-08-17 — The loop gets a filed number, and a converted competitor
 
-- **Nvidia, OpenAI and SoftBank's SB Energy signed the PORTS-Pike
-  Technology Campus deal (Pike County, Ohio)** — the guarantee this
-  thread logged shrinking from $250B to under $120B on 08-15 is now a
-  completed agreement, structured as an initial 4.25 IT-GW tranche
-  under Nvidia's credit support with an option on a further 3.75
-  IT-GW, matching the "narrowed to the first phase" framing WSJ
-  reported two days earlier. OpenAI is named customer for the site's
-  full 8 IT-GW. **The release itself prints no dollar figure for the
-  guarantee** — every other number in the deal is stated (10GW of new
-  generation, $4.2B into the grid, a separate $1.5B Nvidia equity
-  stake in SB Energy, $40M added to the community fund) except the
-  one this thread most wants.
-  ([NVIDIA](https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute), [OpenAI](https://openai.com/index/openai-joins-ports-pike-project)) ⟨daily 2026-08-17⟩
-- **The $1.5B is a separate instrument from the guarantee — Nvidia
-  taking direct equity in SB Energy, the entity building its
-  customer's own site** — correcting weekend reports of "up to $3B,"
-  which described pre-announcement talks; another turn of the vendor
-  financing its own demand, this time by taking a stake in the
-  landlord rather than the customer. ⟨daily 2026-08-17⟩
+- **The Ohio guarantee is now quantified at $105B and structured so that
+  Nvidia's backstop is itself backstopped by the party it backstops.**
+  NVIDIA's 8-K caps aggregate payment obligation at $105 billion, as a
+  residual-value guarantee on OpenAI's 20-year leases triggered by OpenAI's
+  insolvency or non-payment — with OpenAI contractually agreeing to
+  "reimburse and indemnify NVIDIA for any and all amounts actually paid."
+  The indemnity is worth least precisely when it is called, since the
+  trigger is the indemnitor's own insolvency.
+  ([NVIDIA 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm)) ⟨daily 2026-08-17⟩
+- **Groq raised $350M at $3.5B — half its September valuation — as a company
+  that now buys Nvidia chips, funded partly by Nvidia.** After Nvidia's $20B
+  December licensing deal took founder Jonathan Ross and the LPU team, Groq
+  abandoned its own silicon and became a neocloud operating Nvidia systems.
+  Nvidia is a planned participant in the round. Supplier funds customer;
+  customer was formerly competitor.
+  ([TechCrunch](https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/)) ⟨daily 2026-08-17⟩
+- **Jensen Huang publicly rejected the "circular financing" label the same
+  day**, citing ~$600B of visible OpenAI compute spend through 2030 and up
+  to $200B of Nvidia revenue from the Pike County site alone. AJ Bell's
+  Danni Hewson called the concern fair given how few players are involved,
+  with the real test being whether the investments generate returns. ⟨daily 2026-08-17⟩
+- **The debt market supplying all of this hit a milestone and started
+  balking on the same day.** Global bond issuance crossed **$5 trillion**
+  Monday, more than a month faster than last year's record; US
+  investment-grade issuance ran **$136B in two weeks** with August on track
+  for a monthly record and **$1.4T year-to-date**, 9% above 2020's pace.
+  Investors pulled roughly **36% of initial orders** on average this week
+  after pricing was squeezed — twice the prior week and well above the
+  year's 22% average.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge)) ⟨daily 2026-08-17⟩
 
 ## 2026-08-15 — Nvidia halves the Ohio guarantee under investor pressure; Michael Burry escalates his short
 

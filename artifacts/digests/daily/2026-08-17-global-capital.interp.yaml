@@ -6,11 +6,20 @@
 # that boundary during this run and silently failing to load; all were
 # rekeyed 2026-08-17.
 #
-# Three entries for five interp-eligible bullets: the Japan GDP and
-# semiconductor-financing items were marked interp=yes on a first pass
-# and the flag was REMOVED, because neither has an identifiable mechanism
-# beyond "this continues a trend already on file" — and forcing an
-# interpretation to fill a slot is exactly what the discipline forbids.
+# 15:00 ET extension pass. Six entries for fourteen bullets. The Japan
+# GDP and semiconductor-financing items were marked interp=yes on a first
+# pass and the flag was REMOVED, because neither has an identifiable
+# mechanism beyond "this continues a trend already on file" — and forcing
+# an interpretation to fill a slot is exactly what the discipline
+# forbids. Likewise nothing was written for the two UnitedHealth items,
+# the Centene CFO change, or the caught-late Anthropic print: each is a
+# fact this map was missing, not a mechanism it can read.
+#
+# The `memory-chip-stocks-extended-their-rally-into-monda` key from the
+# morning pass was REKEYED to `micron-crossed-1-000-a-share-intraday-
+# completing` when the bullet was rewritten around the intraday $1,000
+# crossing, and its second scenario was retired on the evidence — see
+# that entry's own note.
 
 nvidia-openai-and-softbank-signed-the-ohio-guaran:
   mechanism: >
@@ -19,21 +28,23 @@ nvidia-openai-and-softbank-signed-the-ohio-guaran:
     a credit backstop for the site's land/power/shell buildout, and an
     equity holder in the developer — three positions in one transaction,
     with OpenAI as the demand side. That concentration is the actual
-    mechanism, not the headline size. What makes it hard to price is the
-    omission: the release names capacity (4.25 IT-GW initial, option on
-    3.75, 8 IT-GW customer commitment) and NVIDIA's $1.5B equity cheque,
-    but attaches NO dollar figure to the guarantee itself. A contingent
-    liability disclosed by scope rather than amount cannot be aggregated
-    against the rest of the ecosystem's backstops — which is precisely
-    the gap Moody's flagged on 08-15 about off-balance-sheet AI
-    guarantees generally.
+    mechanism, not the headline size. ✅ **The pricing gap this entry was
+    written around CLOSED the same day, and closed the way its first
+    scenario said it would.** Written at 10:00 ET, this interpretation
+    argued that the release named capacity and NVIDIA's $1.5B equity
+    cheque but attached no dollar figure to the guarantee, so the
+    contingent liability could not be aggregated against the rest of the
+    ecosystem's backstops. By 15:00 ET the figure was found — not in
+    later press reporting but in the 8-K filed alongside that very
+    release, at $105B, under Item 2.03. The mechanism reading stands; the
+    illegibility premise does not, and is marked resolved rather than
+    quietly edited away.
   confidence: plausible
   scenarios:
     - direction: >
-        The dollar figure surfaces in NVIDIA's next 10-Q contingent-
-        liabilities disclosure rather than in press reporting, and it
-        arrives materially different from the "<$120B" currently
-        attributed to the deal — in either direction.
+        ✅ RESOLVED SAME DAY. The dollar figure surfaces in NVIDIA's
+        securities disclosure rather than in press reporting, and arrives
+        materially different from the "<$120B" attributed to the deal.
       why: >
         Securities disclosure obligations bite on quantified contingent
         liabilities in a way that a press release does not, and the gap
@@ -46,43 +57,256 @@ nvidia-openai-and-softbank-signed-the-ohio-guaran:
         filed figures differed materially from the estimates — the same
         report-then-file correction pattern, three days earlier.
     - direction: >
-        Alternatively the guarantee is never given a single headline
-        number because it is structured as a series of phase-gated
-        commitments rather than one facility, in which case the
-        "<$120B" framing was always a category error rather than a
-        figure to be confirmed.
+        ❌ RETIRED. That the guarantee is never given a single headline
+        number because it is structured as phase-gated commitments rather
+        than one facility.
       why: >
-        The release's own language — credit support to "secure initial
-        4.25 IT-GW, with an option to take the remaining 3.75" — reads
-        as tranched and optional rather than as a single quantum, and an
-        option that may never be exercised has no fixed face value.
+        The 8-K does give a single cumulative cap ($105B) for the initial
+        commitment, while separately treating the additional ~3.8 GW as
+        discretionary. So the instrument is BOTH quantified and tranched
+        — the either/or this scenario assumed was a false choice.
       precedent: >
         Vendor residual-value guarantee programs in aircraft and
-        industrial-equipment leasing are routinely disclosed as
-        aggregate maximum exposure across many tranches rather than as
-        a single deal figure, precisely because per-deal quantification
-        misrepresents optionality.
+        industrial-equipment leasing are routinely disclosed as aggregate
+        maximum exposure across tranches — which is, in the event,
+        exactly the form NVIDIA used, and it is a quantified form.
   context_note: >
     capital-context.yaml's standing picture carries the AI-financing loop
     as its central open risk, and the 08-15 digest led with bond traders
-    pricing ~$70B of off-balance-sheet backstops. This is that pattern's
-    largest single instance moving from reported to signed — while
-    becoming, on the specific dimension of size, less legible rather than
-    more.
+    pricing ~$70B of off-balance-sheet backstops. A single $105B capped
+    guarantee is larger than that entire estimated stock — which is the
+    number that now needs carrying forward into the next refresh.
+
+nvidia-s-8-k-caps-the-ohio-guarantee-at-105-billi:
+  mechanism: >
+    A residual-value guarantee is a fundamentally different instrument
+    from the project backstop the press coverage implied, and the
+    difference cuts both ways. It is NARROWER than feared: NVIDIA does
+    not owe $105B on an OpenAI default, it owes the shortfall between a
+    guaranteed minimum lease value and whatever the site fetches on
+    re-lease or sale — and Pike County datacenter shells with 4.25 GW of
+    interconnect are unlikely to be worthless in any world where AI
+    demand exists at all. But it is also more CORRELATED than a
+    standalone credit exposure, because the scenario that triggers it is
+    the same scenario that destroys the collateral's value: OpenAI's
+    insolvency is not independent of AI datacenter resale prices. The
+    guarantee is worth most when it costs least and least when it costs
+    most. The OpenAI indemnity compounds precisely this: NVIDIA's
+    recourse runs back to the party whose insolvency is the trigger, so
+    the indemnity is worth nearest to nothing exactly when it is called.
+  confidence: probable
+  scenarios:
+    - direction: >
+        Analysts and rating agencies converge on a much smaller
+        "economic" exposure than $105B once the residual-value structure
+        is understood, and the headline number stops being quoted as
+        NVIDIA's risk within a few weeks.
+      why: >
+        The cap is a gross notional on a shortfall obligation that only
+        attaches from 2028 and amortises against recoverable asset value;
+        credit analysts price such structures off expected loss, not
+        notional, and will say so publicly once they model it.
+      precedent: >
+        Aircraft residual-value guarantees written by manufacturers are
+        disclosed at gross maximum exposure but consistently carried by
+        rating agencies at a small fraction of notional — Boeing's and
+        Embraer's RVG books have been treated this way for two decades,
+        with realised losses far below disclosed caps.
+    - direction: >
+        Alternatively the correlation argument wins: an AI capex
+        downturn severe enough to impair OpenAI simultaneously craters
+        specialised datacenter resale values, the indemnity proves
+        uncollectible, and realised exposure lands far closer to the cap
+        than any expected-loss model predicted.
+      why: >
+        Purpose-built AI datacenter shells have a thin buyer set that is
+        itself concentrated in the same handful of firms exposed to the
+        same demand shock, so recovery assumptions drawn from
+        general-purpose real estate or aviation do not transfer.
+      precedent: >
+        Merchant power plants built for a single offtaker in the early
+        2000s were repeatedly resold at 10–30 cents on the dollar
+        precisely because the counterparty's failure and the asset class's
+        glut were the same event — the correlation failure this structure
+        shares.
+  context_note: >
+    This is the single largest quantified entry in the circular-financing
+    picture capital-context.yaml tracks, and the first where the map has
+    contract-level terms rather than reported figures. It should anchor
+    the next `/week` refresh of that file's AI-financing reading, with
+    the caveat that gross notional and economic exposure are different
+    numbers and only the first is now known.
+
+groq-raised-350m-at-3-5b-half-its-peak-as-a:
+  mechanism: >
+    This is the vendor-financing thread's stake ladder producing a
+    legible price for the first time. The sequence is unusually clean:
+    Nvidia paid $20B in December for a licensing deal that took Groq's
+    founder and senior silicon team; Groq, hollowed out, abandoned its
+    own LPU architecture; and it now buys and operates the incumbent's
+    chips as a neocloud, funded in part by the incumbent. An
+    independent-silicon competitor was converted into a demand-side
+    customer, and the conversion is visible as a halving of enterprise
+    value from $6.9B to $3.5B. The mechanism worth naming is that
+    acqui-licensing achieves what an acquisition could not: the same
+    competitive result — a rival's roadmap ends — without a merger
+    filing, because no company changed hands and no market share
+    formally moved.
+  confidence: probable
+  scenarios:
+    - direction: >
+        The structure attracts antitrust attention as a template rather
+        than as this deal, with regulators or legislators naming
+        acqui-licensing as a merger-review gap in the AI hardware stack.
+      why: >
+        The competitive effect is indistinguishable from an acquisition
+        while the transaction form sidesteps the reporting thresholds
+        that would trigger review, and that gap is the kind of structural
+        argument enforcement bodies act on rather than a fact-specific
+        complaint.
+      precedent: >
+        The 2024–25 wave of AI acqui-hires — Inflection into Microsoft,
+        Adept and Covariant into Amazon, Character.AI into Google — drew
+        exactly this scrutiny, with the FTC and CMA both opening inquiries
+        into whether the structures evaded merger control, and the CMA
+        formally reviewing the Microsoft/Inflection arrangement.
+    - direction: >
+        Alternatively it stays commercially unremarkable — a failed chip
+        startup recapitalised by its largest supplier — and the only
+        durable signal is what it says about independent AI-silicon
+        economics, which is that they did not work at $6.9B.
+      why: >
+        Groq is small enough that no market-structure conclusion is
+        forced, and the down round can be read as an ordinary correction
+        to a 2025 valuation rather than as evidence about the transaction
+        form.
+      precedent: >
+        Graphcore's sale to SoftBank in 2024 at a fraction of its $2.8B
+        peak drew no structural scrutiny at all and was absorbed as an
+        ordinary distressed outcome in AI silicon.
+  context_note: >
+    The thread's stake ladder — Nebius 9.3%, Naver $1B, Intel $5B, Groq
+    ~$20B licensing — has until now been a list of positions with no
+    outcomes attached. This is the first rung with a realised result, and
+    the result is that the counterparty stopped competing. That is worth
+    carrying into how the other three rungs are read.
+
+the-long-end-sold-off-to-a-nineteen-year-high-whil:
+  mechanism: >
+    The cross-asset divergence is the whole signal. A geopolitical supply
+    shock raises breakevens AND crude together; a fiscal/supply repricing
+    raises long nominal yields while leaving crude alone. Today gave the
+    second pattern cleanly: 30-year to 5.31% and a nineteen-year high,
+    2-year easing to ~4.17% — a bear steepener — while Brent gave up its
+    early gains despite the US–Iran framework formally expiring on the
+    same day. If the Iran expiry were driving the bond move, the energy
+    complex would be the first place it showed, and it is the one place
+    it did not. That points at term premium — issuance into a debt stock
+    near $40T, and inflation persistence — rather than at the Gulf.
+  confidence: probable
+  scenarios:
+    - direction: >
+        The steepening continues and starts to bite on exactly the
+        buildout this map tracks, since AI datacenter financing is
+        long-duration and priced off the long end rather than off the
+        policy rate the Fed-odds debate concerns.
+      why: >
+        Twenty-year lease guarantees and multi-decade power contracts
+        discount at the long end; a persistent rise there raises the
+        hurdle rate for projects whose cash flows begin in 2028, which is
+        precisely when the PORTS-Pike leases attach.
+      precedent: >
+        The 2022–23 long-end selloff repriced US commercial real estate
+        development economics within two quarters even as short rates
+        plateaued, stalling projects that penciled at lower term premium
+        — the same duration sensitivity, a different asset class.
+    - direction: >
+        Alternatively this is a one-session auction-and-supply artifact
+        that mean-reverts within the week, and the 19-year-high framing
+        proves to be a round-number headline rather than a regime change.
+      why: >
+        A 3bp move from the session open is small in absolute terms, and
+        "highest since" thresholds are crossed and uncrossed routinely
+        without a change in the underlying trend.
+      precedent: >
+        The 30-year printed a "highest since 2007" headline on both
+        2026-05-19 and 2026-07-29 by this map's own record, and on
+        neither occasion did it mark a durable break.
+  context_note: >
+    capital-context.yaml's `rate_regime` reading is currently fed by the
+    news sweep and carries Friday's soft retail-sales/consumer-sentiment
+    prints as the live signal, which is a short-end story. This is a
+    long-end story pointing the other way, and the two belong in the same
+    reading rather than in separate ones — flagging it for the next
+    `/week` refresh, since `/daily` does not write that file.
+
+micron-crossed-1-000-a-share-intraday-completing:
+  mechanism: >
+    Sustained memory-price strength is the transmission channel by which
+    the AI buildout shows up in consumer and industrial goods costs —
+    DRAM and HBM tightness driven by AI datacenter demand raises the bill
+    of materials for everything from handsets to vehicles. That makes
+    this rally a leading indicator for a specific inflation impulse
+    working directly against the cooling narrative that just pushed
+    September Fed-hike odds down to ~30%. Today's session added the
+    causal detail the morning pass lacked: sell-side attribution to
+    memory demand broadening from GPU to CPU and outstripping supply
+    through 2027, which is a demand-mix claim rather than a momentum
+    claim, and it sits alongside a long-end selloff in the same session.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Memory contract prices keep climbing into September and hand the
+        Fed's hike-leaning minority a concrete goods-inflation data point
+        that cuts against the retail-sales and consumer-sentiment
+        softness currently driving the 30% reading.
+      why: >
+        Memory is an input to a wide enough range of finished goods that
+        sustained contract-price increases pass through with a lag,
+        arriving in CPI well after the equity market has priced them.
+      precedent: >
+        The 2021 semiconductor shortage passed through into electronics
+        and used-vehicle CPI with a two-to-three quarter lag, and did so
+        while consumer-demand indicators were themselves softening — the
+        same divergence being set up here.
+    - direction: >
+        ❌ RETIRED ON THE EVIDENCE. The morning pass's alternative — that
+        this was a positioning artifact with no fresh driver, momentum on
+        08-13/08-14 news — no longer fits: named sell-side analysts put a
+        specific supply/demand thesis behind today's move, and the stock
+        crossed a level rather than drifting toward it. Replaced by a
+        narrower doubt: the pass-through may still fail even if the
+        demand thesis is right, since contract pricing and spot equity
+        enthusiasm have decoupled before.
+      why: >
+        A correct read on physical tightness does not guarantee CPI
+        pass-through when downstream manufacturers absorb input costs in
+        margin rather than price, which is the common case in
+        competitive handset and PC markets.
+      precedent: >
+        Memory contract prices rose through 2017–18 without a
+        distinguishable electronics-CPI signature, as OEMs absorbed the
+        increase rather than passing it to consumers.
+  context_note: >
+    capital-context.yaml's `fund_flows` entry already flagged AI-driven
+    inflation pressure on tech goods and electricity from EPFR's 08-11
+    Global Navigator commentary, but had not connected it to a specific
+    equity move. This connects the two, and sets it against both the
+    rate-cooling reading and today's opposing long-end move.
 
 iran-claimed-a-hormuz-transit-route-understanding:
   mechanism: >
-    Brent's failure to move on the claim is the informative part. With a
-    Hormuz risk premium estimated around 10% already embedded in the
-    price, a credible de-escalation signal should produce a visible
-    pullback; a flat tape means the market is discounting the claim
-    rather than pricing it. The discount is rationally grounded — the
-    claim is one-sided (Oman silent), Iran conceded the map and joint
-    statement are unfinished, and this map's own 08-16 shipping data
-    showed transits at zero the day before the claim was made. Traders
-    appear to be reading it the same way they read the partial
-    shipping-map agreement reported Friday: real diplomatic movement,
-    explicitly short of the deal that would actually reopen the strait.
+    Brent's failure to move on the claim is the informative part, and the
+    afternoon strengthened it: crude gave up its early gains and finished
+    the US session near $89–90 even after the framework formally expired
+    and Trump publicly threatened to bomb Oman. With a Hormuz risk
+    premium estimated around 10% already embedded, neither the
+    de-escalation claim nor the escalation rhetoric moved the price —
+    which means the market is discounting BOTH, and pricing a frozen
+    stalemate rather than a directional break. The discount is rationally
+    grounded: the Oman claim is one-sided (Oman silent), Iran conceded
+    the map and joint statement are unfinished, and this map's own 08-16
+    shipping data showed transits already at zero.
   confidence: plausible
   scenarios:
     - direction: >
@@ -115,54 +339,5 @@ iran-claimed-a-hormuz-transit-route-understanding:
   context_note: >
     capital-context.yaml's `conflict_risk_premium` reading already
     records `iran-oman-hormuz-deal-signing` as pending rather than hit.
-    This is one more data point in that same unresolved column, and it
-    arrives one day after the transit data that made the shutdown
-    physically measurable for the first time.
-
-memory-chip-stocks-extended-their-rally-into-monda:
-  mechanism: >
-    Sustained memory-price strength is the transmission channel by which
-    the AI buildout shows up in consumer and industrial goods costs —
-    DRAM and HBM tightness driven by AI datacenter demand raises the bill
-    of materials for everything from handsets to vehicles. That makes
-    this rally a leading indicator for a specific inflation impulse
-    working directly against the cooling narrative that just pushed
-    September Fed-hike odds down to ~30%. The two readings in today's
-    digest are therefore in tension rather than merely adjacent: the rate
-    path is being priced off soft consumer data while the same AI
-    spending that supported Japan's GDP print is tightening a goods input.
-  confidence: plausible
-  scenarios:
-    - direction: >
-        Memory contract prices keep climbing into September and hand the
-        Fed's hike-leaning minority a concrete goods-inflation data point
-        that cuts against the retail-sales and consumer-sentiment
-        softness currently driving the 30% reading.
-      why: >
-        Memory is an input to a wide enough range of finished goods that
-        sustained contract-price increases pass through with a lag,
-        arriving in CPI well after the equity market has priced them.
-      precedent: >
-        The 2021 semiconductor shortage passed through into electronics
-        and used-vehicle CPI with a two-to-three quarter lag, and did so
-        while consumer-demand indicators were themselves softening — the
-        same divergence being set up here.
-    - direction: >
-        Alternatively the rally is a positioning artifact with no
-        pass-through, unwinding once the SanDisk investor-day enthusiasm
-        fades, since no new catalyst appeared today.
-      why: >
-        This map's own reading is explicit that Monday's move had no new
-        driver — it is momentum on 08-13 and 08-14 news, which is the
-        profile of a crowded trade rather than a repricing on fresh
-        information.
-      precedent: >
-        Memory equities have twice this year run on investor-day guidance
-        and given the move back within a fortnight without any contract
-        price following.
-  context_note: >
-    capital-context.yaml's `fund_flows` entry already flagged AI-driven
-    inflation pressure on tech goods and electricity from EPFR's 08-11
-    Global Navigator commentary, but had not connected it to a specific
-    equity move. This connects the two, and sets it against the
-    rate-cooling reading in the same digest.
+    A full session of two-sided headlines with a flat tape is stronger
+    evidence for that pending framing than the morning's flat tape alone.
