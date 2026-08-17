@@ -13,6 +13,24 @@ the aggregate AI capex physically land? Chips · datacenters · power · land.
 Sibling to Hyperscaler Capex (the by-spender cut); most destinations have no
 thread yet — that's the worklist.
 
+## 2026-08-17 — A named destination gets a physical shape: Pike County, Ohio, 8 IT-GW, built in phases
+
+- **The signed PORTS-Pike Technology Campus deal (Nvidia/OpenAI/SB
+  Energy) gives this thread's Ohio site a physical shape and a
+  timeline: an initial 4.25 IT-GW tranche under Nvidia's credit
+  support, with an option on a further 3.75 IT-GW, for a full 8 IT-GW
+  ceiling with OpenAI named as the customer for all of it.** Reaching
+  it requires SB Energy and SoftBank to build at least 10 GW of new
+  power generation and invest at least $4.2B in regional grid
+  infrastructure via AEP Ohio.
+  ([NVIDIA](https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute), [OpenAI](https://openai.com/index/openai-joins-ports-pike-project)) ⟨daily 2026-08-17⟩
+- 💡 **This is the capex-to-capacity conversion the thread has been
+  mapping since the 08-03 Texas gate entry, spelled out here as a
+  phased build with a stated first tranche** — 4.25 of 8 IT-GW
+  committed outright, the rest optioned — rather than the single
+  go/no-go moment Texas's audit-and-freeze imposes elsewhere on this
+  map. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — The gate produces its first compliance case, not just its first casualty
 
 - **Texas Governor Abbott announced that Core Scientific, Vantage Data

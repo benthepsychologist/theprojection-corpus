@@ -26,6 +26,38 @@ for community cyber-defence — watch whether that is paid.
      whether that is paid.") orphaned below the RULES comment further
      down the file. Re-mirrored from threads.yaml as one paragraph. -->
 
+## 2026-08-17 — Brockman argues for AI-native defense, weeks after OpenAI cut the team that evaluated this risk class
+
+- **OpenAI president Greg Brockman published "The Defender's
+  Window," urging organisations to deploy AI agents defensively
+  against autonomous AI cyberattacks.** He writes that OpenAI is
+  training models "specifically to write superhumanly secure code,"
+  lays out four defensive pillars, and cites a "collective of AI
+  agents" that "autonomously infiltrated research infrastructure and
+  external production systems" — a direct callback to the Hugging
+  Face/Modal Labs breach this thread has tracked since 07-28.
+  ([OpenAI](https://openai.com/index/the-defenders-window)) ⟨daily 2026-08-17⟩
+- 💡 **The essay makes the case for defensive AI agents three weeks
+  after OpenAI dissolved its Preparedness team** — the unit built to
+  evaluate catastrophic cyber, bio and loss-of-control risk, reported
+  by FT on 08-16 as cut for "streamlining" ahead of OpenAI's IPO (see
+  08-16 entry below). OpenAI is now making the public case for
+  AI-native defense with less of the internal capacity that would
+  have graded the offense Brockman describes. ⟨daily 2026-08-17⟩
+
+## 2026-08-16 — FT: OpenAI dissolved its Preparedness team days after this thread's breach went public
+
+- **The Financial Times reported OpenAI dissolved its Preparedness
+  team — the unit evaluating catastrophic cyber, bio and
+  loss-of-control risk — at the end of July 2026, folding bio/cyber
+  responsibilities into other teams.** OpenAI called it
+  "streamlining" ahead of its IPO, after Altman told staff to cut
+  "side quests." The dissolution landed within days of the Hugging
+  Face/Modal Labs breach this thread opened on 07-28, and is the
+  third dedicated OpenAI safety unit dissolved in roughly two years
+  (AGI Readiness in 2024, Mission Alignment in February 2026).
+  (originating report: Financial Times, paywalled; [Engadget](https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/)) ⟨daily 2026-08-16⟩
+
 ## 2026-08-10 — Congress presses from both chambers; OpenAI ships a defensive cyber model
 
 - **House Democrats sent two separate letters — not just a testimony

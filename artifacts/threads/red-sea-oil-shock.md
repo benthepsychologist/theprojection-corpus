@@ -22,6 +22,34 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-17 — Iran claims a Hormuz "understanding" with Oman on the transit map; Oman hasn't confirmed, and Brent doesn't move
+
+- **Iranian Foreign Ministry spokesman Esmail Baghaei said "an
+  understanding has been reached regarding the map of the transit
+  route"** — ships entering near Iran and exiting near Oman, with no
+  tolls during an interim period — while conceding talks moved slowly
+  and that a full map plus joint statement are still being finalized.
+  **Oman has not independently confirmed the claim.** Brent held near
+  $89 through the European morning, essentially flat — this is Iran's
+  account alone, and it does not resolve the
+  `iran-oman-hormuz-deal-signing` expectation this thread has tracked
+  as unsigned since 08-12.
+  ([Times of Israel](https://www.timesofisrael.com/liveblog_entry/as-60-day-mou-deadline-expires-iran-says-it-has-reached-deal-with-oman-on-hormuz/)) ⟨daily 2026-08-17⟩
+
+## 2026-08-16 — Ship-tracking data puts a number under the shutdown for the first time: zero transits registered for Sunday
+
+- **Kpler ship-tracking data reported by Reuters shows Strait of Hormuz
+  commodity transits collapsing to five vessels on Saturday and zero
+  registered for Sunday, against 31 the prior weekend and a
+  pre-February norm above 130 ships/day.** One of Saturday's five
+  transits was an empty VLCC running with its transponder off; a
+  UAE-flagged gas carrier used the Iranian-side route. This is the
+  first volume measurement underneath a shutdown this thread has
+  tracked mostly through price and rhetoric since the 08-02 scale
+  correction (10 ships/day against a 60-140/day norm) — the trend has
+  kept worsening since that baseline.
+  ([MarineLink](https://www.marinelink.com/news/shipping-slows-strait-hormuz-tanker-542144)) ⟨daily 2026-08-16⟩
+
 ## 2026-08-15 — Brent snaps its slide, closing the week +5% on an "indefinite" blockade warning; a shipping-map deal doesn't give the market the clarity it needs
 
 - **Brent closed Friday at $88.52/bbl and WTI at $82.40, both up more

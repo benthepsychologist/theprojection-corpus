@@ -12,7 +12,7 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
-## 2026-08-15 — The timeline firms from "chatter" to a concrete September target, with investor meetings already underway
+## 2026-08-15 — The timeline firms to September, and a seller picks Anthropic stock over a higher Nvidia cash bid
 
 - **WSJ reports Anthropic is targeting a September or early-October
   Nasdaq listing, ahead of OpenAI, and is already holding investor
@@ -25,6 +25,19 @@ deals get positioned in the roadshow story.
   is referenced as unchanged in this report, distinct from the
   $2T-plus investor-target figure logged below on 08-13.
   ([Investing.com/WSJ](https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754)) ⟨daily 2026-08-15⟩
+- **Calcalist reported Anthropic's bid for Israeli AI startup Decart
+  firmed at roughly $7B, up from ~$6B mid-week and a roughly 50%
+  premium to Decart's $4B last-round valuation — further corroborating
+  Anthropic, not SpaceX as an earlier 08-09/10 report had it, as the
+  likely acquirer this thread flagged as unresolved on 08-13.** Advanced
+  Nvidia-Decart negotiations were halted once Anthropic entered; Nvidia
+  is believed to have bid higher, but Decart's founders and lead
+  investor Sequoia Capital preferred Anthropic anyway, largely because
+  Anthropic's consideration is its own stock rather than cash. Signing
+  is now expected "as soon as next month, ahead of Anthropic's expected
+  September IPO" — a seller taking unlisted Anthropic paper over a
+  higher cash bid weeks before a listing.
+  ([Calcalist](https://www.calcalistech.com/ctechnews/article/b1evv3aufg)) ⟨daily 2026-08-15⟩
 
 ## 2026-08-13 — Investors reportedly target a $2T-plus October valuation, and a separate $6B acquisition is in talks
 

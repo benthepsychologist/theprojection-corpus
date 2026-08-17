@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-15
-status: building
+status: final
 window_start: 2026-08-15T05:00:00-04:00
-as_of: 2026-08-15T20:30:00-04:00
-coverage: pending
+as_of: 2026-08-16T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-15
@@ -173,6 +173,34 @@ The AI buildout's financial engineering and its physical/political friction both
   ([DefenseScoop](https://defensescoop.com/2026/08/07/pentagon-war-data-platform-integration-plans-under-scrutiny/))
   <!-- k: t=dod-ai-consolidation axis=policy-and-governance -->
 
+## Research & safety
+
+- **A 22-year-old open problem in matrix analysis was proved with the
+  help of a 16-hour autonomous GPT-5.6 Sol session, and three named
+  mathematicians — including the conjecture's author — have informally
+  endorsed the argument.** Shanmu Jin, a postdoctoral researcher and
+  neurosurgery resident at Peking Union Medical College Hospital, posted
+  "The Numerical Range Is a 2-Spectral Set" to preprints.org on 07-27
+  (revised 08-07), using a multi-subagent adversarial-audit prompt
+  adapted from one OpenAI ran on the Cycle Double Cover conjecture.
+  Cornell's Alex Townsend and Anne Greenbaum wrote it up for SIAM News
+  **today**, stating that they and Michel Crouzeix — who posed the
+  conjecture in 2004 — "checked the proof thoroughly and believe that Dr.
+  Jin's manuscript is correct." ⚠️ **The status distinction is
+  load-bearing and is the reason this is worded carefully: informally
+  checked by named experts is NOT peer review.** Jin's own repository
+  states "formal peer review is still pending," and the preprint sits on
+  a non-refereed server. An independent, differently-derived proof from
+  Emiel Lorist and Felix Schwenninger reached arXiv on 08-04, citing
+  Jin's work as a contemporaneous independent result without disputing
+  it. ⟨critic-caught at finalize 08-17 — surfaced via The Rundown AI's
+  08-17 lead; the SIAM News write-up is dated 08-15 and belongs to this
+  digest-day⟩
+  ([SIAM News, Townsend & Greenbaum](https://alextownsend.net/essays/SIAMNews_CrouzeixConjecture.pdf),
+  [Jin preprint v4](https://www.preprints.org/manuscript/202607.1919),
+  [Lorist & Schwenninger, arXiv](https://arxiv.org/abs/2608.03841))
+  <!-- k: axis=research-and-safety -->
+
 ## ⏱ Release-watch & markets
 
 - No genuine model releases beyond what's already logged (GLM-5.3
@@ -243,3 +271,56 @@ kept building real usage share rather than just benchmark claims —
 Alibaba's Qwen passed 3 billion downloads, more than Google and Meta
 combined — while it's Beijing's own capital controls, not Washington's
 distillation accusation, delaying Moonshot's Hong Kong IPO by a year.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** nothing on the date itself. **No AI
+benchmark published on Saturday 08-15** — The Rundown AI and TLDR AI are
+weekday-only (verified empirically this pass: sitemap gaps between the
+08-14 and 08-17 editions, and 307 redirects on the dated TLDR URLs, not
+merely a claimed cadence), The Neuron's archive goes straight from Friday
+to a Sunday Special, and The AI Daily Brief published nothing at all
+across 08-15 to 08-17. The benchmark set for this date is genuinely
+empty rather than unchecked.
+
+**Both covered:** nothing — see above.
+
+**We had → they didn't:** the whole digest, trivially, for the same
+reason.
+
+**⚠️ Cross-day misses found by this pass, recorded here because this is
+the day being finalized.** Working backwards from Monday's benchmark
+leads and date-verifying each against primary sources surfaced three
+genuine recall gaps on days already closed. One belonged to this
+digest-day and has been **folded in above**: the Crouzeix conjecture
+proof (SIAM News, 08-15). Two belong to 08-13 and 08-14, which are
+already `final` and are therefore **not** reopened — they are logged here
+and to `coverage-log.md` instead:
+
+- **OpenAI's annualised revenue run-rate topped $40B** — Bloomberg,
+  **08-13**, citing people familiar and noting OpenAI declined to
+  comment. A leak rather than a disclosure, but a material number for
+  `anthropic-ipo-timing` and `frontier-lab-ipos`, both of which turn on
+  relative lab scale ahead of listing. Not covered on 08-13.
+- **The AI buildout faces a ~$1T financing gap** — Apollo chief economist
+  Torsten Slok, reported by Forbes **08-14**: more than $2T of debt
+  needed through 2030 against under $1T of investment-grade absorption
+  capacity, leaving a gap Slok expects private credit to fill, with
+  AI-related borrowing already above 40% of new long-term IG corporate
+  debt. Directly on `ai-buildout-debt-risk` and
+  `ai-circular-financing-risk`. ⚠️ Worth carrying with its conflict
+  attached: Apollo is itself a major private-credit manager and so has a
+  commercial interest in being the alternative financing source it
+  identifies as necessary. Not covered on 08-14.
+
+**The structural lesson, which is the more useful output than the three
+misses.** Monday newsletter leads are a poor recall signal for Monday,
+because the weekday-only titles spend Monday clearing Thursday and
+Friday. Of six items pulled from Monday benchmark leads and
+date-verified this run, **all six dated 08-13 to 08-15 and none was a
+Monday event** — three were already covered here (GLM-5.3 08-14, ChatGPT
+Computer History 08-13, Anthropic's multiagent turf-war research 08-13)
+and three were the misses above. Every benchmark lead needs its real
+publication date established before it is scored against the day it
+appeared in; scoring by appearance date would have produced three false
+misses for 08-17 and hidden three real ones on 08-13 to 08-15.

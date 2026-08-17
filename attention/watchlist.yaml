@@ -69,7 +69,16 @@ lenses:
       - "Hua Hong"   # ben-steer 2026-07-29 — China's #2 foundry (mature nodes); same
                      # reason: named DUV recipient, and delivery-to-a-named-fab is the
                      # test that thread turns on
-      - "Arm"        # ben-steer 2026-07-29 — closes a recall gap: arm-royalty-regime (w2)
+      - term: "Arm Holdings"
+        entity: arm
+        name: "Arm"
+        # disambiguated 2026-08-17 (daily), same defect as "Sonia" below:
+        # the bare term "Arm" hit the 100-result cap entirely on false
+        # positives in the 08-17 collect — "sells its games arm", "as the
+        # AI arms race comes to Australia", "Chrome for Arm Linux" — i.e.
+        # the common English noun and the CPU architecture, not the
+        # company. Nvidia's full exit from its Arm stake (13F, 08-15) is
+        # live map material, so the term is worth keeping, just bounded.        # ben-steer 2026-07-29 — closes a recall gap: arm-royalty-regime (w2)
                      # ran since 07-25 with NO sweep term; upcoming.yaml already
                      # tagged entities:[arm], a slug that didn't resolve until now
       - "Qualcomm"   # ben-steer 2026-07-29 — same gap: qualcomm-dragonfly (w2) had
@@ -191,7 +200,14 @@ lenses:
         entity: alan
         # ben-steer 2026-07-28: $780M raise (~$8.9B), French insurtech scaling
         # AI-health into Canada — routes into alan-into-canada / canada-ai-vs-care
-      - "Cerebral"
+      - term: "Cerebral telehealth"
+        entity: cerebral
+        name: "Cerebral"
+        # disambiguated 2026-08-17 (daily): the bare term "Cerebral"
+        # returned 44 matches in the 08-17 collect dominated by "cerebral
+        # palsy" human-interest stories and "cerebral" as a clinical
+        # adjective in stroke/neurology abstracts — not the telehealth
+        # company. Same fix pattern as "Sonia" and "Arm".
       - "Talkspace"
       - "BetterHelp"
       - "Headspace"
@@ -210,7 +226,18 @@ lenses:
       - "Slingshot AI"
       - "Character.AI"
       - "Replika"
-      - "Sonia"
+      - term: "Sonia AI therapy"
+        entity: sonia
+        name: "Sonia"
+        # disambiguated 2026-08-17 (daily): the bare term "Sonia" was
+        # matching at a 100% false-positive rate — every one of the 100
+        # items it pulled in the 08-17 collect was a person named Sonia
+        # (Sotomayor, Gandhi/Vande Mataram, a WNBA head coach), not the
+        # AI therapy app. Since google_news_rss appears to cap results
+        # per term at 100, this single term was consuming a full slot's
+        # worth of the buffer every run and returning nothing usable.
+        # Same disambiguation pattern already applied to "Alan insurtech"
+        # above, for exactly the same reason.
       # Evaluators / standards / accountability (radar Q3)
       - "Peterson Health Technology Institute"   # PHTI
       - "ICER"
@@ -234,6 +261,21 @@ lenses:
         name: "Universal Health Services"
         # auto-added 2026-07-29 (critic): BHB's 07-28 lead was UHS diversifying
         # its behavioral portfolio as its $835M Talkspace acquisition nears
+      - term: "Aetna behavioral health reimbursement"
+        entity: cvs-health
+        name: "CVS Health / Aetna"
+        # added 2026-08-17 (daily, map-integrity): NOT a new subject — the
+        # slug `cvs-health` has been in active use in digest annotations
+        # (payer-ai-claim-denial, the Aetna/Alma rate-cut story) while
+        # having NO watchlist entry, making it an orphan the rubric
+        # forbids ("entity slugs only from the watchlist"). This add
+        # regularises an entity the map was already tracking in prose.
+        # Five other orphans found the same pass and NOT auto-added,
+        # because each needs a judgment call rather than a rubber stamp:
+        # `meta` (3 uses — almost certainly a typo for the existing
+        # `meta-ai`, so the fix is correcting the digests, not adding a
+        # duplicate entity), `masayoshi-son`, `jeff-dean`, `allianz`,
+        # `globalfoundries` (one use each). Left for Ben's call.
       - term: "Hims & Hers"
         entity: hims-and-hers
         name: "Hims & Hers"

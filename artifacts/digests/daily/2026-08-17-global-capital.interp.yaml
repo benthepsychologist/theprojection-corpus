@@ -1,0 +1,168 @@
+# 2026-08-17-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the first
+# 50 characters of the bullet's bold lead phrase — note the truncation,
+# which is what render_read.py's load path actually looks up. Ten keys
+# across six earlier dates were found written one or two characters off
+# that boundary during this run and silently failing to load; all were
+# rekeyed 2026-08-17.
+#
+# Three entries for five interp-eligible bullets: the Japan GDP and
+# semiconductor-financing items were marked interp=yes on a first pass
+# and the flag was REMOVED, because neither has an identifiable mechanism
+# beyond "this continues a trend already on file" — and forcing an
+# interpretation to fill a slot is exactly what the discipline forbids.
+
+nvidia-openai-and-softbank-signed-the-ohio-guaran:
+  mechanism: >
+    The signed structure makes explicit what the vendor-financing thread
+    has only inferred: NVIDIA is now simultaneously the compute supplier,
+    a credit backstop for the site's land/power/shell buildout, and an
+    equity holder in the developer — three positions in one transaction,
+    with OpenAI as the demand side. That concentration is the actual
+    mechanism, not the headline size. What makes it hard to price is the
+    omission: the release names capacity (4.25 IT-GW initial, option on
+    3.75, 8 IT-GW customer commitment) and NVIDIA's $1.5B equity cheque,
+    but attaches NO dollar figure to the guarantee itself. A contingent
+    liability disclosed by scope rather than amount cannot be aggregated
+    against the rest of the ecosystem's backstops — which is precisely
+    the gap Moody's flagged on 08-15 about off-balance-sheet AI
+    guarantees generally.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The dollar figure surfaces in NVIDIA's next 10-Q contingent-
+        liabilities disclosure rather than in press reporting, and it
+        arrives materially different from the "<$120B" currently
+        attributed to the deal — in either direction.
+      why: >
+        Securities disclosure obligations bite on quantified contingent
+        liabilities in a way that a press release does not, and the gap
+        between a reported number and a filed one is where this map has
+        already been corrected once this week (the $3B SB Energy figure
+        that turned out to be $1.5B).
+      precedent: >
+        NVIDIA's own 13F on 08-14 put filed numbers on SpaceX and Intel
+        stakes that had circulated only as estimates beforehand, and the
+        filed figures differed materially from the estimates — the same
+        report-then-file correction pattern, three days earlier.
+    - direction: >
+        Alternatively the guarantee is never given a single headline
+        number because it is structured as a series of phase-gated
+        commitments rather than one facility, in which case the
+        "<$120B" framing was always a category error rather than a
+        figure to be confirmed.
+      why: >
+        The release's own language — credit support to "secure initial
+        4.25 IT-GW, with an option to take the remaining 3.75" — reads
+        as tranched and optional rather than as a single quantum, and an
+        option that may never be exercised has no fixed face value.
+      precedent: >
+        Vendor residual-value guarantee programs in aircraft and
+        industrial-equipment leasing are routinely disclosed as
+        aggregate maximum exposure across many tranches rather than as
+        a single deal figure, precisely because per-deal quantification
+        misrepresents optionality.
+  context_note: >
+    capital-context.yaml's standing picture carries the AI-financing loop
+    as its central open risk, and the 08-15 digest led with bond traders
+    pricing ~$70B of off-balance-sheet backstops. This is that pattern's
+    largest single instance moving from reported to signed — while
+    becoming, on the specific dimension of size, less legible rather than
+    more.
+
+iran-claimed-a-hormuz-transit-route-understanding:
+  mechanism: >
+    Brent's failure to move on the claim is the informative part. With a
+    Hormuz risk premium estimated around 10% already embedded in the
+    price, a credible de-escalation signal should produce a visible
+    pullback; a flat tape means the market is discounting the claim
+    rather than pricing it. The discount is rationally grounded — the
+    claim is one-sided (Oman silent), Iran conceded the map and joint
+    statement are unfinished, and this map's own 08-16 shipping data
+    showed transits at zero the day before the claim was made. Traders
+    appear to be reading it the same way they read the partial
+    shipping-map agreement reported Friday: real diplomatic movement,
+    explicitly short of the deal that would actually reopen the strait.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Oman confirms independently within the week, and Brent gives back
+        a meaningful part of the embedded premium in a single session
+        because so much of it is priced.
+      why: >
+        The premium is large relative to the physical supply at stake, so
+        confirmation from the counterparty that has stayed silent is the
+        specific missing input rather than an incremental one.
+      precedent: >
+        The 08-12 US-brokered Iran-Oman announcement produced exactly
+        this shape — a sharp move on the initial claim that partially
+        unwound within days once the terms proved narrower than the
+        headline, and the market has since demanded confirmation before
+        repricing.
+    - direction: >
+        Oman stays silent past a few more days and the claim decays into
+        noise, leaving the premium intact and the ledger entry
+        unresolved into its 08-19 due date.
+      why: >
+        Silence from the party whose waters and ports the arrangement
+        depends on is itself information, and this thread has now logged
+        several Iranian claims of progress that no counterparty
+        corroborated.
+      precedent: >
+        Iran's earlier "agreed in principle" characterisation of the
+        Oman talks, logged on this thread, was never matched by an Omani
+        statement and did not produce a durable repricing.
+  context_note: >
+    capital-context.yaml's `conflict_risk_premium` reading already
+    records `iran-oman-hormuz-deal-signing` as pending rather than hit.
+    This is one more data point in that same unresolved column, and it
+    arrives one day after the transit data that made the shutdown
+    physically measurable for the first time.
+
+memory-chip-stocks-extended-their-rally-into-monda:
+  mechanism: >
+    Sustained memory-price strength is the transmission channel by which
+    the AI buildout shows up in consumer and industrial goods costs —
+    DRAM and HBM tightness driven by AI datacenter demand raises the bill
+    of materials for everything from handsets to vehicles. That makes
+    this rally a leading indicator for a specific inflation impulse
+    working directly against the cooling narrative that just pushed
+    September Fed-hike odds down to ~30%. The two readings in today's
+    digest are therefore in tension rather than merely adjacent: the rate
+    path is being priced off soft consumer data while the same AI
+    spending that supported Japan's GDP print is tightening a goods input.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Memory contract prices keep climbing into September and hand the
+        Fed's hike-leaning minority a concrete goods-inflation data point
+        that cuts against the retail-sales and consumer-sentiment
+        softness currently driving the 30% reading.
+      why: >
+        Memory is an input to a wide enough range of finished goods that
+        sustained contract-price increases pass through with a lag,
+        arriving in CPI well after the equity market has priced them.
+      precedent: >
+        The 2021 semiconductor shortage passed through into electronics
+        and used-vehicle CPI with a two-to-three quarter lag, and did so
+        while consumer-demand indicators were themselves softening — the
+        same divergence being set up here.
+    - direction: >
+        Alternatively the rally is a positioning artifact with no
+        pass-through, unwinding once the SanDisk investor-day enthusiasm
+        fades, since no new catalyst appeared today.
+      why: >
+        This map's own reading is explicit that Monday's move had no new
+        driver — it is momentum on 08-13 and 08-14 news, which is the
+        profile of a crowded trade rather than a repricing on fresh
+        information.
+      precedent: >
+        Memory equities have twice this year run on investor-day guidance
+        and given the move back within a fortnight without any contract
+        price following.
+  context_note: >
+    capital-context.yaml's `fund_flows` entry already flagged AI-driven
+    inflation pressure on tech goods and electricity from EPFR's 08-11
+    Global Navigator commentary, but had not connected it to a specific
+    equity move. This connects the two, and sets it against the
+    rate-cooling reading in the same digest.

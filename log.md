@@ -3851,3 +3851,121 @@ from last week's flag) — worth a structural look at the write-back
 mechanism itself rather than another per-thread patch next week.
 STATUS.md's top note is now three sessions stale (still "As of
 2026-08-14") — due for a `/wrap` refresh.
+
+## 2026-08-17 — `/daily`: three digest-days at once (finalize 08-15,
+## reconstruct 08-16, open 08-17), plus four map-data defects found and fixed
+
+No `/daily` ran over the weekend, so this run advanced three digest-days
+in one pass: **finalized 08-15** (it had been `building`, curated only
+through 20:30 ET Saturday), **reconstructed 08-16 from scratch** (no
+digest existed), and **opened 08-17**. Fifteen digest files across the
+three days, plus the four-lens front summaries.
+
+**The news, briefly.** The Ohio guarantee stopped being a report and
+became a signed deal: Nvidia, OpenAI and SoftBank's SB Energy jointly
+announced the PORTS-Pike campus with Huang/Altman/Son quoted — credit
+support for an initial 4.25 IT-GW with an option on 3.75 more, OpenAI as
+customer for 8 IT-GW. It corrected this map twice: Nvidia's SB Energy
+stake is **$1.5B**, not the "up to $3B" reported over the weekend, and
+**the release prints no guarantee figure at all**, so the sub-$120B
+number is WSJ's reporting rather than company fact. Sunday's biggest
+capital number was zero — Kpler data put Strait of Hormuz transits at
+five on Saturday and none on Sunday against a pre-war 130+/day, the first
+volume measurement under a shutdown this map had only ever priced through
+rhetoric. The FT reported OpenAI dissolved its Preparedness team at the
+end of July (third safety unit in two years), one day before Brockman
+published a call to field defensive AI agents. UHS closed its $835M
+Talkspace purchase. Mental health produced literally nothing over the
+weekend, verified at source rather than assumed.
+
+**Ledger: two hits, one slip, and a two-week-old question closed.**
+`nvidia-openai-guarantee-signing` → hit at primary source.
+`cms-access-cohort-august` → hit, with the honest caveat that a rolling
+administrative start produces no announcement, so only the unrevised
+schedule is confirmed. `decart-acquisition-close` → **slipped to early
+September**, and **the buyer question open since 08-09 is closed:
+Anthropic**, with Nvidia as the losing bidder. A replacement conflation
+risk is now logged against the entry — Nvidia is simultaneously the
+subject of the unrelated Ohio deal, and those two stories must not merge.
+
+**Four map-data defects found and fixed — this was the larger half of the
+run.**
+
+1. **Interpretation sidecars were silently not loading.** `render_read`
+   keys them on `slugify(bold_lead[:50])`; ten keys across six dates had
+   been written one or two characters off that boundary, so the renderer
+   looked them up, found nothing, and rendered the bullets bare with no
+   error anywhere. All ten rekeyed; every interpretation from 07-30
+   onward now resolves, verified in the rendered payload and in the three
+   interpretation pages the site build now emits.
+2. **`cvs-health` was an orphan slug** — in active annotation use with no
+   `watchlist.yaml` entry, which the rubric forbids. Regularised. Five
+   further orphans (`meta`, `masayoshi-son`, `jeff-dean`, `allianz`,
+   `globalfoundries`) were deliberately NOT auto-added; each needs a
+   judgment call and `meta` is almost certainly a typo for `meta-ai`.
+3. **Three watchlist terms were returning near-pure noise**, quantified
+   against today's collect: **"Sonia"** matched 100 people named Sonia
+   (Sotomayor, Gandhi, a WNBA coach) and zero references to the therapy
+   app; **"Arm"** spent its entire 100-result cap on "games arm", "arms
+   race" and "Arm Linux"; **"Cerebral"** returned 44 matches dominated by
+   "cerebral palsy". All three disambiguated on the pattern the file
+   already used for "Alan insurtech".
+4. **Sixteen bare-domain citation links** (`https://www.cnbc.com/` etc.)
+   had been written as corroborating sources across the new digests and
+   timelines. A homepage is not a citation — all stripped to plain outlet
+   names, keeping the specific primary link. The FT's paywalled article
+   is now named in prose rather than linked to a root domain; the
+   readouts validator independently caught the same URL and rejected the
+   AI briefing until it was fixed, which is the validator working.
+
+**Coverage critic — a structural finding worth more than the misses.**
+Monday newsletter leads are a poor recall signal for Monday: three of
+four AI benchmarks are weekday-only (verified empirically), so they spend
+Monday clearing Thursday and Friday. Six items pulled from Monday's leads
+and date-verified against primary sources **all dated 08-13 to 08-15;
+none was a Monday event.** Scoring by appearance date would have produced
+three false misses against 08-17 while hiding three real ones. Three were
+already covered here; three were genuine misses — Crouzeix's conjecture
+(folded into 08-15, where it belongs, and carefully worded since
+"informally endorsed by named mathematicians" is not "peer reviewed"),
+OpenAI's $40B run-rate (Bloomberg 08-13, a leak not a disclosure), and
+Apollo's ~$1T AI-financing-gap estimate (Forbes 08-14, carried with
+Apollo's own conflict of interest attached). 08-13/08-14 are `final` and
+were not reopened.
+
+**One correction to a finalized claim.** The 08-15 mental-health digest
+asserted Aetna's Alma rate cuts "took effect today as scheduled,
+confirmed independently." Both cited sources predate 08-15 and describe
+what was *scheduled* — the ClearHealthCosts piece is dated July and the
+practice-management writeup's own closing line is "August 15 is going to
+happen." A fresh re-sweep found nothing post-dated in either direction.
+The digest and both front-digest references now match the ledger's
+`passed-silent`, whose grace runs through 08-18.
+
+**Collector note.** A skipped `/daily` costs real collector coverage, not
+just a digest: the 08-16 buffer files stop at 20:21 ET *Saturday*, before
+the Sunday digest-day opens, so the reconstruction ran on direct web
+verification. Today's collect backfilled the window afterwards
+(`google_news_rss` now spans 08-15T14:02Z → 08-17T14:13Z, 6,885 items)
+and that backfill was mined as a second pass. The sanctioned
+Sunday-evening mini-sweep exists for exactly this and was not run.
+
+Rendered (903 KB) and published: `kestrel publish --push` shipped 155
+readouts, 621 story pages, 3 interpretation pages and 122 map pages, and
+triggered the Cloudflare build. `last_seen` written back on all 16 moved
+threads — the write-back gap flagged in the last two `/week` runs did not
+recur this pass because it was done explicitly rather than assumed.
+
+**Pick up:** ⚠️ **the `week_of 08-10` weekly digest is now incomplete** —
+it was written "partial through Sat" before 08-16 existed, and Sunday now
+does exist, so a `/week` re-run would close the week properly. The read
+page's 600 KB soft cap is exceeded (903 KB) but its prescribed
+degradation rule ("drop item html >3 days old") is a **no-op** on a
+Monday when all 14 items are same-day — the size is structural (99
+threads, 200 entities), so the rule as written cannot help; worth Ben's
+call. The claude.ai artifact URL was **not** republished — no Artifact
+tool is available in this session. Five orphan entity slugs and the
+`meta`→`meta-ai` typo sit with Ben. One 08-11 bullet carries `interp=yes`
+with no sidecar entry ever written; left rather than invented after the
+fact. STATUS.md's top note is still "As of 2026-08-14", now four sessions
+stale.

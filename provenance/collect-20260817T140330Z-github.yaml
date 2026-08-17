@@ -1,0 +1,20 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-16T14:00:44Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-08-17T14:03:30Z'
+items: []

@@ -10,6 +10,26 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-17 — The Ohio site's power bill: at least 10 GW of new generation, $4.2B into the grid
+
+- **The signed PORTS-Pike Technology Campus deal (Nvidia/OpenAI/SB
+  Energy, Pike County, Ohio) commits SB Energy and SoftBank to build
+  at least 10 GW of new power generation — yielding 8 IT-GW of
+  AI-factory capacity — and to invest at least $4.2B in regional grid
+  infrastructure through a partnership with AEP Ohio**, explicitly
+  framed as protecting ratepayers. Nvidia is also putting $1.5B
+  directly into SB Energy itself (correcting weekend reports of "up
+  to $3B," which described pre-announcement talks), and OpenAI is
+  adding an incremental $40M to SB Energy's existing $40M
+  community-benefits fund.
+  ([NVIDIA](https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute), [OpenAI](https://openai.com/index/openai-joins-ports-pike-project)) ⟨daily 2026-08-17⟩
+- 💡 **The generation-plus-grid-plus-community package arriving
+  bundled into one site's announcement** is the same buildout pattern
+  this thread has watched assemble piecemeal elsewhere — ONEOK's gas
+  supply deal (08-15), PJM's self-supply-or-curtail rule (08-05) — now
+  packaged as a single project's stated terms rather than separate
+  filings. ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — A pipeline company becomes a named gas supplier for a data-center power plant
 
 - **ONEOK signed an agreement to supply natural gas to a dedicated

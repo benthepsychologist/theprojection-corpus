@@ -11,6 +11,35 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-17 — Signed: structure confirmed at primary source, the figure still isn't
+
+- **Nvidia, OpenAI and SoftBank's SB Energy jointly announced the signed
+  PORTS-Pike Technology Campus in Pike County, Ohio, with named quotes
+  from Jensen Huang, Sam Altman and Masayoshi Son.** Nvidia provides
+  credit support on land, power and shell buildout for an initial 4.25
+  IT-GW, with an option on the remaining 3.75; OpenAI is named customer
+  for 8 IT-GW total. Nvidia also confirmed a **$1.5B direct investment
+  in SB Energy**, correcting weekend reports of "up to $3B" that
+  described pre-announcement talks rather than the final terms.
+  ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute), [OpenAI](https://openai.com/index/openai-joins-ports-pike-project)) ⟨daily 2026-08-17⟩
+- **The structure is now confirmed at primary source; the dollar figure
+  on the guarantee itself is not — the release prints no number at
+  all.** The "under $120B" figure this thread has carried since 08-15
+  remains WSJ reporting, well corroborated in press but never
+  company-confirmed. Trajectory to date: $250B (07-28) → up to $750B in
+  combined SK Group/OpenAI talks (08-04) → under $120B, phase-one only
+  (08-15) → signed, phase-one, unpriced (08-17). ⟨daily 2026-08-17⟩
+- **Separately, Crunchbase reports semiconductor companies have
+  participated in more than $250B of AI/robotics startup financings in
+  2026 to date, with Nvidia leading at 59 rounds year-to-date (up from
+  53 in all of 2025)** — including co-leading OpenAI's $122B round in
+  March and a $5B cheque into Safe Superintelligence in July; AMD backed
+  19 startups including at least four $1B+ rounds, Samsung at least 17.
+  The relevance to this thread: chip-vendor financing reads as a
+  sector-wide systemic pattern, not just the handful of headline
+  Nvidia-OpenAI deals tracked above.
+  ([Crunchbase News](https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/)) ⟨daily 2026-08-17⟩
+
 ## 2026-08-15 — The guarantee is cut in half, and narrowed to phase one
 
 - **Nvidia scaled back its planned OpenAI Ohio data-center guarantee

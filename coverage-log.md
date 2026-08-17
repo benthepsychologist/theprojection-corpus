@@ -3133,3 +3133,126 @@ turns into an actual BOJ/Treasury action.
 
 Full sweep for 08-15 (since the 08-14 ~20:xx ET run) kicked off ahead of
 this critic pass; see the next entry for its results.
+
+---
+
+## 2026-08-17 /daily — three digest-days at once (08-15 finalize, 08-16 reconstruct, 08-17 open)
+
+No `/daily` ran over the weekend, so this pass finalized 08-15, rebuilt
+08-16 from scratch, and opened 08-17. The critic ran against all three.
+
+### The structural finding, which matters more than any single miss
+
+**Monday newsletter leads are a poor recall signal for Monday.** Three of
+the four AI benchmarks are weekday-only (verified empirically this pass,
+not taken on faith: sitemap gaps between the 08-14 and 08-17 editions of
+The Rundown AI, and 307 redirects on TLDR AI's dated 08-15/08-16 URLs).
+They therefore spend Monday clearing Thursday and Friday. **Six items were
+pulled from Monday's benchmark leads and date-verified against primary
+sources; all six dated 08-13 to 08-15 and none was a Monday event.**
+Scoring them by appearance date would have produced three false misses
+against 08-17 while hiding three real ones on earlier days. Every
+benchmark lead needs its true publication date established before it is
+scored. Adopted as standing practice.
+
+Of the six: three were already covered here — GLM-5.3 (Z.ai, 08-14, in
+that day's digest), ChatGPT "Computer History" (08-13, in the 08-14
+digest), and Anthropic's multiagent turf-war research (08-13, in the
+08-13 and 08-14 digests). Three were genuine misses, below.
+
+### They led with → we missed
+
+- **Crouzeix's conjecture proved with a 16-hour autonomous GPT-5.6 Sol
+  session** (SIAM News, **08-15**; preprint 07-27, rev. 08-07). Surfaced
+  via The Rundown AI's 08-17 lead. Belongs to the 08-15 digest-day and was
+  **folded into that digest at finalize**. Handled with care on status:
+  Townsend, Greenbaum and Crouzeix himself have informally checked and
+  endorsed the argument, but the preprint sits on a non-refereed server
+  and Jin's own repo says "formal peer review is still pending" — those
+  are different claims and the digest keeps them apart.
+- **OpenAI's annualized revenue run-rate topped $40B** (Bloomberg,
+  **08-13**). Not covered. Material to `anthropic-ipo-timing` and
+  `frontier-lab-ipos`, both of which turn on relative lab scale ahead of
+  listing. Carry it as a **leak, not a disclosure** — Bloomberg cites
+  people familiar and states OpenAI declined to comment.
+- **The AI buildout's ~$1T financing gap** (Forbes, **08-14**, reporting
+  Apollo chief economist Torsten Slok). >$2T of debt needed through 2030
+  against <$1T of investment-grade absorption capacity; AI borrowing
+  already >40% of new long-term IG corporate issuance. Not covered.
+  Directly on `ai-buildout-debt-risk` and `ai-circular-financing-risk`,
+  and it is the quantified version of the shadow-backstop story the 08-15
+  digest led with — which makes the miss more pointed. ⚠️ Carry with the
+  conflict attached: Apollo is a major private-credit manager and the gap
+  it identifies is one its own business exists to fill.
+- **FT Unhedged, "South Korea's inverse correlation"** (Saturday
+  **08-15**) — Kospi falling while the won strengthens. Not covered.
+  Korea is not off-lens: `chip-hyperscaler-rotation` runs through SK Hynix
+  and Samsung memory, and `apple-cxmt-senate-deadline` turns on Korean
+  supply as the alternative to Chinese memory. It simply was not looked
+  for.
+
+**08-13 and 08-14 were already `final` and were NOT reopened.** Those two
+misses are logged here and in the 08-15 per-lens appendices instead.
+
+### Benchmark availability
+
+Genuinely empty rather than unchecked, for most of the window. **08-15
+(Sat):** no AI benchmark published; no mental-health benchmark published
+an editorial lead; FT Unhedged was the only capital benchmark to publish.
+**08-16 (Sun):** only The Neuron (a "Sunday Special" whose lead was the
+08-13 turf-war research — a weekly recap, not a missed development) and
+BHB (a sponsored "Voices" column, advertorial, excluded). **Money Stuff
+is on scheduled vacation through 08-24**, announced in its own 08-13
+column — a clean non-publication, not a blocked source. **The AI Daily
+Brief published nothing across the entire 08-15 to 08-17 window.**
+
+### Access findings
+
+- ⚠️ **NEW BLOCK — `r.jina.ai` is now domain-blocked on
+  fiercehealthcare.com entirely:** a hard 403 `AbuseAlleviationError`
+  ("DDoS attack suspected"), not per-request rate limiting. What still
+  works there: the WebFetch tool against the live homepage (200, full
+  content) and site-scoped Google News RSS. Direct `curl` to
+  `/rss.xml` returns 200 but the feed is mostly gated webinar listings;
+  `/feeds/all/rss.xml` hits a Cloudflare JS challenge.
+- ✅ **Two routes are SIMPLER than documented.** Bloomberg Technology RSS
+  (`feeds.bloomberg.com/technology/news.rss`) needs only `curl -L` to
+  follow the redirect — no proxy, no spoofed UA. This supersedes the
+  08-14 note above recording Bloomberg as proxy-resistant and
+  WebSearch-only. STAT's health-tech feed
+  (`statnews.com/category/health-tech/feed/`) works with a bare `curl`.
+- ⚠️ **Axios Pro Rata is archive-blind.** The reader-proxy route serves
+  **only the current edition**. Three attempts at a back issue failed: a
+  guessed `/archive` path (404), a `?page=` parameter (returned the same
+  current issue), and a dated web search (not indexed). Its Saturday
+  edition — which its confirmed Mon–Sat schedule says existed — is
+  recorded as **unreachable, not unpublished**. The 08-15 fix note above
+  is confirmed still working *for the current issue only*; that scope
+  limit was not previously recorded.
+- ✅ Behavioral Health Business's Googlebot-UA workaround held with no
+  further tightening this pass.
+
+### Watch, not yet thread-worthy — escalating
+
+The FT Unhedged yen/BOJ-intervention theme flagged on 08-14 as
+five-in-two-weeks has now run a **sixth** time: today's lead, "Broken
+FIMA," argues Treasury Secretary Bessent's yen-support backstop mechanism
+is a shaky basis for intervention policy. This one is closer to the
+"actual BOJ/Treasury action" bar that entry set than the previous five,
+since it concerns a named, live mechanism rather than analyst commentary
+on direction. Still short of a discrete event; flagged as approaching.
+
+### Collector note — a missed daily leaves a real data hole
+
+Worth recording because it is not obvious: **the 08-16 digest-day had
+essentially no collector coverage at all.** The `buffer/2026-08-16-*`
+files were written by Sunday morning's `/week` collect and their newest
+timestamps stop at 2026-08-16T00:21Z — 20:21 ET *Saturday*, before the
+08-16 digest-day even opens. No collect ran between then and this
+morning. The Sunday reconstruction was therefore carried entirely by
+direct web verification. Today's collect did backfill the window after
+the fact (`google_news_rss` now spans 08-15T14:02Z → 08-17T14:13Z, 6,885
+items) and that backfill was mined as a second pass, but the general
+lesson stands: a skipped `/daily` costs collector coverage that only
+partially recovers, not just a missing digest. The sanctioned
+Sunday-evening mini-sweep exists for exactly this and was not run.

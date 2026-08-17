@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-15
-status: building
+status: final
 window_start: 2026-08-15T05:00:00-04:00
-as_of: 2026-08-15T20:29:00-04:00
-coverage: pending
+as_of: 2026-08-16T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-15
@@ -180,6 +180,21 @@ its first hard construction timeline.
   ([AGBI](https://www.agbi.com/tech/2026/08/neom-to-start-constructing-oxagon-ai-data-centre-in-months/))
   <!-- k: t=pif-ai-buildout e=pif axis=deals-and-filings -->
 
+- **Anthropic's Decart bid firmed at roughly $7B after outbidding Nvidia,
+  and the founders took the lower offer.** Calcalist reported that
+  advanced Nvidia–Decart negotiations were halted once Anthropic entered
+  with a competing offer — and that Nvidia is believed to have bid
+  *higher*, but Decart's founders and Sequoia Capital, its largest
+  investor, preferred Anthropic anyway, largely because the consideration
+  is Anthropic stock. The price has moved from the ~$6B reported
+  mid-week to ~$7B, a roughly 50% premium to Decart's $4B valuation from
+  its last round. Signing is now expected "as soon as next month,"
+  which pushes past this entry's 08-17 due date. ⟨late catch at finalize
+  08-17 — published 00:21 ET 08-16, inside this digest-day under the
+  05:00 ET boundary⟩
+  ([Calcalist/CTech](https://www.calcalistech.com/ctechnews/article/b1evv3aufg))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic,nvidia axis=deals-and-filings interp=yes -->
+
 ## 📊 Macro strip
 
 - **Brent crude: $88.52/bbl** (CNBC, Friday close 08-14) — up from
@@ -256,9 +271,56 @@ quieter equity-story wins for SpaceX's first public earnings, Anthropic's
 firming September IPO target, and a first construction timeline for
 Saudi Arabia's Oxagon AI campus.
 
-<!-- At finalize, the coverage critic appends:
 ## Appendix — Coverage check vs. benchmarks
-**They led with → we missed:** …
-**Both covered:** …
-**We had → they didn't:** …
--->
+
+**They led with → we missed:** one, and it is a real miss.
+
+- **FT Unhedged, "South Korea's inverse correlation" (Saturday 08-15)** —
+  the Kospi falling while the won strengthens, which is the unusual
+  pairing the piece is built around: an equity market and its currency
+  normally move together on foreign-flow dynamics, so a sustained
+  divergence points at something structural rather than positional. This
+  digest carried no Korea content at all on 08-15. Worth noting that
+  Korea sits upstream of two threads this map does track —
+  `chip-hyperscaler-rotation` runs through SK Hynix and Samsung memory,
+  and `apple-cxmt-senate-deadline` turns on Korean supply as the
+  alternative to Chinese memory — so a Korean macro divergence is not
+  off-lens, it simply was not looked for.
+
+**Both covered:** nothing. Of the four benchmarks, FT Unhedged was the
+only one to publish on Saturday.
+
+**We had → they didn't:** the entire digest — Nvidia's 13F disclosures,
+the shadow-credit-backstop pricing story, the Ohio guarantee cut, the
+Decart bid firming, NEOM/Oxagon. With three of four benchmarks silent,
+this comparison carries little information in either direction.
+
+**Benchmark availability, recorded because the set keeps shifting.**
+Money Stuff published nothing across the whole 08-15 to 08-17 window —
+cleanly explained rather than assumed: its 08-13 column ("Bilateral OTC
+Goat Hedge") carried an explicit programming note that it is on vacation
+until 08-24. Bloomberg Technology's accessible RSS carried no Saturday
+items, though that feed retains only ~20 recent items and is a curated
+stream, so absence there is suggestive rather than conclusive. **Axios
+Pro Rata is a genuine access gap for this date:** it runs Monday–Saturday,
+so a Saturday edition almost certainly existed, but the only working
+route (the r.jina.ai reader proxy against the persistent newsletter URL)
+serves *only the current edition* — a guessed `/archive` path 404s, a
+`?page=` parameter returns the same current issue, and the exact date
+string is not indexed in search. Recorded as unreachable, not as
+unpublished.
+
+**⚠️ Cross-day miss on this lens, from the same date-verification pass
+described in the 08-15 frontier-ai appendix.** The AI buildout's
+**~$1T financing gap** — Apollo chief economist Torsten Slok's estimate
+that more than $2T of debt is needed through 2030 against under $1T of
+investment-grade absorption capacity, with AI borrowing already above 40%
+of new long-term IG corporate issuance — was reported by Forbes on
+**08-14** and never picked up here. It sits squarely on
+`ai-buildout-debt-risk` and `ai-circular-financing-risk`, and it is the
+quantified version of the shadow-backstop story this digest led with on
+08-15, which makes the miss more pointed rather than less. 08-14 is
+already `final` and is not being reopened; this is logged here and in
+`coverage-log.md`. It should be carried with its conflict of interest
+attached — Apollo is itself a major private-credit manager, and the gap
+it identifies is one its own business exists to fill.

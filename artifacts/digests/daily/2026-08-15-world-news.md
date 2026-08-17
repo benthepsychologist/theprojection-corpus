@@ -1,10 +1,13 @@
 ---
 lens: world-news
 date: 2026-08-15
-status: building
+status: final
 window_start: 2026-08-15T05:00:00-04:00
-as_of: 2026-08-15T20:28:00-04:00
+as_of: 2026-08-16T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
+# Finalized 2026-08-17. The 20:30 ET → 05:00 ET tail was swept and was
+# empty: no dated world-news development surfaced in the ~8.5 hours
+# between this digest's original close and the digest-day boundary.
 ---
 
 # World News — 2026-08-15

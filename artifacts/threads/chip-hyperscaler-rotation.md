@@ -39,6 +39,18 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-17 — Memory-chip rally extends into Monday premarket on no new catalyst
+
+- **Micron, SanDisk, Western Digital and Seagate rose 2-6% in Monday
+  premarket trading, with Micron approaching $1,000/share after roughly
+  13% gains over five sessions.** Drivers are pre-window: SanDisk's
+  08-13 investor day (targeting 80% non-GAAP gross margins by FY2030,
+  ~$94B in disclosed long-term contracts) and the standing AI-driven
+  DRAM/HBM tightness this thread has tracked since the rotation debate
+  opened. No new Monday catalyst was identified — this reads as
+  momentum on drivers already priced, not a fresh repricing.
+  ([TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262112010-us-pre-market-memory-chip-stocks-rose-mu-3-sndk-5-wdc-3-tradingkey)) ⟨daily 2026-08-17⟩
+
 ## 2026-08-08 — The scare that triggered the rotation debate starts unwinding
 
 - **South Korea's SK Hynix-led selloff began easing as roughly $1.4B in leveraged trades unwound, a day after a brief pre-market "flash crash" (a 30%-limit-down print on an alternative exchange, lasting under an hour) had rattled the KOSPI.** The rout traced to Wall Street spillover — SanDisk's strong earnings but soft guidance sparked broader memory-sector jitters — layered onto South Korea's own leveraged-ETF exposure to AI/semiconductor names. The easing doesn't resolve this thread's core question (is the rotation real or noise), but it does mark the specific volatility episode this week's "peaking" debate was reacting to as a market-structure event (leverage unwind), not a fresh fundamentals signal.

@@ -12,7 +12,7 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
-## 2026-08-15 — SpaceX posts its first public earnings and recovers above issue price; Anthropic's IPO timeline firms to September
+## 2026-08-15 — SpaceX recovers above issue price on its first earnings; Anthropic's IPO timeline firms, and a seller picks its stock over cash
 
 - **SpaceX (SPCX) reported its first-ever quarterly earnings as a public
   company on 08-04: $7.81B revenue (+92% YoY, beating estimates of
@@ -41,6 +41,18 @@ print. Children: OpenAI · SpaceXAI · Anthropic.
   filed 06-01; the ~$965B-$1T valuation range referenced 07-30 is
   unchanged as of this report.
   ([Investing.com](https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754)) ⟨daily 2026-08-15⟩
+- **Calcalist reported Anthropic's bid for Israeli AI startup Decart
+  firmed at roughly $7B (from ~$6B mid-week, a ~50% premium to Decart's
+  $4B last round), with advanced Nvidia-Decart talks halted once
+  Anthropic entered — Decart's founders and lead investor Sequoia
+  Capital preferred Anthropic's offer over a reportedly higher Nvidia
+  cash bid because Anthropic is paying in its own stock.** For this
+  thread's "who lists first, on what terms" question, the signal here
+  is in deal behavior rather than IPO chatter: a private seller valued
+  unlisted Anthropic equity above cash from an already-public company,
+  weeks before Anthropic's expected September listing. Signing is
+  expected "as soon as next month."
+  ([Calcalist](https://www.calcalistech.com/ctechnews/article/b1evv3aufg)) ⟨daily 2026-08-15⟩
 
 ## 2026-07-30 — SpaceX completes the round trip
 

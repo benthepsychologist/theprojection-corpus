@@ -39,6 +39,23 @@ stated flat.** See the note at the foot of this file.
     That is why the regional-linkage note below names one party at a time.
 -->
 
+## 2026-08-16 — Eight Arab/Muslim-majority states blame Israel for thwarting the peace plan as strikes kill two and a Hamas delegation reaches Cairo
+
+- **Foreign ministers of eight Arab and Muslim-majority states —
+  Turkey, Egypt, Indonesia, Jordan, Pakistan, Qatar, Saudi Arabia and
+  the UAE — issued a joint statement saying Israel "bears
+  responsibility for disrupting peace efforts,"** calling Netanyahu's
+  prior-week rejection of the Gaza Road Map and of Palestinian
+  statehood "a direct repudiation" of Trump's plan.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog_entry/egypt-jordan-uae-qatar-turkey-others-blame-israel-for-thwarting-gaza-peace-plan/)) ⟨daily 2026-08-16⟩
+- **The same day, Israeli strikes on an Islamic Jihad target in Khan
+  Younis and a Hamas target in Nuseirat killed two and wounded several
+  sheltering in tents, while a Hamas delegation led by Khalil al-Hayya
+  arrived in Egypt ahead of Kushner's Cairo meetings with Egyptian,
+  Qatari and Turkish mediators.** Condemnation, strikes and shuttle
+  diplomacy inside one day.
+  (CNBC) ⟨daily 2026-08-16⟩
+
 ## 2026-08-15 — Two ceasefire violations logged inside 24 hours; the Qusra siege turns on a repair crew
 
 - **The IDF reported two separate incidents it says violate the truce: a

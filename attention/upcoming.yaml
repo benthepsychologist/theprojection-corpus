@@ -470,7 +470,26 @@ expectations:
     what_confirms: "a participant list or cohort announcement on the CMMI page"
     logged: 2026-07-29
     logged_by: curate-add
-    status: pending
+    # 2026-08-17 ⟨daily⟩: HIT, on CMS's own page — the source URL already
+    # logged here states verbatim "The 10-year model offers rolling start
+    # dates, with the next start dates on August 17, 2026 and October 1,
+    # 2026." Page last modified 08-12, five days before the date, so this
+    # is CMS's own pre-stated schedule holding, not a same-day artifact —
+    # verified by raw fetch + literal string grep rather than a summarized
+    # fetch, precisely because a finding landing on its own check date is
+    # the hallucination-shaped case. Companion CMMI page
+    # (access-model-accepted-applicants, same 08-12 update) confirms 150+
+    # organizations accepted and a first cohort already live since 07-05.
+    # CAVEAT kept deliberately: a rolling administrative start generates no
+    # "it happened" announcement, so what is confirmed is the schedule
+    # standing unrevised, not an observed go-live.
+    status: hit
+    resolved: 2026-08-17
+    evidence: >
+      CMS Innovation Center's ACCESS model page (cms.gov), last modified
+      2026-08-12, names 2026-08-17 as the next rolling cohort start date;
+      companion accepted-applicants page confirms 150+ organizations
+      onboarded with the first cohort live since 2026-07-05.
 
   - id: cxmt-congress-letters
     claim: "Bipartisan letters to the administration seeking a CXMT national-security probe ('coming days' as of 07-28)"
@@ -652,6 +671,28 @@ expectations:
     # by either company directly — this is still "in talks" reporting, not
     # a signed deal, so status stays pending and the due date (deal closing
     # "next week" per the original report) is unchanged.
+    # 2026-08-17 ⟨daily⟩: SLIPPED, and the buyer question is now CLOSED.
+    # Calcalist (08-16 04:21 GMT, "Anthropic closes in on $7 billion Decart
+    # deal after beating Nvidia to the table") reports the parties "now
+    # exchanging advanced drafts," that "no agreement has yet been signed,"
+    # and that it "could be signed as soon as next month, ahead of
+    # Anthropic's expected September IPO," with early-September completion
+    # odds "considered high." Corroborated same-day by Globes (08-16 18:07
+    # GMT) and Ynetnews/Cryptonomist (08-17). Due date moves 08-17 ->
+    # early September; old date pushed to slips.
+    # BUYER: Anthropic, settled. Every source dated 08-14 through 08-17 —
+    # Calcalist, Globes, Ynetnews, Cryptonomist, Times of Israel, Fortune —
+    # names Anthropic exclusively; SpaceX does not reappear in this window
+    # as acquirer, surviving only as a pre-08-13 rumored suitor. This
+    # retires the open "Anthropic vs SpaceX buyer" question the map has
+    # carried since 08-09.
+    # ⚠ NEW CONFLATION RISK, logged so it isn't re-learned: the losing
+    # bidder was NVIDIA, not SpaceX — and Nvidia is simultaneously the
+    # subject of the unrelated OpenAI Ohio guarantee signed 08-17. Two
+    # different Nvidia stories inside the same 48 hours; do not merge them.
+    # Valuation has also crept ~$6B -> ~$7B across this reporting wave.
+    due: 2026-09-04
+    slips: [2026-08-17]
     status: pending
 
   - id: moonshot-hk-ipo-filing
@@ -1202,4 +1243,51 @@ expectations:
     what_confirms: "an actual signed agreement announced by either company — WSJ reported a deal 'could be signed as soon as this weekend'"
     logged: 2026-08-15
     logged_by: curate-add
+    # 2026-08-17 ⟨daily⟩: HIT, at primary source and same-day. NVIDIA's own
+    # newsroom published "NVIDIA Guarantees SB Energy's PORTS-Pike
+    # Technology Campus in Ohio to Exclusively Host NVIDIA AI Compute" —
+    # a three-party joint release carrying on-record quotes from Jensen
+    # Huang, Sam Altman and Masayoshi Son. That satisfies what_confirms
+    # exactly: announced by the company itself, not reported second-hand.
+    # Structure confirmed as the narrowed, phase-one shape this entry
+    # claimed: NVIDIA provides credit support on land, power and shell
+    # buildout for an initial 4.25 IT-GW, with an OPTION on the remaining
+    # 3.75 IT-GW; OpenAI is named the customer for 8 IT-GW total.
+    # ⚠ ONE PRECISION POINT: the primary source never prints a dollar
+    # figure. The "<$120B" in this entry's own claim text is WSJ's
+    # reporting, well corroborated across press but NOT confirmed by
+    # NVIDIA's release — so the phase-one narrowing is confirmed at
+    # primary source while the specific number remains press-sourced.
+    # Timing worth noting: WSJ (via qz.com, 08-17 11:45 GMT) was still
+    # calling the deal "nearing" hours before the release went out — a
+    # check run earlier today would have read passed-silent.
+    status: hit
+    resolved: 2026-08-17
+    evidence: >
+      NVIDIA newsroom joint press release, 2026-08-17, with Huang/Altman/Son
+      quotes: NVIDIA guarantees SB Energy's PORTS-Pike campus in Pike County,
+      Ohio, providing credit support on land, power and shell buildout for an
+      initial 4.25 IT-GW with an option on the remaining 3.75 IT-GW; OpenAI
+      named as customer for 8 IT-GW. Dollar figure (<$120B) is WSJ-sourced,
+      not stated in the release.
+
+  - id: israel-lebanon-rome-round-8
+    claim: "Eighth round of Israel-Lebanon negotiations convenes in Rome"
+    due: 2026-09-01
+    due_precision: day
+    thread: israel-lebanon-escalation
+    entities: []
+    source: https://english.alarabiya.net/News/middle-east/2026/08/16/israel-vows-to-go-after-hezbollah-as-it-names-another-killed-4
+    confidence: reported
+    what_confirms: "the round actually convening, or a public postponement — a Lebanese official briefed the date to Qatar's news agency and neither government has confirmed it directly"
+    logged: 2026-08-17
+    logged_by: curate-add
+    # Logged from the 08-16 reconstruction. Notable for WHEN it was
+    # briefed: the date surfaced the same day Israel named the Hezbollah
+    # Badr-unit commander killed in Saturday's strikes and Defense
+    # Minister Katz vowed "no score will be left unsettled in any arena."
+    # The talks track and the escalation are running in parallel rather
+    # than one displacing the other, which is what makes the round
+    # actually convening a real test rather than a formality. The seventh
+    # round ended 08-06 with little resolved.
     status: pending

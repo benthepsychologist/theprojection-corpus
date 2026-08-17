@@ -1,0 +1,64 @@
+# 2026-08-16-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the
+# bullet's own bold lead phrase. The bullet's <!-- k: ... --> annotation
+# carries interp=yes to point here. Read against capital-context.yaml —
+# this entry extends the `conflict_risk_premium` reading already on file
+# rather than inventing new context. One entry only: Sunday produced one
+# item, and padding a thin day with forced interpretations is exactly
+# what the discipline forbids.
+
+strait-of-hormuz-commodity-transits-fell-to-zero-o:
+  mechanism: >
+    Everything this map has priced about Hormuz until now has been
+    inferred from the wrong side of the equation — Brent's level, war-risk
+    insurance quotes, the rhetoric around a transit deal — all of which
+    measure what traders BELIEVE about the strait rather than what is
+    physically moving through it. Kpler's transit counts measure the
+    thing itself, and a sustained collapse to zero changes the character
+    of the constraint rather than its degree: a risk premium prices the
+    possibility that functioning lanes get interrupted, whereas a
+    standstill means the reroute has already happened and the cost is
+    being paid continuously in freight rates, longer voyages around the
+    Cape of Good Hope, and tied-up tonnage. Those are structural costs
+    that accrue whether or not any further escalation occurs, and they do
+    not unwind on a de-escalation headline the way a premium does.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        If the standstill holds through this week, expect the war-risk
+        insurance premium this thread already tracks (quoted at 3-10% of
+        hull value) to start being tested against actual claims and
+        actual non-renewals rather than quoted rates — and expect freight
+        repricing, not spot crude, to be where the cost shows up first.
+      why: >
+        Quoted premiums are what underwriters advertise when they still
+        expect to write business; when transits stop entirely, the
+        binding constraint moves from price to availability, and the
+        market signal migrates from the crude curve to tanker earnings
+        and charter rates.
+      precedent: >
+        The 2019 Strait of Hormuz tanker-attack period, when a comparable
+        transit slowdown preceded a sustained freight-rate and
+        war-risk-premium repricing that persisted well after the
+        immediate attack window closed, rather than reverting with the
+        headlines.
+    - direction: >
+        Alternatively the zero print is a weekend artifact — a two-day
+        sample across a period when scheduling, not risk, thins traffic —
+        and transits resume mid-week without the structural repricing
+        above.
+      why: >
+        Two days is a very short series, the prior weekend's 31 transits
+        were themselves far below the 130-a-day norm, and one of
+        Saturday's five ran dark, which means the tracking data may
+        undercount vessels deliberately avoiding observation.
+      precedent: >
+        Earlier phases of this same conflict produced several single-day
+        transit collapses in the February-to-April window that reverted
+        within days without any lasting freight-rate effect.
+  context_note: >
+    capital-context.yaml's `conflict_risk_premium` reading flagged on
+    08-02 that this thread's own historical blind spot was the physical
+    volumes underneath the price. This data point closes that gap for
+    this week specifically, and it does so in the direction the reading
+    feared rather than against it.
