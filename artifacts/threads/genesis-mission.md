@@ -13,6 +13,10 @@ this becomes the umbrella for nuclear-for-AI money. Opened 2026-07-28
 (row 23, ben-steer: "open all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md.
 
+## 2026-08-07 — DOE launches Genesis Open Models with Arcee AI
+
+- **DOE launched the Genesis Open Models initiative with Arcee AI** — the government's first open-weight AI model program for science, first model named Genesis-Science-1. Applications for the pretraining contribution window closed 08-14; fine-tuning window closes 08-25. ([DOE](https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative)) ⟨daily 2026-08-18⟩
+
 ## 2026-08-04 — NIST joins as a new agency; a second nuclear-AI awardee discloses its project
 
 - **NIST signed onto the Genesis Mission** — a memorandum of understanding

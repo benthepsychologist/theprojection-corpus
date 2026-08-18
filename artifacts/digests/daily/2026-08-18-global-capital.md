@@ -3,18 +3,21 @@ lens: global-capital
 date: 2026-08-18
 status: building
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T10:45:00-04:00
+as_of: 2026-08-18T15:15:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-18
 
-*Curated agentic-interim, 05:00 ET through ~10:45 ET — an opening pass
-taken roughly ninety minutes into the US session, so every market level
-below carries its own as-of timestamp and none of them is a close.
-Sources: today's full collector run (18 sources, including `fred`,
-`sec_edgar` and `treasury_tic`) plus live timestamped quotes and direct
-primary-source verification of NVIDIA's 13F.*
+*Curated agentic-interim, 05:00 ET through ~15:15 ET, extended through
+the afternoon — still not a close (markets close 16:00 ET), so every
+market level below carries its own as-of timestamp. Sources: today's full
+collector run (18 sources, including `fred`, `sec_edgar` and
+`treasury_tic`) plus live timestamped quotes (stockanalysis.com,
+tradingeconomics.com) and direct primary-source verification of NVIDIA's
+13F. The fresh 15:03 ET collector pass added little of its own — of 886
+items only 13 were `global-capital`-tagged and none were market-moving;
+this window's real update came from live verification.*
 
 ## Today's throughline
 
@@ -28,7 +31,16 @@ back the $1,000 it crossed on Monday inside a single session. Nothing
 company-specific happened to any of the three. That is the point — this
 is the rate channel arriving in the AI trade, which is the mechanism
 `ai-buildout-debt-risk` exists to watch and the first session where it is
-legible without an accompanying story.
+legible without an accompanying story. **By the afternoon the story split
+in two.** Yields eased slightly rather than extending further, but
+memory/storage names kept falling hard — Micron −7.56%, Western Digital
+−7.27%, SanDisk −9.80% — while Nvidia and AMD sat flat to their morning
+levels. The co-movement that made the morning legible as a rate story
+doesn't explain the afternoon; this reads more like `ai-memory-shortage`
+reasserting itself (Xiaomi's margin hit below is the same shortage from
+the demand side) than more duration repricing. Private AI-chip financing
+didn't get the memo either way: Etched quadrupled its valuation to $21B
+in seven weeks on the same day.
 
 ## Capital in my markets
 
@@ -48,6 +60,24 @@ legible without an accompanying story.
   ([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html),
   [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026))
   <!-- k: t=ai-buildout-debt-risk,chip-hyperscaler-rotation e=nvidia,amd,micron axis=capital-in-my-markets sev=major interp=yes -->
+
+- **By mid-afternoon the selloff had narrowed to memory/storage rather
+  than staying broad across the three original names, and it deepened
+  sharply there.** ~3:10 PM ET reads: **Micron −7.56% at $935.27**
+  (from −5.4% at 10:09 ET) · **Western Digital −7.27% at $497.02** ·
+  **SanDisk −9.80% at $1,611.81** — the whole memory/storage complex, not
+  one name. Nvidia and AMD barely moved from their morning levels (NVDA
+  −2.28%, AMD −5.09%, both flat to 10:09 ET). ⚠️ **The rate story that
+  explained the morning's co-movement did not get worse into the
+  afternoon** — 10-year at 4.71%, 30-year at 5.29% (tradingeconomics.com),
+  both a hair *below* the 10:45 ET reads — so memory's continued fall
+  while yields eased is a decoupling from this morning's throughline, not
+  a clean extension of it. Worth holding as its own thing: this looks
+  more like the memory-shortage/margin story `ai-memory-shortage` already
+  tracks (see Xiaomi below) reasserting itself than more duration
+  repricing.
+  ([stockanalysis.com](https://stockanalysis.com/stocks/mu/))
+  <!-- k: t=ai-memory-shortage e=micron axis=capital-in-my-markets -->
 
 - **Asia and Europe both sold off overnight, and Europe is now on its
   sixth consecutive down session.** The **Nikkei 225 closed −1.62% at
@@ -86,6 +116,21 @@ legible without an accompanying story.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/baidu-posts-fifth-straight-revenue-drop-as-ai-lag-widens))
   <!-- k: t=china-stack-independence axis=deals-and-filings -->
 
+- **Etched's valuation quadrupled in seven weeks: a $700M round at $21B,
+  led by Jane Street, the same day public memory/semis names took their
+  worst hit of the week.** Path: $5B (Dec-25) → $10.3B Series C (Jul-26)
+  → $21B (today). Etched builds AI-inference-specific hardware — a
+  low-voltage "prefill" chip plus shared cluster-scale memory — pitched
+  against Nvidia on cost/speed for inference rather than training. Other
+  investors: Kleiner Perkins, Sequoia, a16z, Peter Thiel, Tiger Global,
+  Blackstone. Jane Street is already a watchlist entity (added 08-14 for
+  its CoreWeave role); Etched has no entity slug on this map yet. Worth
+  holding against the memory selloff above: private AI-chip financing
+  didn't blink on the same day public AI-adjacent names had their worst
+  session of the week.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/))
+  <!-- k: t=ai-buildout-debt-risk e=jane-street axis=deals-and-filings -->
+
 - **No new SEC filing of consequence in-window.** Today's `sec_edgar`
   pull is 479 filings and its shape is the 08-14 13F deadline's wake —
   135 N-PX, 95 13F-HR, 14 13F-HR/A, 62 424B2 — with 19 8-Ks, none from
@@ -98,15 +143,24 @@ legible without an accompanying story.
 
 ## 📊 Macro strip
 
-*All intraday unless marked; ~10:00–10:45 ET reads, not closes.*
+*All intraday unless marked; ~10:00–10:45 ET morning reads, with a
+~3:10 PM ET afternoon update on yields and the index levels below. Market
+close (16:00 ET) had not happened as of this pass — a close-vs-intraday
+delta should be re-pulled on the next run rather than assumed from these
+reads.*
 
-- **30-year Treasury: 5.32%** (08-18 intraday) — **+1bp** on Monday's
-  5.31%, itself the highest since June 2007. Third consecutive session of
-  new highs.
-- **10-year: 4.72–4.73%** (08-18) — described as the highest in 20
-  months. ✅ Fills a gap: the 08-17 pass carried 30y and 2y but no 10y.
+- **30-year Treasury: 5.32%** morning → **5.29%** ~3:10 PM ET
+  (tradingeconomics.com) — a slight afternoon ease rather than a further
+  extension; ⚠️ unverified against a primary source, so treat as directional
+  not exact. Still a third consecutive session at/near 19-year highs.
+- **10-year: 4.72–4.73%** morning → **4.71%** afternoon — flat to
+  slightly eased, same caveat as above.
 - **2-year: 4.18%** (08-18) — flat on Monday's ~4.17%. The steepener
   holds.
+- **S&P 500: 7,709.14 (−0.46%)** at 10:45 ET → **7,696.64 (−0.63%)**
+  ~3:10 PM ET — deepened. **Nasdaq** −1.2% → **−1.33%** (26,290.51) —
+  deepened. **Dow** −0.3% → **−0.15%** (53,380.49) — **recovered**, less
+  negative than the morning read.
 - **10Y–2Y spread: 0.53** (FRED `T10Y2Y`, 08-17) — the bear steepener
   with a number on it, from this map's own collector.
 - **VIX: 15.19** (FRED `VIXCLS`, 08-17 close) — **+6.6%** on Friday's
@@ -229,11 +283,15 @@ with five hyperscalers together at a cited **~$1.65T**.
 The 30-year went to 5.32% and the AI complex finally paid for it —
 Nvidia, AMD and Micron down together, Micron surrendering its $1,000
 milestone in a single session, with no company-specific news behind any
-of it. Asia and Europe sold off overnight and Europe is on its sixth
-straight down day, while ByteDance pulled more than $30bn of orders for a
-jumbo loan, which is what discriminating rather than absent demand looks
-like. Nvidia's 13F, filed four days ago and read today, shows a $63.4bn
-equity book — but Intel's share count did not move at all, so half the
-growth is price, and the only position Nvidia genuinely doubled down on
-was CoreWeave. Ping An put a number on AI's contribution to gross profit:
+of it. By the afternoon the story split: yields eased slightly while
+Micron, Western Digital and SanDisk kept falling hard, a memory-specific
+move rather than more rate repricing, even as Etched quadrupled its
+valuation to $21B in seven weeks in the private market the same day. Asia
+and Europe sold off overnight and Europe is on its sixth straight down
+day, while ByteDance pulled more than $30bn of orders for a jumbo loan,
+which is what discriminating rather than absent demand looks like.
+Nvidia's 13F, filed four days ago and read today, shows a $63.4bn equity
+book — but Intel's share count did not move at all, so half the growth is
+price, and the only position Nvidia genuinely doubled down on was
+CoreWeave. Ping An put a number on AI's contribution to gross profit:
 4.6%.

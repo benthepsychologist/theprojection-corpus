@@ -3,7 +3,7 @@ lens: frontier-ai
 date: 2026-08-18
 status: building
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T10:45:00-04:00
+as_of: 2026-08-18T15:15:00-04:00
 coverage: pending
 ---
 
@@ -137,6 +137,25 @@ it crossed on Monday — and the cause is not in this lens at all. It is a
   ([MIT Technology Review](https://www.technologyreview.com/2026/08/18/1142226/how-people-use-ai/))
   <!-- k: axis=research-and-safety -->
 
+- **OpenAI announced new containment safeguards and a Preparedness
+  Framework rewrite today — the formal response to the Hugging Face
+  breach this map has tracked since 07-29 (`openai-agent-security-incident`).**
+  New measures: reasoning-trace/activity-log monitoring targeting a
+  30-minute alert window on worrying behavior in unreleased models;
+  stricter network isolation ("a single compromise of a workload or
+  supporting service does not, by itself, allow for unauthorized access
+  to the Internet, or other internal networks" — OpenAI's own quote); and
+  capability-scaled oversight controls. ⚠️ **This sits directly against
+  two things already on this map's record**: the FT's 08-16-reported
+  claim that OpenAI's Preparedness team was dissolved at end of July, and
+  OpenAI's own 08-17 denial of that report (first naming Saachi Jain as
+  the function's head). A framework rewrite credited to a team whose
+  existence was publicly disputed one day earlier is a tension neither
+  outlet has reconciled — held here rather than resolved.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/),
+  [Wired](https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/))
+  <!-- k: t=openai-agent-security-incident e=openai axis=research-and-safety sev=major -->
+
 ## ⏱ Release-watch & markets
 
 **No frontier-lab model shipped inside this window.** Verified against
@@ -175,6 +194,26 @@ written as a bullet** — the AMD event it discusses was 07-22/23, its
 price-target figures conflict across sources, and AMD fell *harder* than
 Nvidia today, which is the opposite of what a share-shift story would
 predict.
+
+- **Etched, an AI inference-chip startup, quadrupled its valuation to
+  $21B in seven weeks** on a $700M round led by Jane Street. Path: $5B
+  (Dec-25) → $10.3B Series C (Jul-26) → $21B (today). Etched's pitch is
+  inference-specific hardware — a low-voltage "prefill" chip plus
+  shared cluster-scale memory — positioned against Nvidia on cost/speed
+  for inference rather than training. First appearance on this map; no
+  entity slug exists for it yet.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/))
+  <!-- k: axis=release-watch -->
+
+**Afternoon market update, ~3:10 PM ET:** the memory-stock selloff
+deepened and narrowed — **Micron −7.56%** (from −5.4% at 10:09 ET),
+**Western Digital −7.27%**, **SanDisk −9.80%** — while **Nvidia (−2.28%)
+and AMD (−5.09%) barely moved** from their morning levels. Treasury
+yields eased slightly rather than extending (30y 5.29%, 10y 4.71%,
+tradingeconomics.com, unverified against a primary source), which
+decouples the afternoon move from the morning's rate-channel story — see
+the global-capital digest for the fuller read on that split. Full detail
+in that digest.
 
 ## 🧊 Cold-rotation sweep — nine threads, 19–24 days unchecked
 
@@ -320,6 +359,34 @@ thread is load-bearing for.
 "Shanghai Aishengna" are not rival lithography efforts — the former is a
 predecessor team absorbed into the latter, alongside SMEE. Two same-day
 07-28 reports used different names without cross-referencing.
+
+**Afternoon extension — a second cold-rotation batch (14 threads) plus
+two hot-cluster deep checks (12 weight-3 threads unchecked ≥1 day). Ten
+threads got real developments and `last_seen` written back:**
+`ai-compute-spend` (SK hynix's $38.1B AI-memory fab investment, an 08-07
+event caught 11 days late), `hyperscaler-capex-big-picture` (Dell'Oro's
+$3T-by-2030 forecast, an analyst estimate not a company disclosure),
+`ai-datacenter-sites` (OpenAI's Ohio/SB Energy lease formally signed,
+20 years, phased to 2032), `ai-power-buildout` (FERC's 60-day large-load
+interconnection deadline landed 08-17 — outcome still unconfirmed,
+flagged not resolved), `tsmc-capacity-race` (TSMC's overseas fabs turned
+real money — Arizona +663% YoY, Kumamoto profitable for the first time),
+`pif-ai-buildout` (PIF's 2025 annual report cuts against this map's own
+fiscal-squeeze thesis — profit more than doubled), `genesis-mission` (DOE
+launched Genesis Open Models with Arcee AI, an 08-07 event caught late),
+`google-health` (new AMIE clinical-consultation research plus an Abbott
+glucose-data partnership, both 08-11). Two more, `arm-royalty-regime` and
+`globalfoundries`, were independently re-derived by this sweep but were
+already fully on record from earlier passes — same 07-29/08-05 earnings,
+no new fact, confirming rather than adding. Thirteen threads swept
+confirmed genuinely quiet: `asml`, `kimi-distillation-fight`,
+`frontier-model-gov-review-precedent`, `apple-gemini-model-deal`,
+`apple-health-arm`, `amazon-health`, `alan-into-canada`,
+`custom-asic-tolls`, `hca-healthcare`, `nippon-life-openai-suit`,
+`aws-capex`, `fidelity-buys-ai-labs`, `microsoft-health`. The rotation
+has now touched 23 cold threads across today's two passes, the deepest
+single-day dent this map has made in the 58-thread backlog logged in
+yesterday's coverage-log.
 
 ## 🧵 Thread candidates
 

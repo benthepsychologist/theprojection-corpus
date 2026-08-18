@@ -3,7 +3,7 @@ lens: mental-health
 date: 2026-08-18
 status: building
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T10:45:00-04:00
+as_of: 2026-08-18T15:15:00-04:00
 coverage: pending
 ---
 
@@ -129,13 +129,21 @@ academic collectors dominate the item count.
 
 ## ⏳ Upcoming & expected
 
-**Three passed-silent entries re-checked at primary source, none moved.**
-`aetna-alma-rate-cut-effective` — no post-08-15 confirmation exists from
-Alma, an Aetna provider bulletin, or either psychological association;
-every source previewing the date was published on or before 08-04. Both
-Kaiser/NUHW entries — Kaiser's own labour-relations page still ends at
-its 08-11 "mediation is scheduled for August 11 to 14" note with no
-outcome, and NUHW's own news index has nothing after 07-27.
+**`aetna-alma-rate-cut-effective` closes as a confirmed hard miss** — this
+was the last day of its 3-day grace period, and two independent afternoon
+checks (a live-search sweep and a separate fresh-buffer grep) both came
+back empty. No Aetna statement, no APA/APA Services follow-up, no state
+insurance-commissioner action, no Alma provider communication — anywhere
+dated on or after 08-15. Trade press that covered this story reliably
+through July and early August went silent exactly at the effective date.
+Status flips `pending`/`passed-silent` → **`passed-silent` (final)** in
+`upcoming.yaml`; the cut may still have landed quietly, but nothing on
+this map's watch confirms it either way.
+
+**Both Kaiser/NUHW entries re-checked at primary source, unmoved.**
+Kaiser's own labour-relations page still ends at its 08-11 "mediation is
+scheduled for August 11 to 14" note with no outcome, and NUHW's own news
+index has nothing after 07-27.
 
 ⚠️ **A third stale-year false positive on the Kaiser/NUHW entries, from a
 third different year.** A search result claimed the parties "met on

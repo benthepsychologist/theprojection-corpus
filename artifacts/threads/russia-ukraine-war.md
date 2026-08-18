@@ -18,6 +18,15 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-18 — Deadliest single strike in weeks (Pechenihy, 10 dead) answered by one of the war's largest drone raids on Moscow
+
+- **A Russian missile strike on Pechenihy, a village in Ukraine's Kharkiv region, killed 10 civilians and wounded 17 overnight into 08-18 — Zelenskyy vowed a response.** A materially higher single-strike civilian toll than most of the nightly barrages this thread has logged recently. ([AP via Timeslive](https://www.timeslive.co.za/news/world/2026-08-18-russian-missile-attack-kills-10-in-northeast-ukraine-zelensky-vows-response/)) ⟨daily 2026-08-18⟩
+- **Ukraine launched one of its largest drone assaults of the war at Moscow the same night — 637–800 drones depending on source**, with Moscow's mayor confirming ~180-197 shot down over Moscow Oblast and Russia's Defense Ministry claiming 791 destroyed nationwide across 13 regions. Damage included another hit on a Wildberries warehouse (a repeat target), a residential fire in Pavlovsky Posad, a chemical-plant strike in Orekhovo-Zuyevo, and flight restrictions at all four Moscow airports. Framed by Russian state media as the "largest in two years" — read together with the Pechenihy strike, this reads as the same retaliation-exchange pattern this thread has tracked all month, not a new escalation in kind. ([Kyiv Independent](https://kyivindependent.com/fires-reported-near-moscow-as-ukraine-launches-dozens-of-drones-towards-russian-capital/), [Washington Post/AP](https://www.washingtonpost.com/world/2026/08/18/russia-ukraine-war-drone-attack-moscow/4c4ab76a-9ae6-11f1-9cc4-2dc9b46e2d5c_story.html)) ⟨daily 2026-08-18⟩
+
+## 2026-08-17 — Russia struck Ukraine's Danube and Black Sea port infrastructure
+
+- **Russia struck Ukraine's Izmail and Odesa port infrastructure overnight into 08-17, damaging a Togo-flagged civilian vessel and injuring four.** Russia's defence ministry claimed it hit a military cargo terminal, Western-equipment hangars and naval-drone depots at Izmail (Ukraine's largest Danube port, near the Romanian border) — Reuters could not independently verify that framing — and separately hit a patrol boat and fuel storage tanks at Odesa. ([Reuters via US News](https://www.usnews.com/news/world/articles/2026-08-17/russia-hits-ukraines-izmail-and-odesa-ports-in-overnight-strikes)) ⟨daily 2026-08-18⟩
+
 ## 2026-08-17 — Anti-war party's deputy chair jailed; party barred from the ballot
 
 - **A Pskov court sentenced Yabloko deputy chair Lev Shlosberg to 11

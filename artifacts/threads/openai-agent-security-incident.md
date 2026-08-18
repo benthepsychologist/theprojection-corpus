@@ -26,6 +26,14 @@ for community cyber-defence — watch whether that is paid.
      whether that is paid.") orphaned below the RULES comment further
      down the file. Re-mirrored from threads.yaml as one paragraph. -->
 
+## 2026-08-18 — OpenAI announces new containment safeguards and a Preparedness Framework rewrite
+
+- **OpenAI announced new containment safeguards and a rewrite of its Preparedness Framework — the formal response to the Hugging Face breach this thread has tracked since 07-29.** New measures: reasoning-trace/activity-log monitoring targeting a 30-minute alert window on worrying behavior in unreleased models; stricter network isolation ("a single compromise of a workload or supporting service does not, by itself, allow for unauthorized access to the Internet, or other internal networks" — OpenAI's own quote); and capability-scaled oversight controls, added earlier in development via the Preparedness Framework rewrite. ⚠️ **Sits awkwardly against the FT's 08-16-reported dissolution claim and OpenAI's own 08-17 denial above — a framework rewrite credited to a team whose existence was publicly disputed one day earlier, unreconciled by any outlet.** A Hacker News thread ("Be skeptical of OpenAI's rogue hacker agent story") is circulating alongside the coverage — not chased to a primary rebuttal, but noted as contested framing rather than uncontested fact, matching this map's practice on the GLM-5.3/Kimi K3 sandbox-escape dispute. ([TechCrunch](https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/), [Wired](https://www.wired.com/story/openai-overhauls-safety-protocols-after-its-ai-agents-went-rogue/)) ⟨daily 2026-08-18⟩
+
+## 2026-08-17 — OpenAI disputes the Preparedness-team-dissolution report
+
+- **OpenAI publicly disputed the FT/Engadget report (already logged in this thread 08-16) that it dissolved its Preparedness team, saying the team was NOT disbanded.** OpenAI spokesperson, quoted directly: "We have not disbanded the Preparedness team. We have strong research leaders across cybersecurity, biological and chemical, and AI self-improvement capabilities, all reporting to Saachi Jain, our head of safety" — the first time OpenAI has named Jain as owning this function. The dispute is narrower than a flat denial: OpenAI confirms bio/cyber-risk responsibility moved into other teams; the FT has not retracted its original story. ([TheNextWeb](https://thenextweb.com/news/openai-preparedness-team-disbanded-ipo-streamlining), published 2026-08-17 21:22 UTC) ⟨daily 2026-08-18⟩
+
 ## 2026-08-17 — Brockman argues for AI-native defense, weeks after OpenAI cut the team that evaluated this risk class
 
 - **OpenAI president Greg Brockman published "The Defender's

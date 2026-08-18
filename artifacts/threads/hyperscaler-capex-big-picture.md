@@ -14,6 +14,10 @@ trend across all four sub-threads (google-capex, meta-capex, aws-capex,
 microsoft-capex), credit-market reaction to debt-financed capex, and any
 hyperscaler actually pulling back.
 
+## 2026-08-18 — Dell'Oro projects worldwide data-center capex past $3 trillion by 2030
+
+- **Dell'Oro Group's own 2030 worldwide data-center capex outlook "has nearly doubled since the January 2026 forecast,"** driven by higher hyperscale capex guidance and a newly modeled "AI-specialized cloud" segment (AI model builders + neoclouds) growing at ~60% CAGR. ⚠️ This is a market-research firm's forward-looking estimate, not a hyperscaler's own disclosed guidance — treat as an analyst forecast, not a company commitment. ([Dell'Oro Group via PR Newswire](https://www.prnewswire.com/news-releases/ai-buildout-maintains-momentum-as-data-center-capex-surpasses-3-trillion-by-2030-according-to-delloro-group-302852171.html)) ⟨daily 2026-08-18⟩
+
 ## 2026-08-03 — BofA puts a number on the next leg up: $1.2T over the next 12 months (caught 08-05)
 
 - **Bank of America now sees hyperscaler capex reaching $1.2 trillion over

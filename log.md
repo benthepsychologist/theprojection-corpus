@@ -4300,3 +4300,90 @@ Committed as its own commit, separate from today's `/daily` work, so the
 week's close isn't buried inside today's digest commit.
 
 ---
+
+## 2026-08-18 (afternoon extension) — `/daily`: 08-18 extended from 10:45 ET to 15:15 ET, second cold-rotation batch, briefings refreshed
+
+Picked up this morning's `building` 08-18 digests (all four lenses, as_of
+10:45 ET) and ran a full afternoon extension: a fresh collector pass, four
+lens buffer-mining agents, two hot-cluster deep checks (12 weight-3
+threads unchecked ≥1 day), and a second cold-rotation batch (14 more
+threads, on top of this morning's own nine — 23 cold threads touched
+today across two passes, the deepest single-day dent in the 58-thread
+backlog this map has logged). Ten threads got real developments and
+`last_seen` written back: `ai-compute-spend` (SK hynix's $38.1B AI-memory
+fab investment), `hyperscaler-capex-big-picture` (Dell'Oro's $3T-by-2030
+forecast), `ai-datacenter-sites` (OpenAI's Ohio/SB Energy lease formally
+signed, 20 years to 2032), `ai-power-buildout` (FERC's 60-day large-load
+interconnection deadline landed, outcome unconfirmed), `tsmc-capacity-race`
+(TSMC's overseas fabs turned real money, Arizona +663% YoY), `pif-ai-buildout`
+(PIF's 2025 annual report cuts against this map's own fiscal-squeeze
+thesis), `genesis-mission` (DOE's Genesis Open Models), `google-health`
+(AMIE research + an Abbott partnership), plus `russia-ukraine-war` and
+`openai-agent-security-incident` in their own sections. Thirteen more
+threads confirmed genuinely quiet. Two findings (`arm-royalty-regime`,
+`globalfoundries`) turned out to duplicate entries already on record from
+earlier passes — correctly flagged by the writing agent rather than
+guessed through, no merge needed.
+
+**A real death changed the Gulf story's stakes.** A bulk carrier, the
+*Minoan Dignity*, was struck transiting the Strait of Hormuz, killing its
+chief engineer — the 18th seafarer death in this five-month campaign.
+Trump answered with "the strait is open and operating, all water mines
+have been removed or detonated," directly against that death. Weighed
+this myself against the flash bar and judged it a continuation of an
+existing pattern rather than a discrete event — no flash, now the fifth
+consecutive day of that call.
+
+**OpenAI's safety story split from itself within 24 hours.** Having
+disputed on 08-17 an FT report that its Preparedness team was dissolved
+("we have not disbanded the Preparedness team," first naming Saachi Jain
+as its head), OpenAI announced today a rewrite of that same Preparedness
+Framework plus new containment safeguards — the formal response to the
+Hugging Face breach this map has tracked since 07-29. A framework rewrite
+credited to a team whose existence was publicly disputed a day earlier is
+an unreconciled tension, written into the record as such rather than
+resolved either way.
+
+**The market's afternoon move decoupled from its own morning
+explanation.** Treasury yields eased slightly rather than extending, but
+Micron (−7.56%), Western Digital (−7.27%) and SanDisk (−9.80%) kept
+falling hard while Nvidia and AMD sat flat — a memory-specific story
+reasserting itself, not more duration repricing, even as Etched (a new
+entity, tagged to Jane Street) quadrupled its private-market valuation to
+$21B in seven weeks the same day.
+
+**`aetna-alma-rate-cut-effective` closed as a confirmed hard miss** — last
+day of its grace period, two independent afternoon checks (live search +
+fresh-buffer grep) both came back empty. Recorded in `upcoming.yaml` as a
+genuine, trustworthy null after three separate checks across four days all
+found nothing. **Caught a real publishing error before it shipped:** the
+sonnet agent drafting the public mental-health briefing pulled stale
+pre-effective-date sourcing and asserted the Aetna cut "took effect this
+week" with specific state-by-state figures — directly contradicting the
+hard-miss finding above. Rewrote that bullet before `--apply` rather than
+publishing a false claim the same day this map had just verified the
+opposite.
+
+**Session housekeeping:** this run also recovered and closed out an
+interrupted prior `/week` (week_of 08-10) that was sitting complete but
+uncommitted in the tree at session start — see the separate log entry and
+commit above. `readouts --scan/--pack/--apply/--export` refreshed front +
+all three lens briefings on the public site; `/publish --push` shipped
+threads, entities, claims, interpretations, stories, map pages, and the
+readouts store (build `ef985deb-29f2-49be-874b-9b1c8e460999`, queued).
+Render page: 1120 KB, over the 600 KB soft cap but within the documented
+Rung-1 design tolerance (~1MB) already flagged in prior sessions — not
+re-litigated here. No Artifact tool available in this session, so the
+private claude.ai artifact URL was not republished — the same recurring
+gap noted in the 08-18 morning log entry.
+
+**Pick up:**
+📋 The private artifact page (`https://claude.ai/code/artifact/f2ca5acd-...`)
+has now gone unrepublished across at least two consecutive sessions for
+lack of the Artifact tool. Worth flagging to Ben directly rather than
+re-noting silently a third time.
+📋 Two `INBOX/` items remain from 08-18 morning, still unanswered: the
+kestrel kit note (informational, already closed upstream) and pm's STAMP
+provenance-viewer question, which wants Ben's read.
+📋 08-18's digests are still `building` — a normal finalize (5h+ after the
+digest-day closes) is due on the next `/daily` run.

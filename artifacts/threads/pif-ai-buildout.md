@@ -21,6 +21,10 @@ this pass was UAE-only); and reconciliation of `board.yaml`'s $12.5B/yr
 AI thrust figure against this crawl's larger ~$21-23B HUMAIN deal-book
 tally.
 
+## 2026-08-17 — PIF's 2025 annual report cuts against this thread's own fiscal-squeeze thesis
+
+- **PIF's 2025 Annual Report: revenue $120B (+9% YoY), net profit $17B (more than doubled YoY), assets under management over $900B** — the fund's own disclosed figures, published 08-17. The report cites "launched major firms including Humain" as a headline 2025 achievement and "43 high-impact AI-enabled solutions" activated. This is the first data point pointing AGAINST this thread's tracked fiscal-squeeze thesis (oil near $71/bbl, Aramco's ~$40B dividend cut, PIF cash reserves down to ~$15B as of this thread's 08-04 opening finding) — worth holding as a live tension, not a resolution; it doesn't reconcile the thread's already-flagged HUMAIN deal-book gap (board.yaml's $12.5B/yr vs. the ~$21-23B tally). ([Arab News](https://www.arabnews.com/node/2654968/business-economy), PIF's own 2025 Annual Report) ⟨daily 2026-08-18⟩
+
 ## 2026-08-15 — Oxagon's AI-data-center pivot gets a construction timeline
 
 - **NEOM's Oxagon zone — the site the 08-04 entry below flagged as
