@@ -4461,16 +4461,16 @@ the wrong *shape* for the method — a live rolling thread, not a document
 that stops). Reply dropped uncommitted in `pm/INBOX/`; the brief here
 moved to `INBOX/done/` with an outcome block.
 
-**Flagged, not filed further**: the upstream `md_html()` bug in kestrel
-is real and still needs a dev brief so its own copy gets fixed and the
-local duplicate here can eventually be retired — not yet filed as its own
-issue (three others were, this session, on unrelated engine gaps found
-along the way: kestrel#21/22/23/24).
+**Filed upstream**: the `md_html()` bug in kestrel — [kestrel#25](https://github.com/benthepsychologist/kestrel/issues/25),
+with the real repro (`china-stack-independence.md`'s nested-italic case
+and `tsmc-capacity-race.md`'s line-wrap case), the one-character fix, and
+a note on what's already done downstream (`publish/adapter.py`'s local
+`_md_html()` copy, which should retire once this lands). Five kestrel
+issues total filed this session on real engine gaps found along the way
+(kestrel#21-25).
 
 **Pick up:**
 📋 The local `_md_html()`/`_strip_md_emphasis()` duplication in
-`publish/adapter.py` should retire once kestrel's own `md_html()` is
-fixed upstream — not filed as a GitHub issue yet, worth doing before it's
-forgotten.
+`publish/adapter.py` should retire once kestrel#25 lands upstream.
 📋 08-18's digests are still `building` — normal, not due for finalize
 until ~5h past digest-day close.

@@ -59,7 +59,7 @@ into five separate rendering-pipeline bugs, fixed and verified across all
 > all (fixed); kestrel's own shared `md_html()` has a real regex bug
 > that silently fails on bold spans containing a nested italic (found,
 > reproduced, duplicated locally with the fix since kestrel is read-only
-> from here — worth a dev brief upstream, not yet filed); the front-page
+> from here — filed as kestrel#25); the front-page
 > `gist` field and `readouts.json`'s own cleaning loop each had the same
 > class of gap, chasing the exact "field-by-name doesn't converge" trap
 > that code's own docstring had already named once; a bold span could
@@ -75,14 +75,15 @@ into five separate rendering-pipeline bugs, fixed and verified across all
 > **Also this session:** pm's STAMP provenance-viewer question answered
 > and closed (no provenance record for anything published here right
 > now — the nominated candidate is a live rolling thread, the wrong
-> shape for a method that binds to prose that stops). Four kestrel
-> issues filed on real engine gaps found along the way (kestrel#21-24):
+> shape for a method that binds to prose that stops). Five kestrel
+> issues filed on real engine gaps found along the way (kestrel#21-25):
 > the attention kind's `AGENTS.md` still frames decay review as a
 > retirement queue after the fix went upstream; the `STATUS.md` As-of
 > lint can't distinguish "undated" from "dated in the wrong place"; the
 > kit stamp is checked against itself so a write-side bug can report
 > clean; the ops/dev routing table's own wording caused a real misfile
-> this session.
+> this session; and `md_html()`'s own bold regex silently fails on a
+> nested italic span (#25 — the bug behind the site fix above).
 
 > **2026-08-14 (wrap) — kit sync, a full `/daily` + `/week`, and a real
 > policy fix to how threads get retired.** 5 commits since the 08-13
