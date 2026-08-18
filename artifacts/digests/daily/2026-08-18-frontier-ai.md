@@ -159,17 +159,22 @@ Live timestamped quotes at **10:09 ET**:
   Monday's move above $1,000 in a single session**
 - Nasdaq −1.2% · S&P 500 −0.46% at 7,709.14 · Dow −0.3%
 
-The attribution is not a chip story. The **30-year Treasury yield ticked
-two basis points higher to 5.32%**, extending Monday's 19-year high, with
-oil above $85 on the Iran/Hormuz standoff. Semis are the highest-duration
-equity exposure in the index and they trade like it. ⚠️ **A Jefferies
-note recirculating this morning framing AMD's Helios/ROCm as taking share
-from Nvidia is marked UNVERIFIED and not written as a bullet** — the AMD
-event it discusses was 07-22/23, its price-target figures conflict across
-sources, and AMD fell *harder* than Nvidia today, which is the opposite
-of what a share-shift story would predict.
-([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html))
-<!-- k: t=ai-buildout-debt-risk,chip-hyperscaler-rotation e=nvidia,amd,micron axis=release-watch -->
+- **Nvidia, AMD and Micron all fell together on a 30-year Treasury at
+  5.32%, with no company-specific news behind any of them.** The
+  attribution is not a chip story: the long yield ticked two basis points
+  higher, extending Monday's 19-year high, with oil above $85 on the
+  Iran/Hormuz standoff. Semis are the highest-duration equity exposure in
+  the index and they trade like it — which is why the co-movement, not
+  any single name's move, is the readable signal.
+  ([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html))
+  <!-- k: t=ai-buildout-debt-risk,chip-hyperscaler-rotation e=nvidia,amd,micron axis=release-watch -->
+
+⚠️ **A Jefferies note recirculating this morning framing AMD's
+Helios/ROCm as taking share from Nvidia is marked UNVERIFIED and not
+written as a bullet** — the AMD event it discusses was 07-22/23, its
+price-target figures conflict across sources, and AMD fell *harder* than
+Nvidia today, which is the opposite of what a share-shift story would
+predict.
 
 ## 🧊 Cold-rotation sweep — nine threads, 19–24 days unchecked
 

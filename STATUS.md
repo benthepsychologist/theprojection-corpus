@@ -1,6 +1,16 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*Hand-maintained. **As of 2026-08-14**. Top note covers a kit sync
+*As of 2026-08-14*
+
+<!-- The line above is deliberately alone on its own line, in exactly one
+     spelling, per the base STATUS schema kestrel introduced 2026-08-18
+     (INBOX/2026-08-18-kestrel-kit-...): it is the only automated
+     freshness check this file has, and it cannot fire when the date is
+     embedded mid-sentence. Restructured by hand 2026-08-18; the DATE is
+     unchanged and still 08-14 because no `/wrap` has run since — this
+     was a schema fix, not a freshness claim. -->
+
+*Hand-maintained. Top note covers a kit sync
 adopted from kestrel's own package-turn restructuring, a full `/daily`
 (finalize + open, four lenses dispatched in parallel), a full `/week`
 (weekly synthesis, a complete 45-actor `actor-doing.yaml` rewrite, a

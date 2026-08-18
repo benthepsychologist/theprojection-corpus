@@ -4104,3 +4104,159 @@ exhausted its 600s wall-clock budget with **240 terms skipped**;
 with no sidecar entry; STATUS.md's top note still reads "As of
 2026-08-14", now five sessions stale. The claude.ai artifact URL was
 again **not** republished — no Artifact tool in this session.
+
+---
+
+## 2026-08-18 — `/daily`: finalize 08-17, open 08-18, and three corrections
+## to this map's own record that no critic would have caught
+
+Ran at 10:00 ET, five hours after the 08-17 digest-day closed, so 08-17
+was finalizable and was finalized: all five files flipped to `final`,
+`coverage: done` on the three critic-bearing lenses. 08-18 opened and
+stays `building`.
+
+**The headline of this run is not a story. It is that three things in
+this map's own 08-17 record were wrong, and all three were found by
+checking dates at primary sources rather than by the coverage critic.**
+The critic only ever sees what benchmarks led with; it is structurally
+blind to a fabricated or misdated entry we wrote ourselves.
+
+**Correction 1 — a five-month-old article ran as yesterday's lead
+diplomatic item.** Both the 08-17 world-news digest and the front digest
+carried "Aoun breaks with Hezbollah in front of von der Leyen and Costa"
+and called it "the day's one real diplomatic shift." The cited
+Reuters-via-Yahoo URL carries `Published Time: 2026-03-09T16:58:43Z`.
+Retracted in both files and the `israel-lebanon-escalation` timeline
+block rewritten. What Aoun actually did on 08-17 is close to the
+opposite — he defended UNIFIL's continued presence against Israeli
+pressure to end it ("our first choice is to extend UNIFIL's mandate";
+"Israel rejects the presence of UNIFIL and has been exerting pressure in
+this direction for nearly a year"). **This is a recurring trap on that
+thread, not an accident:** Google News on its terms returns the January
+2026 (Beirut visit) and March 2026 (video conference) instances with
+near-identical wording, and the world-news sweep agent flagged it
+independently before the main session confirmed it at source. The thread
+file now carries a standing check-the-`Published Time` rule. Worth
+keeping: **the same bullet correctly excluded a 2024 "120 targets in one
+hour" claim as stale while itself being stale.** Catching one trap inside
+a bullet is not evidence the bullet is clean.
+
+**Correction 2 — an SEC acceptance timestamp off by four hours, in the
+flattering direction.** NVIDIA's 8-K was written up as "accepted at 04:41
+ET, four hours before the opening pass." EDGAR's own
+`ACCEPTANCE-DATETIME` header reads `20260817084133` and the submissions
+API `2026-08-17T12:41:33Z` — both **08:41 ET**. A UTC-to-Pacific
+conversion mislabelled as Eastern. Corrected in five places. Practice
+adopted: read acceptance times off `-index-headers.html`, which is
+already ET; never hand-convert the `Z` timestamp.
+
+**Correction 3 — "no model releases inside today's window, confirmed
+twice" was wrong.** Alibaba launched **Qwen3.8-27B**, a laptop-class
+open-weight model, on 08-17 (CNBC, 07:24 ET, explicit: "On Monday, the
+Chinese tech giant launched an AI model, designed to run on consumer
+hardware like laptops"). The failure mode is specific and worth naming:
+the sweep correctly dated **Qwen3.8-Max** to 08-12 — this map logged its
+2.4T weights in the 08-12 digest — and then generalised across the
+product line, writing "Qwen3.8-Max/27B" as a single already-counted
+event. **Two models, two dates, collapsed by a slash.** ⚠️ Note also
+that the AI critic reported this miss with the WRONG reason: it read the
+08-17 CNBC piece as the Max release, which would have had this map
+retract a correct 08-12 entry. **Neither the digest nor the critic was
+right alone; the main session had to adjudicate against both.**
+
+**Coverage critic — four misses across three lenses.** Anthropic's
+**$65B annualized run-rate** (surfaced independently by all three
+critic-bearing sweeps — the strongest miss signal this log has recorded,
+and distinct from the $11.5B Q2 print caught late on 08-17);
+**Stripe/OpenRouter at >$7B**; **Microsoft −3% (~$112B)** on a report
+questioning its installed AI-chip count against stated targets; and
+**behavioural-health dealmaking down 20% for H1 2026** (69 deals,
+mental-health-specific −25% for the half, addiction treatment from
+nineteen H1 closings to eight). **New failure mode logged on the Stripe
+one: a candidate is not coverage.** It sat in the thread-candidate slot
+on 08-16 and 08-17 while going unwritten as news on both days — one
+decision was made where two were needed.
+
+**Caught late — NVIDIA's 13F, and it inverts its own headline.** Filed
+08-14 at 16:19 ET, read today. The equity book is **$63.44B** against
+$13.10B a quarter earlier, but **only ~$26B of that growth is buying**:
+Intel's share count is *identical* across both quarters (214,776,632),
+so its $7.9B→$30.0B move is entirely price, as are Nokia's and
+Synopsys's. **CoreWeave is the only position genuinely added to (+94% on
+shares) and it is the smallest headline in the filing.** SpaceX at
+$20.98B was absent from this map's stake ladder entirely. Recorded with
+two sourcing caveats: the ~$22B post-dilution Intel figure is reported,
+not filed; and Naver's absence is a 13(f)-scope artefact, not a disposal.
+
+**Cold rotation — nine threads, 19–24 days cold, eight had moved.** The
+rotation is running at roughly three weeks against a seven-day design
+target and the cost was concrete: **`datacenters-as-targets` had its own
+stated live test answered on 07-30 and nobody looked.** Amazon's 10-Q for
+the quarter ended 06-30 and its 07-30 earnings call contain no mention of
+Iran, drones, missiles, Bahrain, the UAE or war risk — while AWS had
+confirmed the strikes to reporters through a spokesperson. A PR
+acknowledgement and a filing disclosure are different acts. Also
+resolved: **`meta-capex`'s open $76B-TTM-vs-$135B discrepancy, against
+our number** (Meta's own 07-29 filing gives FY2026 guidance of
+$130–145B), plus a reported **~$420B of Meta AI obligations off the
+balance sheet** against $83.7B of reported debt. `china-duv-lithography`
+gained a hard qualifier (28nm-class single-exposure only) and its
+delivery test is still unmet 21 days on. Only `mhpaea-parity-limbo`
+returned a clean null — and that null is recorded with its own limit,
+since the direct Federal Register check was blocked.
+
+**Ledger:** 2 hits (`ping-an-h1-2026-interim-results`, which delivered
+the AI-contribution disclosure it was holding for — **~4.6% of gross
+profit**; `likud-primary-results`, where Netanyahu's nine controlled
+slots held but his attempt to dilute hardline internal rivals failed), 1
+slip (`grok-4-7-ship` → early-to-mid September, the double-slip its own
+`what_confirms` anticipated), 1 new entry (`ping-an-group-...`, due
+08-20, pinned by a company filing). Three passed-silent entries
+re-checked at source, unchanged — and a **third stale-year false positive
+on the Kaiser/NUHW entries, now from 2022, 2025, and a 2025-cycle page
+surfacing under 2026-looking metadata.** The entry's own
+accept-nothing-unfetched rule caught all three; it stays.
+
+**Interpretation sidecar written to the validator's real shape for the
+first time.** All three of today's entries pass
+`validate_interpretation()`. ⚠️ **Every entry on 08-17 fails it, as do
+earlier days'** — mechanisms of 680–1021 chars against a 30–200 limit,
+two using `confidence: probable` which is not in the allowed set
+(`speculative`/`plausible`/`well-supported`), scenario directions and
+context notes several times over their caps. They still *render*, because
+`render_read.load_interpretations()` only tidies whitespace and does no
+shape enforcement — so this has been silently non-conforming for days
+rather than broken. Not back-fixed unasked; flagged for Ben.
+
+**Pick up:**
+⚠️ **Interpretation sidecars 08-13 → 08-17 are all off-shape** (above).
+Ben's call whether to rewrite them to spec or relax the validator.
+⚠️ **The `week_of 08-10` weekly digest is still incomplete** — written
+"partial through Sat" before 08-16 existed. Carried from three sessions.
+⚠️ **Read page is 1095 KB** against a 600 KB soft cap. The prescribed
+degradation rule ("drop item html >3 days old") is again a **no-op** —
+only two days are in the payload. The size is structural: 99 threads, 203
+entities. Note ROADMAP §Delivery says Rung 1 at "~1 MB with real
+collectors — fine" and sets the Rung-2 climb trigger at >~1.5 MB, so this
+is within design — but "threads > ~30 wanting the archive tier" is
+another stated trigger and we are at 99. Ben's call.
+⚠️ **Bloomberg Technology RSS cannot be used for next-morning recall** —
+rolling ~20-item window, rolled past every 08-17 item by 10:00 ET today,
+returning HTTP 200 throughout. Must be pulled same-day, by early evening
+ET. This is a change to the critic routine, not just an access note.
+⚠️ **The cold rotation is three weeks behind a seven-day target.** 58
+threads sit ≥7 days cold; clearing that needs ~8 per run, every run.
+📋 STATUS.md's `*As of*` line was restructured onto its own line this
+run, per the kestrel kit brief in `INBOX/`, but its **date is still
+2026-08-14** because no `/wrap` has run — that is a schema fix, not a
+freshness claim.
+📋 Two `INBOX/` briefs arrived 08-18 and are read but unanswered: the
+kestrel kit note (informational; the `/week` staleness-report fix was
+adopted upstream and closed kestrel issue #20) and **pm's STAMP
+provenance-viewer note, which asks a real question** — whether any
+published thread here should carry a statement-provenance record, and if
+so which. That one wants Ben.
+📋 Still open from prior sessions: five orphan entity slugs, the
+`meta`→`meta-ai` typo, one 08-11 bullet carrying `interp=yes` with no
+sidecar entry, and the claude.ai artifact URL again **not** republished —
+no Artifact tool in this session.
