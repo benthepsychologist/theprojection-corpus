@@ -4387,3 +4387,90 @@ kestrel kit note (informational, already closed upstream) and pm's STAMP
 provenance-viewer question, which wants Ben's read.
 📋 08-18's digests are still `building` — a normal finalize (5h+ after the
 digest-day closes) is due on the next `/daily` run.
+
+---
+
+## 2026-08-18 (continued) — site: story pages, briefings, and item titles were never markdown-rendered; a thread-position feature added
+
+Ben clicked through to `/story/anthropic-ipo-timing--2026-08-17/` and
+flagged two things at once: the summary at the top was rendering as raw
+markdown (literal `**`/`*`/`[text](url)`), and no thread-map existed
+anywhere on a story page. A third question followed once the first fix
+landed — "did we fix it site-wide or just for that one story" — and the
+honest answer at that point was *not yet*: one fix exposed three more
+instances of the same underlying gap, chased down one at a time and
+verified by rebuilding the actual site locally and grep-sweeping all
+1,727 generated pages after each fix, not by spot-checking the one page
+named.
+
+**What was actually broken, in the order found.** (1) `build_stories()`
+handed raw markdown straight to Hugo's `safeHTML` with zero conversion —
+not a rendering bug, a missing rendering step; `render_read.py`'s own
+`parse_timeline()` (the internal read page's equivalent path) already did
+this correctly. (2) A real, pre-existing bug in kestrel's shared
+`md_html()`: its bold regex `[^*]+` cannot match across a nested
+single-asterisk italic span, so `**A ... *knaithe* ... names**` (a real
+entry, `china-stack-independence.md`) silently failed to convert at all —
+confirmed by reproducing both patterns directly, out of this repo's write
+zone (kestrel is read-only), so duplicated locally with the one character
+fixed (`.+?` not `[^*]+`) and documented as a deliberate divergence. The
+same flaw existed a second and third time: the audio-briefing generator's
+own markdown stripper (same regex; a stray asterisk was leaking into what
+Gemini TTS reads aloud), and `parse_digest()`'s `re.match`-anchored
+bold-lead-phrase extraction, which fails outright whenever a bullet opens
+with an emoji flag before its bold span (`🕰 **CAUGHT LATE — ...`),
+falling back to raw truncated text as an item's title. (3) The front-page
+`gist` field was never markdown-processed at all, by design — extended
+the payload's existing deep-clean sweep with a fourth marker class,
+alongside the three it already stripped. (4) `readouts.json`'s own
+cleaning loop only ever touched `breaking`/`news` bullets by field name —
+the exact "chasing each field by name doesn't converge" trap that
+function's own docstring already named once; replaced the narrow loop
+with the general sweep. (5) A line-wrap edge case: a bold span straddling
+a word-wrap in the source `.md` file failed because `.` doesn't match
+`\n` without `DOTALL`.
+
+**Verified clean**: swept all 1,727 generated pages after the final fix —
+zero unconverted markdown remains anywhere on the site. The one
+remaining literal `**` (a direct quote, "bomb the s*** out of them") is
+genuine censored profanity, confirmed untouched with its `<strong>` tags
+elsewhere on that page perfectly balanced, not a bug.
+
+**Also shipped**: a story page now shows its position in its own thread's
+timeline (a tick strip, current story marked, every other tick linking to
+its neighbor) and its thread's parent + sibling threads by shared entity —
+entirely backed by data already published (`stories.json`,
+`payload.json`'s `parent`/`entities` fields), no adapter change needed
+for that part. Caught and fixed a real `O(n²)` regression along the way:
+the first version filtered all 655 stories per story page, pushing the
+local build from this repo's documented ~2min baseline to 12+ minutes on
+this shared box; replaced with a `partialCached` grouping pass — the same
+class of fix `story-link.html`'s own history already documents once.
+Confirmed back to baseline (111s) after.
+
+**Pushed**: this repo (`2dca986` the fix, `526b23a` its provenance
+receipt) and the site (`eed5a77`, Cloudflare build `2da3a909`, queued).
+Both confirmed via `git log @{u}..` printing nothing, not by a clean
+`git status` alone.
+
+**Correction to the prior entry's pick-up list**: pm's STAMP
+provenance-viewer question is not still unanswered — it was answered and
+closed this session (Ben: no provenance record for anything published
+here right now; the nominated candidate, `state-therapy-chatbot-bans`, is
+the wrong *shape* for the method — a live rolling thread, not a document
+that stops). Reply dropped uncommitted in `pm/INBOX/`; the brief here
+moved to `INBOX/done/` with an outcome block.
+
+**Flagged, not filed further**: the upstream `md_html()` bug in kestrel
+is real and still needs a dev brief so its own copy gets fixed and the
+local duplicate here can eventually be retired — not yet filed as its own
+issue (three others were, this session, on unrelated engine gaps found
+along the way: kestrel#21/22/23/24).
+
+**Pick up:**
+📋 The local `_md_html()`/`_strip_md_emphasis()` duplication in
+`publish/adapter.py` should retire once kestrel's own `md_html()` is
+fixed upstream — not filed as a GitHub issue yet, worth doing before it's
+forgotten.
+📋 08-18's digests are still `building` — normal, not due for finalize
+until ~5h past digest-day close.

@@ -1,25 +1,88 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*As of 2026-08-14*
+*As of 2026-08-18*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
      (INBOX/2026-08-18-kestrel-kit-...): it is the only automated
      freshness check this file has, and it cannot fire when the date is
-     embedded mid-sentence. Restructured by hand 2026-08-18; the DATE is
-     unchanged and still 08-14 because no `/wrap` has run since — this
-     was a schema fix, not a freshness claim. -->
+     embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers a kit sync
-adopted from kestrel's own package-turn restructuring, a full `/daily`
-(finalize + open, four lenses dispatched in parallel), a full `/week`
-(weekly synthesis, a complete 45-actor `actor-doing.yaml` rewrite, a
-`capital-context.yaml` refresh), and a real process correction: Ben
-pushed back on why the map would ever *retire* a thread over mere
-staleness, which turned out to have a genuine mechanical answer (retiring
-drops a thread from `/daily`'s own collector sweep, not just its
-display) — fixed in the skill template and filed upstream to kestrel.
-The 08-13 note and everything older sit under it.*
+*Hand-maintained. Top note covers four days of live pipeline
+work (08-15 through 08-18: three `/daily` cycles finalizing/opening
+across all four lenses, a `/week` close for `week_of 08-10` recovered
+from an interrupted prior session, a kit sync bringing the base `AGENTS.md`
+schema and the local decay-review fix upstream into kestrel) plus a
+same-day site defect chase that started as one flagged page and widened
+into five separate rendering-pipeline bugs, fixed and verified across all
+1,727 published pages. The 08-14 note and everything older sit under it.*
+
+> **2026-08-18 (wrap) — three `/daily` cycles, `/week` closed, a
+> five-bug site rendering fix, three repos pushed.** Counts computed at
+> wrap: **99 threads** (85 open · 12 developing · 1 resolved · 1
+> retired — unchanged from 08-14), **57 expectations** (41 pending · 12
+> hit · 4 passed-silent — was 62/39/18/5 at 08-14; net down from pruning
+> stale-resolved entries, not from losing coverage), **204 watchlist
+> entries** (was 198), all **45 actor roll-ups refreshed**, **3
+> publishes today**. All three repos confirmed pushed via `git log
+> @{u}..` printing nothing on this repo, `theprojection-site`, and
+> `kestrel` — not inferred from a clean `git status`.
+>
+> **`/daily`, three cycles across 08-15 through 08-18.** Finalized
+> 08-15, reconstructed 08-16 from a full blank (no run over the
+> weekend), opened and later extended 08-17 through a 15:00 ET pass that
+> caught Anthropic's real **$105B** NVIDIA-OpenAI guarantee cap (the
+> morning read three separate outlets as carrying no dollar figure —
+> it was one document over, in the 8-K body, not the press-release
+> exhibit) plus three cross-sweep aggregation traps and two caught-late
+> items. Finalized 08-17 (3 self-corrections), opened and twice extended
+> 08-18 (10:45 ET then 15:15 ET, two cold-rotation batches).
+>
+> **`/week` closed `week_of 08-10`, recovered from an interrupted prior
+> session.** The weekly synthesis (all four lens digests, `actor-doing.yaml`
+> full pass, `radar.md` decay-review notes, `capital-context.yaml`
+> refresh, `upcoming.yaml` pruned of 2 stale-resolved entries) was
+> already complete and sitting uncommitted in the tree — recovered,
+> verified against its own stated write-scopes, committed and pushed
+> separately from the day's `/daily` work. Real findings: OpenAI
+> dissolved its Preparedness (catastrophic-risk) team the same week
+> Anthropic disclosed a $65B July run-rate; vendor-financing skepticism
+> and Hormuz war risk both moved from priced-as-belief to priced-as-fact
+> in the same seven days; the Aetna rate-cut ledger entry was corrected
+> from an overclaimed "confirmed" to genuinely unresolved.
+>
+> **Site: a flagged story page widened into a five-bug rendering-pipeline
+> fix, verified across all 1,727 published pages.** Ben flagged
+> `/story/anthropic-ipo-timing--2026-08-17/`'s summary rendering as raw
+> markdown, then asked whether the fix was site-wide. It wasn't at
+> first: `build_stories()` never ran markdown through any converter at
+> all (fixed); kestrel's own shared `md_html()` has a real regex bug
+> that silently fails on bold spans containing a nested italic (found,
+> reproduced, duplicated locally with the fix since kestrel is read-only
+> from here — worth a dev brief upstream, not yet filed); the front-page
+> `gist` field and `readouts.json`'s own cleaning loop each had the same
+> class of gap, chasing the exact "field-by-name doesn't converge" trap
+> that code's own docstring had already named once; a bold span could
+> fail to convert if its source `.md` word-wrapped mid-phrase. Verified
+> by rebuilding the site locally and grep-sweeping all 1,727 pages after
+> each fix. Also shipped: a story page now shows its position in its own
+> thread's timeline and its thread's parent/sibling threads — Ben:
+> "I'm not seeing a thread map on these pages." Caught and fixed a real
+> `O(n²)` build-time regression of its own along the way (12+ min → back
+> to the ~2min baseline). Pushed: this repo, the site (Cloudflare build
+> triggered), kestrel (by its own resident session, unrelated work).
+>
+> **Also this session:** pm's STAMP provenance-viewer question answered
+> and closed (no provenance record for anything published here right
+> now — the nominated candidate is a live rolling thread, the wrong
+> shape for a method that binds to prose that stops). Four kestrel
+> issues filed on real engine gaps found along the way (kestrel#21-24):
+> the attention kind's `AGENTS.md` still frames decay review as a
+> retirement queue after the fix went upstream; the `STATUS.md` As-of
+> lint can't distinguish "undated" from "dated in the wrong place"; the
+> kit stamp is checked against itself so a write-side bug can report
+> clean; the ops/dev routing table's own wording caused a real misfile
+> this session.
 
 > **2026-08-14 (wrap) — kit sync, a full `/daily` + `/week`, and a real
 > policy fix to how threads get retired.** 5 commits since the 08-13
