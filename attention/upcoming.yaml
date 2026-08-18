@@ -34,6 +34,19 @@
 # amd-q2-2026-earnings, cvs-q2-2026-earnings, globalfoundries-q2-2026-
 # earnings (all hit, resolved 08-04–08-06). Nothing lost — each week's
 # own weekly digest already carries the finding.
+#
+# Pruned 2026-08-18 (/week step 2, week_of 2026-08-10 close): 2 entries
+# — colombia-presidential-inauguration and jobs-report-july-0807, both
+# due 08-07 (the prior week), both `status: hit` with no `resolved:`
+# date ever stamped. That missing field is why the 08-15 prune pass
+# above didn't catch them — its filter reads `resolved`, and these two
+# never had one. Confirmed genuinely resolved before this closing week
+# by their own `due` date; substance already carries in the 08-03
+# weekly digests. This run's 12 newly-resolved entries (08-11 through
+# 08-18) are deliberately NOT pruned yet — per the established pattern,
+# they wait for the /week run that closes week_of 08-17, once this
+# week's own weekly digests (which now record them) are the settled
+# record rather than a same-run write.
 
 expectations:
 
@@ -316,27 +329,6 @@ expectations:
     logged_by: curate-add   # successor to anthropic-ipo-filing, resolved hit 08-02
     status: pending
 
-  - id: colombia-presidential-inauguration
-    claim: "Abelardo De La Espriella inaugurated president of Colombia after a razor-thin June runoff (49.7% vs 48.7%, ~250,000 votes, record 26M+ turnout)"
-    due: 2026-08-07
-    due_precision: day
-    thread: null
-    entities: []
-    source: https://www.npr.org/2026/06/22/colombia-election-runoff-espriella-cepeda
-    confidence: reported   # inauguration date is constitutionally fixed; the URL is the election report, not an inauguration notice
-    what_confirms: "the inauguration itself, plus first-day cabinet/policy signals — a Trump-endorsed right-wing outsider succeeding Petro is a regional realignment, not a routine handover"
-    logged: 2026-08-02
-    logged_by: curate-add
-    # 2026-08-02 ⟨daily⟩: surfaced by the catch-all world-news sweep, not by
-    # any lens. Latin America has no thread and no watchlist presence in
-    # this map at all — logging the date so the handover is at least seen.
-    # 2026-08-07 ⟨daily⟩: HIT — inaugurated on schedule, in Cali (first
-    # inauguration outside the capital since the 19th century). Rubio
-    # attended; Petro boycotted; first-day signals incl. a stated exit
-    # from China's Belt and Road toward the US. Full item: the 08-07
-    # world-news digest.
-    status: hit
-
   - id: eu-ai-act-high-risk-deferred
     claim: "EU AI Act high-risk obligations (Annex III standalone systems) bind, after the Digital Omnibus deferred them from 2026-08-02"
     due: 2027-12-02
@@ -577,23 +569,6 @@ expectations:
     logged: 2026-07-29
     logged_by: curate-add
     status: pending
-
-  - id: jobs-report-july-0807
-    claim: "July US employment report (nonfarm payrolls) — 08-07"
-    due: 2026-08-07
-    due_precision: day
-    thread: ""    # no Fed thread yet (Warsh-Fed is a candidate, unpromoted)
-    entities: []
-    source: https://news.google.com/rss/search?q=nonfarm+payrolls+August+7+2026
-    confidence: reported
-    what_confirms: "the BLS release; the week's macro capstone against the 3.50-3.75% hold and the cut-pressure politics"
-    logged: 2026-08-03
-    logged_by: curate-add
-    # 2026-08-07 ⟨daily⟩: HIT — BLS released on schedule 08:30 ET.
-    # Payrolls FELL 23,000 (consensus ~+84k); unemployment 4.1%; May/June
-    # revised down a combined 103,000. The print lands on a 9-3
-    # hawkish-dissent committee before 09-16 — sev=major in the digest.
-    status: hit
 
   - id: qwen38-max-open-weights
     claim: "Alibaba releases Qwen3.8-Max open weights to Hugging Face / ModelScope"

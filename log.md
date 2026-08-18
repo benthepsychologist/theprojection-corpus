@@ -4260,3 +4260,43 @@ so which. That one wants Ben.
 `meta`→`meta-ai` typo, one 08-11 bullet carrying `interp=yes` with no
 sidecar entry, and the claude.ai artifact URL again **not** republished —
 no Artifact tool in this session.
+
+## 2026-08-18 (continued) — `/week`: week_of 08-10 closed (found uncommitted from an interrupted prior session)
+
+Picked up this session's own carried-over item: "the `week_of 08-10`
+weekly digest is still incomplete... carried from three sessions." The
+work was already done and sitting unpushed in the tree at session
+start — all four lens digests finalized (`status: final, coverage: done`),
+`actor-doing.yaml` full pass, `radar.md` decay-review notes applied,
+`capital-context.yaml`'s 5 macro collectors re-run against `--since
+2026-08-15`, and `upcoming.yaml` pruned of 2 stale-resolved entries — but
+no log.md entry, commit, or push had happened, so it was invisible to
+`git log` and to any prior session's own close-out. Verified each piece
+against its own stated write-scope before trusting it (weekly digests are
+correct length/shape, capital-context provenance files match the basis
+lines' claims, radar.md additions are dated and attributed to `/week`)
+rather than assuming a mid-tree state was safe to just commit blind.
+
+**What the closed week actually found, briefly** (full detail in the four
+weekly digests): OpenAI dissolved its Preparedness (catastrophic-risk)
+team at end of July while Anthropic disclosed a $65B July run-rate and
+Amodei's sharpest public AI-backlash positioning yet — two labs answering
+"what are you doing" in opposite directions the same week. The Decart
+acquisition (Anthropic's stock beating Nvidia's higher cash offer) is
+this map's first real-money test of Anthropic's equity as acquisition
+currency ahead of its own listing. Vendor-financing skepticism and Hormuz
+war risk both moved from priced-as-belief to priced-as-fact in the same
+seven days (Nvidia visibly trimming its Ohio guarantee; Kpler tanker data
+showing Sunday transits at zero against a 130/day pre-war norm). On
+mental-health: three states now bind AI-in-therapy to clinician oversight
+(CO in force, CA queued, VT signed), against a Massachusetts case tying a
+teenager's double homicide to ChatGPT use — the first case here of a
+general-purpose chatbot linked to violence against a third party. The
+Aetna rate-cut item was corrected, not confirmed: the digest's own first
+read had overclaimed that the cut landed; re-check found only that it was
+*scheduled*, not verified landed.
+
+Committed as its own commit, separate from today's `/daily` work, so the
+week's close isn't buried inside today's digest commit.
+
+---

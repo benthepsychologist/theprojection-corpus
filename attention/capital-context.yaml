@@ -17,8 +17,31 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-08-15
+asof: 2026-08-18
 
+# Refresh run 2026-08-18 (/week step 4b): all 5 collectors re-run against an
+# explicit --since 2026-08-15 window (the date of the prior refresh).
+# treasury_tic/bis_stats/imf_data: zero items, real successful API calls
+# (confirmed via provenance — params/fetched_at recorded, not an access
+# failure), consistent with each source's real-world lag — none of the
+# three has released a new figure since the prior refresh. epfr_flows: 36
+# Global Navigator entries seen, 3 keyword-matched, ZERO published since
+# the 08-15 cutoff (confirmed via provenance `items: []`); a widened
+# diagnostic re-run (--since 2026-08-01, read-only, not written back) came
+# back with exactly the two issues already on file (08-11, 08-04) and
+# nothing newer — the 08-11 issue remains the latest. fund_flow_reports:
+# STILL EMPTY — Morningstar's AWS WAF bot-challenge and etf.com's
+# Cloudflare 403 both confirmed again, same bot-wall as every check since
+# 2026-07-30. `rate_regime` and `conflict_risk_premium` are UNCHANGED this
+# pass and deliberately so: both are fed by the news sweep per this file's
+# own `basis` fields, not by the 5 macro collectors this pass covers, and
+# this pass's scope was collector-only (other agents are on threads.yaml/
+# digest work this /week run). No standing `/steer capital-context ...`
+# framing was found — `framing.emphasis`/`deprioritize`/`notes` are empty
+# in this file, and log.md's only hits for "steer capital-context" are the
+# file's own documentation of the syntax (line 1104), not a logged
+# invocation with actual content.
+#
 # Refresh run 2026-08-15 (/week step 4b, partial week 08-10–08-15): all 5
 # collectors re-run against an explicit --since 2026-08-14 window.
 # treasury_tic/bis_stats/imf_data: zero items, real successful API calls
@@ -169,7 +192,7 @@ readings:
       jurisdiction transmits to bank lending in another kept expanding
       through the quarter. USD-denominated claims specifically: $21.80T
       (up from $20.84T), still the dominant currency leg.
-    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API) — re-run 2026-08-14, no new quarter since 2026-08-04 (real ~6wk lag, confirmed via provenance, value/as_of left as-is)"
+    basis: "collectors/bis_stats.py (BIS SDMX locational banking statistics API) — re-run 2026-08-18, no new quarter since 2026-08-04 (real ~6wk lag, confirmed via provenance, value/as_of left as-is)"
     sources:
       - figure: "$47.62T (was $45.97T)"
         label: "BIS locational banking statistics, 2026-Q1"
@@ -188,7 +211,7 @@ readings:
       and net international investment position -$21.27T (both 2026-Q1) —
       the US remains a large net external debtor, the structural backdrop
       any dollar-flow story sits on top of.
-    basis: "collectors/treasury_tic.py (Treasury TIC Table 5) + collectors/imf_data.py (IMF BOP/IIP via api.imf.org) — both re-run 2026-08-14, no new month/quarter since 2026-07-30 (real ~2mo/quarterly lag, confirmed via provenance, value/as_of left as-is)"
+    basis: "collectors/treasury_tic.py (Treasury TIC Table 5) + collectors/imf_data.py (IMF BOP/IIP via api.imf.org) — both re-run 2026-08-18, no new month/quarter since 2026-07-30 (real ~2mo/quarterly lag, confirmed via provenance, value/as_of left as-is)"
     sources:
       - figure: "$9,371.1B foreign-held Treasuries"
         label: "Treasury TIC, Major Foreign Holders, 2026-05"
@@ -219,7 +242,7 @@ readings:
       new one. The last genuine flow figure stays $10B (08-04, "technology
       story shines through the smoke") — not superseded, just not
       re-measured this week.
-    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent) — re-run 2026-08-14"
+    basis: "collectors/epfr_flows.py (ISI Markets' Global Navigator, EPFR's parent) — re-run 2026-08-18, zero new Global Navigator issues since 08-11 (confirmed via provenance `items: []` on the --since 2026-08-15 run, and via a widened --since 2026-08-01 diagnostic re-run that returned only the two issues already on file below); fund_flow_reports (Morningstar/etf.com) still bot-gated, same as every check since 2026-07-30"
     sources:
       - figure: "Central banks hold firm; Net Inflation Sentiment Score rises on oil + \"chipflation\""
         label: "Global Navigator, 2026-08-11"

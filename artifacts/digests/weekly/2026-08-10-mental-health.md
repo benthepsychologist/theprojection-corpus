@@ -7,10 +7,10 @@ coverage: done
 
 # Mental Health — week of 2026-08-10
 
-*Synthesized from 6 dailies (2026-08-10 through 2026-08-15 — a partial
-week; Sunday hasn't happened yet). No fresh 7-day sweep run; this is a
-synthesis pass over already-curated daily digests plus the standing
-radar, thread, and expectations ledgers.*
+*Synthesized from 7 dailies (2026-08-10 through 2026-08-16) — the full
+Mon-Sun week. No fresh 7-day sweep run; this is a synthesis pass over
+already-curated daily digests plus the standing radar, thread, and
+expectations ledgers.*
 
 ## The week's throughline
 
@@ -29,35 +29,148 @@ progress ran directly alongside the darkest story this lens has recorded: a
 Middlesex County, Massachusetts prosecutor publicly tied a 17-year-old's
 double homicide of his mother and brother to his ChatGPT use — a
 general-purpose chatbot, not a therapy or companion product, allegedly used to
-rehearse violent fantasy against people other than himself. It's a materially
-different pattern from every suicide-focused Character.AI/Grok case already on
-this map, and none of the three newly-binding state laws — all scoped to
-licensed therapeutic practice — would have touched it. Underneath both
+rehearse violent fantasy against people other than himself (Arjun Aravind, 17,
+arraigned and held without bail 08-13; next date a September 11
+probable-cause hearing). It's a materially different pattern from every
+suicide-focused Character.AI/Grok case already on this map, and none of the
+three newly-binding state laws — all scoped to licensed therapeutic practice —
+would have touched it. A second, unrelated Character.AI suit landed the same
+week (08-13), naming Google and co-founders Noam Shazeer and Daniel De
+Freitas as co-defendants, litigation continuing to generate new named
+plaintiffs even after January's confidential settlement round. Underneath both
 stories, the money kept moving on its own track: two more behavioral-health
 capacity contractions surfaced (a Maryland 988 crisis-line backup contract
-lapsing, a Kentucky PE-owned addiction chain quietly halting new-patient
-intake) the same week Behavioral Health Business counted a record 52
-companies on this year's Inc. 5000 fastest-growing list — capital keeps
-flowing to newer clinician-augmentation and interventional-psychiatry
-entrants even as frontline crisis and residential capacity quietly shrinks.
-The Kaiser Permanente/NUHW mediation over AI's role in behavioral health went
-quiet for a second time, on schedule: it had already produced one
-passed-silent outcome on its opening day (08-11), and its full August 11–14
-window closed the same way — no readout from either side, confirmed again
-on a direct re-check Saturday. The week closed on a quieter but real note
-rather than a dramatic one: Aetna's already-once-softened reimbursement cut
-to Alma-contracted therapists actually took effect 08-15 as scheduled —
-state-specific, real money out of New York and New Jersey therapists'
-pockets, confirmed independently by a practice-management blog's own new
-rate tables even though neither company issued a formal announcement — and
-two research groups used the weekend lull to push the evidence-and-standards
-side forward: an APA-affiliated team proposed a standardized "facts label"
-for AI mental-health apps, and a Stockholm University trial found AI-
-delivered psychodynamic and CBT therapy produce statistically
-indistinguishable outcomes once a human therapist is removed from the loop
-entirely.
+lapsing in September, a Kentucky PE-owned addiction chain — Recovery Works,
+under Pinnacle Treatment Centers, owned by Linden Capital Partners — quietly
+halting new-patient intake after already sitting closed roughly three weeks)
+the same week Behavioral Health Business counted a record 52 companies on
+this year's Inc. 5000 fastest-growing list — capital keeps flowing to newer
+clinician-augmentation and interventional-psychiatry entrants even as
+frontline crisis and residential capacity quietly shrinks. The Kaiser
+Permanente/NUHW mediation over AI's role in behavioral health went quiet for
+a second time, on schedule: it had already produced one passed-silent outcome
+on its opening day (08-11), and its full August 11–14 window closed the same
+way — no readout from either side, confirmed again on a direct re-check
+Saturday and, per follow-on checking after this week closed, still silent as
+of 08-18 with no resolution anywhere in sight. The week closed on a quieter
+note, and one that needs a correction from how it first read: Aetna's
+already-once-softened reimbursement cut to Alma-contracted therapists was
+**scheduled** to take effect 08-15 — real, state-specific published rate
+tables exist for New York and New Jersey — but no source dated 08-15 or
+later, checked repeatedly through the following week, ever confirmed the cut
+actually landed. `upcoming.yaml` correctly flipped `aetna-alma-rate-cut-
+effective` to passed-silent, and it is a genuine, still-open unknown, not a
+"confirmed but unannounced" story (see the Expectations scorecard below for
+why the earlier framing overclaimed it). Two research groups used the
+weekend lull to push the evidence-and-standards side forward regardless: an
+APA-affiliated team proposed a standardized "facts label" for AI
+mental-health apps, and a Stockholm University trial found AI-delivered
+psychodynamic and CBT therapy produce statistically indistinguishable
+outcomes once a human therapist is removed from the loop entirely. Sunday
+08-16 itself produced nothing at all — verified, not assumed: Behavioral
+Health Business's only item was a sponsored column, STAT News went 31 hours
+without publishing anything, MobiHealthNews and Fierce Healthcare were both
+silent or off-topic — the correct close to a week that otherwise moved on
+almost every front at once.
 
 ## By radar question
+
+### Q1 — Who are the players, and what are they DOING?
+
+**What moved:** a dense week of named-actor action across payers,
+providers, labs, and state governments, with money and harm both traceable
+to specific players rather than abstract trends. **Aetna/CVS Health**
+scheduled (status: unconfirmed as landed — see Q6) a softened rate cut to
+therapists on the **Alma** platform. **Kaiser Permanente** and its union
+counterpart **NUHW** ran a four-day mediation window over AI's role in
+behavioral health and produced no public statement from either side, twice.
+**LifeStance Health**'s clinical chief, Dr. Stephanie Eken, used a
+trade-press interview to publicly reposition interventional psychiatry
+(TMS, esketamine, psychedelics) as standard-of-care rather than
+last-resort. **Recovery Works**, a **Pinnacle Treatment Centers** chain
+owned by PE firm **Linden Capital Partners**, quietly stopped taking new
+patients across Kentucky. **Addiction Recovery Care**, a separate Kentucky
+addiction-treatment chain, installed a new CEO (Randy Hunter, a former
+state Medicaid-fraud investigator) days after a $16.3M DOJ settlement, with
+founder Tim Robinson Jr.'s own wire-fraud/money-laundering indictment still
+pending trial (Feb 2027). **Definium** posted a second positive Phase 3
+readout for its LSD-based drug DT120, this time in generalized anxiety.
+**Character.AI**, alongside co-defendants **Google** and co-founders Noam
+Shazeer and Daniel De Freitas, was named in a fresh federal suit (08-13)
+distinct from January's settled wrongful-death round. **OpenAI**'s ChatGPT
+was the named product in the Acton, MA double-homicide case — the first
+time this map has recorded a general-purpose chatbot (not a therapy or
+companion product) tied to lethal third-party violence. **Colorado**,
+**California**, and **Vermont** each acted as governance players in their
+own right this week: Colorado's law took effect by mechanical operation
+(no new signature needed), California's Assembly Appropriations Committee
+voted 13-0, and a Dartmouth feature confirmed Vermont's governor had
+already signed H.816. On the evidence side, a seven-researcher team
+spanning the University of Toronto, NYU, UT Southwestern, and the American
+Psychiatric Association (Darlene King, who chairs APA's mental-health-IT
+work) proposed a standardized AI-app disclosure standard, and a Stockholm
+University team (Carlbring, Andersson, Mechler) ran a head-to-head AI-
+delivered psychodynamic-vs-CBT trial.
+
+**Implication:** the players doing the most consequential things this week
+split cleanly into two camps that never interacted — state legislatures and
+research consortia building governance and evidence infrastructure on one
+side, and payers/PE-owned operators quietly reshaping who gets care and at
+what price on the other. No single player this week touched both halves;
+Kaiser/NUHW came closest (labor dispute over AI *and* a major integrated
+payer-provider) and it's the one that produced no visible resolution at
+all.
+
+**Working-note candidate:** start tracking Addiction Recovery Care and
+Recovery Works/Linden Capital Partners as a linked "PE-owned addiction/
+recovery capacity" watch pairing rather than two independent one-off items
+— both are Kentucky-based, both surfaced in the same eight-day window, and
+between them they're the only two named-operator stories this lens has on
+the capacity-contraction thesis. If a third PE-owned operator story lands
+anywhere in behavioral health, promote the pairing to a thread rather than
+carrying it as an unpromoted candidate a third time.
+
+### Q2 — Where is the money going?
+
+**What moved:** this week's mental-health-specific money story was
+capital's direction more than its volume — record growth-list recognition
+for the sector as a whole (BHB's 52-company Inc. 5000 count, up from 45
+last year) sitting directly alongside two capacity *contractions* in the
+specific sub-segments furthest from that growth-list glamour: PE-owned
+addiction/residential care (Recovery Works) and federally-contracted crisis
+infrastructure (Maryland's Grassroots Crisis Intervention, which will cut
+62 jobs when its 988 backup-line federal contract lapses September 29).
+LifeStance's public case for interventional psychiatry as standard-of-care
+is itself a capital-allocation argument — TMS/esketamine/psychedelics
+reimbursed and scaled the way SSRIs and talk therapy already are — aimed
+at exactly the segment (clinician-augmentation, procedure-based care) this
+lens's funding-shift thesis says capital already favors over consumer
+chatbots. On the extraction side rather than the deployment side, Aetna's
+softened-but-real rate cut to Alma-contracted therapists represents money
+being pulled back out of independent practice, even though — see Q6 below
+— whether it actually landed this week remains genuinely unconfirmed.
+Definium's second positive Phase 3 (GAD, after June's depression win)
+is a different kind of money signal: real capital-intensive, multi-year
+drug-development spend now producing accumulating pivotal-trial evidence,
+the slowest-moving and most expensive corner of this lens's whole map.
+
+**Implication:** the "money flowing to newer clinician-augmentation and
+interventional-psychiatry entrants, away from frontline crisis/residential
+capacity" pattern that's been building for two weeks (Maryland's 988 line,
+now Recovery Works) is still only two data points — real, specific, and
+concentrated in addiction/residential and crisis-line services, but not
+yet confirmed as a recurring cadence distinct from two isolated closures.
+Separately, this week is the first time the *extraction* side of the
+capital story (a payer rate cut) and the *deployment* side (record growth-
+list recognition, LifeStance's standard-of-care push) showed up in the
+same seven days pointed at genuinely different parts of the same sector.
+
+**Working-note candidate:** track whether a third PE-owned or
+federally-contracted capacity story lands in the coming weeks — that's
+the number that would turn "two data points" into a real pattern; and
+keep the Aetna resolution open rather than closed, since this week's own
+correction (below) shows the map got the confirmation status wrong once
+already.
 
 ### Q3 — Is mental-health tech getting more rigorous, or is hype winning?
 
@@ -103,7 +216,9 @@ lens tracks, since it compares two clinical schools rather than one bot
 against a waitlist. Meanwhile capital kept arriving without waiting on any
 of it — Behavioral Health Business counted a record 52 behavioral-health
 companies on this year's Inc. 5000 (45 last year), explicitly framed as
-newer entrants outpacing established providers.
+newer entrants outpacing established providers. Sunday 08-16 added nothing
+— the registry and trade press are both weekday machinery and the week's
+own reconstruction confirmed a genuine zero rather than a missed sweep.
 
 **Implication:** rigor is accumulating fastest in the slowest-to-market,
 most heavily regulated modality (psychedelics, now two-for-two on positive
@@ -152,7 +267,8 @@ the mediation's opening day now produced a second, on the window's actual
 close. No governance or litigation news moved over the weekend — Saturday
 was a genuine lull on this half of the question, with the week's only
 real Saturday development landing on the money side (below) rather than
-here.
+here, and Sunday 08-16 produced nothing at all, verified rather than
+assumed.
 
 **Implication:** statutory governance is now real in three states, but
 every one of them is scoped to licensed therapeutic practice — none
@@ -171,10 +287,12 @@ regulatory or legislative response aimed specifically at general-purpose-
 chatbot harm to third parties, as distinct from the therapy-chatbot and
 companion-app statutes already in force; and separately, now that the
 Kaiser/NUHW mediation has gone silent twice on the same dispute (its
-opening day and its scheduled close), stand up a standing dated check for
-whatever comes next in that dispute (a new bargaining session, a strike
-authorization, a public statement) rather than continuing to log one-off
-expectation entries against a process that has shown it won't self-report.
+opening day and its scheduled close) — and remains silent under repeated
+re-checks after this week's own close, with no new bargaining session,
+strike authorization, or public statement found by either side — stand up
+a standing dated check for whatever comes next in that dispute rather than
+continuing to log one-off expectation entries against a process that has
+shown it won't self-report.
 
 ### Q6 — What's moving in the market around my work?
 
@@ -195,46 +313,54 @@ funding-shift thesis. A Kentucky addiction chain's new CEO — a former state
 Medicaid-fraud investigator — started days after the company's own $16.3M
 DOJ settlement, a second fraud/compliance data point for a candidate this
 lens has carried since 08-10 without promoting it to a thread. On the
-payer side, the week's follow-up question resolved cleanly: Aetna's
-already-once-softened reimbursement cut to Alma-contracted therapists took
-effect 08-15 exactly as scheduled, and it held without further pushback
-found — but "held" undersells what actually landed. The cut is real and
-state-specific: New York therapists lose 10.6% on a 60-minute session (CPT
-90837) and 9.7% on intake (90791); New Jersey loses 15.2% and 16.8% on the
-same two codes; 30-minute sessions are untouched everywhere. The two
-biggest originally-proposed cuts — collapsing 90837/90834 into a single
-rate, and flattening reimbursement across license levels (LCSW vs. PhD) —
-are the parts Aetna walked back in July after APA/APA Services protested;
-what landed today is the softer remainder. `upcoming.yaml`'s
-`aetna-alma-rate-cut-effective` flipped passed-silent (neither Aetna nor
-Alma issued a formal announcement), but a practice-management blog
-independently published the exact new rate tables the same day, so the
-"silent" label describes the companies' own communications discipline,
-not genuine uncertainty about whether the cut is real. No third data point
-landed for the PE-capacity-contraction pattern this week — it stays at
-two (Maryland's 988 line, Kentucky's Recovery Works) rather than
-advancing to three.
+payer side, the week's follow-up question did **not** resolve as cleanly as
+this digest first read it, and the correction matters: Aetna's
+already-once-softened reimbursement cut to Alma-contracted therapists was
+**scheduled** to take effect 08-15 exactly as previewed, and real,
+state-specific rate tables exist — New York therapists lose 10.6% on a
+60-minute session (CPT 90837) and 9.7% on intake (90791); New Jersey loses
+15.2% and 16.8% on the same two codes; 30-minute sessions are untouched
+everywhere. The two biggest originally-proposed cuts — collapsing
+90837/90834 into a single rate, and flattening reimbursement across
+license levels (LCSW vs. PhD) — are the parts Aetna walked back in a
+07-08 partial rollback after APA/APA Services protested; what was
+scheduled to land 08-15 is the softer remainder. `upcoming.yaml`'s
+`aetna-alma-rate-cut-effective` flipped passed-silent — but **this
+digest's own 08-15 draft originally overclaimed the cut as "confirmed
+independently" by a practice-management blog, and that claim did not
+hold up**: both cited sources (ClearHealthCosts, the practice-management
+writeup) predate 08-15 and describe what was *scheduled*, not what
+happened — the practice-management piece's own closing line reads "August
+15 is going to happen." A finalize-stage correction (applied 08-17, just
+after this week's close) confirmed no source dated 08-15 or later, checked
+across Alma's blog, Aetna provider notices, APA statements, BHBusiness,
+ClearHealthCosts, and therapist forums, has ever confirmed implementation,
+a pause, or a complaint. The rate figures are real; whether the cut
+actually took effect remains **genuinely unconfirmed**, not merely
+unannounced. No third data point landed for the PE-capacity-contraction
+pattern this week — it stays at two (Maryland's 988 line, Kentucky's
+Recovery Works) rather than advancing to three.
 
 **Implication:** the PE-owned-capacity-contracting pattern is still two-
 for-two, not three-for-three, and specifically concentrated in
 addiction/residential and crisis-line services — narrower and sharper than
 the broader funding-shift thesis, still worth separating out the moment a
 third data point lands but not yet confirmed as a recurring cadence rather
-than two isolated events. The Aetna resolution is a clean, if quiet,
-answer on the payer side: a payer can walk back the harshest parts of a
-therapist-facing cut under professional-association pressure and still
-land a real, absorbed reduction — neither the "payer pressure eases" nor
-the "payer pressure reasserts" framing fully fits; it's a partial,
-negotiated landing that neither side is publicizing.
+than two isolated events. The Aetna story is the week's own cautionary
+tale about reading "passed-silent" too generously: this lens correctly
+logged the ledger status but then narrated past it into an unsupported
+"confirmed real" claim, which stood in a `final` digest for two days before
+a finalize-stage re-check caught it. That's a real process finding, not
+just a content one — see the near-miss audit below.
 
 **Working-note candidate:** track whether the PE-capacity-contraction
 pattern gets its third data point in the coming weeks — two of this
 lens's own thread candidates (PE capacity quietly contracting;
 perinatal/postpartum care quality) are still sitting unpromoted after
-each used its one allowed reappearance — and watch for any therapist- or
-APA-side follow-up to the Aetna cut now that the rate tables are
-public and confirmed, since a quiet landing is not the same as an
-uncontested one.
+each used its one allowed reappearance — and keep a standing re-check on
+the Aetna/Alma implementation question open rather than closed, since the
+"did it actually land" question is still unanswered a week after its
+scheduled date, not resolved either way.
 
 ## Threads
 
@@ -262,8 +388,14 @@ uncontested one.
   Innovation programme launch; the APA-affiliated AI "facts label"
   proposal (08-15).
 - `payer-ai-claim-denial` — Aetna's reimbursement cuts to Alma-contracted
-  therapists took effect 08-15 as scheduled, with state-specific figures
-  confirmed independently (08-15).
+  therapists were scheduled to take effect 08-15, with state-specific
+  figures published — but see Q6 above: implementation itself remains
+  unconfirmed, not confirmed, correcting this thread's own 08-15 timeline
+  entry.
+
+**08-16 (Sunday):** no thread moved — verified zero, not an unchecked gap
+(Behavioral Health Business ran only a sponsored column; STAT, MobiHealth
+News and Fierce Healthcare were silent or off-topic all day).
 
 **Resolved this week:** none — no mental-health thread closed out. The
 closest calls were two *expectations* (not threads themselves) flipping
@@ -271,15 +403,18 @@ passed-silent: `kaiser-nuhw-mediation-0811` on 08-12 and, this week's new
 resolution, `kaiser-nuhw-mediation-window-close` on 08-15 (its 08-14 due
 date passed with a direct re-check confirming continued silence). The
 thread both feed, `kaiser-ai-clinician-backlash`, stays open and has now
-absorbed two silent outcomes on the same dispute.
+absorbed two silent outcomes on the same dispute, still silent under
+further re-checks after this week's own close.
 
 ## ⏳ Expectations scorecard
 
 Three hits and three passed-silents this week — a clean sweep of every
-`upcoming.yaml` entry that came due 08-10 through 08-15, none left
-pending into next week. Two of the three silents land on the exact same
-Kaiser/NUHW dispute, and the third (Aetna) is the "silent but real" kind
-worth reading twice.
+`upcoming.yaml` entry that came due 08-10 through 08-16, none left
+pending into next week (the ledger's next mental-health-relevant due
+dates, `cms-access-cohort-august` and `xai-mn-preliminary-injunction`,
+both fall on or after 08-17, outside this week). Two of the three silents
+land on the exact same Kaiser/NUHW dispute, and the third (Aetna) is the
+one this digest itself got wrong on first pass and had to correct.
 
 | id | claim | status | resolved/due |
 | --- | --- | --- | --- |
@@ -288,7 +423,7 @@ worth reading twice.
 | `ca-sb903-assembly` | SB 903 clears Assembly Appropriations (fiscal report-out) | ✅ hit, a day early | 08-13 |
 | `kaiser-nuhw-mediation-0811` | Kaiser/NUHW mediation begins | ⛔ passed-silent | 08-12 |
 | `kaiser-nuhw-mediation-window-close` | Kaiser/NUHW's full Aug 11–14 mediation window closes with a public outcome | ⛔ passed-silent | 08-15 (due 08-14) |
-| `aetna-alma-rate-cut-effective` | Aetna's softened, delayed therapist rate cut takes effect | ⛔ passed-silent (but confirmed real) | 08-15 |
+| `aetna-alma-rate-cut-effective` | Aetna's softened, delayed therapist rate cut takes effect | ⛔ passed-silent — **genuinely unconfirmed**, not confirmed-but-unannounced | 08-15 |
 
 Both Colorado and California resolved exactly as previewed — real
 procedural wins for the "governance now binds" throughline above.
@@ -300,12 +435,25 @@ repeated the pattern on the same dispute's actual close — logged 08-14
 specifically to catch whether the *whole* Aug 11–14 window ever produced a
 readout, and a direct Saturday re-check found nothing further from either
 side, closing it passed-silent rather than leaving it open indefinitely.
-`aetna-alma-rate-cut-effective` is the one passed-silent that isn't really
-a miss in substance: the *companies'* channels stayed silent (no formal
-announcement from Aetna or Alma), but the underlying change is confirmed
-real and state-specific by an independent practice-management source — a
-useful reminder that "passed-silent" measures whether an institution
-announced something, not whether it happened.
+Re-checks after this week's own close (through 08-18) found no change on
+either Kaiser entry, and did catch one near-miss worth recording for
+process discipline: a search result surfaced an NUHW strike announcement
+"dated Monday, August 15th" that on inspection traced to a real NUHW press
+release from 2022, not 2026 — correctly not treated as confirmation.
+`aetna-alma-rate-cut-effective` needs the most careful read of the three:
+this digest's own 08-15 draft first described it as "confirmed real and
+state-specific... by an independent practice-management source," which
+**overclaimed the evidence**. Both cited sources predate 08-15 and
+describe the *scheduled* rates, not a confirmed landing — one is a July-
+dated blog post, the other's own closing line is "August 15 is going to
+happen." A finalize-stage correction (08-17) re-swept Alma's blog, Aetna
+provider notices, APA/APA Services statements, Behavioral Health
+Business, ClearHealthCosts, and therapist forums and found nothing dated
+08-15 or later confirming the cut landed, paused, or drew a complaint. The
+ledger's `passed-silent` status was right the whole time; the digest
+narrative describing *why* was wrong for two days. Grace on this entry
+remains open through 08-18 — genuinely unresolved, not a settled quiet
+story.
 
 ## 🍂 Decay review
 
@@ -313,7 +461,10 @@ Ten mental-health threads haven't had a fresh hit in more than 10 days as
 of 2026-08-16 — this staleness report never proposes resolving or
 retiring a thread on quiet time alone (Ben's 2026-08-14 house rule);
 proposals below are offered only where a genuine, evidence-based reason
-turned up during this week's own research.
+turned up during this week's own research. Sunday 08-16's confirmed-zero
+day left every thread's `last_seen` exactly where Saturday left it, so
+this table is unchanged from where the week's own research left it going
+into the weekend.
 
 | slug | stale since | proposal | why |
 | --- | --- | --- | --- |
@@ -328,14 +479,18 @@ turned up during this week's own research.
 | `microsoft-health` | 08-05 (11 days) | keep | Microsoft's real news this week (the Copilot consumer/business app merger, 08-13) was general-AI product strategy, not a health-specific move — no MH-adjacent Microsoft item surfaced this week to log here. |
 | `google-health` | 08-05 (11 days) | keep | Google's real news this week (DeepMind leadership coverage, the Pixel 11 launch) was also general-AI/consumer-hardware, not health-specific — same pattern as Microsoft, not a coverage gap. |
 
+N/A beyond the above: 10 threads stale, one proposal repeated
+(`alan-into-canada`), nothing else proposed.
+
 ## 🔍 Near-miss audit
 
-Reading this week's five daily coverage-critic passes (08-10 through
-08-14; 08-15's critic pass hasn't run yet, since today's digest is still
-building as of this writing) against this lens specifically: three real
-or near-real misses across five checkable days, and every single one was
+Reading this week's seven daily coverage-critic passes (08-10 through
+08-16) against this lens specifically: three real or near-real misses
+across five checkable weekday-equivalent days, and every single one was
 self-caught during that day's own finalize pass before publication — none
-stood as an actual gap by the time a digest went final.
+stood as an actual gap by the time a digest went final. Saturday and
+Sunday were both genuinely quiet on the trade-press side, not
+under-swept.
 
 - **08-10:** no misses. None of the four benchmarks (Behavioral Health
   Business, STAT Health Tech, Fierce Healthcare, MobiHealthNews) carried
@@ -371,20 +526,46 @@ stood as an actual gap by the time a digest went final.
   newly-registered clinical trials) is expected outperformance — trade
   press doesn't track clinicaltrials.gov registrations the way this lens
   does, not a benchmark catching something this lens missed.
+- **08-15 (Saturday):** clean, but for a reason worth separating from the
+  other clean days — **no mental-health benchmark published an editorial
+  lead at all.** Verified individually rather than assumed: Behavioral
+  Health Business had nothing between Friday 20:20 UTC and Sunday 05:00
+  UTC, STAT Health Tech nothing for 31 hours across the same window,
+  MobiHealthNews nothing after Friday 13:26 ET, and Fierce Healthcare's
+  only Saturday item was a recurring section page, not an article. This
+  is where the Aetna/Alma overclaim (see Q6 and the Expectations
+  scorecard) actually happened — not a recall miss against a benchmark,
+  but the digest overstating its own sourcing on a day with no external
+  benchmark to check it against, caught two days later rather than same-
+  day.
+- **08-16 (Sunday):** clean, verified zero. No `/daily` ran over the
+  weekend — the day was reconstructed 08-17 from direct fetches rather
+  than the collector buffer, which itself had stopped logging at
+  2026-08-16T00:21Z (20:21 ET Saturday), before the digest-day even
+  opens. All four benchmarks were confirmed silent or off-topic. **This
+  is a structural finding worth flagging, not just a clean day:** a
+  skipped weekend `/daily` run costs collector coverage that only
+  partially recovers after the fact, and this lens has a sanctioned
+  Sunday-evening mini-sweep specifically built for this gap that did not
+  run this week.
 
-**The pattern:** three of the week's five checkable days had a genuine
-trade-press item, always from Behavioral Health Business or STAT, that
-posted later in the day and was missed by the digest's earlier building
-pass — caught only by the disciplined end-of-day benchmark recheck that
-finalize already runs. The two clean days (08-10, 08-14) show the pattern
-isn't universal, but it's still a real, repeating timing gap in the
-pipeline rather than a source gap: the original per-day pass runs before
-these two outlets finish publishing for the day. It hasn't cost this lens
-a real miss yet, because finalize has caught all three instances, but at
-three real misses in five checkable days it remains worth a structural
-fix (a later building-pass cutoff, or an explicit recheck scheduled
-against each outlet's actual publishing cadence) rather than continuing
-to absorb it manually every day.
+**The pattern:** three of the week's five weekday-equivalent checkable
+days had a genuine trade-press item, always from Behavioral Health
+Business or STAT, that posted later in the day and was missed by the
+digest's earlier building pass — caught only by the disciplined
+end-of-day benchmark recheck that finalize already runs. The two clean
+weekdays (08-10, 08-14) show the pattern isn't universal, and the weekend
+(08-15, 08-16) shows a different failure mode entirely: not missed
+recall, but one self-generated overclaim on a day with no benchmark to
+check it, plus a real collector-coverage gap from a skipped `/daily` run.
+Three structural items worth a fix rather than continuing to absorb
+manually: (1) the recall-timing gap on Behavioral Health Business/STAT —
+a later building-pass cutoff or an explicit recheck timed to each
+outlet's real publishing cadence; (2) a standing discipline that a claim
+of independent confirmation gets checked against source *dates*, not just
+source *existence*, especially on days with no benchmark to cross-check
+against; and (3) actually running the sanctioned Sunday-evening mini-sweep
+that exists precisely for a skipped weekend `/daily`.
 
 ## 🔄 Map deltas of the week
 
@@ -392,10 +573,12 @@ No `attention/*.yaml` edits are applied by this weekly digest — this pass
 has write scope to this file only. Ten threads carried real timeline
 updates this week (listed in full under Threads → Moved above, including
 three that got a second hit this week — `ai-therapy-evidence`,
-`mh-evidence-infrastructure`, and the newly-added `payer-ai-claim-denial`);
-the decay-review notes and the three radar working-note candidates above
-are offered for Ben's call, not applied here — see the session report for
-the exact text ready to paste into `radar.md`.
+`mh-evidence-infrastructure`, and `payer-ai-claim-denial`, the last one
+now carrying a correction rather than a clean confirmation); 08-16
+contributed no thread movement and no watchlist entities, a genuinely
+empty day. Ben's own decay-review notes and the working-note candidates
+above are offered for his call, not applied here — see the session
+report for the exact text ready to paste into `radar.md`.
 
 ---
 Three states now bind or are about to bind AI-in-therapy practice to a
@@ -409,7 +592,10 @@ of those three new laws would have touched it. Underneath both stories,
 two more behavioral-health facilities quietly stopped taking patients even
 as trade press counted a record year for sector-wide company growth, the
 Kaiser-NUHW mediation over AI in behavioral health went silent for a
-second time on the same dispute, and the week closed quietly but for
-real: Aetna's softened therapist-rate cut landed exactly as scheduled,
-and two research teams pushed AI-mental-health evidence and disclosure
-standards forward on a weekend with nothing else moving.
+second time on the same dispute and stayed silent through the following
+week, and Sunday closed the week with a verified, genuine zero. One thing
+needs saying plainly: this digest's own first read of Aetna's therapist
+rate cut overclaimed independent confirmation that didn't hold up under a
+closer date-check — the cut was real and scheduled, but whether it
+actually landed remains unresolved, a live loose end rather than a quiet
+win to carry forward.

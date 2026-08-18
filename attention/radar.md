@@ -137,6 +137,16 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     instead of tagged to it. Worth a light pass checking whether "is
     there a thread answering what this actor just did" gets asked at
     write time, not only at periodic synthesis time.
+  - 2026-08-18 (/week, week_of 08-10): two labs answered "what are you
+    doing" in opposite directions the same week. OpenAI dissolved its
+    Preparedness team (catastrophic-risk evaluation) at end of July,
+    reported as "streamlining" ahead of the IPO — the third dedicated
+    safety unit cut in about two years — while Anthropic disclosed a
+    $65B July revenue run-rate, ahead of OpenAI's ~$40B, and Amodei
+    published his sharpest public "crisis of trust" positioning yet on
+    AI backlash. Stripe entering as a non-lab buyer of the model-router
+    layer (OpenRouter, $7B+) is this month's first real "outsider"
+    board entrant worth tracking as its own kind of player.
 
 ## Q2 — Where is the money going?
 - **mode:** both · **lens:** ai + mental-health (money lens will absorb/extend this) · **status:** open
@@ -241,6 +251,17 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     reappearance rule when 08-14 produced no fourth data point, earns its
     own thread if a fourth landlord-IPO story lands before the next
     /week.
+  - 2026-08-18 (/week, week_of 08-10): the Decart resolution (Anthropic's
+    bid winning over Nvidia's higher cash offer, seller preferring
+    Anthropic's own stock) is worth framing as Anthropic's first real-
+    money test of its stock as acquisition currency, weeks ahead of its
+    own listing — a harder test than funding-round investor demand,
+    since Decart's founders and lead investor Sequoia had a higher cash
+    number on the table and chose paper instead. Separately, this map
+    now has two same-shape sightings of PE-owned or federally-contracted
+    mental-health capacity contracting (Addiction Recovery Care /
+    Recovery Works under Linden Capital Partners, and a second operator)
+    — 2 of 2, not yet a pattern; watch for a third before promoting.
 
 ## Q3 — Is mental-health tech getting more rigorous, or is hype winning?
 - **mode:** answer (the book's thesis) + monitor · **lens:** mental-health · **status:** open
@@ -460,6 +481,12 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     bargaining session, a strike authorization, a public statement)
     rather than continuing to log one-off expectation entries against a
     process that has shown it won't self-report.
+  - 2026-08-18 (/week, week_of 08-10 close): re-checked through today —
+    still no readout from either side, now a third silence past this
+    same dispute's two logged expectation entries. Independently
+    re-derived by this run's own Kaiser/NUHW re-check without prompting
+    from the note above, which strengthens rather than restates the
+    standing-check case: two separate passes reached the same read.
 
 ## Q5 — Where is frontier AI heading overall?
 - **mode:** monitor (full firehose) · **lens:** ai · **status:** open
@@ -563,6 +590,15 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     prompt any other lab to run, or disclose, the same experiment; and
     whether Nvidia's Ohio-guarantee cut is a one-off scoping decision or
     the start of the platform trimming its own exposure more broadly.
+  - 2026-08-18 (/week, week_of 08-10): the containment throughline gets a
+    fourth beat, and it's qualitatively different from the first three —
+    those were technical containment questions (one agent, then any lab,
+    then multiagent swarms); OpenAI dissolving its own Preparedness team
+    the same week is an *institutional* containment regression, landing
+    directly on EO 14409's exposed assumption gap (the framework assumes
+    labs keep exactly this internal capacity). Worth stating explicitly
+    in the throughline that a lab choosing not to watch is a different
+    failure mode than a lab watching and missing something.
 
 ## Q6 — What's moving in the market around my work?
 - **mode:** both · **lens:** mental-health · **status:** open
@@ -668,6 +704,16 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     coming weeks, and watch for any therapist- or APA-side follow-up to
     the Aetna cut now that the rate tables are public — a quiet landing
     is not the same as an uncontested one.
+  - 2026-08-18 (/week, week_of 08-10 close) — a correction, not an
+    update: this note's own "still land a real, absorbed reduction"
+    framing above assumed the Aetna cut took effect. A source re-check
+    this week found that isn't established — both cited sources describe
+    what was *scheduled* for 08-15, not what happened, and no source
+    dated 08-15 or later confirms the cut landed, paused, or drew a
+    complaint. `aetna-alma-rate-cut-effective` is genuinely unresolved,
+    grace period open through 08-18. The PE-capacity-contraction pattern
+    independently re-checked at 2 (not 3) this week too — same read,
+    different pass, corroborating rather than new.
 
 ## Q7 — Where is capital and economic power concentrating — in my markets and above them?
 - **mode:** both · **lens:** money · **status:** open *(scoped by Ben 2026-07-20)*
@@ -824,6 +870,18 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     maintaining the $500B MOU framing — that gap between public
     commitment and actual backstop size is now the thing to track, not
     the headline number itself.
+  - 2026-08-18 (/week, week_of 08-10 close): two "belief → measured fact"
+    shifts landed in the same week on this question's two live risks.
+    Vendor-financing skepticism reached its sharpest point Friday —
+    Nvidia visibly shrinking its own Ohio guarantee, the $70B Bloomberg
+    figure, three credit-desk names now on record. And Sunday gave the
+    Hormuz risk its first physical-volume confirmation this map has had:
+    Kpler ship-tracking data (via Reuters) showed transits collapsing to
+    zero Sunday, against 31 the prior weekend and a pre-war norm above
+    130/day — everything before this was inferred from Brent's level and
+    rhetoric, not counted. A standstill prices differently than a risk
+    premium; both risks on this question just moved from priced-as-belief
+    to priced-as-fact in the same seven days.
 
 ---
 

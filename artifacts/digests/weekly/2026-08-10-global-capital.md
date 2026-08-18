@@ -7,13 +7,18 @@ coverage: done
 
 # Global Capital — week of 2026-08-10
 
-*Synthesized from 6 dailies (Mon 08-10 through Sat 08-15) plus a review of
-the week's coverage-log, threads.yaml, upcoming.yaml, and
-capital-context.yaml records. This is a PARTIAL week — Sunday 08-16
-hasn't happened yet as of this run, per `/week`'s own "any convenient day
-works" allowance for a mid-week or near-week-end close. This version
-replaces the Thu-close (08-10–08-14) draft with the full Mon–Sat
-picture.*
+*Synthesized from 7 dailies (2026-08-10 through 2026-08-16) — the full
+Mon-Sun week — plus a review of the week's coverage-log, threads.yaml,
+upcoming.yaml, and capital-context.yaml records. One data-quality note
+worth carrying forward rather than burying: no `/daily` ran live on
+Sunday 08-16 — the collector buffer for that digest-day stops at
+2026-08-16T00:21Z (20:21 ET Saturday), before the digest-day even opens,
+so Sunday's digest was reconstructed whole-cloth on 08-17 from targeted
+primary-source verification rather than written same-day off a live
+collect. The one real finding it produced held up under that
+reconstruction. This version replaces the Sat-close (08-10–08-15) draft,
+which explicitly marked itself a PARTIAL week awaiting Sunday, with the
+complete Mon–Sun picture.*
 
 ## The week's throughline
 
@@ -79,7 +84,20 @@ resolved cleanly and on schedule this week: CoreWeave's Q2 print, and
 Berkshire's Q2 13F, read straight off SEC EDGAR rather than any outlet's
 framing, showing the Alphabet stake nearly doubling in both share count
 and value while the rest of the portfolio rotated toward housing and away
-from a handful of consumer names.
+from a handful of consumer names. Then, Sunday — a day with no equity
+trading anywhere, and therefore no price to move — delivered the week's
+last and, in a real sense, most concrete fact of all: Kpler ship-tracking
+data reported to Reuters showed Strait of Hormuz commodity transits
+falling to five vessels on Saturday and *zero* on Sunday, against 31 the
+prior weekend and a pre-war norm above 130 a day. Everything this map
+priced about Hormuz all week — Brent's level, the rhetoric, the unsigned
+deal — was inferred from the price side of the question. This is the
+first time the physical volume underneath it has been measured directly,
+and it says the constraint is closer to an actual closure than to a
+premium on lanes that are still functioning. Friday's 5%+ Brent move
+priced an "indefinite blockade" as a claim; Sunday's zero print is
+evidence that, for at least one weekend, the blockade was already
+operating in practice.
 
 ## By radar question
 
@@ -128,75 +146,96 @@ $92.54 (Tuesday) back down to $87 (Wednesday/Thursday) on OPEC's fourth
 straight demand-growth downgrade and a 17.4M-barrel US inventory build —
 moving opposite to the week's escalating Iran rhetoric on every test —
 before reversing sharply Friday to close the week up more than 5% on
-blockade rhetoric rather than any physical incident, the first time all
-week the pattern flipped. July CPI cooled to 3.4% (Tuesday), cutting the
-market's implied September-hike odds from 48% toward ~38-42% same-day and
-down further to ~30.4% by Thursday; Friday's weak retail-sales and
-consumer-sentiment prints add two more data points to the same cooling
-side of the ledger, not yet folded into `capital-context.yaml`'s standing
-snapshot. Meanwhile the Treasury's own 30-year auction cleared at 5.216%
-on Thursday (highest since 2001, the third 2026 auction above 5%) and the
-30-year yield ticked to 5.26% by Friday's close — near-term Fed risk
-easing while the government's own long-run borrowing cost keeps getting
-harder, two distinct pressures moving in opposite directions all week. On
-wealth and power: the week's other real anchor was Berkshire's Q2 13F,
-read directly from EDGAR's XML holdings table — the Alphabet position
-grew from 57.8M to 106.0M combined shares (+83%) and from $16.6B to
-$37.8B in value (+127%), with no other AI-adjacent equity name anywhere
-in the 29-issuer portfolio, sitting alongside a real rotation elsewhere
-(Constellation Brands exited entirely, Bank of America/Capital
-One/Kroger trimmed, Delta grown sharply, a token new D.R. Horton
-position) — Buffett's own AI-capex conviction concentrated further,
-unaccompanied by any broader AI bet. Sovereign capital moved on the same
-axis from a different direction: NEOM's Oxagon — Saudi Arabia's
-once-stalled megacity project — got its first hard construction timeline
-for its pivot into an AI data-center campus (1.5GW, groundbreaking within
-2-3 months, $5B initial DataVolt investment), direct evidence that PIF's
-retreat from "The Line" is landing concretely as AI-infrastructure spend,
-not just a reported intention.
+blockade rhetoric rather than any physical incident. Sunday then supplied
+the week's sharpest turn of all on this same question: the zero-transit
+Hormuz print (see the throughline above) is the first hard evidence this
+map has had that the "premium on functioning lanes" framing it has used
+all month may already be the wrong frame — a standstill prices
+differently than a risk premium, because a standstill's costs (freight
+rerouting around the Cape of Good Hope, tied-up tonnage, insurance
+non-renewals rather than higher quotes) accrue continuously and do not
+unwind on a single de-escalation headline the way a quoted premium does.
+July CPI cooled to 3.4% (Tuesday), cutting the market's implied
+September-hike odds from 48% toward ~38-42% same-day and down further to
+~30.4% by Thursday; Friday's weak retail-sales and consumer-sentiment
+prints add two more data points to the same cooling side of the ledger,
+not yet folded into `capital-context.yaml`'s standing snapshot. Meanwhile
+the Treasury's own 30-year auction cleared at 5.216% on Thursday (highest
+since 2001, the third 2026 auction above 5%) and the 30-year yield ticked
+to 5.26% by Friday's close — near-term Fed risk easing while the
+government's own long-run borrowing cost keeps getting harder, two
+distinct pressures moving in opposite directions all week. On wealth and
+power: the week's other real anchor was Berkshire's Q2 13F, read directly
+from EDGAR's XML holdings table — the Alphabet position grew from 57.8M
+to 106.0M combined shares (+83%) and from $16.6B to $37.8B in value
+(+127%), with no other AI-adjacent equity name anywhere in the 29-issuer
+portfolio, sitting alongside a real rotation elsewhere (Constellation
+Brands exited entirely, Bank of America/Capital One/Kroger trimmed, Delta
+grown sharply, a token new D.R. Horton position) — Buffett's own AI-capex
+conviction concentrated further, unaccompanied by any broader AI bet.
+Sovereign capital moved on the same axis from a different direction:
+NEOM's Oxagon — Saudi Arabia's once-stalled megacity project — got its
+first hard construction timeline for its pivot into an AI data-center
+campus (1.5GW, groundbreaking within 2-3 months, $5B initial DataVolt
+investment), direct evidence that PIF's retreat from "The Line" is
+landing concretely as AI-infrastructure spend, not just a reported
+intention.
 
 **A standing open item resolved this week, worth closing out explicitly.**
 The Axios Pro Rata access gap this note has carried unresolved across
 five-plus coverage-critic passes since 08-03 — the domain-wide Cloudflare
 block that survived every plain-fetch and Googlebot-UA attempt — is now
-FIXED. Ben approved a workaround 08-14 ("yes to find workaround"); the
-fix (committed 08-15, `sources/benchmarks.yaml`) routes the outlet
-through the r.jina.ai reader proxy, the same class of fix already proven
-on MobiHealthNews and Behavioral Health Business, using the newsletter's
-real persistent URL rather than a guessed path. It has one confirmed live
-test so far — the 08-14 critic pass read the full dated issue in full,
-logged explicitly in `coverage-log.md` as "access fix confirmed working"
-— and no second test yet, since the 08-15 digest's own critic pass hadn't
-run as of this synthesis (status: building). Worth a one-time re-check
-next week before calling it permanently closed, per this same file's own
-note on the escalation pattern across all four now-fixed benchmarks.
+FIXED for current-issue reads. Ben approved a workaround 08-14 ("yes to
+find workaround"); the fix (committed 08-15, `sources/benchmarks.yaml`)
+routes the outlet through the r.jina.ai reader proxy, the same class of
+fix already proven on MobiHealthNews and Behavioral Health Business,
+using the newsletter's real persistent URL rather than a guessed path.
+It has now had two live tests, with a real limitation surfacing on the
+second: the 08-14 critic pass read the full dated issue in full, logged
+in `coverage-log.md` as "access fix confirmed working" — but the 08-16
+reconstruction pass discovered the proxy route serves **only the current
+edition**. Three separate attempts at a back issue (a guessed `/archive`
+path, a `?page=` parameter, a dated web search) all failed on Saturday
+08-15's edition, which the outlet's own confirmed Mon–Sat schedule says
+existed. The honest read: the block that made Axios Pro Rata entirely
+unreachable is fixed; a second, narrower gap (no back-issue access) is
+now confirmed and open, and is a different, smaller problem than the one
+that was solved.
 
 **Working-note candidate, updated.** The mechanism this note has tracked
 since 08-04 (hyperscaler guarantees, then a debt-vs-equity split visible
 on single balance sheets, then a quantified loss number at SoftBank, then
-a named critic) reaches its sharpest point yet this week: the platform's
+a named critic) reached its sharpest point yet by Friday — the platform's
 own architect started visibly shrinking its exposure (Nvidia's OpenAI
 Ohio guarantee cut more than half) the same day the market got its first
 aggregate dollar figure on the whole shadow-guarantee category ($70B,
 Bloomberg) with three named credit-desk voices — not just one outspoken
-short-seller — now on record with the same concern. That's the two things
-this note has been asking for since 08-13: whether Burry's critique would
-get picked up by anyone with institutional credibility (yes, three
-sources at once), and whether the guarantee mechanism itself would start
-showing strain from the inside (yes — Nvidia cutting its own guarantee is
-a different kind of signal than an outside critic naming it). Still
-unmoved: credit spreads and the VIX, both flat-to-lower all week, so the
-skepticism remains ahead of the pricing rather than confirmed by it.
-Track next: whether the $70B shadow-guarantee figure gets a second
-independent estimate (a single-source Bloomberg number is not yet a
-consensus one); whether Nvidia's guarantee cut is the first of several
-similar retrenchments across the platform's other counterparties; and
-whether credit spreads finally move once a rating agency, not just a
-credit-desk quote, puts a number on the aggregated exposure.
+short-seller — now on record with the same concern. Sunday then reframed
+the week's *other* live risk (Hormuz) in the same direction: from a
+priced-in premium to a measured standstill, the same shift from "market
+believes" to "something is directly confirmed" that the AI-debt story ran
+through over the preceding five days. Two questions this note has been
+asking since 08-13 both got real answers this week: whether Burry's
+critique would get picked up by anyone with institutional credibility
+(yes, three sources at once), and whether the guarantee mechanism itself
+would start showing strain from the inside (yes — Nvidia cutting its own
+guarantee is a different kind of signal than an outside critic naming
+it). Still unmoved: credit spreads and the VIX, both flat-to-lower all
+week, so the skepticism remains ahead of the pricing rather than
+confirmed by it. Track next: whether the $70B shadow-guarantee figure
+gets a second independent estimate (a single-source Bloomberg number is
+not yet a consensus one); whether Nvidia's guarantee cut is the first of
+several similar retrenchments across the platform's other counterparties
+(the actual signed guarantee, due 08-17, is the first real test); whether
+credit spreads finally move once a rating agency, not just a credit-desk
+quote, puts a number on the aggregated exposure; and, on the Hormuz side,
+whether the zero-transit read holds through the coming week or reverts as
+a two-day artifact — the interp sidecar for 08-16 frames both as live
+scenarios and neither as resolved.
 
 ### Q2 — Where is the money going?
 
-**What moved.** This is the first week this note has been written
+**What moved.** This is the first full week this note has been written
 primarily from the global-capital lens's own daily data rather than
 absorbed secondhand from the ai/mental-health lenses — and a full week of
 it shows capital landing at every layer of the AI stack simultaneously,
@@ -211,28 +250,33 @@ stake (Wed/Thu) — debt at the vendor-equity layer for the first time this
 map has recorded. At the lab layer, Anthropic ran three simultaneous
 capital tracks in one week: investors reportedly targeting a $2T+ October
 IPO valuation (more than double the $965B print this thread has carried
-since May), separate advanced talks to acquire Israeli startup Decart for
-~$6B (still an unresolved buyer-identity conflict with an earlier report
-naming SpaceX — see the scorecard below), and by Friday the IPO chatter
-itself firmed into a concrete September Nasdaq target with investor
-meetings already underway. Databricks closed a $5B round at $190B
-(Coatue, Blackstone, MGX, T. Rowe Price, Sixth Street), on a disclosed
-$7B run-rate revenue base rather than an investor-expectation number.
-SpaceX's own ~$60B all-stock Cursor acquisition closed Thursday, roughly
-17 days ahead of its 08-31 placeholder due date. At the landlord/
-real-estate layer, a single-company Vantage Data Centers IPO lead
-(~$100B valuation, Wed morning) turned out to be a three-company pattern
-by Wednesday afternoon (CyrusOne weighing a 2027 debut, Switch exploring
-an ~$80B IPO) — a sector-wide "revival in public listings," per Data
-Center Dynamics, not a one-off — and Riot Platforms' data-center
-subsidiary separately drew a $573M delayed-draw loan (Fri, via SEC EDGAR
-direct) to fund the Rockdale buildout underlying its own $9.1B, 20-year
-Anthropic compute deal. Silver Lake moved on Workday, a non-AI enterprise
-name, for ~$43-51B — the week's one large capital-formation story with no
-AI angle at all, logged as real but off the AI-capital axis. And
-sovereign capital kept building the physical layer underneath all of it:
-NEOM's Oxagon got its Q7-noted first construction timeline (above), the
-same signal from Riyadh already seen at Saudi PIF's other AI bets.
+since May), separate advanced talks to acquire Israeli startup Decart —
+reported at ~$6B mid-week and firming to ~$7B by Saturday after
+outbidding Nvidia, with Decart's founders and lead investor Sequoia
+preferring Anthropic's stock over Nvidia's reportedly higher cash bid —
+and by Friday the IPO chatter itself firmed into a concrete September
+Nasdaq target with investor meetings already underway. Databricks closed
+a $5B round at $190B (Coatue, Blackstone, MGX, T. Rowe Price, Sixth
+Street), on a disclosed $7B run-rate revenue base rather than an
+investor-expectation number. SpaceX's own ~$60B all-stock Cursor
+acquisition closed Thursday, roughly 17 days ahead of its 08-31
+placeholder due date. At the landlord/real-estate layer, a
+single-company Vantage Data Centers IPO lead (~$100B valuation, Wed
+morning) turned out to be a three-company pattern by Wednesday afternoon
+(CyrusOne weighing a 2027 debut, Switch exploring an ~$80B IPO) — a
+sector-wide "revival in public listings," per Data Center Dynamics, not a
+one-off — and Riot Platforms' data-center subsidiary separately drew a
+$573M delayed-draw loan (Fri, via SEC EDGAR direct) to fund the Rockdale
+buildout underlying its own $9.1B, 20-year Anthropic compute deal. Silver
+Lake moved on Workday, a non-AI enterprise name, for ~$43-51B — the
+week's one large capital-formation story with no AI angle at all, logged
+as real but off the AI-capital axis. And sovereign capital kept building
+the physical layer underneath all of it: NEOM's Oxagon got its Q7-noted
+first construction timeline (above), the same signal from Riyadh already
+seen at Saudi PIF's other AI bets. Sunday itself carried no deals-and-
+filings content at all — the digest's own "Deals & filings" section reads
+"Nothing in-window," an honest zero rather than a gap, for the one day
+this week with no trading and effectively no live collector coverage.
 
 **Working-note candidate.** The volume this week makes the destination
 question answerable at a level of specificity this note hasn't had
@@ -241,29 +285,39 @@ equity stakes, lab valuations (both IPO-track and M&A-track), and
 landlord-level real estate all at once, with debt now visibly present at
 every one of those layers rather than concentrated in any single
 instrument — read alongside Q7's credit-risk framing of the same
-mechanism. Track next: whether the Decart buyer-identity conflict
-resolves by its 08-17 due date (still open — see scorecard); and whether
-the data-center-landlord IPO wave, offered as a thread candidate twice
-this week (08-13 morning and finalize) and dropped once per the
+mechanism. The Decart deal specifically closes a loop worth naming on its
+own: a pre-IPO lab paying with its own stock, and a sophisticated seller
+(Sequoia) accepting that stock over a rival's cash, is a market test of
+Anthropic's equity as acquisition currency conducted weeks before it
+would list — a harder test than investor demand at a funding round, since
+it's a seller settling on that valuation as a medium of exchange rather
+than a backer taking a position. Track next: whether the Decart deal
+actually signs by its (now past-week) due date — see the scorecard below,
+where the buyer-identity conflict was still open at Saturday's close; and
+whether the data-center-landlord IPO wave, offered as a thread candidate
+twice this week (08-13 morning and finalize) and dropped once per the
 reappearance rule when 08-14 produced no fourth data point, earns its own
-thread if a fourth landlord-IPO story lands before the next /week.
+thread if a fourth landlord-IPO story lands before the next /week — none
+did in the two remaining days of this week.
 
 ## Threads
 
 **Moved (fresh hits this week):**
-- `red-sea-oil-shock` — moved on every single digest-day: Trump's
-  reparations counter-demand and Brent's steepest one-day jump since the
-  war began (Mon); a second straight sharp Brent rise plus the Bab
-  al-Mandeb strike that killed six, the first shipping fatalities since
-  the war began (Tue); the Hormuz deal slipping past its due window while
-  Saudi Arabia structurally rerouted its exports around the Red Sea
+- `red-sea-oil-shock` — moved on every single digest-day, including
+  Sunday: Trump's reparations counter-demand and Brent's steepest one-day
+  jump since the war began (Mon); a second straight sharp Brent rise plus
+  the Bab al-Mandeb strike that killed six, the first shipping fatalities
+  since the war began (Tue); the Hormuz deal slipping past its due window
+  while Saudi Arabia structurally rerouted its exports around the Red Sea
   entirely (Wed); Iran's flat rejection of Trump's "total control" claim,
   oil falling anyway on OPEC/inventory fundamentals, a second Houthi
   strike on the same Aramco refinery, and an overnight drone hit on two
-  UAE-flagged tankers with the UAE directly blaming Iran (Thu); and
-  Friday's pattern-break — Brent closing the week up 5%+ on blockade
-  rhetoric, not any incident, plus a weekend partial Iran-Oman shipping
-  agreement that settles nothing (Fri/Sat).
+  UAE-flagged tankers with the UAE directly blaming Iran (Thu); Friday's
+  pattern-break — Brent closing the week up 5%+ on blockade rhetoric, not
+  any incident, plus a weekend partial Iran-Oman shipping agreement that
+  settles nothing (Fri/Sat); and Sunday's zero-transit ship-tracking
+  data, this thread's first volume-based (rather than price- or
+  rhetoric-based) evidence.
 - `ai-buildout-debt-risk` — promoted to a full thread this week (Mon/Tue)
   and immediately became the week's dominant capital-markets story:
   CoreWeave's loan and Q2 print, Lambda's circular loan and first-ever
@@ -292,9 +346,10 @@ thread if a fourth landlord-IPO story lands before the next /week.
   fresh round of planned layoffs even as AI capex keeps climbing (Thu).
 - `anthropic-ipo-timing` — investors reportedly targeting a $2 trillion+
   October IPO valuation, plus separate advanced talks to acquire Israeli
-  startup Decart for ~$6B (Thu), then the timeline itself firming from
-  chatter into a concrete September Nasdaq target with investor meetings
-  underway (Fri).
+  startup Decart for ~$6B (Thu); the timeline itself firming from chatter
+  into a concrete September Nasdaq target with investor meetings underway
+  (Fri); and the Decart bid firming to ~$7B after outbidding Nvidia, a
+  late-Friday catch published inside the 08-15 digest-day (Sat).
 - `cxmt-memory-ipo` — overtook Tencent to become China's most valuable
   listed company, 17 days after its own IPO (Thu).
 - `berkshire-ai-capital-stance` — Q2 13F filed exactly on the SEC
@@ -303,13 +358,17 @@ thread if a fourth landlord-IPO story lands before the next /week.
 - `pif-ai-buildout` — NEOM's Oxagon AI-data-center pivot got its first
   hard construction timeline (Fri), its first fresh hit since 08-04.
 
-**Resolved this week:** none flipped to `status: resolved` — but three
+**Resolved this week:** none flipped to `status: resolved` — but four
 threads had a standing core watch item definitively answered without
 closing the broader thread: `coreweave-backlog-bet`'s open debt-cost flag
 (closed Tue), `berkshire-ai-capital-stance`'s core Alphabet-stake question
-(closed Thu), and `nvidia-vendor-financing`'s own OpenAI-Ohio guarantee
-size question (its first hard resolution, Fri — the number moved
-$250B→up to $750B in combined talks→under $120B for phase one alone).
+(closed Thu), `nvidia-vendor-financing`'s own OpenAI-Ohio guarantee size
+question (its first hard resolution, Fri — the number moved
+$250B→up to $750B in combined talks→under $120B for phase one alone —
+though the actual signing itself is still pending, see the scorecard),
+and `cxmt-memory-ipo`'s separate `cxmt-congress-letters` expectation,
+which passed silently this week (see below) — the congressional-letter
+threat never materialized while the stock kept climbing regardless.
 
 ## ⏳ Expectations scorecard
 
@@ -318,43 +377,68 @@ $250B→up to $750B in combined talks→under $120B for phase one alone).
 | `coreweave-q2-earnings` | `coreweave-backlog-bet` | ✅ **hit**, resolved 08-12 (reported after close 08-11) — revenue $2.575B and adjusted EPS -$1.03 both beat consensus; GAAP net loss widened to $626M as net interest expense climbed to $640M from $267M a year earlier. |
 | `berkshire-q2-2026-13f` | `berkshire-ai-capital-stance` | ✅ **hit**, resolved 08-14, filed exactly on the SEC's own deadline (16:05 ET) — see Q7 above for the full read. |
 | `spacex-cursor-close` | `spacexai-public-megacap` | ✅ **hit**, resolved 08-14, ~17 days ahead of its 08-31 due date — SpaceX completed the $60B all-stock Cursor (Anysphere) acquisition. |
-| `qwen38-max-open-weights` | `china-stack-independence` (ai lens) | Checked and excluded — hit 08-12, but the owning thread is tagged `lens: ai`, not global-capital's. |
-| `iran-oman-hormuz-deal-signing` | `iran-conflict-widening` (world-news lens) | ⚠️ **slipped** 08-12 → new due 08-19. This weekend's partial "shipping map" agreement (Sat) is real but does not satisfy the claim's own terms (60-day no-toll window, dual transit lanes, mine-clearing), so it stays **pending**, not a hit. Thread-owned by world-news, tracked here because it directly drives the oil moves throughout this note. |
+| `cxmt-congress-letters` | `cxmt-memory-ipo` | ⚪ **passed-silent**, due 08-07 (before this week opened) but only marked resolved 08-11, inside this week's own ledger — the bipartisan CXMT national-security letters reported as "coming days" on 07-28 never materialized with actual signatories. A silent date on a genuine national-security-policy thread, not a hit but worth naming rather than letting it drop unmentioned. |
+| `qwen38-max-open-weights` | `china-stack-independence` (ai lens) | Checked and excluded — hit 08-12, but the owning thread is tagged `lens: ai`, not global-capital's. (Carried forward from last week's scorecard for continuity; not re-checked this week.) |
+| `iran-oman-hormuz-deal-signing` | `iran-conflict-widening` (world-news lens) | ⚠️ **pending**, slipped 08-12 → 08-19 before this week opened, no further movement this week. This weekend's partial "shipping map" agreement (Sat) is real but does not satisfy the claim's own terms (60-day no-toll window, dual transit lanes, mine-clearing), and Sunday's zero-transit data (above) is new evidence the underlying standoff is deepening rather than resolving — stays **pending**, not a hit. Thread-owned by world-news, tracked here because it directly drives the oil moves throughout this note. |
 
 Three hits landed cleanly in this lens's own ledger this week (CoreWeave,
-Berkshire, SpaceX/Cursor), one adjacent expectation slipped (the Hormuz
-signing — owned by world-news but load-bearing for this lens's oil read),
-and one hit was checked and correctly excluded as another lens's own
-thread. **Two new expectations opened this week, both still pending, due
-just outside this window:** `decart-acquisition-close` (due 08-17, 2 days
-out at Saturday's close — still a live buyer conflict between an 08-09
-SpaceX report and the 08-13 Anthropic report, neither confirmed by either
-company) and `nvidia-openai-guarantee-signing` (due 08-17, logged
-Friday — a deal could be signed "as soon as this weekend" per WSJ, on the
-now-narrowed under-$120B phase-one guarantee). Also newly logged this
-week, due well outside this window: `pif-oxagon-groundbreaking` (due
-11-05) and `pif-oxagon-financing-close` (due 2027-02-05), both opened
-Friday off the NEOM construction-timeline story above.
+Berkshire, SpaceX/Cursor), one passed-silent resolution closed out a
+quiet national-security thread (CXMT congressional letters), one hit was
+checked and correctly excluded as another lens's own thread, and one
+adjacent expectation stayed pending (the Hormuz signing — owned by
+world-news but load-bearing for this lens's oil read). **Two new
+expectations opened this week, both still pending at Saturday's close and
+due just outside this window:** `decart-acquisition-close` (due 08-17, 2
+days out — still a live buyer conflict between an 08-09 SpaceX report and
+the 08-13 Anthropic report at the week's start, though by Saturday the
+price had firmed to ~$7B and the Anthropic side looked materially more
+likely per the Q2 section above) and `nvidia-openai-guarantee-signing`
+(due 08-17, logged Friday off the narrowed under-$120B guarantee, with
+WSJ reporting a deal "could be signed as soon as this weekend"). Also
+newly logged this week, due well outside this window: `pif-oxagon-
+groundbreaking` (due 11-05) and `pif-oxagon-financing-close` (due
+2027-02-05), both opened Friday off the NEOM construction-timeline story
+above. **For continuity, since both resolved just past this window and
+the numbers are worth having on record:** as of this writing (08-18),
+`nvidia-openai-guarantee-signing` has since **hit** on 08-17 — NVIDIA's
+own 8-K sets the actual cap at $105 billion, structured as a
+residual-value guarantee on ~4.25GW of leased capacity (not a blanket
+project backstop), with OpenAI obligated to indemnify NVIDIA for any
+amount actually paid — confirming the "<$120B" read's direction and
+landing close to its magnitude. `decart-acquisition-close` has instead
+**slipped again**, past 08-17 to 09-04, still unresolved by either
+company. Six further pending expectations on this lens's ledger
+(`anthropic-ipo-public-flip`, `softbank-openai-bridge-matures`,
+`oracle-q1-fy27-earnings`, `softbank-roze-ipo`,
+`softbank-abb-robotics-close`, `nvidia-500b-financing-first-close`) saw
+no movement this week — all due September 2026 or later.
 
 ## 🍂 Decay review
 
 | slug | stale since | note |
 | --- | --- | --- |
-| `ai-trade-bear-turn` | 16d, `last_seen` 07-31 | Plausible reason for quiet: this thread's own scope is deliberately the *aggregate* market's verdict on the AI trade (index/tape breadth, Mag7-level moves), distinct from the circular-financing mechanics per Ben's own 07-27 ruling. This week's real AI-financing skepticism (Moody's, Jefferies, Burry, and Friday's $70B shadow-guarantee figure) landed entirely on the mechanics side (`ai-buildout-debt-risk`) while the equity tape itself stayed risk-on all week — SpaceX's stock recovery, CXMT's rally, Anthropic's $2T IPO chatter, Databricks' $190B round, the VIX falling to a 2026 low (14.25). That's a genuinely informative non-hit, not just silence: the credit-side skepticism hasn't spread to the equity tape yet. No proposal — informational only. |
-| `fidelity-buys-ai-labs` | 12d, `last_seen` 08-04 | Plausible reason for quiet: this thread's terms are narrowly scoped to Fidelity's own mutual-fund complex taking primary-market equity stakes in Anthropic/OpenAI — and this week's AI-lab capital news was IPO-track (Anthropic's $2T chatter, its firming September target) and M&A-track (the Decart talks), not a fresh primary funding round of the kind this thread specifically watches. Neither Anthropic nor OpenAI ran a new primary round this week for Fidelity to have joined. No proposal — informational only. |
+| `ai-trade-bear-turn` | 16d, `last_seen` 07-31 | Plausible reason for quiet: this thread's own scope is deliberately the *aggregate* market's verdict on the AI trade (index/tape breadth, Mag7-level moves), distinct from the circular-financing mechanics per Ben's own 07-27 ruling. This week's real AI-financing skepticism (Moody's, Jefferies, Burry, and Friday's $70B shadow-guarantee figure) landed entirely on the mechanics side (`ai-buildout-debt-risk`) while the equity tape itself stayed risk-on all week — SpaceX's stock recovery, CXMT's rally, Anthropic's $2T IPO chatter and firming Decart bid, Databricks' $190B round, the VIX falling to a 2026 low (14.25). That's a genuinely informative non-hit, not just silence: the credit-side skepticism hasn't spread to the equity tape yet, and it stayed that way through Sunday too. No proposal — informational only. |
+| `fidelity-buys-ai-labs` | 12d, `last_seen` 08-04 | Plausible reason for quiet: this thread's terms are narrowly scoped to Fidelity's own mutual-fund complex taking primary-market equity stakes in Anthropic/OpenAI — and this week's AI-lab capital news was IPO-track (Anthropic's $2T chatter, its firming September target) and M&A-track (the Decart deal), not a fresh primary funding round of the kind this thread specifically watches. Neither Anthropic nor OpenAI ran a new primary round this week for Fidelity to have joined. No proposal — informational only. |
 
 **Both threads' `last_seen` dates checked against this week's own timeline
 records, not assumed stale from the field alone** — neither had a hit
-this week that the ledger missed. 27 other global-capital threads
-reviewed alongside these two; none crossed the 10-day bar. **N=2 threads
-stale, nothing proposed.**
+this week that the ledger missed, including Sunday, whose one real
+finding (the Hormuz transit collapse) landed on `red-sea-oil-shock`, not
+either of these two. **17 other global-capital threads reviewed alongside
+these two; none crossed the 10-day bar. N=2 threads stale, nothing
+proposed.** (Correction to last week's digest: it stated "27 other"
+threads were reviewed, implying 29 lens threads total — the live count,
+checked directly against `threads.yaml` both now and as of that digest's
+own commit, is and was 19. The arithmetic error is corrected here rather
+than repeated; it did not change which threads were flagged.)
 
 ## 🔍 Near-miss audit
 
-Five critic passes ran this week, one per finalized digest-day (08-10
-through 08-14); the 08-15 digest's own critic pass hadn't run as of this
-synthesis (status: `building`, coverage: `pending`), so Friday/Saturday's
-coverage hasn't been benchmark-checked yet.
+Seven critic passes ran across this week's seven digest-days, though the
+last two ran on a compressed schedule after the 08-16 weekend gap: 08-10
+through 08-14 each had a same-cadence finalize pass the following day;
+08-15 was finalized and 08-16 reconstructed together on 08-17 after no
+`/daily` ran live over the weekend.
 
 - **08-10 (finalize, run 08-11):** No genuine miss within this lens.
   Moody's bank-vendor-dependence warning (08-09) was a real gap, found
@@ -375,11 +459,19 @@ coverage hasn't been benchmark-checked yet.
   This is the same shared-WebSearch-budget friction logged on 08-04,
   08-05, 08-06, and now again this week — a fifth-plus recurrence with no
   structural fix.
-- **08-13 (finalize, run 08-14):** No misses found against any of the
-  three reachable benchmarks (FT Unhedged, Bloomberg Technology, Money
-  Stuff — the last on vacation through 08-24). Axios Pro Rata blocked
-  again, logged explicitly as "recurred, not new" — this was still
-  BEFORE the fix landed.
+- **08-13 (finalize, run 08-14):** No misses found at the time against
+  any of the three reachable benchmarks (FT Unhedged, Bloomberg
+  Technology, Money Stuff). Axios Pro Rata blocked again, logged
+  explicitly as "recurred, not new" — this was still BEFORE the fix
+  landed. **Correction, found later and worth carrying here since 08-13
+  is `final` and will not be reopened:** the 08-17 critic pass, running a
+  broader date-verification sweep, found that OpenAI's annualized revenue
+  run-rate topping $40B (Bloomberg, 08-13) was never covered — material
+  to `anthropic-ipo-timing` and `frontier-lab-ipos`, both of which turn on
+  relative lab scale ahead of listing, and carried as a leak (Bloomberg
+  cites people familiar; OpenAI declined to comment) rather than a
+  disclosure. This is now a permanent gap on an already-closed digest-day,
+  not a fixed miss.
 - **08-14 (finalize, run 08-15):** One genuine miss found and fixed:
   Applied Materials' fiscal Q3 earnings (reported after close 08-13,
   record $9.12B revenue +25% YoY, guidance raise, driven explicitly by
@@ -389,19 +481,57 @@ coverage hasn't been benchmark-checked yet.
   global-capital watchlist** (critic-add, 08-15) as a semiconductor-
   capex-chain peer of Nvidia/TSMC/ASML. **Axios Pro Rata: access fix
   confirmed working** on this pass — full issue text returned, no
-  Cloudflare block, per `coverage-log.md`'s own entry (see Q7 above for
-  the full resolution writeup).
+  Cloudflare block. **A second miss, also found later and also
+  permanent:** Apollo chief economist Torsten Slok's estimate that the AI
+  buildout needs >$2T of debt through 2030 against <$1T of
+  investment-grade absorption capacity, with AI borrowing already >40% of
+  new long-term IG issuance (Forbes, 08-14) — the quantified version of
+  the very shadow-backstop story the 08-15 digest led with, which makes
+  the miss more pointed rather than less. Flagged with its own conflict
+  of interest attached: Apollo is itself a major private-credit manager,
+  and the gap it identifies is one its own business exists to fill.
+- **08-15 (finalize, run 08-15/08-17):** One genuine miss found and
+  fixed the same digest-day: FT Unhedged's "South Korea's inverse
+  correlation" (Kospi falling while the won strengthens) went uncovered —
+  Korea is not off-lens (`chip-hyperscaler-rotation` runs through SK
+  Hynix/Samsung memory, `apple-cxmt-senate-deadline` turns on Korean
+  supply), it simply wasn't looked for. Three of four benchmarks were
+  silent Saturday (only FT Unhedged published); that comparison carries
+  little information either way.
+- **08-16 (reconstructed 08-17):** No miss — the benchmark set was
+  genuinely empty for Sunday (FT Unhedged and Bloomberg Technology both
+  silent, Axios Pro Rata's Mon–Sat schedule makes Sunday its confirmed
+  day off, Money Stuff on vacation through 08-24), so the "we had, they
+  didn't" comparison (the Hormuz transit data) carries little diagnostic
+  value. Access findings worth keeping: the r.jina.ai proxy is now
+  domain-blocked entirely on fiercehealthcare.com (a hard 403, not rate
+  limiting — a mental-health-lens source, noted here since the same proxy
+  class is what fixed Axios Pro Rata); Bloomberg Technology's RSS feed
+  turned out to need only a plain `curl -L`, no proxy at all, simpler
+  than the 08-14 note recorded; and Axios Pro Rata's Saturday edition
+  stayed unreachable (three attempts, all failed) — confirmed as an
+  access gap, not a non-publication, per the same-day note above.
 
-**Pattern worth naming.** Two of this week's five real misses share a
-shape: a legitimate story sat one lens over (Maia 300/TSMC on 08-10,
-correctly in the ai-lens digest but read as a global-capital gap by the
-critic's own single-lens blind spot) or lacked a watchlist entity
-entirely (Applied Materials, 08-14) despite being a 6-outlet story this
-map's own world-news crawl had already caught. The Applied Materials case
-is the more actionable one — a semiconductor-capex-chain name missing
-from the watchlist is a structural gap, now closed; worth checking
-whether other named AI-equipment peers (ASML is already tracked; Lam
-Research and KLA are not) have the same blind spot.
+**Pattern worth naming, updated.** Three shapes recurred this week. The
+first is the single-lens blind spot already named last week (a real
+story sitting one lens over reads as a false miss to a critic that only
+reads its own digest — Maia 300/TSMC on 08-10) alongside the missing-
+watchlist-entity gap (Applied Materials on 08-14, now fixed). The second,
+new this week, is the **shared-tooling-budget** friction recurring for a
+fifth-plus time (08-12's WebSearch exhaustion) with still no structural
+fix proposed. The third is genuinely new to this week's record: **a
+miss found too late to fix.** Both 08-13's OpenAI-ARR gap and 08-14's
+Slok financing-gap estimate were caught by later critic passes running
+broader date-verification sweeps, but both digest-days were already
+`final` and, per this map's own discipline, were not reopened — meaning
+these are not misses that got fixed, they are misses that are now
+permanent parts of the record. Worth a structural question for Ben: is
+there a case for a bounded "late catch, folded into the following day's
+digest with its true event date" allowance (the pattern this map already
+uses for same-week late catches, e.g. Moody's 08-09 warning folded into
+08-10's finalize) even after the *original* digest-day has gone final,
+rather than losing the item to the record permanently once one day has
+turned over into the next?
 
 ## 🔄 Map deltas of the week
 
@@ -420,38 +550,45 @@ Research and KLA are not) have the same blind spot.
 - **Fri (08-14/08-15) — one new watchlist entity.** `+ org
   global-capital/"Applied Materials"` (critic-add) — see Near-miss audit
   above for the miss that produced it.
-- **A `last_seen`-field write-back gap, flagged last week, now confirmed
-  partially fixed and partially recurring on different threads.** Last
-  week's digest flagged `anthropic-ipo-timing` and `frontier-lab-ipos`
-  both showing a stale `last_seen` despite real, digest-documented hits —
-  both now correctly show `last_seen: 2026-08-15` in the live file, so
-  that specific fix held. But the same class of gap now shows up on three
-  *other* threads this week: `oracle-stargate-bet`'s `last_seen` is still
-  stuck at 08-08 despite its own real 08-12 (Oracle stock rally) and
-  08-13 (fresh layoffs) hits, both explicitly logged in those digests'
-  own "Map changes" sections; `coreweave-backlog-bet` and `intel-rescue`
-  both show `last_seen: 2026-08-10` despite each having a real, digest-
-  documented 08-11 hit (CoreWeave's Q2 print; Intel's offering upsize).
-  None of the three crossed this week's 10-day stale bar, so it didn't
-  distort the Decay Review above — but it's the same failure mode
-  recurring on a rotating set of threads rather than a one-off, worth a
-  structural look at the write-back step itself rather than a per-thread
-  patch each week.
-- **A ledger correction, still open.** `decart-acquisition-close`'s buyer
-  identity remains unresolved between an 08-09 SpaceX report and the
-  08-13 Anthropic report (Musk denying SpaceX's involvement) — neither
-  confirmed by either company as of Saturday's close; due 08-17.
+- **Sun (08-16) — no entity or thread adds; one thread gains a new data
+  type.** `red-sea-oil-shock` picked up its first volume-based (rather
+  than price- or rhetoric-based) evidence — the zero-transit Kpler data.
+  Consistent with this lens's own convention of not tagging states as
+  entities, the Hormuz item names no watchlist entity.
+- **A `last_seen`-field write-back gap, flagged last week, still open and
+  unchanged this week.** Three threads — `oracle-stargate-bet`
+  (stuck at 08-08 despite real 08-12/08-13 hits), `coreweave-backlog-bet`
+  and `intel-rescue` (both stuck at 08-10 despite real 08-11 hits) — carry
+  the same stale `last_seen` this week that last week's digest flagged.
+  None crossed this week's own 10-day stale bar either, so it still
+  hasn't distorted a Decay Review — but `oracle-stargate-bet`'s gap is now
+  8 days old on a thread with genuinely fresh content behind it, and will
+  cross the 10-day bar on its own stale `last_seen` before its actual
+  content does, if the write-back step isn't fixed before next week's
+  check. Worth escalating from "worth a look" to "worth fixing before it
+  produces a false decay flag."
+- **A ledger correction, now with real movement.** `decart-acquisition-
+  close`'s buyer identity — unresolved between an 08-09 SpaceX report and
+  the 08-13 Anthropic report as of last week's close — resolved in
+  substance if not yet in the ledger: Calcalist reported Saturday that
+  Anthropic outbid Nvidia (not SpaceX) for Decart, with Decart's founders
+  and Sequoia preferring Anthropic's stock consideration over a higher
+  Nvidia cash bid, firming the price to ~$7B. The expectation itself
+  stays `pending` (see scorecard) since neither company has confirmed,
+  but the buyer question this map has carried since 08-09 has a clear
+  favorite for the first time.
 - **Thread candidates offered, still unanswered.** Two candidates from
   08-12's digest — sovereign-wealth-fund AI investment broadening past
   Gulf money (South Korea's ~$14B account) as its own thread or a fold
   into `pif-ai-buildout`; and promoting Fed policy under Warsh to its own
   thread given two straight `sev=major` macro prints with nowhere to
   live but `capital-context.yaml`'s standing snapshot — neither was
-  re-offered or answered in the rest of this week's digests. The
-  data-center-landlord/REIT candidate (Vantage/CyrusOne/Switch) was
-  offered twice (08-13 morning and finalize) and dropped per the
-  reappearance rule when 08-14 produced no further data point — see Q2
-  above for why it may still be worth a fourth-data-point re-check.
+  re-offered or answered in the rest of this week's digests, including
+  the two closing days. The data-center-landlord/REIT candidate
+  (Vantage/CyrusOne/Switch) was offered twice (08-13 morning and
+  finalize) and dropped per the reappearance rule when 08-14 produced no
+  further data point; no fourth data point appeared 08-15 or 08-16
+  either, so it stays dropped as of this close — see Q2 above.
 
 ---
 This week is when AI-buildout financing turned from a story about equity
@@ -463,11 +600,14 @@ $70 billion number on off-balance-sheet AI guarantees with Moody's,
 DoubleLine and CreditSights all naming the concern Michael Burry raised
 alone two days earlier. Iran's war kept escalating while oil kept falling
 on fundamentals for four straight days, then broke that pattern on Friday
-to close the week up more than 5% on blockade rhetoric alone. And the
-week closed exactly where two long-tracked expectations said it would —
+to close the week up more than 5% on blockade rhetoric alone — and on
+Sunday, with every market in the world closed, ship-tracking data
+confirmed the blockade wasn't just rhetoric: Hormuz transits fell to zero
+for the first time this map has measured them directly. And the week
+closed exactly where two long-tracked expectations said it would —
 CoreWeave's Q2 print and Berkshire's Q2 13F both landed on schedule, the
 latter confirming Buffett's AI conviction concentrated further in
 Alphabet alone — while SpaceX's first public earnings, Anthropic's firmed
-September IPO date, and NEOM's first AI-campus construction timeline all
-landed the same week as reminders that capital keeps forming faster than
-anyone can fully price its risk.
+September IPO date and firming Decart bid, and NEOM's first AI-campus
+construction timeline all landed the same week as reminders that capital
+keeps forming faster than anyone can fully price its risk.
