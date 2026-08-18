@@ -135,6 +135,23 @@ _PROVENANCE_MARKER = re.compile(
 )
 _CODE_SPAN = re.compile(r"`([^`]+)`")
 _HTML_CODE_SPAN = re.compile(r"<code>([^<]+)</code>")
+# `.+?` (not `[^*]+`) on the bold pass — see _md_html()'s docstring below
+# for the exact failure this avoids (a nested single-asterisk italic
+# silently breaks a `[^*]+`-based bold match). re.DOTALL so `.` also
+# matches the literal newline a bold span can straddle when its source
+# .md file word-wraps mid-phrase — found 2026-08-18 on
+# artifacts/threads/tsmc-capacity-race.md's un-bulleted 08-04 entry:
+# "**The actual fix, and the real\ngap:**" (the wrap point is the source
+# file's own line break, not a paragraph break) silently failed to
+# convert without it, while an earlier bold span in the SAME block that
+# happened not to straddle a wrap converted fine — which is what made
+# this one easy to miss on a first pass. ITALIC keeps its `[^*\n]+`
+# newline exclusion deliberately: unlike bold, a single `*` is common
+# enough elsewhere (and easy enough to leave truly unpaired across a
+# paragraph break) that letting it cross lines risks pairing two
+# unrelated markers instead of catching a real wrapped span.
+_MD_BOLD = re.compile(r"\*\*(.+?)\*\*", re.DOTALL)
+_MD_ITALIC = re.compile(r"(?<!\*)\*([^*\n]+)\*(?!\*)")
 _SLUG_TITLE_CACHE = None
 
 
@@ -238,10 +255,20 @@ def _deep_clean_reader_facing(value, html_safe=False):
     html_safe defaults False too and is threaded through recursion only
     for keys in `_HTML_SAFE_KEYS` — everything else stays a plain-text
     unwrap even if a `<code>` tag somehow shows up somewhere unexpected.
+
+    A fourth leak, same shape, found 2026-08-18: a `**`/`*` markdown
+    emphasis marker, from curated prose that assumed a markdown renderer
+    downstream (the front-page throughline / lens gist — see
+    _strip_md_emphasis()'s docstring). Skipped for `html_safe` keys —
+    those already arrived as real HTML from kestrel's md_html() before
+    this sweep runs, so stripping `*`/`**` out of them would corrupt
+    legitimate markup rather than clean anything.
     """
     if isinstance(value, str):
         if "⟨" in value or "`" in value or "<code>" in value:
-            return clean_reader_facing_body(value, linkify=False, html_safe=html_safe)
+            value = clean_reader_facing_body(value, linkify=False, html_safe=html_safe)
+        if not html_safe and ("**" in value or "*" in value):
+            value = _strip_md_emphasis(value)
         return value
     if isinstance(value, dict):
         return {k: _deep_clean_reader_facing(v, html_safe=(k in _HTML_SAFE_KEYS))
@@ -316,6 +343,101 @@ def _source_domain(url):
     return host[4:] if host.startswith("www.") else host
 
 
+def _md_html(text):
+    """Local copy of kestrel's render_read.md_html(), with one regex fixed.
+
+    kestrel's own bold pattern is `\\*\\*([^*]+)\\*\\*` — a character class
+    that EXCLUDES asterisks entirely, so it cannot match across a nested
+    single-asterisk italic span. `**A ... *knaithe* ... names**` (a real
+    entry, artifacts/threads/china-stack-independence.md) silently fails
+    to convert at all: the whole bold span falls through as literal text
+    with its asterisks intact. `.+?` (non-greedy, any char up to the
+    nearest `**`) fixes it — confirmed 2026-08-18 by reproducing both
+    against the actual failing string.
+
+    This is a real bug in the shared function, not something introduced
+    here, and it predates this session — but kestrel is this repo's engine
+    and out of its write zone (project memory: kestrel read-only). Filed
+    upstream as a dev brief; duplicated locally, with this docstring
+    pointing at why, so build_stories() doesn't ship a known-wrong
+    regex while waiting on it. Swept the rest of the live site for the
+    same failure signature (entities/claims/news pages, which already
+    used the real md_html()) and found none — narrow blast radius, but
+    real wherever a bullet nests bold around italic.
+    """
+    from render_read import esc  # noqa: E402 — only needed here, not at module scope
+    t = esc(text)
+    t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
+    t = _MD_BOLD.sub(r"<strong>\1</strong>", t)
+    t = _MD_ITALIC.sub(r"<em>\1</em>", t)
+    t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
+    return t
+
+
+def _strip_md_emphasis(text):
+    """Drop **bold**/*italic* markers, keep the text underneath — for the
+    ONE place in the public JSON payload where they leak in from curated
+    prose rather than getting converted: the front-page throughline / lens
+    gist. kestrel's own parse_front()/parse_digest() (render_read.py) pull
+    that text straight out of a digest's '## Today's throughline' section
+    with no markdown handling at all — parse_front's own docstring: "Bullets
+    are deliberately NOT parsed here." Every consumer of this payload
+    treats every non-`.html` string as plain text, output via Hugo's
+    auto-escaped `{{ . }}` (this file's own _deep_clean_reader_facing
+    docstring: "nothing in this payload is markdown-rendered") — so a
+    stray ** or * reaching the page is a rendering bug, not intentional
+    formatting. Found 2026-08-18 on /news/mental-health/ and /news/ai/'s
+    briefing-gist, and on an interpretation page (interpretations are
+    built from this same payload's items) — chasing the story-body leak
+    into a second, unrelated field that goes through neither
+    clean_reader_facing_body nor _md_html.
+
+    A THIRD instance, same day: `.items[].title`. kestrel's parse_digest()
+    extracts a bullet's bold lead phrase with `re.match(r"\*\*([^*]+)\*\*",
+    text)` — `re.match` anchors at position 0, so a bullet starting with an
+    emoji flag before its bold phrase ("🕰 **CAUGHT LATE — ...**",
+    "⚠️ **STILL UNVERIFIED — ...**") never matches at all, and the code
+    falls back to `text[:80]` — the raw, MARKDOWN-INTACT, mid-sentence-
+    truncated text. Truncation means the closing `**` is often past
+    character 80, so the leading `**` this fallback leaves behind has no
+    partner anywhere in the string — the paired regexes above are no-ops
+    on it. The line below is the backstop: no legitimate string in this
+    corpus carries a literal `**` (verified by grep across every daily
+    digest, not assumed — this repo's own established bar for this class
+    of fix), so an unpaired one left over is unambiguously this bug, not
+    content, and dropping it outright is safe."""
+    text = _MD_BOLD.sub(r"\1", text)
+    text = _MD_ITALIC.sub(r"\1", text)
+    text = text.replace("**", "")
+    return text
+
+
+def _timeline_block_html(rest):
+    """Convert a raw timeline block's bullet markdown into real HTML.
+
+    Found 2026-08-18: build_stories() was handing raw, un-rendered markdown
+    straight to clean_reader_facing_body(html_safe=True) and the template
+    injects the result via Hugo's safeHTML — so every `**bold**`, `*em*` and
+    `[label](url)` in a story body was showing up on the live site as
+    literal asterisks and bracket text, never converted. render_read.py's
+    own parse_timeline() (the internal read page's equivalent path) already
+    does this correctly — per-bullet md_html() before <li> wrapping — this
+    is that exact treatment, so a story gets identical rendering to a
+    thread. Provenance markers are left for clean_reader_facing_body to
+    strip afterward (its one job, not duplicated here); markdown-to-HTML
+    conversion runs FIRST (via _md_html() above, not the imported md_html —
+    see its docstring) so its backtick-span -> <code> conversion happens
+    before clean_reader_facing_body's own <code> -> <a> upgrade sees the
+    string — the same order the html_safe docstring above already
+    documents.
+    """
+    bullets = []
+    for b in re.finditer(r"^- (.+?)(?=^- |\Z)", rest, re.S | re.M):
+        txt = " ".join(l.strip() for l in b.group(1).strip().split("\n"))
+        bullets.append(f"<li>{_md_html(txt)}</li>")
+    return f"<ul>{''.join(bullets)}</ul>" if bullets else _md_html(rest.strip())
+
+
 def build_stories(pub_slugs, threads_by_slug):
     """Every dated block in a published thread's timeline becomes a STORY.
 
@@ -360,14 +482,22 @@ def build_stories(pub_slugs, threads_by_slug):
             m = re.match(r"(\d{4}-\d{2}-\d{2})\s*(?:—|-|–)?\s*(.*)$", head.strip())
             if not m:
                 continue                      # "← Backstory" and other dividers
-            date, headline = m.group(1), (m.group(2) or "").strip()
+            date = m.group(1)
+            # linkify=False: this is a plain-text title field (Hugo outputs
+            # it unescaped via {{ .headline }}, not through markdown) — same
+            # reasoning as thread_blurb() above. Strips the internal
+            # ⟨caught late⟩-style provenance marker, which was previously
+            # landing verbatim in the public <h1> (found 2026-08-18 on
+            # /story/anthropic-ipo-timing--2026-08-17/ — "Run-rate past
+            # $65B, ahead of OpenAI, ahead of the filing ⟨caught late⟩").
+            headline = clean_reader_facing_body((m.group(2) or "").strip(), linkify=False)
             if not headline:
                 headline = f"{t.get('title', slug)} — {date}"
             sid = f"{slug}--{date}"
             seen[sid] = seen.get(sid, 0) + 1
             if seen[sid] > 1:
                 sid = f"{sid}-{seen[sid]}"    # two blocks share a date
-            prose = clean_reader_facing_body(rest.strip(), html_safe=True)
+            prose = clean_reader_facing_body(_timeline_block_html(rest.strip()), html_safe=True)
             sources = []
             for label, url in re.findall(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", rest):
                 if any(s["url"] == url for s in sources):
@@ -871,15 +1001,17 @@ def write_site(site_dir, pages, good_slugs, payload, payload_blob, board, board_
                 for b in rec.get(sec) or []:
                     b["threads"] = [t for t in (b.get("threads") or [])
                                     if t in pub_slugs]
-                    # Same provenance-marker leak as thread bodies/blurbs/
-                    # map-changes (2026-08-09 sweep) — BREAKING/NEWS bullet
-                    # text is pulled straight from digest item records,
-                    # which carry the same ⟨...⟩ asides. Rendered via
-                    # readout.html's {{ .text }} — plain escaped text, so
-                    # linkify=False, matching the blurb/map-changes cases.
-                    if b.get("text"):
-                        b["text"] = clean_reader_facing_body(b["text"], linkify=False)
-            kept[scope] = rec
+            # This used to hand-clean only breaking/news bullets' .text —
+            # the same "chasing each field by name doesn't converge"
+            # mistake _deep_clean_reader_facing's own docstring already
+            # names, and it recurred exactly as predicted: found 2026-08-18
+            # on `.briefing.gist` (readout.html/briefing.html both render
+            # every field here via plain {{ . }}, same as the rest of this
+            # payload, never markdown), which this narrower loop never
+            # touched. Sweeping the whole record catches every field —
+            # gist, summary, watch, breaking/news bullets — at once, and
+            # self-corrects if a scope grows a new one.
+            kept[scope] = _deep_clean_reader_facing(rec)
         with open(os.path.join(site_dir, "data", "readouts.json"), "w") as f:
             f.write(json.dumps({"schema_version": ro.get("schema_version", 1),
                                 "readouts": kept}, default=str))

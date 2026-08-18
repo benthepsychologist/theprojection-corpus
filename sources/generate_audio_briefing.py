@@ -146,7 +146,14 @@ def clean_for_speech(text):
     text = re.sub(r"\[([^\]]+)\]\([^)]+\)", r"\1", text)
     text = re.sub(r"<https?://[^\s>]+>", "", text)
     # Bold/italic markers stripped, text kept.
-    text = re.sub(r"\*\*([^*]+)\*\*", r"\1", text)
+    # `.+?` (not `[^*]+`) on the bold pass: a character class excluding
+    # asterisks can't span a nested single-asterisk italic, so
+    # "**A ... *knaithe* ... names**" silently failed to strip at all,
+    # leaving a stray leading/trailing `*` for TTS to read aloud as a
+    # literal character. Found 2026-08-18 chasing the same regex flaw in
+    # publish/adapter.py's story-page renderer (a real entry off
+    # artifacts/threads/china-stack-independence.md hit it there first).
+    text = re.sub(r"\*\*(.+?)\*\*", r"\1", text)
     text = re.sub(r"\*([^*]+)\*", r"\1", text)
     # List markers -> nothing (the sentence itself carries the content).
     text = re.sub(r"^[-*]\s+", "", text, flags=re.MULTILINE)
