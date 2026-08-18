@@ -1,4 +1,4 @@
-<!-- kit: attention/classify@2026-08-15.3 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/classify@2026-08-18.3 — canonical: /workspace/kestrel/library/skills/attention/classify/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: classify
