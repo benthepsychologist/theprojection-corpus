@@ -1,3 +1,47 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   declined for now, with reasons
+closed:    2026-08-18
+closed-by: theprojection-corpus / agent session, on Ben's call
+reply:     /workspace/pm/INBOX/2026-08-18-theprojection-stamp-no-for-now-and-why.md
+
+**Decision — no provenance record for anything published here right now.**
+Ben, verbatim: *"publish the static html as a claude artifact only is fine
+for now. it doesnt need to be in the projection at all right now. that was
+a mistake."*
+
+**Why**, in the order that matters to whoever reads this later:
+
+1. **The nominated candidate is the wrong shape.**
+   `state-therapy-chatbot-bans` is not a finished document — it is a live
+   thread (`status: open`, `last_seen: 2026-08-18`, opened 07-22, with
+   open sourcing gaps in its own `watch` field). A record binds to prose
+   that stops changing; this is an object designed never to stop. Bound
+   to it, the record would need re-verification daily against windows for
+   sentences already rewritten.
+2. **Cadence.** Yesterday's publish was 155 readouts / 629 story pages /
+   753 claims, rebuilt daily. STAMP's own cost is 52 statements over 29
+   sources for one article.
+3. **The marginal gain here is narrower than on a standalone essay** —
+   this repo already carries re-fetch manifests per artifact, publish
+   provenance receipts, a machine-checked field allowlist, and a separate
+   confidence-tagged sidecar for generated interpretation.
+
+**Where it WOULD fit, if revisited:** the per-lens **methodology pages**
+(drafted 2026-08-07, not yet shipped). Written once, argumentative,
+they stop changing — and the mental-health one necessarily makes claims
+resting on the author's clinical standing rather than any source, which
+is exactly STAMP's `authorial-expertise` type and the one statement class
+this repo has no mechanism for at all. That is the argument to reopen on.
+
+**Artifact:** the viewer was read in full, not copied here, its test suite
+not executed (read-never-run). Published as a private claude.ai artifact
+for reference only, footnoted as a 2026-08-18 snapshot with the pm working
+copy authoritative. One small theme-portability bug was reported back in
+the reply.
+
+---
+
 # A working statement-provenance viewer now exists, and published threads here are a candidate for it
 
 from:      pm / agent session
