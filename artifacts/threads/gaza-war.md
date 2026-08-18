@@ -17,6 +17,45 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-18 — Likud's slate published; a strike on an October 7 participant
+
+- **Likud published its primary result and Netanyahu's nine controlled
+  slots all held.** Turnout **53%** (76,068 members), down from 58% in
+  2022. Elected order behind Netanyahu: Eli Cohen (Energy) 2, Speaker
+  Amir Ohana 3, Justice Minister Yariv Levin 4, with Miri Regev and
+  coalition chairman Ofir Katz completing the top five — Katz the one
+  surprise. Social Equality Minister May Golan won no slot, attributing
+  it to being seen as "too right-wing" by Netanyahu's circle.
+  ⟨daily 2026-08-18⟩
+- **But the wider objective failed, and that is the part that matters for
+  10-27.** Haaretz's same-day analysis — *"Netanyahu Failed to Purge His
+  Opponents But Still Has Reason to Celebrate"* — finds that using
+  reserved slots to dilute hardline internal rivals did not work: Tally
+  Gotliv and Shlomo Karhi held on, and the party's Kahanist wing
+  tightened its grip on the list. **His picks are safe; his control of
+  the party's direction is not.**
+  ⟨daily 2026-08-18⟩
+- **The IDF said it killed Islamic Jihad operative Khamis Ra'i**, who
+  took part in the October 7 2023 abduction of a hostage from Kibbutz
+  Be'eri, in a strike it says used precision munitions and surveillance
+  to limit civilian harm. Consistent with the continuing low-grade
+  campaign against remaining October 7 participants. ⚠️ Exact strike time
+  not established; 08-17/08-18 bucketing is a best guess.
+  ([Times of Israel](https://www.timesofisrael.com/liveblog_entry/gaza-terrorist-who-took-part-in-oct-7-kidnapping-killed-in-israeli-airstrike/)) ⟨daily 2026-08-18⟩
+
+## 2026-08-17 — Kushner and Netanyahu meet for hours; two working groups, no breakthrough ⟨late catch⟩
+
+- **A marathon Jerusalem meeting produced working groups rather than
+  movement.** Kushner, Netanyahu, Tony Blair, Board of Peace director
+  Nickolay Mladenov and later Herzog met for hours without moving the
+  15-point US-backed road map — but agreed to stand up **one working
+  group on Hamas disarmament and one on public health.** Netanyahu
+  restated that there will be no IDF redeployment and no reconstruction
+  until Gaza is fully disarmed. **Working groups are the shape a stalled
+  negotiation takes when neither side will walk away.**
+  ([AP via CP24](https://www.cp24.com/news/world/2026/08/17/kushner-has-hours-long-meeting-with-netanyahu-on-gaza-a-day-after-talking-with-hamas/)) ⟨daily 2026-08-17⟩
+
+
 **The premise, easy to get wrong:** this is **not** active large-scale
 war. A ceasefire has held since **2025-10-10** under UNSC Resolution
 2803 — a low-intensity, frequently-violated truce that monitors describe

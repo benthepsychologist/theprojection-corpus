@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-08-17
-status: building
+status: final
 window_start: 2026-08-17T05:00:00-04:00
-as_of: 2026-08-17T15:00:00-04:00
+as_of: 2026-08-18T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -69,24 +69,53 @@ parliamentary vote his party has now been barred from.
   [Al Jazeera](https://www.aljazeera.com/news/2026/8/17/us-iran-memorandum-of-understanding-expires-how-and-why-it-fell-apart))
   <!-- k: t=iran-conflict-widening axis=items -->
 
-- **Lebanon's president publicly broke with Hezbollah and asked for
-  direct negotiations with Israel.** In a video conference with European
-  Commission President Ursula von der Leyen and European Council
-  President António Costa — joined by Egypt's Sisi and Iraq's Sudani —
-  President Joseph Aoun set out four points: a comprehensive ceasefire,
-  immediate logistical support for the Lebanese army, **full Hezbollah
-  disarmament**, and direct Lebanon–Israel talks under international
-  auspices. He accused Hezbollah of pushing Lebanon toward collapse in
-  the service of Iran's interests. Coming from a Lebanese head of state,
-  on the record, to European leaders, this is a sharp departure from
-  Beirut's prior line and the most substantive item on this thread in
-  weeks. ⚠️ **One widely-recirculating claim is excluded as stale:** a
-  report of Israeli strikes on "120 targets in one hour" traces to a 2024
-  event resurfaced by search aggregation, not to today. No new Israeli
-  strikes on Lebanon were confirmed today; the weekend flare-up (11
-  killed Saturday, Hezbollah commander Abu Hassan Alaa killed) is
-  already-known context.
+- **⛔ RETRACTED 2026-08-18 — the "Aoun breaks with Hezbollah" item this
+  digest led its Lebanon coverage with was a March 2026 story, not a
+  today one.** The bullet described President Joseph Aoun setting out four
+  points to von der Leyen and Costa — comprehensive ceasefire, army
+  support, full Hezbollah disarmament, direct Lebanon–Israel talks — and
+  called it "the day's one real diplomatic shift." The cited source
   ([Reuters via Yahoo](https://www.yahoo.com/news/articles/lebanon-proposes-direct-negotiations-israel-165843732.html))
+  carries `Published Time: 2026-03-09T16:58:43Z`. It is a **five-month-old
+  event**, surfaced by search aggregation and written up as current. The
+  finalize pass caught it, and the irony is on the record: the same bullet
+  correctly excluded a 2024 "120 targets in one hour" claim as stale while
+  itself being stale. **Nothing about a Hezbollah break happened on 08-17.**
+  The real Lebanon story is below.
+  <!-- k: t=israel-lebanon-escalation axis=items -->
+- **What Aoun actually did on 08-17 was defend the UN peacekeeping
+  presence against Israeli pressure to end it — closer to the opposite
+  of a break with Hezbollah than to a version of one.** He welcomed a
+  parliamentary petition to extend UNIFIL's mandate, which is running out,
+  and said plainly: *"our first choice is to extend UNIFIL's mandate."*
+  Failing that, he wants "a formula that guarantees the continued presence
+  of international forces in the south, within the required legal
+  framework," operating alongside the Lebanese Army. The load-bearing
+  sentence is the attribution of pressure: *"Israel rejects the presence
+  of UNIFIL and has been exerting pressure in this direction for nearly a
+  year, while we are demanding its continued presence."* Context this map
+  had not registered: UNIFIL is in phase-out, Human Rights Watch called
+  on 08-13 for peacekeepers to stay, and Israel's strikes in the south
+  intensified from 08-15. Carried by ~17 outlets.
+  ([Naharnet](https://www.naharnet.com/stories/en/321884-aoun-our-first-choice-is-to-extend-unifil-s-mandate),
+  [L'Orient Today](https://today.lorientlejour.com/), [Times of Israel](https://www.timesofisrael.com/))
+  <!-- k: t=israel-lebanon-escalation axis=items -->
+- **Aoun separately reaffirmed the existing framework rather than
+  departing from it**, calling for "state-to-state" relations with Iran
+  and full implementation of the framework deal, and saying that evening
+  that Lebanon will stick to the Israel framework and counts on the US to
+  implement it. Read against the retracted bullet above, the direction of
+  travel on 08-17 was continuity under pressure, not rupture.
+  ([Naharnet](https://www.naharnet.com/stories/en/321894-aoun-calls-for-state-to-state-relations-with-iran-full-implementation-of-framework-deal),
+  [Anadolu](https://www.aa.com.tr/en))
+  <!-- k: t=israel-lebanon-escalation axis=items -->
+- **The stale-content note the retracted bullet carried still stands on
+  its own terms:** a report of Israeli strikes on "120 targets in one
+  hour" traces to a 2024 event resurfaced by search aggregation. No new
+  Israeli strikes on Lebanon were confirmed on 08-17; the weekend
+  flare-up (11 killed Saturday, Hezbollah commander Abu Hassan Alaa
+  killed) is already-known context, and the intensification from 08-15 is
+  the frame the UNIFIL fight sits inside.
   <!-- k: t=israel-lebanon-escalation axis=items -->
 
 - **Kushner met Netanyahu in Jerusalem a day after meeting Hamas's
@@ -276,15 +305,105 @@ candidate pool's input. Flagged for Ben rather than acted on: the
 collector and builder live in the engine, which is outside this repo's
 write zone.
 
+## 🧮 Finalize pass — the closing window (2026-08-18)
+
+*This lens carries no benchmark critic by design (`coverage: na`), so the
+finalize is a window sweep: 15:00 ET Monday to the 05:00 ET close.*
+
+- **Iran said it is shifting to a "fully offensive" posture and threatened
+  to break the US naval blockade of Hormuz by force.** A senior Iranian
+  official told Reuters that Tehran is moving from a defensive posture
+  because talks on a permanent end to the war have stalled, that it would
+  mount a "timely and precise" military attack to break the blockade if
+  diplomacy fails, and that Washington has "a few weeks" to fully
+  implement the now-expired memorandum of understanding. This is a real
+  escalation beyond the Monday-afternoon state (the MOU expiry and the
+  Oman threat) — and it is still a threat of future action, not an action.
+  ([Reuters via Jerusalem Post](https://www.jpost.com/middle-east/iran-news/article-905793))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock axis=items sev=major -->
+- **Kushner and Netanyahu met for hours in Jerusalem and produced two
+  working groups rather than a breakthrough.** The marathon meeting —
+  Kushner, Netanyahu, Tony Blair, Board of Peace director Nickolay
+  Mladenov, later Herzog — did not move the 15-point US-backed road map,
+  but the parties agreed to stand up one working group on **Hamas
+  disarmament** and one on **public health**. Netanyahu restated that
+  there will be no IDF redeployment and no reconstruction until Gaza is
+  fully disarmed. Working groups are the shape a stalled negotiation
+  takes when neither side will walk away.
+  ([AP via CP24](https://www.cp24.com/news/world/2026/08/17/kushner-has-hours-long-meeting-with-netanyahu-on-gaza-a-day-after-talking-with-hamas/))
+  <!-- k: t=gaza-war axis=items -->
+- **Eight Israeli airstrikes hit Syria's Abu al-Duhur airbase in Idlib,
+  with no casualties reported.** The base has not been a working airfield
+  since 2013 and now serves as a training centre for Syria's post-Assad
+  army. Israel declined comment; Syria's defence ministry did not
+  respond; US envoy Tom Barrack called it an "unnecessary escalation" and
+  Turkish FM Hakan Fidan criticised Israel over repeated Syria strikes.
+  ⚠️ **Bucketing caveat, stated rather than hidden:** outlets datelined
+  their write-ups 08-18 but describe the strikes as "early Tuesday"
+  Damascus time (UTC+3), which places them Monday evening ET, inside this
+  digest-day. The 7-hour offset is the whole basis for that call — if a
+  precise strike time surfaces it may belong to 08-18 instead.
+  ([Washington Post](https://www.washingtonpost.com/world/2026/08/18/syria-israel-turkey-airstrikes-idlib/))
+  <!-- k: t=iran-conflict-widening axis=items -->
+
+**⏳ `likud-primary-results` → HIT, on its due date.** Final count
+published 08-18: turnout **53%** (76,068 members), down from 58% in 2022
+— confirming the ~5-point drop this digest flagged from partials. On the
+specific question the ledger entry asked — do Netanyahu's nine controlled
+slots hold? — **yes, cleanly.** The Central Committee gave him eight
+reserved slots on 07-27 (he sought ten); three more were added 08-11 for
+Gideon Sa'ar, Israel Katz and Haim Katz, making nine. Haim Katz's was
+briefly frozen by a party-court conflict-of-interest order because he
+chairs the approving body, and cleared the next day. His first
+non-incumbent reserved pick, tech entrepreneur Oren Dobronsky, held.
+**The elected order:** Eli Cohen (Energy) at 2, Speaker Amir Ohana at 3,
+Justice Minister Yariv Levin at 4, with Miri Regev and coalition chairman
+Ofir Katz completing the top five — Katz the count's one surprise. Social
+Equality Minister May Golan won no slot, and attributed it to being seen
+as "too right-wing" by Netanyahu's circle. **But the wider objective
+failed:** Haaretz's same-day analysis — *"Netanyahu Failed to Purge His
+Opponents But Still Has Reason to Celebrate"* — records that using
+reserved slots to dilute hardline internal rivals did not work. Tally
+Gotliv and Shlomo Karhi held on, and the party's Kahanist wing tightened
+its grip on the list. **His picks are safe; his control of the party's
+direction is not.**
+
+**⏳ `iran-oman-hormuz-deal-signing` (due 08-19) — in progress, not
+signed.** Iran and Oman have agreed shipping-route coordinates and
+describe a joint statement as in final drafting. Iran's FM Araghchi
+cautions that even once issued it covers a **temporary 2–4 month
+navigation arrangement with no tolls**, not a reopening of the Strait —
+that stays contingent on the US honouring the expired MOU, withdrawing
+troops and paying compensation. Qatar's foreign ministry said on 08-18 it
+is waiting for the Iran–Oman bilateral to land before the broader US–Iran
+track can resume. Due tomorrow; re-check it then.
+
+**🚨 Flash: still none, now checked three times across the full day.** The
+closest candidate is Iran's "fully offensive" declaration, and it fails
+the test the same way the rest of the day did — a threat of future action
+on a five-month stalemate, with markets pricing it as an incremental
+slide rather than a shock. No invasion, no mass-casualty event, no
+market halt, no head-of-state death.
+
+**Traps caught this pass, beyond the Aoun retraction above.** Oman's
+foreign ministry page for an "Oman–Iran joint statement" is dated **23
+June 2026** — a different, older statement from the Muscat visit, easily
+mistaken for the pending Hormuz signing. Trump's "Strait of Hormuz as US
+territory" exists as **two genuine events a week apart** — the verbal
+statement of intent on 08-14 and the actual Truth Social map post on
+08-18 — which are easy to conflate into one. And The National's 08-17
+piece on a congressional delegation to Lebanon describes a visit that
+happened "last week," despite the fresh publication date.
+
 ---
 Trump demanded Iran's surrender, claimed a Revolutionary Guard
 backchannel that the IRGC called a delusion within hours, and threatened
 to bomb Oman — the mediator whose confirmation this map is waiting on for
 the Hormuz arrangement. None of it moved oil, which is the strongest
 available evidence that the market reads today as noise on a stalemate
-rather than a turn. Lebanon's president broke with Hezbollah in front of
-European leaders and asked for direct talks with Israel, the first real
-movement on that thread in weeks. Russia jailed the deputy chair of its
+rather than a turn. ⛔ Lebanon's president did NOT break with Hezbollah — that item is
+retracted as a March 2026 story; what Aoun actually did was defend
+UNIFIL's mandate against Israeli pressure to end it. Russia jailed the deputy chair of its
 only anti-war party for eleven years and barred the party from next
 month's ballot on the same day. No flash: loud is not the same as
 front-page.

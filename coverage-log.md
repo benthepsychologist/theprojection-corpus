@@ -3256,3 +3256,237 @@ items) and that backfill was mined as a second pass, but the general
 lesson stands: a skipped `/daily` costs collector coverage that only
 partially recovers, not just a missing digest. The sanctioned
 Sunday-evening mini-sweep exists for exactly this and was not run.
+
+---
+
+## 2026-08-18 /daily — 08-17 finalize (all three critic-bearing lenses) + 08-18 open
+
+The 08-17 digest-day closed at 05:00 ET this morning; this pass finalized
+it and opened 08-18. All four mental-health benchmarks and three of four
+AI benchmarks published for the Monday, so this is a real recall check
+rather than a weekend null.
+
+### The structural finding: this map corrected itself three times, and only one was a miss
+
+The critic's job is "they led with → we missed." This pass produced
+something different and more useful: **three errors in this map's own
+08-17 record**, none of which any benchmark would have surfaced, all
+found by primary-source date-checking during the finalize.
+
+1. **A five-month-old story ran as the day's lead diplomatic item.** The
+   08-17 world-news digest and the front digest both carried "Aoun breaks
+   with Hezbollah in front of von der Leyen and Costa," calling it "the
+   day's one real diplomatic shift." The cited Reuters-via-Yahoo URL
+   carries `Published Time: 2026-03-09T16:58:43Z`. **Retracted.** The real
+   08-17 Lebanon story is close to its opposite: Aoun defending UNIFIL's
+   continued presence against Israeli pressure to end it.
+   ⚠️ **This is a recurring trap, not an accident.** Google News searches
+   on this thread's terms return the January 2026 (Beirut visit) and March
+   2026 (video conference) instances with near-identical wording —
+   "comprehensive ceasefire… full Hezbollah disarmament… direct
+   negotiations under international auspices." The
+   `israel-lebanon-escalation` timeline now carries a standing
+   check-the-`Published Time` rule at the top of the retracted block.
+   🔁 **The irony is on the record and worth keeping:** the same bullet
+   correctly excluded a 2024 "120 targets in one hour" claim as stale
+   while itself being stale. Catching one trap in a bullet is not evidence
+   the bullet is clean.
+
+2. **An SEC acceptance timestamp was off by four hours, in the direction
+   that flattered the story.** NVIDIA's 8-K was reported as "accepted at
+   04:41 ET, four hours before the opening pass." EDGAR's own
+   `ACCEPTANCE-DATETIME` header reads `20260817084133` and the submissions
+   API `2026-08-17T12:41:33Z` — both **08:41 ET**. The original was a
+   UTC-to-Pacific conversion mislabelled as Eastern. Substance survives
+   (the filing was public before the pass that called the figure missing);
+   the "four hours" did not. **Practice adopted: read EDGAR acceptance
+   times from the `-index-headers.html` header, which is already ET, and
+   never hand-convert the `Z` timestamp.**
+
+3. **"No model releases inside today's window, confirmed twice" was
+   wrong.** Alibaba launched **Qwen3.8-27B**, a laptop-class open-weight
+   model, on Monday 08-17 (CNBC, 07:24 ET: *"On Monday, the Chinese tech
+   giant launched an AI model, designed to run on consumer hardware like
+   laptops"*). The failure mode is specific and worth naming: the sweep
+   correctly dated **Qwen3.8-Max** to 08-12 — this map had logged its 2.4T
+   weights in the 08-12 digest — and then generalised from the Max to the
+   whole Qwen line, writing "Qwen3.8-Max/27B" as one already-counted
+   event. **Two models, two dates, collapsed into one by a slash.**
+   ⚠️ Note also that the AI critic reported this miss with the *wrong*
+   reason — it read the 08-17 CNBC piece as the Max release and would have
+   had this map retract a correct 08-12 entry. The main session
+   adjudicated against both its own digest and the critic. Neither was
+   right on its own.
+
+### They led with → we missed
+
+**ai / 2026-08-17** (benchmarks: The Rundown AI ✅ · TLDR AI ✅ ·
+The Neuron ✅ · The AI Daily Brief ❌ did not publish)
+
+- **Anthropic's annualized revenue run-rate topped $65B in July** — TLDR
+  AI's 08-18 lead. Up from $47B (May) and ~$9B (end-2025); now ahead of
+  OpenAI's ~$40B; investors expect $100–120B for FY2026 against a targeted
+  $2T-plus IPO valuation this fall. **Independently surfaced by all three
+  of this pass's non-world-news sweeps**, which is the strongest miss
+  signal this log has recorded. ⚠️ Distinct from the $11.5B Q2 print
+  logged as caught-late on 08-17 — quarterly vs. annualized run-rate,
+  three days apart, and aggregators merged them all day.
+- **Cursor launched "Origin," a code-hosting platform, during a 6h+ GitHub
+  outage** — the lead of *both* TLDR AI's and The Rundown AI's 08-18
+  issues. Invisible here rather than merely missed: this map has no thread
+  on the developer-tooling layer as a competitive surface.
+- **Microsoft fell ~3% (~$112B of market value) on 08-17** on a report
+  questioning whether its installed AI-chip count (2.2M) matches its
+  stated buildout targets (1.8M); Microsoft disputed the calculation.
+  Market-moving, squarely on the hyperscaler-credibility beat, absent
+  here. Context that makes it legible: Nvidia moved **+0.21%** the same
+  day.
+- **Stripe/OpenRouter, >$7B** — appeared in three of four AI benchmarks
+  and was Axios Pro Rata's top deal item. ⚠️ **This map offered it as a
+  thread candidate on 08-16 and again on 08-17 and never wrote it as a
+  bullet.** Logged as a distinct failure mode: **a candidate is not
+  coverage.** A $7B acquisition at a 5.4x markup on a three-month-old
+  $1.3B Series B is an event whether or not a thread exists to hold it.
+- **Borderline, logged with its caveat rather than promoted:** Dario
+  Amodei's X reply to Gavin Baker led both The Rundown AI's and The
+  Neuron's 08-17 issues — two independent editors' top story — but the
+  trigger was the 08-14 All-In podcast and TechCrunch's report is dated
+  08-16. Pre-window, not an 08-17 miss.
+
+**global-capital / 2026-08-17** (Money Stuff ❌ vacation through 08-24 ·
+Axios Pro Rata ✅ · FT Unhedged ✅ · Bloomberg Technology ⚠️ see below)
+
+- **Anthropic $65B run-rate** — as above.
+- **Stripe/OpenRouter >$7B** — Axios's "BFD."
+- **Higgsfield's $400M Series B at $5.4B post** (DST Global-led, with
+  Goldman Sachs Alternatives and Intel Capital). Annualized revenue
+  reportedly ~$20M a year ago to $700M in August.
+- **FT Unhedged led with "Broken FIMA"** — Bessent's push to expand the
+  Fed's FIMA repo facility as a yen-defence backstop, argued to be
+  structurally weak. 📌 **This retires an ambiguity in a standing watch
+  item.** The FT yen/BOJ theme was flagged 08-14 as five-in-two-weeks and
+  08-17 as a sixth run, with the bar set at "a discrete, named, live
+  mechanism rather than analyst commentary on direction." *Broken FIMA*
+  clears that bar — it names the facility, the official, and the policy
+  ask. Promote or drop it on the next `/week`, don't flag it a seventh
+  time.
+- **Lower-confidence, recorded as such:** Bloomberg's "AI Rally Set to
+  Trigger Stock-Market Correction, ECB Blog Says" (08-17). Blog-sourced
+  commentary, on-theme against this lens's stretched-valuation signals.
+
+**mental-health / 2026-08-17** (BHB ✅ · STAT Health Tech ✅ · Fierce
+Healthcare ✅ · MobiHealthNews ✅ — all four, a Monday, a real check)
+
+- **"Behavioral Health Dealmaking Down 20% in the First Half of 2026"**
+  (BHB, 15:19 ET — nineteen minutes after the afternoon pass closed).
+  Mertz Taggart Q2 2026: **69 closed deals in H1, −20% YoY**;
+  mental-health-specific −20% for the quarter and **−25% for the half**;
+  **addiction treatment from 19 closings in H1 2025 to 8**; I/DD and
+  autism −14% and drawing the most consistent interest. Kevin Taggart on
+  the cause: *"Anyone underwriting behavioral health right now is
+  underwriting Medicaid more cautiously than in years past."* The largest
+  MH deal on the board — the $653.4M municipal-bond-backed Advantage
+  Behavioral/QCF transaction — **still has not closed.**
+  **Why it matters as a miss:** this map tracked the individual
+  transactions all week (UHS/Talkspace, the Centene CFO exit, Aetna/Alma)
+  without the aggregate that explains them.
+- **UHS CEO Marc Miller on what comes after Talkspace** (BHB, 09:10 ET) —
+  a partial miss. The deal-closing fact was logged; the forward
+  integration strategy was not.
+- **Checked and NOT misses**, recorded so they are not re-checked: STAT's
+  lead was the UnitedHealth IRS probe already covered; DocGo/Hicuity,
+  Epic prior-auth, Medicare Platform's $50M, and a states'-role cost
+  report are general health-tech with no behavioural-health angle. One BHB
+  "Voices" column excluded as sponsored advertorial.
+
+### Ledger outcomes this pass
+
+**Hits:** `ping-an-h1-2026-interim-results` (due 08-18) — the 1833.HK
+subsidiary reported on its due date, **and the AI-contribution disclosure
+the entry was explicitly holding for exists: ~4.6% of gross profit**,
+alongside 9.7M+ cumulative AI-doctor users. `likud-primary-results` (due
+08-18) — slate published; Netanyahu's nine controlled slots held cleanly,
+but his wider attempt to dilute hardline internal rivals failed.
+
+**Slip:** `grok-4-7-ship` — slipped three days *ahead* of its own due
+date, on a restatement. Musk's 08-12 post put release "3 to 4 weeks" out
+from that date (early-to-mid September), already past 08-21. This is the
+"double-slip on a chained promise" the entry's own `what_confirms`
+anticipated; the second slip landed.
+
+**New entry:** `ping-an-group-h1-2026-interim-results` (due 08-20),
+pinned by the company's own voluntary HKEX/SSE announcement filed 08-13 —
+closing the "group-level date not independently confirmed" gap the
+subsidiary entry had carried since 08-04.
+
+**Passed-silent, all re-checked at primary source and unchanged:**
+`aetna-alma-rate-cut-effective` (every source previewing the 08-15 date
+was published on or before 08-04; no post-15th confirmation exists from
+Alma, an Aetna bulletin, or either psychological association), both
+Kaiser/NUHW entries (Kaiser's own page still ends at 08-11 with no
+outcome; NUHW's news index has nothing after 07-27), `cxmt-congress-letters`.
+
+### The stale-year trap count on one ledger entry is now three
+
+`kaiser-nuhw-mediation-*` has drawn false positives from **2022**
+(logged 08-17), **2025** (logged 08-15), and now a **2025 bargaining-cycle
+page surfacing under 2026-looking metadata** — a search result claiming
+Kaiser and NUHW "met on Tuesday, August 26, 2026" that, fetched directly,
+describes 2025 sessions. The rule already written into the entry — accept
+nothing not fetched directly from the parties' own sites with a visible
+2026 date — is what caught it each time. **It is working; leave it.**
+
+### ⛔ Access finding that changes a routine: Bloomberg Technology RSS
+
+**`feeds.bloomberg.com/technology/news.rss` cannot be used for
+next-morning recall, and it fails silently.** It returns HTTP 200 with no
+proxy and no spoofed UA, exactly as this file documents — but it is a
+**rolling ~20-item window**. By 10:00 ET on 08-18 it had rolled past
+**every** 08-17 item; all twenty were 08-18. A next-morning pull misses
+the prior day in its entirety while looking perfectly healthy.
+**This benchmark must be pulled same-day, ideally by early evening ET.**
+WebSearch against Bloomberg's own dated bylined URLs substituted this
+pass but is strictly weaker — it depends on search-index coverage rather
+than returning a complete list.
+
+### Other access findings
+
+- ✅ **Three AI-benchmark routes are simpler than documented.** TLDR AI's
+  RSS (`tldr.tech/api/rss/ai`) and its per-date URLs both resolve on plain
+  curl with a Googlebot UA — no proxy. The Neuron's homepage renders a
+  full dated archive on plain curl. **The AI Daily Brief's `sitemap.xml`
+  is the fastest authoritative "did it publish" check** — date-guessed
+  `/e/YYYY-MM-DD` URLs 404 cleanly when absent, so absence is provable
+  rather than assumed.
+- ⚠️ **The Rundown AI is a client-rendered SPA.** Its homepage href list
+  resolves but its text does not; it must be walked by `/p/<slug>`, and
+  there is still no per-date URL scheme.
+- ⚠️ **Axios Pro Rata's reader proxy was NOT archive-blind this pass** —
+  it was still serving the 08-17 edition at fetch time. The 08-15 note
+  recording it as current-edition-only is right in general but should be
+  checked against the `## <date>` header in the returned markdown each
+  time rather than assumed either way.
+- ⚠️ **MobiHealthNews's reader-proxy requirement extends to subpages**,
+  not just the homepage (`/categories/payer` 403s on plain WebFetch).
+- ⚠️ **Fierce Healthcare blocks individual article pages even to a
+  Googlebot UA** — the UA that reliably clears BHB's Cloudflare does not
+  clear Fierce's. Site-scoped Google News RSS returned real headlines and
+  pubDates where the article pages stayed blocked.
+- ⚠️ **FT Unhedged's RSS ceiling is title-plus-subhead.** Full article
+  text sits behind a security interstitial that survives Googlebot
+  spoofing. That is enough for recall scoring and not enough for a quote.
+- ⚠️ **The Wayback Machine API returned HTTP 429 on both attempts** and
+  was unavailable as a fallback channel this pass.
+- ✅ BHB's Googlebot-UA workaround held with no further tightening.
+
+### Cold-rotation note — the rotation is behind, and it cost real coverage
+
+This pass swept nine threads that had gone **19–24 days** without a check
+(the rotation's design target is ~7). Eight of the nine had moved, several
+materially — including a **primary-source answer to a thread's own stated
+live test** that had been sitting in Amazon's 10-Q since 07-30 (see the
+`datacenters-as-targets` entry in the 08-18 digest). **A 7-day rotation
+over 58 cold threads needs ~8 threads swept per run, every run.** At the
+current rate the tail is being touched roughly every three weeks, and the
+`mhpaea-parity-limbo` null — the only clean "nothing new" of the nine — is
+the exception that shows the rest were worth the sweep.

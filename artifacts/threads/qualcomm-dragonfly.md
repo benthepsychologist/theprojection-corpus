@@ -13,6 +13,38 @@ silicon engagements start contributing in December, one quarter out. The
 long-range target moved instead (FY2029 non-handset to $40B). Ventana's
 fate · first silicon dates.
 
+## 2026-07-29 — Modular closed, Lattner installed, guidance reaffirmed not raised ⟨caught late⟩
+
+*Logged 2026-08-18 by the cold rotation, twenty days late. This thread
+named Q3 FY26 earnings as its "first live test."*
+
+- **The $3.9B all-stock Modular acquisition closed, and co-founder Chris
+  Lattner — creator of LLVM, Swift and MLIR — was named to lead
+  Qualcomm's advanced AI software effort.** The anti-CUDA play is now
+  formally staffed and closed rather than pending. Modular's Mojo
+  language hit **1.0** on 08-11/12, two weeks after the close.
+  ([Qualcomm](https://www.qualcomm.com/news/releases/2026/07/)) ⟨daily 2026-08-18⟩
+- **On the live test — did Dragonfly move guidance? No.** Q3 FY26 revenue
+  ~$9.9B, and on the call Qualcomm **reaffirmed rather than raised** its
+  datacenter targets: **$5B revenue in FY2027, $15B by FY2029.** It did
+  name **Meta** as a Dragonfly C1000 customer — an "Agentic CPU" on the
+  Oryon architecture aimed at agent orchestration and multi-step
+  reasoning. A named hyperscale customer without a guidance change is a
+  real datapoint in both directions.
+  ⟨daily 2026-08-18⟩
+- **The open Ventana/RISC-V question resolves as "both, not either."**
+  Ventana's Veyron V2 custom-silicon business now has **two hyperscale
+  customers each contracted for >$1B in FY2027**. Dragonfly does not
+  supersede it.
+  ⟨daily 2026-08-18⟩
+- First third-party software-ecosystem move around the new silicon:
+  Multiverse Computing partnered with Qualcomm to optimise models for the
+  AI200/AI250 accelerators, claiming 93% faster performance (08-05). Same
+  day as the Modular close, Qualcomm also signed a 10-year BMW chip-supply
+  deal.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-05 — First named software partner for the Dragonfly accelerators
 
 - **Multiverse Computing and Qualcomm announced a partnership to optimize

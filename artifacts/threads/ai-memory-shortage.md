@@ -12,6 +12,25 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-18 — The shortage produces its first visible casualty on the demand side
+
+- **Xiaomi's profit fell on a worsening memory-chip crunch hitting
+  smartphone demand.** This thread has run entirely from the supply side;
+  this is the same transaction seen from the other end. Datacenter HBM
+  and DRAM demand is bidding memory away from consumer devices — **Micron
+  crossed $1,000 a share on Monday because it is the seller, and Xiaomi's
+  margins compressed because it is the buyer that cannot outbid an AI
+  datacenter.**
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/xiaomi-profit-dives-as-memory-crunch-hits-smartphone-demand)) ⟨daily 2026-08-18⟩
+- **This is the first item where the buildout's input scarcity
+  measurably taxes a non-AI business's P&L** rather than lifting a
+  supplier's multiple. If it spreads to other handset and PC makers, this
+  thread needs a demand-side strand: the story stops being who profits
+  from scarcity and becomes who pays for it — which reaches consumer
+  prices, and therefore inflation prints.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-05 (late catch, added 2026-08-11) — Nvidia tests cutting Rubin Ultra's own memory to cope with the shortage it's helping cause
 
 - **Nvidia is reportedly testing lower-memory configurations of its

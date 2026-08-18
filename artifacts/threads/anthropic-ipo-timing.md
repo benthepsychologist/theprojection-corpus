@@ -12,6 +12,36 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-17 — Run-rate past $65B, ahead of OpenAI, ahead of the filing ⟨caught late⟩
+
+*Logged 2026-08-18 by the coverage critic. Surfaced independently by all
+three critic-bearing lens sweeps — the strongest miss signal this map
+has recorded.*
+
+- **Anthropic's annualized revenue run-rate topped $65 billion in July,
+  disclosed to investors in a regular update.** Up from **$47B in May**
+  and **~$9B at the end of 2025** — roughly 7x in seven months — and it
+  puts Anthropic **ahead of OpenAI's ~$40B run rate**. Investors
+  reportedly expect $100–120B of full-year 2026 revenue, against a
+  targeted public valuation of **$2 trillion-plus** in an IPO expected
+  "as soon as this fall."
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo),
+  [CNBC](https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html),
+  [TechCrunch](https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/)) ⟨daily 2026-08-18⟩
+- **⚠️ This is NOT the $11.5B figure this map logged as caught-late on
+  08-17.** That is **quarterly** Q2 revenue, reported by Bloomberg on
+  08-14. This is an **annualized run-rate**, reported 08-17. Aggregators
+  merged the two all day and at least one sweep re-reported the quarterly
+  figure as though it were fresh. Two numbers, two dates, two meanings.
+  ⟨daily 2026-08-18⟩
+- **The filing has not caught up with the number.** No public S-1 or
+  S-1/A has appeared on EDGAR as of 08-18; the June 1 submission remains
+  confidential. A fall listing at a $2T target now has a run-rate
+  attached to it and no public document — that gap is what this thread
+  should be watching next.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-17 — Caught late: the Q2 revenue print this map never carried
 
 - 🕰 **Anthropic's Q2 revenue exceeded $11.5B, up roughly 14x year-on-year —

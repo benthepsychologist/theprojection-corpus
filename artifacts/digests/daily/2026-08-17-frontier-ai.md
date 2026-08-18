@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-17
-status: building
+status: final
 window_start: 2026-08-17T05:00:00-04:00
-as_of: 2026-08-17T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-18T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-17
@@ -20,7 +20,7 @@ including NVIDIA's 8-K, which this morning's pass did not read.*
 
 The Ohio guarantee got its number, and it was sitting in a filing that
 was public before this morning's pass ran. NVIDIA's 8-K — accepted at
-04:41 ET, four hours before the opening pass — caps the company's
+**08:41 ET** (corrected 08-18; see the finalize note) — caps the company's
 obligation at **$105 billion** and describes a residual-value guarantee
 on OpenAI's 20-year leases rather than the project backstop the press
 release implied, with OpenAI indemnifying NVIDIA for anything NVIDIA
@@ -199,12 +199,34 @@ books are destroyed to be scanned.
 
 ## ⏱ Release-watch & markets
 
-**No model releases or version ships inside today's window, confirmed
-twice.** A dedicated afternoon sweep of OpenAI, Anthropic, Google
-DeepMind, Meta, xAI, Mistral, DeepSeek, Moonshot/Kimi, Alibaba/Qwen and
-Z.ai found nothing dated today; the most recent Chinese-lab releases
-(Qwen3.8-Max/27B, GLM-5.3, DeepSeek-V4-Pro-0813) and Gemini 3.7 Flash all
-trace to 08-12 through 08-14.
+**⛔ CORRECTED 2026-08-18 — a model DID ship inside this window.** This
+section read "No model releases or version ships inside today's window,
+confirmed twice" through two passes. That was wrong, and the way it was
+wrong is instructive: the afternoon sweep correctly established that
+**Qwen3.8-Max** traces to 08-12 (this map logged its 2.4T weights landing
+on Hugging Face in the 08-12 digest) and then generalised from the Max to
+all of Alibaba's line, folding "Qwen3.8-Max/27B" into one already-counted
+event. They are two different models on two different dates.
+
+- **Alibaba launched Qwen3.8-27B, a laptop-class open-weight model, on
+  Monday 08-17.** CNBC, published 07:24 ET, is explicit: *"On Monday, the
+  Chinese tech giant launched an AI model, designed to run on consumer
+  hardware like laptops… and opened the weights of its most powerful
+  model."* Alibaba claims the 27B has "excellent capabilities" in coding,
+  professional work, research and long-horizon agentic tasks, and
+  **matches the performance of a model ten times its size**. It is
+  explicitly positioned against Meta's **Muse Glimmer** laptop family
+  announced the week prior — and the scoreboard Alibaba is defending is
+  real: Hugging Face put Qwen-derived models at **151,448 derivatives,
+  2.6x Meta's total footprint**. The strategic read CNBC draws, which
+  this map should carry forward: the 27B implies Alibaba expects advanced
+  models to run at the **edge**, not purely in datacentres.
+  ([CNBC](https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html))
+  <!-- k: t=china-stack-independence e=alibaba-qwen axis=release-watch sev=major -->
+
+The rest of the original finding stands: GLM-5.3 (08-14),
+DeepSeek-V4-Pro-0813 and Gemini 3.7 Flash all trace to 08-12 through
+08-14, and no US frontier lab shipped a model on 08-17.
 
 Three items surfaced today that are **not** today's news, recorded so
 they are not double-counted: Z.ai's **GLM-5.3** shipped 08-14 and OpenAI's
@@ -279,12 +301,99 @@ disambiguation. Left for Ben.
   attrition as a structural pattern — remain open for a word from Ben and
   are not re-offered a third time.
 
+## 🧮 Finalize pass — coverage critic + the closing window (2026-08-18)
+
+*The 08-17 digest-day closed at 05:00 ET on 08-18. This section is the
+finalize: the coverage critic against the four AI benchmarks, plus
+everything that happened between the 15:00 ET pass and the close.*
+
+**Benchmark status.** The Rundown AI, TLDR AI and The Neuron all
+published for both 08-17 and 08-18 — and because these are morning
+products, it is the **08-18 issues** that narrate Monday. The AI Daily
+Brief did not publish a daily-news episode for either day (its sitemap's
+newest dated entries are `/e/2026-08-14` and `/e/2026-08-16`; the 08-16
+entry is a weekly deep-dive recap, not a news lead). ✏️ *That last point
+corrects this map's own prior note that the outlet "published nothing
+across 08-15 to 08-17" — an 08-16 episode does exist; it is simply the
+wrong format to check recall against.*
+
+**Four real misses, and one of them was two of four benchmarks' lead.**
+
+- **Anthropic's annualized revenue run-rate topped $65 billion in July** —
+  TLDR AI's 08-18 lead headline, and independently the top item for the
+  capital-lens critic and the capex cluster. Up from **$47B in May** and
+  **~$9B at the end of 2025** — roughly 7x in seven months — and it puts
+  Anthropic **ahead of OpenAI's ~$40B run rate**. Shared with investors
+  as part of a regular update; investors reportedly expect $100–120B of
+  revenue for full-year 2026, against a targeted **$2 trillion-plus**
+  public valuation in an IPO expected "as soon as this fall." ⚠️ **This is
+  a different number from the $11.5B Q2 figure this digest already logged
+  as caught-late** — that was a quarterly print reported 08-14; this is an
+  annualized exit-run-rate disclosure dated 08-17, and the two were being
+  confused by aggregators all day.
+  ([TechCrunch](https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo),
+  [CNBC](https://www.cnbc.com/2026/08/17/anthropic-says-annualized-revenue-climbed-to-65-billion-in-july.html))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=capital-and-corporate sev=major -->
+- **Cursor launched "Origin," a code-hosting platform, on the morning
+  GitHub went down for six-plus hours.** The lead item for *both* TLDR
+  AI's and The Rundown AI's 08-18 issues. It puts Cursor directly onto
+  Microsoft's turf, and the timing — accidental, per Cursor's own team —
+  landed on GitHub's second major outage this month. This map has no
+  thread on the developer-tooling layer as a competitive surface, which
+  is why it was invisible here rather than merely missed.
+  <!-- k: t=microsoft-mai-openai-decoupling axis=capital-and-corporate -->
+- **Microsoft's stock fell roughly 3% — about $112 billion of market
+  value — on 08-17** after a report questioned whether its installed
+  AI-chip count matches its stated buildout targets (a reported 2.2
+  million chips installed against an earlier 1.8M target; Microsoft
+  disputed the calculation as resting on wrong assumptions). A
+  market-moving event squarely on the hyperscaler-credibility beat, and
+  this map had nothing on it. Note the contrast that makes it legible:
+  Nvidia moved **+0.21%** the same day.
+  ([Motley Fool](https://www.fool.com/investing/2026/08/17/why-microsoft-stock-dropped-today/))
+  <!-- k: t=microsoft-capex,ai-buildout-debt-risk e=microsoft axis=release-watch -->
+- **Stripe's acquisition of OpenRouter for over $7 billion** appeared in
+  three of the four benchmarks. Bloomberg's "nears deal" report is dated
+  **08-16** and the finalized/confirmed coverage **08-17**, so it
+  straddles two digest-days and was caught on neither. ⚠️ **This map
+  offered it as a thread candidate on 08-16 and again on 08-17 and never
+  wrote it as a bullet** — a candidate is not coverage, and a $7B
+  acquisition at a 5.4x markup on a $1.3B Series B three months old is an
+  event whether or not the thread exists.
+  <!-- k: t=frontier-lab-ipos axis=capital-and-corporate -->
+
+**One borderline item, recorded with its caveat rather than promoted.**
+Dario Amodei's two-part X reply to Gavin Baker's claim that he wants
+Anthropic to be "the only private company in the world" — he called the
+framing false, argued the regulation/no-regulation binary is a false
+choice, and said "the thing that will work is actually curing cancer," to
+roughly 10M views. It was the **lead of both The Rundown AI's and The
+Neuron's 08-17 issues**, so two independent editors judged it Monday's
+top story. But the triggering claim was Friday's (08-14) All-In podcast
+and TechCrunch's report on the reply is dated **08-16** — before this
+window opened. Logged as pre-window, not as an 08-17 miss.
+
+**Smaller funding items named in benchmark quick-hits, not led with:**
+Higgsfield's **$400M Series B at $5.4B post-money** (DST Global-led, with
+Goldman Sachs Alternatives and Intel Capital; annualized revenue
+reportedly ~$20M a year ago to **$700M** in August), Wispr's $280M raise,
+and Cartesia's Sonic-3.6 TTS beta.
+
+**Access findings — three routes are better than documented.** TLDR AI's
+RSS (`tldr.tech/api/rss/ai`) and its per-date URLs both resolve on plain
+curl with a Googlebot UA, no proxy. The Neuron's homepage renders a full
+dated archive on plain curl. The AI Daily Brief's `sitemap.xml` is the
+fastest authoritative "did it publish" check — date-guessed URLs 404
+cleanly when absent. The Rundown AI remains a client-rendered SPA: its
+homepage href list resolves but its text does not, so it has to be walked
+by `/p/<slug>`, with no per-date scheme.
+
 ---
 NVIDIA's 8-K put a number on the Ohio guarantee — $105 billion, capped,
 structured as a residual-value guarantee on OpenAI's 20-year leases and
 indemnified back to NVIDIA by OpenAI itself — and the filing was public
-four hours before this morning's pass, which read only the press release
-beside it. Groq raised at half its former valuation as an Nvidia customer
+before this morning's pass, which read only the press release beside it. Groq raised at half its former valuation as an Nvidia customer
 funded partly by Nvidia, a year after Nvidia hired its founder in a $20B
 licensing deal, making it the first rung on the vendor-financing stake
 ladder with a visible outcome. Jensen Huang spent the day rejecting the

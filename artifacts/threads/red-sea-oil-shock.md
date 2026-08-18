@@ -22,6 +22,34 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-18 — Qatar makes the Iran–Oman bilateral the gate on everything else
+
+- **Qatar's foreign ministry said the Iran–Oman bilateral Hormuz
+  agreement must land before broader US–Iran talks can resume**,
+  describing "positive signs" in the Iran–Oman track. That upgrades the
+  ledger item due 08-19 from "close but not signed" to **the gating
+  condition for this whole theatre.**
+  ([FXStreet](https://www.fxstreet.com/news/qatar-iran-oman-bilateral-hormuz-agreement-needed-before-us-iran-talks-202608181128)) ⟨daily 2026-08-18⟩
+- **Not signed as of 10:45 ET.** Coordinates are agreed and a joint
+  statement is in final drafting/review. **Iran's FM Araghchi has
+  pre-emptively narrowed what it would mean:** a temporary
+  **two-to-four-month navigation arrangement with no tolls**, explicitly
+  NOT a reopening of the Strait — that stays contingent on the US
+  honouring the expired MOU, withdrawing troops and paying compensation,
+  per Iran's national security chief.
+  ⟨daily 2026-08-18⟩
+- **Crude finally moved.** Brent ~$90.97 and WTI through $85, after
+  sitting flat through Monday's escalation — the change from yesterday's
+  reading, where the absence of an oil response was the strongest
+  evidence the market read the rhetoric as noise.
+  ⟨daily 2026-08-18⟩
+- **⚠️ Trap caught:** Oman's foreign ministry page for an "Oman–Iran joint
+  statement" is dated **23 June 2026** — a different, older statement from
+  the Muscat visit. It is not the pending Hormuz signing and must not be
+  read as it.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-17 — Iran claims a Hormuz "understanding" with Oman on the transit map; Oman hasn't confirmed, and Brent doesn't move
 
 - **Iranian Foreign Ministry spokesman Esmail Baghaei said "an

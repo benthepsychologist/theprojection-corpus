@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-17
-status: building
+status: final
 window_start: 2026-08-17T05:00:00-04:00
-as_of: 2026-08-17T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-18T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-17
@@ -320,6 +320,94 @@ collect showed them returning almost pure noise.
   of the same ledger, and the two will keep colliding. Track it
   separately? (curator-noticed)
 
+## 🧮 Finalize pass — coverage critic + the closing window (2026-08-18)
+
+*The digest-day closed at 05:00 ET on 08-18. All four mental-health
+benchmarks are weekday-only B2B trades, and 08-17 was a Monday — so all
+four published and this is a real recall check, not the structural
+weekend null this map logged on 08-15/08-16.*
+
+**Benchmark status: all four published.** Behavioral Health Business (via
+the documented Googlebot-UA route, no new tightening), STAT Health Tech
+(bare curl), Fierce Healthcare (homepage via WebFetch), MobiHealthNews
+(reader proxy).
+
+**Two misses, both from Behavioral Health Business.**
+
+- **Behavioral-health dealmaking is down 20% in the first half of 2026,
+  and Medicaid reform is the common cause across every subsector.** BHB's
+  own lead story of the day, published **15:19 ET** — i.e. nineteen
+  minutes after this map's afternoon pass closed. Mertz Taggart's Q2 2026
+  M&A report puts **69 closed deals in H1, down 20% year over year**.
+  Broken out: **mental-health-specific deals fell 20% for the quarter and
+  25% for the half** (20 deals closed in Q2), **addiction treatment
+  collapsed** — two closings in Q2 and six in Q1 against nineteen in H1
+  2025 — and I/DD and autism therapy fell ~14%, the shallowest drop and
+  the subsector drawing the most consistent investor interest. Managing
+  partner Kevin Taggart, verbatim: *"Anyone underwriting behavioral
+  health right now is underwriting Medicaid more cautiously than in years
+  past… Buyers with capital are being deliberate — paying up for clean,
+  in-network, growing businesses and being more diligent on everything
+  else. For an owner, that spread is the whole story."* The structural
+  consequence he names is consolidation-by-necessity: *"Merakey and I Am
+  Boundless exists because the Medicaid math doesn't work at smaller
+  scale… I expect more of those combinations over the next 18 months"* —
+  that June merger created a 12-state, 50,000-patient, 11,000-employee
+  operation, following Centerstone/Brightli a year earlier. The largest
+  mental-health deal on the board, the **$653.4M municipal-bond-backed
+  Advantage Behavioral/QCF deal, still has not closed.**
+  **Why this is the miss that matters:** this map tracked the *individual*
+  transactions all week — UHS/Talkspace closing, the Centene CFO exit,
+  Aetna/Alma rate cuts — without the aggregate that says the whole
+  category's deal flow is contracting, and why.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/))
+  <!-- k: t=mh-clinical-infra-funding e=universal-health-services axis=capital-and-corporate sev=major -->
+- **UHS's CEO gave an interview on what comes after Talkspace** — BHB's
+  second-most prominent story, 09:10 ET. A partial miss rather than a
+  clean one: this digest has the *fact* that Universal Health Services
+  closed the $835M acquisition, but not Marc Miller's forward strategy for
+  how Talkspace fits the outpatient-growth plan and what integration
+  looks like next. The deal is logged; the intent behind it is not.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/17/uhs-ceo-marc-miller-on-talkspace-outpatient-growth-and-what-comes-next/))
+  <!-- k: t=bigtech-into-health e=universal-health-services axis=capital-and-corporate -->
+
+**Checked and NOT misses, recorded so they are not re-checked.** STAT's
+Monday lead was the UnitedHealth IRS probe this digest already carries
+(paired with a paywalled private-equity-slowdown item on physician-group
+dealmaking — general healthcare finance, no confirmable MH angle).
+Fierce's and MobiHealthNews's other top stories — DocGo acquiring
+Hicuity Health (virtual critical care/ICU), Epic's real-time prior-auth
+rollout, Medicare Platform's $50M raise, a states'-role healthcare-cost
+report — are general health-tech without a behavioural-health angle.
+One BHB "Voices" column was excluded as sponsored advertorial.
+
+**Ledger: three entries re-checked at primary source, none moved.**
+`aetna-alma-rate-cut-effective` stays **passed-silent** — every source
+found previewing the 08-15 date was published on or before 08-04, and no
+post-15th confirmation exists from Alma, an Aetna provider bulletin, or
+either psychological association. Both Kaiser/NUHW entries stay
+**passed-silent**: Kaiser's own labour-relations page still ends at its
+08-11 "mediation is scheduled for August 11 to 14" post with no outcome,
+and NUHW's own news index has **nothing after 2026-07-27**.
+
+⚠️ **A third stale-year trap on the Kaiser/NUHW entries, from a third
+different year.** A search result claimed Kaiser and NUHW "met on
+Tuesday, August 26, 2026" to continue negotiating; fetched directly, the
+page describes a **2025** bargaining cycle. This map has now drawn false
+positives on this one ledger item from **2022, 2025, and now a
+2025-cycle page surfacing under a 2026-looking date**. The rule already
+written into the entry — accept nothing not fetched directly from the
+parties' own sites with a visible 2026 date — held, and is what caught it.
+
+**Access findings.** Two refinements to the documented routes, both about
+scope rather than new blocks: MobiHealthNews's reader-proxy requirement
+extends to **subpages**, not just the homepage (`/categories/payer` 403s
+on plain WebFetch); and Fierce Healthcare's block covers **individual
+article pages**, where even a Googlebot UA fails — the UA that reliably
+clears BHB's Cloudflare does not clear Fierce's. Site-scoped Google News
+RSS returned real headlines and pubDates for Fierce even where the
+article pages stayed blocked, which is the workable path.
+
 ---
 UnitedHealth drew scrutiny from three directions in one afternoon — an
 IRS transfer-pricing probe dating to March, an investor complaint
@@ -331,4 +419,7 @@ second company to a pilot that trades premarket review for real-world
 evidence, in which behavioural health is a named focus area still
 awaiting its first participant. And a randomised trial of two AI
 therapists found both helped, on a sample too small to tell them apart —
-a finding worth reading precisely, since it will be quoted loosely.
+a finding worth reading precisely, since it will be quoted loosely. And
+the finalize pass added the number that frames all of it: behavioural-
+health dealmaking is down 20% for the half, with addiction treatment down
+from nineteen closings to eight, on Medicaid-reform caution.

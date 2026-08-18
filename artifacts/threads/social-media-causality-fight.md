@@ -15,6 +15,29 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-18 — Opening statements in the states' case against Meta, in Oakland
+
+- **Opening statements began today in the states' federal trial against
+  Meta over child safety and social-media addiction**, in Oakland — a
+  multistate action, New Jersey among the plaintiffs, putting Instagram's
+  effect on minors in front of a jury. CNBC framed the stakes on 08-17 as
+  "astronomical" consequences at a critical moment.
+  ([AP](https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8)) ⟨daily 2026-08-18⟩
+- **⚠️ Do not confuse this with the verdict that already happened.** A
+  jury found **Instagram and YouTube liable in a landmark social-media
+  addiction trial on 2026-03-25**, a separate Los Angeles case. That
+  prior verdict is why this trial's stakes read the way they do — and it
+  surfaced during today's checking as an adjacent AP headline that could
+  easily have been written up as today's news.
+  ([AP](https://apnews.com/article/social-media-addiction-trial-la-5e54075023d837ccdc76c4ca512e925d)) ⟨daily 2026-08-18⟩
+- **Why this sits on this thread rather than a new one:** this thread
+  tracks the causality fight, and its own framing is that "policy runs
+  natural experiments faster than academia." A jury trial is a third
+  forum with a different evidentiary standard from either — and it
+  reaches a verdict whether or not the science resolves.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-12 — The evidence fight reaches an actual jury: Meta/TikTok youth-safety trial opens in Oakland
 
 - **A federal trial testing whether Meta and TikTok designed their

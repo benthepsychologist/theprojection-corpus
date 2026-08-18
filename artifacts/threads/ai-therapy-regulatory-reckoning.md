@@ -13,6 +13,44 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-18 — OpenAI ships the rule Colorado proposed as law seven days ago
+
+- **ChatGPT for Teens launched with an under-18 model spec that bans
+  encouraging emotional dependence.** Verbatim from OpenAI: the updated
+  spec "goes beyond blocking romantic or sexualized roleplay: ChatGPT
+  **should not use romantic language, encourage emotional dependence, or
+  imply that it has feelings or consciousness**." Users are placed into
+  the experience automatically if OpenAI's system **estimates** they are
+  under 18, or if they state an age of 13–17 — age-prediction as the
+  gate, not self-declaration alone.
+  ([OpenAI](https://openai.com/index/chatgpt-for-teens),
+  [TechCrunch](https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/),
+  [The Verge](https://www.theverge.com/ai-artificial-intelligence/981333/openai-chatgpt-teen-mode)) ⟨daily 2026-08-18⟩
+- **The overlap with Colorado's 08-11 proposed Chatbot Safety Act rules
+  is close to point-for-point:** age estimation, AI disclosure,
+  safeguards against simulated emotional dependence for teenagers, and
+  suicide/self-harm response protocols. Those rules take effect
+  2027-01-01. **The lab's version arrived one week after the regulator's
+  and sixteen months before it binds.**
+  ([OpenAI](https://openai.com/index/chatgpt-for-teens)) ⟨daily 2026-08-18⟩
+- **The rest of the safety surface:** age-appropriate safeguards in
+  self-harm, violence, **eating disorders**, dangerous activities and
+  explicit content; parental Quiet Hours, settings management and safety
+  notifications **now extended to eating-disorder signals specifically**;
+  break reminders; persistent product cues identifying ChatGPT as AI;
+  sensitive-image upload warnings; and **new public under-18 evaluations
+  added to OpenAI's system cards** covering self-harm, eating disorders,
+  violence, age-restricted goods and sexual content.
+  ([OpenAI](https://openai.com/index/chatgpt-for-teens)) ⟨daily 2026-08-18⟩
+- **The framing that holds the whole timeline:** TechCrunch's headline
+  reads "OpenAI launches a safer ChatGPT for teens — **years after teens
+  started using it**." The protections postdate the litigation, the state
+  bills and the reporting that produced both. **The open question is the
+  lag on everyone else** — whether Character.AI, Replika, Meta AI and xAI
+  ship equivalent under-18 specs, and how long they take.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/)) ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-15 — California's SB 903 clears its last committee hurdle, closest this thread's tracked bills have come to a floor vote
 
 - **SB 903 — Sen. Steve Padilla's "Wellness and Oversight for Psychological

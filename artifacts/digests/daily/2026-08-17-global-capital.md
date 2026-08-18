@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-17
-status: building
+status: final
 window_start: 2026-08-17T05:00:00-04:00
-as_of: 2026-08-17T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-18T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-17
@@ -19,8 +19,8 @@ corrects two of its own findings.*
 ## Today's throughline
 
 The Ohio guarantee got a number, and the number was in the filing all
-along. NVIDIA's 8-K — accepted at 04:41 ET, before this morning's pass
-ran, but read only as far as its press-release exhibit — caps the
+along. NVIDIA's 8-K — accepted at **08:41 ET** (corrected 08-18 from
+04:41), read only as far as its press-release exhibit — caps the
 company's aggregate obligation at **$105 billion** and describes a
 structure the press release never hinted at: not a project backstop but a
 **residual-value guarantee** on OpenAI's 20-year leases, triggered by
@@ -404,13 +404,155 @@ near-pure noise.
   denial specifically and fits them poorly. Track the coding/audit
   integrity question as its own thread? (curator-noticed)
 
+## 🧮 Finalize pass — coverage critic + the closing window (2026-08-18)
+
+*The 08-17 digest-day closed at 05:00 ET on 08-18. This section adds what
+the four capital benchmarks led with that this digest missed, plus the
+overnight.*
+
+**Benchmark status.** **Money Stuff** did not publish — its own 08-13
+column confirms a vacation through **08-24**, a clean non-publication.
+**FT Unhedged** published ("Broken FIMA"). **Axios Pro Rata** published
+its 08-17 "Founder flux" edition — and, contrary to this map's own
+standing access note, the reader proxy was **not** archive-blind this
+time; it was still serving the 08-17 issue at fetch time. **Bloomberg
+Technology's RSS returned 200 but was useless for recall**, which is the
+single most actionable finding of this pass — see below.
+
+**Four misses.**
+
+- **Anthropic's annualized revenue run-rate topped $65 billion in July**
+  — Bloomberg, 08-17. Up from **$47B in May** and **~$9B at end-2025**,
+  now **ahead of OpenAI's ~$40B** run rate, disclosed to investors ahead
+  of an IPO expected this fall at a reported **$2 trillion-plus** target
+  valuation, with investors expecting $100–120B of full-year 2026
+  revenue. ⚠️ **Distinct from the $11.5B Q2 print this digest logged as
+  caught-late** — quarterly revenue (reported 08-14) versus an annualized
+  run-rate (08-17). Aggregators conflated the two all day; this map
+  should not.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo))
+  <!-- k: t=frontier-lab-ipos,anthropic-ipo-timing e=anthropic axis=deals-and-filings sev=major -->
+- **Stripe agreed to acquire OpenRouter, the AI model-routing
+  marketplace, for more than $7 billion** — Axios Pro Rata's "BFD" (its
+  top deal item) and a Bloomberg Technology lead. A **5.4x markup** on
+  OpenRouter's $1.3B Series B from three months earlier. Bloomberg's
+  "nears deal" report is dated **08-16**, the confirmed coverage
+  **08-17** — it straddles two digest-days and was written on neither.
+  This map offered it as a *thread candidate* twice and never as a
+  bullet; a candidate is not coverage.
+  <!-- k: axis=deals-and-filings -->
+- **Higgsfield raised $400M Series B at $5.4B post-money**, DST
+  Global-led with Goldman Sachs Alternatives and Intel Capital
+  participating, announced 08-17. Annualized revenue reportedly went from
+  ~$20M a year ago to **$700M** in August.
+  <!-- k: axis=deals-and-filings -->
+- **FT Unhedged led with "Broken FIMA" — why Bessent's yen backstop is a
+  wobbly leg to stand on.** The column argues Treasury Secretary Bessent's
+  push to get the Fed to expand the **FIMA repo facility** (which lets
+  foreign central banks borrow dollars against Treasury collateral) is a
+  structurally weak basis for yen-intervention policy. This digest
+  carried EUR/USD and DXY levels and nothing on the mechanism.
+  📌 **Note this against a standing watch item:** the FT yen/BOJ theme
+  was flagged on 08-14 as five-in-two-weeks and again on 08-17 as a
+  **sixth** run. "Broken FIMA" is the closest it has come to the
+  "discrete, named, live mechanism" bar that watch set.
+  ([FT Unhedged](https://www.ft.com/unhedged))
+  <!-- k: t=fed-independence-fight axis=capital-in-my-markets -->
+
+**One lower-confidence item, recorded as such:** Bloomberg carried "AI
+Rally Set to Trigger Stock-Market Correction, ECB Blog Says" on 08-17 —
+ECB researchers warning the AI equity rally could correct with euro-zone
+knock-on effects. Blog-sourced commentary rather than a data point, but
+on-theme against this digest's own stretched-valuation signals.
+
+## 🕰 Caught late — NVIDIA's 13F, and what it actually shows
+
+**Nvidia's disclosed public-equity book is $63.4 billion, and this map
+had no number for it at all.** The 13F-HR was filed **2026-08-14 at
+16:19:53 ET** (accession 0001045810-26-000065, period ending 06-30) —
+four days before this finalize found it. This map has tracked "Nvidia's
+stake ladder" in prose since 07-27 and described it as *"Nebius 9.3% ·
+Naver $1B · Intel $5B · Groq ~$20B licensing."* The filing is the actual
+ledger, and it is a different object:
+
+| holding | 03-31 value | 06-30 value | shares 03-31 | shares 06-30 |
+| --- | --- | --- | --- | --- |
+| **Intel** | $7.93B | **$29.99B** | 214,776,632 | 214,776,632 |
+| **SpaceX** | — | **$20.98B** | — | 122,764,805 |
+| **CoreWeave** | $1.74B | **$4.70B** | 24,277,573 | 47,213,353 |
+| **Coherent** | — | **$3.07B** | — | 7,788,161 |
+| **Nokia** | $1.08B | $2.21B | 166,389,351 | 166,389,351 |
+| **Synopsys** | $2.26B | $2.15B | 4,821,717 | 4,821,717 |
+| **Nebius** | $0.10B | $0.33B | 1,190,476 | 1,190,476 |
+| **Generate Biomedicines** | — | $0.014B | — | 833,325 |
+| **TOTAL** | **$13.10B** | **$63.44B** | | |
+
+Three things in that table are not in any narrative account of the stake
+ladder, and each changes the reading:
+
+- **The book grew 4.8x in a quarter — but only about half of that is
+  buying.** Roughly **$26B is new positions** (SpaceX, Coherent, the
+  CoreWeave add). The other **~$24B is mark-to-market** on Intel and
+  Nokia, where the **share counts did not move at all**. Nvidia's Intel
+  position went from $7.9B to $30.0B without a single share being
+  purchased. Reporting the $30B as "Nvidia's Intel stake grew" would be
+  wrong; the stake is identical and Intel's price roughly 3.8x'd.
+- **SpaceX at $20.98B is the second-largest position and was entirely
+  absent from this map's ladder.** 122,764,805 shares, an implied
+  **~$170.86** per share at 06-30 — against the $135 IPO price this map
+  tracked, and against SPCX trading *below* issue in early August before
+  recovering. The position is disclosed at a mark the stock has since
+  given back.
+- **CoreWeave is the one existing position Nvidia actually added to** —
+  24.3M to 47.2M shares, **+94%** — which is the genuinely new
+  vendor-financing behaviour in the filing, and the smallest headline.
+
+⚠️ **Two sourcing notes.** Secondary reporting puts the Intel position at
+~$22B after Intel's own 08-12 offering diluted it; that is a reported
+figure, not in the filing, and this map carries the 06-30 filing number
+as primary. And **Naver does not appear in the 13F at all** — a 13F
+covers 13(f) securities, so the ladder's prose entries and the filing's
+holdings are overlapping, not identical, sets. Do not read the absence as
+a disposal.
+
+## 📊 Macro strip — closing values (finalize)
+
+- **VIX: 15.19** at Monday's 08-17 close, **+6.6% (+0.94)** from Friday's
+  14.25. ✅ This retires the "VIX stale, carried forward from 08-14" flag
+  the 15:00 pass filed. **Independently confirmed twice**: this map's own
+  FRED collector (`VIXCLS`, 2026-08-17) and a market-data vendor's 4:36pm
+  ET snapshot agree on 15.19 exactly.
+- **10Y–2Y spread: 0.53** (FRED, 2026-08-17) — the bear-steepener this
+  digest described, now with a number on it.
+- **10-year Treasury: 4.72–4.73%**, described as the highest in 20
+  months. The 15:00 pass carried 30y and 2y but not the 10y.
+- **30-year: 5.31%** · **2-year: 4.18%** — both holding at the levels
+  already logged, not new moves.
+
+## 🔎 Access finding — the one that changes a routine
+
+⛔ **Bloomberg Technology's RSS feed cannot be used for next-morning
+recall.** The feed (`feeds.bloomberg.com/technology/news.rss`) returned
+HTTP 200 with no proxy and no spoofed UA, exactly as documented — but it
+is a **rolling ~20-item window**, and by 10:00 ET on 08-18 it had rolled
+completely past every 08-17 item; all twenty were 08-18. A next-morning
+pull structurally misses the prior day **in its entirety**, and it does
+so silently, returning a healthy 200 the whole time. **This benchmark has
+to be pulled same-day, ideally by early evening ET.** WebSearch against
+Bloomberg's own dated bylined URLs substituted this time but is weaker —
+it depends on search-index coverage rather than returning a complete
+list. Two lesser findings: FT Unhedged's RSS gives title-plus-subhead and
+that is genuinely the ceiling (full text sits behind a security
+interstitial that survives Googlebot spoofing), and the Wayback Machine
+API returned 429 on both attempts, so it was unavailable as a fallback.
+
 ---
 The Ohio guarantee acquired its number from NVIDIA's own 8-K rather than
 its press release: $105B, capped, structured as a residual-value
 guarantee on OpenAI's 20-year leases and indemnified back to NVIDIA by
-OpenAI itself. The filing was public at 04:41 ET, before this morning's
-pass, which read only the press-release exhibit — the correction is this
-map's own. The long bond went to 5.31%, its highest since June 2007,
+OpenAI itself. The filing was public at 08:41 ET (a timestamp itself
+corrected on 08-18), and the pass that followed read only the
+press-release exhibit — the correction is this map's own. The long bond went to 5.31%, its highest since June 2007,
 while crude gave up its gains and Nvidia's stock moved 0.21%, which
 locates the day's repricing in debt supply rather than the Gulf. Groq
 raised at $3.5B, half its September valuation, as an Nvidia customer

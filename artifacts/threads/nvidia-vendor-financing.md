@@ -11,6 +11,44 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-14 — The stake ladder has a filed number, and it is $63.4 billion ⟨caught late⟩
+
+*Logged 2026-08-18. The 13F was filed 08-14 at 16:19:53 ET and sat
+unread for four days while this thread described the same holdings in
+prose.*
+
+- **Nvidia's disclosed public-equity book is $63.44 billion as of
+  2026-06-30, against $13.10 billion a quarter earlier.** The holdings:
+  **Intel $29.99B · SpaceX $20.98B · CoreWeave $4.70B · Coherent $3.07B ·
+  Nokia $2.21B · Synopsys $2.15B · Nebius $0.33B · Generate Biomedicines
+  $0.014B.** This thread has carried the ladder as "Nebius 9.3% · Naver
+  $1B · Intel $5B · Groq ~$20B licensing" since 07-27; the filing is the
+  actual ledger and it is a different object.
+  ([NVIDIA 13F-HR](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000065/information_table.xml)) ⟨daily 2026-08-18⟩
+- **⚠️ The 4.8x is the wrong headline — only about $26B of the growth is
+  buying.** Intel's share count is **identical across both quarters,
+  214,776,632**, so its $7.93B → $29.99B move is entirely price. Nokia's
+  share count is likewise unchanged at 166,389,351, and Synopsys's at
+  4,821,717. Roughly $24B of the quarter's $50B increase is
+  mark-to-market on positions Nvidia did not touch. Any account reading
+  "Nvidia's Intel stake grew" is describing Intel's share price.
+  ([NVIDIA 13F-HR](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000065/information_table.xml)) ⟨daily 2026-08-18⟩
+- **The genuinely new vendor-financing behaviour is CoreWeave, and it is
+  the smallest headline in the filing:** 24,277,573 → 47,213,353 shares,
+  **+94%**, the only pre-existing position Nvidia added to. New positions
+  are SpaceX (122,764,805 shares, ~$170.86 implied at 06-30), Coherent
+  and a token Generate Biomedicines stake.
+  ([NVIDIA 13F-HR](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000065/information_table.xml)) ⟨daily 2026-08-18⟩
+- **⚠️ Two sourcing notes for anyone reading this block later.** Secondary
+  reporting puts Intel at ~$22B after Intel's own 08-12 offering diluted
+  the position; that is reported, not filed, and this thread carries the
+  06-30 filing figure as primary. And **Naver does not appear in the 13F
+  at all** — a 13F covers 13(f) securities only, so this thread's prose
+  ladder and the filing's holdings are overlapping sets, not the same
+  set. **Absence from the filing is not evidence of a disposal.**
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-17 — Signed, and priced at $105B in the 8-K the press release didn't mention
 
 - **Nvidia, OpenAI and SoftBank's SB Energy jointly announced the signed
@@ -43,9 +81,13 @@ treatment; each new customer-equity position.
   actually paid by NVIDIA to the Lessor" — recourse runs back to the party
   whose insolvency is the trigger.
   ([NVIDIA 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm)) ⟨daily 2026-08-17⟩
-- **⚠️ Map-integrity note: the 8-K was public at 04:41 ET, four hours before
-  this map's morning pass recorded the figure as missing.** The morning read
-  stopped at exhibit EX-99.1, the press release. The lesson carried forward:
+- **⚠️ Map-integrity note: the 8-K was public at 08:41 ET, before this map's
+  pass recorded the figure as missing.** ✏️ *Timestamp corrected 2026-08-18:
+  this read "04:41 ET, four hours before" until the finalize pass checked
+  EDGAR's own `ACCEPTANCE-DATETIME` header (`20260817084133`) and the
+  submissions API (`2026-08-17T12:41:33Z`), which agree on 08:41 ET. The
+  original was a UTC-to-Pacific conversion mislabelled as Eastern.* The
+  morning read stopped at exhibit EX-99.1, the press release. The lesson carried forward:
   on any deal creating a financial obligation, the 8-K BODY (Items
   1.01/2.03) is the primary source and the press-release exhibit is not. ⟨daily 2026-08-17⟩
 - **Groq — rung four on this thread's stake ladder — raised $350M at $3.5B,

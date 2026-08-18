@@ -14,6 +14,39 @@ nearly the whole story: ~0 net-new nuclear MW power any AI datacenter yet;
 the first electrons arrive 2027 from a *restarted* reactor, not a new build.
 Watch which SMR/Gen-IV projects actually clear licensing (2030s-weighted).
 
+## 2026-07-30 → 08-17 — Three announcements, zero licences ⟨cold rotation⟩
+
+*Logged 2026-08-18, twenty-four days late — the coldest thread in the
+rotation. This thread's test is which projects clear LICENSING.*
+
+- **On the test: nothing moved.** No new NRC construction or operating
+  licence was granted to any AI-linked reactor project across the entire
+  07-25 → 08-18 window. Oklo's NRC Principal Design Criteria approval
+  (May 2026) and its DOE Reactor Pilot Program agreement (March 2026)
+  both predate it. **The thread's core claim — ~0 net-new MW before 2027,
+  every genuinely new SMR project 2030s-weighted — is unchanged and
+  unchallenged.**
+  ⟨daily 2026-08-18⟩
+- **Crusoe and Aalo Atomics announced a "first nuclear-powered AI
+  factory" (07-30)** — Aalo's 50MWe "Pod" (five 10MWe Aalo-1
+  microreactors) powering a Crusoe Spark modular AI datacenter, as a
+  **2027 proof-of-concept at Idaho National Laboratory**, with general
+  deployment at Crusoe sites targeted by end-2029. A partnership and a
+  demo, not a licence; Aalo's test reactor reached criticality 2026-07-04.
+  ([Crusoe](https://www.crusoe.ai/resources/newsroom/crusoe-and-aalo-atomics-form-strategic-partnership-with-goal-of-deploying-first-nuclear-powered-ai-factory)) ⟨daily 2026-08-18⟩
+- **X-Energy drew up to $1B more DOE funding for its Dow/Seadrift, Texas
+  project (08-13)**, announced alongside Q2 earnings and bringing total
+  federal backing to **up to $2.15B**. Funding escalation, not a
+  licensing event. **Centrus signed a uranium-enrichment supply contract
+  with X-Energy (08-17)** supporting Xe-100 and TRISO-X — supply-chain
+  progress, same category.
+  ⟨daily 2026-08-18⟩
+- **⚠️ Trap caught:** "Oklo stock jumps on $200M AI data center nuclear
+  plan" (dated 08-10) is a re-index of a DOE programme announced
+  **2026-07-21**, before this window. Excluded.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-04 — A named hyperscaler retreats from a nuclear-adjacent site (caught 08-05)
 
 - **AWS formally withdrew its application for a ~500MW, 8-building data

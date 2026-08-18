@@ -14,6 +14,46 @@ went near-zero and EPS missed — whether that combination is a one-quarter
 scare or the first real sign the spend is outrunning monetization. Part of
 `hyperscaler-capex-big-picture`.
 
+## 2026-07-29 — The capex discrepancy is resolved, against this map's number ⟨caught late⟩
+
+*Logged 2026-08-18 by the cold rotation. This thread's own watch text had
+flagged the discrepancy for resolution "at earnings Wednesday 07-29."
+Earnings happened; nobody read them; the flag sat for three weeks.*
+
+- **Meta's Q2 2026 capex was $31.08B and full-year 2026 guidance narrowed
+  to $130–145B**, from a prior $125–145B range. Revenue $60.8B (+28%),
+  EPS **$6.18 against a $7.17 estimate**, shares down 7–10% after hours.
+  **The $76B TTM basis this map carried is stale and is retired** — the
+  $135B/$145B figures that kept recurring in coverage were the correct
+  ones.
+  ([Meta 8-K exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1326801/000162828026050596/meta-06302026xexhibit991.htm)) ⟨daily 2026-08-18⟩
+
+## 2026-08-17 — ~$420B of AI obligations sit outside the balance sheet ⟨caught late⟩
+
+- **Meta reports $83.7B of on-balance-sheet debt and carries a reported
+  ~$420B of AI-related obligations outside it** — future lease
+  commitments including the **$27.3B Beignet/Hyperion structure with Blue
+  Owl**, chip and equipment purchase obligations, and the **$35B CoreWeave
+  commitment**. A wider cited analysis puts five hyperscalers (Alphabet,
+  Microsoft, Amazon, Meta, Oracle) at a combined **~$1.65 trillion** of
+  off-balance-sheet AI debt. **EY had already flagged the Beignet
+  structure as a critical audit matter in February 2026** — the structure
+  was known; the aggregate was not.
+  ⟨daily 2026-08-18⟩
+- This is the sharpest available statement of the thread's own thesis —
+  capex migrating off the balance sheet — and it reframes the guidance
+  number above: **$130–145B is what Meta will report spending, not the
+  size of what it has committed.**
+  ⟨daily 2026-08-18⟩
+- **Texas standards, and the El Paso exception:** Gov. Abbott announced
+  2026-08-10 that Meta agreed to comply with new Texas data-centre
+  standards, paying full grid and water infrastructure costs. It
+  explicitly does **not** resolve El Paso — the City Council was set to
+  send Abbott a formal letter on 2026-08-18 asking whether the statewide
+  standards apply to that project at all.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-07-30 — El Paso pushback gains an elected voice
 
 - **A Texas state representative is calling for a new review of El Paso's

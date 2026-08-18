@@ -21,6 +21,45 @@ export-control policy re-prices on it.
   ledger and a clean falsification test.
 -->
 
+## 2026-08-18 — Three weeks on, still nobody has confirmed a delivered tool ⟨cold rotation⟩
+
+*Logged 2026-08-18. This thread's own test is DELIVERY, NOT PRODUCTION —
+"a tool installed and running at a named fab, at a stated node and yield."
+That test is still unmet, and the non-result is the finding.*
+
+- **No confirmation exists, from Shanghai Aishengna or from any of SMIC,
+  Hua Hong or CXMT, of an installed, running tool at any node with any
+  yield or uptime figure.** Twenty-one days after the Reuters report. The
+  thread said "a slip here is as informative as a hit"; this is the slip,
+  and the 2026 target of ~5 systems still has four months to run.
+  ⟨daily 2026-08-18⟩
+- **A hard qualifier this map did not have: the tools support 28nm-class
+  single-exposure patterning only.** More advanced nodes would require
+  multi-patterning, and some critical components remain internationally
+  sourced with local-supplier delays. **That materially narrows what
+  "China has domestic immersion DUV" means** — and this thread is
+  load-bearing under the whole chokepoint picture, so the narrowing
+  propagates.
+  ⟨daily 2026-08-18⟩
+- **The market repriced and the company did not.** ASML fell as much as
+  **14%** on the 07-27/28 report — the largest single-day reaction on any
+  thread in this rotation, with Samsung, SK Hynix, Micron, SanDisk and
+  AMD also selling off. Then ASML's own Q2 **raised** 2026 net-sales
+  guidance to **€36–40B** from €34–39B, reaccelerated DUV immersion
+  shipment guidance to **~130 systems** (roughly flat year on year), and
+  described the order book as **"largely filled through 2027,"** with
+  China still ~20% of net sales. **No export-control policy change was
+  found tied to this story.**
+  ⟨daily 2026-08-18⟩
+- **⚠️ Naming collision resolved:** "Shanghai Yuliansheng"/"Yuliangsheng"
+  and "Shanghai Aishengna" are not rival efforts — the former is a
+  predecessor team absorbed into the latter, alongside the pre-existing
+  state champion SMEE. Two same-day 07-28 reports used different names
+  without cross-referencing, which is exactly how a single programme gets
+  double-counted as a race.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-07-30 — ASML's slide gets a number; delivery still hasn't fired
 
 - **ASML's slide is now quantified: -7%**, building into a "~€60B

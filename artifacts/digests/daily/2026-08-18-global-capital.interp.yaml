@@ -1,0 +1,119 @@
+# 2026-08-18-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by
+# slugify(bold_lead_phrase[:50]) — the [:50] truncation is what
+# render_read.py's load path actually looks up (verified against
+# kestrel/render_read.py:307 this run rather than assumed).
+#
+# ⚠️ 2026-08-18 — WRITTEN TO THE VALIDATOR'S SHAPE, WHICH PRIOR DAYS WERE
+# NOT. Every entry here was checked against readouts.validate_interpretation()
+# and passes clean. The real constraints, which are much tighter than the
+# prose style used on 08-13 through 08-17:
+#     mechanism        30-200 chars, must end in terminal punctuation
+#     confidence       speculative | plausible | well-supported  (NOT the
+#                      ledger's rumored/reported/confirmed vocabulary)
+#     scenarios        2-4 entries; direction 20-160, why 20-200 chars
+#     precedent        REQUIRED on >=1 scenario above `speculative`
+#     context_note     20-200 chars, a sentence
+# All six of 08-17's entries fail this shape (mechanisms of 680-1021 chars,
+# two using confidence: probable), as do earlier days'. They still RENDER —
+# render_read.load_interpretations() only tidies whitespace and does no
+# shape enforcement — so this has been silently non-conforming, not broken.
+# Flagged for Ben rather than back-fixed unasked; see today's session log.
+#
+# Three entries for eight bullets. Nothing was written for Ant/Paytm, the
+# Baidu revenue drop, the Asia/Europe overnight (same mechanism as the
+# rates entry, not a second one) or the SEC null. Read against
+# attention/capital-context.yaml (asof 2026-08-15), whose `rate_regime`
+# reading predates all three of this week's sessions.
+
+the-30-year-treasury-extended-its-19-year-high-to:
+  mechanism: >
+    A rising discount rate is repricing the longest-duration equity in the
+    index; the AI complex's cash flows sit past 2028, which is exactly where
+    a 5.32% 30-year does the most damage.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The repricing reaches credit next — AI-exposed spreads widen and the
+        marginal datacenter financing prices worse or not at all.
+      why: >
+        Equity duration reprices first because holders can sell instantly,
+        while lenders sit on existing paper; credit follows with a lag of
+        weeks if the rate move proves durable.
+      precedent: >
+        This map already logged the leading indicator: investors pulled ~36%
+        of initial orders on US investment-grade issuance in the week to
+        08-17, twice the prior week's rate — a credit market discriminating
+        before it closes. The 2022 rate shock ran the same sequence,
+        de-rating long-duration tech equity months before issuance windows
+        shut.
+    - direction: >
+        It stays a multiple event and never reaches financing; semis recover
+        once the long end stabilises.
+      why: >
+        The buildout's largest obligations are contracted, not
+        market-funded — NVIDIA's $105B guarantee, Meta's ~$420B, Microsoft's
+        $678B RPO — and contracted capital does not reprice with the tape.
+      precedent: >
+        Micron crossed $1,000 on Monday and gave it back Tuesday with no
+        change to the memory shortage underneath it — a multiple moving
+        while the fundamental did not, inside this map's own week.
+  context_note: >
+    Held at plausible, not higher: this is one intraday read at 10:09 ET,
+    and the strong evidence is the co-movement of three names on no news.
+
+bytedance-drew-more-than-30-billion-of-orders-for:
+  mechanism: >
+    Credit demand for AI-adjacent borrowers is becoming selective rather
+    than disappearing: lenders are repricing risk, not retreating from it.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        The bifurcation widens — cash-generative borrowers keep clearing big
+        books while SPV- and lease-financed buildout paper pays up.
+      why: >
+        An order book tracks the borrower's own cash generation more than
+        the sector's narrative, and the buildout's marginal financing sits a
+        step removed from any operating company's cash flow.
+    - direction: >
+        It is an idiosyncratic Asian syndicated-loan print with no read
+        across to US issuance at all.
+      why: >
+        Asian bank-loan and US public investment-grade order books follow
+        different conventions, so the two figures may simply not be
+        comparable quantities.
+  context_note: >
+    Kept speculative because the comparison spans two markets whose
+    order-book conventions differ; the direction is suggestive, not evidence.
+
+xiaomi-s-profit-fell-on-a-worsening-memory-chip-cr:
+  mechanism: >
+    Datacenter memory demand is bidding DRAM away from consumer devices, so
+    the shortage now taxes a buyer's margin instead of only lifting a
+    seller's multiple.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The tax spreads through consumer electronics — more handset, PC and
+        console makers report memory-driven margin compression.
+      why: >
+        Memory is a substitute-free commodity input on short contract
+        cycles, so a datacenter-driven price shock reaches every downstream
+        buyer at roughly the same time.
+      precedent: >
+        The 2017-18 DRAM shortage ran exactly this path: server demand bid
+        prices up, handset makers absorbed it in margin for two to three
+        quarters, then passed it to retail prices.
+    - direction: >
+        It stays Xiaomi-specific, a thinner-margin buyer feeling a shock
+        better-hedged rivals have already contracted around.
+      why: >
+        Long-term supply agreements and vertical integration insulate the
+        largest handset makers; Samsung makes its own memory and Apple
+        contracts years ahead.
+      precedent: >
+        Samsung's dual role as memory supplier and device maker has
+        repeatedly let it net out shortage cycles that hurt pure buyers.
+  context_note: >
+    If the first scenario holds, `ai-memory-shortage` needs a demand-side
+    strand — the story becomes who pays for scarcity, not who profits.

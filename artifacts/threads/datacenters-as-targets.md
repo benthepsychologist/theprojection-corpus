@@ -17,6 +17,41 @@ filing or on a call, war-risk underwriting and premia for datacentre
 assets, siting decisions citing geopolitical risk — and whether the
 precedent outlives this particular war.
 
+## 2026-07-30 — The thread's own live test came back: no disclosure ⟨caught late⟩
+
+*Logged 2026-08-18 by the cold rotation, nineteen days after the answer
+became available. This thread named Amazon's 07-30 earnings as "the first
+live test" of whether any hyperscaler would disclose the strikes.*
+
+- **Amazon disclosed nothing. Not in the 10-Q, not on the call.** Checked
+  directly against both primary documents: the Form 10-Q for the quarter
+  ended 2026-06-30 and the 2026-07-30 Q2 earnings-call transcript contain
+  **no mention of Iran, drones, missiles, Bahrain, the UAE, war risk, or
+  physical attacks on AWS facilities** — not in risk factors, not in legal
+  proceedings, not anywhere in the call.
+  ([Amazon 10-Q](https://www.sec.gov/Archives/edgar/data/0001018724/000101872426000026/amzn-20260630.htm)) ⟨daily 2026-08-18⟩
+- **What makes the null meaningful is that AWS did acknowledge the
+  strikes — to reporters, through a spokesperson, at the time they
+  happened.** A PR-channel acknowledgement and a securities-filing
+  disclosure are different acts with different consequences, and the gap
+  between them is now on the record for this thread. The war-risk term
+  this thread argues sits unpriced across every capex thread is, on this
+  evidence, also undisclosed.
+  ⟨daily 2026-08-18⟩
+- **First commercial response to the vector:** a Y Combinator-backed
+  startup launched a missile-intercepting drone-defence service marketed
+  to data centres and grid operators (2026-08-06). Adjacent: the FT
+  reported 2026-08-17 that Meta and BlackRock's $14bn data centre
+  "exposes lenders to insurance gap" — financing-structure risk rather
+  than war-risk premia specifically, but the first sign of lenders
+  pricing physical exposure at all.
+  ⟨daily 2026-08-18⟩
+- **⚠️ Not new, recorded so it is not re-counted:** the 07-28→30 wave of
+  "satellite imagery confirms Amazon Bahrain data center hit" coverage
+  re-reports the same 07-28 corroboration already in this thread.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-03 — Strike toll widens to "at least five"; first named underwriters go on record on war-risk pricing
 
 - **CNN reports the running toll has widened to "at least five" data

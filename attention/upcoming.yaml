@@ -277,9 +277,7 @@ expectations:
       grok-46-arrives-spacex-claims-all-employee-work-ai-training-material.htm).
 
   - id: grok-4-7-ship
-    claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24)"
-    due: 2026-08-21
-    due_precision: week
+    claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24; restated 08-12 to '3 to 4 weeks' from that date)"
     thread: grok-frontier
     entities: [xai]
     source: https://news.google.com/rss/search?q=Grok+4.7+Musk+four+weeks
@@ -287,6 +285,22 @@ expectations:
     what_confirms: "availability; double-slip risk on a chained promise"
     logged: 2026-07-27
     logged_by: curate-add   # /week sweep 07-27
+    # 2026-08-18 ⟨daily⟩: SLIPPED, three days ahead of its own due date,
+    # on a restatement rather than a miss. Musk posted 2026-08-12 that
+    # initial Grok 4.7 training was COMPLETE and the model had entered
+    # supplemental training on SpaceX engineering data, putting release
+    # "3 to 4 weeks" out from that point — early-to-mid September, already
+    # past 08-21. Corroborating: Grok 4.6 had itself slipped (target 08-07,
+    # actual 08-12), and as of 08-13 xAI's own published model list at
+    # docs.x.ai still topped out at grok-4.6. This is the "double-slip on a
+    # chained promise" the entry's own what_confirms anticipated — the
+    # second slip landed. No exact day committed, so due stays month-precision.
+    # ⚠️ Sourcing caveat: x.com/elonmusk could not be fetched directly
+    # (blocked); the 08-12 quote rests on three independent secondary
+    # outlets quoting it consistently, not on the post itself.
+    due: 2026-09-15
+    due_precision: month
+    slips: [2026-08-21]
     status: pending
 
   - id: anthropic-ipo-public-flip
@@ -1101,12 +1115,59 @@ expectations:
     # the subsidiary board-meeting date from the unconfirmed group-level
     # date) and folded the duplicate's 08-20 date in as a secondary
     # data point below rather than tracking both as separate claims.
-    status: pending
+    status: hit
+    resolved: 2026-08-18
+    evidence: >
+      Ping An Healthcare and Technology / "Ping An Good Doctor" (1833.HK)
+      published H1 2026 interim results on 2026-08-18: total revenue
+      RMB 2.484bn, net profit attributable to shareholders RMB 219mn
+      (+63.5% YoY), adjusted net profit RMB 227mn (+37.7% YoY). B-end
+      corporate health-management revenue RMB 714mn (+65.1% YoY), now
+      28.7% of total. The AI-contribution disclosure this entry was
+      explicitly holding for EXISTS: AI business contributed
+      ~4.6% of gross profit (AI业务贡献毛利占比约4.6%), alongside
+      9.7mn+ cumulative AI-doctor users and AI-medical-pay coverage at
+      149,000 of 245,000 partner pharmacies. Primary: Sina Finance
+      2026-08-18 19:46 CST
+      (finance.sina.com.cn/stock/bxjj/2026-08-18/doc-inintxxr9963018.shtml),
+      corroborated by DoNews same date with identical figures.
     note: >
       A second, less specific sourcing pass (2026-08-15, pingan.com) named
       2026-08-20 for "Ping An reports H1 2026 interim results" without
       distinguishing subsidiary vs. group level — kept here as a secondary
       date to watch if 08-18 passes without the group-level release.
+    # 2026-08-18 ⟨daily⟩: HIT on the subsidiary, on its due date. The
+    # 08-20 group-level date in the note above is now CONFIRMED by the
+    # company's own filing and split out as its own entry
+    # (`ping-an-group-h1-2026-interim-results`) rather than left as a
+    # secondary date here — the two are separate reporting events and
+    # only one of them has now happened.
+    # ⚠️ TRAP LOGGED: English-language wire mirrors (PRNewswire /
+    # Barchart) served 2026-dated URLs and headlines
+    # ("...reports strong interim results...AI fuels new growth momentum")
+    # whose BODY was the August 19 2025 H1-2025 release, prior-year numbers
+    # and all (RMB2.5bn revenue / RMB134mn profit, dateline "HONG KONG,
+    # Aug. 19, 2025"). The genuine 2026 figures were only reachable via
+    # primary Chinese-language financial press. Do not accept an English
+    # wire mirror for this issuer without checking the dateline in the body.
+
+  - id: ping-an-group-h1-2026-interim-results
+    claim: "Ping An Insurance Group (the parent, HK:2318 / SH:601318) holds its H1 2026 interim-results conference — the group-level release, separate from the 1833.HK healthcare subsidiary's own 08-18 results"
+    due: 2026-08-20
+    due_precision: day
+    thread: ping-an-insurtech-ai
+    entities: [ping-an]
+    source: https://group.pingan.com/
+    confidence: confirmed
+    what_confirms: "the group interim results themselves; watch for a group-level AI-contribution disclosure to sit alongside the subsidiary's 4.6%-of-gross-profit figure"
+    logged: 2026-08-18
+    logged_by: curate-add
+    # Pinned by the company's own voluntary announcement filed 2026-08-13
+    # to HKEX/SSE (自愿性公告 召开 2026 年中期业绩发布会, CFi.CN
+    # p20260813001115 / p20260813001361). This closes the "group-level date
+    # not independently confirmed" gap the subsidiary entry carried since
+    # it was logged on 08-04.
+    status: pending
 
   - id: compass-psilocybin-nda
     claim: "COMPASS Pathways files its psilocybin (COMP360) NDA for treatment-resistant depression — targeted Q4 2026, on an FDA National Priority Voucher compressing review to 1-2 months; Commissioner Makary has floated an approval decision by late 2026"
@@ -1341,7 +1402,33 @@ expectations:
     # down from ~58% in 2022. Netanyahu had secured control over nine top
     # list slots ahead of the vote; polling suggests Likud could shed about
     # a third of its seats in October.
-    status: pending
+    status: hit
+    resolved: 2026-08-18
+    evidence: >
+      Final count published 2026-08-18. Turnout 53% (76,068 members
+      voting), down from 58% in 2022 — confirming the ~5-point drop the
+      08-17 pass flagged from partial numbers. Netanyahu tops the list
+      automatically; behind him the elected order runs Eli Cohen (Energy
+      & Infrastructure) at 2, Knesset Speaker Amir Ohana at 3, Justice
+      Minister Yariv Levin at 4, with Miri Regev and coalition chairman
+      Ofir Katz completing the top five — Katz's placement the count's
+      one genuine surprise. Social Equality Minister May Golan failed to
+      win a slot.
+      ON THE SPECIFIC QUESTION THIS ENTRY ASKED — do Netanyahu's nine
+      controlled slots hold? YES, cleanly. The Central Committee gave him
+      eight reserved slots on 07-27 (he had sought ten); three more were
+      added 08-11 for Gideon Sa'ar, Israel Katz and Haim Katz, making
+      nine. Haim Katz's was briefly frozen by a party-court
+      conflict-of-interest order (he chairs the approving body) and
+      cleared the next day. His first non-incumbent reserved pick, tech
+      entrepreneur Oren Dobronsky, also held.
+      BUT the wider objective failed: Haaretz's same-day analysis
+      ("Netanyahu Failed to Purge His Opponents But Still Has Reason to
+      Celebrate") records that using reserved slots to dilute hardline
+      internal rivals did not work — Tally Gotliv and Shlomo Karhi held
+      on, and the party's Kahanist wing tightened its grip on the list.
+      Read as: his own picks are safe, his control of the party's
+      direction is not.
 
   - id: russia-duma-election
     claim: "Russia holds parliamentary elections 2026-09-18/20 — the first with Yabloko, its only openly anti-war party, barred from the ballot"

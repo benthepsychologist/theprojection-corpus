@@ -21,6 +21,40 @@ group's pending August 2026 interim results (an H1 AI-contribution
 disclosure would be the next real data point), and whether the claims-
 automation numbers keep climbing or plateau.
 
+## 2026-08-18 — H1 results land on the due date, with an AI number attached
+
+- **Ping An Healthcare and Technology / "Ping An Good Doctor" (1833.HK)
+  reported H1 2026 on its confirmed board-meeting date.** Total revenue
+  **RMB 2.484bn**; net profit attributable to shareholders **RMB 219mn,
+  +63.5% YoY**; adjusted net profit RMB 227mn, +37.7%. B-end corporate
+  health-management revenue **RMB 714mn, +65.1% YoY**, now **28.7% of
+  total** — the enterprise channel is where the growth is.
+  ([Sina Finance](https://finance.sina.com.cn/stock/bxjj/2026-08-18/doc-inintxxr9963018.shtml)) ⟨daily 2026-08-18⟩
+- **The disclosure this thread's ledger entry was explicitly holding for
+  exists: AI contributed ~4.6% of gross profit** (AI业务贡献毛利占比约4.6%),
+  alongside **9.7mn+ cumulative AI-doctor users** and AI-medical-pay
+  network coverage at **149,000 of 245,000 partner pharmacies.** A rare
+  case of a health company putting a hard number on AI's contribution to
+  the P&L rather than describing a strategy.
+  ([Sina Finance](https://finance.sina.com.cn/stock/bxjj/2026-08-18/doc-inintxxr9963018.shtml)) ⟨daily 2026-08-18⟩
+- **This is the SUBSIDIARY only. The group parent (HK:2318 / SH:601318)
+  reports separately on 2026-08-20**, now pinned by the company's own
+  voluntary HKEX/SSE announcement filed 08-13 — closing the
+  "group-level date unconfirmed" gap this thread carried since 08-04.
+  Watch for a group-level AI-contribution figure to set beside the 4.6%.
+  ⟨daily 2026-08-18⟩
+- **⚠️ Trap logged, and it is a nasty one for this issuer specifically:**
+  English-language wire mirrors (PRNewswire, Barchart) served
+  **2026-dated URLs and headlines** ("...reports strong interim
+  results...AI fuels new growth momentum") whose BODY was the **August 19
+  2025** H1-2025 release, prior-year numbers and all — RMB2.5bn revenue,
+  RMB134mn profit, dateline "HONG KONG, Aug. 19, 2025." The genuine 2026
+  figures were reachable only via primary Chinese-language financial
+  press. **Do not accept an English wire mirror for Ping An without
+  checking the dateline inside the body.**
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-04 — Thread opened + crawled ⟨crawl 2026-08-04⟩
 
 - **Opened following a board-pass audit that found the entire insurance

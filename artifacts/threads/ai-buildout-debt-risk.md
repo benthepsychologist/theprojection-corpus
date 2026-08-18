@@ -18,6 +18,35 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
+## 2026-08-18 — The rate channel reaches the AI trade, with no story attached
+
+- **The 30-year Treasury extended to 5.32% and the semis broke
+  together.** Live quotes at 10:09 ET: **NVIDIA −2.29% at $219.79**
+  (prior close $225.01) · **AMD −5.2% at $479.90** (prior close $506.00)
+  · **Micron −5.4% at $957.00** (prior close $1,011.75), handing back the
+  $1,000 it crossed on Monday inside one session. Nasdaq −1.2%, S&P 500
+  −0.46% at 7,709.14, Dow −0.3%. Oil above $85.
+  ([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html)) ⟨daily 2026-08-18⟩
+- **The co-movement is the evidence.** An idiosyncratic story moves one
+  name; a discount rate moves the whole duration bucket. No
+  company-specific news attaches to any of the three. **This is the
+  transmission channel this thread was opened to watch, appearing for the
+  first time without a narrative in front of it** — Monday's repricing
+  was visible only in the long bond while equities shrugged.
+  ⟨daily 2026-08-18⟩
+- **⚠️ Excluded as unverified:** a Jefferies note recirculating this
+  morning framing AMD's Helios/ROCm as taking Nvidia share. The AMD event
+  it discusses was 07-22/23, its price-target figures conflict across
+  sources, and **AMD fell harder than Nvidia today**, which is the
+  opposite of what that thesis predicts.
+  ⟨daily 2026-08-18⟩
+- **What to watch next, in order:** whether the next investment-grade
+  tech issue's order book holds against the ~36% initial-order pull rate
+  logged in the week to 08-17. Equity duration reprices first because
+  holders can sell; credit follows with a lag if the move is durable.
+  ⟨daily 2026-08-18⟩
+
+
 ## 2026-08-17 — Long end to a 19-year high while oil sits still
 
 - **The 30-year Treasury yield reached 5.31% at 2:14pm ET, its highest since

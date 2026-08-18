@@ -5,21 +5,55 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
-## 2026-08-17 — Aoun breaks with Hezbollah and asks for direct talks
+## 2026-08-18 — Aoun to extend UNIFIL "despite Hezbollah buildup"; talks continue
 
-- **Lebanon's president publicly broke with Hezbollah and called for
-  direct negotiations with Israel.** In a video conference with
-  European Commission President Ursula von der Leyen and European
-  Council President António Costa — joined by Egypt's Sisi and Iraq's
-  Sudani — President Joseph Aoun set out four points: a comprehensive
-  ceasefire, immediate logistical support for the Lebanese army, full
-  Hezbollah disarmament, and direct Lebanon–Israel talks under
-  international auspices. He accused Hezbollah of pushing Lebanon
-  toward collapse in the service of Iran's interests. From a Lebanese
-  head of state, on the record, to European leaders, this is a sharp
-  departure from Beirut's prior line and the most substantive movement
-  on this thread in weeks.
-  ([Reuters via Yahoo](https://www.yahoo.com/news/articles/lebanon-proposes-direct-negotiations-israel-165843732.html)) ⟨daily 2026-08-17⟩
+- **Lebanon's president moved to extend UNIFIL's mandate**, reported as
+  proceeding despite an Israeli-alleged Hezbollah buildup in the south —
+  the follow-through on his 08-17 statement below.
+  ([Jerusalem Post](https://www.jpost.com/)) ⟨daily 2026-08-18⟩
+- **Aoun said Lebanon is determined to continue negotiations with
+  Israel** — continuity with the framework, restated the morning after.
+  ([Naharnet](https://www.naharnet.com/stories/en/321927-aoun-says-lebanon-determined-to-continue-negotiations-with-israel)) ⟨daily 2026-08-18⟩
+
+## 2026-08-17 — Aoun defends UNIFIL against Israeli pressure to end it
+
+> ⛔ **This block was rewritten on 2026-08-18. It previously read "Aoun
+> breaks with Hezbollah and asks for direct talks" and described a
+> four-point plan delivered to von der Leyen and Costa. That was a
+> 2026-03-09 story** — the cited Reuters-via-Yahoo URL carries
+> `Published Time: 2026-03-09T16:58:43Z` — **surfaced by search
+> aggregation and written up as an 08-17 development.** It is retracted.
+> Google News searches on this thread's terms return the January and
+> March 2026 instances with near-identical wording ("comprehensive
+> ceasefire… full Hezbollah disarmament… direct negotiations under
+> international auspices"), so this is a recurring trap on this thread
+> specifically, not a one-off. Check the `Published Time` on any Aoun
+> item before writing it.
+
+- **Aoun welcomed a parliamentary petition to extend UNIFIL's mandate and
+  said extension is Lebanon's "first choice."** Verbatim: *"The presence
+  of UNIFIL in the south is important in many respects. It helps to keep
+  residents in their villages and towns and strengthens stability through
+  cooperation and coordination with the Lebanese Army… our first choice
+  is to extend UNIFIL's mandate."* His stated fallback is "a formula that
+  guarantees the continued presence of international forces in the south,
+  within the required legal framework," operating alongside the Lebanese
+  Army.
+  ([Naharnet](https://www.naharnet.com/stories/en/321884-aoun-our-first-choice-is-to-extend-unifil-s-mandate)) ⟨daily 2026-08-17⟩
+- **He named Israel as the party pressing to end the peacekeeping
+  presence** — *"Israel rejects the presence of UNIFIL and has been
+  exerting pressure in this direction for nearly a year, while we are
+  demanding its continued presence."* This is the actual axis of the
+  thread right now: not Beirut vs. Hezbollah, but Beirut and the UN
+  presence vs. Israeli pressure to remove it, with UNIFIL already in
+  phase-out and Human Rights Watch calling on 08-13 for peacekeepers to
+  stay.
+  ([Naharnet](https://www.naharnet.com/stories/en/321884-aoun-our-first-choice-is-to-extend-unifil-s-mandate)) ⟨daily 2026-08-17⟩
+- **Aoun also called for "state-to-state" relations with Iran and full
+  implementation of the framework deal**, and said that evening Lebanon
+  will stick to the Israel framework and counts on the US to implement
+  it — continuity under pressure, not rupture.
+  ([Naharnet](https://www.naharnet.com/stories/en/321894-aoun-calls-for-state-to-state-relations-with-iran-full-implementation-of-framework-deal)) ⟨daily 2026-08-17⟩
 - **⚠️ One widely-recirculating claim is excluded as stale:** a report
   of Israeli strikes on "120 targets in one hour" traces to a 2024
   event resurfaced by search aggregation, not to today. No new Israeli
