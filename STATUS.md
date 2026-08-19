@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*As of 2026-08-18*
+*As of 2026-08-19*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,14 +8,51 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers four days of live pipeline
-work (08-15 through 08-18: three `/daily` cycles finalizing/opening
-across all four lenses, a `/week` close for `week_of 08-10` recovered
-from an interrupted prior session, a kit sync bringing the base `AGENTS.md`
-schema and the local decay-review fix upstream into kestrel) plus a
-same-day site defect chase that started as one flagged page and widened
-into five separate rendering-pipeline bugs, fixed and verified across all
-1,727 published pages. The 08-14 note and everything older sit under it.*
+*Hand-maintained. Top note covers 08-19's opening `/daily` pass (finalized
+08-18 across all four lenses, opened 08-19 through ~14:30 ET, one
+briefings/publish cycle), on top of the four days of pipeline work
+(08-15 through 08-18: three `/daily` cycles, the `/week` close for
+`week_of 08-10`, a kit sync, and a five-bug site rendering-pipeline fix
+verified across all 1,727 published pages) recorded in the 08-18 note
+below it. The 08-14 note and everything older sit under that.*
+
+> **2026-08-19 (mid-day) — 08-18 finalized, 08-19 opened, one publish,
+> kestrel#25 filed with full repro.** Counts computed today: **99
+> threads** (85 open · 12 developing · 1 resolved · 1 retired —
+> unchanged from 08-18), **57 expectations** (41 pending · 12 hit · 4
+> passed-silent — unchanged from 08-18), **211 watchlist entries** (was
+> 204 at 08-18, +6 merged in from finalize), all **45 actor roll-ups**
+> (one refreshed, not a count change), **1 publish today**
+> (`publish-2026-08-19T143504Z.yaml`, 122 payload items / 67 entities
+> across ~100 threads). All three repos confirmed pushed via `git log
+> @{u}..` printing nothing on this repo, `theprojection-site`, and
+> `kestrel`.
+>
+> **`/daily`: 08-18 finalized, 08-19 opened.** 08-18 was old enough
+> (>5h past its 05:00 ET close) to finalize: ran the coverage critic on
+> the three critic-bearing lenses (frontier-ai, global-capital,
+> mental-health), folded late/critic-caught items into 08-18's
+> timelines, rebuilt affected thread pages, and merged in six watchlist
+> entities, one `actor-doing.yaml` refresh, and one `capital-context.yaml`
+> addendum from the four lenses' propose-lists. 08-19 opened `building`
+> and was extended via collector run + a light agentic-interim sweep
+> through ~14:30 ET; all four lenses are still `building` as of this
+> note — normal for mid-day, not a gap. Coverage critic on the 08-18
+> finalize found one real single-item miss (Bloomberg's Unitree
+> Robotics 460% IPO surge, proposed as a watchlist add rather than added
+> directly) against otherwise-covered ground.
+>
+> **kestrel#25 filed with the real repro.** The `md_html()` bold/nested-
+> italic regex bug found during the 08-18 site fix (below) was filed
+> upstream with `china-stack-independence.md`'s nested-italic case and
+> `tsmc-capacity-race.md`'s line-wrap case, the one-character fix, and a
+> note that `publish/adapter.py`'s local `_md_html()` copy should retire
+> once it lands.
+>
+> **Open pick-up:** the world-news thread candidate `Lubbock data-center
+> moratorium petition` (22 outlets) has now been offered twice (08-18,
+> 08-19) without a Ben decision — per the offered-twice rule it will not
+> be re-offered automatically; needs an explicit track/drop call.
 
 > **2026-08-18 (wrap) — three `/daily` cycles, `/week` closed, a
 > five-bug site rendering fix, three repos pushed.** Counts computed at
