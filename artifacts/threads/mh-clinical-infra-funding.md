@@ -12,6 +12,22 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-08-19 — UHS CEO's strategy, in his own words to a second outlet
+
+- **Healthcare Dive's independent Q&A with CEO Marc Miller closes this
+  thread's 08-17 partial-miss gap** (BHB had the interview first; this is
+  Healthcare Dive's own, published 08-19). Miller: UHS is "the largest
+  behavioral health provider in the U.S." by brick-and-mortar footprint,
+  and Talkspace extends that to serve patients "at any stage of their
+  mental health journey." On the demand thesis: "It's been obvious for
+  some time to us... there was example after example in many states of
+  unmet need" — partly a location/matching problem, partly reimbursement
+  and coverage gaps. He calls the deal "ultimately... going to be a great
+  financial decision" and frames the "à la carte" behavioral-health
+  strategy as central to UHS's pitch to investors amid broader
+  hospital-operator headwinds.
+  ([Healthcare Dive](https://www.healthcaredive.com/news/uhs-talkspace-acquisition-strategy-marc-miller-interview/828152/)) ⟨daily 2026-08-19⟩
+
 ## 2026-08-17 — UHS closes Talkspace; reaction is thin and one-sided
 
 - **Universal Health Services closed its $835M all-cash acquisition of

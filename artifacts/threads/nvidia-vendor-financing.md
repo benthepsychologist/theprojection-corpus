@@ -11,6 +11,32 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-19 — The mark-only-growth pattern this thread found in NVIDIA's 13F reproduces in SoftBank's
+
+- **SoftBank's own 13F shows the same structure this thread logged in
+  NVIDIA's Intel stake a week ago: 67% of a $18B disclosed US equity book
+  in one Intel position ($12.14B, 86,956,522 shares), with the identical
+  share count at both quarter-ends** — the position's filed value more
+  than tripled purely on Intel's price move, no new buying. Two of
+  Intel's largest disclosed stakeholders now show the same mark-only
+  pattern in the same filing cycle. Intel fell 26.6% between the 06-30
+  filing date and 08-14, so both marks are already stale in the other
+  direction.
+  ([qz.com](https://qz.com/softbank-intel-13f-sec-filing-081826)) ⟨daily 2026-08-19⟩
+
+## 2026-08-18 — The final number is framed explicitly as an answer to the circular-demand question
+
+- **Coverage of the signed $105B figure (see 08-17 entry below) is now
+  explicitly framed around why it landed $145B below the number that
+  first circulated.** Fortune's read: when a ~$250B figure surfaced in
+  July, Nvidia shares dropped ~4.5% intraday on investor concern the
+  buildout's demand was becoming artificial — lender-financed rather than
+  end-customer-financed. The $105B cap that actually got signed and filed
+  is read by the same outlets as a partial answer to that concern, not a
+  reversal of it: the obligation is real and large, but bounded and
+  phase-gated rather than open-ended.
+  ([Fortune](https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/)) ⟨daily 2026-08-18⟩
+
 ## 2026-08-14 — The stake ladder has a filed number, and it is $63.4 billion ⟨caught late⟩
 
 *Logged 2026-08-18. The 13F was filed 08-14 at 16:19:53 ET and sat

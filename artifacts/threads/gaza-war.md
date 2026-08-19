@@ -17,6 +17,22 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-19 — Nukhba commanders killed near Gaza port; Hamas restates ceasefire commitment
+
+- **Israel struck a meeting of Hamas's elite Nukhba-force commanders near
+  Gaza City's port, killing at least six people including a child, per
+  Palestinian medical sources.** The IDF said the strike hit a company
+  commander, three platoon commanders and other militants who were
+  meeting and planning attacks against Israeli troops.
+  ([Times of Israel](https://www.timesofisrael.com/idf-says-it-hit-meeting-of-elite-hamas-commanders-near-gaza-port-six-reported-dead/),
+  [CGTN](https://news.cgtn.com/news/2026-08-19/Israel-targets-Hamas-commanders-in-Gaza-despite-ceasefire-efforts-1PJbzhGGoyQ/p.html)) ⟨daily 2026-08-19⟩
+- **Hamas spokesman Hazem Qassem said the group "remains committed to the
+  agreed arrangements,"** naming Israel's withheld approval for
+  mediators as the real obstacle rather than treating the strike as
+  grounds to walk away — the same brinkmanship-without-collapse pattern
+  this thread has tracked since the disarmament framework opened.
+  ⟨daily 2026-08-19⟩
+
 ## 2026-08-18 — Likud's slate published; a strike on an October 7 participant
 
 - **Likud published its primary result and Netanyahu's nine controlled

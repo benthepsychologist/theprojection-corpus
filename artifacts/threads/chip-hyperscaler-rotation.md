@@ -39,6 +39,24 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-19 — Google pays a custom-chip partner in optionality instead of cash, and a memory maker answers the rotation debate with a buyback
+
+- **Google took a warrant on up to $12.2B of Marvell stock (~7%),
+  vesting against future custom-chip revenue rather than paid upfront** —
+  up to ~59M shares at $206.58, ~1.4M vesting year one, the remainder
+  across 240 tranches through fiscal 2033, one tranche per $500M of
+  custom-chip revenue Marvell books from Google. Marvell jumped 11%+
+  premarket; Broadcom, Google's incumbent custom-chip partner, fell
+  2-3%. A new financing-structure genre on this thread's ladder: a
+  demand guarantee priced in optionality rather than debt or equity.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares)) ⟨daily 2026-08-19⟩
+- **SK Hynix approved a $28.6B buyback and raised its shareholder-return
+  pledge to >50% of 2025-2027 free cash flow (~$170B)**, answering
+  investor pressure on memory makers to return more of AI-boom profits
+  rather than plow all of it into capacity. Shares rose sharply
+  premarket.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom)) ⟨daily 2026-08-19⟩
+
 ## 2026-08-17 — Micron through $1,000; an independent silicon effort ends
 
 - **Micron crossed $1,000 a share intraday, up about 5% and roughly 240%

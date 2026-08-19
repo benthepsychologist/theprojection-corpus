@@ -86,6 +86,76 @@ bytedance-drew-more-than-30-billion-of-orders-for:
     Kept speculative because the comparison spans two markets whose
     order-book conventions differ; the direction is suggestive, not evidence.
 
+at-the-close-memory-storage-had-widened-further-t:
+  mechanism: >
+    Off-balance-sheet AI commitments sit outside covenant tests and rating
+    triggers, so a widening gap between disclosed debt and real obligations
+    can grow for a long time with no market signal until a stress event
+    forces consolidation onto the balance sheet.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        A rating agency or auditor forces one hyperscaler to consolidate a
+        material chunk of its off-balance-sheet AI commitments, and the
+        resulting balance-sheet debt jump reprices its credit spread
+        sharply in a single event.
+      why: >
+        Lease and take-or-pay structures are consolidated under GAAP/IFRS
+        when the accounting substance overrides the form, and auditors have
+        already flagged at least one such structure as a critical audit
+        matter this year.
+      precedent: >
+        EY's February critical-audit-matter flag on Meta's Beignet
+        structure, already on this map, is the live example of an auditor
+        treating an off-balance-sheet AI structure as a genuine judgment
+        call rather than a settled classification.
+    - direction: >
+        The gap stays a disclosure curiosity — every firm's obligations are
+        contracted against real, growing AI revenue, so no consolidation
+        event or repricing ever triggers.
+      why: >
+        Off-balance-sheet treatment under operating-lease and
+        take-or-pay accounting is common and legal for real, performing
+        contracts, and most of the named obligations are tied to
+        currently-profitable AI businesses rather than speculative ones.
+      precedent: >
+        Airlines and shipping firms have carried large off-balance-sheet
+        operating-lease books for decades without a systemic consolidation
+        event, because the underlying assets kept earning.
+  context_note: >
+    capital-context.yaml does not yet carry an off-balance-sheet-obligations
+    reading at all; this and the $1.65T Meta-driven figure logged 08-17 are
+    the two data points that should seed one at the next refresh.
+
+anthropic-is-negotiating-a-pre-ipo-revolving-credi:
+  mechanism: >
+    A credit facility sized partly by bank competition for IPO underwriting
+    mandates is a weaker signal of balance-sheet need than one sized purely
+    against projected cash burn, so its size should not be read as
+    Anthropic's own liquidity forecast without discounting for that motive.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        The facility prices and draws are read by analysts as a genuine
+        pre-IPO liquidity cushion, and its size becomes a data point in
+        valuation discussions ahead of the listing.
+      why: >
+        A revolver this large, even if partly relationship-driven, still
+        appears on Anthropic's cap table and roadshow materials, where it
+        will be read at face value by investors who were not party to the
+        underwriting-mandate competition behind its size.
+    - direction: >
+        The facility is downsized before close once the IPO-mandate
+        jockeying settles, landing well under the reported $10B+ figure.
+      why: >
+        Reported deal sizes early in syndication routinely shrink once
+        banks that will not win a mandate lose the incentive to over-commit,
+        and this map's own reporting already flags the figure as unsettled.
+  context_note: >
+    Sits next to the $65B run-rate this map logged 08-17 — a company posting
+    that revenue lining up a facility four times its prior size is worth
+    tracking against how much of the increase survives to the actual close.
+
 xiaomi-s-profit-fell-on-a-worsening-memory-chip-cr:
   mechanism: >
     Datacenter memory demand is bidding DRAM away from consumer devices, so

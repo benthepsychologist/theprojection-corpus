@@ -13,6 +13,20 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-19 — GLM-5.3 gets API pricing, five days after it shipped
+
+- **Z.ai published per-token API pricing for GLM-5.3 — $1.40/million
+  input, $4.40/million output — closing the gap between the model's
+  08-14 release and a commercially usable API.** As recently as 08-16
+  Z.ai's own pricing page listed the General API as "coming soon."
+  Off-peak (weekends and weekdays outside 14:00-18:00 UTC+8) runs at
+  half price; the GLM Coding Plan subscription tiers run $18/$80/$168 a
+  month. Modest as a standalone event, but worth reading against
+  yesterday's WIRED piece on the same model's vulnerability-finding
+  capability: GLM-5.3 is simultaneously being priced for mainstream
+  developer adoption and flagged as a dual-use security risk.
+  ([VentureBeat](https://venturebeat.com/ai/glm-5-3-hits-the-api-at-1-4-4-4-per-million-tokens)) ⟨daily 2026-08-19⟩
+
 ## 2026-08-18 — GLM-5.3's cyber capability draws the warning its release did not
 
 - **WIRED's framing is the escalation, not a new release:** "The Powerful

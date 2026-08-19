@@ -1,9 +1,8 @@
 ---
 lens: world-news
 date: 2026-08-18
-status: building
+status: final
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T15:15:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -145,6 +144,55 @@ the substance now includes a body count.
   [Reuters via US News](https://www.usnews.com/news/world/articles/2026-08-17/russia-hits-ukraines-izmail-and-odesa-ports-in-overnight-strikes))
   <!-- k: t=russia-ukraine-war axis=items -->
 
+## 🧮 Finalize pass — the closing window (15:15 ET → 05:00 ET 08-19)
+
+*This lens carries no benchmark critic by design (`coverage: na`), so the
+finalize is a window sweep of the rest of the digest-day.*
+
+- **Iran fired two ballistic missiles at the UAE, targeting maritime
+  navigation — its first known attack on the Gulf state since May.** The
+  UAE Defense Ministry said air defenses detected the missiles, one
+  falling inside its territorial waters and the other outside; no
+  casualties or damage were reported, and the Interior Ministry told
+  residents any sounds heard were interceptions, not impacts. Iran's
+  Foreign Ministry spokesman Esmail Baghaei called the accusation
+  "baseless," with some reporting framing it as a possible false-flag
+  claim. Whichever account is right, this is the widening this thread
+  exists to track: a fifth Gulf state (after Iran's direct targets and
+  the earlier Jordan/Kuwait/Egypt reach) now inside the missile envelope.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/uae-says-iran-fired-two-missiles-at-country-as-war-drags-on),
+  [Jerusalem Post](https://www.jpost.com/middle-east/article-905908),
+  [The Hill](https://thehill.com/policy/defense/6035824-uae-detects-iranian-missiles/))
+  <!-- k: t=iran-conflict-widening axis=items sev=major -->
+- **Washington Post reporting, citing officials, says Trump's bomb-Oman
+  threat is specifically driven by opposition to two mechanical terms of
+  the Iran-Oman shipping arrangement: joint management of the strait's
+  exit route and Iranian collection of voluntary transit fees.** This
+  sharpens Monday's headline threat ("we'll bomb the s\*\*\* out of
+  them") into an actual policy objection rather than pure bluster —
+  worth logging with appropriate hedging since the underlying WaPo piece
+  could not be directly verified past its headline/summary during this
+  pass; multiple outlets (NBC, CBS, Yahoo Finance) corroborate the threat
+  itself independently.
+  ([Washington Post](https://www.washingtonpost.com/world/2026/08/18/oman-iran-war-us-hormuz/))
+  <!-- k: t=iran-conflict-widening axis=items -->
+
+**⏳ `iran-oman-hormuz-deal-signing` (due 08-19) — still drafting, not
+signed, as this window closes.** No government statement or wire report
+through 05:00 ET confirms a new signature. ⚠️ **Trap flagged for
+tomorrow's check:** Oman's foreign ministry's own "joint statement" page
+(fm.gov.om) is dated **23 June 2026** — a different, older Muscat-visit
+statement that keeps resurfacing in searches as if new. Confirm any
+"signed" claim against a dated primary source before writing it up.
+
+**🚨 Flash: still none, now checked across the full day including this
+closing window.** The UAE missile incident is real and is a widening —
+but it produced no casualties, no damage, and no market shock (the
+session's -0.44%/-0.21%/-1.02% slide already priced in Hormuz anxiety
+before this incident broke). It fits the same pattern as the *Minoan
+Dignity* strike earlier in the day: a continuation of a five-month
+campaign, not a discrete front-page-anywhere event.
+
 ## 🚨 Flash check
 
 **No flash, now the fifth consecutive day.** The *Minoan Dignity* fatality
@@ -219,7 +267,9 @@ bullet is clean.**
 **Three threads moved and had `last_seen` written back:**
 `iran-conflict-widening`, `red-sea-oil-shock`, `israel-lebanon-escalation`,
 plus `gaza-war`. No entity adds — consistent with this lens's convention
-of not tagging states or political actors as entities.
+of not tagging states or political actors as entities. The closing-window
+UAE missile incident is folded into `iran-conflict-widening`'s existing
+08-18 timeline block, not a new day-header (same digest-day).
 
 ## 🧵 Thread candidates
 
@@ -270,3 +320,9 @@ and his attempt to purge his hardline internal rivals failed anyway.
 And this map retracted its own lead Lebanon item from yesterday as a
 March story, replacing it with what Aoun actually said — that Israel has
 spent a year pressing to end the UN presence and Lebanon wants it kept.
+Late in the window, Iran fired two ballistic missiles at the UAE — its
+first known strike on the Gulf state since May, denied by Tehran as
+"baseless" — while the Iran-Oman shipping arrangement due tomorrow
+remained undrafted-into-signature and Washington Post reporting named
+joint management and transit fees as the specific terms driving Trump's
+Oman threat. No flash: a widening is not the same as a shock.

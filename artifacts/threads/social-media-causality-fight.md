@@ -30,6 +30,27 @@ claims being cited as one.
   surfaced during today's checking as an adjacent AP headline that could
   easily have been written up as today's news.
   ([AP](https://apnews.com/article/social-media-addiction-trial-la-5e54075023d837ccdc76c4ca512e925d)) ⟨daily 2026-08-18⟩
+- **Testimony from former Meta engineering director Arturo Béjar
+  continued into a second day (08-19), after Judge Yvonne Gonzalez
+  Rogers rejected Meta's bid to exclude him as a witness.** Béjar told
+  jurors Meta's internal harm-surveillance measured how much content
+  violated company policy, not how much harm it actually caused — and
+  read the court an email he'd sent Meta's chief product officer Chris
+  Cox making that same point at the time. California Deputy AG Megan
+  O'Neill's opening for the 29-state coalition quoted an internal
+  document: "the young ones are the best ones." Meta's opening rejected
+  the addiction-by-design claims outright. Claims in the case could
+  reach $200 billion.
+  ([Hawaii Tribune-Herald/AP](https://www.hawaiitribune-herald.com/2026/08/19/nation-world-news/meta-rejects-claims-it-sought-to-hook-children-to-facebook-instagram-as-landmark-trial-begins/),
+  [MLex](https://www.mlex.com/mlex/articles/2513425/bejar-can-testify-in-meta-trial-us-judge-says-as-claims-may-reach-200bn)) ⟨daily 2026-08-18⟩
+- **A second prior verdict this thread should hold alongside the LA
+  case: New Mexico.** A jury there hit Meta with $375M in civil
+  penalties in March 2026, and a judge added a $567M child-mental-health
+  abatement fund on 08-06 — $942M total, resolved well before this
+  window. Between LA (03-25), New Mexico ($942M as of 08-06) and now
+  Oakland (opening 08-18), this is the third parallel action against
+  Meta over child mental-health harm this thread is now tracking.
+  ([NPR](https://www.npr.org/2026/08/07/nx-s1-5924581/court-orders-instagram-and-facebooks-meta-to-pay-567m-to-address-kids-mental-health-online)) ⟨daily 2026-08-18⟩
 - **Why this sits on this thread rather than a new one:** this thread
   tracks the causality fight, and its own framing is that "policy runs
   natural experiments faster than academia." A jury trial is a third

@@ -24,6 +24,40 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-19 — UAE cuts all trade with Iran; Hormuz control flips to the Oman route
+
+- **The UAE suspended all trade, commercial exchange, and financial
+  transactions with Iran "until further notice,"** citing "regional
+  escalations that undermine regional and international peace and
+  security" — a direct response to 08-18's ballistic-missile incident.
+  The UAE is Iran's second-largest trading partner (after China) and a
+  critical re-export hub Tehran has used to absorb sanctions; a full
+  trade halt is a materially larger step than the missile incident that
+  triggered it. Iran continues to deny firing anything.
+  ([UPI](https://www.upi.com/Top_News/World-News/2026/08/19/UAE-Iran-trade-halted/7841787122722/),
+  [The National](https://www.thenationalnews.com/news/uae/2026/08/18/uae-suspends-trade-and-financial-transactions-with-iran/)) ⟨daily 2026-08-19⟩
+- **Iran's armed forces Chief of Staff Gen. Ali Abdollahi warned Gulf
+  states that assisting the US military will be treated as
+  collaboration**, and questioned whether the reported buildup of US
+  refueling aircraft at regional bases could be happening without host
+  governments' knowledge.
+  ([Tasnim News](https://www.tasnimnews.ir/en/news/2026/08/19/3674650/top-iranian-general-warns-regional-states-against-aiding-us)) ⟨daily 2026-08-19⟩
+- **Hormuz tanker traffic has physically flipped toward the Omani route
+  under US Navy escort — a reversal from mid-July's pattern.** Kpler now
+  measures 80%+ of liquids transits on the Oman-side channel (or
+  presumed-Oman "dark" transits) over the past two weeks, versus a
+  07-23 Kpler read that had ~70% of crossings gone and the remainder
+  almost entirely on the Iranian route. Control of the strait is now a
+  contest between two named routes, not a closure/reopening binary.
+  ([CNN](https://www.cnn.com/2026/08/19/world/video/oil-prices-tankers-gulf-oman-hormuz-digvid),
+  [CNN Business](https://www.cnn.com/2026/08/18/business/iran-strait-of-hormuz-oil)) ⟨daily 2026-08-19⟩
+- **⚠️ Trap avoided:** Oman's foreign ministry "joint statement" page
+  (fm.gov.om) resurfaces in searches as if freshly published; its own
+  dateline is **23 June 2026** — an older Muscat-visit statement, not a
+  new 08-19 signing. `iran-oman-hormuz-deal-signing` (due 08-19) stays
+  **pending**, not hit, as of this check.
+  ⟨daily 2026-08-19⟩
+
 ## 2026-08-18 — A map post, a contradiction, and no scheduled talks
 
 - **Trump posted an AI-generated map of the Strait of Hormuz circled and
@@ -45,6 +79,26 @@ concrete.
   08-18 Truth Social map post are both real and separately dated. Do not
   merge them.
   ⟨daily 2026-08-18⟩
+- **A Liberia-flagged bulk carrier, the *Minoan Dignity*, was struck by an
+  unidentified projectile transiting the Strait of Hormuz — the 18th
+  seafarer death in this campaign since February 28.** Trump responded
+  that the strait is "open and operating" and "all water mines have been
+  removed or detonated." Iran's parliament speaker Ghalibaf said the
+  strait stays shut until the US meets its June MOU obligations.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/18/vessel-hit-by-unknown-projectile-in-strait-of-hormuz-ukmto-says)) ⟨daily 2026-08-18⟩
+- **Iran fired two ballistic missiles at the UAE, targeting maritime
+  navigation — its first known attack on the Gulf state since May.** UAE
+  air defenses intercepted both; one fell in territorial waters, the
+  other outside, with no casualties or damage reported. Iran's Foreign
+  Ministry called the accusation "baseless"; some reporting framed it as
+  a possible false-flag claim. A fifth Gulf-adjacent state now inside the
+  campaign's reach, after Jordan, Kuwait, Egypt and Saudi Arabia.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/uae-says-iran-fired-two-missiles-at-country-as-war-drags-on),
+  [Jerusalem Post](https://www.jpost.com/middle-east/article-905908)) ⟨daily 2026-08-18⟩
+- **Washington Post reporting (officials, hedged) ties Trump's Oman-bomb
+  threat to two specific objections: joint Iran-Oman management of the
+  strait's exit route, and Iran's collection of voluntary transit fees.**
+  ([Washington Post](https://www.washingtonpost.com/world/2026/08/18/oman-iran-war-us-hormuz/)) ⟨daily 2026-08-18⟩
 
 ## 2026-08-17 — Iran declares a "fully offensive" posture ⟨late catch⟩
 

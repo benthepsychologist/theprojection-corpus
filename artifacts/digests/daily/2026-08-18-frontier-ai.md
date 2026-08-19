@@ -1,23 +1,25 @@
 ---
 lens: frontier-ai
 date: 2026-08-18
-status: building
+status: final
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T15:15:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-08-18
 
-*Curated agentic-interim, 05:00 ET through ~10:45 ET — an opening pass,
-roughly 18h from the close, so this stays `building`. Sources: today's
-collector run (rss, gdelt, google_news_rss, sec_edgar, federal_register,
-openalex, semantic_scholar, clinicaltrials, fred, fec, github) plus
-direct primary-source verification, including OpenAI's own announcement
-pages and live timestamped market quotes. A cold-rotation sweep of nine
-threads unchecked for 19–24 days also landed this pass; its findings
-belong to earlier dates and are recorded in 🧊 below rather than written
-as today's news.*
+*Curated across the full digest-day, 05:00 ET 08-18 through 05:00 ET
+08-19. Sources: two same-day agentic-interim passes (05:00-10:45 ET
+opening pass; 15:15 ET extension) plus a finalize pass covering the
+15:15 ET-to-close window and the four-benchmark coverage critic —
+today's collector runs (rss, gdelt, google_news_rss, sec_edgar,
+federal_register, openalex, semantic_scholar, clinicaltrials, fred, fec,
+github), direct primary-source verification (OpenAI's own announcement
+pages, court dockets, live timestamped market quotes), and WebSearch
+sweeps of TLDR AI, The Rundown AI and The Neuron's 08-18/08-19 issues. A
+cold-rotation sweep of nine threads unchecked for 19–24 days also landed
+in the opening pass; its findings belong to earlier dates and are
+recorded in 🧊 below rather than written as today's news.*
 
 ## Today's throughline
 
@@ -118,7 +120,24 @@ it crossed on Monday — and the cause is not in this lens at all. It is a
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/baidu-posts-fifth-straight-revenue-drop-as-ai-lag-widens))
   <!-- k: t=china-stack-independence axis=china -->
 
+## Capital & corporate
+
+- **Anthropic is preparing supervoting shares for its seven founders ahead of an IPO that could land as soon as late September — the first time its leadership would hold outsized voting power.** Per The Information, the dual-class structure would let Dario Amodei and his co-founders control major strategic decisions despite owning a combined stake under 5% (Amodei himself holds roughly 2%); Anthropic would also keep its existing body of non-shareholder trustees, who hold a separate special stock class electing most board seats. CFO Krishna Rao has already met prospective investors; the company was last valued at $965B privately and could reach a $2T target at IPO. The plans are not final and terms could still change. ([Investing.com/The Information](https://www.investing.com/news/stock-market-news/anthropic-prepares-supervoting-power-for-founders-ahead-of-ipo-the-information-reports-4866144), [BeInCrypto](https://beincrypto.com/anthropic-ipo-supervoting-shares-spacex/))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=capital-and-corporate -->
+
 ## Research & safety
+
+- **OpenAI disclosed it paused reinforcement-learning training on its next model family, codenamed Astra, for a little over two weeks after preliminary signs the model might cross the "Critical" cybersecurity-capability tier on its own Preparedness Framework — and its single largest planned frontier training run is still on hold.** The trigger combines the Hugging Face/Modal Labs breach this map has tracked since 07-29 with internal Astra evaluation results. New safeguards: ~20% additional compute overhead for training-time monitoring, automated alerts within a 30-minute window on concerning activity, and training runs pausing automatically if the safety team cannot rule out a false alarm inside that window. Investigating the original breach is estimated to have cost $4-15M in compute. **Sam Altman told TIME the same day that the slowdown has no single "smoking gun"** — it is "various degrees of misalignment" showing up across a collection of research observations as capability outran researchers' own expectations — and named the industry's race dynamic itself as the danger: *"I don't like the whole thing in this field of 'we have to race' or 'we have to do this because somebody else is going to do it.' I think that's a very dangerous dynamic."* OpenAI has not disclosed what the misalignment research found. This is the second lab head this window making a public case for slowing down (Dario Amodei's pacingthefrontier.com sits at the top of this map's `openai-agent-security-incident` watch), and the first time either lab has tied a concrete, dated production decision — a two-week RL pause on a named model — to the argument rather than an open letter alone.
+  ([OpenAI](https://openai.com/index/pacing-model-development-cyber-capabilities/),
+  [Fortune](https://fortune.com/2026/08/18/openai-says-it-paused-ai-training-for-two-weeks-and-announces-new-security-protocols-following-hugging-face-hack/),
+  [Time](https://time.com/article/2026/08/18/openai-slowing-training/))
+  <!-- k: t=openai-agent-security-incident,frontier-model-gov-review-precedent e=openai axis=research-and-safety sev=major -->
+
+- **Google won a bankruptcy auction for part of Spirit Airlines' enterprise dataset — 100 million emails, 500 million Teams chats, pricing/booking/operations records — for $10 million, explicitly to train its AI models, and it is this map's second training-data-provenance story inside three days.** Court filing dated 08-14, reported 08-17/18. Personal passenger data (97.5M profiles, 50.2M loyalty records) is excluded and the rest is contractually "deidentified," per the filing, with re-identification barred. Google beat a $7.5M bid from Mercor.io. Read against the 08-17 finding that Amazon is destroying rare pre-2022 books to train Nova on text guaranteed free of LLM-generated content: two hyperscalers, two different training-data acquisition strategies (bankrupt-estate enterprise records vs. physical out-of-print books), same underlying scarcity — clean, uncontaminated, or simply proprietary text is now something companies bid for at auction. **No entity annotation for the same reason logged 08-17:** neither `google` nor any existing slug cleanly names an AI-training-data operation distinct from the parent org; left generic pending a watchlist add.
+  ([Skift](https://skift.com/2026/08/17/google-scoops-up-spirits-data-in-bankruptcy-sale-to-train-ai/),
+  [CNN](https://www.cnn.com/2026/08/18/business/google-spirit-airlines-data),
+  [Axios](https://www.axios.com/2026/08/17/google-spirit-airlines-bankruptcy))
+  <!-- k: e=google axis=research-and-safety -->
 
 - **MIT Technology Review argues recursive self-improvement may not
   arrive as fast as the takeoff arguments assume** — a direct engagement
@@ -196,13 +215,19 @@ Nvidia today, which is the opposite of what a share-shift story would
 predict.
 
 - **Etched, an AI inference-chip startup, quadrupled its valuation to
-  $21B in seven weeks** on a $700M round led by Jane Street. Path: $5B
-  (Dec-25) → $10.3B Series C (Jul-26) → $21B (today). Etched's pitch is
-  inference-specific hardware — a low-voltage "prefill" chip plus
-  shared cluster-scale memory — positioned against Nvidia on cost/speed
-  for inference rather than training. First appearance on this map; no
-  entity slug exists for it yet.
-  ([TechCrunch](https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/))
+  $21B in seven weeks — and it isn't just a paper round, the hardware is
+  live at a real customer.** $700M round led by Jane Street, with
+  Kleiner Perkins, Sequoia, a16z, Peter Thiel, BCV and Blackstone also
+  in. Path: $5B (Dec-25) → $10.3B Series C (Jul-26) → $21B (today).
+  Etched confirmed it shipped its first production rack to Jane Street —
+  now both lead investor and first customer — which is actively running
+  it in its own trading workloads. Etched's pitch is inference-specific
+  hardware — a low-voltage "prefill" chip plus shared cluster-scale
+  memory — positioned against Nvidia on cost/speed for inference rather
+  than training. First appearance on this map; no entity slug exists for
+  it yet.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/),
+  [GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/18/3347095/0/en/etched-raises-700m-at-a-21b-valuation-and-completes-first-customer-delivery-to-jane-street.html))
   <!-- k: axis=release-watch -->
 
 **Afternoon market update, ~3:10 PM ET:** the memory-stock selloff
@@ -341,7 +366,22 @@ but the hearing date itself was never re-set. Then
 `apple-cxmt-senate-deadline` (08-21), where Apple has still made no
 public response to the Banks/Schumer letter's question.
 
+⚠️ **NOT flipped this pass:** as of this finalize, the 08-19 hearing date
+had not yet arrived within this digest-day's own window (it falls on
+08-19, after this digest-day's 05:00 ET close) — CourtListener showed no
+ruling or hearing-outcome entry as of the last check. This entry stays
+`pending` for `/daily` on 08-19 to resolve against the actual hearing
+record, not this pass.
+
 ## 🔄 Map changes
+
+**Finalize pass:** `openai-agent-security-incident`'s TODAY block
+(`artifacts/threads/openai-agent-security-incident.md`) was rebuilt to
+add the Astra RL-pause finding alongside the safeguards/framework-rewrite
+finding already there. No watchlist or threads.yaml edits made directly
+by this pass; a training-data-provenance thread candidate and a Google
+AI-training-data entity gap are proposed below and in the coverage log
+for Ben's call.
 
 **`meta-capex`'s watch text carried a wrong capex basis for weeks and is
 being corrected** — $76B TTM out, $130–145B FY2026 guidance in, sourced
@@ -399,9 +439,13 @@ yesterday's coverage-log.
   models exhaustively and has no thread on the tools developers actually
   touch — which is where model share converts into lock-in. Track it?
   (curator-noticed)
-- **Carried, second and final offer:** training-data provenance and
-  exhaustion (Amazon destroying pre-2022 books for Nova). Offered 08-17;
-  no word yet.
+- **Carried, second and final offer, now with a second same-window
+  instance backing it — training-data provenance and exhaustion.**
+  Amazon destroying pre-2022 books for Nova (08-17) plus, today, Google
+  buying Spirit Airlines' bankrupt enterprise dataset at auction to
+  train its own models. Two hyperscalers, two acquisition strategies,
+  one underlying scarcity, one day apart. Offered 08-17; not yet
+  answered. Track it? (curator-noticed)
 - **Dropping without a third offer:** non-lab roll-up of the AI
   model-access layer. ⚠️ **But note what happened to it** — it was
   offered on 08-16 and 08-17 as a candidate, and in the meantime the
@@ -410,16 +454,84 @@ yesterday's coverage-log.
   worth a bullet without being worth a thread, and this map treated the
   two as one decision.
 
+## 🧮 Finalize pass — coverage critic + the closing window (2026-08-19)
+
+*The 08-18 digest-day closed at 05:00 ET on 08-19. This section covers
+everything found between the 15:15 ET extension pass and the close, plus
+the coverage critic against the four AI benchmarks.*
+
+**Benchmark status.** TLDR AI, The Rundown AI and The Neuron all
+published 08-18 issues narrating Monday-into-Tuesday's news (TLDR AI and
+The Rundown AI directly fetched and read in full; The Neuron's dated
+archive could not be walked cleanly this pass, so its check rests on
+secondary aggregation and is weaker than the other three). The AI Daily
+Brief again has no 08-18 news episode — its most recent is 08-17,
+continuing the pattern already logged twice this week.
+
+**No hard misses found.** Checked against TLDR AI's and The Rundown
+AI's full 08-18 lead lists: ChatGPT for Teens (led both), Stripe/
+OpenRouter's finalized $7B+ deal (both — already logged as a straddling
+miss in the 08-17 finalize, not re-counted here), Groq's $350M round and
+Anthropic's $65B run-rate (both carried over from 08-17's own digest
+body/appendix, not new), and Cursor's Origin launch (already a thread
+candidate in this digest). Every benchmark lead for 08-18 traces to a
+story this map already carries, on this date or the one before.
+
+**One smaller item, named in a benchmark quick-hit rather than led
+with, folded in above rather than skipped:** AMD claims a 4x AI
+energy-efficiency gain since 2024 on its Helios rack-scale platform
+(ahead of its own 3x-by-2026 target, en route to a 20x-by-2030 goal
+set June 2025) — a progress update on the Helios launch this map
+already covered 07-23, not a new event in its own right, so recorded
+here rather than as a standalone bullet.
+
+**What this pass added that no benchmark carried as a lead, found via
+direct primary-source checks rather than benchmark recall:** OpenAI's
+Astra RL-pause and Altman's TIME interview (Techmeme/Axios flagged it,
+but none of the four daily benchmarks led with it over the safeguards
+story), Anthropic's founder supervoting-shares plan (The Information's
+own scoop, pre-benchmark), and the Google/Spirit Airlines training-data
+purchase (trade and consumer press, not an AI-newsletter lead). These
+three are this pass's actual editorial contribution beyond benchmark
+parity.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Nothing found. TLDR AI's and The Rundown
+AI's full 08-18 lead lists (ChatGPT for Teens, Stripe/OpenRouter,
+Groq, Anthropic's run-rate, Cursor Origin) all trace to stories already
+in this digest or the 08-17 one. The Neuron's check is weaker this
+pass (archive not cleanly walked) and should be re-verified directly
+next time rather than assumed clean.
+
+**Both covered:** ChatGPT for Teens · GLM-5.3 security framing · Qwen3.8-27B ·
+Baidu's revenue decline · the semis selloff · Groq's down-round ·
+Anthropic's $65B run-rate · Stripe/OpenRouter (logged on 08-17, cross-
+referenced here) · Etched's $21B round and first shipped rack.
+
+**We had → they didn't:** OpenAI's Astra training pause and Altman's
+misalignment remarks (Techmeme-flagged, not a benchmark lead), Anthropic's
+supervoting-shares plan, Google's Spirit Airlines data purchase, the
+nine-thread cold-rotation sweep (Amazon's Iran-strike SEC non-disclosure,
+`meta-capex`'s corrected basis, `china-duv-lithography`'s 28nm qualifier).
+
 ---
 OpenAI shipped ChatGPT for Teens with an under-18 rule against
 encouraging emotional dependence — the same requirement Colorado proposed
-as regulation on 08-11 and that this map caught six days late. The
-Chinese open-weight race produced two items pulling in opposite
-directions: WIRED's warning that GLM-5.3's vulnerability-finding ability
-cannot be recalled once the weights are out, and Baidu's fifth straight
-revenue decline. Semis sold off together — Nvidia, AMD and Micron, with
-Micron surrendering the $1,000 it crossed on Monday — on a 30-year yield
-at 5.32% rather than on anything in this lens. And a cold-rotation sweep
-of nine long-unchecked threads found that Amazon disclosed the missile
-strikes on its Bahrain and UAE data centres to reporters but not to the
-SEC, which was the question one of those threads was built to ask.
+as regulation on 08-11 and that this map caught six days late — and then,
+later the same day, disclosed it had paused RL training on its next
+model, Astra, for two weeks over cyber-capability signals, with Altman
+telling TIME the real cause was "various degrees of misalignment," not
+one incident. The Chinese open-weight race produced two items pulling in
+opposite directions: WIRED's warning that GLM-5.3's vulnerability-finding
+ability cannot be recalled once the weights are out, and Baidu's fifth
+straight revenue decline. Semis sold off together — Nvidia, AMD and
+Micron, with Micron surrendering the $1,000 it crossed on Monday — on a
+30-year yield at 5.32% rather than on anything in this lens. Anthropic
+moved to lock in founder control ahead of a possible late-September IPO,
+and Google bought a bankrupt airline's business data at auction to train
+its models — the second training-data-scarcity story in two days. And a
+cold-rotation sweep of nine long-unchecked threads found that Amazon
+disclosed the missile strikes on its Bahrain and UAE data centres to
+reporters but not to the SEC, which was the question one of those
+threads was built to ask.

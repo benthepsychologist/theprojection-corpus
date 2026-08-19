@@ -8,6 +8,30 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-08-19 — The rate channel goes cross-border, then reverses at home
+
+- **Japan's own version of Monday's story: a 10-year JGB push toward its
+  highest yield since 1996 broke Tokyo's AI-proxy stocks together, with a
+  sell-side analyst naming the mechanism explicitly.** Nikkei 225 closed
+  −2.54% to −2.56% (~67,460); SoftBank Group −8%+, Kioxia −9-13%, Arm −6%
+  in US trading, Tokyo Electron −4.4%. A Daiwa Asset Management
+  strategist: "higher yields will push up borrowing costs for
+  hyperscalers, triggering market doubts over capital expenditure
+  prospects." This is the same transmission channel this thread opened to
+  watch, appearing a second time in five days on a different continent.
+  ([cryptobriefing.com](https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/),
+  [TradingKey](https://www.tradingkey.com/analysis/stocks/us-stocks/262116672-japan-stocks-nikkei-bond-yield-softbank-kioxia-ai-tradingkey)) ⟨daily 2026-08-19⟩
+- **Hours later, the US leg reversed via policy intervention rather than
+  market stabilization.** Treasury at least doubled its long-bond buyback
+  size (10-20yr and 20-30yr sectors, $2B → "at least" $4B per operation),
+  an unscheduled escalation. The 30-year fell from Tuesday's 5.32-5.34%
+  intraday high to **5.196%**, the 10-year to **4.647%**, and US equity
+  futures/stocks rallied. **This directly answers the "what to watch
+  next" note logged here 08-18** — the market-test of the next
+  investment-grade order book never had to happen, because Treasury acted
+  first.
+  ([CNBC](https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html)) ⟨daily 2026-08-19⟩
+
 *Watch:* Whether AI-buildout debt is becoming its own underwritten, rated,
 publicly-watched risk category rather than a footnote inside each
 borrower's story. Track: whether rating agencies publish an explicit
@@ -18,15 +42,22 @@ whether GPU compute behaves like an infrastructure asset with a 20-year
 life or like equipment on a 3-4 year depreciation clock — the two produce
 very different recovery rates in a default.
 
-## 2026-08-18 — The rate channel reaches the AI trade, with no story attached
+## 2026-08-18 — The rate channel reaches the AI trade, with no story attached — then the close adds a dollar figure to what "off-balance-sheet" means
 
-- **The 30-year Treasury extended to 5.32% and the semis broke
-  together.** Live quotes at 10:09 ET: **NVIDIA −2.29% at $219.79**
-  (prior close $225.01) · **AMD −5.2% at $479.90** (prior close $506.00)
-  · **Micron −5.4% at $957.00** (prior close $1,011.75), handing back the
-  $1,000 it crossed on Monday inside one session. Nasdaq −1.2%, S&P 500
-  −0.46% at 7,709.14, Dow −0.3%. Oil above $85.
-  ([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html)) ⟨daily 2026-08-18⟩
+*Rebuilt at finalize with the day's close and a same-day credit-market
+follow-up; the morning/afternoon reads are unchanged from the first pass.*
+
+- **The 30-year Treasury extended to 5.32-5.34% intraday (a fresh
+  19-year+ high) and the semis broke together, before easing into the
+  close.** Live quotes at 10:09 ET: **NVIDIA −2.29% at $219.79** (prior
+  close $225.01) · **AMD −5.2% at $479.90** (prior close $506.00) ·
+  **Micron −5.4% at $957.00** (prior close $1,011.75), handing back the
+  $1,000 it crossed on Monday inside one session. **Closing levels:
+  S&P 500 7,691.76 (−0.69%) · Nasdaq 26,289.71 (−1.33%) · Dow 53,343.40
+  (−0.22%)** — Nasdaq deepened through the day, Dow recovered some
+  ground. The 30-year eased off its intraday peak to close near 5.29%.
+  ([Yahoo Finance live](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html),
+  [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026)) ⟨daily 2026-08-18⟩
 - **The co-movement is the evidence.** An idiosyncratic story moves one
   name; a discount rate moves the whole duration bucket. No
   company-specific news attaches to any of the three. **This is the
@@ -34,6 +65,17 @@ very different recovery rates in a default.
   first time without a narrative in front of it** — Monday's repricing
   was visible only in the long bond while equities shrugged.
   ⟨daily 2026-08-18⟩
+- **By the close, memory/storage extended further than the megacap
+  names: Marvell ~−8%, Seagate ~−9%, SanDisk ~−9.1%, Western Digital
+  ~−5 to −7%.** A WSJ footnote analysis circulating the same day put nine
+  major tech companies' combined off-balance-sheet AI-related commitments
+  at roughly **$3 trillion** — a materially larger aggregate than the
+  ~$1.65T five-hyperscaler figure this map logged from the Meta 8-K read
+  earlier in the week (🔄 Map changes, 08-18 digest). Worth carrying as
+  the same accounting-boundary question at a different, larger scale
+  rather than a contradiction — the two counts likely differ in which
+  firms and which obligation types they include.
+  ([Yahoo Finance — WSJ report sends memory stocks down](https://finance.yahoo.com/markets/stocks/articles/wsj-report-sends-memory-stocks-165044072.html)) ⟨daily 2026-08-18⟩
 - **⚠️ Excluded as unverified:** a Jefferies note recirculating this
   morning framing AMD's Helios/ROCm as taking Nvidia share. The AMD event
   it discusses was 07-22/23, its price-target figures conflict across
@@ -44,7 +86,9 @@ very different recovery rates in a default.
   tech issue's order book holds against the ~36% initial-order pull rate
   logged in the week to 08-17. Equity duration reprices first because
   holders can sell; credit follows with a lag if the move is durable.
-  ⟨daily 2026-08-18⟩
+  **08-19 update: the answer arrived same-window, from the other
+  direction** — Treasury itself intervened (see today's digest) rather
+  than the market testing an issuer's book. ⟨daily 2026-08-18⟩
 
 
 ## 2026-08-17 — Long end to a 19-year high while oil sits still

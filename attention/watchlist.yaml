@@ -69,6 +69,12 @@ lenses:
       - "Hua Hong"   # ben-steer 2026-07-29 — China's #2 foundry (mature nodes); same
                      # reason: named DUV recipient, and delivery-to-a-named-fab is the
                      # test that thread turns on
+      - term: "Cerebras"
+        entity: cerebras
+        name: "Cerebras Systems"
+        # curate-add 2026-08-19: CS-4 launch (claiming 30x Nvidia's
+        # tokens/sec/user, own stock -5.10% same session) — second real
+        # appearance on this map with no watchlist entry.
       - term: "Arm Holdings"
         entity: arm
         name: "Arm"
@@ -569,6 +575,36 @@ lenses:
         # (attention/world-news.yaml), but with no watchlist entity it never
         # reached either the 08-13 or 08-14 digest. Semiconductor-capex-chain
         # peer of Nvidia/TSMC/ASML already on this list.
+      - term: "Marvell"
+        entity: marvell
+        name: "Marvell Technology"
+        # curate-add 2026-08-19: Google's $12.2B warrant deal (08-19) plus
+        # the 08-18 memory/storage close-out (~-8% that session) — recurring
+        # AI-capex-chain name with no watchlist entry.
+      - term: "Seagate"
+        entity: seagate
+        name: "Seagate Technology"
+        # curate-add 2026-08-19: fell ~9% in the 08-18 memory/storage
+        # close-out alongside Marvell — same gap.
+      - term: "Nebius"
+        entity: nebius
+        name: "Nebius"
+        # curate-add 2026-08-19: $4.5B convertible-notes raise (08-19),
+        # AI-infrastructure counterparty this map keeps naming unqualified.
+      - term: "Kioxia"
+        entity: kioxia
+        name: "Kioxia"
+        # curate-add 2026-08-19: central to 08-19's Japan bond/AI-selloff
+        # story (JGB yields pushing Nikkei/SoftBank/Kioxia/Arm down together).
+      - term: "Tokyo Electron"
+        entity: tokyo-electron
+        name: "Tokyo Electron"
+        # curate-add 2026-08-19: same Japan bond/AI-selloff story as Kioxia.
+      - term: "Unitree Robotics"
+        entity: unitree-robotics
+        name: "Unitree Robotics"
+        # curate-add 2026-08-19: China robotics IPO, +460% debut (08-18) —
+        # a Bloomberg Tech coverage-critic miss this map had no entity for.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

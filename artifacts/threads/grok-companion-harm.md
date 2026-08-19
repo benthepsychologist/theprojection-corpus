@@ -43,6 +43,19 @@ design. The catalyst to watch: the first named-plaintiff Grok MH/suicide suit.
   added to OpenAI's system cards** covering self-harm, eating disorders,
   violence, age-restricted goods and sexual content.
   ([OpenAI](https://openai.com/index/chatgpt-for-teens)) ⟨daily 2026-08-18⟩
+- **Evening addendum, strand A (clinical MH harm), on a different
+  company's product but the exact failure mode this strand tracks:**
+  NPR's investigation into Sophie Rottenberg's suicide found she'd
+  confided her full crisis for months to a ChatGPT persona named
+  "Harry," disclosed to no human in her life, including her own
+  therapist. OpenAI says guardrails have tightened since; a
+  suicide-prevention expert called the resulting feature "a step in the
+  right direction, although it's kind of a small step" — optional and
+  easily circumvented. Cross-reference for strand A: ChatGPT was never
+  marketed as a companion or therapy product, which is one more data
+  point that the clinical-harm mechanism this strand tracks in Grok is
+  not exclusive to anti-guardrail-by-design products.
+  ([NPR](https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health)) ⟨daily 2026-08-18⟩
 - **The framing that holds the whole timeline:** TechCrunch's headline
   reads "OpenAI launches a safer ChatGPT for teens — **years after teens
   started using it**." The protections postdate the litigation, the state

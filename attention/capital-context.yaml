@@ -152,6 +152,15 @@ readings:
       sentiment cratered to 51.0, its weakest reading since the 2024
       election — both consistent with the jobs/PPI/claims data already
       cooling into 09-16, not a new signal on their own.
+      NEW 08-19, first cross-border data point this snapshot has carried:
+      Japan's 10-year JGB pushed toward its highest yield since 1996,
+      taking Nikkei/SoftBank/Kioxia/Arm down together in the same session
+      -- the rate-into-AI-equities transmission mechanism this snapshot has
+      tracked domestically reproducing outside the US. Hours later the
+      Treasury doubled its long-bond buyback size and the 30-year fell to
+      5.196%, a partial reversal. This snapshot's rate_regime still reads
+      almost entirely US-Fed-framed; a proper BOJ/JGB leg is a /week-scale
+      addition, flagged here rather than built out in this daily pass.
     basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the 08-15 retail-sales/consumer-sentiment prints + the Lisa Cook removal fight (radar Q7)"
     sources:
       - figure: "Retail sales -0.6% m/m vs +0.1% forecast; consumer sentiment 51.0, weakest since 2024 election"

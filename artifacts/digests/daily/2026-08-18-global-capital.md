@@ -1,23 +1,23 @@
 ---
 lens: global-capital
 date: 2026-08-18
-status: building
+status: final
+coverage: done
 window_start: 2026-08-18T05:00:00-04:00
-as_of: 2026-08-18T15:15:00-04:00
-coverage: pending
 ---
 
 # Global Capital — 2026-08-18
 
-*Curated agentic-interim, 05:00 ET through ~15:15 ET, extended through
-the afternoon — still not a close (markets close 16:00 ET), so every
-market level below carries its own as-of timestamp. Sources: today's full
-collector run (18 sources, including `fred`, `sec_edgar` and
-`treasury_tic`) plus live timestamped quotes (stockanalysis.com,
-tradingeconomics.com) and direct primary-source verification of NVIDIA's
-13F. The fresh 15:03 ET collector pass added little of its own — of 886
-items only 13 were `global-capital`-tagged and none were market-moving;
-this window's real update came from live verification.*
+*Curated agentic-interim, 05:00 ET through the 08-19 05:00 ET close of
+the digest-day. Sources: today's full collector run (18 sources,
+including `fred`, `sec_edgar` and `treasury_tic`) plus live timestamped
+quotes (stockanalysis.com, tradingeconomics.com, Yahoo Finance, TheStreet),
+direct primary-source verification of NVIDIA's 13F, and a finalize-pass
+sweep (WebSearch/WebFetch) covering ~15:15 ET 08-18 through the close.
+The fresh 15:03 ET collector pass added little of its own; this window's
+real update came from live verification plus the finalize sweep, which
+added the day's close, a Journal off-balance-sheet analysis, and
+Anthropic's pre-IPO credit-facility news.*
 
 ## Today's throughline
 
@@ -78,6 +78,32 @@ in seven weeks on the same day.
   repricing.
   ([stockanalysis.com](https://stockanalysis.com/stocks/mu/))
   <!-- k: t=ai-memory-shortage e=micron axis=capital-in-my-markets -->
+
+- **At the close, memory/storage had widened further than the megacaps,
+  the major indexes finished mixed, and a same-day Journal analysis put a
+  bigger number on the accounting-boundary question this map opened
+  Monday.** Closing prices: **S&P 500 7,691.76 (−0.69%) · Nasdaq
+  26,289.71 (−1.33%) · Dow 53,343.40 (−0.22%)** — Nasdaq deepened through
+  the session, Dow clawed back to roughly flat. The 30-year eased off its
+  5.32–5.34% intraday high to close near 5.29%. Beyond the names already
+  logged, **Marvell fell roughly 8% and Seagate roughly 9%** — the
+  memory/storage complex kept widening past the names named at 3:10pm.
+  **A Wall Street Journal review of company footnotes put nine major tech
+  firms' combined off-balance-sheet AI-related commitments at roughly $3
+  trillion** — a larger aggregate, on a differently-scoped set of firms,
+  than the ~$1.65T five-hyperscaler figure this map logged Monday from
+  Meta's own 8-K exhibit (see 🔄 Map changes). Read as the same
+  accounting-boundary question recurring at a bigger, still-uncertain
+  scale rather than a contradiction of Monday's number — the two counts
+  likely differ in which obligation types and which companies they
+  include, and neither this map nor, apparently, the Journal has
+  reconciled them yet.
+  ([TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-aug-18-2026),
+  [Yahoo Finance — WSJ report sends memory stocks down](https://finance.yahoo.com/markets/stocks/articles/wsj-report-sends-memory-stocks-165044072.html))
+  <!-- k: t=ai-buildout-debt-risk axis=capital-in-my-markets interp=yes -->
+  <!-- Marvell and Seagate named in prose but not tagged e= — neither has a
+  watchlist entry yet; proposed as adds in this run's report rather than
+  tagged ahead of the map. -->
 
 - **Asia and Europe both sold off overnight, and Europe is now on its
   sixth consecutive down session.** The **Nikkei 225 closed −1.62% at
@@ -141,41 +167,64 @@ in seven weeks on the same day.
   $65B run-rate attached to it and no public document.
   <!-- k: t=frontier-lab-ipos,anthropic-ipo-timing e=anthropic axis=deals-and-filings -->
 
-## 📊 Macro strip
+- **Anthropic is negotiating a pre-IPO revolving credit facility set to
+  exceed $10 billion — more than four times the $2.5B five-year facility
+  it closed a year ago.** Lead banks are being asked to commit roughly
+  $1.25B each, second-tier active lenders ~$1B each. Part of the size is
+  reportedly banks angling for an underwriting role in the IPO itself
+  rather than a pure read on balance-sheet need — still being negotiated,
+  and the final size could land at or below the reported target. Sits
+  next to the run-rate figure logged in the 08-17 finalize: a company
+  posting $65B of annualized revenue is also, in the same week, lining up
+  quadruple its prior credit line ahead of a listing.
+  ([Investing.com, citing Bloomberg](https://www.investing.com/news/stock-market-news/anthropics-preipo-credit-facility-set-to-exceed-10-billion-bloomberg-news-reports-4865836))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=deals-and-filings interp=yes -->
 
-*All intraday unless marked; ~10:00–10:45 ET morning reads, with a
-~3:10 PM ET afternoon update on yields and the index levels below. Market
-close (16:00 ET) had not happened as of this pass — a close-vs-intraday
-delta should be re-pulled on the next run rather than assumed from these
-reads.*
+- **The $105B Ohio guarantee, now a day old, is being read explicitly
+  against the circular-financing scare it followed.** When a ~$250B
+  figure for the same guarantee first circulated in July, Nvidia shares
+  fell roughly 4.5% intraday on the concern that the AI buildout's demand
+  was becoming lender-financed rather than end-customer-financed.
+  Coverage of the actual signed number frames the $105B, phase-gated cap
+  as a partial answer to that concern rather than a reversal of it — the
+  obligation is real, but bounded, not open-ended. This map already has
+  the filing's own structural detail (residual-value guarantee, OpenAI
+  indemnity) from the 08-17 finalize; this is the follow-up framing, not
+  new terms.
+  ([Fortune](https://fortune.com/2026/08/18/openai-data-center-deal-with-nvidia-comes-in-145-billion-lower-than-reportedsignaling-concerns-of-artificial-demand-for-chips/))
+  <!-- k: t=nvidia-vendor-financing,ai-circular-financing-risk e=nvidia,openai axis=deals-and-filings -->
 
-- **30-year Treasury: 5.32%** morning → **5.29%** ~3:10 PM ET
-  (tradingeconomics.com) — a slight afternoon ease rather than a further
-  extension; ⚠️ unverified against a primary source, so treat as directional
-  not exact. Still a third consecutive session at/near 19-year highs.
-- **10-year: 4.72–4.73%** morning → **4.71%** afternoon — flat to
-  slightly eased, same caveat as above.
+## 📊 Macro strip — closing values (finalize)
+
+*Morning/afternoon reads below are unchanged from the earlier pass;
+closing levels and this map's own FRED collector reads for 08-18 are new
+at finalize.*
+
+- **30-year Treasury: 5.32–5.34%** intraday high → **~5.29%** close
+  (tradingeconomics.com) — the fourth consecutive session at/near
+  19-year+ highs, closing slightly off the day's own peak. ⚠️ Still not
+  independently verified against a primary Treasury source, so treat as
+  directional.
+- **10-year: 4.72–4.73%** morning → **4.71%** afternoon/close — flat to
+  slightly eased.
 - **2-year: 4.18%** (08-18) — flat on Monday's ~4.17%. The steepener
   holds.
-- **S&P 500: 7,709.14 (−0.46%)** at 10:45 ET → **7,696.64 (−0.63%)**
-  ~3:10 PM ET — deepened. **Nasdaq** −1.2% → **−1.33%** (26,290.51) —
-  deepened. **Dow** −0.3% → **−0.15%** (53,380.49) — **recovered**, less
-  negative than the morning read.
-- **10Y–2Y spread: 0.53** (FRED `T10Y2Y`, 08-17) — the bear steepener
-  with a number on it, from this map's own collector.
-- **VIX: 15.19** (FRED `VIXCLS`, 08-17 close) — **+6.6%** on Friday's
-  14.25. ✅ **Retires the stale-VIX flag** carried since 08-14;
-  independently confirmed by this map's FRED collector and a vendor's
-  4:36pm ET snapshot, which agree exactly.
-- **Brent: $90.97/bbl** (08-18, +0.11%) · **WTI ~$84–85** — crude has now
-  moved *up* through $85 after sitting still through Monday's escalation,
-  which is the change from yesterday's reading.
+- **10Y–2Y spread: 0.52** (FRED `T10Y2Y`, 08-18) — eased one basis point
+  from 08-17's 0.53; the steepener held rather than extended, consistent
+  with the yield reads above.
+- **VIX: 15.84** (FRED `VIXCLS`, 08-18 close) — **+4.3%** on 08-17's
+  15.19, a second straight up day (15.19 was itself +6.6% on 08-14's
+  14.25). Three consecutive sessions of rising vol now on this map's own
+  collector.
+- **S&P 500: 7,691.76 (−0.69%)** close · **Nasdaq: 26,289.71 (−1.33%)**
+  close, deepened through the session · **Dow: 53,343.40 (−0.22%)**
+  close, recovered most of the morning's loss.
+- **Brent: $90.97/bbl** (08-18, +0.11%) · **WTI ~$84–85** — crude moved
+  *up* through $85 after sitting still through Monday's escalation.
 - **Gold: ~$4,429/oz** (08-18) — holding above $4,400 for a second
   session on fading Fed-hike odds.
 - **DXY: ~99.40** (08-18) — lowest since June 2026, weakening a third
   straight session.
-- **US equities:** S&P 500 7,709.14 (−0.46%) · Nasdaq −1.2% · Dow −0.3%
-  (all 10:09 ET).
 
 ⚠️ **One number deliberately not carried:** "Eurozone 10-year yields above
 3.2%, a 15-year high," cited in coverage as the driver of the Stoxx
@@ -259,7 +308,21 @@ flagged this for resolution "at earnings 07-29"; earnings happened and
 the flag sat for three weeks until the cold rotation found it. New and
 larger: reporting dated 08-17 puts Meta's **off-balance-sheet AI
 obligations at ~$420B** against $83.7B of reported on-balance-sheet debt,
-with five hyperscalers together at a cited **~$1.65T**.
+with five hyperscalers together at a cited **~$1.65T**. **Finalize-pass
+update:** a 08-18 WSJ footnote analysis puts a *different, larger*
+aggregate on the same accounting-boundary question — **~$3 trillion**
+across nine major tech firms — which does not reconcile cleanly against
+the $1.65T five-hyperscaler figure (different firm sets, likely different
+obligation scopes) but confirms the boundary question is live and
+growing, not a one-outlet find. Strengthens the case for the "off-
+balance-sheet AI obligations" thread candidate below.
+
+**`ai-buildout-debt-risk`, `ai-memory-shortage`, `chip-hyperscaler-rotation`,
+`nvidia-vendor-financing`, `ai-circular-financing-risk` and
+`anthropic-ipo-timing`** all moved today — timelines rebuilt at finalize
+(see thread files) with the day's close, the WSJ off-balance-sheet figure,
+Anthropic's pre-IPO credit facility, and the Fortune framing of the
+signed $105B Ohio guarantee against July's circular-demand scare.
 
 ## 🧵 Thread candidates
 
@@ -280,18 +343,73 @@ with five hyperscalers together at a cited **~$1.65T**.
   needed two.
 
 ---
-The 30-year went to 5.32% and the AI complex finally paid for it —
-Nvidia, AMD and Micron down together, Micron surrendering its $1,000
-milestone in a single session, with no company-specific news behind any
-of it. By the afternoon the story split: yields eased slightly while
-Micron, Western Digital and SanDisk kept falling hard, a memory-specific
-move rather than more rate repricing, even as Etched quadrupled its
-valuation to $21B in seven weeks in the private market the same day. Asia
-and Europe sold off overnight and Europe is on its sixth straight down
-day, while ByteDance pulled more than $30bn of orders for a jumbo loan,
-which is what discriminating rather than absent demand looks like.
-Nvidia's 13F, filed four days ago and read today, shows a $63.4bn equity
-book — but Intel's share count did not move at all, so half the growth is
-price, and the only position Nvidia genuinely doubled down on was
-CoreWeave. Ping An put a number on AI's contribution to gross profit:
-4.6%.
+The 30-year went to a fresh 19-year+ high and the AI complex finally paid
+for it — Nvidia, AMD and Micron down together at the open, Micron
+surrendering its $1,000 milestone in a single session, with no
+company-specific news behind any of it. By the close the story had
+split and widened: yields eased off their peak to 5.29%, but memory and
+storage kept falling hard into the close — Micron, Western Digital,
+SanDisk, Marvell, Seagate — while a same-day Journal analysis put nine
+tech firms' off-balance-sheet AI commitments at roughly $3 trillion, a
+bigger and differently-scoped number than Monday's own $1.65T read. Private
+AI-chip financing didn't blink: Etched quadrupled to a $21B valuation and
+Anthropic lined up a pre-IPO credit facility over four times its prior
+size, both the same week its run-rate topped $65B. Asia and Europe sold
+off overnight, Europe's sixth straight down day, while ByteDance pulled
+more than $30bn of orders for a jumbo loan — discriminating demand, not
+absent demand. Nvidia's 13F, filed four days ago and read this week,
+showed a $63.4bn equity book built half on price rather than purchases,
+and the day's framing of the signed $105B Ohio guarantee cast it as a
+partial answer to July's circular-financing scare. Ping An put a number
+on AI's contribution to gross profit: 4.6%.
+
+## Appendix — Coverage check vs. benchmarks
+
+**Benchmark status.** **FT Unhedged** published 08-18: "AI: like a debt
+machine" — hyperscaler debt issuance stressing credit and rates markets.
+**Axios Pro Rata's** 08-18 edition was not independently isolated this
+pass (its 08-19 edition, checked live, led with an unrelated Lakers-sale/
+private-credit story and a JBS/Pilgrim's Pride poultry BFD — neither
+global-capital-AI-relevant, so nothing carries over from it). **Bloomberg
+Technology's** RSS is a rolling ~20-item window that had already rolled
+past 08-18 by the time of this finalize (confirmed again — see the
+08-17 access finding, still true); WebSearch's `site:` fallback recovered
+two 08-18 Bloomberg Technology items (below). **Money Stuff** remains on
+a confirmed vacation through 08-24 — a clean non-publication, not a miss.
+
+**They led with → we missed.**
+- **FT Unhedged's "AI: like a debt machine"** (08-18) argues hyperscaler
+  bond issuance is itself stressing credit and rates markets. This map's
+  own throughline covered the *equity*-side rate-transmission channel in
+  detail (the 30-year hitting AI-complex share prices) but did not name
+  the *credit*-spread angle specifically. A related, more granular data
+  point surfaced independently during this finalize pass and is logged
+  here rather than invented into the day's bullets: high-yield
+  data-center-operator credit spreads have been widening since June, and
+  hyperscaler bond-deal oversubscription has fallen from ~5x cover in
+  February to under 2x by July (SageAdvisory analysis, undated to a single
+  day — background, not a dated event, so not written as a bullet, but the
+  gap it points to is real).
+- **Bloomberg Technology (08-18, via `site:` search):** "Unitree Robotics
+  Surges 460% After $904 Million Shanghai IPO" — a genuine capital-markets
+  event (a China robotics IPO with a large first-day pop) this map did not
+  carry, on a company adjacent to `china-stack-independence` but not
+  currently on the watchlist.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-18/unitree-robotics-set-to-debut-after-904-million-shanghai-ipo))
+
+**Both covered.** The 30-year Treasury's 19-year+ high and its transmission
+into AI-complex equities — this map's own throughline for the day — is
+the same story FT Unhedged's "debt machine" column addresses from the
+issuance side. The Ohio guarantee's circular-financing framing (Fortune)
+and this map's own `ai-circular-financing-risk`/`nvidia-vendor-financing`
+coverage converge on the same reading. Bloomberg Technology's 08-18
+DeepSeek/Qwen/Moonshot competitive-worry piece sits on ground this map's
+`china-stack-independence` thread already covers via Baidu's revenue
+decline, logged above.
+
+**We had → they didn't.** The finalize's own read of NVIDIA's 13F (SpaceX
+$21B position, CoreWeave +94% add, Intel's mark-only growth) predates and
+exceeds anything in the four benchmarks for depth on Nvidia's actual
+disclosed equity book. The Xiaomi/memory-shortage demand-side pairing and
+the WSJ $3T off-balance-sheet figure (carried here same-day) were not
+found duplicated in any of the four benchmarks checked.

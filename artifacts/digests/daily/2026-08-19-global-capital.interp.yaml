@@ -1,0 +1,191 @@
+# 2026-08-19-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the first
+# 50 characters of the bullet's bold lead phrase (the [:50] truncation is
+# what render_read.py's load path actually looks up — per the 08-18
+# sidecar's own note, verified against kestrel/render_read.py:307).
+#
+# Written to the same tightened validator shape the 08-18 sidecar adopted:
+#     mechanism        30-200 chars, terminal punctuation
+#     confidence       speculative | plausible | well-supported
+#     scenarios        2-4 entries; direction 20-160, why 20-200 chars
+#     precedent        REQUIRED on >=1 scenario above `speculative`
+#     context_note     20-200 chars
+#
+# Four entries for the day's four sev=major/interp=yes-eligible bullets.
+# Nothing written for SK Hynix's buyback, Nebius's convertible notes,
+# the Anthropic-tied data-center loan, General Atlantic's IPO revival, or
+# the FOMC-minutes-pending item — each is a fact or an open question, not
+# yet an identifiable mechanism this map can read with any confidence.
+# Read against attention/capital-context.yaml (asof 2026-08-18), whose
+# `rate_regime` reading does not yet carry a cross-border (JGB) leg at all.
+
+japan-s-bond-market-spiked-toward-its-highest-yiel:
+  mechanism: >
+    A domestic fiscal-policy shock (Japan's FY2027 budget uncertainty) is
+    transmitting into global AI-equity valuations through the same discount-
+    rate channel this map has tracked in US Treasuries all week, showing the
+    mechanism is about duration and rates generally, not a US-specific story.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The channel becomes explicitly cross-border — a JGB, Bund or gilt
+        yield spike starts moving US AI-complex names the way US Treasury
+        yields already do, and currency-hedged AI-capex funding costs
+        become a named risk factor analysts track globally.
+      why: >
+        AI capex is financed and built by multinational firms (SoftBank,
+        Arm, Japanese chip-equipment makers) whose funding costs and
+        investor bases span borders, so a rate shock anywhere in that chain
+        has no structural reason to stay contained to one currency.
+      precedent: >
+        This map's own week: the identical co-movement (equities breaking
+        together with no company-specific news) appeared first in US
+        Treasuries on 08-18 and reproduced in Japan on 08-19 with a named
+        sell-side mechanism, one trading day apart — the fastest repeat of
+        a pattern this map has logged.
+    - direction: >
+        It stays two separate, locally-caused selloffs that merely rhyme —
+        Japan's move is really about the Takaichi budget and BOJ hike
+        speculation, not an imported US rate story, and the co-movement is
+        coincidence rather than transmission.
+      why: >
+        Japan's 10-year yield move is explicitly tied in coverage to
+        domestic fiscal and central-bank triggers distinct from anything in
+        US Treasury markets, so attributing it to the same global channel
+        risks over-reading a shared asset class (AI-proxy equities) as
+        shared causation.
+  context_note: >
+    capital-context.yaml's rate_regime reading is entirely US-Fed-framed;
+    this is the first genuinely cross-border rate/AI-equity data point this
+    map has logged and should seed a non-US leg of that reading at the next
+    refresh.
+
+the-us-treasury-doubled-its-long-bond-buyback-size:
+  mechanism: >
+    A direct liquidity intervention in the long end can reverse a
+    supply-driven yield spike faster than the underlying supply/demand
+    imbalance actually changes, which means today's yield relief is a
+    policy response to a symptom, not evidence the debt-issuance pressure
+    itself eased.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The relief holds and buybacks become a recurring tool Treasury
+        leans on whenever long-end yields threaten AI-capex financing
+        costs, effectively capping how far this map's own bear-steepener
+        story can run before policy intervenes again.
+      why: >
+        An "at least $4B" cap gives Treasury room to escalate further if
+        needed, and having used the tool once with visible market effect
+        lowers the threshold for using it again.
+      precedent: >
+        The 08-13 30-year auction cleared at the highest yield since 2001
+        with no policy response; six days later the same pressure produced
+        this intervention — the gap between "market absorbs it" and
+        "Treasury acts" narrowed within this map's own week.
+    - direction: >
+        The relief is temporary and yields resume climbing within days,
+        because the buyback addresses market functioning, not the
+        underlying fiscal deficit and AI-linked issuance volume driving
+        the supply.
+      why: >
+        Buybacks retire existing long-dated debt but do not reduce net new
+        issuance, so the structural imbalance this map has tracked all
+        week (record global issuance, a ~36% initial-order pull rate)
+        remains unaddressed by the mechanism used today.
+  context_note: >
+    Directly closes the "what to watch next" note this map logged in the
+    ai-buildout-debt-risk thread on 08-18 — the market-test the thread
+    was waiting on arrived as a policy intervention instead, worth
+    carrying into the next capital-context.yaml refresh as a new named
+    tool in the rate_regime reading.
+
+softbank-s-own-13f-shows-the-identical-mark-only-g:
+  mechanism: >
+    When two of the largest disclosed stakeholders in the same distressed
+    asset (Intel) both show mark-only growth with no new buying across the
+    same quarter, it signals conviction is not increasing even as the
+    headline dollar figures suggest deepening commitment — the position
+    sizes are inflating on price, not on demand from their largest holders.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        More large holders of AI-adjacent turnaround bets (Intel and
+        similar names) show the same pattern in coming 13Fs — mark-only
+        growth, no incremental buying — and analysts start reading 13F
+        dollar totals net of price appreciation before citing them as
+        conviction signals.
+      why: >
+        Once the pattern is visible in two of the largest disclosed
+        holders of the same stock within one filing cycle, it becomes a
+        checkable claim rather than a one-off, and analysts who were
+        burned reading NVIDIA's Intel growth as active buying have reason
+        to check share counts before repeating the mistake with SoftBank.
+      precedent: >
+        This map's own 08-17/08-18 finding: NVIDIA's Intel position grew
+        $7.93B to $29.99B with an identical share count across both
+        quarters — the same mark-only pattern, filed six days before
+        SoftBank's.
+    - direction: >
+        The pattern is coincidental rather than a signal about Intel
+        specifically — both NVIDIA and SoftBank simply have not had a
+        trading window to add or trim since their initial strategic
+        investments closed, and the next filing cycle shows active
+        rebalancing from one or both.
+      why: >
+        Both stakes originated as strategic, deal-linked investments
+        (NVIDIA's $5B, SoftBank's $2B) rather than open-market
+        accumulation, so a lack of subsequent share-count change may
+        reflect lock-up or strategic-hold terms rather than a market read
+        on Intel.
+  context_note: >
+    Intel fell 26.6% between the 06-30 filing date and 08-14, so both
+    filed marks are already stale in the opposite direction — worth
+    flagging alongside this pattern rather than letting the $12.14B/$29.99B
+    figures stand as current.
+
+google-took-a-warrant-on-up-to-12-2-billion-of-ma:
+  mechanism: >
+    A revenue-vesting warrant aligns Google's payoff with Marvell actually
+    delivering custom-chip volume rather than with a fixed equity check, so
+    it functions as a demand guarantee priced in optionality instead of
+    cash — a financing structure genre distinct from the vendor-financing
+    loans and lease guarantees this map has tracked elsewhere in the
+    buildout.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The structure becomes a template other hyperscalers use with their
+        own custom-silicon partners (Amazon/Annapurna, Microsoft/Maia),
+        substituting revenue-vesting warrants for the credit guarantees and
+        equity stakes this map has logged from Nvidia and others.
+      why: >
+        A warrant that only pays off if the revenue materializes solves the
+        same demand-guarantee problem Nvidia's guarantees and equity stakes
+        address, while costing the hyperscaler nothing upfront if the chip
+        program underdelivers — a strictly better risk profile for the
+        buyer than a cash investment.
+      precedent: >
+        This map's own ladder of hyperscaler-to-vendor financing structures
+        (NVIDIA's cash equity stakes, its $105B lease guarantee, GIC/
+        Macquarie's Theseus equity) has diversified in structure with each
+        new deal logged this month; a warrant is a genuinely new form on
+        that ladder.
+    - direction: >
+        It stays specific to Marvell/Google's own commercial relationship
+        and is read as a one-off incentive alignment rather than a new
+        financing genre, because Marvell's stock reaction (a sharp pop) is
+        itself evidence the market read it as a vote of confidence rather
+        than a structural innovation worth replicating.
+      why: >
+        Warrant structures tied to commercial contracts are a known,
+        long-standing tool in supplier relationships generally, and this
+        deal's prominence may owe more to its size and Marvell's relative
+        smallness than to novelty in the instrument itself.
+  context_note: >
+    chip-hyperscaler-rotation's own watch question — monetization-proven
+    vs. monetization-unproven as the axis that matters, not
+    hyperscaler-vs-chipmaker — gets a new data point: Google structured
+    its bet to pay only on proven monetization, which is itself a read on
+    which side of that axis it expects Marvell's custom-chip revenue to
+    land.

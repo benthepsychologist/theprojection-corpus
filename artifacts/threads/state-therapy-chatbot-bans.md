@@ -13,6 +13,38 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-19 — Backfill: Colorado's HB26-1195 has been binding law since 08-12, missed until today
+
+- 🕰 **CAUGHT LATE — Colorado's "Psychotherapy Artificial Intelligence
+  Restrictions" act (HB26-1195) was signed 2026-06-03 and took effect
+  2026-08-12; this thread had no record of it until today's backfill.**
+  It bars licensed, certified, or registered psychotherapy providers from
+  letting an AI system conduct therapeutic communication with a client
+  except during synchronous, real-time interaction where the
+  professional, the AI, and the client are all actively participating
+  together; from generating therapeutic recommendations or treatment
+  plans without the professional's review and approval; or from using AI
+  to detect emotions or mental states as a stand-in for professional
+  judgment. AI use for administrative/supplementary tasks stays
+  permitted if the professional retains full responsibility. Separately,
+  the act makes it **unlawful for anyone — individual, corporation, or
+  entity — to provide, advertise, or offer psychotherapy services to the
+  public in Colorado unless delivered by a regulated professional.**
+  ([Colorado General Assembly — HB26-1195](https://leg.colorado.gov/bills/HB26-1195),
+  [Forbes](https://www.forbes.com/sites/lanceeliot/2026/07/16/colorado-law-mandating-therapists-real-time-intervention-during-client-ai-psychotherapy-sets-dubious-precedent/)) ⟨daily 2026-08-19⟩
+- **This is a different branch of government from the Chatbot Safety Act
+  rulemaking already on this thread, enacted first, and already
+  binding.** The AG's Chatbot Safety Act rules (proposed 08-11, this
+  thread's prior Colorado entry) come from the Department of Law and
+  don't bind until 2027-01-01. HB26-1195 came through the legislature,
+  was signed 06-03 — five weeks *before* the AG's rules were even
+  proposed — and has been in force for a week already. Track both as
+  distinct Colorado actions: the AG's rules govern consumer-facing
+  chatbots generally; HB26-1195 governs licensed psychotherapy
+  specifically and is the more direct answer to the "AI posing as a
+  therapist" question this thread otherwise tracks through
+  Character.AI litigation. ⟨daily 2026-08-19⟩
+
 ## 2026-08-13 — Resolved: SB 903 released from suspense 13-0, ordered to third reading
 
 - **SB 903 was released from Assembly Appropriations' suspense file

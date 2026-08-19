@@ -3490,3 +3490,204 @@ over 58 cold threads needs ~8 threads swept per run, every run.** At the
 current rate the tail is being touched roughly every three weeks, and the
 `mhpaea-parity-limbo` null — the only clean "nothing new" of the nine — is
 the exception that shows the rest were worth the sweep.
+
+## 2026-08-19 — frontier-ai: 08-18 finalize + 08-19 open
+
+The 08-18 digest-day closed at 05:00 ET this morning; this pass extended
+collection through the close, finalized the 08-18 digest
+(`artifacts/digests/daily/2026-08-18-frontier-ai.md`), and opened the
+08-19 digest as `building` (agentic-interim, mid-morning ET).
+
+### Coverage critic, frontier-ai / 2026-08-18
+
+TLDR AI and The Rundown AI both fetched directly and read in full for
+their 08-18 issues; The Neuron's dated archive did not walk cleanly this
+pass (its homepage returned a generic/undated headline list) so its check
+is weaker and should be re-verified directly next time rather than
+assumed clean. The AI Daily Brief again published no 08-18 news episode
+(most recent is 08-17) — the third time in a week this outlet's
+weekday-episode gap has been logged; read as an access/format
+constant, not a fresh miss each time.
+
+**They led with → we missed:** nothing found. Every lead item across
+TLDR AI's and The Rundown AI's 08-18 issues (ChatGPT for Teens, the
+finalized Stripe/OpenRouter deal, Groq's down-round, Anthropic's $65B
+run-rate, Cursor's Origin launch) already traced to a story this map
+carried on 08-18 or 08-17.
+
+**What this pass added beyond benchmark parity, via direct primary-source
+checks rather than benchmark recall:**
+
+- **OpenAI paused RL training on its next model, Astra, for ~2 weeks**
+  over signs it might cross the "Critical" cybersecurity-capability tier
+  on OpenAI's own Preparedness Framework, disclosed alongside Sam
+  Altman's TIME interview naming "various degrees of misalignment" —
+  not one incident — as the actual cause. Flagged by Techmeme/Axios but
+  not led with by any of the four daily benchmarks; found by fetching
+  OpenAI's own announcement page and Fortune's/Time's coverage directly.
+  Folded into the `openai-agent-security-incident` thread's TODAY block
+  alongside the safeguards/Preparedness-Framework-rewrite finding
+  already there from the 15:15 ET pass.
+- **Anthropic is preparing supervoting shares for its seven founders**
+  ahead of a possible late-September IPO (The Information, via
+  Investing.com/BeInCrypto) — a governance story with no benchmark
+  lead, surfaced by a direct search on the IPO-prep beat.
+- **Google won a bankruptcy auction for Spirit Airlines' enterprise
+  data ($10M) to train its AI models** — a second training-data-
+  provenance story inside three days, after 08-17's Amazon/rare-books
+  finding. Reinforces (does not replace) the training-data-provenance
+  thread candidate already offered 08-17, now offered a second and
+  final time with two same-window instances behind it.
+- **Etched's $700M/$21B round has a shipped-hardware detail the
+  building-pass bullet was missing:** the company confirmed it
+  delivered its first production rack to Jane Street (both lead
+  investor and first customer), already running Jane Street's trading
+  workloads. Folded into the existing Release-watch bullet rather than
+  written as a new one.
+
+### Access note
+
+TLDR AI's per-date URL scheme (`tldr.tech/ai/YYYY-MM-DD`) resolved
+cleanly via WebFetch with no proxy needed for both 08-18 and 08-19
+issues — consistent with the existing benchmarks.yaml note that this
+outlet's RSS/per-date routes are simpler than most. The Neuron's
+homepage did not return a clean dated list this pass (returned what
+appears to be a rolling/undated digest of recent items rather than a
+08-18-specific issue) — worth a follow-up check on whether it has a
+per-date archive URL scheme like TLDR AI's, since this pass could not
+find one.
+
+### Proposed map changes (not applied — routed per this session's brief)
+
+- **Entity gap, recurring:** no watchlist slug names an AI-training-data
+  acquisition operation distinct from a hyperscaler's main entity —
+  now hit twice in three days (Amazon 08-17, Google 08-18). Left open
+  since 08-17; still open.
+- **Thread candidate, now offered twice with two supporting instances:**
+  "training-data provenance and exhaustion" (Amazon rare-books
+  destruction for Nova + Google's Spirit Airlines data buy). Per the
+  offer-twice-then-drop convention, this is its last offer before
+  dropping.
+
+## 2026-08-19 — mental-health: 08-18 finalize + 08-19 open
+
+The 08-18 digest-day closed at 05:00 ET this morning; this pass extended
+collection through the close, finalized the 08-18 digest
+(`artifacts/digests/daily/2026-08-18-mental-health.md`), and opened the
+08-19 digest as `building` (agentic-interim, late-morning ET).
+
+### Coverage critic, mental-health / 2026-08-18
+
+All four daily benchmarks checked. Behavioral Health Business fetched
+directly via the documented Googlebot-UA route against `bhbusiness.com/feed/`
+(no new tightening) and its individual article pages; STAT News via bare
+curl; Fierce Healthcare and MobiHealthNews checked via their RSS/site-scoped
+routes per the existing access notes — neither surfaced anything
+MH-specific published after the 08-18 15:15 ET checkpoint.
+
+**They led with → we missed (before this pass):** BHB's 20:06 ET lead,
+**LifeStance Health's ~$3M settlement of a 1M-patient tracking-pixel data
+privacy suit** (Meta/Google, March 2020–April 2023) — published after the
+digest's prior checkpoint, folded in now under Clinical safety & harm.
+
+**What this pass added beyond benchmark parity, via direct primary-source
+checks and general web sweep rather than benchmark recall:**
+
+- **NPR's investigation into Sophie Rottenberg's suicide** (died Feb 2025
+  after confiding her crisis for months to a ChatGPT persona, disclosed to
+  no human in her life including her own therapist) — not from any of the
+  four trade benchmarks, found via general sweep. Judged material enough
+  to add given this lens's standing evidence-gap thesis; folded into
+  `ai-therapy-regulatory-reckoning` and `grok-companion-harm`.
+- **Continuing detail on the Oakland Meta trial**, via AP/Hawaii
+  Tribune-Herald and MLex: Deputy AG Megan O'Neill's opening ("the young
+  ones are the best ones"), Judge Gonzalez Rogers admitting former
+  engineer Arturo Béjar's testimony over Meta's objection, and Béjar's
+  08-19 testimony that Meta's internal harm-surveillance measured
+  policy-violation prevalence rather than actual harm. Folded into
+  `social-media-causality-fight`, which also gained a note distinguishing
+  this trial from the separate New Mexico case ($942M total, resolved
+  08-06) alongside the already-noted Los Angeles verdict.
+- **Checked and excluded, not misses:** two BHB 08-18 pieces — "Confessions
+  from a Retired Addiction Treatment CEO" (BHB+, leadership profile/anecdote)
+  and "Inside Caron Treatment Center's C-Suite Shakeup" — read in full and
+  judged to carry no policy, capital, or clinical-evidence angle distinct
+  from what this lens already tracks. Same treatment as the excluded BHB
+  "Voices" column in the 08-17 finalize.
+
+### Found this pass, not applied — flagged for Ben (routed per this
+### session's brief rather than edited directly)
+
+- **A likely real coverage gap: Colorado's HB26-1195 "Psychotherapy
+  Artificial Intelligence Restrictions"** was signed into law 2026-06-03
+  and took effect **2026-08-12** — a binding state law (not a proposed
+  rule) that bars licensed mental-health professionals from letting an AI
+  system conduct therapeutic communication outside real-time joint
+  participation, and separately makes it unlawful for anyone to offer
+  psychotherapy services to the public in Colorado unless delivered by a
+  regulated professional. This is distinct from and stronger than the AG's
+  Chatbot Safety Act rulemaking (proposed 08-11, effective 2027-01-01)
+  that this map's `state-therapy-chatbot-bans` thread already tracks —
+  and this pass found no prior digest or thread entry mentioning HB26-1195
+  at all. It is six-plus weeks old, not a today-dated item, so it was not
+  written up as a digest bullet under a wrong date; instead it is logged
+  here as a probable backfill target for `/crawl` on
+  `state-therapy-chatbot-bans`. See the full task report for source
+  detail.
+
+### Access note
+
+No new blocks found. BHB's Googlebot-UA workaround against `bhbusiness.com`
+continues to hold with no tightening, for both the feed and individual
+article pages.
+
+## 2026-08-19 — global-capital: 08-18 finalize + 08-19 open
+
+### global-capital / 2026-08-18 (finalize)
+
+**Benchmark status.** FT Unhedged published 08-18 ("AI: like a debt
+machine" — hyperscaler debt issuance stressing credit and rates markets).
+Bloomberg Technology's RSS window had already rolled past 08-18 by finalize
+time (same known ~18h rolling-window limitation logged 08-17); recovered
+two 08-18 items via `site:bloomberg.com` WebSearch fallback. Axios Pro
+Rata's 08-18 edition was not isolated this pass; its 08-19 edition (checked
+live) carried nothing global-capital-relevant. Money Stuff confirmed still
+on vacation through 08-24 — clean non-publication, not a miss.
+
+**Missed:**
+- FT Unhedged's credit-spread framing ("AI: like a debt machine") — this
+  map covered the equity-side rate-transmission channel in detail but not
+  the credit-spread angle specifically. A related but undated data point
+  (HY data-center-operator spreads widening since June, hyperscaler bond
+  oversubscription falling from ~5x to <2x) was found during this pass and
+  logged as background rather than forced into a dated bullet.
+- Bloomberg Technology, 08-18: "Unitree Robotics Surges 460% After $904
+  Million Shanghai IPO" — a China-robotics IPO event this map did not
+  carry; the company is adjacent to `china-stack-independence` but not on
+  the watchlist.
+
+**Map effect:** none yet — both misses are single-item, not structural
+gaps; Unitree Robotics is proposed as a watchlist add in this run's report
+rather than added directly (guardrail-protected file).
+
+**Both covered:** the 30-year Treasury's 19-year+ high and its
+transmission into AI-complex equities (this map's own throughline)
+converges with FT Unhedged's issuance-side framing. The Ohio guarantee's
+circular-financing reframing (Fortune, 08-18) converges with this map's
+own `ai-circular-financing-risk`/`nvidia-vendor-financing` coverage.
+
+**We had, they didn't:** the finalize's own NVIDIA 13F read (SpaceX
+$21B position, CoreWeave +94% add, Intel's mark-only growth) and the
+WSJ's ~$3T off-balance-sheet figure (carried same-day) were not found
+duplicated in any of the four benchmarks.
+
+### Access note
+
+WebFetch itself refused `ft.com` directly this pass; `curl` against the
+same RSS URL (`https://www.ft.com/unhedged?format=rss`) worked cleanly —
+same fix as documented in `sources/benchmarks.yaml`, re-confirmed.
+Bloomberg's RSS URL redirects: `feeds.bloomberg.com/technology/news.rss`
+now 301s to `bloomberg.com/feeds/technology/news.rss` — fetch the redirect
+target directly rather than the documented `feeds.bloomberg.com` host to
+avoid the extra hop. Axios Pro Rata's `r.jina.ai` reader-proxy fix
+continues to hold.

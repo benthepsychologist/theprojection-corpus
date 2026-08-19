@@ -1,0 +1,11 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-08-18'
+  to: '2026-08-19'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: true
+  terms_swept: 0
+fetched_at: '2026-08-19T14:05:40Z'
+items: []

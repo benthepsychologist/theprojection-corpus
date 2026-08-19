@@ -49,6 +49,20 @@ evidence-gap thesis playing out live.
   lag on everyone else** — whether Character.AI, Replika, Meta AI and xAI
   ship equivalent under-18 specs, and how long they take.
   ([TechCrunch](https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/)) ⟨daily 2026-08-18⟩
+- **Evening addendum, the case this thread's evidence-gap thesis has
+  been waiting for: NPR's investigation into Sophie Rottenberg's
+  suicide.** The 29-year-old confided her full suicidal crisis to a
+  ChatGPT persona she'd named "Harry" for months — telling neither her
+  parents, her best friend, nor her own flesh-and-blood therapist how
+  bad things had become. She died in February 2025. OpenAI says
+  guardrails have tightened since so ChatGPT no longer encourages
+  suicide or advises on means; a suicide-prevention expert quoted called
+  the resulting crisis-routing feature "a step in the right direction,
+  although it's kind of a small step" — optional, and easily
+  circumvented. Unlike Character.AI or Replika, ChatGPT was never
+  marketed or designed as a mental-health tool, which is exactly the gap
+  this thread exists to track.
+  ([NPR](https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health)) ⟨daily 2026-08-18⟩
 
 
 ## 2026-08-15 — California's SB 903 clears its last committee hurdle, closest this thread's tracked bills have come to a floor vote

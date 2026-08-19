@@ -4474,3 +4474,67 @@ issues total filed this session on real engine gaps found along the way
 `publish/adapter.py` should retire once kestrel#25 lands upstream.
 📋 08-18's digests are still `building` — normal, not due for finalize
 until ~5h past digest-day close.
+
+---
+
+## 2026-08-19 — `/daily`: finalize 08-18, open 08-19 through ~14:30 ET
+
+08-18 was now old enough (>5h past its 05:00 ET close) to finalize: ran
+the coverage critic on the three critic-bearing lenses (frontier-ai,
+global-capital, mental-health), folded late/critic-caught items into
+08-18's timelines, and rebuilt affected thread pages. Six watchlist
+entities, one `actor-doing.yaml` refresh, and one `capital-context.yaml`
+addendum were merged in from the four lenses' propose-lists. 08-19 opened
+`building` and was extended via collector run + a light agentic-interim
+sweep (no full-scale tier-2/tier-3 agent dispatch this pass) through
+~14:30 ET.
+
+**Today's throughline, cross-lens:** the rate-into-AI-equities mechanism
+this map tracked domestically all week went cross-border overnight, then
+reversed at home by midday. Japan's 10-year JGB pushed toward its highest
+yield since 1996 on fiscal jitters around the Takaichi government's
+FY2027 budget, and Tokyo's AI-proxy stocks broke the same way
+Nvidia/AMD/Micron did in New York Monday (Nikkei −2.5%, SoftBank −8%+,
+Kioxia −9–13%, Tokyo Electron −4.4%) — a Daiwa strategist named the exact
+mechanism this map has been carrying since Monday, now confirmed
+reproducing outside the US for the first time. Hours later the US leg
+reversed: the Treasury doubled its long-bond buyback size, and the
+30-year yield that hit 5.32–5.34% Tuesday fell to 5.196%, with US futures
+and the SK Hynix-led chip complex rallying. A second echo of Nvidia's own
+13F pattern turned up in SoftBank's: 67% of its $18B disclosed US equity
+book is a single Intel position, its growth entirely mark-to-market with
+no new shares bought — the same tell this map found in Nvidia's Intel
+stake a week ago, now market-wide rather than one filer's quirk.
+
+Elsewhere: the UAE suspended all trade with Iran (its second-largest
+trading partner) over Monday's missile incident even as Iran denies
+firing anything, while Hormuz traffic has physically flipped toward the
+Oman route under literal US Navy escort; and Colorado's HB26-1195 — a
+binding statute signed 06-03, in force since 08-12, barring AI from
+directly conducting psychotherapy — turned out to be six weeks old and
+previously uncaught by this map, ahead of the AG-rulemaking track it had
+been tracking instead. No flash filed: today's events were real but none
+cleared the front-page-anywhere bar.
+
+**Coverage critic (08-18 finalize) findings:** one real single-item miss
+(Bloomberg's Unitree Robotics 460% IPO surge, China-robotics-adjacent but
+not on the watchlist — proposed as a watchlist add, not added directly)
+against otherwise-covered ground; FT Unhedged and Bloomberg Technology
+both confirmed reachable this pass (curl fallback for FT, redirect-target
+fetch for Bloomberg's moved RSS feed).
+
+**Briefings refreshed and published**: `kestrel readouts --apply/--export`
+for front + all three lens scopes, then `/publish --push` shipped
+122 payload items / 67 entities across ~100 threads to the site
+(`theprojection-site` `09ee638`, already pushed — confirmed via
+`git log @{u}..` printing nothing there too).
+
+**Pushed**: this repo only — no kestrel edits this session.
+
+**Pick up:**
+📋 World-news thread candidate `Lubbock data-center moratorium petition`
+(22 outlets) has now been offered twice (08-18, 08-19) without a Ben
+decision — per the offered-twice rule it will not be re-offered; needs an
+explicit call (track / drop) rather than a third automatic offer.
+📋 08-19 is still `building` — normal, extend or finalize on the next
+`/daily` run.
