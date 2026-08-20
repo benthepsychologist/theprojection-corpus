@@ -1,4 +1,4 @@
-<!-- kit: attention/week@2026-08-18.3 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/week@2026-08-21.1 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: week
@@ -86,7 +86,7 @@ only ever grow it.
    `/week`-adjacent pass that artifact is built for; `/daily` never
    touches it. Re-run the Global Capital data stack's 5 collectors
    (`treasury_tic`, `bis_stats`, `imf_data`, `epfr_flows`,
-   `fund_flow_reports` — `kestrel collect --instance /workspace/theprojection-corpus --lens global-capital
+   `fund_flow_reports` — `cloud-researcher collect --corpus /workspace/theprojection-corpus --lens global-capital
    --source <id>` per source, since these aren't part of the term-swept
    watchlist sweep), then re-write each `readings.*` entry from what
    actually came back — a real value, a real `basis`, real `sources[]`,
