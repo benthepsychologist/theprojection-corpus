@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-08-19
-status: building
+status: final
 window_start: 2026-08-19T05:00:00-04:00
-as_of: 2026-08-19T10:15:00-04:00
+as_of: 2026-08-20T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -100,14 +100,16 @@ week.
 
 ## ⏳ Upcoming & expected
 
-**`iran-oman-hormuz-deal-signing` (due today, 08-19) — still pending, not
-signed, as of this sweep.** ⚠️ **Trap avoided:** search results surface
-Oman's foreign ministry "joint statement" page (fm.gov.om) as if newly
-published; fetched directly, its own dateline is **23 June 2026** — the
-same older Muscat-visit statement flagged in yesterday's finalize, not a
-new signing. No wire or government source through 10:15 ET confirms an
-actual signature on the shipping-coordinates arrangement Iran and Oman
-have been drafting. Recheck later today before the digest-day closes.
+**`iran-oman-hormuz-deal-signing` (due 08-19) — ⚠️ FLIPPED to
+`passed-silent` at finalize.** No signature, joint statement, or
+government announcement surfaced anywhere through the 08-19 window or
+into 08-20 — the same Oman fm.gov.op "joint statement" page flagged as a
+stale June trap earlier remains the only hit. Brent trading near
+$93/bbl "as the US and Iran remain at an impasse" (08-20) and the UAE's
+trade suspension with Iran (above) both read as negative signals, not
+positive ones. No new target date announced by either government — this
+is the loud passed-silent outcome the `what_confirms` language was
+watching for, not a further slip.
 
 **No other flips.** Pending: `russia-duma-election` (09-20),
 `israel-lebanon-rome-round-8` (09-01), `israel-general-election` (10-27)

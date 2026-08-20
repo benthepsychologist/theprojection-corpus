@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-19
-status: building
+status: final
 window_start: 2026-08-19T05:00:00-04:00
-as_of: 2026-08-19T10:15:00-04:00
-coverage: pending
+as_of: 2026-08-20T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-19
@@ -80,6 +80,17 @@ side and the guardrail side of the same story, again.
   ([STAT](https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/))
   <!-- k: t=ai-therapy-regulatory-reckoning,grok-companion-harm axis=clinical-safety-and-harm -->
 
+- **A separate STAT News piece documents a "shadow medical system": 40M+
+  Americans ask ChatGPT health questions daily, alongside a companion
+  JAMA Network Open study by the same authors finding AI models fail to
+  produce a comprehensive differential diagnosis in >80% of cases when
+  given only incomplete initial patient info** (despite doing well on
+  complete case data). A concrete evidence-gap data point sitting next
+  to the grooming piece above — the demand side and the safety-data gap,
+  in the same day's coverage.
+  ([STAT News](https://www.statnews.com/2026/08/19/ai-doctor-outperforms-chatgpt-oura-quest-ro-hims-medical-system/))
+  <!-- k: t=bigtech-into-health axis=clinical-safety-and-harm -->
+
 ## Capital & corporate
 
 - **Healthcare Dive's own sit-down with UHS CEO Marc Miller closes the gap
@@ -99,6 +110,22 @@ side and the guardrail side of the same story, again.
   <!-- k: t=mh-clinical-infra-funding e=universal-health-services,talkspace axis=capital-and-corporate -->
 
 ## 🧪 Clinical trials & evidence
+
+- 🕰 **CAUGHT LATE (coverage critic) — Oregon's first-ever US
+  state-regulated psilocybin study reported outcomes from ~350 adults:
+  adverse effects "uncommon," 92.2% reporting improvement in depression,
+  anxiety, and overall wellbeing at one month.** The first real-world
+  outcomes dataset from a state-regulated service model, distinct from
+  the FDA clinical-trial track `psychedelic-regulatory-sprint` otherwise
+  follows. ([Behavioral Health Business](https://bhbusiness.com/2026/08/19/95-of-oregon-psilocybin-study-saw-improvements-in-depression-ptsd/))
+  <!-- k: t=psychedelic-regulatory-sprint axis=clinical-trials-and-evidence -->
+- 🕰 **CAUGHT LATE (coverage critic) — Medicaid spending on core
+  psychotherapy services rose 156% from 2018 to 2024, to $6.68B overall**
+  (Behavioral Health Business's own analysis of CMS data). A payer/
+  public-spend data point worth holding alongside this map's existing
+  payer-denial and audit-integrity threads.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/19/medicaid-psychotherapy-spending-up-156/))
+  <!-- k: axis=clinical-trials-and-evidence -->
 
 **Another large digital-mental-health journal batch landed in the
 morning RSS window** — the same *Internet Interventions* issue this map
@@ -143,3 +170,21 @@ Dive's own interview with UHS's CEO fills in the strategy behind Monday's
 Talkspace close: matching patients to care at "any stage" of their mental
 health journey, in his words, because the unmet need "keeps getting
 reinforced."
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** two Behavioral Health Business items,
+now folded in above (Oregon's state-regulated psilocybin outcomes;
+Medicaid psychotherapy spending +156% 2018-2024). A third, lower-
+confidence item — Fierce Healthcare reporting HHS awarded $96.7M in
+behavioral-health grants — was read off the live homepage but not
+independently corroborated this pass; not folded in, worth a follow-up
+check.
+
+**Both covered:** UHS's Talkspace acquisition (MobiHealthNews's deal-
+close angle vs. this map's Healthcare Dive CEO-interview angle — same
+underlying story).
+
+**We had → they didn't:** the Colorado HB26-1195 backfill catch, the
+STAT "grooming" First Opinion synthesis. Full detail: `coverage-log.md`,
+2026-08-20 entry.

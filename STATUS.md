@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
 
-*As of 2026-08-19*
+*As of 2026-08-20*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,14 +8,45 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers 08-19's opening `/daily` pass (finalized
-08-18 across all four lenses, opened 08-19 through ~14:30 ET, one
-briefings/publish cycle), on top of the four days of pipeline work
-(08-15 through 08-18: three `/daily` cycles, the `/week` close for
-`week_of 08-10`, a kit sync, and a five-bug site rendering-pipeline fix
-verified across all 1,727 published pages) recorded in the 08-18 note
-below it. The 08-14 note and everything older sit under that.*
+*Hand-maintained. Top note covers 08-20's `/daily` pass (finalized 08-19
+across all four lenses with a three-lens coverage critic, opened 08-20
+through ~10:30 ET, two briefings/publish cycles), on top of the 08-19
+note below it (which finalized 08-18, opened 08-19). The 08-18 note and
+everything older sit under that.*
 
+> **2026-08-20 (mid-day) — 08-19 finalized (3-lens coverage critic run),
+> 08-20 opened, two publishes.** Counts computed today: **99 threads**
+> (85 open · 12 developing · 1 resolved · 1 retired — unchanged from
+> 08-19), **57 expectations** (39 pending · 13 hit · 5 passed-silent —
+> two flips today: `iran-oman-hormuz-deal-signing` → passed-silent,
+> `ping-an-group-h1-2026-interim-results` → hit), **211 watchlist
+> entries** (unchanged), all **45 actor roll-ups** (none moved enough to
+> refresh this pass). **2 publishes today** (thread/entity content +
+> a fresh briefings apply/export covering front + all 3 lenses). All
+> three repos confirmed pushed via `git log @{u}..` printing nothing on
+> this repo and `theprojection-site`; `kestrel` untouched this session.
+>
+> **`/daily`: 08-19 finalized, 08-20 opened.** 08-19 was old enough
+> (>24h past its 05:00 ET close — extended past the usual 5h bar since
+> the run started mid-morning 08-20) to finalize: ran the coverage
+> critic on the three critic-bearing lenses (frontier-ai, global-capital,
+> mental-health), folded late/critic-caught items into 08-19's
+> timelines and digests (Oregon's psilocybin-study outcomes, the
+> Medicaid psychotherapy-spend figure), and flipped two due
+> expectations. 08-20 opened `building` via a full collector run plus a
+> 5-agent tiered dispatch (4 hot-cluster deep checks covering 24
+> weight-3 threads + 2 due expectations, 1 cold-rotation sweep of 7
+> quiet threads) through ~10:30 ET. Today's real news: Russia hit Kyiv
+> with a large missile/drone barrage overnight (12-13+ killed) and a
+> Russian drone separately crashed in Romanian (NATO) airspace — the
+> second such incursion in three weeks, both `sev=major` on
+> `russia-ukraine-war`. Coverage critic on the 08-19 finalize found
+> real misses in mental-health (two Behavioral Health Business items)
+> and global-capital (Axios Pro Rata's private-credit/insurer story,
+> proposed as a watchlist/thread add, not added directly); the
+> frontier-ai "miss" (an OpenAI newsroom post) reconciled as already
+> logged a day earlier, not a genuine gap.
+>
 > **2026-08-19 (mid-day) — 08-18 finalized, 08-19 opened, one publish,
 > kestrel#25 filed with full repro.** Counts computed today: **99
 > threads** (85 open · 12 developing · 1 resolved · 1 retired —

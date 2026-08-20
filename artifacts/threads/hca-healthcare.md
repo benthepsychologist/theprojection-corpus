@@ -16,6 +16,10 @@ demand; whether AI ever surfaces in an HCA SEC filing (it currently
 doesn't); the securities-fraud probe's outcome, kept editorially separate
 from the AI story unless a source ever actually connects them.
 
+## 2026-08-12 — The labor friction escalates: coordinated pickets over the Timpani AI scheduling system
+
+- **1199SEIU held coordinated pickets across 19 HCA Florida facilities on 2026-08-12, including rallies at HCA Florida Osceola Hospital (Kissimmee) and HCA Florida Woodmont Hospital (Tamarac), continuing contract negotiations.** The union's stated issues are pay (HCA offering 2.5% vs. inflation-tracking demands) and the Palantir-co-developed AI scheduling system Timpani, which the union says caused unauthorized schedule changes, wage losses, and improper PTO denials — the first multi-facility escalation this thread has logged past a single protest. ([Hoodline](https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/), [WUSF](https://www.wusf.org/health-news-florida/2026-08-12/hca-workers-at-osceola-hospital-call-for-better-pay-and-benefits), [CF Public](https://www.cfpublic.org/health/2026-08-12/hca-healthcare-workers-call-for-better-pay-benefits)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-04 — Backstory pull: real AI program, quieter labor friction than Kaiser
 
 - **HCA names six AI initiatives at real multi-hospital scale** — Timpani

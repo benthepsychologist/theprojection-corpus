@@ -15,6 +15,10 @@ rejected MDMA on unblinding/safety grounds and then wrote new trial-design
 rules (July 2026) addressing exactly the problem the accelerating trials
 share. The live question: is approval outrunning the methodology fix?
 
+## 2026-08-19 — Oregon's state-regulated psilocybin program reports its first real outcomes data
+
+- **Oregon's first-ever US state-regulated psilocybin study reported outcomes from ~350 adult participants: adverse effects "uncommon," 92.2% reporting improvement in depression, anxiety, and overall mental wellbeing at one month.** Not all participants sought psilocybin specifically for mental-health treatment. This is the first outcomes dataset from a *state-regulated service model* (as distinct from the FDA clinical-trial track this thread otherwise follows) — a different regulatory pathway producing real-world evidence in parallel with the Compass NDA race. ([Behavioral Health Business](https://bhbusiness.com/2026/08/19/95-of-oregon-psilocybin-study-saw-improvements-in-depression-ptsd/)) ⟨daily 2026-08-20, coverage-critic catch⟩
+
 ## 2026-08-14 — The VA discloses its 20th active psychedelic trial, running alongside the Compass NDA track
 
 - **The VA disclosed it's now running its 20th active clinical trial of

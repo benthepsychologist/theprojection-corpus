@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-19
-status: building
+status: final
 window_start: 2026-08-19T05:00:00-04:00
-as_of: 2026-08-19T14:30:00-04:00
-coverage: pending
+as_of: 2026-08-20T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-19
@@ -265,3 +265,29 @@ Google bought its way into Marvell's chip roadmap with a $12.2B warrant
 rather than a check, Nebius raised $4.5B against its own data-center
 buildout, and the FOMC's July minutes are due at 2pm with this map still
 holding the read for the next run.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Axios Pro Rata's 08-19 lead item,
+"Walter's ripples" — Mark Walter's Lakers sale drawing federal
+regulatory scrutiny onto how major asset managers acquired life
+insurers that funnel capital into private-credit deals, including loans
+from Walter-controlled insurers into his own businesses. Adjacent to
+`ai-buildout-debt-risk` (opaque capital plumbing) but a distinct
+mechanism — proposed as a possible watchlist/thread add, not added
+directly. Secondary: Bloomberg Technology's lead web story on
+data-center-siting opposition, independently corroborated by this run's
+capex-cluster check and offered as a thread candidate in the 08-20
+digest.
+
+**Both covered:** Money Stuff's Treasury-buyback/30-year-yield story —
+full overlap with this map's own throughline.
+
+**Access note:** FT Unhedged blocked via WebFetch directly against
+`ft.com` this pass — known issue, `curl` against the documented RSS URL
+is the fix, not re-tried this pass.
+
+**We had → they didn't:** the Japan JGB/Nikkei selloff and its
+rate-transmission mechanism, the SoftBank-13F/Intel parallel, SK
+Hynix's buyback, the Google-Marvell warrant deal, Nebius's convertible
+notes. Full detail: `coverage-log.md`, 2026-08-20 entry.

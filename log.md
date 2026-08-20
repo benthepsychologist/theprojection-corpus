@@ -4538,3 +4538,76 @@ decision — per the offered-twice rule it will not be re-offered; needs an
 explicit call (track / drop) rather than a third automatic offer.
 📋 08-19 is still `building` — normal, extend or finalize on the next
 `/daily` run.
+
+## 2026-08-20 — /daily: 08-19 finalized (3-lens critic), 08-20 opened, two publishes
+
+08-19 was well past the 5h-since-close bar (this run started mid-morning
+08-20): ran the coverage critic on frontier-ai, global-capital, and
+mental-health, folded critic-caught items into 08-19's digests and
+threads (Oregon's first US state-regulated psilocybin study, 95%
+reporting improvement — folded into `psychedelic-regulatory-sprint`;
+Medicaid psychotherapy spend +156% 2018-2024 — logged as an evidence
+data point), and flipped two due expectations:
+`iran-oman-hormuz-deal-signing` to `passed-silent` (due window closed
+with no signature anywhere, UAE's trade suspension with Iran a negative
+signal) and `ping-an-group-h1-2026-interim-results` to `hit` (parent-
+company H1 results landed on schedule, RMB 615.4bn revenue +12.6% YoY).
+A third expectation, `xai-mn-preliminary-injunction`, stayed `pending` —
+the hearing happened as scheduled but the judge took it under advisement.
+
+**Coverage critic found real gaps in two of three lenses.** Mental-health
+missed two Behavioral Health Business items (the Oregon psilocybin study,
+the Medicaid spend figure), both folded in. Global-capital missed Axios
+Pro Rata's own lead item — a private-credit/life-insurer story adjacent
+to `ai-buildout-debt-risk` — proposed as a watchlist/thread add rather
+than added directly; a second Bloomberg item (data-center-siting
+opposition) converged with a thread candidate independently surfaced by
+today's tier-2 cluster check. Frontier-ai's apparent miss (an OpenAI
+newsroom post on a training pause, reported a day late by four
+benchmarks) reconciled as already logged on 08-18 — not a genuine gap,
+but a reminder that an opening pass closing mid-morning and declaring
+"no news today" is vulnerable to later-arriving posts.
+
+**08-20 opened via a full collector run plus a 5-agent tiered dispatch**
+(4 hot-cluster deep checks covering all 24 weight-3 threads grouped into
+capex/compute, chips/China, geopolitics+2 due expectations, and
+health/frontier-gov clusters, plus 1 cold-rotation sweep of the 7
+stalest quiet threads). Today's real news: Russia hit Kyiv with a large
+overnight missile/drone barrage (12-13+ killed, one of the deadlier
+single-night tolls this map has logged) and a Russian drone separately
+crashed in Romanian (NATO) airspace — the second such NATO incursion in
+three weeks after Poland's 07-30 one — both marked `sev=major` on
+`russia-ukraine-war`. Two real backfill catches from the cold-rotation
+sweep: Alan's Canada AI-triage product now has a name (Mo, 15-minute
+human-escalation design) and HCA's Timpani AI-scheduling dispute
+escalated to coordinated pickets across 19 Florida facilities on 08-12.
+A third backfill catch, investors now targeting a $2T October Anthropic
+IPO valuation (up from ~$965B-$1T a week ago), folded into
+`frontier-lab-ipos`. The 13 capex/chip/China threads checked came back
+entirely clean — the quietest single-cluster check logged in weeks.
+
+**Two publishes today.** First: thread/entity content (99 threads, 67
+entities, the 08-20 digest content) via `kestrel publish --push`.
+Second: front + all 3 lens briefing packs regenerated via 4 parallel
+sonnet dispatches reading `kestrel readouts --pack <scope>` payloads,
+applied via `kestrel readouts --apply` (one retry needed — a bullet ran
+12 chars over the 220-char cap, trimmed and reapplied), exported, then
+published again.
+
+**Pushed**: this repo and `theprojection-site` only — no kestrel edits
+this session.
+
+**Pick up:**
+📋 Two new thread candidates offered, neither acted on: **community/
+political opposition to data-center siting** (global-capital,
+corroborated independently by both today's capex-cluster check and the
+coverage critic's Bloomberg miss) and **Nvidia remote-access
+export-control loophole / RASA** (frontier-ai, surfaced via a CNBC
+piece extending `kimi-distillation-fight`). Also still open: **private-
+credit/life-insurer capital pipeline** (global-capital, from today's
+coverage critic), **off-balance-sheet AI obligations** (offered a third
+time 08-18, still no word), and the **Lubbock data-center moratorium
+petition** (offered twice, 08-18/08-19, not re-offered per the
+offered-twice rule — needs an explicit track/drop call).
+📋 08-20 is still `building` — normal, extend or finalize on the next
+`/daily` run.

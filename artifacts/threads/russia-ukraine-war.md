@@ -18,6 +18,11 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-20 — Large missile-and-drone barrage on Kyiv; Russian drone crashes in Romanian (NATO) airspace
+
+- **Russia hit Kyiv city and the surrounding region with a large overnight missile-and-drone barrage into 2026-08-20, killing at least 12-13 in Kyiv alone** (national 24-hour toll reported at 23 dead / 132 injured), damaging a children's hospital and a nine-storey residential building; Solomianskyi district was hardest hit with 7 dead there. ([CNN](https://www.cnn.com/2026/08/20/europe/russia-ukraine-kyiv-attack-intl-hnk), [Euronews](https://www.euronews.com/my-europe/2026/08/20/nine-killed-33-injured-in-russian-strikes-on-kyiv-and-surrounding-region), [Al Jazeera](https://www.aljazeera.com/news/2026/8/20/russian-strike-kills-3-in-ukraine-as-zelenskyy-faces-pressure-at-home)) ⟨daily 2026-08-20⟩
+- **A Russian drone crossed into Romanian (NATO) airspace and crashed in an uninhabited part of Tulcea county the same night — no casualties or damage reported — while Poland separately scrambled jets and activated air defenses near the Ukrainian border as a precaution.** The second NATO-airspace incursion this thread has logged, after Poland's 07-30 incident — a genuine reset of the "does this stay inside Ukraine" question this thread's watch tracks, not an extension of the nightly barrage pattern. ([Novinite](https://www.novinite.com/articles/240193/Drone+Crashes+in+Romania+as+Russia+Strikes+Kyiv)) ⟨daily 2026-08-20⟩ <!-- k: sev=major -->
+
 ## 2026-08-18 — Deadliest single strike in weeks (Pechenihy, 10 dead) answered by one of the war's largest drone raids on Moscow
 
 - **A Russian missile strike on Pechenihy, a village in Ukraine's Kharkiv region, killed 10 civilians and wounded 17 overnight into 08-18 — Zelenskyy vowed a response.** A materially higher single-strike civilian toll than most of the nightly barrages this thread has logged recently. ([AP via Timeslive](https://www.timeslive.co.za/news/world/2026-08-18-russian-missile-attack-kills-10-in-northeast-ukraine-zelensky-vows-response/)) ⟨daily 2026-08-18⟩

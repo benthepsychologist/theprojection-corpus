@@ -464,6 +464,15 @@ expectations:
     logged: 2026-08-01
     logged_by: curate-add   # successor to mn-nudify-ban-effective, resolved hit 08-01
     status: pending
+    # 2026-08-20 ⟨daily⟩: hearing HAPPENED on schedule, 2026-08-19 9:30am ET,
+    # before Judge Donovan W. Frank (Warren E. Burger Federal Building, St.
+    # Paul) — oral arguments heard, matter taken UNDER ADVISEMENT, no ruling
+    # issued as of 08-20. Law (HF1606) remains in force meanwhile. Primary:
+    # CourtListener docket 21 (storage.courtlistener.com/recap/gov.uscourts.
+    # mnd.235231/gov.uscourts.mnd.235231.21.0.pdf); MN AG opposition filing
+    # referenced at ag.state.mn.us/Office/Communications/2026/08/18_xAI.asp.
+    # Stays pending — half of what_confirms (the hearing) is now satisfied;
+    # watching for the ruling itself next, no date given by the court yet.
 
   - id: cms-access-cohort-august
     claim: "CMS ACCESS model next participant cohort starts"
@@ -1079,12 +1088,26 @@ expectations:
     # LOW-CONFIDENCE placeholder for re-check cadence, not a real forecast.
     slips: [2026-08-12]
     due: 2026-08-19
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-20
+    evidence: >
+      No signature, joint statement, or government announcement found
+      anywhere through the 08-19 due window or into 08-20. Current
+      reporting (Brent trading near $93/bbl "as the US and Iran remain
+      at an impasse," dated 08-20) is a negative signal, not a positive
+      one, and the only "joint statement" page surfacing in searches is
+      the same stale June 23 Muscat-visit document already flagged as a
+      trap in the 08-11 notes below. UAE's 08-18/19 suspension of all
+      trade with Iran (its second-largest trading partner) further cuts
+      against a near-term signing. No new target date announced by
+      either government — this is the loud passed-silent outcome, not a
+      further slip.
     # 2026-08-05 ⟨daily⟩: due date is a rough 1-week estimate, not sourced
     # to a stated deadline -- reporting says "close," not "by X date."
     # correct once a firmer timeline surfaces. If signed, this would very
     # plausibly clear the flash-rail bar (ends a 5-month structural closure
     # of a major global chokepoint) -- recheck fast the moment it lands.
+    # 2026-08-20 ⟨daily⟩: PASSED-SILENT — see evidence above.
 
   - id: ping-an-h1-2026-interim-results
     claim: "Ping An Healthcare and Technology's board meeting to approve H1 2026 results (and consider an interim dividend) is confirmed for Aug 18, 2026; the GROUP-level (parent, HK:2318/SH:601318) interim results date was not independently confirmed to a specific day this crawl"
@@ -1157,7 +1180,25 @@ expectations:
     # p20260813001115 / p20260813001361). This closes the "group-level date
     # not independently confirmed" gap the subsidiary entry carried since
     # it was logged on 08-04.
-    status: pending
+    status: hit
+    resolved: 2026-08-20
+    evidence: >
+      Ping An Insurance (Group) Company of China, Ltd. (HKEX:2318/SSE:
+      601318, the parent) published H1 2026 interim results on 2026-08-20
+      on schedule: revenue RMB 615.4bn (+12.6% YoY), net profit RMB
+      92.6bn (+36.1% YoY), interim dividend RMB 0.98/share. Primary:
+      PR Newswire (prnewswire.com/news-releases/ping-an-reports-1h-2026-
+      results-302856353.html), corroborated by Manila Times, both dated
+      08-20 with figures internally consistent as H1 2026 (no repeat of
+      the prior-year-mirror trap noted elsewhere in this file). AI
+      disclosure present but a DIFFERENT shape than the subsidiary's
+      4.6%-of-gross-profit figure — no group-level profit-share number;
+      instead activity-volume metrics: avg. daily token consumption
+      >120bn in June 2026 (up from 30bn in Dec 2025), AI service reps
+      handled ~939mn interactions (81% of total customer-service
+      volume), AI-assisted sales RMB 57,313mn in H1, fraud-detection AI
+      saved RMB 7.11bn in claims (+10.4% YoY), 88% of business scenarios
+      now AI-enabled.
 
   - id: compass-psilocybin-nda
     claim: "COMPASS Pathways files its psilocybin (COMP360) NDA for treatment-resistant depression — targeted Q4 2026, on an FDA National Priority Voucher compressing review to 1-2 months; Commissioner Makary has floated an approval decision by late 2026"

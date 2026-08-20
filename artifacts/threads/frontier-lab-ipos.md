@@ -74,6 +74,10 @@ print. Children: OpenAI · SpaceXAI · Anthropic.
   expected "as soon as next month."
   ([Calcalist](https://www.calcalistech.com/ctechnews/article/b1evv3aufg)) ⟨daily 2026-08-15⟩
 
+## 2026-08-13 — Caught late: investors now targeting a $2T October listing for Anthropic
+
+- **🕰 Multiple outlets (Fortune, corroborated by Bloomberg 08-14) report Anthropic's backers/investors are now targeting a $2 trillion valuation for an October 2026 listing — which would surpass SpaceX's $1.77T IPO as the largest ever, with Morgan Stanley/Goldman Sachs/JPMorgan reportedly underwriting.** `sev=major`: a doubling from this thread's last-logged ~$965B–$1T figure (08-15). Caveat carried in the reporting itself — the $2T figure comes from backers, not the company; Anthropic hasn't confirmed a date, valuation, or exchange. ([Fortune](https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter)) ⟨daily 2026-08-20⟩ <!-- k: sev=major -->
+
 ## 2026-07-30 — SpaceX completes the round trip
 
 - **SpaceX (SPCX) closed at $114.87 on 07-30, down 49.1% from its

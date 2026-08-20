@@ -1,0 +1,24 @@
+source_id: fec
+params:
+  endpoint: https://api.open.fec.gov/v1/filings/
+  since: '2026-08-19'
+  per_page: 25
+  sort: -receipt_date
+  terms_swept: 160
+fetched_at: '2026-08-20T14:04:13Z'
+items:
+- id: fec-2007680
+  url: https://docquery.fec.gov/pdf/407/202608199899581407/202608199899581407.pdf
+  ts: '2026-08-19T00:00:00Z'
+- id: fec-2007459
+  url: https://docquery.fec.gov/pdf/362/202608199899568362/202608199899568362.pdf
+  ts: '2026-08-19T00:00:00Z'
+- id: fec-2007660
+  url: https://docquery.fec.gov/pdf/885/202608199899580885/202608199899580885.pdf
+  ts: '2026-08-19T00:00:00Z'
+- id: fec-2007507
+  url: https://docquery.fec.gov/pdf/831/202608199899569831/202608199899569831.pdf
+  ts: '2026-08-19T00:00:00Z'
+- id: fec-2007508
+  url: https://docquery.fec.gov/pdf/840/202608199899569840/202608199899569840.pdf
+  ts: '2026-08-19T00:00:00Z'

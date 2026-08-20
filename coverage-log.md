@@ -3691,3 +3691,99 @@ now 301s to `bloomberg.com/feeds/technology/news.rss` — fetch the redirect
 target directly rather than the documented `feeds.bloomberg.com` host to
 avoid the extra hop. Axios Pro Rata's `r.jina.ai` reader-proxy fix
 continues to hold.
+
+## 2026-08-20 — three-lens finalize for 08-19
+
+### frontier-ai / 2026-08-19
+
+**Missed:** OpenAI's own newsroom post, dated 2026-08-19, announcing it
+paused key stages of its most advanced AI training for two weeks,
+deployed a new anomaly-detection system aiming to flag unauthorized
+access or safeguard-disabling attempts within 30 minutes, and tightened
+sandbox isolation/network controls — explicitly tied to the July
+Hugging Face breach and the 08-07 Astra "Critical" cyber-capability
+finding. TLDR AI led its 08-19 issue with this (story #2); Euronews,
+Help Net Security, PYMNTS and CyberInsider all dated write-ups 08-19.
+The 08-19 frontier-ai digest's opening pass closed ~11:00 ET and stated
+"no frontier-lab product news dated today" — this post likely landed
+after that pass closed. **Map effect:** RECONCILED, not a genuine miss — checked against
+`openai-agent-security-incident`'s timeline and this exact
+announcement (2-week RL pause, 30-min anomaly-detection window, tied to
+the Hugging Face breach) is already logged there dated 2026-08-18
+(OpenAI's own newsroom post + Fortune, same URLs). TLDR AI and the
+other benchmarks appear to be covering the 08-18 announcement a day
+late, not a new 08-19 event. No edit needed.
+
+**Both covered:** GLM-5.3 API pricing, Cerebras CS-4 — both matched
+TLDR AI's #1/#3 stories.
+
+**We had, they didn't:** Cerebras's stock-reaction framing, the xAI
+Minnesota hearing tracking, upcoming-date tracking (Apple/CXMT,
+GLM-5.5, Grok-4.7) — none of the four benchmarks carry this kind of
+dated-thread discipline.
+
+**Methodology note:** an opening pass that closes mid-morning and
+states "no news today" is vulnerable to same-day-but-later posts; a
+later re-check before finalize catches this class of miss, which is
+exactly what happened here.
+
+### global-capital / 2026-08-19
+
+**Missed:** Axios Pro Rata's own 08-19 lead item, "Walter's ripples" —
+Mark Walter's Lakers sale drawing federal regulatory scrutiny onto how
+major asset managers acquired life insurers that funnel capital into
+private-credit deals, including loans from Walter-controlled insurers
+into his own businesses. Squarely in `ai-buildout-debt-risk` territory
+(opaque capital plumbing) but a distinct mechanism (insurer balance
+sheets into private credit, not AI-buildout debt specifically).
+Secondary: Bloomberg Technology's own lead web story, "Data Center
+Opponents Force Big Tech to Try a Charm Offensive" — converges with a
+thread candidate independently surfaced by this run's capex-cluster
+check (see 08-20 digest's thread candidates).
+
+**Both covered:** Money Stuff's Treasury-buyback/30-year-yield story
+matched this map's own throughline in full.
+
+**Access note:** FT Unhedged blocked via WebFetch directly against
+`ft.com` this pass (same known issue, `curl` against the documented RSS
+URL is the workaround — not re-tried this pass, logged as a gap not a
+finding).
+
+**We had, they didn't:** the Japan JGB/Nikkei selloff and its rate-
+transmission mechanism, the SoftBank-13F/Intel parallel, SK Hynix's
+buyback, the Google-Marvell warrant deal, Nebius's convertible notes —
+a materially deeper capital-markets sweep than any single benchmark.
+
+**Map effect:** proposed, not added directly — (1) a private-credit/
+insurer-capital thread or watchlist entity around the Walter/life-
+insurer pipeline; (2) the data-center-siting/local-opposition thread
+candidate, independently corroborated by two sources this run.
+
+### mental-health / 2026-08-19
+
+**Missed, three items, all from the benchmark set itself:**
+- Behavioral Health Business (08-19 19:46 UTC): Medicaid spending on
+  core psychotherapy rose 156% from 2018-2024, to $6.68B overall (BHB's
+  own CMS-data analysis).
+- Behavioral Health Business (08-19 20:31 UTC): Oregon's first-ever
+  U.S. state-regulated psilocybin study — ~350 adults, adverse effects
+  "uncommon," 92.2% reporting improvement in depression/anxiety/overall
+  wellbeing at one month. Belonged in the digest's own Clinical trials &
+  evidence section, which instead only covered a recurring RSS
+  re-appearance and an inaccessible JMIR piece.
+- Fierce Healthcare (~08-19 3pm, lower confidence — read off the live
+  homepage, not independently cross-confirmed): HHS awarded $96.7M in
+  behavioral-health-services grants.
+
+**Both covered:** UHS's Talkspace acquisition (MobiHealthNews vs. this
+map's Healthcare Dive CEO-interview angle — same story).
+
+**We had, they didn't:** the Colorado HB26-1195 backfill catch, the
+STAT "grooming" First Opinion synthesis.
+
+**Map effect:** the Oregon psilocybin study folded into
+`psychedelic-regulatory-sprint`'s timeline at finalize (see below); the
+Medicaid-spend figure logged as a evidence data point in the 08-19
+digest at finalize; the HHS grant figure not folded in (confidence too
+low without independent corroboration this pass) — worth a follow-up
+check.

@@ -21,6 +21,10 @@ group's pending August 2026 interim results (an H1 AI-contribution
 disclosure would be the next real data point), and whether the claims-
 automation numbers keep climbing or plateau.
 
+## 2026-08-20 — Group-level H1 results land, with an AI number of a different shape
+
+- **Ping An Insurance (Group) Company of China (HKEX:2318/SSE:601318, the parent) reported H1 2026 on its confirmed 08-20 date: revenue RMB 615.4bn (+12.6% YoY), net profit RMB 92.6bn (+36.1% YoY), interim dividend RMB 0.98/share.** No group-level profit-share AI figure comparable to the subsidiary's 4.6%, but real activity-volume metrics: average daily token consumption exceeded 120bn in June 2026 (up from 30bn in December 2025), AI service reps handled ~939mn interactions (81% of total customer-service volume), AI-assisted sales reached RMB 57,313mn in H1, fraud-detection AI saved RMB 7.11bn in claims (+10.4% YoY), and 88% of business scenarios are now AI-enabled. ([PR Newswire](http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html), [Manila Times](https://www.manilatimes.net/2026/08/20/tmt-newswire/pr-newswire/ping-an-reports-1h-2026-results/2409194)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-18 — H1 results land on the due date, with an AI number attached
 
 - **Ping An Healthcare and Technology / "Ping An Good Doctor" (1833.HK)

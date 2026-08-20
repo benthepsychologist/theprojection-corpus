@@ -10,6 +10,10 @@ opened: 2026-07-24
 
 *Watch:* The wave of the AI giants moving into health/MH — the cross-actor narrative Ben's lens most wants and had zero coverage of. Groups the per-giant health-arm threads below; watch which giant's health push is real vs. announced, and where MH specifically shows up.
 
+## 2026-08-19 — A concrete evidence gap behind the "40M ask ChatGPT" figure
+
+- **A STAT News piece documents a "shadow medical system" — 40M+ Americans ask ChatGPT health questions daily — alongside a companion JAMA Network Open study by the same authors finding AI models fail to produce a comprehensive differential diagnosis in >80% of cases when given only incomplete initial patient info, despite doing well on complete case data.** A concrete evidence-gap data point for this thread's standing "is this push real, and is it safe" question — extends rather than resets the thesis. ([STAT News](https://www.statnews.com/2026/08/19/ai-doctor-outperforms-chatgpt-oura-quest-ro-hims-medical-system/)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-15 — Google ships its health push into hardware, but the MH layer doesn't move with it
 
 - **At its "Made by Google" event on August 12, Google unveiled the Pixel

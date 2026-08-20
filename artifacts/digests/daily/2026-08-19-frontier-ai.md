@@ -1,19 +1,19 @@
 ---
 lens: frontier-ai
 date: 2026-08-19
-status: building
+status: final
 window_start: 2026-08-19T05:00:00-04:00
-as_of: 2026-08-19T11:00:00-04:00
-coverage: pending
+as_of: 2026-08-20T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-19
 
-*Curated from ~14 items (agentic-interim; sources: WebSearch sweeps of
+*Curated from ~16 items (agentic-interim; sources: WebSearch sweeps of
 today's coverage, direct fetches of TLDR AI's 08-19 issue and Cerebras's
-own primary reporting, plus the standing collector buffer). Opening
-pass, 05:00 ET through ~11:00 ET — roughly six hours in, so this stays
-`building`; a later pass should extend into the afternoon.*
+own primary reporting, plus the standing collector buffer). Finalized
+05:00 ET 08-19 through 05:00 ET 08-20, extended past the ~11:00 ET
+opening pass with a tier-2 China-cluster deep check.*
 
 ## Today's throughline
 
@@ -46,6 +46,18 @@ Astra disclosure and Anthropic's supervoting-shares story.
   risk.
   ([VentureBeat](https://venturebeat.com/ai/glm-5-3-hits-the-api-at-1-4-4-4-per-million-tokens))
   <!-- k: t=china-stack-independence e=zhipu-ai axis=china -->
+- **CNBC reports Moonshot, ByteDance, Alibaba, and Tencent have all been
+  accessing restricted Nvidia compute via data centers in Thailand,
+  Malaysia, and Japan — legal today because US export controls govern
+  physical chip transfer, not remote cloud access.** Extends this map's
+  07-23 finding (Moonshot specifically obtaining GB300 access via
+  Thailand) to three more major Chinese AI firms, and names the
+  legislative response: the Remote Access Security Act (RASA), passed
+  the House in January 2026, pending in the Senate — it would extend
+  export-control authority to remote/cloud access, though a separate
+  rulemaking would still be needed to apply it to chips.
+  ([CNBC](https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html))
+  <!-- k: t=kimi-distillation-fight e=moonshot-ai axis=china -->
 
 ## ⏱ Release-watch & markets
 
@@ -80,16 +92,13 @@ contrast to 08-18.
 
 ## ⏳ Upcoming & expected
 
-**One hearing due today, outcome not yet confirmed.**
-`xai-mn-preliminary-injunction` (due **today, 08-19**) — the preliminary-
-injunction hearing on Minnesota's HF1606 "nudification" ban was
-scheduled for 9:30 a.m. CT before Judge Donovan W. Frank in St. Paul.
-As of this pass (~11:00 ET / 10:00 CT, i.e. likely mid-hearing or just
-after), no ruling or docket update has surfaced in search or on
-CourtListener. This is the first time any court examines whether the
-law's strict-liability structure survives First Amendment scrutiny.
-**Not flipped** — stays `pending` for a later pass to check against the
-actual docket entry.
+**One hearing due today, held — ruling still pending.**
+`xai-mn-preliminary-injunction` (due 08-19) — the hearing happened as
+scheduled, 9:30am CT before Judge Donovan W. Frank in St. Paul; oral
+arguments heard, matter taken **under advisement**, no ruling issued as
+of this finalize pass. HF1606 remains in force meanwhile. **Not
+flipped** — stays `pending`, now watching for the ruling itself rather
+than the hearing.
 
 **Nearest pending after today:** `apple-cxmt-senate-deadline` (08-21) —
 Apple has still made no public response to the Banks/Schumer letter
@@ -124,3 +133,21 @@ tracking as a security concern. And the frontier labs themselves went
 quiet: no OpenAI, Anthropic or Google product news today, a sharp
 contrast with yesterday's Astra training-pause disclosure and Anthropic's
 founder-control story.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** OpenAI's own newsroom post (08-19,
+covered a day late by TLDR AI/Euronews/Help Net Security/PYMNTS/
+CyberInsider) restating the 2-week RL training pause and 30-minute
+anomaly-detection window — checked against `openai-agent-security-
+incident`'s timeline and this exact announcement (same pause, same
+detection window, same Hugging Face linkage) is already logged there
+dated 2026-08-18. **Reconciled, not a genuine miss** — the benchmarks
+covered the prior day's news a day late; no edit needed.
+
+**Both covered:** GLM-5.3 API pricing, Cerebras CS-4 (TLDR AI's #1/#3).
+
+**We had → they didn't:** Cerebras's stock-reaction framing, the xAI
+Minnesota hearing tracking, upcoming-date tracking across four dated
+claims — none of the four benchmarks carry this kind of dated-thread
+discipline. Full detail: `coverage-log.md`, 2026-08-20 entry.
