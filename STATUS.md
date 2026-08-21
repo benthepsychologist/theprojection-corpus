@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus
 
-*As of 2026-08-20*
+*As of 2026-08-21*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,11 +8,48 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers 08-20's `/daily` pass (finalized 08-19
-across all four lenses with a three-lens coverage critic, opened 08-20
-through ~10:30 ET, two briefings/publish cycles), on top of the 08-19
-note below it (which finalized 08-18, opened 08-19). The 08-18 note and
-everything older sit under that.*
+*Hand-maintained. Top note covers 08-21's two `/daily` passes, on top of
+the 08-20 note below it (which finalized 08-19 with a three-lens coverage
+critic and opened 08-20), then the 08-19 note, then 08-18 and older.*
+
+> **2026-08-21 (15:00 ET) — 08-20 finalized earlier today; 08-21 open and
+> extended twice; first flash since 08-11.** Counts computed at the 15:00
+> ET pass: **99 threads** (85 open · 12 developing · 1 resolved · 1
+> retired — unchanged since 08-19), **61 expectations** (41 pending · 14
+> hit · 6 passed-silent), **211 watchlist entries** (unchanged), **45
+> actor roll-ups** of which 8 now carry an 08-21 `asof`. **1 flash live**
+> — `kryvyi-rih-mall-double-tap`, which renders on its filing day only.
+> **2 publishes today.** Both zone repos confirmed pushed via
+> `git log @{u}..` printing nothing; `kestrel` untouched.
+>
+> ⚠️ **The 10:00 ET pass did not close itself out.** It exited 0 having
+> said it would commit, leaving 46 files dirty; kestrel's fleet sweep then
+> swept them into commit `76a091a` under an unrelated STATUS.md message
+> (see `INBOX/2026-08-21-kestrel-your-daily-output-is-already-committed.md`
+> — nothing lost, wrong label, not force-corrected). It also left 18 files
+> staged-but-uncommitted in `theprojection-site`, and wrote no `log.md`
+> entry. The 15:00 ET pass committed the corpus **before** publish and
+> collect rather than after, and its publish absorbed the orphaned site
+> files. Both repos are clean now.
+>
+> **Three standing failures, all recorded in `log.md` and none fixed
+> here.** ⛔ **GDELT has not completed on three consecutive runs** — this
+> run's leg ran 22 minutes, burned 2m43s of CPU and held 18 sockets while
+> producing nothing, so it is blocked on network rather than crashed.
+> `attention/world-news.yaml` is consequently **stale from 08-18** and no
+> mechanically-scored world-news candidate can be offered at all. ⛔
+> **`/daily` step 1's documented collector command is wrong** —
+> `cloud-researcher collect --corpus .`; `--corpus` is not a flag, and the
+> corpus is read from `KESTREL_INSTANCE`, so the documented form resolves
+> against the engine repo. Engine-owned template, needs routing. ⚠️ **The
+> read payload has been over its 600 KB soft cap for four runs and is
+> growing** (1241 → 1254 → 1308 → 1331 KB); the degradation rule the
+> warning names is not implemented, so the warning is advisory only.
+>
+> **Also this pass:** `/health` was found undocumented in `README.md` and
+> `AGENTS.md` despite being installed by the 2026-08-21.3 kit sweep —
+> added to both by the `/publish` staleness check that caught it.
+
 
 > **2026-08-20 (mid-day) — 08-19 finalized (3-lens coverage critic run),
 > 08-20 opened, two publishes.** Counts computed today: **99 threads**
