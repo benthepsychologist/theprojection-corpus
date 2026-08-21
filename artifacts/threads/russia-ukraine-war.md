@@ -18,6 +18,29 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-21 — A double-tap drone strike on a Kryvyi Rih shopping mall kills at least 15
+
+- **Two Russian attack drones struck the largest shopping centre in
+  Kryvyi Rih, President Zelensky's hometown, with the second hitting the
+  same site as emergency crews responded to the first** — the "double-tap"
+  pattern Ukraine has repeatedly accused Russia of using to target
+  rescuers, and the first time this thread has recorded it against a
+  civilian retail site. Oleksandr Hanzha, head of the Dnipropetrovsk
+  regional military administration, put the toll at at least 15 killed
+  and 130 injured, 23 of them children; the count climbed through the
+  afternoon from an initial six, so any single figure here is a snapshot.
+  Zelensky said attacks like these "are nothing less than terrorist acts"
+  and called for "real pressure on the aggressor".
+  ([AP](https://www.wfmz.com/news/ap/ap-national/russian-drones-kill-14-people-at-a-shopping-mall-in-a-central-ukrainian-city-officials/article_3bf9a3ce-7a5f-5371-99f9-d0cf010bb627.html),
+  [Kyiv Post](https://www.kyivpost.com/post/82850),
+  [The Moscow Times](https://www.themoscowtimes.com/2026/08/21/russian-double-tap-strike-on-shopping-mall-in-ukraine-kills-14-a93557))
+  ⟨daily 2026-08-21⟩
+- **Filed to the flash rail as `kryvyi-rih-mall-double-tap`** — the first
+  entry on the rail since 08-11, and the first this thread has generated.
+  The bar is a general-news front-page lead regardless of lens, which a
+  deliberate mass-casualty strike on a shopping centre meets.
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-20 — A second, smaller barrage the next night; and a third NATO state reports an incursion
 
 - **Russia launched 135 drones at Ukraine overnight into 2026-08-21 (Kyiv

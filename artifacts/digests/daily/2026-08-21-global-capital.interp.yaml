@@ -16,12 +16,15 @@
 #     precedent        REQUIRED on >=1 scenario above `speculative`
 #     context_note     20-200 chars, must end as a sentence
 #
-# Two entries for an opening-pass day. Nothing written for the Anthropic
-# $2T/Citigroup bullet or the Sibu 1 hijacking: the first is a reported
-# figure whose mechanism is simply "a company is going public", and the
-# second is a real risk-premium input but its transmission is already
-# fully described in the bullet itself. Forcing an interpretation onto
-# either would be padding a thin day, which is exactly what this file is
+# Five entries: two from the 10:00 ET opening pass, three added at the
+# 15:00 ET pass. Still nothing written for the Anthropic $2T/Citigroup
+# bullet or the Sibu 1 hijacking: the first is a reported figure whose
+# mechanism is simply "a company is going public", and the second is a
+# real risk-premium input whose transmission is already fully described in
+# the bullet itself. Nothing written for the Operation Economic Fury
+# bullet either — secondary sanctions have a well-understood mechanism
+# that the bullet states outright, and restating it here would be padding.
+# Forcing an interpretation onto any of them is exactly what this file is
 # not for. Read against attention/capital-context.yaml (asof 2026-08-18).
 
 openai-s-revenue-is-reported-up-35-this-quarter-w:
@@ -82,3 +85,90 @@ nvidia-took-a-minority-equity-stake-in-cloverleaf:
   context_note: >
     No figure is disclosed in the joint release, so the "several hundred
     million" size rests on outside coverage rather than a filing.
+
+treasury-s-long-bond-buyback-bump-has-fully-round:
+  mechanism: >
+    A buyback changes which maturity investors must hold without changing
+    net Treasury supply, so it can only work as a signal — and a signal
+    the market can test costs credibility when it fails.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Treasury escalates on size rather than concede the tool is weak,
+        taking buybacks past Bessent's own $4bn-per-issue floor.
+      why: >
+        He has already framed $4bn as a floor and claimed private
+        information the market lacks; both are positions that are harder
+        to retreat from than to double down on.
+      precedent: >
+        The 1999-2000 Treasury buyback programme under Rubin and Summers
+        is the closest structural precedent, but it ran against fiscal
+        surpluses rather than deficits — the opposite setup.
+    - direction: >
+        Issuance composition shifts shorter instead, moving the problem
+        off the long end and onto rollover frequency.
+      why: >
+        Shortening duration is the cheaper lever and does not require
+        defending a purchase programme that visibly failed to hold yields
+        down within two sessions.
+  context_note: >
+    Yield levels here are aggregator snapshots rather than primary ticks,
+    and this map still has no thread carrying the long-end story.
+
+gold-and-bitcoin-are-trading-the-treasury-interven:
+  mechanism: >
+    If buybacks read as debt monetisation, the absorbing counterparty is
+    the currency itself rather than any institution, so capital rotates
+    into assets with no issuer standing behind them.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The dollar keeps sliding as buyback size scales, and gold and
+        bitcoin go on tracking Treasury announcements rather than yields.
+      why: >
+        That is the falsifiable form of the debasement reading — it
+        predicts the dollar, not the curve, is the variable that moves on
+        the next announcement.
+      precedent: >
+        The 2020-21 gold and crypto move on Fed balance-sheet expansion is
+        the same trade, though driven by a central bank rather than by the
+        Treasury's own buying.
+    - direction: >
+        The move fades as a one-week positioning story once buyback
+        auctions clear without incident.
+      why: >
+        A buyback creates no new money, and the market may simply be
+        mispricing the difference between Treasury purchases and
+        central-bank purchases for a few sessions.
+  context_note: >
+    Both moves are one-day and one-week readings; nothing here establishes
+    a sustained regime change in the dollar.
+
+broadcom-is-assembling-70-80bn-of-debt-through-a:
+  mechanism: >
+    Compute capacity is being financed off balance sheet through an SPV,
+    so first loss sits with junior lenders rather than with Broadcom or
+    the lab whose demand underwrites the whole structure.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The junior tranche prices wide enough that the structure becomes
+        the market's first public estimate of AI-buildout credit risk.
+      why: >
+        A junior piece near $35bn is too large to place quietly, so its
+        spread becomes a visible number where none has previously existed
+        for AI lab compute.
+      precedent: >
+        The $35bn Broadcom/Apollo/Blackstone partnership announced in June
+        is the same structure at half the size, and is already on this
+        thread's timeline.
+    - direction: >
+        The raise is cut or restructured before pricing, given reported
+        totals still span $60bn to $100bn across outlets.
+      why: >
+        That spread suggests the deal is still being shopped rather than
+        sized, which makes lender appetite the binding constraint rather
+        than Broadcom's stated need.
+  context_note: >
+    Every figure here is sourced to unnamed lenders through press
+    reporting; no filing or signed commitment exists yet.

@@ -8,6 +8,33 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-08-21 — Broadcom's SPV goes to the debt market for $70-80bn to build Anthropic's chips
+
+- **CNBC reported that lenders are structuring a roughly $45bn senior
+  tranche and a roughly $35bn junior tranche — $70-80bn total — routed
+  through a special-purpose vehicle to fund AI chip capacity for
+  Anthropic, with Apollo and Blackstone in talks to participate.** It
+  extends the $35bn Broadcom/Apollo/Blackstone partnership announced in
+  June (custom chips plus networking, targeting more than 20 GW of
+  compute to top AI labs by 2028) at roughly double the size.
+  ([CNBC](https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html),
+  [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/broadcom-seeks-80-billion-debt-171925920.html))
+  ⟨daily 2026-08-21⟩
+- **What is new today is the structure, not the story.** The raise itself
+  broke 08-20 on Bloomberg at a vaguer "$60-100bn"; today's reporting adds
+  the SPV and the senior/junior split, which is the part that decides who
+  absorbs a loss first. Reported totals still span $60bn to $100bn across
+  outlets — treat the range as the fact and any single number as one
+  outlet's draft, since a spread that wide usually means a deal still
+  being shopped rather than sized.
+  ([SiliconANGLE](https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/))
+  ⟨daily 2026-08-21⟩
+- **This is the thread's thesis arriving at scale.** A junior tranche near
+  $35bn is too large to place quietly, so whatever spread it prices at
+  becomes the first public market estimate of AI-buildout credit risk for
+  lab compute — the number this thread was opened to wait for.
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-20 — Nebius's convertible-notes raise grew on syndication, and closed with a debt-for-equity swap on the side
 
 - **Nebius priced its convertible-notes offering upsized from the $4.5B

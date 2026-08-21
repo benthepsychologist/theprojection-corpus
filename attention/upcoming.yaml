@@ -462,7 +462,46 @@ expectations:
     confidence: confirmed   # hearing date set from the bench by Judge Frank
     what_confirms: "the hearing happening and any ruling on the preliminary injunction; briefing schedule is Ellison opposition due 08-12, xAI reply due 08-17, so a slip shows up in those dates first"
     logged: 2026-08-01
-    logged_by: curate-add   # successor to mn-nudify-ban-effective, resolved hit 08-01
+    logged_by: curate-add   # successor to mn-nudify-ban-effective
+    # RESOLVED 2026-08-21 (/daily, 15:00 ET pass) — SPLIT rather than left
+    # overdue. This entry's what_confirms asked for two things at once: the
+    # hearing AND a ruling. The dated, falsifiable half HAPPENED EXACTLY AS
+    # WRITTEN — 2026-08-19, 9:30am ET, before Judge Donovan W. Frank in St.
+    # Paul, oral argument heard on both sides. The ruling half has no court-
+    # named date at all (Frank took it under advisement and said only "as
+    # soon as possible"), so it cannot resolve against an 08-19 due date and
+    # was holding this entry open indefinitely. Flipped `hit` on the hearing;
+    # the ruling carries forward as successor `xai-mn-pi-ruling` below. Same
+    # pattern as anthropic-ipo-filing -> anthropic-ipo-public-flip.
+    # Re-swept 2026-08-21 15:00 ET: still no ruling. The CourtListener docket
+    # (73678486, xAI LLC v. Ellison) returned HTTP 403 to a direct fetch, so
+    # the no-ruling finding rests on news coverage, not a docket read — the
+    # weaker of the two, and recorded as such.
+    status: hit
+    resolved: 2026-08-19
+
+  - id: xai-mn-pi-ruling
+    claim: "Judge Donovan W. Frank rules on xAI's preliminary-injunction motion against Minnesota's HF1606 'nudify' ban"
+    due: 2026-09-19
+    due_precision: month
+    thread: grok-companion-harm
+    entities: [xai]
+    source: https://www.courtlistener.com/docket/73678486/xai-llc-v-ellison/
+    confidence: reported
+    what_confirms: "a docket entry or order granting or denying the preliminary injunction; the law stays in force until one lands"
+    logged: 2026-08-21
+    logged_by: curate-add   # successor to xai-mn-preliminary-injunction
+    status: pending
+    # ⚠️ THE DUE DATE IS INFERRED, NOT COURT-NAMED, and a miss is therefore
+    # weak evidence of anything. Frank named no date — he said he would rule
+    # "as soon as possible" from the bench on 08-19. 2026-09-19 is one month
+    # post-hearing, chosen as a re-check trigger rather than as a prediction
+    # the court made. Treat a passed-silent here as "go read the docket",
+    # not as news in itself.
+    # Two things make this worth carrying rather than dropping: the law is
+    # IN FORCE while the motion is pending (TRO denied 07-31, effective
+    # 08-01), and the Trump DOJ filed a Statement of Interest backing xAI on
+    # 2026-08-20 — the first federal-executive intervention on this thread., resolved hit 08-01
     status: pending
     # 2026-08-20 ⟨daily⟩: hearing HAPPENED on schedule, 2026-08-19 9:30am ET,
     # before Judge Donovan W. Frank (Warren E. Burger Federal Building, St.

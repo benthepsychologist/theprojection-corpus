@@ -13,6 +13,26 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-21 — DeepSeek ships an experimental multimodal model and benchmarks it against Claude, not GPT
+
+- **DeepSeek released DeepSeek-V4-Flash-Vision-Exp, an experimental
+  multimodal model, per its own API changelog dated 2026-08-21.** Text
+  capability matches the existing V4-Flash across agents, reasoning and
+  world knowledge; on multimodal *agent* benchmarks the company claims a
+  "major leap" over V4-Flash that brings performance "close to Opus-4.8".
+  Images tokenise at up to 384 tokens each at V4-Flash pricing, served
+  through Chat Completions, Messages and Responses APIs.
+  ([DeepSeek API changelog](https://api-docs.deepseek.com/news/news260821/))
+  ⟨daily 2026-08-21⟩
+- **The comparison target is the development, not the benchmark score.**
+  Chinese frontier releases have generally been positioned on
+  price-performance against GPT-class models; benchmarking an agentic
+  multimodal release against Anthropic's frontier model is a claim about
+  capability parity at the top of the stack rather than about cost. Worth
+  watching whether the framing recurs on the next non-experimental
+  release, which is when it stops being marketing.
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-20 — Hua Hong joins the Hang Seng flagship index; the AI labs did not
 
 - **Hang Seng Indexes' semi-annual review added Hua Hong Grace

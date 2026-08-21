@@ -22,7 +22,7 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
-## 2026-08-21 — Brent holds ~$95 and VLCC Gulf rates clear $520k/day; transits fall again
+## 2026-08-21 — Brent holds ~$95; the Iran-Oman transit track slips back to "resuming" talks; the US sanctions campaign gets a name
 
 - **Brent was $95.29/bbl at 08:00 ET, down 0.11% on the day but +40.5%
   year-over-year against $67.80** — the level, not the daily move, is the
@@ -38,6 +38,37 @@ itself (who's fighting whom, where it's widening) — see
   Rates rising as volumes fall is the shape of owner avoidance rather
   than demand — the shipping leg repricing faster than the barrel.
   ([Lloyd's List Intelligence](https://www.lloydslistintelligence.com/resources/blog/strait-of-hormuz-brief-19-august-2026))
+  ⟨daily 2026-08-21⟩
+- **Iran's and Oman's foreign ministers discussed Hormuz by phone, and the
+  language moved backwards.** Abbas Araghchi and Badr al-Busaidi spoke of
+  "ways to create suitable conditions for *resuming* dialogue and
+  negotiations" and of continuing talks "to reach understandings that
+  support the resumption of freedom of navigation" — weaker than the
+  08-17/18 position this thread logged, an agreement in principle on a
+  route map with a joint declaration being prepared. No signing, no joint
+  statement, no new date. Al-Busaidi separately said lasting security in
+  the waterway requires a permanent regional peace, which manages
+  expectations rather than announcing anything.
+  ([Arab News](https://www.arabnews.com/node/2655445/middle-east))
+  ⟨daily 2026-08-21⟩
+- **The US sanctions campaign now has a name — "Operation Economic Fury" —
+  and named targets, three days before it is due to land.** Bessent
+  threatened the "full might and force" of Treasury against any country
+  trading with Iran, with China, India and the UAE named as focal points,
+  and the mechanisms enumerated: oil smuggling, swap lines, cash
+  transfers, exchange houses, ship registries, front companies. This is
+  specificity added to the 08-19 "economic warfare" framing rather than a
+  fresh announcement — but it is what makes the 08-24 expectation
+  checkable on Monday. The forward risk this thread cares about is that
+  secondary sanctions at this scale historically produce more shadow-fleet
+  evasion rather than compliance, which is the same tonnage already
+  driving the piracy and war-risk premiums above.
+  ([OPB](https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/))
+  ⟨daily 2026-08-21⟩
+- ⚠️ **Expectation status: `iran-oman-hormuz-deal-signing` stays
+  passed-silent**, with its 3-day grace expiring 08-22. Two independent
+  sweeps five hours apart both found no signing and no date, which makes
+  this a well-established negative rather than a thin one.
   ⟨daily 2026-08-21⟩
 
 ## 2026-08-20 — A hijacked shadow-fleet tanker adds a piracy premium on top of the war premium

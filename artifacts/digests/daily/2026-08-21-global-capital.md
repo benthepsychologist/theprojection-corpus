@@ -3,30 +3,43 @@ lens: global-capital
 date: 2026-08-21
 status: building
 window_start: 2026-08-21T05:00:00-04:00
-as_of: 2026-08-21T10:00:00-04:00
+as_of: 2026-08-21T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-21
 
-*Curated agentic-interim, 05:00 ET through ~10:00 ET — an opening pass
-five hours into the day, not a day in review. Sources: today's collector
-run (fred, sec_edgar, treasury_tic, imf_data, bis_stats, epfr_flows,
-fund_flow_reports, fec, page_diff, rss; the google_news_rss/gdelt legs
-were still running at write time), a tier-2 AI-financing cluster deep
-check, a tier-2 geopolitics check for the oil/shipping leg, and a tier-3
-cold rotation. Read against `attention/capital-context.yaml` (asof
-2026-08-18).*
+*Curated agentic-interim, 05:00 ET through ~15:00 ET in two passes: an
+opening pass at 10:00 ET and a second pass at 15:00 ET covering the
+10:00–15:00 ET window. Sources: today's collector runs (fred, sec_edgar,
+treasury_tic, imf_data, bis_stats, epfr_flows, fund_flow_reports, fec,
+page_diff, rss, google_news_rss), a tier-2 AI-financing cluster deep
+check, a tier-2 geopolitics check for the oil/shipping leg, a tier-3 cold
+rotation, and a second tier-2 macro/rates sweep (CNBC, The National,
+Arab News, OPB, TradingEconomics, Yahoo Finance). Read against
+`attention/capital-context.yaml` (asof 2026-08-18).*
 
 ## Today's throughline
 
 **Anthropic's $2 trillion number acquired something it did not have
-yesterday: a denominator.** The valuation target is now reported to rest
-on a $190-200bn 2028 revenue forecast — which converts an
-unfalsifiable number into a testable claim, and puts it into a document
-with legal consequences if the public S-1 lands as reported. Underneath
-that, the oil leg keeps repricing without needing fresh news: Brent at
-$95, up 40% year-on-year, on a Hormuz that has simply stayed closed.
+yesterday: a denominator — and by the afternoon it had a debt stack to
+match.** The valuation target is now reported to rest on a $190-200bn
+2028 revenue forecast, which converts an unfalsifiable number into a
+testable claim and puts it into a document with legal consequences if the
+public S-1 lands as reported. Then CNBC reported that Broadcom is
+assembling $70-80bn of debt through a special-purpose vehicle to build
+the chips that revenue is supposed to run on. The same company is being
+valued on future revenue and financed on future revenue at the same
+time, in two separate markets, on the same day.
+
+**The other half of the day is the blind spot this map was told about
+yesterday, still developing without a node to land on.** The long-end
+buyback bump announced 08-19 has fully round-tripped — the 10-year is
+back to ~4.71-4.74% against a 4.69% prior close — and the reaction has
+moved into assets that trade the dollar rather than the curve: gold at a
+three-month high, bitcoin up 7-9% on the day. The market is reading
+Treasury buying its own long bonds as a currency story, not a rates
+story. That reading is testable and this map currently cannot hold it.
 
 ## Macro strip
 
@@ -40,9 +53,19 @@ $95, up 40% year-on-year, on a Hormuz that has simply stayed closed.
 - **Gulf transits — 73** in the week to 08-16, down from 91 the week
   before. Rates rising while volumes fall is owner avoidance, not
   demand.
-- **US 10-year Treasury — 4.69%** at the 08-20 close (carried forward;
-  no 08-21 read yet), back up after the buyback-announcement rally faded
-  within a day.
+- **US 10-year Treasury — ~4.71-4.74%** in Friday's session, against a
+  **4.69%** 08-20 close. The buyback-announcement rally has fully
+  round-tripped.
+- **US 30-year Treasury — ~5.25%**, off Tuesday's 5.33% high but still
+  near multi-decade levels.
+- **Gold — ~$4,590-4,600/oz**, +1.5-1.9% on the day, a three-month high
+  and a fifth consecutive weekly gain.
+- **Bitcoin — ~$77,000**, +7-8.7% intraday, its strongest week in months.
+- ⚠️ **Sourcing caveat on this strip:** the rates, gold and bitcoin reads
+  are aggregator snapshots (TradingEconomics, wire market wraps), not
+  primary exchange ticks, and outlets disagree at the margin. Treat the
+  direction and the magnitude as solid and any single decimal as
+  approximate.
 
 ## Capital in my markets
 
@@ -71,6 +94,35 @@ $95, up 40% year-on-year, on a Hormuz that has simply stayed closed.
   ([The Decoder](https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/))
   <!-- k: t=ai-circular-financing-risk e=openai,anthropic axis=capital-in-my-markets interp=yes -->
 
+- **Treasury's long-bond buyback bump has fully round-tripped, and
+  Bessent says he is acting on information the bond market does not
+  have.** The buyback ceiling was doubled on 08-19 from $2bn to "at
+  least" $4bn per issue; the 10-year and 30-year rallied, and by Friday's
+  session the move was gone — the 10-year back to ~4.71-4.74% against a
+  4.69% 08-20 close, the 30-year ~5.25%. Bessent told CNBC he has
+  "asymmetric information" about the long end he would not disclose, that
+  yields "don't reflect the underlying fundamentals," and that the
+  buyback "could be more than $4 billion per issue" — making the $4bn a
+  floor rather than a ceiling. ⚠️ This map has no thread for this and is
+  now watching its second consecutive day of it; see Thread candidates.
+  ([24/7 Wall St.](https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/),
+  [TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield))
+  <!-- k: axis=capital-in-my-markets interp=yes -->
+
+- **Gold and bitcoin are trading the Treasury intervention as a
+  debasement signal rather than a rates signal.** Gold reached a
+  three-month high at ~$4,590-4,600/oz, up 1.5-1.9% and heading for a
+  fifth straight weekly gain; bitcoin rose 7-8.7% intraday to ~$77,000.
+  Multiple outlets attribute both to the same cause and it is not the
+  yield curve: a Treasury that buys back its own long debt reads to this
+  market as quasi-monetisation, transmitted through a dollar at a
+  multi-month low. The distinction matters because it is falsifiable —
+  if this is the right reading, the dollar keeps sliding as buybacks
+  scale.
+  ([The National](https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/),
+  [Dataconomy](https://dataconomy.com/2026/08/21/bitcoin-surges-87-as-us-treasury-doubles-buyback-operations/))
+  <!-- k: axis=capital-in-my-markets interp=yes -->
+
 ## Deals & filings
 
 - **Nvidia took a minority equity stake in Cloverleaf Infrastructure**, a
@@ -83,6 +135,23 @@ $95, up 40% year-on-year, on a Hormuz that has simply stayed closed.
   chips need before a single one ships.
   ([Cloverleaf/Nvidia joint release](https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html))
   <!-- k: t=nvidia-vendor-financing e=nvidia axis=deals-and-filings interp=yes -->
+
+- **Broadcom is assembling $70-80bn of debt through a special-purpose
+  vehicle to build AI chip capacity for Anthropic.** CNBC reported the
+  structure today: a senior tranche around $45bn and a junior tranche
+  around $35bn, both still moving, with Apollo and Blackstone in talks to
+  participate again. It extends the $35bn Broadcom/Apollo/Blackstone
+  partnership announced in June — custom chips plus networking, targeting
+  more than 20 GW of compute to top AI labs by 2028. 🕰 The story itself
+  broke 08-20 on Bloomberg at a vaguer "$60-100bn"; what is new today is
+  the SPV and the tranche split, which is the part that determines who
+  eats a loss first. Reported figures still span $60bn to $100bn across
+  outlets, so treat the range as the fact and any single number as one
+  outlet's draft.
+  ([CNBC](https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html),
+  [Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/broadcom-seeks-80-billion-debt-171925920.html),
+  [SiliconANGLE](https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/))
+  <!-- k: t=ai-buildout-debt-risk e=broadcom,anthropic axis=deals-and-filings interp=yes -->
 
 ## Power & lobbying
 
@@ -98,10 +167,30 @@ $95, up 40% year-on-year, on a Hormuz that has simply stayed closed.
   ([gCaptain](https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/))
   <!-- k: t=red-sea-oil-shock axis=power-and-lobbying -->
 
+- **The Iran sanctions campaign now has a name — "Operation Economic
+  Fury" — and named targets, three days before it lands.** Bessent
+  threatened the "full might and force" of Treasury against any country
+  doing business with Iran, with China, India and the UAE named as focal
+  points, and the targeted mechanisms enumerated: oil smuggling, swap
+  lines, cash transfers, exchange houses, ship registries, front
+  companies. This is specificity added to the 08-19 "economic warfare"
+  framing rather than a new announcement — but the specificity is what
+  makes `iran-us-sanctions-package-aug24` checkable on Monday.
+  ([OPB](https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/))
+  <!-- k: t=red-sea-oil-shock axis=power-and-lobbying -->
+
 ## ⏳ Upcoming & expected
 
-**No global-capital flips today.** Three new dated expectations were
-logged at the 08-20 finalize and stand pending here:
+**No global-capital flips today, and two claims re-swept clean.**
+`iran-us-sanctions-package-aug24` is **holding, not slipping** — Bessent
+reaffirmed the 08-24 date on 08-20 and today added target detail, with no
+hint of delay. `anthropic-public-s1-filing` re-checked against SEC EDGAR
+directly: no public S-1 or S-1/A on file, still confidential, with fresh
+08-20/08-21 reporting repeating "as soon as the end of August" as
+guidance rather than a filing.
+
+Three dated expectations were logged at the 08-20 finalize and stand
+pending here:
 `iran-us-sanctions-package-aug24` (08-24 — Bessent publicly named the
 day, which is what makes it falsifiable), `anthropic-public-s1-filing`
 (08-31 — the end of Bloomberg's reported range, not a company-stated
@@ -123,6 +212,17 @@ date, so a miss is weak evidence of a slip), and
 - ⚠️ **`frontier-lab-ipos` watch text corrected** — see the 08-20 front.
 - **New timeline blocks:** `frontier-lab-ipos`, `ai-circular-financing-
   risk`, `nvidia-vendor-financing`, `red-sea-oil-shock`.
+- **Added at the 15:00 ET pass:** `ai-buildout-debt-risk` (the Broadcom
+  SPV) and a second `red-sea-oil-shock` block (Operation Economic Fury,
+  and the Iran-Oman call that walked the Hormuz language backwards — see
+  the world-news digest).
+- 💡 **Two entity adds are implied and NOT made:** Apollo and Blackstone
+  appear in the Broadcom SPV as the junior-capital providers and neither
+  is on the watchlist, so neither could be tagged in the annotation above.
+  They are the private-credit names this lens's own long-carried
+  "private-credit/life-insurer capital pipeline" candidate is about. Not
+  added unilaterally — an entity add is a map change and goes through
+  `/steer`.
 - No entity adds.
 
 ## 🧵 Thread candidates
@@ -145,10 +245,14 @@ date, so a miss is weak evidence of a slip), and
 through 08-18) all still need a track/drop call.
 
 ---
-Anthropic's $2 trillion IPO target picked up a denominator — a reported
-$190-200bn 2028 revenue forecast — and a fourth lead bank, weeks before
-a public filing that would put that arithmetic on the record. Nvidia
-bought into a land-and-power developer, pushing its equity pattern
-upstream of its own customers. And the oil leg kept repricing on nothing
-new at all: Brent $95, up 40% on the year, tanker rates above $520,000 a
-day, Gulf transits down to 73 a week.
+Anthropic was valued and financed on the same future revenue on the same
+day: a $2 trillion IPO target now resting on a reported $190-200bn 2028
+forecast in the morning, and by the afternoon a Broadcom special-purpose
+vehicle assembling $70-80bn of debt — roughly $45bn senior, $35bn junior
+— to build the chips that revenue depends on. Nvidia separately bought
+into a land-and-power developer, pushing its equity pattern upstream of
+its own customers. And the long end went on refusing to cooperate: the
+buyback rally round-tripped inside two days, the 10-year sits back near
+4.7%, and the money that moved went into gold at a three-month high and
+bitcoin up 7-9% — a market pricing the dollar, not the curve. That is the
+second straight day this lens's actual lead has had no thread to land on.

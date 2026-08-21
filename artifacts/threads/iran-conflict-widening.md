@@ -24,7 +24,7 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
-## 2026-08-21 — Pezeshkian says end the war "now"; Washington answers with sanctions, not strikes
+## 2026-08-21 — Pezeshkian says end the war "now"; Washington answers with sanctions, not strikes — and names the campaign
 
 - **President Masoud Pezeshkian said publicly that "it is better that we
   bring the war to an end now, as we are in a position of power and
@@ -33,6 +33,22 @@ concrete.
   choice made from strength rather than a concession. Single-source as
   reported.
   ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-21-2026/))
+  ⟨daily 2026-08-21⟩
+- **The sanctions campaign was named "Operation Economic Fury" and given
+  named targets at the 15:00 ET pass.** Bessent threatened the "full might
+  and force" of Treasury against any country doing business with Iran,
+  naming China, India and the UAE as focal points and enumerating the
+  mechanisms — oil smuggling, swap lines, cash transfers, exchange houses,
+  ship registries, front companies. Specificity added to the 08-19 framing
+  rather than a new announcement, but it converts `iran-us-sanctions-
+  package-aug24` from a general threat into something checkable Monday.
+  ([OPB](https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/))
+  ⟨daily 2026-08-21⟩
+- **The Iran-Oman transit track went the other way the same day** — the
+  two foreign ministers spoke of *resuming* dialogue rather than
+  finalising the route-map agreement reported 08-17/18. Logged in full on
+  `red-sea-oil-shock`, where the navigation consequence lands.
+  ([Arab News](https://www.arabnews.com/node/2655445/middle-east))
   ⟨daily 2026-08-21⟩
 
 ## 2026-08-20 — The 60-day US-Iran MoU lapsed, and the US track turns economic

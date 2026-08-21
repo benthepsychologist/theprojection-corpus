@@ -106,7 +106,56 @@
 #   expires     YYYY-MM-DD — auto-drops from the rail
 #   logged_by   ben-steer | curate-add
 
-flashes: []
+flashes:
+  - id: kryvyi-rih-mall-double-tap
+    date: 2026-08-21
+    severity: critical
+    headline: "Russian double-tap drone strike on a Kryvyi Rih shopping mall kills at least 15, wounds 130"
+    body: >-
+      Two Russian attack drones struck the largest shopping centre in Kryvyi
+      Rih, President Zelensky's hometown, on the afternoon of 2026-08-21, the
+      second hitting the same site as emergency crews were responding to the
+      first — the "double-tap" pattern Ukraine has repeatedly accused Russia
+      of using against rescuers. Oleksandr Hanzha, head of the Dnipropetrovsk
+      regional military administration, put the toll at at least 15 killed and
+      130 injured including 23 children, figures still climbing at filing;
+      President Zelensky said attacks like these "are nothing less than
+      terrorist acts."
+    sources:
+      - label: AP
+        url: https://www.wfmz.com/news/ap/ap-national/russian-drones-kill-14-people-at-a-shopping-mall-in-a-central-ukrainian-city-officials/article_3bf9a3ce-7a5f-5371-99f9-d0cf010bb627.html
+      - label: Kyiv Post
+        url: https://www.kyivpost.com/post/82850
+      - label: The Moscow Times
+        url: https://www.themoscowtimes.com/2026/08/21/russian-double-tap-strike-on-shopping-mall-in-ukraine-kills-14-a93557
+      - label: CNN
+        url: https://us.cnn.com/2026/08/21/europe/kryvyi-rih-shopping-center-strike-intl
+    lenses: [all]
+    expires: 2026-08-22
+    logged_by: curate-add
+    # Filed 2026-08-21 at the 15:00 ET /daily pass. The 10:00 ET pass asked
+    # the flash question and correctly answered NO — this event had not
+    # happened yet. It is a NEW event, not a running state, per the rule
+    # above.
+    #
+    # WHY IT CLEARS THE BAR: the test is "would this lead a general news
+    # front page regardless of our lenses", not "is this our biggest story".
+    # A deliberate mass-casualty strike on a civilian shopping centre, with a
+    # second drone timed for the responders, is leading AP, CNN and Euronews
+    # today. Precedent in this file's own prune list: russia-kyiv-barrage-aug
+    # cleared the same bar.
+    #
+    # VERIFICATION NOTE — a re-index trap was caught and avoided. A search
+    # result headlined "Death toll from Russia's attack on Kryvyi Rih rises
+    # to 19" surfaces against today's query but is dated APRIL 2025 and
+    # describes a DIFFERENT Kryvyi Rih attack. The 15/130/23 figures here are
+    # from AP quoting a named regional official, published 14:44 ET today,
+    # inside the window. CNN returned HTTP 451 to a direct fetch from here,
+    # so it is cited as corroboration seen via search, not as a page read.
+    #
+    # `expires` is the documented event-date + 1 default. It is cosmetic:
+    # render_read.flash_last_day() caps this at its filing day regardless,
+    # and no value here can extend that.
 # Pruned 2026-08-14 (/week step 2): colombia-earthquake-m7-4 (filed 08-11)
 # had already passed its filing day under flash_last_day() and no longer
 # rendered regardless — cosmetic tidy only, nothing was live. Its substance
