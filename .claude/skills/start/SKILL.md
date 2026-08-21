@@ -1,4 +1,4 @@
-<!-- kit: attention/start@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/start/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/start@2026-08-21.3 — canonical: kestrel/library/skills/attention/start/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: start
@@ -69,8 +69,8 @@ renders one card, in this order:
    file in `artifacts/digests/weekly/` (or the latest week-scorecard line
    in `coverage-log.md`) for when `/week` last ran; newest
    `provenance/publish-*.yaml` timestamp for when `/publish` last ran.
-6. **Push safety** — run `git log @{u}..` in **both** `/workspace/kestrel`
-   and `/workspace/theprojection-site`. This is the one check `/map` doesn't
+6. **Push safety** — run `git log @{u}..` in **both** `kestrel`
+   and `theprojection-site`. This is the one check `/map` doesn't
    do and it's load-bearing: AGENTS.md §Session close documents that
    `/publish --push` pushes the SITE's deploy hook and **nothing**
    ever pushes kestrel automatically, so unpushed kestrel commits

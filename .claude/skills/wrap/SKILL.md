@@ -1,4 +1,4 @@
-<!-- kit: attention/wrap@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/wrap/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/wrap@2026-08-21.3 — canonical: kestrel/library/skills/attention/wrap/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: wrap
@@ -17,7 +17,7 @@ watching the pipeline.
 **Scope — what this skill writes, and what it does not** (the
 cloud-governor discipline): it writes `STATUS.md`, `log.md`, git commits
 and pushes in the two zone repos (this repo + the site sibling), and at
-most one brief into `/workspace/kestrel-ops/INBOX/`. It does
+most one brief into `kestrel-ops/INBOX/`. It does
 **NOT** write digest content or frontmatter (that's `/daily`'s state
 machine), `attention/` steering files (that's `/steer`/`/daily`), or
 publish content (that's `/publish`). A wrap that finds those needing work
@@ -91,7 +91,7 @@ awaiting Ben's word — name those in the report).
 
 ### 4 — site repo state, BEFORE any push decision
 
-Check the site sibling's (`/workspace/theprojection-site`) working tree. Two different
+Check the site sibling's (`theprojection-site`) working tree. Two different
 situations, never conflated:
 
 - **Hand-authored edits** (layouts, css, hand-written content like
@@ -108,10 +108,10 @@ situations, never conflated:
 
 - `git push origin main` on this repo.
 - **Verify, never assume:** `git log @{u}..` must print **nothing** on
-  BOTH this repo and `/workspace/theprojection-site`. A clean `git status` is not
+  BOTH this repo and `theprojection-site`. A clean `git status` is not
   evidence — only the upstream check is (AGENTS.md §Session close).
-- **Engine repo (`/workspace/kestrel`): read-only check, flag-never-push.**
-  `git -C /workspace/kestrel log @{u}..` — unpushed commits there mean its
+- **Engine repo (`kestrel`): read-only check, flag-never-push.**
+  `git -C kestrel log @{u}..` — unpushed commits there mean its
   resident session missed a push; that's a report flag addressed to Ben,
   and pushing it from here is a write-zone violation even though it
   would "help."
@@ -126,7 +126,7 @@ situations, never conflated:
 
 - If `AGENTS.md`/`CLAUDE.md`/kit-tracked skills changed this session and
   the change should reach the canonical template: **one uncommitted
-  brief into `/workspace/kestrel-ops/INBOX/`** (the `/life:handoff` protocol; dev-shaped
+  brief into `kestrel-ops/INBOX/`** (the `/life:handoff` protocol; dev-shaped
   requests go to the engine's issue tracker instead) —
   write the file, commit it there, touch nothing else.
 - **The report** — the wrap card, house style: one-line verdict; a table
@@ -141,9 +141,9 @@ situations, never conflated:
 ## Do not
 
 - Do not push, commit, build, or lint in the **engine repo**
-  (`/workspace/kestrel`) — flag, never fix (write zone, Ben 2026-08-04). The
+  (`kestrel`) — flag, never fix (write zone, Ben 2026-08-04). The
   brief is the one sanctioned write, and it no longer goes there at all:
-  ops briefs go to `/workspace/kestrel-ops/INBOX/` and **are committed** (that repo is a
+  ops briefs go to `kestrel-ops/INBOX/` and **are committed** (that repo is a
   filing cabinet, and an uncommitted brief is a dirty tree the next
   operation may lose); dev-shaped requests go to the issue tracker.
 - Do not flip digest frontmatter, edit `attention/` steering files, or

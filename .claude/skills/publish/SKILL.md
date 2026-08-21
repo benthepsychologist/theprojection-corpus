@@ -1,4 +1,4 @@
-<!-- kit: attention/publish@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/publish/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/publish@2026-08-21.3 — canonical: kestrel/library/skills/attention/publish/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: publish
@@ -8,7 +8,7 @@ argument-hint: [--push] [--dry-run]
 
 # /publish [--push] [--dry-run] — export to theprojection.org
 
-Runs `kestrel publish --instance /workspace/theprojection-corpus`
+Runs `kestrel publish --instance .`
 (AGENTS.md discipline 9) — the generic engine CLI, which loads this repo's
 own `publish/adapter.py` (declared in `kestrel.yaml`'s `outputs.adapter`).
 Kestrel feeds the site; never the reverse, and no other path writes there.

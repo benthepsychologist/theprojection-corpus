@@ -1,4 +1,4 @@
-<!-- kit: attention/daily@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/daily@2026-08-21.3 — canonical: kestrel/library/skills/attention/daily/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: daily
@@ -203,7 +203,7 @@ archive; the page is derived from them.
 8. **Close the session** — `OPERATING.md` §6: append to `log.md`, then
    **commit and push THIS repo** (`git push origin $(git rev-parse
    --abbrev-ref HEAD)`), including this run's provenance manifests.
-   ⛔ **Never push `/workspace/kestrel`** — it is out of this session's write
+   ⛔ **Never push `kestrel`** — it is out of this session's write
    zone; flag it, never fix it.
    this repo — nothing else does, so a run that skips this leaves work
    sitting local and looking fine. Check `git log @{u}..` before calling
@@ -219,7 +219,7 @@ threads consume by ROUTING — so never dispatch per-thread (the same
 story would be fetched 58 times). Three tiers:
 
 1. **Lens sweeps — COLLECTORS FIRST (2026-07-28: collectors/ is real):**
-   run `cloud-researcher collect --corpus /workspace/theprojection-corpus` (all lenses, since last run) BEFORE any
+   run `cloud-researcher collect --corpus .` (all lenses, since last run) BEFORE any
    agent — 7 deterministic sources (google_news_rss, rss, gdelt,
    sec_edgar, federal_register, openalex, clinicaltrials) fill buffer/ +
    provenance in minutes, free. Then AT MOST 1-2 sonnet agents to cover

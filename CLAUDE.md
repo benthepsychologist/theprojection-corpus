@@ -1,4 +1,4 @@
-<!-- kit: attention/CLAUDE@2026-08-21.2 — canonical: /workspace/kestrel/library/agentdocs/attention/CLAUDE.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/CLAUDE@2026-08-21.3 — canonical: kestrel/library/agentdocs/attention/CLAUDE.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 # CLAUDE.md — theprojection
 
@@ -17,7 +17,7 @@ agent runtime. Nothing is stated only here.
 >    out.
 
 **What this repo is:** a personal news/attention map — it buffers and extracts from external sources, and never owns the source data. It is an instance of the kestrel engine
-(`/workspace/kestrel`); the engine holds the code, this repo holds the
+(`kestrel`); the engine holds the code, this repo holds the
 data and its own local extensions.
 
 **Fastest orientation:** run the repo's `/start` skill. It reads the docs
