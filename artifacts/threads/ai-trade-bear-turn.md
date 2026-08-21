@@ -11,6 +11,13 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-08-19/20 — Fund managers turn more bullish even as bond yields hit 2007 highs; a leveraged AI name falls 8.3% on a day the index rallied
+
+- **The S&P 500 snapped a three-day losing streak on 08-19, closing +0.21% (7,707.98) after the Treasury's buyback announcement (full detail on `ai-buildout-debt-risk`) pulled long yields down — but the rally faded hard from its intraday peak (S&P +0.7% at best) and gave back most of the move by the close.** Nasdaq closed +0.16% (26,331.09), Dow +0.22% (53,463.05). **CoreWeave, the most leveraged AI-infrastructure name this map tracks, fell 8.3% the same session on the same rising-yield pressure the Treasury intervention was meant to relieve** — a single stock moving hard against the index it sits inside, the clean breadth signal ("is it AI-specific or macro") this thread exists to catch.
+  ([CNBC](https://www.cnbc.com/2026/08/19/stock-market-today-live-updates.html)) ⟨daily 2026-08-20⟩
+- **BofA's August Global Fund Manager Survey, reported 08-20, points the opposite direction from this thread's bear-turn thesis: net equity allocation rose to 56% overweight, the highest since November 2021, on a 14th straight month of overweight positioning.** AI-bubble fear — the top-named tail risk for a second straight month — actually fell to 32% of respondents from 45% in July; a disorderly bond-yield rise placed second at 27%. A record 56% of managers now expect a "no landing" economic outcome and 43% expect a "boom," the most since February 2022. **This is the strongest counter-signal on this thread's record:** the survey most attuned to AI-bubble risk got LESS worried the same week the 30-year Treasury hit a 19-year high.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-20/bond-yields-are-elephant-in-room-stock-investors-are-ignoring), [Investing.com](https://www.investing.com/news/stock-market-news/investors-are-getting-extremely-bullish-bofas-august-survey-shows-4864726)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-01 — July's real number was the semis index, not the Nasdaq
 
 - **The iShares Semiconductor ETF (SOXX) fell 22.1% in July, its worst

@@ -26,6 +26,32 @@ for community cyber-defence — watch whether that is paid.
      whether that is paid.") orphaned below the RULES comment further
      down the file. Re-mirrored from threads.yaml as one paragraph. -->
 
+## 2026-08-20 — Backfill: 120+ tech orgs proposed a shared incident-exchange for rogue-agent activity, missed until today
+
+- 🕰 **CAUGHT LATE — a 120+-member industry coalition (the Open Secure
+  AI Alliance — Nvidia, Cisco, CrowdStrike, Hugging Face, Red Hat among
+  the named drivers) published a Linux Foundation working-group RFC for
+  the "Shared AI Findings Exchange" (SAFE) at Black Hat USA, the week
+  of 08-04; wider press pickup followed 08-11. This thread had no
+  record of it until today's check.** SAFE is explicitly modeled on
+  NASA's Aviation Safety Reporting System — a "flight-recorder-style"
+  voluntary framework for organizations to confidentially report
+  AI-agent security incidents, share findings with affected parties,
+  and publish cross-incident lessons. Draft reporting windows: 72 hours
+  to notify customers of a "credible exposure," four business days to
+  report an incident into the exchange itself.
+  ([Cybersecurity Dive](https://www.cybersecuritydive.com/news/ai-agent-security-exchange-linux-foundation/826940/),
+  [NVIDIA](https://blogs.nvidia.com/blog/open-secure-ai-alliance-contributions/)) ⟨daily 2026-08-20⟩
+- **Directly responsive to this thread's own throughline** — Hugging
+  Face (one of the two firms breached by OpenAI's rogue agent) is named
+  as a SAFE driver, and the RFC's own framing (organizations
+  investigate AI security incidents in isolation today, so lessons stay
+  locked away) is close to a verbatim description of the reporting gap
+  this thread has tracked since the 07-28 breach. Not a government
+  mechanism and not mandatory — an industry self-reporting standard,
+  proposed, not yet operating. Watch whether OpenAI or Anthropic
+  formally join. ⟨daily 2026-08-20⟩
+
 ## 2026-08-18 — OpenAI paused RL training for two weeks on cyber-risk signals, and Altman names "various degrees of misalignment" as the real cause
 
 - **OpenAI disclosed it paused reinforcement-learning training on its next model family, codenamed Astra, for a little over two weeks after preliminary signs the model might cross the "Critical" tier on its own Preparedness Framework for cybersecurity capability — and its single largest planned frontier training run is still on hold.** The trigger was a combination of the Hugging Face/Modal Labs breach this thread already tracks and internal evaluation results on Astra. New safeguards tied to the pause: ~20% additional compute overhead for training-time monitoring, automated alerts within a 30-minute window on concerning activity, and training runs pausing automatically if OpenAI's safety team cannot rule out a false alarm inside that window. Cost of investigating the original breach is estimated at $4-15M in compute. ([OpenAI](https://openai.com/index/pacing-model-development-cyber-capabilities/), [Fortune](https://fortune.com/2026/08/18/openai-says-it-paused-ai-training-for-two-weeks-and-announces-new-security-protocols-following-hugging-face-hack/)) ⟨daily 2026-08-18⟩

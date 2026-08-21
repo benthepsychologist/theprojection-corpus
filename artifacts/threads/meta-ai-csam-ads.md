@@ -10,6 +10,33 @@ opened: 2026-08-06
 
 *Watch:* Wired reported 2026-08-05 that Meta ran ads containing AI-generated child sexual abuse imagery on its platforms. Distinct from the companion-chatbot harm strand tracked on xAI/Grok (`grok-companion-harm`) — this is a platform/ad-system liability story, not a companion-AI one. Watch: Meta's own response and moderation-failure explanation; whether regulators (FTC, state AGs) open an inquiry; whether this becomes a pattern question across ad platforms broadly, not just Meta; any parallel with the Grok/Stability CSAM suits already tracked elsewhere on this map.
 
+## 2026-08-20 — Sen. Warner presses Zuckerberg directly, citing a wider Tech Transparency Project scope than the original Wired story
+
+- **Sen. Mark Warner (D-VA) sent a formal letter to Meta CEO Mark
+  Zuckerberg, dated 2026-08-18, demanding answers on the CSAM-ad
+  problem this thread opened on** — the first named-official,
+  addressed-to-the-CEO scrutiny found on this story since it opened,
+  which is what the thread's watch line was waiting on ("whether
+  regulators/officials open an inquiry"). Warner, quoted directly: "It
+  is unacceptable that any of this material appears on Meta's platforms
+  and appalling that your company is seemingly profiting from it." He
+  asked how the ads passed Meta's ad-review systems, how much revenue
+  Meta took from them, and what's been done to find/remove similar
+  content — giving Meta until **2026-08-26** to respond.
+  ([Sen. Warner, primary](https://www.warner.senate.gov/newsroom/press-releases/warner-presses-meta-ceo-on-ads-featuring-child-sexual-abuse-material-and-non-consensual-intimate-images/)) ⟨daily 2026-08-20⟩
+- **The letter cites new scope from the Tech Transparency Project, not
+  just the original Wired story:** more than 50 image/video ads
+  containing AI-generated CSAM found in Meta's own public Ad Library,
+  running November 2025 through early August 2026 across Facebook,
+  Instagram, Messenger and Threads, reaching audiences in the US, UK
+  and over a dozen European countries — one ad alone seen by 2,500+
+  accounts in Europe. Researchers reportedly kept finding new ads even
+  after alerting Meta, and a July 2026 BBC investigation had already
+  found a related pattern of CSAM-linked ads on Instagram in India.
+  Not yet an FTC or state-AG inquiry — this is congressional, not
+  regulatory-agency, pressure.
+  ([MLex](https://www.mlex.com/mlex/data-privacy-security/articles/2514848)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-07 — A related but distinct legal action: NM court orders Meta to pay $567M over child mental-health harm
 
 - **A New Mexico judge (Bryan Biedscheid) ordered Meta to pay $567M into a

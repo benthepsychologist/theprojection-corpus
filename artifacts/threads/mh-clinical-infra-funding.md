@@ -12,6 +12,21 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-08-20 — Interventional-psychiatry consolidation gets another entrant
+
+- **Radial (NYC, <1 year into a General Catalyst-backed hold) acquired
+  Mindful Health Solutions**, a much larger, older outpatient
+  interventional-psychiatry operator — terms undisclosed. The combination
+  multiplies Radial's clinical footprint nationally in one deal and adds
+  a company both sides describe as "brain medicine": both have run
+  psilocybin trials via Compass Pathways partnerships and both offer
+  esketamine (Mindful says it's the #2 U.S. Spravato provider). Executives
+  on both sides frame it as positioning for a "pending boom" in
+  interventional psychiatry — the same TMS/ketamine/psychedelic capital
+  lane this thread has tracked since opening, now consolidating rather
+  than just attracting fresh rounds.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-19 — UHS CEO's strategy, in his own words to a second outlet
 
 - **Healthcare Dive's independent Q&A with CEO Marc Miller closes this

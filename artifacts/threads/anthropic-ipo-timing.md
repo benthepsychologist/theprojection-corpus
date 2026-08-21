@@ -12,6 +12,13 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-20 — Anthropic targets matching or beating SpaceX's record raise, public filing possible by month's end
+
+- **Anthropic expects its IPO to match or beat SpaceX's record $75B raise, with a public S-1 filing possible before the end of August** — a step beyond the valuation chatter this thread has carried since 08-13 ($2T target): this is a specific comparison to the dollar amount RAISED, benchmarked directly against SpaceX's own 06-12 debut ($75B raised at a $1.77T valuation, the largest US IPO ever). Bloomberg's sourcing is "people familiar with the matter," describing the company as "running the numbers" as preparations accelerate.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it)) ⟨daily 2026-08-20⟩
+- **Single-source (Bloomberg only); no second outlet has independently corroborated the filing-timing or raise-size figures as of this writing** — flagged thin per this thread's own standing discipline on prior Bloomberg-only prints (the 07-25 $965B figure, the 08-13 $2T figure, both later corroborated elsewhere before being trusted as fact).
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-18 — The pre-IPO credit facility more than quadruples
 
 - **Anthropic is negotiating a revolving credit facility set to exceed

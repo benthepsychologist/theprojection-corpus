@@ -12,6 +12,11 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-20 — Anthropic targets matching or beating SpaceX's record IPO raise
+
+- **Anthropic expects its IPO to match or beat SpaceX's record $75B raise, with a public S-1 filing possible before month's end.** For this thread's "who lists first, at what haircut to the private print" question, this is a new benchmark measured directly against the thread's own live comparator — the dollar amount SpaceX actually raised (06-12, $1.77T valuation), not just a valuation multiple. Single-sourced to Bloomberg ("people familiar with the matter"); full detail and the sourcing caveat on `anthropic-ipo-timing`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-17 — Caught late: the revenue number behind the Anthropic listing
 
 - **🕰 Anthropic's Q2 revenue exceeded $11.5B, up roughly 14x

@@ -15,6 +15,28 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-20 — Béjar's second day of testimony: "you just cannot trust Mark Zuckerberg with kids"
+
+- **Arturo Béjar's testimony in the Oakland trial continued into a
+  second full day (08-20), moving from process critique (yesterday's
+  "measured policy violations, not harm" testimony) to a direct
+  credibility attack on Zuckerberg personally.** On Zuckerberg's past
+  public claims about Meta's safety research, Béjar told the jury:
+  "It's so false, every part of it," and "You just cannot trust Mark
+  Zuckerberg with kids." He said Meta operated a "don't ask, don't
+  tell" policy on underage users, and called the break-reminder
+  feature "designed to fail" because it wasn't on by default and was
+  trivially dismissible. He also testified that "if Mark makes
+  something a priority, mountains move in months" — used to argue
+  child safety was never made a priority despite the resources being
+  available.
+  ([Claims Journal](https://www.claimsjournal.com/news/national/2026/08/20/339673.htm),
+  [NBC News](https://www.nbcnews.com/tech/social-media/zuckerberg-encouraged-growth-child-safety-ex-meta-executive-testifies-rcna593509)) ⟨daily 2026-08-20⟩
+- **Zuckerberg himself has not yet taken the stand** — this is still
+  testimony about him, from a former engineering director, not his own
+  testimony; he is expected to testify later in the six-week trial, no
+  date confirmed as of 08-20. ⟨daily 2026-08-20⟩
+
 ## 2026-08-18 — Opening statements in the states' case against Meta, in Oakland
 
 - **Opening statements began today in the states' federal trial against
