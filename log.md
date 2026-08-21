@@ -4663,3 +4663,94 @@ petition** (offered twice, 08-18/08-19, not re-offered per the
 offered-twice rule — needs an explicit track/drop call).
 📋 08-20 is still `building` — normal, extend or finalize on the next
 `/daily` run.
+
+## 2026-08-21 (afternoon extension) — `/daily`: 08-21 extended 10:00 ET → 15:00 ET, first flash since 08-11
+
+**State on entry:** 08-20 already `final` across all four lenses (coverage
+critic done), 08-21 `building` at `as_of 10:00 ET`. No gap days to
+reconstruct — this was a straight five-hour extension of the open day.
+
+⚠️ **The 10:00 ET run never wrote a log entry.** It also never committed.
+Per `INBOX/2026-08-21-kestrel-your-daily-output-is-already-committed.md`,
+that run exited 0 having *said* it would commit, with `dirty=46`; kestrel's
+fleet sweep then swept its 47 files into commit `76a091a` under a STATUS.md
+message. Nothing was lost, but this repo's own record of that pass is the
+digests themselves, not this file. Mitigation applied this run: **committed
+and pushed the corpus BEFORE publish/collect rather than after**, so a late
+stall cannot strand the day's editorial work again.
+
+**Dispatch:** 5 tier-2 sweeps (4 lenses + a 5-claim expectations sweep),
+then 4 briefing-pack agents. All sonnet, all read-only against the repo —
+timelines and map files were written by this session, not by agents.
+
+**What landed:**
+- 🚨 **FLASH `kryvyi-rih-mall-double-tap`** — first rail entry since 08-11.
+  Russian double-tap drone strike on a Kryvyi Rih shopping mall; at least
+  15 dead, 130 wounded, 23 children, per AP quoting Dnipropetrovsk RMA head
+  Oleksandr Hanzha (14:44 ET). The 10:00 ET pass asked the flash question
+  and correctly answered no — the strike had not happened yet.
+  ⚠️ **Re-index trap caught:** a "toll rises to 19" story ranks on today's
+  query and is from **April 2025**, a different attack on the same city.
+- **Broadcom SPV, $70-80bn** (~$45bn senior / ~$35bn junior, Apollo +
+  Blackstone) for Anthropic chip capacity. Two sweeps CONTRADICTED each
+  other on whether this was new — one dropped it as 08-20, one had it as
+  today. Resolved by direct check: story broke 08-20, CNBC added the SPV
+  and tranche split today. The cross-sweep overlap did its job.
+- **DeepSeek-V4-Flash-Vision-Exp**, verified against DeepSeek's own API
+  changelog — benchmarked against Opus 4.8 rather than GPT.
+- Treasury's buyback bump round-tripped; gold 3-month high, bitcoin +7-9%
+  reading it as a dollar story. **Second consecutive day this lens's actual
+  lead has had no thread to land on.**
+- Lindsay Clancy trial defense rested — new MH thread candidate.
+
+**Ledger:** `xai-mn-preliminary-injunction` resolved by SPLIT — it asked for
+the hearing AND a ruling; the hearing happened as written on 08-19, the
+ruling has no court-named date, so it could never resolve and sat two days
+overdue. Flipped `hit`, successor `xai-mn-pi-ruling` logged (due 09-19, due
+date **inferred**, marked as such). 5 claims re-swept, none moved.
+
+**Published:** 99 threads / 0 skipped, 168 items, 715 stories, 155 readouts,
+20 interpretations. Cloudflare build `30d974eb-3a1f-4ee2-928b-777540df48f2`.
+Site repo also absorbed the 18 files the 10:00 ET run left staged.
+
+**Pushed:** this repo and `theprojection-site` only — no kestrel edits.
+
+**Pick up:**
+⛔ **GDELT has not completed on three consecutive runs.** This run's leg ran
+22 min, burned 2m43s CPU, held 18 sockets, produced nothing — blocked on
+network, not crashed. `attention/world-news.yaml` is therefore **stale from
+08-18, now three days**, so no mechanically-scored world-news candidates can
+be offered at all. This is the single most-repeated failure in the log.
+⛔ **`/daily` step 1's documented command is wrong.** It says
+`cloud-researcher collect --corpus .`; `--corpus` is not a flag. The corpus
+comes from `KESTREL_INSTANCE`, so the documented form resolved against the
+engine repo and died on a missing `watchlist.yaml`. It failed loudly only
+because the engine has no `attention/` of its own. Engine-owned template
+(`kit: attention/daily@2026-08-21.3`) — needs routing, not a local edit.
+⚠️ **Read payload over its 600 KB soft cap for four runs and growing**:
+1241 → 1254 → 1308 → 1331 KB. The degradation rule the warning names
+("drop item html >3 days old") is **not implemented** — there is no flag,
+only the printed warning.
+⚠️ **Audio briefing failed** — Google TTS returned 500 INTERNAL, reproduced
+on a direct retry. Genuinely upstream; non-fatal by design. Idempotent per
+day, so the next run retries it automatically.
+💡 **`world-news` is not in `LENS_SLUGS`** (`ai`, `global-capital`,
+`mental-health` only) — so it has curated digests but no lens briefing and
+no beat page. Deliberate or drift? Needs a call.
+💡 **Flash rail is absent from the readouts pack** — the briefing writer
+cannot tell something was flashed. It still renders on the read page and
+site rail via `load_flash`, so readers see it.
+📋 **Three thread candidates need a track/drop call**, two of them now
+twice-evidenced: **enterprise agent-product race** (a sweep run explicitly
+to test it found the surface ships continuously — argues for a thread, but
+a busy one), **Treasury long-end / Bessent interventions** (second straight
+day as the lens's unheld lead), and **postpartum psychosis on trial —
+Clancy** (new; narrow "to verdict" version vs broad "psychiatric evidence in
+court" version). Still carried: data-center siting opposition, RASA on its
+own, private-credit/life-insurer pipeline, off-balance-sheet AI obligations,
+Lubbock moratorium petition.
+📋 **Two entity adds implied, not made:** Apollo and Blackstone — the junior
+capital in the Broadcom SPV, and exactly the names the private-credit
+candidate is about. An entity add goes through `/steer`.
+📋 08-21 is still `building` — it closes 05:00 ET tomorrow and finalizes on
+a later run, with the coverage critic.

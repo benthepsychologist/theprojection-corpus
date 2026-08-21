@@ -213,6 +213,15 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
     }
    ],
    "fingerprint": "7924c6476e3c39f4",
@@ -400,7 +409,17 @@
    "title": "BlackRock"
   },
   "entity:broadcom": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+    }
+   ],
    "fingerprint": "0aad07918809d3c4",
    "generated": "2026-08-11T13:56:09Z",
    "generated_by": "llm",
@@ -556,7 +575,17 @@
    "title": "CXMT"
   },
   "entity:deepseek": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "f8d17310dcb1b074",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -2095,83 +2124,81 @@
     },
     {
      "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "The defense rested in the Lindsay Clancy murder trial, where the question before the jury is whether untreated postpartum psychosis makes her not criminally responsible.",
+     "threads": [],
+     "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+    },
+    {
+     "day": "2026-08-21",
      "sev": "major",
      "text": "The ~$2T Anthropic valuation target is now reported to rest on a $190-200bn 2028 revenue forecast",
      "threads": [
       "frontier-lab-ipos"
      ],
      "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
-    },
-    {
-     "day": "2026-08-21",
-     "sev": null,
-     "text": "OpenAI's revenue is reported up 35% this quarter with enterprise revenue up more than 50%, and Ramp card data puts its API spend growth at 82% quarter-on-quarter in Q3 against Anthropic's 76%",
-     "threads": [
-      "ai-circular-financing-risk"
-     ],
-     "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
-    },
-    {
-     "day": "2026-08-21",
-     "sev": null,
-     "text": "A hijacked shadow-fleet tanker stacks a piracy premium on top of the war premium.",
-     "threads": [
-      "red-sea-oil-shock"
-     ],
-     "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
     }
    ],
    "briefing": {
-    "gist": "**Two of today's three real items are the map correcting itself, and the third is a chip vendor buying the ground its chips will stand on.** The MATCH Act.",
+    "gist": "**The morning was this map correcting itself; the afternoon was two Russian drones killing at least fifteen people in a shopping centre.** The strike hit the largest mall in Kryvyi Rih, President Zelensky's hometown, and the second drone…",
     "lead": [
      {
+      "emoji": "⚠️",
+      "text": "Two Russian drones struck Kryvyi Rih's largest shopping centre, the second hitting the same site as emergency crews responding to the first.",
+      "url": "https://www.wfmz.com/news/ap/ap-national/russian-drones-kill-14-people-at-a-shopping-mall-in-a-central-ukrainian-city-officials/article_3bf9a3ce-7a5f-5371-99f9-d0cf010bb627.html"
+     },
+     {
       "emoji": "💰",
-      "text": "Anthropic's roughly $2 trillion IPO valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
+      "text": "The ~$2 trillion Anthropic valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
       "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
      },
      {
-      "emoji": "📉",
-      "text": "OpenAI's revenue is reported up 35% this quarter, with Q3 API spend growth of 82% outpacing Anthropic's 76% on Ramp card data.",
-      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "The MATCH Act, which would extend US chip-tool export controls to DUV lithography, has been stalled in Congress for five weeks without this map noticing.",
-      "url": "https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/"
-     },
-     {
-      "emoji": "🏥",
-      "text": "Radial acquired the management firm behind Mindful Health Solutions, forming what both call the largest US interventional-psychiatry network at 27 clinics.",
-      "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+      "emoji": "💰",
+      "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+      "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
      },
      {
       "emoji": "🏗️",
-      "text": "AWS added $6 billion to its Shreveport, Louisiana data-center buildout, lifting Amazon's committed state investment from $12 billion to $18 billion.",
-      "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
+      "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer that assembles land, power and shell for data-center sites.",
+      "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
+     },
+     {
+      "emoji": "🌍",
+      "text": "Iran's president said it is better to end the war now, \"as we are in a position of power and dignity,\" while the Iran-Oman Hormuz track moved backwards.",
+      "url": "https://www.timesofisrael.com/liveblog-august-21-2026/"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "🔬",
+        "text": "DeepSeek shipped an experimental multimodal model, DeepSeek-V4-Flash-Vision-Exp, and benchmarked it against Claude rather than GPT.",
+        "url": "https://api-docs.deepseek.com/news/news260821/"
+       },
+       {
         "emoji": "⚖️",
-        "text": "The MATCH Act, which would extend US chip-tool export controls to DUV lithography, has been stalled in Congress for five weeks without this map noticing.",
+        "text": "The MATCH Act, which would extend US chip export controls to DUV lithography tools, has been stalled in Congress for five weeks without this map noticing.",
         "url": "https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/"
        },
        {
-        "emoji": "🤝",
-        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer that assembles land, power and shell for data-center sites.",
+        "emoji": "🏗️",
+        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, the land-and-power developer that assembles sites for future data centers.",
         "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
        },
        {
-        "emoji": "📉",
-        "text": "Alibaba's fiscal Q2 profit fell 75% year-on-year to $1.6 billion even as its AI-infrastructure capex jumped 75% to roughly $10 billion.",
-        "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
-       },
-       {
         "emoji": "⚠️",
-        "text": "OpenAI paused reinforcement-learning training on its next model family, Astra, for two weeks after signs it might cross a critical cybersecurity threshold.",
-        "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+        "text": "Security researchers disclosed an unpatched Grok vulnerability that lets encrypted webpage instructions bypass input filters and exfiltrate chat history.",
+        "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
        }
       ],
       "emoji": "🔬",
@@ -2181,23 +2208,23 @@
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Anthropic's roughly $2 trillion IPO valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
+        "text": "The ~$2 trillion Anthropic IPO valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
         "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
        },
        {
+        "emoji": "💰",
+        "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build the chip capacity Anthropic's forecast depends on.",
+        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+       },
+       {
         "emoji": "📉",
-        "text": "OpenAI's revenue is reported up 35% this quarter, with Q3 API spend growth of 82% outpacing Anthropic's 76% on Ramp card data.",
+        "text": "OpenAI's revenue is reported up 35% this quarter, with Ramp card data putting its API spend growth ahead of Anthropic's for Q3.",
         "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
        },
        {
         "emoji": "📉",
-        "text": "The US Treasury doubled its long-bond buyback size, and the bear-steepening selloff this map tracked all week reversed in a single announcement.",
-        "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, about 7% of the company, vesting against future custom-chip revenue.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
+        "text": "Gold and bitcoin are trading Treasury's long-bond buyback bump as a debasement signal rather than a rates signal.",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
        }
       ],
       "emoji": "💰",
@@ -2206,24 +2233,19 @@
      {
       "bullets": [
        {
-        "emoji": "🏥",
-        "text": "Radial acquired the management-services firm behind Mindful Health Solutions, forming what both call the largest US interventional-psychiatry network at 27 clinics.",
+        "emoji": "⚖️",
+        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
+        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Radial acquired the management-services organization behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across four states.",
         "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
        },
        {
         "emoji": "⚖️",
-        "text": "HHS added in-home Family-Based Recovery and the peer-support Wellness Recovery Action Plan to its Title IV-E clearinghouse, making both federally reimbursable.",
+        "text": "HHS added the Family-Based Recovery program and the Wellness Recovery Action Plan to the Title IV-E Prevention Services Clearinghouse, making both federally reimbursable.",
         "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Colorado's HB26-1195, barring AI systems from directly conducting psychotherapy, reached this map on August 19, a week after it took effect.",
-        "url": "https://leg.colorado.gov/bills/HB26-1195"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Oregon's first state-regulated psilocybin study reported symptom improvement in 95% of participants with depression or PTSD.",
-        "url": "https://bhbusiness.com/2026/08/19/95-of-oregon-psilocybin-study-saw-improvements-in-depression-ptsd/"
        }
       ],
       "emoji": "🏥",
@@ -2231,13 +2253,13 @@
      }
     ],
     "watch": [
-     "Whether the reported $190-200 billion 2028 revenue forecast survives contact with a public S-1 once Anthropic's IPO paperwork lands, as soon as this month.",
-     "Whether Washington moves from accusation to a formal Entity List or export action over Kimi K3's alleged distillation of an Anthropic model.",
-     "Whether any state or federal body opens a real AI-therapy approval pathway before litigation and wrongful-death suits set the de facto rules."
+     "Whether the Anthropic IPO's $2 trillion target and the debt now financing its chip buildout converge or diverge once the S-1 goes public.",
+     "Whether a real regulatory pathway for AI mental-health chatbots emerges from litigation or from an actual FDA or MHRA framework.",
+     "Whether Iran's call to end the war produces any movement before the sanctions package Treasury has promised lands on 2026-08-24."
     ]
    },
-   "fingerprint": "8cf0b5ca453b5b36",
-   "generated": "2026-08-21T14:37:33Z",
+   "fingerprint": "fe73266633aaf36e",
+   "generated": "2026-08-21T19:22:43Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2334,35 +2356,39 @@
       "aws-capex"
      ],
      "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
     }
    ],
    "briefing": {
-    "gist": "**A quiet five hours, and the one real item is a correction rather than an event.** The map has been carrying the MATCH Act.",
+    "gist": "**A quiet day whose morning item was a correction and whose afternoon was almost entirely other people's old news wearing today's date.** The map has been carrying the MATCH Act.",
     "lead": [
      {
+      "emoji": "🚀",
+      "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+      "url": "https://api-docs.deepseek.com/news/news260821/"
+     },
+     {
       "emoji": "⚖️",
-      "text": "The MATCH Act, which would extend US chip-export controls from EUV to general DUV lithography tools, has been stalled since the Senate failed cloture 50-46 on July 14.",
+      "text": "The MATCH Act's export-control vehicle has been stalled for five weeks, not the live, moving bill this map had been tracking.",
       "url": "https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/"
      },
      {
       "emoji": "💰",
-      "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer founded in 2024 that assembles land, power and shell buildings for data-center sites.",
+      "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer that assembles land, power and shell for data-center sites.",
       "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
      },
      {
-      "emoji": "⚠️",
-      "text": "OpenAI disclosed it paused reinforcement-learning training on its next model family, Astra, for two weeks after signs it might cross a critical cybersecurity tier.",
-      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
-     },
-     {
-      "emoji": "💰",
-      "text": "Nvidia's SEC filing on its Ohio megasite caps its guarantee at $105 billion and discloses a residual-value structure the earlier press release never described.",
-      "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
-     },
-     {
-      "emoji": "🚀",
-      "text": "Anthropic bundled computer use, browser access, versioned Skills and a reusable Files API into a single production-agent surface for enterprise customers.",
-      "url": "https://claude.com/blog"
+      "emoji": "🏗️",
+      "text": "AWS added $6bn to its Shreveport, Louisiana buildout, lifting Amazon's committed Louisiana data-center investment from $12bn to $18bn.",
+      "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
      }
     ],
     "sections": [
@@ -2370,121 +2396,111 @@
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "The MATCH Act, which would extend US chip-export controls from EUV to general DUV lithography tools, has been stalled since the Senate failed cloture 50-46 on July 14.",
-        "url": "https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "That vote failed over Iran and Israel provisions in the NDAA carrying the bill, not over chip policy, yet this map had been carrying it as live and moving.",
+        "text": "The MATCH Act's export-control vehicle has been stalled for five weeks, not the live, moving bill this map had been tracking.",
         "url": "https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/"
        },
        {
         "emoji": "🌍",
-        "text": "Moonshot's roughly $50 billion Hong Kong IPO, chased \"as soon as this month\" per August 3 reporting, is now unlikely before 2027 on Beijing's capital controls.",
-        "url": "https://en.sedaily.com/international/2026/08/10/moonshot-ai-overhauls-structure-under-beijing-pressure"
+        "text": "CNBC reports Moonshot, ByteDance, Alibaba and Tencent have all accessed restricted Nvidia compute via data centers in Thailand, Malaysia and Japan.",
+        "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
        }
       ],
-      "emoji": "⚖️",
-      "heading": "The map corrects itself"
+      "emoji": "🌍",
+      "heading": "Export controls, corrected"
      },
      {
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer founded in 2024 that assembles land, power and shell buildings for data-center sites.",
+        "text": "Nvidia's SEC 8-K capped its Ohio data-center guarantee at $105 billion and revealed a residual-value structure its press release never described.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+       },
+       {
+        "emoji": "📉",
+        "text": "Groq raised $350 million at a $3.5 billion valuation, half its September number, having given up its own chips to become an Nvidia neocloud with Nvidia in the round.",
+        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Jensen Huang publicly rejected the \"circular financing\" framing the same day his company filed a $105 billion contingent obligation to its largest customer.",
+        "url": null
+       }
+      ],
+      "emoji": "💰",
+      "heading": "The circular-financing question"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "💰",
+        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer that assembles land, power and shell for data-center sites.",
         "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
        },
        {
         "emoji": "🏗️",
-        "text": "AWS added $6 billion to its Shreveport, Louisiana buildout on August 18, a third campus lifting Amazon's committed state investment from $12 billion to $18 billion.",
+        "text": "AWS added $6bn to its Shreveport, Louisiana buildout, lifting Amazon's committed Louisiana data-center investment from $12bn to $18bn.",
         "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
        },
        {
-        "emoji": "💰",
-        "text": "Nvidia's SEC filing on its Ohio megasite caps its guarantee at $105 billion and discloses a residual-value structure the earlier press release never described.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+        "emoji": "🏗️",
+        "text": "ONEOK signed on as a named natural-gas supplier to a dedicated 1-gigawatt power plant built for AI data-center demand, a roughly $100 million buildout.",
+        "url": "https://www.fool.com/investing/2026/08/14/this-boring-pipeline-stock-just-signed-a-deal-to-p/"
        }
       ],
       "emoji": "🏗️",
-      "heading": "Buying into the buildout"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Jensen Huang publicly rejected the \"circular financing\" framing the same day his company filed a $105 billion contingent obligation to its largest customer.",
-        "url": "/threads/ai-circular-financing-risk/"
-       },
-       {
-        "emoji": "📉",
-        "text": "Groq raised $350 million at a $3.5 billion valuation, half its September figure, after giving up its own chip line to become an Nvidia neocloud.",
-        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
-       },
-       {
-        "emoji": "💰",
-        "text": "Nvidia had already cut its planned Ohio guarantee for OpenAI from $250 billion to under $120 billion on August 15, after investors flagged its own exposure.",
-        "url": "https://www.investing.com/news/company-news/nvidia-cuts-planned-openai-data-center-guarantee-to-below-120-billion--wsj-4861735"
-       }
-      ],
-      "emoji": "💰",
-      "heading": "The circular-financing debate"
+      "heading": "Upstream of the chips"
      },
      {
       "bullets": [
        {
         "emoji": "⚠️",
-        "text": "OpenAI disclosed it paused reinforcement-learning training on its next model family, Astra, for two weeks after signs it might cross a critical cybersecurity tier.",
+        "text": "OpenAI paused reinforcement-learning training on its next model family, Astra, for two weeks after signs it might cross the \"Critical\" cybersecurity tier on its own framework.",
         "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
        },
        {
-        "emoji": "⚠️",
-        "text": "The FT reported OpenAI dissolved its Preparedness team; OpenAI denies it, saying the team reports to safety head Saachi Jain. Neither side has backed down.",
-        "url": "https://www.engadget.com/2237916/openai-reportedly-disbanded-its-preparedness-team-as-part-of-streamlining-process/"
+        "emoji": "🏥",
+        "text": "OpenAI launched ChatGPT for Teens, whose under-18 model spec bans simulated emotional dependence outright.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
        },
        {
-        "emoji": "⚖️",
-        "text": "OpenAI announced new containment safeguards and a rewritten Preparedness Framework, its formal response to the Hugging Face breach tracked here since July 29.",
-        "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/"
+        "emoji": "⚠️",
+        "text": "Adversa AI disclosed an unpatched Grok flaw letting encrypted webpage instructions bypass input filters, demonstrated to exfiltrate chat history, location and subscription data.",
+        "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
        }
       ],
       "emoji": "⚠️",
-      "heading": "OpenAI's safety posture, contested"
+      "heading": "Safety guardrails, after the fact"
      },
      {
       "bullets": [
        {
         "emoji": "🚀",
-        "text": "Anthropic bundled computer use, browser access, versioned Skills and a reusable Files API into a single production-agent surface for enterprise customers.",
-        "url": "https://claude.com/blog"
+        "text": "Liquid AI shipped LFM2.5-DSpark, a speculative-decoding package claiming up to 3.18x GPU throughput and 2.87x on-device speedup with output identical to baseline greedy.",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
        },
        {
         "emoji": "🚀",
-        "text": "Google folded Antigravity, its coding-agent product, into eligible Gemini Enterprise Standard and Plus subscriptions.",
-        "url": "https://cloud.google.com/blog/products/ai-machine-learning/expanding-google-antigravity-for-enterprise-customers"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Mistral shipped Agentic Search, five tool actions — search, open, navigate, read, grep — lifting FinanceBench accuracy from 26.7% to 86% on 23.9% fewer tokens.",
+        "text": "Mistral shipped Agentic Search, giving models five tool actions — search, open, navigate, read, grep — to work through documents iteratively instead of retrieving once.",
         "url": "https://mistral.ai/news/agentic-search"
        },
        {
         "emoji": "🚀",
-        "text": "Harvey released \"Harvey Tenet,\" its first post-trained open-weight legal model for diligence and document review, built on Moonshot's Kimi K3.",
+        "text": "Harvey released \"Harvey Tenet,\" its first post-trained open-weight legal model for diligence and document review, built on Kimi K3.",
         "url": "https://harvey.ai/blog"
        }
       ],
       "emoji": "🚀",
-      "heading": "The enterprise agent wave"
+      "heading": "What shipped"
      }
     ],
     "watch": [
-     "Whether the roughly $800 billion circular-financing loop between Nvidia, OpenAI and its cloud providers unwinds, given OpenAI's projected 2026 loss near $14 billion.",
-     "Whether Washington's response to China's AI stack shifts from a model ban toward procurement and hosting rules ahead of the September US-China talks.",
-     "Whether the NDAA reconsideration vote clears, which would start the MATCH Act's 150-day clock for the Netherlands to align its own export controls."
+     "Whether OpenAI's roughly $14 billion 2026 loss trajectory and the Nvidia-OpenAI-Oracle spending loop keeps holding as GPU demand and credit markets react.",
+     "Whether Washington's shift from a model ban toward procurement and hosting rules holds through September's US-China talks, and how US chip equities react.",
+     "Whether power, not chips, becomes the binding constraint on the AI buildout as nuclear, gas-turbine and grid deals multiply."
     ]
    },
-   "fingerprint": "1a302af903c9de91",
-   "generated": "2026-08-21T14:37:16Z",
+   "fingerprint": "01f5f691cae5694e",
+   "generated": "2026-08-21T19:22:43Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2575,6 +2591,20 @@
     {
      "day": "2026-08-21",
      "sev": null,
+     "text": "Treasury's long-bond buyback bump has fully round-tripped, and Bessent says he is acting on information the bond market does not have.",
+     "threads": [],
+     "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Gold and bitcoin are trading the Treasury intervention as a debasement signal rather than a rates signal.",
+     "threads": [],
+     "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
      "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure",
      "threads": [
       "nvidia-vendor-financing"
@@ -2584,11 +2614,11 @@
     {
      "day": "2026-08-21",
      "sev": null,
-     "text": "A hijacked shadow-fleet tanker stacks a piracy premium on top of the war premium.",
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
      "threads": [
-      "red-sea-oil-shock"
+      "ai-buildout-debt-risk"
      ],
-     "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
     }
    ],
    "briefing": {
@@ -2596,28 +2626,28 @@
     "lead": [
      {
       "emoji": "💰",
-      "text": "Anthropic's roughly $2 trillion IPO valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
+      "text": "Anthropic's ~$2T IPO target is now reported to rest on a $190-200bn 2028 revenue forecast.",
       "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
      },
      {
-      "emoji": "📉",
-      "text": "Brent crude traded at $95.29 a barrel, up 40.5% year-on-year against $67.80, as VLCC Gulf-to-China rates cleared $520,000 a day.",
-      "url": "/threads/red-sea-oil-shock/"
-     },
-     {
-      "emoji": "🏗️",
-      "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer of land and power for data-center sites.",
-      "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
+      "emoji": "💰",
+      "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build the chips that revenue forecast assumes.",
+      "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
      },
      {
       "emoji": "📉",
-      "text": "OpenAI's revenue is reported up 35% this quarter, with Ramp card data putting its Q3 API spend growth at 82% against Anthropic's 76%.",
-      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
+      "text": "Treasury's long-bond buyback bump has fully round-tripped, and Bessent says he knows something the bond market doesn't.",
+      "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
      },
      {
       "emoji": "⚠️",
-      "text": "Treasury Secretary Bessent doubled long-end bond buybacks into the worst long-bond selloff in about 20 years, and the 10-year closed back at 4.69%.",
-      "url": "https://www.ft.com/content/f8880b82-7283-4a3c-b000-06e5d0c87993"
+      "text": "Gold and bitcoin are trading the Treasury intervention as a debasement signal rather than a rates signal.",
+      "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
+     },
+     {
+      "emoji": "🌍",
+      "text": "The Iran sanctions campaign now has a name, \"Operation Economic Fury\", three days before it lands.",
+      "url": "https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/"
      }
     ],
     "sections": [
@@ -2625,110 +2655,74 @@
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Anthropic's roughly $2 trillion valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
+        "text": "Anthropic's ~$2T valuation target is now reported to rest on a $190-200bn 2028 revenue forecast.",
         "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
        },
        {
-        "emoji": "🤝",
-        "text": "Citigroup joined a lead-underwriter slate that already held Morgan Stanley, Goldman Sachs and JPMorgan for the listing.",
-        "url": "/threads/frontier-lab-ipos/"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Anthropic plans to file its S-1 publicly as soon as month's end, benchmarking the raise against SpaceX's record $75-86.2 billion IPO.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it"
-       },
-       {
         "emoji": "💰",
-        "text": "Investors are targeting an October listing that would top SpaceX's $1.77 trillion debut as the largest IPO ever.",
-        "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
-       }
-      ],
-      "emoji": "🤝",
-      "heading": "The IPO gets a paper trail"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "📉",
-        "text": "Brent crude traded at $95.29 a barrel as of 08:00 ET, down 0.11% on the day but up 40.5% year-on-year against $67.80.",
-        "url": "/threads/red-sea-oil-shock/"
+        "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
        },
-       {
-        "emoji": "⚠️",
-        "text": "VLCC tanker rates from the Middle East Gulf to China cleared $520,000 a day, up from roughly $470,000 earlier this month.",
-        "url": "/threads/red-sea-oil-shock/"
-       },
-       {
-        "emoji": "📉",
-        "text": "Gulf transits fell to 73 ships in the week to August 16, down from 91 the prior week, as owners avoid the route rather than demand easing.",
-        "url": "/threads/red-sea-oil-shock/"
-       },
-       {
-        "emoji": "🌍",
-        "text": "A sanctioned shadow-fleet tanker was hijacked in the Gulf of Aden and diverted toward Somalia, adding a piracy premium atop the war premium.",
-        "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
-       }
-      ],
-      "emoji": "⚠️",
-      "heading": "The oil leg keeps repricing"
-     },
-     {
-      "bullets": [
        {
         "emoji": "🏗️",
-        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer of land and power for data-center sites.",
+        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a land-and-power developer for data centers.",
         "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
        },
        {
-        "emoji": "🤝",
-        "text": "The stake extends Nvidia's vendor-financing pattern beyond its own AI customers to the land and power those customers need to operate.",
-        "url": "/threads/nvidia-vendor-financing/"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "SoftBank's own 13F filing shows the identical mark-only-growth pattern this map found in Nvidia's 13F a week earlier, this time on Intel.",
-        "url": "https://qz.com/softbank-intel-13f-sec-filing-081826"
+        "emoji": "📉",
+        "text": "OpenAI's revenue is reported up 35% this quarter, with its Q3 API spend growth outpacing Anthropic's on Ramp card data.",
+        "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
        }
       ],
       "emoji": "💰",
-      "heading": "Vendor financing moves upstream"
+      "heading": "The Anthropic financing loop"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "📉",
+        "text": "Treasury's long-bond buyback bump has fully round-tripped, and Bessent claims he has information the bond market lacks.",
+        "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Gold and bitcoin are trading the Treasury intervention as a debasement signal rather than a rates signal.",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
+       }
+      ],
+      "emoji": "📉",
+      "heading": "The dollar signal"
      },
      {
       "bullets": [
        {
         "emoji": "⚠️",
-        "text": "Treasury Secretary Bessent doubled long-end buybacks into the worst long-bond selloff in about 20 years, denying it was yield-curve control.",
-        "url": "https://www.ft.com/content/f8880b82-7283-4a3c-b000-06e5d0c87993"
+        "text": "A hijacked shadow-fleet tanker stacks a piracy premium on top of the war premium in the Gulf of Aden.",
+        "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
+       },
+       {
+        "emoji": "🌍",
+        "text": "The US Iran sanctions campaign now has a name, \"Operation Economic Fury\", and named targets, three days before it lands.",
+        "url": "https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/"
        },
        {
         "emoji": "📉",
-        "text": "The announcement reversed a bear-steepening move this map had tracked since Monday, and the 10-year closed back at 4.69%.",
-        "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "OpenAI's revenue is reported up 35% this quarter, with Ramp card data putting Q3 API spend growth at 82% against Anthropic's 76%, a single-source spend proxy.",
-        "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Meta is reported to quietly pay Microsoft hundreds of millions a year for Azure-hosted AI even as OpenAI supplies about 70% of Microsoft's AI revenue.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/meta-has-quietly-become-one-of-microsoft-s-largest-ai-customers"
+        "text": "Brent held near $95 as Iran-Oman transit talks slipped back to \"resuming\" and the sanctions campaign got its name.",
+        "url": "/threads/red-sea-oil-shock/"
        }
       ],
-      "emoji": "📉",
-      "heading": "Bonds reverse, and the AI spend race tightens"
+      "emoji": "🌍",
+      "heading": "Oil and Iran"
      }
     ],
     "watch": [
-     "Whether SpaceX's recovery above its IPO price holds as the test case for converting vendor-financed private valuations into public currency.",
-     "Whether rating agencies come to treat Nvidia's compute-financing guarantees as debt-equivalent exposure across its own customer base.",
-     "Whether Brent holding near $95 undercuts the fiscal-pressure thesis behind Saudi Arabia's shift from NEOM concrete into AI compute."
+     "Whether Anthropic's public S-1 confirms the $190-200bn 2028 revenue forecast or the number moves once it is a legal document.",
+     "Whether the Nvidia financing guarantee's structure and size get resolved, and whether rating agencies start treating it as debt-equivalent.",
+     "Whether gold and bitcoin's reaction to the Treasury buyback is the start of a durable dollar-debasement trade or a one-day move."
     ]
    },
-   "fingerprint": "a37128fba3fe5d01",
-   "generated": "2026-08-21T14:37:16Z",
+   "fingerprint": "e5bd278926dee54e",
+   "generated": "2026-08-21T19:22:43Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2806,135 +2800,169 @@
    "title": "Global Capital"
   },
   "lens:mental-health": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "The defense rested in the Lindsay Clancy murder trial, where the question before the jury is whether untreated postpartum psychosis makes her not criminally responsible.",
+     "threads": [],
+     "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+    }
+   ],
    "briefing": {
-    "gist": "**Nothing happened in this lens in the first five hours, and the sweep that says so was a thorough one.** All seven threads checked came back clean against primary sources.",
+    "gist": "**The lens was empty for ten hours and then produced one item, and the item is a courtroom rather than a company.** All seven threads checked clean against primary sources on the opening pass.",
     "lead": [
      {
+      "emoji": "⚖️",
+      "text": "The defense rested today in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis leaves her not criminally responsible.",
+      "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+     },
+     {
       "emoji": "🤝",
-      "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across four states.",
+      "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across California, Texas, Washington and New York.",
       "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
      },
      {
+      "emoji": "🚀",
+      "text": "OpenAI's new model spec for teen ChatGPT users now bans the app from encouraging emotional dependence, the same rule Colorado had proposed as law a week earlier.",
+      "url": "https://openai.com/index/chatgpt-for-teens"
+     },
+     {
+      "emoji": "⚖️",
+      "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
+      "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
+     },
+     {
       "emoji": "💰",
-      "text": "HHS added in-home Family-Based Recovery and the peer-support Wellness Recovery Action Plan to the Title IV-E clearinghouse, making both federally reimbursable.",
-      "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-     },
-     {
-      "emoji": "🏥",
-      "text": "Healthcare Dive's interview with UHS CEO Marc Miller filled in the strategy gap this lens flagged after the $835 million Talkspace acquisition closed.",
-      "url": "https://www.healthcaredive.com/news/uhs-talkspace-acquisition-strategy-marc-miller-interview/828152/"
-     },
-     {
-      "emoji": "📉",
-      "text": "Behavioral-health dealmaking fell 20% in the first half of 2026, the aggregate context behind every consolidation deal named above.",
-      "url": "https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/"
+      "text": "Universal Health Services closed its $835 million acquisition of Talkspace, joining virtual and inpatient behavioral care under one owner.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "🏗️",
-        "text": "Radial's acquisition of the Mindful Health Solutions management company creates a network of 27 clinics and more than 100 clinicians.",
+        "emoji": "⚖️",
+        "text": "The defense rested today in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis leaves her not criminally responsible.",
+        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
+        "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "The Courtrooms"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🚀",
+        "text": "OpenAI's new model spec for teen ChatGPT users now bans the app from encouraging emotional dependence, the same rule Colorado had proposed as law a week earlier.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, has been binding law since August 12 — this lens caught it a week late.",
+        "url": "https://leg.colorado.gov/bills/HB26-1195"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The Trump administration's Justice Department filed a statement of interest backing xAI against Minnesota's ban on AI 'nudification' apps.",
+        "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "NPR's investigation into a 29-year-old woman's suicide documents the clearest case yet of a general-purpose AI chatbot substituting for disclosure to her own therapist.",
+        "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
+       }
+      ],
+      "emoji": "⚠️",
+      "heading": "The AI-Chatbot Reckoning"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🤝",
+        "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across California, Texas, Washington and New York.",
         "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
        },
        {
         "emoji": "🏥",
-        "text": "The combined network runs accelerated TMS, SAINT/SWIFT protocols, Spravato esketamine, IV ketamine, and imaging-guided PRISM and focused-ultrasound therapies.",
-        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+        "text": "HHS added in-home family recovery treatment and a peer-support program to the Title IV-E Prevention Services Clearinghouse, making both federally reimbursable.",
+        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
        },
        {
-        "emoji": "⚠️",
-        "text": "The companies' cited remission rate of up to 79%, against 5-30% for standard care, is a marketing claim inside the deal announcement, not a published trial result.",
-        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+        "emoji": "💰",
+        "text": "Universal Health Services closed its $835 million acquisition of Talkspace, joining virtual and inpatient behavioral care under one owner.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        },
        {
         "emoji": "📉",
-        "text": "This deal lands inside a market where overall behavioral-health dealmaking dropped 20% in the first half of 2026, per a report this map caught late.",
+        "text": "Behavioral-health dealmaking ran 20% below the prior pace in the first half of 2026, the backdrop against which this week's acquisitions are landing.",
         "url": "https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/"
        }
       ],
-      "emoji": "🏗️",
-      "heading": "The interventional-psychiatry consolidation"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "HHS added the Family-Based Recovery program, in-home clinical treatment for parents of children aged 0-5, to the Title IV-E Prevention Services Clearinghouse.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-       },
-       {
-        "emoji": "💰",
-        "text": "The peer-support Wellness Recovery Action Plan joined the same clearinghouse in the same action, dated August 19, 2026, making both federally reimbursable.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-       },
-       {
-        "emoji": "🏗️",
-        "text": "A clearinghouse listing changes what payers will fund on an ongoing basis, which moves more durable money than most single funding-round announcements.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-       }
-      ],
       "emoji": "💰",
-      "heading": "New federal reimbursement pathways"
+      "heading": "Funding & Consolidation"
      },
      {
       "bullets": [
        {
-        "emoji": "⚖️",
-        "text": "Colorado's HB26-1195, barring AI systems from directly conducting therapy, has been binding law since August 12 but wasn't caught by this map until August 19.",
-        "url": "https://leg.colorado.gov/bills/HB26-1195"
-       },
-       {
         "emoji": "⚠️",
-        "text": "NPR's investigation into a 29-year-old's suicide documents the clearest case yet of a general-purpose AI chatbot substituting for disclosure to her own therapist.",
-        "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
-       },
-       {
-        "emoji": "🚀",
-        "text": "OpenAI's new under-18 model spec bans encouraging emotional dependence, the same restriction Colorado had proposed as law just seven days earlier.",
-        "url": "https://openai.com/index/chatgpt-for-teens"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "A STAT News pediatrician op-ed titled \"AI chatbots are grooming my patients\" argues the clinical harm is already occurring in her own practice.",
-        "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
-       }
-      ],
-      "emoji": "⚠️",
-      "heading": "The AI-therapy regulatory reckoning"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Aetna's cuts to Alma-contracted therapists took effect August 15, cutting New York 60-minute session pay by 10.6% and New Jersey's by 15.2%.",
-        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that found at least $200 million in unsupportable diagnosis codes.",
+        "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200 million in unsupportable diagnosis codes.",
         "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
        },
        {
-        "emoji": "⚖️",
-        "text": "LifeStance Health will pay just over $3 million to settle claims it sent therapy-search terms and telehealth-waiting-room data to Meta and Google via tracking pixels.",
-        "url": "https://bhbusiness.com/2026/08/18/lifestance-reaches-settlement-in-data-privacy-lawsuit-involving-1-million-patients/"
+        "emoji": "🏥",
+        "text": "The IRS is seeking to significantly raise UnitedHealth's taxable income for 2017-2020 over transfer pricing with a foreign subsidiary, per notices received in March.",
+        "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Union members held coordinated pickets across 19 HCA Florida facilities over the Palantir-built Timpani AI scheduling system, alleging unauthorized schedule changes and wage losses.",
+        "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+       },
+       {
+        "emoji": "📉",
+        "text": "Aetna's reimbursement cuts to Alma-contracted therapists took effect, cutting New York session rates 10.6% and New Jersey rates 15.2%.",
+        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
        }
       ],
-      "emoji": "💰",
-      "heading": "Payer pressure on therapists"
+      "emoji": "⚠️",
+      "heading": "Payer & Labor Friction"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🔬",
+        "text": "A seven-researcher team including an American Psychiatric Association co-author proposed a standardized 'facts label' disclosure for AI mental-health tools, covering crisis warnings and performance limits.",
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887"
+       },
+       {
+        "emoji": "🔬",
+        "text": "A randomized trial pitting two AI chatbot therapists against each other found both helped and neither outperformed the other, on a sample too small to support that.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
+       },
+       {
+        "emoji": "🏥",
+        "text": "The FDA named a second participant to a pilot exempting digital health devices from premarket authorization, with behavioral health still an open focus area.",
+        "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
+       }
+      ],
+      "emoji": "🔬",
+      "heading": "The Evidence Base"
      }
     ],
     "watch": [
-     "The evidence-base thread has now gone ten days without movement across two consecutive sweeps of JAMA Psychiatry, Lancet Psychiatry, World Psychiatry and Psychological Medicine.",
-     "Whether the capability gap for AI therapy chatbots gets closed by an actual regulatory pathway, rather than only by litigation and wrongful-death suits, remains unresolved.",
-     "Whether consolidation keeps favoring clinician-augmentation and interventional psychiatry over consumer chatbots, this lens's funding-shift thesis, bears watching as more deals land."
+     "Whether the jury finds Lindsay Clancy not criminally responsible now that the defense has rested its case built on untreated postpartum psychosis.",
+     "Whether AI mental-health chatbot regulation gets a first real approval pathway through FDA or MHRA, or keeps arriving only through litigation and wrongful-death suits.",
+     "Whether Governor Hochul signs New York's under-18 AI companion ban, and whether any enacted state chatbot law sees its first real enforcement action."
     ]
    },
-   "fingerprint": "997b1f5a8dad7c72",
-   "generated": "2026-08-21T14:37:16Z",
+   "fingerprint": "96d5f3e59dde7f3c",
+   "generated": "2026-08-21T19:22:43Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3015,7 +3043,17 @@
    "title": "Mental Health"
   },
   "node:alibaba-qwen": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3355,6 +3393,15 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
     }
    ],
    "fingerprint": "8186e650d8b0337b",
@@ -3606,7 +3653,17 @@
    "title": "arm"
   },
   "node:blackrock": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+    }
+   ],
    "fingerprint": "924243f7b31d22cf",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3717,7 +3774,17 @@
    "title": "blackrock"
   },
   "node:broadcom": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+    }
+   ],
    "fingerprint": "115a8410271c96a2",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4082,7 +4149,17 @@
    "title": "cxmt"
   },
   "node:deepseek": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4720,7 +4797,17 @@
    "title": "Masayoshi Son"
   },
   "node:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+    }
+   ],
    "fingerprint": "c84ce0895f6dd827",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -5114,7 +5201,17 @@
    "title": "microsoft"
   },
   "node:moonshot-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "4b6ebf0ee479e8ac",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5246,6 +5343,15 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
     }
    ],
    "fingerprint": "799403cf276eee74",
@@ -6882,7 +6988,17 @@
    "title": "xai"
   },
   "node:zhipu-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7974,7 +8090,17 @@
    "title": "Homegrown DUV"
   },
   "thread:china-stack-independence": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://api-docs.deepseek.com/news/news260821/"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9704,6 +9830,25 @@
       "red-sea-oil-shock"
      ],
      "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "The Iran sanctions campaign now has a name — \"Operation Economic Fury\" — and named targets, three days before it lands.",
+     "threads": [
+      "red-sea-oil-shock"
+     ],
+     "url": "https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/"
+    },
+    {
+     "day": "2026-08-21",
+     "sev": null,
+     "text": "Iran's and Oman's foreign ministers spoke by phone about the Strait of Hormuz, and the language moved backwards.",
+     "threads": [
+      "red-sea-oil-shock",
+      "iran-conflict-widening"
+     ],
+     "url": "https://www.arabnews.com/node/2655445/middle-east"
     }
    ],
    "fingerprint": "c0673bcb56a19813",
