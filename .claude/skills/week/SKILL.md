@@ -1,4 +1,4 @@
-<!-- kit: attention/week@2026-08-21.1 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/week@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/week/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: week
@@ -104,7 +104,7 @@ only ever grow it.
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance
    tags, so evolution stays visible.
-7. **Re-render the page** — run `kestrel render-read` and republish so the
+7. **Re-render the page** — run `theprojection render-read` and republish so the
    synthesis panel (`weekly`) appears on the read for the rest of the week;
    at the next Monday rollover it carries collapsed (`weekly_prior`)
    through Tuesday.

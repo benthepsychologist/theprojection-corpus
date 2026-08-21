@@ -29,6 +29,11 @@ outputs:
   # this file directly (no per-site code lives in the kestrel checkout;
   # relocated 2026-07-31 out of tools/publish/adapters/theprojection.py).
   adapter: publish/adapter.py
+  # This repo's OWN command, for the surfaces it produces rather than the
+  # engine does — readouts, render-read, build-world-news. They moved out of
+  # kestrel 2026-08-21; the attention kit's templates name this token so a
+  # shared template never hardcodes one instance's binary.
+  cli: theprojection
 
 # Scheduled recurring work (kestrel ROADMAP/FLEET.md §4.3). Declared HERE,
 # in this repo's own manifest, because which of its skills may run

@@ -1,4 +1,4 @@
-<!-- kit: attention/daily@2026-08-21.1 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
+<!-- kit: attention/daily@2026-08-21.2 — canonical: /workspace/kestrel/library/skills/attention/daily/SKILL.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
 
 ---
 name: daily
@@ -124,7 +124,7 @@ archive; the page is derived from them.
      standing snapshot) first — the interpretation answers "how does this
      interact with the current picture," not "what do I think from
      nothing." Shape: `{mechanism, confidence, scenarios[{direction, why,
-     precedent?}], context_note}` — `kestrel readouts`'s
+     precedent?}], context_note}` — `theprojection readouts`'s
      `validate_interpretation()` enforces it, same discipline as every
      other shape here: above `speculative` confidence, at least one
      scenario needs a real precedent or the whole thing is rejected, not
@@ -147,7 +147,7 @@ archive; the page is derived from them.
    - **curator-noticed** — a story surfaced during collect/curate that
      isn't mechanically scored, judgment-picked as usual.
    - **`attention/world-news.yaml`'s `candidate`-status items** (built by
-     `kestrel build-world-news`, wiring GDELT + google_news_rss) — these
+     `theprojection build-world-news`, wiring GDELT + google_news_rss) — these
      already cleared a real outlet/domain-count bar and failed to match
      any existing thread, so they're pre-qualified, not raw noise. Offer
      the highest-`distinct_outlets` ones first; tag the line
@@ -167,7 +167,7 @@ archive; the page is derived from them.
    `attention/actor-doing.yaml` "what are they doing now" roll-up and bump
    `asof`. Light touch — only the actors that moved; `/week` does the full
    pass. (The synthesis shows atop each `/map/<slug>/` page.)
-6. **Render + publish** — run `kestrel render-read` (assembles the payload
+6. **Render + publish** — run `theprojection render-read` (assembles the payload
    from attention/ + this week's digests + timelines and substitutes into
    `templates/read-shell.html` → `artifacts/read/index.html`; the agent
    never writes page HTML/JS), then **republish to the stable artifact URL
@@ -177,7 +177,7 @@ archive; the page is derived from them.
 6a. **Refresh the public site's briefings** (Ben, 2026-07-30: they'd gone
     stale mid-day and one had gone missing after a lens rename — "it
     should be additive... have it update in place whenever new things
-    show up"). `kestrel readouts --scan` covers 165 scopes (front + 3
+    show up"). `theprojection readouts --scan` covers 165 scopes (front + 3
     lenses + every thread/entity/node), but only **front + the 3 lens
     scopes carry the fuller briefing** (`briefing_scope()`) and only
     those render on the public site's front/beat pages — that's the
@@ -264,5 +264,5 @@ Operating rules (distilled from real failures, 07-27/28):
 
 Curated by this session against the same templates. Same contract as the
 future pipeline — say "agentic-interim" in the digest's *Curated from*
-line. `kestrel render-read` is real (built 2026-07-22) — always use it
+line. `theprojection render-read` is real (built 2026-07-22) — always use it
 for step 6; never hand-assemble the page.
