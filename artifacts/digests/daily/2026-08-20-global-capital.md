@@ -3,15 +3,18 @@ lens: global-capital
 date: 2026-08-20
 status: building
 window_start: 2026-08-20T05:00:00-04:00
-as_of: 2026-08-20T10:30:00-04:00
+as_of: 2026-08-20T19:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-20
 
-*Curated agentic-interim, 05:00 ET through ~10:30 ET. Sources: a tier-2
+*Curated agentic-interim, 05:00 ET through ~19:00 ET. Sources: a tier-2
 capex/compute cluster deep check (confirmed current, nothing new) and
-today's collector run (fred, sec_edgar, gdelt, rss, google_news_rss).*
+two collector runs (fred, sec_edgar, gdelt, rss, google_news_rss;
+extension pass also checked treasury_tic, imf_data, bis_stats,
+fund_flow_reports, epfr_flows — all empty for the window except one
+already-stale EPFR item and a routine Nebius 6-K).*
 
 ## Deals & filings
 
@@ -25,6 +28,21 @@ today's collector run (fred, sec_edgar, gdelt, rss, google_news_rss).*
   ([Fortune](https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/),
   [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-14/anthropic-revenue-ahead-of-ipo-surges-over-14-fold-in-second-quarter))
   <!-- k: t=frontier-lab-ipos e=anthropic axis=deals-and-filings sev=major -->
+
+- **Nebius priced its convertible-notes raise upsized from $4.5B to
+  $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due
+  2034 — at conversion premiums of 40% and 45% over its $223.90 closing
+  price, with net proceeds of roughly $4.94B (up to $5.68B if the
+  purchasers' option is exercised).** Confirms and closes out yesterday's
+  watchlist add (the $4.5B offering announced 08-19): the deal grew
+  rather than shrank on syndication, the same "another neocloud
+  borrowing directly against the buildout" pattern this map has tracked
+  in CoreWeave and Lambda. Concurrently, Nebius exchanged $800M of
+  existing 2029/2031 convertible notes for ~15.8M Class A shares with
+  select holders — swapping debt for equity dilution on its older paper
+  even as it adds new debt. Settlement expected 2026-08-24.
+  ([SEC 6-K/exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm))
+  <!-- k: t=ai-buildout-debt-risk e=nebius axis=deals-and-filings -->
 
 ## ⏳ Upcoming & expected
 
@@ -54,5 +72,9 @@ None this pass — the Anthropic catch folds into the existing
 The one real move: investors are now talking a $2 trillion October
 listing for Anthropic, a doubling from this map's ~$965B-$1T figure a
 week ago, still investor-side chatter rather than a company-confirmed
-number. Otherwise a quiet capex/compute morning — the cluster check came
-back clean across the board.
+number. The afternoon/evening extension added one confirmed follow-
+through: Nebius priced its convertible-notes raise upsized to $5.0B,
+plus a debt-for-equity swap on its older notes — the same neocloud-
+debt pattern this map keeps tracking, this time landing bigger than
+announced rather than smaller. Otherwise a quiet day — the capex/
+compute cluster check and the macro data stack both came back clean.

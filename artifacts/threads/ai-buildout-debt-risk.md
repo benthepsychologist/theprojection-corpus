@@ -8,6 +8,23 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-08-20 — Nebius's convertible-notes raise grew on syndication, and closed with a debt-for-equity swap on the side
+
+- **Nebius priced its convertible-notes offering upsized from the $4.5B
+  announced 08-19 to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of
+  4.50% notes due 2034 — at 40% and 45% conversion premiums over its
+  $223.90 closing price, netting roughly $4.94B (up to $5.68B with the
+  purchasers' option).** The first instance on this thread's record of a
+  neocloud's AI-buildout debt raise growing between announcement and
+  pricing rather than shrinking or holding — the opposite direction from
+  Nvidia's OpenAI-guarantee trajectory ($250B → under $120B → $105B) and
+  CoreWeave's own DDTL, which was flexed wider on spread but not on size.
+  Concurrently, Nebius exchanged $800M of its existing 2029/2031
+  convertible notes for ~15.8M Class A shares with select holders —
+  swapping old debt for equity dilution on the same day it adds new,
+  larger debt. Settlement expected 2026-08-24.
+  ([SEC 6-K/exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-19 — The rate channel goes cross-border, then reverses at home
 
 - **Japan's own version of Monday's story: a 10-year JGB push toward its

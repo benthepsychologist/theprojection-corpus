@@ -1,5 +1,57 @@
 # log.md — session log (newest first)
 
+## 2026-08-21 (early) — 08-20 extended through 19:00 ET; publish adapter's stale post-migration import fixed
+
+**Picked up mid-run:** the prior session left finished 08-20 thread
+timeline work (MN injunction hearing, Warner-Meta letter) uncommitted,
+plus a second collector pass (19:00 UTC) that was never curated. Landed
+the leftover work first, then extended all three lens digests
+(frontier-ai, global-capital, mental-health) plus the front summary from
+~10:30 ET to ~19:00 ET via three parallel curation agents. Real finds:
+Nebius's convertible-notes raise (flagged yesterday) priced upsized to
+$5.0B with an $800M debt-for-equity exchange (`ai-buildout-debt-risk`);
+Alibaba's fiscal Q2 profit fell 75% YoY on a 75% AI-capex jump, the
+thread's first hard capex/earnings number (`china-stack-independence`);
+an unpatched Grok prompt-injection vuln plus a same-day Grok gibberish
+glitch; Meta's Pocket vibe-coding app and Liquid AI's LFM2.5-DSpark
+release. Self-added one item the mental-health agent flagged but was
+out of its assigned window: the Trump DOJ filed a Statement of Interest
+backing xAI against Minnesota's HF1606 AI-"nudify" ban — first federal-
+executive intervention on `grok-companion-harm`, folded into both the
+thread and the mental-health digest with resolved (non-redirect)
+sources.
+
+**08-20 stays `building`** — the digest-day doesn't close until 5am ET
+08-21 plus the critic's 5h grace, so no finalize/critic run this pass.
+One due expectation checked (`xai-mn-preliminary-injunction`): already
+correctly left `pending` by the prior session (hearing held, ruling
+still under advisement).
+
+**Bug found and fixed in-repo:** `kestrel publish --push` threw
+`ModuleNotFoundError: No module named 'render_read'` — a stale import in
+`publish/adapter.py:377` (`from render_read import esc`) left over from
+the pipeline-migration commit (`124f03d`/`f4b2a95`, "the read/digest
+pipeline comes home"); the module lives at `theprojection_pipeline.render_read`
+now. One-line fix, this repo's own file, in-zone. Also added
+`*.egg-info/` to `.gitignore` (build artifact from the same migration,
+was showing up untracked).
+
+**Published twice:** thread/entity content via `kestrel publish --push`,
+then again after the front + 3 lens briefing packs were regenerated (4
+parallel sonnet dispatches on `theprojection readouts --pack <scope>`,
+applied via `--apply`, no retries needed) and exported. Both pushes went
+to `theprojection-site` and triggered a Cloudflare build.
+
+**Pushed:** this repo and `theprojection-site` only — no kestrel edits.
+
+**Pick up:** 08-20 is still `building` — the next `/daily` run (once
+we're a few hours past 5am ET 08-21) should finalize it with the
+coverage critic and open 08-21. Thread-candidate backlog carried
+forward unchanged from the prior session's log entry (data-center
+siting opposition, Nvidia RASA loophole, off-balance-sheet AI
+obligations, Lubbock moratorium petition) — none acted on this pass,
+none re-offered.
+
 ## 2026-08-03 — the first color-team runs: q1 and q2 skeletons both FAIL their round, exactly as a first round should
 
 **What ran:** the fleet's first two full color-team reviews (method

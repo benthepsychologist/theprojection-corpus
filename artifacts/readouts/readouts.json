@@ -41,7 +41,17 @@
    "title": "Alan insurtech"
   },
   "entity:alibaba-qwen": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "ccd4ef0859503924",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -784,7 +794,15 @@
    "title": "Kaiser Permanente"
   },
   "entity:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Meta rolled Pocket, an AI vibe-coding app built on the acquired Gizmo team's technology, out to all US users after a quiet Brazil test last month.",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+    }
+   ],
    "fingerprint": "426bae2b9dbaa959",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -1189,7 +1207,15 @@
    "title": "Nvidia"
   },
   "entity:openai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Pew Research Center, using Common Crawl and Open Pangram's AI-text detector across nearly half a million English-language pages, found 35% of web pages published since ChatGPT's November 2022 launch show signs of AI authorship",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
+    }
+   ],
    "fingerprint": "d077064e288dd3c4",
    "generated": "2026-07-29T14:52:15Z",
    "generated_by": "llm",
@@ -1950,7 +1976,24 @@
    "title": "Wysa"
   },
   "entity:xai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Security researchers at Adversa AI disclosed an unpatched Grok vulnerability — \"cryptographic context injection\" — where malicious instructions are encrypted on a webpage next to their own decryption key, so input filters (which can't read ciphertext) wave it through and Grok itself decrypts and executes it, demonstrated to exfiltrate chat history, location and subscription data.",
+     "threads": [],
+     "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-\"nudify\" ban",
+     "threads": [
+      "grok-companion-harm"
+     ],
+     "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+    }
+   ],
    "fingerprint": "949d95106e27db14",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -2062,6 +2105,29 @@
     {
      "day": "2026-08-20",
      "sev": null,
+     "text": "Meta rolled Pocket, an AI vibe-coding app built on the acquired Gizmo team's technology, out to all US users after a quiet Brazil test last month.",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Liquid AI shipped LFM2.5-DSpark, a speculative-decoding inference package pairing ~300M-parameter draft models with its LFM2.5 1.2B, 2.6B and 8B-A1B targets, claiming up to 3.18x GPU throughput and up to 2.87x on-device speedup with output \"identical to baseline greedy\" by construction (draft tokens are only accepted if they match the target model's own distribution).",
+     "threads": [],
+     "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
      "text": "Ping An Insurance (Group) Company of China (HKEX:2318/SSE:601318, the parent) reported H1 2026 on its confirmed 08-20 date: revenue RMB 615.4bn (+12.6% YoY), net profit RMB 92.6bn (+36.1% YoY), interim dividend RMB 0.98/share.",
      "threads": [
       "ping-an-insurtech-ai"
@@ -2071,47 +2137,16 @@
     {
      "day": "2026-08-20",
      "sev": null,
-     "text": "🕰 **CAUGHT LATE — Alan's actual AI-triage product for its Canada entry has a nam",
-     "threads": [
-      "alan-into-canada"
-     ],
-     "url": "https://thelogic.co/news/alan-insurance-expansion-ai/"
+     "text": "Security researchers at Adversa AI disclosed an unpatched Grok vulnerability — \"cryptographic context injection\" — where malicious instructions are encrypted on a webpage next to their own decryption key, so input filters (which can't read ciphertext) wave it through and Grok itself decrypts and executes it, demonstrated to exfiltrate chat history, location and subscription data.",
+     "threads": [],
+     "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
     },
     {
      "day": "2026-08-20",
      "sev": null,
-     "text": "🕰 **CAUGHT LATE — 1199SEIU held coordinated pickets across 19 HCA Florida facili",
-     "threads": [
-      "hca-healthcare"
-     ],
-     "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
-    },
-    {
-     "day": "2026-08-20",
-     "sev": "major",
-     "text": "🕰 **CAUGHT LATE — investors are now targeting a $2 trillion valuation for an Oct",
-     "threads": [
-      "frontier-lab-ipos"
-     ],
-     "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
-    },
-    {
-     "day": "2026-08-20",
-     "sev": "major",
-     "text": "Russia hit Kyiv city and the surrounding region with a large missile-and-drone barrage overnight into 2026-08-20, killing at least 12-13 in Kyiv alone",
-     "threads": [
-      "russia-ukraine-war"
-     ],
-     "url": "https://www.cnn.com/2026/08/20/europe/russia-ukraine-kyiv-attack-intl-hnk"
-    },
-    {
-     "day": "2026-08-20",
-     "sev": "major",
-     "text": "A Russian drone crossed into Romanian (NATO) airspace and crashed in an uninhabited part of Tulcea county the same night — no casualties or damage reported — while Poland separately scrambled jets and activated air defenses near the Ukrainian border as a precaution.",
-     "threads": [
-      "russia-ukraine-war"
-     ],
-     "url": "https://www.novinite.com/articles/240193/Drone+Crashes+in+Romania+as+Russia+Strikes+Kyiv"
+     "text": "Pew Research Center, using Common Crawl and Open Pangram's AI-text detector across nearly half a million English-language pages, found 35% of web pages published since ChatGPT's November 2022 launch show signs of AI authorship",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
     }
    ],
    "briefing": {
@@ -2119,52 +2154,52 @@
     "lead": [
      {
       "emoji": "🌍",
-      "text": "Russia hit Kyiv with a large overnight missile-and-drone barrage, killing at least 12 to 13 people in one of the war's deadlier single-night tolls.",
+      "text": "Russia struck Kyiv and its region with a large overnight missile-and-drone barrage, killing at least 12-13 people in one of the deadliest single-night tolls this map has logged.",
       "url": "https://www.cnn.com/2026/08/20/europe/russia-ukraine-kyiv-attack-intl-hnk"
      },
      {
-      "emoji": "🌍",
-      "text": "A Russian drone crossed into NATO member Romania's airspace and crashed in Tulcea county, while Poland scrambled jets near the Ukrainian border as a precaution.",
+      "emoji": "⚠️",
+      "text": "A Russian drone crossed into Romanian NATO airspace and crashed in Tulcea county the same night, while Poland scrambled jets near the Ukrainian border as a precaution.",
       "url": "https://www.novinite.com/articles/240193/Drone+Crashes+in+Romania+as+Russia+Strikes+Kyiv"
      },
      {
       "emoji": "💰",
-      "text": "Investors are now targeting a $2 trillion valuation for Anthropic's planned October IPO, which would be the largest IPO ever.",
+      "text": "Investors are now targeting a $2 trillion valuation for Anthropic's planned October IPO, which would be the largest ever.",
       "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
      },
      {
-      "emoji": "💰",
-      "text": "Ping An Insurance Group reported H1 2026 revenue of RMB 615.4 billion, up 12.6% year over year, with net profit up 36.1% to RMB 92.6 billion.",
-      "url": "http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html"
+      "emoji": "📉",
+      "text": "Alibaba's fiscal Q2 profit fell 75% year-over-year to about $1.6 billion even as AI-infrastructure capex jumped 75% to roughly $10 billion.",
+      "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
      },
      {
-      "emoji": "⚖️",
-      "text": "1199SEIU held coordinated pickets across 19 HCA Florida facilities over AI scheduling and a pay gap.",
-      "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+      "emoji": "💰",
+      "text": "Nebius upsized its convertible-notes raise to $5 billion, netting roughly $4.94 billion to fund its AI-cloud buildout.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Investors are now targeting a $2 trillion valuation for Anthropic's planned October IPO, which would be the largest IPO ever.",
-        "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
+        "emoji": "🚀",
+        "text": "Meta rolled out Pocket, its AI vibe-coding app built on the acquired Gizmo team's technology, to all US users after a quiet Brazil test.",
+        "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+       },
+       {
+        "emoji": "🔬",
+        "text": "Liquid AI shipped LFM2.5-DSpark, a speculative-decoding package claiming up to 3.18x GPU throughput with output identical to baseline greedy decoding.",
+        "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
        },
        {
         "emoji": "⚠️",
-        "text": "OpenAI paused reinforcement-learning training on its next model, codenamed Astra, for two weeks after signs it might cross a 'Critical' cybersecurity capability tier.",
-        "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
+        "text": "Security researchers disclosed an unpatched Grok vulnerability that hides encrypted instructions on a webpage to make the model exfiltrate chat history, location, and subscription data.",
+        "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
        },
        {
-        "emoji": "📉",
-        "text": "Cerebras unveiled its CS-4 chip claiming up to 30x Nvidia's speed, and its own stock fell 5.10% on the announcement.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/cerebras-cbrs-says-its-new-computer-boosts-ai-speed-advantage-over-nvidia"
-       },
-       {
-        "emoji": "🌍",
-        "text": "Chinese AI firms including Moonshot, ByteDance, Alibaba, and Tencent have been accessing restricted Nvidia compute via data centers in Thailand, Malaysia, and Japan.",
-        "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
+        "emoji": "🔬",
+        "text": "A Pew Research Center study found 35% of web pages published since ChatGPT's November 2022 launch show signs of AI authorship.",
+        "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
        }
       ],
       "emoji": "🔬",
@@ -2172,6 +2207,11 @@
      },
      {
       "bullets": [
+       {
+        "emoji": "💰",
+        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, structured to vest against future custom-chip revenue rather than paid upfront.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
+       },
        {
         "emoji": "📉",
         "text": "Japan's bond market spiked toward its highest yield since 1996, dragging the country's AI-proxy stocks down with it.",
@@ -2184,13 +2224,8 @@
        },
        {
         "emoji": "🤝",
-        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, roughly 7% of the company, vesting against future custom-chip revenue.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
-       },
-       {
-        "emoji": "💰",
-        "text": "SK Hynix approved a $28.6 billion share buyback and lifted its shareholder-return pledge amid memory-market volatility.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom"
+        "text": "Anthropic is negotiating a pre-IPO revolving credit facility set to exceed $10 billion, more than four times the facility it closed a year ago.",
+        "url": "https://www.investing.com/news/stock-market-news/anthropics-preipo-credit-facility-set-to-exceed-10-billion-bloomberg-news-reports-4865836"
        }
       ],
       "emoji": "💰",
@@ -2199,24 +2234,24 @@
      {
       "bullets": [
        {
-        "emoji": "⚖️",
-        "text": "OpenAI launched ChatGPT for Teens, with an under-18 model spec that bans simulated emotional dependence outright.",
-        "url": "https://openai.com/index/chatgpt-for-teens"
-       },
-       {
         "emoji": "⚠️",
-        "text": "An NPR investigation into a 29-year-old's suicide documents AI substituting for disclosure to real humans, including her own therapist.",
+        "text": "An NPR investigation into a 29-year-old's suicide documents the clearest case yet of general-purpose AI substituting for disclosure to real humans, including her own therapist.",
         "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
        },
        {
         "emoji": "⚖️",
-        "text": "Opening statements began in the states' federal trial against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
-        "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
+        "text": "OpenAI launched ChatGPT for Teens, whose under-18 model spec bans simulated emotional dependence outright.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
        },
        {
         "emoji": "⚖️",
-        "text": "Colorado's HB26-1195 has barred AI systems from directly conducting therapy.",
-        "url": "https://leg.colorado.gov/bills/HB26-1195"
+        "text": "LifeStance Health will pay just over $3 million to settle claims it fed patient therapy-search and telehealth data to Meta and Google via tracking pixels, affecting more than 1 million patients.",
+        "url": "https://bhbusiness.com/2026/08/18/lifestance-reaches-settlement-in-data-privacy-lawsuit-involving-1-million-patients/"
+       },
+       {
+        "emoji": "🤝",
+        "text": "UHS's $835 million acquisition of Talkspace closed, and Talkspace left the stock indices.",
+        "url": "/threads/bigtech-into-health/"
        }
       ],
       "emoji": "🏥",
@@ -2224,13 +2259,13 @@
      }
     ],
     "watch": [
-     "Whether the AI mental-health chatbot regulatory gap keeps closing through litigation rather than an actual approved regulatory pathway.",
-     "Whether the roughly $800 billion-plus circular financing loop between Nvidia, OpenAI, and cloud providers unwinds or keeps compounding as OpenAI's losses grow.",
-     "Whether mental-health funding keeps favoring clinician-augmentation and interventional psychiatry over the consumer chatbots facing regulatory scrutiny."
+     "Whether Russia's NATO-airspace incursions keep escalating alongside strikes like the Kyiv barrage is the sharpest open question in the war.",
+     "Anthropic's IPO terms, including founders' new supervoting shares and a credit facility set to exceed $10 billion, are still being finalized ahead of an October listing.",
+     "AI mental-health chatbot oversight is still being set by litigation and settlements rather than any approved regulatory pathway."
     ]
    },
-   "fingerprint": "1d8963581f3a426c",
-   "generated": "2026-08-20T14:37:12Z",
+   "fingerprint": "76cfaf648884b2f5",
+   "generated": "2026-08-21T00:44:37Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2313,15 +2348,52 @@
     {
      "day": "2026-08-20",
      "sev": null,
+     "text": "Meta rolled Pocket, an AI vibe-coding app built on the acquired Gizmo team's technology, out to all US users after a quiet Brazil test last month.",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Liquid AI shipped LFM2.5-DSpark, a speculative-decoding inference package pairing ~300M-parameter draft models with its LFM2.5 1.2B, 2.6B and 8B-A1B targets, claiming up to 3.18x GPU throughput and up to 2.87x on-device speedup with output \"identical to baseline greedy\" by construction (draft tokens are only accepted if they match the target model's own distribution).",
+     "threads": [],
+     "url": "https://huggingface.co/blog/LiquidAI/lfm25-dspark"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
      "text": "Ping An Insurance (Group) Company of China (HKEX:2318/SSE:601318, the parent) reported H1 2026 on its confirmed 08-20 date: revenue RMB 615.4bn (+12.6% YoY), net profit RMB 92.6bn (+36.1% YoY), interim dividend RMB 0.98/share.",
      "threads": [
       "ping-an-insurtech-ai"
      ],
      "url": "http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Security researchers at Adversa AI disclosed an unpatched Grok vulnerability — \"cryptographic context injection\" — where malicious instructions are encrypted on a webpage next to their own decryption key, so input filters (which can't read ciphertext) wave it through and Grok itself decrypts and executes it, demonstrated to exfiltrate chat history, location and subscription data.",
+     "threads": [],
+     "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Pew Research Center, using Common Crawl and Open Pangram's AI-text detector across nearly half a million English-language pages, found 35% of web pages published since ChatGPT's November 2022 launch show signs of AI authorship",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
     }
    ],
    "briefing": {
-    "gist": "**A quiet morning on the product/China axes.",
+    "gist": "**A quiet morning on the product/China axes gave way to a busier afternoon.** The map's own capex and chip threads stayed unusually current all day, with nothing new to report on any of 13 checked (hyperscaler-capex-big-picture…",
     "lead": [
      {
       "emoji": "⚠️",
@@ -2477,8 +2549,8 @@
      "Whether OpenAI's paused Astra training run resumes, and whether its single largest planned frontier training run stays on hold."
     ]
    },
-   "fingerprint": "d9f0cbc85489249b",
-   "generated": "2026-08-20T14:37:30Z",
+   "fingerprint": "08404d0a73166959",
+   "generated": "2026-08-21T00:44:37Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2567,34 +2639,43 @@
       "frontier-lab-ipos"
      ],
      "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Nebius priced its convertible-notes raise upsized from $4.5B to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due 2034 — at conversion premiums of 40% and 45% over its $223.90 closing price, with net proceeds of roughly $4.94B (up to $5.68B if the purchasers' option is exercised).",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
     }
    ],
    "briefing": {
-    "gist": "AI-capex debt fears whipsawed markets this week while Anthropic's IPO track firmed toward a $2T October target and Nvidia's Ohio guarantee terms came into focus.",
+    "gist": "Anthropic's IPO chatter jumped to a $2 trillion target as Nebius, ByteDance and AMD kept the AI debt machine running and Nvidia's financing web widened further.",
     "lead": [
      {
-      "emoji": "💰",
-      "text": "Investors are now targeting a $2 trillion valuation for Anthropic's IPO, expected as soon as October.",
+      "emoji": "🤝",
+      "text": "Investors are now targeting a $2 trillion valuation for an Anthropic listing as early as October.",
       "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
      },
      {
-      "emoji": "📉",
-      "text": "Japan's bond yields spiked toward their highest since 1996, dragging AI-proxy stocks down with them.",
-      "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
+      "emoji": "💰",
+      "text": "Nebius upsized its convertible-notes raise from $4.5B to $5.0B, pricing notes due 2030 and 2034 for roughly $4.94B in net proceeds.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
      },
      {
-      "emoji": "💰",
-      "text": "The US Treasury doubled its long-bond buyback size, reversing the week's bear-steepener in a single announcement.",
+      "emoji": "📉",
+      "text": "The US Treasury doubled its long-bond buyback size, reversing the week's entire bear-steepener in a single announcement.",
       "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
      },
      {
-      "emoji": "🤝",
-      "text": "Google took a warrant on up to $12.2 billion of Marvell stock, vesting against future custom-chip revenue.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
+      "emoji": "⚠️",
+      "text": "Japan's bond market spiked toward its highest yield since 1996, dragging the country's AI-proxy stocks down with it.",
+      "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
      },
      {
-      "emoji": "⚠️",
-      "text": "NVIDIA's 8-K revealed the Ohio guarantee is capped at $105 billion, a residual-value backstop OpenAI must indemnify in full.",
+      "emoji": "🏗️",
+      "text": "Nvidia's 8-K capped the Ohio guarantee at $105 billion, revealing it as a residual-value guarantee with OpenAI indemnifying every dollar Nvidia pays.",
       "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
      }
     ],
@@ -2602,92 +2683,35 @@
      {
       "bullets": [
        {
-        "emoji": "📉",
-        "text": "Japan's bond market spiked toward its highest yield since 1996, taking the country's AI-proxy stocks down with it.",
-        "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
-       },
-       {
-        "emoji": "💰",
-        "text": "The US Treasury doubled its long-bond buyback size, reversing the bear-steepener this map had tracked since Monday.",
-        "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "The 30-year Treasury hit a 19-year high of 5.32% on August 18 and semiconductor stocks broke together.",
-        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Global bond issuance hit $5 trillion a month faster than last year's record, and buyers are starting to balk.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
-       }
-      ],
-      "emoji": "📉",
-      "heading": "The debt-into-AI-equities scare"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "⚠️",
-        "text": "NVIDIA's 8-K capped the Ohio guarantee at $105 billion, a residual-value backstop with OpenAI indemnifying every dollar Nvidia pays.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
-       },
-       {
-        "emoji": "💰",
-        "text": "SoftBank's own 13F showed the same mark-only-growth pattern this map found in NVIDIA's 13F a week ago, this time on Intel.",
-        "url": "https://qz.com/softbank-intel-13f-sec-filing-081826"
-       },
-       {
         "emoji": "🤝",
-        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, vesting against future custom-chip revenue rather than paid upfront.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Groq raised $350M at $3.5B, half its peak valuation, pivoting to buying Nvidia chips with Nvidia itself in the round.",
-        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
-       }
-      ],
-      "emoji": "🤝",
-      "heading": "Nvidia's vendor-financing web"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Investors are now targeting a $2 trillion valuation for an Anthropic IPO as soon as October.",
+        "text": "Investors are now targeting a $2 trillion valuation for an Anthropic listing as early as October.",
         "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
        },
        {
+        "emoji": "🤝",
+        "text": "Anthropic's IPO timeline firmed to a concrete September-or-October Nasdaq target, with investor meetings already underway.",
+        "url": "https://www.investing.com/news/stock-market-news/anthropic-meets-investors-to-shore-up-confidence-ahead-of-planned-september-ipo-wsj-93CH-4850754"
+       },
+       {
         "emoji": "💰",
-        "text": "Anthropic is negotiating a pre-IPO revolving credit facility set to exceed $10 billion, more than four times last year's $2.5B facility.",
+        "text": "Anthropic is negotiating a pre-IPO revolving credit facility set to exceed $10 billion, more than four times the $2.5B facility it closed a year ago.",
         "url": "https://www.investing.com/news/stock-market-news/anthropics-preipo-credit-facility-set-to-exceed-10-billion-bloomberg-news-reports-4865836"
        },
        {
-        "emoji": "💰",
-        "text": "An Anthropic-tied data center closed a $1.3 billion private-credit loan.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/anthropic-tied-data-center-inks-1-3-billion-private-credit-loan"
-       },
-       {
-        "emoji": "💰",
-        "text": "Anthropic's annualized revenue run-rate topped $65 billion in July, ahead of OpenAI and ahead of any formal filing.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-17/anthropic-revenue-run-rate-surpasses-65-billion-ahead-of-ipo"
+        "emoji": "🤝",
+        "text": "General Atlantic is reviving its IPO plans, working with JPMorgan, Goldman Sachs and Morgan Stanley.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-17/general-atlantic-is-said-to-tap-jpmorgan-to-lead-fresh-ipo-push"
        }
       ],
-      "emoji": "💰",
-      "heading": "Anthropic's IPO run-up"
+      "emoji": "🤝",
+      "heading": "The IPO wave"
      },
      {
       "bullets": [
        {
         "emoji": "💰",
-        "text": "SK Hynix approved a $28.6 billion share buyback and lifted its shareholder-return pledge amid memory-market volatility.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom"
-       },
-       {
-        "emoji": "💰",
-        "text": "Nebius is raising $4.5 billion in convertible senior notes to fund its data-center construction and AI-cloud buildout.",
-        "url": "https://www.investing.com/news/company-news/nebius-plans-45-billion-convertible-notes-offering-93CH-4867206"
+        "text": "Nebius upsized its convertible-notes raise from $4.5B to $5.0B, pricing notes due 2030 and 2034 for roughly $4.94B in net proceeds.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
        },
        {
         "emoji": "💰",
@@ -2695,23 +2719,101 @@
         "url": "https://www.bloomberg.com/news/articles/2026-08-18/bytedance-draws-over-30-billion-in-orders-for-jumbo-bank-loan"
        },
        {
+        "emoji": "💰",
+        "text": "AMD's bond sale priced at a final $4.75 billion across four tranches, and its shares rose 5.6% on the print.",
+        "url": "https://www.gurufocus.com/news/9035192/amd-stock-jumps-56-while-475-billion-debt-deal-lands"
+       },
+       {
+        "emoji": "📉",
+        "text": "Global bond issuance hit $5 trillion for the year, a month faster than last year's record, with buyers starting to balk.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
+       }
+      ],
+      "emoji": "💰",
+      "heading": "The debt machine"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🏗️",
+        "text": "Nvidia's 8-K capped the Ohio guarantee at $105 billion, revealing it as a residual-value guarantee with OpenAI indemnifying every dollar Nvidia pays.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
+       },
+       {
         "emoji": "🤝",
-        "text": "Etched's valuation quadrupled in seven weeks to a $700M round at $21B, led by Jane Street, the same day memory/semis stocks took their worst hit of the week.",
-        "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/"
+        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, roughly 7% of the company, vesting against future custom-chip revenue.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
+       },
+       {
+        "emoji": "💰",
+        "text": "Groq raised $350 million at a $3.5 billion valuation, half its peak, with Nvidia itself in the round.",
+        "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
+       },
+       {
+        "emoji": "💰",
+        "text": "Semiconductor companies have now participated in more than $250 billion of AI and robotics startup financings in 2026, a record pace.",
+        "url": "https://news.crunchbase.com/venture/semiconductor-giants-nvda-intc-backing-ai-robotics-starups-2026/"
        }
       ],
       "emoji": "🏗️",
-      "heading": "Chips, memory, and the buildout debt"
+      "heading": "Nvidia's financing web"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "Japan's bond market spiked toward its highest yield since 1996, dragging the country's AI-proxy stocks down with it.",
+        "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
+       },
+       {
+        "emoji": "📉",
+        "text": "The US Treasury doubled its long-bond buyback size, reversing the week's entire bear-steepener in a single announcement.",
+        "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
+       },
+       {
+        "emoji": "📉",
+        "text": "The 30-year Treasury extended its move to a 19-year high of 5.32%, and semis broke together.",
+        "url": "https://finance.yahoo.com/markets/live/stock-market-today-tuesday-august-18-dow-sp-500-nasdaq-080822735.html"
+       },
+       {
+        "emoji": "💰",
+        "text": "SK Hynix approved a $28.6 billion share buyback and lifted its shareholder-return pledge to calm a stock under memory-market pressure.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom"
+       }
+      ],
+      "emoji": "📉",
+      "heading": "Markets under rate pressure"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "An amended investor complaint accuses UnitedHealth of corporate governance failures on a historic scale, including shutting down an audit that found $200 million in unsupportable diagnosis codes.",
+        "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017-2020 over intercompany transfer pricing with a foreign subsidiary.",
+        "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
+       },
+       {
+        "emoji": "💰",
+        "text": "Universal Health Services closed its $835 million Talkspace acquisition, financed off its revolving credit facility.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Payer finance under scrutiny"
      }
     ],
     "watch": [
-     "Whether NVIDIA's now-disclosed $105 billion Ohio residual-value guarantee, with OpenAI indemnifying every dollar, satisfies or deepens the circular-financing concern it followed.",
-     "Whether the $5 trillion pace of global bond issuance and the $70 billion in off-balance-sheet AI shadow credit backstops keep finding buyers as long-end yields sit at 19-year highs.",
-     "Whether Anthropic's IPO timeline and valuation target hold as investor meetings continue ahead of a September-or-October Nasdaq listing."
+     "Whether rating agencies come to treat Nvidia's vendor-financing guarantees as debt-equivalent as its lender-of-last-resort role across the buildout keeps expanding.",
+     "Whether the frontier labs' private, vendor-financed valuations survive contact with public markets as Anthropic's IPO timeline firms toward September or October.",
+     "Whether PIF keeps funding its AI-side buildout at pace given falling oil prices, an Aramco dividend cut, and shrinking cash reserves, even as its concrete-side capital retreat continues."
     ]
    },
-   "fingerprint": "9feb75099890611c",
-   "generated": "2026-08-20T14:37:12Z",
+   "fingerprint": "6c278f0c1c24ed33",
+   "generated": "2026-08-21T00:44:37Z",
    "generated_by": "llm",
    "news": [
     {
@@ -2809,35 +2911,44 @@
       "hca-healthcare"
      ],
      "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-\"nudify\" ban",
+     "threads": [
+      "grok-companion-harm"
+     ],
+     "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
     }
    ],
    "briefing": {
-    "gist": "AI-therapy regulation, big-money behavioral-health dealmaking, and psychedelic trial results all moved today, while HCA workers picketed over AI scheduling pay.",
+    "gist": "AI mental-health regulation and dealmaking both accelerated: OpenAI shipped teen safeguards, Meta's child-safety trial opened, DOJ backed xAI against a state ban, and UHS closed its $835M Talkspace deal.",
     "lead": [
      {
-      "emoji": "⚠️",
-      "text": "1199SEIU healthcare workers picketed 19 HCA Florida facilities today over pay tied to the Timpani AI scheduling system.",
-      "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
-     },
-     {
-      "emoji": "🚀",
-      "text": "French insurer Alan's AI-triage product now has a name as it expands into Canada, a catch-up item this map had missed.",
-      "url": "https://thelogic.co/news/alan-insurance-expansion-ai/"
+      "emoji": "⚖️",
+      "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-nudify ban.",
+      "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
      },
      {
       "emoji": "⚖️",
-      "text": "Opening statements began today in the states' federal trial against Meta over child-safety and social-media addiction, a six-week Oakland trial with claims reaching $200 billion.",
+      "text": "Opening statements began in the states' federal trial against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
       "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
      },
      {
+      "emoji": "🚀",
+      "text": "OpenAI's under-18 model spec now bans encouraging emotional dependence, the same requirement Colorado proposed as law seven days earlier.",
+      "url": "https://openai.com/index/chatgpt-for-teens"
+     },
+     {
       "emoji": "⚠️",
-      "text": "NPR's investigation into a 29-year-old's suicide is the clearest documented case yet of an AI chatbot substituting for disclosure to actual humans, including her own therapist.",
+      "text": "An NPR investigation into a 29-year-old's suicide documented the clearest case yet of general-purpose AI substituting for disclosure to real humans, including her own therapist.",
       "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
      },
      {
-      "emoji": "🚀",
-      "text": "OpenAI's new under-18 model spec bans encouraging emotional dependence, the same rule Colorado proposed as law just seven days earlier.",
-      "url": "https://openai.com/index/chatgpt-for-teens"
+      "emoji": "💰",
+      "text": "Universal Health Services closed its $835 million acquisition of Talkspace, creating a virtual-to-inpatient behavioral-health continuum under one owner.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
      }
     ],
     "sections": [
@@ -2845,48 +2956,48 @@
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "Colorado's HB26-1195 has barred AI systems from directly conducting therapy, binding law since August 12 though this map only caught it today.",
+        "text": "Colorado's HB26-1195, barring AI systems from directly conducting therapy, has been binding law since August 12, missed by this lens until now.",
         "url": "https://leg.colorado.gov/bills/HB26-1195"
        },
        {
-        "emoji": "⚠️",
-        "text": "A pediatrician's first-person STAT News piece argues AI chatbots are grooming her young patients.",
-        "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
+        "emoji": "🚀",
+        "text": "OpenAI's under-18 model spec now bans chatbots from encouraging emotional dependence, the same rule Colorado proposed as law a week earlier.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
        },
        {
         "emoji": "⚠️",
-        "text": "TechCrunch noted OpenAI's teen protections arrive years after teens started using ChatGPT in the first place.",
-        "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/"
+        "text": "NPR's investigation into a 29-year-old's suicide is the clearest documented case yet of general-purpose AI substituting for disclosure to real humans, including her own therapist.",
+        "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
        },
        {
-        "emoji": "🔬",
-        "text": "A randomised trial pitting two AI chatbot therapists against each other found both helped and neither beat the other, on a sample too small to generalize.",
-        "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
+        "emoji": "⚖️",
+        "text": "The Trump DOJ filed a Statement of Interest supporting xAI's fight against Minnesota's HF1606 AI-nudify ban.",
+        "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
        }
       ],
       "emoji": "⚖️",
-      "heading": "The AI-therapy reckoning"
+      "heading": "The reckoning tightens"
      },
      {
       "bullets": [
        {
-        "emoji": "🤝",
+        "emoji": "💰",
         "text": "Universal Health Services closed its $835 million acquisition of Talkspace, creating a virtual-to-inpatient behavioral-health continuum under one owner.",
         "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        },
        {
-        "emoji": "💰",
-        "text": "Healthcare Dive's interview with UHS CEO Marc Miller closed the coverage gap this lens flagged as a partial miss on August 17.",
-        "url": "https://www.healthcaredive.com/news/uhs-talkspace-acquisition-strategy-marc-miller-interview/828152/"
-       },
-       {
         "emoji": "📉",
-        "text": "Behavioral-health dealmaking overall is down 20% for the first half of 2026, the frame behind every deal above.",
+        "text": "Behavioral-health dealmaking is down 20% for the first half of 2026, the aggregate frame behind every deal above.",
         "url": "https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/"
        },
        {
         "emoji": "⚠️",
-        "text": "LifeStance Health will pay a little over $3 million to settle a class action alleging it fed patient therapy-search data to Meta and Google via tracking pixels, affecting more than 1 million patients.",
+        "text": "Aetna's reimbursement cuts to Alma-contracted therapists took effect today, cutting New York rates by up to 10.6% and New Jersey rates by up to 16.8% on core session codes.",
+        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "LifeStance Health will pay just over $3 million to settle a class action alleging it fed patient therapy-search and telehealth data to Meta and Google, affecting more than 1 million patients.",
         "url": "https://bhbusiness.com/2026/08/18/lifestance-reaches-settlement-in-data-privacy-lawsuit-involving-1-million-patients/"
        }
       ],
@@ -2896,64 +3007,75 @@
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Aetna's reimbursement cuts to Alma-contracted therapists took effect today, cutting New York 60-minute session pay 10.6% and New Jersey 15.2%.",
-        "url": "https://clearhealthcosts.com/blog/2026/07/aetna-cuts-pay-rates-for-alma-clinicians-and-adds-its-own-therapy-service/"
-       },
-       {
         "emoji": "⚠️",
         "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had found at least $200 million in unsupportable diagnosis codes.",
         "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
        },
        {
         "emoji": "⚖️",
-        "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017-2020 over intercompany transfer pricing, notices the company sat on since March.",
+        "text": "The IRS is seeking to significantly increase UnitedHealth's taxable income for 2017 to 2020 over intercompany transfer pricing with a foreign subsidiary.",
         "url": "https://www.statnews.com/2026/08/17/unitedhealth-irs-probe-audit-targets-foreign-subsidiary-transfers/"
        },
        {
-        "emoji": "🏗️",
-        "text": "CMS's ACCESS model opened its next participant cohort today, the second rolling start of its 10-year behavioral-health program.",
-        "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
+        "emoji": "🏥",
+        "text": "Centene's CFO is leaving at year-end, a management change at the largest US Medicaid managed-care organization.",
+        "url": "https://www.healthcaredive.com/news/centene-cfo-to-step-down-at-year-end/828030/"
        }
       ],
-      "emoji": "🏥",
-      "heading": "Payer & policy friction"
+      "emoji": "⚠️",
+      "heading": "Payer scrutiny deepens"
      },
      {
       "bullets": [
        {
         "emoji": "🔬",
-        "text": "Oregon's first US state-regulated psilocybin study found 95% of participants saw improvements in depression or PTSD symptoms.",
+        "text": "A seven-researcher team including the American Psychiatric Association's Darlene King proposed a standardized eight-section 'facts label' disclosure for AI-enabled mental-health technology.",
+        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887"
+       },
+       {
+        "emoji": "🔬",
+        "text": "Oregon's first-ever state-regulated psilocybin study found 95% of participants saw improvements in depression and PTSD symptoms.",
         "url": "https://bhbusiness.com/2026/08/19/95-of-oregon-psilocybin-study-saw-improvements-in-depression-ptsd/"
+       },
+       {
+        "emoji": "🔬",
+        "text": "A randomized trial pitting two AI chatbot therapists against each other found both helped patients, with neither beating the other on a sample too small to settle the question.",
+        "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
        },
        {
         "emoji": "🔬",
         "text": "The VA disclosed it is now running its 20th active clinical trial of psychedelic-assisted therapy, this one testing psilocybin for veterans with treatment-resistant depression.",
         "url": "https://bhbusiness.com/2026/08/14/the-va-is-now-evaluating-mdma-glp-1s-and-psilocybin-for-behavioral-health/"
-       },
-       {
-        "emoji": "💰",
-        "text": "Medicaid spending on core psychotherapy services is up 156%, a figure this map caught late.",
-        "url": "https://bhbusiness.com/2026/08/19/medicaid-psychotherapy-spending-up-156/"
-       },
-       {
-        "emoji": "🔬",
-        "text": "A seven-researcher team including the American Psychiatric Association's Darlene King proposed a standardized eight-section 'facts label' disclosure for AI-enabled mental-health technology.",
-        "url": "https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1887887"
        }
       ],
       "emoji": "🔬",
-      "heading": "Psychedelics & the evidence base"
+      "heading": "Research & evidence"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "1199SEIU held coordinated pickets across 19 HCA Florida facilities over AI scheduling and pay gaps.",
+        "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Kaiser Permanente's mediation window with NUHW over AI replacing therapist judgment in its E-Visit triage tool closed at its scheduled end with no outcome posted by either side.",
+        "url": "https://about.kaiserpermanente.org/who-we-are/labor-relations/nuhw-bargaining"
+       }
+      ],
+      "emoji": "⚠️",
+      "heading": "Labor friction over AI"
      }
     ],
     "watch": [
-     "Whether the first real regulatory pathway for AI mental-health chatbots emerges from FDA or MHRA action, or keeps arriving only through litigation and wrongful-death suits.",
-     "Whether Kaiser and NUHW reach any resolution on AI replacing therapist judgment in the E-Visit triage tool, after the mediation window closed with no outcome posted.",
-     "Whether the Kaiser-style labor backlash spreads further at HCA now that pickets have hit 19 Florida facilities over the Timpani AI scheduling system."
+     "The capability/approval gap for AI mental-health chatbots is being closed by litigation rather than evidence, with more than ten wrongful-death suits pending and no FDA-approved product yet in sight.",
+     "Behavioral health remains the top-funded US therapeutic area by deal value, but capital keeps flowing to clinician-augmentation and interventional psychiatry rather than consumer chatbots.",
+     "Kaiser's mediation with NUHW over AI replacing therapist judgment closed without a posted outcome, leaving SB 903's Assembly path and a DMHC/DOL response still open."
     ]
    },
-   "fingerprint": "8ed926e2ccd8f348",
-   "generated": "2026-08-20T14:37:12Z",
+   "fingerprint": "ea63ae87d0df4234",
+   "generated": "2026-08-21T00:44:37Z",
    "generated_by": "llm",
    "news": [
     {
@@ -3035,7 +3157,17 @@
    "title": "Mental Health"
   },
   "node:alibaba-qwen": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3621,7 +3753,17 @@
    "title": "arm"
   },
   "node:blackrock": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Nebius priced its convertible-notes raise upsized from $4.5B to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due 2034 — at conversion premiums of 40% and 45% over its $223.90 closing price, with net proceeds of roughly $4.94B (up to $5.68B if the purchasers' option is exercised).",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
+    }
+   ],
    "fingerprint": "924243f7b31d22cf",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3732,7 +3874,17 @@
    "title": "blackrock"
   },
   "node:broadcom": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Nebius priced its convertible-notes raise upsized from $4.5B to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due 2034 — at conversion premiums of 40% and 45% over its $223.90 closing price, with net proceeds of roughly $4.94B (up to $5.68B if the purchasers' option is exercised).",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
+    }
+   ],
    "fingerprint": "115a8410271c96a2",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4106,7 +4258,17 @@
    "title": "cxmt"
   },
   "node:deepseek": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4762,7 +4924,24 @@
    "title": "Masayoshi Son"
   },
   "node:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Meta rolled Pocket, an AI vibe-coding app built on the acquired Gizmo team's technology, out to all US users after a quiet Brazil test last month.",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/meta-brings-pocket-an-app-that-lets-you-vibe-code-and-share-games-to-us-users/"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Nebius priced its convertible-notes raise upsized from $4.5B to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due 2034 — at conversion premiums of 40% and 45% over its $223.90 closing price, with net proceeds of roughly $4.94B (up to $5.68B if the purchasers' option is exercised).",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
+    }
+   ],
    "fingerprint": "c84ce0895f6dd827",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -5158,7 +5337,17 @@
    "title": "microsoft"
   },
   "node:moonshot-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "4b6ebf0ee479e8ac",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5271,7 +5460,17 @@
    "title": "moonshot-ai"
   },
   "node:nvidia": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Nebius priced its convertible-notes raise upsized from $4.5B to $5.0B — $3.0B of 0.50% notes due 2030 and $2.0B of 4.50% notes due 2034 — at conversion premiums of 40% and 45% over its $223.90 closing price, with net proceeds of roughly $4.94B (up to $5.68B if the purchasers' option is exercised).",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
+    }
+   ],
    "fingerprint": "799403cf276eee74",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5387,6 +5586,13 @@
   },
   "node:openai": {
    "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Pew Research Center, using Common Crawl and Open Pangram's AI-text detector across nearly half a million English-language pages, found 35% of web pages published since ChatGPT's November 2022 launch show signs of AI authorship",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/08/20/a-third-of-webpages-published-since-chatgpts-launch-show-signs-of-ai-authorship-study-finds/"
+    },
     {
      "day": "2026-08-20",
      "sev": "major",
@@ -6278,6 +6484,15 @@
    "breaking": [
     {
      "day": "2026-08-20",
+     "sev": null,
+     "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-\"nudify\" ban",
+     "threads": [
+      "grok-companion-harm"
+     ],
+     "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+    },
+    {
+     "day": "2026-08-20",
      "sev": "major",
      "text": "🕰 **CAUGHT LATE — investors are now targeting a $2 trillion valuation for an Oct",
      "threads": [
@@ -6722,7 +6937,24 @@
    "title": "wysa"
   },
   "node:xai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Security researchers at Adversa AI disclosed an unpatched Grok vulnerability — \"cryptographic context injection\" — where malicious instructions are encrypted on a webpage next to their own decryption key, so input filters (which can't read ciphertext) wave it through and Grok itself decrypts and executes it, demonstrated to exfiltrate chat history, location and subscription data.",
+     "threads": [],
+     "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
+    },
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-\"nudify\" ban",
+     "threads": [
+      "grok-companion-harm"
+     ],
+     "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+    }
+   ],
    "fingerprint": "949d95106e27db14",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -6835,7 +7067,17 @@
    "title": "xai"
   },
   "node:zhipu-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7914,7 +8156,17 @@
    "title": "Homegrown DUV"
   },
   "thread:china-stack-independence": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "Alibaba's fiscal Q2 profit fell 75% YoY to RMB 10.5bn ($1.6bn, down from RMB 43.1bn) even as revenue rose 9% to ~RMB 269bn ($40bn), driven by a 75% jump in AI-infrastructure capex to RMB 67.7bn (~$10bn) against a standing 3-year, ~$56bn cloud/AI infrastructure pledge.",
+     "threads": [
+      "china-stack-independence"
+     ],
+     "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+    }
+   ],
    "fingerprint": "fa3b375eec992e0d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -8638,7 +8890,17 @@
    "title": "Google Health"
   },
   "thread:grok-companion-harm": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-20",
+     "sev": null,
+     "text": "The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-\"nudify\" ban",
+     "threads": [
+      "grok-companion-harm"
+     ],
+     "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+    }
+   ],
    "fingerprint": "ffc4cec165141e3a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",

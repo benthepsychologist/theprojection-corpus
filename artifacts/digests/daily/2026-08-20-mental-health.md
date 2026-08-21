@@ -3,7 +3,7 @@ lens: mental-health
 date: 2026-08-20
 status: building
 window_start: 2026-08-20T05:00:00-04:00
-as_of: 2026-08-20T10:30:00-04:00
+as_of: 2026-08-20T19:00:00-04:00
 coverage: pending
 ---
 
@@ -42,6 +42,9 @@ collector run (clinicaltrials, openalex, rss, google_news_rss).*
   ([Hoodline](https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/),
   [WUSF](https://www.wusf.org/health-news-florida/2026-08-12/hca-workers-at-osceola-hospital-call-for-better-pay-and-benefits))
   <!-- k: t=hca-healthcare e=hca-healthcare axis=clinical-safety-and-harm -->
+
+- **The Trump DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI-"nudify" ban**, the first federal-executive intervention on either strand of the Grok-harm thread — arguing the state law's tool-level targeting risks strict liability and a First Amendment/chilling problem for US AI competitiveness, per a December 2025 Trump executive order directing DOJ to challenge state AI laws. Filed 2026-08-19/20, ahead of Judge Frank's still-pending preliminary-injunction ruling. ([CBS News Minnesota](https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/), [Raw Story](https://www.rawstory.com/trump-musk-nudify-ban/), [The New Republic](https://newrepublic.com/post/214553/trump-doj-elon-musk-ai-right-turn-people-nude))
+  <!-- k: t=grok-companion-harm e=xai axis=clinical-safety-and-harm -->
 
 ## ⏳ Upcoming & expected
 

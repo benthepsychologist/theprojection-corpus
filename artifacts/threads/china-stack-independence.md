@@ -13,6 +13,22 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-20 — Alibaba's earnings put a hard number on the domestic AI-capex side of the thread
+
+- **Alibaba's fiscal Q2 net profit fell 75% YoY to RMB 10.5bn ($1.6bn,
+  down from RMB 43.1bn), even as revenue rose 9% to ~RMB 269bn ($40bn)
+  — the gap is a 75% jump in AI-infrastructure capex to RMB 67.7bn
+  (~$10bn), against a standing 3-year, ~$56bn cloud/AI infrastructure
+  pledge.** AI cloud and compute revenue itself surged 45% to RMB 48.4bn
+  ($7.2bn). CEO Eddie Wu: "As we continue to ramp up our supply, our AI
+  and Cloud revenue growth will accelerate further in the coming
+  quarters, alongside continued improvement in profitability." This
+  thread has tracked Alibaba's Zhenwu stack and Qwen releases on the
+  model/chip side; this is the first hard capex/earnings data point
+  showing what domestic self-sufficiency is currently costing the
+  company's bottom line.
+  ([ABC News/AP wire](https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907)) ⟨daily 2026-08-20⟩
+
 ## 2026-08-19 — GLM-5.3 gets API pricing, five days after it shipped
 
 - **Z.ai published per-token API pricing for GLM-5.3 — $1.40/million

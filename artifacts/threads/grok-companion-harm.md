@@ -14,8 +14,21 @@ on suicide/psychosis reinforcement; no filed MH suit yet) and (B) deepfake/
 CSAM (litigated + regulated). Root cause of both: the explicit anti-guardrail
 design. The catalyst to watch: the first named-plaintiff Grok MH/suicide suit.
 
-## 2026-08-20 — MN preliminary-injunction hearing happened on schedule; no ruling yet
+## 2026-08-20 — MN preliminary-injunction hearing happened on schedule; no ruling yet; Trump DOJ files in support of xAI
 
+- **The Trump DOJ filed a Statement of Interest backing xAI against
+  Minnesota's HF1606 "nudify" ban**, filed 2026-08-19/20 — a filing that
+  lets the federal government weigh in on the case without being a
+  party to it. The DOJ invokes a December 2025 Trump executive order
+  directing it to challenge state AI laws seen as burdening US
+  innovation, and argues HF1606 reaches further than federal law: by
+  targeting the image-generation *tool itself* rather than its
+  distribution/use, the DOJ says the law risks strict liability, First
+  Amendment problems, and a chilling effect on US AI competitiveness.
+  This is the first federal-executive-branch intervention on either
+  strand of this thread. ([CBS News Minnesota](https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/),
+  [Raw Story](https://www.rawstory.com/trump-musk-nudify-ban/),
+  [The New Republic](https://newrepublic.com/post/214553/trump-doj-elon-musk-ai-right-turn-people-nude)) ⟨daily 2026-08-20⟩
 - **The xAI v. Ellison preliminary-injunction hearing on Minnesota's
   HF1606 "nudify" ban happened as scheduled, 2026-08-19, 9:30am ET,
   before U.S. District Judge Donovan W. Frank** (Warren E. Burger

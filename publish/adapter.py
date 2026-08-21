@@ -374,7 +374,7 @@ def _md_html(text):
     used the real md_html()) and found none — narrow blast radius, but
     real wherever a bullet nests bold around italic.
     """
-    from render_read import esc  # noqa: E402 — only needed here, not at module scope
+    from theprojection_pipeline.render_read import esc  # noqa: E402 — only needed here, not at module scope
     t = esc(text)
     t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
     t = _MD_BOLD.sub(r"<strong>\1</strong>", t)
