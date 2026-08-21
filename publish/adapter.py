@@ -47,9 +47,18 @@ from publish import core
 # discipline 9: honest failure beats silent fallback).
 ROOT = os.environ["KESTREL_INSTANCE"]
 
-from render_read import (digest_day, load_entities as _load_watchlist_entities,  # noqa: E402
-                         parse_digest, parse_front, load_flash, load_world_news)
-from thumbnails import get_thumbnails  # noqa: E402
+# ⚠️ These were BARE names until 2026-08-21, resolved through
+# `kestrel._compat`'s legacy aliases back to `kestrel.render_read` and
+# `kestrel.thumbnails`. Both modules now live in THIS repo — they render
+# this corpus's own pages and had no other caller in the fleet — so the
+# import says where they actually are. The compat aliases for them are
+# retired in the same change; leaving them would have meant kestrel
+# importing an instance's code, which is the dependency the decomposition
+# exists to prevent.
+from theprojection_pipeline.render_read import (  # noqa: E402
+    digest_day, load_entities as _load_watchlist_entities,
+    parse_digest, parse_front, load_flash, load_world_news)
+from theprojection_pipeline.thumbnails import get_thumbnails  # noqa: E402
 
 PLACEHOLDER_SLUG = "sample-placeholder"
 LENS_OF_FILE = {"frontier-ai": "ai", "mental-health": "mental-health",
