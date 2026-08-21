@@ -3787,3 +3787,152 @@ Medicaid-spend figure logged as a evidence data point in the 08-19
 digest at finalize; the HHS grant figure not folded in (confidence too
 low without independent corroboration this pass) — worth a follow-up
 check.
+
+
+---
+
+## 2026-08-21 critic pass — finalized 2026-08-20 (all four lenses; critic run on the three critic-bearing ones)
+
+**The heaviest miss count this log has recorded, and two of the three
+lenses missed on the same structural pattern: an axis the lens claims and
+has no thread for.** Eight confirmed misses across three lenses, all
+folded into the 08-20 digests as `🔍 CRITIC CATCH` items. Two thread
+candidates came directly out of this pass.
+
+### frontier-ai / 2026-08-20
+- **Missed (5, all confirmed, all TLDR AI-led):** Anthropic's
+  production-agent bundle — computer use + browser access + versioned
+  Skills + a reusable Files API in one enterprise surface (claude.com/blog)
+  · Google folding Antigravity into Gemini Enterprise Standard/Plus seats
+  with VS Code GA and VS/JetBrains/Zed in preview (cloud.google.com/blog)
+  · Mistral's Agentic Search — five tool-like actions (search, open,
+  navigate, read, grep), FinanceBench accuracy 26.7% → 86% with token use
+  −23.9% and P90 latency 255s → 154s (mistral.ai/news) · Slack code
+  channels, human-agent build surfaces with GitHub/Anthropic/Vercel
+  integrated (slack.com/blog; headline confirmed, post URL unresolved, so
+  the date rests on benchmark attribution) · Harvey Tenet, a post-trained
+  open-weight legal model built on Kimi K3 (harvey.ai/blog).
+- **Checked and NOT folded in — four lower-confidence items, recorded so
+  the same claims are not re-chased as fresh:** a reported ~$6bn
+  Nvidia-Poolside licensing/acqui-hire (unconfirmed on either company's
+  own channels, one aggregator) · an Anthropic Mac meeting-recorder
+  "Parka" (absent from Anthropic's newsroom and claude.com/blog — may be a
+  benchmark error) · a ChatGPT-Apple Messages integration (openai.com
+  403'd, unverifiable) · The Neuron's "AT&T going half in on open models"
+  lead (headline reachable, article 404, AT&T newsroom 403).
+- **Map effect:** `mistral-ai` gained a timeline entry. The other four have
+  **no thread to land on**, which is the finding — hence the
+  **enterprise agent-product race** candidate, offered 08-20 and carried
+  08-21. `kimi-distillation-fight` took the Harvey/Kimi K3 cross-reference
+  in the digest but no timeline entry: a third party post-training on Kimi
+  K3 is context for that thread, not a development in it.
+- ⚠️ **Unaudited, NOT clean: The Rundown AI.** Every fetch of its homepage,
+  `/archive`, `/articles` and paginated archive returned the same fixed set
+  of 8 articles dated 08-06 to 08-19, confirmed against its own
+  `sitemap.xml` (newest `lastmod` 08-19, "Pacing comes to the AI
+  frontier"). One of four daily benchmarks in this lens was not checked at
+  all. **The AI Daily Brief** was thin — 08-20 episodes were tips/opinion
+  format, not news-lead. A WebSearch summary claiming an 08-21 episode
+  about "Google paying $10M for Spirit Airlines' Slack messages" was
+  discarded as garbled/hallucinated rather than reported. The critic also
+  exhausted its WebSearch session budget mid-run and finished on WebFetch
+  only.
+- **Zero overlap** between our eight items and anything reachable in the
+  benchmarks — no "both covered" line at all. Read as a signal about axis
+  coverage rather than luck.
+
+### global-capital / 2026-08-20
+- **Missed (3, all confirmed):** FT Unhedged's own 08-20 lead — Bessent
+  doubling Treasury buybacks in the 10-20y and 20-30y sectors effective
+  09-09 into the worst long-end selloff in ~20 years, denying yield-curve
+  control, with the 10-year closing back at 4.69% as the announcement
+  rally faded; Evercore ISI's Krishna Guha calling it "a weak form of
+  Operation Twist" that could backfire by signalling funding concern,
+  Jefferies' Thomas Simons saying the timing/wording broke Treasury's
+  communication norms, Moody's flagging a structural shift in Treasury
+  demand · Bloomberg's scoop that **Meta pays Microsoft "hundreds of
+  millions a year"** for Azure-hosted AI, trillions of tokens weekly,
+  against OpenAI supplying ~70% of Microsoft's AI revenue · Bloomberg's
+  harder Anthropic IPO story (raise benchmarked to SpaceX's $75-86.2bn
+  record, Morgan Stanley/Goldman/JPMorgan already working it, public
+  filing as soon as end-August) sitting behind our softer investor-chatter
+  version.
+- **Checked and correctly excluded:** Axios Pro Rata's 08-20 lead
+  ("Stripe's singularity") verified as a re-lead of an 08-19 1:26pm ET
+  scoop · Castelion's $1bn Series C at $13bn (JPMorgan SIG/a16z/Carlyle) —
+  a genuine 08-20 event but defense-tech venture, not AI-buildout capital
+  flow, and run as a secondary.
+- **Map effect:** `ai-circular-financing-risk` gained the Meta/Microsoft
+  entry · `frontier-lab-ipos` gained an 08-20 public-filing block and a
+  ⚠️ correction (it asserted SpaceX was "trading at all-time lows ~15%
+  below issue" while its own addendum two sentences later said SPCX had
+  recovered above its $135 issue price) · one new expectation logged,
+  `anthropic-public-s1-filing` (08-31). The Bessent story has **no thread
+  to land on** — hence the **Treasury long-end stress** candidate.
+- ⚠️ **Gaps.** **Money Stuff genuinely did not publish 08-19 to 08-21** —
+  Levine on vacation, returning 08-24, confirmed by a dated-URL 404 and
+  search results; empty, not unchecked. **FT.com blocks direct fetching**;
+  the Unhedged front page and headline dates came through a
+  text-extraction proxy, bodies stayed paywalled, so the Bessent substance
+  is corroborated from CNBC rather than read in Unhedged's prose.
+  **Bloomberg Technology's homepage** was behind a bot CAPTCHA; findings
+  came from search results and Yahoo Finance mirrors quoting Bloomberg
+  directly. WebSearch session budget exhausted mid-run.
+- **We had → they didn't:** Nebius's upsized $5.0bn convertible with the
+  concurrent $800M debt-for-equity exchange.
+
+### mental-health / 2026-08-20
+- **Missed (1 clean + 1 borderline):** Behavioral Health Business's own
+  08-20 lead — **Radial acquiring the MSO behind Mindful Health
+  Solutions**, forming a 27-clinic interventional-psychiatry network
+  across CA/TX/WA/NY, 100+ clinicians, running accelerated TMS,
+  SAINT/SWIFT, Spravato, IV ketamine, fMRI-EEG-guided PRISM and
+  transcranial focused ultrasound; leadership Owen Muir MD (co-founder/
+  CSO), John Capecelatro (CEO), Tobias Marton MD PhD (CMO), Carlene
+  MacMillan MD (CPO), outgoing Mindful CEO Mark Kehoe to an advisory role;
+  terms undisclosed. ⚠️ The cited "up to 79%" remission rates against
+  5-30% standard care are a marketing claim in a transaction announcement,
+  not a trial result, and the digest says so. · **Borderline, folded in
+  and flagged:** HHS adding the Family-Based Recovery programme and the
+  peer-support Wellness Recovery Action Plan to the Title IV-E Prevention
+  Services Clearinghouse, making both federally reimbursable — underlying
+  event dated **08-19**, so carried as a late catch rather than an 08-20
+  miss.
+- **Checked and correctly excluded under the event-date rule:**
+  UnitedHealthcare's child/family behavioural-coaching expansion to 13M
+  members (Fierce ran it 08-20 4pm; UHG newsroom 08-18) · BHB's "Medicaid
+  psychotherapy spending up 156%" (08-19, already folded in at that day's
+  finalize). **Judged not an MH story:** Cityblock's Homeward Health
+  acquisition + $116M Series E (behavioural health is one line inside a
+  Medicaid/dual-eligible model; the deal is framed around rural/MA
+  expansion).
+- **Map effect:** `mh-clinical-infra-funding` gained an 08-20 timeline
+  block carrying both catches — its first movement since 08-18. No entity
+  adds. No candidate: both catches land cleanly on an existing thread.
+- ⚠️ **Gaps.** **STAT Health Tech is "checked but thin", not clean** — its
+  live category page returned one 08-20 article (EHR summarisation, not
+  MH) and its dated archive was unreachable; a paywalled or unindexed STAT
+  mental-health piece from this window is the one real hole. **BHB and
+  MobiHealthNews both 403'd on direct fetch**; findings came from search
+  snippets and secondary indexing. The Radial deal is corroborated across
+  three independent sources with matching detail and stands;
+  absence-of-evidence on those two sites is weaker than a direct read.
+- **Note on the prompt:** this critic was told going in that our 08-20
+  digest was a single bullet and to assume a miss rather than confirm the
+  quiet day. It was right to. Worth repeating on any lens whose opening
+  pass runs unusually thin.
+
+### world-news / 2026-08-20
+- **No critic by design** (`coverage: na`) — this lens has no benchmark
+  set. Finalized on a tier-2 geopolitics deep check instead, which added
+  the overnight Sumy/five-oblast barrage, an unverified Finland airspace
+  report, the US-Iran MoU lapse and the pivot to sanctions.
+
+### Cross-cutting note — what this pass says about the map, not the sweeps
+Three of the four benchmark publications in global-capital and two of
+four in mental-health are now behind bot walls or paywalls that defeat
+direct fetching, and one of four in frontier-ai was wholly unreachable.
+The critic still worked, via proxies and search snippets, but the
+absence-of-evidence half of every entry above is weaker than it was when
+this log started. Two critics also hit the session WebSearch cap mid-run.
+Recorded as a standing condition rather than a one-day complaint.

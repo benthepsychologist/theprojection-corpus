@@ -12,6 +12,20 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-08-18 — Late catch: $6B more into Shreveport, a third Louisiana campus
+
+- **AWS added $6B to its Shreveport, Louisiana buildout — a third campus
+  at Resilient Technology Park — lifting Amazon's committed Louisiana
+  data-center investment from $12B to $18B.** The announcement carries
+  ~210 direct new jobs (≈709 including indirect) and up to $400M of
+  Amazon-funded local water-infrastructure upgrades. It sits inside the
+  ~$220B FY2026 capex plan this thread already tracks, but is a new,
+  dated, site-specific commitment that was not previously on the thread —
+  caught by this run's cold-rotation sweep three days after the fact, not
+  on the day.
+  ([Amazon newsroom](https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-03 — Amazon crosses $3T market cap
 
 - **The fifth company ever to reach a $3T market cap** (after Apple,

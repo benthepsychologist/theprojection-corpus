@@ -20,6 +20,33 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-08-21 — Correction: the MATCH Act's vehicle stalled five weeks ago, over Iran
+
+- ⚠️ **This thread has been carrying "MATCH Act passed House committee" as
+  if the bill were still moving. It is not.** MATCH was riding as an
+  amendment to the FY2027 NDAA, and on **2026-07-14** the Senate failed
+  cloture on the underlying NDAA **50-46** (60 needed), with Democrats
+  blocking it over the administration's Iran war conduct and
+  Israel-related provisions — nothing to do with the chip language.
+  Majority Leader Thune switched his vote to "no" to preserve a motion to
+  reconsider, so the bill is stalled rather than dead, and had not been
+  revived as of today. The reading this changes: ASML's near-term
+  export-control exposure is currently gated by an unrelated legislative
+  fight, not by chip-policy consensus holding or breaking. Surfaced by an
+  analysis piece today; the vote itself was independently confirmed
+  against wire coverage and the Senate roll call.
+  ([Bits&Chips](https://bits-chips.com/article/iran-war-deadlock-gave-asml-reprieve-from-us-china-crackdown/) ·
+  [Al Jazeera](https://www.aljazeera.com/news/2026/7/14/senate-democrats-block-defence-bill-over-iran-war-israel-provisions) ·
+  [The Hill](https://thehill.com/policy/defense/5967878-senate-democrats-block-ndaa/))
+  ⟨daily 2026-08-21⟩
+- ⚠️ **Not logged, deliberately:** several outlets ran 08-20/21 pieces
+  headlined on the US "preparing to force the Netherlands to ban ASML
+  from selling to China". The originals 403'd on fetch, and near-identical
+  framing exists as far back as 2024 plus a close SCMP match from
+  2026-05-13. Unverified as a new policy action; recorded here as a
+  checked-and-rejected item rather than left invisible.
+  ⟨daily 2026-08-21⟩
+
 ## ← Backstory
 
 <!-- /crawl appends below; finding pointer goes in the heading line -->

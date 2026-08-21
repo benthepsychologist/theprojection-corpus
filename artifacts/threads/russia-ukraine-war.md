@@ -18,6 +18,33 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-20 — A second, smaller barrage the next night; and a third NATO state reports an incursion
+
+- **Russia launched 135 drones at Ukraine overnight into 2026-08-21 (Kyiv
+  time); 107 were downed or suppressed and 27 struck 16 locations,
+  killing 6 and injuring 77 across five oblasts** — Donetsk 2 killed/27
+  injured, Kharkiv 2/9, Zaporizhzhia 1/10, Kherson 1/23, Sumy 0/8. Sumy's
+  governor said a two-storey residential building in the Kovpakivskyi
+  district was "deliberately targeted", injuring six residents including
+  a 16-year-old girl; Konotop was hit earlier the same evening by three
+  jet-powered strike drones. This is a distinct, materially smaller event
+  than the previous night's Kyiv barrage logged above — worth holding
+  apart rather than reading as one continuing attack.
+  ([Kyiv Independent](https://kyivindependent.com/deliberately-targeted-russia-hits-residential-building-in-sumy-as-attacks-across-ukraine-kill-at-least-6-injure-77/))
+  ⟨daily 2026-08-20⟩
+- ⚠️ **Finland's Defence Ministry said a Russian aircraft is suspected of
+  violating Finnish airspace over the western Gulf of Finland — a third
+  NATO state reporting an incursion inside a week, after Poland (07-30)
+  and Romania (08-20).** Defence Minister Antti Häkkänen confirmed an
+  investigation; aircraft type and duration were not released, and the
+  origin is not yet confirmed. It follows a Russian warning the same day
+  over Finnish arms shipments to Ukraine. **Single-source and
+  unconfirmed** — carried here because the pattern it would belong to is
+  the one this thread exists to watch, not because it is established. No
+  Article 4 consultation has been confirmed for this incident.
+  ([Kyiv Independent](https://kyivindependent.com/russian-aircraft-suspected-of-violating-finnish-airspace-officials-say/))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-20 — Large missile-and-drone barrage on Kyiv; Russian drone crashes in Romanian (NATO) airspace
 
 - **Russia hit Kyiv city and the surrounding region with a large overnight missile-and-drone barrage into 2026-08-20, killing at least 12-13 in Kyiv alone** (national 24-hour toll reported at 23 dead / 132 injured), damaging a children's hospital and a nine-storey residential building; Solomianskyi district was hardest hit with 7 dead there. ([CNN](https://www.cnn.com/2026/08/20/europe/russia-ukraine-kyiv-attack-intl-hnk), [Euronews](https://www.euronews.com/my-europe/2026/08/20/nine-killed-33-injured-in-russian-strikes-on-kyiv-and-surrounding-region), [Al Jazeera](https://www.aljazeera.com/news/2026/8/20/russian-strike-kills-3-in-ukraine-as-zelenskyy-faces-pressure-at-home)) ⟨daily 2026-08-20⟩

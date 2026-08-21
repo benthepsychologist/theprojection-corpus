@@ -21,6 +21,26 @@ group's pending August 2026 interim results (an H1 AI-contribution
 disclosure would be the next real data point), and whether the claims-
 automation numbers keep climbing or plateau.
 
+## 2026-08-20 — The interim report refines the automation percentages, and adds two bigger numbers
+
+- **Ping An's official 1H 2026 interim report restates the automation
+  figures this thread is built on, slightly down on both: 59% of life
+  claims settled through "quick claim" (against ~60% on file) and 94% of
+  auto policies sold through the dealer channel intelligently issued in
+  under a minute on average (against ~93%).** The movement is noise; the
+  point is that these are now company-filed rather than inferred.
+  ([Ping An 1H 2026 results](http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html))
+  ⟨daily 2026-08-20⟩
+- **Two figures are genuinely new and larger than anything this thread
+  had: smart fraud detection avoided RMB 7.11bn in claims payouts, up
+  10.4% YoY, and AI service agents handled ~939 million interactions —
+  81% of all customer-service volume — in H1.** An 81% share moves this
+  from "AI assists the service desk" to "the service desk is AI, with a
+  human exception path", which is the scale at which the NFRA framework's
+  AI-decision liability question stops being theoretical.
+  ([Ping An 1H 2026 results](http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-20 — Group-level H1 results land, with an AI number of a different shape
 
 - **Ping An Insurance (Group) Company of China (HKEX:2318/SSE:601318, the parent) reported H1 2026 on its confirmed 08-20 date: revenue RMB 615.4bn (+12.6% YoY), net profit RMB 92.6bn (+36.1% YoY), interim dividend RMB 0.98/share.** No group-level profit-share AI figure comparable to the subsidiary's 4.6%, but real activity-volume metrics: average daily token consumption exceeded 120bn in June 2026 (up from 30bn in December 2025), AI service reps handled ~939mn interactions (81% of total customer-service volume), AI-assisted sales reached RMB 57,313mn in H1, fraud-detection AI saved RMB 7.11bn in claims (+10.4% YoY), and 88% of business scenarios are now AI-enabled. ([PR Newswire](http://www.prnewswire.com/news-releases/ping-an-reports-1h-2026-results-302856353.html), [Manila Times](https://www.manilatimes.net/2026/08/20/tmt-newswire/pr-newswire/ping-an-reports-1h-2026-results/2409194)) ⟨daily 2026-08-20⟩

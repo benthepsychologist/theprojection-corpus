@@ -22,6 +22,21 @@ figure; does growing Microsoft compute-channel dependence complicate the
 "sovereign alternative" framing. Cross-refs `asml` (the ASML 11%-stake side
 of Mistral's cap table lives there, not here).
 
+## 2026-08-20 — Critic catch: Agentic Search triples document-QA accuracy while cutting tokens
+
+- **Mistral shipped Agentic Search, a retrieval layer that gives a model
+  five tool-like actions — search, open, navigate, read, grep — so it
+  works through a document set iteratively instead of retrieving once and
+  answering.** The benchmark numbers are the story: on FinanceBench (368
+  SEC filings, 150 questions) Mistral Medium 3.5's accuracy went from
+  26.7% to 86%, roughly a tripling, while token usage fell 23.9% and P90
+  latency fell from 255s to 154s. Better *and* cheaper *and* faster is
+  rare enough to be worth flagging as a capability result rather than a
+  feature announcement — the usual shape is a quality gain bought with
+  tokens.
+  ([Mistral](https://mistral.ai/news/agentic-search))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-04 — Opened + crawled
 
 - **Thread opened** (ben-steer, crawl) — filling a confirmed coverage gap:

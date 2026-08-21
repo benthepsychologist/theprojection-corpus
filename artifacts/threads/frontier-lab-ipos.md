@@ -12,6 +12,43 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-21 — Citigroup joins the bank slate; the $2T number gets a revenue forecast under it
+
+- **Anthropic added Citigroup to its slate of lead IPO underwriters**, per
+  Bloomberg-sourced reporting Thursday evening, and its pre-IPO credit
+  line is reported to be growing as banks angle for underwriting roles.
+  ([Yahoo Finance / Bloomberg](https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html))
+  ⟨daily 2026-08-21⟩
+- **The ~$2T valuation target is now reported to rest on a $190-200bn
+  2028 revenue forecast** — the first time this thread has had a number
+  underneath the valuation rather than beside it. That is the figure to
+  hold onto: it converts an unfalsifiable valuation into a testable
+  claim about revenue two years out, and it is the one an S-1 will have
+  to either support or quietly drop.
+  ([AOL / Bloomberg](https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html))
+  ⟨daily 2026-08-21⟩
+- ⚠️ **Correction to this thread's own SpaceX figure.** The watch text and
+  prior entries carry SpaceX as "trading ~15% below issue at all-time
+  lows". That is no longer true: shares recovered above the $135 IPO price
+  by 2026-08-10 and traded around $145 by mid-August, though a ~1bn-share
+  unlock hit on 08-19/20. The live test this thread is built on has been
+  going better than the thread says.
+  ⟨daily 2026-08-21⟩
+
+## 2026-08-20 — Anthropic moves from a confidential draft to an imminent public filing
+
+- **Anthropic is preparing to file its IPO paperwork publicly "as early
+  as the end of August"** — a status change from the confidential S-1 it
+  filed on 2026-06-01, reported by Bloomberg at ~15:20 ET and picked up
+  across dozens of outlets overnight. The company is targeting a raise
+  that matches or beats SpaceX's record $75-86.2bn, against the ~$2T
+  valuation target this map first logged as investor chatter yesterday.
+  The distinction that matters: a confidential draft is a company keeping
+  options open; a public filing starts a clock and puts the financials in
+  front of everyone at once.
+  ([Yahoo Finance / Bloomberg](https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-20 — Anthropic targets matching or beating SpaceX's record IPO raise
 
 - **Anthropic expects its IPO to match or beat SpaceX's record $75B raise, with a public S-1 filing possible before month's end.** For this thread's "who lists first, at what haircut to the private print" question, this is a new benchmark measured directly against the thread's own live comparator — the dollar amount SpaceX actually raised (06-12, $1.77T valuation), not just a valuation multiple. Single-sourced to Bloomberg ("people familiar with the matter"); full detail and the sourcing caveat on `anthropic-ipo-timing`.

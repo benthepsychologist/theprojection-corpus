@@ -1655,3 +1655,28 @@ The bizdev digest operation is **dormant — 23 days dark**:
 **Implication:** there is no running daily operation to preserve or
 coordinate with — kestrel launches fresh, which is exactly what
 zero-dependency wants anyway.
+
+<!-- >>> kestrel: base/status#keeping-it-honest @2026-08-21.3 -->
+<!-- ── How to keep this file honest ──────────────────────────────────────
+Rules the engine seeds; the content above is entirely this repo's.
+
+1. REWRITE THE TOP NOTE FROM SCRATCH. Never patch a line inside an
+   existing note. Read the git log since this file's own "As of" date,
+   then write the note fresh. A patched note accumulates half-true
+   sentences that each looked fine as an edit.
+
+2. ASSERT NOTHING A COMMAND COMPUTES. Counts, versions, branch state,
+   "N unpushed" — run the command now and paste the answer, or do not
+   claim it. A number typed from memory is wrong within a day, and it is
+   the kind of wrong that gets believed.
+
+3. UPDATE THE "As of" DATE WHENEVER YOU TOUCH THE FILE. `kestrel fleet
+   status` compares that date to the newest commit and reports the gap.
+   A stale date is not cosmetic — it is the signal that everything below
+   it is also stale, and it is the only automated check this file has.
+
+4. DELETING IS PART OF WRITING IT. An entry that is no longer true is
+   worse than a missing one, because it reads as current. This file is a
+   snapshot, not a log; the log is `git log`.
+─────────────────────────────────────────────────────────────────────── -->
+<!-- <<< kestrel: base/status#keeping-it-honest -->

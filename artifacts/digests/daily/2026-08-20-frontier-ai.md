@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-20
-status: building
+status: final
 window_start: 2026-08-20T05:00:00-04:00
-as_of: 2026-08-20T19:00:00-04:00
-coverage: pending
+as_of: 2026-08-21T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-20
@@ -14,7 +14,10 @@ tier-2 capex/compute cluster deep check (7 threads, all confirmed
 current, nothing new), a tier-2 chips/China cluster deep check, today's
 collector run (sec_edgar, semantic_scholar, gdelt, rss, google_news_rss),
 and an afternoon extension pass over the post-14:30 UTC buffer
-(rss, github, gdelt).*
+(rss, github, gdelt). Finalized 2026-08-21: the full 05:00 ET 08-20 →
+05:00 ET 08-21 window re-collected, the coverage critic run against
+`sources/benchmarks.yaml`, and its catches folded in below — five real
+product misses, all on the same axis.*
 
 ## Today's throughline
 
@@ -32,6 +35,17 @@ shape different from its own subsidiary's, Meta and Liquid AI both
 shipped real product, and Grok had a rough day on both the security and
 reliability axes — an unpatched prompt-injection vulnerability disclosed
 by outside researchers, and a same-day "gibberish" glitch.
+
+**⚠️ The finalize pass changed this day's shape.** The coverage critic
+found five confirmed misses, and they are not scattered — every one is
+an **enterprise agent-product** release: Anthropic bundling computer use,
+Skills and Files into one production-agent surface; Google folding
+Antigravity into Gemini Enterprise seats; Mistral's Agentic Search
+tripling document-QA accuracy while spending fewer tokens; Slack turning
+channels into human-agent build surfaces; Harvey post-training an
+open-weight legal model on Kimi K3. This was not a quiet product day.
+This map has no thread pulling on the enterprise-agent axis, so the
+day's densest story went uncollected — see Thread candidates.
 
 ## Product & access
 
@@ -57,6 +71,53 @@ by outside researchers, and a same-day "gibberish" glitch.
   LFM 2.5 release that got it added to the watchlist 2026-06-27).
   ([Hugging Face / Liquid AI](https://huggingface.co/blog/LiquidAI/lfm25-dspark))
   <!-- k: e=liquid-ai axis=product-and-access -->
+
+- **Anthropic bundled computer use, browser access, versioned Skills and
+  a reusable Files API into a single production-agent surface for
+  enterprises** — the pieces existed separately; what shipped is the
+  packaging, which is what turns a demo capability into something a
+  company can build a workflow on. Caught by the coverage critic, not by
+  the day's own sweep.
+  ([Anthropic](https://claude.com/blog))
+  <!-- k: e=anthropic axis=product-and-access -->
+
+- **Google folded Antigravity, its coding-agent product, into eligible
+  Gemini Enterprise Standard and Plus subscriptions**, with IDE
+  extensions for VS Code (GA), Visual Studio, JetBrains and Zed (all
+  preview), plus unified billing, spend and quota controls, and audit
+  logging. The distribution move matters more than the product: it puts
+  a coding agent inside seats enterprises already pay for, which is the
+  same play Anthropic and OpenAI are running from the other direction.
+  ([Google Cloud](https://cloud.google.com/blog/products/ai-machine-learning/expanding-google-antigravity-for-enterprise-customers))
+  <!-- k: e=google-deepmind axis=product-and-access -->
+
+- **Mistral shipped Agentic Search, giving a model five tool-like actions
+  — search, open, navigate, read, grep — so it works through documents
+  iteratively rather than retrieving once.** On FinanceBench (368 SEC
+  filings, 150 questions) Mistral Medium 3.5's accuracy went from 26.7%
+  to 86% while token use fell 23.9% and P90 latency fell from 255s to
+  154s. Better, cheaper and faster together is the unusual part — the
+  normal shape of a retrieval gain is quality bought with tokens.
+  ([Mistral](https://mistral.ai/news/agentic-search))
+  <!-- k: t=mistral-ai e=mistral-ai axis=product-and-access -->
+
+- **Slack launched code channels, where teams plan, write and review
+  software alongside AI agents inside Slack itself**, with GitHub,
+  Anthropic and Vercel integrated as named partners. ⚠️ The Slack blog
+  headline is confirmed but the specific post URL did not resolve, so
+  the exact publication date rests on the benchmark's attribution rather
+  than a primary read.
+  ([Slack](https://slack.com/blog))
+  <!-- k: axis=product-and-access -->
+
+- **Harvey released "Harvey Tenet", its first post-trained open-weight
+  legal model, specialised for diligence and document review — built, per
+  the benchmark that carried it, on Kimi K3.** Worth holding next to the
+  China file rather than filing purely as legal-tech: an American
+  legal-AI vendor post-training on Kimi K3 in the same week Washington is
+  accusing Moonshot of distilling a US frontier model to build it.
+  ([Harvey](https://harvey.ai/blog))
+  <!-- k: t=kimi-distillation-fight axis=product-and-access -->
 
 ## China
 
@@ -126,13 +187,28 @@ by outside researchers, and a same-day "gibberish" glitch.
 
 **One expectation resolved: `ping-an-group-h1-2026-interim-results`
 (due today) — HIT.** See item above. No other lens-relevant due dates in
-this window. Nearest pending: `apple-cxmt-senate-deadline` (08-21).
+this window. Nearest pending: `apple-cxmt-senate-deadline` (08-21) —
+⚠️ which went **passed-silent** on the 08-21 run; see that digest.
 
 ## 🔄 Map changes
 
-None this pass — no entity or thread adds proposed.
+**At finalize (2026-08-21):** `mistral-ai` gained a timeline entry for
+Agentic Search. `kimi-distillation-fight` picked up the Harvey Tenet
+cross-reference in this digest but no timeline entry — a third party
+post-training on Kimi K3 is context for that thread, not a development
+in it. No entity adds; four of the five critic catches have no thread to
+land on at all, which is itself the finding.
 
 ## 🧵 Thread candidates
+
+- **candidate: The enterprise agent-product race** — Anthropic, Google,
+  Mistral, Slack and Harvey all shipped agent-infrastructure product on
+  a single day and this map caught none of it, because there is no node
+  for it. The map currently tracks who *funds* and who *builds compute
+  for* the labs in great detail, and what they actually *ship to
+  enterprises* almost not at all. This is the widest structural gap the
+  coverage critic has surfaced. — track it? (coverage-critic, 5 confirmed
+  misses in one day)
 
 **One carried, not re-offered:** a possible "Nvidia remote-access
 export-control loophole / RASA" thread (surfaced 08-19, logged into
@@ -150,3 +226,39 @@ activity-volume AI disclosure; the afternoon added Alibaba's 75%
 profit drop on a 75% AI-capex jump, Meta and Liquid AI product
 ships, and Grok's rough day on security (an unpatched prompt-injection
 flaw) and reliability (a gibberish-response glitch).
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** five confirmed, all TLDR AI-led, all on
+the same enterprise-agent-product axis — Anthropic's production-agent
+bundle (computer use + Skills + Files API), Google Antigravity expanding
+into Gemini Enterprise, Mistral's Agentic Search, Slack code channels,
+and Harvey Tenet. All five are folded into Product & access above. Four
+lower-confidence items were checked and **not** folded in, deliberately:
+a reported ~$6bn Nvidia-Poolside licensing/acqui-hire deal (unconfirmed
+on either company's own channels, single aggregator), an Anthropic
+Mac meeting-recorder called "Parka" (not on Anthropic's newsroom or
+claude.com/blog — may be a benchmark error), a ChatGPT-Apple Messages
+integration (openai.com returned 403, unverifiable), and The Neuron's
+"AT&T going half in on open models" lead (headline reachable, article
+404, AT&T newsroom 403).
+
+**Both covered:** none — zero overlap between our eight items and
+anything reachable in the benchmarks. That is unusual enough to read as
+a signal about axis coverage rather than about luck.
+
+**We had → they didn't:** all eight — Meta Pocket, Liquid AI
+LFM2.5-DSpark, Alibaba Q2, Ping An H1, the Adversa/Grok vulnerability,
+the Pew AI-authorship study, the $2T Anthropic IPO chatter, the Nvidia
+RASA story. Stated as "not found where we could look" rather than a
+clean sweep, per the gap below.
+
+⚠️ **This audit is incomplete and should not be read as a clean bill.**
+**The Rundown AI's 08-20 and 08-21 editions were unreachable** — every
+fetch of its homepage, archive and paginated archive returned the same
+fixed set of 8 articles dated 08-06 to 08-19, confirmed against its own
+sitemap (newest `lastmod` 08-19). One of four daily benchmarks in this
+lens was therefore **not audited at all**. The AI Daily Brief was thin
+(08-20 episodes were tips/opinion format, not news-lead). The critic
+also exhausted its WebSearch session budget mid-run and finished on
+WebFetch only. Full detail: `coverage-log.md`, 2026-08-21 entry.

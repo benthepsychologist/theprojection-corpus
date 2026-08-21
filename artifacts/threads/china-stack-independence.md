@@ -13,6 +13,21 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-20 — Hua Hong joins the Hang Seng flagship index; the AI labs did not
+
+- **Hang Seng Indexes' semi-annual review added Hua Hong Grace
+  Semiconductor and Weichai Power to the 93-member flagship index,
+  effective 2026-09-07, lifting IT-sector weighting from 15.86% to
+  17.11%.** Hua Hong is one of the three fabs this map's
+  `china-duv-lithography` thread names as an expected first recipient of
+  China's domestic immersion DUV scanners — so the benchmark is now
+  carrying the domestic-tool buildout directly. Notably, MiniMax and Z.AI,
+  floated the same morning as likely additions, did **not** make this
+  cycle; both remain in the narrower Hang Seng Tech Index they joined in
+  June. Announced ~22:59 ET.
+  ([SCMP](https://www.scmp.com/business/china-business/article/3364752/hong-kongs-stock-benchmark-may-see-more-tech-additions-review-result-looms))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-20 — Alibaba's earnings put a hard number on the domestic AI-capex side of the thread
 
 - **Alibaba's fiscal Q2 net profit fell 75% YoY to RMB 10.5bn ($1.6bn,

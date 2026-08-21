@@ -11,6 +11,23 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-21 — Nvidia buys into the land-and-power layer: a minority stake in Cloverleaf Infrastructure
+
+- **Nvidia took a minority equity stake in Cloverleaf Infrastructure, a
+  2024-founded developer that assembles land, power and shell for
+  data-center sites** — reported by outside coverage as several hundred
+  million dollars, a figure the two companies' own joint release declines
+  to give. Cloverleaf has delivered gigawatt-scale projects in Wisconsin
+  and Georgia and claims a 10-15 GW pipeline; Nvidia VP Nico Caprez's
+  quoted framing — that "land, power and shell are the foundation" of AI
+  factories — makes the intent explicit. It extends the customer-base
+  equity pattern this thread already tracks (Nebius 9.3%, Intel $5B,
+  Naver $1B, Groq ~$20B licensing) one layer further upstream, from the
+  buyers of Nvidia's chips to the people who secure the sites those chips
+  will sit in.
+  ([Cloverleaf/Nvidia joint release](https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-19 — The mark-only-growth pattern this thread found in NVIDIA's 13F reproduces in SoftBank's
 
 - **SoftBank's own 13F shows the same structure this thread logged in

@@ -22,6 +22,38 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-21 — Brent holds ~$95 and VLCC Gulf rates clear $520k/day; transits fall again
+
+- **Brent was $95.29/bbl at 08:00 ET, down 0.11% on the day but +40.5%
+  year-over-year against $67.80** — the level, not the daily move, is the
+  fact worth holding: a fifth month of a closed Hormuz has repriced crude
+  by roughly two fifths without needing a fresh shock to do it. A second
+  tracker read $93.86 at a different snapshot time; treat the spread as
+  cross-source timing noise, not a divergence.
+  ([Fortune](https://fortune.com/article/price-of-oil-08-21-2026/))
+  ⟨daily 2026-08-21⟩
+- **Middle East Gulf-to-China VLCC rates (TD3C) were quoted above
+  $520,000/day, up from ~$470,000 earlier in the month, while Gulf
+  transits fell to 73 in the week to 08-16 from 91 the week before.**
+  Rates rising as volumes fall is the shape of owner avoidance rather
+  than demand — the shipping leg repricing faster than the barrel.
+  ([Lloyd's List Intelligence](https://www.lloydslistintelligence.com/resources/blog/strait-of-hormuz-brief-19-august-2026))
+  ⟨daily 2026-08-21⟩
+
+## 2026-08-20 — A hijacked shadow-fleet tanker adds a piracy premium on top of the war premium
+
+- **The sanctioned Iranian "ghost fleet" product tanker *Sibu 1* (ex-
+  *Seamull*) was hijacked roughly 136nm east of Al Mukalla, Yemen and
+  diverted toward Somalia** — reported to UKMTO on 08-20 after entering
+  the high-risk area at 17:18 UTC on 08-19. It is the sixth vessel
+  currently held and the fifteenth such incident this year, with Somali
+  piracy at a ten-year high. The underwriting significance is that this is
+  a *second, independent* risk layer stacking onto an already-elevated
+  war-risk market, and it falls hardest on exactly the shadow-fleet
+  tonnage sanctions pushed into these waters.
+  ([gCaptain](https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-18 — Qatar makes the Iran–Oman bilateral the gate on everything else
 
 - **Qatar's foreign ministry said the Iran–Oman bilateral Hormuz

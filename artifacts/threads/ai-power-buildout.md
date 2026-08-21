@@ -10,6 +10,21 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-21 — Nvidia takes an equity position in a data-center power/land developer
+
+- **Nvidia's minority investment in Cloverleaf Infrastructure puts a chip
+  vendor directly into the power-and-siting bottleneck this thread
+  tracks.** Cloverleaf's entire business is securing land and power for
+  data-center campuses — gigawatt-scale projects already delivered in
+  Wisconsin and Georgia, a claimed 10-15 GW pipeline — and Nvidia is now
+  an owner of it rather than a customer downstream of it. The financial
+  detail is thin by design: outside coverage puts the stake in the
+  several-hundred-million range, the joint release gives no figure.
+  Tracked as a financing move on `nvidia-vendor-financing`; noted here
+  because the constraint it is buying into is power, not silicon.
+  ([Cloverleaf/Nvidia joint release](https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-17 — FERC's 60-day large-load interconnection deadline landed; outcome unconfirmed
 
 - ⚠️ **FERC's June 18 show-cause orders to six grid operators (PJM, MISO, SPP, CAISO, ISO-NE, NYISO) — declaring large-load (>50MW) interconnection tariffs "presumptively unjust" — carried a 60-day deadline to justify existing rules or file reform proposals, landing 2026-08-17.** Multiple law-firm trackers confirm the deadline; what any operator actually filed by/at it is UNCONFIRMED — needs a follow-up check against FERC's own docket. ([FERC](https://www.ferc.gov/news-events/news/ferc-launches-aggressive-targeted-action-speed-large-load-integration), [Akin Gump](https://www.akingump.com/en/insights/blogs/speaking-energy/ferc-issues-landmark-show-cause-orders-on-large-load-interconnection)) ⟨daily 2026-08-18⟩

@@ -645,7 +645,23 @@ expectations:
     what_confirms: "Apple publicly rejects CXMT/YMTC sourcing, or proceeds with Chinese-supplier sourcing (China-market devices) despite Senate pressure — either resolves the claim"
     logged: 2026-08-09
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-21
+    evidence: |
+      The deadline arrived and nothing was said on either side. The letter
+      behind it went out 2026-07-29 from seven senators — Jim Banks (R-IN)
+      and Chuck Schumer leading, with Andy Kim, Jeanne Shaheen, Mike Crapo,
+      Pete Ricketts and James Risch — demanding a written commitment not to
+      source memory from CXMT or YMTC, both on the Pentagon's list of
+      Chinese military-linked companies. Checked today: Apple has issued no
+      public response; Banks's own press-release page carries nothing on
+      Apple since 08-17 and Schumer's most recent Apple/CXMT item is still
+      the original 07-30 release. Outlets covering the deadline today
+      themselves note it "remains unclear whether Apple met or complied."
+      ⚠️ Flipped at ~10:00 ET ON the due date itself, so the day is still
+      running — the 3-day grace re-sweep is what will catch a late response,
+      and this should be read as "nothing by mid-morning of the deadline"
+      rather than "the day closed silent."
 
   - id: decart-acquisition-close
     claim: "Israeli real-time-video AI startup Decart is acquired for ~$6B — reportedly by Anthropic as of 08-13 (its largest-ever acquisition, a pre-IPO infrastructure move), superseding the original 08-09 report naming SpaceX"
@@ -1102,6 +1118,20 @@ expectations:
       against a near-term signing. No new target date announced by
       either government — this is the loud passed-silent outcome, not a
       further slip.
+
+      GRACE RE-SWEEP 2026-08-21: still silent, and the reason is now
+      clearer than "no signature". The broader US-Iran Memorandum of
+      Understanding signed 2026-06-18, which gave 60 days to negotiate,
+      EXPIRED 08-17/18 with no deal — Iran's foreign ministry says the US
+      "began violating the memorandum shortly after signing." A narrower
+      Iran-Oman agreement-in-principle on the route mechanics themselves
+      does exist (Baghaei, 08-17/18: a "route map for transit" agreed, a
+      joint declaration being prepared) but carries no signing date. The
+      US has meanwhile pivoted to an explicit economic-pressure track —
+      Bessent's "one-two punch", measures due 08-24 — offered as an
+      alternative to a kinetic restart. This claim as written conflates
+      two tracks that have now visibly diverged; see the 08-21 digest's
+      map-changes section on splitting it.
     # 2026-08-05 ⟨daily⟩: due date is a rough 1-week estimate, not sourced
     # to a stated deadline -- reporting says "close," not "by X date."
     # correct once a firmer timeline surfaces. If signed, this would very
@@ -1517,4 +1547,58 @@ expectations:
     # than one displacing the other, which is what makes the round
     # actually convening a real test rather than a formality. The seventh
     # round ended 08-06 with little resolved.
+    status: pending
+
+  - id: iran-us-sanctions-package-aug24
+    claim: "The US Treasury announces the Iran sanctions package Bessent has publicly promised — what he calls history's 'greatest coordinated economic isolation' of a country, paired with the existing blockade"
+    due: 2026-08-24
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: []
+    source: https://www.aljazeera.com/news/2026/8/20/us-treasury-secretary-says-new-economic-measures-will-collapse-iran
+    confidence: reported
+    what_confirms: "an actual Treasury/OFAC announcement on or about 08-24, or the date passing with nothing — Bessent named the day publicly, which makes it falsifiable rather than a general threat"
+    logged: 2026-08-21
+    logged_by: curate-add
+    # Logged because it is the concrete, dated waypoint on a track that has
+    # otherwise been rhetoric. It also matters as a fork: Bessent framed the
+    # package explicitly as a SUBSTITUTE for a large-scale kinetic restart,
+    # so the package landing hard is, on his own framing, the less violent
+    # branch — and the package NOT landing is the signal worth watching most.
+    status: pending
+
+  - id: anthropic-public-s1-filing
+    claim: "Anthropic files its IPO paperwork PUBLICLY on SEC EDGAR, converting the confidential S-1 draft it filed 2026-06-01 into a public filing"
+    due: 2026-08-31
+    due_precision: month
+    thread: frontier-lab-ipos
+    entities: [anthropic]
+    source: https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html
+    confidence: reported
+    what_confirms: "an S-1 visible on EDGAR under Anthropic's CIK — not further 'preparing to file' reporting, which this map has now logged twice"
+    logged: 2026-08-21
+    logged_by: curate-add
+    # Bloomberg's 08-20 wording was "as early as the end of August", so
+    # 08-31 is the end of a reported range rather than a company-stated
+    # date — a miss here is weak evidence of a slip, and the entry should
+    # be read that way. It earns a ledger slot because a public filing puts
+    # the ~$190-200bn 2028 revenue forecast now reported to underpin the
+    # ~$2T valuation into a document with legal consequences attached.
+    status: pending
+
+  - id: broadcom-q3-fy2026-earnings
+    claim: "Broadcom reports fiscal Q3 2026, updating the custom-ASIC co-design book this map tracks across five named majors (Google, Meta, OpenAI, Apple, ByteDance)"
+    due: 2026-09-02
+    due_precision: day
+    thread: custom-asic-tolls
+    entities: []
+    source: https://investors.broadcom.com/
+    confidence: reported
+    what_confirms: "the print itself, and specifically whether AI/custom-silicon revenue and any new named co-design customer appear in it"
+    logged: 2026-08-21
+    logged_by: curate-add
+    # Logged from this run's cold-rotation sweep, which found the thread
+    # quiet since 07-31 and the next real test still two weeks out. The
+    # ledger entry is what stops the thread being swept blind in the
+    # meantime.
     status: pending

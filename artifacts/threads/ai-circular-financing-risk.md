@@ -13,6 +13,36 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
+## 2026-08-21 — OpenAI's revenue growth reported to retake the lead from Anthropic
+
+- **OpenAI's revenue is reported up 35% this quarter with enterprise
+  revenue up more than 50%, and Ramp payment-card data puts OpenAI's API
+  spend growth at 82% quarter-on-quarter in Q3 against Anthropic's 76%** —
+  a reversal after Anthropic overtook OpenAI on quarterly revenue for the
+  first time ($11.6bn vs $6.7bn) ahead of the GPT-5.6 Sol launch. This is
+  revenue-trajectory context for the ~$14bn 2026 loss this thread tracks,
+  not new information about the financing loops themselves: the loops are
+  only as safe as the revenue line under them, and that line just moved.
+  Single-source, and Ramp card data is a proxy for spend, not a filed
+  figure.
+  ([The Decoder](https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/))
+  ⟨daily 2026-08-21⟩
+
+## 2026-08-20 — Critic catch: Meta is quietly one of Microsoft's largest AI customers
+
+- **Meta pays Microsoft "hundreds of millions of dollars a year" to reach
+  AI models through Azure, consuming trillions of tokens weekly** — a
+  Bloomberg scoop sourced to a person familiar with the arrangement, with
+  both companies declining comment. The reason it belongs on this thread
+  rather than in a vendor round-up: it is another leg of the same
+  cross-payment web, and it lands against real concentration — OpenAI
+  supplied roughly 70% of Microsoft's AI revenue in its most recent fiscal
+  year, with ByteDance otherwise the largest Foundry spender. A frontier
+  lab renting inference from a rival's cloud, at that size, is the loop
+  running in a direction this thread had not yet recorded.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-20/meta-has-quietly-become-one-of-microsoft-s-largest-ai-customers))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-17 — The loop gets a filed number, and a converted competitor
 
 - **The Ohio guarantee is now quantified at $105B and structured so that

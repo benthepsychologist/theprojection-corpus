@@ -113,8 +113,17 @@ actors:
       + Pecos TX ~2GW on Chevron gas; Maia 200 serves both OpenAI and MAI,
       split undisclosed.
   amazon-aws:
-    asof: 2026-08-16
+    asof: 2026-08-21
     doing: >
+      New 08-21 (event dated 08-18, caught late): $6bn added to the Shreveport,
+      Louisiana buildout — a third campus at Resilient Technology Park, lifting
+      Amazon's committed Louisiana data-center investment from $12bn to $18bn,
+      with ~210 direct new jobs (≈709 including indirect) and up to $400M of
+      Amazon-funded local water-infrastructure upgrades. Inside the ~$220bn
+      FY2026 capex plan already tracked, but a new dated site-specific
+      commitment that had not reached this map — surfaced by the cold-rotation
+      sweep three days after the fact, not on the day.
+
       New 08-16: still quiet — no Amazon-specific development 08-14 through
       08-16. The one adjacent mention is Texas Governor Abbott's office
       citing AWS's Lusby, MD withdrawal (already logged 08-05) as the
@@ -155,8 +164,24 @@ actors:
       off" rule for 50MW+ loads starting June 2027.
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-18
+    asof: 2026-08-21
     doing: >
+      New 08-21: the IPO stopped being a valuation rumour and became a
+      schedule. Bloomberg reported 08-20 that Anthropic is preparing to file
+      PUBLICLY as soon as end-August — a status change from the confidential
+      S-1 of 06-01 — benchmarking its raise against SpaceX's record $75-86.2bn
+      and adding Citigroup to an underwriter slate already holding Morgan
+      Stanley, Goldman Sachs and JPMorgan; its pre-IPO credit line is reported
+      to be growing as banks angle for roles. The ~$2T valuation target now
+      carries a denominator: a reported $190-200bn 2028 revenue forecast. That
+      is the number to hold, because it converts an unfalsifiable valuation
+      into a testable claim — and a public filing puts it in a document with
+      legal consequences attached. Counter-current the same week: OpenAI's Q3
+      API spend growth is reported to have retaken the lead (82% QoQ vs
+      Anthropic's 76%, Ramp card data), after Anthropic had overtaken it on
+      quarterly revenue for the first time. Logged as
+      `anthropic-public-s1-filing`, due 08-31.
+
 
       New 08-18 (event dated 08-17): the run-rate is the number that
       matters now. Anthropic's annualized revenue run-rate topped $65B in
@@ -263,8 +288,18 @@ actors:
       Claude Code's autonomous "auto mode" the default for Pro/Max/Team plans
       (effective 08-14).
   openai:
-    asof: 2026-08-18
+    asof: 2026-08-21
     doing: >
+      New 08-21: a revenue counter-move, single-sourced. Revenue is reported up
+      35% this quarter with enterprise revenue up more than 50%, and Ramp card
+      data puts OpenAI's API spend growth at 82% quarter-on-quarter in Q3
+      against Anthropic's 76% — a reversal after Anthropic overtook it on
+      quarterly revenue for the first time ($11.6bn vs $6.7bn) ahead of the
+      GPT-5.6 Sol launch. Treat as a spend proxy, not a filed figure. It
+      matters to this map mainly as the denominator under the ~$14bn 2026 loss
+      and the circular-financing loops: those loops are only ever as safe as
+      the revenue line beneath them.
+
 
       New 08-18 (afternoon): announced new containment safeguards and a
       Preparedness Framework rewrite — the formal response to the Hugging
@@ -443,8 +478,21 @@ actors:
       thread). Signed the EU AI Act's Article 50 transparency code in late
       July.
   apple:
-    asof: 2026-08-16
+    asof: 2026-08-21
     doing: >
+      New 08-21: the Senate deadline arrived and Apple said nothing. The
+      bipartisan letter of 07-29 — seven senators, Jim Banks (R-IN) and Chuck
+      Schumer leading, with Andy Kim, Jeanne Shaheen, Mike Crapo, Pete Ricketts
+      and James Risch — demanded a written commitment not to source memory from
+      CXMT or YMTC, both on the Pentagon's list of Chinese military-linked
+      companies. Due today; no public response from Apple, nothing on Banks's
+      press page since 08-17, and Schumer's most recent Apple/CXMT item is
+      still the original 07-30 release. `apple-cxmt-senate-deadline` flipped to
+      passed-silent — ⚠️ at ~10:00 ET on the deadline day itself, so the 3-day
+      grace re-sweep is what would catch a late answer. Silence is the posture
+      here: refusing in writing and complying quietly are different things, and
+      Apple has done neither visibly.
+
       New 08-16: still quiet since 08-14 — no Apple-specific development in
       either day's sweep; `apple-cxmt-senate-deadline` (the bipartisan
       Senate group's deadline for Apple to reject CXMT/YMTC) remains
@@ -525,8 +573,21 @@ actors:
       `expanding` off the OpenAI 6GW deal, the Anthropic partnership and
       Oracle's 50,000-GPU Q3 rollout.
   nvidia:
-    asof: 2026-08-18
+    asof: 2026-08-21
     doing: >
+      New 08-21: the stake ladder moved off the customer list and onto the
+      ground itself. Nvidia took a minority equity position in Cloverleaf
+      Infrastructure — a 2024-founded developer that assembles land, power and
+      shell for data-center sites, with gigawatt-scale projects delivered in
+      Wisconsin and Georgia and a claimed 10-15 GW pipeline. Outside coverage
+      puts it at several hundred million; the joint release gives no figure.
+      Every prior stake on this map (Nebius 9.3%, Intel $5B, Naver $1B, Groq
+      ~$20B licensing) is in a CUSTOMER. This one is in the constraint that
+      decides whether customers can deploy at all — VP Nico Caprez's own
+      framing, "land, power and shell are the foundation" of AI factories. The
+      posture to read from it: Nvidia is no longer only financing demand for
+      its chips, it is buying the permission structure that demand needs.
+
 
       New 08-18: the stake ladder finally has a FILED number, and it
       reframes the story. Nvidia's 13F (filed 08-14, period 06-30, read by
@@ -1141,8 +1202,19 @@ actors:
       sheet — quarter-end NAV ¥72.3T vs a pro-forma mark of ¥58.3T (~19% cut).
       Cash fell ¥3.5T→¥2.3T; loan-to-value steady at 13% (25% cap).
   cxmt:
-    asof: 2026-08-16
+    asof: 2026-08-21
     doing: >
+      New 08-21: the pressure point passed without a result. The bipartisan
+      Senate deadline for Apple to commit against sourcing CXMT/YMTC memory
+      came due today and went silent on both sides — no Apple response, no
+      senatorial comment. For CXMT specifically that is neither a win nor a
+      loss: it remains a named target of US supplier pressure with no customer
+      having publicly disavowed it, and no enforcement step taken either. The
+      adjacent movement this week is upstream — Hua Hong, one of the three fabs
+      named as an expected recipient of China's domestic immersion DUV
+      scanners, joined the flagship Hang Seng index effective 09-07, putting
+      the domestic-tool buildout into the benchmark.
+
       New 08-16: no further movement — zero CXMT-specific coverage across all
       four lenses today; the week-close picture below stands as the week's
       final word, Senate deadline (08-21) still open.

@@ -1,0 +1,84 @@
+# 2026-08-21-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase.
+#
+# ⚠️ The [:50] truncation is load-bearing and is NOT stated in the /daily
+# skill's own description of this file (which says only "slugify() of the
+# bold lead phrase"). It is what render_read.py:307 actually looks up:
+#     interps.get(slugify(tm.group(1).strip()[:50]))
+# The bold text is line-joined and single-spaced first, so the 50 chars
+# are counted on the flattened one-line form, not the wrapped source.
+#
+# Validator shape (theprojection_pipeline/readouts.py:658):
+#     mechanism        30-200 chars, must end as a sentence
+#     confidence       speculative | plausible | well-supported
+#     scenarios        2-4; direction 20-160, why 20-200 chars, distinct
+#     precedent        REQUIRED on >=1 scenario above `speculative`
+#     context_note     20-200 chars, must end as a sentence
+#
+# Two entries for an opening-pass day. Nothing written for the Anthropic
+# $2T/Citigroup bullet or the Sibu 1 hijacking: the first is a reported
+# figure whose mechanism is simply "a company is going public", and the
+# second is a real risk-premium input but its transmission is already
+# fully described in the bullet itself. Forcing an interpretation onto
+# either would be padding a thin day, which is exactly what this file is
+# not for. Read against attention/capital-context.yaml (asof 2026-08-18).
+
+openai-s-revenue-is-reported-up-35-this-quarter-w:
+  mechanism: >
+    Circular AI financing is collateralised by forward revenue, so a shift
+    in which lab is growing fastest reprices the loop's counterparties
+    rather than the loop's size.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Vendor-financing terms start tracking quarterly revenue share
+        between the two labs, rather than being fixed at deal signing.
+      why: >
+        Nvidia, Microsoft and Oracle each hold exposure to specific labs;
+        if relative growth flips twice a year, the natural response is
+        shorter commitment tenors and revenue-linked covenants.
+      precedent: >
+        Nvidia halved the Ohio guarantee under investor pressure on
+        2026-08-15 — already on this map's own timeline, and evidence
+        these commitments are revisable rather than fixed.
+    - direction: >
+        Nothing reprices, because both labs' growth stays high enough in
+        absolute terms that relative position is noise to lenders.
+      why: >
+        82% and 76% quarter-on-quarter are both extraordinary; a
+        counterparty underwriting either is underwriting the category,
+        not the league table within it.
+  context_note: >
+    Ramp card data is a spend proxy, not a filed figure, and this map has
+    no audited revenue number for either lab this quarter.
+
+nvidia-took-a-minority-equity-stake-in-cloverleaf:
+  mechanism: >
+    A chip vendor is buying equity in the physical bottleneck that gates
+    its own demand, converting a supply constraint on customers into an
+    asset on its own balance sheet.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The pattern keeps moving upstream — power agreements, queue
+        positions and land options become Nvidia-held assets rather than
+        customer problems.
+      why: >
+        Power and siting are now the binding constraint on GPU
+        deployment, so the marginal dollar of demand creation is worth
+        more spent there than on customer equity.
+      precedent: >
+        Nvidia's existing customer-base stakes — Nebius 9.3%, Intel $5B,
+        Naver $1B, Groq ~$20B licensing — are the same instrument applied
+        one layer downstream, and are already on this thread.
+    - direction: >
+        It stays a one-off partnership: a few hundred million to secure
+        priority access at named sites, never scaled into a portfolio.
+      why: >
+        Owning land-and-power developers carries permitting, community
+        and utility-regulatory exposure that a fabless chip designer has
+        no apparatus to manage at scale.
+  context_note: >
+    No figure is disclosed in the joint release, so the "several hundred
+    million" size rests on outside coverage rather than a filing.

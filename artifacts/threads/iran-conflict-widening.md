@@ -24,6 +24,41 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-21 — Pezeshkian says end the war "now"; Washington answers with sanctions, not strikes
+
+- **President Masoud Pezeshkian said publicly that "it is better that we
+  bring the war to an end now, as we are in a position of power and
+  dignity"** (~07:22 ET) — the most conciliatory line from Tehran's
+  leadership this map has logged, and notable for framing an ending as a
+  choice made from strength rather than a concession. Single-source as
+  reported.
+  ([Times of Israel liveblog](https://www.timesofisrael.com/liveblog-august-21-2026/))
+  ⟨daily 2026-08-21⟩
+
+## 2026-08-20 — The 60-day US-Iran MoU lapsed, and the US track turns economic
+
+- **The broader US-Iran Memorandum of Understanding signed 2026-06-18,
+  which gave the parties 60 days to negotiate a peace deal, expired
+  2026-08-17/18 with no deal** — Iran's foreign ministry says the US
+  "began violating the memorandum shortly after signing". This is the
+  frame the `iran-oman-hormuz-deal-signing` expectation was sitting
+  inside, and its lapse is why that expectation stays silent rather than
+  merely late.
+  ([CBS News](https://www.cbsnews.com/live-updates/us-iran-war-deal-expired-strait-of-hormuz/) ·
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/18/no-talks-with-iran-says-trump-as-us-president-stews-over-hormuz-deal))
+  ⟨daily 2026-08-20⟩
+- **Treasury Secretary Bessent framed the next move as a "one-two punch"
+  of blockade plus "the toughest sanctions in history", with measures due
+  Monday 2026-08-24 and explicitly offered as an alternative to a
+  large-scale kinetic restart.** Read against Trump's twice-repeated
+  threat to bomb Oman if it "gets in the way" (most recently 08-18), the
+  American track has visibly moved from negotiation toward economic
+  isolation without passing through escalation — a shift in method, not
+  in objective.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/20/us-treasury-secretary-says-new-economic-measures-will-collapse-iran) ·
+  [Washington Times](https://www.washingtontimes.com/news/2026/aug/20/bessent-teases-ramp-economic-warfare-iran-strait-traffic-stagnates/))
+  ⟨daily 2026-08-20⟩
+
 ## 2026-08-19 — UAE cuts all trade with Iran; Hormuz control flips to the Oman route
 
 - **The UAE suspended all trade, commercial exchange, and financial
