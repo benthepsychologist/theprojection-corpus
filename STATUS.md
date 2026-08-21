@@ -1,4 +1,4 @@
-# STATUS — theprojection-corpus (instance #1; formerly kestrel's in-tree data; formerly named theprojection-data until the 2026-08-05 rename)
+# STATUS — theprojection-corpus
 
 *As of 2026-08-20*
 
@@ -1546,33 +1546,9 @@ distilled into [`REBUILD-NOTES.md`](REBUILD-NOTES.md) so bizdev never needs
 consulting again; runner decided (this container — egress + authctl
 verified).
 
-## 🩺 Predecessor pipeline health check (run 2026-07-20)
+## Open
 
-The bizdev digest operation is **dormant — 23 days dark**:
-
-| check | result |
-| --- | --- |
-| Cloud routine `daily-digest` | ☠ **dead** — last push to `origin/main` 2026-06-28; bizdev AGENTS.md ("disabled, egress blocked") is right, bizdev STATUS.md ("runs 07:00 UTC") is stale/wrong |
-| Last digests | 2026-06-27 (both lenses) |
-| Last feedback pull | 2026-06-26 |
-| Last store mutation (`runs.jsonl`) | 2026-06-26 |
-| bizdev checkout | sitting on side branch `captures-pending-closeout-2026-06-29` — noted for the record; **not kestrel's problem** under zero-dependency |
-
-**Egress from this container (live pings, 2026-07-20):**
-
-| API | result |
-| --- | --- |
-| ClinicalTrials.gov v2 | ✅ 200, fast |
-| OpenAlex | ✅ 200 |
-| Federal Register | ✅ 200 |
-| CourtListener (unauth, public endpoint) | ✅ 200 — but the mid-2026 membership gating of real API access is **unverified**; test the search endpoints with the token before Phase 3 |
-| GDELT DOC API | 🚧 reachable but slow; 429 on unauth tier — expect rate-limit handling in the collector, consider the BigQuery path for anything heavy |
-
-**Implication:** there is no running daily operation to preserve or
-coordinate with — kestrel launches fresh, which is exactly what
-zero-dependency wants anyway.
-
-## Next
+### Next
 
 1. ✅ **`/daily` #1 ran 2026-07-22** (07-21 was missed → reconstructed;
    07-20 finalized with the first coverage-critic pass, `coverage-log.md`
@@ -1644,3 +1620,38 @@ zero-dependency wants anyway.
 Refresh **As of** + the affected section when the repo state moves. The
 work-state view for humans lives in the pm hub (`overview/PORTFOLIO.md`);
 this file is kestrel-local truth.
+
+## Dated log — belongs in `log.md`
+
+*These sections carry dates, which makes them a chronological log rather
+than a snapshot. Per D11 a `STATUS.md` is a snapshot everywhere and the
+log lives in `log.md` beside it. They are kept here verbatim and in order
+— **this migration does not move them**, because splitting a file in two
+is a bigger decision than restructuring one. Moving them is the obvious
+next step and is yours to take.*
+
+## 🩺 Predecessor pipeline health check (run 2026-07-20)
+
+The bizdev digest operation is **dormant — 23 days dark**:
+
+| check | result |
+| --- | --- |
+| Cloud routine `daily-digest` | ☠ **dead** — last push to `origin/main` 2026-06-28; bizdev AGENTS.md ("disabled, egress blocked") is right, bizdev STATUS.md ("runs 07:00 UTC") is stale/wrong |
+| Last digests | 2026-06-27 (both lenses) |
+| Last feedback pull | 2026-06-26 |
+| Last store mutation (`runs.jsonl`) | 2026-06-26 |
+| bizdev checkout | sitting on side branch `captures-pending-closeout-2026-06-29` — noted for the record; **not kestrel's problem** under zero-dependency |
+
+**Egress from this container (live pings, 2026-07-20):**
+
+| API | result |
+| --- | --- |
+| ClinicalTrials.gov v2 | ✅ 200, fast |
+| OpenAlex | ✅ 200 |
+| Federal Register | ✅ 200 |
+| CourtListener (unauth, public endpoint) | ✅ 200 — but the mid-2026 membership gating of real API access is **unverified**; test the search endpoints with the token before Phase 3 |
+| GDELT DOC API | 🚧 reachable but slow; 429 on unauth tier — expect rate-limit handling in the collector, consider the BigQuery path for anything heavy |
+
+**Implication:** there is no running daily operation to preserve or
+coordinate with — kestrel launches fresh, which is exactly what
+zero-dependency wants anyway.
