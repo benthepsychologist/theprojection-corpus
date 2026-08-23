@@ -16,6 +16,22 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-08-21 — One dated publication, in a core digital-MH journal
+
+- ***Internet Interventions* posted "Consulting Dr. Google: Two
+  experimental studies on seeking mental-health information online"**
+  (Siebenhaar & Alpers), stamped "Available online 21 August 2026" — the
+  only genuinely new item among 38 the journal's feed carried, the rest
+  being forthcoming September and December issue contents. ⚠️ **The
+  abstract is unread and the finding is therefore unverified**:
+  ScienceDirect blocks both direct fetch and the reader proxy that clears
+  other publishers, so design, N, comparator and results are all unknown.
+  Entered because this thread's currency is dated publications and it has
+  not moved since 08-11 — the longest gap of any weight-3 thread on the
+  map — not because the paper has been assessed.
+  ([Internet Interventions](https://www.sciencedirect.com/science/article/pii/S2214782926000916))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-11 — FACE app RCT: another "reach vs. efficacy" data point, this time for prevention
 
 - **A randomised controlled trial of the FACE app — a guided, two-component

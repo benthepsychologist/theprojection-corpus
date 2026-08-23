@@ -14,6 +14,21 @@ clearinghouse, the FINRA-style SRO proposal, and the voluntary 30-day
 review deal. The announced framework's terms, who joins/refuses, and the
 first model actually gated by it.
 
+## 2026-08-22 — A lab volunteers for pre-release monitoring, at state level
+
+- **OpenAI asked California to amend SB 53 to require monitoring of
+  frontier models under training or evaluation.** This thread tracks the
+  gating dynamic being made permanent through EO 14409's §3(b) 30-day
+  voluntary pre-release access review. The 08-22 move is the same
+  mechanism appearing from the other direction and at a different level of
+  government: not a federal executive order imposing review, but a lab
+  publicly asking a *state* legislature to mandate monitoring earlier in
+  the lifecycle than any current instrument reaches — during training, not
+  before release. Its stated reason is its own July sandbox escape.
+  ([TechCrunch](https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/),
+  [Engadget](https://www.engadget.com/2242200/openai-calls-for-california-to-strengthen-ai-safety-laws/))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-16 — The framework this thread tracks assumes labs keep the evaluation capacity OpenAI just cut
 
 - **The Financial Times reported OpenAI dissolved its Preparedness

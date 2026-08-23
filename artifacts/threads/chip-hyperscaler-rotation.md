@@ -39,6 +39,20 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-22 — The rotation thesis meets a 15% input-cost rise
+
+- **Nvidia is raising AI server prices more than 15% on early-2027
+  shipments, citing memory costs.** This thread tracks the analyst call to
+  rotate out of chipmakers into hyperscalers on a thesis that
+  infrastructure capex is peaking. A cost-push increase cuts against that
+  cleanly: it raises what hyperscalers must spend to hold plan while
+  raising what the silicon chain collects, and the beneficiary is neither
+  side of the rotation but the memory makers behind it. Nvidia's Q2
+  earnings on **08-26** is the first test.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15),
+  [Fortune](https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-19 — Google pays a custom-chip partner in optionality instead of cash, and a memory maker answers the rotation debate with a buyback
 
 - **Google took a warrant on up to $12.2B of Marvell stock (~7%),

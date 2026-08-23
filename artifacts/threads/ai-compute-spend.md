@@ -10,6 +10,22 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia, TPU) as the giants try to stop renting from Nvidia. Category meta under where-the-capex-lands.
 
+## 2026-08-22 — Nvidia raises AI server prices more than 15%, and blames memory
+
+- **Nvidia notified the contract manufacturers building AI servers for
+  Microsoft, Google and Oracle that prices rise more than 15% in many
+  cases on systems shipping in early 2027**, including Vera Rubin and
+  Grace Blackwell configurations, with the increase varying by chip
+  generation and memory configuration. The stated cause is soaring DRAM
+  and HBM prices, with Samsung, SK Hynix and Micron holding the leverage
+  as demand outruns supply. This thread has tracked the dollars flowing to
+  Nvidia, AMD, TSMC and Broadcom; the new fact is that the pricing power
+  inside that flow has moved upstream of all four, to the memory makers.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15),
+  [Fortune](https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/),
+  [CNBC](https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-07 — SK hynix approves $38.1B for two new AI-memory fabs
 
 - **SK hynix's board approved 54 trillion won (~$38.1B) for two new AI-memory fabs** — 35.2 trillion won for "Y2" (DRAM, Yongin, cleanroom opening June 2029) and 19.1 trillion won for "M17" (NAND, Cheongju, cleanroom December 2028) — explicitly framed as securing mid-to-long-term production capacity for AI memory demand, directly on this thread's own watch line ("$ flowing to Nvidia/AMD/TSMC/Broadcom"). ([SK hynix Newsroom](https://news.skhynix.com/en/fab-facility-investment-2026/)) ⟨daily 2026-08-18⟩

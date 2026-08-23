@@ -4754,3 +4754,103 @@ capital in the Broadcom SPV, and exactly the names the private-credit
 candidate is about. An entity add goes through `/steer`.
 📋 08-21 is still `building` — it closes 05:00 ET tomorrow and finalizes on
 a later run, with the coverage critic.
+
+## 2026-08-23 (10:00 ET) — /daily, two-day gap catch-up: 08-21 finalized, 08-22 reconstructed, 08-23 opened
+
+No `/daily` ran on 08-22, so this run covered 2026-08-21 15:00 ET → 08-23
+10:00 ET in one pass and split the findings back to the digest-day each
+event belongs to. **08-21 finalized** across all four lenses with the
+coverage critic run on the three critic-bearing ones. **08-22
+reconstructed** — world news finalized (no critic by design), the other
+three left `building`/`coverage: pending` because their benchmarks are
+weekday-only and a critic pass would have returned "no misses" by
+construction. **08-23 opened**, five hours old and empty.
+
+**Dispatch:** one full collector sweep (`--since 2026-08-21T14:00:00Z`)
+plus seven agentic sweeps (four tier-2 clusters, one mental-health, one
+geopolitics, one tier-3 cold rotation over 14 stale threads) and three
+coverage critics. All returned; none stalled.
+
+**Substance.** 08-22's two items are both reversals: Nvidia telling the
+manufacturers that build for Microsoft/Google/Oracle that AI server prices
+rise >15% on early-2027 systems, naming DRAM/HBM costs rather than its own
+pricing power (`sev=major`); and OpenAI reversing its opposition to
+California's SB 53 to ask that it be strengthened, citing its own July
+sandbox escape. 08-21's evening added OpenAI's >20% API price cut and
+Anthropic's hire of Amir Salek (Google TPU founder), plus a missed August
+flash composite PMI of 56 and a second Anthropic IPO story naming
+data-center opposition as an S-1 risk factor. World news: a
+Russia-Ukraine infrastructure exchange killing 17+, Kyiv and Boryspil hit
+by ballistics two nights running, Putin's "Pandora's box" warning, and a
+US ambassador saying Israel's Syria strike nearly started a war with
+Turkey. **No flash** — correctly, the 08-21 Kryvyi Rih flash expired on
+its filing day and a rising toll is not a new event.
+
+**14 digests written/finalized · 16 thread timeline blocks · 16
+`last_seen` updates · 5 expectations logged · 3 `actor-doing` roll-ups
+refreshed (nvidia, anthropic, openai) · 0 entity adds applied (3
+proposed, held).**
+
+**The editorial finding of the run is a convergence the coverage critic
+produced**: three independent sources led with data-center political
+opposition on 08-21 — Axios Pro Rata's top essay, The AI Daily Brief's
+whole episode, and Anthropic's own S-1 risk factors. A bare candidate
+label since 08-20 is now a thread-shaped hole with a securities filing in
+it. Put to Ben as a decision alongside the Treasury long-end candidate,
+whose third offer now carries the critic's confirmation that FT Unhedged
+led with that story three consecutive editions.
+
+### ⛔ Infrastructure failures found this run — most were undocumented
+
+1. **`cloud-researcher collect` resolves BOTH its corpus and its `.env`
+   against the seat, not the corpus.** `collect.py:55` never migrated to
+   `paths.py`'s `corpus_root()` — it still reads `KESTREL_INSTANCE` and
+   falls back to the seat root, while `collectors/base.py:90` resolves
+   correctly, so the two halves of one command disagree about which repo
+   they operate on. Separately `collect.py:34` loads `.env` from the seat
+   root, which has no `.env` — the keys are in `kestrel/.env` — so **every
+   keyed collector has run keyless since the package split.** Working
+   invocation today needs both signals set. Filed:
+   `kestrel-ops/INBOX/2026-08-23-theprojection-collect-corpus-and-dotenv-resolve-to-the-seat.md`
+   (committed there, not pushed — their contract).
+2. ⛔ **`build-world-news` is blocked on expired gcloud credentials, and
+   this corrected a claim this run had already written into five digests.**
+   The collector's `gdelt` leg completed for the first time in four runs
+   and I initially recorded that as the world-news pool unblocking. It
+   does not: `build_world_news.py` queries GDELT's **BigQuery** dataset via
+   `bq`, which fails with `Reauthentication failed. cannot prompt during
+   non-interactive execution`. **Only Ben can fix this** (`gcloud auth
+   login`). All five digests corrected. `attention/world-news.yaml` is
+   stale from 08-18 on two unrelated stacked causes.
+3. **The `rss` collector stamps fetch time as `ts` when a feed has no
+   `<pubDate>`, indistinguishably from a real date.** ScienceDirect journal
+   feeds are exactly this case. This morning it stamped **38 *Internet
+   Interventions* articles with today's date**; reading the feed directly
+   shows 36 are *forthcoming* September/December issue contents and
+   exactly one is genuinely new (08-21). This is the re-index trap arriving
+   through the collector rather than through a newsroom — every discipline
+   this map has for catching a re-dated story assumes the re-dating
+   happens upstream. Needs an ops brief.
+4. **Benchmark health, none of it previously recorded:** The Rundown AI
+   unreachable two days running (RSS 404s; slug-guessing returns *August
+   2025* content) · Bloomberg Technology blocked both directly and through
+   the `r.jina.ai` proxy that still clears FT and Axios — a new escalation
+   past the fix class that resolved every other blocked benchmark · Money
+   Stuff dark since 08-13 · Behavioral Health Business reachable but
+   silent since 08-20 16:42 ET · FT Unhedged now needs the proxy, though
+   `sources/benchmarks.yaml` documents direct RSS as working.
+5. **`lda` (lobbying disclosures) 403s on all 160 terms, two runs
+   running**, and `fund_flow_reports` hits bot challenges on every path —
+   both **unchecked, not clean**.
+6. ⚠️ **The read payload is over the 600 KB soft cap for a fifth
+   consecutive run and still growing:** 1241 → 1254 → 1308 → 1331 →
+   **1384 KB**. The degradation rule the warning names is still not
+   implemented, so the warning remains advisory.
+
+### Held rather than guessed
+This session exhausted its 200-call WebSearch budget on the seven sweeps,
+so three real leads are **carried unverified rather than logged**: Nvidia's
+reported ~$6-7bn Poolside licensing deal (date unpinnable between 08-21 and
+08-22), the Capital & Main investigation into Kaiser's algorithmic triage
+(reported 08-18, including a California bill numbered AB 2575), and Senator
+Warner's 08-18 letter to Meta on AI-generated CSAM ads. First jobs next run.

@@ -50,6 +50,71 @@
 
 expectations:
 
+  - id: nvidia-q2-fy2026-earnings
+    claim: "Nvidia reports Q2 FY2026 after the close — the first print since it told customers AI server prices rise >15% on early-2027 systems"
+    due: 2026-08-26
+    due_precision: day
+    thread: ai-compute-spend
+    entities: [nvidia]
+    source: https://www.cnbc.com/2026/08/22/nvidia-customers-reportedly-warned-about-ai-related-price-hikes-.html
+    confidence: confirmed
+    what_confirms: "the print itself, and whether guidance reflects the memory-cost pass-through; also the first read on whether hyperscalers absorb the 15% or cut units"
+    logged: 2026-08-23
+    logged_by: curate-add
+    status: pending
+
+  - id: lisa-cook-removal-response
+    claim: "Lisa Cook's deadline to respond to the White House's notice seeking her removal from the Federal Reserve Board"
+    due: 2026-08-26
+    due_precision: day
+    thread: fed-independence-fight
+    entities: [lisa-cook]
+    source: https://www.washingtonpost.com/business/2026/08/07/white-house-revives-bid-remove-fed-lisa-cook-over-mortgage-claims/
+    confidence: reported
+    what_confirms: "a filed response, a resignation, or the deadline passing with nothing — the last of which is the loud outcome"
+    logged: 2026-08-23
+    logged_by: curate-add   # date carried from prior reporting; NOTHING Cook-related appeared in the 08-21..08-23 sweep, so this is unrefreshed
+    status: pending
+
+  - id: jackson-hole-warsh-keynote
+    claim: "Kevin Warsh gives his first Jackson Hole keynote as Fed chair, at the Kansas City Fed's symposium (08-27 to 08-29, theme 'Financial Innovation: Implications for Payments and Policy')"
+    due: 2026-08-28
+    due_precision: day
+    thread: fed-independence-fight
+    entities: [kevin-warsh]
+    source: https://www.kansascityfed.org/research/jackson-hole-economic-symposium/
+    confidence: confirmed
+    what_confirms: "the keynote text — specifically whether Warsh addresses the long-end/buyback question this map has no thread for, and his stated line on flexible average inflation targeting"
+    logged: 2026-08-23
+    logged_by: curate-add   # verified against kansascityfed.org directly, not commentary; exact slot to be confirmed by the Wednesday-evening agenda release
+    status: pending
+
+  - id: ukraine-independence-day-coalition-kyiv
+    claim: "A 30-plus-country Coalition of the Willing meets in Kyiv on Ukraine's 35th Independence Day, with the SBU warning of elevated attack and sabotage risk around the holiday"
+    due: 2026-08-24
+    due_precision: day
+    thread: russia-ukraine-war
+    entities: []
+    source: https://kyivindependent.com/coalition-of-the-willing-to-hold-independence-day-meeting-in-kyiv/
+    confidence: reported
+    what_confirms: "the meeting happening and what it commits to; separately whether Putin's 08-22 'far more painful and far more destructive' warning is acted on around the date"
+    logged: 2026-08-23
+    logged_by: curate-add
+    status: pending
+
+  - id: fda-psychedelic-public-hearing
+    claim: "FDA holds a public hearing on psychedelics, per a Federal Register notice"
+    due: 2026-09-14
+    due_precision: day
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://www.federalregister.gov/
+    confidence: reported
+    what_confirms: "the hearing convening, its docket, and whether it touches the Compass psilocybin NDA track"
+    logged: 2026-08-23
+    logged_by: curate-add   # surfaced by the 08-22 mental-health sweep from a Federal Register notice; the exact FR citation still needs pinning
+    status: pending
+
   - id: fomc-september-decision
     claim: "FOMC rate decision — the hawkish bloc's next window after July's 9-3 hold"
     due: 2026-09-16

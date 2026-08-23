@@ -17,6 +17,21 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-22 — A drone strike on a home in Deir el-Balah, three weeks into the disarmament framework
+
+- **An Israeli drone strike on a house in central Gaza killed one man and
+  wounded others**, per Gaza's Ministry of Health and Al Jazeera's
+  correspondent; the IDF identified him as Sharif al-Hasanat, a company
+  commander in Hamas's Deir al-Balah Battalion. Gaza's Health Ministry
+  separately gave a 48-hour toll as of Saturday of at least 2 killed and 4
+  injured across the strip, with continued shelling in Khan Younis and
+  Bureij. The framing this thread holds — a disarmament framework
+  announced 2026-07-31 — is now three weeks old and coexisting with
+  continuation-intensity strikes.
+  ([Haaretz](https://www.haaretz.com/israel-news/israel-security/2026-08-22/ty-article/.premium/man-killed-in-israeli-drone-strike-on-home-in-central-gaza-medical-sources-say/000001a0-292f-d129-a3ba-6b2f83b50000),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/22/israeli-strikes-kill-two-and-injure-others-as-gaza-attacks-continue))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-19 — Nukhba commanders killed near Gaza port; Hamas restates ceasefire commitment
 
 - **Israel struck a meeting of Hamas's elite Nukhba-force commanders near

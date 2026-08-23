@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-21
-status: building
+status: final
 window_start: 2026-08-21T05:00:00-04:00
-as_of: 2026-08-21T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-22T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-21
@@ -17,7 +17,12 @@ page_diff, rss, google_news_rss), a tier-2 AI-financing cluster deep
 check, a tier-2 geopolitics check for the oil/shipping leg, a tier-3 cold
 rotation, and a second tier-2 macro/rates sweep (CNBC, The National,
 Arab News, OPB, TradingEconomics, Yahoo Finance). Read against
-`attention/capital-context.yaml` (asof 2026-08-18).*
+`attention/capital-context.yaml` (asof 2026-08-18).
+
+**FINALIZED 2026-08-23** across the full digest-day. A third pass on
+08-23 covered the 15:00 ET → 05:00 ET remainder — the Friday close, the
+August flash PMI and a second Anthropic IPO story — and ran the coverage
+critic. The two-day gap in `/daily` runs is why this closed on 08-23.*
 
 ## Today's throughline
 
@@ -61,6 +66,17 @@ story. That reading is testable and this map currently cannot hold it.
 - **Gold — ~$4,590-4,600/oz**, +1.5-1.9% on the day, a three-month high
   and a fifth consecutive weekly gain.
 - **Bitcoin — ~$77,000**, +7-8.7% intraday, its strongest week in months.
+- **S&P 500 — 7,674.37**, +33.21 on Friday's close, but **down on the
+  week** for a second consecutive week. **Nasdaq Composite — 26,180.45**,
+  +113.29, same pattern. 🕰 Caught on the 08-23 finalize; the equity
+  close was missing from this strip entirely.
+- **S&P Global flash US composite PMI — 56 for August**, the fastest US
+  private-sector output growth in over four years, verified against S&P
+  Global's own dated release rather than commentary. 🕰 Caught on the
+  08-23 finalize. ⚠️ **This was a genuine gap, not a late detail.** A
+  four-year high in the headline activity print is the sort of thing that
+  frames every rates argument on this page, and it was released on 08-21
+  and absent from the 15:00 ET pass.
 - ⚠️ **Sourcing caveat on this strip:** the rates, gold and bitcoin reads
   are aggregator snapshots (TradingEconomics, wire market wraps), not
   primary exchange ticks, and outlets disagree at the margin. Treat the
@@ -153,6 +169,40 @@ story. That reading is testable and this map currently cannot hold it.
   [SiliconANGLE](https://siliconangle.com/2026/08/20/broadcom-reportedly-seeking-up-to-100b-in-debt-financing-for-ai-chip-deal/))
   <!-- k: t=ai-buildout-debt-risk e=broadcom,anthropic axis=deals-and-filings interp=yes -->
 
+- **Anthropic will name AI backlash — specifically data-center
+  opposition — as a risk factor in its public S-1.** CNBC reported that
+  the forthcoming filing lists public opposition to data-center
+  construction among its named risks, while CFO Krishna Rao holds
+  test-the-waters meetings with prospective investors in San Francisco
+  ahead of a filing expected as soon as end of August. 🕰 Caught on the
+  08-23 finalize — this is a *second, separate* CNBC story from the
+  $190-200bn revenue forecast already in this digest's throughline. The
+  mechanism is direct: Anthropic's prospectus ties revenue growth to
+  compute buildout, so community opposition that slows construction
+  threatens the growth story it is marketing. ⚠️ Sourced to CNBC's own
+  unnamed sources, not an Anthropic statement, and the CNBC page 403s to
+  direct fetch — date taken from its dated URL and same-day mirror
+  coverage.
+  ([CNBC](https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html),
+  [Gizmodo](https://gizmodo.com/anthropic-is-reportedly-being-upfront-with-would-be-investors-about-ai-backlash-2000801944))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos,ai-datacenter-sites e=anthropic axis=deals-and-filings interp=yes -->
+
+- **Monte dei Paschi launched twin all-share bids worth €34bn for Banco
+  BPM and Banca Generali.** Italy's oldest bank moved to position itself
+  as a third national champion against Intesa Sanpaolo's own hostile
+  approach. 🕰 Caught by the 08-23 coverage critic — **Axios Pro Rata led
+  its "BFD" slot with it and this map had nothing on it anywhere.**
+  ⚠️ **Logged, with the honest curatorial note attached: European bank
+  consolidation is not something this map is actually trying to watch.**
+  It is a real recall miss by the critic's standard and a real
+  out-of-interest item by Ben's, and both of those are true at once. If
+  the lens is meant to cover deals of this size regardless of sector, it
+  needs to say so; if it is not, the benchmark set should be read with
+  that in mind rather than generating a miss every time Axios leads with
+  European banking.
+  ([Reuters, via syndication](https://www.msn.com/en-gb/money/other/monte-dei-paschi-launches-all-share-bids-for-bpm-banca-generali-to-stave-off-intesa-takeover/ar-AA2aCODv))
+  <!-- k: axis=deals-and-filings -->
+
 ## Power & lobbying
 
 - **A hijacked shadow-fleet tanker stacks a piracy premium on top of the
@@ -244,6 +294,94 @@ date, so a miss is weak evidence of a slip), and
 08-19), and off-balance-sheet AI obligations (offered three times
 through 08-18) all still need a track/drop call.
 
+- **candidate: data-center political opposition as a capital risk** —
+  ⚠️ **promoted from a bare label to a real offer by today's critic
+  pass.** It has sat in this section as the words "data-center siting
+  opposition (offered 08-20)" with nothing behind it. It now has three
+  independent same-day sources and a filing: Axios Pro Rata's lead essay
+  on state-level pushback as underpriced risk (NY moratorium, PA and TX
+  roadblocks, "dozens of other states"), The AI Daily Brief's 08-21
+  episode "Why Everyone Suddenly Hates AI Data Centers", and **Anthropic
+  naming data-center opposition as a risk factor in its S-1**. The
+  capital angle is what makes it this lens's rather than frontier-AI's:
+  it is the first mechanism by which local politics prices into a
+  frontier lab's cost of equity. — track it? (coverage-critic
+  convergence, 3 sources + 1 filing)
+## Appendix — Coverage check vs. benchmarks
+
+**Run on the 08-23 finalize. Two of four benchmarks reachable and
+publishing; one dark, one blocked.**
+
+**They led with → we missed:**
+1. ⚠️ **Monte dei Paschi's €34bn twin bids** — Axios Pro Rata's "BFD"
+   slot. Logged above with a curatorial note about whether it is in this
+   map's actual interest.
+2. ⚠️ **Soft miss — Axios Pro Rata's "Top of the Morning" essay on
+   data-center political opposition**, arguing a widening gap between
+   booming data-center fundamentals and hardening bipartisan pushback —
+   New York's temporary moratorium, new Pennsylvania and Texas
+   roadblocks, restrictions in "dozens of other states" — and closing
+   "there is more than one way for an AI bubble to burst." Scored soft
+   because it is a trend synthesis rather than one dated event. But
+   **none of its specifics — the NY moratorium, the PA/TX rules, the
+   midterm-timing frame — appear anywhere in this map**, and this lens
+   has been carrying "data-center siting opposition" as a bare
+   thread-candidate label since 08-20 with no content behind it.
+
+🎯 **The finding the critic pass actually produced is a convergence, and
+it is the most important thing on this page.** Three independent sources
+led with data-center political opposition on the same day: Axios Pro
+Rata's top essay, The AI Daily Brief's 08-21 episode ("Why Everyone
+Suddenly Hates AI Data Centers"), and **Anthropic's own S-1**, which
+names it as a risk factor. When a benchmark's lead essay, a second
+benchmark's whole episode, and the filing of the company this map watches
+most closely all land on the same theme inside one digest-day, that is
+not a miss to fold in — it is a thread this map does not have. It is
+offered as such below.
+
+**The Treasury long-end question, answered explicitly:** ⚠️ **FT Unhedged
+led with it three consecutive editions** — 08-20 *"Big Brother Bessent is
+watching you"*, 08-21 *"Nellie Liang: 'Ultimately the goal is to signal
+that high rates are a concern'"*, 08-22 *"Chart of the Week: Who owns
+government bonds?"*. Not scored as a miss, and the distinction matters:
+this digest already carries the substance — the buyback ceiling doubling,
+the full round-trip, Bessent's asymmetric-information quote, the
+gold/bitcoin dollar reaction. **The gap is structural, not editorial.**
+There is no node for Fed/Treasury rate plumbing to land on;
+`fed-independence-fight` covers the Fed's *composition*, not the long
+end's *mechanics*. Three straight benchmark leads is the evidence the
+thread candidate has been waiting for.
+
+**Both covered:** the Treasury long-end story — in content.
+
+**We had → they didn't:** Anthropic's $2T target acquiring a $190-200bn
+revenue denominator, and the Broadcom $70-80bn SPV with its tranche
+split, on the same day — neither surfaced in the Axios content (its
+VC/PE section ran Colossal and Cityblock) · the *Sibu 1* shadow-fleet
+hijacking and the second, independent piracy risk layer it puts on
+war-risk underwriting · "Operation Economic Fury" being named with its
+targets three days ahead.
+
+**Out-of-window rejections:** none. Every benchmark lead resolved inside
+the digest-day.
+
+⛔ **Benchmark health — two of four are not usable, and this lens has
+been auditing itself against half its baseline without saying so:**
+- **Bloomberg Technology is blocked both ways.** Direct fetch returns
+  403 and the `r.jina.ai` reader proxy — which still clears FT and Axios
+  cleanly — returns a Bloomberg CAPTCHA. This is a **new escalation past
+  the proxy-class fix** that resolved the other three. There may not be a
+  workaround.
+- **Money Stuff has published nothing since 2026-08-13.** The feed's
+  `lastBuildDate` keeps updating while the newest column stays ten days
+  old. Read as an author hiatus, not a block.
+- ✅ The two documented workarounds that do still work: Axios Pro Rata via
+  `r.jina.ai` on its persistent newsletter page, and FT Unhedged via
+  `r.jina.ai` on its RSS endpoint (⚠️ note the change — the *direct* RSS
+  fetch that `sources/benchmarks.yaml` documents as needing no proxy now
+  fails, and needed the proxy today).
+
+
 ---
 Anthropic was valued and financed on the same future revenue on the same
 day: a $2 trillion IPO target now resting on a reported $190-200bn 2028
@@ -255,4 +393,10 @@ its own customers. And the long end went on refusing to cooperate: the
 buyback rally round-tripped inside two days, the 10-year sits back near
 4.7%, and the money that moved went into gold at a three-month high and
 bitcoin up 7-9% — a market pricing the dollar, not the curve. That is the
-second straight day this lens's actual lead has had no thread to land on.
+second straight day this lens's actual lead has had no thread to land on
+— and the coverage critic has since confirmed FT Unhedged led with that
+same story three editions running. The evening added the two things the
+15:00 pass had missed: a Friday close that was down on the week for the
+second week straight despite an August flash PMI at a four-year high,
+and a second Anthropic IPO story naming public opposition to data
+centers as a risk factor in its coming S-1.

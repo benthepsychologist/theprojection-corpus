@@ -5,6 +5,22 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-22 — Strikes on both nights of the weekend, thin on detail
+
+- **Israeli warplanes struck the Ali al-Taher ridge in Nabatieh twice
+  within five minutes late on 08-21**, with further hits near Deir Siryan,
+  Doha Kafr Rumman and al-Mansouri per Lebanon's National News Agency; no
+  casualty figures were given.
+  ([Middle East Eye live](https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-attacks-southern-lebanon-0))
+  ⟨daily 2026-08-21⟩
+- **A further IDF round was reported at 02:33 local time on 08-23**
+  (19:33 ET 08-22) at flash level only. ⚠️ **Logged as thin and recorded
+  as thin** — no location, target or casualty detail was retrievable, so
+  this entry exists to keep the tempo visible, not because it stands on
+  its own.
+  ([Israel National News](https://www.israelnationalnews.com/flashes/692206))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-18 — Aoun to extend UNIFIL "despite Hezbollah buildup"; talks continue
 
 - **Lebanon's president moved to extend UNIFIL's mandate**, reported as

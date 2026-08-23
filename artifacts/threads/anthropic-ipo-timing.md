@@ -12,6 +12,23 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-21 — The S-1 will name AI backlash as a risk factor, and the CFO is testing the waters
+
+- **Anthropic's forthcoming public S-1 will list public opposition to
+  data-center construction among its named risk factors**, per CNBC, while
+  CFO Krishna Rao holds test-the-waters meetings with prospective
+  investors in San Francisco ahead of a filing expected as soon as end of
+  August. This is a second, separate story from the $190-200bn 2028
+  revenue forecast logged the same morning. The mechanism is direct:
+  the prospectus ties revenue growth to compute buildout, so opposition
+  that slows construction threatens the growth story being marketed.
+  ([CNBC](https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html),
+  [Gizmodo](https://gizmodo.com/anthropic-is-reportedly-being-upfront-with-would-be-investors-about-ai-backlash-2000801944))
+  ⟨daily 2026-08-21⟩
+  <!-- k: caught 08-23. CNBC's own unnamed sources, not an Anthropic
+       statement; the page 403s to direct fetch, so the date comes from
+       its dated URL plus same-day mirror coverage. -->
+
 ## 2026-08-20 — Anthropic targets matching or beating SpaceX's record raise, public filing possible by month's end
 
 - **Anthropic expects its IPO to match or beat SpaceX's record $75B raise, with a public S-1 filing possible before the end of August** — a step beyond the valuation chatter this thread has carried since 08-13 ($2T target): this is a specific comparison to the dollar amount RAISED, benchmarked directly against SpaceX's own 06-12 debut ($75B raised at a $1.77T valuation, the largest US IPO ever). Bloomberg's sourcing is "people familiar with the matter," describing the company as "running the numbers" as preparations accelerate.

@@ -12,6 +12,22 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-22 — The memory squeeze arrives in the data center as a capex story
+
+- **Nvidia is raising AI server prices more than 15% and naming DRAM and
+  HBM costs as the reason.** This thread has followed the three-year HBM
+  deficit through *consumer* hardware price rises — Apple, Microsoft,
+  handset and PC bills of materials. The 08-22 notice is the same squeeze
+  reaching the buildout itself: Samsung, SK Hynix and Micron now set the
+  marginal cost of AI compute, and Nvidia has said so publicly by passing
+  it through rather than absorbing it. ⚠️ All three price-setters are
+  watchlist search terms on this map with no entity slugs, so the
+  companies at the centre of this thread cannot currently be tagged on the
+  bullet that describes them — offered as a map change on 08-22.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15),
+  [Fortune](https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/))
+  ⟨daily 2026-08-22⟩
+
 ## 2026-08-18 — The shortage produces its first visible casualty on the demand side
 
 - **Xiaomi's profit fell on a worsening memory-chip crunch hitting

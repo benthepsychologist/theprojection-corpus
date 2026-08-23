@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-21
-status: building
+status: final
 window_start: 2026-08-21T05:00:00-04:00
-as_of: 2026-08-21T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-22T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-21
@@ -15,7 +15,12 @@ collector runs (clinicaltrials, openalex, semantic_scholar, rss,
 google_news_rss), a tier-2 seven-thread cluster check covering every
 mental-health thread this map holds at weight 3 plus the two that moved
 yesterday, and a second tier-2 sweep that re-ran the google_news_rss
-surface the opening pass had flagged as incomplete.*
+surface the opening pass had flagged as incomplete.
+
+**FINALIZED 2026-08-23** across the full digest-day. The 08-23 pass swept
+the 15:00 ET → 05:00 ET remainder (nothing found) and ran the coverage
+critic against all four benchmarks. The two-day gap in `/daily` runs is
+why this closed on 08-23.*
 
 ## Today's throughline
 
@@ -69,6 +74,23 @@ stands 10 days without movement.
   [WBUR](https://www.wbur.org/news/2026/08/21/lindsay-clancy-defense-rests),
   [PBS NewsHour](https://www.pbs.org/newshour/nation/lindsay-clancys-defense-rests-at-trial-over-whether-postpartum-psychosis-drove-her-to-killings))
   <!-- k: axis=policy-regulation-and-legal -->
+
+
+## 🔬 Research & evidence
+
+- **A digital-mental-health journal posted one new paper on 08-21:
+  "Consulting Dr. Google", two experimental studies on how people seek
+  mental-health information online** (Siebenhaar & Alpers, *Internet
+  Interventions*). 🕰 Caught on the 08-23 finalize, from the journal's own
+  RSS feed, which stamps it "Available online 21 August 2026." ⚠️ **Logged
+  as thin and dated, not as a finding** — the abstract itself is behind a
+  captcha this session could not clear (ScienceDirect blocks both direct
+  fetch and the reader proxy that clears other publishers), so the design,
+  N and results are unverified. It is recorded because
+  `mh-evidence-watch` is this map's stalest weight-3 thread and a dated
+  publication in a core journal is the thread's own currency.
+  ([Internet Interventions](https://www.sciencedirect.com/science/article/pii/S2214782926000916))
+  <!-- k: t=mh-evidence-watch axis=research-and-evidence -->
 
 ## 🔄 Map changes
 
@@ -125,6 +147,56 @@ One near-miss is noted rather than offered: Danish startup Aisel Health
 closed a €1.7M pre-seed led by Caesar Ventures for a psychiatry
 "operating system", reported 2026-08-19 — on `mh-clinical-infra-funding`'s
 thesis but outside this window and too small to open a node for.
+
+## Appendix — Coverage check vs. benchmarks
+
+**Run on the 08-23 finalize against all four mental-health benchmarks.**
+
+**They led with → we missed:** ✅ **Nothing.** All four were reached and
+none surfaced an in-window mental-health item the digest lacked.
+
+The single in-window candidate was checked and rejected: STAT's *"Lil Nas
+X's bipolar diagnosis and the paradox of treatment"* (First Opinion, by
+Rachel Docekal, 08-21). It fails on three counts — it is a **contributed
+opinion column, not news STAT led with**; the disclosure it reacts to
+carries **no date anywhere in the piece**, so it cannot be placed inside
+this digest-day; and it contains no trial, study, regulatory action or
+funding event.
+
+**Both covered:** nothing to list — no benchmark surfaced an in-window
+mental-health item at all.
+
+**We had → they didn't:** ✅ **the Lindsay Clancy trial, this day's
+centrepiece.** No benchmark carried the 08-21 courtroom development.
+STAT's only Clancy item is a First Opinion from **08-12** about
+postpartum-psychiatry limits generally, ten days stale against what
+happened in court. BHB, MobiHealthNews and Fierce did not mention Clancy
+at all. That is a genuine edge, not a wash.
+
+**Out-of-window rejections** — recorded so they are not re-proposed:
+BHB's Oregon psilocybin real-world study coverage [**08-19**, the same
+OHSU study this digest already checked and rejected on that date] · BHB's
+"Radial Acquires Mindful Health Solutions" [**08-20**, already folded in
+at that day's finalize] · Fierce's "UnitedHealthcare expands behavioral
+coaching program for youths" [**08-20**, one day early] · MobiHealthNews's
+Epic real-time prior-authorization launch [real event 08-17/19, and out
+of scope for this lens regardless].
+
+⚠️ **Read this pass's "zero misses" correctly — it is a thin audit, not a
+strong one.** Three of four benchmarks had little or no fresh in-window
+content, which is a fact about the benchmarks on this date rather than
+evidence the digest is well calibrated.
+
+⛔ **Benchmark health — Behavioral Health Business has published nothing
+since 2026-08-20 16:42 ET.** The Googlebot-user-agent workaround still
+works (HTTP 200 on both the feed and the homepage, confirmed by two
+routes), and the feed's `lastBuildDate`, the homepage's newest post and
+the site's own Yoast sitemap **all three agree**: the newest item is
+"Advanced Recovery Systems Acquires Promises Behavioral Health" from
+Thursday. That is three calendar days of silence from a daily trade
+outlet and it is the closest benchmark match this lens has. Access is
+fine; **content is absent**. Worth confirming next pass that this is real
+and not a fetch artifact.
 
 ---
 Ten quiet hours in this lens, established rather than assumed: a

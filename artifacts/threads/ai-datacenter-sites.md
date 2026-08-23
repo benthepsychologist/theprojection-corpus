@@ -10,6 +10,20 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in CONCRETE — the specific gigawatt campuses. Stargate, Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands; the specific-sites worklist lives here.
 
+## 2026-08-21 — Site opposition becomes a securities risk factor
+
+- **Anthropic's coming S-1 will name public opposition to data-center
+  construction as a risk factor**, per CNBC. This thread tracks where the
+  capex lands in concrete; the new fact is that the *resistance* to it now
+  has a price. On the same day, Axios Pro Rata led its newsletter with
+  state-level pushback as underpriced risk — New York's temporary
+  moratorium, new Pennsylvania and Texas roadblocks, restrictions in
+  "dozens of other states" — and The AI Daily Brief gave the theme a whole
+  episode. Three independent sources plus a filing, one day.
+  ([CNBC](https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html),
+  [Axios Pro Rata](https://www.axios.com/newsletters/axios-pro-rata))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-17 — OpenAI's Ohio campus lease formally signed: 20 years, phased to 2032
 
 - **OpenAI signed a 20-year lease for the Piketon, OH data-center cluster (the former Portsmouth uranium site)** — initial 800MW of computing capacity targeted by 2028, full build-out running through 2032, projected at 35,000 construction jobs and 2,500 permanent maintenance roles. SB Energy (the SoftBank unit building it) is reportedly planning an IPO as early as next month at a valuation up to $50B. ([SiliconANGLE](https://siliconangle.com/2026/08/17/openai-leases-10-gigawatt-ai-data-center-campus-from-softbanks-sb-energy/)) ⟨daily 2026-08-18⟩

@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-08-21
-status: building
+status: final
 window_start: 2026-08-21T05:00:00-04:00
-as_of: 2026-08-21T15:00:00-04:00
+as_of: 2026-08-22T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -18,7 +18,13 @@ four threads over the 10:00–15:00 ET window (AP, CNN, Kyiv Post, The
 Moscow Times, Euronews, Arab News), and today's collector runs. ⚠️
 `attention/world-news.yaml`'s mechanically-scored candidate pool is
 **still stale from 08-18** — the rebuild needs the GDELT collector leg;
-see Thread candidates.*
+see Thread candidates.
+
+**FINALIZED 2026-08-23** across the full digest-day; the 08-23 pass swept
+the 15:00 ET → 05:00 ET remainder and added one item. ⚠️ The collector's `gdelt` leg completed
+on this run after three consecutive failures, but that does **not**
+rebuild the stale candidate pool — `build-world-news` reads GDELT from
+BigQuery via `bq`, which is blocked on expired gcloud credentials.*
 
 ## Today's throughline
 
@@ -82,6 +88,16 @@ than the agreement-in-principle this map logged four days ago.
   rather than an announcement.
   ([Arab News](https://www.arabnews.com/node/2655445/middle-east))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening axis=items -->
+
+- **Israeli warplanes struck the Ali al-Taher ridge in Nabatieh twice
+  within five minutes.** Lebanon's National News Agency reported the two
+  strikes plus further hits near Deir Siryan, Doha Kafr Rumman and
+  al-Mansouri; no casualty figures were given for this round. 🕰 Caught on
+  the 08-23 finalize. ⚠️ The 17:13 ET placement derives from a UK live
+  blog's own posting time rather than a separately confirmed strike time,
+  so the hour is approximate and the date is not.
+  ([Middle East Eye live](https://www.middleeasteye.net/live-blog/live-blog-update/israel-launches-attacks-southern-lebanon-0))
+  <!-- k: t=israel-lebanon-escalation axis=items -->
 
 ## 🚨 Flash check
 

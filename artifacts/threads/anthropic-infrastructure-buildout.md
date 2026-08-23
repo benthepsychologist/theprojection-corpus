@@ -18,6 +18,20 @@ counterparty mix drifting from clouds toward miners and infrastructure
 funds; and the Theseus consumer-electricity commitment, the first
 contractual concession this map has seen a lab make to ratepayer politics.
 
+## 2026-08-21 — Anthropic buys the ability to design its own silicon
+
+- **Anthropic hired Amir Salek — founder and head of Google's
+  custom-silicon division 2013-2022, covering the first seven TPU
+  generations — onto its compute team under James Bradbury.** For this
+  thread the significance is where it sits relative to the Broadcom SPV:
+  the same week Anthropic is reported to be the beneficiary of a $70-80bn
+  debt vehicle to build chip capacity, it hires the person who has built a
+  hyperscaler chip program from nothing before. Buying capacity and
+  building capability are different bets and it is now making both.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware),
+  [Seeking Alpha](https://seekingalpha.com/news/4636024-anthropic-hires-former-google-chip-developer-as-it-pursues-in-house-solution-report))
+  ⟨daily 2026-08-21⟩
+
 ## 2026-08-13 — A fifth move, but a different shape: an outright acquisition, not a lease
 
 - **Anthropic is reportedly in talks to acquire Israeli AI infrastructure

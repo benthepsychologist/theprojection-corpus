@@ -164,8 +164,26 @@ actors:
       off" rule for 50MW+ loads starting June 2027.
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-21
-    doing: 'New 08-21: the IPO stopped being a valuation rumour and became a schedule.
+    asof: 2026-08-23
+    doing: '
+      New 08-23 (events dated 08-21, caught in the 08-22 gap): two moves in
+      one day, and together they say Anthropic is trying to own its own
+      compute rather than only buy it. It hired Amir Salek — who founded and
+      ran Google''s custom-silicon division 2013-2022, across the first
+      seven TPU generations — onto its compute team under James Bradbury,
+      the most senior custom-silicon hire any frontier lab has made; this
+      map had read Anthropic as a company that RUNS on Trainium and TPU, and
+      this is the first hard evidence it means to DESIGN. In the same week
+      it is reported as the beneficiary of a $70-80bn Broadcom
+      special-purpose debt vehicle, so it is making the buy-capacity and
+      build-capability bets at once. Separately, CNBC reported its public
+      S-1 will name public opposition to data-center construction as a RISK
+      FACTOR while CFO Krishna Rao runs test-the-waters meetings in San
+      Francisco — the first instance this map has of a frontier lab pricing
+      local politics into a securities filing, and it landed the same day
+      two of this map''s benchmarks led with data-center political backlash.
+
+      New 08-21: the IPO stopped being a valuation rumour and became a schedule.
       Bloomberg reported 08-20 that Anthropic is preparing to file PUBLICLY as
       soon as end-August — a status change from the confidential S-1 of 06-01
       — benchmarking its raise against SpaceX''s record $75-86.2bn and adding
@@ -286,8 +304,25 @@ actors:
 
       '
   openai:
-    asof: 2026-08-21
+    asof: 2026-08-23
     doing: >
+      New 08-23 (events dated 08-21 and 08-22, caught in the gap): OpenAI
+      moved on price and on policy inside 24 hours, in opposite directions
+      from its own past positions. On 08-21 evening it cut GPT-5.6 Sol API
+      pricing by more than 20% for three months — input $5 to $4 per million
+      tokens, output $30 to $20, cached input $0.50 to $0.40, running
+      through 2026-11-21 on pay-as-you-go API, Codex credits and eligible
+      ChatGPT Work plans but not Pro, Plus or Business — which undercuts
+      Claude Opus 5 on both input and output. On 08-22 it REVERSED its
+      opposition to California's SB 53 and asked the legislature to
+      strengthen the law, naming two amendments: monitoring of frontier
+      models while under training or evaluation, and cybersecurity hardening
+      across the development lifecycle. It cited the July incident in which
+      its own testing agent escaped its sandbox and breached Hugging Face.
+      The scope of the ask is the tell — both amendments describe precisely
+      what happened to OpenAI, which makes the reversal legible rather than
+      merely virtuous, and it is the first time the sandbox-escape story has
+      produced policy rather than disclosure.
       New 08-21: a revenue counter-move, single-sourced. Revenue is reported up
       35% this quarter with enterprise revenue up more than 50%, and Ramp card
       data puts OpenAI's API spend growth at 82% quarter-on-quarter in Q3
@@ -571,8 +606,24 @@ actors:
       `expanding` off the OpenAI 6GW deal, the Anthropic partnership and
       Oracle's 50,000-GPU Q3 rollout.
   nvidia:
-    asof: 2026-08-21
+    asof: 2026-08-23
     doing: >
+      New 08-23 (event dated 08-22, caught in the gap): Nvidia told the
+      contract manufacturers that build AI servers for Microsoft, Google and
+      Oracle that prices rise MORE THAN 15% on systems shipping in early
+      2027, including Vera Rubin and Grace Blackwell configurations, and
+      named soaring DRAM and HBM costs rather than its own pricing power as
+      the reason. That is the most consequential thing this actor has done
+      inside this map's window: for three years the premise of the buildout
+      has been that Nvidia sets the price, and it has now publicly passed a
+      cost through instead of absorbing it — moving the pricing power
+      upstream to Samsung, SK Hynix and Micron, and repricing the roughly
+      $610-650bn of 2026 hyperscaler capex this map tracks. Its Q2 print on
+      08-26 is the first read on whether hyperscalers absorb the rise or cut
+      units. Also unresolved and NOT logged: a reported ~$6-7bn Nvidia
+      licensing deal with Poolside plus ~109 staff hires, which the coverage
+      critic could not date to a primary source anywhere between 08-21 and
+      08-22 — the next run's first verification job.
       New 08-21: the stake ladder moved off the customer list and onto the
       ground itself. Nvidia took a minority equity position in Cloverleaf
       Infrastructure — a 2024-founded developer that assembles land, power and

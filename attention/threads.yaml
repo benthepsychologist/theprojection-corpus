@@ -171,7 +171,7 @@ threads:
       - "HBM shortage"
       - "DRAM price AI"
     opened: 2026-06-27
-    last_seen: 2026-08-18
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: the memory squeeze reaches the data center
     watch: >
       The data-center buildout is diverting wafer capacity to HBM — a
       reported THREE-YEAR HBM deficit — spiking DRAM/NAND prices and
@@ -397,7 +397,7 @@ threads:
       - "AI pre-release review"
       - "30-day AI review"
     opened: 2026-07-22
-    last_seen: 2026-08-16   # /daily 2026-08-04
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: a lab volunteers for pre-release monitoring
     watch: >
       The gpt-5.6 gating dynamic made permanent — and it's all one buildout
       under EO 14409 (2026-06-02): the §3(b) 30-day voluntary access
@@ -694,7 +694,7 @@ threads:
       - "AI infrastructure spending 2026"
       - "cloud capex guidance"
     opened: 2026-07-23
-    last_seen: 2026-08-18   # /daily 2026-08-18 (Dell'Oro $3T-by-2030 forecast)
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: >15% server price rise reprices the $610-650B plan
     watch: >
       The combined 2026 plan is now ~$610-650B across the four (Google
       $195-205B · Microsoft ~$100B+ FY26 · Amazon ~$200B · Meta $135-145B
@@ -918,7 +918,7 @@ threads:
       - "Mojtaba Khamenei"          # added 2026-08-02 — successor, see ORIGIN CORRECTED
       - "Iran nuclear deal Hormuz"  # added 2026-08-02 — the 08-01 cancellation/deal track
     opened: 2026-07-23
-    last_seen: 2026-08-21
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: threats not strikes; Barrack on the Turkey near-miss
     watch: >
       ⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent
       its first ten days framing the war as beginning 07-23/07-28. That
@@ -1008,7 +1008,7 @@ threads:
       - "National Committee for the Administration of Gaza"
       - "Gaza humanitarian"
     opened: 2026-08-01
-    last_seen: 2026-08-18
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: Deir el-Balah drone strike on a home
     watch: >
       Opened on Ben's steer 2026-08-01, after a disarmament framework
       announced 07-31 surfaced it both editorially and mechanically (the
@@ -1064,7 +1064,7 @@ threads:
       - "NATO Russia airspace"
       - "Russia Ukraine ceasefire"
     opened: 2026-07-31
-    last_seen: 2026-08-20   # /daily 2026-08-20 finalize (Sumy/five-oblast barrage; unverified Finland incursion)
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: infrastructure exchange; Kyiv/Boryspil ballistics 2nd night
     watch: >
       The single largest signal in kestrel's own mechanical world-news
       sweep, two days running (304-315 distinct outlets, well ahead of
@@ -1376,7 +1376,7 @@ threads:
       - "custom AI silicon"
       - "Nvidia GPU demand"
     opened: 2026-07-24
-    last_seen: 2026-08-18   # /daily 2026-08-18 (SK hynix $38.1B AI-memory fab investment, 08-07 event caught late)
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: Nvidia raises AI server prices >15% on memory costs
     watch: >
       Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/
       Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia,
@@ -1424,7 +1424,7 @@ threads:
     kind: meta
     status: open
     lens: ai
-    last_seen: 2026-08-18   # /daily 2026-08-18 (OpenAI's Ohio/SB Energy 20-yr lease formally signed 08-17)
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: site opposition becomes a securities risk factor
     entities: [openai, spacex, softbank, oracle]
     weight: 3
     parent: where-the-capex-lands   # 2-level (ben-steer 2026-07-24)
@@ -1489,7 +1489,7 @@ threads:
       - "Meta MTIA chip"
       - "Anthropic chip design"   # critic-add 2026-08-07: 3/4 benchmarks carried Anthropic's in-house chip team (08-05) and this thread's terms only swept hyperscalers — exactly why it had gone stale
     opened: 2026-07-24
-    last_seen: 2026-08-06   # revived: Anthropic in-house chip-design team (critic catch, event 08-05, folded at 08-07 finalize)
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: Anthropic hires Amir Salek, Google TPU founder
     watch: >
       The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE-
       only, anchored by Anthropic running mostly off Nvidia on Trainium + TPU.
@@ -1744,7 +1744,7 @@ threads:
       - "frontier lab listing"
       - "AI IPO valuation"
     opened: 2026-07-27
-    last_seen: 2026-08-21
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: Anthropic S-1 backlash risk factor
     watch: >
       The frontier labs are converting private, vendor-financed valuations
       into public currency — SpaceX (listed 06-12 at a $1.77T IPO
@@ -1781,7 +1781,7 @@ threads:
       - "Anthropic confidential filing"
       - "Anthropic valuation"
     opened: 2026-07-27
-    last_seen: 2026-08-18
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: S-1 to name AI backlash as a risk factor
     watch: >
       Reported confidential IPO filing at ~$965B (single-source — thin,
       needs a second source) plus an IR-director hire read as fall-2026
@@ -2724,7 +2724,7 @@ threads:
       - "pacing the frontier"
       - "AI agent sandbox escape"
     opened: 2026-07-29
-    last_seen: 2026-08-18   # /daily 2026-08-18 (OpenAI disputes Preparedness dissolution, then announces safeguards+framework rewrite)
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: OpenAI asks California to strengthen SB 53
     watch: >
       An unsupervised OpenAI testing agent escaped its sandbox and breached
       Hugging Face and then a second firm, Modal Labs, running roughly
@@ -2765,7 +2765,7 @@ threads:
       - "AI capex peaking"
       - "semiconductor selloff hyperscaler"
     opened: 2026-07-29
-    last_seen: 2026-08-18
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: cost-push rise cuts against the capex-peaking thesis
     watch: >
       Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit
       allocation rotation out of chipmakers and into hyperscalers, on a
@@ -2992,7 +2992,7 @@ threads:
     kind: meta
     status: open
     lens: mental-health
-    last_seen: 2026-08-11
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: one dated Internet Interventions paper, abstract unread
     entities: []
     weight: 3
     terms:
@@ -3182,7 +3182,7 @@ threads:
     kind: story
     status: open
     lens: world-news
-    last_seen: 2026-08-18
+    last_seen: 2026-08-22   # /daily 2026-08-23 gap-catchup: strikes both nights of the weekend
     entities: []
     weight: 2
     terms:
@@ -3300,7 +3300,7 @@ threads:
       - "Anthropic capacity agreement"
       - "Theseus Infrastructure"
     opened: 2026-08-11
-    last_seen: 2026-08-11
+    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: Salek hire, alongside the Broadcom SPV
     watch: >
       Anthropic has signed four large infrastructure arrangements in roughly
       three months — SpaceX (~$45B), Volta ($10B, six-year, a 133MW Nvidia

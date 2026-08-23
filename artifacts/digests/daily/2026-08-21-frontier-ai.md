@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-21
-status: building
+status: final
 window_start: 2026-08-21T05:00:00-04:00
-as_of: 2026-08-21T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-22T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-21
@@ -17,7 +17,13 @@ google_news_rss and the macro stack), a tier-2 chips/China cluster deep
 check, a tier-2 AI-governance/financing cluster deep check, a tier-3 cold
 rotation over the ten stalest threads, and a second tier-2 sweep aimed
 specifically at the enterprise agent-product gap the 08-20 coverage
-critic identified.*
+critic identified.
+
+**FINALIZED 2026-08-23** across the full 05:00 ET → 05:00 ET digest-day.
+A third pass on 08-23 covered the 15:00 ET → 05:00 ET remainder (two
+items, below) and ran the coverage critic against all four benchmarks.
+The two-day gap in `/daily` runs is why this closed on 08-23 rather than
+08-22.*
 
 ## Today's throughline
 
@@ -40,6 +46,29 @@ its watermarking and data-retention changes, the Nvidia Ohio scale-back,
 Supermicro's Taiwan detentions, OpenAI's teen product, Binance's Agent
 OS. One thing genuinely shipped inside the window, and it shipped from
 Hangzhou.
+
+**The evening, added on the 08-23 finalize, produced the two items the
+day actually needed.** OpenAI cut its flagship API price by more than 20%
+— a three-month promotion that undercuts Anthropic's Claude Opus 5 on
+both input and output — and Anthropic hired the man who founded Google's
+TPU program. Read together they are the same story from two ends: the
+labs competing on price at the top of the stack while trying to own the
+silicon underneath it.
+
+## Product & access
+
+- **OpenAI cut GPT-5.6 Sol API pricing by more than 20% for three
+  months.** Input drops $5→$4 per million tokens, output $30→$20, cached
+  input $0.50→$0.40, running through 2026-11-21 and applying to
+  pay-as-you-go API, Codex credits and eligible ChatGPT Work plans — not
+  Pro, Plus or Business subscriptions. At those levels it undercuts
+  Anthropic's Claude Opus 5 on both input and output. 🕰 Caught on the
+  08-23 finalize; posted to OpenAI's own developer forum at 19:41 in the
+  post's local timezone (most likely PT, so ~22:41 ET), which places it
+  in this digest-day's evening. ⚠️ The forum timestamp's timezone is not
+  stated on the page, so the exact hour is inferred and the date is not.
+  ([OpenAI developer forum](https://community.openai.com/t/20-price-reduction-for-gpt-5-6-sol-api-codex-credits-and-chatgpt-work/1391726))
+  <!-- k: e=openai axis=product-and-access -->
 
 ## Policy & governance
 
@@ -83,6 +112,24 @@ Hangzhou.
   caught by the cold-rotation sweep three days after the fact.
   ([Amazon newsroom](https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs))
   <!-- k: t=aws-capex e=amazon-aws axis=capital-and-corporate -->
+
+- **Anthropic hired the founding architect of Google's TPU program.**
+  Amir Salek — who founded and led Google's custom-silicon division from
+  2013 to 2022, covering the first seven generations of the Tensor
+  Processing Unit — joined Anthropic's compute team, reporting to James
+  Bradbury, as part of its push to design its own AI chips. 🕰 Caught on
+  the 08-23 finalize by the cold-rotation sweep. This is the single most
+  senior custom-silicon hire any frontier lab has made: the map has
+  tracked Anthropic as a company that *runs on* Trainium and TPU, and
+  this is the first hard evidence it intends to *design*. ⚠️ Bloomberg
+  reported it on 08-21 and its own article body was paywalled, so the
+  date rests on Bloomberg's dated URL plus three same-day secondary
+  outlets citing its "Friday" report — solid on the date, unpinned on the
+  hour.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware),
+  [Crypto Briefing](https://cryptobriefing.com/ex-google-amir-salek-joins-anthropic/),
+  [Seeking Alpha](https://seekingalpha.com/news/4636024-anthropic-hires-former-google-chip-developer-as-it-pursues-in-house-solution-report))
+  <!-- k: t=inhouse-silicon,anthropic-infrastructure-buildout e=anthropic,google axis=capital-and-corporate -->
 
 ## China
 
@@ -166,6 +213,11 @@ that digest.
   Supermicro's four detained Taiwan staff [detentions 06-30 and 07-28],
   OpenAI's ChatGPT for Teens [08-18], Binance's Agent OS [08-20], and a
   NuScale "Japan megadeal" stock move [underlying deal October 2025].
+- **New at the 08-23 finalize:** `inhouse-silicon` and
+  `anthropic-infrastructure-buildout` gained blocks for the Salek hire.
+  The OpenAI price cut is deliberately unthreaded — a promotional price
+  move is not a development on any thread this map holds, and inventing
+  one to give it a home would be worse than leaving it ambient.
 - No entity adds.
 
 ## 🧵 Thread candidates
@@ -203,6 +255,59 @@ that digest.
 08-19/08-20) and the Lubbock data-center moratorium petition (offered
 08-18/08-19) both still need an explicit track/drop call.
 
+## Appendix — Coverage check vs. benchmarks
+
+**Run on the 08-23 finalize against the four AI dailies.**
+
+**They led with → we missed:** ✅ **Nothing.** Three of four benchmarks
+were reachable and every candidate resolved either to something the map
+already had or to an event outside this digest-day.
+
+⚠️ **One unresolved lead, flagged rather than asserted: Nvidia's reported
+~$6-7bn licensing deal with Poolside** — non-exclusive model-factory
+licensing plus roughly 109 staff hires, framed by the WSJ as building a
+US alternative to Chinese AI. The Neuron carried it in its 08-21 "Around
+the Horn." **The critic could not pin a primary-source date**: Nvidia's
+own newsroom has nothing, TechCrunch's Nvidia tag carries no Poolside
+item at all, and secondary relative-dating spans 08-21 to 08-22 evening.
+That spread means it may belong to 08-22, not here. It is the next run's
+first verification job — and if it confirms, it is a significant item for
+`nvidia-vendor-financing` and `inhouse-silicon`, not a small one.
+
+**Both covered:** DeepSeek-V4-Flash-Vision-Exp (the map had it; no
+benchmark did) · Nvidia's China LPU story, which the map had already
+correctly filed to 08-20 as a re-dating · Meta's Azure spending, already
+folded into the 08-20 finalize · the four enterprise agent-product
+releases in TLDR AI's 08-21 edition — all four are the same items the
+map's own critic already folded into **08-20**, because TLDR reports a
+day behind.
+
+**We had → they didn't:** the MATCH Act stall (a 07-14 Senate cloture
+failure this map had been carrying as live, corrected with primary
+sourcing — no consumer AI newsletter tracks export-control legislative
+mechanics at this granularity) · the Apple/CXMT deadline going
+passed-silent (no newsletter tracks a congressional letter's due date as
+a story at all) · the Nvidia/Cloverleaf stake with the
+equity-moves-upstream framing · the AWS Shreveport $6bn add.
+
+**Out-of-window rejections** — recorded so they are not re-proposed:
+Anthropic's "Project Parka" Mac meeting-recorder, which TLDR led with but
+which resolves to a RuntimeWire reverse-engineering piece about an
+*unreleased, disabled* feature published **08-19** · ChatGPT's Apple
+Messages plug-in, in both TLDR and The Neuron, primary-sourced to
+TechCrunch **08-20** · AT&T's shift to open-weight models, The Neuron's
+top story, which has no single event date at all (coverage spans 07-29
+to 08-21).
+
+⛔ **Benchmark health — The Rundown AI is now a persistent access gap.**
+Its RSS feed 404s at the documented path and the fallback tops out at
+08-20; slug-guessing and a sitemap fetch either 404 or return
+**August 21 2025**, a year off. This is the **second consecutive day**
+this outlet has been unreachable — yesterday's pass recorded the same
+thing. One of four AI benchmarks is effectively offline, and
+`sources/benchmarks.yaml` does not yet say so.
+
+
 ---
 A thin day whose one real morning item was a correction: the MATCH Act,
 which would extend US export controls to DUV tools generally, has been
@@ -216,4 +321,9 @@ silent. The afternoon's only genuine ship came from DeepSeek — an
 experimental multimodal model the company benchmarks against Claude
 Opus 4.8 rather than against GPT — while ten other stories wearing
 today's date turned out on checking to be events from the preceding
-fortnight.
+fortnight. The evening, caught two days late, held the two items that
+mattered most: OpenAI cut its flagship API price more than 20% to undercut
+Claude Opus 5, and Anthropic hired the man who founded Google's TPU
+program. The coverage critic found no misses against three reachable
+benchmarks, and a fourth — The Rundown AI — was unreachable for the
+second day running.
