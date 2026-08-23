@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-22
-status: building
+status: final
 window_start: 2026-08-22T05:00:00-04:00
-as_of: 2026-08-23T10:00:00-04:00
-coverage: pending
+as_of: 2026-08-23T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-22
@@ -92,7 +92,15 @@ what makes it a decision rather than a repeat.
 
 ## Deals & filings
 
-- **Nothing in window.** The sweep specifically checked
+- **Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI** — a HK$80bn ($10.2bn) placement of 710 million ordinary shares at HK$112.70, a 3.6% discount to the last close, with all net proceeds going to "full stack" AI capabilities: chips, infrastructure, and model development and deployment. It is the largest primary follow-on offering ever by a Hong Kong-listed company and the world's third-largest this year, after Alphabet and Intel. Bookrunners: CICC, HSBC, Morgan Stanley, UBS. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416))
+  <!-- k: t=china-stack-independence,where-the-capex-lands e= axis=deals-and-filings sev=major -->
+
+- **The financials are what make it a capital story: a firm burning cash on AI is funding more AI by selling discounted equity** — Alibaba's June-quarter profit fell more than 75% to RMB 10.5bn (~$1.6bn) with a $6.6bn free-cash outflow, which the company attributes to rising AI project and compute costs. That is the public-market form of the vendor-financing loop this map tracks on the US side, with the dilution taken openly rather than structured away. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion))
+  <!-- k: t=china-stack-independence,ai-circular-financing-risk e= axis=deals-and-filings -->
+
+  ⚠️ **Both bullets are LATE CATCHES added 2026-08-23, and their placement on this digest-day is genuinely close.** The earliest verified report is the Financial Times at 08:33 UTC on 08-23 — 04:33 ET, which falls **twenty-seven minutes inside** this digest-day's 05:00 ET close. The HKEX filing time itself was not pinned. If it is later established as past 05:00 ET, these move to 08-23; they are cross-referenced on that page either way. ⚠️ An entity add for `alibaba` is **proposed and held** — it is absent from `board.yaml`'s org registry, so these entries carry thread tags but cannot be surfaced by actor.
+
+- **Otherwise nothing in window.** The sweep specifically checked
   `ai-circular-financing-risk`, `nvidia-vendor-financing`,
   `frontier-lab-ipos` and `pif-ai-buildout` and found no dated Saturday
   development on any of them. Everything that surfaced traces to 08-17 to
@@ -196,10 +204,48 @@ that actually rebuilds that file, reads **GDELT's BigQuery dataset via
 `bq`**, not the collector buffer, and `bq` failed today on expired gcloud
 credentials. ⛔ Only Ben can clear that, with `gcloud auth login`.
 
-## Appendix — Coverage check vs. benchmarks (PARTIAL)
+## Appendix — Coverage check vs. benchmarks (COMPLETE, 2026-08-23 15:00 ET pass)
 
-⚠️ **One of four benchmarks was checkable on a Saturday. This is a
-partial pass and the day stays `coverage: pending` because of it.**
+✅ **Completed on the afternoon pass. All four benchmarks are now
+resolved, and one real miss was found — Bloomberg Technology came back
+online mid-audit after being unreachable through both direct fetch and
+the reader proxy at the last two checks.**
+
+**🔍 CRITIC CATCH — they led with → we missed:** **Apollo's chief
+economist Torsten Slok found that AI is compressing wages rather than
+cutting jobs** (Bloomberg, 08-22). Apollo compared US Labor Department
+wage data across eleven high-AI-exposure occupations — computer
+programmers, customer service representatives, financial analysts —
+using **Anthropic's own Economic Index** as the exposure measure, and
+found employment effects "insignificant" while wage growth lagged, with
+the largest shortfall at the bottom of the income ladder. **The finding
+this produces is structural, not editorial: this map has no thread for
+AI's labour-market effect at all**, which is precisely why a benchmark
+led with it and this lens did not. Offered as a candidate on the 08-23
+page.
+([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/apollo-s-slok-says-ai-weighs-on-pay-without-cutting-jobs-yet),
+[Apollo — Daily Spark, primary](https://www.apollo.com/wealth/insights-news/insights/daily-spark/ai-lowers-wages-but-doesnt-cut-jobs))
+
+**Benchmark-by-benchmark resolution** — every one checked against a live
+feed or archive, none inferred:
+- **Money Stuff** — no edition; **confirmed dark since 08-13** ("Bilateral
+  OTC Goat Hedge") via a working RSS endpoint rather than assumed. Ten
+  days silent.
+- **Axios Pro Rata** — **no Saturday edition**; newest issue header reads
+  08-21, verified through the reader proxy.
+- **FT Unhedged** — **published**, checked, no dated miss (see below).
+- **Bloomberg Technology** — **published**, now reachable, one miss (above).
+  Its other 08-22 item was the Nvidia >15% price rise, which this digest
+  already leads with.
+
+⚠️ **Access-status changes, recorded as findings:** Bloomberg Technology
+reachable via the `r.jina.ai` proxy after being blocked through it · The
+Rundown AI's RSS returns 200 again after two days of 404s · FT Unhedged
+works on direct fetch again, no proxy needed · Money Stuff is reachable
+only at the `.rss` suffix on its author-page URL. Two undocumented
+workarounds also surfaced: **The Neuron** needs the reader proxy (direct
+and Googlebot UA both fail), and **Fierce Healthcare** needs a Googlebot
+UA on `/rss/xml` specifically.
 
 **They led with → we missed:** nothing. FT Unhedged's 08-22 edition led
 with *"Chart of the Week: Who owns government bonds?"* — the
@@ -220,9 +266,8 @@ structure.
 **We had → they didn't:** the Nvidia server price rise. FT Unhedged's
 Saturday edition did not carry it.
 
-**Not checked:** Money Stuff (weekday-only, and dark since 08-13
-regardless), Axios Pro Rata (weekday-only), Bloomberg Technology
-(access-blocked — see 🔄).
+**Not checked:** none. The partial pass this appendix opened with is
+now closed.
 
 ---
 US markets were shut, so Saturday's only real event was a price: Nvidia

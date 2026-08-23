@@ -3,105 +3,125 @@ lens: mental-health
 date: 2026-08-23
 status: building
 window_start: 2026-08-23T05:00:00-04:00
-as_of: 2026-08-23T10:00:00-04:00
+as_of: 2026-08-23T15:45:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-23
 
-*Curated agentic-interim, 05:00 ET → 10:00 ET. Opened by the same run that
-reconstructed 08-22 and finalized 08-21. Sources: one tier-2
-mental-health sweep across all twenty-five open threads covering the whole
-2026-08-21 15:00 ET → now gap, plus this run's `clinicaltrials` (229 kept),
-`openalex` (2,112 kept), `semantic_scholar` (661 kept) and journal-RSS
-collector legs.*
+*Curated agentic-interim, 05:00 ET → 15:45 ET in two passes: an opening
+pass at 10:00 ET and this afternoon pass covering 10:00 ET → 15:45 ET.
+Sources: one tier-2 mental-health sweep, one coverage-critic pass over
+08-22, a direct primary-source check against the California Legislature's
+own bill record, and this run's collector sweep.*
 
 ## Today's throughline
 
-**Nothing happened in this lens in the five hours this day has existed,
-and nothing happened on Saturday either.** That is two consecutive empty
-digest-days, which is a structural property of a lens driven by weekday
-corporate announcements, legislative calendars, court dockets and journal
-release schedules.
+**Nothing happened in this lens today, and the day's real work was
+closing two leads the map had been carrying unverified — one of which
+turned out to contain a dated development nobody had reported.** The
+08-22 digest held both deliberately, with the instruction that the
+California bill number "needs checking against the California
+legislature's own record before it goes anywhere near a timeline." That
+check is now done.
 
-⚠️ **What this morning's collector run did produce is a data-integrity
-finding, and it matters more than a thin news day.** The `rss` leg pulled
-38 articles from *Internet Interventions*, a core digital-mental-health
-journal, and stamped **every one of them with today's fetch time** as its
-timestamp. Reading the feed directly shows what they actually are: 36
-carry "Publication date: September 2026" or "December 2026" — they are
-**forthcoming issue contents, not new publications** — and exactly one
-carries an "Available online" date, 21 August 2026. So a naïve read of
-this morning's buffer would have produced 38 brand-new mental-health
-studies dated today, of which the true answer is one, dated two days ago.
-Details and the fix in 🔄 Map changes.
+**AB 2575 is real, the number was right, and it moved on 08-21** — read a
+second time, amended, and returned to second reading in the Senate. The
+coverage that surfaced it described the bill; the Legislature's own
+record shows it advancing, three days before this map looked. **The
+second lead needed no verification at all: Senator Warner's letter to
+Meta was already on this map's timeline, logged 08-20.** Recording that
+plainly matters more than it sounds — it is the difference between a lead
+and a duplicate, and two runs nearly spent budget re-confirming it.
+
+## Policy, regulation & legal
+
+- **California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21** — the bill (Ortega), titled "Health care services: artificial intelligence," was read a second time and amended on 2026-08-21 and sits in the Senate floor process. It would protect health-care workers from retaliation for overriding an AI system's clinical recommendation, mandate transparency about AI use and risks in care, and shift liability for AI-caused harm onto developers and facilities. Kaiser and the California Hospital Association oppose it. ([California Legislature — bill record, primary](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575), [Capital & Main](https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients))
+  <!-- k: t=ai-therapy-regulatory-reckoning,kaiser-ai-clinician-backlash e=kaiser-permanente axis=policy-regulation-and-legal -->
+
+- **A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over** — Capital & Main's 08-18 investigation, based on interviews with more than a dozen therapists, clinicians, academics and advocates across California and Wisconsin, reports weeks-long care delays, missed self-harm and suicide-risk flags, and patients rerouted to apps and call centres. It extends the NUHW regulatory complaint filed in late July alleging the same e-visit tool triages without clinician review. **This is the first hard staffing ratio this thread has had.** ([Capital & Main, primary](https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients))
+  <!-- k: t=kaiser-ai-clinician-backlash,ai-therapy-regulatory-reckoning e=kaiser-permanente axis=policy-regulation-and-legal -->
 
 ## 🧪 Clinical trials
 
-- **Nothing new or updated in window.** This run's `clinicaltrials` leg
-  returned 229 kept records against the watchlist's condition terms, none
-  a new registration or a posted result dated inside the window.
+- **Nothing new or updated in window.** Sunday; this run's
+  `clinicaltrials` leg was re-issued after the collector defect below and
+  lands after this digest's `as_of`.
 
 ## 🔬 Research & evidence
 
-- **One genuinely new paper, and it is on the previous digest-day.**
-  *Internet Interventions* posted "Consulting Dr. Google: Two experimental
-  studies on seeking mental-health information online" (Siebenhaar &
-  Alpers) as "Available online 21 August 2026" — the only one of the 38
-  buffered items with a real posting date. It is logged on the **08-21**
-  page, where it belongs. ⚠️ Its abstract could not be read: ScienceDirect
-  blocks both direct fetch and the reader proxy that clears other
-  publishers, so design, N and results are unverified.
+- **Nothing dated in window** — ⚠️ **but this lens's research collector
+  FAILED rather than returned empty.** `openalex` hit HTTP 429 on all 59
+  of its terms, including every mental-health one (`AI chatbot mental
+  health`, `psilocybin depression`, `digital therapeutic anxiety`,
+  `app-based cognitive behavioral therapy`, `single-session
+  intervention`, `smartphone depression intervention`), and wrote no
+  provenance manifest. **"No new research today" is therefore a failed
+  check on this lens, not a finding.** The cause is the `.env`
+  path defect this morning's ops brief documented: the key never loads,
+  so the source runs keyless into rate limits.
+
+- ⚠️ **And `mh-evidence-watch` is still an
+  unconfirmed check rather than a clean one** — the 08-22 sweep could not
+  retrieve full tables of contents for JAMA Psychiatry or Lancet
+  Psychiatry, and nothing this run changed that. It is now **twelve days**
+  since this weight-3 thread last moved (08-11), the longest of any
+  weight-3 thread on the map. That is a coverage gap, not a quiet field,
+  and it wants a targeted fix rather than another week of the same sweep.
 
 ## ⏳ Upcoming & expected
 
-**No flips; 46 pending.**
+**No flips; 48 pending** (two logged this run, below).
 
-**Nearest in this lens:** `fda-psychedelic-public-hearing` (2026-09-14,
-logged on the 08-22 page from a Federal Register notice).
+**Two expectations logged from this run's verification work:**
+- ✅ **`meta-warner-csam-response`** — due **08-26**, the deadline
+  Warner's own letter set for Meta to answer on AI-generated CSAM
+  advertisements. Silence past that date is itself the finding.
+- ✅ **`ca-ab2575-senate-floor-vote`** — due **08-31**, the end of
+  California's session, for AB 2575 to get a floor vote.
 
 ## 🔄 Map changes
 
-- **No timeline blocks** — nothing moved.
-- ⚠️ **A collector defect worth fixing, found this morning.** The `rss`
-  collector falls back to *fetch time* when a feed's items carry no
-  `<pubDate>` element, and writes that into the buffer's `ts` field
-  indistinguishably from a real publication date. ScienceDirect's journal
-  feeds are exactly this case: no `<pubDate>` anywhere, with the real date
-  sitting in the item `<description>` as prose ("Publication date:
-  September 2026" / "Available online 21 August 2026"). **The failure mode
-  is the re-index trap arriving through the collector rather than through
-  an agent** — a curator trusting `ts` would log three dozen forthcoming
-  papers as today's news. The honest fix is for a fallback timestamp to be
-  marked as *unknown* rather than as *now*; parsing the ScienceDirect
-  description prose would be a bonus. Routed as an ops brief, not fixed
-  here — the collector is the research seat's code, not this repo's.
-- ⚠️ **`mh-evidence-watch` is now the stalest weight-3 thread on the map**
-  at twelve days since it last moved (08-11). It is unmoved this pass and
-  the reason is partly a failed check, not a negative result: neither this
-  morning's sweep nor last night's could retrieve full tables of contents
-  for JAMA Psychiatry or Lancet Psychiatry.
-- **Two 08-18 leads remain unverified and carried forward** from the
-  08-22 page — the Capital & Main investigation into Kaiser's algorithmic
-  triage (including a reported California bill, AB 2575, protecting
-  clinicians who override an AI recommendation) and Senator Warner's
-  letter to Meta on AI-generated CSAM ads. **Neither is logged**; this
-  session exhausted its web-search budget before it could date either
-  against a primary source. First job next run.
+- **Two timeline blocks written, both late catches, both dated to the day
+  the event actually happened rather than today:**
+  `kaiser-ai-clinician-backlash` takes an **08-21** block (AB 2575's
+  Senate action) and an **08-18** block (the Capital & Main
+  investigation) — its first movement since 08-14.
+  `ai-therapy-regulatory-reckoning` takes the **08-21** AB 2575 block.
+- ✅ **Carried lead CLOSED as a duplicate, not as a finding: the Warner
+  letter to Meta is already on this map.** Verified against Warner's own
+  Senate press release — dated 08-18, citing Tech Transparency Project
+  research into 50-plus AI-generated CSAM ad units running November 2025
+  to early August 2026 across Facebook, Instagram, Messenger and Threads,
+  with a **08-26 response deadline**. All of it was logged to
+  `meta-ai-csam-ads` under ⟨daily 2026-08-20⟩. The 08-22 digest suspected
+  exactly this and held it rather than double-logging, which was the
+  right call; it is now confirmed and should not be re-swept.
+  ([Sen. Warner, primary](https://www.warner.senate.gov/newsroom/press-releases/warner-presses-meta-ceo-on-ads-featuring-child-sexual-abuse-material-and-non-consensual-intimate-images/))
+- **Confirmed as re-syndications, not events** — the Wisconsin Examiner
+  (08-21) and Times of San Diego (08-22) pickups of the Capital & Main
+  piece both resolve to the 08-18 original.
+- **No entity adds, none proposed.** `kaiser-permanente` already carries
+  both new blocks.
+- ⛔ **Collector defect (engine, out of write zone)** — `attention/`
+  resolves from `KESTREL_INSTANCE` while `buffer/` and `provenance/`
+  resolve from `CLOUD_RESEARCHER_CORPUS`; setting one alone fetches for
+  minutes and writes nothing. Routed as a brief. Full detail on the
+  frontier-AI page.
 
 ## 🧵 Thread candidates
 
-**None offered.** Two empty days is not a position to offer candidates
-from.
+**None offered.** A day whose only substance is verification of
+previously-carried leads is not a day to offer candidates from. The two
+leads that were open are now closed — one promoted to two timeline
+blocks, one identified as an existing entry.
 
 ---
-Nothing happened in the mental-health lens today, and nothing happened
-yesterday either — two consecutive empty digest-days, which is what a
-weekend looks like in a lens driven by weekday corporate, legislative,
-court and journal calendars. The morning's real finding was mechanical
-rather than editorial: the collector stamped 38 forthcoming journal
-articles with today's fetch time because their feed carries no publication
-date, and only one of them is genuinely new — a paper posted 08-21 that is
-logged on that day's page. Two 08-18 leads about Kaiser's algorithmic
-triage and a Senate letter to Meta stay unverified and carry to the next
-run.
+California AB 2575 was verified against the Legislature's own record: the
+bill number the coverage reported is correct, it would shift liability
+for AI-caused patient harm onto AI developers and facilities, and it was
+read a second time and amended on 08-21. The Capital & Main investigation
+into Kaiser's algorithmic triage was confirmed and gave this map its first
+hard staffing number, nine mental-health triage clinicians down to three.
+Senator Warner's letter to Meta needed no verification at all — it was
+already logged on 08-20, and saying so stops a third run from chasing it.

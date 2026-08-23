@@ -5,6 +5,24 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-23 — An intelligence claim, not a strike: Hezbollah said to be rearming through Syria during the ceasefire
+
+- **An Israeli security source told reporters that Hezbollah's weapons
+  smuggling from Syria has increased during the current ceasefire, and
+  alleged Iran's Quds Force is financing it.** This is a claim about how
+  the front is evolving under the truce rather than a kinetic event.
+  ⚠️ **Sourced to an unnamed Israeli security source with no named
+  official or primary document behind it** — recorded at that weight, and
+  it should not harden into a fact on this timeline without corroboration.
+  ([The Times of Israel — live blog](https://www.timesofisrael.com/liveblog-august-23-2026/))
+  ⟨daily 2026-08-23⟩
+- **The same day, Mossad's chief met Syria's foreign minister with the
+  stated aim of reducing Israel-Syria tensions** — an escalation claim and
+  a de-escalation track running in parallel, on the same day, through the
+  same country.
+  ([The Times of Israel — live blog](https://www.timesofisrael.com/liveblog-august-23-2026/))
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-22 — Strikes on both nights of the weekend, thin on detail
 
 - **Israeli warplanes struck the Ali al-Taher ridge in Nabatieh twice

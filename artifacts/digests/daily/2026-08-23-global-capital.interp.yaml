@@ -1,0 +1,44 @@
+# 2026-08-23-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase (see the 08-21 sidecar's
+# header for why the [:50] truncation is load-bearing).
+#
+# ONE entry. Nothing written for the FIMA/euro plumbing bullet or the
+# fiscal-backdrop bullet: the first is evidence FOR this interpretation
+# rather than a separate claim needing one, and the second is a set of
+# stated figures whose meaning the bullet already carries. Forcing an
+# interpretation onto either would be padding, which is exactly what this
+# file is not for. Read against attention/capital-context.yaml
+# (asof 2026-08-18).
+
+deutsche-bank-calls-the-treasury-interventions-so:
+  mechanism: >
+    Holding long-end yields down without reducing net supply forces the
+    adjustment into the currency instead, because foreign holders reprice
+    the same bonds through the exchange rate.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The dollar keeps weakening as buyback size scales, and FX becomes
+        the visible price of the yield policy.
+      why: >
+        This is the falsifiable form of the claim — it predicts the
+        currency, not the curve, is what moves on the next Treasury
+        announcement.
+      precedent: >
+        The joint US-Japan yen operation was funded by selling euros, and
+        Japan drew dollars through FIMA repo rather than selling
+        Treasuries: the same avoidance, already observable.
+    - direction: >
+        Yields retrace upward within weeks and the buybacks read as a
+        failed signal rather than as repression.
+      why: >
+        A buyback creates no new money and changes no net supply, so it
+        works only as a signal, and a signal the market is free to test.
+      precedent: >
+        Treasury's own 08-19 bump fully round-tripped by that Friday,
+        which this map recorded on the 08-21 page before any mechanism
+        was attached to it.
+  context_note: >
+    The repression framing is one strategist's characterisation, not an
+    official description, and no Treasury or Fed statement adopts it.

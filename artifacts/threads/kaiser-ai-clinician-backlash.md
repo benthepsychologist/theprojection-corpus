@@ -13,6 +13,53 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-21 (late catch, added 2026-08-23) — AB 2575 confirmed real, and it moved on the Senate floor
+
+- **California AB 2575 exists, the bill number reported alongside the
+  Kaiser investigation is correct, and it was read a second time and
+  amended on 2026-08-21.** Verified directly against the California
+  Legislature's own bill record, not the coverage: author Assemblymember
+  Liz Ortega, subject "Health care services: artificial intelligence,"
+  amending the Business and Professions, Civil, Health and Safety, and
+  Labor Codes. Status is in the Senate floor process, ordered returned to
+  second reading. **The 08-22 digest specifically held this pending a
+  check against the legislature's own record; that check is now done and
+  the number is confirmed.**
+  ([California Legislature — bill record, primary](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575))
+  ⟨daily 2026-08-23⟩
+- **What the bill would do:** protect health-care workers from retaliation
+  for overriding an AI system's clinical recommendation, require
+  transparency about AI use and risks in care, and shift liability for
+  AI-caused patient harm onto AI developers and facilities. Kaiser and the
+  California Hospital Association oppose it. This is the legislative form
+  of exactly the conflict this thread tracks — a clinician's right to
+  override the model, written as statute.
+  ([Capital & Main](https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients))
+  ⟨daily 2026-08-23⟩
+
+## 2026-08-18 (late catch, added 2026-08-23) — The staffing number behind the algorithm: nine triage clinicians to three
+
+- **Capital & Main published an investigation finding that a Kaiser
+  Permanente Northern California facility's mental-health triage team
+  shrank from nine clinicians to three as work shifted to an automated
+  e-visit screening tool in place since 2023.** Based on interviews with
+  more than a dozen therapists, clinicians, academics and advocates in
+  California and Wisconsin, it reports weeks-long care delays, missed
+  self-harm and suicide-risk flags, and patients rerouted to apps and call
+  centres rather than clinicians. **This is the first hard staffing ratio
+  this thread has had** — the union complaint it builds on alleged the
+  practice; this puts a number on it.
+  ([Capital & Main, primary](https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients))
+  ⟨daily 2026-08-23⟩
+- **It extends, rather than resets, the NUHW regulatory complaint already
+  on this thread** — filed roughly three weeks earlier (late July, first
+  reported by CalMatters) alleging the same e-visit tool triages without
+  clinician review in violation of state law.
+  ⟨daily 2026-08-23⟩
+  <!-- Carried unverified from the 08-22 digest; verified this run. The
+       08-21 Wisconsin Examiner and 08-22 Times of San Diego pickups are
+       re-syndications of this 08-18 original, not separate events. -->
+
 ## 2026-08-14 — Mediation window's scheduled last day closes with no outcome posted either side
 
 - **The mediation window Kaiser itself described as "August 11 to 14"

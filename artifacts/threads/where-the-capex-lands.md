@@ -13,6 +13,35 @@ the aggregate AI capex physically land? Chips · datacenters · power · land.
 Sibling to Hyperscaler Capex (the by-spender cut); most destinations have no
 thread yet — that's the worklist.
 
+## 2026-08-22 (late catch, added 2026-08-23) — Alibaba raises $10.2bn in Hong Kong's largest-ever follow-on, and puts 100% of it into AI
+
+- **Alibaba launched a HK$80bn ($10.2bn) share placement — 710 million
+  ordinary shares at HK$112.70, a 3.6% discount to the last close — and
+  says 100% of net proceeds go to its "full stack" AI capabilities:
+  chips, infrastructure, and model development and deployment.** It is
+  the largest primary follow-on offering ever by a Hong Kong-listed
+  company and the world's third-largest of the year, after Alphabet and
+  Intel. Bookrunners: CICC, HSBC, Morgan Stanley and UBS.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion), [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/alibaba-proposes-hong-kong-share-placement-worth-10-billion-4872416))
+  ⟨daily 2026-08-23⟩ <!-- sev=major -->
+- **The financial context is what makes it a capital story rather than a
+  product one:** Alibaba's June-quarter profit fell more than 75% to
+  RMB 10.5bn (~$1.6bn) with a $6.6bn free-cash outflow, which the company
+  attributes to the rising cost of AI projects and computing
+  infrastructure. **A firm burning cash on AI is funding more AI by
+  selling equity at a discount** — the public-market version of the
+  vendor-financing loop this map tracks on the US side, with the
+  dilution taken openly instead.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion))
+  ⟨daily 2026-08-23⟩
+- ⚠️ **Digest-day placement, stated because it is genuinely close.** The
+  earliest verified report of this is the Financial Times at 08:33 UTC on
+  08-23 — 04:33 ET, which falls **27 minutes inside** digest-day 08-22's
+  05:00 ET close. It is bucketed to 08-22 on that basis, and
+  cross-referenced on the 08-23 page. The exact HKEX filing time was not
+  established; if it is later pinned past 05:00 ET, this belongs on 08-23.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-17 — A named destination gets a physical shape: Pike County, Ohio, 8 IT-GW, built in phases
 
 - **The signed PORTS-Pike Technology Campus deal (Nvidia/OpenAI/SB

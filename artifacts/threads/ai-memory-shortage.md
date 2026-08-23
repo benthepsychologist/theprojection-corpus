@@ -12,6 +12,22 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-23 — Micron puts a number on the memory wall: compute 3x every two years, HBM bandwidth 2x
+
+- **Micron's Raghu Sreeramaneni told Hot Chips 2026 that compute is
+  scaling roughly 3x every two years while HBM bandwidth scales only
+  about 2x — so the memory wall is widening, not closing.** Presented as
+  "Evolving Memory Architectures for AI" on day one of the conference at
+  Stanford (08-23 to 08-25). This is the technical floor under yesterday's
+  capex story: if bandwidth structurally trails compute, the memory
+  premium Nvidia blamed its >15% server price rise on is not a cycle to
+  wait out.
+  ([ServeTheHome — conference coverage](https://www.servethehome.com),
+  [Hot Chips 2026 programme](https://hotchips.org))
+  ⟨daily 2026-08-23⟩
+  <!-- Relayed via conference coverage, not a Micron press release; the
+       08-23 date is confirmed against Hot Chips' own published schedule. -->
+
 ## 2026-08-22 — The memory squeeze arrives in the data center as a capex story
 
 - **Nvidia is raising AI server prices more than 15% and naming DRAM and

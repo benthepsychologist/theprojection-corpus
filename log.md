@@ -4854,3 +4854,139 @@ reported ~$6-7bn Poolside licensing deal (date unpinnable between 08-21 and
 08-22), the Capital & Main investigation into Kaiser's algorithmic triage
 (reported 08-18, including a California bill numbered AB 2575), and Senator
 Warner's 08-18 letter to Meta on AI-generated CSAM ads. First jobs next run.
+
+## 2026-08-23 (15:00 ET) — `/daily`: 08-23 extended 10:00 → 15:45 ET, 08-22 finalized on an audit that caught what an inference would have missed
+
+The morning run had opened 08-23 empty and left 08-22 `building` on the
+reasoning that its benchmarks are weekday-only, so a Saturday coverage
+critic "would return no misses by construction." **This run tested that
+reasoning instead of repeating it, and it was right for eleven of twelve
+benchmarks and wrong for the twelfth.** Bloomberg Technology — logged
+unreachable through both direct fetch *and* the r.jina.ai proxy at the
+last two checks — came back online mid-audit and produced the day's only
+confirmed miss. 08-22 is now `final` across all five files with its three
+critic-bearing lenses `coverage: done`.
+
+**Dispatch:** one collector sweep (re-issued mid-run, see below) plus
+five agentic sweeps — four lens/cluster sweeps and one coverage critic —
+then four briefing writers. All ten returned; none stalled. Four
+primary-source checks were made by this session rather than delegated,
+and three of the four changed what got written.
+
+### Substance
+
+**The day's biggest item is political, not technical.** Texas Governor
+Greg Abbott told ABC's *This Week* that data-center developers "basically
+dug their own grave" and "got the backlash they deserve," and set four
+conditions on new sites ending with the one that matters — they must
+**first obtain local-community approval**. Verified against ABC's own
+transcript, not the coverage. Two days after this map recorded site
+opposition appearing as a risk factor in Anthropic's coming S-1, it is a
+governing posture in the state that hosts more of the buildout than any
+other, from a governor who called Texas the "epicentre of AI development"
+nine months ago and has taken roughly $20M from data-center executives.
+**The only `sev=major` of the run.**
+
+**In capital, the long-end story finally acquired a mechanism.** Deutsche
+Bank's George Saravelos, published at 13:22 ET inside the window, calls
+the Treasury buybacks and the joint US-Japan yen operation "soft-form
+financial repression" and argues the suppressed pressure resurfaces in
+the dollar rather than disappearing. The evidence is plumbing: the US
+funded its share of the yen support by selling **euros** rather than
+Treasuries, and Japan drew dollars through the Fed's **FIMA repo
+facility** instead of selling its Treasuries. Written up with an
+interpretation sidecar (`plausible`, two scenarios, both with precedents).
+
+**Two late catches landed on 08-22 as it was being finalized.** Alibaba's
+**HK$80bn ($10.2bn)** placement — the largest primary follow-on ever by a
+Hong Kong-listed company, 100% of proceeds into full-stack AI, against a
+June quarter whose profit fell >75% with a $6.6bn free-cash outflow.
+⚠️ It is bucketed to 08-22 by **twenty-seven minutes** on a wire
+timestamp (04:33 ET, inside the 05:00 ET close); the HKEX filing time was
+not pinned, and the digests say so on their face rather than asserting
+the placement silently. And Apollo's Torsten Slok finding **AI is
+compressing wages rather than cutting jobs** — eleven high-exposure
+occupations measured against **Anthropic's own Economic Index**,
+employment effects "insignificant," wage growth lagging worst at the
+bottom.
+
+**Three carried leads closed, recovering budget two runs had been
+spending on them.** The Kaiser/Capital & Main investigation confirmed —
+a triage team **from nine clinicians to three** — and California **AB
+2575 verified against the Legislature's own record**, where it turned out
+to have *moved* on 08-21 (read a second time, amended, in the Senate
+floor process). The 08-22 digest had explicitly held that bill number
+pending exactly this check; it was correct to. Warner's letter to Meta
+turned out to be a **duplicate, already logged 08-20** — worth recording
+plainly, since two runs nearly re-confirmed it. And Nvidia/Poolside is
+**date-pinned to 08-20 and still single-source**, traced to one leaked
+investor letter with no company confirmation; two runs have failed to
+upgrade it and it should not be chased a third time.
+
+**10 timeline blocks · 14 `last_seen` updates · 2 expectations logged ·
+3 `actor-doing` roll-ups refreshed (openai, micron, kaiser-permanente) ·
+1 interpretation · 4 briefings applied · 0 entity adds applied (1
+proposed, held).**
+
+### ⛔ The engine defect this run found the other half of
+
+The 10:00 ET run filed an ops brief showing `collect` resolves
+`attention/` and `buffer/`+`provenance/` from two different signals, and
+concluded "that the failure is loud is luck, not design." **This run hit
+the mirror image and it is not loud at all.** Running with only
+`KESTREL_INSTANCE` set — the fix implied by that brief — resolves the
+attention map correctly but leaves `BUFFER_DIR` and `PROVENANCE_DIR` as
+`None`. The sweep **ran for eight minutes, fetched normally, and wrote
+nothing**: no traceback, no warning, healthy CPU, still running when it
+was killed. Caught only because the first provenance file never appeared.
+The working invocation needs **both** variables. Filed as an addendum
+brief to `kestrel-ops` and committed there.
+⚠️ **Not pushed** — `kestrel-ops/INBOX.md` says commit and stop, so
+today's three briefs (two from the morning, one from this run) all sit
+unpushed on that repo's `main`. Flagging rather than acting on it.
+
+### The collector sweep, and two sources that failed rather than emptied
+
+The re-issued sweep completed: **16 source manifests, 3,834 items** —
+google_news_rss 3,768 of them (6,264 fetched across 524 terms), rss 60,
+github and semantic_scholar 3 each, the other eleven legitimately zero on
+a five-hour Sunday window.
+
+⚠️ **`openalex` returned HTTP 429 on all 59 of its terms and wrote no
+manifest; `gdelt` wrote no manifest either.** Both are recorded as
+UNCHECKED, not clean — and the openalex failure is **the second defect
+from this morning's ops brief observed live**: the `.env` auto-load
+points at a file that does not exist, so `OPENALEX_API_KEY` never loads
+and the source runs keyless straight into rate limits. That brief
+predicted this consequence in the abstract; this run has it happening.
+The practical cost lands on mental health, whose research check for the
+day is a failed one rather than a negative one, and the digest says so.
+
+### Still broken, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials expired**, five days now — the
+  mechanically-scored world-news candidate pool cannot rebuild.
+  `gcloud auth login` is a browser flow only Ben can complete. And when
+  it does rebuild, the GDELT leg is capping at **8 of 524 terms**.
+- ⚠️ **The read payload is over the 600 KB soft cap for a sixth
+  consecutive run and still climbing:** 1241 → 1254 → 1308 → 1331 → 1384
+  → **1423 KB**. The degradation rule the warning names is still not
+  implemented, so the warning stays advisory.
+- 💡 **Four entity adds now proposed and held across three days** —
+  Samsung, SK Hynix, Micron, and now Alibaba. All four set the price or
+  direction of AI capex; none can be tagged on a bullet or surfaced by
+  actor. This has stopped being a queue and become a gap.
+- ⚠️ **`mh-evidence-watch` is an unconfirmed check, not a clean one** —
+  twelve days without movement, the longest of any weight-3 thread, and
+  the sweep still cannot retrieve JAMA Psychiatry or Lancet Psychiatry
+  tables of contents.
+
+### Open for Ben
+
+**The Treasury long-end thread decision is now four days old and has a
+deadline inside five.** Three dated tests land before Friday — Cook's
+removal deadline 08-26, Jackson Hole 08-27 to 08-29, Warsh's first
+keynote as chair 08-28 — and there is nowhere on the map to put their
+outcomes. Recommendation on the front page: open it before Thursday.
+Second, new this run: **AI as a wage story rather than a jobs story**,
+which the map has no thread for at all.

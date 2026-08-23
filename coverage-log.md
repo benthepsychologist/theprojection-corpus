@@ -3936,3 +3936,92 @@ The critic still worked, via proxies and search snippets, but the
 absence-of-evidence half of every entry above is weaker than it was when
 this log started. Two critics also hit the session WebSearch cap mid-run.
 Recorded as a standing condition rather than a one-day complaint.
+
+## 2026-08-23 (15:00 ET pass) — finalized 2026-08-22, all four lenses; the "no misses by construction" assumption tested rather than repeated
+
+**The finding of this pass is methodological, and it produced a real
+miss.** The 10:00 ET run had deferred 08-22's critic on the reasoning
+that the three critic-bearing lenses' benchmarks are weekday-only, so a
+Saturday pass "would return no misses by construction." That reasoning
+was correct in outcome for **eleven of twelve** benchmarks. It was wrong
+for the twelfth, and the twelfth is the one that mattered: **Bloomberg
+Technology came back online during this audit**, after being logged
+unreachable through both direct fetch *and* the `r.jina.ai` proxy at the
+previous two checks — and it produced the only confirmed miss of the day.
+
+**A benchmark logged as blocked is not a benchmark that will stay
+blocked.** The whole value of this pass was refusing to convert "these
+outlets don't publish Saturdays" into "there is nothing to check." Every
+one of the twelve was checked against a live feed, archive page, or dated
+URL probe, and marked "no Saturday edition" only where the actual date
+gap was visible — a Friday entry followed directly by a Sunday/Monday
+one, or a 307/404 on Saturday-dated URLs while weekday URLs returned 200.
+
+### global-capital / 2026-08-22 — one confirmed miss
+- **Missed (1, confirmed):** **Apollo's chief economist Torsten Slok
+  finding that AI is compressing wages rather than cutting jobs.** Apollo
+  compared US Labor Department wage data across eleven high-AI-exposure
+  occupations — computer programmers, customer service representatives,
+  financial analysts — using **Anthropic's own Economic Index** as the
+  exposure measure. Employment effects came back "insignificant"; wage
+  growth lagged, with the largest shortfall at the bottom of the income
+  ladder.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/apollo-s-slok-says-ai-weighs-on-pay-without-cutting-jobs-yet),
+  [Apollo — Daily Spark, primary](https://www.apollo.com/wealth/insights-news/insights/daily-spark/ai-lowers-wages-but-doesnt-cut-jobs))
+- **Map effect: none possible, and that IS the finding.** This map has
+  **no thread for AI's labour-market effect at all** — not a thin one, not
+  a stale one, none. This is the same structural shape the 08-21 pass
+  recorded twice ("an axis the lens claims and has no thread for"), now a
+  third occurrence. Offered as a thread candidate on the 08-23 page.
+- ⚠️ **Flagged as a candidate miss rather than a certain one, on
+  sourcing:** what was fetched is Bloomberg's Technology *section front
+  page*, not a confirmed capture of the "Bloomberg Technology" newsletter
+  send. The story is real and dated 08-22 either way (verified
+  independently against Apollo's own Daily Spark), so it is folded in;
+  what is not established is that it was the newsletter's lead.
+- **Resolved, not missed:** Money Stuff — no edition, and **confirmed
+  dark since 08-13** ("Bilateral OTC Goat Hedge") via a working RSS
+  endpoint rather than inferred from a blocked page. Ten days silent.
+  Axios Pro Rata — no Saturday edition, newest header 08-21. FT Unhedged
+  — published, led with "Chart of the Week: Who owns government bonds?",
+  the third consecutive edition on the Treasury long end; **not scored a
+  miss** (a chart-of-the-week analysis is not a dated event and the
+  digests carry the substance), but it is the evidence the long-end
+  thread decision now rests on.
+
+### frontier-ai / 2026-08-22 — clean, audited
+- **No benchmark published a Saturday edition**, each verified: The
+  Rundown AI (no weekend entry anywhere 08-06 to 08-20) · TLDR AI
+  (`2026-08-22` and `2026-08-15` both HTTP 307; weekdays 200) · The Neuron
+  (archive 08-19 → 08-20 ×2 → 08-21 → 08-23) · The AI Daily Brief
+  (`/e/2026-08-22` 404, `/e/2026-08-21` 200).
+- 📋 **Operationally useful:** The AI Daily Brief **publishes Sunday but
+  not Saturday**. Tomorrow's pass therefore has a real 08-23 edition to
+  check 08-23 against — this is the one benchmark that will produce a
+  genuine Sunday comparison.
+
+### mental-health / 2026-08-22 — clean, audited
+- **No benchmark published a Saturday edition:** Behavioral Health
+  Business (still silent since 08-20, re-confirmed not assumed) · STAT
+  Health Tech (health-tech vertical newest 08-20; its general feed's
+  Friday items are not Health Tech) · Fierce Healthcare (three items
+  08-21, then 08-20, 08-18) · MobiHealthNews (08-19 → 08-20 → 08-21).
+
+### ⚠️ Benchmark access health — four changes and two new workarounds
+| benchmark | prior state | now | note |
+| --- | --- | --- | --- |
+| Bloomberg Technology | blocked direct AND via proxy | **reachable via `r.jina.ai`** | produced this pass's only miss |
+| The Rundown AI | RSS 404, two days running | **reachable, HTTP 200 direct** | re-test next run; may not hold |
+| FT Unhedged | needed the proxy | **direct fetch works again** | documented workaround may now be unnecessary |
+| Money Stuff | "dark since 08-13", inferred | still dark, **confirmed via RSS** | `.rss` suffix on the author-page URL is the only working path |
+
+**Two workarounds not previously in `sources/benchmarks.yaml`, and worth
+adding:** **The Neuron** fails on direct fetch *and* on a Googlebot UA —
+only the `r.jina.ai` proxy returns its archive. **Fierce Healthcare**
+needs a Googlebot UA specifically against `/rss/xml`, not
+`/feeds/all/rss.xml`.
+
+**Read the pattern, not the row:** three of these four moved in a week,
+in both directions. Access state is not a property to record once — it is
+a thing to re-check every pass, and the cost of assuming it is stable is
+exactly the miss above.

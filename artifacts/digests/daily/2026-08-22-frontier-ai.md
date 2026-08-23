@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-22
-status: building
+status: final
 window_start: 2026-08-22T05:00:00-04:00
-as_of: 2026-08-23T10:00:00-04:00
-coverage: pending
+as_of: 2026-08-23T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-22
@@ -178,6 +178,41 @@ it.
 track/drop call): the enterprise agent-product race (offered 08-20,
 08-21), export-control evasion as its own front (08-21), and the RASA
 remote-access loophole (08-19, 08-20).
+
+
+## Appendix — Coverage check vs. benchmarks (2026-08-23 15:00 ET pass)
+
+✅ **No misses. Clean by publication schedule — and now audited
+publication-by-publication rather than assumed.** This matters because the
+morning run deferred this pass on the reasoning that the benchmarks are
+weekday-only and a Saturday critic "would return no misses by
+construction." That reasoning was correct in outcome, but it was an
+inference. This pass checked it.
+
+**They led with → we missed:** nothing. **No benchmark published a
+Saturday edition**, so there was nothing to compare against:
+- **The Rundown AI** — no Saturday edition. Its RSS is **reachable again**
+  after two days of 404s; every dated item from 08-06 to 08-20 falls on a
+  weekday, with no 08-15/16 or 08-22/23 entry anywhere in the feed.
+- **TLDR AI** — no Saturday edition. `tldr.tech/ai/2026-08-22` and the
+  prior Saturday `2026-08-15` both return HTTP 307; weekday dates
+  (`08-20`, `08-21`) return 200.
+- **The Neuron** — no Saturday edition. Archive runs 08-19 → 08-20 (×2) →
+  08-21 → 08-23, with 08-22 absent from the gap.
+- **The AI Daily Brief** — no Saturday edition. Episode list runs 08-17 →
+  08-19 → 08-20 → **08-23**; direct probes confirm `/e/2026-08-22` 404s
+  while `/e/2026-08-21` returns 200. **This outlet publishes Sunday but
+  not Saturday** — worth knowing, since it means tomorrow's pass has a
+  real 08-23 edition to check against.
+
+**Both covered / we had → they didn't:** not applicable — with no
+benchmark output on the day, there is no overlap to score either way.
+
+**Not checked:** none.
+
+⚠️ **New workaround, not previously documented:** The Neuron is
+unreachable both directly (Cloudflare 403) and with a Googlebot UA; only
+the `r.jina.ai` reader proxy returns its archive.
 
 ---
 Nvidia told the manufacturers that build AI servers for Microsoft, Google

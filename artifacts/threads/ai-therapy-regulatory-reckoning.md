@@ -13,6 +13,25 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-21 (late catch, added 2026-08-23) — California moves a bill that puts liability for AI clinical harm on the developer
+
+- **California AB 2575 (Ortega), "Health care services: artificial
+  intelligence," was read a second time and amended on 2026-08-21 and sits
+  in the Senate floor process.** Verified against the Legislature's own
+  bill record. It would protect health-care workers from retaliation for
+  overriding an AI system's clinical recommendation, mandate transparency
+  about AI use and risks in care, and **shift liability for AI-caused
+  patient harm onto AI developers and facilities**. Kaiser and the
+  California Hospital Association oppose it.
+  ([California Legislature — bill record, primary](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575))
+  ⟨daily 2026-08-23⟩
+- **Why it belongs on this thread and not only on the Kaiser one:** this
+  thread's thesis is that the capability/approval gap gets closed by
+  litigation rather than evidence. A liability-shifting statute is the
+  other mechanism — it prices the gap directly instead of waiting for a
+  case to. It also runs in parallel with SB 903, already tracked below.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-18 — OpenAI ships the rule Colorado proposed as law seven days ago
 
 - **ChatGPT for Teens launched with an under-18 model spec that bans

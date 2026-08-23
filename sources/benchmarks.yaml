@@ -87,6 +87,51 @@
 #   sits with primary/academic/consumer-press channels the critic set does
 #   not cover. Read a weekend "no misses" accordingly.
 
+# - **ACCESS RE-VERIFIED 2026-08-23** (critic pass finalizing 08-22). Four
+#   states changed in a week, in BOTH directions — read that as the rule:
+#   access state is not recorded once, it is re-checked every pass. The
+#   cost of assuming stability was a real miss this pass (Bloomberg had
+#   been logged unreachable and had come back online).
+#
+#   - **Bloomberg Technology: NOW REACHABLE via the reader proxy.**
+#     Previously blocked both directly and through r.jina.ai. Working:
+#         https://r.jina.ai/https://www.bloomberg.com/technology
+#     Direct fetch still 403s. This is what surfaced the Apollo/Slok
+#     wage-compression miss on 08-22.
+#
+#   - **Money Stuff: use the `.rss` suffix on the AUTHOR PAGE.** The
+#     author page itself and the r.jina.ai proxy on it are both still
+#     CAPTCHA-blocked; this endpoint is the one path that works:
+#         https://www.bloomberg.com/opinion/authors/ARbTQlRLRjE/matthew-s-levine.rss
+#     Confirmed dark since 2026-08-13 THROUGH THIS ENDPOINT, i.e. really
+#     silent rather than merely unreachable — a distinction the previous
+#     "dark since 08-13" note could not make.
+#
+#   - **The Rundown AI: reachable again**, https://www.therundown.ai/feed
+#     returns HTTP 200 direct after two days of 404s. Unstable historically
+#     — re-test rather than trusting this note.
+#
+#   - **FT Unhedged: direct fetch works again**, no proxy needed. The
+#     `?format=rss` note above stands; the later "now needs the proxy"
+#     escalation did not persist.
+#
+#   - **The Neuron: NEW, was undocumented.** Direct fetch 403s (Cloudflare)
+#     and a Googlebot UA does NOT clear it. Only the reader proxy works:
+#         https://r.jina.ai/https://www.theneurondaily.com
+#
+#   - **Fierce Healthcare: NEW, and the PATH matters.** Googlebot UA
+#     against `/rss/xml` specifically — not `/feeds/all/rss.xml`:
+#         curl -s -A 'Googlebot/2.1 (+http://www.google.com/bot.html)' \
+#              https://www.fiercehealthcare.com/rss/xml
+#
+#   - **Publication-schedule fact worth keeping:** The AI Daily Brief
+#     publishes SUNDAY but not Saturday (verified by direct URL probe:
+#     /e/2026-08-22 404s, /e/2026-08-21 returns 200). It is the only
+#     benchmark of the twelve that gives a Sunday digest-day something
+#     real to be checked against. Every other benchmark in all three
+#     lenses is weekday-only — verified outlet by outlet on 2026-08-23,
+#     not inferred from the label.
+
 critics:
   ai:
     daily:

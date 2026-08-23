@@ -1706,3 +1706,43 @@ expectations:
     # ledger entry is what stops the thread being swept blind in the
     # meantime.
     status: pending
+
+  - id: meta-warner-csam-response
+    claim: >
+      Meta answers Senator Mark Warner's 2026-08-18 letter on AI-generated
+      CSAM advertisements, by the 08-26 deadline the letter itself set
+    due: 2026-08-26
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: meta-ai-csam-ads
+    entities: [meta]
+    logged: 2026-08-23
+    logged_by: curate-add
+    source: https://www.warner.senate.gov/newsroom/press-releases/warner-presses-meta-ceo-on-ads-featuring-child-sexual-abuse-material-and-non-consensual-intimate-images/
+    what_confirms: >
+      a Meta response letter or public statement, or Warner's office
+      publishing/acknowledging one. Silence past 08-26 is itself the
+      finding — the letter demanded per-ad detection and NCMEC-referral
+      timelines, Ad Library persistence, and revenue from eleven named
+      Chinese ad resellers.
+
+  - id: ca-ab2575-senate-floor-vote
+    claim: >
+      California AB 2575 (Ortega, "Health care services: artificial
+      intelligence") gets a Senate floor vote before the session ends
+    due: 2026-08-31
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: ai-therapy-regulatory-reckoning
+    entities: [kaiser-permanente]
+    logged: 2026-08-23
+    logged_by: curate-add
+    source: https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575
+    what_confirms: >
+      the Legislature's own bill record showing a floor vote result. The
+      bill was read a second time and amended 2026-08-21 and is in the
+      Senate floor process; it would shift liability for AI-caused patient
+      harm onto AI developers and facilities, and Kaiser and the
+      California Hospital Association oppose it.

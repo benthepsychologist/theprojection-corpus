@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-22
-status: building
+status: final
 window_start: 2026-08-22T05:00:00-04:00
-as_of: 2026-08-23T10:00:00-04:00
-coverage: pending
+as_of: 2026-08-23T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-22
@@ -124,6 +124,39 @@ expectation.
 **None offered.** A day with no verified development is not a day to
 offer candidates from; the two leads above are verification work, not
 track/drop decisions.
+
+
+## Appendix — Coverage check vs. benchmarks (2026-08-23 15:00 ET pass)
+
+✅ **No misses. Clean — and now checked against live feeds rather than
+inferred from a weekday-only label.** The morning run deferred this pass
+on the assumption that a Saturday critic would return nothing by
+construction; this pass verified that assumption outlet by outlet instead
+of repeating it.
+
+**They led with → we missed:** nothing.
+- **Behavioral Health Business** — no new output; **confirmed still silent
+  since 08-20**, newest item "Advanced Recovery Systems Acquires Promises
+  Behavioral Health" (08-20 20:42 GMT), reached via the documented
+  Googlebot-UA curl workaround. Unchanged from the last known state, now
+  re-confirmed rather than assumed.
+- **STAT Health Tech** — no Saturday edition. The health-tech category
+  feed's newest item is 08-20 08:30 GMT, then 08-19, 08-17, 08-14 — no
+  08-21 or 08-22 entry in that vertical at all. (STAT's *general* feed has
+  Friday items; those are not Health Tech.)
+- **Fierce Healthcare** — no Saturday edition. Three items on 08-21, then
+  08-20, then 08-18. No 08-22 entry.
+- **MobiHealthNews** — no Saturday edition. Dated bylines run 08-19 →
+  08-20 → 08-21 with no 08-22 item present.
+
+**Both covered / we had → they didn't:** not applicable — no benchmark
+published on the day.
+
+**Not checked:** none.
+
+⚠️ **New workaround, not previously documented:** Fierce Healthcare is
+Cloudflare-blocked on direct fetch; a **Googlebot UA against `/rss/xml`**
+(not `/feeds/all/rss.xml`) is what works.
 
 ---
 Nothing verifiable happened in the mental-health lens on Saturday, across

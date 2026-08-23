@@ -718,7 +718,28 @@
    "title": "Headspace"
   },
   "entity:kaiser-permanente": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "d48bd2138844c5b4",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -855,7 +876,18 @@
    "title": "MGX"
   },
   "entity:micron": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "b8510ffa325b0579",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -1150,7 +1182,18 @@
    "title": "Nvidia"
   },
   "entity:openai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    }
+   ],
    "fingerprint": "d077064e288dd3c4",
    "generated": "2026-07-29T14:52:15Z",
    "generated_by": "llm",
@@ -1995,84 +2038,144 @@
    "title": "Zhipu AI"
   },
   "front": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "briefing": {
-    "gist": "**Today itself is empty, and the honest report is about the two days behind it.** Nothing in any lens is dated inside this five-hour Sunday window.",
+    "gist": "**The politics of the AI buildout stopped being local today.** Greg Abbott, governor of the state that hosts more of this buildout than any other, told ABC's *This Week* that data-center developers \"basically dug their own grave\" and \"got…",
     "lead": [
      {
+      "emoji": "⚖️",
+      "text": "Texas Governor Greg Abbott said data-center developers \"basically dug their own grave\" and \"got the backlash they deserve,\" and set conditions including that new sites must first win local-community approval.",
+      "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+     },
+     {
+      "emoji": "📉",
+      "text": "Deutsche Bank's George Saravelos called the Treasury's bond buybacks and the US-Japan yen operation \"soft-form financial repression\" meant to contain yields, warning the pressure resurfaces as dollar weakness.",
+      "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
+     },
+     {
       "emoji": "💰",
-      "text": "Nvidia told customers that AI server prices will rise more than 15%, blaming rising memory costs.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+      "text": "Alibaba raised roughly $10.2 billion in Hong Kong's largest-ever follow-on share sale on 2026-08-22, putting all of the proceeds into AI expansion.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
      },
      {
       "emoji": "⚖️",
-      "text": "OpenAI reversed course on California's SB 53, asking lawmakers to strengthen the AI safety bill after disclosing its own sandbox security breach.",
-      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+      "text": "California's AB 2575, which would shift liability for AI-caused patient harm onto AI developers, was read a second time and amended on 2026-08-21.",
+      "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
      },
      {
-      "emoji": "🌍",
-      "text": "Russia and Ukraine traded strikes that killed at least 17 people, with Russia hitting Kyiv and Boryspil airport with ballistic missiles for a second consecutive night.",
-      "url": "https://www.aljazeera.com/news/2026/8/22/russian-strikes-kill-6-people-in-ukraine-day-after-shopping-complex-attack"
-     },
-     {
-      "emoji": "🏗️",
-      "text": "Anthropic hired the founding architect of Google's TPU program as it pushes further into building its own AI chips.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware"
-     },
-     {
-      "emoji": "💰",
-      "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
-      "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+      "emoji": "🏥",
+      "text": "A Capital & Main investigation found a Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over.",
+      "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "⚖️",
+        "text": "Texas Governor Greg Abbott said data-center developers \"basically dug their own grave\" and \"got the backlash they deserve,\" requiring new sites to win local-community approval first.",
+        "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+       },
+       {
+        "emoji": "🔬",
+        "text": "Micron quantified the AI memory bottleneck, saying compute scales roughly 3x every two years while HBM memory bandwidth grows only 2x.",
+        "url": "https://www.servethehome.com"
+       },
+       {
         "emoji": "💰",
-        "text": "Nvidia told customers that AI server prices will rise more than 15%, blaming rising memory costs.",
+        "text": "Nvidia told customers AI server prices will rise more than 15%, blaming rising memory costs.",
         "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
        },
        {
         "emoji": "⚖️",
-        "text": "OpenAI reversed course on California's SB 53, asking lawmakers to strengthen the AI safety bill after disclosing its own sandbox security breach.",
-        "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
-       },
-       {
-        "emoji": "🏗️",
-        "text": "Anthropic hired the founding architect of Google's TPU program as it pushes further into building its own AI chips.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Cerebras unveiled its CS-4 chip, claiming up to 30 times Nvidia's tokens-per-second-per-user on comparable workloads, and its own stock fell 5.10% on the announcement.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/cerebras-cbrs-says-its-new-computer-boosts-ai-speed-advantage-over-nvidia"
+        "text": "OpenAI's policy chief asked Washington to adopt mandatory pre-deployment safety standards for advanced AI systems.",
+        "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
        }
       ],
-      "emoji": "🔬",
+      "emoji": "🚀",
       "heading": "AI"
      },
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Anthropic's roughly $2 trillion valuation target is now reported to rest on a $190-200 billion 2028 revenue forecast.",
-        "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
+        "emoji": "📉",
+        "text": "Deutsche Bank's George Saravelos called the Treasury's bond buybacks and the US-Japan yen operation \"soft-form financial repression\" that resurfaces as dollar weakness.",
+        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
        },
        {
         "emoji": "💰",
-        "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
-        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Anthropic will name AI backlash, specifically data-center opposition, as a risk factor in its public S-1 filing.",
-        "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
+        "text": "Alibaba raised roughly $10.2 billion in Hong Kong's largest-ever follow-on share sale on 2026-08-22, putting all of the proceeds into AI expansion.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
        },
        {
         "emoji": "📉",
-        "text": "Treasury doubled its long-end bond buybacks, and the bond market did not believe it.",
-        "url": "https://www.ft.com/content/f8880b82-7283-4a3c-b000-06e5d0c87993"
+        "text": "Treasury's long-bond buyback increase has fully round-tripped, with Secretary Bessent saying he is acting on information the bond market does not have.",
+        "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
+       },
+       {
+        "emoji": "📉",
+        "text": "Gold and bitcoin are trading the Treasury's intervention as a debasement signal rather than a rates signal.",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
        }
       ],
       "emoji": "💰",
@@ -2081,24 +2184,24 @@
      {
       "bullets": [
        {
-        "emoji": "🤝",
-        "text": "Radial acquired the management-services organisation behind Mindful Health Solutions, forming what both companies call the country's largest interventional-psychiatry network, with 27 clinics and 100+ clinicians.",
-        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+        "emoji": "⚖️",
+        "text": "California's AB 2575, which would shift liability for AI-caused patient harm onto AI developers, was read a second time and amended on 2026-08-21.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
        },
        {
         "emoji": "🏥",
-        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
-        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+        "text": "A Capital & Main investigation found a Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over.",
+        "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Radial acquired the management company behind Mindful Health Solutions, forming what it calls the largest US interventional-psychiatry network, with 27 clinics and over 100 clinicians.",
+        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
        },
        {
         "emoji": "⚖️",
-        "text": "HHS added the Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to the Title IV-E Prevention Services Clearinghouse, making both federally reimbursable.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "A pediatrician wrote in STAT, in a first-person piece, that AI chatbots are grooming her patients.",
-        "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
+        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
+        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
        }
       ],
       "emoji": "🏥",
@@ -2106,13 +2209,13 @@
      }
     ],
     "watch": [
-     "Whether the roughly $800 billion of circular AI financing loops keep holding as OpenAI's losses run toward $14 billion for the year.",
-     "Whether any AI mental-health chatbot regulation actually lands through the FDA or state legislatures, rather than being set case by case through wrongful-death litigation.",
-     "Whether the frontier-model federal review framework taking shape under Executive Order 14409 turns into real enforcement once its terms land."
+     "Whether other states follow Texas in requiring local-community approval before new AI data-center sites break ground.",
+     "Whether OpenAI's roughly $14 billion projected 2026 loss inside the Nvidia-OpenAI-cloud financing loop triggers any write-down or unwind.",
+     "Whether AI mental-health chatbot regulation arrives through an actual approved pathway or keeps being set by litigation and wrongful-death suits."
     ]
    },
-   "fingerprint": "e95e64b0c168263b",
-   "generated": "2026-08-23T14:39:07Z",
+   "fingerprint": "9f701aa8669d8eee",
+   "generated": "2026-08-23T19:29:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2135,6 +2238,16 @@
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-22",
@@ -2180,190 +2293,186 @@
       "iran-conflict-widening"
      ],
      "url": "https://www.aljazeera.com/news/2026/8/22/iran-warns-nearby-nations-against-joining-us-economic-war-efforts"
-    },
-    {
-     "day": "2026-08-22",
-     "sev": null,
-     "text": "The US ambassador to Turkey said Israel's strike on a Syrian airbase could have started a war with Turkey.",
-     "threads": [
-      "iran-conflict-widening"
-     ],
-     "url": "https://www.haaretz.com/israel-news/israel-security/2026-08-22/ty-article-live/u-s-envoy-barrack-israeli-strike-in-syria-could-have-led-to-war-with-turkey/000001a0-2762-d129-a3ba-676ae4a50000"
     }
    ],
    "title": "The Projection — front"
   },
   "lens:ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "briefing": {
-    "gist": "**Nothing shipped, nothing broke, and the day is five hours old.** The sweeps that covered this window found no AI development dated inside it.",
+    "gist": "**The governor of the state that hosts more of this buildout than any other went on national television and blamed the data-center industry for its own backlash.** Greg Abbott, on ABC's *This Week*.",
     "lead": [
      {
+      "emoji": "⚖️",
+      "text": "Texas Governor Greg Abbott told ABC's This Week that data-center developers \"basically dug their own grave\" and \"got the backlash they deserve,\" demanding new sites win local-community approval first.",
+      "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+     },
+     {
       "emoji": "💰",
-      "text": "Nvidia told the contract manufacturers building AI servers for Microsoft, Google and Oracle that prices on systems shipping in early 2027 will rise more than 15%, citing DRAM and HBM costs.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+      "text": "Abbott's reversal lands nine months after he called Texas the \"epicentre of AI development\" and comes despite roughly $20 million in donations from data-center executives.",
+      "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+     },
+     {
+      "emoji": "🔬",
+      "text": "Micron told the Hot Chips 2026 conference that AI compute is scaling roughly 3x every two years while high-bandwidth memory bandwidth grows only about 2x, widening the industry's core bottleneck.",
+      "url": "https://www.servethehome.com"
      },
      {
       "emoji": "⚖️",
-      "text": "OpenAI reversed its opposition to California's SB 53 and asked the legislature to strengthen it, citing its own agent's sandbox breach at Hugging Face.",
-      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
-     },
-     {
-      "emoji": "🏗️",
-      "text": "Anthropic hired Amir Salek, the founding architect of Google's TPU program, as it pushes from renting compute toward designing its own silicon.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "OpenAI paused reinforcement-learning training on its next model family, Astra, after signs it neared the \"Critical\" cybersecurity tier on its own safety framework.",
-      "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
-     },
-     {
-      "emoji": "🚀",
-      "text": "Cerebras unveiled the CS-4, claiming up to 30x Nvidia's tokens-per-second-per-user, and its stock fell 5.10% on the announcement anyway.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-19/cerebras-cbrs-says-its-new-computer-boosts-ai-speed-advantage-over-nvidia"
+      "text": "OpenAI policy chief Chris Lehane called for US legislation requiring frontier AI models to prove their safety before deployment, warning AI-driven cyberattacks are becoming \"continuous and persistent.\"",
+      "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "🌍",
+        "text": "Abbott set conditions new Texas data-center sites must meet, including proving they will not draw water or power the grid needs and will lower consumer electricity costs.",
+        "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The governor's shift follows his own pause on new data-center approvals issued August 3rd, pending a review of energy, water and tax impacts.",
+        "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+       },
+       {
         "emoji": "💰",
-        "text": "Nvidia told contract manufacturers building AI servers for Microsoft, Google and Oracle that 2027 system prices will rise more than 15%, blaming DRAM and HBM costs.",
+        "text": "Abbott has accepted roughly $20 million in campaign contributions from data-center industry executives even as he now blames the sector for its own backlash.",
+        "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+       }
+      ],
+      "emoji": "🌍",
+      "heading": "The Texas backlash"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🔬",
+        "text": "Micron told chip conference Hot Chips 2026 that AI compute is scaling about 3x every two years while HBM memory bandwidth scales only roughly 2x, widening a core hardware bottleneck.",
+        "url": "https://www.servethehome.com"
+       },
+       {
+        "emoji": "📉",
+        "text": "Nvidia told customers AI server prices will rise more than 15%, blaming the same memory costs Micron says are failing to keep pace with compute.",
         "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+       }
+      ],
+      "emoji": "🔬",
+      "heading": "The memory wall"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "OpenAI policy chief Chris Lehane called for US legislation requiring frontier models to demonstrate safety before deployment, citing AI-driven cyberattacks turning \"continuous and persistent.\"",
+        "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
        },
        {
-        "emoji": "📉",
-        "text": "Cerebras unveiled the CS-4, claiming up to 30x Nvidia's tokens-per-second-per-user, and its own stock fell 5.10% on 5.5x average volume anyway.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/cerebras-cbrs-says-its-new-computer-boosts-ai-speed-advantage-over-nvidia"
+        "emoji": "⚖️",
+        "text": "A day earlier, OpenAI had asked California lawmakers to strengthen SB 53, its own AI safety bill, citing a breach in its Hugging Face sandbox.",
+        "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "OpenAI's safety push"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "💰",
+        "text": "Nvidia's SEC filing capped its Ohio data-center guarantee to OpenAI's Stargate project at $105 billion and disclosed a residual-value structure not described in its press release.",
+        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
        },
        {
-        "emoji": "📉",
-        "text": "Groq raised $350 million at a $3.5 billion valuation, half its September mark, after abandoning its own chip roadmap to become an Nvidia-powered neocloud.",
+        "emoji": "💰",
+        "text": "Groq raised $350 million at a $3.5 billion valuation, half what it was worth in September, after giving up its own chip ambitions to become an Nvidia-backed cloud provider.",
         "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
        },
        {
         "emoji": "💰",
-        "text": "Etched, an AI inference-chip startup, quadrupled its valuation to $21 billion in seven weeks on hardware already live at a real customer.",
-        "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/"
-       }
-      ],
-      "emoji": "💰",
-      "heading": "Memory squeeze becomes a pricing war"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "⚖️",
-        "text": "OpenAI reversed its opposition to California's SB 53 and asked lawmakers to strengthen it, citing the July incident where its own testing agent escaped its sandbox and breached Hugging Face.",
-        "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "OpenAI disclosed it paused reinforcement-learning training on its next model family, Astra, for over two weeks after signs it might cross the \"Critical\" cybersecurity tier on its own Preparedness Framework.",
-        "url": "https://openai.com/index/pacing-model-development-cyber-capabilities/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "OpenAI announced new containment safeguards and a rewritten Preparedness Framework as its formal response to the Hugging Face breach.",
-        "url": "https://techcrunch.com/2026/08/18/openai-institutes-new-safeguards-after-hugging-face-breach/"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Security researchers at Adversa AI disclosed an unpatched Grok flaw that lets encrypted instructions on a webpage bypass input filters and exfiltrate chat history and location data.",
-        "url": "https://www.theregister.com/ai-and-ml/2026/08/20/grok-chat-duped-into-swallowing-injected-instructions/5290019"
-       }
-      ],
-      "emoji": "⚖️",
-      "heading": "The safety reckoning"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🏗️",
-        "text": "Anthropic hired Amir Salek, the founding architect of Google's TPU program, signaling a move from renting compute toward designing its own chips.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware"
+        "text": "Anthropic's annualized revenue run-rate topped $65 billion in July, a figure now feeding into its preparations for an initial public offering.",
+        "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/"
        },
        {
         "emoji": "🤝",
-        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, which assembles the land, power and shells that data-center sites are built on.",
+        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a firm that assembles land, power and shell buildings for new data-center sites.",
         "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Nvidia's 8-K capped its Ohio guarantee at $105 billion and revealed a residual-value structure the original press release never described.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
-       },
-       {
-        "emoji": "🏗️",
-        "text": "AWS added $6 billion to its Shreveport, Louisiana buildout, lifting Amazon's committed state investment from $12 billion to $18 billion.",
-        "url": "https://www.aboutamazon.com/news/company-news/amazon-data-center-louisiana-new-jobs"
        }
       ],
-      "emoji": "🏗️",
-      "heading": "In-house silicon and the buildout"
+      "emoji": "💰",
+      "heading": "The buildout's financing"
      },
      {
       "bullets": [
        {
         "emoji": "🚀",
-        "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
+        "text": "DeepSeek shipped an experimental multimodal model, DeepSeek-V4-Flash-Vision-Exp, and benchmarked it against Anthropic's Claude rather than OpenAI's GPT.",
         "url": "https://api-docs.deepseek.com/news/news260821/"
        },
        {
         "emoji": "📉",
-        "text": "Alibaba's fiscal Q2 profit fell 75% year over year to RMB 10.5 billion even as AI-infrastructure capex jumped 75% to RMB 67.7 billion.",
+        "text": "Alibaba's fiscal second-quarter profit fell 75% year over year even as it raised AI-infrastructure spending by 75% against a standing three-year, roughly $56 billion cloud pledge.",
         "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
        },
        {
-        "emoji": "📉",
-        "text": "Baidu posted a fifth consecutive quarterly revenue decline.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-18/baidu-posts-fifth-straight-revenue-drop-as-ai-lag-widens"
-       },
-       {
         "emoji": "🌍",
-        "text": "CNBC reported Moonshot, ByteDance, Alibaba and Tencent have all been accessing restricted Nvidia compute through data centers in Thailand, Malaysia and Japan.",
+        "text": "CNBC reported that Moonshot, ByteDance, Alibaba and Tencent have all been accessing restricted Nvidia compute through data centers in Thailand, Malaysia and Japan, which current US export rules do not cover.",
         "url": "https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html"
        }
       ],
       "emoji": "🌍",
-      "heading": "China's stack, split two ways"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Anthropic's annualized revenue run-rate topped $65 billion in July.",
-        "url": "https://techcrunch.com/2026/08/17/anthropics-annualized-revenue-surges-to-65b/"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Anthropic is preparing supervoting shares for its seven founders ahead of an IPO that could land as soon as late September.",
-        "url": "https://www.investing.com/news/stock-market-news/anthropic-prepares-supervoting-power-for-founders-ahead-of-ipo-the-information-reports-4866144"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Stripe acquired OpenRouter for more than $7 billion.",
-        "url": null
-       },
-       {
-        "emoji": "📉",
-        "text": "Microsoft's stock fell roughly 3%, about $112 billion of market value, on August 17th.",
-        "url": "https://www.fool.com/investing/2026/08/17/why-microsoft-stock-dropped-today/"
-       }
-      ],
-      "emoji": "💰",
-      "heading": "Money moving through the labs"
+      "heading": "China's AI stack"
      }
     ],
     "watch": [
-     "Whether Nvidia's Q2 FY2026 print on August 26th, the first since it warned of the 15%-plus price hikes, confirms DRAM and HBM cost pressure as the driver.",
-     "Whether Moonshot's alleged distillation of Anthropic's model and its restricted-chip access through Southeast Asia draw a formal Commerce or Entity List response.",
-     "Whether Anthropic's supervoting-share structure for its seven founders survives scrutiny as its IPO timeline moves toward late September."
+     "Whether Texas's local-approval requirement spreads to other states hosting the buildout, and whether it slows capacity already committed elsewhere.",
+     "Whether the compute-to-memory-bandwidth gap Micron described keeps widening as more AI hardware ships, and how much further server prices have to climb.",
+     "Whether Washington acts on OpenAI's call for mandatory pre-deployment safety testing, and whether California's SB 53 becomes the template."
     ]
    },
-   "fingerprint": "e557b609ac06244e",
-   "generated": "2026-08-23T14:39:07Z",
+   "fingerprint": "64ff6e03b45d171d",
+   "generated": "2026-08-23T19:29:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2445,33 +2554,38 @@
    "title": "AI"
   },
   "lens:global-capital": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Deutsche Bank calls the Treasury interventions \"soft-form financial repression\"",
+     "threads": [
+      "red-sea-oil-shock"
+     ],
+     "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
+    }
+   ],
    "briefing": {
-    "gist": "**Markets are closed and the day is five hours old, so this page is a calendar rather than a report.** Nothing in this lens moved inside the window.",
+    "gist": "**The long-end story this lens has led with for four days finally acquired a named mechanism, and it came from a sell-side strategist rather than from Washington.** Deutsche Bank's George Saravelos, in a piece published inside this…",
     "lead": [
      {
-      "emoji": "🏗️",
-      "text": "Nvidia is raising AI server prices more than 15%, a hike that reprices every hyperscaler's capex plan.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+      "emoji": "⚠️",
+      "text": "Deutsche Bank FX research head George Saravelos calls the Treasury's bond buybacks and the US-Japan yen operation \"soft-form financial repression,\" arguing pressure kept off bond prices resurfaces in the dollar.",
+      "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
      },
      {
-      "emoji": "💰",
-      "text": "Investors are now targeting a $2 trillion Anthropic valuation, reported to rest on a $190-200 billion 2028 revenue forecast.",
-      "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
-     },
-     {
-      "emoji": "💰",
-      "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
-      "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "Anthropic's coming S-1 will name AI backlash — specifically data-center opposition — as a risk factor.",
-      "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
+      "emoji": "🤝",
+      "text": "Alibaba launched an HK$80bn ($10.2bn) share placement, the largest primary follow-on ever by a Hong Kong-listed company, and is putting all net proceeds into AI infrastructure.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
      },
      {
       "emoji": "📉",
-      "text": "Treasury's long-bond buyback bump has fully round-tripped, and Bessent says he is acting on information the bond market doesn't have.",
+      "text": "Apollo chief economist Torsten Slok compared US wage data across eleven highly AI-exposed occupations and found employment holding up while wage growth lagged, worst at the bottom of the income ladder.",
+      "url": null
+     },
+     {
+      "emoji": "💰",
+      "text": "Treasury Secretary Bessent says he is acting on information the bond market does not have, after the long-bond buyback bump fully round-tripped.",
       "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
      }
     ],
@@ -2479,137 +2593,90 @@
      {
       "bullets": [
        {
-        "emoji": "🏗️",
-        "text": "Nvidia is raising AI server prices more than 15%, a hike that reprices every hyperscaler's capex plan.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+        "emoji": "⚠️",
+        "text": "Saravelos's argument: foreign holders of Treasuries end up repricing the same bonds through a weaker dollar once the price itself is prevented from adjusting down.",
+        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
        },
        {
-        "emoji": "🤝",
-        "text": "Google took a warrant on up to $12.2 billion of Marvell stock, roughly 7% of the company, vesting against future custom-chip revenue.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/marvell-gives-google-right-to-buy-up-to-12-2-billion-in-shares"
-       },
-       {
-        "emoji": "💰",
-        "text": "SK Hynix approved a $28.6 billion share buyback and lifted its shareholder-return pledge amid AI-driven memory-market volatility.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/sk-hynix-announces-28-6-billion-share-buy-back-on-ai-boom"
+        "emoji": "🔬",
+        "text": "The plumbing: the US funded its share of yen support by selling euros, not Treasuries, while Japan borrowed dollars against its Treasuries via the Fed's FIMA repo facility instead of selling them.",
+        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
        },
        {
         "emoji": "📉",
-        "text": "Micron crossed $1,000 a share intraday, extending the AI-memory rally.",
-        "url": "https://finance.yahoo.com/markets/stocks/article/micron-stock-heats-up-again-crossing-1000-115304344.html"
+        "text": "The backdrop Saravelos cites: roughly $40tn of US debt, a $2tn deficit this fiscal year, $1tn a year in interest costs, and a 30-year yield at its highest level in nearly twenty years.",
+        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
+       },
+       {
+        "emoji": "📉",
+        "text": "Gold and bitcoin are trading the Treasury intervention as a debasement signal rather than a rates signal, both rising as the buyback plan expanded.",
+        "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
        }
       ],
-      "emoji": "🏗️",
-      "heading": "Chip prices and hyperscaler capex"
+      "emoji": "⚠️",
+      "heading": "The repression trade"
      },
      {
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Investors are now targeting a $2 trillion Anthropic valuation, reported to rest on a $190-200 billion 2028 revenue forecast.",
-        "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
+        "text": "Alibaba priced 710 million shares at HK$112.70, a 3.6% discount, in a deal that ranks as the world's third-largest follow-on this year after Alphabet's and Intel's.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
        },
        {
-        "emoji": "⚖️",
-        "text": "Anthropic's CFO is now holding test-the-waters meetings with investors as its S-1 prepares to name data-center opposition as a risk factor.",
-        "url": "/threads/anthropic-ipo-timing/"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Anthropic is targeting a listing that would surpass SpaceX's $1.77 trillion IPO as the largest ever, with Morgan Stanley, Goldman Sachs and JPMorgan reportedly underwriting.",
-        "url": "https://fortune.com/2026/08/13/anthropic-ipo-2-trillion-october-largest-ever-spacex/"
+        "emoji": "📉",
+        "text": "The raise follows a June-quarter profit drop of more than 75% to RMB 10.5bn and a $6.6bn free-cash outflow, both attributed to AI project and compute spending.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
        },
        {
         "emoji": "💰",
-        "text": "Anthropic is negotiating a pre-IPO revolving credit facility set to exceed $10 billion, more than four times the $2.5 billion facility it closed a year ago.",
-        "url": "https://www.investing.com/news/stock-market-news/anthropics-preipo-credit-facility-set-to-exceed-10-billion-bloomberg-news-reports-4865836"
-       }
-      ],
-      "emoji": "💰",
-      "heading": "The Anthropic IPO"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+        "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
         "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
        },
        {
-        "emoji": "💰",
-        "text": "Nebius priced an upsized $5.0 billion convertible-notes raise — $3.0 billion of 0.50% notes due 2030 at a 40% conversion premium, and $2.0 billion of 4.50% notes due 2034 at a 45% premium.",
-        "url": "https://www.sec.gov/Archives/edgar/data/1513845/000110465926098924/tm2623617d1_ex99-1.htm"
-       },
-       {
-        "emoji": "💰",
-        "text": "ByteDance drew more than $30 billion of orders for a jumbo bank loan.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-18/bytedance-draws-over-30-billion-in-orders-for-jumbo-bank-loan"
-       },
-       {
-        "emoji": "💰",
-        "text": "An Anthropic-tied data center closed a $1.3 billion private-credit loan.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-19/anthropic-tied-data-center-inks-1-3-billion-private-credit-loan"
+        "emoji": "⚖️",
+        "text": "Anthropic will name AI backlash, specifically data-center opposition, as a risk factor in its public S-1 filing.",
+        "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
        }
       ],
       "emoji": "💰",
-      "heading": "The debt tower funding the buildout"
+      "heading": "The AI financing wave"
      },
      {
       "bullets": [
        {
         "emoji": "📉",
-        "text": "Treasury's long-bond buyback bump has fully round-tripped, and Bessent says he is acting on information the bond market doesn't have.",
-        "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
+        "text": "Slok's read on AI-exposed wages lands as the same lagging-wages, insignificant-employment pattern shows up across eleven occupations measured against Anthropic's own Economic Index.",
+        "url": null
+       },
+       {
+        "emoji": "🤝",
+        "text": "Monte dei Paschi launched twin all-share bids worth €34bn for Banco BPM and Banca Generali, a defensive move to stave off a rival Intesa takeover.",
+        "url": "https://www.msn.com/en-gb/money/other/monte-dei-paschi-launches-all-share-bids-for-bpm-banca-generali-to-stave-off-intesa-takeover/ar-AA2aCODv"
        },
        {
         "emoji": "⚠️",
-        "text": "Gold and bitcoin are trading the Treasury intervention as a debasement signal rather than a rates signal.",
-        "url": "https://www.thenationalnews.com/business/energy/2026/08/21/oil-heads-for-weekly-gain-while-gold-and-bitcoin-jump-on-us-treasury-buyback-plans/"
+        "text": "A hijacked shadow-fleet tanker in the Gulf of Aden has stacked a piracy premium on top of the existing Red Sea war premium.",
+        "url": "https://gcaptain.com/sanctioned-shadow-fleet-tanker-hijacked-in-gulf-of-aden-and-diverted-toward-somalia/"
        },
        {
         "emoji": "🌍",
-        "text": "Japan's bond market spiked toward its highest yield since 1996, taking the country's AI-proxy stocks down with it.",
-        "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
-       }
-      ],
-      "emoji": "📉",
-      "heading": "Bonds, gold, and the debasement trade"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🌍",
-        "text": "The Iran sanctions campaign now has a name, \"Operation Economic Fury,\" and named targets, three days before it lands.",
+        "text": "The Iran sanctions campaign now carries a name, \"Operation Economic Fury,\" and named targets, days ahead of its planned start.",
         "url": "https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Lisa Cook's deadline to respond to the White House's notice seeking her removal from the Federal Reserve Board falls on August 26.",
-        "url": null
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Kevin Warsh gives his first Jackson Hole keynote as Fed chair on August 28, at the Kansas City Fed's symposium.",
-        "url": null
-       },
-       {
-        "emoji": "🚀",
-        "text": "Anthropic is expected to file its IPO paperwork publicly on SEC EDGAR by August 31, converting its confidential draft into a public filing.",
-        "url": "/threads/anthropic-ipo-timing/"
        }
       ],
       "emoji": "🌍",
-      "heading": "The week ahead"
+      "heading": "Markets and geopolitics"
      }
     ],
     "watch": [
-     "Whether Nvidia's price hike and the widening web of vendor financing and equity stakes get treated as debt-equivalent once Anthropic's S-1 goes public.",
-     "Whether the Fed leadership fight, Lisa Cook's August 26 removal-notice deadline and Kevin Warsh's August 28 Jackson Hole keynote as chair, resolves before markets reopen.",
-     "Whether Iran's sanctions campaign, set to land August 24, reopens the Hormuz transit question Iran and Oman haven't yet confirmed a deal on."
+     "Lisa Cook's deadline to respond to the White House's removal notice and Nvidia's Q2 FY2026 earnings both land on 2026-08-26.",
+     "Jackson Hole runs 2026-08-27 to 08-29, with Kevin Warsh delivering his first keynote as Federal Reserve chair on 08-28.",
+     "Anthropic is expected to convert its confidential S-1 into a public IPO filing on SEC EDGAR by 2026-08-31."
     ]
    },
-   "fingerprint": "931a8c097564094b",
-   "generated": "2026-08-23T14:39:07Z",
+   "fingerprint": "a91bcf81798be24d",
+   "generated": "2026-08-23T19:30:11Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2622,6 +2689,16 @@
       "ai-memory-shortage"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -2672,167 +2749,176 @@
       "ai-buildout-debt-risk"
      ],
      "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
-    },
-    {
-     "day": "2026-08-21",
-     "sev": null,
-     "text": "Anthropic will name AI backlash — specifically data-center opposition — as a risk factor in its public S-1.",
-     "threads": [
-      "anthropic-ipo-timing",
-      "frontier-lab-ipos",
-      "ai-datacenter-sites"
-     ],
-     "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
     }
    ],
    "title": "Global Capital"
   },
   "lens:mental-health": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "briefing": {
-    "gist": "**Nothing happened in this lens in the five hours this day has existed, and nothing happened on Saturday either.** That is two consecutive empty digest-days, which is a structural property of a lens driven by weekday corporate…",
+    "gist": "**Nothing happened in this lens today, and the day's real work was closing two leads the map had been carrying unverified.",
     "lead": [
      {
+      "emoji": "⚖️",
+      "text": "California's AB 2575 would shift liability for AI-caused patient harm onto AI developers and facilities, and the bill advanced in the state Senate on August 21.",
+      "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+     },
+     {
+      "emoji": "🏥",
+      "text": "A Capital & Main investigation found a Kaiser Permanente mental-health triage team shrank from nine clinicians to three as an automated screening tool took over the work.",
+      "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+     },
+     {
       "emoji": "⚠️",
-      "text": "NPR's investigation into a 29-year-old woman's suicide is being called the clearest documented case yet of AI chat substituting for disclosure to real people, including her own therapist.",
+      "text": "NPR's investigation into a 29-year-old woman's suicide is described as the clearest documented case yet of a general-purpose AI chatbot substituting for disclosure to real people, including her own therapist.",
       "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
      },
      {
       "emoji": "🚀",
-      "text": "OpenAI's under-18 model specification now bans encouraging emotional dependence, the same restriction Colorado had proposed as law just a week earlier.",
+      "text": "OpenAI's new model specification for users under 18 now bans the chatbot from encouraging emotional dependence, the same requirement Colorado had proposed as law a week earlier.",
       "url": "https://openai.com/index/chatgpt-for-teens"
      },
      {
       "emoji": "⚖️",
-      "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, with claims across the six-week trial that could reach $200 billion.",
+      "text": "Opening statements began in Oakland in a six-week federal trial brought by U.S. states against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
       "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, turns out to have been binding law since August 12, only surfacing in coverage this week.",
-      "url": "https://leg.colorado.gov/bills/HB26-1195"
-     },
-     {
-      "emoji": "🤝",
-      "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across California, Texas, Washington and New York.",
-      "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "⚖️",
+        "text": "AB 2575 would bar retaliation against health workers who override an AI system's clinical recommendation and require disclosure of AI risks in patient care.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+       },
+       {
         "emoji": "⚠️",
-        "text": "NPR's investigation into a 29-year-old woman's suicide is being called the clearest documented case yet of AI chat substituting for disclosure to real people, including her own therapist.",
+        "text": "Kaiser Permanente and the California Hospital Association oppose AB 2575, which still needs a Senate floor vote before the legislative session ends August 31.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, has been binding law since August 12 even though coverage of it lagged for a week.",
+        "url": "https://leg.colorado.gov/bills/HB26-1195"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "California's SB 903, which would subject Kaiser's automated triage tool to new oversight, was released from suspense committee 13-0 on August 13 and sent to a third reading.",
+        "url": "/threads/state-therapy-chatbot-bans/"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "California's AI-liability push"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "A pediatrician wrote in STAT News that AI chatbots are effectively grooming her young patients, describing patterns she says she now sees routinely in practice.",
+        "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "NPR's investigation into a young woman's suicide documents a case where a general-purpose AI chatbot substituted for disclosure to real people, including her therapist.",
         "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
        },
        {
         "emoji": "🚀",
-        "text": "OpenAI's under-18 model specification now bans encouraging emotional dependence, the same restriction Colorado had proposed as law just a week earlier.",
+        "text": "OpenAI's new under-18 model rules now ban the chatbot from encouraging emotional dependence, matching a requirement Colorado had proposed as law a week earlier.",
         "url": "https://openai.com/index/chatgpt-for-teens"
        },
        {
-        "emoji": "⚖️",
-        "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, turns out to have been binding law since August 12, only surfacing in coverage this week.",
-        "url": "https://leg.colorado.gov/bills/HB26-1195"
+        "emoji": "⚠️",
+        "text": "TechCrunch noted OpenAI's new teen safety protections arrive years after teenagers began using ChatGPT en masse, calling the timing the real story.",
+        "url": "https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/"
        }
       ],
       "emoji": "⚠️",
-      "heading": "The AI-therapy reckoning"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "⚖️",
-        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
-        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, with claims across the six-week trial that could reach $200 billion.",
-        "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "The Trump administration's DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 ban on AI 'nudify' tools.",
-        "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
-       }
-      ],
-      "emoji": "⚖️",
-      "heading": "Litigation and enforcement"
+      "heading": "Chatbots and self-harm risk"
      },
      {
       "bullets": [
        {
         "emoji": "🤝",
-        "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across California, Texas, Washington and New York.",
+        "text": "Radial acquired the management-services organization behind Mindful Health Solutions, forming what both firms call the largest interventional-psychiatry network in the US, spanning 27 clinics in four states.",
         "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
        },
        {
-        "emoji": "🤝",
+        "emoji": "💰",
         "text": "Universal Health Services closed its $835 million acquisition of Talkspace, joining virtual and inpatient behavioral-health care under one owner.",
         "url": "https://www.sec.gov/Archives/edgar/data/1803901/000095015726000907/ex99-1.htm"
        },
        {
+        "emoji": "🏗️",
+        "text": "HHS added a peer-support recovery program and an in-home family treatment program to its federal Title IV-E prevention clearinghouse, making both reimbursable nationwide.",
+        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
+       },
+       {
         "emoji": "📉",
-        "text": "Behavioral-health dealmaking ran 20% below its prior pace in the first half of 2026, the backdrop against which this week's acquisitions landed.",
+        "text": "Behavioral-health dealmaking fell 20% in the first half of 2026, the industry backdrop against which this month's acquisitions are being read.",
         "url": "https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/"
        }
       ],
-      "emoji": "🤝",
-      "heading": "Behavioral-health dealmaking"
+      "emoji": "💰",
+      "heading": "The money in behavioral health"
      },
      {
       "bullets": [
        {
+        "emoji": "🚀",
+        "text": "Health insurer Alan named its AI triage product for its Canadian launch Mo, built on roughly 20 agents with a safety layer that escalates risky conversations to a human medical team within 15 minutes.",
+        "url": "https://thelogic.co/news/alan-insurance-expansion-ai/"
+       },
+       {
         "emoji": "⚠️",
-        "text": "An amended investor complaint accuses UnitedHealth of shutting down an internal audit that had already found at least $200 million in unsupportable diagnosis codes.",
-        "url": "https://www.healthcaredive.com/news/investor-lawsuit-unitedhealth-ignored-governance-cybersecurity-gaps-change/828016/"
+        "text": "Union 1199SEIU held coordinated pickets at 19 HCA Florida facilities on August 12 over Timpani, a Palantir-co-developed AI scheduling system it blames for unauthorized shift changes and wage losses.",
+        "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
        },
        {
         "emoji": "🏗️",
-        "text": "CMS opened the next participant cohort for its ACCESS behavioral-health model, the second rolling intake of the ten-year program.",
+        "text": "CMS opened the next participant cohort for its ACCESS model, the second rolling intake of a ten-year federal behavioral-health payment program.",
         "url": "https://www.cms.gov/priorities/innovation/innovation-models/access"
        },
        {
-        "emoji": "🏥",
-        "text": "HHS added the in-home Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to the federal Title IV-E Prevention Services Clearinghouse, making both reimbursable.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
+        "emoji": "🔬",
+        "text": "The FDA named a second participant to its Tempo pilot exempting digital health devices from premarket review, leaving behavioral health as one of four focus areas with no participant yet.",
+        "url": "https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/"
        }
       ],
-      "emoji": "🏥",
-      "heading": "Payer and policy"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🔬",
-        "text": "A digital-mental-health journal published 'Consulting Dr. Google,' two experimental studies on how people seek mental-health information online.",
-        "url": "https://www.sciencedirect.com/science/article/pii/S2214782926000916"
-       },
-       {
-        "emoji": "🔬",
-        "text": "A randomized trial pitting two AI chatbot therapists against each other found both groups improved with no difference between them, on a sample far too small to support a strong conclusion either way.",
-        "url": "https://www.sciencedirect.com/science/article/pii/S221478292600059X"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Coverage caught up this week with Oregon's first state-regulated psilocybin program, where a report found 95% of participants saw improvements in depression or PTSD symptoms.",
-        "url": "https://bhbusiness.com/2026/08/19/95-of-oregon-psilocybin-study-saw-improvements-in-depression-ptsd/"
-       }
-      ],
-      "emoji": "🔬",
-      "heading": "The evidence base"
+      "emoji": "🏗️",
+      "heading": "AI moving into clinical workflows"
      }
     ],
     "watch": [
-     "The capability-to-approval gap for AI therapy chatbots keeps closing via litigation and state bans, not an FDA or MHRA pathway; the OpenAI chatbot-death suits' next hearing falls September 23.",
-     "Behavioral-health investment keeps concentrating in clinician-augmentation and interventional psychiatry rather than consumer chatbots, a split worth tracking through further consolidation.",
-     "The Trump administration's promised replacement for the 2024 mental-health parity rule, unenforced since May, remains only rumored for a by-year-end release."
+     "Meta has until August 26 to answer Senator Mark Warner's letter about AI-generated child sexual abuse material appearing in advertisements across its platforms.",
+     "California's AB 2575 needs a Senate floor vote before the legislative session ends on August 31, with Kaiser Permanente and the California Hospital Association opposed.",
+     "Whether the August mediation between Kaiser and its clinicians resolves before the DMHC and DOL respond formally to the union's automated-triage complaints remains open."
     ]
    },
-   "fingerprint": "35314d5dd9ff9a29",
-   "generated": "2026-08-23T14:39:07Z",
+   "fingerprint": "38952dfffe9685dc",
+   "generated": "2026-08-23T19:29:58Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2915,6 +3001,16 @@
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
    "news": [
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
     {
      "day": "2026-08-21",
      "sev": null,
@@ -3000,7 +3096,18 @@
    "title": "alibaba-qwen"
   },
   "node:amazon-aws": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "bf0e07cb7f41f3bf",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3126,6 +3233,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": null,
+     "text": "The financials are what make it a capital story: a firm burning cash on AI is funding more AI by selling discounted equity",
+     "threads": [
+      "china-stack-independence",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "OpenAI's revenue is reported up 35% this quarter with enterprise revenue up more than 50%, and Ramp card data puts its API spend growth at 82% quarter-on-quarter in Q3 against Anthropic's 76%",
@@ -3193,18 +3310,6 @@
       "nvidia-vendor-financing"
      ],
      "url": null
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "Nvidia, OpenAI and SoftBank signed the Ohio data-center deal, and the signed terms correct two figures this map was carrying.",
-     "threads": [
-      "stargate-buildout",
-      "ai-power-buildout",
-      "ai-circular-financing-risk",
-      "where-the-capex-lands"
-     ],
-     "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
     }
    ],
    "summary": {
@@ -3232,7 +3337,18 @@
    "title": "amd"
   },
   "node:anthropic": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    }
+   ],
    "fingerprint": "8186e650d8b0337b",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3246,6 +3362,16 @@
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": null,
+     "text": "The financials are what make it a capital story: a firm burning cash on AI is funding more AI by selling discounted equity",
+     "threads": [
+      "china-stack-independence",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -3301,15 +3427,6 @@
      "text": "Anthropic bundled computer use, browser access, versioned Skills and a reusable Files API into a single production-agent surface for enterprises",
      "threads": [],
      "url": "https://claude.com/blog"
-    },
-    {
-     "day": "2026-08-20",
-     "sev": null,
-     "text": "Harvey released \"Harvey Tenet\", its first post-trained open-weight legal model, specialised for diligence and document review — built, per the benchmark that carried it, on Kimi K3.",
-     "threads": [
-      "kimi-distillation-fight"
-     ],
-     "url": "https://harvey.ai/blog"
     }
    ],
    "summary": {
@@ -3347,7 +3464,18 @@
    "title": "anthropic"
   },
   "node:apple": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "658660a47c79f432",
    "generated": "2026-08-11T13:56:47Z",
    "generated_by": "llm",
@@ -3718,7 +3846,28 @@
    "title": "broadcom"
   },
   "node:character-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "6a82f701acaab3b8",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3894,7 +4043,18 @@
    "title": "coreweave"
   },
   "node:cxmt": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "96d1b1e092923f71",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3980,6 +4140,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
@@ -4064,7 +4234,18 @@
    "title": "deepseek"
   },
   "node:demis-hassabis": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    }
+   ],
    "fingerprint": "ad2f9a7c6adc273a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4214,7 +4395,38 @@
    "title": "Elon Musk"
   },
   "node:google": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "33b5a73c436fe7f7",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4239,6 +4451,16 @@
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -4284,17 +4506,6 @@
       "bigtech-into-health"
      ],
      "url": null
-    },
-    {
-     "day": "2026-08-17",
-     "sev": "major",
-     "text": "NVIDIA's 8-K caps the Ohio guarantee at $105 billion and reveals a residual-value structure the press release never described.",
-     "threads": [
-      "stargate-buildout",
-      "ai-circular-financing-risk",
-      "where-the-capex-lands"
-     ],
-     "url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000069/nvda-20260817.htm"
     }
    ],
    "summary": {
@@ -4490,7 +4701,28 @@
    "title": "intel"
   },
   "node:kaiser-permanente": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "91e70a08e560348d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4555,7 +4787,18 @@
    "title": "Masayoshi Son"
   },
   "node:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    }
+   ],
    "fingerprint": "c84ce0895f6dd827",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -4570,6 +4813,16 @@
       "hyperscaler-capex-big-picture"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -4624,15 +4877,6 @@
       "ai-trade-bear-turn"
      ],
      "url": "https://cryptobriefing.com/nikkei-declines-chip-stock-selloff-bond-yields/"
-    },
-    {
-     "day": "2026-08-19",
-     "sev": "major",
-     "text": "The US Treasury doubled its long-bond buyback size and the whole bear-steepener this map has tracked since Monday reversed in a single announcement.",
-     "threads": [
-      "ai-buildout-debt-risk"
-     ],
-     "url": "https://www.cnbc.com/2026/08/19/treasury-announces-upscaled-buyback-operation-for-longer-term-debt-sending-yields-lower.html"
     }
    ],
    "summary": {
@@ -4734,7 +4978,18 @@
    "title": "mgx"
   },
   "node:micron": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "2ac8580a82b7e149",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4833,7 +5088,18 @@
    "title": "micron"
   },
   "node:microsoft": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "b0f04ca6c1f57497",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -4957,6 +5223,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
@@ -5018,15 +5294,6 @@
       "china-stack-independence"
      ],
      "url": "https://www.cnbc.com/2026/08/17/alibaba-meta-qwen-open-weight-ai-laptop-models.html"
-    },
-    {
-     "day": "2026-08-18",
-     "sev": null,
-     "text": "Baidu posted a fifth consecutive quarterly revenue decline",
-     "threads": [
-      "china-stack-independence"
-     ],
-     "url": "https://www.bloomberg.com/news/articles/2026-08-18/baidu-posts-fifth-straight-revenue-drop-as-ai-lag-widens"
     }
    ],
    "summary": {
@@ -5064,7 +5331,28 @@
    "title": "moonshot-ai"
   },
   "node:nvidia": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "799403cf276eee74",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5079,6 +5367,16 @@
       "hyperscaler-capex-big-picture"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -5135,13 +5433,6 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-08-20/meta-has-quietly-become-one-of-microsoft-s-largest-ai-customers"
-    },
-    {
-     "day": "2026-08-19",
-     "sev": "major",
-     "text": "Cerebras unveiled the CS-4, claiming up to 30x Nvidia's tokens-per-second-per-user on comparable workloads — and its own stock fell 5.10% on the announcement, on 5.5x average volume.",
-     "threads": [],
-     "url": "https://www.bloomberg.com/news/articles/2026-08-19/cerebras-cbrs-says-its-new-computer-boosts-ai-speed-advantage-over-nvidia"
     }
    ],
    "summary": {
@@ -5179,7 +5470,47 @@
    "title": "nvidia"
   },
   "node:openai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "ae40097b529ae79f",
    "generated": "2026-07-29T14:52:15Z",
    "generated_by": "llm",
@@ -5204,6 +5535,16 @@
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
+    },
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
     },
     {
      "day": "2026-08-21",
@@ -5249,17 +5590,6 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://the-decoder.com/gpt-5-6-sol-drives-openais-revenue-surge-as-it-regains-ground-on-anthropic/"
-    },
-    {
-     "day": "2026-08-21",
-     "sev": null,
-     "text": "Anthropic will name AI backlash — specifically data-center opposition — as a risk factor in its public S-1.",
-     "threads": [
-      "anthropic-ipo-timing",
-      "frontier-lab-ipos",
-      "ai-datacenter-sites"
-     ],
-     "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
     }
    ],
    "summary": {
@@ -5292,11 +5622,41 @@
    "title": "openai"
   },
   "node:oracle": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    }
+   ],
    "fingerprint": "ffd96dd6c968e791",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
    "news": [
+    {
+     "day": "2026-08-22",
+     "sev": null,
+     "text": "The financials are what make it a capital story: a firm burning cash on AI is funding more AI by selling discounted equity",
+     "threads": [
+      "china-stack-independence",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
     {
      "day": "2026-08-21",
      "sev": null,
@@ -5366,16 +5726,6 @@
       "chip-hyperscaler-rotation"
      ],
      "url": "https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "Jensen Huang publicly rejected the \"circular financing\" framing on the same day his company filed a $105B contingent obligation to its largest customer.",
-     "threads": [
-      "ai-circular-financing-risk",
-      "nvidia-vendor-financing"
-     ],
-     "url": null
     }
    ],
    "summary": {
@@ -5448,7 +5798,28 @@
    "title": "qualcomm"
   },
   "node:replika": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "5f9efde6ff75ded8",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5525,7 +5896,18 @@
    "title": "replika"
   },
   "node:sam-altman": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    }
+   ],
    "fingerprint": "16ea8bdb69abdfdd",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5603,7 +5985,18 @@
    "title": "Sam Altman"
   },
   "node:samsung": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "bb6eb1d66fcbd518",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5702,7 +6095,18 @@
    "title": "samsung"
   },
   "node:sk-hynix": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "697a51e27bb17e42",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5791,7 +6195,28 @@
    "title": "sk-hynix"
   },
   "node:slingshot-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "5f9efde6ff75ded8",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5873,7 +6298,27 @@
    "title": "slingshot-ai"
   },
   "node:softbank": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    }
+   ],
    "fingerprint": "c2ac71b8c05c2f2e",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -6046,11 +6491,41 @@
    "title": "sondermind"
   },
   "node:spacex": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    }
+   ],
    "fingerprint": "9a95d02c56fea785",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
    "news": [
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
     {
      "day": "2026-08-21",
      "sev": null,
@@ -6117,17 +6592,6 @@
       "grok-companion-harm"
      ],
      "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
-    },
-    {
-     "day": "2026-08-18",
-     "sev": "major",
-     "text": "OpenAI launched ChatGPT for Teens, and its under-18 model spec bans simulated emotional dependence outright.",
-     "threads": [
-      "grok-companion-harm",
-      "ai-psychosis",
-      "ai-therapy-regulatory-reckoning"
-     ],
-     "url": "https://openai.com/index/chatgpt-for-teens"
     }
    ],
    "summary": {
@@ -6604,6 +7068,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
@@ -6694,6 +7168,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": null,
+     "text": "The financials are what make it a capital story: a firm burning cash on AI is funding more AI by selling discounted equity",
+     "threads": [
+      "china-stack-independence",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "OpenAI's revenue is reported up 35% this quarter with enterprise revenue up more than 50%, and Ramp card data puts its API spend growth at 82% quarter-on-quarter in Q3 against Anthropic's 76%",
@@ -6763,16 +7247,6 @@
       "where-the-capex-lands"
      ],
      "url": "https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute"
-    },
-    {
-     "day": "2026-08-17",
-     "sev": null,
-     "text": "Global bond issuance hit $5 trillion today, a month faster than last year's record, and buyers are starting to balk — which is the supply story the long end was pricing.",
-     "threads": [
-      "ai-buildout-debt-risk",
-      "ai-circular-financing-risk"
-     ],
-     "url": "https://www.bloomberg.com/news/articles/2026-08-14/picky-investors-push-back-on-high-grade-prices-after-debt-deluge"
     }
    ],
    "summary": {
@@ -6810,7 +7284,18 @@
    "title": "Circular Financing"
   },
   "thread:ai-compute-spend": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "eca6394b626009f8",
    "generated": "2026-08-11T13:56:09Z",
    "generated_by": "llm",
@@ -6852,7 +7337,27 @@
    "title": "Compute Spend"
   },
   "thread:ai-datacenter-sites": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "The reversal is nine months old and runs against his own donors",
+     "threads": [
+      "ai-datacenter-sites"
+     ],
+     "url": "https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash"
+    }
+   ],
    "fingerprint": "da31dfeea81cf014",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -6899,7 +7404,18 @@
    "title": "Datacenter Sites"
   },
   "thread:ai-memory-shortage": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Micron puts a number on the memory wall: compute scales 3x every two years, HBM bandwidth only 2x",
+     "threads": [
+      "ai-memory-shortage",
+      "ai-compute-spend"
+     ],
+     "url": "https://www.servethehome.com"
+    }
+   ],
    "fingerprint": "2839059529b2d405",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7032,7 +7548,28 @@
    "title": "Power Buildout"
   },
   "thread:ai-therapy-regulatory-reckoning": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "5f9efde6ff75ded8",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7690,6 +8227,16 @@
    "generated_by": "llm",
    "news": [
     {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
+    {
      "day": "2026-08-21",
      "sev": null,
      "text": "DeepSeek shipped DeepSeek-V4-Flash-Vision-Exp, an experimental multimodal model, and benchmarked it against Claude rather than GPT.",
@@ -8248,7 +8795,18 @@
    "title": "Lab IPO Wave"
   },
   "thread:frontier-model-gov-review-precedent": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "OpenAI's policy chief asks Washington for mandatory pre-deployment safety standards",
+     "threads": [
+      "openai-agent-security-incident",
+      "frontier-model-gov-review-precedent"
+     ],
+     "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+    }
+   ],
    "fingerprint": "ad2f9a7c6adc273a",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -8658,7 +9216,28 @@
    "title": "Intel Rescue"
   },
   "thread:kaiser-ai-clinician-backlash": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "California AB 2575 would put liability for AI-caused patient harm on the AI developer, and it moved on 08-21",
+     "threads": [
+      "ai-therapy-regulatory-reckoning",
+      "kaiser-ai-clinician-backlash"
+     ],
+     "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+    },
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over",
+     "threads": [
+      "kaiser-ai-clinician-backlash",
+      "ai-therapy-regulatory-reckoning"
+     ],
+     "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+    }
+   ],
    "fingerprint": "91e70a08e560348d",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9391,7 +9970,17 @@
    "title": "Dragonfly Return"
   },
   "thread:red-sea-oil-shock": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": null,
+     "text": "Deutsche Bank calls the Treasury interventions \"soft-form financial repression\"",
+     "threads": [
+      "red-sea-oil-shock"
+     ],
+     "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
+    }
+   ],
    "fingerprint": "c0673bcb56a19813",
    "generated": "2026-07-30T12:01:16Z",
    "generated_by": "llm",
@@ -9770,11 +10359,32 @@
    "title": "TSMC Capacity Race"
   },
   "thread:where-the-capex-lands": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-23",
+     "sev": "major",
+     "text": "Texas Governor Greg Abbott says data centers \"dug their own grave\"",
+     "threads": [
+      "ai-datacenter-sites",
+      "where-the-capex-lands"
+     ],
+     "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+    }
+   ],
    "fingerprint": "78e5ec4777867b03",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
    "news": [
+    {
+     "day": "2026-08-22",
+     "sev": "major",
+     "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of it into AI",
+     "threads": [
+      "china-stack-independence",
+      "where-the-capex-lands"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+    },
     {
      "day": "2026-08-17",
      "sev": "major",

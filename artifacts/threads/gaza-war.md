@@ -17,6 +17,22 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-23 — A Hamas commander killed and a threat to "intensify," as friction under the framework rather than a rupture of it
+
+- **The Israeli military struck an alleged Hamas weapons-production
+  facility and killed a Hamas commander on Sunday afternoon, in a strike
+  reported near an aid distribution centre.** Netanyahu and Defence
+  Minister Katz separately issued a joint statement threatening to
+  "intensify strikes" and order new evacuations, citing kite and balloon
+  launches from Gaza toward Israel.
+  ([The Times of Israel — live blog, IDF and PM's office statements](https://www.timesofisrael.com/liveblog-august-23-2026/))
+  ⟨daily 2026-08-23⟩
+- **Read as pressure on the disarmament framework, not its collapse.**
+  Both events sit inside the framework period this thread has tracked
+  since 08-01; neither party has withdrawn from it. The watch item is
+  whether the threatened evacuations are actually ordered.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-22 — A drone strike on a home in Deir el-Balah, three weeks into the disarmament framework
 
 - **An Israeli drone strike on a house in central Gaza killed one man and

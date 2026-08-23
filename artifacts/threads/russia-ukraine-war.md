@@ -18,6 +18,36 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-23 — A second passenger train hit in ten days, and a second Ozon logistics hub in two days
+
+- **A Russian jet-powered Shahed-type drone struck the locomotive of
+  passenger train No. 147 on the Zhytomyr–Odesa route early Sunday, and
+  nobody was hurt because the train had already been evacuated.**
+  Ukrzaliznytsia says it ordered the evacuation and stopped the train
+  between stations before impact; 593 passengers, 15 of them children,
+  plus the crew were clear. This is the **second deliberate hit on a
+  passenger train on this line in ten days** — distinct from the 08-13
+  Odesa-region strike that killed the driver and his assistant, not a
+  re-report of it.
+  ([Kyiv Post](https://www.kyivpost.com/post/82929)) ⟨daily 2026-08-23⟩
+- **Ukraine hit an Ozon logistics complex in Orenburg region, one day
+  after hitting one in Samara — the campaign against Russian e-commerce
+  logistics is now explicit.** The regional governor said a fire was
+  quickly extinguished, nobody was injured, and roughly 300 staff were
+  evacuated. Ukraine's defence ministry frames the Ozon strikes as a
+  deliberate campaign against e-commerce distribution, following earlier
+  hits on 15 Wildberries centres. The 08-22 entry below recorded the
+  Samara warehouse as one target among many in a mixed strike package;
+  two in two days against the same company reads instead as a **named
+  target set**.
+  ([The Moscow Times](https://www.themoscowtimes.com/2026/08/23/ozon-warehouse-in-orenburg-region-hit-in-drone-attack-governor-says-a93561)) ⟨daily 2026-08-23⟩
+- **Continued strikes on Chernihiv/Semenivka, Izyum and Kharkiv are
+  recorded as pattern, not as escalation.** Drone and guided-bomb hits
+  with a handful of injuries each, and the rolling nationwide daily toll,
+  are consistent with the tempo already captured through 08-22. Noted so
+  the same tactical strikes are not re-swept as though unexamined.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-22 — Both sides hit infrastructure, Putin promises worse, and Kyiv's airport takes ballistics twice
 
 - **Ukraine and Russia traded strikes killing at least 17.** Ukrainian
