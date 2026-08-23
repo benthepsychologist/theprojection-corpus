@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus
 
-*As of 2026-08-21*
+*As of 2026-08-23*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,9 +8,77 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers 08-21's two `/daily` passes, on top of
-the 08-20 note below it (which finalized 08-19 with a three-lens coverage
-critic and opened 08-20), then the 08-19 note, then 08-18 and older.*
+*Hand-maintained. Top note covers the 08-23 gap catch-up, on top of
+08-21's two `/daily` passes, then the 08-20 note (which finalized 08-19),
+then 08-19, then 08-18 and older.*
+
+> **2026-08-23 (10:00 ET) — a two-day gap closed in one pass: 08-21
+> finalized, 08-22 reconstructed, 08-23 opened.** No `/daily` ran on
+> 08-22, so this run swept 2026-08-21 15:00 ET → 08-23 10:00 ET at once
+> and split findings back to the digest-day each event belongs to. Counts
+> after the run: **99 threads** (85 open · 12 developing · 1 resolved · 1
+> retired — unchanged), **66 expectations** (46 pending · 14 hit · 6
+> passed-silent — five logged this run), **211 watchlist entries**
+> (unchanged; three entity adds proposed and held for Ben), **45 actor
+> roll-ups** of which 3 now carry an 08-23 `asof`. **No flash** — the
+> 08-21 Kryvyi Rih flash expired on its filing day and a rising casualty
+> toll is not a new event. **14 digests written or finalized · 16 thread
+> timeline blocks · 16 `last_seen` updates.** Dispatch: one collector
+> sweep + seven agentic sweeps + three coverage critics; all returned,
+> none stalled.
+>
+> **Coverage critic verdict on 08-21: no genuine misses across three
+> lenses.** What it produced instead is the run's real editorial finding —
+> **a three-source convergence on data-center political opposition** on
+> 08-21 (Axios Pro Rata's lead essay, The AI Daily Brief's whole episode,
+> and Anthropic's own S-1 risk factors). A bare candidate label since
+> 08-20 is now a thread-shaped hole with a securities filing in it. It is
+> put to Ben as a decision alongside the **Treasury long-end candidate**,
+> whose third offer now carries the critic's confirmation that FT Unhedged
+> led with that story **three consecutive editions**.
+>
+> ⛔ **Six infrastructure failures, five of them previously undocumented.**
+> **(1)** `cloud-researcher collect` resolves **both** its corpus and its
+> `.env` against the seat rather than the corpus — `collect.py:55` never
+> migrated to `paths.py`'s `corpus_root()` while `collectors/base.py:90`
+> did, so the two halves disagree; and `collect.py:34` loads `.env` from
+> the seat, which has none, so **every keyed collector has run keyless
+> since the package split.** Working invocation needs both signals set.
+> **(2)** ⛔ **`build-world-news` is blocked on expired gcloud
+> credentials** — and this corrected a claim this run had already written
+> into five digests. The collector's `gdelt` leg completed for the first
+> time in four runs, which I initially read as the world-news pool
+> unblocking. It is not: `build_world_news.py` queries GDELT's **BigQuery**
+> dataset via `bq`, which fails `Reauthentication failed`. **Only Ben can
+> fix this** (`gcloud auth login`); `attention/world-news.yaml` is stale
+> from 08-18 on two unrelated stacked causes. **(3)** The `rss` collector
+> stamps **fetch time** as `ts` when a feed carries no `<pubDate>`,
+> indistinguishably from a real date — it stamped 38 *Internet
+> Interventions* articles with today's date when 36 are forthcoming
+> September/December issue contents and one is genuinely new. **(4)**
+> Benchmark health: **The Rundown AI** unreachable two days running,
+> **Bloomberg Technology** now blocked through the `r.jina.ai` proxy too
+> (a new escalation past the fix class that resolved every other blocked
+> benchmark), **Money Stuff** dark since 08-13, **Behavioral Health
+> Business** silent since 08-20, **FT Unhedged** now needing the proxy
+> that `sources/benchmarks.yaml` says it does not. **(5)** `lda` 403s on
+> all 160 terms two runs running and `fund_flow_reports` hits bot
+> challenges — both **unchecked, not clean**. **(6)** ⚠️ The read payload
+> is over the 600 KB soft cap for a **fifth** consecutive run and still
+> growing: 1241 → 1254 → 1308 → 1331 → **1384 KB**; the degradation rule
+> remains unimplemented.
+>
+> **Two ops briefs filed to `kestrel-ops/INBOX/`** (committed there, not
+> pushed, per their contract): the collect corpus/`.env` resolution
+> incident, and the `rss` fetch-time-as-publication-date incident.
+>
+> **Held rather than guessed.** This session exhausted its 200-call
+> WebSearch budget on the seven sweeps, so three real leads are carried
+> **unverified rather than logged**: Nvidia's reported ~$6-7bn Poolside
+> licensing deal (date unpinnable between 08-21 and 08-22), the Capital &
+> Main investigation into Kaiser's algorithmic triage (08-18, incl. a
+> California bill reported as AB 2575), and Senator Warner's 08-18 letter
+> to Meta on AI-generated CSAM ads. First jobs next run.
 
 > **2026-08-21 (15:00 ET) — 08-20 finalized earlier today; 08-21 open and
 > extended twice; first flash since 08-11.** Counts computed at the 15:00
