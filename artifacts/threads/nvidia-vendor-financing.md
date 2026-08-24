@@ -11,6 +11,20 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-24 — The Poolside deal this map twice declined to believe gets a reviewed document behind it
+
+- ✅ **A story this thread closed as unverifiable has reversed on new evidence, and the reversal is the point.** For three runs the reported Nvidia-Poolside deal was traced to a single chain — Bloomberg's own headline read "... Newcomer Says," and The Information's 08-21 piece was itself citing a paywalled Newcomer post resting on an investor letter it said it had reviewed. **No Nvidia or Poolside spokesperson, filing or primary statement existed anywhere**, and on 08-23 this map stopped re-checking it. Today the Wall Street Journal reported it having **reviewed the shareholder letter itself**, which moves it from a newsletter chain to a document-based account.
+  ([Forbes, 12:13 ET](https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/)) ⟨daily 2026-08-24⟩
+- **What the letter says the deal is: $6bn for a licence, $1bn for equity, and more than 100 engineers.** Nvidia pays **$6bn for a NON-EXCLUSIVE licence** to Poolside's "Model Factory" training pipeline, invests a separate **$1bn at a $12bn pre-money valuation**, and takes on **more than 100 Poolside engineers** to work on its open-weight **Nemotron** line — framed explicitly as building a US open-weight alternative to DeepSeek, Kimi and Qwen. **That shape matters for this thread:** it is not vendor financing in the Nebius/Naver/Intel/Groq mould of an equity stake in a customer, but a licence-plus-acquihire that buys capability rather than demand.
+  ([Forbes, 12:13 ET](https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/)) ⟨daily 2026-08-24⟩
+  <!-- ⚠️ SOURCING, stated precisely: this is still not a company statement.
+       It is the WSJ saying it reviewed a shareholder letter, reaching this
+       map through a Forbes pickup. That is a real upgrade on the prior
+       Newcomer chain and is why the closed call is being reopened — but
+       "reviewed document, reported secondhand" is the standard it meets,
+       not "confirmed by Nvidia". Nvidia's 08-26 Q2 FY2026 call is the
+       natural primary-source test. -->
+
 ## 2026-08-23 — Michael Burry restates the Nvidia circularity thesis two days before earnings
 
 - **Michael Burry restated his Nvidia circularity thesis two days

@@ -12,6 +12,18 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-24 — The market re-reads the >15% price rise as demand risk rather than pricing power
+
+- ⚠️ **The new fact today is the READING, not the price rise — the price rise itself is already on this thread, dated 08-22.** Nvidia's notice to contract manufacturers that AI-server prices rise **more than 15%** on systems shipping in early 2027, blamed on DRAM and HBM costs, was logged on the 08-23 page. **It resurfaced today as the stated driver of a semiconductor selloff**, and that is a different datum: the same disclosure that read as cost pass-through three days ago is now being read as **demand-softening risk**. Micron, SanDisk and Western Digital each fell more than 5% and the SOXX ETF dropped 3–4% in a session where the Dow rose.
+  ([24/7 Wall St., 10:43 ET](https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/)) ⟨daily 2026-08-24⟩
+  <!-- ⚠️ CORRECTED IN-RUN, 2026-08-24 15:00 ET. This block was first
+       written as though the >15% price rise were new today. It is not —
+       it is an 08-22 event already recorded on the 08-23 page, resurfacing
+       in today's market commentary. Caught by cross-checking
+       attention/actor-doing.yaml's nvidia entry, which already carried it.
+       Exactly the re-index trap this map keeps catching in other people's
+       feeds, caught here in its own drafting. -->
+
 ## 2026-08-23 — Hot Chips answers Micron's memory-wall math with three separate engineering fixes
 
 - **Micron's Raghu Sreeramaneni told Hot Chips 2026 that compute is

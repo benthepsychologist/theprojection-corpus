@@ -22,12 +22,25 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
-## 2026-08-24 — Oil eases on an Iran-Iraq tanker concession as Bessent's "toughest ever" Iran sanctions stay a still-open expectation
+## 2026-08-24 — Oil eases on an Iran-Iraq tanker concession, and then Bessent's "economic D-Day" sanctions actually land
 
 - **Oil fell through the morning as Iran allowed Iraqi tankers through Hormuz, easing the supply-shock premise this thread rests on.** WTI fell to $85.55 from a prior close of $87.06, and Brent to $92.92 from $94.39, both as of ~14:00 GMT (10:00 ET).
   ([Investing.com](https://www.investing.com/commodities/crude-oil)) ⟨daily 2026-08-24⟩
-- **Treasury Secretary Bessent is set to unveil what he has called the "toughest ever" Iran sanctions at a 2:00pm ET press conference today, and it had not happened as of this digest's 10:00 ET window.** NPR, publishing at 08:26 ET, still had it in the future tense — Bessent has described the package as an "economic D-Day" and "the greatest financial offensive ever marshalled against an adversary." The map carries this as a dated expectation still open: Treasury's press-release feed, OFAC's recent-actions page and the Federal Register were all checked at 10:00 ET and show nothing, which is a timing gap rather than a silent failure — it re-resolves after 2pm.
-  ([NPR](https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran)) ⟨daily 2026-08-24⟩
+- **AT 15:00 ET — the package landed, and this thread's dated expectation resolved to a hit on primary sources.** Treasury published sb0613 and sb0614 today, branding the campaign **"Operation Economic Outcast"**: roughly 60 entities, individuals and vessels, plus **five sectoral determinations** covering Iran's digital-asset, technology, gold, aviation and shipping sectors, five named shadow-fleet tankers, and a required closure of every Bank Melli branch under what Bessent calls a "zero-leakage approach." The designations reach shipping brokers and oil traders in the UAE, Hong Kong, Singapore, China and Switzerland, which is where this thread's exposure actually sits — the enforcement target is the intermediation layer, not the barrel.
+  ([US Treasury sb0613](https://home.treasury.gov/news/press-releases/sb0613),
+  [US Treasury sb0614 — Bessent remarks](https://home.treasury.gov/news/press-releases/sb0614),
+  [OFAC recent actions](https://ofac.treasury.gov/recent-actions),
+  [NPR](https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran)) ⟨daily 2026-08-24⟩
+- ⚠️ **THE CAMPAIGN WAS RENAMED BETWEEN ANNOUNCEMENT AND DELIVERY, and this thread carries the old name.** The 08-21 entry below records the campaign being named **"Operation Economic Fury."** Treasury's own releases today call it **"Operation Economic Outcast."** The 08-21 entry is left as written — "Fury" is what was accurately reported that day — but anything downstream should use "Outcast."
+- ⚠️ **The superlative this thread has been quoting for four days is not Treasury's own.** "The greatest coordinated economic isolation" appears in neither primary release; Treasury's published language is "tighten the noose and block every potential source of revenue," and its release headline adopts the wires' pre-event coinage, "economic D-Day." The substance matched what was promised. The wording did not, and the map had been attributing a phrase to Treasury that Treasury never printed.
+  ([US Treasury sb0613](https://home.treasury.gov/news/press-releases/sb0613),
+  [Axios](https://www.axios.com/2026/08/24/bessent-dday-iran-secondary-sanctions)) ⟨daily 2026-08-24⟩
+- **AT 15:00 ET — the sharpest edge of the package is aimed at China, and today sharpened what 08-21 had only sketched.** Bessent named China directly as **not exempt**, noting it buys roughly **90% of Iran's oil exports**, and warned that any entity "that facilitates money laundering on behalf of Iran will be removed from the U.S. dollar system." ⚠️ **Precisely what is new:** this thread's 08-21 entry already records China, India and the UAE named as focal points. **The 90%-of-exports framing and the dollar-system removal threat are today's additions**, not the China angle itself. **That converts an oil-supply sanction into a dollar-access sanction**, and it points the enforcement risk at Chinese refiners and their banks rather than at Iranian production, which is already near zero.
+  ([CNBC](https://www.cnbc.com/2026/08/24/trump-iran-economy-sanctions-china-bessent.html),
+  [Washington Post](https://www.washingtonpost.com/business/2026/08/24/bessent-unveil-economic-d-day-sanctions-against-iran/)) ⟨daily 2026-08-24⟩
+- **AT 15:00 ET — oil extended its fall INTO the announcement rather than rallying on it.** WTI reached about **$84.89** and Brent about **$92.06**, both down roughly **2.5% on the day** and further down from the 10:00 ET readings of $85.55 and $92.92. The attributed drivers are profit-taking after last week's rally and uncertainty about what the package actually does to export flows, on top of the morning's Hormuz de-escalation. **This is the pattern this thread has tracked for weeks holding again** — prices falling while the rhetoric and the enforcement escalate.
+  ([CNBC](https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html),
+  [UPI](https://www.upi.com/Top_News/World-News/2026/08/24/oil-prices-fall-with-expected-Iran-sanctions/1611787573131/)) ⟨daily 2026-08-24⟩
 
 ## 2026-08-21 — Brent holds ~$95; the Iran-Oman transit track slips back to "resuming" talks; the US sanctions campaign gets a name
 

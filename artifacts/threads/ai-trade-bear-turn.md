@@ -11,6 +11,14 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-08-24 — The bear turn shows up in prices: a broad semiconductor selloff two days before Nvidia's print
+
+- **Chip stocks sold off hard through Monday's session while the broad market barely moved, which is the signature this thread exists to catch.** As of ~13:42 ET the S&P 500 was down 0.23% at 7,656.49 and the Dow was UP 0.28% at 53,423.77 — but the Nasdaq was down 0.59% at 26,026.80, and the damage was concentrated: Intel −5% to $85.98, AMD −4% to $454.36, Taiwan Semiconductor −3% to $406.40, the SOXX semiconductor ETF down 3–4% across the session, with Micron, SanDisk and Western Digital each off more than 5% later in the window. **This is de-risking inside one sector, not risk-off across the market.**
+  ([24/7 Wall St., 10:43 ET](https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/),
+  [Motley Fool midday wrap, 12:15 ET](https://www.fool.com/coverage/stock-market-today/2026/08/24/stock-market-midday-aug-24-dow-edges-higher-as-chip-weakness-pressures-nasdaq/)) ⟨daily 2026-08-24⟩
+- **The stated driver has two legs, and the second one is the interesting one.** The first is positioning ahead of Nvidia's Q2 FY2026 print on Wednesday 08-26 — Nvidia's own five-quarter average day-of reaction has been a 2% DECLINE even after beats, so trimming into it is mechanical. The second is **Nvidia's 08-22 notice that AI-server prices rise more than 15% on DRAM and HBM costs** — already on this map's 08-23 page — which investors are now reading not as pricing power but as **demand-softening risk**. ⚠️ **The price rise is not new; the reading of it is**, and that is precisely what a bear turn looks like: no new fact, the same fact repriced.
+  ([24/7 Wall St., 10:43 ET](https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-23 — Burry puts a fresh "lights out... 100% circular" call on the record two days before Nvidia's print
 
 - **Michael Burry restated his Nvidia short thesis two days ahead of

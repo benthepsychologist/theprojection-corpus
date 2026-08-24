@@ -1,0 +1,54 @@
+# 2026-08-24-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase (see the 08-21 sidecar's
+# header for why the [:50] truncation is load-bearing).
+#
+# ONE entry, on the sanctions bullet. Nothing written for the semiconductor
+# selloff (the bullet already states its own mechanism — positioning into
+# an earnings print plus a price rise read as demand risk — and an
+# interpretation would restate it), for the Canada tariff schedule (a set
+# of announced rates whose meaning is not yet distinguishable from
+# negotiating posture, which is a reason to wait, not to speculate), or for
+# the buyback pushback (a procedural dispute, not a mechanism). Forcing an
+# interpretation onto any of them would be padding, which is exactly what
+# this file is not for. Read against attention/capital-context.yaml
+# (asof 2026-08-18).
+
+at-15-00-et-bessent-s-iran-package-landed-and-i:
+  mechanism: >
+    Sanctioning oil that has already stopped moving shifts the binding
+    instrument from the barrel to the payment rail, so the exposure moves
+    to Chinese refiners and the banks that clear their trade.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The effect shows up in trade finance, shipping insurance and
+        correspondent-banking withdrawal in the third countries named,
+        while crude stays soft.
+      why: >
+        This is the falsifiable form of the claim: it predicts the
+        compliance layer moves, not the commodity. If oil rallies on
+        enforcement instead, the reading is wrong.
+      precedent: >
+        Today ran the test once already — the package landed and WTI fell
+        about 2.5% to $84.89 rather than rising, and Iran's own loadings
+        are down to roughly 287,000 barrels a day from about 2 million
+        pre-war. There is very little barrel left to sanction.
+    - direction: >
+        China treats the dollar-system threat as the escalation it is and
+        answers elsewhere, making this a US-China dispute that outlives
+        the Iran file.
+      why: >
+        Naming a G2 counterparty as not exempt, over a trade it conducts
+        at 90% of the exporter's volume, is a different act from
+        designating shadow-fleet tankers.
+      precedent: >
+        The map already carries an active US-China escalation channel on
+        the technology side — the Taiwan Nvidia-server smuggling
+        indictments and China's 2026-2030 cyber-industry plan, both on the
+        08-23 page. A second channel opening on the financial side is the
+        thing to watch for.
+  context_note: >
+    capital-context's conflict_risk_premium reading has tracked oil
+    falling while rhetoric escalates for weeks, and today is its strongest
+    instance, because the escalation was the enforcement itself.

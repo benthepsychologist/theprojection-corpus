@@ -1031,7 +1031,26 @@
    "title": "Moonshot AI"
   },
   "entity:nvidia": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+    }
+   ],
    "fingerprint": "87c4bd387596b561",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -1984,6 +2003,33 @@
     {
      "day": "2026-08-24",
      "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — two power-component acquisitions landed the same day, both aimed at data-centre electrical supply",
+     "threads": [
+      "datacenter-power-grid"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
      "text": "Treasury is sitting on a $935–950bn cash balance, and it is what funds the buyback programme",
      "threads": [
       "fed-independence-fight"
@@ -1998,84 +2044,59 @@
       "fed-independence-fight"
      ],
      "url": "https://finance.yahoo.com"
-    },
-    {
-     "day": "2026-08-24",
-     "sev": null,
-     "text": "Oil fell as Iran allowed Iraqi tankers through Hormuz, easing the supply-shock premise this lens has been pricing",
-     "threads": [
-      "red-sea-oil-shock"
-     ],
-     "url": "https://www.investing.com"
-    },
-    {
-     "day": "2026-08-24",
-     "sev": null,
-     "text": "The Canadian dollar slid about 0.5% as US-Canada tariff talks reportedly broke down",
-     "threads": [],
-     "url": "https://www.cnbc.com"
-    },
-    {
-     "day": "2026-08-24",
-     "sev": "major",
-     "text": "The Coalition of the Willing met in Kyiv on Independence Day, and produced money",
-     "threads": [
-      "russia-ukraine-war"
-     ],
-     "url": "https://kyivindependent.com/coalition-of-the-willing-to-hold-independence-day-meeting-in-kyiv/"
     }
    ],
    "briefing": {
-    "gist": "**Two things that had been claims for days became facts this morning, and both are about who or what is actually behind a commitment.**",
+    "gist": "**Two things that had been claims for days became facts this morning, and both are about who or what is actually behind a commitment.",
     "lead": [
      {
+      "emoji": "⚠️",
+      "text": "Treasury's Iran sanctions package landed as \"Operation Economic Outcast\", naming China directly as not exempt; crude extended its fall into the announcement instead of rallying on it.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0613"
+     },
+     {
       "emoji": "💰",
-      "text": "Treasury's cash balance sits at roughly $935–950bn, some $350–400bn above the prior administration's target, and that cushion funds the expanded bond buybacks.",
+      "text": "Treasury is sitting on a $935-950bn cash balance at the Fed, which turned out to be what funds its bond buyback programme.",
       "url": "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
      },
      {
+      "emoji": "🤝",
+      "text": "The Nvidia-Poolside deal, closed on 08-23 as an unverifiable chain, reopened today: the WSJ reports reviewing the shareholder letter itself, describing $6bn for a non-exclusive licence plus $1bn of equity and 109 staff.",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+     },
+     {
       "emoji": "📉",
-      "text": "The 30-year Treasury touched a 19-year high of 5.33% overnight before pulling back to 5.228% on the cash-balance reporting.",
-      "url": "https://finance.yahoo.com"
+      "text": "A semiconductor selloff ran through Monday's session ahead of Nvidia's earnings, with Intel down 5%, AMD down 4% and TSMC down 3% while the Dow rose.",
+      "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
      },
      {
       "emoji": "🌍",
-      "text": "A Coalition of the Willing met in Kyiv on Ukraine's 35th Independence Day, with Norway pledging 85bn kroner and the EU pledging €6.1bn.",
-      "url": "https://kyivindependent.com/coalition-of-the-willing-to-hold-independence-day-meeting-in-kyiv/"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "Russia answered the holiday with a nationwide overnight barrage that killed 8 people and injured 43 across Ukraine.",
-      "url": "https://kyivindependent.com"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, over illegally routing AI servers to China.",
-      "url": "https://focustaiwan.tw"
+      "text": "The US removed Syria from the State Sponsors of Terrorism list today, ending a 47-year designation, in the same OFAC notice that carried the Iran designations.",
+      "url": "https://ofac.treasury.gov/recent-actions"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "⚖️",
-        "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, over illegally routing AI servers to China.",
-        "url": "https://focustaiwan.tw"
+        "emoji": "🤝",
+        "text": "The Nvidia-Poolside deal, closed on 08-23 as unverifiable, reopened on a reviewed document: $6bn for a non-exclusive licence, $1bn of equity at a $12bn pre-money valuation, and 109 staff joining Nvidia's Nemotron line.",
+        "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
        },
        {
-        "emoji": "🌍",
-        "text": "China's Central Cyberspace Affairs Commission named high-end AI chips a priority in its 2026–2030 industry plan.",
-        "url": "https://thequantuminsider.com"
-       },
-       {
-        "emoji": "📉",
-        "text": "Nvidia told customers that AI server prices will rise more than 15%, blaming rising memory costs.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+        "emoji": "🚀",
+        "text": "Nvidia put its Groq 3 LPX inference accelerator into full production, extending the Vera Rubin platform, claiming 3,400 output tokens/sec on 100k-token context, with Nebius as first adopter.",
+        "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
        },
        {
         "emoji": "⚠️",
-        "text": "Texas Governor Greg Abbott said data centers \"dug their own grave,\" a reversal nine months old that runs against his own donors.",
-        "url": "https://abcnews.com/Politics/week-transcript-8-23-26-texas-gov-greg/story?id=135865528"
+        "text": "Hugging Face's reported $13bn valuation picked up a second outlet and is still declined here for a third time: a newsletter citing an aggregator corroborates the reporting, not the fact.",
+        "url": "https://tldr.tech/ai"
+       },
+       {
+        "emoji": "📉",
+        "text": "A semiconductor selloff ran through Monday's session ahead of Nvidia's earnings, with Intel down 5%, AMD down 4% and TSMC down 3%.",
+        "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
        }
       ],
       "emoji": "🔬",
@@ -2085,23 +2106,23 @@
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Treasury's cash balance sits at roughly $935–950bn, some $350–400bn above the prior administration's target, and that cushion funds the expanded bond buybacks.",
+        "text": "Treasury is sitting on a $935-950bn cash balance at the Fed, some $350-400bn above the prior administration's target, which turned out to be what funds its bond buyback programme.",
         "url": "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
        },
        {
         "emoji": "📉",
-        "text": "The 30-year Treasury touched a 19-year high of 5.33% overnight before pulling back to 5.228% on the cash-balance reporting.",
-        "url": "https://finance.yahoo.com"
+        "text": "The 30-year Treasury yield touched 5.33% overnight, a 19-year high, before pulling back to 5.228% once the funding disclosure was reported; it went nowhere further through the afternoon.",
+        "url": "https://www.cnbc.com/2026/08/24/treasury-yields-warsh-jackson-hole.html"
        },
        {
-        "emoji": "🤝",
-        "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put 100% of the raise into AI.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+        "emoji": "⚠️",
+        "text": "The Iran package's sharpest edge is aimed at China, named as buying ~90% of Iran's oil and warned that facilitators face removal from the US dollar system; WTI fell ~2.5% to $84.89 into it.",
+        "url": "/threads/red-sea-oil-shock/"
        },
        {
-        "emoji": "💰",
-        "text": "SoftBank filed for a record ¥1 trillion retail bond issue that outlets tie to funding Son's OpenAI and Stargate commitments.",
-        "url": "https://www.tradingview.com"
+        "emoji": "🌍",
+        "text": "Trump put a dated schedule behind the Canada tariff fight: autos 25%→50%, auto parts 50% from zero, steel 50%, all effective 01 January 2027.",
+        "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027"
        }
       ],
       "emoji": "💰",
@@ -2111,23 +2132,23 @@
       "bullets": [
        {
         "emoji": "🏥",
-        "text": "A Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over.",
-        "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+        "text": "Monday produced no new item in this lens as of the 15:00 ET pass, and the afternoon confirmed it as a quiet day rather than an unread one: the weekday-only trade press has now posted and none of it is behavioural health.",
+        "url": "/threads/ai-therapy-regulatory-reckoning/"
        },
        {
         "emoji": "⚖️",
-        "text": "California's AB 2575, which would put liability for AI-caused patient harm on the AI developer, moved forward on August 21.",
+        "text": "California's AB 2575, which would place liability for AI-caused patient harm on the AI developer rather than the clinician, was read a second time on August 21.",
         "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
        },
        {
         "emoji": "⚖️",
-        "text": "The FDA said on the record that formal generative-AI guidance for health tools is coming.",
+        "text": "The FDA's digital-health lead said on the record that formal generative-AI guidance is coming, without committing to a timeline.",
         "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/"
        },
        {
-        "emoji": "⚖️",
-        "text": "New Zealand's prime minister proposed an Australia-style ban on social media for under-16s.",
-        "url": "https://www.reuters.com"
+        "emoji": "🏥",
+        "text": "A Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over, clinicians told reporters on August 22.",
+        "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
        }
       ],
       "emoji": "🏥",
@@ -2135,13 +2156,13 @@
      }
     ],
     "watch": [
-     "Whether the Treasury's cash cushion keeps funding buybacks as the 30-year presses back toward its overnight high, or issuance policy has to change.",
-     "Whether the Coalition of the Willing's pledges translate into delivered air-defence hardware before winter, given Moldova's call after last night's airspace incursion.",
-     "Whether California's AB 2575 and the FDA's promised generative-AI guidance become the first real regulatory pathway for AI mental-health tools, or stay separate tracks."
+     "Whether the FDA's promised generative-AI guidance produces an actual approval pathway before more wrongful-death suits and state bills like AB 2575 set liability rules first.",
+     "Whether the China edge of Operation Economic Outcast stays rhetorical or produces an actual designation of a major Chinese refiner or bank.",
+     "Whether Nvidia's 08-26 print reads the >15% AI-server price rise as pricing power or as the demand softening the market decided today that it is."
     ]
    },
-   "fingerprint": "775fe6bc72b3e094",
-   "generated": "2026-08-24T14:27:21Z",
+   "fingerprint": "2c95bfb884911a83",
+   "generated": "2026-08-24T19:25:22Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2232,43 +2253,96 @@
       "frontier-lab-ipos"
      ],
      "url": "https://tldr.tech/ai"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — two power-component acquisitions landed the same day, both aimed at data-centre electrical supply",
+     "threads": [
+      "datacenter-power-grid"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
     }
    ],
    "briefing": {
     "gist": "**A thin five hours, and the reason is a boundary rather than a quiet field.** Most of what this lens would call today's news carries timestamps between 18.",
     "lead": [
      {
-      "emoji": "⚖️",
-      "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, over illegally routing AI servers to China.",
-      "url": "https://focustaiwan.tw"
+      "emoji": "🤝",
+      "text": "The Nvidia-Poolside deal, closed on 08-23 as an unverifiable newsletter chain, reopened: the WSJ reports reviewing the shareholder letter itself. Still no Nvidia statement or filing behind it.",
+      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
      },
      {
-      "emoji": "💰",
-      "text": "Nvidia told customers AI server prices will rise more than 15%, blaming memory costs.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+      "emoji": "🚀",
+      "text": "Nvidia put its Groq 3 LPX inference accelerator into full production, extending the Vera Rubin platform, claiming 3,400 output tokens/sec on 100k-token context running Gemma 4 31B, with Nebius as first adopter.",
+      "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
      },
      {
-      "emoji": "🔬",
-      "text": "Hot Chips 2026 answered Micron's memory-wall math with three separate engineering fixes, from Samsung's zHBM to d-Matrix's Raptor.",
+      "emoji": "📉",
+      "text": "The market re-read Nvidia's 08-22 notice of a more-than-15% AI-server price rise as demand risk rather than pricing power, and sold the whole chip complex while the Dow rose. The price rise is not new; the reading is.",
       "url": "/threads/ai-memory-shortage/"
      },
      {
-      "emoji": "⚖️",
-      "text": "A federal judge signalled skepticism at the Pentagon's \"supply chain risk\" designation on Anthropic.",
-      "url": "https://abcnews.com"
+      "emoji": "🏗️",
+      "text": "Two power-component acquisitions landed the same day: nVent for Maverick Power at $1.75bn plus up to $550m earnout, and Infineon for C2i Semiconductors on undisclosed terms.",
+      "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
      },
      {
-      "emoji": "🌍",
-      "text": "China's Central Cyberspace Affairs Commission named high-end AI chips a priority in a 2026-2030 industry plan.",
-      "url": "https://thequantuminsider.com"
+      "emoji": "⚠️",
+      "text": "Hugging Face's reported $13bn valuation picked up a second outlet and is declined here for a third time — a newsletter citing an aggregator corroborates the reporting, not the fact.",
+      "url": "https://tldr.tech/ai"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "🚀",
+        "text": "Nvidia's Groq 3 LPX inference accelerator entered full production, presented at Hot Chips as a Vera Rubin extension built for low-latency agentic token generation, with Nebius named first AI-cloud adopter.",
+        "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "nVent agreed to buy Maverick Power for $1.75bn plus up to $550m of earnout — data-centre power distribution, ~$700m of 2026 revenue, closing Q4 2026 on a Bank of America bridge.",
+        "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Nvidia took a minority equity stake in Cloverleaf Infrastructure, a developer that assembles land, power and shell for data-centre sites.",
+        "url": "https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "Anthropic hired the founding architect of Google's TPU program as part of a push into its own hardware.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-21/anthropic-taps-google-chip-veteran-as-part-of-push-into-hardware"
+       }
+      ],
+      "emoji": "🏗️",
+      "heading": "The buildout: chips and power"
+     },
+     {
+      "bullets": [
+       {
         "emoji": "🔬",
-        "text": "Micron put a number on the memory wall: compute scales 3x every two years while HBM bandwidth only scales 2x.",
+        "text": "Micron put a number on the memory wall at Hot Chips: compute scales 3x every two years while HBM bandwidth scales only 2x.",
         "url": "https://www.servethehome.com"
        },
        {
@@ -2277,23 +2351,23 @@
         "url": "https://www.trendforce.com"
        },
        {
-        "emoji": "🔬",
-        "text": "Hot Chips 2026 added SK hynix's i-HBM and d-Matrix's Raptor, which fuses DRAM beneath compute for 105 TB/s in real silicon, as rival answers to the same bandwidth gap.",
-        "url": "/threads/ai-memory-shortage/"
+        "emoji": "📉",
+        "text": "Nvidia's 08-22 notice that AI-server prices rise more than 15% on DRAM and HBM costs was re-read today as demand softening, and Micron, SanDisk and Western Digital each fell more than 5%.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
        },
        {
-        "emoji": "💰",
-        "text": "Nvidia told customers AI server prices will rise more than 15%, directly blaming memory costs.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+        "emoji": "🔬",
+        "text": "Hot Chips presenters answered Micron's memory-wall math with three separate engineering fixes on the conference's second day.",
+        "url": "/threads/ai-memory-shortage/"
        }
       ],
       "emoji": "🔬",
-      "heading": "Compute and memory"
+      "heading": "Memory becomes the bottleneck"
      },
      {
       "bullets": [
        {
-        "emoji": "⚖️",
+        "emoji": "⚠️",
         "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, over illegally routing AI servers to China.",
         "url": "https://focustaiwan.tw"
        },
@@ -2303,49 +2377,54 @@
         "url": "https://thequantuminsider.com"
        },
        {
-        "emoji": "⚖️",
-        "text": "A federal judge signalled skepticism at the Pentagon's \"supply chain risk\" designation on Anthropic, per the report's headline.",
-        "url": "https://abcnews.com"
+        "emoji": "📉",
+        "text": "Alibaba's fiscal Q2 profit fell 75% year over year to RMB 10.5bn even as AI-infrastructure capex jumped 75% to RMB 67.7bn.",
+        "url": "https://abcnews.com/Technology/wireStory/alibaba-quarterly-profit-drops-75-ai-investment-spending-135808907"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "A second US-China escalation channel opened on the financial side: Treasury named China as not exempt from the Iran sanctions package, warning facilitators face removal from the dollar system.",
+        "url": "/threads/china-stack-independence/"
        }
       ],
-      "emoji": "⚖️",
-      "heading": "Export controls and enforcement"
+      "emoji": "🌍",
+      "heading": "China's parallel stack"
      },
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Sam Altman argued the AI industry's backlash problem is how it has talked about AI, not what people actually object to.",
-        "url": "https://www.theneurondaily.com/p/why-sam-altman-thinks-people-hate-ai"
+        "emoji": "⚖️",
+        "text": "OpenAI's policy chief asked Washington for mandatory pre-deployment safety standards.",
+        "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
        },
        {
-        "emoji": "💰",
-        "text": "Anthropic is preparing supervoting shares for its seven founders ahead of an IPO that could land as soon as late September.",
-        "url": "https://www.investing.com/news/stock-market-news/anthropic-prepares-supervoting-power-for-founders-ahead-of-ipo-the-information-reports-4866144"
+        "emoji": "⚖️",
+        "text": "OpenAI reversed its position on California's SB 53, asking legislators to strengthen the bill after citing its own sandbox breach.",
+        "url": "https://techcrunch.com/2026/08/22/openai-says-california-should-strengthen-its-ai-safety-bill/"
        },
        {
-        "emoji": "💰",
-        "text": "A second outlet picked up Hugging Face's reported $13bn valuation, a figure this map has declined to confirm three times and still treats as unconfirmed.",
-        "url": "https://tldr.tech/ai"
+        "emoji": "⚖️",
+        "text": "A federal judge signalled scepticism at the Pentagon's supply-chain-risk designation on Anthropic.",
+        "url": "https://abcnews.com"
        },
        {
-        "emoji": "💰",
-        "text": "Etched, an AI inference-chip startup, quadrupled its valuation to $21B in seven weeks, with hardware already live at a real customer.",
-        "url": "https://techcrunch.com/2026/08/18/etcheds-valuation-doubles-to-21b-in-a-month/"
+        "emoji": "🚀",
+        "text": "OpenAI launched ChatGPT for Teens, whose under-18 model spec bans simulated emotional dependence outright.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
        }
       ],
-      "emoji": "💰",
-      "heading": "Capital and voice"
+      "emoji": "⚖️",
+      "heading": "Frontier safety and governance"
      }
     ],
     "watch": [
-     "Nvidia reports Q2 FY2026 earnings on August 26, the first print since it warned customers of AI server price hikes above 15%.",
-     "Whether the federal judge's skepticism toward the Pentagon's Anthropic supply-chain designation turns into a formal ruling, since the article's body was unreachable and only the headline is verified.",
-     "Whether the second outlet's $13bn Hugging Face valuation figure gets independently confirmed by a primary source."
+     "Whether Nvidia's 08-26 Q2 print confirms the Poolside deal on the record — it is still a reviewed document reported secondhand, with no company statement or filing behind it.",
+     "Whether the 08-26 print reads the >15% AI-server price rise as pricing power or as the demand softening the market decided today that it is.",
+     "Whether the financial-side US-China escalation channel opened by the Iran package's dollar-system threat starts interacting with the export-control track, or stays separate."
     ]
    },
-   "fingerprint": "bba8adc2c85b0bdc",
-   "generated": "2026-08-24T14:27:21Z",
+   "fingerprint": "91a36517cd24de50",
+   "generated": "2026-08-24T19:25:22Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2461,6 +2540,25 @@
      "text": "The Canadian dollar slid about 0.5% as US-Canada tariff talks reportedly broke down",
      "threads": [],
      "url": "https://www.cnbc.com"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — Bessent's Iran package landed, and its sharpest edge is aimed at China rather than at Iran",
+     "threads": [
+      "red-sea-oil-shock",
+      "iran-conflict-widening"
+     ],
+     "url": "https://home.treasury.gov/news/press-releases/sb0613"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — oil extended its fall INTO the announcement rather than rallying on it",
+     "threads": [
+      "red-sea-oil-shock"
+     ],
+     "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
     }
    ],
    "briefing": {
@@ -2468,28 +2566,28 @@
     "lead": [
      {
       "emoji": "💰",
-      "text": "Treasury's cash balance sits at roughly $935–950bn, some $350–400bn above the prior administration's target, and CNBC reports it funds the doubled bond-buyback ceiling.",
+      "text": "The US Treasury's cash balance at the Fed has swelled to roughly $935-950bn, some $350-400bn above the prior administration's target, and that cushion is what funds its doubled bond-buyback ceiling.",
       "url": "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
      },
      {
-      "emoji": "📉",
-      "text": "The 10-year fell to 4.694% and the 30-year to 5.228% at Monday's open on that Treasury reporting, pulling back after the 30-year touched a fresh 19-year high near 5.33% overnight.",
-      "url": "https://finance.yahoo.com"
+      "emoji": "⚠️",
+      "text": "Treasury's Iran package landed at a 2:00pm ET press conference as 'Operation Economic Outcast' — renamed from the 'Operation Economic Fury' reported on 08-21 — with ~60 designations and five sectoral determinations.",
+      "url": "https://home.treasury.gov/news/press-releases/sb0613"
+     },
+     {
+      "emoji": "🌍",
+      "text": "The package's sharpest edge is aimed at China, named as buying ~90% of Iran's oil and warned that facilitators face removal from the US dollar system — a payment-rail sanction, not a supply one.",
+      "url": "/threads/red-sea-oil-shock/"
      },
      {
       "emoji": "📉",
-      "text": "Oil slid to $85.55 for WTI and $92.92 for Brent as Iran allowed Iraqi tankers through the Strait of Hormuz, even as Treasury's harshest Iran sanctions package looms.",
-      "url": "https://www.investing.com"
+      "text": "A semiconductor selloff ran through the session while the Dow rose — Intel down 5%, AMD 4%, TSMC 3%, SOXX 3-4% — two days before Nvidia reports.",
+      "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
      },
      {
-      "emoji": "📉",
-      "text": "Alibaba fell about 10% in Hong Kong once its all-AI share placement became tradeable, a hangover from its record follow-on sale.",
-      "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
-     },
-     {
-      "emoji": "💰",
-      "text": "SoftBank filed for a record ¥1 trillion retail bond, which every outlet covering it ties to funding Masayoshi Son's OpenAI and Stargate commitments.",
-      "url": "https://www.tradingview.com"
+      "emoji": "⚖️",
+      "text": "Trump put a dated schedule behind the Canada tariff fight: autos 25%→50%, auto parts 50% from zero, steel 50%, all effective 01 January 2027.",
+      "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027"
      }
     ],
     "sections": [
@@ -2497,84 +2595,136 @@
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Treasury's cash balance sits at roughly $935–950bn, some $350–400bn above the prior administration's target, and it funds the doubled buyback ceiling of up to $4bn per off-the-run issue.",
+        "text": "The Treasury General Account holds roughly $935-950bn, some $350-400bn above the ~$550-600bn level targeted under the prior administration, funding a doubled buyback ceiling of up to $4bn per off-the-run issue.",
         "url": "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
        },
        {
-        "emoji": "⚠️",
-        "text": "Deutsche Bank has called the buyback intervention \"soft-form financial repression,\" and Monday's reporting attaches a size and a funding source to that label for the first time.",
-        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
-       },
-       {
         "emoji": "📉",
-        "text": "The 10-year fell to 4.694% and the 30-year to 5.228% at Monday's open, pulling back after the 30-year touched a fresh 19-year high near 5.33% overnight.",
-        "url": "https://finance.yahoo.com"
+        "text": "The 30-year touched 5.33% overnight, a 19-year high, then pulled back to 5.228% on the funding disclosure; it held around 5.23% through the afternoon with no Fed voice on the record.",
+        "url": "https://www.cnbc.com/2026/08/24/treasury-yields-warsh-jackson-hole.html"
        },
        {
-        "emoji": "💰",
-        "text": "Bessent says the long-bond buyback bump has fully round-tripped and that he is acting on information the bond market does not have.",
-        "url": "https://247wallst.com/investing/2026/08/21/bessent-says-he-knows-something-the-bond-market-doesnt/"
+        "emoji": "⚖️",
+        "text": "Afternoon pushback targeted process, not policy: analysts say Treasury disclosed outside the normal refunding channel. Treasury notes no auction schedule changed and the first operation is 09 September.",
+        "url": "https://www.cnbc.com/2026/08/24/bessent-1-trillion-treasury-general-account-bond-buybacks.html"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Deutsche Bank's 'soft-form financial repression' is a strategist's framing, not an official description; commentary has since hardened it to 'fiscal dominance', a stronger claim again.",
+        "url": "https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/"
        }
       ],
       "emoji": "💰",
-      "heading": "The Treasury cash reveal"
+      "heading": "The Treasury cushion"
      },
      {
       "bullets": [
        {
-        "emoji": "📉",
-        "text": "Oil slid to $85.55 for WTI and $92.92 for Brent as Iran allowed Iraqi tankers through the Strait of Hormuz.",
-        "url": "https://www.investing.com"
-       },
-       {
-        "emoji": "🌍",
-        "text": "The Iran sanctions campaign due to land within days now has a name, \"Operation Economic Fury,\" and named targets.",
-        "url": "https://www.opb.org/article/2026/08/21/trump-warns-iran-economic-d-day-tehran-familiar-with-sanctions/"
-       },
-       {
-        "emoji": "📉",
-        "text": "The Canadian dollar slid about 0.5% as US-Canada tariff talks reportedly broke down.",
-        "url": "https://www.cnbc.com"
-       }
-      ],
-      "emoji": "🌍",
-      "heading": "Oil, Hormuz, and the sanctions clock"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "📉",
-        "text": "Alibaba fell about 10% in Hong Kong once its all-AI share placement became tradeable, a hangover from its record follow-on sale.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
-       },
-       {
-        "emoji": "💰",
-        "text": "SoftBank filed for a record ¥1 trillion retail bond, which every outlet covering it ties to funding Son's OpenAI and Stargate commitments.",
-        "url": "https://www.tradingview.com"
-       },
-       {
-        "emoji": "🚀",
-        "text": "YMTC's RMB 33bn (about $4.9bn) Shanghai STAR Market IPO application was formally accepted, extending the mainland memory-chip listing wave.",
-        "url": "https://technode.com"
+        "emoji": "⚠️",
+        "text": "Treasury published SB0613 and SB0614: ~60 entities, individuals and vessels, five sectoral determinations (digital assets, technology, gold, aviation, shipping), and every Bank Melli branch ordered shut.",
+        "url": "https://home.treasury.gov/news/press-releases/sb0613"
        },
        {
         "emoji": "⚠️",
-        "text": "Michael Burry restated his Nvidia circularity thesis, calling \"100% of announced revenue\" circular, two days before Nvidia's earnings.",
-        "url": "/threads/nvidia-vendor-financing/"
+        "text": "The superlative widely attributed to Bessent, 'the greatest coordinated economic isolation', appears in neither primary release; Treasury's own language is 'tighten the noose'.",
+        "url": "https://home.treasury.gov/news/press-releases/sb0613"
+       },
+       {
+        "emoji": "📉",
+        "text": "Oil extended its fall into the announcement rather than rallying on it: WTI to about $84.89 and Brent to about $92.06, both down roughly 2.5% on the day.",
+        "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
+       },
+       {
+        "emoji": "🌍",
+        "text": "Earlier the same day oil had eased as Iran allowed Iraqi tankers through Hormuz — the shipping lane loosening while the financial screws tightened.",
+        "url": "/threads/red-sea-oil-shock/"
+       }
+      ],
+      "emoji": "🌍",
+      "heading": "The Iran sanctions landing"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "📉",
+        "text": "Intel fell 5% to $85.98, AMD 4% to $454.36 and TSMC 3% to $406.40, with Micron, SanDisk and Western Digital each off more than 5%, while the Dow rose 0.28% — de-risking inside one sector, not market-wide risk-off.",
+        "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+       },
+       {
+        "emoji": "💰",
+        "text": "Nvidia's 08-22 notice that AI-server prices rise more than 15% on DRAM and HBM costs is being re-read as demand softening rather than pricing power. The price rise is three days old; the reading is today's.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
+       },
+       {
+        "emoji": "📉",
+        "text": "Nvidia's five-quarter average day-of reaction has been a 2% decline even after beats, which makes trimming into Wednesday's print mechanical rather than a view.",
+        "url": "/threads/ai-trade-bear-turn/"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "Alibaba launched Hong Kong's largest-ever follow-on share sale and put the proceeds into AI.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-23/alibaba-to-raise-10-billion-by-selling-shares-for-ai-expansion"
+       }
+      ],
+      "emoji": "📉",
+      "heading": "Chips selloff before Nvidia"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🏗️",
+        "text": "SoftBank filed for a record ¥1 trillion retail bond issue, tied by every outlet covering it to funding Son's OpenAI and Stargate commitments.",
+        "url": "/threads/softbank-all-in/"
+       },
+       {
+        "emoji": "💰",
+        "text": "The roughly $2 trillion Anthropic IPO valuation target is reported to rest on a $190-200bn 2028 revenue forecast.",
+        "url": "https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Broadcom is assembling $70-80bn of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "No new AI-capex financing landed today: the '$220bn hyperscaler bond issuance' and '$145.2bn August IG record' figures circulating against today's queries both trace to a Bloomberg piece dated 17 August.",
+        "url": "/threads/ai-buildout-debt-risk/"
        }
       ],
       "emoji": "🏗️",
-      "heading": "The AI financing loop"
+      "heading": "AI's financing stack"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "📉",
+        "text": "The Canadian dollar slid about 0.5% to 1.383 as US-Canada tariff talks reportedly broke down, quoted as 'they asked too much'.",
+        "url": "/threads/fed-independence-fight/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Trump then set a dated schedule: autos 25%→50%, auto parts 50% from zero, steel 50%, all effective 01 January 2027, on top of 50% tariffs on $20bn of goods that took effect this weekend.",
+        "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Auto executives told Reuters they doubt it lands, noting the January date falls after the November midterms. No thread on this map yet covers North American trade policy.",
+        "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Currency and trade"
      }
     ],
     "watch": [
-     "Whether the now-sized $935–950bn Treasury cushion sets a hard ceiling on how much further the buyback and yield-suppression campaign can run.",
-     "Lisa Cook's deadline to respond to the push to remove her from the Fed board lands August 26, two days before Warsh's first Jackson Hole keynote as chair.",
-     "Whether Nvidia's August 26 earnings validate or undercut Burry's circularity thesis just as Alibaba, SoftBank, and YMTC all tap capital markets for AI money."
+     "Whether the China edge of Operation Economic Outcast stays rhetorical or produces an actual designation of a major Chinese refiner or bank.",
+     "Whether the buyback pushback stays procedural or hardens into a sustained 'fiscal dominance' read on Treasury's balance sheet.",
+     "Lisa Cook's 08-26 deadline and Warsh's first Jackson Hole keynote on 08-28 both test the Fed-independence fight this week."
     ]
    },
-   "fingerprint": "28292bb5128b5ec0",
-   "generated": "2026-08-24T14:27:21Z",
+   "fingerprint": "03c43ab0815ad174",
+   "generated": "2026-08-24T19:25:32Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2656,27 +2806,32 @@
   "lens:mental-health": {
    "breaking": [],
    "briefing": {
-    "gist": "**Nothing has happened in this lens yet today, and the honest reason is that the trade press had not woken up when the window closed.** Three of the four outlets this lens depends on.",
+    "gist": "**Nothing has happened in this lens today, and as of the 15.",
     "lead": [
      {
-      "emoji": "⚖️",
-      "text": "The FDA's Rick Abramson told STAT that formal generative-AI guidance is coming, addressing generative-AI devices broadly rather than mental-health chatbots by name.",
-      "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/"
+      "emoji": "🏥",
+      "text": "No new item landed in this lens today. The morning could not tell a quiet day from an unread one; by afternoon the weekday-only trade press had posted its Monday cycle and none of it was behavioural health.",
+      "url": "/threads/ai-therapy-regulatory-reckoning/"
+     },
+     {
+      "emoji": "🤝",
+      "text": "Radial acquired the management company behind Mindful Health Solutions, forming what both firms call the largest interventional-psychiatry network in the US, with 27 clinics and 100+ clinicians.",
+      "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
      },
      {
       "emoji": "⚖️",
-      "text": "California's AB 2575 would place liability for AI-caused patient harm on the AI developer, and it was amended and read a second time on August 21.",
-      "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+      "text": "Colorado's HB26-1195, barring AI systems from directly conducting therapy, has been binding law since August 12 but was only caught by this map on August 19.",
+      "url": "https://leg.colorado.gov/bills/HB26-1195"
      },
      {
       "emoji": "⚠️",
-      "text": "A Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over the work.",
-      "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+      "text": "NPR's investigation into a 29-year-old's suicide documents the clearest case yet of general-purpose AI substituting for disclosure to real humans, including her own therapist.",
+      "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
      },
      {
-      "emoji": "🌍",
-      "text": "New Zealand's prime minister proposed an Australia-style ban on social media for users under 16, a second country running the same experiment.",
-      "url": "https://www.reuters.com"
+      "emoji": "⚖️",
+      "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, a six-week case with claims that could reach $200 billion.",
+      "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
      }
     ],
     "sections": [
@@ -2684,90 +2839,126 @@
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "The FDA's Rick Abramson told STAT formal generative-AI guidance is coming, though it addresses generative-AI devices broadly rather than mental-health chatbots by name.",
+        "text": "California's AB 2575 would put liability for AI-caused patient harm on the AI developer rather than the clinician, and was read a second time on August 21.",
+        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The FDA's digital-health lead said on the record that formal generative-AI guidance is coming, with no timeline given.",
         "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/"
        },
        {
         "emoji": "⚖️",
-        "text": "California's AB 2575 would place liability for AI-caused patient harm on the AI developer, and it was amended and read a second time on August 21.",
-        "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
+        "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, has been binding law since August 12.",
+        "url": "https://leg.colorado.gov/bills/HB26-1195"
        },
        {
         "emoji": "⚠️",
-        "text": "A Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over the work.",
+        "text": "A Kaiser mental-health triage team went from nine clinicians to three as an automated screening tool took over their work.",
         "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Colorado's HB26-1195, which bars AI systems from directly conducting therapy, has been binding law since August 12 but went unnoticed until August 19.",
-        "url": "/threads/state-therapy-chatbot-bans/"
        }
       ],
       "emoji": "⚖️",
-      "heading": "AI regulation and liability"
+      "heading": "The AI-therapy regulatory reckoning"
      },
      {
       "bullets": [
        {
-        "emoji": "💰",
-        "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across four states with over 100 clinicians.",
-        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+        "emoji": "⚠️",
+        "text": "NPR's investigation into a 29-year-old's suicide documents the clearest case yet of general-purpose AI substituting for disclosure to real humans, including her own therapist.",
+        "url": "https://www.npr.org/2026/08/18/nx-s1-5929575/ai-suicide-risks-mental-health"
        },
        {
-        "emoji": "🏥",
-        "text": "HHS added the Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to its Title IV-E Prevention Services Clearinghouse, making both federally reimbursable.",
-        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
+        "emoji": "🚀",
+        "text": "OpenAI's under-18 model spec now bans encouraging emotional dependence, the same requirement Colorado had proposed as law one week earlier.",
+        "url": "https://openai.com/index/chatgpt-for-teens"
        },
        {
-        "emoji": "🏗️",
-        "text": "Healthcare Dive's interview with UHS CEO Marc Miller laid out the strategy behind its $835 million Talkspace acquisition, which has now closed.",
-        "url": "https://www.healthcaredive.com/news/uhs-talkspace-acquisition-strategy-marc-miller-interview/828152/"
-       }
-      ],
-      "emoji": "🏗️",
-      "heading": "Clinical infrastructure and funding"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🌍",
-        "text": "New Zealand's prime minister proposed an Australia-style ban on social media for users under 16, a second country running the same experiment.",
-        "url": "https://www.reuters.com"
+        "emoji": "⚠️",
+        "text": "A pediatrician's first-person STAT op-ed argues that AI chatbots are grooming her patients.",
+        "url": "https://www.statnews.com/2026/08/19/ai-chatbots-children-grooming-mental-health/"
        },
        {
         "emoji": "⚖️",
-        "text": "Opening statements began in Oakland in the states' federal trial against Meta over child safety and social-media addiction, with claims that could reach $200 billion.",
-        "url": "https://apnews.com/article/meta-trial-oakland-states-instagram-safety-2b617764a8ddc4846f74f59d0c4516b8"
+        "text": "The DOJ filed a Statement of Interest backing xAI against Minnesota's HF1606 AI 'nudify' ban; a ruling in that case is expected 09-19.",
+        "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
        }
       ],
-      "emoji": "🌍",
-      "heading": "Geopolitics of youth social media"
+      "emoji": "⚠️",
+      "heading": "AI companion harm and youth safety"
      },
      {
       "bullets": [
        {
-        "emoji": "🔬",
-        "text": "A digital-mental-health journal published a new study, \"Consulting Dr. Google,\" on how people search for mental-health information online.",
-        "url": "https://www.sciencedirect.com/science/article/pii/S2214782926000916"
+        "emoji": "🤝",
+        "text": "Radial acquired the management company behind Mindful Health Solutions, forming what both firms call the largest interventional-psychiatry network in the US, with 27 clinics and 100+ clinicians.",
+        "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
+       },
+       {
+        "emoji": "💰",
+        "text": "HHS added the Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to the Title IV-E Prevention Services Clearinghouse, making both federally reimbursable.",
+        "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
+       },
+       {
+        "emoji": "📉",
+        "text": "UHS's $835 million acquisition of Talkspace closed, and Talkspace left the stock indices.",
+        "url": "/threads/bigtech-into-health/"
+       },
+       {
+        "emoji": "📉",
+        "text": "Behavioral-health dealmaking is down 20% for the first half of 2026, which is the frame for every deal above.",
+        "url": "https://bhbusiness.com/2026/08/17/behavioral-health-dealmaking-down-20-in-the-first-half-of-2026/"
+       }
+      ],
+      "emoji": "💰",
+      "heading": "The funding and deal picture"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "1199SEIU held coordinated pickets across 19 HCA Florida facilities over the Palantir-co-developed Timpani AI scheduling system, alleging unauthorized schedule changes and wage losses.",
+        "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+       },
+       {
+        "emoji": "🚀",
+        "text": "Alan's AI-triage product for its Canada entry is named Mo, built on about 20 agents with a safety layer that escalates risky conversations to a human team within 15 minutes.",
+        "url": "https://thelogic.co/news/alan-insurance-expansion-ai/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "LifeStance Health will pay a little over $3 million to settle a class action alleging it fed patient data, including therapy-search terms, to Meta and Google via tracking pixels.",
+        "url": "https://bhbusiness.com/2026/08/18/lifestance-reaches-settlement-in-data-privacy-lawsuit-involving-1-million-patients/"
+       }
+      ],
+      "emoji": "🏗️",
+      "heading": "Workforce and platform notes"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
+        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
        },
        {
         "emoji": "🔬",
-        "text": "JAMA Psychiatry and Lancet Psychiatry were confirmed, after twelve days unreachable, to have published nothing new relevant to this lens.",
-        "url": null
+        "text": "JAMA Psychiatry and Lancet Psychiatry both published nothing lens-relevant between 08-20 and 08-24 — a confirmed negative for the first time in twelve days, checked via PubMed rather than the blocked journal sites.",
+        "url": "/threads/mh-evidence-watch/"
        }
       ],
       "emoji": "🔬",
-      "heading": "Evidence"
+      "heading": "Evidence and clinical-legal notes"
      }
     ],
     "watch": [
-     "Whether the FDA's promised generative-AI guidance ends up addressing mental-health chatbots specifically or stays general to devices as a category.",
-     "Whether AB 2575 clears a California Senate floor vote before the session ends on August 31, as currently expected.",
-     "Whether Kaiser's expected August mediation reaches agreement on AI-replacement language for triage staffing."
+     "The AI-therapy capability gap is being closed by litigation and state law rather than by regulation, and the first real FDA approval pathway still has not appeared.",
+     "Behavioral-health investment keeps favouring clinician-augmentation and interventional psychiatry over consumer chatbots, against dealmaking down 20% year to date.",
+     "The FDA's psychedelic public hearing on 09-14 and the Raine v. OpenAI case-management conference on 09-23 are the next two dated tests in this lens."
     ]
    },
    "fingerprint": "624be13dc8f7aed1",
-   "generated": "2026-08-24T14:27:21Z",
+   "generated": "2026-08-24T19:25:22Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2955,7 +3146,17 @@
    "title": "alibaba-qwen"
   },
   "node:amazon-aws": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — two power-component acquisitions landed the same day, both aimed at data-centre electrical supply",
+     "threads": [
+      "datacenter-power-grid"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
+    }
+   ],
    "fingerprint": "bf0e07cb7f41f3bf",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -3280,7 +3481,18 @@
    "title": "anthropic"
   },
   "node:apple": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "658660a47c79f432",
    "generated": "2026-08-11T13:56:47Z",
    "generated_by": "llm",
@@ -3848,7 +4060,18 @@
    "title": "coreweave"
   },
   "node:cxmt": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "96d1b1e092923f71",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4554,7 +4777,17 @@
    "title": "Masayoshi Son"
   },
   "node:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+    }
+   ],
    "fingerprint": "c84ce0895f6dd827",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -4710,7 +4943,18 @@
    "title": "mgx"
   },
   "node:micron": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "2ac8580a82b7e149",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -4829,7 +5073,18 @@
    "title": "micron"
   },
   "node:microsoft": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "b0f04ca6c1f57497",
    "generated": "2026-07-30T10:32:46Z",
    "generated_by": "llm",
@@ -5063,7 +5318,36 @@
    "title": "moonshot-ai"
   },
   "node:nvidia": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "799403cf276eee74",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5193,6 +5477,24 @@
       "frontier-lab-ipos"
      ],
      "url": "https://tldr.tech/ai"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
     }
    ],
    "fingerprint": "ae40097b529ae79f",
@@ -5638,7 +5940,18 @@
    "title": "Sam Altman"
   },
   "node:samsung": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "bb6eb1d66fcbd518",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5747,7 +6060,18 @@
    "title": "samsung"
   },
   "node:sk-hynix": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "697a51e27bb17e42",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -6137,6 +6461,15 @@
       "frontier-lab-ipos"
      ],
      "url": "https://tldr.tech/ai"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — two power-component acquisitions landed the same day, both aimed at data-centre electrical supply",
+     "threads": [
+      "datacenter-power-grid"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
     }
    ],
    "fingerprint": "9a95d02c56fea785",
@@ -6967,7 +7300,18 @@
    "title": "Datacenter Sites"
   },
   "thread:ai-memory-shortage": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "2839059529b2d405",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7219,7 +7563,18 @@
    "title": "The Reckoning"
   },
   "thread:ai-trade-bear-turn": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — a semiconductor selloff ran through the session while the Dow ROSE, which makes it de-risking inside one sector rather than market-wide risk-off",
+     "threads": [
+      "ai-trade-bear-turn",
+      "ai-memory-shortage"
+     ],
+     "url": "https://247wallst.com/investing/2026/08/24/semiconductor-stocks-slide-ahead-of-nvidia-earnings-intel-falls-5-amd-slides-4-taiwan-semiconductor-slips-3/"
+    }
+   ],
    "fingerprint": "703bf8544b222acb",
    "generated": "2026-07-30T12:01:16Z",
    "generated_by": "llm",
@@ -8135,7 +8490,17 @@
    "title": "CXMT IPO"
   },
   "thread:datacenter-power-grid": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — two power-component acquisitions landed the same day, both aimed at data-centre electrical supply",
+     "threads": [
+      "datacenter-power-grid"
+     ],
+     "url": "https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html"
+    }
+   ],
    "fingerprint": "68d1d315eed77890",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9131,7 +9496,17 @@
    "title": "Nuclear for AI"
   },
   "thread:nvidia-order-book": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — Nvidia disclosed that its Groq 3 LPX inference accelerator is in FULL PRODUCTION",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
+    }
+   ],
    "fingerprint": "47b092c92dc6ee31",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9161,7 +9536,17 @@
    "title": "Nvidia's Order Book"
   },
   "thread:nvidia-vendor-financing": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — the Nvidia-Poolside deal reversed from \"closed as unverifiable\" to a document-based account, and the terms are unusual",
+     "threads": [
+      "nvidia-vendor-financing"
+     ],
+     "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
+    }
+   ],
    "fingerprint": "a5ef8614530feb78",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9405,6 +9790,25 @@
       "red-sea-oil-shock"
      ],
      "url": "https://www.investing.com"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": "major",
+     "text": "AT 15:00 ET — Bessent's Iran package landed, and its sharpest edge is aimed at China rather than at Iran",
+     "threads": [
+      "red-sea-oil-shock",
+      "iran-conflict-widening"
+     ],
+     "url": "https://home.treasury.gov/news/press-releases/sb0613"
+    },
+    {
+     "day": "2026-08-24",
+     "sev": null,
+     "text": "AT 15:00 ET — oil extended its fall INTO the announcement rather than rallying on it",
+     "threads": [
+      "red-sea-oil-shock"
+     ],
+     "url": "https://www.cnbc.com/2026/08/24/oil-price-today-wti-brent-us-sanctions-iran.html"
     }
    ],
    "fingerprint": "c0673bcb56a19813",

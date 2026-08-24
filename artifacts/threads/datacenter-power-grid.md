@@ -15,6 +15,16 @@ via behind-the-meter gas at gigawatt scale, a hard equipment ceiling
 (turbines sold out to 2030, transformers ~3yr), and the ratepayer +
 environmental-justice fights that improvisation generates.
 
+## 2026-08-24 — The buildout's demand reaches the electrical supply chain: two power-component acquisitions in one day
+
+- **nVent Electric agreed to buy Maverick Power for $1.75bn, plus up to $550m of earnout tied to 2027-2028 performance.** Maverick (McKinney, Texas; ~900 employees; ~$700m of 2026 revenue) makes electrical power-distribution equipment specifically for data centres. The deal is expected to close in Q4 2026, funded with cash and new debt on a Bank of America bridge. **This is the buildout's demand showing up in the electrical supply chain rather than in chips or in grid capacity** — vendor consolidation one layer below the constraint this thread tracks.
+  ([nVent, via GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/24/3349571/0/en/nvent-to-acquire-maverick-power.html)) ⟨daily 2026-08-24⟩
+  <!-- Corporate press release, which this map normally trims. Kept because
+       the dollar figure and the direct data-centre tie make it a real
+       capex datapoint rather than newswire churn. -->
+- **Infineon is acquiring C2i Semiconductors, a Bangalore maker of power-management chips for AI data centres**, on undisclosed terms, expected to close in Q3 2026. Smaller and less consequential than the nVent deal; recorded because it is the same lane on the same day — multiphase controllers and smart power stages, the component level of the same power problem.
+  ([Infineon](https://www.infineon.com/press-release/2026/infpr202608-129)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-10 — OpenAI and Meta commit to Abbott's Texas rules; a scale check on the gas buildout
 
 - **OpenAI and Meta both formally committed to Gov. Greg Abbott's new

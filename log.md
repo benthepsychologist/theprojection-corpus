@@ -5190,3 +5190,156 @@ just-finalized Sunday that carries most of the last eighteen hours. The
 archive keeps 08-23 in full; the page does not show it. That is the design
 working as specified (`week = the 7 digest-days Mon…Sun`), so it is raised
 as a question for Ben rather than changed.
+
+## 2026-08-24 (15:00 ET) — `/daily`: 08-24 extended 10:00 → 15:00 ET; the day's dated expectation resolves, and three of this run's own claims got corrected before publication
+
+**What this run covered.** 2026-08-24 10:00 ET → 15:00 ET, a five-hour
+afternoon extension of a day already open. **Nothing needed finalizing** —
+08-23 and every day before it were already `final` when this run started,
+so this was purely an extension pass. All five 08-24 pages stay
+`status: building` / `coverage: pending`, correctly: the day has not
+closed, so the coverage critic has nothing to check yet.
+
+**Dispatch:** one collector sweep (18 sources, full manifests) plus five
+agentic sweeps — four lens sweeps and one dedicated primary-source
+sanctions check — then four briefing writers. Ten agents, all returned,
+none stalled.
+
+### The news: an expectation resolved, and the resolution had an edge
+
+**✅ `iran-us-sanctions-package-aug24` → HIT**, on primary sources.
+Treasury published **SB0613** and **SB0614** today, both above the SB0611
+(08-20) high-water mark the 10:00 ET check recorded, with OFAC's
+recent-actions feed corroborating independently. The package: **~60
+designations, five sectoral determinations** (digital assets, technology,
+gold, aviation, shipping), five named shadow-fleet tankers, MOIS cyber
+actors with a $10M reward, and every Bank Melli branch ordered shut.
+
+**The sharpest edge is China, and it is a payment sanction wearing an oil
+sanction's clothes.** Bessent named China as not exempt on the basis that
+it buys ~90% of Iran's oil exports, and warned that facilitators face
+**removal from the US dollar system**. With Iranian loadings already at
+~287k bbl/day against ~2m pre-war, there is almost no barrel left to
+squeeze — the instrument is the payment rail and the exposure sits with
+Chinese refiners and their banks. **One interpretation written** on that
+bullet, `plausible` confidence, validated against
+`validate_interpretation()`.
+
+**The same department, the same afternoon, the same OFAC notice: Syria
+removed from the State Sponsors of Terrorism list after 47 years.** Only
+Iran, North Korea and Cuba remain.
+
+**What actually got repriced was chips.** Oil fell ~2.5% INTO the
+sanctions. Yields went nowhere. But a semiconductor selloff ran all
+session while the **Dow rose** — Intel −5%, AMD −4%, TSMC −3%, SOXX −3–4%.
+
+### ⚠️ Three claims this run made and then corrected before publishing
+
+This is the part worth keeping. All three were caught inside the run, by
+the map's own machinery rather than by luck.
+
+1. **"The China angle was absent from every pre-announcement report" —
+   WRONG, and it was this session's own overclaim.** The 08-21
+   `red-sea-oil-shock` entry already records Bessent naming **China, India
+   and the UAE as focal points**. Corrected across five surfaces to the
+   narrower true claim: the **90%-of-exports framing** and the
+   **dollar-system removal threat** are today's additions, not the China
+   angle itself.
+2. **The campaign's NAME changed between announcement and delivery, and
+   the map was carrying the old one.** Logged 08-21 as **"Operation
+   Economic Fury"** (accurately — that is what was reported then);
+   Treasury's own releases today say **"Operation Economic Outcast."**
+   ✅ **Caught because two independent briefing writers, working from packs
+   built off the 08-21 record, both emitted "Fury."** The stale name
+   propagating through the map's own derived surfaces is what surfaced it.
+   08-21 entries left as written; every 08-24 surface now says Outcast.
+3. **The >15% Nvidia AI-server price rise was written up as new today. It
+   is not** — it is an 08-22 event already on the 08-23 page. Caught by
+   cross-checking `actor-doing.yaml`'s nvidia entry, which already carried
+   it. Reframed on both threads and in three digests: **the price rise is
+   three days old; the RE-READING of it as demand risk is today's datum.**
+
+### One call reversed on evidence
+
+**The Nvidia-Poolside deal, closed on 08-23 as unverifiable, is reopened.**
+It had been declined three times as a chain where every outlet re-reported
+one paywalled Newcomer post. Today the **WSJ reported reviewing the
+shareholder letter itself**: $6bn for a NON-EXCLUSIVE licence to Poolside's
+"Model Factory", $1bn at a $12bn pre-money valuation, and 100+ engineers
+moving to Nvidia's open-weight Nemotron line. ⚠️ **The standard it now
+meets is "reviewed document, reported secondhand" — not "confirmed by
+Nvidia."** Still no statement or filing; the 08-26 call is the test.
+**The same standard refused Hugging Face's $13bn for a third time the same
+day**, which is what makes either call worth anything.
+
+### Verification work that produced negatives worth having
+
+- **Mental health's soft gap closed into a confirmed silence.** The
+  morning could not distinguish "trade press hasn't posted" from "nothing
+  happened." Fierce Healthcare has now published its Monday cycle and none
+  of it is behavioural health. Six live strands re-checked against primary
+  sources. ⚠️ A STAT item stamped 08:30 UTC is the SAME FDA story already
+  on the 08-23 page — refused, not double-counted.
+- **`NVIDIA Groq 3 LPX` verified directly against Nvidia's newsroom.** An
+  Nvidia part carrying the Groq name reads oddly enough to be worth
+  confirming rather than passing through. It is correct as written, and in
+  full production, with Nebius as first adopter.
+- **Two dating traps caught in world news:** a PBS Gaza piece dated **29
+  June 2026** surfacing against today's query, and a Colombia earthquake
+  from **early August**. Both excluded.
+- **One capex figure refused:** the "$220bn hyperscaler bond issuance" and
+  "$145.2bn August IG record" figures circulating today both trace to a
+  Bloomberg piece dated **17 August**.
+
+### 🚨 Flash: none, asked twice
+
+Asked at 10:00 ET and again at 15:00 ET. The Syria delisting is the
+closest call of the day and a genuine 47-year structural change — but it
+is the **scheduled completion of a process announced 08 July**, not a
+rupture. The Iran package was on this map's own calendar as a dated
+expectation, which is close to a definitional disqualification.
+
+### 🧵 Two new thread candidates, both from orphaned items
+
+- **North American trade policy** — the cleanest-cut candidate in days,
+  because today produced **two orphaned items on one story**: the CAD
+  falling 0.5% in the morning, and Trump's dated tariff schedule in the
+  afternoon (autos 25%→50%, parts 50% from zero, steel 50%, all effective
+  01-01-2027). `threads.yaml` re-checked in full: **no thread covers this
+  at all.** The map is recording a G7 trade war as untagged loose items.
+- **US sanctions realignment in the Middle East** — the Syria delisting
+  has nowhere to go and is currently filed onto `iran-conflict-widening`,
+  which is about a war, not about the designation architecture.
+
+### 🔧 One tooling defect found in this repo's own render path
+
+**A leading emoji before a bullet's bold lead silently breaks item
+parsing.** `render_read.parse_digest` uses `re.match(r"\*\*([^*]+)\*\*")`,
+which is ANCHORED — so `- ✅ **Bold lead** — …` fails to match, the title
+falls back to an 80-character slice, **and any `interp=yes` lookup returns
+nothing.** The interpretation written this run rendered as `null` until
+four bullets were rewritten to put the bold first. `theprojection_pipeline/`
+is owned outright here, so this is fixable in-repo, but it was NOT fixed
+this run — the bullets were adapted to the parser instead. Worth a
+deliberate decision rather than a drive-by change: either the parser
+tolerates a leading status emoji, or the digest template says plainly that
+it must not have one.
+
+### ⛔ Still broken, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials expired — SEVEN days.** Re-tested,
+  still `Reauthentication failed. cannot prompt during non-interactive
+  execution`. `gcloud auth login` is a browser flow **only Ben can
+  complete**. `attention/world-news.yaml` is stale from 08-18, so both of
+  today's thread candidates are curator guesses rather than
+  mechanically-scored.
+- ⚠️ **`cloud-researcher collect --corpus .`, the command the `/daily`
+  skill documents, still fails outright** with
+  `FileNotFoundError: /workspace/cloud-researcher/attention/watchlist.yaml`.
+  The working invocation needs `kestrel/.env` sourced plus
+  `KESTREL_INSTANCE` and `CLOUD_RESEARCHER_CORPUS` set to this repo's
+  absolute path. Already filed to `kestrel-ops` on 08-23; hit again today,
+  so it is now costing every run a step.
+- ⚠️ **Read payload 1132 KB, over the 600 KB soft cap.** Note this figure
+  is DEPRESSED by the week boundary — the fixed Mon–Sun week currently
+  holds only 08-24 — so it will climb through the week regardless.

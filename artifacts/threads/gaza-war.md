@@ -24,6 +24,12 @@ of the population?
   [France 24](https://www.france24.com/en/middle-east/20260823-middle-east-live-iran-s-president-says-country-facing-many-problems-as-us-sanctions-loom),
   [Anadolu Ajansı](https://aa.com.tr/en/middle-east/israeli-drone-strike-kills-2-palestinians-in-displacement-tent-in-central-gaza/4035386),
   [Palestine Chronicle](https://www.palestinechronicle.com/netanyahu-threatens-new-gaza-attacks-displacement-over-childrens-kites/)) ⟨daily 2026-08-24⟩
+- **AT 15:00 ET — the count kept climbing through the afternoon, across at least two further incidents.** A 10-year-old girl, Amal Abu Khater, was shot while eating in her family's tent in Khan Younis — the IDF says it has no record of the incident — and a 4-year-old boy was killed in a separate strike in Bureij, distinct from the Zawaida strike on 4-year-old Mohammed Taha already recorded above. On the Deir al-Balah tent strike, the IDF said via Telegram that it had targeted a named Hamas Nukhba Force member, Muhammad Abdul Nasser Jaber Abu Asad, alleged to have taken part in the 7 October 2023 attack; Wafa reported at least one killed and several wounded.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/24/israeli-strike-on-gaza-shelter-extends-casualty-list),
+  [Middle East Monitor](https://www.middleeastmonitor.com/20260824-2-palestinians-killed-in-gaza-amid-persistent-israeli-attacks-on-civilians/)) ⟨daily 2026-08-24⟩
+- ⚠️ **Monday's own figure is genuinely unsettled and is recorded as a range with each outlet named, not as a single number.** Middle East Monitor, citing Gaza's Health Ministry, put Monday's hospital intake at 2 bodies and 32 wounded over a 24-hour window; other wire-adjacent aggregation put Monday's cumulative toll at 6 killed. The Health Ministry's standing cumulative figures are firmer: **1,288 killed since October** and **73,422 since October 2023**. A live count moving through the day is the expected condition here, and a later revision should read as a revision rather than as a contradiction.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/24/israeli-strike-on-gaza-shelter-extends-casualty-list),
+  [Middle East Monitor](https://www.middleeastmonitor.com/20260824-2-palestinians-killed-in-gaza-amid-persistent-israeli-attacks-on-civilians/)) ⟨daily 2026-08-24⟩
 
 ## 2026-08-23 — A Hamas commander killed and a threat to "intensify," as friction under the framework rather than a rupture of it
 

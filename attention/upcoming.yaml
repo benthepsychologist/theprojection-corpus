@@ -1727,7 +1727,48 @@ expectations:
     # it resolves to `hit` if Treasury/OFAC publish a matching action, or to
     # `passed-silent` if the 2pm event does not materialise or slips with no
     # new date given.
-    status: pending
+    #
+    # ✅ HIT — resolved 2026-08-24 at the 15:00 ET pass, on primary sources.
+    # The 2pm press conference happened and Treasury published two releases
+    # dated today, both above the sb0611 (2026-08-20) high-water mark the
+    # 10:00 ET check recorded:
+    #   sb0613 "Treasury Launches Unprecedented Campaign Against Iranian
+    #          Regime on Economic D-Day"
+    #   sb0614 "Remarks from Secretary of the Treasury Scott Bessent on
+    #          Operation Economic Outcast against Iran"
+    # OFAC's recent-actions feed corroborates independently with a new
+    # top-of-feed 2026-08-24 entry carrying "Iran-related Designations".
+    # SUBSTANCE: ~60 entities, individuals and vessels; FIVE sectoral
+    # determinations (digital assets, technology, gold, aviation, shipping);
+    # five named shadow-fleet tankers; MOIS cyber actors with a $10M reward;
+    # and a required closure of every Bank Melli branch, which Bessent calls
+    # a "zero-leakage approach".
+    #
+    # ⚠️ THE CAMPAIGN WAS RENAMED between announcement and delivery. This map
+    # logged it as "Operation Economic FURY" on 08-21 (accurately — that is
+    # what was reported then). Treasury's own releases today call it
+    # "Operation Economic OUTCAST". Caught because two briefing writers,
+    # working from packs built off the 08-21 record, both emitted "Fury" —
+    # the stale name propagating through derived surfaces is what surfaced it.
+    #
+    # ⚠️ ONE PRECISION WORTH KEEPING, because the claim above quotes it: the
+    # superlative "greatest coordinated economic isolation" does NOT appear
+    # in either primary release. Treasury's own language is "tighten the
+    # noose and block every potential source of revenue", and its release
+    # headline adopts the WIRES' pre-event coinage "economic D-Day". The
+    # substance matches the pre-announced framing; the specific superlative
+    # this ledger entry recorded was never Treasury's own words. Scored a
+    # hit on substance, with the wording discrepancy on the record.
+    #
+    # Federal Register still shows nothing — expected lag, not a red flag:
+    # OFAC's June 2026 action took six days to appear there.
+    resolved: 2026-08-24
+    resolved_by: primary-source
+    evidence:
+      - https://home.treasury.gov/news/press-releases/sb0613
+      - https://home.treasury.gov/news/press-releases/sb0614
+      - https://ofac.treasury.gov/recent-actions
+    status: hit
 
   - id: anthropic-public-s1-filing
     claim: "Anthropic files its IPO paperwork PUBLICLY on SEC EDGAR, converting the confidential S-1 draft it filed 2026-06-01 into a public filing"

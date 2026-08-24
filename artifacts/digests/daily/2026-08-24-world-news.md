@@ -3,16 +3,17 @@ lens: world-news
 date: 2026-08-24
 status: building
 window_start: 2026-08-24T05:00:00-04:00
-as_of: 2026-08-24T10:00:00-04:00
+as_of: 2026-08-24T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-24
 
-*Curated agentic-interim, 05:00 ET → 10:00 ET — a five-hour window on a
-day that is still running. Sources: one tier-2 geopolitics sweep across
-the world-news threads, one dated-expectation check, and this run's
-collector sweep.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET, written across two passes
+(10:00 ET and 15:00 ET) on a day that is still running. Sources: two
+tier-2 geopolitics sweeps across the world-news threads, two
+dated-expectation checks against Treasury and OFAC primary sources, and
+two collector sweeps.*
 
 ## Today's throughline
 
@@ -37,11 +38,41 @@ room was the event. That gap is not a quibble about attendance — it is
 the most legible measure available today of how much of this coalition is
 willing to be seen in Kyiv on the hard date.
 
+**AT 15:00 ET — the afternoon's story was Washington's, and it ran in two
+directions at once.** The Treasury delivered the Iran sanctions package it
+had promised for today, and on the very same afternoon, through the very
+same department, the United States **removed Syria from the State
+Sponsors of Terrorism list after 47 years.** OFAC's newest recent-actions
+entry carries both in a single notice. Only Iran, North Korea and Cuba
+remain designated. That pairing — the maximum-pressure instrument aimed at
+one capital while a four-decade designation is lifted from another — is
+the day's second throughline, and it is a fact about American regional
+strategy rather than about either country separately.
+
+**Gaza's count, meanwhile, kept moving all afternoon**, which is the
+normal condition for a live count and is recorded below as a range with
+each outlet named rather than as a settled number.
+
 ## Items
 
 - **The Coalition of the Willing met in Kyiv on Independence Day, and produced money** — Norway pledged a further 85 billion kroner (~$9.1bn) for 2027 and the EU approved a €6.1bn military support package. In person: UK Prime Minister Andy Burnham, on his first foreign trip since taking office, arriving by train, and European Council President Antonio Costa. By video link: the French and German leaders. The meeting followed a Nordic-Baltic (NB8) session. Zelensky used the platform to press for at least 300 air-defence interceptors before winter, citing a steep decline in supply — 675 missiles received across all of 2023 against 364 across all of 2025. ([Kyiv Independent](https://kyivindependent.com/coalition-of-the-willing-to-hold-independence-day-meeting-in-kyiv/), [Euractiv via Yahoo, 07:48–13:36 GMT](https://www.euractiv.com), [Euronews](https://www.euronews.com))
   <!-- k: t=russia-ukraine-war e= axis=items sev=major -->
   ⚠️ **No confirmed US administration participation** — Euronews headlined its coverage "EU allies back Ukraine on Independence Day without Trump envoys." Recorded because an absence at a summit called on this date is a fact about the coalition, not a gap in the reporting.
+
+- **AT 15:00 ET — the US removed Syria from the State Sponsors of Terrorism list, ending a 47-year designation** — the formal removal completes a process Trump began on 08 July with a congressional notice period, and the Nusrah Front was delisted as a Specially Designated Global Terrorist organisation alongside it. Delisting unlocks US foreign assistance, defence-export sales and financial-restriction relief for Damascus. **Only Iran, North Korea and Cuba remain on the list.** ([OFAC recent actions](https://ofac.treasury.gov/recent-actions), [US Treasury SB0612](https://home.treasury.gov/news/press-releases/sb0612), [Jerusalem Post](http://www.jpost.com/middle-east/article-906461))
+  <!-- k: t=iran-conflict-widening e= axis=items sev=major -->
+  ✅ **Date settled by cross-sweep, and it needed settling.** Two sweeps this run reached this item from opposite directions — the sanctions check via OFAC's primary feed, the geopolitics sweep via wire coverage — and one wire (VINnews) carries an 08-22 dateline that would have left the effective day ambiguous. OFAC's own entry is dated 2026-08-24. This is the tier-1/tier-2 overlap working as an error detector rather than as duplicated effort.
+
+- **AT 15:00 ET — Bessent's Iran package landed at the 2:00pm press conference, branded "Operation Economic Outcast"** — roughly 60 entities, individuals and vessels, five sectoral determinations (digital assets, technology, gold, aviation, shipping), five named shadow-fleet tankers, MOIS cyber actors carrying a $10M reward offer, and a required closure of every Bank Melli branch. The designations reach brokers and traders in the UAE, Hong Kong, Singapore, China and Switzerland. **The full treatment is on the global-capital page**; it is here because it is also the resolution of this lens's second dated expectation. ([US Treasury SB0613](https://home.treasury.gov/news/press-releases/sb0613), [US Treasury SB0614 — Bessent remarks](https://home.treasury.gov/news/press-releases/sb0614), [OFAC recent actions](https://ofac.treasury.gov/recent-actions))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=items -->
+
+- **AT 15:00 ET — Netanyahu said Iran had tried to kill one of his sons, giving no detail and no evidence** — speaking to Israel's Channel 14, he said "Iran tried to murder him, tried to murder one of my sons," without naming which son or describing the alleged plot, and said he had asked for boosted protective details for prime ministerial candidates generally. ⚠️ **Single-source, unverified, and carried here as a claim rather than as an event** — a head of government making the assertion is the recordable fact; the plot itself is not established. ([Times of Israel liveblog, 20:06 Israel time / ~13:06 ET](https://www.timesofisrael.com/liveblog_entry/netanyahu-iran-tried-to-murder-one-of-my-sons/))
+  <!-- k: t=iran-conflict-widening e= axis=items -->
+
+- **AT 15:00 ET — Gaza's toll climbed through the afternoon across at least two further incidents, and Monday's own figure is genuinely unsettled** — a 10-year-old girl, Amal Abu Khater, was shot while eating in her family's tent in Khan Younis (the IDF says it has no record of the incident), and a 4-year-old boy was killed in a separate strike in Bureij, distinct from the Zawaida death already recorded. On the Deir al-Balah tent strike, the IDF said via Telegram it had targeted a named Hamas Nukhba Force member alleged to have taken part in the 7 October 2023 attack. **The day's figure is given as a range with each outlet named:** Middle East Monitor, citing Gaza's Health Ministry, reports 2 bodies and 32 wounded over a 24-hour intake; other aggregation puts Monday's cumulative toll at 6 killed. The Ministry's standing cumulative figures are firmer — 1,288 killed since October, 73,422 since October 2023. ([Al Jazeera](https://www.aljazeera.com/news/2026/8/24/israeli-strike-on-gaza-shelter-extends-casualty-list), [Middle East Monitor](https://www.middleeastmonitor.com/20260824-2-palestinians-killed-in-gaza-amid-persistent-israeli-attacks-on-civilians/))
+  <!-- k: t=gaza-war e= axis=items -->
+
+- ✅ **AT 15:00 ET — two dating traps were caught and discarded, which is worth recording as a finding rather than an absence.** A PBS NewsHour piece headlined "Israeli strike hits a tent in central Gaza, killing 3, including a child" surfaced against today's query and matches today's incident profile closely — it is dated **29 June 2026** and was excluded. A Colombia earthquake with 70+ deaths circulating in today's results is from **early August** and was excluded. Separately, three items that are real but **predate this window** were kept out of it: the Chernihiv toll update (timestamped ~07:12 ET), the Moldova/Romania drone detail (~06:00 ET), and Mohsen Rezaei's "act of war" warning (aired late Saturday 08-22, recirculating today as context).
 
 - **Russia answered the holiday with a nationwide overnight barrage that killed 8 and injured 43** — Ukraine's Air Force put the attack at 2 Oniks anti-ship missiles, 6 guided air-launched missiles and 143 drones. This is the second limb of the same dated expectation: Putin warned on 08-22 of something "far more painful and far more destructive," and this is what followed. ([The Kyiv Independent](https://kyivindependent.com))
   <!-- k: t=russia-ukraine-war e= axis=items -->
@@ -74,6 +105,14 @@ logged, follow-through on a threat recorded yesterday. None is a discrete
 rupture. Filing one here would spend the rail's credibility on a day that
 does not need it.
 
+**AT 15:00 ET — asked again against the afternoon's two additions, and
+the answer is still no.** The Syria delisting is a genuine 47-year
+structural change and the closest call of the day, but it is the
+**scheduled completion of a process announced on 08 July**, not a
+rupture — the rail is for the thing nobody saw coming. The Iran package
+was on the map's own calendar as a dated expectation, which is close to a
+definitional disqualification. **The rail stays empty today.**
+
 ## ⏳ Upcoming & expected
 
 **Two flips today, one of them the day's headline.**
@@ -85,17 +124,25 @@ does not need it.
   government in person with France and Germany on video. Both limbs of
   the entry resolved — the meeting, and whether Putin's 08-22 warning was
   acted on around the date. It was.
-- ⏳ **`iran-us-sanctions-package-aug24` — due today, deliberately still
-  PENDING.** See the global-capital page: Bessent is scheduled to speak
-  at 2:00pm ET, four hours after this window closed. Treasury's
-  press-release feed, OFAC's recent-actions page and the Federal Register
-  were all checked at 10:00 ET and carry nothing. **That is a timing gap,
-  not silence, and closing it as passed-silent now would be a false
-  negative against an event still on the clock.** It re-resolves after
-  2pm.
+- ✅ **`iran-us-sanctions-package-aug24` — HIT, resolved at the 15:00 ET
+  pass.** The morning deliberately left it PENDING rather than
+  `passed-silent`, because Bessent was scheduled to speak at 2:00pm ET,
+  four hours after that window closed, and the primary feeds were clean
+  only because the event had not happened yet. **That judgement was
+  correct and is worth keeping:** treating a not-yet-due event as silent
+  would have scored a false negative. Treasury published SB0613 and
+  SB0614 today, both above the SB0611 (08-20) high-water mark the morning
+  check recorded, and OFAC's feed corroborates independently. ⚠️ **One
+  wording discrepancy is on the record:** the superlative this ledger
+  entry quoted — "the greatest coordinated economic isolation" — appears
+  in neither primary release. Scored a hit on substance, with the
+  discrepancy noted in the entry.
 
-**Nearest pending:** `nvidia-q2-fy2026-earnings` (08-26, after close) ·
-Jackson Hole (08-27 to 08-29) · `anthropic-public-s1-filing` (08-31).
+**Nearest pending:** `lisa-cook-removal-response` and
+`nvidia-q2-fy2026-earnings` (both 08-26, the second after the close) ·
+Jackson Hole (08-27 to 08-29) · `jackson-hole-warsh-keynote` (08-28) ·
+`anthropic-public-s1-filing` (08-31) · `israel-lebanon-rome-round-8`
+(09-01).
 
 ## 🔄 Map changes
 
@@ -106,13 +153,34 @@ Jackson Hole (08-27 to 08-29) · `anthropic-public-s1-filing` (08-31).
 - **`ukraine-independence-day-coalition-kyiv` flipped to `hit`** in
   `attention/upcoming.yaml`, with the attendance-scale caveat and the
   Putin-warning limb both recorded in its evidence block.
+- **AT 15:00 ET — two further timeline passes:** `iran-conflict-widening`
+  received its first 08-24 block (the sanctions package, the wording
+  discrepancy, the Syria delisting, the Netanyahu claim) and `gaza-war`
+  was extended with the afternoon's casualties and the unsettled-figure
+  note. `red-sea-oil-shock`'s 08-24 block was rebuilt in place to record
+  the expectation resolving.
 - **No thread adds, no watchlist adds, no retires from this lens.**
+- 💡 **One structural gap surfaced and is deliberately not closed here.**
+  The Syria delisting does not fit any existing thread — it is filed onto
+  `iran-conflict-widening` for the regional-realignment angle, which is a
+  stretch. It is offered as a candidate below rather than resolved by
+  quietly creating a thread.
 
 ## 🧵 Thread candidates
 
-**None new from this lens.** Every item today lands on a thread that
-already exists. A day this heavy with events and this light on novel
-structure is exactly when not to reach for a new thread.
+**One offer, new at the 15:00 ET pass.** The morning correctly offered
+none — every item then landed on a thread that already existed. The
+afternoon produced one that does not.
+
+- **candidate:** **US sanctions realignment in the Middle East as a
+  subject in its own right.** First offer. Today the same department, in
+  the same afternoon, lifted a 47-year terrorism designation from Syria
+  and imposed the harshest package yet on Iran — and the map has nowhere
+  to put the *pairing*. The Syria half is currently filed onto
+  `iran-conflict-widening`, which is about a war, not about the
+  designation architecture; there is no home at all for the Nusrah Front
+  delisting, the shrinking of the SST list to three countries, or the
+  defence-export and assistance channels the removal opens. **Track it?**
 
 ---
 Ukraine's 35th Independence Day resolved both halves of a dated

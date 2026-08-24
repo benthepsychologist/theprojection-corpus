@@ -3,38 +3,47 @@ lens: mental-health
 date: 2026-08-24
 status: building
 window_start: 2026-08-24T05:00:00-04:00
-as_of: 2026-08-24T10:00:00-04:00
+as_of: 2026-08-24T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-24
 
-*Curated agentic-interim, 05:00 ET → 10:00 ET. Sources: one tier-2
-mental-health sweep, one coverage-critic pass whose findings land on the
-08-23 page, a PubMed `eutils` query standing in for two blocked journal
-sites, and this run's collector sweep.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET, written across two passes
+(10:00 ET and 15:00 ET). Sources: two tier-2 mental-health sweeps, one
+coverage-critic pass whose findings land on the 08-23 page, a PubMed
+`eutils` query standing in for two blocked journal sites, direct re-fetches
+of the three weekday-only trade feeds, and two collector sweeps.*
 
 ## Today's throughline
 
-**Nothing has happened in this lens yet today, and the honest reason is
-that the trade press had not woken up when the window closed.** Three of
-the four outlets this lens depends on — Behavioral Health Business,
-Fierce Healthcare, MobiHealthNews — are weekday-only, and at 10:00 ET on
-a Monday none had posted its first item of the week. BHB's feed was still
-capped at Thursday 08-20, Fierce's newest was Saturday, MobiHealthNews's
-was 08-21. Each was re-fetched roughly twenty minutes apart with
-cache-busting to make sure this was their state and not a caching
-artifact.
+**Nothing has happened in this lens today, and as of the 15:00 ET pass
+that is a confirmed quiet day rather than the soft gap the morning left
+open.** At 10:00 ET the three weekday-only outlets this lens depends on —
+Behavioral Health Business, Fierce Healthcare, MobiHealthNews — had not
+posted a Monday item at all, so the morning page recorded a gap it could
+not distinguish from silence and said so.
 
-**That is a soft gap, not a confirmed quiet day, and the difference
-matters.** Monday's cycle almost certainly had not published yet rather
-than having nothing to publish. The next run will see what this one could
-not, and this page should be read as provisional on that.
+**The afternoon pass closed that distinction, and the answer is silence.**
+Fierce Healthcare has now published its Monday cycle — one item at 11:00
+ET, on RFK Jr. soliciting pediatric vaccine input, nothing in behavioral
+health or payer coverage. The trade press woke up and had nothing for this
+lens. **AT 15:00 ET** the six live strands were each re-checked against
+primary sources rather than inferred from the morning's finding: no CMS,
+DOL or Federal Register action today on parity, Medicaid or network
+adequacy; no dated Compass or Lykos/Resilient announcement despite both
+NDA tracks being live; no new Raine v. OpenAI docket activity before the
+09-23 conference; no new French, Colorado or Character.AI enforcement
+step; and no Kaiser/NUHW development past the 08-22 coverage already
+logged.
 
 **The day's real substance is on the 08-23 page**, where the FDA's
 digital-health lead said on the record that formal generative-AI guidance
 is coming — an item that landed at 04:30 ET this morning, thirty minutes
-inside the previous digest-day.
+inside the previous digest-day. ⚠️ **That same item tried to come back as
+today's news and was refused**: STAT's health-tech feed carries it stamped
+08:30 UTC, which a UTC-reading sweep sees as same-day. It is one story,
+already logged, and it is not counted twice.
 
 ## Policy, regulation & legal
 
@@ -80,9 +89,12 @@ inside the previous digest-day.
 
 ## ⏳ Upcoming & expected
 
-**No flips in this lens today; 47 pending across the ledger.**
+**No flips in this lens today; 47 pending across the ledger.** One flip
+did land elsewhere on the map this afternoon — `iran-us-sanctions-package-
+aug24` resolved to `hit` — but it touches no mental-health thread.
 
-**Nearest pending:** `fda-psychedelic-public-hearing` (09-14).
+**Nearest pending:** `fda-psychedelic-public-hearing` (09-14), then
+`raine-jccp-cmc-0923` (09-23).
 
 ## 🔄 Map changes
 
@@ -96,21 +108,28 @@ inside the previous digest-day.
   `https://www.statnews.com/topic/health-tech/feed/` and verified live.
   **This benchmark's recent clean results should be read as unverified,
   not passed.**
-- **No thread adds, no watchlist adds, no retires.**
+- **No thread adds, no watchlist adds, no retires.** **AT 15:00 ET** no
+  thread in this lens took a `last_seen` bump either — nothing surfaced
+  reached `ai-therapy-regulatory-reckoning`, `mh-clinical-infra-funding`,
+  `kaiser-ai-clinician-backlash` or `state-therapy-chatbot-bans`.
 
 ## 🧵 Thread candidates
 
-**None offered.** A window in which the lens's own trade press has not
-published yet is not a window to propose new threads from.
+**None offered.** A confirmed-quiet window produced nothing to propose,
+and the morning's reason for offering none — that the trade press had not
+published yet — no longer applies. It has published; there is simply
+nothing here.
 
 ---
-Nothing has happened in this lens in the five hours since the digest-day
-opened, and the reason is that its three weekday-only trade outlets had
-not posted a Monday item yet — a soft gap that the next run will close,
-not a confirmed quiet day. Two long-running instrument failures did close
-today: `mh-evidence-watch` produced a confirmed negative for the first
-time in twelve days by querying PubMed directly instead of the blocked
-journal sites, and the OpenAlex research collector swept all 524 terms
-after a run of returning nothing. The day's actual news, the FDA saying
-formal generative-AI guidance is coming, landed at half past four this
-morning and belongs to yesterday.
+Nothing has happened in this lens in the ten hours since the digest-day
+opened, and the afternoon pass upgraded that from a soft gap to a
+confirmed quiet day: the weekday-only trade press has now posted its
+Monday cycle and none of it is behavioral health. Two long-running
+instrument failures closed today — `mh-evidence-watch` produced a
+confirmed negative for the first time in twelve days by querying PubMed
+directly instead of the blocked journal sites, and the OpenAlex research
+collector swept all 524 terms after a run of returning nothing — so this
+lens's null is now an instrumented null rather than an assumed one. The
+day's actual news, the FDA saying formal generative-AI guidance is coming,
+landed at half past four this morning and belongs to yesterday; a feed
+stamping it in UTC made it resurface as today's, and it was refused.

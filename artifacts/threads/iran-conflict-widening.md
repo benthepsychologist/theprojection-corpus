@@ -24,6 +24,29 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-24 — Bessent's "Operation Economic Outcast" lands: ~60 designations, five sectoral determinations, and every Bank Melli branch ordered shut
+
+- **The US Treasury announced its promised Iran package at a 2:00pm ET press conference, branding it "Operation Economic Outcast" and describing it as sanctioning nearly 60 entities, individuals and vessels across multiple jurisdictions.** ⚠️ **Note the rename — the 08-21 entry further down this file records the campaign as "Operation Economic FURY," which is what was reported then. Treasury's own releases say Outcast.** That entry is left as written; anything downstream should use Outcast. Release SB0613, headlined "Treasury Launches Unprecedented Campaign Against Iranian Regime on Economic D-Day," pairs the designations with **five sectoral determinations** — digital assets, technology, gold, aviation and shipping — and names five shadow-fleet tankers (SIFRA, G SILVER, QUANTUM HOPE, VOYAGE ELITE, TELA), over 20 entities in the nuclear and missile procurement network, Iranian MOIS cyber actors carrying a $10M reward offer, and shipping brokers and oil traders in the UAE, Hong Kong, Singapore, China and Switzerland.
+  ([US Treasury SB0613](https://home.treasury.gov/news/press-releases/sb0613),
+  [OFAC recent actions](https://ofac.treasury.gov/recent-actions),
+  [Washington Post](https://www.washingtonpost.com/business/2026/08/24/bessent-unveil-economic-d-day-sanctions-against-iran/),
+  [NPR](https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran)) ⟨daily 2026-08-24⟩
+- **Bessent's own remarks put the mechanism plainly — a "zero-leakage approach" that requires the closure of every Bank Melli branch and frames Iran's choice as "complete global isolation and a subsistence economy, or a path back to normalcy."** ⚠️ Worth recording precisely: the superlative this map had been carrying for four days — "the greatest coordinated economic isolation" of a country — **does not appear in either primary release.** What Treasury actually published was "tighten the noose and block every potential source of revenue," and it adopted the wires' own pre-event coinage, "economic D-Day," into its release headline.
+  ([US Treasury SB0614 — Bessent remarks](https://home.treasury.gov/news/press-releases/sb0614),
+  [Axios](https://www.axios.com/2026/08/24/bessent-dday-iran-secondary-sanctions),
+  [CBS News](https://www.cbsnews.com/news/bessent-press-conference-iran-sanctions-economic-d-day/)) ⟨daily 2026-08-24⟩
+- **A same-day, opposite-direction move on Syria ran alongside it, and it is the larger structural change of the two.** The US formally removed Syria from the State Sponsors of Terrorism list, ending a **47-year designation** and completing a process Trump began on 08 July with a congressional notice period; the Nusrah Front was delisted as a Specially Designated Global Terrorist organisation at the same time. **Only Iran, North Korea and Cuba remain on the list.** Delisting unlocks US foreign assistance, defence-export sales and financial-restriction relief for Damascus. Treasury published SB0612 on further Syria relief the same day, and OFAC's newest recent-actions entry bundles the Syria removal and the Iran designations into a single notice — relief in one theatre and maximum pressure in the other, signed out by the same department within hours.
+  ([OFAC recent actions](https://ofac.treasury.gov/recent-actions),
+  [US Treasury SB0612](https://home.treasury.gov/news/press-releases/sb0612),
+  [Jerusalem Post](http://www.jpost.com/middle-east/article-906461)) ⟨daily 2026-08-24⟩
+  <!-- Date confirmed by cross-sweep: two independent sweeps this run reached
+       this from opposite directions — the sanctions check via OFAC's own
+       recent-actions feed, the world-news sweep via wire coverage. One wire
+       (VINnews) carries an 08-22 dateline, which would have left the exact
+       day unsettled; OFAC's primary entry is dated 2026-08-24 and settles it. -->
+- **Netanyahu said Iran had tried to kill one of his sons — an unverified single-source claim, recorded as a claim.** Speaking to Israel's Channel 14, Netanyahu said "Iran tried to murder him, tried to murder one of my sons," without naming which son or giving any detail of the alleged plot, and said he had asked for boosted protective details for prime ministerial candidates generally. ⚠️ **No independent confirmation and no evidence cited.** It is on this timeline because a head of government making it is itself the event, not because the underlying plot is established.
+  ([Times of Israel liveblog, 20:06 Israel time / ~13:06 ET](https://www.timesofisrael.com/liveblog_entry/netanyahu-iran-tried-to-murder-one-of-my-sons/)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-22 — Threats but no strikes, and a US envoy says Israel nearly started a war with Turkey
 
 - **Iran threatened to "harm the interests" of neighbouring states that
