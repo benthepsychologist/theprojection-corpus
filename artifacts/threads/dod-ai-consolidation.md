@@ -10,6 +10,23 @@ all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md — first
 dedicated crawl rides the /daily dispatch tiers.
 
+## 2026-08-23 — A federal judge signals skepticism at the Pentagon's "supply chain risk" label on Anthropic
+
+- **A federal judge signalled skepticism at the Pentagon's "supply chain
+  risk" designation on Anthropic**, at a hearing following Saturday's
+  temporary block of the label — which had been restricting federal
+  contractors from using Claude. The judge reportedly pushed back hard on
+  the government's arguments in terms suggesting the designation is
+  unlikely to survive.
+  ⚠️ **Reduced confidence, stated on its face: the article page 404'd on
+  fetch, so only the RSS headline and pubDate are confirmed and the body
+  of this account is unverified.** Kept rather than dropped because the
+  hearing is corroborated by the prior day's order from the same outlet
+  (Saturday's temporary block). Re-check the full article before anything
+  is built on this entry.
+  ([AP via ABC News](https://abcnews.com))
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-15 — The Pentagon's data-platform rename draws scrutiny over whether it's real consolidation
 
 - **DefenseScoop reported doubts that the Pentagon's "War Data Platform" —

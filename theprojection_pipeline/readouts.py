@@ -853,10 +853,16 @@ def build_pack(w, scope):
         # A briefing REPLACES the compact summary on this scope. Same
         # information, opened into labelled sections — chunkier than a
         # thread page because more happened, but scannable, never a wall.
-        secs = ("EXACTLY the three lenses, in this order: "
-                + " / ".join(LENS_LABEL.values())
-                + ". This is what guarantees no lens goes dark while `lead` "
-                  "stays ranked purely on salience.") if scope == "front" else (
+        secs = ("EXACTLY the three lenses, in this order, and each "
+                "`heading` must be that lens label VERBATIM — the string "
+                "itself, with nothing appended: "
+                + " / ".join(repr(v) for v in LENS_LABEL.values())
+                + ". A descriptive heading like 'AI: the chip war' is "
+                  "REJECTED by the validator, which set-matches headings "
+                  "against these exact labels. Put the description in the "
+                  "bullets instead. This is what guarantees no lens goes "
+                  "dark while `lead` stays ranked purely on salience."
+                ) if scope == "front" else (
                 "themes WITHIN this lens — group what actually happened "
                 "(e.g. 'The financing', 'The chip war'). Name them for what "
                 "they are; do not invent a theme to fill a slot.")

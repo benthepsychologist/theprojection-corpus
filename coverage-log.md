@@ -4025,3 +4025,140 @@ needs a Googlebot UA specifically against `/rss/xml`, not
 in both directions. Access state is not a property to record once — it is
 a thing to re-check every pass, and the cost of assuming it is stable is
 exactly the miss above.
+
+---
+
+## 2026-08-24 (10:00 ET pass) — finalized 2026-08-23, all four lenses; two misses, and a benchmark that was "reachable" while serving nothing
+
+**The pass in one line:** two genuine misses across three critic-bearing
+lenses, and the more consequential finding is a *silent* benchmark
+failure — STAT Health Tech's vertical feed had been redirecting to a
+signup page that returns HTTP 200 with zero articles, so every
+reachability check on it passed while it delivered nothing.
+
+### mental-health / 2026-08-23 — one confirmed miss, found only after fixing the feed URL
+
+- ⚠️ **MISS: "FDA digital health leader promises generative AI regulatory
+  guidance is coming"** — STAT Health Tech (STAT+), by Mario Aguilar.
+  Published **2026-08-24 08:30 UTC = 04:30 ET**, which is **30 minutes
+  inside** digest-day 08-23 (it closes at 05:00 ET on 08-24) and well
+  after this digest's last building pass at 15:45 ET on 08-23 — that
+  timing gap is exactly how it slipped.
+  https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/
+  Rick Abramson, the FDA's head of digital health policy, said on the
+  record that the agency's goal is "formal policy guidance" on generative
+  AI, and to expect "not only broad guidance on the overall topic of
+  generative AI, but also some more narrowly constructed specialty
+  guidance on particular generative AI topics." Verified independently by
+  this session against the feed's own `pubDate`, not taken on the
+  critic's word.
+  **Routes to `ai-therapy-regulatory-reckoning`** (weight 3), whose
+  `watch` field reads "track the first real regulatory pathway
+  (FDA/MHRA)" and whose `terms` include "FDA therapy chatbot".
+  ⚠️ **Read it for what it is:** a forward-looking *promise of* guidance,
+  not a rule and not therapy-chatbot-specific. It is a watch-relevant
+  data point on the thread, not the pathway arriving.
+
+- **Not misses:** California AB 2575 (covered, verified against the
+  Legislature's own bill record) · the Kaiser 9→3 triage staffing cut
+  (covered with a full timeline block) · Warner's Meta CSAM-ads letter
+  (correctly identified as a duplicate of the 08-20 logging).
+
+### frontier-ai / 2026-08-23 — one confirmed miss, borderline on routing
+
+- ⚠️ **MISS: Sam Altman says the AI industry's *messaging* is the problem,
+  not the substance of the backlash** — The Neuron, published
+  **2026-08-23 18:15 UTC = 14:15 ET**, inside window.
+  https://www.theneurondaily.com/p/why-sam-altman-thinks-people-hate-ai
+  (source clip: David Senra's podcast). Altman said AI builders —
+  "subtext for really, mainly Dario" — have spent years talking about
+  extinction risk and job loss and "have not as a field done a very good
+  job" explaining benefits or mitigations, and pitched AI as delivering
+  "more power and personal freedom" and possibly "the greatest boom in
+  people starting smaller businesses that we have ever seen."
+  **Why it is a real miss and not an Abbott re-run:** our 08-23
+  throughline was the *politics* of the buildout via Governor Abbott.
+  This is the other side of the same argument — the industry's CEO
+  critiquing his own field's public case — on the record, same day.
+  ⚠️ **Routing is borderline and recorded as such.** Filed to
+  `ai-datacenter-sites` because that thread already houses the backlash
+  storyline, but it is **not** a clean match on that thread's actual
+  siting/moratorium/approval terms. **No thread on the map covers
+  industry messaging or public trust as a subject.** That is the second
+  independent signal this week pointing at the same hole.
+
+- **Not misses:** Abbott's remarks and four conditions · OpenAI policy
+  chief Lehane on mandatory pre-deployment safety standards · the
+  Micron/Hot Chips memory-wall figures · Nvidia's >15% server price rise,
+  the UAE chip-export piece and Alibaba's share sale (all correctly
+  identified in-digest as re-datings of 08-22-or-earlier events).
+- 📋 **For tomorrow's pass, not today's:** TLDR AI's **08-24** edition
+  leads with the Hugging Face $13bn valuation, sourced to runtimewire.com
+  — a second outlet on a story our 08-22/08-23 digests correctly declined
+  to log as unconfirmed. It lands in digest-day 08-24, not 08-23.
+
+### global-capital / 2026-08-23 — clean, and corroborated rather than assumed
+
+- **No misses.** The Sunday thinness was tested three independent ways
+  rather than inferred: FT Unhedged's feed jumps Sat 08-22 → Mon 08-24
+  with no Sunday edition · Axios Pro Rata's latest is Fri 08-21 · only
+  one item on Bloomberg Technology's whole front page carried an 08-23
+  date, and it was a social-media-addiction trial explainer that routes
+  to no `global-capital` thread.
+- **Both covered:** Deutsche Bank's "soft-form financial repression" call
+  and the FIMA/euro-funding plumbing detail behind it · the $40tn /
+  $2tn / $1tn fiscal figures · Alibaba's HK$80bn placement (correctly
+  bucketed to 08-22 with the timing call flagged in-digest) · confirmed
+  PBOC/BOJ/G7 silence on 08-23.
+- 📋 **Carried, still unverifiable:** FT Unhedged's Mon 08-24 01:30 ET
+  item, "The great re-equitisation and the dollar," falls inside
+  digest-day 08-23 but is paywalled past its subhead through the feed,
+  the reader proxy, and search alike. Logged as a lead to re-fetch, **not
+  as a covered item and not as a miss** — its title implies continuity
+  with the dollar/re-equitisation theme already carried, but that could
+  not be confirmed, so it is not being treated as either.
+
+### ✅ Nvidia/Poolside — the carried lead is RESOLVED as still-single-source
+
+Three runs have carried a reported **~$6bn Nvidia licensing deal with
+Poolside**. This pass traced the full attribution chain and the answer is
+now definite rather than open: **every outlet re-reports one scoop.**
+Bloomberg's own headline says it outright — "Nvidia to Pay AI Startup
+Poolside a $6 Billion License, **Newcomer Says**" — and PYMNTS states
+that The Information's 08-21 piece was itself "citing a paywalled post by
+Newcomer." Newcomer's 08-20 scoop rests on a Poolside investor letter it
+says it reviewed. **No Nvidia or Poolside spokesperson, filing, or
+primary statement appears anywhere in the chain.**
+**Disposition:** stop re-checking it as an open lead. It stays unlogged
+as fact; it becomes loggable only if a primary source or a genuinely
+independent outlet appears.
+
+### ⚠️ Benchmark access health — one silent failure, one stale stream
+
+| benchmark | prior state | now | note |
+| --- | --- | --- | --- |
+| **STAT Health Tech** | "reachable" | ⛔ **was serving nothing** | the documented URL 301s to a **signup page returning HTTP 200 with zero articles** |
+| **The Rundown AI** | "reachable, HTTP 200 direct" | ⚠️ **reachable but STALE** | feed *and* archive both newest at **08-20**; nothing for 08-21/22/23/24 |
+| TLDR AI | — | ✅ checked clean | no Sat/Sun editions exist; matches its stated weekday cadence |
+| The Neuron | proxy-only | ✅ proxy works as documented | produced this pass's frontier-ai miss |
+| The AI Daily Brief | publishes Sun not Sat | ✅ real 08-23 edition confirmed | content was opinion/thought-leadership, no thread intersection |
+| BHB · Fierce · MobiHealthNews | weekday-only | ✅ all three reachable | BHB confirmed genuinely dark since 08-20 via its own `lastBuildDate` |
+| Money Stuff | dark since 08-13 | ✅ still dark, confirmed | now **eleven days**, via the working `.rss` path |
+
+**The lesson this pass actually teaches, and it is a new one:** the log
+has been recording benchmarks as *reachable* or *blocked*, and both of
+today's access findings fall outside that pair. A feed that 200s while
+serving a signup page, and a feed that 200s while its publisher has
+stopped publishing, are both **"reachable and useless"** — and a
+reachability check cannot tell either of them from health. **Check the
+newest item's date, not the HTTP status.** Had that been the standard,
+STAT's failure would have surfaced whenever it began rather than on the
+day it happened to cost a miss.
+
+⚠️ **Also worth stating: this makes STAT Health Tech's whole recent
+history of "no misses" untrustworthy.** It cannot be known how long that
+redirect had been in place, so prior clean results against this benchmark
+should be read as unverified rather than passed.
+
+### world-news / 2026-08-23
+`coverage: na` — this lens carries no benchmark critic by design.

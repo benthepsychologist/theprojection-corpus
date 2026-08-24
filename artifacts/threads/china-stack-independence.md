@@ -13,6 +13,34 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-23 — Export control moves from policy argument to prosecution, and Beijing writes chips into its next five-year cyber plan
+
+- **Taiwan indicted nine people, including Nvidia and Super Micro
+  employees, over illegally routing AI servers to China.** Taiwanese
+  prosecutors charged nine individuals with export-control violations.
+  Taiwan is the chokepoint of advanced-chip production, so a criminal
+  case naming staff at two of the largest AI-hardware firms moves export
+  control from a policy argument into a prosecution with named
+  defendants.
+  ([Focus Taiwan](https://focustaiwan.tw), Reuters and Korea Times
+  corroborating)
+  ⟨daily 2026-08-23⟩
+  <!-- A direct Reuters fetch was blocked, so Focus Taiwan carries this as
+  the primary source; three independent outlets (Focus Taiwan, Reuters,
+  Korea Times) agreed on the indictment count and defendants. First
+  pickup 2026-08-24T06:25Z = 02:25 ET, inside digest-day 08-23. -->
+- **China's Central Cyberspace Affairs Commission named "high-end AI
+  chips" a priority in a 2026–2030 cyber-industry plan**, directing state
+  and private firms toward commercialising domestic high-end AI chips,
+  large-model improvements and AI agents, alongside quantum and
+  blockchain. A fresh policy artifact in the self-reliance push this
+  thread tracks, not a restatement of an earlier one.
+  ([The Quantum Insider](https://thequantuminsider.com), MLex
+  corroborating)
+  ⟨daily 2026-08-23⟩
+  <!-- Plan released ~08-23; coverage 2026-08-24T08:44Z = 04:44 ET, inside
+  digest-day 08-23 by ten minutes. -->
+
 ## 2026-08-22 (late catch, added 2026-08-23) — Alibaba raises $10.2bn in Hong Kong's largest-ever follow-on, and puts 100% of it into AI
 
 - **Alibaba launched a HK$80bn ($10.2bn) share placement — 710 million

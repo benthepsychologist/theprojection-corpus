@@ -17,6 +17,14 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-24 — Sunday's threat to "intensify strikes" becomes Monday's casualties
+
+- **Israel's Sunday threat to "intensify strikes" turned into lethal follow-through on Monday.** A 4-year-old boy — named by the Palestine Chronicle as Mohammed Taha — was killed by shrapnel and debris in an IDF strike on a building near Zawaida whose owners had been warned to leave; separately, a drone strike on a displacement tent in Deir al-Balah, central Gaza, killed two more Palestinians early Monday. Outlets cumulatively report 3-5 Gaza deaths across the window tied to the kite-launch pretext. This is Monday's actual casualty events, distinct from the Sunday *threat* this thread already logged (08-23: Netanyahu and Defence Minister Katz's joint statement threatening to "intensify strikes" over kite and balloon launches from Gaza).
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/24/israel-accused-of-using-kites-as-pretext-to-justify-escalating-gaza-attacks),
+  [France 24](https://www.france24.com/en/middle-east/20260823-middle-east-live-iran-s-president-says-country-facing-many-problems-as-us-sanctions-loom),
+  [Anadolu Ajansı](https://aa.com.tr/en/middle-east/israeli-drone-strike-kills-2-palestinians-in-displacement-tent-in-central-gaza/4035386),
+  [Palestine Chronicle](https://www.palestinechronicle.com/netanyahu-threatens-new-gaza-attacks-displacement-over-childrens-kites/)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-23 — A Hamas commander killed and a threat to "intensify," as friction under the framework rather than a rupture of it
 
 - **The Israeli military struck an alleged Hamas weapons-production

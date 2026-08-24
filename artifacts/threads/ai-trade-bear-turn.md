@@ -11,6 +11,26 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-08-23 — Burry puts a fresh "lights out... 100% circular" call on the record two days before Nvidia's print
+
+- **Michael Burry restated his Nvidia short thesis two days ahead of
+  Wednesday's earnings, predicting the print will be "lights out"
+  while calling "100% of announced revenue... circular."** This
+  thread tracks whether the AI trade's bear case survives contact
+  with the earnings catalyst that's supposed to test it — a
+  high-profile bear putting a dated, specific prediction on the record
+  immediately before that catalyst is exactly the marker this thread
+  exists to hold against the outcome. Three aggregators (TradingView,
+  Yahoo Finance, Stocktwits) carry a consistent quote with
+  same-morning timestamps (2026-08-24T07:50-08:31Z = 03:50-04:31 ET).
+  (TradingView / Yahoo Finance / Stocktwits)
+  ⟨daily 2026-08-23⟩
+- ⚠️ **Same venue caveat as the parallel entry on
+  `nvidia-vendor-financing`:** the quote is corroborated across three
+  independent aggregators, but Burry's original post could not be
+  reached to confirm where he actually said it.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-19/20 — Fund managers turn more bullish even as bond yields hit 2007 highs; a leveraged AI name falls 8.3% on a day the index rallied
 
 - **The S&P 500 snapped a three-day losing streak on 08-19, closing +0.21% (7,707.98) after the Treasury's buyback announcement (full detail on `ai-buildout-debt-risk`) pulled long yields down — but the rally faded hard from its intraday peak (S&P +0.7% at best) and gave back most of the move by the close.** Nasdaq closed +0.16% (26,331.09), Dow +0.22% (53,463.05). **CoreWeave, the most leveraged AI-infrastructure name this map tracks, fell 8.3% the same session on the same rising-yield pressure the Treasury intervention was meant to relieve** — a single stock moving hard against the index it sits inside, the clean breadth signal ("is it AI-specific or macro") this thread exists to catch.

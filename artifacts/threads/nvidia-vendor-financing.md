@@ -11,6 +11,24 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-23 — Michael Burry restates the Nvidia circularity thesis two days before earnings
+
+- **Michael Burry restated his Nvidia circularity thesis two days
+  before Wednesday's earnings print**, saying he expects the print to
+  be "lights out" while calling "100% of announced revenue...
+  circular." A fresh, dated restatement timed to the earnings
+  catalyst — distinct from the 08-13 version already in circulation.
+  Three aggregators (TradingView, Yahoo Finance, Stocktwits) carry a
+  consistent quote with same-morning timestamps
+  (2026-08-24T07:50-08:31Z = 03:50-04:31 ET).
+  (TradingView / Yahoo Finance / Stocktwits)
+  ⟨daily 2026-08-23⟩
+- ⚠️ **Venue unconfirmed.** The quote is corroborated across three
+  independent aggregators, but Burry's original post could not be
+  reached. Treat the quote itself as confirmed and the platform it was
+  posted on as not.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-21 — Nvidia buys into the land-and-power layer: a minority stake in Cloverleaf Infrastructure
 
 - **Nvidia took a minority equity stake in Cloverleaf Infrastructure, a

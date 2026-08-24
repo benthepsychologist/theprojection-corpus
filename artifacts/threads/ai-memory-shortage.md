@@ -12,14 +12,14 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
-## 2026-08-23 — Micron puts a number on the memory wall: compute 3x every two years, HBM bandwidth 2x
+## 2026-08-23 — Hot Chips answers Micron's memory-wall math with three separate engineering fixes
 
 - **Micron's Raghu Sreeramaneni told Hot Chips 2026 that compute is
   scaling roughly 3x every two years while HBM bandwidth scales only
   about 2x — so the memory wall is widening, not closing.** Presented as
   "Evolving Memory Architectures for AI" on day one of the conference at
-  Stanford (08-23 to 08-25). This is the technical floor under yesterday's
-  capex story: if bandwidth structurally trails compute, the memory
+  Stanford (08-23 to 08-25). This is the technical floor under the 08-22
+  capex story below: if bandwidth structurally trails compute, the memory
   premium Nvidia blamed its >15% server price rise on is not a cycle to
   wait out.
   ([ServeTheHome — conference coverage](https://www.servethehome.com),
@@ -27,6 +27,33 @@ spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
   ⟨daily 2026-08-23⟩
   <!-- Relayed via conference coverage, not a Micron press release; the
        08-23 date is confirmed against Hot Chips' own published schedule. -->
+- **Day two produced three separate engineering answers to that same
+  wall. Samsung unveiled zHBM, stacking memory directly atop the compute
+  die**, claiming **230% more bandwidth and 70% better power efficiency
+  than a standard HBM4e stack** — roughly 100W saved per GPU in a
+  four-stack configuration.
+  ([TrendForce](https://www.trendforce.com))
+  ⟨daily 2026-08-23⟩
+- **SK hynix showed i-HBM packaging claiming >30% lower thermal
+  resistance, and disclosed it is evaluating Intel's EMIB packaging
+  alongside CoWoS** for future HBM-logic integration — a possible SK
+  hynix–Intel packaging tie-up in a market TSMC's CoWoS currently
+  defines.
+  ([TrendForce](https://www.trendforce.com))
+  ⟨daily 2026-08-23⟩
+- **d-Matrix disclosed Raptor, which fuses DRAM directly beneath compute
+  and drops the PHY layer entirely, claiming SRAM-class bandwidth at
+  roughly a tenth of HBM's power draw, and hit 105 TB/s in real
+  silicon.** Positioned as a complement to HBM rather than a replacement
+  — it is an inference accelerator, not a general part.
+  ([ServeTheHome](https://www.servethehome.com), Wccftech corroborating)
+  ⟨daily 2026-08-23⟩
+- **The analytical point: day one said the wall is widening structurally;
+  day two produced three independent attempts to engineer around it —
+  stack on top of the die (Samsung), re-package the stack (SK hynix), or
+  delete the interface (d-Matrix).** That is an industry treating the
+  constraint as permanent rather than cyclical.
+  ⟨daily 2026-08-23⟩
 
 ## 2026-08-22 — The memory squeeze arrives in the data center as a capex story
 
@@ -36,10 +63,17 @@ spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
   handset and PC bills of materials. The 08-22 notice is the same squeeze
   reaching the buildout itself: Samsung, SK Hynix and Micron now set the
   marginal cost of AI compute, and Nvidia has said so publicly by passing
-  it through rather than absorbing it. ⚠️ All three price-setters are
-  watchlist search terms on this map with no entity slugs, so the
-  companies at the centre of this thread cannot currently be tagged on the
-  bullet that describes them — offered as a map change on 08-22.
+  it through rather than absorbing it. All three price-setters have been
+  watchlist entities on this map since 2026-07-24 and are already tagged
+  in this file's own frontmatter, so the companies at the centre of this
+  thread carry entity slugs on this bullet.
+  <!-- Corrected 2026-08-23: the original 08-22 entry stated
+  Samsung/SK Hynix/Micron "are watchlist search terms on this map with no
+  entity slugs" and "cannot currently be tagged," offering it as a map
+  change. That was incorrect — all three have carried entity slugs since
+  2026-07-24 (see this file's frontmatter: entities: [..., sk-hynix,
+  micron]). Sentence corrected above; nothing else in this entry
+  changed. -->
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15),
   [Fortune](https://fortune.com/2026/08/22/nvidia-customers-ai-related-price-hikes-15-percent-vera-rubin-grace-blackwell-chips/))
   ⟨daily 2026-08-22⟩

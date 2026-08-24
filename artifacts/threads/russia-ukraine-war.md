@@ -18,6 +18,28 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-24 — Independence Day, in four parts: a smaller-than-billed coalition summit, Russia's answering barrage, a daylight strike on Chernihiv, and strikes reaching new fronts on both sides
+
+- **The "Coalition of the Willing" met in Kyiv on Ukraine's Independence Day, but at a smaller scale than billed — the gap between who was invited and who actually showed up is the story.** UK Prime Minister Andy Burnham made his first foreign trip since taking office, arriving by train, and European Council President António Costa attended in person; French President Emmanuel Macron and German Chancellor Friedrich Merz — two of Europe's four biggest powers — joined only by video link. The Kyiv session followed a Nordic-Baltic (NB8) meeting, at which Norway pledged a further 85 billion kroner (~$9.1bn) for 2027, matching rather than raising this year's spending. The EU separately approved a €6.1bn military support package for air and missile defence, ammunition and radars. Zelensky pressed allies for at least 300 air-defence interceptors before winter, citing a steep supply decline: Ukraine received 675 Patriot missiles across all of 2023 against just 364 across all of 2025. Euronews' own coverage framed the day as the EU backing Ukraine "without Trump envoys" — no confirmed US administration participation is itself part of the result. **This resolves a dated expectation already carried on the map's ledger as a `hit`, with the scale caveat recorded alongside it.**
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/24/ukraines-allies-convene-in-kyiv-as-zelenskyy-seeks-air-defence-boost),
+  [Brussels Signal](https://brusselssignal.eu/2026/08/coalition-of-the-willing-meets-in-kyiv-as-ukraine-asks-for-300-interceptors/),
+  [Kyiv Post](https://www.kyivpost.com/post/82945),
+  [Euronews](https://www.euronews.com/my-europe/2026/08/24/we-are-stepping-up-eu-approves-61-billion-for-ukraines-defences)) ⟨daily 2026-08-24⟩
+- **Russia answered Independence Day with a nationwide overnight barrage that killed 8 and injured 43.** Ukraine's Air Force said Russia fired 2 Oniks anti-ship missiles, 6 guided air-launched missiles and 143 drones. Read together with Putin's 08-22 warning, already logged here, that Ukraine had "opened this Pandora's box" and that the answer would be "far more painful and far more destructive" — this is that answer.
+  ([The Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-8-injure-43-across-ukraine-as-country-marks-independence-day/)) ⟨daily 2026-08-24⟩
+- **A Russian drone hit a residential high-rise in central Chernihiv in the middle of the day, injuring 14-20 people including 2-3 children — casualty counts varied by outlet, with no deaths reported.** Governor Viacheslav Chaus called it "a cynical strike by Russian terrorists... right in the middle of the day — on Independence Day." Chernihiv's city council said Russian forces ran three waves of attacks on the city, with the final wave hitting a nine-storey residential building around noon.
+  ([The Kyiv Independent](https://kyivindependent.com/russian-drone-strikes-residential-building-in-central-chernihiv-injuring-at-least-15/),
+  [Kyiv Post](https://www.kyivpost.com/post/83003)) ⟨daily 2026-08-24⟩
+- **Ukraine's strikes on Russian Ozon logistics hubs reached a third consecutive night and a new city, Krasnodar, alongside a MiG-29, radar stations and a rocket-fuel plant — extending the campaign this thread logged at Orenburg.** Ukraine's General Staff said it hit Ozon warehouses (also reaching Dagestan, Stavropol and Adygea), the Kamensky rocket-fuel plant, a MiG-29 fighter jet near Dolotinka and four radar systems. ⚠️ **Russian officials claim 2-3 children were killed in the Krasnodar strike — recorded here as a single-side, Russian-government claim, not independently verified — and the figure itself varies between outlets: "at least 3" in The Moscow Times, "two" in i24NEWS.**
+  ([The Moscow Times](https://www.themoscowtimes.com/2026/08/24/at-least-3-killed-as-ukrainian-drones-target-ozon-hubs-across-southern-russia-a93563),
+  [i24NEWS](https://www.i24news.tv/fr/actu/international/artc-russie-deux-enfants-tues-par-une-frappe-de-drones-ukrainiens),
+  [Anadolu Ajansı](https://www.aa.com.tr/en/russia-ukraine-war/3-children-killed-in-ukrainian-drone-attack-on-ozon-warehouse-in-southern-russia/4035559),
+  [Kyiv Independent](https://kyivindependent.com/ukraine-reportedly-targets-russias-krasnodar-setting-warehouses-ablaze-in-major-attack/)) ⟨daily 2026-08-24⟩
+- **A drone crossed from Ukraine into Moldovan and then Romanian airspace during the overnight attack, and Moldova called for urgent air-defence upgrades.** The drone entered Moldova's Gagauzia region from the direction of Ukraine's Odesa oblast before crossing into Romania's Galați County, prompting Romania to scramble two F-16s and a helicopter — the second such incursion into Moldovan airspace in three days, after 08-22. This is a NATO-airspace incursion, and the map already recorded a comparable Romanian incursion earlier in August (08-20) — a repeating pattern rather than a one-off.
+  ([Ukrinform](https://www.ukrinform.net/rubric-polytics/4155964-sybiha-comments-on-drone-incidents-in-moldova-and-romania.html),
+  [Kyiv Post](https://www.kyivpost.com/post/82985),
+  [Mezha](https://mezha.net/eng/bukvy/dffaf7bf_moldova_calls_for/)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-23 — A second passenger train hit in ten days, and a second Ozon logistics hub in two days
 
 - **A Russian jet-powered Shahed-type drone struck the locomotive of

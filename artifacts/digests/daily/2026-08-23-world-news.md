@@ -1,18 +1,27 @@
 ---
 lens: world-news
 date: 2026-08-23
-status: building
+status: final
 window_start: 2026-08-23T05:00:00-04:00
-as_of: 2026-08-23T15:45:00-04:00
+window_end: 2026-08-24T05:00:00-04:00
+finalized: 2026-08-24T10:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-23
 
-*Curated agentic-interim, 05:00 ET → 15:45 ET in two passes: an opening
-pass at 10:00 ET that found nothing, and this afternoon pass covering
-10:00 ET → 15:45 ET. Sources: one tier-2 geopolitics sweep across the
-world-news threads, plus this run's collector sweep.*
+*Curated agentic-interim across THREE passes — 10:00 ET, 15:45 ET, and
+this 2026-08-24 10:00 ET finalize covering the remaining 15:45 ET → 05:00
+ET window. Sources: two tier-2 geopolitics sweeps across the world-news
+threads, plus two collector sweeps.*
+
+⚠️ **Where the Independence Day strikes went, and why.** Russia's
+overnight barrage began inside this digest-day and its tolls were
+reported after it closed. The strikes are recorded in **08-24**, with
+that day's Independence Day cluster, because that is where the events and
+their confirmed figures belong — putting the opening hours here and the
+casualty counts there would split one attack across two archive days. The
+boundary call is stated so it can be audited rather than guessed at.
 
 ## Today's throughline
 
@@ -49,6 +58,10 @@ Iran sanctions package — all on 08-24.
 
 - **Israel alleges Hezbollah is rearming through Syria during the ceasefire, while Mossad's chief met Syria's foreign minister the same day** — an Israeli security source told reporters smuggling has increased under the truce and alleged Iran's Quds Force is financing it. ⚠️ Sourced to an **unnamed** security source with no named official or document behind it, and carried at that weight. The parallel de-escalation track — the Mossad-Syria meeting aimed at reducing tensions — ran on the same day. ([The Times of Israel — live blog](https://www.timesofisrael.com/liveblog-august-23-2026/))
   <!-- k: t=israel-lebanon-escalation e= axis=items -->
+
+- **Israel widened operations around south Lebanon's "Ali Taher Ridge," with home demolitions and field-burning, and Lebanese officials say they fear a broader campaign** — distinct from the Hezbollah-rearming-through-Syria allegation recorded above: this is physical activity on the ground rather than an intelligence claim. Lebanese officials told the Jerusalem Post they believe it could become "a broader campaign." ([The Jerusalem Post — 2026-08-23T20:01Z / **16:01 ET**, running through 08-24T11:50Z](https://www.jpost.com), [Anadolu Ajansı](https://www.aa.com.tr))
+  <!-- k: t=israel-lebanon-escalation e= axis=items -->
+  ⚠️ **One element is single-sourced and is NOT being carried as fact:** a claim of white-phosphorus shell use appears in AzerNews alone, uncorroborated by any wire service. The demolitions and field-burning are multi-sourced; the phosphorus claim is not, and the difference is deliberate.
 
 ## 🚨 Flash check
 
@@ -111,6 +124,8 @@ and evacuated it — the second deliberate hit on a passenger train on that
 line in ten days. Ukraine struck an Ozon logistics complex for the second
 day running, which turns yesterday's single warehouse hit into a declared
 campaign against Russian e-commerce distribution. Israel killed a Hamas
-commander and threatened to intensify strikes, and alleged Hezbollah is
+commander and threatened to intensify strikes, alleged Hezbollah is
 rearming through Syria on the same day its intelligence chief met Syria's
-foreign minister to reduce tensions.
+foreign minister to reduce tensions, and by evening had widened ground
+operations around a ridge in south Lebanon that Lebanese officials fear
+is the opening of a broader campaign.

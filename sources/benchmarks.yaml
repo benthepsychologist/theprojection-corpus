@@ -165,3 +165,31 @@ critics:
       - "Bloomberg Technology"         # tech-capital news
     weekly_add:
       - "Odd Lots"                     # macro / market-plumbing, weekly-depth
+
+# - **ACCESS RE-VERIFIED 2026-08-24** (critic pass finalizing 08-23).
+#
+#   - **STAT Health Tech: THE VERTICAL FEED URL WAS WRONG, and wrong in the
+#     most dangerous way available.** The path this file's critics had been
+#     using, `statnews.com/feed/category/health-tech/`, 301-redirects to
+#     `statnews.com/signup/health-tech/` — a SIGNUP PAGE that returns
+#     **HTTP 200 with zero articles**. So every reachability check on it
+#     passed while it silently delivered nothing, which is exactly how a
+#     benchmark goes dark without ever being logged as unreachable. The
+#     real feed, verified live today:
+#         https://www.statnews.com/topic/health-tech/feed/
+#     Returns HTTP 200, correct channel title ("STAT Health Tech — News on
+#     Innovative Technology in Medicine"), real dated items. This is the
+#     URL to use. It immediately produced a genuine 08-23 miss (the FDA
+#     generative-AI guidance piece, 08-24 08:30 UTC / 04:30 ET).
+#
+#   - **STAT Health Tech is NOT weekday-only** — unlike BHB, Fierce and
+#     MobiHealthNews, it publishes across the weekend gap. A Sunday
+#     "no misses" against the mental-health set must therefore still
+#     check this one live; it is not covered by the weekend-shape note
+#     above.
+#
+#   - Behavioral Health Business, Fierce Healthcare, MobiHealthNews: all
+#     three reachable today on their documented transports (Googlebot UA
+#     on `/feed/` and `/rss/xml`, reader proxy respectively). BHB
+#     confirmed genuinely dark since Thu 08-20 via its own
+#     `lastBuildDate` — really silent, not merely unreachable.

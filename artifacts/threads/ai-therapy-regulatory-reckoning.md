@@ -13,6 +13,32 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-08-23 — The FDA says formal generative-AI guidance is coming
+
+- **The FDA put a specific promise on the record: formal generative-AI
+  guidance is coming.** Rick Abramson, director of the FDA's Digital
+  Health Center of Excellence, told STAT the agency's goal is "formal
+  policy guidance" on generative AI, and that the ecosystem should
+  expect "not only broad guidance on the overall topic of generative
+  AI, but also some more narrowly constructed specialty guidance on
+  particular generative AI topics of special interest or special
+  complexity." This thread's watch is explicitly to "track the first
+  real regulatory pathway (FDA/MHRA)" — the fight has run state-by-
+  state precisely because no federal device pathway exists, and this
+  is the federal regulator saying on the record that it intends to
+  build one.
+  ([STAT Health Tech / STAT+, Mario Aguilar](https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/))
+  ⟨daily 2026-08-23⟩
+- ⚠️ **Hold the limits alongside the headline.** This is a promise of
+  guidance, not a rule — no text, no timeline. It addresses
+  generative-AI medical devices broadly, not mental-health chatbots by
+  name. And the piece is paywalled past the quoted excerpt, so the
+  quote itself is confirmed and nothing past it is. Published
+  2026-08-24T08:30Z (04:30 ET), which lands inside digest-day 08-23 by
+  thirty minutes. A watch-relevant data point, not the pathway
+  arriving.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-21 (late catch, added 2026-08-23) — California moves a bill that puts liability for AI clinical harm on the developer
 
 - **California AB 2575 (Ortega), "Health care services: artificial

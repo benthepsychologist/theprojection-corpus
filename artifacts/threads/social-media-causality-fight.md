@@ -15,6 +15,21 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-23 — New Zealand proposes an Australia-style under-16 social media ban
+
+- **New Zealand's prime minister proposed legislation to bar under-16s
+  from social media, following Australia's model.** Christopher Luxon
+  announced the plan (Reuters, 2026-08-24T03:39Z = 23:39 ET on 08-23),
+  corroborated by RNZ, New Zealand's own public broadcaster. This
+  thread follows a causality argument that is chronically starved of
+  population-level variation — Australia's under-16 ban is already
+  tracked here as a live natural experiment (still running well below
+  full compliance as of this thread's last check). A second country
+  running the same policy turns one case into a comparison, rather
+  than a single data point standing in for the whole question.
+  (Reuters · [RNZ](https://www.rnz.co.nz))
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-20 — Béjar's second day of testimony: "you just cannot trust Mark Zuckerberg with kids"
 
 - **Arturo Béjar's testimony in the Oakland trial continued into a

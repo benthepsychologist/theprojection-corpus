@@ -11,6 +11,25 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-08-23 — SoftBank files for a record ¥1 trillion retail bond, tied to OpenAI and Stargate funding
+
+- **SoftBank filed for a record ¥1 trillion retail bond issue**, which
+  every outlet covering it ties to funding Masayoshi Son's OpenAI and
+  Stargate commitments — a new domestic-retail leg on the loan stack
+  this thread already tracks (the $40B OpenAI bridge, the $10B
+  OpenAI-collateral margin loan, the Nvidia-guaranteed Ohio campus).
+  This is the regulatory filing itself, distinct from the 08-20
+  announcement of the plan already on this thread's record.
+  (TradingView, filing report, 2026-08-24T00:21Z = 20:21 ET on 08-23 ·
+  [WSJ](https://www.wsj.com), 07:31Z)
+  ⟨daily 2026-08-23⟩
+- ⚠️ **The dollar figure stays unpinned here, deliberately.** Outlets
+  carry both ~$6.3bn and ~$8bn for the same ¥1 trillion, and the
+  primary filing text was unreachable to check the FX assumption
+  behind either conversion. The yen figure (¥1 trillion) is confirmed;
+  no single USD number is asserted.
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-07 — A political-influence angle opens on the Ohio Stargate-adjacent campus: a $50M Trump-library donation preceded the federal lease by two months
 
 - **SoftBank confirmed it donated $50M to Trump's presidential library

@@ -13,6 +13,21 @@ crawled: 2026-07-22
 reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
 
+## 2026-08-23 — YMTC's ~$4.9bn Shanghai STAR IPO application formally accepted
+
+- **YMTC's RMB 33bn (~$4.9bn) Shanghai STAR Market IPO application was
+  formally accepted** — the procedural step following Friday's report
+  that the NAND maker was targeting that raise, and a distinct event
+  from it. SCMP frames it as China's next mega chip listing, one that
+  could break CXMT's own market records — extending the China-chip-
+  IPO wave this thread tracks from CXMT to a second memory maker, now
+  with a filed number attached. Three independent outlets agree on
+  both the RMB figure and the "accepted" step: TechNode
+  (2026-08-24T05:49Z = 01:49 ET), TrendForce (07:23Z), and SCMP
+  (04:34Z).
+  ([TechNode](https://technode.com) · TrendForce · SCMP)
+  ⟨daily 2026-08-23⟩
+
 ## 2026-08-13 — CXMT overtakes Tencent to become China's most valuable listed company, 17 days after its IPO
 
 - **CXMT overtook Tencent to become China's most valuable listed

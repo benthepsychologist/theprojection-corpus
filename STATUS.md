@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus
 
-*As of 2026-08-23*
+*As of 2026-08-24*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,9 +8,83 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers the 08-23 gap catch-up, on top of
-08-21's two `/daily` passes, then the 08-20 note (which finalized 08-19),
-then 08-19, then 08-18 and older.*
+*Hand-maintained. Top note covers the 08-24 run (which finalized 08-23),
+then the 08-23 gap catch-up, then 08-21's two `/daily` passes, then the
+08-20 note (which finalized 08-19), then 08-19, then 08-18 and older.*
+
+> **2026-08-24 (10:00 ET) — 08-23 finalized on three coverage-critic
+> passes, 08-24 opened, and two silently-broken instruments found and
+> fixed.** Counts after the run: **99 threads** (85 open · 12 developing ·
+> 1 resolved · 1 retired — unchanged), **68 expectations** (47 pending ·
+> 15 hit · 6 passed-silent — three resolved this run), **211 watchlist
+> entries** (unchanged), **45 actor roll-ups** of which **12 now carry an
+> 08-24 `asof`**. **No flash**, and 08-24's page says why: a
+> casualty-bearing day of *continuations* is exactly what the rail is not
+> for. **10 digests written or finalized · 14 thread timeline blocks · 4
+> site briefings applied and exported.** Dispatch: one collector sweep +
+> sixteen agents (3 critics, 4 lens sweeps, 1 expectation check, 3
+> timeline writers, 4 briefing writers, 1 re-check); all returned, none
+> stalled.
+>
+> ⚠️ **The boundary did real work this run.** Eleven of fourteen items
+> carry timestamps between 14:15 ET on 08-23 and 04:50 ET on 08-24, so
+> they belong to **digest-day 08-23**, not today. Every one is stamped
+> with its verified time in-digest so the bucketing is auditable. Read
+> 08-24's thin pages accordingly — the news is on the 08-23 pages.
+>
+> ⛔ **The run's most important finding is a benchmark that was
+> "reachable" while serving nothing.** STAT Health Tech's vertical feed
+> URL **301-redirects to a signup page returning HTTP 200 with zero
+> articles**, so every reachability check on it passed while it delivered
+> no content. Caught only because it cost a real miss today (the FDA's
+> digital-health lead saying formal generative-AI guidance is coming).
+> Fixed to `https://www.statnews.com/topic/health-tech/feed/`. **Its
+> recent clean results are now untrustworthy** — there is no way to know
+> how long the redirect stood. The Rundown AI is the same class of
+> failure the other way: HTTP 200 on feed and archive, both newest at
+> 08-20, nothing for four days. **The lesson, now in `coverage-log.md`:
+> check the newest item's date, not the HTTP status — "reachable" and
+> "blocked" do not describe either of these.**
+>
+> ✅ **Two long-running failures actually closed.** `mh-evidence-watch`
+> produced a **confirmed** negative for the first time in twelve days by
+> querying **PubMed `eutils`** instead of the Cloudflare-blocked publisher
+> sites — use that transport going forward. And **`openalex` swept 524
+> terms with a full manifest** after returning 429 on all 59 and writing
+> nothing last run, confirming the documented `.env` workaround live.
+>
+> ⚠️ **Two prior claims corrected on evidence.** (1) `lda` was recorded as
+> a keyless casualty; it is not — with the key loaded it still 403s,
+> because `lda.senate.gov` now redirects to `lda.gov` and both 403 at the
+> Akamai edge before auth. Its own module says this was researched to
+> exhaustion on 08-05 and must not be re-filed. **Expected dead, not a new
+> failure.** (2) The standing note that four entity adds were "held" and
+> untaggable — Samsung, SK Hynix, Micron, Alibaba — **was wrong about
+> three of them**: all three have been watchlist entities since 07-24 and
+> `ai-memory-shortage.md` already tagged them. **Only `alibaba` is a real
+> gap.**
+>
+> **Substance.** 08-23 held both halves of one argument — Abbott saying
+> the industry earned its backlash, and **Altman the same afternoon saying
+> the backlash is a messaging failure**, which had nowhere clean to file
+> and exposed that **no thread covers industry messaging or public
+> trust**. Also 08-23: **Taiwan indicted nine people including Nvidia and
+> Super Micro employees** over routing AI servers to China, and **Hot
+> Chips day two answered the memory wall three separate ways**. 08-24's
+> news is the **Treasury General Account at $935–950bn**, ~$350–400bn
+> above target, funding the buybacks — which turns four days of
+> "soft-form financial repression" into an operation with a size.
+>
+> ⛔ **Still needing Ben: `bq` credentials, six days expired.** Re-tested,
+> still fails; `gcloud auth login` is a browser flow only Ben can run.
+> `world-news.yaml` is stale from 08-18, so **every thread candidate
+> offered today is a curator guess** rather than something that cleared an
+> outlet-count bar. ⚠️ Read payload reads 1093 KB, *down* from 1423 — but
+> that is a **Monday week-boundary artifact, not a fix**; the degradation
+> rule is still unimplemented. 💡 **Three thread candidates are past the
+> offered-twice rule and need a call:** Treasury long-end (5th offer, now
+> with a mechanism and three dated tests inside four days), data-center
+> political opposition (3-signal), and industry messaging/public trust.
 
 > **2026-08-23 (10:00 ET) — a two-day gap closed in one pass: 08-21
 > finalized, 08-22 reconstructed, 08-23 opened.** No `/daily` ran on

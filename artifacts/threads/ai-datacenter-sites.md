@@ -41,6 +41,28 @@ opened: 2026-07-24
   ([Axios](https://www.axios.com/2026/08/23/greg-abbott-texas-data-centers-ai-backlash),
   [Office of the Governor — audit directive](https://gov.texas.gov/news/post/governor-abbott-directs-comprehensive-data-center-audit))
   ⟨daily 2026-08-23⟩
+- ⚠️ **This next item's placement on THIS thread is a stretch, stated
+  plainly: it does not match the thread's siting/moratorium/approval
+  terms, and it is filed here only because this thread already houses the
+  backlash storyline.** No thread on this map covers industry messaging
+  or public trust as a subject in its own right. **Sam Altman argued the
+  same day that the industry's problem is how it has talked about AI, not
+  what people object to.** On David Senra's podcast, OpenAI's CEO said AI
+  builders — "subtext for really, mainly Dario" — have spent years
+  talking about extinction risk and job loss and "have not as a field
+  done a very good job" explaining the benefits or how downsides get
+  mitigated. He pitched AI as delivering "more power and personal
+  freedom" and possibly "the greatest boom in people starting smaller
+  businesses that we have ever seen," and parodied the industry's own
+  tone: "dear peasants, we will bequeath upon you these gifts."
+  ([The Neuron](https://www.theneurondaily.com/p/why-sam-altman-thinks-people-hate-ai),
+  source clip [YouTube](https://www.youtube.com/watch?v=kG8AoExkX40))
+  ⟨daily 2026-08-23⟩
+  <!-- The Neuron pubDate 2026-08-23T18:15:00Z = 14:15 ET. -->
+- **The point to land: the day holds both halves of one argument** — a
+  governor saying the industry earned its opposition, and the industry's
+  most visible CEO saying the opposition is a communications failure.
+  ⟨daily 2026-08-23⟩
 
 ## 2026-08-21 — Site opposition becomes a securities risk factor
 

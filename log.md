@@ -4990,3 +4990,203 @@ keynote as chair 08-28 — and there is nowhere on the map to put their
 outcomes. Recommendation on the front page: open it before Thursday.
 Second, new this run: **AI as a wage story rather than a jobs story**,
 which the map has no thread for at all.
+
+## 2026-08-24 (10:00 ET) — `/daily`: 08-23 finalized on three critic passes, 08-24 opened; two silently-broken instruments found and fixed
+
+**What this run covered.** 2026-08-23 15:45 ET → 2026-08-24 10:00 ET. That
+window crosses the digest-day boundary at 05:00 ET, and this time it
+crossed it hard: **eleven of the fourteen items found carry timestamps
+between 14:15 ET on 08-23 and 04:50 ET on 08-24**, so they belong to
+digest-day 08-23, not to today. Every item is stamped with its verified
+time in-digest so the bucketing is auditable rather than asserted. 08-24
+itself is five hours old and correspondingly thin — which is stated on
+each page rather than papered over.
+
+**Dispatch:** one collector sweep plus eight agentic sweeps (three
+coverage critics, four lens sweeps, one dated-expectation check), then
+three timeline-writing agents and four briefing writers. Sixteen agents,
+all returned, none stalled.
+
+### The two findings that matter more than the news
+
+**⛔ 1. STAT Health Tech had been "reachable" while serving nothing.** The
+vertical feed URL this repo's critics have been using,
+`statnews.com/feed/category/health-tech/`, **301-redirects to a signup
+page that returns HTTP 200 with zero articles.** Every reachability check
+on it passed while it delivered no content whatsoever. It was caught only
+because it happened to cost a real miss today. Fixed in
+`sources/benchmarks.yaml` to `https://www.statnews.com/topic/health-tech/feed/`,
+verified live.
+
+Two consequences recorded there: **STAT is not weekday-only** (unlike the
+other three mental-health benchmarks it publishes across the weekend, so
+the weekend-shape note does not cover it), and **its recent history of
+"no misses" is untrustworthy** — there is no way to know how long the
+redirect stood.
+
+**The generalisable lesson, now written into `coverage-log.md`:** this log
+has been recording benchmarks as *reachable* or *blocked*, and **both of
+today's access findings fall outside that pair.** The Rundown AI is the
+other one — feed and archive both return HTTP 200 and both are newest at
+**08-20**, nothing for four days. A feed that 200s while serving a signup
+page and a feed that 200s while its publisher has stopped publishing are
+both **"reachable and useless,"** and an HTTP-status check cannot tell
+either from health. **Check the newest item's date, not the status code.**
+
+**✅ 2. `mh-evidence-watch` produced a confirmed negative for the first
+time in twelve days, and the fix is a transport change worth keeping.**
+Prior sweeps failed because `jamanetwork.com` sits behind a Cloudflare
+challenge that blocks direct fetches *and* the reader proxy. This run went
+around the publishers and queried **PubMed's `eutils` API**, which both
+journals feed into. JAMA Psychiatry: zero items 08-20→08-24, checked on
+both publication and entry date so epub-ahead-of-print could not hide.
+Lancet Psychiatry: its RSS listed several `2026-09` items with no
+day-level timestamp — **exactly the forthcoming-issue trap that stamped 38
+unpublished articles as same-day news last week** — none trusted; PubMed
+cross-check found only three genuinely dated items, all 08-20 and none
+lens-relevant. **Use PubMed eutils as the standing transport for these
+two.**
+
+### Collector: the .env workaround works, and one diagnosis was wrong
+
+**✅ `openalex` is fixed by the documented workaround.** Last run it
+returned HTTP 429 on all 59 terms and wrote no manifest; this run, with
+the keys loaded explicitly from `kestrel/.env` before invoking the
+collector, it **swept 524 terms and wrote a full manifest.** The ops
+brief's predicted consequence and predicted fix both confirmed live. The
+working invocation needs **both** `KESTREL_INSTANCE` and
+`CLOUD_RESEARCHER_CORPUS` set plus the keys sourced — the underlying
+defect is filed and still unfixed upstream.
+
+⚠️ **But last run's diagnosis of `lda` was wrong, and this corrects it.**
+`lda` was recorded as a keyless-operation casualty alongside openalex. It
+is not. With the key loaded it still 403s, and the collector's own
+docstring says why: `lda.senate.gov` now redirects to `lda.gov`, and
+**both 403 at the Akamai edge before auth is evaluated** — researched to
+exhaustion 2026-08-05, not fixable in code, config, key or pacing, and the
+module explicitly says not to re-file it upward. It is **expected dead**,
+not a new failure. `semantic_scholar` also still 429s with the key loaded
+and returns data intermittently — real rate limiting, not a key problem.
+
+### ✅ A standing "gap" that was mostly imaginary
+
+The record has carried, for three days, that **four entity adds were
+proposed and held — Samsung, SK Hynix, Micron and Alibaba** — and that
+"none can be tagged on a bullet or surfaced by actor." **That is wrong
+about three of the four.** Samsung, SK Hynix and Micron have been
+watchlist entities since **2026-07-24** (`ben-steer`, the memory squeeze),
+`ai-memory-shortage.md`'s own frontmatter already tags all three, and the
+08-23 digest itself used `e=micron`. Corrected in the thread file, which
+carried the same error in prose.
+
+**Only `alibaba` is genuinely missing**, and it is a real single gap: Hong
+Kong's largest-ever follow-on went entirely into AI and cannot be tagged
+to its issuer. Note `Alibaba Qwen` exists as a separate model-level
+entity — the missing one is the company.
+
+### Substance
+
+**08-23 turned out to hold both halves of one argument.** Governor Abbott
+saying the data-center industry "dug their own grave" was the 15:45 read;
+the finalize added **Sam Altman, the same afternoon, arguing the backlash
+is a communications failure by the industry** rather than a substantive
+objection. The routing exposed a hole: **no thread covers industry
+messaging or public trust**, so it went onto `ai-datacenter-sites`, which
+is about siting, and the misfit is recorded rather than smoothed.
+
+Also on 08-23: **Taiwan indicted nine people including Nvidia and Super
+Micro employees** over routing AI servers to China — export control
+becoming a prosecution. **Hot Chips day two answered Micron's memory wall
+three separate ways** (Samsung's zHBM, SK hynix's i-HBM plus a disclosed
+Intel EMIB evaluation, d-Matrix's Raptor at 105 TB/s), which is how an
+industry behaves when it treats a constraint as structural. And **New York
+being closed did not close the day** — four real capital events landed in
+the Asian session, so "markets closed — Sunday" was true of the US and
+misleading about a global lens.
+
+**08-24's news is the Treasury General Account.** CNBC reported it holds
+roughly **$935–950bn**, some $350–400bn above the prior administration's
+target, and that this funds the doubled buyback ceiling. That **turns four
+days of calling the intervention "soft-form financial repression" into an
+operation with a measurable size and therefore a limit.** The 30-year had
+touched ~5.33% overnight, a 19-year high, before pulling back to 5.228%.
+Warsh's first Jackson Hole keynote as chair is 08-28.
+
+### Expectations — three resolutions, one deliberately not made
+
+- ✅ **`ukraine-independence-day-coalition-kyiv` → hit.** The meeting
+  happened and produced money (Norway 85bn kroner for 2027, EU €6.1bn).
+  **Recorded with a scale caveat:** the claim said "30-plus-country"; what
+  convened was two heads of government in person with France and Germany
+  on video and no confirmed US participation. Its second limb — whether
+  Putin's 08-22 warning was acted on — is answered yes by a barrage that
+  killed 8 and injured 43.
+- ✅ **`apple-cxmt-senate-deadline` — 3-day grace closed**, finding
+  unchanged, now settled rather than provisional.
+- ⏳ **`iran-us-sanctions-package-aug24` — due today, left PENDING on
+  purpose.** Bessent speaks at 2:00pm ET, four hours after the window
+  closed. Treasury's press feed, OFAC recent-actions and the Federal
+  Register were all checked at 10:00 ET and are clean; NPR at 08:26 ET
+  still had it in future tense. **A timing gap is not silence** — closing
+  it as passed-silent now would be a false negative against an event still
+  on the clock. Re-sweep after 14:00 ET.
+
+### ✅ Nvidia/Poolside — closed after three runs
+
+The chain was traced end to end: Bloomberg's own headline reads "...
+**Newcomer Says**," and PYMNTS states The Information's 08-21 piece was
+itself "citing a paywalled post by Newcomer," whose 08-20 original rests
+on an investor letter it says it reviewed. **No Nvidia or Poolside
+spokesperson, filing or primary statement exists anywhere.** Stops being
+re-checked as an open lead.
+
+### One tooling fix, in this repo's own code
+
+`readouts.py`'s front-scope `shape` spec said sections must be "EXACTLY
+the three lenses, in this order" without saying the `heading` string must
+literally equal the lens label. The briefing writer produced
+`'AI: chip enforcement and the backlash'` and the validator — which
+set-matches headings — rejected the whole front submission, costing a
+round-trip. The spec string now says the label must be verbatim and names
+the rejection. `theprojection_pipeline/` is not in `.agents/kit.yaml`, so
+this file is owned outright here; no routing needed.
+
+### Still broken, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials expired — SIX days.** Re-tested this run,
+  still `Reauthentication failed. cannot prompt during non-interactive
+  execution`. `gcloud auth login` is a browser flow **only Ben can
+  complete**. `attention/world-news.yaml` is stale from 08-18, so the
+  mechanically-scored candidate pool cannot rebuild and every thread
+  candidate offered today is a curator guess.
+- ⚠️ **Read payload over its 600 KB cap for a seventh run.** It reads
+  1093 KB today, *down* from 1423 — but that is a **week-boundary
+  artifact, not a fix**: today is Monday, so the fixed Mon–Sun week
+  contains only 08-24. The degradation rule remains unimplemented.
+- 💡 **`alibaba` — one watchlist entry, real consequence.** See above.
+
+### Open for Ben — three candidates, all past the offered-twice rule
+
+They are kept live rather than dropped because **each has acquired new
+evidence rather than merely persisted** — but that is a reason to decide,
+not to keep asking.
+
+1. **Treasury long-end intervention** (fifth offer). Today produced the
+   funding mechanism, and three dated tests land within four days —
+   Cook 08-26, Jackson Hole 08-27→29, Warsh 08-28 — with **nowhere to
+   record their outcomes.** Currently filed against
+   `fed-independence-fight`, which is about the Fed's autonomy, not
+   Treasury's balance sheet.
+2. **Data-center political opposition as a capital risk** (since 08-20),
+   now three-signal: Anthropic's S-1 risk factors, Abbott's conditions,
+   Altman's response.
+3. **Industry messaging and public trust** (new today, via the critic).
+
+### 💡 One product observation, not a bug
+
+**The weekly read page is at its emptiest on Monday morning** — the fixed
+Mon–Sun week means today's page shows a five-hour day and drops the
+just-finalized Sunday that carries most of the last eighteen hours. The
+archive keeps 08-23 in full; the page does not show it. That is the design
+working as specified (`week = the 7 digest-days Mon…Sun`), so it is raised
+as a question for Ben rather than changed.

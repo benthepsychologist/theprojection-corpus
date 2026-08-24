@@ -164,8 +164,17 @@ actors:
       off" rule for 50MW+ loads starting June 2027.
   # --- Sovereign actors (kingdoms) ---
   anthropic:
-    asof: 2026-08-23
+    asof: 2026-08-24
     doing: '
+      New 08-23: a federal judge signalled skepticism at the Pentagon''s
+      "supply chain risk" designation on Anthropic, at a hearing following
+      Saturday''s temporary block of the label — which had been restricting
+      federal contractors from using Claude. RECORDED AT REDUCED CONFIDENCE:
+      only the headline and timestamp were verified and the article body was
+      unreachable, so the judge''s reported reasoning is not established —
+      re-check before building on it. The public S-1 filing remains due by
+      08-31.
+
       New 08-23 (events dated 08-21, caught in the 08-22 gap): two moves in
       one day, and together they say Anthropic is trying to own its own
       compute rather than only buy it. It hired Amir Salek — who founded and
@@ -304,8 +313,19 @@ actors:
 
       '
   openai:
-    asof: 2026-08-23
+    asof: 2026-08-24
     doing: >
+      New 08-23: Sam Altman argued on a podcast that the industry's problem
+      is how it has TALKED about AI rather than anything the backlash is
+      reacting to — that builders, "subtext for really, mainly Dario," have
+      spent years on extinction risk and job loss and "have not as a field
+      done a very good job" explaining benefits or mitigations. Landing the
+      same day as Governor Abbott's "dug their own grave" remarks, it gives
+      the day both halves of one argument. Separately, policy chief Chris
+      Lehane asked Washington for mandatory pre-deployment safety standards
+      — the second government in two days OpenAI has asked for a binding
+      rule.
+
       New 08-23 (afternoon): the policy turn extended from Sacramento to
       Washington in a day. Chief Global Affairs Officer Chris Lehane told the
       Guardian the industry has entered "a different chapter," described
@@ -621,8 +641,22 @@ actors:
       `expanding` off the OpenAI 6GW deal, the Anthropic partnership and
       Oracle's 50,000-GPU Q3 rollout.
   nvidia:
-    asof: 2026-08-23
+    asof: 2026-08-24
     doing: >
+      New 08-23/24: three things at once, and they pull in different
+      directions. (1) TAIWAN INDICTED NINE PEOPLE INCLUDING NVIDIA
+      EMPLOYEES over illegally routing AI servers to China — export control
+      moving from policy argument to prosecution with named defendants at
+      the chokepoint of advanced-chip production. (2) Michael Burry
+      restated his circularity thesis two days before earnings, expecting a
+      "lights out" print while calling "100% of announced revenue...
+      circular" (venue unconfirmed; quote corroborated across three
+      aggregators). (3) Q2 FY2026 earnings land 08-26 after the close, into
+      a bond market unsettled by the Treasury buyback story. Separately, the
+      reported ~$6bn Poolside licensing deal is now CLOSED as a lead: every
+      outlet re-reports one Newcomer scoop and no Nvidia or Poolside primary
+      source exists anywhere in the chain.
+
       New 08-23 (event dated 08-22, caught in the gap): Nvidia told the
       contract manufacturers that build AI servers for Microsoft, Google and
       Oracle that prices rise MORE THAN 15% on systems shipping in early
@@ -949,8 +983,17 @@ actors:
 
       '
   alibaba-qwen:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23/24: the parent company raised $10.2bn (HK$80bn, 710m shares
+      at HK$112.70, a 3.6% discount) in Hong Kong's largest-ever follow-on
+      and put all of it into AI — then FELL ABOUT 10% once the terms became
+      tradeable on Monday, which is holders reading a discounted raise that
+      size as dilution first and AI ambition second. ⚠️ MAP GAP: `alibaba`
+      the company is still not a watchlist entity — only `alibaba-qwen`, the
+      model — so the largest AI capital raise in Hong Kong's history cannot
+      be tagged to its own issuer. Flagged to Ben.
+
       New 08-16: still quiet — no Qwen/Alibaba mention in any lens on
       08-16 (a genuinely thin Sunday map-wide, no `/daily` ran). No new
       movement since 08-15; standing picture below holds.
@@ -1030,8 +1073,22 @@ actors:
       sovereign-alternative pitch, with the ASML stake (11%, active board
       seat) unchanged.
   united-states:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-24: the funding mechanism behind the Treasury's long-end
+      intervention was reported for the first time — a TREASURY GENERAL
+      ACCOUNT BALANCE OF ROUGHLY $935-950BN, some $350-400bn above the
+      ~$550-600bn level targeted under the prior administration, standing
+      behind a doubled buyback ceiling of up to $4bn per off-the-run issue.
+      That converts four days of characterising the intervention as
+      "soft-form financial repression" into an operation with a measurable
+      size and therefore a limit. The 30-year had touched ~5.33% overnight,
+      a 19-year high, before pulling back to 5.228%. Warsh gives his first
+      Jackson Hole keynote as chair 08-28. ⏳ Also pending: Bessent's
+      "toughest ever" Iran sanctions package, promised for a 2:00pm ET press
+      conference on 08-24 and not yet delivered as of 10:00 ET — Treasury,
+      OFAC and the Federal Register all checked clean.
+
       New 08-15: two more data points landed on the same side of the
       cooling-economy ledger `capital-context.yaml`'s `rate_regime` reading
       already carries ahead of the September 16 FOMC decision — July retail
@@ -1072,8 +1129,18 @@ actors:
       08-14, unresolved. The Moonshot distillation-sanctions fight with China
       remains dormant since Commerce's 07-28 rejection.
   china:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23/24: two moves in the self-reliance push. (1) The Central
+      Cyberspace Affairs Commission issued a 2026-2030 cyber-industry plan
+      naming "HIGH-END AI CHIPS" a priority, directing state and private
+      firms toward commercialising domestic high-end AI chips, large-model
+      improvements and AI agents alongside quantum and blockchain. (2) On
+      the receiving end of enforcement: Taiwan indicted nine people,
+      including Nvidia and Super Micro employees, over illegally routing AI
+      servers into China — the diversion route being prosecuted rather than
+      merely regulated.
+
       New 08-16: still quiet since 08-15 — no further China-specific
       development.
 
@@ -1134,8 +1201,14 @@ actors:
       announcements.
   # --- The chokepoints + neocloud (added 2026-07-28, W2 crawls; backlog W4) ---
   tsmc:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23: CoWoS acquired its first visible challenger from inside the
+      memory supply chain — SK hynix disclosed it is evaluating Intel's EMIB
+      packaging alongside CoWoS for future HBM-logic integration. Nothing
+      has moved yet; what changed is that a major HBM maker said publicly it
+      is looking at an alternative.
+
       New 08-16: still quiet since 08-14 — no TSMC-specific development in
       either day's sweep beyond a passing peer-mention (semiconductor-capex
       chain, 08-15). Standing picture below holds.
@@ -1181,8 +1254,15 @@ actors:
       selloff, with the Qualcomm-suit appeal and SoftBank's collateral
       position both still unresolved).
   intel:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23: SK hynix disclosed at Hot Chips that it is EVALUATING
+      INTEL'S EMIB packaging alongside TSMC's CoWoS for future HBM-logic
+      integration. Intel did not announce this — its customer did — but it
+      is the most concrete sign yet that Intel Foundry's packaging arm has a
+      credible path into the HBM supply chain, in a market CoWoS currently
+      defines.
+
       New 08-16: still quiet since 08-15 — no further Intel-specific
       development.
 
@@ -1234,8 +1314,15 @@ actors:
       ending a 14-quarter net-selling streak: a $10B Alphabet stake add plus
       $4.5B+ in buybacks, deploying part of Berkshire's ~$365-400B cash pile.
   softbank:
-    asof: 2026-08-19
+    asof: 2026-08-24
     doing: >
+      New 08-23: filed for a RECORD ¥1 TRILLION retail bond issue, tied by
+      every outlet covering it to funding Son's OpenAI and Stargate
+      commitments. This is the regulatory filing, distinct from the 08-20
+      announcement of the plan. ⚠️ The dollar equivalent is genuinely
+      unpinned — outlets carry both ~$6.3bn and ~$8bn — so the yen figure is
+      the confirmed one and no USD number should be quoted as settled.
+
       New 08-19: SoftBank moved on two fronts. Its 13F echoed NVIDIA's own
       mark-only-growth pattern on Intel (a concentrated stake, not trimmed),
       and its Kioxia/Arm holdings took a real hit as Japan's 10-year JGB
@@ -1282,8 +1369,17 @@ actors:
       sheet — quarter-end NAV ¥72.3T vs a pro-forma mark of ¥58.3T (~19% cut).
       Cash fell ¥3.5T→¥2.3T; loan-to-value steady at 13% (25% cap).
   cxmt:
-    asof: 2026-08-21
+    asof: 2026-08-24
     doing: >
+      New 08-23: its closest comparator moved — YMTC's RMB 33bn (~$4.9bn)
+      Shanghai STAR Market IPO application was formally ACCEPTED, the
+      procedural step after Friday's report of the target. SCMP frames it as
+      China's next mega chip listing, one that could break CXMT's own market
+      records. The China-chip-IPO wave now has a second memory maker in it
+      with a number attached. Separately, the Senate's 08-21 deadline for
+      Apple to reject CXMT/YMTC memory passed in total silence from both
+      sides and is now a settled passed-silent.
+
       New 08-21: the pressure point passed without a result. The bipartisan
       Senate deadline for Apple to commit against sourcing CXMT/YMTC memory
       came due today and went silent on both sides — no Apple response, no
@@ -1492,8 +1588,17 @@ actors:
       Chris Lattner, and the BMW automotive-compute deal all stand as last
       recorded.
   samsung:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23: unveiled zHBM at Hot Chips 2026 day two — memory stacked
+      directly atop the compute die, claiming 230% more bandwidth and 70%
+      better power efficiency than a standard HBM4e stack, about 100W saved
+      per GPU in a four-stack configuration. Read alongside SK hynix's i-HBM
+      and d-Matrix's Raptor the same day: three independent attempts to
+      engineer around the memory wall Micron had quantified twenty-four
+      hours earlier, which is how an industry behaves when it has decided a
+      constraint is structural rather than cyclical.
+
       New 08-16: no further movement — no Samsung-specific coverage today;
       the Claude-Code chip-design story (08-12) stands as the week's last
       development, structural picture below unchanged.
@@ -1534,8 +1639,15 @@ actors:
       bipartisan Senate letter giving Apple an Aug-21 deadline over CXMT/YMTC
       memory sourcing.
   sk-hynix:
-    asof: 2026-08-16
+    asof: 2026-08-24
     doing: >
+      New 08-23: showed i-HBM packaging at Hot Chips 2026 (claimed >30% lower
+      thermal resistance) and — the newsworthier half — disclosed it is
+      EVALUATING INTEL'S EMIB packaging alongside TSMC's CoWoS for future
+      HBM-logic integration. That points at a possible SK hynix-Intel
+      packaging tie-up in a market CoWoS currently defines, and is the first
+      concrete sign of a second source for advanced packaging.
+
       New 08-16: no further movement — no SK Hynix-specific coverage today;
       the 08-13 price-pop and Q2-print picture below carries unchanged
       through the week's close. Board-pass note on the unrolled Q2 axes

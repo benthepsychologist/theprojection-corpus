@@ -1,19 +1,28 @@
 ---
 lens: global-capital
 date: 2026-08-23
-status: building
+status: final
 window_start: 2026-08-23T05:00:00-04:00
-as_of: 2026-08-23T15:45:00-04:00
-coverage: pending
+window_end: 2026-08-24T05:00:00-04:00
+finalized: 2026-08-24T10:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-23
 
-*Curated agentic-interim, 05:00 ET → 15:45 ET in two passes: an opening
-pass at 10:00 ET that found nothing, and this afternoon pass covering
-10:00 ET → 15:45 ET. Sources: one tier-2 global-capital sweep, one
-coverage-critic pass over 08-22 that reached Bloomberg for the first time
-in days, and this run's collector sweep. US markets closed — Sunday.*
+*Curated agentic-interim across THREE passes — 10:00 ET (nothing found),
+15:45 ET, and this 2026-08-24 10:00 ET finalize covering the remaining
+15:45 ET → 05:00 ET window. Sources: two tier-2 global-capital sweeps, a
+coverage-critic pass over this day's four benchmarks, and two collector
+sweeps.*
+
+⚠️ **US markets were closed — it was a Sunday — but this digest-day does
+not end at the US close.** It runs to 05:00 ET on 08-24, and Asia traded
+that whole time. The four items added at finalize are all Asian-session
+or Asian-newswire events between 20:21 ET on 08-23 and 04:34 ET on 08-24,
+each stamped with its verified time. **"Markets closed" was true of New
+York and misleading about the day**, which is worth stating plainly: this
+lens is global, and the Sunday framing under-covered it.
 
 ## Today's throughline
 
@@ -47,6 +56,21 @@ every dollar of it into AI. See 🔄 Map changes.
 
 - **The stated fiscal backdrop: $40tn of debt, a $2tn deficit this fiscal year, and $1tn a year in interest costs**, against a 30-year yield at its highest in nearly twenty years. These are the article's own figures and they are the constraint the buybacks are operating under, not incidental colour. ([Fortune](https://fortune.com/2026/08/23/treasury-bond-buyback-dollar-yen-currency-markets-financial-repression-us-debt-costs/))
   <!-- k: t= e= axis=capital-in-my-markets -->
+
+- **Alibaba fell about 10% in Hong Kong once the terms of its $10.2bn AI placement became tradeable** — the raise itself was logged yesterday (710m shares at HK$112.70, a 3.6% discount, Hong Kong's largest-ever follow-on). This is the market pricing it, which is a different event: a double-digit drop says holders read a discounted raise this size as dilution first and AI ambition second. ([CNBC — 2026-08-24T02:55Z / **22:55 ET on 08-23**](https://www.cnbc.com), [Dealroom, 08:34Z](https://dealroom.net))
+  <!-- k: t= e= axis=capital-in-my-markets -->
+  ⚠️ **This bullet carries no entity tag and that is a live gap, not an oversight.** `alibaba` is still not in the watchlist, so the largest AI capital raise in Hong Kong's history cannot be tagged to its own issuer or surfaced on an actor page. It is put to Ben below.
+
+- **YMTC's RMB 33bn (~$4.9bn) Shanghai STAR Market IPO application was formally accepted** — the procedural step after Friday's report that the NAND maker was targeting that raise, and distinct from it. SCMP frames it as China's next mega chip listing, one that could break CXMT's records. ([TechNode — 2026-08-24T05:49Z / **01:49 ET**](https://technode.com), [TrendForce, 07:23Z](https://www.trendforce.com), [SCMP, 04:34Z](https://www.scmp.com))
+  <!-- k: t=cxmt-memory-ipo e= axis=deals-and-filings -->
+
+- **SoftBank filed for a record ¥1 trillion retail bond issue, tied by every outlet covering it to funding Son's OpenAI and Stargate commitments** — a regulatory filing today, distinct from the 08-20 announcement of the plan. ([TradingView — filing report 2026-08-24T00:21Z / **20:21 ET on 08-23**](https://www.tradingview.com), [WSJ, 07:31Z](https://www.wsj.com))
+  <!-- k: t=softbank-all-in e=softbank axis=deals-and-filings -->
+  ⚠️ **The dollar figure is UNPINNED and is left that way deliberately** — outlets carry both ~$6.3bn and ~$8bn for the same ¥1tn, and primary-source text was unreachable. The yen figure is the one that is confirmed; the conversion is not, so no single USD number is asserted here.
+
+- **Michael Burry restated his Nvidia circularity thesis two days before earnings, expecting a "lights out" print while calling "100% of announced revenue... circular"** — a fresh dated restatement timed to Wednesday's report, not the 08-13 version already in circulation. ([TradingView / Yahoo Finance / Stocktwits, consistent quote across three — 2026-08-24T07:50–08:31Z / **03:50–04:31 ET**](https://www.tradingview.com))
+  <!-- k: t=nvidia-vendor-financing,ai-trade-bear-turn e=nvidia axis=capital-in-my-markets -->
+  ⚠️ **Venue unconfirmed** — three aggregators carry an identical quote with same-morning timestamps, but Burry's original post could not be reached, so the quote is corroborated while its platform is not.
 
 ## 📊 Macro strip
 
@@ -154,13 +178,64 @@ yesterday**, see the frontier-AI page for Governor Abbott · the
 private-credit/life-insurer capital pipeline (08-19) · off-balance-sheet
 AI obligations (four times through 08-18).
 
+## Appendix — Coverage check vs. benchmarks
+
+**Run at the 2026-08-24 10:00 ET finalize against all four daily
+benchmarks. No misses — and the Sunday thinness was tested rather than
+assumed, which is the point of the check.**
+
+**They led with → we missed:** nothing.
+
+**How the null was established, three independent ways:** FT Unhedged's
+feed jumps straight from Sat 08-22 to Mon 08-24 with no Sunday edition ·
+Axios Pro Rata's latest issue is Fri 08-21, and it does not publish
+weekends · exactly one item on Bloomberg Technology's entire front page
+carried an 08-23 date, and it was an explainer on the Meta
+social-media-addiction trial, which routes to no thread in this lens.
+
+**Both covered:** Deutsche Bank's "soft-form financial repression" call
+and the FIMA/euro-funding plumbing behind it · the $40tn debt / $2tn
+deficit / $1tn interest figures · Alibaba's placement, correctly bucketed
+to 08-22 with the timing call flagged in-digest · confirmed PBOC/BOJ/G7
+silence on 08-23.
+
+⚠️ **One benchmark is only PARTIALLY checked, and the reason generalises.**
+Bloomberg Technology is a **rolling front page, not a per-day archive** —
+fetching it at 10:00 ET on 08-24 shows what is on the page then, not what
+was on it during 08-23. Most of what it returned was hours old. So
+anything it did not surface for 08-23 is **unconfirmed-clean rather than
+confirmed-clean**, and that limitation applies every time this benchmark
+is checked after the fact, not just today.
+
+📋 **Carried, and still unverifiable:** FT Unhedged's Monday 01:30 ET
+item, "The great re-equitisation and the dollar," falls inside this
+digest-day but is paywalled past its subhead through the feed, the reader
+proxy and search alike. Its title implies continuity with the
+dollar/re-equitisation theme already carried above — but that could not
+be confirmed, so it is logged as **neither a covered item nor a miss.**
+
+**✅ Nvidia/Poolside — the three-run carried lead is now CLOSED.** The
+attribution chain was traced end to end and every outlet re-reports a
+single scoop: Bloomberg's own headline reads "Nvidia to Pay AI Startup
+Poolside a $6 Billion License, **Newcomer Says**," and PYMNTS states The
+Information's 08-21 piece was itself "citing a paywalled post by
+Newcomer," whose 08-20 original rests on a Poolside investor letter it
+says it reviewed. **No Nvidia or Poolside spokesperson, filing or primary
+statement exists anywhere in the chain.** It stays unlogged as fact and
+stops being re-checked as an open lead.
+
 ---
 Deutsche Bank named the mechanism under the Treasury's long-end
 intervention, calling it soft-form financial repression and arguing the
 pressure resurfaces in the dollar rather than disappearing — the first
 account this map has of how the intervention actually transmits, four
-days before Jackson Hole tests it. Alibaba raised $10.2 billion in Hong
-Kong's largest-ever follow-on and put all of it into AI, bucketed to
-yesterday by twenty-seven minutes. The coverage critic reached Bloomberg
-for the first time in days and caught one real miss: Apollo's finding
-that AI is showing up in weaker wages rather than in job cuts.
+days before Jackson Hole tests it. New York was closed for the Sunday but
+Asia was not, and the overnight added four real items the earlier passes
+could not have seen: Alibaba fell about 10% once its $10.2bn placement
+became tradeable, YMTC's $4.9bn Shanghai listing application was
+accepted, SoftBank filed for a record ¥1 trillion retail bond to fund
+Son's AI commitments, and Michael Burry restated his Nvidia circularity
+thesis two days before the earnings that test it. The reported
+Nvidia-Poolside deal was traced to a single scoop that no primary source
+has ever confirmed, and is now closed as a lead rather than carried a
+fourth time.

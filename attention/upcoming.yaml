@@ -100,7 +100,34 @@ expectations:
     what_confirms: "the meeting happening and what it commits to; separately whether Putin's 08-22 'far more painful and far more destructive' warning is acted on around the date"
     logged: 2026-08-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-24
+    evidence: |
+      The meeting happened, on the day, in Kyiv — but at a smaller scale
+      than the claim's "30-plus-country" framing implied, and that gap is
+      the finding rather than a quibble. IN PERSON: UK Prime Minister Andy
+      Burnham (his first foreign trip since taking office, arriving by
+      train) and European Council President Antonio Costa. BY VIDEO LINK:
+      the French and German leaders — two of the four biggest European
+      powers did not travel. It followed a Nordic-Baltic (NB8) session.
+      CONCRETE OUTPUTS, which is what `what_confirms` asked for: Norway
+      pledged a further 85bn kroner (~$9.1bn) for 2027, and the EU
+      approved a EUR 6.1bn military support package. Zelensky used the
+      platform to press for at least 300 air-defence interceptors before
+      winter, citing a steep supply decline — 675 missiles received across
+      all of 2023 against 364 across all of 2025.
+      ⚠️ Euronews headlined its coverage "EU allies back Ukraine on
+      Independence Day WITHOUT Trump envoys" — no confirmed US
+      administration participation, which is itself part of the answer.
+      The claim's second limb — whether Putin's 08-22 "far more painful
+      and far more destructive" warning was acted on around the date — is
+      ANSWERED YES and recorded separately in the 08-24 world-news digest:
+      a nationwide overnight barrage (2 Oniks, 6 guided air-launched
+      missiles, 143 drones per Ukraine's Air Force) killed 8 and injured
+      43, and a daylight strike hit a residential high-rise in central
+      Chernihiv.
+      Sources: Kyiv Independent, Euractiv/Yahoo (24 Aug 2026 07:48-13:36
+      GMT), Euronews.
 
   - id: fda-psychedelic-public-hearing
     claim: "FDA holds a public hearing on psychedelics, per a Federal Register notice"
@@ -766,6 +793,22 @@ expectations:
       running — the 3-day grace re-sweep is what will catch a late response,
       and this should be read as "nothing by mid-morning of the deadline"
       rather than "the day closed silent."
+      ✅ GRACE PERIOD CLOSED 2026-08-24 — finding unchanged, now final.
+      The 3-day grace re-sweep found no Apple statement, no SEC filing, no
+      executive quote in any wire or trade coverage, and no Senate
+      follow-up on either Banks's or Schumer's press pages declaring Apple
+      compliant or non-compliant. The deadline passed in total silence
+      from both sides. This is now a settled `passed-silent`, not a
+      provisional one.
+      💡 ONE ADJACENT DEVELOPMENT, deliberately NOT treated as resolving
+      this: reports dated 2026-08-22 (xenospectrum, echoed by wccftech)
+      say the administration may permit Apple to buy CXMT/YMTC memory
+      after a Trump-Xi summit in September. That is an unconfirmed
+      administration-side rumour about a future policy allowance — not an
+      Apple public commitment and not an Apple sourcing decision, so it
+      does not meet this entry's `what_confirms` bar. It would resolve the
+      UNDERLYING question on a different track from the Senate deadline
+      this entry tracks, and is worth watching as its own line.
 
   - id: decart-acquisition-close
     claim: "Israeli real-time-video AI startup Decart is acquired for ~$6B — reportedly by Anthropic as of 08-13 (its largest-ever acquisition, a pre-IPO infrastructure move), superseding the original 08-09 report naming SpaceX"
@@ -1669,6 +1712,21 @@ expectations:
     # package explicitly as a SUBSTITUTE for a large-scale kinetic restart,
     # so the package landing hard is, on his own framing, the less violent
     # branch — and the package NOT landing is the signal worth watching most.
+    #
+    # ⏳ CHECKED 2026-08-24 ~10:00 ET AND DELIBERATELY LEFT PENDING — this is
+    # a timing gap, not silence, and closing it as passed-silent now would be
+    # a false negative against an event still on the clock. Primary sources
+    # are clean as of the check: Treasury's press-release feed is newest at
+    # sb0611 (Hizballah, 2026-08-20T13:29Z), OFAC recent-actions is newest at
+    # 2026-08-21 (Venezuela), and the Federal Register has zero "Iran
+    # sanctions" documents published on or after 08-22. But wire coverage
+    # converges on Bessent unveiling the package at a 2:00pm ET press
+    # conference TODAY — NPR, published 08:26 ET today, still has it in the
+    # future tense ("is expected to unveil... on Monday"), and Bloomberg,
+    # CNBC, Fox and The Hill agree on the 2pm slot. RE-SWEEP AFTER 14:00 ET:
+    # it resolves to `hit` if Treasury/OFAC publish a matching action, or to
+    # `passed-silent` if the 2pm event does not materialise or slips with no
+    # new date given.
     status: pending
 
   - id: anthropic-public-s1-filing

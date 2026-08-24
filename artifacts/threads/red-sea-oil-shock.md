@@ -22,6 +22,13 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-24 — Oil eases on an Iran-Iraq tanker concession as Bessent's "toughest ever" Iran sanctions stay a still-open expectation
+
+- **Oil fell through the morning as Iran allowed Iraqi tankers through Hormuz, easing the supply-shock premise this thread rests on.** WTI fell to $85.55 from a prior close of $87.06, and Brent to $92.92 from $94.39, both as of ~14:00 GMT (10:00 ET).
+  ([Investing.com](https://www.investing.com/commodities/crude-oil)) ⟨daily 2026-08-24⟩
+- **Treasury Secretary Bessent is set to unveil what he has called the "toughest ever" Iran sanctions at a 2:00pm ET press conference today, and it had not happened as of this digest's 10:00 ET window.** NPR, publishing at 08:26 ET, still had it in the future tense — Bessent has described the package as an "economic D-Day" and "the greatest financial offensive ever marshalled against an adversary." The map carries this as a dated expectation still open: Treasury's press-release feed, OFAC's recent-actions page and the Federal Register were all checked at 10:00 ET and show nothing, which is a timing gap rather than a silent failure — it re-resolves after 2pm.
+  ([NPR](https://www.npr.org/2026/08/24/g-s1-139743/treasury-secretary-scott-bessent-to-unveil-new-economic-sanctions-on-iran)) ⟨daily 2026-08-24⟩
+
 ## 2026-08-21 — Brent holds ~$95; the Iran-Oman transit track slips back to "resuming" talks; the US sanctions campaign gets a name
 
 - **Brent was $95.29/bbl at 08:00 ET, down 0.11% on the day but +40.5%
