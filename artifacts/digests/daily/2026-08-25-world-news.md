@@ -3,18 +3,33 @@ lens: world-news
 date: 2026-08-25
 status: building
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T11:00:00-04:00
+as_of: 2026-08-25T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-25
 
-*Curated agentic-interim, 05:00 ET → 11:00 ET. Sources: one dedicated
-tier-2 geopolitics sweep across all four active-conflict threads plus the
-social-media-causality thread, and a full collector sweep across all
-lenses.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET. Morning sources: one
+dedicated tier-2 geopolitics sweep across all four active-conflict
+threads plus the social-media-causality thread, and a full collector
+sweep across all lenses. **Afternoon extension (11:00 → 15:00 ET),
+main-session:** a second collector sweep, a targeted re-check of the
+Gaza and Iran/Russia threads, and — for the first time since 08-18 —
+`attention/world-news.yaml`, this lens's own mechanically-scored pool,
+back online.*
 
 ## Today's throughline
+
+**Afternoon: the Gaza strike pattern continued rather than tapered, and
+a second, distinct pressure channel opened on Israel.** Four
+Palestinians were killed, two of them children, per officials — a day
+after an Israeli airstrike hit the Abu Salim Mosque in Deir al-Balah —
+and forty members of the US Congress signed a letter urging Israel to
+release a detained American citizen. That congressional letter is a
+different mechanism from this morning's Board of Peace criticism: one
+is the ceasefire's own supervisory body breaking its silence, the other
+is a domestic US political channel. **Both landed within a day of each
+other, on a war this lens has been logging as low-boil-but-stable.**
 
 **Both governments named in yesterday's sanctions package answered
 on the record today, in opposite directions.** Iran's Finance Minister
@@ -107,9 +122,28 @@ sweep) — tied explicitly to Netanyahu's approaching election.
   Jerusalem Post](http://www.jpost.com/israel-news/defense-news/article-906427))
   <!-- k: t=israel-lebanon-escalation e= axis=items -->
 
+- **The Gaza strike pattern continued into Tuesday, and a second
+  pressure channel opened** — four Palestinians killed, two of them
+  children, per officials, a day after an Israeli airstrike hit the Abu
+  Salim Mosque in Deir al-Balah in central Gaza. Separately, forty
+  members of the US Congress signed a letter urging Israel to release a
+  detained US citizen — the first congressional pressure channel this
+  thread has logged in the post-ceasefire window, and distinct from the
+  Board of Peace criticism above. Al Jazeera's weekly review frames the
+  fortnight as Israel escalating within hours of US envoy Jared Kushner
+  leaving ceasefire-salvage talks with Netanyahu, with senior officers
+  describing a return to pre-ceasefire rules of engagement and more than
+  1,200 Palestinians killed since the October 2025 agreement. **Read
+  against the ~200-troop stabilization-force pilot this thread watches
+  against a ~5,000 target, the pattern is not tapering.**
+  ([Haaretz live](https://www.haaretz.com/israel-news/israel-security/2026-08-25/ty-article-live/two-children-among-four-people-killed-in-gaza-strikes-officials-say/000001a0-3656-dfc3-abf8-b656da950000),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/25/palestine-weekly-after-kushner-departs-israel-escalates-gaza-attacks))
+  <!-- k: t=gaza-war e=israel axis=items -->
+
 ## 🚨 Flash check
 
-**No flash.** Asked directly against today's most significant single
+**Asked again at 15:00 ET against the afternoon's material, and the
+answer is unchanged. No flash.** Asked directly against today's most significant single
 item — China's on-record rebuff of the Iran sanctions package — and it
 does not clear the bar. The test is not "is this our biggest story" but
 **"would this lead a general news front page regardless of our
@@ -123,6 +157,9 @@ already-tracked wars, not standalone ruptures. **The rail stays empty.**
 
 **No flips in this lens today** (world-news carries no dated-expectation
 ledger entries of its own; see the front page for the map-wide ledger).
+The map-wide flip this afternoon —
+`openai-anthropic-congress-safety-disclosure-0824` going
+**`passed-silent`** — belongs to the AI lens; see the frontier-AI page.
 
 ## 🔄 Map changes
 
@@ -130,23 +167,56 @@ ledger entries of its own; see the front page for the map-wide ledger).
   carries no benchmark critic (`coverage: na` by design), so no misses to
   fold in.
 - **Timeline blocks written today:** `iran-conflict-widening` (Trump's
-  claim + Iran's response) · `gaza-war` (the Board of Peace criticism) ·
-  `russia-ukraine-war` (the second overnight barrage) ·
-  `israel-lebanon-escalation` (the buffer-zone assessment, dated 08-24).
+  claim + Iran's response) · `gaza-war` (the Board of Peace criticism,
+  **extended this afternoon** with the Tuesday casualties and the
+  congressional letter) · `russia-ukraine-war` (the second overnight
+  barrage) · `israel-lebanon-escalation` (the buffer-zone assessment,
+  dated 08-24).
 - **No thread adds, no watchlist adds, no retires.**
 
 ## 🧵 Thread candidates
 
-**None offered.** Every item today routed cleanly onto an existing
-thread.
+**None offered from this lens.** Every world-news item today routed
+cleanly onto an existing thread.
 
-⚠️ **`attention/world-news.yaml` still stale from 08-18** — eight days
-now, blocked on expired `gcloud` credentials — so this lens's own
-mechanically-scored candidate pool remains unavailable.
+✅ **`attention/world-news.yaml` is back after eight days dark** —
+regenerated for 2026-08-25 (commit `e88e627`), 126 clustered items from
+GDELT plus Google News RSS: **57 already matched to existing threads, 69
+unmatched candidates.** That 57 is the number worth reading — the
+conflict threads this lens runs on are being matched mechanically again,
+so the ambient coverage the morning sweeps have been carrying alone is
+now cross-checked.
+
+**Where the pool's candidates actually went**, so the routing is visible
+rather than silent: the highest-scoring unmatched clusters this run were
+overwhelmingly **AI and capital stories, not world-news ones** — Nvidia's
+Groq 3 LPX (already on the map from 08-24), Xiaomi's Xring chips and
+Nvidia–Lancium (both caught this afternoon, see the frontier-AI page),
+Paxton on data centers (see global capital), New Zealand's under-16
+social media ban (already logged 08-24), and Shein's Hong Kong IPO
+(offered on the global-capital page). **This lens's own top clusters
+were all `confirmed_thread`** — Russia–Ukraine at 99 distinct outlets,
+which is exactly what a working matcher should produce for a war this
+map already tracks.
+
+⚠️ **The `bq`/BigQuery credential expiry is not fixed** — see the front
+page. The rebuild ran, but the underlying login is still Ben's to
+complete, and the next rebuild will need it.
 
 ---
-Both governments named in yesterday's Iran sanctions package answered on
-the record today — Tehran defiant, Beijing warning against disruption to
+**Afternoon (11:00 → 15:00 ET).** Gaza's strike pattern continued into
+Tuesday — four killed, two of them children, a day after a mosque was
+hit in Deir al-Balah — and forty members of Congress opened a second,
+domestic-US pressure channel over a detained American citizen. Still no
+flash: asked again at 15:00 against the afternoon's material, and it is
+movement inside a running war, not a rupture. **The structural news for
+this lens is infrastructural:** `attention/world-news.yaml` regenerated
+for the first time since 08-18, matching 57 of 126 clusters to existing
+threads, with Russia–Ukraine at 99 distinct outlets — the mechanical
+cross-check on this lens's coverage is working again.
+
+**Morning (05:00 → 11:00 ET).** Both governments named in yesterday's
+Iran sanctions package answered on the record — Tehran defiant, Beijing warning against disruption to
 its own relationship with Iran — while Trump made an unverified claim of
 a domestic Iranian crisis with no evidence offered. A Board of Peace
 official broke the body's silence to criticize Israeli conduct in Gaza

@@ -1,0 +1,74 @@
+# 2026-08-25-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase (see the 08-21 sidecar's
+# header for why the [:50] truncation is load-bearing).
+#
+# TWO entries, both on this afternoon's late catches, because both name a
+# transmission channel rather than restating their own facts. Nothing
+# written for the morning's five bullets: the Nvidia losing streak and the
+# Perplexity stake talks each state their own mechanism inside the bullet,
+# the HUMAIN-Mistral deal has no disclosed economics to reason from, the
+# Houthi tanker strike is an event whose price effect the macro strip
+# already carries, and the Anthropic $2T target is an investor aspiration,
+# not a mechanism. Forcing one onto any of them would be padding, which is
+# what this file is not for.
+#
+# Both entries validated against readouts.validate_interpretation() before
+# commit — the length caps there (mechanism/context_note <=200 chars,
+# direction <=160, why <=200) are enforced, not advisory.
+#
+# Read against attention/capital-context.yaml (asof 2026-08-25, refreshed
+# by /week the same day).
+
+softbank-s-record-1tn-retail-bond-gets-its-terms:
+  mechanism: When the institutional bid for an AI-linked borrower thins, funding
+    re-routes to retail at a higher coupon instead of stopping — and that re-routing
+    prices the risk banks declined to hold.
+  confidence: plausible
+  scenarios:
+  - direction: Prices at or above the top of the 4.3-4.9% range on 09-04, and
+      later AI-linked Japanese issuance keeps leaning on retail rather than institutional
+      books.
+    why: 'The falsifiable form: the funding channel stays shifted, not just that
+      one deal was dear. A below-range print would mean retail demand was strong,
+      not institutions absent.'
+    precedent: SoftBank's own April 2025 Y600bn retail bond — the prior Japanese
+      record, same instrument used the same way — makes this deal measurable against
+      a known coupon rather than a hypothetical.
+  - direction: It clears inside the range, and bank reluctance proves to be about
+      SoftBank's leverage and Arm concentration, not AI credit generally.
+    why: SoftBank is an unusually leveraged borrower with a stalled-loan history
+      this map tracks. Reluctance toward SoftBank is not reluctance toward the
+      buildout; conflating them is the error here.
+    precedent: The 2026-08-06 Q1 FY26 print — profit down 18%, Arm's slide erasing
+      Y14T of pro-forma NAV — is already on `softbank-all-in` as an issuer-specific
+      shock with no read-across to peers.
+  context_note: Sits against the standing picture's AI-credit strand and `ai-circular-financing-risk`,
+    which has run on argument rather than a printed price. 09-04 supplies the
+    number.
+texas-s-attorney-general-runs-against-data-centers:
+  mechanism: 'Opposition reaches project economics through the subsidy line, not
+    the moratorium line: campaigning to repeal a sales-tax exemption turns backlash
+    into a cash-flow variable lenders can discount.'
+  confidence: plausible
+  scenarios:
+  - direction: The exemption's status appears as a named sensitivity in Texas
+      data-center financings, S-1 risk factors or rating commentary, whether or
+      not Paxton wins.
+    why: 'That is what this thread was opened to detect: the first lender or prospectus
+      explicitly discounting for backlash. A campaign plank is upstream; the test
+      is propagation into pricing.'
+    precedent: Anthropic's coming S-1 was reported 2026-08-21 to name data-center
+      opposition as a risk factor — the same propagation one step earlier, already
+      on this thread's record.
+  - direction: It stays rhetoric, the exemption survives the legislative session,
+      and the episode reads as a primary-season position with no financing consequence.
+    why: Repeal needs the Texas legislature, not an attorney general, and the
+      state's revenue interest cuts the other way. The plank signals where politics
+      is moving, not an enacted instrument.
+    precedent: Abbott's 08-03 pause on new data centers pending the ERCOT/PUCT
+      audit is the near-comparator whose financing effect is so far nil — announced,
+      real, not visible in any priced instrument.
+  context_note: '`ai-datacenter-sites` tracks the siting fights; this thread tracks
+    whether they become a priced line item. The tax-exemption clause is what puts
+    Paxton in the second category.'

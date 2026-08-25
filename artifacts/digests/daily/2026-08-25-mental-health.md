@@ -3,18 +3,32 @@ lens: mental-health
 date: 2026-08-25
 status: building
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T11:00:00-04:00
+as_of: 2026-08-25T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-25
 
-*Curated agentic-interim, 05:00 ET → 11:00 ET. Sources: one tier-2
-hot-cluster sweep (governance/security + mental health), one tier-2 sweep
-(world news, for the social-media-causality thread), one tier-3
-cold-rotation sweep, and a full collector sweep across all lenses.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET. Morning sources: one
+tier-2 hot-cluster sweep (governance/security + mental health), one
+tier-2 sweep (world news, for the social-media-causality thread), one
+tier-3 cold-rotation sweep, and a full collector sweep across all
+lenses. **Afternoon extension (11:00 → 15:00 ET), main-session:** a
+second collector sweep — which is where this lens's one real item of the
+day came from, off the Behavioral Health Business feed at 13:47 ET.*
 
 ## Today's throughline
+
+⚠️ **The afternoon overturned the morning's "quiet day" reading with a
+single item, and it is a large one: Headspace is being acquired.** A
+public filing revealed that Sword Health — a company that started in
+digital musculoskeletal care — will absorb Headspace effective
+2026-09-14. Neither company had announced it; the filing surfaced it.
+**The most recognisable consumer mental-health brand in the world is
+becoming a module inside a multi-condition platform sold to employers
+and payers**, which is precisely the pattern `mh-clinical-infra-funding`
+was opened to track, arriving at consumer scale rather than at
+clinic-rollup scale.
 
 **A genuinely quiet 48-72 hour window across the eight governance and
 clinical threads swept this morning** — nothing cleared the bar of new,
@@ -71,14 +85,56 @@ tracks.
   ([Courthouse News Service](https://courthousenews.com/meta-questions-psychologists-testimony-in-teen-mental-health-harms-trial/))
   <!-- k: t=social-media-causality-fight e= axis=research-and-evidence -->
 
+## 💰 Money & structure
+
+- **Headspace is being acquired by a musculoskeletal-first digital
+  health company, effective 2026-09-14** — a public filing revealed
+  Sword Health's plan to buy Headspace; Behavioral Health Business, which
+  found the filing, calls it one of the most significant digital health
+  deals in the behavioral space. Sword raised $40M at roughly a $4bn
+  valuation a little over a year ago and began in digital MSK care,
+  since adding women's health, cardiometabolic care and mental health.
+  Headspace brings therapy, coaching, a consumer wellness app and EAP
+  services. **Deal terms were not disclosed and neither company had
+  announced it** — a filing-sourced story, not a press release, which is
+  worth stating plainly because it means the strategic rationale is
+  inferred rather than stated. **Why it belongs on
+  `mh-clinical-infra-funding` rather than on a consumer-app thread:**
+  that thread's standing observation is that MH is the best-funded US
+  therapeutic area while the money keeps going to platforms treating MH
+  as one module in a multi-condition chassis rather than to MH-first
+  companies. Headspace was the strongest available counterexample to
+  that reading. It is now an instance of it instead. Cross-refs
+  `dtx-payment-paradox` (the payment-model question — an EAP/employer
+  channel is exactly the distribution Pear never had) and
+  `bigtech-into-health`. Logged as
+  `sword-headspace-acquisition-close-0914`.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/))
+  <!-- k: t=mh-clinical-infra-funding,dtx-payment-paradox e= axis=money-and-structure -->
+
 ## 🧪 Clinical trials
 
 - **Nothing dated in window.**
 
 ## ⏳ Upcoming & expected
 
-**No flips in this lens today.** Two new dated expectations logged this
-run touch this lens:
+**One flip this afternoon, and it is one this lens logged this morning.**
+`openai-anthropic-congress-safety-disclosure-0824` went
+**`passed-silent`** — the loud outcome. Neither OpenAI nor Anthropic
+publicly disclosed safety-protocol detail on their rogue-agent incidents
+by the 08-24 deadline set by a 29-signer House letter (Casar/Matsui; a
+separate 22-signer letter went to Anthropic alone), and no signing
+member has followed up. OpenAI's only statement on record predates the
+deadline and is a posture line, not protocol detail. Grace runs to
+08-27.
+
+**One new expectation from this lens's afternoon:**
+`sword-headspace-acquisition-close-0914` — the acquisition takes effect
+09-14. **A slip or a termination is the interesting outcome**, given
+that neither company has said anything publicly about a deal a filing
+disclosed for them.
+
+**Three new dated expectations logged this morning touch this lens:**
 - `fda-genai-device-comment-deadline-1019` — public comment closes on
   the FDA's generative-AI medical-device discussion paper (docket
   FDA-2026-N-7874, published 08-18) — the concrete artifact behind the
@@ -89,13 +145,15 @@ run touch this lens:
 - `openai-anthropic-congress-safety-disclosure-0824` — see Policy above;
   already overdue as of logging.
 
-**Nearest pending:** `fda-psychedelic-public-hearing` (09-14) ·
-`raine-jccp-cmc-0923` (09-23).
+**Nearest pending:** `sword-headspace-acquisition-close-0914` (09-14,
+new) · `fda-psychedelic-public-hearing` (09-14) · `raine-jccp-cmc-0923`
+(09-23).
 
 ## 🔄 Map changes
 
 - **Timeline blocks written today:** `social-media-causality-fight` (the
-  Twenge testimony).
+  Twenge testimony) · **`mh-clinical-infra-funding` (afternoon — the
+  Sword/Headspace filing).**
 - **Cold rotation:** `microsoft-health` updated — Dragon Copilot's AI
   Apps and Agents went to general availability on Microsoft Marketplace
   (August 17, 2026), a new third-party procurement channel for
@@ -112,11 +170,32 @@ run touch this lens:
 
 ## 🧵 Thread candidates
 
-**None offered.** A quiet governance/clinical window and one courtroom
-development, both already routed to existing threads.
+**None offered from this lens.** Everything that landed today routed to
+an existing thread — which is the outcome to want, not a thin result.
+
+✅ **`attention/world-news.yaml` is live again** after eight days dark
+(regenerated for 2026-08-25). Its highest-scoring mental-health-adjacent
+cluster this run is **New Zealand's under-16 social media ban** (22
+outlets) — **already on the map**, logged on 08-24 against
+`social-media-causality-fight`, so it is correctly not a candidate. That
+it scored near the top of the mechanical pool and this map already had
+it is a useful check on the morning sweeps: the pool is finding the
+right stories, and on this lens it is not finding ones we missed.
 
 ---
-Eight governance and clinical threads were checked this morning and
+**Afternoon (11:00 → 15:00 ET).** One item, and it reframes the day.
+A public filing — not an announcement — revealed that Sword Health will
+acquire Headspace on 09-14. The best-known consumer mental-health brand
+becomes a module inside a musculoskeletal-first, multi-condition
+platform sold to employers and payers, which is the exact shape
+`mh-clinical-infra-funding` tracks, now visible at consumer scale.
+Terms undisclosed, neither company commenting, so the rationale is
+inferred; logged as a dated expectation so the close gets checked rather
+than assumed. Separately, the congressional safety-disclosure deadline
+this page logged yesterday flipped to **`passed-silent`**.
+
+**Morning (05:00 → 11:00 ET).** Eight governance and clinical threads
+were checked and
 seven turned up nothing genuinely new — the expected shape for a set
 re-checked this recently, not a gap. The one real development moved the
 social-media causality fight from newsletter argument into sworn

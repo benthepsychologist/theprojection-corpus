@@ -21,6 +21,24 @@ of the population?
 
 - **A Board of Peace official said publicly that Israeli military action in Gaza "cannot extend beyond responding to genuine and imminent threats," and that "all militant activity in Gaza must stop, including the flying of kites" — the first time the body has criticized Israel's conduct in Gaza on the record rather than staying silent on it.** IDF Chief of Staff Lt. Gen. Eyal Zamir responded the same day that "the pursuit of the October 7 terrorists continues" and that anyone who took part in the 2023 attack "will live under pursuit until they are eliminated." ([The Times of Israel](https://www.timesofisrael.com/liveblog-august-25-2026/)) ⟨daily 2026-08-25⟩
 
+- **The strike pattern continued into Tuesday: four Palestinians killed,
+  two of them children, per officials — and a day after an Israeli
+  airstrike hit the Abu Salim Mosque in Deir al-Balah, central Gaza.**
+  Separately, forty members of the US Congress signed a letter urging
+  Israel to release a detained American citizen — a distinct pressure
+  channel from the Board of Peace criticism above, and the first
+  congressional one this thread has logged in the post-ceasefire window.
+  Al Jazeera's weekly review frames the fortnight as Israel escalating
+  within hours of US envoy Jared Kushner leaving ceasefire-salvage talks
+  with Netanyahu, with senior officers describing a return to
+  pre-ceasefire rules of engagement and more than 1,200 Palestinians
+  killed since the October 2025 agreement. **Read against the ~200-troop
+  stabilization-force pilot this thread watches, the low-boil pattern is
+  not tapering.**
+  ([Haaretz live](https://www.haaretz.com/israel-news/israel-security/2026-08-25/ty-article-live/two-children-among-four-people-killed-in-gaza-strikes-officials-say/000001a0-3656-dfc3-abf8-b656da950000),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/25/palestine-weekly-after-kushner-departs-israel-escalates-gaza-attacks))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Sunday's threat to "intensify strikes" becomes Monday's casualties
 
 - **Israel's Sunday threat to "intensify strikes" turned into lethal follow-through on Monday.** A 4-year-old boy — named by the Palestine Chronicle as Mohammed Taha — was killed by shrapnel and debris in an IDF strike on a building near Zawaida whose owners had been warned to leave; separately, a drone strike on a displacement tent in Deir al-Balah, central Gaza, killed two more Palestinians early Monday. Outlets cumulatively report 3-5 Gaza deaths across the window tied to the kite-launch pretext. This is Monday's actual casualty events, distinct from the Sunday *threat* this thread already logged (08-23: Netanyahu and Defence Minister Katz's joint statement threatening to "intensify strikes" over kite and balloon launches from Gaza).

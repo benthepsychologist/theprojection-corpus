@@ -13,6 +13,26 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
+## 2026-08-25 — First live development since the thread opened: Anthropic merges memory across chat and its agent product
+
+- **Anthropic merged the memory systems of Claude Chat and Claude
+  Cowork, so context learned in one surface carries into the other** —
+  and moved memory from an end-of-conversation summarisation step to
+  continuous updating during a conversation. Users can view, edit and
+  delete stored memories; sensitive categories (health, race, ethnicity,
+  religion, politics, gender identity) are excluded by default behind an
+  opt-in toggle, and government IDs, SSNs and criminal history are never
+  stored. It is on by default across Free, Pro and Max, on web, desktop
+  and mobile, at no extra cost. **This is the packaging pattern this
+  thread was opened to track, applied to state rather than to
+  capability:** the agent product and the chat product stop being two
+  places you have to brief separately, which is the friction that keeps
+  an agent surface from becoming the place work actually lives. No seat
+  or adoption numbers disclosed — the disclosure question this thread
+  watches stays unanswered.
+  ([TechCrunch](https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-25 — Thread opened, backfilled from the 2026-08-20 coverage-critic catch
 
 - **Opened on Ben's promotion of a candidate the map's own 2026-08-25

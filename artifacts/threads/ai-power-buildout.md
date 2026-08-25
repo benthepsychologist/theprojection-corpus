@@ -10,6 +10,26 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-24 (late catch, added 2026-08-25) — The Lancium equity stake becomes a 15+ GW deployment platform
+
+- **Three days after taking an equity position in Lancium, Nvidia turned
+  the whole of that company's powered-land portfolio into a deployment
+  platform for its own full AI-factory stack.** Lancium's campuses — 4 GW
+  of leased capacity plus a development pipeline exceeding 15 GW of
+  powered land — will be built out against Nvidia DSX reference designs,
+  including DSX MaxLPS (Nvidia claims up to 40% more GPUs inside the same
+  power budget) and DSX Flex (adjusting an AI factory's draw with the
+  grid). Lancium is a Blackstone portfolio company; Nvidia's investment
+  amount was not disclosed. **The mechanism this thread tracks — power as
+  the binding constraint — is being answered by vertical integration
+  rather than by new generation:** the same megawatts carry more compute,
+  and the developer's pipeline is pre-committed to one vendor's
+  architecture before the power exists. Cross-refs `nvidia-order-book`,
+  `where-the-capex-lands`, `ai-circular-financing-risk`.
+  ([Lancium press release, primary](https://www.prnewswire.com/news-releases/lancium-announces-partnership-with-nvidia-to-advance-gigawatt-scale-ai-factory-development-across-its-15-gw-portfolio-302858393.html),
+  [Data Center Knowledge](https://www.datacenterknowledge.com/data-center-construction/lancium-nvidia-partner-on-gigawatt-scale-ai-data-centers))
+  ⟨daily 2026-08-24⟩
+
 ## 2026-08-21 — Nvidia takes an equity position in a data-center power/land developer
 
 - **Nvidia's minority investment in Cloverleaf Infrastructure puts a chip

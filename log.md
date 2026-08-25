@@ -5646,3 +5646,179 @@ covers the full day, prior notes untouched below it. Both zone repos
 (`theprojection-corpus`, `theprojection-site`) clean and pushed as of
 this checkpoint; verified via `git log @{u}..` on both, not just a clean
 `git status`.
+
+## 2026-08-25 (15:00 ET) — `/daily` extension: 08-25 carried to 15:00, and the world-news pool's first run back finds four 08-24 misses
+
+**What this run was.** A same-day re-run — the 10:00 ET run had already
+finalized 08-24 and opened 08-25, so there were no gap days to
+reconstruct and nothing finalizable. The job was to carry the current day
+from 11:00 to 15:00 ET. All four lens digests plus the front page stay
+`status: building`; the three critic-bearing lenses stay
+`coverage: pending`. Correct — the digest-day has not closed.
+
+**Dispatch note, stated plainly because it is a deviation from
+`AGENTS.md`/the global dispatch rule.** This session ran under a
+harness-level instruction not to call the Agent tool, so **the tier-2/
+tier-3 sweeps and the four readouts briefing packs were all done in the
+main session** rather than by sonnet-class subagents. It worked, and the
+verification was arguably tighter for it (nine leads primary-checked by
+hand), but it is not the documented shape and it is not cheaper. Flagged
+for Ben rather than silently normalised.
+
+### The finding that actually matters
+
+`attention/world-news.yaml` — the GDELT + Google-News-RSS clustering
+that scores stories and matches them against the thread map — had been
+stale since **08-18** on expired BigQuery credentials. It was
+regenerated for 2026-08-25 in commit `e88e627` (126 clusters: 57
+thread-matched, 69 unmatched candidates). **Its first run back surfaced
+four real 08-24 developments that neither the morning sweeps nor
+yesterday's coverage-critic pass had caught.** That is not a critic
+failure — the critic checks named benchmark publications, and these were
+cluster-scored stories, a structurally different detector. **The two
+detectors are complementary, not redundant**, which is a concrete
+argument for keeping the `bq` credential fresh rather than treating the
+pool as optional.
+
+The four, and where they went:
+
+- **Xiaomi's Xring/Xuanjie O3** — a 3nm flagship SoC, 24bn+ transistors,
+  claimed first mobile part past a 5M AnTuTu score, **fabbed by TSMC,
+  not SMIC**; plus a finished 6nm O100 AI accelerator and 3nm D100
+  driving chip. → `china-stack-independence` (+ `tsmc-capacity-race`).
+  Cuts against the week's framing: Chinese *design* independence
+  advancing through deeper Taiwanese *fab* dependence.
+- **Nvidia–Lancium** — the three-day-old equity stake became a
+  deployment platform across 4 GW leased + a 15+ GW pipeline, built to
+  Nvidia DSX designs (MaxLPS: claimed +40% GPUs per power budget; Flex:
+  grid-following draw). → `ai-power-buildout`.
+- **SoftBank's ¥1tn retail bond got its terms** — 7-year, indicative
+  4.3–4.9%, pricing 09-04, and Bloomberg reporting that **banks were
+  reluctant to take the risk**, which is why it is a retail deal. →
+  `softbank-all-in` (+ `ai-circular-financing-risk`).
+- **Alabama subpoenaed OpenAI** — a 14-page order over the July
+  containment breach, demanding internal records and the identity of
+  every employee involved. → `openai-agent-security-incident`.
+
+All four are recorded under **⟨daily 2026-08-24⟩ markers**. **08-24 was
+NOT reopened** — it stays `final`/`coverage: done`. Late items against a
+closed day go into timeline blocks under that day's marker; the archive
+stays honest about when things happened and the state machine stays
+honest about when the day closed.
+
+### The afternoon's own window (11:00 → 15:00 ET)
+
+- **Sword Health will acquire Headspace, effective 09-14** — revealed by
+  a public filing; neither company had announced it. →
+  `mh-clinical-infra-funding` (+ `dtx-payment-paradox`). The
+  best-known consumer MH brand becomes a module in an employer-sold
+  multi-condition platform, which is that thread's central observation
+  arriving at consumer scale.
+- **Anthropic merged memory across Claude Chat and Cowork** — first live
+  entry on `enterprise-agent-product-race`, opened yesterday. Packaging
+  state rather than capability, which is the thread's premise exactly.
+- **Anthropic's IPO pitch: >$30tn TAM** (above SpaceX's $28.5tn), Q2
+  revenue $11.6bn, prospectus expected shortly. → `frontier-lab-ipos`.
+  Third escalation on that thread in five days; $11.6bn is the only
+  realised number of the four.
+- **Paxton's Texas data-center plank** → `datacenter-backlash-capital-
+  risk`, also opened yesterday, also its first live entry.
+- **Gaza** — four killed incl. two children, a day after a mosque strike
+  in Deir al-Balah; forty members of Congress opened a second pressure
+  channel over a detained US citizen. `gaza-war`'s 08-25 block extended
+  in place, not duplicated.
+
+**Two of the four threads Ben promoted this session took their first
+real development within hours of existing.** Before today both items
+would have had nowhere on the map to go.
+
+### Ledger
+
+- **One flip:** `openai-anthropic-congress-safety-disclosure-0824` →
+  **`passed-silent`**. Neither lab answered the 29-signer (OpenAI) /
+  22-signer (Anthropic) House letters by 08-24; no signer followed up.
+  Grace to 08-27. **The pairing is the point:** the voluntary federal
+  channel produced nothing and Alabama's compulsory one moved in the
+  same week.
+- **Three new:** `sword-headspace-acquisition-close-0914` ·
+  `softbank-retail-bond-pricing-0904` ·
+  `xiaomi-18-fold-xring-o3-china-launch-0930`. Each logged with the
+  *informative* outcome named — for two of the three that is the slip,
+  not the hit.
+- **Count correction:** ledger is **65 (53 pending · 9 hit · 3
+  passed-silent)**, not the 73/51/16/6 this morning's pages carried.
+  Both are right for their moment — `/week` (`a0336b0`) pruned 11
+  settled entries later the same session, per `upcoming.yaml`'s own
+  header rule. Called out in the digests so it doesn't read as a bug
+  later.
+
+### Judgment calls worth recording
+
+- **A third `sev=major` was drafted and removed.** The Xiaomi catch is
+  arguably the day's most thread-resetting item, but the morning had
+  already marked two (Nvidia's losing streak, the *Amzan* strike) and
+  the standing bar is roughly one a day. Three would have flattened the
+  term. 💡 Two in one morning is itself at the edge — worth a look on
+  `/week`.
+- **Markets shown intraday, not as a close.** The run is at 15:00 ET,
+  an hour before the bell. 10-year ~4.70% (−3bp, second down session),
+  NVDA ~$212 (high 214.73 / low 210.01). The seventh-straight-loss
+  streak **was not claimed broken** — that is tomorrow's finalize.
+- **Two interpretations written**, both `plausible` with a real
+  precedent per scenario, both validated against
+  `readouts.validate_interpretation()` before commit. ⚠️ The validator's
+  length caps are **enforced, not advisory** (mechanism/context_note
+  ≤200 chars, direction ≤160, why ≤200) — first drafts were 2–3× over
+  and were rejected. None forced onto the morning's five bullets.
+- **Shein's HK IPO offered with a recommendation against** its own
+  thread and for a comparator note on `frontier-lab-ipos` — an offer
+  that does not need Ben's time.
+
+### Machinery
+
+- **Collect:** the two-signal workaround was needed again and this run
+  pinned the mechanism exactly. `collect.py` reads the attention map
+  from **`KESTREL_INSTANCE`** while `collectors/base.py` resolves writes
+  from `corpus_root()` — so `--corpus` steers the writes and not the
+  reads, and the documented `cloud-researcher collect --corpus .` **fails
+  outright**. Separately, `.env` loads from the cloud-researcher package
+  dir (which has none); the keys live in `kestrel/.env`, so `sec_edgar`
+  skipped **every** term on a missing `KESTREL_CONTACT_EMAIL` and
+  `semantic_scholar`/`lda` ran keyless into 429s/403s. **Not re-filed** —
+  both halves are already closed at `kestrel-ops`
+  (`2026-08-23-theprojection-collect-corpus-and-dotenv-resolve-to-the-
+  seat.md`) and routed as `cloud-researcher` #4 / `kestrel` #30. Two days
+  on, still unfixed upstream.
+- **Readouts:** all four packs (front + 3 lenses) applied clean after
+  URL correction. ⚠️ Worth knowing for future runs: `--apply` validates
+  every `url` against **that scope's own pack**, exact-match. A URL that
+  is real, correct, and present in a *different* scope's pack is
+  rejected as "looks fabricated." Half a dozen rejections this run were
+  truncated or cross-scope URLs, not invented ones.
+- **Render:** 2056 KB, 406 items. Over the 600 KB soft cap; the
+  degradation rule is still unimplemented.
+- **Site publish:** `kestrel publish --instance . --push` → site commit
+  `15592c0` at 19:30:05Z, 53 payload items, 61 entities, 0 skipped.
+
+### ⛔ Still blocked, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials — nine days.** Needs a browser
+  `gcloud auth login` only Ben can complete. **Consequence partly
+  resolved**: the pool was rebuilt for 08-25 and immediately earned its
+  keep, so this is now "keeps needing manual attention" rather than "the
+  pool is dark." The next rebuild still needs the login.
+- ⛔ **The internal read-page artifact (`f2ca5acd-…`) still not
+  republished** — stale since 08-16, ten days. Unchanged from this
+  morning: needs Ben's call on force-overwrite, or his own run. **Not
+  forced this run.**
+- ⚠️ **Read payload past the soft cap** (2056 KB vs 600 KB). Degradation
+  rule still not implemented.
+- ✅ **No thread-candidate decisions outstanding.** Two fresh offers on
+  the table (Thomson Reuters in-housing away from Anthropic; "Ox Alpha",
+  second offer) — neither overdue.
+- 💡 **A skill contradiction hit in real use:** `/publish`'s SKILL.md
+  says publishing is "**Not part of `/daily`**", while `/daily` step 6a
+  directs `/publish --push` to ship the refreshed readouts store. Ran
+  the push (the publish skill's own rules make `--push` the normal,
+  no-confirmation path, and the site is in-zone), but the two files
+  should agree. Not edited unilaterally.

@@ -3,18 +3,36 @@ lens: global-capital
 date: 2026-08-25
 status: building
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T11:00:00-04:00
+as_of: 2026-08-25T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-25
 
-*Curated agentic-interim, 05:00 ET → 11:00 ET. Sources: one tier-2
-hot-cluster sweep (financing loop and lab economics), one tier-2 sweep
-(capex/power, for the PIF thread), one tier-3 cold-rotation sweep, and a
-full collector sweep across all lenses.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET. Morning sources: one
+tier-2 hot-cluster sweep (financing loop and lab economics), one tier-2
+sweep (capex/power, for the PIF thread), one tier-3 cold-rotation sweep,
+and a full collector sweep across all lenses. **Afternoon extension
+(11:00 → 15:00 ET), main-session:** a second collector sweep, plus the
+first pass over a rebuilt `attention/world-news.yaml` — stale since
+08-18 on expired `bq` credentials, regenerated for 2026-08-25 in commit
+`e88e627`. Both afternoon items below are **late catches from the 08-24
+digest-day** that the eight-day blind spot had hidden.*
 
 ## Today's throughline
+
+⚠️ **The afternoon added the two facts that make the morning's
+convergence-on-Nvidia read incomplete.** With the mechanically-scored
+candidate pool back online after eight days, two 08-24 misses surfaced,
+and they are the same story told from opposite ends. **At one end, a
+price on AI credit:** SoftBank's record ¥1tn retail bond now carries a
+4.3–4.9% indicative coupon, and Bloomberg reports the reason it is a
+*retail* deal at all is that banks were reluctant to take the risk. **At
+the other end, a price on AI's political licence:** Texas's attorney
+general made curbing data centers a US Senate campaign plank and put the
+state's data-center sales-tax exemption on the block. One is the cost of
+money for the buildout, the other the cost of permission — and both got
+marked this week while attention was on an earnings print.
 
 **Everything in this lens this morning converges on one point: tomorrow
 afternoon.** Four separate threads moved today, and every one of them is
@@ -104,16 +122,107 @@ Tehran.
   Motley Fool](https://www.fool.com/investing/2026/08/17/anthropic-is-reportedly-aiming-for-a-valuation-of/))
   <!-- k: t=fidelity-buys-ai-labs e=anthropic axis=capital-in-my-markets -->
 
+- ⚠️ **SoftBank's record ¥1tn retail bond gets its terms — and a reason
+  it had to be retail** — *(late catch, 08-24 digest-day.)* The ¥1
+  trillion ($6.3bn) issue this map logged as a filing on 08-23 now has a
+  schedule and a price: 7-year paper, indicative coupon 4.3–4.9%, priced
+  09-04, offered 09-07 to 09-16, issued 09-17, maturing 2033-09-16. It
+  is the largest retail bond offering ever by a Japanese company, nearly
+  double SoftBank's own ¥600bn record from April 2025, and the proceeds
+  go to the $30bn additional OpenAI commitment ($20bn funded in April and
+  July, $10bn due in October). **The line that matters is not the size:
+  Bloomberg reports analysts saying banks were reluctant to take the
+  risk, which is why the deal depends on retail investors.** A
+  near-5% coupon on Japanese household money, sold because the
+  institutional bid was not there, is a directly observable price on
+  exactly the risk `ai-circular-financing-risk` has been arguing about
+  qualitatively. Logged as `softbank-retail-bond-pricing-0904`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-24/softbank-plans-record-1-trillion-retail-bond-offering-in-japan),
+  [Nikkei Asia](https://asia.nikkei.com/business/softbank/softbank-plans-6.3bn-retail-bond-issue-largest-by-japanese-company))
+  <!-- k: t=softbank-all-in,ai-circular-financing-risk e=softbank axis=capital-in-my-markets interp=yes -->
+
+- ⚠️ **Texas's attorney general runs against data centers, and puts the
+  sales-tax exemption on the block** — *(late catch, 08-24 digest-day.)*
+  Ken Paxton unveiled a four-point "Texas First Data Center Plan" as a
+  plank of his Republican US Senate campaign: federal legislation barring
+  data centers from using Chinese technology; criminal liability for
+  data-center companies "empowering" AI chatbots found to undermine child
+  safety; support for behind-the-meter generation; **repeal of Texas's
+  sales-tax exemption for qualifying data centers**; and explicit backing
+  for Governor Abbott's new siting standards. **Two things make this a
+  capital item and not a siting item.** It puts a specific, quantifiable
+  subsidy underwriting Texas project economics onto a statewide
+  candidate's chopping block. And Bloomberg Government frames both Paxton
+  and Abbott as breaking with Trump on it — meaning the opposition now
+  has a Republican-primary constituency, not only a local-consent one.
+  Gizmodo reads the pivot as campaign calculation; that does not change
+  the exposure if it wins. First live entry on
+  `datacenter-backlash-capital-risk`, opened yesterday.
+  ([Bloomberg Government](https://news.bgov.com/bloomberg-government-news/paxton-abbott-break-with-trump-and-go-negative-on-data-centers),
+  [Fox News](https://www.foxnews.com/politics/ais-massive-appetite-power-water-ignites-fight-high-stakes-texas-senate-race))
+  <!-- k: t=datacenter-backlash-capital-risk,ai-datacenter-sites e= axis=capital-in-my-markets interp=yes -->
+
+- **Anthropic's IPO pitch puts a number on the whole opportunity: over
+  $30 trillion** — the company is preparing to tell investors its total
+  addressable market exceeds $30tn, above the $28.5tn SpaceX showed
+  before its own offering, per the Wall Street Journal. The TAM is built
+  on the full scope of work that could be done by AI models rather than
+  on any served market. Alongside it: **revenue more than doubled to
+  $11.6bn in Q2**, the prospectus is expected shortly, and a debut is
+  possible as early as September or early October. **This is the third
+  escalation on this thread in five days and they stack in one
+  direction** — a reported >$100bn raise (08-24), a $2tn-or-more target
+  valuation (this morning), and now a market framing that makes both look
+  conservative. **The $11.6bn is the number to hold onto:** it is the
+  only one of the four that is a realised result rather than a
+  projection, and $30tn against $11.6bn is the ratio the prospectus will
+  have to defend. Routed to `frontier-lab-ipos`.
+  ([Quartz](https://qz.com/anthropic-ipo-investors-30-trillion-market-opportunity-082526),
+  [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-wsj-reports-4875772))
+  <!-- k: t=frontier-lab-ipos,fidelity-buys-ai-labs e=anthropic axis=capital-in-my-markets -->
+
 ## 📊 Macro strip
 
-No dedicated macro sweep run this pass — see 08-24's page for the last
-full reading (10-year 4.69-4.72%, 30-year ~5.23%, both flat since the
-08-24 morning move; Dow up, Nasdaq down on the chip selloff).
+⚠️ **Read as intraday, not a close — this run is at 15:00 ET and the US
+session is still open.** The definitive close goes on tomorrow's
+finalize pass.
+
+- **10-year Treasury ~4.70%, down about 3bp**, a second consecutive
+  session of falling yields.
+- **Nvidia traded around $212 intraday** (session high $214.73, low
+  $210.01). This morning's page recorded a seventh straight losing
+  session, its longest streak since 2022; a positive close would break
+  it, but **that has not happened yet and is not being claimed here.**
+- **Driving the session:** positioning into tomorrow's Nvidia print and
+  into Warsh's first Jackson Hole keynote as Fed chair on 08-28.
+- *Prior full reading, 08-24's page:* 10-year 4.69–4.72%, 30-year
+  ~5.23%; Dow up, Nasdaq down on the chip selloff.
 
 ## ⏳ Upcoming & expected
 
-**No flips today; 73 pending across the ledger** (up from 68, after five
-new dated expectations logged this run — see below).
+**One flip this afternoon** — `openai-anthropic-congress-safety-
+disclosure-0824` went **`passed-silent`**, the loud outcome: neither
+OpenAI nor Anthropic publicly disclosed safety-protocol detail on their
+2026 rogue-agent incidents by the 08-24 deadline set by a 29-signer
+House letter, and no signing member has said anything since. Full
+reasoning on the frontier-AI page; the 3-day grace runs to 08-27.
+
+**Ledger totals, corrected.** The ledger now holds **65 entries — 53
+pending · 9 hit · 3 passed-silent**. This morning's figure of 73 was
+accurate when written; `/week` (commit `a0336b0`) then pruned 11 settled
+entries later the same session, exactly as `upcoming.yaml`'s header note
+said it would once the weekly digests became the record. Nothing was
+lost — the pruned entries live in the weeklies.
+
+**Two new expectations from this afternoon's catches:**
+- `softbank-retail-bond-pricing-0904` — the ¥1tn retail bond prices
+  09-04 against a 4.3–4.9% indicative coupon. **Where it lands inside,
+  or above, that range is the cleanest read on AI-credit risk this map
+  will get all quarter,** because the reporting says banks declined the
+  risk and left the deal to households. Routed to `softbank-all-in`.
+- `xiaomi-18-fold-xring-o3-china-launch-0930` — first shipping device on
+  Xiaomi's TSMC-fabbed 3nm part (routed to `china-stack-independence`,
+  AI lens; see the frontier-AI page).
 
 **New expectations logged today:**
 - `project-camellia-community-panel-0826` — a community panel on
@@ -146,6 +255,25 @@ Warsh's first keynote as Fed chair · 08-31 `anthropic-public-s1-filing`.
   Perplexity stake talks) · `pif-ai-buildout` (the HUMAIN-Mistral deal) ·
   `ai-trade-bear-turn` (the losing streak + Altman comment) ·
   `red-sea-oil-shock` (the Houthi strike + China's response).
+- **Afternoon additions, this lens:** `frontier-lab-ipos` (Anthropic's
+  $30tn TAM pitch, an 08-25 event) · `softbank-all-in` (the bond terms)
+  · `datacenter-backlash-capital-risk` (Paxton — the thread's first live
+  entry since it was opened yesterday). Both carry ⟨daily 2026-08-24⟩
+  markers, because both events are 08-24.
+- **Two interpretations written** to
+  `2026-08-25-global-capital.interp.yaml`, both `confidence: plausible`
+  with a real precedent on a scenario each, both validated against
+  `readouts.validate_interpretation()` before commit. **None written for
+  the morning's five bullets** — reasoning in the sidecar's header, but
+  the short version is that each of them already states its own
+  mechanism, and padding this file is the failure mode it exists to
+  avoid.
+- ⚠️ **08-24 stays `final` / `coverage: done`.** The two catches above
+  are recorded as timeline entries under 08-24 markers rather than by
+  reopening a closed digest. They were found by the world-news rebuild,
+  not by a critic pass — which is worth noting, because it means the
+  08-24 critic pass did its job against the benchmarks it had; the gap
+  was the missing mechanical pool, not the critic.
 - **Cold rotation:** `fidelity-buys-ai-labs` updated (the $2T IPO target)
   — see above.
 - ⚠️ **Two `sources/benchmarks.yaml` access notes added from today's
@@ -156,19 +284,58 @@ Warsh's first keynote as Fed chair · 08-31 `anthropic-public-s1-filing`.
 
 ## 🧵 Thread candidates
 
-**Three candidates carried forward, unresolved, from 08-24 — all past
-the offered-twice rule and needing a call rather than another offer:**
-Treasury long-end intervention (5th offer), data-center political
-opposition as capital risk (4th offer), North American trade policy (2nd
-offer, but with two independent same-day items behind it). See 08-24's
-page for the full case on each. **None re-litigated here** — repeating
-the same argument a sixth time doesn't strengthen it; a decision does.
+✅ **All four carried-forward candidates were decided this session, and
+two of them earned their first real entries this afternoon.** Ben
+promoted `treasury-long-end-intervention`, `north-american-trade-policy`,
+`datacenter-backlash-capital-risk` and `enterprise-agent-product-race`
+(commits `76c70c2`, `d893adb`). Within hours, the Paxton item landed on
+`datacenter-backlash-capital-risk` and the Claude memory merge landed on
+`enterprise-agent-product-race` — both of which, before today, would
+have been items with nowhere to go. **There is no candidate backlog
+outstanding.**
 
-⚠️ **`attention/world-news.yaml` still stale from 08-18** — eight days
-now, blocked on expired `gcloud` credentials.
+✅ **`attention/world-news.yaml` is live again** — regenerated for
+2026-08-25, 126 clustered items (57 matched to threads, 69 unmatched
+candidates). First `/daily` since 08-18 with a mechanically-scored pool.
+
+**One new candidate offered from this lens's share of that pool:**
+
+- **Shein's Hong Kong IPO** (world-news, 19 outlets) — filed 08-23 to
+  raise up to HK$13.86bn ($1.77bn), pricing 08-31, trading 09-01, at a
+  ~$27bn valuation against a $98.2bn private mark in 2022 and $64bn in
+  2023. **The case for tracking it is not fast fashion.** It is a
+  large, dated, public repricing of a private-market valuation to about
+  a quarter of peak, listing in Hong Kong, in the same six-day window as
+  `anthropic-public-s1-filing` (08-31) — which makes it a live control
+  case for the question `frontier-lab-ipos` actually asks: what happens
+  when a private mark meets a public book. **The case against** is that
+  it is off-lens on its subject matter and this map has a standing rule
+  about world-news candidates not drowning out real targets. **Track
+  it?** My read: **no** as its own thread, **yes** as a comparator noted
+  on `frontier-lab-ipos` if the 09-01 debut is dramatic in either
+  direction — which needs no decision from you today.
 
 ---
-Four threads moved today and all four point at the same afternoon:
+**Afternoon (11:00 → 15:00 ET).** Three items, and the first two price
+the two things the buildout actually runs on. **Third, and today's own
+news rather than a catch:** Anthropic is preparing to pitch IPO
+investors on a **$30 trillion** addressable market — above SpaceX's
+$28.5tn — against Q2 revenue of $11.6bn, with a prospectus expected
+shortly and a debut possible in September. Three escalations on that
+thread in five days, all pointing the same way. **Money:**
+SoftBank's record ¥1tn retail bond now carries a 4.3–4.9% indicative
+coupon, and the reason it is a retail deal is that banks were reluctant
+to take the risk — a printed price on AI credit, arriving in a lens
+that has been arguing about it qualitatively for weeks. **Permission:**
+Texas's attorney general made curbing data centers a Senate campaign
+plank and put the state's data-center sales-tax exemption on the block,
+giving the day-old `datacenter-backlash-capital-risk` thread its first
+live entry. Both got interpretations; both are pending dated tests
+(09-04 for the coupon). Markets are shown intraday, not as a close —
+this run is an hour before the bell.
+
+**Morning (05:00 → 11:00 ET).** Four threads moved and all four point at
+the same afternoon:
 Nvidia's longest losing streak since 2022 landed the same day its own
 CEO said AI hasn't had its iPhone moment yet, Nvidia is reportedly
 doubling its Perplexity stake in the same customer-loyalty pattern this

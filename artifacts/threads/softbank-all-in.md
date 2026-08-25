@@ -11,6 +11,25 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-08-24 (late catch, added 2026-08-25) — The record bond gets its terms, and a reason it had to be retail
+
+- **The ¥1 trillion ($6.3bn) retail bond filed on 08-23 now has a
+  schedule and a price: 7-year paper, an indicative coupon of 4.3–4.9%,
+  priced 09-04, offered 09-07 to 09-16, issued 09-17, maturing
+  2033-09-16.** It is the largest retail bond offering ever by a Japanese
+  company, nearly double SoftBank's own ¥600bn record from April 2025.
+  Bloomberg's reporting supplies the part that matters to this thread:
+  **analysts say banks were reluctant to take the risk, which is why the
+  deal depends on retail investors.** The proceeds are tied to the $30bn
+  additional OpenAI commitment — $20bn funded in April and July, $10bn
+  scheduled for October. A near-5% coupon on retail money, sold because
+  the institutional bid wasn't there, is a directly observable price on
+  the risk the loan stack has been accumulating. Cross-refs
+  `ai-circular-financing-risk`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-24/softbank-plans-record-1-trillion-retail-bond-offering-in-japan),
+  [Nikkei Asia](https://asia.nikkei.com/business/softbank/softbank-plans-6.3bn-retail-bond-issue-largest-by-japanese-company))
+  ⟨daily 2026-08-24⟩
+
 ## 2026-08-23 — SoftBank files for a record ¥1 trillion retail bond, tied to OpenAI and Stargate funding
 
 - **SoftBank filed for a record ¥1 trillion retail bond issue**, which

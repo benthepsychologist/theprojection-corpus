@@ -1336,7 +1336,8 @@ expectations:
       details on their respective 2026 rogue-agent incidents
     due: 2026-08-24
     due_precision: day
-    status: pending
+    status: passed-silent
+    passed_silent_on: 2026-08-25
     confidence: reported
     thread: openai-agent-security-incident
     entities: [openai, anthropic]
@@ -1349,6 +1350,75 @@ expectations:
       date already passed as of logging (2026-08-25) with no confirmed
       outcome found — check for evidence before defaulting to
       passed-silent.
+    outcome_note: >
+      Swept 2026-08-25 15:00 ET, one day past due. No public disclosure
+      from either company, and no follow-up statement from the signing
+      members. The only company response on record remains OpenAI's
+      pre-deadline statement to The Hill that the incident "marked an
+      important moment for AI safety" and that it is "conducting a
+      thorough review along with external advisors" — a posture
+      statement, not the safety-protocol detail the letters asked for.
+      Anthropic has said nothing publicly on the 22-signer letter it
+      received. Flipped to passed-silent; the 3-day grace runs to
+      2026-08-27, so a late response still reopens this.
+  - id: sword-headspace-acquisition-close-0914
+    claim: >
+      Sword Health's acquisition of Headspace takes effect, per the public
+      filing that revealed the deal
+    due: 2026-09-14
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: mh-clinical-infra-funding
+    entities: []
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/
+    what_confirms: >
+      a completion announcement from either company, a further regulatory
+      filing, or Headspace's product/brand being folded into Sword's. A
+      slip or a termination is the interesting outcome — neither company
+      had announced the deal publicly when the filing surfaced it.
+
+  - id: softbank-retail-bond-pricing-0904
+    claim: >
+      SoftBank's record ¥1tn ($6.3bn) 7-year retail bond prices, against an
+      indicative 4.3–4.9% coupon range
+    due: 2026-09-04
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: softbank-all-in
+    entities: [softbank]
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://www.bloomberg.com/news/articles/2026-08-24/softbank-plans-record-1-trillion-retail-bond-offering-in-japan
+    what_confirms: >
+      the final coupon. Where it lands inside — or above — the 4.3–4.9%
+      indicative range is a direct price on AI-credit risk, and the
+      cleanest read available on it, since the reporting says banks
+      declined the risk and left the deal to retail. Offering runs 09-07
+      to 09-16; issue 09-17.
+
+  - id: xiaomi-18-fold-xring-o3-china-launch-0930
+    claim: >
+      The Xiaomi 18 Fold and Pad 9 Pro Max — the first devices carrying
+      Xiaomi's TSMC-fabbed 3nm Xring/Xuanjie O3 — launch in China
+    due: 2026-09-30
+    due_precision: month
+    status: pending
+    confidence: reported
+    thread: china-stack-independence
+    entities: []
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://www.caixinglobal.com/2026-08-25/xiaomi-steps-up-chip-push-with-new-smartphone-ai-and-self-driving-processors-102477561.html
+    what_confirms: >
+      a shipping device with the O3 inside. A slip would be the signal —
+      it would mean the constraint is TSMC 3nm allocation to a Chinese
+      customer rather than Xiaomi's own design readiness, which is the
+      distinction this thread cares about.
+
   - id: fda-genai-device-comment-deadline-1019
     claim: >
       Public comment period closes on the FDA's discussion paper

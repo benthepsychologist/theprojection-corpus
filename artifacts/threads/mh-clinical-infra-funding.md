@@ -12,6 +12,24 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-08-25 — Headspace is acquired by a musculoskeletal-first digital health company
+
+- **A public filing revealed that Sword Health will acquire Headspace,
+  effective 2026-09-14.** Sword, valued at roughly $4bn a little over a
+  year ago, started in digital musculoskeletal care and has since added
+  women's health, cardiometabolic care and mental health; Headspace
+  carries therapy, coaching, a consumer wellness app and EAP services.
+  Behavioral Health Business calls it one of the most significant digital
+  health deals in the behavioral space. **This is the shape this thread
+  has been tracking, arriving at consumer scale:** mental-health money
+  keeps flowing to platforms that treat MH as one module inside a
+  multi-condition chassis sold to employers and payers, rather than to
+  standalone MH companies — and Headspace, the most recognisable
+  consumer MH brand there is, ends up as the module. Cross-refs
+  `dtx-payment-paradox`, `bigtech-into-health`.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-20 — Critic catch: interventional psychiatry consolidates into a 27-clinic network
 
 - **Radial acquired the management-services organization behind Mindful

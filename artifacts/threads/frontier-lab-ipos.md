@@ -12,6 +12,26 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-25 — Anthropic's IPO pitch puts a number on the whole opportunity: over $30 trillion
+
+- **Anthropic is preparing to tell IPO investors its total addressable
+  market exceeds $30 trillion — above the $28.5 trillion SpaceX showed
+  investors before its own offering — per the Wall Street Journal.** The
+  TAM is built on the full scope of work that could be done by AI models
+  rather than on any served market. Alongside it: revenue more than
+  doubled to **$11.6bn in Q2**, the prospectus is expected shortly, and a
+  debut is possible as early as September or early October. **This is the
+  third escalation on this thread in five days and they stack in one
+  direction:** a reported >$100bn raise (08-24), a reported $2tn-or-more
+  target valuation (08-25 morning), and now a TAM framing designed to
+  make both look conservative. **The $11.6bn is the number to hold onto**
+  — it is the only one of the four that is a realised result rather than
+  a projection, and $30tn against $11.6bn is the ratio the prospectus
+  will have to defend. Cross-refs `fidelity-buys-ai-labs`.
+  ([Quartz](https://qz.com/anthropic-ipo-investors-30-trillion-market-opportunity-082526),
+  [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-wsj-reports-4875772))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Matt Levine asks who should control Anthropic, the same week its IPO chatter escalates
 
 - **Bloomberg's Matt Levine devoted his 08-24 Money Stuff column to "Who Should Control Anthropic?"** — a governance question about the company this thread is tracking through its S-1 risk factors and IPO chatter, running the same week the raise target escalated (below). The column itself is paywalled past its RSS headline and timestamp, so its argument isn't recoverable here; logged for the fact that a flagship markets commentator is asking the control question in print, not for what he concludes. Caught late by the 2026-08-25 coverage-critic pass. ([Bloomberg Opinion — Money Stuff, dated Mon 24 Aug 2026 18:18 GMT](https://www.bloomberg.com/opinion/newsletters/2026-08-24/money-stuff)) ⟨daily 2026-08-25⟩

@@ -13,6 +13,29 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-24 (late catch, added 2026-08-25) — Xiaomi ships a 3nm in-house flagship SoC, and TSMC builds it
+
+- **Xiaomi unveiled the Xring/Xuanjie O3, a 3-nanometre flagship
+  smartphone system-on-chip with more than 24 billion transistors, at its
+  own Xring Chip Technology Communication Conference — and TSMC, not
+  SMIC, provides the 3nm process that makes it.** Xiaomi says the part is
+  the first mobile SoC past a 5-million AnTuTu score (5.22M), with a
+  16-core GPU, LPDDR6 support and a claimed 45% AI-performance gain from
+  added CPU acceleration units and eight neural-network GPU accelerators;
+  it ships in the Xiaomi 18 Fold and Pad 9 Pro Max in China in September.
+  Two further parts — the Xuanjie O100 AI accelerator (6nm) and the
+  Xuanjie D100 autonomous-driving chip (3nm) — are finished and deploy
+  next year. **The direction of travel cuts against this thread's usual
+  grain:** design independence is what advanced here, while fabrication
+  dependence on Taiwan stayed exactly where it was. A Chinese national
+  champion reducing its reliance on foreign chip *designers* by deepening
+  its reliance on a foreign chip *fab* is the sharpest available
+  illustration that the stack's two halves are decoupling at different
+  speeds. Cross-refs `tsmc-capacity-race`.
+  ([Caixin Global](https://www.caixinglobal.com/2026-08-25/xiaomi-steps-up-chip-push-with-new-smartphone-ai-and-self-driving-processors-102477561.html),
+  [Reuters via FMT](https://www.freemalaysiatoday.com/category/business/2026/08/24/xiaomi-launches-new-xring-chip-partners-with-tsmc-for-production))
+  ⟨daily 2026-08-24⟩
+
 ## 2026-08-23 — Export control moves from policy argument to prosecution, and Beijing writes chips into its next five-year cyber plan
 
 - **Taiwan indicted nine people, including Nvidia and Super Micro
