@@ -163,8 +163,10 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     widest gap stayed unresolved by inaction: five players answered
     "what are you doing" on the enterprise-agent-product axis in one
     day (08-20) and the resulting thread candidate was offered twice
-    and dropped without Ben ever ruling on it. Full detail:
-    `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
+    and dropped without Ben ever ruling on it. **Resolved 2026-08-25**
+    (after this week closed): Ben opened
+    `enterprise-agent-product-race` on the retrospective's own flag.
+    Full detail: `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
   - 2026-08-25 (/week, week_of 08-17, mental-health): a week of
     concrete named-actor action split into two camps that barely
     touched. OpenAI shipped a comprehensive under-18 ChatGPT spec
