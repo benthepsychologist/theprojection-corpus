@@ -17,8 +17,25 @@
 #
 # Fields per reading: {value, basis, sources[{figure, label, url, as_of}], as_of}
 
-asof: 2026-08-18
+asof: 2026-08-25
 
+# Refresh run 2026-08-25 (/week step 4b, closing week_of 08-17): all 5
+# collectors re-run (both as part of the day's full collect and again via
+# a dedicated per-source call). treasury_tic/bis_stats/imf_data: zero
+# items, real successful API calls (confirmed via provenance — e.g.
+# treasury_tic's fetched Treasury's own slt_table5.txt endpoint directly,
+# `items: []`), consistent with each source's real-world lag — none of
+# the three has released a new figure since the prior refresh.
+# epfr_flows: 36 items seen, 0 kept — same empty-since-last-check pattern
+# as every prior week. fund_flow_reports: STILL EMPTY, Morningstar's AWS
+# WAF bot-challenge and etf.com's Cloudflare 403 both confirmed again,
+# same bot-wall as every check since 2026-07-30. `rate_regime` and
+# `conflict_risk_premium` UPDATED below from this week's real /daily
+# findings (the TGA/buyback mechanism, the Iran sanctions package, the
+# Fed-composition fight's approaching deadline) — the two mechanical
+# collectors that feed them are unrelated to the news-sweep basis those
+# two readings actually rest on.
+#
 # Refresh run 2026-08-18 (/week step 4b): all 5 collectors re-run against an
 # explicit --since 2026-08-15 window (the date of the prior refresh).
 # treasury_tic/bis_stats/imf_data: zero items, real successful API calls
@@ -161,8 +178,34 @@ readings:
       5.196%, a partial reversal. This snapshot's rate_regime still reads
       almost entirely US-Fed-framed; a proper BOJ/JGB leg is a /week-scale
       addition, flagged here rather than built out in this daily pass.
-    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the 08-15 retail-sales/consumer-sentiment prints + the Lisa Cook removal fight (radar Q7)"
+      THIS WEEK (08-17-08-24): the Fed-composition fight and a NEW
+      Treasury-side pressure converged into the same window. Lisa Cook's
+      08-26 removal deadline is now two days out with no resolution.
+      Separately, and newly significant: CNBC reported (08-24) that a
+      Treasury General Account balance of $935-950bn -- some $350-400bn
+      above the prior administration's target -- is what funds the
+      doubled long-end bond-buyback ceiling, turning Deutsche Bank's
+      "soft-form financial repression" characterisation (standing since
+      around 08-20) into a mechanism with a known size. Commentary
+      escalated the framing to "fiscal dominance" by the 08-24 afternoon
+      -- monetary policy allegedly subordinated to fiscal financing needs,
+      not merely leaned on. The 30-year touched a 19-year high of 5.33%
+      intraday on 08-24 before pulling back to 5.228% on the TGA reporting
+      itself. Warsh gives his first Jackson Hole keynote as chair on
+      08-28, directly into a bond market that just learned about the TGA
+      mechanism -- the cleanest test yet of whether his messaging regime
+      and Treasury's own balance-sheet operations are read as coordinated
+      or in tension. A new standing thread opened 2026-08-25,
+      `treasury-long-end-intervention`, split out of
+      `fed-independence-fight` since this is a distinct balance-sheet-
+      operations story, not a Fed-composition one -- read that thread for
+      the ongoing detail rather than this snapshot going forward.
+    basis: "FRED policy-rate/curve series + the 07-29 FOMC decision + the 08-07 jobs report + the 08-13 PPI/claims pair + the 08-13 30-year auction + the 08-15 retail-sales/consumer-sentiment prints + the Lisa Cook removal fight + the 08-24 TGA/buyback reporting (radar Q7; see also the new `treasury-long-end-intervention` thread)"
     sources:
+      - figure: "TGA balance $935-950bn, ~$350-400bn above prior target; funds the doubled buyback ceiling"
+        label: "CNBC via 247wallst, 2026-08-24"
+        url: "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
+        as_of: "2026-08-24"
       - figure: "Retail sales -0.6% m/m vs +0.1% forecast; consumer sentiment 51.0, weakest since 2024 election"
         label: "Census Bureau retail sales + preliminary UMich consumer sentiment, 2026-08-15"
         url: "https://www.census.gov/retail/sales.html"
@@ -191,7 +234,7 @@ readings:
         label: "Bloomberg, 2026-08-13"
         url: "https://www.bloomberg.com/news/articles/2026-08-13/us-braces-for-30-year-bond-auction-at-highest-yield-since-2001"
         as_of: "2026-08-13"
-    as_of: "2026-08-15"
+    as_of: "2026-08-24"
 
   cross_border_credit:
     value: >
@@ -328,7 +371,29 @@ readings:
       two Lebanese villages killed at least 11 — the deadliest single day
       since the ceasefire — after a Hezbollah drone attack severely
       wounded three IDF soldiers.
-    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads (world-news weekly digest, partial week 08-10-08-15)"
+      THIS WEEK (08-17-08-24): the Iran war's economic-warfare axis
+      sharpened into the most concrete instrument yet. Treasury's 08-24
+      "Operation Economic Outcast" package (~60 designations, five
+      sectoral determinations, every Bank Melli branch ordered shut)
+      named China directly as not exempt -- it buys roughly 90% of
+      Iran's oil exports -- and threatened removal from the US dollar
+      system for any facilitator of Iranian money-laundering. With
+      Iranian loadings already down to roughly 287k bbl/day from ~2m
+      pre-war, there is almost no physical barrel left to squeeze; this
+      is a payments-rail sanction aimed at Chinese refiners and their
+      banks, not an oil sanction. Oil fell about 2.5% INTO the
+      announcement, continuing this reading's own tracked pattern of
+      prices falling even as enforcement escalates. The same afternoon
+      and the same OFAC notice, the US delisted Syria from the State
+      Sponsors of Terrorism list after 47 years -- relief in one
+      capital, maximum pressure in another, signed within hours of each
+      other. `iran-oman-hormuz-deal-signing` (due 08-19) went
+      passed-silent -- the interim Hormuz reopening deal did not
+      materialise on schedule. One flash filed this week (the only one):
+      `kryvyi-rih-mall-double-tap`, 08-21, a Russian double-tap drone
+      strike on a Ukrainian shopping mall -- outside this reading's own
+      Middle East/Gulf scope but the week's one front-page-anywhere event.
+    basis: "red-sea-oil-shock + iran-conflict-widening + israel-lebanon-escalation threads + the 08-24 Iran sanctions package (world-news + global-capital weekly digests, week_of 08-17)"
     sources:
       - figure: "Six-condition Hormuz reopening demand, separated from Oman talks"
         label: "Punch NG, 2026-08-09, citing IRGC statement"
@@ -358,4 +423,12 @@ readings:
         label: "world-news weekly digest, 2026-08-15"
         url: "https://www.timesofisrael.com/liveblog-august-15-2026/"
         as_of: "2026-08-15"
-    as_of: "2026-08-15"
+      - figure: "Operation Economic Outcast: ~60 designations, China named not exempt (~90% of Iran's oil exports), dollar-system removal threat"
+        label: "US Treasury SB0613/SB0614; CNBC, 2026-08-24"
+        url: "https://home.treasury.gov/news/press-releases/sb0613"
+        as_of: "2026-08-24"
+      - figure: "Syria delisted from State Sponsors of Terrorism after 47 years, same OFAC notice"
+        label: "OFAC recent actions, 2026-08-24"
+        url: "https://ofac.treasury.gov/recent-actions"
+        as_of: "2026-08-24"
+    as_of: "2026-08-24"

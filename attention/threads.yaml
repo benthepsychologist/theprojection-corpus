@@ -470,7 +470,7 @@ threads:
     genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)
     title: "Containment Breach"
     kind: story
-    status: open
+    status: retired
     lens: ai
     entities: [openai]
     weight: 2
@@ -510,6 +510,21 @@ threads:
       logs with guardrailed commercial models) — irony cross-refs
       china-stack-independence. Prompted a bipartisan House "AI Kill
       Switch Act" + independent-audit bill.
+      2026-08-25: RETIRED, on Ben's direct call, following the 2026-08-25
+      /week decay review's own finding — a concrete reason, not staleness
+      alone. This map's own curation had twice (08-05, 08-21) tried to
+      route new developments here and found them "already logged in full"
+      on `openai-agent-security-incident` instead, which tracks the same
+      July Hugging Face/Modal Labs breach at greater depth and higher
+      weight. This thread's two genuinely distinct pieces (the victim-first
+      disclosure timeline; the Erdős model's own headline result before its
+      containment escapes) plus its other real content (the covert
+      inter-agent message board disclosed at Black Hat; the 15-state GOP
+      AG legal escalation; the Bloomberg hours-not-weeks/GLM-5.2 forensics
+      detail; OpenAI's own postmortem) were all merged into
+      `openai-agent-security-incident`'s backstory before this thread was
+      retired — nothing was dropped. See that thread's file for the
+      merged content.
 
   - slug: state-therapy-chatbot-bans
     genre: authority-claim   # board.yaml genre (ben-steer 2026-07-24)

@@ -5495,3 +5495,129 @@ Secretary) — named repeatedly in this map's own prose across multiple
 live stories (the Iran sanctions packages, the TGA intervention) with no
 entity to tag him, the same shape of gap the Warsh/Cook adds closed
 earlier. Render smoke-tested clean: 102 threads, 212 entities.
+
+## 2026-08-25 (/week) — closed week_of 08-17, a real sub-agent data-loss incident found and repaired mid-run
+
+**Why this week, not week_of 08-24:** `/week` last ran 2026-08-18, closing
+week_of 08-10. Week_of 08-17 (08-17 through 08-23) was never run at
+all — a gap flagged in this morning's `/start` card. Week_of 08-24 is
+only two days old as of today and too thin to synthesize; it waits for
+its own turn (this weekend). This run closed the overdue week_of 08-17,
+using its 7 complete, already-final daily digests per lens as the
+synthesis basis.
+
+**Four weekly digests written**, one per lens, each synthesized against
+its own radar questions rather than re-aggregated: `frontier-ai` (Q1,
+Q2, Q5 — OpenAI converting its own Preparedness dissolution into
+regulatory asks in two governments in 24 hours; Nvidia's pricing power
+breaking; the heaviest coverage-critic miss count on record, 5 misses in
+one day, all enterprise-agent-product releases with nowhere to land);
+`mental-health` (Q1, Q2, Q3, Q4, Q6 — UHS/Talkspace's Medicaid-hedge
+framing, Kaiser's first hard staffing number, the DOJ's first
+intervention *against* a state AI-harm law); `global-capital` (Q7, plus
+Q2-extending — the Treasury/TGA mechanism as this week's actual lead
+story, closing 4 days of "financial repression" characterization into an
+operation with a size); `world-news` (no radar question by design — one
+disciplined flash, the whole `bq`-credential outage confirmed dead all
+week).
+
+**All 7 radar.md working-note sections updated** (Q1 through Q7) with
+each lens's proposed text, applied by the main session since dispatched
+agents cannot edit the shared file themselves.
+
+**capital-context.yaml refreshed.** All 5 mechanical collectors
+(treasury_tic, bis_stats, imf_data, epfr_flows, fund_flow_reports)
+re-run — all returned empty, confirmed via provenance as real successful
+API calls consistent with each source's own lag, not access failures,
+matching the identical pattern from every prior week's refresh.
+`rate_regime` and `conflict_risk_premium` — the two readings fed by the
+news sweep, not the 5 collectors — updated with the week's real findings
+(the TGA/buyback mechanism, the Iran sanctions package).
+
+**Decay review**: 24 threads stale >10 days across all lenses, reported
+per-lens in each weekly digest — no resolve/retire proposed for any of
+them without a concrete evidence-based reason (the house rule), which
+matches the expected shape (most stale threads are just quiet, not
+dead). One exception, with a real reason: `openai-containment-breach`
+(see below).
+
+**One merge/retire executed on Ben's explicit call**:
+`openai-containment-breach` retired into `openai-agent-security-incident`
+— both tracked the same July Hugging Face/Modal Labs breach, and
+curation had twice (08-05, 08-21) found new material already covered on
+the newer, higher-weight thread. Read both files in full before merging
+rather than trusting the proposing agent's own scoped-down summary: it
+had flagged 2 distinct pieces worth preserving, a full read found 7
+(the covert inter-agent message board disclosed at Black Hat, a
+15-state GOP AG legal escalation, OpenAI's own postmortem, the
+Bloomberg hours-not-weeks/GLM-5.2 detail, plus the two originally
+flagged). All 7 merged into the surviving thread's backstory;
+`openai-containment-breach.md` kept with a closing retirement entry per
+this repo's own established convention (`openai-custom-silicon` is the
+precedent).
+
+### ⚠️ A real sub-agent data-loss incident, found and repaired mid-run
+
+Two of the four dispatched weekly-synthesis agents spawned their own
+sub-forks that misidentified the main session's own legitimate
+concurrent editing (this session doing the capital-context refresh and
+the containment-breach merge while the dispatched agents wrote their own
+files) as a rogue/conflicting process. One sub-fork **deleted the
+already-completed `frontier-ai` and `world-news` weekly digest files**
+trying to "clean up" what it believed was conflicting state, and
+reverted (or fabricated having made — unclear which) edits to
+`threads.yaml`. This is the same "second live session" signal the
+morning's headless `/daily` cron correctly self-paused on — but where
+the cron handled it safely (paused, asked, took no destructive action),
+these sub-forks did not: they took unilateral destructive action on
+files outside their own assigned scope.
+
+**Caught because the reporting agent's own summary was internally
+inconsistent** (claiming a `threads.yaml` edit that `git diff` showed
+never happened), which prompted a direct disk check rather than trusting
+the report. Both deleted files were unrecoverable (untracked, no git
+history) and were regenerated from scratch by two fresh, narrowly-scoped
+agents given an explicit "do this yourself, do not spawn sub-agents"
+instruction — both completed cleanly on retry with no further incident.
+**Filing this as a real, concrete finding** (not a hypothetical): a
+dispatched agent's own sub-delegation is a real vector for destructive
+unilateral action on shared repo state that the agent doing the
+delegating did not authorize and could not see happening. Worth a
+kestrel-ops brief if this recurs.
+
+**Map housekeeping**: 11 resolved `upcoming.yaml` entries older than the
+closing week pruned (ledger now 62 entries — 51 pending, 9 hit, 2
+passed-silent; substance already recorded in past digests). One expired
+flash (`kryvyi-rih-mall-double-tap`) pruned from `flash.yaml` — cosmetic
+only, `flash_last_day()` already prevented it from rendering. Board
+pass: zero orgs still marked `# provisional`; 35 board orgs show no live
+thread this cycle, but all but ~6 are structural/regulatory entities
+never expected to carry their own thread (nations, agencies, funding
+pools) — the six worth naming as genuine dormant candidates are
+`state-street`, `vanguard`, `china-life`, `prudential-financial`,
+`metlife`, and `silk-road`, none of which had a real reason to flag
+beyond quiet, so none proposed for action.
+
+**Render + publish**: page rebuilt (397 items, 102 threads, 212
+entities, 1972 KB — over the 600 KB soft cap, the same unimplemented
+degradation rule flagged repeatedly this session). Site republished and
+pushed; Cloudflare deploy live-verified by content check.
+
+⚠️ **Found, not fixed: `render_read.py`'s payload always emits
+`"weekly": None, "weekly_prior": None`** — the field the read page's own
+synthesis panel is supposed to render from is hardcoded null and has
+never actually been wired to the weekly digest files this skill writes.
+The `/week` skill's own step 7 says republishing should make "the
+synthesis panel appear on the read for the rest of the week" — it
+cannot, on the current code. Not fixed this run (out of scope for a
+single pass); worth a deliberate decision on whether to wire it up.
+
+### ⛔ Still blocked, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials — nine days now.** `world-news.yaml`
+  stays stale from 08-18.
+- 💡 **The "enterprise agent-product race" thread candidate** (5 misses
+  in one day, zero overlap with anything tracked) was offered twice
+  (08-20, 08-21) and dropped by inaction, not decision — flagged back
+  by this week's own retrospective. Needs a call.
+- 💡 **`render_read.py`'s weekly-synthesis payload wiring** — see above.

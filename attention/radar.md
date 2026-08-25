@@ -147,6 +147,42 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     AI backlash. Stripe entering as a non-lab buyer of the model-router
     layer (OpenRouter, $7B+) is this month's first real "outsider"
     board entrant worth tracking as its own kind of player.
+  - 2026-08-25 (/week, week_of 08-17, frontier-ai): OpenAI turned its
+    own worst embarrassment into a policy ask in two governments inside
+    24 hours — reversing its opposition to California's SB 53 (08-22)
+    and then asking Washington for mandatory pre-deployment safety
+    standards (08-23), both scoped to exactly what the Hugging Face
+    breach exposed, the same week it cut GPT-5.6 Sol's API price >20%.
+    Anthropic answered with hardware intent instead of policy: hiring
+    Amir Salek, the founding architect of Google's TPU program (08-21).
+    Nvidia answered in reverse — after years of setting the price, it
+    told contract manufacturers server prices are rising >15% on memory
+    costs it doesn't control (08-22), becoming a price-*taker* for the
+    first time this map has recorded, with the new price-setters
+    (Samsung, SK Hynix, Micron) still untracked as entities. The week's
+    widest gap stayed unresolved by inaction: five players answered
+    "what are you doing" on the enterprise-agent-product axis in one
+    day (08-20) and the resulting thread candidate was offered twice
+    and dropped without Ben ever ruling on it. Full detail:
+    `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
+  - 2026-08-25 (/week, week_of 08-17, mental-health): a week of
+    concrete named-actor action split into two camps that barely
+    touched. OpenAI shipped a comprehensive under-18 ChatGPT spec
+    (08-18) on its own initiative; UHS closed its $835M Talkspace
+    acquisition and named the Medicaid-exposure hedge explicitly in its
+    own executives' words; Radial acquired Mindful Health Solutions
+    into a 27-clinic interventional-psychiatry network; Alan detailed
+    its Canadian AI-triage product ("Mo," ~20 agents, 15-minute human
+    escalation). On the other side: Kaiser's triage team went from nine
+    clinicians to three (the thread's first hard staffing number),
+    UnitedHealth absorbed three integrity stories in one day ($200M
+    buried-audit allegation, an IRS probe, its already-tracked
+    algorithmic-denial exposure — and turned out to have no watchlist
+    entity despite weeks of coverage, now fixed), and HCA's labor
+    friction escalated to a 19-facility coordinated picket, its first
+    multi-site action, edging toward Kaiser's own escalation shape.
+    Watch for an HCA-equivalent regulatory complaint next. Full detail:
+    `artifacts/digests/weekly/2026-08-17-mental-health.md`.
 
 ## Q2 — Where is the money going?
 - **mode:** both · **lens:** ai + mental-health (money lens will absorb/extend this) · **status:** open
@@ -262,6 +298,40 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     mental-health capacity contracting (Addiction Recovery Care /
     Recovery Works under Linden Capital Partners, and a second operator)
     — 2 of 2, not yet a pattern; watch for a third before promoting.
+  - 2026-08-25 (/week, week_of 08-17, frontier-ai): the vendor-financing
+    stake ladder produced its first fully legible casualty and its own
+    architect began showing cracks. Nvidia's Ohio guarantee to OpenAI
+    closed at a filed, capped $105B (residual-value, OpenAI-indemnified),
+    the end of a four-number progression tracked since 07-27. The same
+    week Groq — Nvidia-backed since a $20B licensing deal — raised at
+    half its September valuation as a company that abandoned its own
+    chips to become an Nvidia neocloud: the first rung on the stake
+    ladder (Nebius, Naver, Intel, Groq) whose outcome is now visible,
+    and the outcome is the rival stopped being one. Nvidia extended the
+    same equity logic upstream into land/power (Cloverleaf, 08-21) days
+    before its own pricing power broke (the >15% server-price rise,
+    08-22) — moving margin to Samsung/SK Hynix/Micron, still untracked
+    as entities (proposed and held for Ben, alongside Alibaba). Track:
+    Nvidia's 08-26 print for whether hyperscalers absorb the price rise
+    or cut orders. Full detail:
+    `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
+  - 2026-08-25 (/week, week_of 08-17, mental-health): the clearest data
+    point was aggregate, not anecdotal — BHB's own Mertz Taggart report
+    found H1 2026 behavioral-health deal volume down 20% YoY (addiction
+    treatment closings down more than half), explicitly on
+    Medicaid-underwriting caution, not a broad loss of investor
+    interest. That pullback sits beside two real consolidations in the
+    opposite direction: UHS/Talkspace (a Medicaid-exposure hedge, in
+    the acquirer's own words) and Radial/Mindful Health Solutions (a
+    27-clinic interventional-psychiatry platform bet). This is a
+    bifurcation, not a uniform slowdown — fewer deals overall,
+    concentrating harder into the clinician-augmented, procedure-based
+    lane this thesis already favors. Track whether a second
+    interventional-psychiatry roll-up follows Radial's inside the same
+    quarter (one deal is a strategy, two is a land grab), and whether
+    UnitedHealth's $200M buried-audit allegation produces any
+    regulatory follow-on. Full detail:
+    `artifacts/digests/weekly/2026-08-17-mental-health.md`.
 
 ## Q3 — Is mental-health tech getting more rigorous, or is hype winning?
 - **mode:** answer (the book's thesis) + monitor · **lens:** mental-health · **status:** open
@@ -379,6 +449,26 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     test this lens is already running on CARE-MH from two weeks ago, now
     with a second, more institutionally-credentialed candidate standard
     in the running.
+  - 2026-08-25 (/week, week_of 08-17): the quietest week for new clinical
+    evidence since `mh-evidence-watch` opened (08-07) — no major trial
+    reported results — while regulatory *infrastructure* moved on three
+    channels at once: Colorado's AG filed operationally detailed draft
+    Chatbot Safety Act rules (comment windows to 09-04/10-26); this map
+    separately discovered Colorado's HB26-1195 had been binding law
+    since 08-12, missed for a week because it arrived as a rulemaking
+    rather than a bill; and the FDA's Rick Abramson told STAT on the
+    record that formal generative-AI guidance "is coming" — a verbal
+    signal with no text, timeline, or MH-specific commitment attached.
+    Implication: a week with essentially no new trial data and three
+    separate regulatory-infrastructure moves is itself a data point for
+    the book's thesis — hype-vs-rigor tension shows up not only when a
+    splashy claim meets weak data, but when the apparatus for judging
+    claims grows while the claims themselves stop arriving. Watch
+    Colorado specifically now that it carries two AI-therapy
+    instruments from two branches of government at once, and keep the
+    FDA's "guidance is coming" quote on a dated watch rather than
+    treating it as settled. Full detail:
+    `artifacts/digests/weekly/2026-08-17-mental-health.md`.
 
 ## Q4 — How is AI showing up in mental health — and is it safe and governed?
 - **mode:** both · **lens:** mental-health (Ben's sharpest edge) · **status:** open
@@ -487,6 +577,26 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     re-derived by this run's own Kaiser/NUHW re-check without prompting
     from the note above, which strengthens rather than restates the
     standing-check case: two separate passes reached the same read.
+  - 2026-08-25 (/week, week_of 08-17): governance advanced on every
+    channel this map tracks, plus a genuinely new counter-force. OpenAI
+    shipped ChatGPT for Teens (08-18), the most complete under-18 spec
+    any lab has published on this beat, one week after Colorado's AG
+    proposed close to the same protections as draft rules. Kaiser's
+    triage-staffing collapse (nine clinicians to three) put a hard
+    number behind a labor complaint that was previously allegation
+    only. California's AB 2575 moved to the Senate floor process
+    (08-21). The new complication: the Trump DOJ filed a Statement of
+    Interest (08-20) backing xAI against Minnesota's "nudify" ban — the
+    first time the federal executive has actively intervened *against*
+    a state AI-harm law on this beat, rather than simply being absent.
+    Implication: "governance advances unevenly through litigation and
+    statute ahead of federal rulemaking" now has a counter-force — a
+    state law taking effect is no longer the last word if the DOJ is
+    working to have a federal court strike it down. Watch whether the
+    Minnesota intervention is a one-off or a standing federal posture —
+    the test case is a DOJ filing against a therapy-chatbot statute
+    specifically (Colorado's HB26-1195 or California's SB 903/AB 2575).
+    Full detail: `artifacts/digests/weekly/2026-08-17-mental-health.md`.
 
 ## Q5 — Where is frontier AI heading overall?
 - **mode:** monitor (full firehose) · **lens:** ai · **status:** open
@@ -599,6 +709,31 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     labs keep exactly this internal capacity). Worth stating explicitly
     in the throughline that a lab choosing not to watch is a different
     failure mode than a lab watching and missing something.
+  - 2026-08-25 (/week, week_of 08-17): the containment throughline got a
+    fifth beat that inverts the first four's shape — those were the map
+    discovering increasingly severe failures; this week OpenAI converted
+    its own failure into a request to be regulated (the SB 53 reversal
+    08-22, the federal pre-deployment-standards ask 08-23), one day
+    apart, in two governments. Whether any other lab follows this
+    pattern is now the thing to watch. Separately, the memory wall
+    hardened from cyclical to structural: Micron quantified it at Hot
+    Chips (compute scaling 3x/2yr vs. HBM bandwidth's 2x, 08-23) and
+    three labs answered with independent engineering workarounds the
+    same day — a harder ceiling than any single vendor's pricing
+    decision, because it sits under every lab's hardware. Export control
+    crossed from policy to prosecution: Taiwan indicted nine people
+    including Nvidia and Super Micro employees over routing AI servers
+    to China (08-23), the same week China named high-end AI chips a
+    2026-2030 priority. And the question widened toward a place the map
+    still has no thread: a sitting Texas governor telling data centers
+    they "dug their own grave" while OpenAI's CEO argued the same day
+    the industry's problem is messaging, not substance — the second
+    signal this week (after the enterprise-agent-product gap) that this
+    map tracks compute, power, financing and models exhaustively while
+    the politics around all of it has nowhere to land. (Resolved
+    2026-08-25, same day: Ben opened `datacenter-backlash-capital-risk`,
+    folding this signal in.) Full detail:
+    `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
 
 ## Q6 — What's moving in the market around my work?
 - **mode:** both · **lens:** mental-health · **status:** open
@@ -714,6 +849,22 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     grace period open through 08-18. The PE-capacity-contraction pattern
     independently re-checked at 2 (not 3) this week too — same read,
     different pass, corroborating rather than new.
+  - 2026-08-25 (/week, week_of 08-17): the market signal bifurcated
+    rather than trending one way — BHB's own data shows the sector
+    pulling back in aggregate (Medicaid-underwriting caution) while
+    Radial/Mindful Health Solutions delivered the clearest consolidation
+    move yet in the interventional-psychiatry lane this lens already
+    favors, and UHS's own executives confirmed in their own words that
+    Talkspace was bought as a Medicaid-exposure hedge via payer/
+    city-government relationships. UnitedHealth's parallel integrity
+    exposure ($200M audit-shutdown allegation, an IRS probe) adds a
+    payer-risk dimension distinct from the AI-denial story already
+    tracked. Track for a second interventional-psychiatry roll-up
+    (would confirm a category-wide wave, not one deal), and Meta's
+    response to Sen. Warner's CSAM-ads letter (due 08-26) as a
+    platform-liability story running parallel to, but distinct from,
+    Meta's Oakland child-safety trial. Full detail:
+    `artifacts/digests/weekly/2026-08-17-mental-health.md`.
 
 ## Q7 — Where is capital and economic power concentrating — in my markets and above them?
 - **mode:** both · **lens:** money · **status:** open *(scoped by Ben 2026-07-20)*
@@ -882,6 +1033,55 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     rhetoric, not counted. A standstill prices differently than a risk
     premium; both risks on this question just moved from priced-as-belief
     to priced-as-fact in the same seven days.
+  - 2026-08-25 (/week, week_of 08-17): the macro-backdrop sub-scope, on
+    file since this question's own scoping as a context-strip item,
+    produced this week's actual lead story instead — and had no thread
+    to hold it. The 30-year Treasury yield hit a 19-year high (5.31-
+    5.34%) on record global bond issuance; Bessent doubled the Treasury's
+    long-bond buyback ceiling mid-week (a genuine escalation, not routine
+    refunding), reversing the move for about a day before it fully
+    round-tripped by Friday. The same mechanism surfaced independently
+    in Tokyo (JGB yields toward a 30-year high, Nikkei/SoftBank/Kioxia/
+    Arm falling together) and closed the week with a named account of
+    *how* it transmits: Deutsche Bank's George Saravelos calling it
+    "soft-form financial repression," suppressed long-end yields forcing
+    the adjustment into the dollar instead. Gold and bitcoin traded it as
+    a debasement signal, not a rates signal. This lens's own
+    coverage-critic pass confirmed FT Unhedged led with this exact story
+    three consecutive editions while it sat as unaccumulated digest
+    prose — `fed-independence-fight` covers the Fed's composition, a
+    genuinely different lever from Treasury's own balance-sheet
+    mechanics. **Resolved 2026-08-25** (after this week closed): Ben
+    opened `treasury-long-end-intervention` on the fifth offer. Three
+    dated tests land immediately after this week's close — Cook's
+    removal deadline (08-26), Jackson Hole (08-27-29), Warsh's first
+    keynote as chair (08-28) — which is what the new thread exists to
+    hold. Separately: Nvidia's Ohio guarantee to OpenAI got its first
+    company-stated number ($105bn) the same week Broadcom began
+    assembling $70-80bn of SPV debt to build the chips behind Anthropic's
+    own revenue-dependent $2T IPO target — valued and financed on the
+    same future revenue, same day. SoftBank's 13F independently
+    replicated the mark-only-growth pattern this map found in Nvidia's
+    own Intel stake the week before. Track: whether Warsh's keynote
+    addresses the TGA mechanism directly; whether Samsung/SK Hynix/
+    Micron get entity slugs now that they're a story's subject, not its
+    background. Full detail:
+    `artifacts/digests/weekly/2026-08-17-global-capital.md`.
+  - 2026-08-25 (/week, week_of 08-17, Q2-extending): two data points
+    sharpened the "destination" question rather than restating Q7's
+    credit-risk framing of the same mechanism. Broadcom's $70-80bn SPV
+    for Anthropic's chip capacity is a new instrument shape at the
+    compute-financing-platform layer — larger and more tranched (a
+    senior/junior split, Apollo and Blackstone as junior capital) than
+    anything logged there before. Alibaba's $10.2bn Hong Kong placement
+    (100% to AI, alongside a 75% profit decline and $6.6bn cash outflow)
+    is the cleanest public-market illustration yet of the burn-then-
+    dilute-to-fund-more-AI loop this map has mostly tracked as a US
+    phenomenon — dilution taken openly instead of engineered away. Track
+    whether the Broadcom SPV's tranche split becomes a template other
+    financings copy, and whether a second non-US company follows
+    Alibaba's open-dilution shape. Full detail:
+    `artifacts/digests/weekly/2026-08-17-global-capital.md`.
 
 ---
 
