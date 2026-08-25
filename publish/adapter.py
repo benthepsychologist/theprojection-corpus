@@ -57,7 +57,7 @@ ROOT = os.environ["KESTREL_INSTANCE"]
 # exists to prevent.
 from theprojection_pipeline.render_read import (  # noqa: E402
     digest_day, load_entities as _load_watchlist_entities,
-    parse_digest, parse_front, load_flash, load_world_news)
+    parse_digest, parse_front, load_flash, load_world_news, md_html)
 from theprojection_pipeline.thumbnails import get_thumbnails  # noqa: E402
 
 PLACEHOLDER_SLUG = "sample-placeholder"
@@ -144,20 +144,21 @@ _PROVENANCE_MARKER = re.compile(
 )
 _CODE_SPAN = re.compile(r"`([^`]+)`")
 _HTML_CODE_SPAN = re.compile(r"<code>([^<]+)</code>")
-# `.+?` (not `[^*]+`) on the bold pass — see _md_html()'s docstring below
-# for the exact failure this avoids (a nested single-asterisk italic
-# silently breaks a `[^*]+`-based bold match). re.DOTALL so `.` also
-# matches the literal newline a bold span can straddle when its source
-# .md file word-wraps mid-phrase — found 2026-08-18 on
-# artifacts/threads/tsmc-capacity-race.md's un-bulleted 08-04 entry:
-# "**The actual fix, and the real\ngap:**" (the wrap point is the source
-# file's own line break, not a paragraph break) silently failed to
-# convert without it, while an earlier bold span in the SAME block that
-# happened not to straddle a wrap converted fine — which is what made
-# this one easy to miss on a first pass. ITALIC keeps its `[^*\n]+`
-# newline exclusion deliberately: unlike bold, a single `*` is common
-# enough elsewhere (and easy enough to leave truly unpaired across a
-# paragraph break) that letting it cross lines risks pairing two
+# `.+?` (not `[^*]+`) on the bold pass, mirroring render_read.md_html()'s
+# own bold regex (fixed the same way, same day, INBOX 2026-08-21 —
+# md-html-bold-regex-nested-italic): a character class that excludes
+# asterisks entirely cannot match a bold span containing a nested
+# `*italic*` aside, so the whole span (literal `**` included) fell through
+# as plain text. re.DOTALL so `.` also matches the literal newline a bold
+# span can straddle when its source .md file word-wraps mid-phrase — found
+# 2026-08-18 on artifacts/threads/tsmc-capacity-race.md's un-bulleted 08-04
+# entry: "**The actual fix, and the real\ngap:**". Used here only by
+# _strip_md_emphasis() below, which strips markdown emphasis rather than
+# converting it to HTML — the conversion path now imports the shared
+# md_html() directly instead of keeping its own local copy. ITALIC keeps
+# its `[^*\n]+` newline exclusion deliberately: unlike bold, a single `*`
+# is common enough elsewhere (and easy enough to leave truly unpaired
+# across a paragraph break) that letting it cross lines risks pairing two
 # unrelated markers instead of catching a real wrapped span.
 _MD_BOLD = re.compile(r"\*\*(.+?)\*\*", re.DOTALL)
 _MD_ITALIC = re.compile(r"(?<!\*)\*([^*\n]+)\*(?!\*)")
@@ -352,37 +353,6 @@ def _source_domain(url):
     return host[4:] if host.startswith("www.") else host
 
 
-def _md_html(text):
-    """Local copy of kestrel's render_read.md_html(), with one regex fixed.
-
-    kestrel's own bold pattern is `\\*\\*([^*]+)\\*\\*` — a character class
-    that EXCLUDES asterisks entirely, so it cannot match across a nested
-    single-asterisk italic span. `**A ... *knaithe* ... names**` (a real
-    entry, artifacts/threads/china-stack-independence.md) silently fails
-    to convert at all: the whole bold span falls through as literal text
-    with its asterisks intact. `.+?` (non-greedy, any char up to the
-    nearest `**`) fixes it — confirmed 2026-08-18 by reproducing both
-    against the actual failing string.
-
-    This is a real bug in the shared function, not something introduced
-    here, and it predates this session — but kestrel is this repo's engine
-    and out of its write zone (project memory: kestrel read-only). Filed
-    upstream as a dev brief; duplicated locally, with this docstring
-    pointing at why, so build_stories() doesn't ship a known-wrong
-    regex while waiting on it. Swept the rest of the live site for the
-    same failure signature (entities/claims/news pages, which already
-    used the real md_html()) and found none — narrow blast radius, but
-    real wherever a bullet nests bold around italic.
-    """
-    from theprojection_pipeline.render_read import esc  # noqa: E402 — only needed here, not at module scope
-    t = esc(text)
-    t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
-    t = _MD_BOLD.sub(r"<strong>\1</strong>", t)
-    t = _MD_ITALIC.sub(r"<em>\1</em>", t)
-    t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
-    return t
-
-
 def _strip_md_emphasis(text):
     """Drop **bold**/*italic* markers, keep the text underneath — for the
     ONE place in the public JSON payload where they leak in from curated
@@ -399,22 +369,24 @@ def _strip_md_emphasis(text):
     briefing-gist, and on an interpretation page (interpretations are
     built from this same payload's items) — chasing the story-body leak
     into a second, unrelated field that goes through neither
-    clean_reader_facing_body nor _md_html.
+    clean_reader_facing_body nor the HTML rendering path.
 
-    A THIRD instance, same day: `.items[].title`. kestrel's parse_digest()
-    extracts a bullet's bold lead phrase with `re.match(r"\*\*([^*]+)\*\*",
-    text)` — `re.match` anchors at position 0, so a bullet starting with an
-    emoji flag before its bold phrase ("🕰 **CAUGHT LATE — ...**",
-    "⚠️ **STILL UNVERIFIED — ...**") never matches at all, and the code
-    falls back to `text[:80]` — the raw, MARKDOWN-INTACT, mid-sentence-
-    truncated text. Truncation means the closing `**` is often past
-    character 80, so the leading `**` this fallback leaves behind has no
-    partner anywhere in the string — the paired regexes above are no-ops
-    on it. The line below is the backstop: no legitimate string in this
-    corpus carries a literal `**` (verified by grep across every daily
-    digest, not assumed — this repo's own established bar for this class
-    of fix), so an unpaired one left over is unambiguously this bug, not
-    content, and dropping it outright is safe."""
+    A THIRD instance, same day, now FIXED upstream: `.items[].title`.
+    kestrel's parse_digest() used to extract a bullet's bold lead phrase
+    with `re.match(r"\*\*([^*]+)\*\*", text)` — `re.match` anchors at
+    position 0, so a bullet starting with an emoji flag before its bold
+    phrase ("🕰 **CAUGHT LATE — ...**") never matched, and the fallback was
+    a raw `text[:80]` slice with the leading `**` left dangling (its
+    partner past character 80) — the paired regexes above are no-ops on
+    that. Fixed 2026-08-21 (INBOX bullet-extractor-truncates-silently):
+    parse_digest() now tolerates the emoji prefix and warns instead of
+    silently truncating, so a live `title` should no longer carry an
+    unpaired `**`. The line below is kept as a backstop regardless — no
+    legitimate string in this corpus carries a literal `**` (verified by
+    grep across every daily digest, not assumed — this repo's own
+    established bar for this class of fix), so an unpaired one left over
+    is unambiguously a bug, not content, and dropping it outright is
+    safe."""
     text = _MD_BOLD.sub(r"\1", text)
     text = _MD_ITALIC.sub(r"\1", text)
     text = text.replace("**", "")
@@ -434,17 +406,23 @@ def _timeline_block_html(rest):
     is that exact treatment, so a story gets identical rendering to a
     thread. Provenance markers are left for clean_reader_facing_body to
     strip afterward (its one job, not duplicated here); markdown-to-HTML
-    conversion runs FIRST (via _md_html() above, not the imported md_html —
-    see its docstring) so its backtick-span -> <code> conversion happens
-    before clean_reader_facing_body's own <code> -> <a> upgrade sees the
-    string — the same order the html_safe docstring above already
-    documents.
+    conversion runs FIRST (via the imported md_html()) so its backtick-span
+    -> <code> conversion happens before clean_reader_facing_body's own
+    <code> -> <a> upgrade sees the string — the same order the html_safe
+    docstring above already documents.
+
+    Used to call a local `_md_html()` fork here instead of the imported
+    md_html() — kestrel's own bold regex couldn't match a bold span nesting
+    a single-asterisk italic, so this file carried a corrected copy as
+    cover while the fix landed upstream (INBOX 2026-08-21,
+    md-html-bold-regex-nested-italic). md_html() now has the same fix, so
+    the fork is retired.
     """
     bullets = []
     for b in re.finditer(r"^- (.+?)(?=^- |\Z)", rest, re.S | re.M):
         txt = " ".join(l.strip() for l in b.group(1).strip().split("\n"))
-        bullets.append(f"<li>{_md_html(txt)}</li>")
-    return f"<ul>{''.join(bullets)}</ul>" if bullets else _md_html(rest.strip())
+        bullets.append(f"<li>{md_html(txt)}</li>")
+    return f"<ul>{''.join(bullets)}</ul>" if bullets else md_html(rest.strip())
 
 
 def build_stories(pub_slugs, threads_by_slug):

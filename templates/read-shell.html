@@ -7,17 +7,22 @@
   artifacts/read/index.html to the stable artifact URL (ROADMAP §Delivery).
 
   PAYLOAD CONTRACT (schema_version 1) — assembled by tools/render_read.py:
-    generated, schema_version, week_start (Monday), today, days[],
+    generated, schema_version, week_start (Monday, calendar framing only),
+    today, days[] (ITEM_WINDOW_DAYS back from today, 14 by default as of
+      2026-08-21 (INBOX widen-payload-item-window) — NOT just the current
+      calendar week, so `days.length` is no longer "out of 7"; use
+      `days.filter(d => d>=week_start)` for a this-week-only count),
     entities[{slug,name,kind,lenses[]}],
     threads[{slug,title,lens,status,kind,parent?,genre?,entities[],watch,
              opened,last_seen,crawled?,timeline[{date,html,tag}],
              timeline_truncated}],
-    items[{id,day,lens,title,html,url,source,threads[],entities[],axis,sev?}],
+    items[{id,day,lens,title,html,url,source,urls[{label,url}],threads[],
+           entities[],axis,sev?}],
     throughlines{date:{lens:text}}  -- the "front" key is the cross-lens
       executive summary (artifacts/digests/daily/<date>-front.md),
     upcoming[], map_changes[{date,text}],
     flash[{id,date,severity,headline,body,sources[],lenses[]}],
-    world_news[{id,headline,distinct_outlets,status,thread}],
+    world_news[{id,headline,distinct_outlets,status,thread,urls_sample[]}],
     asks[], weekly, weekly_prior
   threads[] additionally carry parent (meta nesting) and genre.
   All html fields are pre-rendered/sanitized by the generator from
@@ -282,8 +287,13 @@ function renderHome(){
     app.appendChild(wn);
   }
 
+  // days[] now carries a 14-day lookback, not just the calendar week
+  // (2026-08-21, INBOX widen-payload-item-window) — filter back down to
+  // "this week" here so the "X/7 days in" stat keeps its original meaning
+  // regardless of how wide the payload's own window is.
+  var daysThisWeek=(P.days||[]).filter(function(d){return d>=P.week_start;}).length;
   app.appendChild(masthead("centered on "+P.today+" · generated "+P.generated+
-    " · "+P.days.length+"/7 days in"));
+    " · "+daysThisWeek+"/7 days in"));
   chipRow(app);
   viewRow(app);
 

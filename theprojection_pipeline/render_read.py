@@ -33,6 +33,14 @@ LENS_OF_FILE = {"frontier-ai": "ai", "mental-health": "mental-health",
 # convention changed.
 TIMELINE_CAP = 20
 PAYLOAD_SOFT_CAP = 600 * 1024
+# Backward item-history window (INBOX 2026-08-21, widen-payload-item-window):
+# a calendar-week walk (Monday..today) means the payload can hold as little
+# as ONE day's items on a Monday, right after a weekend catch-up run is most
+# likely to have just closed a multi-day backlog. Ship a superset; the
+# client decides what window to show. `week_start`/`today` stay in the
+# payload unchanged so calendar-week framing is still available to a view
+# that wants it.
+ITEM_WINDOW_DAYS = 14
 
 
 def digest_day(now=None):
@@ -53,10 +61,21 @@ def esc(t):
 
 
 def md_html(text):
-    """Tiny renderer for kestrel's strict bullet markdown."""
+    """Tiny renderer for kestrel's strict bullet markdown.
+
+    Bold uses `.+?` (not `[^*]+`) with DOTALL, not `[^*]+` -- INBOX
+    2026-08-21 (md-html-bold-regex-nested-italic): a character class that
+    excludes asterisks entirely cannot match a bold span containing a
+    nested `*italic*` aside, so the whole span (literal `**` included)
+    fell through as plain text. DOTALL also covers a bold span that
+    straddles a source-file line wrap. The italic pass keeps its
+    `[^*\n]+` newline exclusion deliberately -- unlike bold, a lone `*`
+    is common enough elsewhere that letting it span lines risks pairing
+    two unrelated markers across a paragraph break.
+    """
     t = esc(text)
     t = re.sub(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", r'<a href="\2">\1</a>', t)
-    t = re.sub(r"\*\*([^*]+)\*\*", r"<strong>\1</strong>", t)
+    t = re.sub(r"\*\*(.+?)\*\*", r"<strong>\1</strong>", t, flags=re.S)
     t = re.sub(r"(?<!\*)\*([^*\n]+)\*(?!\*)", r"<em>\1</em>", t)
     t = re.sub(r"`([^`]+)`", r"<code>\1</code>", t)
     return t
@@ -230,6 +249,13 @@ def load_world_news(today, cap=5):
             "id": it.get("id"), "headline": it.get("headline", ""),
             "distinct_outlets": it.get("distinct_outlets", 0),
             "status": it.get("status"), "thread": it.get("thread"),
+            # clickable sample -- INBOX 2026-08-21 (source-multiplicity fix
+            # 2): an item could say "63 distinct outlets" with zero links
+            # anywhere in the file. build_world_news.py now carries this
+            # through from world_news.rank()'s own urls_sample (rss side)
+            # or gdelt_dedup.rank()'s samples (gdelt side); absent on older
+            # world-news.yaml entries written before this fix.
+            "urls_sample": it.get("urls_sample") or [],
         })
     out.sort(key=lambda x: -x["distinct_outlets"])
     return out[:cap]
@@ -299,9 +325,34 @@ def parse_digest(path, day, lens):
         text = " ".join(l.strip() for l in b.group(1).strip().split("\n"))
         ann = b.group(2).strip()
         tags = dict(kv.split("=", 1) for kv in ann.split() if "=" in kv)
+        # findall, not search -- INBOX 2026-08-21 (source-multiplicity):
+        # curators deliberately cite 2-3 links on a big bullet; `search`
+        # kept only the first and silently dropped the rest before they
+        # ever reached the payload. `url`/`source` below stay the FIRST
+        # link (existing consumers keep working); `urls` carries all of
+        # them as {label, url} for a consumer that wants the full set.
+        links = re.findall(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", text)
         lm = re.search(r"\[([^\]]+)\]\((https?://[^)\s]+)\)", text)
-        tm = re.match(r"\*\*([^*]+)\*\*", text)
-        title = tm.group(1).strip() if tm else text[:80]
+        # A leading emoji/label (0-6 non-`*` chars) before the bold lead is
+        # tolerated -- INBOX 2026-08-21 (bullet-extractor-truncates-
+        # silently): `re.match` anchored at position 0 meant a bullet like
+        # "⚠️ **Critic-caught:** ..." never matched at all. `.+?` + DOTALL
+        # (not `[^*]+`) also lets the bold span itself nest a single-
+        # asterisk italic without breaking the match, same fix as md_html().
+        tm = re.search(r"^[^*\n]{0,6}\*\*(.+?)\*\*", text, re.S)
+        if tm:
+            title = tm.group(1).strip()
+        else:
+            # Fail loudly instead of a silent mid-word 80-char slice: the
+            # old fallback shipped a fragment to readouts.py indistinguishable
+            # from a genuinely short bullet (INBOX 2026-08-21). Break on the
+            # nearest word boundary at least, and say so on stderr so a
+            # digest that deviates from the bold-lead convention is visible
+            # the first time it happens, not just the day someone notices.
+            title = text[:80].rsplit(" ", 1)[0] or text[:80]
+            print(f"⚠ {path} ({day}): bullet has no `**bold lead**` — "
+                  f"title fell back to a truncated slice: {title!r}",
+                  file=sys.stderr)
         interp = None
         if tags.get("interp") == "yes" and tm:
             interp = interps.get(slugify(tm.group(1).strip()[:50]))
@@ -313,6 +364,7 @@ def parse_digest(path, day, lens):
             "html": md_html(text),
             "url": lm.group(2) if lm else None,
             "source": lm.group(1) if lm else None,
+            "urls": [{"label": lb, "url": u} for lb, u in links],
             "threads": [s for s in tags.get("t", "").split(",") if s],
             "entities": [s for s in tags.get("e", "").split(",") if s],
             "axis": tags.get("axis"),
@@ -344,13 +396,14 @@ def main():
     args = ap.parse_args()
     today = (datetime.strptime(args.today, "%Y-%m-%d").date() if args.today
              else digest_day())
-    week_start = today - timedelta(days=today.weekday())  # Monday
+    week_start = today - timedelta(days=today.weekday())  # Monday — calendar framing only
 
     inputs = [os.path.join(ROOT, "attention", f) for f in
               ("watchlist.yaml", "threads.yaml", "upcoming.yaml")]
+    window_start = today - timedelta(days=ITEM_WINDOW_DAYS - 1)
     days, throughlines, items, map_changes = [], {}, [], []
-    for i in range(7):
-        d = week_start + timedelta(days=i)
+    for i in range(ITEM_WINDOW_DAYS):
+        d = window_start + timedelta(days=i)
         if d > today:
             break
         ds, found = d.isoformat(), False

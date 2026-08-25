@@ -432,6 +432,12 @@ def build(day, gdelt_start, gdelt_end, project, min_outlets, min_domains,
             "headline": r["headline"],
             "distinct_outlets": r["distinct_outlets"],
             "outlets_sample": r["outlets_sample"][:5],
+            # world_news.rank() already computes this (up to 3 urls); it
+            # was just never copied into the written item -- INBOX
+            # 2026-08-21 (source-multiplicity fix 2): an item could say "63
+            # distinct outlets" with zero clickable links anywhere in the
+            # file.
+            "urls_sample": r["urls_sample"],
             "source": "google_news_rss",
             "status": "candidate",  # thread-match pass runs below, uniformly
         }
@@ -466,6 +472,12 @@ def build(day, gdelt_start, gdelt_end, project, min_outlets, min_domains,
             "severity": g["severity"],
             "goldstein_avg": round(g["goldstein_avg"], 2),
             "status": "candidate",
+            # gdelt_dedup.rank() already samples up to 4 distinct-domain
+            # SOURCEURLs per bucket (g["samples"]) -- carried through here
+            # for the same reason as the rss side above (INBOX 2026-08-21,
+            # source-multiplicity fix 2). These are direct publisher URLs,
+            # not Google redirect links.
+            "urls_sample": [s["url"] for s in g["samples"]],
         })
 
     # Uniform thread-match pass. Two TWO INDEPENDENT tiers -- no fallback

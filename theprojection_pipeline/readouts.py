@@ -79,9 +79,25 @@ SCHEMA_VERSION = 3        # v3 = adds the morning BRIEFING on front + lens
 # bump would mark every scope stale for a change that only touched one
 # shape: adding the briefing would have forced all 153 compact summaries to
 # regenerate for nothing. Bump the one you actually changed.
-SUMMARY_SHAPE_VERSION = 2
-BRIEFING_SHAPE_VERSION = 1
+SUMMARY_SHAPE_VERSION = 3
+BRIEFING_SHAPE_VERSION = 2
 INTERPRETATION_SHAPE_VERSION = 1
+
+# INBOX 2026-08-21 (summary-shape-forbid-process-narration): nothing in
+# shape["rules"] told the model the pipeline is invisible to the reader, so
+# real published summaries narrated the apparatus instead of the news
+# ("A July 24 crawl surveyed Big Tech's health pushes together..."). This
+# blocklist is deliberately NARROW -- the original report's own suggested
+# list (crawl/sweep/pass/batch/agent/buffer/digest) includes several words
+# with ordinary, frequent, non-apparatus meanings in this corpus's actual
+# domains (a tariff "batch", a spy "agent", a "buffer zone", markets that
+# "digest" news, an election "sweep", a bill that "pass"es) -- flagging
+# those would be false-positive-prone by the brief's own admission. Kept to
+# terms with no legitimate reader-facing use in this corpus at all; the
+# shape rule text below covers the wider vocabulary, this check is the
+# narrower mechanically-enforceable subset of it.
+APPARATUS_PHRASES = ("crawl", "digest-day", "backfill", "re-index",
+                     "reindex", "this run", "our record", "our lookup")
 
 # The morning briefing (Ben, 2026-07-29): "Morning briefing on the front
 # page and on each beat page... it can be a little more chunky than the
@@ -507,6 +523,18 @@ def _check_url_provenance(p, where, items, known_urls):
                       "its threads) -- looks fabricated")
 
 
+def _check_no_apparatus(p, where, text):
+    """The pipeline is invisible to the reader (INBOX 2026-08-21,
+    summary-shape-forbid-process-narration) -- reject a fact stated as an
+    observation about our own lookup rather than about the world."""
+    low = (text or "").lower()
+    for tok in APPARATUS_PHRASES:
+        if tok in low:
+            p.append(f"{where}: reads as apparatus narration, not news "
+                      f"(contains {tok!r}) -- state it as a fact about the "
+                      "world, not about how/when we looked")
+
+
 def _check_bullets(p, where, items, lo, hi):
     if not (lo <= len(items) <= hi):
         p.append(f"{where}: need {lo}-{hi} bullets (got {len(items)})")
@@ -533,9 +561,12 @@ def validate_briefing(scope, rec, w, available=0):
         p.append(f"gist must be {GIST_MIN}-{GIST_MAX} chars (got {len(b['gist'])})")
     elif not _sentence(b["gist"]):
         p.append("gist must be a sentence")
+    _check_no_apparatus(p, "gist", b["gist"])
 
     _check_bullets(p, "lead", b["lead"], BULLETS_MIN, BULLETS_MAX)
     _check_url_provenance(p, "lead", b["lead"], known_urls)
+    for i, x in enumerate(b["lead"], 1):
+        _check_no_apparatus(p, f"lead {i}", x.get("text"))
 
     n = len(b["sections"])
     if not (SECTIONS_MIN <= n <= SECTIONS_MAX):
@@ -549,6 +580,8 @@ def validate_briefing(scope, rec, w, available=0):
         _check_bullets(p, f"section {h[:20]!r}", s["bullets"],
                        SEC_BULLETS_MIN, SEC_BULLETS_MAX)
         _check_url_provenance(p, f"section {h[:20]!r}", s["bullets"], known_urls)
+        for i, x in enumerate(s["bullets"], 1):
+            _check_no_apparatus(p, f"section {h[:20]!r} bullet {i}", x.get("text"))
 
     # The front's sections ARE the lenses — that is what guarantees no lens
     # goes dark while `lead` stays ranked purely on salience (Ben's split,
@@ -573,6 +606,7 @@ def validate_briefing(scope, rec, w, available=0):
             p.append(f"watch {i}: {WATCH_MIN}-{WATCH_MAX} chars (got {len(x)})")
         elif not _sentence(x):
             p.append(f"watch {i}: must be a sentence")
+        _check_no_apparatus(p, f"watch {i}", x)
     return b, p
 
 
@@ -592,6 +626,7 @@ def validate_summary(scope, rec, w, available=0):
         p.append(f"gist must be {GIST_MIN}-{GIST_MAX} chars (got {len(s['gist'])})")
     elif not _sentence(s["gist"]):
         p.append("gist must end in terminal punctuation — write a sentence")
+    _check_no_apparatus(p, "gist", s["gist"])
 
     n = len(s["bullets"])
     if not (BULLETS_MIN <= n <= BULLETS_MAX):
@@ -605,6 +640,7 @@ def validate_summary(scope, rec, w, available=0):
             p.append(f"bullet {i}: {BULLET_MIN}-{BULLET_MAX} chars (got {len(t)})")
         elif not _sentence(t):
             p.append(f"bullet {i}: must be a full sentence, not a fragment")
+        _check_no_apparatus(p, f"bullet {i}", t)
 
     _check_link_floor(p, s["bullets"], available)
     _check_url_provenance(p, "bullet", s["bullets"], known_urls)
@@ -613,6 +649,7 @@ def validate_summary(scope, rec, w, available=0):
         p.append(f"watch must be {WATCH_MIN}-{WATCH_MAX} chars (got {len(s['watch'])})")
     elif not _sentence(s["watch"]):
         p.append("watch must end in terminal punctuation — write a sentence")
+    _check_no_apparatus(p, "watch", s["watch"])
 
     # The front carries the cross-lens balance floor; a lens with genuinely
     # nothing may be omitted, but a present beat must still be a sentence.
@@ -628,6 +665,7 @@ def validate_summary(scope, rec, w, available=0):
             elif b.count(",") > 3:
                 p.append(f"beat {lens}: {b.count(',')} commas — that is a "
                          "compressed paragraph, not a sentence")
+            _check_no_apparatus(p, f"beat {lens}", b)
     else:
         s["beats"] = {}
     return s, p
@@ -846,6 +884,14 @@ def build_pack(w, scope):
             "Never carry a figure forward from an older item as if current.",
             "`watch` (thread field) is a STANDING question, not today's news.",
             "No emoji outside the typed set; never let an emoji carry a fact.",
+            "The pipeline is invisible to the reader. Never mention how a "
+            "fact was obtained: no crawl, sweep, pass, batch, agent, "
+            "buffer, digest, digest-day, backfill, re-index, \"our "
+            "record\", \"this run\". A correction to the record stays in "
+            "as a fact about the world (\"Reports of X in late July were "
+            "incorrect\"), never about our lookup (\"a crawl traced X to "
+            "a stale re-index\"). Dates are when events happened, never "
+            "when we looked.",
         ],
     }
 
@@ -901,6 +947,12 @@ def build_pack(w, scope):
                 "Never carry a figure forward from an older item as current.",
                 "`watch` (thread field) is a STANDING question, not news.",
                 "No emoji outside the typed set.",
+                "The pipeline is invisible to the reader. Never mention how "
+                "a fact was obtained: no crawl, sweep, pass, batch, agent, "
+                "buffer, digest, digest-day, backfill, re-index, \"our "
+                "record\", \"this run\". A correction to the record stays "
+                "in as a fact about the world, never about our lookup. "
+                "Dates are when events happened, never when we looked.",
             ],
         }
         pack["curated_front"] = front_throughline(w)
