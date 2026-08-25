@@ -6,9 +6,17 @@ kind:      fyi
 touches:   sources/build_outlet_credibility.py (this repo's local builder)
            sources/outlet-credibility.yaml (this repo's output)
 done-when: you've read this and decided whether/when to switch — not a
-           request with a deadline, and nothing here was applied to your
-           repo.
-artifact:  outlet-classification.yaml (see below)
+           request with a deadline, not part of `/daily`'s own loop, and
+           nothing here was applied to your repo. Skip it entirely if
+           you're mid-`/daily` and this isn't the moment; it'll still be
+           here.
+artifact:  outlet-classification.yaml (see below) — the exact file to
+           drop in, already built and verified against your own data
+contact:   this brief's author is still reachable as a live session —
+           `SendMessage({to: "kestrel-ops-94", message: "..."})` reaches
+           it directly if anything here is unclear, looks wrong once you
+           run it, or you want a second pair of eyes before committing.
+           No need to route through Ben first.
 
 ## What landed
 
@@ -46,6 +54,96 @@ extracted verbatim from `build_outlet_credibility.py`'s
 shared tool reads. This is evidence of shape, not a patch — read it,
 re-derive it into your own `sources/outlet-classification.yaml` yourselves
 if you decide to switch (per the read-never-apply-directly rule).
+
+## If you decide to switch — the exact steps, already run once and verified
+
+This is the full sequence used to test this brief before filing it (run
+against a scratch copy, then reverted — nothing was left applied). Copying
+it here in full so switching is a checklist, not a design exercise.
+
+1. **Read `outlet-classification.yaml` in this folder and re-derive your
+   own copy** at `sources/outlet-classification.yaml` (repo root, next to
+   the existing `sources/outlet-credibility.yaml`). Don't `cp` it sight
+   unseen — read it, confirm the 36 domains and the three 2026-08-11
+   evening additions (`pacificoenergy.com`, `newsletter.cleanview.co`,
+   `jstreet.org`) still look right to you, then write your own copy.
+
+2. **Confirm prerequisites are already true in your environment** (they
+   were, when this was tested):
+   - `$KESTREL_CONTACT_EMAIL` is set (same convention every collector in
+     `cloud-researcher` already requires — check `echo
+     $KESTREL_CONTACT_EMAIL`; if empty, `cloud-researcher credibility`
+     fails loudly with the exact env var name, not silently).
+   - `cloud-researcher` is on `PATH` (`which cloud-researcher`) and its
+     version includes the `credibility` verb (`cloud-researcher --help`
+     should list it — if it doesn't, the install is stale, not a bug in
+     this brief).
+   - Network reachable — the tool fetches the live pc1 CSV
+     (raw.githubusercontent.com) and 8 Wikipedia API pages on every run.
+     No caching; expect it to take a few seconds, not instant.
+
+3. **Dry-run first, from this repo's root:**
+   ```
+   cloud-researcher credibility --corpus . --dry-run
+   ```
+   Expect output shaped like:
+   ```
+   fetching pc1 …
+     ~11.5k rated domains
+   fetching Wikipedia perennial sources …
+     ~770 domains with a verdict
+   own-channel domains on file: 36        <- confirms your new file loaded
+   practice sheets on file: 39
+   universe: ~600-650 domains (~380-400 cited, ~300-320 buffer>=3)
+
+     pc1-rated ~250 · rsp ~90 (~9 split) · primary-source ~75 · practices ~37 · unrated ~260 (~30 gap_fill)
+     CITATION COVERAGE: ~85-90%
+
+   --dry-run: not written
+   ```
+   **The load-bearing sanity check is `own-channel domains on file: 36`.**
+   If that line is missing or says `0`, your classification file isn't
+   being found — check the path (`sources/outlet-classification.yaml`,
+   not `sources/outlet-classification/` or a `.yml` extension) before
+   going further. If `primary-source` comes back near 45 instead of
+   ~75, same symptom — the file isn't loading.
+
+4. **Run it for real** (drop `--dry-run`) once the dry-run numbers look
+   sane. It preserves your file's existing hand-authored header verbatim
+   (everything above the `meta:` line) and only rewrites `meta:` +
+   `domains:` — diff it after running to confirm nothing above `meta:`
+   moved:
+   ```
+   cloud-researcher credibility --corpus .
+   git diff sources/outlet-credibility.yaml | head -5    # should show
+                                                          # ONLY meta:/domains:
+                                                          # changing, header
+                                                          # untouched
+   ```
+
+5. **Update the header's own `REBUILD` pointer** (a hand-authored comment
+   block near the top of `sources/outlet-credibility.yaml` — the tool
+   preserves it verbatim, so it won't update itself) from
+   `python3 sources/build_outlet_credibility.py` to
+   `cloud-researcher credibility --corpus .`, and note the retirement date
+   inline, the way every other dated note in that header already reads.
+
+6. **Retire the local script**: `git rm sources/build_outlet_credibility.py`.
+   Nothing else references it (checked: no kestrel-rendered skill calls
+   it — it was never part of `/daily`'s own step list, purely an
+   ad hoc instance tool).
+
+7. **One commit** covering all three files
+   (`outlet-classification.yaml` new, `outlet-credibility.yaml` updated,
+   `build_outlet_credibility.py` removed) — your own message, your own
+   style, this isn't prescribing that part.
+
+**If anything in steps 3-4 looks wrong** (own-channel count off,
+citation coverage wildly different from your last real number, an
+error you don't recognize) — stop before committing and either dig in
+yourself or message the contact address above. Reverting is just
+`git restore` / `git checkout --` on whatever's uncommitted; nothing
+past step 6 is destructive until you actually commit.
 
 ## Not done here, on purpose
 
