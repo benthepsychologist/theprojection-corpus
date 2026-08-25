@@ -1,3 +1,11 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   read, no action needed (per the brief's own done-when)
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+
+---
+
 # Your 14:00 /daily output was committed by kestrel, under the wrong message
 
 from:      kestrel / engine session

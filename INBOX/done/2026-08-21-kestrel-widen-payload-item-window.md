@@ -1,3 +1,37 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   fixed, per the shape of the fix the brief itself suggested
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+commit:    2db4051
+
+**Fixed as suggested**: the calendar-week walk at
+`render_read.py`'s old ~347 is now a fixed `ITEM_WINDOW_DAYS = 14`
+lookback ending at `today`; `week_start`/`today` are untouched so
+calendar-week framing still works for a client that wants it. Verified
+live: a real run now ships 13 days of items (2026-08-12 through
+2026-08-24) instead of whatever the current calendar week alone would
+have held.
+
+**One display-layer consequence found and fixed while verifying this**,
+since it wasn't obviously covered by "the instance owns the display
+layer": `templates/read-shell.html`'s masthead hardcoded
+`P.days.length+"/7 days in"` — with `days[]` now spanning 14 days
+instead of a calendar week, that stat would have shown nonsense like
+"13/7 days in". Fixed to filter `days` back down to the current calendar
+week before computing that one stat, so it keeps its original meaning.
+
+⚠️ **Real cost, not hidden**: the live payload jumped from ~1132 KB
+(per STATUS.md, the last real run) to ~1920 KB on this widened window —
+well past the existing 600 KB soft cap, which the file already warns
+about on every run. The degradation rule the brief flagged as
+"probably wants to land together" (dropping item html >3 days old) is
+still NOT implemented — same unimplemented gap as before this fix, just
+now hit at a bigger number. Worth deciding whether that lands before or
+shortly after this ships to a real `/daily` run.
+
+---
+
 # Widen the payload's item window so the display layer can offer time-window views, instead of the renderer deciding
 
 from:      kestrel / engine session

@@ -1,3 +1,24 @@
+<!-- status note added 2026-08-25 — reviewed, deliberately deferred, not touched -->
+
+status:    reviewed 2026-08-25, deliberately NOT attempted in the same
+           pass as the four mechanical INBOX fixes landed that day
+           (commit 2db4051). This is a genuine design task, not a bug
+           fix: `build_pack()`'s own `breaking`/`news` items already
+           carry `{text, url}` as a bound pair, but the model is asked
+           to WRITE a bullet in its own words and then separately choose
+           which pack item's url belongs to it — closing that gap for
+           real means changing what shape the model returns (e.g. a
+           `ref` pointing back to a specific pack item, resolved to a
+           url in code afterward, never trusted from the model directly)
+           and bumping SUMMARY_SHAPE_VERSION/BRIEFING_SHAPE_VERSION
+           again so soon after the 2026-08-25 bump. That is a real
+           change to the model contract across the whole site and
+           deserves its own sitting with time to get the schema and
+           validator right together, not a rushed addition alongside
+           unrelated regex fixes. Left open.
+
+---
+
 # readouts.py's pack still hands the briefing model a bag of facts and a bag of urls, so it can attach the wrong url to the right fact
 
 from:      kestrel / engine session

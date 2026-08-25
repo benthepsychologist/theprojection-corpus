@@ -1,3 +1,23 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   fixed
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+commit:    2db4051
+
+**Fixed exactly as prescribed.** `render_read.md_html()`'s bold pass is
+now `re.sub(r"\*\*(.+?)\*\*", ..., flags=re.S)` instead of the
+asterisk-excluding `[^*]+` — verified against both real failing strings
+from the brief (the `china-stack-independence` nested-italic case and the
+`tsmc-capacity-race` line-wrap case), both now convert correctly.
+**`publish/adapter.py`'s local `_md_html()` fork retired** — it now
+imports and calls the shared `md_html()` directly (two call sites in
+`_timeline_block_html()`); the module-level `_MD_BOLD`/`_MD_ITALIC`
+regexes stay, since `_strip_md_emphasis()` (a different function, for a
+different leak) still uses them.
+
+---
+
 # md_html()'s bold regex silently fails on a nested single-asterisk italic span (or a word-wrapped bold span)
 
 from:      kestrel / engine session

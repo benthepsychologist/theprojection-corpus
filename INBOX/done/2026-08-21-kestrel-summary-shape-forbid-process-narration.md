@@ -1,3 +1,42 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   fixed, both the rule text and mechanical enforcement
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+commit:    2db4051
+
+**Rule text added to both `shape["rules"]` arrays** (summary and
+briefing), using the brief's own suggested wording near-verbatim: no
+crawl/sweep/pass/batch/agent/buffer/digest/digest-day/backfill/re-index/
+"our record"/"this run"; corrections stay in as facts about the world,
+not about the lookup; dates are event dates, never look dates.
+
+**Mechanical enforcement added too** (`_check_no_apparatus`), wired into
+`validate_summary` (gist, every bullet, watch, each front beat) and
+`validate_briefing` (gist, every lead/section bullet, every watch line) —
+in the same family as `_check_link_floor`/`_check_url_provenance`, per
+the brief's "if it's worth it" suggestion. **Deliberately narrower than
+the rule text's own vocabulary**, taking the brief's own "sweep" false-
+positive caveat and generalizing it: excluded `sweep`/`pass`/`batch`/
+`agent`/`buffer`/`digest` from the mechanical check because each has an
+ordinary, frequent, non-apparatus meaning in this corpus's real domains
+(a tariff batch, a spy agent, a buffer zone, a bill that passes, a
+market that digests news, an election sweep) — flagging those would be
+false-positive-prone exactly as the brief warned "sweep" would be. The
+mechanical check catches the unambiguous subset (`crawl`, `digest-day`,
+`backfill`, `re-index`/`reindex`, `this run`, `our record`, `our
+lookup`); the rule text still carries the fuller vocabulary for the
+model itself to avoid.
+
+**`SUMMARY_SHAPE_VERSION` 2→3, `BRIEFING_SHAPE_VERSION` 1→2** — bumped so
+every cached readout (227 scopes at time of fix: 64 entity + 63 node +
+96 thread + 3 lens + 1 front) regenerates against the new rule on the
+next `--pack`/`--apply` pass, not just newly-changed ones. This is a
+real cost worth knowing about before the next `/daily` run: it's a full
+regeneration, not incremental.
+
+---
+
 # The summary shape lets a model narrate the pipeline to the reader — nothing in shape.rules forbids it
 
 from:      kestrel / engine session

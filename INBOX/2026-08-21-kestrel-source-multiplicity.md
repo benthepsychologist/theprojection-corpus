@@ -1,3 +1,36 @@
+<!-- status note added 2026-08-25, NOT an outcome block — this brief stays
+     open in INBOX/, not done/, because it is only partially settled. -->
+
+status:    PARTIALLY fixed 2026-08-25 (commit 2db4051) — fixes 1 and 2
+           below are done; fix 3 (the per-item `coverage` cluster) is
+           NOT started and is a real design task, not a mechanical fix.
+
+**Fix 1 done** — `render_read.parse_digest()` now uses `re.findall`
+instead of `re.search` for a bullet's citation links, and emits a new
+`urls: [{label, url}, ...]` list on every item alongside the existing
+scalar `url`/`source` (kept as the first link, so nothing downstream
+breaks).
+
+**Fix 2 done** — `world_news.rank()`'s own `urls_sample` (rss side) and
+`gdelt_dedup.rank()`'s own `samples` (gdelt side) were already computed
+and simply never written into the item dict `build_world_news.py`
+produces. Both now carry through as `urls_sample` on every
+`attention/world-news.yaml` item, and `render_read.load_world_news()`
+passes it into the payload. Live data hasn't backfilled yet — the `bq`
+credential outage (STATUS.md, ongoing) means `world-news.yaml` hasn't
+regenerated since 2026-08-18 — but the code path is fixed and will
+populate `urls_sample` on the next successful `build_world_news.py` run.
+
+**Fix 3 NOT done** — the new per-item `coverage: {outlet_count,
+articles: [...]}` cluster object. This needs real clustering-scope
+decisions (day+lens window, exact-URL-vs-title-keyword grouping, sample
+cap, cross-day dedup) that the brief itself calls "design is open" —
+not something to rush through in the same pass as the two mechanical
+fixes above. Left for a session with time to make those calls
+deliberately, or for Ben to weigh in on the open questions first.
+
+---
+
 # Preserve per-story source multiplicity — the pipeline holds hundreds of articles per story and discards all but one link
 
 from:      kestrel / engine session

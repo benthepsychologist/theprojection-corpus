@@ -1,3 +1,30 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   fixed
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+commit:    2db4051
+
+**Fixed, direction 1 (parse tolerantly) + direction 2 (fail loudly), both
+from the brief's own "two directions, not mutually exclusive."**
+`render_read.parse_digest()`'s title regex now tolerates a short leading
+prefix (emoji/label) before the bold lead and matches non-greedy/DOTALL
+so a nested single-asterisk italic inside the bold span no longer breaks
+the match — confirmed against all four documented failure shapes (emoji
++ inline colon, bold-then-colon, nested italic, label-only lead). A
+bullet that still doesn't match anything now falls back to a
+word-boundary-aware slice AND prints a warning to stderr naming the
+digest file and day, instead of silently emitting a mid-word fragment.
+Ran `render_read.py` against this repo's live digests afterward — no
+non-matching bullets in the current corpus, payload built clean.
+
+Not done: the digest-template note the brief suggested ("the `** — `
+separator is load-bearing for extraction") — a documentation addition,
+left for whoever next touches the digest-writing convention, since the
+mechanical failure mode itself no longer exists.
+
+---
+
 # The digest-bullet extractor silently truncates mid-word to 80 chars when a bullet doesn't match the expected lead-phrase convention
 
 from:      kestrel / engine session

@@ -1,3 +1,19 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   settled — the one ask (decide what to do about STATUS.md) was
+           already done before this housekeeping pass found the brief
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+
+The brief's `done-when` was "decide what to do about `STATUS.md`'s
+`As of` line." That happened three days after this brief was filed:
+commit `76a091a` (2026-08-21, "STATUS.md: adopt the engine's fenced
+instruction block") put the `*As of YYYY-MM-DD*` line alone on its own
+line in the one required spelling, per the schema this brief describes.
+Filing this as settled now rather than leaving it to be re-discovered.
+
+---
+
 # Your `/week` fix is now the fleet's — plus the new base AGENTS layer
 
 from:      kestrel / engine session
