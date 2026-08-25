@@ -5461,3 +5461,37 @@ changes), or take the republish step himself.
 
 Committing and pushing this repo now; site already pushed and
 live-verified above.
+
+## 2026-08-25 (steer) — three carried-forward thread candidates decided, on Ben's direct call
+
+Ben: "decide the three thread candidates, show them." All three
+promoted to real threads rather than dropped — each had accumulated
+real, independent evidence across multiple offers (5th/2nd/4th) rather
+than merely persisting, which is what the offered-twice rule is for.
+
+- **`treasury-long-end-intervention`** ("Treasury's Long-End Defense,"
+  global-capital, weight 3) — split out of `fed-independence-fight`,
+  which is about the Fed's own composition/autonomy, not Treasury's
+  balance-sheet operations. Three dated tests land within four days of
+  opening (Cook's removal deadline 08-26, Jackson Hole 08-27–29, Warsh's
+  first keynote 08-28).
+- **`north-american-trade-policy`** ("The G7 Trade War," global-capital,
+  weight 2) — confirmed via a full `threads.yaml` check to have no
+  existing coverage at all, despite two independent same-day items
+  (the CAD move, then a dated tariff schedule) on 08-24.
+- **`datacenter-backlash-capital-risk`** ("The Backlash Prices In,"
+  global-capital, weight 2) — folds in a second, related candidate
+  ("industry messaging and public trust," offered once via the 08-24
+  coverage critic) as the same underlying question rather than opening
+  a fifth overlapping thread. Distinct from `ai-datacenter-sites`
+  (physical siting/moratoriums) and `datacenters-as-targets` (wartime
+  strikes) — this one is about whether the opposition becomes a priced
+  financial risk.
+
+All three backfilled from the existing record (`fed-independence-fight`,
+`ai-datacenter-sites`, and global-capital's own 08-24 digest) rather than
+opened empty. One watchlist add alongside them: **Scott Bessent** (Treasury
+Secretary) — named repeatedly in this map's own prose across multiple
+live stories (the Iran sanctions packages, the TGA intervention) with no
+entity to tag him, the same shape of gap the Warsh/Cook adds closed
+earlier. Render smoke-tested clean: 102 threads, 212 entities.

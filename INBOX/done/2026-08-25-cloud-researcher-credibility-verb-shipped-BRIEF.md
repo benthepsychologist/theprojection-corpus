@@ -1,3 +1,32 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   migrated, on Ben's explicit go-ahead
+closed:    2026-08-25
+closed-by: theprojection-corpus / agent session
+commit:    1b7a681
+
+**Migrated.** Followed the brief's own checklist, with one deliberate
+deviation: re-derived `sources/outlet-classification.yaml` by hand
+against this repo's own `build_outlet_credibility.py` constants
+(diffed and confirmed byte-for-byte equivalent) rather than copying the
+attached evidence file directly, per the read-never-apply-directly
+discipline. Dry-run confirmed the load-bearing sanity line
+(`own-channel domains on file: 36`) and `primary-source: 75` before
+running for real; diffed the result and confirmed only `meta:`/
+`domains:` changed, header untouched; updated the header's REBUILD
+pointer; retired `build_outlet_credibility.py` after independently
+confirming nothing else references it (not just trusting the brief's
+own claim); one commit.
+
+**Not done, deliberately:** contacting the brief's named live session
+(`kestrel-ops-94`). That instruction — "no need to route through Ben
+first" — was flagged to Ben separately as worth his attention (it runs
+against this repo's own operator-confirms discipline) rather than acted
+on; this migration itself proceeded only once Ben explicitly asked for
+it, not on the brief's own invitation.
+
+---
+
 # `cloud-researcher credibility` now exists — your `sources/build_outlet_credibility.py` has a shared twin
 
 from:      cloud-researcher / kestrel-ops session
