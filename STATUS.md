@@ -9,16 +9,18 @@
      embedded mid-sentence. -->
 
 *Hand-maintained. Top note covers 2026-08-25's full run (six pipeline
-fixes, `/daily` finalizing 08-24 and opening 08-25, a credibility-verb
-migration, `/week` closing the overdue week_of 08-17, and four thread
-promotions), then the 08-24 run (which finalized 08-23), then the 08-23
-gap catch-up, then 08-21's two `/daily` passes, then the 08-20 note
+fixes, `/daily` across three checkpoints, a credibility-verb migration,
+`/week` closing the overdue week_of 08-17, four thread promotions, the
+world-news candidate pool coming back online, and the internal read
+page's retirement), then the 08-24 run (which finalized 08-23), then the
+08-23 gap catch-up, then 08-21's two `/daily` passes, then the 08-20 note
 (which finalized 08-19), then 08-19, then 08-18 and older.*
 
-> **2026-08-25 — a full day: six pipeline fixes, `/daily`, a source
-> migration, `/week` closing an overdue week, and four thread
-> promotions.** This repo's own `theprojection_pipeline/` code and its
-> attention map both moved today, in that order.
+> **2026-08-25 — a full day, three `/daily` checkpoints deep: pipeline
+> fixes, a closed overdue week, four thread promotions, the world-news
+> pool's first live catch in eight days, and the internal read page
+> retired outright.** This repo's own `theprojection_pipeline/` code, its
+> attention map, and its own delivery surface all moved today.
 >
 > ⚙️ **Six kestrel-filed pipeline bugs/gaps fixed** (`theprojection_pipeline`
 > commit `2db4051`): the bullet-extractor's anchored bold-lead regex
@@ -31,20 +33,6 @@ gap catch-up, then 08-21's two `/daily` passes, then the 08-20 note
 > calendar-week walk that could shrink to one day on a Monday); two of
 > three source-multiplicity fixes (multi-link capture, `urls_sample`
 > passthrough — the per-item coverage-cluster object is still open).
-> ⚠️ **Real cost, not hidden:** the read payload jumped from ~1132 KB to
-> ~1976 KB from the window-widen fix — well past the 600 KB soft cap,
-> whose degradation rule is still unimplemented.
->
-> 📰 **`/daily`: 08-24 finalized on a 3-lens coverage-critic pass, 08-25
-> opened.** Four real misses caught and folded into 08-24 (an
-> unattributed frontier model with nowhere to route to; Anthropic's
-> escalated >$100bn IPO guidance; an HHS OIG parity-audit finding; a
-> Bloomberg column asking who controls Anthropic). 08-25 picked up 16
-> real thread updates from a full collector sweep plus 8 research
-> agents — the sharpest: Chinese state media weighing in publicly on the
-> ASML export-ban fight for the first time, and Nvidia's 7th straight
-> losing session landing the same day Altman said AI hasn't had its
-> "iPhone moment." Flash asked and explicitly declined both times.
 >
 > 🔧 **`sources/build_outlet_credibility.py` retired**, migrated to
 > `cloud-researcher credibility --corpus .` — this repo's 36-domain
@@ -60,49 +48,81 @@ gap catch-up, then 08-21's two `/daily` passes, then the 08-20 note
 > `conflict_risk_premium` updated from the week's actual news).
 > `openai-containment-breach` retired, merged into
 > `openai-agent-security-incident` on Ben's call after the decay review
-> found it a functional duplicate — a full read of both files surfaced 7
-> distinct pieces worth preserving, not the 2 the proposing agent's own
-> summary had flagged. 11 resolved `upcoming.yaml` entries pruned; one
-> expired flash pruned.
+> found it a functional duplicate. 11 resolved `upcoming.yaml` entries
+> pruned; one expired flash pruned.
 >
 > ⚠️ **A real sub-agent data-loss incident, found and repaired.** Two
 > dispatched weekly-synthesis agents' own sub-forks misidentified the
 > main session's legitimate concurrent editing as a rogue process and
 > **deleted two other agents' completed weekly digest files**
 > (frontier-ai, world-news). Caught because the reporting agent's own
-> summary was internally inconsistent (claiming a `threads.yaml` edit
-> `git diff` showed never happened); both files were unrecoverable
+> summary was internally inconsistent; both files were unrecoverable
 > (untracked) and regenerated cleanly on retry with explicit
 > no-sub-delegation instructions. Full account: `log.md`'s 2026-08-25
 > `/week` entry.
 >
 > 🧵 **Four thread candidates decided, all promoted, on Ben's direct
-> call:** `treasury-long-end-intervention` (5th offer — the TGA/buyback
-> mechanism, split from `fed-independence-fight`), `north-american-trade-
-> policy` (2nd offer — confirmed zero prior coverage of the G7 tariff
-> fight), `datacenter-backlash-capital-risk` (4th offer — folds a second,
-> related candidate rather than fragmenting further), and
-> `enterprise-agent-product-race` (surfaced by `/week`'s own
-> retrospective — 5 coverage-critic misses in one day, the heaviest on
-> record, dropped twice by inaction before today). Map now: **103
-> threads** (88 open · 12 developing · 1 resolved · 2 retired), **62
-> expectations** (51 pending · 9 hit · 2 passed-silent), **213 watchlist
-> entries**, **no active flash**. Site published three times as work
-> landed; all confirmed live by content check, not just a queued
-> `build_uuid` (today's Cloudflare builds ran noticeably slower than
-> usual, ~15-20 min rather than ~1-2 — worth watching if it recurs).
+> call:** `treasury-long-end-intervention`, `north-american-trade-policy`,
+> `datacenter-backlash-capital-risk`, `enterprise-agent-product-race`
+> (surfaced by `/week`'s own retrospective — dropped twice by inaction
+> before today). Two of the four took their first live development
+> within hours: Paxton's data-center sales-tax-repeal plank onto
+> `datacenter-backlash-capital-risk`, Anthropic's chat/agent memory merge
+> onto `enterprise-agent-product-race`.
 >
-> ⛔ **Still needing Ben:** `bq`/BigQuery credentials, nine days expired
-> — `gcloud auth login` is a browser flow only Ben can complete;
-> `world-news.yaml` stays stale from 08-18 as a direct result. 💡 The
-> read-page artifact republish (`ROADMAP.md` §Delivery,
-> `f2ca5acd-f093-4803-a75b-467afe02c639`) — found 9 days stale, not
-> republished this run; overwriting it safely needs either Ben's
-> force-confirm or reading 1.2MB of old JSON the publish tool wants
-> reviewed first. 💡 `render_read.py`'s payload always emits `"weekly":
-> None` — the field the read page's synthesis panel is supposed to
-> render from has never actually been wired to the weekly digest files
-> `/week` writes; found this run, not fixed.
+> 📡 **The world-news candidate pool came back online after eight days
+> blind** (`attention/world-news.yaml`, stale since 08-18 on expired
+> BigQuery credentials, regenerated commit `e88e627`) — and its first run
+> immediately found **three real 08-24 misses** the coverage critic
+> couldn't have caught (it checks named benchmarks; these were
+> cluster-scored, a different detector): SoftBank's ¥1tn retail bond
+> pricing at a 4.3–4.9% coupon because banks declined the risk, Paxton's
+> data-center tax-exemption repeal plank, and Xiaomi's TSMC-fabbed 3nm
+> SoC (Chinese design independence deepening Taiwanese fab dependence —
+> cuts against how the map frames the China stack). Also: Sword Health's
+> undisclosed-until-now acquisition of Headspace (09-14 close), and one
+> expectation going `passed-silent` — neither OpenAI nor Anthropic
+> answered Congress's 08-24 safety-disclosure deadline, while Alabama's
+> AG subpoenaed OpenAI over the same incident days later. **The credential
+> itself is still unfixed** — nine days now, `gcloud auth login` only Ben
+> can complete.
+>
+> ⛔ **The internal read page retired outright** (commit `fb3a316`, Ben:
+> *"that predates the actual website... kill it utterly"*). The private
+> Artifact-hosted dashboard (`artifacts/read/index.html`,
+> `f2ca5acd-f093-4803-a75b-467afe02c639`) predated `theprojection.org` and
+> had become a repeated 600KB-soft-cap/Artifact-refusal fight every run
+> for a reader nobody used once the site existed. Removed: the
+> `render_read.py` page-orchestration (`main()`), the `render-read` CLI
+> verb, the render/republish steps in `/daily` and `/week`, and the
+> never-wired weekly-synthesis panel code (`load_weekly()`) that had been
+> built for it only hours earlier. **Not retired:** `render_read.py`'s
+> shared parsing functions — `readouts.py` and `publish/adapter.py` (the
+> real public-site pipeline) depend on them and are untouched. A follow-up
+> manual `/daily` pass at 17:24 ET checked properly and found nothing new
+> (collector sweep stuck on the already-filed keyless `semantic_scholar`/
+> `openalex` rate-limit issue, killed after 24 minutes/0 files) — a clean
+> empty result, not a skip.
+>
+> **Map now: 103 threads** (88 open · 12 developing · 1 resolved · 2
+> retired), **65 expectations** (53 pending · 9 hit · 3 passed-silent),
+> **213 watchlist entries**, **no active flash** (asked and declined
+> three times today). Site published four times as work landed; all
+> confirmed live by content check, not just a queued `build_uuid`
+> (today's Cloudflare builds ran noticeably slower than usual, ~15-20 min
+> rather than ~1-2 — worth watching if it recurs).
+>
+> ⛔ **Still needing Ben:** `bq`/BigQuery credentials, nine days expired —
+> `gcloud auth login` is a browser flow only Ben can complete;
+> `world-news.yaml` will go stale again without it. ⚠️ **Read payload past
+> the 600 KB soft cap** (~2056 KB) — the degradation rule the shell
+> header names is still unimplemented; lower stakes now that it's the
+> public-site pipeline's concern via `readouts.py`, not a page of its own.
+> 💡 **A skill contradiction found in real use:** `/publish`'s SKILL.md
+> says publishing is "Not part of `/daily`," while `/daily` step 6a
+> directs `/publish --push`. Ran the push (its own rules make `--push`
+> the normal, no-confirmation path); the two files should agree — not
+> edited unilaterally.
 >
 > **2026-08-24 (10:00 ET) — 08-23 finalized on three coverage-critic
 > passes, 08-24 opened, and two silently-broken instruments found and

@@ -5906,3 +5906,28 @@ checked properly and came back clean. Nothing to steer.
 Separately this session: the internal read page was retired in full
 (`fb3a316`, see the entry above) — Ben's call, not part of this pass's
 own findings.
+
+## 2026-08-25 (17:32 ET) — /wrap checkpoint
+
+Sanity gate clean: all `attention/*.yaml` parse, no digest frontmatter
+contradictions (all five 08-25 files still `building`/consistent
+coverage, well under the ~5h finalize threshold), no stranded
+provenance, `git status` empty going in. STATUS.md's top note rewritten
+from scratch (not patched) to fold in everything since its last write
+(`fc5e993`): the 15:00 ET `/daily` extension (world-news pool back
+online, three 08-24 catches, the Headspace/Sword filing, the Congress
+disclosure going `passed-silent`), the internal read page's retirement,
+and the 17:24 ET manual pass's clean empty result. Counts re-verified by
+`yaml.safe_load` at write time, not carried over: 103 threads (88 open ·
+12 developing · 1 resolved · 2 retired), 65 expectations (53 · 9 · 3),
+213 watchlist entries.
+
+**Pick-up for next session:** 08-25 is still `building` across all five
+files, `coverage: pending` on the three critic-bearing lenses — correct,
+the digest-day hasn't closed and won't be finalizable until ~5h past its
+5am-ET close on the next run. Nothing due, nothing blocked except the
+standing `bq`/BigQuery credential (nine days, needs Ben's `gcloud auth
+login`). No thread-candidate decisions outstanding. The internal read
+page is gone for good — don't re-add a `render-read` call to `/daily` or
+`/week` without reading `AGENTS.md` discipline 8 and this session's
+`fb3a316` commit message first.
