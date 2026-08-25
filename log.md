@@ -5621,3 +5621,28 @@ single pass); worth a deliberate decision on whether to wire it up.
   (08-20, 08-21) and dropped by inaction, not decision — flagged back
   by this week's own retrospective. Needs a call.
 - 💡 **`render_read.py`'s weekly-synthesis payload wiring** — see above.
+
+## 2026-08-25 (/wrap checkpoint)
+
+Full detail already logged separately this session: the six pipeline
+fixes and INBOX closures (top of today's entries), the `/daily`
+finalize+open, the credibility-verb migration, `/week` closing week_of
+08-17 (including the sub-agent data-loss incident and its repair), and
+the four thread promotions. This entry is the checkpoint marker, not a
+re-narration.
+
+**Where to pick up:** 08-25 is still `building`/`pending` on all four
+lenses (correctly — the digest-day hasn't closed). `week_of 08-24` is
+two days old and too thin to close yet — due this weekend. Four open
+items carried forward, none blocking: `bq`/BigQuery credentials expired
+(9 days, needs Ben's browser login); the internal read-page artifact
+republish (needs Ben's force-confirm or his own review — see this
+morning's entries); `render_read.py`'s dead `"weekly": None` payload
+field (found, not fixed); and no further thread candidates outstanding
+— all four carried-forward offers were decided today.
+
+STATUS.md rewritten from scratch this pass (not patched) — new top note
+covers the full day, prior notes untouched below it. Both zone repos
+(`theprojection-corpus`, `theprojection-site`) clean and pushed as of
+this checkpoint; verified via `git log @{u}..` on both, not just a clean
+`git status`.
