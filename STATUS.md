@@ -107,7 +107,7 @@ page's retirement), then the 08-24 run (which finalized 08-23), then the
 > **Map now: 103 threads** (88 open · 12 developing · 1 resolved · 2
 > retired), **65 expectations** (53 pending · 9 hit · 3 passed-silent),
 > **213 watchlist entries**, **no active flash** (asked and declined
-> three times today). Site published four times as work landed; all
+> three times today). Site published five times as work landed; all
 > confirmed live by content check, not just a queued `build_uuid`
 > (today's Cloudflare builds ran noticeably slower than usual, ~15-20 min
 > rather than ~1-2 — worth watching if it recurs).
