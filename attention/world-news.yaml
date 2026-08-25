@@ -1,1267 +1,1909 @@
-generated: '2026-08-18'
-method: tools/build_world_news.py --day 2026-08-18 --gdelt-start 2026-08-18 --gdelt-end
-  2026-08-19
+generated: '2026-08-25'
+method: tools/build_world_news.py --day 2026-08-25 --gdelt-start 2026-08-25 --gdelt-end
+  2026-08-26
 sources:
 - google_news_rss (tools/world_news.py)
 - GDELT Events, deduped (tools/gdelt_dedup.py)
 items:
 - id: russia-ukraine-fight
   headline: 'Russia–Ukraine: Fight'
-  distinct_outlets: 132
+  distinct_outlets: 99
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -10.0
+  status: confirmed_thread
+  urls_sample:
+  - https://www.agencianova.com/nota.asp?n=2026_8_25&id=171551&id_tiponota=101
+  - https://www.zavtra.ru/blogs/london_predostavlyaet_kievu_dostup_k_sekretnim_raketnim_tehnologiyam
+  - https://vv.com.ua/20260825/protiagom-nochi-rf-obstriluvala-korukivskii-raion-chernigivshini-vinikli-pojeji/
+  - https://www.kyivpost.com/post/83075
+  thread: russia-ukraine-war
+- id: israel-palestine-fight
+  headline: 'Israel–Palestine: Fight'
+  distinct_outlets: 40
   source: gdelt
   severity: CONFLICT
   goldstein_avg: -9.99
   status: confirmed_thread
+  urls_sample:
+  - https://www.asiaone.com/entertainment/venice-film-festival-adds-gaza-doc-naza-competition-lineup
+  - https://www.haberankara.com/dunya/gazzede-camilere-saldiran-israil-4-yasindaki-cocugu-katletti-319932
+  - https://www.philstar.com/world/2026/08/25/2551677/netanyahu-got-his-iran-war-maybe-not-his-desired-result
+  - https://www.aljazeera.com/news/2026/8/25/palestine-weekly-after-kushner-departs-israel-escalates-gaza-attacks
+  thread: gaza-war
+- id: russia-ukraine-consult
+  headline: 'Russia–Ukraine: Consult'
+  distinct_outlets: 33
+  source: gdelt
+  severity: COOP
+  goldstein_avg: 4.14
+  status: confirmed_thread
+  urls_sample:
+  - http://govoritmoskva.ru/news/503374/
+  - https://www.1tv.ru/news/2026-08-25/551226
+  - https://www.shorouknews.com/news/view.aspx?cdate=25082026&id=100475e7-ed5b-4056-af8b-45b0c1f39e52
+  - https://www.lindependant.fr/2026/08/25/guerre-en-ukraine-un-avion-militaire-americain-atterrit-a-moscou-le-kremlin-dit-navoir-aucune-information-13522544.php
   thread: russia-ukraine-war
-- id: nvidia-to-invest-almost-150b-in-openai-data-cent
-  headline: Nvidia to invest almost $150b in OpenAI data centre
-  distinct_outlets: 84
+- id: iran-united-states-reduce-relations
+  headline: 'Iran–United States: Reduce relations'
+  distinct_outlets: 30
+  source: gdelt
+  severity: CONFLICT
+  goldstein_avg: -7.27
+  status: confirmed_thread
+  urls_sample:
+  - https://www.middleeasteye.net/news/us-promises-asphyxiation-islamic-republic-new-sanctions-announced
+  - http://www.beijingbulletin.com/news/279262715/us-unveils-economic-onslaught-against-iran
+  - https://www.theguardian.com/us-news/2026/aug/25/cia-director-john-ratcliffe-moscow-russia
+  - https://www.tribuneindia.com/news/world/4-india-based-companies-bear-the-brunt-of-us-iran-sanctions/
+  thread: iran-conflict-widening
+- id: nvidia-groq-3-lpx
+  headline: Nvidia Groq 3 LPX
+  distinct_outlets: 27
   outlets_sample:
-  - AD HOC NEWS
-  - AFR
-  - Axios
-  - BetaNews
-  - Big News Network.com
+  - 24/7 Wall St.
+  - Anadolu Ajansı
+  - Bitget
+  - Breakingthenews.net
+  - CNBC
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi5wFBVV95cUxON21wRkNvU3VKSW9fbzExVWVLR0lwSXhMbTRPYXdENDRKSXhCZFFGcTQtazk4WllILWN4UUNHRmNQaWxSak1jUkx4ai11NHpVQzkxQUx6c0xwWlUzUWRpdEJWcFBXZXBadExQRGp1MXl5SzBNTmV1b1RlZUhiMnZySmNpZFV4REx2WWVQbldWdmxsaVdYLWZnSlpSYllaS2JmWGxta1Y4bVBMNFA1VjhWVnFQSUdCLTFPZlJfTlVoZTIzM0c1ZVYwd3FmV3RjZldYS1VKYk9HSlotbUJPT1BUbGxNUndmNWM?oc=5
+  - https://news.google.com/rss/articles/CBMilgFBVV95cUxPVk9UOGxZelVVZmktMk9KWU5OLXk2TkhiWWZENXpXOGV0RjhqZ1lMUlllQy1fWV9mc0FtZk0xamZHdlVEdjhqSklUcHc5R1JnSkd5YXhpWldnV0VQZHVtQk9ZWVR0ZkZUZXd2c2sxU2hzbEZ6RlpoNGQ0OTJDWllWRGd0T1dfQmhxSDItaExEM2hFS01MUlE?oc=5
+  - https://news.google.com/rss/articles/CBMipwFBVV95cUxNNDRGOENkck90dFB3X0ZJVGdSNVotTlZCS3MxSnR4azZxUlVsVWVQS1ozZ2xoX3JZenBDeUhYRzdyMEg1SXJoUThVUVFZeEpzZG9NMzZKYXAzOUNzdEZad3ZYdW05QkNSTmdtVUtCSUcyamQ5UG9yWm9qU1ZWdjU1VmNlMENEeDY2VlhhTmN3bVhWTGozd1R5dUVpY0Iyb1NHcl9RMXVMWQ?oc=5
   source: google_news_rss
   status: candidate
-- id: openai-debuts-chatgpt-for-teens
-  headline: OpenAI debuts ChatGPT for Teens
-  distinct_outlets: 56
-  outlets_sample:
-  - AOL.com
-  - AP News
-  - AppleValleyNewsNow.com
-  - Audacy
-  - Axios
-  source: google_news_rss
-  status: confirmed_thread
-  thread: nippon-life-openai-suit
-- id: the-hyping-of-anthropic-s-ipo
-  headline: The hyping of Anthropic’s IPO
+- id: openai-subpoenaed-by-alabama-ag-over-hugging-fac
+  headline: OpenAI subpoenaed by Alabama AG over Hugging Face hack
   distinct_outlets: 22
   outlets_sample:
-  - AOL.com
-  - Big News Network.com
-  - BusinessLine
-  - Crypto Briefing
-  - Firstpost
+  - 2 News Oklahoma KJRH Tulsa
+  - 93.3 The Drive
+  - APR | Alabama Public Radio
+  - BusinessWorld Online
+  - CNN
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimwFBVV95cUxNelpVS3dXUXNyX0dJaFY3aXI4NUoxanl0TTA0dHRrZkYwdmJoalpkM0dXY19YYkx4RENnNnJlOU9rMW02M09lV2c0X3pCWGNRZUNQay15VXVFUE8zOTVkS21jQ0c4ZWdoSlpRc3VtVGxKdDdCazItTFVtMkVPQ2FCSUZidkszS3EzczZKZjZyWEJ4Y2dXNkRueE9tNA?oc=5
+  - https://news.google.com/rss/articles/CBMikwFBVV95cUxNTXVfT004b3Bib0VKMjc1YUZSTWQ4TkRuam15Sk5pdGx2M2ZhMWVKMzN4ZHFfNDVvQU44ZXlUMGlSekdidEE0S2hobzU4UDNzYWtZeDRUc0U5aTVQcFBrM0JNR0k1Ti15M1lvY0thZ1ktZHM1a2ZCTnp3Y3FCY09HVEoxdjFpN3VfMmVmWFVJckh1d0U?oc=5
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxNbEpUUVNqdVEtZ2FQaGFZSnhRQ3BOa21DYlc3aEtLY2g1VFVINnR4MUFtTTlsdGUydkJsZllRQ3pJR3dNWnBjQlRrTjRVSWdVY2ZBdThOcXRlSkM1dTNYMlZlSF9MNnZ2M1dFc1BvNmVKTUZUYi1aR3RSeC1NWTk4d0F6aDNUbnlqZjNrMng2NFh2VVcwZk9UVkgwajFnOU9lOFRZSGJFRVF4MlBPUVhOSzF4UQ?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: spacexai-public-megacap
-- id: data-center-moratorium-petition-heads-to-lubbock
-  headline: Data center moratorium petition heads to Lubbock City Council
+  thread: openai-containment-breach
+- id: new-zealand-moves-to-ban-social-media-for-under-
+  headline: New Zealand moves to ban social media for under-16s
   distinct_outlets: 22
   outlets_sample:
-  - AZ Family
-  - Cleveland 19 News
-  - FOX Carolina News
+  - Daijiworld
+  - ECR
+  - France 24
+  - Gulf Times
+  - Internazionale
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxPZEtjTUxtOXU2WU80aHFKd1ZXMkxqQlROODYwVHJlNE5qUUlPdm9paWF3RF9MVWN5cUp3bjVOOFNqdmRWOElCcmg4RGE3Y3N2ZEc3cTY1cnJ4MzJoaE5IZUlwNVV5MWlOOWQxbFZPeDViTTkybmJkeGxkNWxnYlhZXzdCVGVYakdnUkd4dm5oMk16Y1RiRHV3OEo0THJ0OFFqMnc?oc=5
+  - https://news.google.com/rss/articles/CBMiakFVX3lxTE9rT1hHU1FELS10b2JzeVkyZVFLYVMwZHREQnJvSV9xdzJvamh1VzN0RVEzN2ZLaXFFUkw2ckxIQUJaeXptWGhqMmlpazg2WXdTMDBZVWxvN0hnWm0xUWtRTWdiS0NnQXZqaEE?oc=5
+  - https://news.google.com/rss/articles/CBMijAFBVV95cUxOMGxCanB0c0VvRkFkRVVDNGN3RzZkVi0tb252UlFlMVBqN0wtNEtJcVd2SktSMTVuVHNmSnRxRGxPZFpzbk5tOXNTNEdObWtBb2VscXI0SS1heW9iRVByZExmREFvNi1ZT3p3WUtBX1pENWhUNzJHdVRDSFFaaVJEVTEtX09OSjVpcFhZadIBjAFBVV95cUxNY002aE9PbktBQkdSSmU0SWZSNnpFRldnb1MtV1NhSFRxaE92bjU0M1FoOVpHRUZCbGNZX1plaGlKVDFmcUROVjFlTm03UnFPQzBlRjJKOHVESW1LQzRuSkFRekZQZ2JqMlFkdGNJd0xjUGR0Sll5M2xhUmZmVFNXeDBYQmlsd3VpWWp1Vw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: did-you-see-it-spacex-launch-paints-glowing-trai
+  headline: Did you see it? SpaceX launch paints glowing trail across Carolina skies
+  distinct_outlets: 21
+  outlets_sample:
   - FOX5 Vegas
   - Hawaii News Now
+  - KBTX News 3
+  - KLTV.com
+  - KOLD
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMipwFBVV95cUxQWFJVRXNGZUEtMDM0YnNDdUdtQ0FkWUR3bUpEakZrOGV5RVFpNnVnano1S2gxSjZONE50di1aSm1lWGkySXQ3VXBtbVY0NTB2TGRmTklxN0l2OFlPMDJGS25ZOHRQNm1icW1vV0ROTnVfY2pzdGRvcU5mVm5TVnBHVjQzT24tbHNrMUxucHIwT1hPY012b3NxQkdzbnlDV0ZLeTFmSE5LY9IBuwFBVV95cUxOYnZIS0pFaWxsbVJPSFBIQ1NETW5vTzBURFc5RV9SR245elVSendna21IRndJSUFROFVIbjh6X20xUVQxeWJHamxYZDdqQWJyZG8yMjNvVjQwWkdoM0EyUE1EU0xXRTFaM19venFnWlEyNXBWMy0zeVlncVBjUlcwM1hUalY5Sl8wN2VVdS1KbjNGOXVSWlVOb1JHbUsxM0NraDVrN3lnSXl0MUNtWkdqWW1zWHN2OENhZGxJ?oc=5
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxQSzlQdm51THJXV0ltZUZES3Q4Z1hjeFJ2aTMtdjZnQW56dDFiREkwRHljYTVuQUhOVVdQMTVsc2tMcFZla1JsdlFPbk1QcWc2UGdJSEMwSTBQY2VFODhadWd4MDJoT1NzNkpxbFRiVHpZWG5DZDhZNzFkZ3lKNVBNZUVnLUtPc3h4Q2VvdE9yRWpDUXEtRDBoZXFfYnlmY0tvNzZ0VXZxRlBQTllWTkZj?oc=5
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxNMkxhWUNUMVZRZVNiMXhjdEJCSjJycWpwNHVOZzE2RG1KX3VlZXVEbG1sdGg5VV9zYVd0cmpTbEJVWXFuNUlubllQMFhhRm5TRWc2ejBrTVFDejBvYTVUbWFnM0cyNTdpT2h6VGtQdVUzeWxkMy05MG0tRzJydzRRY0V3eEpuaUsyNFUxX2xycHVPN1M2WXFSdENMb0FNd2xuWnFSSUowTXd3U0ZSYU5IaUNvZw?oc=5
   source: google_news_rss
   status: candidate
-- id: jpmorgan-chosen-by-general-atlantic-to-lead-ipo
-  headline: JPMorgan Chosen by General Atlantic to Lead IPO
+- id: sam-altman
+  headline: Sam Altman
   distinct_outlets: 19
   outlets_sample:
-  - Bloomberg.com
-  - Briefs Finance
-  - Crypto Briefing
-  - Investing.com
-  - Investing.com Nigeria
+  - 1819 News
+  - AOL.com
+  - BGNES
+  - Business Insider
+  - CNBC
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi4gFBVV95cUxOYWk4TTRVeFgyT3J6bmZma3lNWHhZNnRZc1VITlN5RE00OUpZX1NPZFFLMTdnTnVxcHlpMXZ6WHQxcWFGUlRRRmtla2VfY3ZvdXEtVlUydTBuTGdBV3ZjV0c2MnZDM1IzMTZpSVpHTFhNRzF6c3RFZjZzVEdXVUpOakxIbG9KTVFPVU91Y1RUYkg1NGlXXzdHcGNPWGRBakc5V1JGaEgwcGxuUDUzU21yUXMzRkJnbE11WTZoV1Q5bWl1S2pDMXBYTnJVWHM4alg2dkRydUpLYzIydWpGTUdFaXhR?oc=5
+  - https://news.google.com/rss/articles/CBMihgFBVV95cUxPa1dUWE9SNHBVMWtCN1hVa0xHM1RYM1FFMHVmaFUyV3NlTlNkQk10VUdpN0k4WXVLT3k1VGJpX1d3a19YWDVkZy1fTWhETHJEbWEzWnN3b1k4U3czYzlvX3JNRVZCVkNJdjh5Wk1nYmJxLWsyNGE0a0JrV3MtamJtMm5DNk1zQQ?oc=5
+  - https://news.google.com/rss/articles/CBMiZ0FVX3lxTE84b2JEVGVFY25Qc0o0VmQ1NHRJWk9DY29ONFkxTXJBZmxtV1QtZFhnTm00cHNiNXRvSzFMS2t1Y3ZHWjhwSkQtYnVoSzdIaGxaLU81enVGNDU4NEVNV0kxUWFQb0ZlS2s?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenter-backlash-capital-risk
+- id: shein-gets-ready-for-its-hong-kong-ipo
+  headline: Shein gets ready for its Hong Kong IPO
+  distinct_outlets: 19
+  outlets_sample:
+  - Axios
+  - Binance
+  - Breakingviews
+  - BusinessToday Malaysia
+  - CNBC
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxOaDlYYVpqQ2N5TW1GUlVjRXI3Y1RWUXY2SmQ4Y05nLWxGQjRhSmFTbWs1OWNVOWtjYlR4RlRUcnJXLWh4dGFmd3ZMUDIxOW96Z1B4U3RDbFZxZDA4dFZWUnp4SnUzcFZ6TWNLSEgyUTRxN004cUNzd3NvRG5JZWxuakFoTFVNMXV0dHdOZ1JwUlFTdW0xdG9HT3BieW9vc043SVE?oc=5
+  - https://news.google.com/rss/articles/CBMidEFVX3lxTFBVR24xbk45QlU3YlEwcXM5QzVwSVNpSHV6c05rcmZzWnB3YmZqOG90T1lXazQxSjBSVFl2OVpoMW9UWWt2UmhqTmJBb0xOdXZoV3ltLUZKZzE5eTVIcTA1Z3FvbERkNzFrMkJkcWJONDBHUFhK0gF6QVVfeXFMT2ZXVmdtb3BiaTFwWVhCYk9uTVZvUUZzNm1CQWI1dHd1LUhEbWNXOXBiZjRXSlowbXAtaWxDXy1jdUNSbEVEMDIwVkhFbGFFZDgwR3FGUmRQamV0VXF6bGJsNWRLcW90QUt5LTN2cGlDTUhndlFPV0tQNFE?oc=5
+  - https://news.google.com/rss/articles/CBMihAFBVV95cUxPOHZpSTNpLXd0OUxpVEJjRkhmX2pJOFJHVmtjZjRZdlV4V2t5T21IbG54cmt1eE9zZmhjWFM1UlZQMjZnX0NjdE4xaGZDR3VOQTM4OG1RRjZBbDhMNEZ5MWpFUFh3eDRGd2ZHWGRjWVFOMnNSSlVDMVlzcTd4aXdpNkVITUM?oc=5
   source: google_news_rss
   status: candidate
-- id: dario-amodei-logs-on-to-answer-the-critics
-  headline: Dario Amodei logs on to answer the critics
+- id: nvidia-in-talks-to-back-perplexity-at-30b-per-re
+  headline: Nvidia in talks to back Perplexity at $30B, per report
+  distinct_outlets: 18
+  outlets_sample:
+  - Chosunbiz
+  - Crypto Briefing
+  - Cryptopolitan
+  - DD News
+  - Dealroom
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiXEFVX3lxTE13VmhWQzM0SkJpMVBLZVVsODRqY1EtVGhJNFNFVUI3UUVNcVVGY0RRLTBSTXpOSHJDNUZHcXZxNklhX1Zsc1BCVEk5dDQ0YXlQNkhsMEExdF9IT212?oc=5
+  - https://news.google.com/rss/articles/CBMi3gFBVV95cUxPdDh3c2dWUWg3bWpXLTF4VW0zSEtQYUhzVnJpWmZ6aTlOWlRtSDQtdlp6NVA3NzdwUjdURFVDZTdlaVByeFJBeDR0TVg4TXY2SzM0dGFMbzU2T1hlMzF6aHY4VnNuQmFNYmlQT3U5WTRDcGtBMFdNU19TNE9TRUhDTkFhYzBJNmd1elBhU1c3TzNpcGVGQ2dJaDZhT0hzcmJ4NXJ5cWkyMkZEM0FRNDNaaU1fUC1nSzJzQTdVWWs3QnYxX01ZTGhoc3VjMDg2WDdBUzcyLVRMZ3dadnB2TEHSAeIBQVVfeXFMT3g0bjAzVkxwX2U4WElJSzVXMlhGUzVNWE9KazlXdE1jSktFbE1lbzdfUTJtc1lKMldMaGN5RGdGZzdXeEl0OHFpV2ZPYUZKUWRYU25wMXotLVRSVndzTWxZaEpsWC1MX0lUeTZ3Y2ZrTHk2R1haTUk5RW1yT3lxa2RYdEpuTVc3S0MtV1pUSndtZzlEVHd5b0JKazJHSXhnWlM0Q3dIZTRkeXY0Mnk0T1hRbmh3RUZpZVU5djhlQmpVc2NUYWpQRERHTXVOMFViUEZMcWhiUnJnTFo0SlZhQ0J1QQ?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxOcFhTZEFZTUhYaHB6bUtnVVg0Q2hMT19aV3MxMkJEX3IySC04dWlZaFlWYjJqdDJ0Y2s5RmZtTk9HNDluQ2tGT2cwRkpkYm5xQ2pmbDJBV1hRSkwtTE5zeDcxdEx3VThSV3cxcXM1RTAyUl9pcEw2OExWNm9oZkpwUWdvRXVCWUtNMkRDd2s2eXU3a3VMeDZua1UwYi1wbzljV2Zqd0tESlRjMzVjUUJVQnVfb2I1VUNHWWFWRTJtZWg?oc=5
+  source: google_news_rss
+  status: candidate
+- id: xiaomi-launches-new-ai-chips-made-with-tsmc
+  headline: Xiaomi launches new AI chips made with TSMC
+  distinct_outlets: 18
+  outlets_sample:
+  - CNA
+  - Crypto Briefing
+  - Cryptopolitan
+  - Devdiscourse
+  - ET Enterprise AI
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMivAFBVV95cUxQR2pHQzFrSGY3SWhhYWxFS2FDTEtMWEhQV3FsX0dnRzVKeVlxRWdsdjJaQzFkRURmVURacGJCYU9NUUtGb0MyQS1EUVNtOWNCU2VaUDFIMnRHelZUVmpENE1vZVhhQmFZaWZNallubFI5MWp1bkpyb1FkMDNYWFlWTk1RU05nekFNdV9saXZ2VDRHdndXWFIwYnZYNGhlcGlRNFFKZ1BCeldwTkVqbW55elNzMFIxSURMOTIxcg?oc=5
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxPc3hVYmdSeGFydlBzT2JtMDhXYl9la01TZHVucjk0SEtURXpnd2RxRVRHNEpmRjlFd0VEQlg2VnNXU2NrbkFPNFNRR2lqRy1nTzlIOVZKa3RjY0dMUXBRSExNc2paZmZrVXB5cGNUWmNpOWNER1VmUnRaOTZHNjVQQ0VBVm1PR0dMNFVpWFRBS0h3VkFWNkRaTG1sT0c?oc=5
+  - https://news.google.com/rss/articles/CBMidEFVX3lxTE4wRGhseWcyc3VabjhmODlya2hqUWtGTXBKN01oWWVWSENNU1R2a1NUTHNPR0Z0RU9PUXpmTFpQcTJfUzRYMnZaQVNOdVpia1EzeWM4RklHd1B0LVpDMXgwUTlpazdUcEx3OXhsY21BWFZoem1R?oc=5
+  source: google_news_rss
+  status: candidate
+- id: saudi-vessel-attacked-in-red-sea
+  headline: Saudi vessel attacked in Red Sea
+  distinct_outlets: 18
+  outlets_sample:
+  - 24 News HD
+  - Al Jazeera
+  - Anadolu Ajansı
+  - Banglanews24
+  - Breakingthenews.net
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiiwFBVV95cUxPdkNmMGllenFfdWxNVTJYWTF5b3h1Y3lVSmlhSmEwUHZjUC1jRTVQRUZCZ1p2SDFaaWZSRTdVOHNta2JwaFpTSjZyUHgzVUJ4WDdHUjJYeGdXR3Vycm1sdnRjSmdUdmwxQjVuU0tLTURmWXU4S2RRWmlVc3FfNTBzajUwQ0tNX1Z1WWZ30gGQAUFVX3lxTE9nNGYwUkF5QTdrZmVZSnEzSUdXLUt0YURGSFRiTXNQcHZEUXlkemFzTFBxX3JXRzRwQmViNHJJZjdvR0dyNFdvd3piWlpmbVZhNzVaZ1BUTUVUckNmNVpYeW9SQVA4eGtIZHcxc0xiRXMyeGhaOFgwbC1TUG9kX1VaNWU1MTFwbUQ1dFZFVE0ydA?oc=5
+  - https://news.google.com/rss/articles/CBMiowFBVV95cUxNZ0UzZ2lBRWM5b0NRREZ1dUxjNGVlVmdBcXNUa0pzcTVKNmdkbkxhTjMwd05lejA5ZFotOENZd21heHVLQ1AwV2Ftck0zWG13ak1FY3lFOS1BbkhfaXJqWXZldXZ2Z3hKelNORHFhRmNrSHJvRWxxWENxbFB5SXhmakRrQVg4bkdQbXU3WjBJMDQzSG5NR0xEdm1POUpWSUpxbmJJ?oc=5
+  - https://news.google.com/rss/articles/CBMiXEFVX3lxTE5jbkN3dGZiMHJJbXdfWmx5ME5OOGFGU0Z6U2FUTFRycHBfTFE1cHN6bWVHLVFxRDRwQ0NuSHBTMU5XcjI3WlZnQUFSdzhBNllUbmtjVzBPZnBJa1F3?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: anthropic-targets-2-trillion-ipo
+  headline: Anthropic Targets $2 Trillion IPO
   distinct_outlets: 17
   outlets_sample:
   - AOL.com
-  - Business Insider
-  - Business Today
-  - Crypto Briefing
-  - Cybernews
-  source: google_news_rss
-  status: candidate
-- id: google-s-got-spirit-yes-it-does
-  headline: Google’s got Spirit (yes it does)
-  distinct_outlets: 16
-  outlets_sample:
-  - 9to5Google
-  - Air Data News
-  - Axios
-  - Business Insider
-  - CNN
-  source: google_news_rss
-  status: candidate
-- id: bytedance-signs-ai-copyright-pact-with-hollywood
-  headline: ByteDance signs AI copyright pact with Hollywood trade group
-  distinct_outlets: 16
-  outlets_sample:
-  - Business Standard
+  - Borneo Bulletin
   - CNA
-  - CryptoRank
-  - Cryptopolitan
-  - Indian Television Dot Com
-  source: google_news_rss
-  status: candidate
-- id: can-anthropic-really-hit-200-bn-in-revenue-by-20
-  headline: Can Anthropic really hit $200 bn in revenue by 2028?
-  distinct_outlets: 13
-  outlets_sample:
-  - Communications Today
-  - Euronext Markets
-  - IndiaIPO
-  - Indian Television Dot Com
-  - Moomoo
-  source: google_news_rss
-  status: candidate
-- id: no-safe-harbour-shield-for-csam-violations-govt-
-  headline: No safe harbour shield for CSAM violations, govt to Meta
-  distinct_outlets: 13
-  outlets_sample:
-  - Business Standard
-  - Communications Today
-  - Firstpost
-  - Fortune India
-  - India's News.Net
-  source: google_news_rss
-  status: confirmed_thread
-  thread: meta-ai-csam-ads
-- id: universal-health-services-buys-talkspace-for-835
-  headline: Universal Health Services buys Talkspace for $835M
-  distinct_outlets: 13
-  outlets_sample:
-  - Digital Health News
-  - Fierce Healthcare
-  - HLTH
-  - HealthExec
-  - MobiHealthNews
-  source: google_news_rss
-  status: candidate
-- id: oil-edges-higher-as-middle-east-tensions-linger
-  headline: Oil edges higher as Middle East tensions linger
-  distinct_outlets: 13
-  outlets_sample:
+  - Capital Brief
   - Crypto Briefing
-  - KWSN
-  - Reuters
-  - Seeking Alpha
-  - The Business Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxOMk1jWVItbFo0a3hieHZtSlZUQzRtNW0wMW9DOWd4ZWJyai1STHpQMldjMkp2Xzc2ZXduX3FWQnJsUjdkenQyWGZvLXNIZ1B4NENEZ2VqVDFQdi1Yb1dVZkxJazVlbEgzUFhTZnI3Qm9QeElsdk1VWjdsTncwaUh5Zm1udw?oc=5
+  - https://news.google.com/rss/articles/CBMitgFBVV95cUxQS3NPZXhWdWtOcGJrRG52dVhpYmowSEIyWTVNNWcxYXBiclVBUE5KZW85bHhZYVBUX0xsQ3NPclRKV0ZZLWV0eFFfdUNWS2Jod29nWWRvV2VjWnZ0UnBhOWxvaXFURkhIOEdubnI5Mmk2TEhINWFXaTdtWFNnQlZWZ3hDTkdJMy1OeXlteDEzVWpkWTRuTWJEcU9MVS1GRjE0OEp5WF9kNDY0X254dFZ6ZzhkVmZOUQ?oc=5
+  - https://news.google.com/rss/articles/CBMiugFBVV95cUxNakpwQzBLUVhrWUZOcElqdmVsZkEtUXFpdHdrVVVHQnJzbm8tYWVQMDhDMi1pYl9HY2Q2T0k0WEpwdDVSZlp2QmJ3VXN2b3E1Z2ZmZEhkWWc2VjIyQ0p1dy1MSEZYTHo5em1GUmphNW4xcUZ6QlB2ZklfaXFLWEpvbWZBck5EM1I3bUZWSERsR0t2Z3p6ZDRuMlZJcWZ3eE9MS0wtdlNjMnhJWjlBN1VsamhKS1hvTUd5b2fSAboBQVVfeXFMTWpKcEMwS1FYa1lGTnBJanZlbGZBLVFxaXR3a1VVR0Jyc25vLWFlUDA4QzItaWJfR2NkNk9JNFhKcHQ1UmZadkJid1Vzdm9xNWdmZmRIZFlnNlYyMkNKdXctTEhGWEx6OXptRlJqYTVuMXFGekJQdmZJX2lxS1hKb21mQXJORDNSN21GVkhEbEdLdmd6emQ0bjJWSXFmd3hPTEtMLXZTYzJ4SVo5QTdVbGpoSktYb01HeW9n?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: red-sea-oil-shock
-- id: alphabet-eyes-inaugural-australian-dollar-bond
-  headline: Alphabet eyes inaugural Australian dollar bond
+  thread: datacenter-backlash-capital-risk
+- id: openai-introducing-new-chatgpt-feature-for-teena
+  headline: OpenAI introducing new ChatGPT feature for teenagers
+  distinct_outlets: 16
+  outlets_sample:
+  - AOL.com
+  - Anadolu Ajansı
+  - CNBC
+  - CTV News
+  - Firstpost
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxOQ1doUkxoU0tsZWdKS3pSZm1mYTBTazcweVc2U2xXZV82OXNtcWQ3MkdZQ2F5LWlCVE0zakVpUGNYd1pQTF9DQ1lhMk9VLTNpcHRPTzJrSFpwMFZOQUNoQjl0OUo5aWRFZlczU1lOdFhHVlpnM000VDhQUVBjaVlBc3pkd9IBiAFBVV95cUxPcEJkWVhZWXUtUlRTczBRU25JLVpXeFoxamhNa01ZUTRUbjZWY05rdGE3aS1hWnd0RnB1RFpaWFp3TWhBVFloV2ZFVnppZ0JWV3daalVVUW5qS2ZmSTQyaWhBeHQ1czRkdmRER1J1UlY3TUZSNVpUT2Q4Zjc1Nkc4WGlvU2F6Q2py?oc=5
+  - https://news.google.com/rss/articles/CBMihgFBVV95cUxNaEY4bzZaNkVfVkUwYm9SZGNyODlkOXR2aWxjVjZnM1ZCYW0tWVlxTmlkeWJqVXBvaTZHY2FaUVN6QklxSTZiMWFQOU1hRUp5Um5vM291M1ZHTUtqU2RlV2FJS0o3RWV2RjN6TnhuZC1xMnhqdVJaY1pieVFsVFI1UkdabjRmUQ?oc=5
+  - https://news.google.com/rss/articles/CBMivgFBVV95cUxQNDlUazZZNnYtWlRYUkxxc3VuSFVwVFVCRjBpR2V1a2tiSS1iMUFORXkzWGduQlpGVldVR0FCeGNZdXBjSHVKVVVuOEdLaEpPQUxTd1JYaTExZURiS1dBNk1na1dyc2tESVk3TmNlTnBkdGV1bURRZGZSb0JxTDVIdlFqdXRCVlhQRWRlNWtPNUdwd3JvTG5UbWIwdFpUZ1BBQ3hxNnJBYVdubHF0VUNLVlFiWndPWTRCQk9HNU5n?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: nippon-life-openai-suit
+- id: apple-announces-new-mac-mini-with-m6-and-m5-pro-
+  headline: Apple announces new Mac mini with M6 and M5 Pro chips
+  distinct_outlets: 14
+  outlets_sample:
+  - 9to5Mac
+  - Apple
+  - Business Standard
+  - Investing.com
+  - Macworld
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitAFBVV95cUxNYnV5OXRDNXRyNUp1bUltLXBkSC1kMHFSWUJkem0tbjZ3YVhaOTQ5eWpBbWlBR0gwZkFTUnViU1pzOExTZjlhRS1kTmt5cjdXUGROT0ZXdnB2TzJVRGNIYTE4X1dBdG5LdXB4RjladGFOdlpheXBodGo3SmVTSXVnVC1xSXZ6ejJIVEROOW1OQ3l2VVN6cWIzbWxWNWp0MW9MdUVCV2t0NGI3czh5UjFXMHhTTkY?oc=5
+  - https://news.google.com/rss/articles/CBMiiAFBVV95cUxOT2s4ZXBRclg4b0Jyd0RaTnFEdWRFaEYzcUlEdDJDT1RFYWdtMXRRYllHTmk5QW9RTUliVURPcEhzNlJ4aFd1Q1FmNTktWmlUUHhtRlFhOHB2TXJETWtPZFNfeXFDUGxQenZtZ2J1cFNMVHYxQTNoNDc0bm5NMWJkSHV2X3h0NHZM?oc=5
+  - https://news.google.com/rss/articles/CBMifkFVX3lxTE52NlNsb090Wmhydi0zc2Y4dWlEVk9zRE53eXAzNWRnbG5YYUF5Y053TGJNZXRDQ3R3NlFjbWNadkVpNk0ydzNxcHJvSF8tQ0plNllxSWY0NTA3eWQ2cFhya0dBZ09RTXpxR2d2OFlzS2M5SXRVeEdnWm9ERzBFZw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: mac-studio-gets-update-to-m5-max-and-m5-ultra
+  headline: Mac Studio gets update to M5 Max and M5 Ultra
+  distinct_outlets: 14
+  outlets_sample:
+  - 9to5Mac
+  - Apple
+  - AppleInsider
+  - CNBC
+  - Engadget
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxNM2ZxQ3lxQ1NUai1ZSFpUZldZS002TWl2d3JKSTNrRHRGdml1SnBjZVlzZ3d1NDctbzhGNVJNZWpQelh1WUZseWFKQ3hYMnNlLV9JWVpXaG9lcVJfUXMybmhNNlBhc1R5X2lJTTZUdVNqbXdOczBWNkMzQm11T0dwcVdtcWE2R1pmcVk1YTRkLUpHLTJORVBtZTVDZXE?oc=5
+  - https://news.google.com/rss/articles/CBMi0AFBVV95cUxOY3N3U1VoRk53UEJrVmdaQmhleVZsRnZkLXpjdVpjLWhtbVo4emVzT1JRQ05VTWo1YklRVFRoRXY4T1JCeHFfSlA3RkZFS2kxYjlvVTIwamRzMWVjNGZ4MUJkckVnaXdqRDFudGN1WkJHczhOaUNIYklWTDJpX3FGSWFiZ3VKWTJZSk1fTjM3NzB1LWgwRG4wdFF3WUJULU16MndibXNHelI1a1MyTm1yVmJsMFdmMlVuS3F1eVNrX1ZJV0xaOFI4VlB5WWNxUmV4?oc=5
+  - https://news.google.com/rss/articles/CBMikAFBVV95cUxPWW5lN2FhVkxOb2FJSk9XRGVuX1h1eU9mWkFuUUJEaGpRMVVoM3RYYk10eGhib3hBOGVaV1RCMTk1Z3hPWHdDUjQycmhCVHJNclFUSFFaZnltTE14TTBGc29JYTFES0RTZlNSU0NlU213UEFxZDdqRzUtcnBURURFdnRwVUhQMnhKLU1Id1d0ekU?oc=5
+  source: google_news_rss
+  status: candidate
+- id: this-isn-t-mark-ruffalo-s-first-antisemitism-con
+  headline: This isn’t Mark Ruffalo’s first antisemitism controversy
+  distinct_outlets: 13
+  outlets_sample:
+  - Anadolu Ajansı
+  - IMDb
+  - Los Angeles Times
+  - Metro.co.uk
+  - NBC News
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiuwFBVV95cUxQMFFhVmcwYXlMT2U0eEtpZDBpVnE3X0IxWkNVMi05V3hrR3owalVXSW9fWEFxV2xoYXpYczVhTzNlcFFxNFVIekpselZQUHNaSi1NQjQzUzlsbjRJaW5FTkRoR2VXM0Q5UnktOXd6RG9Bem5HbWZrN09KZnZKd3JrYWctUWRWQnpmd01mSUlVMUtodmQ2WXA5VjRUOThYdE95dUh6NDJtalpENEVPeGNYdWliQ2J2OXRYQWZJ?oc=5
+  - https://news.google.com/rss/articles/CBMiaEFVX3lxTE1IbV9hSTdXamxBRkFtQWpCOWFtSzJpYzVZX1NHbVl4Z3pvSUsteHZnTnFhQXpMdml6QjBCU0RRckN6Z3JJUGRNQ3BXT2oySVJtQTg3MG9SbTFWVTB3Rl9WTzFMd3hhMzhv?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxPQlh3LWdqOUxKOGRJS1I1Ql83OVdFa0FMbWR2aEZyem9oRDJWZVdQVS1PcHUxWGV4dmpZOU4wVTFNOUF4OURqSXdEakhEUF9YaGUxOTJLLXFuYjdsQ210V29UTVg3NjAxZndnN2R5QVhOSFNqX2tfcTM0LTh6Ynl3SEoxS2x4a1hZVDNfTVhTNnRxckdaSUthZEdleGhIZTZjRS05eUkyZXloUXVybExFTU02OC03M1VJN3haNF9JcnVsaEU?oc=5
+  source: google_news_rss
+  status: candidate
+- id: gold-hits-over-3-month-high-ahead-of-u-s-inflati
+  headline: Gold hits over 3-month high ahead of U.S. inflation data, Fed chair speech
   distinct_outlets: 12
   outlets_sample:
-  - Crypto Briefing
-  - NewsBytes
-  - Newswav
-  - Reuters
-  - Seeking Alpha
-  source: google_news_rss
-  status: candidate
-- id: nvidia-guarantees-usd-105-billion-for-openai-dat
-  headline: Nvidia Guarantees USD 105 Billion for OpenAI Data Center
-  distinct_outlets: 11
-  outlets_sample:
-  - BeInCrypto
-  - Watcher Guru
-  - Yahoo Finance
-  - asatunews.co.id
-  - bloomingbit
-  source: google_news_rss
-  status: candidate
-- id: motion-picture-association-bytedance-ink-ai-copy
-  headline: Motion Picture Association, ByteDance Ink AI Copyright Pact
-  distinct_outlets: 11
-  outlets_sample:
-  - BW Marketing World
-  - Crypto Briefing
-  - MediaNews4U
-  - NewsBytes
-  - Social Media Today
-  source: google_news_rss
-  status: candidate
-- id: anthropic-adds-invisible-watermarks-to-claude-us
-  headline: Anthropic adds invisible watermarks to Claude using Google tech
-  distinct_outlets: 10
-  outlets_sample:
-  - Android Authority
-  - Crypto Briefing
-  - Firstpost
-  - Latest news from Azerbaijan
-  - The Duke Chronicle
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-mai-openai-decoupling
-- id: alibaba-and-meta-bring-open-ai-models-to-laptops
-  headline: Alibaba and Meta bring open AI models to laptops
-  distinct_outlets: 10
-  outlets_sample:
+  - Ammon News
+  - Business Standard
+  - BusinessLine
   - CNBC
-  - Convergence Now
-  - Silicon Republic
-  - The Malaysian Reserve
-  - The Straits Times
+  - Firstpost
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMipwFBVV95cUxQNGxqTWFDclJZX1VkZVk1ZVd1VmFSWUxrUUtsamRiQWppQm1rNnZ4ck5SYkd0YXJVb0Z5blpURF8yaWtWX0s0cWgwSElJbHg1Zkx5SDJXS3pkelhaYktUTno2bnNuMzJnMmdpbzJMQXlOR3djaHExUlhaaFZkMWxWU2xlaUpLcXhKamxaMFlYc2FKTTUyRGlHMWd4clg2T3E2MG9VSnNNa9IBpwFBVV95cUxQNGxqTWFDclJZX1VkZVk1ZVd1VmFSWUxrUUtsamRiQWppQm1rNnZ4ck5SYkd0YXJVb0Z5blpURF8yaWtWX0s0cWgwSElJbHg1Zkx5SDJXS3pkelhaYktUTno2bnNuMzJnMmdpbzJMQXlOR3djaHExUlhaaFZkMWxWU2xlaUpLcXhKamxaMFlYc2FKTTUyRGlHMWd4clg2T3E2MG9VSnNNaw?oc=5
+  - https://news.google.com/rss/articles/CBMi1gFBVV95cUxNQjVUODNoOG9zQktDQjR2bHVFU195cnJrb0V1eGJmTnZvdE5rd0NrVkcxbFotZDFfc1lhSk5lb3E2NHdFelZSdFhWd0d4aVZWdFpJZXdET3RieU44VUNETlczV1RscmxqdUlRN3ZTcmpXd0ZCeFc2Q0lPeEs4QmRJaVViOG5LNlZiXzFnQUJNSkNGTG1FZWcwRVlmbEF6OTJLUGcwVnA4b3AwQjAyZ2FsQ0JTS0E0RDRZUXU0ZF9tVDRROHEyTWVqdWpDYmU1SkswVXFvLThB?oc=5
+  - https://news.google.com/rss/articles/CBMi2AFBVV95cUxQRlNwQkZpQnZtS3E4dk9uRTJxeEhaRlNVTFREQ2FUdnlLaFBIMmppbVowTkxpVlJma204aDJISTZRbG1UM0lNVUlqWlJVWlhhdWctRWJ2LXVkMHpqd0o2TWxhcnBIOFctaTBCay0xTmIxSW9FZmJRTTYzQUJSTjlaZ0hlTWplMnFRTC1rRGtSdW5neF9BT25qNjVTX2xzb1NILXZKalI0azRNNXYya25sMzNqOVlrSUxwM0hnbXpFcVRkN1RDcnFiX0t5U1hMVE5jQW1BRlNLZ0Y?oc=5
   source: google_news_rss
   status: candidate
-- id: samsung-galaxy-z-flip-5
-  headline: Samsung Galaxy Z Flip 5
-  distinct_outlets: 10
+- id: saudi-france-economic-partnership-in-focus
+  headline: Saudi-France economic partnership in focus
+  distinct_outlets: 11
+  outlets_sample:
+  - AOL.co.uk
+  - Al Arabiya English
+  - Arab News
+  - Arab News PK
+  - Business Upturn
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMikgFBVV95cUxOcUZsZzNpWTBhamJ0dnBsLXB1dEgxTzJVM3Q1Z2Y0VDNFV19FaDd0TVNDb3BCbzkzYU82ZlBGWndJR1R6aXRPanUybWI0TUtjZTFMWEhVakhIVU9YNGYzbHlGcUo2d0ZiREloakxsb1JDZ1dwQmFlaVdiWmlTQWlzNXRvRUNfeEg1MnJWd2Z6cThUZw?oc=5
+  - https://news.google.com/rss/articles/CBMilwFBVV95cUxOMmkwWjRHVnYyTmI4cnRwbzVLYlRpQ1dHcWlRd0dGREtBdURzX2tQUjZHam1EODhFcGl2aC1MTHQ1eXMxZE5lYW04Sm5EZEJSZTdpM0lGcGZDSTVsZjJxcVFMTURoOHZtUE1fME1mZ1VZWHkzWkVhWFVWY2tZelMtSTVsS0ZHNUZQOC1ObDFULXByUXBNd2tv?oc=5
+  - https://news.google.com/rss/articles/CBMihgFBVV95cUxQbnRrRkhUZzFKVUYzVlB1eTdsQVc5TmNFUHRTUW5UVl9ZOTlKOUJ0VGFMOFhDenVmaVg5RG9fZ3B6eWU0aUNuLWxiVW5MZDY0dC13VVVsN2Q2TFVUYTl6cmVocUVYcWd6RmRUYWkzeVotTVNNVkV3OVlzelNTcm9JcTRtOUdmUQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: apple-bids-farewell-to-tim-cook
+  headline: Apple bids farewell to Tim Cook
+  distinct_outlets: 11
+  outlets_sample:
+  - 9to5Mac
+  - 9to5Toys
+  - India Today
+  - Korben
+  - Letem světem Applem
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMifEFVX3lxTE5mTnhRcjc3dk9GSEQ0YXVLclNtZDVuLWFYZlcyQVFmcFFpU0Rfa0RNSXVkMndMVHpwUmd2SVZwQVAyMjZvS2hjaUZBcHczdm5OZHlFb1Ftek96V0lqSDJRU3Y5Z3BGZi1KT05xR2RFc1BGNkZyMEh6LWJHOUQ?oc=5
+  - https://news.google.com/rss/articles/CBMifEFVX3lxTE8wbktRVzZBbmNycmtnRzhfNEtEM2dnR1FucHVwY1d0eXNTNHd4cEl3VmFiMUlrbE5iVEhkQnJDTkVyUEhheG45ekF4cTNETEpzcFZvbWNUTm53bUZlNmtLcUNRMWY3QnF6Yzd6bEx2UlR4cXpjWkZzLVdkcmY?oc=5
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTE1SZmNZRjdZWmQ0dHVfUjdIOWFmeHdhYWlGeDE3WEdFQmdQX3F2MXFaUjdSaTRMTzdyWjRGOHczLUpMTDQ3Tmt3ZzV4TVN2REFOMGdHcDRnak5WdTBIN0NnSHZHeWtSLWFYRGlkc2tfUU16SDl2c2c?oc=5
+  source: google_news_rss
+  status: candidate
+- id: samsung-galaxy-s27-ultra-takes-design-notes-from
+  headline: Samsung Galaxy S27 Ultra takes design notes from iPhone 17 Pro
+  distinct_outlets: 11
   outlets_sample:
   - 9to5Google
-  - AL.com
   - Android Central
-  - Android Police
-  - Mashable
+  - GSMArena.com
+  - Korea JoongAng Daily
+  - Notebookcheck
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxNY0hfWVFTWW11SDBNT0tVd3V3TjRmZk5jMWFFVkxJalNWNjZFdDlFbnVSREhKTGRTUUtVaERZZjhzSW1fbXhPcEJqNFhMandmLVRDdkdodUdvQUZYV3hsRlMxVUQxY0RnZUVzTTVfazVESVJtamd1ck4wSmsxWEFnak5FOTI4WUdmU2gyX2t5b0NrbG0wMklTSFJZY01rSG1uNzRaM19SZUc4NC1CcUE?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxONG9CaUh0Sm12RFBnYlhHc3drZThKTUk0a2VOaUtTVVdUbW92UWVSaFFKbURUMFVvbDhnZUI1aHBfWjhhMDZfYUFlem5hMW9EVnoyallMQjVJOTlyanY4NWZaUVJtbk1ObmlYWlBCbDdpbWVhT1phMHQ5NVhIRmJFSFM2bjYtSTlYMzNlNnZpR1ZhUTg0ZWtUeg?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxQME5PcHE4bE9COVpmNFRoQWx2VkRSNTJYd0pfSVNRMmhranJjS1BoMmhVNXNPeHhaV3B4aVpFLWRuRWJLaDJ1Vkl6a0hpRFNhaGVBdFppZTJNc1IxcU42b2VqeTA3TFVrVVZBamtsak52eGUta2VEa2pCeHFxU18xcWF3XzhXZm1JcW1OakU2bWFaQ3NYRzBSag?oc=5
   source: google_news_rss
   status: candidate
-- id: groq-secures-350m-to-boost-ai-inference-capabi
-  headline: Groq secures $350M to boost AI inference capabi...
+- id: spacex-falcon-9-spotted-over-upstate
+  headline: SpaceX Falcon 9 spotted over Upstate
   distinct_outlets: 10
   outlets_sample:
-  - CryptoRank
-  - Data Center Dynamics
-  - Investing.com South Africa
-  - Pluang
-  - SiliconANGLE
+  - AZ Family
+  - Boston 25 News
+  - FOX Carolina News
+  - FOX5 Vegas
+  - KPTV
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiwgFBVV95cUxPNUZ3UWZVR2ZvQkR4UXVfWkZnUlZnT3VOcXNNRm5XTTZFRm5VQktVOVN3U3Y0WnVpTzhERHFGWXVfaDFUSDRuYUlKdWloOU5xVVBFZm5QQjRlNjg5d2J1V2FIRUFobWQwRjZvclBqNGlZdmUxQnlOMzVqOHhhTjJnRHBfWGVmclJER1hVYm9QTVhiRnN2YVJrZ1lDT3JrRTBlakhQaVpsSGhRN1pHSncwaHotWlZHNlhBTDgySF8zbjJKZw?oc=5
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxOOHA2QXltc0o0ajMwenpEM2JiMjQ0STF0MzU5SmF6bDNYZWJ2TG5hNjVLY1UxNVVyd0g5M2hRRFk4WkwxcXNxTFFCaTZxaTRXaGJHV0ZZU2pIeWlXYkNNNUZLY2djb3RYZjNPeGl4Um5pSTVDRjZTcXMweE83cGpiNVUwWXdYM0l4VlE?oc=5
+  - https://news.google.com/rss/articles/CBMigAFBVV95cUxQblZOSWVELWQ5ZnRtd0dELUJVNzNYVm9XeXY2aDFUcGg2X1UtTmZNeVpXNGNHX3RoSmViZUhoM3JPdzZKZk8xRmo0blBFTVdHdjJnVzI5UVlPOHdmd2JNOFFzazJNMm1Sb0VKWWY3VjVvc3g2UTVSSDU0TG12M0l4bw?oc=5
   source: google_news_rss
   status: candidate
-- id: stripe-strikes-mega-deal-for-openrouter
-  headline: Stripe strikes mega-deal for OpenRouter
+- id: softbank-sells-lenskart-stake-worth-2-888-cr
+  headline: SoftBank Sells Lenskart Stake Worth ₹2,888 Cr
   distinct_outlets: 10
   outlets_sample:
-  - Adgully.com
-  - Axios
-  - Crypto Briefing
-  - Pluang
-  - RTE.ie
-  source: google_news_rss
-  status: candidate
-- id: gravis-robotics-raises-200m-from-softbank-to-a
-  headline: Gravis Robotics raises $200M from SoftBank to a...
-  distinct_outlets: 10
-  outlets_sample:
-  - Crypto Briefing
-  - Dealroom
-  - Investing.com
-  - Pluang
-  - Sifted
+  - BW Businessworld
+  - BizzBuzz
+  - CNBC TV18
+  - Dailyhunt
+  - ET Retail
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxNeGxDSXZiNmVRYTVGV2VuMm9Bc3daMTBfcGppTTh3X1BDdUw4S1pZejlxNG5VaFk4V3p1bEJ5MmNQeF9oUnhhc2xIc29GVEZzbTdrM092MVlNT3ItQ2tHZWk4eGt5ZW5wRkpMUDdwTWFhZTJrVjVKTnZwaUd3ejdHalFPc1VoRzN6VHdTUlZzSVN4R1c5?oc=5
+  - https://news.google.com/rss/articles/CBMi8wFBVV95cUxOT21tekpZVHVwTzlid3o0TkxabHJoaVZ6T0RhR2w2MUFsNWhfd2ZWQXZLc0dzTlpHTUk3N3RJYW9Vb29lTUkxV1FqQnBIdkpTTkx4SDdRVW5ETWEyNHVYWG1GbEVGZ21MaWlvMFM2ek53bTVNTjZGd2lKdFh5Tk85bFU5YmM5SS0yTVJrRHdaMTl6dzVqR0RWd1JnVzNOT01wMzBvZmNEaDctUlRQeVVXNzIxNUxGRENJekwzSVBiLVlSQ2lwYXJVcEN4b2w3N3Y0dnpDRGdBZEhYSjdCUlZWU29qZC1feDJPZzRNcS1WaWljYkU?oc=5
+  - https://news.google.com/rss/articles/CBMiuwFBVV95cUxQc3hjRE0xRExfT1NfZXlJWjFuaWZCbmZwUGJhVGZGVnp5WmtjWlQ2ZWpOWWV4cVc0SVN3ZW9KMlpzdWdUS1lBNXVERjRRajdHQ2xMTHJzTGUxaERtSU9MdS1yLXZESzVGYUpOcV9DcDFMakpIMWVDZ1pHQjVzZ1RDYkFlaXpTWU1GN1lQMzM2cldwdTZ5cW4yT2RQLUZKQnhFSFI4cGlyQ01xSXpZS0JzRlZnSGpCb1loX0ww0gG7AUFVX3lxTFBzeGNETTFETF9PU19leUlaMW5pZkJuZnBQYmFUZkZWenlaa2NaVDZlak5ZZXhxVzRJU3dlb0oyWnN1Z1RLWUE1dURGNFFqN0dDbExMcnNMZTFoRG1JT0x1LXItdkRLNUZhSk5xX0NwMUxqSkgxZUNnWkdCNXNnVENiQWVpelNZTUY3WVAzMzZyV3B1NnlxbjJPZFAtRkpCeEVIUjhwaXJDTXFJellLQnNGVmdIakJvWWhfTDA?oc=5
   source: google_news_rss
   status: confirmed_thread
   thread: softbank-all-in
-- id: jane-street-reports-over-1b-in-bitcoin-etf-share
-  headline: Jane Street reports over $1B in Bitcoin ETF shares
+- id: what-to-expect-out-of-fed-chair-kevin-warsh-at-j
+  headline: What to expect out of Fed Chair Kevin Warsh at Jackson Hole
   distinct_outlets: 10
   outlets_sample:
-  - Blockonomi
-  - Coin Edition
-  - Cryptopolitan
-  - HOKANEWS.COM
-  - KuCoin
-  source: google_news_rss
-  status: confirmed_thread
-  thread: coreweave-backlog-bet
-- id: nvidia-to-provide-up-to-105-billion-guarantee-fo
-  headline: Nvidia to provide up to $105 billion guarantee for OpenAI's Ohio data
-    center
-  distinct_outlets: 9
-  outlets_sample:
-  - CNA
-  - ET CIO
-  - India's News.Net
+  - Benzinga
+  - Crypto Briefing
+  - Firstpost
+  - Forex Factory
   - Moneycontrol.com
-  - Nikkei Asia
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiqgFBVV95cUxONUxtOXVqcy1zbXJOLXpIbVl5UFZiUlB0NlpEcHZlaW1qMDV5b2ZmUVdhRzNDbXdvYnYyamN0OWhvcUJaUTl0Y3BMZ0lVYWU3VlVzUl9LVXF4YUk4YnBMeno0cmJNaUpoeEFFcG5SWjBCVW8zblJCR1ViX2JBbXA2S0ZSUXh2RVJLYVJNMG1aYlRMcFpzaWkwMTFVRkhCeWFsQ1VmZFczbmZsZw?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxOYzJ1cVl2Ny1WanlFSEpJczFRQ19DSnJoeUJQNmwxNFVvZm1OUXVodzRPVElZZXBNLW5Ndnp5REdRRjB5Z19fREtlX09qNXBtNll3WlBud3ptZnFtdWtwbzFLVkw2MHJId3FXMGFhZTF0d2x0ZnNsdUthU1ZmaW1URmIzZ1kxR0JUU2lwTG41aE44YlotT3hIUjlDZ1VhSThxelVTNjRreWhnbWtqRjZEMjhLekJuWDZfZUFqcVJGcDJnZk0?oc=5
+  - https://news.google.com/rss/articles/CBMivAFBVV95cUxQU1REenRUeXdxa0x1MV8zYlg0bzhSdmNiZWJ6LUxKTndJeTdZOGstaUM5WE91a3ZMVE9Pa1NUOV9xQ1hqZmZIWmhKa0dqY1czamVvVkFwd2dBemRVYkdNalE1Y0JaYW1tb2x5Q1VvMTVYd3RURjBBbTh5T2ZMTWdnTXBoWF9IdldlRC1NRGFXdkVLS0JKeTJNSHJGdDMxYnFtbmxGd3RLYjVFUEtrNTFMd3JmeUFYUlV5aVU0RNIBvAFBVV95cUxQU1REenRUeXdxa0x1MV8zYlg0bzhSdmNiZWJ6LUxKTndJeTdZOGstaUM5WE91a3ZMVE9Pa1NUOV9xQ1hqZmZIWmhKa0dqY1czamVvVkFwd2dBemRVYkdNalE1Y0JaYW1tb2x5Q1VvMTVYd3RURjBBbTh5T2ZMTWdnTXBoWF9IdldlRC1NRGFXdkVLS0JKeTJNSHJGdDMxYnFtbmxGd3RLYjVFUEtrNTFMd3JmeUFYUlV5aVU0RA?oc=5
   source: google_news_rss
-  status: candidate
-- id: us-house-democrats-press-anthropic-openai-about-
-  headline: US House Democrats press Anthropic, OpenAI about rogue AI agents
+  status: confirmed_thread
+  thread: treasury-long-end-intervention
+- id: meta-hires-openai-veteran-luke-metz
+  headline: Meta hires OpenAI veteran Luke Metz
   distinct_outlets: 9
   outlets_sample:
-  - AOL.com
-  - Chosunbiz
-  - Crypto Briefing
-  - Inshorts
-  - Neowin
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-mai-openai-decoupling
-- id: instagram-facebook-could-change-forever-if-meta-
-  headline: Instagram, Facebook could change forever if Meta loses child privacy trial
-  distinct_outlets: 9
-  outlets_sample:
-  - BBC
-  - Business Standard
-  - Business Upturn
-  - CNBC TV18
-  - Daily Mirror
-  source: google_news_rss
-  status: candidate
-- id: institutional-investors-are-split-down-the-middl
-  headline: Institutional investors are split down the middle on Big Tech
-  distinct_outlets: 9
-  outlets_sample:
-  - Crypto Briefing
-  - EnterpriseAM
-  - Invezz
-  - Las Vegas Sun
-  - NJ Spotlight News
-  source: google_news_rss
-  status: candidate
-- id: sam-altman-is-being-proved-right-about-the-econo
-  headline: Sam Altman is being proved right about the economics of AI
-  distinct_outlets: 8
-  outlets_sample:
-  - AFR
-  - AOL.com
-  - Jang
-  - Mashable
-  - News Anyway
-  source: google_news_rss
-  status: candidate
-- id: anthropic-ceo-defends-balanced-ai-risk-messagin
-  headline: Anthropic CEO defends balanced AI risk messagin...
-  distinct_outlets: 8
-  outlets_sample:
-  - 36Kr
-  - Crypto Briefing
-  - Pluang
-  - TechCrunch
-  - The Daily Star
-  source: google_news_rss
-  status: candidate
-- id: nvidia-discloses-21-billion-spacex-holding
-  headline: Nvidia discloses $21 billion SpaceX holding
-  distinct_outlets: 8
-  outlets_sample:
-  - Fierce Network
-  - Invezz
-  - MarketWatch
-  - PRESS Insider
-  - TahawulTech.com
-  source: google_news_rss
-  status: candidate
-- id: why-does-wall-street-hate-apple-now
-  headline: Why does Wall Street hate Apple now?
-  distinct_outlets: 8
-  outlets_sample:
-  - AOL.com
-  - Business Insider
-  - Crypto Briefing
-  - Finbold
-  - LinkedIn
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-circular-financing-risk
-- id: einride-strikes-deal-to-add-500-tesla-semis-to-i
-  headline: Einride strikes deal to add 500 Tesla Semis to its fleet
-  distinct_outlets: 8
-  outlets_sample:
-  - Electrek
-  - Investing.com
-  - Reuters
-  - The Lufkin Daily News
-  - TradingView
-  source: google_news_rss
-  status: candidate
-- id: fortinet-buys-virtue-ai-to-bolster-ai-security-t
-  headline: Fortinet buys Virtue AI to bolster AI security tools
-  distinct_outlets: 8
-  outlets_sample:
-  - IT Brief Asia
-  - Industrial Cyber
-  - Investing.com Canada
-  - Investing.com Nigeria
-  - SourceSecurity.com
-  source: google_news_rss
-  status: candidate
-- id: nvidia-secures-8-gw-ohio-ai-data-center-campus-f
-  headline: NVIDIA Secures 8 GW Ohio AI Data Center Campus for OpenAI
-  distinct_outlets: 7
-  outlets_sample:
-  - Bez Kabli
-  - Construction Review
-  - HPCwire
-  - Pulse 2.0
-  - Windows Report
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-circular-financing-risk
-- id: tesla-cybercab-launch-preparations-have-begun
-  headline: Tesla Cybercab launch preparations have begun
-  distinct_outlets: 7
-  outlets_sample:
-  - ArenaEV
-  - Electrek
-  - HR Katha
-  - Reuters
-  - Teslarati
-  source: google_news_rss
-  status: candidate
-- id: cxmt-s-rise-to-most-valuable-china-firm-heralds-
-  headline: CXMT’s rise to most valuable China firm heralds new tech era
-  distinct_outlets: 7
-  outlets_sample:
-  - AOL.com
-  - Communications Today
-  - South China Morning Post
-  - The Edge Malaysia
-  - The Straits Times
-  source: google_news_rss
-  status: candidate
-- id: man-found-dead-near-silver-lake-in-everett
-  headline: Man found dead near Silver Lake in Everett
-  distinct_outlets: 7
-  outlets_sample:
-  - AOL.com
-  - India's News.Net
-  - KIRO 7 News Seattle
-  - NBC Los Angeles
-  - Staffing Industry Analysts
-  source: google_news_rss
-  status: candidate
-- id: jane-street-takes-a-15bn-loss-in-july
-  headline: Jane Street Takes a $15bn Loss in July
-  distinct_outlets: 7
-  outlets_sample:
-  - BusinessLine
-  - Crypto Briefing
-  - NewsBytes
-  - PRESS Insider
-  - eFinancialCareers
-  source: google_news_rss
-  status: confirmed_thread
-  thread: coreweave-backlog-bet
-- id: centene-cfo-drew-asher-to-retire-end-of-2027-c
-  headline: Centene CFO Drew Asher to retire end of 2027; C...
-  distinct_outlets: 7
-  outlets_sample:
-  - Insurance Business
-  - Investing.com
-  - Minichart
-  - Pluang
-  - Reuters
-  source: google_news_rss
-  status: candidate
-- id: greek-run-tanker-carrying-russian-oil-attacked-i
-  headline: Greek-run tanker carrying Russian oil attacked in Black Sea
-  distinct_outlets: 7
-  outlets_sample:
-  - Ednews.net
-  - NEWS.am
-  - Quantum Commodity Intelligence
-  - TradeWinds News
-  - Türkiye Today
-  source: google_news_rss
-  status: candidate
-- id: what-did-mark-zuckerberg-say-in-his-ai-manifesto
-  headline: What did Mark Zuckerberg say in his AI manifesto?
-  distinct_outlets: 6
-  outlets_sample:
-  - AOL.com
-  - CBC
-  - Inbox.eu
-  - Inbox.lv
-  - Yahoo Tech
-  source: google_news_rss
-  status: candidate
-- id: ram-from-china-us-government-pressures-apple
-  headline: 'RAM from China: US government pressures Apple'
-  distinct_outlets: 6
-  outlets_sample:
-  - GIGAZINE
-  - Memeburn
-  - News Mobile
-  - Tech Wire Asia
-  - heise online
-  source: google_news_rss
-  status: candidate
-- id: a-major-apple-watch-redesign-may-be-coming
-  headline: A major Apple Watch redesign may be coming
-  distinct_outlets: 6
-  outlets_sample:
-  - AppleInsider
-  - Boston.com
-  - Court TV
-  - Mashable
-  - NBC Boston
-  source: google_news_rss
-  status: candidate
-- id: apple-s-camera-equipped-airpods-appear-in-leaked
-  headline: Apple’s camera-equipped AirPods appear in leaked video
-  distinct_outlets: 6
-  outlets_sample:
-  - Android Authority
-  - Macworld
-  - PhoneArena
-  - The Verge
-  - digit.in
-  source: google_news_rss
-  status: candidate
-- id: china-starts-removing-microsoft-windows-from-gov
-  headline: China starts removing Microsoft Windows from government systems
-  distinct_outlets: 6
-  outlets_sample:
-  - Gulf Times
-  - NewsBytes
-  - Seeking Alpha
-  - The Japan Times
-  - The Straits Times
-  source: google_news_rss
-  status: candidate
-- id: morgan-stanley-resets-amazon-stock-price-target-
-  headline: Morgan Stanley resets Amazon stock price target after earnings
-  distinct_outlets: 6
-  outlets_sample:
-  - AOL.com
-  - Investing.com
-  - MarketWatch
-  - Pluang
-  - Seeking Alpha
-  source: google_news_rss
-  status: confirmed_thread
-  thread: chip-hyperscaler-rotation
-- id: notre-dame-training-camp-intel-the-players-alrea
-  headline: 'Notre Dame Training Camp Intel: The Players Already Turning Heads at
-    Practice'
-  distinct_outlets: 6
-  outlets_sample:
-  - KTVB
-  - WQAD
-  - cbs19.tv
-  - firstcoastnews.com
-  - kiiitv.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: europe-migration-schengen
-- id: trane-and-eaton-integrate-power-and-cooling-for-
-  headline: Trane and Eaton integrate power and cooling for AI data centers
-  distinct_outlets: 6
-  outlets_sample:
-  - Facilities Dive
-  - Investing.com UK
-  - Refindustry
-  - StreetInsider
-  - Techzine Global
-  source: google_news_rss
-  status: candidate
-- id: bills-open-practice-for-fans-tomorrow-at-highmar
-  headline: Bills open practice for fans tomorrow at Highmark Stadium
-  distinct_outlets: 6
-  outlets_sample:
-  - NBC Sports
-  - Operation Sports
-  - Sports Business Journal
-  - The New York Times
-  - WGRZ
-  source: google_news_rss
-  status: candidate
-- id: berkshire-hathaway-invests-17b-in-alphabet-si
-  headline: Berkshire Hathaway invests $17B in Alphabet, si...
-  distinct_outlets: 6
-  outlets_sample:
-  - AD HOC NEWS
-  - GreenevilleSun.com
-  - Pluang
-  - The Star
-  - marketscreener.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
-- id: applied-materials-reports-strong-july-revenue-b
-  headline: Applied Materials reports strong July revenue b...
-  distinct_outlets: 6
-  outlets_sample:
-  - AD HOC NEWS
-  - AOL.com
-  - MarketWatch
-  - Pluang
-  - TipRanks
-  source: google_news_rss
-  status: candidate
-- id: bain-capital-sells-5-64-embassy-reit-stake-for-2
-  headline: Bain Capital Sells 5.64% Embassy REIT Stake for ₹2,325 Cr
-  distinct_outlets: 6
-  outlets_sample:
-  - Business Today
-  - Fortune India
-  - HDFC Sky
-  - Rediff MoneyWiz
-  - Whalesbook
-  source: google_news_rss
-  status: confirmed_thread
-  thread: pif-ai-buildout
-- id: openai-introduces-chatgpt-for-teens-amid-legal-p
-  headline: OpenAI introduces 'ChatGPT for Teens' amid legal pressure
-  distinct_outlets: 5
-  outlets_sample:
-  - Ahram Online
-  - CNA
-  - Daily Sabah
-  - The Economic Times
-  - theedgemarkets.com
-  source: google_news_rss
-  status: candidate
-- id: nvidia-to-support-openai-s-new-ai-data-center-i
-  headline: Nvidia to support OpenAI's new AI data center i...
-  distinct_outlets: 5
-  outlets_sample:
-  - Dealroom
-  - NewsBytes
-  - Pluang
-  - TI INSIDE Online
-  - The Neuron
-  source: google_news_rss
-  status: candidate
-- id: anthropic-run-rate-revenue-hits-65-billion-as-ip
-  headline: Anthropic Run-Rate Revenue Hits $65 Billion as IPO Looms
-  distinct_outlets: 5
-  outlets_sample:
-  - Crowdfund Insider
-  - Free Press Journal
-  - Unite.AI
-  - Yahoo Finance
-  - entARABI
-  source: google_news_rss
-  status: confirmed_thread
-  thread: microsoft-capex
-- id: meta-continues-legal-fight-following-loss-in-new
-  headline: Meta continues legal fight following loss in New Mexico
-  distinct_outlets: 5
-  outlets_sample:
-  - KRCR
-  - Mashable
-  - The Guardian
-  - WSET
-  - WSMH
-  source: google_news_rss
-  status: candidate
-- id: iren-delivers-horizon-1-data-center-to-microsoft
-  headline: IREN delivers Horizon 1 data center to Microsoft, achieves NVIDIA status
-  distinct_outlets: 5
-  outlets_sample:
-  - Crypto Briefing
-  - Hindustan Times
-  - The Block
-  - Traders Union
-  - eciks.org
-  source: google_news_rss
-  status: candidate
-- id: google-buys-spirit-airlines-data-for-10-million
-  headline: Google Buys Spirit Airlines’ Data for $10 Million
-  distinct_outlets: 5
-  outlets_sample:
-  - Business Traveller
-  - Pulse 2.0
-  - TravelPulse
-  - finimize.com
-  - thetraveler.org
-  source: google_news_rss
-  status: candidate
-- id: oracle-drops-wisconsin-suit-over-financial-requi
-  headline: Oracle drops Wisconsin suit over financial requirements tied to data centers
-  distinct_outlets: 5
-  outlets_sample:
-  - AOL.com
-  - Milwaukee Journal Sentinel
-  - VernonReporter
-  - WPR
-  - Wisconsin Watch
-  source: google_news_rss
-  status: candidate
-- id: micron-sandisk-stocks-rise-as-investors-boost-ai
-  headline: Micron, SanDisk stocks rise as investors boost AI spending confidence
-  distinct_outlets: 5
-  outlets_sample:
-  - Crypto Briefing
-  - MarketWatch
-  - Moomoo
-  - Traders Union
-  - 富途牛牛
-  source: google_news_rss
-  status: candidate
-- id: saudi-arabia-takes-major-stake-in-spacex
-  headline: Saudi Arabia takes major stake in SpaceX
-  distinct_outlets: 5
-  outlets_sample:
-  - Advanced Television
-  - Arab News
-  - Free Malaysia Today
-  - Investing.com
-  - Tribuna.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: pif-ai-buildout
-- id: bytedance-mpa-reach-deal-on-ai-copyright-safegua
-  headline: ByteDance, MPA reach deal on AI copyright safeguards
-  distinct_outlets: 5
-  outlets_sample:
-  - MLex
-  - Tech in Asia
-  - UA.NEWS
-  - biz.chosun.com
-  - thedesk.net
-  source: google_news_rss
-  status: candidate
-- id: openai-revenue-chief-to-exit-as-company-advances
-  headline: OpenAI revenue chief to exit as company advances IPO preparations
-  distinct_outlets: 5
-  outlets_sample:
-  - Crypto Briefing
-  - TechCentral.ie
-  - Yahoo Finance
-  - digitimes
-  - moneywise.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: openai-ipo-timing
-- id: satya-nadella-s-microsoft-stock-jumped-18-in-a-w
-  headline: Satya Nadella's Microsoft Stock Jumped 18% in a Week After Azure's Annual
-    Revenue Topped $100 Billion for the First Time. Is It Still a Buy?
-  distinct_outlets: 5
-  outlets_sample:
-  - AOL.com
-  - Longbridge
-  - The Motley Fool
-  - Yahoo Finance
-  - currently.att.yahoo.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: chip-hyperscaler-rotation
-- id: analysis-big-investors-hunt-for-tomorrow-s-ai-wi
-  headline: Analysis:Big investors hunt for tomorrow's AI winners as capex angst fades
-  distinct_outlets: 5
-  outlets_sample:
-  - Buffalo News
-  - CNA
-  - Euronext Markets
-  - The Lufkin Daily News
-  - Y100 WNCY
-  source: google_news_rss
-  status: candidate
-- id: bills-legends-praise-new-highmark-stadium
-  headline: Bills Legends praise new Highmark Stadium
-  distinct_outlets: 5
-  outlets_sample:
-  - Audacy
-  - NFL.com
-  - WHEC.com
-  - sportingnews.com
-  - yourerie.com
-  source: google_news_rss
-  status: candidate
-- id: openai-secures-massive-8gw-of-nvidia-ai-compute-
-  headline: OpenAI secures massive 8GW of NVIDIA AI compute from SB Energy
-  distinct_outlets: 5
-  outlets_sample:
-  - ET EnergyWorld
-  - Inshorts
-  - Investing.com
-  - Moomoo
-  - Neowin
-  source: google_news_rss
-  status: confirmed_thread
-  thread: aws-capex
-- id: saudi-arabia-s-pif-releases-annual-report
-  headline: Saudi Arabia's PIF releases annual report
-  distinct_outlets: 5
-  outlets_sample:
-  - Arabian Gulf Business Insight | AGBI
-  - CNBC
-  - The Business Standard
-  - Zawya
-  - thenationalnews.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: pif-ai-buildout
-- id: alphabet-becomes-berkshire-hathaway-s-third-larg
-  headline: Alphabet becomes Berkshire Hathaway's third-largest investment
-  distinct_outlets: 5
-  outlets_sample:
-  - AD HOC NEWS
-  - ET Telecom
-  - bignewsnetwork.com
-  - indiagazette.com
-  - theinsurer.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: berkshire-ai-capital-stance
-- id: deutsche-telekom-to-buy-poland-s-fiberhost-and-i
-  headline: Deutsche Telekom to buy Poland's Fiberhost and Inea for €1 bln
-  distinct_outlets: 5
-  outlets_sample:
-  - Investing.com
-  - Mobile Europe
-  - Reuters
-  - Telecompaper
-  - The Fast Mode
-  source: google_news_rss
-  status: candidate
-- id: centene-names-chris-neczypor-as-new-cfo
-  headline: Centene names Chris Neczypor as new CFO
-  distinct_outlets: 5
-  outlets_sample:
-  - 1470 & 100.3 WMBD
-  - Healthcare Dive
-  - Investing.com Canada
-  - TradingView
-  - grafa.com
-  source: google_news_rss
-  status: candidate
-- id: bain-capital-backed-dhoot-transmission-shares-de
-  headline: Bain Capital-backed Dhoot Transmission shares debut at 38% premium
-  distinct_outlets: 5
-  outlets_sample:
-  - BusinessLine
-  - Entrackr
-  - Reuters
-  - TradingView
-  - Yahoo Finance Singapore
-  source: google_news_rss
-  status: candidate
-- id: chatgpt-alerts-fbi-after-florida-man-allegedly-p
-  headline: ChatGPT alerts FBI after Florida man allegedly plans to kill ex-girlfriend
-  distinct_outlets: 4
-  outlets_sample:
-  - MediaNama
-  - News9live
-  - UNILAD Tech
-  - milawyersweekly.com
-  source: google_news_rss
-  status: candidate
-- id: openai-joins-ports-pike-project
-  headline: OpenAI joins PORTS-Pike project
-  distinct_outlets: 4
-  outlets_sample:
-  - Data Center Dynamics
-  - OpenAI
-  - The Columbus Dispatch
-  - WOSU Public Media
-  source: google_news_rss
-  status: candidate
-- id: anthropic-s-annualized-revenue-tops-65-billion-b
-  headline: Anthropic’s Annualized Revenue Tops $65 Billion Before IPO
-  distinct_outlets: 4
-  outlets_sample:
-  - Bloomberg.com
-  - Longbridge
-  - TradingKey
-  - Межа. Новини України.
-  source: google_news_rss
-  status: confirmed_thread
-  thread: kimi-distillation-fight
-- id: anthropic-s-annualized-revenue-surges-to-65b
-  headline: Anthropic’s annualized revenue surges to $65B
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
+  - Axios
   - Cryptopolitan
-  - TechCrunch
-  - The News International
-  source: google_news_rss
-  status: candidate
-- id: move-over-spacex-anthropic-targets-a-2-trillion-
-  headline: 'Move Over, SpaceX: Anthropic Targets a $2 Trillion Valuation'
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - Currently.com
-  - The Globe and Mail
-  - The Motley Fool
+  - Dealroom
+  - Proactive Investors
+  - Proactive financial news
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMifEFVX3lxTE5ZQXNueEZrOVJWdlNzaThtWFV2TDRVWjE1bG1ERllUWkZFVm5XM3ZrOW5SLXN2d1NDN2NYbW9FV25QZUdHQTJKSy1Rd3NXWUJvUmtoblZvS2ROa0dZdmp4RTZ0ekdIZXZkN016RUVualhVX1lnLVNVZjhzRjU?oc=5
+  - https://news.google.com/rss/articles/CBMibEFVX3lxTE15VjNSRXExSEgtMXVkMzJySkp0bkxvT0RLUi0wV0pqSC1sSi0xYzlCbUxvNVFDdXpCZUppeGpYUG0wSDVfNkkwZEI2ZjQ2Tno3S0Z4QVl6NnhjMWphODRELTdvOHJaei1oeTcxeQ?oc=5
+  - https://news.google.com/rss/articles/CBMiqAFBVV95cUxNUk9CTmp0SUNEOGlReDBQNW9DQmMya2NFdlhGaklwNlhWd1I4ZVBkekJqSHQxMDVpSXBfVXRnVGlCOVRiaVY1VGlXVHhCVmlMWWhYSXF4SUlWdWdQdjZqSG4ybHhDeTVzSDgwSzNlM1RHak1ObXJjaElILXVHWHQyLW11a3JlSEZKYlR0RmRSanlzTk5wYTFMYnd3RHhCSDNJSTJmVGFvek8?oc=5
   source: google_news_rss
   status: confirmed_thread
   thread: frontier-lab-ipos
-- id: round-hill-music-sues-suno-and-anthropic-in-the-
-  headline: Round Hill Music sues Suno and Anthropic in the US
+- id: samsung-galaxy-z-fold-8
+  headline: Samsung Galaxy Z Fold 8
+  distinct_outlets: 9
+  outlets_sample:
+  - Android Authority
+  - Gamereactor UK
+  - MakeUseOf
+  - Mashable
+  - PhoneArena
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMicEFVX3lxTE1SRGc5enlUZ2R1SW9iR2dQSkw2UzF3WlFqbG5fcmN5OFFOcTlETkFObUdERWtULTBHUmNZTnJHZ2RzNXVUbmdRQlAyRDR4bDd3eGNhU193SmhQNjRneWk3VjNpaUU5S1lfS1RjSDRkb28?oc=5
+  - https://news.google.com/rss/articles/CBMihAJBVV95cUxOV1VvU3JSY1hLaHNOYzREOTV4VkhKUE91dF85dnJhVVlfOG53ZnViWjJ5bWRDYW5vYWctZ3FlUWMzT2ZJdmU0bzE2U2l3dDF4S2lZVzhZZ3JhX2pYRHYxNVdXY2ppeW1WN05nN3o2bzNvWE9DVEdKd245YlFBbWt5SktROS1aSkhjdXVlSG1ZTmlFYkVCb2NtcE1MRDVzMk1ESzdXRUUxZ3AxRjNBQjdpSWlVQW1rZzhjNFIzQVM2U1AtTnhxRnNVSzN0X0diSFVlNENfZ0ZMUFdxSlR4Vk50UUpCU3ZLYU94UF9RZUxPcmxlVm1kQ1NXckZoUGZZWFBWSmxaVg?oc=5
+  - https://news.google.com/rss/articles/CBMijAFBVV95cUxPaDVybFdSXzVwLU14OVFyMHVhbUpqb2hqZmhzY0Y2dl9ZQVZZaFFSNXFkaUJLd3ZjeVdkQlgtbzFVOWJoWmk0WXNTU3NIeG9PVjNHZ3lxSVROeVVBbUZMeVJXeE4tRXYxMFVvbGx5VHU2SU9sMDFuUHJWMUozd3ljTXJQc3IxUlZraTlOcw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: nvidia-worker-8-others-smuggled-ai-servers-into-
+  headline: Nvidia worker, 8 others smuggled AI servers into China, Taiwan says
+  distinct_outlets: 9
+  outlets_sample:
+  - AOL.co.uk
+  - AOL.com
+  - Audacy
+  - Crypto Briefing
+  - Digital Watch Observatory
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxPNi1qaXh2TU1uMjdEZVEzd3VDZHM4TWEyYUpRbnFBaXdTUmVjVlFENGU3ZmxCT3NZLXhkakVwXzU5NmRkRl9Lc0tWNkQyTXpjQjZoSDdrcElnODhwR0wwcV9yeEZhZkZrd1hSODJBVGlCclU5UzdnQ1VGeWdMU0JaUXhvRHc2WjBoQ3ljek1uY3FXelhfNTJPZXFtUGhSa01ENnNYTmNSR3VjSktlN002NjBTVlpqYUxmTHhqQ3hWLUkwdXZlaWNiemdXLUJwQdIB0wFBVV95cUxONHQxVXp4OWZFSWR1UlVfcHRTRnNmdG9DMjdnT0stLXE4MTF3NzljZGFBSUNPMHR1LXRyaW80MDdIRGpaX1ZJbDFTWjQ5WGtFSF9BSnZ1ZUdta3QtRl8yUlo2TGxtRHJ4bE13MDBGVVdiQW9Da2VGc1dXcW1taUdGZmdIQnR3d2hkSFpIQUNhT283VTNxX0RyalNRM1FBcjRXQVJFNXRpLXpPYWVheXhjaGhTbmVNeHkyYmlPVk9FRnBQcGF0ZDhJOVhrNk9jSnJHUjFz?oc=5
+  - https://news.google.com/rss/articles/CBMiiwFBVV95cUxOR3FBeng2ZzFBd2xOdDAwaEh2QVJCRG1WaHM3dkZPQktiSEREVVRpSVJqOF9LenFvRGRPQ3RGRi1KM0dVNURkSk5jckIxeDI4NVlmdk1BbGtaQmJDLXMtay1pVHAySUNuVjg1cEhyMno4QjdNMUpPMk1DN1Q3d0k0cFljSERFT0ktSW1Z?oc=5
+  - https://news.google.com/rss/articles/CBMif0FVX3lxTE5FWW5zVEZoZzkyNVJkcTZISUh2UVk1Wkd0Nkdqd3Jkc0xqVldwMmdzZDJwbGt5YU9sQl93MmJLQ2lQQUZwaEktd0d6SzRCc3Zsb3BkcXR2ZkE1S3VENkdqY01hcTdjMGNOMmMxbGRycVJTVUh1RFpnX1dzQkR0aHc?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: tsmc-capacity-race
+- id: wildbrain-acquires-personality-ai
+  headline: WildBrain acquires Personality AI
+  distinct_outlets: 9
+  outlets_sample:
+  - Brands Untapped
+  - Broadcast Dialogue
+  - C21media
+  - CP24
+  - Kidscreen
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMid0FVX3lxTE8zZkw3VUxhMGxkVlVLNFVFaTI5UDVRYVZMeENoUE04QkJFZFFvZEZlZ09uN0RWeVNhWG1ocGRld0ducVJZaFRIV3RLQVVGU3FOWUMya2VjdEUtMkxjSURtdVVpNDVvTFVnSDBpQjJMZi1EUHJXd2hj?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxOcmo0a0lMU05iRm52SE1aNmpDRmVSS2dVZmpqbzZZNDNuNUNENXY5WUNsZ21PR1Zwc2s3dVhhZ1BSSjZDSlZyYXA0LUZ0VVpoalhvUi1rTzRsZFpXZTB2UXY0QTlaU2o1Y3V6MDFVU2xfdXpzTTJLWEFyV2I1OEZJX1hhSXdiZzM3SnFsaHctVUVyRS0tVS04QllOWE5rWUZHWEJBeHJlbVc4MWIxYk1GMlFyVUMtaURoZXY3VGx1cGNXRGvSAcMBQVVfeXFMTnJqNGtJTFNOYkZudkhNWjZqQ0ZlUktnVWZqam82WTQzbjVDRDV2OVlDbGdtT0dWcHNrN3VYYWdQUko2Q0pWcmFwNC1GdFVaaGpYb1Ita080bGRaV2UwdlF2NEE5WlNqNWN1ejAxVVNsX3V6c00yS1hBcldiNThGSV9YYUl3YmczN0pxbGh3LVVFckUtLVUtOEJZTlhOa1lGR1hCQXhyZW1XODFiMWJNRjJRclVDLWlEaGV2N1RsdXBjV0Rr?oc=5
+  - https://news.google.com/rss/articles/CBMic0FVX3lxTE9EMXhmekFSS1VBSUQ3QV9VT3QweXBTSURaNndkZ0pGN2RLYmpKVnNBQkJnbjFTWlp4d1BqbjZVa3FEdVp1Y0JTeURfejV4Q2pUeVZpdmVyWHhfQXZZY2t5N2VQVHVULVFfVVJkNUVnQmh1UXc?oc=5
+  source: google_news_rss
+  status: candidate
+- id: apple-launches-next-gen-apple-silicon-chips-m6-a
+  headline: 'Apple launches next-gen Apple Silicon chips: M6 and M5 Ultra'
+  distinct_outlets: 8
+  outlets_sample:
+  - 9to5Mac
+  - AOL.com
+  - Apple
+  - Six Colors
+  - TechCrunch
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxOc04xcWh5RmstTG5TTFQ2SDc2WjhJNUNXUUFCRFFwSC04U29oZWVCVzJoR196eTJ6b2VqV1h5NGZJR3ZoLUpSdHdyZEI4YWwtSnlHNWZSRFpmbUZTVFJGSUZQREpmbW9SWTg1cXNmdGNlVFBJUF9HNnBoSzUtalprUnpoUlpXdkF3NXBhY1RxNVpnam1ZdkM2dFVhTnc?oc=5
+  - https://news.google.com/rss/articles/CBMiuAFBVV95cUxNaFNZWnlDMmx2VlBtaFlBWTAyS1g1cWk2SF8wM2phRU95eWpJT2hoM1RtMGVDOUJmNmI0N1RNQzBnblhQVjdFcHl4RVZNVzg1YVZEbTMycVpxdkpTcmNGODIzcmxxRzRnOEJ5Qkg0OG1QVDZaYy1sdUoxLTJJbWUzbEZFcmhzMVlQUXB4OEJBWGhrY2d5aWhXYzNaOElRdlZzdktUdGc1ZTJvcGRUWVc0X2RJTk5GUi1x?oc=5
+  - https://news.google.com/rss/articles/CBMilgFBVV95cUxNZmNWMkJRSW5sZWZXbFlEbjBjYjk1ZGZJazloUlVHYXppbW5fU0czaXN1N3RaeGxhVlBKM3JnWXRHTnlDWWRCaXpmYWF2SDdvNWtKblBMaUdBT24zdDBBQy1kai1OQmd0dktGX2pSWUhUOGVRSzUyelFlc3RuWThDWldmYzg2djYxVm9PNFR0c0JFblc3eGc?oc=5
+  source: google_news_rss
+  status: candidate
+- id: nvidia-faces-growth-test-as-rubin-debut-meets-ai
+  headline: Nvidia faces growth test as Rubin debut meets AI financing scrutiny
+  distinct_outlets: 8
+  outlets_sample:
+  - ET Manufacturing
+  - Euronext Markets
+  - Investing.com Australia
+  - RTE.ie
+  - Reuters
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxPWTRIanhjcGUzbEt1SGFMbWVrdGFuMHlRbThxNmZFZ0VUOU9SWENzeXVkZlktZm16RHlfaUtlTl9DbDNkUXFra0ZrdC1aWmJpU1I1emJDRzZQMTlMUFNJdlF2STZ0X1REV3dTbGtXTFNVQThIN0VpX0NvbnhJaDBkUVJKWnRVaEc4cm05d1FMNkNMdXQ3b0VEWExB?oc=5
+  - https://news.google.com/rss/articles/CBMif0FVX3lxTE1jQmpJdHZKUFJQX19GQ1FPcmd3M2E5aFJ1WF9NdWgwRFFrYW9DODJVbVRFejMzblVSZUlfOVhtX1FGdlhwTVd1bm1fbHY4d2dudUFsTldVY1JPRHlZd0d1SGwxM3BZTVFxcFVWa0hyWG0xSjVITjNDNFJTeTNVZ3M?oc=5
+  - https://news.google.com/rss/articles/CBMi2AFBVV95cUxNVDRFZ0pkcnlyd2dhRzF3S3RZN0J6RDB6dTd5WWowa3pyT183NF9tZnUyRHRMM2gtdUZZVVR6VDV3QXNRYWtHcnNnVUJxTkJ2YkJnZHN4b3c0WWlPb1FCdWc5NkdYb09LbW4xbkt2VzB2LVVIbVQtS3M4RV9aNWluZTBNcFRrVy1LZTlrUUdLZm1FV2J2UWlmb0N3RXVqTU85dzNBNE5xTTlMdFVfMkxTSjBkUjVrNVo1VWhVRGRKX0VVY1J3Z0lJX0J5Y2E0aWttWVEycGxIZ07SAdgBQVVfeXFMTVQ0RWdKZHJ5cndnYUcxd0t0WTdCekQwenU3eVlqMGt6ck9fNzRfbWZ1MkR0TDNoLXVGWVVUelQ1d0FzUWFrR3JzZ1VCcU5CdmJCZ2RzeG93NFlpT29RQnVnOTZHWG9PS21uMW5Ldlcwdi1VSG1ULUtzOEVfWjVpbmUwTXBUa1ctS2U5a1FHS2ZtRVdidlFpZm9Dd0V1ak1POXczQTROcU05THRVXzJMU0owZFI1azVaNVVoVURkSl9FVWNSd2dJSV9CeWNhNGlrbVlRMnBsSGdO?oc=5
+  source: google_news_rss
+  status: candidate
+- id: nvidia-groq-3-lpx-hits-production-for-agentic-ai
+  headline: NVIDIA Groq 3 LPX Hits Production for Agentic AI Speed
+  distinct_outlets: 8
+  outlets_sample:
+  - HPCwire
+  - NVIDIA Newsroom
+  - Quiver Quantitative
+  - The Manila Times
+  - The Tech Buzz
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxNUEZpdWczMlJ0dDl6VHdCNVdDUFoxSzYzUjd3d2dTNlJzYVZiS1B3TFphaW5yZW1ZeVowNlZaSXFCaTBlcmhrYWJMNFBqbjl2VFpCM3YxZGd5OGkyTWRzVU9sS1RiQnUyUWVXOFBBMGcteXJrcmZoclJ3RWVncWd5b19FTURkU2F5ejNScnhGQ2R2dVNiTUxsNkQ1azRxZlpFNE1JWGF3YmY4TWtvRTlaLTlyTQ?oc=5
+  - https://news.google.com/rss/articles/CBMid0FVX3lxTE0ydncyM1BwRjBkODEtMG96eXpmWDdiaFBKMTZna3RUYlkxVXdQZTZQUkIwUjh6NWY4LVpJWF9PWGE3YVQyRnJyQkhaOTlteUxUSU5YVWloMTVaNWk2NDJoOEd3dmQxOGgtMU5MX2VHOWJFQmM0TVZ3?oc=5
+  - https://news.google.com/rss/articles/CBMiyAFBVV95cUxNQUI3TGNUOHppQkd3RFhLNkFPUzluRy1KNGlVWW5UaGFEQUxfbTBPM2FkWHRVNVZlSlpzZHBpWi1UWU5MNVU1VjFaQVVRZ0RHaUw1Z2VPcmVZX1hCY25UQTVxZ05TaDlrLTYzYURCR29KRF85c2VoT1MwTEVkNFUtNXZNWnlyNGdPU1BQRU1fN1BxeWFfRGRxbHRuU3N4bEZDVWNwaV9TU2NKT0xQWTlGZVVvdm42N29yNEdrbTBMVHpqcGczQm9kSQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: ken-paxton-unveils-4-point-plan-to-curb-data-cen
+  headline: Ken Paxton unveils 4-point plan to curb data center growth in Texas
+  distinct_outlets: 8
+  outlets_sample:
+  - AOL.com
+  - Crypto Briefing
+  - KVUE
+  - The Texas Tribune
+  - The Washington Post
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi0gFBVV95cUxPZzltMmFUVHdUTUZwYktpSnpLNlVpLVJvTTZ3T0s5Mzh2UGl0MkFkN29JaktOYXI1WDNxb1huTVVJNVk0MVpHdDZzSHlsN21LWlpIbXF3OEgwN2xYNlFhSUZXdko1VVZBSEJLMnhuaVBFNE5kNzVqSEE2MFVEdG5pRTJwZjlLc1lOUlZOZDBLVHBJdGxoNm5IUlVNX3gwLXluMTYwSTBmci1lQWZHUTBLQlZSVlJ5OGxka3JFNmRVYTVCbnhEUGFUS0o0ZkxWbDlDeUE?oc=5
+  - https://news.google.com/rss/articles/CBMikAFBVV95cUxOZE1kbjM2RXpfbWdtSlp1V1RNUEo3ODJRR1dLNFQwTW9LMl96QnpZbFptaE53VUhwbEhpM3hXOFBvRmNkQVN3S0FFeXlOWVhkZlFGRlczTk43OWx2VzRFb0lERU9EMEpsazM4ZFpEYkZwU2dLSG1MdWJsOU9tRmw5QmFUdTFsMXBlSENpajY5alg?oc=5
+  - https://news.google.com/rss/articles/CBMiqgFBVV95cUxNdldxS0F1WDVJZlpYd1Q4Q0xQY3hwTjZkUm1XZXM3QnZSM1NnMnhRLVNDanNPTldXVFlLMm5Ia2ZVOGczeTI4QUM0SmttR2R1QUc2Yk16a1pjWFBfanVJTG5FX3BySnEybmxBSk40clFpMExCSEJ0RmZ2TEFSUmNMaUZSdTJjSVQtMElLNkpsVUV1ZWcybnFBUjFUcG1aSzhsWmdyU1dqcFRBUQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: what-investors-want-to-hear-from-kevin-warsh-s-j
+  headline: What investors want to hear from Kevin Warsh's Jackson Hole speech
+  distinct_outlets: 8
+  outlets_sample:
+  - CNBC
+  - Crypto Briefing
+  - Pluang
+  - Reuters
+  - Scotsman Guide
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMisAFBVV95cUxQcnNlclhfMG4yZE9OTExTUEQ4Zi1sUml5RFdoUVZiU2tXd3EtaTJSc0E4YlRBQUp4T1hvSzdmVHRBeFhobTMxV1hodmhsRl80Zm4zSldlTzBWTGJMeTNEd0RnekpmLV9RaVprUWp4SlBCQXJheXc1ZUt4NEx2T3pON0NQQTVlQTlldVA0SWRWdmN6OWVwc25jUlRBeGFTUFIzaC1YNlRQSzFrREtrQ3FXWQ?oc=5
+  - https://news.google.com/rss/articles/CBMisgFBVV95cUxNRTFUTlR0SUdpSXJ4RWUyLXdadElHb05YcHdFVHhuR1hzUDJ2NVk4eUYwenA1OVg0MXB5R3NEWW5DbFprX01CREN5Z2FGdU5nT2xYQVBHa09lUmxtVk13VDQ2dGdldFg0RVFfMUU1VHlDVnpVdlh6dkJhTGVqWFI4MXZOejY1R3YwUWFBTzgydUtSenFkTjE3dzV6SnlnMU1PZl80cjh3YUFIZWN4UjlaTm5B?oc=5
+  - https://news.google.com/rss/articles/CBMirAFBVV95cUxNajBSWGJuOE0zRTI5aUNsXzE2czBGVmdSMjlDTEJnaU1UT2xCaWVpMFNKNTNRLWQ2VWpyM0NEUGV3aTcxczd2NXRUN25TWjc3cDZzck5qT0JLNlNWc29DTXRLZG5JLUUxMWR1dUIyaWtKd0VOQjNSV0ZrbnY3Z2VCMWVCOFpBWXg5SlFhaTNyQmdoVnJjWmxNYzZpVkp0ZXl0X1VLVTRPY3kyMENs?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: treasury-long-end-intervention
+- id: oil-falls-as-markets-await-new-us-sanctions-on-i
+  headline: Oil falls as markets await new US sanctions on Iran
+  distinct_outlets: 8
+  outlets_sample:
+  - Business Recorder
+  - Emirates 24|7
+  - Geo News
+  - KITCO
+  - The Business Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiTEFVX3lxTE4tLWdwTjF3Q212YWdiWEtGVWQ3cnRadWNkTjh2UzE3cllQTGtHTk9CTkdXSjZfaE5UUWRoeUZhQnFxd2ZCT0lhZ0RxeVk?oc=5
+  - https://news.google.com/rss/articles/CBMiowFBVV95cUxQME5kNnUxd3ZMQS0tcUo3Qm1LZS1SakU5ci1VVk54VGE0RjVEb2dlbDl0Q1BDekJPbEpwSExrX3JtSzB3OElqd01uTjZQQ09yeFNTekNtYUV2MG5kSEZpRGxURTRoOXpsZTlLS3RzdnFzQnd3SkxWNGREa3h0am84X0g0UnVYMUxVc1FaZVpidGYzQWhmdWFHWXl1MFEyVnRxTUc4?oc=5
+  - https://news.google.com/rss/articles/CBMikwFBVV95cUxNZEZDaGx6YlEzdS1KR1hoZ1BlbURmLTJhZm14RFpZdVdlMFRES3o0YXhpOEN4MVlTMXZDbFZKODZuNXUwNDdmaTVWVlFjeGFUMmJFVTBzMlNMemIyczlyYzJNYWl3cUt1d21vQ1JIQmg5cVlHUXl1RS1IQi1SVWZrU2VyVXBRYWM2MEgyc3IyWkx6UzTSAZIBQVVfeXFMUEY2RFNYRTRpWUhWUFdERzU1YXRtcDIxRW1UbFlGVHRCZGxneWN3ZnZBSGVGYUdRSzBKUlZRTVlJNUN3NmtzNjhMQ2Jta09NWF82X2lCZWd2TDQxeGQ2NXJ2LVFHaWRvWXJYbGxvQnBlalIwSWJZWUlub2VlRXktS001a3hUZ0psdEp1SXdDZlEwa0E?oc=5
+  source: google_news_rss
+  status: candidate
+- id: meta-nears-launch-of-consumer-ai-agent-hatch
+  headline: Meta nears launch of consumer AI agent Hatch
+  distinct_outlets: 7
+  outlets_sample:
+  - Firstpost
+  - Investing.com
+  - Investing.com UK
+  - Social Samosa
+  - The News International
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizAFBVV95cUxPeXVCbUl3alRMeUVSSmRXa1c5Y0VJVV9YN0NmTktmaHRNQnFhQk5lN3lJczVoYWZ4ZF84Zk1NZXVQSWNZQVNTSExpV2RsdmdRZWZVa3o3SE1WTk85RWdUMTlPTFZiQ2dkOEdQeTNJV1ltOTE3VEpuNi1mM2ZoZ0hiN1FMMnhlc3g5WTVHLVRPNDlKQXhWYmIxR1RtbnVUR0s4cHRLc0hHUk1pTTMwbHBKRGloRGk1OVNzNWdWbklBVk4ycUZGMnFFRTY3dlM?oc=5
+  - https://news.google.com/rss/articles/CBMingFBVV95cUxQdTJsMVZ3c09CUmFIYV9NTXg1cEFBVDhfb0ZMWUVLMXJqM3c3TWdYNGI5ZkplR1ZkdDI1U25sYnpQbjZhckFVSzZ1MEJlQ0JwaHJULWZMc1YyLUR4THAyU1NtcERSZHlQa24yQXZobVhvMmk2cXVsRl9TN0I5dzJUb2RzTHl0b1VEdWxzcmd6eEZILUJCTGxJa2xUZ0VPZ9IBngFBVV95cUxQdTJsMVZ3c09CUmFIYV9NTXg1cEFBVDhfb0ZMWUVLMXJqM3c3TWdYNGI5ZkplR1ZkdDI1U25sYnpQbjZhckFVSzZ1MEJlQ0JwaHJULWZMc1YyLUR4THAyU1NtcERSZHlQa24yQXZobVhvMmk2cXVsRl9TN0I5dzJUb2RzTHl0b1VEdWxzcmd6eEZILUJCTGxJa2xUZ0VPZw?oc=5
+  - https://news.google.com/rss/articles/CBMieEFVX3lxTFB6NXh6NHNsT25DZXRqLXZzcklEZl8wX2RpSEtyVmN5SDlSQ25JWFBfTDZ1cEtkRlVBNzM1bkZLSVFKT1NFWEhuQ1RyR28ydDRXbHhpWGlkdzFob0RBZ1A0cEFnQ3lWaE9hdVlQQzkxWWVVRWtGbFNzSA?oc=5
+  source: google_news_rss
+  status: candidate
+- id: chinese-hackers-use-deepseek-ai-to-boost-attacks
+  headline: Chinese hackers use DeepSeek AI to boost attacks
+  distinct_outlets: 7
+  outlets_sample:
+  - Chosunbiz
+  - Crypto Briefing
+  - Firstpost
+  - Inshorts
+  - Investing.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMid0FVX3lxTE1FUVNnN1dBakxDU25abzE4dlJqM2JfR0xjQk9JdW90bnR0OTFyNE1SeGRaZlJwRmtvdnFfZXRzcER3RW40bmUzbnZ0TzVvSVlpeTlseWt4YWdwZk16dnM5b1IwQS0zNmk4bTJsYjJyQUlKZ2lxalV3?oc=5
+  - https://news.google.com/rss/articles/CBMivwFBVV95cUxNWThaMmJPUUlvYmRNYkFfRHByODdKTVYzSzd3ZzYzRE1wVUFvSXlWU1VGWTNOY1ZzOUczTnV1dHFDdUV1WVAyUHk3X1NTcF95cU96OWJULXpzV3Z2OU1tOXBIVnlRNDhYN1YyZGtWNHQ2MjRUaHFET3NBR2R3bTNJQUxhVndiQ0pkdEMwLU10TW9KaGNPMHFfbjAxUlRsbFdnTllOckhqTktheXdMeE1BWmdWdkI4UDdDM3lOVXpnONIBvwFBVV95cUxOa3h1bWlia2xLUk5RQjctWGxhcmMxRWFhTUxZZ2RqYk1OendyU2R4azZUZGg4anlMeWY3RnhZMDYyaGZ1ZWxCdHNqYnlfU1ZJY096MGxkbnRBWEJHNVNKQXg4ZGN3bkFrbUdfMTFScWFBcnp5eXhaUkZaaGpiUGNJbFl4VnlEMDhRelE1elJJMXRyVmJSVWhaVUpLUmdLS0JZY2hQcndDRVVRV2VyMmhtQU1kQkN4LTFWaEJyODltcw?oc=5
+  - https://news.google.com/rss/articles/CBMivgFBVV95cUxOcFpyME55YmpjOFF0QXJVZHBETGZuOVpQeldBWGtTYlY0dDUwNDd5R2I5M21GYTVncUlfeGRoUE02RHNtUktQMUFPM21tSzNxbVFEV2NHNGNGdzJNamhOT2Nma0lyck90WGs4YllKUlZqME9LZEp5M2U1R2tJbUxLclVKSEpFUUMxcF9nQzZHM2ZhRk82ZF9jRnRvQy1TV09KRjV0WU16N2ExQ3ZSeEZrTUM5b0FObXplaXdxbEFB0gHDAUFVX3lxTE8tX3RYdkl0TnE2T0E0TTFEc0RjSTJGY1FLZVY1ZDZDdy1sc096ZXJrcm44UFBxT3JndHg0YUZLSjlhVjY0V1NySXNDLUVyQVJKSUMzSkp1TjJRSFd2OE1iWXNlUzNZMlprY2M4Rjd1UlZ3dmd0TFVSNTMxNm1NSWRlV1BkaVR6b2F4SHo2WkhBWEVCcVU2c085b2dZS202MGZGVGlhRU5xSUJmWE5NVVB1ZVFoc25EbGNteW5VeHFEMFZvaw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: nvidia-memory-demand-widens-the-gap-between-sk-h
+  headline: Nvidia memory demand widens the gap between SK Hynix and Samsung
+  distinct_outlets: 7
+  outlets_sample:
+  - Big News Network.com
+  - BusinessLine
+  - ET CIO
+  - KED Global
+  - The Economic Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMikAFBVV95cUxNT0xSZ1lFTzBteDlNdnJJUlpwU2pLTVBhRTk5ZDl5ME9RQUVlSzZRSDBYREh1TEFxM0dWb1lwb3lfdDZQd3Q4RzRNS01mRkU0a1ZGWnNvdEFvdFZ6VGx5NG1FcFFqNnh6dUpwRmVra1dYY2NVWmxDcVNfTmh5UEFVcU1ER21vZ2JsZnN2cjRGN1o?oc=5
+  - https://news.google.com/rss/articles/CBMi4AFBVV95cUxQeUxKYzVvWXRscHVXc1RBWlVtVzVoYzg0WDhGejcyckt6UV82TDZLSjh5WXhfd0xWMmQtQ2hDVEYxYjNwM2NBM01KX21fX1FuRWV4bkRkeE1RWkxwNS1td09kQXFqbG1UMWlqTmlDNGNOUGNPZVRGbEJiNHhaZ1BmNUxIU0NSc2tYTWE3YkxNM2Z2M1FQMkdwZlFHMHllX3Q0TGJGTFhzS2VDVFNscnJXSjIyNXF2QmQ0MmtaSm5pVTRYTERDRHRjOUtwdy1ZaXdKZlFsVW1hbjM3T3FwN3c5edIB2gFBVV95cUxNZk1jdlE3c3FfeEh2NXpiWWhTVGplNkVSWnlqSWEtNHY5WGZ5MTFsLVFQblM0M1k2a1pObWFTZ3NQZE5fZWQ5MzlDTWF2QVpSSDZRX2plVHhaOWloQ01TUGpMbElGbzZHQVY2bk5Tai1qS3pSUzRqaTkyWFBBR2hfSUdaRW4ycGZIT0lObWlPbFhkOFVoZzdrd2VaOFN2ckNnXzVjTXdYSWlNbkJjSTcyWVB3SVBTcXFMbnVWbzdpeFlaSUVrSGRMMU5Ra1Y1UWFGeWJVMy1nV0FDUQ?oc=5
+  - https://news.google.com/rss/articles/CBMitgFBVV95cUxOSXFZcUNUNW5meGZFU2ptV3hvSWpwcy1aeDE5RFJPdkUtY1pvbWp5cWlabGxyVzhNQmFhREtNVHZOcllkWFY0T25WckQ3bjBrNnJueEJ3REFxMlQybnpTMzRtUHhhR3UwazdjRk1IRGN2aWJ4cjNiaFd1UUpfdlZXSzhISEI5SXBnV0stZ0psenVVZHZHUVhsYlFxQ0NoandEZFhvZHB3VVppNXNqOC1RenZzemRkZ9IBtgFBVV95cUxOSXFZcUNUNW5meGZFU2ptV3hvSWpwcy1aeDE5RFJPdkUtY1pvbWp5cWlabGxyVzhNQmFhREtNVHZOcllkWFY0T25WckQ3bjBrNnJueEJ3REFxMlQybnpTMzRtUHhhR3UwazdjRk1IRGN2aWJ4cjNiaFd1UUpfdlZXSzhISEI5SXBnV0stZ0psenVVZHZHUVhsYlFxQ0NoandEZFhvZHB3VVppNXNqOC1RenZzemRkZw?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: ai-memory-shortage
+- id: ibm-mainframe-chip-to-run-arm-and-z-workloads-on
+  headline: IBM mainframe chip to run Arm and Z workloads on the same cores
+  distinct_outlets: 7
+  outlets_sample:
+  - Arm Newsroom
+  - Data Center Dynamics
+  - Moomoo
+  - Network World
+  - Seeking Alpha
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi1gFBVV95cUxNTmlHMmU2N2Rfc3Qzcm4xQWQyX1RSNnI1cV9HRFRBR1hOYmxldnpZVFZ0NjJRRXVkamJxLUxVM2JkZ2NsSHk5QWFIVF9TNGhCNGZwVFV6bnNDOXRscFNlMUNmcS1BYmdzQUVHTWJac3dSX1h5Vkk0T3lSbURYbjhpMVUxckgzNzYxazkwR3Yxc3VTdUJtTUZnR2tTLVo4MGhvRWpBVDgzYzEtdC0zUTNPQ1djV3phZ01MMmhNbXRuOGQxTG1kQUc4blRWdERwT1dIUUNLd2Nn?oc=5
+  - https://news.google.com/rss/articles/CBMiqwFBVV95cUxOZzdwWk1oenlTa1FIelA4MjhMUjFtSmV3cmFocEw2RzVjcFdTTVQ0ZmJFS01HVWJ5ckVnYnA1Tkd0VXZzb05KeUhxdkhUbE9manpnMk1XX0cwcmdMSEFVY1czSi1qSm1SaThWeDlZQUtGNHlpLVF4Z043N3FaWlhLUHY4amFDRlM0bG5pVjZxdHdpbTJWMDRsUnNIclo0MW9WaHZmZnMxbGdfS2c?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxOX1JZSWcxanBPTWdwZktuV1JURXJQRlFkY0psekhHVUNTcHc3akF0REtLWXkyY1hLNHNQeUowaUtKcnMxMTgxeFVLUmdzNjZrWGlsOGdMamZOWnNQU1lXMzBBRXZ1VnM4MVFhMzhRcTctM3gzaWV6STFjT0xEdWdHUmNPUE5Sc2VrRV9kWXBBRmEtWVBIQUhpWU9ORE5BLV9jTnc?oc=5
+  source: google_news_rss
+  status: candidate
+- id: tesla-raises-prices-on-two-cybertruck-trims
+  headline: Tesla raises prices on two Cybertruck trims
+  distinct_outlets: 7
+  outlets_sample:
+  - AOL.com
+  - Electrek
+  - Investing.com
+  - Latest news from Azerbaijan
+  - Reuters
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxNbXpiNE9GV29lNGxrNW55X0NUWnlDMHNpMTZxbFJZX0RhS0VBMlZLT2xCZ25ZQTl0QzFXVHhqN3NXWTdDZkl4djNOd0N2NGExUUVybW5KS1pRMWFINFZuSlZkVGttXzJ1T0laZFE4SDZzanZ4NGp3amU0UWxSTlVfWDJ2anhZSHpUMkxnUVF5cWhVS21LVkRIYlZPalBXQkxEUkE?oc=5
+  - https://news.google.com/rss/articles/CBMigAFBVV95cUxNZ3VHQ2hPbk5MazNvb1QzNWZPYVB4YXlqTUpUZC1UeFp6aXpkNkhrMnA3bkhWcFFhWUVCcWZiYUExNi1zTG9aMTY1TDRTdDM4NFFlQUNsd2VRRm1pZ0NJeFIzZVdlMlpxblNDMjJOdmQtakp3UDdtMWxPQmphaVEyQw?oc=5
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxNNHo5aFlLWHFTU2UxNXh6cUV6UHB4LWtidzFxa2Y4cUwtNHhIMDM4cUxfNzhrVXJaUlpveENpYWJ1RFYwbEp2N3cxWUUwWjJrQTBtZXBGY3cyNXhuMXZhQnRadWhUN0tuSHQ4QmR4TzdpZXNReEplRkFNTGl2WVgycEJha2ZsMll2aDg3T0NpMDZlY09QRW5oU05PWVNuZ0RBZmZvNmF0Nk1xRjhCSm9V?oc=5
+  source: google_news_rss
+  status: candidate
+- id: taiwan-indicts-nine-over-alleged-illegal-export-
+  headline: Taiwan indicts nine over alleged illegal export of AI servers to China
+  distinct_outlets: 7
+  outlets_sample:
+  - Crypto Briefing
+  - Devdiscourse
+  - Reuters
+  - Taipei Times
+  - The Economic Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitwFBVV95cUxORUFqODhsNEhfOVR2RWdNdXd1LVI2REthVUgzaU4zdXNIa2RlZmdSTXVwemR6ODVzUm1mMmtOZ0FRR3FEbVp6YWlTbDZmcm1nLTdQcFFkcWhVTTBvMkJ4dDh2blB2NkswdzZTbEFGWEZ2c3Nwam9aWXREYmhVR0wzQzdSdVoxUThYa0VrcFI4R0VKaWk2SDVFNmJUaVFuZ1Z2Nmhha21pSWxaRm1rQklZWm83aUNhbjg?oc=5
+  - https://news.google.com/rss/articles/CBMi1gFBVV95cUxPQWFZcGcxem45S3pkTFhUeGZyQVJ3UEw1TnJjODVLUE9XaFNGbEhXRXA5c0N6NUozd0JlNVlYci1XYTVjaURIQnhFc0J3anVVMkQ1TVlzMVRRME1zcUE1VlNOSHgxLW1nemNHWXNFY0dOQk9vbzZKUG9aQnByNFNQcGJtclJZWndGRWdsMUExUmZyRmlOc3k4ekZHWUlqYU15Z1Zwd2xGaFlmbVVJdnM0QS1JWUdYUzA4MUwzYkc3TE1YY0VlRkFHTktDTzdJV0l2NllseGZn0gHWAUFVX3lxTE9BYVlwZzF6bjlLemRMWFR4ZnJBUndQTDVOcmM4NUtQT1doU0ZsSFdFcDlzQ3o1SjN3QmU1WVhyLVdhNWNpREhCeEVzQndqdVUyRDVNWXMxVFEwTXNxQTVWU05IeDEtbWd6Y0dZc0VjR05CT29vNkpQb1pCcHI0U1BwYm1yUllad0ZFZ2wxQTFSZnJGaU5zeTh6RkdZSWphTXlnVnB3bEZoWWZtVUl2czRBLUlZR1hTMDgxTDNiRzdMTVhjRWVGQUdOS0NPN0lXSXY2WWx4Zmc?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxOT2czajlpWm9YdndCbTVncmxSRXV3MUlONHhIXzE5eWVLNnl5Q0dYNXdRRmFRbmVlQ0w1dGJOLXFubzg2OThEV1oxd0RlSE1CdEF6QllzVzkxZHp5MjBaWkw3bENycEVSWWR4MngyY0dCMGtYc1B6NzVOcWxnVGxVT0FId1kzOW95MW41R09xdWIzdENjekFrb3lmcFB6ZWlZZmptWWdCWUYxSGJUSkdfd3gxNlNwaXJwU2JxZGRYbnY?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: tsmc-capacity-race
+- id: infineon-buys-india-s-c2i-semiconductors-to-boos
+  headline: Infineon buys India's C2i Semiconductors to boost AI data center power
+    tech
+  distinct_outlets: 7
+  outlets_sample:
+  - Dealroom
+  - Digital Watch Observatory
+  - Moneycontrol.com
+  - New Electronics
+  - The Tribune
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiyAFBVV95cUxQYWhJUUlrRVZtOXdFREpXbFUycHVaUDdHSDVtdGd6eGxaTUN3WldqQmFXOWVNVy1ueVowM2tsdU96ZGNMMWhuWnFCeWRPOWlLeFJfVlNBVi1tNy03VWk2LVJsWHg3dUx1cGtyaWwxQ2tZdVNTTDYtUEhZdDFxcnJ6Y1ZKU2Y5U0ZyclZzbUtjWk82c1h5TEVPMWg3WjhVMUtORHc2SUt2VUstQmFEbkoza0JSZTVwWXJLM3hObkpnTTVxQ3ZZYXJIeg?oc=5
+  - https://news.google.com/rss/articles/CBMi7wFBVV95cUxQREE0Um1iU3d3azBNMG51M1B2RTJIeHlwdkhPOG1WM3A1NGxhWlpXQ25kZmlSaElWck9UWWpvZ0xrT254Nko1YWlFU3pKUGRrMTJ6MTlJR3Z6bXoyMExNSF9MYmJzc05aaE8tY2NXcW9sUmoycnU3QUFybmpab1B5QXBZVDZSQnRuSzVXTVRfNkR1UkNCaDhMWnZIQlFBNU5RSE5tcmFEMFpYNlE1LXZQWHNOZHItNVc2cF95dFRpMEZuVTFGdldCWDhYQ0FjVGVyYjZDbTNEOExVdXlqTEtoWEpSVjFlYjNVUVV5S1J4WdIB9AFBVV95cUxQczdmUVc3S2tUN3hJMExGLUc5cmNRTlp5TFp1cDhnMVBoRUZXNFB0NldLWDZKd2hsa010Q1ZLa0lhWFlBbXcxb2lISW8tSTMyd0lMbkhJeXBFYzVwRHZBSTZvSS0xRkttc2NaVWduZnUyWmgtR254dVRWLXdRWmxrZ3FOaHJxT0hsRVNJTmQwajQxZmhtSWtabm1abU0zSjFXa2VidmJ0dHBWbEk0VzhoWmI1TFh6cXBrTXR3NTROTDRyQlU5LXluTGYwYlJBcW9US2h0Um1HYTJCaml1WjZVend1YVpWd0JJcFAtdldRaS1LMVNs?oc=5
+  - https://news.google.com/rss/articles/CBMigAFBVV95cUxPTy0zN1NNWmhUVzk1eDg0dzZJeVM2SkNqbHNaVVNZUjY3YVdlclNCam94T05YLW1WT1RzWGc0RGY5NVVNRVlLZkZMN3hmdWlyZktsSGVkS3FJV2VqbVpJaWVoWFdzaEtJVTdJLWJZS0Y3Ny1qbUNxVnhZMDdMZlpWUQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: softbank-plans-record-6-3bn-retail-bond-sale-in-
+  headline: SoftBank plans record $6.3bn retail bond sale in Japan
+  distinct_outlets: 7
+  outlets_sample:
+  - Livemint
+  - Moneycontrol.com
+  - The Business Times
+  - The Edge Singapore
+  - The Japan Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiiwFBVV95cUxPSkZabmptUHhQUHVDNE5rZ2dwbExhRlJ3MlRWWmVCMk5tdkVsYXdsZnRRc3RHZGxUSm5pbHRPY3NleFhzOEp3U2NSNXlnQXZNVWVfRkM0X3lRcWRrS2d6ZzFWZzgyRzMwb1pveVFCV0NfOVZSVlRBSkxKMmlFYVZqb1BMUTFnX3FrblVj?oc=5
+  - https://news.google.com/rss/articles/CBMiiAFBVV95cUxOaDByZW9KYWRRT0E1WXItQUtDYVFaMUwxRzNkM1JVMHZvOEd0aXk4RlVieU5GNW83cUZJZ0xmWWVjYlVYS1pvaUJDc1FNOE9qZ0cyNlVWc0o4ZDhUNFd1SmtNdERkOHVIZldfWlJFZjVUaXFQd0dvaWFGWjlJUlVUZkJOTm1rMENQ?oc=5
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxNRXplTF9WaXFHYVFNRm5UWjViUTNrb3dqSzhTUWd5WTI4RXczWTQ5SnJ2QkcyelFhRTRqbEItM0xuNGtfeGZyTGZQSEl1eERFQUY4UTFvNHBUMmllZXMtQkF6ajRiWEhWU2ZvN3lMZFBVcFF5SGpKU0Vmd0JZVWpWNl80cDl4ZThoNHVLaTNJUzdRN21PQU9tSGdCbDhrallVcllMN284bDRZa1JqYlE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: brussels-airport-tests-autonomous-electric-cargo
+  headline: Brussels Airport tests autonomous electric cargo transport
+  distinct_outlets: 7
+  outlets_sample:
+  - Aviation Business News
+  - Aviation.Direct
+  - Aviation24.be
+  - Belga Share
+  - Travel Tomorrow
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiZ0FVX3lxTFBUTzZMREVOdWpZdDJhRUxLNEtidUw2T3VNcGdfNVZpU3ZwbU05WW1hbFlSN1dEZHNKMmtsN3E0Vzk3dWZ1QjFfTl83UFZCeXRUeVZ5UDU2RkIwSkkyNFpRRGlxQUg4RDg?oc=5
+  - https://news.google.com/rss/articles/CBMijwFBVV95cUxQODJaVHBZNmN3Zml5c3N4cGdiQkN4RHNzODlCTGZBM2RDdHBGQktVd1pBT21DRUE5WkFfcHhNcGt1R1ZWeUpPOXdSMW9saElPSThSdjk1U3NmZTlDQkFzRFpJeVA4TDRYeWdlLU83UDlVdDZ1QUp1aVJuRXFnNE5jMHJNRm1UNHQ5M2JPTWc5bw?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxQUHFGSm1TVndTYWNYMU9jazRMQmw3Yk4tcHFjbW9LUi1qWVc5MFdHZDBadG50M3lDUnJldGo3WmVCSExjNGZVaEdNTEh2RGFNVjFXVElJaTI1VThDOExiTVI2UWY1c0x0Wkp2a3I5ZF8zQU1Od1cwTUM3U1NBOGpLR1A3R3NQT2N4UHRpNHdTNUl1a0tRcnpLS0tTWWpOa3hNUDQ3a1pBUFdubkM2REMwcjBSckFfWmdRVmVNbW5mQzB0UFE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: openai-has-to-answer-to-alabama-on-hugging-face-
+  headline: OpenAI Has to Answer to Alabama on Hugging Face Hack
+  distinct_outlets: 6
+  outlets_sample:
+  - Business Standard
+  - Gizmodo
+  - Inshorts
+  - Investing.com
+  - SOFX
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiiwFBVV95cUxPQ2hnSTRHQ0tzZENGY202ZUFwcklJNHRBTDlJOGlHVW1IMF9YV09SaGFDTE9UZUlGeWVVczlqUXVBbEtxeXVORFdla3pBN05LRUkxUlFXOEpXaUJROWx4bU5PcjB4TUtJX2lvZW4tMWszd0QwQUhyRGJXcGwyVUUyTTVEQXg4aldNQ0RJ?oc=5
+  - https://news.google.com/rss/articles/CBMilgFBVV95cUxOenozeGJ1RzRCNm5EY1ZHeEtNM3hHVmhPWWIwTUY4UnhNcTVoelV2MVRmZnIydjliTTRBQVVBSnpTQjJXd2pKVVlXTHBTWF80aS1IT2JsRnpCaWgybFBPbFVzNEVISXZxd3M0OXhiT1ExN2FrQ01seDdFMFM1M3c1MlRKNFVCc3FiRmlEeHp3S2labDVSQkE?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxOT0haai1uQlY5UVFGTkppYVRlTm04X2pkMDFnRnJ6NVNRZC1aSVZWQ0g0NVluNEJxMHVaNEVTMC00V0gyc1g3b2R3QzJCNkp5OUJsRTgyd19kMVM4UGhFTzY3S1ZDbmVNYzBmUDltbzFUUU45eU1weUs3YjNtQ2JXVzRTVjJVUklEb2F4YjhrX0haNWhBT29udVI0Nmg0WW5OcUs5UWxqT2k2aEszTjE1OUFiU2VYdkRNRVdKdTRuOWNFdWs?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-containment-breach
+- id: s-p-500-nasdaq-futures-rise-ahead-of-nvidia-earn
+  headline: S&P 500, Nasdaq futures rise ahead of Nvidia earnings
+  distinct_outlets: 6
+  outlets_sample:
+  - 101 WIXX
+  - Crypto Briefing
+  - Jefferson City News Tribune
+  - Reuters
+  - The Straits Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxNMmtLQ3NsSWxLT2pzYXdNbVE1Sl94c3JXWENERzNCTGpjRC1Sa1c2WlZUQURMMjhzWWxDUG5RUlNvTVRKUnNZN0pTeWJuVzloaWJqTXdyNkV1VV9QNERLbHRLb01xVWdSc0F0WWZPTXNOVUJVX2pUbjloNjhhUjZUMGRQazlFS0pCY213NnE2dWNzZnNW?oc=5
+  - https://news.google.com/rss/articles/CBMinwFBVV95cUxQM093U21Ia3JnYTg5REg3b2ptWlF2ZmdLbDdmb1BTeG1vRnA5bEJTOExuV2x4TW03SFhTeThGNk9zNExwVkNPanlXdVJjYlc3UGlScWZhNVg5Skd2LTJCUXM2Z3ViTUFha1RLdGtDYnNZTVpRNlNNWHFtcklzY0tuNlN5Wm1fRkpnT2RscXJmdWQ1TlF0b2RUVmFtSER2ZkU?oc=5
+  - https://news.google.com/rss/articles/CBMiiwFBVV95cUxOX1hnWlBaMmFIekhJcHg2SzFtbVdLb2x1Um8yblo0cTBzWS1FV3Ewb3NHZk54SktPTFcxS012TzJJQ1pDb2JzekVuZFd5OHRBZEpsWmllZHdlamtOVThYQkIweVIyYktibTVXS0lJd1k0SzdoOTlCS0I3RGtLcTFqTmJSU1JwSlk5MF9R?oc=5
+  source: google_news_rss
+  status: candidate
+- id: spacex-launch-visible-over-charlotte-tuesday-mor
+  headline: SpaceX launch visible over Charlotte Tuesday morning
+  distinct_outlets: 6
+  outlets_sample:
+  - FOX 35 Orlando
+  - FOX Carolina News
+  - Space Daily
+  - WCNC
+  - WIS News 10
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMie0FVX3lxTFBBQ2RxY09Uby1RLTJ0SW9tYktGUms2ZGIySjZCUTZ1MlVBVnQxejBCNTc5cXJwOXpCMElKamp4eWpkenRBendwVHkxaWNWYVJfMWtHeGlBRHdWVW4wSWJ1M3dQR2tvRE1oeFM5Tm05b3FYWnlmZmFod09QOA?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxOdTlkVVhaMUdObTlqaGRGUlBIQ3hCTzF6SE9EN3pDYlMzZTJvNzdEeFdGQktybHNwWmlpenlZa3dUbFQtT041TUQ2Q2k4cy1oS1dZNWQxSHdnMXJIR3pQbkI3cWxCT3c4SWNSNDBnbTYwVE1BWjR1aUM5SmtZSExUaWZLd2h1U19XM25OZG5mOFpvdDZoWHhTWGJKNFh6VExFOFE?oc=5
+  - https://news.google.com/rss/articles/CBMimwFBVV95cUxQN3l3ZzZmVklSanJkM3dlLU9OVC1RbldJRzByT0Fkdi10bjhnRUZkb1lraXNIc0VMbEpZOUVfT1NJb05NdW15OUNNR0pNRExLTU5VUzlPVjBzMFAtQW1GQUw2TFhVeTB4c1hHSVRrRm1qbmVISlN6aURFS0xUNjZ4OVF3anlDQndIRmJfMHZ4YWpEaTEwMXdLd09Kc9IBoAFBVV95cUxQS2xiS2tMZFZ2WFBfMTZrMVBNdlJ6c0JONDZocUIwTWlpQ01FSTYtVW5QZl9RUW5FbG1ycEJiMHo3WVF0WVRSaHIwTmlNQnpQNHBsYXVCMzJicVpIbERkZ1ZPNzdZRF9ocXZ5ZEtTZFBrOWFwS0JsbEpMdlFHSTg1LTNwcFJXVDg5YnA2ZzhNT1d1Rms2YThYOWRKeUM0M0p2?oc=5
+  source: google_news_rss
+  status: candidate
+- id: hugging-face-explores-sale-worth-13-billion-or-m
+  headline: Hugging Face explores sale worth $13 billion or more
+  distinct_outlets: 6
+  outlets_sample:
+  - BetaNews
+  - Business Insider
+  - Tech Funding News
+  - TechCrunch
+  - The Business Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxQLTY1N196TEx3Wll3NHRUY3F5eDdDblVTSW1NREE0SlpZZ1pjb2liVkstaVkxNGFDRnkxdTFtendMSENBLTJqZUd0OHFad1BNVmZmYjFpX1NhSHRndExQTm01d09PV0Z0cnNZRUpNUkFwZkR4bUR5VkN1UDc4aWhhbFNjdmhLSTJKZWJpVndhZDJEX1M1?oc=5
+  - https://news.google.com/rss/articles/CBMihwFBVV95cUxOanUzRFJXLTNSVlAwcGVTaS00WHhpY1dJNFBLazMxcVM0QVRDMWI0ZTRvS01iaUxDOHFUaW5aaHh3QXJ5aHhkbkJiX0llcGo2REZCM2hQXzlROHZOQ3lBX1hsMkFUUGo4M2JUMmpaYUt1M1h6b19yVkRla2xOS09wRzhCZ3RGc1E?oc=5
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTFBEdVlXSnA0bGI4TV9qX1ZsNlhYY2sydnhOeFdrSm5SZUw5X1M5WW9ZakJ0cHYtUlhWVmdLOHkyc1hzaDVVd0ZGWXF5S2dsWTJUclhnQUlkX21iVUk2MFJXVkxIY1FxODl3djZiM2JJX1R4ZHZNNEE?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-containment-breach
+- id: softbank-group-plans-record-8b-retail-bond-sale-
+  headline: SoftBank Group plans record $8b retail bond sale in Japan
+  distinct_outlets: 6
+  outlets_sample:
+  - Business Standard
+  - Investing.com
+  - Japan Today
+  - The Straits Times
+  - 富途牛牛
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMisAFBVV95cUxOQ1c0am5mZjFnOTBmNHE5VzZWVm1fSGRVMGdIRk5ldlBTZDNfdnBCZlkzV2J2QTMwLTJRNHUyX2JZSERZazdRX1EyZkU4Q0tvdkVNYjVKRlRkcUNLX3JscXd5ZV9YVUlUQXY1ejZfZGpHMTc5MUktWWNQdktpZkZBV0t5UXpFU3ZqWXhNZDZSbEdIS2p1SDcwS3ZPU0w5N3VzSUJrX3VDV01rbVhCSERQMA?oc=5
+  - https://news.google.com/rss/articles/CBMi2gFBVV95cUxQcXlGLUIyRERjVldaMVZ2YjZTN0tra3ZKTl9vclg2ZTE2NW5BU1Jqb1doYWNPLVZwMnNLVXYyVkNyVXRYQUtiRmk0YnRrWHZiY1lHUU9ueVdrb3VzcTk4Z0FwWUpJUkxjRXA2a1oyZDhfbWJOcVRBVzBuZUd6S0dlQkJnNmFEU1VhMjZlTmRkSXdWTVdnNnl3UVdjZXVvb0ZTQ0xwMDg5Y2tUYTJ6enVDc2wtcWItUmV2MGZ0MWYtMHVVWXFubUdzR0tNWTlrT2I0TXdyb0sySDlFdw?oc=5
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxNNUdaUnFTS0FITkZKV3NiUEJLMHg3b25FV2VHTHdjbkd3Z0xGdXRQOFBxTFJJbUlKb1JkaUNscWJLTGFhaE9YUE1xb3doMGh3czNhVFFYTDBUX0xXbUlQajZoek43RXNuaFhKb1FFYVU1TFRzbFZ6UXlRdG9EeUpoZXNLMzVnVHJLSU5qZWdVd3lOcjVIeGpJSlpB?oc=5
+  source: google_news_rss
+  status: candidate
+- id: marvell-technology-shows-bullish-tech-growth-bu
+  headline: Marvell Technology shows bullish tech growth bu...
+  distinct_outlets: 6
+  outlets_sample:
+  - Investing.com
+  - Investing.com India
+  - Investing.com Nigeria
+  - Invezz
+  - Pluang
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiqgFBVV95cUxNek40a3pZMVd4R1N1Q3YtN0VJY2VlRHlKbTY1STdBN1d1dW94V3lNRnVPMDNTVlB3VmF3VEUweWg1OUZkbGJ6V0lDbXhMaTRZbWlnalRCQkktZ3NLcFN0Z3NscGtWcXFyLVFlRmpVd3lRZWhFcEdReXozV1VPdW40ek5GcDR4Q0UzX1dKREF6TlFkQ3M3NXVKQmh3TXotamZJd3RPc3pzV2lVQQ?oc=5
+  - https://news.google.com/rss/articles/CBMiqwFBVV95cUxNQ1J2ZTVHYVJRVFZSQU93bG96VE1iZkx3ZGlYUEE3eC1HSW0zNzJpTnF4Um4zeXEwamZuaVh4R29XR0h1a2gxdUU1STJ6MnJRVEtVbmtnWHZDQUl5RTQ0RDBYRTA0bjR4WnJNNzI2bm80cFl1OEgtY1RvOHNoME0tTHF3Q2FfbHRsLUFXci1na1RneUc0eV9IbW9VQjRla0NmZHhFbE1vdFN3b0k?oc=5
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxPclI1STNrcUhXODhtekRfWng5Vnh6OWI3NlZObmZkel9tMjVlWTBCTEdERjFIbllMV0N4UHJ3LTZTUTJMZ2ljY01YM1JnRjcyR0hZZk96N2pBbDdSNUVnWnlHYkVfakNMaEs3cS14bElFNjk2UUVCSWpIdUFSOUx2R1FfWmZsVHEwN3M3WTBzTU82WWJV?oc=5
+  source: google_news_rss
+  status: candidate
+- id: kevin-warsh-faces-bond-market-test-ahead-of-jack
+  headline: Kevin Warsh faces bond market test ahead of Jackson Hole debut
+  distinct_outlets: 6
+  outlets_sample:
+  - Crypto Briefing
+  - Financial Post
+  - Financial Times
+  - Firstpost
+  - The Spectator
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMihAFBVV95cUxPSm00MzZFZ2FTbnZydXJHVzZBSW9GMXYwTF9OREg4d0VleVdtcVhpRWoyUjQxNE1XTENRbVV3WlpPaTlOdGFNY2RLYnJ1SXRFNWNFX1plZjRIeFNJdHlEWF9Hem92MmltZGVMNWc3U2JpSEc4S1I5d2xuYlliZkV0aFRpYXE?oc=5
+  - https://news.google.com/rss/articles/CBMisAFBVV95cUxPNGI3bmJlSDdfYkdrajhSTmxCODI4dXB5RkFnZUxzdXRzR3I5UmtFajRIS3JIUE95QzAwc1hJM1dnQm9rOWY0cjBxcjdtWDVkWmo3N3RzNG16ck4yYXlJMUQ3UC1jMzliZVZQVDd2MTJucmN6VC0wMmJIRnBCcUpoaWx1clB4SDRkUzRtUUFpWHFBTkZPRWhUZjFFMGZ0V01MU01Ra0JNdmpRdGZkRm1rV9IBtgFBVV95cUxPZVB3S1BNQkw1RmN1bVVZWTBZRXZRc0E3WTlQMWhCSzczNmsxYjAzUkdMYm13Z01VRWk2UTdISVFqcEI3UUFCQ0RrYmUxYzRDemdHT2NORHJGT1hyOXVhNkFHenpLYndycDBUdmZsWnNpRy1nRDZoRDEwSVZCZ253ZncwM1dOWmRnY3gwWTdDR3p6S0F6Q0xSS2haemkyMW1CMTRFZFgwbFpoNXp4YmUzb1p0WnFmdw?oc=5
+  - https://news.google.com/rss/articles/CBMipAFBVV95cUxQdHFlWnZob2cwZklEUjNJWkkxanRiUy0tQU9qQ1FOUnI1VjRqWEhQNC10SU5sYjFOS04zX3VRNHRHazZSR2RfdmVHQmZDSmY3Ums3dFRiTXdwVDhZSWJScHdaZGNXTXkyeHBzUFZvOVRZV3J4clhIZ2pBTWk1RTJHbjBUemRpWHpzYW9ad1BraHZDMjZIcnNYbjJBd2YyZmV2TGVFWQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: treasury-long-end-intervention
+- id: tanker-comes-under-attack-in-red-sea-near-saudi-
+  headline: Tanker comes under attack in Red Sea near Saudi Arabia
+  distinct_outlets: 6
+  outlets_sample:
+  - AzerNews
+  - Crypto Briefing
+  - Devdiscourse
+  - NewsBytes
+  - The Tribune
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiVEFVX3lxTFB4Q05FeGpDTDRqdWFFX2pVb0lmemVLa3hLa1pBaERsRGh6RFFzSjVuQTgtS0dCakJ5b1RpNDNEV3Vna3NBdExoSm1GbVNLdVBNYVlVTQ?oc=5
+  - https://news.google.com/rss/articles/CBMixgFBVV95cUxOaDB4VHpkR1ZMUFprSTdKVkhDbDFvRzhhWncwNjFzYW5WNWpBOHhJd0wwdHZFVjhPdkNnMkdSRUN4UFAyOFZleElZWlF1ang3YmJCanE4RDJzalJ3TmhrZ0d3eFkxNEZGVjlMY3V6ZVEtMll0OFpEbmVMR2YzYTdjMmRxZC0yakRjZW5LMHdNLWc1VkhuaXhmRWdqV2ROaEstc1FHTThMSmZ3V25KbDk5ZVd6X2Y1UkF5dU9TTkFjbUNHVC1EeFHSAcYBQVVfeXFMTmgweFR6ZEdWTFBaa0k3SlZIQ2wxb0c4YVp3MDYxc2FuVjVqQTh4SXdMMHR2RVY4T3ZDZzJHUkVDeFBQMjhWZXhJWVpRdWp4N2JiQmpxOEQyc2pSd05oa2dHd3hZMTRGRlY5TGN1emVRLTJZdDhaRG5lTEdmM2E3YzJkcWQtMmpEY2VuSzB3TS1nNVZIbml4ZkVnaldkTmhLLXNRR004TEpmd1duSmw5OWVXel9mNVJBeXVPU05BY21DR1QtRHhR?oc=5
+  - https://news.google.com/rss/articles/CBMi2gFBVV95cUxOM2VZSHRRWlpaX0tWOEVJWEFPNFRpS3VMV1NJaEo5YzBnY2Y3Si1nU2RKWHpBZFNoN0Q5UExtZlZ4NTlSUjktcTRhdVhZek9wMnFfNFZjNXIyS3FEdjNMbWtIQncwTy14VC10WlNaTDBoYUtzZW9WMjRKM29wczBFV2w0WS1lYkt1OTRaQnJtRUQ5VzZjYnpxR0VkNk9IM3FENWlfa19GNDM4TWwwcnZJU3dnTDhQRV9aZUhqUnctLVVOVXRwNDZELW1PUDc4ZUxabVNiRXItNzI3d9IB3wFBVV95cUxNY09SWExwTFE2M0JycDNnN3E0WEFYeWlaWHY4U1BpOGtmQUFnMzZLX29saC1nUVZQR2VFMzdQSnlsdWp5amVSN3ExTWQyd3g4SUVTS2xJM0FGa1FmQ0tYRnh0VGNldkZ3TFp1YVB3VHV2SURRSGVCSk9UVXFycVJ1ZzFpSU1DNWk4MndSVFc0QXczZFRiWV9PV3lKcjhkM1VKY0dUM2ZxbVo3NURUWlA4VTRaaGpSUjczTWhhM0VBTUJ2amt5UUxNMXdTOGVDbTViWXpvRHJzQVpQTnZLMXlv?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: openai-says-its-jalape-o-chip-bests-nvidia-other
+  headline: OpenAI says its Jalapeño chip bests Nvidia, others
+  distinct_outlets: 5
+  outlets_sample:
+  - Axios
+  - SemiAnalysis
+  - TechCrunch
+  - The Verge
+  - UA.NEWS
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMikAFBVV95cUxNbTNRWmU0SFJMTGoxY0pKdEtJQVlJdUN2bXJZWm5NT18zOTN3dTlkaUVQLXdQZlFUaVc2c1k4d3JrQ1gtbENsNU5rcDJfR1ZxYWh0ZXVsalRmWXIxcVJmN2ZVcENBbXFuckdsZG9qZFkzQ0lNRVg4emxKY0tEMGhqb0djMDNoTjFPME0zWGJDRUw?oc=5
+  - https://news.google.com/rss/articles/CBMifEFVX3lxTE0wUWNzQzNua3BlcVlyRkQ3cVAza2pXdjNZLWZVVWFyakZqWmhXVnlYYXFvbzA5d2VmNVpyeTdlY29SSEFJZ3VQWVl1YmtGcERjS01MR1ljM1ZiN3d0UWFhVDNsQUZLUmIyaUNlT1Vya3N6SV8wZjRrMzhLR2c?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxPLWxGd3ZPdE9xQU8yYkZVWENGWkNEREpaUUd6Z2RHRDF4OV9uWVlVTXY1RzVEZ2VmR21tcS1pRVZzaHpPT0pjM2IxQkRyeUF6c2VucHhpdzJsQVZlUVNMRlNaNW5aRnFNcy04bUxkcld4dUVWeWdVcUlabzczaTVId1gwUFpXYUFEdGdPVzZiVkYzZUNLRlFmYg?oc=5
+  source: google_news_rss
+  status: candidate
+- id: anthropic-sent-san-francisco-staff-home-over-a-s
+  headline: Anthropic sent San Francisco staff home over a security strike that wasn't
+    happening
+  distinct_outlets: 5
+  outlets_sample:
+  - Business Insider
+  - Business Insider Africa
+  - Moneycontrol.com
+  - Startup Pedia
+  - qz.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMipgFBVV95cUxNV3JsZ3V5NHdIQTdfZ2xQTEY4MzNFRWx1dzNld2cyMHdCbGhaWFAtT3RHcUxrZDh0M1ZmWm5OZW9yMmJ4Z1BUaDh3N1k4bzVDOE1MRWpTUUd2WEVTNXZRbHVnX1Z4T3NuRHg0TEJVTnFMOGROY2hTaDJtUHRkb2VYdThVbzM2eXVLeGhieDZyekVPeUF1Qk5qb1gwTXA1UzE4cUtXc0VB?oc=5
+  - https://news.google.com/rss/articles/CBMifEFVX3lxTE9fR2VoUFcxTmhHdlFNVWEwV0RneEFUcklhdXdicnZwU3AwVFFfNlJSU1pyU01ya1NFTU5ySXFCWkwyVERySXBKYkhNMkdBSVZhMUNHTURfSW16Q0lKQnZpWGxUQmdXeUw2RFlfSkpUc0ZtbUk3a3k3REptQzQ?oc=5
+  - https://news.google.com/rss/articles/CBMiywFBVV95cUxPcEt1ZXA0Mkgwb19aaXlEZTRLRnhqdGYtdGtObFdKZ2JYcVRmSWsxUkR0TnV6akEyWktvMDNfdXF4b1NTZ3JJV3dzSEhzTmVlNUhoa0dRN3E1VThSSzdFc1Y5VUFpQlQ5NFBwaTdQQW4wS3BlTzJUdUo0bUJ1d181SHhpQTQzN2pUbGRJRlVMbDBEc1htenVOM2pvYkFHNXRjcWtKaXZUMk51emNKY2xRQXhhaWZ2VjhsVnVuV2hDc1FmZDRrOHNZZDdZcw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: thomson-reuters-launches-in-house-ai-model-to-cu
+  headline: Thomson Reuters launches in-house AI model to cut Anthropic costs
+  distinct_outlets: 5
+  outlets_sample:
+  - Legal IT Insider
+  - SiliconANGLE
+  - Stock Titan
+  - The New Stack
+  - qz.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMib0FVX3lxTE92VFNObjUtUy1TSG9qdFE2QUZ2dVFQZ1BJU21ZaThMVTU3OEJxdkQ1LXNVbFNfaXc0S2o0RTh3djJnQThJc3dTUm5abWpma2tIVnZhdzBVbnMxMElDb2E0QTNtMEdaVHdDOFZmNWYzVQ?oc=5
+  - https://news.google.com/rss/articles/CBMiXEFVX3lxTE5RelNWYlpvSV9NY3ZFNV9QQ2R4ZmhZUnl2cmN5bVhmamY3S3VBaEdfM3g2WFdLLVRHZy1kalZuM2IwbWhub3Jqdy10S0JOWVgtMTNYUDd2WXNWVVhx?oc=5
+  - https://news.google.com/rss/articles/CBMivgFBVV95cUxQNkd6RzgwRVFHcW96WWphT19DQ1FzeUtqVldBa05NTm5pbXhNREVDeDFicWtDTjdmQWxZTGNZekdNekpCUzZYaTB5T3NmcmVJRWZlbm9rN3BtXzk2bnN3bkNTbXRtWGFyLXNsQTV5SUVycWd5QlhIbkZ3Mno2M0hUNzNhQzlWSXMwcTVFdTMzSFhxZ05od3lhQTdEeXNGS1psdW9yUVlKbGF1cUotRFpxcW9NMkh0VWFxbjJMT253?oc=5
+  source: google_news_rss
+  status: candidate
+- id: google-gemini-app-walkthrough-features-and-setti
+  headline: 'Google Gemini app walkthrough: Features and settings'
+  distinct_outlets: 5
+  outlets_sample:
+  - Mashable
+  - Proactive Investors
+  - Reuters
+  - TradingView
+  - marketscreener.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMib0FVX3lxTFBPcEE3N3Y2SXBxeWdoaGZBOHFadE90MG5ZNnNpZkhCTVlmSHJObV91WmNvRkZSUUJFR3haV0hmTEh2VmhVTWMwYUQycmtVT0VoZ0o2VExRc0tJaTdHZUViN3FlSUVYQmVveVNXQk41dw?oc=5
+  - https://news.google.com/rss/articles/CBMiywFBVV95cUxNR2pPWmg5c1RCMU5RcDJnOWV2VHhzcnIyMDIyWGgyeWt2dFBNeFZZYlRNSUxTQkxsdnB5LXp0WFZWOGh5elVlVWJvb1R3Q1Q0c0xKRHNKcTlrLTVfeEJCdjFNd0hZNUlXcGdSamJOSExCYjZhRndnTlZyLXFDVWYwb2NLdnppT3pHbC1BOW96YTIyOTRXRWFuRUhSa3pmOUJJWWloRm94MjBzVHM5NzN4cVpselp4WFl6c3poTGVFSDVra05FNFFydDhDWQ?oc=5
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxPZk81aGh3d2lJX0FucWpwclltdnRJd3RqNVpTWnhMeGNBU3FUeWRIby1lcEpQQ3NOT1VaWjRlU19vT1lmVzdMTEpjbm16eTh4MTdvbGRtN1ZQb243eVZ2aF9Sd19PMEtzd2ZpbGV2R0p5SzZRTGJLNkE4TGNZUmtxVnlvVGx1NlVYQkIwMmEwRnV6RGxEQ1BvTGIzNGE?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: apple-gemini-model-deal
+- id: spacexai-to-use-nvidia-vera-cpus-for-faster-agen
+  headline: SpaceXAI to use Nvidia Vera CPUs for faster agentic AI at scale
+  distinct_outlets: 5
+  outlets_sample:
+  - Electronics Weekly
+  - Engineering.com
+  - Stock Titan
+  - digitimes
+  - igor´sLAB
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxQOVI4Q01GMXI0VkJWbU4xREZuV29TN2hCa1BzeklBbE5yU29BZGtkb3pkYzdLNnJMcHJQNHo0cUs0QktTNVItTjE0LVAtM3lkWXRfU3dIOXZiMGVrTlRjendJQzdKMDU3R2Nqek5SV2RGbnpBZ3Z2X2FFcV82WjlWLUVhemszX19EYzk4WGxtUkFyZ3ZBVXhRMXExRENjV1psN3U5Rk40Y05Ub0NVWWNFRWVZN3Byb0ZtamIwRUZ0NVJURjFCWEdKbkhXOTlrZw?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxPRHl3LWk4OVh2a2tMZGg5Q01nNHN3MkdfcTJPRTk3aWdiNVhQTm82SzgwV0lsaFdsVVUycEs3eW42eTZveW5PeU5sbjZ0SzlMU1d0NlA0em5oNWpuVFRSUjNqR2g1OU1kbTRGSktyaHpsUW9yN296dzVWd3JFX0c4NlBJMGxzNE8xZE5zQTE1ejJKYzVXX0dXTjdmaHdOcUZnV2ZmazVEQXZIX3p2bDVzMDZCdWVxbi1QbldTUG54SWc?oc=5
+  - https://news.google.com/rss/articles/CBMilgFBVV95cUxOc2hQRWwtSHkwSUxrNFQ1UGNXWlgtcm1BdU5SZG9KOENldnctT0c1VGJnRjlwXzkwOGo0QVhYY3pmUEhjMFBjV0RwY3NSSm5JdXI1d2E2NmRYWk5CZklsZ3JBSEpyU0hLTUpSa0NWajZXOHFZM3Z2TXc1SzMxaVJ2Q3AtVllhVFV1RkZEUldYcy1FSnBGcFE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: edimakor-v5-2-0-update-integrates-deepseek-v4-fo
+  headline: Edimakor V5.2.0 Update Integrates DeepSeek V4 for AI Story and Elevates
+    AI Avatars with New Templates
+  distinct_outlets: 5
+  outlets_sample:
+  - Caledonian Record
+  - Send2Press
+  - Star Beacon
+  - The Facts
+  - couriernews.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiiwJBVV95cUxQbzhHNkNEamtCZmJYYUNnSU1OcWhjZFZXWG9pVlBnRkFDRm4teFZnQ0M1NVQ5b25oTjlTRkF6bTIwalktMVFZN09xemkzM01qYVc5TWl3Z2JlVWQ5NThmMXg4dEtZbmNzT3NweVJvcG85dFdDMEZqcE5ENTRuNlR3dlNYQV9QTUhyUXQtZm9takVrOG5jV2o1aU9Ec2E2d0w1bGhISHVuZ20xWm5DdzMtWkN2bXFNWE1pV3VEanpXUldpQ2M3MXFDNVpGcjIyNk9ZRENteFpZR2d6OWYxZFIyWGMxZmU3Q182MEtBRmdYZDdCVjM4b0tQb1pQWWNwWXViUi1OWGVtRjZGQlE?oc=5
+  - https://news.google.com/rss/articles/CBMizwFBVV95cUxOcmUtSnV1VVdpQUN1MlB4a1ZLQXJZQU4yeDFFRmZjWDVKRnhTSEJDVkpjbmR4U3gyOEU4ZDEtckx4WVZHZGw4VWUwVW1lS3g0azlTZVd2M2wySHFycDZfZUFDekVqQU1MQnBkN19qbmJOeTlVVmo4ZGs2WWFyeGhkVjhlVG12SGNRQ2dRMkV6NExRc3Rkd0xJcV8wUF9mTGhaeERUODRKX01YWWNuYjFBbzNXQnpRcDJ3RTJ4NDFremFVS0ozSkdwUWc5QzZhNm8?oc=5
+  - https://news.google.com/rss/articles/CBMi-gFBVV95cUxPek9GSml1MFBFMWhCcmJldm8tYTFrRTBGZWxsYTlyY1FzZjVWWGZvZ211NkI0TEFjdzQxcGstYVNtMmRTamVmQkItUEhiNVpQOE1ZWVR2ZGhEVGp5V3RuY21GMjJORFJ5enVWbnFVTW0zNm4yTDVKdXNYX0pzT05CTDhYak94bGUzM1lsRUtvUXA3R2k1Z3ZkcXE4VHFTbFFhV0NVbzNlWE1HcXFjeTA4bVowQ1VkcVJEOFZybkRLMXZaaThGZVRrR2J0enNfcEpDeFlRa0Zlc0t0b0lGeF84YW8zQl8xVHdwYzNKajZfUXEzSENRaTZiTnZn?oc=5
+  source: google_news_rss
+  status: candidate
+- id: alibaba-to-raise-10-2b-for-ai-in-hong-kong-share
+  headline: Alibaba to raise $10.2B for AI in Hong Kong share sale
+  distinct_outlets: 5
+  outlets_sample:
+  - AOL.com
+  - ForkLog
+  - Free Malaysia Today
+  - KuCoin
+  - The Straits Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMixAFBVV95cUxNQTcxR09NMEZPVER5TjQ1WlZaZ3BjUzZfcVBmdkFzUC1RN0M0U2RKcEd0ckdxbmxnYlEyU1ZOMi02aFkwemlycS1YT3ZuNEdadWlkd1FyNjdSM1ViZEEyaXhGZ2t1Z2trdnFiWTFrQXpuU1VjRmdHOU5uQkI3WTFDeGJuYUJBMERnU0VNZHlYX2NKRnhkdVdqY1UxclZnNmJjcUhJcWYxVFI0OXNBcENCRXB6YnNKcWtwM3pVcE1RYmhRRVVT?oc=5
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxPRDdycnkzYkpGcnVEd1pQTlY0eDZrR1ZhWWszTENya0R4bUZJUWw4M3k4LVBsNDNsOHdGRzI0eDMyLXhHMmpydkZhMXBBZG1XOW5oNm1uX3hzWnhNalVxbWEtSTFvc1h2MWx4Mk05Q0d3UVQxMjlfSTFmS3VySzNBZDhTQjRTX1FuZVFLMkNLck92c3N5QlpEV0pqaEJsTDRzQk01UXJfVENST0R0NVZJ?oc=5
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxOSkx2aEJueUVadlpsMWQ5bGllYmVzS1kzNVFvVjFnb20yRlZONmNrV2hNN1FoczhWY1NjdDdaZVpYeWVka21CNGRxc1RQNUVZbmFSVW80YlZJOGdtYWFYbEJjZDdEbldXR1lnWHpWQW9OS290OFlsdDllaGt4V2V4d2pGWQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: aker-solutions-and-microsoft-to-mature-ccs-proje
+  headline: Aker Solutions and Microsoft to mature CCS projects
+  distinct_outlets: 5
+  outlets_sample:
+  - Aker Solutions
+  - EnergyWatch
+  - Offshore Magazine
+  - Technology Record
+  - gasworld
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiakFVX3lxTFBpUVUzUV8yeGk4UFBVSFJ1S2xUWkVVUlhxNVR1U1BpWk1uUXJGTFRaVFJwdGNwbEk5b2lIanRGeTVrdk8tV09mclhxUy1qS3oyclF6UG1fX1lmT3dfRGllRXVjUWhUTllJOXc?oc=5
+  - https://news.google.com/rss/articles/CBMiyAFBVV95cUxPbURDQ3Z4dXQ1aExyNzdPMjZCT3N4ZDY1dHFyOE45TUZMeG1zMGFlRzJXWE9tZkFkVmRzNXA4RlFvMGNxVnFYUFEtSlR3YWhMUVNUQy1IRnVsZnJ4Z21SYm1vX1FwcGNuSGowenlTUm1yaUU2ejNJRnlRdkNyXzVVZk5FLU5tSXZGY3FfTm9iUmxuSXE4RU9oeGRIdzZoaERuaUZlTHlKY2J6eVlOWm43cVp2c2FWRjd0SG02OUMtU3JEMTlyVXRnVw?oc=5
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ2ZNbUVBMGdZbWhGSU05SGFOZ09tblZkbnBVdldmY0lBWTVtdENaM3FjNEl5RUFVYzFyOVdTclhRQXNmeGZsZE9vX1Rya1ZCdTBJa3hPWWtPYmVCMm9hU2pDd09xX1RnQVFfb1kyYmM5cGNkRmhURndUaWRKRzhQRGZkZGtaVmhDMk91V21KUmpobWw1SXc4T1dMeXB1blJhZVU2aEpqZFZsQmI2N1RJM3NfNzA2SVpCT3M5V1VLM3VBLUxZei1HSzV1WE5Odw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: mon-nm-supreme-court-pauses-project-jupiter-air-
+  headline: 'MON: NM Supreme Court pauses Project Jupiter air permit, + More'
+  distinct_outlets: 5
+  outlets_sample:
+  - KOB 4
+  - KUNM
+  - Organ Mountain News
+  - Santa Fe New Mexican
+  - Source New Mexico
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMisgFBVV95cUxQX3BVZXByQ3AxN0Y4WEJzd0x0aVA2Z3ZrdFJwZ1dKa2NjS3pxaV9NQ3BOSUhkYkRIMkw4bjQxU0U5QXBEa05vdzBNRUVKSnNCaFBiQXJmQUFNaUJXWHR5bGZVd2F4R1d5OVpocExQaV91U1ZSY2hWT1NUWlFJX0JiV3NtNzQ1Y1NRZ19YbDl1S3ZwTFVFTEhBUzBYQ2xFSE5idTlldDd6VmszXzFfZ3kyNndB?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxPV0tHcmpvS0VvbWpaR3BDUjgzajRKM1dSVndreUI4emZyT0FnTkUyRDI0RWVJRkt4OWJneUNvVUJndTEzU2dTQlM0Z0hhYk04cVhCNjhRZVByUWNVM042dlY0bGN5UW5WOHhEMlFxT29KaDdRd3hkZ2V6SGtndGxHQ2Y2cWdyNC1HcV9fS1pyc2JuWmtFQ1ZfZkJWdDhtUk9INWc?oc=5
+  - https://news.google.com/rss/articles/CBMi_AFBVV95cUxQVGtGd2s5R3JLYWpjbVZzNVdqSEpnd3djd2wtQWdtWHI1MUpxWl9iUlRCSDdDQ29EbXNybGk2UzF5dkx5RThXRmQ0eTJva29ZY2FTLUhDN3BpMTRlSXpfRXdRQTZkbVk0T25FY1pHY3lwcEo5QlJWcGRQNVVuazVhblVUa09fV09xcnlIUkdIa01iNWNYcmVCR1BkRlVzUktacUR3QVhxZE51b2hhdy1GU2VLVFdUM25zNTNTd2VTSHNvYk4tUzdlc19ZTWpNSkJHUW9oRlB0Q3llZnBJbktjekFqSHNoWWtKTEN0Qk15ZTJibnZSZU9IYm1wWGg?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: fed-independence-fight
+- id: nvidia-lancium-announce-ai-factory-agreement-for
+  headline: Nvidia, Lancium announce AI factory agreement for 15+ GW portfolio
+  distinct_outlets: 5
+  outlets_sample:
+  - Bitget
+  - Crypto Briefing
+  - Data Center Dynamics
+  - Engineering.com
+  - TipRanks
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMipAFBVV95cUxOYWQzZ3llYi0zc01BM3dyeTRPR3lmSWpyTVNGLUg2REZJX3pNQy1KS05iZGVCaElfeGVGY1o1UXEwQldvdnJGdXcyOGNfSTNZNmpVam5pUGd1MHg0YUU1d29CSloyWVJjVmNOVXBHYXNnNXZPUE53Ukxqazk0X01sMWdUS3lvTDZtWks1Sks3bXE0eFJUTm1nbVhNR0N1ZldPUjNyaQ?oc=5
+  - https://news.google.com/rss/articles/CBMikwFBVV95cUxOWmFoVWNRcjBCWmpVai1TZ0hpdDdpampWUm0wWHN6bGNSLWxqS1lzRGItWjNldVQ4WmVUdmJkWGR3YWo1T0dZaHFpRHVaVU1tVkNYQ2JadnJTb3VFRW10SGF5bE1zakJyeXNveFhDZW9VT0s1b2tpRHNSX29qZGlyOVZ5VDJfOHdWTkpWWG54X1hZdGM?oc=5
+  - https://news.google.com/rss/articles/CBMiY0FVX3lxTE12OUx4MS1OMklRUVZHckdyWWpsc0RuT1pIQ3MzWVFyY1FkMGxMNDhHaWtnV2dzV0EtbzN3NDU5dTlvMkItMDJ0Rzh4QWZJNFhjdE5TQ3hJUWVlMWUyOHVfS2Q0ONIBY0FVX3lxTE12OUx4MS1OMklRUVZHckdyWWpsc0RuT1pIQ3MzWVFyY1FkMGxMNDhHaWtnV2dzV0EtbzN3NDU5dTlvMkItMDJ0Rzh4QWZJNFhjdE5TQ3hJUWVlMWUyOHVfS2Q0OA?oc=5
+  source: google_news_rss
+  status: candidate
+- id: not-nvidia-not-amd-this-chip-stock-will-be-the-b
+  headline: Not Nvidia. Not AMD. This Chip Stock Will Be the Biggest Winner of the
+    Historic AI Semiconductor Boom
+  distinct_outlets: 5
+  outlets_sample:
+  - AOL.ca
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxQOTN5dFRkcE5fS0dLczFpOVFtb3kySDRLYmFvNGdFeHFhT1B6bUl0dUZ5WUZKOHU2bUQ1N3FuSXdhNjNnbTFOT2tjLTVHUVIwYW80QVJ0cVBnMnRyTGthbmN0RWx2ckpuQUZSZGtUR1REQ1BoV3JtSndLN0xOS0VBNjRiNkFCUGZ0d2p4WENXempCWTRia3N5aFNB?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOTWJhbHpIQ1k4UF96ZTgwQnR1dkpLelRhWWphRWQtMlhjNnFhamZ1aVhVOEo5SS0yNEgza2taMWhDZmVJbHJ5dWRuWk9ZVm1PS2JIRngzS29GWmJIbGxqeVM2VkpoUTBxZkdRQUUzaUdEd3ByOVlOUmVXbXZTOXRQb1ZYX0M0XzhMOVBxa0hfeHljbEduS0hxMA?oc=5
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTE8wXzFrdFdNcG4xeG16N0ZQdFNIM1o4b3hfZmxkS1FXOTVhWE9xV1pzZ1Y3YUg4QlZhSnBISjRqS0FEQW85a2VZb1lYV215d25nSmFmT1V4N3l2UDRzZjhpX1UwMG9YQnlwcXFLWTRmWDczUEJSV2c?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: chip-hyperscaler-rotation
+- id: coreweave-price-target-raised-to-165-from-155-at
+  headline: CoreWeave price target raised to $165 from $155 at Truist
+  distinct_outlets: 5
+  outlets_sample:
+  - CNBC
+  - Investing.com
+  - Investing.com Canada
+  - Investing.com South Africa
+  - TipRanks
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitAFBVV95cUxOeHpSdjh0MGhNQzZCejRNYUZYaDduMURzTjUzTHl2dGEwWngwU3FUTUVpRlJaVkhJY19ucWQ2QVFPbHhSd3VaeEJvRGhKNVFnTUhzUXJ0VnQ1MHAzNjZuNUpLellZQ0tUeUhnQ3BGZTJnNTIwTUtSVkppSE1YYTIwMllUSmNCRVZDYjNGalNfVlJIRF95SUZhQVFBX1I5ZHRRLTZzbk11MjRjXzQzZl9CRVdVVnM?oc=5
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxQZmE4OUF0UUJJb2FvQUU4NWJxNzV1TzlCeGJQaDJWdC1JaTN2XzlUOE1hVVF1RFdUZkJPUEZyVmlRUzF0a3QyMlpwVWVhUE5EQjkzMDVtNjZpaEpyUTA3dFliTGxVOGV0R0pDN0k4azFiMlcyV0FLbExUSVR2T09vYUlRMEZqSFFjLVdPMG5yTzFNM0xCOURkbUVLaktfcEZRR0ZaTU9INzVROExQR1ZHa1JVaDdKRndDX3VaU3NsNjV3eS1hU05uX0J3eDhlUQ?oc=5
+  - https://news.google.com/rss/articles/CBMi1AFBVV95cUxQRjdZNTBrWmRVb0lkRDZHc081eF9uQm1mOEN4RXZQOENLZHM4aDJVc0k1Z2R4WHlkR3RUb3lLUzlKeFhZN01DTFZ4WXRiZ0oxVk43c2NIMTZ0Nlc3TEhBQnJKTnZQbDNvYjAxOUFMTmpCeUxuSEVNR3lpX2YyUmtLQlFCcm9sMlQxeDl6VWtWNldORi1MQUVVNkFrODdpeXNHa1MydmFPeHIyd29NbUhWaHdJMHVnaDlidVRIRGxRa3hCWWgtTUZaM01BRE9ocGRGNmNqUg?oc=5
+  source: google_news_rss
+  status: candidate
+- id: tim-cook-passes-apple-ceo-role-to-john-ternus-am
+  headline: Tim Cook Passes Apple CEO Role to John Ternus Amid Farewell Cele
+  distinct_outlets: 5
+  outlets_sample:
+  - Asianet Newsable
+  - Business Today
+  - GuruFocus
+  - Inshorts
+  - Mashable India
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMisAFBVV95cUxOeXNRRGlHU0RCZkIwelFlSDVGV1VHY0pzQWJLT2FkWXdqSUJfQTZtaFpndDVNaEJGNldVTGJXWXN4QXZ3SU4wb0k3M2xKZ3lzak9SS21yYXJOaXMwQ1hUdHdBclA3cjJrZEZteEs4V21Ya1l4aGl4R2l4ZWhYRHRQYXdXeG1QcmVqbkZPWWxGcDlRTm9rYWMyOVJRZm45WVNZdmktZXdSN2xkLW1Gako5MQ?oc=5
+  - https://news.google.com/rss/articles/CBMivwFBVV95cUxOTmJoNFpqMk80d2w1VXc1bGtpTkp5dkxUcjlHdkZJWjcwYlk5alBWcG9jMDFCOUM1YTk2RS00R2lfeHNVV1JxZ0tlb1paLWlMeXoycTBCa1NtTlBiN3NpVTNZb1lXY2V4LURVR3ZxV011aXNBRkxZVFVQdDhfSS0teGZfYmc3UjNETjBUelNSQWlDVm9fZDlOSnktUHBZdnZUTUlnR2tGaTVtcFhfdFBDMEdETU5mN2hGcWdUVzhTTdIBvwFBVV95cUxOTmJoNFpqMk80d2w1VXc1bGtpTkp5dkxUcjlHdkZJWjcwYlk5alBWcG9jMDFCOUM1YTk2RS00R2lfeHNVV1JxZ0tlb1paLWlMeXoycTBCa1NtTlBiN3NpVTNZb1lXY2V4LURVR3ZxV011aXNBRkxZVFVQdDhfSS0teGZfYmc3UjNETjBUelNSQWlDVm9fZDlOSnktUHBZdnZUTUlnR2tGaTVtcFhfdFBDMEdETU5mN2hGcWdUVzhTTQ?oc=5
+  - https://news.google.com/rss/articles/CBMi_AFBVV95cUxQUzBzakFfYjR1NUdDWXJPQUpPVnFjU0J6VFE1OFQtUG1Dd3dpOTcwSHl5eEE3TW5panltWWNIb2lCMGJleC0xRDUyc0lhVTAtTkVfQ0RNX2N6am5pYVlMM01NNm1NdXc1TXV1M29kV0pkLVBJMFExcXAtM1lIekZWWXJYeExGcHZ6bVNuVjNsWHV5VmtyN1ByalN2bkU3SEk0eG1qSXJKbDJUQm0wVko0d1BvVWFHdnZHU1p0THI4Z3BNcDRtUXN1aE40eVg0M0c5Q2ZwbFdwUUpIUUQxS0hEcl9KSVpJNWJMbXEwMENWVXo5MXpoaWp5LW5KSVHSAYICQVVfeXFMTlZMZGRvRTZjZGRFd3M3UkFFR3NxeUhqNFl4NmVvbHl0U0hhckZUbXc1LUgxdllwT1VsUnY3NHNFZWFCdzlnbE9wakl3bDJMbTYyZm9GSVNESlJBZjk2Nml6Wmh2UVdrVzFrOHhIcFpCVE5CZnliVFY2UVFxR0k5TnlrUHpCN0RqMTZvN0JEYmpiWGtQeFMxSnJic05WTEkyUnNJTTlWSEdCLWJyUFhsQ2IybTBaOHB0emRqV1N6NkNNRnVqUFFjTjRCVVlBN1liT1ExTGoxeVBFanl0QTFubGJYZDJyYlM3Tl9xVXBLa0hPZlJjUzF0cHRXQVZfYjRMQ21B?oc=5
+  source: google_news_rss
+  status: candidate
+- id: greg-abbott-says-data-center-developers-dug-thei
+  headline: Greg Abbott says data center developers ‘dug their own grave’
+  distinct_outlets: 5
+  outlets_sample:
+  - Breaking News, Latest News and Videos
+  - Business Insider Africa
+  - New York Post
+  - Washington Examiner
+  - Yahoo
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMixgFBVV95cUxQbUpTczc5V2N5S1ROTk9oeE1NalhyNVdvZUNpZFJpaWtjTFUxN3RHb0VTdHhQYVpGLWtZSVU0OUtoWGIzeGVyMUY4ZzV2OGxZZHFKaXg5UVY2amU3Wk93THZQLXhIQjIzLTlLaU94T2NPSk5xUzlqbVBPenVlRDVEa2ZBNzl1NTk3X3FWaUN1czdOQm9ab2Z1SDg2em9pdkM1VEpNTHpYaUxrNldTanhGZEtiMnk0cVFLTUt0S1RHa1MtdnlGUVE?oc=5
+  - https://news.google.com/rss/articles/CBMizAFBVV95cUxQNDRhODIydjB6UWlIQnhzYm56RHdPa2s2bmFuOHpRQWZSTUMxbFdha1FZNWthQktSbEFxajNHSUdyQzhnTlR6R0JJNXd3VWVyTVpIdW1WZmJxandUTDVRY0dQVGc3MG5OZ3RqbHctZG1GUmg4TE9mcjZ1Tk1CTkphVXRuaU9fTHZ0RlRUam9CWG1kU2NpQUpfX1d6N3p4b3pwUHE1S2xjS2FJTlVxMDg5RGZfcjVBQV9BLUlOMTJhUkt6SFJuVlA1azJkRFY?oc=5
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxNNmZTenE2c2NLMWRyOE41RlpkT180ZzI0X2NPaVhNRW9vakg4UlRhazBIcmdOUzU1UGdaeDNWWk5ZR1VmQ1pjS1dxM3J3V19JT1FyX05GT0Z6SnplQUNHSm4yYTV5ZkxSNUpmMlV6akJ0WWRmT0RzSDdGZHBLSUhNYTM2ZTFJSTJidEdnSFhJZ1IwVFBYU3FaREM3VE8?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenter-backlash-capital-risk
+- id: jackson-hole-preview-assets-most-exposed-to-wars
+  headline: 'Jackson Hole preview: Assets most exposed to Warsh’s rate signal'
+  distinct_outlets: 5
+  outlets_sample:
+  - Cryptonews.net
+  - Investing.com
+  - Investing.com Australia
+  - Investing.com Nigeria
+  - Investing.com South Africa
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizAFBVV95cUxNbzhKVTRINUxWRnI1XzZ2X0RhMDJ4MkxocHpvbURTTnBTbVc1X1hKR0puRzVDbFpCTWgzeUZOdm9HaWU2NU5kQ2ZneUNGc0E0OEc1SXRRd091MlNvLUZtSGlUS0w4Q2JiS2g5cHRYd0VyTkI4Q0lqcl85NG04bnlXX2ZDQjNiRFY1eFd2cFdUVWQ4a0dXMXFrQnVwMFQyYWoxamgzYjh0ZDlkV1FNWXlmbUU3WUo5RDN0dGNGbDZfUnFiVGtpS2VqZUktTzc?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxPTnFwMUN4WjJrZGpXOXRodWVTaGhRMHFUbUYycHA1akt0S3JsZGFlZjlSOXdYSWtWSzBFRkoxempmX2YwS1BsZVUxRG90UWttcjJSVE5OZHV2VHROTjdGMEFFMXl5TVgzV2lNcEx0aTdEN3ZaMFYyamFFOVFaX2dXcExLall2N1VZX3hRUnBVdzBGUXU2ajdHRWF6MGM4ZjlpRmhBb1ZNbTdrLWFMLXp5V1BVbWFYVWpDY2ZaOVM0dmM?oc=5
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxOWjJFNG90NGRtdGVyczl0UGNxNHZhRllJdVEtdTVYUWNOMGV1b29VbDNyaFV0VThZOWNia1ZYN2NYanhDZ29fSEFTdjBlRDFGRTNDOERaRkJJMGtLVm5sdjlDYnRDYUhtdU5MdFk5MU9FWndZY0VRTXhIOVdnaF9iSXNoSm1XSHJMY3ZkelBydG9pSUJhTnV5UWtWTDd0YnFQU1pDRUk3Q0hCc0RxaUpR?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: treasury-long-end-intervention
+- id: why-hims-hers-health-hims-stock-is-nosediving
+  headline: Why Hims & Hers Health (HIMS) Stock Is Nosediving
+  distinct_outlets: 5
+  outlets_sample:
+  - Barchart.com
+  - Investing.com
+  - Seeking Alpha
+  - Traders Union
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxOMTItY3V4anF3RW5KY0hobXotX2ZmOTVVQXZhR2gxVnNDVEVQNDZBVENBTFVLNmNGSjlKQnBpYWlKNGtJZ3AycmFtbll6bnBFc1J4dTZoMm84NmR5Q2VqVUhWOHdTWlh4M0szVUttTTIwdVFEM196MS1qQzZCUFNYNm5abFZPUFZyOEh3M0gxT1YzbFJJ?oc=5
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxOeEdOcjl4SmJUc2ZaT2h2WnFJUlZyTkVpYWxHUHVweFpHMXRmMjRRdHJScHVaTkJueW1nNnQ4aTVuamdzNmZFd0dJVTF3VFJzVTFJVkpxdmFNWG1CM3ZkUVF5cDdVbUhIWHhSUlh4V3lzS1J3cGR2S1FzeFR4dzdFc2d1X1Y3XzZvVFNwYmkzM3FCdGtCaGdNVGxsVVM?oc=5
+  - https://news.google.com/rss/articles/CBMikwFBVV95cUxOeEFRV1ZiR0ZhUjRneGhVX1ZyNkpuRlVtTjZlVkpkSzNPeDRXa0JCWTM3SFFPX25OQzJVZU9jcGM2T003bkdsLVpxS192RFl6ck1wNWRGdWFrRm1QNzBYRnN1SHdSX0FWSmh3aHFpREZ2cjVHa1ctNW56b2dhRjJKVk1nbHZDcjd6dWRyQXh2XzhnODQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: softbank-all-in
+- id: new-zealand-to-ban-social-media-for-under-16s
+  headline: New Zealand To Ban Social Media For Under-16s
+  distinct_outlets: 5
+  outlets_sample:
+  - BGNES
+  - NDTV
+  - Ratopati
+  - The Cyber Express
+  - UrduPoint
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMixgFBVV95cUxQZFc2OXgwc0RFdFV4TnJjVnZoTlJ3Ql9SWXlyZ21haXlUZnhtX1BacUNKd0ozcm9kcjhBM0VZZGM1eGVuai1yQjBoQ0FqdVFidnEzcHJtMThXdkMyU3RhWjRScVpfSG5KN1ByNnQ0ME55cGRXZkhEY1Yyb29aczQxeHdMa2ZYQ2NRaWliN3J1TlFWRDJIVTVnZDhEb21KODdQRVphbU5ZeUR0UUowMnJZeWc4ZFdqZHlsRW9TNmhsQWY3dGM2bHc?oc=5
+  - https://news.google.com/rss/articles/CBMie0FVX3lxTFBLbXd4MFZFZmJvWmx3cnI0U0w5MTNySktvQm9UbHJGLU1keUt0MGQ4bGJqUUZxV19YdFdtRUN0Y0tWMnRYVUwtc3YyUDFLTVNvYlY0YnZDcjVMRnpJcC1obG9wWmdIa21NN0Uya0lvbWRRcVpVak9vMVZsWdIBe0FVX3lxTFBLbXd4MFZFZmJvWmx3cnI0U0w5MTNySktvQm9UbHJGLU1keUt0MGQ4bGJqUUZxV19YdFdtRUN0Y0tWMnRYVUwtc3YyUDFLTVNvYlY0YnZDcjVMRnpJcC1obG9wWmdIa21NN0Uya0lvbWRRcVpVak9vMVZsWQ?oc=5
+  - https://news.google.com/rss/articles/CBMinwFBVV95cUxNZE9lYVg4NVlnaEx2cmJCTUVvMVFFMnN1Q1k4bHRTZ0J5ZHlmU0dXV29qOW1Qc2pTQXR3MnBBbmFOX3Rsb0JKU2x0RWVOdHlCVHNzYVV3dEJWRnRFT1BoSTdPaF9udzdhZlJaUG1fbV8wZFpqSEw3MU1zcGU1eVlJejRfSmxhQWIwdFpXcmJmS3dmTnZZcjhfbGJfX0V6ZU0?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: social-media-causality-fight
+- id: nano-nuclear-and-tillman-partner-to-deploy-2-g
+  headline: NANO Nuclear and Tillman partner to deploy 2+ G...
+  distinct_outlets: 5
+  outlets_sample:
+  - Crypto Briefing
+  - Data Center Dynamics
+  - GlobeNewswire
+  - Investing.com
+  - Pluang
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi2AFBVV95cUxNNzlGZ3pvYkVNdWpyOG9UMW95MWI1OVF1NldEeUx0STVQYldYVWEzNkZnS1VPeVNZTzJadnJvZnA3YjhQZWZuXzVyaDJ3RW1vUGlNZ1NreGNfSkNrbkphVjA3X2dpZllHd3pZU3ZXNFBldmk3Tk0zMjd3OHc5YjBIaVNYcEdoYjJQS0lhRTZjaVAtLUdtX0tBOVQyeVlpLUxuUE9WNUFKUEM5Q0IyVzZCVktwRUtSeHNxbUR5QTlvRWF6aGNTS0xzeTdhUW9qUkdLRUY2UHRta2g?oc=5
+  - https://news.google.com/rss/articles/CBMirAFBVV95cUxNOWktYWpTN2RiV3NqMHk5RnQtOTRYTnliOW02clQ2TWQ3aU5NNkVXb2lDMTJRQ3Z2YWVmZ0RINFB1SUhkR2cyOGg2VTMxTFRhcnlFTUpMQnU2Und2dDNTaDBqMmxEZDJnQWRFVGF0T0ZleTI2TENJdVBONXd0d3o1V0lGTHdkNEtOeUtjQWZQUjZBTkhQcE5HRnZLdzllUTJVX01lekhlcmlZZEFG?oc=5
+  - https://news.google.com/rss/articles/CBMiekFVX3lxTE9LcXcwMU1ydkI5Qno2RThfQ0RvQzJpOFJ2WEdZVVNxU3lzN00tOTlWWmwtNUFialYxWkd3MVlFOHJzYnF3cUFaZkJWaXNCWWd1ZWh2WDVBYU9tQjZ4TjFrWE1XeE1nT2dDOWJSQzhJSTVCZEdfUDdPSGZR?oc=5
+  source: google_news_rss
+  status: candidate
+- id: niq-and-the-openai-deployment-company-collaborat
+  headline: Niq And The Openai Deployment Company Collaborate To Bring Consumer Intelligence
+    Into Enterprise Workflows
+  distinct_outlets: 4
+  outlets_sample:
+  - Medianet News Hub
+  - TradingView
+  - Yahoo Finance
+  - Yahoo Finance UK
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxQUThONjRzS2ZiSGRUZnk4SmxON29YSkxETjJCQWRBQmxpWkF2dFlsazAzbkVRa01iSjBrakVReGVLZzNtbV9iM3YyUFhnaXlDQUR6VVM5dlF1dDFROEFFR0tjOGltcUtMeXVkeFpvOENkQlhPa0NkWWZEeF9sNE9IU0xXWXlJU3BVRkNPZ2llcHIxSWMy?oc=5
+  - https://news.google.com/rss/articles/CBMihwJBVV95cUxQYW9aRVV2N2wzd3F5WkZoUTdyZ0lzUkh2RlJ1TWV3M3dTYnZ0Y1NTLVM1RzVUZWVzWEhSMGY1NnozZ3Q3b0lET3NjcVNwNTNtQ2xLS3lhU0c4YXhfd0s4c3lYTjF6M28tYzhOcTRZeWFVSnBfVzRXakhTTUY4QTlTQy11ZVd4Tk9LU2F4NjJ5YURrbmlNdkxXM0xhd3o4YlIyalRIVWNCWFRJaUxnRUFXdWxLLWpRR3NpVEpLYlROLVpWZXdaaUlBYzM3ekEyTXRYZ0xNZ3VRRU1mMDhiVFRTOUg0M0pfS25ER0R3dEhVdHB2RWpDaWoxME93anZOZjVNRnAzNFc4MA?oc=5
+  - https://news.google.com/rss/articles/CBMi6gFBVV95cUxNdTZqbEdGWnBTVUhFZ2xveDdFMVFRNUY3VXA2ZnBlZWd5LTd5RTRsekE3MTJ0UFlNdklzTTc2d0lLVzlQcF9hbXVqeGF2T0ZlZnVOMkJzQXpsd0JrWWNpcEp0QlBCLUwxZnZUS3luRk9JeVIzUW9WR0tGUU5pR0hwYi1SY25OYkQzUVhWMFgwQkk5RGVCYlBjb0VtRXZITktTck9neWJoT0xOdFo5ZUhhdmtyNk1nSnE2TDNZamxuS0tEdm9BUlRldHJQY2RWdm82VXNtclItbHBNbmFJYWNKQk9nTjVDYUstVmc?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: openai-custom-silicon
+- id: we-ve-all-been-too-ambitious-sam-altman-says-our
+  headline: '"We''ve all been too ambitious": Sam Altman says our old habits are delaying
+    the great AI transition'
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - Inshorts
+  - TechSpot
+  - Windows Central
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiwgFBVV95cUxPUUVpLTFSVzM3Mm1TMk5SRDJpajJ6a0dMbjJZZ1lsZzU1MU01NnFnY2NJXzd4dTFGX0Z5aFRubEk1T0d1dUxHLTBPU2lBQ2JQUTV6T0JoMDRacWlMYjZGTzNJQm1tR3BRd3JOM1BnTm5taUlfQUxWTGoyWnlGOGhlRlkxXzNZSm0tRElkeEt5N2JtUzZCeHIyM1c2RUx1UnBVZlg1TUVjdS1aMEZlZ1Q0bkNsNFVSaXk5aXY4bXVIVFk2Zw?oc=5
+  - https://news.google.com/rss/articles/CBMijwFBVV95cUxNVHdRekdjaHpRZnd6VXFUd1hOUVIzekllSHUxU3JyQlpkUUlWTDkwdno4YmYtY29kSTQ1ZEFPU29RenJEeDFDdHlRVHJpWUxMNmd3RU0zWG52UmlES2tmRUV2ZlQtU0pSWUVQNWpTaGkzU3FmcnR0TzVDNXV0MzRIYXhWNmlra3RUVWVIemtNcw?oc=5
+  - https://news.google.com/rss/articles/CBMie0FVX3lxTE4yVWxPNVVFZ3ducnM2Q19fMVhuZDVSMjFyNWViZ296alBsT08wMjE5REc2cG4zYjJTT1Z5R2ZoQ1hMTEUxWm8wcFJVcWphSUFYYTNXRDV6MnludWJ5UG1KbVZpRzctQVFoX3h5WDk2bEtXU1pxOHdza2ZQVQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenter-backlash-capital-risk
+- id: how-ai-doomer-dario-amodei-built-anthropic-to-sa
+  headline: How AI ‘doomer’ Dario Amodei built Anthropic to save the world
+  distinct_outlets: 4
+  outlets_sample:
+  - Fortune
+  - The Times
+  - The Times of India
+  - eciks.org
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilwFBVV95cUxPUVhZRl85YnpMOWNEaS1fbVF3X1UyalBfQmN0cW42NlIyXzFzZDVyRGdYVFJvZVFxZFdrMTNjeTV4YTNKOGJGbWttR3lkSG1YZUZhOVk2YzR1SnVsYkowd2tKY01aTmpWRXBBMmxSeG9Bbmg1VWE3UnhnZm5teHB3eEdJeDVoTW8wTXNoZG4yZjVKaFpTWFVv?oc=5
+  - https://news.google.com/rss/articles/CBMizwJBVV95cUxPLVdDRFRuNjRvWF8ydWFUeHh6aUlDSTZzQzFpbDMwc2pSaWNMVmpNZ0lKbFNRN2IzcUxObE11MkFRam9Zek95empyR1RlamxwUG50NnU3bk94SjRRUmxOeEhKc09RSm5kV0lSZ0JVdERqZkVhSXlnQ0FFRFQ4amJleUdPU0tmVUlPODJycmNJWEhpSWhoRm9jRTdWcWhtQ3pIZThSakc1WnhmSjRvZkFCbVFPYVkwendGMGZPNmtsQkh4cHB1Y3NIZGMybVRqUy1kRzd0SmNXOG9Rb2l5MGhNNFlMdU1YdW81RmtsWDM4S3NUeW1oYjlSYUxocU9qY0tteUFpanByaWFvNXFZczN6X0dyUWdpRmlmaVhPd2FwSzR6c09oMUs5a1QwMUc5UVkzOXRiQXRTUHl5NENYUHBHV0xHVVJ3QS1zdS12elpyY9IB1AJBVV95cUxPcGJZMjdIM0pUR3RUdmg2OWM3Nk1uYkNIQlJqV0gxangteHA3bDNtbmRWZVB1OVROdlBNSGFtRlgzdjAxbnRRNjJJU3ViUERUQ3BTdDJRZGdRQWpDUGFSUGQ0OHBXMk1iNks1Y1lvQmo3cFJFV2UydXkzNnlLSVZOQkdrZThDaTIyTEZUVFlndWVuZ0JuVWlPR0hIZDM2bkVSemExeUJPeEZSaHYxTlIxLTczMGtka3NHb19fem1oYWpfV3dMa1RVaktpX2pKNVNuS0JxVHVOb1FQc2Frd2w5VXlKNS1wNE93bXlKVDlUWTRMdUx1NnNDTWJVUC1nZTVDVjBtaFdXSEFSY3dRczNrLVpIcjdhQ2JjdXVLZmludXJzUFdUUWdFcUtDcWIxQUY1WWlWdWZKVGREMUNQRk93QnBVazF0SkVEWERNYTRIYzNKLS1J?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxNcDVuZmtpWDI1X29aMTZfVHlzOEotM0xJSEp0em5VWEgzanJpRFJRYXJpWVNVa3R4TEJPd1l0YzgxLUxfQlFiaHdJNjY4NjZERGFyTklhVnZNdFA2ZEFXSkJjWWdleEJaNWNKRXJTRF96SFEycjNPeS1nU0Y1ejZtQ3ZxSmZjdWI1VVpaRU1qa1BVTzlVUldLTDV2Nlg2bGRsdVE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: the-one-line-in-anthropic-s-s-1-that-amazon-inve
+  headline: The One Line in Anthropic's S-1 That Amazon Investors Should Read First
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.ca
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMihAFBVV95cUxOajlkWnJvWWpKS3BXQmRaakpXX0lDZnF1Rk9Pb0J0NE5IZkoxaXpBUFZ4bF95QW93dGk1d1h4N1prWkNnUUhhcWlIWE9PUWpmc055S3VMVXZVdFo5dFc4UkZLX2R5T1FjUGRlOGRpclU2czdBSFVjaXpFUHVhVGxWN2ZELWY?oc=5
+  - https://news.google.com/rss/articles/CBMi7gFBVV95cUxNTklUNW1uQWtzZzRXYW5DeFVKUmlqOGxSd0wyNFFZbWU2SzJ3U29MaC1wYW5qY2NMbUdqcE1ReUw1bWtTcWZ3d2QxS2VsbG51LXd1T0pvanEyZFBjOFNJcWdjNFdnRTlYQ0V2ZmRsc01iNFhQUVdldENEVzhkZVNPWHRsV2JidEEyTHZVV19DcVRyMnoxMUgyZ1c3RDZFR01fakg4S3NvVVlleGlUYkw2czRnQnpYQkpDem83ejBzcWFLeURLeHBoemwxYjVmdEZzOUwtMC1PcjZ6em9ERDZoSDgtVHhMOUI0VWczOUV3?oc=5
+  - https://news.google.com/rss/articles/CBMie0FVX3lxTE1Rc2xHaGttd3RZWlJIenBvcmVhcnV3OHFlUUVPMzVlZzZIaW1RV0pEa3BEUl9QMEhmNUFXOVhOUkdUY3FzVE9iLTB5V0dvc3ZxbV9NSUxNbjhKQnlnR0s0Z21LT3p1UFAxU05TOHZ2ZkxlcF9RaXFFUllXdw?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenter-backlash-capital-risk
+- id: saudi-french-ai-ties-deepen-as-kingdom-scales-up
+  headline: Saudi-French AI ties deepen as Kingdom scales up digital economy
+  distinct_outlets: 4
+  outlets_sample:
+  - Arab News
+  - Arab News PK
+  - arabnews.jp
+  - madhyamamonline.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiZkFVX3lxTE9yeWxnUFFkQnV5aUdMWXBZNkc2RWMwSVhteV8xZjRSck40X2NSdXlNdDBCa3l0a19CcjhHMjRkbEZTRmJJYkRSZkFrb0dGaUVWcWVNVHhnN2NYZ3NzUk10cmFnSlRVZw?oc=5
+  - https://news.google.com/rss/articles/CBMiY0FVX3lxTE1EUlJPRktrU3k2aE11bGtkNVYzZE95cmRldDdHSnRlUUlnLUdPSm5xa1Y4T0k2Skhza0F1ZlFsd2JIYlZGVlBHM3ZBZlNYVGNwSGd2MFZDZmtwd2o0Z1E3YUJvQQ?oc=5
+  - https://news.google.com/rss/articles/CBMiXkFVX3lxTE5WWmhPNzFjTkZsdmdSSW1PQ3dLNTN6TTZLSHZzakM4S0JoemsxRW5Ib25PdmVnRFpob2VHWXpEWGVCZmFGWWhubnVCakxMLUoySkFaZ1hGVVFEWk1yNVE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: what-if-mark-zuckerberg-is-right
+  headline: What If Mark Zuckerberg Is Right?
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - Inbox.lv
+  - Philenews
+  - The Mercury News
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMic0FVX3lxTE05YnU1WWdLV3Z0Q2lMRzJqeEIydGFBMkg1bUVFRXE4TmNmUUxHR0pXcjZIUEJRNzlYVVpDb1Y0TmFiOW0yTW41dmdPbkwtSVdmaDFDaDdhTDNWQnJ5bjR4YXlXeU1oakV1MGxWMzBtTXkxOE0?oc=5
+  - https://news.google.com/rss/articles/CBMihwFBVV95cUxOWG5XM2xsRFhRenk4Ym9YY1hKbmcwNDlTc1NYYmNianhfdnp4RTRVcFBxX1pRYW9Ca0dZSnM0aHJ3NVVsNmR0NlJhWXdEeDZRZnZuMjEzZEZKRGloVnhudWhWNzVKdFJ5WkNSOEM2eVA0UW8xUTA1cS1zNjg0Tnc5Z1JsYnNZOWvSAYcBQVVfeXFMTlhuVzNsbERYUXp5OGJvWGNYSm5nMDQ5U3NTWGJjYmp4X3Z6eEU0VXBQcV9aUWFvQmtHWUpzNGhydzVVbDZkdDZSYVl3RHg2UWZ2bjIxM2RGSkRpaFZ4bnVoVjc1SnRSeVpDUjhDNnlQNFFvMVEwNXEtczY4NE53OWdSbGJzWTlr?oc=5
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxOMGpfOFJteGNUQV9SbnFKUFRIRVpKd2VNSHFHc1BxdG93Tm5PNEVjSzNZWGFLNEZDcUlZQTkwTmlKajR2My15RWRMUjBULTFlYVU0U1J4S0JIQ1AwRW9DZXZLaENmNlF5ODk2N0ZKSFFtdjlrQ2ZaQ3RfZTRhVFp3cnp5ajNWam5PTlE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: alibaba-seeks-10-billion-from-share-sale-draws-f
+  headline: Alibaba seeks $10 billion from share sale, draws flak from Michael Burry
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.ca
+  - AOL.com
+  - Moneycontrol.com
+  - The Times of India
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi0wFBVV95cUxPb1lTZnpKSXRqMHBFQWJzbzQyRDQzanpTMXNrTUNZZzZFNUIxSW1NUU9ZeEpQamtQLUd0eU5WXzg1NzRTMjhYNFNHdWFmMVEzRDNvTUc4aU5zVEJmSGRKaGhGclZfZndFU1BRU0RidldHY1JTUEZ6UjJmWWhabWc2MnFBdEt6YkNfQnlXTktpLURQdmpBWmRScFpqNDZJSG8xdVV1d0c2VDc1NUk0aTV4dTNKc0hoT1hiRlI5XzhUZnlYQ0ItVTVVWHBlaE9OQXdHclM00gHYAUFVX3lxTE80Y19GWUtRY0ZDUm9wbWNfNmNxLXRLY0d2dXVIMWlaQmJ3dVhCVmNhT2hya3R5RzRLaTR2RVpsSEZCM002eGRWNUNZX1dlUzlKeXoyYTlBYnpFMzc3VFlkWWZ0SFNuQ3NsSFp4aFJWTWRwQ0dmaE40TldrLU1jazI1UlhPQm1rWk12VW1wNVhueXZxamtnN3V5emhZWVgwVFhGVG5Vbk44RkFyQy1OZWM5M0hzdWRLdjFuSzVkQmM4dDRmN2p0YlhoZ3RocHFPeTZaazNNNThscw?oc=5
+  - https://news.google.com/rss/articles/CBMiigJBVV95cUxNWjRlNTItdk8xUVRsSlhuN0dfeF9NUDB1THpEWUp0eGRzMGxBQ1ZuQUt5MXdlc243VE53T3hJeVNiTVlwc0Q1dUJuTHY4aGtrSW1GdEhlMnVxZHdiR3pyTWtRVEV0VG5BWGNBdVkzcGkwTUpjWnRFMUZ0ZUlMVnBlcTB0Q2RScUtJVk13U1hLbDJQTnp5NDJ4ODBTQnNGZy1KeHh1bGM0ZV81UmhVS2RuQzV4VzRKVFM1YmpQeXNNZDR1MnVMdWhCOFJic0NzbVZLLVJ3bXdmdkdCOS1YeV8xUVZnSEJYOTIza1lfdU9yT2NrQ2Vla1RvS2VCM2hJdU9uZVhqaF9TNVFQZw?oc=5
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxNZ3lfM2JRR3R1dndXQmZ2SXcybHRCUDdQdGhtSlpGZGEtdlc0TTdNY24zOUxzLVJFeWd2eHZJTTVYV3RlZmt1N3BMUTZReV9fTmg2bEtWQWduYmZyNi1TSGswNVNRUGxRWnJqRHZkY2dhb09GNnpFTUJpbTd6Z0FiOFRqZw?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: ai-circular-financing-risk
+- id: amazon-hikes-echo-kindle-fire-tv-prices-as-memor
+  headline: Amazon hikes Echo, Kindle, Fire TV prices as memory chip costs surge
+  distinct_outlets: 4
+  outlets_sample:
+  - CNBC TV18
+  - GIGAZINE
+  - Telecompaper
+  - The Economic Times
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTE9CYnc4N01rd1B3aWtYZUxlNDF1OVRFYWdYdUQwMmF1eWpKUWlGZHVSbUNGLXBCR3BDZUJxVUlPTzVoSXpUbGg0WU9JVWdEWl9HRG94RmlpSXhuRWZiaUxfd0RLN1I0b05QckRyMlNmUnRyVVZyMlE?oc=5
+  - https://news.google.com/rss/articles/CBMivwFBVV95cUxOamdLQXNpUzFhTDZQdmlLbmZZM1ByTFA2QTJBWDZaRW9RcWo3MnJEYUxlM0dxaVM2SDhQMFBXbXB3SS1RUkhfaTdzRGRacTVSaU1IcmlaaWd6UXdpVldER2NocGpRb0NBTHpTQUs2b080SUw0VTdwd3M0eldpQWV5T1FIZTB6NjVzaXNGWjRZZ0VCTmRpQW1zdVRtbjZMWnBhU1JhenoxUUZPTlZOZEE0Q25NR2xPRlRzSnl0dml2bw?oc=5
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxQRUQycjlHR1dsQjV5bGFUcjRkd1FpenFaMlc5TVNVZ2h4NXNlNnF4ZjFzUkpWdldodlRnQXduczNuWkJDa1dyUUs4WTVXeEtMOF9iWnZDOEF1cXpDZ3prai1MSmRrNjIyRkdlX3NpOVBtS1JYV2dKcjdIb1ZBTTFpWTNVcnY5ZFlrdXV4cVBtT1VZdWkxV1JHWVVKV0J5akVYS2Z1NDE3bE5VRVdpQTNZ0gG0AUFVX3lxTE5fWFVWOTg1T2pzcURyLUlJUlJrYThGSTMzUm8xMmJibXhYVFhHeGIxRURJSHVrRVZ1dTJ4THBJdG54RElFUUNRTlotdUhjc1NNUjRvWmx0dzAwYmw4OHNmSUZDM2dscVNxaTFHVlRKX25iTkRmVmVqVHFkRW1Xd2NsWlFDbWVUel9wVTJFNTlUcDAtbkdOQl8xdFNaTUh4dldNdWJkUXI4bGtQV1NJSkt3OHBvTw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: samsung-galaxy-phones-could-soon-get-a-popular-a
+  headline: Samsung Galaxy phones could soon get a popular Apple feature
+  distinct_outlets: 4
+  outlets_sample:
+  - Android Central
+  - Mashable
+  - PhoneArena
+  - SamMobile
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiakFVX3lxTE1QY0FTakx6NWZTdlM0b0VWYWJVS2xHZFZYSHZ3V3htRmVhUVJoTi1pdmVTeXhMN0pMczNVWXh6cmxZZHgzLWh1UGhhUndjTVZ0SXhxYy0zVDk2MHJHSGNJRHR5UkdndFluZHc?oc=5
+  - https://news.google.com/rss/articles/CBMikgFBVV95cUxNOG9Hb3BhYS1pTFpOUkkwM0tvaU9CZEhuSG9XVTlyR3Y0VHpvMlMzd2FqMF9FWWRuNzZZMWZ1OGEtZU5sdE5pUXF4VkxhbnVHbktfaW5ZVjNPX2RlQ24zaTJzUm5sc3U5SDlXYzk1VmlMaHRqUC1PYTR2UExPWTItMHgzNVcxaTJPSGdpeHJHUUN4Zw?oc=5
+  - https://news.google.com/rss/articles/CBMilgFBVV95cUxNckRTSFlrSWlmMUZlQ3RxWEpYUktlLUgxVDJENlk4VU9jVGg0VG4xNlZDNlBlZjVLb0JmN0VCX3NjZHhfVXY5MTRyUzNTS0VSTk9EVG0tNUNNZHhMaU91VFN5enBHQVFQQlk1bmxoaWJLUXlpT0kxLW5BaGh5RHRWcmpfNDRMdGhYS1A4QktscVZBMTA4OHc?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: ai-memory-shortage
+- id: samsung-foundry-sees-higher-4nm-volumes-as-nvidi
+  headline: Samsung Foundry sees higher 4nm volumes as Nvidia ramps Groq 3
+  distinct_outlets: 4
+  outlets_sample:
+  - KED Global
+  - The News International
+  - digitimes
+  - theinvestor.co.kr
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMid0FVX3lxTFBhRTNOZXhPV3k4WlVoT0xIVmJFODh4Yk9wSW5oSTlQeXRrSmdyVE9QNXNLV29GSDZjUFEyY0RUVkRFaDhkSFQ0N0otZGVfYWgyVlFkbGNWemN5QlI5aVAwOGxWdHN2TmhpZ0owZG45VzFoVExDcnQ0?oc=5
+  - https://news.google.com/rss/articles/CBMijgFBVV95cUxQaUwtbmFqWTNReThPQ0c0VXpVdE91cFp0S2ptWkkzMmdYOGdvbmRyT3pNR2dycktsdzc0YzNKbDhPUEswZm13SlBaNWVfYzlEa3pPMFFDR0prb1JlWHFzVmpLZHV5M0NmQ3U2N2FSZ3hvQ2JTdVloeWl3aUMteVVIUHZBR0o5Mm1IYjh1UXpn?oc=5
+  - https://news.google.com/rss/articles/CBMiWkFVX3lxTFB3VFNVUUhWVlg1aVR2eXZILW51UHB1SXJqcXRSZUM0ajVVRThaaFluZ1l1MUtrbVVmbkQ2WVE5ejlRd2RiT191YWxkTk1oeTNQTHJVbTV5cXNNdw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: exynos-2700-beats-snapdragon-8-elite-gen-6-in-ea
+  headline: Exynos 2700 beats Snapdragon 8 Elite Gen 6 in early tests
+  distinct_outlets: 4
+  outlets_sample:
+  - Android Authority
+  - GSMArena.com
+  - Gadget Hacks
+  - Technobaboy
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxOaVRFRG5YSFFGZlZFWjR6Q0d2c2RRVTNWWFY2Nmh5Y0ltdGp5MUpWZmI3YzU1OVhOWWY5V0x0cGlUc1hybnVpSE4xNFNWVDh2cVh4eTdKRGZ6MXFrMmh2QWdBMF8tc1ZuTElkbVdrV0N4bjdCdTQxeU8tdXBlZUFWaW5tSnVyUnA3RXNpaWl0WkE4dFhFX3JsNk5R?oc=5
+  - https://news.google.com/rss/articles/CBMiowFBVV95cUxNV09KZm1XUjV2cFAtdVNkWkktVm9HNV8yZDdneW9VeHJndFpiOHdJaW1xbzk2S1FYdEZpcFBhenN6SmliWlE5eXdqTnA5MFlnWnRMdTVVYWM3VG5PeHJQMEdEVER4dW1kSXptSzhQU0tadDNDR0Y5QzNXeGIwVDhRYXh4WFZsbVBkZTlWQWJnVl9oVWRpYjFVVXJGY05OSzIzUExr?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxQcllpLUh3SGpPM3pHSXZsUF9PX1JvY3Q1VnRzNG0yZUdJNHFUVU1MczVOYWpoNFBFVnBzYUU3TmNLWEVCQzU1U3V1dC0wVWExd2dLaVBmS1o2QW5fZTNEZUNJMnFvU1hwZWxSQXBNc3RMXzJXYWJYbnRELTY5am5ST0V2M19mV0Q5eXByTGk2TzcxdEw2Vy1Oenpzcy10S1EzMDduTi1RRFFhb3RMcWlyb3paMXA4U1ZoeW1KYjRCOUzSAbwBQVVfeXFMTjJ1eDUtSzBNaV9oblZ5Ujc0LWl0QWlYUDVJWEY0ek1tQmZraEh6UmU3Y3Q5MXNGWFJVRVZRQ1RRdEFwNjVRUDJ6WWZkTktsVDE4bHBHTnFsMFdiNHRwRmdHT0FXREJCSzBnWG9DV0tLWlFzaVpYMmdFcDlUQmVpQV9fTHpISGEwNFFWeE5IUlhNcHZfcVlpMzFtay1feWNaQUtDNDRYQmhGcGlveHktU0t6M2hTRGdobVBBZXA?oc=5
+  source: google_news_rss
+  status: candidate
+- id: samsung-electronics-shares-skid-as-record-shareh
+  headline: Samsung Electronics shares skid as record shareholder returns disappoint
   distinct_outlets: 4
   outlets_sample:
   - Crypto Briefing
-  - Digital Music News
-  - Music Business Worldwide
-  - Music Wee
+  - Reuters
+  - Yahoo Finance
+  - 헤럴드경제
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMirAFBVV95cUxQdi1PdVRRZjBDUEM1UDlEd2g5YzBDRkFucnBOdHJOb09WNVJnd1F1and3Y1o1MmxCZ2hmNHBhTXh0RDNpWFpSZHk4Y0tuZDdWZmpERWxFbnMtZWM3ZHpQQzZLRW8zeGpzWndrTVRCOW1KNEpjYnBjcC14YjZ0Y0k2dHlRMFlpNUtMQ0NpN251TjJZM1BiRTkyb2NJZm9Hc1dHMzR0ZXpULWZxN0dz?oc=5
+  - https://news.google.com/rss/articles/CBMiwgFBVV95cUxPN1FoeGxWWi1vYWUxU1dKa1lpYmZYQlFXRm53UjMzcWYyY1h1U3NSdG5ZcFlaWkNxb3JZdWx4bEUtS0loT2tqajd3X21HaUxMQTEwYnhKY3R1ZVdYNTFrVENwcWJhNExoMmkyUjQ3NU9lZG9NQmpiMkJoeG91YmZfR216MnlINEpwTE5vVGxtNGtCdlNDX1JPTURLRXQ1cU9iLXZjeE9Jd0ZiSjlCT1JJb3VJWlRPbHhSTHFmdE9HR2s2Zw?oc=5
+  - https://news.google.com/rss/articles/CBMirAFBVV95cUxQbklKS3hXeldDN2dQbkpTWGUycXZIUWhEWFg3REU2SkVoUzNfTlpDeEhvc1hyYUVxdnd0aWpxdG9KcVFvdWNNa1VIUFo3WlltaGdLV1Q0YTZnQlF1ZmpQS3RRbGtpX0JVTjluUmF3d1hOclJuQUIwQXA4TDJnUmgxQXk1N0tuVHVvelFDRUJKck9IcWxmOVVoR2dVT0FpV1MyTWdHanc5elVzb3hp?oc=5
   source: google_news_rss
-  status: confirmed_thread
-  thread: fidelity-buys-ai-labs
-- id: kraken-parent-payward-joins-anthropic-ai-securit
-  headline: Kraken Parent Payward Joins Anthropic AI Security Project
+  status: candidate
+- id: microsoft-shares-temporary-fix-for-windows-11-ga
+  headline: Microsoft shares temporary fix for Windows 11 gaming issues
   distinct_outlets: 4
   outlets_sample:
-  - Bitcoin World
-  - CoinDesk
-  - Tech in Asia
-  - bloomingbit
+  - BleepingComputer
+  - PCWorld
+  - The Register
+  - Windows Latest
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitgFBVV95cUxOUjFQRDlfYTJBNWdwR0xpVG54YlNOQVduVExHOU1zcHJoX09LTUVFcmRfcDNEaFJtenJZYzZLWFhQTVNpakN1Y2RGNktOWTU4UVRCRy0zVnNZWnRBUzg0Snp0Tk9KZXNIQWdpQnJIUERLRHgyb1pkVWwwWWJ3WGdBbUoyd3pxd3pBaVhrWjFLMU04Z2l0TlowcS1MN2p3QlpsY2ZwWHJEd2xNY0YtbkpCN1FpYjRzZw?oc=5
+  - https://news.google.com/rss/articles/CBMiuAFBVV95cUxPak5YUUk1d2NlMHdwVnpSZjVtQmdVeXk2dzE3WG41NG9Jal83VUxCalNGellkYm9vTVVPcGZjY0ZrUE9xMW5qbl9uSnVHUk9aRTllMjdMN2pRM2ViWnUtUExYLWVCSkNXU1pPX0QwMERBcGc1bTRmZU8yU0dFM2Vmc1Y3SVZMcklxdHNyeVJCeFMzU3ZQU3d0Q09uRXFzRmlfMGs3bkRVaUN0RmdtLURWZVpFTjNjMmNK?oc=5
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxQRGhvUkxlMGtOdFF6VDFBdDVPSGRuZXc5Y0Y4ZE1WdGFUY1FkbENpUzU2cXVTc1pxb3JVY0p1aHIxMHhLdkFTOHQzc2d2WUxJdjZjdlM1bDU5aU43WWZtSHkwbnJ0VFVfaTdJVjU2dG90TG9PQUxJTFFoM2NFVkNlWVA2aWk4VDQyVjdRMWhIUHYzMmZtUW84bk4wdGhUbDktcW8tb3NWVGpBa0ZkOXc?oc=5
+  source: google_news_rss
+  status: candidate
+- id: microsoft-stock-in-2027-my-prediction-is-that-it
+  headline: 'Microsoft Stock in 2027: My Prediction Is That It Still Beats the Market'
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMipAFBVV95cUxNN3ZDYk5zRTFEX01xTE1MR0kwQkhIalBnRkhsT1hjcUlhUnpiRHN3MzF0NVY1RVNwR1NSeUZiLXZvV3J0Xzh3MVEwTUE2cnRJSm5rcDNmRzN4WGNYUUVnRGhveEZMTjBGWjdCc0MyejhwRlR1d0lsdF9Sbm9fTHZHaVhhR3Y4cTlaV2MycWFGRnBSWXlwekY1T0dkaEtvY1ZQMXBRMw?oc=5
+  - https://news.google.com/rss/articles/CBMilwFBVV95cUxPR1htUXBxSUV4SExrNG9admVSWXBSM3p0di0xTzRGQ1cyR0N6N250cjZMS3d0LU1KdHBLSUNZZk5WMnhROExYd2dLYW0xN0lrVnhGT2VmWExwS0RqYWdHdU1feUpYbWhUbVdUY2lqZzg1aEZPUk5JVWN2WV9LYjltLWZKWVhfakdpUEo1UFY0aUpna1hJcUtz?oc=5
+  - https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWUJ1TkxTTGFoV1FmNDM1V1A0SmtoWFh1MFVKOTZBRFhWOUdZb2QweTVKS0w4RHdTMlpweW5laVdWWnNjS1k2NEIxemdmcjlqTjUwTmMzYTAtOHV1djA4M3NvTmRBX1laWFhCbDR1TzZnTnBGbmkxMWxNTXZPZDNTeDdoaUN4WEtx?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: spacexai-public-megacap
-- id: google-amazon-and-meta-all-just-raised-capex-gui
-  headline: Google, Amazon, and Meta All Just Raised Capex Guidance Again. This Boring
-    Industrial Wins No Matter Whose AI Infrastructure Is Best.
+  thread: globalfoundries
+- id: amazon-could-be-worth-more-than-tesla-and-spacex
+  headline: Amazon Could Be Worth More Than Tesla and SpaceX Combined by 2030. Here's
+    the Math.
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - Longbridge
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxNd0ZGQi01U0VkQXBCV2FCcy1OakFwOER5cU40ajFYdlR4WWpMeWJqcExObWM0LUY4TEV6QWR0aEc5ZWtoWVNzLWlPT2V0UThxV2dPT2h3QkttbXV3WjNRQmc0QU9RZ01XS3JKUTFHb2ZWanp3X0hfLVNiVE45eEVHdVh4UUY4TVdMU2l4RHhEMFNzdnllbEtfTDdn?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOY19uTkxsRy1MU2Z6ck1UWDFKaXp5RDltY2NzRkVKSllya0tzVjdZRDd0LU5RemUtcE40cWR5N2htWjVEdHBOSUREZm11ZVFTMHdLdW82RmpKeHRyNUxSWHZ3d1NWakMtNU42RE9Kak11czlJZkZoV2FnREZ6bnJxdEhqb0dYOThVLUpiZ2xQT3ZyRnBNcHVsNQ?oc=5
+  - https://news.google.com/rss/articles/CBMiTkFVX3lxTE9yMzFDWXRqcHZEblFCWDQyTTFnVFFyTkFsZVNGeWhoTnZMclhKbW5VOWpjQVptQzhMS2RQWWhWd0pfWW8tNEdKbkVscnBYZw?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: hyperscaler-capex-big-picture
+- id: oracle-vs-amazon-which-is-the-better-ai-cloud-st
+  headline: 'Oracle vs. Amazon: Which Is the Better AI Cloud Stock to Own for the
+    Next 5 Years?'
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxNR2ZQQWlpYUx6d3M0U0xjQzJwYU9NelhkMkh3MlZuUW5zR0xtRXJqLU5RdnVwNWpyb0RxTlpLSVUwd2YzRjRhaGd5WkFyalk0Tklmd2hLVFQ5VGJsR2JsdDF3WU9jbXk4RGp2VkxnLTJWU0RmcWgyT2NtU0xTQ3FNaTRUOHBtTTRvVFJOTGRYZTV5TVBI?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOdHhXWllPejZCcmRYcFVUbWI1RXJwUnRzSENtMl9hUjNzeTRJY0pGS2p1UVNlemF0QkRveklYdmEyVjl5Tkx4RWJIREw5ZDVmdXB4N1N3T201T19nZDBoSUdTYjFWaHFseC1hcmlOQlFwdjVuaU41YlhXckhmVTdLVUdkWEJncXVpUjFSeXRvOHdfc0FnZkRxcA?oc=5
+  - https://news.google.com/rss/articles/CBMiekFVX3lxTE5FX282dm1lNWtJbzBwLWhTQWYzWklsNkE1dDZfV1cyNHlfQV80QTdLblpEUF95cmhYWS1fc1JEVFZqRFY4QTc4UEFDYkhvYzRYdi1LUTk4aDhiNFllaWE1WXloeGs0OU5ZeHQwaGtHM2JLNDJxaml1b1hR?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: gaza-war
+- id: mark-ruffalo-rejects-paramount-s-claims
+  headline: Mark Ruffalo rejects Paramount's claims
+  distinct_outlets: 4
+  outlets_sample:
+  - Fox News
+  - Geo News
+  - Page Six
+  - People.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi0gFBVV95cUxQMEdsU1M5MWFQNFZPWGZSaHo3bzFfY1ZhMGhqZ0IyRGprdGdvZmk2bFBnVGJiUDZyckppeWVEbnN5dkJpYlpVbF9TMzFpT3hOanlzbzJHZWs2YmxPdWFLMXVZOUpxYTFJOGx3a3Y1WUNia25LeFBfejk2eV91STViV0tRdTV5aXY0cDdSSXA2VUN1YWNiY3NkSDBDYVA1UVJlcWlxbWFNcHJfVklhV00wU25iUG5IVEEzbktFcFNnODNvaVIwSzdOMmF2ZS1lNDU4VWc?oc=5
+  - https://news.google.com/rss/articles/CBMisgFBVV95cUxObnBoRUlWMEhUS2hFZjliY1NQbWpKODBlYUNqa0pvNFhUbUFxOXk1RS1KdVNVenBBU1B1anFQUlRUMkxLXzNMZVVtaWFjVmNvaDc1YndwMm1EU2E4a3pSUjY4TUVPZ0ZSNDNCV2p5d2diYkNobHdUQXFLVTFxbkFvSFoxMEIzZkhJVGtkbzRWOW1FcE1uaHlpLVllSVVoRGxKRWR5c2JDRWFPQ1d0Q0hfZ2FB0gG3AUFVX3lxTE5zZXU4WjBJUXZDajZvdzZiTlhKOEZzQlpWNDZGeGlZVTZHdkF2S2tIalNFRHl4WngyaFhUdXBMWEltRUxoaUxQODNEdEoydUEzNFVmVGNXaGRtb2dBOU8xWmVGUHN1bWk2YlBUZjY5TTV5V3VFT2trZzRxVzFKNjg4cFJadUppNXpjeV9UVWtvVGo2Qm85R0IwcDhJNzlYT3JNbTNvQmtDVm4wajlSZEpsY0NScmtkYw?oc=5
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxNeUJKNDNtYUNSdl9vaWJiWG5yLXpxdjZ3X0pPRlIweEhvZVF1UXJPN0FXNlpoTFNUMGpVUHRLekpJdjRodW1XeElNYTdBQ3dkSzNXcHNST3dVelpseFp0LUk2UjZiRjBOdDZCRzFFWUtPUGNoQVphWnZKd0VZOWlWLWVTUzF5Si0yT1NkZGhSeENQN3UzbGFFY3lDUlBvelNqa3ZvaG5RMml4MC1JQUE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: wall-st-opens-higher-as-tech-stocks-rebound-befo
+  headline: Wall St opens higher as tech stocks rebound before Nvidia results, data
+  distinct_outlets: 4
+  outlets_sample:
+  - Pluang
+  - Reuters
+  - The Detroit News
+  - The Lufkin Daily News
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxOdmhxOE10Q2J5RzR6U1lxZjRCX0FUYmdxdkl5SE5fT1N2SG5RSmMxb0xPekZ2eDNjbVhyVE54N0FIOTByZEdrMFUtSmp0U3A0R2RLVldRczJ2aW5PU2QzUzZ6Y0FYUThQU01jdEJOdzdtbndvdThwXzhUbDAzQ2lHeVIwbHE4dkZITlhxZ0JLLWVEVHdzZmcxYTdub3dWRjh1QnRNUzRhU0V3bnJZV2c?oc=5
+  - https://news.google.com/rss/articles/CBMizwFBVV95cUxNUkFJdHRBWXRxWnMzRGdxYVdQY0drZnlHTlczeDVDZVBJb3pLNkhsU0dtNjlHRnYzTXhiQWNTQjAtX3lCNlJLUWxFSlBHZDhrQlFGcEtTTDktRXdRVVh1bXVmSktjbXE3OWxiUUpyTEFYQkg5Mk1SeWVlNnQwM0NvN0w3U3lhTVVLRFQtQUgxRzJrdnZ0YUtXVmtYcWxHS1pKcFBCQnRFZjlPS3RmaThpTWEzU2FsWDhteE0zREdMTDBYcUs5OHpDNjB4dkNGNUE?oc=5
+  - https://news.google.com/rss/articles/CBMi_wFBVV95cUxNUjhKMVo4dWlScDFCS3RZYzlsTnRRcl9rNVAzem1NV0RDcUFzTTcycnpUR3NqUEF2OFM3TExuc0kzZnEtX0dYUVhfbGgybmpTUUtRSGZpU0xTanZJYWY0Z0p5UE4wT0JqVDNYaDV3S0pCWEFRWVZpQmxOQVJpeXc4clNfcDhJb3BIenJzbTNlT0c3clhnNmJMRGYxRmU0LUlqWnVrNDlnTjZVWUNEVGtCcUhPT25EMHBPeXRPVDk4azdjdGtuNUpvSmpfUW5MU2hFck5zT19acUk4Z0pidTVhYTAxWjFyMUNYVXpZMGx1ZzFsR0UyT1h4bWdQanNBYkE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: nvidia-stock-is-a-screaming-buy-before-aug-26-ac
+  headline: Nvidia Stock Is a Screaming Buy Before Aug. 26, According to Wall Street
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimwFBVV95cUxNVE5tTWVBcDZNS1ZOeUpQemM3NjNQaVoxNWd2NGhxX0d0d2l4OWNPOGZjZ3V0c05LVW9uaExSaU5GN3I3RDd2WkVtT2VTb3BFZHpfZGQ1TmZpSFQ3M3N5X0NyaXhnQjczcTZMZG5nOVRIY19Td2FpNlVXY2JBbUlwdjZrVTl5QnVpSWM2YXctSHpacUtVUTVvUUIwZw?oc=5
+  - https://news.google.com/rss/articles/CBMijgFBVV95cUxQa3RBODdLMGhCWWgwaEEwV2swUF9NQlJGU05BQU1OTXZEUUM3eDVVRjlkWUhmSE9VMmVWbmlOT1c2aFRGOEE5c0xzNy1nZ25Mc3QtbGNSZ01KWGZWMnI1dDNZN016cTFER1hvbnI1UXNMWlZGUDZaZ0Y5eXMwaWdWNF8zWUQ3bk9fS08zWUVn?oc=5
+  - https://news.google.com/rss/articles/CBMi6gFBVV95cUxNeEdFSC05X2FieVpha0dzNGFLTFZZTTc4bmhyajh4ejZfbDkzaUJuR3EwMHlnLVNzeEFhbEtSUFJyenhWY3U5eGF0MUVBREczWENVeENUOFgyUnd0c2RUa0FlSExGUF9FSFhEQVJDT0hRaXlNWUVfaUdfcmdpMHpGdmJYRGRWNkNVTHhRN3hQczdsbnNoM3Q0MzQ3YlJwQzBGR2dIMGdmT0xlZ2FiRTlXZU1QQy1tYnJDUDZQZllHTkR1NEVZc2hmb3NWdVpNVWNqYy10X19VUjNMY2w5M1JZdkt3UkM0MHpuMFE?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: ai-circular-financing-risk
+- id: forget-nvidia-this-etf-could-be-the-next-big-win
+  headline: Forget Nvidia. This ETF Could Be the Next Big Winner From the AI Boom
   distinct_outlets: 4
   outlets_sample:
   - AOL.com
   - Currently.com
   - The Globe and Mail
   - The Motley Fool
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMihgFBVV95cUxOZ1o2WTZTMnVFZnRoWkk5UllUMTBzSndOZUdCRXdZZ2hYYWtlb3NvVDdrVk9ZWjZsMFRhQmdFdjJDMGFzYTFYV3lkZzdnVkF2Y2hNZ0t4YnNZdUxVOXlGOVVTMFNhNGtkM0lTSm50WGZ5TlhGcTVnWmxQMVRQbmRWWWJqcDJVZw?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOUTNwNnhidkZGMTVhb25WSjUwa2NkTHh1S2FRR0hiNGswWDdhWURBNjlXSC1KOHpHRmhWQVNPVDZrQU9QQWxlbEhMYU5ucU1qd084NDUxbmRSSGNOM2dmQ2pwa2Vma3dEaEpySFJIb2xSTW5xQmIyTnFYbXhGdkZMOERBVU5HY2JfOHFKR1l1Q2tYcnZmcFptZg?oc=5
+  - https://news.google.com/rss/articles/CBMi6wFBVV95cUxOQkZSZ3dQUExVdmlZZm00Z1R0RzBRWVdXWU9vYTRqYks2Q2N1YURYMmxiNThiWEZYeHpjdHZBdHJoZ254RV80Zy1xRjFjV3ItYmkwUy1FdU1OVWdha3BtN2NhTWM3TEcydHROUjU0SWhOQUtydlMxQ0ozWFo5dWg1ejRfVDZReFdpMkpNMktydi1iX3BfZVpueEdSRWFpOTFvdnk1c2c4TXFNa2Zra1I5a2diT3VFLWNQTGgzX2NPeVA1RHo1aHZpendMZEFBelJycFIzcHFING1XU19mQ1R5VWRVeEpwTVFrZ0dJ?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: hyperscaler-capex-big-picture
-- id: seeing-increased-sensitivity-from-meta-on-tackli
-  headline: 'Seeing increased sensitivity from Meta on tackling child porn: Govt sources'
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Today
-  - India Today
-  - India.com
-  - ThePrint
-  source: google_news_rss
-  status: candidate
-- id: nvidia-eyes-investing-3-billion-in-sb-energy
-  headline: Nvidia eyes investing $3 billion in SB Energy
-  distinct_outlets: 4
-  outlets_sample:
-  - Big News Network.com
-  - Data Center Dynamics
-  - Nikkei Asia
-  - The Manila Times
-  source: google_news_rss
-  status: candidate
-- id: nvidia-to-invest-1-5-billion-in-sb-energy-for-op
-  headline: Nvidia To Invest $1.5 Billion In SB Energy For OpenAI Data Centers
-  distinct_outlets: 4
-  outlets_sample:
-  - Coinpaper
-  - ET Datacenters
-  - Technetbook
-  - tippinsights
-  source: google_news_rss
-  status: confirmed_thread
-  thread: aws-capex
-- id: trump-linked-crypto-firm-in-deal-offering-chines
-  headline: Trump-linked crypto firm in deal offering Chinese AI models flagged by
-    US
-  distinct_outlets: 4
-  outlets_sample:
-  - Crypto Briefing
-  - Firstpost
-  - Reuters
-  - The Economic Times
-  source: google_news_rss
-  status: candidate
-- id: samsung-electronics-sk-hynix-surge-on-foreign-bu
-  headline: Samsung Electronics, SK hynix surge on foreign buying, chip rally
-  distinct_outlets: 4
-  outlets_sample:
-  - Korea JoongAng Daily
-  - pulse.mk.co.kr
-  - 매일경제
-  - 헤럴드경제
-  source: google_news_rss
-  status: candidate
-- id: google-s-pixel-11-ads-tease-a-mysterious-fitness
-  headline: Google’s Pixel 11 ads tease a mysterious fitness tracker
-  distinct_outlets: 4
-  outlets_sample:
-  - Android Authority
-  - Mashable
-  - TechRadar
-  - fox10tv.com
-  source: google_news_rss
-  status: candidate
-- id: google-in-talks-with-amd-about-hybrid-tpu-cpu-ch
-  headline: Google in talks with AMD about hybrid TPU CPU chips
-  distinct_outlets: 4
-  outlets_sample:
-  - Data Center Dynamics
-  - NewsBytes
-  - Seeking Alpha
-  - TipRanks
-  source: google_news_rss
-  status: confirmed_thread
-  thread: google-capex
-- id: amazon-alphabet-and-microsoft-are-dropping-nearl
-  headline: 'Amazon, Alphabet, and Microsoft Are Dropping Nearly $600 Billion on Capital
-    Expenditures: 1 Clear Winner Emerges'
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - The Motley Fool
-  - Yahoo Finance
-  - currently.att.yahoo.com
-  source: google_news_rss
-  status: confirmed_thread
-  thread: hyperscaler-capex-big-picture
-- id: oracle-just-raised-its-dividend-for-a-12th-strai
-  headline: Oracle Just Raised Its Dividend for a 12th Straight Year to $2 a Share,
-    Even as AI Spending Pressures Free Cash Flow. Is Larry Ellison's Payout Still
-    Safe?
+  thread: asml
+- id: is-broadcom-in-trouble-now-that-alphabet-is-gett
+  headline: Is Broadcom in Trouble Now That Alphabet Is Getting Chips From Marvell
+    Too?
   distinct_outlets: 4
   outlets_sample:
   - AOL.com
   - The Globe and Mail
   - The Motley Fool
   - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOeVBzemtlMF8wY3h0ZDhCUV9HTk83eXBCZWlEclpVejBRVjB0SEVDZ2tiaGpCM1g2TmJTMVh3VDBaQUVuQURRTzNoNXR6d3UtX0wtd0kxNDlkd0w1SFBSbTh6RS02TVV4SE1FZUltSGlyWWhrdnU0ZGJfTm4xRUZ3MER3d28zVTNpZVY5YVdVd3FrRFF1NnF0OQ?oc=5
+  - https://news.google.com/rss/articles/CBMi7wFBVV95cUxPOGNTWjJ6TmFaZlhnM2JxaWdfVFk1dml3ci1RR25GTlFENFAydDNHN3puZEJWMGV3cmYtQ0ZxazRMLU9FRVA0bVI0M2R0VndQS1I1bkIxdGU0UHAwWldaNFZ0dGZPc2Z1SkpmZGptNmNnMFZHNy1hUWtqRjRXc3JfNTVXekNoZTJJNDAxcXVqeGlTMkFUaFZCb2dhM2hNVW1Ka2M2bTAydk5MTk9ZTEd4all6YzRQWTZwbmZORklqYnU1VHdRT2hWTEVkR3g5enVLSWJOUEhaQXpLbFlxUVhEOWZxSHBwWVluMXBPemNPMA?oc=5
+  - https://news.google.com/rss/articles/CBMiiAFBVV95cUxQTEZKMGl1dlpsN2dLYnhWcHNJZ0k5VGl2ZENqX0NEU194eEpRamF5S1MzYkhUVGFkclRCeXVBenhTam1GRVk0UVlhS3JyQTNVYy1zY04tSzZkNmlobHNuQWt5OC12VUJ6WkNHbnpNWi1uY2c3Mm11Q2ZKRTRaaXNBejZtQjVCbjBJ?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: oracle-stargate-bet
-- id: nvidia-s-madison-huang-to-visit-lg-electronics-f
-  headline: NVIDIA's Madison Huang to Visit LG Electronics for AI and Roboti
-  distinct_outlets: 4
-  outlets_sample:
-  - GuruFocus
-  - Korea JoongAng Daily
-  - pulse.mk.co.kr
-  - 헤럴드경제
-  source: google_news_rss
-  status: candidate
-- id: nvidia-lines-up-105-billion-for-openai-here-s-wh
-  headline: Nvidia Lines Up $105 Billion For OpenAI. Here's What it Means For Investors.
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: broadcom-s-ai-financing-could-reach-370-billion-
-  headline: Broadcom's AI Financing Could Reach $370 Billion. But It's Not as Bad
-    as It Sounds.
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - The Globe and Mail
-  - The Motley Fool
-  - Yahoo Finance
-  source: google_news_rss
-  status: confirmed_thread
-  thread: nvidia-vendor-financing
-- id: micron-and-sk-hynix-post-record-quarters-inten
-  headline: Micron and SK Hynix post record quarters, inten...
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com
-  - Invezz
-  - Pluang
-  - TradingView
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-memory-shortage
-- id: sk-hynix-invests-38-billion-in-chip-plants-in-so
-  headline: SK hynix invests $38 billion in chip plants in South Korea
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Standard
-  - Chosunbiz
-  - Evertiq
-  - The Straits Times
-  source: google_news_rss
-  status: candidate
-- id: andreessen-horowitz-faces-doj-probe-over-board-d
-  headline: Andreessen Horowitz faces DOJ probe over board directors - Bloomberg
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com
-  - Reuters
-  - Seeking Alpha
-  - Washington Examiner
-  source: google_news_rss
-  status: candidate
-- id: fractal-wins-us-17m-multi-year-ai-deal-with-a-fo
-  headline: Fractal Wins US$17M+ Multi-Year AI Deal with a Fortune 500® U.S. Healthcare
-    Organization
-  distinct_outlets: 4
-  outlets_sample:
-  - LatestLY
-  - ThePrint
-  - TradingView
-  - aapnews.aap.com.au
-  source: google_news_rss
-  status: candidate
-- id: turkey-steps-in-to-broker-hormuz-reopening-and-u
-  headline: Turkey steps in to broker Hormuz reopening and US-Iran ceasefire talks
-  distinct_outlets: 4
-  outlets_sample:
-  - Business Standard
-  - Crypto Briefing
-  - The Business Times
-  - електронна зернова біржа України
-  source: google_news_rss
-  status: confirmed_thread
-  thread: iran-conflict-widening
-- id: two-years-was-enough-sam-altman-explains-why-he-
-  headline: '‘Two years was enough’: Sam Altman explains why he dropped out of college'
-  distinct_outlets: 4
-  outlets_sample:
-  - Firstpost
-  - NewsBytes
-  - SME Futures
-  - indiatoday.in
-  source: google_news_rss
-  status: confirmed_thread
-  thread: openai-agent-security-incident
-- id: fidji-simo-says-she-believes-ai-can-cure-all-dis
-  headline: Fidji Simo says she believes AI can 'cure all diseases,' agreeing with
-    Anthropic CEO Dario Amodei
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - Business Insider
-  - LinkedIn
-  - The Times of India
-  source: google_news_rss
-  status: candidate
-- id: nvidia-s-500bn-wall-street-deal-signals-ai-boom-
-  headline: Nvidia's $500bn Wall Street deal signals AI boom strain
-  distinct_outlets: 4
-  outlets_sample:
-  - Euronews.com
-  - The News International
-  - Yahoo! Finance Canada
-  - aol.co.uk
-  source: google_news_rss
-  status: confirmed_thread
-  thread: ai-circular-financing-risk
-- id: chip-designer-velaura-ai-valued-at-more-than-1-b
-  headline: Chip designer Velaura AI valued at more than $1 billion after funding
-    round
-  distinct_outlets: 4
-  outlets_sample:
-  - AOL.com
-  - CNA
-  - Investing.com
-  - The Mighty 790 KFGO
-  source: google_news_rss
-  status: candidate
-- id: sec-guidance-removes-risk-rules-from-nvidia-500b
-  headline: SEC guidance removes risk rules from Nvidia $500B AI financing push
-  distinct_outlets: 4
-  outlets_sample:
-  - CNBC
-  - TipRanks
-  - qz.com
-  - tradersunion.com
-  source: google_news_rss
-  status: candidate
-- id: clippers-say-nba-s-investigation-has-shown-no-ev
-  headline: Clippers say NBA’s investigation has shown no evidence of salary cap circumvention
-  distinct_outlets: 4
-  outlets_sample:
-  - Blog de Basket
-  - Los Angeles Times
-  - dailynews.com
-  - hitc.com
-  source: google_news_rss
-  status: candidate
-- id: softbank-group-plans-us-6-3b-bond-issue-report
-  headline: SoftBank Group plans US$6.3b bond issue — report
-  distinct_outlets: 4
-  outlets_sample:
-  - Tech in Asia
-  - TradingView
-  - finance.biggo.com
-  - theedgemalaysia.com
-  source: google_news_rss
-  status: candidate
-- id: openai-secures-20-year-ohio-data-center-lease-ba
-  headline: OpenAI Secures 20-Year Ohio Data Center Lease Backed by NVIDIA
-  distinct_outlets: 4
-  outlets_sample:
-  - CoinGape
-  - Hindustan Times
-  - TronWeekly
-  - WSJ
-  source: google_news_rss
-  status: confirmed_thread
-  thread: softbank-all-in
-- id: what-does-the-warsh-era-mean-for-fed-policy
-  headline: What does the Warsh era mean for Fed policy?
-  distinct_outlets: 4
-  outlets_sample:
-  - AMWatch
-  - Arabian Gulf Business Insight | AGBI
-  - Firstpost
-  - UBS
-  source: google_news_rss
-  status: candidate
-- id: tata-capital-healthcare-fund-swiss-impact-invest
-  headline: Tata Capital Healthcare Fund, Swiss impact investor bet on Tenet Diagnostics
-  distinct_outlets: 4
-  outlets_sample:
-  - BioSpectrum India
-  - DealStreetAsia
-  - The Economic Times
-  - VCCircle
-  source: google_news_rss
-  status: candidate
-- id: lanarkshire-gets-300m-to-fund-ai-growth-zone
-  headline: Lanarkshire gets £300m to fund AI growth zone
-  distinct_outlets: 4
-  outlets_sample:
-  - Computer Weekly
-  - Innovation News Network
-  - Mediashotz
-  - deadlinenews.co.uk
-  source: google_news_rss
-  status: candidate
-- id: a-game-changer-uhs-closes-835m-talkspace-acquisi
-  headline: '‘A game changer’: UHS closes $835M Talkspace acquisition'
-  distinct_outlets: 4
-  outlets_sample:
-  - Healthcare Dive
-  - Insurance Business
-  - Investing.com
-  - Investing.com India
-  source: google_news_rss
-  status: candidate
-- id: rothschild-lifts-apple-to-buy-on-foldable-iphone
-  headline: Rothschild lifts Apple to Buy on foldable iPhone and AI strategy shift
-  distinct_outlets: 4
-  outlets_sample:
-  - Investing.com
-  - Investing.com South Africa
-  - Invezz
-  - Yahoo Finance
-  source: google_news_rss
-  status: candidate
-- id: alphabet-eyes-3-6-billion-in-first-australian-bo
-  headline: Alphabet Eyes $3.6 Billion in First Australian Bond Sale
+  thread: where-the-capex-lands
+- id: broadcom-ai-debt-backstops-push-credit-risk-to-a
+  headline: Broadcom AI Debt Backstops Push Credit Risk to a Record
   distinct_outlets: 4
   outlets_sample:
   - Bloomberg.com
-  - TradingView
   - Yahoo Finance
-  - marketscreener.com
+  - achmadnurhidayat.id
+  - t.co
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimwFBVV95cUxQbDgxQWJuelNiX0ctUFBDNHBncXRPZkJJRFpEcmszMl9mb3VpZW5rMXNEc0UxWEdMVVJJZkpRcFVzcVRsNjRLRGdkYTBoTzB1RWFhUDBRN3UyRTE5eHhZa1NrSWRPX292NndJQWxTaXRST2Q0YXVaVjhjNmd3dGlYTHFFMmpMVXMxWWR2dFlGTjZTVXVtS2RualpScw?oc=5
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxQc0hWNk5nRXVKaThHODNaR1hKOWdrSkZ0X0JBd3YtdDYzVkV5NUxVMnZSQ2FxN2dOZDRrTkZ0aUw5WmtlZy1wSm5zcTBMNXJ3blRQWGM1RExHazBTV2dBWmEtUUJmOGRxZjNfMnZqcE9vNGhDYnNPWExQN09pVHdvRDFkYVFNcG1aRS1vRXJ5NlVhcUpNV19PSl9icmpVc3g4MV9QWUhGY0MtazF1X3NsUkt1cw?oc=5
+  - https://news.google.com/rss/articles/CBMiO0FVX3lxTE5tUV93SnltUG0wa0xKYXdkUnZ2RmxPb2tncTNubGNITXlMNXZOdmNtRmlDM1dwTXZqc2NB?oc=5
   source: google_news_rss
   status: confirmed_thread
-  thread: google-capex
-- id: houthis-attack-saudi-warship-in-red-sea
-  headline: Houthis attack Saudi warship in Red Sea
+  thread: ai-buildout-debt-risk
+- id: broadcom-has-seen-its-biggest-customer-drop-a-ke
+  headline: Broadcom Has Seen Its Biggest Customer Drop a Key Chip Before. History
+    Says What the Stock Did Next.
   distinct_outlets: 4
   outlets_sample:
-  - Crypto Briefing
-  - Daily Observer
-  - Moneycontrol.com
-  - Supply Chain Brain
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxQQ01QZmlPejMwbzhjbVpaaEpNdnJoX2NkN0tnTzhqTWNnS3dsMVR6Q2k0ZzAwMFBsRTg2TkxwNXR0aGNZM3ZxWXJWRVhZaEtMUlFRa2pZbDhLbDRKU3I1NE93X3pPZU13NzJZRnU0U3VkandWd1ZJZlByMmJmYVZ3aWtXR2U3TDV1cjYtdVA2cXVLWk51Q1ZfRnkxek1tX3FxTlE?oc=5
+  - https://news.google.com/rss/articles/CBMi2AFBVV95cUxNcnZhNGxyWFA4THJPbWpJTW1hUkp5UzRsSWRfemJnRUFybjhkbVM4T0xjVEVfa2lNVWVhWkhHLWZubFdRM0tMRjJaa01uQXZHRlp0LU9ycTd4WEROQjZTQ3NRVEFtSWhiNnFvLUh2bGctS1dBbUczNGpDSDNCb3ltdEJ4dWhPNGh0emE3eklSSHRZaXliVmw2cEFRR3NyMEp6ZVJpZUJkWFVCSF9GUDZKQVFlWFkwRVRNcHhCeHJEeUhwVXo5bnZKWFU4aGU3eFlQSDBLVUNVeVM?oc=5
+  - https://news.google.com/rss/articles/CBMihgFBVV95cUxPYjE1OXFjbEhqdUZMMXktRE04b2NDaE9rZWk5WjR6SXNLdE5HbU1VeHFLYnBTRl8tOTBJeDBPdDhHVDRKaU53S0E2NnpSbmVyTFJXaUVzbjZOOUdFNW1EaXFOYVpTZElXWVRaNEIzUXVRd2IybFBsZUExQmdTRFZSU05fRUl5dw?oc=5
   source: google_news_rss
   status: confirmed_thread
   thread: iran-conflict-widening
-- id: oil-climbs-as-fading-us-iran-peace-hopes-raise-s
-  headline: Oil climbs as fading US-Iran peace hopes raise supply risks
+- id: amd-is-investing-more-than-10-billion-in-taiwan-
+  headline: AMD Is Investing More Than $10 Billion in Taiwan to Build Advanced Chip
+    Packaging With TSMC. Here's What Lisa Su Is Actually Buying With That Money.
   distinct_outlets: 4
   outlets_sample:
-  - Gulf News
-  - Reuters
-  - news24.com
-  - profit.pakistantoday.com.pk
+  - AOL.com
+  - Currently.com
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxPeW1DSUlhZXc5NFNVbE04NG51VU51WnJZM2hhWnBNUG5GcVRSS3ZGTTFFTzVsOG0wcEVGY3E2dFhWcmEyWDBISHU0M2dKVFRncHlzYzVXQ29mcHBJVnZoSFQxSk5GdmZnQWJuaGFERld1enRIWTQ2T2JrSmJJaDJ1MHBFemhDSUhSMHZJSk9ZNW1aYzlwTno3dw?oc=5
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxPVUJidWtBVzFzdk9RSjU0SmhhaGdqVERtTnFxSlRJbTZrbVh2cUNNbWhBVTdJT3FSVFpNOXNralVLV0gzeTc5YUR0bEZWODczVEFuTnMyQkFTSi1SN3F5RENtcmtjTDdTYnhpbDBscWlQQWxLTGhJdWI5U2NsLTZlOVFwNmpYZlBjTXpWREstUVZOemhf?oc=5
+  - https://news.google.com/rss/articles/CBMifkFVX3lxTE9DbFpNdHZxX3NDZnlubGl1TzBSWFVBU3ZzLXh1YkhWN09ZWk50QjhBRlE2RXl6OHg4OFVuWWkyQS02Si1xeFVXM2RxUWhtMWIwSUFhR0c5WFVzeC04cl9uNkhLRmw0UEs5amdtMlZzVEdqNkc3dkJhbUZrT3h6UQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: where-the-capex-lands
+- id: micron-technology-mu-us
+  headline: $Micron Technology (MU.US)$
+  distinct_outlets: 4
+  outlets_sample:
+  - Idaho Business Review
+  - Investing.com
+  - Moomoo
+  - Seeking Alpha
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxOaUpjWGU4UzJQWVljaHB5YkQ3eDQ5eHFrOFRKdzduQWV0Q1k4dGw1SGZ0clJJVW1RTlRwWHRoOVBGWk9yeF80ME4zZVVDZDJ5S0g5WTUtNVVpMkZIVVhqNGZWb3hOcW5paFJBbGYwV0tmV2pielY3NzFka04wWW50LXV6Zw?oc=5
+  - https://news.google.com/rss/articles/CBMickFVX3lxTE44Sk5SWmFFYXNfZjA2VGtWcnd3VEl2Q0NPUGUzTW5CeVRxREVRcV85MmRaQk9GcUFXRWZsZzBwNV96ZkNPZDU2T3dzaEFDRWxfSlRQcThEM0NlakZKcjRUbkRWenFTOUxXNlRyY1dPWkxqUQ?oc=5
+  - https://news.google.com/rss/articles/CBMikwFBVV95cUxNV0FiSG9fdjlrRS13WmpLZVN0cXVickFDS0pUNmNMdWtnQmM5MU9EMWdnbGVubGNQdzBOd3o3eGNzWW11U0VnS252RVM0aXNUU0V2YUxHdE9GQXlLeTNudkpiVDVZWHE5VlN3OU5CYVhQUVBid3Vqa2dCSXhzU1BLTWJVQ2NnbUxTa1gwNXQxTjBVbmc?oc=5
   source: google_news_rss
   status: candidate
-- id: anthropic-projected-to-hit-200-billion-revenue-i
-  headline: Anthropic Projected to Hit $200 Billion Revenue in 2028
+- id: prediction-if-you-invest-10-000-in-micron-stock-
+  headline: 'Prediction: If You Invest $10,000 in Micron Stock Today, It Will Be Worth
+    This Much by 2030'
   distinct_outlets: 4
   outlets_sample:
-  - AskTraders
-  - ProPakistani
-  - Techeconomy
-  - TradingKey
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxNQ1g5djhfQ25YTm12TDNiOG5LRVdFUGxJSzFYd28zSkpVbEhUMVJaZEpnSzNrQk9vdXFHeWowSnpkZlZMSFRmdlNVdmU3RTRmTFlFek9EUGp4RTVhVnZIbUlJenJ3UDZMbzh5TmlQYm1PRHFDM0ZQWnR4YUh0UE41S1JEV0NJRU9aS0YxN09nSGRuRWJCeHRVSlNXbkw?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxQaEZDYWk5bnFZS0FKR0I2UHRzYkplcGdoVmtDVjZOWnZNX0JlS2xqNmFuWHZzVjFGN2hhWWVZMk9xanNYNjF0dnp5UHp4czNFMlNHOWdOSERUenJZc3ZQTmwtRVc4THhCR3JUelRKWGUyTE1WNThpYTVwUzlHRlA4VWlaUGZveWVucVpKYm00UDlXTjBFeGVZTg?oc=5
+  - https://news.google.com/rss/articles/CBMihgJBVV95cUxQRDY2UGJyZmtKUG9Wdm9HaHBjVmU3SVU5ZV9yMk5jaXdTemJWdEw2aFFjWngtYmFwSldOWjVGNW1zTlF6QXd4dXpFUlRwYlBXcDNpVjNFd2hzNmZWVkQ2b3BUeDZ1WUhqVk9VMzFvV19nRHlwOVZOWHZ5YjZPTENvUGJzNnFjRmdVUXFJS3ZYbDkwREphUHdaV1VxX21WOTE5aXl4SlRBU19RX0lhSDNOaXctcXBJbzZxSDhoeGpfUUo2czRKSEg2VWJJTU1IcTVjOUhGZElXSHhPTkFLX3JWQ0lpX0VJU0Jtb1dXc0VldmJBQ0hVNTBfRnp1U2RRNzlxUDJDQ0RB?oc=5
+  source: google_news_rss
+  status: candidate
+- id: not-micron-not-sandisk-this-ai-stock-will-be-the
+  headline: Not Micron, Not Sandisk. This AI Stock Will Be the Biggest Beneficiary
+    of the Next Infrastructure Bottleneck
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMirwFBVV95cUxNV3pPNXRFX183QkRNUUFaM3Z1ZmNJUWNjVUI2SWVQQ2hHYnFZMThWLWVIeUZTUFg5T2J3THRmMWpIRUFsWHNDNTgtb3JFNU9oZE9JNm81a1lPNHhaNm5Nc3NfcnlveGZxWTBaQWNhQkg5dnZyQW1mUDZVa2h5RjFfYjRmdmtzUFdXc0k4NXNUQ2Fxd09EWHpWZkZzMUFTeHN2TnlwVWVjOTRMc2U5MldV?oc=5
+  - https://news.google.com/rss/articles/CBMieEFVX3lxTFBCY1ZLR2RkRkZ6TkViTmY1Q2Q1eFpYUzVTOEJ2aEZoTW5IYkRkbzZ6OU10ZlNSQlNmYXNOUXYtTTZ4TmlvV1JHWXJfcjlGQzlVS0tvT05jU2FQMmlKbTc5bmw2TU9oempSTFhjNmpGZV9BeG1RT011Uw?oc=5
+  - https://news.google.com/rss/articles/CBMitwJBVV95cUxPTmRKaGU2OFNKOEZaSTBTcF9RVlYxSFI3RTNQdVdUbzIwSjNZYVhIN0pTd082bWhZa2M1ZGhtc1pSbnBFMFlWdGx2bjJ4ZnNVNjFkdmsxb2RYczBhYktUZHRKUmR5UGpiX3NfSGJGVndNTS12NVBoakhpWFd0dWM0OVdOS3dLZEI3ejE2RnZlNUcyUTdwdm91SW1uYzNaZHlaY3d5Sk9WN0Vxc0w4cE5RZnJla2xPNVktOWtNMTFFVzVNbE5YYkxQVEt6THAyZXdJaTFKQnpUMi1GSG9tSVhwelBXWGtLRzhHb1RUckhtaGtVczRaWHVSZFlLeURZcUU4RWFMSUxvNi1TTEs3dlI3ZzFTLVNpYjhGbHotdElYZHp6c05SRmc5dlptTGtmZFNrdFR2Vm1OVQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: asset-managers-build-ai
+- id: prediction-this-artificial-intelligence-ai-stock
+  headline: 'Prediction: This Artificial Intelligence (AI) Stock Will Go Parabolic
+    After Nvidia Reports Earnings on Aug. 26'
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.ca
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOLXdWZ29VVUt1TlY1aC1MSG5yemwyTWpNa2k4UUpsMnR0eWlZbmJZSl9vc1NTLWI1dzQwY0pXZWg2WUMxWFZnQ0J5OEdSZWszRS1fZWZzU3ZtUWEtNWhZNlhwRUtUbXdJN2h3VnpaZWUtMV9pMFVEcGlwRDNqQkZIMWN1TFdNTlhQSGdna05FTExzLVNRWVVQUg?oc=5
+  - https://news.google.com/rss/articles/CBMimAJBVV95cUxQUl9RV3hhLUdYRlJtWFdJbElfak1mazNnbUVEWTgybFMxZDU1bkVNM2dDRk9WUWxhalpDYnFWYURhWmlWQ0tuOWo1aGg3NkJPNzhWRVlLbi1Kanl0TWZROUJvZWkybHRfTFRWN1oxbDd1M2h2WEhkblJOUWFKVkswZGNzVmRQYWM3eWZZaUoyYlFDd1pfYVU4TzMxVGxpdzBOcHg5OFgtZzh5aVRFaFl6NllYZC1zWl84bmdjbjA1VV9oMXVLSUNIWmNDdGpVQWNjel91TjY1bENjenlBa1hvd2FuY2d3dlMzMFN4ZDJ5SDQwODVkMjJveDBQamxHcnpuNzExajV1V0N0QUp1aDFGcy1vTXhaVm43?oc=5
+  - https://news.google.com/rss/articles/CBMijwFBVV95cUxOVzJYQjM4TWFfU3pUMnRfdk8zWDdTR1RJWkZIX2g4MGUtN1dIYy1WdUlPLUZJTUFSNmhlY1M5bDlrb0l6dllsbXA1TU1hTldrd08zR1g5VUxDN3E3WU92c2hJWHBjUWRYb29zTXV5c3BraTZ0V2kzYVNVNkVPWVNCWWZJYlo1ZURJa0hmMTNxaw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: softbank-group-plans-6-3-billion-retail-bond-sal
+  headline: SoftBank Group Plans $6.3 Billion Retail Bond Sale in Japan
+  distinct_outlets: 4
+  outlets_sample:
+  - Bloomberg
+  - Free Press Journal
+  - News On Japan
+  - finance.biggo.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTE5GSHVaSi01amVlNXp3a3Zubm1KeUpKVm4zTzhSV3YxRlJKOEhmcnNESkZnMjM4N2J3ZDhkTnhBS3l2NDFSVXNaMFhOdGx1by13eUNTaDJTRzQyMVliZFpQNUNSWUp3ejZVcFR3N1ZNSWVCVHo4X1E?oc=5
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxOakgzWUJKSldHUFB3bWJzblhFSkVuc1NOdExfcExSeVRoVzJFaTFRd1BsMEYtLW1ibmxGOWlkVWkxUmlVYmZjdlZBbENNZE1yQXV1MTd6QmFLLW5uT1BlUUZzaEgzYW1vdWg2cHNmaVkwOVZxZEFIak1naDFoN2hhZTRFN2tyQUQ3R0g1WEZYZ0pNM3ZzaElJa2t3MHJGYURaMzd2eUR5OUNxT2tjQmZzbHJROA?oc=5
+  - https://news.google.com/rss/articles/CBMiVEFVX3lxTE5KNS1mcUd6ZWJFMERxMTJVamxObnJCQ0x4UHQ1VXcxRGRiOWJ4S3A1ZnExN3pEelRfNVlLOFBFT3Z4Yk9CMFZwQUM5aVY2WW90SGZlWg?oc=5
+  source: google_news_rss
+  status: candidate
+- id: xiaomi-develops-its-own-ai-mobile-chip-in-challe
+  headline: Xiaomi develops its own AI mobile chip in challenge to Qualcomm
+  distinct_outlets: 4
+  outlets_sample:
+  - Business Standard
+  - Taipei Times
+  - The Star
+  - varindia.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMidkFVX3lxTE5mTHUwSUtpTVA3cHAzR0hsb0ZrUkpLQ1NpcldydWgzUU9JZHdxcU5wamJsUWJ4TEJTbVoydHROakpBbmdwanFpaUJTZkZvQXU4MGI5ZG5Ga0ZCUHkwMTBRZFVqN1loY29PWjJ5VTl3UmlWTGZlR0E?oc=5
+  - https://news.google.com/rss/articles/CBMitwFBVV95cUxNeDVkdlVlTURlUUpkUHRSTDBTTVNvZE5fRkhFVG9nX0ZQUGstb3o1MjQyaW5JTEltN2VSWGNsMXh3aFV1VnJzWFN2SlFUa0lBempBcHJjNjYxZXJoMzVKanZlSEFtcml6OWRXcnoyY2V2cHg4Nk5JbXQ3WGt5LVA0WDhJWmR6RnFoTXZBc3BYdi1UR3NfZW9KZU1pWHdyN0FIMVhYS0ZoN1pkOFhlQ0ZYX3NDTmpFMTQ?oc=5
+  - https://news.google.com/rss/articles/CBMiwgFBVV95cUxQTDVfX3dPTTNCZ1VhWGJfVGw1cGRyZnZucHR4dFJNR25oRElMbEllc0VSaXh5b01aUHY0aUo0b3pxWmQtV0Ryc1VKc0xWOWVTWnB3b2JMelZ2QWItUThxREVYUW42UTdxY3VDZHdQMXVkMHdSUW9SdXE2ZVFfQ1pRV2JiLU84Zzlya2JWSW9qRlVfZXZBc0tYWjlEdEIwaUpWQnczSGh2X3BndzBhNnR0Zm9WVEhsYnJBd19fOTRKUWw4Zw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: lancium-announces-partnership-with-nvidia-to-adv
+  headline: Lancium Announces Partnership With Nvidia To Advance Gigawatt-Scale AI
+    Factory Development
+  distinct_outlets: 4
+  outlets_sample:
+  - PR Newswire
+  - TradingView
+  - cnhinews.com
+  - marketscreener.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigwJBVV95cUxOcUtWdEpPWFJrRVcxWW5oMEctWnAtR3I5VVd5MXNrNkdMOTBDRUJnd2NybVFRT3dvT1NxNHhldUd2NDB5QWJfTGxFMWFrU1pibEdQNnFGSk5DbXdxa0hsVFlzQm50eUdVdG9hZ0dXZ2NWcUVwN2JmbnZfV0ZIWHhnczUzYl9lM21EazVGNG9BWnZ1ZFFmQnZfekd1V05aMlJ4Z3hlc3g5NFlyQjlWb1Y4UFh1ZndJeWwydjcxWldRV1RCbjVfNll1d3VVU1paUmloWEFMZ3BVMThWZlZaM0gzV3ZpZjhBZUxZcXp5NURuNUR0RVEzRTR1MUxCa2ptQkNoYlhr?oc=5
+  - https://news.google.com/rss/articles/CBMi6AFBVV95cUxNY0FyRUdzSmdYYU1Rck9STWNsWmljblEtTFRvUThOV2hMdE9FOGF6VDNTUERpeTl6SDN4UXVweHdSSUtJbzI3dzlWRWJKMzZYb0IwRzdJM1gxc0xxYWFDRkJJSnUtVmpXc256OFdHcnZWbEVNOEtDU1NSSl9JUmswTVBLMHYwOFhsRGJVWEdoTVVjREhlYUZLRUtHN1NoZlh5VDg4VmtSM0t0dDhYRERDek5sa1NjaWFZNTJLY1hDdl9vRHkyZTY2YmlzWWNIQ1F0ZW9HZUxVOGZRaXJUU19QY1RlWmppZHBP?oc=5
+  - https://news.google.com/rss/articles/CBMi8gFBVV95cUxOYTRKdXp2dW4zZzV0bEttTWlZZzNEMUdSMjJ2WlM4SDhjOWVGdFRKaXVwNHZBMmo2RFREd1BDdjcyWWtPb2luRHVzOUF1R0tLRmlfdTZHRGxPaUstbVpWREk3Q0ZDSW41SHZfMDQzckVsS0J3WTJrUFM3Vmx6Z0NXV0dPU0xqQkl5eTdwRWV6TmJGNlNvc29jR2U0aVlmRHRqRGZaM3MzWWNJX3dfTjN4QV9nZUlmUWVRM3pmR2xmSWp5WnltbVpzQmZZUmdmQU1JYVZpRnpXVmlTZEtIRW8wclh3MU9HZzR3eUs4cmtaN19HUQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: hca-healthcare
+- id: musk-says-spacexai-will-launch-nvidia-vera-rubin
+  headline: Musk says SpaceXAI will launch Nvidia Vera Rubin system into orbit in
+    2027
+  distinct_outlets: 4
+  outlets_sample:
+  - Bitget
+  - Crypto Briefing
+  - Tom's Hardware
+  - Yahoo Tech
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiY0FVX3lxTE5wX0RJWHRmZXRLQWlrMlJWektld2lQcG51Vml6S29PZTIwZDhLYW9oR3NFSEc4Y1YzQ2hkQjhUNFRzdkZLVHg0TWYxUVRnOWRqUFZxYko3S0FwQzdsb2RVa3UtONIBY0FVX3lxTE5wX0RJWHRmZXRLQWlrMlJWektld2lQcG51Vml6S29PZTIwZDhLYW9oR3NFSEc4Y1YzQ2hkQjhUNFRzdkZLVHg0TWYxUVRnOWRqUFZxYko3S0FwQzdsb2RVa3UtOA?oc=5
+  - https://news.google.com/rss/articles/CBMiY0FVX3lxTE1fV3FQUG16MjZ0TFQ1Q3RGdjhwUUVNOHd4SVJILXRULUZxWVlBV1dRdWg4LU5rUVdDMmx1LUtTU3ZfRW96b0Vha1BxZTdkSVR6ZTVzUC1mZXkxU2s0RUhCaWdkb9IBY0FVX3lxTE1fV3FQUG16MjZ0TFQ1Q3RGdjhwUUVNOHd4SVJILXRULUZxWVlBV1dRdWg4LU5rUVdDMmx1LUtTU3ZfRW96b0Vha1BxZTdkSVR6ZTVzUC1mZXkxU2s0RUhCaWdkbw?oc=5
+  - https://news.google.com/rss/articles/CBMixwFBVV95cUxPTnp3RndwdmlncFRWSGVueFpqTjVjUnJGVGNwR25LcUpHREpRQ1pwa2JjNGdkNHBIZW5hU1lEcUY2M1U5Nk9QaGpwSlFnWWZVQ2VWMk1RU1JyZjVwYXM5OEZ1SkdTY2ZRZFVFX1pycDJ4QzFvekcySjc3RE1GOTJXemhVUlhIdEF0ZXh2dC0wVktSekFTUFVQeDZKQ204QmY4Ulh6dXhiMFZCNzBpUTVxMVBDZ1VLZjczRGF1Sl8zZ0ItUGtaR25n?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: spacexai-public-megacap
+- id: experts-to-spotlight-social-media-s-impact-on-de
+  headline: Experts to spotlight social media’s impact on developing brains as Meta
+    case continues
+  distinct_outlets: 4
+  outlets_sample:
+  - KRCR
+  - National News Desk
+  - WGXA
+  - WKRC
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiwgJBVV95cUxPUXhlU19GQ1RYX0VxdDMwUWMtN2dYZ1drN1pMMnlDMXExajNQLWxpQVdKdGxjNEdzSWhhdkF4YVdhN2tteWJNZ2J3QThFZ0FyQjlBbEg4ZkUzV3k4ZTdiR0pWeEtVMDNGamo5ZFNxLVc1RDBLUjI5WU4zcUhEZlFTNG1RZXF6MmNlSU1xclJYZXpjUXBHUTR5aDBGMGozczZlUllsaDJxdm5JcXhBSkJkVDk0UE13Y2Yxc0l2T24xQm9hdUpqUG96VEhmZkxIQVpUOWdzLTA2d0VwZzRVQ2Vua2xCc3ZON2NRNEw3SnpXNGNua0NISFZ2WFhnWVZOdkNfQ0dOZWQ2S1pzVUpacF9XMl93aUVtX2pjZDZnU0lQOFMza1ZWTGVEWXNSSFNaUHJzcWJQTmNWUXRBeEc4TEdTbmJB?oc=5
+  - https://news.google.com/rss/articles/CBMivwJBVV95cUxNNmJOeE9ocnRuX2NrQnBhMENfMVpVU1NzdThXWlJRQjM5SzFyQnZxd0FiVl9icmlfV0huVWFOMHU3MkE3dDRITkx1aUxmejUtY3E3cEJEYV9odjhBek1uMHFxV1Y3SmQ2RExVYnZOb3hkeENPNlZOYlVpSVZEVnZqVS1pUGppekROTDJTUThYSTFSbVY2OGYyMlBlLXpJZXRMb2JsUllKcUN5Yi1qQWhjUUVSc3JyREtySXhWdmFBenZFeGRiQWk3eF9nLUxOY0pBVXA0b3YtRC0zVGdKT3RxMXhhTC1uS2VTNjZzc1BoNHB0d29LcjNtN0E4czlCdThVZ2ZPZFdsZDZiX3kxUUI0WGc3V1lSalNZY2ZOV1JxbDl1RDE0UDdvNWxqdkViU2hRZ2tGMmFzU252RTRYaTdR?oc=5
+  - https://news.google.com/rss/articles/CBMisgJBVV95cUxOSDRzLVgzbEF3RHFFdXpJU1VaNzZIZzJld3Z5b1pSRTRJNnQtaGQ5TnJUVnZTWmFOS2l5RFJaMTlWQ0lHQ1JnZkVpWXVicndLbVN6OVNER3dfSk1UUUxnclJGbEZ1ZnQ0Y21CZ1ZBVG1xZ2ZMTXhJREpCakFjZURCRUVhNmF5aVlleWlqazllYkFsNUMydnB6M1k1REdPSjBLeTFDQzNKeWpXRi1oc0ZpZ1hISUdMbW9wMDJvUWlpSEFra29JVzRxd0hqUVNjTTA2OGUtblV3cUZpNGVUMlB3UmVmME9rS0ZKMHlkOVcxVzcxYkVrdzNUM19TZFp2QkpUUkE4amNaM3BsTzNVT1VCNEs5bTYyS2Y3a1cyNUhKdlIyQnJNd3doUkJWb1JJdFE3S1E?oc=5
+  source: google_news_rss
+  status: candidate
+- id: apple-held-a-party-honoring-departing-ceo-tim-co
+  headline: Apple held a party honoring departing CEO Tim Cook on August 23 (though
+    he’s not really leaving)
+  distinct_outlets: 4
+  outlets_sample:
+  - Bitget
+  - MacTech.com
+  - Moomoo
+  - 富途牛牛
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxPZ0hCVUhMUG1zZEVYZUUyZG9NX2xlb1IxanlwTnpXR0lkQWNVSGhUdm1hZ0l2aVpmc3p6MVUxZnhqQXN1Z0FiMlhVUmFtaENxdEJDc2dnWk82aUQxUGNQMEtrU2RRWUFPNE9TbTBTMlBIRWtRVl92ZUNrOHZ3MkhaMktjSkdXUFp1Nmg4ODBDbkl4andyUzVEZ0NPNVZCNVZDTkdiWHpFMWU5STh2THpQODBsblNwV3o0WjBuQnkzT04zRFF4QTR3d0RkLVduZw?oc=5
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxQZHBlSTVoWjZIeG41am5mcE1qV2tMWnRNTWpiVjc4cVR6cnFaYzYyR2dSY1dTS1ZrZll1dXYxTXNwV0tLeDg3ZVVzdGRzNEFqUWIydEY4NC1RQ253eGNuM1hPZDlPalNZZjE1UEpIY2l1U3pUOGN6b3RrRnFpNzhSWUtVYmJqX2pldmljTUJlNHZDeFFwVmtQMzZOM0E?oc=5
+  - https://news.google.com/rss/articles/CBMiakFVX3lxTE9xTDNFTjIwNmpuSFYyeWRKY3VuLXBOTU4zU3BtSkRnelozUkdfTUFJZTQwX1NKckNpTlN1eGt6c0tGbGdoU0V0MDNJNlROVnZRRU4zMXd3amFRbk5RZThJRjNjSnBNdU41enfSAWpBVV95cUxPcUwzRU4yMDZqbkhWMnlkSmN1bi1wTk1OM1NwbUpEZ3paM1JHX01BSWU0MF9TSnJDaU5TdXhrenNLRmxnaFNFdDAzSTZUTlZ2UUVOMzF3d2phUW5OUWU4SUYzY0pwTXVONXp3?oc=5
+  source: google_news_rss
+  status: candidate
+- id: 15-years-ago-steve-jobs-announced-resignation-as
+  headline: '15 Years Ago: Steve Jobs Announced Resignation as Apple CEO'
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - MacDailyNews
+  - iPhone in Canada
+  - parade.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxQa040M3NrUzRXUXRfLVFySF84UzVzUnAtZDZiNDlVaFZLbnJfZkQ1dDFEaXVjWlFEcmxJb2ZhdmdMU0I0STluQTNjaW5feEEzZ0RHMy1hU2VfeUEyaVRJX3BsdHA5WnNuRTNBMW52UWs4UFlNejJFSlB5Tk9HcXJuZjFUUXhieUhvaEE?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxNVy1lN3NncVJBMXN1R1pzUmZHNnhERldxMUR3R183Z1RmQVNjak9LVEh0SHRYZG9VS1JzVVJ5WWZaMVVCdXFOQmNRcWI5Y0Y4YjR1dUt1QjFFdlpldWFRVnRla0tFM05USlYwVTgyd05WYW0tVzQyeXlXeE9pYUNiN2lCNXBYUnl6UmkxS1RZN1dBamZNZXFZbdIBngFBVV95cUxPVnY3YUZhVVpNRzc4c1NCSlNDcEpiT0FJY0ZFak5YUWI5Nlhlam9DMXVJdHhLc1BkZDdvX0lEbEdFa1pXd1JmcEcwam8yamw5djMzb2VOc3NSWnYySmpMU09iVjVtX3NSTHl2TmtrSDFsSmRpLV9lZDVTVkVQZXVTNVplSHM3UGhjeU93OUNoMTB4U2NsUHNLbXEwOHNpdw?oc=5
+  - https://news.google.com/rss/articles/CBMif0FVX3lxTE9jSlVjaF9teWNzYktESGNqSi1yZHVoV2R5YUd0UU8tdzlva0RvcjhqTGpjRngzM2RaWWdJRzBvdG5fd0w5cGpKZ2p4cWZ5UUxZVEVaUVJWSzRxbThYR01fVE9LTFNnYXRYS0hFand5Uy15eVlLa0tYcElvVjY0Ylk?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: gaza-war
+- id: taiwan-prosecutors-indict-nvidia-and-super-micro
+  headline: Taiwan Prosecutors Indict Nvidia And Super Micro Employees Over Illegal
+    AI Server Exports To China
+  distinct_outlets: 4
+  outlets_sample:
+  - 24/7 Wall St.
+  - AOL.com
+  - NewsCord
+  - U.S. News & World Report
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi6gFBVV95cUxQdHJfQU95OWh6OFNMNTB5ZnB3MThaM0lqZUZoT0U5M3E0ZVNUeUlEbklfbXdjaGhuNnM2WXNUSmJuVy1vMnlGcUdad1lqbTR0Z1lpNDhwV09MWjNLQUFWZ3lQTVBGMDJVcVU1WjQ5UHNwVVNqNXV2S25QTW5KOFd6NEZOcmhEV0NVNEtzQ01DcVY5emVtcGV5MFZLME5HRjg3RHJROG5jaW1LenF0eVRIRlBjRTBzeHRDNDNWaTF2ZDJzQW11Yy0yWWJxWTVSOUJUdnV1bDc0VlV5VEtSMDE5bnFXMm9MOFVWZ3c?oc=5
+  - https://news.google.com/rss/articles/CBMi2gFBVV95cUxOYS1pbDNOWmpsUkpqSFI1dTlvMW9rU3FBUnZTcHF2NVlmemFQMjRzcGVCRHhjb25fcUVXX050QkRzWl9FZ3R6aXg4bG1KcWlmb2NJYTgxNGQ0NDhuQmdINkE5ZVR3UTQ5T2xXU2NrOUxmbFl4RFVoMHcwOEZSSXVfWmxkVDUxdHJkN0dhMEU3T24yNzM0OXNGLU5lbGxLekJBQWFQMjd3ckVUV2RRYkJpeXpOWEs2aGZ1QjlMQmhVQlF5OTZ4NS1WTThmOHp6QW5wV1ZMbXJfMHJpQQ?oc=5
+  - https://news.google.com/rss/articles/CBMiekFVX3lxTE8wUlF5dEpkV01BcVd4ODlmR3BXZ0lud0Fhd2FVdmJuMHRRTGRFZzNrWTlFS1dEUzk1R21TNDJDSXB4Y1BzX2JDQWFROEhmNFoycWJMVEg5TW9zU2tPNHhZNmxuZ01wNGh4ODB3NFk0clQ0S0xtVUIySHFn?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: tsmc-capacity-race
+- id: taiwan-indicts-nine-over-ai-server-exports-to-ch
+  headline: Taiwan Indicts Nine Over AI Server Exports to China
+  distinct_outlets: 4
+  outlets_sample:
+  - BW Businessworld
+  - News Ghana
+  - Unite.AI
+  - achmadnurhidayat.id
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMifkFVX3lxTE5iSlVWRDFTSVVNUE40WE1sMXZnX3pPWXRaT0h0Y3dQN1BUVV8wdmFvT3NSLTB6Y0NkVXN2M0xieS1KTWdtZDZDQ2dFTExacFQ0bmtKSnJZQlIzVnRQaENRZTRmU3JVSnhlMUJjWU9fRWxPTjUwVTJUWExKQzlzUQ?oc=5
+  - https://news.google.com/rss/articles/CBMisAFBVV95cUxQT0VvclJrQUFoUjE5UC1IYjNIc08xaDFFcVltMkRDdTRLRVFYSmFKVENvc1RvenEtTzJydnVua0xUSG1CYmZFQmtHYzh2V2pSVGpBVkhJZ1ZhVWJHcV96QWFDSDk4RnVENXEzSU9aakhUSGQzLTlvQ1g5TW9UM3ZwNlVGQ21ReTAtZWxNX2NwbjRsbU50T2NhU281V0VneUx2RkE2UmpwVHZtOWw2eE5GcQ?oc=5
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxOREJxUkdYR0JIdFNIUTVmSVN4UDFBOVdPMFo0cENyWVAzWG9ma3BfS3E2V3lxLWhmaHFkZjJKMVR6NlBBa0dGbEN0aUlnTW5SQVUtOG12LWYxbjhld2RiakF3TjRqQ1RsYWh2cDBUS1BGUzBvTktDeG1hbHVKenYyX1ZxUGREWW1yQnc?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: tsmc-capacity-race
+- id: cognida-acquires-automate-to-expand-ai-native-ac
+  headline: Cognida Acquires Automate to Expand AI-Native Accounting and Operations
+    Platform
+  distinct_outlets: 4
+  outlets_sample:
+  - Business Wire
+  - FF News
+  - Pulse 2.0
+  - citybiz
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMisgFBVV95cUxQQm92VTZyYTh1UVl1OXNMQTRuZWNhS0RRbEI5V213SzcwUWp6RzhBTkppQ0VPUURtaTlBVExxd0sxRTF2U3dtVGZfN2Ntb0ctb1FrREU1VXl6bXhkMlhjWkFIUDE4cENBbUJEb0VBaG5uYWZWSWgxXzVPTjhUcHlsNHdqeWVGT2pvR29LOWpKRVZ2RDc5bXZYc2x6cENiRzFvY205bVh5ejRmM2hES3RuTkJ30gG3AUFVX3lxTFB6SFlVcHVnSDluNmJ5NUdtb3hfZUZzV2FCWGl0OUZOc1FscEZvWHcxdGZuQWswRGh3LWctZFhzaWFabGZ6WTMycG00Y3diem5yQk8xVDk2UjFsRjd3UlM2MkFMVm9iN1l2U3VTZnRjQUxiSEpQODBZZmw5emhXa0VOVzFBNVJxbjRxYURoRldDVndGOWtzR2RBTFlncWJpWmxPSFpKa2VJa3ZJUFNpMVdpSWZsdHJEZw?oc=5
+  - https://news.google.com/rss/articles/CBMiuwFBVV95cUxOWlV1LTJ6TkhDeE1BZ25wU3FSWXhjcHdfVnVDMTdCZG9sSXlTakVnay1ZLU13UjBnUkt5akR5ejdXV05CZ1dYNmF0bEpmVDh6OFdSVWRsT2F3WV92eVp3VHNJNlFhLTY0VWdJaEdxV1dIT3NUY3ktYTFZOXQwUl9adFBITzZjOElPOWVncXQtLW8xQTIwWXV4VEJybXpQbTJnVmxRZWRMZ3RmNjh3TWVrZ2Q5eXcxU2RaZE1j?oc=5
+  - https://news.google.com/rss/articles/CBMi2gFBVV95cUxQbTV4LXp0UW9LbnkzRlBncVNOQ1JpZ01xak5hWlR4Sl9hYy1HMTBVWFUzRXp1SXJLbUtGYVp6bEtMbGU1NnF1Q0M2dUhBak9NLVRpWE1lVk5iV19KMC1EakJSWl9kMXpWRVUzRTdJNDJkandaUll2bmZrX3RPOGdXUURTbVAtQnRFcFU3MnZRdW1JbUVGQUM0NnlmeV84cVd4eXB2WUxmOVNwOUlVQzFzTVRlLThlSXREZlBzdnBYRzhSZ3BxQWIxMEJHT1VnUkU1NFM1eEhFdXI0Zw?oc=5
+  source: google_news_rss
+  status: candidate
+- id: tcs-to-buy-porsche-s-it-consulting-arm-mhp-for-3
+  headline: TCS to buy Porsche’s IT consulting arm MHP for €320 million in AI push
+  distinct_outlets: 4
+  outlets_sample:
+  - CNBC TV18
+  - Fortune India
+  - Techcircle
+  - The Hindu
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitAFBVV95cUxQTS16V3hYSUhtRE5XX2hVUkJoTXM4TXdac3dyWDBpWElBN2dnb1RPVVFHcGdfSmtydHJ0Mk13Y2V0Zkg1cTIwTEl0MmoyWVBzcmhmdVlZdlNGXzNzRVM3ZWg2Y2RQTThGVGJRWUZKcjh3VUJ5WlQyTEY4cWpHMGcySVNVOC1nODV1WXd0UlRFT1paWXZaY3lUenlMVmQ5aVQ0VXJ3UXZOVkVrbVUzcFVIakdTdXI?oc=5
+  - https://news.google.com/rss/articles/CBMi2wFBVV95cUxOMGtHWjA1aW9KRjA4QnRxTFdFbjZwQjlNRWNPNFZIRW9kRHNzbTJvOFNUaFUtRnJjUERZb01sMFIzRlp0X1FYcEJCTE5oMXBCUUg3VXdFLXEtMGlaUHBsbjVid1dFMWIxU1RNZ25vZDFDVE1lTkgwQXFqS1R3TnlVWEplRGhGUHFjN1F3UHpvbTB2cFM2Nm5IeHI0Q2gxUzI3MVZlWFYtTTEtNGJZdzk4eVREWVpmYlRUaEFQYmUyOEhxa1AwYW1aR1dMSWRVQ0ZIMEp1a2VXYXZmRnfSAeIBQVVfeXFMT3NMUklrS3dQZ3J0V2JTLTFJaWpiX2pCbE9IWW5MNy1STkJ2SnhJUUJrYlYyN1MxQS1oUm1BcUk3RDJSX1lYZ3ZNY0tkS2JSTXVFSkJUeE03WFRWaElHeWFodmc5bk1YdXlmdnk3WjJ2VTFiQnVyOTRueWtqWmF0WGI1a19mQTYxdUZRb1ZRRWpkTjU2UUdiNUhYYkxpZ3BiOF8ydWNRSGhBRE1FTjFYbU8tTGJKR0libElqSl9VV0ZBZnpvV2N1Q3Nfd19LLVhIbWFDRFlWbHdfXzUta0lzblh3QQ?oc=5
+  - https://news.google.com/rss/articles/CBMiwAFBVV95cUxOeHRtUXNiSWVjOWtHTk1ReU5fekZvTHJHZVJ5Wmg5ZWpZS0tJX2k0aUptcGs4Q2pQR0dySGNscTVBVjNlNVNzT0NhUjh6c2xndGFLU0gwa2tHNkxveTA0SzR6OFNWbkh1ODhXcHRmRFRWWE0zbWlUeFJsUVNNay11b1E0NzhjQ3ZIRU5zZ0RwZlJUeC0zX2swenFfMlVDMVVOc011MGJtT3FQWVJOVHRqU0ZONU50QVctYXNkZnkxTEXSAc4BQVVfeXFMTU9hM3dLUWdxa3NhS2tQRVZSaXFyTy1Eb2ZrNkItNTJxUGZBSHp1ckpObDlIRExiWDRzNlR0R3doaFNrRGNSRmZ5cWtZV1d0cVFzbHRTOGhpS1VTMHd0dF9qTGsxbFNCUzRONWU2ZkFjSHNJLUNhSUtZdmMwX0lsZkQ2TFFFQ3dWM2Z3b2VGSV8wRGNQOGFwTmpSV2xONzREX1laUE9WU0VKWGh6bTVfS0g1dUhFZXRpSzRQdzE0ejM4bnJDZDNGdEJrLXhXdVE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: abbott-says-data-centers-dug-their-own-grave-in-
+  headline: Abbott says data centers "dug their own grave" in Texas
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - Axios
+  - CBS News
+  - Newsweek
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigAFBVV95cUxOUE9vdzZ2NDZsSkVQV3RXOF9PQzhQV1g2WHo1ZkVmOHhZa3pMcVFEZWFiTlA1blVSZ2tMQWNTUWtnTDNmT2JfV2s2OXdpS2lJM3ZUMmlLOWdNWnJxSWowOUd3Ym13Qmt6dnJGLXBnYlRSZmhHUUxSc0ZhaFI3a1Z4RQ?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxOa1lpUHFpX3RjNzJKSWtGMklTN01aSFZxYVpyMDlPemRPOEt6MDB6SFNISkxVR0I5bkdobmRYeEVVaGc3UG5YNEhid21XSzBfaklBUmRnckFIeUg3cVhOZGZkSFRKUklKb2lNNjJCdVJ0eUJnaHRPUTdoZnZabDJEVXFsVndvSzltaTc2TzdxWXp5TzkzOTFieg?oc=5
+  - https://news.google.com/rss/articles/CBMiwwFBVV95cUxOVHdHZnktanhtblI0dnpuaEJoaG40eDllMjJJU1U2YUN4SkN1VHROS0RDeW0xcWVUTWFvbTRKRm1CeG95aWRaVzQ0TlI0azZ5ZlN4S0FyYW83T2ExS3BUcTl5MzNfdExPR2JJR21VS3d6bUVTNTZJa1lYY3EzdURuejFjR05Ha2tOMEp0OHNWMThZUHY3U011ckgyMUgyZFI4S0trSU10elZubzlVMjNuUFRYaWthbGJ5MlRPRFk3WlRHUUE?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: where-the-capex-lands
+- id: gartner-india-may-drive-5-global-semiconductor-d
+  headline: 'Gartner: India may drive 5% global semiconductor demand by 2030'
+  distinct_outlets: 4
+  outlets_sample:
+  - Communications Today
+  - NewsBytes
+  - The Economic Times
+  - Zee Business
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi2wFBVV95cUxNS1ZkS0x5RGxHTkxDSE1taE1MR0Jod1RHZmVudFJJbWJoVU1mVkF6TlprUVUxWXpJeG9NYkdwUWE5VVBQNWFfMFZlZUtHLVM4UnpBQVpXVmdRVzNxQVptbUgzaVF3ZEFsS3p1bDE5YmdjQVIwc25nVEFDc1hMUnFnalAwbmlRVTAyczNvMlByU1RCcmRaQmIxS3M0T1pJS2pGbWpTT0VNcnJIQkFfMWRoQ1AwMVRuMkhMVjJEbVVycEpkMURleXMxSmMxaEo5LVd1VDd2cTVPbnV1R0XSAdsBQVVfeXFMTUtWZEtMeURsR05MQ0hNbWhNTEdCaHdUR2ZlbnRSSW1iaFVNZlZBek5aa1FVMVl6SXhvTWJHcFFhOVVQUDVhXzBWZWVLRy1TOFJ6QUFaV1ZnUVczcUFabW1IM2lRd2RBbEt6dWwxOWJnY0FSMHNuZ1RBQ3NYTFJxZ2pQMG5pUVUwMnMzbzJQclNUQnJkWkJiMUtzNE9aSUtqRm1qU09FTXJySEJBXzFkaENQMDFUbjJITFYyRG1VcnBKZDFEZXlzMUpjMWhKOS1XdVQ3dnE1T251dUdF?oc=5
+  - https://news.google.com/rss/articles/CBMirgFBVV95cUxNWlNUd0V0bWxERXRpLWdIakZXUGdzZkpLTE5DU28tMWlCN3JlYTlyNm1KTU16VjFfSEx4X2Y4NmdNVkJ0enVoNTBJcDZ1bFVkcFQ2dHVxRTlLc2oyejhBRDJxcjVVQi1ybUpNYTVkeDBvS2VoTGtEenhuLTczbVlyNFVDSHprUktqR2M1VEh6SWFidlVXMHhzTHd6X3hlcjZnbGIzS2JvR29Rbl9YYWc?oc=5
+  - https://news.google.com/rss/articles/CBMi8gFBVV95cUxObzQtamxLT3JtZVp2R3kzS09abjFqalJIUWVSWDJ1NmViTGthSzhORHNXbzIydHl2eG1jTDBLcTNBRE1yWGxtSGY4WWRNMmtpWTFxUGp6THdxRmFSTEc4MWg2ekg2QWxyM2ZLTDc4WVZKMElveDlHVFBPV2doSnRrZGUyVWREVGVta3h1QlF2MjgyUTVsWW1qXzhVTFQ4eUt2b3BjWjhWWlUxQ0xrZHFJUnpKZ0pGMDA4QXpxRjhFdUk4clllWE5HVkFvbzhBRV9MU2hDbUlzQ240VHJLVFJpOXpTUExRRWhHb19NaVRwZy12Z9IB9wFBVV95cUxOWHAxcDk1R2t1cEVVSVhHb0xTSG9qZUZ0YkRLYkFKbHp0alJtWi1LcnRMVHd4aEx6Zml4cmlhNnctZ2tMOFc1SWl6OS0wN0Z5Y2ZsaVJBc2tMSlY5RTdpalZ3NVlTNGR0UFprRVdLZUN0UWg4dzNIM2xSTHktTjBiU0V0VlppTlpCejR1X2NRY1Y2cUVRREhGOEh3MGtDWjRTS0JOejBRWDJoZFdtdzg3M3RnTlFhZkVMWURHRERNQUV5ZXVvT1FBdnVrOUd2TFgwX1ZPd1lSU3VQQ01NeVQ5TVlVeWRwU0VwRERQWTZ4Mm05XzZzaWNj?oc=5
+  source: google_news_rss
+  status: candidate
+- id: highmark-health-plans-appoints-new-president
+  headline: Highmark Health Plans appoints new president
+  distinct_outlets: 4
+  outlets_sample:
+  - Modern Healthcare
+  - The Business Journals
+  - TribLIVE.com
+  - WV News
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxNX29reGprdldxYlNuNGh4aGJUaTdVdWx3aU1wN0JOeUVVazZ6ZFlRTmstMUw2YVh2NVpXcUplY1RVbkpjYnNMblRVNTBwMXJHV1ZtTzVUR2NjRUxlVHdndnV1Yi1HVTJpTjlVQkIyUnBhbHJXa1d5ei1lbjRCdDBQdGY0empSWFVrR1E?oc=5
+  - https://news.google.com/rss/articles/CBMilAFBVV95cUxNOU1TNGM2Q0tzWS1fR0FFdmZwemMtVlJ1Q3B5aExtUFYxSlJxNEluZnVDdUV0aG9VeFRTN3hvSVJtX0VVZXZxejBfWl9yaktQZjRHQVk1aXM3Qi1ZUG13MkVyUTFqNTM4bHpWTFJDUlk4Skc4SW9naS1Xb1NkTV96bUlvZ1Ewb0NvWV9MMXc5ZTBpTEZV?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxPeDhFR1FKZFU2UWZlUzlDSGFkck5Ka2I4MzV6dVo5RmlLeUh4QnJhdm1NYjAwNFZzZVMwQ3A4TW0xV2hzbmlrLUpXTE9ITmFUbXh2SG9mYzRxWjA3SHRBQm8tbldxeENtdVgtNDl2Q3kwV2xnNXBlbk1RQTdJOEFMRDAzbmJPVjlNY2Jpbm5ZSklYU2F1bkk0dWQ2ODlwT3FsQUE?oc=5
+  source: google_news_rss
+  status: candidate
+- id: berkshire-ceo-greg-abel-is-sitting-on-nearly-400
+  headline: Berkshire CEO Greg Abel Is Sitting on Nearly $400 Billion in Cash. Here's
+    How His Deal-Making Approach Differs From Warren Buffett's.
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMinAFBVV95cUxQSjFHZFFIQ25MSTJacDU4SG5yeEdzMFpFelpUd3hYaXVac1JPS2JLckFNMkRWNUNROV9ucU1Wd3lKTTYwRXV1ekRIUFdKYTdyeHRpTzVfN1FwbjhvX25RQTZiT05rNUtnUXRkVDZ6aXRESDBCbEt0ZU5vblRfcVlCbzhUQ0FBc0RyVXdITGhnVFhySFhJd2FsUXBoZUI?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxQbGIxM0JSWnI4d1Qwd1VKbnVJSWFaN1VvZFZqSmlXNmsxd3JOVEREVE9GSW1uR005M2xvc1Q4bl9xYXpGQ3E1dFFwNHVmTnZtQS1xTTJFQ3lzdkFVRzlPS1pDcU1oS1pwc0lTd3NWRVdyUGpBR0dOWVpxRHJtaDU5X1lkYzd4bmhCUVNaamxsOWxlQ1lkUWRCYQ?oc=5
+  - https://news.google.com/rss/articles/CBMiuAJBVV95cUxPeFlPanFtdE5sTGlWRGIyMzFSYjExYlZlU2NMZ0Q5bTJOM1Z1NzVnc1RzVEtucEhPSWFmOTRIcXVRRWhOSzRwZzFhQVktUkdHbjNvZEVxbkJyR2o1cE96dUx4dDFxV1dvV2FwRlVjbnFVMFlKQzdIbGw0cmRqeDAtSGYyTk1iRlJkVjk3YVVQTDlnQXBEVW12WXpfNGpYTTg3Q0laQ19mdmxaR3dTaElMbTVJd1hxSklHNFNmRTFsbWUzNm5zVnBlb2c3SUUydkE0cUVKakFIa0ZqYkNPYkhiNTJvbHphYjladGZvRVZ6ODBSVFhFeWlIR1h4YmVkUGxORHJIb0hSSmV6YWhGYS1PbFpkSDV6VlpieTlFQ0cybUFPUGF5eU81aW9xbzg5RWh2R2p2d2FENkc?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: datacenter-backlash-capital-risk
+- id: silver-lake-campground-wy-attivit-outdoor
+  headline: Silver Lake Campground (WY) • Attività outdoor
+  distinct_outlets: 4
+  outlets_sample:
+  - Outdooractive
+  - Outsource Accelerator
+  - The Eastsider LA
+  - scanx.trade
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiiwJBVV95cUxQWVJEYUtCOG43bEdnbWFocE8wNC1SckVPZmt6aFpoQXQwWF8xYWJoNm5JeFl4eXpKdzBSZlJ0c01pX29VNmh1anR1Ul9CTm1YSWl5d0dzWDNneG9qZHJJTXcyMzFwWGY0aXBiYzNZTkQ0WjJ5YjlKVWZGMXpqVFNuQ0Y1VjgxVUJSX1pIbmJCMFBUeEZ4TTlUQzVfbUtvQV9OZ0NQUHo4c2N2V1ZLNloyMFV3UFlrU2RfdWp3Zkh1bTdMWmxFb3R2SDZfaklpOGloQXBxekNUWTFDbVlWcHRpY0d3MEQ0Y0hGSldRUWJrQzQ0NFJUcFVjZWo5SDJjWnZKWU45UndvdThCSG_SAZACQVVfeXFMTU1nTzZCcFJqMnl4OFJvQkkxYlU4Qk5CY0htZXc4Rll1Zk4wM0EwSG9RcWYxREUxTWExRnhsNmQyWDg5SWJwWGdCcFVxbFRxcGVYWFNwRW83cHA2WkdqRHF1a3I0aTU3aDR0OVUwZUlMSnZkcG9VQjRpTE9Da001NldLa3pRcHAtdHBsd3p1d0RpUzI5R0Jocjd2d0dqSGd6TU85R3hoQjNwWnNtQVRQY1NueVVkbDl6blVyQUcwbmFmQUJkdHlMc2p1empPcEZyRHpMUmJ5TXVxT01aMnZ3SXRnR2xFN2gzQmFjVzNaVFRQS0V5Y2t5MHVVUGJDcjBtRURuVmpTS3RYRXNtd0Y1SWs?oc=5
+  - https://news.google.com/rss/articles/CBMikgFBVV95cUxQLXpsVjNmYUo2bmFBd1FFR19xZHlieWVoMmJ0NTVEd19ibmpNVk14TUhpVWdQSzJaTjFMcUJwMTNGcE4xZXFfWjF5SENmQW1hck5NU3lTNXcyeFRGblZFOGxjOU9BR0Yyc18xVmJtOWZVUUNFY0F2eUFoZFo4TlYtSlBBSVVpUmdOV0dTM0lyQk91dw?oc=5
+  - https://news.google.com/rss/articles/CBMicEFVX3lxTFAxalM0MTlDZTVPeDV0TW51WGhSLTFObmZacTJQMDZSR3Q3SDJOSnZSZkQ2WDR0QUc1bDRTZWM1dXFucjVTcE9xQllnQ3FwSU44bGRDeGpuNUdxekRBc1BDRUZ6dzJpTGNzRHExMTNINXM?oc=5
+  source: google_news_rss
+  status: candidate
+- id: is-nebius-overvalued-or-digesting-debt-for-somet
+  headline: Is Nebius Overvalued or Digesting Debt for Something BIgger and Better?
+  distinct_outlets: 4
+  outlets_sample:
+  - 24/7 Wall St.
+  - AOL.ca
+  - AOL.com
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitAFBVV95cUxOczVVMF9mZGhILWFJdTY3TTIyc3BVV2V2U3FJczNWbmFhSFMyYlZyOGVuNXp2bWhvVFcyTnNOb0cyR1NBdmpjUlRpX1dOQndyRC1DYnFvd0tiekVNQW8zT0Jyand4VXZfTW5FdjhDYkZKZl9USjFQendNME5fQmRhZDNUWmdfbkl0aWMyVTJNdWRxSkpWcTBRZVpDbGdINDN0bEpISDBNVFlkSVVtNHJhNnZjWFk?oc=5
+  - https://news.google.com/rss/articles/CBMiqwFBVV95cUxOLVRlTEYxS0MxR2k5a0k3NnFQRmhUd3VoczdpYmRTNlJlTXQybDFybFR6TV9rV1BDV0JKeDcySGRoVFRSSWJmb3BkTHpJUVQ0ZzhJUEpVNWxPY1pCa3BXVDJ2UVRGTW5MWGt3QnNTcUNzUFhKNGlWVW5kTzlmdkFidVRtWFFtTmhLaTRjTVZjOS1OSmdha0ticGVHQm5vWFcyTURoaVlrejZ3M1U?oc=5
+  - https://news.google.com/rss/articles/CBMijwFBVV95cUxNdTk2RkU1MFNWVDR3RmIxV2JFUHV2VkgyZV85SXZuMEdqdE5mUko5RVdXdFM2cjd1UDE5TmUtd1ZKMkpYd1FuUXpKdUdRbXJzRHhkSlJjY3ZYWFJCeUpmcWpXYnNIVzFHUU9LUGxlS3FDbTlIS19vcHRoTFJYek9raG5zUl82WVI5YmJmVTZVQQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: nvidia-vendor-financing
+- id: china-robot-maker-unitree-s-post-listing-slump-s
+  headline: China robot maker Unitree’s post-listing slump sparks bubble fears
+  distinct_outlets: 4
+  outlets_sample:
+  - Invezz
+  - KWSN
+  - The Straits Times
+  - TradingView
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiswFBVV95cUxOZmpwalQ2Ylk0NmFWU3BaYTBjMWdoTjhFQURFTTBScWlrdU1uZXlLcmdRYWRUWng2cDR6VDF3Q0RmZlVVVHdzNmkyNGh5MUtDLWpGcUhWUWd4dzByS1VyYm5nVEJ3b2RiSkpyRkQ1R0dldG1FREtsNDJDUmEtY1liSUhVTVp6bnp0N3RlSkhMbjBPRDI1UFZLZ0IxOGdOUG5qcG80T01IT1NQNnFZMjN5Q1Fmdw?oc=5
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxPNjkxUnhLWUJaNDJNbG9fOHFmZlJVUWU0cXl4SHNnb2VMcVV4TUN0RGRpYTFZal9GTFllMjN3VjI3dWU1SXFxQ3A4Qk5YNkU4S1Y0T3dWdHRWQzlqSHRrTDlIRHJnUE9lZm02V25mX1NhR09xb0x6cmdGQXRGb1Rad1lQWnYybFZZbTJzYnRjWjlaWW9xZFFfNml3?oc=5
+  - https://news.google.com/rss/articles/CBMipgFBVV95cUxOcVBITXQyRFdLSWgwX01hSDRRRUFzeDNCUWNtX244aUJ6bXR3WEpidE9UY3pGd2c2dVRWR2VOdTNmOXgtdVhseDYxNHBTeDVwcnZpRHRvUVE5MmVNd2dUVmxsWTZld3hzSVlydlFNdWJDNHFSc09Rb3IwRHR5enJjN0FDOHJySWZXX1V0d05qc2w4SzVZYlI4RUZzY1psb0FTZnhVNzRB?oc=5
+  source: google_news_rss
+  status: candidate
+- id: gold-nears-4-660-as-pce-jackson-hole-frame-fed-t
+  headline: Gold nears $4,660 as PCE, Jackson Hole frame Fed trade
+  distinct_outlets: 4
+  outlets_sample:
+  - CNBC
+  - CryptoRank
+  - Gold Eagle
+  - Reuters
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMieEFVX3lxTE42dVNZd3RJSGU0VW1ra1oyVkhJbDBPUmRsaEFheFZrTG1sVGlpLWdNQXcwaHhwQTA3djFrM2lVYWNyUnVZT0JkenVhb0JYdXliUjhvNzNqOGhTaVZXMi1tNU1adUlwSlhLdG5YVVVyZjJYanJZYm0xTg?oc=5
+  - https://news.google.com/rss/articles/CBMiogFBVV95cUxPaU5WTzNQenZqaS00RkdfbUFUNUp6dlRvRDBhWVVqekhnOVJHVlQxTGhLZFRsVWJYdzl3S1JTNDBXQ19NOTk3U3o1TU85N3pFTFBBVm1RSEttVEdiNFlZWUtMZHlNaDB5RkpBd0dHbUpVTkNJVjRhbFR5V1VNbXM2NkJoSEEyYzFEcGRfblEzakRaaXA2ZTJYZS02bGdsczM1VnfSAacBQVVfeXFMUDRsak1hQ3JSWV9VZGVZNWVXdVZhUllMa1FLbGpkYkFqaUJtazZ2eHJOUmJHdGFyVW9GeW5aVERfMmlrVl9LNHFoMEhJSWx4NWZMeUgyV0t6ZHpYWmJLVE56Nm5zbjMyZzJnaW8yTEF5Tkd3Y2hxMVJYWmhWZDFsVlNsZWlKS3F4SmpsWjBZWHNhSk01MkRpRzFneHJYNk9xNjBvVUpzTWs?oc=5
+  - https://news.google.com/rss/articles/CBMitwFBVV95cUxNUkZtQVBPdjlyb21JaVBxeFRicDFEeHVNQ21pZzdGQnlSMUpFYV80MEl3RjJUbF9tYWxmdkZqY2NpaXh5S0NPd1lhbFZxUHZMVVFkTHNyNktCX2hrUU5KN3hjcWRUVTlaQ0hwcmVoMV9VZjBmUkFjMGtTUUY5MXBwRDRFWXBwQnhZTzU1dV81LThOaTNZR1BLVDRGU1JtbDczRjVweFByWkVQbWhhX3VwYTlJZ0VYblU?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: treasury-long-end-intervention
+- id: partners-group-exits-tea-chain-gong-cha-after-ba
+  headline: Partners Group exits tea chain Gong Cha after Bain buyout
+  distinct_outlets: 4
+  outlets_sample:
+  - DealStreetAsia
+  - The Straits Times
+  - TipRanks
+  - marketscreener.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMivAFBVV95cUxPd0k0M3pnV0xxaENGRzhLRVEtRzBqRUtXYXhHLUk4T3M3eVJDVGNGVkNNNTNfRHRuQnhrMVM2Y3puVE80eDhQWERqbmUwbWF0TnI0T2RuYmJOeFBUN3lVbFRUcGtQNURYelJjOVg0alltRUFfVDdLbHhubUdWeU54aHhuamxuNnhMYW4xZmFoZXljd1B6VS1rVS1SSFpNYnJJUkUtMkthT0w2X0lYeVBsckRVT1VLZmJqaExuQw?oc=5
+  - https://news.google.com/rss/articles/CBMigAFBVV95cUxORW1NWFlkZ0RYOG5Zc3BsZDQ4SFQ4NkExNE9sSnlBQUJhYnpOQzZaNm5rdkRIZDZYMVdjeUpDUzdKVVJWZ0pfckhGQXU0d21yQ3pIcU14YmM3a1o0azlReGphRklvRGxvWElfSEJ5RER1TEdfVFpwYzN0Uk1NUV9Mcw?oc=5
+  - https://news.google.com/rss/articles/CBMipAFBVV95cUxNTnZmR3RaZ0gwc0x5cDNEUHJRSkI1RG1XblE5eTk2a0VQS0NhcXgxenc2ZFM1UHA1RDQ1anIxaEZETG8teDBXUHF0dVI1djZxRnBobjVLYlM1MW50UTVHUFZTMFE4cXdOeGgwZWpHb2c2QldxT08tUXRJOXc0TjFfeTZtUExKZW9xWlRZNUVVS3JSWC1RdUhEZFJYMmV6am5CRE5ZSQ?oc=5
+  source: google_news_rss
+  status: candidate
+- id: after-australia-new-zealand-proposes-social-medi
+  headline: After Australia, New Zealand proposes social media ban for under 16
+  distinct_outlets: 4
+  outlets_sample:
+  - ABC News & Headlines – Australian Broadcasting Corporation
+  - Deccan Herald
+  - Neos Kosmos
+  - The Times of India
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiygFBVV95cUxPTW1pNzZUZ1F0Vk5ZOUItUE5tNGd5dURKZGZVRVlCZ0hxUnh2NnNHSHJsU04wcTdTUEl5SUJTdEEwM3BFc0s1UGNWYVpYTHBaeDlaVEpZX3NUclVWQW0tQVgtMFZ4V0R6X1JOWTJxVDlQcExPX3lXRkRfM0NMM3Y4ajVTbDJ0VWs4Z3VwR1NKLVM1M0RDcEZPYTFld2h0aWM5ZXZoQjBCajFUdm1SNzJPd0U5Y3NNc1Z1Sy1yREdUZGtCb2Q1TG5jOHhB?oc=5
+  - https://news.google.com/rss/articles/CBMioAFBVV95cUxOTFF0SXRtU0hZaVZfMzJMUXMzYnlXVXp2NWxDZ0dBR3NkTzFXTmpqUmpEM2pFZG01TE1KbjIxS1FuckZKUzdLZmdOOTZKQkhMdzdta3N3ZmVlMzJsVmZRbVpTN0ZiSk1kMVE5eElSN3VpYzk4eWZsUHFKOWoxS1ZteVh1VGtYejNPRXIzSWsxZ3Z0WDluc1ZEQVFweWNrOHgy?oc=5
+  - https://news.google.com/rss/articles/CBMi7gFBVV95cUxQUXdlMnFHVXBVODk0MGFjc3pBU2R5ZnhQbnRkbk9weXNDSWgtSC1yNVRvSUlFdThxV0Zoc284SlRWQnFEOGc4YXVjQnFyWEVDSUtqcTNCV21LNl9IRmJ1YnNWVEotZjZUVUhGT0lJN18yRXB6Qnc5RlhTOEdvTEZRcjFFRFdmNld6YnEzRDZUU2trZTFUYjlDQlRQeFpTeWRCcG0tSDBKbVhfd1VTZ0tRYzdtSHlfX3lybWVudGVjam9QLWc4MG02MXRYS3B5THVEVnhMOVNfTmxoMGRmR1V5M3g4QzNyZEMtTzZ1Q3h3?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: social-media-causality-fight
+- id: new-zealand-joins-the-ban-on-social-media-use-un
+  headline: New Zealand Joins The Ban On Social Media Use Under 16
+  distinct_outlets: 4
+  outlets_sample:
+  - 2oceansvibe News
+  - SSBCrack
+  - Whalesbook
+  - streamlinefeed.co.ke
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi5gFBVV95cUxQTUVjSzlSQzJqTnh0N0VsRU84S2VZNjdkR0dqTWxSb2s3R1dvb29ZYVJ5STVieGlHbnZmdld4eDF6RUZqcC12MzJuRXVJYTFXV0VMaVhlUTFyUjQ1aVFtWEhqenVWbi04Y3J3TXVFY2VSVDF5SC13OHpXWE5ub1VrQzdhUUhYVE43eHdaVWMtWjZiUFB3NFhmSHF0QTRrcTNwLVUtbUVWN1JndU1Kc2pkMFV0b1JrekgwbzBNWk5BSUVURU9ZRDdLNGlkSVBqRkdDMUQ0cERYSFRBWUxmdjhOSWk5d1lWZw?oc=5
+  - https://news.google.com/rss/articles/CBMiowFBVV95cUxQM290UVlQQ2RmVWtLeTNHQ2hZOW9BMDdIcUVTbVJWZmVrTlludkFCazFpSkx5UWpSSHNxb2Y1NjBXd3VaS2VlRENjWHpLaTBjUW5acWJ6MDRPREtrY0JNUEFhc3F3cmJIWmtxVzd5RGY5aklyVUNxSXZEVG94OEVCYng5TXRxLW1ZeEFTTVhRbG9wOGRLbnowdjB1QkNOLUtvM053?oc=5
+  - https://news.google.com/rss/articles/CBMisgFBVV95cUxQd1FwcFZvdFpfUEdfQWh4ZFJVUGRwOEs4ajNCdFZITVhhQ0o4aG9FTnZ3ZURBbUp4cnBCZGF1WUdMZ3AyMk54U1Zvd285QjEtWWVUZFFleWhRMWRjRjU5VjFudGFpS1ZiTVNqZmFHMFlDU0huTzQxM3FmbXhVNW15a1NkaVRYMHZFOUdiZ3YtaFE4OGZHY0ZUbUgyMGVyZS12QnJ3YzRHWFg3SWI3SWZNV3pB?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: social-media-causality-fight
+- id: if-an-ai-bubble-burst-is-coming-warren-buffett-s
+  headline: If an AI Bubble Burst Is Coming, Warren Buffett's 1999 Warning to Investors
+    Is More Crucial Than Ever
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.ca
+  - AOL.com
+  - The Motley Fool
+  - Yahoo Finance
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMimgFBVV95cUxPWHlCRkVvOU1CZ0pPNERVcTE0dmNGR3RPS1RvMkNFbHlGSERCYWhza1JjUUk1YVNBS2JPcGFRZGhyRl9tWXFRRHVFdmYtM1VFemhiNjI0WVQwQ2I0ZzZLWVlqbW9ZT3VGczVUQ19iY2I4ZjQwZVhHVnc1bDRJX3hnc0pTYjRsXzgzUXFxZ184LWdabk1BRGJzRXZn?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxNQlloQi0zU0VEZEs2aEswOTE4MnpKekxpaVkyX0x4RExPUUp4ZzZlNEx0ckxNbEtWQnF3SThOX29wS1U3UTZxNko3bE45SkdHeW9JWFI1aHR5NHVybkVSOHNkbWdwY0JHamJCSkpLTkdnWkhGNHI5Z3F5NXlLeHUzRXlyNWNwdG5POVY2NFAycGpSUHRXckJyVQ?oc=5
+  - https://news.google.com/rss/articles/CBMifkFVX3lxTE1qZFhkd1RpVWgweU1mNkpJbFU5N1dhcmZoME4zLXEyOWpoM3oxUWoxZmVqVWFnUGpxWlpTdjgzR2pmOHBBUG9lUDBQc2RraEFKQml2dEVqUXU0cVJSNlVzdmJuWmNZaHJIR3U4enRBYm5qLVE3N0NTQS1SWHc0QQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: meta-capex
+- id: google-s-fitbit-air-makes-early-retail-debut-in-
+  headline: Google’s Fitbit Air makes early retail debut in India ahead of October
+    launch
+  distinct_outlets: 4
+  outlets_sample:
+  - Android Police
+  - Chrome Unboxed
+  - Yahoo Tech
+  - varindia.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMiigFBVV95cUxQbGtPSWE4UHJERDhpdURJZy1XTVV6QURRaHJoQVh1S29wd3hJMThEWUV4UWNZY1hhMEE1dTIzTEcyTEtGRnkxNkRGY09DbEVlSzFHa2E0dnJGLVAyaGg3NFlyQVMxS1RfWlR1LWdRRzdfMXF2ZTBHa05GYkJubkFGeTlGSTVySjdxWFE?oc=5
+  - https://news.google.com/rss/articles/CBMiqgFBVV95cUxPN0kzeFU1QWdsXzFDWS15dWhYNzhXLV9Mcjc1S1c1M0JpODRUNkZDVE0xVmFjSnBudWc5a0xSVVJMUDVKblZfLWU1dG1FTGdGMWZUbnY4QW45QVlrbFFMV1FXai10WlFQWkdpMGh3T2o2NTEtdU1iclhQdVkxeUJrcmRyRmRYbTZFbWdxOHVVd1BKRjAyS0JrRzFaNXJnNUhGdDJMWWQzX190Zw?oc=5
+  - https://news.google.com/rss/articles/CBMipAFBVV95cUxOYzh2Wk11ZVp3M1k0TExjZndsX3hkNGw4bGdySFZfaGU0UWxteVZ1VlJLcjBXX2ZwdnFiRUl3SDdUd3dKTDBSSmRraTIxVmpkNDBNYU5IN3ppOW85eDZZV19uZ2RCcTFybk1FemJXSUpGWFFnRmdEU3lKVVhpU2REd2Z1a25OZ1pwRVVzaEJRT3gwVGxtd2hYanQ3eTV6RlNkVm9UOQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: google-health
+- id: tanker-fire-off-saudi-coast-extends-red-sea-ship
+  headline: Tanker Fire Off Saudi Coast Extends Red Sea Shipping Crisis
+  distinct_outlets: 4
+  outlets_sample:
+  - Marine News Magazine
+  - The Times of India
+  - Times Now
+  - streamlinefeed.co.ke
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMigwFBVV95cUxOR2xwbUFSUHFWQTBiMDV4Q3dmM2IwdXQ0aHByVEtCRTdZdEk2b3pVRjFSSHpSbTRaVDFpOG51Q1Q0Y1EyS2FqZWVxSnhrWWVFdVkyRDhZbnE3UUV5YnR2eHp5ZmdvRGFCTjl1RFVVbTZOZE1vUkhEa092QmFLRWoyVS1fVQ?oc=5
+  - https://news.google.com/rss/articles/CBMiiAJBVV95cUxNOERDYWlieEhmSmtOa1RXOG5sbjBzVVFPSmdXc05OVU5pV3BvcWZaczNYRldPNjFzRXNLSTFTb1lLLUJjRkpjWXdIcXVyR0dwN0hWTmx3Nk1JRzJfNzM5QkN1NzVIbTdwUmNLMWMtbnNmX0FqTWhwS0FRUEh6Q3FxTW9JWklDbzZyUHhITjJTbFNlT0g3dF9MbF9HRkN5Sm5ZWTZSRjlYX0JtSkhXREt5QU9uSmpFS0FHWjJLNDVtdEgxckJVMkdLOGxoXzJHQVFSXzk4cFpXRXplRFB2T3dxYld0aHEzc3FCWi15S0FiT0wtai1lX19uSnlDdGtINFhoQzYxT3QxMHbSAY4CQVVfeXFMTXJ2SWRTaFVrUE9aZXYzWGkzSUZldFg2MHJLWm14MjdLUy1IdXVnbTk0amlvcHBpcWN5Sy1MMG5wREozdFg1TktWc1BJR0lxR2NmWE5aaVNXYnhHaWFLMEVPUXRINmx5OWJKb3VYT1VWODZ0Z2R6TzYyWkk4SzhGeUNLNEtzYktjdjh4bE1CNk82WXNkTGwxNVRNc1BGU0Zac2g5UzdPV0VrZ3V1eTFBSDBHV3hURWdyM3dZNHE2cDJtZ0tXWTc0SW9GeW1nQUtSMlRXbFZvS2xuT0VYNFY5XzV0ZUtYSkMwLVYzSW5VTDFoV25IN3BRLXFUekNFcUJEbHBYTlhLRUt5WmIwa0Zn?oc=5
+  - https://news.google.com/rss/articles/CBMimAFBVV95cUxNSGdwLUVqbUktWUhXRnFGaER6N0t6eUs3SmJyOGhmSFhEc1c3THZCcnJfVXp3cVVmbmVPU3ZJSEZQZ0p3a25TR0g0MklJYWstSzRyVDRWeXNKYXZoZ2pjSW9yZXJ3dE5WVWxBWmljRnE3dHBJOW9WU1lmX2FzbU1nQWF4T2lFTHRzc1lhbzVWRF9NbmJ0cmhrUA?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: iran-conflict-widening
+- id: six-months-into-iran-war-almost-half-of-global-o
+  headline: Six months into Iran war, almost half of global oil flows from war zones
+  distinct_outlets: 4
+  outlets_sample:
+  - ET EnergyWorld
+  - Internazionale
+  - Reuters
+  - mediaselangor.com
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMitgFBVV95cUxPV0VHRE5tclJ6Z1NRR0l2S3JOMURfLUFMY2hVMkZOUTNSdWJsS2pXejZFbkFOX3YyVE9GTDdscFlpWUVMY3hBRExLS0dVUk1qWEFuZC0yb09zYW5UYVF2NVc0c2Y0OExPMWdXSHVsMzNLcy1sRmEwTW5ON3gxY0h1MXF2MGRtRExBTllHdnF5NncwTzNGXzh1QUtWMjg2MTBCWWFYZHczYWt1R2pKZzF4NFUzRkN1dw?oc=5
+  - https://news.google.com/rss/articles/CBMi3wFBVV95cUxPUF9SRTBmVTk2RE8yYVhTTHV3QWRqSmk2bS1WQWJvTGhiWkx4UThlamdodWtKTjdoOThPRmpWOHNKS3UtZnAxdmIyNXItVDhuUEpVNWVGY1lldXpDekptc1B6Vm43dGZ5TzFUU2hMY2V0QjBRb1RDcTYyNnRnNWtucW4xaVRuOXFfYUFoSUN5aExROHRBNnVUY0NxZXNJcGJjNEhXUzFwcDRLWTUxMngwWDV2aFhMQllWN3BuSjFtZ1Z0bEFndHRFd2s2aURSOG5MSWxlbkxYNkl1X0dkdEZj0gHfAUFVX3lxTE9QX1JFMGZVOTZETzJhWFNMdXdBZGpKaTZtLVZBYm9MaGJaTHhROGVqZ2h1a0pON2g5OE9GalY4c0pLdS1mcDF2YjI1ci1UOG5QSlU1ZUZjWWV1ekN6Sm1zUHpWbjd0ZnlPMVRTaExjZXRCMFFvVENxNjI2dGc1a25xbjFpVG45cV9hQWhJQ3loTFE4dEE2dVRjQ3Flc0lwYmM0SFdTMXBwNEtZNTEyeDBYNXZoWExCWVY3cG5KMW1nVnRsQWd0dEV3azZpRFI4bkxJbGVuTFg2SXVfR2R0RmM?oc=5
+  - https://news.google.com/rss/articles/CBMiVkFVX3lxTE1GMUxieUFNRDVqTFVvNHVqVHhZOEVVUWxNbEs1WVctRGtzQ3E2MGVPTXROUkdfSm8xM3FGdzVvdHlCajR2ZF9SaDNtWGctVW8wNTlZTjNB?oc=5
+  source: google_news_rss
+  status: candidate
+- id: 2-energy-stocks-riding-the-data-center-power-cru
+  headline: 2 Energy Stocks Riding the Data Center Power Crunch
+  distinct_outlets: 4
+  outlets_sample:
+  - AOL.com
+  - The Globe and Mail
+  - The Motley Fool
+  - simplywall.st
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMizgFBVV95cUxNdERpMExFSXFqNW1xUWtERG1ELVQ4MWtMYVZIUWVjZEFJSFQtRE9ZalhBSzJRVVZGc0hSbV9tWjdfR2ZOaXF4SVBxelNFMWRHMFlUU1Y3TE1aS2xNOUNjbTQxNlF3OG5rSkRCUDk0N3Q4TGVLOXFRNHBMT2xIRG9BVWREcFRnUVM3Z1NubjYtSjdrUXFNd0kwYjlJb2g0TllLSWNlX1NzUmZ4Yi03ZW9ZNkVvbkUya3pwczhFVjI4akI2NVQ5LTY0Qk1GajhvZ9IB0wFBVV95cUxOTHFLZlVJdnR6MEx4MGZDLUFyeWxOSTlKNEdPZmlqTzZvUnhxdzBkdTA2YmdvZUlDd2NkRXk1MzJ0a0FnTTEzMDZyWHR5M2dmTVNJS2FNdmx1OEY3QTc0bmJzcUZCUW1iMzVhS2R5Q1FTcXhVdGlRdEtMaU93cnlUZjRYUkRSYXpCdXpzRFo5TzAyRTBNLTVlc28yVGJrX3dOUVZWRzZMZ2VROW1kZHd2bEJrZnhuRG5ORlQ1X3BRc0lCcUZLNUFyTlhUX0RVU2toMWJr?oc=5
+  - https://news.google.com/rss/articles/CBMi0AFBVV95cUxOVEVtdUV3bUFwMDg0ZktPdjBpTTVhLThDMGFjSEdrek9VNUlSVGpHR3pyWWRiTmNTd2NLNDdTVERLZkVtNEk2ZmR6SHFfYkJBaTBfbFFxV1RjalczUHZweDBSRHg3OTBnWHRwUnZWOGhKU2dUVTVhTUVOVkY4YkZaUzJSUFFOcjMxOVZlVG43Y1FWTlhsc3BoYlZ6dXRKOVNuQkJ0Qjd1Y1F0NzlCdUY3dlVfbTdBVGhKdndLd09RN2QzTkpETHZjR1F4SldibUF5?oc=5
+  - https://news.google.com/rss/articles/CBMie0FVX3lxTE9TT0plVXpzckdIbmh1V1pDRndwb08xeHM1Ul9Hc0dKSVcyMTdNLTE3RmM3aUIwZzRUeENsUEJvLUZrSHhWekhlTHpZOEVoUjdCYUJoVjBsN3pfNVpQV2VYZEZTYWZxVko0MEhJV19qSkt2eFJrMEJ6RlRIQQ?oc=5
+  source: google_news_rss
+  status: confirmed_thread
+  thread: where-the-capex-lands
+- id: escondido-city-council-to-vote-on-data-center-mo
+  headline: Escondido City Council to vote on data center moratorium
+  distinct_outlets: 4
+  outlets_sample:
+  - 10News.com
+  - AOL.com
+  - Chillicothe Gazette
+  - Yahoo
+  urls_sample:
+  - https://news.google.com/rss/articles/CBMi2AFBVV95cUxNYm9HdFMtZ2otYTJhdHdBN0Fwc1FCUGkxSEQ5dFF5LUFuckVPMUYzZzlGbUlPTFNpaFJfVk1sTHBZc0RMTmJKc3dYeGVta3k3bnFlSmh6OUVyZHJ3UjY0OGp5cHZqaEtQUTFFOERadHVXMGI0VnZCRTVzbzQwT0UyV1BBRV9GQnRRVHBtcU9mVDY2YmU0NnZfbHdWaFJNNEFDUk9lZ1RyR3dMcGVmX2ZkZFo0SzNJbHQ4US04bjZwM21JaVBvZkk1ckJ6QXBZRmV6UFJyWHlRb2o?oc=5
+  - https://news.google.com/rss/articles/CBMimwFBVV95cUxOUjlpMnA2WWpwUFJtOEZSZHFlOEJpT0cxWUZoVElNX1lqVXJiaWlnbENzSXkxRVNfdGgxVGRFVnBUSEJ0bFNkX1RDVHlTRXd0TGR5ZzYtQV9SSGR3MXFXNzBZd2xYeDdpOHpncEgtX19MUHliMXlfRm1kc3JNNXRadzNTZkQ4NFgwcFdOdVNPcVNyNjZtb1pteVlCQQ?oc=5
+  - https://news.google.com/rss/articles/CBMiiAFBVV95cUxQWDM4NTNFSnFDUE1QRUNqNkEydWw5d1NQOFdPb2lfbkhpUzBaZU5UcHI5N1NSSEhDZEhrLXp0Q2I2cnJqQ29FQXpvOTRQUVI0MEdET0cxTmsxRWdqeVhGa1ViMmlsRGlWNktuSGpGODYxek9veWRzdFdGX2x2QlkxNGtUWmtGakNr?oc=5
   source: google_news_rss
   status: candidate

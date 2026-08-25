@@ -12,7 +12,7 @@ from the newest input mtime, not the wall clock).
 
 Usage: python3 tools/render_read.py [--today YYYY-MM-DD] [--asks asks.json]
 """
-import argparse, json, os, re, sys
+import argparse, glob, json, os, re, sys
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 import yaml
@@ -33,6 +33,8 @@ LENS_OF_FILE = {"frontier-ai": "ai", "mental-health": "mental-health",
 # convention changed.
 TIMELINE_CAP = 20
 PAYLOAD_SOFT_CAP = 600 * 1024
+WEEKLY_LABEL = {"frontier-ai": "Frontier AI", "mental-health": "Mental Health",
+                "global-capital": "Global Capital", "world-news": "World News"}
 # Backward item-history window (INBOX 2026-08-21, widen-payload-item-window):
 # a calendar-week walk (Monday..today) means the payload can hold as little
 # as ONE day's items on a Monday, right after a weekend catch-up run is most
@@ -275,6 +277,68 @@ def parse_front(path):
     return " ".join(m.group(1).split()) if m else ""
 
 
+def _parse_weekly_throughline(path):
+    """-> (week_of, throughline text) for one lens's weekly digest, or
+    None if the file isn't finalized. Mirrors parse_front()'s own
+    throughline-only extraction — the weekly panel shows what the week
+    meant, not the full digest (radar-question detail, decay review,
+    near-miss audit stay in the archive file, one click away)."""
+    src = open(path).read()
+    m = re.match(r"---\n(.*?)\n---\n", src, re.S)
+    fm = yaml.safe_load(m.group(1)) if m else {}
+    if fm.get("status") != "final":
+        return None
+    body = src[m.end():] if m else src
+    tm = re.search(r"## The week's throughline\n\n(.*?)\n\n(?:##|\Z)", body, re.S)
+    if not tm:
+        return None
+    return str(fm.get("week_of")), " ".join(tm.group(1).split())
+
+
+def load_weekly(today):
+    """The read page's weekly-synthesis panel: the most recently
+    COMPLETED week's cross-lens throughlines (Ben, 2026-08-25: show the
+    last FINISHED week, never an in-progress one -- /week itself decides
+    when a week is done by writing status: final on all four lens files;
+    this just reads what it already wrote, never a partial week).
+
+    Returns (weekly_html, weekly_prior_html, inputs) -- weekly_prior is
+    the second-most-recent complete week (rendered plain, the page's own
+    <details> collapse handles de-emphasizing it), or None if there's
+    only one complete week on file yet.
+    """
+    weekly_dir = os.path.join(ROOT, "artifacts/digests/weekly")
+    by_week = {}
+    inputs = []
+    for fl in LENS_OF_FILE:
+        for fn in glob.glob(os.path.join(weekly_dir, f"*-{fl}.md")):
+            inputs.append(fn)
+            r = _parse_weekly_throughline(fn)
+            if r is None:
+                continue
+            week_of, text = r
+            by_week.setdefault(week_of, {})[fl] = text
+    complete = sorted(
+        (w for w, d in by_week.items() if len(d) == len(LENS_OF_FILE) and w <= today),
+        reverse=True)
+
+    def render(week_of):
+        parts = [f"<h3>Week of {esc(week_of)}</h3>"]
+        for fl in ("frontier-ai", "global-capital", "mental-health", "world-news"):
+            text = by_week[week_of].get(fl)
+            if text:
+                # md_html(), not esc() alone — the throughline is curated
+                # prose with real **bold**/*italic* markup (same convention
+                # as a digest bullet), not plain text.
+                parts.append(f"<p><strong>{esc(WEEKLY_LABEL[fl])}</strong> — "
+                              f"{md_html(text)}</p>")
+        return "".join(parts)
+
+    weekly = render(complete[0]) if complete else None
+    weekly_prior = render(complete[1]) if len(complete) > 1 else None
+    return weekly, weekly_prior, inputs
+
+
 def _ws(s):
     return " ".join((s or "").split())
 
@@ -449,6 +513,9 @@ def main():
     upcoming = yaml.safe_load(open(inputs[2]))["expectations"]
     asks = json.load(open(args.asks)) if args.asks else []
 
+    weekly, weekly_prior, weekly_inputs = load_weekly(now.isoformat())
+    inputs += weekly_inputs
+
     newest = max(os.path.getmtime(p) for p in inputs if os.path.exists(p))
     generated = datetime.fromtimestamp(newest, tz=timezone.utc)\
         .astimezone(ET).strftime("%Y-%m-%d %H:%M ET")
@@ -466,7 +533,7 @@ def main():
         "map_changes": map_changes, "asks": asks,
         "flash": load_flash(today),
         "world_news": load_world_news(today),
-        "weekly": None, "weekly_prior": None,
+        "weekly": weekly, "weekly_prior": weekly_prior,
     }
     blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"),
                       default=str)  # YAML parses dates as datetime.date
