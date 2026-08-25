@@ -5879,3 +5879,30 @@ and a `theprojection help` run confirming `render-read` no longer lists.
 `publish.adapter` fails to import standalone in this shell (`cannot import
 name 'core' from 'publish'`) — confirmed via `git stash` that this predates
 today's edits entirely; not something this change touched or caused.
+
+## 2026-08-25 (17:24 ET) — a manual /daily pass, and a genuine empty result
+
+Ben ran `/daily` by hand ~2h after the cron's 15:00 ET checkpoint
+(`01d2e3c`). Ran the real steps rather than skip on the assumption that
+nothing had changed: `upcoming.yaml` — **0 newly-due entries**, nothing
+in the 3-day passed-silent grace either. Collector sweep — `cloud-researcher
+collect` (with the `KESTREL_INSTANCE` workaround; `--corpus` still doesn't
+work, already filed) ran **24 minutes on 3:44 of actual CPU time and wrote
+zero new buffer files** — it never got past the keyless `semantic_scholar`/
+`openalex` legs' 429/403 retry backoff, the same already-filed issue
+(`kestrel-ops` brief `2026-08-23-theprojection-collect-corpus-and-dotenv-
+resolve-to-the-seat.md`, upstream `cloud-researcher` #4 / `kestrel` #30,
+still open). Killed it rather than wait indefinitely on a known-bad path.
+
+**No new material, nothing due, nothing to publish.** The last publish
+(`19:32:40Z`/15:32 ET, site commit `15592c0`, build `635a1401`) already
+carries everything in the digests through the 15:00 ET checkpoint —
+re-running the readouts briefing refresh (step 6a) against unchanged
+digest content would have produced a near-duplicate publish for no
+reason, so skipped it this pass rather than churn the site on nothing.
+**This is a real, useful result, not a skipped run**: the pipeline was
+checked properly and came back clean. Nothing to steer.
+
+Separately this session: the internal read page was retired in full
+(`fb3a316`, see the entry above) — Ben's call, not part of this pass's
+own findings.
