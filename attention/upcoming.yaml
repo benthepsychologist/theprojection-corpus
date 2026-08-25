@@ -1845,3 +1845,95 @@ expectations:
       Senate floor process; it would shift liability for AI-caused patient
       harm onto AI developers and facilities, and Kaiser and the
       California Hospital Association oppose it.
+  - id: project-camellia-community-panel-0826
+    claim: >
+      A community panel on OpenAI's Project Camellia data-center campus
+      (Effingham County, GA) — OpenAI, the county Industrial Development
+      Authority, and the Chamber of Commerce/Georgia Tech — is tentatively
+      scheduled
+    due: 2026-08-26
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: ai-datacenter-sites
+    entities: [openai]
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://effinghamherald.net
+    what_confirms: >
+      whether the panel actually convenes and what OpenAI/the county say
+      publicly about community opposition — a direct data point on the
+      datacenters-as-political-risk candidate this map has carried
+      unresolved since 08-20.
+  - id: ercot-datacenter-audit-dec2026
+    claim: >
+      ERCOT completes Governor Abbott's ordered audit of Texas data-center
+      power demand and grid impact
+    due: 2026-12-31
+    due_precision: month
+    status: pending
+    confidence: reported
+    thread: datacenter-power-grid
+    entities: []
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://www.kera.org
+    what_confirms: >
+      ERCOT's own published audit findings — the first concrete accounting
+      of how much of the grid's binding constraint traces to data centers
+      specifically, versus other demand growth.
+  - id: openai-anthropic-congress-safety-disclosure-0824
+    claim: >
+      OpenAI and Anthropic respond to a 29-signer House Democrat letter
+      (Reps. Casar/Matsui) demanding public disclosure of safety-protocol
+      details on their respective 2026 rogue-agent incidents
+    due: 2026-08-24
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: openai-agent-security-incident
+    entities: [openai, anthropic]
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://thehill.com
+    what_confirms: >
+      a public response (or confirmed non-response) from either company,
+      or a follow-up statement from the signing members of Congress. Due
+      date already passed as of logging (2026-08-25) with no confirmed
+      outcome found — check for evidence before defaulting to
+      passed-silent.
+  - id: fda-genai-device-comment-deadline-1019
+    claim: >
+      Public comment period closes on the FDA's discussion paper
+      "Regulatory Approach for Generative AI-Enabled Medical Devices"
+      (docket FDA-2026-N-7874)
+    due: 2026-10-19
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: ai-therapy-regulatory-reckoning
+    entities: []
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://www.fda.gov
+    what_confirms: >
+      this is the concrete open docket behind the "formal guidance is
+      coming" quote this thread already logged from 08-23/08-24 STAT
+      coverage — upgrades the thread's claim from a spoken promise to an
+      actual open regulatory process with a real deadline.
+  - id: meta-warner-csam-ads-response-0826
+    claim: >
+      Meta responds to Sen. Mark Warner's letter on AI-generated CSAM
+      imagery in its ads (sent 2026-08-18/20, response requested by
+      2026-08-26)
+    due: 2026-08-26
+    due_precision: day
+    status: pending
+    confidence: reported
+    thread: meta-ai-csam-ads
+    entities: [meta]
+    logged: 2026-08-25
+    logged_by: curate-add
+    source: https://www.warner.senate.gov
+    what_confirms: >
+      a public Meta response or confirmed non-response by the deadline.

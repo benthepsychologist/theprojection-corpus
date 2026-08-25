@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-25 — Nvidia is reported in talks for a second Perplexity stake, sized to keep a chip-agnostic AI-search startup inside its ecosystem
+
+- **Nvidia is reportedly discussing a new investment in Perplexity AI at a valuation of more than $30B — up 50% from the roughly $20B mark it carried a year earlier — that would add to a stake Nvidia already holds alongside backers Jeff Bezos and SoftBank.** The Information broke the story; neither company would comment on the talks, and the investment size was not disclosed. This is the same pattern the thread already tracks (Poolside, SSI, Groq, Cloverleaf) one company further down the stack: a chip vendor buying continued loyalty from a customer that could otherwise shop AMD or Cerebras for inference, rather than financing new compute capacity outright. ([SiliconANGLE](https://siliconangle.com/2026/08/24/nvidia-reportedly-eyes-another-investment-in-perplexity-ai-at-a-30b-valuation/)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — The Poolside deal this map twice declined to believe gets a reviewed document behind it
 
 - ✅ **A story this thread closed as unverifiable has reversed on new evidence, and the reversal is the point.** For three runs the reported Nvidia-Poolside deal was traced to a single chain — Bloomberg's own headline read "... Newcomer Says," and The Information's 08-21 piece was itself citing a paywalled Newcomer post resting on an investor letter it said it had reviewed. **No Nvidia or Poolside spokesperson, filing or primary statement existed anywhere**, and on 08-23 this map stopped re-checking it. Today the Wall Street Journal reported it having **reviewed the shareholder letter itself**, which moves it from a newsletter chain to a document-based account.

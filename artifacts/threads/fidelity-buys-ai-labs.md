@@ -18,6 +18,10 @@ rounds, how these private stakes get marked in fund NAVs, and what
 happens to the exposure if/when either lab lists (Anthropic's roadshow
 began mid-Jul-2026; OpenAI reportedly leaning toward a 2027 listing).
 
+## 2026-08-25 — Anthropic investors now targeting a $2 trillion IPO valuation
+
+- **Anthropic investors are reportedly targeting a $2 trillion-or-more valuation for an October 2026 IPO** — up from the $965B Series H (May 2026) and $1.18 trillion priced on secondary markets as of August 6, continuing the exact valuation-climb this thread tracks (though Fidelity's own position size in the climb isn't itemized in this reporting). ([The Motley Fool](https://www.fool.com/investing/2026/08/17/anthropic-is-reportedly-aiming-for-a-valuation-of/)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-04 — Thread opened + crawled ⟨crawl 2026-08-04⟩
 
 - **Opened following an asset-manager-pocket triage crawl** that checked

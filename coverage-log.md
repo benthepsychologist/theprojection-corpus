@@ -4162,3 +4162,65 @@ should be read as unverified rather than passed.
 
 ### world-news / 2026-08-23
 `coverage: na` — this lens carries no benchmark critic by design.
+
+## 2026-08-25 (10:00 ET pass) — finalized 2026-08-24, all four lenses; three misses total, two access flags that recur
+
+**AI lens: 6 misses found, 2 acted on.** Solid: "Ox Alpha," an anonymous
+no-lab-attached model dropped on OpenRouter over the weekend with a
+1M-token context window and frontier-level coding scores — zero prior
+coverage anywhere in this map, no thread to route it to, offered as a
+candidate. Anthropic's bankers reportedly guiding investors toward a
+>$100bn IPO raise (October listing) — escalates past this map's existing
+$75-86.2bn benchmark, routed to `frontier-lab-ipos`. Four secondary/
+lower-confidence items not folded in: Claude Mythos 5's security-product
+integration, Grok Bot's plan expansion, an $18bn Alibaba/Tencent infra
+figure (traces to the already-known `alibaba` tagging gap, not fresh),
+and an unverified Blackstone/Anthropic 160-engineer-embed claim.
+Access flag: **The AI Daily Brief published no Monday edition at all** —
+a genuine cadence break, distinct from its documented Saturday-only gap;
+re-check rather than assume it resumed. Also noted: The Rundown AI's feed
+mixes three separate newsletters (AI/Robotics/Tech) in one stream, worth
+filtering to the AI edition specifically going forward.
+
+**Mental health: 1 miss.** Behavioral Health Business published "New HHS
+OIG Audits Expose Failures in Parity Enforcement, Compliance" at 14:54 ET
+on 08-24 — inside the digest's own window — walking through four state
+OIG audits finding Medicaid MCOs apply higher denial rates to
+behavioral-health prior authorizations than medical/surgical ones. Missed
+because the day's checks looked for a *new federal action*, not trade-
+press synthesis of existing audits. Routed to `mhpaea-parity-limbo`
+(timeline entry written). All four benchmarks reachable and genuinely
+live for 08-24 via their documented workaround transports.
+
+**Global capital: 1 miss, 2 benchmarks not fully checkable.** Matt Levine
+asked "Who Should Control Anthropic?" in Money Stuff on 08-24 — a direct
+governance question about the exact company this lens tracks through its
+IPO chatter, with zero governance debate on the map that day. Article
+paywalled past the RSS headline, so only its existence/topic is logged,
+not its argument. Routed to `frontier-lab-ipos`.
+
+⛔ **Bloomberg Technology re-blocked** (CAPTCHA, both direct and
+reader-proxy transports) after being marked reachable on 08-23 — that fix
+did not hold, confirming the escalation pattern `sources/benchmarks.yaml`
+already warned about ("worth re-testing periodically rather than assuming
+a fix stays fixed"). Could not check its 08-24 coverage at all.
+
+⚠️ **Axios Pro Rata's reader-proxy technique is now known to be
+unreliable for anything but same-day checks** — the proxy renders
+whatever is the *current* day's issue, not an archive by date, so a
+check running on 08-25 against 08-24's digest got served the 08-25
+edition instead. Written into `sources/benchmarks.yaml` below; this
+technique needs a same-day-only caveat attached wherever it's documented.
+
+⚠️ **FT Unhedged: reachable but content-paywalled.** The RSS confirms a
+real, correctly-dated 08-24 edition exists, but the article body is fully
+paywalled even through the reader proxy, with no cached copy found — so
+this benchmark's coverage could be confirmed to exist but not checked for
+substance.
+
+**`world-news` / 2026-08-24** — `coverage: na`, this lens carries no
+benchmark critic by design.
+
+### `sources/benchmarks.yaml` updated with today's two new access notes
+(Bloomberg Technology re-block, Axios Pro Rata's same-day-only proxy
+limitation) — see that file's own access-notes header.

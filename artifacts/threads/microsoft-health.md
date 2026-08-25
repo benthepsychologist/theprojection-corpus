@@ -15,6 +15,10 @@ signal is a tension: Suleyman is the loudest Big-Tech voice on chatbot
 "AI psychosis" harm *while* shipping consumer AI companions, and MH is
 conspicuously absent from Microsoft's flagship health products.
 
+## 2026-08-25 — Dragon Copilot opens a physician-app marketplace, still no MH angle
+
+- **Microsoft took Dragon Copilot AI Apps and Agents to general availability on Microsoft Marketplace (August 17, 2026)** — a new discovery/procurement channel letting third-party partners build and sell specialized clinical/operational add-ons (documentation, prior authorization, revenue-cycle, clinical decision support) directly into physician workflows, US-only for now. Distribution-layer expansion, not a new product; the listed capability categories remain administrative/somatic, with no mental-health-specific offering called out. ([Microsoft Community Hub](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/extend-clinical-workflows-with-dragon-copilot-ai-apps-and-agents-in-microsoft-ma/4548688)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-05 — A second Israeli hospital-chain AI deal, same somatic pattern
 
 - **Microsoft and Assuta Medical Centers (Israel) announced an AI "doctor's

@@ -17,6 +17,10 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-25 — The Board of Peace criticizes Israeli conduct in Gaza publicly for the first time
+
+- **A Board of Peace official said publicly that Israeli military action in Gaza "cannot extend beyond responding to genuine and imminent threats," and that "all militant activity in Gaza must stop, including the flying of kites" — the first time the body has criticized Israel's conduct in Gaza on the record rather than staying silent on it.** IDF Chief of Staff Lt. Gen. Eyal Zamir responded the same day that "the pursuit of the October 7 terrorists continues" and that anyone who took part in the 2023 attack "will live under pursuit until they are eliminated." ([The Times of Israel](https://www.timesofisrael.com/liveblog-august-25-2026/)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Sunday's threat to "intensify strikes" becomes Monday's casualties
 
 - **Israel's Sunday threat to "intensify strikes" turned into lethal follow-through on Monday.** A 4-year-old boy — named by the Palestine Chronicle as Mohammed Taha — was killed by shrapnel and debris in an IDF strike on a building near Zawaida whose owners had been warned to leave; separately, a drone strike on a displacement tent in Deir al-Balah, central Gaza, killed two more Palestinians early Monday. Outlets cumulatively report 3-5 Gaza deaths across the window tied to the kite-launch pretext. This is Monday's actual casualty events, distinct from the Sunday *threat* this thread already logged (08-23: Netanyahu and Defence Minister Katz's joint statement threatening to "intensify strikes" over kite and balloon launches from Gaza).

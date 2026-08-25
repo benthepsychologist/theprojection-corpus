@@ -24,6 +24,11 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-25 — Trump claims an Iranian "humanitarian crisis," and Tehran says it is "fully prepared" to counter the new sanctions
+
+- **Trump said on Truth Social that Iran is "not paying large segments of their military" and is "killing protesters... at levels not seen before," calling it "a humanitarian crisis of epic proportions" that "must be stopped, NOW" — an unverified, single-source claim with no evidence cited.** ([Israel National News](https://www.israelnationalnews.com/news/432212)) ⟨daily 2026-08-25⟩
+- **Iran's Finance Minister Ali Madanizadeh said Tehran is "fully prepared" to counter the new US sanctions package, and top negotiator Mohammad Bagher Ghalibaf dismissed the threats — the government's first on-record reaction to Monday's "Operation Economic Outcast" designations logged below.** ([ABC News](https://abcnews.com/International/live-updates/iran-live-updates/?id=135895428)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Bessent's "Operation Economic Outcast" lands: ~60 designations, five sectoral determinations, and every Bank Melli branch ordered shut
 
 - **The US Treasury announced its promised Iran package at a 2:00pm ET press conference, branding it "Operation Economic Outcast" and describing it as sanctioning nearly 60 entities, individuals and vessels across multiple jurisdictions.** ⚠️ **Note the rename — the 08-21 entry further down this file records the campaign as "Operation Economic FURY," which is what was reported then. Treasury's own releases say Outcast.** That entry is left as written; anything downstream should use Outcast. Release SB0613, headlined "Treasury Launches Unprecedented Campaign Against Iranian Regime on Economic D-Day," pairs the designations with **five sectoral determinations** — digital assets, technology, gold, aviation and shipping — and names five shadow-fleet tankers (SIFRA, G SILVER, QUANTUM HOPE, VOYAGE ELITE, TELA), over 20 entities in the nuclear and missile procurement network, Iranian MOIS cyber actors carrying a $10M reward offer, and shipping brokers and oil traders in the UAE, Hong Kong, Singapore, China and Switzerland.

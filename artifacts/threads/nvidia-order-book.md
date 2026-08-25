@@ -13,6 +13,10 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-08-25 — Wall Street puts a first dollar figure on the Rubin ramp, a day before the print that will test it
+
+- **Morgan Stanley estimates Nvidia's new Vera Rubin chips could contribute nearly $9B in sales in the fiscal third quarter ending October, the first analyst dollar figure attached to the Blackwell-to-Rubin transition this thread has recorded.** Wall Street consensus separately expects Nvidia to guide third-quarter revenue up 82.8% year-on-year to $104.2B when it reports Wednesday. The order book's demand side has run for months on Huang's own ~$1T aggregate figure; this is the first outside, per-product estimate of how much of it Rubin specifically is expected to deliver in the near term. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-10 — Nvidia recruits Wall Street to finance $500B of demand-side buildout
 
 - **Nvidia partnered with six asset managers — Apollo, BlackRock,

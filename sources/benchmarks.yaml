@@ -193,3 +193,43 @@ critics:
 #     on `/feed/` and `/rss/xml`, reader proxy respectively). BHB
 #     confirmed genuinely dark since Thu 08-20 via its own
 #     `lastBuildDate` — really silent, not merely unreachable.
+#
+# - **ACCESS RE-VERIFIED 2026-08-25** (critic pass finalizing 08-24).
+#
+#   - **Bloomberg Technology: RE-BLOCKED.** CAPTCHA'd on both the direct
+#     Googlebot-UA fetch and the r.jina.ai reader proxy that had marked it
+#     "NOW REACHABLE" on 2026-08-23. That note's own caveat ("worth
+#     re-testing periodically rather than assuming a fix stays fixed") is
+#     exactly what happened. Could not check this benchmark's 08-24
+#     coverage at all. Re-test next pass rather than assuming either
+#     state persists.
+#
+#   - **Axios Pro Rata's reader-proxy fix (2026-08-15) is SAME-DAY-ONLY,
+#     not an archive.** `https://r.jina.ai/https://www.axios.com/
+#     newsletters/axios-pro-rata` renders whatever is the CURRENT day's
+#     issue — there is no dated-archive URL pattern. A critic pass run on
+#     day N+1 checking day N's digest will get served day N+1's content
+#     instead and silently think it's checking the right thing. Use this
+#     transport only for a same-day check; for anything after the
+#     calendar has turned over, note the benchmark as "not checkable via
+#     this technique" rather than comparing against the wrong day's issue.
+#
+#   - **FT Unhedged: reachable, but content-paywalled past the RSS
+#     headline.** A real, correctly-dated edition is confirmed to exist
+#     via RSS, but the article body is fully paywalled even through the
+#     reader proxy, with no cached/archived copy found. Existence can be
+#     confirmed; substance cannot, without a different access path.
+#
+#   - **The AI Daily Brief missed a Monday (08-24) edition outright** —
+#     `/e/2026-08-24` still 404s a day later, and its own site confirms
+#     the newest edition is Sunday 08-23 (a thematic long-read, not a
+#     news roundup). This is NOT the documented Saturday-only gap — it's
+#     an unexplained Monday miss on a benchmark whose prior Monday (08-17)
+#     did publish. Re-check rather than assume the cadence resumed.
+#
+#   - **The Rundown AI's feed (`therundown.ai/feed`) mixes three separate
+#     newsletters in one stream** — AI, Robotics, and Tech editions all
+#     appear together. Only the AI edition is the actual benchmark; a
+#     critic grabbing "the newest item" off this feed risks comparing
+#     against the Robotics or Tech edition instead. Filter to the AI
+#     edition specifically.

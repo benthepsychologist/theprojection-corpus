@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-24
-status: building
+status: final
 window_start: 2026-08-24T05:00:00-04:00
-as_of: 2026-08-24T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-25T10:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-24
@@ -47,11 +47,23 @@ already logged, and it is not counted twice.
 
 ## Policy, regulation & legal
 
-- **Nothing new or updated in window.** The two live policy strands both
-  sit on the 08-23 page: California's AB 2575, which would put liability
-  for AI-caused patient harm on the AI developer and was read a second
-  time on 08-21, and the FDA's stated intention to issue formal
-  generative-AI guidance.
+- **Nothing new or updated in window at either the 10:00 or 15:00 ET
+  pass.** The two live policy strands both sit on the 08-23 page:
+  California's AB 2575, which would put liability for AI-caused patient
+  harm on the AI developer and was read a second time on 08-21, and the
+  FDA's stated intention to issue formal generative-AI guidance.
+- ⛔ **CRITIC-CAUGHT, 2026-08-25: a real miss on this lens's own parity
+  strand.** Behavioral Health Business published "New HHS OIG Audits
+  Expose Failures in Parity Enforcement, Compliance" at 14:54 ET on
+  08-24 — inside this digest's own window — walking through four OIG
+  audit reports (Kansas, New York, Arizona, plus a 2024 baseline) finding
+  Medicaid MCOs routinely apply higher denial rates to behavioral-health
+  prior authorizations than to medical/surgical ones, with weak state
+  oversight and no enforcement follow-through. The 15:00 ET pass checked
+  for a *new federal action* and correctly found none — the miss was a
+  trade outlet's own reporting synthesizing recent OIG findings, not a
+  government release, so the check that ran didn't surface it. ([Behavioral Health Business](https://bhbusiness.com/2026/08/24/new-hhs-oig-audits-expose-failures-in-parity-enforcement-compliance/))
+  <!-- k: t=mhpaea-parity-limbo e= axis=policy-regulation-legal -->
 
 ## 🧪 Clinical trials
 
@@ -112,6 +124,9 @@ aug24` resolved to `hit` — but it touches no mental-health thread.
   thread in this lens took a `last_seen` bump either — nothing surfaced
   reached `ai-therapy-regulatory-reckoning`, `mh-clinical-infra-funding`,
   `kaiser-ai-clinician-backlash` or `state-therapy-chatbot-bans`.
+- ⛔ **2026-08-25 finalize: one critic-caught miss folded in above and
+  routed to `mhpaea-parity-limbo`** (timeline entry written, `last_seen`
+  bumped). Coverage critic pass recorded in `coverage-log.md`.
 
 ## 🧵 Thread candidates
 
@@ -133,3 +148,29 @@ lens's null is now an instrumented null rather than an assumed one. The
 day's actual news, the FDA saying formal generative-AI guidance is coming,
 landed at half past four this morning and belongs to yesterday; a feed
 stamping it in UTC made it resurface as today's, and it was refused.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:**
+- **Behavioral Health Business, "New HHS OIG Audits Expose Failures in
+  Parity Enforcement, Compliance," published 14:54 ET on 08-24** — inside
+  this digest's own window. Folded into Policy, regulation & legal above
+  and routed to `mhpaea-parity-limbo`.
+
+**Both covered:**
+- STAT's FDA generative-AI-guidance item, correctly refused here as the
+  same 08-23 story resurfacing under a UTC timestamp, not double-counted.
+- Fierce Healthcare's RFK Jr. pediatric-vaccine item (11:00 ET) — this
+  digest correctly recorded nothing in behavioral health or payer
+  coverage from Fierce today.
+
+**We had → they didn't:** nothing to list — today's only real content on
+this lens was two instrumentation fixes (PubMed `eutils`, OpenAlex
+recovery), not news a trade benchmark would carry.
+
+**Access health:** all four benchmarks (Behavioral Health Business, STAT
+Health Tech, Fierce Healthcare, MobiHealthNews) reachable and genuinely
+live for 08-24, via their documented workaround transports.
+
+**Verdict: 1 miss** (logged above). Full critic pass: `coverage-log.md`,
+2026-08-25 entry.

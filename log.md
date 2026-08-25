@@ -5343,3 +5343,121 @@ it must not have one.
 - ⚠️ **Read payload 1132 KB, over the 600 KB soft cap.** Note this figure
   is DEPRESSED by the week boundary — the fixed Mon–Sun week currently
   holds only 08-24 — so it will climb through the week regardless.
+
+## 2026-08-25 (10:00 ET pass, run manually after the headless cron self-paused) — finalized 2026-08-24 on a three-lens coverage-critic pass, opened 08-25, closed a real INBOX backlog first
+
+**Context this run started from:** the scheduled 10:00 ET cron fired on
+time (`.agents/runs/2026-08-25T140001Z-daily.receipt`) but detected a
+live interactive session (this one) mid-edit on the pipeline's own code
+and correctly self-paused rather than risk a collision — it wrote a
+clear diagnosis and three options to its own log but had no channel to
+receive an answer, since headless runs can't ask. Flagged back as a real
+gap: an unattended run with no escalation path when it genuinely needs a
+human. Once the pipeline edits were committed (see below), the tree was
+clean and this run proceeded normally.
+
+**Before this run:** six kestrel-filed INBOX bugs/gaps closed. Fixed in
+`theprojection_pipeline` commit `2db4051`: the bullet-extractor's
+anchored bold-lead regex (silently truncated any bullet with a leading
+emoji to a mid-word 80-char slice — now tolerant + fails loudly instead),
+`md_html()`'s bold regex (couldn't match a bold span nesting a
+single-asterisk italic — retired `publish/adapter.py`'s local fork now
+that the fix landed upstream), a mechanical "no apparatus narration" rule
++ validator check in `readouts.py` (bumped both shape versions, so this
+run's `--pack`/`--apply` regenerated against the new rule), the payload's
+item window (14-day fixed lookback replacing a calendar-week walk that
+could shrink to one day on a Monday), and two of three source-multiplicity
+fixes (multi-link capture, `urls_sample` passthrough — the per-item
+coverage-cluster object is still open, a real design task). `INBOX/` also
+closed on two already-resolved fyi items. Full detail: `2db4051` and
+`27b61c4`'s commit messages.
+
+**Then `/daily` itself.** Collector sweep (full watchlist, all lenses,
+~22 minutes — `lda` and `fund_flow_reports` expected-dead as documented,
+`bq` still down so `world-news.yaml` stays stale) plus 8 research agents:
+5 tier-2 hot-cluster sweeps (capex/power, financing/lab economics, China
+chips/memory, governance+mental-health, world news/geopolitics) and 1
+tier-3 cold-rotation sweep, dispatched in parallel. Two more agents ran
+the coverage-critic pass for 08-24 (AI; mental-health+global-capital
+combined) — 8 concurrent agents total, at this machine's subagent cap.
+
+**08-24 finalized: 3 lenses critic-checked, 4 real misses caught and
+folded in.** AI: 6 misses found (2 folded — "Ox Alpha," an unattributed
+frontier model with no thread to route to; Anthropic's escalated >$100bn
+IPO guidance, routed to `frontier-lab-ipos`). Mental health: 1 miss (HHS
+OIG parity-audit findings, routed to `mhpaea-parity-limbo`). Global
+capital: 1 miss (Matt Levine's "Who Should Control Anthropic?", routed
+to `frontier-lab-ipos`) plus two benchmarks (Bloomberg Technology,
+FT Unhedged) that couldn't be fully checked — both written into
+`sources/benchmarks.yaml`'s access notes. All five 08-24 files flipped
+to `status: final`.
+
+**08-25 opened: 12 threads got real timeline updates, 2 more from cold
+rotation.** Highlights: Chinese state media (Global Times) weighed in
+publicly on the ASML export-ban fight for the first time; HUMAIN landed
+Mistral AI as a named partner ("hundreds of millions of Euros"); Nvidia
+closed its 7th straight losing session (longest since Sept 2022) the
+same day Altman said AI hasn't had its "iPhone moment"; a Houthi missile
+hit a Saudi VLCC the same day China gave its first on-record response to
+Monday's Iran sanctions; a Board of Peace official broke silence to
+criticize Israeli conduct in Gaza; psychologist Jean Twenge testified at
+the Oakland Meta trial. Flash asked and explicitly declined — real
+movement inside already-running stories, not a rupture.
+
+**Map housekeeping:** 16 threads' `last_seen` bumped, 5 new dated
+expectations logged (ledger now 73 entries — 51 pending, 16 hit, 6
+passed-silent), `alibaba` (the company) added to the AI watchlist —
+closing a gap flagged three times across recent coverage critics. Three
+thread candidates (Treasury long-end intervention — 5th offer,
+data-center political opposition — 4th offer, North American trade
+policy — 2nd offer with two independent same-day items) remain
+unresolved past the offered-twice rule and need Ben's call, not another
+offer. No new threads created — thread promotion needs Ben's word per
+this skill's own contract, and none of these three have it yet.
+
+**Render, readouts, publish.** `render_read.py` rebuilt the payload (397
+items, 99 threads, 211 entities) — 1964 KB, over the 600 KB soft cap; the
+window-widen fix landed this run pushed it up from ~1132 KB, and the
+degradation rule the warning names is still not implemented. Dispatched
+4 agents to write the front + 3 lens morning briefings from fresh packs;
+all 4 validated and applied cleanly on the first pass (0 skipped) —
+worth noting since this is the first `--apply` since the apparatus-
+narration check landed. Exported 155 readouts. Site publish
+(`kestrel/tools/publish.py`) timed out at 2 minutes on the first attempt
+(thumbnail/audio generation is slow) but had already written valid
+partial state; re-ran to completion in the background (99 thread pages,
+776 story pages, 753 claim pages, 122 map pages, one audio briefing),
+reviewed the diff, then `--push`. Cloudflare build triggered and
+**live-verified by content check** (`/threads/asml/` serving today's
+Global Times item), not just a queued `build_uuid`.
+
+⚠️ **The internal read-page artifact (ROADMAP §Delivery,
+`f2ca5acd-f093-4803-a75b-467afe02c639`) was NOT republished this run.**
+It turns out to have been stale since **2026-08-16** — nine days, despite
+ROADMAP.md's own claim that it's "re-published by every `/daily` run" —
+a real practice/documentation gap, not a one-off miss. The publish tool
+refused to overwrite it without first reading the old version in full
+(1.2MB, one 1.26MB JSON line) to confirm nothing would be lost; given the
+page is a pure deterministic render of this repo's own data with no
+independent editable state, reading that much stale JSON into context to
+confirm what render_read.py's own docstring already guarantees was a bad
+trade and was not done. **Needs Ben's call**: either confirm it's safe to
+force-overwrite (it should always be safe, by construction, unless this
+changes), or take the republish step himself.
+
+### ⛔ Still blocked, still needing Ben
+
+- ⛔ **`bq`/BigQuery credentials — EIGHT days now.** Not re-tested this
+  run (no reason to expect a change without the browser login). 
+  `world-news.yaml` stays stale from 08-18.
+- 💡 **Three thread candidates need a decision**, not a further offer —
+  see the front page for the full case on each.
+- 💡 **The read-page artifact republish** — see above, needs Ben's call
+  on force-overwrite vs. doing it himself.
+- ⚠️ **The payload's soft-cap situation is now worse, correctly** — the
+  widened item window (a real bug fix) pushed 1132→1964 KB. The
+  degradation rule the warning has named since before this session is
+  still not implemented.
+
+Committing and pushing this repo now; site already pushed and
+live-verified above.

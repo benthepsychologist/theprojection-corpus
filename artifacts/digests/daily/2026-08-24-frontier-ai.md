@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-24
-status: building
+status: final
 window_start: 2026-08-24T05:00:00-04:00
-as_of: 2026-08-24T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-25T10:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-24
@@ -52,6 +52,35 @@ is a better read on what this lens's week actually looks like than
 anything announced today.
 
 ## Capital & corporate
+
+- ⛔ **CRITIC-CAUGHT, 2026-08-25: Anthropic's bankers are reportedly
+  guiding investors toward a raise of more than $100bn in its IPO** —
+  enough to "match or beat" SpaceX's $85.7bn record and put the company
+  near a $2 trillion valuation, with a possible listing "as soon as
+  October." This escalates past the $75–86.2bn range this map had
+  benchmarked the IPO chatter against through 08-20/08-21; the specific
+  >$100bn guidance and October timing are new. Sourced to the New York
+  Times via a Daily Sabah pickup, plus CNBC on the S-1's risk-factor
+  language — not a company statement or filing. ([Daily Sabah](https://www.dailysabah.com/business/tech/anthropic-eyes-100b-ipo-raise-to-rival-spacexs-record), [CNBC](https://www.cnbc.com))
+  <!-- k: t=frontier-lab-ipos e=anthropic axis=capital-and-corporate -->
+
+- ⛔ **CRITIC-CAUGHT, 2026-08-25: an anonymous, no-lab-attached model
+  called "Ox Alpha" appeared free on OpenRouter over the weekend**, with
+  a 1M-token context window and frontier-level coding benchmark scores
+  (80% on a DeepSWE subset on first report, re-tested lower at 63%).
+  Forensic guesswork in the coverage — model fingerprinting, response
+  style — points toward China's Zhipu AI (GLM-5.3 Flash or GLM-6) or
+  Microsoft's MAI family, but neither has claimed it and the attribution
+  is unconfirmed. Sourced to Bloomberg. Recorded here as a genuinely new,
+  unattributed release with no existing thread to route it to — flagged
+  as a possible thread candidate below rather than forced onto an
+  existing one on a guess. ([Bloomberg, via aggregator pickup — no
+  primary Bloomberg link recovered in this pass](https://www.bloomberg.com))
+  <!-- k: t= e=zhipu-ai axis=capital-and-corporate -->
+  ⚠️ **Attribution is explicitly unconfirmed** — the Zhipu/Microsoft
+  guesses are the coverage's own speculation, not this map's. Tagged to
+  `zhipu-ai` only because it is the most-cited guess and needs a
+  slug to be findable later, not because this map believes it.
 
 - **A second outlet picked up Hugging Face's reported $13bn valuation** — TLDR AI's 08-24 edition leads with it, sourced to runtimewire.com. This map declined to log the story on 08-22 and again on 08-23 as single-source and unconfirmed, and that call stands: a newsletter citing a second aggregator is corroboration of *reporting*, not of the fact. ([TLDR AI, 08-24 edition](https://tldr.tech/ai))
   <!-- k: t=frontier-lab-ipos e= axis=capital-and-corporate -->
@@ -147,6 +176,11 @@ control threads may end up sharing. Recorded, not routed.
   this thread's cost squeeze surfaces as a disclosed end-price
   pass-through) · `ai-trade-bear-turn` (the semiconductor selloff).
 - **No thread adds, no retires.**
+- ⛔ **2026-08-25 finalize: two critic-caught misses folded in above.**
+  `frontier-lab-ipos` received a new timeline entry (the >$100bn IPO
+  guidance); "Ox Alpha" has no existing thread and is offered as a
+  candidate below rather than forced onto one. Coverage critic pass
+  recorded in `coverage-log.md`.
 
 ## 🧵 Thread candidates
 
@@ -158,6 +192,11 @@ control threads may end up sharing. Recorded, not routed.
   tracks the buildout's politics from the *outside* (Abbott, local
   opposition, S-1 risk factors) with no place for the industry's own case
   about itself. **Track it?** (curator-noticed, via coverage critic)
+- **candidate:** **"Ox Alpha," a genuinely unattributed frontier-level
+  model** — the 2026-08-25 coverage critic's own top finding. Distinct
+  from `china-stack-independence` (that thread covers *named* Chinese
+  labs/models) because the whole point of this story is that nobody has
+  claimed it. **Track it?** (curator-noticed, via coverage critic)
 
 ⚠️ **`attention/world-news.yaml` cannot contribute a mechanically-scored
 candidate today** — it is stale from 08-18, blocked on expired gcloud
@@ -186,3 +225,40 @@ standard.** Poolside cleared the bar because a document was reviewed;
 Hugging Face did not because a second aggregator is not a second source.
 Applying the same test in both directions on the same day is the only
 thing that makes either call worth anything.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:**
+- **"Ox Alpha,"** an anonymous frontier-level model on OpenRouter — no
+  existing coverage anywhere in this map before this pass. Folded in
+  above and offered as a thread candidate.
+- **Anthropic's bankers reportedly guiding toward a >$100bn IPO raise**,
+  October listing — escalates past this map's existing $75-86.2bn
+  benchmark. Folded in above and routed to `frontier-lab-ipos`.
+- Four secondary/lower-confidence items not folded in (smaller stakes or
+  single-source): Claude Mythos 5 added to Claude Security, Grok Bot's
+  plan expansion, an $18bn Alibaba/Tencent infra-spend figure (this
+  traces to the already-known, already-flagged `alibaba` tagging gap,
+  not a fresh blind spot), and an unverified Blackstone/Anthropic
+  160-engineer embed claim.
+
+**Both covered:** the Nvidia-Poolside reversal (The Neuron's numbers
+match this map's own); the AI-server memory-cost pass-through (TLDR
+AI's "Who Eats Memory Costs?" matches this map's Nvidia tracking);
+Hugging Face's $13bn (TLDR AI leads with it; this map correctly declines
+it a third time — same story, opposite editorial call, intentional).
+
+**We had → they didn't:** Nvidia's Groq 3 LPX going to full production
+(verified against Nvidia's own newsroom); the nVent/Infineon
+power-supply-chain acquisitions; the semiconductor selloff itself as a
+market read tying back to the memory-cost story.
+
+**Access health:** The AI Daily Brief published no Monday (08-24)
+edition at all — a genuine cadence break, not the documented weekend
+gap; re-check rather than assume it resumed. The Rundown AI's feed
+mixes three separate newsletters (AI/Robotics/Tech) in one stream —
+worth a `benchmarks.yaml` note so a future pass filters to the AI
+edition specifically. TLDR AI and The Neuron both current and clean.
+
+**Verdict: 2 solid misses** (logged above), 4 secondary. Full critic
+pass: `coverage-log.md`, 2026-08-25 entry.

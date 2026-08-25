@@ -20,6 +20,10 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-08-25 — Chinese state media urges Dutch retaliation over the threatened ASML export ban
+
+- **Global Times published an op-ed telling the Netherlands to answer any US-forced ban on ASML China sales with a Canada-style countermeasure, arguing the move would only accelerate China's domestic DUV substitution rather than protect US leverage.** The piece is a state-media signal on the third front of this fight — China's own public response — rather than confirmation of any new US or Dutch policy action. ([Global Times](https://www.globaltimes.cn/page/202608/1368931.shtml)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-21 — Correction: the MATCH Act's vehicle stalled five weeks ago, over Iran
 
 - ⚠️ **This thread has been carrying "MATCH Act passed House committee" as

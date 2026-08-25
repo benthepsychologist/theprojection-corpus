@@ -5,6 +5,10 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-24 — Lebanese officials assess Israeli strikes are laying groundwork for a wider campaign, tied to Netanyahu's election timeline
+
+- **Lebanese security officials told Asharq al-Awsat that Israel's recent strikes on ridgelines and a transportation route in southern Lebanon are not localized operations but preparation for a possible expansion of fighting, aimed at creating a buffer zone separating Hezbollah strongholds from surrounding areas.** The officials linked the pattern to Israel's approaching general election, assessing Netanyahu may be inclined toward more forceful military action to demonstrate security achievements. ([The Jerusalem Post](http://www.jpost.com/israel-news/defense-news/article-906427)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-23 — An intelligence claim, not a strike: Hezbollah said to be rearming through Syria during the ceasefire
 
 - **An Israeli security source told reporters that Hezbollah's weapons

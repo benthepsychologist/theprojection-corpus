@@ -13,6 +13,10 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
+## 2026-08-25 — Nvidia's earnings preview turns into a referendum on the loop itself, one day out
+
+- **Wire-service earnings previews ahead of Wednesday's print are now explicitly framing "circular financing" as the thing Nvidia's quarter has to answer, not a side debate** — citing this month's $500B Wall Street financing-platform mobilization and the $105B OpenAI Ohio guarantee as the two facts investors are weighing against the risk that they "artificially inflate demand and distort broader economic signals." That framing appearing in a mainstream pre-earnings wire story, rather than in Burry's Substack or a critic's newsletter, is the new fact: the loop is now the market's own lens on the print, not a minority read of it. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html)) ⟨daily 2026-08-25⟩
+
 ## 2026-08-21 — OpenAI's revenue growth reported to retake the lead from Anthropic
 
 - **OpenAI's revenue is reported up 35% this quarter with enterprise

@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-24
-status: building
+status: final
 window_start: 2026-08-24T05:00:00-04:00
-as_of: 2026-08-24T15:00:00-04:00
-coverage: pending
+as_of: 2026-08-25T10:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-24
@@ -62,6 +62,18 @@ interventions and a China threat, and the risk that actually got repriced
 today was the AI trade.**
 
 ## Capital in my markets
+
+- ⛔ **CRITIC-CAUGHT, 2026-08-25: Matt Levine asked "Who Should Control
+  Anthropic?" in Money Stuff on 08-24** — a direct governance question
+  about the exact company this lens is tracking through its IPO
+  (`frontier-lab-ipos`) and its S-1 risk-factor disclosures, on the same
+  date this map recorded no governance/control debate about Anthropic at
+  all. The article itself is paywalled past the RSS headline/timestamp,
+  so the argument inside it isn't recoverable here — logged as a real,
+  on-topic miss on the fact that the column exists and ran that day, not
+  as a summary of its content. ([Bloomberg Opinion — Money Stuff, dated
+  Mon 24 Aug 2026 18:18 GMT](https://www.bloomberg.com/opinion/newsletters/2026-08-24/money-stuff))
+  <!-- k: t=frontier-lab-ipos e=anthropic axis=capital-in-my-markets -->
 
 - **Treasury is sitting on a $935–950bn cash balance, and it is what funds the buyback programme** — CNBC's Steve Liesman, citing two senior Treasury officials, put the Treasury General Account roughly $350–400bn above the ~$550–600bn level targeted under the prior administration. This is the first reporting of the funding mechanism behind the doubled buyback ceiling that this lens logged last week as "soft-form financial repression." ([CNBC via 247wallst — 11:34–13:21 GMT / 07:34–09:21 ET](https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/))
   <!-- k: t=fed-independence-fight e= axis=capital-in-my-markets sev=major -->
@@ -205,6 +217,9 @@ only.
   the only bullet today with a mechanism worth an interpretation; nothing
   was written for the others, which is the intended default.
 - **No thread adds, no watchlist adds, no retires.**
+- ⛔ **2026-08-25 finalize: one critic-caught miss folded in above and
+  routed to `frontier-lab-ipos`** (timeline entry written, `last_seen`
+  bumped). Coverage critic pass recorded in `coverage-log.md`.
 - 💡 **One correction to the record, carried over from this run's audit
   of the 08-23 pass:** the standing note that four entity adds were
   "proposed and held" — Samsung, SK Hynix, Micron and Alibaba — **was
@@ -274,3 +289,41 @@ chips — Intel down five per cent, AMD four, the whole semiconductor
 complex sold while the Dow rose, two days before Nvidia reports into a
 market that has started reading a fifteen per cent price increase as
 weakness rather than strength.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:**
+- **Matt Levine, "Who Should Control Anthropic?" — Money Stuff, 08-24.**
+  Folded in above and routed to `frontier-lab-ipos`; the article's own
+  argument couldn't be recovered past the paywall, only its existence
+  and topic.
+
+**Both covered:** the Treasury long-end intervention / TGA story — this
+digest's own thread-candidate section already notes FT Unhedged led with
+this narrative three consecutive editions, independent corroboration of
+the same mechanism this map built out today.
+
+**We had → they didn't (verifiable):** the Iran sanctions package detail
+(Operation Economic Outcast, the China/90%-of-exports framing, the
+dollar-system threat, the Syria delisting pairing) and the
+semiconductor-selloff read — neither found in any benchmark the critic
+could actually reach.
+
+**Access health, two flags for `sources/benchmarks.yaml`:**
+- ⛔ **Bloomberg Technology re-blocked** (CAPTCHA, both direct and
+  reader-proxy transports) after being marked reachable on 08-23 — the
+  fix noted then did not hold. Could not check its 08-24 coverage at all.
+- ⚠️ **Axios Pro Rata's reader-proxy trick only ever shows the CURRENT
+  day's issue, not an archive** — by the time this critic ran (08-25) the
+  proxy returned the 08-25 edition, not 08-24's. This technique is
+  unreliable for a same-day-or-later check once the calendar has turned
+  over; worth a note in `benchmarks.yaml` itself.
+- ⚠️ **FT Unhedged reachable but paywall-blocked past the RSS
+  headline/subhead** — a real 08-24 edition exists and is correctly
+  dated, but its substance couldn't be verified through the reader proxy
+  either.
+
+**Verdict: 1 miss** (logged above), plus two benchmarks (Bloomberg
+Technology, FT Unhedged) that couldn't be fully checked this pass — read
+as coverage gaps in the critic, not as clean passes. Full critic pass:
+`coverage-log.md`, 2026-08-25 entry.
