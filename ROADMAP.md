@@ -9,18 +9,19 @@ Refresh when a decision lands or a phase completes.*
 The digest markdowns in `artifacts/digests/daily/` are the **archive**,
 never the reading surface. Two surfaces, split by job:
 
-1. **Artifact page — the read. ✅ LIVE, thread-centric since 2026-07-22.**
-   Stable private URL, re-published by every `/daily` run:
-   `https://claude.ai/code/artifact/f2ca5acd-f093-4803-a75b-467afe02c639`
-   A rolling **Mon–Sun weekly dashboard** ("what's happening this week +
-   what changed today"): today strip · ⏳ upcoming-and-expected ledger ·
-   active threads ranked by evidence · entity chips · map changes ·
-   numbered steering asks. Click-through: `#/thread/<slug>` timelines,
-   `#/entity/<slug>` views, `#/day/<date>`. Steering answered in chat.
-   Built by `tools/render_read.py` (shell: `templates/read-shell.html`;
-   payload derived from attention/ + digests + timelines — regenerable,
-   never canon). The republish step is named in the `/daily` skill (the
-   old open item — resolved 2026-07-22).
+1. **Artifact page — the read. ⛔ RETIRED 2026-08-25** (Ben: "that
+   predates the actual website... kill it utterly"). Was live 2026-07-22
+   through 2026-08-25 at a stable private URL
+   (`https://claude.ai/code/artifact/f2ca5acd-f093-4803-a75b-467afe02c639`,
+   left unrepublished, not deleted). It predated `theprojection.org` (the
+   real public site — built later, not part of this "dual surface"
+   heading's original two) and had become a repeated size/Artifact-refusal
+   fight every `/daily` run for a reader nobody was using once the site
+   existed. The `/daily`/`/week` republish steps are
+   gone; `render_read.py`'s parsing helpers survive and now serve the
+   public-site pipeline instead (`readouts.py`, `publish/adapter.py`) —
+   see AGENTS.md discipline 8. The rung-ladder plan below was written for
+   this surface and is now moot in full, kept only as design history.
 
 2. **Drive comment loop — the steering channel. 📋 DECIDED, NOT BUILT.**
    (Ben, 2026-07-20: "note it, don't build it yet.")

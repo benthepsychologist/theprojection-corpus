@@ -18,7 +18,6 @@ import sys
 
 VERBS = {
     "readouts":         ("theprojection_pipeline.readouts", "briefing/readout extraction"),
-    "render-read":      ("theprojection_pipeline.render_read", "render the attention read surface"),
     "world-news":       ("theprojection_pipeline.world_news", "world-news clustering and ranking"),
     "build-world-news": ("theprojection_pipeline.build_world_news", "build the world-news surface"),
     "thumbnails":       ("theprojection_pipeline.thumbnails", "per-article thumbnail capture"),

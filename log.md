@@ -5799,6 +5799,17 @@ would have had nowhere on the map to go.
   degradation rule is still unimplemented.
 - **Site publish:** `kestrel publish --instance . --push` → site commit
   `15592c0` at 19:30:05Z, 53 payload items, 61 entities, 0 skipped.
+  Cloudflare build `635a1401-99d1-434e-b0f7-df9708ccd15f`. **Live-verified
+  by content check on four pages** (`mh-clinical-infra-funding` serving
+  the Headspace entry, plus `china-stack-independence`, `softbank-all-in`,
+  `openai-agent-security-incident`), not just a queued build id.
+  ⚠️ **Method note for future runs, since it cost time here:** `WebFetch`
+  caches per-URL for 15 minutes, so it will keep returning the PRE-push
+  page after a deploy and read exactly like a failed publish. Verify a
+  fresh deploy with `curl`, not `WebFetch`. The deploy hook was also
+  fired manually from this repo's `.env` mid-check; that was belt-and-
+  braces and, on the evidence, probably redundant — `kestrel publish`'s
+  own `push_site()` fires it. No conclusion drawn either way.
 
 ### ⛔ Still blocked, still needing Ben
 
@@ -5822,3 +5833,49 @@ would have had nowhere on the map to go.
   the push (the publish skill's own rules make `--push` the normal,
   no-confirmation path, and the site is in-zone), but the two files
   should agree. Not edited unilaterally.
+
+## 2026-08-25 (16:57 ET) — the internal read page, retired
+
+Ben, on seeing yet another mention of the stale internal read-page
+artifact in this session's own status: *"I don't really understand why we
+are updating that at all. That predates the actual website. It's old and
+dated. I think we kill it utterly."* Confirmed scope via a quick check:
+retire the product, keep the shared code — `render_read.py` isn't only the
+internal page's renderer, it's also where `readouts.py` and `publish/
+adapter.py` (the real public-site pipeline) import `md_html`,
+`parse_digest`, `parse_timeline`, `parse_front`, `load_entities`,
+`load_flash`, `load_world_news`, `digest_day`, and `ROOT` from — deleting
+the whole file would have broken `theprojection.org` itself.
+
+**What actually changed:**
+- `theprojection_pipeline/render_read.py`: removed `main()` and the
+  `__main__` guard (the orchestration that wrote `templates/read-shell.html`
+  → `artifacts/read/index.html`), plus everything that fed it and nothing
+  else did — `load_weekly()`, `_parse_weekly_throughline()`,
+  `WEEKLY_LABEL`, `ITEM_WINDOW_DAYS`, `PAYLOAD_SOFT_CAP`, and the now-dead
+  `argparse`/`json`/`glob` imports. Every function `readouts.py`/`adapter.py`
+  actually import is untouched. Module docstring rewritten to say what the
+  file is *for* now (a shared library, not a page-builder).
+- `theprojection_pipeline/cli.py`: dropped the `render-read` verb —
+  `theprojection render-read` is no longer a command.
+- `.claude/skills/daily/SKILL.md` step 6, `.claude/skills/week/SKILL.md`
+  step 7: marked retired in place rather than renumbered, so future diffs
+  against the kit-tracked canonical template stay legible as "this instance
+  diverged here, on purpose, dated" rather than a silent renumbering.
+- `AGENTS.md` discipline 8, `ROADMAP.md` §Delivery surface 1,
+  `.claude/skills/wrap/SKILL.md` (the stranded-receipts trap + the report's
+  flag list): updated so they stop asserting the page is live. Did **not**
+  touch `BOOTSTRAP.md`, `DESIGN.md`, `README.md`, `STATUS.md`'s historical
+  entries, `coverage-log.md`, `templates/daily-digest.md`, or anything in
+  `INBOX/` — those are archival/append-only and a full scrub wasn't the
+  scope Ben picked (he chose "retire the product, keep shared code" over
+  "full teardown" when asked).
+- The old Artifact itself (`f2ca5acd-f093-4803-a75b-467afe02c639`) is left
+  as-is, unrepublished — not deleted, no delete action exists for it here.
+
+**Verified before committing:** `python3 -m py_compile` on both touched
+`.py` files, plus an actual import of `render_read`/`readouts` (both clean)
+and a `theprojection help` run confirming `render-read` no longer lists.
+`publish.adapter` fails to import standalone in this shell (`cannot import
+name 'core' from 'publish'`) — confirmed via `git stash` that this predates
+today's edits entirely; not something this change touched or caused.

@@ -83,11 +83,13 @@ reader.
 
 One commit (or a few scoped ones if the session had distinct arcs),
 repo-style message, Co-Authored-By line. The specific trap this step
-exists for: **provenance manifests and `artifacts/read/index.html` are
-easy to strand** because they're written by tools after the "real" work
-was already committed. `git status --short` must be empty after this
-step, except deliberate proposals (e.g. an uncommitted local skill draft
-awaiting Ben's word — name those in the report).
+exists for: **provenance manifests are easy to strand** (⛔ this used to
+also name `artifacts/read/index.html` — that internal-read-page output is
+retired as of 2026-08-25, see AGENTS.md discipline 8) because they're
+written by tools after the "real" work was already committed.
+`git status --short` must be empty after this step, except deliberate
+proposals (e.g. an uncommitted local skill draft awaiting Ben's word —
+name those in the report).
 
 ### 4 — site repo state, BEFORE any push decision
 
@@ -135,8 +137,8 @@ situations, never conflated:
   candidates, open decisions — each a self-contained ask, never a bare
   label); the obvious next move (`/daily` finalizable at HH:MM, `/week`
   due, etc.); flags (engine repo unpushed, `kit.py sync` dirty — expected
-  and correct, say so — read-page size over the 600 KB soft cap, dead
-  feeds). Report only — fix nothing from inside the report.
+  and correct, say so — dead feeds). Report only — fix nothing from inside
+  the report.
 
 ## Do not
 

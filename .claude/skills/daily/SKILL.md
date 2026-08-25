@@ -167,13 +167,17 @@ archive; the page is derived from them.
    `attention/actor-doing.yaml` "what are they doing now" roll-up and bump
    `asof`. Light touch — only the actors that moved; `/week` does the full
    pass. (The synthesis shows atop each `/map/<slug>/` page.)
-6. **Render + publish** — run `theprojection render-read` (assembles the payload
-   from attention/ + this week's digests + timelines and substitutes into
-   `templates/read-shell.html` → `artifacts/read/index.html`; the agent
-   never writes page HTML/JS), then **republish to the stable artifact URL
-   in ROADMAP.md §Delivery**. Heed the size warning (>600 KB → degradation
-   rule in the shell header). Always also present the read in the terminal.
-   (Drive comment loop: gated, not built — ROADMAP §Delivery.)
+6. ⛔ **RETIRED 2026-08-25 (Ben: "that predates the actual website... kill
+   it utterly")** — this step used to run `theprojection render-read` and
+   republish the private Artifact-hosted "internal read" page
+   (`artifacts/read/index.html`, the stable URL in the old ROADMAP.md
+   §Delivery). It predated `theprojection.org` (the real public site) and
+   had become dead weight: a repeated >600KB soft-cap/Artifact-refusal
+   fight every run, for a reader nobody was using once the site existed.
+   `render_read.py`'s helper functions are NOT retired — `readouts.py` and
+   `publish/adapter.py` still import from it for the step below, which is
+   now the actual render+publish step every `/daily` run does. Do not
+   re-add a render-read call here without checking those two callers.
 6a. **Refresh the public site's briefings** (Ben, 2026-07-30: they'd gone
     stale mid-day and one had gone missing after a lens rename — "it
     should be additive... have it update in place whenever new things
@@ -264,5 +268,5 @@ Operating rules (distilled from real failures, 07-27/28):
 
 Curated by this session against the same templates. Same contract as the
 future pipeline — say "agentic-interim" in the digest's *Curated from*
-line. `theprojection render-read` is real (built 2026-07-22) — always use it
-for step 6; never hand-assemble the page.
+line. Step 6 (the internal read page) is retired — `theprojection readouts`
+(step 6a) is the real render+publish path now; never hand-assemble a page.

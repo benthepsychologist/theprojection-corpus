@@ -104,10 +104,15 @@ only ever grow it.
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance
    tags, so evolution stays visible.
-7. **Re-render the page** — run `theprojection render-read` and republish so the
-   synthesis panel (`weekly`) appears on the read for the rest of the week;
-   at the next Monday rollover it carries collapsed (`weekly_prior`)
-   through Tuesday.
+7. ⛔ **RETIRED 2026-08-25** — this step used to run `theprojection
+   render-read` and republish the private "internal read" Artifact page so
+   a weekly-synthesis panel showed there. That page is retired in full
+   (Ben: "kill it utterly" — see AGENTS.md discipline 8, ROADMAP.md
+   §Delivery); `render_read.py`'s `load_weekly()`/`_parse_weekly_
+   throughline()` (the code behind that panel) were dead-code-removed
+   with it, since nothing else called them. There is no replacement
+   weekly-synthesis surface on the public site — if one is wanted there,
+   that's new work, not a restore of this step.
 8. **Take steering** — same as `/daily`: reactions apply immediately.
 
 ## Interim mode

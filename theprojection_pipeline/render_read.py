@@ -1,18 +1,22 @@
 #!/usr/bin/env python3
-"""render_read.py — assemble the read page (reframe Phase 0, 2026-07-22).
+"""render_read.py — shared parsing/rendering library for the corpus's
+read surfaces (reframe Phase 0, 2026-07-22; internal page retired 2026-08-25).
 
-Pure derivation, no LLM: parses attention/*.yaml, the current Mon-Sun week's
-daily digests (their <!-- k: --> annotations), and artifacts/threads/*.md
-timelines; emits the JSON payload; substitutes it into
-templates/read-shell.html; writes artifacts/read/index.html.
-
-Deleting the output loses nothing — re-running regenerates it
-byte-equivalently from the same inputs (the `generated` stamp is derived
-from the newest input mtime, not the wall clock).
-
-Usage: python3 tools/render_read.py [--today YYYY-MM-DD] [--asks asks.json]
+Pure derivation, no LLM: parses attention/*.yaml, daily digests (their
+<!-- k: --> annotations), and artifacts/threads/*.md timelines. This module
+no longer assembles a page of its own — the private "internal read" artifact
+(artifacts/read/index.html, templates/read-shell.html, the `theprojection
+render-read` CLI verb) was retired 2026-08-25 as a redundant predecessor to
+the public site (theprojection.org): it predated the site, stayed under
+600KB soft-cap pressure, and cost a repeated Artifact-publish-refusal fight
+every run for no reader anyone still had. `readouts.py` and `publish/
+adapter.py` are the real consumers now — they import ROOT, digest_day,
+parse_digest, parse_timeline, parse_front, load_entities, load_flash,
+load_world_news, and md_html from here for the public-site pipeline. Nothing
+else in this file changed; do not re-wire a main()/CLI verb back onto it
+without checking those two callers first.
 """
-import argparse, glob, json, os, re, sys
+import os, re, sys
 from datetime import date, datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 import yaml
@@ -32,17 +36,6 @@ LENS_OF_FILE = {"frontier-ai": "ai", "mental-health": "mental-health",
 # `lens: money` frontmatter — not rewritten; only the going-forward
 # convention changed.
 TIMELINE_CAP = 20
-PAYLOAD_SOFT_CAP = 600 * 1024
-WEEKLY_LABEL = {"frontier-ai": "Frontier AI", "mental-health": "Mental Health",
-                "global-capital": "Global Capital", "world-news": "World News"}
-# Backward item-history window (INBOX 2026-08-21, widen-payload-item-window):
-# a calendar-week walk (Monday..today) means the payload can hold as little
-# as ONE day's items on a Monday, right after a weekend catch-up run is most
-# likely to have just closed a multi-day backlog. Ship a superset; the
-# client decides what window to show. `week_start`/`today` stay in the
-# payload unchanged so calendar-week framing is still available to a view
-# that wants it.
-ITEM_WINDOW_DAYS = 14
 
 
 def digest_day(now=None):
@@ -277,68 +270,6 @@ def parse_front(path):
     return " ".join(m.group(1).split()) if m else ""
 
 
-def _parse_weekly_throughline(path):
-    """-> (week_of, throughline text) for one lens's weekly digest, or
-    None if the file isn't finalized. Mirrors parse_front()'s own
-    throughline-only extraction — the weekly panel shows what the week
-    meant, not the full digest (radar-question detail, decay review,
-    near-miss audit stay in the archive file, one click away)."""
-    src = open(path).read()
-    m = re.match(r"---\n(.*?)\n---\n", src, re.S)
-    fm = yaml.safe_load(m.group(1)) if m else {}
-    if fm.get("status") != "final":
-        return None
-    body = src[m.end():] if m else src
-    tm = re.search(r"## The week's throughline\n\n(.*?)\n\n(?:##|\Z)", body, re.S)
-    if not tm:
-        return None
-    return str(fm.get("week_of")), " ".join(tm.group(1).split())
-
-
-def load_weekly(today):
-    """The read page's weekly-synthesis panel: the most recently
-    COMPLETED week's cross-lens throughlines (Ben, 2026-08-25: show the
-    last FINISHED week, never an in-progress one -- /week itself decides
-    when a week is done by writing status: final on all four lens files;
-    this just reads what it already wrote, never a partial week).
-
-    Returns (weekly_html, weekly_prior_html, inputs) -- weekly_prior is
-    the second-most-recent complete week (rendered plain, the page's own
-    <details> collapse handles de-emphasizing it), or None if there's
-    only one complete week on file yet.
-    """
-    weekly_dir = os.path.join(ROOT, "artifacts/digests/weekly")
-    by_week = {}
-    inputs = []
-    for fl in LENS_OF_FILE:
-        for fn in glob.glob(os.path.join(weekly_dir, f"*-{fl}.md")):
-            inputs.append(fn)
-            r = _parse_weekly_throughline(fn)
-            if r is None:
-                continue
-            week_of, text = r
-            by_week.setdefault(week_of, {})[fl] = text
-    complete = sorted(
-        (w for w, d in by_week.items() if len(d) == len(LENS_OF_FILE) and w <= today),
-        reverse=True)
-
-    def render(week_of):
-        parts = [f"<h3>Week of {esc(week_of)}</h3>"]
-        for fl in ("frontier-ai", "global-capital", "mental-health", "world-news"):
-            text = by_week[week_of].get(fl)
-            if text:
-                # md_html(), not esc() alone — the throughline is curated
-                # prose with real **bold**/*italic* markup (same convention
-                # as a digest bullet), not plain text.
-                parts.append(f"<p><strong>{esc(WEEKLY_LABEL[fl])}</strong> — "
-                              f"{md_html(text)}</p>")
-        return "".join(parts)
-
-    weekly = render(complete[0]) if complete else None
-    weekly_prior = render(complete[1]) if len(complete) > 1 else None
-    return weekly, weekly_prior, inputs
-
-
 def _ws(s):
     return " ".join((s or "").split())
 
@@ -453,108 +384,7 @@ def parse_digest(path, day, lens):
     return thr, items, changes
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--today")
-    ap.add_argument("--asks", help="JSON file: list of open steering-ask strings")
-    args = ap.parse_args()
-    today = (datetime.strptime(args.today, "%Y-%m-%d").date() if args.today
-             else digest_day())
-    week_start = today - timedelta(days=today.weekday())  # Monday — calendar framing only
-
-    inputs = [os.path.join(ROOT, "attention", f) for f in
-              ("watchlist.yaml", "threads.yaml", "upcoming.yaml")]
-    window_start = today - timedelta(days=ITEM_WINDOW_DAYS - 1)
-    days, throughlines, items, map_changes = [], {}, [], []
-    for i in range(ITEM_WINDOW_DAYS):
-        d = window_start + timedelta(days=i)
-        if d > today:
-            break
-        ds, found = d.isoformat(), False
-        for fl, lens in LENS_OF_FILE.items():
-            p = os.path.join(ROOT, "artifacts/digests/daily", f"{ds}-{fl}.md")
-            if not os.path.exists(p):
-                continue
-            found = True
-            inputs.append(p)
-            thr, its, chg = parse_digest(p, ds, lens)
-            if thr:
-                throughlines.setdefault(ds, {})[lens] = thr
-            items += its
-            map_changes += chg
-        fp = os.path.join(ROOT, "artifacts/digests/daily", f"{ds}-front.md")
-        if os.path.exists(fp):
-            inputs.append(fp)
-            front = parse_front(fp)
-            if front:
-                throughlines.setdefault(ds, {})["front"] = front
-                found = True
-        if found:
-            days.append(ds)
-
-    # The page is "centered on" a day — its top strip reads that day's
-    # throughlines and its ranking amplifies that day's items (2x). But
-    # digest_day() can legitimately name a day that has no digests yet: any
-    # run between 5am ET and the day's first curation (reachable since
-    # /daily was de-scheduled, 2026-07-28). Centering on an empty day
-    # silently blanks the top strip AND zeroes the today-term in the
-    # ranking, so the page ranks on week volume alone. Fall back to the
-    # newest day that actually has content. (Found 2026-07-29: a 5am run
-    # centered the page on 07-29 while every item was bucketed to 07-28.)
-    now = today
-    if days and today.isoformat() not in days:
-        today = datetime.strptime(days[-1], "%Y-%m-%d").date()
-
-    threads = load_threads()
-    inputs += [os.path.join(ROOT, "artifacts/threads", t["slug"] + ".md")
-               for t in threads
-               if os.path.exists(os.path.join(ROOT, "artifacts/threads",
-                                              t["slug"] + ".md"))]
-    upcoming = yaml.safe_load(open(inputs[2]))["expectations"]
-    asks = json.load(open(args.asks)) if args.asks else []
-
-    weekly, weekly_prior, weekly_inputs = load_weekly(now.isoformat())
-    inputs += weekly_inputs
-
-    newest = max(os.path.getmtime(p) for p in inputs if os.path.exists(p))
-    generated = datetime.fromtimestamp(newest, tz=timezone.utc)\
-        .astimezone(ET).strftime("%Y-%m-%d %H:%M ET")
-
-    payload = {
-        "schema_version": 1, "generated": generated,
-        "week_start": week_start.isoformat(), "today": today.isoformat(),
-        # `now` = the real digest-day; `today` = the newest day with content.
-        # They differ on any run before the current day is curated. Centering
-        # and volume-weighting use `today`; imminence and calendar labels use
-        # `now`, or an event six hours out reads as "tomorrow".
-        "now": now.isoformat(),
-        "days": days, "entities": load_entities(), "threads": threads,
-        "items": items, "throughlines": throughlines, "upcoming": upcoming,
-        "map_changes": map_changes, "asks": asks,
-        "flash": load_flash(today),
-        "world_news": load_world_news(today),
-        "weekly": weekly, "weekly_prior": weekly_prior,
-    }
-    blob = json.dumps(payload, ensure_ascii=False, separators=(",", ":"),
-                      default=str)  # YAML parses dates as datetime.date
-    blob = blob.replace("</", "<\\/")
-    json.loads(blob.replace("<\\/", "</"))  # round-trip guard
-
-    shell = open(os.path.join(ROOT, "templates/read-shell.html")).read()
-    marker = '{"__KESTREL_PAYLOAD__": true}'
-    assert marker in shell, "payload slot missing from shell"
-    page = shell.replace(marker, blob)
-    out = os.path.join(ROOT, "artifacts/read/index.html")
-    os.makedirs(os.path.dirname(out), exist_ok=True)
-    open(out, "w").write(page)
-    size = len(page.encode())
-    print(f"wrote {out}: {size//1024} KB "
-          f"({len(items)} items, {len(threads)} threads, "
-          f"{len(payload['entities'])} entities, days {days})")
-    if size > PAYLOAD_SOFT_CAP:
-        print(f"⚠ over {PAYLOAD_SOFT_CAP//1024} KB soft cap — apply the "
-              "degradation rule (drop item html >3 days old)", file=sys.stderr)
-
-
-if __name__ == "__main__":
-    main()
+# main()/the `render-read` CLI verb (assembled artifacts/read/index.html via
+# templates/read-shell.html) retired 2026-08-25 — see the module docstring.
+# The helper functions above remain: readouts.py and publish/adapter.py both
+# import from this module for the real, public-facing pipeline.
