@@ -1,0 +1,64 @@
+# sources/outlet-classification.yaml — this corpus's own curated
+# own-channel domain list, read by the shared `cloud-researcher
+# credibility` verb (migrated from this repo's local
+# build_outlet_credibility.py, 2026-08-25 — see INBOX/
+# 2026-08-25-cloud-researcher-credibility-verb-shipped/ and
+# INBOX/done/ once closed).
+#
+# `class: primary-source` is not a quality rating — it says this domain
+# publishes the thing itself (its own announcement, filing, or paper)
+# rather than reporting on someone else's, so a news-credibility badge
+# would be a category error. `_is_gov` and the universal journal/
+# preprint/registry platform list are built into the shared tool;
+# everything below is curated here because "a bare `news.` prefix is
+# not evidence" (news.crunchbase.com is Crunchbase NEWS, a publication,
+# not a company channel) — this is a list of domains this corpus
+# actually cites, not a pattern.
+own_channel:
+  - openai.com
+  - anthropic.com
+  - x.ai
+  - blog.google
+  - about.fb.com
+  - microsoft.com
+  - news.microsoft.com
+  - nvidianews.nvidia.com
+  - newsroom.intel.com
+  - newsroom.amd.com
+  - ir.amd.com
+  - newsroom.arm.com
+  - news.samsung.com
+  - news.skhynix.com
+  - blackstone.com
+  - macquarie.com
+  - allianz.com
+  - group.pingan.com
+  - group.softbank
+  - investors.cvshealth.com
+  - ir.nasdaq.com
+  - about.kaiserpermanente.org
+  - hcahealthcaretoday.com
+  - home.nuhw.org
+  - nuhw.org
+  - nationalnursesunited.org
+  - unit42.paloaltonetworks.com
+  - news.stanford.edu
+  - chai.org
+  - psychotherapy.org.uk
+  - phti.org
+  - mhdi.uk
+  - gibsondunn.com
+  # added 2026-08-11 (evening): each is the subject's OWN channel for the
+  # story it was cited for — not a quality judgement. pacificoenergy.com
+  # is the developer of the Pecos County gas plant; newsletter.cleanview.co
+  # is the market-intelligence firm that traced that project from
+  # satellite imagery and permits, publishing its own analysis;
+  # jstreet.org is an advocacy organisation cited for its own position.
+  - pacificoenergy.com
+  - newsletter.cleanview.co
+  - jstreet.org
+
+# Structural prefixes beyond the shared tool's own defaults (newsroom./
+# ir./investors./investor./press. — already built in): none needed. This
+# corpus's own OWN_CHANNEL_PREFIX was empty before the migration too.
+own_channel_prefix: []

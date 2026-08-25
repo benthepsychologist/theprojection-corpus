@@ -47,7 +47,19 @@
 #   source on a published story page) · n30d (records in the 30-day buffer
 #   at build time — counts drift between rebuilds, that's expected).
 #
-# ── REBUILD (2026-08-11) ──────────────────────────────────────────────────
+# ── REBUILD (2026-08-25, migrated off the local script) ────────────────────
+#   cloud-researcher credibility --corpus . [--dry-run]
+#
+# Retired 2026-08-25 (INBOX/2026-08-25-cloud-researcher-credibility-verb-
+# shipped/, closed kestrel issue #5): `sources/build_outlet_credibility.py`
+# moved engine-side as `cloud-researcher`'s `credibility` verb — same
+# three-layer design (pc1 ensemble, Wikipedia RSP, `class: primary-source`),
+# same universe logic, same output shape. This corpus's own curated
+# own-channel list now lives at `sources/outlet-classification.yaml`,
+# which the shared tool reads if present. The local builder is deleted;
+# nothing else in this repo referenced it.
+#
+# ── REBUILD (2026-08-11, retired) ───────────────────────────────────────
 #   python3 sources/build_outlet_credibility.py [--dry-run]
 #
 # There is now a committed builder. The 08-07 build had none — it was
@@ -2072,7 +2084,655 @@ domains:
   yahoo.com: {band: solid, n30d: 5, pc1: 0.692}
   zerohedge.com: {band: low, n30d: 12, pc1: 0.272, rsp: deprecated}
   zimbabwestar.com: {n30d: 3, status: unrated}
-meta: {builder: sources/build_outlet_credibility.py, built: '2026-08-11', citation_coverage_pct: 87, citations_total: 615,
-  cited_domains: 267, domains_total: 399, gap_fill_candidates: 2, pc1_rated: 174, practice_rated: 37,
-  primary_source: 60, provenance: ben-steer 2026-08-11 (rebuild), rsp_split: 6, rsp_tagged: 65, universe: cited-domains
-    UNION buffer(gdelt+rss) n30d>=3, unrated: 127}
+domains:
+  247wallst.com: {band: high, cited: 8, n30d: 14, pc1: 0.871}
+  960weli.iheart.com: {n30d: 4, status: unrated}
+  9to5mac.com: {band: solid, cited: 1, n30d: 5, pc1: 0.649}
+  aa.com.tr: {band: solid, cited: 4, n30d: 2, pc1: 0.614, rsp: generally-unreliable/no-consensus}
+  abbott.mediaroom.com: {cited: 1, status: unrated}
+  abc.net.au: {band: high, n30d: 3, pc1: 0.893}
+  abcnews.com: {band: solid, cited: 4, n30d: 7, pc1: 0.668, rsp: generally-reliable}
+  about.fb.com: {cited: 2, class: primary-source}
+  about.kaiserpermanente.org: {cited: 3, class: primary-source}
+  aboutamazon.com: {cited: 1, status: unrated}
+  abqjournal.com: {band: high, n30d: 3, pc1: 0.842}
+  aclu.org: {band: solid, cited: 1, pc1: 0.712}
+  ad-hoc-news.de: {cited: 2, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  adgully.com: {n30d: 4, status: unrated}
+  adn.com: {band: high, n30d: 5, pc1: 0.832}
+  advocate-news.com: {band: solid, n30d: 6, pc1: 0.62}
+  afr.com: {band: high, n30d: 4, pc1: 0.941}
+  africaleader.com: {n30d: 6, status: unrated}
+  ag.state.mn.us: {cited: 1, status: unrated}
+  agbi.com: {cited: 2, gap_fill: candidate, status: unrated}
+  ailawsuittracker.com: {cited: 1, status: unrated}
+  akingump.com: {cited: 1, status: unrated}
+  akronnewsreporter.com: {band: solid, n30d: 3, pc1: 0.62}
+  al-monitor.com: {band: high, cited: 3, n30d: 1, pc1: 0.817}
+  albuquerqueexpress.com: {n30d: 3, status: unrated}
+  aljazeera.com: {band: solid, cited: 50, n30d: 2, pc1: 0.779, rsp: generally-reliable}
+  aljazeera.net: {n30d: 3, rsp: generally-reliable}
+  allianz.com: {cited: 2, class: primary-source}
+  almanacnews.com: {cited: 1, n30d: 1, status: unrated}
+  americanbanker.com: {n30d: 3, status: unrated}
+  americanbazaaronline.com: {n30d: 7, status: unrated}
+  anthropic.com: {cited: 3, class: primary-source, n30d: 1}
+  aol.co.uk: {n30d: 10, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  aol.com: {band: solid, cited: 3, n30d: 1, pc1: 0.774}
+  api-docs.deepseek.com: {cited: 1, status: unrated}
+  apnews.com: {band: high, cited: 2, pc1: 0.998, rsp: generally-reliable}
+  apple.com: {band: solid, cited: 1, pc1: 0.615}
+  apro.assembly.ca.gov: {cited: 1, class: primary-source}
+  arabnews.com: {band: mixed, cited: 3, n30d: 1, pc1: 0.484, rsp: no-consensus}
+  argaam.com: {cited: 1, status: unrated}
+  argentinastar.com: {n30d: 3, status: unrated}
+  arkansasonline.com: {band: high, n30d: 5, pc1: 0.817}
+  arnnet.com.au: {n30d: 3, status: unrated}
+  arstechnica.com: {band: high, n30d: 29, pc1: 0.946, rsp: generally-reliable}
+  arxiv.org: {class: primary-source, n30d: 10018, rsp: generally-unreliable}
+  arynews.tv: {n30d: 11, practices: 1, practices_checked: '2026-08-11', practices_of: 7}
+  asiabulletin.com: {n30d: 5, status: unrated}
+  asiaone.com: {gap_fill: candidate, n30d: 10, status: unrated}
+  austinglobe.com: {n30d: 4, status: unrated}
+  autonews.gasgoo.com: {n30d: 3, status: unrated}
+  aws.amazon.com: {cited: 1, rsp: generally-unreliable}
+  axios.com: {band: high, cited: 11, pc1: 0.897, rsp: generally-reliable}
+  azerbaijannews.net: {n30d: 3, status: unrated}
+  azernews.az: {n30d: 3, status: unrated}
+  azom.com: {n30d: 4, status: unrated}
+  bakersfieldnow.com: {band: solid, cited: 1, n30d: 1, pc1: 0.654}
+  baltimorestar.com: {n30d: 3, status: unrated}
+  baltimoresun.com: {band: solid, n30d: 6, pc1: 0.751}
+  bangkokpost.com: {band: high, n30d: 4, pc1: 0.912}
+  bangladeshsun.com: {n30d: 6, status: unrated}
+  bankinfosecurity.com: {n30d: 5, status: unrated}
+  baystreet.ca: {n30d: 3, status: unrated}
+  bbc.com: {band: high, cited: 2, n30d: 1, pc1: 0.882, rsp: generally-reliable}
+  benzinga.com: {band: high, cited: 6, n30d: 17, pc1: 0.914, rsp: generally-unreliable}
+  bgnes.com: {n30d: 3, status: unrated}
+  bhbusiness.com: {cited: 11, n30d: 65, practices: 4, practices_checked: '2026-08-11', practices_of: 7}
+  bignewsnetwork.com: {band: high, n30d: 11, pc1: 0.811}
+  bits-chips.com: {cited: 1, status: unrated}
+  blackstone.com: {cited: 1, class: primary-source}
+  bleepingcomputer.com: {band: high, cited: 1, pc1: 0.912}
+  blog.google: {cited: 1, class: primary-source, n30d: 11}
+  blogs.nvidia.com: {cited: 1, status: unrated}
+  bloomberg.com: {band: high, cited: 89, n30d: 14, pc1: 0.84, rsp: generally-reliable/no-consensus}
+  bnnbloomberg.ca: {band: solid, cited: 2, n30d: 5, pc1: 0.623}
+  boredpanda.com: {band: solid, n30d: 4, pc1: 0.651}
+  boston.com: {band: solid, cited: 1, pc1: 0.799}
+  bostonglobe.com: {band: high, n30d: 4, pc1: 0.835}
+  bravenewcoin.com: {n30d: 3, status: unrated}
+  brazilsun.com: {n30d: 3, status: unrated}
+  breitbart.com: {band: low, n30d: 6, pc1: 0.297, rsp: blacklisted}
+  briefs.co: {cited: 1, status: unrated}
+  brisbanetimes.com.au: {band: solid, n30d: 4, pc1: 0.637}
+  britainnews.net: {n30d: 4, status: unrated}
+  bruneinews.net: {n30d: 5, status: unrated}
+  brusselssignal.eu: {cited: 1, status: unrated}
+  buildfastwithai.com: {cited: 2, gap_fill: candidate, status: unrated}
+  business-standard.com: {band: solid, cited: 3, n30d: 8, pc1: 0.621}
+  businessday.co.za: {n30d: 5, status: unrated}
+  businessghana.com: {n30d: 6, status: unrated}
+  businessinsider.com: {band: high, cited: 1, n30d: 40, pc1: 0.805, rsp: no-consensus}
+  businessjournaldaily.com: {cited: 1, status: unrated}
+  businesstimes.com.sg: {n30d: 18, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  businesstoday.in: {cited: 1, n30d: 5, status: unrated}
+  businesswire.com: {cited: 1, status: unrated}
+  bworldonline.com: {n30d: 3, status: unrated}
+  ca.finance.yahoo.com: {band: mixed, cited: 1, pc1: 0.512}
+  ca.investing.com: {band: mixed, cited: 1, pc1: 0.536}
+  calcalistech.com: {cited: 3, gap_fill: candidate, status: unrated}
+  calmatters.digitaldemocracy.org: {cited: 1, status: unrated}
+  calmatters.org: {band: solid, cited: 1, pc1: 0.689}
+  canarymedia.com: {cited: 2, practices: 7, practices_checked: '2026-08-11', practices_of: 7}
+  canberratimes.com.au: {band: solid, n30d: 3, pc1: 0.693}
+  canoncitydailyrecord.com: {band: solid, n30d: 3, pc1: 0.623}
+  capitalandmain.com: {band: solid, cited: 2, pc1: 0.656}
+  caribbeanherald.com: {n30d: 4, status: unrated}
+  cbc.ca: {band: high, n30d: 3, pc1: 0.817}
+  cbsnews.com: {band: high, cited: 6, n30d: 1, pc1: 0.88, rsp: no-consensus}
+  cfpublic.org: {cited: 1, status: unrated}
+  cfr.org: {band: high, cited: 1, pc1: 0.879}
+  chai.org: {cited: 1, class: primary-source}
+  channelnewsasia.com: {band: high, n30d: 3, pc1: 0.871, rsp: generally-reliable}
+  chinanationalnews.com: {n30d: 4, status: unrated}
+  chinaselectcommittee.house.gov: {band: high, cited: 1, class: primary-source, pc1: 0.903}
+  chinatechnews.com: {cited: 1, n30d: 7, status: unrated}
+  cityam.com: {band: solid, n30d: 6, pc1: 0.671}
+  claimsjournal.com: {cited: 4, n30d: 1, practices: 4, practices_checked: '2026-08-11', practices_of: 7}
+  clearhealthcosts.com: {cited: 1, status: unrated}
+  clickorlando.com: {band: solid, cited: 1, n30d: 1, pc1: 0.643}
+  clinicaltrials.gov: {cited: 4, class: primary-source}
+  cms.gov: {cited: 2, class: primary-source}
+  cnbc.com: {band: high, cited: 78, n30d: 29, pc1: 0.85}
+  cnbcafrica.com: {n30d: 5, status: unrated}
+  cnet.com: {band: high, n30d: 6, pc1: 0.952, rsp: generally-reliable/generally-unreliable/no-consensus}
+  cnn.com: {band: solid, cited: 8, n30d: 4, pc1: 0.658, rsp: generally-reliable}
+  coag.gov: {cited: 1, class: primary-source}
+  coloradostar.com: {n30d: 3, status: unrated}
+  commerce.senate.gov: {cited: 1, class: primary-source}
+  computerweekly.com: {cited: 1, status: unrated}
+  concordmonitor.com: {band: high, cited: 2, pc1: 0.879}
+  congress.gov: {band: high, cited: 2, class: primary-source, pc1: 0.91}
+  consumerreports.org: {band: high, cited: 1, pc1: 0.905}
+  courant.com: {band: high, n30d: 3, pc1: 0.893}
+  courthousenews.com: {band: high, cited: 1, pc1: 0.871}
+  courtlistener.com: {cited: 1, class: primary-source}
+  cp24.com: {band: high, cited: 1, pc1: 0.855}
+  cpac.ca: {band: high, cited: 1, pc1: 0.858}
+  crn.com: {n30d: 6, status: unrated}
+  crusoe.ai: {cited: 1, status: unrated}
+  cryptobriefing.com: {cited: 2, gap_fill: candidate, status: unrated}
+  cryptopolitan.com: {cited: 1, status: unrated}
+  cybersecuritydive.com: {cited: 2, gap_fill: candidate, status: unrated}
+  dailyadvance.com: {band: solid, n30d: 3, pc1: 0.692}
+  dailycaller.com: {band: mixed, n30d: 3, pc1: 0.47, rsp: deprecated}
+  dailydemocrat.com: {band: mixed, n30d: 4, pc1: 0.516}
+  dailygazette.com: {band: high, n30d: 4, pc1: 0.871}
+  dailykos.com: {band: mixed, n30d: 4, pc1: 0.414, rsp: generally-unreliable}
+  dailylocal.com: {band: solid, n30d: 4, pc1: 0.623}
+  dailymail.com: {n30d: 11, rsp: deprecated}
+  dailynews.com: {band: high, n30d: 3, pc1: 0.842}
+  dailypolitical.com: {gap_fill: candidate, n30d: 10, status: unrated}
+  dailyreckoning.com: {band: mixed, n30d: 3, pc1: 0.528}
+  dailysabah.com: {cited: 2, n30d: 3, rsp: generally-unreliable}
+  datacenterdynamics.com: {cited: 5, practices: 4, practices_checked: '2026-08-11', practices_of: 7}
+  dataconomy.com: {cited: 1, status: unrated}
+  deadline.com: {band: high, n30d: 6, pc1: 0.836, rsp: generally-reliable}
+  dealstreetasia.com: {cited: 1, n30d: 1, status: unrated}
+  deccanchronicle.com: {band: solid, n30d: 5, pc1: 0.754}
+  deepmind.google: {n30d: 5, status: unrated}
+  defensescoop.com: {cited: 1, status: unrated}
+  dig.watch: {cited: 1, status: unrated}
+  digg.com: {band: high, n30d: 5, pc1: 0.843}
+  digit.in: {n30d: 15, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  digital-strategy.ec.europa.eu: {cited: 1, class: primary-source}
+  digitaljournal.com: {band: high, n30d: 7, pc1: 0.906}
+  digitaltrends.com: {band: solid, n30d: 3, pc1: 0.683, rsp: generally-reliable}
+  digitimes.com: {band: mixed, cited: 2, n30d: 4, pc1: 0.599}
+  dnyuz.com: {band: mixed, cited: 1, pc1: 0.501}
+  doi.org: {cited: 1, class: primary-source}
+  dynamicbusiness.com: {n30d: 3, status: unrated}
+  earthjustice.org: {band: high, cited: 2, pc1: 0.801}
+  eastbaytimes.com: {band: high, n30d: 4, pc1: 0.844}
+  ebc.com: {cited: 1, status: unrated}
+  economictimes.indiatimes.com: {band: low, n30d: 45, pc1: 0.216}
+  econotimes.com: {n30d: 5, status: unrated}
+  edition.cnn.com: {band: solid, cited: 1, n30d: 4, pc1: 0.682, rsp: generally-reliable}
+  effinghamherald.net: {cited: 1, status: unrated}
+  efinancialcareers.com: {n30d: 3, status: unrated}
+  eia.gov: {cited: 1, class: primary-source}
+  el-balad.com: {n30d: 6, status: unrated}
+  elconstitucional.es: {cited: 1, status: unrated}
+  electrek.co: {cited: 1, status: unrated}
+  en.ara.cat: {cited: 1, status: unrated}
+  en.globes.co.il: {n30d: 4, status: unrated}
+  en.interfax.com.ua: {cited: 1, status: unrated}
+  en.sedaily.com: {cited: 2, gap_fill: candidate, status: unrated}
+  en.shafaqna.com: {n30d: 6, status: unrated}
+  en.wikipedia.org: {band: high, cited: 2, pc1: 0.834, rsp: generally-unreliable}
+  energy.gov: {band: solid, cited: 4, class: primary-source, pc1: 0.685}
+  engadget.com: {band: high, cited: 5, n30d: 6, pc1: 0.869, rsp: generally-reliable}
+  english.aawsat.com: {band: mixed, cited: 1, n30d: 3, pc1: 0.561}
+  english.alarabiya.net: {band: low, cited: 1, pc1: 0.371, rsp: no-consensus}
+  english.news.cn: {band: low, n30d: 6, pc1: 0.327, rsp: no-consensus}
+  esecurityplanet.com: {n30d: 4, status: unrated}
+  esgtoday.com: {cited: 2, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  ethiopiaobserver.com: {cited: 1, status: unrated}
+  eunews.it: {band: solid, cited: 1, pc1: 0.63}
+  euromaidanpress.com: {band: high, cited: 1, pc1: 0.802}
+  euronews.com: {band: high, cited: 5, n30d: 3, pc1: 0.823}
+  europe.chinadaily.com.cn: {band: low, n30d: 5, pc1: 0.372, rsp: no-consensus}
+  europesun.com: {n30d: 5, status: unrated}
+  eweek.com: {cited: 1, status: unrated}
+  explosion.com: {gap_fill: candidate, n30d: 8, status: unrated}
+  federalreserve.gov: {band: solid, cited: 1, class: primary-source, pc1: 0.646}
+  ferc.gov: {cited: 1, class: primary-source}
+  fiercebiotech.com: {cited: 1, status: unrated}
+  fiercehealthcare.com: {cited: 3, practices: 2, practices_checked: '2026-08-11', practices_of: 5, practices_partial: true}
+  file770.com: {n30d: 3, status: unrated}
+  finance.biggo.com: {cited: 1, status: unrated}
+  finance.sina.com.cn: {cited: 2, gap_fill: candidate, status: unrated}
+  finance.yahoo.com: {band: mixed, cited: 40, n30d: 165, pc1: 0.517}
+  finanznachrichten.de: {gap_fill: candidate, n30d: 13, status: unrated}
+  finbold.com: {cited: 1, status: unrated}
+  focustaiwan.tw: {band: solid, cited: 2, pc1: 0.775}
+  fonearena.com: {n30d: 4, status: unrated}
+  fool.com: {band: high, cited: 6, n30d: 83, pc1: 0.843}
+  forbes.com: {band: high, cited: 6, n30d: 68, pc1: 0.83, rsp: generally-reliable/generally-unreliable/no-consensus}
+  foreignpolicy.com: {band: high, cited: 1, n30d: 1, pc1: 0.919}
+  foreignpolicyjournal.com: {band: mixed, cited: 1, n30d: 4, pc1: 0.589}
+  fortmorgantimes.com: {band: solid, n30d: 3, pc1: 0.638}
+  fortune.com: {band: high, cited: 21, n30d: 32, pc1: 0.876}
+  foxbusiness.com: {band: solid, cited: 1, n30d: 3, pc1: 0.794, rsp: no-consensus}
+  foxnews.com: {band: mixed, n30d: 4, pc1: 0.534, rsp: generally-unreliable/no-consensus}
+  france24.com: {band: high, cited: 7, pc1: 0.879}
+  freemalaysiatoday.com: {n30d: 6, status: unrated}
+  freepressjournal.in: {cited: 1, gap_fill: candidate, n30d: 16, status: unrated}
+  freerepublic.com: {band: low, n30d: 12, pc1: 0.368}
+  frontiersin.org: {band: solid, cited: 1, class: primary-source, n30d: 360, pc1: 0.712}
+  fxleaders.com: {cited: 1, status: unrated}
+  fxstreet.com: {cited: 1, status: unrated}
+  gcaptain.com: {cited: 1, status: unrated}
+  geeky-gadgets.com: {n30d: 7, status: unrated}
+  geneamusings.com: {n30d: 7, status: unrated}
+  gibsondunn.com: {cited: 1, class: primary-source}
+  github.com: {cited: 1, class: primary-source, n30d: 6}
+  gizmodo.com: {band: solid, cited: 4, n30d: 15, pc1: 0.696, rsp: generally-reliable}
+  global.chinadaily.com.cn: {band: low, n30d: 4, pc1: 0.372, rsp: no-consensus}
+  globalbankingandfinance.com: {cited: 3, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  globaltimes.cn: {band: mixed, cited: 1, n30d: 3, pc1: 0.543, rsp: deprecated}
+  globenewswire.com: {cited: 1, status: unrated}
+  gov.texas.gov: {cited: 3, class: primary-source}
+  govinfosecurity.com: {n30d: 4, status: unrated}
+  greeleytribune.com: {band: solid, n30d: 4, pc1: 0.781}
+  group.pingan.com: {cited: 2, class: primary-source}
+  group.softbank: {cited: 2, class: primary-source}
+  gulfnews.com: {band: mixed, cited: 1, pc1: 0.505}
+  gurufocus.com: {cited: 1, status: unrated}
+  haaretz.com: {band: solid, cited: 7, pc1: 0.672, rsp: generally-reliable}
+  haitisun.com: {n30d: 3, status: unrated}
+  hawaiitribune-herald.com: {cited: 1, status: unrated}
+  hcahealthcaretoday.com: {cited: 1, class: primary-source}
+  hcamag.com: {n30d: 3, status: unrated}
+  healthcaredive.com: {cited: 4, n30d: 72, practices: 6, practices_checked: '2026-08-11', practices_of: 7}
+  heise.de: {band: solid, n30d: 7, pc1: 0.63}
+  hhs.gov: {cited: 1, class: primary-source}
+  hindustantimes.com: {band: solid, n30d: 14, pc1: 0.725}
+  hitconsultant.net: {cited: 4, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  hngn.com: {gap_fill: candidate, n30d: 11, status: unrated}
+  home.nuhw.org: {cited: 4, class: primary-source}
+  home.nzcity.co.nz: {n30d: 5, status: unrated}
+  home.treasury.gov: {cited: 5, class: primary-source}
+  hongkongherald.com: {n30d: 6, status: unrated}
+  hoodline.com: {cited: 1, status: unrated}
+  hornreview.org: {cited: 1, status: unrated}
+  hotchips.org: {cited: 1, status: unrated}
+  house.mn.gov: {cited: 1, class: primary-source}
+  houseofsaud.com: {cited: 1, status: unrated}
+  houstonpublicmedia.org: {band: mixed, cited: 1, n30d: 1, pc1: 0.508}
+  huggingface.co: {cited: 2, class: primary-source, n30d: 23}
+  hurriyetdailynews.com: {band: mixed, n30d: 4, pc1: 0.6}
+  i24news.tv: {band: high, cited: 1, pc1: 0.912}
+  ianslive.in: {n30d: 3, status: unrated}
+  ibtimes.co.uk: {cited: 2, n30d: 20, rsp: generally-unreliable}
+  ibtimes.com: {band: solid, n30d: 13, pc1: 0.713, rsp: generally-unreliable}
+  ibtimes.com.au: {n30d: 8, rsp: generally-unreliable}
+  iclarified.com: {n30d: 4, status: unrated}
+  ilpost.it: {band: mixed, n30d: 3, pc1: 0.507}
+  importai.substack.com: {n30d: 6, status: unrated}
+  in.investing.com: {band: mixed, cited: 1, pc1: 0.536}
+  independent.co.uk: {band: solid, n30d: 5, pc1: 0.734, rsp: generally-reliable}
+  indiagazette.com: {gap_fill: candidate, n30d: 8, status: unrated}
+  indianexpress.com: {band: solid, n30d: 5, pc1: 0.76, rsp: generally-reliable}
+  indiatimes.com: {band: low, n30d: 3, pc1: 0.388}
+  infineon.com: {cited: 1, status: unrated}
+  infomoney.com.br: {n30d: 3, status: unrated}
+  infotechlead.com: {gap_fill: candidate, n30d: 12, status: unrated}
+  infoworld.com: {n30d: 4, status: unrated}
+  insideeulifesciences.com: {cited: 1, status: unrated}
+  insidermonkey.com: {gap_fill: candidate, n30d: 14, status: unrated}
+  insurancejournal.com: {cited: 2, n30d: 5, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  interestingengineering.com: {band: mixed, cited: 1, pc1: 0.512}
+  investing.com: {band: mixed, cited: 18, pc1: 0.536}
+  investinglive.com: {n30d: 5, status: unrated}
+  investmentnews.com: {n30d: 3, status: unrated}
+  investmentwatchblog.com: {band: low, n30d: 4, pc1: 0.208}
+  investorplace.com: {n30d: 3, status: unrated}
+  investors.cvshealth.com: {cited: 1, class: primary-source}
+  ir.amd.com: {cited: 3, class: primary-source}
+  ir.nasdaq.com: {cited: 1, class: primary-source}
+  iranherald.com: {n30d: 6, status: unrated}
+  irishtimes.com: {band: solid, n30d: 4, pc1: 0.775}
+  isimarkets.com: {cited: 1, status: unrated}
+  israelnationalnews.com: {band: solid, cited: 3, pc1: 0.724}
+  it-online.co.za: {n30d: 4, status: unrated}
+  itbrief.co.nz: {n30d: 7, status: unrated}
+  itechpost.com: {cited: 1, n30d: 5, status: unrated}
+  itnewsonline.com: {n30d: 5, status: unrated}
+  itweb.co.za: {n30d: 3, status: unrated}
+  itwire.com: {n30d: 5, status: unrated}
+  jamaicantimes.com: {n30d: 3, status: unrated}
+  japantimes.co.jp: {band: high, cited: 2, pc1: 0.871}
+  japantoday.com: {band: high, n30d: 5, pc1: 0.817}
+  jfeed.com: {cited: 1, status: unrated}
+  journal-advocate.com: {band: mixed, n30d: 4, pc1: 0.575}
+  journals.sagepub.com: {band: high, cited: 1, pc1: 0.855}
+  jpost.com: {band: high, cited: 12, n30d: 4, pc1: 0.805, rsp: generally-reliable}
+  jstreet.org: {cited: 1, class: primary-source}
+  justice.gov: {cited: 1, class: primary-source}
+  justsecurity.org: {band: solid, cited: 1, n30d: 3, pc1: 0.774}
+  kalw.org: {cited: 1, status: unrated}
+  kesq.com: {band: solid, cited: 1, n30d: 1, pc1: 0.61}
+  kffhealthnews.org: {n30d: 60, practices: 6, practices_checked: '2026-08-11', practices_of: 6, practices_partial: true}
+  kgou.org: {n30d: 3, status: unrated}
+  koreaherald.com: {band: solid, cited: 2, n30d: 4, pc1: 0.777}
+  kqed.org: {band: high, cited: 1, pc1: 0.845}
+  ksat.com: {band: high, cited: 4, n30d: 3, pc1: 0.815}
+  kttc.com: {band: solid, cited: 1, pc1: 0.695}
+  kucoin.com: {cited: 1, status: unrated}
+  kuwaittimes.com: {cited: 1, status: unrated}
+  kyivindependent.com: {band: solid, cited: 17, pc1: 0.616}
+  kyivpost.com: {band: solid, cited: 8, pc1: 0.694}
+  laosnews.net: {n30d: 5, status: unrated}
+  lastweekin.ai: {n30d: 3, status: unrated}
+  lasvegassun.com: {band: high, cited: 1, n30d: 3, pc1: 0.817}
+  latimes.com: {band: high, n30d: 3, pc1: 0.854, rsp: generally-reliable}
+  law360.com: {band: high, cited: 1, n30d: 2, pc1: 0.906}
+  lawsuitinformer.com: {cited: 1, status: unrated}
+  leg.colorado.gov: {cited: 3, class: primary-source}
+  leginfo.legislature.ca.gov: {cited: 7, class: primary-source}
+  legislature.maine.gov: {cited: 1, class: primary-source}
+  livemint.com: {n30d: 32, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  livetradingnews.com: {n30d: 6, status: unrated}
+  lloydslist.com: {cited: 1, status: unrated}
+  lloydslistintelligence.com: {cited: 1, status: unrated}
+  local10.com: {band: solid, n30d: 5, pc1: 0.705}
+  londonmercury.com: {n30d: 4, status: unrated}
+  lowellsun.com: {band: mixed, n30d: 6, pc1: 0.559}
+  m.investing.com: {band: mixed, cited: 1, pc1: 0.536}
+  macdailynews.com: {cited: 1, n30d: 1, status: unrated}
+  macquarie.com: {cited: 3, class: primary-source}
+  macrumors.com: {band: mixed, cited: 2, pc1: 0.578}
+  mainemirror.com: {n30d: 3, status: unrated}
+  makeuseof.com: {band: high, n30d: 6, pc1: 0.871}
+  malaysiasun.com: {n30d: 5, status: unrated}
+  manilatimes.net: {band: solid, cited: 2, n30d: 24, pc1: 0.751}
+  marinelink.com: {cited: 1, status: unrated}
+  marketbeat.com: {cited: 1, status: unrated}
+  marketscreener.com: {cited: 2, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  marktechpost.com: {cited: 1, status: unrated}
+  mashable.com: {band: solid, n30d: 4, pc1: 0.656, rsp: generally-unreliable/no-consensus}
+  matthewryanlcsw.com: {cited: 1, status: unrated}
+  mcall.com: {band: high, n30d: 5, pc1: 0.862}
+  medcitynews.com: {band: mixed, cited: 1, pc1: 0.589}
+  media.api.sf.gov: {cited: 1, class: primary-source}
+  mediapost.com: {band: high, n30d: 6, pc1: 0.87}
+  medicalxpress.com: {band: high, cited: 2, pc1: 0.862}
+  medrxiv.org: {cited: 1, class: primary-source, rsp: generally-unreliable}
+  medtechdive.com: {cited: 2, n30d: 62, practices: 6, practices_checked: '2026-08-11', practices_of: 7}
+  memeburn.com: {n30d: 32, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  mental.jmir.org: {cited: 1, class: primary-source, n30d: 12}
+  mercurynews.com: {band: high, n30d: 4, pc1: 0.877}
+  mexicostar.com: {n30d: 3, status: unrated}
+  mezha.net: {cited: 1, status: unrated}
+  mhdi.uk: {cited: 1, class: primary-source}
+  microsoft.com: {cited: 2, class: primary-source}
+  middleeasteye.net: {band: solid, cited: 1, n30d: 2, pc1: 0.793}
+  middleeastmonitor.com: {band: solid, cited: 1, pc1: 0.62, rsp: no-consensus}
+  mistral.ai: {cited: 2, gap_fill: candidate, status: unrated}
+  mlex.com: {cited: 2, gap_fill: candidate, status: unrated}
+  mondaq.com: {n30d: 6, status: unrated}
+  money.usnews.com: {band: high, cited: 1, pc1: 0.897, rsp: generally-reliable}
+  moneycontrol.com: {n30d: 26, practices: 2, practices_checked: '2026-08-11', practices_of: 6, practices_partial: true}
+  morningstar.com: {n30d: 14, practices: 6, practices_checked: '2026-08-11', practices_of: 6, practices_partial: true}
+  multistate.ai: {cited: 1, status: unrated}
+  myanmarnews.net: {n30d: 4, status: unrated}
+  myhostnews.com: {n30d: 5, status: unrated}
+  mymotherlode.com: {n30d: 4, status: unrated}
+  naharnet.com: {cited: 5, gap_fill: candidate, status: unrated}
+  nationalnursesunited.org: {cited: 1, class: primary-source}
+  nationaltechnology.co.uk: {cited: 1, status: unrated}
+  naturalnews.com: {band: low, n30d: 9, pc1: 0.0, rsp: blacklisted}
+  nature.com: {band: high, cited: 2, pc1: 0.965}
+  nbcnews.com: {band: high, cited: 7, n30d: 3, pc1: 0.844, rsp: generally-reliable}
+  nepalnational.com: {n30d: 5, status: unrated}
+  newkerala.com: {n30d: 6, status: unrated}
+  newrepublic.com: {band: mixed, cited: 1, n30d: 1, pc1: 0.557, rsp: generally-reliable}
+  news-medical.net: {band: mixed, cited: 1, n30d: 1, pc1: 0.524}
+  news.az: {gap_fill: candidate, n30d: 8, status: unrated}
+  news.bloomberglaw.com: {cited: 1, status: unrated}
+  news.cgtn.com: {band: mixed, cited: 1, pc1: 0.568, rsp: deprecated}
+  news.crunchbase.com: {cited: 1, n30d: 42, rsp: deprecated}
+  news.microsoft.com: {cited: 3, class: primary-source}
+  news.samsung.com: {cited: 1, class: primary-source}
+  news.skhynix.com: {cited: 2, class: primary-source}
+  news.ssbcrack.com: {cited: 1, status: unrated}
+  news.stanford.edu: {cited: 1, class: primary-source}
+  news.un.org: {cited: 1, status: unrated}
+  news.va.gov: {cited: 1, class: primary-source}
+  news.webindia123.com: {n30d: 3, status: unrated}
+  news4jax.com: {band: solid, n30d: 3, pc1: 0.724}
+  news8000.com: {band: solid, n30d: 4, pc1: 0.642}
+  newsbytesapp.com: {cited: 1, status: unrated}
+  newsfromthestates.com: {cited: 2, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  newsletter.cleanview.co: {cited: 1, class: primary-source}
+  newsletter.semianalysis.com: {cited: 1, status: unrated}
+  newsnow.co.uk: {band: solid, n30d: 3, pc1: 0.778}
+  newsroom.amd.com: {cited: 1, class: primary-source}
+  newsroom.arm.com: {cited: 1, class: primary-source}
+  newsroom.intel.com: {cited: 2, class: primary-source}
+  newstalk1130.iheart.com: {n30d: 3, status: unrated}
+  newsukraine.rbc.ua: {cited: 1, status: unrated}
+  newsweek.com: {band: high, cited: 2, n30d: 4, pc1: 0.818, rsp: generally-reliable/no-consensus}
+  newyorkstatesman.com: {n30d: 4, status: unrated}
+  newyorktelegraph.com: {n30d: 6, status: unrated}
+  nextbigfuture.com: {band: high, n30d: 8, pc1: 0.854}
+  nextgov.com: {band: high, cited: 1, n30d: 2, pc1: 0.847}
+  nextplatform.com: {n30d: 4, status: unrated}
+  ng.investing.com: {band: mixed, cited: 1, pc1: 0.536}
+  nigeriasun.com: {n30d: 7, status: unrated}
+  nikkei.com: {band: solid, cited: 1, pc1: 0.668}
+  nist.gov: {cited: 1, class: primary-source}
+  novinite.com: {band: high, cited: 1, pc1: 0.837}
+  npr.org: {band: high, cited: 16, n30d: 3, pc1: 0.931, rsp: generally-reliable}
+  nuhw.org: {cited: 1, class: primary-source}
+  nvidianews.nvidia.com: {cited: 9, class: primary-source}
+  nypost.com: {band: solid, cited: 2, n30d: 18, pc1: 0.639, rsp: generally-unreliable/no-consensus}
+  nytimes.com: {band: high, cited: 1, pc1: 0.859, rsp: generally-reliable}
+  observer.com: {band: solid, n30d: 4, pc1: 0.711}
+  ofac.treasury.gov: {cited: 2, class: primary-source}
+  officechai.com: {cited: 1, status: unrated}
+  ohiostandard.com: {n30d: 3, status: unrated}
+  ohnotheydidnt.livejournal.com: {n30d: 4, rsp: generally-unreliable}
+  oilprice.com: {band: high, cited: 1, n30d: 3, pc1: 0.912}
+  oklahomastar.com: {n30d: 3, status: unrated}
+  opb.org: {band: solid, cited: 2, pc1: 0.698}
+  openai.com: {cited: 16, class: primary-source, n30d: 31}
+  openrouter.ai: {cited: 1, class: primary-source, n30d: 1}
+  opensourceforu.com: {cited: 1, status: unrated}
+  orlandosentinel.com: {band: high, n30d: 3, pc1: 0.869}
+  orovillemr.com: {band: solid, n30d: 4, pc1: 0.618}
+  pa.gov: {cited: 1, class: primary-source}
+  pacificoenergy.com: {cited: 1, class: primary-source}
+  palestinechronicle.com: {band: solid, cited: 1, pc1: 0.647}
+  panews.io: {cited: 1, status: unrated}
+  patriotpost.us: {band: mixed, n30d: 3, pc1: 0.456}
+  pbs.org: {band: high, cited: 2, pc1: 0.874, rsp: generally-reliable}
+  pcmag.com: {band: mixed, n30d: 7, pc1: 0.599}
+  pctechmag.com: {n30d: 3, status: unrated}
+  perthnow.com.au: {band: solid, n30d: 3, pc1: 0.691}
+  philippinetimes.com: {gap_fill: candidate, n30d: 8, status: unrated}
+  phoenixherald.com: {n30d: 3, status: unrated}
+  phti.org: {cited: 3, class: primary-source}
+  pilotonline.com: {band: solid, n30d: 3, pc1: 0.799}
+  pittsburghstar.com: {n30d: 4, status: unrated}
+  platformer.news: {cited: 1, status: unrated}
+  pottsmerc.com: {band: solid, n30d: 3, pc1: 0.692}
+  pravda.com.ua: {band: solid, cited: 2, pc1: 0.731}
+  press.un.org: {cited: 1, class: primary-source}
+  prnewswire.com: {band: solid, cited: 6, n30d: 12, pc1: 0.751, rsp: generally-unreliable}
+  proactiveinvestors.co.uk: {n30d: 5, status: unrated}
+  proactiveinvestors.com: {n30d: 6, status: unrated}
+  promarket.org: {cited: 1, status: unrated}
+  propakistani.pk: {n30d: 3, status: unrated}
+  psychotherapy.org.uk: {cited: 1, class: primary-source}
+  punchng.com: {band: solid, cited: 1, n30d: 1, pc1: 0.661}
+  pymnts.com: {cited: 2, n30d: 6, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  qualcomm.com: {cited: 1, status: unrated}
+  quiverquant.com: {cited: 1, status: unrated}
+  qz.com: {band: high, cited: 2, pc1: 0.857}
+  rawstory.com: {band: mixed, cited: 1, n30d: 2, pc1: 0.462, rsp: generally-unreliable}
+  reclaimthenet.org: {cited: 1, status: unrated}
+  redriverradio.org: {n30d: 3, status: unrated}
+  reflector.com: {band: mixed, n30d: 4, pc1: 0.578}
+  research.google: {cited: 1, status: unrated}
+  reuters.com: {band: high, cited: 3, pc1: 1.0, rsp: generally-reliable}
+  rnz.co.nz: {cited: 2, gap_fill: candidate, n30d: 5, status: unrated}
+  rte.ie: {band: high, cited: 3, n30d: 1, pc1: 0.855}
+  rttnews.com: {n30d: 3, status: unrated}
+  russiaherald.com: {n30d: 4, status: unrated}
+  samaa.tv: {n30d: 7, status: unrated}
+  sanantoniopost.com: {n30d: 5, status: unrated}
+  sandiegosun.com: {n30d: 3, status: unrated}
+  schumer.senate.gov: {cited: 1, class: primary-source}
+  sciencedirect.com: {band: high, cited: 3, class: primary-source, n30d: 757, pc1: 0.91}
+  scientificamerican.com: {band: high, cited: 1, pc1: 0.862, rsp: generally-reliable}
+  scmp.com: {band: solid, cited: 8, n30d: 5, pc1: 0.768, rsp: generally-reliable}
+  scoop.co.nz: {n30d: 3, status: unrated}
+  sdxcentral.com: {cited: 1, status: unrated}
+  searchenginejournal.com: {n30d: 3, status: unrated}
+  sec.gov: {cited: 22, class: primary-source}
+  seekingalpha.com: {band: solid, cited: 5, n30d: 7, pc1: 0.694}
+  semafor.com: {cited: 2, practices: 4, practices_checked: '2026-08-11', practices_of: 7}
+  sentinelandenterprise.com: {band: solid, n30d: 3, pc1: 0.636}
+  servethehome.com: {cited: 1, status: unrated}
+  seyfarth.com: {cited: 1, status: unrated}
+  sfstandard.com: {cited: 1, status: unrated}
+  shanghainews.net: {n30d: 3, status: unrated}
+  sierraleonetimes.com: {n30d: 3, status: unrated}
+  siliconangle.com: {cited: 6, n30d: 16, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  siliconrepublic.com: {n30d: 7, status: unrated}
+  siliconvalley.com: {band: solid, n30d: 4, pc1: 0.73}
+  singaporestar.com: {n30d: 3, status: unrated}
+  slguardian.org: {n30d: 12, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  smh.com.au: {band: solid, n30d: 4, pc1: 0.766, rsp: generally-reliable}
+  sony-semicon.com: {cited: 1, status: unrated}
+  southernmarylandchronicle.com: {cited: 3, gap_fill: candidate, status: unrated}
+  spectrumlocalnews.com: {band: solid, cited: 2, pc1: 0.63}
+  srilankasource.com: {n30d: 4, status: unrated}
+  srnnews.com: {band: high, cited: 1, pc1: 0.863}
+  standard.net.au: {n30d: 3, status: unrated}
+  statescoop.com: {cited: 1, status: unrated}
+  statnews.com: {band: high, cited: 4, n30d: 295, pc1: 0.817}
+  stockanalysis.com: {cited: 5, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  stocktitan.net: {cited: 3, practices: 3, practices_checked: '2026-08-11', practices_of: 7}
+  stocktwits.com: {cited: 1, status: unrated}
+  storage.courtlistener.com: {cited: 1, status: unrated}
+  su.se: {cited: 2, gap_fill: candidate, status: unrated}
+  sun-sentinel.com: {band: high, n30d: 3, pc1: 0.913}
+  sundayguardianlive.com: {cited: 1, status: unrated}
+  sydneysun.com: {n30d: 7, status: unrated}
+  taipeitimes.com: {band: high, cited: 1, n30d: 3, pc1: 0.871}
+  taiwansun.com: {n30d: 5, status: unrated}
+  tasnimnews.ir: {cited: 1, rsp: deprecated}
+  tech.yahoo.com: {band: solid, n30d: 3, pc1: 0.692}
+  techcommunity.microsoft.com: {cited: 1, status: unrated}
+  techcrunch.com: {band: high, cited: 27, n30d: 257, pc1: 0.886, rsp: no-consensus}
+  techdirt.com: {band: high, cited: 1, n30d: 7, pc1: 0.84}
+  techjuice.pk: {cited: 1, status: unrated}
+  techmeme.com: {cited: 1, status: unrated}
+  technode.com: {cited: 3, n30d: 3, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  technology.org: {cited: 1, status: unrated}
+  technologyreview.com: {band: high, cited: 1, n30d: 25, pc1: 0.909}
+  techradar.com: {band: solid, n30d: 14, pc1: 0.643}
+  techrepublic.com: {band: solid, n30d: 4, pc1: 0.735}
+  techspot.com: {band: mixed, n30d: 4, pc1: 0.564}
+  techstartups.com: {band: low, cited: 1, pc1: 0.356}
+  techstory.in: {cited: 1, n30d: 2, status: unrated}
+  techtimes.com: {band: mixed, cited: 11, n30d: 40, pc1: 0.502}
+  tekedia.com: {cited: 1, status: unrated}
+  telecom.economictimes.indiatimes.com: {band: low, n30d: 3, pc1: 0.216}
+  telecomreseller.com: {cited: 1, status: unrated}
+  tennesseedaily.com: {n30d: 3, status: unrated}
+  texasguardian.com: {n30d: 5, status: unrated}
+  texastribune.org: {band: high, cited: 4, pc1: 0.843}
+  thailandnews.net: {n30d: 4, status: unrated}
+  the-decoder.com: {cited: 3, practices: 7, practices_checked: '2026-08-11', practices_of: 7}
+  the-independent.com: {n30d: 5, status: unrated}
+  theage.com.au: {band: solid, n30d: 3, pc1: 0.774, rsp: generally-reliable}
+  theatlantic.com: {band: high, n30d: 4, pc1: 0.804, rsp: generally-reliable}
+  thecherrycreeknews.com: {cited: 1, gap_fill: candidate, n30d: 9, status: unrated}
+  thecourier.com.au: {n30d: 3, status: unrated}
+  thecurrentga.org: {cited: 1, status: unrated}
+  theepochtimes.com: {band: low, cited: 1, n30d: 5, pc1: 0.263, rsp: deprecated}
+  theglobeandmail.com: {band: high, cited: 1, n30d: 8, pc1: 0.816, rsp: generally-reliable}
+  theguardian.com: {band: solid, cited: 2, n30d: 9, pc1: 0.75, rsp: generally-reliable/no-consensus}
+  thehill.com: {band: high, cited: 3, pc1: 0.899, rsp: generally-reliable}
+  thehindu.com: {band: solid, n30d: 20, pc1: 0.705, rsp: generally-reliable}
+  thehindubusinessline.com: {band: solid, n30d: 25, pc1: 0.725}
+  theinformation.com: {band: mixed, cited: 3, pc1: 0.512}
+  thejakartapost.com: {band: solid, cited: 1, n30d: 1, pc1: 0.799}
+  thelogic.co: {cited: 2, gap_fill: candidate, status: unrated}
+  themarketsdaily.com: {n30d: 18, practices: 1, practices_checked: '2026-08-11', practices_of: 7}
+  themoscowtimes.com: {band: solid, cited: 3, pc1: 0.788}
+  thenationalnews.com: {cited: 4, n30d: 4, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  theneurondaily.com: {cited: 4, practices: 5, practices_checked: '2026-08-11', practices_of: 7}
+  thenews.com.pk: {band: high, cited: 1, n30d: 19, pc1: 0.811}
+  thenextweb.com: {band: solid, cited: 5, n30d: 20, pc1: 0.798, rsp: no-consensus}
+  thequantuminsider.com: {cited: 1, status: unrated}
+  theregister.com: {cited: 1, n30d: 17, rsp: generally-reliable}
+  thestar.com.my: {band: solid, cited: 3, n30d: 24, pc1: 0.614}
+  thestreet.com: {band: high, cited: 2, pc1: 0.817}
+  thetimes-tribune.com: {band: solid, n30d: 5, pc1: 0.773}
+  theusnews.com: {n30d: 3, status: unrated}
+  theverge.com: {band: high, cited: 3, n30d: 141, pc1: 0.882, rsp: generally-reliable}
+  tickerreport.com: {n30d: 12, practices: 2, practices_checked: '2026-08-11', practices_of: 7}
+  tickmill.com: {cited: 1, status: unrated}
+  tikr.com: {cited: 1, status: unrated}
+  time.com: {band: high, cited: 1, pc1: 0.826, rsp: generally-reliable}
+  timesherald.com: {band: mixed, n30d: 4, pc1: 0.587}
+  timeslive.co.za: {band: solid, cited: 1, pc1: 0.721}
+  timesofindia.indiatimes.com: {band: solid, n30d: 41, pc1: 0.727, rsp: no-consensus}
+  timesofisrael.com: {band: high, cited: 22, pc1: 0.817, rsp: generally-reliable}
+  tipranks.com: {cited: 1, status: unrated}
+  tldr.tech: {gap_fill: candidate, n30d: 14, status: unrated}
+  today.lorientlejour.com: {cited: 2, gap_fill: candidate, status: unrated}
+  tomsguide.com: {cited: 1, n30d: 4, status: unrated}
+  tomshardware.com: {cited: 6, n30d: 4, practices: 6, practices_checked: '2026-08-11', practices_of: 7}
+  tradingeconomics.com: {cited: 1, status: unrated}
+  tradingkey.com: {cited: 5, practices: 4, practices_checked: '2026-08-11', practices_of: 7}
+  transparencycoalition.ai: {cited: 1, status: unrated}
+  trendforce.com: {cited: 3, gap_fill: candidate, status: unrated}
+  tribune.com.pk: {n30d: 4, status: unrated}
+  tribuneindia.com: {cited: 1, status: unrated}
+  tucsonpost.com: {n30d: 3, status: unrated}
+  turkiyetoday.com: {cited: 1, status: unrated}
+  uk.finance.yahoo.com: {band: solid, cited: 1, pc1: 0.745}
+  ukrinform.net: {cited: 1, status: unrated}
+  unit42.paloaltonetworks.com: {cited: 1, class: primary-source}
+  unite.ai: {cited: 4, gap_fill: candidate, status: unrated}
+  unn.ua: {cited: 1, status: unrated}
+  upi.com: {band: high, cited: 2, n30d: 2, pc1: 0.951}
+  upr.org: {band: high, n30d: 3, pc1: 0.862}
+  us.cnn.com: {band: solid, n30d: 8, pc1: 0.658, rsp: generally-reliable}
+  usa.chinadaily.com.cn: {band: low, n30d: 5, pc1: 0.372, rsp: no-consensus}
+  usnews.com: {band: high, cited: 3, pc1: 0.897, rsp: generally-reliable}
+  utilitydive.com: {cited: 1, n30d: 5, status: unrated}
+  venturebeat.com: {band: solid, cited: 1, n30d: 1, pc1: 0.643, rsp: no-consensus}
+  ventureburn.com: {n30d: 3, status: unrated}
+  vietnamtribune.com: {n30d: 3, status: unrated}
+  warner.senate.gov: {cited: 1, class: primary-source}
+  washingtonpost.com: {band: high, cited: 12, pc1: 0.819, rsp: generally-reliable}
+  washingtontimes.com: {band: low, cited: 3, pc1: 0.345, rsp: no-consensus}
+  watoday.com.au: {band: solid, n30d: 3, pc1: 0.735}
+  wccftech.com: {cited: 1, gap_fill: candidate, n30d: 10, status: unrated}
+  wealthprofessional.ca: {cited: 1, status: unrated}
+  westhawaiitoday.com: {band: mixed, cited: 1, n30d: 1, pc1: 0.599}
+  wfae.org: {band: solid, n30d: 4, pc1: 0.611}
+  wfmz.com: {band: high, cited: 1, pc1: 0.832}
+  wglt.org: {n30d: 4, status: unrated}
+  whyn.iheart.com: {n30d: 3, status: unrated}
+  windowscentral.com: {n30d: 3, status: unrated}
+  wired.com: {band: high, cited: 6, n30d: 102, pc1: 0.852, rsp: generally-reliable}
+  wknofm.org: {n30d: 3, status: unrated}
+  wlac.iheart.com: {n30d: 3, status: unrated}
+  wnmufm.org: {n30d: 3, status: unrated}
+  wral.com: {band: high, cited: 1, n30d: 2, pc1: 0.877}
+  wsj.com: {band: high, cited: 2, pc1: 0.804, rsp: generally-reliable}
+  wsls.com: {band: solid, cited: 1, pc1: 0.627}
+  wtoc.com: {band: solid, cited: 1, n30d: 1, pc1: 0.665}
+  wusf.org: {cited: 1, status: unrated}
+  wvtf.org: {n30d: 3, status: unrated}
+  x.ai: {cited: 2, class: primary-source}
+  x.com: {cited: 1, rsp: generally-unreliable}
+  yahoo.com: {band: solid, n30d: 11, pc1: 0.692}
+  ynetnews.com: {band: solid, cited: 1, pc1: 0.8}
+  youtube.com: {band: low, cited: 1, pc1: 0.375, rsp: generally-unreliable}
+  zdnet.com: {band: high, n30d: 3, pc1: 0.879, rsp: generally-reliable/generally-unreliable}
+  zerohedge.com: {band: low, n30d: 22, pc1: 0.272, rsp: deprecated}
+  zimbabwestar.com: {n30d: 6, status: unrated}
+meta: {builder: cloud-researcher credibility, citation_coverage_pct: 86, citations_total: 1151, cited_domains: 391,
+  domains_total: 648, gap_fill_candidates: 31, pc1_rated: 261, practice_rated: 37, primary_source: 75,
+  rsp_split: 10, rsp_tagged: 93, universe: cited-domains UNION buffer(gdelt+rss) n30d>=3, unrated: 270}
