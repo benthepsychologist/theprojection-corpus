@@ -160,6 +160,15 @@
     {
      "day": "2026-08-26",
      "sev": null,
+     "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia campus",
+     "threads": [
+      "anthropic-infrastructure-buildout"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
      "text": "Analysts began pushing back on Anthropic's $30 trillion IPO pitch",
      "threads": [
       "frontier-lab-ipos"
@@ -1570,7 +1579,18 @@
    "title": "Slingshot AI"
   },
   "entity:softbank": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
+    }
+   ],
    "fingerprint": "067ad042b54e027f",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -2008,6 +2028,15 @@
     {
      "day": "2026-08-26",
      "sev": null,
+     "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia campus",
+     "threads": [
+      "anthropic-infrastructure-buildout"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
      "text": "Nvidia reports Q2 FY2026 after today's close",
      "threads": [
       "nvidia-order-book",
@@ -2033,44 +2062,35 @@
       "fed-independence-fight"
      ],
      "url": "https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html"
-    },
-    {
-     "day": "2026-08-26",
-     "sev": null,
-     "text": "Republican senators broke with the White House publicly over the Canada tariffs, roughly ten weeks from the midterms",
-     "threads": [
-      "north-american-trade-policy"
-     ],
-     "url": "https://www.cnn.com/2026/08/26/politics/republicans-trump-tariffs-midterms"
     }
    ],
    "briefing": {
-    "gist": "**Two deadlines landed and both produced silence, which is the finding rather than the absence of one.** The White House's deadline for Lisa Cook to answer its notice seeking her removal from the Federal Reserve Board passed with no…",
+    "gist": "**By 15:00 ET, four dated deadlines are sitting in the same honest state: too early to call, not yet silence.** The 11:00 ET run reported the White House's Lisa Cook deadline and Meta's Warner deadline as already-passed silence; a closer…",
     "lead": [
      {
-      "emoji": "🚀",
-      "text": "Z.AI confirmed it built \"Ox Alpha,\" the stealth model that had passed DeepSeek on OpenRouter usage, and said it would open the weights that night.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html"
-     },
-     {
-      "emoji": "📉",
-      "text": "Nvidia reports its second-quarter results after today's close, the first print since it told customers AI server prices would rise more than 15%.",
-      "url": "https://investor.nvidia.com/"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "The deadline for Lisa Cook to answer the White House's notice seeking her removal from the Federal Reserve Board arrived with no public response from her.",
-      "url": "https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html"
-     },
-     {
-      "emoji": "📉",
-      "text": "Oil fell roughly 6% across two days after Iran named a temporary shipping corridor through the Strait of Hormuz.",
-      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
+      "emoji": "💰",
+      "text": "Anthropic committed $45 billion over six years to rent AI compute from Nscale's West Virginia data-center campus.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
      },
      {
       "emoji": "🌍",
-      "text": "Republican senators broke publicly with the White House over its Canada tariffs, roughly ten weeks before the midterm elections.",
+      "text": "Republican senators broke publicly with the White House over Canada tariffs, roughly ten weeks before the midterms.",
       "url": "https://www.cnn.com/2026/08/26/politics/republicans-trump-tariffs-midterms"
+     },
+     {
+      "emoji": "📉",
+      "text": "Oil fell roughly 6% over two days after Iran and Oman agreed a temporary route around the Hormuz chokepoint.",
+      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
+     },
+     {
+      "emoji": "📉",
+      "text": "SoftBank is in talks with banks for a $10-20 billion bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
+     },
+     {
+      "emoji": "🚀",
+      "text": "Z.AI confirmed it built \"Ox Alpha,\" the stealth model that had overtaken DeepSeek on OpenRouter usage, and said it would open the weights that night.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html"
      }
     ],
     "sections": [
@@ -2078,49 +2098,49 @@
       "bullets": [
        {
         "emoji": "🚀",
-        "text": "Z.AI confirmed it built \"Ox Alpha,\" the stealth model that had passed DeepSeek on OpenRouter usage, and said it would open the weights that night.",
+        "text": "Z.AI confirmed it built \"Ox Alpha,\" the stealth model that had overtaken DeepSeek on OpenRouter usage, and said it would open the weights that night.",
         "url": "https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html"
        },
        {
-        "emoji": "🏗️",
-        "text": "Amazon withdrew its groundwater application for a Virginia data centre after the state said the local aquifer could not absorb the draw.",
-        "url": "https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/"
-       },
-       {
         "emoji": "🔬",
-        "text": "OpenAI's first custom chip cleared its first public benchmark, with results aimed squarely at Nvidia.",
+        "text": "OpenAI's first custom chip cleared its first public benchmark, with results aimed squarely at outperforming Nvidia.",
         "url": "https://openai.com/index/jalapeno-first-results/"
        },
        {
+        "emoji": "🏗️",
+        "text": "Amazon withdrew its groundwater application for a Virginia data center after the state said the local aquifer could not absorb it.",
+        "url": "https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/"
+       },
+       {
         "emoji": "🚀",
-        "text": "Apple shipped the first commercial silicon built on TSMC's new 2-nanometer manufacturing node.",
+        "text": "Apple shipped the first commercial chip built on TSMC's new 2-nanometer manufacturing process.",
         "url": "https://www.apple.com/newsroom/"
        }
       ],
-      "emoji": "🚀",
+      "emoji": "🔬",
       "heading": "AI"
      },
      {
       "bullets": [
        {
-        "emoji": "📉",
-        "text": "The Fed's preferred inflation gauge ran hot on the headline reading for July and in line on the core measure.",
-        "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "The deadline for Lisa Cook to answer the White House's removal notice arrived with no public response from her.",
-        "url": "https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html"
+        "emoji": "💰",
+        "text": "Anthropic committed $45 billion over six years to rent AI compute from Nscale's West Virginia data-center campus.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
        },
        {
         "emoji": "📉",
-        "text": "Oil fell roughly 6% across two days after Iran named a temporary shipping corridor through the Strait of Hormuz.",
+        "text": "SoftBank is in talks with banks for a $10-20 billion bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
+       },
+       {
+        "emoji": "📉",
+        "text": "Oil fell roughly 6% over two days after Iran and Oman agreed a temporary route around the Hormuz chokepoint.",
         "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
        },
        {
-        "emoji": "⚠️",
-        "text": "Analysts began pushing back on Anthropic's pitch to investors framing its IPO as a $30 trillion revenue opportunity.",
-        "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
+        "emoji": "🌍",
+        "text": "Republican senators broke publicly with the White House over Canada tariffs, roughly ten weeks before the midterms.",
+        "url": "https://www.cnn.com/2026/08/26/politics/republicans-trump-tariffs-midterms"
        }
       ],
       "emoji": "💰",
@@ -2129,18 +2149,18 @@
      {
       "bullets": [
        {
-        "emoji": "🏥",
-        "text": "Psychologist Jean Twenge testified in the Oakland trial against Meta that daily social media use likely caused a decline in adolescent wellbeing.",
+        "emoji": "⚖️",
+        "text": "Psychologist Jean Twenge testified in the Oakland Meta trial that daily social media use likely caused a decline in adolescent wellbeing.",
         "url": "https://courthousenews.com/meta-questions-psychologists-testimony-in-teen-mental-health-harms-trial/"
        },
        {
         "emoji": "🤝",
-        "text": "Headspace is being acquired by a musculoskeletal-focused digital health company, in a deal set to close on September 14.",
+        "text": "Headspace is being acquired by a musculoskeletal-first digital health company, in a deal set to close September 14.",
         "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/"
        },
        {
-        "emoji": "💰",
-        "text": "Anthropic committed $5 million to independent research on what its own model does to people in a mental-health crisis.",
+        "emoji": "🔬",
+        "text": "Anthropic is putting $5 million into independent research on what its own model does to people in psychological crisis.",
         "url": "https://www.anthropic.com/news/wellbeing-research-grants"
        },
        {
@@ -2154,13 +2174,13 @@
      }
     ],
     "watch": [
-     "Whether Washington answers China's homegrown-model progress with new procurement rules or reverts to an outright ban remains unresolved.",
-     "The Fed heads into its September meeting squeezed between a hot inflation print, the unresolved Cook removal fight, and Canada's tariff retaliation.",
-     "Meta and Anthropic have both let public deadlines from lawmakers on AI safety and child-safety concerns pass without a response."
+     "Whether Lisa Cook or the White House produces any formal written response to the removal dispute before the Fed's next meeting.",
+     "Whether Nvidia's earnings resolve or deepen the market's doubts about circular AI financing arrangements.",
+     "Whether an AI-therapy regulatory framework arrives before more wrongful-death litigation forces one anyway."
     ]
    },
-   "fingerprint": "0f55cb5a4233fb3f",
-   "generated": "2026-08-26T14:40:44Z",
+   "fingerprint": "744b4d3658046bfa",
+   "generated": "2026-08-26T19:19:33Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2269,6 +2289,15 @@
     {
      "day": "2026-08-26",
      "sev": null,
+     "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia campus",
+     "threads": [
+      "anthropic-infrastructure-buildout"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
      "text": "Nvidia reports Q2 FY2026 after today's close",
      "threads": [
       "nvidia-order-book",
@@ -2281,145 +2310,166 @@
     "gist": "**A stealth model that had been topping a usage leaderboard turned out to be Chinese, and its maker said so voluntarily.** Zhipu/Z.AI confirmed it built \"Ox Alpha\".",
     "lead": [
      {
+      "emoji": "💰",
+      "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia data-center campus.",
+      "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+     },
+     {
+      "emoji": "📉",
+      "text": "A wire-service preview frames Wednesday's Nvidia earnings, due after today's close, as the moment that must answer the AI industry's circular-financing question, not sidestep it.",
+      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html"
+     },
+     {
       "emoji": "🚀",
-      "text": "Z.AI confirmed it secretly built Ox Alpha, the stealth model that had overtaken DeepSeek on OpenRouter's usage rankings, and said it would open the weights that same night.",
+      "text": "Z.AI confirmed it built \"Ox Alpha,\" the stealth model that had passed DeepSeek on OpenRouter usage, and said it would open the weights the same night.",
       "url": "https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html"
      },
      {
       "emoji": "🔬",
-      "text": "OpenAI's first custom chip, Jalapeño, cleared its first public benchmark, with results aimed squarely at Nvidia's inference performance.",
+      "text": "OpenAI's first custom chip, Jalapeño, cleared its first public benchmark, with numbers aimed squarely at Nvidia.",
       "url": "https://openai.com/index/jalapeno-first-results/"
      },
      {
-      "emoji": "💰",
-      "text": "Nvidia reports second-quarter fiscal 2026 earnings after today's close, with a wire-service preview framing the circular-financing debate as the central question the results must answer.",
-      "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html"
-     },
-     {
-      "emoji": "🏗️",
-      "text": "Amazon withdrew its groundwater application for a Virginia data center after the state said the local aquifer could not absorb the draw.",
+      "emoji": "⚖️",
+      "text": "Amazon withdrew its groundwater application for a Virginia data centre after the state said the aquifer could not absorb it.",
       "url": "https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/"
-     },
-     {
-      "emoji": "🤝",
-      "text": "Nvidia agreed to pay Poolside $6 billion to license its model-building technology and take on 109 of its employees, according to newly surfaced deal documents.",
-      "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "🌍",
-        "text": "Zhipu/Z.AI said it built Ox Alpha, the anonymous model that had already passed DeepSeek in OpenRouter usage, before opening its weights.",
-        "url": "https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Xiaomi launched a 3-nanometer in-house flagship chip, and TSMC, not domestic rival SMIC, manufactures it.",
-        "url": "https://www.caixinglobal.com/2026-08-25/xiaomi-steps-up-chip-push-with-new-smartphone-ai-and-self-driving-processors-102477561.html"
+        "emoji": "💰",
+        "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia data-center campus.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
        },
        {
         "emoji": "🤝",
-        "text": "Moonshot asked the three major US hyperscalers to host its Kimi K3 model in exchange for as much as 30 percent of the resulting revenue.",
-        "url": "https://finance.yahoo.com/technology/ai/articles/exclusive-chinas-moonshot-talks-microsoft-075340033.html"
+        "text": "The Nvidia-Poolside deal reversed from an unverifiable rumor to a document-based account showing Nvidia paying $6 billion for Poolside's model factory and its 109 workers.",
+        "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
        },
        {
-        "emoji": "⚖️",
-        "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, for illegally routing AI servers to China.",
-        "url": "/threads/china-stack-independence/"
-       }
-      ],
-      "emoji": "🌍",
-      "heading": "The chip war"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Nvidia reports second-quarter fiscal 2026 earnings after today's close, and a wire-service preview frames the circular-financing loop as the question the print must answer.",
+        "emoji": "📉",
+        "text": "A wire-service preview frames Wednesday's Nvidia earnings as the moment that must answer the AI industry's circular-financing question, not sidestep it.",
         "url": "https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html"
        },
        {
         "emoji": "💰",
-        "text": "Nvidia agreed to pay Poolside $6 billion to license its model-building technology and absorb 109 of its employees, per newly surfaced deal documents.",
-        "url": "https://www.forbes.com/sites/jonmarkman/2026/08/24/nvidia-pays-poolside-6b-to-license-its-model-factory-and-109-workers/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "The SEC subpoenaed four banks over their exposure to an AI investment fund that collapsed.",
-        "url": "/threads/ai-circular-financing-risk/"
-       },
-       {
-        "emoji": "📉",
-        "text": "Nvidia told customers that AI server prices will rise more than 15%, citing rising memory costs.",
+        "text": "Nvidia told customers that AI server prices will rise more than 15%, blaming memory costs.",
         "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
        }
       ],
       "emoji": "💰",
-      "heading": "The financing"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🏗️",
-        "text": "Amazon withdrew its groundwater application for a Virginia data center after the state said the local aquifer could not absorb the draw.",
-        "url": "https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "A Georgia Public Service Commission staff deadline arrived on Georgia Power's 3.2-gigawatt data-center contract with OpenAI.",
-        "url": "https://thecurrentga.org/2026/08/25/psc-deadline-arrives-for-georgia-powers-3-2-gigawatt-openai-data-center-contract/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "An Ohio city council in Pataskala unanimously rejected a proposed data center, and voters there still get their own say on it in November.",
-        "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/datacenters/pataskala-city-council-votes-against-data-center-proposal/"
-       },
-       {
-        "emoji": "🏗️",
-        "text": "An $11.3 billion Tennessee data-center campus in Bradley County filed plans to build its own power supply alongside its compute capacity.",
-        "url": "https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx"
-       }
-      ],
-      "emoji": "🏗️",
-      "heading": "Data centers and power"
+      "heading": "The compute money"
      },
      {
       "bullets": [
        {
         "emoji": "🔬",
-        "text": "OpenAI's first custom chip, Jalapeño, cleared its first public benchmark, with results aimed squarely at Nvidia's inference performance.",
+        "text": "OpenAI's first custom chip, Jalapeño, cleared its first public benchmark, with numbers aimed squarely at Nvidia.",
         "url": "https://openai.com/index/jalapeno-first-results/"
        },
        {
-        "emoji": "🔬",
-        "text": "Micron quantified the AI memory wall: compute scales roughly 3x every two years while HBM bandwidth grows only about 2x in the same span.",
-        "url": "/threads/ai-memory-shortage/"
-       },
-       {
-        "emoji": "🔬",
-        "text": "Samsung's zHBM design stacks memory directly on the compute die, claiming 230 percent more bandwidth and 70 percent better power efficiency than HBM4e.",
-        "url": "/threads/ai-memory-shortage/"
+        "emoji": "🚀",
+        "text": "Nvidia disclosed that its Groq 3 LPX inference accelerator is now in full production.",
+        "url": "https://blogs.nvidia.com/blog/vera-rubin-lpx-spectrum-x-nvlink-fusion/"
        },
        {
         "emoji": "🚀",
         "text": "Apple shipped the first commercial silicon built on TSMC's 2-nanometer node.",
         "url": "https://www.apple.com/newsroom/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Taiwan indicted nine people, including Nvidia and Super Micro employees, over illegally routing AI servers to China.",
+        "url": "https://focustaiwan.tw"
        }
       ],
       "emoji": "🔬",
-      "heading": "The chips themselves"
+      "heading": "The chip war"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "Amazon withdrew its groundwater application for a Virginia data centre after the state said the aquifer could not absorb it.",
+        "url": "https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "An Ohio council rejected a data center proposal unanimously, and voters still get their own say on it in November.",
+        "url": "https://www.nbc4i.com/news/local-news/central-ohio-news/datacenters/pataskala-city-council-votes-against-data-center-proposal/"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "An $11.3 billion Tennessee campus filed to build its own power plant alongside its computing capacity.",
+        "url": "https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx"
+       },
+       {
+        "emoji": "🏗️",
+        "text": "The US is now building roughly twice as much gas-fired power as China, with AI demand cited as the reason.",
+        "url": "https://www.chinastrategy.org/2026/08/25/us-building-twice-as-much-gas-fired-capacity-as-china-in-ai-boom-analysis-finds/"
+       }
+      ],
+      "emoji": "🏗️",
+      "heading": "Data centers meet their neighbors"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "OpenAI's policy chief asked Washington to make pre-deployment AI safety standards mandatory.",
+        "url": "https://www.thenews.com.pk/latest/1413317-openai-warns-ai-powered-cyberattacks-could-become-ongoing-persistent"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "A federal judge signaled skepticism toward the Pentagon's \"supply chain risk\" designation on Anthropic.",
+        "url": "https://abcnews.com"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Alabama's attorney general subpoenaed OpenAI over its hack of Hugging Face after congressional inquiries got no answers.",
+        "url": "https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Governance catches up"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🚀",
+        "text": "Anthropic merged memory across Claude Chat and Claude Cowork, the first live development from its newly opened enterprise-agent product line.",
+        "url": "https://techcrunch.com/2026/08/25/claude-cowork-finally-remembers-what-you-told-the-app-in-chat/"
+       },
+       {
+        "emoji": "🚀",
+        "text": "Mistral shipped Agentic Search, giving a model five tool-like actions, search, open, navigate, read and grep, to work through documents iteratively.",
+        "url": "https://mistral.ai/news/agentic-search"
+       },
+       {
+        "emoji": "🚀",
+        "text": "Harvey released \"Harvey Tenet,\" its first post-trained open-weight legal model, built on Kimi K3 per the benchmark that carried it.",
+        "url": "https://harvey.ai/blog"
+       },
+       {
+        "emoji": "🚀",
+        "text": "Slack launched code channels, where teams plan, write and review software alongside AI agents inside Slack itself.",
+        "url": "https://slack.com/blog"
+       }
+      ],
+      "emoji": "🚀",
+      "heading": "The product race"
      }
     ],
     "watch": [
-     "Whether Nvidia's earnings call gives a direct answer on the circular-financing loop connecting itself, OpenAI and the cloud providers buying its chips.",
-     "Whether the Georgia Public Service Commission's decision on the 3.2-gigawatt OpenAI contract holds up at the Effingham County commissioners' own session on the project.",
-     "Whether Beijing moves from confirming ownership of leaderboard-topping models to formal retaliation over the threatened ASML export ban or the Taiwan chip-smuggling indictments."
+     "Whether Nvidia's earnings settle or deepen doubts about the circular financing tying it to OpenAI and the cloud providers reselling its chips.",
+     "Whether the widening frontier-model government review framework, from the NSA-led threshold review to the pending self-regulatory body, hardens into permanent gatekeeping or stays voluntary.",
+     "Whether China's newly confirmed and open-sourced models keep gaining ground against US chips and cloud hosting, or Washington's export and procurement rules slow the momentum."
     ]
    },
-   "fingerprint": "85062a7c36a3d054",
-   "generated": "2026-08-26T14:40:44Z",
+   "fingerprint": "3971acdd32c0f08e",
+   "generated": "2026-08-26T19:19:33Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2568,28 +2618,28 @@
     "lead": [
      {
       "emoji": "⚠️",
-      "text": "July PCE, the Fed's preferred inflation gauge, ran hot on the headline reading and in line on the core measure.",
+      "text": "The Fed's preferred inflation gauge ran hot on the headline measure and in line on the core in July.",
       "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html"
      },
      {
       "emoji": "⚖️",
-      "text": "The deadline for Lisa Cook to answer the White House's Federal Reserve removal notice passed with no public response from her.",
+      "text": "The White House's deadline for Lisa Cook to answer its removal notice arrived on August 26 with no public response from her.",
       "url": "https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html"
-     },
-     {
-      "emoji": "💰",
-      "text": "Analysts began publicly challenging Anthropic's investor pitch that its addressable market is worth more than $30 trillion.",
-      "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
-     },
-     {
-      "emoji": "📉",
-      "text": "Oil fell roughly 6% across two days after Iran and Oman announced a temporary Hormuz shipping corridor.",
-      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
      },
      {
       "emoji": "🌍",
       "text": "Republican senators publicly broke with the White House over the Canada tariffs, roughly ten weeks before the midterms.",
       "url": "https://www.cnn.com/2026/08/26/politics/republicans-trump-tariffs-midterms"
+     },
+     {
+      "emoji": "💰",
+      "text": "Analysts began pushing back on Anthropic's pitch to investors of a $30 trillion revenue opportunity.",
+      "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
+     },
+     {
+      "emoji": "📉",
+      "text": "Oil fell roughly 6% across two days after Iran announced a temporary Hormuz shipping corridor.",
+      "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
      }
     ],
     "sections": [
@@ -2597,85 +2647,85 @@
       "bullets": [
        {
         "emoji": "⚠️",
-        "text": "July PCE ran hot on the headline reading and in line on the core, arguing against a rate cut.",
+        "text": "The Fed's preferred inflation gauge ran hot on the headline and in line on the core in July.",
         "url": "https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html"
        },
        {
         "emoji": "⚖️",
-        "text": "The deadline for Lisa Cook to answer the White House's removal notice passed with no filing, resignation, or statement from her.",
+        "text": "The deadline for Lisa Cook to answer the White House's removal notice arrived with no public response from her.",
         "url": "https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html"
        },
        {
         "emoji": "💰",
-        "text": "Treasury is sitting on a $935-950 billion cash balance at the Fed, which funds its bond-buyback program.",
+        "text": "Treasury is sitting on a $935-950 billion cash balance, and it is what funds the bond-buyback program.",
         "url": "https://247wallst.com/investing/2026/08/24/bessent-quietly-built-a-950-billion-war-chest-sitting-in-an-account-at-the-fed-now-we-know-what-its-for/"
        },
        {
         "emoji": "📉",
-        "text": "The 30-year Treasury yield touched a 19-year high overnight before pulling back once the buyback reporting landed.",
-        "url": "/threads/treasury-long-end-intervention/"
+        "text": "A five-year Treasury note auction priced at a 4.659% high yield with a 2.39 bid-to-cover ratio.",
+        "url": "https://www.rttnews.com/3684932/five-year-note-auction-attracts-slightly-above-average-demand.aspx"
        }
       ],
-      "emoji": "⚖️",
-      "heading": "The Fed's tightening bind"
+      "emoji": "⚠️",
+      "heading": "The Fed's Squeeze"
      },
      {
       "bullets": [
        {
         "emoji": "🌍",
-        "text": "Republican senators publicly broke with the White House over the Canada tariffs, roughly ten weeks before the midterms.",
+        "text": "Republican senators broke with the White House publicly over the Canada tariffs, roughly ten weeks from the midterms.",
         "url": "https://www.cnn.com/2026/08/26/politics/republicans-trump-tariffs-midterms"
        },
        {
-        "emoji": "⚠️",
-        "text": "Trump escalated his rhetoric on the tariff fight while Ottawa moved to consolidate political support at home.",
-        "url": "https://www.bnnbloomberg.ca/tariffs/2026/08/26/sounds-like-me-trump-suggests-us-added-new-conditions-at-11th-hour-of-negotiations-with-canada-live-updates-here/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Canada answered the tariffs dollar-for-dollar and set its own retaliatory tariffs to take effect on September 8.",
+        "emoji": "🌍",
+        "text": "Canada answered the tariffs dollar for dollar and put a date on its retaliation.",
         "url": "https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html"
        },
        {
         "emoji": "🌍",
-        "text": "The White House responded within hours in campaign register, framing the move as ending Canada's trade advantage.",
+        "text": "The White House answered within hours, in campaign register.",
         "url": "https://www.whitehouse.gov/releases/2026/08/president-trump-is-finally-ending-canadas-free-ride/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Trump put a dated number on the Canada tariff fight, setting new 50% auto tariffs to take effect in 2027.",
+        "url": "https://www.aljazeera.com/economy/2026/8/24/trump-slams-canada-with-new-50-percent-auto-tariffs-for-2027"
        }
       ],
       "emoji": "🌍",
-      "heading": "Canada tariffs escalate toward Sept. 8"
+      "heading": "The Trade Fight"
      },
      {
       "bullets": [
        {
         "emoji": "💰",
-        "text": "Anthropic's IPO pitch put a number on its total addressable opportunity for the first time: more than $30 trillion.",
-        "url": "https://qz.com/anthropic-ipo-investors-30-trillion-market-opportunity-082526"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Analysts began publicly challenging that $30 trillion figure as investors weigh Anthropic's IPO pitch.",
+        "text": "Analysts began pushing back on Anthropic's pitch to investors of a $30 trillion revenue opportunity.",
         "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
        },
        {
-        "emoji": "⚖️",
-        "text": "Anthropic will name AI backlash, specifically data-center opposition, as a risk factor in its public S-1 filing.",
-        "url": "https://www.cnbc.com/2026/08/21/-anthropic-ipo-filing-will-show-ai-backlash-as-risk-sources-say.html"
+        "emoji": "💰",
+        "text": "SoftBank is talking to banks about a $10-20 billion bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
        },
        {
-        "emoji": "🚀",
-        "text": "Anthropic is benchmarking its IPO against SpaceX's record raise, aiming to match or top its $1.77 trillion valuation.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-20/anthropic-expects-to-match-spacex-s-record-ipo-size-or-top-it"
+        "emoji": "💰",
+        "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
+        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Nvidia is reportedly in talks for a second, larger stake in Perplexity AI at a $30 billion valuation.",
+        "url": "https://siliconangle.com/2026/08/24/nvidia-reportedly-eyes-another-investment-in-perplexity-ai-at-a-30b-valuation/"
        }
       ],
       "emoji": "💰",
-      "heading": "Anthropic's $30 trillion pitch draws scrutiny"
+      "heading": "The AI IPO Money"
      },
      {
       "bullets": [
        {
         "emoji": "📉",
-        "text": "Oil fell roughly 6% across two days after Iran and Oman announced a temporary Hormuz shipping corridor.",
+        "text": "Oil fell roughly 6% across two days on Iran's announcement of a temporary Hormuz shipping corridor.",
         "url": "https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know"
        },
        {
@@ -2685,53 +2735,22 @@
        },
        {
         "emoji": "🌍",
-        "text": "China gave its first on-record response to the Iran sanctions package the same day as the Houthi strike.",
-        "url": "/threads/red-sea-oil-shock/"
-       },
-       {
-        "emoji": "📉",
-        "text": "Oil had already extended its fall on August 24 after Iran allowed Iraqi tankers through Hormuz, easing the same supply-shock premise.",
-        "url": "/threads/red-sea-oil-shock/"
+        "text": "China gave its first on-record response to the Iran sanctions package that had landed days earlier.",
+        "url": "https://www.bloomberg.com/news/articles/2026-08-24/yemen-s-houthi-rebels-attack-saudi-oil-supertanker-in-red-sea"
        }
       ],
-      "emoji": "⚠️",
-      "heading": "Hormuz corridor announced, not settled"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "SoftBank's record ¥1 trillion retail bond got its final terms, tied to funding Masayoshi Son's OpenAI and Stargate commitments.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-24/softbank-plans-record-1-trillion-retail-bond-offering-in-japan"
-       },
-       {
-        "emoji": "💰",
-        "text": "Broadcom is assembling $70-80 billion of debt through a special-purpose vehicle to build AI chip capacity for Anthropic.",
-        "url": "https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "Nvidia is raising AI server prices more than 15%, repricing every hyperscaler capital-spending plan tied to its chips.",
-        "url": "https://www.bloomberg.com/news/articles/2026-08-22/nvidia-customers-notified-about-ai-related-price-hikes-above-15"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Nvidia is reportedly in talks for a second, larger stake in Perplexity AI at a $30 billion valuation.",
-        "url": "https://siliconangle.com/2026/08/24/nvidia-reportedly-eyes-another-investment-in-perplexity-ai-at-a-30b-valuation/"
-       }
-      ],
-      "emoji": "🏗️",
-      "heading": "AI buildout financing stacks up"
+      "emoji": "📉",
+      "heading": "The Oil Swing"
      }
     ],
     "watch": [
-     "Whether Kevin Warsh's first Jackson Hole keynote as Fed chair, on August 28, addresses the Cook removal fight or the long-end interventions directly.",
-     "Whether Anthropic converts its confidential IPO filing into a public EDGAR filing by August 31, and whether the $30 trillion opportunity claim survives scrutiny.",
-     "Whether Canada's dollar-for-dollar tariffs, set to take effect September 8, land before any de-escalation in the trade fight."
+     "Whether the Federal Reserve's independence survives the fight over Lisa Cook's board seat as Chair Warsh heads into his first Jackson Hole keynote.",
+     "Whether Canada and the United States reach a tariff deal before Canada's retaliatory measures take effect, or the fight keeps escalating toward the midterms.",
+     "Whether Anthropic's $30 trillion revenue pitch survives investor scrutiny as its public IPO filing approaches."
     ]
    },
-   "fingerprint": "de2d94901e077c7c",
-   "generated": "2026-08-26T14:40:44Z",
+   "fingerprint": "830993c24672a599",
+   "generated": "2026-08-26T19:19:33Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2819,125 +2838,141 @@
     "gist": "**Nothing in this lens moved in today's opening window, and that is the honest report rather than a gap.** The sweep covered all eight active mental-health threads plus targeted checks on the AI-therapy regulatory file, the parity fight…",
     "lead": [
      {
-      "emoji": "💰",
-      "text": "Sword Health, a musculoskeletal-first digital health company, is acquiring Headspace, with the deal set to take effect September 14, 2026.",
-      "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/"
-     },
-     {
-      "emoji": "💰",
+      "emoji": "🤝",
       "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across four states.",
       "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
      },
      {
+      "emoji": "⚠️",
+      "text": "A Kaiser mental-health triage team shrank from nine clinicians to three after an automated screening tool took over their work.",
+      "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+     },
+     {
+      "emoji": "💰",
+      "text": "Headspace is being acquired by a musculoskeletal-first digital health company, with the deal set to take effect September 14.",
+      "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/"
+     },
+     {
       "emoji": "⚖️",
-      "text": "Federal inspector-general audits found failures in the enforcement of mental-health parity rules on insurers.",
-      "url": "https://bhbusiness.com/2026/08/24/new-hhs-oig-audits-expose-failures-in-parity-enforcement-compliance/"
+      "text": "California's AB 2575, which would put liability for AI-caused patient harm on the AI developer, advanced on the Senate floor.",
+      "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
      },
      {
       "emoji": "🔬",
-      "text": "Anthropic committed $5 million to independent research on what its AI model does to people in mental-health crisis.",
+      "text": "Anthropic is putting $5 million into independent research on what its own AI model does to people in a mental-health crisis.",
       "url": "https://www.anthropic.com/news/wellbeing-research-grants"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "A Kaiser mental-health triage team shrank from nine clinicians to three after an automated screening tool took over much of the work.",
-      "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "⚠️",
-        "text": "Meta has not publicly answered a US senator's letter demanding data on AI-generated child sexual abuse material in its advertisements, past the August 26 deadline the letter set.",
-        "url": null
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Federal inspector-general audits found failures in the enforcement of mental-health parity rules on insurers.",
-        "url": "https://bhbusiness.com/2026/08/24/new-hhs-oig-audits-expose-failures-in-parity-enforcement-compliance/"
-       }
-      ],
-      "emoji": "⚠️",
-      "heading": "A deadline passed without an answer"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Sword Health, a musculoskeletal-first digital health company, is acquiring Headspace, with the deal set to take effect September 14, 2026.",
-        "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/"
-       },
-       {
-        "emoji": "💰",
+        "emoji": "🤝",
         "text": "Radial acquired the management company behind Mindful Health Solutions, forming a 27-clinic interventional-psychiatry network across four states.",
         "url": "https://bhbusiness.com/2026/08/20/radial-acquires-mindful-health-solutions-eyes-pending-boom-in-brain-medicine/"
        },
        {
+        "emoji": "💰",
+        "text": "Headspace is being acquired by a musculoskeletal-first digital health company, effective September 14.",
+        "url": "https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/"
+       },
+       {
         "emoji": "🏗️",
-        "text": "HHS added the Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to its federal prevention-services funding list.",
+        "text": "HHS added the Family-Based Recovery program and the peer-support Wellness Recovery Action Plan to its Title IV-E Clearinghouse, making both federally reimbursable.",
         "url": "https://www.hhs.gov/press-room/hhs-expands-peer-support-addiction-recovery-families-foster-care.html"
        }
       ],
       "emoji": "💰",
-      "heading": "Consolidation in mental-health care"
+      "heading": "Deals and money moving"
      },
      {
       "bullets": [
        {
         "emoji": "⚖️",
-        "text": "The FDA's Rick Abramson said formal generative-AI guidance for health products is coming, speaking on the record.",
-        "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "California's AB 2575, which would hold AI developers liable for patient harm their tools cause, moved to the Senate floor on August 21.",
+        "text": "California's AB 2575, which would place liability for AI-caused patient harm on the AI developer, advanced on the Senate floor.",
         "url": "https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2575"
        },
        {
+        "emoji": "⚖️",
+        "text": "The FDA said on the record that formal guidance for generative AI in health care is coming.",
+        "url": "https://www.statnews.com/2026/08/24/fda-rick-abramson-generative-ai-guidances-are-coming/"
+       },
+       {
         "emoji": "⚠️",
-        "text": "A Kaiser mental-health triage team shrank from nine clinicians to three after an automated screening tool took over much of the work.",
-        "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+        "text": "Congress's own deadline for OpenAI and Anthropic to respond on rogue-agent incidents passed with no confirmed response.",
+        "url": "https://www.anthropic.com/news/wellbeing-research-grants"
        }
       ],
       "emoji": "⚖️",
-      "heading": "AI therapy's regulatory and labor friction"
+      "heading": "AI accountability tightens"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "A Kaiser mental-health triage team shrank from nine clinicians to three as an automated screening tool took over.",
+        "url": "https://capitalandmain.com/mental-health-workers-say-algorithmic-triage-is-hurting-patients"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Union members held coordinated pickets across 19 HCA Florida facilities over an AI scheduling system they say caused unauthorized changes and wage losses.",
+        "url": "https://hoodline.com/2026/08/florida-hca-workers-picket-in-kissimmee-tamarac-over-ai-scheduling-pay-gap/"
+       }
+      ],
+      "emoji": "⚠️",
+      "heading": "Clinicians versus algorithms"
      },
      {
       "bullets": [
        {
         "emoji": "🔬",
-        "text": "Anthropic committed $5 million to independent research on what its AI model does to people in mental-health crisis.",
+        "text": "Anthropic is funding $5 million in independent research on what its own AI model does to people in crisis.",
         "url": "https://www.anthropic.com/news/wellbeing-research-grants"
        },
        {
         "emoji": "🔬",
-        "text": "Psychologist Jean Twenge testified in the Oakland Meta trial that daily social-media use likely caused a decline in adolescent wellbeing.",
+        "text": "Psychologist Jean Twenge testified in the Oakland Meta trial that daily social media use likely caused a decline in adolescent wellbeing.",
         "url": "https://courthousenews.com/meta-questions-psychologists-testimony-in-teen-mental-health-harms-trial/"
        },
        {
         "emoji": "⚖️",
-        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis negates criminal responsibility.",
-        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
+        "text": "A federal inspector general audit found failures in enforcement of mental-health parity law.",
+        "url": "https://bhbusiness.com/2026/08/24/new-hhs-oig-audits-expose-failures-in-parity-enforcement-compliance/"
        },
        {
-        "emoji": "🔬",
-        "text": "US military researchers are testing an Israeli AI avatar as a PTSD diagnostic tool against the clinician-administered gold standard.",
-        "url": "https://www.mobihealthnews.com/news/qa-us-military-researchers-use-israeli-ai-avatar-study-ptsd-us-servicemembers"
+        "emoji": "⚖️",
+        "text": "The defense rested in the Lindsay Clancy murder trial, where jurors must decide whether untreated postpartum psychosis makes her not criminally responsible.",
+        "url": "https://www.cnn.com/2026/08/21/us/lindsay-clancy-trial-defense-rests"
        }
       ],
       "emoji": "🔬",
-      "heading": "Evidence and litigation"
+      "heading": "What the evidence shows"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🌍",
+        "text": "New Zealand's prime minister proposed an Australia-style ban on social media for people under 16.",
+        "url": "https://www.reuters.com"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The Trump administration's Justice Department filed a statement backing xAI against Minnesota's ban on AI-generated nudify images.",
+        "url": "https://www.cbsnews.com/minnesota/video/doj-supports-xai-in-lawsuit-over-minnesotas-ai-nudification-ban/"
+       }
+      ],
+      "emoji": "🌍",
+      "heading": "Youth, platforms, elsewhere"
      }
     ],
     "watch": [
-     "Whether Meta ever answers the Senate's demand for data on AI-generated abuse material in its ads, or the silence itself becomes the story.",
-     "Whether California's AB 2575 clears a full Senate vote before the session ends on August 31.",
-     "Whether the FDA's promised generative-AI guidance narrows or widens the gap between deployed AI mental-health tools and regulatory approval."
+     "Will litigation or an actual regulatory pathway end up closing the gap between AI mental-health chatbot capability and formal approval first?",
+     "Will mental-health investment keep flowing to clinician-augmentation and interventional psychiatry rather than consumer AI chatbots?",
+     "Does AI-replacement language survive the Kaiser mediation, and how do regulators respond to the DMHC and DOL complaints against its triage tools?"
     ]
    },
    "fingerprint": "8d5092ede94bb92f",
-   "generated": "2026-08-26T14:40:44Z",
+   "generated": "2026-08-26T19:19:33Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3274,6 +3309,16 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://investor.nvidia.com/"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "190fb283f5213b36",
@@ -3357,6 +3402,15 @@
     {
      "day": "2026-08-26",
      "sev": null,
+     "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia campus",
+     "threads": [
+      "anthropic-infrastructure-buildout"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
      "text": "Nvidia reports Q2 FY2026 after today's close",
      "threads": [
       "nvidia-order-book",
@@ -3372,6 +3426,16 @@
       "frontier-lab-ipos"
      ],
      "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "8186e650d8b0337b",
@@ -4533,7 +4597,18 @@
    "title": "kaiser-permanente"
   },
   "node:masayoshi-son": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
+    }
+   ],
    "fingerprint": "4e5dc15fde746d76",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -5102,12 +5177,31 @@
     {
      "day": "2026-08-26",
      "sev": null,
+     "text": "Anthropic committed $45 billion over six years to rent compute from Nscale's West Virginia campus",
+     "threads": [
+      "anthropic-infrastructure-buildout"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
      "text": "Nvidia reports Q2 FY2026 after today's close",
      "threads": [
       "nvidia-order-book",
       "ai-circular-financing-risk"
      ],
      "url": "https://investor.nvidia.com/"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "799403cf276eee74",
@@ -5258,6 +5352,16 @@
       "frontier-lab-ipos"
      ],
      "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "ae40097b529ae79f",
@@ -5395,6 +5499,16 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://investor.nvidia.com/"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "ffd96dd6c968e791",
@@ -5996,6 +6110,16 @@
       "frontier-lab-ipos"
      ],
      "url": "https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "c2ac71b8c05c2f2e",
@@ -6778,6 +6902,16 @@
       "ai-circular-financing-risk"
      ],
      "url": "https://investor.nvidia.com/"
+    },
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
     }
    ],
    "fingerprint": "5bc8ec2059e01c31",
@@ -9592,7 +9726,18 @@
    "title": "Red Sea Shock"
   },
   "thread:softbank-all-in": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-08-26",
+     "sev": null,
+     "text": "SoftBank is talking to banks about a $10-20bn bond sale to refinance its OpenAI stake, and its existing bonds sold off on the news",
+     "threads": [
+      "softbank-all-in",
+      "ai-circular-financing-risk"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing"
+    }
+   ],
    "fingerprint": "4e5dc15fde746d76",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",

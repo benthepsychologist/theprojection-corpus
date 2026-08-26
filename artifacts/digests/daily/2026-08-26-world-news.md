@@ -3,17 +3,18 @@ lens: world-news
 date: 2026-08-26
 status: building
 window_start: 2026-08-26T05:00:00-04:00
-as_of: 2026-08-26T10:30:00-04:00
+as_of: 2026-08-26T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-26
 
-*Curated agentic-interim, 05:00 ET → 10:30 ET — a five-and-a-half-hour
-opening window. Sources: one dedicated tier-2 geopolitics sweep across
+*Curated agentic-interim, 05:00 ET → 15:00 ET across two runs. The
+10:30 ET run's sources: one dedicated tier-2 geopolitics sweep across
 all four active-conflict threads plus the social-media-causality thread,
-one tier-2 macro/trade sweep, and a collector sweep. The same run
-finalized 2026-08-25 across all five lenses.*
+one tier-2 macro/trade sweep, and a collector sweep. **This 15:00 ET
+extension** added one targeted geopolitics sweep for the window since
+10:30 ET.*
 
 ## Today's throughline
 
@@ -47,13 +48,27 @@ the reasoning is written into it.
 
 ## 🚨 Flash check
 
-**No flash.** Asked and answered explicitly. The day's largest story is a
-negotiating step on a chokepoint that has been closed for months, and the
-associated oil move — down roughly 6% over two days — is a notable but
-orderly repricing, not a market halt. The test is not "is this our
-biggest story" (the throughline carries that); it is whether this would
-lead a general news front page on its own facts. A preliminary corridor
-announcement, disclaimed by the officials announcing it, does not.
+**No flash.** Asked and answered explicitly, twice today. The day's
+largest story is a negotiating step on a chokepoint that has been closed
+for months, and the associated oil move — down roughly 6% over two days
+— is a notable but orderly repricing, not a market halt. The test is not
+"is this our biggest story" (the throughline carries that); it is
+whether this would lead a general news front page on its own facts. A
+preliminary corridor announcement, disclaimed by the officials
+announcing it, does not.
+
+**Considered and excluded on re-check (15:00 ET): a hospital nursery
+fire in Islamabad, Pakistan killed 14 newborns** (ignition overnight,
+before this digest-day's own window opened at 05:00 ET, with the
+investigation and PM Shehbaz Sharif's suspension of the federal health
+secretary developing through today's business hours). It is genuinely
+front-page across CNN, NPR, Bloomberg, Al Jazeera and Dawn simultaneously
+today — closer to the flash bar's own "major disaster" example than
+anything else checked today. **Judged not to qualify**: it is a domestic
+infrastructure failure with no cross-border or market stakes, not a
+war/invasion/market-halting event at the scale the bar is set to. Logged
+here rather than silently dropped, since it came close enough to deserve
+the reasoning on the record.
 
 ## ⏳ Upcoming & expected
 
@@ -81,8 +96,18 @@ announcement, disclaimed by the officials announcing it, does not.
 
 ## 🧵 Thread candidates
 
-**None offered from this lens.** Today's world-news item routed cleanly
-onto two existing threads.
+**One offer.** Today's Hormuz item routed cleanly onto two existing
+threads; this is new ground.
+
+- **Ukrainian domestic corruption reaches Zelensky's own chief of
+  staff** *(new offer)* — Kyiv Independent and Hromadche reported today
+  that Andriy Budanov appears on wiretap recordings tied to NABU's
+  corruption case around jailed ex-Energy Minister Galushchenko and the
+  Energoatom bribery scandal. **This doesn't fit `russia-ukraine-war`'s
+  war-conduct scope** — it's a governance/graft story about the
+  administration prosecuting the war, not the war itself — and the map
+  has no thread for Ukrainian domestic politics. Not urgent given a
+  single day-one report. **Track it?**
 
 ⚠️ **`attention/world-news.yaml`, this lens's mechanically-scored
 candidate pool, could not be regenerated today** — it still carries

@@ -3,16 +3,18 @@ lens: mental-health
 date: 2026-08-26
 status: building
 window_start: 2026-08-26T05:00:00-04:00
-as_of: 2026-08-26T10:30:00-04:00
+as_of: 2026-08-26T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-26
 
-*Curated agentic-interim, 05:00 ET → 10:30 ET. Sources: one tier-2
-governance-and-mental-health sweep across eight threads, one tier-3
-cold-rotation sweep covering three mental-health threads untouched since
-late July, and a collector sweep. The same run finalized 2026-08-25.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET across two runs. The
+10:30 ET run's sources: one tier-2 governance-and-mental-health sweep
+across eight threads, one tier-3 cold-rotation sweep covering three
+mental-health threads untouched since late July, and a collector sweep.
+**This 15:00 ET extension** re-swept the same threads for the window
+since 10:30 ET — also empty.*
 
 ## Today's throughline
 
@@ -41,7 +43,8 @@ No new registrations, readouts or status changes in this window.
 
 ## ⏳ Upcoming & expected
 
-- 🚧 **`meta-warner-csam-response` — deadline day, no response found.**
+- 🚧 **`meta-warner-csam-response` — deadline day, re-checked at 15:00 ET,
+  still no response found.**
   Senator Mark Warner's 08-18 letter to Meta set today as the response
   date and demanded six specific things: per-ad detection and
   NCMEC-referral timelines, removal timelines, a legal-compliance

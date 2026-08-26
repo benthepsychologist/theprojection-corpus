@@ -3,18 +3,19 @@ lens: frontier-ai
 date: 2026-08-26
 status: building
 window_start: 2026-08-26T05:00:00-04:00
-as_of: 2026-08-26T10:30:00-04:00
+as_of: 2026-08-26T15:00:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-08-26
 
-*Curated agentic-interim, 05:00 ET → 10:30 ET. Sources: one tier-2
-semiconductors/China sweep, one tier-2 capex/power/siting sweep, one
-tier-2 financing-loop sweep, one tier-3 cold-rotation sweep across nine
-threads untouched since late July, one targeted verification sweep on
-three deferred candidate-pool clusters, and a collector sweep. The same
-run finalized 2026-08-25.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET across two runs. The
+10:30 ET run's sources: one tier-2 semiconductors/China sweep, one
+tier-2 capex/power/siting sweep, one tier-2 financing-loop sweep, one
+tier-3 cold-rotation sweep across nine threads untouched since late
+July, one targeted verification sweep on three deferred candidate-pool
+clusters, and a collector sweep. **This 15:00 ET extension** added one
+targeted sweep for the window since 10:30 ET.*
 
 ## Today's throughline
 
@@ -57,6 +58,19 @@ Virginia after a state regulator said the aquifer could not take it.
   ([Virginia Mercury](https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/))
   <!-- k: t=ai-datacenter-sites,datacenter-power-grid e= axis=capital-and-corporate -->
 
+- **Anthropic committed $45 billion over six years to rent compute from
+  Nscale's West Virginia campus** — roughly 460 megawatts at Nscale's
+  2,250-acre site (theoretical build-out to 8GW), running Nvidia's
+  next-generation Vera Rubin chips coming online late 2027. Reporting
+  frames it as Anthropic locking in capacity ahead of a potential IPO.
+  **This is the fifth anchor-lease counterparty this thread has recorded
+  in barely three months** (SpaceX ~$45B, Volta $10B/Norway, Riot
+  Platforms $9.1B, Theseus with Macquarie/GIC), the same rent-not-own
+  pattern each time — the capex sits on someone else's balance sheet,
+  the lease obligation sits on Anthropic's.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power))
+  <!-- k: t=anthropic-infrastructure-buildout e=anthropic axis=capital-and-corporate -->
+
 ## ⏱ Release-watch & markets
 
 - **Nvidia reports Q2 FY2026 after today's close** — the call is
@@ -84,8 +98,12 @@ Virginia after a state regulator said the aquifer could not take it.
   session had not happened at flip time. Organised opposition now has a
   legal vehicle: the Protect Effingham Alliance, a resident-formed
   501(c)(4) since 08-17, planning its own September town halls.
-- 🚧 **Due today, unresolved:** `nvidia-q2-fy2026-earnings` (17:00 ET) ·
-  `georgia-psc-camellia-staff-decision-0826` (newly logged).
+- 🚧 **Due today, still unresolved at 15:00 ET:**
+  `nvidia-q2-fy2026-earnings` (confirmed after today's close, ~17:00 ET —
+  too early to check) · `georgia-psc-camellia-staff-decision-0826` (no
+  staff filing found yet; PSC filings often land end-of-day, re-check
+  this evening or tomorrow morning — genuinely too early to call, not a
+  slip or a silence).
 - ⚠️ **`apple-cxmt-senate-deadline` re-checked and still `passed-silent`**
   — five days past due, no Apple statement and no Senate follow-up on any
   signer's page. Today's apparent activity is a wave of "CXMT rejects

@@ -3,17 +3,18 @@ lens: global-capital
 date: 2026-08-26
 status: building
 window_start: 2026-08-26T05:00:00-04:00
-as_of: 2026-08-26T10:30:00-04:00
+as_of: 2026-08-26T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-26
 
-*Curated agentic-interim, 05:00 ET → 10:30 ET. Sources: two tier-2
-macro/Fed/trade sweeps (the second a re-dispatch after the first ran
-silent past its siblings — it caught the PCE print the first missed),
-one tier-2 financing-loop sweep, one tier-2 geopolitics sweep, and a
-collector sweep. The same run finalized 2026-08-25.*
+*Curated agentic-interim, 05:00 ET → 15:00 ET across two runs. The
+10:30 ET run's sources: two tier-2 macro/Fed/trade sweeps (the second a
+re-dispatch after the first ran silent past its siblings — it caught the
+PCE print the first missed), one tier-2 financing-loop sweep, one tier-2
+geopolitics sweep, and a collector sweep. **This 15:00 ET extension**
+added one targeted sweep for the window since 10:30 ET.*
 
 ## Today's throughline
 
@@ -103,6 +104,34 @@ this the quiet half of the day rather than the whole of it.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e= axis=capital-in-my-markets -->
 
+- **SoftBank is talking to banks about a $10-20bn bond sale to refinance
+  its OpenAI stake, and its existing bonds sold off on the news** —
+  Bloomberg reported SoftBank is weighing a dollar/euro offering,
+  possibly as soon as September, to partly repay the $40bn bridge loan
+  behind its OpenAI investment (it is committed to nearly $65bn by
+  October, funded substantially by debt). SoftBank confirmed to
+  Bloomberg it is "considering options." **The market reaction is the
+  same-day evidence**: SoftBank's existing 8.5% 2036 notes fell as much
+  as 2.5 cents to about 98 cents on the dollar in today's trading — a
+  second retail/wholesale financing leg stacking on top of the ¥1
+  trillion retail bond already priced for 09-04.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing),
+  [Investing.com](https://www.investing.com/news/stock-market-news/softbank-weighs-up-to-20-bln-bond-sale-to-refinance-openai-loan--bloomberg-4876268))
+  <!-- k: t=softbank-all-in,ai-circular-financing-risk e=softbank axis=capital-in-my-markets -->
+
+- **Treasury's 5-year note auction priced at a 4.659% high yield with a
+  2.39 bid-to-cover ratio**, against a 2.46 average over the prior ten
+  auctions — a lower cover ratio, which conventionally reads as
+  modestly weaker demand. ⚠️ **Sourcing caveat, flagged rather than
+  resolved:** the only source found headlines this "above average
+  demand" while reporting the same numbers, which is not what a lower
+  bid-to-cover normally means. Logging the auction result on
+  `treasury-long-end-intervention` — the thread this kind of
+  auction-demand data point exists to track — without asserting a
+  direction on demand strength until a second source clarifies.
+  ([RTTNews](https://www.rttnews.com/3684932/five-year-note-auction-attracts-slightly-above-average-demand.aspx))
+  <!-- k: t=treasury-long-end-intervention e= axis=capital-in-my-markets -->
+
 ## 📊 Macro strip
 
 - **PCE headline (July)** — 3.7% y/y, +0.1pp vs consensus · **PCE core** — 3.3% y/y, in line
@@ -123,14 +152,22 @@ this the quiet half of the day rather than the whole of it.
   is recycled 08-05 reporting) · `iran-oman-hormuz-deal-signing` (real
   movement, still fails its own bar) · `openai-anthropic-congress-safety-disclosure-0824`
   (grace day 2 of 3, runs to 08-27).
-- 🚧 **Pending and due today, unresolved at time of writing:**
+- 🚧 **Pending and due today, re-checked at 15:00 ET, still unresolved:**
   `nvidia-q2-fy2026-earnings` (call confirmed for **17:00 ET today**,
   covering the quarter ended 07-26; consensus clusters around $91-95bn
   revenue and ~$2.09 adjusted EPS, with options pricing roughly a $280bn
-  market-cap swing) · `lisa-cook-removal-response` (deadline day, no
-  public response — see above) · `meta-warner-csam-response` (deadline
-  day, no Meta response found) · `georgia-psc-camellia-staff-decision-0826`
-  (newly logged today).
+  market-cap swing — genuinely too early, the print hasn't happened) ·
+  `lisa-cook-removal-response` (Cook's counsel Abbe Lowell has publicly
+  rebutted the underlying allegations since 08-07, but no report yet of
+  the formal written response the 08-05 letter demanded by today — an
+  informal rebuttal already exists, a dated filing does not, so this
+  stays `pending` rather than flipping either way) ·
+  `meta-warner-csam-response` (still no Meta statement or Warner-office
+  acknowledgment found) · `georgia-psc-camellia-staff-decision-0826`
+  (no staff filing found; PSC filings often land end-of-day). **None of
+  the four should be read as silence yet** — 15:00 ET is simply too early
+  on a same-day deadline for most of these outcomes to be public; the
+  next run is the real check.
 - 📋 **Next 7 days:** Jackson Hole symposium 08-27→08-29, with **Kevin
   Warsh's first keynote as Fed chair on 08-28** · Effingham County
   commissioners' Project Camellia work session 08-29 · Broadcom Q3

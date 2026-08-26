@@ -6036,6 +6036,23 @@ its primary source and timestamp.
   closed at `kestrel-ops`, upstream as `cloud-researcher` #4 /
   `kestrel` #30 — noting the cost, not re-filing.** Everything published
   today came from the agentic sweeps.
+- 🔧 **The exact working invocation, found the hard way — record it.**
+  `collect` needs **BOTH** halves set, because reads and writes resolve
+  from different places:
+
+      KESTREL_INSTANCE=/workspace/theprojection-corpus \
+        cloud-researcher collect --corpus /workspace/theprojection-corpus \
+        --source google_news_rss --since <ISO>
+
+  `KESTREL_INSTANCE` feeds `collect.py`'s attention-map **reads**;
+  `--corpus` feeds `collectors/base.py`'s buffer/provenance **writes**.
+  Setting only `--corpus` fails immediately on a missing
+  `attention/watchlist.yaml`. Setting only `KESTREL_INSTANCE` runs the
+  entire sweep and then dies at write time on
+  `AttributeError: 'NoneType' object has no attribute 'mkdir'` — a
+  21-minute sweep thrown away at the last step, which is how this session
+  found it. This is the same already-filed bug (`cloud-researcher` #4 /
+  `kestrel` #30); what is new is the precise both-halves workaround.
 - 💡 **Skill drift worth a decision:** `/publish`'s SKILL.md still says
   it is "Not part of `/daily`" and that `/daily` "only renders +
   republishes the private artifact page." The private page was retired
@@ -6050,3 +6067,89 @@ this run**: Nvidia Q2 (reported 17:00 ET), the Cook deadline, the
 Meta/Warner deadline, and the Georgia PSC Camellia decision. On three of
 them silence is the loud outcome, and the next run should flip all four.
 Three thread candidates are open for Ben, one on its final offer.
+
+## 2026-08-26 (15:20 ET) — `/daily`: four-hour extension (10:30→15:00 ET), a correction to the morning's due-item framing, and the public site refresh
+
+**This run extended 08-26 from its 10:30 ET opening window to 15:00 ET**
+rather than finalizing anything — the digest-day doesn't close until
+05:00 ET tomorrow, so `status: building` / `coverage: pending` is
+correct and unchanged across all five files. One dedicated agent
+re-checked the four expectations due today; one sweep agent ran per
+lens (frontier-ai, global-capital, mental-health, world-news).
+
+**The real finding is a correction, not a new fact.** The 11:00 ET run's
+front digest had framed the Lisa Cook and Meta/Warner deadlines as
+already-produced silence. A closer 15:00 ET check found that premature:
+Cook's counsel (Abbe Lowell) has publicly rebutted the underlying
+allegations since 08-07, but no report yet of the specific formal
+written response the 08-05 letter demanded by today — an informal
+rebuttal exists, a dated filing doesn't, so the entry stays `pending`
+rather than reading as confirmed silence. Meta's situation and the
+Georgia PSC Camellia staff decision are genuinely unresolved too — PSC
+filings often land end-of-day. Nvidia's earnings are simply not out yet
+(after the 17:00 ET close). All four expectations remain `status:
+pending` in `upcoming.yaml` — no flip either way, and none was ever
+mis-set there; the correction was to the digests' narrative framing, not
+the ledger.
+
+**Two real capital developments landed:**
+- **Anthropic → Nscale, $45B over 6 years, ~460MW, West Virginia** — a
+  sixth anchor-lease compute counterparty (after SpaceX, Volta, Riot
+  Platforms, Theseus), this one priced against Nvidia's Vera Rubin chips
+  before they've shipped. Logged to `anthropic-infrastructure-buildout`
+  (digest + thread timeline + `actor-doing.yaml`).
+- **SoftBank's second bond leg** — a $10-20bn wholesale/international
+  sale floated alongside the already-priced ¥1 trillion retail bond,
+  with SoftBank's existing 2036 notes selling off same-day. Logged to
+  `softbank-all-in` and `treasury-long-end-intervention` also got the
+  day's 5-year Treasury auction result (2.39 bid-to-cover vs 2.46
+  average) — flagged rather than resolved, since the only source found
+  headlines it "above average demand" while reporting numbers that read
+  the opposite way.
+
+**One new thread candidate offered:** Ukrainian domestic corruption
+reaching Zelensky's chief of staff Andriy Budanov (NABU wiretaps tied to
+the Galushchenko/Energoatom case) — doesn't fit `russia-ukraine-war`'s
+war-conduct scope, no existing thread for Ukrainian domestic politics,
+single day-one report, not urgent.
+
+**One flash-check judgment call, reasoned on the record rather than
+silently dropped:** a Pakistan hospital nursery fire killed 14 newborns,
+genuinely front-page across CNN/NPR/Bloomberg/Al Jazeera/Dawn
+simultaneously today — closer to the flash bar's own "major disaster"
+example than anything else checked this run. Judged **not** to qualify:
+domestic infrastructure failure, no cross-border or market stakes, not
+war/invasion/market-halt scale. No flash filed.
+
+### Machinery
+
+- ⛔ **`bq`/BigQuery still broken — day eleven.** Re-verified directly
+  this run (`bq query` still fails with the same reauth error). No
+  change possible without Ben running `gcloud auth login` interactively.
+- ⚠️ **The collector sweep reproduced the same keyless-429-style stall
+  as 2026-08-25's evening run, this time on a single-source
+  invocation.** `KESTREL_INSTANCE=... cloud-researcher collect
+  --corpus ... --source google_news_rss --since ...` — the documented
+  both-halves workaround — ran for 19 minutes producing zero buffer
+  files before being killed manually rather than waiting out a longer
+  timeout. Not re-filing (already tracked as `cloud-researcher` #4 /
+  `kestrel` #30); noting that the stall now reproduces even with a
+  single fast source specified, which the existing bug report may not
+  cover — worth a glance next time `kestrel-ops` triages it. Everything
+  in this run's digests came from the five agentic sweeps.
+- ✅ **Public site refreshed and pushed.** Built all four briefing packs
+  (front + 3 lenses) via `theprojection readouts --pack` →
+  `--apply` → `--export` (154 readouts, all four applied clean, no
+  validation rejects), then `kestrel publish --instance . --push`:
+  103 threads, 61 entities, 3 beat pages, 822 stories, 4
+  interpretations, 122 map pages, 0 secret-scan skips. Site repo
+  committed/pushed, Cloudflare build `231171bb-53b7-4f5e-9b64-055679a37472`
+  queued.
+
+**Pick-up for next session:** 08-26 stays `building`/`coverage: pending`
+across all five files — correct, the digest-day hasn't closed. The same
+four expectations are still due and now genuinely re-checkable this
+evening: Nvidia's print is out by then, and Meta/Warner + Georgia PSC
+silence-past-end-of-day would be the loud outcome if nothing surfaces.
+Four thread candidates are open for Ben (three carried from 11:00 ET,
+one new this run) — none urgent.

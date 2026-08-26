@@ -24,6 +24,15 @@ whether any auction result or yield move ties back to it explicitly.
   [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/treasuries-edge-lower-before-pce-data-with-fed-risks-in-focus))
   ⟨daily 2026-08-26⟩
 
+- **The day's $70bn 5-year note auction priced at a 4.659% high yield
+  with a 2.39 bid-to-cover ratio**, against a 2.46 average over the prior
+  ten auctions — a lower cover ratio, conventionally a modestly weaker
+  demand signal. ⚠️ The only source found headlines this "above average
+  demand" while reporting the same numbers; flagging the contradiction
+  rather than asserting a direction until a second source clarifies.
+  ([RTTNews](https://www.rttnews.com/3684932/five-year-note-auction-attracts-slightly-above-average-demand.aspx))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Thread opened, backfilled from `fed-independence-fight`
 
 - **Opened on Ben's promotion of a candidate offered five times.** The

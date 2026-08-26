@@ -18,6 +18,21 @@ counterparty mix drifting from clouds toward miners and infrastructure
 funds; and the Theseus consumer-electricity commitment, the first
 contractual concession this map has seen a lab make to ratepayer politics.
 
+## 2026-08-26 — A sixth counterparty, and a chip generation not yet shipped
+
+- **Anthropic committed $45 billion over six years to rent roughly 460
+  megawatts of compute from Nscale's 2,250-acre West Virginia campus**
+  (theoretical build-out to 8GW), which will run Nvidia's next-generation
+  Vera Rubin chips coming online late 2027. Reporting frames it as
+  capacity locked in ahead of a potential IPO. **The pattern holds for a
+  fifth and now effectively sixth time** — SpaceX (~$45B), Volta
+  ($10B/Norway), Riot Platforms ($9.1B), Theseus (Macquarie/GIC), and now
+  Nscale: rent and anchor, never own, so the capex sits on someone else's
+  balance sheet while the lease obligation sits on Anthropic's. New this
+  time: the deal is priced against silicon that hasn't shipped yet.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-21 — Anthropic buys the ability to design its own silicon
 
 - **Anthropic hired Amir Salek — founder and head of Google's
