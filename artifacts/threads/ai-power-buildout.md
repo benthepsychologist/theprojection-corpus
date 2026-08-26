@@ -10,6 +10,34 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-25 — Regulator deadline on Camellia; a campus that brings its own generation
+
+- **Georgia PSC staff hit their deadline to refer or object to Georgia
+  Power's 3.2 GW Project Camellia contract with OpenAI, having signalled
+  they would object absent changes.** The Effingham County campus is to
+  be delivered in phases 2028-2032. This is the first of this thread's
+  siting fights to reach a state utility regulator rather than a county
+  zoning board — a materially higher bar.
+  ([The Current GA](https://thecurrentga.org/2026/08/25/psc-deadline-arrives-for-georgia-powers-3-2-gigawatt-openai-data-center-contract/))
+  ⟨daily 2026-08-25⟩
+
+- **Backers of "Project River" filed rezoning and annexation applications
+  for an $11.3bn Bradley County, Tennessee campus pairing a large data
+  center with on-site natural-gas and biomass generation.** Public forums
+  are set for 09-01 and 09-12 before any vote. The bring-your-own-
+  generation pattern routes around the interconnection queue that has
+  been the binding constraint at most of this thread's other sites.
+  ([Chattanoogan](https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx))
+  ⟨daily 2026-08-25⟩
+
+- **A Global Energy Monitor analysis found the US now building roughly
+  twice as much gas-fired capacity as China, with AI data-center demand
+  the stated driver.** US gas capacity under development rose 50% since
+  January, from 252GW to 378GW, after a 76% jump in projects under
+  construction in the first half of 2026.
+  ([Global Energy Monitor, via The Guardian](https://www.chinastrategy.org/2026/08/25/us-building-twice-as-much-gas-fired-capacity-as-china-in-ai-boom-analysis-finds/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 (late catch, added 2026-08-25) — The Lancium equity stake becomes a 15+ GW deployment platform
 
 - **Three days after taking an equity position in Lancium, Nvidia turned

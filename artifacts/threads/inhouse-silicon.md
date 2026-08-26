@@ -15,6 +15,21 @@ reducing Nvidia dependence, but only for INFERENCE and via two anchor cases
 dollars Nvidia demand still grows; the clearest winners are the co-design
 houses (Broadcom, Marvell), not the hyperscalers.
 
+## 2026-08-25 — Jalapeño's first public benchmarks land at Hot Chips
+
+- **OpenAI and Broadcom published Jalapeño's first performance
+  benchmarks at Hot Chips 2026, claiming better performance-per-watt
+  than Nvidia's flagship.** The inference ASIC the two announced in June
+  was disclosed at 700W TDP, with a 128-chip pod at 1.7 exaflops in
+  4-bit and 27.5TB of HBM4, and claimed advantages up to 1.9x
+  throughput-per-kilowatt and 3.6x lower latency on SemiAnalysis's
+  InferenceX benchmark; small-scale deployment inside OpenAI is targeted
+  for end-2026, broader rollout 2027. The June item was a partnership
+  announcement — this is the first evidence the silicon works.
+  ([OpenAI](https://openai.com/index/jalapeno-first-results/),
+  [TechCrunch](https://www.techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-21 — Anthropic hires the founding architect of Google's TPU program
 
 - **Amir Salek, who founded and led Google's custom-silicon division from

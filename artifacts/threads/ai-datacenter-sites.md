@@ -10,6 +10,47 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in CONCRETE — the specific gigawatt campuses. Stargate, Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands; the specific-sites worklist lives here.
 
+## 2026-08-26 — Amazon withdraws a groundwater bid after Virginia says no
+
+- **Amazon Data Services withdrew its Virginia DEQ application to draw up
+  to 6.4 million gallons a year from the Potomac aquifer for the proposed
+  Birchwood Tech Campus in King George County**, after a DEQ report warned
+  the aquifer could not absorb major new withdrawals and a state senator
+  called the request "indefensible." Water is now doing what
+  interconnection queues have been doing — a hard physical constraint a
+  siting decision has to route around rather than negotiate.
+  ([Virginia Mercury](https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/))
+  ⟨daily 2026-08-26⟩
+
+## 2026-08-25 — A state regulator, a unanimous denial, and an $11bn filing in one day
+
+- **Georgia PSC staff hit their deadline to refer or object to Georgia
+  Power's 3.2 GW Project Camellia contract with OpenAI, having signalled
+  they would object absent changes.** The Effingham County campus is to
+  be delivered in phases 2028-2032. This is the first of this thread's
+  siting fights to reach a state utility regulator rather than a county
+  zoning board — a materially higher bar.
+  ([The Current GA](https://thecurrentga.org/2026/08/25/psc-deadline-arrives-for-georgia-powers-3-2-gigawatt-openai-data-center-contract/))
+  ⟨daily 2026-08-25⟩
+
+- **Pataskala, Ohio's city council voted unanimously to deny Aligned Data
+  Centers' site plan for the Pataskala Corporate Park.** A separate
+  resident-driven ballot measure on a broader data-center ban still goes
+  to voters in November. The unanimity is the signal — this thread has
+  logged many contested votes, but a zero-dissent denial with a ballot
+  measure still queued behind it is a different political fact.
+  ([NBC4 WCMH](https://www.nbc4i.com/news/local-news/central-ohio-news/datacenters/pataskala-city-council-votes-against-data-center-proposal/))
+  ⟨daily 2026-08-25⟩
+
+- **Backers of "Project River" filed rezoning and annexation applications
+  for an $11.3bn Bradley County, Tennessee campus pairing a large data
+  center with on-site natural-gas and biomass generation.** Public forums
+  are set for 09-01 and 09-12 before any vote. The bring-your-own-
+  generation pattern routes around the interconnection queue that has
+  been the binding constraint at most of this thread's other sites.
+  ([Chattanoogan](https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-23 — The governor of the buildout's biggest state says the data centers "dug their own grave"
 
 - **Texas Governor Greg Abbott, on ABC's *This Week*, said data-center

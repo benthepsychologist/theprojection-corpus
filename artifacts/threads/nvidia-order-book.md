@@ -17,6 +17,40 @@ constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
 - **Morgan Stanley estimates Nvidia's new Vera Rubin chips could contribute nearly $9B in sales in the fiscal third quarter ending October, the first analyst dollar figure attached to the Blackwell-to-Rubin transition this thread has recorded.** Wall Street consensus separately expects Nvidia to guide third-quarter revenue up 82.8% year-on-year to $104.2B when it reports Wednesday. The order book's demand side has run for months on Huang's own ~$1T aggregate figure; this is the first outside, per-product estimate of how much of it Rubin specifically is expected to deliver in the near term. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html)) ⟨daily 2026-08-25⟩
 
+- **OpenAI and Broadcom published Jalapeño's first performance
+  benchmarks at Hot Chips 2026, claiming better performance-per-watt
+  than Nvidia's flagship.** The inference ASIC the two announced in June
+  was disclosed at 700W TDP, with a 128-chip pod at 1.7 exaflops in
+  4-bit and 27.5TB of HBM4, and claimed advantages up to 1.9x
+  throughput-per-kilowatt and 3.6x lower latency on SemiAnalysis's
+  InferenceX benchmark; small-scale deployment inside OpenAI is targeted
+  for end-2026, broader rollout 2027. The June item was a partnership
+  announcement — this is the first evidence the silicon works.
+  ([OpenAI](https://openai.com/index/jalapeno-first-results/),
+  [TechCrunch](https://www.techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/))
+  ⟨daily 2026-08-25⟩
+
+## 2026-08-24 (late catch, added 2026-08-26) — SpaceXAI adopts Nvidia's Vera CPU and the NVL72 rack, including for orbit
+
+- **Nvidia announced that SpaceXAI is adopting the Vera Rubin NVL72 rack
+  architecture — Vera CPUs plus Rubin GPUs — for gigawatt-scale
+  terrestrial data centers and for the planned first-generation Starmind
+  AI1 satellite.** This extends the exclusive Starmind arrangement already
+  on this timeline from 2026-08-05: that entry established the deal, this
+  one names the silicon. ⚠️ Nvidia's own release labels the orbital piece
+  **planned** and carries a forward-looking-statements disclaimer;
+  reported prototype testing is early 2027, so nothing has flown. The
+  "first-ever standalone CPU" framing circulating in secondary coverage is
+  stale — the standalone Vera CPU launched separately in June 2026.
+  ([NVIDIA Newsroom](https://nvidianews.nvidia.com/news/spacexai-adopts-nvidia-vera-cpu-to-accelerate-agentic-ai-at-massive-scale),
+  [The Register](https://www.theregister.com/off-prem/2026/08/25/spacex-claims-it-will-put-a-vera-rubin-nvl72-rack-scale-system-into-orbit-next-year))
+  ⟨daily 2026-08-24⟩
+  <!-- k: surfaced 2026-08-26 while verifying four items the frontier-ai
+       coverage critic had flagged as 08-25 misses. All four proved to be
+       08-24/08-23 events, three already covered — this was the only real
+       increment, and it is filed under 08-24's marker without reopening
+       that closed day. -->
+
 ## 2026-08-10 — Nvidia recruits Wall Street to finance $500B of demand-side buildout
 
 - **Nvidia partnered with six asset managers — Apollo, BlackRock,

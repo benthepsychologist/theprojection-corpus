@@ -14,6 +14,18 @@ trend across all four sub-threads (google-capex, meta-capex, aws-capex,
 microsoft-capex), credit-market reaction to debt-financed capex, and any
 hyperscaler actually pulling back.
 
+## 2026-08-25 — OpenAI's data-center chief departs mid-buildout
+
+- **Chris Malone, who ran the data-center buildout underpinning OpenAI's
+  roughly $600bn compute-spend target through 2030, left the company.**
+  His responsibilities were split among three named leaders reporting to
+  VP Sachin Katti; reporting counts him as the thirteenth senior
+  departure of 2026, ahead of a planned 2027 listing. The buildout is
+  the company's largest financial commitment and its coordinator changed
+  mid-flight.
+  ([CNBC](https://www.cnbc.com/2026/08/25/openais-head-of-data-centers-chris-malone-is-out-in-latest-exec-exit.html))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-22 — Every 2026 capex plan was sized against a cost base that just moved
 
 - **Nvidia told Microsoft's, Google's and Oracle's server manufacturers

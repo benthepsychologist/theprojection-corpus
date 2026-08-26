@@ -13,6 +13,29 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-26 — Z.AI claims "Ox Alpha" and opens the weights
+
+- **Zhipu/Z.AI confirmed it built "Ox Alpha," the stealth reasoning and
+  coding model that had passed DeepSeek to top OpenRouter usage since an
+  uncredited weekend release, and said it would open the weights the same
+  night.** Anonymity as a launch tactic is the novel part: the model
+  earned its leaderboard position without a national label attached, and
+  the label arrived only once the position was unarguable. This resolves
+  a thread candidate this map had carried unattributed for two runs.
+  ([Bloomberg, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html))
+  ⟨daily 2026-08-26⟩
+
+## 2026-08-25 — Moonshot seeks US cloud distribution for Kimi K3
+
+- **Moonshot AI opened talks with Microsoft, Amazon and Google to host
+  Kimi K3 under a revenue-share worth up to 30% to the clouds.** Reuters
+  reported the discussions as early, with the split, data access and
+  token-tracking mechanics all unresolved. It inverts the usual
+  direction of this story: a Chinese lab selling *through* US
+  infrastructure rather than building away from it.
+  ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/exclusive-chinas-moonshot-talks-microsoft-075340033.html))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 (late catch, added 2026-08-25) — Xiaomi ships a 3nm in-house flagship SoC, and TSMC builds it
 
 - **Xiaomi unveiled the Xring/Xuanjie O3, a 3-nanometre flagship

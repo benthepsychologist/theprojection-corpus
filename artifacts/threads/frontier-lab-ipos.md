@@ -12,6 +12,17 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-26 — Analysts start doing the arithmetic on Anthropic's $30tn pitch
+
+- **Analysts pushed back on Anthropic's $30 trillion addressable-market
+  pitch, noting that all S&P 1500 technology companies combined generate
+  roughly $2.4 trillion of annual revenue.** NYU's Aswath Damodaran was
+  among those quoted. The pitch itself is filed under 08-25; what is new
+  is the arithmetic objection, and it is the specific number the
+  prospectus will have to defend against $11.6bn of realised Q2 revenue.
+  ([TipRanks, summarizing the WSJ report](https://www.tipranks.com/news/anthropic-pitches-investors-a-30t-revenue-opportunity-bigger-than-spacexs-spcx-ipo-record))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Anthropic's IPO pitch puts a number on the whole opportunity: over $30 trillion
 
 - **Anthropic is preparing to tell IPO investors its total addressable

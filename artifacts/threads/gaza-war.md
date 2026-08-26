@@ -39,6 +39,24 @@ of the population?
   [Al Jazeera](https://www.aljazeera.com/news/2026/8/25/palestine-weekly-after-kushner-departs-israel-escalates-gaza-attacks))
   ⟨daily 2026-08-25⟩
 
+- **Israel's foreign minister Gideon Sa'ar ordered Dutch representatives
+  removed from the US-backed Gaza civil-military coordination centre**,
+  in response to the Netherlands' ban on imports from Israeli
+  settlements. This is the aid channel being used as a retaliation
+  instrument against a third-party government's trade policy — a
+  different mechanism from the access disputes this thread usually logs.
+  ([The Times of Israel](https://www.timesofisrael.com/))
+  ⟨daily 2026-08-25⟩
+
+- **The UN human rights office called "outrageous" an Israeli threat to
+  evacuate Gaza neighbourhoods where children fly kites**, after the
+  US-backed Board of Peace classified kite-flying as "armed activity";
+  Hamas rejected the framing. The classification is the substance — it
+  sets the threshold at which civilian activity becomes grounds for
+  forced displacement.
+  ([Al Jazeera](https://www.aljazeera.com/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Sunday's threat to "intensify strikes" becomes Monday's casualties
 
 - **Israel's Sunday threat to "intensify strikes" turned into lethal follow-through on Monday.** A 4-year-old boy — named by the Palestine Chronicle as Mohammed Taha — was killed by shrapnel and debris in an IDF strike on a building near Zawaida whose owners had been warned to leave; separately, a drone strike on a displacement tent in Deir al-Balah, central Gaza, killed two more Palestinians early Monday. Outlets cumulatively report 3-5 Gaza deaths across the window tied to the kite-launch pretext. This is Monday's actual casualty events, distinct from the Sunday *threat* this thread already logged (08-23: Netanyahu and Defence Minister Katz's joint statement threatening to "intensify strikes" over kite and balloon launches from Gaza).

@@ -12,6 +12,18 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
+## 2026-08-26 — A hot headline PCE moves the long end barely at all
+
+- **July PCE printed 3.7% year-over-year on the headline, a tenth above
+  consensus, with core at 3.3% as forecast — and Treasury yields barely
+  moved.** The 2-year fell about a basis point to 4.176%, the 10-year rose
+  about two to 4.643%, the 30-year fell about one to 5.166%, with a crude
+  selloff offsetting the hotter headline. A consensus-beating print that
+  moves nothing suggests the hawkish hold it supports is already priced.
+  ([CNBC](https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/treasuries-edge-lower-before-pce-data-with-fed-risks-in-focus))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Thread opened, backfilled from `fed-independence-fight`
 
 - **Opened on Ben's promotion of a candidate offered five times.** The

@@ -17,6 +17,26 @@ correction here hits everything in radar Q1/Q2.
 
 - **Wire-service earnings previews ahead of Wednesday's print are now explicitly framing "circular financing" as the thing Nvidia's quarter has to answer, not a side debate** — citing this month's $500B Wall Street financing-platform mobilization and the $105B OpenAI Ohio guarantee as the two facts investors are weighing against the risk that they "artificially inflate demand and distort broader economic signals." That framing appearing in a mainstream pre-earnings wire story, rather than in Burry's Substack or a critic's newsletter, is the new fact: the loop is now the market's own lens on the print, not a minority read of it. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html)) ⟨daily 2026-08-25⟩
 
+## 2026-08-24 (late catch, added 2026-08-26) — The SEC subpoenas four banks over their exposure to the AI fund that blew up
+
+- **The SEC subpoenaed Goldman Sachs, JPMorgan, Citigroup and Bank of
+  America for records on their exposure to Situational Awareness**, the
+  AI-narrative fund run by former OpenAI researcher Leopold Aschenbrenner
+  whose leveraged, concentrated positions — including SK Hynix and
+  CoreWeave — were force-liquidated last month (already on this timeline
+  at 2026-07-30 and 2026-08-07). **This closes a loop the thread has been
+  arguing rather than observing:** the concern has been that AI-narrative
+  leverage sits on bank balance sheets, and a regulator is now formally
+  demanding to see how much.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-24/sec-subpoenas-wall-street-banks-over-situational-awareness),
+  [CNBC](https://www.cnbc.com/2026/08/25/sec-situational-awareness-hedge-fund-subpoenas.html))
+  ⟨daily 2026-08-24⟩
+  <!-- k: caught 2026-08-26 by the global-capital coverage critic on the
+       08-25 finalize. The Bloomberg original is dated 08-24, so it is
+       filed under that day's marker — 08-24 is closed and final and is
+       NOT reopened. It had fallen between two digest-days: absent from
+       the 08-24 page and from the 08-25 page both. -->
+
 ## 2026-08-21 — OpenAI's revenue growth reported to retake the lead from Anthropic
 
 - **OpenAI's revenue is reported up 35% this quarter with enterprise

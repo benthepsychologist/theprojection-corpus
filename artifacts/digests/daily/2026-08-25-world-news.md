@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-08-25
-status: building
+status: final
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T15:00:00-04:00
+finalized: 2026-08-26T11:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -139,6 +139,60 @@ sweep) — tied explicitly to Netanyahu's approaching election.
   ([Haaretz live](https://www.haaretz.com/israel-news/israel-security/2026-08-25/ty-article-live/two-children-among-four-people-killed-in-gaza-strikes-officials-say/000001a0-3656-dfc3-abf8-b656da950000),
   [Al Jazeera](https://www.aljazeera.com/news/2026/8/25/palestine-weekly-after-kushner-departs-israel-escalates-gaza-attacks))
   <!-- k: t=gaza-war e=israel axis=items -->
+
+## 🌙 Evening & overnight (15:00 → 05:00 ET) — finalize pass
+
+*Added 2026-08-26 on the finalize run, closing this digest-day's full
+05:00 → 05:00 window.*
+
+- **The CIA director made an unannounced visit to Moscow.** John
+  Ratcliffe met Russian intelligence counterparts — not Putin — with the
+  trip surfacing after a US military transport landed in Moscow; the
+  Kremlin confirmed it the following day. **Outlets could not establish
+  the purpose**, and it sits across both the Ukraine and Iran files, so
+  it is logged as an event rather than read as a signal about either.
+  ([The New York Times](https://www.nytimes.com/), corroborated by
+  Reuters, CBS, Axios and The Guardian)
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **Ukrainian drones hit a Lukoil refinery deep inside Russia.** The
+  strike on the Kstovo refinery in Nizhny Novgorod Oblast was confirmed
+  by Ukraine's General Staff, with fires also reported the same night at
+  a logistics hub of Wildberries, Russia's largest online retailer;
+  Russia claimed it downed 426 drones. **The refinery-strike campaign
+  continues to target the export-revenue side of Russia's war economy**
+  rather than the front line.
+  ([Kyiv Independent](https://kyivindependent.com/), cross-verified
+  across seven Ukrainian and Russian-language outlets)
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **A Russian strike on Chernihiv killed a woman and her four-year-old
+  daughter.** A 14-year-old was hospitalised; the morning strike on a
+  private home came as part of a reported 162-drone overnight barrage.
+  ([Kyiv Post](https://www.kyivpost.com/), with Ukrainska Pravda and The
+  New Voice of Ukraine)
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **Israel expelled Dutch officials from the Gaza aid coordination
+  centre.** Foreign minister Gideon Sa'ar ordered Dutch representatives
+  removed from the US-backed civil-military coordination centre in
+  response to the Netherlands' ban on imports from Israeli settlements.
+  **This is the aid channel being used as a retaliation instrument
+  against a third-party government's trade policy** — a different
+  mechanism from the access disputes this thread usually logs.
+  ([The Times of Israel](https://www.timesofisrael.com/))
+  <!-- k: t=gaza-war e= axis=items -->
+
+- **The UN human rights office called an Israeli evacuation threat over
+  kite-flying "outrageous."** Spokeswoman Ravina Shamdasani rejected a
+  threat issued days earlier by Netanyahu and defence minister Katz to
+  evacuate Gaza neighbourhoods where children fly kites, after the
+  US-backed Board of Peace classified kite-flying as "armed activity";
+  Hamas rejected the framing. **The classification is the substance** —
+  it sets the threshold at which civilian activity becomes grounds for
+  forced displacement.
+  ([Al Jazeera](https://www.aljazeera.com/))
+  <!-- k: t=gaza-war e= axis=items -->
 
 ## 🚨 Flash check
 

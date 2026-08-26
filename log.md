@@ -5931,3 +5931,122 @@ login`). No thread-candidate decisions outstanding. The internal read
 page is gone for good — don't re-add a `render-read` call to `/daily` or
 `/week` without reading `AGENTS.md` discipline 8 and this session's
 `fb3a316` commit message first.
+
+## 2026-08-26 (11:00 ET) — `/daily`: 08-25 finalized in full, 08-26 opened, and the coverage critic's own findings needed auditing
+
+**The run advanced two digest-days and published.** 08-25 went
+`building` → `final` across all five files with `coverage: done` on the
+three critic-bearing lenses; 08-26 opened at `building` covering
+05:00 → 10:30 ET. Site published at `14:41:11Z`, Cloudflare build
+`228a2535-277a-4348-ac83-8e484dd5efc4`.
+
+**Finalizing 08-25 was most of the work, because yesterday's two passes
+had only ever covered 05:00 → 15:00 ET.** The back half of the day had
+never been curated. **13 items were added**, and three of them broke
+*inside the window yesterday's own passes covered* — a recall failure in
+the day's sweeps, not a windowing artifact: OpenAI's Jalapeño Hot Chips
+benchmarks (10:22 ET), Canada's dollar-for-dollar retaliation list
+(~11:12 ET, effective 09-08), and Anthropic's $5M outside-evaluation
+grant programme (12:10 ET). The Canada miss is the one that stings —
+`north-american-trade-policy` had been promoted the day before and the
+digest carried only the US side's 2027 schedule.
+
+**38 timeline entries across 23 threads**, plus 2 filed under
+⟨daily 2026-08-24⟩ markers against that closed day without reopening it
+(24 thread files touched). `last_seen` advanced on 19 threads;
+`actor-doing.yaml` refreshed for the 8 actors that moved.
+
+### The real finding: the coverage critic was wrong, and verifying it mattered
+
+The frontier-ai critic returned a harsh verdict — that recall had been
+poor and that the day's "biggest story by cross-benchmark convergence"
+(Nvidia/SpaceX orbital compute) was missing entirely. **A verification
+sweep found all four of its flagged misses resolve to already-closed
+digest-days.** Three trace to a single coordinated Nvidia press wave,
+all three releases stamped `2026-08-24T15:00Z` — one wire event, which
+reads to a next-day newsletter scan as three stories and to a
+cluster-scorer as a very high outlet count. Two of the three were
+already in the 08-24 digest. The fourth (FT/Ramp on Anthropic's
+flagship) was 08-23 **and materially misframed**: it is 11% of spend on
+Anthropic's *own tools*, not of the corporate AI market, and the piece
+reports a plateau, not capture. Filing it as flagged would have recorded
+a success where the source reports weakness.
+
+**Cross-sweep contradiction did its job in both directions.** The semis
+sweep and the critic disagreed on the Taiwan indictment's date; the
+semis sweep (08-24) was right. And a re-dispatched Fed sweep — fired
+under the silent-sweep rule after the original ran ~6x its siblings'
+return time — caught July PCE, which the original had missed. The
+original then returned anyway and was reconciled rather than discarded;
+both contributed real items.
+
+**Lesson worth keeping:** both of this map's detectors — the benchmark
+critic and the mechanical cluster pool — share a blind spot for
+wire-syndication timing. Neither substitutes for resolving an item to
+its primary source and timestamp.
+
+### Other real results
+
+- **Expectations: 70 entries** (57 pending · 10 hit · 3 passed-silent).
+  1 hit (`project-camellia-community-panel-0826`, with a shape
+  correction — two Chamber-run information sessions, not one moderated
+  panel, and OpenAI not confirmed at either). 3 re-checked and still
+  `passed-silent`. **6 new logged, 1 deleted as a duplicate** —
+  `meta-warner-csam-ads-response-0826` and `meta-warner-csam-response`
+  tracked the identical claim. ⚠️ A `curate-add` had re-logged an
+  expectation the ledger already held; worth watching for.
+- **`iran-oman-hormuz-deal-signing` deliberately NOT flipped.** Iran
+  announced a temporary Hormuz corridor and the IRGC claimed a
+  revenue-sharing understanding with Oman; oil fell ~6% over two days.
+  It fails the entry's own `what_confirms` on every specific — no
+  signature, no joint statement, none of the three named terms — and no
+  new date was given, so there was nothing to slip to. Stays
+  `passed-silent`; reasoning written into the ledger.
+- **Two deadlines passed in silence** and are the day's actual finding:
+  Lisa Cook did not answer the White House, and Meta did not answer
+  Sen. Warner. Both stay `pending` today because the day is still
+  running; the next run flips them.
+- **"Ox Alpha" resolved itself** — Z.AI claimed it and opened the
+  weights. It had been offered twice and would have dropped today under
+  the offered-twice rule; instead it routes onto
+  `china-stack-independence`. No new thread. **3 candidates offered**:
+  enterprise substitution away from frontier labs (second and final
+  offer, strengthened), Meta's "Hatch" consumer agent, AI-assisted
+  offensive cyber ops.
+- ✎ **`sources/benchmarks.yaml` corrected** — MobiHealthNews's homepage
+  no longer clears the r.jina.ai proxy; the RSS path still does. Third
+  escalation on that one benchmark.
+- ⚠️ **A routing error in yesterday's digest, caught:** it offered the
+  Jalapeño cluster as belonging to `openai-custom-silicon`, **a thread
+  retired 2026-07-27** and folded into `inhouse-silicon`.
+
+### Machinery
+
+- ⛔ **`bq` credentials: day ten.** `attention/world-news.yaml` could not
+  be regenerated, so this run re-read yesterday's pool. Needs Ben's
+  `gcloud auth login` — one command, no agent workaround.
+- ⚠️ **Collectors contributed nothing to today's digests.** The
+  documented `cloud-researcher collect --corpus .` fails outright
+  (`collect.py` reads the map from `KESTREL_INSTANCE` while `--corpus`
+  steers only writes). Worked around, the full run then burned its
+  25-minute budget on **511 skips** — 505 of them `openalex`, `lda` and
+  `semantic_scholar` retrying keyless into 429s/403s — and was killed
+  before writing a buffer file. A targeted `--source google_news_rss`
+  re-run was still going at session end. **Both halves already filed and
+  closed at `kestrel-ops`, upstream as `cloud-researcher` #4 /
+  `kestrel` #30 — noting the cost, not re-filing.** Everything published
+  today came from the agentic sweeps.
+- 💡 **Skill drift worth a decision:** `/publish`'s SKILL.md still says
+  it is "Not part of `/daily`" and that `/daily` "only renders +
+  republishes the private artifact page." The private page was retired
+  2026-08-25 (`fb3a316`), and `/daily` step 6a now explicitly ends in
+  `/publish --push`. The two skills contradict each other; `/daily` is
+  the correct one.
+
+**Pick-up for next session:** 08-26 is `building` across five files,
+`coverage: pending` on the three critic lenses — correct, the day hasn't
+closed. **Four expectations are due today and unresolved at close of
+this run**: Nvidia Q2 (reported 17:00 ET), the Cook deadline, the
+Meta/Warner deadline, and the Georgia PSC Camellia decision. On three of
+them silence is the loud outcome, and the next run should flip all four.
+Three thread candidates are open for Ben, one on its final offer.

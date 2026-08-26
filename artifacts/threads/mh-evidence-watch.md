@@ -16,6 +16,19 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-08-25 — Anthropic funds outside clinical evaluation of its own model
+
+- **Anthropic opened a $5M grant programme funding independent,
+  clinician-involved research into how Claude affects users in
+  mental-health-crisis and emotional-support contexts, with applications
+  due 09-21.** The vendor-funded-evidence question is the live one: who
+  controls publication, whether null results reach print, and whether
+  "independent" survives the funding agreement. Worth crediting what is
+  unusual too — an AI developer commissioning outside clinical evaluation
+  of psychological harm is not the industry norm.
+  ([Anthropic](https://www.anthropic.com/news/wellbeing-research-grants))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-21 — One dated publication, in a core digital-MH journal
 
 - ***Internet Interventions* posted "Consulting Dr. Google: Two

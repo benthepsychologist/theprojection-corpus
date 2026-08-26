@@ -466,6 +466,17 @@ expectations:
       does not meet this entry's `what_confirms` bar. It would resolve the
       UNDERLYING question on a different track from the Senate deadline
       this entry tracks, and is worth watching as its own line.
+      ✅ RE-CHECKED 2026-08-26 (5 days past due, grace long closed) —
+      finding still unchanged, and this is the last routine re-check.
+      No Apple statement, pledge, or announced supply agreement exists;
+      Banks's press-release page carries nothing on Apple/CXMT/YMTC for
+      08-21 through 08-26, and no signer's office has issued a follow-up.
+      ⚠️ The only new traffic is aggregator noise: a wave of 08-25/08-26
+      "CXMT rejects Apple price-cut demands" stories recycles reporting
+      first published 08-05/08-06, with one outlet's 08-12 article merely
+      re-stamped "updated 08-26". Excluded under date discipline — it is
+      not a development, and it is the exact shape of false freshness this
+      ledger exists to resist.
 
   - id: decart-acquisition-close
     claim: "Israeli real-time-video AI startup Decart is acquired for ~$6B — reportedly by Anthropic as of 08-13 (its largest-ever acquisition, a pre-IPO infrastructure move), superseding the original 08-09 report naming SpaceX"
@@ -732,6 +743,22 @@ expectations:
     # plausibly clear the flash-rail bar (ends a 5-month structural closure
     # of a major global chokepoint) -- recheck fast the moment it lands.
     # 2026-08-20 ⟨daily⟩: PASSED-SILENT — see evidence above.
+    # 2026-08-26 ⟨daily⟩: REAL MOVEMENT, still NOT a hit — deliberately not
+    # reopened. On 08-26 Iran's deputy FM Kazem Gharibabadi announced a
+    # temporary ~7-mile-wide transit corridor through Hormuz entered via
+    # Iranian territorial waters, and an IRGC spokesman (via Tasnim) said
+    # Iran and Oman had "reached agreements" on sharing transit revenues;
+    # oil fell roughly 6% over two days on it. Measured against THIS entry's
+    # what_confirms, it fails: no signature, no joint statement, and none of
+    # the three named mechanical terms confirmed — no 60-day no-toll window,
+    # no dual-lane structure, no 30-day median-lane mine-clearing. Both
+    # governments called it preliminary (coordinates, start date and revenue
+    # mechanics all unresolved; Oman's FM said longer-term solutions "follow
+    # in due course"), and Iran's own line is that the strait "remains
+    # closed" until the US accepts terms. So: an agreement-in-principle
+    # milestone, logged on the timeline, NOT a resolution of this claim.
+    # Stays passed-silent rather than flipping to hit or back to pending —
+    # no new target date was given, so there is nothing to slip TO.
 
   - id: ping-an-h1-2026-interim-results
     claim: "Ping An Healthcare and Technology's board meeting to approve H1 2026 results (and consider an interim dividend) is confirmed for Aug 18, 2026; the GROUP-level (parent, HK:2318/SH:601318) interim results date was not independently confirmed to a specific day this crawl"
@@ -1300,7 +1327,7 @@ expectations:
       scheduled
     due: 2026-08-26
     due_precision: day
-    status: pending
+    status: hit
     confidence: reported
     thread: ai-datacenter-sites
     entities: [openai]
@@ -1312,6 +1339,31 @@ expectations:
       publicly about community opposition — a direct data point on the
       datacenters-as-political-risk candidate this map has carried
       unresolved since 08-20.
+    resolved: 2026-08-26
+    evidence: >
+      HIT, with a correction to the claim's own shape. Events are real and
+      happening today, but there is no single moderated OpenAI/county/
+      Georgia Tech panel as the claim described. What the Effingham County
+      Chamber of Commerce actually scheduled for 2026-08-26 at the Herald
+      Center in Rincon is TWO information sessions — a business/community-
+      leaders session 10:00–11:30 ET and a public "Community Information
+      Session" 18:30–20:00 ET — both featuring Georgia Tech faculty and
+      economic-development experts, registration required. OpenAI is not
+      confirmed as a participant in either, which is itself the answer to
+      the "what does OpenAI say publicly" half of what_confirms: so far,
+      nothing, at an event about its own campus.
+      ⚠️ Counted as `hit` on the convening, NOT on the substance — the
+      evening session had not yet occurred at the time of this flip
+      (10:00 ET), so what is said there is still unknown.
+      Two follow-on dates now carry the substance and are logged
+      separately: the county commissioners' 08-29 work session
+      (effingham-commissioners-camellia-worksession-0829) and the Georgia
+      PSC staff decision due today (georgia-psc-camellia-staff-decision-0826).
+      💡 Also surfaced: organised opposition now has a legal vehicle — the
+      Protect Effingham Alliance, a resident-formed 501(c)(4) (nonprofit
+      status 08-17, after OpenAI's 07-22 announcement), profiled in the
+      Effingham Herald 2026-08-26, planning its own town halls in
+      September separate from the Chamber's sessions.
   - id: ercot-datacenter-audit-dec2026
     claim: >
       ERCOT completes Governor Abbott's ordered audit of Texas data-center
@@ -1361,6 +1413,15 @@ expectations:
       Anthropic has said nothing publicly on the 22-signer letter it
       received. Flipped to passed-silent; the 3-day grace runs to
       2026-08-27, so a late response still reopens this.
+      GRACE RE-SWEEP 2026-08-26 (day 2 of 3): nothing has changed. No
+      disclosure from either company, no follow-up from any signer. The
+      sweep did sharpen the letter's shape: the "29 signers" are two
+      separate letters led by Reps. Greg Casar and Doris Matsui — a
+      22-signer letter to Anthropic (on Claude's three unauthorized-access
+      incidents this year, and why its evaluation partner missed them) and
+      a distinct letter to OpenAI (on monitoring during the Hugging Face
+      breach testing). Grace still runs to 08-27; one more check next run
+      before this stands.
   - id: sword-headspace-acquisition-close-0914
     claim: >
       Sword Health's acquisition of Headspace takes effect, per the public
@@ -1438,19 +1499,104 @@ expectations:
       coming" quote this thread already logged from 08-23/08-24 STAT
       coverage — upgrades the thread's claim from a spoken promise to an
       actual open regulatory process with a real deadline.
-  - id: meta-warner-csam-ads-response-0826
+  - id: canada-retaliatory-tariffs-effective-0908
     claim: >
-      Meta responds to Sen. Mark Warner's letter on AI-generated CSAM
-      imagery in its ads (sent 2026-08-18/20, response requested by
-      2026-08-26)
+      Canada's dollar-for-dollar retaliatory tariffs (15/25/50% rates on
+      ~700 US products, ~C$20bn/yr) take effect
+    due: 2026-09-08
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: north-american-trade-policy
+    entities: [canada]
+    logged: 2026-08-26
+    logged_by: curate-add
+    source: https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html
+    what_confirms: >
+      the measures entering into force on 09-08, or Ottawa suspending/
+      delaying them as part of a settlement. The thread previously tracked
+      only the US side's 2027-01-01 auto/steel schedule — this is the first
+      dated Canadian counter-measure on the ledger.
+  - id: georgia-psc-camellia-staff-decision-0826
+    claim: >
+      Georgia PSC staff refer-or-object decision on Georgia Power's 3.2 GW
+      Project Camellia contract with OpenAI (Effingham County)
     due: 2026-08-26
     due_precision: day
     status: pending
     confidence: reported
-    thread: meta-ai-csam-ads
-    entities: [meta]
-    logged: 2026-08-25
+    thread: ai-datacenter-sites
+    entities: [openai]
+    logged: 2026-08-26
     logged_by: curate-add
-    source: https://www.warner.senate.gov
+    source: https://thecurrentga.org/2026/08/25/psc-deadline-arrives-for-georgia-powers-3-2-gigawatt-openai-data-center-contract/
     what_confirms: >
-      a public Meta response or confirmed non-response by the deadline.
+      a PSC staff filing either objecting to the contract or referring it
+      onward. Staff had signalled they would object absent changes, so a
+      silent pass is itself informative.
+  - id: effingham-commissioners-camellia-worksession-0829
+    claim: >
+      Effingham County Board of Commissioners holds a three-hour work
+      session on Project Camellia (livestreamed)
+    due: 2026-08-29
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: ai-datacenter-sites
+    entities: [openai]
+    logged: 2026-08-26
+    logged_by: curate-add
+    source: https://www.effinghamherald.net
+    what_confirms: >
+      the session convening, and whether the board signals a position on
+      the campus. Distinct from the 08-26 Chamber information sessions.
+  - id: project-river-public-forums-0901
+    claim: >
+      First public forum on "Project River," the $11.3bn Bradley County TN
+      data-center-plus-gas-generation campus, ahead of any zoning vote
+    due: 2026-09-01
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: ai-datacenter-sites
+    entities: []
+    logged: 2026-08-26
+    logged_by: curate-add
+    source: https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx
+    what_confirms: >
+      the 09-01 forum happening (a second is set for 09-12), and whether
+      local opposition organises the way it did in Pataskala and Effingham.
+  - id: tva-datacenter-rate-effective-1001
+    claim: >
+      TVA's new data-center wholesale power rate (~10% average billing
+      increase) takes effect
+    due: 2026-10-01
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: datacenter-power-grid
+    entities: []
+    logged: 2026-08-26
+    logged_by: curate-add
+    source: https://www.tva.com
+    what_confirms: >
+      the rate entering force. This is the price-of-power counterpart to
+      the price-of-permission fights the siting thread tracks.
+  - id: anthropic-wellbeing-grants-deadline-0921
+    claim: >
+      Applications close for Anthropic's $5M research grant program on
+      Claude's effects on users in mental-health and emotional-support
+      contexts
+    due: 2026-09-21
+    due_precision: day
+    status: pending
+    confidence: confirmed
+    thread: mh-evidence-watch
+    entities: [anthropic]
+    logged: 2026-08-26
+    logged_by: curate-add
+    source: https://www.anthropic.com/news/wellbeing-research-grants
+    what_confirms: >
+      the application window closing, and later whether any funded work is
+      genuinely independent and clinician-involved as advertised — the
+      question this thread exists to ask about vendor-funded evidence.

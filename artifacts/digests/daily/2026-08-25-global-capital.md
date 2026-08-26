@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-25
-status: building
+status: final
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T15:00:00-04:00
-coverage: pending
+finalized: 2026-08-26T11:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-25
@@ -181,6 +181,55 @@ Tehran.
   [Reuters via Investing.com](https://www.investing.com/news/stock-market-news/anthropic-expected-to-tell-investors-it-sees-over-30-trillion-in-potential-revenue-wsj-reports-4875772))
   <!-- k: t=frontier-lab-ipos,fidelity-buys-ai-labs e=anthropic axis=capital-in-my-markets -->
 
+## 🌙 Evening & overnight (15:00 → 05:00 ET) — finalize pass
+
+*Added 2026-08-26 on the finalize run, closing this digest-day's full
+05:00 → 05:00 window. The first item is a **late catch from this day's
+own late-morning window** — a major escalation on a thread opened only
+yesterday, missed by both of yesterday's passes.*
+
+- ⚠️ **Canada answered the tariffs dollar-for-dollar, and put a date on
+  it** — *late catch from this day's own late-morning window (~11:12 ET).*
+  Ottawa published a
+  retaliation list covering roughly C$20bn of US goods — steel and
+  aluminium (doubling to 50%), dairy, appliances, furniture, clothing,
+  seafood, cosmetics — tiered at 15/25/50% to match Washington's schedule,
+  effective **2026-09-08**, alongside a C$7.5bn domestic aid package.
+  **The map opened `north-american-trade-policy` yesterday carrying only
+  the US side's 2027-01-01 auto/steel schedule; this is the first dated
+  counter-measure on the ledger**, and it lands inside two weeks rather
+  than next year.
+  ([CNBC](https://www.cnbc.com/2026/08/25/canada-trump-tariffs-trade-carney-leblanc.html),
+  [Washington Post](https://www.washingtonpost.com/business/2026/08/25/canada-issues-retaliatory-tariffs-up-50-percent-us-imports/))
+  <!-- k: t=north-american-trade-policy e= axis=capital-in-my-markets sev=major interp=yes -->
+
+- **The White House answered within hours, in campaign register.** A
+  statement titled "President Trump Is Finally Ending Canada's Free Ride"
+  put Canada's response in the same category as China's and repeated that
+  Ottawa had rejected a preferential-access offer. **Notable for what it
+  is not:** no counter-escalation was announced with it — the reply was
+  rhetorical rather than tariff-bearing.
+  ([The White House](https://www.whitehouse.gov/releases/2026/08/president-trump-is-finally-ending-canadas-free-ride/))
+  <!-- k: t=north-american-trade-policy e= axis=capital-in-my-markets -->
+
+- **Trump then confirmed Canada's account of how the talks broke.** Asked
+  by CNN whether Ottawa was right that the US had added conditions at the
+  eleventh hour, he said "That sounds like me" and "No, no, I don't deny
+  anything." **For a thread whose open question is whether the collapse
+  was tactical or structural, this is the negotiator conceding the
+  tactical reading on the record.**
+  ([BNN Bloomberg](https://www.bnnbloomberg.ca/tariffs/2026/08/26/sounds-like-me-trump-suggests-us-added-new-conditions-at-11th-hour-of-negotiations-with-canada-live-updates-here/))
+  <!-- k: t=north-american-trade-policy e= axis=capital-in-my-markets -->
+
+- **Nvidia snapped a seven-day slide into its own print.** The stock
+  closed up 2.2% at $213, ending a roughly 7.5-8% losing streak — its
+  longest since 2022 — hours before reporting, with the S&P 500 up about
+  0.3%. **The streak is the more interesting fact than the snap:** the
+  market spent the week ahead of this print selling the stock that the
+  whole AI trade is indexed to.
+  ([Kiplinger](https://www.kiplinger.com/investing/stocks/stocks-rise-as-nvidia-ends-losing-streak-stock-market-today))
+  <!-- k: t=ai-trade-bear-turn,nvidia-order-book e=nvidia axis=capital-in-my-markets -->
+
 ## 📊 Macro strip
 
 ⚠️ **Read as intraday, not a close — this run is at 15:00 ET and the US
@@ -346,3 +395,49 @@ partner in Mistral AI, and a Houthi missile strike on a Saudi tanker
 arrived the same day China gave its first on-record pushback on the
 Iran sanctions package. Three thread candidates remain unresolved from
 yesterday and need a decision, not a sixth offer.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-26 on the finalize pass. Benchmarks: Money Stuff · Axios Pro
+Rata · FT Unhedged · Bloomberg Technology.*
+
+⚠️ **This pass is only partially conclusive, and that is the honest
+headline.** Two of the four benchmarks were effectively unreadable, both
+in ways the documented workarounds did not cover:
+
+- **Bloomberg Technology — fully blocked.** Cloudflare's bot check
+  defeated both a direct fetch and the reader proxy on every path tried.
+  This reproduces exactly what this digest's own map-changes section
+  already logged for the same day: re-blocked after an 08-23 fix that
+  did not hold.
+- **FT Unhedged — headline only.** The documented `?format=rss` endpoint
+  worked and confirmed the 08-25 issue ("The problem with buying the dip
+  in bonds"), but the article body was blocked by direct fetch *and* by
+  the reader proxy. **The access note in `sources/benchmarks.yaml`
+  oversells this one:** the feed proves an issue exists, which is not the
+  same as being able to judge what it led with.
+- **Axios Pro Rata — same-day only, as its own note warns.** The proxy
+  serves the current issue, so it returned 08-26's, not 08-25's. The
+  08-25 issue ("PE's pastime") was confirmed via a third-party archive
+  but only ever as a truncated teaser.
+- **Money Stuff — title and intro only** ("LeBron Bonds"), the rest
+  paywalled, as expected.
+
+**They led with → we missed:** nothing that clears the date-check bar.
+Of the benchmark content that could actually be read, the confirmed items
+(LeBron James's ~$300M personal bond financing; Oura's reported $3bn IPO
+prep) are off-lens for this page.
+
+**The honest verdict: "no evidence of a miss," not "recall confirmed
+clean."** Half the benchmark set could not be audited.
+
+💡 **One real catch, from outside the window.** The critic surfaced that
+the **SEC has subpoenaed Goldman Sachs, JPMorgan, Citigroup and Bank of
+America over their exposure to Situational Awareness**, the AI-narrative
+fund whose leveraged unwind this map already tracks. Bloomberg's original
+is dated **08-24**, so it belongs to a closed day — it has been filed to
+`artifacts/threads/ai-circular-financing-risk.md` under an
+⟨daily 2026-08-24⟩ marker rather than by reopening either digest. It had
+fallen between two digest-days, appearing in neither the 08-24 nor the
+08-25 page.
+

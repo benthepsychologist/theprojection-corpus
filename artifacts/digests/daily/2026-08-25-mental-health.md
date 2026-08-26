@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-25
-status: building
+status: final
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T15:00:00-04:00
-coverage: pending
+finalized: 2026-08-26T11:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-25
@@ -112,6 +112,48 @@ tracks.
   ([Behavioral Health Business](https://bhbusiness.com/2026/08/25/filing-reveals-sword-healths-plan-to-acquire-headspace/))
   <!-- k: t=mh-clinical-infra-funding,dtx-payment-paradox e= axis=money-and-structure -->
 
+## 🌙 Evening & overnight (15:00 → 05:00 ET) — finalize pass
+
+*Added 2026-08-26 on the finalize run. The one item is a **late catch
+from this day's own midday window**, not an evening event — it published
+at 12:10 ET and both of yesterday's passes missed it.*
+
+- ⚠️ **Anthropic is putting $5M into independent research on what its own
+  model does to people in crisis** — *late catch from this day's own
+  midday window (12:10 ET).* The grant programme funds external,
+  clinician-involved evaluations of how Claude affects users in
+  mental-health-crisis and emotional-support contexts, with applications
+  due 09-21. **This is the vendor-funded-evidence problem in its purest
+  form, and it is exactly what this lens exists to watch:** the company
+  whose product is under scrutiny is paying for the studies that will
+  scrutinise it. That is not disqualifying on its own — most therapeutic
+  evidence is sponsor-funded — but it makes the design questions load-
+  bearing: who controls publication, whether null results reach print,
+  and whether "independent" survives contact with the funding agreement.
+  **Worth crediting what is unusual here too** — an AI developer
+  commissioning outside clinical evaluation of psychological harm is not
+  the industry norm, and the alternative on offer has generally been no
+  evidence at all.
+  ([Anthropic](https://www.anthropic.com/news/wellbeing-research-grants))
+  <!-- k: t=mh-evidence-watch,ai-therapy-regulatory-reckoning e=anthropic axis=research-and-evidence -->
+
+- ⚠️ **US military researchers are testing an Israeli AI avatar as a PTSD
+  diagnostic against the clinician-administered gold standard** —
+  *critic-caught, own-day 08:00 ET.* A Uniformed Services University
+  researcher is running the first US study comparing Mentaily's "LIV"
+  avatar against the CAPS clinician-administered PTSD scale, citing the
+  time and cost burden on human evaluators, and pointing to Israeli pilot
+  data suggesting patients disclose suicidal ideation more readily to an
+  avatar than to a person. **This is the AI-evidence question moved from
+  therapy to diagnosis**, which is a different and in some ways harder
+  test: a diagnostic instrument has an established gold standard to be
+  measured against, so the comparison is unusually falsifiable. The
+  disclosure claim is the one to watch — "patients tell the machine more"
+  is plausible, repeatedly claimed, and rarely demonstrated against a
+  proper control.
+  ([MobiHealthNews](https://www.mobihealthnews.com/news/qa-us-military-researchers-use-israeli-ai-avatar-study-ptsd-us-servicemembers))
+  <!-- k: t=ai-therapy-evidence e= axis=research-and-evidence -->
+
 ## 🧪 Clinical trials
 
 - **Nothing dated in window.**
@@ -206,3 +248,35 @@ and Anthropic to disclose safety-protocol details passed yesterday with
 no confirmed answer either way, and the FDA's generative-AI guidance
 turns out to already be an open docket, not just a promise — both logged
 as dated expectations to check going forward.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-26 on the finalize pass. Benchmarks: Behavioral Health
+Business · STAT Health Tech · Fierce Healthcare · MobiHealthNews. All
+four were reached.*
+
+**They led with → we missed:** one item, folded in above — MobiHealthNews's
+Q&A on a US military trial of an AI avatar as a PTSD diagnostic (08-25
+08:00 ET), routed to `ai-therapy-evidence`. It is a feature rather than
+breaking news, which is exactly why it slipped four sweeps: it does not
+cluster across outlets the way an FDA action or a lawsuit does, so
+neither the feed collectors nor the hot-cluster sweeps surfaced it.
+
+**Both covered:** the Sword Health/Headspace acquisition — the shared lead
+of both Behavioral Health Business (13:47 ET) and STAT Health Tech (16:46
+ET). We logged it inside the same afternoon window they broke it in, with
+deal terms, valuation context, three thread cross-refs and a dated
+expectation (`sword-headspace-acquisition-close-0914`).
+
+**We had → they didn't:** Anthropic's $5M outside-evaluation grant
+programme, which none of the four benchmarks carried.
+
+**Nothing to miss at Fierce Healthcare** — the broadest of the four ran
+no mental-health-specific item on 08-25 at all.
+
+⚠️ **Access-note update, applied to `sources/benchmarks.yaml` this run:**
+MobiHealthNews's homepage now fails even through the r.jina.ai reader
+proxy (a Cloudflare challenge survives the proxy render, which it did not
+previously). The RSS path through the same proxy still clears. The
+documented fix pointed at the bare homepage and needed correcting.
+

@@ -4224,3 +4224,74 @@ benchmark critic by design.
 ### `sources/benchmarks.yaml` updated with today's two new access notes
 (Bloomberg Technology re-block, Axios Pro Rata's same-day-only proxy
 limitation) — see that file's own access-notes header.
+
+---
+
+## 2026-08-26 critic pass — finalized 08-25 (all three critic-bearing lenses)
+
+### ai / 2026-08-25
+- **Missed: nothing.** The critic flagged four items; a dedicated
+  verification sweep found **all four resolve to already-closed
+  digest-days**, so none is an 08-25 miss.
+  - Nvidia/SpaceXAI orbital compute + Vera CPU → **08-24 11:00 ET**
+  - Taiwan indicts nine over B300 smuggling → **08-24 06:02 ET**
+    (already in the 08-24 digest; our own semis sweep had dated it
+    correctly and the critic had not)
+  - Nvidia "Groq 3 LPX" full production → **08-24 11:00 ET**
+    (already in the 08-24 digest)
+  - Anthropic flagship at ~11% of spend, per FT/Ramp → **08-23**
+- **Root cause worth keeping:** three of the four trace to a single
+  coordinated Nvidia press wave, all three releases stamped
+  `2026-08-24T15:00Z`. One wire event syndicated widely reads to a
+  next-day newsletter scan as three stories and to a cluster-scorer as a
+  very high outlet count. **Both of this map's detectors share a blind
+  spot for wire-syndication timing.**
+- **One substantive correction, not just a date one:** the FT/Ramp figure
+  is 11% of spend *on Anthropic's own tools*, not 11% of the corporate AI
+  market, and the piece reports a **plateau** (flagship flat at ~11% two
+  months post-launch, cheaper Claude Opus 5 already ahead on enterprise
+  dollars). Filing it as flagged would have recorded a success where the
+  source reports weakness.
+- **Map effect:** one late catch filed under 08-24's marker without
+  reopening that day — SpaceXAI adopting Vera/NVL72, onto
+  `nvidia-order-book`. No watchlist or thread adds.
+- **Unverifiable:** none — all four benchmarks reached, the best access
+  this lens has had in a week.
+
+### global-capital / 2026-08-25
+- **Missed:** nothing that clears the date-check bar.
+- ⚠️ **But two of four benchmarks were unauditable, so the honest verdict
+  is "no evidence of a miss," not "recall clean."** Bloomberg Technology
+  was fully CAPTCHA-blocked on every path (reproducing the re-block this
+  digest already logged for the same day). FT Unhedged gave headline only
+  — the `?format=rss` endpoint confirmed the issue exists, but the body
+  was blocked by direct fetch *and* by the reader proxy. **The access note
+  in `sources/benchmarks.yaml` oversells that fix:** proving an issue
+  exists is not the same as judging what it led with.
+- **Map effect:** one real catch from *outside* the window — the SEC
+  subpoenaing Goldman Sachs, JPMorgan, Citigroup and Bank of America over
+  exposure to Situational Awareness (Bloomberg, **08-24**). It had fallen
+  between two digest-days, appearing in neither the 08-24 nor the 08-25
+  page. Filed to `ai-circular-financing-risk` under an ⟨daily 2026-08-24⟩
+  marker.
+- **Unverifiable:** Bloomberg Technology 08-25 · FT Unhedged 08-25 (body).
+
+### mental-health / 2026-08-25
+- **Missed:** one — MobiHealthNews's Q&A on a US military trial of
+  Mentaily's "LIV" AI avatar against the CAPS clinician-administered PTSD
+  scale (08-25 08:00 ET). Folded into the digest and routed to
+  `ai-therapy-evidence`.
+- **Why it slipped four sweeps:** it is a feature/Q&A, not breaking news,
+  so it never clustered across outlets the way an FDA action or a lawsuit
+  would — precisely the blind spot the benchmark critic exists to cover.
+- **Both covered:** Sword Health/Headspace, the shared lead of both BHB
+  (13:47 ET) and STAT Health Tech (16:46 ET), logged inside the same
+  afternoon window they broke it in.
+- **Map effect:** no watchlist or thread adds — `ai-therapy-evidence`
+  already existed and its watch text covers exactly this question.
+- **Access-note change applied to `sources/benchmarks.yaml`:**
+  MobiHealthNews's **homepage** no longer clears the r.jina.ai proxy (the
+  Cloudflare challenge now survives the render); the **RSS path** through
+  the same proxy still works. Third escalation on this one benchmark, and
+  the second time a working fix decayed rather than broke outright.
+- **Unverifiable:** none — all four benchmarks reached.

@@ -72,7 +72,18 @@
 #   HTTP transport) does NOT work here. What does work is the r.jina.ai
 #   reader proxy, which renders the challenge and returns clean text:
 #       https://r.jina.ai/https://www.mobihealthnews.com/
-#   Use that prefix for this outlet specifically. Note the escalation
+#   Use that prefix for this outlet specifically.
+#   ⚠️ ESCALATED AGAIN 2026-08-26 (found by that day's mental-health
+#   coverage critic on the 08-25 finalize). The HOMEPAGE above no longer
+#   clears: the Cloudflare "Just a moment…" challenge now survives the
+#   r.jina.ai render, which it did not before. The FEED path through the
+#   same proxy still works and is what the critic actually used:
+#       https://r.jina.ai/https://www.mobihealthnews.com/rss.xml
+#   Prefer the feed URL for this outlet. This is the third escalation on
+#   this one benchmark and the second time a working fix decayed rather
+#   than broke outright — the "re-test periodically" advice below is not
+#   theoretical.
+#   Note the escalation
 #   pattern across all four fixed benchmarks — WebFetch-signature block
 #   (BHB) → full non-browser block (MobiHealthNews) → domain-wide block,
 #   also resolved by the same reader-proxy class of fix once found

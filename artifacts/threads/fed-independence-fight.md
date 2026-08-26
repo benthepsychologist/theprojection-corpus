@@ -41,6 +41,32 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-08-26 — The Cook deadline passes without a public response
+
+- **The White House's deadline for Lisa Cook to answer its removal notice
+  arrived with no public response from her — no filed response, no new
+  court action, no resignation, and no fresh statement from counsel,
+  whose last on-record comment dates to 08-07.** The 08-05 letter gave
+  her 21 days to submit evidence to the Director of Presidential
+  Personnel; note this deadline runs to the White House, not to a court,
+  and her underlying suit is separately back in federal district court
+  after the Supreme Court's 5-4 June ruling blocked the first removal
+  attempt on due-process grounds. Reuters reports the administration
+  eyeing other board vacancies instead.
+  ([Reuters, via Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/cook-case-smolders-trump-other-100347841.html),
+  [U.S. News](https://www.usnews.com/news/politics/articles/2026-08-26/as-cook-case-smolders-trump-has-other-paths-to-shape-fed-policy-team))
+  ⟨daily 2026-08-26⟩
+
+- **July PCE printed 3.7% year-over-year on the headline, a tenth above
+  consensus, with core at 3.3% as forecast — and Treasury yields barely
+  moved.** The 2-year fell about a basis point to 4.176%, the 10-year rose
+  about two to 4.643%, the 30-year fell about one to 5.166%, with a crude
+  selloff offsetting the hotter headline. A consensus-beating print that
+  moves nothing suggests the hawkish hold it supports is already priced.
+  ([CNBC](https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/treasuries-edge-lower-before-pce-data-with-fed-risks-in-focus))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-24 — The funding mechanism behind the Treasury's long-end intervention surfaces: a ~$950bn cash cushion at the Fed
 
 - **The funding mechanism behind the Treasury's long-end intervention was reported for the first time: a Treasury General Account balance of roughly $935-950bn.** CNBC's Steve Liesman, citing two senior Treasury officials, reported the TGA — the government's operating cash account at the Fed — is sitting roughly $350-400bn above the ~$550-600bn level targeted under the prior administration, and that this cushion is what stands behind the doubled buyback ceiling of up to $4bn per off-the-run issue announced 08-19. The map has carried Deutsche Bank's "soft-form financial repression" characterisation of that intervention for days; this is the first account of what actually funds it. ⚠️ A direct CNBC fetch was blocked, so this rests on two independent outlets carrying the same scoop rather than on primary text; the $935bn figure was cross-checked against a Daily Treasury Statement for 08-20 cited in secondary coverage.

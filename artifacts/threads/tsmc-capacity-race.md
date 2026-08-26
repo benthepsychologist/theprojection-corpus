@@ -12,6 +12,17 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-08-25 — Apple ships the first commercial silicon on TSMC's N2 node
+
+- **Apple unveiled the M6, in a refreshed Mac mini, as the first
+  commercial product built on TSMC's N2 (2nm) process, with the M5 Ultra
+  shipping alongside in a refreshed Mac Studio.** N2 is now a proven
+  production node rather than a roadmap promise — the gate the
+  smartphone, HPC and custom-ASIC customers queued behind it all sit
+  behind.
+  ([Apple Newsroom](https://www.apple.com/newsroom/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-17 — TSMC's overseas fabs turn real money: Arizona +663% YoY, Japan's Kumamoto profitable for the first time
 
 - **TSMC's four overseas subsidiaries earned a combined NT$58.5B in H1 2026 (+215% YoY).** Arizona alone contributed NT$36.1B (+663% YoY, ~$1.1B, ~2.4% of TSMC's total net profit), though Q2 alone moderated to NT$17.3B (-8.2% QoQ) as depreciation from new construction bites. **Japan's Kumamoto (JASM) fab turned profitable for the first time in 2026** (NT$951M Q1, NT$727M Q2) after 2025 losses — notable given this thread's prior entries on that fab's earthquake exposure. A risk flagged in the same coverage: the July Kumamoto quake's equipment requalification/calibration/wafer losses could weigh on JASM's Q3 numbers. ([TrendForce](https://www.trendforce.com/news/2026/08/17/news-tsmc-arizona-profit-soars-663-yoy-in-1h26-u-s-earnings-pull-back-8-2-qoq-in-2q-as-depreciation-bites/), TSMC SEC 6-K) ⟨daily 2026-08-18⟩

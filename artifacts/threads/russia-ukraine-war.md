@@ -22,6 +22,33 @@ substantial enough to carry on its own.
 
 - **Russia struck Kyiv, Kharkiv, Zaporizhzhia and Dnipro overnight into August 25 with Banderol missiles and Molniya-type strike drones — a distinct barrage from the Independence Day attack recorded the previous night.** Kharkiv Mayor Ihor Terekhov reported a Molniya drone hit the city's Kyivskyi district at 22:22 and a missile struck the Osnovianskyi industrial zone at 00:19, killing one person. ([UNN](https://unn.ua/en/news/a-russian-missile-strike-on-kharkiv-claimed-a-persons-life), [RBC-Ukraine](https://newsukraine.rbc.ua/news/kyiv-kharkiv-dnipro-and-zaporizhzhia-hit-1787612524.html)) ⟨daily 2026-08-25⟩
 
+- **CIA director John Ratcliffe made an unannounced visit to Moscow and
+  met Russian intelligence counterparts, not Putin; the Kremlin confirmed
+  it the following day.** The trip surfaced after a US military transport
+  landed in Moscow. Outlets could not establish its purpose, and it sits
+  across both the Ukraine and Iran files — logged as an event, not read
+  as a signal about either.
+  ([The New York Times](https://www.nytimes.com/), corroborated by
+  Reuters, CBS, Axios and The Guardian)
+  ⟨daily 2026-08-25⟩
+
+- **Ukrainian drones struck Lukoil's Kstovo refinery in Nizhny Novgorod
+  Oblast overnight, confirmed by Ukraine's General Staff.** Fires were
+  also reported at a logistics hub of Wildberries, Russia's largest
+  online retailer; Russia claimed it downed 426 drones. The campaign
+  continues to target the export-revenue side of the war economy rather
+  than the front line.
+  ([Kyiv Independent](https://kyivindependent.com/), cross-verified
+  across seven Ukrainian and Russian-language outlets)
+  ⟨daily 2026-08-25⟩
+
+- **A Russian morning strike on a private home in Chernihiv killed a
+  woman and her four-year-old daughter and hospitalised a 14-year-old**,
+  as part of a reported 162-drone overnight barrage.
+  ([Kyiv Post](https://www.kyivpost.com/), with Ukrainska Pravda and The
+  New Voice of Ukraine)
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — Independence Day, in four parts: a smaller-than-billed coalition summit, Russia's answering barrage, a daylight strike on Chernihiv, and strikes reaching new fronts on both sides
 
 - **The "Coalition of the Willing" met in Kyiv on Ukraine's Independence Day, but at a smaller scale than billed — the gap between who was invited and who actually showed up is the story.** UK Prime Minister Andy Burnham made his first foreign trip since taking office, arriving by train, and European Council President António Costa attended in person; French President Emmanuel Macron and German Chancellor Friedrich Merz — two of Europe's four biggest powers — joined only by video link. The Kyiv session followed a Nordic-Baltic (NB8) meeting, at which Norway pledged a further 85 billion kroner (~$9.1bn) for 2027, matching rather than raising this year's spending. The EU separately approved a €6.1bn military support package for air and missile defence, ammunition and radars. Zelensky pressed allies for at least 300 air-defence interceptors before winter, citing a steep supply decline: Ukraine received 675 Patriot missiles across all of 2023 against just 364 across all of 2025. Euronews' own coverage framed the day as the EU backing Ukraine "without Trump envoys" — no confirmed US administration participation is itself part of the result. **This resolves a dated expectation already carried on the map's ledger as a `hit`, with the scale caveat recorded alongside it.**

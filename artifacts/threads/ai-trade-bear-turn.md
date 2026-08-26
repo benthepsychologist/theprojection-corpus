@@ -16,6 +16,14 @@ the drawdown changes real capex behavior.
 - **Nvidia closed Monday at $208.48, down 2.91%, its seventh straight daily decline and the longest losing streak for the stock since September 2022** — before ChatGPT existed. The stock is down roughly 8% over the run, a materially smaller drop than the 24% seven-day slide in 2022, but it is the same shape of signal this thread exists to track: a multi-day bleed concentrated in the AI-linked complex the day before the catalyst (Nvidia's Wednesday print) that is supposed to settle the argument. ([24/7 Wall St.](https://247wallst.com/investing/2026/08/25/nvidia-notches-longest-losing-streak-since-2022-tomorrows-earnings-could-make-it-worse/)) ⟨daily 2026-08-25⟩
 - **Sam Altman, on a podcast released the same day, said AI has "not had the iPhone moment" of mass-market adoption — comparing the current moment to the Palm Treo era before the iPhone changed how people use technology.** Coming from OpenAI's own CEO rather than a short-seller, this is a demand-side admission distinct from the circular-financing mechanics this map tracks elsewhere: even the industry's most bullish voice is now dating real adoption to the future rather than the present, on the eve of the earnings print investors are treating as the AI trade's stress test. ([9to5Mac](https://9to5mac.com/2026/08/25/ai-awaiting-its-iphone-moment-says-altman-needs-to-learn-key-apple-lesson/)) ⟨daily 2026-08-25⟩
 
+- **Nvidia snapped a seven-day losing streak into its own print, closing
+  up 2.2% at $213.** The slide had run roughly 7.5-8%, its longest since
+  2022, with the S&P 500 up about 0.3% on the day. The streak is the
+  more interesting fact than the snap: the market spent the week before
+  this print selling the stock the whole AI trade is indexed to.
+  ([Kiplinger](https://www.kiplinger.com/investing/stocks/stocks-rise-as-nvidia-ends-losing-streak-stock-market-today))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — The bear turn shows up in prices: a broad semiconductor selloff two days before Nvidia's print
 
 - **Chip stocks sold off hard through Monday's session while the broad market barely moved, which is the signature this thread exists to catch.** As of ~13:42 ET the S&P 500 was down 0.23% at 7,656.49 and the Dow was UP 0.28% at 53,423.77 — but the Nasdaq was down 0.59% at 26,026.80, and the damage was concentrated: Intel −5% to $85.98, AMD −4% to $454.36, Taiwan Semiconductor −3% to $406.40, the SOXX semiconductor ETF down 3–4% across the session, with Micron, SanDisk and Western Digital each off more than 5% later in the window. **This is de-risking inside one sector, not risk-off across the market.**

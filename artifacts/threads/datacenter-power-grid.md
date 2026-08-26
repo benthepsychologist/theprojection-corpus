@@ -15,6 +15,28 @@ via behind-the-meter gas at gigawatt scale, a hard equipment ceiling
 (turbines sold out to 2030, transformers ~3yr), and the ratepayer +
 environmental-justice fights that improvisation generates.
 
+## 2026-08-26 — Amazon withdraws a groundwater bid after Virginia says no
+
+- **Amazon Data Services withdrew its Virginia DEQ application to draw up
+  to 6.4 million gallons a year from the Potomac aquifer for the proposed
+  Birchwood Tech Campus in King George County**, after a DEQ report warned
+  the aquifer could not absorb major new withdrawals and a state senator
+  called the request "indefensible." Water is now doing what
+  interconnection queues have been doing — a hard physical constraint a
+  siting decision has to route around rather than negotiate.
+  ([Virginia Mercury](https://virginiamercury.com/2026/08/26/amazon-changes-course-on-water-use-for-king-george-data-center-campus/))
+  ⟨daily 2026-08-26⟩
+
+## 2026-08-25 — US gas buildout outpaces China's, on AI load
+
+- **A Global Energy Monitor analysis found the US now building roughly
+  twice as much gas-fired capacity as China, with AI data-center demand
+  the stated driver.** US gas capacity under development rose 50% since
+  January, from 252GW to 378GW, after a 76% jump in projects under
+  construction in the first half of 2026.
+  ([Global Energy Monitor, via The Guardian](https://www.chinastrategy.org/2026/08/25/us-building-twice-as-much-gas-fired-capacity-as-china-in-ai-boom-analysis-finds/))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-24 — The buildout's demand reaches the electrical supply chain: two power-component acquisitions in one day
 
 - **nVent Electric agreed to buy Maverick Power for $1.75bn, plus up to $550m of earnout tied to 2027-2028 performance.** Maverick (McKinney, Texas; ~900 employees; ~$700m of 2026 revenue) makes electrical power-distribution equipment specifically for data centres. The deal is expected to close in Q4 2026, funded with cash and new debt on a Bank of America bridge. **This is the buildout's demand showing up in the electrical supply chain rather than in chips or in grid capacity** — vendor consolidation one layer below the constraint this thread tracks.

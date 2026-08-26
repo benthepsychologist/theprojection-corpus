@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-25
-status: building
+status: final
 window_start: 2026-08-25T05:00:00-04:00
-as_of: 2026-08-25T15:00:00-04:00
-coverage: pending
+finalized: 2026-08-26T11:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-25
@@ -164,6 +164,108 @@ them.
   ([TechCrunch](https://techcrunch.com/2026/08/24/alabama-launches-investigation-into-openais-hack-of-hugging-face/),
   [Daily Sabah](https://www.dailysabah.com/business/tech/us-state-of-alabama-probes-openai-over-hugging-face-breach))
   <!-- k: t=openai-agent-security-incident,frontier-model-gov-review-precedent e=openai axis=governance-and-security -->
+
+## 🌙 Evening & overnight (15:00 → 05:00 ET) — finalize pass
+
+*Added 2026-08-26 on the finalize run, closing this digest-day's full
+05:00 → 05:00 window. The two items marked **late catch (own-day)** are
+not evening events at all — they broke inside this day's own morning
+window and were missed by both of yesterday's passes.*
+
+- ⚠️ **OpenAI's first custom chip cleared its first public benchmark, and
+  the numbers are aimed squarely at Nvidia** — *late catch from this day's
+  own morning window (10:22 ET).* At Hot Chips 2026, OpenAI and Broadcom disclosed first
+  performance results for Jalapeño, the inference ASIC the two announced
+  back in June: 700W TDP, a 128-chip pod at 1.7 exaflops in 4-bit, 27.5TB
+  of HBM4, and claimed advantages of up to 1.9x throughput-per-kilowatt
+  and 3.6x lower latency against Nvidia's flagship on SemiAnalysis's
+  InferenceX benchmark. Small-scale deployment inside OpenAI's own
+  infrastructure is targeted for end-2026, broader rollout in 2027. **The
+  June announcement was a partnership; this is the first evidence it
+  works** — which is the difference between a negotiating chip and a real
+  second source, and it lands the day before Nvidia's print.
+  ([OpenAI](https://openai.com/index/jalapeno-first-results/),
+  [TechCrunch](https://www.techcrunch.com/2026/08/25/openais-jalapeno-chip-is-built-for-fast-inference-at-scale-benchmarks-show/))
+  <!-- k: t=inhouse-silicon,custom-asic-tolls,nvidia-order-book e=openai,broadcom,nvidia axis=capital-and-corporate sev=major -->
+
+- **Moonshot is asking the three US hyperscalers to host Kimi K3 — and to
+  hand back up to 30% of the revenue.** Reuters reported Moonshot AI in
+  early talks with Microsoft, Amazon and Google to serve its model from
+  their clouds under a revenue-share, with the split, data access, and
+  token-tracking mechanics all still unresolved. **This inverts the usual
+  direction of the China-stack story:** the map has tracked Chinese labs
+  building away from US infrastructure, and this is a Chinese lab trying
+  to sell *through* it, to the same three companies whose export-control
+  exposure the lens tracks separately.
+  ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/exclusive-chinas-moonshot-talks-microsoft-075340033.html))
+  <!-- k: t=kimi-distillation-fight,china-stack-independence e=moonshot-ai,microsoft,google axis=china -->
+
+- **Apple shipped the first commercial silicon on TSMC's 2nm node.**
+  The M6, in a refreshed Mac mini, is built on TSMC's N2 process — the
+  first product in market to validate N2 yield and mass-production
+  maturity, ahead of the smartphone, HPC and custom-ASIC customers queued
+  behind it. The M5 Ultra in a refreshed Mac Studio launched alongside.
+  **For this lens the interest is not the Macs — it is that N2 is now a
+  proven production node** rather than a roadmap promise, which is the
+  gate every 2026-27 accelerator design sits behind.
+  ([Apple Newsroom](https://www.apple.com/newsroom/))
+  <!-- k: t=tsmc-capacity-race e=apple,tsmc axis=capital-and-corporate -->
+
+- **The executive who ran OpenAI's data-center buildout left the
+  company.** Chris Malone, who oversaw the buildout underpinning OpenAI's
+  roughly $600bn compute-spend target through 2030, is out; his
+  responsibilities were split among three named leaders reporting to VP
+  Sachin Katti. Reporting counts him as the thirteenth senior departure
+  of 2026, ahead of a planned 2027 listing. **The buildout is the
+  company's single largest financial commitment, and the person
+  coordinating it changed mid-flight.**
+  ([CNBC](https://www.cnbc.com/2026/08/25/openais-head-of-data-centers-chris-malone-is-out-in-latest-exec-exit.html))
+  <!-- k: t=hyperscaler-capex-big-picture e=openai axis=capital-and-corporate -->
+
+- **A regulator's deadline arrived on the largest single OpenAI power
+  contract on the map.** Georgia PSC staff faced a 08-26 deadline to
+  refer or object to Georgia Power's 3.2 GW Project Camellia contract
+  with OpenAI in Effingham County, delivered in phases 2028-2032; staff
+  had signalled they would object unless the company agreed to changes.
+  **This is the first time one of the map's datacenter-siting fights has
+  reached a state utility regulator rather than a county zoning board** —
+  a materially higher bar, and the outcome is now a logged expectation.
+  ([The Current GA](https://thecurrentga.org/2026/08/25/psc-deadline-arrives-for-georgia-powers-3-2-gigawatt-openai-data-center-contract/))
+  <!-- k: t=ai-datacenter-sites,ai-power-buildout e=openai axis=capital-and-corporate -->
+
+- **An Ohio council rejected a data center unanimously, and the voters
+  still get their own say in November.** Pataskala's City Council voted
+  unanimously to accept its planning commission's recommendation and deny
+  Aligned Data Centers' site plan for the Pataskala Corporate Park; a
+  separate resident-driven ballot measure on a broader data-center ban
+  goes to voters in November regardless. **The unanimity is the signal** —
+  the siting thread has logged plenty of contested votes, and a 0-dissent
+  denial with a ballot measure still queued behind it is a different
+  political fact.
+  ([NBC4 WCMH](https://www.nbc4i.com/news/local-news/central-ohio-news/datacenters/pataskala-city-council-votes-against-data-center-proposal/))
+  <!-- k: t=ai-datacenter-sites e= axis=capital-and-corporate -->
+
+- **An $11.3bn Tennessee campus filed to build its own power alongside
+  the compute.** Backers of "Project River" submitted rezoning and
+  annexation applications in Cleveland/Bradley County for a campus
+  pairing a large data center with on-site natural-gas and biomass
+  generation, with public forums set for 09-01 and 09-12 before any vote.
+  **The bring-your-own-generation pattern is the one to watch** — it
+  routes around the interconnection queue that has been the binding
+  constraint in most of this thread's other sites.
+  ([Chattanoogan](https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx))
+  <!-- k: t=where-the-capex-lands,ai-datacenter-sites,ai-power-buildout e= axis=capital-and-corporate -->
+
+- **The US is now building roughly twice as much gas-fired power as
+  China, and AI demand is the stated reason.** A Global Energy Monitor
+  analysis put US gas capacity under development up 50% since January
+  (252GW to 378GW), after a 76% jump in projects under construction in
+  the first half of 2026. **Read against this lens's China framing, the
+  energy-buildout comparison now runs the opposite way to the chip
+  one** — China leads on installed clean capacity while the US answers AI
+  load growth with gas.
+  ([Global Energy Monitor analysis, via The Guardian](https://www.chinastrategy.org/2026/08/25/us-building-twice-as-much-gas-fired-capacity-as-china-in-ai-boom-analysis-finds/))
+  <!-- k: t=datacenter-power-grid,ai-power-buildout e= axis=capital-and-corporate -->
 
 ## ⏱ Release-watch & markets
 
@@ -325,3 +427,51 @@ circular financing itself, and Morgan Stanley put the first outside
 number on the Rubin ramp specifically. 08-24 finalized this morning on
 a three-lens coverage-critic pass that caught two real misses, including
 a wholly unattributed frontier model with nowhere on the map to go.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-08-26 on the finalize pass. Benchmarks: The Rundown AI · TLDR AI ·
+The Neuron · The AI Daily Brief. **All four were reached** — the best
+benchmark access this lens has had in a week.*
+
+**They led with → we missed: nothing.** The critic flagged four items, and
+a dedicated verification sweep found **all four resolve to digest-days
+that were already closed.** This is the appendix's actual finding, and it
+is worth stating plainly because the critic's own verdict was that recall
+had been poor:
+
+| flagged item | critic's date | verified date | disposition |
+| --- | --- | --- | --- |
+| Nvidia/SpaceXAI orbital compute, Vera CPU | 08-25 | **08-24, 11:00 ET** | closed day; Starmind already on `nvidia-order-book` since 08-05 |
+| Taiwan indicts nine over B300 smuggling | 08-25 | **08-24, 06:02 ET** | closed day; **already in the 08-24 digest** |
+| Nvidia "Groq 3 LPX" full production | 08-25 | **08-24, 11:00 ET** | closed day; **already in the 08-24 digest** |
+| Anthropic flagship at ~11% of spend (FT) | 08-25 | **08-23** | two days stale, and materially misframed |
+
+**Three of the four trace to one coordinated Nvidia press wave, all three
+releases timestamped the same minute — 2026-08-24T15:00Z.** A single wire
+event syndicated across dozens of outlets reads to a next-day newsletter
+scan as three separate stories, and reads to a cluster-scorer as a very
+high outlet count. It was neither.
+
+⚠️ **The fourth needed correcting on substance, not just date.** The claim
+as flagged — that Anthropic's flagship "captured 11% of corporate AI
+spending" — is wrong in a way that would have inverted the story. The FT
+figure (from Ramp data) is **11% of spend on Anthropic's own tools**, not
+11% of the corporate AI market, and the piece is about **weak adoption**:
+the flagship is flat at ~11% two months post-launch, at ~$10/million
+tokens, with the cheaper Claude Opus 5 having already overtaken it on
+enterprise dollar spend. Filing it as written would have recorded a
+success where the source reports a plateau.
+
+💡 **What this says about the two detectors.** Yesterday's digest argued
+the benchmark critic and the mechanical cluster pool are complementary.
+Today gives the other half of that lesson: **both detectors share a
+blind spot for wire-syndication timing**, and neither is a substitute for
+resolving an item to its primary source and timestamp. The date check is
+not a formality — it was the whole result here.
+
+**We had → they didn't:** the Jalapeño Hot Chips benchmark disclosure
+(TLDR AI covered an adjacent Hot Chips story, not this one), Moonshot's
+US cloud revenue-share talks, Apple's N2 shipment, and OpenAI's
+data-center chief departing.
+

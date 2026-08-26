@@ -13,6 +13,17 @@ the aggregate AI capex physically land? Chips · datacenters · power · land.
 Sibling to Hyperscaler Capex (the by-spender cut); most destinations have no
 thread yet — that's the worklist.
 
+## 2026-08-25 — An $11.3bn Tennessee campus files, with power attached
+
+- **Backers of "Project River" filed rezoning and annexation applications
+  for an $11.3bn Bradley County, Tennessee campus pairing a large data
+  center with on-site natural-gas and biomass generation.** Public forums
+  are set for 09-01 and 09-12 before any vote. The bring-your-own-
+  generation pattern routes around the interconnection queue that has
+  been the binding constraint at most of this thread's other sites.
+  ([Chattanoogan](https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-22 (late catch, added 2026-08-23) — Alibaba raises $10.2bn in Hong Kong's largest-ever follow-on, and puts 100% of it into AI
 
 - **Alibaba launched a HK$80bn ($10.2bn) share placement — 710 million

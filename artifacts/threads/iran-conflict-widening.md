@@ -24,6 +24,24 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-26 — Iran names a temporary Hormuz corridor; oil falls ~6% over two days
+
+- **Iran announced a temporary transit corridor through the Strait of
+  Hormuz, roughly seven miles wide and entered through Iranian
+  territorial waters, while an IRGC spokesman said Iran and Oman had
+  "reached agreements" on sharing transit revenues.** Both officials
+  called it preliminary — coordinates, start date and revenue mechanics
+  all unresolved — and Iran's position remains that the strait is closed
+  until the US accepts its terms. ⚠️ Logged as an agreement-in-principle
+  milestone, NOT as resolving `iran-oman-hormuz-deal-signing`: there is
+  no signature, no joint statement, and none of that claim's three named
+  terms (60-day no-toll window, dual lanes, 30-day mine-clearing) is
+  confirmed. Two Hormuz arrangements have already collapsed
+  mid-negotiation this year.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know),
+  [Al-Monitor](https://www.al-monitor.com/originals/2026/08/iran-and-oman-reach-agreements-share-hormuz-and-revenues-revolutionary-guards-say))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Trump claims an Iranian "humanitarian crisis," and Tehran says it is "fully prepared" to counter the new sanctions
 
 - **Trump said on Truth Social that Iran is "not paying large segments of their military" and is "killing protesters... at levels not seen before," calling it "a humanitarian crisis of epic proportions" that "must be stopped, NOW" — an unverified, single-source claim with no evidence cited.** ([Israel National News](https://www.israelnationalnews.com/news/432212)) ⟨daily 2026-08-25⟩

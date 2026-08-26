@@ -22,6 +22,24 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-26 — Iran names a temporary Hormuz corridor; oil falls ~6% over two days
+
+- **Iran announced a temporary transit corridor through the Strait of
+  Hormuz, roughly seven miles wide and entered through Iranian
+  territorial waters, while an IRGC spokesman said Iran and Oman had
+  "reached agreements" on sharing transit revenues.** Both officials
+  called it preliminary — coordinates, start date and revenue mechanics
+  all unresolved — and Iran's position remains that the strait is closed
+  until the US accepts its terms. ⚠️ Logged as an agreement-in-principle
+  milestone, NOT as resolving `iran-oman-hormuz-deal-signing`: there is
+  no signature, no joint statement, and none of that claim's three named
+  terms (60-day no-toll window, dual lanes, 30-day mine-clearing) is
+  confirmed. Two Hormuz arrangements have already collapsed
+  mid-negotiation this year.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know),
+  [Al-Monitor](https://www.al-monitor.com/originals/2026/08/iran-and-oman-reach-agreements-share-hormuz-and-revenues-revolutionary-guards-say))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — A Houthi ballistic missile hits a Saudi VLCC off Yanbu, and China answers the sanctions campaign on the record
 
 - **Houthi forces struck the Saudi-flagged, Bahri-owned VLCC *Amzan* with a ballistic missile roughly 63 nautical miles off Yanbu, setting a fire aboard; all crew were reported safe and Saudi officials had not confirmed the incident as of first reports.** UK Maritime Trade Operations confirmed a tanker was struck by an unknown projectile in the area; the Houthi military called it enforcement of its declared ban on Saudi maritime navigation. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-24/yemen-s-houthi-rebels-attack-saudi-oil-supertanker-in-red-sea), [Al Jazeera](https://www.aljazeera.com/news/2026/8/24/yemens-houthis-report-attack-on-saudi-ship)) ⟨daily 2026-08-25⟩

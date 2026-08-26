@@ -12,6 +12,17 @@ opened: 2026-07-24
 independent verification one way or the other, and whether it chills
 enterprise adoption of Kimi K3's open weights (due 07-27).
 
+## 2026-08-25 — Moonshot seeks US cloud distribution for Kimi K3
+
+- **Moonshot AI opened talks with Microsoft, Amazon and Google to host
+  Kimi K3 under a revenue-share worth up to 30% to the clouds.** Reuters
+  reported the discussions as early, with the split, data access and
+  token-tracking mechanics all unresolved. It inverts the usual
+  direction of this story: a Chinese lab selling *through* US
+  infrastructure rather than building away from it.
+  ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/exclusive-chinas-moonshot-talks-microsoft-075340033.html))
+  ⟨daily 2026-08-25⟩
+
 ## 2026-08-19 — The Moonshot allegation broadens: three more Chinese labs, and a bill to close the loophole
 
 - **CNBC reports Moonshot, ByteDance, Alibaba, and Tencent have all been accessing restricted Nvidia compute via data centers in Thailand, Malaysia, and Japan — legal today because US export controls govern physical chip transfer, not remote cloud access.** This extends the thread's 07-23 entry (which alleged Moonshot specifically obtained GB300 access via Thailand) to three more major Chinese AI firms, and names the legislative response: the Remote Access Security Act (RASA), which passed the House in January 2026 and is pending in the Senate — it would extend export-control authority to remote/cloud access, though a separate rulemaking would still be needed to apply it to chips. ([CNBC](https://www.cnbc.com/2026/08/19/china-ai-nvidia-chips-us-export-controls.html)) ⟨daily 2026-08-20⟩
