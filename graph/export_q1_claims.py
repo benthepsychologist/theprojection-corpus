@@ -151,6 +151,11 @@ for cid in sorted(flow_claim_ids):
         "basis": lead,
         "confidence": band or "low",
         "as_of": c.get("valid_from"),
+        # raw number, not just the formatted `value` string, so a claim
+        # page can render its aggregate parent's "pieces" as a real sortable
+        # table instead of a bullet list -- null means no settled point
+        # figure (still a member, just not summable), never a guess.
+        "amount_usd": amount if is_point_usd else None,
         "sources": src_objs,
     })
 
