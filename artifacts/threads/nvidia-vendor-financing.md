@@ -11,17 +11,32 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
-## 2026-08-26 — Nvidia's Q2 FY2027 earnings finally give the circularity question a company answer, and a bigger number to answer it with
+## 2026-08-26 — The guarantees get a number, a cap and a filing date
 
-- **Nvidia's CFO put a name on the criticism and answered it on the record for the first time.** "We recognize the scale of this support, and we know some will call this circular financing. We see it differently," Colette Kress said on the 2026-08-26 earnings call (quarterly release ~4:20-4:30pm ET, call ~5pm ET). Her defense: frontier labs are "growing faster than what their balance sheets and credit profiles can support," and Nvidia's deal structure means "we get paid twice — once on the hardware sale, and again through the share of rental revenue." This is the first on-record company response to the exact circularity thesis Michael Burry restated on 08-23 and that this thread has tracked since 07-27.
-  ([Fortune](https://fortune.com/2026/08/26/nvidia-q2-growth-results-jensen-huang/)) ⟨daily 2026-08-26⟩
-- **The guarantee total is now filed at $108.5B, not $105B — a new $3.5B line for "AI clouds" (plural), beyond the SB Energy/OpenAI guarantee.** Nvidia's 10-Q for the quarter ended 2026-07-26 (filed 08-26) itemizes: "Land, power, and shell guarantees for AI clouds: $3.5B; SB Energy Corp. guarantees: $105.0B; Total: $108.5B." The $105B SB Energy figure matches the 08-17 8-K exactly; the $3.5B AI-clouds line is new on this thread — a broader guarantee program covering other cloud/lease counterparties beyond the OpenAI-Ohio deal, not previously itemized here.
-  ([NVIDIA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm)) ⟨daily 2026-08-26⟩
-- **The same filing puts a total figure on Nvidia's forward AI-infrastructure commitments: $366B** — $279B supply/capacity (memory, manufacturing capacity), $29B cloud service agreements, $25B data-center leases not yet commenced, $25B equity investments, $8B capex. The $25B equity-investments line is the first aggregate figure this thread has had for the stake ladder (Nebius, Intel, CoreWeave, SpaceX, Cloverleaf, Perplexity-in-talks, etc.) as a single forward commitment rather than itemized positions.
-  ([NVIDIA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm)) ⟨daily 2026-08-26⟩
-- **Headline results, for context: revenue $96.2B (+18% QoQ, +106% YoY) for the quarter ended 2026-07-26, non-GAAP EPS $2.22, data-center revenue $89B (+117% YoY), Q3 guidance $108B (vs. $104.2B consensus).** Nvidia also gave its first-ever year-ahead forecast — 70% revenue growth for fiscal 2028 (implying ~$690-700B) — which Fortune frames explicitly as aimed at answering AI-bubble/circular-financing doubts with a number rather than a defense.
-  ([NVIDIA/GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html), [Fortune](https://fortune.com/2026/08/26/nvidia-q2-growth-results-jensen-huang/)) ⟨daily 2026-08-26⟩
-- ⚠️ **Open thread question not resolved by this pass: whether the Poolside deal (08-24 entry) got addressed on the call.** No outlet found in this sweep quotes Huang or Kress on Poolside specifically, and the call transcript itself is paywalled — the "natural primary-source test" the 08-24 entry flagged for this call is still untested as of this pass, not confirmed either way.
+- **Nvidia's Q2 FY2027 10-Q disclosed guarantees capped at $105 billion tied to
+  an affiliate of OpenAI Group PBC for land, power and shell buildout, plus
+  $3.5 billion of additional lease guarantees for AI cloud partners and a $25
+  billion committed equity-investment pool for AI labs and infrastructure
+  financiers.** **This is the first SEC-filed confirmation of the scale of these
+  arrangements** — everything this thread has carried until now was reported
+  deal value, not audited disclosure with a stated cap.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm))
+  ⟨daily 2026-08-26⟩
+
+- **The same call detailed $500bn+ of planned third-party capital through
+  financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman
+  Sachs and KKR, alongside a take-or-pay/revenue-share model for NeoCloud
+  partners.** **The mechanism this thread exists to trace is now visible end to
+  end**: Nvidia guarantees the obligation, private credit funds it, and the
+  capex never touches Nvidia's balance sheet.
+  ([Q2 call transcript](https://www.marketbeat.com/instant-alerts/transcript-nvidia-q2-earnings-call-highlights-2026-08-26/))
+  ⟨daily 2026-08-26⟩
+
+- **Receivables concentration widened to five customers holding 72% of the
+  balance, from three holding 56% at 2026-01-25.** Read against the guarantee
+  disclosure rather than alone: the filing shows Nvidia both extending credit
+  to the buildout and collecting from a small set of its builders.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm))
   ⟨daily 2026-08-26⟩
 
 ## 2026-08-25 — Nvidia is reported in talks for a second Perplexity stake, sized to keep a chip-agnostic AI-search startup inside its ecosystem

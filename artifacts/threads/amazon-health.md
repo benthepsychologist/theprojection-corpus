@@ -14,6 +14,19 @@ Pharmacy + a Bedrock "Health AI" layer) — but MH is adjacent, not headline.
 The MH-native move sits upstream in AWS (HealthScribe's behavioral-health
 scribe), positioning Amazon as therapy-sector *infrastructure*.
 
+## 2026-08-06 — A $50/month Medicare GLP-1 channel
+
+- **Amazon Pharmacy began offering Wegovy, Zepbound and Foundayo to eligible
+  Medicare Part D patients at a flat $50/month under the federal Medicare GLP-1
+  Bridge Program**, with same-day delivery in 3,100+ cities, pickup kiosks at
+  select One Medical locations, and automated eligibility verification and prior
+  authorisation. **The automation of prior authorisation is the part this map
+  should watch**, not the price: Amazon is taking over an administrative step
+  that normally sits between prescriber and payer. Primary-sourced from
+  Amazon's own newsroom. Caught by the 08-27 cold rotation, three weeks late.
+  ([About Amazon](https://www.aboutamazon.com/news/retail/amazon-pharmacy-glp-1-medicare))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-07-24 — Opened + crawled
 
 - **Thread opened** (ben-steer). ⟨steer 2026-07-24⟩

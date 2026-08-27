@@ -106,7 +106,54 @@
 #   expires     YYYY-MM-DD — auto-drops from the rail
 #   logged_by   ben-steer | curate-add
 
-flashes: []
+flashes:
+  # LATE CATCH, filed 2026-08-27 for an event dated 2026-08-25 ET.
+  # `filed` is set to today deliberately, per the rule: a late catch gets 24h
+  # from the CATCH, not a fresh lifespan and not the lifespan it already lost.
+  # flash_last_day() therefore renders this on 08-27 and no longer.
+  #
+  # WHY THIS CLEARS THE BAR: a two-country disaster with a three-figure
+  # confirmed death toll and a four-figure missing count, hundreds of them
+  # foreign nationals, with China's president ordering an all-out response.
+  # It leads a general news front page on its own facts, which is the test.
+  # Precedent on this map: colombia-earthquake-m7-4 (281 dead, 379 missing)
+  # took the rail on 08-11; this is larger.
+  #
+  # WHY IT IS LATE: the event fell at 22:52 ET on 08-25, inside a digest-day
+  # that was finalized without it. No benchmark critic would have caught it —
+  # all twelve benchmarks are AI, health-tech or finance publications — and
+  # the mechanical world-news pool could not be rebuilt (bq credential
+  # expired). It surfaced only on the 08-27 world-news sweep.
+  - id: nepal-tibet-glacier-collapse-flood
+    date: 2026-08-25
+    filed: 2026-08-27
+    severity: critical
+    headline: >-
+      Glacier collapse on the Nepal-Tibet border triggers a catastrophic
+      flood; hundreds confirmed dead and well over a thousand missing
+    body: >-
+      A glacier section broke away at roughly 5,200m on the Nepal-China
+      border at 02:52 UTC on 2026-08-26 (22:52 ET, 2026-08-25), fell about
+      1,200m, dammed the Lhende Khola above the Bhote Koshi valley and then
+      burst, sending a debris flood through Nepal's Rasuwa district and
+      Tibet's Gyirong County; the USGS has formally reclassified the seismic
+      signal it first read as a M4.4 earthquake to a M5.2 landslide, stating
+      no earthquake occurred. Figures are provisional and rising: Nepal's
+      Emergency Operations Centre reported 165 bodies recovered and 826
+      missing as of Thursday morning, with wire reports since putting the
+      Nepali dead above 350, while Xinhua reports 3 dead and 558 missing on
+      the Tibet side.
+    sources:
+      - label: USGS event us7000tbwb (reclassified to landslide)
+        url: https://earthquake.usgs.gov/earthquakes/eventpage/us7000tbwb/executive
+      - label: Rising Nepal Daily, citing Nepal's Emergency Operations Centre
+        url: https://risingnepaldaily.com/news/85592
+      - label: Xinhua, Tibet/Gyirong toll
+        url: https://chinaview.cn/20260827/3cff7674f33643dca84cf3b501f8ff1f/c.html
+      - label: Al Jazeera, mechanism and downstream path
+        url: https://www.aljazeera.com/news/2026/8/27/nepal-tibet-floods-what-happened-what-caused-them-and-who-is-missing
+    lenses: [all]
+    logged_by: curate-add
 # Pruned 2026-08-25 (/week step 2): kryvyi-rih-mall-double-tap (filed
 # 08-21) had already passed its filing day under flash_last_day() and no
 # longer rendered regardless — cosmetic tidy only, nothing was live.

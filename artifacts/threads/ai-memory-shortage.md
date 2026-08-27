@@ -12,6 +12,33 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-27 — $31bn of Japanese NAND, on a six-year horizon against a shortage felt now
+
+- **Kioxia and Sandisk said they will invest more than $31 billion in Japanese
+  NAND flash capacity through 2032** — Yokkaichi and Kitakami plus a new Iwate
+  fab — contingent on Japanese government support and framed explicitly as a
+  response to AI-driven memory demand. **This is the supply-side answer to the
+  constraint Nvidia priced into its margin guidance the night before, and the
+  mismatch is the point**: a six-year build against a shortage that is moving
+  prices now. It describes the shape of the problem rather than resolving it.
+  ([Investing.com, wire](https://www.investing.com/news/company-news/kioxia-and-sandisk-plan-31-billion-japan-investment-by-2032-93CH-4879055),
+  [Seeking Alpha](https://seekingalpha.com/news/4637427-kioxia-and-sandisk-to-invest-over-31b-in-japan))
+  ⟨daily 2026-08-27⟩
+
+## 2026-08-26 — The squeeze shows up in Nvidia's own margin line
+
+- **Nvidia guided Q3 FY2027 gross margin to 74.0% ±50bps, down from 75.0%,
+  with rising HBM and DRAM input costs the stated pressure.** Trade reporting
+  adds that Nvidia has told AI-server makers to expect price increases above
+  15% on systems shipping in early 2027 — ⚠️ that figure traces only to trade
+  coverage, not to any Nvidia statement, and is carried as unverified.
+  **This is the first time this thread has seen the memory squeeze priced
+  rather than forecast**, and it is priced in the margin of the company best
+  placed to pass it on.
+  ([NVIDIA IR](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx),
+  [FXStreet](https://www.fxstreet.com/news/nvidia-earnings-ai-boom-meets-margin-test-202608270626))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-24 — The market re-reads the >15% price rise as demand risk rather than pricing power
 
 - ⚠️ **The new fact today is the READING, not the price rise — the price rise itself is already on this thread, dated 08-22.** Nvidia's notice to contract manufacturers that AI-server prices rise **more than 15%** on systems shipping in early 2027, blamed on DRAM and HBM costs, was logged on the 08-23 page. **It resurfaced today as the stated driver of a semiconductor selloff**, and that is a different datum: the same disclosure that read as cost pass-through three days ago is now being read as **demand-softening risk**. Micron, SanDisk and Western Digital each fell more than 5% and the SOXX ETF dropped 3–4% in a session where the Dow rose.

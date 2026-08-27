@@ -39,6 +39,19 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-27 — The beat carries into the cash session and lifts the complex
+
+- **Nvidia's beat pulled the chip complex and the indices up in Thursday's
+  regular session** — Nvidia roughly +7-8% intraday, Marvell +5.8% and Micron
+  +4.5% on the premarket read-across, with the S&P 500 adding ~0.4-0.7% and the
+  Nasdaq ~0.7%. ⚠️ **Index-level figures rest on a single secondary aggregator**
+  — CNBC's own 08-27 live page returned a 403 — so the decimals are not
+  asserted; the direction is solid. **Worth noting what set the level**: the
+  index going into a Fed chair's first Jackson Hole keynote is being priced off
+  one company's guidance rather than any rate expectation.
+  ([CNBC](https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-22 — The rotation thesis meets a 15% input-cost rise
 
 - **Nvidia is raising AI server prices more than 15% on early-2027

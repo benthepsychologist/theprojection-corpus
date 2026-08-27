@@ -1,0 +1,47 @@
+# 2026-08-27-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase.
+#
+# ONE entry today, on the SK Horizon carve-out, because it is the only
+# bullet that names a transmission channel rather than restating its own
+# facts. Nothing written for the other three: the Nvidia cash-session
+# rally states its own mechanism inside the bullet (an earnings beat
+# repricing the complex), the Brent rebound is a headline-driven move the
+# bullet already characterises as two-way and the macro strip already
+# carries, and the Jackson Hole item is a scheduling fact about a speech
+# that has not happened — there is nothing yet to interpret. Forcing one
+# onto any of them would be padding, which is what this file is not for.
+#
+# Validated against readouts.validate_interpretation() before commit.
+#
+# Read against attention/capital-context.yaml (asof 2026-08-25) — in
+# particular its cross_border_credit reading ($47.62T of cross-border bank
+# claims in Q1, up from $45.97T) and the rate_regime reading's 30-year
+# near 5.2% with three 2026 auctions clearing above 5%.
+
+sk-telecom-carved-its-ai-data-centre-business-into:
+  mechanism: When long-end borrowing costs stay above 5%, buildout financing
+    migrates from bank and vendor credit into private-capital equity in the
+    operating asset, because equity is not repriced by the curve.
+  confidence: plausible
+  scenarios:
+  - direction: More carriers and utilities carve AI data-centre assets into
+      separate vehicles with manager equity, rather than funding them on the
+      parent balance sheet.
+    why: 'The falsifiable form: the structure repeats at other operators, not
+      just that this one deal happened. Continued parent-balance-sheet builds
+      at comparable scale would refute it.'
+    precedent: Nvidia''s own 10-Q filed 2026-08-26 discloses $500bn+ of planned
+      third-party capital through Apollo, BlackRock, Blackstone, Brookfield,
+      Goldman and KKR — the same managers, the same substitution, one layer up.
+  - direction: It stays a Korea-specific financing choice driven by SK Telecom's
+      own leverage and regulatory position, and does not generalise.
+    why: SK Telecom is a carrier with a particular capital structure, and Korean
+      telecom regulation shapes what it can hold; a single transaction is not a
+      market-wide shift in funding channel.
+    precedent: Oracle funded its Stargate-linked buildout on its own balance
+      sheet through 2026 and took the pipeline-delay hit directly — the
+      counter-pattern, same sector, same period.
+  context_note: Read against capital-context's cross-border credit reading —
+    claims rose to $47.62T in Q1 — so bank capacity is expanding, not
+    contracting. The substitution is about price, not availability.

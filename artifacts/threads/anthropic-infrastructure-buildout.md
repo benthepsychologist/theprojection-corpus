@@ -25,11 +25,24 @@ contractual concession this map has seen a lab make to ratepayer politics.
   (theoretical build-out to 8GW), which will run Nvidia's next-generation
   Vera Rubin chips coming online late 2027. Reporting frames it as
   capacity locked in ahead of a potential IPO. **The pattern holds for a
-  fifth and now effectively sixth time** — SpaceX (~$45B), Volta
+  FIFTH time as a LEASE, and a sixth infrastructure move overall** —
+  SpaceX (~$45B), Volta
   ($10B/Norway), Riot Platforms ($9.1B), Theseus (Macquarie/GIC), and now
   Nscale: rent and anchor, never own, so the capex sits on someone else's
   balance sheet while the lease obligation sits on Anthropic's. New this
   time: the deal is priced against silicon that hasn't shipped yet.
+  ⚠️ **The two counts disambiguated on the 2026-08-27 finalize pass, because
+  this entry, the 08-26 front digest and the 08-26 lens digest each gave a
+  different number.** They are all describing the same roster from different
+  angles: **five ANCHOR LEASES** (SpaceX, Volta, Riot, Theseus, Nscale) and
+  **six infrastructure MOVES**, the sixth being the reported ~$6B Decart
+  acquisition of 2026-08-13 — a different instrument, an outright purchase
+  rather than a rental, and still only in talks. **Say which count is meant.**
+  Second correction: the Nscale arrangement is a **straight six-year capacity
+  lease, not equity or debt between the two companies**, and it remains
+  sourced to reporters citing people familiar — **neither company has
+  confirmed it on the record**, and Anthropic's own newsroom carried no
+  release on it when checked directly on 08-27.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power))
   ⟨daily 2026-08-26⟩
 

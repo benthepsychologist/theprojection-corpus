@@ -5,6 +5,21 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-27 — Hezbollah drones over the security zone, Israeli strikes on Nabatiya
+
+- **Hezbollah launched two explosive drones at Israeli troops inside the agreed
+  security zone in south Lebanon on Wednesday night, and the IDF struck
+  Hezbollah weapons infrastructure near Nabatiya in response on Thursday.**
+  The drones went up at the Ali-Taher Ridge; soldiers downed one and lost
+  contact with the second, with no Israeli casualties reported. **The timing
+  against the talks is the point** — round seven closed 08-06 and **round eight
+  remains unscheduled**, with 09-01 provisional and unconfirmed, so the
+  ceasefire's violations are currently outrunning the process meant to settle
+  them.
+  ([Jerusalem Post](https://www.jpost.com/israel-news/defense-news/article-906783),
+  [JNS](https://www.jns.org/news/israel-news/idf-launches-strikes-on-hezbollah-targets-in-southern-lebanon))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-24 — Lebanese officials assess Israeli strikes are laying groundwork for a wider campaign, tied to Netanyahu's election timeline
 
 - **Lebanese security officials told Asharq al-Awsat that Israel's recent strikes on ridgelines and a transportation route in southern Lebanon are not localized operations but preparation for a possible expansion of fighting, aimed at creating a buffer zone separating Hezbollah strongholds from surrounding areas.** The officials linked the pattern to Israel's approaching general election, assessing Netanyahu may be inclined toward more forceful military action to demonstrate security achievements. ([The Jerusalem Post](http://www.jpost.com/israel-news/defense-news/article-906427)) ⟨daily 2026-08-25⟩

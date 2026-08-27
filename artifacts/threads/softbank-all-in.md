@@ -11,20 +11,21 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
-## 2026-08-26 — A second bond leg, this one wholesale/international, and the market's own price on the risk
+## 2026-08-26 — The second leg is a 144A — the first international one in over a decade
 
-- **SoftBank is talking to banks about a $10-20bn dollar/euro bond sale,
-  possibly as soon as September, to partly repay the $40bn bridge loan
-  behind its OpenAI investment** (it is committed to nearly $65bn by
-  October). SoftBank confirmed to Bloomberg it is "considering options."
-  **Same-day market reaction is the evidence that matters**: SoftBank's
-  existing 8.5% 2036 notes fell as much as 2.5 cents to about 98 cents on
-  the dollar in today's trading. This stacks on top of the ¥1 trillion
-  retail bond already priced for 09-04 — two separate financing legs,
-  retail and now wholesale/international, both funding the same OpenAI
-  commitment.
+- **SoftBank's prospective $10-20bn second bond leg is a Rule 144A offering,
+  its first international 144A in more than ten years, floated to help refinance
+  the $40bn bridge loan behind an OpenAI commitment approaching $65bn.**
+  **The structure matters more than the size**: 144A puts the paper before US
+  institutional buyers without a public registration, which is how a junk-rated
+  issuer raises this much this quickly, and it is a different investor base from
+  the Japanese retail bid the ¥1 trillion tranche targets. Its existing 8.5%
+  2036 notes fell as much as 2.5 cents to ~98 on the day — **their steepest
+  single-day move since April.** SoftBank's own spokesperson: "we are
+  considering various options... but nothing has been decided, including the
+  amount for each."
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/softbank-mulls-up-to-20-billion-bond-sale-for-openai-financing),
-  [Investing.com](https://www.investing.com/news/stock-market-news/softbank-weighs-up-to-20-bln-bond-sale-to-refinance-openai-loan--bloomberg-4876268))
+  [SoftBank IR, outstanding bonds](https://group.softbank/en/ir/stock/bond))
   ⟨daily 2026-08-26⟩
 
 ## 2026-08-24 (late catch, added 2026-08-25) — The record bond gets its terms, and a reason it had to be retail

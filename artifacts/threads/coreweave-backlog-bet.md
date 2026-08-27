@@ -15,6 +15,18 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-08-11 — The backlog reaches $104bn, up 246%
+
+- **CoreWeave reported a contracted revenue backlog of roughly $104.2 billion
+  as of 2026-06-30, up 246% year over year, with more than $25 billion of
+  further net-new customer commitments booked after quarter-end and not
+  included in that figure.** **The bet this thread is named for is the backlog
+  itself** — whether contracted forward revenue of that size converts, and at
+  what margin, given the debt raised against it. Primary-sourced from the
+  company's own earnings release. Caught by the 08-27 cold rotation.
+  ([CoreWeave Investor Relations](https://investors.coreweave.com/))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-11 — Q2 print: consensus beat on both lines, backlog to ~$129B, and debt service climbing right alongside it
 
 - **CoreWeave beat Q2 consensus on both lines — $2.575B revenue (+112%

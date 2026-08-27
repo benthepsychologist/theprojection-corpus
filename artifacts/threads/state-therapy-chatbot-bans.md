@@ -13,6 +13,21 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-27 — KFF maps the patchwork, and the classification question is still open
+
+- **KFF published a state-by-state comparison of AI mental-health-tool
+  regulation, finding states are not converging** — Illinois and Nevada restrict
+  use directly, Utah and Rhode Island regulate disclosure and data handling
+  instead, and the underlying question of whether these tools are clinical
+  support, a consumer product, or care requiring licensure remains unresolved.
+  **That classification question is the whole fight**, because liability,
+  reimbursement and who may deploy one all follow from it — and a patchwork
+  answer means the deploying organisation effectively picks its jurisdiction.
+  A policy synthesis rather than a new event, logged as the clearest current
+  map of this thread's terrain.
+  ([KFF](https://www.kff.org/mental-health/different-state-regulatory-approaches-reflect-open-questions-about-ai-mental-health-tools/))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-19 — Backfill: Colorado's HB26-1195 has been binding law since 08-12, missed until today
 
 - 🕰 **CAUGHT LATE — Colorado's "Psychotherapy Artificial Intelligence

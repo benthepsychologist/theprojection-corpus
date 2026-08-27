@@ -13,11 +13,22 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
-## 2026-08-26 — Nvidia answers the referendum: beat-and-raise, and its CFO addresses "circular financing" by name for the first time
+## 2026-08-26 — The argument moves from analyst deck to SEC filing
 
-- **Nvidia's Q2 FY27 results printed after Wednesday's close: $96.2B revenue (up 106% YoY, 18% QoQ) against a roughly $92.2B Street estimate, GAAP net income $59.7B (GAAP EPS $2.46; non-GAAP EPS $2.22 against a ~$2.06-2.09 estimate), and data-center revenue of $89B against an $85.7B estimate.** Q3 FY27 guidance came in at $108.0B ± 2%, roughly $4B above the ~$104.2B consensus — nearly $4B above what the market wanted to see after the 08-25 entry's "referendum" framing. Shares dipped briefly on the print before closing roughly 5% higher, a fresh all-time high. ([NVIDIA press release, primary/SEC](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm), [Fortune](https://fortune.com/2026/08/26/nvidia-results-q2-earnings/)) ⟨daily 2026-08-26⟩
-- **Nvidia's own filing deepens the loop even as it answers the growth question: supply commitments more than doubled quarter-on-quarter, from $119B to $279B, "primarily related to the procurement of memory,"** and the company guided gross margin down to 71–72% for Q4 FY27, partly on memory pricing — Nvidia's own forward purchase commitments now showing up as a margin cost, not just a demand signal. ([NVIDIA press release, primary](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm)) ⟨daily 2026-08-26⟩
-- **CFO Colette Kress named "circular financing" on the earnings call rather than avoiding the term: "We recognize the scale of this support, and we know some will call this circular financing. We see it differently,"** describing the backed companies as "once-in-a-generation companies" she expects "to become the largest technology companies in history." Jensen Huang separately told CNBC's Jim Cramer the ecosystem-support arrangements reflect the unprecedented capital needed to build frontier AI companies, and that "the risk is low." This is the earnings-day answer the 08-25 entry flagged as a referendum on the loop itself — Nvidia chose to name and defend the loop on the call rather than sidestep it. ([CNBC](https://www.cnbc.com/2026/08/26/jensen-huang-defends-nvidias-growing-financial-support-for-ai-ecosystem-says-the-risk-is-low-.html), [Yahoo Finance](https://finance.yahoo.com/news/nvidia-ceo-hits-back-at-ai-bubble-circular-investing-fears-we-see-something-very-different-174628099.html)) ⟨daily 2026-08-26⟩
+- **Nvidia's 10-Q put numbers on every leg of the circle at once: $105B of
+  guarantees to an OpenAI affiliate, $25B of committed equity in AI labs and
+  infrastructure financiers, $3.5B of lease guarantees for cloud partners, and
+  $500bn+ of third-party capital lined up through Apollo, BlackRock,
+  Blackstone, Brookfield, Goldman Sachs and KKR.** **The significance is
+  evidentiary rather than novel.** This thread has tracked the circular
+  structure as an argument built from reported deal values and inference; a
+  10-Q is dated, audited and carries liability. The vendor guarantees the land
+  and power its customers build on, takes equity in the labs that buy its
+  chips, and routes the funding through private credit — all three now
+  disclosed in one document.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm),
+  [Q2 call transcript](https://www.marketbeat.com/instant-alerts/transcript-nvidia-q2-earnings-call-highlights-2026-08-26/))
+  ⟨daily 2026-08-26⟩
 
 ## 2026-08-25 — Nvidia's earnings preview turns into a referendum on the loop itself, one day out
 

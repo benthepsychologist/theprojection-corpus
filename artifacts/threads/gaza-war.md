@@ -17,6 +17,21 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-26 — The ceasefire plan's own overseer publicly rebukes Israel
+
+- **Nikolay Mladenov, the Board of Peace's high representative and the official
+  overseeing the US ceasefire framework, told the UN that Israeli strikes since
+  the ceasefire began have kept killing Palestinians and are preventing Gazans
+  from believing the war is over** — questioning whether the strikes are
+  actually stopping Hamas rearming or merely delaying disarmament under the
+  20-point plan. He said he had met Netanyahu and Jared Kushner the previous
+  week; Netanyahu still conditions withdrawal on complete Hamas disarmament, a
+  standoff Mladenov called a point that, if it tips into renewed war, is a
+  "point of no return." **The source is what makes this a development**: this
+  is the plan's own administrator, not a critic of it.
+  ([NPR](https://www.npr.org/2026/08/27/g-s1-140400/israel-gaza-ceasefire))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — The Board of Peace criticizes Israeli conduct in Gaza publicly for the first time
 
 - **A Board of Peace official said publicly that Israeli military action in Gaza "cannot extend beyond responding to genuine and imminent threats," and that "all militant activity in Gaza must stop, including the flying of kites" — the first time the body has criticized Israel's conduct in Gaza on the record rather than staying silent on it.** IDF Chief of Staff Lt. Gen. Eyal Zamir responded the same day that "the pursuit of the October 7 terrorists continues" and that anyone who took part in the 2023 attack "will live under pursuit until they are eliminated." ([The Times of Israel](https://www.timesofisrael.com/liveblog-august-25-2026/)) ⟨daily 2026-08-25⟩

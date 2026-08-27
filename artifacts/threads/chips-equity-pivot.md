@@ -16,6 +16,20 @@ unresolved. Track: which awards convert, the legal instrument used, and
 whether equity terms start steering corporate behavior (links
 intel-rescue).
 
+## 2026-08-20 — The government's Intel stake reaches court
+
+- **Commerce Secretary Howard Lutnick asked a federal judge to dismiss a
+  shareholder suit alleging Intel was unlawfully coerced into giving the
+  government roughly a 10% stake as a condition of CHIPS Act funding**, arguing
+  the Act authorised conditioning funding on equity or warrant compensation.
+  Intel shares dipped on the news. **This is the first real litigation test of
+  the equity-for-subsidy approach this thread tracks** — the policy moving from
+  negotiation into a courtroom where its legal basis has to be stated. ⚠️ The
+  underlying stake dates to 2025, not this month; at least one search result
+  misdated it, and the date was checked. Caught by the 08-27 cold rotation.
+  ([Bloomberg Law](https://news.bloomberglaw.com/), [TipRanks](https://www.tipranks.com/))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-07 — The portfolio hits exactly the "~30" figure this thread flagged two weeks ago
 
 - **Six more semiconductor firms signed letters of intent for CHIPS Act funding in exchange for "minority, non-controlling" equity, taking the government's total stock portfolio to 30 companies — the same "~30 deals" estimate this thread logged on 07-26 is now a confirmed, named count.** The new tranche: GlobalFoundries plus five smaller/earlier-stage firms (Kepler, Multibeam, Extropic, Thintronics, Obsidia Semiconductors, Aeluma), drawing on up to $874M from the 2022 CHIPS Act. Cumulative government position: ~$26.7B — unchanged from the 07-26 figure, meaning this tranche is additive rather than a revision to the earlier estimate. Intel remains the flagship (9.9% at announce, ~$42B on paper).

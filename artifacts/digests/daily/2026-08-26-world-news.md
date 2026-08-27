@@ -1,20 +1,21 @@
 ---
 lens: world-news
 date: 2026-08-26
-status: building
+status: final
 window_start: 2026-08-26T05:00:00-04:00
-as_of: 2026-08-26T15:00:00-04:00
+window_end: 2026-08-27T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-26
 
-*Curated agentic-interim, 05:00 ET → 15:00 ET across two runs. The
-10:30 ET run's sources: one dedicated tier-2 geopolitics sweep across
-all four active-conflict threads plus the social-media-causality thread,
-one tier-2 macro/trade sweep, and a collector sweep. **This 15:00 ET
-extension** added one targeted geopolitics sweep for the window since
-10:30 ET.*
+*Curated agentic-interim, the full 05:00 ET → 05:00 ET digest-day, across
+three runs. The 10:30 and 15:00 ET runs covered 05:00 → 15:00 ET.
+**FINALIZED on the 2026-08-27 run**, which reconstructed the back half
+via a two-window geopolitics sweep. That sweep found three real
+developments in the back half and — separately — surfaced a
+front-page-scale disaster this map had missed entirely on a closed day.
+See the flash check.*
 
 ## Today's throughline
 
@@ -45,6 +46,36 @@ the reasoning is written into it.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/26/iran-oman-agree-on-temporary-hormuz-route-what-we-know),
   [Al-Monitor](https://www.al-monitor.com/originals/2026/08/iran-and-oman-reach-agreements-share-hormuz-and-revenues-revolutionary-guards-say))
   <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=items sev=major -->
+
+- **Russia struck Kyiv and several other regions with an hours-long
+  combined missile-and-drone barrage beginning around 03:00 Kyiv time**
+  — roughly 20:00 ET, inside this digest-day's back half. Ukraine's Air
+  Force reported downing or suppressing one Oniks cruise missile, seven
+  Iskander-M/KN-23 ballistic missiles, three S8000 Banderol drones and
+  222 other drones. Debris fell in Kyiv's Podilskyi and Shevchenkivskyi
+  districts, hitting a residential courtyard and an educational
+  building; strikes also hit industrial sites in Kremenchuk and an
+  energy facility in Myrhorod, triggering emergency outages, and an
+  apartment building in Kharkiv. **Casualty figures were not
+  consistently reported** across sources and no toll is asserted here.
+  ([Kyiv Independent](https://kyivindependent.com/explosions-rock-kyiv-as-russia-launches-ballistic-missiles-at-the-capital-and-other-regions-across-ukraine/),
+  [United24 Media](https://united24media.com/war-in-ukraine/kyiv-endures-hours-long-drone-attack-as-russia-strikes-ukraine-from-odesa-to-kharkiv-21993))
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **The US-appointed official overseeing the Gaza ceasefire publicly
+  rebuked Israel over continued strikes** — Nikolay Mladenov, the Board
+  of Peace's high representative, told the UN that Israeli strikes since
+  the ceasefire began have kept killing Palestinians and are stopping
+  Gazans from believing the war is over, and questioned whether the
+  strikes are actually preventing Hamas from rearming or merely delaying
+  disarmament under the 20-point plan. He said he had met Netanyahu and
+  Jared Kushner the previous week; Netanyahu still will not withdraw
+  before full Hamas disarmament. **Mladenov called that standoff a point
+  which, if it tips into renewed war, is a "point of no return."** The
+  notable part is the source: this is the plan's own overseer, not a
+  critic of it.
+  ([NPR](https://www.npr.org/2026/08/27/g-s1-140400/israel-gaza-ceasefire))
+  <!-- k: t=gaza-war e= axis=items -->
 
 ## 🚨 Flash check
 
@@ -101,13 +132,22 @@ threads; this is new ground.
 
 - **Ukrainian domestic corruption reaches Zelensky's own chief of
   staff** *(new offer)* — Kyiv Independent and Hromadche reported today
-  that Andriy Budanov appears on wiretap recordings tied to NABU's
+  that **Kyrylo** Budanov appears on wiretap recordings tied to NABU's
   corruption case around jailed ex-Energy Minister Galushchenko and the
   Energoatom bribery scandal. **This doesn't fit `russia-ukraine-war`'s
   war-conduct scope** — it's a governance/graft story about the
   administration prosecuting the war, not the war itself — and the map
-  has no thread for Ukrainian domestic politics. Not urgent given a
-  single day-one report. **Track it?**
+  has no thread for Ukrainian domestic politics. **Second offer; carried
+  and materially firmer.** The finalize sweep confirmed the specifics:
+  the transcripts entered an 08-25 court hearing in the case against
+  former deputy chief of staff Iryna Mudra, refer to "Kyrylo
+  Oleksiyovich," and allege Timur Mindich delivered ~150 million hryvnia
+  (~$3.4M) on June 17 toward Halushchenko's bail. Asked about it on
+  08-27, Budanov said only: "Let the court sort it out." ⚠️ **Name
+  correction:** the 08-26 offer called him *Andriy* Budanov. It is
+  **Kyrylo** Budanov. **Track it?**
+  ([Kyiv Independent](https://kyivindependent.com/zelenskys-chief-of-staff-budanov-features-in-tapes-linked-to-latest-corruption-case-media-say/),
+  [Liga.net](https://news.liga.net/en/politics/news/budanov-commented-on-the-nabu-corruption-case-involving-his-former-deputy-mudra))
 
 ⚠️ **`attention/world-news.yaml`, this lens's mechanically-scored
 candidate pool, could not be regenerated today** — it still carries

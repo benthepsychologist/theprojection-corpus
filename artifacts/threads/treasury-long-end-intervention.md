@@ -12,31 +12,35 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
-## 2026-08-27 — Yields ease a touch heading into Jackson Hole, the day after Nvidia's blowout print
+## 2026-08-27 — Jackson Hole opens; the keynote that matters is tomorrow
 
-- **The 10-year eased about 2bp to 4.645% and the 30-year about 2bp to 5.161% in Thursday trading, as investors positioned for jobs data and the opening day of the Kansas City Fed's Jackson Hole symposium** (Warsh's first keynote as chair is Friday 08-28, 10:00 ET) — a small, unremarkable move rather than a fresh repricing, and notably not disrupted by Wednesday night's blowout Nvidia print (full detail on `ai-trade-bear-turn`) or Cook's overnight response to the removal threat (`fed-independence-fight`). ⚠️ Direct CNBC fetch returned 403; figures come from the search snippet of the same CNBC article, not confirmed against primary Fed H.15 data.
-  ([CNBC](https://www.cnbc.com/2026/08/27/us-bonds-us10y-jackson-hold.html))
+- **The Kansas City Fed's Jackson Hole symposium opened under the theme
+  "Financial Innovation: Implications for Payments and Policy," with no chair
+  remarks delivered.** **Kevin Warsh's first keynote as Fed chair is 08-28 at
+  10:00 ET**, three weeks before the September FOMC — stated plainly because
+  this is exactly the kind of scheduled event that gets reported as having
+  happened. ⚠️ The Kansas City Fed's own page 403'd on every transport, so the
+  date and time rest on three corroborating secondary sources.
+  ⛔ Separately: **today's scheduled 7-year note auction result could not be
+  retrieved** — the second consecutive auction this thread cannot put a number
+  on.
+  ([MNI Markets](https://www.mnimarkets.com/articles/chair-warsh-to-give-jackson-hole-keynote-speech-aug-28-at-10am-et-1787258124058))
   ⟨daily 2026-08-27⟩
 
-## 2026-08-26 — A hot headline PCE moves the long end barely at all
+## 2026-08-26 — An auction this map cannot state a number for
 
-- **July PCE printed 3.7% year-over-year on the headline, a tenth above
-  consensus, with core at 3.3% as forecast — and Treasury yields barely
-  moved.** The 2-year fell about a basis point to 4.176%, the 10-year rose
-  about two to 4.643%, the 30-year fell about one to 5.166%, with a crude
-  selloff offsetting the hotter headline. A consensus-beating print that
-  moves nothing suggests the hawkish hold it supports is already priced.
-  ([CNBC](https://www.cnbc.com/2026/08/26/feds-preferred-inflation-gauge-shows-core-prices-rose-3point3percent-annually-in-july.html),
-  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/treasuries-edge-lower-before-pce-data-with-fed-risks-in-focus))
-  ⟨daily 2026-08-26⟩
-
-- **The day's $70bn 5-year note auction priced at a 4.659% high yield
-  with a 2.39 bid-to-cover ratio**, against a 2.46 average over the prior
-  ten auctions — a lower cover ratio, conventionally a modestly weaker
-  demand signal. ⚠️ The only source found headlines this "above average
-  demand" while reporting the same numbers; flagging the contradiction
-  rather than asserting a direction until a second source clarifies.
-  ([RTTNews](https://www.rttnews.com/3684932/five-year-note-auction-attracts-slightly-above-average-demand.aspx))
+- ⛔ **The 08-26 5-year note auction (CUSIP 91282CRK9) happened, and its
+  figures cannot be reconciled across three sources.** TreasuryDirect's own API
+  returned bid-to-cover 2.37 on two separate queries but two different high
+  yields (4.28% and 4.393%), **plus an "amount accepted" exceeding "amount
+  offered" — arithmetically impossible for a Treasury auction**, which reads as
+  data corruption on that endpoint. A secondary recap gives 2.28 against a 2.33
+  average at 4.408%. The figures first logged here (4.659% / 2.39 vs a 2.46
+  average) match none of them. **Every number attached to this auction is
+  unverified**, and the honest resolution is a direct pull of the
+  press-release PDF. Logged as an open data question rather than resolved by
+  choosing the most plausible-looking figure.
+  ([TreasuryDirect API, CUSIP 91282CRK9](https://www.treasurydirect.gov/TA_WS/securities/search?cusip=91282CRK9&format=json))
   ⟨daily 2026-08-26⟩
 
 ## 2026-08-25 — Thread opened, backfilled from `fed-independence-fight`

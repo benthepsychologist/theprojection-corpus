@@ -12,6 +12,34 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-08-26 — Headspace's price lands at a tenth of its 2021 valuation, and a payer-tooling raise closes
+
+- **The Sword Health / Headspace deal was reported at $200-300 million,
+  all-cash, against the $3 billion Headspace was valued at in its 2021 Ginger
+  merger** — a figure attributed to reporting rather than to the filing that
+  surfaced the transaction on 08-25, which stated terms were undisclosed.
+  Headspace raised roughly $320 million over its life. **The price changes what
+  the deal means for this thread.** At this level it is not a consolidation of
+  a strong consumer brand into a multi-condition platform so much as the
+  wind-down of the standalone consumer mental-health business into someone
+  else's distribution — the harder version of the pattern this thread was
+  opened to watch. ⚠️ Recovered by the coverage critic, not the day's own
+  sweeps, which reported this window empty.
+  ([Fierce Healthcare](https://www.fiercehealthcare.com/digital-health/sword-health-acquire-headspace-all-cash-deal))
+  ⟨daily 2026-08-26⟩
+
+- **Onos Health raised a $17 million Series A led by Costanoa, with Flare
+  Capital Partners and CVS Health Ventures participating**, taking it to $23.5
+  million raised; it sells behavioural-health claims and care analytics to
+  insurers including Aetna, claiming a 35% adherence lift and ~6% annual
+  program-cost reduction. **The buyer is the payer** — which puts it on the
+  same side of the table as `payer-ai-claim-denial` and makes it a different
+  object from the clinician- or patient-facing tools this thread mostly
+  carries.
+  ([MedCity News](https://www.medcitynews.com/2026/08/onos-health-raises-17m-to-expand-ai-powered-behavioral-health-platform/),
+  [Behavioral Health Business](https://bhbusiness.com/2026/08/26/onos-health-lands-17m-from-costanoa-flare-capital-cvs-ventures/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Headspace is acquired by a musculoskeletal-first digital health company
 
 - **A public filing revealed that Sword Health will acquire Headspace,

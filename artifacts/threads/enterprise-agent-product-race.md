@@ -13,10 +13,19 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
-## 2026-08-26 — Two enterprise pushes land the same day: Salesforce embeds Claude company-wide, Google verticalizes Gemini Enterprise for finance and legal
+## 2026-08-26 — Claudeforce puts the CRM inside the model, not the model inside the CRM
 
-- **Salesforce and Anthropic announced "Claudeforce," making Claude the reasoning model behind Salesforce's Atlas Reasoning Engine and the default model for Agentforce Vibes and Agentforce Coworker, alongside a new "Salesforce in Claude" plugin carrying 37 prebuilt sales skills** (deal-health review, pipeline updates, meeting prep) that let sellers act on live Salesforce data from inside Claude itself. Announced as Salesforce opened its Q2 FY27 earnings call; in pilot now, open beta due September 2026, more prebuilt skills promised later in the year. Anthropic CEO Dario Amodei framed it as letting companies "point Claude at the customer information and business context they've been building in Salesforce for decades." Bidirectional embedding — Claude inside Salesforce, Salesforce inside Claude — is a sharper version of this thread's packaging throughline than a single-surface bundle. ([Salesforce, primary](https://www.salesforce.com/news/press-releases/2026/08/26/salesforce-and-anthropic-announce-claudeforce/), [CNBC](https://www.cnbc.com/2026/08/26/salesforce-anthropic-partnership-claudeforce.html), [VentureBeat](https://venturebeat.com/orchestration/salesforce-just-put-its-entire-crm-inside-claude-and-says-youll-never-need-its-app-again)) ⟨daily 2026-08-26⟩
-- **Google Cloud shipped two industry-specific Gemini Enterprise editions, for financial services and legal, the same day.** The financial edition pairs a Google-managed "Financial Research" agent with 50+ specialized skills and 13 data connectors (FactSet, LSEG, Moody's, S&P Global, SEC EDGAR), with Deutsche Bank and CME Group as early adopters; the legal edition covers contract review, due diligence and regulatory monitoring via Docusign, iManage and Thomson Reuters integrations, with Cleary, Freshfields, Weil and Williams & Connolly as launch customers. Both are in global preview only — no GA date or pricing announced. Vertical-specific packaging, one layer down from the general-purpose platform bundling this thread already tracked from Google on 08-20. ([technode.global](https://technode.global/2026/08/26/google-gemini-enterprise-financial-legal/)) ⟨daily 2026-08-26⟩
+- **Salesforce and Anthropic announced "Claudeforce," a 37-skill Salesforce
+  plugin running inside Claude** — deal-health review, pipeline updates and
+  meeting prep against live CRM data from Claude's own interface, in pilot now
+  with a broader beta in September. Announced 16:00 ET, timed to Salesforce's
+  Q2 FY2027 earnings call. **The direction of travel is the development, not the
+  feature list**: the enterprise application is moving inside the model's
+  surface rather than calling the model from within the application, which
+  inverts the integration pattern every vendor on this thread has used so far.
+  ([Salesforce IR](https://investor.salesforce.com/news/news-details/2026/Salesforce-and-Anthropic-Announce-Claudeforce-The-1-AI-Meets-the-1-AI-CRM/default.aspx),
+  [CNBC](https://www.cnbc.com/2026/08/26/salesforce-anthropic-partnership-claudeforce.html))
+  ⟨daily 2026-08-26⟩
 
 ## 2026-08-25 — First live development since the thread opened: Anthropic merges memory across chat and its agent product
 

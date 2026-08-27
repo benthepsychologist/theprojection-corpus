@@ -13,16 +13,31 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
-## 2026-08-26 — Z.AI claims "Ox Alpha" and opens the weights
+## 2026-08-27 — Nvidia optimises for the Chinese models it cannot sell chips into
 
-- **Zhipu/Z.AI confirmed it built "Ox Alpha," the stealth reasoning and
-  coding model that had passed DeepSeek to top OpenRouter usage since an
-  uncredited weekend release, and said it would open the weights the same
-  night.** Anonymity as a launch tactic is the novel part: the model
-  earned its leaderboard position without a national label attached, and
-  the label arrived only once the position was unarguable. This resolves
-  a thread candidate this map had carried unattributed for two runs.
-  ([Bloomberg, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/china-z-ai-made-ox-090000133.html))
+- **Nvidia is adding day-zero support and clustering optimisations for Chinese
+  open-weight models — DeepSeek V4 Flash and Alibaba Qwen 3.8 — on its RTX and
+  DGX Spark lines, while a linked SEC filing warns that a potential White House
+  restriction on China-developed AI models is a business risk.** **This is the
+  clearest statement yet of the position this thread has been circling.** With
+  the Chinese market written off in guidance, optimising for Chinese *models*
+  running on Western hardware is the residual way to stay in that ecosystem —
+  and Nvidia's own filing names it as the thing US policy may close next.
+  ([CNBC](https://www.cnbc.com/2026/08/27/nvidia-chinese-ai-models.html))
+  ⟨daily 2026-08-27⟩
+
+## 2026-08-26 — Nvidia's first H200s reach China, against a part the rest of the world has moved past
+
+- **Nvidia disclosed its first-ever H200 shipments into China — under a
+  Washington-approved, Beijing-restricted licence — amounting to under 1% of
+  data-centre revenue, and took a $400M charge for excess H200 inventory
+  attributed to soft demand OUTSIDE China.** **The two facts belong together.**
+  The licence that finally opened arrived against a part the rest of the market
+  had already moved past, and the Q3 guide assumes no China data-centre compute
+  revenue at all. Access was granted to a generation China no longer needs at
+  the moment its domestic stack is the thread's subject.
+  ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm),
+  [SCMP](https://www.scmp.com/tech/big-tech/article/3365383/nvidia-ships-first-h200s-china-forecasts-no-data-centre-computing-revenue))
   ⟨daily 2026-08-26⟩
 
 ## 2026-08-25 — Moonshot seeks US cloud distribution for Kimi K3

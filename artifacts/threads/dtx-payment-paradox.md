@@ -14,6 +14,20 @@ tools clinically strongest but cost-structured worst (flat access-fee
 pricing); Germany's 2026 DiGA reform ties ≥20% of price to performance.
 Three markets running the same natural experiment.
 
+## 2026-08-26 — The most recognisable consumer brand in the category sells for a tenth of its peak
+
+- **Headspace's sale to Sword Health was reported at $200-300 million against
+  a $3 billion valuation in 2021** — roughly a 90% markdown on the category's
+  most recognisable consumer name, against ~$320 million raised. **This thread
+  tracks the gap between digital-therapeutic adoption and anyone paying for
+  it, and Headspace was the strongest available counterexample.** A price at
+  this level makes it an instance of the paradox instead: consumer reach at
+  scale, and an exit that values the reach at a fraction of the capital that
+  built it. The EAP and employer channel Sword acquires with it is exactly the
+  distribution Pear never had.
+  ([Fierce Healthcare](https://www.fiercehealthcare.com/digital-health/sword-health-acquire-headspace-all-cash-deal))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-07 — Opened (ben-steer)
 
 - **Opened as a dedicated child thread of `mh-evidence-watch`**, seeded

@@ -24,6 +24,25 @@ concrete.
   sanctions, CDS) stayed on red-sea-oil-shock.
 -->
 
+## 2026-08-27 — Washington says it is not talking to Iran while Qatar flies to Tehran
+
+- **The US said publicly it is "not talking to Iran" even as Qatar's foreign
+  minister travelled to Tehran to try to restart direct talks** — the Hormuz
+  diplomatic track intensifying and stalling at once. Reporting through the day
+  describes a phased framework for a temporary shipping corridor plus a
+  mine-clearing initiative, and a commercial tanker was reportedly struck by a
+  projectile in the strait on Wednesday (fire extinguished, no casualties
+  reported). **The IRGC's 08-26 claim that Iran and Oman had "reached
+  agreements" on splitting the strait's waters and revenues remains a
+  military-agency press statement** — not a signature, a joint declaration or a
+  published text — and goes further than the 08-25 joint foreign-ministry
+  statement, which mentioned no fees at all. `iran-oman-hormuz-deal-signing`
+  stays passed-silent on those grounds: no signed text, none of the three named
+  mechanical terms confirmed, and **no new date to slip to.**
+  ([Fox News live updates](https://www.foxnews.com/live-news/iran-war-us-strait-hormuz-oman-oil-tensions-08-27-26),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/iran-oman-agree-to-share-strait-of-hormuz-revenue-irgc-says))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — Iran names a temporary Hormuz corridor; oil falls ~6% over two days
 
 - **Iran announced a temporary transit corridor through the Strait of

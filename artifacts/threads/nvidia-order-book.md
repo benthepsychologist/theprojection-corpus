@@ -13,6 +13,66 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-08-27 — Reporting firms to an agreed Hugging Face deal, and the rally carries
+
+- **CNBC, citing a person familiar, reported that Nvidia has AGREED to acquire
+  Hugging Face for about $12.9B** — an escalation from the previous evening's
+  "in talks." Reporting notes an earlier $500M offer was rejected and that
+  Hugging Face was valued at $4.5B in 2023. It would be Nvidia's largest
+  acquisition ever, against $7B for Mellanox. ⚠️ **Still unconfirmed by either
+  company**, sourced entirely to people familiar, and the original reporting
+  said it could fall through.
+  ([CNBC](https://www.cnbc.com/2026/08/27/nvidia-hugging-face-acquisition.html),
+  [The Information](https://www.theinformation.com/articles/nvidia-agrees-buy-open-source-model-repository-hugging-face-12-9-billion))
+  ⟨daily 2026-08-27⟩
+
+- **Nvidia rose roughly 7-8% in Thursday's regular session, pulling Marvell
+  (+5.8%) and Micron (+4.5%) with it.** The precise intraday figure varies by
+  source and sampling minute and is not asserted.
+  ([CNBC](https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html))
+  ⟨daily 2026-08-27⟩
+
+## 2026-08-26 — The print lands, and the filing beside it is the bigger document
+
+- **Nvidia reported Q2 FY2027 revenue of $96.2B (+106% YoY) with data-centre
+  revenue of $89.0B (+117%), beating the $91-95bn consensus, and guided Q3 to
+  $108.0B ±2% — while assuming zero China data-centre compute revenue.** GAAP
+  EPS $2.46, non-GAAP $2.22, gross margin 75.0%; Q3 margin guided to 74.0%
+  ±50bps on rising HBM and DRAM costs. **The demand side of this thread has
+  run for months on Huang's own ~$1T aggregate; this is the first quarter where
+  the guide alone clears $100B.** ⚠️ Naming correction carried across the
+  record: this was Nvidia's **fiscal 2027** Q2, not FY2026 — a label wrong in
+  every digest since 08-20.
+  ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/1045810/000104581026000073/q2fy27pr.htm),
+  [NVIDIA IR](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027/default.aspx))
+  ⟨daily 2026-08-26⟩
+
+- **The 10-Q filed the same day disclosed guarantees capped at $105B tied to an
+  affiliate of OpenAI Group PBC, $3.5B more in lease guarantees for AI cloud
+  partners, and a $25B committed equity pool for AI labs and infrastructure
+  financiers.** The call added $500bn+ of planned third-party capital through
+  financing platforms with Apollo, BlackRock, Blackstone, Brookfield, Goldman
+  Sachs and KKR. **This thread's circular-financing angle stops being an
+  inference here** — it is now filed, dated and capped in a document with
+  liability attached.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm))
+  ⟨daily 2026-08-26⟩
+
+- **Receivables concentration widened to five customers at 72% of the balance
+  (22/14/13/11/10%), from three at 56% (25/18/13%) two quarters earlier.** More
+  names carrying large balances, only modestly less concentration overall —
+  and one of those counterparties is the affiliate the $105B of guarantees is
+  written to.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm))
+  ⟨daily 2026-08-26⟩
+
+- **Bloomberg reported at 20:56 ET that Nvidia is in talks to buy Hugging Face
+  for roughly $13B.** Unconfirmed by either company. Noted here because this
+  thread tracks what Nvidia sells rather than what it buys — **the acquisition
+  belongs to a thread that does not exist yet**, offered as a candidate 08-27.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-27/nvidia-discussed-buying-ai-startup-hugging-face-insider-says))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Wall Street puts a first dollar figure on the Rubin ramp, a day before the print that will test it
 
 - **Morgan Stanley estimates Nvidia's new Vera Rubin chips could contribute nearly $9B in sales in the fiscal third quarter ending October, the first analyst dollar figure attached to the Blackwell-to-Rubin transition this thread has recorded.** Wall Street consensus separately expects Nvidia to guide third-quarter revenue up 82.8% year-on-year to $104.2B when it reports Wednesday. The order book's demand side has run for months on Huang's own ~$1T aggregate figure; this is the first outside, per-product estimate of how much of it Rubin specifically is expected to deliver in the near term. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/nvidia-faces-growth-test-rubin-100234535.html)) ⟨daily 2026-08-25⟩

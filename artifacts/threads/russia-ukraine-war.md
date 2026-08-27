@@ -18,6 +18,34 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-26 — An hours-long combined barrage on Kyiv, and the graft case reaches the president's chief of staff
+
+- **Russia struck Kyiv and several other regions with an hours-long combined
+  missile-and-drone attack beginning around 03:00 Kyiv time (~20:00 ET).**
+  Ukraine's Air Force reported downing or suppressing one Oniks cruise missile,
+  seven Iskander-M/KN-23 ballistic missiles, three S8000 Banderol drones and 222
+  other drones. Debris fell in Kyiv's Podilskyi and Shevchenkivskyi districts,
+  hitting a residential courtyard and an educational building; industrial sites
+  in Kremenchuk and an energy facility in Myrhorod were struck, triggering
+  emergency outages, along with an apartment building in Kharkiv. ⚠️ **Casualty
+  figures were not consistently reported and no toll is asserted here.**
+  ([Kyiv Independent](https://kyivindependent.com/explosions-rock-kyiv-as-russia-launches-ballistic-missiles-at-the-capital-and-other-regions-across-ukraine/),
+  [United24 Media](https://united24media.com/war-in-ukraine/kyiv-endures-hours-long-drone-attack-as-russia-strikes-ukraine-from-odesa-to-kharkiv-21993))
+  ⟨daily 2026-08-26⟩
+
+- **NABU wiretap transcripts entered into an 08-25 court hearing place
+  Zelensky's chief of staff Kyrylo Budanov in calls tied to laundered bail money
+  for jailed ex-Energy Minister Herman Halushchenko.** Per the transcripts,
+  Timur Mindich allegedly delivered ~150 million hryvnia (~$3.4M) on June 17
+  toward bail in the Energoatom corruption case; the tapes surfaced in the
+  separate case against former deputy chief of staff Iryna Mudra. ⚠️ **Logged
+  here for continuity, not because it fits** — this is a governance and graft
+  story about the administration prosecuting the war, not war conduct, and it
+  is offered as its own thread candidate. ⚠️ Name correction: **Kyrylo**
+  Budanov, recorded as "Andriy" in the 08-26 digest's first draft.
+  ([Kyiv Independent](https://kyivindependent.com/zelenskys-chief-of-staff-budanov-features-in-tapes-linked-to-latest-corruption-case-media-say/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — A second overnight barrage in 24 hours hits four cities
 
 - **Russia struck Kyiv, Kharkiv, Zaporizhzhia and Dnipro overnight into August 25 with Banderol missiles and Molniya-type strike drones — a distinct barrage from the Independence Day attack recorded the previous night.** Kharkiv Mayor Ihor Terekhov reported a Molniya drone hit the city's Kyivskyi district at 22:22 and a missile struck the Osnovianskyi industrial zone at 00:19, killing one person. ([UNN](https://unn.ua/en/news/a-russian-missile-strike-on-kharkiv-claimed-a-persons-life), [RBC-Ukraine](https://newsukraine.rbc.ua/news/kyiv-kharkiv-dnipro-and-zaporizhzhia-hit-1787612524.html)) ⟨daily 2026-08-25⟩

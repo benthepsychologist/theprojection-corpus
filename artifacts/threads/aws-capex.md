@@ -12,6 +12,16 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-08-26 — Two million more GPUs, announced against the demand-plateau argument
+
+- **AWS said it will buy two million more Nvidia GPUs and adopt Nvidia's new
+  Vera CPU for AI agents**, announced alongside Nvidia's earnings print.
+  **Read against the demand-plateau thesis this map has been tracking, this is
+  the counter-evidence** — the largest cloud committing an order of that size
+  on the same day the vendor guided to $108B.
+  ([CNBC](https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-18 — Late catch: $6B more into Shreveport, a third Louisiana campus
 
 - **AWS added $6B to its Shreveport, Louisiana buildout — a third campus

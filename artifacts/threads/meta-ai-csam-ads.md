@@ -10,6 +10,25 @@ opened: 2026-08-06
 
 *Watch:* Wired reported 2026-08-05 that Meta ran ads containing AI-generated child sexual abuse imagery on its platforms. Distinct from the companion-chatbot harm strand tracked on xAI/Grok (`grok-companion-harm`) — this is a platform/ad-system liability story, not a companion-AI one. Watch: Meta's own response and moderation-failure explanation; whether regulators (FTC, state AGs) open an inquiry; whether this becomes a pattern question across ad platforms broadly, not just Meta; any parallel with the Grok/Stability CSAM suits already tracked elsewhere on this map.
 
+## 2026-08-26 — The deadline passes in silence
+
+- ⚠️ **Meta did not answer Senator Mark Warner's 08-18 letter by the 08-26
+  deadline it set, and Warner's office has said nothing about the
+  non-response.** The letter demanded six specific things: per-ad detection and
+  NCMEC-referral timelines, removal timelines, a legal-compliance analysis, full
+  data on advertisements from eleven named Chinese resellers, an internal
+  legal-liability assessment, and minor-exposure statistics for 2025-2026.
+  **The only Meta statement on record still predates the letter entirely** — a
+  comment to WIRED that sexual exploitation is "horrific" and that most such
+  ads had minimal reach. Verified on 08-27 by two independent sweeps: Meta's
+  newsroom fetched directly (its posts either side of the deadline cover a
+  teen-safety agreement and WhatsApp security), and Warner's senate.gov press
+  listing, which carries nothing since 08-18. **No outlet has reported the
+  silence either**, which makes this a genuine gap rather than a covered
+  non-story. Grace runs to 08-29.
+  ([Warner's 08-18 letter](https://www.warner.senate.gov/newsroom/press-releases/warner-presses-meta-ceo-on-ads-featuring-child-sexual-abuse-material-and-non-consensual-intimate-images/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-20 — Sen. Warner presses Zuckerberg directly, citing a wider Tech Transparency Project scope than the original Wired story
 
 - **Sen. Mark Warner (D-VA) sent a formal letter to Meta CEO Mark

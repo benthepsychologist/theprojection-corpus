@@ -4295,3 +4295,94 @@ limitation) — see that file's own access-notes header.
   the same proxy still works. Third escalation on this one benchmark, and
   the second time a working fix decayed rather than broke outright.
 - **Unverifiable:** none — all four benchmarks reached.
+
+---
+
+## 2026-08-27 critic pass — finalized 08-26 (all three benchmarked lenses; the day's back half, 15:00 → 05:00 ET, had never been curated)
+
+### ai / 2026-08-26
+- **Missed:** Nvidia in talks to buy Hugging Face for ~$13bn (surfaced by
+  the *global-capital* critic, not this one — Bloomberg 20:56 ET) ·
+  Perplexity × Nvidia "Portable Computer," a fully local zero-token-cost
+  agent (TLDR #2, Rundown, Neuron) — **not an 08-26 miss: the Nvidia
+  briefing was 08-24 and VentureBeat published 08-25, and no digest on any
+  of those days caught it.** A genuine gap, filed against the wrong day.
+- **Artifacts, not misses (3 of 4 candidates):** OpenAI's Jalapeño chip
+  benchmarks (Rundown + TLDR leads) broke 08-25 at Hot Chips and is
+  already in our 08-25 digest in full · Anthropic's $30T IPO TAM claim
+  (Neuron lead) broke 08-25 via WSJ and is covered in two prior digests ·
+  both were next-morning re-serves. **The date check earned its keep
+  again**: three of four candidates dissolved on it.
+- **We beat a benchmark:** The Rundown led with the Z.AI/Ox Alpha
+  resolution in its **08-27** issue. We ran it 08-26.
+- **Map effect:** none. No auto-adds — three candidates were artifacts and
+  the fourth carries an open scope question (below).
+- **Open scope question for Ben:** The AI Daily Brief gave its whole 08-26
+  episode to Druckenmiller's AI-written WSJ op-ed and the backlash over
+  AI-generated writing in finance media. **This lens has no strand for
+  AI-authorship/disclosure debates.** The critic declined to name a thread
+  on one data point, correctly. In or out of scope?
+- **Access:** all four benchmarks reachable, no failures.
+
+### mental-health / 2026-08-26
+- **Missed:** Onos Health's $17M Series A, payer-facing behavioural-health
+  analytics with CVS Health Ventures participating (BHB 10:00 ET,
+  MobiHealthNews 11:07 ET) · the Sword Health / Headspace **price** at
+  $200-300M (Fierce 12:30 ET).
+- ⚠️ **Both landed inside 05:00-15:00 ET — the window this digest had
+  already reported as EMPTY across two live passes.** The critic
+  overturned the day's own finding; the throughline was rewritten.
+- **The narrow call, made deliberately:** the Headspace *acquisition* is
+  **not** a miss — our 08-25 digest logged it same-day off the filing and
+  said explicitly that terms were undisclosed (STAT's 08-25 piece agrees:
+  "the value of the transaction was not disclosed"). **Only the price is
+  new**, and it is what changes the deal's meaning: ~$200-300M against a
+  $3bn 2021 valuation.
+- **Map effect:** proposed entity **Onos Health** → `mh-clinical-infra-funding`
+  (not auto-added; offered to Ben). No new threads — both items fit
+  existing ones.
+- **Access:** all four reachable on documented paths. ⚠️ Fierce Healthcare's
+  RSS cleared on a **plain curl**, no Googlebot UA needed — the documented
+  requirement may have loosened, but the domain still rate-limited a later
+  article fetch. **Not amending the yaml on one observation.**
+
+### global-capital / 2026-08-26
+- **Missed:** **Nvidia in talks to buy Hugging Face, ~$13bn** (Bloomberg,
+  20:56 ET, timestamp from the article's own metadata) — **the real catch
+  of this pass.** It broke in the back half that this very run was
+  reconstructing, and the back-half sweep still missed it. Filed to both
+  the global-capital and frontier-ai digests.
+- **Checked and judged out of scope:** CrowdStrike's beat (16:12 ET) and
+  Okta's raised outlook (16:05 ET) — real same-day events, no thread, no
+  axis. Recorded so the decision is visible.
+- **Unresolvable:** FT Unhedged ("Prediction markets revisited") and Money
+  Stuff ("Predict the KPIs") **both led on prediction markets on 08-26,
+  independently.** Bodies paywalled on every path. Cannot be scored either
+  way; **two benchmarks converging on one theme in one day is worth a
+  follow-up pass** with paywall-clearing access.
+- **Map effect:** proposed entity **Hugging Face** + a candidate thread for
+  AI tooling/distribution consolidation — offered, not added, since neither
+  company has confirmed.
+- ⛔ **Access — this was the weakest pass of the three, and structurally so:**
+  - ✅ **Money Stuff's author RSS is BACK.** `benchmarks.yaml` still records
+    it "dark since 08-13"; **that note is stale.** Dates/headlines only.
+  - ⛔ **Axios Pro Rata's reader-proxy path is SAME-DAY ONLY** — no dated
+    archive URL, and no Wayback capture for 08-26. **This structurally
+    breaks the benchmark for finalize passes, which by design run the next
+    day.** The critic could only retrieve 08-27's issue. Worth solving
+    rather than re-discovering every pass.
+  - ⛔ **Bloomberg Technology's homepage re-blocked** on all three transports.
+    Undocumented working feed found: `feeds.bloomberg.com/technology/news.rss`
+    — but it is a rolling recent-items list, not a lead ranking, and had
+    already scrolled past 08-26's morning.
+  - **FT Unhedged's RSS worked as documented**; body paywalled.
+
+### Cross-lens note — the miss the critics did NOT catch
+Neither the benchmark critics nor the mechanical world-news pool surfaced
+the **Nepal-Tibet glacier collapse and outburst flood** (~360 dead,
+~1,380 missing across two countries). It is outside every benchmark's beat
+by construction — all twelve are AI, health-tech or finance publications.
+**The flash rail is the only mechanism this map has for a general-news
+event of that scale, and it depends entirely on the world-news sweep
+noticing.** On 08-25 it did not, and nothing else would have. Recorded as a
+structural gap, not a sweep error. See the 08-27 world-news digest.
