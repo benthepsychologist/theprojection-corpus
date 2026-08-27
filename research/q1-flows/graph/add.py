@@ -130,15 +130,19 @@ def add_financing(*, from_node, from_entity_name, from_activity,
     claim.update({
         "atom_type": "claim", "label": label[:160], "summary": note, "body": note,
         "valid_from": valid_from, "valid_to": valid_to,
+        # Quantity cluster is INLINE on the atom per reg-02's ruling (not a trait,
+        # not meta): quantity / quantity_unit / quantity_lower / quantity_upper /
+        # quantity_basis as ordinary top-level properties.
+        "quantity": amount_usd, "quantity_lower": quantity_lower, "quantity_upper": quantity_upper,
+        "quantity_unit": "USD" if (amount_usd is not None or quantity_lower is not None) else None,
+        "quantity_basis": quantity_basis,
+        "epistemic_status": "accepted", "source_process": "extraction",
         "meta": {"q1_edge_id": eid, "q1_from_node": from_node, "q1_to_node": to_node,
                  "flow_type": flow_type, "destination_category": destination_category,
-                 "quantity": amount_usd, "quantity_lower": quantity_lower,
-                 "quantity_upper": quantity_upper,
-                 "quantity_unit": "USD" if amount_usd is not None else None,
-                 "quantity_basis": quantity_basis,
                  "origin": f"added via graph/add.py, {datetime.date.today().isoformat()}"},
         "formalization_stage": "S3", "lifecycle_status": "active", "sources": [],
     })
+    claim = {k: v for k, v in claim.items() if v is not None}
     claim["meta"] = {k: v for k, v in claim["meta"].items() if v is not None}
 
     sid = "src-" + slug(f"{eid}-{source_label}")[:80]
@@ -186,7 +190,11 @@ def add_financing(*, from_node, from_entity_name, from_activity,
     ep.update({"pass_type": "A5", "pass_iteration": 1, "pass_mode": "blind",
                "agent_identity": "claude-session-theprojection-corpus-add-tool",
                "methodology_version": "q1-flows-graph-add-1.0",
-               "source_target_ref": source_ref})
+               # extraction_pass@1.1.0 as RULED by cloud-governor reg-02 (2026-08-27):
+               # source_target_refs is the required array; the singular field is
+               # dropped. (Our round-three brief's anyOf shape was refused -- anyOf
+               # is a forbidden keyword in the registrar profile.)
+               "source_target_refs": [source_ref]})
     append_jsonl("extraction_passes.jsonl", ep)
 
     ann_id = "ann-" + slug(f"{eid}-obs0")[:70]

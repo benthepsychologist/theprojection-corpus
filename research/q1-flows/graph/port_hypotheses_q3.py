@@ -226,10 +226,9 @@ for it in items:
         p.update({"pass_type": "A5", "pass_iteration": 2, "pass_mode": "adjudication",
                   "agent_identity": "claude-session-theprojection-corpus-week-2026-08-27",
                   "methodology_version": "attention-week-expectations-scorecard",
-                  "source_target_refs": [f"source:{h['sources'][0]}"] if h["sources"] else [],
-                  "meta": {"note": "source_target_refs (list) used per round-three brief; no single artifact -- the resolution cited outlets in prose."}})
-        if not p["source_target_refs"]:
-            p["source_target_ref"] = "source:unspecified-resolution-prose"; del p["source_target_refs"]
+                  # reg-02 ruling: source_target_refs is the required array, singular dropped.
+                  "source_target_refs": [f"source:{h['sources'][0]}"] if h["sources"] else ["source:unspecified-resolution-prose"],
+                  "meta": {"note": "Resolution cited outlets in prose; no single artifact captured. Placeholder ref is honest under-capture, not a fabricated source."}})
         add_pass(p)
         a = base("annotation", "annotation_id", "ann-" + slug(f"resolve-{it['id']}")[:70], f"resolution of {it['id']}")
         a.update({"annotation_type": "extraction_review", "target_ref": href, "generated_by_ref": f"extraction_pass:{pid}",

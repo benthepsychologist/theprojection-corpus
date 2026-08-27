@@ -50,13 +50,29 @@ differently.
 
 ## `meta.coverage_state` — measured / aggregated / unmeasured
 
-Unchanged from the YAML register. No AKM home exists for this today —
-confirmed empirically by the AKM migration experiment
-(`research/q1-flows/akm-tinkerspace/FINDINGS.md`) and is the live subject of
-`cloud-governor/INBOX/2026-08-27-pm-akm-round-two/`'s Ask 2 (a ruling
-request, not yet answered as of this file's writing). If that round lands a
-`coverage_state`-equivalent trait, this file's convention retires in favor
-of it.
+Unchanged from the YAML register. **Ruled 2026-08-27 by cloud-governor's
+`reg-02` draft (`akm-extension-design.md` §7): stays in `meta`, never a
+trait** — one kind, nothing to repeat across kinds, so the §5.2 trait test
+fails. What this file already had is the ruled shape. Closed.
+
+## Quantities — NOT local vocab; ruled inline on `knowledge_atom` (reg-02 §3)
+
+`quantity` / `quantity_unit` / `quantity_lower` / `quantity_upper` /
+`quantity_basis` are **top-level properties on claim atoms**, per reg-02 —
+not a trait (refused: at one kind there's no cross-kind repetition to avoid)
+and not `meta`. `align_reg02.py` hoisted them out of `meta` on 2026-08-27;
+`add.py` writes them top-level. Listed here only so nobody puts them back in
+`meta` — they are governed shape, not local vocabulary.
+
+## `extraction_pass.source_target_refs` — the ruled shape, adopted (reg-02 §5)
+
+Our round-three brief proposed keeping `source_target_ref` optional beside a
+new `source_target_refs` with `anyOf` requiring one. **Refused as shaped:
+`anyOf` is a forbidden keyword in the registrar profile.** The ruled 1.1.0 is
+simpler — `source_target_refs` is the required array, the singular field is
+dropped, and side-by-side versioning keeps 1.0.0 records valid. Adopted
+in place: every pass in this graph carries the list (`align_reg02.py`),
+`add.py` writes only the list.
 
 ## What does NOT live here
 
