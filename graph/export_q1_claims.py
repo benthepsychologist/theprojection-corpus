@@ -83,6 +83,57 @@ def canonical(aid):
     return a.get("meta", {}).get("entity_slug", aid), a.get("label", a.get("name", aid))
 
 
+def real_world_actor(aid):
+    """Which real-world company/actor this ENTITY facet belongs to, for
+    testing whether two facets are the SAME actor (self-funded capex) --
+    NOT via `part_of` (a canonical-entity link many facets never got
+    created for, found 2026-08-27: e.g. neither Amkor's nor Micron's
+    facets have one, so comparing part_of targets silently missed most
+    same-company cases). `meta.entity_slug` is on every q1 facet atom
+    unconditionally and is the actually-reliable "who is this" key.
+
+    Callers MUST also check atom_type == "entity" before comparing two of
+    these -- an `event` atom (a financing round) carries entity_slug too,
+    but it tags "this round is ABOUT company X", not "this round IS
+    company X". Missing that distinction caused a second, worse bug the
+    same day: every investor-syndicate round funding a company's own
+    capital facet (real EXTERNAL money in) got mislabeled self-funded,
+    because the round event's entity_slug matched the recipient's.
+    """
+    return atom_by_id.get(aid, {}).get("meta", {}).get("entity_slug", aid)
+
+
+def is_entity(aid):
+    return atom_by_id.get(aid, {}).get("atom_type") == "entity"
+
+
+def strip_facet_suffix(label):
+    """"Amkor Technology (advanced packaging/test facility construction)"
+    -> "Amkor Technology" -- for the self-funded label's company name,
+    which must NOT repeat a specific facet's own parenthetical (that's
+    what made "Amkor Technology (...)'s own capital" read so oddly)."""
+    idx = label.find(" (")
+    return label[:idx] if idx > 0 else label
+
+
+# Precomputed once: entity_slug -> its shortest (least facet-specific)
+# known label, for the self-funded case's "{Company}'s own capital" phrasing.
+_entity_display_by_slug = {}
+for _a in atoms:
+    if _a.get("atom_type") != "entity":
+        continue
+    _slug = _a.get("meta", {}).get("entity_slug")
+    if not _slug:
+        continue
+    _name = strip_facet_suffix(_a.get("label", _a.get("name", _slug)))
+    if _slug not in _entity_display_by_slug or len(_name) < len(_entity_display_by_slug[_slug]):
+        _entity_display_by_slug[_slug] = _name
+
+
+def company_display_name(entity_slug, fallback):
+    return _entity_display_by_slug.get(entity_slug, fallback)
+
+
 def fmt_amount(v):
     if v is None:
         return None
@@ -127,7 +178,25 @@ for cid in sorted(flow_claim_ids):
     # when Ben spotted a run of entity->same-entity rows.
     recipient_slug, recipient_label = canonical(recipient_id)
     facet_label = lambda aid: atom_by_id.get(aid, {}).get("label", atom_by_id.get(aid, {}).get("name", aid))
+    facet_activity = lambda aid: atom_by_id.get(aid, {}).get("meta", {}).get("activity") or facet_label(aid)
     source_label, target_label = facet_label(source_id), facet_label(recipient_id)
+
+    # SELF-FUNDED CAPEX, not a nonsense self-loop: some of this map's
+    # "asset purchase"/"capex" edges are a company's own treasury facet
+    # funding its own construction/fab facet (e.g. TSMC's capital arm ->
+    # TSMC's own foundry-construction arm) because the underlying source
+    # discloses only "company approved $X capex for its own facility" --
+    # no external contractor/vendor is named anywhere in that source (see
+    # this claim's own `body`/`summary`). The facet-level label fix
+    # (2026-08-27, earlier the same day) correctly distinguished WHICH
+    # facet, but Ben's flag caught the deeper issue: an arrow between two
+    # facets of the SAME real-world company still visually implies a
+    # transfer to a different party, which is exactly wrong for "where is
+    # the money going" -- the honest answer for these is "nowhere external
+    # that this source names; it became this company's own physical asset."
+    # Fabricating a contractor name we don't have would be worse than this.
+    self_funded = (is_entity(source_id) and is_entity(recipient_id)
+                   and real_world_actor(source_id) == real_world_actor(recipient_id))
     meta = c.get("meta", {})
     flow_type = meta.get("flow_type") or "unclassified"
     destination = meta.get("destination_category") or "unclassified"
@@ -152,12 +221,20 @@ for cid in sorted(flow_claim_ids):
 
     amount_str = fmt_amount(amount) if is_point_usd else (fmt_amount(amount) + " (" + basis_kind + ")" if amount else None)
     lead = (amount_str + " — " if amount_str else "") + (c.get("summary") or c.get("body") or "")
+    if self_funded:
+        company_name = company_display_name(real_world_actor(recipient_id), recipient_label)
+        label = f"{company_name}'s own capital → {facet_activity(recipient_id)}"
+        lead += (" " if lead else "") + ("(self-funded — this source names no external "
+                                          "contractor/vendor the money actually went to)")
+    else:
+        label = f"{source_label} → {target_label}"
     leaf_id = "q1-" + cid
     claims_out.append({
         "id": leaf_id,
         "subject": recipient_slug,
         "dimension": "q1-flow",
-        "label": f"{source_label} → {target_label}",
+        "label": label,
+        "self_funded": self_funded,
         "value": lead,
         "basis": lead,
         "confidence": band or "low",

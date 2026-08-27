@@ -149,6 +149,21 @@ def ensure_node(aid):
 
 event_ids = {a["knowledge_atom_id"] for a in atoms if a.get("atom_type") == "event"}
 
+
+def self_funded_edge(src, tgt):
+    """Same real-world company on both ends -- e.g. TSMC's own capital
+    facet funding TSMC's own foundry-construction facet, because the
+    underlying source discloses only "company approved $X capex for its
+    own facility", no external contractor/vendor named. Both ends must be
+    atom_type "entity": an `event` atom (a financing round) carries the
+    SAME entity_slug as the company it's about, which is a different
+    thing from being funded by itself -- comparing entity_slug across
+    that boundary is exactly the bug this guard exists to avoid (found
+    2026-08-27, graph/export_q1_claims.py's companion fix)."""
+    a, b = atom_by_id.get(src, {}), atom_by_id.get(tgt, {})
+    return (a.get("atom_type") == "entity" and b.get("atom_type") == "entity"
+            and a.get("meta", {}).get("entity_slug") == b.get("meta", {}).get("entity_slug"))
+
 # a financing round has no per-investor dollar split of its own -- the
 # round's total lives on the event->company `funds` claim below. A
 # member_of edge into an event is still a real money-flow leg (investor
@@ -174,6 +189,7 @@ for r in rels:
         "unit": next((f["unit"] for f in flows if f.get("unit")), "USD"),
         "flows": flows,
         "note": r.get("note"),
+        "self_funded": self_funded_edge(src, tgt),
     })
 
 nodes.update(added_external)
