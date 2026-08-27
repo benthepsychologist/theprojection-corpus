@@ -104,3 +104,38 @@ own note (nothing was deleted, the inference is still fully visible —
 it just no longer occupies the structured field). Same rule applies to
 every future round: `leads`/`role: lead` requires the source to actually
 say so.
+
+---
+
+## P-03 — a claim's prose must stand alone once its parties are named
+
+**The rule:** the free-text `note` on any financing observation (now: the
+`summary`/`body` of a claim atom in `q1-flows/graph/`) must read as a
+complete statement once the flow's from- and to-parties are known —
+*"TSMC committed $12B to Arizona fab capacity, 2021–2029"* — never a
+fragment that only makes sense while sitting beside its edge —
+*"$12B, 2021-2029"*. The parties may be omitted (the graph carries them
+structurally); everything else the sentence needs must be in it.
+
+**Why this is a principle:** the old YAML register let the edge carry
+who-paid-whom and the observation carry only the amount, because the two
+were always read together. The AKM migration (2026-08-27,
+`q1-flows/akm-tinkerspace/FINDINGS.md` §2) flattened each observation into
+a standalone claim atom — and every terse note became a claim that meant
+nothing on its own. `build_graph.py` synthesizes a prefix
+(`"{from} → {to}: {note}"`) to compensate, and that mechanical fallback
+stays **permanently** for the historical seed. But it produces awkward
+text, not prose, and it only works because the parties are the *only*
+missing context. A note that also omits the instrument, the period, or
+what the money is for can't be rescued mechanically.
+
+**Where this was ruled:** Ben, 2026-08-27 — *"yes to the finding 2 fix.
+Yes to mechanical synthesis as fallback."*
+
+**How to apply it going forward:** every claim added via
+`q1-flows/graph/add.py` gets a `note` written as a sentence at capture
+time. It costs nothing extra — whoever is authoring the claim already knows
+the sentence — and every later consumer (the site's claim pages, an AKM
+export, a reader of the raw JSONL) gets real prose instead of a fragment
+plus a synthesized prefix. Existing seeded claims are not rewritten; the
+fallback covers them.
