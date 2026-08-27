@@ -33,7 +33,14 @@ HERE = os.path.dirname(os.path.abspath(__file__))
 REPO = os.path.dirname(HERE)
 SITE = os.path.join(os.path.dirname(REPO), "theprojection-site")
 OUT = os.path.join(SITE, "data", "q1_claims.json")
-STUB_DIR = os.path.join(SITE, "content", "claim")
+# NOT content/claim/ -- publish/adapter.py prunes that directory to exactly
+# the ids in its own claims.json on every `kestrel publish` run (deletes
+# anything else there but _index.md), which silently deleted every one of
+# these stubs the first time /week or a manual publish ran after they were
+# created (live 404s, caught 2026-08-27). content/q1claim/ is a directory
+# adapter.py never touches; each stub's `type: claim` front matter tells
+# Hugo to still render it with layouts/claim/single.html.
+STUB_DIR = os.path.join(SITE, "content", "q1claim")
 
 RELIABILITY_BAND = {
     # A stand-in until cloud-researcher's own reliability_tier machinery
@@ -206,17 +213,25 @@ with open(OUT, "w") as f:
     json.dump(claims_out, f, indent=1, sort_keys=True)
 
 os.makedirs(STUB_DIR, exist_ok=True)
+current_ids = {c["id"] for c in claims_out}
+removed = 0
+for fname in os.listdir(STUB_DIR):
+    if fname.endswith(".md") and fname[:-3] not in current_ids:
+        os.remove(os.path.join(STUB_DIR, fname))
+        removed += 1
+
 written = 0
 for c in claims_out:
     stub_path = os.path.join(STUB_DIR, c["id"] + ".md")
     if os.path.exists(stub_path):
         continue
     with open(stub_path, "w") as f:
-        f.write(f"---\ntitle: {json.dumps(c['label'])}\nclaim_id: {c['id']}\n---\n")
+        f.write(f"---\ntitle: {json.dumps(c['label'])}\nclaim_id: {c['id']}\ntype: claim\n---\n")
     written += 1
 
 n_leaf = sum(1 for c in claims_out if not c.get("aggregate"))
 n_agg = len(claims_out) - n_leaf
 print(f"{n_leaf} leaf flow claims, {n_agg} aggregates "
       f"({len(leaf_ids_by_flow_type)} flow-type, {len(leaf_ids_by_destination)} destination, "
-      f"{len(leaf_ids_by_recipient)} recipient) -> {OUT}; {written} new claim stub(s) in {STUB_DIR}")
+      f"{len(leaf_ids_by_recipient)} recipient) -> {OUT}; {written} new claim stub(s), "
+      f"{removed} stale stub(s) removed, in {STUB_DIR}")
