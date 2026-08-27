@@ -1,18 +1,20 @@
 # graph/ — the corpus-wide knowledge graph
 
-**Status:** design, ruled 2026-08-27, **revised same day after a fine-toothed review** (revisions marked ✎), read-before-impl. **Rulings this rests on** (Ben): one corpus-wide graph with news as a different cut, not a different graph · digest bullets enter at S1 · `interp.yaml` scenarios are propositions · entity reconciliation is step one · `graph/` lives at repo root. **Upstream it aligns to:** pm's inquiry ladder (ratified 2026-08-26, `pm/docs/design.md` §37g and the beat proposal Part 3/4) and cloud-governor's `reg-02` draft (`akm-extension-design.md`, 2026-08-27). This repo is a copier of both; where they haven't landed we use the ruled shape as-if and mark it.
+**Status:** design, ruled 2026-08-27, **revised same day after a fine-toothed review** (marked ✎) **and again after Ben caught the draft proposing seven lines instead of one** (marked ✎✎), read-before-impl. **Rulings this rests on** (Ben): one corpus-wide graph with news as a different cut, not a different graph · digest bullets enter at S1 · `interp.yaml` scenarios are propositions · entity reconciliation is step one · `graph/` lives at repo root. **Upstream it aligns to:** pm's inquiry ladder (ratified 2026-08-26, `pm/docs/design.md` §37g and the beat proposal Part 3/4) and cloud-governor's `reg-02` draft (`akm-extension-design.md`, 2026-08-27). This repo is a copier of both; where they haven't landed we use the ruled shape as-if and mark it.
 
 What's already here: the Q1 money-flow graph (86 flows, 204 entity/event atoms), 16 financing hypotheses, 28 q3 facilities — seeded and ported 2026-08-27, `README.md` and `schemas/q1-local-vocab.md` in this directory. This document turns that into the whole corpus. **Appendix A lists everything that leaves this repo for cloud-researcher.**
 
 ---
 
-## 1. One graph, one register, `loi` as a facet
+## 1. One line, one graph ✎✎
 
-The ratification rules it directly: *"Each line of inquiry has ONE graph… not nested under any tier… one register with an `loi` facet — axes are facets, not separate graph files per line."* The news layer is not a second migration into a second graph. It is the same graph, where the atoms carry `loi` = which radar question, `lens` = which beat, `thread` = which watch — and the evidence differs in kind.
+**This repo is one line of inquiry** — the standing territory of AI, money, and mental health — and `graph/` is that line's graph, whole and unpartitioned. The ratification: *"Each line of inquiry has ONE graph… not nested under any tier… one register with an `loi` facet — the facet arrives when a second line needs it."* There is no second line, so there is no `loi` facet. The news layer is not a second migration into a second graph; it is the same graph, where atoms carry `question` = which radar question they serve, `lens` = which beat, `thread` = which watch — and the evidence differs in kind.
+
+✎✎ **The earlier draft proposed seven lines without noticing** — it set `loi` to the radar-question slug and called Q1–Q7 lines. They are not. A line *never finishes*; so does a question — but pm's instantiation is explicit that **a question is a `question` atom in the line's graph** (`undecided` for life), while the line is the spine object that owns the graph. Q1–Q7 are graph objects inside the one line; their `mode` says what tier-2 work serves them. If mental-health ever proves to be its own standing territory — its own graph emitting its own deliverables, not a beat sharing this one's entities and threads — that is the second line and `loi` arrives then. Not now.
 
 Why it holds for this repo in particular: research **q1** ("Where is the money going?") and radar **Q2** ("Where is the money going?") are the same question — the site page says so. The research graph and the attention layer were never two corpora; they are one line's investigation arm and its watch arm, and the ladder says those share one graph by construction.
 
-✎ **A naming trap, stated once so it isn't stepped on:** research `q1`–`q4` and radar `Q1`–`Q7` are different namespaces. The `loi` facet value is always the **radar** slug. Every existing q1-flows claim gets `loi: q2`, not `q1`.
+✎ **A naming trap, stated once so it isn't stepped on:** research `q1`–`q4` and radar `Q1`–`Q7` are different namespaces. The `question` facet value is always the **radar** slug. Every existing q1-flows claim gets `question: [q2]`, not `q1`.
 
 The honest caveat: one graph, **nine migrations**. The attention layer is nine source shapes, each needing its own F0 parser. §8 specifies each.
 
@@ -20,7 +22,7 @@ The honest caveat: one graph, **nine migrations**. The attention layer is nine s
 
 | plane | holds | truth-state? | lives in |
 | --- | --- | --- | --- |
-| **spine** | lines, watches, investigations, deliverables, work items — the work | no | `attention/threads.yaml`, `attention/radar.md` (structure), skills, runs |
+| **spine** | the line, its watches, investigations, deliverables, work items — the work | no | ✎✎ **two ledgers, not one**: `attention/threads.yaml` (the watches) and `research/README.md`'s pass history (the investigations); plus skills and runs |
 | **graph** | propositions and evidence — questions, claims (accepted / derived / hypothesized), sources, and the relationships between them | yes (or pending) | `graph/*.jsonl` |
 | **composition** | the read: digest narratives, radar working-note syntheses, `actor-doing.yaml`, `interp.yaml` mechanisms | no — frames, not propositions | where they are today; they cite *into* the graph and never write atoms |
 
@@ -32,15 +34,16 @@ Ben's own fit-test (2026-08-26): *"theprojection-site's `thread_kind: meta|proje
 
 | ladder tier | this repo's object | plane | note |
 | --- | --- | --- | --- |
-| `line_of_inquiry` (work_stream; never finishes) | radar Q1–Q7 | spine; root is a `question` atom | `loi` = the Q slug |
-| `watch` (ops_stream; completes-or-continues; retired by the line) | `kind: story` thread · `open → retired` | spine | `threads.yaml` row + `artifacts/threads/<slug>.md`; radar `mode: monitor` |
-| `investigation` (project; bounded; closes) | `kind: project` thread · `→ resolved`; research passes | spine | radar `mode: answer` |
+| ✎✎ `line_of_inquiry` (work_stream; never finishes) | **theprojection-corpus itself** — one line | spine | owns the whole graph; no `loi` facet until a second line exists |
+| ✎✎ the line's questions | radar Q1–Q7 | **graph** — `question` atoms, `undecided` for life | not a tier. `mode` names the tier-2 shape that serves each: `monitor` → watches · `answer` → an investigation · `both` → an investigation that graduates sideways into a watch |
+| `watch` (ops_stream; completes-or-continues; retired by the line) | `kind: story` thread · `open → retired` | spine | `threads.yaml` row + `artifacts/threads/<slug>.md` |
+| `investigation` (project; bounded; closes) | `kind: project` thread · `→ resolved`; research passes | spine | ✎✎ **q1-flows is the worked graduation**: four bounded passes (investigation) → weekly `/week` 4c refresh (watch). R-19's "asymptotic by design, no done state" is the ratification's "never-done research program that refused to close," by name |
 | ✎ nesting within tier 2 | `kind: meta` thread with `parent` children | spine | **not a tier.** The ratification allows nesting *within* a tier ("nestable with sub-steps"); a meta thread is a watch that contains watches. `parent` stays a spine field. If a meta thread turns out to behave like a line (it never retires, it spawns investigations), that's a promotion to tier 1 — a `/week` steer call, not schema. |
 | `deliverable` (the answer) | `capital-context` readings · `actor-doing` · radar syntheses · site pages | **split** — readings are claims (graph); prose syntheses are composition | |
 | `work_item: evidence_collect` | `/daily` sweep · critic pass · research pass | spine → each run is an `extraction_pass` | |
 | `work_item: experiment` | an expectation's `due` + `what_confirms` | spine (the check) → graph (the hypothesis, its `extraction_review`) | built |
 
-**Threads are spine, not atoms.** A thread has no truth-state. `threads.yaml` stays the watch ledger, unchanged; graph atoms carry `meta.thread`. `radar.md` stays as spine plus composition; only the seven `question` atoms enter the graph.
+**Threads are spine, not atoms.** A thread has no truth-state. `threads.yaml` stays the watch ledger, unchanged; graph atoms carry `meta.thread`. `radar.md` stays as spine plus composition; only the seven `question` atoms enter the graph. ✎✎ A question has no `open`/`retired` status — the work serving it does.
 
 ## 4. Atom types and what produces each
 
@@ -62,7 +65,7 @@ Everything cross-cutting is a facet (the ratification's own lesson, "learned twi
 
 | carrier | facets |
 | --- | --- |
-| claim atoms | `loi` (list — a thread can serve Q1 *and* Q5) · `lens` (list — a cross-posted bullet is one atom) · `thread` (list) · `axis` · `digest` · `stage` (via `formalization_stage`) · `coverage_state` · `flow_type` / `destination_category` (q1's own) |
+| claim atoms | ✎✎ `question` (list — a thread can serve Q1 *and* Q5; **not** `loi`) · `lens` (list — a cross-posted bullet is one atom) · `thread` (list) · `axis` · `digest` · `stage` (via `formalization_stage`) · `coverage_state` · `flow_type` / `destination_category` (q1's own) |
 | entity atoms | `entity_slug` (canonical) · `pocket` · `sphere` · `rank` · `coverage_state` · `control_cut` (q3) |
 | spine (threads.yaml) — **not** copied onto atoms | `genre` · `weight` · `parent` · `terms` |
 
@@ -118,7 +121,7 @@ Every ingester: its own script in `graph/ingest/`, F0, idempotent — keyed on c
 
 ### 8.2 Radar questions → 7 `question` atoms
 
-`radar.md` headers → `kat-q-q1`…`kat-q-q7`: `label`, `meta.mode`, `meta.lens`, `epistemic_status: undecided`, S2. Working notes are composition — not ingested. `answers` edges come later from investigation deliverables; monitor-mode questions stay un-answered by design. ✎ This step also sets `loi` on every existing atom (q1 flows → `q2`; q3 facilities → `q3`'s radar counterpart, which is **Q1** ("players… DOING") or none — Ben's call in the same sitting as §8.1).
+`radar.md` headers → `kat-q-q1`…`kat-q-q7`: `label`, `meta.mode`, `meta.lens`, `epistemic_status: undecided`, S2. Working notes are composition — not ingested. `answers` edges come later from investigation deliverables; monitor-mode questions stay un-answered by design. ✎✎ This step also sets `question` on every existing atom (q1 flows → `[q2]`; q3 facilities → `[q1]` ("players… DOING") or none — Ben's call in the same sitting as §8.1).
 
 ### 8.3 Remaining expectations → 54 hypothesis claims ✎ and a slip fix on the 16
 
@@ -132,7 +135,7 @@ Every ingester: its own script in `graph/ingest/`, F0, idempotent — keyed on c
 
 ### 8.5 `capital-context.yaml` readings → 5 claims
 
-`readings.<key>` → one claim: `body` = value, `summary` = basis, `loi: q7`, `meta.reading_key`, `valid_from` = `as_of`, sources → `supports`. `framing` is steering — not ingested. Refresh cadence per §8 intro.
+`readings.<key>` → one claim: `body` = value, `summary` = basis, `question: [q7]`, `meta.reading_key`, `valid_from` = `as_of`, sources → `supports`. `framing` is steering — not ingested. Refresh cadence per §8 intro.
 
 ### 8.6 Thread timelines → S2 claims (103 files) — ✎ runs *after* §8.7
 
@@ -140,11 +143,11 @@ Shape: `## <date> — <headline>` sections, bullets `- **<lead>** <prose> ([Outl
 
 ### 8.7 Digest bullets → S1 claims (ruled in) — ✎ runs *before* §8.6
 
-Parser exists: `render_read.py:305`. Per bullet → one claim: `body` = text minus link parenthetical (a sentence by construction — P-03 satisfied), S1, `meta.thread` (list), `meta.axis`, `meta.digest`, `lens` (list), `loi` (list, §12.1), `about` → each `e=` entity (canonical), links → sources + `supports`. Id = §7 key. ✎ **Only `status: final` digests** — a `building` digest's text can change, and a changed lead means a duplicate atom. ✎ **Skip `*-front.md` and `weekly/`** — both are composition over the lens digests, and the front's bullets are duplicates. ✎ **Check world-news digests carry `k:` tags before assuming** — the inventory confirmed tags on ai and global-capital only.
+Parser exists: `render_read.py:305`. Per bullet → one claim: `body` = text minus link parenthetical (a sentence by construction — P-03 satisfied), S1, `meta.thread` (list), `meta.axis`, `meta.digest`, `lens` (list), `question` (list, §12.1), `about` → each `e=` entity (canonical), links → sources + `supports`. Id = §7 key. ✎ **Only `status: final` digests** — a `building` digest's text can change, and a changed lead means a duplicate atom. ✎ **Skip `*-front.md` and `weekly/`** — both are composition over the lens digests, and the front's bullets are duplicates. ✎ **Check world-news digests carry `k:` tags before assuming** — the inventory confirmed tags on ai and global-capital only.
 
 ### 8.8 `interp.yaml` scenarios → hypothesis claims
 
-Per `scenarios[i]`: `body` = `direction`, `defeat_conditions` = `why`, `meta.precedent`, `hypothesized`, ✎ `inference_basis` = [the parent S1 claim id] (same key the file is keyed on), `about` → the parent's entities, `loi: q7`. `mechanism`/`context_note` are frames — not ingested; the file becomes composition with a bibliography it already carries. Enforce the length caps on the way (§10.4).
+Per `scenarios[i]`: `body` = `direction`, `defeat_conditions` = `why`, `meta.precedent`, `hypothesized`, ✎ `inference_basis` = [the parent S1 claim id] (same key the file is keyed on), `about` → the parent's entities, `question: [q7]`. `mechanism`/`context_note` are frames — not ingested; the file becomes composition with a bibliography it already carries. Enforce the length caps on the way (§10.4).
 
 ### 8.9 Critic-log misses → `extraction_review` annotations ✎ (was: observations)
 
@@ -172,7 +175,7 @@ A `**Missed:**` item is a finding about our sweep, not first-hand data about the
 | # | step | F-rung | done when |
 | --- | --- | --- | --- |
 | 1 | entity reconciliation (§8.1) + `validate.py` | F0 · **F4 once** · F0 | canonical slugs; crosswalk exists; `cut:core-buildout` unchanged; validator passes |
-| 2 | radar questions + `loi` on all existing atoms (§8.2) | F0 (+ one F4 call on q3's Q) | 7 atoms; every atom's `loi` resolves |
+| 2 | radar questions + `question` on all existing atoms (§8.2) | F0 (+ one F4 call on q3's Q) | 7 atoms; every atom's `question` resolves |
 | 3 | expectations, incl. slip re-shape (§8.3) | F0 | 70/70; slips are `supersedes` chains |
 | 4 | bundle claims (§8.4) | F0 | `build_claims()` output reproducible from atoms — **parity check, not cutover** |
 | 5 | `capital-context` (§8.5) | F0 | 5 claims; wired into `/week` 4b |
@@ -186,11 +189,12 @@ Steps 2–9 are independent once 1 lands, except 7 needs 6. **Nothing cuts a YAM
 
 ## 12. Open items and upstream asks
 
-1. **thread → `loi`.** Threads carry `lens`, not a radar pointer. Proposal: a `loi:` list on each `threads.yaml` row (F4 once, 103 rows, mostly obvious). Until then `loi` derives from lens and is marked `loi_derived: true`.
+1. ✎✎ **thread → `question`.** Threads carry `lens`, not a radar pointer. Proposal: a `questions:` list on each `threads.yaml` row (F4 once, 103 rows, mostly obvious). Until then `question` derives from lens and is marked `question_derived: true`.
 2. **Round-four brief** (cloud-governor): `holds`/`held_by`, `operates`/`owns`/`leases`. Filed when step 1 yields the first real rows to cite.
 3. **`board.yaml` axis-prose retirement** — after step 4's parity check.
 4. **SQLite threshold** — none set; JSONL until a `/week` ingest or the site build is measurably slow.
-5. ✎ **q3 facilities' `loi`** — Q1 or none; one call, step 2.
+5. ✎ **q3 facilities' `question`** — Q1 or none; one call, step 2.
+6. ✎✎ **Is mental-health a second line?** Not now (§1). The test, when it comes up: does it have its own graph emitting its own deliverables, or does it share this one's entities and cross-tag its threads? Today the latter. If it flips, `loi` arrives and the register partitions — nothing else in this design changes.
 
 ---
 
