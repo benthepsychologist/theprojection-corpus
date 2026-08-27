@@ -6332,7 +6332,7 @@ map had given three different numbers; **disambiguated rather than picked**,
 the sixth being the ~$6B Decart acquisition of 08-13, a purchase not a
 rental. **Kyrylo** Budanov, not Andriy.
 
-**Also written:** 45 timeline entries across 31 threads, including six
+**Also written:** 37 timeline bullets across 33 thread files, including six
 cold-rotation backfills dated at their **own event dates** (OpenAI's CFO on
 a 2027 IPO, 08-19; CoreWeave's $104.2bn backlog, 08-11; the Intel-stake
 suit, 08-20; Oracle's pipeline slip, 08-14; Round Hill's $1bn suit, 08-17;
