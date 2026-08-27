@@ -222,10 +222,21 @@ for cid in sorted(flow_claim_ids):
     amount_str = fmt_amount(amount) if is_point_usd else (fmt_amount(amount) + " (" + basis_kind + ")" if amount else None)
     lead = (amount_str + " — " if amount_str else "") + (c.get("summary") or c.get("body") or "")
     if self_funded:
+        # "TSMC's own capital -> foundry construction" still isn't an
+        # answer to "where did the money go" -- Ben: "the money went into
+        # construction, tools, machines, and a bunch of other stuff",
+        # `facet_activity` is just this map's internal accounting bucket
+        # name repeated, not what the cash actually became. destination_
+        # category IS meant to answer exactly that (the same vocabulary
+        # the page's own "by what it bought" table uses -- land/shell/
+        # materials, memory & storage, compute silicon & systems, etc.),
+        # so lead with it; keep the facet activity as parenthetical detail
+        # on which project, not the headline.
         company_name = company_display_name(real_world_actor(recipient_id), recipient_label)
-        label = f"{company_name}'s own capital → {facet_activity(recipient_id)}"
-        lead += (" " if lead else "") + ("(self-funded — this source names no external "
-                                          "contractor/vendor the money actually went to)")
+        label = f"{company_name}'s own capital → {destination} ({facet_activity(recipient_id)})"
+        lead += (" " if lead else "") + ("(self-funded capex into "
+                                          f"{destination} — this source names no external "
+                                          "contractor/vendor the specific cash went to)")
     else:
         label = f"{source_label} → {target_label}"
     leaf_id = "q1-" + cid
