@@ -140,14 +140,18 @@ only ever grow it.
    genuinely novel schema question gets flagged and held for Ben rather
    than decided unilaterally, the same discipline the dated passes in
    `research/README.md` already follow. After adding the week's
-   financings, re-run `graph/export_q1.py` — **closed 2026-08-27**: the
-   Q1 page (`theprojection-site/content/research/q1.md`) is now a live,
-   clickable render of `graph/{atoms,relationships}.jsonl` (front matter
+   financings, re-run `graph/export_q1.py` then `graph/export_q1_claims.py`
+   — **closed 2026-08-27**: the Q1 page
+   (`theprojection-site/content/research/q1.md`) is now a live, clickable
+   render of `graph/{atoms,relationships}.jsonl` (front matter
    `flowmap: q1_flows`, drawn by `layouts/research/single.html` +
-   `static/js/q1-flowmap.js`), not hand-typed tables — no manual page
-   edit needed, the export script is the only step. Validate every JSONL
-   file still parses after editing, same discipline the frozen YAML
-   always had.
+   `static/js/q1-flowmap.js` for the node/edge diagram,
+   `graph/export_q1_claims.py` → `data/q1_claims.json` for the by-flow-type/
+   by-destination/top-recipients breakdown tables, each row a real claim
+   page at `/claim/q1-*/` via the same `layouts/claim/single.html` the
+   board uses), not hand-typed tables — no manual page edit needed, the
+   two export scripts are the only step. Validate every JSONL file still
+   parses after editing, same discipline the frozen YAML always had.
 5. **Radar upkeep** — update each worked question's Working notes; flag any
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance
