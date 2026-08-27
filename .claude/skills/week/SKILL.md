@@ -81,6 +81,13 @@ only ever grow it.
    "what are they doing now" roll-up from its current threads + posture (bump
    `asof`); this is the layer people read to know an actor's state without
    reading every thread. Then `/publish --push` so `/map/` reflects it all.
+   Then `graph/ingest/04_bundle_claims.py` (added 2026-08-27, `graph/
+   DESIGN.md` §8.4 — local extension, skip if `graph/` doesn't exist):
+   the board pass just refreshed `artifacts/bundles/*-node/
+   provenance.yaml`'s `asof`/figures, so this is the natural point to
+   re-run it — idempotent, only creates a new claim (superseding the
+   old) for a node whose bundle actually changed. `graph/validate.py`
+   after.
 4b. **Refresh the standing capital-context snapshot**
    (`attention/capital-context.yaml`, DESIGN.md Part 2 §11) — this is the
    `/week`-adjacent pass that artifact is built for; `/daily` never
@@ -99,7 +106,10 @@ only ever grow it.
    rewritten for the sake of it. Never hand-invent a reading — if a
    collector comes back empty (`fund_flow_reports` may well, both its
    sources are bot-gated as of 2026-07-30), say so in the reading's
-   `value` rather than fabricating one.
+   `value` rather than fabricating one. Then `graph/ingest/
+   05_capital_context.py` (§8.5, same local-extension/skip-if-absent
+   caveat as above) — refresh-aware, a reading with no new `as_of` is a
+   no-op. `graph/validate.py` after.
 4c. **Refresh the q1-flows money-graph** (`research/q1-flows/
    {nodes,edges,memberships}.yaml` — added 2026-08-27 as a **local
    extension specific to this instance**, not part of the canonical

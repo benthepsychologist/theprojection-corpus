@@ -201,6 +201,20 @@ archive; the page is derived from them.
     refreshed store to the site (`data/readouts.json`). The other ~150
     thread/entity/node summary scopes are a separate, larger backlog —
     not part of this routine step; refresh those only when asked.
+6b. **Feed the graph** (added 2026-08-27, `graph/DESIGN.md` §8 intro —
+   local extension, no upstream equivalent). Once step 1 has finalized a
+   day (a real `final` digest, timeline entries, and — if the critic ran
+   — a fresh `coverage-log.md` section all exist for it), run in order:
+   `graph/ingest/07_digest_bullets.py` (today's `final` digest → S1
+   claims) → `graph/ingest/06_timelines.py` (today's timeline entries →
+   S2, bumping the matching S1 atoms) → `graph/ingest/03_expectations.py`
+   (any expectation resolved today) → `graph/ingest/09_critic_annotations.py`
+   (today's critic-pass section, if one ran). Then `graph/validate.py` —
+   a failure here means something upstream broke a reference and blocks
+   the close, same severity as a `yaml.safe_load` failure elsewhere. All
+   four ingesters are idempotent (safe to run even on a day already fed);
+   skip silently if `graph/` doesn't exist in a future instance that
+   hasn't adopted it.
 7. **Take steering** — Ben's reactions ("track X", "drop Y", "deeper on Z",
    "expect C by D") apply immediately as `ben-steer` edits (see `/steer`).
    End by stating what changed in the map today.

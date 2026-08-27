@@ -11,10 +11,16 @@ AND where capex physically lands).
 """
 import json, os, re, sys
 sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
+import yaml
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 GRAPH = os.path.dirname(HERE)
+REPO = os.path.dirname(GRAPH)
 DOMAIN, SENS, VER = "knowledge", "internal", "1.0.0"
+QUESTION_BY_LENS = {"ai": ["q1", "q5"], "global-capital": ["q2", "q7"],
+                     "mental-health": ["q3", "q4", "q6"], "world-news": []}
+_threads = yaml.safe_load(open(os.path.join(REPO, "attention", "threads.yaml")))
+LENS_BY_THREAD = {t["slug"]: t["lens"] for t in _threads["threads"]}
 
 def slug(s): return re.sub(r"[^a-z0-9]+", "-", str(s).lower()).strip("-")
 def rel_id(s, p, t): return "rel-" + slug(f"{s}:{p}:{t}")
@@ -56,20 +62,37 @@ for qid, label, mode, lenses in QUESTIONS:
 print(f"{len(new_atoms)} question atom(s) created")
 
 # ---- backfill `question` on existing claims where it's unambiguous from content ----
-backfilled = 0
+# FIXED (found by a full-pipeline idempotency smoke test, 2026-08-27): the
+# original upcoming_id branch was `"financ" in ... or True`, which is always
+# True regardless of the check -- every hypothesis claim silently got
+# question:[q2] ("where is the money going"), including ones with nothing to
+# do with money (Lisa Cook's Fed removal, Ukraine's coalition meeting, an FDA
+# psychedelic hearing). Correct derivation: look up the hypothesis's own
+# `thread` in threads.yaml for its lens, then the same lens->question map
+# digest bullets use (§12.1's stated interim). This OVERWRITES any
+# `question` already set on an upcoming-sourced claim, since the prior value
+# may be the bug's output, not a real assignment -- q1-flow claims (already
+# correctly [q2], no thread lookup needed) are left untouched.
+backfilled, corrected = 0, 0
 for a in atoms:
-    if a.get("atom_type") != "claim" or "question" in a:
+    if a.get("atom_type") != "claim":
         continue
     m = a.get("meta", {})
-    qs = None
-    if "q1_edge_id" in m or "q1_from_node" in m:
-        qs = ["q2"]  # q1-flows -- money going where
-    elif m.get("upcoming_id"):
-        qs = ["q2"] if "financ" in str(m.get("thread", "")).lower() or True else ["q2"]
-    if qs:
-        a["question"] = qs
+    if ("q1_edge_id" in m or "q1_from_node" in m) and "question" not in a:
+        a["question"] = ["q2"]
         backfilled += 1
-print(f"{backfilled} existing claim(s) backfilled with `question`")
+        continue
+    if m.get("upcoming_id"):
+        threads = m.get("thread") or []
+        threads = threads if isinstance(threads, list) else [threads]
+        qs = sorted({q for t in threads for q in QUESTION_BY_LENS.get(LENS_BY_THREAD.get(t), [])})
+        if a.get("question") != qs:
+            corrected += 1 if "question" in a else 0
+            backfilled += 1 if "question" not in a else 0
+            a["question"] = qs
+            a["meta"]["question_derived"] = True
+print(f"{backfilled} claim(s) backfilled with `question`, {corrected} corrected "
+      f"(had a wrong prior value from the `or True` bug)")
 
 write("atoms.jsonl", atoms + new_atoms)
 
