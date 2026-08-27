@@ -174,6 +174,37 @@ projects, and arguably Poolside as a frontier lab — all of which sit
 outside the filter entirely right now, neither `members` nor
 `explicitly_outside`.
 
+## The graph migration (2026-08-27) — nodes/edges/memberships.yaml are now frozen
+
+**`q1-flows/{nodes,edges,memberships}.yaml` are frozen as of this date** —
+safety net and historical record only, kept for a couple of `/week` cycles
+then retired. **`q1-flows/graph/` is the live, authoritative Q1 data** —
+AKM-shaped (`lifeos-registry`'s knowledge_atom/source/relationship/
+annotation/extraction_pass model), seeded from the YAML's final state by
+`graph/build_graph.py`, with new financings added from here forward via
+`graph/add.py`. Full detail, including how the AKM migration experiment's
+findings turned into real fixes rather than remaining described-but-not-done:
+`q1-flows/graph/README.md`.
+
+**The four held-for-Ben calls above (guarantee typing, asset-purchase
+scope, IP destination category, `cut:core-buildout` membership) carried
+into the graph, not resolved by the migration.** Two got provisional
+defaults applied and flagged (`guarantee` as a new `flow_type`;
+`intellectual property / licensing` as a new `destination_category`) —
+see `graph/schemas/q1-local-vocab.md`. The other two (asset-purchase scope,
+`cut:core-buildout` v4) are still genuinely open.
+
+**One thing this migration deliberately did NOT do:** build the
+fetch-a-source-and-classify-its-evidence step that a proper research pass
+needs. That's `cloud-researcher`'s job (its own `verify` half, already
+built better than anything hand-rolled here), and it isn't reachable from
+this repo yet — see
+`cloud-researcher/INBOX/2026-08-27-theprojection-corpus-verify-kit-not-reachable-from-consuming-repos.md`.
+Until that's answered, new financings keep getting sourced the way every
+pass has sourced them so far: a real WebSearch, a real URL, a hand-written
+reliability score — fed into `graph/add.py`, which only does the
+AKM-shape structuring, never the sourcing.
+
 ## Discipline (inherited from this repo's root CLAUDE.md, restated here
 because this directory is new)
 

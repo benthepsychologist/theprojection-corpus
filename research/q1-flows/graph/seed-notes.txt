@@ -1,0 +1,6 @@
+Applied provisional local-vocab override on `nvidia-capital--poolside-model-training--2026-license`: destination_category -> 'intellectual property / licensing' (was 'other/unallocated'). See schemas/q1-local-vocab.md.
+MECHANICAL has_part: `amazon-capital--anthropic-capital--2024-11-additional` obs1 ($8,000,000,000) = sum of ['amazon-capital--anthropic-capital--2023-09-initial:obs0', 'amazon-capital--anthropic-capital--2024-11-additional:obs0']
+MECHANICAL has_part: `crusoe-2025-abilene-phase2-financing--crusoe-datacenter-construction--2025-phase2` obs1 ($15,000,000,000) = sum of ['crusoe-2024-abilene-jv-financing--crusoe-datacenter-construction--2024-jv-formation:obs0', 'crusoe-2025-abilene-phase2-financing--crusoe-datacenter-construction--2025-phase2:obs0']
+MECHANICAL conflicts_with: `broadcom-2026-anthropic-spv-facility--broadcom-capital--2026-debt` obs1 vs obs0
+MECHANICAL qualifies: `nvent-capital--maverick-power-power-distribution-manufacturing--2026-acquisition` obs0 vs obs1
+No source fabricated for `amazon-capital--anthropic-capital--2024-11-additional` obs1 -- fully explained by has_part, no independent artifact existed.

@@ -104,29 +104,38 @@ only ever grow it.
    {nodes,edges,memberships}.yaml` — added 2026-08-27 as a **local
    extension specific to this instance**, not part of the canonical
    kestrel template and with no upstream equivalent; a repo-specific
-   research program, see `research/README.md`). Scan the week's own
-   daily digests (already-curated — no fresh sweep needed) for named
-   financing events crossing the $100M materiality floor (Ruling 2 in
+   research program, see `research/README.md`). **As of 2026-08-27, this
+   targets `research/q1-flows/graph/`, not the YAML files** —
+   `nodes.yaml`/`edges.yaml`/`memberships.yaml` are frozen (safety net +
+   archeology only, see their own headers). Scan the week's own daily
+   digests (already-curated — no fresh sweep needed) for named financing
+   events crossing the $100M materiality floor (Ruling 2 in
    `INBOX/2026-08-03-q1-skeleton-v3.md`): equity rounds, debt issuances/
    bond sales, M&A/asset purchases, anchor-lease/capacity deals, and
-   guarantees. Add each as a new node/edge/membership following
-   `research/PRINCIPLES.md` (P-01: cardinality-correct fields, e.g.
-   `leads` is always a list; P-02: a structured field like `role: lead`
-   records what a source explicitly says, never an inference) and the
-   frozen R-01–R-20 rulings register — real cited sources only, record
-   `unmeasured` rather than fabricate a figure or URL. This is a
-   lighter, incremental top-up, not a full research pass: apply
-   established principles/rulings directly; only a genuinely novel
-   schema question — one no existing principle or ruling already
-   resolves — gets flagged and held for Ben rather than decided
-   unilaterally, the same discipline the dated passes in
-   `research/README.md` already follow. After updating the data,
-   hand-update `theprojection-site/content/research/q1.md`'s topline
-   table/counts to match (no automated generation yet — a design
+   guarantees. For each one, source it exactly as every prior pass has —
+   a real WebSearch/WebFetch, a real URL, a hand-written reliability
+   score and rationale (this is the manual stand-in for `cloud-researcher`'s
+   verify tools, which aren't reachable from this repo yet — see
+   `cloud-researcher/INBOX/2026-08-27-theprojection-corpus-verify-kit-not-
+   reachable-from-consuming-repos.md`; nothing here changes when that
+   lands, only how the source gets captured) — then call
+   `research/q1-flows/graph/add.py`'s `add_financing(...)` with the
+   result. Follow `research/PRINCIPLES.md` (P-01: cardinality-correct
+   fields; P-02: a structured field records what a source explicitly
+   says, never an inference) and `research/q1-flows/graph/schemas/
+   q1-local-vocab.md` for `flow_type`/`destination_category` — real
+   cited sources only, an honest link-only capture rather than a
+   fabricated figure. This is a lighter, incremental top-up, not a full
+   research pass: apply established principles/rulings directly; only a
+   genuinely novel schema question gets flagged and held for Ben rather
+   than decided unilaterally, the same discipline the dated passes in
+   `research/README.md` already follow. After adding the week's
+   financings, hand-update `theprojection-site/content/research/q1.md`'s
+   topline table/counts to match (no automated generation yet — a design
    proposal for making the page's claims clickable down to their
    sources, closing this loop for good, is open and separate from this
-   step). Validate every YAML file with `yaml.safe_load` after editing,
-   same as any other file in `research/`.
+   step). Validate every JSONL file still parses after editing, same
+   discipline the frozen YAML always had.
 5. **Radar upkeep** — update each worked question's Working notes; flag any
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance

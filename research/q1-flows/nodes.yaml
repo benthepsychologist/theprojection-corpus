@@ -1,3 +1,11 @@
+# ⛔ FROZEN 2026-08-27 — safety net + archeology ONLY, not read by anything
+# operational. The authoritative graph is research/q1-flows/graph/ (seeded
+# from this file's 2026-08-27 state by graph/build_graph.py, a one-time
+# migration, not a repeatable sync). Do NOT add new data here — new
+# financings go into the graph via graph/add.py once it exists. This file
+# stays for a couple of /week cycles as a rollback reference and historical
+# record, then retires. See research/q1-flows/graph/README.md.
+#
 # research/q1-flows/nodes.yaml — entity x activity nodes instantiated by
 # edges.yaml (q1 skeleton sec 3: "Nodes are entity x activity units...
 # Where disclosure doesn't support the split, an edge terminates at the
