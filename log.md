@@ -6250,3 +6250,122 @@ three separate times) and the "enterprise buyers substituting away from
 frontier labs" candidate (offered a second and final time this week)
 are both open decisions for Ben. The money-flow-map research page's
 fourth pass is queued, not started.
+
+---
+
+## 2026-08-27 — `/daily` (15:00 ET): finalize 08-26 incl. its never-curated back half, open 08-27, and the first late-catch flash
+
+**Ran after this morning's `/week` partial-week pass**, which had left
+08-26 `building`/`coverage: pending` and explicitly noted a `/daily` was
+due. It was: the day's back half, 15:00 ET → 05:00 ET, had never been
+curated, and it contained the week's most consequential document.
+
+**Dispatch:** twelve agents in three waves — five lens sweeps (four
+two-window, covering both 08-26's back half and today), one
+expectations-resolution sweep, one financing-loop deep check, one
+twenty-thread cold rotation; then three coverage critics and one
+dedicated primary-source verification; then four briefing-pack writers.
+Collectors ran throughout and wrote 15 provenance manifests.
+
+**The substantive finding.** Nvidia's Q2 FY2027 10-Q, filed 08-26 and read
+08-27, discloses guarantees capped at **$105bn** tied to an affiliate of
+OpenAI Group PBC, **$3.5bn** more in lease guarantees for AI cloud
+partners, a **$25bn** committed equity pool for AI labs and infrastructure
+financiers, and — on the call — **$500bn+** of planned third-party capital
+through Apollo, BlackRock, Blackstone, Brookfield, Goldman and KKR.
+Receivables concentration widened to five customers at 72%, from three at
+56%. **This map has carried circular financing as an argument assembled
+from reported deal values; it is now a filed, dated, capped disclosure.**
+Pulled from EDGAR directly by the financing-cluster agent, not from
+coverage.
+
+**Expectations: four resolved, two into silence.** `lisa-cook-removal-response`
+→ **hit** — her attorneys sent a dated written rebuttal to White House
+Counsel on the deadline day itself. **The distinction this map spent two
+runs deliberately holding open — informal press rebuttal vs. the formal
+dated response the 21-day notice demanded — was the right one**, and the
+flip is its resolution, not a reversal. `nvidia-q2-fy2026-earnings` → hit.
+`georgia-psc-camellia-staff-decision-0826` → hit at 21:00 ET (a staff-level
+clearance, not a Commission vote; the docketed filing itself was not
+retrievable). `meta-warner-csam-response` → **passed-silent**, grace to
+08-29, verified negative by two independent sweeps. `openai-anthropic-
+congress-safety-disclosure-0824` → **grace expired; the silence now
+stands permanently.**
+
+**The flash, and what it exposed.** Filed
+`nepal-tibet-glacier-collapse-flood` — this map's **first explicit late
+catch**. A glacier collapsed on the Nepal-China border at 22:52 ET on
+08-25, dammed the Lhende Khola and burst; hundreds dead, ~1,380 missing
+across Nepal and Tibet, several hundred of them foreign nationals. USGS
+formally reclassified its own record from a M4.4 earthquake to a M5.2
+landslide, stating no earthquake occurred. Verified by a dedicated agent
+against USGS, Nepal's Emergency Operations Centre and Xinhua before
+anything was written. `filed: 2026-08-27` so it runs 24h from the catch;
+**checked against `flash_last_day()` rather than assumed** — renders today,
+drops 08-28.
+
+⛔ **It went uncaught for two days and no mechanism here could have caught
+it.** All twelve coverage-critic benchmarks are AI, health-tech or finance
+publications, so a natural disaster is outside the recall guarantee **by
+construction**; `attention/world-news.yaml`, the one *mechanical*
+general-news detector, has been unbuildable for **eleven days** on the
+expired `bq` credential; and the flash rail only fires if the world-news
+sweep notices first. **A structural gap, not a bad sweep** — logged as one
+in `coverage-log.md`.
+
+**The critics earned their keep three different ways.** The
+**mental-health critic overturned that day's own finding**, recovering two
+items (Onos Health's $17M raise; the Headspace **price** at $200-300M
+against a $3bn 2021 valuation)from inside the 05:00-15:00 ET window two
+live passes had already reported **empty**. The **global-capital critic**
+caught Nvidia/Hugging Face talks (Bloomberg, 20:56 ET) that this run's own
+back-half sweep — looking for exactly that — missed. The **AI critic
+dissolved three of four candidates on the date check**, all next-morning
+re-serves of 08-25 stories already in our record; and noted The Rundown led
+with Ox Alpha a full day *after* we did.
+
+**Corrections, all of which had propagated:** Nvidia's print was **Q2
+FY2027**, not FY2026 — wrong in every digest since 08-20 and baked into an
+immutable expectation slug (slug kept, prose fixed). Nscale is Anthropic's
+**fifth anchor LEASE and sixth infrastructure MOVE** — three places in this
+map had given three different numbers; **disambiguated rather than picked**,
+the sixth being the ~$6B Decart acquisition of 08-13, a purchase not a
+rental. **Kyrylo** Budanov, not Andriy.
+
+**Also written:** 45 timeline entries across 31 threads, including six
+cold-rotation backfills dated at their **own event dates** (OpenAI's CFO on
+a 2027 IPO, 08-19; CoreWeave's $104.2bn backlog, 08-11; the Intel-stake
+suit, 08-20; Oracle's pipeline slip, 08-14; Round Hill's $1bn suit, 08-17;
+Amazon's Medicare GLP-1 channel, 08-06). `actor-doing.yaml` refreshed for
+the five actors that moved. One global-capital interpretation written and
+validated against `validate_interpretation()`. Graph ingesters 07/06/03/09
+run in order; `graph/validate.py` **OK** — 3,922 atoms, all references
+resolve. Four briefings applied and 154 readouts exported; site published
+live (Cloudflare build `a51e4cd8`).
+
+⛔ **Flagged, not smoothed:** the 08-26 5-year Treasury auction now has
+**three irreconcilable figures**, including an arithmetically impossible
+TreasuryDirect API response where amount-accepted exceeded amount-offered;
+today's 7-year result was not retrieved at all. **No number is asserted for
+either.** Two consecutive auctions this map cannot state a figure for is a
+data-access problem, not a coincidence.
+
+**Also flagged for Ben:** `bq` re-auth (day eleven, and today it cost
+something specific) · Axios Pro Rata's reader-proxy path is **same-day
+only**, which structurally breaks it for finalize passes that by design run
+the next day · Money Stuff's RSS is back, contradicting `benchmarks.yaml` ·
+three watchlist entity adds proposed and not made (Salesforce, Hugging
+Face, Onos Health) · three thread candidates offered · an AI-critic scope
+question about AI-authorship debates · and **12 thread timelines carry
+pre-existing out-of-order date blocks** (none introduced by this run —
+checked against HEAD).
+
+**Two briefing errors caught before they shipped**, worth recording because
+the validator would not have caught either: the front pack asserted "$800
+billion of circular AI financing loops" — **a figure appearing nowhere in
+its pack** — and the AI pack summed $105bn + $25bn + $3.5bn into "$133.5
+billion in guarantees to OpenAI-linked partners", conflating a general
+AI-lab equity pool with guarantees. Both rewritten to the filed figures. A
+third, a wrong deadline date in the mental-health pack, was also fixed. The
+validator *did* catch a fourth independently, rejecting a `/threads/` link
+that pointed outside its own scope.

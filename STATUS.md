@@ -19,6 +19,18 @@ online, and the internal read page's retirement), then the 08-24 run
 `/daily` passes, then the 08-20 note (which finalized 08-19), then
 08-19, then 08-18 and older.*
 
+> ⚠️ **SUPERSEDED LATER THE SAME DAY — a full `/daily` ran at 15:00 ET,
+> after the `/week` pass described below.** It finalized 08-26 (including
+> the back half, 15:00 → 05:00 ET, which had never been curated and which
+> contained Nvidia's 10-Q), opened 08-27, ran three coverage critics,
+> resolved four expectations and recorded two silences, and filed this
+> map's first late-catch flash. **So the note below is accurate about the
+> `/week` pass but its closing claim — "no new daily digest ran this
+> session", "08-26 still building/coverage: pending" — is no longer true
+> of the day.** Left in place rather than edited, since it correctly
+> describes the pass it was written for; `/wrap` rewrites this file
+> properly. See `log.md`'s 2026-08-27 `/daily` entry for the full record.
+
 > **2026-08-27 — a `/week` partial-week pass (week_of 08-24, Mon-Wed):
 > four lens weekly digests, four dated expectations resolved, a
 > threads.yaml sync-lag fix across six threads, and a full radar.md
