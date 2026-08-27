@@ -185,6 +185,24 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     multi-site action, edging toward Kaiser's own escalation shape.
     Watch for an HCA-equivalent regulatory complaint next. Full detail:
     `artifacts/digests/weekly/2026-08-17-mental-health.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial, frontier-ai): OpenAI lost
+    the person who ran its ~$600bn buildout (Chris Malone departed
+    08-25, the 13th senior exit of 2026) the same week its Jalapeño
+    ASIC (with Broadcom) published its first public benchmark claiming
+    to beat Nvidia's own flagship on performance-per-watt — a
+    negotiating chip starting to look like a real second source.
+    Anthropic answered by merging memory across Claude Chat/Cowork
+    (first live move on the new enterprise-agent-product-race thread)
+    and committing $45bn/6yr to Nscale, its fifth anchor-lease compute
+    counterparty in three months. Nvidia answered loudest: a reversed
+    Poolside deal ($6bn licence + $1bn equity + 100 engineers for its
+    own Nemotron line), Groq 3 LPX to full production, a 3-day-old
+    Lancium stake converted into a 15+GW deployment platform, and then
+    the week's actual test — its Q2 print — confirming hyperscalers are
+    absorbing the >15% memory-price rise rather than cutting orders
+    (capex guidance raised to $1.3T from $800B). Zhipu/Z.AI resolved the
+    "Ox Alpha" mystery by confirming authorship and open-weighting it.
+    Full detail: `artifacts/digests/weekly/2026-08-24-frontier-ai.md`.
 
 ## Q2 — Where is the money going?
 - **mode:** both · **lens:** ai + mental-health (money lens will absorb/extend this) · **status:** open
@@ -334,6 +352,33 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     UnitedHealth's $200M buried-audit allegation produces any
     regulatory follow-on. Full detail:
     `artifacts/digests/weekly/2026-08-17-mental-health.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial, frontier-ai): Nvidia's Q2
+    print settled the month's live question — $96.2B revenue (+106%
+    YoY), $108B Q3 guide, gross margin cut to 71-72% on memory costs,
+    and hyperscaler capex guidance raised to $1.3T from $800B, meaning
+    the >15% price rise is landing on cost lines, not order volumes.
+    Getting there, the market spent three days pricing the opposite
+    read (a pre-print semiconductor selloff, Intel −5%/AMD −4%/TSMC
+    −3%) while a mainstream wire service (Reuters, not a short-seller
+    newsletter) explicitly framed "circular financing" as the question
+    the print had to answer. Anthropic's $45bn/6yr Nscale commitment is
+    this map's fifth tracked anchor-lease deal in three months, same
+    rent-not-own shape each time. Full detail:
+    `artifacts/digests/weekly/2026-08-24-frontier-ai.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial, global-capital): the
+    Treasury mechanism behind last week's "financial repression" finding
+    got a name and a number — the TGA sits at $935-950bn, $350-400bn
+    above the prior administration's target, reportedly funding the
+    doubled buyback ceiling; framing hardened over the week from
+    "repression" to "fiscal dominance." SoftBank's ¥1tn retail bond got
+    firm terms (banks reportedly declined the institutional risk,
+    forcing the retail route) and a second $10-20bn wholesale leg opened
+    two days later with existing notes selling off same-day — two
+    financing-stress signals on one entity inside 48 hours. Anthropic's
+    IPO pitch escalated three times in five days (>$100bn raise → >$2tn
+    valuation → a claimed >$30tn TAM) before drawing its first analyst
+    pushback. Full detail:
+    `artifacts/digests/weekly/2026-08-24-global-capital.md`.
 
 ## Q3 — Is mental-health tech getting more rigorous, or is hype winning?
 - **mode:** answer (the book's thesis) + monitor · **lens:** mental-health · **status:** open
@@ -471,6 +516,23 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     FDA's "guidance is coming" quote on a dated watch rather than
     treating it as settled. Full detail:
     `artifacts/digests/weekly/2026-08-17-mental-health.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial): the quietest-evidence
+    pattern held a second week, but this time confirmed rather than
+    assumed — two long-running instrument failures (`mh-evidence-
+    watch`'s PubMed workaround around Cloudflare-blocked publisher
+    sites; OpenAlex's recovery from a broken `.env` path) got fixed this
+    week, meaning "no new trial evidence" is now a real null rather than
+    a failed check. Against that quiet, Anthropic put money behind the
+    missing-evidence-layer question: a new $5M grants programme funding
+    external, clinician-involved evaluation of Claude's effects on
+    users in mental-health crisis contexts — "the vendor-funded-evidence
+    problem in its purest form," credited as more than most competitors
+    do, still carrying open questions on publication control and
+    independence. Separately, a US military study comparing an AI
+    avatar against the CAPS clinician gold standard for PTSD diagnosis
+    is an unusually falsifiable test of the "patients disclose more to a
+    machine" claim — worth tracking against a proper control. Full
+    detail: `artifacts/digests/weekly/2026-08-24-mental-health.md`.
 
 ## Q4 — How is AI showing up in mental health — and is it safe and governed?
 - **mode:** both · **lens:** mental-health (Ben's sharpest edge) · **status:** open
@@ -599,6 +661,19 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     the test case is a DOJ filing against a therapy-chatbot statute
     specifically (Colorado's HB26-1195 or California's SB 903/AB 2575).
     Full detail: `artifacts/digests/weekly/2026-08-17-mental-health.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial): Congress's own
+    29-signer safety-disclosure deadline (08-24) passed with total
+    silence from both OpenAI and Anthropic — voluntary disclosure
+    produced nothing; only Alabama's AG subpoenaing OpenAI over the same
+    July intrusion the next day produced any actual movement, compulsory
+    process succeeding where a request didn't. Meta separately went
+    fully silent on Senator Warner's CSAM-ads deadline the same week —
+    a second instance of an AI/platform company simply not answering a
+    federal legislator's dated demand. No new statutory or DOJ movement
+    on the therapy-chatbot-specific test case named last week (Colorado
+    HB26-1195, CA SB903/AB2575) — a pause worth noting in what's usually
+    the most legally active part of this question. Full detail:
+    `artifacts/digests/weekly/2026-08-24-mental-health.md`.
 
 ## Q5 — Where is frontier AI heading overall?
 - **mode:** monitor (full firehose) · **lens:** ai · **status:** open
@@ -736,6 +811,21 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     2026-08-25, same day: Ben opened `datacenter-backlash-capital-risk`,
     folding this signal in.) Full detail:
     `artifacts/digests/weekly/2026-08-17-frontier-ai.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial): the industry-messaging/
+    public-trust gap this note flagged 08-25 recurred a THIRD time —
+    Sam Altman telling a podcast AI hasn't had its "iPhone moment" yet,
+    caught by the coverage critic and filed to `ai-datacenter-sites` as
+    a poor fit, same as the prior two instances. Worth a decision on
+    whether this deserves its own thread rather than a recurring
+    near-miss. Substantively: the memory/pricing story this note has
+    tracked all month got its resolution — Nvidia's Q2 print confirmed
+    hyperscalers are absorbing the >15% price rise, not cutting orders
+    (capex guidance raised to $1.3T from $800B) — while OpenAI's
+    Jalapeño ASIC published its first public benchmark against Nvidia's
+    own flagship one day before the print, and export control widened
+    to a third channel (Chinese state media publicly urging Dutch
+    retaliation over a threatened ASML ban). Full detail:
+    `artifacts/digests/weekly/2026-08-24-frontier-ai.md`.
 
 ## Q6 — What's moving in the market around my work?
 - **mode:** both · **lens:** mental-health · **status:** open
@@ -867,6 +957,19 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     platform-liability story running parallel to, but distinct from,
     Meta's Oakland child-safety trial. Full detail:
     `artifacts/digests/weekly/2026-08-17-mental-health.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial): Meta's answer to the
+    tracked question above turned out to be silence — genuinely
+    checked, not assumed, across Meta's own channels, Warner's office,
+    and every outlet that covered the original letter. The best-known
+    consumer MH brand became a module inside a non-MH-first platform
+    instead: Sword Health's acquisition of Headspace (effective 09-14),
+    known only via an SEC-style filing, neither company has commented.
+    This is the strongest available counterexample yet to this map's
+    own "capital favors clinician-augmentation over consumer chatbots"
+    thesis, arriving as an instance of the opposite pattern rather than
+    a confirmation of it. No second interventional-psychiatry roll-up
+    followed Radial's this week. Full detail:
+    `artifacts/digests/weekly/2026-08-24-mental-health.md`.
 
 ## Q7 — Where is capital and economic power concentrating — in my markets and above them?
 - **mode:** both · **lens:** money · **status:** open *(scoped by Ben 2026-07-20)*
@@ -1084,6 +1187,24 @@ updating its **Working notes**; monitoring keeps it fed through the digest.
     financings copy, and whether a second non-US company follows
     Alibaba's open-dilution shape. Full detail:
     `artifacts/digests/weekly/2026-08-17-global-capital.md`.
+  - 2026-08-27 (/week, week_of 08-24, partial): the mechanism behind
+    last week's "financial repression" finding got a name and a number —
+    the Treasury General Account sits at $935-950bn, $350-400bn above
+    the prior administration's target, reportedly funding the doubled
+    buyback ceiling; commentary hardened from "repression" to "fiscal
+    dominance" over the week. The new `treasury-long-end-intervention`
+    thread got its first real test: Lisa Cook's removal-response
+    deadline (one of the three dated tests it was opened to hold)
+    landed 08-26 with a genuine formal filing from her counsel, not the
+    silence the prior note anticipated — Jackson Hole and Warsh's own
+    keynote are still ahead. SoftBank stacked a second bond leg on top
+    of its already-priced ¥1tn retail bond (banks reportedly declined
+    the institutional risk on the first one), and Anthropic's IPO pitch
+    escalated three times in five days (>$100bn raise → >$2tn valuation
+    → a claimed >$30tn TAM) before drawing its first real analyst
+    pushback — the S&P 1500's entire tech sector generates roughly a
+    twelfth of the claimed addressable market. Full detail:
+    `artifacts/digests/weekly/2026-08-24-global-capital.md`.
 
 ---
 

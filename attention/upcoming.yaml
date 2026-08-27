@@ -61,7 +61,27 @@ expectations:
     what_confirms: "the print itself, and whether guidance reflects the memory-cost pass-through; also the first read on whether hyperscalers absorb the 15% or cut units"
     logged: 2026-08-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-26
+    evidence: |
+      Reported after close 08-26 as scheduled. Naming correction: Nvidia's
+      own filing calls this "Second Quarter Fiscal 2027" (quarter ended
+      07-26), not "Q2 FY2026" as this entry's own id/claim have it —
+      this map's label is off by one fiscal year; left unrenamed to avoid
+      rippling the id, noted here instead. Revenue $96.2B (+18% QoQ,
+      +106% YoY, beat ~$92B consensus); data-center revenue ~$89B;
+      gross margin 75.0% GAAP/non-GAAP; Q3 FY2027 guidance $108B
+      (Nvidia's first $100B+ quarter); Q4 FY2027 gross margin guided
+      down to 71-72%, explicitly attributed to memory costs. On the
+      question this entry exists to answer: management confirmed it is
+      PASSING the >15% memory-cost inflation through rather than
+      absorbing it, describing "extreme" memory pricing conditions
+      "headed higher into next year" — and the top-five hyperscalers'
+      combined capex guidance is reported rising to $1.3T next year from
+      $800B in 2026, i.e. evidence points to absorption, not order cuts,
+      though no hyperscaler has directly confirmed that reasoning yet.
+      Sources: Nvidia's own GlobeNewswire release and 10-Q; CNBC;
+      Tom's Hardware on the pricing detail; Yahoo Finance on guidance.
 
   - id: lisa-cook-removal-response
     claim: "Lisa Cook's deadline to respond to the White House's notice seeking her removal from the Federal Reserve Board"
@@ -74,7 +94,18 @@ expectations:
     what_confirms: "a filed response, a resignation, or the deadline passing with nothing — the last of which is the loud outcome"
     logged: 2026-08-23
     logged_by: curate-add   # date carried from prior reporting; NOTHING Cook-related appeared in the 08-21..08-23 sweep, so this is unrefreshed
-    status: pending
+    status: hit
+    resolved: 2026-08-26
+    evidence: |
+      Cook's attorney Abbe David Lowell submitted a formal written
+      response to the White House on 08-26, meeting the deadline set by
+      the administration's 08-05 letter. The letter states Cook "has
+      never committed mortgage fraud or any intentional wrongdoing, and
+      there is no legally cognizable cause for removing her," attributes
+      any mortgage-form irregularities to lender error, and notes similar
+      documentation issues exist among Trump administration officials —
+      a distinct, dated filing, not a repeat of Lowell's earlier informal
+      public rebuttals. Sources: AP wire via KFGO and WHTC, both 08-26.
 
   - id: jackson-hole-warsh-keynote
     claim: "Kevin Warsh gives his first Jackson Hole keynote as Fed chair, at the Kansas City Fed's symposium (08-27 to 08-29, theme 'Financial Innovation: Implications for Payments and Policy')"
@@ -1286,7 +1317,8 @@ expectations:
       CSAM advertisements, by the 08-26 deadline the letter itself set
     due: 2026-08-26
     due_precision: day
-    status: pending
+    status: passed-silent
+    passed_silent_on: 2026-08-27
     confidence: confirmed
     thread: meta-ai-csam-ads
     entities: [meta]
@@ -1299,6 +1331,16 @@ expectations:
       finding — the letter demanded per-ad detection and NCMEC-referral
       timelines, Ad Library persistence, and revenue from eleven named
       Chinese ad resellers.
+    evidence: |
+      Genuinely checked, not assumed: multiple search angles (Meta's
+      response content, reporting on continued silence) turned up nothing
+      dated 08-26 or 08-27 — no Meta statement, no follow-up from the
+      original outlets that covered Warner's 08-18 letter (MLex, Blue
+      Virginia, Augusta Free Press), and no Warner-office statement noting
+      non-response. The only Meta comment on record predates the letter
+      entirely (a line to WIRED calling the ads "horrific," most with
+      "minimal reach"). No outlet has yet reported on the silence itself
+      either — this is a genuine gap, not a covered non-story.
 
   - id: ca-ab2575-senate-floor-vote
     claim: >
@@ -1523,7 +1565,8 @@ expectations:
       Project Camellia contract with OpenAI (Effingham County)
     due: 2026-08-26
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-08-27
     confidence: reported
     thread: ai-datacenter-sites
     entities: [openai]
@@ -1534,6 +1577,19 @@ expectations:
       a PSC staff filing either objecting to the contract or referring it
       onward. Staff had signalled they would object absent changes, so a
       silent pass is itself informative.
+    evidence: |
+      Not a clean refer-or-object filing as framed — Georgia Power
+      negotiated changes with staff and the contract was APPROVED,
+      announced 08-26/08-27 (Georgia Power's own release, PR Newswire,
+      WTOC, Atlanta News First). Revised terms raise projected system
+      savings to ~$950M/year starting 2029 and typical residential
+      customer savings to ~$180/year (~$15/month), up from an earlier
+      $102/year projection — the negotiated-changes path staff had
+      signalled (absent changes, they'd object) is what actually played
+      out. The literal staff-filing procedural language (refer vs. no
+      objection) wasn't independently retrievable (PSC filing page
+      403'd); the substantive outcome is solidly confirmed across three
+      independent outlets.
   - id: effingham-commissioners-camellia-worksession-0829
     claim: >
       Effingham County Board of Commissioners holds a three-hour work

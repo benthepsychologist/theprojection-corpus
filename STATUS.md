@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus
 
-*As of 2026-08-25*
+*As of 2026-08-27*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,13 +8,74 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers 2026-08-25's full run (six pipeline
-fixes, `/daily` across three checkpoints, a credibility-verb migration,
-`/week` closing the overdue week_of 08-17, four thread promotions, the
-world-news candidate pool coming back online, and the internal read
-page's retirement), then the 08-24 run (which finalized 08-23), then the
-08-23 gap catch-up, then 08-21's two `/daily` passes, then the 08-20 note
-(which finalized 08-19), then 08-19, then 08-18 and older.*
+*Hand-maintained. Top note covers 2026-08-27's `/week` partial-week pass
+(week_of 08-24, four lens weekly digests, four expectations resolved,
+a threads.yaml sync-lag fix, full radar.md upkeep), then 2026-08-25's
+full run (six pipeline fixes, `/daily` across three checkpoints, a
+credibility-verb migration, `/week` closing the overdue week_of 08-17,
+four thread promotions, the world-news candidate pool coming back
+online, and the internal read page's retirement), then the 08-24 run
+(which finalized 08-23), then the 08-23 gap catch-up, then 08-21's two
+`/daily` passes, then the 08-20 note (which finalized 08-19), then
+08-19, then 08-18 and older.*
+
+> **2026-08-27 — a `/week` partial-week pass (week_of 08-24, Mon-Wed):
+> four lens weekly digests, four dated expectations resolved, a
+> threads.yaml sync-lag fix across six threads, and a full radar.md
+> upkeep pass across all seven questions.** No new daily digest ran this
+> session — this is `/week` alone, picking up a cold session with 08-26
+> still `building`/`coverage: pending`.
+>
+> 📰 **Four weekly digests written** (`artifacts/digests/weekly/2026-08-24-
+> {frontier-ai,global-capital,mental-health,world-news}.md`), synthesized
+> from the three existing dailies (08-24 through 08-26) plus
+> `radar.md`/`threads.yaml`/`upcoming.yaml`/`coverage-log.md` — not a
+> fresh sweep, per the pattern this repo settled on 2026-08-17. Explicitly
+> partial: Thursday through Sunday haven't happened yet, so these will be
+> rewritten in full when the week actually closes.
+>
+> ⏳ **Four dated expectations resolved**, all via live research since
+> none had a same-day answer in the dailies: Nvidia's Q2 print landed at
+> $96.2B revenue (+106% YoY), confirming hyperscalers are absorbing the
+> >15% memory-price rise rather than cutting orders (capex guidance
+> raised to $1.3T from $800B) — `hit`. Lisa Cook's counsel filed a formal
+> written response on deadline — `hit`. Georgia PSC approved the
+> Camellia contract via negotiated ratepayer terms (~$950M/year system
+> savings from 2029) rather than a clean refer/object — `hit`. Meta
+> stayed genuinely silent on Senator Warner's CSAM-ads letter, checked
+> from several angles — `passed-silent`.
+>
+> 🔧 **A `threads.yaml` data-integrity gap found and fixed**: six threads
+> (`openai-agent-security-incident`, `enterprise-agent-product-race`,
+> `anthropic-infrastructure-buildout`, `frontier-model-gov-review-
+> precedent`, `datacenter-backlash-capital-risk`, `mh-clinical-infra-
+> funding`, `softbank-all-in`, and the `camellia` child thread) had real,
+> digest-confirmed activity this week that never bumped their own
+> `last_seen` field — surfaced independently by three of the week's
+> research agents. Fixed; flagged as worth a data-integrity check before
+> future passes lean on `last_seen` alone as a completeness signal.
+>
+> 📋 **Deferred, by design, to the week's actual close**: the board pass
+> (0 provisional-marker orgs found; a full dormant-actor cross-reference
+> wasn't run), the `capital-context.yaml` collector refresh (only 2 days
+> since the last full refresh, with known multi-week data lag and a
+> known collector-stall risk not worth chasing for a near-certain-empty
+> result), and the `actor-doing.yaml` full pass. None of these are
+> broken — they're paced to the week's own close, not this mid-week
+> check-in.
+>
+> 💡 **A separate finding, from a Ben question mid-session, not part of
+> `/week` proper**: the public site's money-flow-map research page
+> (`theprojection-site/content/research/q1.md`, "kestrel's own q1-q4
+> namespace" — distinct from this file's Q1-Q7) has been stuck at
+> 189 nodes/72 edges since commit `e58a324` (2026-08-13) — confirmed via
+> git log, not assumed. It has no automated update path by design
+> (`research/README.md`: "nothing here feeds `/publish` or the site
+> automatically"); it only moves via a deliberate, Ben-directed research
+> pass. A fourth pass is overdue and would have real material to work
+> from — the Broadcom SPV, Nvidia's Ohio guarantee, Groq's down-round,
+> Alibaba's placement, and more, all logged in dailies since 08-13 but
+> never fed into this graph.
 
 > **2026-08-25 — a full day, three `/daily` checkpoints deep: pipeline
 > fixes, a closed overdue week, four thread promotions, the world-news

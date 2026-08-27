@@ -6153,3 +6153,100 @@ evening: Nvidia's print is out by then, and Meta/Warner + Georgia PSC
 silence-past-end-of-day would be the loud outcome if nothing surfaces.
 Four thread candidates are open for Ben (three carried from 11:00 ET,
 one new this run) — none urgent.
+
+## 2026-08-27 — `/week`: partial-week pass for week_of 08-24 (Mon-Wed), a threads.yaml sync-lag fix, and a separate finding on the site's stale money-flow-map page
+
+**Cold session start** (no daily ran today; the last daily was 08-26
+15:20 ET, still `building`/`coverage: pending`). Opened with `/start`
+(clean orientation, four overdue expectations flagged as the one
+actionable item), then a Ben question about "research question 1 not
+auto-updating" that turned out to name a completely different thing
+than expected — not `radar.md`'s Q1, but the public site's money-flow
+research page (see below) — then `/week`, run mid-week as a partial
+pass since week_of 08-24 (Mon-Sun) hasn't closed.
+
+**Five subagents dispatched in parallel**: one to resolve the four
+expectations due 08-26 (Nvidia, Cook, Meta/Warner, Georgia PSC) via live
+web research, and one per lens (frontier-ai, global-capital,
+mental-health, world-news) to extract and condense raw material from
+this week's three dailies plus radar/threads/upcoming/coverage-log
+context — retrieval and condensing only, not final prose; the actual
+throughline writing and cross-lens judgment calls were done in the main
+session, per this repo's own dispatch discipline.
+
+**All four expectations resolved.** Nvidia's Q2 print (which Nvidia's
+own filing calls "Q2 FY2027," not FY2026 as the ledger id has it —
+noted, not renamed) landed at $96.2B revenue (+106% YoY), $108B Q3
+guide, gross margin cut to 71-72% on memory costs, and — the actual
+question — hyperscaler capex guidance raised to $1.3T from $800B,
+confirming absorption over pullback. Lisa Cook's counsel filed a formal
+written response on deadline. Georgia PSC approved the Camellia
+contract via negotiated ratepayer terms (~$950M/year system savings
+from 2029, up from an earlier $102/year residential-savings projection)
+rather than a clean refer/object filing. Meta stayed genuinely silent on
+Senator Warner's CSAM-ads letter — checked from several angles
+(Meta's own channels, Warner's office, every outlet that covered the
+original letter), a real gap, not an unresearched one.
+
+**Four weekly digests written**
+(`artifacts/digests/weekly/2026-08-24-{frontier-ai,global-capital,
+mental-health,world-news}.md`), explicitly partial (3 of 7 days),
+following the 2026-08-17 precedent of synthesizing from already-curated
+dailies rather than a fresh sweep. Radar upkeep applied across all seven
+questions in `radar.md` — Nvidia's print (Q1/Q2/Q5), the Treasury
+General Account mechanism naming "fiscal dominance" and
+`treasury-long-end-intervention`'s first live week (Q7/Q2), the
+Sword Health/Headspace acquisition filing and Anthropic's $5M outside-
+evaluation grants programme (Q1/Q3/Q4/Q6), and the industry-messaging/
+public-trust gap recurring a third time (Altman's "no iPhone moment,"
+Q5/Q6) with a flag that it may deserve its own thread rather than a
+third recurring near-miss.
+
+**A `threads.yaml` data-integrity gap found and fixed, independently
+surfaced by three separate research agents**: six threads plus one
+child thread had real, digest-confirmed activity this week that never
+bumped their own `last_seen` field —
+`openai-agent-security-incident`/`enterprise-agent-product-race`/
+`anthropic-infrastructure-buildout`/`frontier-model-gov-review-
+precedent` (all ai lens), `datacenter-backlash-capital-risk`/
+`softbank-all-in` (global-capital), `mh-clinical-infra-funding`
+(mental-health), and `camellia` (a child of `ai-datacenter-sites` whose
+own parent absorbed this week's real Camellia news, leaving the child
+reading falsely stale). Fixed directly; worth a structural look at
+whether `last_seen` bumps are reliably part of the daily curation step,
+since a query against the field alone would have under-reported this
+week's real coverage on all seven.
+
+**Deferred to the week's actual close, by design, not oversight**: the
+board pass (0 provisional-marker orgs found via a direct check; the
+fuller dormant-actor cross-reference wasn't run), the
+`capital-context.yaml` collector refresh (last full refresh was only
+two days prior, 08-25; the underlying sources lag weeks to months and a
+re-run risked reproducing the known keyless-429-style collector stall
+for a near-certain-empty result), and the `actor-doing.yaml` full pass.
+
+**Separate finding, not part of `/week` proper**: mid-session, Ben
+pointed at what turned out to be the public site's money-flow-map
+research page (`theprojection-site/content/research/q1.md`) after an
+earlier answer had (wrongly) assumed he meant `radar.md`'s own Q1. That
+page tracks a hand-curated entity/edge graph
+(`research/q1-flows/{nodes,edges,memberships}.yaml`) — a separate
+"kestrel q1-q4" research namespace, explicitly not this file's Q1-Q7,
+built through discrete Ben-directed passes, never wired to `/daily` or
+`/publish` by deliberate design. Confirmed via git log: the underlying
+data (189 nodes, 72 edges) hasn't moved since commit `e58a324`
+(2026-08-13), and the site page has exactly one commit ever. A fourth
+research pass is overdue and has real material to draw from (the
+Broadcom SPV, Nvidia's Ohio guarantee, Groq's down-round, Alibaba's
+placement, and more — all logged in dailies since 08-13, none fed into
+this graph). Offered to Ben to scope and run; not started this session.
+
+**Pick-up for next session:** 08-26 is still `building`/`coverage:
+pending` — a `/daily` run is due. `week_of 08-24` stays open until it
+actually closes (Sunday 08-30/Monday 08-31), at which point these four
+weekly digest files get rewritten in full, not appended to. The
+industry-messaging/public-trust thread-candidate question (now flagged
+three separate times) and the "enterprise buyers substituting away from
+frontier labs" candidate (offered a second and final time this week)
+are both open decisions for Ben. The money-flow-map research page's
+fourth pass is queued, not started.
