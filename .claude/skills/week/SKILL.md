@@ -105,7 +105,7 @@ only ever grow it.
    extension specific to this instance**, not part of the canonical
    kestrel template and with no upstream equivalent; a repo-specific
    research program, see `research/README.md`). **As of 2026-08-27, this
-   targets `research/q1-flows/graph/`, not the YAML files** —
+   targets `graph/`, not the YAML files** —
    `nodes.yaml`/`edges.yaml`/`memberships.yaml` are frozen (safety net +
    archeology only, see their own headers). Scan the week's own daily
    digests (already-curated — no fresh sweep needed) for named financing
@@ -119,10 +119,10 @@ only ever grow it.
    `cloud-researcher/INBOX/2026-08-27-theprojection-corpus-verify-kit-not-
    reachable-from-consuming-repos.md`; nothing here changes when that
    lands, only how the source gets captured) — then call
-   `research/q1-flows/graph/add.py`'s `add_financing(...)` with the
+   `graph/add.py`'s `add_financing(...)` with the
    result. Follow `research/PRINCIPLES.md` (P-01: cardinality-correct
    fields; P-02: a structured field records what a source explicitly
-   says, never an inference) and `research/q1-flows/graph/schemas/
+   says, never an inference) and `graph/schemas/
    q1-local-vocab.md` for `flow_type`/`destination_category` — real
    cited sources only, an honest link-only capture rather than a
    fabricated figure. This is a lighter, incremental top-up, not a full

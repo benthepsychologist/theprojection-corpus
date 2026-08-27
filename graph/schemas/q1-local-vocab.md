@@ -82,5 +82,5 @@ boundaries are filters over the map, never classification baked into it —
 `filters/cut-core-buildout.yaml` stays exactly as it is, unchanged, and
 applies to this graph by matching each atom's `meta.entity_slug` (see
 `build_graph.py`) against its own bare-entity membership list. See
-`research/q1-flows/graph/README.md` for how filter application works
+`graph/README.md` for how filter application works
 against the graph.

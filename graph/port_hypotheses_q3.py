@@ -54,7 +54,7 @@ sys.path.insert(0, os.path.dirname(os.path.abspath(__file__)))
 import yaml
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-REPO = os.path.abspath(os.path.join(HERE, "..", "..", ".."))
+REPO = os.path.abspath(os.path.join(HERE, ".."))
 DOMAIN, SENS, VER = "knowledge", "internal", "1.0.0"
 TODAY = datetime.date.today().isoformat()
 ORIGIN = f"port_hypotheses_q3.py, {TODAY} (one-time port; Ben: 'port everything you can')"

@@ -1,4 +1,4 @@
-# research/q1-flows/graph/ — the authoritative Q1 money-flow graph
+# graph/ — the authoritative Q1 money-flow graph
 
 **This directory, not the YAML files one level up, is the live source of
 truth for Q1 as of 2026-08-27.** `../nodes.yaml`, `../edges.yaml`, and

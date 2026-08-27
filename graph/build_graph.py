@@ -39,7 +39,10 @@ from collections import Counter, defaultdict
 from itertools import combinations
 
 HERE = os.path.dirname(os.path.abspath(__file__))
-FLOWS = os.path.dirname(HERE)
+FLOWS = os.path.join(os.path.dirname(HERE), "research", "q1-flows")
+if os.path.exists(os.path.join(HERE, "port-notes.txt")):
+    sys.exit("graph/ is already seeded AND ported (port-notes.txt exists); re-seeding would overwrite the port. "
+             "Delete port-notes.txt only if you genuinely mean to rebuild from the frozen YAML.")
 OUT = HERE
 
 DOMAIN, SENS, VER = "knowledge", "internal", "1.0.0"
