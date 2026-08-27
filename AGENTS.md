@@ -165,18 +165,90 @@ used.
 
 ## 6. This repo's disciplines
 
-📋 **To be written by this repo's operator.** The rules specific to this
-repo — what it must never do, what it must always do, and why.
+Numbered so a session, a brief, or a commit message can cite one
+precisely; each carries its WHY. §4 (the fleet-shared disciplines) is not
+restated here — these extend it. The `attention`-kind disciplines further
+down this file (the "Disciplines" list under "The `attention` kind") are
+the older, kind-specific set; nothing here overrides them.
 
-**Write them as a numbered list.** Every repo in the fleet independently
-arrived at numbered disciplines, and numbering is what lets a session, a
-brief or a commit message cite one precisely. **Record the WHY next to
-each rule**: a prohibition with no reason gets deleted by the next person
-who finds it inconvenient — usually correctly, occasionally
-catastrophically. If a rule exists because something went wrong, say what
-went wrong.
+1. **Mechanical where possible — the agency ladder, F0 to F4.** (Ben,
+   2026-08-27, standing rule.) Every step of work in this repo sits on
+   one rung of a five-rung ladder, and the standing goal is always to
+   move it **down**. This is not a house dialect — it's cloud-governor's
+   own `canon/ai-assisted-development-process-v1.md` §2.2 ("Executor Form
+   Factor"), which already had F0/F1/F2 exactly as below; the F3/F4 split
+   is a real gap this repo found in that canon and filed upstream the
+   same day (`cloud-governor/INBOX/2026-08-27-theprojection-corpus-
+   agency-ladder-f3-f4-split/`) rather than inventing separately —
+   adopted here in step, on Ben's word that he holds direct approval on
+   that canon doc.
 
-Do not restate §4 here. Extend it.
+   | rung | what it is | example here |
+   | --- | --- | --- |
+   | **F0 — script** | fully mechanical — a script, a query, arithmetic; zero model calls | `yaml.safe_load` on write; checking whether a claim's amount equals the sum of two other claims |
+   | **F1 — single-shot call** | one bounded model call, no tool loop — everything it needs is already known before the call | asking a model one scoped question about a fetched source, then validating the answer's shape |
+   | **F2 — bounded agent call** | a call *made by something else*, scoped to one pass, that may explore/use tools but returns only a conclusion | a subagent dispatched to research and confirm one dated fact, bundle + return contract |
+   | **F3 — autonomous agent execution** | a known procedure run start to finish, unattended, with real autonomy over sequencing — this run has no caller above it awaiting a bounded return | `/daily`, `/week`, `/steer`, `/classify` |
+   | **F4 — interactive** | done in chat — the ask itself is still being worked out, a human present turn by turn | deciding a thread candidate earns promotion; this rule being written |
+
+   **Start at whatever rung gets it done. Then demote.** New work
+   legitimately starts at F4 — that is how it gets understood. The
+   discipline is what happens next: push it into a skill once the ask is
+   fixed (F4→F3), pull scoped sub-tasks out into bounded calls with a
+   return contract (F3→F2), reduce further once every input is knowable
+   in advance (F2→F1), and mechanize fully once no per-run judgment
+   remains (F1→F0). A step that does not separate cleanly stays where it
+   is — and is *named* as such on the record, never hidden. **Whether a
+   step is invoked via a chat command or a CLI/API call has no bearing on
+   its rung** — only its internal control-flow does; a skill that is
+   secretly F0/F1/F2-shaped work run conversationally is waste, not F3.
+
+   **LLM inference is used in exactly two cases:** (A) where mechanical
+   processing is genuinely impossible — a judgment about meaning, a read
+   of a pattern across facts — or (B) as **lubrication**: a temporary
+   stand-in for a mechanization not yet built. Case B is a debt, not a
+   design, and is carried as one. "LLM inference" here means a model
+   producing an answer — distinct from *logical* inference or induction,
+   which an F0 process performs (arithmetic over a graph is inference; it
+   is not LLM inference).
+
+   **A rung is what a step's real information needs require, not a
+   preference.** F1 and F2 are not interchangeable options for the same
+   step — a step that must discover something first (search, read a file)
+   cannot honestly run at F1 no matter how the prompt is written, and a
+   step whose inputs are already fully known shouldn't be given room to
+   explore at F2 just because it could. Mischaracterizing a step as more
+   mechanical than it really is — or leaving one open-ended that doesn't
+   need to be — is the error; neither rung is more virtuous than the
+   other.
+
+   **Why:** model inference is costly, non-deterministic, and hard to
+   audit; every rung of demotion makes a step cheaper, reproducible, and
+   checkable. The live worked example, corrected from an earlier draft of
+   this rule: `research/q1-flows/`'s AKM migration (2026-08-27) first
+   classified the relation between two conflicting dollar figures with a
+   keyword-matching script — already F0, not F1 or F2, since it called no
+   model at all — and that F0 check was **wrong on every real case**.
+   The fix was not a rung change; it was a *better* F0 check, querying
+   the graph's own structure (does this amount equal the sum of two other
+   tracked claims? do two claims share a date and basis but disagree on
+   value?) instead of pattern-matching a cheap proxy for it. The lesson
+   isn't "move down a rung" here — it's that being mechanical is
+   necessary but not sufficient; a mechanical check still has to be
+   correct, and correctness sometimes means querying real structure
+   rather than guessing from a shortcut that happens to be cheap.
+
+   **Where this is headed:** this repo has no job runner yet, so its
+   "jobs" today are its skills and commands (F3). When jobs arrive — the
+   shape is `lorchestra`'s, a governed repo not ours to edit — a
+   mechanized process here will almost always be a job whose steps are
+   F0 with contained F1/F2 calls inside. One real gap found in that
+   target shape, also filed upstream the same day: cloud-governor's own
+   job kernel (`execution-model-v1.yaml`) has no native step type for a
+   bounded agent call (F2) today — only fully mechanical steps and
+   single-shot calls (F0/F1). Build toward the eventual shape now anyway:
+   a skill that already separates its mechanical parts from its judgment
+   parts converts into a job; one that does not has to be rewritten.
 
 ---
 
