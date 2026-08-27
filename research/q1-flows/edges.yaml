@@ -2891,3 +2891,719 @@ edges:
       reliability held below the 0.9+ direct-fetch tier on that basis,
       and further tempered by the upper-bound/framework nature of the
       figure itself (an "up to," not a delivered amount).
+
+# ============================================================
+# 2026-08-27 pass (fourth pass) — ten financings from the 2026-08-13 to
+# 2026-08-27 window, all direct WebFetch/WebSearch this pass unless
+# noted. See nodes.yaml's matching 2026-08-27 section for every new
+# node this tranche instantiates.
+#
+# JUDGMENT CALL flagged for Ben, applied consistently below rather than
+# left ad hoc: two edges this pass are outright company acquisitions
+# (nVent/Maverick Power, Infineon/C2i Semiconductors) — a shape this
+# schema's "asset purchase" type was defined for EPC/construction
+# contracts ("regardless of contract form... asset acquisition, not a
+# service"), not for buying 100% of a company's equity. Applying that
+# same reasoning here (the buyer will operate what it acquires) is the
+# most defensible fit among the existing type enum, but it is a real
+# extension beyond what the type was originally scoped for — flagged,
+# not silently assumed.
+# ============================================================
+- id: nvidia-capital--openai-capital--2026-ohio-guarantee
+  from: nvidia/capital
+  to: openai/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: >
+    NEW — Nvidia's residual-value guarantee backing OpenAI's 20-year
+    lease of ~4.25 IT-GW (with an option to extend to 8 IT-GW) at SB
+    Energy's PORTS-Pike Technology Campus in Pike County, Ohio (the
+    existing sb-energy/datacenter-operation node's own campus). This is
+    NOT a cash investment: Nvidia pays only if OpenAI defaults on rent
+    and SB Energy's recovery (re-leasing or selling the space) falls
+    short of the guaranteed minimum lease value; OpenAI has separately
+    agreed to reimburse and indemnify Nvidia for anything Nvidia
+    actually pays. TYPE JUDGMENT CALL: recorded as type:equity purely to
+    match the existing nvidia-capital--nvidia-2026-compute-financing-platforms
+    edge's precedent for a Nvidia backstop/guarantee that isn't a normal
+    round — "equity" is not a literal fit for a guarantee either there
+    or here. Flagged for Ben: does a guarantee deserve its own type
+    value (parallel to how "grant / subsidy" was added in pass 3)?
+    Nvidia's separate, non-contingent $1.5B cash investment in SB Energy
+    itself is recorded on a different edge (see
+    nvidia-capital--sb-energy-capital--2026-investment).
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 105000000000
+      note: Guarantee obligations "capped at a total of $105 billion,"
+        becoming effective in phases as the leased data centers reach
+        service readiness (first phase expected fiscal 2029); Nvidia
+        also holds an option to extend credit support to roughly 3.8
+        additional GW as the site scales toward 8GW total
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-17'
+    period:
+      start: '2026-08-17'
+      end: null
+      schedule: unscheduled — phased-in as data centers become
+        service-ready, starting fiscal 2029; guarantee terminates once
+        OpenAI achieves a satisfactory credit rating
+    source:
+      label: Nvidia Form 8-K, Q2 FY2027 CFO commentary (SEC filing,
+        direct fetch)
+      url: https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000073/q2fy27cfocommentary.htm
+      figure: "In August 2026, we entered into guarantees to provide
+        credit support on the land, power, and shell buildout to secure
+        approximately 4.25 gigawatts (GW) at SB Energy's PORTS-Pike
+        Technology Campus in Ohio, which will exclusively host NVIDIA
+        infrastructure under 20-year leases to OpenAI... Our guarantee
+        obligations are capped at a total of $105 billion"
+      as_of: '2026-08-17'
+    provenance_class: regulatory filing
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.95
+    rationale: Direct WebFetch of Nvidia's own SEC 8-K exhibit language
+      this pass — a primary regulatory filing, the exact cap figure and
+      mechanism quoted verbatim.
+- id: nvidia-capital--sb-energy-capital--2026-investment
+  from: nvidia/capital
+  to: sb-energy/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — a separate, non-contingent cash investment
+    disclosed the same day as the Ohio guarantee above, distinct from
+    it. SoftBank Group and OpenAI are named as SB Energy's existing
+    investors (see sb-energy/capital's own note on why those two prior
+    stakes are not independently edge-sourced this pass).
+  observations:
+  - value:
+      type: point
+      amount_usd: 1500000000
+      note: "NVIDIA will invest $1.5 billion in SB Energy, joining
+        existing investors SoftBank Group and OpenAI"
+    stage: contract
+    basis: cash
+    as_of: '2026-08-17'
+    period:
+      start: '2026-08-17'
+      end: '2026-08-17'
+      schedule: known
+    source:
+      label: Nvidia Newsroom (company press release, direct fetch)
+      url: https://nvidianews.nvidia.com/news/nvidia-guarantees-sb-energy-s-ports-pike-technology-campus-in-ohio-to-exclusively-host-nvidia-ai-compute
+      figure: NVIDIA will invest $1.5 billion in SB Energy, joining
+        existing investors SoftBank Group and OpenAI; SB Energy will
+        build, own and operate the data center under a 20-year lease to
+        OpenAI
+      as_of: '2026-08-17'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.9
+    rationale: Direct WebFetch of Nvidia's own newsroom release this
+      pass.
+- id: nvidia-capital--poolside-model-training--2026-license
+  from: nvidia/capital
+  to: poolside/model-training
+  type: asset purchase
+  destination_category: other/unallocated
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: >
+    NEW — Nvidia licensing Poolside's "Model Factory" AI
+    model-development pipeline for cash. CATEGORIZATION JUDGMENT CALL,
+    flagged for Ben: none of the nine existing destination_category
+    values cleanly fits a software/IP license (they cover physical
+    silicon, memory, networking, power, land, cooling, labor, purchased
+    capacity, or "other/unallocated") — recorded as other/unallocated
+    rather than forcing it into a physical-goods category it doesn't
+    match. The license is non-exclusive — Poolside remains free to
+    license the same software to other parties.
+  observations:
+  - value:
+      type: point
+      amount_usd: 6000000000
+      note: $6B non-exclusive license of Poolside's Model Factory
+        training system; over 100 (109 per Bloomberg) Poolside
+        engineers moving to Nvidia's Nemotron project; Poolside's three
+        founders remain independent; shareholder letter describes this
+        as "not an acquisition and it is not an acquihire"
+    stage: contract
+    basis: cash
+    as_of: '2026-08-20'
+    period:
+      start: '2026-08-20'
+      end: '2026-08-20'
+      schedule: known
+    source:
+      label: Bloomberg, via Newcomer (Poolside shareholder-letter
+        reporting)
+      url: https://www.newcomer.co/p/sources-poolside-strikes-6-billion
+      figure: non-exclusive licensing deal with Nvidia for $6 billion,
+        plus a $1 billion investment in Poolside at a $12 billion
+        pre-money valuation
+      as_of: '2026-08-20'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.7
+    rationale: Newcomer's reporting traces to Poolside's own shareholder
+      letter (per the article) and is corroborated by Bloomberg,
+      TheNextWeb, Forbes and The Information reporting the same two
+      figures; no company press release was found and independently
+      fetched this pass, capping reliability below the primary tier.
+- id: nvidia-capital--poolside-capital--2026-investment
+  from: nvidia/capital
+  to: poolside/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — a separate equity investment alongside the
+    license above, into the remaining independent Poolside entity. Only
+    Nvidia is named as an investor in every source found this pass, so
+    this is modeled as a direct edge rather than a round node (no
+    co-investor to record via memberships.yaml).
+  observations:
+  - value:
+      type: point
+      amount_usd: 1000000000
+      note: $1B investment in Poolside at a $12B pre-money valuation
+    stage: contract
+    basis: cash
+    as_of: '2026-08-20'
+    period:
+      start: '2026-08-20'
+      end: '2026-08-20'
+      schedule: known
+    source:
+      label: Bloomberg, via Newcomer (Poolside shareholder-letter
+        reporting)
+      url: https://www.newcomer.co/p/sources-poolside-strikes-6-billion
+      figure: a $1 billion investment in Poolside at a $12 billion
+        pre-money valuation
+      as_of: '2026-08-20'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.7
+    rationale: Same sourcing chain and caveats as the license edge above.
+- id: broadcom-2026-anthropic-spv-facility--broadcom-capital--2026-debt
+  from: broadcom/2026-anthropic-spv-facility
+  to: broadcom/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: >
+    NOT a confirmed-closed transaction — every source found this pass
+    frames this as "in discussions"/"in talks" ("targeting," "seeks"),
+    per R-17 recorded at stage:guidance rather than contract. See the
+    round node (nodes.yaml) for the cross-source disagreement on the
+    total figure itself, a genuinely unresolved data point rather than
+    just a closing-status ambiguity.
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 80000000000
+      note: reported as "seeks up to $80 billion in debt for AI chip
+        deal" / "expected to reach upwards of $70 billion"; a junior
+        tranche of roughly $35bn alongside a senior tranche of roughly
+        $45bn is one reported breakdown
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-21'
+    period:
+      start: '2026-08-21'
+      end: null
+      schedule: unscheduled — deal status "in discussions" as of source
+        date
+    source:
+      label: CNBC (sourced reporting)
+      url: https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html
+      figure: Broadcom debt deal expected to reach upwards of $70
+        billion, sources say; senior tranche of roughly $45bn and a
+        junior tranche of about $35bn being targeted
+      as_of: '2026-08-21'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.55
+    rationale: Anonymous-sourced deal reporting, not a company statement
+      or filing; reliability held low both for the sourcing chain and
+      because the deal is explicitly not yet closed.
+  - value:
+      type: upper-bound
+      amount_usd: 100000000000
+      note: >
+        "seeks more than $60bn in debt... figures under discussion
+        could take the total as high as $100bn"; alternate tranche
+        breakdown of a ~$30bn junior tranche alongside a ~$60-70bn
+        senior-secured tranche; a special-purpose vehicle would issue
+        the debt, and "Anthropic does not buy the chips under this
+        arrangement — investors finance the purchase, then lease the
+        hardware to the company"; Blackstone and Apollo Global
+        Management named as the parties in talks to participate,
+        specifically on the junior tranche
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-21'
+    period:
+      start: '2026-08-21'
+      end: null
+      schedule: unscheduled — deal status "in talks" as of source date
+    source:
+      label: TheNextWeb (relaying Bloomberg/FT reporting)
+      url: https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic
+      figure: Broadcom seeks more than $60bn in debt to bankroll AI
+        chips for Anthropic; could reach as high as $100bn
+      as_of: '2026-08-21'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.55
+    rationale: Same discipline as the CNBC observation above — a
+      distinct outlet's figures kept as a separate observation rather
+      than merged, per this file's reconciliation-within-cells
+      convention, since the two disagree on the actual number.
+- id: anthropic-model-training--nscale-datacenter-operation--2026-monarch-lease
+  from: anthropic/model-training
+  to: nscale/datacenter-operation
+  type: capacity/service payment
+  destination_category: purchased compute capacity (services)
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — not in this model's prior coverage. Same
+    capacity/service-payment shape as Anthropic's existing xAI Colossus
+    1 and Google TPU edges; this is Anthropic's largest single
+    infrastructure commitment found this pass.
+  observations:
+  - value:
+      type: point
+      amount_usd: 45000000000
+      note: $45B over six years to rent ~460MW at Nscale's Monarch
+        campus, West Virginia; facility runs Nvidia's Vera Rubin chips,
+        expected online late 2027; a rental of compute capacity, not an
+        equity stake or asset purchase
+    stage: contract
+    basis: cash
+    as_of: '2026-08-26'
+    period:
+      start: '2026-08-26'
+      end: null
+      schedule: known — six-year term; exact start/end dates not
+        disclosed in sources found this pass
+    source:
+      label: CNBC (sourced reporting, corroborated by Bloomberg/VKTR)
+      url: https://www.cnbc.com/2026/08/26/anthropic-and-nscale-strike-45-billion-cloud-deal-sources-say.html
+      figure: Anthropic will pay roughly $45 billion over six years to
+        rent 460 megawatts of compute at Nscale's West Virginia Monarch
+        campus, running Nvidia's Vera Rubin chips
+      as_of: '2026-08-26'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.7
+    rationale: CNBC's own reporting ("sources say") corroborated by
+      Bloomberg (behind a paywall, not independently fetched this pass)
+      and directly fetched VKTR coverage with converging figures; no
+      company press release found and fetched this pass, capping
+      reliability below the primary tier.
+- id: groq-2026-series-a-round--groq-capital--2026-equity
+  from: groq/2026-series-a-round
+  to: groq/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Groq's first financing edge in this model.
+  observations:
+  - value:
+      type: point
+      amount_usd: 350000000
+      note: $350M Series A at a $3.5B valuation, led by Disruptive with
+        planned participation from Nvidia; company disputes the "down
+        round" framing despite the roughly 49% drop from its $6.9B
+        September 2025 mark
+    stage: contract
+    basis: cash
+    as_of: '2026-08-17'
+    period:
+      start: '2026-08-17'
+      end: '2026-08-17'
+      schedule: known
+    source:
+      label: Groq (company newsroom release, direct fetch)
+      url: https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud
+      figure: $350 million Series A fundraise at a $3.5 billion
+        valuation
+      as_of: '2026-08-17'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.9
+    rationale: Direct WebFetch of Groq's own company newsroom release
+      this pass, corroborated by TechCrunch and Bloomberg reporting
+      with converging figures.
+- id: nvidia-capital--lancium-capital--2026-investment
+  from: nvidia/capital
+  to: lancium/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — only Nvidia is named as the new investor in every
+    source found this pass (Lancium's existing Blackstone backing is
+    prior ownership, not part of this round), so this is a direct edge,
+    not a round node.
+  observations:
+  - value:
+      type: point
+      amount_usd: 2000000000
+      note: Initial $2B tranche for roughly a 20% stake in Lancium
+        (valued around $10B); a further $1B tranche is tied to
+        thresholds including grid hookups and could push Nvidia's stake
+        to roughly 28% — that contingent second tranche is NOT included
+        in this point figure. Lancium currently manages 4GW of leased
+        capacity alongside a development pipeline exceeding 15GW of
+        powered land, including the Lancium Clean Campus in Abilene, TX
+        (see lancium/capital's note on the pre-existing Crusoe/Blue Owl
+        JV on that same site)
+    stage: contract
+    basis: cash
+    as_of: '2026-08-09'
+    period:
+      start: '2026-08-09'
+      end: null
+      schedule: known — $2B initial tranche; $1B follow-on tranche
+        unscheduled, contingent on grid-hookup thresholds
+    source:
+      label: Yahoo Finance / The Information (deal reporting)
+      url: https://finance.yahoo.com/technology/ai/articles/nvidia-3-billion-bet-lancium-211209280.html
+      figure: Nvidia to invest an initial $2 billion for roughly a 20%
+        stake in Lancium; an additional $1 billion tied to thresholds
+        including grid hookups; Lancium valued at around $10 billion
+      as_of: '2026-08-09'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.65
+    rationale: Deal reporting relaying The Information's sourcing,
+      corroborated by DataCenterDynamics and StorageReview coverage with
+      converging capacity figures (4GW leased / 15GW+ pipeline); no
+      Nvidia or Lancium company release was found and independently
+      fetched this pass, capping reliability below the primary tier.
+- id: nvidia-capital--cloverleaf-infrastructure-capital--2026-investment
+  from: nvidia/capital
+  to: cloverleaf-infrastructure/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Nvidia's own press release confirms this
+    minority investment closed (not merely "in talks," despite that
+    framing in earlier same-week reporting); the dollar amount itself
+    remains undisclosed by either company.
+  observations:
+  - value:
+      type: scope-qualified
+      amount_usd: null
+      note: Nvidia's own release confirms "a minority investment in
+        Cloverleaf" without a dollar figure; the Wall Street Journal
+        reports the check as "several hundred million dollars" — no
+        exact figure found in any source this pass, recorded as
+        scope-qualified rather than estimated
+    stage: contract
+    basis: cash
+    as_of: '2026-08-21'
+    period:
+      start: '2026-08-21'
+      end: '2026-08-21'
+      schedule: known
+    source:
+      label: NVIDIA / Cloverleaf Infrastructure (joint company press
+        release, PRNewswire, direct fetch)
+      url: https://www.prnewswire.com/news-releases/cloverleaf-infrastructure-forms-strategic-partnership-with-nvidia-to-accelerate-data-center-infrastructure-development-302857329.html
+      figure: NVIDIA made a minority investment in Cloverleaf to further
+        support the build out of AI factories; no dollar figure
+        disclosed
+      as_of: '2026-08-21'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.85
+    rationale: Direct WebFetch of the joint company press release this
+      pass; reliability held below 0.9 only because the release itself
+      declines to state a dollar figure, which this program's discipline
+      requires flagging rather than backfilling from a secondary WSJ
+      estimate.
+- id: ext-public-equity-market--alibaba-capital--2026-hk-placement
+  from: ext/public-equity-market
+  to: alibaba/capital
+  type: equity
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — Alibaba's own capital node already exists (as an
+    investor in the unrelated moonshot-ai/2024-02-alibaba-round); this
+    is a separate edge for Alibaba as the RECEIVER of new capital,
+    modeled the same way as CoreWeave's/Intel's public-market raises
+    (ext/public-equity-market as the anonymous buyer-class population
+    node).
+  observations:
+  - value:
+      type: point
+      amount_usd: 10200000000
+      note: HK$80 billion (~$10.21B) primary share placement at HK$112.70
+        per share (an 8.4% discount to the prior close) — the largest
+        primary follow-on offering by any Hong Kong-listed company to
+        date; 100% earmarked for AI-related development per the
+        placement's own stated use of proceeds. Same-week context, not
+        part of this edge's own value - Alibaba's fiscal Q1 2026
+        (June-quarter) net profit fell 75% y/y and free cash flow showed
+        a $6.6B outflow, both attributed primarily to AI capex, which
+        rose 75% y/y to roughly $10B for the quarter
+    stage: contract
+    basis: cash
+    as_of: '2026-08-24'
+    period:
+      start: '2026-08-24'
+      end: '2026-08-24'
+      schedule: known
+    source:
+      label: Reuters, via Investing.com (deal reporting)
+      url: https://www.investing.com/news/stock-market-news/alibaba-stock-slumps-in-hong-kong-after-102-billion-share-placement-to-fund-ai-4872593
+      figure: Alibaba's HK$80 billion ($10.21 billion) share placement
+        finalized at HK$112.70 apiece, an 8.4% discount, to fund
+        AI-related development; quarterly net profit fell 75% y/y
+        primarily due to AI-related spending
+      as_of: '2026-08-24'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.75
+    rationale: Reuters wire reporting relayed via Investing.com,
+      directly fetched this pass, corroborated by CNBC and Bloomberg
+      coverage (Bloomberg not independently fetched — paywalled) with
+      converging figures; the $6.6B cash-outflow figure specifically is
+      corroborated by a second, independently fetched Bloomberg-sourced
+      relay.
+- id: nvent-capital--maverick-power-power-distribution-manufacturing--2026-acquisition
+  from: nvent/capital
+  to: maverick-power/power-distribution-manufacturing
+  type: asset purchase
+  destination_category: power infrastructure
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: >
+    NEW — an outright company acquisition, not a minority investment;
+    see this file's header note on the type:asset purchase extension
+    this represents. nVent plans to fund the deal with cash on hand and
+    new debt (Bank of America providing committed bridge financing) —
+    that debt is NOT independently edge-sourced this pass since no
+    dollar breakdown of cash-vs-debt was disclosed.
+  observations:
+  - value:
+      type: point
+      amount_usd: 1750000000
+      note: $1.75B purchase price, subject to customary adjustments;
+        approximately 11.5x anticipated 2026 adjusted EBITDA; expected
+        to close Q4 2026 subject to regulatory approval
+    stage: contract
+    basis: cash
+    as_of: '2026-08-24'
+    period:
+      start: '2026-08-24'
+      end: '2026-08-24'
+      schedule: known
+    source:
+      label: nVent Electric plc (investor-relations press release,
+        direct fetch)
+      url: https://investors.nvent.com/press-releases/press-release-details/2026/nVent-to-Acquire-Maverick-Power/default.aspx
+      figure: nVent agreed to acquire Maverick Power for $1.75 billion,
+        subject to customary adjustments
+      as_of: '2026-08-24'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.9
+    rationale: Direct WebFetch of nVent's own investor-relations press
+      release this pass.
+  - value:
+      type: upper-bound
+      amount_usd: 550000000
+      note: potential additional consideration of up to $550M in cash,
+        contingent on Maverick Power achieving certain performance
+        metrics in 2027 and 2028 — an earnout, not delivered
+        consideration
+    stage: commitment
+    basis: cash
+    as_of: '2026-08-24'
+    period:
+      start: '2027-01-01'
+      end: '2028-12-31'
+      schedule: known — tied to 2027 and 2028 performance metrics
+    source:
+      label: nVent Electric plc (investor-relations press release,
+        direct fetch)
+      url: https://investors.nvent.com/press-releases/press-release-details/2026/nVent-to-Acquire-Maverick-Power/default.aspx
+      figure: potential additional consideration of up to $550 million
+        in cash based on achieving certain performance metrics in 2027
+        and 2028
+      as_of: '2026-08-24'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.9
+    rationale: Same source as the base purchase-price observation.
+- id: infineon-capital--c2i-semiconductors-chip-design--2026-acquisition
+  from: infineon/capital
+  to: c2i-semiconductors/chip-design
+  type: asset purchase
+  destination_category: compute silicon & systems
+  commitment_ref: null
+  coverage_state: unmeasured
+  new_this_pass: true
+  coverage_note: >
+    NEW — same type:asset purchase extension judgment call as the
+    nVent/Maverick edge above (an outright company acquisition). Every
+    source found this pass explicitly states financial terms were not
+    disclosed; recorded coverage_state:unmeasured rather than estimated,
+    per this program's standing discipline.
+  observations:
+  - value:
+      type: point
+      amount_usd: null
+      note: Financial terms not disclosed. Infineon is acquiring C2i
+        Semiconductors (Bengaluru, India), a specialist in
+        software-defined multiphase controllers and smart power stages
+        for AI data center servers, to expand its AI/HPC power-delivery
+        R&D and its India engineering presence; expected to close Q3
+        2026
+    stage: contract
+    basis: n/a
+    as_of: '2026-08-24'
+    period:
+      start: '2026-08-24'
+      end: '2026-08-24'
+      schedule: known — deal announced; close expected Q3 2026
+    source:
+      label: Infineon Technologies (company press release)
+      url: https://www.infineon.com/press-release/2026/infpr202608-129
+      figure: Infineon acquires C2i Semiconductors to expand its
+        innovation capabilities in AI data center power management
+        solutions; financial terms not disclosed
+      as_of: '2026-08-24'
+    provenance_class: company statement
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.75
+    rationale: Company press release confirmed via search-result
+      summary and corroborated by DataCenterDynamics, New Electronics
+      and eeNews Europe trade-press coverage; the release's own full
+      text returned only navigation content on direct WebFetch this
+      pass (HTTP content-extraction limitation, not a doubt about the
+      release), capping reliability below the direct-primary-fetch
+      tier used elsewhere this pass.
+- id: ext-bond-market--softbank-capital--2026-retail-bond
+  from: ext/bond-market
+  to: softbank/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: NEW — SoftBank's own existing capital node (tied to its
+    Stargate JV stake); this is a new, separate retail bond issuance,
+    the biggest by any issuer in Japan's retail market.
+  observations:
+  - value:
+      type: point
+      amount_usd: 6300000000
+      note: Record ¥1 trillion (~$6.3B) retail bond sale in Japan;
+        7-year notes with an indicative coupon range of 4.3%-4.9%,
+        expected to price 2026-09-04, retail offering runs 09-07
+        through 09-16, issuance 09-17, maturing 2033-09-16; proceeds for
+        AI-related investments (OpenAI) and to refinance roughly ¥400B
+        of retail bonds maturing in September
+    stage: commitment
+    basis: n/a
+    as_of: '2026-08-24'
+    period:
+      start: '2026-09-17'
+      end: '2033-09-16'
+      schedule: known — pricing 09-04, retail subscription window
+        09-07 to 09-16, issuance 09-17, seven-year maturity
+    source:
+      label: Bloomberg, via Japan Times (deal reporting)
+      url: https://www.japantimes.co.jp/business/2026/08/24/companies/softbank-plan-bond-sale/
+      figure: SoftBank Group Corp. plans a record ¥1 trillion ($6.3
+        billion) retail bond sale, the biggest by any issuer in Japan,
+        7-year bonds priced Sept. 4 with an indicative coupon of
+        4.3%-4.9%, to fund AI-related investment commitments to OpenAI
+      as_of: '2026-08-24'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.7
+    rationale: Bloomberg-sourced wire reporting relayed via Japan Times,
+      corroborated by Reuters/Free Press Journal/MarketScreener coverage
+      with converging figures; not an independently fetched SoftBank
+      prospectus or company filing this pass.
+- id: ext-bond-market--softbank-capital--2026-wholesale-bond-talks
+  from: ext/bond-market
+  to: softbank/capital
+  type: debt
+  destination_category: n/a — financing
+  commitment_ref: null
+  coverage_state: measured
+  new_this_pass: true
+  coverage_note: >
+    NOT a confirmed transaction — recorded at stage:guidance (the
+    softest stage this schema's own vocabulary offers, one step earlier
+    than the stage:guidance already used for other reported-but-unclosed
+    deals like the Vantage Data Centers facility), since SoftBank itself
+    describes this as "considering various options" with "nothing...
+    decided yet" per its own spokesperson. A SEPARATE, later-stage deal
+    from the retail bond above — this would refinance SoftBank's $40B
+    bridge loan for its OpenAI investment, not the retail bonds
+    maturing in September.
+  observations:
+  - value:
+      type: upper-bound
+      amount_usd: 20000000000
+      note: SoftBank in talks with investment banks about a potential
+        $10B-$20B bond offering (dollars and euros, possibly as early
+        as September) to partly refinance a $40B bridge loan taken
+        earlier in 2026 for its OpenAI investment; SoftBank has
+        committed nearly $65B to OpenAI, aiming to complete that
+        investment by October 2026; a SoftBank spokesperson said the
+        company is "considering various options" and "nothing has been
+        decided yet"
+    stage: guidance
+    basis: n/a
+    as_of: '2026-08-26'
+    period:
+      start: '2026-08-26'
+      end: null
+      schedule: unscheduled — "could come as early as September,"
+        explicitly not decided as of source date
+    source:
+      label: Bloomberg, via Yahoo Finance (deal reporting)
+      url: https://finance.yahoo.com/technology/ai/articles/softbank-mulls-20-billion-bond-045551527.html
+      figure: SoftBank Group Corp. talking with investment banks about a
+        potential $10 billion to $20 billion bond offering to help
+        refinance a loan for its OpenAI investment; talks ongoing,
+        nothing decided
+      as_of: '2026-08-26'
+    provenance_class: named-source press
+    capture_ref: session-webfetch:2026-08-27
+    reliability: 0.65
+    rationale: Bloomberg-sourced wire reporting relayed via Yahoo
+      Finance, corroborated by Outlook Business/BigGo/Hokanews coverage
+      with converging figures; explicitly pre-decisional per SoftBank's
+      own spokesperson quote, which is why this sits at stage:guidance
+      rather than stage:commitment despite the specific dollar range.

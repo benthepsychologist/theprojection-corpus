@@ -94,6 +94,7 @@ nodes:
   note: Population node, not a named entity — IPO buyers as a class.
   instantiated_by:
   - ext-public-equity-market--coreweave-capital--2025-ipo
+  - ext-public-equity-market--alibaba-capital--2026-hk-placement
 - id: coreweave/capital
   entity: CoreWeave
   activity: capital (treasury/financing facet)
@@ -124,6 +125,7 @@ nodes:
   instantiated_by:
   - amd-chip-design--openai-capital--2025-warrant
   - stargate/2025-jv-financing
+  - nvidia-capital--openai-capital--2026-ohio-guarantee
 - id: anthropic/model-training
   entity: Anthropic
   activity: model training (compute consumption)
@@ -131,6 +133,7 @@ nodes:
   instantiated_by:
   - anthropic-model-training--google-cloud-capacity--2025-tpu
   - anthropic-model-training--xai-datacenter-operation--2026-colossus1-lease
+  - anthropic-model-training--nscale-datacenter-operation--2026-monarch-lease
 - id: google/cloud-capacity
   entity: Google
   activity: cloud/TPU capacity provision (seller side)
@@ -571,7 +574,10 @@ nodes:
     — the same worth-Ben's-eye pattern cut-core-buildout.yaml already flags for
     Amazon/Google, now sharper and broader. See that filter's notes.
   instantiated_by: [inflection/2023-round, crusoe/2024-series-d-round, world-labs/2024-seed-round,
-    mistral/2025-series-c-round, synthesia/2026-series-e-round]
+    mistral/2025-series-c-round, synthesia/2026-series-e-round, nvidia-capital--openai-capital--2026-ohio-guarantee,
+    nvidia-capital--sb-energy-capital--2026-investment, nvidia-capital--poolside-model-training--2026-license,
+    nvidia-capital--poolside-capital--2026-investment, nvidia-capital--lancium-capital--2026-investment,
+    nvidia-capital--cloverleaf-infrastructure-capital--2026-investment, groq/2026-series-a-round]
 - id: reid-hoffman/capital
   entity: Reid Hoffman
   activity: capital (individual angel investment facet)
@@ -1164,7 +1170,7 @@ nodes:
   entity: Blackstone
   activity: capital (private-credit lending facet)
   coverage_state: measured
-  instantiated_by: [coreweave/2023-blackstone-magnetar-facility]
+  instantiated_by: [coreweave/2023-blackstone-magnetar-facility, broadcom/2026-anthropic-spv-facility]
 - id: magnetar-capital/capital
   entity: Magnetar Capital
   activity: capital (private-credit lending facet)
@@ -1227,7 +1233,8 @@ nodes:
     participants, exactly as IPO underwriters are not modeled on the
     CoreWeave IPO edge.
   instantiated_by: [ext-bond-market--coreweave-capital--2025-senior-notes,
-    ext-bond-market--meta-capital--2025-senior-notes, ext-bond-market--oracle-capital--2026-senior-notes]
+    ext-bond-market--meta-capital--2025-senior-notes, ext-bond-market--oracle-capital--2026-senior-notes,
+    ext-bond-market--softbank-capital--2026-retail-bond, ext-bond-market--softbank-capital--2026-wholesale-bond-talks]
 - id: oracle/capital
   entity: Oracle
   activity: capital (treasury/financing facet)
@@ -1264,7 +1271,8 @@ nodes:
     this pass (secondary-sourced, "expected to be," not independently
     verified); flagged as an open item for a follow-up capture pass rather
     than built on thin sourcing.
-  instantiated_by: [stargate/2025-jv-financing]
+  instantiated_by: [stargate/2025-jv-financing, ext-bond-market--softbank-capital--2026-retail-bond,
+    ext-bond-market--softbank-capital--2026-wholesale-bond-talks]
 - id: mgx/capital
   entity: MGX
   activity: capital (sovereign AI-investment vehicle facet — UAE, co-founded
@@ -1324,7 +1332,7 @@ nodes:
   entity: Alibaba
   activity: capital (strategic investment facet)
   coverage_state: measured
-  instantiated_by: [moonshot-ai/2024-02-alibaba-round]
+  instantiated_by: [moonshot-ai/2024-02-alibaba-round, ext-public-equity-market--alibaba-capital--2026-hk-placement]
 - id: hongshan/capital
   entity: HongShan (formerly Sequoia Capital China)
   activity: capital (VC investment facet)
@@ -1694,8 +1702,11 @@ nodes:
   coverage_state: unmeasured
   note: Minimal node per Ruling 1 — created only as a named co-arranger on
     nvidia/2026-compute-financing-platforms; no independent research on
-    Apollo itself done this pass.
-  instantiated_by: []
+    Apollo itself done this pass. Second appearance this build (2026-08-27
+    pass) as a reported (not-yet-confirmed) junior-tranche participant on
+    broadcom/2026-anthropic-spv-facility — still no independent research
+    on Apollo itself.
+  instantiated_by: [broadcom/2026-anthropic-spv-facility]
 - id: ext/brookfield-asset-management
   entity: Brookfield Asset Management
   activity: capital
@@ -1798,3 +1809,263 @@ nodes:
     figure: $917 million leveraged loan, led by Morgan Stanley, nearly
       $2 billion oversubscribed
     as_of: '2026-08-12'
+
+# ============================================================
+# 2026-08-27 pass (fourth pass) — ten financings from the 2026-08-13
+# to 2026-08-27 window. Every new figure below carries a real, checked
+# citation (direct WebFetch this pass unless noted); genuinely
+# undisclosed terms are recorded coverage_state: unmeasured rather than
+# estimated, per this program's standing discipline.
+# ============================================================
+- id: poolside/capital
+  entity: Poolside AI
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: >
+    NEW this pass — Poolside's first node in this model. Poolside's own
+    shareholder letter describes the Nvidia arrangement as "not an
+    acquisition and it is not an acquihire" — Poolside continues
+    operating independently; its three founders (Eiso Kant, Jason
+    Warner, Margarida Garcia) remain with the company rather than
+    joining Nvidia. Poolside reportedly plans to distribute the $6B
+    license proceeds (recorded on poolside/model-training, not here) to
+    its own investors by the end of 2027.
+  instantiated_by:
+  - nvidia-capital--poolside-capital--2026-investment
+- id: poolside/model-training
+  entity: Poolside AI
+  activity: model training (Model Factory — the internal AI
+    model-development pipeline licensed to Nvidia)
+  coverage_state: measured
+  note: >
+    NEW this pass. Distinct facet from poolside/capital — this node
+    represents the IP asset Nvidia licensed (Poolside's "Model Factory"
+    training system), not Poolside's treasury. The license is
+    non-exclusive; Poolside remains free to license the same software
+    elsewhere. Over 100 Poolside engineers (109 per Bloomberg) are
+    moving to Nvidia to work on its Nemotron open-weight model project
+    under this same arrangement — a labor/talent transfer this pass
+    does NOT separately edge-model (no dollar figure attaches to the
+    staff moves themselves; the $6B license figure already reflects the
+    whole arrangement per the sources found).
+  instantiated_by:
+  - nvidia-capital--poolside-model-training--2026-license
+- id: broadcom/capital
+  entity: Broadcom
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: >
+    NEW this pass — Broadcom's first node in this model. Only the NEW
+    (2026-08-21-reported) $70-100B-range SPV debt facility is modeled
+    here; the antecedent $35B "AI XPV" partnership Broadcom, Apollo and
+    Blackstone announced in June 2026 (the facility's first tranche,
+    ~1GW) is referenced for context on the round node below but is NOT
+    independently edge-sourced this pass — a real coverage gap flagged
+    for a follow-up pass, not silently dropped. broadcom/chip-design
+    (the facet that would carry Broadcom's actual custom-silicon
+    revenue from Anthropic) remains uninstantiated.
+  instantiated_by:
+  - broadcom-2026-anthropic-spv-facility--broadcom-capital--2026-debt
+- id: nscale/datacenter-operation
+  entity: Nscale
+  activity: datacenter operation (seller/landlord side — Monarch campus,
+    West Virginia)
+  coverage_state: measured
+  note: >
+    NEW this pass — Nscale's first node in this model. Monarch spans
+    2,250 acres with a theoretical capacity exceeding 8GW; this deal
+    covers approximately 460MW of it, running Nvidia's Vera Rubin chips
+    starting late 2027. Microsoft reportedly signed a letter of intent
+    for the same site in March 2026 and withdrew during summer 2026,
+    before this Anthropic deal closed — recorded here as context only;
+    no Microsoft dollar figure was ever attached to that withdrawn LOI,
+    so it is not edge-modeled.
+  instantiated_by:
+  - anthropic-model-training--nscale-datacenter-operation--2026-monarch-lease
+- id: groq/capital
+  entity: Groq
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: >
+    NEW this pass — Groq's first node in this model. Groq's own release
+    frames this round as valuing the "post-Nvidia-licensing-deal version
+    of Groq," following founder/CEO Jonathan Ross and other staff
+    departing to Nvidia earlier in 2026 under a separate ~$20B
+    licensing deal — that earlier deal is NOT independently edge-sourced
+    this pass (referenced only as context for the valuation reset, same
+    coverage-gap discipline as the Broadcom/AI-XPV note above). Groq's
+    own spokesperson explicitly disputes the "down round" framing even
+    though the resulting $3.5B valuation is roughly half its $6.9B
+    September 2025 mark.
+  instantiated_by:
+  - groq-2026-series-a-round--groq-capital--2026-equity
+- id: disruptive/capital
+  entity: Disruptive
+  activity: capital (VC investment facet)
+  coverage_state: unmeasured
+  note: Minimal node per Ruling 1 — created only as lead investor on
+    groq/2026-series-a-round; no independent research on Disruptive
+    itself done this pass. Disruptive's founder, Alex Davis, is reported
+    as Groq's executive chairman and CEO.
+  instantiated_by: []
+- id: lancium/capital
+  entity: Lancium
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: >
+    NEW this pass — Lancium's first node in this model, though its
+    flagship "Lancium Clean Campus" (Abilene, TX) already appeared BY
+    NAME, unlinked to any node, inside crusoe/2024-abilene-jv-financing's
+    own note: Lancium is the underlying powered-land developer/landlord
+    of that campus; Crusoe is the operator/tenant financed there by a
+    separate Blue Owl Capital JV. Two different money flows onto the
+    same physical site are now both represented. Lancium is a
+    Blackstone portfolio company (Blackstone Energy Transition Partners
+    / Blackstone Multi-Asset Investing) — that existing Blackstone
+    ownership is NOT part of this new Nvidia money and is not
+    edge-modeled here.
+  instantiated_by:
+  - nvidia-capital--lancium-capital--2026-investment
+- id: cloverleaf-infrastructure/capital
+  entity: Cloverleaf Infrastructure
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: >
+    NEW this pass. Cloverleaf sells "powered land" development rights to
+    data center developers (over 7GW sold to date, including Wisconsin
+    sites for Oracle and OpenAI) rather than generating power itself —
+    the same commercial model as Lancium, a separate company. Nvidia's
+    own press release confirms a minority investment but does not
+    disclose the amount; the Wall Street Journal figure ("several
+    hundred million dollars") is the only figure found this pass.
+  instantiated_by:
+  - nvidia-capital--cloverleaf-infrastructure-capital--2026-investment
+- id: nvent/capital
+  entity: nVent Electric plc
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: NEW this pass — nVent's first node in this model.
+  instantiated_by:
+  - nvent-capital--maverick-power-power-distribution-manufacturing--2026-acquisition
+- id: maverick-power/power-distribution-manufacturing
+  entity: Maverick Power
+  activity: power distribution & infrastructure manufacturing (data
+    center power equipment — McKinney, TX)
+  coverage_state: measured
+  note: NEW this pass. Approximately 900 employees across Texas and
+    Arizona; approximately $700M of expected 2026 revenue per nVent's
+    own release.
+  instantiated_by:
+  - nvent-capital--maverick-power-power-distribution-manufacturing--2026-acquisition
+- id: infineon/capital
+  entity: Infineon Technologies
+  activity: capital (treasury/financing facet)
+  coverage_state: measured
+  note: NEW this pass — Infineon's first node in this model.
+  instantiated_by:
+  - infineon-capital--c2i-semiconductors-chip-design--2026-acquisition
+- id: c2i-semiconductors/chip-design
+  entity: C2i Semiconductors
+  activity: chip design (software-defined multiphase controllers & smart
+    power stages for AI servers — Bengaluru, India)
+  coverage_state: unmeasured
+  note: NEW this pass. Deal terms fully undisclosed in every source
+    found this pass — recorded coverage_state unmeasured rather than
+    estimated, per this program's standing discipline. Expected to
+    close Q3 2026.
+  instantiated_by:
+  - infineon-capital--c2i-semiconductors-chip-design--2026-acquisition
+- id: sb-energy/capital
+  entity: SB Energy
+  activity: capital (treasury/financing facet — distinct from the
+    existing sb-energy/datacenter-operation, its Piketon, OH
+    campus-developer facet)
+  coverage_state: measured
+  note: >
+    NEW this pass. Nvidia's own press release names SoftBank Group and
+    OpenAI as SB Energy's existing investors alongside this new Nvidia
+    stake — neither of those two prior stakes is independently
+    dollar-sourced or edge-modeled this pass (SoftBank's SB Energy stake
+    predates this model and is an ownership fact, not a dated
+    transaction found this pass; OpenAI's is likewise unsourced as a
+    dollar figure) — flagged as a coverage gap, not silently omitted.
+  instantiated_by:
+  - nvidia-capital--sb-energy-capital--2026-investment
+
+# ============================================================
+# Round nodes, 2026-08-27 pass.
+# ============================================================
+- id: broadcom/2026-anthropic-spv-facility
+  kind: round
+  company: Broadcom (special-purpose-vehicle borrower, financing custom
+    AI-chip/networking capacity leased to Anthropic)
+  date: '2026-08-21'
+  round_type: special-purpose-vehicle senior/junior debt facility
+    (reported "in discussions"/"in talks" — not confirmed closed as of
+    the sources found this pass)
+  total_amount_usd: null
+  leads: []
+  note: >
+    STRUCTURAL JUDGMENT CALL, flagged rather than silently resolved
+    (same practice as the Stargate leads question, PRINCIPLES.md P-02):
+    the total size is reported inconsistently across the outlets found
+    this pass — "seeks up to $80 billion" per one figure in circulation,
+    "seeks more than $60bn... could take the total as high as $100bn"
+    per a second, with a tranche breakdown reported as either roughly
+    $30B junior alongside $60-70B senior, OR roughly $45B senior
+    alongside $35B junior, depending on the outlet. Given genuine
+    cross-source disagreement on the number itself (not just on deal
+    status), total_amount_usd is left null rather than picking one
+    figure or averaging; the edge observations below record the widest
+    bound found ($100B, type upper-bound) with the narrower ranges
+    preserved in their own notes. No source names a lead — Blackstone
+    and Apollo Global Management are reported specifically as the
+    JUNIOR-tranche capital providers, a structural fact this schema's
+    role field cannot carry (role only distinguishes lead/participant,
+    never tranche seniority) — recorded here in prose rather than
+    forcing a mis-fit into role:lead. This extends the June 2026 "AI
+    XPV" partnership (Broadcom + Apollo + Blackstone, a $35B opening
+    transaction, ~1GW) toward a stated 20GW-by-2028 target; that
+    opening $35B transaction is NOT independently edge-sourced this
+    pass (see broadcom/capital's own note).
+  sources:
+  - label: CNBC (sourced reporting)
+    url: https://www.cnbc.com/2026/08/21/broadcom-debt-deal-expected-to-reach-upwards-of-70-billion-sources.html
+    figure: Broadcom debt deal expected to reach upwards of $70 billion,
+      sources say
+    as_of: '2026-08-21'
+  - label: TheNextWeb (relaying Bloomberg/FT reporting)
+    url: https://thenextweb.com/news/broadcom-60bn-ai-chip-debt-anthropic
+    figure: Broadcom seeks more than $60bn in debt; figures under
+      discussion could take the total as high as $100bn; a special
+      purpose vehicle would issue the debt; Blackstone and Apollo
+      Global Management in talks to take part
+    as_of: '2026-08-21'
+- id: groq/2026-series-a-round
+  kind: round
+  company: Groq
+  date: '2026-08-17'
+  round_type: Series A (Groq's own label for this post-Nvidia-licensing
+    valuation-reset round)
+  total_amount_usd: 350000000
+  leads: [disruptive/capital]
+  note: >
+    NEW this pass. Groq's own release states plainly that "Disruptive
+    led the round with planned participation from NVIDIA" — a clean
+    single lead plus one named participant, no co-lead ambiguity.
+    Values Groq at $3.5B, down from a $6.9B mark in September 2025;
+    Groq's own spokesperson disputes the "down round" framing (see
+    groq/capital's note). Proceeds fund Groq's pivot from AI-chip design
+    to operating Nvidia-based neocloud infrastructure, scaling from
+    54MW toward a planned 200MW+ by 2027.
+  sources:
+  - label: Groq (company newsroom release)
+    url: https://groq.com/newsroom/groq-closes-usd350-million-series-a-building-the-world-s-leading-ai-inference-cloud
+    figure: $350 million Series A fundraise at a $3.5 billion valuation,
+      led by Disruptive with planned participation from NVIDIA
+    as_of: '2026-08-17'
+  - label: TechCrunch (deal reporting, valuation-history context)
+    url: https://techcrunch.com/2026/08/17/groq-raises-350m-to-fuel-its-pivot-from-ai-chips-to-neocloud/
+    figure: valued at $3.5 billion, down from $6.9 billion in September
+      2025; company disputes the "down round" characterization
+    as_of: '2026-08-17'

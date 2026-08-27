@@ -106,6 +106,74 @@ fetched citation; every referential edge/membership resolves to a real
 node id (swept via `yaml.safe_load` + a full from/to/leads integrity
 check after every write this pass).
 
+**Fourth pass** (2026-08-27, an undocumented interim commit
+`e58a324` on 2026-08-13 had already added five more financings —
+Nvidia's $500B six-firm compute-financing-platform MOU, CoreWeave's
+second Q2 debt facility, Intel's first capital node, Lambda's
+leveraged loan, TSMC's capex approval, and Google's targeted bond —
+before this pass's own starting point of 189 nodes/72 edges/114
+memberships; this write-up covers only the new fourth-pass work).
+Ten real, cited financings from the 2026-08-13 to 2026-08-27 window:
+Nvidia's $105B residual-value guarantee backing OpenAI's 20-year Ohio
+data-center leases (plus a separate $1.5B Nvidia cash investment in
+the landlord, SB Energy) — both sourced directly from Nvidia's own SEC
+8-K exhibit and newsroom release; Nvidia's $6B Poolside "Model Factory"
+license plus a separate $1B Poolside equity investment; Broadcom's
+reported (not yet closed) $70-100B SPV debt package for Anthropic's
+chip capacity, with Apollo and Blackstone named as junior-tranche
+capital — modeled with the Ruling-4 round-node/membership pattern,
+total left `null` given genuine cross-source disagreement on the
+actual figure; Anthropic's $45B/6-year, ~460MW Nscale compute lease
+(West Virginia's Monarch campus, Nvidia Vera Rubin chips); Groq's
+$350M Series A down-round ($3.5B valuation, down from $6.9B, led by
+Disruptive with Nvidia participating) as it pivots to a neocloud;
+Nvidia's $2B Lancium investment (~20% stake, tied to the same Abilene,
+TX "Lancium Clean Campus" already referenced unlinked inside Crusoe's
+2024 JV note) and its confirmed-but-undisclosed-amount minority stake
+in Cloverleaf Infrastructure; Alibaba's $10.2B Hong Kong share
+placement (100% earmarked for AI, alongside a 75% profit decline and a
+$6.6B free-cash outflow the same quarter); nVent Electric's $1.75B
+(+$550M earnout) acquisition of Maverick Power; Infineon's acquisition
+of C2i Semiconductors (terms fully undisclosed — recorded
+`coverage_state: unmeasured`); and two new debt edges off SoftBank's
+existing capital node — a ¥1T (~$6.3B) retail bond pricing 09-04, and
+a separate $10-20B wholesale bond still at the "considering options"
+talks stage (`stage: guidance`), to refinance SoftBank's OpenAI bridge
+loan. Net: **nodes.yaml now carries 204 nodes** (+15), **edges.yaml 86
+edges** (+14), **memberships.yaml 118 `is_member_of` edges** (+4), two
+new round nodes (Broadcom's SPV facility, Groq's Series A). Every new
+figure carries a real, fetched citation; unmeasured/undisclosed terms
+(C2i's deal terms; Cloverleaf's exact check size) are recorded as such
+rather than estimated; every referential edge/membership/leads
+reference resolves to a real node id (swept via `yaml.safe_load` + a
+full from/to/leads/partners integrity check after every write this
+pass — this sweep also surfaced two PRE-EXISTING, not-this-pass
+`instantiated_by` references on `amazon/ai-compute-procurement` and
+`talen-energy/capital` pointing at an edge id that doesn't exist in
+`edges.yaml`; left alone as out of this pass's scope, flagged for a
+future cleanup pass).
+
+**Held for Ben this pass** (genuine schema judgment calls, applied
+with the most defensible available choice and flagged inline in the
+YAML at the exact spot, not resolved unilaterally): (1) whether a
+Nvidia-style backstop/guarantee (the Ohio guarantee, and the earlier
+compute-financing-platforms edge it was modeled after) deserves its
+own edge `type` value the way `grant / subsidy` was added in pass
+three, rather than reusing `type: equity` as a loose fit; (2) whether
+`type: asset purchase` — originally scoped to EPC/construction
+contracts — should extend to outright whole-company M&A (applied this
+pass to nVent/Maverick Power and Infineon/C2i Semiconductors); (3)
+which `destination_category` an IP/software license purchase (the
+Poolside Model Factory license) belongs under, given none of the nine
+existing values fit a non-physical asset — recorded `other/unallocated`
+this pass; (4) whether `cut:core-buildout` (still v3, untouched this
+pass per instructions) should be bumped to v4 to add several
+plausible new members — Broadcom and Groq as AI chip lines, Nscale,
+Lancium and Cloverleaf Infrastructure as datacenter builders/AI-power
+projects, and arguably Poolside as a frontier lab — all of which sit
+outside the filter entirely right now, neither `members` nor
+`explicitly_outside`.
+
 ## Discipline (inherited from this repo's root CLAUDE.md, restated here
 because this directory is new)
 

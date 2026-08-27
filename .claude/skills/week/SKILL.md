@@ -100,6 +100,33 @@ only ever grow it.
    collector comes back empty (`fund_flow_reports` may well, both its
    sources are bot-gated as of 2026-07-30), say so in the reading's
    `value` rather than fabricating one.
+4c. **Refresh the q1-flows money-graph** (`research/q1-flows/
+   {nodes,edges,memberships}.yaml` — added 2026-08-27 as a **local
+   extension specific to this instance**, not part of the canonical
+   kestrel template and with no upstream equivalent; a repo-specific
+   research program, see `research/README.md`). Scan the week's own
+   daily digests (already-curated — no fresh sweep needed) for named
+   financing events crossing the $100M materiality floor (Ruling 2 in
+   `INBOX/2026-08-03-q1-skeleton-v3.md`): equity rounds, debt issuances/
+   bond sales, M&A/asset purchases, anchor-lease/capacity deals, and
+   guarantees. Add each as a new node/edge/membership following
+   `research/PRINCIPLES.md` (P-01: cardinality-correct fields, e.g.
+   `leads` is always a list; P-02: a structured field like `role: lead`
+   records what a source explicitly says, never an inference) and the
+   frozen R-01–R-20 rulings register — real cited sources only, record
+   `unmeasured` rather than fabricate a figure or URL. This is a
+   lighter, incremental top-up, not a full research pass: apply
+   established principles/rulings directly; only a genuinely novel
+   schema question — one no existing principle or ruling already
+   resolves — gets flagged and held for Ben rather than decided
+   unilaterally, the same discipline the dated passes in
+   `research/README.md` already follow. After updating the data,
+   hand-update `theprojection-site/content/research/q1.md`'s topline
+   table/counts to match (no automated generation yet — a design
+   proposal for making the page's claims clickable down to their
+   sources, closing this loop for good, is open and separate from this
+   step). Validate every YAML file with `yaml.safe_load` after editing,
+   same as any other file in `research/`.
 5. **Radar upkeep** — update each worked question's Working notes; flag any
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance

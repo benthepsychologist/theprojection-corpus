@@ -854,3 +854,43 @@ memberships:
   role: participant
   amount_usd: 3000000000
   source_ref: xai/2026-series-e-round#sources[0]
+
+# ============================================================
+# 2026-08-27 pass (fourth pass) — two new round nodes with 2+ named
+# parties: Broadcom's Anthropic-chip SPV debt facility (Ruling 4 debt
+# treatment) and Groq's Series A. See nodes.yaml/edges.yaml's matching
+# 2026-08-27 sections.
+# ============================================================
+
+# --- broadcom/2026-anthropic-spv-facility --- (no lead named; Apollo
+# and Blackstone reported specifically as junior-tranche capital — a
+# tranche-seniority fact this role field cannot carry, see the round
+# node's own note in nodes.yaml)
+- id: ext-apollo-global-management--is-member-of--broadcom-2026-anthropic-spv-facility
+  from: ext/apollo-global-management
+  to: broadcom/2026-anthropic-spv-facility
+  role: participant
+  amount_usd: null
+  source_ref: broadcom/2026-anthropic-spv-facility#sources[1]
+- id: blackstone-capital--is-member-of--broadcom-2026-anthropic-spv-facility
+  from: blackstone/capital
+  to: broadcom/2026-anthropic-spv-facility
+  role: participant
+  amount_usd: null
+  source_ref: broadcom/2026-anthropic-spv-facility#sources[1]
+
+# --- groq/2026-series-a-round --- (Disruptive explicitly named as
+# leading the round; Nvidia named as a planned participant, not a
+# co-lead)
+- id: disruptive-capital--is-member-of--groq-2026-series-a-round
+  from: disruptive/capital
+  to: groq/2026-series-a-round
+  role: lead
+  amount_usd: null
+  source_ref: groq/2026-series-a-round#sources[0]
+- id: nvidia-capital--is-member-of--groq-2026-series-a-round
+  from: nvidia/capital
+  to: groq/2026-series-a-round
+  role: participant
+  amount_usd: null
+  source_ref: groq/2026-series-a-round#sources[0]
