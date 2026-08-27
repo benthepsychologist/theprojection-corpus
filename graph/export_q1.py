@@ -80,7 +80,16 @@ for aid, a in q1_entities.items():
         "q1_node_id": meta.get("q1_node_id"),
         "entity_slug": slug,
         "activity": meta.get("activity", ""),
+        # canonical_label groups/sorts facets under their real-world parent
+        # (used for row ordering only); facet_label is this node's OWN
+        # label and is what must actually be displayed -- two different
+        # facets of the same company (e.g. TSMC's treasury arm vs. its fab
+        # construction arm) both collapse to the same canonical_label, and
+        # a canvas showing two boxes both reading "TSMC" is exactly the
+        # same "entity->same-entity" confusion Ben flagged on the claims
+        # side of this same bug, 2026-08-27.
         "canonical_label": canonical_label(aid),
+        "facet_label": a.get("label", a.get("name")),
         "core_buildout": slug in CORE_BUILDOUT,
         "atom_type": "entity",
     }
@@ -132,6 +141,7 @@ def ensure_node(aid):
         "entity_slug": meta.get("entity_slug", ""),
         "activity": meta.get("activity", ""),
         "canonical_label": a.get("label", a.get("name")),
+        "facet_label": a.get("label", a.get("name")),
         "core_buildout": meta.get("entity_slug", "") in CORE_BUILDOUT,
         "atom_type": a.get("atom_type"),
         "external": True,

@@ -115,8 +115,19 @@ for cid in sorted(flow_claim_ids):
         continue
     edge = edge_by_claim[cid]
     recipient_id = strip(edge["target_ref"])
+    source_id = strip(edge["source_ref"])
+    # subject/grouping uses the CANONICAL entity (rolls TSMC's facets up into
+    # one "TSMC" recipient bucket, links /map/tsmc/) -- but the flow's own
+    # description must stay at FACET granularity, or two different facets of
+    # the same company (e.g. TSMC's treasury arm funding TSMC's own fab
+    # construction) both collapse to the same label and read as a nonsense
+    # self-loop ("TSMC → TSMC"), which is exactly the distinction this
+    # research question exists to preserve (money vs. physical buildout are
+    # different questions -- see content/research/q1.md). Found 2026-08-27
+    # when Ben spotted a run of entity->same-entity rows.
     recipient_slug, recipient_label = canonical(recipient_id)
-    source_slug, source_label = canonical(strip(edge["source_ref"]))
+    facet_label = lambda aid: atom_by_id.get(aid, {}).get("label", atom_by_id.get(aid, {}).get("name", aid))
+    source_label, target_label = facet_label(source_id), facet_label(recipient_id)
     meta = c.get("meta", {})
     flow_type = meta.get("flow_type") or "unclassified"
     destination = meta.get("destination_category") or "unclassified"
@@ -146,7 +157,7 @@ for cid in sorted(flow_claim_ids):
         "id": leaf_id,
         "subject": recipient_slug,
         "dimension": "q1-flow",
-        "label": f"{source_label} → {recipient_label}",
+        "label": f"{source_label} → {target_label}",
         "value": lead,
         "basis": lead,
         "confidence": band or "low",
