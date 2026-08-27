@@ -74,6 +74,16 @@ dropped, and side-by-side versioning keeps 1.0.0 records valid. Adopted
 in place: every pass in this graph carries the list (`align_reg02.py`),
 `add.py` writes only the list.
 
+**Formally landed, confirmed 2026-08-27** (cloud-governor's disposition,
+`INBOX/2026-08-27-cloud-governor-akm-round-three-disposition.md`, now
+`INBOX/done/`): `extraction_pass@1.1.0` registered exactly as described
+above — no local divergence remains on this field. One thing the
+disposition flagged worth carrying here: `relationship.predicate_id` is a
+declared foreign key **never resolved at validation time** upstream — a
+relationship naming an unregistered predicate would validate cleanly
+there. `graph/validate.py` now checks this locally (a `KNOWN_PREDICATES`
+whitelist), since nothing else does.
+
 ## What does NOT live here
 
 `cut:core-buildout` (the named consolidation roster) is **not** a local

@@ -7,6 +7,12 @@ graph/DESIGN.md §8 intro: "we're copiers without the registrar"). Checks:
     that actually exists
   - every annotation's target_ref/generated_by_ref/source_ref resolves
   - every claim's `sources` list entries exist in sources.jsonl
+  - every relationship's predicate_id is one this graph has deliberately
+    adopted (cloud-governor, 2026-08-27 round-three disposition:
+    "`relationship.predicate_id` is a declared foreign key that is never
+    resolved at validation time... if your tooling assumes registration is
+    enforced by validation, it is not" -- this check is that enforcement,
+    locally, since nothing upstream provides it)
 Exit 0 and silent on success; exit 1 with every violation listed on failure.
 Run after any ingester; wire into CI/pre-commit later if it earns it.
 """
@@ -66,6 +72,15 @@ for s in sources:
         errors.append(f"sources.jsonl: duplicate source_id {sid}")
     seen_src.add(sid)
 
+# Landed (original 30 seeds or a 2026-08-27 reg-02 ruling) or a documented
+# local stopgap for a predicate not yet landed -- see graph/DESIGN.md §6.
+# A predicate_id NOT in this set is either a typo or a new gap that needs
+# the same "propose, flag, don't invent silently" treatment §6's gaps got.
+KNOWN_PREDICATES = {
+    "about", "supports", "member_of", "funds",              # reg-02 §4, ruled landing
+    "has_part", "part_of", "qualifies", "conflicts_with",   # original 30 seeds
+    "supersedes", "derived_from", "related_to", "answers",  # original 30 seeds
+}
 for r in rels:
     rid = r.get("relationship_id")
     if rid in rel_ids_seen:
@@ -75,6 +90,9 @@ for r in rels:
         errors.append(f"relationship {rid}: source_ref {r.get('source_ref')} does not resolve")
     if not ref_exists(r.get("target_ref")):
         errors.append(f"relationship {rid}: target_ref {r.get('target_ref')} does not resolve")
+    if r.get("predicate_id") not in KNOWN_PREDICATES:
+        errors.append(f"relationship {rid}: predicate_id {r.get('predicate_id')!r} is not in "
+                       f"KNOWN_PREDICATES -- typo, or a new gap graph/DESIGN.md §6 needs updating for")
 
 pass_ids = {p.get("extraction_pass_id") for p in passes}
 for a in annos:
