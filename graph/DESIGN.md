@@ -121,7 +121,7 @@ Every ingester: its own script in `graph/ingest/`, F0, idempotent — keyed on c
 
 ### 8.2 Radar questions → 7 `question` atoms
 
-`radar.md` headers → `kat-q-q1`…`kat-q-q7`: `label`, `meta.mode`, `meta.lens`, `epistemic_status: undecided`, S2. Working notes are composition — not ingested. `answers` edges come later from investigation deliverables; monitor-mode questions stay un-answered by design. ✎✎ This step also sets `question` on every existing atom (q1 flows → `[q2]`; q3 facilities → `[q1]` ("players… DOING") or none — Ben's call in the same sitting as §8.1).
+`radar.md` headers → `kat-q-q1`…`kat-q-q7`: `label`, `meta.mode`, `meta.lens`, `epistemic_status: undecided`, S2. Working notes are composition — not ingested. `answers` edges come later from investigation deliverables; monitor-mode questions stay un-answered by design. ✎✎ This step also sets `question` on every existing *claim* atom: q1 flows → `[q2]`; the q3 claims lifted per §10.5 → `[q1, q2]` (what a player operates; where capex physically lands). Entity atoms carry no `question` — it is a claim facet (§5).
 
 ### 8.3 Remaining expectations → 54 hypothesis claims ✎ and a slip fix on the 16
 
@@ -169,13 +169,14 @@ A `**Missed:**` item is a finding about our sweep, not first-hand data about the
 2. ✎ **`sources/outlet-credibility.yaml` is 83 % dead bytes** — six duplicate top-level `domains:` keys; only the last survives `safe_load`. **The builder is cloud-researcher's `credibility.py`** (in its installed package), so this is *their* append-instead-of-regenerate bug — brief filed, Appendix A. On our critical path (every news `source` needs its band), so step 7 waits on it or reads the last block knowingly.
 3. `upcoming.yaml` `evidence` untyped — normalize in §8.3; propose one shape for the YAML.
 4. `interp.yaml` length caps documented as enforced, aren't. Enforce or amend.
+5. ✎✎ **The q3 port collapsed propositions onto entity atoms.** "Abilene draws 421 MW" is a quantified, sourced claim; the port stored it as `meta.epoch_current_mw` on the facility entity and pointed Epoch's citation at the entity via `supports` — a misuse, since `supports` is source→*claim*. Attribution facts ("Crusoe operates Abilene") went in as bare `related_to` rows with no evidence cluster. Fix in step 2: lift each MW figure and each sourced attribution into a claim atom (`quantity`/`quantity_unit: MW`; `about` → the facility; `supports` ← the source), leave the entity with identity and facets only, re-point the 28 facilities' `supports` edges at the new claims. Surfaced by Ben asking what "Q1 or none" meant — the ask was a category error, and the error was in the port.
 
 ## 11. Sequence and done-when ✎ reordered
 
 | # | step | F-rung | done when |
 | --- | --- | --- | --- |
 | 1 | entity reconciliation (§8.1) + `validate.py` | F0 · **F4 once** · F0 | canonical slugs; crosswalk exists; `cut:core-buildout` unchanged; validator passes |
-| 2 | radar questions + `question` on all existing atoms (§8.2) | F0 (+ one F4 call on q3's Q) | 7 atoms; every atom's `question` resolves |
+| 2 | radar questions + `question` on all existing claims + q3 claim-lifting (§8.2, §10.5) | F0 | 7 question atoms; every claim's `question` resolves; no `supports` edge targets an entity |
 | 3 | expectations, incl. slip re-shape (§8.3) | F0 | 70/70; slips are `supersedes` chains |
 | 4 | bundle claims (§8.4) | F0 | `build_claims()` output reproducible from atoms — **parity check, not cutover** |
 | 5 | `capital-context` (§8.5) | F0 | 5 claims; wired into `/week` 4b |
@@ -193,8 +194,7 @@ Steps 2–9 are independent once 1 lands, except 7 needs 6. **Nothing cuts a YAM
 2. **Round-four brief** (cloud-governor): `holds`/`held_by`, `operates`/`owns`/`leases`. Filed when step 1 yields the first real rows to cite.
 3. **`board.yaml` axis-prose retirement** — after step 4's parity check.
 4. **SQLite threshold** — none set; JSONL until a `/week` ingest or the site build is measurably slow.
-5. ✎ **q3 facilities' `question`** — Q1 or none; one call, step 2.
-6. ✎✎ **Is mental-health a second line?** Not now (§1). The test, when it comes up: does it have its own graph emitting its own deliverables, or does it share this one's entities and cross-tag its threads? Today the latter. If it flips, `loi` arrives and the register partitions — nothing else in this design changes.
+5. ✎✎ **Is mental-health a second line?** Not now (§1). The test, when it comes up: does it have its own graph emitting its own deliverables, or does it share this one's entities and cross-tag its threads? Today the latter. If it flips, `loi` arrives and the register partitions — nothing else in this design changes.
 
 ---
 
