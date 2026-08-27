@@ -46,7 +46,18 @@ new_atoms, new_rels = [], []
 for canon_slug, info in crosswalk.items():
     cid = "kat-canon-" + canon_slug
     if cid not in atom_ids:
-        c = base("knowledge_atom", "knowledge_atom_id", cid, canon_slug.replace("-", " ").title())
+        # Prefer a real facet's own brand capitalization ("CoreWeave") over naively
+        # title-casing the slug ("Coreweave") -- found by audit: the first run of
+        # this script did the latter for every canonical, producing 25 cosmetically
+        # wrong labels the interp-scenario entity-matcher then double-counted as
+        # distinct entities. Facets carry q1's original, correctly-cased name.
+        brand = canon_slug.replace("-", " ").title()
+        for alias in info["aliases"]:
+            for facet in facet_by_slug.get(alias, []):
+                fb = facet["label"].split(" (")[0]
+                if fb.lower() == brand.lower():
+                    brand = fb; break
+        c = base("knowledge_atom", "knowledge_atom_id", cid, brand)
         c.update({"atom_type": "entity", "label": c["name"], "aliases": sorted(set(info["aliases"])),
                   "meta": {"entity_slug": canon_slug, "canonical": True,
                            "reconciled_from": info["sources"], "origin": "graph/ingest/01_entity_apply.py, 2026-08-27"},
