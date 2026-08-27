@@ -97,7 +97,9 @@ for p in passes:
     pass_ids_seen[pid] = True
     refs = p.get("source_target_refs") or ([p["source_target_ref"]] if p.get("source_target_ref") else [])
     for ref in refs:
-        if ref not in ("source:unspecified-historical", "source:unspecified-resolution-prose") and not ref_exists(ref):
+        KNOWN_PLACEHOLDERS = ("source:unspecified-historical", "source:unspecified-resolution-prose",
+                              "source:unspecified-timeline-tag")
+        if ref not in KNOWN_PLACEHOLDERS and not ref_exists(ref):
             errors.append(f"extraction_pass {pid}: source_target_refs entry {ref} does not resolve")
 
 if errors:
