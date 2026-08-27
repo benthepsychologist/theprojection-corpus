@@ -150,15 +150,18 @@ def ensure_node(aid):
 event_ids = {a["knowledge_atom_id"] for a in atoms if a.get("atom_type") == "event"}
 
 
-def self_funded_edge(src, tgt):
+def vendor_unspecified_edge(src, tgt):
     """Same real-world company on both ends -- e.g. TSMC's own capital
-    facet funding TSMC's own foundry-construction facet, because the
-    underlying source discloses only "company approved $X capex for its
-    own facility", no external contractor/vendor named. Both ends must be
-    atom_type "entity": an `event` atom (a financing round) carries the
-    SAME entity_slug as the company it's about, which is a different
-    thing from being funded by itself -- comparing entity_slug across
-    that boundary is exactly the bug this guard exists to avoid (found
+    facet funding TSMC's own foundry-construction facet. NOT "self-funded"
+    or internal (Ben: "Expenses are never internal... The transaction
+    wasn't money from TSMC to TSMC. It was TSMC buying stuff: labor,
+    machines, etc. We just don't know what those things were.") -- the
+    cash left the company and paid real external vendors/contractors/
+    labor; this source just never names who. Both ends must be atom_type
+    "entity": an `event` atom (a financing round) carries the SAME
+    entity_slug as the company it's about, which is a different thing
+    from being funded by itself -- comparing entity_slug across that
+    boundary is exactly the bug this guard exists to avoid (found
     2026-08-27, graph/export_q1_claims.py's companion fix)."""
     a, b = atom_by_id.get(src, {}), atom_by_id.get(tgt, {})
     return (a.get("atom_type") == "entity" and b.get("atom_type") == "entity"
@@ -189,7 +192,7 @@ for r in rels:
         "unit": next((f["unit"] for f in flows if f.get("unit")), "USD"),
         "flows": flows,
         "note": r.get("note"),
-        "self_funded": self_funded_edge(src, tgt),
+        "vendor_unspecified": vendor_unspecified_edge(src, tgt),
     })
 
 nodes.update(added_external)

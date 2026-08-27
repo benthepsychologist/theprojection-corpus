@@ -181,22 +181,23 @@ for cid in sorted(flow_claim_ids):
     facet_activity = lambda aid: atom_by_id.get(aid, {}).get("meta", {}).get("activity") or facet_label(aid)
     source_label, target_label = facet_label(source_id), facet_label(recipient_id)
 
-    # SELF-FUNDED CAPEX, not a nonsense self-loop: some of this map's
-    # "asset purchase"/"capex" edges are a company's own treasury facet
-    # funding its own construction/fab facet (e.g. TSMC's capital arm ->
-    # TSMC's own foundry-construction arm) because the underlying source
-    # discloses only "company approved $X capex for its own facility" --
-    # no external contractor/vendor is named anywhere in that source (see
-    # this claim's own `body`/`summary`). The facet-level label fix
-    # (2026-08-27, earlier the same day) correctly distinguished WHICH
-    # facet, but Ben's flag caught the deeper issue: an arrow between two
-    # facets of the SAME real-world company still visually implies a
-    # transfer to a different party, which is exactly wrong for "where is
-    # the money going" -- the honest answer for these is "nowhere external
-    # that this source names; it became this company's own physical asset."
-    # Fabricating a contractor name we don't have would be worse than this.
-    self_funded = (is_entity(source_id) and is_entity(recipient_id)
-                   and real_world_actor(source_id) == real_world_actor(recipient_id))
+    # NOT self-funded, NOT internal -- Ben, correcting the last two passes
+    # at this: "it's not really self-funded. Stuff was purchased. The
+    # transaction wasn't money from TSMC to TSMC... Expenses are never
+    # internal." Right: when a company spends capex, the cash leaves the
+    # company and pays real external vendors, contractors, and labor --
+    # this map's `funds` edge just happens to run from the company's own
+    # treasury facet to its own construction/fab facet (a budget
+    # allocation: "TSMC earmarked $X toward this project"), because the
+    # source discloses that allocation but never names who TSMC then paid
+    # with it. So this is a genuine external transaction with an
+    # UNNAMED recipient, not a same-company transaction with no
+    # recipient. Both the label and the recipient bucket below now say
+    # exactly that -- the money is NOT credited back to the company as if
+    # it received its own spend, which the two prior passes still did by
+    # accident (recipient_slug stayed the company's own canonical slug).
+    vendor_unspecified = (is_entity(source_id) and is_entity(recipient_id)
+                          and real_world_actor(source_id) == real_world_actor(recipient_id))
     meta = c.get("meta", {})
     flow_type = meta.get("flow_type") or "unclassified"
     destination = meta.get("destination_category") or "unclassified"
@@ -221,31 +222,34 @@ for cid in sorted(flow_claim_ids):
 
     amount_str = fmt_amount(amount) if is_point_usd else (fmt_amount(amount) + " (" + basis_kind + ")" if amount else None)
     lead = (amount_str + " — " if amount_str else "") + (c.get("summary") or c.get("body") or "")
-    if self_funded:
-        # "TSMC's own capital -> foundry construction" still isn't an
-        # answer to "where did the money go" -- Ben: "the money went into
-        # construction, tools, machines, and a bunch of other stuff",
-        # `facet_activity` is just this map's internal accounting bucket
-        # name repeated, not what the cash actually became. destination_
-        # category IS meant to answer exactly that (the same vocabulary
-        # the page's own "by what it bought" table uses -- land/shell/
-        # materials, memory & storage, compute silicon & systems, etc.),
-        # so lead with it; keep the facet activity as parenthetical detail
-        # on which project, not the headline.
-        company_name = company_display_name(real_world_actor(recipient_id), recipient_label)
-        label = f"{company_name}'s own capital → {destination} ({facet_activity(recipient_id)})"
-        lead += (" " if lead else "") + ("(self-funded capex into "
-                                          f"{destination} — this source names no external "
-                                          "contractor/vendor the specific cash went to)")
+    if vendor_unspecified:
+        # The company is the PAYER, not the recipient of its own spend --
+        # "unnamed vendor(s)" is the honest stand-in for whoever actually
+        # got paid (contractors, equipment makers, labor), which this
+        # source just doesn't name. destination_category answers "what did
+        # it buy" (the same land/shell&materials, memory & storage, etc.
+        # vocabulary the page's "by what it bought" table already uses);
+        # the facet activity stays as parenthetical detail on which
+        # project, not the headline.
+        company_name = company_display_name(real_world_actor(source_id), source_label)
+        label = f"{company_name} → unnamed vendor(s) — {destination} ({facet_activity(recipient_id)})"
+        lead += (" " if lead else "") + ("(paid to unnamed vendors/contractors — "
+                                          "this source doesn't disclose who specifically got the money)")
+        recipient_slug = f"{real_world_actor(source_id)}--unnamed-vendors"
+        recipient_label = f"Unnamed vendors (via {company_name}'s capex)"
     else:
         label = f"{source_label} → {target_label}"
     leaf_id = "q1-" + cid
     claims_out.append({
         "id": leaf_id,
-        "subject": recipient_slug,
+        # None, not the company's own slug: a vendor_unspecified claim
+        # isn't "about" the paying company in the board-page sense (it
+        # didn't RECEIVE anything), so it shouldn't crumb/link to /map/
+        # the way a real "about this actor" claim does.
+        "subject": None if vendor_unspecified else recipient_slug,
         "dimension": "q1-flow",
         "label": label,
-        "self_funded": self_funded,
+        "vendor_unspecified": vendor_unspecified,
         "value": lead,
         "basis": lead,
         "confidence": band or "low",
