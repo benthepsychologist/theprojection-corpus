@@ -10,6 +10,16 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in CONCRETE — the specific gigawatt campuses. Stargate, Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands; the specific-sites worklist lives here.
 
+## 2026-08-26 — Camellia clears its state regulator; Durham County joins the moratorium wave
+
+- **Georgia Power announced its 3.2 GW Project Camellia contract with OpenAI "cleared" the Georgia Public Service Commission's regulatory process, at 9:00pm ET on 08-26** — a day after PSC staff hit their 08-25 deadline to refer or object, having signalled they would object absent changes. Terms per Georgia Power: OpenAI pays all infrastructure costs, up to 1,000MW of flexible demand response, ~$950M/year in system-wide ratepayer savings starting 2029. ⚠️ Whether this was affirmative PSC sign-off or the deadline simply passing without a filed objection is not independently confirmed in secondary coverage — full detail and the resolution mechanism logged on the `camellia` thread. This is the first of this thread's tracked siting fights to clear a state utility regulator rather than a county zoning board.
+  ([Georgia Power, via PR Newswire — primary](http://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html),
+  [WTOC](https://www.wtoc.com/2026/08/27/georgia-powers-openai-contract-effingham-county-approved-expected-lower-residential-bills/))
+  ⟨daily 2026-08-26⟩
+- **Durham County, NC commissioners voted 4-1 to adopt a nine-month moratorium on new/expanded large-scale data centers, effective to May 2027** — exempting facilities under 100,000 sq ft with closed-loop cooling and no diesel backup, which residents at the meeting objected to as a loophole. Joins the city of Durham's own existing pause. Not tied to a single named campus/company (unlike this thread's Pataskala or Camellia entries) — logged as the moratorium-trend pattern this thread and `camellia`'s watch line both track; NC now has a cluster of county-level pauses.
+  ([WRAL](https://www.wral.com/news/local/durham-county-approves-data-center-moratorium-august-2026/), [WUNC](https://www.wunc.org/environment/2026-08-26/durham-county-data-center-moratorium))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-26 — Amazon withdraws a groundwater bid after Virginia says no
 
 - **Amazon Data Services withdrew its Virginia DEQ application to draw up

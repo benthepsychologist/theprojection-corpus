@@ -12,6 +12,12 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
+## 2026-08-27 — Yields ease a touch heading into Jackson Hole, the day after Nvidia's blowout print
+
+- **The 10-year eased about 2bp to 4.645% and the 30-year about 2bp to 5.161% in Thursday trading, as investors positioned for jobs data and the opening day of the Kansas City Fed's Jackson Hole symposium** (Warsh's first keynote as chair is Friday 08-28, 10:00 ET) — a small, unremarkable move rather than a fresh repricing, and notably not disrupted by Wednesday night's blowout Nvidia print (full detail on `ai-trade-bear-turn`) or Cook's overnight response to the removal threat (`fed-independence-fight`). ⚠️ Direct CNBC fetch returned 403; figures come from the search snippet of the same CNBC article, not confirmed against primary Fed H.15 data.
+  ([CNBC](https://www.cnbc.com/2026/08/27/us-bonds-us10y-jackson-hold.html))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — A hot headline PCE moves the long end barely at all
 
 - **July PCE printed 3.7% year-over-year on the headline, a tenth above

@@ -14,6 +14,12 @@ trend across all four sub-threads (google-capex, meta-capex, aws-capex,
 microsoft-capex), credit-market reaction to debt-financed capex, and any
 hyperscaler actually pulling back.
 
+## 2026-08-26 — Nvidia's Q2 print, the "first read" this thread flagged on 08-22, comes in: capex guidance goes up, not down
+
+- **Nvidia reported Q2 FY2027 results after market close on 08-26 (quarter ended 07-26): revenue $96.2B (+18% q/q, +106% y/y), Data Center revenue $89.0B (+117% y/y).** CFO Colette Kress told analysts Nvidia's own order backlog is now "more than $2 trillion," and put fresh numbers on the aggregate this thread tracks: **top-five hyperscaler capex ~$800B in 2026, rising to ~$1.3 trillion in 2027** — a 62%+ step-up, not the plateau some had priced in. CEO Jensen Huang separately forecast 70% revenue growth for Nvidia's own fiscal 2028. **This directly answers the 08-22 entry's open question** — whether Nvidia's 15%+ price hikes to server makers force hyperscalers to buy less compute for the same money or spend more — and the market's answer, via a raised aggregate forecast, is "spend more," at least by Nvidia's own account of its customers' plans.
+  ([NVIDIA — primary](https://www.globenewswire.com/news-release/2026/08/26/3351702/0/en/nvidia-announces-financial-results-for-second-quarter-fiscal-2027.html), [CNBC](https://www.cnbc.com/2026/08/26/nvidia-nvda-earnings-report-q2-2027-live-updates.html))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — OpenAI's data-center chief departs mid-buildout
 
 - **Chris Malone, who ran the data-center buildout underpinning OpenAI's

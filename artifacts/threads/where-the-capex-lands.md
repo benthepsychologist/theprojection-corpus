@@ -13,6 +13,15 @@ the aggregate AI capex physically land? Chips · datacenters · power · land.
 Sibling to Hyperscaler Capex (the by-spender cut); most destinations have no
 thread yet — that's the worklist.
 
+## 2026-08-26 — AWS triples its GPU order; the chip destination gets a number attached
+
+- **AWS and Nvidia announced AWS will deploy 2 million additional Nvidia GPUs across 2027-2028**, on top of the 1M+ GPU commitment AWS made at GTC 2026 (already run through early on demand) — plus new Vera CPU-based infrastructure, "some integrated with Rubin, others standalone" per Nvidia CFO Colette Kress. Nvidia's own Q2 earnings release the same evening put its total order backlog above $2 trillion and raised its aggregate top-five-hyperscaler capex forecast to ~$1.3T for 2027 (from ~$800B in 2026) — see `hyperscaler-capex-big-picture` for the spender-side framing. For this thread's destination framing: this is the "chips" line item of the ~$750B question getting a concrete, dated, multi-year commitment from a single named buyer.
+  ([NVIDIA — primary](https://nvidianews.nvidia.com/news/aws-and-nvidia-to-deliver-2-million-additional-gpus-and-next-generation-infrastructure-for-agentic-and-physical-ai), [TechCrunch](https://techcrunch.com/2026/08/26/amazon-just-tripled-its-order-of-nvidia-chips-over-surging-demand/))
+  ⟨daily 2026-08-26⟩
+- **Georgia Power announced its 3.2 GW Camellia/OpenAI contract cleared PSC regulatory review at 9:00pm ET on 08-26** — one of this thread's tracked destinations (power + land) getting its last-flagged regulatory gate resolved. OpenAI funds its own infrastructure; the deal is framed as netting ratepayers ~$950M/year starting 2029. ⚠️ Whether this was affirmative PSC approval or a lapsed objection deadline is unconfirmed — detail on `camellia`.
+  ([Georgia Power, via PR Newswire — primary](http://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — An $11.3bn Tennessee campus files, with power attached
 
 - **Backers of "Project River" filed rezoning and annexation applications

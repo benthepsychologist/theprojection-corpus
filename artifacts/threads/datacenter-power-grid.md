@@ -15,6 +15,13 @@ via behind-the-meter gas at gigawatt scale, a hard equipment ceiling
 (turbines sold out to 2030, transformers ~3yr), and the ratepayer +
 environmental-justice fights that improvisation generates.
 
+## 2026-08-26 — Camellia's PSC clearance comes with a 1,000MW demand-response commitment
+
+- **Georgia Power announced its 3.2 GW Camellia/OpenAI contract cleared PSC regulatory review at 9:00pm ET on 08-26**, attaching the specific grid-mechanism terms this thread tracks: OpenAI funds all of its own infrastructure, commits up to **1,000MW of flexible demand response** (Georgia Power can curtail the load at peak), and the deal is bundled into a "large-load" portfolio Georgia Power says nets ratepayers ~$950M/year in system savings starting 2029. ⚠️ Whether PSC staff affirmatively approved versus simply let their 08-25 objection-signalled deadline lapse is not independently confirmed in secondary coverage — full resolution-mechanism detail on `camellia`. If accurate, the demand-response commitment is a concrete instance of the "bring your own generation / shed load at peak" bargain this thread has been tracking in the abstract.
+  ([Georgia Power, via PR Newswire — primary](http://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html),
+  [WTOC](https://www.wtoc.com/2026/08/27/georgia-powers-openai-contract-effingham-county-approved-expected-lower-residential-bills/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-26 — Amazon withdraws a groundwater bid after Virginia says no
 
 - **Amazon Data Services withdrew its Virginia DEQ application to draw up

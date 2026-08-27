@@ -10,6 +10,13 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-26 — The Camellia deadline resolves: the campus clears, ratepayer terms attached
+
+- **Georgia Power announced its 3.2 GW Camellia contract with OpenAI "cleared" PSC regulatory review, at 9:00pm ET on 08-26** — the outcome of the 08-25 deadline this thread already logged, where staff had signalled they would object absent changes. The power-economics terms Georgia Power attaches: OpenAI funds 100% of its own infrastructure, commits up to 1,000MW of flexible demand response (load it can be asked to shed at peak), and the contract is framed as delivering ~$950M/year in system-wide ratepayer savings starting 2029 across Georgia Power's large-load portfolio. ⚠️ Whether PSC staff affirmatively signed off or simply let the deadline pass without filing the referral they had signalled is not independently confirmed — flagged for follow-up on `camellia` and `ai-datacenter-sites`. If the demand-response and cost-allocation terms hold as described, this is a rare case in this thread's coverage of a siting fight producing enforceable grid terms rather than just a permit.
+  ([Georgia Power, via PR Newswire — primary](http://www.prnewswire.com/news-releases/georgia-powers-contract-with-openai-approved-latest-approval-part-of-portfolio-of-large-load-contracts-delivering-approximately-950-million-in-annual-savings-beginning-in-2029-302861080.html),
+  [WTOC](https://www.wtoc.com/2026/08/27/georgia-powers-openai-contract-effingham-county-approved-expected-lower-residential-bills/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Regulator deadline on Camellia; a campus that brings its own generation
 
 - **Georgia PSC staff hit their deadline to refer or object to Georgia

@@ -41,6 +41,14 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-08-26 (evening) — Cook answers: "not about real estate paperwork," no White House reply yet
+
+- **Lisa Cook broke her silence late Wednesday, denying wrongdoing through a letter from attorneys Abbe Lowell and Norman Eisen rather than in her own voice.** The letter argues "there is no legal basis" for removal a second time, calls the mortgage-paperwork issue "an inadvertent error," not fraud — noting "the President and a third of his cabinet ... reportedly did the same thing" — and frames the whole effort as "an attempt by President Trump to force the Federal Reserve to bend to his will" rather than a real cause dispute. As of this run, neither Trump nor the White House has responded on the record. ⚠️ Exact release time not independently pinned down: ABC's wire report says "late Wednesday," while Al Jazeera's writeup carries a 2026-08-27 dateline — both describe the same letter, not two events; recorded here under 08-26 on ABC's timing.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/27/federal-reserve-governor-lisa-cook-denounces-trumps-mortgage-fraud-claims),
+  [ABC News](https://abcnews.com/Business/wireStory/fed-governor-lisa-cook-slams-trumps-renewed-threat-135990255),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/fed-s-cook-denies-wrongdoing-as-trump-revives-push-to-fire-her))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-26 — The Cook deadline passes without a public response
 
 - **The White House's deadline for Lisa Cook to answer its removal notice

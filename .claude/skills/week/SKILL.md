@@ -140,12 +140,14 @@ only ever grow it.
    genuinely novel schema question gets flagged and held for Ben rather
    than decided unilaterally, the same discipline the dated passes in
    `research/README.md` already follow. After adding the week's
-   financings, hand-update `theprojection-site/content/research/q1.md`'s
-   topline table/counts to match (no automated generation yet — a design
-   proposal for making the page's claims clickable down to their
-   sources, closing this loop for good, is open and separate from this
-   step). Validate every JSONL file still parses after editing, same
-   discipline the frozen YAML always had.
+   financings, re-run `graph/export_q1.py` — **closed 2026-08-27**: the
+   Q1 page (`theprojection-site/content/research/q1.md`) is now a live,
+   clickable render of `graph/{atoms,relationships}.jsonl` (front matter
+   `flowmap: q1_flows`, drawn by `layouts/research/single.html` +
+   `static/js/q1-flowmap.js`), not hand-typed tables — no manual page
+   edit needed, the export script is the only step. Validate every JSONL
+   file still parses after editing, same discipline the frozen YAML
+   always had.
 5. **Radar upkeep** — update each worked question's Working notes; flag any
    question that looks answered or dead.
 6. **Map deltas of the week** — the full add/drop ledger with provenance

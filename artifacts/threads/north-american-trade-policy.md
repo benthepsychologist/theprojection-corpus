@@ -36,6 +36,10 @@ manufacturers by name.
   ([BNN Bloomberg](https://www.bnnbloomberg.ca/tariffs/2026/08/26/sounds-like-me-trump-suggests-us-added-new-conditions-at-11th-hour-of-negotiations-with-canada-live-updates-here/))
   ⟨daily 2026-08-26⟩
 
+- **The same evening's live-blog coverage adds detail beyond this thread's existing 08-26 entries: further escalation from Trump, a Canadian pivot toward Europe, and a second province joining retaliation.** Trump told Glenn Beck it's "time to teach Canada you can't do this anymore," adding Canada doesn't have "anything that we have to have." Carney's office confirmed he will address the European Parliament in September — a "strengthen relationships beyond the U.S." signal distinct from the retaliation-tariff track already logged. Saskatchewan's premier Scott Moe announced a 50% retaliatory tax on American alcohol effective 09-08, joining Ontario's earlier booze ban — but Alberta's premier Danielle Smith is on record urging de-escalation rather than leveraging energy exports, an intra-Canada split this thread hasn't carried before. Retail: Loblaw is reintroducing "T" tariff-symbol labelling and "Made in Canada" promotion as consumer sentiment shifts.
+  ([BNN Bloomberg — live updates](https://www.bnnbloomberg.ca/tariffs/2026/08/26/sounds-like-me-trump-suggests-us-added-new-conditions-at-11th-hour-of-negotiations-with-canada-live-updates-here/))
+  ⟨daily 2026-08-26⟩
+
 ## 2026-08-25 — Thread opened, backfilled from global-capital's 08-24 digest
 
 - **Opened on Ben's promotion, after `threads.yaml` was confirmed to

@@ -22,6 +22,14 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-08-27 — The corridor-diplomacy decline extends to a >7% weekly drop, with a new and unconfirmed Russia-Ukraine crosswind
+
+- **Brent is down more than 7% for the week, per Bloomberg's oil-markets wrap, as the Iran-Oman corridor talks (08-26) and Monday's Iran sanctions package landing lighter than threatened both continue to deflate the war-risk premium this thread has tracked since July.** A new crosscurrent surfaced Wednesday and reversed by Thursday: futures reportedly rose on reports Russian President Putin was planning a Ukraine-war escalation, before giving the gains back once Iran's revenue-sharing framework with Oman was confirmed. ⚠️ **Same-morning price reads conflict and are recorded as a spread, not a print:** Fortune had Brent at $89.68 (+2.59%) as of 7:15 ET; TradingEconomics had it at $86.93 (−1.03%) for the day; a separate CNBC search snippet put Brent "below $88" with WTI "near $82." None of the three sources was independently confirmable by direct fetch (Bloomberg 403'd), so this is flagged rather than resolved — the weekly-decline direction is corroborated across sources even though the same-day number isn't.
+  ([Bloomberg — oil markets wrap for 08-27](https://www.bloomberg.com/news/articles/2026-08-26/latest-oil-market-news-and-analysis-for-aug-27),
+  [Fortune](https://fortune.com/article/price-of-oil-08-27-2026/),
+  [TradingEconomics](https://tradingeconomics.com/commodity/brent-crude-oil))
+  ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — Iran names a temporary Hormuz corridor; oil falls ~6% over two days
 
 - **Iran announced a temporary transit corridor through the Strait of
