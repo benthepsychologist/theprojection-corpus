@@ -1,6 +1,6 @@
 # STATUS — theprojection-corpus
 
-*As of 2026-08-27*
+*As of 2026-08-28*
 
 <!-- The line above is deliberately alone on its own line, in exactly one
      spelling, per the base STATUS schema kestrel introduced 2026-08-18
@@ -8,7 +8,8 @@
      freshness check this file has, and it cannot fire when the date is
      embedded mid-sentence. -->
 
-*Hand-maintained. Top note covers 2026-08-27's `/week` partial-week pass
+*Hand-maintained. Top note covers 2026-08-28's two `/daily` runs, then
+2026-08-27's `/week` partial-week pass
 (week_of 08-24, four lens weekly digests, four expectations resolved,
 a threads.yaml sync-lag fix, full radar.md upkeep), then 2026-08-25's
 full run (six pipeline fixes, `/daily` across three checkpoints, a
@@ -18,6 +19,52 @@ online, and the internal read page's retirement), then the 08-24 run
 (which finalized 08-23), then the 08-23 gap catch-up, then 08-21's two
 `/daily` passes, then the 08-20 note (which finalized 08-19), then
 08-19, then 08-18 and older.*
+
+> **2026-08-28 — two `/daily` runs. The 10:15 ET run finalized 08-27 in
+> full; the 15:10 ET run recovered three stories both earlier passes had
+> missed, and that recovery is the day's real finding about the system.**
+>
+> **What the afternoon run added.** The market's response to Kevin
+> Warsh's first Jackson Hole keynote, which the morning digest had
+> explicitly declined to assert: the whole curve rose with the five-year
+> up ~9bp against the thirty-year up ~2bp, the dollar +0.56%, gold
+> -3.28% and the VIX unmoved — a rate-path repricing, not a fiscal
+> scare, which is evidence *against* `treasury-long-end-intervention`'s
+> thesis on the day. Michigan's final August survey (51.7) with
+> year-ahead inflation expectations **falling** to 4.0%. Nvidia's
+> pullback from its July revenue-share financing programme. A federal
+> court permanently enjoining the Pentagon's blacklisting of Anthropic.
+> 13 timeline blocks across 13 threads, 18 `last_seen` bumps, four
+> `actor-doing.yaml` refreshes, three new expectations, four site
+> briefings republished, and a Cloudflare deploy.
+>
+> ⛔ **The structural finding, written up in `coverage-log.md`.** Two of
+> the week's largest stories — the Anthropic ruling and the Nvidia
+> financing pullback — **both broke on the evening of 08-27** and **both
+> were missed by the 08-27 finalize pass**, which ran three coverage
+> critics and marked the day `final`/`coverage: done`. A third (SoftBank's
+> $10bn loan against its OpenAI stake, 02:50 ET) was missed inside
+> today's own digest-day. **The cause is structural, not sloppiness:**
+> `sources/benchmarks.yaml` is built from publications that post in the
+> morning, so a story breaking at 5pm and syndicating overnight sits in
+> a window nothing here checks. **The 08-27 digest predicted this exact
+> gap in writing and the pass built to close it still missed both.** Two
+> fixes are proposed and NOT applied (an evening-scoped re-sweep in the
+> finalize pass; adding a wire service to the benchmark set) — both are
+> design decisions for Ben, not curation calls.
+>
+> ⛔ **Three standing blockers, all needing Ben.** `bq`/BigQuery expired
+> **day twelve** (`world-news.yaml` frozen at `generated: 2026-08-25`);
+> `KESTREL_CONTACT_EMAIL` unset again so **GDELT and Federal Register
+> both went dark a second time** eight hours after the morning run
+> flagged exactly that risk; and the **`rss` collector still resolves
+> `feeds.yaml` against the kit's install directory** rather than this
+> corpus — an engine-side regression, out of this repo's write zone.
+>
+> 💡 **Six watchlist entity adds proposed and unanswered** across three
+> runs: `Salesforce`, `Hugging Face`, `Alphabet`, `Meta`, plus `PayPal`
+> and `Stripe` added today. Thread candidates and the `sev=major`
+> bar are discussed in the 08-28 front digest.
 
 > ⚠️ **SUPERSEDED LATER THE SAME DAY — a full `/daily` ran at 15:00 ET,
 > after the `/week` pass described below.** It finalized 08-26 (including

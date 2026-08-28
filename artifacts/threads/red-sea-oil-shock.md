@@ -22,9 +22,11 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
-## 2026-08-28 — Brent gives back most of the rebound, on the same nothing that caused it
+## 2026-08-28 — Brent keeps drifting while Washington declares the chokepoint open
 
 - **Brent drifted to about $88.22, down ~0.34% on the day, with WTI near $83.10, down ~0.51%** — surrendering most of the $2.27 rebound to $89.68 logged on 08-27. Coverage attributes the move to continued weighing of the Iran-Oman Hormuz corridor framework against softer-than-feared US sanctions on Iran's oil trading partners. **The asymmetry this thread exists to track is intact and now demonstrated in both directions inside 48 hours:** the chokepoint reprices on diplomatic signalling alone, with no confirmed change in transit volumes and no signed text. ⚠️ **Aggregator quotes, not a settlement print** — no named-outlet settlement figure with an explicit timestamp was available for 08-28 inside the window. ⟨daily 2026-08-28⟩
+
+- **By 14:54 ET Brent had slipped further to about $87.90 (-0.70%) and WTI to $83.14 (-0.47%), on a day CENTCOM declared the Strait of Hormuz open and roughly 24 tankers transited against a pre-war norm of 120-130.** **The price is not responding to the declaration, which is the useful observation** — crude continued the morning's drift rather than repricing on a reopening claim the traffic volume does not support. Later read supersedes the morning's levels on this thread; both are this session's own quote-feed pulls. ⟨daily 2026-08-28⟩
 
 ## 2026-08-27 — Brent rebounds two dollars on nothing having actually changed
 

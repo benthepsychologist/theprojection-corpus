@@ -41,11 +41,13 @@ decision.
     frontmatter via /steer only.
 -->
 
-## 2026-08-28 — The first Jackson Hole keynote spends itself on AI and communications doctrine, and never says the word
+## 2026-08-28 — A keynote that never says the word, and a market that repriced hawkishly against softening expectations
 
 - **Kevin Warsh used his first Jackson Hole keynote as chair, on his hundredth day, to argue for a quieter Fed and to think out loud about artificial intelligence — and said nothing at all about the fight over the Fed's independence.** "In Our Time," delivered 10:00 ET, opens by calling its own outline "a trail map . . . just don't call it forward guidance," argues the practice "has overstayed its welcome" outside crises, and declines a reaction function outright: *"I wish our understanding of the economy were so precise... that some simple function like a Taylor rule could be rigorously relied upon. But our knowledge just doesn't extend that far."* On the mandate he was direct — 12-month PCE **3.7%**, six-month **4.1%**, "running above our 2 percent target," labour markets "consistent with full employment" — and he treated the 2% goal as **firm and fixed**, with "average inflation" absent from the text entirely.
   **The absence is the finding for this thread, and it was verified rather than inferred:** direct string search over the released text returns **zero occurrences of "independence," "administration" or "buyback."** Going in, previews framed the Cook removal fight and fiscal-dominance pressure as the market's central question. He did not engage either. **A chairman declining to defend the institution's independence from the one podium built for it is a datapoint on this thread, not an empty result.**
   ([Federal Reserve, released text](https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm)) ⟨daily 2026-08-28⟩
+
+- **The University of Michigan's final August survey put sentiment at 51.7, confirming its early-month reading, about 6% below July's 55.2 and 11% below a year ago — with year-ahead inflation expectations falling to 4.0% from 4.2% and long-run expectations holding at 3.3% for a third month.** **The market moved on rhetoric against the data**, repricing toward fewer cuts on the same day the only inflation-expectations print available softened. Expected year-ahead business conditions fell 10% and the five-year horizon 13%; the survey names the Iran conflict as driving gasoline-price expectations and notes 4.0% still "substantially exceeds the 3.4% seen in February before the Iran conflict began." Interviews ran 07-28 to 08-24, so **the window contains none of the keynote.** ⚠️ A sweep reported this figure as *rising* to 4.3%; corrected against the primary release before publication. ([University of Michigan, Surveys of Consumers, read directly](https://www.sca.isr.umich.edu/)) ⟨daily 2026-08-28⟩
 
 ## 2026-08-26 — Cook files a formal rebuttal on the deadline day itself
 

@@ -15,6 +15,8 @@ opened: 2026-08-06
 - **Both defendants in Round Hill Music's $1bn copyright actions are reported to be resisting having their cases heard together.** ⚠️ **Headline-level only** — the article body returned 403 on every direct and proxied fetch, so the procedural mechanism, court and reasoning are **not** stated here. **Why it is filed anyway:** if Anthropic is arguing separation, that is a defence-posture signal worth dating — it would want its text-training fair-use arguments kept clear of Suno's music-generation exposure, which is exactly the distinction this thread's Bartz and Concord II precedent-tracking turns on. Treated as a lead to confirm, not a finding.
   ([Digital Music News](https://www.digitalmusicnews.com/), headline indexed 2026-08-27 21:54 ET) ⟨daily 2026-08-27⟩
 
+- **Separately, and not a copyright development: a federal judge permanently barred the Pentagon from designating Anthropic a national-security supply-chain risk, finding the designation was retaliation for the company's criticism of the administration.** Filed here only for completeness of Anthropic's litigation-exposure picture — **it does not bear on the copyright claims** — because a thread tracking one company's legal risk should not be silently missing the case that company actually won this week. Substance sits on `frontier-model-gov-review-precedent`. ([Axios](https://www.axios.com/2026/08/28/judge-blocks-pentagon-anthropic-blacklist)) ⟨daily 2026-08-28⟩
+
 ## 2026-08-17 — A new plaintiff, and a $1bn claim over music
 
 - **Music publisher Round Hill Music filed $1 billion copyright-infringement

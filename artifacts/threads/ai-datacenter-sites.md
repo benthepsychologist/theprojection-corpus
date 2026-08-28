@@ -10,6 +10,12 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in CONCRETE — the specific gigawatt campuses. Stargate, Colossus, Camellia + the 100s of sites. Category meta under where-the-capex-lands; the specific-sites worklist lives here.
 
+## 2026-08-28 — Five local fights on one day, and Cary redefines what a datacenter is
+
+**Cary, North Carolina's town council unanimously approved an 18-month datacenter moratorium that drops the definitional threshold from 25MW to 1MW — roughly the draw of a thousand homes.** **That is not a stricter moratorium, it is a twenty-five-fold wider net**, catching edge and colocation builds every other local ordinance this thread has logged would exempt. No pending applications are affected. ⚠️ Single-outlet. ([WRAL/ABC11](https://www.wral.com)) ⟨daily 2026-08-28⟩
+
+**Four more local actions landed the same day:** a federal noise class action in Vineland, New Jersey against DataOne USA covering ~1,013 households within a mile, where thermal imagery showed 45 of 62 generators running in mid-August; Atmosphere Data Centers withdrawing its challenge to Montgomery County, Maryland's permitting moratorium; new opposition in Wisconsin Rapids organised around developers' Russian corporate connections; and Easton, Pennsylvania moving to harden its zoning. ⚠️ **Each is single-outlet from a named local or regional publication and none was cross-verified** — reported as a same-day pattern, not five independently confirmed facts. ([The Guardian on Vineland](https://www.theguardian.com)) ⟨daily 2026-08-28⟩
+
 ## 2026-08-26 — Project Camellia's power contract clears the Georgia PSC
 
 - **Georgia Power announced at ~21:00 ET that its contract to serve OpenAI's

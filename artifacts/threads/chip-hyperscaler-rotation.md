@@ -16,6 +16,10 @@ reframe holds through Amazon (07-30) and Samsung's breakdown, and whether
 it shows up in fund-flow data rather than just analyst notes and single-
 night price action.
 
+## 2026-08-28 — Six points of dispersion between Nvidia and Microsoft in one session
+
+**The Philadelphia Semiconductor Index fell 3.45% while Microsoft rose 1.84% — Nvidia -4.74%, CoreWeave -3.86%, AMD -1.58%, Broadcom -1.23%, Oracle roughly flat — on a day yields rose across the curve.** **This is the dispersion the thread exists to measure**, and the likeliest proximate cause is not the Fed but Nvidia's reported pullback from its revenue-share financing programme. ⚠️ **One session is not a rotation** and this is logged as a single day's tape, read directly from live quote feeds at 15:04 ET with the cash session still open — intraday levels, not closing prints. ⟨daily 2026-08-28⟩
+
 <!--
   RULES (reframe Phase 0, 2026-07-22):
   - Newest-first dated blocks. /daily REBUILDS today's block at the top

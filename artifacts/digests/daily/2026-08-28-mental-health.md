@@ -3,17 +3,20 @@ lens: mental-health
 date: 2026-08-28
 status: building
 window_start: 2026-08-28T05:00:00-04:00
-as_of: 2026-08-28T10:15:00-04:00
+as_of: 2026-08-28T15:10:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-28
 
-*Curated agentic-interim, a five-hour window, 05:00 ET → 10:15 ET, one
-run — which also finalized 2026-08-27 in full, including a coverage
-critic that recovered this lens's largest missed story of the week.
-Sources: two mental-health cluster sweeps covering twelve threads between
-them, and a collector sweep.*
+*Curated agentic-interim, 05:00 ET → 15:10 ET, across two runs. The
+10:15 ET run covered the morning and finalized 2026-08-27 in full,
+including a coverage critic that recovered this lens's largest missed
+story of the week. The 15:10 ET run swept all ten open threads again and
+**found nothing new to add** — it resolved one ledger item to a confirmed
+negative and deliberately discarded three items that would have padded
+the day. Sources: three mental-health cluster sweeps across two runs, a
+cold-thread rotation, and two collector sweeps.*
 
 ## Today's throughline
 
@@ -71,6 +74,29 @@ report its output as dated findings**, which is why this section says
 nothing rather than listing titles. Recorded so the limitation is on the
 record rather than rediscovered.
 
+## 📭 The afternoon sweep, and what it deliberately did not report
+
+**The 10:15 → 15:00 ET window produced no new mental-health event, and
+that is the finding rather than a gap in the sweeping.** All ten open
+threads were swept again with multiple query angles each. Three items
+came back that could have been written up and were rejected on the
+record, so the judgment is visible rather than implied:
+
+- **A Becker's piece at 14:51 ET on one health system's automation** —
+  rejected because it describes **revenue-cycle and billing** automation,
+  not clinical decision-making. It would have looked like evidence for
+  the algorithmic-triage candidate below and is not.
+- **A Medical Economics analysis of Amazon's health "front door"** at
+  09:47 ET — commentary on a product that rolled out between January and
+  April 2026, not a new event.
+- **The American Prospect's Kaiser algorithmic-triage investigation** —
+  real and directly relevant, but **published 08-27** and already inside
+  the record.
+
+**The distinction being enforced is between a dated event and
+publication about an undated condition.** A thin lens honestly reported
+is worth more here than three items that would each need retracting.
+
 ## ⏳ Upcoming & expected
 
 - ⚠️ **`meta-warner-csam-response` stays `passed-silent` — grace runs to
@@ -80,7 +106,14 @@ record rather than rediscovered.
   fetched directly — carries nothing on CSAM, Warner or the ad-review
   matter across 08-26, 08-27 or 08-28. **Still no outlet has covered the
   non-response as a story**, which keeps this a genuine gap rather than a
-  covered non-event.
+  covered non-event. ✎ **Re-checked a third time on the 15:10 ET run**,
+  against Warner's Senate press page and a full sweep of the outlets that
+  covered the original letter — still nothing. **Grace expires tomorrow;
+  on today's evidence this stands as the loud outcome.** Worth restating
+  what the letter asked, since the entry has now been carried three
+  times: how the AI-generated CSAM and non-consensual-image ads passed ad
+  review, what revenue they produced, and what remediation followed.
+  **Meta's only public comment answers none of the three.**
 - 📋 **Next 7 days:** France's social-media ban effective 09-01 · Sword
   Health's acquisition of Headspace closes 09-14 · Anthropic's
   wellbeing-grant applications close 09-21.

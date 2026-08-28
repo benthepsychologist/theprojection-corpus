@@ -4528,3 +4528,89 @@ change to adolescent social-media design ever imposed in the US.
 - ⛔ **`bq` still expired — day twelve.** Re-tested today, same
   non-interactive reauth failure. With GDELT fixed, this is now the
   single remaining blocker on the mechanical detector.
+
+---
+
+## 2026-08-28 — 15:10 ET run: a self-caught structural miss, not a benchmark miss
+
+**This entry is not from a benchmark critic.** It records a gap the
+critics are not built to find, caught by an ordinary afternoon sweep that
+mentioned two stories in passing as "already covered" when neither was.
+
+### What was missed
+
+Two of the week's largest stories broke on the **evening of Thursday
+2026-08-27**, inside the 08-27 digest-day (05:00 ET 08-27 → 05:00 ET
+08-28). **Both were missed by the 08-27 finalize pass**, which ran at
+10:00 ET on 08-28, dispatched **three coverage critics**, and closed the
+day as `status: final` / `coverage: done`.
+
+- ⛔ **`Anthropic PBC v. U.S. Department of War`, No. 3:26-cv-01996-RFL
+  (N.D. Cal.)** — Judge **Rita F. Lin** granted Anthropic summary
+  judgment and **permanently enjoined** the Pentagon's designation of the
+  company as a national-security supply-chain risk under 10 U.S.C.
+  § 3252, finding it was retaliation for Anthropic's public criticism of
+  the administration. Issued **Thursday evening**; AP distributed
+  overnight (mirrors show 08-27 23:08 and 08-28 03:13). **The map was
+  tracking Anthropic's IPO timeline in the same digest** and still did
+  not have this.
+- ⛔ **Nvidia's pullback from its July revenue-sharing financing
+  programme** — reported by the WSJ **Thursday evening**, reportedly over
+  Nvidia employees' own antitrust concerns. This is the most direct
+  evidence to date on `nvidia-vendor-financing`'s central question, and
+  it is the likeliest cause of today's **-3.45%** move in the
+  Philadelphia Semiconductor Index.
+
+A third, smaller miss sits inside **today's** digest-day: **SoftBank's
+$10bn loan against its OpenAI stake**, reported at **02:50 ET on 08-28**
+— after the 05:00 boundary and therefore in the 08-28 record — absent
+from the 10:15 ET run's digest.
+
+### Why the critics did not catch it — the structural part
+
+**The benchmark critic compares this map against publications that post
+in the morning.** `sources/benchmarks.yaml` is built around outlets whose
+editions and feeds land mid-morning ET; the critic's own gate is that a
+day only finalizes ≥ ~5h after it closes, which is a rule about *those
+publications being available*, not about the news having happened.
+
+**A story that breaks at 17:00–23:00 ET and is syndicated overnight
+therefore lands in a window nothing in this system checks.** The morning
+benchmarks have moved on to the next day's news by the time the critic
+reads them; the previous day's evening break is neither in the day's own
+curated window nor prominent in the benchmark's morning edition.
+
+⚠️ **This is the second consecutive day the evening window has failed,
+and the map predicted it in writing the first time.** The 08-27 digest
+stated that its expected coverage gap was the uncurated evening. The
+08-28 finalize pass was the pass built to close exactly that gap, ran
+three critics, and **missed two large stories sitting in it**. The
+prediction was correct and the machinery still did not act on it.
+
+### What would actually fix it — put to Ben, not adopted here
+
+- **A dedicated evening re-sweep of the closing day**, run as part of the
+  finalize pass and scoped to 17:00–05:00 ET, rather than relying on the
+  benchmark critic to surface it. This is the cheapest fix and the one
+  the evidence directly supports.
+- **Adding at least one wire service to `sources/benchmarks.yaml`** — AP
+  or Reuters — since both of today's recovered stories moved on the wire
+  overnight and the current benchmark set is trade and edition press,
+  which is precisely the set that sleeps.
+- ⚠️ **Neither is applied.** `sources/benchmarks.yaml` is edited on a
+  confirmed pass, and a critic-scope change is a design decision, not a
+  curation one.
+
+### Access and collector state, recorded for the day
+
+- ⛔ **GDELT and Federal Register both dark again this run** on an unset
+  `KESTREL_CONTACT_EMAIL`. The morning run set it in its own shell,
+  recovered 23 articles, and flagged non-persistence; **the next run
+  eight hours later hit the identical wall.** Needs one line in a shell
+  profile — a machine-config change outside this repo, asked twice now.
+- ⛔ **`bq` expired, day twelve**, re-tested this afternoon; unchanged.
+  `attention/world-news.yaml` still carries `generated: 2026-08-25`.
+- ⚠️ **Rate-limit degradation repeated:** `openalex` (429),
+  `semantic_scholar` (429) and `lda` (403) skipped large term sets again.
+  A thin academic layer this week is a collection artefact, not an empty
+  field.

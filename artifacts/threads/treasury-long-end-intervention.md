@@ -12,10 +12,12 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
-## 2026-08-28 — Warsh had the podium and did not mention it
+## 2026-08-28 — Warsh never mentioned it, and the curve then moved in the shape that argues against the thesis
 
 - **The keynote this thread was waiting on did not touch the long-end or buyback question, and the silence is checkable rather than inferred.** Warsh's "In Our Time," delivered 10:00 ET, was read directly from the Fed's own released text: the words **"independence," "administration," "buyback," "long end" and "average inflation" appear nowhere in it**, and the single occurrence of "Treasury" refers to Treasury securities as one market signal among several the Fed should read. **This thread's watch line asked specifically whether the keynote would address the TGA mechanism. The answer is no — a resolved negative, not a research gap.** What he gave instead: a refusal to offer a reaction function ("some simple function like a Taylor rule" cannot be "rigorously relied upon"), an argument that forward guidance "has overstayed its welcome," 12-month PCE at **3.7%** and six-month at **4.1%** against a **firm 2% target** with no averaging language, and a substantial section on AI.
   ([Federal Reserve, released text](https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm)) ⟨daily 2026-08-28⟩
+
+- **Every point on the curve rose after the keynote and the belly rose hardest: the 5-year +9.2bp to 4.488%, the 10-year +5.6bp to 4.728%, the 13-week bill +5.2bp to 3.730% — and the 30-year up barely 2.2bp to 5.213%.** **The shape is the finding.** A repricing driven by fiscal or term-premium fear shows up in the long end first; this one concentrated in the part of the curve that prices the next several meetings and left the thirty-year nearly untouched — **a point of evidence running against this thread's intervention thesis on this particular day.** The dollar rose 0.56%, gold fell 3.28%, and the VIX was essentially unmoved at 14.58, which is a rate-path repricing rather than a risk event. Levels read directly from live quote feeds at 15:04 ET, intraday and not closing prints. ⚠️ **No two-year yield is asserted** — two sources disagreed on its sign and neither was checkable before Treasury's own par-yield curve posts after the close, and it is the most-quoted number in today's coverage. ⚠️ A sweep reported the 10- and 30-year as having "dipped slightly or little changed"; the direct index reads show both rose. ⟨daily 2026-08-28⟩
 
 ## 2026-08-27 — The 7-year prices cleanly, and the "impossible" 5-year turns out to have been read wrong
 

@@ -831,6 +831,23 @@ expectations:
     # milestone, logged on the timeline, NOT a resolution of this claim.
     # Stays passed-silent rather than flipping to hit or back to pending —
     # no new target date was given, so there is nothing to slip TO.
+    # 2026-08-28 ⟨daily 15:10 ET⟩: re-swept. Still no signature, and today
+    # produced the strongest CONFIRMING NEGATIVE since the due date rather
+    # than more silence. CENTCOM commander Adm. Brad Cooper declared the
+    # strait "open, and momentum is building," claiming mines cleared —
+    # while roughly 24 oil tankers transited against a pre-war daily average
+    # of ~120-130, i.e. about a fifth of normal on the very day it was
+    # called open. Iranian FM Abbas Araghchi (13:42 ET) said diplomacy could
+    # resume only "if Washington abandons its pressure campaign," Tehran's
+    # position being that the strait stays shut pending a US return to the
+    # JUNE interim deal — a different instrument from the Iran-Oman dual-lane
+    # arrangement this entry tracks. One sweep reported Iranian officials
+    # calling the dual-lane route "agreed" on 08-26; not independently
+    # confirmed, and not a signature, which is what what_confirms requires.
+    # Treasury escalated on the financial side the same day (Operation
+    # Economic Outcast, launched 08-24, this map's first log of it).
+    # Status unchanged: passed-silent. Sources: CBS News live blog
+    # (ET-timestamped), Fortune 08-28.
 
   - id: ping-an-h1-2026-interim-results
     claim: "Ping An Healthcare and Technology's board meeting to approve H1 2026 results (and consider an interim dividend) is confirmed for Aug 18, 2026; the GROUP-level (parent, HK:2318/SH:601318) interim results date was not independently confirmed to a specific day this crawl"
@@ -1391,6 +1408,21 @@ expectations:
       outlet has reported a response or the non-response. Grace runs to
       2026-08-29; the silent outcome is the recorded one until then.
 
+      RE-SWEEP 2026-08-28 (/daily 15:10 ET), third check and the first
+      resting on the primary source alone. Warner's own senate.gov
+      press-release listing carries NOTHING after the 2026-08-18 letter —
+      no Meta reply, no acknowledgement of receipt, no statement about the
+      non-response. A sweep across every outlet that covered the original
+      letter (MLex, Engadget, Blue Virginia, Augusta Free Press,
+      OrissaPost) returns neither a reply nor coverage of the silence.
+      Meta's only public comment remains the PRE-deadline line to WIRED
+      that it "works aggressively" against exploitation and that most
+      flagged ads "had minimal reach" — which answers none of the three
+      things Warner actually asked: how the ads passed ad review, what
+      revenue they generated, and what remediation followed. This is a
+      confirmed negative, not an absence of searching. Grace expires
+      2026-08-29; on this evidence the entry stands as passed-silent.
+
   - id: ca-ab2575-senate-floor-vote
     claim: >
       California AB 2575 (Ortega, "Health care services: artificial
@@ -1667,6 +1699,18 @@ expectations:
     what_confirms: >
       the session convening, and whether the board signals a position on
       the campus. Distinct from the 08-26 Chamber information sessions.
+    # 2026-08-28 ⟨daily 15:10 ET⟩: still pending, and the specifics are now
+    # confirmed via the Effingham Herald — 10:00-13:00 ET Saturday 08-29 at
+    # the county administrative complex, Springfield GA, livestreamed.
+    # A sweep found the Camellia window otherwise EMPTY today: the Georgia
+    # Power/OpenAI PSC contract approval and the $950m/yr ratepayer-savings
+    # claim ($2.847bn over 2029-2031, from Georgia Power's own release) were
+    # announced 08-26 21:00 ET, and the county's DRI report also released
+    # 08-26 — today's coverage volume is re-syndication, not new fact. The
+    # "Warnock criticizes lack of transparency" headline traces to a Warnock
+    # EPA letter dated 2026-07-23, over a month old. Preliminary site-plan
+    # review is separately expected 2026-09-14.
+
   - id: project-river-public-forums-0901
     claim: >
       First public forum on "Project River," the $11.3bn Bradley County TN
@@ -1717,3 +1761,39 @@ expectations:
       the application window closing, and later whether any funded work is
       genuinely independent and clinician-involved as advertised — the
       question this thread exists to ask about vendor-funded evidence.
+
+  - id: anthropic-dow-appeal-window
+    claim: "The government appeals Judge Rita F. Lin's permanent injunction in Anthropic PBC v. U.S. Department of War (N.D. Cal., No. 3:26-cv-01996-RFL) to the Ninth Circuit, or the appeal window closes without one"
+    due: 2026-09-28
+    due_precision: month
+    thread: frontier-model-gov-review-precedent
+    entities: [anthropic]
+    source: https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html
+    confidence: reported
+    what_confirms: >
+      A filed notice of appeal on the N.D. Cal. docket, or a Ninth Circuit
+      docket entry clearly tied to the AUGUST summary-judgment order rather
+      than to March's preliminary injunction. NOTE the ambiguity to resolve:
+      a Ninth Circuit docket (No. 26-2011) already exists and is plausibly
+      the earlier interlocutory appeal, so matching the appeal to the right
+      order is part of what confirms this. Separately track whether the
+      court's reported denial of a seven-day administrative stay holds —
+      single-outlet as logged, and a contrast with the March order, which
+      WAS self-stayed for seven days.
+    logged: 2026-08-28
+    logged_by: curate-add
+    status: pending
+
+  - id: china-remote-access-rule-to-industry
+    claim: "The administration shares its draft rule restricting Chinese firms' remote/cloud access to US AI chips (the 'cut-down AI diffusion rule') with industry"
+    due: 2026-09-30
+    due_precision: month
+    thread: china-stack-independence
+    entities: []
+    source: https://www.tomshardware.com/tech-industry/policy/new-us-export-controls-reportedly-target-chinese-access-to-remote-ai-servers-trump-admins-cut-down-ai-diffusion-rule-could-be-shared-with-industry-as-soon-as-september
+    confidence: rumored
+    what_confirms: "actual rule text reaching industry, or a Federal Register/BIS publication. Reported by a single outlet relaying The Information with NO government document published, so the existence of the drafting effort is itself only reported — a passed-silent here means the report was thin, not that a known plan slipped."
+    logged: 2026-08-28
+    logged_by: curate-add
+    status: pending
+

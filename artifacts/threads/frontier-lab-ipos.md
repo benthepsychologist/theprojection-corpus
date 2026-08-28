@@ -12,6 +12,10 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-27 — A legal overhang clears ahead of the Anthropic listing
+
+**Anthropic won a permanent injunction against the Pentagon's supply-chain-risk designation, clearing a named legal overhang days before its expected S-1 flip on 08-31.** ⚠️ **The IPO mechanics circulating today are not new** — the prospectus-after-Labor-Day, mid-September investor-day and $1.5-2T valuation-talk reporting all originate from a 08-27 story and today's volume is re-syndication. ⚠️ **An implied $2T Anthropic valuation reported from a tokenized private-share market is explicitly NOT adopted here** — it is a synthetic price signal with no filing, term sheet or banker confirmation behind it. ([CNBC](https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html)) ⟨daily 2026-08-28⟩
+
 ## 2026-08-26 — Analysts start doing the arithmetic on Anthropic's $30tn pitch
 
 - **Analysts pushed back on Anthropic's $30 trillion addressable-market

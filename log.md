@@ -6493,3 +6493,152 @@ interconnection queue, which this run deliberately held back as
 unverified. The validator **did** independently catch three fabricated-looking
 URLs across two scopes, and a bare-domain `reuters.com` link was
 corrected to a thread link.
+
+---
+
+## 2026-08-28 — `/daily` (15:10 ET run): the afternoon that caught what the morning closed
+
+**The second `/daily` of the day, extending 08-28 from 10:15 → 15:10 ET.**
+The morning run had finalized 08-27 in full and opened 08-28. This run
+picked up the post-keynote market response the morning digest explicitly
+declined to assert — and then found three stories that two earlier passes
+had already missed.
+
+**Dispatch:** seven agents. Five cluster sweeps (macro/Fed/rates, AI capex
+and financing, AI governance and China stack, mental health, world news),
+one cold-thread rotation across nine quiet threads, and one dedicated
+court-record verification pass. Plus a collector run that was still
+executing at close, having written 31 provenance manifests.
+
+### The three misses, and why they are structural
+
+⛔ **`Anthropic PBC v. U.S. Department of War`** (N.D. Cal.,
+3:26-cv-01996-RFL). Judge **Rita F. Lin** granted summary judgment and
+**permanently enjoined** the Pentagon's designation of Anthropic as a
+national-security supply-chain risk under 10 U.S.C. § 3252, finding it
+was retaliation for the company's public criticism of the administration.
+The underlying fight: **two usage restrictions Anthropic refused to lift**
+— no Claude for mass domestic surveillance of Americans, no fully
+autonomous lethal weapons — after which a Presidential Directive told
+every federal agency to stop using its technology. **Issued Thursday
+evening 08-27, inside the 08-27 digest-day**, and absent from the 08-27
+digest, which the morning run had marked `final`/`coverage: done` after
+three coverage critics. Surfaced only because an afternoon sweep referred
+to it in passing as "already covered."
+
+⛔ **Nvidia's pullback from its July revenue-sharing financing
+programme**, reportedly over its own employees' antitrust concerns —
+also Thursday evening, also missed. It is the likeliest cause of today's
+**-3.45%** move in the Philadelphia Semiconductor Index, which this
+session found independently in the tape before the sweep explained it.
+**Tier-1/tier-2 overlap working exactly as intended:** a direct quote-feed
+pull and a news sweep converging on the same event from opposite ends.
+
+⛔ **SoftBank's $10bn loan against its OpenAI stake**, reported 02:50 ET
+today — after the 05:00 boundary, so inside today's own digest-day — and
+missed by the 10:15 ET run.
+
+**The cause is a real hole, not carelessness.** `sources/benchmarks.yaml`
+is built from publications that post in the morning; the finalize gate
+(≥~5h after a day closes) is about those publications being *available*,
+not about the news having happened. **A story breaking 17:00–23:00 ET and
+syndicating overnight lands in a window nothing in this system checks.**
+⚠️ **The 08-27 digest predicted this exact gap in writing** — it named the
+uncurated evening as its expected blind spot — **and the pass built to
+close that gap ran three critics and missed two large stories sitting in
+it.** Two fixes proposed and deliberately NOT applied (an evening-scoped
+re-sweep inside the finalize pass; adding a wire service to the benchmark
+set): both are design decisions, not curation calls.
+
+### Corrections made before publication, not after
+
+- ✎ **Michigan inflation expectations.** A sweep reported year-ahead
+  expectations **rising to 4.3% from 4.2%**. The University of Michigan's
+  own release, read directly, says they **fell to 4.0%**. **It would have
+  flipped the day's read** from "the market repriced hawkishly against
+  softening expectations" to "expectations confirmed the move."
+- ✎ **Yield direction.** A sweep reported the 10- and 30-year as having
+  "dipped slightly or little changed"; direct index reads show both
+  **rose**. ⚠️ **No two-year yield is asserted anywhere** — two sources
+  disagreed on its sign, neither checkable before Treasury's own curve
+  posts. It is the most-quoted number in today's coverage and this map
+  does not have it, and says so.
+- ✎ **Macro calendar.** A sweep placed July PCE as today's release; it
+  published 08-26. Nothing was logged from it.
+- ✎ **A briefing overclaim caught pre-publish.** A generated site
+  briefing asserted flatly that "Nvidia agreed to acquire Hugging Face for
+  roughly $12.9 billion." This map's own record logs that reporting as
+  **split** — "agreed" in one account, "talks are underway" in another.
+  Rewritten to "is reported to have agreed… though accounts differ" in
+  both places it appeared before `--apply`.
+- ✎ **`sev=major` discipline enforced on review.** Three world-news items
+  were marked and then **un-marked**; the day ends with three across all
+  lenses (Warsh, the Anthropic ruling, the Nvidia pullback), each a
+  resolution, reversal or first-of-its-kind.
+
+### Two self-inflicted errors worth recording
+
+⚠️ **A rebuild-in-place regex deleted a real timeline entry** — the
+Round Hill Music copyright bullet on `anthropic-copyright-exposure` —
+by matching an existing same-date block. Caught by diffing before commit,
+reverted, and re-applied as a merge. **The same bug then showed up in
+softer form** on four threads where my new 08-28 blocks replaced the
+morning run's own 08-28 blocks; restored and merged so each day's block
+carries the whole day. **Lesson: rebuild-in-place means rebuilding the
+day, not overwriting it with the latest pass.**
+
+⚠️ **A `upcoming.yaml` edit broke the YAML** and the guardrail caught it
+on `safe_load`; reverted per the documented rule and redone in the
+entry's own trailing-comment style. **The guardrail did its job.**
+
+### What moved
+
+**13 timeline blocks across 13 threads · 18 `last_seen` bumps · 4
+`actor-doing.yaml` refreshes** (anthropic, nvidia, softbank,
+united-states — verified as exactly four changed, 41 of 45 byte-identical)
+**· 3 new expectations · 2 ledger entries re-swept to confirmed
+negatives.** Graph fed (07 → 06 → 03 → 09) and `graph/validate.py` clean:
+4,082 atoms, 2,466 sources, 6,567 relationships, all references resolve.
+Four site briefings regenerated, validated and applied (link coverage
+100/100/90/88%), 154 readouts exported, site pushed, Cloudflare build
+`c4ea2f38`.
+
+**Two ledger re-sweeps, both confirmed negatives rather than silence:**
+`meta-warner-csam-response` checked a third time against Warner's own
+Senate press page — nothing after the 08-18 letter, three days past the
+deadline it set, grace expires 08-29. `iran-oman-hormuz-deal-signing`
+produced its strongest confirming negative since the due date: **CENTCOM
+declared the Strait of Hormuz "open" on a day roughly 24 tankers
+transited against a pre-war norm of 120-130**, with Tehran conditioning
+movement on the US abandoning its pressure campaign.
+
+**Also newly recorded:** the US Treasury's **"Operation Economic
+Outcast"** against Iran — launched 08-24, Bessent remarks 08-26, today's
+UAE bank action — **confirmed on Treasury's own press-release index and
+none of whose three dates this map had logged.** A named multi-day US
+financial campaign ran all week unrecorded here.
+
+### Blockers, unchanged or worse
+
+- ⛔ **`bq` day twelve**, re-tested; `world-news.yaml` frozen at
+  `generated: 2026-08-25`. Needs `gcloud auth login`, which only Ben can
+  complete.
+- ⛔ **`KESTREL_CONTACT_EMAIL` unset again** — GDELT *and* Federal
+  Register both dark for a second time, eight hours after the morning run
+  recovered them and flagged the non-persistence. **Asked twice now.** Not
+  written to a shell profile without Ben's word and a chosen address.
+- ⛔ **`rss` collector** still resolving `feeds.yaml` against the kit's
+  install directory rather than this corpus — engine-side, out of write
+  zone, brief still uncommitted in cloud-researcher's inbox.
+- ⚠️ Rate-limit degradation repeated on `openalex`/`semantic_scholar`
+  (429) and `lda` (403).
+
+### One documented contradiction between two engine skills
+
+⚠️ **`/publish`'s SKILL.md says "Not part of `/daily`."** `/daily`'s own
+step 6a says "`/publish --push` ships the refreshed store to the site,"
+and step 6 records that the internal read page it used to render was
+retired on 08-25 — which makes the site push the actual publish path for
+a daily run. **Hit while consulting both for this run.** Followed
+`/daily`, since it is the later-amended file and the retirement note is
+explicit. Both are engine-owned templates; flagged, not edited.

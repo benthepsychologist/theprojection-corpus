@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-08-28 — Borrowing against the OpenAI stake rather than selling it
+
+**SoftBank is raising a reported $10bn two-year facility secured against its OpenAI stake at roughly SOFR+275bps, with Mizuho as lead arranger and proceeds likely earmarked to refinance its existing $40bn OpenAI bridge loan.** **Borrowing against the position rather than trimming it is the substantive point** — it keeps this thread's premise literally intact while stacking a second layer of leverage on a holding that is itself the collateral. ⚠️ Single-outlet and reported rather than filed. ⚠️ **Reported at 02:50 ET on 08-28 and missed by this map's own 10:15 ET run**, recovered on the afternoon pass. ⟨daily 2026-08-28⟩
+
 ## 2026-08-26 — The second leg is a 144A — the first international one in over a decade
 
 - **SoftBank's prospective $10-20bn second bond leg is a Rule 144A offering,

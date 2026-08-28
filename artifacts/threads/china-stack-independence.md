@@ -13,9 +13,11 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
-## 2026-08-28 — Tencent contests the same week, without a number anyone can check
+## 2026-08-28 — Tencent contests the week without a checkable number; Washington drafts a rule for the rental path
 
 - **Tencent claimed a new model outperforming both Z.ai's and Moonshot's, reported by Bloomberg early on 08-28** — a third major Chinese lab publicly contesting supremacy in the same week as the GLM-5.3-Flash reveal and Moonshot's Hong Kong IPO filing. ⚠️ **No benchmark, score or methodology is recorded here**: Bloomberg's original is CAPTCHA-blocked and no reachable secondary carried the methodology. The claim's existence is the entry; the number is not asserted. ⟨daily 2026-08-28⟩
+
+- **The administration is drafting a rule to cut off Chinese firms' *remote* access to US chips via cloud and rental arrangements, reportedly shareable with industry as soon as September 2026.** **The mechanism is the point:** the existing controls stop chips crossing a border, and a Chinese firm renting the same chips inside a US or third-country datacenter never triggers them — **this thread's whole subject is what China can reach, not what it can import.** ⚠️ **No rule text exists** — a drafting effort reported by one outlet with no government document published, so scope and mechanics are unconfirmed. ([Tom's Hardware, relaying The Information](https://www.tomshardware.com/tech-industry/policy/new-us-export-controls-reportedly-target-chinese-access-to-remote-ai-servers-trump-admins-cut-down-ai-diffusion-rule-could-be-shared-with-industry-as-soon-as-september)) ⟨daily 2026-08-28⟩
 
 ## 2026-08-27 — "Ox Alpha" was Z.ai, and it says it ran on Chinese silicon all week
 
