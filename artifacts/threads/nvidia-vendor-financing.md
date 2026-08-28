@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-08-27 — The equity market answers; the credit market has not been asked
+
+- **Nvidia's +8.74% close is the first market data point on the now-filed $105bn guarantee structure, and it did not read as debt-equivalent risk.** **But the thread's actual watch line asks about rating-agency treatment, and that remains unanswered:** the only agency actions on file — **Moody's Aa1 positive and S&P AA stable, both affirmed 2026-08-18** — predate both the 10-Q and this window by nine days. **No rating action, CDS print or other credit-market read has been produced since the guarantees were disclosed.** Recording the absence explicitly, because "the stock went up" is not an answer to "how do the agencies treat it." ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — The guarantees get a number, a cap and a filing date
 
 - **Nvidia's Q2 FY2027 10-Q disclosed guarantees capped at $105 billion tied to

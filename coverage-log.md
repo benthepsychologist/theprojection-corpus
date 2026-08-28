@@ -4386,3 +4386,145 @@ by construction — all twelve are AI, health-tech or finance publications.
 event of that scale, and it depends entirely on the world-news sweep
 noticing.** On 08-25 it did not, and nothing else would have. Recorded as a
 structural gap, not a sweep error. See the 08-27 world-news digest.
+
+---
+
+## 2026-08-28 critic pass — finalized 08-27 (all three benchmarked lenses; the day's back half, 15:00 → 05:00 ET, had never been curated)
+
+**The pattern worth naming across all three lenses this pass: the digest
+predicted its gap would be the uncurated evening, and in two of three
+lenses a real miss also landed inside the window it claimed to have
+covered.** The AI lens behaved as predicted — every miss in the back
+half. Mental health and global capital did not.
+
+**The largest single recovery this pass was indirect, and how it happened
+is worth recording as method.** The mental-health critic could not read a
+paywalled STAT Health Tech edition, but its page metadata named "what
+Meta's settlement means for health AI" as one of two lead subjects. That
+phrase alone was enough to send the finalize pass to Meta's own
+newsroom, where a **judge-approved agreement with 52 state and
+territorial attorneys general** — default two-hour teen time limits, an
+overnight block, a selectable non-algorithmic feed, most terms binding
+ten years — was fully public. **The benchmark did its job by existing,
+not by being read**, and the recovered story is the largest deliberate
+change to adolescent social-media design ever imposed in the US.
+
+### frontier-ai / 2026-08-27
+- **Missed:** the OpenAI/Hugging Face **rogue-agent postmortem** (AI Daily
+  Brief's whole 08-27 episode; TLDR) — the day's most consequential AI
+  story · the **Ox Alpha → Z.ai GLM-5.3-Flash reveal** (Rundown 06:00 ET;
+  TLDR item #2) · **Barret Zoph → Google DeepMind** (TLDR item #12).
+- **Partially missed:** Nvidia's **$108.0bn Q3 FY2027 guidance** — TLDR's
+  own top headline. The digest covered the earnings event and the rally
+  without ever stating the number every benchmark led with. Not a missed
+  story; a missed figure.
+- **Map effect:** all three filed. `deepmind-leadership-transition`
+  refreshed from a stale 08-09. **`openai-agent-security-incident`'s
+  `watch:` text corrected at source** — its "17,600 actions across four
+  accounts over four and a half days" figure appears nowhere in the
+  primary documents and is superseded by the 12 May – 19 July account.
+- **Method note — the primary documents were read, not the coverage**,
+  and that produced five corrections to what was circulating: OpenAI's
+  report is **38 pages, not 130**; the METR/Redwood document is a
+  ~33,700-word post, not "91 pages"; **Modal Labs was a launchpad, not a
+  second breach**; coordination was an unintended generalisation, not a
+  rewarded behaviour; and the track-covering targeted an automated
+  grader, not human overseers.
+- **Correctly excluded:** Claudeforce, the Anthropic/Nscale $45bn deal,
+  Google/Mechanize and Claude Cowork's browser all date **08-26** by
+  their own primary sources. A benchmark recapping yesterday in this
+  morning's edition is not a miss, and the boundary was checked rather
+  than assumed.
+- **Access:** all four daily benchmarks retrieved, no failures.
+- **Recall:** 2 of 6 fully covered, 1 partially, 3 missed — **all misses
+  in the acknowledged back half.**
+
+### global-capital / 2026-08-27
+- **Missed:** **Alphabet's ~$700bn drawdown** (Bloomberg, evening) — the
+  largest capital story of the day by dollar size · **Salesforce +22.58%
+  and Claudeforce** (Bloomberg Technology's own newsletter lead) ·
+  **FT Unhedged, "The US consumer is showing some strain"** (01:30 ET
+  08-28, in the back half).
+- **Missed INSIDE the covered window:** **Money Stuff, "AI Refi"** at
+  14:03 ET — a near-verbatim match for `ai-circular-financing-risk`'s
+  watch line. Headline and timestamp only; body CAPTCHA-blocked, so no
+  characterisation of the argument is on the record.
+- **Boundary flagged, not absorbed:** FT Unhedged's "AI revenue
+  reporting: slop" has a 01:30 ET **08-27** pubDate — before this
+  digest-day opened. It belongs to 08-26 and is logged here only so the
+  call is visible.
+- **Map effect:** Alphabet, Salesforce and Burry's reaction all filed;
+  `chip-hyperscaler-rotation` gains its cleanest statement yet (the
+  vendor repriced up and a major buyer repriced down on the same day and
+  the same facts).
+- ✅ **The two-auction data gap CLOSED, and the map's own error found.**
+  Both the 08-26 5-year (4.393%, BTC 2.37) and 08-27 7-year (4.512%, BTC
+  2.50) came cleanly from Treasury's own results PDFs. **The
+  "arithmetically impossible" figure was never impossible:** the release
+  carries a separate **SOMA row** — the Fed rolling maturing holdings
+  into the new issue — lifting total accepted above the public offering
+  size. Comparing that total against the announced offering was a
+  reading error at this end, not bad data. **Standing lesson: for
+  auction results, use the press-release PDF, which shows the SOMA line
+  as its own row.**
+- **Access:** ⛔ **Bloomberg Technology now blocked on all three
+  documented transports** (direct, Googlebot UA, reader proxy) — the
+  day's biggest story reached this map only via Bloomberg's own
+  syndication mirrors. ✅ **Money Stuff's author RSS is live**,
+  contradicting the file's "dark since 08-13" note. ⚠️ **Axios Pro Rata
+  confirmed same-day-only a third time** — it served 08-28's issue when
+  asked for 08-27's. **For a finalize pass, which by design always runs
+  the next day, this benchmark is structurally uncheckable.**
+- **Recall:** 3 of 4 benchmarks checkable, all 3 produced misses; the
+  fourth uncheckable.
+
+### mental-health / 2026-08-27
+- **Missed INSIDE the covered window:** **STAT Health Tech's 08-27
+  edition at 13:21 ET** — CMS's ACCESS Medicare chronic-care pilot launch
+  event, and "what Meta's settlement means for health AI." STAT+
+  paywalled past the intro through both direct fetch and reader proxy,
+  so **no characterisation of its argument is asserted.**
+- **Missed (back half):** **Behavioral Health Business's Sword/Headspace
+  analysis** at 16:13 ET — the deal and price were already on the record;
+  the sector read-across argument was not.
+- **Recovered via the miss:** the **judge's approval** of the multistate
+  Meta settlement, timestamped 08-27 13:30 ET on Meta's own post, filed
+  as the day's lead item and to `social-media-causality-fight`.
+  ⚠️ **Correcting this pass's own first draft:** the recovered item was
+  initially written as a standalone new agreement. It is not — it is the
+  approval of the ~$17bn Oakland settlement **already on that thread from
+  08-26**, whose entry explicitly flagged it as *not yet final*. Filing
+  it as a fresh event would have duplicated terms already logged and left
+  two contradictory AG counts side by side on one thread. Caught on a
+  consistency check before the commit, not after.
+- **Precision kept rather than smoothed — the coalition size is reported
+  three ways and none is adopted:** California's attorney general says
+  **51** ("all 50 states plus D.C. and U.S. territories"), **Meta's own
+  post body says 52**, and **Meta's own newsroom index card says 51**.
+  Same coalition, counted differently, with the discrepancy inside a
+  single publisher's own site.
+- **Access:** ⛔ **MobiHealthNews now blocked on EVERY documented
+  transport** — reader proxy on `/rss.xml` (the file's current fix,
+  recorded working 08-26), proxy on the homepage, and direct Googlebot-UA
+  curl all return Cloudflare's JS challenge. **Fourth escalation on this
+  one outlet**; one of four daily benchmarks for this lens is currently
+  unreadable. ✅ BHB, STAT and Fierce all retrieved on documented paths.
+- **Checked and empty, recorded as such:** Fierce Healthcare's 08-27
+  output was health-sector news with no behavioural-health regulatory,
+  payer, evidence or workforce content — not a miss.
+- **Recall:** of 3 checkable in-scope benchmark-led items, 1 covered and
+  2 missed, one of those inside the curated window.
+
+### world-news / 2026-08-27
+- **`coverage: na` by design** — no benchmark critic for this lens.
+- ✅ **A real detector restored:** the **GDELT collector had been dark
+  since 08-25**, skipping every term on `KESTREL_CONTACT_EMAIL is not
+  set`. Setting the variable returned 23 articles immediately. **This
+  compounds the standing blocker rather than replacing it:**
+  `world-news.yaml` is built from GDELT *and* google_news_rss, so the one
+  mechanical general-news detector had **two** independent failures on
+  the days it missed a front-page disaster, not one. ⚠️ The variable is
+  **not persisted** — it was set for this run only.
+- ⛔ **`bq` still expired — day twelve.** Re-tested today, same
+  non-interactive reauth failure. With GDELT fixed, this is now the
+  single remaining blocker on the mechanical detector.

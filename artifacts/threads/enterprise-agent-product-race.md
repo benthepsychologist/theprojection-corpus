@@ -13,6 +13,11 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
+## 2026-08-27 — The market prices Claudeforce at 22.58% in a day
+
+- **Salesforce closed up 22.58% at $252.05, its strongest single day since 2020**, on a Q2 FY2027 beat announced with "Claudeforce" — Claude as the reasoning model behind the Atlas Reasoning Engine and Agentforce, the default model across Slack, and a "Salesforce in Claude" plugin carrying 37 prebuilt sales skills, in open beta expected September. Revenue was **$11.345bn, up ~10.8% YoY**, adjusted EPS **$5.90 against ~$3.27 expected**, FY2027 guidance raised $300M to $46.1-46.4bn. **The land-grab reading is distribution:** a frontier lab reaching enterprise seats through an incumbent's install base rather than its own product surface. ⚠️ **No dollar value is attached to the partnership** in either company's materials; **"Claudeforce" is Salesforce's own branding** and does not appear on Anthropic's newsroom, though Amodei is quoted in Salesforce's release; and **$200M of the $300M guidance raise is attributed to the pending Contentful and Fin acquisitions**, not organic growth.
+  ([Salesforce investor relations](https://investor.salesforce.com/news/news-details/2026/Salesforce-and-Anthropic-Announce-Claudeforce-The-1-AI-Meets-the-1-AI-CRM)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — Claudeforce puts the CRM inside the model, not the model inside the CRM
 
 - **Salesforce and Anthropic announced "Claudeforce," a 37-skill Salesforce

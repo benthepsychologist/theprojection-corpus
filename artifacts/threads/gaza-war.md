@@ -17,6 +17,16 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-28 — Three farmers from one family killed in Khan Younis
+
+- **Israeli fire killed three farmers from the Abdeen family in the al-Qarara area of Khan Younis** — named by Palestinian medical and local sources as Lafi Fayez Lafi Abdeen (42), Taysir Fayez Lafi Abdeen (28) and Abdul-Hamid Mohammad Abdeen (42) — with further strikes reported in Rafah, Gaza City's Tuffah neighbourhood and near Bureij camp, artillery near Kamal Adwan Hospital in Beit Lahia, and Israeli vehicles reported surrounding a family near Zeitoun amid gunfire and bulldozer land-clearing. **Logged as continuation, not escalation** — it answers this thread's standing question of whether the low-boil pattern holds, and it holds. ⚠️ **All identifications and accounts here are Palestinian-sourced and not independently confirmed.**
+  ([IMEMC](https://imemc.org/article/three-killed-as-israeli-strikes-continue-in-gaza/)) ⟨daily 2026-08-28⟩
+
+## 2026-08-27 — The post-ceasefire toll passes 1,300
+
+- **Gaza's health ministry's post-ceasefire death toll is now reported at over 1,300 killed and 4,000-plus injured**, against roughly 1,200 in this map's 08-25 entry — with its cumulative total since October 2023 given as 73,438 killed and 174,447 injured. **The post-ceasefire figure is the one this thread tracks**, because it is the measure of whether the pattern is tapering; roughly a hundred additional deaths in two days says it is not. ⚠️ **These are the health ministry's figures, reported by Al Jazeera**, not independently confirmed against an Israeli or third-party source.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — The ceasefire plan's own overseer publicly rebukes Israel
 
 - **Nikolay Mladenov, the Board of Peace's high representative and the official

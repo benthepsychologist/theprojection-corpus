@@ -12,6 +12,17 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
+## 2026-08-28 — Warsh had the podium and did not mention it
+
+- **The keynote this thread was waiting on did not touch the long-end or buyback question, and the silence is checkable rather than inferred.** Warsh's "In Our Time," delivered 10:00 ET, was read directly from the Fed's own released text: the words **"independence," "administration," "buyback," "long end" and "average inflation" appear nowhere in it**, and the single occurrence of "Treasury" refers to Treasury securities as one market signal among several the Fed should read. **This thread's watch line asked specifically whether the keynote would address the TGA mechanism. The answer is no — a resolved negative, not a research gap.** What he gave instead: a refusal to offer a reaction function ("some simple function like a Taylor rule" cannot be "rigorously relied upon"), an argument that forward guidance "has overstayed its welcome," 12-month PCE at **3.7%** and six-month at **4.1%** against a **firm 2% target** with no averaging language, and a substantial section on AI.
+  ([Federal Reserve, released text](https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm)) ⟨daily 2026-08-28⟩
+
+## 2026-08-27 — The 7-year prices cleanly, and the "impossible" 5-year turns out to have been read wrong
+
+- **The 7-year note auction (CUSIP 91282CRJ2) came at a high yield of 4.512% with a bid-to-cover of 2.50**, $110.220bn tendered against $44.000bn accepted, allotted 97.63% at the high, price 99.928654. **The award skewed away from dealers:** indirect bidders took **$26.677bn** of the $43.894bn competitive award against direct at $11.833bn and primary dealers at just **$5.383bn**. That is solid demand, and a data point against rather than for the fiscal-dominance framing this thread tracks.
+  ✅ **And the two-auction data gap is closed, with the map's own error found.** For two runs this thread could not state the 08-26 5-year because a source returned an amount-accepted exceeding the amount offered. Treasury's own release explains it: the public offering was $70bn, the subtotal accepted **$70,000,046,900**, and then a **SOMA line of $8,998,900,900** — the Federal Reserve rolling maturing holdings into the new issue — lifting the **total accepted to $78,998,947,800**. **The impossible number was never impossible; it was the Fed's add-on, compared against the wrong denominator at this end.** The same structure sits in the 7-year release ($5,656,451,900 SOMA). The 5-year priced at **4.393%, bid-to-cover 2.37**. All figures re-extracted from the PDFs directly.
+  ([7-year results](https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/R_20260827_3.pdf), [5-year results](https://www.treasurydirect.gov/instit/annceresult/press/preanre/2026/R_20260826_3.pdf)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-27 — Jackson Hole opens; the keynote that matters is tomorrow
 
 - **The Kansas City Fed's Jackson Hole symposium opened under the theme

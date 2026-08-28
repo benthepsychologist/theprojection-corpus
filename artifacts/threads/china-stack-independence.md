@@ -13,6 +13,16 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-28 — Tencent contests the same week, without a number anyone can check
+
+- **Tencent claimed a new model outperforming both Z.ai's and Moonshot's, reported by Bloomberg early on 08-28** — a third major Chinese lab publicly contesting supremacy in the same week as the GLM-5.3-Flash reveal and Moonshot's Hong Kong IPO filing. ⚠️ **No benchmark, score or methodology is recorded here**: Bloomberg's original is CAPTCHA-blocked and no reachable secondary carried the methodology. The claim's existence is the entry; the number is not asserted. ⟨daily 2026-08-28⟩
+
+## 2026-08-27 — "Ox Alpha" was Z.ai, and it says it ran on Chinese silicon all week
+
+- **The anonymous model that had been serving large volumes on OpenRouter for a week is Z.ai's GLM-5.3-Flash, and Z.ai says the traffic ran entirely on domestic Chinese chips.** Its own documentation gives **320B total parameters, 18B activated**, natively multimodal, **MIT-licensed**, and calls it the first open-source frontier model combining sparse and linear attention. In Z.ai's words: *"Over the past week, we have served GLM-5.3-Flash on a large-scale cluster of Chinese AI chips... with all of this traffic served on Chinese AI chips."* **This is the inference-side counterpart to everything this thread tracks on fabrication** — not a demo, but frontier-class serving at real volume on non-Nvidia silicon, unannounced, for a week, undetectable from the outputs.
+  ⚠️ **Three corrections against Z.ai's own materials, made before filing.** The **"100,000 chips" figure is not Z.ai's** — it traces to an SCMP paraphrase; Z.ai says **"tens of thousands."** Z.ai **names no chip vendor** — not Ascend, not Cambricon. And the claim is about **serving, not training**; a separate unverified Ascend claim concerns GLM-5's training and must not be merged in. All of it is **company self-report**: no power draw, throughput, utilisation or Nvidia-normalised comparison was published, and none is independently audited.
+  ([Z.ai docs](https://docs.z.ai/guides/vlm/glm-5.3-flash), [Hugging Face model card](https://huggingface.co/zai-org/GLM-5.3-Flash)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-27 — Nvidia optimises for the Chinese models it cannot sell chips into
 
 - **Nvidia is adding day-zero support and clustering optimisations for Chinese

@@ -10,6 +10,11 @@ opened: 2026-08-05
 
 *Watch:* Demis Hassabis is stepping down as DeepMind CEO to become chairman and Alphabet's Chief Scientist; Koray Kavukcuoglu is promoted to DeepMind SVP, reporting directly to Pichai. Separately, Jeff Dean — Google's longest-tenured engineering leader, 27 years — is leaving to found "Discovery Loop," an AI-for-science startup Google itself is backing. First leadership change at the top of a frontier lab this map has tracked. Watch: whether this reads as succession planning or a real strategy shift (does DeepMind's model pace or priorities change under Kavukcuoglu?); what Hassabis's chairman + Chief Scientist role actually does day to day vs. is honorary; what Discovery Loop builds and whether Google backing a departing exec's startup becomes a pattern; whether other frontier labs see similar moves.
 
+## 2026-08-27 — Barret Zoph arrives as VP of Research, into the function whose departures are being priced
+
+- **Barret Zoph joined Google DeepMind as VP of Research**, working on Gemini's reinforcement-learning and post-training — the pipeline Koray Kavukcuoglu now runs day to day. The route back is unusual: Google Brain resident, Google researcher to 2022, OpenAI post-training lead, co-founder of Thinking Machines Lab with Mira Murati, pushed out by Murati in January over disputed "performance, conduct and trust issues", a five-month return to OpenAI, and now Google again. **The reason it belongs on this thread rather than in a gossip column** is the timing: this is senior inbound research talent arriving in the exact week Alphabet's ~$700bn drawdown is being attributed, by Bloomberg, to research departures including Jeff Dean's and Hassabis's own exit as DeepMind CEO. ⚠️ Neither a Google/DeepMind post nor Zoph's own statement could be retrieved directly; the report is TechCrunch's, with Reuters and WSJ in the same window. Thinking Machines has not commented.
+  ([TechCrunch](https://techcrunch.com/2026/08/27/barret-zoph-the-thinking-machines-co-founder-who-defected-to-openai-is-now-at-google/)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-06 — Market reacts; Hassabis's exit was a year in the making; Discovery Loop's founding team named
 
 - **Alphabet/Google shares fell roughly 4-5% (~$160-200B in market cap) the day of

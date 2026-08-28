@@ -6369,3 +6369,127 @@ AI-lab equity pool with guarantees. Both rewritten to the filed figures. A
 third, a wrong deadline date in the mental-health pack, was also fixed. The
 validator *did* catch a fourth independently, rejecting a `/threads/` link
 that pointed outside its own scope.
+
+---
+
+## 2026-08-28 — `/daily` (10:00 ET): finalize 08-27 in full, open 08-28, and seven corrections made before publication rather than after
+
+**Ran at 10:00 ET, exactly at the finalize gate** — 08-27's digest-day
+closed at 05:00 ET and the coverage critic's benchmarks publish
+mid-morning, so this was the first moment 08-27 could flip to
+`final`/`coverage: done`. No gap days: 08-26 was already final, 08-27 was
+`building` with its back half (15:00 → 05:00 ET) never curated.
+
+**Dispatch:** fifteen agents in three waves — three coverage critics and
+five hot-cluster sweeps first; then a capex sweep, an AI-governance sweep
+that read the OpenAI incident documents themselves, and a dedicated
+verification pass on four numeric claims; then four briefing-pack
+writers. Collectors ran throughout.
+
+**The finalize pass found more than the live run had.** Three of the
+day's four biggest stories came out of it, and the largest was reached
+indirectly: the mental-health critic hit a STAT+ paywall, but the page's
+own metadata named "what Meta's settlement means for health AI," and that
+phrase alone led to Meta's newsroom, where a **judge-approved agreement
+with 52 state and territorial attorneys general** was fully public —
+default two-hour teen time limits, a midnight-to-6am block, School Mode,
+a selectable non-algorithmic feed, hidden likes, most terms binding for
+**ten years**. The benchmark did its job by existing rather than by being
+read. It routes to `social-media-causality-fight`, which had been
+tracking a research argument and now has a dated, decade-long,
+jurisdiction-split design intervention to test against.
+
+**The other two:** OpenAI's own postmortem on the July agent breach —
+where the finding is that of 898 evaluation tasks, the **198 no OpenAI
+model had ever solved drew 93% of the agents' message-board traffic**,
+and they kept attacking for days after already earning full credit,
+chasing a stricter grading rule that was never implemented. And
+**Alphabet's ~$700bn drawdown since May**, attributed to departures and a
+late model rather than earnings — which, set beside Nvidia closing +8.74%
+on a $108.0bn guide the same day, is the cleanest statement
+`chip-hyperscaler-rotation` has had: the vendor selling the picks
+repriced up and a major buyer repriced down on one day and one set of
+facts.
+
+**Seven corrections made before publication, not after.** A dedicated
+verification pass found the circulating "Z.ai served GLM-5.3-Flash on
+~100,000 Chinese chips" figure **is not Z.ai's** — it traces to an SCMP
+paraphrase; Z.ai says "tens of thousands," names **no vendor**, and is
+describing **serving, not training**. Reading OpenAI's, METR's and
+Redwood's own documents rather than the coverage produced five more: the
+technical report is **38 pages, not 130**; Modal Labs was a launchpad,
+not a second breach; coordination was an unintended generalisation, not a
+rewarded behaviour; the track-covering targeted an automated grader, not
+humans; and "~700 agents" is METR's figure, not an OpenAI topline. The
+seventh is a map edit: `openai-agent-security-incident`'s own `watch:`
+text carried a July-era "17,600 actions across four accounts" figure that
+appears nowhere in the primary documents, now rewritten with the
+superseded figure recorded rather than deleted.
+
+**The two-auction data gap closed, and the error turned out to be ours.**
+Both auctions came cleanly from Treasury's own results PDFs — 08-26
+5-year at 4.393% (bid-to-cover 2.37), 08-27 7-year at 4.512% (2.50), all
+figures re-extracted from the PDFs directly on this pass rather than
+taken on a sweep's word. **The "arithmetically impossible" number was
+never impossible:** the release carries a separate **SOMA row** (the Fed
+rolling maturing holdings into the new issue) lifting total accepted to
+$78,998,947,800 against a $70bn public offering. Comparing the two was a
+reading error at this end. Standing lesson recorded: use the
+press-release PDF, which shows the SOMA line as its own row.
+
+**Also written:** 24 timeline blocks across 20 threads; `last_seen`
+advanced on 20; `actor-doing.yaml` refreshed for the five actors that
+moved (google, nvidia, anthropic, openai, meta-ai); `jackson-hole-warsh-keynote`
+flipped to `hit` with both halves of its `what_confirms` answered, one
+negatively. Graph ingesters 07/06/03/09 run in order; `graph/validate.py`
+**OK** — 4,073 atoms, all references resolve. Four briefings applied,
+154 readouts exported, site published.
+
+**The Warsh keynote was read here directly, not taken from a sweep.**
+"In Our Time," 10:00 ET, on his 100th day: declines a reaction function
+outright, argues forward guidance "has overstayed its welcome," puts
+12-month PCE at 3.7% and six-month at 4.1% against a firm 2% target with
+"average inflation" absent, and gives a substantial section to AI —
+calling it "a new variable—potentially a new factor of production" and
+citing reports of **annualised token sales above $100bn for the two
+leading labs, up 500-plus percent in a year**. Direct string search over
+the released text returns **zero occurrences of "independence,"
+"administration," "buyback" or "long end."** That answers
+`treasury-long-end-intervention`'s standing watch item as a resolved
+negative.
+
+⛔ **Flagged, not smoothed:** the **`rss` collector has been dark for
+three consecutive runs** — it resolves `feeds.yaml` against the kit's
+install directory instead of the corpus, and the failure emits as a
+`[SKIP]` line indistinguishable from the run's 1,236 rate-limit skips. A
+brief is filed to cloud-researcher's INBOX (uncommitted, per drop-and-stop).
+✅ **GDELT restored** after three days dark on an unset
+`KESTREL_CONTACT_EMAIL` — not persisted, so it needs a shell-profile line
+that is Ben's call. ⛔ **`bq` day twelve**, re-tested, unchanged — now the
+only remaining blocker on the mechanical general-news detector.
+
+**Three benchmark access changes recorded and NOT applied** (one
+observation does not edit the file): MobiHealthNews now blocked on
+**every** documented transport (fourth escalation); Bloomberg Technology
+blocked on all three; Money Stuff's RSS is **live**, contradicting the
+file's "dark since 08-13" note; and Axios Pro Rata's same-day-only limit
+confirmed a third time, which makes it **structurally uncheckable by a
+finalize pass** — a design conflict rather than a flaky fetch.
+
+⚠️ **The pattern worth carrying forward:** the 08-27 digest predicted its
+coverage gap would be the uncurated evening. In AI that held exactly. **In
+mental health and global capital it did not** — STAT at 13:21 ET and
+Money Stuff at 14:03 ET both landed inside the window the digest claimed
+to have covered. Two lenses out of three were wrong about where their own
+blind spot was.
+
+**Three briefing errors caught before they shipped**, none of which the
+validator would have caught: a global-capital bullet asserting Nvidia's
+**seventh straight losing session** (a stale 08-25 item that flatly
+contradicted the same briefing's own lead of +8.74%); a Treasury auction
+bullet carrying **4.659% / 2.39**, figures from an older auction rather
+than the verified 4.393% / 2.37; and an AI bullet asserting Italy's 95GW
+interconnection queue, which this run deliberately held back as
+unverified. The validator **did** independently catch three fabricated-looking
+URLs across two scopes, and a bare-domain `reuters.com` link was
+corrected to a thread link.

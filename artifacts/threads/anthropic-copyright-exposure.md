@@ -10,6 +10,11 @@ opened: 2026-08-06
 
 *Watch:* Two angles surfaced the same day (2026-08-05/06): Anthropic sought partial dismissal in the "Concord II" music-publishers' copyright suit, and a Euronews investigation ("Project Panama") detailed how Anthropic physically shredded scanned books to train Claude. Distinct from the $1.5B author copyright settlement already noted on Anthropic's standing synthesis (a different, earlier case). Watch: the Concord II dismissal ruling; further reporting on the book-shredding practice and whether other labs did the same; any read-through to Anthropic's IPO risk disclosures.
 
+## 2026-08-27 — Anthropic and Suno each move to keep the Round Hill cases apart
+
+- **Both defendants in Round Hill Music's $1bn copyright actions are reported to be resisting having their cases heard together.** ⚠️ **Headline-level only** — the article body returned 403 on every direct and proxied fetch, so the procedural mechanism, court and reasoning are **not** stated here. **Why it is filed anyway:** if Anthropic is arguing separation, that is a defence-posture signal worth dating — it would want its text-training fair-use arguments kept clear of Suno's music-generation exposure, which is exactly the distinction this thread's Bartz and Concord II precedent-tracking turns on. Treated as a lead to confirm, not a finding.
+  ([Digital Music News](https://www.digitalmusicnews.com/), headline indexed 2026-08-27 21:54 ET) ⟨daily 2026-08-27⟩
+
 ## 2026-08-17 — A new plaintiff, and a $1bn claim over music
 
 - **Music publisher Round Hill Music filed $1 billion copyright-infringement

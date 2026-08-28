@@ -39,6 +39,11 @@ night price action.
     frontmatter via /steer only.
 -->
 
+## 2026-08-27 — The rotation shows up as concentration instead: one stock up, the average stock down
+
+- **Nvidia's beat lifted the indices while the market underneath fell.** Nvidia closed **+8.74% at $227.98**, pulling the Nasdaq up ~1.5% and the S&P ~0.7% — but **tech was the only advancing S&P sector, a slim majority of US stocks fell, and only 6 of the Dow's 30 components rose** while the index closed up ~0.2%. **This sharpens rather than confirms the thread's thesis:** what showed up was not a sector reallocation from hyperscalers into chipmakers but a single-name earnings event carrying the index. **On the other side of the same tape, Alphabet's slide from its May peak reached roughly $700bn**, about 15% off its 05-13 all-time-high close of $402.38, closing 08-27 at $340.65. **The vendor selling the picks repriced up and one of the largest buyers repriced down, on the same day and the same set of AI facts** — which is a cleaner statement of the rotation than any sector chart.
+  ([Bloomberg on Alphabet](https://www.bloomberg.com/news/articles/2026-08-27/alphabet-loses-692-billion-in-market-value-as-ai-questions-rise), [Nvidia investor relations](https://investor.nvidia.com/news/press-release-details/2026/NVIDIA-Announces-Financial-Results-for-Second-Quarter-Fiscal-2027)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-27 — The beat carries into the cash session and lifts the complex
 
 - **Nvidia's beat pulled the chip complex and the indices up in Thursday's

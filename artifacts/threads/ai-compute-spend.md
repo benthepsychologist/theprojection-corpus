@@ -10,6 +10,11 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia, TPU) as the giants try to stop renting from Nvidia. Category meta under where-the-capex-lands.
 
+## 2026-08-27 — A neocloud shows the price of GPU debt, three points apart on the same collateral
+
+- **IREN guided to $25-30bn of fiscal-2027 capital expenditure and disclosed the stack that funds it.** FY26 results, released after the close and filed on an 8-K the same day, show **AI Cloud revenue of $70.5M for the year** against **$4bn of contracted annualised recurring revenue** for 2026 capacity, $1bn already operating after Microsoft accepted its Childress, Texas "Horizon 1" site. The financing: a **$3.6bn investment-grade GPU facility at 6.0%** tied to the Microsoft contract, plus **$2.8bn of new GPU debt including a $2.4bn tranche led by Blue Owl and PIMCO at 9.0%** for its Mackenzie site, ending the year with $14bn liquidity. **The 300-basis-point spread is the entry:** same borrower, same collateral class, priced three points apart on whether a hyperscaler contract sits behind it. That is the market pricing counterparty quality, not GPUs. ⚠️ Forward guidance plus freshly closed debt — **not cash already spent.**
+  ([GlobeNewswire](https://www.globenewswire.com/news-release/2026/08/27/3352401/0/en/iren-reports-fy26-results.html)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-22 — Nvidia raises AI server prices more than 15%, and blames memory
 
 - **Nvidia notified the contract manufacturers building AI servers for

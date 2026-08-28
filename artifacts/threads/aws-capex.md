@@ -12,6 +12,11 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-08-28 — Four Swedish wind PPAs, 199MW
+
+- **Amazon contracted 199MW of Swedish wind across four PPAs** — Mirova's Boarp (17.5MW), Dållebo (18MW) and Fågelås (31.5MW), plus 132MW from OX2's Fageråsen farm in Dalarna County — reportedly pushing its contracted Swedish power past 1GW to support local data-centre expansion. **Filed as a power-procurement datapoint rather than a capex one:** these are offtake agreements against mostly already-operating farms, which is a different commitment from building generation. ⚠️ **UNVERIFIED DATE and secondary-sourced** — Amazon's own release could not be retrieved.
+  ([Data Center Dynamics](https://www.datacenterdynamics.com/en/news/amazon-signs-199mw-worth-of-ppas-across-sweden-with-ox2-and-mirova/)) ⟨daily 2026-08-28⟩
+
 ## 2026-08-26 — Two million more GPUs, announced against the demand-plateau argument
 
 - **AWS said it will buy two million more Nvidia GPUs and adopt Nvidia's new

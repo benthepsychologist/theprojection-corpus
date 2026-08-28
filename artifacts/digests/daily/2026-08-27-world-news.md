@@ -1,15 +1,18 @@
 ---
 lens: world-news
 date: 2026-08-27
-status: building
+status: final
 window_start: 2026-08-27T05:00:00-04:00
-as_of: 2026-08-27T15:00:00-04:00
+window_end: 2026-08-28T05:00:00-04:00
+finalized: 2026-08-28T10:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-27
 
-*Curated agentic-interim, 05:00 ET → 15:00 ET, one run. Sources: one
+*Curated agentic-interim, the full 05:00 ET → 05:00 ET digest-day, across
+two runs — the 08-27 15:00 ET run and the 08-28 finalize pass, which
+curated the back half. Sources: one
 two-window geopolitics sweep covering this day and 08-26's back half, one
 dedicated primary-source verification agent on the Nepal-Tibet disaster
 (USGS, Nepal's Emergency Operations Centre, Xinhua), and a collector
@@ -34,7 +37,15 @@ today as a late catch**, running 24 hours from the catch rather than from
 the event. Elsewhere: Hezbollah put two drones over Israeli troops in
 south Lebanon and Israel struck back, and Washington said publicly it is
 "not talking to Iran" while Qatar's foreign minister flew to Tehran to
-try to change that.
+try to change that. **Overnight, Russia flew a second consecutive night
+of drone saturation at Ukraine** — 164 drones, no ballistic missiles,
+and a target set that shifted onto warehouses rather than housing — and
+Gaza's post-ceasefire death toll passed thirteen hundred by the health
+ministry's count, a hundred higher than this map's reading two days
+earlier. **One thing did get fixed today**: the GDELT collector,
+half of this lens's mechanical detector, turned out to be dark on a
+single unset environment variable and now works again. The BigQuery half
+still does not.
 
 ## Items
 
@@ -103,6 +114,45 @@ try to change that.
   [Kyiv Independent](https://kyivindependent.com/zelenskys-chief-of-staff-budanov-features-in-tapes-linked-to-latest-corruption-case-media-say/))
   <!-- k: t=russia-ukraine-war e= axis=items -->
 
+- **Russia flew a second consecutive night of drone saturation at
+  Ukraine, and this time sent no ballistic missiles with it.** Ukraine's
+  Air Force said **164 Shahed-type attack and decoy drones** — roughly
+  half of them jet-powered — were launched from Orel, Bryansk and
+  Millerovo inside Russia and from occupied Donetsk and Crimea beginning
+  around 11:00 ET on 08-27 and continuing overnight; it reported **137
+  intercepted**, with about ten still airborne at 09:00 Kyiv time, and
+  **hits at 16 locations**. The Kyiv Independent's rolling count put **at
+  least 10 killed and 43 injured** across Kharkiv, Sumy, Zaporizhzhia,
+  Kherson, Donetsk and Dnipropetrovsk oblasts over the past day. **The
+  targeting is the development, not the volume:** in Kyiv Oblast the
+  strikes concentrated on **at least 14 warehouses** rather than
+  residential blocks, including a destroyed book warehouse serving the
+  Readeat chain and Ukrainian publishers, alongside 16 houses and three
+  apartment buildings damaged; in Zaporizhzhia a drone burned roughly
+  2,000 square metres of an Epicentr home-improvement store, per regional
+  governor Ivan Fedorov. ⚠️ **Casualty figures diverge sharply by
+  publication hour** — contemporaneous wire copy put the toll at 2 killed
+  and 14 wounded against the Kyiv Independent's later 10 and 43. The
+  higher figure is the later and more complete snapshot of a rolling
+  count, not a contradiction, and both are the Ukrainian side's.
+  ([Kyiv Independent](https://kyivindependent.com/warehouses-targeted-outside-kyiv-in-all-day-drone-attack-as-russian-forces-kill-at-least-10-injure-43-over-past-day-across-ukraine/),
+  [UNN, the Air Force interception figures](https://unn.ua/en/news/137-of-164-enemy-drones-were-neutralized-over-ukraine-overnight))
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **Gaza's health ministry's post-ceasefire death toll passed 1,300, up
+  from roughly 1,200 in this map's 08-25 entry.** Al Jazeera reported the
+  ministry's count on 08-27 at **over 1,300 killed and 4,000-plus
+  injured** since the ceasefire, against a cumulative total since October
+  2023 given as **73,438 killed and 174,447 injured**. **The
+  post-ceasefire number is the one this thread tracks**, because it
+  measures whether the low-boil strike pattern is tapering; a hundred
+  additional deaths in roughly two days says it is not. ⚠️ **Every figure
+  here is the Gaza health ministry's**, reported by Al Jazeera and not
+  independently confirmed against an Israeli or third-party source.
+  Attributed, not asserted.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying))
+  <!-- k: t=gaza-war e= axis=items -->
+
 ## 🚨 Flash
 
 🚨 **FLASH FILED — `nepal-tibet-glacier-collapse-flood`.** The first
@@ -158,7 +208,18 @@ one in `coverage-log.md`.
 - ✎ **Name correction to the 08-26 digest:** the Ukrainian chief of staff
   is **Kyrylo** Budanov, not Andriy. Fixed at source in that digest.
 - No thread adds, retires or renames from this lens today.
-- ⛔ **`attention/world-news.yaml` could not be regenerated — day eleven.**
+- ✅ **The GDELT collector is UNBLOCKED — a one-variable fix, found this
+  pass.** `gdelt` had been silently dark since 08-25, skipping every term
+  with "KESTREL_CONTACT_EMAIL is not set" (the collector declares a
+  contact address in its User-Agent per the upstream source's fair-access
+  policy). Re-running with the variable set returned 23 articles
+  immediately. **This matters specifically for this lens:**
+  `world-news.yaml` is built from GDELT *and* google_news_rss, so its one
+  mechanical detector had two independent failures, not one, on the days
+  it missed a disaster. **The variable is not persisted** — it was set
+  for this run only, and belongs in the shell profile. See the front
+  digest's blocked list.
+- ⛔ **`attention/world-news.yaml` could not be regenerated — day twelve.**
   It still carries `generated: 2026-08-25`. The rebuild runs through
   BigQuery and the `bq` credential is expired; `gcloud auth login` opens a
   browser flow **only Ben can complete**. Today that cost is not

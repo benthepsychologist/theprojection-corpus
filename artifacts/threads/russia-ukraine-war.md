@@ -18,6 +18,11 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-08-27 — A second night of drone saturation, no ballistic missiles, and the targets move to warehouses
+
+- **Ukraine's Air Force reported 164 Shahed-type attack and decoy drones — about half jet-powered — launched from Orel, Bryansk and Millerovo inside Russia and from occupied Donetsk and Crimea from around 11:00 ET and continuing overnight, with 137 intercepted and hits at 16 locations.** The Kyiv Independent's rolling count put **at least 10 killed and 43 injured** across Kharkiv, Sumy, Zaporizhzhia, Kherson, Donetsk and Dnipropetrovsk oblasts. **The targeting is the development, not the volume:** in Kyiv Oblast the strikes concentrated on **at least 14 warehouses** rather than housing — including a destroyed book warehouse serving the Readeat chain and Ukrainian publishers — alongside 16 houses and three apartment buildings damaged, while a drone burned ~2,000 square metres of an Epicentr store in Zaporizhzhia per governor Ivan Fedorov. A second consecutive large-scale night, but drone-only where 08-26 was combined. ⚠️ **Casualty counts diverge by publication hour** — contemporaneous wire copy said 2 killed and 14 wounded against the later 10 and 43; the higher figure is the more complete snapshot of a rolling count, and **both are the Ukrainian side's**.
+  ([Kyiv Independent](https://kyivindependent.com/warehouses-targeted-outside-kyiv-in-all-day-drone-attack-as-russian-forces-kill-at-least-10-injure-43-over-past-day-across-ukraine/), [UNN](https://unn.ua/en/news/137-of-164-enemy-drones-were-neutralized-over-ukraine-overnight)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — An hours-long combined barrage on Kyiv, and the graft case reaches the president's chief of staff
 
 - **Russia struck Kyiv and several other regions with an hours-long combined

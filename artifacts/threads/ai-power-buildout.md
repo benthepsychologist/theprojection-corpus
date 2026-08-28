@@ -10,6 +10,16 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-08-28 — Amazon adds ~200MW of Swedish wind
+
+- **Amazon signed four Swedish wind PPAs totalling 199MW** — three against Mirova's "Saena" portfolio of operating farms (Boarp 17.5MW, Dållebo 18MW, Fågelås 31.5MW) and one for 132MW from OX2's 189MW Fageråsen farm in Dalarna County — reportedly taking its contracted Swedish power past 1GW, tied to local data-centre expansion. ⚠️ **UNVERIFIED DATE, secondary source only:** this rests on a trade-press listing; Amazon's own release could not be retrieved to pin the announcement timestamp, and the MW figures and counterparties are that outlet's.
+  ([Data Center Dynamics](https://www.datacenterdynamics.com/en/news/amazon-signs-199mw-worth-of-ppas-across-sweden-with-ox2-and-mirova/)) ⟨daily 2026-08-28⟩
+
+## 2026-08-27 — New Jersey makes big data centres report what they burn and drink
+
+- **Governor Mikie Sherrill signed S3379, requiring every data centre over 100MW in New Jersey — new and existing — to file semiannual reports to the Board of Public Utilities for three years**, disclosing total energy consumption, the cooling-versus-IT-equipment split, peak daily water use, water sourcing, and on-site and backup power supply. It follows a July law requiring data centres to bring their own clean energy and creating a separate large-load ratepayer class. **This is a disclosure mandate, not a siting decision, and that is exactly why it matters to this thread** — the energy-justice fights it tracks have been fought without data, and a state regulator is now building the instrument to measure the thing before deciding about it.
+  ([New Jersey Monitor](https://newjerseymonitor.com/2026/08/27/data-centers-water-energy-use-law/), [bill text](https://legiscan.com/NJ/bill/S3379/2026)) ⟨daily 2026-08-27⟩
+
 ## 2026-08-26 — The Camellia deadline resolves: the campus clears, ratepayer terms attached
 
 - **Georgia Power announced its 3.2 GW Camellia contract with OpenAI "cleared" PSC regulatory review, at 9:00pm ET on 08-26** — the outcome of the 08-25 deadline this thread already logged, where staff had signalled they would object absent changes. The power-economics terms Georgia Power attaches: OpenAI funds 100% of its own infrastructure, commits up to 1,000MW of flexible demand response (load it can be asked to shed at peak), and the contract is framed as delivering ~$950M/year in system-wide ratepayer savings starting 2029 across Georgia Power's large-load portfolio. ⚠️ Whether PSC staff affirmatively signed off or simply let the deadline pass without filing the referral they had signalled is not independently confirmed — flagged for follow-up on `camellia` and `ai-datacenter-sites`. If the demand-response and cost-allocation terms hold as described, this is a rare case in this thread's coverage of a siting fight producing enforceable grid terms rather than just a permit.
