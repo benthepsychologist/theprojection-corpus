@@ -240,6 +240,8 @@ for cid in sorted(flow_claim_ids):
     else:
         label = f"{source_label} → {target_label}"
     leaf_id = "q1-" + cid
+    epistemic_status = c.get("epistemic_status", "accepted")
+    explains_claim = c.get("meta", {}).get("explains_claim")
     claims_out.append({
         "id": leaf_id,
         # None, not the company's own slug: a vendor_unspecified claim
@@ -250,6 +252,8 @@ for cid in sorted(flow_claim_ids):
         "dimension": "q1-flow",
         "label": label,
         "vendor_unspecified": vendor_unspecified,
+        "epistemic_status": epistemic_status,
+        "explains_claim": ("q1-" + explains_claim) if explains_claim else None,
         "value": lead,
         "basis": lead,
         "confidence": band or "low",
@@ -262,13 +266,36 @@ for cid in sorted(flow_claim_ids):
         "sources": src_objs,
     })
 
-    leaf_ids_by_flow_type.setdefault(flow_type, []).append((leaf_id, amount if is_point_usd else None))
-    leaf_ids_by_destination.setdefault(destination, []).append((leaf_id, amount if is_point_usd else None))
+    # Hypothesized claims (graph/ingest/11_q1_vendor_hypotheses.py -- Ben:
+    # "What's everything we know about where this money went?") are
+    # evidence ABOUT a slice of an already-tracked figure, not an
+    # additional, separate flow -- summing them into flow-type/destination
+    # totals would double-count against the parent claim they explain.
+    # They still get their own recipient bucket (a real, different company
+    # than the payer), which is exactly the point: showing "Arizona State
+    # Land Department: $197.25M" as a genuine recipient, distinct from and
+    # not netted against "Unnamed vendors (via TSMC's capex)".
+    if epistemic_status != "hypothesized":
+        leaf_ids_by_flow_type.setdefault(flow_type, []).append((leaf_id, amount if is_point_usd else None))
+        leaf_ids_by_destination.setdefault(destination, []).append((leaf_id, amount if is_point_usd else None))
     leaf_ids_by_recipient.setdefault((recipient_slug, recipient_label), []).append((leaf_id, amount if is_point_usd else None))
     if not is_point_usd:
-        skipped_non_point["flow_type"][flow_type] = skipped_non_point["flow_type"].get(flow_type, 0) + 1
-        skipped_non_point["destination"][destination] = skipped_non_point["destination"].get(destination, 0) + 1
+        if epistemic_status != "hypothesized":
+            skipped_non_point["flow_type"][flow_type] = skipped_non_point["flow_type"].get(flow_type, 0) + 1
+            skipped_non_point["destination"][destination] = skipped_non_point["destination"].get(destination, 0) + 1
         skipped_non_point["recipient"][recipient_slug] = skipped_non_point["recipient"].get(recipient_slug, 0) + 1
+
+# Cross-reference pass: attach each hypothesis claim's own leaf id onto the
+# ORIGINAL claim it explains, so that claim's page can show "here's what's
+# separately been reported about where this went" without pretending the
+# hypotheses are members that sum to its total (they aren't -- see above).
+explained_by = {}
+for c in claims_out:
+    if c.get("explains_claim"):
+        explained_by.setdefault(c["explains_claim"], []).append(c["id"])
+for c in claims_out:
+    if c["id"] in explained_by:
+        c["hypothesized_recipients"] = explained_by[c["id"]]
 
 
 def make_aggregate(agg_id, dimension, short_label, label, member_pairs, subject=None, skipped=0):
