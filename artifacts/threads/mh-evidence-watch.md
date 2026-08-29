@@ -16,6 +16,10 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-08-26 — Crisis text lines get a qualitative evidence base — critic-caught
+
+- **JMIR Mental Health published an interview study (08-26) of how young adults with suicidal ideation actually experience crisis text services — a first-line, high-volume referral channel in the 18-25 population most exposed to the AI-chatbot and social-media threads on this map, and one nothing here had evaluated on either the evidence or the regulation side.** One study rather than a pattern; logged here so crisis-line services are a tracked sub-topic of this meta-thread rather than a standalone thread. ⚠️ Critic-caught from the JMIR Mental Health weekly benchmark. ([JMIR Mental Health](https://mental.jmir.org/2026/1/e89836)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-25 — Anthropic funds outside clinical evaluation of its own model
 
 - **Anthropic opened a $5M grant programme funding independent,

@@ -1,21 +1,23 @@
 ---
 lens: world-news
 date: 2026-08-28
-status: building
+status: final
 window_start: 2026-08-28T05:00:00-04:00
-as_of: 2026-08-28T15:10:00-04:00
+window_end: 2026-08-29T05:00:00-04:00
+finalized: 2026-08-29T15:10:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-28
 
-*Curated agentic-interim, 05:00 ET → 15:10 ET, across two runs. The
-10:15 ET run covered the morning and finalized 2026-08-27 in full; the
-15:10 ET run added a conflict and chokepoint sweep that produced three
-dated items, including a direct answer on a five-week-overdue expectation
-this map had stopped expecting to resolve. ⚠️ **The GDELT collector is
-dark again** — the fix found this morning was never persisted and did not
-survive into this run's shell. See the front digest.*
+*Curated agentic-interim, the full 05:00 ET → 05:00 ET digest-day, across
+three runs. The 10:15 ET run covered the morning and finalized 2026-08-27
+in full; the 15:10 ET run added a conflict and chokepoint sweep. **The
+08-29 15:10 ET finalize pass swept the evening window and ran a general
+front-page scan for the first time** — and the scan found a head-of-state
+death from the previous digest-day that nothing here had logged. The
+GDELT collector, dark on the 15:10 ET run, ran again on the finalize with
+the contact address the repo's own source docs declare set in-shell.*
 
 ## Today's throughline
 
@@ -30,6 +32,19 @@ checked explicitly against the general-front-page bar rather than by
 omission. The one structural change today is on this map's own side: the
 GDELT collector, half of this lens's mechanical detector, had been dark
 since 08-25 on a single unset environment variable and now runs again.
+
+**The finalize adds the day's largest single event and a miss from the
+day before.** A Russian drone hit a munitions warehouse in **Myla**, five
+kilometres west of Kyiv, at about 20:10 local time — 13:10 ET, inside the
+afternoon run's window, though the reporting came after it — setting off
+detonations "every few minutes" through the night; Ukraine's Interior
+Minister put the toll at **37 killed, 42 injured and 4 missing** by
+17:00 local on 08-29, resolving a day of 27-versus-37 reporting. And **King
+Harald V of Norway died at 06:35 Oslo time on 28 August — 00:35 ET, which
+this map's clock puts in the 08-27 digest-day** — and led AP, NPR and CNN
+into Saturday without appearing anywhere here. It is filed to the flash
+rail on 08-29 as a late catch; the note below on the rail is corrected
+accordingly.
 
 ## Items
 
@@ -103,7 +118,10 @@ since 08-25 on a single unset environment variable and now runs again.
   funds for an Iran-linked exchange house while Bank Melli facilitated
   IRGC Quds Force transactions; separately, the **UAE branch of Egypt's
   Banque Misr** was cut off from US financial institutions, with Cairo
-  saying the action is limited to that branch. **The campaign itself is
+  saying the action is limited to that branch. **Treasury's own release,
+  read at finalize, sizes it**: FinCEN's proposed rule alleges Banque Misr
+  UAE processed roughly **$1.8 billion between January 2024 and June 2026
+  for 103 companies** tied to Iranian shadow-banking networks. **The campaign itself is
   four days old** — Treasury launched "Operation Economic Outcast" on
   **08-24** under the framing of an "Economic D-Day," with Secretary
   **Scott Bessent** giving remarks on **08-26**. **This map had logged
@@ -130,6 +148,56 @@ since 08-25 on a single unset environment variable and now runs again.
   [weather.com](https://weather.com/2026/08/28/news/weather/nepal-tibet-deadly-floods-avalanche-latest-missing-search))
   <!-- k: t= e= axis=items -->
 
+- **A Russian drone struck a munitions warehouse in Myla, a village on
+  the Kyiv-Chop highway five kilometres west of Kyiv, at about 20:10 local
+  time (13:10 ET), igniting a fire that set off continuous ammunition
+  detonations "every few minutes."** At least 50 residential buildings
+  were damaged, including a care home for elderly and disabled residents,
+  and more than 380 people were evacuated; the mayor of Dmytrivska, Taras
+  Didych, is among the dead. **The toll moved all day** — 27 killed per
+  CNN, Al Jazeera and RFE/RL on 08-29 morning, 37 per the Kyiv Independent's
+  13:14 update — and **Ukraine's Interior Minister Ivan Vyhivskyi settled
+  it at 37 killed, 42 injured and 4 missing as of 17:00 local time on
+  08-29**, the standing official figure. Zelensky said regulations barring
+  ammunition storage near housing exist, implying this violated them.
+  ⚠️ Ukrainian-side figures throughout. The event fell inside the 15:10
+  ET run's window; the run did not have it.
+  ([Kyiv Independent](https://kyivindependent.com/warehouses-targeted-outside-kyiv-in-all-day-drone-attack-as-russian-forces-kill-at-least-10-injure-43-over-past-day-across-ukraine/),
+  [CNN](https://www.cnn.com/2026/08/29/europe/ukraine-kyiv-russia-war-attack-intl),
+  [NPR, on the Interior Ministry figure](https://www.npr.org/2026/08/29/nx-s1-5948714/russian-strike-kyiv))
+  <!-- k: t=russia-ukraine-war e= axis=items sev=major -->
+
+- **Ukraine hit a second Tu-95MS strategic bomber at Engels-2 in six
+  weeks, struck three Russian refineries in one night, and Zelensky set a
+  target of 1,000 long-range drone launches a day.** The SBU's "Alpha" unit
+  used a domestically made $48,000 MICH 2000 drone on the bomber's right
+  wing — likely beyond repair, since Tu-95 production ended decades ago;
+  Ukrainian defence intelligence had put the operational fleet at 38.
+  Drones hit Slavneft-YANOS in Yaroslavl, Kuibyshev in Samara and Afipsky
+  in Krasnodar, with NASA satellite heat signatures at all three — the
+  Kyiv Independent's count is the 21st refinery strike in August and the
+  70th-plus of 2026, with Russian refining capacity at its lowest since
+  2002. Zelensky told his Staff of the Supreme Commander-in-Chief he wants
+  launches raised from roughly 300 a day to 1,000. ⚠️ Ukrainian-side
+  claims; the fleet arithmetic is theirs.
+  ([Euromaidan Press](https://euromaidanpress.com/2026/08/28/ukraine-struck-tu-95-at-base-russia-launches-its-cruise-missiles-on-ukraines-civilians-satellite-image-shows-third-of-right-wing-gone/),
+  [Kyiv Independent, refineries](https://kyivindependent.com/ukrainian-drones-target-moscow-one-of-russias-largest-oil-refineries-in-yaroslavl-sparking-fire-media-reports/),
+  [Kyiv Independent, the 1,000-a-day target](https://kyivindependent.com/there-must-be-more-zelensky-calls-for-ukraine-to-launch-1-000-drones-at-russia-daily/))
+  <!-- k: t=russia-ukraine-war e= axis=items -->
+
+- **The Board of Peace's Nikolay Mladenov put specifics behind his
+  rebuke: Morocco has agreed to send troops to the International
+  Stabilization Force, Israel vetoed Turkish participation, advance
+  elements are expected "soon," and reconstruction pledges total $7bn.**
+  Across a Security Council briefing on 08-27 and an Al Jazeera interview
+  on 08-28 he called the 30 July factional-disarmament accord "a historic
+  breakthrough" — the first time armed Palestinian groups agreed to full
+  demilitarisation and a governance handover — and warned that ceasefire
+  collapse would be "a point of no return for everyone."
+  ([Arab News](https://www.arabnews.com/node/2655951/middle-east),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse))
+  <!-- k: t=gaza-war e= axis=items -->
+
 ## 🚨 Flash
 
 **No flash today, and the rail is empty.** The 08-27 filing
@@ -150,6 +218,20 @@ and yesterday's filing already fired for this disaster. **A rising toll
 on a known catastrophe is a development, not a new event.** Filing again
 would turn the rail into a status indicator, which is exactly what
 retires it.
+
+⚠️ **Corrected at finalize: the rail should not have been empty on
+08-28.** King Harald V of Norway died at 06:35 Oslo time on Friday 28
+August — 00:35 ET, inside the 08-27 digest-day — announced by the Royal
+House and leading AP, NPR and CNN into Saturday. **Nothing on this map had
+it**: no benchmark critic reads general news, the mechanical world-news
+pool has been frozen since 08-25, and the 15:10 ET sweep looked at
+conflicts and chokepoints, not front pages. Had it been known, the flash
+would have been filed on the first run after the event — this one — and
+rendered on 08-28. It is filed on 08-29 as a late catch with 24 hours
+from the catch, per the rule, and the 08-27 world-news digest carries the
+item at its own date. **Same failure shape as the Nepal-Tibet flood four
+days earlier, and the second time in a week that a general-news event a
+lens model would never surface went uncaught for a day.**
 
 ## ⏳ Upcoming & expected
 
@@ -183,6 +265,19 @@ retires it.
 - ⛔ **`attention/world-news.yaml` still cannot be regenerated — day
   twelve, re-tested this afternoon**, same `Reauthentication failed`
   error. It carries `generated: 2026-08-25`.
+- ✅ **GDELT and Federal Register both ran on the 08-29 finalize** — with
+  `KESTREL_CONTACT_EMAIL` set in-shell to the address the repo's own
+  `sources/API-SIGNUP.md` declares for collector user-agents. Still not
+  persisted; the next unattended run will be dark again unless it is.
+  **The `rss` collector also ran** (2,811 fetched, 386 kept) after three
+  dark runs on a path-resolution fault — recovered, cause not established
+  here.
+- ⛔ **A head-of-state death missed for a day** — see the Flash section;
+  filed to the rail on 08-29 and to the 08-27 digest at its own date. The
+  world-news sweep's brief now carries a general front-page scan as a
+  standing step, which is what caught it.
+- ✎ **The Myla toll resolved** at 37 killed per Ukraine's Interior
+  Ministry; the 27 figure was an earlier point in the same count.
 - No thread adds, retires or renames from this lens today.
 
 ## 🧵 Thread candidates
@@ -196,14 +291,12 @@ retires it.
   **Track it?**
 
 ---
-American Central Command declared the Strait of Hormuz open today while
-about twenty-four tankers went through it, against a hundred and twenty
-to a hundred and thirty on a normal pre-war day, and Iran said it stays
-shut until Washington drops its pressure campaign. The Treasury cut a
-UAE branch of an Egyptian bank off from American finance and blacklisted
-an Iranian banker and a Hong Kong shell company, in the fourth day of a
-sanctions campaign this map had not recorded at all. And the death toll
-from the Himalayan glacier collapse passed five hundred, with as many as
-fifteen hundred still missing and the lake now overflowing, which is a
-development on a known disaster rather than a new event, so the flash
-rail stayed empty.
+A Russian drone set off a munitions warehouse five kilometres west of
+Kyiv on Friday evening, and by Saturday afternoon Ukraine's Interior
+Ministry had the toll at thirty-seven dead. American Central Command
+declared the Strait of Hormuz open on a day about twenty-four tankers
+went through it, and the Treasury put a figure of one point eight billion
+dollars on the Emirati bank it cut off. And King Harald V of Norway died
+on Friday morning, leading every general front page into the weekend,
+and this map did not have it until Saturday, because nothing it reads
+reads the front page.

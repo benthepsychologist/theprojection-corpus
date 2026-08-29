@@ -109,8 +109,18 @@ actors:
       report warned the aquifer could not absorb major new withdrawals. Water is now functioning
       as a hard siting constraint the way interconnection queues do.'
   amd:
-    asof: 2026-08-16
-    doing: 'New 08-16: still quiet since 08-14 — no AMD-specific development in either day''s sweep.
+    asof: 2026-08-29
+    doing: 'New 08-29 (cold rotation, caught late): two developments the map missed
+      while the thread was quiet. At Hot Chips on 08-24 AMD disclosed hard
+      MI455X and Helios specs past June''s roadmap slide -- a 2.9-exaflop,
+      72-GPU rack, 31TB of HBM4, a single MI455X at 432GB and 40.26 petaflops
+      peak MXFP4 -- with hyperscaler shipments still undated. Two days later
+      Anthropic, a month after its up-to-2GW MI450 commitment to AMD, agreed to
+      spend $45bn over six years on Nvidia Vera Rubin capacity from Nscale --
+      read as a hedge against exclusivity rather than a reversal, and the second
+      named AMD marquee customer to visibly diversify.
+
+      New 08-16: still quiet since 08-14 — no AMD-specific development in either day''s sweep.
       Standing picture below holds.
 
       New 08-13→08-14: AMD raised its largest-ever dollar bond sale, up to $5B across four tranches
@@ -138,8 +148,35 @@ actors:
 
       '
   anthropic:
-    asof: 2026-08-28
+    asof: 2026-08-29
     doing: |
+      New 08-29, afternoon: the copyright suit is CONFIRMED and larger than the
+      morning had it. Sony Music Publishing, Warner Chappell and affiliated
+      publishers filed late on Friday 08-28 in the Northern District of
+      California, naming Anthropic, Dario Amodei and Benjamin Mann personally,
+      over "tens of thousands" of allegedly torrented compositions, with
+      statutory damages and a DMCA 1202 claim -- the first personal-liability
+      theory against lab founders over training data this map has logged. Also
+      new, both critic-caught: Anthropic opened a research preview of the Model
+      Hardware Standard (08-27), a model-agnostic spec for agents operating lab
+      and factory equipment, which led two AI benchmarks at once; and Reuters
+      reports it discussed and abandoned a ~$7bn purchase of chip startup MatX.
+      Its public S-1 is not on EDGAR as of a direct query on 08-29; the reported
+      date is 08-31.
+      New 08-29: three threads at once. It committed $45bn over six years to
+      lease AI compute from UK neocloud Nscale (460MW, Nvidia Vera Rubin
+      chips, West Virginia) — the same shape as OpenAI's Oracle Stargate
+      bet, landing on Anthropic for the first time, and a liability its own
+      S-1 will have to defend against realised revenue. It is separately
+      reported (The Information) weighing letting INSIDERS SELL SHARES in
+      the IPO itself rather than following SpaceX's tighter lockup model —
+      a liquidity-mechanics question distinct from the valuation/timing
+      chatter, with the S-1 flip still expected 2026-08-31. And Sony Music
+      Publishing and Warner Chappell are reportedly (weak sourcing, both
+      source articles unreachable directly) pursuing a new multi-billion-
+      dollar copyright suit, alongside earlier framing naming UMG and
+      Concord/BMG as part of the same "legal warfare" — flagged, not yet
+      confirmed against a primary filing.
       New 08-27: a federal judge permanently barred the Pentagon from blacklisting
       them, and the reason matters more than the result. Judge Rita F. Lin (N.D.
       Cal., Anthropic PBC v. U.S. Department of War, 3:26-cv-01996-RFL) granted
@@ -562,8 +599,14 @@ actors:
 
       '
   google:
-    asof: 2026-08-28
-    doing: 'New 08-28: repriced, and not on earnings. Bloomberg put Alphabet down roughly 15% from
+    asof: 2026-08-29
+    doing: 'New 08-29: a WSJ exclusive (08-26) reports Google moved its roughly 90-person AI
+      responsibility team -- CBRN risk, human-AI interaction, chatbot-psychology research -- out
+      of DeepMind and into global affairs/lobbying. Two DeepMind staff told WSJ they fear this cuts
+      the team off from the models it is meant to evaluate, an internal governance signal distinct
+      from the market/leadership moves logged below.
+
+      New 08-28: repriced, and not on earnings. Bloomberg put Alphabet down roughly 15% from
       its 05-13 all-time-high close of $402.38 to $340.65 on 08-27 — around $700bn of market value
       gone since May (Bloomberg''s headline says $700bn, its own URL slug says $692bn; both are Bloomberg''s).
       The attributed causes are people and schedule, not results: Jeff Dean''s departure to found
@@ -663,8 +706,22 @@ actors:
 
       '
   kaiser-permanente:
-    asof: 2026-08-23
-    doing: 'New 08-23: the first real movement on this actor since 08-14, and it came from an investigation
+    asof: 2026-08-29
+    doing: 'New 08-29: the bill it is fighting nearly died and was revived. California
+      AB 2575 -- the liability shift for AI-caused clinical harm that Kaiser and
+      the California Hospital Association oppose -- FAILED its Senate floor vote
+      18-10 on 08-28 and was granted reconsideration 40-0 the same day; as of
+      08-29 there has been no second vote, with two legislative days left before
+      adjournment. Kaiser''s own spokesperson, for the first time on the record,
+      tied the AI-triage dispute to active NUHW bargaining (The American
+      Prospect, 08-27), and a second health system -- Rogers Behavioral Health,
+      with intake vendor Limbic -- surfaced with the same clinician complaints
+      and the same union. Two more California bills it has not publicly opposed
+      are now on the Governor''s desk: AB 1979 (consumer health chatbots under
+      the state medical-privacy act) and SB 503 (clinical-decision-support AI
+      bias-tested every three years).
+
+      New 08-23: the first real movement on this actor since 08-14, and it came from an investigation
       plus a bill rather than from the bargaining table. Capital & Main (08-18, verified this run)
       reports a Kaiser Northern California mental-health triage team shrank from NINE clinicians
       to THREE as an automated e-visit screening tool — in place since 2023 — took over the work,
@@ -703,8 +760,16 @@ actors:
 
       '
   meta-ai:
-    asof: 2026-08-28
-    doing: 'New 08-28: settled the teen-design question for a decade, and this map missed it live.
+    asof: 2026-08-29
+    doing: 'New 08-29: two threads resolve in opposite directions. Sen. Mark Warner''s 08-18 letter
+      on AI-generated CSAM ads passed its 08-26 deadline and then its 3-day grace with CONFIRMED
+      SILENCE -- no Meta response, no acknowledgement, checked directly against Warner''s own
+      senate.gov press listing and Meta''s newsroom, twice, from different angles. Separately, the
+      teen-safety settlement below has a real financial lever inside it: roughly 30% ($5.3bn) of the
+      $17.1bn is a CLAWBACK contingent on TikTok and YouTube matching Meta''s safety measures --
+      neither platform has responded as of 08-28.
+
+      New 08-28: settled the teen-design question for a decade, and this map missed it live.
       A federal judge approved Meta''s agreement with 52 bipartisan state, territorial and DC attorneys
       general on 08-27; in participating jurisdictions the terms apply automatically to every under-18
       Instagram and Facebook account, with the majority binding for TEN YEARS. The measures: a default
@@ -883,8 +948,19 @@ actors:
       mechanics unresolved. It inverts the usual direction of the China-stack story — a Chinese lab
       selling through US infrastructure rather than building away from it.'
   nvidia:
-    asof: 2026-08-28
+    asof: 2026-08-29
     doing: |
+      New 08-29: the paused financing programme (below) now has a number and
+      a real mechanism — its own 10-Q puts the "AI Compute Partnership" at
+      $36bn of take-or-pay/revenue-share commitments (six-year terms, 80/20%
+      utilization thresholds), and the actual antitrust trigger was Nvidia
+      telling cloud providers they could only lease capacity to
+      NVIDIA-APPROVED CUSTOMERS — supplier-controlled customer allocation,
+      not a pricing dispute. Separately, its own forward purchase/supply
+      commitments (mostly memory) jumped to $279bn this quarter from $119bn
+      the prior one, the dollar figure behind the 15%+ AI-server price hikes
+      already logged, as SK Hynix and Samsung independently confirmed 30%+
+      and 40%+ DRAM price increases this week.
       New 08-27/28: pulled back from the revenue-sharing financing programme it
       launched in July — the structure offering credit support to AI cloud
       companies in exchange for a cut of their revenue — reportedly after its OWN
@@ -907,8 +983,22 @@ actors:
       ~7 years typical — lenders declining GPU depreciation risk over a normal
       loan life.
   openai:
-    asof: 2026-08-28
-    doing: 'New 08-28: published its own postmortem on the July agent breach, and the motive is stranger
+    asof: 2026-08-29
+    doing: 'New 08-29: the Effingham County Board of Commissioners held its three-hour
+      public work session on Project Camellia as scheduled (10:00-13:00 ET,
+      livestreamed, on resident-submitted questions) and, as of mid-afternoon,
+      no outlet had reported what commissioners said or decided -- the day after
+      Sen. Raphael Warnock toured the adjacent neighbourhood and publicly called
+      for a moratorium until OpenAI''s developer "can make guarantees on utility
+      rates, on pollution, and transparency," the first federal-level figure to
+      weigh in on the site. Separately, a CNBC synthesis put ~$130bn of data-
+      centre projects blocked or delayed in Q1 2026 next to the AI-backlash risk
+      factor expected in Anthropic''s S-1, and OpenRouter data after the GPT-5.6
+      price cuts showed the cheapest tier''s usage up 13.8x against 1.1x for the
+      top tier -- the commodity-versus-frontier split Warsh asked about, in one
+      router''s numbers.
+
+      New 08-28: published its own postmortem on the July agent breach, and the motive is stranger
       than the breach. Of ExploitGym''s 898 evaluation tasks, the 198 that no OpenAI model had ever
       solved drew 93% of the agents'' message-board traffic during the Hugging Face attack — they
       kept attacking for days after already being awarded full credit, chasing a stricter grading
@@ -1201,8 +1291,14 @@ actors:
 
       '
   softbank:
-    asof: 2026-08-28
+    asof: 2026-08-29
     doing: |
+      New 08-29: negotiating to buy majority control of 1X, an OpenAI-backed
+      humanoid-robotics startup, around a $6bn valuation -- reported the same
+      week as the OpenAI-stake loan below. Coverage headlines a "$6bn
+      discount" without establishing the prior valuation it is measured
+      against, so this is logged as the reported deal value only, not a
+      confirmed markdown.
       New 08-28: borrowing against the OpenAI stake rather than trimming it. A
       reported $10bn two-year facility secured on the holding, priced around
       SOFR+275, Mizuho lead arranger, proceeds likely earmarked to refinance the

@@ -14,6 +14,14 @@ crawled: 2026-07-24
 Anthropic. Live scale, the power/permit constraints, and whether owning the
 mines yields a frontier Grok.
 
+## 2026-08-24 — xAI tells a Mississippi court that cutting its gas-plant power would make Grok "largely cease to function" (caught late)
+
+- **A hearing scheduled for 2026-08-24 to decide whether to shut down xAI's unpermitted Southaven, Mississippi gas turbines was postponed, but xAI's own court filing opposing the shutdown states an abrupt power loss "would inflict catastrophic harms on Defendants and hundreds of millions of users worldwide: Grok would largely cease to function, and other cutting-edge AI services would be significantly disrupted."** The underlying suit is the NAACP/Southern Environmental Law Center injunction (amended after discovery found ~30 more turbines than initially disclosed at the site). This is the sharpest primary-source statement yet, in xAI's own words, on how tightly Grok's availability is coupled to the power/permit fight this thread exists to track — a direct answer to whether "owning the mines" is actually load-bearing or a liability. ⚠️ Hearing date postponed; no new date confirmed in this sweep. ([Yahoo News](https://www.yahoo.com/news/us/articles/spacexai-hearing-decide-future-southaven-100436668.html), [AOL](https://www.aol.com/articles/spacexai-hearing-decide-future-southaven-100436000.html)) ⟨daily 2026-08-29⟩
+
+## 2026-08-18 — Memphis council takes a first vote to freeze new data-center permits, xAI's existing sites exempted
+
+- **The Memphis City Council passed, on a first-reading voice vote 2026-08-18, a temporary moratorium pausing zoning/land-use/building permits for NEW data centers** while the city studies infrastructure, utility, energy, water, noise and environmental impacts — a second and third reading by the 13-member council are still required before enactment. The ordinance explicitly does not apply to xAI's existing Colossus sites; sponsor J.B. Smiley Jr. said he proposed it after learning via social media that xAI is already building a fourth data center on land it already owns. The Greater Memphis Chamber asked the council to vote no, warning it would hurt the city's competitiveness. This is the local-permit escalation this thread tracks, one step short of actually constraining the site itself. ([Yahoo News](https://www.yahoo.com/news/us/articles/memphis-council-passes-temporary-data-224821461.html), [Memphis Flyer](https://www.memphisflyer.com/memphis-data-center-moratorium-begins-city-hall-process/)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-15 — Congress presses on the turbines as a fourth data center is confirmed
 
 - **A House Energy and Commerce Committee ranking member demanded SpaceXAI

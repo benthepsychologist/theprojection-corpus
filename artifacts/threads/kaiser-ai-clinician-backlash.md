@@ -13,6 +13,15 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-29 — AB 2575 nearly fails, and a second health system's clinicians turn up with the same complaint
+
+- **AB 2575 — the bill Kaiser and the California Hospital Association are fighting — failed its Senate floor vote 08-28 (18-10) and was immediately granted reconsideration (40-0), leaving it alive for one more attempt before the legislature adjourns 08-31.** Verified against the Legislature's own bill-history record. Full detail cross-logged on `ai-therapy-regulatory-reckoning`.
+  ([California Legislature — AB 2575 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575)) ⟨daily 2026-08-29⟩
+- **Kaiser's own spokesperson tied the AI-triage dispute directly to active NUHW contract bargaining for the first time on the record**, telling The American Prospect its bargaining proposals are "focused on ensuring our members have timely access to high-quality mental health care, supporting our clinicians in delivering excellent care" — while separately maintaining the February 2025 DMHC settlement "did not involve AI." Confirms this thread's framing that the fight is running through labor bargaining, from Kaiser's own mouth rather than inference.
+  ([The American Prospect](https://prospect.org/2026/08/27/mental-health-workers-algorithmic-triage-ai-patients-kaiser-permanente/)) ⟨daily 2026-08-29⟩
+- **A second health system surfaced with the same pattern: Rogers Behavioral Health (Wisconsin) partnered with AI vendor Limbic in late 2024 for intake/triage, and two named Rogers clinicians describe the same inappropriate-placement and reduced-risk-screening complaints as Kaiser's.** Rogers' West Allis workers voted 54-4 to join NUHW in April 2026, and Rogers has not yet agreed to bargain — the same union, organizing a second employer, over the same AI-triage complaint. This is the "whether other health systems face the same" watch item resolving from hypothetical to named.
+  ([The American Prospect](https://prospect.org/2026/08/27/mental-health-workers-algorithmic-triage-ai-patients-kaiser-permanente/)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — Nine triage clinicians to three, as algorithmic routing takes over
 
 - **An American Prospect investigation reports Kaiser Permanente's Walnut Creek

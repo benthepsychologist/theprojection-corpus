@@ -153,6 +153,20 @@ still does not.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/8/27/three-killed-in-strikes-on-gaza-as-israel-renews-threats-over-kite-flying))
   <!-- k: t=gaza-war e= axis=items -->
 
+- 🕰 **LATE CATCH, added 2026-08-29 — King Harald V of Norway died at
+  06:35 Oslo time on Friday 28 August (00:35 ET, inside this digest-day),
+  aged 89, and Crown Prince Haakon acceded as King Haakon VIII.** Announced
+  by the Norwegian Royal House and read directly from its site; it led AP,
+  NPR and CNN into Saturday. **This map did not have it until the 08-29
+  world-news sweep's general front-page scan** — the same failure shape as
+  the Nepal-Tibet flood four days earlier: a head-of-state death touches no
+  lens, no benchmark critic reads general news, and the mechanical
+  world-news pool has been frozen since 08-25. Filed to the flash rail on
+  08-29 as a late catch; see that day's digest.
+  ([The Royal House of Norway](https://www.royalcourt.no/),
+  [Det Norske Kongehus](https://www.kongehuset.no/))
+  <!-- k: t= e= axis=items -->
+
 ## 🚨 Flash
 
 🚨 **FLASH FILED — `nepal-tibet-glacier-collapse-flood`.** The first

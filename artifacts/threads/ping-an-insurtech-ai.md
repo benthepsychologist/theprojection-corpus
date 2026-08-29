@@ -21,6 +21,12 @@ group's pending August 2026 interim results (an H1 AI-contribution
 disclosure would be the next real data point), and whether the claims-
 automation numbers keep climbing or plateau.
 
+## 2026-08-21 (added 2026-08-29) — A critical read of the H1 results: new-business growth trails peers, and an unverifiable AI health-model claim surfaces
+
+- **Insurance Business Magazine's analysis of the H1 2026 results found Ping An's Q1 new-business-value (NBV) growth of 20.8% "trailed several domestic peers by a wide margin"** — China Life posted 75.5%, with some peers exceeding 70%. This is the first outside-analyst pushback this thread has logged against a set of figures that, until now, have come almost entirely from Ping An's own filings and press releases.
+- **The same analysis flags a new, unverifiable AI claim: Ping An says its "Medical LLM 3.5" achieved a top score on HealthBench Hard, but "public trackers...list no entry for a Ping An model,"** meaning the claim can't currently be checked against any public leaderboard — a different, not-yet-logged model from the PingAnGPT-Qwen3-32B/CNFinBench claim already on this thread, and a direct instance of the "flagged, not yet resolved" pattern this thread already carries (the AI Family Doctor user-count discrepancy). **This is the MH-adjacent thread of Ping An's AI story getting scrutinized rather than repeated** — a health-specific model claim the company has not backed with checkable evidence.
+  ([Insurance Business](https://www.insurancebusinessmag.com/asia/news/breaking-news/ping-ans-new-business-growth-trails-chinas-insurance-pack-586912.aspx)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-20 — The interim report refines the automation percentages, and adds two bigger numbers
 
 - **Ping An's official 1H 2026 interim report restates the automation

@@ -8,6 +8,14 @@ opened: 2026-08-04
 
 # AMD — timeline
 
+## 2026-08-26 — A month after committing "tens of billions" to AMD, Anthropic signs a $45B Nvidia deal instead
+
+- **Anthropic agreed to spend $45B over six years renting Nvidia Vera Rubin compute capacity from a planned 460MW Nscale campus in West Virginia (service starting late 2027)** — reported 2026-08-26, roughly one month after Anthropic's own up-to-2GW MI450 commitment to AMD (with AMD investing up to $5B into Anthropic on milestones). Coverage frames this as Anthropic refusing to let its AMD bet foreclose Nvidia's next-gen platform, given Anthropic's own $190-200B 2028 revenue projection. This is directly relevant to the thread's underlying question of how durable AMD's marquee customer commitments (OpenAI, Anthropic, Meta) actually are once a customer diversifies — Anthropic is the second-named customer in the thread's title/entities to visibly hedge away from exclusivity. ⚠️ The Nscale deal is reported by multiple outlets citing sources, not yet confirmed by an Anthropic or Nscale press release found in this sweep. ([TechCrunch](https://techcrunch.com/2026/08/26/anthropic-continues-compute-gobbling-streak-in-45-billion-deal-with-nscale/), [CNBC](https://www.cnbc.com/2026/08/26/anthropic-and-nscale-strike-45-billion-cloud-deal-sources-say.html), [Yahoo Finance/Insider Monkey framing](https://finance.yahoo.com/technology/ai/articles/anthropic-bet-tens-billions-amd-175220772.html)) ⟨daily 2026-08-29⟩
+
+## 2026-08-24 — AMD lays out the actual MI400/Helios numbers at Hot Chips, past the roadmap slide it showed in June
+
+- **AMD used its 2026-08-24 Hot Chips presentation to disclose hard specs for the Instinct MI455X GPU and the Helios rack it ships in**, rather than the high-level roadmap language used at its June Investor Day: a 2.9-exaflop rack with 72 GPUs, 31TB of HBM4 at 1.7PB/s of bandwidth, and a single MI455X GPU rated at 432GB HBM4 / 23.3TB/s and 40.26 petaflops peak MXFP4 (4x the prior MI355X generation). The article does not give a firm shipping date beyond AMD's own framing that Helios infrastructure is expected "to ship" to the hyperscaler partners it has been demonstrating the system to. This is the first hard-numbers disclosure since the thread's last entry (the 2026-08-13 bond sale) and bears directly on whether AMD's Instinct/Helios line can back up the demand its financing is now betting on. ([ServeTheHome](https://www.servethehome.com/amd-mi400-gpu-at-hot-chips-2026/)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-13 — AMD prices its biggest-ever dollar bond sale to fund the buildout
 
 - **AMD launched a four-part senior unsecured bond offering targeting

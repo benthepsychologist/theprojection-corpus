@@ -12,6 +12,16 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-08-27 (added 2026-08-29) — Anthropic reportedly weighs letting insiders sell into the IPO itself, departing from the SpaceX playbook
+
+- **Anthropic is reportedly weighing a secondary-sale component in its IPO — letting early investors and insiders sell existing shares alongside the company's own new-share raise — rather than following SpaceX's tighter insider-lockup approach, per The Information (08-27).** **This is a mechanics question this thread hasn't carried before**: not valuation or timing, but who gets liquidity and when, which bears directly on whether the >$100bn "raise" figure already on this thread is genuinely new company capital or partly existing holders cashing out. Alternative middle-ground options (capped insider-sale volume, extended lockups) are also reportedly under consideration, so the shape isn't settled. ⚠️ Reported, not filed — no S-1 language on this point yet.
+  ([The Information](https://www.theinformation.com/)) ⟨daily 2026-08-29⟩
+
+## 2026-08-26 (late catch, added 2026-08-29) — Anthropic commits $45bn to a UK neocloud, the same shape as OpenAI's Oracle bet
+
+- **Anthropic committed $45 billion over six years to lease AI computing capacity from UK neocloud Nscale — 460MW of Nvidia Vera Rubin-chip capacity at Nscale's Monarch campus in West Virginia — reported same-day by Bloomberg, Reuters, CNBC and the FT, with Forbes (08-28) and a West Virginia local paper (08-29) still adding site-level detail two days later.** **This is the same shape as OpenAI's Oracle Stargate commitment (`oracle-stargate-bet`) and CoreWeave's contracted backlog (`coreweave-backlog-bet`) landing on Anthropic for the first time on this thread**: a frontier lab locking in a multi-year, multibillion-dollar compute liability just ahead of the IPO whose S-1 will have to defend it against realised revenue. Cross-refs `oracle-stargate-bet`, `ai-circular-financing-risk`. ⚠️ Sourced to "people familiar with the matter" across outlets; no company statement or filing.
+  ([CNBC](https://www.cnbc.com/2026/08/26/anthropic-nscale-45-billion-cloud-deal.html), [Reuters](https://www.reuters.com/)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — A legal overhang clears ahead of the Anthropic listing
 
 **Anthropic won a permanent injunction against the Pentagon's supply-chain-risk designation, clearing a named legal overhang days before its expected S-1 flip on 08-31.** ⚠️ **The IPO mechanics circulating today are not new** — the prospectus-after-Labor-Day, mid-September investor-day and $1.5-2T valuation-talk reporting all originate from a 08-27 story and today's volume is re-syndication. ⚠️ **An implied $2T Anthropic valuation reported from a tokenized private-share market is explicitly NOT adopted here** — it is a synthetic price signal with no filing, term sheet or banker confirmation behind it. ([CNBC](https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html)) ⟨daily 2026-08-28⟩

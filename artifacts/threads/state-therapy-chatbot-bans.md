@@ -13,6 +13,15 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-08-29 — SB 903 clears Assembly Appropriations and heads to a floor vote before session's end
+
+- **California SB 903 (Padilla) — the "mental health professionals: artificial intelligence" bill barring AI from being marketed as therapy and requiring licensed-professional oversight — passed Assembly Appropriations 13-0 on 08-13 and was ordered to Assembly third reading on 08-21**, now scheduled as item 103 on the Assembly's August 30 daily floor file. Verified directly against the Legislature's own bill-status record. This thread logged SB 903 back on 07-28 sitting in Appropriations with an 08-14 fiscal deadline; it has now cleared that deadline and is one floor vote away from passage, ahead of California's 08-31 constitutional end-of-session deadline. Distinct from AB 2575 (liability, tracked on `ai-therapy-regulatory-reckoning`/`kaiser-ai-clinician-backlash`) — SB 903 is squarely a chatbot-as-therapy restriction, the bans/restrictions angle this thread specifically watches.
+  ([California Legislature — SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-08-29⟩
+
+## 2026-08-28 — A third California companion-chatbot bill — this one aimed at children's toys and companion apps broadly — clears its last committee stop
+
+- **SB 1119, the children's companion-chatbot safety bill, was read a third time and amended in the Assembly on 08-28, one procedural step from a floor vote.** Authored by Sen. Padilla with Assemblymembers Bauer-Kahan and Wicks, it requires companion-chatbot operators to run annual child-safety risk assessments, provide real-time in-app crisis referrals when a child appears to be in crisis, and submit to independent audits reported to the Attorney General (by 07-01-2027) — the broadest of the "companion-safety" species this thread already tracks (alongside CA's existing SB 243). It passed the Senate 39-0 in May and cleared Assembly Appropriations 11-1 on 08-13; the only step left is final Assembly passage before the 08-31 adjournment, then Senate concurrence. ⚠️ Not yet signed or in effect — flag as pending, not enacted. ([Bill history, leginfo](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB1119), [Sen. Padilla's office](https://sd18.senate.ca.gov/news/nations-strongest-chatbot-protections-children-advance-california-legislature), [Transparency Coalition scorecard, 08-24](https://www.transparencycoalition.ai/news/its-finals-week-in-california-heres-a-scorecard-with-the-two-dozen-ai-bills-up-for-vote)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — KFF maps the patchwork, and the classification question is still open
 
 - **KFF published a state-by-state comparison of AI mental-health-tool

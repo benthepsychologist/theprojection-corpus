@@ -15,6 +15,12 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-08-29 — The settlement's structure turns out to be a lever on TikTok and YouTube, not just a payment
+
+- **Roughly 30% of the $17.1B Meta settlement — about $5.3 billion — is released only if TikTok and YouTube each adopt matching teen-safety measures (a one-hour daily time limit, night mode, age-assurance) and pay a matching share; states are guaranteed the other ~70% (~$12.7B) regardless.** This refines what's already logged (the settlement figure and Meta's open letter urging TikTok/YouTube to match its standard) with the mechanism behind that letter: it isn't just advocacy, a fifth of the total payout is structurally contingent on competitors following. Confirmed via two independent outlets (Fortune's financial breakdown and Washington Times' state-budget angle), both reporting the same 70/30 split.
+- **As of the most recent check (2026-08-28), neither TikTok nor YouTube has responded to the letter.** Meta is reportedly running the letter as a full-page ad in the Washington Post, LA Times, and NYT — treating its own settlement terms as the opening move in a public pressure campaign against the other two platforms this thread's causality fight has always implicated.
+  ([Fortune](https://fortune.com/2026/08/28/metas-17-billion-teen-safety-settlement-is-really-a-1-tax-and-a-play-to-box-in-tiktok-and-youtube/), [Washington Times](https://www.washingtontimes.com/news/2026/aug/27/states-mull-spend-huge-meta-payout-child-harm-lawsuit-strings/)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — Judge Gonzalez Rogers approves the settlement, and the "not yet final" flag on yesterday's entry comes off
 
 - **The Oakland settlement logged yesterday is now approved, and Meta has

@@ -4614,3 +4614,197 @@ prediction was correct and the machinery still did not act on it.
   `semantic_scholar` (429) and `lda` (403) skipped large term sets again.
   A thin academic layer this week is a collection artefact, not an empty
   field.
+
+
+## 2026-08-29 critic pass — finalized 08-28 (all three benchmarked lenses; the evening window swept as its own scope for the first time)
+
+**Run shape.** Three coverage critics ran in parallel with five cluster
+sweeps, each sweep briefed with two windows — the uncurated 08-28 evening
+(15:10 → 05:00 ET) and today — so the critic's "missing from the digest"
+was a candidate to reconcile against the sweeps, not a verdict. The
+evening-scoped re-sweep is the cheaper of the two fixes the 08-28 entry
+below proposed and did not apply; it ran here as a brief change, not a
+skill change, and the result is recorded at the end of this section.
+
+### frontier-ai / 2026-08-28
+
+**Benchmarks checked, today's access state:** all four daily benchmarks
+retrieved for their Friday 08-28 edition; all four confirmed to have
+**no Saturday 08-29 edition** (see Access state below — this reconfirms
+the weekday-only pattern for all four, not just The AI Daily Brief's
+previously-documented Saturday gap). Neither weekly benchmark (Import AI,
+last issue Mon 08-24; Last Week in AI, last issue Tue 08-25) published
+inside this digest-day window, so neither was checkable this pass — both
+correctly excluded rather than treated as silent misses.
+
+- **Missed:** the Reuters-investigated Cursor/Claude-Sonnet-4.5 hack of
+  seven companies by a Russian ransomware crew (The Neuron's 08-28 lead) ·
+  Anthropic's Model Hardware Standard, which was the actual lead of BOTH
+  The Rundown AI and TLDR AI's 08-28 editions simultaneously — the
+  strongest double-benchmark signal this pass found · Anthropic's
+  reported-then-abandoned ~$7bn MatX chip-startup talks (single-benchmark
+  sourced, flagged for a secondary check) · the FINRA-style AI
+  self-regulatory-body executive order stalling out under internal
+  opposition, an update to an existing thread that's gone quiet for over
+  five weeks.
+- **Map effect:** two of the four misses fit existing threads cleanly
+  (`inhouse-silicon` for MatX, `frontier-model-gov-review-precedent` for
+  the FINRA stall — both need a dated update entry, not a new thread).
+  The Cursor hack and the Model Hardware Standard do NOT fit an existing
+  thread cleanly and are offered as **open scope questions for Ben**: a
+  new "agentic AI security incidents" thread (broader than the
+  OpenAI-specific `openai-agent-security-incident`) and a new "physical
+  agent standards" thread (or an entry folded under
+  `enterprise-agent-product-race`), respectively. No auto-adds.
+- **Timing note — none of today's misses sit in the acknowledged
+  15:10→05:00 ET evening-window structural gap.** All four are drawn from
+  benchmark editions published between roughly 05:30 and 15:00 ET on
+  08-28 — squarely inside the window this map's own collector sweeps
+  should have covered live. This distinguishes today's misses from the
+  past two days' pattern (both of which were genuine evening-window
+  misses recovered only after the fact): these are ordinary same-day
+  benchmark-recall gaps, not evidence the evening-window problem is still
+  unfixed.
+- **Verdict on the day's recall:** weak on agent-safety and lab-product
+  news specifically — two of four benchmarks' actual leads were missed
+  outright, plus one thread-relevant update and one single-sourced
+  factoid — while recall stayed strong on the policy/court/capex axis
+  (the Pentagon ruling, Warsh's speech, and the full Nvidia earnings/
+  financing complex were all either caught live or recovered same-day).
+  The pattern across today's misses is narrow and specific: stories whose
+  primary weight is **agent behavior/safety or lab product strategy**
+  rather than **capital, governance-by-court, or China-stack** — the
+  latter three are where this lens has been strongest all week, and
+  today's gaps sit exactly where that strength doesn't reach.
+
+### global-capital / 2026-08-28
+
+**Benchmarks checked, with today's access state:** Money Stuff (reachable, **but no Friday edition exists to check — see below**), FT Unhedged (reachable, headline-only, no in-window item — see below), Axios Pro Rata (fully reachable, real 08-28 issue), Bloomberg Technology (blocked on all three documented transports, reconstructed via web search of its own video description), Odd Lots (reachable via an undocumented transport, produced this pass's one clean miss).
+
+- **Missed:** Odd Lots' Jackson Hole interview with Chicago Fed President Austan Goolsbee (Fri 08-28, 13:23 ET) — a second Fed voice from the same symposium day, on the record attributing GDP growth "mostly" to the AI/data-center buildout and endorsing Warsh's reduced-forward-guidance doctrine. Not in the digest, threads, or anywhere in `artifacts/`.
+  **Map effect:** `fed-independence-fight` (add as corroborating Jackson Hole commentary, same thread the Warsh bullets are already tagged to).
+- **Missed:** Axios Pro Rata's Fundraising item — a16z's $1.1bn "Machine Age Fund" for AI hardware/infrastructure (chips, memory, networking, data centers), announced 08-28.
+  **Map effect:** `ai-compute-spend`, secondary `ai-memory-shortage`; proposed watchlist entity add **Andreessen Horowitz (a16z)**, not made.
+- **Not a miss, but flagged:** the Anthropic Pentagon-blacklist permanent injunction is fully covered in the map (`frontier-model-gov-review-precedent`, AI lens) but not cross-tagged to any global-capital thread despite Bloomberg Technology running it as a lead item alongside two stories (Warsh, PayPal) this lens does cover. Judgment call, not corrected here: the ruling is a legal/regulatory story before it's a capital-markets one.
+- **Could not check, structurally:** **Money Stuff published no Friday 08-28 edition.** Its author-page `.rss` feed (the documented-working endpoint) still shows "AI Refi" (08-27, 14:03 ET) as the newest item as of a fresh reload at 19:09 UTC on 08-29 — confirmed via a second web search, not just a stale cache. This is the single most consequential gap in today's check: the task's own instruction names Money Stuff's Friday column as "the most valuable single check" against the Nvidia financing pause, the PayPal collapse, the SoftBank loan, and Warsh — and there is no column to check it against. Not a benchmark failure to log against the map; a real hole in today's recall test.
+- **Verdict:** clean, narrow recall on a thin benchmark day — two real misses, both plausibly filed to existing threads with no new thread needed, and the day's best single check (Money Stuff) was unavailable through no fault of the digest. **Neither miss sits in the acknowledged 15:10→05:00 evening window** — both are morning-published items (Odd Lots 13:23 ET, a16z fund reported same-day morning) that a same-day benchmark check should have caught on a normal pass; they are ordinary benchmark misses, not instances of the known structural evening-coverage gap.
+
+---
+
+### mental-health / 2026-08-28
+
+**Benchmarks checked, today's access state:** Behavioral Health Business (Googlebot-UA curl on `/feed/`) — reachable, current through 08-28 21:27 UTC. Fierce Healthcare (Googlebot-UA curl on `/rss/xml`) — reachable, current through 08-28 13:14 ET. STAT Health Tech (`statnews.com/topic/health-tech/feed/`, direct fetch) — reachable but stale: newest item still dated 08-27 17:21 UTC, nothing for 08-28 or 08-29 morning (its own newsletter cadence is Tuesday/Thursday, which explains rather than contradicts the gap). MobiHealthNews — **reachable again**, via the r.jina.ai proxy on `/rss.xml`, current through 08-28 14:14 ET; see Access state below, this reverses yesterday's fourth-escalation finding. JMIR Mental Health (`mental.jmir.org/feed/atom`) — reachable, four in-window articles (08-24→08-29). npj Digital Medicine (`nature.com/npjdigitalmed.rss`) — reachable, eight items 08-26→08-29, none in mental-health scope (oncology, cardiac modeling, chart-review automation, chronic-pain/AI-empathy — general digital-health, not behavioral).
+
+- **Missed, inside the acknowledged evening window (15:10 ET → 05:00 ET):** BHB's "Providers Fight Downcoding Efforts by BCBS Entity" (17:27 ET) — a live commercial-payer parity dispute affecting behavioral-health providers, landing in exactly the gap the 08-28 digest named as its own known blind spot.
+  **Map effect:** adjacent finding for `mhpaea-parity-limbo`, same treatment as the already-logged Aetna/Alma dispute.
+- **Missed, journal window (08-24→08-29), not digest-day-scoped:** three JMIR Mental Health articles — the SMI/market-shaping paper (08-25), the LLM-as-therapist-support pilot (08-26), and the crisis-text-service interview study (08-26) — none logged on any thread.
+  **Map effect:** `dtx-payment-paradox`, `ai-therapy-evidence`, and `mh-evidence-watch` respectively.
+- **Not a miss, but still unresolved:** STAT's 08-27 item on CMS's ACCESS launch event was already logged as a miss by the 08-27 critic pass and still has no home on `cms-access-model-bh` (last entry 08-17) — carried forward as a standing gap, not double-counted here.
+
+**Verdict on the day's recall:** thin but real. Three of four daily trade benchmarks produced no in-scope original news for 08-28 itself (BHB's one item is the exception, and it landed in the evening gap); the week's actual misses came from the academic layer (JMIR Mental Health), which this critic checks on a Mon–Sun cadence rather than daily, and from one payer-dispute story that is exactly the kind of item the digest's own "afternoon sweep" section was built to catch and didn't, because the afternoon sweep checks open threads, not new BHB output. **The evening/afternoon structural gap this lens has now named for three straight days (08-26, 08-27, 08-28) produced a real miss again today** — smaller in stakes than the Anthropic ruling or Nvidia pullback misses logged on other lenses this week, but the same mechanism: a benchmark publishes after the digest is written and before the next morning's finalize pass rechecks it.
+
+---
+
+### world-news / 2026-08-28 — and a self-caught miss from 08-27, not a benchmark miss
+
+No benchmark critic runs on this lens by design. Two findings anyway:
+
+- ⛔ **Missed, 08-27 digest-day: King Harald V of Norway died at 06:35 Oslo
+  time on Friday 28 August** — 00:35 ET, inside the 08-27 window — announced
+  by the Royal House (read directly from royalcourt.no and kongehuset.no)
+  and leading AP, NPR and CNN into Saturday. Nothing on this map had it
+  through the 08-27 finalize, the 08-28 morning run, the 08-28 15:10 run,
+  or the 08-29 morning pass. **Caught by a general front-page scan added
+  to the 08-29 world-news sweep's brief** — a step that did not exist
+  before today. Filed to the flash rail as a late catch (`date:
+  2026-08-27`, `filed: 2026-08-29`), to the 08-27 world-news digest at its
+  own date, and corrected in the 08-28 digests' "rail empty by design"
+  notes.
+  **Map effect:** none on threads — a head-of-state death touches no lens,
+  which is the rail's purpose. **Why it was missed, structurally:** all
+  twelve benchmarks are AI, health-tech or finance publications; the
+  mechanical world-news pool (`attention/world-news.yaml`, the thing built
+  to catch exactly this) has been frozen since 08-25 on an expired
+  BigQuery credential; and the world-news sweeps read conflicts and
+  chokepoints, not front pages. **Same shape as
+  `nepal-tibet-glacier-collapse-flood` four days earlier.** Two of a kind
+  in a week is a pattern: while `bq` is dark, the only general-news
+  detector this map has is a curator reading the front page, and it
+  should say so in its brief. It now does.
+- ⛔ **Missed, 08-27 digest-day, a third Thursday-evening story:** Reuters'
+  exclusive on the Aur0ra ransomware crew and Cursor's Claude-based agent
+  published at **17:53 ET on 08-27** — the same four-hour window as the
+  Anthropic ruling and the Nvidia pullback the 08-28 15:10 run recovered.
+  Found by the frontier-ai critic via The Neuron's 08-28 lead. **Three
+  large stories in one Thursday-evening window, all missed by the 08-27
+  finalize, two recovered a day later and one two days later.**
+
+### Cross-lens note — the evening re-sweep ran, and what it did and did not find
+
+- ✅ **Swept as its own scope, the 08-28 evening window held the Sony
+  Music Publishing / Warner Chappell suit against Anthropic** — filed
+  "late Friday night," naming Dario Amodei and Benjamin Mann personally —
+  which the 08-29 morning pass had only as a headline it could not open.
+  Confirmed across Axios, Reuters-fed coverage and a tracker quoting the
+  complaint; bucketed to 08-28.
+- ⚠️ **Of the eleven benchmark misses across the three lenses, exactly one
+  sits in the evening window** (BHB's Montana downcoding story, 17:27 ET).
+  The other ten were published between roughly 05:30 and 15:00 ET on
+  08-28 — inside the window the day's own sweeps covered live. **The
+  evening gap is real and the re-sweep closes it; the day's larger recall
+  problem is topical, not temporal**: the AI critic's own read is that this
+  map is strong on capital, courts and the China stack and weak on agent
+  behaviour, lab product strategy and the academic layer. That is a
+  sweep-brief problem, not a window problem.
+- 📋 **Put to Ben, still not adopted here:** (1) make the evening-scoped
+  re-sweep a step in `/daily`'s finalize rather than a line in a brief —
+  it is an engine-owned skill, so that is a template change to route, not
+  an edit; (2) same for the world-news front-page scan; (3) a wire service
+  in `sources/benchmarks.yaml` (the 08-28 proposal) would have caught the
+  king and the Cursor story both — it is the fix that covers what the
+  benchmark set structurally cannot.
+
+### Access and collector state, recorded for the day
+
+- **Benchmark access, per lens, from the critics' own checks** —
+  recorded for a confirmed-pass edit to `sources/benchmarks.yaml`, not
+  applied:
+
+  *frontier-ai:* TLDR AI needs the r.jina.ai reader proxy (a bare fetch of
+  `tldr.tech/ai/<date>` returns an empty client-side shell — undocumented
+  until now); The Neuron's homepage clears through the proxy again,
+  partially reversing the 08-26 note; The Rundown's feed direct-fetches
+  fine but the AI edition's article page needs the proxy for clean text;
+  all four dailies confirmed weekday-only (no Saturday edition, any of
+  them); Import AI (Mon) and Last Week in AI (Tue) both outside the window.
+
+  *global-capital:* Money Stuff's author-page `.rss` is live but **no
+  Friday 08-28 column exists** — Levine skipped a day; FT Unhedged
+  reachable, bodies paywalled, and it **posts around 01:30 ET, before the
+  05:00 boundary**, so its dated edition falls in the previous digest-day
+  by this map's clock (checked back three editions) — a same-day check
+  against Unhedged is close to structurally impossible under the current
+  window math; Axios Pro Rata's proxy returned Friday's real issue on
+  Saturday (the same-day-only risk is a weekday problem); Bloomberg
+  Technology blocked on all three transports again; **Odd Lots is
+  reachable via its Omny podcast RSS**
+  (`omny.fm/shows/odd-lots/playlists/podcast.rss`), undocumented.
+
+  *mental-health:* BHB and Fierce on their Googlebot-UA transports, fine;
+  STAT's feed reachable but nothing after 08-27 (Tue/Thu cadence);
+  **MobiHealthNews reachable again** via the proxy on `/rss.xml` —
+  reversing 08-28's fourth-escalation finding; JMIR Mental Health's atom
+  feed fine; **npj Digital Medicine's feed is `nature.com/npjdigitalmed.rss`**
+  (undocumented, works without proxy).
+
+- ✅ **GDELT and Federal Register both ran** with `KESTREL_CONTACT_EMAIL`
+  set in-shell to `ben@getmensio.com` — the address `sources/API-SIGNUP.md`
+  declares for collector user-agents. Still not persisted; asked a third
+  time.
+- ✅ **`rss` ran** — 2,811 fetched, 386 kept — after three dark runs on
+  the `feeds.yaml` path-resolution fault. Cause of recovery not
+  established (kit update or shell resolution); recorded as recovered.
+- ⛔ **`bq` day thirteen**; `attention/world-news.yaml` at `generated:
+  2026-08-25`. See the King Harald miss above for what that cost.
+- ⚠️ **Rate limits**: `openalex` (429), `semantic_scholar` (429), `lda`
+  (403) skipped large term sets again; `fred` and `fec` keyless.

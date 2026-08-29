@@ -15,6 +15,11 @@ threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md — first
 dedicated crawl rides the /daily dispatch tiers.
 
+## 2026-08-25 (added 2026-08-29) — A think tank names the actual structural barrier on the AI-procurement side: 13 jurisdictions, not funding
+
+- **The C.D. Howe Institute (a nonpartisan Canadian economic-policy think tank) published a Council Report, "Scaling Up: Commercializing Health AI in Canada," on 2026-08-25**, writing up its Health Sector Economic Growth and Resilience Working Group's fourth meeting with Ontario's Auditor General, Canada Health Infoway, and Accenture. It puts a national scale number on AI-scribe adoption for the first time on this thread's record — Canada Health Infoway's national AI Scribe Program drew 10,000+ provider registrations within two weeks of launch and has now supported 11.5M+ patient encounters — and names **fragmented procurement authority across 13 provincial/territorial jurisdictions as the "principal structural obstacle"** to scaling health AI in Canada, not funding or appetite. **It does not touch mental-health funding at all** — a reminder that the AI-procurement and MH-funding sides of this thread's asymmetry are institutionally disconnected, not just politically so; nobody is arguing the tradeoff explicitly, they're just two different bureaucracies moving at two different speeds.
+  ([C.D. Howe Institute](https://cdhowe.org/publication/scaling-up-commercializing-health-ai-in-canada/)) ⟨daily 2026-08-29⟩
+
 ## 2026-07-23 → 07-31 — The 2027 cliff gets a month and a standoff ⟨cold rotation⟩
 
 *Logged 2026-08-18, nineteen days late.*

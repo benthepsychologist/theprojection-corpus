@@ -12,6 +12,15 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-08-29 — Nvidia's own memory bill triples in a quarter, and the price hikes get numbers attached
+
+- **Nvidia disclosed its forward purchase commitments jumped from $119B to $279B quarter-over-quarter (+135%); CFO Colette Kress said the increase is "primarily related to the procurement of memory"** to support the ramp of its next-generation platforms, naming SK Hynix, Samsung and Micron as the suppliers. This is the same 08-26 earnings call already on this thread's timeline (margin guidance cut to 74.0%) — the $279B commitment figure is new detail this thread hadn't yet captured.
+  ([24/7 Wall St., 2026-08-27](https://247wallst.com/investing/2026/08/27/micron-lags-despite-nvidias-279b-memory-commitment-western-digital-drops-4-sk-hynix-ticks-up/)) ⟨daily 2026-08-29⟩
+- **The >15% AI-server price rise this thread logged 08-22 now has supplier-side numbers behind it: SK Hynix raised DRAM pricing roughly 30% sequentially and Samsung roughly 40%+, with NAND climbing faster still (SK Hynix mid-50%, Samsung high-60%)** — and TrendForce reports HBM contract prices could rise more than 50% further in 2027. Analysts read Nvidia's commitment as a durable tailwind for Micron/SK Hynix/Samsung's HBM franchises, even as the market's 08-24 demand-risk reading (already on this thread) argued the opposite read of the same price rise.
+  ([Investing.com](https://www.investing.com/news/stock-market-news/nvidia-earnings-signal-durable-tailwind-for-micron-sk-hynix-and-samsung-memory-93CH-4881593), [TrendForce](https://www.trendforce.com/news/2026/08/25/news-nvidias-reported-15-server-hike-boosts-samsung-sk-hynix-with-hbm-prices-potentially-up-50-in-2027/)) ⟨daily 2026-08-29⟩
+- **Market reaction split by exposure in the 08-27 session: Micron -3% to $913.62, Western Digital -4% to $449.18, SanDisk -1% to $1,479.23, while SK Hynix rose +1% to $160.30** — SK Hynix's outperformance attributed to being "most direct" on Nvidia's HBM pipeline and a newly-listed US ADS structure drawing fresh buyers. All four names remain up sharply year-to-date (Micron +229%, SanDisk +532%).
+  ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — $31bn of Japanese NAND, on a six-year horizon against a shortage felt now
 
 - **Kioxia and Sandisk said they will invest more than $31 billion in Japanese

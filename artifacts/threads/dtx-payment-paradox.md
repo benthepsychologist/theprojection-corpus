@@ -28,6 +28,10 @@ Three markets running the same natural experiment.
   ([Fierce Healthcare](https://www.fiercehealthcare.com/digital-health/sword-health-acquire-headspace-all-cash-deal))
   ⟨daily 2026-08-26⟩
 
+## 2026-08-25 — A peer-reviewed statement of this thread's thesis, specific to serious mental illness — critic-caught
+
+- **JMIR Mental Health published "When Markets Shape AI Mental Health Self-Management Tools: Consequences for Serious Mental Illness" on 08-25, arguing that AI self-management tools are built and funded for scalable low-intensity conditions (anxiety, depression) because that is where the commercial return is, leaving schizophrenia-spectrum and bipolar populations — the greatest clinical need — comparatively unserved by the same product wave.** This is the market-shapes-clinical-priority pattern this thread argues from case studies (Pear Therapeutics folding on a strong RCT base), now with an academic citation naming the SMI population specifically, which nothing on this map had. ⚠️ Critic-caught from the JMIR Mental Health weekly benchmark, four days after publication. ([JMIR Mental Health](https://mental.jmir.org/2026/1/e99143)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-07 — Opened (ben-steer)
 
 - **Opened as a dedicated child thread of `mh-evidence-watch`**, seeded

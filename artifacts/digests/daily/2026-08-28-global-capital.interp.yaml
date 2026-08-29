@@ -1,0 +1,44 @@
+# 2026-08-28-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase.
+#
+# ONE entry, written on the 08-29 finalize for the bullet the evening
+# sweep added — the $36bn programme and its customer-approval clause —
+# because it is the one item that names a transmission channel (a
+# supplier's allocation term shifting antitrust exposure onto the
+# supplier) rather than restating its own facts. Nothing for the Warsh
+# bullets (the keynote states its own doctrine), the Michigan survey (a
+# reading, already characterised), the PayPal walk-away (the bullet already
+# says price-not-financing and there is no thread), or Goolsbee (a
+# statement of current conditions, not a mechanism). Forcing one onto
+# any of them would be padding.
+#
+# Validated against readouts.validate_interpretation() before commit.
+# Read against attention/capital-context.yaml (asof 2026-08-25).
+
+the-paused-programme-has-a-number-and-a-mechanism:
+  mechanism: When a dominant supplier's financing carries a customer-allocation clause,
+    the antitrust exposure sits on the supplier, so the programme is restructured
+    or paused before any customer defaults.
+  confidence: plausible
+  scenarios:
+  - direction: Nvidia relaunches the programme minus the approval clause; the $36bn
+      of take-or-pay continues as pricing-only and the rest of the loop stays intact.
+    why: 'Falsifiable form: a relaunched programme within a quarter without the allocation
+      term. The spokesperson''s line that the July model ''is still in place and continues
+      to evolve'' reads as restructure.'
+    precedent: Nvidia's own 10-Q filed 2026-08-26 discloses the $105bn OpenAI lease
+      guarantee and $500bn-plus of planned third-party capital through Apollo, BlackRock,
+      Blackstone, Brookfield, Goldman and KKR — every other leg of the loop kept in
+      place while one is paused.
+  - direction: 'The pause spreads: other take-or-pay signers lose credit support and
+      neocloud debt reprices on counterparty quality rather than GPU collateral.'
+    why: Withdrawn credit support is a downgrade for a neocloud whose contracted revenue
+      was the collateral; the tell is a wider spread between hyperscaler-backed and
+      vendor-backed GPU paper.
+    precedent: IREN's two facilities priced 300 basis points apart on 2026-08-27 —
+      6.0% behind a Microsoft contract, 9.0% without one — is the market already pricing
+      counterparty rather than GPUs, on this map's own record.
+  context_note: Against capital-context's rate_regime — a 30-year near 5.2%, three
+    2026 auctions above 5% — vendor credit support was doing real work for borrowers
+    priced off the long end; removing it is not neutral.

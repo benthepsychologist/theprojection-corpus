@@ -107,6 +107,47 @@
 #   logged_by   ben-steer | curate-add
 
 flashes:
+  # LATE CATCH, filed 2026-08-29 for an event at 06:35 Oslo time on Friday
+  # 28 August — 00:35 ET on 08-28, which is the 08-27 digest-day under the
+  # 05:00 ET boundary, hence `date: 2026-08-27`. `filed` is set to today
+  # deliberately, per the rule: a late catch gets 24h from the CATCH.
+  # flash_last_day() renders this on 08-29 and no longer.
+  #
+  # WHY THIS CLEARS THE BAR: the death of a sitting head of state, announced
+  # by the Norwegian Royal House itself and read directly from its site, led
+  # AP, NPR and CNN's front pages into Saturday on its own facts. It touches
+  # no lens on this map — which is the rail's stated purpose.
+  #
+  # WHY IT IS LATE: it fell inside a digest-day (08-27) finalized with three
+  # coverage critics, none of which reads general news — all twelve
+  # benchmarks are AI, health-tech or finance publications — and the
+  # mechanical world-news pool (attention/world-news.yaml) has been frozen
+  # since 08-25 on an expired BigQuery credential. Same failure shape as
+  # nepal-tibet-glacier-collapse-flood four days earlier. It surfaced on the
+  # 08-29 world-news sweep's general front-page scan, a step added to that
+  # sweep's brief for exactly this reason.
+  - id: norway-king-harald-v-dies
+    date: 2026-08-27
+    filed: 2026-08-29
+    severity: critical
+    headline: >-
+      King Harald V of Norway dies at 89; Crown Prince Haakon accedes as
+      King Haakon VIII
+    body: >-
+      The Norwegian Royal House announced that King Harald V died peacefully
+      at Oslo University Hospital Rikshospitalet at 06:35 on Friday 28 August
+      (00:35 ET), aged 89 and after 35 years on the throne, and its own site
+      now lists his son as His Majesty King Haakon VIII, receiving Prime
+      Minister Jonas Gahr Støre at the lying-in-state on 29 August. Read
+      directly from royalcourt.no and kongehuset.no; AP, NPR and CNN led with
+      it into Saturday, and this map caught it a day late.
+    sources:
+      - label: The Royal House of Norway (royalcourt.no), announcement
+        url: https://www.royalcourt.no/
+      - label: Det Norske Kongehus (kongehuset.no), announcement and the 29 August programme
+        url: https://www.kongehuset.no/
+    lenses: [all]
+    logged_by: curate-add
   # LATE CATCH, filed 2026-08-27 for an event dated 2026-08-25 ET.
   # `filed` is set to today deliberately, per the rule: a late catch gets 24h
   # from the CATCH, not a fresh lifespan and not the lifespan it already lost.

@@ -1,0 +1,43 @@
+# 2026-08-29-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase.
+#
+# ONE entry today, on the Iran export-collapse bullet, because it is the
+# one item with a transmission channel (blockade -> reserves as the
+# binding constraint) and a real fork in front of it. Nothing for the Cook
+# non-response (an absence, already characterised as such), the Qatar
+# force majeure (a supply fact the bullet already sizes), the CNBC
+# backlash synthesis (a restatement of facts already on the thread), or
+# the fund-flow catch (a single week's number). Forcing one onto any of
+# them would be padding.
+#
+# Validated against readouts.validate_interpretation() before commit.
+# Read against attention/capital-context.yaml (asof 2026-08-25).
+
+iran-s-crude-exports-are-down-more-than-80-year-o:
+  mechanism: A blockade that cuts an exporter's loadings by four-fifths pushes its
+    foreign-currency needs onto banked proceeds and non-dollar settlement, so reserves,
+    not sales, become the binding constraint.
+  confidence: plausible
+  scenarios:
+  - direction: Tehran's $7.5bn cushion runs down faster than claimed and the regime
+      trades Hormuz access for sanctions relief before the January horizon its ministry
+      named.
+    why: 'Falsifiable form: a signed corridor deal or a public transit-for-relief
+      offer before Q1 2027. The Supreme Leader''s written turn to inflation reads
+      as a regime preparing its public for a deal.'
+    precedent: Iran's 2012-13 export collapse under the EU embargo and US financial
+      sanctions — crude exports roughly halved — preceded the 2013 interim accord
+      within eighteen months.
+  - direction: The blockade holds near 250,000 bpd but non-dollar and shadow-banking
+      channels keep the regime funded past January, and Hormuz stays contested into
+      2027.
+    why: Treasury's own Banque Misr action alleges $1.8bn moved through one UAE branch
+      for 103 shadow-network companies; the channels being cut are evidence the channels
+      exist.
+    precedent: Under 2018-19 maximum pressure Iran's exports fell below 300,000 bpd
+      by mid-2019 and the regime did not negotiate; it escalated in the Gulf instead,
+      the tanker attacks of that summer.
+  context_note: Capital-context's conflict_risk_premium is fed by this sweep, not
+    a collector; the Michigan survey already names the Iran conflict as a driver of
+    inflation expectations — this quantifies that input.

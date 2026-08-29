@@ -12,6 +12,10 @@ opened: 2026-07-24
 Payments, whether the model expands, and read-through to
 `mh-clinical-infra-funding`'s "does the market price in rigor" thesis.
 
+## 2026-08-27 — CMS is planning a formal launch event for the ACCESS behavioral-health payment model
+
+- **STAT's Health Tech newsletter reported 08-27 that CMS is planning a launch event for ACCESS**, the 10-year outcomes-based-payment demonstration whose behavioral-health track already includes Headspace, SonderMind, Concert Health, Mindoula, and April Health/Wysa. ⚠️ The full STAT+ piece is paywalled — WebFetch and a jina.ai reader proxy both returned only the headline and byline (Mario Aguilar), not the article body, so no detail on the event's date, format, or whether the BH track features in it. Flagged as a real but thin signal — worth a follow-up read via a STAT+ subscription rather than treated as fully verified. ([STAT Health Tech, 08-27, paywalled](https://www.statnews.com/2026/08/27/cms-plans-launch-event-access-medicare-pilot-health-tech/))
+
 ## 2026-08-17 — Second rolling cohort opens; a parallel FDA pathway appears
 
 - **CMS's ACCESS model opened its next participant cohort today, the

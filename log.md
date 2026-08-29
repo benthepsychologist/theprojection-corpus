@@ -6642,3 +6642,189 @@ retired on 08-25 — which makes the site push the actual publish path for
 a daily run. **Hit while consulting both for this run.** Followed
 `/daily`, since it is the later-amended file and the retirement note is
 explicit. Both are engine-owned templates; flagged, not edited.
+
+## 2026-08-29 — `/daily` (15:10 ET run): finalize 08-28 with the evening swept as its own scope, open 08-29, and a king this map did not notice
+
+**The second session of the day, inheriting an unfinished first.** A 10:00
+ET pass had run the collectors, written timeline entries on 29 threads,
+bumped `last_seen` and `actor-doing.yaml`, and logged three expectations —
+then stopped without a digest, a finalize, a log entry or a commit. This
+run took that work as given, verified it (all four attention YAMLs
+`safe_load` clean; a duplicate S-1 ledger entry folded), and did the rest.
+
+**Dispatch: nine agents, then four.** Five cluster sweeps (AI capital and
+silicon; AI governance, China and sites; global-capital macro; mental
+health; world news), each briefed with TWO windows — the uncurated 08-28
+evening (15:10 → 05:00 ET) and today — plus three coverage critics run in
+parallel with them rather than after, and a cold rotation over eight
+quiet threads. Then four sonnet briefing agents for the public site. Agents
+wrote to staging files under `buffer/sweeps/2026-08-29/` (gitignored) in a
+fixed format; a one-off merge script (`/tmp/merge_entries.py`, F0)
+applied their proposed timeline entries additively — append to an
+existing same-date block or insert a new one, never replace — after a
+dry-run diff each time. **Zero timeline entries were lost this run**; the
+08-28 lesson (rebuild the day, don't overwrite it) held.
+
+### What the evening window held, swept as its own scope for the first time
+
+⛔→✅ **Sony Music Publishing and Warner Chappell sued Anthropic late on
+Friday 08-28 in N.D. Cal., naming Dario Amodei and Benjamin Mann
+personally.** The morning pass had it from a Music Business Worldwide
+headline it could not open, dated to the pickup. The evening-scoped sweep
+confirmed it across Axios, Reuters-fed coverage and a tracker quoting the
+48-page complaint (four causes of action, statutory damages, DMCA §1202),
+and it was re-dated to the filing. The morning's 08-29 block on
+`anthropic-copyright-exposure` was **rewritten, not appended to**, with
+the sourcing path recorded on the entry. **This is the fix the 08-28
+coverage-log entry proposed and did not apply — an evening re-sweep inside
+the finalize — run as a brief change rather than a skill change. First
+run, it paid.** Recorded as one data point, not a verdict.
+
+### The miss that is not about a lens
+
+⛔ **King Harald V of Norway died at 06:35 Oslo time on Friday 28 August**
+— 00:35 ET, inside the 08-27 digest-day — announced by the Royal House,
+read directly from royalcourt.no and kongehuset.no, leading AP, NPR and
+CNN into Saturday. **Nothing here had it** through the 08-27 finalize, two
+08-28 runs and the 08-29 morning pass. Caught by a general front-page
+scan added to the world-news sweep's brief for this run. Filed to the
+flash rail as a late catch (`date: 2026-08-27`, `filed: 2026-08-29`;
+`flash_last_day()` verified to render it today and not tomorrow), to the
+08-27 world-news digest at its own date, and corrected in the 08-28
+digests' "rail empty by design" notes. **Same shape as the Nepal-Tibet
+flood four days earlier**: no benchmark reads general news, `bq` is dark
+(day thirteen), the sweeps read conflicts. Two of a kind in a week.
+
+### Critics: eleven misses, one in the evening window
+
+**Frontier AI (4):** the Reuters exclusive on the Aur0ra ransomware crew
+talking Cursor's Claude Sonnet 4.5-based agent into breaking into seven
+companies (published 08-27 17:53 ET — a THIRD Thursday-evening miss;
+offered as a thread candidate), Anthropic's Model Hardware Standard (the
+lead of both The Rundown and TLDR; on `enterprise-agent-product-race`),
+the Reuters-sourced MatX talks and a stalled FINRA-style order (both
+digest-only pending primary sources). **Global capital (2):** Goolsbee on
+Odd Lots — GDP growing "mostly due to AI and the data center buildout" —
+on `fed-independence-fight`; a16z's $1.1bn Machine Age Fund on
+`ai-compute-spend` (entity add proposed). **Mental health (4):** a BHB
+story at 17:27 ET on BCBS Montana downcoding psychiatric claims (the one
+evening-window miss; `mhpaea-parity-limbo`, adjacent) and three JMIR
+Mental Health papers (`dtx-payment-paradox`, `ai-therapy-evidence`,
+`mh-evidence-watch`). **The critics' own read, adopted in the digests:
+recall is strong on capital, courts and the China stack, weak on agent
+behaviour, lab product strategy and the academic layer — a sweep-brief
+problem, not a window problem.** Money Stuff published no Friday column;
+Bloomberg Technology blocked on all transports; MobiHealthNews and The
+Neuron's homepage both back. Six `benchmarks.yaml` access facts recorded
+for a confirmed-pass edit, not applied.
+
+### Verified before it entered the record
+
+- ✎ **"Trump orders dismissal of Lisa Cook" (Guardian Nigeria, 08-28
+  22:43 GMT)** — run down against the Fed's and Treasury's own press
+  indexes and every major wire; the two hits that looked like
+  corroboration are dated **August 2025**. A year-old story re-indexed.
+  Nothing filed.
+- ✎ **The Myla toll**: 27 vs 37 resolved at 37 killed, 42 injured, 4
+  missing per Ukraine's Interior Minister at 17:00 local 08-29.
+- ✎ **The two-year yield the 08-28 digest said it did not have**: 4.34%,
+  +14bp, the day's largest move, from Treasury's own par curve — the hump
+  moved from the five-year (intraday read) to the 2-3 year sector; the
+  long-end-untouched read stands with the tenor corrected.
+- ✎ **Gambit's model attribution** (Claude Sonnet 4.5) and Reuters' own
+  hedge (could not ascertain how much the agent contributed) both quoted,
+  neither dropped.
+- ✎ **Two cold-rotation "hits"** on `meta-gas-pivot` were May and July
+  stories re-indexed — caught by the agent on verification.
+
+### What moved
+
+**41 timeline blocks across 40 threads** (29 from the morning pass; 12
+from sweeps, critics and rotation) · **33 `last_seen` bumps** · **9
+`actor-doing.yaml` refreshes** (anthropic, google, meta-ai, nvidia,
+softbank by the morning pass; openai, kaiser-permanente, amd, anthropic
+again by this one) · **ledger: 1 hit** (Effingham session convened,
+outcome carried to a new entry), **1 slip** (Moonshot's HK filing → 09-30
+on the company's own denial), **1 passed-silent standing** (Meta/Warner,
+grace expired), **6 evidence notes**, **3 new expectations** (SB 1119's
+floor vote 08-31; Governor action on AB 1979 and SB 503 by 09-30), **1
+duplicate folded** · **1 flash filed** (late catch) · **5 digests
+finalized** (08-28, three with critic appendices; `coverage: done`) · **5
+digests opened** (08-29) · **2 interpretation sidecars** (08-28 on the
+Nvidia customer-allocation clause; 08-29 on Iran's export collapse), both
+validated against `validate_interpretation()` — the validator's length
+caps rejected the first drafts of both, which is what it is for · **1
+archive digest amended** (08-27 world-news, the king at its own date).
+Graph fed (07 → 06 → 03 → 09), `graph/validate.py` clean: **4,204 atoms,
+2,572 sources, 6,745 relationships, 1,033 annotations, 110 extraction
+passes**, all references resolve.
+
+### Collectors: three recoveries, one still dark
+
+- ✅ **GDELT and Federal Register ran** — `KESTREL_CONTACT_EMAIL` set
+  in-shell to `ben@getmensio.com`, the address `sources/API-SIGNUP.md`
+  declares for collector user-agents (not Ben's personal mailbox, which
+  is not to be sent to any external service). The documented practice,
+  not a persistence fix; **asked a third time.**
+- ✅ **`rss` ran** — 2,811 fetched, 386 kept — after three dark runs on
+  the `feeds.yaml` path fault. Cause of recovery not established.
+- ⛔ **`bq` day thirteen**; `world-news.yaml` at 08-25. The king is what
+  that cost.
+- ⚠️ `openalex`/`semantic_scholar` 429, `lda` 403, `fred`/`fec` keyless.
+  The collect was still finishing its `google_news_rss` lane at close;
+  its manifests are committed if written by then, otherwise next run.
+
+### Put to Ben, not decided here
+
+1. **Make the evening-scoped re-sweep a `/daily` finalize step** (engine
+   skill — route as a template change, not an edit). One run, one catch.
+2. **Make the world-news front-page scan a standing step**, same route.
+   One run, one king.
+3. **A wire service in `sources/benchmarks.yaml`** — the 08-28 proposal
+   — would have caught both the king and the Cursor story; it covers
+   what the benchmark set structurally cannot.
+4. **Eight entity adds** standing: `Andreessen Horowitz` (new),
+   `Salesforce`, `Hugging Face`, `Alphabet`, `Meta`, `PayPal`, `Stripe`,
+   `Onos Health`.
+5. **Three thread candidates** in the 08-29 front: AI-agent-enabled
+   cyberattacks (new), algorithmic clinical triage and a West Bank strand
+   (both second-and-final). Digital-BH consolidation carried in the MH
+   digest, strengthened by the UHS-Talkspace close caught late.
+6. **INBOX**: cloud-governor's disposition (the four predicates ruled and
+   registered) is an FYI; the 132-row re-predicate pass in `graph/` is
+   owed by this repo and is not `/daily` work. Left in the queue.
+
+### Friction, in operation
+
+- ⚠️ **`/daily` step 6b's ingesters run from `graph/`, and `cd graph` in a
+  Bash call persisted the working directory** into the next call, which
+  then looked for `provenance/` in the wrong place. Harmless here (caught
+  on the next call); worth an absolute-path habit rather than a skill
+  edit.
+- ⚠️ **The cold-rotation brief's "≤6 WebSearch calls" budget was not
+  achievable**: Google News RSS redirect links do not resolve via `curl
+  -L` (JS-rendered), so the agent had to re-derive publisher URLs via
+  WebSearch — roughly a dozen calls. The tier-3 "RSS-first" rule assumes
+  a resolvable redirect that no longer exists.
+
+### Published and closed
+
+Four site briefings regenerated by sonnet agents from `theprojection
+readouts --pack`, each validated clean by `validate_briefing()` before
+`--apply` (link coverage front 100%, AI 96%, global capital 85%, mental
+health 100%; one process-narration phrase patched by hand at assembly).
+`--apply` 4/4, `--export` 154 readouts. `kestrel publish --push`: 99
+threads, 62 entity pages, 3 beat pages, 753 claim pages, **7
+interpretation pages (up from 5 — both new sidecars)**, 940 story pages,
+122 map pages, the `norway-king-harald-v-dies` flash on every page for
+today only; site commit `151da35`, Cloudflare build
+`0aa14e4d-c8b7-43d6-ba49-79261f0cdb30`. Collector at close: 17 of this
+run's manifests written (GDELT, Federal Register, rss and google_news_rss
+among them) and committed; the `openalex` lane was still retrying into
+429s (2 process(es) alive) — any manifest it writes after this
+commit lands with the next run.
+
+**Pick up here:** SB 903's Assembly floor vote (08-30) and the Camellia
+work-session outcome (08-30) are both due on the next run; AB 2575, SB
+1119, GLM-5.5, Anthropic's S-1 and Moonshot's pre-IPO round all resolve
+by 08-31. The three design questions above are Ben's.

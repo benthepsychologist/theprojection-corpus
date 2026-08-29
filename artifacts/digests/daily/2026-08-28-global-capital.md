@@ -1,10 +1,11 @@
 ---
 lens: global-capital
 date: 2026-08-28
-status: building
+status: final
 window_start: 2026-08-28T05:00:00-04:00
-as_of: 2026-08-28T15:10:00-04:00
-coverage: pending
+window_end: 2026-08-29T05:00:00-04:00
+finalized: 2026-08-29T15:10:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-28
@@ -17,7 +18,11 @@ financing-loop sweep, a cold-thread rotation, and a collector sweep.
 **Both of the day's market reads were taken by this session directly**:
 the index and yield levels from live quote feeds, and the consumer-
 sentiment release from the University of Michigan's own page, after a
-sweep reported its headline inflation figure backwards.*
+sweep reported its headline inflation figure backwards. **The 08-29 15:10
+ET finalize pass added the official close**: Treasury's own par curve,
+which answered the two-year question the afternoon strip could not, a
+macro sweep scoped to the evening window, a coverage critic, and the
+morning session's timeline work on the Nvidia programme's mechanics.*
 
 ## Today's throughline
 
@@ -63,6 +68,24 @@ August survey, released this morning, showed year-ahead expectations
 **falling** to 4.0% from July's 4.2%. **Rhetoric moved this market, not
 data.**
 
+**The close, read from Treasury's own curve the next day, moves the hump
+and settles the number this map said it did not have.** Close-to-close
+the **two-year rose 14 basis points to 4.34%** — the largest move on the
+whole curve — with the three-year up 11, the five-year up 10, the ten-year
+up 6, and the twenty- and thirty-year up 3 each. The repricing sat in the
+two-to-three-year sector, not the five-year the intraday read had named,
+and **the long end really did not move**, which is the point that matters
+for `treasury-long-end-intervention` and now rests on the primary source.
+A second Fed voice from the same mountain agreed with the chairman's
+method and went further on the substance: Chicago Fed President Austan
+Goolsbee told Odd Lots he is worried the economy is overheating and that
+GDP is growing "mostly due to AI and the data center buildout." **And the
+evening window, swept as its own pass for the first time, held the
+mechanism behind the day's biggest single-name move**: Nvidia's paused
+programme is **$36bn** of take-or-pay and revenue-share commitments, and
+the clause that drew the antitrust concern let Nvidia decide which
+customers a cloud provider could rent guaranteed capacity to.
+
 ## Capital in my markets
 
 - **Warsh put a number on the AI trade from the Fed's own podium, and it
@@ -104,6 +127,33 @@ data.**
   framework survives this chairmanship.
   ([Federal Reserve, released text](https://www.federalreserve.gov/newsevents/speech/warsh20260828a.htm))
   <!-- k: t=fed-independence-fight,treasury-long-end-intervention e= axis=capital-in-my-markets -->
+
+- **A sitting Fed president, at the same symposium, attributed GDP growth
+  itself to the AI buildout — and this map missed it until the critic
+  found it.** Chicago Fed President **Austan Goolsbee**, interviewed by Odd
+  Lots at Jackson Hole on 08-27 and published 08-28 at 13:23 ET, said he
+  is worried the economy is overheating, that the 2% target is "farther
+  away than it was this time last year," and that GDP is growing "mostly
+  due to AI and the data center buildout" while hiring and firing both
+  stay unusually low. He also said he is "embracing Kevin Warsh's
+  philosophy around reducing forward guidance." **Two things the keynote
+  day did not have**: a second Fed voice endorsing the quieter-Fed
+  doctrine, and a current-conditions claim — output growth attributed to
+  the buildout this map tracks — where Warsh had posed a research
+  question. ⚠️ From the episode transcript, not a Fed release;
+  critic-caught from the weekly Odd Lots benchmark.
+  ([Odd Lots, episode and transcript](https://omny.fm/shows/odd-lots/austan-goolsbee-is-worried-the-economy-is-overheating))
+  <!-- k: t=fed-independence-fight,ai-compute-spend e= axis=capital-in-my-markets -->
+
+- **A former Fed vice chair called the keynote forward guidance anyway.**
+  Alan Blinder, on the record at 17:36 ET: "I would call that forward
+  guidance," adding that Warsh "sounded to me like somebody who thought
+  interest rates should go up" and "like a man who was rationalizing
+  raising interest rates." A named contradiction of the chairman's own
+  framing from someone who held the job, and the sharpest version yet of
+  the read that the absence of a path was itself the signal.
+  ([Yahoo Finance, syndicated](https://finance.yahoo.com/economy/policy/article/warsh-offered-forward-guidance-after-all-says-former-fed-vice-chair-190112766.html))
+  <!-- k: t=fed-independence-fight e=kevin-warsh axis=capital-in-my-markets -->
 
 - **Consumer sentiment confirmed a sharp August fall, and year-ahead
   inflation expectations went the other way — down, not up.** The
@@ -186,6 +236,30 @@ data.**
   [Reuters via Yahoo](https://finance.yahoo.com/news/nvidia-pauses-revenue-sharing-deals-223140237.html))
   <!-- k: t=nvidia-vendor-financing,nvidia-order-book,ai-compute-spend e=nvidia axis=capital-in-my-markets sev=major -->
 
+- **The paused programme has a number and a mechanism: $36bn of
+  commitments, and a clause letting Nvidia approve its customers'
+  customers.** Nvidia's own quarterly filing sizes the "AI Compute
+  Partnership" at **$36 billion** of take-or-pay and revenue-share
+  agreements on a typical six-year term — if a cloud's utilisation ran at
+  80% Nvidia would take a cut of the excess revenue; at 20% its take-or-pay
+  obligation would cover the shortfall — distinct from the $105bn OpenAI
+  guarantee and the $500bn-plus third-party platforms disclosed in the
+  same 10-Q. **What actually drew the internal antitrust concern, reported
+  for the first time by the WSJ**: Nvidia told some cloud providers they
+  could rent the guaranteed capacity **only to Nvidia-approved customers**,
+  and said it preferred capacity spread across several smaller AI
+  companies rather than concentrated with one large operator. **That is
+  customer allocation by a dominant supplier, not a pricing term** — the
+  category courts treat with materially more suspicion, and the specific
+  exposure behind the vague "control" language in the earlier bullet.
+  Firmus Technologies (a 170,000-GPU Batam campus, up to $30bn of
+  offtake, a deal dated 06-30) and SharonAI are named as initial signers
+  now exposed to the pause. ⚠️ WSJ-derived throughout, reached via
+  pickups; no Nvidia statement beyond the 08-28 spokesperson line.
+  ([SEC EDGAR, NVDA 10-Q](https://www.sec.gov/Archives/edgar/data/0001045810/000104581026000075/nvda-20260726.htm),
+  [WSJ, via Business Model Analyst](https://businessmodelanalyst.com/nvidia-ai-compute-partnership-customer-approval/))
+  <!-- k: t=nvidia-vendor-financing,ai-circular-financing-risk e=nvidia axis=capital-in-my-markets interp=yes -->
+
 - **Nvidia-backed Lambda raised about $1bn of private debt to buy GPUs
   for a Microsoft deal, on a maturity roughly three years shorter than
   normal for the format.** JPMorgan arranged the short-dated facility,
@@ -214,6 +288,20 @@ data.**
   leverage on a position that is itself the collateral. ⚠️ Single-outlet,
   and the terms are reported rather than filed.
   <!-- k: t=softbank-all-in,ai-compute-spend,frontier-lab-ipos e=openai axis=deals-and-filings -->
+
+- **Andreessen Horowitz raised a $1.1bn fund aimed at the supply-chain
+  limits this lens tracks, and the critic found it before this map did.**
+  The "Machine Age Fund," announced 08-28, backs AI hardware and
+  infrastructure — chips, memory, networking, storage and full systems
+  including data centres, robotics and home AI appliances — framed on
+  a16z's own page around every layer of the AI stack "hitting the limits
+  of today's supply chain capability." Venture-scale capital pointed at the
+  physical bottleneck `ai-memory-shortage` tracks from the price side.
+  ⚠️ Axios Pro Rata's fundraising lead; a16z is not a watchlist entity, so
+  the bullet carries no entity tag — an add is proposed below.
+  ([a16z, fund page](https://a16z.com/the-machine-age-fund/),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-28/andreessen-horowitz-raises-1-1-billion-for-ai-infrastructure-fund))
+  <!-- k: t=ai-compute-spend,ai-memory-shortage e= axis=deals-and-filings -->
 
 ## 📊 Macro strip
 
@@ -253,13 +341,48 @@ already logged.
 reported today that the ten- and thirty-year yields "dipped slightly or
 were little changed"** — the direct index reads above show both **rose**.
 The direction here is this session's own, and the disagreement is
-recorded rather than silently resolved. Second, **no two-year yield is
-asserted.** A sweep reported it up 6-8bp to about 4.30% while the
-futures-based read this session pulled showed it *lower*; the two cannot
-both be right, and neither was verifiable against a primary curve
-publication before the Treasury's own par-yield curve posts after the
-close. **The two-year is the single most-cited number in today's
-coverage and this map does not have it.**
+recorded rather than silently resolved. Second, at 15:04 ET **no two-year
+yield was asserted**: a sweep reported it up 6-8bp to about 4.30% while a
+futures-based read showed it *lower*, and neither was checkable before
+Treasury's own curve posted.
+
+**The official close, added at finalize from Treasury's daily par-yield
+curve, settles it.** Close-to-close, 08-27 → 08-28:
+
+| tenor | 08-28 close | change |
+| --- | --- | --- |
+| 1-month | 3.84% | +3bp |
+| 3-month | 3.90% | +6bp |
+| 1-year | 4.15% | +11bp |
+| **2-year** | **4.34%** | **+14bp** |
+| 3-year | 4.41% | +11bp |
+| 5-year | 4.48% | +10bp |
+| 7-year | 4.59% | +7bp |
+| 10-year | 4.73% | +6bp |
+| 20-year | 5.21% | +3bp |
+| 30-year | 5.22% | +3bp |
+
+**The two-year was the day's largest move, not the five-year** — the hump
+the intraday read placed in the mid-belly sat, on a full-day basis, in the
+two-to-three-year sector that prices the next several meetings. The
+twenty- and thirty-year moved three basis points each. **The read stands
+with the tenor corrected: a rate-path repricing, and a long end left
+alone.** Equity closes confirmed the intraday direction and deepened it —
+S&P 500 **7,711.76 (-0.25%)**, Nasdaq **26,402.42 (-0.52%)**, Dow
+**53,559.99 (-0.02%)**, Nvidia **$217.55 (-4.57%)**, the Philadelphia
+Semiconductor Index **-3.47%** at 11,469.66 on Yahoo Finance's own
+after-close stamp, the dollar index **99.65 (+0.5%)** and spot gold
+**$4,529.90 (-2.88%)** per a named market-review source (⚠️ a second
+aggregator has gold at $4,454.08, -3.18%; direction and rough size agree,
+the print does not). ⚠️ **No VIX close is asserted** — the one history
+page reachable carried internally inconsistent date labels; the 15:04 ET
+read of 14.58 stands as the best available figure.
+
+**September hike odds, with sourcing that finally reaches the tool.**
+CNBC cites CME Group's FedWatch directly at **57.5%**, up from **35.4%**
+the day before; its own 11:22 ET snapshot had "nearly 56%," with Kalshi
+at **48%** (from roughly 30%) and Polymarket at 49%. Two markets, two
+sizes for the same move, both real, neither adopted over the other.
 
 💡 **Reported but not verified:** market-implied odds of a September hike
 were reported rising from roughly 36% before the speech to 50-56% after
@@ -315,6 +438,38 @@ confidence, not as a figure this map stands behind.
   mattered because it would have flipped the day's read from
   "expectations easing while the market repriced hawkishly" to
   "expectations confirming the hawkish move."
+- 🔍 **Coverage critic, four daily benchmarks plus Odd Lots: two misses,
+  neither in the evening window, and the day's best check unavailable.**
+  Goolsbee's Odd Lots interview (13:23 ET) and a16z's fund (Pro Rata's
+  fundraising lead) were both morning-published and are now on
+  `fed-independence-fight` and `ai-compute-spend`. **Money Stuff published
+  no Friday column at all** — its author feed still shows Thursday's "AI
+  Refi" — so the single most valuable check against the Nvidia pause, the
+  PayPal collapse, the SoftBank loan and Warsh could not be run. Bloomberg
+  Technology was blocked on all three transports again. Two access facts
+  worth a confirmed-pass edit to `sources/benchmarks.yaml`: FT Unhedged
+  posts around 01:30 ET, *before* the 05:00 boundary, so its "08-28"
+  edition falls in the 08-27 digest-day by this map's clock, and Odd Lots
+  is reachable through its Omny podcast RSS, which the file does not record.
+- ✅ **The two-year yield this digest said it did not have, it now has** —
+  from Treasury's own daily par curve, and the day's largest move.
+- 🕰 **Four late catches filed to timelines at their own dates**, none of
+  which this lens had: Anthropic's **$45bn, six-year** lease of 460MW from
+  UK neocloud Nscale (08-26) and its reported weighing of **insider sales
+  in the IPO itself** (The Information, 08-27), both to
+  `frontier-lab-ipos`; SoftBank negotiating **majority control of 1X**, an
+  OpenAI-backed humanoid-robotics startup, at a reported ~$6bn (The
+  Information, 08-27, carried by Reuters, Axios and Nikkei through 08-29)
+  to `softbank-all-in`; and **HUMAIN's partnership with Microsoft** on the
+  ALLAM model (08-26), a day after its Mistral deal, to `pif-ai-buildout`.
+- ✅ **A sweep's Guardian-Nigeria headline claiming Trump had ordered Lisa
+  Cook's dismissal on 08-28 was run down and ruled out**: the Fed's own
+  press index, Treasury's, and every major wire have nothing; two hits
+  that looked like corroboration are the **August 2025** letter and
+  coverage of the original firing the Supreme Court later blocked. A
+  year-old story re-indexed, not a new event. Nothing filed.
+- 💡 **Entity add proposed and NOT made: `Andreessen Horowitz` (a16z)** —
+  carrying today's fund bullet with no entity tag.
 - 💡 **Two watchlist entity adds proposed and NOT made** — **`PayPal`**
   and **`Stripe`**, both carrying a bullet today with no entity tag
   available. Entity adds go through the steering loop.
@@ -326,14 +481,38 @@ See the front digest for this run's offers.
 
 ---
 The Fed chair spent his first Jackson Hole keynote on artificial
-intelligence and on refusing to give a rate path, and said nothing
-whatever about the fight over the Fed's independence. The market spent
-the afternoon disagreeing with the refusal: yields rose across the curve
-but the five-year rose four times as far as the thirty-year, the dollar
-gained, gold fell more than three percent, and the volatility index
-barely moved, which is the signature of a rate-path repricing rather than
-a fiscal scare. It repriced that way on a day the only inflation
-expectations print available, the University of Michigan's final August
-survey, showed the year-ahead number falling to four percent from
-four point two, with the survey blaming the Iran conflict for what
-consumers expect to pay for gasoline.
+intelligence and on refusing to give a rate path, and the market spent
+the afternoon disagreeing with the refusal. Treasury's own curve, read the
+next day, puts the day's biggest move at the two-year, up fourteen basis
+points to four point three four, with the thirty-year up three: a
+repricing of the next few meetings and a long end left alone. A sitting
+Fed president at the same symposium said the economy is growing mostly
+because of the AI and data-centre buildout. And the evening window, swept
+on its own for the first time, produced the mechanism behind Nvidia's
+paused financing programme: thirty-six billion dollars of commitments,
+and a clause that let Nvidia approve which customers its customers could
+serve.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:**
+
+- **Odd Lots led with a live Jackson Hole interview of Chicago Fed President Austan Goolsbee, and the digest has nothing from it.** Episode "Austan Goolsbee Is Worried the Economy Is Overheating" (Odd Lots, published Fri 2026-08-28 17:23 UTC / 13:23 ET — inside today's window), recorded at the Jackson Hole symposium the same day as Warsh's keynote. Goolsbee says he's worried the economy is overheating, that the 2% inflation target is "farther away than it was this time last year," and — the line that matters most for this map — that **GDP is growing "mostly due to AI and the data center buildout"** while hiring and firing both stay unusually low. He also says he is "embracing Kevin Warsh's philosophy around reducing forward guidance" and discusses new Fed task forces and the indicators shaping his reaction function. This is a second, independent Fed voice at the same event corroborating the digest's own throughline (a chairman declining to give a rate path) and adding a claim the digest doesn't have anywhere: a sitting Fed president attributing GDP growth itself to the AI buildout. Not in the digest, not in the threads diff, not anywhere in `artifacts/`. **Map effect: `fed-independence-fight`** (same thread the Warsh-keynote bullets are tagged to) — this is corroborating primary-source Fed commentary from the identical day and venue, not a new thread.
+  ([Odd Lots via Omny](https://omny.fm/shows/odd-lots/austan-goolsbee-is-worried-the-economy-is-overheating); Bloomberg's own page is blocked, see Access state)
+
+- **Axios Pro Rata's Fundraising section led with Andreessen Horowitz's new $1.1bn "Machine Age Fund," and it isn't in the map anywhere.** Announced Friday 2026-08-28: a16z raised $1.1bn specifically to back "AI hardware and infrastructure" — chips, memory, networking, storage, and full systems (data centers, robotics, home AI appliances) — framed explicitly around every layer of the AI stack "hitting the limits of today's supply chain capability." This is new capital aimed directly at the compute/memory scarcity story two of this map's own threads already track. Checked against `artifacts/` — no mention anywhere, and `andreessen`/`a16z` is not currently a watchlist entity. **Map effect: `ai-compute-spend`** (capex/capital-allocation meta-thread) with a secondary tag to **`ai-memory-shortage`** (the fund explicitly targets memory/networking supply constraints that thread already tracks) — proposed entity add: **Andreessen Horowitz (a16z)**. Not added; offered for the steering loop.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-28/andreessen-horowitz-raises-1-1-billion-for-ai-infrastructure-fund))
+
+**Both covered:**
+
+- **Advent/Stripe's ~$53bn PayPal LBO collapse** — Axios Pro Rata's actual lead story ("The BFD"), same numbers and framing (price dispute, not financing failure) as the digest's own item; Bloomberg Technology's 8/28 video also led with it. Nothing new in either benchmark's version.
+- **Kevin Warsh's Jackson Hole keynote** — Bloomberg Technology's 8/28 episode opened with it; the digest's treatment (full-text read of the Fed's own release, the "quieter Fed" doctrine, the absence of "independence"/"average inflation") goes considerably deeper than either benchmark's headline-level mention.
+- **The Anthropic PBC v. U.S. Department of War permanent-injunction ruling** — Bloomberg Technology's 8/28 video also led with this (framed as "Anthropic's court win"). It is in the map, but filed to `frontier-model-gov-review-precedent` (an AI-lens thread), not to a global-capital thread or this digest. Recorded as a boundary note, not a miss: the item is genuinely more legal/regulatory than capital-markets, and it is fully sourced (CNBC, Axios, primary court order) where it lives.
+
+**We had → they didn't:**
+
+- Nvidia's voluntary pullback from its July revenue-sharing financing programme, the Lambda $1bn private-debt raise, and SoftBank's $10bn loan against its OpenAI stake — none of these three appear in Axios Pro Rata's 08-28 issue (read in full) or in what could be reconstructed of Bloomberg Technology's 8/28 episode. **Money Stuff could not be checked against them at all — see below, this is the day's biggest access gap.**
+- The full macro strip (live yield-curve read, belly-vs-long-end dispersion, VIX flat) and the chip-vs-software rotation intraday levels (SOX -3.45% vs. Microsoft +1.84%) are original market reads no benchmark reproduced at this granularity.
+- The University of Michigan sentiment release, read directly from the primary source with a same-day correction of a sweep's reversed inflation-expectations figure.
+
+---

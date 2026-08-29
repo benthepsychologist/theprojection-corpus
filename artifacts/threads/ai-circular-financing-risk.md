@@ -13,6 +13,11 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
+## 2026-08-28 (added 2026-08-29) — The vendor pulls back from part of the loop voluntarily, not because a customer failed
+
+- **Nvidia stepped back from the AI-cloud revenue-sharing financing programme it launched in July — $36bn of take-or-pay/revenue-share commitments per its own 10-Q — reportedly after its own employees flagged antitrust exposure over a clause requiring cloud providers to get Nvidia's approval before renting capacity to certain customers.** **This is the first voluntary retreat from the loop this thread has recorded** — every prior entry on this thread has been the loop's scale getting *larger* (the 10-Q's $105bn guarantee, the $500bn+ third-party platforms) or the market's *read* on it shifting (Burry vs. the +8.74% close), not a vendor unwinding a piece of the structure itself. It doesn't touch the $105bn OpenAI guarantee or the $500bn+ platforms, which remain fully in place — this is one program, paused, with Nvidia leaving open that it could be restructured rather than killed. Full mechanics on `nvidia-vendor-financing`. ⚠️ WSJ-sourced and paywalled throughout; no primary Nvidia statement beyond a spokesperson saying the July business model "is still in place and continues to evolve."
+  ([Yahoo Finance, WSJ-sourced](https://finance.yahoo.com/markets/stocks/articles/nvidia-nvda-pulls-back-financing-153423894.html)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — Two opposite verdicts off one filing, on the same day
 
 - **The first full trading day after the 10-Q produced a split, not a verdict.** Nvidia closed **+8.74% at $227.98** on a $96.2bn beat and a $108.0bn guide — the equity market reading the disclosed guarantee structure as no obstacle at all. On the same day, **Michael Burry gave his letter to those same disclosures and called the reaction "whistling past the graveyard."** **This is what the thread's watch line asked for and it came back ambiguous:** the argument is now conducted entirely on an audited document rather than on inference, and the two sides read it opposite ways within twenty-four hours. ⚠️ Burry's Substack is paywalled; only the quoted phrase is verified, via Benzinga's 08-28 03:44 ET writeup.

@@ -5,6 +5,12 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-08-29 — Hezbollah's Qassem rejects the framework agreement outright; a possible "early September" round eight
+
+- **Hezbollah secretary-general Naim Qassem gave a televised address on Al-Manar rejecting the US-backed Israel-Lebanon framework agreement as "illegitimate, unlawful, humiliating, destructive to Lebanese sovereignty," specifically rejecting its "pilot zones" provision and any verification/monitoring mechanism.** The same coverage puts fresh negotiations at "early September" — the first concrete-ish signal on round eight's timing since this thread's unconfirmed 09-01 provisional date, though "early September" is still not a hard date. ([The Times of Israel](https://www.timesofisrael.com/hezbollah-chief-vows-no-surrender-as-he-again-rejects-israel-lebanon-deal/)) ⟨daily 2026-08-29⟩
+
+- **New casualty detail on the 08-27 Nabatieh-district strike this thread already logged: a woman was killed in her home 48 hours after her wedding, her house destroyed, and six others wounded including a child, a woman and two elderly people.** ⚠️ **Not confirmed as the identical Arab Salim strike already on this timeline versus a distinct nearby strike** — logged as elaboration on the existing entry, not a new event. ([Democracy Now](https://www.democracynow.org/2026/8/28/headlines/israel_strikes_lebanon_killing_newlywed_woman)) ⟨daily 2026-08-29⟩
+
 ## 2026-08-27 — Hezbollah drones over the security zone, Israeli strikes on Nabatiya
 
 - **Hezbollah launched two explosive drones at Israeli troops inside the agreed

@@ -252,6 +252,12 @@ expectations:
     logged: 2026-07-22
     logged_by: crawl
     status: pending
+    # 2026-08-29 ⟨daily⟩: NOT SHIPPED as of 08-29 — no release, weights, API
+    # or model card; Zhipu's channels still promote GLM-5.2/5.3. The only basis
+    # for an August date is a JPMorgan note relayed by Reuters on 06-25 plus
+    # community leaks. Month-precision due 08-31: flips passed-silent on the
+    # next run if nothing appears. Separately, GLM-5.3's open weights did land
+    # on Hugging Face around 08-27 (TechNode) — a different model.
 
   - id: moonshot-preipo-round
     claim: "Moonshot opens final pre-IPO round at ~$50B valuation (HKEX listing ~6 months later)"
@@ -265,6 +271,12 @@ expectations:
     logged: 2026-07-22
     logged_by: crawl
     status: pending
+    # 2026-08-29 ⟨daily⟩: NOT CONFIRMED CLOSED. KrAsia reported the round
+    # targeting a final close around 08-27; one sweep has it at ~$3.5bn on a
+    # ~$35bn implied valuation, another at a ~$50bn pre-money — the two do not
+    # reconcile and no company statement exists. Stays pending to the 08-31
+    # month-precision date; if nothing confirms by the next run it goes
+    # passed-silent rather than being assumed closed.
 
   - id: ny-s9051b-signature
     claim: "Hochul signs (or pocket-vetoes) NY S9051B under-18 companion ban + S9408A AI-toy ban"
@@ -598,8 +610,8 @@ expectations:
 
   - id: moonshot-hk-ipo-filing
     claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"
-    due: 2026-08-31
-    due_precision: month
+    due: 2026-09-30
+    due_precision: day
     thread: kimi-distillation-fight
     entities: [moonshot-ai]
     source: https://wccftech.com/moonshot-chases-a-potential-50-billion-ipo-valuation-even-as-trump-administration-accuses-it-of-distilling-anthropics-fable-model/
@@ -608,6 +620,12 @@ expectations:
     logged: 2026-08-03
     logged_by: curate-add
     status: pending
+    slips: [2026-08-31]
+    # 2026-08-29 ⟨daily⟩: SLIPPED. Moonshot itself denied an August filing
+    # (TechNode 08-03, The Standard) and is reported targeting an HKEX
+    # listing-application submission "by September 30" (IFR, KrAsia), with
+    # the listing itself late 2026 or Q1 2027. No filing on HKEX as of
+    # 08-29. The pre-IPO round is a separate entry (moonshot-preipo-round).
 
   - id: amd-openai-meta-1gw-h2-2026
     claim: "First 1GW shipment tranches (OpenAI and Meta deals separately) begin, per both deals' stated H2-2026 timeline — first real test of warrant-vesting shipment milestones"
@@ -1336,7 +1354,7 @@ expectations:
   - id: anthropic-public-s1-filing
     claim: "Anthropic files its IPO paperwork PUBLICLY on SEC EDGAR, converting the confidential S-1 draft it filed 2026-06-01 into a public filing"
     due: 2026-08-31
-    due_precision: month
+    due_precision: day   # tightened 2026-08-29 ⟨daily⟩: CNBC (08-28) and The Information (08-27) both carry 08-31 as the expected public-flip date; a duplicate `anthropic-s1-filing` entry the 08-29 morning pass logged at day-precision was folded into this one. Also open per The Information 08-27: whether insiders may SELL into the IPO itself rather than following SpaceX's lockup model — the S-1 text resolves it.
     thread: frontier-lab-ipos
     entities: [anthropic]
     source: https://finance.yahoo.com/technology/article/anthropic-could-publicly-file-ipo-paperwork-as-soon-as-this-month-192026244.html
@@ -1351,6 +1369,9 @@ expectations:
     # the ~$190-200bn 2028 revenue forecast now reported to underpin the
     # ~$2T valuation into a document with legal consequences attached.
     status: pending
+    # 2026-08-29 ⟨daily⟩: NOT FILED. EDGAR full-text search queried directly
+    # for "Anthropic" under form S-1, 08-01..08-29: zero hits, EDGAR's own
+    # timestamp 2026-08-29T15:10:43-04:00. Two days to the reported 08-31 date.
 
   - id: broadcom-q3-fy2026-earnings
     claim: "Broadcom reports fiscal Q3 2026, updating the custom-ASIC co-design book this map tracks across five named majors (Google, Meta, OpenAI, Apple, ByteDance)"
@@ -1376,6 +1397,13 @@ expectations:
     due: 2026-08-26
     due_precision: day
     status: passed-silent
+    # 2026-08-29 ⟨daily⟩: GRACE EXPIRED, STANDS AS PASSED-SILENT. Fourth and
+    # final check, two independent sweeps: Warner's senate.gov press listing
+    # still shows nothing after the 08-18 letter; Meta's newsroom carries
+    # nothing on CSAM, Warner or ad review through its full Aug 18-27 run; no
+    # other senator has joined, no FTC or state-AG action, no outlet has
+    # covered the silence. Eleven days from the letter, three past its own
+    # deadline. The loud outcome is the recorded one.
     passed_silent_on: 2026-08-27
     confidence: confirmed
     thread: meta-ai-csam-ads
@@ -1430,6 +1458,10 @@ expectations:
     due: 2026-08-31
     due_precision: day
     status: pending
+    # 2026-08-29 ⟨daily⟩: NO SECOND VOTE YET. The bill's own status page,
+    # re-read 08-29: Location "Senate"; Last Action 08/28/26 "Reconsideration
+    # granted. (Ayes 40. Noes 0.)" — nothing dated 08-29. Alive but not
+    # re-passed; two legislative days (08-30, 08-31) remain.
     confidence: reported
     thread: ai-therapy-regulatory-reckoning
     entities: [kaiser-permanente]
@@ -1442,6 +1474,17 @@ expectations:
       Senate floor process; it would shift liability for AI-caused patient
       harm onto AI developers and facilities, and Kaiser and the
       California Hospital Association oppose it.
+    evidence: |
+      INTERIM, still pending. AB 2575 FAILED its first Senate floor vote
+      2026-08-28 (18-10, short of the majority needed), then was saved
+      same-day by a 40-0 reconsideration vote — alive for one more
+      attempt before the legislature adjourns 08-31. Source: CA
+      Legislature bill history
+      (https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575).
+      Companion bill SB 903 (bars marketing a chatbot as "therapy,"
+      requires licensed-professional oversight) cleared Assembly
+      Appropriations 13-0 on 08-13 and sits on the Assembly's 08-30 floor
+      file — tracked separately as ca-sb903-floor-vote below.
   - id: project-camellia-community-panel-0826
     claim: >
       A community panel on OpenAI's Project Camellia data-center campus
@@ -1689,7 +1732,23 @@ expectations:
       session on Project Camellia (livestreamed)
     due: 2026-08-29
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-08-29
+    evidence: |
+      Convened as scheduled, 10:00-13:00 ET on 08-29 at the county
+      administrative complex (804 S. Laurel St., Springfield), livestreamed,
+      with advance-submitted resident questions on site history, mitigation
+      and community benefits — confirmed across the Effingham Herald, Bryan
+      County News and WTOC advance coverage, with no cancellation notice
+      anywhere. OUTCOME UNREPORTED as of 15:10 ET: no outlet (Effingham
+      Herald, WTOC, WSAV, WJCL, Savannah Morning News, The Current) had
+      filed commissioner quotes, a vote or a resident-comment summary a few
+      hours after a Saturday session. The dated half of what_confirms (the
+      session convening) is a HIT; the board-signal half carries forward as
+      project-camellia-boc-worksession-outcome (due 08-30). Sen. Raphael
+      Warnock toured the adjacent neighbourhood and called for a moratorium
+      the day before (08-28), so commissioners walked in with a live
+      federal-level pressure point.
     confidence: confirmed
     thread: ai-datacenter-sites
     entities: [openai]
@@ -1797,3 +1856,115 @@ expectations:
     logged_by: curate-add
     status: pending
 
+  - id: ca-sb903-floor-vote
+    claim: >
+      California SB 903 (Padilla, bars marketing a chatbot as "therapy" and
+      requires licensed-professional oversight) gets an Assembly floor vote
+      before the session ends
+    due: 2026-08-30
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903
+    confidence: reported
+    what_confirms: >
+      the Legislature's own bill record showing a floor vote result. SB 903
+      cleared Assembly Appropriations 13-0 on 08-13 and sits on the
+      Assembly's 08-30 floor file; the legislature adjourns 08-31, so this
+      and ca-ab2575-senate-floor-vote (above) resolve within a day of each
+      other.
+    logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
+    # 2026-08-29 ⟨daily⟩: NOT TAKEN UP 08-29. Bill history re-fetched twice:
+    # latest entry still 08/21/26 (ordered to third reading; read third time
+    # and amended). Consistent with the 08-30 Assembly floor file, item 103.
+
+  - id: project-camellia-boc-worksession-outcome
+    claim: >
+      The Effingham County Board of Commissioners' three-hour work session
+      on Project Camellia (2026-08-29, 10:00-13:00 ET) produces a reported
+      outcome or commissioner statement
+    due: 2026-08-30
+    due_precision: day
+    thread: camellia
+    entities: []
+    source: https://effinghamherald.net
+    confidence: reported
+    what_confirms: >
+      local coverage (Effingham Herald, WTOC) of what commissioners
+      actually said or decided. The session itself was already a
+      logged/due expectation for 08-29; same-day outcome reporting hadn't
+      filed as of this run, and Sen. Raphael Warnock toured the site and
+      publicly called for a moratorium the day before (08-28), giving
+      commissioners a live political pressure point walking in.
+    logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
+
+  - id: ca-sb1119-assembly-floor-vote
+    claim: >
+      California SB 1119 (Padilla; children's companion-chatbot safety —
+      annual child-safety risk assessments, real-time crisis referrals,
+      AG-reported independent audits by 2027-07-01) gets a final Assembly
+      floor vote before the session ends
+    due: 2026-08-31
+    due_precision: day
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB1119
+    confidence: reported
+    what_confirms: >
+      the Legislature's own bill record showing Assembly passage (then
+      Senate concurrence in amendments). Read a third time and amended in
+      the Assembly on 08-28; passed the Senate 39-0 in May; cleared
+      Assembly Appropriations 11-1 on 08-13. Adjournment is 08-31, so a
+      miss here means the bill dies for the session — the loud outcome.
+    logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
+
+  - id: ca-ab1979-governor-action
+    claim: >
+      Governor Newsom signs or vetoes AB 1979 (Bonta) — consumer health
+      chatbots brought under the Confidentiality of Medical Information
+      Act, no clinical decision on AI output alone without human review,
+      mandatory AI disclaimers on generated patient messages
+    due: 2026-09-30
+    due_precision: day
+    thread: ai-therapy-regulatory-reckoning
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB1979
+    confidence: reported
+    what_confirms: >
+      the bill record showing "Chaptered" or "Vetoed". Senate amendments
+      were concurred in on 08-27, so it has passed both chambers and goes
+      to enrolment; 09-30 is the statutory deadline for bills reaching the
+      Governor at the end of session. Sponsored by the California Nurses
+      Association, opposed by the California Hospital Association —
+      distinct from AB 2575's liability shift.
+    logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
+
+  - id: ca-sb503-governor-action
+    claim: >
+      Governor Newsom signs or vetoes SB 503 (Weber Pierson) — developers
+      and deployers of clinical-decision-support AI must test for biased
+      impact every three years and publish an intended-use and known-risk
+      statement
+    due: 2026-09-30
+    due_precision: day
+    thread: payer-ai-claim-denial
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB503
+    confidence: reported
+    what_confirms: >
+      the bill record showing "Chaptered" or "Vetoed". The Senate concurred
+      in Assembly amendments 39-0 on 08-25 — one day outside the 08-29
+      run's late-catch window, so it is logged here as an expectation
+      rather than as a timeline entry; the thread gets its entry when the
+      Governor acts.
+    logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
