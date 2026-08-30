@@ -17,6 +17,11 @@ proposes $47B→$29B), contested guidelines on both sides of the Atlantic
 and the NHS Talking Therapies evidence fight (official ~50% recovery vs.
 the placebo-equivalence critique; no independent evaluation ever run).
 
+## 2026-08-18 — FDA opens a formal policy discussion on regulating generative-AI medical devices
+
+- **The FDA released a discussion paper seeking public comment on potential regulatory approaches for generative-AI-enabled medical devices**, covering risk assessment, premarket evaluation, and post-market monitoring, with comments open through October 19, 2026. This is the mechanism this thread's 08-15 "facts label" proposal was written to fill a gap in — the paper is FDA's own first move toward turning its existing Good Machine Learning Practice guidance into an actual generative-AI-specific framework, rather than academics proposing disclosure standards against guidance that has no implementation mechanism yet. No mental-health-specific carve-out mentioned; general medical-device scope.
+  ([AHA News](https://www.aha.org/news/headline/2026-08-18-fda-seeks-feedback-potential-regulatory-approaches-generative-ai-enabled-medical-devices)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-15 — A proposed "facts label" standard for AI mental-health apps
 
 - **A seven-researcher team spanning the University of Toronto, NYU, UT

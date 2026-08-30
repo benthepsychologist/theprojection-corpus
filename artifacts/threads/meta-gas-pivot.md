@@ -11,6 +11,11 @@ opened: 2026-07-28
 *Watch:* Do the other three hold their clean-power pledges? Bridge or
 base? Emissions-accounting and regulatory fallout.
 
+## 2026-08-27 — First bill-impact number lands: Pembina Institute puts the Alberta gas plant's cost on ratepayers
+
+- **The Pembina Institute published an analysis putting a dollar figure on the emissions/cost side of the Alberta gas plant this thread already logged (08-02)** — the 932MW Greenlight Electricity Centre built solely to power Meta's Sturgeon County data centre could add **$270 to $460 a year** to the average Albertan's electricity bill between 2027 and 2031, driven by Alberta's "Bring Your Own Generation" rules that let data centres connect to the grid before their own generation comes online. This is the first quantified regulatory/ratepayer fallout number this thread has tracked, directly on the "emissions-accounting and regulatory fallout" watch.
+  ([CTV News](https://www.ctvnews.ca/edmonton/article/meta-data-centre-could-drive-up-albertans-power-bills-report/)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-02 → 08-14 — The pivot crosses a border; nobody follows Meta out of RE100 ⟨cold rotation⟩
 
 *Logged 2026-08-18, twenty-two days late.*

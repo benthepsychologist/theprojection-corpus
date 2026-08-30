@@ -13,6 +13,11 @@ this becomes the umbrella for nuclear-for-AI money. Opened 2026-07-28
 (row 23, ben-steer: "open all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md.
 
+## 2026-08-18 — A second named private-sector Prometheus participant discloses its role
+
+- **AI-security firm HiddenLayer announced it was selected to support the Genesis Mission's Prometheus initiative** — the $60M Phase II project, led by Idaho National Laboratory and already logged here via SHINE's 08-05 disclosure, applying AI across the nuclear-energy sector with national labs, academia and 20+ industry partners. HiddenLayer's role is AI-security support for the initiative. This is the second named private-sector participant (after SHINE) to self-disclose a Prometheus role, still without a company-specific dollar figure — continues to build out the roster this thread is tracking without resolving the per-agency/per-participant allocation question.
+  ([PR Newswire](https://www.prnewswire.com/news-releases/hiddenlayer-selected-to-support-does-60-million-prometheus-initiative-under-the-genesis-mission-302853514.html)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-07 — DOE launches Genesis Open Models with Arcee AI
 
 - **DOE launched the Genesis Open Models initiative with Arcee AI** — the government's first open-weight AI model program for science, first model named Genesis-Science-1. Applications for the pretraining contribution window closed 08-14; fine-tuning window closes 08-25. ([DOE](https://www.energy.gov/undersecretaryforscience/articles/us-department-energy-launches-genesis-open-models-initiative)) ⟨daily 2026-08-18⟩

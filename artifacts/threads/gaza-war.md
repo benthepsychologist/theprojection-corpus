@@ -17,6 +17,10 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-08-30 — Another strike on Deir al-Balah kills two, including a 3-year-old child
+
+- **An Israeli strike in Deir al-Balah, central Gaza, killed two Palestinians on 08-30, including a 3-year-old child, per medical sources; the IDF said it struck a Hamas militant and had "taken measures beforehand to minimize harm to civilians."** **Logged as continuation of the low-boil pattern this thread tracks, not escalation** — the same city where 08-29's hospital-adjacent strike on a Hamas commander was logged. ⚠️ **Palestinian medical-source casualty claim; IDF characterization of the target not independently verified.** ([Haaretz live blog](https://www.haaretz.com/israel-news/israel-security/2026-08-30/ty-article-live/.premium/idf-says-it-targeted-a-hamas-military-wing-commander-in-gaza-strip/000001a0-4f54-d649-a7be-df769da60000)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-29 — Mladenov details the stabilization force and Morocco's role; strikes and the toll continue
 
 - **The Board of Peace's Nikolay Mladenov gave new specifics behind his 08-26 rebuke, across a Security Council briefing (08-27) and an Al Jazeera interview (08-28): Morocco has agreed to send troops to the International Stabilization Force, Israel vetoed Turkish participation, the force's advance elements are expected "soon," and reconstruction pledges now total $7 billion.** At the Security Council he called the July 30 factional-disarmament accord "a historic breakthrough" — the first time armed Palestinian groups agreed to full demilitarization and a governance handover — and warned ceasefire collapse would be "a point of no return for everyone," urging the Council to reaffirm the disarmament pathway and mobilize support for the stabilization force. ([Arab News](https://www.arabnews.com/node/2655951/middle-east), [Al Jazeera](https://www.aljazeera.com/news/2026/8/28/board-of-peace-envoy-mladenov-warns-gaza-ceasefire-risks-collapse)) ⟨daily 2026-08-29⟩

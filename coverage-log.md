@@ -4808,3 +4808,225 @@ No benchmark critic runs on this lens by design. Two findings anyway:
   2026-08-25`. See the King Harald miss above for what that cost.
 - ⚠️ **Rate limits**: `openalex` (429), `semantic_scholar` (429), `lda`
   (403) skipped large term sets again; `fred` and `fec` keyless.
+
+---
+
+## 2026-08-30 critic pass — finalized 08-29 (three benchmarked lenses). Zero benchmark misses, two instrument failures, one structural blind spot.
+
+**The headline result is a clean sheet, and the clean sheet is the least
+interesting thing in this entry.** All three critics finalizing 08-29
+found **no benchmark misses**, and all three said explicitly why that is
+a weak result rather than a strong one: 08-29 was a Saturday, and seven
+of the eight daily benchmarks across the two newsletter-driven lenses
+were confirmed **dark by their own feed timestamps**. A weekend clean
+sheet against weekday publications is close to true by construction.
+What the day actually surfaced came from two other places: the two
+instruments this map added on 08-29, each of which failed on its second
+run; and one critic looking past the benchmark set entirely.
+
+### The two new instruments each worked once and failed once
+
+Both were added on 08-29 and both are still lines in a sweep brief
+rather than steps in the skill. **Each has now run twice, found a real
+story on run one, and missed one on run two.** That is the data the
+design questions below were waiting for, and it does not point where a
+single success pointed.
+
+- ⛔ **The world-news general front-page scan missed an attempted coup.**
+  Mutinous soldiers attacked Niger's presidency and the Niamey
+  international airport before dawn on 08-29, silencing state television
+  and radio; Gen. Abdourahamane Tiani made no public appearance all day.
+  **Reuters had it out at 09:30 ET.** The front-page scan ran at roughly
+  15:10 ET — about six hours later — and returned King Harald V's death
+  from two days earlier instead. It surfaced only on the 08-30 scan, and
+  is now on the flash rail as `niger-niamey-mutiny-presidency-attacked`,
+  filed 08-30.
+  **This is a different failure from the previous two and a worse one.**
+  The Nepal-Tibet flood and the king's death were missed because nothing
+  was looking. **Niger was missed while something was looking.** The
+  instrument is necessary and it is not sufficient, and one run was not
+  enough to learn that.
+- ⛔ **The evening-scoped re-sweep missed the second of the two large
+  stories in the window it was created to cover.** OpenAI announced at
+  **08-28 21:46 ET**, from its own site, that it is ending Cursor's
+  direct model access effective 2026-11-12, after SpaceX closed a $60bn
+  acquisition of Cursor's parent Anysphere on 08-14; Anthropic committed
+  the same day to expand Claude inside Cursor. That is inside the 08-28
+  evening window — **the window the 08-29 finalize swept as its own scope
+  for the first time**, and returned the Sony/Warner Chappell suit from.
+  It found one and walked past the other. Caught 08-30 and filed to
+  `enterprise-agent-product-race` at its own event date.
+
+### The one real finding: a structural blind spot, not a missed bullet
+
+- 🎯 **global-capital / 2026-08-29 — Jackson Hole was read as one speech,
+  and its actual theme is a subject this map cannot record at all.** The
+  08-28 and 08-29 digests both treat the symposium as Chair Warsh's
+  Friday keynote on the rate path. The Kansas City Fed's own page gives
+  the 2026 theme as **"Financial Innovation: Implications for Payments
+  and Policy"** — the first time in 49 editions that digital payments,
+  stablecoins and tokenisation have been the organising centre. The
+  Saturday programme, chaired by Anil Kashyap: Christine Parlour on
+  financial innovation and the future of banking (discussant Itay
+  Goldstein); Markus Brunnermeier on financing innovation (discussant
+  Raghuram Rajan); a central-banking panel of Wenxin Du, Arvind
+  Krishnamurthy and Jesús Fernández-Villaverde. Darrell Duffie had
+  presented on tokenised finance earlier with the ECB's Isabel Schnabel
+  discussing.
+  **A grep of `attention/threads.yaml`, `attention/watchlist.yaml` and
+  `attention/capital-context.yaml` for "stablecoin", "tokeniz", "CBDC"
+  and "digital currency" returns zero hits in all three files.** The
+  backdrop is not on the map either: the GENIUS Act's stablecoin-reserve
+  regime takes effect in roughly six months, the market is reported near
+  $230bn, and major US banks are reportedly positioning to issue.
+  ⏸️ **Deliberately held off every timeline** — there is no thread it
+  belongs to, which is the finding. Offered as a thread candidate
+  (`stablecoin-policy-perimeter`) in the 08-30 front and global-capital
+  digests.
+  **Note what this says about the critic design:** none of this lens's
+  four daily benchmarks covers academic monetary-economics conferences,
+  by genre. The benchmark set could not have caught it. Only a critic
+  willing to leave the benchmark set behind did.
+
+### frontier-ai / 2026-08-29 — no misses, and the null is honest
+
+Four daily benchmarks, all dark, each established positively rather than
+by absence of response: **The Neuron**'s dated archive stops at Friday
+08-28; **The Rundown AI**'s newest feed item is 08-28; **The AI Daily
+Brief**'s `/e/2026-08-29` returns HTTP 404. **TLDR AI is the one
+ambiguous case** — the reader proxy returned only the generic landing
+page, so "no Saturday edition" could not be positively distinguished from
+"the proxy failed to render a dated page." Import AI (Mon) and Last Week
+in AI (Tue) are structurally outside a Saturday window.
+
+Budget went instead to the labs' own channels, Hugging Face, arXiv, the
+wires and the major tech press, probing the three weak spots the 08-28
+pass named — agent behaviour, lab product strategy, the academic layer.
+Nothing came back that this map did not hold. Two near-candidates ruled
+out on dates: The Neuron's own most recent lead (the Cursor/Aur0ra
+ransomware story) is 08-28 and already carried as a thread offer, and
+Nvidia's reported $12.9bn Hugging Face acquisition is 08-26, already
+offered and dropped under the two-offer rule. ⚠️ **One access caveat on
+the compensating sweep**: Anthropic's newsroom was read directly and is
+dark since 08-27, but **OpenAI's newsroom returned 403**, so that half
+rests on search coverage.
+
+**The critic's own read, verbatim:** *"this was a quiet-news day for the
+lens, and the map did not miss anything on it — which is a weaker claim
+than 'recall is strong,' since a dark Saturday across all four benchmarks
+removes most of the test's teeth."* **The 08-28 weak-spot finding is
+untested by this pass, not closed by it.** ⚠️ Worth stating plainly
+because a run of clean sheets could otherwise read as the problem being
+solved.
+
+### mental-health / 2026-08-29 — no misses, and the deepest of the three passes
+
+The weekend structural gap `sources/benchmarks.yaml` documents held
+exactly: three of four daily benchmarks are weekday-only B2B trade
+outlets, and all three are confirmed dark by their own timestamps — BHB's
+feed `lastBuildDate` Fri 08-28 21:27 GMT, Fierce newest 08-28 13:14,
+MobiHealthNews newest 08-28 14:14 ET. STAT is dark since Thu 08-27 17:21
+GMT on its Tue/Thu cadence. So the budget went where the file says the
+real weekend risk sits — primary and academic channels.
+
+**Six academic sources swept, against the two the 08-28 pass missed on:**
+JMIR Mental Health (newest 08-26 17:00 ET), npj Digital Medicine, JAMA /
+JAMA Psychiatry via a Googlebot UA (newest Tue 08-25), Lancet Psychiatry
+(monthly, current issue 08-14), medRxiv (08-27→08-30, nothing relevant,
+no weekend batch posted), and Psychiatric Services attempted.
+
+- ✎ **A precision note, recorded rather than corrected:** npj Digital
+  Medicine **did** publish two papers dated 08-29 — `AgentDS-BUS`, a
+  breast-ultrasound classifier, and a haematology cytomorphology
+  framework. Both oncology; neither mental-health-relevant. The digest's
+  "nothing dated in window" was imprecise and substantively right.
+- ✅ **Two checks that confirm strength rather than absence.** The
+  digest's own first-hand re-fetches of the California Legislature's
+  bill-status pages are exactly what a benchmark-only critic would miss;
+  no press coverage exists beyond what was already carried. And on
+  UHS–Talkspace the critic went looking for terms the digest lacked and
+  found `mh-clinical-infra-funding` already carrying the $280M revenue
+  guidance, the TD Cowen quote, the CEO's framing, and both the 8-K and
+  Healthcare Dive. The single figure not on the thread is the 8-K's
+  **$870.6M aggregate cash consideration** against the $835M headline
+  enterprise value — the gap being option/RSU cash-out treatment.
+
+### Access state, and one gap in what the critic can check at all
+
+- ⛔ **Psychiatric Services (`ps.psychiatryonline.org`) is hard-blocked**
+  by a Cloudflare challenge that survives a Googlebot UA — **and is not
+  tracked in `sources/benchmarks.yaml` at all.** Until it is solved the
+  academic sweep has one blind panel every pass, so a clean JMIR/npj
+  result is not evidence the academic layer is covered.
+- 📌 **Odd Lots' Omny RSS redirects once to an `omnycontent.com` CDN
+  path** — worth recording as the real endpoint if the `omny.fm` alias
+  ever breaks. Undocumented until now.
+- ✅ **Money Stuff is genuinely dark, not unreachable** — the author-page
+  `.rss` endpoint works and its newest item is Thu 08-27 ("AI Refi").
+  Levine published no Friday column, confirmed through the endpoint
+  rather than inferred.
+- ⛔ **Bloomberg Technology blocked on both transports again**, direct and
+  reader proxy, re-tested by two separate critics. Third consecutive day.
+- ✅ **Axios Pro Rata, BHB, Fierce, MobiHealthNews, JMIR** all reachable
+  on their documented transports, unchanged.
+
+### Collector state
+
+- ⛔ **`bq` day fourteen.** `attention/world-news.yaml` frozen at
+  `generated: 2026-08-25`; a fresh test today returned "Reauthentication
+  failed. cannot prompt during non-interactive execution." **The
+  mechanical general-news detector has now been dark for the entire
+  period in which this map missed a glacier collapse, a head of state's
+  death and a coup attempt.** Only Ben can run `gcloud auth login`.
+- ⚠️ **`sec_edgar`: a NEW failure mode, and it is upstream.** Skipped
+  outright on the first collect pass (`KESTREL_CONTACT_EMAIL` unset,
+  fourth run in a row), then re-run with the address
+  `sources/API-SIGNUP.md` declares set in-shell — and returned **HTTP 500
+  from EDGAR on every term.** So the persistence problem and the outage
+  are two different problems, and today's Anthropic S-1 check is
+  agent-run rather than collector-run. Both agents that checked it
+  independently returned the same clean negative.
+- ✅ **`google_news_rss` ran: 11,057 fetched, 7,432 kept.**
+  `semantic_scholar` 147/137 kept with **289 terms budget-skipped**;
+  `github` 12/12. `lda` skipped all 162 terms on 403s; `openalex`
+  429-limited again; `fred`/`fec` keyless; `bis_stats` 404 on its 2026 QR
+  sitemap; `fund_flow_reports` hit Morningstar's AWS WAF challenge and
+  etf.com's 403 — the same wall as every check since 2026-07-30.
+  `treasury_tic`, `imf_data`, `clinicaltrials`, `page_diff` all zero on
+  real successful calls.
+
+### Two reported misses that were not misses — recorded so the next run does not re-verify them
+
+A global-capital sweep flagged two 08-28 stories as absent from the map.
+**Both were already on it**, on threads outside that agent's assigned
+list:
+
+- **IREN's $2.4bn Blue Owl/PIMCO tranche at 9.0%** is on
+  `ai-compute-spend` at 08-27, with a sharper read than the report
+  offered — the **300 basis-point spread** against IREN's own 6.0%
+  investment-grade facility tied to the Microsoft contract, same
+  borrower and same collateral class, priced on counterparty quality.
+- **DataOne's Vineland, NJ generators** (45 of 62 running, thermal
+  imagery) are on `ai-datacenter-sites` at 08-28, inside the four-local-
+  actions block.
+
+**The general lesson, worth carrying into sweep briefs:** an agent given
+a thread list cannot tell "this map is missing X" from "X is on a thread
+I was not given." Reports of *absence* from a scoped sweep need a
+whole-corpus grep before they are believed.
+
+### Put to Ben — the three design questions now have a second data point each
+
+1. **Make the evening-scoped re-sweep a `/daily` finalize step.** Ran
+   twice: caught the Sony/Warner Chappell suit, missed the OpenAI/Cursor
+   cutoff from the same window. Engine-owned skill, so a template change
+   to route, not an edit.
+2. **Make the world-news general front-page scan a standing step.** Ran
+   twice: caught a king's death, missed a coup attempt that was six hours
+   old when it ran.
+3. **Add a wire service to `sources/benchmarks.yaml`.** ⚠️ **This is now
+   the strongest of the three and the only one never tried.** Standing
+   since 08-28. It would have caught Niger, the Cursor cutoff and the
+   king — every one of the misses the other two instruments were built
+   for and let through. It covers what a set of twelve AI, health-tech
+   and finance publications structurally cannot.

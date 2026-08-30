@@ -16,6 +16,11 @@ of care OpenAI is held to, or let it wall off "health" behind guardrails
 while the general model keeps causing the harm? Cross-refs
 `ai-therapy-regulatory-reckoning` + `state-therapy-chatbot-bans`.
 
+## 2026-08-18 — OpenAI ships teen-specific guardrails, not a health product — the "wall it off" branch, not the "raise the standard" branch
+
+- **OpenAI launched "ChatGPT for Teens": age-appropriate content defaults, a Study Mode that redirects homework-cheating attempts into guided learning, and parental controls (Quiet Hours, safety notifications, Study-Mode-by-default)** — arriving, as the coverage itself notes, roughly a year after teens had already been using ChatGPT at scale (900M weekly users). This lands on the thread's own open question, and answers it in one direction: this is a general-safety/parental-control layer bolted onto the consumer product, not a formalized "ChatGPT Health" that would raise OpenAI's standard of care — the guardrail-vs-health-product distinction this thread exists to track. No connection drawn in the coverage to the pending MH-harm litigation.
+  ([TechCrunch](https://techcrunch.com/2026/08/18/openai-launches-a-safer-chatgpt-for-teens-years-after-teens-started-using-it/)) ⟨daily 2026-08-30⟩
+
 ## 2026-07-28 — The first hospital-wide deployment, with a suit pending
 
 - **Israel's Sheba Medical Center is rolling out ChatGPT for Healthcare

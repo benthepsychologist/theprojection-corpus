@@ -1,0 +1,89 @@
+# 2026-08-30-global-capital.interp.yaml — Global Capital's per-item
+# interpretations (DESIGN.md Part 2 §8), keyed by slugify() of the FIRST
+# 50 CHARACTERS of the bullet's bold lead phrase.
+#
+# TWO entries today, on the two items with an identifiable transmission
+# mechanism and a real fork in front of them. Nothing for the
+# S-1/Moonshot/Mistral negatives (absences, already characterised as
+# such, carrying no mechanism), nothing for SoftBank's bond or Broadcom's
+# guidance (restatements of an existing record), and nothing for the
+# Starbase Louisiana commitment — a real capital fact, but a commitment
+# rather than deployed cash, and any read of its funding path today would
+# be reasoning from nothing. A third would be padding a thin Sunday.
+#
+# Validated against readouts.validate_interpretation() before commit.
+# Read against attention/capital-context.yaml (asof 2026-08-25).
+
+jackson-hole-2026-s-announced-theme-was-financial:
+  mechanism: >-
+    The GENIUS Act's reserve rule makes each marginal stablecoin dollar a
+    compliance-driven, price-insensitive T-bill bid — hitting the front end
+    while Treasury leans on the long end from a swollen TGA.
+  confidence: plausible
+  scenarios:
+  - direction: >-
+      Stablecoin growth steepens the curve — firm front-end bid, unabsorbed
+      long-end supply — giving fiscal dominance a private-sector leg nobody
+      legislated for.
+    why: >-
+      Falsifiable: bill-yield compression at issue relative to OIS alongside
+      float growth through the effective date, with no long-end relief.
+      Mechanical rather than behavioural, so it is testable.
+    precedent: >-
+      US money-market fund reform in 2014-16 forced prime funds into
+      government-only paper and moved several hundred billion dollars into
+      T-bills and reverse repo — a reserve rule rerouting a private float
+      into the front end, same mechanism.
+  - direction: >-
+      The float stays small against bill supply, the rates effect is noise, and
+      the real story is bank disintermediation — deposits migrating to
+      issuers.
+    why: >-
+      A ~$230bn market against roughly $6tn of bills outstanding is not obviously
+      a price-setter, and reported bank positioning suggests the institutions
+      closest to it read the deposit channel as live.
+    precedent: >-
+      US money market funds moved well over a trillion dollars out of bank
+      deposits through the 1970s-80s without ever setting the price of
+      Treasury bills — disintermediation was the durable effect.
+  context_note: >-
+    capital-context's rate_regime reading flags that it "still reads almost
+    entirely US-Fed-framed"; this is a second gap in it, from the private
+    liability side, with no thread to build from.
+
+openai-is-cutting-cursor-s-model-access-because-sp:
+  mechanism: >-
+    When the compute supplier also owns the application-layer surface, model
+    access stops being a procurement line and becomes a foreclosure
+    instrument.
+  confidence: plausible
+  scenarios:
+  - direction: >-
+      Model access becomes a routine competitive weapon, distribution deals price
+      exclusivity and change-of-control terms, and antitrust follows the
+      vertical.
+    why: >-
+      Falsifiable: a second lab conditioning access to a competitor-owned surface
+      within two quarters, or a change-of-control clause in a disclosed
+      agreement. OpenAI used its maximum notice period.
+    precedent: >-
+      The Paramount Decrees — studios owning theatre chains used distribution
+      access to foreclose rivals until the 1948 Supreme Court ruling forced
+      divestiture. Same structure: an input owner levering a controlled
+      distribution surface.
+  - direction: >-
+      It stays a one-off grounded in the specific Musk-OpenAI history,
+      commercially trivial, and nobody reprices supplier risk anywhere in the
+      capital structure.
+    why: >-
+      Cursor's CEO puts OpenAI models at roughly 5% of its traffic, OpenAI's
+      stated reason names the Twitter/X dispute specifically, and Anthropic
+      filled the gap the same day at no visible cost.
+    precedent: >-
+      Twitter's 2012-13 API restrictions on Instagram and third-party clients
+      were read as the start of a platform-wide foreclosure wave and stayed
+      idiosyncratic to that company's strategy.
+  context_note: >-
+    None of capital-context's five readings reaches this — it is a
+    private-market capital-structure fact. Read it against frontier-lab-ipos:
+    no prospectus here has had to write this risk factor.

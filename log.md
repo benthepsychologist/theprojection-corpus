@@ -6828,3 +6828,193 @@ commit lands with the next run.
 work-session outcome (08-30) are both due on the next run; AB 2575, SB
 1119, GLM-5.5, Anthropic's S-1 and Moonshot's pre-IPO round all resolve
 by 08-31. The three design questions above are Ben's.
+
+---
+
+## 2026-08-30 — `/daily` (10:15 ET): finalize 08-29 clean, open 08-30, and both of last week's new instruments fail their second run
+
+**A Sunday-morning run against a five-hour window, whose real content is
+two negative results about this map's own machinery.** 08-29 finalized
+with **zero benchmark misses across all three critic lenses** — and that
+is the least informative thing in this entry, because seven of eight
+daily benchmarks were confirmed dark by their own feed timestamps on a
+Saturday. What the run actually learned came from the two instruments
+added on 08-29, each of which has now run twice.
+
+**Dispatch: nine agents, then four.** Five cluster sweeps (capex/compute/
+power/sites; the global-capital financing loop; China stack and frontier
+labs; the whole mental-health lens; world news with the general
+front-page scan), each briefed with **two windows** — the uncurated 08-29
+evening (15:10 → 05:00 ET) and today — plus three coverage critics in
+parallel, and a cold rotation over 19 quiet threads. Then four sonnet
+briefing agents for the public site.
+
+### The two instruments each worked once and failed once
+
+- ⛔ **The world-news front-page scan missed an attempted coup.** Mutinous
+  soldiers attacked Niger's presidency and the Niamey airport before dawn
+  on 08-29, silencing state TV and radio; Tiani made no public appearance
+  all day. **Reuters had it out at 09:30 ET.** The scan ran at ~15:10 ET
+  and returned King Harald V's death from two days earlier instead. **The
+  previous two general-news misses happened because nothing was looking;
+  this one happened while something was looking.** Now on the rail as
+  `niger-niamey-mutiny-presidency-attacked`, filed 08-30, verified across
+  Reuters-sourced NBC reporting (published 08-29 13:30Z) and Al Jazeera's
+  Sunday follow-up (dozens arrested, junta declaring it contained).
+- ⛔ **The evening re-sweep missed the second large story in the window it
+  exists for.** OpenAI announced at **08-28 21:46 ET** that it is ending
+  Cursor's model access on 2026-11-12, after SpaceX closed a $60bn
+  acquisition of Anysphere on 08-14; Anthropic committed the same day to
+  expand Claude inside Cursor. That sits in the 08-28 evening window the
+  08-29 finalize swept as its own scope **for the first time**, returning
+  the Sony/Warner Chappell suit. It found one and walked past the other.
+
+Both are still lines in a sweep brief, not steps in the skill. **The
+design questions in `coverage-log.md` now have a second data point each,
+and it does not point where one success pointed.**
+
+### The one real critic finding: a structural blind spot
+
+**Jackson Hole 2026's announced theme was "Financial Innovation:
+Implications for Payments and Policy"** — first time in 49 editions that
+stablecoins, tokenisation and digital payments were the organising
+centre. Both the 08-28 and 08-29 digests read the symposium as one Warsh
+speech about the rate path. A grep of `threads.yaml`, `watchlist.yaml`
+and `capital-context.yaml` for "stablecoin", "tokeniz", "CBDC" and
+"digital currency" returns **zero hits in all three**. Held off every
+timeline deliberately — there is no thread it belongs to, which is the
+finding — and offered as `stablecoin-policy-perimeter`. Note the design
+lesson: none of that lens's four daily benchmarks covers academic
+monetary-economics conferences by genre, so **the benchmark set could not
+have caught it; only a critic willing to leave the benchmark set did.**
+
+### What moved
+
+- ✅ **08-29 finalized**: five digests `final`, three critic appendices,
+  `coverage: done` on the benchmarked lenses, `na` on world-news.
+- ✅ **08-30 opened**: five digests, a two-entry interpretation sidecar
+  (Jackson Hole/stablecoins as a T-bill bid; the Cursor cutoff as vertical
+  foreclosure), both validated through `validate_interpretation()`.
+- ✅ **Ledger**: `project-camellia-boc-worksession-outcome` → **hit** (no
+  vote, but Commissioner Burdette conceded "I was wrong" and two
+  commissioners raised an 18-month moratorium). **Twelve others checked
+  with evidence appended and status deliberately held** — a due date is
+  not an outcome, and SB 903's Assembly was still sitting at 10:00 ET on
+  its own due date.
+- ✎ **17 timeline files touched**; `last_seen` bumped on **15 threads**.
+- ✎ **`actor-doing.yaml` refreshed for five actors** — `openai`,
+  `anthropic`, `xai` (rebuilt, it was two weeks stale), `apple`,
+  `kaiser-permanente`.
+- ✅ **Graph fed and validated**: 29 new S1 claims from digest bullets,
+  18 new S2 from timelines, 9 critic outcomes recorded as process-only.
+  `validate.py`: 4,251 atoms, 2,601 sources, 6,813 relationships, 1,051
+  annotations, 111 extraction passes, all references resolving.
+
+### Corrections made before publication, not after
+
+- ✏️ **Project River's premise was backwards.** The 08-25
+  `where-the-capex-lands` entry read the $11.3bn Bradley County campus as
+  a data centre bringing its own power. Wright Brothers CEO Mitchell
+  Simpson told the Cleveland Banner on 08-28 there is **no confirmed
+  off-taker** — it is a generation-first campus looking for a load.
+- ✎ **Two 08-29 bullets were rehomed** from an 08-30 block heading into
+  the 08-29 block their own `⟨daily⟩` markers pointed at, and two markers
+  on the Cursor entry were corrected 08-29 → 08-30.
+- ⚠️ **A self-inflicted one worth keeping.** Two of today's digest bullets
+  had bold lead phrases written *about the record* rather than about the
+  world — "Correction to the Project River entry, from the developer's own
+  mouth" and a Jackson Hole lead ending "…and this map has no thread that
+  could hold it." **`readouts --pack` extracts exactly the bold lead**, so
+  both went to the public briefing agents as pipeline narration; one came
+  back as a vague published bullet. Both leads rewritten as world-facts at
+  source. The global-capital rewrite deliberately preserved the first 50
+  characters, since the interpretation sidecar key derives from them.
+  **Lesson: a bold lead is public copy, not a note to ourselves.**
+- ⚠️ **`e=meta` dropped from the Alberta ratepayer bullet.** `meta` is not
+  a watchlist slug — it is one of the nine standing, unapproved entity
+  adds — and inventing one is not allowed. Tagging it `meta-ai` would have
+  been worse: that is the lab, not the company building the gas plant. The
+  bullet ships with an empty entity tag and the digest says why.
+
+### Agent findings that did NOT survive verification
+
+- ⚠️ **Two reported "misses" were already on the map.** IREN's $2.4bn Blue
+  Owl/PIMCO tranche at 9.0% is on `ai-compute-spend` (08-27) with a
+  sharper read than the report offered — the 300bp spread against IREN's
+  own 6.0% Microsoft-backed facility. DataOne's Vineland generators are on
+  `ai-datacenter-sites` (08-28). Both came from an agent whose thread list
+  excluded the threads carrying them. **An agent given a scoped thread
+  list cannot distinguish "the map is missing X" from "X is on a thread I
+  wasn't given" — reports of absence need a whole-corpus grep first.**
+- ⚠️ **A stale story correctly filtered.** "Anthropic accuses Alibaba of
+  illicit access to Claude" surfaced in the buffer looking fresh; the
+  underlying articles date back two months. Written nowhere.
+- ⚠️ **Two honest non-writes.** `arm-royalty-regime`: conflicting
+  stock-reaction figures, nothing written rather than one picked. A Wyoming
+  Grok-deepfake plaintiff: filing date unestablishable, held off.
+
+### Friction, in operation
+
+- ⚠️ **`cd <dir>` in a Bash call persists the working directory into the
+  next call** — hit twice this run (once looking for `graph/*.py` that
+  live in `graph/ingest/`, once for a site-repo path). Absolute paths
+  throughout is the fix; not a skill edit.
+- ⚠️ **`/daily` step 6b names the ingesters as `graph/07_digest_bullets.py`
+  etc.** They are actually in **`graph/ingest/`**. A path correction worth
+  making in the local extension's docs.
+- ⚠️ **The dispatched cold rotation re-delegated instead of working**,
+  spawning three sub-batches and returning "launched and running" with no
+  results while the harness reported no live children. It had to be
+  resumed with an explicit instruction to do the work itself. Its
+  sub-batches did eventually land real work; no duplicate blocks were
+  produced, but the reconciliation was manual.
+- ⚠️ **The session's 200-call WebSearch budget was exhausted** partway
+  through, curtailing the tails of two sweeps and forcing the main session
+  onto WebFetch (plus the `r.jina.ai` reader proxy) to verify the Niger
+  flash. Worth knowing that nine research agents is roughly the budget.
+
+### Published and closed
+
+Four site briefings regenerated by sonnet agents from `theprojection
+readouts --pack`, each linted before assembly for the two failure modes
+that matter — **pipeline narration leaking into public copy** and the
+`LINK_FLOOR` — and all four came back clean: link coverage **front 88%,
+AI 100%, global capital 100%, mental health 100%** against a 60% floor.
+`--apply` **4/4, skipped 0**; `--export` **154 readouts**.
+
+Three of the four agents independently **refused to assert facts I had
+named in their briefs but which were absent from their pack** — SB 503,
+Mistral's and Moonshot's rounds, Broadcom, Project River, the FDA comment
+period. All of those live in the digests' ⏳ sections, which carry no
+`<!-- k: -->` annotation and so are not extracted as bullets. **The
+agents were right and the briefs were wrong**; nothing was fabricated.
+
+`kestrel publish --push`: 99 threads, **62 entity pages**, 3 beat pages,
+**753 claim pages**, **9 interpretation pages (up from 7 — both of
+today's sidecars rendered)**, **956 story pages** (1,541 sources, 1,239
+credibility-badged), 122 map pages, `data/readouts.json` at 154 readouts,
+and the front-page audio for 08-30. Site commit `7a365a2`, pushed clean
+(`git log @{u}..` empty), Cloudflare build
+`b02a1d37-3c1d-44d1-9478-436d712ca4a8` queued. **The rail carries exactly
+one flash — Niger — with the Norway and Nepal-Tibet entries correctly
+lapsed by `flash_last_day()` rather than by hand.**
+
+Collector at close: **16 of this run's manifests written and committed**,
+including `google_news_rss` (11,057 fetched / 7,432 kept) and the
+`sec_edgar` receipt recording EDGAR's HTTP 500s. The `openalex`, `rss`,
+`gdelt` and `federal_register` lanes were still running at commit time;
+anything they write after this lands with the next run.
+
+**Pick up here:** **08-31 is California's constitutional adjournment** —
+SB 903, SB 1119 and AB 2575 all resolve or die, and AB 2575 needs a
+second reading *and* a floor vote inside the day. **Anthropic's public
+S-1, GLM-5.5, Moonshot's pre-IPO round and Mistral's round all resolve
+08-31** and every one is currently a clean negative. Project River's
+forum and France's social-media ban are 09-01 — and the France entry
+needs a **direct read of legifrance.gouv.fr**, not another search pass,
+because open sources contradict each other on whether the
+age-verification mechanism survived the final bill. Three thread
+candidates are open for Ben (`stablecoin-policy-perimeter`, a
+Nepal-Tibet strand, the West Bank strand on its third and final offer),
+plus the two standing blockers: `gcloud auth login` for `bq` (day
+fourteen) and whether to persist `KESTREL_CONTACT_EMAIL`.

@@ -14,6 +14,16 @@ on suicide/psychosis reinforcement; no filed MH suit yet) and (B) deepfake/
 CSAM (litigated + regulated). Root cause of both: the explicit anti-guardrail
 design. The catalyst to watch: the first named-plaintiff Grok MH/suicide suit.
 
+## 2026-08-27→28 — Survivors allege Grok was trained on real child sexual abuse material, not just used to generate new CSAM
+
+- **A new federal lawsuit (Western District of Arkansas) escalates strand B from "Grok generates CSAM when prompted" to "Grok was trained on real abuse images" — plaintiffs, including a Wyoming woman who joined as an additional plaintiff, allege xAI's models ingested actual childhood sexual-abuse photos/videos of them as training data, which Grok then used to generate new abusive content bearing their likeness.** This is the first claim on this thread that the harm runs through xAI's training pipeline itself, not only through user prompting of an under-guardrailed chatbot — a materially different (and more severe) legal theory than the prior CSAM-generation suits (07-25 Arkansas, 07-30 Tennessee). Reported consistently across multiple independent outlets the same two days (Ars Technica, Politico, Gizmodo, NDTV, CyberScoop, Cybernews), with more plaintiffs said to be joining.
+  ([Ars Technica](https://arstechnica.com/tech-policy/2026/08/elon-musks-xai-used-child-porn-to-train-grok-models-lawsuit-says/), [Politico](https://www.politico.com/news/2026/08/28/musks-ai-company-sues-its-users-as-victim-lawsuits-over-grok-deepfakes-mount)) ⟨daily 2026-08-30⟩
+
+## 2026-08-21 — xAI flips to plaintiff, suing an alleged abuser of its own chatbot
+
+- **xAI sued a Bentonville, Arkansas photographer facing separate CSAM charges, alleging he abused Grok to generate the sexualized images at issue — the first time on this thread that xAI has gone on offense against a user rather than only defending itself as a target.** A notable posture shift alongside the mounting survivor suits (below): xAI framing itself as a victim of misuse in the same week it is accused, in a different case, of training on real abuse material.
+  ([Yahoo/KATV](https://www.yahoo.com/news/xai-sues-arkansas-man-facing-csam-charges-says-he-abused-its-chatbot)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-20 — MN preliminary-injunction hearing happened on schedule; no ruling yet; Trump DOJ files in support of xAI
 
 - **The Trump DOJ filed a Statement of Interest backing xAI against

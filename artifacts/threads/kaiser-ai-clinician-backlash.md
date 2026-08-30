@@ -13,6 +13,11 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-08-30 — AB 2575's second attempt needs a second reading first, and that hasn't happened yet either
+
+- **Checked directly against the Legislature's own bill-history record: because AB 2575 was amended when reconsideration was granted on 08-28, it went back to second reading rather than straight to a repeat third-reading vote — a procedural step the 08-29 entry didn't have.** As of this check (Sunday 08-30, ~10am ET) it sits on the Senate's 08-30 second-reading file, "in floor process," with no second floor-passage vote yet recorded. One day remains before the 08-31 adjournment for that second reading and the repeat vote both to happen.
+  ([AB 2575 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-29 — AB 2575 nearly fails, and a second health system's clinicians turn up with the same complaint
 
 - **AB 2575 — the bill Kaiser and the California Hospital Association are fighting — failed its Senate floor vote 08-28 (18-10) and was immediately granted reconsideration (40-0), leaving it alive for one more attempt before the legislature adjourns 08-31.** Verified against the Legislature's own bill-history record. Full detail cross-logged on `ai-therapy-regulatory-reckoning`.

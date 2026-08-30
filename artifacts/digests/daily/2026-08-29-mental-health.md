@@ -1,10 +1,11 @@
 ---
 lens: mental-health
 date: 2026-08-29
-status: building
+status: final
 window_start: 2026-08-29T05:00:00-04:00
-as_of: 2026-08-29T15:10:00-04:00
-coverage: pending
+window_end: 2026-08-30T05:00:00-04:00
+finalized: 2026-08-30T10:15:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-08-29
@@ -195,6 +196,64 @@ terms. Not reported as dated findings.
   operator buying direct-to-consumer teletherapy as a referral pipeline.
   `mh-clinical-infra-funding` tracks money going in; nothing tracks
   companies combining or exiting. **Track it?**
+
+## 🔍 Coverage critic — 2026-08-29 (finalize pass, 2026-08-30)
+
+**No misses — and this pass can say that with more force than the other
+two, because the academic layer was swept six sources deep rather than
+two, and every "clean" verdict below is backed by an outlet's own feed
+timestamp rather than by an absent response.**
+
+⚠️ **The weekend structural gap held exactly as `sources/benchmarks.yaml`
+predicts it will.** Three of this lens's four daily benchmarks are
+weekday-only B2B trade outlets. 2026-08-29 was a Saturday. So a clean
+result against them is close to true by construction — the file says so
+itself, and says where the real weekend recall risk sits instead:
+primary, academic and consumer-press channels the benchmark set does not
+cover. That is where the budget went.
+
+| source | state | how established |
+| --- | --- | --- |
+| Behavioral Health Business | reachable, **genuinely dark** | feed's own `lastBuildDate` is Fri 08-28 21:27 GMT — the Montana downcoding story already filed to 08-28 |
+| Fierce Healthcare | reachable, **genuinely dark** | newest item Fri 08-28 13:14 |
+| MobiHealthNews | reachable, **genuinely dark** | newest item Fri 08-28 14:14 ET; the reader proxy on `/rss.xml` still works, the homepage still does not |
+| STAT Health Tech | reachable, **dark since Thursday** | full feed pulled: newest item Thu 08-27 17:21 GMT (the CMS ACCESS piece already in the digest) |
+| JMIR Mental Health | reachable, checked | newest entry 08-26 17:00 ET |
+| npj Digital Medicine | reachable, checked | ⚠️ **two papers ARE dated 08-29** — `AgentDS-BUS` (breast-ultrasound classifier) and a haematology cytomorphology framework — both oncology, neither mental-health-relevant. The digest's "nothing dated in window" is imprecise but substantively right |
+| JAMA / JAMA Psychiatry | reachable via Googlebot UA | newest item Tue 08-25 |
+| Lancet Psychiatry | reachable, checked | monthly cadence; current issue 08-14 |
+| medRxiv | reachable, checked | 08-27→08-30 batch nothing MH/AI-therapy-relevant; no weekend batch posted yet |
+| **Psychiatric Services** | ⛔ **blocked — could not check** | Cloudflare challenge survives even a Googlebot UA |
+
+**The four targeted checks all came back negative, and two are worth
+stating as findings rather than non-findings:**
+
+- **California's AI-in-care package** — no press coverage beyond what the
+  digest already carries. A Transparency Coalition scorecard was fetched
+  and confirms the same bill positions with no 08-29-dated floor action
+  anywhere. **The digest's own first-hand re-fetches of the Legislature's
+  bill-status pages are exactly what a benchmark-only critic would miss**
+  — this lens is strong on the primary/legislative layer.
+- **UHS–Talkspace** — the critic went looking for terms the digest lacked
+  and instead found `mh-clinical-infra-funding` already carrying the
+  $280M revenue guidance, the TD Cowen quote, the CEO's framing, and both
+  the SEC 8-K and Healthcare Dive as sources. The one figure not on the
+  thread is the 8-K's **$870.6M aggregate cash consideration** against the
+  $835M headline enterprise value — the gap being option/RSU cash-out
+  treatment. Granular, not a missed story; recorded here rather than on
+  the timeline.
+- **Kaiser / NUHW** — no weekend movement; NUHW's own newest post is 08-24.
+- **Meta / Senator Warner** — silence confirmed on both sides, against
+  Warner's Senate press page and Meta's newsroom directly. Unchanged from
+  the `passed-silent` already recorded.
+
+**One gap worth carrying forward, and it is a gap in what the critic can
+check rather than in what the map caught:** `sources/benchmarks.yaml` does
+not track **Psychiatric Services** (`ps.psychiatryonline.org`) at all, and
+it came back hard-blocked when swept as part of the academic layer. Until
+that is solved the academic sweep has one blind panel every pass — so
+today's clean JMIR/npj result should not be read as proof the whole
+academic layer is now covered.
 
 ---
 Today's mental-health news is a calendar. California's liability bill

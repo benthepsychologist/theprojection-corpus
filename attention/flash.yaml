@@ -107,6 +107,55 @@
 #   logged_by   ben-steer | curate-add
 
 flashes:
+  # LATE CATCH, filed 2026-08-30 for events that began before dawn on Saturday
+  # 2026-08-29 in Niamey — inside the 08-29 digest-day, which this run is
+  # finalizing. `filed` is set to today deliberately, per the rule: a late
+  # catch gets 24h from the CATCH. flash_last_day() renders this on 08-30 and
+  # no longer.
+  #
+  # WHY THIS CLEARS THE BAR: an armed mutiny that attacked the presidency and
+  # the international airport of a national capital, knocked state television
+  # and radio off air, and drew no public appearance from the head of state
+  # for a full day. It led AP, Reuters, Al Jazeera and NBC through the
+  # weekend. It touches no lens on this map and there is no thread anywhere
+  # that would have caught it — which is exactly what the rail is for.
+  #
+  # WHY IT IS LATE, AND THIS ONE IS DIFFERENT FROM THE LAST TWO: the previous
+  # two late general-news catches (King Harald V, the Nepal-Tibet flood) were
+  # missed because nothing was looking. This one was missed while something
+  # WAS looking. Reuters had the story out by 09:30 ET on 08-29; the 08-29
+  # run's world-news sweep carried a general front-page scan for the first
+  # time, ran at 15:10 ET — roughly six hours later — and returned a king's
+  # death from two days earlier without this. The scan is necessary and not
+  # yet sufficient. Recorded in coverage-log.md 2026-08-30.
+  - id: niger-niamey-mutiny-presidency-attacked
+    date: 2026-08-29
+    filed: 2026-08-30
+    severity: critical
+    headline: >-
+      Mutinous soldiers attack Niger's presidency and Niamey airport; the
+      junta says the mutiny is contained and dozens are under arrest
+    body: >-
+      Soldiers from a base in Niamey opened fire on "sensitive sites" before
+      dawn on Saturday 2026-08-29, attacking the presidency and the
+      international airport in hours of gunfire and explosions that briefly
+      knocked state television and radio off air; the defence ministry said
+      loyalist forces were retaking the seized sites, but security sources
+      told Reuters mutineers still held the airport into Saturday afternoon
+      and the situation remained unclear that night. By Sunday Al Jazeera
+      reported dozens of soldiers arrested and the military-led government
+      declaring the mutiny contained. Gen. Abdourahamane Tiani — who himself
+      seized power in a 2023 coup — made no public appearance on Saturday,
+      and the mutineers reportedly drew on frontline units from Ouallam,
+      Tera and Dosso that have taken heavy casualties fighting the regional
+      Islamic State affiliate.
+    sources:
+      - label: NBC News / Reuters, 2026-08-29 13:30 UTC — the ground account
+        url: https://www.nbcnews.com/world/africa/mutinous-soldiers-attack-airport-presidency-niger-capital-rcna595006
+      - label: Al Jazeera, 2026-08-30 — "Dozens of soldiers arrested after apparent coup attempt in Niger's capital"
+        url: https://www.aljazeera.com/where/niger/
+    lenses: [all]
+    logged_by: curate-add
   # LATE CATCH, filed 2026-08-29 for an event at 06:35 Oslo time on Friday
   # 28 August — 00:35 ET on 08-28, which is the 08-27 digest-day under the
   # 05:00 ET boundary, hence `date: 2026-08-27`. `filed` is set to today

@@ -18,6 +18,25 @@ motion-to-dismiss activity (waivers of service executed 2026-03-18,
 original answer deadline 2026-05-15), and whether any other insurer or
 company cites this case as precedent.
 
+## 2026-05-15 — OpenAI actually files: ChatGPT is "a tool," not a person who can practice law
+
+- **OpenAI Foundation and OpenAI Group PBC filed their motion to dismiss for
+  failure to state a claim on the original 2026-05-15 deadline this thread
+  was already tracking** — the first confirmation the deadline was met
+  with a real filing rather than an extension. The brief argues ChatGPT
+  "is not a 'person,' but a tool that relies on statistics to predict the
+  most appropriate sequence of words based on its training" and is
+  "incapable of practicing law" under the Illinois statute; that tortious
+  interference requires "active persuasion, encouragement, or incitement"
+  beyond "passively and automatically generating information in response
+  to prompts"; that offering "a general purpose tool like ChatGPT for use
+  by millions of people" isn't aiding and abetting; and that Nippon Life's
+  complaint should have targeted Dela Torre herself, not the tool she used.
+  This is exactly the "AI developer, not just the AI's user" liability
+  question this thread exists to track — now with OpenAI's own defense
+  theory on the record.
+  ([Bloomberg Law](https://news.bloomberglaw.com/litigation/open-ai-dismissal-motion-says-chatgpt-is-mere-tool-not-attorney), 2026-05-18) ⟨daily 2026-08-30⟩
+
 ## 2026-08-04 — Thread opened + crawled ⟨crawl 2026-08-04⟩
 
 - **Opened following a board-pass audit that found the entire insurance

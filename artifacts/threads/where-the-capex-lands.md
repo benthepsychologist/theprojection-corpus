@@ -32,6 +32,18 @@ thread yet — that's the worklist.
   been the binding constraint at most of this thread's other sites.
   ([Chattanoogan](https://www.chattanoogan.com/2026/8/26/522510/Proponents-Of-Bradley-County-Project.aspx))
   ⟨daily 2026-08-25⟩
+- ✏️ **Correction, 2026-08-30: "pairing a large data center with"
+  generation is more confident than the developer itself is being.**
+  Wright Brothers CEO Mitchell Simpson told the Cleveland Banner on
+  08-28 that there is **no confirmed off-taker** for the campus's power —
+  "We do not have somebody that is definitely the off taker for that
+  power at this time" — and named advanced manufacturing, semiconductor
+  production and robotics as alternative end uses. **What is filed is a
+  generation-first campus looking for a load, not a data center that
+  brought its own power**, which is the inverse of the pattern this
+  entry read it as. The forums stand at 09-01 (18:00-20:00 ET, Cleveland
+  PIE Center) and 09-12.
+  ⟨daily 2026-08-30⟩
 
 ## 2026-08-22 (late catch, added 2026-08-23) — Alibaba raises $10.2bn in Hong Kong's largest-ever follow-on, and puts 100% of it into AI
 

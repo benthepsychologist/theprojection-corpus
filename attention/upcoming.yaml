@@ -277,7 +277,14 @@ expectations:
     # reconcile and no company statement exists. Stays pending to the 08-31
     # month-precision date; if nothing confirms by the next run it goes
     # passed-silent rather than being assumed closed.
-
+    evidence: |
+      INTERIM 2026-08-30, unconfirmed. Every reachable source still
+      describes the ~$50bn-valuation round as OPENED but not closed, with
+      "close by end of August" as a target rather than a reported fact;
+      KrAsia (08-11) had Moonshot telling investors of a final close on
+      08-27, and no follow-up confirms it happened. No company statement.
+      The two prior incompatible sizings (~$3.5bn on a ~$35bn implied
+      valuation vs. a ~$50bn pre-money) are still unreconciled.
   - id: ny-s9051b-signature
     claim: "Hochul signs (or pocket-vetoes) NY S9051B under-18 companion ban + S9408A AI-toy ban"
     due: 2026-12-31   # corrected 07-23 (finalize sweep) — was 08-31 guess
@@ -607,7 +614,10 @@ expectations:
     due: 2026-09-04
     slips: [2026-08-17]
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30, still in talks. No report of the ~$6bn
+      Anthropic/Decart deal closing; coverage (newest ~08-13) still frames
+      it as talks that "could fall through."
   - id: moonshot-hk-ipo-filing
     claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"
     due: 2026-09-30
@@ -730,7 +740,12 @@ expectations:
     logged: 2026-08-04
     logged_by: crawl
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30, still open. All reachable sourcing (FT-
+      originated, newest ~08-23) still has Samsung, EQT, Novo Holdings and
+      Santander "in talks" at a ~EUR 20bn valuation; Samsung and Mistral
+      both declined to comment. No signing, no close. On current evidence
+      more likely to slip past 08-31 than to land on it.
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
     due: 2026-11-04
@@ -1022,7 +1037,20 @@ expectations:
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, mental-health lens
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30 — and the CLAIM ITSELF is now in doubt, which is
+      a bigger finding than the date. This entry's whole point is the
+      verification METHOD (hard identity check vs. Australia's self-
+      declaration). Open-source reporting now contradicts itself on
+      exactly that: some accounts (Digital Minister Anne Le Henanff, and
+      coverage tying the check to CNIL and the EU's privacy-preserving
+      zero-knowledge-proof pilot) describe a mandatory platform-side age
+      check, while others report that parliament STRIPPED the age-
+      verification enforcement mechanism from the final bill, leaving only
+      the EU Digital Services Act as the enforcement tool — i.e. no hard
+      identity check at all. Not resolvable by further searching. This
+      needs a direct read of the enacted text on legifrance.gouv.fr before
+      09-01. Flagged rather than guessed at.
   - id: nvidia-500b-financing-first-close
     claim: "A first concrete deal is signed under Nvidia's $500B compute-financing platform — the MOUs of 2026-08-10 converting into an actual transaction"
     due: 2026-09-15
@@ -1276,7 +1304,14 @@ expectations:
     # actually convening a real test rather than a formality. The seventh
     # round ended 08-06 with little resolved.
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30, trending toward slippage rather than
+      confirmation. The clearest available reporting (Al-Monitor / Asharq
+      Al-Awsat) has 09-01 as "proposed as a preliminary date," with the US
+      still consulting both parties "before a final date is set" —
+      consistent with Hezbollah's Qassem calling it "early September"
+      rather than naming a day. Neither government has confirmed a
+      convening. Stays pending to 09-01; expect a slip rather than a hit.
   - id: iran-us-sanctions-package-aug24
     claim: "The US Treasury announces the Iran sanctions package Bessent has publicly promised — what he calls history's 'greatest coordinated economic isolation' of a country, paired with the existing blockade"
     due: 2026-08-24
@@ -1372,7 +1407,18 @@ expectations:
     # 2026-08-29 ⟨daily⟩: NOT FILED. EDGAR full-text search queried directly
     # for "Anthropic" under form S-1, 08-01..08-29: zero hits, EDGAR's own
     # timestamp 2026-08-29T15:10:43-04:00. Two days to the reported 08-31 date.
-
+    evidence: |
+      INTERIM 2026-08-30, a clean timestamped negative one day before the
+      due date. Two independent direct checks of SEC EDGAR at ~10:07 ET:
+      the company browser (browse-edgar, company=anthropic, type=S-1)
+      returns zero matches, and the full-text search API (efts.sec.gov,
+      q="Anthropic", forms=S-1) returns hits for SpaceX, Cerebras, Reddit,
+      Figma and others but none for Anthropic PBC. The confidential draft
+      submitted 06-01 has not been converted. This repo's own sec_edgar
+      collector could NOT corroborate mechanically — skipped on the first
+      pass (KESTREL_CONTACT_EMAIL unset) and returning HTTP 500s from
+      EDGAR on the re-run — so both checks here are agent-run, not
+      collector-run.
   - id: broadcom-q3-fy2026-earnings
     claim: "Broadcom reports fiscal Q3 2026, updating the custom-ASIC co-design book this map tracks across five named majors (Google, Meta, OpenAI, Apple, ByteDance)"
     due: 2026-09-02
@@ -1389,7 +1435,11 @@ expectations:
     # ledger entry is what stops the thread being swept blind in the
     # meantime.
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30, on track. Reports 09-02 after the close;
+      guidance (~$29.4bn total revenue, ~$16bn AI semiconductor revenue)
+      is unchanged from the Q2 call. No fresh pre-earnings news in either
+      sweep window.
   - id: meta-warner-csam-response
     claim: >
       Meta answers Senator Mark Warner's 2026-08-18 letter on AI-generated
@@ -1475,16 +1525,16 @@ expectations:
       harm onto AI developers and facilities, and Kaiser and the
       California Hospital Association oppose it.
     evidence: |
-      INTERIM, still pending. AB 2575 FAILED its first Senate floor vote
-      2026-08-28 (18-10, short of the majority needed), then was saved
-      same-day by a 40-0 reconsideration vote — alive for one more
-      attempt before the legislature adjourns 08-31. Source: CA
-      Legislature bill history
-      (https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575).
-      Companion bill SB 903 (bars marketing a chatbot as "therapy,"
-      requires licensed-professional oversight) cleared Assembly
-      Appropriations 13-0 on 08-13 and sits on the Assembly's 08-30 floor
-      file — tracked separately as ca-sb903-floor-vote below.
+      INTERIM 2026-08-30, still pending — with a procedural detail the
+      08-29 entry did not have. Because AB 2575 was AMENDED when
+      reconsideration was granted on 08-28, it went back to SECOND READING
+      rather than straight to a repeat third-reading vote. As of ~10:00 ET
+      it sits on the Senate's 08-30 second-reading file, "in floor
+      process," with no second floor-passage vote recorded. Both that
+      second reading AND the repeat vote have to happen before the 08-31
+      adjournment. (Prior state, retained: AB 2575 failed its first Senate
+      floor vote 08-28, 18-10, and was saved same-day by a 40-0
+      reconsideration.)
   - id: project-camellia-community-panel-0826
     claim: >
       A community panel on OpenAI's Project Camellia data-center campus
@@ -1638,7 +1688,11 @@ expectations:
       cleanest read available on it, since the reporting says banks
       declined the risk and left the deal to retail. Offering runs 09-07
       to 09-16; issue 09-17.
-
+    evidence: |
+      INTERIM 2026-08-30, on track and unchanged. The JPY 1tn ($6.3bn)
+      7-year retail bond is still slated to price 09-04 within the
+      4.3-4.9% indicative coupon range already on file. Confirmation of
+      the existing record, not a new fact.
   - id: xiaomi-18-fold-xring-o3-china-launch-0930
     claim: >
       The Xiaomi 18 Fold and Pad 9 Pro Max — the first devices carrying
@@ -1786,6 +1840,17 @@ expectations:
     what_confirms: >
       the 09-01 forum happening (a second is set for 09-12), and whether
       local opposition organises the way it did in Pataskala and Effingham.
+    evidence: |
+      INTERIM 2026-08-30. Forums CONFIRMED and unchanged: 09-01,
+      18:00-20:00 ET at the Cleveland PIE Center, with a second on 09-12.
+      Separately, a material correction to the premise: Wright Brothers
+      CEO Mitchell Simpson told the Cleveland Banner on 08-28 that there
+      is NO confirmed off-taker for the campus's power — "We do not have
+      somebody that is definitely the off taker for that power at this
+      time" — and named advanced manufacturing, semiconductor production
+      and robotics as alternative end uses. What is filed is a generation-
+      first campus looking for a load, not a data center that brought its
+      own power. Correction applied to the where-the-capex-lands timeline.
   - id: tva-datacenter-rate-effective-1001
     claim: >
       TVA's new data-center wholesale power rate (~10% average billing
@@ -1879,7 +1944,18 @@ expectations:
     # 2026-08-29 ⟨daily⟩: NOT TAKEN UP 08-29. Bill history re-fetched twice:
     # latest entry still 08/21/26 (ordered to third reading; read third time
     # and amended). Consistent with the 08-30 Assembly floor file, item 103.
-
+    evidence: |
+      INTERIM 2026-08-30, still pending on its own due date. Checked
+      directly against the Legislature's own bill-history record at ~10:00
+      ET (bill_id 202520260SB903): the history still ends at "ordered to
+      third reading" (08-21) and NO Assembly floor vote is posted, even
+      though SB 903 was listed as item 103 on the Assembly's 08-30 daily
+      floor file. The Assembly sits today and tomorrow, and leginfo has
+      been observed to lag same-day floor action by hours. This is "not
+      yet decided" — not a hit, not a slip, not a death. The hard backstop
+      is the 08-31 constitutional adjournment: if no vote is recorded by
+      then the bill dies for the session, and this entry becomes passed-
+      silent with a real outcome behind it.
   - id: project-camellia-boc-worksession-outcome
     claim: >
       The Effingham County Board of Commissioners' three-hour work session
@@ -1900,8 +1976,20 @@ expectations:
       commissioners a live political pressure point walking in.
     logged: 2026-08-29
     logged_by: curate-add
-    status: pending
-
+    status: hit
+    evidence: |
+      HIT 2026-08-30. The Effingham Herald's follow-up (published the
+      evening of 08-29 — the only outlet that got past advance coverage)
+      reports the three-hour session drew roughly 100 residents and
+      produced NO VOTE, but two concrete commissioner signals, which is
+      what this entry asked for. Commissioner Roger Burdette (District 2,
+      where the site sits) publicly conceded the process had been
+      mishandled — "I was wrong" — and both Burdette and Beth Helmly
+      (District 4) said they would consider an 18-month data-center
+      moratorium plus conditional-use permitting for future sites. County
+      channels, WTOC and projectcamellia.com still carried only advance
+      previews at the time of this check: a single-outlet get on the
+      outcome, flagged as such on the timeline.
   - id: ca-sb1119-assembly-floor-vote
     claim: >
       California SB 1119 (Padilla; children's companion-chatbot safety —
@@ -1923,7 +2011,12 @@ expectations:
     logged: 2026-08-29
     logged_by: curate-add
     status: pending
-
+    evidence: |
+      INTERIM 2026-08-30, still pending. Checked against the Legislature's
+      own record at ~10:00 ET: history still ends at "read third time and
+      amended, ordered to third reading" (08-28); no Assembly floor vote
+      posted. A floor vote plus Senate concurrence both remain before the
+      08-31 adjournment.
   - id: ca-ab1979-governor-action
     claim: >
       Governor Newsom signs or vetoes AB 1979 (Bonta) — consumer health

@@ -1,9 +1,10 @@
 ---
 lens: world-news
 date: 2026-08-29
-status: building
+status: final
 window_start: 2026-08-29T05:00:00-04:00
-as_of: 2026-08-29T15:10:00-04:00
+window_end: 2026-08-30T05:00:00-04:00
+finalized: 2026-08-30T10:15:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 

@@ -18,6 +18,11 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-08-25 — SpaceX commits $100B to a new Louisiana "Starbase" spaceport, testing the capex-vs-cash-flow question directly
+
+- **SpaceX and Louisiana Governor Jeff Landry announced a $100B commitment to build "Starbase, Louisiana" — a five-launch-complex spaceport on 125,000 acres of former Exxon land in Vermilion Parish, targeting over 10,000 launches/year, construction starting 2027, first launch as early as 2029.** State officials call it the largest capital investment in Louisiana history; Musk says it brings "probably 10,000" jobs. This is the thread's watch made concrete: on top of $28.5B in H1 2026 capex already pressuring the stock, SpaceX is signaling no capex slowdown rather than the opposite — directly bearing on whether the Starlink→AI cash-flow story can fund this scale of spend. SPCX shares rose about 2% to $137.95 the same day (added roughly $40B to stated market cap, near $1.87T) — a muted reaction relative to the number, not a re-run of the Aug-6 short squeeze.
+  ([CBS News](https://www.cbsnews.com/news/elon-musk-spacex-louisiana-spaceport-launching-site-plan/), [CNBC](https://www.cnbc.com/2026/08/25/spacex-louisiana-spaceport.html), [Fortune](https://fortune.com/2026/08/27/spacex-largest-spaceport-100-billion-louisiana-expansion/)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-15 — First public earnings beat expectations; the lock-up that was supposed to crash the stock triggers a short squeeze instead
 
 - **SpaceX (SPCX) reported its first-ever quarterly earnings as a public

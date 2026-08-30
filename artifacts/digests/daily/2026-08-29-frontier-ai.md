@@ -1,10 +1,11 @@
 ---
 lens: frontier-ai
 date: 2026-08-29
-status: building
+status: final
 window_start: 2026-08-29T05:00:00-04:00
-as_of: 2026-08-29T15:10:00-04:00
-coverage: pending
+window_end: 2026-08-30T05:00:00-04:00
+finalized: 2026-08-30T10:15:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-08-29
@@ -246,6 +247,53 @@ itself to "by September 30."
   nothing. **Track it?**
 
 See the front digest for the day's full set of offers.
+
+## 🔍 Coverage critic — 2026-08-29 (finalize pass, 2026-08-30)
+
+**No misses. And the reason matters more than the result:
+2026-08-29 was a Saturday, and all four of this lens's daily benchmarks
+are weekday-only — so "no misses" here is a NULL RESULT, not a passed
+check.** Stated plainly because the honest version of this appendix is
+weaker than a clean scorecard would look.
+
+The benchmark set for this lens is four AI newsletters — **The Rundown
+AI, TLDR AI, The Neuron, The AI Daily Brief** — plus two weeklies
+(**Import AI**, Monday; **Last Week in AI**, Tuesday) that fall outside
+any Saturday window by construction. Every one of the four was checked
+live and every one was dark:
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| The Neuron | dark for 08-29 | its own dated archive stops at Friday 08-28 |
+| The Rundown AI | dark for 08-29 | newest feed item Friday 08-28 |
+| The AI Daily Brief | dark for 08-29 | `/e/2026-08-29` returns HTTP 404 |
+| TLDR AI | **ambiguous** | the reader proxy returned only the generic landing page, so "no Saturday edition" could not be positively distinguished from "the proxy failed to render a dated page" |
+| Bloomberg Technology | blocked | re-tested through the reader proxy as instructed; CAPTCHA again, same as 08-28 |
+
+**Because the newsletters were dark, the budget went to what does publish
+on a weekend** — the labs' own release channels (OpenAI, Anthropic, Google
+DeepMind, Meta AI, xAI, Mistral, Z.AI), Hugging Face, arXiv, the wires,
+The Verge, Ars Technica, TechCrunch — with the three weak spots the 08-28
+critic named (agent behaviour, lab product strategy, the academic layer)
+probed deliberately rather than swept evenly. Nothing came back that this
+map did not already hold. Two near-candidates were checked and ruled out
+on dates: **The Neuron's own most recent lead** (the Cursor/Aur0ra
+ransomware story) is dated 08-28 and already carried as a thread offer,
+and **Nvidia's reported $12.9bn Hugging Face acquisition** is dated 08-26
+and was already offered and dropped under the two-offers rule.
+
+⚠️ **One access caveat on the compensating sweep:** Anthropic's newsroom
+was read directly and confirmed dark since 08-27, but **OpenAI's newsroom
+returned a 403**, so that half of the lab-channel check rests on search
+coverage rather than a direct read.
+
+**The critic's own read, quoted rather than paraphrased:** *"this was a
+quiet-news day for the lens, and the map did not miss anything on it —
+which is a weaker claim than 'recall is strong,' since a dark Saturday
+across all four benchmarks removes most of the test's teeth."* The 08-28
+finding that this map is weak on agent behaviour, lab product strategy
+and the academic layer is **not confirmed closed by this pass** — it is
+untested by it.
 
 ---
 Saturday's news in this lens is mostly the record catching up with

@@ -1,10 +1,11 @@
 ---
 lens: global-capital
 date: 2026-08-29
-status: building
+status: final
 window_start: 2026-08-29T05:00:00-04:00
-as_of: 2026-08-29T15:10:00-04:00
-coverage: pending
+window_end: 2026-08-30T05:00:00-04:00
+finalized: 2026-08-30T10:15:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-08-29
@@ -196,6 +197,77 @@ reports — all returned empty on their own lags, as every week since
 ## 🧵 Thread candidates
 
 See the front digest for the day's offers.
+
+## 🔍 Coverage critic — 2026-08-29 (finalize pass, 2026-08-30)
+
+**One finding, and it is a thread-level blind spot rather than a missed
+bullet: this map has no coverage of stablecoin, tokenisation or
+payments-innovation policy at all — and that was the announced theme of
+Jackson Hole 2026.**
+
+Both the 08-28 and 08-29 digests treated Jackson Hole as a single event:
+Fed Chair Kevin Warsh's Friday keynote on inflation and the rate path.
+The Kansas City Fed's own symposium page says the 2026 theme is
+**"Financial Innovation: Implications for Payments and Policy"** — the
+first time in the event's 49 editions that digital payments, stablecoins
+and tokenisation have been the organising centre rather than a sideline.
+Saturday 08-29's sessions, chaired by Anil Kashyap, were **"Financial
+Innovation and the Future of Banking"** (Christine Parlour, discussant
+Itay Goldstein), **"Financing Innovation"** (Markus Brunnermeier,
+discussant Raghuram Rajan), and a central-banking panel (Wenxin Du,
+Arvind Krishnamurthy, Jesús Fernández-Villaverde); earlier in the
+symposium Darrell Duffie presented on tokenised finance with the ECB's
+Isabel Schnabel as discussant.
+
+**Why this is structural and not a sourcing failure.** The digest was
+honest about the gap — it says outright that the final day ran past the
+window and no Saturday session content was captured. What it did not do
+was ask what those sessions *were*. And a grep of `attention/threads.yaml`,
+`attention/watchlist.yaml` and `attention/capital-context.yaml` for
+"stablecoin", "tokeniz", "CBDC" and "digital currency" returns **zero
+hits across all three files.** The live backdrop the theme sits against —
+the GENIUS Act's stablecoin-reserve regime taking effect in roughly six
+months, a reported ~$230bn stablecoin market, major US banks positioning
+to issue — has nowhere to land on this map.
+
+⏸️ **Held off the timeline deliberately.** Not because the date could not
+be pinned (the KC Fed's own page dates the sessions), but because there is
+no existing thread it belongs to, and the critic writes only into threads
+that exist. It is carried as a **thread candidate** instead.
+
+**Four checks that came back clean, each against a primary source:**
+
+- **Anthropic's S-1** — confirmed absent from EDGAR by both the company
+  browser and full-text search. The digest's claim is accurate.
+- **Treasury's par curve** — fetched from Treasury directly: 2-year 4.34%
+  (+14bp), 10-year 4.73% (+6bp), 20-year 5.21% (+3bp), 30-year 5.22%
+  (+3bp), 08-28 vs 08-27. **Matches the digest to the decimal.**
+- **Nvidia's $36bn financing pause** — the "Nvidia denies pausing"
+  follow-up published 08-28 09:13 ET, inside the *previous* digest-day and
+  already folded into that finalize. No weekend regulatory or customer
+  reaction surfaced.
+- **Axios Pro Rata's 08-28 lead** (Stripe/Advent's $53bn PayPal bid
+  collapsing) looked like a miss until checked — it is already in the
+  08-28 digest in full, with the Pro Rata cross-check itself logged.
+
+| benchmark | state | transport |
+| --- | --- | --- |
+| Money Stuff | **genuinely dark** — newest item Thu 08-27 ("AI Refi"), no Friday column exists in the feed | author-page `.rss` |
+| Axios Pro Rata | reachable; served Friday 08-28's issue, no weekend edition | reader proxy |
+| Odd Lots | reachable; newest 08-27 and 08-28, both already logged as 08-28 misses | Omny RSS — ⚠️ redirects once to an `omnycontent.com` CDN path, worth recording as the real endpoint if the `omny.fm` alias breaks |
+| Bloomberg Technology | **blocked** on both direct fetch and reader proxy | re-tested as instructed; still fails |
+| FT Unhedged | not re-checked — its ~01:30 ET post time puts its dated edition in the *previous* digest-day under this map's 05:00 boundary | — |
+
+**The critic's own read:** strong on what the digest was built to track
+this weekend — the Iran crude/CENTCOM story is numerically tight, the
+Treasury figures check to the decimal, the EDGAR negative is exactly
+right, and the lens did not invent a Saturday macro print that does not
+exist. Weak on treating a three-day academic symposium as one speech.
+**A lens called Global Capital missing the one symposium this year
+explicitly reorganised around capital-markets policy is a real recall
+gap**, even though it is a clean null against all four of this lens's
+daily benchmarks — none of which cover monetary-economics conferences at
+all, which is the point.
 
 ---
 With markets closed, the day's capital story is Iran's, and for the
