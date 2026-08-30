@@ -3,7 +3,7 @@ lens: global-capital
 date: 2026-08-30
 status: building
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T10:15:00-04:00
+as_of: 2026-08-30T15:45:00-04:00
 coverage: pending
 ---
 
@@ -16,6 +16,36 @@ finalizing 08-29, and a cold-thread rotation. Read against
 `attention/capital-context.yaml`, asof 2026-08-25.*
 
 ## Today's throughline
+
+**The afternoon put a named official and a substantive position inside
+the blind spot this morning could only describe as an absence.** The
+morning's finding was structural: Jackson Hole reorganised itself around
+payments and financial innovation for the first time in 49 editions, and
+the words "stablecoin," "tokenis-" and "CBDC" appear nowhere in this
+map's threads, watchlist or capital snapshot. **What was missing was any
+actual policy content to point at, and there is some.** BIS General
+Manager Pablo Hernández de Cos used the symposium on 28 August to argue
+that stablecoins **"do not credibly function as a means of payment at
+scale,"** and that tokenised **bank deposits** — not stablecoins —
+should carry the bulk of everyday and wholesale payments, with
+stablecoins confined to narrow uses such as DeFi lending pools under
+strict par-redemption rules. He named the risks he argues from:
+bank-funding costs, the "singleness" of money, money laundering, and
+digital dollarization as a sovereignty problem for smaller economies.
+
+**That changes the shape of the candidate rather than merely
+strengthening it.** The morning framed the gap as *a $230bn market with a
+statutory reserve regime six months out has nowhere to land here*. The
+BIS speech shows the live official argument is not about whether
+stablecoins are risky — it is **a contest over which instrument becomes
+the payment rail**, with the central-banking establishment pushing
+tokenised deposits as the alternative. A thread scoped to stablecoins
+alone would miss half of it. ⚠️ **Also worth stating against our own
+case:** the stablecoin content at Jackson Hole came from the BIS, not
+from the Fed chair. Warsh's own keynote, which this map already recorded
+on 08-28, went to AI token economics instead — so "the marquee
+central-banking event reorganised around stablecoins" is true of the
+programme and only partly true of the podium.
 
 **The day's real finding is about this map rather than the market: the
 coverage critic went looking for what the 08-29 digest missed at Jackson
@@ -69,6 +99,22 @@ a weapon.
   as a thread candidate instead.
   <!-- k: t= e= axis=the-maps-own-blind-spot interp=yes -->
 
+- **The BIS General Manager used Jackson Hole to argue that stablecoins
+  "do not credibly function as a means of payment at scale" and that
+  tokenised bank deposits should carry everyday and wholesale payments
+  instead.** Pablo Hernández de Cos, speaking 28 August, would confine
+  stablecoins to narrow uses such as DeFi lending pools under strict
+  par-redemption rules, citing bank-funding costs, the singleness of
+  money, money-laundering exposure and digital dollarization as a
+  sovereignty risk for smaller economies. **This is the substance the
+  morning's blind-spot finding was missing** — and it reframes the gap:
+  the live official argument is not whether stablecoins are risky but
+  **which instrument becomes the payment rail**, tokenised deposits or
+  stablecoins. ⏸️ **Also not written to any timeline, for the same
+  reason.** ⚠️ Sourced to same-day reporting of the remarks across
+  several outlets rather than to a BIS transcript, which was not reached.
+  <!-- k: t= e= axis=the-maps-own-blind-spot interp=yes -->
+
 ## Capital structure
 
 - **OpenAI is cutting Cursor's model access because SpaceX bought it,
@@ -97,6 +143,18 @@ a weapon.
 
 ## ⏳ Upcoming & expected
 
+- ⏰ **AFTERNOON RE-CHECKS: `anthropic-public-s1-filing` negative got
+  stronger, `glm-5-5-release` got weaker.** A second independent EDGAR
+  pass found all 35 "Anthropic" entries are investor SPVs of the form
+  *"Anthropic Fund II Jan 2026 a Series of CGF2021 LLC"* — **the issuer
+  has no filer presence on EDGAR at all**, which is a harder negative
+  than "no S-1 found." Against that, the GLM-5.5 re-check could not reach
+  z.ai's own blog (DNS failure) and rests on secondary sources; the
+  morning's vendor-channel check remains the load-bearing one. ⚠️ Not two
+  independent confirmations. `moonshot-preipo-round` and
+  `mistral-3b-round-close` unchanged — and Moonshot's long-standing
+  sizing puzzle resolves: the ~$50bn is a pre-money target for a **later**
+  round, not a rival account of July's confirmed $3.5bn at ~$35bn.
 - ⚠️ **`anthropic-public-s1-filing` (08-31) — a clean, timestamped
   negative.** Two independent direct checks at ~10:07 ET: the EDGAR
   company browser returns zero matches for Anthropic under form S-1, and
@@ -128,6 +186,20 @@ a weapon.
   Treasury's first buyback operation 09-09.
 
 ## 🔄 Map changes
+
+- ⚠️ **Five of the six coverage gaps this afternoon's sweeps proposed
+  were already on the record, two of them recorded better than the
+  report had them.** Already present: Warsh's Jackson Hole token-sales
+  quote (08-28 digests, verbatim), the Amzan and Tihamah Red Sea attacks
+  (`red-sea-oil-shock`, `iran-conflict-widening`), the IRGC's Iran-Oman
+  revenue claim (08-27, with Oman's contradicting statement attached),
+  Anthropic's ~$2T October listing chatter (`frontier-lab-ipos`, which
+  explicitly **declines** to adopt the tokenized-share $2T signal as a
+  synthetic price with no filing behind it), and Georgia Power's
+  Effingham 3.2GW OpenAI contract — reported as pending Wednesday when
+  it is **already approved** and logged. **Only the BIS speech was
+  genuinely absent.** Second consecutive day this check has paid, at a
+  cost of one `grep -rl`.
 
 - ✅ **08-29 finalized** with a critic appendix and `coverage: done`.
   Four of the critic's checks came back clean against primary sources and
@@ -182,6 +254,18 @@ a weapon.
 See the front digest for the full set of offers.
 
 ---
+The blind spot found this morning acquired an argument this afternoon:
+the BIS General Manager used Jackson Hole to say stablecoins do not
+credibly work as payment at scale and that tokenised bank deposits should
+carry the load instead — which means the thing this map has no thread for
+is not a market, it is a live contest over which instrument becomes the
+payment rail. Honesty about our own case cuts the other way too: that
+content came from the BIS, not the Fed chair, whose keynote went to AI
+token economics and is already on the record here. CXMT's first results
+as a listed company beat its own prospectus by a third. And five of the
+six coverage gaps the afternoon's sweeps proposed were already recorded,
+two of them better than the reports had them.
+
 The coverage critic went looking for what Saturday's digest missed at
 Jackson Hole and found something larger: the symposium's announced theme
 this year was financial innovation in payments and policy, and the words

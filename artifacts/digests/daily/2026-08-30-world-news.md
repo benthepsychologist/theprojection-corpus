@@ -3,13 +3,14 @@ lens: world-news
 date: 2026-08-30
 status: building
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T10:15:00-04:00
+as_of: 2026-08-30T15:45:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-08-30
 
-*Curated agentic-interim, 05:00 ET → 10:15 ET, a Sunday morning. **Nine
+*Curated agentic-interim, 05:00 ET → 15:45 ET, a Sunday, across two
+runs. The morning pass ran **nine
 dispatches**: five cluster sweeps scoped to both the uncurated 08-29
 evening window and today, three coverage critics finalizing 08-29, and a
 cold-thread rotation. The world-news sweep carried the general
@@ -32,6 +33,24 @@ flood were missed because nothing was looking. **Niger was missed while
 something was looking** — Reuters had the story out by 09:30 ET
 yesterday, and the front-page scan ran roughly six hours later and came
 back with a two-day-old royal death instead.
+
+**The afternoon changed what the Niger story is.** The third run of the
+scan found the army had retaken the Niamey airbase after hours of
+fighting, that the mutineers were **hundreds of soldiers drawn from the
+Ouallam, Tera and Dosso garrisons — frontline units taking heavy losses
+against the regional Islamic State affiliate** — and that **two foreign
+governments had been pulled in within a day**: Niger's presidency says
+Algeria delivered four fighter jets, a transport aircraft and a
+refuelling tanker, and Russia's ambassador told TASS that Africa Corps
+had received a request to help neutralise the mutineers. Meanwhile Al
+Jazeera reported this afternoon that **Tiani's whereabouts "have not
+been confirmed"** — a head of state unseen for two days after an attack
+on his own presidency. This morning's digest declined to offer Niger as
+a thread on the reasoning that "a contained one-day mutiny" is not an
+active military conflict, and said it would become an obvious yes if it
+escalated. **On the day's own stated test, it has**, and it is offered
+below.
+
 
 **Iceland told the European Union no, by six points.** Voters rejected
 reopening accession negotiations **52.8% to 47.2%** in Saturday's
@@ -92,6 +111,56 @@ the catch**, per the late-catch rule.
 
 ## Conflicts
 
+- **Niger's army retook the Niamey airbase on Sunday after hours of
+  fighting, and two foreign governments were drawn into a mutiny the
+  junta calls contained — while Gen. Abdourahamane Tiani has still not
+  been seen in public.** Three security sources told Reuters loyalist
+  forces recovered the base; Niger's presidential office says **Algeria
+  delivered four fighter jets, a transport aircraft and a refuelling
+  tanker on Sunday**, and Russia's ambassador to Niamey, Viktor
+  Voropaev, told TASS on Saturday that **Africa Corps had received a
+  request for assistance in "neutralising the mutineers."** ⚠️ **Weight
+  these three differently.** The airbase recapture is Reuters' own
+  multi-source reporting; the Algerian aircraft are a claim by the Niger
+  government about its own rescue; and the Russian statement describes a
+  request received, not a deployment made — Al Jazeera's 08-30 account
+  confirms neither aircraft nor Russian intervention, saying only that
+  Algeria expressed "full solidarity." **Two things cut against the
+  "contained" framing.** The mutineers were **hundreds of soldiers drawn
+  from Niamey and from the Ouallam, Tera and Dosso garrisons — frontline
+  units taking heavy casualties against the regional Islamic State
+  affiliate** — which makes this a grievance rising out of a losing
+  counter-insurgency rather than a palace plot. And Al Jazeera reported
+  on 08-30 that **Tiani's whereabouts "have not been confirmed"**: a head
+  of state unseen for two days after an attack on his presidency. State
+  media report dozens of soldiers killed or arrested.
+  ([Reuters via AOL](https://www.aol.com/articles/niger-says-regains-control-airbase-084714000.html),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/8/30/nigers-military-led-government-says-it-contained-mutiny-what-next))
+  <!-- k: t= e= sev=major axis=conflicts -->
+
+- **The death toll from the Russian strike on the Myla munitions
+  warehouse west of Kyiv rose to 38, and Zelensky called it the
+  deadliest single Russian attack of the year while blaming "horrific
+  negligence" for storing munitions beside housing.** The count has moved
+  27 → 37 → 38 over three days as Ukraine's Interior Ministry reconciled
+  it, with four still missing. **The accountability line is the
+  development, not the number** — earlier entries had Zelensky noting
+  that rules against storing ammunition near residential areas exist,
+  which implied a violation; he has now named it as negligence outright,
+  with a criminal probe open into why a depot sat next to an elder-care
+  facility.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/30/death-toll-from-russian-strike-on-ukrainian-arms-depot-rises-to-38/))
+  <!-- k: t=russia-ukraine-war e= axis=conflicts -->
+
+- **The eighth round of Israel-Lebanon talks in Rome is now described by
+  the US as "early September" with no day named**, with Lebanon expected
+  to bring detailed zone-security roadmaps as Israeli withdrawal
+  proceeds, and the two sides still split on Hezbollah disarmament.
+  Neither government has confirmed a convening. This is the second
+  independent source today pointing the same way as this morning's check.
+  ([Asharq Al-Awsat](https://english.aawsat.com/arab-world/5306103-us-says-new-round-lebanon-israel-talks-rome-september))
+  <!-- k: t=israel-lebanon-escalation e= axis=conflicts -->
+
 - **Ukraine's General Staff says it struck the Kirishi (KINEF)
   refinery, the Yeysk military airfield and a Millerovo drone-launch
   facility in one overnight package.** Kirishi — Russia's second-largest
@@ -138,6 +207,28 @@ the catch**, per the late-catch rule.
 
 ## Elsewhere on the front pages
 
+- **The Cyprus-to-Turkey ferry *Filo Jet* capsizing now has a toll: at
+  least 8 dead and 22 missing, with 237 of the 267 aboard rescued.** This
+  morning's digest recorded the capsizing with no casualty figures and
+  deliberately kept it off the flash rail; the numbers now attached do
+  not change that call, and are recorded so the decision is auditable
+  against what was actually known by day's end.
+  ([Al Jazeera](https://www.aljazeera.com/), [Wikipedia current events](https://en.wikipedia.org/wiki/Portal:Current_events/2026_August_30))
+  <!-- k: t= e= axis=elsewhere -->
+
+- **Guinea-Bissau voted in a constitutional referendum on expanding
+  presidential powers**, with polls reported closing in the evening local
+  time and no result at the time of writing. Recorded now so tomorrow's
+  run has the question already on file rather than meeting the answer
+  cold — the pattern that lost this map a king and a coup.
+  ([Africanews](https://www.africanews.com/))
+  <!-- k: t= e= axis=elsewhere -->
+
+- **North Korea replaced defence minister Gen. No Kwang-chol with Gen.
+  Kim Song-gi.** A minister-level reshuffle rather than a leadership
+  event, logged at that weight.
+  <!-- k: t= e= axis=elsewhere -->
+
 - **Iceland rejected reopening EU accession talks, 52.8% to 47.2%**, in
   Saturday's referendum, with RÚV reporting the result and the official
   declaration coming this morning. Prime Minister Kristrún Frostadóttir
@@ -165,18 +256,31 @@ the catch**, per the late-catch rule.
   the US still consulting both parties "before a final date is set" —
   consistent with Hezbollah's Qassem calling it "early September" rather
   than naming a day. Neither government has confirmed a convening.
-- ⚠️ **`france-social-media-ban-effective` (due 09-01) — the CLAIM
-  ITSELF is now in doubt, which is a bigger finding than the date.** This
-  entry exists to test the verification METHOD — a hard identity check,
-  versus Australia's self-declaration model. Open-source reporting now
-  contradicts itself on exactly that point: some accounts (Digital
-  Minister Anne Le Hénanff; coverage tying the check to CNIL and the EU's
-  privacy-preserving zero-knowledge-proof pilot) describe a mandatory
-  platform-side age check, while others report **parliament stripped the
-  age-verification enforcement mechanism from the final bill**, leaving
-  only the EU Digital Services Act. Not resolvable by more searching —
-  it needs a direct read of the enacted text on legifrance.gouv.fr before
-  09-01. Flagged rather than guessed at.
+- ⛔ **`france-social-media-ban-effective` (due 09-01) — WITHDRAWN. The
+  ban was struck down as unconstitutional on 08-14 and will not take
+  effect.** This morning this entry said the claim was in doubt and
+  called for a direct read of the enacted text on legifrance.gouv.fr.
+  **That read would not have answered it** — the dispositive act was a
+  constitutional-review decision on a different site entirely. France's
+  Conseil constitutionnel struck down **Article 1** of the law protecting
+  minors from social-media risks in **Décision n° 2026-911 DC of 14
+  August 2026**, read directly today: *"L'article 1er … est contraire à
+  la Constitution."* The Council held the ban an interdiction of general
+  scope, imposed without regard to the individual minor or to per-service
+  risk, and — the point that ends this entry — that barring under-15s
+  necessarily implies **every** user must prove their age, while *"le
+  législateur n'a pas prévu les garanties légales"* defining how. **So it
+  fell because the verification requirement was left legally undefined,
+  not because France chose hard ID or self-declaration.** Both horns of
+  this morning's dilemma were wrong. Withdrawn rather than passed-silent:
+  a silent date means nothing to show, and this has a dated primary
+  source. Full detail in the mental-health digest, where the thread lives.
+- ⚠️ **`iran-oman-hormuz-deal-signing` — no change, and a sweep's "new"
+  finding on it was already on the record.** An afternoon sweep surfaced
+  the IRGC's 08-26 claim of an Iran-Oman revenue-sharing agreement as a
+  possible gap; `iran-conflict-widening`'s 08-27 block already carries it,
+  with the same Bloomberg source and the same caveat that Oman's own
+  statement mentioned no fees.
 - 📋 **Next 7 days:** Israel-Lebanon round eight and France's ban both
   nominally 09-01 · Canada's retaliatory tariffs 09-08.
 
@@ -199,6 +303,22 @@ the catch**, per the late-catch rule.
   execution." **The mechanical general-news detector has now been dark
   for the entire period in which this map missed a glacier collapse, a
   king's death and a coup attempt.**
+- ✎ **Two more timeline blocks this afternoon** —
+  `social-media-causality-fight` (the French decision, plus a correction
+  of its own 08-10 entry) and `russia-ukraine-war` (the Myla toll at 38).
+  `ai-memory-shortage` also moved, in the AI lens.
+- ⚠️ **The afternoon sweeps produced six "the map may be missing this"
+  leads, and five were already on the record — two of them recorded
+  better than the report had them.** Already present: the Myla strike
+  (with the 27-vs-37 reconciliation the report lacked), the IRGC Hormuz
+  revenue claim (with Oman's contradicting statement), Warsh's Jackson
+  Hole token-sales figure, the Amzan and Tihamah Red Sea attacks, and
+  Georgia Power's Effingham 3.2GW OpenAI contract — which a sweep
+  reported as "expected to be finalised Wednesday" when it was **already
+  approved** and logged on `ai-datacenter-sites`. Only the BIS stablecoin
+  speech was genuinely absent. **This is the second consecutive day the
+  rule paid**: a scoped agent cannot tell "the map is missing X" from "X
+  is on a thread I wasn't given," and one `grep -rl` settles it.
 - 🕰 **Cold rotation, 19 threads, 7 moved.** Two are world-news-adjacent
   by subject rather than lens; the rest sit in the AI and mental-health
   digests. `horn-of-africa-war` and `europe-migration-schengen` were
@@ -206,7 +326,9 @@ the catch**, per the late-catch rule.
 
 ## 🧵 Thread candidates
 
-**Two offers, and one of them is the same one for the third time.**
+**Three offers in this lens by day's end — two filed this morning, and
+Niger added this afternoon when the morning's own stated escalation test
+was met. One of the two is on its third and final outing.**
 
 - **A Nepal-Tibet / Himalayan disaster strand** *(new offer)* — five days
   after a glacier collapse this map flashed, the toll is somewhere between
@@ -225,11 +347,24 @@ the catch**, per the late-catch rule.
   condemnation. Two incidents in three days with nowhere to land.
   **Track it?**
 
-**Considered and NOT offered, with the reasoning stated:** **Niger.** A
-coup attempt clears the flash bar outright and it has no thread — but the
-stated promotion bar on this map is *all active military conflicts that
-are not hyper-local*, and a contained one-day mutiny is not yet that. If
-it recurs or escalates it becomes an obvious yes. **Iceland's
+**⚠️ A FOURTH offer, added this afternoon, and the reason it is a fourth
+rather than a replacement matters:** this morning this digest considered
+**Niger** and declined it in writing, on the stated ground that "a
+contained one-day mutiny" does not meet this map's promotion bar of *all
+active military conflicts that are not hyper-local* — while naming the
+condition that would change the answer: "if it recurs or escalates it
+becomes an obvious yes." **By 15:00 ET that condition had been met on the
+facts, not on a re-reading.** Hundreds of mutineers drawn from three
+frontline garrisons bleeding against an Islamic State affiliate; a
+foreign paramilitary asked to intervene and a neighbouring air force
+reportedly delivering aircraft inside twenty-four hours; the head of
+state unaccounted for on day two. That is not a palace incident, it is a
+counter-insurgency failure surfacing inside the army that is fighting it,
+with two external patrons now attached. Working slug `niger-mutiny`, or
+folded into a wider Sahel thread if Ben would rather hold the region
+than the country. **Track it?**
+
+**Iceland's
 referendum** likewise gets no offer: it is a real front-page result and
 genuinely fits no lens here, which makes it a question about whether this
 map wants general election coverage at all, rather than a thread
@@ -237,12 +372,18 @@ placement — Ben's call, not a candidate.
 
 ---
 The front-page scan found a coup attempt against a sitting head of state
-on its second run, twenty-five hours after Reuters filed it and roughly
-six hours after the scan's own first run had looked and not seen it.
-Niger's junta says the mutiny is contained and dozens of soldiers are
-under arrest. Iceland voted down reopening EU accession talks by six
-points and its prime minister says the question is closed until 2028.
-Ukraine hit Russia's second-largest refinery for the third time this
-year, Iran's Supreme Leader spent a second consecutive day writing
-letters he cannot deliver in person, and the Nepal-Tibet toll passed
-seven hundred with no thread here to carry it.
+on its second run, twenty-five hours after Reuters filed it. Its third
+run, this afternoon, found the thing the second run could not have: the
+mutiny had pulled in Algeria and Russia's Africa Corps inside a day, the
+mutineers came out of three frontline garrisons losing men to an Islamic
+State affiliate, and Tiani has not been seen since Friday night. The
+scan run three times in thirty hours produced a better answer each time,
+which is an argument for frequency rather than for a better single pass.
+France's under-15 social-media ban was struck down as unconstitutional
+on 14 August and this map carried it as live law for twenty days —
+caught today by reading a court's own decision rather than searching for
+news about it. Iceland voted down reopening EU accession talks by six
+points. The Myla toll reached 38, the deadliest single strike of
+Ukraine's year, and Zelensky called the munitions siting negligence
+outright. And of six coverage gaps the afternoon's sweeps proposed, five
+were already on the record.

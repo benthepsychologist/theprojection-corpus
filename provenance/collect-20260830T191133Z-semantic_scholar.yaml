@@ -1,0 +1,17 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-08-30'
+  to: '2026-08-30'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: false
+  terms_swept: 136
+fetched_at: '2026-08-30T19:11:33Z'
+items:
+- id: ed94f87a62390ef1e5623cfdfb086da685f6ad4c
+  url: https://doi.org/10.62510/cjbehm.2026.v2i2.p4
+  ts: '2026-08-30T00:00:00Z'
+- id: 36201f16c5f9c2a96d23600020cff33172e3d6a9
+  url: https://doi.org/10.62510/cjbehm.2026.v2i2.p2
+  ts: '2026-08-30T00:00:00Z'

@@ -1,0 +1,35 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-30T14:15:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-08-30T19:02:00Z'
+items:
+- id: gh-release-379372886
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10701
+  ts: '2026-08-30T18:56:31Z'
+- id: gh-release-379367603
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10700
+  ts: '2026-08-30T18:33:56Z'
+- id: gh-release-379361195
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10699
+  ts: '2026-08-30T18:07:35Z'
+- id: gh-release-379310681
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10698
+  ts: '2026-08-30T14:47:27Z'
+- id: gh-release-379304659
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10697
+  ts: '2026-08-30T14:24:14Z'

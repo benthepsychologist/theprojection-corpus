@@ -252,6 +252,15 @@ expectations:
     logged: 2026-07-22
     logged_by: crawl
     status: pending
+    # 2026-08-30 ⟨daily, afternoon⟩: STILL NOT SHIPPED, but on a weaker
+    # instrument than the morning pass and that matters. The 10:15 ET check
+    # read Z.AI's own properties (Hugging Face, docs.z.ai) and found GLM-5.3
+    # of 08-14 still latest. The 15:40 ET re-check could NOT: a direct fetch
+    # of z.ai/blog failed on DNS resolution, so it rests on secondary
+    # sources alone, all agreeing the August window traces to the JPMorgan
+    # note relayed by Reuters 06-25 rather than to any Z.AI commitment.
+    # ⚠️ These are NOT two independent confirmations — the morning pass is
+    # the load-bearing one. Due tomorrow.
     # 2026-08-29 ⟨daily⟩: NOT SHIPPED as of 08-29 — no release, weights, API
     # or model card; Zhipu's channels still promote GLM-5.2/5.3. The only basis
     # for an August date is a JPMorgan note relayed by Reuters on 06-25 plus
@@ -278,6 +287,14 @@ expectations:
     # month-precision date; if nothing confirms by the next run it goes
     # passed-silent rather than being assumed closed.
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:40 ET — unchanged, still unconfirmed
+      by Moonshot itself. The $50bn round is reported OPENED (TechNode
+      08-05) and nowhere reported closed. The most recent CONFIRMED close
+      remains late-July's $3.5bn at a ~$34.9-35bn valuation — which also
+      resolves this entry's standing "two incompatible sizings" caveat: the
+      ~$50bn is a pre-money target for a LATER round, not a competing
+      account of the same one.
+
       INTERIM 2026-08-30, unconfirmed. Every reachable source still
       describes the ~$50bn-valuation round as OPENED but not closed, with
       "close by end of August" as a target rather than a reported fact;
@@ -741,6 +758,13 @@ expectations:
     logged_by: crawl
     status: pending
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:40 ET — unchanged, still "in talks",
+      no close announced. Reporting still clusters at late July (Samsung in
+      talks for up to €1bn alongside EQT, Novo Holdings and Santander at a
+      €20bn valuation) with no August follow-up and no confirmation from
+      either company. Five weeks of silence one day before the due date
+      reads as a slip, not a close.
+
       INTERIM 2026-08-30, still open. All reachable sourcing (FT-
       originated, newest ~08-23) still has Samsung, EQT, Novo Holdings and
       Santander "in talks" at a ~EUR 20bn valuation; Samsung and Mistral
@@ -1036,9 +1060,37 @@ expectations:
     what_confirms: "reporting that new accounts are ACTUALLY blocked for under-15s in France — not merely that the rule is in force. The verification method is the whole point of this entry: Australia's declaration-based ban produced two documented evasion jurisdictions (Australia itself, then Malaysia, logged 08-09), so a hard-ID regime is the first real test of whether verification changes the outcome or just moves the workaround."
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, mental-health lens
-    status: pending
+    status: withdrawn
+    resolved: 2026-08-30
     evidence: |
-      INTERIM 2026-08-30 — and the CLAIM ITSELF is now in doubt, which is
+      RESOLVED 2026-08-30 (afternoon), WITHDRAWN — the tracked event will
+      not occur, and neither horn of the morning's dilemma was right.
+      France's Conseil constitutionnel STRUCK DOWN Article 1 of the law
+      on 2026-08-14, sixteen days before this check and four days after
+      this thread logged the ban as hard-ID law. Décision n° 2026-911 DC,
+      read directly at conseil-constitutionnel.fr: "L'article 1er de la
+      loi visant à protéger les mineurs des risques auxquels les expose
+      l'utilisation des réseaux sociaux est contraire à la Constitution."
+      The Council held the ban an interdiction of general scope taken
+      without regard to the individual minor or to per-service risk, and
+      — the point that kills this entry — that blocking under-15s implies
+      EVERY user must prove age, while "le législateur n'a pas prévu les
+      garanties légales" defining that verification. So the provision
+      fell because the verification requirement was left legally
+      UNDEFINED, not because France picked hard-ID or self-declaration.
+      There is no 09-01 commencement to observe and no verification model
+      to compare against Australia's. Withdrawn rather than passed-silent:
+      passed-silent means a date passed with nothing to show, and this
+      has a dated primary-source reason.
+      ⚠️ METHOD NOTE, worth more than the entry: this morning's interim
+      called for "a direct read of the enacted text on legifrance.gouv.fr"
+      and that read would NOT have surfaced this — the dispositive act was
+      a constitutional-review decision on a different site. The 08-10
+      timeline entry it rested on cited Reclaim The Net, an advocacy
+      outlet, for a claim about what a statute requires. Both are recorded
+      on artifacts/threads/social-media-causality-fight.md.
+
+      SUPERSEDED — INTERIM 2026-08-30 (morning) — and the CLAIM ITSELF is now in doubt, which is
       a bigger finding than the date. This entry's whole point is the
       verification METHOD (hard identity check vs. Australia's self-
       declaration). Open-source reporting now contradicts itself on
@@ -1305,6 +1357,13 @@ expectations:
     # round ended 08-06 with little resolved.
     status: pending
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:20 ET — independently corroborated,
+      same conclusion. Asharq Al-Awsat has the US saying a new Rome round
+      comes in "early September" with no day named, Lebanon expected to
+      bring detailed zone-security roadmaps, and the two sides still split
+      on Hezbollah disarmament. No convening confirmed by either government.
+      The slip expectation stands.
+
       INTERIM 2026-08-30, trending toward slippage rather than
       confirmation. The clearest available reporting (Al-Monitor / Asharq
       Al-Awsat) has 09-01 as "proposed as a preliminary date," with the US
@@ -1408,6 +1467,15 @@ expectations:
     # for "Anthropic" under form S-1, 08-01..08-29: zero hits, EDGAR's own
     # timestamp 2026-08-29T15:10:43-04:00. Two days to the reported 08-31 date.
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — negative confirmed a second
+      time, independently, with a detail the morning pass did not have.
+      EDGAR company search on "Anthropic" returns 35 entries and every one
+      is an investor SPV of the form "Anthropic Fund II Jan 2026 a Series of
+      CGF2021 LLC" — vehicles HOLDING Anthropic shares, not Anthropic PBC.
+      No S-1 under any of those names either. The negative is therefore
+      stronger than "no S-1 found": the issuer has no filer presence on
+      EDGAR at all, one day before the due date.
+
       INTERIM 2026-08-30, a clean timestamped negative one day before the
       due date. Two independent direct checks of SEC EDGAR at ~10:07 ET:
       the company browser (browse-edgar, company=anthropic, type=S-1)
@@ -1525,6 +1593,20 @@ expectations:
       harm onto AI developers and facilities, and Kaiser and the
       California Hospital Association oppose it.
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
+      reason is now a scheduling fact rather than a lag hypothesis. The
+      Assembly's own adjournment notice puts its next floor session at
+      14:00 PT / 17:00 ET TODAY — i.e. AFTER this run's window closes. So
+      the morning's "leginfo may be lagging same-day action" reading was
+      the wrong explanation for the right observation: there was no vote to
+      lag, because the chamber had not reconvened. Nothing about this bill
+      can resolve until tonight at the earliest, and 08-31 adjournment
+      remains the hard backstop.
+      Re-confirmed at 15:30 ET that the record still ends at 08-28 "read
+      third time and amended, ordered to second reading" — the extra
+      second-reading step this map only learned of this morning has not been
+      taken, so BOTH it and the repeat floor vote remain inside 24 hours.
+
       INTERIM 2026-08-30, still pending — with a procedural detail the
       08-29 entry did not have. Because AB 2575 was AMENDED when
       reconsideration was granted on 08-28, it went back to SECOND READING
@@ -1945,6 +2027,16 @@ expectations:
     # latest entry still 08/21/26 (ordered to third reading; read third time
     # and amended). Consistent with the 08-30 Assembly floor file, item 103.
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
+      reason is now a scheduling fact rather than a lag hypothesis. The
+      Assembly's own adjournment notice puts its next floor session at
+      14:00 PT / 17:00 ET TODAY — i.e. AFTER this run's window closes. So
+      the morning's "leginfo may be lagging same-day action" reading was
+      the wrong explanation for the right observation: there was no vote to
+      lag, because the chamber had not reconvened. Nothing about this bill
+      can resolve until tonight at the earliest, and 08-31 adjournment
+      remains the hard backstop.
+
       INTERIM 2026-08-30, still pending on its own due date. Checked
       directly against the Legislature's own bill-history record at ~10:00
       ET (bill_id 202520260SB903): the history still ends at "ordered to
@@ -2012,6 +2104,21 @@ expectations:
     logged_by: curate-add
     status: pending
     evidence: |
+      AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
+      reason is now a scheduling fact rather than a lag hypothesis. The
+      Assembly's own adjournment notice puts its next floor session at
+      14:00 PT / 17:00 ET TODAY — i.e. AFTER this run's window closes. So
+      the morning's "leginfo may be lagging same-day action" reading was
+      the wrong explanation for the right observation: there was no vote to
+      lag, because the chamber had not reconvened. Nothing about this bill
+      can resolve until tonight at the earliest, and 08-31 adjournment
+      remains the hard backstop.
+      ⚠️ ALSO CAUGHT TODAY, a lead not a fact: AB 2023 (Wicks), a companion
+      Assembly bill on companion chatbots, is reported FOLDED INTO SB 1119,
+      making SB 1119 the surviving vehicle. Sourced only to advocacy and
+      legislator write-ups (Transparency Coalition 08-28 update, Padilla's
+      own page), not to the bill record. Verify before relying on it.
+
       INTERIM 2026-08-30, still pending. Checked against the Legislature's
       own record at ~10:00 ET: history still ends at "read third time and
       amended, ordered to third reading" (08-28); no Assembly floor vote

@@ -1,0 +1,29 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-08-30'
+  to: '2026-08-30'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: false
+  terms_swept: 135
+fetched_at: '2026-08-30T19:11:52Z'
+items:
+- id: ce95ac919f81b2ee29ba24a5fddb92840d790620
+  url: https://doi.org/10.58477/cj.v4i2.476
+  ts: '2026-08-30T00:00:00Z'
+- id: f0d6354367438e229a22e05306950604933f2cc2
+  url: https://doi.org/10.1007/s10531-026-03466-x
+  ts: '2026-08-30T00:00:00Z'
+- id: 12bbb6a11173a0f100f9c747c5ff8cdef1883653
+  url: https://doi.org/10.1007/s00345-026-06752-z
+  ts: '2026-08-30T00:00:00Z'
+- id: 9af49778a717df5a92e119284d53708f4176672e
+  url: https://doi.org/10.1007/s40944-026-01137-x
+  ts: '2026-08-30T00:00:00Z'
+- id: 422992c068a08987443f68780aab4764b8ae4a10
+  url: https://doi.org/10.47760/oajmr.2026.v02i08.001
+  ts: '2026-08-30T00:00:00Z'
+- id: 474bb115baae6b729a7c1c0b3994b80821f4a0ad
+  url: https://doi.org/10.54503/1829-4073-2026.2.129-153
+  ts: '2026-08-30T00:00:00Z'

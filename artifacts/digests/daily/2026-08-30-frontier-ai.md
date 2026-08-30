@@ -3,13 +3,14 @@ lens: frontier-ai
 date: 2026-08-30
 status: building
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T10:15:00-04:00
+as_of: 2026-08-30T15:45:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-08-30
 
-*Curated agentic-interim, 05:00 ET → 10:15 ET, a Sunday morning. **Nine
+*Curated agentic-interim, 05:00 ET → 15:45 ET, a Sunday, across two
+runs. The morning pass ran **nine
 dispatches**: five cluster sweeps scoped to both the uncurated 08-29
 evening window and today, three coverage critics finalizing 08-29, and a
 cold-thread rotation over 19 quiet threads. Collectors ran; most of the
@@ -18,6 +19,36 @@ WebSearch budget was exhausted mid-run, which curtailed the tail of two
 sweeps — recorded rather than hidden.*
 
 ## Today's throughline
+
+**The afternoon added one real number, and it comes from the side of the
+memory squeeze this thread has never been able to measure.** CXMT — the
+Chinese DRAM maker that listed in July — reported first-half revenue of
+**¥150.31bn (~$22.4bn), up 873.64% year on year**, and net profit of
+**¥77.61bn against a ¥2.33bn loss** a year earlier. The growth rate is
+not the finding; the guidance miss is. **CXMT's own pre-IPO prospectus
+forecast ¥110–120bn of revenue and ¥50–57bn of profit, so it beat the
+top of its own revenue range by 25% and its profit range by 36%, weeks
+after listing.** DDR5 alone was ¥69.47bn, 46.3% of main-business
+revenue. **Every previous entry on `ai-memory-shortage` measured this
+squeeze from the buy side** — Nvidia's $279bn of forward purchase
+commitments, Micron's margins, Apple's price fight — **and treated
+Chinese memory as a policy question about whether Apple may buy it.**
+CXMT's book says that is the wrong frame: the Chinese supply is not
+capacity waiting on a US decision, it is already earning at scale off the
+same tightness. It also quietly weakens the `apple-cxmt-senate-deadline`
+expectation, standing passed-silent since 08-21 — a supplier posting
+these numbers needs Apple less than the deadline assumed.
+
+**On the Cursor rupture, no new event and one clarifying negative.**
+Nothing moved from SpaceX, Anysphere or OpenAI over the weekend: no
+corporate statement beyond CEO Michael Truell's remark that OpenAI models
+carry roughly 5% of Cursor's traffic and that the two companies "are
+discussing the decision," no legal threat, no enterprise customer
+reacting on the record. **The useful negative is that no new model
+provider has moved on Cursor.** After 12 November it keeps direct
+partnerships with Anthropic, Google, Meta and SpaceX's own Grok — the
+incumbents, not a new entrant. So the concentration this morning's
+throughline described is not being competed away; it is just settling.
 
 **Nothing broke this morning. The day's story is one this map missed on
 Friday night, and it breaks the assumption every entry in
@@ -109,6 +140,30 @@ remains unshipped and has slipped again to "early September."
   the timeline.
   <!-- k: t=where-the-capex-lands,ai-datacenter-sites e= axis=power-and-buildout -->
 
+## 🧠 Memory & the chip stack
+
+- 🕰 **CXMT's first results as a listed company beat its own prospectus
+  by roughly a third: first-half revenue ¥150.31bn (~$22.4bn), up
+  873.64% year on year, and net profit ¥77.61bn against a ¥2.33bn loss a
+  year ago.** Guidance had been ¥110–120bn of revenue and ¥50–57bn of
+  profit. DDR5 contributed ¥69.47bn, 46.3% of main-business revenue.
+  **This is the first hard supply-side number from China this thread has
+  carried** — everything prior measured the squeeze from the buyers.
+  ⚠️ Dated 08-28, inside a finalized digest-day and caught this
+  afternoon; Bloomberg's own page returned HTTP 403 to a direct read, so
+  this rests on SCMP and Benzinga reporting the same filed figures, which
+  agree to the decimal.
+  ([SCMP](https://www.scmp.com/tech/big-tech/article/3365623/chinas-cxmt-posts-massive-870-revenue-surge-aggressive-expansion-pays),
+  [Benzinga](https://www.benzinga.com/markets/tech/26/08/61491209/chinas-cxmt-revenue-explodes-874-in-h1-as-ai-memory-boom-fuels-dram-shortage))
+  <!-- k: t=ai-memory-shortage,china-stack-independence e=cxmt sev=major axis=memory-and-chip-stack -->
+
+- **No new model provider has moved on Cursor since OpenAI's cut-off
+  notice.** After 12 November, Cursor retains direct partnerships with
+  Anthropic, Google, Meta and Grok — the providers it already had. No
+  Mistral, no new entrant, and no SpaceX or Anysphere corporate statement
+  beyond Truell's "we are discussing the decision."
+  <!-- k: t=enterprise-agent-product-race e=openai,anthropic,xai axis=memory-and-chip-stack -->
+
 ## ⏱ Release-watch & markets
 
 - **GLM-5.5 has not shipped**, checked against Z.AI's own properties
@@ -137,6 +192,19 @@ remains unshipped and has slipped again to "early September."
 
 ## ⏳ Upcoming & expected
 
+- ⏰ **AFTERNOON RE-CHECKS, all four still negative one day out — but
+  they are not four equally strong negatives.** `anthropic-public-s1-filing`
+  got stronger: a second independent EDGAR pass found that all 35
+  "Anthropic" entries are investor SPVs (*"Anthropic Fund II Jan 2026 a
+  Series of CGF2021 LLC"* and similar), so **the issuer has no filer
+  presence on EDGAR at all**, not merely no S-1. `glm-5-5-release` got
+  **weaker**: a direct fetch of z.ai/blog failed on DNS resolution, so
+  the afternoon pass rests on secondary sources only — the morning's
+  vendor-channel check remains the load-bearing one, and these are not
+  two independent confirmations. `moonshot-preipo-round` and
+  `mistral-3b-round-close` are unchanged, with the Moonshot sizing
+  puzzle now resolved: the ~$50bn is a pre-money target for a later
+  round, not a rival account of July's confirmed $3.5bn at ~$35bn.
 - ⚠️ **`glm-5-5-release` (08-31) — negative on a direct check of the
   vendor's own channels** (above). Flips passed-silent tomorrow if
   nothing appears.
@@ -196,6 +264,19 @@ remains unshipped and has slipped again to "early September."
   (`google_news_rss`, `rss`, `gdelt`, `federal_register`) were still
   running at the time of writing; their manifests land with this commit
   if written by then, otherwise next run.
+- ⚠️ **The afternoon sweep proposed three coverage gaps in this lens and
+  all three were already recorded — one of them wrongly.** It flagged
+  Georgia Power's OpenAI contract as "expected to be finalised
+  Wednesday"; that 3.2GW Effingham County deal was **already approved**
+  and has been on `ai-datacenter-sites` since. It flagged Warsh's Jackson
+  Hole token-sales figure; the 08-28 digests carry the quote verbatim.
+  It flagged Anthropic's ~$2T October listing; `frontier-lab-ipos`
+  carries it **and explicitly declines to adopt** the tokenized-private-
+  share $2T signal as a synthetic price with no filing behind it — the
+  map is ahead of the sweep on that one, not behind it. **Only the CXMT
+  results were genuinely new.**
+- ✎ **One timeline block this afternoon** — `ai-memory-shortage`, the
+  CXMT first-half results.
 - 💡 **Entity adds proposed and still NOT made, now nine**: `Andreessen
   Horowitz`, `Salesforce`, `Hugging Face`, `Alphabet`, `Meta`, `PayPal`,
   `Stripe`, `Onos Health`, and — new today — **`Cursor`/`Anysphere`**,
@@ -213,6 +294,18 @@ none this pass; the standing offer of **AI-agent-enabled cyberattacks as
 a pattern** is carried forward there and is now on its second outing.
 
 ---
+Nothing broke in this lens all Sunday, and the afternoon's one real
+number came from a company this map has only ever discussed as somebody
+else's policy problem: CXMT beat its own IPO prospectus by a third,
+which says the Chinese memory supply is not capacity waiting on a
+Washington decision but a business already earning off the same shortage
+Nvidia is paying $279bn forward to secure. On the Cursor rupture nothing
+moved, and the informative part of that is who did not appear — no new
+model provider has gone to Cursor, so the concentration is settling
+rather than being competed away. Three of the afternoon's four proposed
+coverage gaps in this lens were already on the record, one of them
+better than the report had it.
+
 Nothing broke in this lens on Sunday morning. The day's story is Friday
 night's: OpenAI is cutting Cursor off in November because SpaceX bought
 it, Anthropic moved the same day to take the space, and the assumption

@@ -7018,3 +7018,179 @@ candidates are open for Ben (`stablecoin-policy-perimeter`, a
 Nepal-Tibet strand, the West Bank strand on its third and final offer),
 plus the two standing blockers: `gcloud auth login` for `bq` (day
 fourteen) and whether to persist `KESTREL_CONTACT_EMAIL`.
+
+## 2026-08-30 — `/daily` (15:45 ET): a law struck down twenty days ago, a coup that changed shape, and five of six agent-proposed gaps already on the record
+
+**A same-day re-run extending 08-30 from 10:15 ET to 15:45 ET.** 08-29 was
+already `final` from the morning pass and needed nothing; 08-30 stays
+`building`/`coverage: pending` because its window does not close until
+05:00 ET tomorrow. **Four dispatches, not nine** — a five-hour Sunday
+afternoon does not warrant the morning's fanout: a due-expectations
+verification sweep, a third run of the general front-page scan, and two
+lens sweeps (AI + capital, mental health + world news).
+
+### The finding: France's ban was void the whole time
+
+**France's Conseil constitutionnel struck down Article 1 of the law
+protecting minors from social-media risks — the under-15 ban itself — on
+2026-08-14.** This map logged the ban as live hard-ID law on 08-10 and
+carried it for twenty days. Décision n° 2026-911 DC, read directly:
+*"L'article 1er … est contraire à la Constitution."*
+
+**Two things about how it happened are worth more than the correction.**
+The 08-10 entry rested on a single advocacy outlet (Reclaim The Net) for
+a claim about what a statute requires, while the statute and its
+constitutional review were both published and free to read. And **this
+morning's own ledger note sensed the claim was unsafe and pointed at the
+wrong document** — it called for "a direct read of the enacted text on
+legifrance.gouv.fr," which would not have surfaced a constitutional-review
+decision published elsewhere. The generalisable lesson: when a legal claim
+is contested, the question is *which body last acted on this*, not *where
+is the statute*.
+
+**The reasoning refuses both horns of the question the map was asking.**
+The entry existed to test hard identity verification against Australia's
+self-declaration model. The Council never reached it: it held the ban an
+interdiction of general scope taken without regard to the individual minor
+or per-service risk, and that barring under-15s implies **every** user must
+prove age while *"le législateur n'a pas prévu les garanties légales"*
+defining how. **It fell for leaving verification legally undefined, not for
+picking the wrong method.** `france-social-media-ban-effective` flipped to
+**`withdrawn`** — the first use of that status on this ledger, chosen over
+`passed-silent` deliberately: passed-silent is the loud outcome for a date
+passing with nothing to show, and this has a dated primary-source reason
+the event will never occur.
+
+### The front-page scan's third run in thirty hours
+
+Each run of this instrument has produced a better answer than the last.
+The afternoon pass found the Niamey **airbase** retaken after hours of
+fighting (Reuters, three security sources), that the mutineers were
+**hundreds of soldiers from the Ouallam, Tera and Dosso garrisons —
+frontline units losing men to the regional Islamic State affiliate** — and
+that **two foreign governments were drawn in within a day**: Niger's
+presidency claims Algeria delivered four fighter jets, a transport aircraft
+and a refuelling tanker; Russia's ambassador Viktor Voropaev told TASS that
+Africa Corps *received a request* for assistance. **The three claims are
+weighted differently in the digest and should stay that way** — Reuters'
+own multi-source reporting, a government claim about its own rescue, and a
+request received rather than a deployment made. Al Jazeera's 08-30 account
+confirms neither the aircraft nor Russian intervention.
+
+⚠️ **A correction to the sweep's report, caught by reading its source.**
+The agent reported Tiani "accounted for and remains in power." Al Jazeera
+that same afternoon says his **whereabouts "have not been confirmed."** A
+head of state unseen for two days after an attack on his presidency is a
+materially different fact, and it is the one that fired this morning's own
+stated escalation test — so **Niger is now a fourth thread candidate**,
+against a morning digest that had declined it in writing.
+
+### Five of six proposed gaps were already recorded
+
+The three sweeps proposed six coverage gaps. **Five were already on the
+record, two of them recorded better than the reports had them.**
+
+| proposed gap | actually |
+| --- | --- |
+| Myla/Kyiv strike, 37 dead | already logged, **with** the 27→37→38 reconciliation the report lacked |
+| IRGC Iran-Oman revenue deal | already on `iran-conflict-widening` 08-27, **with** Oman's contradicting statement |
+| Warsh's $100bn token-sales quote | already in the 08-28 digests, verbatim |
+| Amzan + Tihamah Red Sea attacks | already on `red-sea-oil-shock`, `iran-conflict-widening` |
+| Georgia Power Effingham 3.2GW | reported as "finalising Wednesday" — **already approved** and logged |
+| Anthropic ~$2T October listing | on `frontier-lab-ipos`, which **explicitly declines** the tokenized-share $2T signal |
+| **BIS stablecoin speech** | **genuinely absent — the only real one** |
+
+A seventh claim, that the map might not track the Iran war as an open
+conflict, is contradicted by a weight-3 thread. **Second consecutive day
+the `grep -rl` check has paid.**
+
+### What moved
+
+- ✎ **Three timeline blocks** — `social-media-causality-fight` (the French
+  decision plus an explicit correction of its own 08-10 entry),
+  `ai-memory-shortage` (CXMT), `russia-ukraine-war` (Myla toll at 38, with
+  Zelensky naming the siting as negligence outright).
+- 💰 **CXMT's first results as a listed company beat its own prospectus by
+  roughly a third** — H1 revenue ¥150.31bn (~$22.4bn, +873.64%), net profit
+  ¥77.61bn against a ¥2.33bn loss, against guidance of ¥110–120bn and
+  ¥50–57bn. DDR5 ¥69.47bn, 46.3% of main-business revenue. **The first hard
+  supply-side number from China this thread has held** — everything prior
+  measured the squeeze from the buyers and treated Chinese memory as a
+  policy question about whether Apple may buy it. `actor-doing` refreshed
+  for `cxmt` accordingly.
+- ⏳ **One expectation withdrawn, eight re-checked** with afternoon evidence.
+  **One negative got stronger and one got weaker, and the ledger says so:**
+  `anthropic-public-s1-filing` — all 35 EDGAR "Anthropic" hits are investor
+  SPVs, so the issuer has **no filer presence at all**, harder than "no S-1
+  found"; `glm-5-5-release` — the re-check could not reach z.ai (DNS
+  failure) and rests on secondary sources, so the morning's vendor-channel
+  check stays load-bearing. **Not two independent confirmations.**
+- 🗓 **California's three bills did not move, for a duller reason than the
+  morning's.** The Assembly's own notice puts its next floor session at
+  14:00 PT / 17:00 ET — after this window. There was no vote to lag.
+- 💡 **`moonshot-preipo-round`'s standing "two incompatible sizings" caveat
+  resolved**: the ~$50bn is a pre-money target for a *later* round, not a
+  rival account of July's confirmed $3.5bn at ~$35bn.
+- 🚨 **No second flash.** The Niger entry filed this morning renders today
+  and lapses tonight by `flash_last_day()`. Three afternoon candidates were
+  checked and rejected (the *Filo Jet* ferry at 8 dead/22 missing,
+  Guinea-Bissau's referendum, North Korea's defence-minister reshuffle), and
+  Niger's own escalation was rejected for a second flash on the rule — a
+  flash is a new event, never a running state.
+
+### Friction, in operation
+
+- ⚠️ **Operator error worth recording because the tool behaved well:** the
+  first afternoon `cloud-researcher collect` was invoked without `--corpus .`
+  and refused to resolve a corpus rather than writing into its own package.
+  A second invocation without `KESTREL_CONTACT_EMAIL`/`KESTREL_INSTANCE`
+  then skipped `sec_edgar` outright. Both are documented in project memory;
+  neither was read before firing.
+- ⚠️ **`kestrel publish` rejects `$KESTREL_INSTANCE` as a bare repo name** —
+  it resolves it as a path relative to cwd and fails with "no kestrel.yaml at
+  /workspace/theprojection-corpus/theprojection-corpus". `--instance
+  /workspace/theprojection-corpus` works. The variable is already flagged
+  deprecated in the tool's own note.
+- ⚠️ **Collectors thin for a structural reason, not a fault:** re-collecting
+  against a window the morning already swept means `openalex` and
+  `semantic_scholar` return 429s throughout, `lda` 403s, `gdelt` connection
+  timeouts. `github` was the only lane with new kept items (5). **A same-day
+  re-run gets little from the collectors and that is expected.**
+- ⚠️ **One sweep over-claimed on a head of state's status** (Niger, above)
+  and one reported an already-approved contract as pending. Both were caught
+  by reading the cited source rather than the report.
+
+### Published and closed
+
+Four site briefings regenerated by sonnet agents from `readouts --pack`,
+each linted before assembly for pipeline narration and the `LINK_FLOOR`.
+**One leak caught and fixed by hand** — a mental-health bullet reading
+"…four days after it had been logged as taking effect September 1"; the
+rest were clean. Link coverage against a 60% floor: **front 94%, AI 90%,
+global capital 95%, mental health 80%.** `--apply` **4/4, skipped 0**;
+`--export` **154 readouts**.
+
+`kestrel publish --push`: 62 entity pages, 3 beat pages, **753 claim
+pages**, **10 interpretation pages (up from 9 — today's new BIS sidecar
+rendered)**, **958 story pages** (1,546 sources, 1,242 credibility-badged),
+122 map pages, `data/readouts.json` at 154. Cloudflare build
+`3ded580a-47dc-482d-a80f-133031fb4bce` queued, site repo pushed clean.
+`graph/validate.py`: **OK — 4,251 atoms, 2,601 sources, 6,813
+relationships, 1,051 annotations**, all references resolve. No new graph
+ingest: step 6b gates on a `final` digest and 08-30 is still `building`.
+
+**Pick up here:** **tonight and tomorrow are the whole story.** California's
+Assembly reconvened at 17:00 ET today and adjourns constitutionally on
+08-31 — SB 903, SB 1119 and AB 2575 all pass or die inside that window, and
+AB 2575 needs a second reading *and* a floor vote. **Anthropic's public S-1,
+GLM-5.5, Moonshot's round and Mistral's round all resolve 08-31 and every
+one is currently a clean negative.** Niger: watch whether Tiani appears —
+his continued absence is the escalation, and it would be a new event
+earning its own flash. **Four thread candidates are open for Ben** —
+`stablecoin-policy-perimeter` (strengthened today by the BIS speech, and
+reshaped: the live argument is tokenised deposits *versus* stablecoins as
+the payment rail, so a stablecoin-only scope would miss half of it), the
+Nepal-Tibet strand, the West Bank strand on its third and final offer, and
+now `niger-mutiny`. Standing blockers unchanged: `gcloud auth login` for
+`bq` (day fifteen — `attention/world-news.yaml` frozen at 08-25, its
+candidate titles null), and whether to persist `KESTREL_CONTACT_EMAIL`.
