@@ -3,17 +3,20 @@ lens: global-capital
 date: 2026-08-31
 status: building
 window_start: 2026-08-31T05:00:00-04:00
-as_of: 2026-08-31T11:00:00-04:00
+as_of: 2026-08-31T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-08-31
 
-*Curated agentic-interim from ~892 buffered items, 05:00 ET → 11:00 ET
-Monday — the first market open since Friday's chip selloff — plus the
-uncurated Sunday-evening window swept as its own scope. **Eleven
-dispatches**: eight cluster sweeps and three coverage critics finalizing
-08-30.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday — the first
+market open since Friday's chip selloff — plus the uncurated
+Sunday-evening window swept as its own scope. Built over **two runs**:
+a morning pass (eleven dispatches: eight cluster sweeps and three
+coverage critics finalizing 08-30, over ~892 buffered items) and an
+**afternoon extension at 15:00 ET (eight further cluster sweeps)**
+covering the 11:00 → 15:00 ET window. Afternoon material is marked
+🕓 and gathered in its own section below.*
 
 ## Today's throughline
 
@@ -167,10 +170,80 @@ offer below.
 - **Nvidia** — ~**$219**, +0.3–0.7% from $217.55. ⬆️ against the tape.
 - **Sept Fed hike odds** — **CME FedWatch ~60–62%** (from 57.5% Friday) vs. **Kalshi 47%** (from 48%). ⬆️ / flat — the gap persists.
 
-⚠️ **No new Treasury par-curve read this pass**, and no auction, buyback
-or refunding announcement was found in the window. The last confirmed
-curve on this map is 08-29's, which the coverage critic verified against
-Treasury's own published figures to the decimal.
+🕓 **Refreshed at ~15:03 ET — the session is still open (it closes at
+16:00 ET), so every figure below is intraday, not a close.**
+
+| instrument | level | day change | as of |
+| --- | --- | --- | --- |
+| S&P 500 | **7,676.44** | −0.46% (−35.32) | 15:03 ET |
+| Nasdaq Composite | **26,291.45** | −0.42% (−110.97) | 15:02 ET |
+| Dow Jones Industrial | **53,222.51** | −0.63% (−337.48) | 15:03 ET |
+| Nvidia | **$218.89** | +0.62% | 15:03 ET |
+| SOX (semiconductors) | **11,476.7** | +0.06% | 15:04 ET |
+| Brent crude | **$90.23** | +2.42% | intraday |
+| WTI crude | **$85.61** | +2.64% | intraday |
+| US 10-year | **4.76%** | +0.04pp | intraday |
+| US 30-year | **5.25%** | +0.04pp | intraday |
+| DXY | **99.43** | −0.28% | intraday |
+| Gold | **$4,431.77** | −0.48% | intraday |
+| Sept Fed hike odds | **CME ~60–62%** · **Kalshi ~47–48%** | flat vs. morning | intraday |
+
+**The morning's read held rather than developing.** The three equity
+indices sat within a few hundredths of a percentage point of where they
+opened across four hours — the tape froze at its lower level instead of
+either deepening the selloff or recovering it. Brent and WTI held their
+gap-up without extending. **The only thing that genuinely kept moving was
+the long end of the Treasury curve**, which is also the gap the morning
+pass had to leave open: it recorded no new par-curve read at all.
+
+⚠️ Still no auction, buyback or refunding announcement in the window, and
+**Treasury's official 08-31 close posts after the session**, so the 4.76%
+above remains an intraday quote. This thread has already had to revise one
+intraday snapshot (08-28) against the official close two days later.
+
+## 🕓 Afternoon extension — 11:00 → 15:00 ET
+
+- **The 10-year Treasury yield reached 4.76% intraday, its highest level
+  against any close since 2025-01-14 — but by one basis point, and the
+  reasoning first offered for it was wrong.** The move extends a fourth
+  consecutive session of increases, past the 4.72% the morning pass
+  recorded; the 30-year moved in step to 5.25%. The reporting framing —
+  "tops 4.75% for the first time since January 2025" — **does not
+  survive a check against Treasury's own par-yield series**: the 10-year
+  already closed at exactly **4.75% on 2026-07-31**, five weeks ago and
+  the high close of this year. What holds is the *"highest since January
+  2025"* claim itself, and only because the print is 4.76%: Treasury has
+  no close at or above that level since **2025-01-14 (4.78%)**, with
+  2025's peak at **4.79% on 01-13**. **So this is a one-basis-point break
+  above a level already touched in July, not entry into new territory** —
+  a distinction that matters because the thread exists to detect whether
+  the long end is being defended, and a July retest followed by an
+  August marginal high is a different signal from a clean breakout.
+  ([US Treasury par yield curve, 2026 and 2025 series](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/daily-treasury-rates.csv/2026/all))
+  <!-- k: t=treasury-long-end-intervention,ai-buildout-debt-risk e= axis=macro interp=yes -->
+
+- **The oil shock and the Fed repricing are pushing the long end the same
+  way, not against each other.** Brent above $90 on the Hormuz fighting
+  raises the inflation path; the post-Jackson-Hole hike repricing raises
+  the policy path. Both land on the same part of the curve, which is why
+  the long end moved while equities did nothing all afternoon.
+  <!-- k: t=treasury-long-end-intervention,ai-trade-bear-turn e= axis=macro -->
+
+- **Nvidia and the semiconductor index kept outperforming the tape into
+  the afternoon**, with Nvidia +0.62% and the SOX +0.06% against a
+  −0.42% to −0.63% broad market. **This strengthens the morning's own
+  discriminator**: if Friday's chip selloff had been principally about
+  Nvidia's vendor-financing pullback, chips would be lagging on a
+  risk-off day rather than leading it. They are leading it.
+  <!-- k: t=chip-hyperscaler-rotation,ai-trade-bear-turn e=nvidia axis=capital-in-my-markets -->
+
+- 🚫 **Nothing new on the AI capital stack itself in this window** — no
+  filing, guidance change, downgrade or large debt raise dated inside it.
+  Nvidia vendor financing, the Intel rescue, North American trade policy,
+  Fed independence and Berkshire's AI stance all return the same facts
+  the map already held at 11:00 ET. Recorded as a checked negative rather
+  than omitted.
+  <!-- k: t=nvidia-vendor-financing,intel-rescue,ai-buildout-debt-risk e= axis=capital-in-my-markets -->
 
 ## ⏳ Upcoming & expected
 
@@ -185,13 +258,25 @@ Treasury's own published figures to the decimal.
   carried only because it lands directly against CENTCOM's 08-28 statement
   that the strait had been cleared.
 - 🚧 **`anthropic-public-s1-filing`, `moonshot-preipo-round` and
-  `mistral-3b-round-close` all due today and all held `pending`** — each
-  window runs to end of day. Today's negatives: no Anthropic S-1 on EDGAR
-  (now confirmed by the `sec_edgar` **collector** lane as well as by an
-  agent pass); Moonshot's confirmed close remains the July ~$3.5bn round
-  at ~$35bn, with the HKEX application company-stated for "by September
-  30"; Mistral's ~€3bn at ~€20bn still framed as "in talks" with nothing
+  `mistral-3b-round-close` all due today and all still held `pending`** —
+  each window runs to end of day, and a due date is not an outcome while
+  the window is open. Morning negatives: no Anthropic S-1 on EDGAR
+  (confirmed by the `sec_edgar` **collector** lane as well as an agent
+  pass); Moonshot's confirmed close remains the July ~$3.5bn round at
+  ~$35bn, with the HKEX application company-stated for "by September 30";
+  Mistral's ~€3bn at ~€20bn still framed as "in talks" with nothing
   fresher than 07-22/23.
+- 🕓 **All three re-checked at ~14:00 ET and all three negatives hold —
+  this is now the fourth independent check on Anthropic in one day.** The
+  afternoon EDGAR pass found the company browse for "anthropic" still
+  returning 35 entries, every one an investor SPV rather than Anthropic
+  PBC, and a full-text search for "Anthropic" on form S-1 dated today
+  returning zero. **The only same-day EDGAR document mentioning "Anthropic
+  PBC" at all is somebody else's**: a 424B3 prospectus supplement from
+  **Destiny Tech100 Inc. (DXYZ)**, a closed-end fund that holds private
+  AI-lab stakes. Mistral remains "in talks" with no newsroom announcement.
+  Moonshot has no HKEX filing, and its listing application is not due
+  until 2026-09-30.
 - 🆕 **Two new dated expectations from EO 14421's own text**:
   `doe-bulk-power-eo-implementing-rules` (**2026-12-24**) and
   `far-council-energy-procurement-recommendations` (**2027-02-22**), both
@@ -202,6 +287,21 @@ Treasury's own published figures to the decimal.
 `broadcom-q3-fy2026-earnings` (09-02), `decart-acquisition-close` (09-04).
 
 ## 🔄 Map changes
+
+- 🕓 **The afternoon pass merged 8 further timeline entries across 6
+  thread files**, additively and dry-run first. On this lens:
+  `treasury-long-end-intervention` (2 — the 4.76% print plus a
+  correction to the reasoning offered for it),
+  `chip-hyperscaler-rotation` and `ai-trade-bear-turn`.
+- 🕓 **A fourth interpretation was written to today's sidecar**
+  (`2026-08-31-global-capital.interp.yaml`), on the long-end move —
+  mechanism, `plausible` confidence, two scenarios, each carrying a real
+  precedent. That takes today's interpretation count from three to four.
+- 🕓 **Three expectation entries on this lens had their `evidence`
+  extended with a timestamped afternoon re-check** —
+  `anthropic-public-s1-filing`, `moonshot-preipo-round`,
+  `mistral-3b-round-close`. **None flipped**; every window runs to end of
+  day.
 
 - ✎ **21 timeline entries merged across 18 threads**, additively, dry-run
   first. On this lens: `red-sea-oil-shock`, `chip-hyperscaler-rotation`,

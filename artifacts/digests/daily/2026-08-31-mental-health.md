@@ -3,16 +3,19 @@ lens: mental-health
 date: 2026-08-31
 status: building
 window_start: 2026-08-31T05:00:00-04:00
-as_of: 2026-08-31T11:00:00-04:00
+as_of: 2026-08-31T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-08-31
 
-*Curated agentic-interim from ~892 buffered items, 05:00 ET → 11:00 ET
-Monday — California's constitutional adjournment day — plus the uncurated
-Sunday-evening window swept as its own scope. **Eleven dispatches**: eight
-cluster sweeps and three coverage critics finalizing 08-30.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday —
+California's constitutional adjournment day — plus the uncurated
+Sunday-evening window swept as its own scope. Built over **two runs**: a
+morning pass (eleven dispatches: eight cluster sweeps and three coverage
+critics finalizing 08-30, over ~892 buffered items) and an **afternoon
+extension at 15:00 ET (eight further cluster sweeps)** covering 11:00 →
+15:00 ET. Afternoon material is marked 🕓 below.*
 
 ## Today's throughline
 
@@ -134,6 +137,47 @@ already implicit in its own payer entries.
   substantial enough to record.
   <!-- k: t=mh-evidence-watch e= axis=clinical-trials -->
 
+## 🕓 Afternoon extension — 11:00 → 15:00 ET
+
+**Four hours from California's deadline, none of the four bills this map
+tracks has moved — and each is sitting somewhere procedurally specific
+that says more than "pending" does.** Checked against
+`leginfo.legislature.ca.gov`'s own bill-history and bill-status pages,
+not against reporting about them.
+
+| bill | what it does | where it actually sits at 15:00 ET |
+| --- | --- | --- |
+| **SB 1119** (Padilla) | children's companion-chatbot safety — annual child-safety risk assessments, real-time crisis referral | **Item 70 on today's Assembly Third Reading File.** Ordered to third reading 08-28; no vote recorded |
+| **AB 2575** (Ortega) | "Health care services: artificial intelligence" | **Failed passage 18–10 on 08-28**, reconsideration granted the same day **40–0**, re-amended, back on the second/third-reading track. Last entry 08-30 |
+| **SB 903** | bars marketing a chatbot as "therapy"; requires licensed-professional oversight | Status reads literally *"In Senate. Concurrence in Assembly amendments pending."* Assembly passed it 74–1 on 08-30 |
+| **SB 503** | (already through the Legislature) | **"Enrolled and presented to the Governor at 6 p.m."** on 08-30. No signature or veto entry |
+
+- 🕓 **AB 2575's history is the one worth reading twice.** A bill that
+  *failed* a floor vote 18–10 and then won reconsideration 40–0 on the
+  same day is not a bill drifting toward the deadline — it is one that
+  was actively rescued and re-amended to get another attempt. **That is a
+  different kind of pending from SB 1119's**, which has simply not been
+  reached on a long file yet.
+  <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans e= axis=regulation -->
+
+- 🕓 **SB 503's clock is longer than tonight and should not be read
+  against the adjournment deadline at all.** Because it was presented
+  before 09-01, the Governor's statutory window runs to **09-30**, which
+  is the date already on its ledger entry. Adjournment does not force it.
+  <!-- k: t=ai-therapy-regulatory-reckoning e= axis=regulation -->
+
+- 🕓 🚫 **The rest of this lens is genuinely empty for the window, and
+  that is stated rather than padded.** No new journal publication or
+  preprint on AI in mental-health care, digital therapeutics,
+  neuromodulation or psychedelics; no FDA clearance, warning letter or
+  advisory committee; no CMS rule or model announcement; no payer
+  decision; no big-tech health product, partnership or safety incident;
+  no new suit or settlement against a chatbot maker; nothing from a
+  Canadian regulator or provincial college. **A four-hour Monday
+  afternoon on this lens often is empty — an honest nil is more useful
+  than a manufactured item.**
+  <!-- k: t=mh-evidence-watch,bigtech-into-health,payer-ai-claim-denial e= axis=evidence -->
+
 ## ⏳ Upcoming & expected
 
 - ✅ **`ca-sb903-floor-vote` → HIT**, resolved 2026-08-30. Assembly passage
@@ -145,6 +189,18 @@ already implicit in its own payer entries.
   a floor vote tonight; flipping either to passed-silent at 11:00 ET would
   be calling an outcome before the window closed. The next run resolves
   them.
+- 🕓 **Re-checked at ~14:00 ET against the Legislature's own record: both
+  still `pending`, and both still procedurally alive.** SB 1119 is Item
+  70 on today's Assembly Third Reading File; AB 2575 is back on the floor
+  track after its 08-28 failure and same-day 40–0 reconsideration.
+  **Nothing has slipped to a later date — it simply has not happened
+  yet**, which is why neither is flipped to `passed-silent`. The votes,
+  if they come, come tonight.
+- 🕓 **`ca-sb903-floor-vote` is HIT but SB 903 is not law yet** — Senate
+  concurrence in the Assembly amendments is still pending as of 14:00 ET,
+  and only after that does it go to the Governor.
+- 🕓 ⚠️ **`meta-warner-csam-response` — no movement on the afternoon
+  re-check either**, six days past due. Still `passed-silent`.
 - 🚧 **`ca-sb503-governor-action` — advanced, not resolved.** SB 503 was
   enrolled and **presented to Governor Newsom on 08-30**, which starts his
   signing clock. It has cleared the Legislature entirely. The entry stays
@@ -166,6 +222,10 @@ already implicit in its own payer entries.
 - 🕰 **`ai-psychosis` was 22 days stale before today** and the cold
   rotation is what reached it — the rotation's stated purpose, working as
   intended rather than as a backstop.
+- 🕓 **The afternoon pass changed no map objects on this lens** — no
+  thread, entity, watchlist or expectation edit. Four expectation entries
+  had their `evidence` extended with an afternoon re-check, which records
+  a check rather than changing what the map holds.
 - 💡 **A watchlist-term proposal, NOT applied, from the coverage critic**:
   `OBBBA`, `Medicaid work requirements`, `Medicaid redetermination`, scoped
   to behavioural-health impact specifically. ⚠️ **Deliberately not offered
@@ -184,10 +244,22 @@ already implicit in its own payer entries.
 
 ## 🧵 Thread candidates
 
-**None offered on this lens today.** The one structural gap the critics
-found — OBBBA's Medicaid provisions — is deliberately held as a watchlist
-proposal rather than promoted to a candidate, for the reason given above.
-Offering it as a thread today would be padding the section.
+**One offered, on the afternoon pass.** The morning had none, and the one
+structural gap the critics found — OBBBA's Medicaid provisions — is still
+deliberately held as a watchlist proposal rather than promoted, for the
+reason given above.
+
+- 🕓 **California AB 2023** *(first offer)* — a **companion bill to SB
+  1119** in the same children's-companion-chatbot safety space, which
+  surfaced during the afternoon's deadline check. It passed the Assembly
+  on 05-26 and cleared Senate Appropriations' suspense file **6–1 on
+  08-13**, so it is riding tonight's deadline alongside the three bills
+  this map already tracks. ⚠️ **This is a candidate, not an established
+  gap** — it was found by a sweep scoped to four threads, which cannot
+  see the rest of the corpus, and it belongs to the same fight
+  `ai-therapy-regulatory-reckoning` already holds, so it may be an
+  addition to that thread's watch terms rather than a thread of its own.
+  **Track it, fold it in, or leave it?**
 
 ---
 California's legislature adjourns tonight and SB 903 is already through,
@@ -196,8 +268,12 @@ that convened after this map's last window had closed — a vote established
 from the Legislature's own roll-call because no press outlet had reported
 it. Two more bills, on children's companion chatbots and on health-care
 AI, sit unvoted with hours left, and both are held open on the ledger
-rather than called dead, because the window has not shut. The coverage
-critic found no misses and said plainly that the finding is worthless:
+rather than called dead, because the window has not shut. By three in the
+afternoon none of the four had moved: the children's chatbot bill sits
+seventieth on the Assembly's reading file for the day, and the health-care
+AI bill is on that track only because it lost its floor vote eighteen to
+ten on Friday and won reconsideration forty to nothing the same afternoon.
+The coverage critic found no misses and said plainly that the finding is worthless:
 every benchmark was dark all weekend, including the one that exists
 specifically to publish on weekends. Its real finding was that the largest
 Medicaid funding change of the year has no footprint anywhere on this

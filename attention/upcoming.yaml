@@ -274,6 +274,21 @@ expectations:
       today — so this is a live vendor channel publishing something else, not
       an unreachable one. That makes the negative stronger than the 08-30
       check, which rested on secondary sources after a DNS failure on z.ai.
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET - negative holds, plus a
+      finding about this entry's own framing. Z.AI's Hugging Face org
+      (zai-org) carries GLM-5.3 and its Flash variants with checkpoint uploads
+      hours old - a demonstrably live channel publishing something else - and
+      no GLM-5.5 model card exists on any surface checked. Chinese tech
+      coverage says Zhipu's numbering stayed on the 5.x track and that "5.5"
+      was a RUMOURED designation the company never used.
+      IMPORTANT: this does NOT mean GLM-5.3 satisfies the entry. The claim
+      here is a >1T-parameter, 1M-context model; GLM-5.3 (shipped 08-14,
+      already on this map) is 753B. So the claimed model does not exist under
+      any name yet, AND the label it was logged under appears abandoned by the
+      vendor. That argues for a claim rewrite rather than a plain
+      passed-silent when the window closes - flagged for Ben, not decided
+      here.
   - id: moonshot-preipo-round
     claim: "Moonshot opens final pre-IPO round at ~$50B valuation (HKEX listing ~6 months later)"
     due: 2026-08-31
@@ -314,6 +329,12 @@ expectations:
       08-27, and no follow-up confirms it happened. No company statement.
       The two prior incompatible sizings (~$3.5bn on a ~$35bn implied
       valuation vs. a ~$50bn pre-money) are still unreconciled.
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET - unchanged, still no confirmed
+      close and no HKEX filing; the listing application is not due until
+      2026-09-30. A sweep re-surfaced the KrAsia 08-11 report of a final close
+      targeted for 08-27 as though it were new; it is already recorded in this
+      entry's 08-30 note above and remains unconfirmed either way.
   - id: ny-s9051b-signature
     claim: "Hochul signs (or pocket-vetoes) NY S9051B under-18 companion ban + S9408A AI-toy ban"
     due: 2026-12-31   # corrected 07-23 (finalize sweep) — was 08-31 guess
@@ -792,6 +813,10 @@ expectations:
       Santander "in talks" at a ~EUR 20bn valuation; Samsung and Mistral
       both declined to comment. No signing, no close. On current evidence
       more likely to slip past 08-31 than to land on it.
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET - unchanged. Still framed as
+      "in talks"/"discussions" across every reachable source, with no Mistral
+      newsroom announcement, no term sheet and no close.
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
     due: 2026-11-04
@@ -1531,6 +1556,16 @@ expectations:
       pass (KESTREL_CONTACT_EMAIL unset) and returning HTTP 500s from
       EDGAR on the re-run — so both checks here are agent-run, not
       collector-run.
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET - negative holds, and this is
+      now the FOURTH independent check in one day. EDGAR company browse on
+      "anthropic" still returns 35 entries, every one an investor SPV rather
+      than Anthropic PBC; full-text search for "Anthropic" on form S-1 dated
+      today returns zero. The only same-day EDGAR document mentioning
+      "Anthropic PBC" at all belongs to someone else: a 424B3 prospectus
+      supplement from Destiny Tech100 Inc. (DXYZ), a closed-end fund holding
+      private AI-lab stakes. Held pending because the window runs to end of
+      day; a due date is not an outcome while the window is open.
   - id: broadcom-q3-fy2026-earnings
     claim: "Broadcom reports fiscal Q3 2026, updating the custom-ASIC co-design book this map tracks across five named majors (Google, Meta, OpenAI, Apple, ByteDance)"
     due: 2026-09-02
@@ -1672,6 +1707,14 @@ expectations:
       adjournment. (Prior state, retained: AB 2575 failed its first Senate
       floor vote 08-28, 18-10, and was saved same-day by a 40-0
       reconsideration.)
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET against leginfo's own bill
+      history and status pages: no re-vote recorded, last entry 08-30. The
+      procedural history is the substance - the bill FAILED passage 18-10 on
+      08-28, won reconsideration the same day 40-0, and was re-amended back
+      onto the second/third-reading track. That is a bill actively rescued for
+      another attempt tonight, a different kind of pending from SB 1119's
+      not-yet-reached. Held pending.
   - id: project-camellia-community-panel-0826
     claim: >
       A community panel on OpenAI's Project Camellia data-center campus
@@ -2202,6 +2245,13 @@ expectations:
       amended, ordered to third reading" (08-28); no Assembly floor vote
       posted. A floor vote plus Senate concurrence both remain before the
       08-31 adjournment.
+
+      AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET against leginfo's own bill
+      history and status pages: no floor vote recorded. The bill is Item 70 on
+      TODAY'S Assembly Third Reading File; last recorded action is 08-28
+      ("ordered to third reading"). Held pending rather than passed-silent: it
+      has not slipped to a later date, it simply has not been reached on a
+      long file with hours left before constitutional adjournment.
   - id: ca-ab1979-governor-action
     claim: >
       Governor Newsom signs or vetoes AB 1979 (Bonta) — consumer health

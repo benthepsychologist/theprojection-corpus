@@ -1,5 +1,97 @@
 # log.md — session log (newest first)
 
+## 2026-08-31 (15:00 ET) — 08-31 extended to 15:00; the flash rail's own exception was tested and failed; a correction the Federal Register forced
+
+**Afternoon extension of a day opened at 11:00 ET.** Nothing to finalize
+— 08-30 was finalized clean this morning, and 08-31 stays `building` /
+`coverage: pending` because its window is still open. Eight cluster
+sweeps over 11:00 → 15:00 ET; eight timeline entries merged additively
+across six threads by dry-run script; no entries lost.
+
+**The one question this run was pointed at, answered in the negative.**
+The morning digest wrote down the condition under which the Iran war
+would earn the flash rail: *a state not previously a belligerent entering
+it.* Jordan and the UAE were both struck Monday morning. **Neither struck
+back** — Jordan's Armed Forces (via Petra) intercepted eight missiles;
+the UAE Ministry of Defence engaged one drone over territorial waters and
+**formally denied Iran's claim that Al Minhad Air Base was hit**. The UAE
+foreign ministry reserved "its full right to respond," which is a
+reservation, not an action. **The exception was tested rather than
+assumed, and it did not fire. No flash.**
+
+**A correction the Federal Register's own API forced, on this run's own
+lead story.** The morning throughline said EO 14421 "sat unread on this
+map the entire time" for five days. The record says **signing date
+2026-08-26, publication date 2026-08-31, citation 91 FR 55995, document
+2026-17843** — so the `federal_register` collector caught the primary
+document on the first day it existed as one. **The collector was not
+late; the framing was wrong**, and it was withdrawn from the frontier-ai
+digest, the front digest and the front's closing narrative. What remains
+real is a four-day gap on the *secondary* coverage: trade press had it on
+08-27. ⚠️ Worth noting `attention/actor-doing.yaml` had it right all
+morning ("signed 08-26 and published in today's Federal Register") while
+the digest prose did not.
+
+**A real story sat in this run's own buffer and the morning curation
+missed it.** CXMT has begun small-batch production of **HBM3E** at ~25%
+yield — the first Chinese maker to produce it — with Alibaba's T-Head and
+Cambricon testing for 2027 silicon, and CXMT still assessed 3–5 years
+behind the incumbents, who are in HBM4. The `google_news_rss` lane
+collected it at **09:22 ET** (`2026-08-31T13:22:58Z`) into
+`buffer/2026-08-31-google_news_rss.jsonl`, before the 11:00 curation ran,
+and it was not routed to any thread. **Collection worked; curation did
+not.** Second such case in two days.
+
+**Six expectations due today, all six re-checked, none flipped.** Every
+window runs to end of day, and a due date is not an outcome while the
+window is open. Anthropic's S-1 got a **fourth** independent negative
+(the only same-day EDGAR document naming "Anthropic PBC" is a Destiny
+Tech100 424B3, someone else's filing). SB 1119 is **Item 70 on today's
+Assembly Third Reading File**; AB 2575 **failed 18–10 on 08-28 and won
+reconsideration 40–0 the same day** — actively rescued, a different kind
+of pending. 💡 **`glm-5-5-release` needs a decision, not a flip**: Z.AI
+never used the "5.5" label, but GLM-5.3 (753B) does not satisfy a
+>1T-parameter claim either. The entry may want a claim rewrite.
+
+**A market claim that half survived checking.** A sweep reported the
+10-year "topped 4.75% for the first time since January 2025." Treasury's
+own par-yield series says the 10-year **closed at exactly 4.75% on
+2026-07-31**, so that phrasing is wrong; the *"highest since January
+2025"* part holds only because the print is **4.76%**, above every close
+since **2025-01-14 (4.78%)**. It is a one-basis-point break over a level
+tested five weeks ago, not a breakout — recorded that way on the thread
+and in the digest, and it is the basis of the day's fourth interpretation.
+
+`readouts --apply` **4/4 on the first attempt** — the pack-provenance
+discipline held, no repair round. `--export` **154 readouts**.
+`kestrel publish --push`: 61 entity pages, 3 beat pages, **753 claim
+pages**, **980 story pages** (1,597 sources, 1,278 credibility-badged),
+122 map pages, **4 interpretations** (up from 3), one front-page audio
+file. Cloudflare build `61227957`.
+
+`graph/validate.py`: **OK — 4,324 atoms, 2,652 sources, 6,925
+relationships**, unchanged, correctly: **no day was finalized this run**,
+so the ingesters had nothing to feed. YAML guardrail clean across every
+`attention/`, `sources/` and interp file. ⚠️ One YAML edit broke
+`upcoming.yaml` mid-run and was **reverted immediately** per the
+guardrail, then redone by a method that validates before writing.
+
+**Pick up here:** **tonight is still what decides all six.** Re-run after
+California's floor session closes and after end of day for the three
+financing windows. On Nepal: the toll reached **903 dead, 4,247 missing,
+592 of them foreign nationals** — it grew between two runs of the same
+day, and this map still has nowhere to put it. **Thread candidates open:**
+Nepal-Tibet (second offer, now much stronger), Niger (second offer, Tiani
+unaccounted into a fourth day), the stablecoin perimeter, an
+alignment/safety-research beat, sovereign/public AI provision, and one new
+— **California AB 2023** (first offer, SB 1119's companion bill).
+**Standing asks, unchanged:** `gcloud auth login` for `bq` (**day
+sixteen** — `attention/world-news.yaml` still frozen at 08-25), twelve
+entity adds, and the wire-service addition to `sources/benchmarks.yaml`.
+⚠️ **New this run:** direct fetches of **reuters.com, apnews.com and
+bbc.com all failed**, so half the front-page scan ran on aggregation —
+that scan is the only instrument pointed at stories no lens would catch.
+
 ## 2026-08-21 (early) — 08-20 extended through 19:00 ET; publish adapter's stale post-migration import fixed
 
 **Picked up mid-run:** the prior session left finished 08-20 thread

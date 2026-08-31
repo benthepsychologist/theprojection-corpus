@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-08-31 — The oil/Fed-driven risk-off froze rather than deepened or reversed through the session's first four hours
+
+- **From the 11:00 ET open through a ~15:03 ET check, the S&P 500, Nasdaq, and Dow moved by less than a tenth of a percentage point each** (S&P -0.45%→-0.46%, Nasdaq -0.43%→-0.42%, Dow -0.62%→-0.63%) — the broad-market leg of this morning's risk-off has neither reversed nor accelerated, it has simply held. Brent and WTI show the same pattern (Brent $90.23 vs. a morning range of $90.7-93; WTI $85.61 vs. ~$86 this morning) — still well above Friday's ~$88/$83 close, not extending further. September Fed-hike odds are also flat on the day (CME FedWatch ~60-62%, Kalshi ~47-48%, both matching this morning's read). The one component that kept moving through the afternoon is Treasury yields, not equities or oil — see the `treasury-long-end-intervention` entry above for the 10-year's push past 4.75%. (Google Finance, tradingeconomics.com, CNBC 2026-08-31 coverage) ⟨daily 2026-08-31⟩
+
 ## 2026-08-26 (after close) — The earnings verdict this thread has been waiting for lands decisively bullish
 
 - **Nvidia's Q2 print — the catalyst this thread has tracked for weeks against Burry's short call, the 08-24 semiconductor selloff and the seven-day losing streak — beat and then guided far above what anyone was pricing.** Revenue hit $96.2B (+18% QoQ, +106% YoY) against ~$92B consensus; management gave its first-ever year-ahead growth forecast, guiding to roughly 70% annual growth versus ~44% analyst expectations, with CEO Jensen Huang saying "demand is much greater than 70%, our supply allows us to confidently deliver 70%." (Full compute-spend/pricing-passthrough detail already resolved on `ai-compute-spend` via `upcoming.yaml`'s `nvidia-q2-fy2026-earnings` entry — this thread's angle is the bear-turn verdict, not the capex mechanics.)

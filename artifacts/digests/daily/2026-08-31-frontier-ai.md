@@ -3,32 +3,47 @@ lens: frontier-ai
 date: 2026-08-31
 status: building
 window_start: 2026-08-31T05:00:00-04:00
-as_of: 2026-08-31T11:00:00-04:00
+as_of: 2026-08-31T15:00:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-08-31
 
-*Curated agentic-interim from ~892 buffered items, 05:00 ET → 11:00 ET
-Monday, plus the uncurated Sunday-evening window (08-30 15:45 ET → 05:00
-ET) swept as its own scope. **Eleven dispatches**: eight cluster sweeps
-and three coverage critics finalizing 08-30. Sources: 7 deterministic
-collector lanes (rss, sec_edgar, federal_register, clinicaltrials, gdelt,
-github, semantic_scholar) plus agent sweeps.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday, plus the
+uncurated Sunday-evening window (08-30 15:45 ET → 05:00 ET) swept as its
+own scope. Built over **two runs**: a morning pass (eleven dispatches —
+eight cluster sweeps and three coverage critics finalizing 08-30 — over
+~892 buffered items) and an **afternoon extension at 15:00 ET (eight
+further cluster sweeps)** covering 11:00 → 15:00 ET. Sources: 7
+deterministic collector lanes (rss, sec_edgar, federal_register,
+clinicaltrials, gdelt, github, semantic_scholar) plus agent sweeps.
+Afternoon material is marked 🕓 and gathered in its own section below.*
 
 ## Today's throughline
 
-**The day's largest story for this lens was signed five days ago, sat
-unread on this map the entire time, and arrived this morning through a
-collector rather than a sweep.** Executive Order 14421 declares a national
-emergency over foreign-produced grid equipment, and the equipment it names
-is the AI buildout's own shopping list — generation turbines, large and
-backup generators, substation transformers, grid-connected inverters,
-battery storage. **The order's own recitals say why**: "the rapid growth
-of advanced manufacturing, data centers, artificial intelligence, and
-defense production has increased the Nation's dependence on abundant,
-reliable electricity." The trade press that covered it on 08-27 did not
-make that connection; the order makes it about itself.
+**The day's largest story for this lens was signed five days ago and
+reached this map this morning through a collector rather than a sweep.**
+Executive Order 14421 declares a national emergency over foreign-produced
+grid equipment, and the equipment it names is the AI buildout's own
+shopping list — generation turbines, large and backup generators,
+substation transformers, grid-connected inverters, battery storage.
+**The order's own recitals say why**: "the rapid growth of advanced
+manufacturing, data centers, artificial intelligence, and defense
+production has increased the Nation's dependence on abundant, reliable
+electricity." The trade press that covered it on 08-27 did not make that
+connection; the order makes it about itself.
+
+✅ **Correction, 15:00 ET — the collector was not late, and the morning
+version of this paragraph said it was.** The order carries **signing date
+2026-08-26 and Federal Register publication date 2026-08-31**, citation
+**91 FR 55995**, document number **2026-17843** — verified this afternoon
+against the Federal Register's own API, not against reporting about it.
+The `federal_register` collector therefore caught the primary document on
+the first day it existed as a published document, which is the lane
+working exactly as designed. The morning throughline's "sat unread on this
+map the entire time" is withdrawn. **What remains a real four-day gap is
+the secondary coverage**: trade press wrote about the order on 08-27 and
+nothing on this map picked it up until the primary text published.
 
 **And the same weekend produced the other half of the same story from the
 private side.** SpaceX confirmed it is building a turbine-blade casting
@@ -212,6 +227,84 @@ was expected and did not.
   older Concord dockets. This map has not read the complaint.
   <!-- k: t=anthropic-copyright-exposure e=anthropic axis=courts -->
 
+## 🕓 Afternoon extension — 11:00 → 15:00 ET
+
+- 🕓 **CXMT has begun small-batch production of HBM3E — the high-bandwidth
+  memory Nvidia H200/Blackwell-class accelerators are built around — the
+  first time a Chinese maker has produced it at all.** The Information,
+  citing two insiders, reports Alibaba's T-Head chip-design unit and
+  Cambricon are already testing the silicon for integration into
+  commercial processors as early as 2027. **The qualifiers matter as much
+  as the fact**: yields are around **25%**; CXMT is assessed **three to
+  five years** behind Samsung, SK Hynix and Micron, who are already in
+  HBM4 mass production a full generation ahead; and CXMT's own ~$8.6bn
+  Shanghai IPO prospectus reportedly earmarked no capital specifically for
+  HBM. **Read against this morning's two CXMT items, the picture changes
+  shape.** The morning had CXMT beating incumbent gross margins (87.59%)
+  and first to mass-produce LPDDR6. This adds that the same company has
+  now entered the one memory category export controls were aimed most
+  squarely at keeping from it — at a yield that makes it a demonstration,
+  not yet a supply source.
+  ([the-decoder](https://the-decoder.com/chinas-cxmt-makes-its-first-hbm3e-chips-closing-the-ai-memory-gap/),
+  [Investing.com](https://www.investing.com/news/stock-market-news/china-memory-leader-cxmt-begins-smallbatch-production-of-hbm3e-silicon--report-4882862))
+  <!-- k: t=cxmt-memory-ipo,ai-memory-shortage,china-stack-independence e=nvidia axis=memory-and-chip-stack sev=major -->
+
+  ⚠️ **This item sat in this run's own buffer at 09:22 ET and the 11:00 ET
+  curation did not pick it up.** The `google_news_rss` lane collected it
+  (Newsquawk, timestamped `2026-08-31T13:22:58Z`) into
+  `buffer/2026-08-31-google_news_rss.jsonl` before the morning pass ran,
+  and it was not routed to any thread. **The collector was not the
+  failure — curation was.** Recorded rather than folded in silently.
+
+- 🕓 ✅ **EO 14421's publication date is confirmed from the Federal
+  Register's own API, and it exonerates the collector lane.** The order
+  carries **signing date 2026-08-26**, **publication date 2026-08-31**,
+  citation **91 FR 55995**, document number **2026-17843**. The
+  `federal_register` collector caught it on the first day it existed as a
+  published document. The morning throughline's claim that it "sat unread
+  on this map the entire time" is withdrawn — see the correction at the
+  top of this digest.
+  ([Federal Register 2026-17843](https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system))
+  <!-- k: t=ai-power-buildout,datacenter-power-grid e= axis=power-and-buildout -->
+
+- 🕓 🚫 **No implementing action on EO 14421 yet, checked rather than
+  assumed.** No DOE Request for Information, no FERC docket, no NERC
+  statement, no reaction from the named turbine and transformer suppliers
+  (GE Vernova, Siemens Energy, Mitsubishi Power) dated after 08-26. A
+  law-firm client alert states explicitly that no RFI or docket has
+  opened. The only FERC-tagged Federal Register notice in the window is
+  routine merger paperwork, unrelated to the order. **The 2026-12-24
+  rulemaking deadline is what to watch; nothing is moving toward it yet.**
+  <!-- k: t=ai-power-buildout,datacenter-power-grid e= axis=power-and-buildout -->
+
+- 🕓 **GLM-5.5 has not shipped, and the afternoon check suggests the name
+  itself may be the problem with this expectation.** Z.AI's Hugging Face
+  org (`zai-org`) carries GLM-5.3 and its Flash variants — with checkpoint
+  uploads hours old, so the channel is demonstrably live and publishing
+  something else — and no GLM-5.5 model card exists anywhere. Chinese tech
+  coverage says Zhipu's numbering stayed on the 5.x track and that "5.5"
+  was a **rumoured designation the company never used**. ⚠️ **This does
+  not mean the expectation is satisfied by GLM-5.3.** The ledger claim is
+  a **>1T-parameter, 1M-context** model; GLM-5.3, which shipped 08-14 and
+  is already on this map, is **753B**. So the honest position is that the
+  claimed model does not exist under any name yet, and the label it was
+  logged under appears to have been abandoned by the vendor.
+  <!-- k: t=china-stack-independence,kimi-distillation-fight e= axis=china -->
+
+- 🕓 🚫 **Nothing new on the buildout in this window** — no datacentre
+  site announcement, interconnection filing, PPA, local approval or
+  rejection, capex revision, nuclear agreement or large infrastructure
+  debt raise dated inside it. Everything that surfaced traces to dates
+  already on the map: Anthropic's $45bn Nscale deal (08-26), CoreWeave's
+  ~$104bn backlog (08-11 earnings), the county moratorium votes, and
+  Stargate site reporting from last year.
+  <!-- k: t=ai-compute-spend,ai-datacenter-sites,stargate-buildout,nuclear-for-ai e= axis=power-and-buildout -->
+
+- 🕓 🚫 **No other Chinese frontier release in the window either.**
+  DeepSeek, Qwen/Alibaba, MiniMax, StepFun and Baichuan all check clean;
+  the most recent is Qwen3.8-Flash on 08-26, before the window.
+  <!-- k: t=china-stack-independence e= axis=china -->
+
 ## ⏳ Upcoming & expected
 
 **One flip, six held open on their own due date, four passed-silents
@@ -224,8 +317,15 @@ re-confirmed, two new entries logged.**
   is not an outcome and every one of these windows is still open**:
   `anthropic-public-s1-filing`, `glm-5-5-release`, `moonshot-preipo-round`,
   `mistral-3b-round-close`, `ca-sb1119-assembly-floor-vote`,
-  `ca-ab2575-senate-floor-vote`. All six resolve by end of day; the next
-  run flips them.
+  `ca-ab2575-senate-floor-vote`. All six resolve by end of day.
+- 🕓 **All six re-checked at ~14:00–15:00 ET and all six negatives hold —
+  they stay `pending`, not flipped.** Four hours closer to the deadline
+  and not one has moved: no Anthropic S-1 on EDGAR (fourth independent
+  check today), no GLM-5.5 on any Z.AI surface, no Mistral or Moonshot
+  announcement, and neither California bill has taken a floor vote —
+  though both are still procedurally alive tonight, with SB 1119 sitting
+  as **Item 70 on today's Assembly Third Reading File**. **The evening
+  is what decides these, and the next run is what records it.**
 - 📈 **The Anthropic S-1 negative got a third, mechanical confirmation.**
   Today's `sec_edgar` **collector** lane ran successfully with
   `KESTREL_CONTACT_EMAIL` set — 328 items against a term list including
@@ -248,6 +348,23 @@ re-confirmed, two new entries logged.**
 `broadcom-q3-fy2026-earnings` (09-02), `decart-acquisition-close` (09-04).
 
 ## 🔄 Map changes
+
+- 🕓 **The afternoon pass merged 8 further timeline entries across 6
+  thread files**, additively and dry-run first: `cxmt-memory-ipo` (the
+  HBM3E production start), `iran-conflict-widening` (3),
+  `treasury-long-end-intervention` (2, one of them a correction),
+  `chip-hyperscaler-rotation`, `ai-trade-bear-turn` and
+  `russia-ukraine-war`. **No thread, entity or watchlist object was
+  added or changed** — the afternoon produced developments, not
+  structure.
+- 🕓 **Six expectation entries had their `evidence` extended with a
+  timestamped afternoon re-check** — the four financing/release windows
+  and the two California floor votes. **None had its `status` flipped**,
+  which is the point: all six windows run to end of day.
+- 🕓 ⚠️ **One correction applied to this digest's own throughline**, not
+  to a map object: EO 14421's Federal Register publication date is
+  2026-08-31, so the morning's claim that the order "sat unread on this
+  map the entire time" was withdrawn.
 
 - ✎ **21 timeline entries merged across 18 thread files**, additively — no
   deletions, dry-run first. Five entries whose events fall inside

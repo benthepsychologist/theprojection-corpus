@@ -188,15 +188,96 @@ actors:
       New 08-15: the one open thread item from last week's Q2 print resolved this week — Aetna's reimbursement cuts to Alma-contracted behavioral-health therapists took effect 08-15 as scheduled, after a partial July rollback that dropped the two most aggressive original proposals (collapsing the 90837/90834 codes into one rate, flattening pay across license levels). What actually landed is real and state-specific: New York therapists lose 10.6% on a 60-minute session and 9.7% on intake, New Jersey loses 15.2%/16.8% on the same codes, 30-minute sessions untouched everywhere. Neither Aetna nor Alma issued a formal announcement — confirmed instead via a practice-management blog's published rate tables. Otherwise the 08-05 Q2 standing picture holds: FY26 guidance raised (adj. EPS $7.90-8.10, revenue >=$414B), Aetna operating income up >$2B YoY behind the 2nd-gen "Aetna Claims Assist Manager" tool, 1M pharmacist hours redirected to clinical care, stock still soft on the 2027 EPS floor.
   cxmt:
     asof: '2026-08-31'
-    doing: |
-      New 08-31: stopped being a policy question and became a technology one. Q2 gross margin 87.59%, up 8.44pp from Q1's ~79% and ABOVE both Micron (84.9%) and SK Hynix (83.2%) — it is now earning incumbent margins, not entrant margins. And it has begun MASS-PRODUCING LPDDR6 ahead of Samsung and SK Hynix, reported as the first commercial LPDDR6 anywhere, shipping in Xiaomi's 18 Fold in September; Lei Jun confirmed on Weibo. A company mass-producing LPDDR5 less than a year ago is first to the next generation. Separately and not previously on this record: CXMT SUED THE US DEPARTMENT OF DEFENSE on 08-29 in Washington federal court, naming Secretary Hegseth, to get off the Section 1260H "Chinese military company" list — arguing it makes standard civilian JEDEC-spec parts, and noting DoD published a February notice indicating removal then withdrew it the same day without explanation. That matters to the passed-silent Apple/Senate deadline here: the designation it rests on is now contested in court.
-      New 08-30: the first results as a listed company, and they beat its own prospectus by roughly a third. First-half 2026 revenue RMB 150.31bn (~$22.4bn), up 873.64% year on year, and net profit attributable RMB 77.61bn against a RMB 2.33bn loss a year earlier — against pre-IPO guidance of RMB 110-120bn revenue and RMB 50-57bn profit. DDR5 alone was RMB 69.47bn, 46.3% of main-business revenue. This is the first hard supply-side number from the Chinese memory side this map has held: every prior read here measured the AI memory squeeze from the buyers (Nvidia's $279bn of forward purchase commitments, Micron's margins, Apple's price fight) and treated CXMT as a policy question about whether Apple may buy from it. Its own book says otherwise — the capacity is not waiting on a Washington decision, it is already earning at scale off the same DRAM tightness, which correspondingly weakens the leverage behind the passed-silent Senate deadline. Reported 08-28, caught 08-30; Bloomberg's page 403'd on a direct read, so this rests on SCMP and Benzinga reporting the same filed figures, agreeing to the decimal.
-      New 08-23: its closest comparator moved — YMTC's RMB 33bn (~$4.9bn) Shanghai STAR Market IPO application was formally ACCEPTED, the procedural step after Friday's report of the target. SCMP frames it as China's next mega chip listing, one that could break CXMT's own market records. The China-chip-IPO wave now has a second memory maker in it with a number attached. Separately, the Senate's 08-21 deadline for Apple to reject CXMT/YMTC memory passed in total silence from both sides and is now a settled passed-silent.
-      New 08-21: the pressure point passed without a result. The bipartisan Senate deadline for Apple to commit against sourcing CXMT/YMTC memory came due today and went silent on both sides — no Apple response, no senatorial comment. For CXMT specifically that is neither a win nor a loss: it remains a named target of US supplier pressure with no customer having publicly disavowed it, and no enforcement step taken either. The adjacent movement this week is upstream — Hua Hong, one of the three fabs named as an expected recipient of China's domestic immersion DUV scanners, joined the flagship Hang Seng index effective 09-07, putting the domestic-tool buildout into the benchmark.
-      New 08-16: no further movement — zero CXMT-specific coverage across all four lenses today; the week-close picture below stands as the week's final word, Senate deadline (08-21) still open.
-      week 2026-08-10 (/week): The week's clearest single data point for how completely the AI buildout has repriced Chinese semiconductor names — CXMT overtook Tencent as China's most valuable listed company (08-13, ~$524B vs. Tencent's ~$510B) just 17 days after its 07-27 STAR Market IPO, boosted by MSCI adding the stock to its China All Shares Index (effective 08-10). The supply-lock story that explains why CXMT can hold price held all week: Huawei/Xiaomi's high-level output lock-up, Apple's rebuffed discount push and separately-reported re-testing of CXMT chips, and the bipartisan Senate letter demanding Apple commit to never use CXMT/YMTC memory (reply due 08-21) all stand unresolved. No 08-15-specific development beyond continued no-movement on the Senate deadline. (Board note: board.yaml's `commanded_capital` market-cap figure was already corrected to ~$524B in the 08-15 board pass — this entry's own numbers below are consistent with that, no drift here.)
-      New 08-13: CXMT overtook Tencent to become China's most valuable listed company — a market cap of roughly $524B against Tencent's ~$510B (down 26%+ this year despite rising AI spending) — just 17 days after its 07-27 STAR Market IPO. MSCI's addition of the stock to its China All Shares Index (effective 08-10, via the mega-IPO exemption logged 08-09) added further momentum on top of AI-driven memory-chip demand; read across coverage as the clearest single data point yet for how completely the AI buildout has repriced Chinese semiconductor names.
-      Standing picture from 08-05→08-09, unchanged: CXMT can hold firm on price because Huawei and Xiaomi already locked up its output at high levels — it rejected Apple's push for a discounted DRAM price, while Apple is now reported testing CXMT chips again for China-market devices in tension with its earlier 'gave up' framing. The bipartisan Senate letter (Banks, Schumer, Kim, Shaheen, Crapo, Ricketts) to Apple CEO Tim Cook demanding a commitment to never use CXMT or YMTC memory chips in any product, citing both firms' place on an updated Pentagon China- military-linked list, has a reply due 08-21 — still unresolved. TSMC is reportedly sitting on ~$1B of finished A20 Pro chips it can't complete without matching DRAM. Overhangs unchanged: a possible US DoD ban and the three-year HBM deficit it's racing into.
+    doing: 'New 08-31 PM: began SMALL-BATCH PRODUCTION OF HBM3E, the high-bandwidth memory Nvidia
+      H200/Blackwell-class accelerators are built around, and is the first Chinese maker to
+      produce it at all (The Information, two insiders). Alibaba''s T-Head and Cambricon are
+      testing the silicon for commercial processors as early as 2027. The qualifiers carry the
+      meaning: yields ~25%, and CXMT is assessed three to five years behind Samsung/SK Hynix/Micron,
+      who are already in HBM4 mass production a full generation ahead. Its ~$8.6bn Shanghai
+      IPO prospectus reportedly earmarked no capital for HBM at all. Read with the margin and
+      LPDDR6 items below, the picture is a company that has entered the one memory category
+      export controls were aimed most squarely at denying it — at a yield that makes it a demonstration,
+      not a supply source.
+
+
+      New 08-31: stopped being a policy question and became a technology one. Q2 gross margin
+      87.59%, up 8.44pp from Q1''s ~79% and ABOVE both Micron (84.9%) and SK Hynix (83.2%) —
+      it is now earning incumbent margins, not entrant margins. And it has begun MASS-PRODUCING
+      LPDDR6 ahead of Samsung and SK Hynix, reported as the first commercial LPDDR6 anywhere,
+      shipping in Xiaomi''s 18 Fold in September; Lei Jun confirmed on Weibo. A company mass-producing
+      LPDDR5 less than a year ago is first to the next generation. Separately and not previously
+      on this record: CXMT SUED THE US DEPARTMENT OF DEFENSE on 08-29 in Washington federal
+      court, naming Secretary Hegseth, to get off the Section 1260H "Chinese military company"
+      list — arguing it makes standard civilian JEDEC-spec parts, and noting DoD published a
+      February notice indicating removal then withdrew it the same day without explanation.
+      That matters to the passed-silent Apple/Senate deadline here: the designation it rests
+      on is now contested in court.
+
+      New 08-30: the first results as a listed company, and they beat its own prospectus by
+      roughly a third. First-half 2026 revenue RMB 150.31bn (~$22.4bn), up 873.64% year on year,
+      and net profit attributable RMB 77.61bn against a RMB 2.33bn loss a year earlier — against
+      pre-IPO guidance of RMB 110-120bn revenue and RMB 50-57bn profit. DDR5 alone was RMB 69.47bn,
+      46.3% of main-business revenue. This is the first hard supply-side number from the Chinese
+      memory side this map has held: every prior read here measured the AI memory squeeze from
+      the buyers (Nvidia''s $279bn of forward purchase commitments, Micron''s margins, Apple''s
+      price fight) and treated CXMT as a policy question about whether Apple may buy from it.
+      Its own book says otherwise — the capacity is not waiting on a Washington decision, it
+      is already earning at scale off the same DRAM tightness, which correspondingly weakens
+      the leverage behind the passed-silent Senate deadline. Reported 08-28, caught 08-30; Bloomberg''s
+      page 403''d on a direct read, so this rests on SCMP and Benzinga reporting the same filed
+      figures, agreeing to the decimal.
+
+      New 08-23: its closest comparator moved — YMTC''s RMB 33bn (~$4.9bn) Shanghai STAR Market
+      IPO application was formally ACCEPTED, the procedural step after Friday''s report of the
+      target. SCMP frames it as China''s next mega chip listing, one that could break CXMT''s
+      own market records. The China-chip-IPO wave now has a second memory maker in it with a
+      number attached. Separately, the Senate''s 08-21 deadline for Apple to reject CXMT/YMTC
+      memory passed in total silence from both sides and is now a settled passed-silent.
+
+      New 08-21: the pressure point passed without a result. The bipartisan Senate deadline
+      for Apple to commit against sourcing CXMT/YMTC memory came due today and went silent on
+      both sides — no Apple response, no senatorial comment. For CXMT specifically that is neither
+      a win nor a loss: it remains a named target of US supplier pressure with no customer having
+      publicly disavowed it, and no enforcement step taken either. The adjacent movement this
+      week is upstream — Hua Hong, one of the three fabs named as an expected recipient of China''s
+      domestic immersion DUV scanners, joined the flagship Hang Seng index effective 09-07,
+      putting the domestic-tool buildout into the benchmark.
+
+      New 08-16: no further movement — zero CXMT-specific coverage across all four lenses today;
+      the week-close picture below stands as the week''s final word, Senate deadline (08-21)
+      still open.
+
+      week 2026-08-10 (/week): The week''s clearest single data point for how completely the
+      AI buildout has repriced Chinese semiconductor names — CXMT overtook Tencent as China''s
+      most valuable listed company (08-13, ~$524B vs. Tencent''s ~$510B) just 17 days after
+      its 07-27 STAR Market IPO, boosted by MSCI adding the stock to its China All Shares Index
+      (effective 08-10). The supply-lock story that explains why CXMT can hold price held all
+      week: Huawei/Xiaomi''s high-level output lock-up, Apple''s rebuffed discount push and
+      separately-reported re-testing of CXMT chips, and the bipartisan Senate letter demanding
+      Apple commit to never use CXMT/YMTC memory (reply due 08-21) all stand unresolved. No
+      08-15-specific development beyond continued no-movement on the Senate deadline. (Board
+      note: board.yaml''s `commanded_capital` market-cap figure was already corrected to ~$524B
+      in the 08-15 board pass — this entry''s own numbers below are consistent with that, no
+      drift here.)
+
+      New 08-13: CXMT overtook Tencent to become China''s most valuable listed company — a market
+      cap of roughly $524B against Tencent''s ~$510B (down 26%+ this year despite rising AI
+      spending) — just 17 days after its 07-27 STAR Market IPO. MSCI''s addition of the stock
+      to its China All Shares Index (effective 08-10, via the mega-IPO exemption logged 08-09)
+      added further momentum on top of AI-driven memory-chip demand; read across coverage as
+      the clearest single data point yet for how completely the AI buildout has repriced Chinese
+      semiconductor names.
+
+      Standing picture from 08-05→08-09, unchanged: CXMT can hold firm on price because Huawei
+      and Xiaomi already locked up its output at high levels — it rejected Apple''s push for
+      a discounted DRAM price, while Apple is now reported testing CXMT chips again for China-market
+      devices in tension with its earlier ''gave up'' framing. The bipartisan Senate letter
+      (Banks, Schumer, Kim, Shaheen, Crapo, Ricketts) to Apple CEO Tim Cook demanding a commitment
+      to never use CXMT or YMTC memory chips in any product, citing both firms'' place on an
+      updated Pentagon China- military-linked list, has a reply due 08-21 — still unresolved.
+      TSMC is reportedly sitting on ~$1B of finished A20 Pro chips it can''t complete without
+      matching DRAM. Overhangs unchanged: a possible US DoD ban and the three-year HBM deficit
+      it''s racing into.'
   deepseek:
     asof: '2026-08-21'
     doing: |
@@ -519,9 +600,46 @@ actors:
       Litigation is unchanged and still pending: Minnesota's preliminary- injunction hearing on the "nudify" ban (Judge Frank, No. 0:26-cv-03425) remains set for 08-19, and DOJ's 08-08 intervention in the NAACP's Clean Air Act suit over the unpermitted Southaven turbines stands as recorded. One footnote on the talent exodus: departed co-founder Igor Babuschkin's two-month-old startup River AI (personally-trainable AI agents via RL/LoRA fine-tuning, not a frontier-model competitor) raised $1.1B led by General Catalyst with Nvidia and AMD Ventures participating (08-11) — a data point on where xAI's original team is landing, not a new xAI- entity fact.
   zhipu-ai:
     asof: '2026-08-31'
-    doing: |-
-      New 08-31: GLM-5.5 still has not shipped, and today's negative is stronger than yesterday's. Neither Hugging Face nor Z.AI's own documentation carries it — while the company is demonstrably publishing this morning, shipping GLM-5.3-Flash updates. So this is a live vendor channel shipping something else, not an unreachable one; yesterday's check rested on secondary sources after a DNS failure on z.ai. The `glm-5-5-release` expectation is due today and is held pending until the window closes.
-      New 08-15→08-16: still quiet — both days' only Zhipu/GLM mentions are explicit cross-references back to the 08-14 GLM-5.3 launch already captured below (08-16's TLDR AI Monday-lead item is confirmed weekday-publication lag on the same 08-14 story, not a new event). No movement yet on the ~08-28 Hugging Face weight release or the pending, later GLM-5.5 (due 08-31). Standing picture below holds.
-      New 08-14 (the only substantive development found across the full ~3-week gap since 07-24): Zhipu, operating as Z.ai, launched its flagship GLM-5.3, claiming it edges out Anthropic's restricted-access Claude Mythos 5 on the CyberGym cybersecurity benchmark (84.5% vs. 83.8%) while trailing badly on ExploitBench (54.4% vs. 78%). Runs on the same 743B-parameter MoE base as GLM-5.2 (~40B active parameters/token). Notably, Zhipu is holding the weights back from Hugging Face until roughly 08-28 for its own safety review, with the most sensitive cybersecurity functions gated behind a "trusted access" program for verified users — the first time a Chinese open-weight lab has voluntarily gated a release this way, mirroring the access controls Anthropic itself uses for Mythos. Distinct from the still-pending, later GLM-5.5 release (also due 08-31) — not a flip of that entry. Standing picture unchanged: the 1GW all-domestic-chip training site (Z.AI) and the GLM line remain the clearest proof China can train at frontier scale without Nvidia; GLM-5.2 was the model Hugging Face used to investigate OpenAI's containment breach.
+    doing: 'New 08-31 PM: the afternoon re-check holds the GLM-5.5 negative and adds a finding
+      about the expectation''s own framing. The zai-org Hugging Face org carries GLM-5.3 and
+      its Flash variants with checkpoint uploads hours old, and no GLM-5.5 model card exists
+      anywhere checked; Chinese coverage says the numbering stayed on the 5.x track and that
+      "5.5" was a rumoured designation Zhipu never used. This does NOT mean GLM-5.3 satisfies
+      the expectation: the claim is a >1T-parameter, 1M-context model and GLM-5.3 is 753B. So
+      the claimed model does not exist under any name, and the label it was logged under appears
+      abandoned by the vendor.
 
-      New 08-26: confirmed it built "Ox Alpha," the stealth reasoning/coding model released uncredited over the previous weekend that had climbed past DeepSeek to top OpenRouter usage, and said it would open the weights the same night. Anonymity was the launch tactic: the model earned its leaderboard position with no national label attached, and the label arrived only once the position was unarguable.
+
+      New 08-31: GLM-5.5 still has not shipped, and today''s negative is stronger than yesterday''s.
+      Neither Hugging Face nor Z.AI''s own documentation carries it — while the company is demonstrably
+      publishing this morning, shipping GLM-5.3-Flash updates. So this is a live vendor channel
+      shipping something else, not an unreachable one; yesterday''s check rested on secondary
+      sources after a DNS failure on z.ai. The `glm-5-5-release` expectation is due today and
+      is held pending until the window closes.
+
+      New 08-15→08-16: still quiet — both days'' only Zhipu/GLM mentions are explicit cross-references
+      back to the 08-14 GLM-5.3 launch already captured below (08-16''s TLDR AI Monday-lead
+      item is confirmed weekday-publication lag on the same 08-14 story, not a new event). No
+      movement yet on the ~08-28 Hugging Face weight release or the pending, later GLM-5.5 (due
+      08-31). Standing picture below holds.
+
+      New 08-14 (the only substantive development found across the full ~3-week gap since 07-24):
+      Zhipu, operating as Z.ai, launched its flagship GLM-5.3, claiming it edges out Anthropic''s
+      restricted-access Claude Mythos 5 on the CyberGym cybersecurity benchmark (84.5% vs. 83.8%)
+      while trailing badly on ExploitBench (54.4% vs. 78%). Runs on the same 743B-parameter
+      MoE base as GLM-5.2 (~40B active parameters/token). Notably, Zhipu is holding the weights
+      back from Hugging Face until roughly 08-28 for its own safety review, with the most sensitive
+      cybersecurity functions gated behind a "trusted access" program for verified users — the
+      first time a Chinese open-weight lab has voluntarily gated a release this way, mirroring
+      the access controls Anthropic itself uses for Mythos. Distinct from the still-pending,
+      later GLM-5.5 release (also due 08-31) — not a flip of that entry. Standing picture unchanged:
+      the 1GW all-domestic-chip training site (Z.AI) and the GLM line remain the clearest proof
+      China can train at frontier scale without Nvidia; GLM-5.2 was the model Hugging Face used
+      to investigate OpenAI''s containment breach.
+
+
+      New 08-26: confirmed it built "Ox Alpha," the stealth reasoning/coding model released
+      uncredited over the previous weekend that had climbed past DeepSeek to top OpenRouter
+      usage, and said it would open the weights the same night. Anonymity was the launch tactic:
+      the model earned its leaderboard position with no national label attached, and the label
+      arrived only once the position was unarguable.'
