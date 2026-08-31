@@ -7194,3 +7194,161 @@ Nepal-Tibet strand, the West Bank strand on its third and final offer, and
 now `niger-mutiny`. Standing blockers unchanged: `gcloud auth login` for
 `bq` (day fifteen — `attention/world-news.yaml` frozen at 08-25, its
 candidate titles null), and whether to persist `KESTREL_CONTACT_EMAIL`.
+
+---
+
+## 2026-08-31 ~11:00 ET (Monday) — /daily
+
+**Finalized 08-30 in full, opened 08-31, and the day's lead story came in
+through a collector while nine sweeps looked elsewhere.**
+
+### The run
+
+Eleven agent dispatches: eight cluster sweeps (AI capex/financing, China
+and semis, labs/governance/IPOs, MH regulation, MH payers/evidence, global
+capital, world news + front-page scan, cold rotation over the 13 stalest
+threads), then three coverage critics finalizing 08-30 as slots freed
+against the 8-agent concurrency cap. Four more sonnet agents wrote the
+site briefings. Collectors ran first and returned **892 items across seven
+lanes** (rss 242, sec_edgar 328, clinicaltrials 215, federal_register 34,
+github 13, semantic_scholar 56, gdelt 4).
+
+**Sweeps staged to `buffer/sweeps/2026-08-31/` under a shared BRIEF.md;
+the merge was additive and dry-run first — 21 entries across 18 thread
+files, 87 insertions, zero deletions.** `last_seen` was bumped on those 18
+threads to **each thread's own newest entry date**, not to today, so a
+late catch dated 08-17 does not read as a thread that moved this morning.
+
+### The finding of the day
+
+**EO 14421 — the bulk-power national-emergency order — was signed 08-26,
+filed 08-28, covered by Utility Dive on 08-27, and had ZERO hits across
+`artifacts/` and `attention/` this morning.** Eight cluster sweeps and a
+cold rotation had already run over the same window. What caught it was the
+`federal_register` collector lane returning the document on its
+publication day. **The deterministic plumbing beat the agents on the
+day's lead story**, because the Federal Register publishes on a schedule
+while a sweep looks where it is told to look. Verified against the FR's
+own API and raw text, not against coverage — which also surfaced that a
+WebSearch summary gave the EO number as **14420** when the FR's API and
+printed text both say **14421**.
+
+Two dated expectations were logged straight out of the order's own text
+(`doe-bulk-power-eo-implementing-rules`, due 2026-12-24;
+`far-council-energy-procurement-recommendations`, due 2027-02-22), both
+`confidence: confirmed` because the deadlines are IN the order rather than
+reported about it.
+
+A second collector catch: **OpenAI's $1bn ad run-rate post**, which no
+sweep was scoped to because it is a business-model story, not a model,
+policy or legal one.
+
+### Ledger
+
+One flip — **`ca-sb903-floor-vote` → HIT** (Assembly 74-1 on Sunday
+evening, taken from the Legislature's own roll-call; no press outlet had
+reported it as of this morning). **Six due today were deliberately held
+`pending`** because their windows run to end of day and a due date is not
+an outcome: the Anthropic S-1, GLM-5.5, Moonshot, Mistral, SB 1119, AB
+2575. Four passed-silents re-confirmed with fresh checks. Two new entries.
+79 expectations total.
+
+### Friction, in operation
+
+- ⚠️ **`federalregister.gov` HTML pages 302-redirect to
+  `unblock.federalregister.gov` and cannot be read by direct fetch.** The
+  **JSON API** (`/api/v1/documents/<docnum>.json`) and the **raw-text
+  endpoint** (`/documents/full_text/text/<yyyy>/<mm>/<dd>/<docnum>.txt`)
+  both work fine via curl with a descriptive User-Agent, and return the
+  authoritative signing date, EO number and operative text. Use those.
+- ⚠️ **`readouts --apply` rejects any url not in that scope's own pack** —
+  "looks fabricated" — including correct, real source URLs taken from the
+  digest, if the pack didn't carry them. All four packs skipped on the
+  first apply. Repaired by matching each bullet back to its pack item and
+  substituting the pack's own url; link coverage after repair: **front
+  88%, AI 100%, global capital 90%, mental health 83%.**
+- ⚠️ **The absolute `https://theprojection.org/threads/<slug>/` form was
+  REJECTED where the relative `/threads/<slug>/` form for the same slug
+  was accepted.** Two AI bullets failed on this and applied immediately
+  once converted. Worth knowing before writing thread links by hand.
+- ⚠️ **A 50-character bold-lead slug COLLIDED across two lenses and an
+  interpretation silently did not render.** The frontier-AI and
+  global-capital digests both opened a bullet "OpenAI disclosed a $1bn
+  annualized run rate for ChatGPT Ads in under 200 days…" — identical for
+  the first 50 chars, so identical interp keys. Published 2 of 3
+  interpretations with no error. Fixed by rewriting the global-capital
+  bold lead to diverge inside the first 50 characters, then republishing:
+  3 of 3. **Nothing warns about this; the count was the only signal.**
+- ⚠️ **The front-page briefing agent's report did not match its
+  artifact.** It reported leading with the executive order; the file it
+  wrote led with Niger, Iceland and the Cursor cutoff — all 08-30 — and
+  carried a stale claim that SB 903 was still "one Assembly floor vote
+  from passage" after it had passed. **Rewritten by hand in the main
+  session.** The other three packs were accurate.
+- ⚠️ **Six bold leads had to be rewritten because they described this
+  map's own record rather than the world** — "was deliberately NOT
+  recorded", "appears to be absent from this record", "`clinicaltrials`
+  returned 215 records in today's collector run". `readouts --pack`
+  extracts the bold lead verbatim into public site copy, so those would
+  have shipped. Caught by scanning the bold leads specifically, not by any
+  tool.
+- ✅ **`sec_edgar` worked again** with `KESTREL_CONTACT_EMAIL` set (328
+  items), resolving the 08-30 note that it was returning HTTP 500s on
+  every term — and giving the Anthropic S-1 negative its first
+  COLLECTOR-produced confirmation rather than an agent-produced one.
+- ✅ **The Niger over-claim did not repeat.** An AI search summary asserted
+  Tiani had made "a rare public appearance"; the sweep could not verify it
+  against any article fetched directly and did not record it. Separately,
+  three stale-2025 stories (a 44-state AG letter, a Texas AG investigation,
+  an FTC 6(b) inquiry) were caught only by fetching primary sources —
+  **the search tool's own summaries mislabelled their dates as 2026.**
+
+- ⚠️ **Operator error worth recording: a `cd` into the site repo persisted
+  across Bash calls and this log entry was first appended to
+  `/workspace/theprojection-site/log.md`.** Caught by a line count that
+  read 150 instead of ~7,200. Moved to the right repo and the stray file
+  removed; the site repo's tree is clean. **The shell's working directory
+  survives between calls — use absolute paths for writes, or the write
+  lands in whatever repo the last `cd` chose.**
+
+### Published and closed
+
+`readouts --apply` **4/4 after repair**, `--export` **154 readouts**.
+`kestrel publish --push`: 61 entity pages, 3 beat pages, **753 claim
+pages**, **976 story pages** (1,592 sources, 1,274 credibility-badged),
+122 map pages, `data/readouts.json` at 154, one front-page audio file.
+Cloudflare builds `495f8d2c` then `7eed1621` (the interpretation fix).
+
+⚠️ **`data/interpretations.json` fell from 10 to 3 and that is NOT a
+regression** — the weekly payload resets on Monday, and 08-31 is the first
+day of a new week. Stated because the count looks alarming out of context.
+
+Graph fed after the finalize: `07_digest_bullets` (44 new S1 claims),
+`06_timelines` (27 new S2, 562 bumped), `03_expectations`,
+`09_critic_annotations`. `graph/validate.py`: **OK — 4,324 atoms, 2,652
+sources, 6,925 relationships, 1,074 annotations, 112 extraction_passes**,
+all references resolve. YAML guardrail clean across every `attention/`,
+`sources/` and interp file.
+
+Publish staleness check ran: **`content/about.md` and the site README are
+accurate** — both correctly describe publishing as default-on and not
+hand-gated. No drift to fix.
+
+**Pick up here:** **tonight decides six of them.** SB 1119 and AB 2575
+live or die at California's adjournment; the Anthropic S-1, GLM-5.5,
+Moonshot's round and Mistral's round all close their windows at end of
+day. Every one is currently a clean, checked negative held `pending`. On
+Iran: watch whether Jordan or the UAE respond in their own right — that
+would be a genuinely new event and would clear the flash bar the
+escalation itself did not. **Four thread candidates are open**:
+`stablecoin-policy-perimeter` (second offer, now with a 12-bank WSJ-
+reported consortium and two GENIUS Act dates behind it), Niger (second
+offer, head of state unaccounted for three days), the Nepal-Tibet strand
+(second offer), and two new ones — an alignment/safety-research beat and
+sovereign/public AI provision. The West Bank strand **dropped today**
+unanswered on its third offer. **Standing asks, unchanged and now
+sharper:** `gcloud auth login` for `bq` (day fifteen —
+`attention/world-news.yaml` frozen at 08-25), twelve entity adds still not
+made, and **the wire-service addition to `sources/benchmarks.yaml`, which
+now has its argument** and is the fifth documented miss it would have
+caught.

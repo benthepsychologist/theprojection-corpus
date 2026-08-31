@@ -10,6 +10,10 @@ opened: 2026-08-04
 
 *Watch:* The policy fight the Ceuta mass-crossing set off — deliberately the POLICY thread, not the incident. Track whether the suspension camp grows beyond two states, whether any formal Schengen mechanism is actually triggered rather than threatened, what the October summit is being set up to decide, and whether a Morocco-returns arrangement materialises.
 
+## 2026-08-31 — Italy extends its Schengen suspension against Spain another 15 days
+
+- **Italy's Interior Ministry extended its border-check suspension against Spain by 15 more days on 08-31**, just as the original checks (imposed 07-31) were due to lapse. Interior Minister Matteo Piantedosi said "the situation in Ceuta is anything but improved," citing 5,000-10,000 irregular migrants still in the enclave, and said the checks target only third-country nationals with "no desire for a clash with Madrid." Spain's Foreign Minister Manuel Albares called the extension "an unjustified and unjustifiable affront to the dignity of Spaniards" and suggested electoral motivations. This answers the thread's own watch question about whether the threatened mechanism actually persists rather than fading after the initial crisis window — it does, at least for now, though it remains a unilateral Italian measure, not an EU-level Schengen action. ([Euronews](https://www.euronews.com/my-europe/2026/08/31/italy-keeps-schengen-suspension-with-spain-in-place-for-further-15-days-over-ceuta-tension)) ⟨daily 2026-08-31⟩
+
 ## 2026-08-16 — Morocco breaks up a second attempted mass crossing into Ceuta; Spain surges ~1,600 officers as the original death toll diverges sharply across outlets
 
 - **Moroccan security forces broke up a second attempted mass crossing

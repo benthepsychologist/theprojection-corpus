@@ -1,10 +1,11 @@
 ---
 lens: mental-health
 date: 2026-08-30
-status: building
+status: final
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T15:45:00-04:00
-coverage: pending
+coverage: done
+window_end: 2026-08-31T05:00:00-04:00
+finalized: 2026-08-31T10:15:00-04:00
 ---
 
 # Mental Health — 2026-08-30
@@ -170,6 +171,35 @@ Arkansas man over alleged misuse of Grok.
   of a federal mechanism to carry it; this is that mechanism opening.
   Dated 08-18, caught by the cold rotation.
   <!-- k: t=mh-evidence-infrastructure,mh-evidence-watch e= axis=regulation-and-legislation -->
+
+- 🕰 **SB 903 passed the California Assembly 74-1 on Sunday evening, and
+  is now one procedural step from the Governor's desk.** The bill — which
+  bars marketing a chatbot as "therapy" and requires licensed-professional
+  oversight of AI used in mental-health support — was read a third time
+  and passed **74 ayes to 1 no (DeMaio), 4 not voting**, in the session
+  that reconvened at 17:00 ET, after this digest's own window had closed.
+  Its record now reads "In Senate. Concurrence in Assembly amendments
+  pending." **This is the first of the three AI-in-care bills this map has
+  been tracking against the adjournment deadline to actually clear a
+  chamber**, and it resolves the `ca-sb903-floor-vote` expectation as a
+  hit. ⚠️ Established directly from the Legislature's own roll-call and
+  bill-history records: as of the 08-31 finalize, **no press outlet had
+  reported the vote at all.**
+  ([Assembly roll call, leginfo](https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB903),
+  [SB 903 history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903))
+  <!-- k: t=state-therapy-chatbot-bans,ai-therapy-regulatory-reckoning e= axis=regulation-and-legislation -->
+
+- 🕰 **SB 503 was enrolled and presented to Governor Newsom on 08-30,
+  starting his signing clock.** The bill requires developers and deployers
+  of clinical-decision-support AI to test for biased impact every three
+  years and to publish an intended-use and known-risk statement; the
+  Senate concurred in the Assembly's amendments 39-0 on 08-25. Presentment
+  means it has cleared the Legislature entirely — **what remains is a
+  signature or a veto, not another vote.** The `ca-sb503-governor-action`
+  expectation stays pending on its 09-30 due date, because presentment is
+  not the outcome it tracks.
+  ([SB 503 history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB503))
+  <!-- k: t=payer-ai-claim-denial e= axis=regulation-and-legislation -->
 
 ## Courts & accountability
 
@@ -340,6 +370,57 @@ drew no answer; per the rule it **leaves the pool today**, and is noted
 here because Kaiser and Rogers Behavioral Health both remain live on
 `kaiser-ai-clinician-backlash` without a home for the cross-provider
 pattern.
+
+## 🔍 Coverage critic — 2026-08-30 (finalize pass, 2026-08-31)
+
+**No misses, and this is the weakest null result this lens has recorded —
+weaker than 08-29's, which already called itself weak.** All four daily
+benchmarks were genuinely dark across the whole 08-29/08-30 weekend, each
+established from the outlet's own feed timestamps rather than from an
+absent response.
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| STAT Health Tech | dark | the one benchmark that normally publishes across weekends — it did not this weekend, confirmed on the correct feed (`statnews.com/topic/health-tech/feed/`, not the signup-page redirect) |
+| Behavioral Health Business | dark | own feed timestamps |
+| Fierce Healthcare | dark | own feed timestamps |
+| MobiHealthNews | dark | own feed timestamps |
+| Psychiatric Services | ⛔ blocked | still hard-blocked by a Cloudflare challenge that survives a Googlebot UA, and still not tracked in `sources/benchmarks.yaml` at all |
+
+**Why that table means less than it looks like it means:** STAT Health
+Tech is in this set specifically because it publishes on weekends — it is
+the benchmark that gives a Sunday check its teeth. It was silent this
+particular weekend, so the teeth were not there. The clean scorecard is
+an absence of signal, not a pass.
+
+**We had, they didn't — and by a wide margin.** No press outlet had
+covered the 08-30 California floor action at all as of this pass. This
+digest's bill-by-bill detail on SB 903, SB 1119, AB 2575 and SB 503 comes
+straight from the Legislature's own roll-call and history records, which
+puts this map ahead of both the trade and the general press on the story
+this lens most cares about this week.
+
+**The one real finding is structural, and it is the second of its kind in
+three days.** **OBBBA's Medicaid provisions have zero footprint anywhere
+on this lens** — `grep -rli "obbba|one big beautiful|work requirement"`
+across `attention/` and the recent digests returns nothing. That matters
+because this digest carries a live Medicaid item on the very same axis:
+the OIG parity-audit lead in "Payers, providers & the money," describing
+managed-care organisations failing parity comparability. OBBBA
+restructures Medicaid eligibility around work requirements and six-month
+redeterminations, exempting behavioural-health and SUD services from new
+cost-sharing but not from the coverage churn the redeterminations will
+cause. **It is the macro condition several of this lens's payer entries
+already sit inside without naming it** — the same shape as the Jackson
+Hole/stablecoin gap found on the capital side two days ago. The
+work-requirement mandate itself takes effect **2027-01-01**, so this is
+not a missed date; it is a missing frame.
+
+⚠️ Carried as a **watchlist-term proposal, not a thread**, on the
+critic's own reasoning: a thread opened on a statutory provision with no
+dated finding behind it would be an empty container. A state
+implementation timeline, a named provider's exposure estimate, or the CMS
+interim final rule's comment-close date would each be a real seed.
 
 ---
 France's under-15 social-media ban was struck down as unconstitutional on

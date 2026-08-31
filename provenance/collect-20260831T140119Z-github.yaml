@@ -1,0 +1,59 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-08-30T14:01:06Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-08-31T14:01:19Z'
+items:
+- id: gh-release-379695793
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10717
+  ts: '2026-08-31T11:19:36Z'
+- id: gh-release-379661298
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10715
+  ts: '2026-08-31T10:11:27Z'
+- id: gh-release-379644644
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10714
+  ts: '2026-08-31T09:40:03Z'
+- id: gh-release-379616941
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10713
+  ts: '2026-08-31T08:49:45Z'
+- id: gh-release-379532230
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10712
+  ts: '2026-08-31T05:39:28Z'
+- id: gh-release-379515000
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10711
+  ts: '2026-08-31T04:45:31Z'
+- id: gh-release-379507731
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10710
+  ts: '2026-08-31T04:18:56Z'
+- id: gh-release-379493599
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10709
+  ts: '2026-08-31T03:48:13Z'
+- id: gh-release-379487532
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10708
+  ts: '2026-08-31T03:25:36Z'
+- id: gh-release-379481687
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10707
+  ts: '2026-08-31T03:03:24Z'
+- id: gh-release-379487281
+  url: https://github.com/NVIDIA/TensorRT-LLM/releases/tag/v1.3.0rc25
+  ts: '2026-08-31T03:24:43Z'
+- id: gh-release-379468309
+  url: https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.6
+  ts: '2026-08-31T02:12:53Z'
+- id: gh-release-379453245
+  url: https://github.com/openai/codex/releases/tag/rust-v0.152.0-alpha.5
+  ts: '2026-08-31T01:11:03Z'

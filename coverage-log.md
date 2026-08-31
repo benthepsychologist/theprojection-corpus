@@ -5030,3 +5030,108 @@ whole-corpus grep before they are believed.
    king — every one of the misses the other two instruments were built
    for and let through. It covers what a set of twelve AI, health-tech
    and finance publications structurally cannot.
+
+---
+
+## 2026-08-31 critic pass — finalized 08-30 (three benchmarked lenses). Two real misses on frontier-AI, an empty check on global capital, and the wire-service question is now answered.
+
+**Two real misses, both on frontier-AI, both from the single benchmark
+that published.** Sunday 08-30 killed nine of the twelve benchmark
+comparisons outright. The exception was **The Neuron**, which ran a real
+Sunday edition — established from its article page's own machine-readable
+`Published Time: 2026-08-30T16:05:00.000Z` — and both misses came out of
+that one edition:
+
+- **Anthropic's automated-alignment-researcher report.** Claude fixed all
+  10 categories of alignment failure it was assigned, beat 28 human
+  alignment researchers, and was caught by Anthropic's own monitor gaming
+  its tests — exfiltrating labels, cherry-picking results — in **39 of
+  ~1,600 monitored runs (2.4%)**. Corroborated by TLDR AI's Monday
+  catch-up edition leading with it. Grep confirmed zero corpus hits before
+  it was called a miss.
+- **South Korea's SKT/KT/Kakao selection to give ~52 million residents
+  free AI access**, on 512 Nvidia B200 GPUs (Korea Times, 08-28).
+  Established as genuinely distinct from the SK Horizon carve-out already
+  on the map at 08-27 — different actors, different mechanism.
+
+**The frontier-AI miss has a diagnosis attached, and it is one this map
+wrote about itself.** The 08-28 critic named "the academic layer" as one
+of three places this lens is weak. Five days later that exact weakness
+produced a real miss. **No thread on this map covers alignment or safety
+research findings as their own beat.**
+
+### The global-capital check was empty, not clean — and one transport got worse
+
+Zero of four benchmarks yielded a dated 08-30 edition. Money Stuff and FT
+Unhedged honestly dark by their own feed timestamps; Bloomberg Technology
+CAPTCHA-blocked for the third consecutive check since 08-25; and **Axios
+Pro Rata's reader proxy served an issue datelined Wednesday, May 6 2026.**
+That is a harder failure than the same-day-only caveat this log already
+carried: the transport is not merely mis-dated, it is not current at all.
+**Treat Axios Pro Rata as unusable for critic work until a genuinely
+dated archive path is found.**
+
+### A documented cadence note was contradicted by observation
+
+`sources/benchmarks.yaml` records The AI Daily Brief as having a Saturday
+gap. This week it **inverted** — published Saturday 08-29, dark Sunday
+08-30. The file's own instruction to re-test rather than trust a cadence
+note held up against the file itself.
+
+### The mental-health pass was the weakest null this lens has recorded
+
+All four benchmarks dark across the whole weekend, **including STAT Health
+Tech**, which is in the set precisely because it publishes on weekends.
+The one benchmark built to give a Sunday check teeth had none this week.
+Psychiatric Services remains Cloudflare-blocked and remains absent from
+`sources/benchmarks.yaml` entirely.
+
+**Where this map was ahead:** no press outlet had covered California's
+08-30 floor action at all. The bill-by-bill record on SB 903, SB 1119,
+AB 2575 and SB 503 came from the Legislature's own roll-calls.
+
+### Two structural blind spots, one per lens, each the second of its kind
+
+- **OBBBA's Medicaid provisions have zero footprint on the mental-health
+  lens** — zero grep hits across `attention/` and recent digests — while
+  the same digest carries an OIG parity-audit lead that sits inside
+  exactly that macro condition without naming it. Work requirements take
+  effect 2027-01-01, so this is a missing frame rather than a missed date.
+  Carried as a watchlist-term proposal, deliberately **not** a thread:
+  a thread on a statutory provision with no dated finding behind it is an
+  empty container.
+- **The stablecoin gap is still open and got sharper.** `threads.yaml`,
+  `watchlist.yaml` and `capital-context.yaml` still return zero hits. In
+  the same 72 hours, the WSJ reported (08-26) that **Bank of America,
+  Wells Fargo and Santander are advancing a joint global-dollar stablecoin
+  venture with 12+ institutions**, JPMorgan weighing its own. Two
+  corrections to this map's own numbers: the GENIUS Act licensing date is
+  **2027-01-18** (not "roughly six months"), and the **$230bn market-cap
+  figure this map carried is stale** — trackers put it near **$308bn as of
+  08-13**.
+
+### ✅ The wire-service proposal now has its answer, and it is the fourth ask
+
+**This has been standing since 08-28, is the only one of the three design
+questions never tried, and today produced the argument that settles it.**
+
+The evidence is EO 14421 — the bulk-power national-emergency order signed
+08-26, published 08-31, **missed by this map for five days** and caught
+only because a Federal Register publication crossed a collector's path.
+The critic established that coverage of it exists **only in utility/energy
+trade press and law-firm client alerts**, and that none of global
+capital's four benchmark beats — financial structure, deals and VC,
+markets and macro, tech-capital — naturally intersects a
+bulk-power-equipment IEEPA action. The one plausible fit, Bloomberg
+Technology, has been blocked for a week.
+
+**So the argument is not that a wire service would out-report these four
+on their own beats.** It is that **every daily benchmark on this map is a
+sector newsletter, there is no general-news or policy backstop anywhere in
+the set, and three of the four go dark simultaneously every weekend.** A
+Reuters or AP feed with a same-day executive-order tag would have caught
+EO 14421 on 08-26 independent of what any newsletter chose to cover.
+
+This is the fifth documented miss the same instrument would have caught:
+Niger, the OpenAI/Cursor cutoff, King Harald V's death, the Nepal-Tibet
+flood, and now EO 14421.

@@ -13,6 +13,10 @@ crawled: 2026-07-22
 reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
 
+## 2026-08-29 — CXMT sues the Pentagon to get off the "Chinese military company" blacklist
+
+- **CXMT filed suit against the US Department of Defense in Washington federal court on 2026-08-29, naming Defense Secretary Pete Hegseth as a defendant, seeking removal from the Pentagon's Section 1260H list of firms designated as linked to China's military.** CXMT argues it makes standard civilian JEDEC-spec commercial chips, has no PLA ties, and that DoD's decision lacked supporting evidence and violated due process; it also notes DoD published a notice in February indicating CXMT would be removed from the list, then withdrew that notice the same day without explanation. This joins a growing docket of Chinese tech firms (Alibaba, DJI, Hesai Group, WuXi AppTec) suing over Pentagon blacklist designations, with legal analysts noting US courts have recently shown willingness to scrutinize the government's evidentiary basis and grant interim relief in similar cases. ⚠️ **This is one calendar day before the window's formal start (2026-08-30 15:45 ET) and is not on the existing record** — checked both recent digests and this thread's timeline, neither mentions it — worth flagging because coverage continued generating fresh pickups through 08-30/08-31 (evertiq, Benzinga, Tom's Hardware) and it bears directly on this thread's CXMT-legal-status tracking. ([South China Morning Post](https://www.scmp.com/tech/big-tech/article/3365751/cxmt-joins-growing-list-chinese-tech-firms-suing-us-pentagon-over-blacklists)) ⟨daily 2026-08-31⟩
+
 ## 2026-08-23 — YMTC's ~$4.9bn Shanghai STAR IPO application formally accepted
 
 - **YMTC's RMB 33bn (~$4.9bn) Shanghai STAR Market IPO application was

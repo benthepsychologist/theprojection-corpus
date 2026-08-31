@@ -1,10 +1,11 @@
 ---
 lens: world-news
 date: 2026-08-30
-status: building
+status: final
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T15:45:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
+window_end: 2026-08-31T05:00:00-04:00
+finalized: 2026-08-31T10:15:00-04:00
 ---
 
 # World News — 2026-08-30
@@ -204,6 +205,23 @@ the catch**, per the late-catch rule.
   of the target is not independently verified.
   ([Haaretz](https://www.haaretz.com/israel-news/israel-security/2026-08-30/ty-article-live/.premium/idf-says-it-targeted-a-hamas-military-wing-commander-in-gaza-strip/000001a0-4f54-d649-a7be-df769da60000))
   <!-- k: t=gaza-war e= axis=conflicts -->
+
+- 🕰 **US forces struck Iranian rocket launchers on Larak Island late on
+  08-30 — the first known American strike on Iran in roughly a month.**
+  CENTCOM said the IRGC had been observed preparing to fire rockets
+  carrying naval mines into the Strait of Hormuz shipping lane; the site
+  overlooks the lanes near Bandar Abbas. Iran's Revolutionary Guards
+  acknowledged killed and wounded at the site without giving a number, and
+  vowed to respond. **This breaks the de-escalation framing this map has
+  carried since the 08-01 strike-cancellation announcement** — a state
+  that was already flagged here as asserted by one side and denied by the
+  other. It also lands directly against CENTCOM's own 08-28 statement that
+  the strait had been cleared and declared open. Dated 08-30, caught on
+  the 08-31 finalize; Iran's retaliation against bases in Jordan and the
+  UAE falls in digest-day 08-31 and is carried there.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/8/30/us-strikes-irans-lark-island-in-first-attack-in-weeks),
+  [NPR](https://www.npr.org/2026/08/31/g-s1-141175/attacks-flare-us-iran))
+  <!-- k: t=iran-conflict-widening,red-sea-oil-shock e= axis=conflicts -->
 
 ## Elsewhere on the front pages
 

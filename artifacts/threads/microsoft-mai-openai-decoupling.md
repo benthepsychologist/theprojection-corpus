@@ -12,6 +12,10 @@ opened: 2026-06-28
 MSFT–OpenAI commercial terms; genuine independence vs. hedge (Microsoft
 still holds ~27%/$135B of OpenAI and embeds Claude in Copilot).
 
+## 2026-08-27 — Microsoft's superintelligence lead publicly frames the unit's direction as AI self-sufficiency (single-sourced)
+
+- **Ali Farhadi, the executive Microsoft installed under Mustafa Suleyman to lead its superintelligence effort, is quoted pointing the company toward AI self-sufficiency** — directly on this thread's central question (how far in-house MAI models displace OpenAI dependence). ⚠️ Only one outlet found covering this specific framing (GeekWire); treat as a single-source data point pending wider pickup, not a confirmed strategic pivot. ([GeekWire](https://www.geekwire.com/)) ⟨daily 2026-08-31⟩
+
 ## 2026-07-27 → 08-13 — Four MAI models ship; the backlog stays half-OpenAI ⟨cold rotation⟩
 
 *Logged 2026-08-18, twenty-two days late. The read: hedging intensified in

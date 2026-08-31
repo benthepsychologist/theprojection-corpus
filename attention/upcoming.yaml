@@ -267,7 +267,13 @@ expectations:
     # community leaks. Month-precision due 08-31: flips passed-silent on the
     # next run if nothing appears. Separately, GLM-5.3's open weights did land
     # on Hugging Face around 08-27 (TechNode) — a different model.
-
+    evidence: |
+      2026-08-31 ~10:05 ET: NO EVIDENCE, window still open until end of day.
+      Neither Hugging Face nor Z.AI's own docs carry GLM-5.5. Z.AI is
+      demonstrably active this morning — it is shipping GLM-5.3-Flash updates
+      today — so this is a live vendor channel publishing something else, not
+      an unreachable one. That makes the negative stronger than the 08-30
+      check, which rested on secondary sources after a DNS failure on z.ai.
   - id: moonshot-preipo-round
     claim: "Moonshot opens final pre-IPO round at ~$50B valuation (HKEX listing ~6 months later)"
     due: 2026-08-31
@@ -287,6 +293,12 @@ expectations:
     # month-precision date; if nothing confirms by the next run it goes
     # passed-silent rather than being assumed closed.
     evidence: |
+      2026-08-31 ~10:05 ET: NO EVIDENCE for THIS round, window still open.
+      The confirmed close remains the earlier ~$3.5bn round at ~$35bn implied
+      valuation from July; the ~$50bn figure in this entry is a pre-money
+      target for a LATER round, which is the distinction the 08-30 run drew
+      and it holds on re-check. Separately, Moonshot's HKEX listing
+      application is company-stated as targeted "by September 30," not August.
       AFTERNOON RE-CHECK 2026-08-30 ~15:40 ET — unchanged, still unconfirmed
       by Moonshot itself. The $50bn round is reported OPENED (TechNode
       08-05) and nowhere reported closed. The most recent CONFIRMED close
@@ -544,6 +556,13 @@ expectations:
     status: passed-silent
     resolved: 2026-08-21
     evidence: |
+      2026-08-31 ~10:00 ET: passed-silent CONFIRMED on re-check, ten days
+      past due. Queried Apple's newsroom and the offices of the senators who
+      set the deadline; no commitment, no statement, no follow-up letter.
+      Context that sharpens rather than changes the outcome: CXMT is
+      simultaneously suing the Pentagon (08-29) to get off the Section 1260H
+      "Chinese military company" list, so the designation this deadline was
+      built on is itself now contested in court.
       The deadline arrived and nothing was said on either side. The letter
       behind it went out 2026-07-29 from seven senators — Jim Banks (R-IN)
       and Chuck Schumer leading, with Andy Kim, Jeanne Shaheen, Mike Crapo,
@@ -585,7 +604,6 @@ expectations:
       re-stamped "updated 08-26". Excluded under date discipline — it is
       not a development, and it is the exact shape of false freshness this
       ledger exists to resist.
-
   - id: decart-acquisition-close
     claim: "Israeli real-time-video AI startup Decart is acquired for ~$6B — reportedly by Anthropic as of 08-13 (its largest-ever acquisition, a pre-IPO infrastructure move), superseding the original 08-09 report naming SpaceX"
     due: 2026-08-17
@@ -758,6 +776,10 @@ expectations:
     logged_by: crawl
     status: pending
     evidence: |
+      2026-08-31 ~10:05 ET: NO EVIDENCE, window still open until end of day.
+      No reporting fresher than 07-22/23 found; the ~EUR 3bn raise at a ~EUR 20bn
+      valuation is still framed as "in talks" with Samsung and EQT named as
+      prospective participants. No close, no term sheet, no company statement.
       AFTERNOON RE-CHECK 2026-08-30 ~15:40 ET — unchanged, still "in talks",
       no close announced. Reporting still clusters at late July (Samsung in
       talks for up to €1bn alongside EQT, Novo Holdings and Santander at a
@@ -840,7 +862,19 @@ expectations:
     due: 2026-08-19
     status: passed-silent
     resolved: 2026-08-20
-    evidence: >
+    evidence: |
+      2026-08-31 ~10:00 ET: passed-silent CONFIRMED, and the situation moved
+      AWAY from the claim rather than merely failing to move toward it. The
+      shooting resumed over the exact chokepoint this entry is about: US
+      forces struck two Iranian rocket launchers on Larak Island late 08-30,
+      CENTCOM saying the IRGC was preparing to fire rockets carrying naval
+      mines into the shipping lane; Iran retaliated early 08-31 against
+      US-linked bases in Jordan and the UAE. Iranian state media additionally
+      claims a supertanker struck two mines in the southern strait on 08-31 —
+      unverified and Iranian-sourced, but it lands directly against CENTCOM's
+      08-28 statement that the strait had been cleared. No interim deal, no
+      no-toll window, no mine-clearing agreement. There is no live negotiation
+      to slip.
       No signature, joint statement, or government announcement found
       anywhere through the 08-19 due window or into 08-20. Current
       reporting (Brent trading near $93/bbl "as the US and Iran remain
@@ -1467,6 +1501,16 @@ expectations:
     # for "Anthropic" under form S-1, 08-01..08-29: zero hits, EDGAR's own
     # timestamp 2026-08-29T15:10:43-04:00. Two days to the reported 08-31 date.
     evidence: |
+      2026-08-31 ~10:05 ET: NO EVIDENCE, window still open until end of day.
+      Third independent negative, and the first produced mechanically rather
+      than by an agent: today's `sec_edgar` COLLECTOR lane ran successfully
+      with KESTREL_CONTACT_EMAIL set, returned 328 items against a term list
+      that includes "Anthropic", and contains no Anthropic S-1. An agent pass
+      against EDGAR full-text search the same morning also returned nothing,
+      finding only unrelated investor SPVs with "Anthropic" in their names —
+      the issuer still has no filer presence on EDGAR at all. This also
+      resolves the 08-30 note that EDGAR was returning HTTP 500s on every
+      term: it is working again today.
       AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — negative confirmed a second
       time, independently, with a detail the morning pass did not have.
       EDGAR company search on "Anthropic" returns 35 entries and every one
@@ -1536,6 +1580,13 @@ expectations:
       timelines, Ad Library persistence, and revenue from eleven named
       Chinese ad resellers.
     evidence: |
+      2026-08-31 ~10:00 ET: passed-silent CONFIRMED on re-check, five days
+      past due. Checked Warner's own Senate press-release listing (nothing
+      after the 08-18 letter itself) and Meta's newsroom (late-August posts
+      cover a teen-safety AG settlement, data-centre cooling, WhatsApp
+      security and a Poland fraud feature — nothing on CSAM ads or ad
+      review). No other senator has joined, and no outlet reports a Meta
+      statement.
       Genuinely checked, not assumed: multiple search angles (Meta's
       response content, reporting on continued silence) turned up nothing
       dated 08-26 or 08-27 — no Meta statement, no follow-up from the
@@ -1568,7 +1619,6 @@ expectations:
       revenue they generated, and what remediation followed. This is a
       confirmed negative, not an absence of searching. Grace expires
       2026-08-29; on this evidence the entry stands as passed-silent.
-
   - id: ca-ab2575-senate-floor-vote
     claim: >
       California AB 2575 (Ortega, "Health care services: artificial
@@ -1593,6 +1643,11 @@ expectations:
       harm onto AI developers and facilities, and Kaiser and the
       California Hospital Association oppose it.
     evidence: |
+      2026-08-31 ~10:00 ET: STILL OPEN, and the procedural blocker the 08-30
+      run identified has cleared. AB 2575 was "read second time, ordered to
+      third reading" on 08-30 — so the extra second-reading step forced by the
+      amendment-on-reconsideration is done. The repeat floor vote itself has
+      not been taken. Resolves tonight at adjournment.
       AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
       reason is now a scheduling fact rather than a lag hypothesis. The
       Assembly's own adjournment notice puts its next floor session at
@@ -1732,6 +1787,10 @@ expectations:
       call for hearings with Speaker Johnson. Three days past due, no
       disclosure from either lab and no follow-up from any of the 29
       signers: passed-silent is the final outcome.
+    evidence: |
+      2026-08-31 ~10:05 ET: passed-silent CONFIRMED on re-check, seven days
+      past due. No late response found from either lab, and no follow-up from
+      the letter's signers (Reps. Casar/Matsui or any of the other 27).
   - id: sword-headspace-acquisition-close-0914
     claim: >
       Sword Health's acquisition of Headspace takes effect, per the public
@@ -2022,11 +2081,22 @@ expectations:
       other.
     logged: 2026-08-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-30
     # 2026-08-29 ⟨daily⟩: NOT TAKEN UP 08-29. Bill history re-fetched twice:
     # latest entry still 08/21/26 (ordered to third reading; read third time
     # and amended). Consistent with the 08-30 Assembly floor file, item 103.
     evidence: |
+      RESOLVED HIT 2026-08-30. SB 903 got its Assembly floor vote on the
+      evening of 08-30, in the session that reconvened at 17:00 ET after the
+      prior run's window had closed: "Read third time. Passed. Ordered to the
+      Senate," 74 ayes to 1 no (DeMaio), 4 not voting. The bill's own history
+      now reads "In Senate. Concurrence in Assembly amendments pending." It
+      has passed both chambers and needs only Senate concurrence before the
+      Governor. Checked directly against the Legislature's own bill-history
+      and roll-call records, not against coverage — as of this check no press
+      outlet had reported the vote at all.
+      https://leginfo.legislature.ca.gov/faces/billVotesClient.xhtml?bill_id=202520260SB903
       AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
       reason is now a scheduling fact rather than a lag hypothesis. The
       Assembly's own adjournment notice puts its next floor session at
@@ -2104,6 +2174,14 @@ expectations:
     logged_by: curate-add
     status: pending
     evidence: |
+      2026-08-31 ~10:00 ET: STILL OPEN, held pending deliberately. Last dated
+      action remains 08-28 ("read third time and amended, ordered to third
+      reading"); no floor vote posted. The bill IS scheduled on the "Asm 3rd
+      Reading File - Senate Bills" for 08-31, so the vote is expected today,
+      not abandoned. Today is the constitutional adjournment, so this resolves
+      tonight one way or the other. Not flipped to passed-silent because the
+      window is still open at the time of this check — a due date is not an
+      outcome.
       AFTERNOON RE-CHECK 2026-08-30 ~15:30 ET — still pending, and the
       reason is now a scheduling fact rather than a lag hypothesis. The
       Assembly's own adjournment notice puts its next floor session at
@@ -2166,5 +2244,57 @@ expectations:
       rather than as a timeline entry; the thread gets its entry when the
       Governor acts.
     logged: 2026-08-29
+    logged_by: curate-add
+    status: pending
+    evidence: |
+      2026-08-31 ~10:00 ET: advanced but not resolved. SB 503 was enrolled
+      and PRESENTED TO GOVERNOR NEWSOM on 2026-08-30, which starts his signing
+      clock — the bill has cleared the Legislature entirely. Status stays
+      pending because this entry resolves on a signature or a veto, not on
+      presentment. Due date 09-30 unchanged.
+
+  - id: doe-bulk-power-eo-implementing-rules
+    claim: >
+      The Secretary of Energy publishes rules or regulations implementing
+      Executive Order 14421, designating Covered Foreign Entities and
+      establishing licensing procedures for foreign-produced bulk-power
+      system electric equipment
+    due: 2026-12-24
+    due_precision: day
+    thread: ai-power-buildout
+    entities: []
+    source: https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system
+    confidence: confirmed
+    what_confirms: >
+      publication of the rule. The deadline is written into the order
+      itself, Sec. 3(b): "Within 120 days of the date of this order, the
+      Secretary ... shall publish rules or regulations implementing the
+      authorities delegated to the Secretary by this order." The order was
+      signed 2026-08-26, so 120 days lands on 2026-12-24. This is where the
+      order's actual scope gets set: no country or company is named in the
+      order itself, and the equipment classes covered (generation turbines,
+      transformers, inverters, battery storage) are the AI buildout's own
+      supply bottleneck.
+    logged: 2026-08-31
+    logged_by: curate-add
+    status: pending
+
+  - id: far-council-energy-procurement-recommendations
+    claim: >
+      The Secretary of Energy submits recommended Federal Acquisition
+      Regulation revisions prioritising US-manufactured energy
+      infrastructure, per Executive Order 14421 Sec. 4(a)
+    due: 2027-02-22
+    due_precision: day
+    thread: ai-power-buildout
+    entities: []
+    source: https://www.federalregister.gov/documents/2026/08/31/2026-17843/declaring-a-national-emergency-to-secure-the-united-states-bulk-power-system
+    confidence: confirmed
+    what_confirms: >
+      a submitted set of recommendations, or the FAR Council's subsequent
+      notice-and-comment proposal. Sec. 4(a) gives the Secretary 180 days
+      from 2026-08-26; Sec. 4(b) then gives the FAR Council 90 days to
+      consider proposing the recommendations for public comment.
+    logged: 2026-08-31
     logged_by: curate-add
     status: pending

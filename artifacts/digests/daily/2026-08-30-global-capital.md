@@ -1,10 +1,11 @@
 ---
 lens: global-capital
 date: 2026-08-30
-status: building
+status: final
 window_start: 2026-08-30T05:00:00-04:00
-as_of: 2026-08-30T15:45:00-04:00
-coverage: pending
+coverage: done
+window_end: 2026-08-31T05:00:00-04:00
+finalized: 2026-08-31T10:15:00-04:00
 ---
 
 # Global Capital — 2026-08-30
@@ -252,6 +253,66 @@ a weapon.
   it?**
 
 See the front digest for the full set of offers.
+
+## 🔍 Coverage critic — 2026-08-30 (finalize pass, 2026-08-31)
+
+**Zero of four benchmarks yielded a dated 08-30 edition to compare
+against, so this lens had no recall check at all today.** Not a clean
+pass — an empty one, and the distinction is the whole content of this
+section.
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| Money Stuff (Matt Levine) | dark | author-page RSS: newest item "AI Refi," Thu 08-27 18:03 GMT; nothing for 08-28, 08-29, 08-30 |
+| FT Unhedged | dark | RSS `lastBuildDate` Mon 08-31 12:50 GMT, newest item "Is the 60-40 portfolio dead?" Sat 08-29 09:30 GMT; no 08-30 item. Substance still paywalled past the teaser |
+| Axios Pro Rata | **unreachable, and worse than documented** | direct fetch HTTP 403; the reader proxy served a **dateline of Wednesday, May 6 2026** — a stale cache, not even today's issue |
+| Bloomberg Technology | unreachable | reader proxy returned a CAPTCHA block page; third consecutive check finding it blocked since 08-25 |
+
+⚠️ **The Axios finding upgrades a known caveat into a harder rule.** This
+file already recorded that Axios Pro Rata's reader-proxy transport is
+same-day-only, with the trap being that a day-N+1 check silently reads
+day N+1's issue. Today it did something worse — it served an issue from
+**May** — so the transport cannot be trusted to be current at all, not
+merely to be correctly dated. Treat it as unusable for critic work until
+a genuinely dated archive path is found.
+
+**With no comparison possible, the pass went to the two standing
+questions, and both came back with more than the benchmark check would
+have.**
+
+**The stablecoin gap is still open and got materially sharper.** The grep
+was re-run from scratch: `threads.yaml`, `watchlist.yaml` and
+`capital-context.yaml` still return **zero hits** for stablecoin,
+tokenisation, CBDC or digital currency. Against that, the same weekend
+produced exactly the kind of story a thread exists to hold: **the Wall
+Street Journal reported on 08-26 that Bank of America, Wells Fargo and
+Santander are advancing a joint global-dollar stablecoin venture with
+more than a dozen institutions involved**, with JPMorgan separately
+weighing its own issuance. Two further precisions worth having: the
+GENIUS Act's licensing requirement takes effect **2027-01-18** and its
+ban on unlicensed sales to US persons **2028-07-18** — sharper than the
+"roughly six months" this map has been carrying — and **the $230bn
+stablecoin market-cap figure in yesterday's digest is this map's own
+number and is stale**, with trackers putting it near **$308bn as of
+08-13**. So the case is no longer "a symposium reorganised around a
+subject we don't track." It is "a live, dollar-denominated bank-consortium
+story broke inside the same 72 hours, on-beat by any definition, and
+nothing here would have caught it."
+
+**And the second question produced the clearest evidence yet for a
+proposal that has been standing, unacted-on, since 08-28.** The critic
+could not test whether these four benchmarks covered EO 14421 — no dated
+archives, three unreachable — but it established something more useful
+than a miss-confirmation: **coverage of the order exists only in
+utility/energy trade press and law-firm client alerts**, and none of the
+four benchmarks' beats (financial structure, deals and VC, markets and
+macro, tech-capital) naturally intersects a bulk-power-equipment IEEPA
+action. The one plausible fit, Bloomberg Technology, is the one that has
+been blocked for a week. **The argument for adding a wire service is
+therefore not that it would have beaten these four on their own beats —
+it is that this lens's entire daily benchmark set is four sector
+newsletters with no general-news or policy backstop of any kind, and
+three of them go dark simultaneously every weekend.**
 
 ---
 The blind spot found this morning acquired an argument this afternoon:

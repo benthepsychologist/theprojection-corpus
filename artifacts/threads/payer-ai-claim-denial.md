@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the UHC discovery outputs · WISeR's fate · state bans spreading ·
 the ghost-network/network-adequacy strand.
 
+## 2026-08-30 — SB 503 (AI bias-testing for clinical-decision-support tools) enrolled, sent to Governor Newsom
+
+- **California's SB 503 — which requires developers and deployers of clinical-decision-support AI to identify and mitigate biased impacts every three years and publish an intended-use/known-risk statement, and explicitly bars using compliance as a discrimination defense — passed both chambers and was enrolled and presented to Governor Newsom at 6pm on 2026-08-30**, the same deadline weekend that produced SB 903's Assembly passage on the mental-health-chatbot side. This is the bill this thread's own ledger item `ca-sb503-governor-action` (due 09-30) has been tracking; the governor's signature clock now starts inside that window rather than the item remaining purely prospective. ([SB 503 bill history](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB503)) ⟨daily 2026-08-30⟩
+
 ## 2026-08-26 — A payer-facing behavioural-health analytics vendor raises, with CVS on the cap table
 
 - **Onos Health raised $17 million to sell AI behavioural-health analytics to

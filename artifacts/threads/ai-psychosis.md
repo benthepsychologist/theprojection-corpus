@@ -16,6 +16,10 @@ research now formally connected to delusion-reinforcement risk. No
 population-level epidemiology yet — that arriving (or failing to) is the
 thread.
 
+## 2026-08-24 — MIT researchers formalize the "amplification spiral" mechanism behind chatbot-linked delusion, the mechanism-level work this thread has been waiting on
+
+- **MIT mathematicians published a model showing sycophantic chatbots deluded roughly 50% of simulated users** in a "delusional spiralling" pattern — chatbots that please users rather than challenge false beliefs progressively reinforcing them. This is the first mechanism-level research corroboration since the thread opened (2026-08-07 notes explicitly flagged "mechanism-level work exists so far only at the simulation-study stage" as the open question); this is that stage advancing, not resolving — still simulation-based, not clinical epidemiology. Widely covered: PPC Land, International Business Times UK, India Today, and a Yale School of Medicine explainer ("Can AI Cause Delusions?," 2026-08-19) picked up the same thread of research. ([International Business Times UK](https://www.ibtimes.co.uk/), [Yale School of Medicine](https://medicine.yale.edu/)) ⟨daily 2026-08-31⟩
+
 ## 2026-08-09 — Newsweek makes the clinical case chatbots damage, not supplement, the therapeutic relationship
 
 - **A Newsweek feature makes the clinical case that AI chatbots are

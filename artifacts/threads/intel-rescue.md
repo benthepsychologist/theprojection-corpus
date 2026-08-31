@@ -18,6 +18,10 @@ customer wins (Microsoft, Tesla, Apple, Fortinet so far), whether the
 state stake changes behavior, Ohio's fate. Backstory crawled 2026-07-28 —
 see `artifacts/findings/intel-rescue-2026-07-28.md`.
 
+## 2026-08-28 — Intel's 14A process posts its first real yield data point — defect density "best since the 22nm process," per the CFO
+
+- **Intel's CFO said 14A defect-density improvement is the best the company has seen since its 22nm node, and that customers have shifted from "evaluating data" to "competing for capacity"** — filling a gap the thread has flagged since it opened ("no yield % anywhere"). Corroborated across Tech Times, finance.biggo.com, and igor'sLAB (which ran the actual defect-density curve against the 22nm comparison). Stock reaction was muted-to-negative on the same day (-2.9%) alongside a reported $2.1B foundry-unit loss, so this is a real signal inside continued financial pressure, not a turnaround headline. ([finance.biggo.com](https://finance.biggo.com/), [Tech Times](https://www.techtimes.com/)) ⟨daily 2026-08-31⟩
+
 ## 2026-08-11 — The offering upsizes to $20B on 5x institutional demand
 
 - **Intel upsized the offering logged yesterday from $15B to $20 billion,
