@@ -3,30 +3,52 @@ lens: world-news
 date: 2026-09-01
 status: building
 window_start: 2026-09-01T05:00:00-04:00
-as_of: 2026-09-01T10:30:00-04:00
+as_of: 2026-09-01T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-01
 
-*Curated agentic-interim, 05:00 ET → **10:30 ET** Tuesday. Sources: 7
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday. Sources: 7
 deterministic collector lanes plus six agent sweeps (five hot clusters,
-one cold rotation) covering both this morning's window and the late-Monday
-window this map hadn't yet seen. Late-08-31-dated items (the Hormuz tanker
-strikes, Kyiv's sixth night) are folded into yesterday's digest as a
-🌙 late catch, not repeated here — see `2026-08-31-world-news.md`.*
+one cold rotation) covering this morning's window and the late-Monday
+window this map hadn't yet seen, plus two afternoon follow-up dispatches
+(a Horn of Africa wire-service check, a since-10:30-ET sweep on live
+threads). Late-08-31-dated items (the Hormuz tanker strikes, Kyiv's sixth
+night) are folded into yesterday's digest as a 🌙 late catch, not repeated
+here — see `2026-08-31-world-news.md`.*
 
 ## Today's throughline
 
-A quiet morning by this lens's own violent recent standard, but not an
-idle one: Gaza produced a named, distinct operation rather than
-undifferentiated strikes, and the Israel-Lebanon track's eighth Rome round
-appears to have gone unheld with neither government saying so directly —
-consistent with a slip pattern this ledger has now recorded twice. Iran
-stayed tense but did not escalate further overnight; the diplomatic
-positions on both sides are restatements, not movement.
+A quiet morning by this lens's own violent recent standard turned into an
+afternoon escalation: the US struck IRGC targets across the widest spread
+of Iranian territory this war has seen in one day, following through on
+Trump's Monday warning to "hit them hard." Gaza produced a named, distinct
+operation rather than undifferentiated strikes, and the Israel-Lebanon
+track's eighth Rome round appears to have gone unheld with neither
+government saying so directly — consistent with a slip pattern this ledger
+has now recorded twice, and unchanged on a same-afternoon recheck. The
+Horn of Africa's flagged, contested finding (a reported Eritrean crossing
+into Tigray and an armed coalition called "Tsimdo") was run down against
+wire services this afternoon and stays unconfirmed — see Corrections.
 
 ## Conflicts
+
+- **The US struck IRGC targets across at least seven sites in southern
+  Iran — Bandar Abbas, Jask, Chabahar, Konarak, Minab, Sirik, Qeshm and
+  Lavan — starting around noon ET on 09-01, the widest single-day spread
+  of US strikes inside Iran this war has seen; fires were reported at an
+  IRGC naval headquarters in Bandar Abbas.** CENTCOM framed it as a
+  response to continued IRGC threats to Hormuz shipping, following Iran's
+  08-31 missile-and-drone retaliation (Jordan, UAE) for the 08-30 Larak
+  Island strike; Trump had told Fox News a day earlier "we're going to hit
+  them hard... there will be a response," and warned Tehran against
+  retaliating once the strikes landed. Iranian state media claimed a shot-
+  down US drone and vowed "harsh punishment" — no US confirmation found.
+  Same two belligerents as the war this map has tracked since 07-23, not a
+  new combatant; full account on `iran-conflict-widening`.
+  ([IBTimes](https://www.ibtimes.com/us-strikes-iran-again-strait-hormuz-tehran-vows-harsh-punishment-3807036), [Fox News](https://www.foxnews.com/world/fires-rage-irans-bandar-abbas-naval-headquarters-strait-hormuz-traffic-stalled.amp), [Xinhua](https://english.news.cn/20260902/da5c136273c54c38868a612ba549a8eb/c.html))
+  <!-- k: t=iran-conflict-widening e= axis=conflicts sev=major -->
 
 - **An Israeli-backed Palestinian militia raid in Gaza City captured Mu'in
   al-Arabid, identified as Hamas's head of its General Security Apparatus,
@@ -63,19 +85,37 @@ positions on both sides are restatements, not movement.
 
 ## Elsewhere
 
-- 🚫 **No general front-page FLASH candidate today.** Applied the explicit
-  test (invasion-scale, mass-casualty, market-halting — not merely "our
-  biggest story"): Gaza's raid and the Israel-Lebanon friction both sit
-  below that bar, and the Iran/Ukraine developments already folded into
-  yesterday's late catch are escalation inside wars this map already
-  tracks, not new belligerents. The rail stays empty.
+- 🚫 **No general front-page FLASH candidate today, including the afternoon
+  Iran strikes.** Applied the explicit test (invasion-scale, mass-
+  casualty, market-halting — not merely "our biggest story"): Gaza's raid
+  and the Israel-Lebanon friction both sit below that bar, and today's
+  seven-site US strike wave on Iran — while the widest single-day spread
+  of this war so far — is an intensification between the same two
+  belligerents this map has tracked since 07-23, not a new combatant or
+  new theatre. Logged as `sev=major` on the thread instead. The rail
+  stays empty.
+
+## 🔍 Follow-up on a flagged finding
+
+- **Horn of Africa — the reported Eritrean crossing into Tigray and the
+  "Tsimdo" coalition stay unconfirmed after a dedicated wire-service
+  crawl this afternoon.** The claim traces to one specialist outlet (The
+  Soufan Center, 08-21) with no attributed sourcing of its own; Wikipedia's
+  entry on Tsimdo states neither Eritrea nor the TPLF has confirmed any
+  such alliance exists. No Reuters, AP, or AFP piece and no dated
+  government statement (Ethiopian federal, Tigray Interim Administration,
+  or Eritrean) was found addressing either claim. Stays flagged
+  contested on `horn-of-africa-war`, not promoted to a timeline entry.
 
 ## ⏳ Upcoming & expected
 
 **Ledger flips today** (see `attention/upcoming.yaml` for full evidence):
 - ⚠️ `israel-lebanon-rome-round-8` — **passed-silent** (provisional; due
   2026-09-01, day precision). No confirmed convening from either
-  government or any outlet that has covered the prior seven rounds.
+  government or any outlet that has covered the prior seven rounds;
+  unchanged on a same-afternoon recheck (a Times of Israel liveblog entry
+  has Netanyahu discussing an "upcoming" Rome round in future tense, i.e.
+  still not convened as of 15:00 ET).
 
 **Due in the next 7 days:** nothing else on this lens's ledger.
 
@@ -90,6 +130,7 @@ None offered this run.
 
 ---
 Gaza got a named capture instead of an undifferentiated strike count,
-Lebanon's Rome round appears to have gone quietly unheld, and Iran held
-its overnight tension without adding to it — a lens catching its breath
-after the last two days.
+Lebanon's Rome round stayed quietly unheld on a same-afternoon recheck,
+and Iran's overnight tension turned into the widest single-day US strike
+wave of the war so far — an intensification between the same two
+belligerents, not a new one.

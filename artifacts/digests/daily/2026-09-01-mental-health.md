@@ -3,18 +3,19 @@ lens: mental-health
 date: 2026-09-01
 status: building
 window_start: 2026-09-01T05:00:00-04:00
-as_of: 2026-09-01T10:30:00-04:00
+as_of: 2026-09-01T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-01
 
-*Curated agentic-interim, 05:00 ET → **10:30 ET** Tuesday. Sources: 7
-deterministic collector lanes plus six agent sweeps. The day's real
-mental-health news — all three California AI-in-mental-health bills
-clearing the Legislature, plus the HCA/Palantir nurse-protest late catch —
-is dated 08-31/08-27 and is folded into yesterday's digest as a 🌙 late
-catch; see `2026-08-31-mental-health.md` for the full write-up.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday. Sources: 7
+deterministic collector lanes plus six agent sweeps, plus one afternoon
+follow-up check. The day's real mental-health news — all three California
+AI-in-mental-health bills clearing the Legislature, plus the HCA/Palantir
+nurse-protest late catch — is dated 08-31/08-27 and is folded into
+yesterday's digest as a 🌙 late catch; see `2026-08-31-mental-health.md`
+for the full write-up.*
 
 ## Today's throughline
 
@@ -31,7 +32,10 @@ see yesterday's digest for the actual news day.
 None dated 09-01. See the 08-31 digest's 🌙 late catch for the three
 California bills (AB 2575, SB 903, SB 1119) that cleared the Legislature
 on adjournment day, and the new `*-governor-action` ledger entries now
-tracking Newsom's next move on each.
+tracking Newsom's next move on each. Rechecked this afternoon (15:00 ET):
+all three still sit on Newsom's desk (SB903 formally sent 08-31), no
+signature, veto, or public statement from his office yet — none due
+until ~09-30 regardless.
 
 ## Research & evidence
 

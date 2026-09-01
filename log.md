@@ -1,5 +1,72 @@
 # log.md — session log (newest first)
 
+## 2026-09-01 (15:00 ET) — 09-01 extended to 15:00; the war's widest single-day US strike wave, and a contested Horn of Africa finding stays contested
+
+**Afternoon extension of a day opened at 10:30 ET.** Nothing to finalize —
+08-31 was already finalized this morning; 09-01 stays `building` /
+`coverage: pending` (too fresh — the critic benchmarks won't be checkable
+until tomorrow morning). Deterministic collectors re-ran (federal_register,
+sec_edgar, fec, fred, treasury_tic, imf_data, fund_flow_reports, bis_stats,
+epfr_flows, github, clinicaltrials); all the finance/gov feeds came back
+empty except epfr_flows/github/clinicaltrials, meaning nothing moved there
+since 10:30. The 280s collector timeout cut off before reaching
+google_news_rss/gdelt/semantic_scholar/openalex/lda for this cycle — those
+had already run in the 10:30 ET pass, so no news-feed gap resulted.
+
+**Two targeted afternoon dispatches, not a full re-sweep.** Given this was
+a same-day continuation only ~4.5 hours after a comprehensive morning run
+(six dispatches, five hot clusters + one cold rotation), the afternoon
+work was two focused research agents rather than a fresh tiered dispatch:
+a dedicated wire-service crawl on the Horn of Africa's flagged, contested
+finding (a reported Eritrean crossing into Tigray and an armed coalition
+called "Tsimdo"), and a since-10:30-ET sweep on the day's live threads
+(the three California AI-therapy bills, Project River's forum tonight,
+Israel-Lebanon Rome round 8, and general market/conflict follow-through).
+
+**The Horn of Africa finding stays contested, and the afternoon crawl
+hardens that read rather than resolving it.** The claim traces to one
+specialist outlet (The Soufan Center, 08-21) with no cited sourcing of its
+own; Wikipedia's own Tsimdo entry states neither Eritrea nor the TPLF has
+confirmed any such alliance exists. No Reuters/AP/AFP piece and no dated
+government statement surfaced. Recommendation taken: stays flagged, not
+promoted to a timeline entry.
+
+**The real finding was the war's widest single-day US strike wave so
+far.** Around noon ET, the US struck IRGC targets across at least seven
+sites in southern Iran — Bandar Abbas, Jask, Chabahar, Konarak, Minab,
+Sirik, Qeshm and Lavan, with fires reported at an IRGC naval headquarters
+— following through on Trump's Monday warning to "hit them hard" after
+Iran's Jordan/UAE missile-and-drone retaliation for the 08-30 Larak Island
+strike. Verified independently across IBTimes, Fox News, Xinhua, The
+Media Line and Washington Times before writing it in. Applied the flash
+test explicitly: this is an intensification between the same two
+belligerents this map has tracked since 07-23, not a new combatant or
+theatre, so it's logged as a `sev=major` development on
+`iran-conflict-widening` and `red-sea-oil-shock` (oil: Brent ~$91-94, WTI
+~$86.57) rather than the flash rail. No flash filed. The three California
+bills, Project River, and Rome round 8 all rechecked clean — nothing new
+on the bills (still on Newsom's desk), Project River's forum runs 6-8pm ET
+tonight so nothing to report yet, and Rome round 8 stays passed-silent on
+a same-afternoon recheck.
+
+**Site refresh:** `readouts --pack front` (one sonnet agent) → `--apply`
+(1/1 applied) → `--export` (154 readouts) → `kestrel publish --push`: 61
+entity pages, 3 beat pages, 753 claim pages, 1,005 story pages (1,645
+sources, 1,317 credibility-badged), 4 interpretation pages, 122 map pages,
+`data/readouts.json` at 154. Cloudflare build `eefb67b3`. The three
+lens-scoped packs (`lens:ai`/`lens:global-capital`/`lens:mental-health`)
+were not attempted this run — the cross-lens-link validation friction
+flagged in the 09-01 10:30 ET run is unchanged, and there wasn't enough
+new same-lens content this afternoon to justify re-testing it.
+
+**Pick up here:** the Project River forum (6-8pm ET tonight) and whether
+Iran escalates further or the exchange holds at today's level are the two
+live open questions for tomorrow's run. **Standing asks, unchanged:**
+`gcloud auth login` for `bq` (day sixteen — confirmed still failing this
+run — `attention/world-news.yaml` stays frozen at 08-25), the wire-service
+addition to `sources/benchmarks.yaml`, and the Axios Pro Rata/Bloomberg
+Technology dated-archive note on `sources/benchmarks.yaml`.
+
 ## 2026-08-31 (15:00 ET) — 08-31 extended to 15:00; the flash rail's own exception was tested and failed; a correction the Federal Register forced
 
 **Afternoon extension of a day opened at 11:00 ET.** Nothing to finalize

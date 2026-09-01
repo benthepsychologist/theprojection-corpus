@@ -22,6 +22,18 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-01 — Oil extends its climb on the broadest US strike wave of the war; Brent ~$91-94, WTI ~$86.6
+
+- **Brent traded roughly $91-94 and WTI around $86.57 on 09-01**, extending
+  the run that started with the 08-30/08-31 Larak Island strike and
+  Jordan/UAE retaliation, as the US struck IRGC targets across seven-plus
+  sites in southern Iran around noon ET — the conflict narrative is on
+  `iran-conflict-widening`. Third consecutive up session on the same
+  Iran-driven mechanism this thread has tracked since 08-30; no new
+  war-risk-insurance percentage or transit-count figure found this pass
+  (standing figures unchanged from 08-31).
+  ([DeepDraft SITREP](https://thedeepdraft.com/2026/09/01/hormuz-tanker-hit-three-projectiles-us-strikes-larak-launchers-september-1-2026/)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-31 — US strikes Iranian rocket launchers preparing to mine the Strait of Hormuz; Iran retaliates on Jordan and UAE bases; Brent jumps above $90
 
 - **The war's shooting resumed after roughly a month of relative calm, and oil repriced on it.** US forces struck two Iranian rocket launchers on Larak Island late Sunday (08-30 ET) — CENTCOM spokesman Capt. Tim Hawkins said the IRGC had been observed preparing to launch rockets carrying naval mines into the strait's shipping lane, a direct threat to the transit corridor CENTCOM had declared "open" on 08-28. Iran's Revolutionary Guards acknowledged casualties without giving a number and vowed to respond; early Monday (08-31) the IRGC struck US-linked bases in Jordan (King Hussein and Al Azraq — Jordan's army says it intercepted eight missiles that breached its airspace) and the UAE (Al Minhad air base, which the UAE Ministry of Defence says was not actually hit). Brent crude rose from Friday's ~$88.10-88.29 close to trade above $90 this morning (quotes range $90.7-93 across sources), WTI from ~$83.40 to roughly $86 — a clean reversal of the drift-lower pattern this thread had been logging through 08-28/08-29. ⚠️ No updated war-risk-insurance percentage or transit-count figure found this pass; the standing 3-10%-of-hull-value figure and CENTCOM's 08-28 count (~24 tankers/day vs. 120-130 pre-war norm) are the last confirmed numbers on this thread.

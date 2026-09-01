@@ -3,14 +3,15 @@ lens: frontier-ai
 date: 2026-09-01
 status: building
 window_start: 2026-09-01T05:00:00-04:00
-as_of: 2026-09-01T10:30:00-04:00
+as_of: 2026-09-01T15:00:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-09-01
 
-*Curated agentic-interim, 05:00 ET → **10:30 ET** Tuesday. Sources: 7
-deterministic collector lanes plus six agent sweeps. Most of this cycle's
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday. Sources: 7
+deterministic collector lanes plus six agent sweeps, plus one afternoon
+follow-up check. Most of this cycle's
 real frontier-lab news — Zhipu's first public earnings, Nvidia's MediaTek
 stake, the Anthropic-Lambda deal, Anthropic's security hardening report,
 and Anthropic's IPO timeline firming — is dated 08-31 and is folded into
@@ -54,6 +55,14 @@ global-capital digest for the full write-up.
 - ⚠️ `anthropic-public-s1-filing` — **passed-silent** (due 08-31, day).
   EDGAR returns zero matches for Anthropic under any form as of this
   morning — the fifth independent negative check across two days.
+
+**Due today, not yet checkable:** `project-river-public-forums-0901` — a
+public forum on the Project River data-center siting fight (Bradley
+County, TN) runs 6-8pm ET tonight, after this run's window; confirmed this
+afternoon that the opposition group (Hiwassee River Alliance) is real and
+actively organizing, and that Wright Brothers still has no confirmed
+data-center off-taker. No outcome to report until the forum itself
+happens.
 
 **Due in the next 7 days:**
 - `broadcom-q3-fy2026-earnings` — due 2026-09-02.

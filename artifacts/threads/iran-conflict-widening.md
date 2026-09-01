@@ -15,6 +15,28 @@ confirmed ceasefire, any further combatant, and whether Saudi Arabia's
 coalition-building or China's separate Houthi track produces anything
 concrete.
 
+## 2026-09-01 — US strikes IRGC targets across seven-plus sites in southern Iran, the broadest single-day strike of the war so far
+
+- **US forces struck Islamic Revolutionary Guard Corps targets across at
+  least seven locations in southern Iran starting around noon ET on
+  09-01** — Bandar Abbas (where fires were reported at an IRGC naval
+  headquarters), Jask, Chabahar, Konarak, Minab, Sirik, and the islands of
+  Qeshm and Lavan — six to eight distinct explosions reported across the
+  region. CENTCOM framed the strikes as targeting continued IRGC threats
+  to shipping in the strait following the unclaimed tanker incidents
+  already on this thread (08-31) and Iran's own Jordan/UAE missile-and-drone
+  retaliation for the 08-30 Larak Island strike; Trump had told Fox News a
+  day earlier "we're going to hit them hard... there will be a response,"
+  and warned Tehran against retaliating once the strikes landed. This is
+  the widest geographic spread of US strikes inside Iran in this war to
+  date — prior rounds (07-29/30, 08-30) hit one or two named sites each.
+  Iranian state media claimed the IRGC shot down a US MQ-9 drone over the
+  eastern strait and vowed "harsh punishment"; no US confirmation of a
+  downed drone was found. No new combatant and no Iranian territory outside
+  the existing conflict zone — an intensification of the same two-party
+  exchange, not a widening to a new belligerent.
+  ([IBTimes](https://www.ibtimes.com/us-strikes-iran-again-strait-hormuz-tehran-vows-harsh-punishment-3807036), [Fox News](https://www.foxnews.com/world/fires-rage-irans-bandar-abbas-naval-headquarters-strait-hormuz-traffic-stalled.amp), [Xinhua](https://english.news.cn/20260902/da5c136273c54c38868a612ba549a8eb/c.html), [The Media Line](https://themedialine.org/headlines/us-strikes-irgc-targets-in-strait-of-hormuz-president-trump-warns-iran-against-retaliation/)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-31 — Two VLCCs struck by unknown projectiles near the Strait of Hormuz, unattributed
 
 - **Two Saudi-crude supertankers were hit by unidentified projectiles within minutes of each other on the evening of 08-31, and — unlike the Iranian mine claim already on this thread — nobody has claimed responsibility.** The Saudi-flagged *Sidr* (operated by Bahri) was struck roughly 16.6 nautical miles northeast of Khasab, Oman at 19:52 UTC (15:52 ET); minutes later the Liberian-flagged *Senegal Prosperity* (operated by South Korea's Sinokor) was hit by three projectiles about 17 nautical miles east of Khasab. Both vessels had each loaded roughly 2 million barrels of Saudi crude at the Juaymah terminal the prior week and were outbound from the Gulf. UKMTO and the maritime-risk firm Marisks both logged the incidents, calling them "a coordinated or closely related series of attacks"; all crew on both ships were reported safe. As of this writing no government or armed group has claimed the strikes, and no US or Iranian statement attributes them — a materially different evidentiary position than the Iranian state-media mine claim already on this thread, which Iran itself claimed and CENTCOM explicitly dismissed as disinformation. Brent, at $90.23 intraday when the last digest closed, is trading $91-92 this morning.

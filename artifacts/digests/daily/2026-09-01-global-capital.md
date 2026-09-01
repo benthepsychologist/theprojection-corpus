@@ -3,30 +3,33 @@ lens: global-capital
 date: 2026-09-01
 status: building
 window_start: 2026-09-01T05:00:00-04:00
-as_of: 2026-09-01T10:30:00-04:00
+as_of: 2026-09-01T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-09-01
 
-*Curated agentic-interim, 05:00 ET → **10:30 ET** Tuesday. Sources: 7
-deterministic collector lanes plus six agent sweeps. Late-08-31-dated
-items (Nvidia/MediaTek, Anthropic/Lambda, the moratorium wave, the Meta
-El Paso campaign angle, the Microsoft capex correction) are folded into
-yesterday's digest as a 🌙 late catch — see `2026-08-31-global-capital.md`.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday. Sources: 7
+deterministic collector lanes plus six agent sweeps, plus one afternoon
+follow-up sweep on live threads. Late-08-31-dated items (Nvidia/MediaTek,
+Anthropic/Lambda, the moratorium wave, the Meta El Paso campaign angle,
+the Microsoft capex correction) are folded into yesterday's digest as a
+🌙 late catch — see `2026-08-31-global-capital.md`.*
 
 ## Today's throughline
 
 The renewed Iran-Hormuz exchange that broke into Monday's tape kept
-pushing on it into Tuesday morning: the 10-year set a fresh intraday high,
-the 30-year's above-5% run is now the longest since 2006 on Bloomberg's
-own count, and Fed September-hike odds nearly doubled week-on-week. Under
-that macro pressure, the buildout's financing machinery kept running
-regardless — SB Energy, the SoftBank/OpenAI vehicle behind Nvidia's Ohio
-guarantee, put real numbers on its book for the first time via an IPO
-filing, and the same debt-and-yield mechanism this map has tracked as a
-risk thesis showed up as a same-day equity driver, dragging Nvidia, AMD
-and Micron down with it.
+pushing on it through the day: the 10-year set a fresh intraday high, the
+30-year's above-5% run is now the longest since 2006 on Bloomberg's own
+count, Fed September-hike odds nearly doubled week-on-week, and by
+mid-afternoon the US had answered with the widest single-day strike wave
+on Iran this war has seen, pushing Brent back to $91-94. Under that macro
+pressure, the buildout's financing machinery kept running regardless — SB
+Energy, the SoftBank/OpenAI vehicle behind Nvidia's Ohio guarantee, put
+real numbers on its book for the first time via an IPO filing, and the
+same debt-and-yield mechanism this map has tracked as a risk thesis showed
+up as a same-day equity driver, dragging Nvidia, AMD and Micron down with
+it.
 
 ## Capital in my markets
 
@@ -71,6 +74,16 @@ and Micron down with it.
   ([Yahoo Finance/TheStreet](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-1-135016820.html))
   <!-- k: t=ai-trade-bear-turn,ai-buildout-debt-risk e= axis=capital-in-my-markets -->
 
+- **Oil extended its climb into the afternoon on the broadest US strike
+  wave of the Iran war so far: Brent traded roughly $91-94, WTI around
+  $86.57.** The US struck IRGC targets across at least seven sites in
+  southern Iran around noon ET (conflict narrative on
+  `iran-conflict-widening`, world-news lens); this is the same Iran-driven
+  mechanism already pushing this morning's yield print, extended by a
+  third consecutive up session rather than a new shock.
+  ([DeepDraft SITREP](https://thedeepdraft.com/2026/09/01/hormuz-tanker-hit-three-projectiles-us-strikes-larak-launchers-september-1-2026/))
+  <!-- k: t=red-sea-oil-shock e= axis=capital-in-my-markets sev=major -->
+
 ## Deals & filings
 
 - **SB Energy Corp — the SoftBank- and OpenAI-backed developer of the
@@ -110,6 +123,7 @@ and Micron down with it.
 | Sept Fed hike odds | **~65-68%** | up from ~36-40% a week ago |
 | S&P 500 / Nasdaq-100 futures | **~-0.3%** | Nasdaq Composite -1.1% intraday |
 | Nvidia / AMD / Micron | **~-2%** each | tracking the yield/oil move |
+| Brent / WTI crude | **~$91-94 / ~$86.57** | afternoon high, widest US-Iran strike wave of the war |
 
 ⚠️ Figures are same-morning snapshots via secondary aggregation (CNBC
 403'd direct fetch); none is confirmed against an official close.
@@ -152,5 +166,7 @@ None offered this run.
 ---
 Yields kept climbing on the same Iran-driven oil shock that started
 Monday, the equity relief rally from Nvidia's earnings gave way to a
-pullback, and underneath both, SB Energy put its first real numbers on
-paper — a $439bn backlog against a business that hasn't shipped a watt yet.
+pullback, oil extended its climb again into the afternoon on the war's
+broadest US strike wave yet, and underneath all three, SB Energy put its
+first real numbers on paper — a $439bn backlog against a business that
+hasn't shipped a watt yet.
