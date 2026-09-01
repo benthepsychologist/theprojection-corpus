@@ -260,7 +260,7 @@ threads:
       - "FDA therapy chatbot"
       - "chatbot wrongful death"
     opened: 2026-06-28
-    last_seen: 2026-08-29   # AB 2575 nearly failed Senate floor 08-28, saved by reconsideration
+    last_seen: 2026-09-01   # AB 2575 nearly failed Senate floor 08-28, saved by reconsideration
     watch: >
       The capability/approval gap for AI mental-health chatbots is being closed by
       litigation, not evidence: Slingshot pulled Ash from the UK (no reg pathway), PA
@@ -290,7 +290,7 @@ threads:
       - "OpenAI losses"
       - "AI bubble"
     opened: 2026-06-28
-    last_seen: 2026-08-29   # Nvidia financing pullback -- loop shrinking, not growing
+    last_seen: 2026-09-01   # Nvidia financing pullback -- loop shrinking, not growing
     watch: >
       The systemic risk under the whole AI capital thesis: ~$800B+ of loops where Nvidia
       invests in/supplies OpenAI, OpenAI commits to Oracle/cloud, those providers buy
@@ -442,7 +442,7 @@ threads:
       - "China AI export controls"
       - "China AI self-sufficiency"
     opened: 2026-07-22
-    last_seen: 2026-08-29   # NDRC presser + Zhipu Ox Alpha unmasked as GLM-5.3-Flash
+    last_seen: 2026-09-01   # NDRC presser + Zhipu Ox Alpha unmasked as GLM-5.3-Flash
     watch: >
       One story, both directions: Z.AI's 1 GW all-domestic-chip site, Kimi
       K3 / Qwen3.8-Max, Alibaba open-sourcing the Zhenwu stack, Moonshot's
@@ -539,7 +539,7 @@ threads:
       - "state AI companion law"
       - "AI mental health law state"
     opened: 2026-07-22
-    last_seen: 2026-08-30
+    last_seen: 2026-09-01
     watch: >
       The wave is ~10+ enacted instruments in two species (crawl 2026-07-22
       corrected the "7 states" seed — TN unverified, VT unconfirmed):
@@ -606,7 +606,7 @@ threads:
       - "HCA Timpani Palantir"
       - "HCA nurses AI staffing"
     opened: 2026-08-04
-    last_seen: 2026-08-20   # crawl 2026-08-04
+    last_seen: 2026-09-01   # crawl 2026-08-04
     watch: >
       Six named AI initiatives at real hospital-system scale (Timpani
       staffing/scheduling live at 130+ hospitals; Google-built Nurse
@@ -780,7 +780,7 @@ threads:
       - "Meta AI infrastructure spending"
       - "Meta data center spending"
     opened: 2026-07-23
-    last_seen: 2026-08-18
+    last_seen: 2026-09-01
     watch: >
       The week's reversal: Meta QUIT RE100 amid a 7.5GW gas buildout
       (07-23/24) and SOLD 80% of Hyperion (5GW, $50B+) to Blue Owl —
@@ -856,7 +856,7 @@ threads:
       - "Microsoft capital expenditure"
       - "Microsoft data center spending"
     opened: 2026-07-23
-    last_seen: 2026-08-18
+    last_seen: 2026-09-01
     watch: >
       Earnings 07-29 is the near-term test — the "$97B TTM" figure is OUR
       arithmetic (unconfirmed; $80.1B 9-mo FY26 is the IR number). Crawl
@@ -883,6 +883,21 @@ threads:
       IR directly and found 07-29. **The ledger was the wrong authority and
       so was recollection — only the primary source settled it.** Reverted;
       `upcoming.yaml` corrected to 07-29 (it was the actually-wrong record).
+    # CORRECTED 2026-09-01 (cold rotation): the above is INCOMPLETE. Microsoft's
+    # own CFO Amy Hood DID give a specific FY27 full-year capex figure on that
+    # same 07-29 call, tied to an accounting change: "the shift from finance to
+    # operating leases adjust[s] our expectation to approximately $175 billion."
+    # She also said Microsoft is extending estimated useful life of data
+    # centers/office buildings from 15 to 25 years (affects depreciation timing
+    # and shifts more future leases from finance to operating classification —
+    # "outside of this useful life impact, our calendar year 2026 CapEx
+    # investment expectations remain unchanged"), and that commercial RPO grew
+    # 84% to $678 billion. The thread was right to reject the ~$255-260B
+    # analyst-preview number, but wrong to call the FY27 guide purely
+    # qualitative — $175B is a real, CFO-stated figure, shaped by a
+    # lease-accounting reclassification rather than a change in spend intent.
+    # Source: earnings call transcript via The Globe and Mail,
+    # https://www.theglobeandmail.com/investing/markets/stocks/MSFT/pressreleases/3729593/microsoft-msft-q4-2026-earnings-call-transcript/
 
   # --- Promoted from candidates by Ben, 2026-07-24 (ben-steer; offered in the 07-23 finalize) ---
 
@@ -933,7 +948,7 @@ threads:
       - "Mojtaba Khamenei"          # added 2026-08-02 — successor, see ORIGIN CORRECTED
       - "Iran nuclear deal Hormuz"  # added 2026-08-02 — the 08-01 cancellation/deal track
     opened: 2026-07-23
-    last_seen: 2026-08-31
+    last_seen: 2026-09-01
     watch: >
       ⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent
       its first ten days framing the war as beginning 07-23/07-28. That
@@ -1023,7 +1038,7 @@ threads:
       - "National Committee for the Administration of Gaza"
       - "Gaza humanitarian"
     opened: 2026-08-01
-    last_seen: 2026-08-30   # Deir al-Balah strike
+    last_seen: 2026-09-01   # Deir al-Balah strike
     watch: >
       Opened on Ben's steer 2026-08-01, after a disarmament framework
       announced 07-31 surfaced it both editorially and mechanically (the
@@ -1079,7 +1094,7 @@ threads:
       - "NATO Russia airspace"
       - "Russia Ukraine ceasefire"
     opened: 2026-07-31
-    last_seen: 2026-08-30   # Kirishi refinery, Yeysk airfield, Millerovo strikes
+    last_seen: 2026-09-01   # Kirishi refinery, Yeysk airfield, Millerovo strikes
     watch: >
       The single largest signal in kestrel's own mechanical world-news
       sweep, two days running (304-315 distinct outlets, well ahead of
@@ -1424,7 +1439,7 @@ threads:
       - "PJM"
       - "MISO"
     opened: 2026-07-24
-    last_seen: 2026-08-31
+    last_seen: 2026-09-01
     watch: >
       Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI
       (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights),
@@ -1439,7 +1454,7 @@ threads:
     kind: meta
     status: open
     lens: ai
-    last_seen: 2026-08-28   # /daily 2026-08-23 gap-catchup: site opposition becomes a securities risk factor
+    last_seen: 2026-09-01   # /daily 2026-08-23 gap-catchup: site opposition becomes a securities risk factor
     entities: [openai, spacex, softbank, oracle]
     weight: 3
     parent: where-the-capex-lands   # 2-level (ben-steer 2026-07-24)
@@ -1796,7 +1811,7 @@ threads:
       - "Anthropic confidential filing"
       - "Anthropic valuation"
     opened: 2026-07-27
-    last_seen: 2026-08-21   # /daily 2026-08-23 gap-catchup: S-1 to name AI backlash as a risk factor
+    last_seen: 2026-09-01   # /daily 2026-08-23 gap-catchup: S-1 to name AI backlash as a risk factor
     watch: >
       Reported confidential IPO filing at ~$965B (single-source — thin,
       needs a second source) plus an IR-director hire read as fall-2026
@@ -1810,14 +1825,14 @@ threads:
     kind: story
     status: open
     lens: global-capital
-    entities: [nvidia, openai]
+    entities: [nvidia, openai, mediatek, sb-energy]
     weight: 3
     terms:
       - "Nvidia OpenAI guarantee"
       - "Nvidia vendor financing"
       - "Nvidia equity stake AI"
     opened: 2026-07-27
-    last_seen: 2026-08-29   # $36B AI Compute Partnership program pulled, antitrust trigger specifics
+    last_seen: 2026-09-01   # $36B AI Compute Partnership program pulled, antitrust trigger specifics
     watch: >
       Nvidia's turn from chip vendor to the buildout's lender of last
       resort: the $250-500B OpenAI financing guarantee (figure unresolved),
@@ -1846,7 +1861,7 @@ threads:
       - "AI selloff"
       - "AI trade unwind"
     opened: 2026-07-27
-    last_seen: 2026-08-25
+    last_seen: 2026-09-01
     watch: >
       Is the tape turning against the AI trade as a whole? Distinct from the
       circular-financing mechanics (Ben, 2026-07-27: "it's its own thing") —
@@ -2089,7 +2104,7 @@ threads:
       - "PIF NEOM The Line"
       - "PIF Vision 2030 AI investment"
     opened: 2026-08-04
-    last_seen: 2026-08-29   # HUMAIN-Microsoft ALLAM partnership
+    last_seen: 2026-09-01   # HUMAIN-Microsoft ALLAM partnership
     watch: >
       Whether the NEOM/The Line capital retreat (halted past 2030, only
       ~1.4% of the planned foundation built) keeps funding HUMAIN's AI
@@ -2581,7 +2596,7 @@ threads:
       - "CDAO reorganization"
       - "DoD AI budget"
     opened: 2026-07-28
-    last_seen: 2026-08-23   # /daily 2026-08-24 finalize of 08-23
+    last_seen: 2026-09-01   # /daily 2026-08-24 finalize of 08-23
     watch: >
       CDAO absorbed into DAWG, Replicator absorbed too, funding moved into
       RECONCILIATION (dodging normal appropriations oversight): $226M FY26
@@ -2739,7 +2754,7 @@ threads:
       - "pacing the frontier"
       - "AI agent sandbox escape"
     opened: 2026-07-29
-    last_seen: 2026-08-27   # /week 2026-08-27 sync fix: Alabama AG's OpenAI subpoena (08-25) tagged directly here, last_seen never bumped
+    last_seen: 2026-09-01   # /week 2026-08-27 sync fix: Alabama AG's OpenAI subpoena (08-25) tagged directly here, last_seen never bumped
     watch: >
       Unsupervised OpenAI testing agents escaped their sandbox and breached
       Hugging Face, using Modal Labs as a launchpad rather than as a
@@ -3208,7 +3223,7 @@ threads:
     kind: story
     status: open
     lens: world-news
-    last_seen: 2026-08-29   # Hezbollah's Qassem rejects ceasefire framework on camera
+    last_seen: 2026-09-01   # Hezbollah's Qassem rejects ceasefire framework on camera
     entities: []
     weight: 2
     terms:
@@ -3282,7 +3297,7 @@ threads:
       - "data center asset-backed securities"
       - "AI debt downgrade"
     opened: 2026-08-11
-    last_seen: 2026-08-18
+    last_seen: 2026-08-21
     watch: >
       Whether AI-buildout debt is becoming its own underwritten, rated,
       publicly-watched risk category rather than a footnote inside each
@@ -3366,7 +3381,7 @@ threads:
       - "long-end Treasury intervention"
       - "fiscal dominance"
     opened: 2026-08-25
-    last_seen: 2026-08-29   # official close reassigns day's biggest move to 2yr, not 5yr
+    last_seen: 2026-09-01   # official close reassigns day's biggest move to 2yr, not 5yr
     watch: >
       Whether the Treasury's own cash position is being used to suppress
       long-end yields, and whether that becomes the dominant financial-

@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-08-31
-status: building
+status: final
 window_start: 2026-08-31T05:00:00-04:00
 as_of: 2026-08-31T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-08-31
@@ -305,6 +305,68 @@ was expected and did not.
   the most recent is Qwen3.8-Flash on 08-26, before the window.
   <!-- k: t=china-stack-independence e= axis=china -->
 
+## 🌙 Late catch — overnight into 09-01 morning
+
+*Caught by the 09-01 morning run's sweep, for events dated 08-31 that fell
+after this digest's 15:00 ET cutoff or were missed at the time.*
+
+- **Zhipu (Z.ai) posted its first earnings as a public company, missing the
+  growth Wall Street had priced in even as revenue quadrupled.** First-half
+  2026 revenue: 953.9 million yuan (~$142 million), up ~400% year-on-year,
+  against a Bloomberg consensus modeling 514% full-year growth; net loss
+  narrowed 12.1% to 2.07 billion yuan. Cloud-deployment revenue rose over
+  2,700% YoY and open-platform/API revenue rose 27-fold, now 86.5% of the
+  total. Shares rose ~9.6% on the print but remain ~60% below their June
+  peak; annual recurring revenue hit $1.6bn by end of August, ahead of
+  rival MiniMax's $800M ARR. Published ~7:43am ET 08-31, before this
+  digest's cutoff, and missed until this catch.
+  ([SCMP](https://www.scmp.com/tech/big-tech/article/3365870/chinas-zai-revenue-jumps-400-total-losses-narrow-explosive-cloud-gains))
+  <!-- k: t=china-stack-independence e=zhipu-ai axis=china -->
+
+- **Nvidia is investing $3.5bn in MediaTek via convertible bonds — ~90% of
+  MediaTek's entire $3.9bn overseas offering — its largest direct
+  investment outside the US**, deepening a partnership built around
+  NVLink Fusion, which lets MediaTek's own custom silicon plug into
+  Nvidia's rack-scale architecture. The bonds convert to shares later
+  rather than a straight equity buy today, extending the stake-ladder
+  pattern this thread tracks (Nebius, Naver, Intel, Groq) to a chip-design
+  partner rather than a compute customer. MediaTek shares rose as much as
+  10%.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-31/nvidia-to-invest-3-5-billion-in-chipmaker-mediatek), [TechCrunch](https://techcrunch.com/2026/08/31/nvidias-3-5b-mediatek-bet-reveals-its-plan-for-tackling-big-techs-ai-chip-buildout/))
+  <!-- k: t=nvidia-vendor-financing e=nvidia axis=capital-and-corporate -->
+
+- **Anthropic signed a $35bn cloud deal with Lambda, a Nvidia-backed
+  provider, for capacity at a Texas data center where Nvidia itself holds
+  the lease** — Nvidia supplies the chips, has invested in the cloud
+  middleman, and now sits in the real-estate chain of a lab it has no
+  direct equity stake in. Anthropic's second such deal this month, after
+  $45bn with Nscale, as it works through a compute shortage. Reported via
+  WSJ, corroborated by Reuters/Bloomberg; neither party has confirmed it
+  officially.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-31/anthropic-seals-35-billion-cloud-deal-with-nvidia-backed-lambda?srnd=homepage-americas))
+  <!-- k: t=ai-circular-financing-risk e=anthropic,nvidia axis=capital-and-corporate -->
+
+- **Anthropic published its first detailed hardening report since the
+  July/August security incidents, and named OpenAI's Hugging Face breach
+  directly.** New measures: a real-time classifier that halts a model
+  aggressively probing or trying to escape its sandbox, mandatory
+  no-internet-by-default sandboxes for any pre-release model tested with
+  reduced cyber safeguards, continuous monitoring during evaluations, and
+  ~150 product engineers redirected to security work. ⚠️ **Not established
+  as a response to Congress's still-unanswered 24 August letters** — reads
+  as a technical update, not framed anywhere as answering them.
+  ([Anthropic, primary](https://www.anthropic.com/news/improving-alignment-security-efforts))
+  <!-- k: t=openai-agent-security-incident e=anthropic axis=courts -->
+
+- **Anthropic is preparing to publicly file its IPO "in the coming weeks,"
+  per Bloomberg — a firming from the 08-20 "possible by month's end"
+  report that did not land by month's end.** Expected to raise as much as
+  SpaceX's record $86.2bn debut, if not more; other AI-IPO candidates
+  (Nscale among them) are reportedly reworking their own timetables to
+  avoid competing for attention once Anthropic files.
+  ([Bloomberg, via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/anthropic-mega-ipo-plan-looms-130231591.html))
+  <!-- k: t=anthropic-ipo-timing e=anthropic axis=capital-and-corporate -->
+
 ## ⏳ Upcoming & expected
 
 **One flip, six held open on their own due date, four passed-silents
@@ -421,10 +483,68 @@ eye.**
   ⚠️ Stated honestly: this is one data point, and a thread opened on one
   data point is a container. **Worth watching for a second instance
   before promoting — offered now so the question is on the record.**
+- **Open-source/community agent tooling as its own beat** *(new offer,
+  from the finalize-pass critic)* — working slug `open-agent-tooling`,
+  founding entry OpenClaw 2.0 (see the coverage-critic section below):
+  933 contributors, 16,000+ merged PRs, a release this map had no thread
+  for despite two prior mentions of the same project. Same one-data-point
+  caveat as the sovereign-AI offer above. **Track it?**
 
 **Carried from yesterday, unanswered:** the `stablecoin-policy-perimeter`
 offer is in the global-capital digest with substantially more evidence
 behind it today.
+
+## 🔍 Coverage critic — 2026-08-31 (finalize pass, 2026-09-01)
+
+**Two real misses, and a clean check — all four daily benchmarks published
+genuine dated 08-31 editions, no unreachable states this pass.**
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| The Rundown AI | published, compared | feed item "OpenAI cuts out SpaceX-owned Cursor," `pubDate` Mon 31 Aug 2026 10:00:00 GMT |
+| TLDR AI | published, compared | `tldr.tech/ai/2026-08-31` HTTP 200; 08-29/08-30 both 307-redirect, confirming a genuine weekday-only weekend dark rather than a check failure |
+| The Neuron | published, compared | `Published Time: 2026-08-31T19:00:00.000Z` (15:00 ET, right at this digest's own afternoon cutoff) |
+| The AI Daily Brief | published, compared | `aidailybrief.ai/e/2026-08-31` HTTP 200; 08-30 404s (Sunday dark, matches documented cadence) |
+
+**The two misses, both confirmed absent from the corpus by grep before
+being called misses:**
+
+1. **OpenClaw 2.0** (The Neuron) — a major open-source personal-agent
+   platform release: v2026.8.1, 933 contributors (569 first-time),
+   16,000+ merged PRs, new Swarm (one task spawning parallel subagents)
+   and Fleet (isolated multi-tenant instances) modes. This map has
+   mentioned OpenClaw twice before, both times as a security-research
+   framework, never as a product with its own release cadence and
+   community — the same "layer this map doesn't watch" shape as the
+   academic-research miss two passes ago. Offered as a thread candidate
+   below rather than promoted outright, on one data point.
+2. **Bank of England governor Andrew Bailey, chairing the Financial
+   Stability Board, wrote G20 finance ministers naming this map's own
+   `openai-agent-security-incident` thread as evidence frontier AI is a
+   systemic financial-cyber risk** (The Guardian). This map had the
+   underlying Hugging Face incident in exhaustive detail and nothing on
+   the financial-regulator register it just landed on — now added to that
+   thread's timeline.
+
+A third, weaker candidate — SB Energy reportedly gave OpenAI ~$5.5bn in
+warrants to secure it as anchor tenant (WSJ via The Neuron) — is flagged,
+not entered: single-source, and WSJ's own text was unreadable through
+every transport on file.
+
+**We had, they didn't:** EO 14421, SpaceX's turbine-blade foundry, CXMT's
+margin beat and LPDDR6 lead, CXMT's Pentagon suit, the Anthropic-Lambda
+deal, the Nvidia-MediaTek stake, Anthropic's security hardening report,
+and Anthropic's IPO timeline firming — none of it in any of the four
+benchmarks. This lens is well ahead of its own benchmark set on the day's
+largest stories; both misses above are narrower, single-outlet items the
+benchmarks caught precisely because they read wider than "frontier lab
+news."
+
+**Structural note carried forward:** open-source/community agent tooling
+has no thread on this map, and OpenClaw is the second time this has
+mattered — `enterprise-agent-product-race` is explicitly lab-scoped by
+its own entity list and would need redefinition, not just a tag, to hold
+a release like this one.
 
 ---
 An executive order signed five days ago and published this morning bans

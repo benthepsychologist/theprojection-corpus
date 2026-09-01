@@ -5135,3 +5135,84 @@ EO 14421 on 08-26 independent of what any newsletter chose to cover.
 This is the fifth documented miss the same instrument would have caught:
 Niger, the OpenAI/Cursor cutoff, King Harald V's death, the Nepal-Tibet
 flood, and now EO 14421.
+
+---
+
+## 2026-09-01 critic pass — finalized 08-31 (all three benchmarked lenses). A clean three-for-three real check, four confirmed misses, and one standing proposal finally has its seed.
+
+### frontier-ai / 2026-08-31
+- **Missed:** OpenClaw 2.0 (The Neuron) — a major open-source personal-agent
+  platform release (933 contributors, 16,000+ merged PRs, new Swarm/Fleet
+  modes) this map has only ever referenced as a security-research
+  framework, never tracked as a product. · Bank of England governor Andrew
+  Bailey, chairing the Financial Stability Board, wrote G20 finance
+  ministers warning frontier AI is a systemic financial-cyber risk and
+  named OpenAI's Hugging Face rogue-agent breach specifically (The
+  Guardian) — this map has the underlying incident in detail on
+  `openai-agent-security-incident` but nothing on the financial-regulator
+  register it just landed on. · A weaker, unconfirmed candidate: SB Energy
+  reportedly gave OpenAI ~$5.5bn in warrants to secure it as anchor tenant
+  (WSJ via The Neuron) — single-source, WSJ itself unreadable through any
+  transport on file.
+- **Check strength:** genuinely strong — all four `ai` benchmarks published
+  real dated 08-31 editions (TLDR confirmed dark by weekday-only cadence,
+  not by failure), no unreachable states.
+- **Map effect:** Bailey's letter added as a timeline entry on
+  `openai-agent-security-incident` (below); OpenClaw offered as a thread
+  candidate rather than promoted outright, on the critic's own one-data-
+  point caution. Proposed watchlist terms (`OpenClaw`, `Financial
+  Stability Board`, `Andrew Bailey`, `harness sovereignty`) and a possible
+  `SoftBank` entity gap — held for Ben's steer rather than auto-applied.
+
+### global-capital / 2026-08-31
+- **Missed:** the US Marshals Service's 2025 sale of Anthropic shares
+  forfeited from convicted FTX executives Caroline Ellison and Nishad
+  Singh — $50m invested in 2022, now estimated worth $2.6-5bn, sold
+  quietly (no public buyer list, unlike the FTX estate's own 2024 exit)
+  between Anthropic's $61.5bn and $183bn rounds. Carried by Money Stuff as
+  its closing 08-31 item; this map runs `frontier-lab-ipos` and
+  `anthropic-ipo-timing` closely and had nothing on it.
+- **Check strength:** weak, and the weakness is a dated transport property
+  worth recording rather than a recall failure — Axios Pro Rata and
+  Bloomberg Technology are BOTH now confirmed to have no dated-archive
+  path at all, so a critic pass run even one day late (as this one, by
+  design, always is) cannot see either outlet's target-date edition, only
+  whatever is currently live. Only Money Stuff and FT Unhedged gave real
+  apples-to-apples comparisons; FT Unhedged's was a confirmed genuine dark
+  (skipped Monday entirely, verified against its own multi-week `pubDate`
+  history).
+- **Map effect:** the forfeiture sale added as a timeline entry on
+  `frontier-lab-ipos` (below).
+
+### mental-health / 2026-08-31
+- **Missed:** Fierce Healthcare (published in-window, 4:27pm ET 08-31) —
+  a new study finding ~10 million Medicaid-expansion adults (20%) risk
+  losing coverage under OBBBA's work requirements over inconsistent work
+  hours. · A weaker second: Behavioral Health Business reports SAMHSA data
+  now shows stimulant use disorder has overtaken opioid use disorder in
+  US prevalence for the first time (4.5M affected, no FDA-approved
+  medication) — an analysis piece, not breaking news, and no thread
+  currently fits it.
+- **Check strength:** the strongest Monday check this lens has run — three
+  of four daily benchmarks published real dated editions (STAT Health
+  Tech's dark result is now confirmed as its own Tue/Thu cadence, not a
+  weekend-blackout excuse); the weak spot is the academic tier (JMIR
+  Mental Health silent since 08-26, Psychiatric Services blocked a fifth
+  consecutive time).
+- **Map effect:** **this is the third pass to name the OBBBA/Medicaid gap
+  (08-29, 08-30, 08-31) and the first with a dated, quantified seed** —
+  the standing "no real seed yet" objection that kept it a bare watchlist
+  proposal no longer holds. Applied this run: `OBBBA`, `Medicaid work
+  requirements` and `Medicaid redetermination` added to the mental-health
+  watchlist (`attention/watchlist.yaml`), scoped to behavioural-health
+  coverage-churn impact. Stimulant-use-disorder held as a one-source
+  observation, not applied.
+
+### Access-transport notes worth keeping
+- Fierce Healthcare's feed still clears via Googlebot UA, but individual
+  article pages now hit a Cloudflare challenge the feed transport doesn't
+  — narrower than what `sources/benchmarks.yaml` currently documents.
+- Bloomberg Technology's CAPTCHA block (present 08-25 through 08-30) is
+  gone as of this pass, but it and Axios Pro Rata share a different, more
+  fundamental problem for this critic's purpose: both are same-day-only
+  rolling pages with no archive, useless for auditing any date but today.

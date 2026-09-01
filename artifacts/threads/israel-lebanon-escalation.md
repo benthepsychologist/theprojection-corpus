@@ -5,6 +5,11 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-09-01 — Israel voices dissatisfaction with disarmament progress; Lebanese army officers said to resist an IDF pullout
+
+- **A new wrinkle on why the withdrawal track is stuck, reported hours before an eighth Rome negotiating round was supposedly due (which did not produce confirmed evidence of convening — see the upcoming.yaml ledger): Israel is privately unhappy with the Lebanese army's pace of disarming Hezbollah inside the pilot zones, while Lebanese army officers are separately reported opposing any immediate IDF pullback for fear Hezbollah would reoccupy the ground.** Per Israel's Kan public broadcaster, both frictions are live at once. An unnamed senior US official, quoted the same morning, said only "we are working with both sides to reach a future arrangement, but it will take time."
+  ([Times of Israel](https://www.timesofisrael.com/liveblog_entry/israel-said-unhappy-with-progress-on-hezbollah-disarmament-in-pilot-zones-lebanese-army-officers-said-to-oppose-idf-pullout/)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-29 — Hezbollah's Qassem rejects the framework agreement outright; a possible "early September" round eight
 
 - **Hezbollah secretary-general Naim Qassem gave a televised address on Al-Manar rejecting the US-backed Israel-Lebanon framework agreement as "illegitimate, unlawful, humiliating, destructive to Lebanese sovereignty," specifically rejecting its "pilot zones" provision and any verification/monitoring mechanism.** The same coverage puts fresh negotiations at "early September" — the first concrete-ish signal on round eight's timing since this thread's unconfirmed 09-01 provisional date, though "early September" is still not a hard date. ([The Times of Israel](https://www.timesofisrael.com/hezbollah-chief-vows-no-surrender-as-he-again-rejects-israel-lebanon-deal/)) ⟨daily 2026-08-29⟩

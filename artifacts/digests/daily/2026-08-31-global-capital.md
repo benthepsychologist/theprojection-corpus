@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-08-31
-status: building
+status: final
 window_start: 2026-08-31T05:00:00-04:00
 as_of: 2026-08-31T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-08-31
@@ -245,6 +245,65 @@ intraday snapshot (08-28) against the official close two days later.
   than omitted.
   <!-- k: t=nvidia-vendor-financing,intel-rescue,ai-buildout-debt-risk e= axis=capital-in-my-markets -->
 
+## 🌙 Late catch — overnight into 09-01 morning
+
+*Caught by the 09-01 morning run's sweep, for events dated 08-31 that fell
+after this digest's 15:00 ET cutoff or were missed at the time.*
+
+- **Nvidia is investing $3.5bn in MediaTek via convertible bonds — ~90% of
+  MediaTek's entire $3.9bn overseas offering, and Nvidia's largest direct
+  investment outside the US.** Extends the stake-ladder pattern this
+  thread tracks (Nebius, Naver, Intel, Groq) to a chip-design partner
+  rather than a compute customer; MediaTek shares rose as much as 10%.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-31/nvidia-to-invest-3-5-billion-in-chipmaker-mediatek))
+  <!-- k: t=nvidia-vendor-financing e=nvidia axis=deals-and-filings -->
+
+- **Anthropic signed a $35bn cloud deal with Lambda, a Nvidia-backed
+  provider, for capacity at a Texas data center where Nvidia itself holds
+  the lease** — a fourth named entity (after AMD, Nvidia, OpenAI/Oracle)
+  in this thread's circularity loop: Nvidia supplies chips, invests in the
+  cloud middleman, and now holds real estate serving a lab it has no
+  direct stake in. Second such deal this month after $45bn with Nscale.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-31/anthropic-seals-35-billion-cloud-deal-with-nvidia-backed-lambda?srnd=homepage-americas))
+  <!-- k: t=ai-circular-financing-risk e=anthropic,nvidia axis=deals-and-filings -->
+
+- **A second wave of local data-center moratorium votes landed the same
+  24-48 hours, echoing the 08-28 pattern**: Mount Pleasant, SC recommended
+  a 120-day moratorium (council vote 09-08) explicitly to close
+  data-center-definition loopholes before staff can rewrite them, and
+  Dougherty County, GA extended its own moratorium another 180 days — its
+  second extension since an original 45-day pause in July. Roughly a
+  dozen more actions surfaced in other states but only these two were
+  independently corroborated. The cadence — multiple jurisdictions moving
+  in the same window, twice in a week — is now a repeated shape.
+  ([WCIV/ABC4](https://abcnews4.com/news/local/mt-pleasant-planning-commission-recommends-120-day-data-center-moratorium-community-decides-on-controversy-topic-of-discussion-charleston-south-carolina-lowcountry-news-trending-viral), [WALB](https://www.walb.com/2026/08/31/dougherty-county-extends-data-center-moratorium-another-180-days/))
+  <!-- k: t=ai-datacenter-sites e= axis=power-and-lobbying -->
+
+- **AMD, Cisco and HUMAIN (Saudi Arabia's PIF-backed state AI vehicle)
+  brought their jointly-built AI infrastructure online in Saudi Arabia**,
+  per AMD's own investor-relations release. Published 7:15am ET 08-31,
+  before this digest's cutoff, and missed until this catch.
+  ([AMD IR, primary](https://ir.amd.com))
+  <!-- k: t=pif-ai-buildout e=amd axis=deals-and-filings -->
+
+- **A Texas gubernatorial candidate made Meta's El Paso data center a
+  campaign issue**, calling for an emergency legislative session on
+  data-center regulation and naming the project directly — moving the
+  thread's long-running local-pushback watch item into the state's
+  November 3 governor's race.
+  ([El Paso Matters](https://elpasomatters.org/2026/08/31/data-centers-texas-elections-2026-gina-hinojosa-greg-abbott-el-paso/))
+  <!-- k: t=meta-capex e=meta-ai axis=power-and-lobbying -->
+
+- 🕰 **Correction, not addition: Microsoft's 07-29 earnings call did NOT
+  leave FY27 capex guidance purely qualitative, as this map's own record
+  stated.** CFO Amy Hood gave a hard figure — "approximately $175 billion"
+  — tied to a 15-to-25-year useful-life accounting change that shifts
+  future leases from finance to operating classification; the map was
+  right to reject the ~$255-260B analyst-preview number but wrong to call
+  the guide purely qualitative. Caught by the cold rotation.
+  ([Earnings transcript via The Globe and Mail](https://www.theglobeandmail.com/investing/markets/stocks/MSFT/pressreleases/3729593/microsoft-msft-q4-2026-earnings-call-transcript/))
+  <!-- k: t=microsoft-capex e=microsoft axis=deals-and-filings -->
+
 ## ⏳ Upcoming & expected
 
 - ⚠️ **`iran-oman-hormuz-deal-signing` — passed-silent re-confirmed, and
@@ -345,6 +404,51 @@ intraday snapshot (08-28) against the official close two days later.
 
 **Carried elsewhere:** two further offers — an alignment-research beat and
 sovereign/public AI provision — are in the frontier-AI digest.
+
+## 🔍 Coverage critic — 2026-08-31 (finalize pass, 2026-09-01)
+
+**One real miss, and a weak check with a specific, documented shape.** Of
+four daily benchmarks, only **Money Stuff** gave a genuine dated 08-31
+comparison; **FT Unhedged** gave a genuine dark result (a confirmed
+skipped Monday); **Axios Pro Rata** and **Bloomberg Technology** were
+unreachable **because this critic pass runs a day late by design** — both
+outlets' documented transports serve only the live/current-day edition
+with no working archive, so by the time this pass ran both had already
+rotated onto 09-01. That is a transport property, not a recall failure,
+but it means only one of four benchmarks was actually load-bearing this
+pass.
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| Money Stuff | published, compared | author-archive RSS: "Don't Hedge the KPIs," `pubDate` Mon 31 Aug 2026 18:17:18 GMT |
+| FT Unhedged | dark (confirmed) | feed jumps Sat 29 Aug → Tue 01 Sep with no Monday item, checked against a `pubDate` history showing every-weekday publication back to 08-03 |
+| Axios Pro Rata | unreachable | reader proxy on the documented persistent-page URL returns the 09-01 edition, not 08-31's; two guessed archive-URL shapes both 404 |
+| Bloomberg Technology | unreachable | CAPTCHA block from prior passes is gone, but the page is a rolling front page with every item timestamped against 09-01 — no dated archive |
+
+**The miss, confirmed absent from the corpus by grep before being called
+one:** the US Marshals Service's 2025 sale of Anthropic shares forfeited
+from convicted FTX executives Caroline Ellison and Nishad Singh — $50m
+invested in 2022, now valued $2.6-5bn, sold quietly between Anthropic's
+$61.5bn and $183bn rounds with no public buyer list. Carried by Money
+Stuff as its closing 08-31 item; this map runs `frontier-lab-ipos` and
+`anthropic-ipo-timing` closely and had nothing on it. Now added to
+`frontier-lab-ipos`'s timeline.
+
+**We had, they didn't:** the Nvidia-MediaTek convertible-bond stake, the
+Anthropic-Lambda cloud deal (precisely the circular-financing shape
+Money Stuff's own beat label names), and OpenAI's ChatGPT Ads run rate —
+none of it in Money Stuff's 08-31 edition despite sitting squarely in its
+usual territory.
+
+**Structural note:** no new blind spot this pass — the one candidate
+considered (a BOJ/JGB/yen macro leg) is already flagged and open in
+`attention/capital-context.yaml`, not a fresh finding.
+
+**Honest weight:** one live comparison point out of four benchmarks, same
+as the frontier-ai pass's Neuron-only real check two runs ago — a real
+result, not a strong one, and any critic pass run a day late should
+expect Axios and Bloomberg Technology to be structurally unreachable
+going forward, not merely at risk of a stale read.
 
 ---
 The war restarted over the Strait of Hormuz on Sunday night and Brent

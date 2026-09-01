@@ -1,7 +1,7 @@
 ---
 lens: world-news
 date: 2026-08-31
-status: building
+status: final
 window_start: 2026-08-31T05:00:00-04:00
 as_of: 2026-08-31T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
@@ -277,6 +277,37 @@ sweeps cannot see, so a third of it running on fallback is worth knowing
 about. One Deutsche Welle item — Germany and France jointly calling for a
 detained Hong Kong lawyer's release — could not be traced to a primary
 source or even a name, and is **not** recorded as fact anywhere.
+
+## 🌙 Late catch — overnight into 09-01 morning
+
+*Caught by the 09-01 morning run's sweep, for events dated 08-31 that fell
+after this digest's 15:00 ET cutoff. Neither clears the general
+front-page FLASH bar — both are escalation inside wars this map already
+tracks on weight-3 threads, not a new belligerent or an unprecedented
+event, the same test the 15:00 ET afternoon extension applied.*
+
+- **Two Saudi-crude supertankers were struck by unidentified projectiles
+  near the Strait of Hormuz on the evening of 08-31, and — unlike the
+  Iranian mine claim already on this thread — nobody has claimed
+  responsibility.** The Saudi-flagged *Sidr* and Liberian-flagged *Senegal
+  Prosperity*, each carrying ~2 million barrels of Saudi crude, were hit
+  minutes apart near Khasab, Oman (UKMTO, Marisks). No US or Iranian
+  statement attributes the strikes — a materially different evidentiary
+  position than the Iranian state-media mine claim CENTCOM dismissed as
+  disinformation. Brent, at $90.23 when the last digest closed, is trading
+  $91-92. Trump repeated a threat to "hit them hard"; no new US strike
+  confirmed beyond the 08-30 Larak Island action.
+  ([Insurance Journal/Bloomberg wire](https://www.insurancejournal.com/news/international/2026/09/01/883510.htm), [Reuters via Investing.com](https://www.investing.com/news/commodities-news/two-tankers-carrying-saudi-oil-attacked-in-strait-of-hormuz-4883736))
+  <!-- k: t=iran-conflict-widening e= axis=conflicts -->
+
+- **Russia ran a sixth consecutive night of strikes on Kyiv, the deadliest
+  single barrage this thread has recorded** — at least 12 killed including
+  six railway workers when a ballistic missile hit a Ukrzaliznytsia depot,
+  more than a dozen wounded. 218 drones and decoys plus ballistic, cruise
+  and anti-radar missiles; Ukraine's air force said it downed or
+  suppressed 199 of them. Strikes or debris recorded across 38 locations.
+  ([Euronews](https://www.euronews.com/my-europe/2026/09/01/at-least-four-people-killed-as-russia-launches-nighttime-ballistic-missile-attacks-targeti), [AP via WSLS](https://www.wsls.com/business/2026/09/01/russian-barrage-of-drones-and-missiles-on-ukraines-capital-region-kills-at-least-11/))
+  <!-- k: t=russia-ukraine-war e= axis=conflicts -->
 
 ## ⏳ Upcoming & expected
 

@@ -7444,3 +7444,111 @@ sharper:** `gcloud auth login` for `bq` (day fifteen —
 made, and **the wire-service addition to `sources/benchmarks.yaml`, which
 now has its argument** and is the fifth documented miss it would have
 caught.
+
+## 2026-09-01 ~10:30 ET (Tuesday) — /daily: six of eight overnight expectations resolved, three California bills passed in one night, and every coverage critic found something real
+
+**Finalized 08-31 (all four lenses + front), opened 09-01.** Six parallel
+sweeps (five hot clusters covering china/frontier-IPOs, capex/power,
+geopolitics, MH/governance, finance-misc, plus one cold-rotation pass over
+13 stale threads) ran the combined window 08-31 15:00 ET → 09-01 10:30 ET,
+merged via three sonnet dispatches (YAML ledger edits, two timeline-file
+merges) while this session drafted the digest prose directly. `theprojection
+readouts --pack` × 4 + `--apply` + `--export`, `kestrel publish --push`,
+and all four graph ingesters + `graph/validate.py` ran clean.
+
+**The legislative story is the day's real news.** All three California
+AI-in-mental-health bills — AB 2575 (developer liability for AI-caused
+clinical harm), SB 903 (bars marketing a chatbot as "therapy"), SB 1119
+(children's companion-chatbot safety) — cleared **both** chambers on the
+Legislature's adjournment night, 08-31, a wave arriving all at once rather
+than piecemeal. A fourth, AB 2023, was quietly pulled to the inactive file
+by its own author the day before rather than voted down. Three successor
+dated expectations (`ca-*-governor-action`, ~09-30) now track Newsom's
+signature/veto on each.
+
+**Six of eight overnight ledger checks resolved, four of them silent for
+good.** `glm-5-5-release`, `moonshot-preipo-round`, `mistral-3b-round-close`
+and `anthropic-public-s1-filing` all ran out their clock with nothing
+shipped/closed/filed — flipped `passed-silent`. `ca-ab2575-senate-floor-vote`
+and `ca-sb1119-assembly-floor-vote` flipped `hit`. `israel-lebanon-rome-round-8`
+provisionally flipped `passed-silent` (neither government confirmed the round
+convened; due date is today, so the next run's 3-day grace re-sweep
+confirms). `project-river-public-forums-0901` stays `pending` — the forum
+is tonight.
+
+**All three coverage critics on 08-31 found something real, and none of the
+checks were weak-by-construction this time.** Frontier-AI: OpenClaw 2.0 (a
+major open-source agent-platform release this map had never tracked as a
+product) and the Bank of England governor's G20 letter naming this map's own
+`openai-agent-security-incident` thread as a systemic financial-cyber-risk
+example. Global-capital: the US Marshals' 2025 sale of FTX-forfeited
+Anthropic shares ($2.6-5bn in unrealized value the government left on the
+table) — a weak check overall (Axios Pro Rata and Bloomberg Technology are
+now confirmed to have **no dated-archive path at all**, so a next-day critic
+pass can never see either outlet's target-date edition — a transport
+limitation, not a recall failure, worth fixing the file's own note for).
+Mental-health: **the third pass to name the OBBBA/Medicaid gap and the
+first with a dated seed** (Fierce Healthcare: ~10M Medicaid-expansion
+adults, 20%, risk losing coverage under new work requirements) — applied
+this run as three new watchlist terms rather than re-flagged a fourth time.
+
+**Cold rotation, working 13 threads untouched in weeks, found four things
+worth more than a weekly touch:** a federal judge threw out the Pentagon's
+"supply chain risk" label on Anthropic (08-27, DoD already appealing);
+eight-city coordinated nurse protests against Palantir's HCA-deployed
+staffing system (08-27, this map's own 08-31 digest had spotted and
+deliberately left unentered); a genuine correction — Microsoft's 07-29
+earnings call gave a hard $175bn FY27 capex figure this map's record had
+incorrectly logged as "stayed qualitative"; and a flagged-not-entered
+finding on `horn-of-africa-war` — specialist analysts describe a direct
+Eritrean crossing into Tigray and a new armed coalition ("Tsimdo") in early
+August, but no wire service confirms it and a more measured source calls a
+second Tigray war "not imminent." Recorded as contested, held for judgment.
+
+**No flash today.** Two live candidates (the Iran/Hormuz tanker strikes and
+Russia's deadliest single Kyiv barrage yet, both dated 08-31) were tested
+against the rail's own bar and both are escalation inside wars this map
+already tracks on weight-3 threads, not new belligerents — same reasoning
+the 08-31 15:00 ET run applied to the Jordan/UAE strikes.
+
+⚠️ **`readouts --apply` friction worth flagging on the skill itself:** the
+per-lens packs (`lens:ai`, `lens:global-capital`, `lens:mental-health`) are
+validated strictly same-lens — a bullet's URL must be in that exact scope's
+own breaking/news pool, or a `/threads/<slug>/` link to a thread whose *own*
+`lens:` field matches the scope. On a day where a lens's own collected
+content doesn't naturally include cross-lens stories, its briefing's
+required "other two lens" sections cannot be filled without fabricating a
+link — which the validator correctly rejects. Only `front` applied cleanly
+this run; the three lens-scoped briefings were left un-refreshed rather than
+forced. Worth deciding whether the skill's "assemble one JSON, apply all
+four" framing should say this explicitly, or whether the shape itself should
+allow a genuinely-empty off-lens section on a day like this.
+
+`readouts --pack` × 4 (dispatched as direct drafting this run, not sonnet
+sub-agents — the content was already fully in context from the sweep
+merge). `--apply`: **1/4 applied** (`front`; the three lens scopes skipped
+per the friction above). `--export`: **154 readouts**. `kestrel publish
+--push`: 61 entity pages, 3 beat pages, **753 claim pages**, **1,003 story
+pages** (1,640 sources, 1,314 credibility-badged), 122 map pages,
+`data/readouts.json` at 154, one front-page audio file. Cloudflare build
+`28e35e6c`.
+
+Graph fed after the finalize: `07_digest_bullets` (64 new S1 claims, 1,309
+cross-posted merges), `06_timelines` (33 new S2, 570 bumped, 851 genuinely
+ambiguous), `03_expectations` (3 hypothesis claims), `09_critic_annotations`
+(2 annotated, 10 process-only). `graph/validate.py`: **OK — 4,424 atoms,
+2,698 sources, 7,057 relationships, 1,093 annotations, 116
+extraction_passes**, all references resolve.
+
+**Pick up here:** watch tonight/tomorrow for the `israel-lebanon-rome-round-8`
+grace-window confirmation and whether Project River's forum (6-8pm ET today)
+draws the organized opposition already forming (Hiwassee River Alliance).
+Three new CA governor-action expectations now on the ledger, due ~09-30.
+The Horn of Africa finding needs a dedicated crawl with wire-service access
+before it can become a timeline entry either way. **Standing asks,
+unchanged:** `gcloud auth login` for `bq` (day sixteen —
+`attention/world-news.yaml` still frozen at 08-25), the wire-service
+addition to `sources/benchmarks.yaml` (now a sixth-miss argument, not
+fifth), and `sources/benchmarks.yaml`'s own comment block should record
+that Axios Pro Rata and Bloomberg Technology have no dated-archive path at
+all, not just a CAPTCHA-risk note.

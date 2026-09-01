@@ -13,6 +13,11 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-08-31 — Zhipu/Z.ai posts its first H1 earnings as a public company, missing growth expectations even as revenue quadruples
+
+- **Zhipu (Z.ai) reported first-half 2026 revenue of 953.9 million yuan (~$142 million), up about 400% year-on-year, with net loss narrowing 12.1% to 2.07 billion yuan (~$307 million) and gross profit up 163.7%** — its first earnings report since its Hong Kong listing. Cloud-based deployment revenue rose over 2,700% YoY and open-platform/API revenue rose 27-fold, now 86.5% of total revenue. Growth still fell short of what Wall Street had priced in: Bloomberg consensus had modeled full-year sales expanding 514%, so the reported 400% pace reads as a miss even at 5x growth. Shares rose ~9.6% to HK$1,195 on the print, but remain roughly 60% below their June peak of HK$2,980; annual recurring revenue reached $1.6bn by end of August, ahead of rival MiniMax's $800M ARR.
+  ([South China Morning Post](https://www.scmp.com/tech/big-tech/article/3365870/chinas-zai-revenue-jumps-400-total-losses-narrow-explosive-cloud-gains)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-29 — NDRC declares the supply chain "significantly safer"; Zhipu's stealth model reframes the compute story
 
 - **China's National Development and Reform Commission said at its August 28 press conference that the domestic chip supply chain has become "significantly" safer this year** — spokeswoman Li Chao cited steady growth in home-grown chipmaking equipment and materials, framing it as a shift from "isolated technological breakthroughs" to "full-chain industrial synergy" under the 2026-2030 five-year plan. The one hard number offered: **integrated-circuit exports nearly doubled in the first seven months of 2026, to $216B.** No self-sufficiency measure was published, and the statement says nothing about the advanced-node/lithography gap this thread and its `china-duv-lithography` child actually track. ([SCMP](https://www.scmp.com/tech/tech-war/article/3365641/chinas-chip-supply-chain-safer-self-sufficiency-push-gains-traction-says-top-planner)) ⟨daily 2026-08-29⟩

@@ -251,7 +251,8 @@ expectations:
     what_confirms: "official release / weights or API availability"
     logged: 2026-07-22
     logged_by: crawl
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-31
     # 2026-08-30 ⟨daily, afternoon⟩: STILL NOT SHIPPED, but on a weaker
     # instrument than the morning pass and that matters. The 10:15 ET check
     # read Z.AI's own properties (Hugging Face, docs.z.ai) and found GLM-5.3
@@ -289,6 +290,18 @@ expectations:
       vendor. That argues for a claim rewrite rather than a plain
       passed-silent when the window closes - flagged for Ben, not decided
       here.
+
+      FINAL CHECK 2026-09-01 ~10:00 ET: window (due 08-31, month precision) now
+      fully closed. Z.AI's Hugging Face org (zai-org) still tops out at
+      GLM-5.3/GLM-5.3-Flash, no GLM-5.5 model card on any surface. A same-day
+      search synthesis states plainly "GLM 5.5 itself remains unannounced" and
+      that the reported August window traced only to a JPMorgan note relayed by
+      Reuters/CGTN, never a Z.AI commitment. PASSED-SILENT. Note for a future
+      rewrite: the specific claim (a >1T-param, 1M-context model under the name
+      "GLM-5.5") still does not exist under any name, and Chinese tech coverage
+      suggests "5.5" was a rumored designation Zhipu never adopted — if this map
+      wants to keep tracking whether Zhipu ships a >1T/1M-context model, it
+      needs a new entry not tied to the unused "GLM-5.5" name.
   - id: moonshot-preipo-round
     claim: "Moonshot opens final pre-IPO round at ~$50B valuation (HKEX listing ~6 months later)"
     due: 2026-08-31
@@ -300,7 +313,8 @@ expectations:
     what_confirms: "round confirmed by filings/reporting; then track the listing window"
     logged: 2026-07-22
     logged_by: crawl
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-31
     # 2026-08-29 ⟨daily⟩: NOT CONFIRMED CLOSED. KrAsia reported the round
     # targeting a final close around 08-27; one sweep has it at ~$3.5bn on a
     # ~$35bn implied valuation, another at a ~$50bn pre-money — the two do not
@@ -335,6 +349,15 @@ expectations:
       2026-09-30. A sweep re-surfaced the KrAsia 08-11 report of a final close
       targeted for 08-27 as though it were new; it is already recorded in this
       entry's 08-30 note above and remains unconfirmed either way.
+
+      FINAL CHECK 2026-09-01 ~10:00 ET: window (due 08-31, month) now closed.
+      Still nothing past "in talks"/"opened"/"targeting" — no company statement,
+      no filing. The only confirmed close remains the earlier ~$3.5bn round at
+      a ~$35bn valuation from July, a different, earlier round from the ~$50bn
+      pre-money round this entry tracks. Separately confirmed: Moonshot's HKEX
+      listing application is still targeted "by September 30" — a full month
+      out, so the round-close and the listing-filing are two different unmet
+      dates, not one slipping into the other. PASSED-SILENT.
   - id: ny-s9051b-signature
     claim: "Hochul signs (or pocket-vetoes) NY S9051B under-18 companion ban + S9408A AI-toy ban"
     due: 2026-12-31   # corrected 07-23 (finalize sweep) — was 08-31 guess
@@ -795,7 +818,8 @@ expectations:
     what_confirms: "an official Mistral/Samsung/EQT funding-round announcement with disclosed terms"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-31
     evidence: |
       2026-08-31 ~10:05 ET: NO EVIDENCE, window still open until end of day.
       No reporting fresher than 07-22/23 found; the ~EUR 3bn raise at a ~EUR 20bn
@@ -817,6 +841,10 @@ expectations:
       AFTERNOON RE-CHECK 2026-08-31 ~14:00 ET - unchanged. Still framed as
       "in talks"/"discussions" across every reachable source, with no Mistral
       newsroom announcement, no term sheet and no close.
+
+      FINAL CHECK 2026-09-01 ~10:00 ET: window (due 08-31, month) now closed.
+      No search turns up anything past "in talks"/"discussions"; no Mistral,
+      Samsung, or EQT announcement, no term sheet. PASSED-SILENT.
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
     due: 2026-11-04
@@ -1414,7 +1442,8 @@ expectations:
     # than one displacing the other, which is what makes the round
     # actually convening a real test rather than a formality. The seventh
     # round ended 08-06 with little resolved.
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-01
     evidence: |
       AFTERNOON RE-CHECK 2026-08-30 ~15:20 ET — independently corroborated,
       same conclusion. Asharq Al-Awsat has the US saying a new Rome round
@@ -1430,6 +1459,24 @@ expectations:
       consistent with Hezbollah's Qassem calling it "early September"
       rather than naming a day. Neither government has confirmed a
       convening. Stays pending to 09-01; expect a slip rather than a hit.
+
+      PROVISIONAL PASSED-SILENT 2026-09-01 ~10:00 ET, flipped on the due date
+      itself (the day is not yet over — ET digest-day runs to 05:00 ET
+      09-02 — so this should be re-confirmed on the next run's 3-day-grace
+      re-sweep before being treated as fully settled, per this ledger's own
+      convention). Queried Al-Monitor, L'Orient Today, Times of Israel, Al
+      Jazeera, Reuters/AP: nothing states the round convened today, and
+      nothing states a formal postponement either. Times of Israel's own
+      comprehensive 09-01 liveblog carries no mention of a Rome session
+      today; its 4:05am ET entry quotes an unnamed senior US official on the
+      disarmament track generally ("we are working with both sides ... it
+      will take time") — not the language of a round convening same-day.
+      Separately, new friction reported same morning: Israel is privately
+      unhappy with the pace of Hezbollah disarmament in the pilot zones,
+      while Lebanese army officers are separately reported opposing an
+      immediate IDF pullback — read together with the round's non-appearance,
+      this looks like the "expect a slip" trend continuing rather than a
+      one-off no-show.
   - id: iran-us-sanctions-package-aug24
     claim: "The US Treasury announces the Iran sanctions package Bessent has publicly promised — what he calls history's 'greatest coordinated economic isolation' of a country, paired with the existing blockade"
     due: 2026-08-24
@@ -1521,7 +1568,8 @@ expectations:
     # be read that way. It earns a ledger slot because a public filing puts
     # the ~$190-200bn 2028 revenue forecast now reported to underpin the
     # ~$2T valuation into a document with legal consequences attached.
-    status: pending
+    status: passed-silent
+    resolved: 2026-08-31
     # 2026-08-29 ⟨daily⟩: NOT FILED. EDGAR full-text search queried directly
     # for "Anthropic" under form S-1, 08-01..08-29: zero hits, EDGAR's own
     # timestamp 2026-08-29T15:10:43-04:00. Two days to the reported 08-31 date.
@@ -1566,6 +1614,19 @@ expectations:
       supplement from Destiny Tech100 Inc. (DXYZ), a closed-end fund holding
       private AI-lab stakes. Held pending because the window runs to end of
       day; a due date is not an outcome while the window is open.
+
+      FINAL CHECK 2026-09-01 ~10:00 ET: window (due 08-31, day precision) now
+      closed. Checked directly against SEC EDGAR twice this morning:
+      browse-edgar company search for "anthropic" returns "No matching
+      companies" (a harder negative than the 08-30/08-31 checks, which found
+      35 investor-SPV entries with "Anthropic" in the name but no issuer —
+      today even those aren't surfacing), and EDGAR's full-text-search API for
+      "Anthropic" restricted to form S-1 in the Aug 1-Sep 1 window returns zero
+      hits. A same-day search synthesis independently states "As of September
+      1, 2026, the S-1 filing remains confidential and has not been publicly
+      disclosed on SEC EDGAR." At least the fifth independent negative check
+      on this entry across two days. PASSED-SILENT — a clean day-precision
+      miss, not a "still open" case.
   - id: broadcom-q3-fy2026-earnings
     claim: "Broadcom reports fiscal Q3 2026, updating the custom-ASIC co-design book this map tracks across five named majors (Google, Meta, OpenAI, Apple, ByteDance)"
     due: 2026-09-02
@@ -1660,7 +1721,8 @@ expectations:
       intelligence") gets a Senate floor vote before the session ends
     due: 2026-08-31
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-08-31
     # 2026-08-29 ⟨daily⟩: NO SECOND VOTE YET. The bill's own status page,
     # re-read 08-29: Location "Senate"; Last Action 08/28/26 "Reconsideration
     # granted. (Ayes 40. Noes 0.)" — nothing dated 08-29. Alive but not
@@ -1715,6 +1777,16 @@ expectations:
       onto the second/third-reading track. That is a bill actively rescued for
       another attempt tonight, a different kind of pending from SB 1119's
       not-yet-reached. Held pending.
+
+      HIT 2026-09-01 (verified re: 2026-08-31 events): AB 2575 passed the
+      Senate floor 21 Ayes-10 Noes on 2026-08-31 (second attempt: failed
+      18-10 on 08-28, won reconsideration 40-0 same day, re-amended). The
+      Assembly then concurred in the Senate's amendments the same day,
+      sending the bill to Engrossing and Enrolling — cleared both chambers.
+      Verified directly against the Legislature's own bill-history record:
+      https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575
+      Now awaits presentment to Governor Newsom; no signature/veto yet. A
+      successor expectation `ca-ab2575-governor-action` tracks that next step.
   - id: project-camellia-community-panel-0826
     claim: >
       A community panel on OpenAI's Project Camellia data-center campus
@@ -2035,6 +2107,19 @@ expectations:
       and robotics as alternative end uses. What is filed is a generation-
       first campus looking for a load, not a data center that brought its
       own power. Correction applied to the where-the-capex-lands timeline.
+
+      SAME-DAY CHECK 2026-09-01 ~10:00 ET: still open. Forum confirmed still
+      scheduled for tonight, 6-8pm ET at the PIE Center in Cleveland, TN — no
+      report of postponement or cancellation. On the "does opposition organize
+      like Pataskala/Effingham" half of what_confirms: yes, already underway
+      before the forum even convenes — a group called the Hiwassee River
+      Alliance has formed specifically to oppose the project, and a precursor
+      community meeting in mid-August drew 150-200 people to organize against
+      it. One nuance: a Cleveland Daily Banner correction (run 08-29) states the
+      power plant's offtaker is still undetermined — could be an advanced
+      manufacturer/semiconductor fab rather than a data center — so "data
+      center" is the working assumption in most coverage, not a confirmed
+      tenant. Next check: the forum itself tonight, and again after 09-12.
   - id: tva-datacenter-rate-effective-1001
     claim: >
       TVA's new data-center wholesale power rate (~10% average billing
@@ -2215,7 +2300,8 @@ expectations:
       miss here means the bill dies for the session — the loud outcome.
     logged: 2026-08-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-08-31
     evidence: |
       2026-08-31 ~10:00 ET: STILL OPEN, held pending deliberately. Last dated
       action remains 08-28 ("read third time and amended, ordered to third
@@ -2252,6 +2338,20 @@ expectations:
       ("ordered to third reading"). Held pending rather than passed-silent: it
       has not slipped to a later date, it simply has not been reached on a
       long file with hours left before constitutional adjournment.
+
+      HIT 2026-09-01 (verified re: 2026-08-31 events): SB 1119 passed its
+      Assembly floor vote ("read third time, passed, ordered to the Senate")
+      on 2026-08-31, and the Senate concurred in the Assembly's 08-28
+      amendments 39 Ayes-0 Noes the same day, ordering the bill to Engrossing
+      and Enrolling. Verified directly against the Legislature's own
+      bill-history record:
+      https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB1119
+      Now awaits presentment to Governor Newsom; no signature/veto yet. A
+      successor expectation `ca-sb1119-governor-action` tracks that next step.
+      Note: SB 903 (Padilla, "no marketing a chatbot as therapy"), tracked
+      elsewhere on this map, also cleared both chambers the same day (Senate
+      concurred 40-0 on 08-31) — a `ca-sb903-governor-action` successor
+      expectation is added below for it too.
   - id: ca-ab1979-governor-action
     claim: >
       Governor Newsom signs or vetoes AB 1979 (Bonta) — consumer health
@@ -2273,6 +2373,45 @@ expectations:
       distinct from AB 2575's liability shift.
     logged: 2026-08-29
     logged_by: curate-add
+    status: pending
+
+  - id: ca-ab2575-governor-action
+    claim: "Gov. Newsom signs or vetoes California AB 2575 (AI-caused clinical-harm liability bill), which cleared both chambers 2026-08-31"
+    due: 2026-09-30
+    due_precision: day   # estimated — bill was ordered to Engrossing and Enrolling 08-31 but not yet formally presented to the Governor; the 30-day signing clock starts at presentment, which the record doesn't yet show
+    thread: ai-therapy-regulatory-reckoning
+    entities: [kaiser-permanente]
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575
+    confidence: reported
+    what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
+    logged: 2026-09-01
+    logged_by: curate-add   # successor to ca-ab2575-senate-floor-vote, resolved hit 08-31
+    status: pending
+
+  - id: ca-sb903-governor-action
+    claim: "Gov. Newsom signs or vetoes California SB 903 (bars marketing a chatbot as 'therapy'; requires licensed-professional oversight of AI in mental-health care), which cleared both chambers 2026-08-31"
+    due: 2026-09-30
+    due_precision: day   # estimated, same presentment-clock caveat as ca-ab2575-governor-action
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903
+    confidence: reported
+    what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
+    logged: 2026-09-01
+    logged_by: curate-add
+    status: pending
+
+  - id: ca-sb1119-governor-action
+    claim: "Gov. Newsom signs or vetoes California SB 1119 (children's companion-chatbot safety — annual child-safety risk assessments, real-time crisis referrals, AG-reported independent audits by 2027-07-01), which cleared both chambers 2026-08-31"
+    due: 2026-09-30
+    due_precision: day   # estimated, same presentment-clock caveat as ca-ab2575-governor-action
+    thread: state-therapy-chatbot-bans
+    entities: []
+    source: https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB1119
+    confidence: reported
+    what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
+    logged: 2026-09-01
+    logged_by: curate-add   # successor to ca-sb1119-assembly-floor-vote, resolved hit 08-31
     status: pending
 
   - id: ca-sb503-governor-action

@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-08-31
-status: building
+status: final
 window_start: 2026-08-31T05:00:00-04:00
 as_of: 2026-08-31T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-08-31
@@ -178,6 +178,45 @@ not against reporting about them.
   than a manufactured item.**
   <!-- k: t=mh-evidence-watch,bigtech-into-health,payer-ai-claim-denial e= axis=evidence -->
 
+## 🌙 Late catch — overnight into 09-01 morning
+
+*Caught by the 09-01 morning run's sweep, for events dated 08-31 (one
+dated 08-27) that fell after this digest's 15:00 ET cutoff, resolved after
+it, or were missed at the time.*
+
+- **All three of California's AI-in-mental-health bills cleared the
+  Legislature on adjournment day itself: AB 2575, SB 903 and SB 1119.**
+  AB 2575 (shifts liability for AI-caused clinical harm onto developers)
+  failed its Senate floor vote 18-10 on 08-28, won reconsideration 40-0
+  the same day, was re-amended, then passed 21-10 on 08-31 — the bare
+  majority needed — with Assembly concurrence the same day. SB 903 (bars
+  marketing a chatbot as "therapy") passed the Assembly 74-1 on 08-30 and
+  got Senate concurrence 40-0 on 08-31. SB 1119 (children's
+  companion-chatbot safety — annual risk assessments, real-time crisis
+  referrals, AG-audited by 2027-07-01) passed its Assembly floor vote and
+  got Senate concurrence 39-0, also 08-31. All three now sit at Engrossing
+  and Enrolling, awaiting presentment to Governor Newsom — none signed or
+  vetoed yet. A fourth, related bill (AB 2023, a SB 1119 companion) was
+  **not** voted on: its own author pulled it to the inactive file on
+  08-30, a deliberate stand-down rather than a loss. Three separate
+  AI-in-mental-health bills clearing the same session on the deadline
+  itself is the wave this map's threads were opened to track, arriving
+  all at once.
+  ([AB 2575](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260AB2575), [SB 903](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB903), [SB 1119](https://leginfo.legislature.ca.gov/faces/billHistoryClient.xhtml?bill_id=202520260SB1119))
+  <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans e=kaiser-permanente axis=regulation-and-legislation -->
+
+- 🕰 **Nurses protested Palantir's Timpani hospital-staffing system in
+  eight US cities on 08-27, HCA Healthcare named as the working example.**
+  National Nurses United's own release ties "HCA Inspire"/Timpani to "the
+  nationwide staffing crisis" and widens the fight beyond HCA to
+  Palantir's broader footprint (cited as managing "over one-fifth of U.S.
+  hospital beds"). First multi-city, nationally-coordinated action on this
+  thread's record. Dated 08-27, caught by the cold rotation — this map's
+  own 08-31 digest had spotted but deliberately left this one unentered
+  as "a note to the next crawl."
+  ([National Nurses United](https://www.nationalnursesunited.org/press/nnu-nurses-to-participate-in-nationwide-protests-against-palantir))
+  <!-- k: t=hca-healthcare e= axis=payers-providers-and-the-money -->
+
 ## ⏳ Upcoming & expected
 
 - ✅ **`ca-sb903-floor-vote` → HIT**, resolved 2026-08-30. Assembly passage
@@ -260,6 +299,53 @@ reason given above.
   `ai-therapy-regulatory-reckoning` already holds, so it may be an
   addition to that thread's watch terms rather than a thread of its own.
   **Track it, fold it in, or leave it?**
+
+## 🔍 Coverage critic — 2026-08-31 (finalize pass, 2026-09-01)
+
+**Two real misses, and the strongest Monday check this lens has run —
+three of four daily benchmarks published genuine dated editions, not a
+weekend-blackout excuse.**
+
+| benchmark | state | how it was established |
+| --- | --- | --- |
+| Behavioral Health Business | published, compared | Googlebot-UA feed, `lastBuildDate` Mon 31 Aug 21:02:59 GMT, two items dated 08-31 |
+| STAT Health Tech | dark (confirmed by cadence) | newest item 08-27; the newsletter's own copy states a Tue/Thu publishing schedule, so a Monday was never coming — a cleaner null than a checked-and-found-nothing dark |
+| Fierce Healthcare | published, compared | Googlebot-UA feed, ~8 items dated 08-31, 11:44am-5:08pm |
+| MobiHealthNews | published, compared | reader-proxy feed, three items dated 08-31, none mental-health-relevant |
+| JMIR Mental Health (weekly) | dark | newest entry 08-26 — nothing published in-window to compare against |
+| npj Digital Medicine (weekly) | published, compared | three 08-31 items, oncology/cardiometabolic/robotics-skewed; the one DTx-adjacent piece is cross-therapeutic-area, not mental-health-specific |
+| Psychiatric Services | unreachable | Cloudflare HTTP 403, a fifth consecutive blocked check, still absent from `sources/benchmarks.yaml` |
+
+**The two misses, both confirmed absent from the corpus by grep before
+being called misses:**
+
+1. **Fierce Healthcare: ~10 million Medicaid-expansion adults (20%) risk
+   losing coverage under OBBBA's work requirements over inconsistent work
+   hours.** Published 4:27pm ET 08-31, inside this digest's own
+   afternoon-cutoff window. This is the **third pass to name the
+   OBBBA/Medicaid gap** (08-29, 08-30, 08-31) and the first with a dated,
+   quantified seed — the "no real seed yet" objection that kept it a bare
+   watchlist proposal no longer holds. **Applied this run:** `OBBBA`,
+   `Medicaid work requirements` and `Medicaid redetermination` added to
+   this lens's watchlist.
+2. **Behavioral Health Business: SAMHSA data now shows stimulant use
+   disorder has overtaken opioid use disorder in US prevalence for the
+   first time** (4.5M affected, no FDA-approved medication, contingency
+   management the most effective but poorly reimbursed intervention).
+   Weaker — an analysis piece, not breaking news — and no thread
+   currently fits it; held as a one-source observation, not applied.
+
+**We had, they didn't:** all four benchmarks were silent on California's
+three AI-in-mental-health bills clearing the Legislature on adjournment
+day (this map has it from the Legislature's own roll-call, ahead of trade
+press for a third consecutive digest-day), on EO 14421, and on the
+Nurses/Timpani multi-city protest against HCA's Palantir-built staffing
+system.
+
+**Honest weight:** the daily-tier check is real and clean this pass; the
+academic tier remains the weak half — JMIR silent five days running,
+Psychiatric Services blocked a fifth consecutive time — so "no academic
+misses" here means one full panel was invisible, not that it was clean.
 
 ---
 California's legislature adjourns tonight and SB 903 is already through,

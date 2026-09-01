@@ -14,6 +14,11 @@ went near-zero and EPS missed — whether that combination is a one-quarter
 scare or the first real sign the spend is outrunning monetization. Part of
 `hyperscaler-capex-big-picture`.
 
+## 2026-08-31 — A Texas gubernatorial candidate made Meta's El Paso data center a campaign issue, calling for an emergency legislative session
+
+- **Democratic gubernatorial candidate and state representative Gina Hinojosa, campaigning in El Paso on 2026-08-31, called for "an emergency legislative session just on this issue so that we can hear from community members" on data-center regulation, naming Meta's Northeast El Paso project directly.** She criticized Governor Abbott's August directives as having "not changed a single thing about Meta or our data centers here," promised to void any contract that denies residents water they need, and said she'd reshape the Public Utility Commission through new appointments. Context: Meta's own reported water use for the site (400,000-500,000 gallons/day average, 2.5M gallons/day authorized max) against El Paso Water's 108M gallons/day total supply. This moves the thread's long-running El Paso local-pushback watch item into the state's November 3 gubernatorial race.
+  ([El Paso Matters](https://elpasomatters.org/2026/08/31/data-centers-texas-elections-2026-gina-hinojosa-greg-abbott-el-paso/)) ⟨daily 2026-09-01⟩
+
 ## 2026-07-29 — The capex discrepancy is resolved, against this map's number ⟨caught late⟩
 
 *Logged 2026-08-18 by the cold rotation. This thread's own watch text had

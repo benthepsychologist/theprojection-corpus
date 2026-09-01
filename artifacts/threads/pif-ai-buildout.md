@@ -21,6 +21,11 @@ this pass was UAE-only); and reconciliation of `board.yaml`'s $12.5B/yr
 AI thrust figure against this crawl's larger ~$21-23B HUMAIN deal-book
 tally.
 
+## 2026-08-31 — AMD/Cisco/HUMAIN's Saudi AI infrastructure goes live
+
+- **AMD, Cisco and HUMAIN (Saudi Arabia's state AI vehicle, PIF-backed) brought their jointly-built AI infrastructure online in Saudi Arabia**, confirmed via AMD's own investor-relations press release published 7:15am EDT on 08-31. ⚠️ This item published before this map's last recorded 08-31 15:00 ET cutoff and was missed by that run — caught here as an out-of-window gap-fill rather than same-day news.
+  ([AMD IR, primary](https://ir.amd.com)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-26 (late catch, added 2026-08-29) — HUMAIN lands a second named partner in as many days: Microsoft
 
 - **HUMAIN and Microsoft announced a long-term strategic collaboration to bring HUMAIN's Arabic-language ALLAM model onto Microsoft Foundry, and to pair HUMAIN's AI experts with Microsoft's Forward Deployed Engineers for enterprise rollouts across Saudi Arabia and the wider region — announced 08-26, one day after the Mistral deal already on this thread's 08-25 entry.** **Two blue-chip AI players signing named commercial partnerships with HUMAIN within 24 hours of each other is exactly the "outside demand filling Saudi capacity" evidence this thread's watch line asks for**, this time from a hyperscaler rather than a frontier lab. Unlike Mistral's "hundreds of millions of Euros," no dollar figure was disclosed on the Microsoft side — it reads as a model-distribution/enterprise-GTM deal rather than a compute-capacity commitment, narrower in kind than the Mistral one.

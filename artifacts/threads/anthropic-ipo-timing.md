@@ -12,6 +12,13 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-08-31 — Anthropic is preparing to publicly file for an IPO expected to match or beat SpaceX's record raise, "in coming weeks"
+
+- **Bloomberg reported 2026-08-31 that Anthropic is preparing to file publicly for its IPO, expected to raise as much as SpaceX's record $86.2 billion debut, if not more, "in the coming weeks."** This is a firming from the 08-20 report ("possible by month's end") — the filing did not happen by month's end, but the timeline is now reported as imminent rather than speculative, and other AI-themed IPO candidates (cloud firm Nscale, among others) are reportedly reworking their own listing timetables to avoid competing for investor attention once Anthropic files.
+  ([Bloomberg, via secondary coverage](https://finance.yahoo.com/markets/stocks/articles/anthropic-mega-ipo-plan-looms-130231591.html)) ⟨daily 2026-09-01⟩
+- ⚠️ **Separately, Bloomberg reported 2026-08-20 that Citigroup is being added to the underwriter roster**, alongside the previously-reported Goldman Sachs/Morgan Stanley/JPMorgan trio — not yet on this thread's record before now. Single-outlet (Bloomberg), not independently corroborated.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-08-20/anthropic-set-to-add-citigroup-to-top-ipo-banks-on-mega-listing)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-21 — The S-1 will name AI backlash as a risk factor, and the CFO is testing the waters
 
 - **Anthropic's forthcoming public S-1 will list public opposition to

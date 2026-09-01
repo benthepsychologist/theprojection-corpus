@@ -10,6 +10,13 @@ all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md — first
 dedicated crawl rides the /daily dispatch tiers.
 
+## 2026-08-27 — A federal judge ruled the Pentagon's "supply chain risk" label on Anthropic unlawful; DoD is appealing
+
+- **U.S. District Judge Rita Lin ruled Thursday evening, 2026-08-27, that the Pentagon's designation of Anthropic as a "supply chain risk" was unlawful on three separate grounds**: First Amendment retaliation against the company for its public safety positions, a violation of the Administrative Procedure Act ("arbitrary and capricious"), and denial of the pre-deprivation process required under the Fifth Amendment. Lin specifically noted the government's own position was self-contradicting — labeling Anthropic a security threat while simultaneously proposing to invoke the Defense Production Act (which designates firms as essential to national security) and continuing to pursue contracts with it. This resolves, in Anthropic's favor, the skepticism this thread logged at the 08-23 hearing.
+  ([CNN](https://www.cnn.com/2026/08/27/tech/anthropic-pentagon-supply-chain-risk-unlawful-hnk), [TechCrunch](https://techcrunch.com/2026/08/28/anthropic-gets-its-first-court-win-over-the-pentagons-supply-chain-risk-label/), [NPR](https://www.npr.org/2026/08/28/nx-s1-5947951/judge-says-the-pentagon-cant-designate-ai-company-anthropic-a-supply-chain-risk)) ⟨daily 2026-09-01⟩
+- **The ruling carries a 7-day stay, and the Defense Department has already filed a notice of appeal to the Ninth Circuit** — Under Secretary of Defense for Research and Engineering Emil Michael said the stay exists specifically to let the government appeal. Background: Hegseth designated Anthropic a supply chain risk in February 2026 after the company refused to remove guardrails preventing military use of Claude for autonomous weapons/mass surveillance; Anthropic sued in March; this is the first of two suits (California, decided; a separate DC suit remains open). No Ninth Circuit ruling has landed as of 09-01 — still open, not resolved. Anthropic's stated response: it "welcomes the court's ruling" and remains "focused on working productively with the government."
+  ⟨daily 2026-09-01⟩
+
 ## 2026-08-23 — A federal judge signals skepticism at the Pentagon's "supply chain risk" label on Anthropic
 
 - **A federal judge signalled skepticism at the Pentagon's "supply chain

@@ -11,6 +11,11 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-09-01 — The Nvidia-earnings relief rally gives way to a fresh pullback, driven by Iran and AI-debt-linked yields
+
+- **Renewed U.S.-Iran hostilities pushed oil higher and equities lower into Monday's close, and by Tuesday (09-01) morning, S&P 500 and Nasdaq-100 futures were down roughly 0.3%, with the Nasdaq Composite off 1.1% intraday and Nvidia, AMD and Micron each down around 2%.** The stated driver pairs geopolitics with this map's own debt-risk thesis: "soaring AI corporate debt issuance added to credit supply and lifted yields further," per market coverage — the 10-year Treasury yield rose to 4.754%, its highest since January 2025, and the 30-year to 5.255%. This is the same AI-debt-issuance-into-yields mechanism `ai-buildout-debt-risk` exists to track, now showing up as a same-day equity-market driver rather than a separate story.
+  ([Yahoo Finance/TheStreet market-today coverage, 2026-09-01](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-1-135016820.html)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-31 — The oil/Fed-driven risk-off froze rather than deepened or reversed through the session's first four hours
 
 - **From the 11:00 ET open through a ~15:03 ET check, the S&P 500, Nasdaq, and Dow moved by less than a tenth of a percentage point each** (S&P -0.45%→-0.46%, Nasdaq -0.43%→-0.42%, Dow -0.62%→-0.63%) — the broad-market leg of this morning's risk-off has neither reversed nor accelerated, it has simply held. Brent and WTI show the same pattern (Brent $90.23 vs. a morning range of $90.7-93; WTI $85.61 vs. ~$86 this morning) — still well above Friday's ~$88/$83 close, not extending further. September Fed-hike odds are also flat on the day (CME FedWatch ~60-62%, Kalshi ~47-48%, both matching this morning's read). The one component that kept moving through the afternoon is Treasury yields, not equities or oil — see the `treasury-long-end-intervention` entry above for the 10-year's push past 4.75%. (Google Finance, tradingeconomics.com, CNBC 2026-08-31 coverage) ⟨daily 2026-08-31⟩

@@ -17,6 +17,11 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-01 — Israeli-backed militia raid captures Hamas's head of internal security; covering strikes kill at least three
+
+- **A named, distinct operation rather than the low-boil strike pattern this thread has been carrying: an Israeli-backed Palestinian militia raid in Gaza City captured Mu'in al-Arabid, identified as Hamas's head of its General Security Apparatus, and Israeli air cover for the raid's withdrawal killed at least three Palestinians (one woman and two children) with eight more injured.** Defense Minister Israel Katz confirmed the capture and said strikes were aimed to "remove threats to security forces." The raid was exposed mid-operation, triggering clashes; a higher death toll (up to 8) circulating via Hamas-linked sources is not independently confirmed here. Israel denied any of its own casualties despite a Gaza government media office claim that Israeli special-forces personnel were hit.
+  ([Times of Israel](https://www.timesofisrael.com/idf-strikes-gaza-as-hamas-official-captured-in-reported-raid-by-israel-backed-militia-3-said-killed), [The National](https://www.thenationalnews.com/news/mena/2026/09/01/series-of-strikes-hit-gaza-amid-reports-of-commando-operation-and-clashes/), [Jerusalem Post](https://www.jpost.com/israel-news/defense-news/article-907213)) ⟨daily 2026-09-01⟩
+
 ## 2026-08-30 — Another strike on Deir al-Balah kills two, including a 3-year-old child
 
 - **An Israeli strike in Deir al-Balah, central Gaza, killed two Palestinians on 08-30, including a 3-year-old child, per medical sources; the IDF said it struck a Hamas militant and had "taken measures beforehand to minimize harm to civilians."** **Logged as continuation of the low-boil pattern this thread tracks, not escalation** — the same city where 08-29's hospital-adjacent strike on a Hamas commander was logged. ⚠️ **Palestinian medical-source casualty claim; IDF characterization of the target not independently verified.** ([Haaretz live blog](https://www.haaretz.com/israel-news/israel-security/2026-08-30/ty-article-live/.premium/idf-says-it-targeted-a-hamas-military-wing-commander-in-gaza-strip/000001a0-4f54-d649-a7be-df769da60000)) ⟨daily 2026-08-30⟩
