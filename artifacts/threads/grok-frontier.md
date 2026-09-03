@@ -13,6 +13,11 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-02 — Musk commits to a firm ship date for Grok 4.7 — September 12, 2.1T parameters
+
+- **Elon Musk posted on X that "Grok 4.7 comes out in 10 days," putting a specific calendar date (September 12) on a model whose ship date this map's own dated expectation has tracked only as a moving "3-4 weeks" window since 08-18.** He described it as 2.1T parameters (up from Grok 4.6's 1.5T, a ~40% increase), trained in part on SpaceX's own engineering corpus, "better than 4.6 in every way except slightly slower to serve," and predicted it would "surpass all models" — the same hype register the thread's own watch line already flags. This is the first time a specific day, rather than a week-range, has attached to Grok 4.7.
+  ([Elon Musk on X](https://x.com/elonmusk/status/2094983639780204846), [NextBigFuture](https://www.nextbigfuture.com/2026/09/spacexai-grok-4-7-releases-september-12.html), [BiGGo Finance](https://finance.biggo.com/news/cdeb763e-3e82-4f0b-82bd-4f473881bf08)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-15 — Nvidia's own books show the xAI bet converted into a $21B SpaceX stake
 
 - **Nvidia's Aug-14 13F filing disclosed a $21B SpaceX equity position —

@@ -393,8 +393,20 @@ expectations:
     # ⚠️ Sourcing caveat: x.com/elonmusk could not be fetched directly
     # (blocked); the 08-12 quote rests on three independent secondary
     # outlets quoting it consistently, not on the post itself.
-    due: 2026-09-15
-    due_precision: month
+    #
+    # 2026-09-02 ⟨daily⟩: TIGHTENED, not slipped. Musk posted on X that
+    # "Grok 4.7 comes out in 10 days" — i.e. 2026-09-12 — the first specific
+    # calendar day ever attached to this model, replacing the rolling
+    # week-range this entry has carried since 07-24. He described it as 2.1T
+    # parameters (up from Grok 4.6's 1.5T, ~40%), trained partly on SpaceX's
+    # own engineering corpus, "better than 4.6 in every way except slightly
+    # slower to serve." due moved 09-15 -> 09-12 and precision month -> day.
+    # NOT recorded as a slip: the date moved EARLIER and got more specific,
+    # which is the opposite of the failure mode this entry tracks. Same
+    # sourcing caveat as above — x.com still 403s; three independent outlets
+    # quote the post.
+    due: 2026-09-12
+    due_precision: day
     slips: [2026-08-21]
     status: pending
 
@@ -1425,7 +1437,7 @@ expectations:
 
   - id: israel-lebanon-rome-round-8
     claim: "Eighth round of Israel-Lebanon negotiations convenes in Rome"
-    due: 2026-09-01
+    due: 2026-09-15
     due_precision: day
     thread: israel-lebanon-escalation
     entities: []
@@ -1442,8 +1454,9 @@ expectations:
     # than one displacing the other, which is what makes the round
     # actually convening a real test rather than a formality. The seventh
     # round ended 08-06 with little resolved.
-    status: passed-silent
-    resolved: 2026-09-01
+    status: pending
+    slips:
+      - 2026-09-01
     evidence: |
       AFTERNOON RE-CHECK 2026-08-30 ~15:20 ET — independently corroborated,
       same conclusion. Asharq Al-Awsat has the US saying a new Rome round
@@ -1477,6 +1490,17 @@ expectations:
       immediate IDF pullback — read together with the round's non-appearance,
       this looks like the "expect a slip" trend continuing rather than a
       one-off no-show.
+
+      SLIPPED 2026-09-02 ~15:00 ET — the provisional passed-silent flip is
+      superseded inside its own 3-day grace, exactly as the convention
+      intends. Lebanese broadcaster MTV, relayed by the Malta News Agency
+      2026-09-02, reports the round is now expected 2026-09-15/16. Old date
+      09-01 pushed onto slips; due moved to 09-15 and status returned to
+      pending. Broadcaster-sourced, NOT government-confirmed — no Israeli,
+      Lebanese or US official has stated the date, and no explanation for the
+      two-week slip was given, so confidence stays at `reported` rather than
+      being raised.
+      https://www.maltanewsagency.com/2026/09/media-next-round-of-talks-between-lebanon-and-israel-to-be-held-in-rome-on-september-15-16/
   - id: iran-us-sanctions-package-aug24
     claim: "The US Treasury announces the Iran sanctions package Bessent has publicly promised — what he calls history's 'greatest coordinated economic isolation' of a country, paired with the existing blockade"
     due: 2026-08-24
@@ -2086,7 +2110,8 @@ expectations:
       data-center-plus-gas-generation campus, ahead of any zoning vote
     due: 2026-09-01
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-09-02
     confidence: confirmed
     thread: ai-datacenter-sites
     entities: []
@@ -2120,6 +2145,23 @@ expectations:
       manufacturer/semiconductor fab rather than a data center — so "data
       center" is the working assumption in most coverage, not a confirmed
       tenant. Next check: the forum itself tonight, and again after 09-12.
+
+      HIT 2026-09-02. The forum convened as scheduled, 09-01 18:00-20:00 ET
+      at the Cleveland PIE Center. Both halves of what_confirms are answered:
+      the forum happened, and opposition did organize the way it did in
+      Pataskala and Effingham — a packed, vocally hostile room ("Packed
+      Bradley County crowd opposes Project River data center campus," per the
+      Chattanooga Times Free Press's own headline), jeers and boos at the
+      disclosure of 380-500 timber trucks a day, and named residents saying
+      their concerns went unaddressed. One union speaker (Matthew Johnson, UA
+      Local 43) spoke in favour, citing jobs. NOT resolved into a decision:
+      no vote, no rezoning or annexation date, and developers restated there
+      is still no signed power contract and that engineering is only 20-30%
+      complete. The successor expectation is project-river-second-forum-0912.
+      ⚠️ No article names the Hiwassee River Alliance as present or organizing
+      at this specific event — the opposition visible in coverage reads as
+      general resident turnout, not a named bloc, so the alliance's role stays
+      unconfirmed rather than assumed.
   - id: tva-datacenter-rate-effective-1001
     claim: >
       TVA's new data-center wholesale power rate (~10% average billing
@@ -2485,5 +2527,50 @@ expectations:
       from 2026-08-26; Sec. 4(b) then gives the FAR Council 90 days to
       consider proposing the recommendations for public comment.
     logged: 2026-08-31
+    logged_by: curate-add
+    status: pending
+
+  - id: project-river-second-forum-0912
+    claim: >
+      Second public forum on "Project River," the $11.3bn Bradley County TN
+      data-center-plus-gas-generation campus, 10am-noon at the Cleveland PIE
+      Center — successor to project-river-public-forums-0901, which hit
+    due: 2026-09-12
+    due_precision: day
+    thread: ai-datacenter-sites
+    entities: []
+    source: https://www.clevelandbanner.com/news/project-river-panel-faces-outraged-residents-during-community-meeting-tuesday/article_f6319877-72f3-58ca-99ac-5902571e7c3c.html
+    confidence: confirmed
+    what_confirms: >
+      the second forum happening, and — the open question the first one did
+      not answer — whether it produces any rezoning or annexation vote date.
+      The first forum drew a packed, hostile room and jeers at the 380-500
+      timber-trucks-a-day disclosure, but ended with no vote, no decision,
+      no signed power off-taker, and engineering only 20-30% complete.
+    logged: 2026-09-02
+    logged_by: curate-add
+    status: pending
+
+  - id: anthropic-dow-stay-expiry
+    claim: >
+      The 7-day administrative stay on Judge Rita Lin's 2026-08-27 final
+      judgment and permanent injunction against the Pentagon (Anthropic v.
+      DoW, 3:26-cv-01996-RFL, N.D. Cal.) expires
+    due: 2026-09-03
+    due_precision: day
+    thread: dod-ai-consolidation
+    entities: [anthropic]
+    source: https://www.courtlistener.com/docket/72379655/
+    confidence: confirmed
+    what_confirms: >
+      whether a notice of appeal is actually filed once the stay lapses.
+      This entry exists BECAUSE the map got this wrong: dod-ai-consolidation
+      asserted an appeal had already been filed, and a live docket check on
+      09-02 showed the docket ends at judgment and "Civil Case Terminated"
+      with nothing after it. The stay expiring is the real, checkable event;
+      the appeal is the open question. Distinct from
+      anthropic-dow-appeal-window (due 09-28), which tracks the full appeal
+      deadline rather than the stay.
+    logged: 2026-09-02
     logged_by: curate-add
     status: pending

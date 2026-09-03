@@ -1,0 +1,53 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-09-01'
+  to: '2026-09-02'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: false
+  terms_swept: 122
+fetched_at: '2026-09-02T14:10:42Z'
+items:
+- id: 9cef36228cfea5b6d87beb240009d17fa00f7d67
+  url: https://www.semanticscholar.org/paper/9cef36228cfea5b6d87beb240009d17fa00f7d67
+  ts: '2026-09-01T00:00:00Z'
+- id: 377b3044d216da70f0e60049564d68783f42cd6c
+  url: https://doi.org/10.11591/ijphs.v15i3.26921
+  ts: '2026-09-01T00:00:00Z'
+- id: ea5247b1d0c6adb46cd5bd86455395aa282c749a
+  url: https://doi.org/10.55131/jphd/2026/240324
+  ts: '2026-09-01T00:00:00Z'
+- id: a0b883507f0249e53ff95944f7c0ea6cd4c75a12
+  url: https://doi.org/10.33024/mnj.v8i9.26846
+  ts: '2026-09-01T00:00:00Z'
+- id: 12a27296139e60026f414bfdb8b45d2f5732f81c
+  url: https://doi.org/10.11591/ijphs.v15i3.27000
+  ts: '2026-09-01T00:00:00Z'
+- id: 4b6347e3ade18183319824e7e9b4f1e3a296b24c
+  url: https://doi.org/10.1109/MCOMSTD.2025.3616108
+  ts: '2026-09-01T00:00:00Z'
+- id: 8fff3c1faced0f8d385ffe98cce2f466c40fe09d
+  url: https://doi.org/10.33024/mnj.v8i9.25823
+  ts: '2026-09-01T00:00:00Z'
+- id: f58380bc64d14667f1ede5f61a261fa615f34934
+  url: https://doi.org/10.1109/MIOT.2026.3703989
+  ts: '2026-09-01T00:00:00Z'
+- id: a318566599e4825b84eabe19391f9c361176a7d2
+  url: https://doi.org/10.1016/j.jad.2026.121893
+  ts: '2026-09-01T00:00:00Z'
+- id: 0d5580bed28f049e69a1fe3c318cda207ab0ca0c
+  url: https://doi.org/10.1016/j.evolhumbehav.2026.106936
+  ts: '2026-09-01T00:00:00Z'
+- id: c412b447c0043723a2f3adcf0f95e89dcc6bcf91
+  url: https://doi.org/10.56315/pscf9-26walton
+  ts: '2026-09-01T00:00:00Z'
+- id: d95f52e87dab657fd8059c42d6be266f8abe37ec
+  url: https://doi.org/10.7810/9781991301819
+  ts: '2026-09-01T00:00:00Z'
+- id: c4655ba9413cfc91bd9993a5aa28008046cac2a9
+  url: https://doi.org/10.56315/pscf9-26kingsnorth
+  ts: '2026-09-01T00:00:00Z'
+- id: 43d168733163ab0ac05fbd8ddce37529d3932611
+  url: https://doi.org/10.3366/cfs.2026.0177
+  ts: '2026-09-01T00:00:00Z'

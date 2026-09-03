@@ -5216,3 +5216,189 @@ flood, and now EO 14421.
   gone as of this pass, but it and Axios Pro Rata share a different, more
   fundamental problem for this critic's purpose: both are same-day-only
   rolling pages with no archive, useless for auditing any date but today.
+
+---
+
+## 2026-09-02 critic pass — finalized digest-day 2026-09-01
+
+*Three critic agents, one per critic-bearing lens (world-news carries no
+benchmark critic by design). Run at ~10:00 ET on the finalize pass, roughly
+five hours after the 09-01 digest-day closed.*
+
+### frontier-ai / 2026-09-01
+- **Missed:** Runway's **"Solaris"** — an "Interface World Model" that
+  renders a website or app's interface frame-by-frame as the user clicks
+  and drags, with no code running underneath, pairing Runway's Gen-4.5
+  video model with an LLM interpreting each interaction. Published on
+  Runway's own site 2026-08-31T21:16:00Z. **Three of four daily benchmarks
+  led their 09-01 edition with it** (The Rundown AI, TLDR AI, The Neuron).
+  Runway's own evaluation: 250 testers, ~7,500 pairwise judgments,
+  preferring Solaris-generated interfaces over pages coded by **Claude Opus
+  5** in **71%** of natural-behavior comparisons (vs 21%) and **61%** on
+  instruction-following (vs 24%). This map had **zero mentions of Runway
+  anywhere** in `artifacts/` or `attention/`.
+- **Check strength:** the strongest this lens has run. All four benchmarks
+  date-verified; The AI Daily Brief genuinely dark (its own homepage
+  episode list tops out at 08-31 — an unexplained Tuesday gap that does not
+  match its documented Saturday-only cadence, and the second such weekday
+  miss on record). No unreachable states. This is a real miss, not a null
+  result manufactured by dark feeds.
+- ⚠️ **This is a curation failure, not a coverage gap, and that distinction
+  matters.** The story sat in this map's own collector buffer TWICE before
+  the critic found it: `google_news_rss` caught it at 2026-08-31T18:05:22Z
+  (on a stray "xAI" term match) and again at 2026-09-01T12:03:27Z (on "Muse
+  Code"). Two days, uncurated. **This is the same shape as the CXMT HBM3E
+  item the 08-31 pass logged — twice in three days.** Worth a process fix
+  rather than a per-incident note: the buffer is being collected and not
+  read.
+- **Structural blind spot:** the entity roster on this lens is built around
+  compute-scale frontier labs and the China stack. A mid-tier lab shipping
+  a genuinely novel model *category* has no seam to land on. Distinct from
+  the standing `open-agent-tooling` gap, which is about agent tooling.
+- **Map effect:** `runway` added to the ai watchlist as a tracked entity,
+  sweep term **"Runway AI"** rather than bare "Runway" — the critic's own
+  grep showed bare "runway" collides with cash-runway language in financial
+  copy, which is exactly why the map's earlier greps came back clean. A
+  thread candidate offered (own thread vs. widening `enterprise-agent-
+  product-race`, which is entity-scoped to Anthropic/DeepMind/Mistral and
+  would need its scope changed) rather than promoted on one data point.
+  `open-agent-tooling` re-offered, second and final time.
+
+### global-capital / 2026-09-01
+- **Missed:** Japan's 10-year JGB crossing **3% for the first time since
+  1996** (up 6bp intraday; yen at 160.1/USD, third straight session through
+  the intervention-watch level), with **US Treasury Secretary Scott Bessent
+  publicly pressing Tokyo and the BOJ for rate hikes** on CNBC — "I have
+  information that the market doesn't have... it's my belief that the
+  Japanese government and the BOJ will do the things that will lead to a
+  stronger yen." The transmission risk is the reason it belongs here: Japan
+  is the largest foreign holder of US Treasurys, so a JGB-financed yen
+  intervention could mean Japan selling Treasurys exactly as the US long
+  end is already under pressure. **A second, minor miss:** GoPro's $285m
+  merger with Starman Optical, framed as an AI-infrastructure/defense pivot
+  and driven partly by meme-stock dynamics (YouTuber Markiplier holding
+  8.5% as largest shareholder).
+- **Check strength:** weak by benchmark count — **1 of 4 load-bearing** —
+  and the weakness is structural, not effort. Only Money Stuff gave a
+  genuine dated comparison. FT Unhedged's 09-01 edition exists and is
+  on-topic (Warsh's monetary philosophy) but the reader proxy returned
+  **zero article text**, harder than the 08-25 note's "headline confirmed,
+  body paywalled." Axios Pro Rata and Bloomberg Technology reconfirmed as
+  same-day-only rolling pages with no dated archive — **these two should
+  stop being re-tested as if a different result were possible.** The one
+  finding came from looking past the benchmark set entirely.
+- **Structural blind spot, now with a dated instance:** all four daily
+  benchmarks on this lens are US/UK financial press, and none is structured
+  to lead with an Asia-desk story even when it is this lens-relevant.
+  `capital-context.yaml` has recorded twice that its reading is "almost
+  entirely US-Fed-framed" with a BOJ/JGB leg deferred as a /week-scale gap.
+  **09-01 is the day that deferral came due.** This does not add to the
+  wire-service-backstop count (still six) — it is the same defect one level
+  down, inside a single lens's benchmark set rather than across general news.
+- **Map effect:** `Japan 10-year yield`, `JGB`, `Bank of Japan rate hike`
+  and `yen intervention` added to the global-capital watchlist. The JGB
+  crossing entered as a timeline entry on `ai-buildout-debt-risk`. A thread
+  candidate offered: promote the BOJ/JGB leg to a real sub-thread or
+  explicit cross-reference, on two dated instances five weeks apart
+  (08-19 and 09-01) rather than one. GoPro/Starman not applied — one
+  instance of an interesting shape, no thread opened.
+
+### mental-health / 2026-09-01
+- **Missed:** (1) **JMIR Mental Health published two AI-chatbot studies the
+  same day**, both squarely on `ai-therapy-evidence` — a GPT-4o
+  behavioral-activation chatbot for simulated 14-29-year-olds scored
+  3.94/6 on holistic quality by ten licensed psychotherapists against a
+  14-item clinical scale ([e94781](https://mental.jmir.org/2026/1/e94781)),
+  and a 349-respondent two-sample Belgian cross-sectional survey finding
+  real-world chatbot users are mostly already in professional care and
+  bring personal rather than crisis topics
+  ([e104316](https://mental.jmir.org/2026/1/e104316)). (2) **SAMHSA's $77M
+  in new behavioral-health grants**, announced 08-31 on Overdose Awareness
+  Day — $12.2M Strategic Prevention Framework Partnerships for Success,
+  $10M state-level prevention partnerships, $9.6M Building Communities of
+  Recovery. (3) Weaker: a JAMA Psychiatry analysis on cannabis use disorder
+  climbing (15.3M in 2021 to 19.3M in 2025 per NSDUH), sharpest among women
+  and under-26s, while alcohol use disorder holds flat.
+- **Check strength:** all four daily benchmarks published live, dated 09-01
+  editions and were reachable — the strongest possible starting position —
+  but none of their 09-01 items was mental-health-specific, so **none of
+  the three misses came from the daily tier at all.** Two of the four could
+  only be checked at RSS-description depth: Fierce Healthcare's article
+  pages are Cloudflare-gated even with the documented Googlebot UA and its
+  r.jina.ai workaround returned a domain-wide rate-limit error today; STAT's
+  bodies are paywalled past two paragraphs. Psychiatric Services blocked a
+  sixth consecutive time and is still absent from `sources/benchmarks.yaml`.
+- **Structural blind spot — the tiering is systematically late on same-day
+  academic findings.** JMIR sits in `weekly_add` on the theory that journals
+  publish on journal cadence. It published twice today, both directly on
+  this lens's flagship evidence thread, and nothing in the standing rotation
+  would have caught either. **Recommendation on record: move JMIR (and
+  ideally npj Digital Medicine) to every-pass checking** — the cost is one
+  feed fetch.
+- **Map effect:** both JMIR papers entered as timeline entries on
+  `ai-therapy-evidence`. `National Survey on Drug Use and Health` and
+  `NSDUH` added to the mental-health watchlist — the critic's argument, and
+  the reason this is a watchlist add rather than two orphaned entries, is
+  that the cannabis finding and the 08-31 stimulant-use-disorder finding
+  trace to the SAME underlying federal survey rather than to either
+  write-up: **watch the survey, not the trade-press riffs on it.** SAMHSA's
+  $77M held as a watchlist candidate rather than forced onto a mismatched
+  thread — a second dated federal behavioral-health funding action would be
+  the seed for a real thread.
+- **No new wire-service-backstop instance this pass** — all three misses
+  came from named benchmarks, not from a general-news gap. The count stays
+  at **six** (Niger, OpenAI/Cursor cutoff, King Harald V's death, the
+  Nepal-Tibet flood, EO 14421, the 09-01 Horn of Africa finding).
+
+### Access-transport notes worth keeping
+- **TLDR AI's access method was undocumented and now is.** The direct URL
+  is a client-rendered Next.js app returning no article text via plain curl
+  (HTTP 200, body is all `<script>` references). The dated-archive pattern
+  `tldr.tech/ai/YYYY-MM-DD` works cleanly through the r.jina.ai reader
+  proxy, returning the full newsletter as markdown.
+- **The AI Daily Brief's homepage episode list is the cheap "did they
+  publish" check** — it lists recent `/e/YYYY-MM-DD` links directly, which
+  is stronger evidence of a real gap than a single 404 probe on a guessed
+  URL.
+- **The Rundown AI's feed is reachable direct today** (`therundown.ai/feed`,
+  HTTP 200, no proxy) — consistent with the file's existing "re-test rather
+  than trusting this note" caveat. Its `<category>ai</category>` tag is
+  reliable for filtering the AI edition out of the mixed feed.
+- **Behavioral Health Business: the `www` subdomain is now a dead end.**
+  `www.bhbusiness.com/feed/` 301-redirects to the bare domain but returns
+  an empty body even following the redirect. Use `bhbusiness.com/feed/`
+  directly with a Googlebot UA — it carries full `content:encoded` bodies,
+  so BHB needs no article-page fetches at all.
+- **Fierce Healthcare is currently reachable but not auditable** —
+  Cloudflare JS challenge on article pages even with Googlebot UA, AND an
+  explicit r.jina.ai domain-wide rate-limit ("blocked until Wed Sep 02 2026
+  15:00:46 GMT... DDoS attack suspected"). Only RSS title/description/
+  pubDate are checkable. Re-test rather than assuming either block persists.
+- **JMIR Mental Health's feed uses Atom `<updated>`, not RSS `<pubDate>`** —
+  grepping for `<pubDate>` returns nothing and makes a live feed look dead.
+- **npj Digital Medicine's documented feed URL 303-redirects** — needs
+  `curl -L`; a non-following fetch returns an empty stub that also looks
+  like a dead feed.
+- **FT Unhedged's paywall hardened.** The `?format=rss` endpoint still
+  confirms existence and headline, but today the reader-proxy fetch of the
+  linked article returned only FT's subscription template — zero body text,
+  worse than the 08-25 note implied.
+- **CourtListener docket workaround, for any future court-docket sweep in
+  this corpus:** the REST docket-detail endpoint (`/api/rest/v4/dockets/
+  <id>/`) requires auth and 403s, and WebFetch 403s on courtlistener.com
+  generally — but the search endpoint (`/api/rest/v4/search/?type=r`) and
+  the plain HTML docket pages fetched via `curl` with a browser user-agent
+  both work unauthenticated. This is what caught the false notice-of-appeal
+  claim on `dod-ai-consolidation`.
+
+### ⚠️ Standing asks, unchanged and now older
+- **A wire-service/general-news backstop** remains argued-for and unacted-on
+  at six documented misses. No seventh this pass.
+- **`sources/benchmarks.yaml`'s comment block** should record that Axios Pro
+  Rata and Bloomberg Technology have **no dated-archive path at all** — a
+  stronger and more useful statement than the current CAPTCHA-risk note,
+  because it means a day-late critic pass structurally cannot audit them and
+  should stop trying.
+- **`gcloud auth login`** for `bq` — day seventeen. `attention/world-news.yaml`
+  is still frozen at 08-25, so the mechanical world-news candidate pool has
+  fed nothing into thread candidates for over a week.

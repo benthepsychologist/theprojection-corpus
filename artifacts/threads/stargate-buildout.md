@@ -11,6 +11,10 @@ opened: 2026-06-28
 *Watch:* ~$500B / ~10 GW JV (OpenAI/SoftBank/Oracle/MGX); sites actually
 energized, financing/grid bottlenecks, sovereign terms, slippage.
 
+## 2026-09-01 — SB Energy's OpenAI warrants rose to $5.5bn by end-June, and the anchor-tenant incentive package is now multi-source corroborated
+
+- **SB Energy — the SoftBank/Masayoshi Son-majority-owned developer of the Ohio "PORTS" Stargate campus in Pike County — issued OpenAI stock warrants that were valued at $3.6bn in January and had risen to $5.5bn by the end of June, an incentive to secure OpenAI as anchor tenant**, per WSJ's review of SB Energy's draft IPO documents (SB Energy filed its actual S-1 on 09-01, already on this map via yesterday's digest's $439bn-backlog/$3.21bn-net-loss entry). OpenAI separately put $500m of equity into SB Energy and pledged to spend at least $50m on OpenAI products including ChatGPT Enterprise by 2028; OpenAI has executed 17 lease agreements for roughly 8GW of computing capacity at the Ohio site, which is backed by 10GW of planned power infrastructure and remains fully pre-construction with no operational buildings yet. This map's own 08-31 frontier-ai digest flagged this exact figure as "a third, weaker candidate... single-source, and WSJ's own text was unreadable through every transport on file" — it is now corroborated across at least six outlets (Yahoo Finance, Business Recorder, AI Weekly, Techstrong.ai, BigGo, thenews.com.pk) citing the same WSJ reporting, clearing the bar this map held it to. ([Yahoo Finance, citing WSJ](https://finance.yahoo.com/technology/ai/articles/softbank-sb-energy-gave-openai-115437263.html), [Business Recorder](https://www.brecorder.com/news/40437215/openai-issued-warrants-worth-55-billion-in-sb-energy-wsj-reports)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-17 — The Ohio backstop talks become a signed deal: OpenAI named customer for the full 8 IT-GW
 
 - **Nvidia, OpenAI and SoftBank's SB Energy jointly announced the

@@ -39,6 +39,18 @@ lenses:
       - "Meta AI"
       - "Mistral AI"
       - "Safe Superintelligence"
+      - term: "Runway AI"
+        entity: runway
+        name: "Runway"
+        # critic-add 2026-09-02 (frontier-ai coverage critic, digest-day
+        # 09-01): three of four daily benchmarks led with Runway's "Solaris"
+        # — a new model category rendering software interfaces frame-by-frame
+        # with no code underneath — and this map had zero mentions of the lab
+        # anywhere. It shipped a 250-evaluator study benchmarking itself
+        # directly against Claude Opus 5, so it is a frontier-lens entity, not
+        # a creative-tools one. Sweep term is "Runway AI", not bare "Runway":
+        # the critic's own grep showed bare "runway" collides with cash-runway
+        # language in financial copy.
       - "DeepSeek"
       - "Alibaba"          # the company — distinct from "Alibaba Qwen" below
                            # (the model-level entity). Added 2026-08-25: this
@@ -440,6 +452,14 @@ lenses:
       - "OBBBA Medicaid"   # critic-add 2026-09-01: the third pass (08-29, 08-30, 08-31) to name this gap, and the first with a dated seed — Fierce Healthcare's 08-31 study (~10M expansion-state adults, 20%, at risk of losing coverage over inconsistent work hours) led its benchmark with zero footprint here despite behavioral-health services sitting inside the same coverage-churn exposure
       - "Medicaid work requirements"   # critic-add 2026-09-01, same finding
       - "Medicaid redetermination"   # critic-add 2026-09-01, same finding
+      # critic-add 2026-09-02 (mental-health coverage critic, digest-day
+      # 09-01): the second substance-use-trend finding in under a week
+      # (cannabis use disorder 15.3M→19.3M 2021-2025, after the 08-31 pass's
+      # stimulant-use-disorder item) traces back to the SAME underlying
+      # federal survey rather than to either write-up. The critic's own
+      # argument: watch the survey, not the trade-press riffs on it.
+      - "National Survey on Drug Use and Health"
+      - "NSDUH"
 
     # Health-condition / intervention strings for ClinicalTrials.gov (mh lens only)
     conditions:
@@ -662,3 +682,15 @@ lenses:
       - "sovereign wealth fund AI"
       - "Federal Reserve rate decision"
       - "Fed chair"   # auto-added 2026-08-02 (critic), with the Warsh add above
+      # critic-add 2026-09-02 (global-capital coverage critic, digest-day
+      # 09-01): Japan's 10-year JGB crossed 3% on 09-01, its first time since
+      # 1996, with Treasury Secretary Bessent publicly pressing Tokyo and the
+      # BOJ on rate hikes — and none of this lens's four daily benchmarks is
+      # structured to lead with an Asia-desk story, so it had to be found by
+      # general search. capital-context.yaml has twice recorded that its
+      # reading is "almost entirely US-Fed-framed" with the BOJ/JGB leg an
+      # open gap; these terms close the collection half of it.
+      - "Japan 10-year yield"
+      - "JGB"
+      - "Bank of Japan rate hike"
+      - "yen intervention"

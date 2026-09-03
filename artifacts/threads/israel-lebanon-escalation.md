@@ -5,6 +5,11 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-09-02 — A Lebanese broadcaster puts the eighth Rome round at September 15-16, turning a silent date into a two-week slip
+
+- **The eighth Rome round did not convene on its 09-01 date, and today gives the first concrete replacement: Lebanese broadcaster MTV reports the round is now expected September 15-16.** That converts this map's ledger entry from `passed-silent` to `slipped` — a roughly two-week delay rather than a collapse of the track. ⚠️ **Broadcaster-sourced, not government-confirmed:** neither the Israeli, Lebanese, nor US government has stated the date, and no explanation for the slip was given in the reporting. Read alongside yesterday's entry, which recorded the two frictions plausibly behind it — Israeli dissatisfaction with the Lebanese army's disarmament pace, and Lebanese officers resisting an immediate IDF pullback.
+  ([Malta News Agency, citing MTV](https://www.maltanewsagency.com/2026/09/media-next-round-of-talks-between-lebanon-and-israel-to-be-held-in-rome-on-september-15-16/)) ⟨daily 2026-09-02⟩
+
 ## 2026-09-01 — Israel voices dissatisfaction with disarmament progress; Lebanese army officers said to resist an IDF pullout
 
 - **A new wrinkle on why the withdrawal track is stuck, reported hours before an eighth Rome negotiating round was supposedly due (which did not produce confirmed evidence of convening — see the upcoming.yaml ledger): Israel is privately unhappy with the Lebanese army's pace of disarming Hezbollah inside the pilot zones, while Lebanese army officers are separately reported opposing any immediate IDF pullback for fear Hezbollah would reoccupy the ground.** Per Israel's Kan public broadcaster, both frictions are live at once. An unnamed senior US official, quoted the same morning, said only "we are working with both sides to reach a future arrangement, but it will take time."

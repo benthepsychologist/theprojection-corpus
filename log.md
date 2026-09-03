@@ -7619,3 +7619,200 @@ addition to `sources/benchmarks.yaml` (now a sixth-miss argument, not
 fifth), and `sources/benchmarks.yaml`'s own comment block should record
 that Axios Pro Rata and Bloomberg Technology have no dated-archive path at
 all, not just a CAPTCHA-risk note.
+
+---
+
+## 2026-09-02 ~15:00 ET (Wednesday) — /daily: yesterday's lead story was off by a factor of five, two of the day's three corrections were corrections to our own corrections, and the news collectors did not run
+
+**Finalized 09-01 (all four lenses + front), opened 09-02.** This run picked
+up a partially-completed morning pass: an earlier session at ~10:00 ET had
+dispatched eight hot-cluster sweeps plus three coverage critics, staged all
+eleven reports to `buffer/sweeps/2026-09-02/`, and merged their timeline
+entries into 24 thread files — then stopped before any digest, ledger,
+graph, readout, log or commit work. Everything downstream of the merge was
+done in this run, plus five fresh cluster sweeps covering the 10:00→15:00 ET
+market-hours window that the morning pass could not have seen.
+
+**The biggest single finding is a revision to yesterday's lead story.** The
+09-01 US strike wave on Iran, which this map called the widest single-day
+spread of the war at "seven-plus sites," in fact hit **roughly 100 targets**
+and included the **first direct US strikes on Iranian government tankers**,
+under a newly Trump-approved and explicitly named **"tanker for tanker"**
+retaliation policy — drones firing into the engine rooms of two tankers
+anchored north of the blockade line. An undercount by a factor of five on
+the day's own lead. Iran had already answered by striking or targeting four
+countries in one wave (Jordan, Bahrain, Kuwait, Iraq's Erbil base) — the
+first time Bahrain and Iraq both appear in the same Iranian response.
+
+**Three corrections landed and two of them are corrections to corrections
+this map made itself. That is the pattern worth carrying forward.**
+
+1. **Nvidia's SB Energy investment: $1.5bn → $3.0bn.** On 08-17 this map
+   read Nvidia's own press release as capping the figure at $1.5bn and
+   explicitly "corrected" weekend reports of "up to $3B" as pre-announcement
+   talk. Reading the actual S-1 (accession 0001628280-26-059639) shows two
+   instruments dated the same day — a $1.5bn Prepaid Forward Contract,
+   already funded and spent, plus a $1.5bn Class N private placement closing
+   with the IPO — "an investment from NVIDIA of $3.0 billion in total," in
+   the filing's own words. **The weekend reports were closer to right and
+   our correction was the error.** The lesson is narrow and reusable: a
+   press release is a primary source about what a company chose to *say*,
+   not about what it *did*.
+2. **`dod-ai-consolidation` asserted the Pentagon "has already filed a
+   notice of appeal" from the 08-27 ruling. No such filing exists.** A live
+   N.D. Cal. docket check (3:26-cv-01996-RFL) shows the last entries are the
+   order, order of final relief, judgment and "Civil Case Terminated." The
+   entry had conflated the March/April preliminary-injunction appeal cycle
+   with the August ruling — and `frontier-model-gov-review-precedent` had
+   been recording the correct fact since 08-29, so this was an internal
+   contradiction sitting in the map for five days.
+3. **The Hormuz tanker strikes were neither casualty-free nor
+   unattributed.** Bahri confirmed two Filipino seafarers died aboard the
+   *Sidr*; Saudi Arabia's Foreign Ministry directly attributed the strike to
+   Iran. Iran's IRGC still calls it a sea mine, so the mechanism stays
+   disputed — but both halves of the original entry are superseded. ⚠️ Note
+   for the next run: the morning pass merged this correction onto
+   `red-sea-oil-shock` but **missed the mirrored claim on
+   `iran-conflict-widening`**, which this run fixed. A correction that
+   touches two threads has to be applied to both.
+
+**All three coverage critics found something real, and the frontier-AI one
+is a process failure rather than a coverage gap.** Three of four AI
+benchmarks led 09-01 with Runway's "Solaris" — an "Interface World Model"
+rendering software interfaces frame-by-frame with no code underneath,
+claiming 71%/61% preference wins over pages coded by Claude Opus 5 across
+250 testers and ~7,500 pairwise judgments — and this map had **zero mentions
+of Runway anywhere.** ⚠️ **It sat in our own collector buffer twice, two days
+running, uncurated** (caught on a stray "xAI" term match 08-31T18:05:22Z,
+and again on "Muse Code" 09-01T12:03:27Z). **This is the same
+collector-caught-it/curation-dropped-it shape as the CXMT HBM3E item on
+08-31 — twice in three days.** Worth a process fix rather than a third
+per-incident note; the buffer is being collected and not read. Global
+capital missed Japan's 10-year JGB crossing 3% for the first time since
+1996 with Bessent publicly pressing Tokyo to hike — the concrete instance of
+a BOJ/JGB blind spot `capital-context.yaml` had twice flagged as
+theoretical. Mental health missed the largest AI mental-health safety
+evaluation on record (Transluce: 50,000+ simulated conversations, 77 model
+variants, first cross-model delusion-reinforcement rates at 69-82% for older
+models vs. ~2-36% for newer) plus two same-day JMIR papers landing directly
+on `ai-therapy-evidence`.
+
+**The mental-health lens's own 15:00 ET read on 09-01 called the day "quiet
+by design, not by gap." It was wrong by five items.** That reading is kept
+in the finalized digest rather than rewritten, with a ⚠️ above it, because
+the gap between the 15:00 verdict and the 🌙 late catch is the finding.
+
+**Today itself:** two long-running fights closed. Commerce Secretary Lutnick
+said publicly **"we trust Anthropic"** and that the company is "back on the
+right side" — ending a dispute that ran most of 2026, with the export
+controls on Claude Mythos 5 / Claude Fable 5 already lifted; Tom Brown
+reportedly led the reconciliation. **What it does not resolve:** Claude is
+still absent from GenAI.mil, which added ChatGPT Mil and Grok for Government
+on 08-31 at Impact Level 5 for ~3m DoD personnel. Musk put a firm date on
+**Grok 4.7: September 12**, 2.1T params — the first specific day ever
+attached to it. On macro, the 10-year hit ~4.81% (highest since Nov 2023)
+inside a genuinely global selloff, while ADP printed +38,000 against ~48,000
+consensus — two facts arguing opposite ways on the same September decision,
+unresolved. Ukraine **split its air-raid siren into yellow (drones) and red
+(missiles) tiers** after a seventh straight night on Kyiv.
+
+**Ledger:** `israel-lebanon-rome-round-8` **slipped** rather than went
+silent — corrected from provisional `passed-silent` inside its own 3-day
+grace, which is exactly what that grace exists for; MTV puts round eight at
+09-15/16, due moved and 09-01 pushed onto `slips`, confidence deliberately
+left at `reported` because it is broadcaster- not government-sourced.
+`project-river-public-forums-0901` **hit** (forum convened, packed hostile
+room, jeers at a 380-500 timber-trucks-a-day disclosure, no vote; successor
+logged for 09-12). `grok-4-7-ship` **tightened** 09-15 month → 09-12 day
+precision — recorded as a tightening, not a slip, since the date moved
+earlier and got more specific. `broadcom-q3-fy2026-earnings` left **open**
+rather than flipped: the print lands after this window at 17:00 ET, and an
+open resolution window is not a silence. `anthropic-public-s1-filing` took a
+**sixth** consecutive negative — no Anthropic PBC filer entity exists on
+EDGAR under any CIK, which is stronger than "filed confidentially" — left to
+run to its 09-03 grace close rather than resolved early. Two new entries:
+`anthropic-dow-stay-expiry` (09-03) and `project-river-second-forum-0912`.
+
+**Map changes:** `runway` added as a tracked entity, sweep term **"Runway
+AI"** — bare "Runway" collides with cash-runway language in financial copy,
+which is precisely why earlier greps came back clean on a lab that had
+shipped a benchmarked comparison against a frontier flagship. Four
+global-capital watchlist terms closing the BOJ/JGB collection gap
+(`Japan 10-year yield`, `JGB`, `Bank of Japan rate hike`,
+`yen intervention`). Two mental-health terms (`National Survey on Drug Use
+and Health`, `NSDUH`) — the critic's reasoning is the useful part: two
+single-source substance-use trend findings in a week traced to the same
+federal survey, so **watch the survey, not the trade-press riffs on it.**
+Five `actor-doing.yaml` roll-ups refreshed (anthropic, xai,
+berkshire-hathaway, kaiser-permanente, broadcom).
+
+⚠️ **A tooling note on `actor-doing.yaml`:** editing it by `yaml.safe_load`
+→ `safe_dump` **destroys the file's header comment block and reflows all 45
+entries** (2,112 insertions / 382 deletions on a five-entry change). Caught
+on the diff and reverted; redone as a surgical text insertion (105
+insertions, 10 deletions). Do not round-trip this file through PyYAML.
+
+**Graph fed after the finalize:** `07_digest_bullets` (36 new S1 claims,
+1,373 cross-posted merges), `06_timelines` (33 new S2, 584 bumped, 875
+genuinely ambiguous), `03_expectations` (2 hypothesis claims),
+`09_critic_annotations` (3 passes, 2 annotated to a claim, 11 process-only).
+`graph/validate.py`: **OK — 4,495 atoms, 2,765 sources, 7,196 relationships,
+1,123 annotations, 120 extraction_passes**, all references resolve.
+
+### ⛔ NEW BLOCKER — the deterministic news collectors did not run today
+
+**`google_news_rss`, `rss`, `gdelt` and `openalex` produced no provenance
+manifest and no buffer file for 09-02**, across two full `cloud-researcher
+collect` runs (14:00 UTC and 19:03 UTC). Every PM sweep agent independently
+hit this and worked around it with direct fetches, so today's collection is
+**agentic-only** — stated on the face of each digest rather than left
+implicit.
+
+**Diagnosis so far, which is partial and should be finished next run:**
+invoking the lane on its own (`collect --corpus <path> --source
+google_news_rss`) **does** start and run — it was still going after 15
+minutes and was killed by a 900s timeout before writing anything. The
+financial/regulatory lanes that did complete return confirmed-empty results
+and finish in seconds. **The working hypothesis is a time-budget problem,
+not a broken collector:** the news lanes run late in the registry order and
+take longer than the wrapping run allows, so a batch run gets cut before
+reaching them. A re-run with a 3,000s budget was still in flight when this
+session closed — **check `buffer/2026-09-02-google_news_rss.jsonl` first
+thing next run**, and if it landed, the fix is the run's timeout rather than
+the collector.
+
+**This matters more than a normal tooling note** because the frontier-AI
+critic's finding this same day was that a real story sat *in* the buffer
+uncurated for two days. The buffer being unread and the buffer being unwritten
+are two different failures pointing at the same lane.
+
+**Pick up here:** Broadcom's Q3 print landed at 17:00 ET today, after this
+run's window — first thing to catch, against `custom-asic-tolls`'s three
+open questions (Jalapeño tape-out, a sixth co-design customer, updated
+backlog). `anthropic-dow-stay-expiry` resolves 09-03: watch whether a notice
+of appeal actually follows the stay lapsing. The 09-03 grace close settles
+`anthropic-public-s1-filing`, `glm-5-5-release`, `moonshot-preipo-round` and
+`mistral-3b-round-close` together. **Standing asks, unchanged and now
+older:** `gcloud auth login` for `bq` — **day seventeen**,
+`attention/world-news.yaml` still frozen at 08-25, so the mechanical
+candidate pool has fed nothing into thread candidates for over two weeks;
+the wire-service backstop for `sources/benchmarks.yaml` (still six
+documented misses, no seventh this pass); and that file's comment block
+should record that Axios Pro Rata and Bloomberg Technology have **no
+dated-archive path at all**, which is a stronger and more useful statement
+than the current CAPTCHA-risk note because it means a day-late critic pass
+structurally cannot audit them and should stop trying. **Four thread
+candidates await your call:** Runway/interface-world-models,
+`open-agent-tooling` (second and final offer), a standing BOJ/JGB
+cross-border rate leg, and a substance-use-trend frame.
+
+⚠️ **And one thing that stayed unsettled for a second straight day.** The
+Horn of Africa finding — a reported Eritrean crossing into Tigray and an
+armed coalition called "Tsimdo" — remains **contested and unpromoted** after
+a second dedicated attempt: four fresh searches, two more 403s (Sudan
+Tribune, Critical Threats), and no Reuters, AP, AFP or government statement
+either way. One Ethiopian foreign-ministry letter that looked like
+corroboration turned out to be dated **October 2025**, a different round of
+tensions. **A second failed attempt is its own result** — this is not an
+unchecked gap, it is a claim this map cannot currently reach the sources to
+settle.

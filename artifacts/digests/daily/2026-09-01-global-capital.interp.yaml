@@ -1,0 +1,157 @@
+japan-s-10-year-jgb-crossed-3-for-the-first-time:
+  mechanism: >
+    Japan's long end and America's are one balance sheet, not two markets.
+    Japan is the largest foreign holder of US Treasurys, and a yen defence
+    is financed by selling reserve assets — so a BOJ hike that raises JGB
+    yields makes domestic JGBs competitive against Treasurys for the same
+    Japanese institutional money, and an intervention that defends the yen
+    sells Treasurys outright. Both legs push the US long end the same
+    direction, at the moment AI-buildout issuance is already competing for
+    that duration.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The crossing is a repricing of Japanese domestic duration, not a
+        Treasury-supply event. Japanese lifers and banks rotate into JGBs
+        at 3% without liquidating US paper, and the US long end feels it as
+        marginal demand withdrawal rather than as selling.
+      why: >
+        Falsifiable on this map's own series: Treasury's TIC Major Foreign
+        Holders table already sits in `capital-context.yaml` at $9,371.1B
+        foreign-held as of 2026-05, roughly flat over the prior two months.
+        If Japan's line holds flat through the next two TIC releases while
+        JGB yields stay above 3%, this is rotation-at-the-margin, not
+        liquidation.
+      precedent: >
+        The 2022-2024 yield-curve-control exit. The BOJ let the 10-year
+        rise in stages from 0.25% to above 1% and Japanese holdings of US
+        Treasurys fell gradually rather than discontinuously — the
+        rebalancing was real and slow, and the feared forced-selling event
+        never arrived.
+    - direction: >
+        Bessent's public pressure is the load-bearing fact, not the yield.
+        A US Treasury Secretary asking a foreign central bank to hike, in
+        order to strengthen that country's currency, subordinates Japanese
+        monetary policy to a US financing objective — and the market prices
+        the loss of BOJ independence rather than the 6bp.
+      why: >
+        The tell is whether the BOJ moves on a schedule that tracks US
+        requests rather than Japanese inflation prints. Watch whether the
+        next BOJ decision lands out of step with its own domestic data, and
+        whether Japanese officials publicly resist the framing — Ueda
+        conceding or refusing in public is a dated, checkable event.
+      precedent: >
+        The 1985 Plaza Accord and its 1987 Louvre sequel. Coordinated
+        pressure on Japanese monetary policy to move the yen produced the
+        intended currency effect and a domestic asset bubble Japan spent a
+        decade unwinding — the currency objective was met and the monetary
+        cost was borne locally.
+  context_note: >
+    `capital-context.yaml`'s rate_regime reading is explicitly US-Fed-framed
+    — a hawkish hold at 3.50-3.75%, Warsh, the Cook removal fight — and has
+    twice recorded the BOJ/JGB leg as a deferred gap. This is the day that
+    deferral produced a dated event the map's own benchmarks could not see.
+
+a-california-judge-stopped-a-named-330mw-data-cent:
+  mechanism: >
+    CEQA does not weigh a project's merits; it reprices its schedule. A
+    ministerial approval is a permit an agency must grant if the boxes are
+    checked, and a discretionary one triggers an Environmental Impact
+    Report measured in quarters to years. Reclassifying an approval from
+    ministerial to discretionary therefore converts a data center's
+    scarcest input — time-to-energization against a signed lease — into
+    litigation risk, without any court ever ruling on whether the project
+    should exist.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        This stays a California-specific outcome. CEQA's private right of
+        action and unusually broad standing have no clean analogue in the
+        states where the buildout is actually concentrating — Texas, Ohio,
+        Georgia, Virginia — so the ruling raises California's cost of entry
+        and reroutes capital rather than slowing the aggregate programme.
+      why: >
+        Checkable against this map's own siting record: if the next quarter
+        of announced US campuses continues to skew to ERCOT, PJM-Ohio and
+        Georgia while California announcements thin out, the constraint is
+        being routed around, not absorbed. The 700GW-of-connection-requests
+        figure Reuters published the same day is the denominator to watch.
+      precedent: >
+        California housing under CEQA. Decades of successful CEQA
+        challenges did not reduce national housing production; they moved
+        it to Texas, Arizona and Nevada, and California's own share fell.
+        The statute proved to be a location tax, not a volume constraint.
+    - direction: >
+        Litigation becomes the repeatable playbook, and the transmissible
+        part is not CEQA itself but the argument: that a stale environmental
+        review cannot cover a materially different project. Nearly every
+        state has some version of that principle, and nearly every one of
+        these campuses is being sited on land reviewed for something else.
+      why: >
+        The specific defect Judge Anderholt named — a 2017 review that never
+        contemplated a 330MW substation, 862MWh of storage, four
+        500,000-gallon water tanks and 132 gas generators — is a fact
+        pattern that recurs wherever industrial land is being reused at a
+        new intensity. Falsifiable by whether a second suit outside
+        California pleads the stale-review theory within two quarters.
+      precedent: >
+        The Sierra Club's coal-plant litigation campaign of 2007-2012.
+        Roughly 150 proposed plants were cancelled, and the binding
+        constraint was never a single ruling — it was that repeatable legal
+        challenge made financing timelines unquotable.
+  context_note: >
+    This map has tracked the backlash through legislatures and governors —
+    Abbott, Paxton, Shapiro's 08-18 permitting order — and through
+    disclosed risk factors. A court halting a named, in-progress project is
+    a different mechanism reaching the same place, and the first instance.
+
+reuters-put-the-first-hard-national-number-on-the:
+  mechanism: >
+    A grid interconnection request is free to file and carries no
+    obligation to build, so the queue is an option register rather than a
+    demand forecast. Utilities must nonetheless plan generation and
+    transmission against it, which means phantom requests convert directly
+    into real ratepayer-funded capital spending — and the developer who
+    files ten speculative requests to secure one site externalises the
+    cost of the other nine onto the utility's planning base.
+  confidence: well-supported
+  scenarios:
+    - direction: >
+        The gatekeeping spreads and the queue collapses toward something
+        real. Pennsylvania's 20-of-100-plus permit ratio becomes the
+        template other states copy, deposits and readiness tests get
+        attached to requests, and the headline GW number falls sharply
+        without any actual project being cancelled.
+      why: >
+        Two states are already doing it — Texas via the PUCT audit-and-freeze
+        this map logged on 08-03, Pennsylvania via Shapiro's 08-18 executive
+        order for projects 25MW and up. A third state adopting a readiness
+        test within two quarters is the checkable confirmation, and each
+        adoption should show up as a visible drop in that state's own
+        published queue.
+      precedent: >
+        The FERC interconnection queue reform of 2023 (Order 2023) did
+        exactly this to renewables: first-ready-first-served replaced
+        first-come-first-served, deposits rose, and speculative megawatts
+        left the queue without reducing built capacity.
+    - direction: >
+        The gap persists because it is nobody's job to close it. Developers
+        are rewarded for optionality, utilities earn a regulated return on
+        the capital they deploy against the queue, and states competing for
+        the same projects cannot afford to be the one that adds friction.
+      why: >
+        The tell is the direction of ratepayer cases. If large-load tariffs
+        and minimum-take provisions spread faster than queue reform does,
+        the system is choosing to socialise the cost rather than to filter
+        the requests. This map already carries the TVA data-center rate
+        effective 10-01 as a dated instance of exactly that response.
+      precedent: >
+        The 2000-2002 telecom fibre buildout. Announced capacity ran an
+        order of magnitude ahead of realised demand, no participant had an
+        incentive to publish a truthful number, and the correction arrived
+        as write-downs rather than as a gradual repricing of the queue.
+  context_note: >
+    Confidence is `well-supported` rather than `plausible` because the
+    quantification is now multi-sourced and self-consistent: 700GW+ in the
+    aggregate, 474GW+ in Texas alone matching this map's own 08-03 figure,
+    ~270GW across ten named utilities, and Pennsylvania's 20-of-100-plus.

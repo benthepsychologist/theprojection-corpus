@@ -11,10 +11,18 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-09-02 — A partial morning bounce, even as yields hit a fresh multi-year high
+
+- **Stocks actually rose this morning despite the 10-year's fresh multi-year-high print: Dow +330pts (+0.6%) to 53,097.79, S&P 500 +25.65 (+0.3%) to 7,657.12, Nasdaq +58.64 (+0.2%) to 26,158.42, as of this morning's session.** Oil pulled back slightly on the same tape (WTI's October contract at $89.12, -1.2%) even as Brent's own 8am-ET read kept climbing. One analyst's read, quoted in the coverage: the modest gains suggest "investor optimism that escalation may lead to de-escalation" rather than a reversal of the underlying yield/oil story. ⚠️ This is a single-source, mid-morning read (not a close) — treat the exact index levels as provisional.
+  ([Yahoo Finance, "Stock Market Today (Sept. 2, 2026)"](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-2-134032621.html)) ⟨daily 2026-09-02⟩
+
 ## 2026-09-01 — The Nvidia-earnings relief rally gives way to a fresh pullback, driven by Iran and AI-debt-linked yields
 
 - **Renewed U.S.-Iran hostilities pushed oil higher and equities lower into Monday's close, and by Tuesday (09-01) morning, S&P 500 and Nasdaq-100 futures were down roughly 0.3%, with the Nasdaq Composite off 1.1% intraday and Nvidia, AMD and Micron each down around 2%.** The stated driver pairs geopolitics with this map's own debt-risk thesis: "soaring AI corporate debt issuance added to credit supply and lifted yields further," per market coverage — the 10-year Treasury yield rose to 4.754%, its highest since January 2025, and the 30-year to 5.255%. This is the same AI-debt-issuance-into-yields mechanism `ai-buildout-debt-risk` exists to track, now showing up as a same-day equity-market driver rather than a separate story.
   ([Yahoo Finance/TheStreet market-today coverage, 2026-09-01](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-1-135016820.html)) ⟨daily 2026-09-01⟩
+
+- **The S&P 500 closed 7,631.47 (-0.7%), the Nasdaq Composite 26,099.77 (-1.0%, the steeper of the two, "triple the S&P's loss" per one recap), and the Dow 52,766.88 (-0.8%, -419pts) on 09-01 — the first confirmed closes behind yesterday's intraday-only "-0.3%/-1.1%" read.** Nvidia itself closed $217.44, -1.51% on the day. Coverage keeps the same causal read as yesterday's digest: rising oil and Treasury yields on the Iran conflict weighing on risk assets, tech hit hardest.
+  ([24/7 Wall St, market-close recap](https://247wallst.com/cards/the-nasdaq-s-1-02-slide-was-triple-the-s-p-500-s-loss-so-t-gspc-market-bell-01m1f95kv8c17b0rdk9z8mq85y), [Alain Guillot, stock market recap](https://www.alainguillot.com/stock-market-recap-september-1-2026/), [stockanalysis.com, NVDA history](https://stockanalysis.com/stocks/nvda/history/)) ⟨daily 2026-09-02⟩
 
 ## 2026-08-31 — The oil/Fed-driven risk-off froze rather than deepened or reversed through the session's first four hours
 

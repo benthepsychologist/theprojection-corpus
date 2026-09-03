@@ -22,6 +22,13 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-02 — Brent tops $96 as the Iran-Gulf retaliation wave lands; the Sidr tanker toll and attribution both firm up
+
+- **Brent traded around $96.11/bbl at 8am ET on 09-02, up roughly $2 on the day** and continuing the run this thread has tracked since the 08-30/31 Larak Island strike and Jordan/UAE retaliation, now extended by 09-01's seven-site US strikes and Iran's four-country response (`iran-conflict-widening`). Fourth consecutive up session on the same mechanism.
+  ([Fortune](https://fortune.com/article/price-of-oil-09-02-2026/)) ⟨daily 2026-09-02⟩
+- **A correction lands on the Sidr/Senegal Prosperity incident this thread and `iran-conflict-widening` logged 08-31/09-01 as unattributed with all crew safe: Bahri (the Saudi state shipping company) confirmed on 09-02 that two Filipino seafarers aboard the *Sidr* were killed, and Saudi Arabia's Foreign Ministry directly attributed the strike to Iran** — "an Iranian attack against a Saudi vessel in the Strait of Hormuz." Iran's IRGC maintains its own account, that the vessel struck a sea mine rather than being attacked directly. See Corrections below.
+  ([Jerusalem Post](https://www.jpost.com/middle-east/article-907312), [Manila Times](https://www.manilatimes.net/2026/09/02/news/2-filipino-seafarers-dead-after-monday-attack-on-saudi-oil-tanker-in-hormuz-says-shipping-firm/2416849)) ⟨daily 2026-09-02⟩
+
 ## 2026-09-01 — Oil extends its climb on the broadest US strike wave of the war; Brent ~$91-94, WTI ~$86.6
 
 - **Brent traded roughly $91-94 and WTI around $86.57 on 09-01**, extending

@@ -41,6 +41,11 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-08-31 — Bessent publicly argues against a September hike, cutting against the Warsh reading that drove odds up
+
+- **Treasury Secretary Scott Bessent went on CNBC and argued on the record against a September rate hike — directly counter to the reading of Kevin Warsh's Jackson Hole keynote that had pushed hike odds toward 60-66%.** Asked about the Fed's next move he said "I'm not going to speculate on what the Fed may do or not," then: "It is my belief that we've seen a supply shock, and traditionally, you don't raise interest rates into a supply shock unless you see second- or third-order effects, and we are seeing the core inflation has remained very, very restrained." He separately argued an AI-driven productivity boom would ease price pressure rather than add to it. **For this thread's own watch line that makes two messaging levers pointing opposite ways on the same decision:** an incoming Fed chair read as running a forward-guidance-removal regime, and a sitting Treasury Secretary publicly leaning against the hike that reading implies. ⚠️ Dated 08-31 and surfaced only on the 09-02 afternoon sweep — genuinely absent from every thread until now. The primary CNBC transcript 403s on direct fetch; the quotes below are from two outlets carrying it verbatim.
+  ([InvestingLive](https://investinglive.com/central-banks/icymi-bessent-lists-reasons-fed-could-skip-a-september-hike-despite-warsh-remarks/), [Crypto Briefing](https://cryptobriefing.com/bessent-federal-reserve-supply-shock/)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-29 — No confirmed White House response to Cook's rebuttal, and one unverified dismissal claim
 
 - **As of 08-29, no primary or major-wire source confirms any White House or Trump response to Lisa Cook's 08-26 written rebuttal — the Fed's own press-release log is silent on Cook through today.** This is itself informative against this thread's own watch question: three days after the deadline-day letter, the removal effort has not visibly advanced. ⟨daily 2026-08-29⟩

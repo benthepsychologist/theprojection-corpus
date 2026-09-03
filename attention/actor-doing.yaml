@@ -41,8 +41,35 @@ actors:
       New 08-13→08-14: AMD raised its largest-ever dollar bond sale, up to $5B across four tranches (3- to 10-year maturities, led by Barclays, Bank of America, Citigroup, JPMorgan, Morgan Stanley and Wells Fargo) — officially "for general corporate expenses, which may include the repayment of debt" ($875M maturing next month), but Reuters/Yahoo Finance both framed it against AMD's own AI-chip agreements with Anthropic and Microsoft, including the $5B Anthropic equity stake this map's amd thread already tracks. This is a new layer for the ai- buildout-debt-risk story: borrowing at this scale has so far happened at the neocloud/data-center layer (CoreWeave, Lambda); this is the first time a chipmaker itself has raised public debt explicitly framed around funding an AI-lab equity stake. Priced 08-14 at a final $4.75B, the longest tranche tightening about a quarter-point from initial talk to +0.9 points over Treasuries, with AMD shares rising 5.6% on the print — confirmation the AI/Anthropic-stake framing held through final terms, though AMD itself never made that link explicit in official documentation.
       Standing picture (unchanged since 08-07): Q2 2026 revenue $11.536B (record, +50% YoY), Data Center $6.718B (+107% YoY), Q3 guide ~$13B — a clean double beat, shares still fell ~8-9% after-hours on stretched valuation. The Anthropic MI450/Helios partnership (up to 2GW) reaffirmed, first gigawatt now slated H1 2027. Acquired Taalas (Toronto), which hardwires specific AI models directly into silicon — HC1 chip encodes Llama 3.1 8B across 53B transistors at ~17,000 tokens/sec/user, ~200W. Musk said SpaceX/xAI are now "exclusive to Nvidia" for future AI infrastructure, read as closing off a future AMD customer, though he didn't name AMD directly. Posture classified `expanding` off the OpenAI 6GW deal, the Anthropic partnership and Oracle's 50,000-GPU Q3 rollout.
   anthropic:
-    asof: '2026-09-01'
+    asof: '2026-09-02'
     doing: |
+      New 09-02: the year-long fight with the US government ended in a
+      sentence, and a claim this file carried about it turns out to be wrong.
+      Commerce Secretary Howard Lutnick said publicly at the G20 Innovation
+      Ministerial that "we trust Anthropic" and that the company is "back on
+      the right side" with the administration; the export controls he had
+      imposed restricting Claude Mythos 5 and Claude Fable 5 to foreign
+      nationals have been LIFTED. Tom Brown is reported to have led the
+      reconciliation with Lutnick and National Cyber Director Sean Cairncross.
+      CORRECTION to the 09-01 entry below: it states "DoD has already filed a
+      Ninth Circuit appeal." NO SUCH FILING EXISTS. A live check of the
+      N.D. Cal. docket (3:26-cv-01996-RFL) shows the last entries are the
+      08-27 order, order of final relief, judgment and "Civil Case
+      Terminated." The only Ninth Circuit docket in this dispute (26-2011) is
+      the earlier interlocutory appeal of the March preliminary injunction,
+      stayed since 04-27. The 7-day stay expires 09-03; a new ledger entry
+      (anthropic-dow-stay-expiry) tracks whether an appeal actually follows.
+      STILL NOT RESOLVED: Claude remains absent from GenAI.mil, which added
+      ChatGPT Mil and Grok for Government on 08-31 at Impact Level 5 alongside
+      Gemini, reaching ~3m DoD personnel. A rhetorical reset and a lifted
+      export control are not procurement access.
+      Also new: no Anthropic PBC filer entity exists on EDGAR under any CIK —
+      a sixth consecutive negative on the public-S-1 expectation, whose grace
+      closes 09-03. Not "filed confidentially"; no filer presence at all. And
+      the Sony/Warner Chappell suit now has a case number, previously
+      unlocatable: 5:26-cv-09217 (N.D. Cal., filed 08-28), with docket
+      activity stopping at the complaint.
+
       New 09-01 (events of 08-31, caught by the morning sweep): four
       threads moved at once. It won its first court round against the
       Pentagon — a federal judge ruled the "supply chain risk" label
@@ -153,8 +180,26 @@ actors:
       New 08-15: not an Arm-side move but Arm-relevant — Nvidia's Aug-14 13F filing disclosed it has COMPLETELY EXITED its Arm equity stake, the same filing that revealed Nvidia's $21B SpaceX position and $30B Intel stake. A former significant holder fully divesting is a data point on sentiment around Arm even though Arm itself did nothing this week; doesn't change the underlying royalty-regime picture below.
       No material new development since 08-04 — no mentions in this week's digests or thread updates; the beat-and-raise/guidance-cut standing read holds unchanged (Q1 FY2027 beat on record royalty/licensing revenue, but full-year royalty guidance cut to 'high teens' triggered the stock selloff, with the Qualcomm-suit appeal and SoftBank's collateral position both still unresolved).
   berkshire-hathaway:
-    asof: '2026-08-16'
+    asof: '2026-09-02'
     doing: |
+      New 09-02: Greg Abel's first on-record AI comments since the Q2 13F, and
+      they add a leg this entry has never carried — Berkshire's OWN energy
+      business. In a CNBC interview from Tokyo he called Alphabet a
+      "significant player" in AI ("We have a lot of visibility from within our
+      companies as to how we're using AI... then we saw Google as a
+      significant player") and put roughly $17bn of Alphabet shares added in
+      the quarter, a different framing from the 13F's $16.63bn to $37.76bn
+      value read — likely cost basis versus market value, not itemized further
+      in the coverage. Alphabet is now Berkshire's third-largest holding.
+      THE NEW PART: Abel tied AI directly to Berkshire Hathaway Energy's
+      growth, citing Iowa data centers already consuming roughly 8% of the
+      state's regional power load, and said "I've sort of always had the
+      strong view that energy would be the constraint... We do still see it as
+      a significant opportunity." That makes Berkshire long the same thesis on
+      both sides — as an equity holder and as a regulated utility that earns on
+      rate base built for that load — which is a reason to discount the
+      statement rather than read it as neutral outside confirmation.
+
       New 08-16: still quiet since the 08-14 13F filing — no further Berkshire-specific development 08-15 or 08-16.
       The Q2 2026 13F (filed 08-14, on deadline) confirmed what the 08-08 earnings call described in dollar terms: the Alphabet stake nearly doubled in share count over the quarter (57.83M -> 106.0M combined Class A/C shares, +83%; value $16.63B -> $37.76B), with no other AI-adjacent equity joining it anywhere in the 29-issuer portfolio. Elsewhere the portfolio rebalanced toward housing/away from a handful of consumer names (Constellation Brands exited entirely, Delta grown +44%, a token new D.R. Horton toehold) — real active management under Abel, not passive holding. Burry's 08-09 skepticism ("more framing moves than investment moves") now has its first hard data point to be tested against.
       Prior read (08-09), for continuity: Michael Burry publicly broke with Berkshire's post-Buffett direction, saying he no longer finds it "an attractive investment going forward." Q2 earnings (08-08) had shown Abel ending a 14-quarter net-selling streak: a $10B Alphabet stake add plus $4.5B+ in buybacks, deploying part of Berkshire's ~$365-400B cash pile.
@@ -166,8 +211,18 @@ actors:
       New 08-13: Michael Burry escalated from general AI-boom skepticism to a named critique of the specific platform BlackRock joined — calling Nvidia's $500B+ Wall Street financing platform (with Apollo, Blackstone, Brookfield, Goldman Sachs and KKR, announced 08-10) a source of "abnormal" credit structures, and saying Nvidia's revenue is "largely financed through circular arrangements" that are "off-balance-sheet and undisclosed." He separately flagged private-equity-owned insurers filling balance sheets with illiquid, AI-tied asset-backed paper — the same structural shape as the Jane Street bond story this thread already tracks. First direct, specific external pushback on the MOU cohort BlackRock signed onto four days earlier.
       Standing picture, unchanged since 08-10: one of six managers signing MOUs with Nvidia to mobilize $500B+ of third-party capital for AI compute; its TiL/MSC joint venture formally withdrew the EU merger request for Barcelona's Tercat/BEST terminal (withdrawal dated on or before 08-03, surfacing publicly 08-10) — a rare retreat against otherwise one-directional infrastructure accumulation. GIP closed the $40B Aligned acquisition (with MGX/AIP), ran the $12.5B El Paso bond for Meta, and sits adjacent to Blue Owl's 80% of Hyperion — the alternatives arm converting fiduciary scale into physical-infrastructure ownership, with Aladdin's systemic footprint still unpriced.
   broadcom:
-    asof: '2026-08-21'
+    asof: '2026-09-02'
     doing: |
+      New 09-02: the Q3 FY2026 print date is now company-confirmed for TODAY,
+      after market close, call at 5:00pm ET — firming what the map carried as
+      "next earnings (~early Sept, unconfirmed)." No numbers as of this
+      update; the release lands after the run's window. Three things to check
+      it against: Jalapeño tape-out status, whether a sixth custom-silicon
+      co-design customer joins the five tracked (Google, Meta, OpenAI, Apple,
+      ByteDance), and any updated backlog figure. Analyst consensus points to
+      roughly $29.4bn revenue and ~$16bn AI semiconductor revenue — estimates,
+      not the report.
+
       New 08-21: the single biggest financing event on this entity's record. CNBC reported that lenders are structuring roughly $45bn senior and $35bn junior — $70-80bn total — through a SPECIAL-PURPOSE VEHICLE to fund AI chip capacity for Anthropic, with Apollo and Blackstone in talks to participate again. It roughly doubles the $35bn Broadcom/Apollo/Blackstone partnership announced in June (custom chips plus networking, targeting 20+ GW of compute to top AI labs by 2028). Two things make it matter beyond the headline number. First, the structure: an SPV puts first loss on junior lenders rather than on Broadcom's own balance sheet — the same off-balance-sheet guarantee pattern this entity was named in on 08-15, now roughly doubled and formalised. Second, a junior tranche near $35bn is too large to place quietly, so whatever spread it prices at becomes the first public market estimate of AI-buildout credit risk for lab compute. Reported totals still span $60bn to $100bn across outlets, a spread wide enough to suggest the deal is being shopped rather than sized — no filing or signed commitment exists yet, and every figure traces to unnamed lenders.
 
       New 08-16: no further movement — no Broadcom-specific coverage today; the week closes on the 08-15 debt-guarantee naming as its last new fact, everything else unchanged.
@@ -333,8 +388,27 @@ actors:
       New 08-15: Nvidia's Aug-14 13F filing disclosed a $30B equity stake in Intel — its largest single disclosed public holding, ahead of the newly-disclosed $21B SpaceX stake. First hard, filed number for a position that had previously only been reported in the ~$5B range; the scale of the markup is itself the news. Also added to this instance's own ai-lens watchlist today (previously untagged despite recurring relevance across chip-supply threads).
       Standing picture (pre-08-15): no other material new development since 08-11 — no new capital-raise, CHIPS-equity, or earnings news; the $20B upsized stock offering (5x demand) and ~$26.7B cumulative government equity position stand as the prior picture.
   kaiser-permanente:
-    asof: '2026-08-30'
+    asof: '2026-09-02'
     doing: |
+      New 09-02 (events of 09-01): the AI fight jumped bargaining units, and
+      the new one is ten times larger. California Nurses Association/National
+      Nurses United — the 25,000-nurse general-RN unit, distinct from the
+      ~2,400-clinician NUHW mental-health unit tracked here since March — held
+      informational pickets at 22 Kaiser hospitals across California,
+      demanding contract language requiring new technologies be "tested,
+      regulated, and subject to nurse input" before deployment, alongside
+      safe-staffing demands. Oakland, San Francisco, Santa Clara, San Jose,
+      Walnut Creek, Fremont, Redwood City, Sacramento, Fresno, Los Angeles and
+      eleven more. Kaiser says its technology is meant to "support nurses
+      rather than replace their clinical judgment" and that these principles
+      are "already written into" the CNA contract — a claim this round has not
+      tested. CNA is EARLY in bargaining and says the point is pressure
+      "before staffing and AI protections are settled."
+      On the legislative side: AB 2575 and the other tracked California bills
+      have NOT moved past "ordered to engrossing and enrolling" (08-31),
+      verified 09-02 against the Legislature's own status pages. Newsom has
+      until roughly 09-30.
+
       New 08-30: the bill Kaiser and the California Hospital Association oppose
       got harder to kill and harder to pass in the same move. AB 2575 (Ortega)
       failed its first Senate floor vote 18-10 on 08-28, was saved same-day by a
@@ -595,8 +669,29 @@ actors:
       New 08-16: still quiet — a fourth consecutive check (adding 08-16 to 08-09/08-14/08-15) finds nothing. Board-pass note: Vanguard carries `posture: dormant` in board.yaml as of the 08-15 pass, so this is no longer an open candidate, just confirmation the designation holds.
       Re-checked against threads.yaml and this week's digests — still genuinely quiet, confirming the 2026-08-09 radar note. Standing read holds unchanged: the most extreme passive/no-discretionary-capital case among the Big Four (client-owned at-cost mutual, ~$0 owned); no new dated item beyond the 04-09 "Expert Insights" internal AI portfolio- analysis tool for advisors.
   xai:
-    asof: '2026-08-30'
+    asof: '2026-09-02'
     doing: |
+      New 09-02: a firm ship date, and a large institutional footprint added
+      without a public safety review. Musk posted that Grok 4.7 ships in "10
+      days" — September 12 — at 2.1 TRILLION parameters, up from Grok 4.6's
+      1.5T (~40%), trained partly on SpaceX's own engineering corpus, "better
+      than 4.6 in every way except slightly slower to serve." This is the
+      FIRST specific calendar day ever attached to the model; the ledger entry
+      moves from a rolling month-precision window to 09-12 day-precision,
+      recorded as a tightening rather than a slip because the date moved
+      earlier and got more specific. x.com cannot be fetched from here; three
+      independent outlets carry the same post text.
+      Separately, dated 08-31: the Pentagon added "Grok for Government" (via
+      Starshield AI) to GenAI.mil alongside a new ChatGPT Mil, at Impact
+      Level 5 for Controlled Unclassified Information, reaching roughly 3
+      million DoD personnel under xAI's existing $200M contract. This lands
+      months after The Information's June 2026 reporting that xAI's own
+      engineers found no reliable technical fix separating adult-content
+      generation from CSAM generation — the finding the companion-harm thread
+      treats as the root of both its clinical-harm and CSAM strands. The
+      Pentagon has not publicly stated what CSAM risk review, if any, preceded
+      the IL5 authorization.
+
       New 08-30 (this entry was two weeks stale at 08-16 and is rebuilt rather
       than appended to): xAI and its SpaceX parent are now the pivot of the AI
       capital structure and the defendant of record in the companion-harm

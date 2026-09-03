@@ -21,6 +21,11 @@ growing or any other AI-adjacent name appears; any further Buffett/Abel
 commentary; and the GEICO/insurance-AI-liability strand as a secondary,
 lower-priority watch.
 
+## 2026-09-02 — Abel gives his first on-record AI comments since the Q2 13F, and adds a new angle — Berkshire's own energy business
+
+- **In a CNBC interview from Tokyo, Greg Abel gave his first public AI-specific comments since this thread's 08-14 13F read, calling Alphabet a "significant player" in AI — "We have a lot of visibility from within our companies as to how we're using AI, what type of benefits it's delivering, so that brought incremental interest, and then we saw Google as a significant player"** — and put a fresh figure on the Q2 move: roughly $17bn of Alphabet shares added in the quarter (a different framing than the 13F's own $16.63bn→$37.76bn value read, likely cost-basis vs. market-value, not itemized further in this coverage). **New to this thread: Abel explicitly connected AI to Berkshire Hathaway Energy's own growth story**, citing Iowa data centers already consuming roughly 8% of the state's regional power load and saying "I've sort of always had the strong view that energy would be the constraint... We do still see it as a significant opportunity" — a first-party statement tying this thread directly to the AI-power-demand story this map tracks on `ai-power-buildout`.
+  ([Investing.com/Reuters, "Berkshire CEO Abel sees opportunity for energy business from AI," dated 2026-09-02](https://www.investing.com/news/stock-market-news/berkshire-ceo-abel-sees-opportunity-for-energy-business-from-ai-4885911)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-14 — The Q2 13F answers the thread's own core watch: Alphabet nearly doubled, nothing else AI-adjacent joined it
 
 - **Berkshire's Q2 2026 13F, filed 2026-08-14 at 16:05 ET — on the SEC's

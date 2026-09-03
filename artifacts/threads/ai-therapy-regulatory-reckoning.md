@@ -13,6 +13,11 @@ evidence. First real regulatory pathway (FDA/MHRA), case outcomes, any
 big-tech health-arm move into the vacuum. Ben's sharpest edge — the
 evidence-gap thesis playing out live.
 
+## 2026-09-01 — California AB 1979 is formally enrolled, one step from the Governor's desk
+
+- **AB 1979 (Bonta) — which brings consumer health chatbots under the Confidentiality of Medical Information Act and bars clinical decisions from being made on AI output alone without human review — was formally Enrolled on 2026-09-01**, per the bill's own status page. Enrollment means the final text has been printed and certified: the step immediately before presentment to Governor Newsom. That puts it one stage ahead of the three bills this thread has been counting down — SB 903, SB 1119 and AB 2575 all remain at "ordered to engrossing and enrolling" as of a direct check this afternoon, with no signature, veto or presentment on any of the four. ⚠️ Dated 09-01, caught on the 09-02 afternoon sweep.
+  ([AB 1979 bill status, California Legislature](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB1979)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-31 — AB 2575 clears the California Legislature on the second try, on the last day of the session
 
 - **California AB 2575 (Ortega) — the bill shifting liability for AI-caused clinical harm onto developers and protecting clinicians who override an AI recommendation — passed both houses of the Legislature on 2026-08-31, the constitutional adjournment deadline, after its Senate floor vote failed once already.** It was refused passage 18-10 on the Senate floor 08-28, won reconsideration 40-0 the same afternoon, was re-amended and sent back to second reading 08-30, then passed the Senate floor 21-10 on 08-31 — 21 ayes being the bare majority a non-appropriation bill needs in the 40-member Senate. The Assembly concurred in the Senate's amendments the same day, sending the bill to Engrossing and Enrolling. It now awaits presentment to Governor Newsom; no signature or veto has been recorded. This is the concrete "first real regulatory pathway" the thread's watch line names, arriving via ordinary state liability law rather than FDA action, and surviving a floor defeat to get there.

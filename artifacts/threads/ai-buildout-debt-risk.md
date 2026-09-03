@@ -8,6 +8,12 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-09-01 — Japan's 10-year JGB crosses 3% for the first time since 1996, and the US Treasury Secretary publicly presses Tokyo to hike
+
+- **Japan's 10-year government bond yield crossed 3% on 09-01, its first time above that line since 1996, while US Treasury Secretary Scott Bessent went on CNBC to press Tokyo and the Bank of Japan publicly for rate hikes.** Reporting on the exchange flagged the specific transmission risk: Japan is the largest foreign holder of US Treasurys, and a yen-defence intervention funded by selling them would push US long-end yields the same direction this thread already tracks domestically. This is the escalation of the cross-border leg this thread first recorded on 08-19, when a JGB push toward its highest yield since 1996 took SoftBank, Kioxia, Arm and Tokyo Electron down together in one Tokyo session — the mechanism is the same, the yield has now actually crossed, and a US cabinet officer is now an actor in it rather than an observer. `attention/capital-context.yaml` has twice flagged its own reading as "almost entirely US-Fed-framed" with a proper BOJ/JGB leg deferred to a `/week`-scale addition; this is that deferral coming due.
+  ([CNBC, "Japanese borrowing costs hit 30-year high as Bessent says Tokyo may intervene to boost yen," 2026-09-01](https://www.cnbc.com/2026/09/01/japan-bonds-yen-intervention-bessent.html)) ⟨daily 2026-09-02⟩
+  <!-- Surfaced by the global-capital coverage critic, 2026-09-02, looking past its benchmark set rather than from the benchmarks themselves (all four were dark, paywalled or structurally unauditable for a past date). Recorded as a NEW DEVELOPMENT ON AN EXISTING STRAND, not a wholly-missing story: the critic's own report is precise about this (its grep found the 08-19 entry, "before the 3% threshold was crossed"), and the distinction is kept here deliberately. -->
+
 ## 2026-08-21 — Broadcom's SPV goes to the debt market for $70-80bn to build Anthropic's chips
 
 - **CNBC reported that lenders are structuring a roughly $45bn senior

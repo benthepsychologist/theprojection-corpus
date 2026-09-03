@@ -13,6 +13,11 @@ crawled: 2026-07-22
 other health systems face the same. The reckoning thesis arriving via
 organized labor + city government rather than litigation.
 
+## 2026-09-01 — A second, much larger Kaiser union takes AI-staffing language to the picket line
+
+- **California Nurses Association/National Nurses United — the 25,000-nurse general-RN union at Kaiser, distinct from the ~2,400-clinician NUHW mental-health bargaining unit this thread has tracked since March — held informational pickets at 22 Kaiser hospitals across California on 2026-09-01, demanding contract language requiring new technologies be "tested, regulated, and subject to nurse input" before deployment, alongside safe-staffing demands.** Hospitals included Oakland, San Francisco, Santa Clara, San Jose, Walnut Creek, Fremont, Redwood City, Sacramento, Fresno, Los Angeles, and eleven more. CNA/NNU is in early-stage bargaining, separate from NUHW's; a Kaiser spokesperson said its technology is meant to "support nurses rather than replace their clinical judgment" and that these principles are "already written into" its CNA contract — a claim not yet tested by anything in this round. This widens the "whether other health systems/unions face the same" watch line to a second bargaining unit inside Kaiser itself, an order of magnitude larger than NUHW's, applying pressure "early in the bargaining process, before staffing and AI protections are settled" per NNU's own framing.
+  ([National Nurses United](https://www.nationalnursesunited.org/press/kaiser-nurses-to-hold-informational-pickets-at-22-california-hospitals), [KRON4](https://www.kron4.com/news/bay-area/kaiser-nurses-picket-over-staffing-ai-concerns/)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-30 — AB 2575's second attempt needs a second reading first, and that hasn't happened yet either
 
 - **Checked directly against the Legislature's own bill-history record: because AB 2575 was amended when reconsideration was granted on 08-28, it went back to second reading rather than straight to a repeat third-reading vote — a procedural step the 08-29 entry didn't have.** As of this check (Sunday 08-30, ~10am ET) it sits on the Senate's 08-30 second-reading file, "in floor process," with no second floor-passage vote yet recorded. One day remains before the 08-31 adjournment for that second reading and the repeat vote both to happen.

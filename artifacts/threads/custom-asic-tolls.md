@@ -11,6 +11,11 @@ opened: 2026-07-28
 *Watch:* the sixth customer · Jalapeño tape-out · the VMware litigation
 spread · whether any major takes design fully in-house.
 
+## 2026-09-02 — Broadcom's Q3 date firms to today, after the close
+
+- **Broadcom confirmed through its own investor-relations release that it reports Q3 FY2026 results Wednesday, September 2, after market close, with the call at 5:00pm ET.** That firms this thread's "next earnings (~early Sept, unconfirmed)" watch line to a company-stated date. No numbers exist yet — the release lands after this run's window. The three things to check against this thread when it does: Jalapeño tape-out status, whether a sixth co-design customer joins the five already tracked (Google, Meta, OpenAI, Apple, ByteDance), and any updated backlog figure. Analyst consensus previews point to roughly $29.4bn revenue and ~$16bn of AI semiconductor revenue, but those are estimates and are recorded here as context, not as fact.
+  ([Broadcom investor relations](https://www.broadcom.com/company/news/financial-releases/64621)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-25 — Jalapeño's first public benchmarks land at Hot Chips
 
 - **OpenAI and Broadcom published Jalapeño's first performance

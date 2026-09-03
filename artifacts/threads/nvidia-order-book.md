@@ -13,6 +13,11 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-09-01 — Bloomberg reports the Hugging Face deal could close this week at a higher total value
+
+- **Bloomberg reported Tuesday evening that Nvidia is nearing a roughly $14B acquisition of Hugging Face, with the agreement possibly reached "as soon as this week."** This updates, rather than repeats, the 08-27 entry already on this thread ("agreed... still unconfirmed" at ~$12.9B): the reported base price is unchanged at $12.9B, but the total is now put at ~$14B once a reported $1B employee-retention package is included, and the timeline has moved from an open-ended "agreed" to a specific "this week." Both companies again declined to comment; no final agreement is confirmed by either side, and terms/timing could still change. This is a demand-side/ecosystem move (what Nvidia is buying, not what it's selling), but the thread has carried it since 08-26 for the same reason it's flagged again here: the store of open-source models Nvidia would own bears on how "the order book" gets filled downstream.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-02/nvidia-nears-14-billion-hugging-face-deal-this-week), [Investing.com syndication, timestamped 2026-09-01 8:56 PM](https://www.investing.com/news/stock-market-news/nvidia-could-seal-14-bln-hugging-face-deal-this-week-bloomberg-reports-4885231), [Seeking Alpha](https://seekingalpha.com/news/4639264-nvidia-nears-14b-hugging-face-deal-with-1b-employee-retention-package---reprot)) ⟨daily 2026-09-02⟩
+
 ## 2026-08-27 — The guide is $108.0bn, and that is the number the tape traded
 
 - **Nvidia guided Q3 FY2027 revenue to $108.0bn, plus or minus 2%**, per its own release, on top of **$96.2bn of actual Q2 FY2027 revenue, up 106% year over year**. The stock closed **+8.74% at $227.98**. ⚠️ **The widely-quoted $104.2bn "consensus" is a media-reported analyst aggregate, not an Nvidia figure**, and the two should not be set against each other as if they came from the same kind of source. This entry also settles the prior day's hedge: the map could only say "roughly 7-8%" live, and the close is now on the record.
