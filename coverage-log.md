@@ -5402,3 +5402,147 @@ five hours after the 09-01 digest-day closed.*
 - **`gcloud auth login`** for `bq` — day seventeen. `attention/world-news.yaml`
   is still frozen at 08-25, so the mechanical world-news candidate pool has
   fed nothing into thread candidates for over a week.
+
+## 2026-09-03 critic pass — finalized digest-day 2026-09-02. Three lenses, one failure mode, and the fix ran the same day
+
+*Three critic agents plus a buffer-triage agent, run at ~15:00 ET on the
+finalize pass, ten hours after the 09-02 digest-day closed. This pass is
+different from every prior one in one respect: the strongest finding on
+all three lenses came from the map's own uncurated collector buffer, not
+from the benchmark set.*
+
+**The finding, stated once for all three lenses.** The 09-02
+`google_news_rss` lane failed inside both of that day's batch runs and its
+standalone re-run landed at **19:47Z — 47 minutes after the 15:00 ET
+digest cut** — with 9,173 items. Nobody read it. It held: Anthropic's
+**Claude Fable 5.1 / Mythos 5.1** release (45-50 hits; the 09-01 lead
+story, missed for two days), OpenAI's **Astra** tease (35), BOJ Governor
+**Ueda's September-hike hint and the yen's reversal** (108 hits, caught by
+the four watchlist terms added on the 09-01 finalize), the **Tumbler
+Ridge / OpenAI lawsuits** (6, correctly tagged mental-health), and Nvidia's
+"nears $14bn Hugging Face deal" (17, a known arc). Each digest's 15:00 ET
+throughline called its lens quiet. **This is the fourth collector-caught /
+curation-dropped instance in four days (CXMT 08-31, Runway 09-01, and now
+three at once) and it is no longer a per-incident note.** The process fix
+applied on 09-03: news lanes launched as separate processes at run start
+(the standalone lane finished in 24 minutes, confirming the batch
+time-budget diagnosis), plus a dedicated buffer-triage dispatch that reads
+the day's own buffer before anything is finalized. First day, first
+results — the 🌙 sections on all four 09-02 digests are what it produced.
+
+### frontier-ai / 2026-09-02
+- **Missed:** **Anthropic's Claude Fable 5.1 and Claude Mythos 5.1**
+  (announced 2026-09-01T18:01Z; one model at two safeguard levels; Terminal-
+  Bench-Science 52.6% vs 24.7%; cache reads cut 75%; strengthened
+  anti-distillation with 16 million exchanges traced to ~24,000 fake
+  accounts naming DeepSeek, Moonshot and MiniMax; default text watermarking;
+  no government review body named). Led three of four benchmarks' 09-02
+  editions. `grep -ril "Fable 5.1" artifacts/ attention/` returned nothing.
+  **In buffer: yes, 45-50 times.** The largest miss any pass on this lens
+  has recorded, on the map's most-tracked entity.
+- **Check strength:** strong. Three benchmarks date-verified and read; The
+  AI Daily Brief genuinely dark (newest episode 09-01; 09-02 and 09-03 URLs
+  404; its homepage banner shows a stale date — do not trust the banner).
+- **Secondary:** World Labs' "Atlas" (09-01, TLDR's top slot) — **zero
+  buffer hits, a pure collection gap**; Cognition's ~$1bn at $47bn
+  (Bloomberg, 09-01 20:29 ET) — in buffer twice, digest-day 09-01.
+- **Structural blind spot:** no thread exists for frontier release cadence;
+  `gpt-5.6-release` did that job for one model and is resolved. Also: the
+  "five hours of sweeping found nothing" framing is now a suspect QA signal
+  — thread-by-thread checking has a structural miss mode for stories that
+  do not yet have a thread.
+- **Map effect:** entities `world-labs` and `hugging-face`; theme terms
+  `Claude Fable`, `Claude Mythos`, `GPT-6`, `OpenAI Astra` (family names,
+  not versions); a cross-lab release-cadence thread offered as a candidate.
+  Release recorded on `2026-09-01-frontier-ai.md` 🌙 and, where it bears on
+  a watch line, `kimi-distillation-fight` and
+  `frontier-model-gov-review-precedent`.
+- **Access:** TLDR AI's dated archive (`tldr.tech/ai/YYYY-MM-DD`) is
+  client-rendered — readable only through the `r.jina.ai` proxy. Added
+  below.
+
+### global-capital / 2026-09-02
+- **Missed (large):** **BOJ Governor Ueda's post-G20 hint** ("decide on
+  policy with upside price risks in mind"; ~94% September-hike odds; Takata
+  leaving a larger move open) and the **yen's reversal from 160.1 to
+  briefly touch the low-158s** on intervention alert. Belongs on
+  `ai-buildout-debt-risk` / `treasury-long-end-intervention`; now there.
+  **In buffer: yes, 108 hits** — 49 on `Bank of Japan rate hike`, 14 on
+  `JGB`, 7 on `yen intervention`, 6 on `Japan 10-year yield`. The 09-01
+  fix worked; nothing read its output. The second real miss on the
+  cross-border leg in two days.
+- **Missed (smaller):** **FT Unhedged led 09-02 with "France's debt
+  crisis-in-waiting"** — OAT-Bund spread ~85bp (from ~55bp), 30-year OATs
+  near 4.9%, draft 2027 Finance Bill due 09-30. This map carried France as
+  one word inside a "global selloff" list. **In buffer: no — a collection
+  gap**; no term existed.
+- **Check strength:** weak by count — two of four benchmarks checkable
+  (Money Stuff's 09-02 "The ETF Dividend Flip," off-lens; Unhedged headline
+  only, body paywalled). Axios Pro Rata and Bloomberg Technology are
+  same-day-only and were correctly not re-tested.
+- **Map effect:** terms `France OAT`, `OAT yield`, `France sovereign debt`,
+  `France budget deficit`; expectations `boj-september-meeting-0918` and
+  `france-draft-finance-bill-0930`; an interpretation on the BOJ late-catch
+  bullet. `capital-context.yaml` needs its BOJ/JGB leg written in at the
+  next /week refresh — it has now cost two misses.
+
+### mental-health / 2026-09-02
+- **Missed:** **new lawsuits against OpenAI over the February Tumbler Ridge,
+  BC school shooting**, alleging the company could have alerted police to
+  the shooter's ChatGPT messages and chose reputation management; the
+  filings name Altman and Lehane. Bloomberg, WSJ, NPR, Bloomberg Law between
+  12:12 and 14:59 UTC — inside the window. `grep -ril "Tumbler Ridge"
+  artifacts/ attention/` returned nothing. **In buffer: yes** — twice under
+  `lens: mental-health` (matched `AI chatbot suicide risk`, `chatbot
+  wrongful death`, `ChatGPT mental health`), four times under `ai`. The
+  vocabulary worked; the timing failed. Now on
+  `ai-therapy-regulatory-reckoning` as the first mass-casualty entry on its
+  wrongful-harm docket.
+- **Check strength:** the strongest starting position a pass can have — all
+  four daily benchmarks plus JMIR Mental Health and npj Digital Medicine
+  live, dated and compared — and none of the six is where this story would
+  ever surface. **This lens's benchmark set has no wire or legal-affairs
+  outlet, which is the same defect as the general-news backstop argument
+  (still six documented misses; this is not a seventh, because the story
+  was in the map's own pipeline).**
+- **We had → they didn't:** the five California bill statuses, read off the
+  Legislature's pages, which the trade press still lags by days.
+- **Also recorded on the finalize, from the sweeps rather than the critic:**
+  the FDA's TEMPO pilot had filled its behavioral-health slot on 08-24
+  (Limbic, SonderMind) while two threads still said "no participant yet" —
+  SonderMind was a watched entity on one of them; and a depression-specific
+  DiGA systematic review (08-25) never reached the map. Both journal-tier
+  misses of the shape the 09-01 pass flagged.
+- **Access:** JMIR Mental Health article pages return an AWS WAF challenge
+  (HTTP 202, empty body) even with a browser UA — the Atom feed is fine,
+  bodies need the proxy; npj Digital Medicine's `.rss` 303-redirects and
+  needs `curl -sL`. Added below.
+
+### Access-transport notes worth keeping
+- **TLDR AI** dated archive `tldr.tech/ai/YYYY-MM-DD` — proxy only
+  (`r.jina.ai`); plain curl returns the Next.js shell.
+- **The AI Daily Brief** — verify against `/e/YYYY-MM-DD`, never the homepage
+  banner, which rendered a 09-01 episode under a 09-03 date.
+- **JMIR Mental Health** — feed direct, article bodies via proxy (AWS WAF
+  202). **npj Digital Medicine** — `curl -sL` on the `.rss` (303).
+- **CourtListener** — the docket HTML and RECAP PDFs fetch fine with a plain
+  browser-UA `curl` (200); WebFetch gets 403/401 on every form. The Anthropic
+  v. DoW stay error was settled this way in one round.
+- **Bloomberg** individual article pages remain CAPTCHA-blocked direct and
+  via proxy; the Money Stuff `.rss` endpoint and headline-level RSS are the
+  only paths.
+
+### ⚠️ Standing asks — one resolved, two open
+- ✅ **`gcloud auth login` — RESOLVED 09-03.** `bq` authenticated; the
+  world-news pool rebuilt after seventeen days (27 items, 11 candidates,
+  nine of them one Germany–Russia cluster at up to 135 outlets — the largest
+  candidate the pool has ever produced, and it had been on no thread).
+- 📋 **Wire-service / general-news backstop for `sources/benchmarks.yaml`** —
+  still six documented misses; today's Germany–Russia case would have been
+  a seventh had the pool not come back the same day.
+- 📋 **`sources/benchmarks.yaml`'s comment block** should record that Axios
+  Pro Rata and Bloomberg Technology have no dated-archive path at all (a
+  day-late pass structurally cannot audit them), and that a standing
+  buffer-read before finalize is now part of the critic's job, not a
+  suggestion.
+

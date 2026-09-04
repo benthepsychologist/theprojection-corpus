@@ -51,6 +51,25 @@ lenses:
         # a creative-tools one. Sweep term is "Runway AI", not bare "Runway":
         # the critic's own grep showed bare "runway" collides with cash-runway
         # language in financial copy.
+      - term: "World Labs"
+        entity: world-labs
+        name: "World Labs"
+        # critic-add 2026-09-03 (frontier-ai coverage critic, digest-day
+        # 09-02): World Labs shipped "Atlas," a from-scratch spatial world
+        # model, on ~09-01/09-02 and it led TLDR AI's 09-02 edition ABOVE
+        # Fable 5.1 — with zero hits in any collector buffer. A pure
+        # collection gap (the same pass's Fable 5.1 miss was curation, the
+        # story sat in the buffer 49 times). Full lab name as the term;
+        # bare "Atlas" collides with everything.
+      - term: "Hugging Face"
+        entity: hugging-face
+        name: "Hugging Face"
+        # curate-add 2026-09-03: Nvidia agreed to acquire it for
+        # $12,930,300,000 (Nvidia's own blog, 09-03) — the open-weight hub
+        # that distributes Qwen/DeepSeek/Kimi and the breached party in the
+        # OpenAI agent incident. It was named inside two theme strings but
+        # was never an entity, so neither the 09-02 "nears $14bn deal"
+        # reports (17 buffer hits) nor the breach could be tagged to it.
       - "DeepSeek"
       - "Alibaba"          # the company — distinct from "Alibaba Qwen" below
                            # (the model-level entity). Added 2026-08-25: this
@@ -212,6 +231,16 @@ lenses:
 
     # Themes — policy + MONEY/PROJECTS (radar Q2 "where is the money going")
     themes:
+      # Frontier flagship releases — critic-add 2026-09-03 (frontier-ai
+      # critic, digest-day 09-02): Anthropic's Fable 5.1 / Mythos 5.1
+      # (09-01) and OpenAI's GPT-6 "Astra" (09-03) both shipped with no
+      # release-cadence seam on this map, and "Anthropic"/"OpenAI" alone
+      # drown in IPO and policy volume. Model-FAMILY names, not version
+      # numbers, so the terms survive the next point release.
+      - "Claude Fable"
+      - "Claude Mythos"
+      - "GPT-6"
+      - "OpenAI Astra"
       # Policy / governance
       - "AI export controls"
       - "AI Act enforcement"
@@ -694,3 +723,16 @@ lenses:
       - "JGB"
       - "Bank of Japan rate hike"
       - "yen intervention"
+      # critic-add 2026-09-03 (global-capital coverage critic, digest-day
+      # 09-02): FT Unhedged led 09-02 with "France's debt crisis-in-waiting"
+      # (10-year OAT-Bund spread ~85bp, 30-year OATs near 4.9%, a draft
+      # 2027 Finance Bill due 09-30) and this map had France only as one
+      # word inside a "global selloff" list. Zero buffer hits — a pure
+      # collection gap, unlike the same day's BOJ miss (108 hits, all
+      # curation). European sovereign stress is the other half of the
+      # "the selloff is global, not US-specific" framing this lens already
+      # runs; these terms are the collection half of naming it.
+      - "France OAT"
+      - "OAT yield"
+      - "France sovereign debt"
+      - "France budget deficit"

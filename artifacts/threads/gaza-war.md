@@ -17,6 +17,11 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-03 — Ben-Gvir unveils a campaign plan to relocate 1.86 million Gazans over seven years
+
+- **National Security Minister Itamar Ben-Gvir unveiled "Disengagement 710," a plan proposing a dedicated Israeli government ministry to facilitate "voluntary emigration" of roughly 1.86 million Palestinians from Gaza over seven years (250,000 in year one, 1.11 million within three years), backed by an initial 10 billion NIS Israeli investment and a matching framework of up to 50 billion NIS contingent on international participation.** ⚠️ **This is a party campaign proposal, not government policy** — Ben-Gvir framed it as a top demand of his Otzma Yehudit party after the upcoming election, explicitly citing Trump's recent endorsement of emigration as a Gaza solution as having "legitimized" his previously fringe position. Directly bears on this thread's standing questions about whether the security-zone/governance track holds or the population itself becomes the target of policy.
+  ([Jerusalem Post](https://www.jpost.com/israel-election-2026/article-907523)) ⟨daily 2026-09-03⟩
+
 ## 2026-09-01 — Israeli-backed militia raid captures Hamas's head of internal security; covering strikes kill at least three
 
 - **A named, distinct operation rather than the low-boil strike pattern this thread has been carrying: an Israeli-backed Palestinian militia raid in Gaza City captured Mu'in al-Arabid, identified as Hamas's head of its General Security Apparatus, and Israeli air cover for the raid's withdrawal killed at least three Palestinians (one woman and two children) with eight more injured.** Defense Minister Israel Katz confirmed the capture and said strikes were aimed to "remove threats to security forces." The raid was exposed mid-operation, triggering clashes; a higher death toll (up to 8) circulating via Hamas-linked sources is not independently confirmed here. Israel denied any of its own casualties despite a Gaza government media office claim that Israeli special-forces personnel were hit.

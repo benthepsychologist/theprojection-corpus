@@ -14,6 +14,11 @@ tools clinically strongest but cost-structured worst (flat access-fee
 pricing); Germany's 2026 DiGA reform ties ≥20% of price to performance.
 Three markets running the same natural experiment.
 
+## 2026-09-03 — Small open-label RCT: therapist-guided digital therapeutic beats psychoeducation for panic disorder — on clinician ratings only
+
+- ⚠️ **Exact publication day not established — Crossref gives only "September 2026" for this one (unlike the entry above, no online-date field was populated), so this is dated by month, not day; treat the "2026-09" date as approximate.** Kang, Hwang, Kim, Kim, Kwak, Kim and Choi randomized 52 panic-disorder patients (26/26) to a therapist-guided, app-based CBT digital therapeutic (8-12 weeks) versus structured psychoeducation (biweekly, 12 weeks) in an open-label design. The DTx arm won on clinician-rated outcomes — Panic Disorder Severity Scale adjusted mean difference −3.71 (p=0.02), Clinical Global Impression of Improvement t(39)=−2.78 (p=0.008), 80.8% completion — but the advantage did not appear on patient self-report measures, and no app-alone arm was tested, so the design speaks only to the blended (app + therapist) model this thread's payment-paradox framing keeps landing on, not to a standalone app. Open-label design (patients and clinicians both knew their assignment) is a real limitation the authors flag themselves.
+  ([Internet Interventions, DOI 10.1016/j.invent.2026.100977](https://www.sciencedirect.com/science/article/pii/S221478292600076X)) ⟨daily 2026-09-03⟩
+
 ## 2026-08-26 — The most recognisable consumer brand in the category sells for a tenth of its peak
 
 - **Headspace's sale to Sword Health was reported at $200-300 million against
@@ -31,6 +36,9 @@ Three markets running the same natural experiment.
 ## 2026-08-25 — A peer-reviewed statement of this thread's thesis, specific to serious mental illness — critic-caught
 
 - **JMIR Mental Health published "When Markets Shape AI Mental Health Self-Management Tools: Consequences for Serious Mental Illness" on 08-25, arguing that AI self-management tools are built and funded for scalable low-intensity conditions (anxiety, depression) because that is where the commercial return is, leaving schizophrenia-spectrum and bipolar populations — the greatest clinical need — comparatively unserved by the same product wave.** This is the market-shapes-clinical-priority pattern this thread argues from case studies (Pear Therapeutics folding on a strong RCT base), now with an academic citation naming the SMI population specifically, which nothing on this map had. ⚠️ Critic-caught from the JMIR Mental Health weekly benchmark, four days after publication. ([JMIR Mental Health](https://mental.jmir.org/2026/1/e99143)) ⟨daily 2026-08-29⟩
+
+- ⚠️ **Out of window (published online 2026-08-25, more than a week before this run's coverage starts) but never captured — flagged for the same reason the 09-01 critic pass flagged two missed JMIR papers: it is a same-thread journal finding this map's tiering didn't catch.** Schmitz, Frey, Treis-Hoffmann, Hagendorf, Weltermann and Karimzadeh published "Digital therapeutics for depression in Germany: A systematic app review" in *Internet Interventions* — a fresh systematic review of the depression-specific DiGA landscape, distinct from the "23 DiGA approval studies, high risk of bias" review already on this thread (that one covered all DiGA indications as of March 2024; this one is depression-specific and current to mid-2026). Full abstract sits behind a ScienceDirect wall at crawl time; confirmed via Crossref metadata (DOI, author list, online date) rather than the article text itself, so the specific findings on app count/evidence quality/DiGA-directory status are not yet in hand — flagged as a real gap on this thread's own core question (is the evidence base for Germany's flagship reimbursement model actually solid) rather than entered with unverified claims.
+  ([Internet Interventions, DOI 10.1016/j.invent.2026.100991](https://www.sciencedirect.com/science/article/pii/S2214782926000904)) ⟨daily 2026-09-03⟩
 
 ## 2026-08-07 — Opened (ben-steer)
 

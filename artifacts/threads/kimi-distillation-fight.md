@@ -12,6 +12,15 @@ opened: 2026-07-24
 independent verification one way or the other, and whether it chills
 enterprise adoption of Kimi K3's open weights (due 07-27).
 
+## 2026-09-03 — Moonshot reportedly files confidentially for a Hong Kong IPO targeting $3B at a $50B valuation
+
+- **Moonshot AI has reportedly submitted a confidential A1 application to the Hong Kong Stock Exchange this week, formally starting its IPO process at a target raise of about $3 billion against the ~$50 billion valuation this map has been tracking as a private-round target.** Goldman Sachs, CICC and Deutsche Bank are named as the banks on the deal; Moonshot had to unwind its offshore incorporation structure into an onshore China domicile before filing, per the reporting. The company's only comment: it has "no information to disclose." This lands well inside the map's own `moonshot-hk-ipo-filing` ledger window (due 2026-09-30, "as soon as this month" per the original August sourcing) and effectively answers it early, pending confirmation on HKEX's own disclosure. ([TechNode](https://technode.com/2026/09/03/moonshot-ai-reportedly-submits-confidential-hong-kong-ipo-filing/), [RTE/Reuters](https://www.rte.ie/news/business/2026/0903/1590165-ai-firm-moonshot-files-confidentially-for-hong-kong-ipo/), [Invezz](https://invezz.com/news/2026/09/03/chinas-moonshot-ai-files-for-hong-kong-ipo-seeks-3-billion-report/)) ⟨daily 2026-09-03⟩
+
+## 2026-09-01 — Anthropic ships an anti-distillation API restriction and, for the first time, quantifies the campaign it says targets its own models
+
+- **Anthropic disclosed it traced more than 16 million Claude exchanges to distillation campaigns run through roughly 24,000 fake accounts, and named three Chinese labs — DeepSeek, Moonshot AI and MiniMax — as beneficiaries, alongside the Fable 5.1/Mythos 5.1 launch.** This is the first time Anthropic itself has put a number on the distillation activity behind the OSTP accusation this thread has tracked against Moonshot specifically since 07-23; Moonshot is now one of three labs named rather than the sole one. ([Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1), [Yahoo Tech](https://tech.yahoo.com/ai/claude/articles/anthropic-launches-claude-fable-5-182403780.html)) ⟨daily 2026-09-03⟩
+- **Anthropic shipped a concrete technical countermeasure: API accounts opened on or after 2026-08-31 can no longer carry Claude's extended-thinking blocks forward into a manually edited prior-context conversation** — a technique Anthropic says "has also been used to distill its models at scale." Accounts opened before that date are exempt, and ordinary Claude Code/Cowork/claude.ai users see no change; this is the first shipped product response on this thread's own record, as opposed to accusation, denial, or trade-policy threat. ([Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1), [Yahoo Tech](https://tech.yahoo.com/ai/claude/articles/anthropic-launches-claude-fable-5-182403780.html)) ⟨daily 2026-09-03⟩
+
 ## 2026-08-25 — Moonshot seeks US cloud distribution for Kimi K3
 
 - **Moonshot AI opened talks with Microsoft, Amazon and Google to host

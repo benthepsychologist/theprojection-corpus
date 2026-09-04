@@ -153,3 +153,56 @@ greg-abel-gave-his-first-on-record-ai-comments-sin:
     positioning. Abel connecting it to BHE is the first first-party
     statement tying it to an operating business, and the first that has an
     incentive structure worth naming rather than taking at face value.
+
+bank-of-japan-governor-ueda-said-the-board-would:
+  mechanism: >
+    Japan is the largest foreign holder of Treasuries, and Japanese
+    institutions hold them hedged; the hedge cost is set by the short-rate
+    gap. A BOJ hike narrows that gap from the Japanese side at the same
+    moment a 3% JGB offers a domestic alternative for the first time in a
+    generation, so the marginal Japanese buyer of the US long end faces a
+    lower hedged yield and a better home substitute simultaneously. Ueda
+    hinting is the market pricing the flow before it happens; the yen
+    reversal is the first visible leg of that repricing.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The hike is delivered, the yen firms, and Japanese repatriation shows
+        up as a persistent bid for JGBs and a persistent offer in Treasuries
+        — the "global selloff" stops being a shared term premium and becomes
+        a flow-of-funds story with a named seller.
+      why: >
+        Checkable on two lagged series this map already collects: Treasury
+        TIC's Japan line (two-month lag) and the MOF weekly securities-flow
+        data. If Japanese net Treasury purchases turn negative in the
+        September-October prints while the JGB curve bull-flattens, the
+        mechanism is running; if TIC shows continued buying, the yen move was
+        positioning, not repatriation.
+      precedent: >
+        The 2022 episode: the BOJ's December yield-curve-control widening sent
+        the 10-year JGB through its band and Japanese life insurers cut
+        hedged Treasury holdings through 2023 — the largest foreign seller
+        that year — while US term premium rose independently of Fed policy.
+    - direction: >
+        Ueda is talking the yen up to avoid intervening, the hike is small or
+        deferred to October, and the transmission stalls — the low-158 print
+        was a squeeze on short-yen positioning, not a regime change, and
+        Treasuries keep trading on US supply and oil.
+      why: >
+        The tell is the size and the language on 09-18: a 25bp move with
+        "gradual" guidance and no balance-sheet change leaves the hedge-cost
+        gap wide enough that US paper still wins on a hedged basis. Bessent's
+        public pressure for "also rate hikes" cuts the other way and is
+        itself a novelty worth weighting.
+      precedent: >
+        The 2024 sequence: the BOJ's March exit from negative rates and the
+        July hike produced a violent yen squeeze and the August 5 global
+        equity unwind, then faded within weeks as the carry trade rebuilt —
+        the currency moved far more than the cross-border bond flow did.
+  context_note: >
+    `capital-context.yaml`'s rate_regime reading is entirely US-domestic and
+    its own comment block twice deferred a BOJ/JGB leg as a /week-scale gap.
+    Two consecutive days have now produced real misses on exactly that leg,
+    one of them with 108 buffer hits; the standing snapshot needs the leg
+    written in, not deferred again.
+

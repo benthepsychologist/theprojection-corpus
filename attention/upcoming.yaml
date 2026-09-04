@@ -720,7 +720,14 @@ expectations:
     what_confirms: "an actual HKEX filing; the $50B figure has no primary confirmation, sits above the $35B Series F, and rides atop the Fable-distillation dispute"
     logged: 2026-08-03
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-03
+    note: >
+      Reuters/TechNode (09-03): Moonshot submitted a confidential A1
+      application to HKEX this week, ~$3bn raise at a ~$50bn valuation,
+      Goldman/CICC/Deutsche on the deal. Confidential, so no HKEX publication
+      yet; confidence stays `reported` on a filing the exchange has not
+      itself disclosed. Resolved 27 days ahead of the 09-30 due date.
     slips: [2026-08-31]
     # 2026-08-29 ⟨daily⟩: SLIPPED. Moonshot itself denied an August filing
     # (TechNode 08-03, The Standard) and is reported targeting an HKEX
@@ -1666,7 +1673,16 @@ expectations:
     # quiet since 07-31 and the next real test still two weeks out. The
     # ledger entry is what stops the thread being swept blind in the
     # meantime.
-    status: pending
+    status: hit
+    resolved: 2026-09-02
+    note: >
+      Reported 09-02 after the close: revenue $29.6bn (+86% YoY) and AI
+      semiconductor revenue $16.7bn (+221%) both above consensus; Q4 guide
+      $34.8bn / $21.7bn AI came in under the ~$35bn Street figure and the
+      stock fell ~3% on 09-03. Jalapeno shipped in production, successor
+      "approaching tape-out"; Tan said "six XPU customers" but named only
+      four (Google, Meta, OpenAI, Anthropic). No new backlog figure. Resolved
+      on the 09-03 run (the print landed after the 09-02 run's window).
     evidence: |
       INTERIM 2026-08-30, on track. Reports 09-02 after the close;
       guidance (~$29.4bn total revenue, ~$16bn AI semiconductor revenue)
@@ -2573,4 +2589,110 @@ expectations:
       deadline rather than the stay.
     logged: 2026-09-02
     logged_by: curate-add
+    status: withdrawn
+    resolved: 2026-09-03
+    note: >
+      WITHDRAWN on the 09-03 run: the premise was false. The Order of Final
+      Relief (Dkt. 251, read from the RECAP PDF on 09-03) contains no stay of
+      any kind — the words "stay," "seven" and "appeal" do not appear in it —
+      and the docket shows no separate stay order; secondary reporting
+      (Decrypt 08-28, Washington Examiner 09-03) says Judge Lin DENIED the
+      government's request for a seven-day administrative stay. The
+      injunction has therefore been in effect since 08-27. Second error on
+      this case in two days (the first: "notice of appeal already filed,"
+      corrected 09-02). As of 09-03 the docket still ends at Dkt. 252
+      Judgment / "Civil Case Terminated" (08-27): NO notice of appeal. What
+      is live instead: Under Secretary Emil Michael said 09-03 the
+      supply-chain-risk designation "remains in effect," in apparent
+      defiance of the injunction — tracked on dod-ai-consolidation and
+      frontier-model-gov-review-precedent. anthropic-dow-appeal-window
+      (09-28) remains the live dated question.
+
+  # --- 2026-09-03 run additions ---
+
+  - id: bls-august-jobs-report-0904
+    claim: >
+      BLS releases the August 2026 employment report (nonfarm payrolls,
+      unemployment rate) — the last full jobs print before the 09-16 FOMC
+    due: 2026-09-04
+    due_precision: day
+    thread: fed-independence-fight
+    entities: [kevin-warsh]
+    source: https://www.bls.gov/schedule/news_release/empsit.htm
+    confidence: confirmed
+    what_confirms: >
+      the print itself. Context going in: July was -23,000 against a
+      +83,000 consensus with a 103,000 downward revision; August previews
+      cluster around +50,000 to +75,000 with the unemployment rate split
+      between 4.1% and 4.3%. On 09-03 Governor Waller said he would hold
+      in September "if disinflation continues" and CME hike odds fell to
+      ~54.6% — this print is the first data he named. Monday 09-07 is
+      Labor Day (no session).
+    logged: 2026-09-03
+    logged_by: curate-add
+    status: pending
+
+  - id: michigan-city-moratorium-second-reading
+    claim: >
+      Michigan City, Indiana's Common Council holds second reading on an
+      ordinance imposing a moratorium on future data-center projects while
+      exempting Google's $832M "Project Maize," already under construction
+    due: 2026-09-15
+    due_precision: day
+    thread: ai-datacenter-sites
+    entities: [google]
+    source: https://www.abc57.com/news/michigan-city-considers-data-center-moratorium-as-project-maize-continues-construction
+    confidence: confirmed
+    what_confirms: >
+      the vote, and whether the moratorium stays forward-looking (Councilman
+      Dabney: exempting the current build is a "contract," its successors
+      are not) — the fifth documented instance of a moratorium aimed at the
+      NEXT project rather than the one in the ground (Effingham, El Paso,
+      Bradley County, Independence MO).
+    logged: 2026-09-03
+    logged_by: curate-add
+    status: pending
+
+  - id: boj-september-meeting-0918
+    claim: >
+      The Bank of Japan's 09-17/18 policy meeting decides on a rate hike,
+      after Governor Ueda said on 09-02 the board would "decide on policy
+      with upside price risks in mind" and markets priced ~94% odds
+    due: 2026-09-18
+    due_precision: day
+    thread: ai-buildout-debt-risk
+    entities: [bank-of-japan]
+    source: https://www.bloomberg.com/news/articles/2026-09-02/boj-s-ueda-to-decide-on-policy-with-upside-price-risks-in-mind
+    confidence: reported
+    what_confirms: >
+      the decision and its size (board member Takata left a larger-than-25bp
+      move open), and the JGB 10-year / yen reaction — the cross-border leg
+      capital-context.yaml flagged twice as theoretical and that produced
+      two real misses on this map (09-01 3% crossing, 09-02 Ueda hint,
+      the latter sitting in the buffer 108 times uncurated). Bessent has
+      publicly pressed Tokyo for "also rate hikes" (NHK, 09-01/02).
+    logged: 2026-09-03
+    logged_by: critic-add
+    status: pending
+
+  - id: france-draft-finance-bill-0930
+    claim: >
+      France's government presents its draft 2027 Finance Bill by 09-30,
+      with 10-year OAT yields near 2008-crisis highs and the OAT-Bund spread
+      around 85bp — FT Unhedged's 09-02 lead ("France's debt crisis-in-waiting")
+    due: 2026-09-30
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://www.cnbc.com/2026/08/31/france-debt-bond-yields-budget.html
+    confidence: reported
+    what_confirms: >
+      a bill actually tabled with a credible 2027 consolidation path, and
+      the OAT-Bund spread's reaction; a missed deadline or a government
+      confidence vote is the other outcome. Logged because this map carried
+      France only as one word inside a "global selloff" list — the critic's
+      point is that it is a dateable crisis with its own mechanism (political
+      deadlock, not term premium). Watchlist terms added the same day.
+    logged: 2026-09-03
+    logged_by: critic-add
     status: pending

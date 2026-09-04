@@ -22,6 +22,14 @@ the full write-up.*
 
 ## Today's throughline
 
+⚠️ **Amended 2026-09-03.** This digest was finalized on 09-02 calling the
+day quiet for this lens. It was not: **Anthropic released Claude Fable 5.1
+and Claude Mythos 5.1 at 14:01 ET on 09-01**, OpenAI teased Astra as its
+first model to cross a "Critical" cyber threshold that evening, Cognition's
+$47bn round hit Bloomberg at 20:29 ET, and World Labs shipped a world model.
+None reached this digest, its critic pass, or the next day's. The section
+**🌙 Late catch (09-03)** below carries them; the original text is kept.
+
 A quiet morning for new-today developments on this lens specifically —
 the china-frontier-IPO cluster and the capex/power cluster both ran full
 sweeps and came back with real news, but all of it dated 08-31 and
@@ -229,6 +237,74 @@ digest-day, flagged so a later pass doesn't re-litigate it as a 09-01 miss.
 filing, the Google/Fervo geothermal PPA, or the day's ledger flips. All four
 are consumer-facing product newsletters and don't run the capital-structure
 beat at all.
+
+## 🌙 Late catch (found 09-03) — the release this digest missed, and four more 09-01 items
+
+- **Anthropic released Claude Fable 5.1 and Claude Mythos 5.1 on 09-01 —
+  one model at two safeguard levels, Fable generally available and Mythos
+  restricted to vetted cyber and life-sciences users through two trusted
+  access programs, the latter "developed in partnership with the US
+  government."** Anthropic's own numbers: Terminal-Bench-Science 52.6% vs
+  Fable 5's 24.7% (Opus 5 29.0%, GPT-5.6 Sol 22.4%); Terminal-Bench 4.0
+  55.8% (Mythos 5.1: 60.9%) vs 42.0%; AutomationBench 31.4% vs 17.1%;
+  Humanity's Last Exam 60.9% without tools. Artificial Analysis puts it at a
+  record 66 on its Intelligence Index, at 20% higher cost per task because
+  it writes ~1.7x the tokens. Cache reads cut 75% to $0.25 per million
+  tokens — ~25% cheaper on typical workloads, up to ~45% on agentic ones;
+  standard rates unchanged at $10/$50. New in this release: default text
+  watermarking under the EU AI Act code of practice with a detection API in
+  private preview; "Enterprise Frontier Safeguards," a phased customer-held
+  zero-data-retention option; cyber safeguards that intervene ~60% less and
+  now allow vulnerability discovery (not exploit development); and
+  strengthened anti-distillation mechanisms, with Anthropic disclosing for
+  the first time that it traced 16 million exchanges to ~24,000 distillation
+  accounts and naming DeepSeek, Moonshot and MiniMax. Neither the
+  announcement nor the system card names CAISI, the UK AISI or the 30-day
+  review framework. ⚠️ Missed for two days with 45-50 hits in this map's own
+  buffer; recorded on `kimi-distillation-fight` and
+  `frontier-model-gov-review-precedent` where it bears on a watch line, and
+  offered as a thread candidate.
+  ([Anthropic](https://www.anthropic.com/claude-fable-and-mythos-5-1), [system card](https://www.anthropic.com/claude-fable-5-1-mythos-5-1-system-card), [Artificial Analysis](https://artificialanalysis.ai/articles/claude-fable-5-1), [VentureBeat](https://venturebeat.com/technology/anthropics-claude-fable-5-1-and-mythos-5-1-arrive-with-a-75-cost-reduction-for-fable-cache-reads), [TechCrunch](https://techcrunch.com/2026/09/01/anthropics-new-fable-release-is-cheaper-less-restrictive/))
+  <!-- k: t=kimi-distillation-fight,frontier-model-gov-review-precedent,anthropic-ipo-timing e=anthropic axis=labs-and-models sev=major -->
+
+- **OpenAI said the same evening that its next model, Astra, is the first
+  to reach the "Critical" cybersecurity threshold under its Preparedness
+  Framework, and that it would limit the model's advanced cyber features
+  after the July Hugging Face incident.** Fortune (16:00 ET) and TechCrunch
+  (17:06 ET) carried the tease; the "Path to Astra" safety brief followed. The
+  launch itself came 09-03 and is in that day's digest.
+  ([Fortune](https://fortune.com/2026/09/01/openai-astra-model-limit-access-cyber-features-hacking/), [TechCrunch](https://techcrunch.com/2026/09/01/openais-astra-model-is-on-the-way-and-very-good-at-breaking-into-computer-systems/), [OpenAI](https://openai.com/index/path-to-astra/))
+  <!-- k: t=openai-agent-security-incident,frontier-model-gov-review-precedent e=openai axis=research-and-safety -->
+
+- **Cognition, maker of the coding agent Devin, is closing roughly $1bn at
+  a $47bn valuation — up from $26bn in May and $10.2bn a year ago — on
+  revenue reportedly nearing $900M annualized, with close to $10bn of
+  investor interest.** Bloomberg, 20:29 ET. Cognition was on this map only as
+  Citi's vendor inside `enterprise-agent-product-race`.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-02/ai-startup-cognition-set-to-raise-around-1-billion-at-a-47-billion-value))
+  <!-- k: t=enterprise-agent-product-race e= axis=capital-and-corporate -->
+
+- **World Labs unveiled "Atlas," an omni world model pretrained natively on
+  text, images, video and 3D, generating 3D scenes and up to a minute of
+  1440p video** — early access only. Zero hits in any collector buffer, so
+  a collection gap rather than a curation one; `world-labs` is now a watched
+  entity.
+  ([World Labs](https://www.worldlabs.ai/blog/atlas), [SiliconANGLE](https://siliconangle.com/2026/09/01/fei-fei-lis-world-labs-debuts-atlas-a-world-model-showcase-for-advanced-spatial-intelligence/))
+  <!-- k: t= e=world-labs axis=labs-and-models -->
+
+- **Three more 09-01-dated items recorded on 09-03, on their threads:** UBS
+  puts China's immersion-DUV high-volume manufacturing two to five years out
+  and any EUV alternative beyond this decade (`china-duv-lithography`);
+  SpaceX overhauled its AI data-center leadership after Tennessee/Mississippi
+  sites ran for months without backup cooling or power, with Starlink veteran
+  Michael Nicolls given "ultimate oversight" (`spacexai-public-megacap`);
+  Michigan City, Indiana gave first reading to a moratorium on future data
+  centers while exempting Google's $832M "Project Maize" already under
+  construction, second reading 09-15 (`ai-datacenter-sites`); and music
+  publishers filed their opposition to Anthropic's motion to dismiss the
+  ~$3bn "Concord II" suit (`anthropic-copyright-exposure`).
+  ([TheNextWeb](https://thenextweb.com/news/ubs-china-asml-euv-decade-immersion-duv-dutch-export-licence), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/spcx-stock-focus-spacex-reportedly-172343782.html), [ABC57](https://www.abc57.com/news/michigan-city-considers-data-center-moratorium-as-project-maize-continues-construction), [Music Business Worldwide](https://www.musicbusinessworldwide.com/music-publishers-file-amended-lyrics-lawsuit-against-anthropic-just-as-ai-firms-separate-1-5b-piracy-settlement-with-authors-wins-court-approval/))
+  <!-- k: t=china-duv-lithography,spacexai-public-megacap,ai-datacenter-sites,anthropic-copyright-exposure e= axis=capital-and-corporate -->
 
 ---
 The lens's own new-today news was thin, but the day it closes on is not: a

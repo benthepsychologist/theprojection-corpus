@@ -1,22 +1,25 @@
 ---
 lens: world-news
 date: 2026-09-02
-status: building
+status: final
 window_start: 2026-09-02T05:00:00-04:00
-as_of: 2026-09-02T15:00:00-04:00
+as_of: 2026-09-03T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-02
 
-*Curated agentic-interim, 05:00 ET → **15:00 ET** Wednesday. Sources: 8
-hot-cluster sweeps at 10:00 ET plus a dedicated geopolitics sweep at 15:00
-ET, plus the deterministic collector lanes. ⚠️ **The news collectors did not
-run today** — see the note at the end; today's collection is agentic-only.
-Material dated 09-01 that landed after yesterday's cut — including the
-revision of the strike wave from seven-plus sites to roughly 100 targets —
-is folded into `2026-09-01-world-news.md` as a 🌙 late catch, not repeated
-here.*
+*Curated agentic-interim, 05:00 ET Wednesday → **05:00 ET Thursday** — the
+full digest-day, finalized on the 09-03 run. Sources: 8 hot-cluster sweeps
+at 10:00 ET and a dedicated geopolitics sweep at 15:00 ET on the 09-02 pass;
+then on the 09-03 finalize, a geopolitics sweep of the evening/overnight
+window, a dedicated Germany–Russia verification dispatch (prompted by the
+mechanical world-news pool, rebuilt today for the first time since 08-25),
+and a read of the 09-02 `google_news_rss` buffer, which landed at 19:47Z
+Wednesday — after the 15:00 ET cut — and had not been curated by anyone.
+Material dated 09-01 that landed after that day's cut is in
+`2026-09-01-world-news.md` as a 🌙 late catch. Everything dated 09-02 is
+here; everything dated 09-03 is in `2026-09-03-world-news.md`.*
 
 ## Today's throughline
 
@@ -166,11 +169,11 @@ targets. Held for your steer rather than auto-applied.
 
 ## 🧵 Thread candidates
 
-None offered this run. ⚠️ `attention/world-news.yaml`, the mechanical
-candidate pool, is **frozen at 08-25 — day seventeen** — on a BigQuery
-credential only you can refresh (`gcloud auth login`). This lens has
-therefore offered no mechanically-scored candidates for over a week, and
-that absence is a tooling outage, not a judgment that nothing qualified.
+None offered at 15:00 ET; one added on the finalize (see the section below).
+⚠️ At 15:00 ET `attention/world-news.yaml` was frozen at 08-25, day
+seventeen. **The freeze ended on 09-03** — `bq` authenticated again and the
+pool rebuilt with 27 items, 11 of them candidates, nine of those the
+Germany–Russia cluster.
 
 ## 🚨 Flash
 
@@ -180,12 +183,87 @@ market-halting event.
 
 ## ⚠️ Collection note
 
+*Finalize update (09-03): the `google_news_rss` lane's 3,000-second re-run
+DID land, at 19:47Z Wednesday — 47 minutes after this digest's cut — and
+nobody read it. The 09-03 run read it; the late-catch section above is the
+result. The mechanical world-news pool (`attention/world-news.yaml`) also
+came back online today after 17 days: the BigQuery credential is live again.*
+
 `google_news_rss`, `rss` and `gdelt` produced no provenance manifest and no
-buffer file for 09-02 across two full collector runs. Invoking the news lane
+buffer file for 09-02 across two full collector runs at 14:00 and 19:03 UTC. Invoking the news lane
 on its own does work, which points at the batch run's time budget rather
 than the collector itself — a targeted re-run was still in flight when this
 digest closed. Today's coverage is agentic-only, which is a weaker base than
 usual on the lens that leans hardest on wire coverage.
+
+## 🌙 Late catch — the 09-02 evening/overnight window, and what the 15:00 read missed
+
+*Two of the four items below were available before the 15:00 ET cut and were
+missed anyway; the Germany–Russia sequence was on no thread and surfaced only
+because the mechanical world-news pool came back online today (135 outlets on
+its largest event type). The Leipzig attribution itself is dated 09-01 and is
+folded into `2026-09-01-world-news.md`; this section carries the 09-02 fallout.*
+
+- **The EU and Romania summoned Russia's ambassador and Russia summoned
+  Germany's chargé d'affaires, one day after Berlin formally attributed the
+  Leipzig airport drone plot to Moscow.** EU foreign policy chief Kaja Kallas
+  said the thwarted 08-04/05 attack had "all the hallmarks of state-sponsored
+  terrorism"; Ursula von der Leyen, beside NATO's Mark Rutte, said
+  "intimidation will not work" and that Europe and NATO "will increase"
+  pressure on Russia. Romania's Foreign Ministry summoned ambassador Vladimir
+  Lipayev in solidarity; he called the accusations "absurd." Moscow called
+  Germany's closure of the Russian Consulate General in Bonn and the "Russian
+  House" in Berlin "another step toward completely demolishing" bilateral
+  relations. German investigators (Die Zeit, NDR, WDR, SZ — not yet confirmed
+  by federal prosecutors) identified two suspects, a Russian national with a
+  Latvian passport and a Belarusian with a Russian passport, one of whom
+  entered the Schengen area on an Italian-issued tourist visa. Dmitry Medvedev
+  answered Zelensky's airspace threat by noting Western leaders "often travel
+  to Kyiv by train" — read across outlets as a threat to a leaders' train.
+  This is on no thread; it sits on `russia-ukraine-war` as the hybrid-war leg
+  pending your call on the candidate below.
+  ([Reuters via TBS News](https://www.tbsnews.net/worldbiz/europe/eu-hit-back-russia-after-drone-attack-germany-probes-new-sabotage-cases-1531856), [AFP via Yahoo](https://uk.news.yahoo.com/eus-kallas-labels-leipzig-drone-110000596.html), [TASS](https://tass.com/politics/2182141), [Yle](https://yle.fi/a/74-20244275))
+  <!-- k: t=russia-ukraine-war e= axis=diplomacy sev=major -->
+
+- **Iran's Persian Gulf Strait Authority added 11 more vessels to its
+  "Non-Compliant Vessels" blacklist, bringing the seizure-risk list to 56 from
+  the 45 announced 08-24.** Listed ships face fines, confiscation or
+  detention; a new rule adds any vessel that does a ship-to-ship transfer with
+  a listed one. This is an economic-warfare instrument distinct from the
+  kinetic tanker strikes, and the capital-flow half is on `red-sea-oil-shock`.
+  ([BOE Report](https://boereport.com/2026/09/02/iran-blacklists-more-ships-trying-to-sail-through-hormuz-govt-website-shows/), [gCaptain](https://gcaptain.com/iran-blacklists-46-ships-on-hormuz-non-compliant-list/), [Newsweek](https://www.newsweek.com/iran-publishes-vessel-blacklist-for-strait-of-hormuz-warns-of-seizure-12357754))
+  <!-- k: t=red-sea-oil-shock,iran-conflict-widening e= axis=conflicts -->
+
+- **Iran's Red Crescent asked the ICC prosecutor to investigate the US strike
+  on the Kuhestak/Sirik wedding as a possible war crime.** Neither the US nor
+  Iran is a Rome Statute party, so the court has no automatic jurisdiction —
+  this is the dispute moving onto a legal-diplomatic track, not a case. Bahrain
+  and Jordan separately said their air defenses intercepted further Iranian
+  attacks on Wednesday.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/9/3/iran-red-crescent-urges-icc-probe-into-deadly-us-strike-on-wedding-party), [Tasnim](https://www.tasnimnews.ir/en/news/2026/09/02/3686994/iran-s-red-crescent-urges-icc-to-investigate-us-attack-on-kuhestak-wedding))
+  <!-- k: t=iran-conflict-widening e= axis=diplomacy -->
+
+- **Spain held coordinated solidarity demonstrations for Ceuta in more than
+  260 municipalities**, roughly 6,000 in Toledo alone, as the migration crisis
+  running since 07-30 turned into a domestic political mobilization; regional
+  president García-Page said a police report attributing the original crisis
+  to Morocco, if confirmed, "must have obvious consequences." Not a new
+  surge — a reaction to the one already tracked.
+  ([Infobae](https://www.infobae.com/espana/2026/09/02/espana-se-echa-a-las-calles-en-apoyo-a-ceuta-por-la-crisis-migratoria-manifestacion-historica-en-la-ciudad-autonoma-y-gritos-de-gobierno-dimision-por-todo-el-pais/), [El Español](https://www.elespanol.com/eldigitalcastillalamancha/economia/20260831/cecam-muestra-apoyo-situacion-critica-vive-ceuta-nicolas-viajara-ciudad-septiembre/1003744368124_0.html))
+  <!-- k: t=europe-migration-schengen e= axis=diplomacy -->
+
+## 🧵 Thread candidate added on the finalize
+
+- **candidate:** Germany–Russia hybrid-war escalation — Berlin formally
+  attributes the Leipzig airport drone plot to Moscow (09-01), closes the Bonn
+  consulate and the Berlin "Russian House," raises the threat level to
+  "high," a second grid-sabotage probe opens the same day, EU/Romania/Moscow
+  trade summonses (09-02), and Lavrov closes all three Goethe-Institut
+  centres (09-03) — **track it?** *(world-news, 135 outlets on the largest of
+  nine GDELT event types — the largest candidate the mechanical pool has ever
+  produced)*. The dispatch that verified it recommends a dedicated leg inside
+  `russia-ukraine-war` rather than a new thread unless the diplomatic-expulsion
+  track keeps growing; entries are parked there for now.
 
 ---
 Two wars produced institutional responses rather than new events: Ukraine

@@ -28,3 +28,8 @@ landed after clearance and deployment — and replicated.
   sprint is running now. The difference, and the reason this thread
   exists: here the confirmatory trial eventually happened and held.
   (wave: mh-q03) ⟨steer 2026-08-07⟩
+
+## 2026-09-03 — Home-based tDCS study in late-life depression finds amyloid burden blunts cognitive gains
+
+- **A single-arm exploratory study of home-based transcranial direct current stimulation (tDCS) in late-life depression found that higher baseline amyloid burden predicted smaller cognitive gains from the protocol.** 41 older adults enrolled, 38 completed; tDCS was self-administered 5-7 sessions weekly for 4 weeks (F3-anodal/F4-cathodal montage targeting left dorsolateral prefrontal cortex, 1.5-2mA, 30 min/session). The Centiloid-MoCA association survived correction in both analysis sets, but the authors are explicit about the limits: with no control arm, "neither the observed changes nor the amyloid association can be attributed to stimulation itself," and they call for controlled trials with prespecified outcomes before drawing conclusions. A different modality and a much thinner evidence base than this thread's SAINT/TMS confirmatory-trial anchor, but it is a real, freshly-published data point on the same "where does the somatic evidence actually stand" question, and it names a biomarker (amyloid) that could eventually explain who does and doesn't respond to neuromodulation in older patients.
+  ([Frontiers in Psychiatry](https://www.frontiersin.org/articles/10.3389/fpsyt.2026.1916856/full)) ⟨daily 2026-09-03⟩

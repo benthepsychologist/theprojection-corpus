@@ -269,6 +269,24 @@ day's map-wide changes).
 
 None offered this run.
 
+## 🌙 Late catch (found 09-03) — Germany formally blames Russia for the Leipzig drone plot
+
+- **Germany's Interior and Foreign Ministers formally attributed the
+  08-04/05 Leipzig/Halle Airport drone plot to Russia on 09-01 — "the
+  police investigations, the pattern and intelligence findings prove a
+  Russian responsibility" — closed the Russian Consulate General in Bonn and
+  the "Russian House" in Berlin, tightened entry rules for Russian
+  nationals, and raised the national threat level to "high."** The same day
+  police disclosed a second suspected grid-sabotage incident: explosives at
+  a Brandenburg substation and homemade rockets fired at an eastern power
+  plant. This resolves the "no formal attribution yet" flag this map's
+  08-06 entry carried, and it was missed for two days — surfaced only when
+  the mechanical world-news pool came back online on 09-03 with 135 outlets
+  on the cluster. The 09-02 diplomatic fallout and the 09-03 Goethe-Institut
+  closures are in those days' digests.
+  ([Washington Post](https://www.washingtonpost.com/world/2026/09/01/germany-blames-russia-drone-attack-airport-announces-countermeasures/), [CNN](https://www.cnn.com/2026/09/01/europe/leipzig-drone-germany-russia-intl), [Reuters via US News](https://www.usnews.com/news/world/articles/2026-09-02/german-power-grid-under-fresh-sabotage-attack-police-say))
+  <!-- k: t=russia-ukraine-war e= axis=conflicts sev=major -->
+
 ---
 The 15:00 ET read called it the widest single-day US strike wave of the
 war and undercounted it by a factor of five. The finalize adds ~100

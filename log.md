@@ -7816,3 +7816,131 @@ corroboration turned out to be dated **October 2025**, a different round of
 tensions. **A second failed attempt is its own result** — this is not an
 unchecked gap, it is a claim this map cannot currently reach the sources to
 settle.
+
+---
+
+## 2026-09-03 ~15:30 ET (Thursday) — /daily: four labs shipped in three days and this map caught none of them live; the 09-02 buffer that nobody read held the month's biggest stories; the "7-day stay" never existed
+
+**Finalized 09-02 (all four lenses + front), opened 09-03, amended the
+finalized 09-01 frontier-AI and world-news digests.** This run began by
+committing the 09-02 run's work, which had been left uncommitted in full
+(81 files staged, never committed, never pushed) — that commit is
+`2442ae3`, made as the first act of this session before anything was
+touched, so the 09-02 record stands as that run left it.
+
+**The finding that organises everything else.** The 09-02 `google_news_rss`
+lane's standalone re-run landed at 19:47Z Wednesday — 47 minutes after the
+15:00 ET cut — with 9,173 items, and nobody read it. Three coverage
+critics and a dedicated buffer-triage dispatch read it today. It held
+**Anthropic's Claude Fable 5.1 / Mythos 5.1 release** (announced 09-01
+14:01 ET; 45-50 hits; missed for two days on the map's most-tracked
+entity), **OpenAI's Astra tease** (35), **BOJ Governor Ueda's
+September-hike hint and the yen's reversal** (108 hits, all caught by the
+four watchlist terms added on the 09-01 finalize), and the **Tumbler
+Ridge / OpenAI lawsuits** (6, correctly tagged mental-health). Every
+09-02 throughline had called its lens quiet. Two more misses had zero
+buffer hits — World Labs' "Atlas," France's OAT stress — and are genuine
+collection gaps. **The fix that was missing was never a watchlist term; it
+was reading the day's own buffer before finalizing.** This run launched the
+four news lanes as separate background processes at run start (the
+standalone `google_news_rss` lane finished in 24 minutes — 13,453 fetched,
+9,480 kept — which settles the "batch time budget, not broken collector"
+diagnosis) and dispatched a buffer-triage agent alongside the sweeps. The
+🌙 sections on all four 09-02 digests and the amended 09-01 digests are
+what that produced on its first day.
+
+**The launch week, reconstructed.** Anthropic shipped Fable 5.1 and Mythos
+5.1 on 09-01 — one model at two safeguard levels, cache reads cut 75%,
+default text watermarking, strengthened anti-distillation with a
+first-ever disclosure (16 million exchanges, ~24,000 fake accounts;
+DeepSeek, Moonshot and MiniMax named), Mythos gated through trusted-access
+programs, no government review body named. Google shipped Gemini 3.8 Flash
+and a Flash Cyber variant behind a new "Fairwind Program" on 09-02 at 11:00
+ET; Meta shipped Muse Spark 1.3 the same afternoon. **OpenAI launched GPT-6
+"Astra" today at ~14:00 ET** — first OpenAI model to cross its Preparedness
+Framework's "Critical" cyber threshold (two zero-days found in evaluation),
+gated through Daybreak with the July Hugging Face breach cited, shipping a
+"recurrent depth" latent-reasoning technique that its own chief scientist
+concedes weakens chain-of-thought monitoring, and Brockman's "Welcome to
+the AGI era." Every lab's most capable cyber variant is now gated by the
+lab. A cross-lab **frontier release-cadence thread** is offered as a
+candidate; `gpt-5.6-release` did this job for one model and is resolved.
+
+**The day's other leads.** Nvidia agreed to acquire Hugging Face for
+$12,930,300,000 in an 8-K ($11.9bn to holders plus up to $1.0bn retention;
+close H1 2027) — lower than the ~$14bn rumor `nvidia-order-book` carried,
+corrected. Pentagon Under Secretary Emil Michael said Anthropic's
+supply-chain-risk designation "remains in effect," contradicting Lutnick's
+09-02 "we trust Anthropic" and a federal injunction. Fed Governor Waller
+split from Chair Warsh in public ("give disinflation a chance, we can wait
+one meeting") and September-hike odds fell ~12 points to ~54.6%; the
+10-year eased to ~4.75%. Brent whipsawed $95→$99.38→$95 on Iran's fresh
+strikes on Kuwait and the UAE while Netanyahu named toppling the regime
+"the central mission." Broadcom's print beat everywhere and the stock fell
+3% on a sub-1% guide miss; Jalapeño shipped, "six XPU customers," Anthropic
+named the coming largest. Moonshot filed confidentially for a Hong Kong
+IPO. Lavrov closed the Goethe-Institut centres — day three of a
+Germany–Russia sequence (Leipzig attribution 09-01, EU/Romania/Moscow
+summonses 09-02) that this map had no thread for.
+
+**Two corrections to the map's own record, one of them the second on the
+same entry in two days.** (1) The "7-day administrative stay expiring
+09-03" on the Anthropic v. DoW judgment, logged 09-02 and built into a
+dated expectation, **never existed**: the Order of Final Relief (Dkt. 251,
+read from the RECAP PDF via plain curl — CourtListener 403s WebFetch but
+serves curl) contains no stay language, the docket has no stay order,
+Decrypt and the Washington Examiner report the request was denied; the
+injunction has run since 08-27 and no notice of appeal exists. Expectation
+withdrawn; `dod-ai-consolidation` corrected in place — both errors came from
+reading coverage of an order instead of the order. (2) The FDA's TEMPO
+pilot filled its behavioral-health slot on 08-24 (Limbic, SonderMind)
+while `cms-access-model-bh` and `ai-therapy-evidence` both said "no
+participant yet"; SonderMind was a watched entity on one of them. Both
+corrected in place.
+
+**Ledger:** `broadcom-q3-fy2026-earnings` **hit**; `moonshot-hk-ipo-filing`
+**hit** (reported), 27 days early; `anthropic-dow-stay-expiry`
+**withdrawn**; `glm-5-5-release`, `moonshot-preipo-round`,
+`mistral-3b-round-close`, `anthropic-public-s1-filing` — grace closed on a
+final fresh check, all **stand as passed-silent** (Anthropic: seventh
+negative). Four new entries: `bls-august-jobs-report-0904`,
+`michigan-city-moratorium-second-reading` (09-15),
+`boj-september-meeting-0918`, `france-draft-finance-bill-0930`. 88
+expectations on the ledger.
+
+**Map changes:** entities `world-labs` and `hugging-face`; theme terms
+`Claude Fable`, `Claude Mythos`, `GPT-6`, `OpenAI Astra`; four France
+sovereign-debt terms (all critic-add). **45 timeline entries merged across
+31 threads** from fifteen staging files (eight cluster sweeps, five repair
+dispatches, two main-session files) by the additive script, zero
+deletions; `last_seen` bumped on 34 threads. Eight `actor-doing.yaml`
+roll-ups refreshed by surgical insertion (anthropic, openai, nvidia,
+broadcom, moonshot-ai, microsoft, meta-ai, google). Candidates dropped
+after two unanswered offers: Runway, `open-agent-tooling`, the
+substance-use frame. **Three candidates for your call**, two of them the
+largest this map has offered: the Germany–Russia hybrid-war leg (world-news,
+135 outlets — the mechanical pool's largest ever), the cross-lab release-
+cadence thread, and the BOJ/JGB leg (second and final offer). Also
+surfaced: a Venezuela thread (a captured head of state the map has never
+held).
+
+**Tooling.** ✅ `gcloud auth login` — **resolved**: `bq` authenticated
+today, `theprojection build-world-news` rebuilt `attention/world-news.yaml`
+after seventeen days (27 items, 11 candidates, nine of them the
+Germany–Russia cluster). ✅ The news-collector outage is diagnosed (batch
+time budget) and worked around per run. 📋 **New and filed to
+`kestrel-ops/INBOX`** (`2026-09-03-theprojection-news-lanes-time-budget-
+gdelt-cap-openalex-throttle.md`, committed there as `f732756`): the
+`gdelt` collector silently caps its sweep to the first 8 of 548 terms and
+then times out; `openalex` was 429-throttled on nearly every term for the
+whole run and never wrote a manifest. `sec_edgar` 500'd on a dozen terms
+but landed 532 items including the Microsoft (two-segment reporting) and
+Nvidia 8-Ks. The `clinicaltrials` 09-03 file landed after the
+mental-health sweeps and is **unread** — first thing next run.
+
+**Graph fed after the finalize:** `07_digest_bullets` (39 new S1, 1,409
+cross-posted merges), `06_timelines` (39 new S2, 603 bumped, 892
+ambiguous), `03_expectations` (4 hypothesis claims),
+`09_critic_annotations` (2 passes, 1 annotated, 12 process-only).
+`graph/validate.py`: **OK — 4,577 atoms, 2,875 sources, 7,390
+relationships, 1,154 annotations, 123 extraction_passes**.

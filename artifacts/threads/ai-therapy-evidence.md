@@ -49,6 +49,13 @@ intermediate-risk failures, EmoAgent.
        across outlets the way an FDA action or a lawsuit does — which is
        the specific blind spot the benchmark critic exists to cover. -->
 
+## 2026-08-24 — FDA's TEMPO pilot answers this thread's own open question — behavioral health got not one but two AI-therapy participants, ten days before this map's most recent entry says it hadn't
+
+- ⚠️ **Out of window (10 days before this run starts) but a real, confirmed gap this map is carrying right now — see Corrections below, this same finding supersedes an existing claim on two threads.** MedTech Dive reported 2026-08-24 that the FDA added Limbic and SonderMind to the TEMPO for Digital Health Devices pilot, both under the "behavioral health" CMS focus area — the exact slot this thread's 08-17 entry said had "no participant yet." Limbic's "Unpacked" delivers structured CBT for depression/anxiety to Medicare beneficiaries via an AI voice agent over telephone calls, clinician-overseen throughout, limited to English speakers with phone access. SonderMind's "SonderMind Adjunctive Care Application" (SACA) is a smartphone app positioned as an adjunct to therapy or medication, not a replacement — and is explicitly contraindicated for patients with suicidality, manic episodes, psychosis, or PTSD, a safety-scoping detail this thread's "safety evaluation maturing into a real subfield" throughline (VERA-MH, RAND, EmoAgent) should carry. Both products can now reach Medicare patients while exempted from premarket authorization, collecting real-world outcomes data instead — TEMPO's core mechanism. Verified against FDA's own participants page, which lists SonderMind's SACA under "Behavioral Health" and shows the table "current as of 08/21/2026" (i.e., before this run's window), plus a second, corroborating MedTech Dive piece with the 08-24 dateline.
+  ([FDA TEMPO participants (primary)](https://www.fda.gov/medical-devices/digital-health-center-excellence/participants-selected-tempo-digital-health-devices-pilot); [MedTech Dive, 08-24](https://www.medtechdive.com/news/fda-adds-two-behavioral-health-firms-to-tempo-pilot/828602/)) ⟨daily 2026-09-03⟩
+- **A smaller, same-vein miss: a new instrument for measuring attitudes toward AI therapy published online 2026-09-01, two days before this run's window and never entered.** Lam & Lam (Internet Interventions) validated the "AI mental health Therapy Attitude, Perception, and Intention Scale" (AiTAPI) — a measurement-tooling contribution rather than an outcomes trial, but it sits on the same "safety evaluation maturing into a real subfield" thread throughline as VERA-MH. No abstract detail beyond title/authorship confirmed at crawl time (ScienceDirect paywalled); flagged as a real gap, not entered with unverified content.
+  ([Internet Interventions, DOI 10.1016/j.invent.2026.100994](https://www.sciencedirect.com/science/article/pii/S221478292600093X)) ⟨daily 2026-09-03⟩
+
 ## 2026-08-17 — Two AI therapists tested head-to-head; Colorado writes the rules
 
 - **A randomised trial pitting two AI chatbot therapists against each
@@ -94,7 +101,7 @@ intermediate-risk failures, EmoAgent.
   collect real-world data through Medicare; Cadence (AI-assisted
   "HypertensionOS") joins Dexcom, named 07-23. FDA plans up to 10
   manufacturers across four CMS focus areas, one of which is
-  behavioural health, with none selected there yet. That is the
+  behavioural health, with none selected there yet. ✏️ *Superseded 2026-08-24 — Limbic and SonderMind were added under behavioral health that day; see the 2026-08-24 entry above (recorded 09-03).* That is the
   pathway by which an AI mental-health tool could reach Medicare
   patients without a clearance.
   ([MedTech Dive](https://www.medtechdive.com/news/fda-names-second-participant-in-tempo-digital-health-pilot/828027/)) ⟨daily 2026-08-17⟩
