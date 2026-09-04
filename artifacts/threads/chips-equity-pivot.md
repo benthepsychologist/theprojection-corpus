@@ -16,6 +16,11 @@ unresolved. Track: which awards convert, the legal instrument used, and
 whether equity terms start steering corporate behavior (links
 intel-rescue).
 
+## 2026-09-03 — Politico frames the government-equity-stakes pattern as newly attractive to progressives, and puts the running total at $27.7bn across 39 companies
+
+- **A Politico piece (summarized here via two outlets that quote it directly, since Politico's own URL could not be resolved) puts the Trump administration's equity stakes, warrants and similar arrangements across mining, tech, energy and defense at roughly $27.7bn across 39 companies since January 2025 — a modest update from this thread's 07-26 count of "~30 deals, ~$26.7B."** The substantive addition is political-reception, not dollar figures: Senator Bernie Sanders has "lined up behind" the CHIPS-grants-to-equity conversion specifically, and progressive academics (Vanderbilt's Ganesh Sitaraman, Yale's Anne Alstott) are citing it to argue for a broader government "public option" stake in industry — the piece frames this as material to how "a future Democratic president might reboot the party's approach to climate and labor policy." Directly on this thread's watch ("whether equity terms start steering corporate behavior" and, by extension, political durability), though it's commentary/reception rather than a new transaction or legal instrument.
+  ([Political Wire, quoting Politico](https://politicalwire.com/2026/09/03/trump-is-taking-stakes-in-more-companies/), [Foreign Policy Journal](https://www.foreignpolicyjournal.com/2026/09/03/trumps-27-7-billion-government-equity-stakes-draw-unexpected-interest-from-progressive-democrats/)) ⟨daily 2026-09-04⟩
+
 ## 2026-08-20 — The government's Intel stake reaches court
 
 - **Commerce Secretary Howard Lutnick asked a federal judge to dismiss a

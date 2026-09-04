@@ -255,6 +255,12 @@ lenses:
       - "AI memory chip shortage"  # auto-added 2026-06-27: HBM/DRAM squeeze from the buildout forcing Apple/Microsoft price hikes; demand-side macro signal we missed
       - "Meta Muse Spark"   # critic-add 2026-08-07: Muse Code launch (Spark 1.2) led TLDR AI + 2 more benchmarks, zero sweep coverage — Meta's agentic model line had no term
       - "Muse Code"         # critic-add 2026-08-07 (same miss)
+      # critic-add 2026-09-04 (frontier-AI coverage critic, digest-day
+      # 09-03): this map catches the TECHNICAL postmortem of the rogue-agent
+      # incidents in depth but not the INSTITUTIONAL response to them —
+      # OpenAI's "automated shutdown" letter to Congress (Reuters 09-02) sat
+      # in the buffer with four hits and was never written up.
+      - "automated shutdown"
 
   mental-health:
     # Orgs of interest (radar Q3 evidence, Q4 AI×MH, Q6 market)
@@ -489,6 +495,11 @@ lenses:
       # argument: watch the survey, not the trade-press riffs on it.
       - "National Survey on Drug Use and Health"
       - "NSDUH"
+      # critic-add 2026-09-04 (mental-health coverage critic, digest-day
+      # 09-03): "Adam's Law" is the press's popular name for SB 1119, which
+      # this map tracks by bill number only. A number-only term set misses
+      # every story that uses the name — and on 09-03 most of them did.
+      - "Adam's Law"
 
     # Health-condition / intervention strings for ClinicalTrials.gov (mh lens only)
     conditions:
@@ -736,3 +747,22 @@ lenses:
       - "OAT yield"
       - "France sovereign debt"
       - "France budget deficit"
+      # critic-add 2026-09-04 (global-capital coverage critic, digest-day
+      # 09-03): the 09-03 France fix was real but NARROWER THAN THE STORY.
+      # The underlying event was a GLOBAL long-end repricing — Germany's Bund
+      # at a 2011 high, UK gilts at an 18-year high, France's OAT at
+      # 2008-crisis levels — and only France got terms, so Germany and the UK
+      # still had zero footprint anywhere on the map. Fixing the half that
+      # was left.
+      - "Bund yield"
+      - "German bond yield"
+      - "UK gilt"
+      # critic-add 2026-09-04 (same pass): two clean instances now of a
+      # NUMERIC BOJ/JGB signal sitting uncurated — Ueda's 09-02 hike hint
+      # (108 buffer hits, caught by terms but never written up) and this
+      # pass's Bloomberg quarter-point scoop plus the 30-year auction's
+      # demand metrics (bid-to-cover 3.79x from 3.86x, tail 0.28 from 0.21).
+      # The existing "JGB" term catches the tenor but not the auction
+      # mechanics or the hike SIZE, which is where the information is.
+      - "BOJ quarter-point"
+      - "JGB auction"

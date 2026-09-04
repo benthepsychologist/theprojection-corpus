@@ -704,11 +704,18 @@ expectations:
     # Valuation has also crept ~$6B -> ~$7B across this reporting wave.
     due: 2026-09-04
     slips: [2026-08-17]
-    status: pending
+    status: passed-silent
     evidence: |
       INTERIM 2026-08-30, still in talks. No report of the ~$6bn
       Anthropic/Decart deal closing; coverage (newest ~08-13) still frames
       it as talks that "could fall through."
+      PASSED-SILENT 2026-09-04 (the slipped due date): a fresh check found
+      nothing newer than the 08-17/08-18 reporting — Calcalist's "Anthropic
+      closes in on $7 billion Decart deal after beating Nvidia to the
+      table" still frames it as advanced talks with no signed agreement and
+      sources stressing it "could still end without a transaction." No
+      outlet gives a new target date, so there is no date to slip TO. Enters
+      the 3-day grace; re-check before 09-07.
   - id: moonshot-hk-ipo-filing
     claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"
     due: 2026-09-30
@@ -789,7 +796,15 @@ expectations:
 
   - id: oracle-q1-fy27-earnings
     claim: "Oracle reports Q1 FY2027 earnings (updated RPO, FCF, capex guidance tracking)"
-    due: 2026-09-14
+    due: 2026-09-10
+    slips: [2026-09-14]   # not a slip — a CORRECTION, see note below
+    # ⚠️ CORRECTED 2026-09-04 ⟨daily⟩: this entry carried 2026-09-14, which
+    # never matched Oracle's own disclosure. Oracle's investor-relations
+    # page puts Q1 FY2027 earnings at SEPTEMBER 10. The 09-14 date came
+    # from a stocktitan headline about the FY2026 (prior-year) Q1 date and
+    # was carried forward unchecked — the same read-the-coverage-not-the-
+    # source failure that produced the Anthropic v. DoW "7-day stay" error.
+    # Source of record is now Oracle IR, not the original stocktitan link.
     due_precision: day
     thread: oracle-stargate-bet
     entities: [oracle, openai]
@@ -1971,7 +1986,15 @@ expectations:
       indicative 4.3–4.9% coupon range
     due: 2026-09-04
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-09-04
+    evidence: |
+      HIT 2026-09-04: priced at a 4.75% coupon — the TOP of the 4.3-4.9%
+      indicative range, not the middle. More than double the ~2.3% YTD
+      average for comparable yen retail corporate bonds. The
+      top-of-range landing is the direct price on AI-concentration credit
+      risk this entry was logged to read, and it lands high: banks having
+      declined the risk, retail set the clearing price.
     confidence: reported
     thread: softbank-all-in
     entities: [softbank]
@@ -1984,11 +2007,6 @@ expectations:
       cleanest read available on it, since the reporting says banks
       declined the risk and left the deal to retail. Offering runs 09-07
       to 09-16; issue 09-17.
-    evidence: |
-      INTERIM 2026-08-30, on track and unchanged. The JPY 1tn ($6.3bn)
-      7-year retail bond is still slated to price 09-04 within the
-      4.3-4.9% indicative coupon range already on file. Confirmation of
-      the existing record, not a new fact.
   - id: xiaomi-18-fold-xring-o3-china-launch-0930
     claim: >
       The Xiaomi 18 Fold and Pad 9 Pro Max — the first devices carrying
@@ -2630,7 +2648,20 @@ expectations:
       Labor Day (no session).
     logged: 2026-09-03
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-04
+    evidence: |
+      HIT 2026-09-04, 08:30 ET, read from the BLS release itself
+      (bls.gov/news.release/empsit.nr0.htm): total nonfarm payroll
+      employment +162,000 in August, roughly triple the ~50,000-55,000
+      consensus; unemployment rate unchanged at 4.1%; average hourly
+      earnings +0.3% m/m, +3.1% y/y. Prior months revised UP a combined
+      55,000 — June from +20,000 to +31,000 (+11,000) and July from
+      -23,000 to +21,000 (+44,000), reversing the sign on the print that
+      set up Waller's dovish case. Market read hawkish: 2-year yield +8bp
+      through 4.416% (highest since Jan 2025), 10-year to ~4.77%, September
+      hike odds back up from ~54.6% to ~58-60%. The data Waller named on
+      09-03 came in against him within 24 hours.
 
   - id: michigan-city-moratorium-second-reading
     claim: >

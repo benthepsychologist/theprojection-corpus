@@ -16,6 +16,12 @@ chatbot improves clinical outcomes — vs. the promotional framing. Safety
 evaluation maturing into a real subfield: VERA-MH benchmark, RAND's
 intermediate-risk failures, EmoAgent.
 
+## 2026-09-02 — A 10-study meta-analysis finds no significant overall difference in patient acceptance between AI-delivered and conventional psychotherapy
+
+⚠️ **This predates the W1 window by about a day and is not yet on the thread** — checked directly, confirmed absent.
+- **A meta-analysis pooling 10 studies (n=1,967) found no statistically significant overall difference in patient acceptance between AI-based psychotherapy and conventional therapy, though the pooled estimate carried substantial heterogeneity the authors say should be interpreted cautiously.** This is an acceptance/attitude measure, not an outcomes or efficacy finding — distinct from the Therabot/Anna-vs-Judith trials already on this thread, which measure symptom change. The one number worth carrying forward: meta-regression found studies published more recently, and with larger samples, reported relatively lower AI acceptance — a "the bigger and newer the study, the less enthusiastic the finding" pattern that cuts against the promotional framing this thread already tracks. Published in *Behavioral Sciences* (MDPI) on 2026-09-02 by Meng Fan, Xiaojing Xie and Tiansheng Xia.
+  ([Behavioral Sciences, DOI 10.3390/bs16091552](https://doi.org/10.3390/bs16091552)) ⟨daily 2026-09-04⟩
+
 ## 2026-09-01 — JMIR Mental Health publishes two AI-chatbot studies the same day: a simulated behavioral-activation trial and the first real-world usage survey
 
 - **A GPT-4o chatbot delivering a single-session behavioral-activation intervention to simulated depressed young people was rated 3.94 out of 6 on holistic quality by ten licensed psychotherapists and trainees — a mediocre score, published as a mixed-methods evaluation rather than a promotional claim.** The study ran the chatbot against artificial users standing in for 14-to-29-year-olds with depression and scored the transcripts on a 14-item clinical scale (Q-BAS). Method matters here as much as the number: this is an artificial-user design with expert raters, not patients, so it sits alongside the Therabot RCT as evidence about the *delivery* of a manualized intervention rather than about clinical outcomes — the distinction this thread exists to keep. ([JMIR Mental Health, 2026-09-01](https://mental.jmir.org/2026/1/e94781)) ⟨daily 2026-09-02⟩

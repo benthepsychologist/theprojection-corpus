@@ -21,6 +21,10 @@ this pass was UAE-only); and reconciliation of `board.yaml`'s $12.5B/yr
 AI thrust figure against this crawl's larger ~$21-23B HUMAIN deal-book
 tally.
 
+## 2026-09-04 — Abu Dhabi's G42 explores becoming a majority-US-owned company to lock in permanent Nvidia/AMD chip access
+
+- **G42 has held exploratory talks about selling a majority stake to American investors and fully reincorporating as a US entity, aiming to convert time-limited chip access into structural, permanent access.** The immediate trigger is a July 2026 Commerce Department reclassification that gave the UAE a more favorable export category for only a nine-month window — this thread's only prior Saudi/UAE-specific chip-access data point was the November 2025 approval of ~35,000 Nvidia chips (~$1B) to HUMAIN and G42, and the 07-10 easing found UAE-only, not Saudi. G42 is chaired by Sheikh Tahnoon bin Zayed Al Nahyan; Microsoft's 2024 $1.5B investment already forced G42 to divest Chinese holdings, and full US reincorporation would complete that decoupling process. No UAE-specific thread exists on this map to carry a UAE-only entity's chip-access story, so this is logged here alongside the thread's existing Gulf chip-access tracking; flag for the main session on whether G42/UAE warrants its own thread given this map already runs a dedicated `pif-ai-buildout` for Saudi Arabia. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-04/abu-dhabi-s-g42-weighs-us-ownership-to-safeguard-ai-chip-access), [CryptoBriefing](https://cryptobriefing.com/g42-us-ownership-ai-chip-access/)) ⟨daily 2026-09-04⟩
+
 ## 2026-08-31 — AMD/Cisco/HUMAIN's Saudi AI infrastructure goes live
 
 - **AMD, Cisco and HUMAIN (Saudi Arabia's state AI vehicle, PIF-backed) brought their jointly-built AI infrastructure online in Saudi Arabia**, confirmed via AMD's own investor-relations press release published 7:15am EDT on 08-31. ⚠️ This item published before this map's last recorded 08-31 15:00 ET cutoff and was missed by that run — caught here as an out-of-window gap-fill rather than same-day news.

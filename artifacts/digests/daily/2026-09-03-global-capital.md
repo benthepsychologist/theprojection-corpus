@@ -1,15 +1,17 @@
 ---
 lens: global-capital
 date: 2026-09-03
-status: building
+status: final
 window_start: 2026-09-03T05:00:00-04:00
-as_of: 2026-09-03T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-04T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-03
 
-*Curated agentic-interim, 05:00 ET → **15:30 ET** Thursday. Sources: the
+*Curated agentic-interim, 05:00 ET Thursday → **05:00 ET Friday** — the
+full digest-day, finalized on the 09-04 run with the evening window swept as
+its own scope and a coverage critic run against the benchmark set. Sources: the
 deterministic collector lanes launched as separate processes at run start
 (`google_news_rss` 9,480 kept; `sec_edgar` 532 incl. the Microsoft and
 Nvidia 8-Ks; the five macro lanes confirmed-empty as every week), plus a
@@ -237,6 +239,73 @@ five macro lanes (`treasury_tic`, `bis_stats`, `imf_data`,
 every week, consistent with their release lags. `sec_edgar` returned HTTP
 500 on a dozen terms but landed 532 items including both 8-Ks cited above.
 `gdelt` capped itself to 8 of 548 terms — an ops brief is filed.
+
+## 🌙 Late catch — the 09-03 evening window (15:30 ET → 05:00 ET)
+
+*Swept on the 09-04 finalize. Events dated 2026-09-03, landing after the
+15:30 ET cut.*
+
+- **Anthropic is set to finalize a revolving credit facility at $15 billion
+  — up from the ">$10 billion" target this map logged on 08-18, and six
+  times the $2.5bn facility it closed a year ago.** Morgan Stanley leads,
+  with Goldman Sachs, JPMorgan and Citigroup prominent and a syndicate
+  running to Barclays, Wells Fargo, Bank of America, Deutsche Bank, RBC,
+  UBS, Bank of Montreal, BNP Paribas, Crédit Agricole, MUFG, Sumitomo
+  Mitsui and Toronto-Dominion. The four leads are the same four reported to
+  be leading the IPO. Companies typically finalize the revolver *before*
+  formally notifying banks of IPO roles — SpaceX expanded a $5bn revolver a
+  month before its own record listing — so the step matters for sequencing,
+  not just for the size. ([Bloomberg via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/anthropic-nears-finalizing-15-billion-224354345.html))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=capital -->
+- **Politico framed the government-equity-stakes pattern as newly
+  contested politically**, with Sanders and progressive academics on the
+  record against it, and refreshed the count to 39 companies and $27.7bn.
+  <!-- k: t=chips-equity-pivot axis=policy -->
+
+## 🔍 Coverage critic — digest-day 2026-09-03
+
+**Verdict:** three real misses, all in the Japan/BOJ-JGB seam already known
+to be thin, plus a structural correction to this map's own fix from
+yesterday. **This was a weak check on the benchmark set and a strong one on
+our own buffer** — for the third consecutive pass, the findings came from
+grepping the collector output rather than from the benchmarks. None of the
+three changes this digest's framing; all three supply numbers it lacked.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| Money Stuff | published, compared | `.rss` author-page endpoint, 09-03 |
+| FT Unhedged | published, compared | FT's own RSS endpoint, 09-03 — no miss |
+| Axios Pro Rata | same-day-only | structurally not auditable a day late; not re-tested |
+| Bloomberg Technology | **unreachable** | CAPTCHA-blocked on direct fetch *and* the `r.jina.ai` proxy |
+
+**They led with → we missed** (all three buffer-present, all landing well
+before the 15:30 ET cut):
+
+- **Bloomberg's BOJ quarter-point scoop** — the first sourced number on hike
+  *size* (1% → 1.25% at the 09-18 meeting). This map has carried hike
+  *probability* for weeks and never the size.
+- **The 30-year JGB auction's demand signal** (Reuters) — bid-to-cover
+  **3.79x from 3.86x**, tail widening to **0.28 from 0.21**, yield -9.5bp to
+  **4.070%**. This digest's 10-year figure (2.970%) comes from that same
+  wire: the tenor was in hand and the auction mechanics were dropped.
+- **Katayama's Friday press conference** denying Bessent made any "specific
+  request" of Japan — sharper than this digest's "narrower reply" framing.
+  Katayama is on no thread.
+
+**The structural finding — yesterday's fix was narrower than the story.**
+The 09-03 pass added four France sovereign-debt terms after FT Unhedged led
+with France's OAT stress. But the underlying event was a **global** long-end
+repricing: **Germany's Bund at a 2011 high, UK gilts at an 18-year high,
+France's OATs at 2008-crisis levels.** Only France got terms, so Germany and
+the UK still had zero footprint anywhere on this map. `Bund yield`,
+`German bond yield` and `UK gilt` added this pass, along with
+`BOJ quarter-point` and `JGB auction` — the hike size and the auction
+mechanics being precisely where the information sits.
+
+**Access, carried forward:** Bloomberg Technology's block does **not** stay
+fixed. It was worked around on 08-25 and is blocked again on both
+transports. It should stop being re-tested each pass as though a different
+result were available.
 
 ---
 A Fed governor broke with his chair in public and the long end came down;

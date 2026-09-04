@@ -15,6 +15,10 @@ supplier and a disclosed-but-unpercentaged holder. Track: backlog
 conversion (next print 2026-08-11), debt costs vs the AI-credit
 repricing, the failed Core Scientific deal's aftermath.
 
+## 2026-09-03 — Jane Street signs a second, larger AI-cloud commitment — $13 billion with Crusoe — pushing its combined neocloud spend to roughly $19 billion
+
+- **Jane Street signed a five-year, roughly $13 billion cloud contract with Crusoe (a different neocloud, not CoreWeave) for GPU clusters and AI training/inference infrastructure — more than double the $6 billion CoreWeave platform commitment this thread already tracks as a named customer, and Jane Street's highest-profile cloud deal yet.** Combined, Jane Street's CoreWeave and Crusoe commitments now total roughly $19 billion. This bears directly on this thread's own customer-concentration watch: a financial-sector buyer this thread has been citing as evidence the backlog is diversifying beyond AI-lab concentration is now also a whale-sized Crusoe customer, which cuts against reading Jane Street's CoreWeave spend as sticky/exclusive. Crusoe was separately reported raising ~$3 billion at a ~$30 billion valuation, with the Jane Street deal helping attract that round's interest. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-03/crusoe-signs-roughly-13-billion-ai-cloud-deal-with-jane-street), [CryptoBriefing](https://cryptobriefing.com/crusoe-jane-street-13b-cloud-deal/)) ⟨daily 2026-09-04⟩
+
 ## 2026-08-11 — The backlog reaches $104bn, up 246%
 
 - **CoreWeave reported a contracted revenue backlog of roughly $104.2 billion

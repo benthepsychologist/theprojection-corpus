@@ -5546,3 +5546,133 @@ results — the 🌙 sections on all four 09-02 digests are what it produced.
   buffer-read before finalize is now part of the critic's job, not a
   suggestion.
 
+
+## 2026-09-04 critic pass — finalized digest-day 2026-09-03. Three lenses, and the failure mode moved from *unread* to *misread*
+
+*Three critic agents run at ~10:00 ET on the finalize pass, five hours
+after the 09-03 digest-day closed, alongside eight cluster sweeps and two
+buffer-triage dispatches. Thirteen real misses across three lenses. The
+pass's organising finding is a **change in the shape of the failure**, not
+a repeat of it.*
+
+**What changed since yesterday.** The 09-03 pass established the rule that
+broke this map four days running: a collector file landing after the digest
+cut, never read, holding the day's biggest stories. The fix — news lanes as
+separate processes at run start, plus a dedicated buffer-triage dispatch —
+ran for the first time on 09-03 and worked. **This pass shows the next
+failure downstream of it.** On mental-health the `clinicaltrials` buffer
+file *was* read; the 09-03 digest says so explicitly and dismissed all 44
+newly-registered trials as "every one a term collision... no new
+mental-health trial." Re-checking all 44 against ClinicalTrials.gov's own
+registry found **at least six real, on-topic, first-posted registrations**
+matched on non-generic terms — a ketamine/behavioral-activation depression
+trial, an accelerated-TMS anxiety trial, a neuromodulation-plus-sensor
+depression trial, a suicide-prevention RCT, a digital parenting RCT, and a
+PTSD CBT-vs-mindfulness trial. Several land directly on
+`neuromodulation-evidence`'s own stated TMS anchor.
+
+**Reading a file is not the same as reading it correctly, and a
+blanket "all collisions" verdict is the tell.** An unread buffer is caught
+by a process rule; a misread one is only caught by re-checking the source.
+The mental-health critic's proposed rule is adopted here: **when a
+`clinicaltrials` batch is triaged to "all collisions," spot-check the
+entries that matched multiple non-generic terms against the live registry
+before writing "no new trial."** Those are the least likely to be false
+positives, and on this pass they weren't false positives at all.
+
+### frontier-ai / 2026-09-03
+- **Missed (curation, buffer-present):** **OpenAI's "automated shutdown"
+  letter to Congress** (Reuters 09-02, 4 buffer hits) — the institutional
+  follow-up to the incident this map tracks in exhaustive technical detail.
+- **Missed (structural, the significant one):** **Anthropic's own
+  self-disclosed alignment/security incident** — 150 engineers redirected, an
+  RL-environment freeze, a METR review, reward-seeking-Claude research.
+  This map covers OpenAI's parallel incident across two threads and many
+  weeks and has **zero** coverage of Anthropic's, after a week of benchmark
+  attention (TLDR AI's 09-03 deep-dive; futurism.com in the 09-03 buffer).
+  On the map's single most-tracked entity. Proposed as a thread candidate.
+- **Missed (curation, buffer-present):** Sen. Sanders / Rep. Casar's bill to
+  outlaw superintelligent AI; **Thinking Machines Lab's ~$40bn funding
+  talks** (4 buffer hits, all matched on the existing `Mira Murati`
+  watchlist entity — a pure curation drop, the term did its job).
+- **Missed (collection):** OpenAI's own published bounded-prime-gaps math
+  result, part of the Astra launch materials — **zero buffer hits.**
+- **Check strength:** strong on transport, weak on scope. Three of four
+  benchmarks published dated 09-03 editions and were read in full. The
+  fourth, **The AI Daily Brief, did not publish a dated 09-03 edition at
+  all** (404 against a working 08-29/08-31/09-01/09-02 pattern) — a second
+  unexplained weekday gap for that benchmark, now worth watching as an
+  instrument problem rather than a one-off.
+- **Standing limit, stated plainly:** none of this lens's four benchmarks is
+  a policy or legislative outlet, so the strongest governance miss of the
+  pass surfaced only from a benchmark's passing "quick hits" mention. This
+  lens cannot audit governance coverage properly with its current rotation.
+
+### global-capital / 2026-09-03
+- **Missed (curation, buffer-present, all three):** Bloomberg's **BOJ
+  quarter-point scoop** (09-03) — the first sourced number on hike *size*
+  (1% → 1.25% at the 09-18 meeting), where this map has only ever carried
+  hike *probability*. The **30-year JGB auction's demand signal** (Reuters,
+  09-03): bid-to-cover 3.79x from 3.86x, tail 0.28 from 0.21, yield -9.5bp
+  to 4.070% — our digest's 10-year figure (2.970%) comes from that same
+  wire, so the tenor was in hand and the auction dynamics were dropped.
+  And **Katayama's Friday press conference** denying Bessent made any
+  "specific request" of Japan — sharper than our "narrower reply" framing.
+- **None of the three change the digest's framing; they supply the numbers
+  it lacked.** That is what a second clean instance of a known thin spot
+  looks like, and it is why the BOJ/JGB thread candidate is being re-offered
+  below rather than dropped on the two-offer rule.
+- **Structural — yesterday's own fix was too narrow.** The 09-03 pass added
+  four France sovereign-debt terms. But the underlying 09-02 event was a
+  **global** long-end repricing: Germany's Bund at a 2011 high, UK gilts at
+  an 18-year high, France's OAT at 2008-crisis levels. Only France got
+  terms; Germany and the UK still had **zero footprint anywhere on the
+  map**. Fixed this pass.
+- **Check strength: weak, and the weakness is the instrument.** Only two of
+  four benchmarks produced anything checkable (Money Stuff, FT Unhedged) and
+  neither led with a miss. Axios Pro Rata remains structurally unauditable a
+  day late. **Bloomberg Technology is CAPTCHA-blocked again on both
+  transports** — consistent with this file's 08-25 note, so that access does
+  not stay fixed and should not be re-tested each pass as if it might.
+- **For the third pass running, the strongest finding came from grepping
+  our own buffer rather than from the benchmark set.**
+
+### mental-health / 2026-09-03
+- **The `clinicaltrials` misread** — see above; the pass's headline finding.
+- **Missed (curation, collector-caught):** a **CMS ACCESS Model participant
+  announcement** (Syra Health + HealthSync, 09-03) — belongs on
+  `cms-access-model-bh`, caught by the collector's own terms, never written
+  up. This is the *second* consecutive pass to find a CMS ACCESS
+  participant fact wrong or missing on that thread.
+- **Missed:** **H.R. 10210, the "Doctors Not AI Act"** (introduced 09-01,
+  press reached the buffer 09-03) — belongs on `payer-ai-claim-denial`.
+- **Missed:** **ABA Centers of America is under active federal criminal
+  investigation** (money laundering, healthcare/wire fraud) — an escalation
+  from the civil billing-fraud claims this lens logged a month ago, and no
+  thread holds the saga. Proposed as a thread candidate.
+- **Missed (collection):** a **$50M growth round for Hi Rasmus**
+  (ABA-therapy software) — surfaced only in Behavioral Health Business's own
+  feed, so a genuine collection gap for `mh-clinical-infra-funding`.
+- **Ruled out, and worth recording as a near-miss:** "Adam's Law," widely
+  reported 09-03, is the press's popular name for **SB 1119** — a bill this
+  digest already tracks by number and status. Not a miss; a naming gap. Term
+  added, because a number-only term set misses every story using the name.
+- **Check strength: strong.** All four daily benchmarks live and reachable
+  on their documented transports, plus JMIR Mental Health and npj Digital
+  Medicine, plus an independent PubMed cross-check. A "no misses" verdict
+  would have meant something here; it isn't the verdict this pass reached.
+
+**Access note worth carrying forward:** JAMA Psychiatry and Lancet
+Psychiatry are now fully Cloudflare-blocked *even through the `r.jina.ai`
+proxy*, but **PubMed's E-utilities API reaches both cleanly with real
+per-article dates.** That is a better transport than either direct fetch or
+the proxy for these two, and belongs in `sources/benchmarks.yaml`'s comment
+block.
+
+**Map effect this pass.** Watchlist: `Bund yield`, `German bond yield`,
+`UK gilt` (the half of the sovereign-debt fix yesterday left undone);
+`BOJ quarter-point`, `JGB auction` (hike size and auction mechanics, where
+the information actually is); `Adam's Law`; `automated shutdown`. Three
+thread candidates carried to Ben, one of them —
+`anthropic-alignment-security-disclosure` — argued for by the frontier-AI
+critic as a structural hole rather than a one-day miss.

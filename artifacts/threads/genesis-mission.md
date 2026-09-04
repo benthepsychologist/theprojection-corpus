@@ -13,6 +13,10 @@ this becomes the umbrella for nuclear-for-AI money. Opened 2026-07-28
 (row 23, ben-steer: "open all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md.
 
+## 2026-09-03 — DOE opens community input on a proposed Genesis Mission PhD Fellowship, a new program element not previously on this thread
+
+- ⚠️ **Out of window** (published 12:08 ET, roughly 3 hours before W1 opens at 15:30 ET) but a genuine, primary-sourced addition — the DOE Office of Science announced it will hold a virtual town hall September 24, 2026 to gather input on an "anticipated Genesis Mission Graduate Fellowship Pilot": 4-year PhD pathways combining "AI + discipline" dual-competency research with placements at a DOE National Laboratory and in industry. No funding figure, no launch date, and no relationship yet stated to the existing 278-award tranche or the Genesis Open Models program already on this thread — this is a planning-stage input request, not a new award. (via [HPCwire, republishing the DOE release](https://www.hpcwire.com/off-the-wire/doe-invites-community-input-on-genesis-mission-phd-fellowship-pilot/)) ⟨daily 2026-09-04⟩
+
 ## 2026-08-18 — A second named private-sector Prometheus participant discloses its role
 
 - **AI-security firm HiddenLayer announced it was selected to support the Genesis Mission's Prometheus initiative** — the $60M Phase II project, led by Idaho National Laboratory and already logged here via SHINE's 08-05 disclosure, applying AI across the nuclear-energy sector with national labs, academia and 20+ industry partners. HiddenLayer's role is AI-security support for the initiative. This is the second named private-sector participant (after SHINE) to self-disclose a Prometheus role, still without a company-specific dollar figure — continues to build out the roster this thread is tracking without resolving the per-agency/per-participant allocation question.

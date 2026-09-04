@@ -1,15 +1,17 @@
 ---
 lens: world-news
 date: 2026-09-03
-status: building
+status: final
 window_start: 2026-09-03T05:00:00-04:00
-as_of: 2026-09-03T15:30:00-04:00
+as_of: 2026-09-04T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-03
 
-*Curated agentic-interim, 05:00 ET → **15:30 ET** Thursday. Sources: the
+*Curated agentic-interim, 05:00 ET Thursday → **05:00 ET Friday** — the
+full digest-day, finalized on the 09-04 run with the evening window swept as
+its own scope. Sources: the
 mechanical world-news pool (`attention/world-news.yaml`), **rebuilt today
 for the first time since 08-25** after the BigQuery credential came back
 (27 items, 11 candidates); a geopolitics sweep with a general front-page
@@ -182,6 +184,50 @@ The `gdelt` lane capped itself to 8 of 548 terms and hit API timeouts on
 most of those, keeping 15 items — on the lens that leans hardest on wire
 volume. The mechanical pool's return more than compensated today; the cap
 is filed as an ops brief.
+
+## 🌙 Late catch — the 09-03 evening window (15:30 ET → 05:00 ET)
+
+*Swept on the 09-04 finalize. Events dated 2026-09-03, landing after the
+15:30 ET cut. This lens carries no benchmark critic by design, so this
+section is the whole of its finalize.*
+
+- **A Ukrainian naval drone struck a Russian vessel at Sochi — the first
+  such strike to reach the resort city.** Sochi is not a front-line port and
+  has not been in range on this map's record; the reach is the story rather
+  than the damage.
+  <!-- k: t=russia-ukraine-war e=ukraine axis=military -->
+- **Israel's defence minister threatened to strike Iran's energy
+  infrastructure and "return Iran to the Stone Age" if Iran strikes first.**
+  This is a stated escalation ladder rather than an action, and it pairs
+  with Netanyahu's same-day naming of regime change as "the central
+  mission": the aims hardened in language on 09-03 while the strikes
+  themselves did not widen.
+  <!-- k: t=iran-conflict-widening e=israel axis=military -->
+- **Reuters reported Iran warned Washington it would respond forcefully if
+  Israel stormed the south-Lebanon ridge it said held IRGC personnel — the
+  same ridge Israel then cleared, finding no IRGC there.** Both halves
+  matter: a direct Iran-to-US channel over a Lebanese tactical objective,
+  and a claim about who was on the ridge that the operation did not bear
+  out.
+  <!-- k: t=iran-conflict-widening,israel-lebanon-escalation e=iran axis=diplomacy -->
+- **Germany's foreign minister and the Goethe-Institut's own president
+  responded to Thursday's closures, but no day-four escalation
+  followed.** Johann Wadephul called Russia's closure of the three Russian
+  branches "very regrettable" and "unjustified," saying the institute had
+  "continued its work under difficult conditions." **The sequence stalled
+  at reaction.** ([Yahoo/dpa](https://www.yahoo.com/news/world/articles/germany-closure-goethe-institut-branches-081840445.html), [Yahoo/AFP](https://www.yahoo.com/news/world/articles/goethe-institute-chief-laments-ending-161836959.html))
+  <!-- k: axis=diplomacy -->
+
+## 🌍 Still with nowhere to land — Venezuela, now with a second story
+
+Grep confirms **no thread anywhere on this map holds Venezuela**, and there
+are now two distinct stories sitting outside it: the immunity motion carried
+in the 09-03 digest, and **Chevron's confirmed commitment of over $7 billion
+to more than double production from its Venezuelan joint ventures**, welcomed
+publicly by Treasury Secretary Bessent. That second one straddles world-news
+and global-capital — a US major making a multi-billion-dollar bet on a
+country whose head of state is in custody, with the Treasury Secretary
+applauding. ([CNBC](https://www.cnbc.com/2026/09/02/chevron-venezuela-operations.html), [NPR](https://www.npr.org/2026/09/02/nx-s1-5952190/chevron-venezuela-oil-deal))
 
 ---
 Iran hit Kuwait and the UAE again and Netanyahu named regime change the

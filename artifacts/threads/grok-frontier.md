@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-03 — xAI expands Grok Bot from beta to a dedicated Enterprise tier with a two-week free trial
+
+- **xAI moved Grok Bot — the always-on, persistent cloud-agent product this thread has tracked in beta since 08-11/08-12 — into a dedicated enterprise offering, with a two-week free trial for Grok and Cursor Enterprise customers that lets companies onboard their whole workforce, including staff without existing accounts.** xAI's own announcement frames it as governance-focused: access, network and audit controls "to govern Bots at scale." Grok Bot is now bundled into SuperGrok, Cursor Pro and Cursor Teams plans broadly, not just the higher SuperGrok Heavy/Cursor Ultra tiers the beta required, and xAI says thousands of organizations (including Legora, Supermicro and ServiceTitan) have adopted it since the beta. Note xAI's own site now brands itself "SpaceXAI." ([xAI](https://x.ai/news/grok-bot-for-enterprise)) ⟨daily 2026-09-04⟩
+
 ## 2026-09-02 — Musk commits to a firm ship date for Grok 4.7 — September 12, 2.1T parameters
 
 - **Elon Musk posted on X that "Grok 4.7 comes out in 10 days," putting a specific calendar date (September 12) on a model whose ship date this map's own dated expectation has tracked only as a moving "3-4 weeks" window since 08-18.** He described it as 2.1T parameters (up from Grok 4.6's 1.5T, a ~40% increase), trained in part on SpaceX's own engineering corpus, "better than 4.6 in every way except slightly slower to serve," and predicted it would "surpass all models" — the same hype register the thread's own watch line already flags. This is the first time a specific day, rather than a week-range, has attached to Grok 4.7.

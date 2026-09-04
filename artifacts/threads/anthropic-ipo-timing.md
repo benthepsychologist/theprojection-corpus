@@ -12,6 +12,10 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-09-03 — Anthropic's pre-IPO credit facility grows from a >$10bn target to $15bn, and moves from "negotiating" to "finalizing"
+
+- **Anthropic is set to finalize a revolving credit facility at $15 billion, up from the ">$10 billion" target this thread logged on 08-18 and six times the $2.5bn facility it closed a year ago, according to Bloomberg.** Morgan Stanley is leading; Goldman Sachs, JPMorgan and Citigroup have prominent roles, with Barclays, Wells Fargo, Bank of America, Deutsche Bank, RBC, UBS, Bank of Montreal, BNP Paribas, Credit Agricole, MUFG, Sumitomo Mitsui and Toronto-Dominion also in the syndicate — the same four lead banks reported to be leading the IPO itself. Companies typically finalize the revolver before formally notifying banks of IPO roles, so this reads as a concrete step toward the listing itself, following the pattern SpaceX set (a $5bn revolver expansion a month before its own record IPO). Bloomberg's same reporting restates Anthropic's July-logged $65bn+ annualized revenue run-rate, not a new figure. ([Bloomberg via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/anthropic-nears-finalizing-15-billion-224354345.html)) ⟨daily 2026-09-04⟩
+
 ## 2026-08-31 — Anthropic is preparing to publicly file for an IPO expected to match or beat SpaceX's record raise, "in coming weeks"
 
 - **Bloomberg reported 2026-08-31 that Anthropic is preparing to file publicly for its IPO, expected to raise as much as SpaceX's record $86.2 billion debut, if not more, "in the coming weeks."** This is a firming from the 08-20 report ("possible by month's end") — the filing did not happen by month's end, but the timeline is now reported as imminent rather than speculative, and other AI-themed IPO candidates (cloud firm Nscale, among others) are reportedly reworking their own listing timetables to avoid competing for investor attention once Anthropic files.

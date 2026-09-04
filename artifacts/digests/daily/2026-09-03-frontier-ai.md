@@ -1,15 +1,17 @@
 ---
 lens: frontier-ai
 date: 2026-09-03
-status: building
+status: final
 window_start: 2026-09-03T05:00:00-04:00
-as_of: 2026-09-03T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-04T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-03
 
-*Curated agentic-interim, 05:00 ET → **15:30 ET** Thursday. Sources: the
+*Curated agentic-interim, 05:00 ET Thursday → **05:00 ET Friday** — the
+full digest-day, finalized on the 09-04 run with the evening window swept as
+its own scope and a coverage critic run against the benchmark set. Sources: the
 deterministic collector lanes, launched as separate processes at run start
 for the first time (`google_news_rss` 13,453 fetched / 9,480 kept in 24
 minutes; `rss` 3,005 / 514; `sec_edgar`, `federal_register`, `github`,
@@ -236,6 +238,92 @@ nearly every term** for the whole run. `sec_edgar` returned HTTP 500 on a
 dozen terms but landed 532 items, including the Microsoft and Nvidia 8-Ks
 used above. An ops brief on the gdelt cap and the openalex throttling is
 filed with this run.
+
+## 🌙 Late catch — the 09-03 evening window (15:30 ET → 05:00 ET)
+
+*Swept on the 09-04 finalize. Events below are dated 2026-09-03 and belong
+to this digest-day; they landed after the 15:30 ET cut.*
+
+- **OpenAI committed $1 billion in subsidized access to its AI cybersecurity
+  tools, training and technical support, under a new program called
+  "Daybreak for Frontline Defenders," initially for US operators of critical
+  services — water utilities, electric grid operators, state and local
+  governments, community banks and nonprofits — with plans to extend it to
+  partner countries.** Reuters ties the timing to the scrutiny following
+  July's Hugging Face breach. ⚠️ It is **not** an answer to the specific ask
+  this map has tracked: Hugging Face's CEO sought $100M in compute
+  earmarked for community cyber-defense, and nothing here is confirmed as
+  reaching Hugging Face. The program is ten times larger and pointed
+  somewhere else — at infrastructure operators, not at the ecosystem that
+  absorbed the breach. Note the name: Daybreak is also the gate Astra ships
+  behind, so the same brand now covers both the restriction and the
+  remedy. ([Reuters via Yahoo Finance](https://ca.finance.yahoo.com/news/openai-commits-1-billion-cyberdefense-214213182.html))
+  <!-- k: t=openai-agent-security-incident e=openai axis=governance -->
+- **Greg Brockman said "the US government" reviewed Astra before release and
+  "came back with nothing to change" — the first time any lab has claimed
+  the executive order's review framework touched a real launch.** No agency
+  is named, and the framework itself explicitly disclaims preclearance, so
+  the claim and the mechanism do not obviously fit together. This is the
+  precise question this thread was opened to watch, answered for the first
+  time by an interested party rather than by a regulator.
+  <!-- k: t=frontier-model-gov-review-precedent e=openai axis=governance -->
+- **xAI moved Grok Bot out of beta into a dedicated Enterprise tier**, with
+  a two-week trial for Grok and Cursor Enterprise customers that onboards a
+  whole workforce including staff without existing accounts, bundled now
+  into SuperGrok/Cursor Pro and Teams rather than only the top tiers. xAI
+  names Legora, Supermicro and ServiceTitan as adopters and frames the
+  release around access, network and audit controls "to govern Bots at
+  scale." Note in passing: xAI's own site now brands itself
+  "SpaceXAI." ([xAI](https://x.ai/news/grok-bot-for-enterprise))
+  <!-- k: t=grok-frontier,enterprise-agent-product-race e=xai axis=product -->
+- **The Department of Energy opened community input on a proposed Genesis
+  Mission PhD program**, the training leg of the initiative this map tracks
+  on the compute-and-national-labs side.
+  <!-- k: t=genesis-mission axis=policy -->
+
+## 🔍 Coverage critic — digest-day 2026-09-03
+
+**Verdict:** five real misses, three of them clean curation failures against
+material already sitting in this map's own buffer. The check was strong on
+transport and weak on scope. Three of four benchmarks published dated 09-03
+editions and were read in full; **The AI Daily Brief did not publish a dated
+09-03 edition at all** (404 against a working 08-29/08-31/09-01/09-02
+pattern) — its second unexplained weekday gap, now an instrument question
+rather than a one-off.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| The Rundown AI | published, read in full | direct RSS, dated 09-03 edition |
+| TLDR AI | published, read in full | dated archive HTML, 09-03 |
+| The Neuron | published, read in full | `r.jina.ai` proxy, 09-03 |
+| The AI Daily Brief | **dark** | 09-03 dated URL 404s; 08-29/08-31/09-01/09-02 all resolve |
+
+**They led with → we missed:**
+
+- **Anthropic's own self-disclosed alignment and security incident** — 150
+  engineers redirected, an RL-environment freeze, a METR review, published
+  reward-seeking research. **This is the structural one.** This map covers
+  OpenAI's parallel incident across two threads and many weeks and carries
+  **zero** coverage of Anthropic's, after a week of benchmark attention, on
+  the single entity it tracks most closely. Offered below as a thread
+  candidate rather than patched with a term.
+- **OpenAI's "automated shutdown" letter to Congress** (Reuters, 09-02) —
+  four buffer hits, never written up. The pattern: this map catches the
+  *technical* postmortem of the rogue-agent incidents and misses the
+  *institutional* response to them. Term `automated shutdown` added.
+- **Sen. Sanders and Rep. Casar's bill to outlaw superintelligent AI** —
+  buffer-present, dropped in curation.
+- **Thinking Machines Lab's ~$40bn funding talks** — four buffer hits, every
+  one matched on the existing `Mira Murati` watchlist entity. The term did
+  its job; the curation dropped it.
+- **OpenAI's published bounded-prime-gaps math result**, part of the Astra
+  launch materials — **zero buffer hits, a genuine collection gap.**
+
+**The standing limit, stated plainly:** none of this lens's four benchmarks
+is a policy or legislative outlet, so the strongest governance miss of the
+pass surfaced only from a benchmark's passing "quick hits" mention rather
+than from any benchmark leading with it. This lens cannot properly audit
+its own governance coverage with the rotation it has.
 
 ---
 OpenAI shipped GPT-6 Astra into a week where four labs released in three

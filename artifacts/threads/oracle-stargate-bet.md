@@ -9,11 +9,16 @@ opened: 2026-08-04
 # Oracle's Stargate bet — timeline
 
 *Watch:* whether the FY27 capex step-up (~$70-95B, depending on source)
-and the reported OpenAI target-miss show up in the 2026-09-14 Q1 FY27
+and the reported OpenAI target-miss show up in the 2026-09-10 Q1 FY27
 print; any further credit-rating action (Moody's exact rating pending
 confirmation) or CDS move; whether Oracle's RPO-to-revenue conversion
 rate ($76.6B guided vs $67B delivered in FY26) holds; any named
 counterparty breakdown of the OpenAI-linked RPO slice.
+
+## 2026-09-02 — Oracle's own investor-relations page puts Q1 FY2027 earnings on 09-10, not the 09-14 this map has on record
+
+- **Oracle's investor-relations press release, datelined "AUSTIN, Texas, Sept. 2, 2026," states the company "will release its first quarter fiscal year 2027 results... Thursday, September 10th, after the close of the market," with the conference call at 4:00pm Central (5:00pm ET).** This corrects the 09-14 date this thread's watch line and `attention/upcoming.yaml`'s `oracle-q1-fy27-earnings` entry (due 2026-09-14, sourced to an earlier stocktitan.net report) currently carry. Multiple outlets independently confirm 09-10 (Pluang, StockTitan's own more recent piece, Moomoo). This is a date correction only — no results exist yet — but it moves the print six days earlier than this map expects it, meaning the FY27 capex step-up and reported OpenAI shortfall this thread is tracking will show up nearly a week sooner than currently logged.
+  ([Oracle Investor Relations, primary](https://investor.oracle.com/investor-news/news-details/2026/Oracle-Sets-the-Date-for-its-First-Quarter-Fiscal-Year-2027-Earnings-Announcement/default.aspx)) ⟨daily 2026-09-04⟩
 
 ## 2026-08-14 — The gas pipeline slips six months, and power becomes the binding constraint
 
@@ -133,7 +138,7 @@ counterparty breakdown of the OpenAI-linked RPO slice.
   financial/credit event tied to Cerner found this window — it remains
   product-roadmap news, not a driver of the leverage story this thread
   tracks. ⟨crawl 2026-08-04⟩
-- **Next print: Q1 FY2027 earnings, 2026-09-14, after market close** —
+- **Next print: Q1 FY2027 earnings, 2026-09-10, after market close** —
   the first test of whether the FY27 capex step-up and the reported
   OpenAI shortfall show up in updated RPO/FCF/capex numbers.
   ⟨crawl 2026-08-04⟩

@@ -1,15 +1,17 @@
 ---
 lens: mental-health
 date: 2026-09-03
-status: building
+status: final
 window_start: 2026-09-03T05:00:00-04:00
-as_of: 2026-09-03T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-04T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-03
 
-*Curated agentic-interim, 05:00 ET → **15:30 ET** Thursday. Sources: the
+*Curated agentic-interim, 05:00 ET Thursday → **05:00 ET Friday** — the
+full digest-day, finalized on the 09-04 run with the evening window swept as
+its own scope and a coverage critic run against the benchmark set. Sources: the
 deterministic collector lanes launched as separate processes (`rss` incl.
 STAT, BHB, Healthcare Dive, MedTech Dive, Internet Interventions and
 Frontiers in Psychiatry feeds; `google_news_rss`; `clinicaltrials` and
@@ -165,6 +167,96 @@ in Psychiatry items), which is where two of today's three research entries
 came from — the lane is doing the journal-tier job the last two critic
 passes asked for. `clinicaltrials` landed after the sweeps (unread, above).
 `openalex` was 429-throttled all run.
+
+## 🌙 Late catch — the 09-03 evening window (15:30 ET → 05:00 ET)
+
+*Swept on the 09-04 finalize. Events dated 2026-09-03, landing after the
+15:30 ET cut.*
+
+- **India's National Human Rights Commission opened a formal two-week
+  inquiry into Meta over CSAM-linked Instagram advertisements** — the first
+  regulator anywhere to act on the story this map has tracked since
+  Senator Warner's August letter went unanswered. The letter went nowhere;
+  the first actual consequence came from a different jurisdiction entirely.
+  <!-- k: t=meta-ai-csam-ads e=meta-ai axis=regulation -->
+- **The Canadian Mental Health Association put dollar figures on the
+  province-level funding cliff** this lens has tracked as a qualitative
+  strand, giving the "AI capacity versus care capacity" argument its first
+  concrete numbers on the Canadian side.
+  <!-- k: t=canada-ai-vs-care axis=funding -->
+- **UCSF posted results from a 12-patient Phase 2 psilocybin trial for
+  depression and anxiety in Parkinson's disease** (NCT04932434) — safe, no
+  deaths and no serious adverse events. ⚠️ Read it for what it is: an
+  explicitly safety-and-feasibility trial at n=12, not an efficacy result.
+  It is a registration milestone, not evidence of benefit.
+  <!-- k: t=psychedelic-regulatory-sprint axis=evidence -->
+
+## 🔍 Coverage critic — digest-day 2026-09-03
+
+**Verdict: five real misses, and the most important one is not a news item
+at all.** It is this digest's own handling of its clinical-trials buffer —
+a **misread**, not a miss, and that is a worse failure than the unread
+buffer the 09-03 run was built to fix.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| Behavioral Health Business | published, read | Googlebot UA, dated 09-03 items |
+| MobiHealthNews | published, read | `r.jina.ai` proxy, 09-03 |
+| STAT News (health tech) | published, read | direct, 09-03 |
+| Fierce Healthcare | published, read | direct, 09-03 |
+| JMIR Mental Health · npj Digital Medicine | published, read | direct |
+| JAMA Psychiatry · Lancet Psychiatry | Cloudflare-blocked, **reached via PubMed E-utilities** | per-article dates confirmed |
+
+**The headline finding — the buffer was read and misjudged.** The 09-03
+digest states it read `buffer/2026-09-03-clinicaltrials.jsonl` and concluded
+that all 44 newly-registered mental-health-tagged trials were "every one a
+term collision... no new mental-health trial." Re-checking all 44 against
+ClinicalTrials.gov's own registry found **at least six genuine, on-topic,
+first-posted registrations matched on non-generic terms**: a
+ketamine-plus-behavioral-activation trial for treatment-resistant
+depression, an accelerated-TMS trial for treatment-resistant anxiety, a
+neuromodulation-plus-sensor depression trial, a suicide-prevention RCT, a
+digital parenting RCT, and a PTSD trial comparing CBT with mindfulness.
+Several land directly on `neuromodulation-evidence`'s own stated TMS anchor.
+
+**Why this matters more than the count.** An unread file is caught by a
+process rule, and this map wrote that rule yesterday. A file that was read
+and dismissed wholesale is only caught by going back to the source. **The
+rule adopted from this pass: when a `clinicaltrials` batch is triaged to
+"all collisions," spot-check the entries matching multiple non-generic terms
+against the live registry before writing "no new trial."** On this pass,
+those were not false positives at all.
+
+**They led with → we missed:**
+
+- **A CMS ACCESS Model participant announcement** (Syra Health + HealthSync,
+  09-03) — belongs on `cms-access-model-bh`, caught by the collector's own
+  terms, never written up. The **second consecutive pass** to find a CMS
+  ACCESS participant fact wrong or missing on that thread.
+- **H.R. 10210, the "Doctors Not AI Act"** (introduced 09-01, press reached
+  the buffer 09-03) — belongs on `payer-ai-claim-denial`.
+- **ABA Centers of America is under active federal criminal investigation**
+  — money laundering, healthcare and wire fraud. An escalation from the
+  civil billing-fraud claims this lens logged a month ago, and **no thread
+  holds the saga.** Offered as a thread candidate.
+- **A $50M growth round for Hi Rasmus** (ABA-therapy software) — surfaced
+  only in Behavioral Health Business's own feed. A genuine collection gap
+  for `mh-clinical-infra-funding`.
+
+**Ruled out, and worth recording:** "Adam's Law," widely reported on 09-03,
+is the press's popular name for **SB 1119** — which this digest already
+tracks by number and status. Not a miss, a naming gap; the term is added,
+because a number-only term set misses every story that uses the name.
+
+**Check strength: strong.** All four daily benchmarks live on their
+documented transports, plus two journals directly and two more via PubMed. A
+"no misses" verdict would have meant something here. It is not the verdict
+this pass reached.
+
+**Access, carried forward:** JAMA Psychiatry and Lancet Psychiatry are now
+Cloudflare-blocked *even through the `r.jina.ai` proxy*, but **PubMed's
+E-utilities API reaches both cleanly with real per-article dates** — a
+better transport than either, and it belongs in `sources/benchmarks.yaml`.
 
 ---
 Nothing broke on this lens today and the buffer was read before saying so.
