@@ -2727,3 +2727,50 @@ expectations:
     logged: 2026-09-03
     logged_by: critic-add
     status: pending
+
+  - id: nippon-life-openai-hearing-outcome
+    claim: >
+      An outcome from the 2026-09-02 status hearing in Nippon Life Insurance
+      Company of America v. OpenAI Foundation (N.D. Ill., 1:26-cv-02448)
+      posts to the docket — a ruling on OpenAI's motion to dismiss (entry
+      14, "under advisement" since 08-04), a minute entry, or a further
+      reset. As of 2026-09-04 the docket ends at the 08-04 minute entry that
+      reset the hearing from 08-05 to 09-02, with nothing after it.
+    due: 2026-09-11
+    due_precision: week
+    thread: nippon-life-openai-suit
+    entities: []
+    source: https://www.courtlistener.com/docket/72365583/nippon-life-insurance-company-of-america-v-openai-foundation/
+    confidence: confirmed
+    what_confirms: >
+      A new docket entry after the 08-04 minute entry. Logged because a
+      hearing this map cares about has already happened and left no trace on
+      the record — the silence is the thing to check, and it is checkable
+      from the docket rather than from coverage. Read the docket, not the
+      reporting: this map has made two consecutive errors on a different
+      case by doing the reverse.
+    logged: 2026-09-04
+    logged_by: curate-add
+    status: pending
+
+  - id: sk-hynix-solidigm-disclosure-1204
+    claim: >
+      SK hynix discloses a decision on the rumored ~5-10 trillion won
+      ($3.6-7.2bn) Solidigm pre-IPO capital raise by 2026-12-04, the deadline
+      it set itself in its 09-04 Form 6-K after twice saying "no matters have
+      been determined."
+    due: 2026-12-04
+    due_precision: day
+    thread: ai-memory-shortage
+    entities: []
+    source: https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/d111778d6k.htm
+    confidence: confirmed
+    what_confirms: >
+      A further 6-K either announcing the raise or extending the deadline a
+      third time. The company has now deferred twice on its own schedule
+      (08-06 to 09-04, 09-04 to 12-04), which makes the pattern of deferral
+      itself the signal worth tracking on a memory maker testing capital
+      markets mid-squeeze.
+    logged: 2026-09-04
+    logged_by: curate-add
+    status: pending

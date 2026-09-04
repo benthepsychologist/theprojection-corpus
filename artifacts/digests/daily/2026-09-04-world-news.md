@@ -3,16 +3,20 @@ lens: world-news
 date: 2026-09-04
 status: building
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T10:40:00-04:00
+as_of: 2026-09-04T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-04
 
-*Curated agentic-interim, 05:00 ET → **10:40 ET** Friday. Sources: a
-geopolitics sweep carrying a general front-page scan, two independent
-buffer-triage passes over `google_news_rss` (7,812 items), and the
-`gdelt` lane. ⚠️ **The mechanical world-news pool is a day stale** — the
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Friday — extended on the
+15:00 run from a 10:40 ET build. Sources: a morning geopolitics sweep and
+an afternoon one, both carrying a general front-page scan, two independent
+buffer-triage passes over `google_news_rss` (7,812 items), and the `gdelt`
+lane (113 items, +44 on the afternoon collection). **The afternoon window
+produced no new conflict development on any of the seven threads — and one
+correction to this morning's own lead, which is the more consequential
+result.** ⚠️ **The mechanical world-news pool is a day stale** — the
 BigQuery credential expired again and `build-world-news` could not run;
 today's candidate counts are yesterday's. Material dated 09-03 is folded
 into `2026-09-03-world-news.md` as a 🌙 late catch.*
@@ -36,11 +40,14 @@ commitment is now clearer — a search for the remains of Lebanese Jewish
 civilians from the civil war. Small, concrete, and the first thing on that
 thread in weeks that was an exchange rather than an escalation.
 
-On Iran, the pressure moved from the military column to the economic one.
-**The EU has "officially joined" Operation Economic Outcast**, per Treasury
-Secretary Bessent — converting a unilateral US sanctions campaign into a
-transatlantic one, with the EU's own statement folding Iran's military
-support for Russia's war into the rationale for the first time. And
+On Iran, the pressure moved from the military column to the economic one —
+though less far than Washington said it did. **Treasury Secretary Bessent
+said the EU had "officially joined" Operation Economic Outcast; the EU's own
+statement only welcomes it**, announcing no new sanctions and no alignment
+with US designations, and the Commission would not endorse Bessent's framing
+when asked directly this afternoon. What the EU's statement does do is fold
+Iran's military support for Russia's war into its stated rationale for the
+first time. And
 **South Korea is making "concrete preparations" to send forces to the
 Strait of Hormuz**, reversing a stated position of waiting until the war
 ended.
@@ -54,12 +61,14 @@ ended.
   infrastructure, residential blocks and logistics, and a direct strike on
   the internal-security headquarters of the state is a different target
   class.
+  ([KSAT/AP](https://www.ksat.com/news/world/2026/09/04/russian-attacks-kill-at-least-3-in-ukraine-as-us-talks-on-the-war-are-expected/), [Ukrinform](https://www.ukrinform.net/rubric-ato/4160705-russian-forces-strike-odesa-one-killed-three-injured.html), [Kyiv Independent](https://kyivindependent.com/breaking-russian-drone-hits-kyivs-center/), [Euronews](https://www.euronews.com/my-europe/2026/09/04/russian-drone-strikes-ukraine-security-service-headquarters-in-central-kyiv))
   <!-- k: t=russia-ukraine-war e=russia axis=military sev=major -->
 - **Israel completed the release of all five Lebanese detainees, and
   Lebanon reciprocated with a commitment to search for the remains of
   Lebanese Jewish civilians from the civil war.** Modest in scale and
   genuinely reciprocal, which is what makes it notable on a thread whose
   last month has been the Ali al-Taher ridge and a collapsing Rome round.
+  ([AP via WSLS](https://www.wsls.com/news/world/2026/09/04/israel-frees-4-more-lebanese-prisoners-in-a-deal-tied-to-missing-jews-from-lebanons-civil-war/), [VINnews](https://vinnews.com/2026/09/04/israel-frees-4-more-lebanese-prisoners-in-a-deal-tied-to-missing-jews-from-lebanons-civil-war/))
   <!-- k: t=israel-lebanon-escalation e=israel axis=diplomacy -->
 - **South Korea's Defence Ministry said it is making "concrete
   preparations" to send forces to the Strait of Hormuz** — a maritime
@@ -70,18 +79,30 @@ ended.
   The trigger is on the record: Trump said in August he scaled back joint
   US-South Korea exercises partly because Seoul had declined to help. Scale
   and nature are being coordinated with the US, UK and France.
+  ([Bloomberg, via Political Wire](https://politicalwire.com/2026/09/04/south-korea-weighs-strait-of-hormuz-deployment/), [Free Malaysia Today](https://www.freemalaysiatoday.com/category/world/2026/09/04/south-korea-preparing-hormuz-military-deployment-reports-say))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=south-korea axis=military -->
 
 ## Diplomacy
 
-- **The European Union has "officially joined" Operation Economic Outcast**,
-  the US sanctions campaign against Iran running since 08-24, per Treasury
-  Secretary Bessent, who called the bloc's stance "strong and early." The
-  EU's own statement frames it around Iran's nuclear and ballistic-missile
-  programmes, its regional and European "destabilising activities," **its
-  military support for Russia's war in Ukraine**, and domestic repression.
-  That fourth element is new on this thread's record: the Iran and Ukraine
-  files are being sanctioned as one rationale rather than two.
+- **Washington said the European Union joined its Iran sanctions campaign
+  and Brussels' own text does not say that, a gap the EU declined to close
+  when asked.** Treasury Secretary Bessent said the EU had "officially
+  joined" Operation Economic Outcast — the US campaign running since 08-24 —
+  and called the bloc's stance "strong and early." The European Commission's
+  statement says it "welcomes efforts at ensuring that Iran ceases its
+  destabilising activities... including through the US-led Operation Economic
+  Outcast," which is an endorsement of someone else's campaign: **no new
+  sanctions, no alignment with US designations, no change to the EU's own
+  Iran regime.** Real participation would require member states to adopt
+  equivalent measures and expose European firms to secondary-sanctions
+  exposure, needing unanimity nobody has sought. Asked at the midday briefing
+  on 09-04 whether it accepted the "joined" characterisation, a Commission
+  spokesperson pointed back to the 09-01 statement and neither confirmed nor
+  denied it. What the EU statement does newly do is name **Iran's military
+  support for Russia's war in Ukraine** alongside the nuclear and
+  ballistic-missile programmes and domestic repression — the Iran and Ukraine
+  files argued as one rationale rather than two.
+  ([Euronews](https://www.euronews.com/business/2026/09/04/us-claims-eu-joined-new-iran-sanctions-push-yet-brussels-only-endorsed-it))
   <!-- k: t=iran-conflict-widening e=european-union axis=sanctions -->
 - **The first Trump-envoy visit to Kyiv, planned for this weekend, is
   reportedly in doubt.** Witkoff and Kushner were due 09-05/06 — a first
@@ -89,6 +110,7 @@ ended.
   scared" and that Russia would not commit to pausing strikes for the
   visit. The ninth straight night of strikes is the same fact from the
   other side.
+  ([Kyiv Independent](https://kyivindependent.com/trump-envoys-witkoff-kushner-to-visit-kyiv-moscow-sept-5-6-source-says/), [KSAT/AP](https://www.ksat.com/news/world/2026/09/04/russian-attacks-kill-at-least-3-in-ukraine-as-us-talks-on-the-war-are-expected/))
   <!-- k: t=russia-ukraine-war e=united-states axis=diplomacy -->
 
 ## 🌍 Beyond the threads
@@ -112,6 +134,11 @@ ended.
 
 ## ⏳ Upcoming & expected
 
+- 🚧 `israel-lebanon-rome-round-8` (09-15) — **re-checked this afternoon, no
+  movement.** The only reporting naming a mid-September date (Naharnet,
+  citing MTV) predates this window, was published 09-02, and hedges with
+  "might" and "may." Logged as no evidence rather than as confirmation.
+
 - 🚧 Nothing on the ledger due today for this lens. Next dated world-news
   adjacent item: `boj-september-meeting-0918` (global capital).
 - **Monday 09-07 is Labor Day** — thin US news flow, and the weekend is
@@ -123,6 +150,12 @@ ended.
   `israel-lebanon-escalation` (×2), `iran-conflict-widening` (×3),
   `red-sea-oil-shock`.
 - ⚠️ `attention/world-news.yaml` **not rebuilt** — see the collection note.
+- **Afternoon pass (15:00):** `✏️` **the EU/Iran "officially joined"
+  framing was corrected** in this digest, in the front digest's throughline,
+  and on `artifacts/threads/iran-conflict-widening.md`, where the 09-04
+  entry's headline and its "converts the campaign into a coordinated
+  transatlantic one" sentence were both rewritten. No new timeline entries
+  from the afternoon sweep on any of the seven threads.
 
 ## 🧵 Thread candidates
 

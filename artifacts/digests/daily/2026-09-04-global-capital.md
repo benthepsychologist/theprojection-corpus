@@ -3,21 +3,25 @@ lens: global-capital
 date: 2026-09-04
 status: building
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T10:40:00-04:00
+as_of: 2026-09-04T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-09-04
 
-*Curated agentic-interim, 05:00 ET → **10:40 ET** Friday. Sources: the
-deterministic collector lanes launched as separate processes at run start
-(`google_news_rss` 7,812 items; `rss` 474; `sec_edgar` 439;
-`federal_register` 48; `gdelt` 113; `clinicaltrials` 346; `github` 13),
-plus a macro/rates sweep, a financing/chips sweep, and **two** independent
-buffer-triage passes over the same `google_news_rss` file. ⚠️ Four lanes
-returned zero on first launch and were relaunched mid-run — see the
-collection note. Every figure below is intraday; the session runs to
-16:00 ET. Material dated 09-03 that the 09-03 run missed is folded into
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Friday — extended on the
+15:00 run from a 10:40 ET build. Sources: two rounds of the deterministic
+collector lanes, both launched as separate processes at run start
+(morning: `google_news_rss` 7,812 items, `rss` 474, `sec_edgar` 439,
+`federal_register` 48, `gdelt` 113, `clinicaltrials` 346, `github` 13;
+afternoon: `sec_edgar` +225 filings, `gdelt` +44, `rss` +20), plus a
+macro/rates sweep and a financing/chips sweep in the morning, a
+seven-cluster afternoon sweep covering all 100 open threads, and buffer
+triage on both rounds. ⚠️ Four lanes returned zero on the morning launch
+and all seven died on the afternoon launch, both times on environment
+configuration — see the collection note. Every figure below is intraday;
+the session runs to 16:00 ET and this digest cuts at 15:00. Material dated
+09-03 that the 09-03 run missed is folded into
 `2026-09-03-global-capital.md` as a 🌙 late catch.*
 
 ## Today's throughline
@@ -53,6 +57,25 @@ cutting its government-bond benchmark weight from 70% to 50%**, which would
 take roughly **$80 billion out of its ~$215 billion of US Treasuries** —
 its single largest holding.
 
+**The afternoon added a political leg and a breadth signal, and took away
+nothing.** Within minutes of a print that argued for tightening, the
+President demanded the opposite: at 9:56am ET Trump posted on Truth Social
+that the Fed "must get smart - BE PATRIOTS for a change," attaching a trade
+threat — "LOWER THE RATE OR I'LL STOP TRADING WITH COUNTRIES WITH WHICH WE
+HAVE A DEFICIT." The morning run missed it. The detail worth keeping is
+who was *not* attacked: Chair Kevin Warsh is named approvingly as "its
+great new leader," a week after telling Jackson Hole the Fed had "work to
+do" on inflation — a markedly different register from the treatment Powell
+drew, on the same demand. And underneath the flat index, the market sorted
+itself: **chip stocks ran hard while the broader Nasdaq sat still, in the
+same session that pushed September-hike odds through 60%.** As of an
+11:12am ET read Intel was +4%, AMD +3%, Nvidia +2% and the SOXX
+semiconductor ETF +3%, against QQQ at +0.02%. Rate-sensitivity logic says
+high-multiple chip names should have been hit hardest by a hawkish
+surprise. They led instead. The morning's "equities did not sell off" holds,
+and now has a sharper edge: this was not broad-market indifference, it was
+AI-specific bid.
+
 ## Capital in my markets
 
 - **August nonfarm payrolls rose 162,000, roughly triple the consensus, and
@@ -76,6 +99,7 @@ its single largest holding.
   and no auction or buyback operation ran in this window (the first is
   09-09). That is a read on the underlying pressure the campaign exists to
   counter, not on the campaign's mechanics.
+  ([BLS, Employment Situation Summary](https://www.bls.gov/news.release/empsit.nr0.htm), search-corroborated via [Bloomberg, "Treasuries Slide After Strong Jobs Data Lift Fed Hike Wagers"](https://www.bloomberg.com/news/articles/2026-09-04/treasuries-slide-after-strong-jobs-data-lift-fed-hike-wagers))
   <!-- k: t=treasury-long-end-intervention axis=rates -->
 - **Norway's Norges Bank Investment Management recommended cutting its
   government-bond weighting from 70% to 50% of its benchmark bond index —
@@ -89,6 +113,41 @@ its single largest holding.
   up.
   ([BNN Bloomberg](https://www.bnnbloomberg.ca/investing/investor-outlook/2026/09/04/norways-us2-trillion-sovereign-fund-proposes-deep-cuts-to-us-treasury-holdings/))
   <!-- k: t=treasury-long-end-intervention axis=rates interp=yes -->
+
+- **Trump demanded Fed rate cuts on Truth Social at 9:56am ET, minutes
+  after a jobs report that argued the other way, and paired the demand with
+  a trade threat.** The post read "The Fed Board, with its great new
+  leader, must get smart - BE PATRIOTS for a change," adding "High interest
+  rates put the U.S.A. at a very unfair disadvantage, and I won't allow
+  that to happen!" and then "LOWER THE RATE OR I'LL STOP TRADING WITH
+  COUNTRIES WITH WHICH WE HAVE A DEFICIT." The timing is the point: August
+  payrolls at +162,000 with 55,000 of upward revisions had just moved
+  September-hike odds *above* 60%, so the executive is pushing against the
+  data rather than with it. The second point is the omission — **Chair
+  Kevin Warsh is named approvingly, not attacked.** Coverage notes Trump
+  "has refrained from excoriating Warsh personally for not [cutting], as he
+  did with Warsh's predecessor Jerome Powell," and this comes a week after
+  Warsh told Jackson Hole the Fed had "work to do" on above-target
+  inflation. The two men are now pulling opposite directions on the same
+  September decision, without the personal-attack channel open.
+  ([24/7 Wall St.](https://247wallst.com/investing/2026/09/04/trump-issues-stark-threat-to-federal-reserve-lower-the-rate-or-ill-stop-trading-with-countries-with-which-we-have-a-deficit/), [Washington Times](https://www.washingtontimes.com/news/2026/sep/4/donald-trump-says-stop-trade-certain-countries-fed-doesnt-lower/))
+  <!-- k: t=fed-independence-fight e=united-states axis=macro -->
+- **Chip stocks decoupled from the rest of tech intraday, rallying hard in
+  the same session that pushed September-hike odds through 60% — the
+  opposite of the rate-sensitivity reaction.** On an 11:12am ET read: Intel
+  +4% to $95.41, AMD +3% to $471.05, Nvidia +2% to $232.37, and the SOXX
+  semiconductor ETF +3% to $517.91, against the Nasdaq-100 ETF QQQ
+  essentially flat at +0.02%. A hawkish repricing should compress
+  high-multiple names hardest; these led. The support cited is earnings
+  rather than rates — Nvidia's most recent quarter at $96.22bn revenue
+  (+105.8% y/y), AMD's Q2 at $11.54bn (+50.1% y/y) — and for Intel
+  specifically the foundry turnaround pitch, though external foundry
+  revenue is still only $293 million. **This is intraday and not a close**;
+  the session runs to 16:00 ET. It sharpens the morning's "equities did not
+  sell off" into something more specific: the resilience was concentrated in
+  the AI cohort, not spread across the market.
+  ([24/7 Wall St.](https://247wallst.com/investing/2026/09/04/intel-climbs-4-as-chip-stocks-shrug-off-rising-rate-hike-odds-nvidia-and-amd-move-higher/))
+  <!-- k: t=ai-trade-bear-turn,chip-hyperscaler-rotation e=nvidia axis=equities interp=yes -->
 
 ## Deals & financing
 
@@ -143,14 +202,40 @@ its single largest holding.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-04/abu-dhabi-s-g42-weighs-us-ownership-to-safeguard-ai-chip-access))
   <!-- k: t=pif-ai-buildout e=g42 axis=policy -->
 
+- **SK hynix told the SEC for a second time that no decision has been made
+  on a rumored 5-10 trillion won ($3.6-7.2bn) pre-IPO raise for Solidigm,
+  its US NAND arm — meeting a deadline it set itself, and immediately
+  setting another.** The Form 6-K filed September 4 says "no matters have
+  been determined." The sequence: an 08-05 Korea Economic Daily report put
+  Solidigm's pre-IPO ask at roughly 5 trillion won; an 08-06 6-K denied any
+  final decision and committed to an update within a month, making today
+  the deadline; today's filing repeats the non-answer and pushes the next
+  commitment to **December 4, 2026**. Read from the filing itself, not from
+  coverage of it. Worth keeping straight: **Solidigm is the NAND business,
+  not the HBM/DRAM line the memory squeeze runs through** — so this is a
+  capital-markets signal about a memory maker keeping an option open
+  through the squeeze, not a supply-side development.
+  ([SEC EDGAR, Form 6-K](https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/d111778d6k.htm), [Korea Herald](https://www.koreaherald.com/article/10837711))
+  <!-- k: t=ai-memory-shortage e=sk-hynix axis=financing -->
+
 ## 📊 Macro strip
 
 **Payrolls** — +162,000 (consensus ~50-55k) · **Unemployment** — 4.1%,
 unchanged · **Revisions** — June +11k to +31k, July +44k to +21k (from
 -23k) · **AHE** — +0.3% m/m, +3.1% y/y · **2-year** — +8bp through 4.416%,
 highest since Jan 2025 · **10-year** — ~4.77% · **Sept hike odds** —
-~54.6% → ~58-60% · **Dollar index** — ~98.92 → ~99.3 · **Equities** — S&P
-~flat, Nasdaq slightly higher · **Brent** — ~$95-97, no new driver
+~54.6% → ~58-60%, above 60% by midday · **Dollar index** — ~98.92 → ~99.3 ·
+**Equities** — S&P ~flat, Nasdaq slightly higher · **Chips vs. tech
+(11:12 ET, intraday)** — Intel +4%, AMD +3%, Nvidia +2%, SOXX +3% vs. QQQ
++0.02% · **Brent** — ~$95-97, no new driver
+
+⚠️ **No afternoon 2-year or 10-year level is stated here on purpose.** The
+afternoon sweep could not reach a quote source it trusted — CNBC's and
+Forbes' rate pages both refused automated fetches, and the search snippets
+that came back disagreed about whether they showed current or prior-day
+levels. Rather than put a possibly-wrong yield into the permanent record,
+the morning's clean figures stand and the gap is named. The session closes
+at 16:00 ET; the next run picks up the close.
 
 ## ⏳ Upcoming & expected
 
@@ -169,7 +254,22 @@ highest since Jan 2025 · **10-year** — ~4.77% · **Sept hike odds** —
   unchecked. The FY27 capex step-up and the reported OpenAI shortfall this
   map is waiting on arrive **six days sooner** than the ledger said. Same
   read-the-coverage-not-the-source failure as the Anthropic v. DoW "stay."
+- ⚠️ `decart-acquisition-close` — **re-checked at 15:00 and still silent.**
+  The afternoon sweep grepped all seven buffer files (9,268 lines) plus SEC
+  EDGAR for "decart" and got zero hits anywhere, and found nothing newer
+  than Calcalist's 08-16 piece, which has the deal "nearing the signing
+  stage" with drafts exchanged but explicitly no agreement signed. Verdict
+  unchanged: no signature, no termination, no new date. Grace runs to 09-07.
+- `+` **`nippon-life-openai-hearing-outcome` — new, due 09-11.** A direct
+  read of the N.D. Ill. docket found something the map never captured: an
+  08-04 minute entry struck the 08-05 status hearing and reset it to
+  **09-02**, with OpenAI's motion to dismiss still "under advisement." That
+  hearing happened two days ago and **nothing has posted since** — the
+  docket ends at that 08-04 entry. The silence is what is being tracked.
+- `+` **`sk-hynix-solidigm-disclosure-1204` — new, due 12-04.** See the
+  filing below.
 - 🚧 Next dated: `oracle-q1-fy27-earnings` (09-10),
+  `nippon-life-openai-hearing-outcome` (09-11),
   `boj-september-meeting-0918`, `france-draft-finance-bill-0930`. **Monday
   09-07 is Labor Day** — no US session.
 
@@ -187,6 +287,11 @@ highest since Jan 2025 · **10-year** — ~4.77% · **Sept hike odds** —
   `intel-rescue`, `chips-equity-pivot`, `oracle-stargate-bet`.
 - `✏️` corrections in place on `oracle-stargate-bet` (the earnings date, in
   the watch line and the next-print line) and `attention/upcoming.yaml`.
+- **Afternoon pass (15:00):** `✎` timeline entries merged on
+  `fed-independence-fight`, `ai-trade-bear-turn`, `ai-memory-shortage` and
+  `nippon-life-openai-suit`; `+` two dated expectations logged (above);
+  `✎` standing synthesis refreshed for `united-states` and `sk-hynix` in
+  `attention/actor-doing.yaml`.
 
 ## 🧵 Thread candidates
 
@@ -219,6 +324,23 @@ how it reports is not** — two of the three finished with
 provenance manifest and exit code 0. A dead lane reported as a quiet day.
 Both filed to the engine's ops inbox. After relaunch all four ran, and
 `gdelt` landed 45KB against yesterday's 5.6KB.
+
+**On the 15:00 relaunch, all seven lanes died instantly — a different
+variable, the same class of fault.** The collector runner resolves the
+corpus from `CLOUD_RESEARCHER_CORPUS`, not the `KESTREL_INSTANCE` variable
+this repo's own operating notes and the `/daily` skill's dispatch section
+both name; the skill additionally documents a `--corpus` flag that
+`collect --help` does not list. Every lane exited with "no corpus resolved.
+Pass --corpus PATH, or set $CLOUD_RESEARCHER_CORPUS" — **which is the
+correct behaviour and the opposite of this morning's failure**: it refused
+loudly rather than writing an empty buffer and exiting 0. Caught before any
+agent was dispatched, relaunched with the right variable, and all seven
+ran. `sec_edgar` added 225 filings, `gdelt` 44, `rss` 20.
+
+⚠️ **`google_news_rss` landed late again** — the same workhorse-lane
+pattern as 09-03, where it arrived after the sweeps had closed. Its
+afternoon rows are triaged separately rather than assumed clean; the
+morning's 7,812 rows were read in full by two independent passes.
 
 ⚠️ **`theprojection build-world-news` is blocked again** — the BigQuery
 credential expired one day after being restored, and only an interactive

@@ -1,0 +1,1529 @@
+source_id: sec_edgar
+params:
+  since: '2026-09-04'
+  companies:
+  - AAPL
+  - MSFT
+  - GOOGL
+  - AMZN
+  - META
+  - ORCL
+  - NVDA
+  - AVGO
+  - TSM
+  - ASML
+  - MU
+  - AMD
+  - CRWV
+  - TSLA
+  - UNH
+  - CI
+  - HUM
+  - ELV
+  - BLK
+  - TALK
+  terms:
+  - OpenAI
+  - Anthropic
+  - Google DeepMind
+  - xAI
+  - Meta AI
+  - Mistral AI
+  - Safe Superintelligence
+  - Runway AI
+  - World Labs
+  - Hugging Face
+  - DeepSeek
+  - Alibaba
+  - Alibaba Qwen
+  - Moonshot AI
+  - Zhipu AI
+  - Liquid AI
+  - Apple
+  - Samsung
+  - Microsoft
+  - Google
+  - Amazon AWS
+  - Oracle
+  - Nvidia
+  - Broadcom
+  - Intel
+  - TSMC
+  - ASML
+  - SK Hynix
+  - Micron
+  - SMIC
+  - Hua Hong
+  - Cerebras
+  - Arm Holdings
+  - Qualcomm
+  - CoreWeave
+  - AMD
+  - Lancium
+  - Groq
+  - Frontier Security
+  - Databricks
+  - Tesla
+  - SpaceX
+  - ByteDance AI
+  - Firmus AI data center
+  - Vantage Data Centers
+  - Sam Altman
+  - Dario Amodei
+  - Jakub Pachocki
+  - Demis Hassabis
+  - Ilya Sutskever
+  - Mira Murati
+  - Jan Leike
+  - Elon Musk xAI
+  - Noam Shazeer
+  - Sundar Pichai
+  - Satya Nadella
+  - Andy Jassy
+  - Mark Zuckerberg
+  - Tim Cook
+  - John Ternus
+  - Jensen Huang
+  - Larry Ellison
+  - Mustafa Suleyman
+  - Claude Fable
+  - Claude Mythos
+  - GPT-6
+  - OpenAI Astra
+  - AI export controls
+  - AI Act enforcement
+  - frontier model regulation
+  - AI licensing regime
+  - AI funding round
+  - AI capex
+  - AI acquisition
+  - AI data center buildout
+  - AI chip supply
+  - AI memory chip shortage
+  - Meta Muse Spark
+  - Muse Code
+  - automated shutdown
+  - Highmark
+  - Blue Cross Blue Shield of Massachusetts
+  - Purchaser Business Group on Health
+  - Bain Capital Double Impact
+  - Welsh Carson
+  - General Atlantic
+  - Robert Wood Johnson Foundation
+  - Ballmer Group
+  - Commonwealth Fund
+  - Wellcome Trust
+  - SoftBank
+  - MGX
+  - BlackRock
+  - CXMT
+  - Saudi Public Investment Fund
+  - Berkshire Hathaway
+  - Macquarie Asset Management
+  - GIC Singapore
+  - Riot Platforms
+  - JPMorgan AI data center
+  - Sami Issa
+  - Global AI sovereign infrastructure
+  - Silver Lake
+  - Jane Street
+  - Applied Materials
+  - Marvell
+  - Seagate
+  - Nebius
+  - Kioxia
+  - Tokyo Electron
+  - Unitree Robotics
+  - Kevin Warsh
+  - Jerome Powell
+  - Lisa Cook
+  - Scott Bessent
+  - healthcare private equity
+  - digital health M&A
+  - healthcare lobbying
+  - AI lobbying
+  - sovereign wealth fund AI
+  - Federal Reserve rate decision
+  - Fed chair
+  - Japan 10-year yield
+  - JGB
+  - Bank of Japan rate hike
+  - yen intervention
+  - France OAT
+  - OAT yield
+  - France sovereign debt
+  - France budget deficit
+  - Bund yield
+  - German bond yield
+  - UK gilt
+  - BOJ quarter-point
+  - JGB auction
+  - Alan insurtech
+  - Cerebral telehealth
+  - Talkspace
+  - BetterHelp
+  - Headspace
+  - Spring Health
+  - Lyra Health
+  - Brightside Health
+  - Big Health
+  - Woebot
+  - Wysa
+  - Akili Interactive
+  - SonderMind
+  - Two Chairs
+  - Quartet Health
+  - Pear Therapeutics
+  - Slingshot AI
+  - Character.AI
+  - Replika
+  - Sonia AI therapy
+  - Peterson Health Technology Institute
+  - ICER
+  - ORCHA
+  - Coalition for Health AI
+  - COMPASS Pathways
+  - Usona Institute
+  - Transcend Therapeutics
+  - Definium Therapeutics
+  - Apple Health
+  - Amazon Health
+  - Microsoft Nuance
+  - Verily
+  - LifeStance Health
+  - Kaiser Permanente
+  - Universal Health Services behavioral
+  - Aetna behavioral health reimbursement
+  - UnitedHealth
+  - Centene
+  - Hims & Hers
+  - Comvest Partners
+  - Nautic Partners
+  - The Vistria Group
+  - TPG Rise Fund behavioral health
+  - Bain Capital
+  - Revelstoke Capital Partners
+  - Linden Capital Partners
+  - Webster Equity Partners behavioral health
+  - Varsity Healthcare Partners
+  - Lee Equity Partners
+  - Beecken Petty O'Keefe behavioral health
+  - Armilla AI
+  - AIUC
+  - Munich Re aiSure
+  - HSB AI liability
+  - Beazley
+  - Relm Insurance
+  - Testudo
+  - W.R. Berkley AI exclusion
+  - Thomas Insel
+  - John Torous
+  - Pim Cuijpers
+  - Jonathan Haidt
+  - Nicholas Jacobson
+  - Stephen Schueller
+  - Caroline Pearson
+  - Brian Anderson CHAI
+  - Michael Heinz
+  - prescription digital therapeutic
+  - digital mental health reimbursement
+  - FDA digital therapeutic clearance
+  - FTC mental health app privacy
+  - AI therapy chatbot regulation
+  - teletherapy
+  - digital mental health funding
+  - mental health startup acquisition
+  - behavioral health market
+  - CCBHC
+  - psilocybin FDA approval
+  - measurement-based care
+  - AI psychosis
+  - AI chatbot suicide risk
+  - youth social media ban
+  - psychotherapy outcomes meta-analysis
+  - digital mental health RCT
+  - OBBBA Medicaid
+  - Medicaid work requirements
+  - Medicaid redetermination
+  - National Survey on Drug Use and Health
+  - NSDUH
+  - Adam's Law
+  - digital mental health intervention
+  - smartphone depression intervention
+  - AI chatbot mental health
+  - digital therapeutic anxiety
+  - app-based cognitive behavioral therapy
+  - psilocybin depression
+  - single-session intervention
+  - OpenAI IPO
+  - OpenAI IPO delay
+  - OpenAI public offering
+  - HBM shortage
+  - DRAM price AI
+  - Microsoft MAI
+  - MAI-Thinking-1
+  - Microsoft superintelligence
+  - Microsoft OpenAI stake
+  - Apple Gemini
+  - Apple Intelligence Gemini
+  - Siri Gemini Google
+  - Character.AI lawsuit
+  - Slingshot Ash
+  - FDA therapy chatbot
+  - chatbot wrongful death
+  - AI circular financing
+  - Nvidia OpenAI investment
+  - AI vendor financing
+  - OpenAI losses
+  - AI bubble
+  - Stargate
+  - OpenAI for Countries
+  - Stargate data center
+  - MGX Stargate
+  - SoftBank OpenAI
+  - behavioral health funding
+  - psychiatry AI funding
+  - interventional psychiatry funding
+  - Gold Eagle AI
+  - frontier model review
+  - AI pre-release review
+  - 30-day AI review
+  - China AI chips domestic
+  - Z.AI data center
+  - Kimi K3
+  - China AI export controls
+  - China AI self-sufficiency
+  - therapy chatbot ban
+  - state AI companion law
+  - AI mental health law state
+  - Kaiser Permanente AI behavioral health
+  - Kaiser clinicians AI
+  - NUHW Kaiser AI
+  - HCA Healthcare AI
+  - HCA Timpani Palantir
+  - HCA nurses AI staffing
+  - Nippon Life OpenAI lawsuit
+  - ChatGPT hallucinated filings
+  - AI developer liability
+  - CXMT IPO
+  - ChangXin Memory
+  - CXMT listing
+  - hyperscaler capex
+  - Big Tech capex
+  - AI infrastructure spending 2026
+  - cloud capex guidance
+  - Google capex
+  - Alphabet capex
+  - Google Cloud capex
+  - Alphabet capital expenditure
+  - Alphabet bond
+  - Meta capex
+  - Meta Platforms capex
+  - Meta AI infrastructure spending
+  - Meta data center spending
+  - AWS capex
+  - Amazon capex
+  - Amazon Web Services capital expenditure
+  - Amazon data center spending
+  - Microsoft capex
+  - Microsoft Azure capex
+  - Microsoft capital expenditure
+  - Microsoft data center spending
+  - Moonshot distillation
+  - Kimi K3 sanctions
+  - Moonshot Entity List
+  - Kratsios Moonshot
+  - Red Sea tanker attack
+  - Houthi oil
+  - Iran Saudi oil shock
+  - Brent crude Middle East
+  - CMS ACCESS Model
+  - ACCESS Model behavioral health
+  - Outcome-Aligned Payments
+  - Colossus xAI
+  - xAI Memphis data center
+  - xAI supercomputer
+  - Colossus GPU cluster
+  - Grok 5
+  - Grok 4.5
+  - xAI Grok model
+  - Grok benchmark ranking
+  - SpaceXAI valuation
+  - SpaceX xAI merger
+  - SpaceXAI public offering
+  - xAI SpaceX X valuation
+  - Grok harmful content
+  - Grok companion mental health
+  - Grok safety controversy
+  - Grok AI harm lawsuit
+  - AI data center construction
+  - AI power deal nuclear
+  - gigawatt data center
+  - AI chip purchase order
+  - custom AI silicon
+  - Nvidia GPU demand
+  - AI data center power
+  - nuclear for AI
+  - data center grid gas turbine
+  - ERCOT
+  - PUCT
+  - interconnection queue
+  - PJM
+  - MISO
+  - AI data center campus
+  - gigawatt data center site
+  - data center moratorium
+  - data center audit
+  - data center approval
+  - data center project
+  - Nvidia order backlog
+  - Nvidia GB300 demand
+  - hyperscaler GPU purchase
+  - Google TPU
+  - Amazon Trainium
+  - Microsoft Maia
+  - Meta MTIA chip
+  - Anthropic chip design
+  - nuclear power AI data center
+  - SMR small modular reactor AI
+  - Oklo X-Energy data center
+  - data center gas turbine permit
+  - AI data center grid interconnection
+  - OpenAI Georgia data center
+  - Project Camellia Effingham
+  - big tech health care AI
+  - tech company mental health
+  - Microsoft Nuance health AI
+  - Microsoft healthcare AI
+  - Suleyman health AI
+  - Verily health
+  - Google health AI
+  - Fitbit health
+  - Apple Health app
+  - Apple health sensor mental health
+  - Apple AI health coach
+  - Amazon One Medical
+  - Amazon Health Services
+  - Amazon Alexa health
+  - ChatGPT Health
+  - OpenAI health care
+  - ChatGPT mental health
+  - AI lab IPO
+  - frontier lab listing
+  - AI IPO valuation
+  - Anthropic IPO
+  - Anthropic confidential filing
+  - Anthropic valuation
+  - Nvidia OpenAI guarantee
+  - Nvidia vendor financing
+  - Nvidia equity stake AI
+  - AI stocks bear market
+  - AI selloff
+  - AI trade unwind
+  - Meta RE100
+  - Meta gas turbines datacenter
+  - Meta natural gas AI
+  - TSMC Arizona
+  - TSMC capex
+  - TSMC capacity
+  - Arm royalty
+  - Arm licensing
+  - Arm v10
+  - Intel golden share
+  - Intel foundry rescue
+  - Intel 18A
+  - CoreWeave backlog
+  - CoreWeave debt
+  - neocloud
+  - BlackRock AI infrastructure
+  - GIP data center
+  - KKR Helix
+  - SoftBank OpenAI
+  - SoftBank Arm collateral
+  - Masayoshi Son AI
+  - Oracle RPO backlog
+  - Oracle free cash flow
+  - Oracle credit rating
+  - HUMAIN AI Saudi Arabia
+  - PIF NEOM The Line
+  - PIF Vision 2030 AI investment
+  - Fidelity Anthropic
+  - Fidelity OpenAI
+  - Fidelity Management Research
+  - Berkshire Alphabet stake
+  - Berkshire AI investing
+  - Buffett Abel AI
+  - Lisa Cook Fed
+  - Trump Fed governor removal
+  - Federal Reserve independence
+  - Allianz Anthropic
+  - Allianz AI claims
+  - Project Nemo
+  - Ping An AI underwriting
+  - Ping An claims automation
+  - NFRA AI insurance guidance
+  - Broadcom custom ASIC
+  - Broadcom TPU MTIA
+  - VMware licensing lawsuit
+  - Qualcomm Dragonfly
+  - Qualcomm datacenter CPU
+  - Qualcomm Modular
+  - AMD Instinct
+  - AMD MI400
+  - AMD Helios
+  - AMD Anthropic
+  - AMD OpenAI warrant
+  - AMD Meta GPU
+  - ASML EUV
+  - ASML High-NA
+  - ASML China export controls
+  - MATCH Act semiconductor
+  - ASML earnings guidance
+  - ASML Mistral
+  - Shanghai Aishengna DUV
+  - Mistral AI funding round
+  - Mistral Medium
+  - Mistral Vibe
+  - Mistral AI valuation
+  - Mistral datacenter
+  - GlobalFoundries capex
+  - GlobalFoundries CHIPS Act
+  - GlobalFoundries quantum
+  - GlobalFoundries Mubadala
+  - GlobalFoundries dividend
+  - GlobalFoundries earnings
+  - AI claim denial
+  - prior authorization AI
+  - WISeR model
+  - MHPAEA
+  - mental health parity rule
+  - parity enforcement
+  - Genesis Mission AI
+  - DOE Genesis Mission
+  - CHIPS Act equity stake
+  - CHIPS grants equity
+  - DAWG DoD AI
+  - CDAO reorganization
+  - DoD AI budget
+  - Alan insurtech Canada
+  - Alan health insurance AI
+  - Canada mental health funding
+  - Canada AI budget
+  - bilateral mental health agreements
+  - China domestic lithography
+  - immersion DUV China
+  - Shanghai Aishengna
+  - SMIC lithography tool
+  - China ASML replacement
+  - data center attack
+  - data center missile strike
+  - AWS Bahrain data center
+  - data center war risk insurance
+  - critical infrastructure AI data center
+  - OpenAI rogue agent
+  - OpenAI Hugging Face breach
+  - Modal Labs breach
+  - pacing the frontier
+  - AI agent sandbox escape
+  - chip stocks hyperscaler rotation
+  - AI capex peaking
+  - semiconductor selloff hyperscaler
+  - Demis Hassabis DeepMind
+  - Jeff Dean Google
+  - Koray Kavukcuoglu
+  - DeepMind CEO
+  - Discovery Loop
+  - Meta AI CSAM ads
+  - Meta child sexual abuse imagery ads
+  - Meta AI-generated CSAM
+  - Anthropic copyright lawsuit
+  - Anthropic Concord Music
+  - Anthropic Project Panama
+  - Anthropic book shredding
+  - evidence-based practice mental health
+  - psychotherapy effectiveness research
+  - AI therapy chatbot RCT
+  - Therabot
+  - generative AI therapy trial
+  - VERA-MH
+  - psilocybin FDA
+  - psychedelic therapy approval
+  - digital therapeutics reimbursement
+  - DiGA
+  - prescription digital therapeutic pricing
+  - social media adolescent mental health
+  - Australia social media ban
+  - school phone ban
+  - NIMH funding cuts
+  - NIH mental health research grants
+  - NICE depression guideline
+  - psychotherapy clinical practice guideline
+  - chatbot delusion
+  - ChatGPT mania psychosis
+  - accelerated TMS
+  - SAINT depression
+  - Stanford neuromodulation therapy
+  - AI data center debt
+  - AI infrastructure bonds
+  - AI credit risk
+  - data center asset-backed securities
+  - AI debt downgrade
+  - Anthropic compute deal
+  - Anthropic data center
+  - Anthropic capacity agreement
+  - Theseus Infrastructure
+  - Treasury General Account
+  - Treasury buyback
+  - long-end Treasury intervention
+  - fiscal dominance
+  - Canada tariffs
+  - US Canada trade talks
+  - auto tariffs
+  - USMCA
+  - data center opposition
+  - AI backlash
+  - data center moratorium
+  - AI public trust
+  - enterprise AI agent
+  - AI coding agent enterprise
+  - agentic search
+  - AI agent enterprise seats
+  forms:
+  - 8-K
+  - 10-Q
+  - 10-K
+fetched_at: '2026-09-04T19:12:43.352382+00:00'
+items:
+- id: 0001999371-26-019844
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019844/0001999371-26-019844-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019827
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019827/0001999371-26-019827-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105127
+  url: https://www.sec.gov/Archives/edgar/data/2044519/000110465926105127/0001104659-26-105127-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097476
+  url: https://www.sec.gov/Archives/edgar/data/1840856/000121390026097476/0001213900-26-097476-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382976
+  url: https://www.sec.gov/Archives/edgar/data/892538/000119312526382976/0001193125-26-382976-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383201
+  url: https://www.sec.gov/Archives/edgar/data/729528/000119312526383201/0001193125-26-383201-index.htm
+  ts: '2026-09-04'
+- id: 0001493152-26-041476
+  url: https://www.sec.gov/Archives/edgar/data/2026767/000149315226041476/0001493152-26-041476-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019840
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019840/0001999371-26-019840-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019821
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019821/0001999371-26-019821-index.htm
+  ts: '2026-09-04'
+- id: 0001628280-26-060632
+  url: https://www.sec.gov/Archives/edgar/data/107140/000162828026060632/0001628280-26-060632-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383169
+  url: https://www.sec.gov/Archives/edgar/data/39473/000119312526383169/0001193125-26-383169-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383172
+  url: https://www.sec.gov/Archives/edgar/data/4568/000119312526383172/0001193125-26-383172-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016681
+  url: https://www.sec.gov/Archives/edgar/data/880406/000139834426016681/0001398344-26-016681-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019885
+  url: https://www.sec.gov/Archives/edgar/data/897802/000199937126019885/0001999371-26-019885-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016630
+  url: https://www.sec.gov/Archives/edgar/data/1318342/000139834426016630/0001398344-26-016630-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019903
+  url: https://www.sec.gov/Archives/edgar/data/1643838/000199937126019903/0001999371-26-019903-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016576
+  url: https://www.sec.gov/Archives/edgar/data/1976517/000139834426016576/0001398344-26-016576-index.htm
+  ts: '2026-09-04'
+- id: 0001710607-26-000225
+  url: https://www.sec.gov/Archives/edgar/data/1710607/000171060726000225/0001710607-26-000225-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383062
+  url: https://www.sec.gov/Archives/edgar/data/1027263/000119312526383062/0001193125-26-383062-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105208
+  url: https://www.sec.gov/Archives/edgar/data/1577552/000110465926105208/0001104659-26-105208-index.htm
+  ts: '2026-09-04'
+- id: 0000910472-26-014242
+  url: https://www.sec.gov/Archives/edgar/data/1414039/000091047226014242/0000910472-26-014242-index.htm
+  ts: '2026-09-04'
+- id: 0000910472-26-014241
+  url: https://www.sec.gov/Archives/edgar/data/1414039/000091047226014241/0000910472-26-014241-index.htm
+  ts: '2026-09-04'
+- id: 0000910472-26-014243
+  url: https://www.sec.gov/Archives/edgar/data/1414039/000091047226014243/0000910472-26-014243-index.htm
+  ts: '2026-09-04'
+- id: 0000910472-26-014240
+  url: https://www.sec.gov/Archives/edgar/data/1414039/000091047226014240/0000910472-26-014240-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016586
+  url: https://www.sec.gov/Archives/edgar/data/1969674/000139834426016586/0001398344-26-016586-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383192
+  url: https://www.sec.gov/Archives/edgar/data/1660935/000119312526383192/0001193125-26-383192-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016634
+  url: https://www.sec.gov/Archives/edgar/data/1593547/000139834426016634/0001398344-26-016634-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097472
+  url: https://www.sec.gov/Archives/edgar/data/803020/000121390026097472/0001213900-26-097472-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002840
+  url: https://www.sec.gov/Archives/edgar/data/768847/000093041326002840/0000930413-26-002840-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016691
+  url: https://www.sec.gov/Archives/edgar/data/1318342/000139834426016691/0001398344-26-016691-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012273
+  url: https://www.sec.gov/Archives/edgar/data/1953487/000113322826012273/0001133228-26-012273-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383177
+  url: https://www.sec.gov/Archives/edgar/data/812303/000119312526383177/0001193125-26-383177-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002841
+  url: https://www.sec.gov/Archives/edgar/data/811976/000093041326002841/0000930413-26-002841-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383173
+  url: https://www.sec.gov/Archives/edgar/data/794458/000119312526383173/0001193125-26-383173-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105293
+  url: https://www.sec.gov/Archives/edgar/data/1000249/000110465926105293/0001104659-26-105293-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383165
+  url: https://www.sec.gov/Archives/edgar/data/13075/000119312526383165/0001193125-26-383165-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012267
+  url: https://www.sec.gov/Archives/edgar/data/1548609/000113322826012267/0001133228-26-012267-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382765
+  url: https://www.sec.gov/Archives/edgar/data/36270/000119312526382765/0001193125-26-382765-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016641
+  url: https://www.sec.gov/Archives/edgar/data/1593547/000139834426016641/0001398344-26-016641-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016687
+  url: https://www.sec.gov/Archives/edgar/data/912900/000139834426016687/0001398344-26-016687-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383231
+  url: https://www.sec.gov/Archives/edgar/data/1064642/000119312526383231/0001193125-26-383231-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016613
+  url: https://www.sec.gov/Archives/edgar/data/1455267/000139834426016613/0001398344-26-016613-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383196
+  url: https://www.sec.gov/Archives/edgar/data/1761673/000119312526383196/0001193125-26-383196-index.htm
+  ts: '2026-09-04'
+- id: 0002066578-26-003263
+  url: https://www.sec.gov/Archives/edgar/data/1131013/000206657826003263/0002066578-26-003263-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383450
+  url: https://www.sec.gov/Archives/edgar/data/1413032/000119312526383450/0001193125-26-383450-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012251
+  url: https://www.sec.gov/Archives/edgar/data/897111/000113322826012251/0001133228-26-012251-index.htm
+  ts: '2026-09-04'
+- id: 0001185185-26-003841
+  url: https://www.sec.gov/Archives/edgar/data/2094989/000118518526003841/0001185185-26-003841-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383171
+  url: https://www.sec.gov/Archives/edgar/data/1516212/000119312526383171/0001193125-26-383171-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383187
+  url: https://www.sec.gov/Archives/edgar/data/1064642/000119312526383187/0001193125-26-383187-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382370
+  url: https://www.sec.gov/Archives/edgar/data/1450011/000119312526382370/0001193125-26-382370-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383457
+  url: https://www.sec.gov/Archives/edgar/data/1413032/000119312526383457/0001193125-26-383457-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097556
+  url: https://www.sec.gov/Archives/edgar/data/19617/000121390026097556/0001213900-26-097556-index.htm
+  ts: '2026-09-04'
+- id: 0002066578-26-003265
+  url: https://www.sec.gov/Archives/edgar/data/882748/000206657826003265/0002066578-26-003265-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012284
+  url: https://www.sec.gov/Archives/edgar/data/1517695/000113322826012284/0001133228-26-012284-index.htm
+  ts: '2026-09-04'
+- id: 0001259261-26-000016
+  url: https://www.sec.gov/Archives/edgar/data/1259261/000125926126000016/0001259261-26-000016-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006032
+  url: https://www.sec.gov/Archives/edgar/data/1045487/000158064226006032/0001580642-26-006032-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012265
+  url: https://www.sec.gov/Archives/edgar/data/1027596/000113322826012265/0001133228-26-012265-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383310
+  url: https://www.sec.gov/Archives/edgar/data/315754/000119312526383310/0001193125-26-383310-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016667
+  url: https://www.sec.gov/Archives/edgar/data/786035/000139834426016667/0001398344-26-016667-index.htm
+  ts: '2026-09-04'
+- id: 0000702435-26-000267
+  url: https://www.sec.gov/Archives/edgar/data/702435/000070243526000267/0000702435-26-000267-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012300
+  url: https://www.sec.gov/Archives/edgar/data/811030/000113322826012300/0001133228-26-012300-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006039
+  url: https://www.sec.gov/Archives/edgar/data/1314414/000158064226006039/0001580642-26-006039-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016621
+  url: https://www.sec.gov/Archives/edgar/data/878719/000139834426016621/0001398344-26-016621-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012298
+  url: https://www.sec.gov/Archives/edgar/data/1027596/000113322826012298/0001133228-26-012298-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002835
+  url: https://www.sec.gov/Archives/edgar/data/2005563/000093041326002835/0000930413-26-002835-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105314
+  url: https://www.sec.gov/Archives/edgar/data/2025934/000110465926105314/0001104659-26-105314-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016601
+  url: https://www.sec.gov/Archives/edgar/data/705318/000139834426016601/0001398344-26-016601-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105317
+  url: https://www.sec.gov/Archives/edgar/data/2069247/000110465926105317/0001104659-26-105317-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105311
+  url: https://www.sec.gov/Archives/edgar/data/2013732/000110465926105311/0001104659-26-105311-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105318
+  url: https://www.sec.gov/Archives/edgar/data/2067009/000110465926105318/0001104659-26-105318-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105322
+  url: https://www.sec.gov/Archives/edgar/data/2025933/000110465926105322/0001104659-26-105322-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105321
+  url: https://www.sec.gov/Archives/edgar/data/2052961/000110465926105321/0001104659-26-105321-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105328
+  url: https://www.sec.gov/Archives/edgar/data/2066984/000110465926105328/0001104659-26-105328-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105331
+  url: https://www.sec.gov/Archives/edgar/data/2069248/000110465926105331/0001104659-26-105331-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105320
+  url: https://www.sec.gov/Archives/edgar/data/2052411/000110465926105320/0001104659-26-105320-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105325
+  url: https://www.sec.gov/Archives/edgar/data/2031546/000110465926105325/0001104659-26-105325-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105336
+  url: https://www.sec.gov/Archives/edgar/data/2069244/000110465926105336/0001104659-26-105336-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105335
+  url: https://www.sec.gov/Archives/edgar/data/2021966/000110465926105335/0001104659-26-105335-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105329
+  url: https://www.sec.gov/Archives/edgar/data/2103422/000110465926105329/0001104659-26-105329-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105330
+  url: https://www.sec.gov/Archives/edgar/data/2031545/000110465926105330/0001104659-26-105330-index.htm
+  ts: '2026-09-04'
+- id: 0001413042-26-000750
+  url: https://www.sec.gov/Archives/edgar/data/1030979/000141304226000750/0001413042-26-000750-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383441
+  url: https://www.sec.gov/Archives/edgar/data/1551950/000119312526383441/0001193125-26-383441-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383461
+  url: https://www.sec.gov/Archives/edgar/data/1471420/000119312526383461/0001193125-26-383461-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105327
+  url: https://www.sec.gov/Archives/edgar/data/2036648/000110465926105327/0001104659-26-105327-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382992
+  url: https://www.sec.gov/Archives/edgar/data/892538/000119312526382992/0001193125-26-382992-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383217
+  url: https://www.sec.gov/Archives/edgar/data/1970533/000119312526383217/0001193125-26-383217-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383427
+  url: https://www.sec.gov/Archives/edgar/data/99614/000119312526383427/0001193125-26-383427-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016662
+  url: https://www.sec.gov/Archives/edgar/data/799195/000139834426016662/0001398344-26-016662-index.htm
+  ts: '2026-09-04'
+- id: 0001106832-26-000005
+  url: https://www.sec.gov/Archives/edgar/data/1106832/000110683226000005/0001106832-26-000005-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383446
+  url: https://www.sec.gov/Archives/edgar/data/773757/000119312526383446/0001193125-26-383446-index.htm
+  ts: '2026-09-04'
+- id: 0001872856-26-000294
+  url: https://www.sec.gov/Archives/edgar/data/2138768/000187285626000294/0001872856-26-000294-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016705
+  url: https://www.sec.gov/Archives/edgar/data/1504234/000139834426016705/0001398344-26-016705-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016702
+  url: https://www.sec.gov/Archives/edgar/data/1486298/000139834426016702/0001398344-26-016702-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016703
+  url: https://www.sec.gov/Archives/edgar/data/1546429/000139834426016703/0001398344-26-016703-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016651
+  url: https://www.sec.gov/Archives/edgar/data/1587982/000139834426016651/0001398344-26-016651-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012229
+  url: https://www.sec.gov/Archives/edgar/data/1591939/000113322826012229/0001133228-26-012229-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383144
+  url: https://www.sec.gov/Archives/edgar/data/51931/000119312526383144/0001193125-26-383144-index.htm
+  ts: '2026-09-04'
+- id: 0001628280-26-060638
+  url: https://www.sec.gov/Archives/edgar/data/831655/000162828026060638/0001628280-26-060638-index.htm
+  ts: '2026-09-04'
+- id: 0001628280-26-060637
+  url: https://www.sec.gov/Archives/edgar/data/275694/000162828026060637/0001628280-26-060637-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006047
+  url: https://www.sec.gov/Archives/edgar/data/1537140/000158064226006047/0001580642-26-006047-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006011
+  url: https://www.sec.gov/Archives/edgar/data/1644419/000158064226006011/0001580642-26-006011-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383478
+  url: https://www.sec.gov/Archives/edgar/data/815425/000119312526383478/0001193125-26-383478-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382375
+  url: https://www.sec.gov/Archives/edgar/data/1479360/000119312526382375/0001193125-26-382375-index.htm
+  ts: '2026-09-04'
+- id: 0000312069-26-000232
+  url: https://www.sec.gov/Archives/edgar/data/312069/000031206926000232/0000312069-26-000232-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383214
+  url: https://www.sec.gov/Archives/edgar/data/1870117/000119312526383214/0001193125-26-383214-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383186
+  url: https://www.sec.gov/Archives/edgar/data/1655146/000119312526383186/0001193125-26-383186-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382176
+  url: https://www.sec.gov/Archives/edgar/data/2123232/000119312526382176/0001193125-26-382176-index.htm
+  ts: '2026-09-04'
+- id: 0001829126-26-009732
+  url: https://www.sec.gov/Archives/edgar/data/2000775/000182912626009732/0001829126-26-009732-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012290
+  url: https://www.sec.gov/Archives/edgar/data/1359057/000113322826012290/0001133228-26-012290-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383365
+  url: https://www.sec.gov/Archives/edgar/data/1280263/000119312526383365/0001193125-26-383365-index.htm
+  ts: '2026-09-04'
+- id: 0000916490-26-000005
+  url: https://www.sec.gov/Archives/edgar/data/916490/000091649026000005/0000916490-26-000005-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383183
+  url: https://www.sec.gov/Archives/edgar/data/1439297/000119312526383183/0001193125-26-383183-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002842
+  url: https://www.sec.gov/Archives/edgar/data/1137360/000093041326002842/0000930413-26-002842-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026675
+  url: https://www.sec.gov/Archives/edgar/data/1682472/000191870426026675/0001918704-26-026675-index.htm
+  ts: '2026-09-04'
+- id: 0001631562-26-000009
+  url: https://www.sec.gov/Archives/edgar/data/1631562/000163156226000009/0001631562-26-000009-index.htm
+  ts: '2026-09-04'
+- id: 0001514416-26-000064
+  url: https://www.sec.gov/Archives/edgar/data/1514416/000151441626000064/0001514416-26-000064-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006029
+  url: https://www.sec.gov/Archives/edgar/data/1041003/000158064226006029/0001580642-26-006029-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012293
+  url: https://www.sec.gov/Archives/edgar/data/1679949/000113322826012293/0001133228-26-012293-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016590
+  url: https://www.sec.gov/Archives/edgar/data/1969674/000139834426016590/0001398344-26-016590-index.htm
+  ts: '2026-09-04'
+- id: 0002011652-26-000006
+  url: https://www.sec.gov/Archives/edgar/data/2011652/000201165226000006/0002011652-26-000006-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006042
+  url: https://www.sec.gov/Archives/edgar/data/1314414/000158064226006042/0001580642-26-006042-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016635
+  url: https://www.sec.gov/Archives/edgar/data/890540/000139834426016635/0001398344-26-016635-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105148
+  url: https://www.sec.gov/Archives/edgar/data/1515964/000110465926105148/0001104659-26-105148-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016656
+  url: https://www.sec.gov/Archives/edgar/data/1318342/000139834426016656/0001398344-26-016656-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105402
+  url: https://www.sec.gov/Archives/edgar/data/83246/000110465926105402/0001104659-26-105402-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044256
+  url: https://www.sec.gov/Archives/edgar/data/895421/000183988226044256/0001839882-26-044256-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044264
+  url: https://www.sec.gov/Archives/edgar/data/895421/000183988226044264/0001839882-26-044264-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026603
+  url: https://www.sec.gov/Archives/edgar/data/19617/000191870426026603/0001918704-26-026603-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097364
+  url: https://www.sec.gov/Archives/edgar/data/19617/000121390026097364/0001213900-26-097364-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044140
+  url: https://www.sec.gov/Archives/edgar/data/927971/000183988226044140/0001839882-26-044140-index.htm
+  ts: '2026-09-04'
+- id: 0001628280-26-060650
+  url: https://www.sec.gov/Archives/edgar/data/1876431/000162828026060650/0001628280-26-060650-index.htm
+  ts: '2026-09-04'
+- id: 0000950103-26-013584
+  url: https://www.sec.gov/Archives/edgar/data/1000275/000095010326013584/0000950103-26-013584-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044231
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044231/0001839882-26-044231-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044190
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044190/0001839882-26-044190-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383302
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526383302/0001193125-26-383302-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383386
+  url: https://www.sec.gov/Archives/edgar/data/1599342/000119312526383386/0001193125-26-383386-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383208
+  url: https://www.sec.gov/Archives/edgar/data/2020645/000119312526383208/0001193125-26-383208-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006035
+  url: https://www.sec.gov/Archives/edgar/data/1587551/000158064226006035/0001580642-26-006035-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383133
+  url: https://www.sec.gov/Archives/edgar/data/2040315/000119312526383133/0001193125-26-383133-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383142
+  url: https://www.sec.gov/Archives/edgar/data/2040318/000119312526383142/0001193125-26-383142-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383216
+  url: https://www.sec.gov/Archives/edgar/data/1354917/000119312526383216/0001193125-26-383216-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002834
+  url: https://www.sec.gov/Archives/edgar/data/1855299/000093041326002834/0000930413-26-002834-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002831
+  url: https://www.sec.gov/Archives/edgar/data/1753712/000093041326002831/0000930413-26-002831-index.htm
+  ts: '2026-09-04'
+- id: 0000930413-26-002833
+  url: https://www.sec.gov/Archives/edgar/data/60365/000093041326002833/0000930413-26-002833-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016614
+  url: https://www.sec.gov/Archives/edgar/data/2067955/000139834426016614/0001398344-26-016614-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382392
+  url: https://www.sec.gov/Archives/edgar/data/1098605/000119312526382392/0001193125-26-382392-index.htm
+  ts: '2026-09-04'
+- id: 0001493152-26-041482
+  url: https://www.sec.gov/Archives/edgar/data/2099952/000149315226041482/0001493152-26-041482-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382399
+  url: https://www.sec.gov/Archives/edgar/data/1296250/000119312526382399/0001193125-26-382399-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382403
+  url: https://www.sec.gov/Archives/edgar/data/1219360/000119312526382403/0001193125-26-382403-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382391
+  url: https://www.sec.gov/Archives/edgar/data/1160990/000119312526382391/0001193125-26-382391-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382374
+  url: https://www.sec.gov/Archives/edgar/data/1244183/000119312526382374/0001193125-26-382374-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382411
+  url: https://www.sec.gov/Archives/edgar/data/1190935/000119312526382411/0001193125-26-382411-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382424
+  url: https://www.sec.gov/Archives/edgar/data/916183/000119312526382424/0001193125-26-382424-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382418
+  url: https://www.sec.gov/Archives/edgar/data/1798618/000119312526382418/0001193125-26-382418-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382436
+  url: https://www.sec.gov/Archives/edgar/data/1510599/000119312526382436/0001193125-26-382436-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382425
+  url: https://www.sec.gov/Archives/edgar/data/908187/000119312526382425/0001193125-26-382425-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382434
+  url: https://www.sec.gov/Archives/edgar/data/1886878/000119312526382434/0001193125-26-382434-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382445
+  url: https://www.sec.gov/Archives/edgar/data/1318025/000119312526382445/0001193125-26-382445-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382440
+  url: https://www.sec.gov/Archives/edgar/data/1756908/000119312526382440/0001193125-26-382440-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026621
+  url: https://www.sec.gov/Archives/edgar/data/831001/000191870426026621/0001918704-26-026621-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044118
+  url: https://www.sec.gov/Archives/edgar/data/1738143/000183988226044118/0001839882-26-044118-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044116
+  url: https://www.sec.gov/Archives/edgar/data/72971/000183988226044116/0001839882-26-044116-index.htm
+  ts: '2026-09-04'
+- id: 0000950103-26-013576
+  url: https://www.sec.gov/Archives/edgar/data/1000275/000095010326013576/0000950103-26-013576-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105158
+  url: https://www.sec.gov/Archives/edgar/data/83246/000110465926105158/0001104659-26-105158-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383335
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526383335/0001193125-26-383335-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012291
+  url: https://www.sec.gov/Archives/edgar/data/2043954/000113322826012291/0001133228-26-012291-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026624
+  url: https://www.sec.gov/Archives/edgar/data/831001/000191870426026624/0001918704-26-026624-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026626
+  url: https://www.sec.gov/Archives/edgar/data/200245/000191870426026626/0001918704-26-026626-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382417
+  url: https://www.sec.gov/Archives/edgar/data/1688554/000119312526382417/0001193125-26-382417-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382408
+  url: https://www.sec.gov/Archives/edgar/data/1851077/000119312526382408/0001193125-26-382408-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019892
+  url: https://www.sec.gov/Archives/edgar/data/1936157/000199937126019892/0001999371-26-019892-index.htm
+  ts: '2026-09-04'
+- id: 0001214659-26-011439
+  url: https://www.sec.gov/Archives/edgar/data/927971/000121465926011439/0001214659-26-011439-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044188
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044188/0001839882-26-044188-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044195
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044195/0001839882-26-044195-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044186
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044186/0001839882-26-044186-index.htm
+  ts: '2026-09-04'
+- id: 0001214659-26-011443
+  url: https://www.sec.gov/Archives/edgar/data/927971/000121465926011443/0001214659-26-011443-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383413
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526383413/0001193125-26-383413-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016629
+  url: https://www.sec.gov/Archives/edgar/data/878719/000139834426016629/0001398344-26-016629-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026689
+  url: https://www.sec.gov/Archives/edgar/data/19617/000191870426026689/0001918704-26-026689-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026635
+  url: https://www.sec.gov/Archives/edgar/data/19617/000191870426026635/0001918704-26-026635-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044139
+  url: https://www.sec.gov/Archives/edgar/data/927971/000183988226044139/0001839882-26-044139-index.htm
+  ts: '2026-09-04'
+- id: 0002058325-26-000004
+  url: https://www.sec.gov/Archives/edgar/data/2058325/000205832526000004/0002058325-26-000004-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097435
+  url: https://www.sec.gov/Archives/edgar/data/1631487/000121390026097435/0001213900-26-097435-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382284
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526382284/0001193125-26-382284-index.htm
+  ts: '2026-09-04'
+- id: 0001079973-26-001221
+  url: https://www.sec.gov/Archives/edgar/data/1492448/000107997326001221/0001079973-26-001221-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019801
+  url: https://www.sec.gov/Archives/edgar/data/1499655/000199937126019801/0001999371-26-019801-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016636
+  url: https://www.sec.gov/Archives/edgar/data/890540/000139834426016636/0001398344-26-016636-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383440
+  url: https://www.sec.gov/Archives/edgar/data/2110/000119312526383440/0001193125-26-383440-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016639
+  url: https://www.sec.gov/Archives/edgar/data/1593547/000139834426016639/0001398344-26-016639-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382688
+  url: https://www.sec.gov/Archives/edgar/data/2120882/000119312526382688/0001193125-26-382688-index.htm
+  ts: '2026-09-04'
+- id: 0001437749-26-029651
+  url: https://www.sec.gov/Archives/edgar/data/1401835/000143774926029651/0001437749-26-029651-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016657
+  url: https://www.sec.gov/Archives/edgar/data/1501072/000139834426016657/0001398344-26-016657-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383097
+  url: https://www.sec.gov/Archives/edgar/data/1375340/000119312526383097/0001193125-26-383097-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383462
+  url: https://www.sec.gov/Archives/edgar/data/929521/000119312526383462/0001193125-26-383462-index.htm
+  ts: '2026-09-04'
+- id: 0000770200-26-000010
+  url: https://www.sec.gov/Archives/edgar/data/770200/000077020026000010/0000770200-26-000010-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382231
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526382231/0001193125-26-382231-index.htm
+  ts: '2026-09-04'
+- id: 0000950103-26-013581
+  url: https://www.sec.gov/Archives/edgar/data/312070/000095010326013581/0000950103-26-013581-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105445
+  url: https://www.sec.gov/Archives/edgar/data/83246/000110465926105445/0001104659-26-105445-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019849
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019849/0001999371-26-019849-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019824
+  url: https://www.sec.gov/Archives/edgar/data/1924868/000199937126019824/0001999371-26-019824-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383435
+  url: https://www.sec.gov/Archives/edgar/data/1928561/000119312526383435/0001193125-26-383435-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382400
+  url: https://www.sec.gov/Archives/edgar/data/1896329/000119312526382400/0001193125-26-382400-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019875
+  url: https://www.sec.gov/Archives/edgar/data/2043390/000199937126019875/0001999371-26-019875-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044212
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044212/0001839882-26-044212-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044166
+  url: https://www.sec.gov/Archives/edgar/data/9631/000183988226044166/0001839882-26-044166-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019807
+  url: https://www.sec.gov/Archives/edgar/data/2043390/000199937126019807/0001999371-26-019807-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016693
+  url: https://www.sec.gov/Archives/edgar/data/1678130/000139834426016693/0001398344-26-016693-index.htm
+  ts: '2026-09-04'
+- id: 0001040674-26-000105
+  url: https://www.sec.gov/Archives/edgar/data/1040674/000104067426000105/0001040674-26-000105-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003268
+  url: https://www.sec.gov/Archives/edgar/data/912593/000201238326003268/0002012383-26-003268-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003264
+  url: https://www.sec.gov/Archives/edgar/data/1327811/000201238326003264/0002012383-26-003264-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003269
+  url: https://www.sec.gov/Archives/edgar/data/794170/000201238326003269/0002012383-26-003269-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003257
+  url: https://www.sec.gov/Archives/edgar/data/1720635/000201238326003257/0002012383-26-003257-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382161
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000119312526382161/0001193125-26-382161-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003265
+  url: https://www.sec.gov/Archives/edgar/data/1786352/000201238326003265/0002012383-26-003265-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003263
+  url: https://www.sec.gov/Archives/edgar/data/70318/000201238326003263/0002012383-26-003263-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003270
+  url: https://www.sec.gov/Archives/edgar/data/795403/000201238326003270/0002012383-26-003270-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003260
+  url: https://www.sec.gov/Archives/edgar/data/1311370/000201238326003260/0002012383-26-003260-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003258
+  url: https://www.sec.gov/Archives/edgar/data/1065059/000201238326003258/0002012383-26-003258-index.htm
+  ts: '2026-09-04'
+- id: 0001140361-26-035676
+  url: https://www.sec.gov/Archives/edgar/data/1902649/000114036126035676/0001140361-26-035676-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003266
+  url: https://www.sec.gov/Archives/edgar/data/88941/000201238326003266/0002012383-26-003266-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003262
+  url: https://www.sec.gov/Archives/edgar/data/1660280/000201238326003262/0002012383-26-003262-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003267
+  url: https://www.sec.gov/Archives/edgar/data/874238/000201238326003267/0002012383-26-003267-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003261
+  url: https://www.sec.gov/Archives/edgar/data/1869198/000201238326003261/0002012383-26-003261-index.htm
+  ts: '2026-09-04'
+- id: 0001140361-26-035674
+  url: https://www.sec.gov/Archives/edgar/data/1370755/000114036126035674/0001140361-26-035674-index.htm
+  ts: '2026-09-04'
+- id: 0001140361-26-035675
+  url: https://www.sec.gov/Archives/edgar/data/1834543/000114036126035675/0001140361-26-035675-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003271
+  url: https://www.sec.gov/Archives/edgar/data/2105139/000201238326003271/0002012383-26-003271-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000835
+  url: https://www.sec.gov/Archives/edgar/data/899923/000205211326000835/0002052113-26-000835-index.htm
+  ts: '2026-09-04'
+- id: 0001140361-26-035677
+  url: https://www.sec.gov/Archives/edgar/data/1902649/000114036126035677/0001140361-26-035677-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382887
+  url: https://www.sec.gov/Archives/edgar/data/844779/000119312526382887/0001193125-26-382887-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382886
+  url: https://www.sec.gov/Archives/edgar/data/844779/000119312526382886/0001193125-26-382886-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382888
+  url: https://www.sec.gov/Archives/edgar/data/844779/000119312526382888/0001193125-26-382888-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000838
+  url: https://www.sec.gov/Archives/edgar/data/1377757/000205211326000838/0002052113-26-000838-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000825
+  url: https://www.sec.gov/Archives/edgar/data/1761055/000205211326000825/0002052113-26-000825-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000832
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000832/0002052113-26-000832-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000833
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000833/0002052113-26-000833-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000836
+  url: https://www.sec.gov/Archives/edgar/data/1804196/000205211326000836/0002052113-26-000836-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000837
+  url: https://www.sec.gov/Archives/edgar/data/1804196/000205211326000837/0002052113-26-000837-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000834
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000834/0002052113-26-000834-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000826
+  url: https://www.sec.gov/Archives/edgar/data/1761055/000205211326000826/0002052113-26-000826-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000839
+  url: https://www.sec.gov/Archives/edgar/data/1332174/000205211326000839/0002052113-26-000839-index.htm
+  ts: '2026-09-04'
+- id: 0002012383-26-003259
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000201238326003259/0002012383-26-003259-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000830
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000830/0002052113-26-000830-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000828
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000828/0002052113-26-000828-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000829
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000829/0002052113-26-000829-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000827
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000827/0002052113-26-000827-index.htm
+  ts: '2026-09-04'
+- id: 0002052113-26-000831
+  url: https://www.sec.gov/Archives/edgar/data/1100663/000205211326000831/0002052113-26-000831-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383284
+  url: https://www.sec.gov/Archives/edgar/data/1761055/000119312526383284/0001193125-26-383284-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383273
+  url: https://www.sec.gov/Archives/edgar/data/893168/000119312526383273/0001193125-26-383273-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383272
+  url: https://www.sec.gov/Archives/edgar/data/1209501/000119312526383272/0001193125-26-383272-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383270
+  url: https://www.sec.gov/Archives/edgar/data/934298/000119312526383270/0001193125-26-383270-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383274
+  url: https://www.sec.gov/Archives/edgar/data/893167/000119312526383274/0001193125-26-383274-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382896
+  url: https://www.sec.gov/Archives/edgar/data/1859001/000119312526382896/0001193125-26-382896-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383219
+  url: https://www.sec.gov/Archives/edgar/data/906982/000119312526383219/0001193125-26-383219-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012277
+  url: https://www.sec.gov/Archives/edgar/data/836249/000113322826012277/0001133228-26-012277-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383220
+  url: https://www.sec.gov/Archives/edgar/data/1018042/000119312526383220/0001193125-26-383220-index.htm
+  ts: '2026-09-04'
+- id: 0001376474-26-000601
+  url: https://www.sec.gov/Archives/edgar/data/96536/000137647426000601/0001376474-26-000601-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016683
+  url: https://www.sec.gov/Archives/edgar/data/1817159/000139834426016683/0001398344-26-016683-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382980
+  url: https://www.sec.gov/Archives/edgar/data/1761055/000119312526382980/0001193125-26-382980-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383405
+  url: https://www.sec.gov/Archives/edgar/data/830744/000119312526383405/0001193125-26-383405-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016676
+  url: https://www.sec.gov/Archives/edgar/data/1790177/000139834426016676/0001398344-26-016676-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016694
+  url: https://www.sec.gov/Archives/edgar/data/1771226/000139834426016694/0001398344-26-016694-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016682
+  url: https://www.sec.gov/Archives/edgar/data/1746967/000139834426016682/0001398344-26-016682-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383156
+  url: https://www.sec.gov/Archives/edgar/data/744043/000119312526383156/0001193125-26-383156-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016672
+  url: https://www.sec.gov/Archives/edgar/data/1870833/000139834426016672/0001398344-26-016672-index.htm
+  ts: '2026-09-04'
+- id: 0001133228-26-012259
+  url: https://www.sec.gov/Archives/edgar/data/943863/000113322826012259/0001133228-26-012259-index.htm
+  ts: '2026-09-04'
+- id: 0001300087-26-000034
+  url: https://www.sec.gov/Archives/edgar/data/1300087/000130008726000034/0001300087-26-000034-index.htm
+  ts: '2026-09-04'
+- id: 0001140019-26-000126
+  url: https://www.sec.gov/Archives/edgar/data/1140019/000114001926000126/0001140019-26-000126-index.htm
+  ts: '2026-09-04'
+- id: 0001174610-26-000562
+  url: https://www.sec.gov/Archives/edgar/data/1174610/000117461026000562/0001174610-26-000562-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383406
+  url: https://www.sec.gov/Archives/edgar/data/830744/000119312526383406/0001193125-26-383406-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382805
+  url: https://www.sec.gov/Archives/edgar/data/723531/000119312526382805/0001193125-26-382805-index.htm
+  ts: '2026-09-04'
+- id: 0001410368-26-090959
+  url: https://www.sec.gov/Archives/edgar/data/778207/000141036826090959/0001410368-26-090959-index.htm
+  ts: '2026-09-04'
+- id: 0001445546-26-006526
+  url: https://www.sec.gov/Archives/edgar/data/2147054/000144554626006526/0001445546-26-006526-index.htm
+  ts: '2026-09-04'
+- id: 0001437749-26-029660
+  url: https://www.sec.gov/Archives/edgar/data/310354/000143774926029660/0001437749-26-029660-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382868
+  url: https://www.sec.gov/Archives/edgar/data/1027263/000119312526382868/0001193125-26-382868-index.htm
+  ts: '2026-09-04'
+- id: 0000898432-26-000698
+  url: https://www.sec.gov/Archives/edgar/data/1086433/000089843226000698/0000898432-26-000698-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105460
+  url: https://www.sec.gov/Archives/edgar/data/1080429/000110465926105460/0001104659-26-105460-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044271
+  url: https://www.sec.gov/Archives/edgar/data/72971/000183988226044271/0001839882-26-044271-index.htm
+  ts: '2026-09-04'
+- id: 0001004726-26-008085
+  url: https://www.sec.gov/Archives/edgar/data/1091439/000100472626008085/0001004726-26-008085-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026667
+  url: https://www.sec.gov/Archives/edgar/data/1682472/000191870426026667/0001918704-26-026667-index.htm
+  ts: '2026-09-04'
+- id: 0001410368-26-090960
+  url: https://www.sec.gov/Archives/edgar/data/787623/000141036826090960/0001410368-26-090960-index.htm
+  ts: '2026-09-04'
+- id: 0001410368-26-090942
+  url: https://www.sec.gov/Archives/edgar/data/798290/000141036826090942/0001410368-26-090942-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383190
+  url: https://www.sec.gov/Archives/edgar/data/2141433/000119312526383190/0001193125-26-383190-index.htm
+  ts: '2026-09-04'
+- id: 0001410368-26-090937
+  url: https://www.sec.gov/Archives/edgar/data/914036/000141036826090937/0001410368-26-090937-index.htm
+  ts: '2026-09-04'
+- id: 0001918704-26-026661
+  url: https://www.sec.gov/Archives/edgar/data/1682472/000191870426026661/0001918704-26-026661-index.htm
+  ts: '2026-09-04'
+- id: 0001528621-26-000924
+  url: https://www.sec.gov/Archives/edgar/data/2096518/000152862126000924/0001528621-26-000924-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383299
+  url: https://www.sec.gov/Archives/edgar/data/886982/000119312526383299/0001193125-26-383299-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016595
+  url: https://www.sec.gov/Archives/edgar/data/1783964/000139834426016595/0001398344-26-016595-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044179
+  url: https://www.sec.gov/Archives/edgar/data/1114446/000183988226044179/0001839882-26-044179-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382383
+  url: https://www.sec.gov/Archives/edgar/data/1911795/000119312526382383/0001193125-26-382383-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382389
+  url: https://www.sec.gov/Archives/edgar/data/1723701/000119312526382389/0001193125-26-382389-index.htm
+  ts: '2026-09-04'
+- id: 0001829126-26-009763
+  url: https://www.sec.gov/Archives/edgar/data/1728683/000182912626009763/0001829126-26-009763-index.htm
+  ts: '2026-09-04'
+- id: 0001104659-26-105297
+  url: https://www.sec.gov/Archives/edgar/data/2006189/000110465926105297/0001104659-26-105297-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382362
+  url: https://www.sec.gov/Archives/edgar/data/730272/000119312526382362/0001193125-26-382362-index.htm
+  ts: '2026-09-04'
+- id: 0001580642-26-006037
+  url: https://www.sec.gov/Archives/edgar/data/1314414/000158064226006037/0001580642-26-006037-index.htm
+  ts: '2026-09-04'
+- id: 0001137360-26-000853
+  url: https://www.sec.gov/Archives/edgar/data/1137360/000113736026000853/0001137360-26-000853-index.htm
+  ts: '2026-09-04'
+- id: 0001137360-26-000857
+  url: https://www.sec.gov/Archives/edgar/data/1137360/000113736026000857/0001137360-26-000857-index.htm
+  ts: '2026-09-04'
+- id: 0001137360-26-000859
+  url: https://www.sec.gov/Archives/edgar/data/1137360/000113736026000859/0001137360-26-000859-index.htm
+  ts: '2026-09-04'
+- id: 0001137360-26-000855
+  url: https://www.sec.gov/Archives/edgar/data/1137360/000113736026000855/0001137360-26-000855-index.htm
+  ts: '2026-09-04'
+- id: 0001999371-26-019883
+  url: https://www.sec.gov/Archives/edgar/data/813623/000199937126019883/0001999371-26-019883-index.htm
+  ts: '2026-09-04'
+- id: 0001438934-26-002642
+  url: https://www.sec.gov/Archives/edgar/data/1106191/000143893426002642/0001438934-26-002642-index.htm
+  ts: '2026-09-04'
+- id: 0001398344-26-016698
+  url: https://www.sec.gov/Archives/edgar/data/1587982/000139834426016698/0001398344-26-016698-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383460
+  url: https://www.sec.gov/Archives/edgar/data/908695/000119312526383460/0001193125-26-383460-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044222
+  url: https://www.sec.gov/Archives/edgar/data/895421/000183988226044222/0001839882-26-044222-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044224
+  url: https://www.sec.gov/Archives/edgar/data/895421/000183988226044224/0001839882-26-044224-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044225
+  url: https://www.sec.gov/Archives/edgar/data/1666268/000183988226044225/0001839882-26-044225-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383125
+  url: https://www.sec.gov/Archives/edgar/data/1498612/000119312526383125/0001193125-26-383125-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-383104
+  url: https://www.sec.gov/Archives/edgar/data/1548717/000119312526383104/0001193125-26-383104-index.htm
+  ts: '2026-09-04'
+- id: 0001193125-26-382322
+  url: https://www.sec.gov/Archives/edgar/data/1847516/000119312526382322/0001193125-26-382322-index.htm
+  ts: '2026-09-04'
+- id: 0001839882-26-044255
+  url: https://www.sec.gov/Archives/edgar/data/895421/000183988226044255/0001839882-26-044255-index.htm
+  ts: '2026-09-04'
+- id: 0001213900-26-097495
+  url: https://www.sec.gov/Archives/edgar/data/19617/000121390026097495/0001213900-26-097495-index.htm
+  ts: '2026-09-04'
+- id: 0001493152-26-041450
+  url: https://www.sec.gov/Archives/edgar/data/2068385/000149315226041450/0001493152-26-041450-index.htm
+  ts: '2026-09-04'

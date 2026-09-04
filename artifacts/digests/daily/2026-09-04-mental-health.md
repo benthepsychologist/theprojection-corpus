@@ -3,14 +3,17 @@ lens: mental-health
 date: 2026-09-04
 status: building
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T10:40:00-04:00
+as_of: 2026-09-04T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-04
 
-*Curated agentic-interim, 05:00 ET → **10:40 ET** Friday. Sources: the
-deterministic lanes (`rss` 474 items including STAT, Behavioral Health
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Friday — extended on the
+15:00 run from a 10:40 ET build, with two afternoon sweeps (regulation/
+clinical/payer, and the evidence base plus big tech's health arms) that
+returned one catch between them. Sources: two rounds of the deterministic
+lanes (`rss` 474 items including STAT, Behavioral Health
 Business, Internet Interventions and Frontiers in Psychiatry;
 `clinicaltrials` 346; `federal_register` 48; `google_news_rss` 7,812),
 plus a regulatory/clinical/payer sweep, an evidence-and-big-tech sweep
@@ -50,6 +53,7 @@ yesterday's digest and in `coverage-log.md`.
   desk with no signature or veto. The ledger item stays open to 09-30.
   Recorded because a checked negative on a dated item is a real result,
   not an absence of one.
+  ([SB 903 status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903), [Transparency Coalition, 09-04](https://www.transparencycoalition.ai/news/ai-legislative-update-september4-2026))
   <!-- k: t=state-therapy-chatbot-bans,ai-therapy-regulatory-reckoning axis=regulation -->
 - **San Francisco's Board of Supervisors voted 11-0 to formally demand
   Kaiser Permanente withdraw its "Terrible Three" contract demands and
@@ -60,7 +64,54 @@ yesterday's digest and in `coverage-log.md`.
   who introduced it: "how we're taking care of our patients and workers,
   especially with emerging technology, is more important" than the
   procedural posture. Sourced to NUHW's own release and KALW.
+  ([NUHW](https://home.nuhw.org/2026/09/02/san-francisco-passes-resolution-opposing-kaiser-contract-demands/), [KALW](https://www.kalw.org/bay-area-news/2026-09-02/sf-supervisors-push-back-on-kaisers-use-of-ai-in-mental-health-care))
   <!-- k: t=kaiser-ai-clinician-backlash e=kaiser-permanente axis=labor -->
+
+- **Character.AI named new crisis-routing and CSAM-detection partners in a
+  safety update, the incumbent under the most direct legal pressure
+  restating publicly what it says it is doing.** The company's own blog post
+  says it has partnered with **Koko** (free self-guided emotional-support
+  tools) and **ThroughLine** — a global directory that routes a user to
+  country-specific crisis resources rather than to a single hotline number,
+  which matters for a service with users outside the US — and that its
+  self-harm detection now weighs signals accumulating across a whole
+  conversation rather than any single message. On the imagery side it says
+  it has joined the **Internet Watch Foundation** (a global CSAM-detection
+  network it now reports into) and **StopNCII** (privacy-preserving
+  hash-matching against non-consensual intimate imagery). It also announced
+  a moderation-appeals process for creators, mutual-blocking controls, and
+  continued work on its in-house age-estimation model and the k-ID-built
+  Parental Insights tool for the under-18 experience it walled off from
+  open-ended chat last year. **Read this for what it is: a primary source
+  about what the company says it does, not evidence that any of it works** —
+  no effectiveness data accompanies it. It lands with force because of who
+  is saying it, with the Pennsylvania suit and the Setzer settlement both
+  live. This also resolves an item yesterday's digest saw in the buffer and
+  could not verify at the time.
+  ([Character.AI](https://blog.character.ai/continuing-to-build-upon-our-safety-priorities/))
+  <!-- k: t=ai-therapy-regulatory-reckoning e=character-ai axis=safety -->
+
+- **A federal judge refused to block Minnesota's AI-nudification ban, leaving
+  it enforceable against xAI while the constitutional challenge proceeds —
+  the second ruling against xAI in this case.** U.S. District Judge Donovan
+  W. Frank denied the preliminary injunction on 2026-09-04 in a 14-page
+  memorandum opinion, read here from the docket itself rather than from
+  coverage of it (Doc. 54, *X.AI LLC v. Ellison*, No. 26-3425, D. Minn.).
+  H.F. 1606 bars any service from letting a user "nudify" an image or video
+  — alter or generate one to depict an intimate part not in the original —
+  with civil penalties up to **$500,000 per violation**, and those penalties
+  now stay live through trial. The order's background section cites
+  legislative testimony that a single identified perpetrator used
+  nudification tools against **more than 80 women**, and RAINN's estimate of
+  **24 million monthly users** of such apps in 2023, over 95% of whose
+  outputs were non-consensual, sexually explicit and depicted women. **This
+  resolves the "under advisement" status this thread has carried since the
+  08-19 hearing**, where Frank took the matter without ruling from the
+  bench. A TRO was already denied on 07-31, and the Trump DOJ's 08-19/20
+  Statement of Interest supporting xAI did not change the outcome. A motion
+  to dismiss xAI's underlying suit remains pending.
+  ([Order, Doc. 54, via CourtListener/RECAP](https://storage.courtlistener.com/recap/gov.uscourts.mnd.235231/gov.uscourts.mnd.235231.54.0_1.pdf), [MPR News](https://www.mprnews.org/story/2026/09/04/judge-lets-minnesota-enforce-antinudification-app-law-over-xai-objection-as-case-proceeds))
+  <!-- k: t=grok-companion-harm,state-therapy-chatbot-bans e=xai axis=legal sev=major -->
 
 ## 🧪 Clinical trials
 
@@ -85,7 +136,15 @@ survive that test as real; that is the difference from yesterday.
   digest). Senator Warner's letter has gone unanswered for two and a half
   weeks; the first actual regulatory consequence came from another
   jurisdiction.
-- 📋 Nothing else dated for this lens before 09-15.
+- ⚠️ `california-ai-mh-bills-0930` — **carried forward from this morning's
+  check, not independently re-verified this afternoon.** The Legislature's
+  own bill-history pages did not render to an automated fetch (they depend
+  on JavaScript), so the afternoon sweep declined to re-assert the
+  five-bills-unsigned status rather than restate it as freshly checked.
+  Morning's live check stands; the limit on it is named.
+- 📋 Nothing else dated for this lens before 09-15. **The FDA psychedelic
+  public hearing (09-14) was re-checked against the Federal Register API
+  directly this afternoon** — no new notice, no schedule change.
 
 ## 🔄 Map changes
 
@@ -95,6 +154,13 @@ survive that test as real; that is the difference from yesterday.
 - `✎` timeline entries merged on `kaiser-ai-clinician-backlash`,
   `meta-ai-csam-ads`, `canada-ai-vs-care`, `psychedelic-regulatory-sprint`,
   `neuromodulation-evidence`, `ai-therapy-evidence`.
+- **Afternoon pass (15:00):** `✎` timeline entries merged on
+  `ai-therapy-regulatory-reckoning` (the Character.AI safety update above)
+  and `grok-companion-harm` (the Minnesota ruling, surfaced by buffer
+  triage and read from the docket, not from coverage). No new watchlist
+  terms; no corrections found against this morning's build. ⚠️ The
+  California bills ledger line is carried forward rather than re-verified —
+  see above.
 - 📋 **Flagged, not acted on:** `psychedelic-regulatory-sprint` had gone
   three weeks without a timeline entry while real state-program and access
   news accumulated (New Mexico's program acceleration, a Rhelion Germany

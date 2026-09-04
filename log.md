@@ -8121,3 +8121,153 @@ pushed twice — the second time after the citation fix — Cloudflare builds
 resolved into a hypothesis claim this pass), `09_critic_annotations` (1
 pass, 13 process-only). `graph/validate.py`: **OK — 4,657 atoms, 2,953
 sources, 7,553 relationships, 1,185 annotations, 125 extraction_passes.**
+
+---
+
+## 2026-09-04 15:00 ET — /daily (afternoon extend)
+
+**What this run was.** An extend, not a new day: the 10:40 ET run had already
+built 09-04 and finalized 09-03, so there was no gap to reconstruct and no
+finalize to do. The window was 10:40 → 15:00 ET — four and a quarter hours
+covering the US afternoon session, midday Washington, and the European and
+Middle East evening. **Seven cluster sweeps over all 100 open threads, two
+buffer-triage passes, and a citation-repair dispatch. Eight timeline entries
+merged across eight threads, zero deletions.**
+
+**The news was thin and correctly reported thin.** Five of the seven sweeps
+returned zero timeline entries, which is the right result for a four-hour
+window and was briefed as such. What did land: Trump's 9:56 ET Truth Social
+demand for rate cuts, minutes after a print that argued the other way, with
+Chair Warsh conspicuously *not* attacked personally (`fed-independence-fight`);
+chip stocks decoupling from the broader market intraday — Intel +4%, AMD +3%,
+SOXX +3% against QQQ at +0.02% — in the same session hike odds crossed 60%
+(`ai-trade-bear-turn`, and given an interpretation); a federal judge refusing
+to block Minnesota's AI-nudification law against xAI, read from the order
+itself (`grok-companion-harm`); scrutiny of Anthropic's Long-Term Benefit
+Trust ahead of a ~$2tn IPO (`anthropic-ipo-timing`); SK hynix's second
+deferral on a Solidigm pre-IPO raise, from the 6-K (`ai-memory-shortage`);
+an uncaptured 08-04 minute entry resetting the Nippon Life v. OpenAI status
+hearing to 09-02 with nothing posted since (`nippon-life-openai-suit`);
+Character.AI's safety-partnership update (`ai-therapy-regulatory-reckoning`);
+and cross-motions for summary judgment in the OpenAI/Microsoft copyright MDL
+(`anthropic-copyright-exposure`).
+
+**The run's real yield was four corrections, two of them to this map's own
+published claims — and both came from the same reflex.**
+
+1. ✏️ **"The EU formally joined Operation Economic Outcast" was wrong.** The
+   morning digest, the front throughline and the `iran-conflict-widening`
+   timeline all stated it as settled fact. It was Treasury Secretary
+   Bessent's characterisation, accurately quoted — but the Commission's own
+   statement only "welcomes efforts... including through the US-led Operation
+   Economic Outcast." No new sanctions, no alignment with US designations, no
+   change to the EU's own regime; real participation needs member-state
+   unanimity nobody has sought. Asked directly at the 09-04 midday briefing,
+   a Commission spokesperson pointed back to the 09-01 statement and would
+   neither confirm nor deny. **Verified firsthand from the Euronews piece
+   before applying.** Corrected in three places; the thread entry's headline
+   and its "converts the campaign into a coordinated transatlantic one"
+   sentence both rewritten.
+2. ✏️ **The "zero coverage of Anthropic's alignment incident" claim was
+   false, and ran two days.** Published in the 09-03 front digest and again
+   in the 09-04 front and frontier-AI digests as a structural hole. The
+   material had been on `openai-agent-security-incident.md` since **08-31** —
+   Anthropic's own post, the 150 redirected engineers, the month-long
+   production-RL freeze, the planned METR review, the escape-detection
+   classifier, the hardened-sandbox rule — and in the 08-31 digest.
+   **Confirmed by whole-corpus grep before touching anything.** What survives
+   is a *structure* argument, not a coverage one: the material sits under a
+   thread named for OpenAI's incident, so it has no throughline and does not
+   surface on an entity search. The thread candidate now stands on that
+   weaker, honest ground. Corrected in all three files including yesterday's
+   archived digest.
+3. ⚠️ **No afternoon yield level was written.** The macro sweep could not
+   reach a quote source it trusted — CNBC and Forbes both refused automated
+   fetches and the search snippets disagreed about whether they showed
+   current or prior-day levels — and declined rather than risk a wrong figure
+   in the permanent record. The gap is named in the macro strip.
+4. ⚠️ **The California bills ledger line was downgraded from re-verified to
+   carried-forward.** `leginfo.legislature.ca.gov` does not render to an
+   automated fetch, so the afternoon sweep would not re-assert the morning's
+   status as freshly checked.
+
+**The connecting failure, worth naming.** Both published errors came from
+repeating a characterisation instead of opening the document behind it — one
+government's description of another government's position, and a critic's
+assertion about the corpus. In both cases the check was cheaper than the
+sentence: one WebFetch, one grep. Yesterday the failure mode moved from a
+file nobody read to a file read and waved through. Today it moved again, to
+a claim nobody checked.
+
+**The late lane, third day running.** `google_news_rss` again landed after
+every sweep had closed — 7,812 rows at sweep time, 10,786 when it finished.
+Sweep B flagged it explicitly (max timestamp still 14:18:35Z) instead of
+writing around it, which is the 09-03 rule working. A dedicated pass over the
+2,974 new rows returned **exactly one** verified development (the MDL
+cross-motions, read off the docket after the story surfaced only through
+paywalled MLex headlines). **The instructive part is the ruling-out:** the two
+loudest clusters by volume — Nvidia/Hugging Face at 60+ syndicated headlines,
+and Moonshot's HK IPO filing — read as fresh purely from syndication weight
+and were both already on the record from 09-03. Volume is not novelty. A
+separate triage of the 293 rows the other lanes appended found two entries
+plus the DOJ fair-use brief, and correctly ruled out all 225 SEC filings after
+checking every 13G/A subject by name against the tracked-entity list rather
+than dismissing by form type.
+
+**A repeat of yesterday's own lapse, caught and repaired.** Thirteen bullets
+in this morning's digests shipped with **no inline citation**, which makes
+them unlinkable in the readout packs that feed the public site — the identical
+defect logged yesterday. A backfill dispatch sourced them from the merged
+timelines and sweep files, fact-matched rather than topic-matched, and found a
+fourteenth the mechanical scan had missed. Result: **breaking-item URL
+coverage went from 57% to 100% on the front pack**, and all four packs now sit
+at 100% on today's items. Verified: zero `news.google.com` redirects in any
+digest, zero annotated bullets without a citation.
+
+⚠️ **One banned-link defect left in place deliberately:**
+`artifacts/threads/anthropic-copyright-exposure.md:65` carries two
+`news.google.com` redirect URLs from an earlier `⟨steer⟩` entry. Pre-existing,
+not from this run, and resolving them needs real work — flagged rather than
+silently rewritten. Also caught and stripped: the late-triage agent's own
+proposed bullet cited a `news.google.com` URL and led with "Read from the
+docket itself, not from coverage of it" — a note about our own record in a
+field that is published verbatim. Both fixed before merge.
+
+**Tooling.**
+- ⛔ **BigQuery expired again, second consecutive day.** `build-world-news`
+  returns "Reauthentication failed. cannot prompt during non-interactive
+  execution." Only an interactive `gcloud auth login` Ben runs can clear it.
+  The world-news candidate pool is now two days stale.
+- ✅ **All seven collector lanes died instantly on the afternoon launch, and
+  that is the good outcome.** The runner resolves the corpus from
+  `CLOUD_RESEARCHER_CORPUS`; this repo's operating notes, the session's own
+  memory, and the `/daily` skill's dispatch line all name `KESTREL_INSTANCE`
+  instead, and the skill documents a `--corpus` flag that `collect --help`
+  does not list. Every lane exited with "no corpus resolved" having written
+  nothing — **the exact inverse of this morning's failure**, where two dead
+  lanes wrote empty buffers and provenance manifests and exited 0. Caught
+  before any agent was dispatched. The tool is right; the documentation is
+  wrong. Worth routing to the engine's ops inbox.
+- 📋 **Access notes accumulated across agents, useful for future briefs:**
+  CourtListener 403s/202s on plain `curl` from this network (contrary to the
+  brief's own claim that curl works — that line should be corrected);
+  `arstechnica.com` and `theverge.com` are blocked to WebFetch but work with
+  `curl -A "Mozilla/5.0"`; SEC EDGAR's bot detection accepts user-agents
+  inconsistently across `data.sec.gov` vs. `Archives/edgar/`; HCPLive 403s;
+  `leginfo.legislature.ca.gov` is JS-dependent.
+
+**Map changes.** 8 timeline entries merged across 8 threads, zero deletions,
+`last_seen` bumped on 7. Two dated expectations logged, both from a primary
+document rather than coverage: `nippon-life-openai-hearing-outcome` (09-11)
+and `sk-hynix-solidigm-disclosure-1204` (12-04). Standing synthesis refreshed
+for `united-states` and `sk-hynix`. One interpretation written, on the chip
+decoupling, grounded against the standing `rate_regime` reading — which is now
+partly obsolete, since the July -23,000 print it rests on was revised to
++21,000 this morning; noted in the interpretation's context note, and the
+reading itself is `/week`'s to refresh, not `/daily`'s.
+
+**Graph fed:** `07_digest_bullets` (0 new S1, 1,489 cross-posted merges),
+`06_timelines` (8 new S2 across three passes, 623 bumped, 919 ambiguous),
+`03_expectations` (2 hypothesis claims), `09_critic_annotations` (13
+process-only). `graph/validate.py`: **OK — 4,667 atoms, 2,967 sources, 7,568
+relationships, 1,190 annotations, 125 extraction_passes.**
