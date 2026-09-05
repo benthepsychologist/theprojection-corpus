@@ -5,6 +5,11 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-09-05 — Hezbollah drone at IDF troops draws Israeli strikes across south Lebanon that kill at least three
+
+- **Hezbollah launched an explosive drone at Israeli forces in the IDF-occupied south-Lebanon buffer zone Friday night; troops shot it down with no injuries, and the IDF retaliated with strikes on five locations across Tyre, Nabatieh and the eastern Beqaa Valley, killing at least three Lebanese civilians and wounding 15, including two children, three women and six rescuers.** The IDF called the drone launch "a blatant violation" of the ceasefire and said the strikes targeted Hezbollah weapon-storage sites; Defense Minister Israel Katz reiterated Israel will not withdraw from the security zone until Hezbollah is fully disarmed. This is a new flare-up two days after the detainee release and remains-search exchange of 09-03/04.
+  ([Times of Israel](https://www.timesofisrael.com/3-said-killed-in-idf-strikes-in-lebanon-after-hezbollah-drone-attack-on-troops), [JNS](https://www.jns.org/news/israel-news/idf-hits-hezbollah-terrorists-infrastructure-after-drone-launched-at-soldiers), [Haaretz](https://www.haaretz.com/middle-east-news/lebanonnews/2026-09-05/ty-article/.premium/idf-launches-new-strikes-in-lebanon-cites-attempted-hezbollah-drone-attack/000001a0-6e87-d4dc-a3ba-6ef7c77b0000)) ⟨daily 2026-09-05⟩
+
 ## 2026-09-04 — Israel completes release of all five Lebanese detainees; Lebanon reciprocates with a civil-war remains search commitment
 
 - **The detainee release this thread logged as beginning 09-03 (Malek Ghazi, the first of five) completed 09-04: the remaining four were handed to Lebanese authorities via the ICC Red Cross on Friday.** AP frames it as a reciprocal arrangement — "In return, Lebanon agreed to search for the bodies of Jewish Lebanese citizens who went missing during the country's civil war decades ago" — a firmer, more explicit quid pro quo than the "linked to Beirut's help" framing this thread carried 09-03. All five released are described as civilians, none suspected of terrorist activity. Dozens more Lebanese detainees, including Hezbollah fighters captured in the fighting, remain held.

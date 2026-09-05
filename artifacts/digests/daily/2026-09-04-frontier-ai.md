@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-04
-status: building
+status: final
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-05T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-04
@@ -336,3 +336,108 @@ dedicated triage pass** was dispatched on that file alone. It returned
 **eight verified developments across seven threads** that nothing else in
 this run had found, including three in this digest. The lesson holds and
 now has a second data point: the fix is not a term, it is reading the file.
+
+## 🌙 Late catch — the 09-04 evening window (15:00 ET → 05:00 ET)
+
+*Swept on the 09-05 finalize. Events below are dated 2026-09-04 and belong
+to this digest-day; they landed after the 15:00 ET cut.*
+
+- **Anthropic's public IPO prospectus is no longer expected until late
+  September, with marketing from mid-October at the earliest and the
+  listing timed to close days before the November midterms** — a slip from
+  the "as early as the week after Labor Day" timing reported earlier on
+  09-04. Reuters (Echo Wang, 18:41 ET) also reports a **$15 billion
+  revolving credit facility** being finalized before the banker-led
+  analyst-meeting phase; sourcing is anonymous throughout, Anthropic and
+  the four lead banks declined comment, and the plans are described as
+  "subject to change." A direct EDGAR full-text search on the morning of
+  09-05 finds no S-1 or S-1/A for Anthropic.
+  ([CNBC, carrying Reuters](https://www.cnbc.com/2026/09/05/anthropic-ipo-launch-shifts-toward-mid-october-reuters.html), [Investing.com, carrying Reuters](https://www.investing.com/news/stock-market-news/exclusiveanthropic-ipo-launch-shifts-toward-midoctober-sources-say-4890091))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=capital -->
+- **The Seattle Times and Newsday sued OpenAI and Microsoft in the Southern
+  District of New York on Friday**, alleging the companies scraped their
+  journalism, including paywalled content, into training data for ChatGPT,
+  Copilot and Bing's AI features, and seeking destruction of any training
+  datasets and models incorporating the papers' work as well as damages.
+  The filing lands three days after the DOJ's fair-use statement of
+  interest and one day after OpenAI and Microsoft moved for summary
+  judgment against the existing News Plaintiffs in the consolidated MDL;
+  whether it is folded into MDL 1:25-md-03143 is not yet shown on the
+  docket.
+  ([AP, via Cyprus Mail](https://cyprus-mail.com/2026/09/05/us-newspapers-sue-openai-microsoft-alleging-copyright-infringement), [The Spokesman-Review](https://www.spokesman.com/stories/2026/sep/04/the-seattle-times-sues-openai-microsoft-over-copyr/))
+  <!-- k: t=anthropic-copyright-exposure e=openai,microsoft axis=legal -->
+- **Moonshot is now considering raising $3-5 billion in its Hong Kong IPO,
+  up from the roughly $3 billion reported on 09-03, has added Bank of
+  America as an overall coordinator alongside CICC, Deutsche Bank and
+  Goldman Sachs, and is separately sounding backers on a pre-IPO round at
+  a $50 billion pre-money valuation** — a step up from the $35 billion of
+  its August Series F. Bloomberg's own framing: "considerations are
+  ongoing and details such as size and timing could change." Reported at
+  13:52 ET, just before this window opened, and not on the record until
+  now.
+  ([Bloomberg, via Investing.com](https://ng.investing.com/news/stock-market-news/moonshot-ai-eyes-hong-kong-ipo-seeking-up-to-5-billion--bloomberg-93CH-2686043))
+  <!-- k: t=kimi-distillation-fight,frontier-lab-ipos e=moonshot-ai axis=capital -->
+- **OpenAI expanded GPT-6 Astra to all Pro, Enterprise and Business
+  Premium users in ChatGPT Work and Codex and made it available in the
+  API**, with Plus and Business Standard users getting limited usage and
+  paid overflow — the access expansion the 01:09 ET apology promised,
+  delivered the same day.
+  ([OpenAI on X](https://x.com/OpenAI/status/2095968413646737608), [9to5Mac](https://9to5mac.com/2026/09/04/openai-releasing-major-upgrade-to-chatgpt-and-codex-with-gpt-6-astra-details-here/))
+  <!-- k: t=enterprise-agent-product-race e=openai axis=product -->
+- **Nscale, an AI-compute provider, is seeking $3.5 billion in pre-IPO
+  financing, with Nvidia and Third Point named as targeted investors.**
+  No thread tracks Nscale; recorded as ambient in the neocloud-financing
+  bucket alongside CoreWeave and Crusoe.
+  ([TechCrunch](https://techcrunch.com/2026/09/04/ai-compute-provider-nscale-is-looking-for-3-5b-in-pre-ipo-financing/), [The Next Web](https://thenextweb.com/news/ai-cloud-firm-nscale-seeking-35b-pre-ipo-financing-from-nvidia-and-third-point))
+  <!-- k: t=coreweave-backlog-bet e=nvidia axis=capital -->
+
+**Also folded onto the record from this finalize, dated earlier:** the
+Sanders-Casar Ban Artificial Superintelligence Act (09-03) and Thinking
+Machines Lab's ~$1bn round at $40bn with Nvidia reportedly discussing $2.5bn
+(09-03) — both flagged by the 09-03 critic pass as sitting uncurated in the
+buffer, both still uncurated when this pass ran, both now in
+`2026-09-03-frontier-ai.md` and on their threads. Microsoft's
+MAI-Transcribe-2 (09-03) likewise. The "Concord II" music-copyright docket's
+09-02 status conference, read directly, ordered phased discovery and shows
+Dario Amodei and Benjamin Mann named personally there too — on
+`anthropic-copyright-exposure`.
+
+## 🔍 Coverage critic — digest-day 2026-09-04
+
+**Verdict:** four real misses, and the two that matter most are **repeats**:
+the Sanders-Casar superintelligence-ban bill and Thinking Machines Lab's
+funding round were both logged by the 09-03 critic as "buffer-present,
+dropped in curation," and both sat in the 09-04 buffer untouched a second
+day — five and six clean, term-matched hits respectively. The fix that was
+supposed to follow the 09-03 pass did not happen. Both are now curated (see
+above). The other two are collection gaps: OpenAI's bounded-prime-gaps
+result (Astra narrowing a prime-gap bound from 212 to 186, zero buffer hits
+for a second day — no term would ever catch a "model solved a pure-math
+problem" story) and a cross-model universal-jailbreak template from
+independent MATS/LessWrong research that only recent Anthropic models and
+Meta's Muse Spark 1.1 resisted (zero hits anywhere; no `jailbreak` term
+exists). The check was solid: three of four benchmarks published dated 09-04
+editions and were read in full.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| The Rundown AI | published, read in full | direct RSS, dated 09-04 edition |
+| TLDR AI | published, read in full | dated archive HTML, 09-04 |
+| The Neuron | published, read in full | `r.jina.ai` proxy, 09-04 |
+| The AI Daily Brief | **dark** | `/e/2026-09-04` and `/e/2026-09-05` both 404; 09-01 through 09-03 resolve — its third unexplained weekday gap |
+
+**Both covered:** Nvidia's Hugging Face acquisition, GPT-6 Astra, xAI's
+Grok Bot Enterprise, the multi-provider outage. **We had, they didn't:**
+the Artificial Analysis benchmark dispute, the DseWiki incident, the DOJ
+fair-use brief, Microsoft's Copilot discovery figures, the Long-Term Benefit
+Trust scrutiny, the summary-judgment cross-motions — none touched by the
+three published product newsletters. **A transcription oddity:** Rundown AI
+and TLDR AI both quote Astra's ARC-AGI-3 score as 99.9%, matching neither
+the 98.6% headline figure nor the 62.7% standard-harness figure.
+
+**Structural:** the split is even — two misses the map saw and dropped, two
+it never saw. The curation half is the one with a fix already written down
+(read the buffer, then notice when nobody has) and it failed on the same two
+items two days running; that is a process finding, not a term finding.
+**Proposed, not applied:** a `jailbreak` watchlist term — the critic itself
+called the case weak, and it is held here rather than added.

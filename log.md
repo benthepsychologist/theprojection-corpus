@@ -8271,3 +8271,147 @@ reading itself is `/week`'s to refresh, not `/daily`'s.
 `03_expectations` (2 hypothesis claims), `09_critic_annotations` (13
 process-only). `graph/validate.py`: **OK — 4,667 atoms, 2,967 sources, 7,568
 relationships, 1,190 annotations, 125 extraction_passes.**
+
+## 2026-09-05 ~11:00 ET (Saturday) — /daily: two critic-flagged misses sat uncurated a second day, the oil number was wrong for two days, and the critic opened a thread itself
+
+**Finalized 09-04 (all four lenses + front), opened 09-05.** The run
+started at 10:00 ET, five hours after the 09-04 digest-day closed, with all
+four news lanes and the fast lanes launched as separate processes with the
+right environment — the first run since 09-02 in which no collector lane
+died on configuration. Eight cluster sweeps over all 100 open threads, three
+coverage critics, a buffer-triage pass, a dedicated second pass on the
+late-landing `google_news_rss` file (6,444 rows, landed 14:25Z, twenty-five
+minutes after launch and after the first triage closed — third run running),
+and a main-session read of the `clinicaltrials` batch that landed after the
+evidence sweep and outside the triage list. **23 timeline entries merged
+across 19 threads from twelve staging files, zero deletions; two threads
+opened; seven dated expectations logged; one flipped that Friday's run had
+left pending.**
+
+**The news.** The envoys went: Witkoff and Kushner in Moscow Saturday, Kyiv
+Sunday, with the Kremlin announcing a three-day pause on Kyiv strikes from
+midnight and Russia hitting Kyiv's airports the night before it after
+rejecting Ukraine's ceasefire offer (`russia-ukraine-war`). The IRGC fired
+ballistic missiles at a US carrier and destroyer, both evaded, and CENTCOM
+disabled two IRGC crude carriers off Kharg Island and Jask and destroyed a
+third (`iran-conflict-widening` sev=major, `red-sea-oil-shock` with an
+interpretation written to the Tuesday-open gap). OpenAI admitted the DseWiki
+incident on X and pledged a misalignment-reporting framework "in upcoming
+weeks" (`openai-agent-security-incident`). From Friday evening: Anthropic's
+public S-1 slipping to late September with the $15bn revolver first; the
+Seattle Times and Newsday suing OpenAI/Microsoft; Moonshot's raise widening
+to $3-5bn; AB 1979 presented to Newsom; the JMIR home-tDCS meta-analysis;
+the Clancy mistrial; Friday's close with the semiconductor index +3.38% and
+all three averages down, 2yr 4.37% / 10yr 4.78% from Treasury's own CSV.
+
+**Three corrections, and what they have in common.**
+
+1. ✏️ **Two critic-flagged misses were still uncurated a day later.** The
+   09-04 critic pass logged the Sanders-Casar Ban Artificial
+   Superintelligence Act and Thinking Machines Lab's $40bn round as
+   "buffer-present, dropped in curation." The 09-04 run wrote that into
+   `coverage-log.md` and stopped. Today's critic found both still sitting in
+   the 09-04 buffer with clean term matches. Curated now, dated 09-03, from
+   the Senate press release and TechCrunch read directly. **A critic's flag
+   is not a curation** — the next brief carries a critic's open items as
+   assignments. Memory written.
+2. ✏️ **Friday's Brent figure was wrong on this map for two days.** The
+   macro sweep sourced a "$95.8-96.3 settlement band" from TradingEconomics
+   and Investrade; the 09-03 and 09-04 digests carried "$95-97, no new
+   driver." Reuters' settlement print, found by the second triage pass:
+   **$92.68, +0.8% on the day, +7.6% on the week — the steepest weekly gain
+   in months**, WTI +10%, US diesel a record $5.85/gal, on the Gulf-base
+   strikes, Ukrainian refinery hits and a Hormuz transit count of four
+   vessels on Thursday. Corrected in the 09-04 and 09-05 digests, the
+   staging entry and the interpretation sidecar; the earlier reads are
+   flagged as intraday-or-different-contract rather than silently replaced.
+3. ✏️ **The 09-04 clinical-trials verdict was half wrong**, the 09-03
+   failure on a smaller scale: two real registrations in a batch called
+   "routine," one of which matched only a single non-generic term. Rule
+   widened to the registry's own `conditions` field; today's 201-row batch
+   read that way (two real first postings, several real updates).
+
+The common shape: in each case the checkable source — the critic's list,
+the wire's "settled at" sentence, the registry record — existed and was one
+step further than the run went.
+
+**Two threads opened without Ben, both flagged loudly with "retire with a
+word."** `cross-border-rates` (global-capital, critic-add) after the sixth
+documented miss in the BOJ/JGB/carry-trade seam in nine days — Bloomberg's
+carry-trade-unwind lead in nine buffer rows — on AGENTS.md's "benchmark
+misses add threads without Ben" authority; the candidate had been offered
+09-02, 09-03 and 09-04. `yemen-civil-war` (world-news) under Ben's standing
+"all active military conflicts that are not hyper-local get coverage" rule,
+the way `israel-lebanon-escalation` was opened 08-07, once the Houthi
+offensive toward Mokha and Bab al-Mandab (120+ killed by Friday, 129 on Gulf
+News, sixty more Saturday) was corroborated across AFP, Arab News, Al
+Jazeera and Gulf News. Memory written.
+
+**Ledger.** `xai-mn-pi-ruling` flipped to hit (resolved 09-04; Friday's run
+logged the ruling and left the entry pending). `decart-acquisition-close`
+re-checked, still silent, grace to 09-07. Seven new: the envoys in Kyiv
+(09-06), the Kremlin pause holding (09-08), the Ratepayer Protection Act
+floor vote (week of 09-08, rumored), Concord II's case-management order
+(09-23, confirmed from the docket), OpenAI's framework (by 09-30),
+Anthropic's public S-1 (late September), US-China AI-safety talks
+(mid-September, Reuters exclusive Treasury says is not scheduled).
+
+**Map.** Watchlist: `carry trade`, `yen carry trade`, `carry trade unwind`,
+`transcranial direct current stimulation`, `tDCS` (all critic-add); held:
+`jailbreak`. Standing synthesis refreshed for `anthropic`, `openai`,
+`united-states`. Candidates carried: the Clancy case (third offer,
+deliberately — covered 08-12 and 08-21, offered twice, dropped by inaction;
+re-raised because the trial ended), Venezuela (second), Thinking Machines
+Lab as an entity, the ABA billing-fraud saga (second and final). Dropped
+after two offers: `anthropic-alignment-security-disclosure`, the release-
+cadence thread, Germany–Russia. Flash: none — the IRGC-on-US-Navy exchange
+is an escalation inside a six-month war, the same standard applied to the
+09-01 strike wave.
+
+**Tooling.**
+- ⛔ **BigQuery, third consecutive day.** `build-world-news` still fails on
+  the expired credential; only an interactive `gcloud auth login` clears it.
+- ✅ All lanes launched with `CLOUD_RESEARCHER_CORPUS` + `KESTREL_INSTANCE`
+  + `KESTREL_CONTACT_EMAIL` and landed. `sec_edgar` logged HTTP 500 on the
+  full-text endpoint for many terms yet wrote 428 rows; direct
+  `data.sec.gov` submission queries worked for twelve issuers. `gdelt`
+  capped to 8 terms, `openalex` 429s (both filed).
+- ⚠️ **The buffer-triage agent resumed itself** after the late lane landed
+  and rewrote its file after the merge had run — harmless because the merge
+  dir was marked done and the second pass covered the same file, and it
+  produced the Clancy catch; but an agent that re-writes a staging file
+  after merge is a hazard worth knowing about.
+- ⚠️ **A sweep agent identified itself to EDGAR with Ben's personal
+  mailbox** rather than `ben@getmensio.com`. Brief defect; fixed in the next
+  brief.
+- 📋 `clinicaltrials` lands ~20 minutes in, after the evidence sweep closes
+  — name it in the Z brief.
+- ✏️ The 09-03 `/daily` memory's "curl works on CourtListener" line is
+  wrong for the web UI (403s) and right for `storage.courtlistener.com` and
+  the v4 search API; the brief now says so.
+
+**Graph fed after the finalize:** `07_digest_bullets` (51 new S1, 1,490
+cross-posted merges), `06_timelines` (20 new S2, 637 bumped, 946
+ambiguous), `03_expectations` (7 hypothesis claims), `09_critic_annotations`
+(13 process-only). `graph/validate.py`: **OK — 4,745 atoms, 3,040 sources,
+7,749 relationships, 1,210 annotations, 126 extraction_passes.**
+
+**Published and closed.** `readouts --pack` × 4 (four sonnet briefing
+agents), `--apply` **4/4 after three mechanical repairs** — a `🤖` emoji
+outside the typed set on the front pack (twice: the first replace missed a
+lead item), one mental-health bullet at 232 characters, and the
+global-capital scope one link short of the floor (the two off-lens sections
+trimmed from 4+3 bullets to 2+2, which is the honest shape on a day when
+that pack carried no AI or mental-health items of its own). `--export` 154
+readouts. `kestrel publish --push`: 66 entity pages, 3 beat pages, 753
+claim pages, **1,122 story pages** (1,993 sources, 1,550 credibility-
+badged), 18 interpretation pages, 122 map pages, `data/readouts.json` at
+154, two new thread pages (`cross-border-rates`, `yemen-civil-war`).
+Cloudflare build `076b104c` queued. ⚠️ **The front-page audio briefing
+failed to generate** (`AttributeError: 'NoneType' object has no attribute
+'parts'`, skipped by the adapter) — the first audio failure since the audio
+step was added; yesterday's shipped. Not debugged this run; flagged for the
+next.
+
+Committed and pushed as the last act of the session, with this run's
+collector and publish provenance manifests.

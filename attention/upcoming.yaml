@@ -505,7 +505,6 @@ expectations:
     what_confirms: "a docket entry or order granting or denying the preliminary injunction; the law stays in force until one lands"
     logged: 2026-08-21
     logged_by: curate-add   # successor to xai-mn-preliminary-injunction
-    status: pending
     # ⚠️ THE DUE DATE IS INFERRED, NOT COURT-NAMED, and a miss is therefore
     # weak evidence of anything. Frank named no date — he said he would rule
     # "as soon as possible" from the bench on 08-19. 2026-09-19 is one month
@@ -516,7 +515,15 @@ expectations:
     # IN FORCE while the motion is pending (TRO denied 07-31, effective
     # 08-01), and the Trump DOJ filed a Statement of Interest backing xAI on
     # 2026-08-20 — the first federal-executive intervention on this thread., resolved hit 08-01
-    status: pending
+    # 2026-09-05 ⟨daily⟩: HIT, two weeks ahead of the inferred re-check date.
+    # Judge Frank DENIED the preliminary injunction on 2026-09-04 in a 14-page
+    # memorandum opinion (Doc. 54, X.AI LLC v. Ellison, No. 26-3425, D. Minn.),
+    # read from the RECAP PDF, not from coverage. The law stays enforceable
+    # through trial; a motion to dismiss xAI's suit remains pending. Logged on
+    # grok-companion-harm and in the 09-04 mental-health digest by the 09-04
+    # afternoon run, which did not flip this entry — flipped here.
+    status: hit
+    resolved: 2026-09-04
     # 2026-08-20 ⟨daily⟩: hearing HAPPENED on schedule, 2026-08-19 9:30am ET,
     # before Judge Donovan W. Frank (Warren E. Burger Federal Building, St.
     # Paul) — oral arguments heard, matter taken UNDER ADVISEMENT, no ruling
@@ -671,6 +678,10 @@ expectations:
     what_confirms: "deal closes and buyer is confirmed"
     logged: 2026-08-09
     logged_by: curate-add
+    # 2026-09-05 ⟨daily⟩: re-checked on the grace period's second day — no
+    # signing, termination or new date in any outlet; newest reporting is
+    # still Calcalist 08-16/17 ("nearing the signing stage", nothing
+    # signed). Grace runs to 09-07; stands passed-silent after that.
     # 2026-08-13 ⟨daily⟩: BUYER CORRECTED, not just updated. Two independent
     # lens agents (frontier-ai, global-capital) converged the same run on a
     # Bloomberg report naming ANTHROPIC, not SpaceX, as the party in talks to
@@ -2772,5 +2783,164 @@ expectations:
       itself the signal worth tracking on a memory maker testing capital
       markets mid-squeeze.
     logged: 2026-09-04
+    logged_by: curate-add
+    status: pending
+
+  - id: anthropic-public-s1-late-sept
+    claim: >
+      Anthropic's IPO prospectus becomes public in late September, with
+      marketing from mid-October at the earliest and the listing timed to
+      close days before the November midterms — a slip from the "as early
+      as the week after Labor Day" timing reported on 09-04
+    due: 2026-09-30
+    due_precision: week
+    thread: anthropic-ipo-timing
+    entities: [anthropic]
+    source: https://www.cnbc.com/2026/09/05/anthropic-ipo-launch-shifts-toward-mid-october-reuters.html
+    confidence: reported
+    what_confirms: >
+      a public S-1 on EDGAR (the successor entry anthropic-ipo-public-flip,
+      due 12-31, carries the listing itself). Reuters (Echo Wang, 09-04
+      18:41 ET) also reports a $15bn revolving credit facility being
+      finalized before the analyst-meeting phase; anonymous sourcing, plans
+      "subject to change." EDGAR full-text search on 09-05 morning: no S-1
+      or S-1/A for Anthropic.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: witkoff-kushner-kyiv-visit-0906
+    claim: >
+      Steve Witkoff and Jared Kushner visit Kyiv on Sunday 09-06 to meet
+      Zelensky — the first visit to Ukraine's capital by this
+      administration's envoys — after Saturday talks with Putin in Moscow
+    due: 2026-09-06
+    due_precision: day
+    thread: russia-ukraine-war
+    entities: [united-states]
+    source: https://unn.ua/en/news/putin-instructed-that-no-strikes-be-carried-out-against-kyiv-for-three-days-peskov
+    confidence: reported
+    what_confirms: >
+      the envoys physically in Kyiv on 09-06, from wire/AP/Kyiv Independent
+      reporting. Context: reported "in doubt" on 09-04 over Witkoff's
+      security concerns; the Kremlin announced a three-day pause on Kyiv
+      strikes from midnight 09-05/06 tied to the visit (see the companion
+      entry). A visit that slips a second time, or a Moscow leg without a
+      Kyiv leg, is the loud outcome.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: kremlin-kyiv-strike-pause-0908
+    claim: >
+      Russia carries out no strikes on Kyiv for three days from midnight
+      09-05/06 through the night of 09-07/08, per Peskov's statement that
+      Putin ordered the pause for the US envoys' visit
+    due: 2026-09-08
+    due_precision: day
+    thread: russia-ukraine-war
+    entities: [russia]
+    source: https://unn.ua/en/news/putin-instructed-that-no-strikes-be-carried-out-against-kyiv-for-three-days-peskov
+    confidence: reported
+    what_confirms: >
+      three consecutive nights with no reported strike on Kyiv city (the
+      order as stated covers Kyiv, not Ukraine — strikes elsewhere do not
+      break it). Checkable nightly from Kyiv Independent / Ukrinform / the
+      Kyiv military administration. Context: overnight 09-04/05, before
+      the pause took effect, Russia hit Kyiv's Zhulyany and Boryspil
+      airports in a 167-drone barrage after rejecting Ukraine's own
+      unilateral ceasefire offer. A strike on Kyiv inside the window is
+      the loud outcome; passed-silent here means the pause held.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: ratepayer-protection-act-floor-vote-0911
+    claim: >
+      The House votes on the bipartisan "Ratepayer Protection Act" (Evans
+      / Castor; 52-0 out of Energy and Commerce in July), which would push
+      states to make data centers and other large loads cover their own
+      grid-upgrade costs — targeted for the week after Labor Day
+    due: 2026-09-11
+    due_precision: week
+    thread: datacenter-backlash-capital-risk
+    entities: []
+    source: https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/
+    confidence: rumored
+    what_confirms: >
+      a floor vote (or a scheduled one on the Majority Leader's weekly
+      calendar). Roll Call (09-04) says House Republicans have no consensus
+      yet on timing or scope, the House is not in session after that week
+      except for a budget vote, and a companion water-cost bill is still at
+      discussion-draft stage after a 09-03 subcommittee hearing. A slip is
+      the likelier outcome and is itself the signal.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: openai-misalignment-reporting-framework
+    claim: >
+      OpenAI publishes the "framework for robust reporting of misalignment
+      incidents" it promised on 09-05 "in upcoming weeks," in its first
+      public acknowledgement of the DseWiki incident
+    due: 2026-09-30
+    due_precision: month
+    thread: openai-agent-security-incident
+    entities: [openai]
+    source: https://x.com/OpenAI/status/2096133504417616165
+    confidence: reported
+    what_confirms: >
+      a published framework document from OpenAI (blog post, system-card
+      section, or a standard filed with a regulator) — not a further
+      statement of intent. The X post says OpenAI is "collaborating with
+      dozens of government regulatory agencies worldwide" on it; no date
+      given, so the due date is a re-check trigger, not a company
+      commitment.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: concord-ii-coordination-order-0923
+    claim: >
+      The parties in the coordinated Anthropic music-copyright cases
+      ("Concord II," 5:26-cv-00880, N.D. Cal., Judge Eumi K. Lee) file the
+      proposed coordination / case-management order the court directed at
+      the 09-02 status conference, which adopted phased discovery
+    due: 2026-09-23
+    due_precision: day
+    thread: anthropic-copyright-exposure
+    entities: [anthropic]
+    source: https://www.courtlistener.com/docket/72199828/concord-music-group-inc-v-anthropic-pbc/
+    confidence: confirmed
+    what_confirms: >
+      the filing on the docket (read the docket, not coverage — no outlet
+      covered the status conference). Dario Amodei and Benjamin Mann are
+      named personally on this docket, so the order also sets the shape of
+      discovery against them.
+    logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: us-china-ai-safety-talks-mid-sept
+    claim: >
+      The US and China hold their first bilateral talks devoted to AI
+      safety of Trump's second term, in mid-September, led by Treasury
+      Secretary Bessent with Vice Premier He Lifeng the likely Chinese
+      lead, ahead of an expected Trump-Xi summit
+    due: 2026-09-18
+    due_precision: week
+    thread: china-stack-independence
+    entities: [scott-bessent]
+    source: https://www.cnbc.com/2026/09/05/us-china-gear-up-for-mid-september-ai-safety-talks-reuters.html
+    confidence: rumored
+    what_confirms: >
+      a dated meeting announced by either government, or the meeting
+      itself. Reuters' 09-04 exclusive is contested on its face: a Treasury
+      spokesperson told Reuters no meeting is currently scheduled and the
+      agenda and participants are unsettled. Reported agenda: a future
+      Chinese Mythos-class model's cyber capability, and US distillation
+      allegations against Chinese labs. Passed-silent here means Treasury's
+      denial held, which is itself the finding.
+    logged: 2026-09-05
     logged_by: curate-add
     status: pending

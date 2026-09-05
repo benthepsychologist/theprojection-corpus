@@ -281,6 +281,49 @@ to this digest-day; they landed after the 15:30 ET cut.*
   on the compute-and-national-labs side.
   <!-- k: t=genesis-mission axis=policy -->
 
+*Added on the 09-05 finalize — three items dated 09-03 that the 09-04
+critic pass established as sitting uncurated in the buffer, and that the
+09-04 run then left uncurated a second day:*
+
+- **Senator Bernie Sanders and Representative Greg Casar announced the Ban
+  Artificial Superintelligence Act — forthcoming legislation that would
+  permanently prohibit developing or deploying AI that surpasses human
+  intelligence, can overthrow human governments or can subvert shutdown
+  commands, and would pause advanced AI development until a new
+  cabinet-level federal AI agency has written safety rules and a
+  model-review process.** Penalties of up to 20 years in prison for
+  individuals and a "corporate death penalty" for entities; the agency
+  would "supervise the destruction of artificial superintelligence"; US
+  foreign policy would be directed toward international agreements and
+  export controls against superintelligence anywhere. The release cites the
+  July OpenAI agent breakout, the Hugging Face breach and the labs'
+  acknowledged loss-of-control incidents, and quotes their own prior pause
+  commitments back at them. The opposite pole from the FINRA-style
+  self-regulatory body the administration has floated: statute and a new
+  agency, from the left, with no bill number or committee referral yet.
+  ([Office of Sen. Sanders](https://www.sanders.senate.gov/press-releases/news-sanders-casar-introduce-legislation-to-ban-artificial-superintelligence-and-temporarily-pause-advanced-ai-development/), [bill summary](https://www.sanders.senate.gov/wp-content/uploads/Ban-Artificial-Superintelligence-Act-Release-Summary.pdf))
+  <!-- k: t=frontier-model-gov-review-precedent axis=policy -->
+- **Mira Murati's Thinking Machines Lab is in talks to raise roughly $1
+  billion at a $40 billion valuation, with Accel in discussions to lead**,
+  per TechCrunch's own source and The Information — below the $50 billion
+  reportedly sought earlier in the summer. The Information separately
+  reported Nvidia discussing an investment of around $2.5 billion, which
+  would be Nvidia's latest direct equity stake in a model lab in the week
+  that put its Hugging Face acquisition and a $99 billion investment
+  portfolio on the record.
+  ([TechCrunch](https://techcrunch.com/2026/09/03/accel-reportedly-in-talks-to-lead-1b-round-for-thinking-machines-at-40b-valuation/))
+  <!-- k: t=nvidia-vendor-financing,ai-circular-financing-risk e=nvidia axis=capital -->
+- **Microsoft AI released MAI-Transcribe-2, an in-house speech-recognition
+  model it says beats OpenAI's, Google's and ElevenLabs' equivalents on
+  speed at $0.10 per audio hour** — a 72% cut from its predecessor five
+  months earlier, 60 languages, diarization and word-level timestamps. Its
+  second domain-specific model after MAI-Cyber-1-Flash: narrow in-house
+  models to compete in verticals rather than at the general frontier.
+  ⚠️ Microsoft's own post could not be opened; figures from secondary
+  coverage; release date 09-03 or 09-04.
+  ([Neowin](https://www.neowin.net/news/microsofts-mai-transcribe-2-model-beats-openai-and-google-while-costing-just-010-per-hour/), [Unite.AI](https://www.unite.ai/mai-transcribe-2-tops-fleurs-benchmark-across-60-languages-microsoft-says/))
+  <!-- k: t=microsoft-mai-openai-decoupling e=microsoft axis=product -->
+
 ## 🔍 Coverage critic — digest-day 2026-09-03
 
 **Verdict:** five real misses, three of them clean curation failures against

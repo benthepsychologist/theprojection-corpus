@@ -500,6 +500,13 @@ lenses:
       # this map tracks by bill number only. A number-only term set misses
       # every story that uses the name — and on 09-03 most of them did.
       - "Adam's Law"
+      # critic-add 2026-09-05 (mental-health coverage critic, digest-day
+      # 09-04): a JMIR Mental Health meta-analysis on home-based tDCS for
+      # depression landed in the buffer with `terms_matched: []` — the
+      # neuromodulation-evidence thread anchors on SAINT/TMS vocabulary and
+      # its second modality had no term coverage at all.
+      - "transcranial direct current stimulation"
+      - "tDCS"
 
     # Health-condition / intervention strings for ClinicalTrials.gov (mh lens only)
     conditions:
@@ -734,6 +741,16 @@ lenses:
       - "JGB"
       - "Bank of Japan rate hike"
       - "yen intervention"
+      # critic-add 2026-09-05 (global-capital coverage critic, digest-day
+      # 09-04): Bloomberg led 09-04 with a carry-trade unwind pushing the yen
+      # to a one-month high into the 09-18 BOJ decision — nine buffer rows,
+      # none curated. The sixth documented miss in the cross-border-rates
+      # seam; the FX/carry angle is a distinct failure mode from the
+      # yield-level terms above. Thread `cross-border-rates` opened the
+      # same pass.
+      - "carry trade"
+      - "yen carry trade"
+      - "carry trade unwind"
       # critic-add 2026-09-03 (global-capital coverage critic, digest-day
       # 09-02): FT Unhedged led 09-02 with "France's debt crisis-in-waiting"
       # (10-year OAT-Bund spread ~85bp, 30-year OATs near 4.9%, a draft

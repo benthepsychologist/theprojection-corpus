@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-09-04
-status: building
+status: final
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T15:00:00-04:00
+as_of: 2026-09-05T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -190,3 +190,46 @@ one day old now rather than seventeen, and the difference matters only if
 it is fixed promptly.
 
 The general front-page scan ran and found nothing at flash level.
+
+## 🌙 Late catch — the 09-04 evening window (15:00 ET → 05:00 ET)
+
+*Swept on the 09-05 finalize. Events below are dated 2026-09-04 and belong
+to this digest-day; they landed after the 15:00 ET cut.*
+
+- **Hours after reports that South Korea was making "concrete
+  preparations" for a Hormuz deployment, a presidential official told
+  Al-Monitor "nothing has been decided" and specifically denied the two
+  most concrete claims — that a deployment before year-end was settled and
+  that a parliamentary consent motion would be sought this month.** Seoul
+  still has to clear domestic legal procedure, assess readiness on the
+  peninsula and secure National Assembly approval; President Lee might raise
+  it with Macron the following week. What stands is preparation and review,
+  not an in-motion deployment timeline, and the bullet above should be read
+  with that correction attached.
+  ([Al-Monitor](https://www.al-monitor.com/originals/2026/09/south-korea-reviewing-military-options-hormuz-no-decision-made-official-says))
+  <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=south-korea axis=military -->
+- **Overnight into 09-05, Russia struck Kyiv's own airports — Zhulyany and
+  Boryspil — in a barrage of ballistic missiles and 167 drones across 23
+  locations, after rejecting Ukraine's unilateral offer of a halt to
+  hostilities for the envoys' visit.** Zelensky called the airport strikes
+  "deliberate... for the first time in a long while," tying the target
+  choice to discussion of where the US envoys might land. At least seven
+  killed nationwide (five in Kamianske, Dnipropetrovsk Oblast; two in
+  Kherson Oblast) and 51 injured. Dated to the night of 09-04/05; the
+  envoys' arrival in Moscow and the Kremlin's announced pause belong to
+  09-05 and are in that day's digest.
+  ([Kyiv Independent — airports](https://kyivindependent.com/russia-deliberately-targeted-kyiv-boryspil-airports-ahead-of-u-s-envoys-visit-zelensky-says/), [Kyiv Independent — casualties](https://kyivindependent.com/russian-attacks-kill-6-injure-51-over-past-day-across-ukraine-as-moscow-rejects-ceasefire/))
+  <!-- k: t=russia-ukraine-war e=russia axis=military -->
+- **Hezbollah launched an explosive drone at Israeli forces in the
+  south-Lebanon buffer zone on Friday night; it was shot down with no
+  injuries, and the IDF struck five locations across Tyre, Nabatieh and the
+  Beqaa, killing at least three Lebanese civilians and wounding 15**,
+  including two children and six rescuers. Defence Minister Katz repeated
+  that Israel will not withdraw from the zone until Hezbollah is disarmed.
+  A new flare-up two days after the detainee release and remains-search
+  exchange. Dated to the night of 09-04/05.
+  ([Times of Israel](https://www.timesofisrael.com/3-said-killed-in-idf-strikes-in-lebanon-after-hezbollah-drone-attack-on-troops), [JNS](https://www.jns.org/news/israel-news/idf-hits-hezbollah-terrorists-infrastructure-after-drone-launched-at-soldiers))
+  <!-- k: t=israel-lebanon-escalation e=israel axis=military -->
+
+*This lens carries no benchmark critic by design; the general front-page
+scan on the 09-05 run found nothing dated 09-04 at flash level.*

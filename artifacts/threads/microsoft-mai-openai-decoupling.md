@@ -12,6 +12,10 @@ opened: 2026-06-28
 MSFT–OpenAI commercial terms; genuine independence vs. hedge (Microsoft
 still holds ~27%/$135B of OpenAI and embeds Claude in Copilot).
 
+## 2026-09-03 — Microsoft ships MAI-Transcribe-2, a second vertical in-house model undercutting OpenAI/Google/ElevenLabs
+
+- **Microsoft AI released MAI-Transcribe-2, an in-house speech-recognition model it says beats OpenAI's GPT-Transcribe, Google's Gemini 3.5 Transcribe and ElevenLabs' Scribe v2 on speed while costing $0.10 per audio hour** — a 72% cut from the $0.36/hour of the prior MAI-Transcribe-1 (five months earlier), covering 60 languages (up from 43), with diarization, word-level timestamps and code-switching support. It is Microsoft AI's second domain-specific model after MAI-Cyber-1-Flash (07-27): narrow in-house models built to compete with OpenAI and Google in specific verticals rather than at the general frontier. ⚠️ Microsoft's own announcement could not be opened (its newsroom refuses automated fetches); the figures come from secondary coverage, and the exact release date is 09-03 or 09-04. ([Neowin](https://www.neowin.net/news/microsofts-mai-transcribe-2-model-beats-openai-and-google-while-costing-just-010-per-hour/), [Unite.AI](https://www.unite.ai/mai-transcribe-2-tops-fleurs-benchmark-across-60-languages-microsoft-says/)) ⟨daily 2026-09-05⟩
+
 ## 2026-08-27 — Microsoft's superintelligence lead publicly frames the unit's direction as AI self-sufficiency (single-sourced)
 
 - **Ali Farhadi, the executive Microsoft installed under Mustafa Suleyman to lead its superintelligence effort, is quoted pointing the company toward AI self-sufficiency** — directly on this thread's central question (how far in-house MAI models displace OpenAI dependence). ⚠️ Only one outlet found covering this specific framing (GeekWire); treat as a single-source data point pending wider pickup, not a confirmed strategic pivot. ([GeekWire](https://www.geekwire.com/)) ⟨daily 2026-08-31⟩

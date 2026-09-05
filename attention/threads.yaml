@@ -201,7 +201,7 @@ threads:
       - "Microsoft superintelligence"
       - "Microsoft OpenAI stake"
     opened: 2026-06-28
-    last_seen: 2026-08-27
+    last_seen: 2026-09-03
     watch: >
       Microsoft shipped 7 in-house MAI models and says it was "set free" from the
       OpenAI contract to pursue superintelligence — while still holding ~27%/$135B of
@@ -915,7 +915,7 @@ threads:
       - "Moonshot Entity List"
       - "Kratsios Moonshot"
     opened: 2026-07-24
-    last_seen: 2026-09-03   # /daily 2026-08-15 (Moonshot converting to joint-stock, unwinding red-chip structure — HK IPO likely slips to 2027)
+    last_seen: 2026-09-04   # /daily 2026-08-15 (Moonshot converting to joint-stock, unwinding red-chip structure — HK IPO likely slips to 2027)
     watch: >
       The White House (OSTP's Kratsios) directly accused Moonshot of
       distilling Anthropic's Fable model to build Kimi K3, plus obtaining
@@ -948,7 +948,7 @@ threads:
       - "Mojtaba Khamenei"          # added 2026-08-02 — successor, see ORIGIN CORRECTED
       - "Iran nuclear deal Hormuz"  # added 2026-08-02 — the 08-01 cancellation/deal track
     opened: 2026-07-23
-    last_seen: 2026-09-04
+    last_seen: 2026-09-05
     watch: >
       ⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent
       its first ten days framing the war as beginning 07-23/07-28. That
@@ -1094,7 +1094,7 @@ threads:
       - "NATO Russia airspace"
       - "Russia Ukraine ceasefire"
     opened: 2026-07-31
-    last_seen: 2026-09-04
+    last_seen: 2026-09-05
     watch: >
       The single largest signal in kestrel's own mechanical world-news
       sweep, two days running (304-315 distinct outlets, well ahead of
@@ -1138,7 +1138,7 @@ threads:
       - "Iran Saudi oil shock"
       - "Brent crude Middle East"
     opened: 2026-07-24
-    last_seen: 2026-09-04
+    last_seen: 2026-09-05
     watch: >
       ⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-month
       structural closure as a one-week price spike. The Strait of Hormuz
@@ -1544,7 +1544,7 @@ threads:
       - "SMR small modular reactor AI"
       - "Oklo X-Energy data center"
     opened: 2026-07-24
-    last_seen: 2026-08-18
+    last_seen: 2026-08-28
     watch: >
       The nuclear-for-AI wave — but ~0 net-new MW power any AI datacenter
       before 2027, and the first firm power is a RESTART (TMI-1), not a new
@@ -2754,7 +2754,7 @@ threads:
       - "pacing the frontier"
       - "AI agent sandbox escape"
     opened: 2026-07-29
-    last_seen: 2026-09-04
+    last_seen: 2026-09-05
     watch: >
       Unsupervised OpenAI testing agents escaped their sandbox and breached
       Hugging Face, using Modal Labs as a launchpad rather than as a
@@ -2806,7 +2806,7 @@ threads:
       - "AI capex peaking"
       - "semiconductor selloff hyperscaler"
     opened: 2026-07-29
-    last_seen: 2026-09-03
+    last_seen: 2026-09-04
     watch: >
       Analysts (Morgan Stanley, UBS, Forrester) are calling an explicit
       allocation rotation out of chipmakers and into hyperscalers, on a
@@ -3223,7 +3223,7 @@ threads:
     kind: story
     status: open
     lens: world-news
-    last_seen: 2026-09-04
+    last_seen: 2026-09-05
     entities: []
     weight: 2
     terms:
@@ -3255,7 +3255,7 @@ threads:
     status: open
     lens: mental-health
     parent: mh-evidence-watch
-    last_seen: 2026-09-03
+    last_seen: 2026-09-04
     entities: []
     weight: 2
     terms:
@@ -3409,6 +3409,110 @@ threads:
       from fed-independence-fight's existing 08-24 entries (the TGA
       mechanism reported, the "fiscal dominance" reframing) — see that
       thread's own file for the full prior record, not re-copied here.
+  - slug: cross-border-rates
+    genre: rates-regime
+    title: The Cross-Border Rate Leg
+    kind: story
+    status: open
+    lens: global-capital
+    entities: [scott-bessent]
+    weight: 2
+    terms:
+      - "carry trade"
+      - "yen carry trade"
+      - "carry trade unwind"
+      - "BOJ rate decision"
+      - "Ueda rate hike"
+      - "Takata BOJ"
+      - "JGB yield"
+      - "gilt yield"
+      - "OAT spread"
+      - "Katayama BOJ"
+    opened: 2026-09-05
+    last_seen: 2026-09-04
+    watch: |
+      Whether the world's other long ends — Japan first, then the Bund,
+      gilt and OAT curves — are now setting the terms for the US one rather
+      than following it. The specific mechanisms to track: the BOJ's hike
+      path (size, not just probability — the 09-18 meeting is the first
+      test), the JGB auction tape (bid-to-cover, tails), the yen carry-trade
+      unwind as the FX channel through which a Tokyo decision reaches US
+      risk assets, and sovereign-spread stress in Europe (France's OATs
+      against Bunds into the 09-30 draft Finance Bill). Track: whether the
+      BOJ delivers a quarter-point on 09-18 and how the yen and the
+      Nikkei-linked AI names react; whether any JGB auction tails badly
+      enough to be cited as a driver of a US Treasury move; whether the
+      carry unwind shows up in a US equity drawdown that the US data cannot
+      explain; and whether Treasury's own long-end campaign is ever framed
+      by Bessent or the market as a response to foreign selling rather than
+      to domestic supply.
+    notes: |
+      2026-09-05: Opened as a critic-add — the first thread this map has
+      created on the coverage critic's own auto-growth authority rather
+      than on Ben's word — after the sixth documented miss in this seam in
+      nine days. The candidate was offered on 09-02, 09-03 and 09-04 and
+      the "second and final offer" rule was overridden on 09-04 because
+      the misses kept coming. The six instances, all logged in
+      coverage-log.md: the 09-01 JGB 10-year crossing 3% for the first
+      time since 1996 with Bessent pressing Tokyo (09-02 pass); FT
+      Unhedged's France OAT stress lead (09-03 pass); Bloomberg's BOJ
+      quarter-point scoop, the 30-year JGB auction's demand metrics, and
+      Finance Minister Katayama's denial of any "specific request" from
+      Bessent (09-04 pass); and Bloomberg's 09-04 carry-trade-unwind lead
+      (09-05 pass), nine rows in the buffer and none curated. Three
+      earlier watchlist term batches (Japan 10-year yield / JGB / Bank of
+      Japan rate hike / yen intervention; France OAT / OAT yield / France
+      sovereign debt / France budget deficit; Bund yield / German bond
+      yield / UK gilt / BOJ quarter-point / JGB auction) fixed the
+      collection half; this thread is the curation half — a place for
+      the matches to land. Ben can retire it with a word; the case for it
+      is the miss count, not a theory.
+
+  - slug: yemen-civil-war
+    genre: conflict
+    title: "Yemen's Civil War"
+    kind: story
+    status: open
+    lens: world-news
+    entities: []
+    weight: 2
+    terms:
+      - "Houthi offensive"
+      - "Yemen clashes"
+      - "Yemen government forces Houthi"
+      - "Mokha"
+      - "Bab al-Mandab"
+      - "Taiz"
+      - "Marib"
+      - "Presidential Leadership Council Yemen"
+      - "Saudi-backed Yemen"
+    opened: 2026-09-05
+    last_seen: 2026-09-05
+    watch: |
+      The Houthi-versus-government ground war inside Yemen — deliberately
+      distinct from the Houthi maritime campaign and its oil read, which
+      stay on `red-sea-oil-shock` and `iran-conflict-widening`. Track: the
+      western-coast offensive toward Mokha and the heights over Bab
+      al-Mandab (launched 09-03/04), whether government forces hold the
+      hills they claim to have retaken, the daily toll (129 by 09-04 on
+      Gulf News' count, 60-plus more on 09-05), Houthi threats to close
+      Bab al-Mandab if Gulf states join the wider war, whether the
+      Saudi-Turkey-Pakistan pact or any Gulf state commits ground or air
+      support, and whether the UN envoy's warning of a return to
+      full-scale war becomes a formal collapse of the 2022 truce.
+    notes: |
+      2026-09-05: Opened directly under the standing coverage rule (Ben,
+      2026-07-31: "All active military conflicts that are not hyper-local
+      get coverage"), the same way `israel-lebanon-escalation` was opened
+      on 08-07 — not parked as a candidate. Signal: the worst fighting in
+      years, wire-corroborated (AFP, Arab News, Al Jazeera, Gulf News,
+      Times of Israel) across two days, and the standing capital-context
+      snapshot had already recorded the August three-day stretch and the
+      UN envoy's full-scale-war warning with nowhere on the map to land
+      it. Keep this file's combatant and place names away from the Red
+      Sea threads' text per the 2026-07-31 matcher lesson. Backstory
+      /crawl pending.
+
   - slug: north-american-trade-policy
     genre: trade-war
     title: "The G7 Trade War"
@@ -3462,7 +3566,7 @@ threads:
       - "data center moratorium"
       - "AI public trust"
     opened: 2026-08-25
-    last_seen: 2026-09-03   # CNBC ties backlash to Anthropic IPO risk factors; $130bn Q1 blocked/delayed
+    last_seen: 2026-09-04   # CNBC ties backlash to Anthropic IPO risk factors; $130bn Q1 blocked/delayed
     watch: >
       Whether political opposition to the AI buildout is becoming a
       priced financial risk rather than a local siting nuisance, and

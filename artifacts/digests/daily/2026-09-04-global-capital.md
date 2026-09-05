@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-04
-status: building
+status: final
 window_start: 2026-09-04T05:00:00-04:00
-as_of: 2026-09-04T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-05T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-04
@@ -346,3 +346,104 @@ morning's 7,812 rows were read in full by two independent passes.
 credential expired one day after being restored, and only an interactive
 `gcloud auth login` can fix it. Today's world-news pool is yesterday's
 build.
+
+## 🌙 Late catch — the 09-04 evening window (15:00 ET → 05:00 ET)
+
+*Swept on the 09-05 finalize. Events below are dated 2026-09-04 and belong
+to this digest-day; they landed after the 15:00 ET cut — including the
+close this digest deferred.*
+
+- **Friday's chip-vs-tech decoupling survived the full session and shows
+  up in the closing tape.** The PHLX Semiconductor Index closed **+3.38% at
+  11,735.26** while the S&P 500 (**7,718.60, -0.38%**), the Nasdaq
+  Composite (**26,506.99, -0.29%**) and the Dow (**53,414.25, -0.51%**) all
+  finished lower on the hot payrolls print. Rate-sensitivity logic said the
+  high-multiple chip names should have been hit hardest by a hawkish
+  repricing; at the close they were the only part of the tape that was up.
+  ⚠️ Individual Intel, AMD and Nvidia closes are not stated because no
+  closing-price page could be opened; the 11:12 ET intraday reads above are
+  the last figures on record.
+  ([TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/markets-news-sept-4-2026-105243532.html))
+  <!-- k: t=chip-hyperscaler-rotation,ai-trade-bear-turn e=nvidia axis=equities -->
+- **The yen strengthened into the 155-per-dollar range on 09-04, from
+  around 157 the day before, on speculation that the Bank of Japan will
+  hike faster than expected on 09-18 and that yen-funded carry trades are
+  being unwound.** Bloomberg led with "Carry Trade Exodus Fuels Yen Surge
+  Ahead of BOJ Rate Decision," citing Governor Ueda's "every meeting"
+  language and board member Takata's hawkish remarks, with Nomura sketching
+  an "extreme scenario" of three consecutive hikes through December; Nikkei
+  Asia read a rare August meeting of Japan's public pension fund as a
+  signal of more yen-asset buying. The 10-year JGB sat above 3%. **This is
+  the sixth documented miss in the cross-border-rates seam in nine days,
+  and this pass opened a thread for it** (see the critic section and Map
+  changes). The last comparable unwind, in August 2024, took the Nikkei
+  down 12% in a day and the S&P 500 down 3% before the BOJ walked back its
+  guidance.
+  ([Nikkei Asia](https://asia.nikkei.com/business/markets/currencies/speculation-of-carry-trade-reversal-as-yen-strengthens-to-155-range), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-04/carry-trade-exodus-fuels-yen-surge-ahead-of-boj-rate-decision))
+  <!-- k: t=cross-border-rates e=scott-bessent axis=rates interp=yes -->
+- **Anthropic's public IPO prospectus is no longer expected until late
+  September, with marketing from mid-October at the earliest and the
+  listing timed to close days before the November midterms**, per Reuters
+  on Friday evening — a slip from the post-Labor Day timing reported that
+  morning — and the company is finalizing a **$15 billion revolving credit
+  facility** before the analyst-meeting phase. Anonymous sourcing; the four
+  lead banks declined comment; no S-1 on EDGAR as of 09-05 morning.
+  ([CNBC, carrying Reuters](https://www.cnbc.com/2026/09/05/anthropic-ipo-launch-shifts-toward-mid-october-reuters.html))
+  <!-- k: t=anthropic-ipo-timing,frontier-lab-ipos e=anthropic axis=capital -->
+- **SpaceXAI is offering Memphis and Southaven residents 50% off Starlink
+  and a waived $349 hardware fee as a goodwill gesture amid the turbine
+  backlash — about 2,000 sign-ups since late June — and House Republicans
+  are still negotiating whether to bring the bipartisan Ratepayer
+  Protection Act (52-0 out of committee in July) to the floor the week
+  after Labor Day.** The Southern Environmental Law Center's response to
+  the discount: communities "aren't asking for discounted internet
+  service. They're asking xAI to shut down its illegal, unpermitted power
+  plant." Both reported the morning of 09-04 and not on the record until
+  now.
+  ([Tom's Hardware](https://www.tomshardware.com/service-providers/network-providers/over-2-000-subscribers-grab-discounted-starlink-plans-in-tennessee-and-mississippi-spacexai-offers-50-percent-off-for-people-living-near-its-data-centers-and-other-developments), [Roll Call](https://rollcall.com/2026/09/04/gop-consensus-elusive-on-timing-scope-of-data-centers-bill/))
+  <!-- k: t=datacenter-backlash-capital-risk,datacenter-power-grid e=spacex axis=policy -->
+
+**📊 Macro strip, at the close** — **S&P 500** 7,718.60 (-0.38%) ·
+**Nasdaq Composite** 26,506.99 (-0.29%) · **Dow** 53,414.25 (-0.51%) ·
+**SOX** 11,735.26 (+3.38%) · **2-year** 4.37% · **10-year** 4.78% (Treasury
+daily par yield curve, both up on the day) · **Dollar index** ~99.15
+(+0.25-0.3%) · **Brent** settled at **$92.68** (+0.8% on the day, **+7.6% on the week**, Reuters), **WTI** $91.48 (+10% on the week), US diesel a record $5.85/gal (AAA) — ⚠️ the $95-97 "no new driver" read carried above from secondary outlets does not reconcile with the settlement print and should be read as intraday or a different contract · **Sept hike odds** 58-65% at the close depending on
+the tracker (Yahoo Finance 58%, TheStreet 60.2%, Investrade 65% — the live
+CME tool cannot be snapshotted after the fact, so the spread is reported
+rather than one number) · **Yen** 155 range, one-month high.
+
+## 🔍 Coverage critic — digest-day 2026-09-04
+
+**Verdict:** one real miss, and it is the **sixth** documented instance of
+the cross-border-rates seam, not the fifth this digest's thread-candidate
+section said: Bloomberg's 09-04 carry-trade-unwind lead, corroborated by an
+eight-outlet same-day cluster, sitting in **nine rows** of the very buffer
+file the collection note above describes as "read in full by two independent
+passes." A collection success and a curation miss. **Acted on:** the thread
+`cross-border-rates` is opened as a critic-add — the first thread this map
+has created on the critic's own auto-growth authority rather than on Ben's
+word — with the terms `carry trade`, `yen carry trade` and `carry trade
+unwind` added; `yen intervention`, which the critic also proposed, was
+already on the list. The check itself was weak on the benchmark side: Money
+Stuff had no Friday edition, FT Unhedged published but is paywalled past a
+headline that does not overlap this map, and the two same-day-only pages
+cannot be audited a day late. The miss came from a direct Reuters/Bloomberg
+headline sweep, not from the benchmark set — the fourth pass running in
+which the strongest finding came from outside the benchmarks.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| Money Stuff | **dark** for 09-04 | `.rss` feed's newest item is 09-03 18:24 GMT ("The Clippers Got Some Consulting") |
+| FT Unhedged | published, paywalled | "More stock ownership, weaker monetary policy?" 09-04 05:30 GMT — body not reachable via the reader proxy |
+| Axios Pro Rata | same-day-only | not auditable a day late |
+| Bloomberg Technology | same-day-only | not auditable a day late |
+
+**Both covered:** none confirmable given the reachability. **We had, they
+didn't:** payrolls with the revision, SoftBank's bond, ByteDance's loan,
+Norway's benchmark proposal, Trump's post, the chip decoupling — none
+carried by any benchmark reachable this pass.
+
+**Structural:** the wire-service backstop proposal stands and gains another
+instance (two of four benchmarks structurally unauditable a day late, a
+third silent). The cross-border seam's count is now six; the candidate is no
+longer a candidate.

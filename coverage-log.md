@@ -5676,3 +5676,104 @@ the information actually is); `Adam's Law`; `automated shutdown`. Three
 thread candidates carried to Ben, one of them —
 `anthropic-alignment-security-disclosure` — argued for by the frontier-AI
 critic as a structural hole rather than a one-day miss.
+
+## 2026-09-05 critic pass — finalized digest-day 2026-09-04. Seven misses across three lenses, two of them the same two items missed the day before, and the first thread this map opened on the critic's own authority
+
+**Shape of the pass.** Three critics, one per benchmarked lens, run on a
+Saturday morning against Friday's editions. Check strength split cleanly by
+lens: **strong** on frontier-AI (three of four benchmarks published dated
+09-04 editions and were read in full; The AI Daily Brief dark for a third
+unexplained weekday), **weak** on global-capital (Money Stuff had no Friday
+edition; FT Unhedged paywalled past a non-overlapping headline; Axios Pro
+Rata and Bloomberg Technology same-day-only, structurally unauditable a day
+late), and **split** on mental-health (trade press close to a null result —
+Behavioral Health Business dark by its own `lastBuildDate`, STAT Health Tech
+revealed as a Tuesday/Thursday newsletter — while the ClinicalTrials.gov
+spot-check did real independent verification).
+
+### frontier-ai / 2026-09-04
+- **Missed twice (curation, buffer-present, REPEAT of the 09-04 pass):**
+  the **Sanders-Casar Ban Artificial Superintelligence Act** (09-03; five
+  term-matched buffer rows) and **Thinking Machines Lab's ~$1bn round at
+  $40bn with Nvidia discussing $2.5bn** (09-03; six rows). Both were logged
+  on the 09-04 pass as "buffer-present, dropped in curation." Both sat in
+  the 09-04 buffer untouched a second day. **The 09-03 rule — read the
+  buffer, then notice when nobody has — was followed and still failed on
+  these two: the critic noticed, and nobody acted on the critic.** Curated
+  this pass into `2026-09-03-frontier-ai.md`, `frontier-model-gov-review-
+  precedent` and `nvidia-vendor-financing`, from the Senate press release
+  and TechCrunch read directly.
+- **Missed (collection, second day):** OpenAI's **bounded-prime-gaps**
+  result (Astra narrowing a bound from 212 to 186) — zero buffer hits again;
+  no term would catch a "model solved a pure-math problem" story.
+- **Missed (collection, weak):** a **cross-model universal-jailbreak**
+  template from MATS/LessWrong research, 84-100% of vulnerable models,
+  resisted only by recent Anthropic models and Muse Spark 1.1. Zero hits
+  anywhere; no `jailbreak` term. Proposed and **held**, not added — the
+  critic's own case was weak.
+- **Both covered:** Nvidia/Hugging Face, Astra, Grok Bot Enterprise, the
+  multi-provider outage. **We had, they didn't:** the whole governance and
+  legal column. **Oddity:** two benchmarks quote Astra's ARC-AGI-3 score as
+  99.9%, matching neither figure this map carries.
+
+### global-capital / 2026-09-04
+- **Missed (curation, collector-caught): Bloomberg's "Carry Trade Exodus
+  Fuels Yen Surge Ahead of BOJ Rate Decision"** — yen at a one-month high
+  in the 155 range, carry positions unwinding into 09-18, Nomura's
+  three-hike "extreme scenario" — corroborated by an eight-outlet same-day
+  cluster and sitting in **nine rows** of `buffer/2026-09-04-google_news_
+  rss.jsonl`, the file the 09-04 collection note says was "read in full by
+  two independent passes." **Sixth documented instance of the cross-border-
+  rates seam** (09-01 JGB 3% + Bessent pressure; 09-02 France OAT stress;
+  09-03 BOJ quarter-point scoop, JGB auction demand, Katayama's denial;
+  09-04 carry unwind). The 09-04 digest's own candidate write-up said five.
+- **Acted on — thread `cross-border-rates` opened as a critic-add.** The
+  candidate was offered 09-02, 09-03 and 09-04; the "second and final
+  offer" rule was already overridden on 09-04 because the misses kept
+  coming; AGENTS.md's growth mechanics say benchmark misses add threads
+  without Ben. This is the first thread this map has created that way.
+  Terms `carry trade`, `yen carry trade`, `carry trade unwind` added
+  (`yen intervention`, also proposed, was already on the list). Ben can
+  retire it with a word; the case is the count.
+- **Check strength: weak on benchmarks, and for the fourth pass running the
+  finding came from outside them.** Two of four are structurally
+  unauditable a day late; the third did not publish. The wire-service
+  backstop proposal gains another instance.
+
+### mental-health / 2026-09-04
+- **Missed (curation, collector-caught, the 09-03 pattern on a smaller
+  scale):** the 09-04 digest called the day's `clinicaltrials` batch (346)
+  "routine" and said the entries checked "did not survive that test as
+  real." Two did: **NCT07805395** (Northwestern, Phase 2, mental-health
+  family-navigator model for foster parents, n=60, first posted 09-04) and
+  **NCT07803367** (Beijing Normal, nature photography for psychological
+  distress / depressive and anxiety symptoms in young adults, n=300, first
+  posted 09-03). Neither moves a thread; the rule finding does:
+  **NCT07803367 matched only ONE non-generic term**, so the 09-04 rule
+  ("spot-check entries matching two or more non-generic terms") would have
+  skipped it. **Rule widened: check the registry's own `conditions` field,
+  not the term-match count.**
+- **Corroborated (not a fresh miss):** the JMIR Mental Health meta-analysis
+  on home-based tDCS for depression (PMID 42696738, 09-04) — found by the
+  PubMed cross-check and independently by the evening evidence sweep the
+  same morning. It landed in the buffer with `terms_matched: []`.
+  **Acted on:** `transcranial direct current stimulation` and `tDCS` added.
+- **Trade press: null, not clean.** BHB dark Friday; STAT Health Tech is a
+  Tue/Thu newsletter (a cadence fact the benchmarks file should carry
+  alongside its weekend note); Fierce and MobiHealthNews published nothing
+  MH-specific that was not already here.
+
+**Access notes worth carrying forward.** PubMed E-utilities works for all
+four journal benchmarks, not just the two Cloudflare-blocked ones — the
+right default cross-check transport for the weekly tier. STAT Health Tech:
+Tuesday/Thursday cadence. The AI Daily Brief: third weekday 404. The
+`r.jina.ai` reader proxy clears Bloomberg's 403 for article pages, not only
+the Technology section page, but returned only page chrome for the
+carry-trade article on the main session's own attempt.
+
+**Map effect this pass.** Thread: `cross-border-rates` (critic-add, the
+first). Watchlist: `carry trade`, `yen carry trade`, `carry trade unwind`,
+`transcranial direct current stimulation`, `tDCS`. Held: `jailbreak`. Rule
+change: clinical-trials spot-check keys on the registry's `conditions`
+field. Process finding: a critic-flagged buffer item is not curated by
+being flagged — two items proved it, two days running.
