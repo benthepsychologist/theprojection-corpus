@@ -140,8 +140,14 @@ Oracle Q1 FY27 09-10 after the close, US CPI 09-11, FOMC 09-16, BOJ
 ## 🔄 Map changes
 
 - `✎` timeline entries merged on `fed-independence-fight` (the CNBC tally,
-  dated 09-05) and `cxmt-memory-ipo` (the Counterpoint share, dated 09-04).
-  `last_seen` bumped on both.
+  dated 09-05), `cxmt-memory-ipo` (the Counterpoint share, dated 09-04)
+  and, from the buffer triage's late pass, `datacenter-backlash-capital-risk`
+  (USA Today, 08-31: a moratorium position becoming a progressive "red
+  line" that splits Democratic candidates — Montana's Bodnar rejecting a
+  blanket moratorium, Shapiro signing new Pennsylvania rules after being
+  "bullied," a Texas candidate calling the job claims overstated — the
+  intra-party half of the backlash this thread had not recorded).
+  `last_seen` bumped on all three.
 - `✎` **finalize of 09-05:** the Japan pact curated into
   `2026-09-04-global-capital.md` as a late catch; the Fed tally into
   `2026-09-05-global-capital.md`; critic appendix and `coverage-log.md`

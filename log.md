@@ -8506,8 +8506,8 @@ triage agent, which was briefed to wait for it. Five cluster sweeps over
 all 100 open threads (labs/China/governance merged for a Sunday; capex;
 geopolitics with a front-page scan; mental health; capital), three
 coverage critics, a buffer triage, and a main-session staging file.
-**Eleven timeline entries merged across ten threads from four staging
-files, zero deletions; `last_seen` bumped on ten; one ledger item hit; one
+**Twelve timeline entries merged across eleven threads from six staging
+files (one via a late pass), zero deletions; `last_seen` bumped on eleven; one ledger item hit; one
 logged; two watchlist terms added; three late catches into earlier days.**
 
 **The news.** The envoys reached Kyiv by train from Rzeszów — the first
@@ -8626,3 +8626,32 @@ successful audio publish since 09-04 — `provenance/publish-2026-09-06T144333Z.
 site repo committed and pushed, Cloudflare build `9a0e38ee` queued at
 14:46Z. The 09-05 afternoon session's digest extension reached the public
 site with this publish.
+
+**Buffer triage, landed after the publish.** The Z agent took 37 minutes
+(it was briefed to wait for lanes; the brief's 15:00Z ceiling for
+`openalex` was too generous and it was told to stop). It read every file:
+Saturday's second-round rows (17 in the unread window of the workhorse
+file, all noise; the 610-row `openalex` batch re-confirmed as
+entity-name collisions), today's `rss` (66, journal backlog), `gdelt`
+(77, syndication of on-record items), `github` (6 version bumps), the
+empty Sunday lanes, and the 4,324-row `google_news_rss` file. **The name
+pass over ~35 watchlist orgs surfaced a dozen headlines that looked new —
+Cerebras IPO, Anthropic–SpaceX compute, AMD's Anthropic stake, Amazon's
+$17.5bn facility, Broadcom's $100bn package, Amodei on open weights,
+xAI's Minnesota loss, the Apple–OpenAI suit — every one a May-to-August
+story re-served by finance aggregators with fresh timestamps, every one
+already on the record.** It staged one out-of-window entry the map lacked:
+USA Today's 08-31 piece on moratorium politics splitting Democratic
+candidates (`datacenter-backlash-capital-risk`, verified against the
+dated syndication), merged through `late/`, `06_timelines` re-run,
+`validate.py` OK at 4,779 atoms. Two more out-of-window items — Meta's
+AI-glasses suit amended to add a bystander class (08-31), the Post's FEC
+count of 39 candidates on OpenAI subscriptions — are noted in the 09-06
+frontier-AI digest without a thread. **Not republished:** one 08-31 entry
+and two digest notes ride the next run's publish. The 09-06 `openalex`
+lane had not landed at close (launched 14:03Z; ~55 minutes); its manifest
+is committed by whichever run finds it — the 09-05 pattern.
+
+Committed and pushed as the last act of the session, with this run's
+collector and publish provenance manifests; both repos verified at zero
+unpushed commits.

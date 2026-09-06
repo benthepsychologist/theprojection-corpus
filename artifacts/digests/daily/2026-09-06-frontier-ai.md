@@ -81,6 +81,23 @@ US-China AI-safety talks story stands where Saturday left it — Reuters'
 mid-September date, Treasury's "not scheduled," the Chinese ministries'
 non-response reported as the answer.
 
+Two older items reached the record from today's buffer, surfaced by
+aggregators re-serving them with fresh timestamps and verified by the
+triage agent against their originals: **Meta's AI-glasses privacy suit in
+California federal court was amended on 08-31 to add a class of bystanders
+who never wore the glasses but were recorded by them**, alleging footage
+including intimate scenes was labelled by overseas contractors for AI
+training, with Meta disputing the allegations ([Fortune](https://fortune.com/2026/09/04/meta-perv-glasses-ai-lawsuit/),
+[Law360](https://www.law360.com/articles/2520314/meta-ai-glasses-privacy-suit-expands-to-add-bystander-class));
+and **a Washington Post analysis of FEC filings found 39 congressional
+candidates paying for OpenAI subscriptions this cycle, at least two
+disclosing use for political advertising against OpenAI's own usage
+policy**, with the RNC's ~$9,700 the largest committee spend and no
+binding FEC disclosure rule for AI-generated campaign content
+([Crypto Briefing, carrying the Post](https://cryptobriefing.com/congressional-candidates-openai-subscriptions-election/)).
+Neither has a thread; both are noted here rather than on a timeline.
+<!-- k: e=meta-ai,openai axis=legal -->
+
 ## ⏱ Release-watch
 
 No release in the window. The week's count stands at four in three days
