@@ -1,0 +1,14 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-09-05'
+  to: '2026-09-05'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: false
+  terms_swept: 121
+fetched_at: '2026-09-05T19:32:01Z'
+items:
+- id: 912b3d048ac3fec9fa29c10bc244a5f9da23eb65
+  url: https://doi.org/10.1016/j.ejmech.2026.118895
+  ts: '2026-09-05T00:00:00Z'

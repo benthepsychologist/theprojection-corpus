@@ -169,6 +169,10 @@ opened: 2026-07-24
   [Axios Pro Rata](https://www.axios.com/newsletters/axios-pro-rata))
   ⟨daily 2026-08-21⟩
 
+## 2026-08-20 — Piedmont, Oklahoma residents petition against Cloverleaf's Project Open Sky as the developer options a fallback site in Kingfisher County
+
+- **Residents of Piedmont, Oklahoma, began gathering signatures on 08-20 to force a vote on Cloverleaf Infrastructure's "Project Open Sky," a hyperscale campus of up to 1.5GW on 630-1,000 acres in Canadian County, on the same day Cloverleaf announced it had secured options on more than 330 acres in neighbouring Kingfisher County as an alternative location** — while saying Piedmont remains its preferred site. The city council had already sent the project's land-use amendment back to planning on 07-28 and deferred its vote to September. Cloverleaf is the developer in which Nvidia took a minority equity stake (on `ai-power-buildout`, 08-21); this is the siting fight that stake is buying into, and the fallback option is the developer's own hedge against losing it. Not on the record until now, five weeks late. ([okcfox, 08-20](https://okcfox.com/news/local/piedmont-residents-petition-data-center-as-developer-secures-alternate-site-option), [okcfox, 07-28](https://okcfox.com/news/local/piedmont-city-council-delays-cloverleaf-data-center-plan-sends-land-use-map-back-cloverleaf-project-open-sky-hyperscale-campus-pud-future-land-use-map-study-zoning-and-planning-commission)) ⟨daily 2026-09-05⟩
+
 ## 2026-08-17 — OpenAI's Ohio campus lease formally signed: 20 years, phased to 2032
 
 - **OpenAI signed a 20-year lease for the Piketon, OH data-center cluster (the former Portsmouth uranium site)** — initial 800MW of computing capacity targeted by 2028, full build-out running through 2032, projected at 35,000 construction jobs and 2,500 permanent maintenance roles. SB Energy (the SoftBank unit building it) is reportedly planning an IPO as early as next month at a valuation up to $50B. ([SiliconANGLE](https://siliconangle.com/2026/08/17/openai-leases-10-gigawatt-ai-data-center-campus-from-softbanks-sb-energy/)) ⟨daily 2026-08-18⟩

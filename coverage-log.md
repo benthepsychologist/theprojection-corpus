@@ -5777,3 +5777,124 @@ first). Watchlist: `carry trade`, `yen carry trade`, `carry trade unwind`,
 change: clinical-trials spot-check keys on the registry's `conditions`
 field. Process finding: a critic-flagged buffer item is not curated by
 being flagged — two items proved it, two days running.
+
+## 2026-09-06 critic pass — finalized digest-day 2026-09-05. Three lenses, three misses, all three found by the wire backstop on a Saturday when every named benchmark was dark — and the biggest one had been in the buffer for two days
+
+**Shape of the pass.** Three critics, one per benchmarked lens, run on a
+Sunday morning against Saturday's editions — and Saturday has no editions.
+All twelve daily benchmarks were dark for 09-05, verified outlet by outlet
+(feed `lastBuildDate`s, dated-archive 404s and 307s, PubMed zero-results),
+plus both weekly journals and the four-journal academic backstop tier on
+mental health. The benchmark set is a weekday instrument, as its own comment
+block has said since 08-11, so the brief ordered the first formal run of the
+**wire/general-press backstop** that this log has carried as a proposal since
+late August: Reuters, AP, Bloomberg via proxy, FT's RSS and a name-driven
+sweep of the map's own `google_news_rss` buffer, with each finding labelled
+by where it came from. Every one of the pass's three real misses came from
+the backstop; the named benchmarks contributed zero confirmable leads. The
+check is therefore honestly null on the instrument it was built around and
+honestly strong on the instrument it borrowed.
+
+### frontier-ai / 2026-09-05
+- **Missed (curation, buffer-present, two days):** **Anthropic's
+  announcement that Claude formalized Fermat's Last Theorem in Lean** —
+  13 million lines, 30,300 theorems proved, 29,500 used, eleven days,
+  largely autonomous on Columbia's Prove2Me platform, the largest Lean
+  proof ever written. Anthropic's own research page and X post are dated
+  09-04; the `google_news_rss` buffer carried it **six times** across the
+  09-04 and 09-05 files (Anthropic's post at 18:35Z 09-04; SiliconANGLE,
+  New Scientist at 11:45Z 09-05, three more). `grep -ril fermat artifacts/
+  attention/` returned nothing corpus-wide. Two full buffer-triage passes
+  on 09-05 and one on 09-04 read past it. **Curated this pass** into
+  `2026-09-04-frontier-ai.md` as a 🌙 late catch, `e=anthropic`, no thread.
+- **Carried from 09-04 and 09-05, resolved:** OpenAI's **bounded-prime-gaps
+  paper** — primary source found (`cdn.openai.com/.../short_gaps.pdf`,
+  last-modified 09-03 09:16 GMT; abstract: "the proof is due to GPT 6
+  Astra," bound 186, Lean-formalized), zero buffer hits on any day — a
+  genuine collection gap, no term catches a "model solved a math problem"
+  story. **Curated this pass** into `2026-09-03-frontier-ai.md` and onto
+  `enterprise-agent-product-race`, three days late.
+- **Held:** the universal-jailbreak template — no benchmark led with it.
+- **`openalex` spot-check:** ten two-or-more-term rows opened; every one a
+  string collision (`xAI` = explainable AI, `Meta AI` = meta-analysis).
+  The afternoon's "all noise" verdict holds.
+- **Structural:** two lab pure-mathematics results in one week, both found
+  by a human reading the buffer, neither by a term. A `theorem`/`proof`
+  term would drown in the `openalex` lane; the right fix is a thread with
+  formalization terms (`Lean`, `Mathlib`, `autoformalization`, `Prove2Me`)
+  — offered as a candidate on the 09-06 digest.
+
+### global-capital / 2026-09-05
+- **Missed (curation, buffer-present):** **Japan's $550 billion investment
+  pact re-pointed at AI and semiconductors** — trade minister Akazawa, in
+  Washington on Friday after meeting Lutnick and Greer, said progress was
+  being made, that AI and chips will carry "very significant weight" in the
+  next round, and that no further tariffs would be imposed on Japan.
+  Bloomberg 01:31Z 09-05; Japan Times, SCMP, Kyodo, Investing.com, TNW the
+  same morning; a Reuters exclusive on synthetic diamonds under the same
+  pact. **Nine rows** of the 09-05 buffer, eight tagged `lens: ai` by term
+  match (AI export controls, nuclear-for-AI terms) and one tagged
+  `global-capital` via "SoftBank" — the lens-tagging put most of the signal
+  outside this digest's own slice. `grep -ril "akazawa\|550 billion"
+  artifacts/ attention/`: nothing. **Curated this pass** into
+  `2026-09-04-global-capital.md` as a 🌙 late catch, no thread; the pact
+  offered as a candidate with terms `Akazawa`, `Japan investment pact`,
+  `$550 billion pact`.
+- **Unresolvable at pass time, resolved by the main session:** CNBC's
+  Saturday "Trump turns up the heat on Warsh" — the critic could not reach
+  a real URL (`news.google.com` rate-limited the reader proxy mid-pass;
+  CNBC's slug guesses 404'd). Found in CNBC's own RSS, read via proxy, and
+  curated as a 09-05 late catch on `fed-independence-fight`: Navarro's
+  "clowns" and Vance's cut call were not on the thread.
+- **Carried, closed:** the carry-trade item is on `cross-border-rates`.
+- **Structural:** Bloomberg Technology's reachability is unstable pass to
+  pass (open 08-23, blocked 08-25, blocked today); `news.google.com`'s
+  anonymous rate limit means a story whose only fetchable copy is
+  Google-News-wrapped cannot be resolved when the publisher also blocks;
+  investing.com is now permanently blocked. **The critic's own proposal:**
+  run a light version of the backstop on weekday passes too.
+
+### mental-health / 2026-09-05
+- **Missed (curation, buffer-present):** the **Wall Street Journal's
+  report that Musk's inner circle is funding the mainstreaming of
+  psychedelic psychiatry** — SpaceX director Antonio Gracias's $25 million
+  recapitalization of Lykos Therapeutics, the sponsor of the FDA-rejected
+  MDMA application, taking control, renaming it Resilient Pharmaceuticals
+  and moving it to Chicago; a $16 million Harvard professorship; Steve
+  Jurvetson as an earlier trial funder. In the 09-05 buffer at 16:00Z
+  under its WSJ headline. `grep -ril "Gracias\|Jurvetson\|Lykos"` found
+  only the 2025 rejection material on `psychedelic-regulatory-sprint`.
+  **Curated this pass** onto that thread and into the 09-05 digest, via the
+  syndicated pickup that names the Journal (wsj.com does not fetch).
+- **Carried, verified clean:** the 09-05 digest's claim that its 201-row
+  `clinicaltrials` batch was read under the registry-conditions rule —
+  eight buffer rows the digest did not name were opened on the live
+  registry; all eight are real mental-health conditions and all eight are
+  administrative updates, not first postings, exactly as the digest said.
+  The two claimed first postings check out.
+- **Ruled not misses:** the VA psychedelic-trial piece (a 08-05
+  announcement republished), the Hi Rasmus $50m round (in the 09-03
+  digest).
+- **Proposed:** watchlist term `Resilient Pharmaceuticals` (the rename
+  orphans `Lykos Therapeutics`); watch the thread for named-funder capital
+  moves, not only regulatory milestones.
+
+**Access notes worth carrying forward.** FT Unhedged's working RSS path is
+`www.ft.com/unhedged?format=rss`, not `/newsletter/unhedged`. TLDR's dated
+archive returns 307, not 404, for a missing edition. The AI Daily Brief's
+homepage can tease an unpublished edition before its `/e/` URL resolves.
+MobiHealthNews's feed advances `lastBuildDate` with no new items — a
+cleaner "genuinely dark" signal than a stale timestamp. Fierce's Googlebot
+`/rss/xml` returns items out of chronological order. STAT Health Tech is a
+Tuesday/Thursday newsletter and will read dark every Fri–Mon. CNBC serves
+through the reader proxy; wsj.com and iaea.org do not fetch at all.
+
+**Map effect this pass.** Watchlist: `Resilient Pharmaceuticals` (critic-
+add). Candidates: a frontier-lab formalization/mathematics thread; the
+Japan-US $550bn pact. Rule finding: **the wire backstop found everything
+this pass found** — three misses in three lenses, all buffer-present, all
+found by a name search of the buffer or a wire sweep rather than by any
+benchmark — and the frontier-AI miss sat through three buffer-triage
+passes. The 09-03 rule ("read the buffer") and the 09-05 rule ("act on the
+critic") both held; what failed is the triage itself, which grepped the
+workhorse file by thread terms and never saw a story no term names.

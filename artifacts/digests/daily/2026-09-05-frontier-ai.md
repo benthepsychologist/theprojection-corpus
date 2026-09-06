@@ -1,15 +1,19 @@
 ---
 lens: frontier-ai
 date: 2026-09-05
-status: building
+status: final
 window_start: 2026-09-05T05:00:00-04:00
-as_of: 2026-09-05T10:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-09-05
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Saturday. Sources: the
+*Curated agentic-interim, 05:00 ET Saturday → **05:00 ET Sunday**. Built at
+10:45 ET, extended at 15:00 ET (six afternoon cluster sweeps, a
+buffer-triage pass that read the 610-row `openalex` batch, a second
+collector round), and **finalized on the 09-06 run** — five cluster sweeps
+and a buffer triage over the Saturday-evening window, plus the coverage
+critic appended below. Sources: the
 deterministic collector lanes launched as separate processes at run start
 (`google_news_rss` 6,444 items, landing at 14:25Z after the first triage
 pass had closed; `rss` 70; `gdelt` 90 under its 8-term cap; `sec_edgar`
@@ -69,11 +73,14 @@ were still uncurated after the 09-04 run, and are now on the record.
   in late August.
   ([OpenAI on X](https://x.com/OpenAI/status/2096133504417616165), [The Verge](https://www.theverge.com/ai-artificial-intelligence/990773/openai-german-wiki-incident), [BleepingComputer](https://www.bleepingcomputer.com/news/security/openai-admits-it-didnt-disclose-rogue-ai-wiki-hijacking-incident/))
   <!-- k: t=openai-agent-security-incident e=openai axis=security -->
-- **The Anthropic v. Department of War docket still ends at entry #252 and
-  the OpenAI copyright MDL at #1742**, both read directly on Saturday; no
-  notice of appeal on the first (window to 09-28), no hearing date on the
-  second, where the 09-04 entries added two more oral-argument requests and
-  two sealed filings. The Nippon Life v. OpenAI docket still ends at the
+- **The Anthropic v. Department of War docket still ends at entry #252,
+  while the OpenAI copyright MDL ran from #1742 to at least #1892 by
+  Saturday afternoon** — the new entries are the public redacted versions of
+  the Books Plaintiffs' summary-judgment papers (David Baldacci's memorandum
+  of law and Rule 56.1 statement) and sealed supporting declarations, dated
+  09-05; no notice of appeal on the first (window to 09-28), no hearing date
+  on the second, where the 09-04 entries added two more oral-argument
+  requests and two sealed filings. The Nippon Life v. OpenAI docket still ends at the
   08-04 minute entry that reset the status hearing to 09-02 — a hearing
   this map is tracking left no trace, and the ledger item is due 09-11.
   ([Anthropic v. DoW docket](https://www.courtlistener.com/docket/72379655/anthropic-pbc-v-united-states-department-of-war/), [OpenAI MDL docket](https://www.courtlistener.com/docket/69879510/in-re-openai-inc-copyright-infringement-litigation/))
@@ -104,11 +111,22 @@ were still uncurated after the 09-04 run, and are now on the record.
 
 ## Labs & models
 
-Nothing dated 09-05. The Astra benchmark dispute did not move: a dedicated
-check found no OpenAI response, no Artificial Analysis or ARC update, and
-one trap — an "OpenAI explains the ARC-AGI-3 gap" post circulating on
-aggregators is the company's 07-29 post about GPT-5.6 Sol, not a new
-Astra-specific statement. Grok 4.7 (ledger due 09-12): no new Musk
+Nothing dated 09-05, but the Astra benchmark dispute did move — on Friday
+evening, and this map found it on the afternoon run. **Fortune reported
+that OpenAI changed several of Astra's own published benchmark figures
+after launch: the hallucination rate went 4.2% → 2% → 4.2%, GPT-5.6 Sol's
+ExploitBench score rose from 5.5% to 11.5% on a reasoning level OpenAI
+itself says is "not commercially available" for Sol, and ARC-AGI-3 went
+from 98.6% in the embargoed draft to 99.99% live.** The Arc Prize
+Foundation's own read is 99.9% on a "powerful harness" and 63% on the
+standard one, which resolves the "transcription oddity" yesterday's critic
+logged — the newsletters quoting 99.9% were reading the live post. The
+full item is in `2026-09-04-frontier-ai.md` as a 🌙 late catch and on
+`enterprise-agent-product-race`. Otherwise the morning's reading held: no
+OpenAI response beyond the Fortune quotes, no Artificial Analysis or ARC
+update, and one trap — an "OpenAI explains the ARC-AGI-3 gap" post
+circulating on aggregators is the company's 07-29 post about GPT-5.6 Sol,
+not a new Astra-specific statement. Grok 4.7 (ledger due 09-12): no new Musk
 statement since the 09-02 "10 days" post. Decart: still nothing newer than
 08-17.
 
@@ -142,6 +160,18 @@ Astra's full Pro/Enterprise/API rollout (09-04).
 
 ## 🔄 Map changes
 
+- `✎` **afternoon run:** entries merged on `enterprise-agent-product-race`
+  (Fortune's Astra benchmark edits, dated 09-04),
+  `anthropic-infrastructure-buildout` (FluidStack — the counterparty on
+  Anthropic's ~$50bn capacity deal — at an $18bn valuation per Forbes,
+  dated 09-03; the company had no mention anywhere in this corpus until
+  now), `ai-datacenter-sites` (the Piedmont, Oklahoma fight over
+  Cloverleaf's up-to-1.5GW "Project Open Sky," with residents petitioning
+  for a referendum and the developer optioning a fallback site in
+  Kingfisher County — dated 08-20, five weeks late; Cloverleaf is the
+  developer Nvidia took a stake in on 08-21), and
+  `datacenter-backlash-capital-risk` (below, on the capital lens).
+  `last_seen` bumped on all four.
 - `✎` timeline entries merged on `openai-agent-security-incident`,
   `anthropic-copyright-exposure` (×2: the Seattle Times/Newsday suit dated
   09-04, the Concord II conference dated 09-02), `anthropic-ipo-timing`,
@@ -182,6 +212,19 @@ front page.
 
 ## ⚠️ Collection note
 
+**Afternoon:** the 610-row `openalex` batch that landed at 14:54Z — after
+the morning run had committed — was read in full for the first time on
+this run: all noise (Zenodo/OSF deposits and name collisions; the 90 rows
+matching two or more tracked terms spot-checked individually). A second
+round of collector lanes launched at 19:00Z; `google_news_rss` had not
+landed when the six afternoon sweeps closed (fourth run running) and was
+read by a dedicated pass when it did — see the front digest. Six sweeps
+over all 100 threads returned two entries between them and thirteen
+"nothing new" verdicts, the correct result for a Saturday afternoon.
+CourtListener's docket-by-ID REST endpoint now requires authentication;
+the v4 search endpoint still serves anonymously and is what the docket
+counts above were read with.
+
 The four news lanes and the fast lanes were launched as separate processes
 at run start with the right environment; all landed. `google_news_rss`
 took twenty-five minutes and arrived after the first triage pass closed —
@@ -194,3 +237,66 @@ queries worked. ⚠️ One sweep agent identified itself to EDGAR with Ben's
 personal mailbox as the contact rather than the address
 `sources/API-SIGNUP.md` declares — a brief defect, corrected for the next
 run.
+
+## 🌙 Late catch — the 09-05 evening window (15:00 ET → 05:00 ET)
+
+Nothing dated 09-05 on this lens landed after the afternoon cut. The
+Saturday-evening sweep over all twenty labs, China, product, IPO and
+governance threads returned nothing new: no weekend release from DeepSeek,
+Qwen, Moonshot, Zhipu or MiniMax; no OpenAI follow-through on the DseWiki
+admission beyond the X post; no OpenAI, Arc Prize or Artificial Analysis
+response to Fortune's report on Astra's edited benchmark figures; no Musk
+statement on Grok 4.7 since 09-02; the Decart deal still silent into its
+last day of grace. The two items the finalize did add are dated earlier and
+sit in their own days' digests: **Anthropic's Fermat's Last Theorem
+formalization** (09-04, `2026-09-04-frontier-ai.md`) and **OpenAI's
+bounded-prime-gaps paper** (09-03, `2026-09-03-frontier-ai.md`, on
+`enterprise-agent-product-race`) — both found by the coverage critic, not
+the sweeps, and both discussed below.
+
+## 🔍 Coverage critic — digest-day 2026-09-05
+
+**Verdict:** one real miss, and the biggest this lens has logged in a
+week: **Anthropic's announcement that Claude formalized Fermat's Last
+Theorem in Lean** — 13 million lines, 30,300 theorems, eleven days — was in
+this map's own `google_news_rss` buffer six times across the 09-04 and 09-05
+files (Anthropic's post, SiliconANGLE, New Scientist, three others) and
+was curated by nobody. A curation failure, not a collection gap. The check
+was null on the benchmark side — all four newsletters dark for a Saturday,
+verified by fetch — and the wire backstop otherwise confirmed the digest's
+own reporting, so the catch came from a name search of the buffer. The
+carried bounded-prime-gaps item is resolved: OpenAI's paper found and
+dated 09-03, still zero buffer hits, curated this run.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| The Rundown AI | dark | feed's newest item Fri 09-04 10:00 GMT; nothing dated 09-05/06 |
+| TLDR AI | dark | `/ai/2026-09-05` and `/2026-09-06` return HTTP 307 (no edition) |
+| The Neuron | dark | newest archive item "Sep 04, 2026" via reader proxy |
+| The AI Daily Brief | dark, teaser only | `/e/2026-09-05` and `/e/2026-09-06` 404; homepage teases a Sunday "How AI Changed This Summer" retrospective with no dated URL yet |
+
+**They led with → we missed:** the Fermat formalization (above; curated
+into the 09-04 digest as a late catch, dated 09-04, `e=anthropic`, no
+thread). **Carried, resolved:** the prime-gaps result (curated into the
+09-03 digest and onto `enterprise-agent-product-race`). **Held:** the
+universal-jailbreak template — no benchmark led with it. **`openalex`
+spot-check:** ten two-or-more-term rows opened; every one a collision
+(`xAI` = explainable AI, `Meta AI` = meta-analysis, `GPT-6` matching
+unrelated benchmark datasets) — the afternoon's "all noise" verdict holds.
+
+**Both covered:** the DseWiki admission, the Astra benchmark edits, the
+US-China talks exclusive, DeepSeek's Huawei order, Moonshot's raise — the
+wire roundups name the same set. **We had → they didn't:** the docket
+reads, the Concord II conference, the Sanders-Casar bill's follow-through
+silence.
+
+**Structural:** two lab pure-mathematics results in one week — the prime
+gaps and Fermat — and no watchlist term that would catch either; both were
+found by a human reading the buffer, not by a match. A term like `theorem`
+or `proof` would be hopeless against the `openalex` lane, so the fix is a
+thread with the right terms (`Lean`, `Mathlib`, `formalization`,
+`autoformalization`), offered as a candidate on the 09-06 digest, not a
+bare term. **Access:** TLDR's dated archive returns 307, not 404, for an
+edition that does not exist; The AI Daily Brief's homepage can tease an
+unpublished edition before its dated URL resolves — read a teaser as
+"teased," not "published."

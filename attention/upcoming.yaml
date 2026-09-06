@@ -2829,7 +2829,17 @@ expectations:
       Kyiv leg, is the loud outcome.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
+    # 2026-09-06 ⟨daily⟩: HIT, on the day. Witkoff and Kushner arrived in Kyiv
+    # on Sunday 09-06 by train from Rzeszów after flying out of Moscow (Zelensky:
+    # Russian strikes ruled out a direct flight), met Zelensky at the railway
+    # station and walked to St Sophia's Square — this administration's first
+    # envoy visit to Ukraine's capital, a day after ~3 hours with Putin.
+    # Zelensky: "the negotiations have begun"; White House: "substantive plans
+    # for next steps, which will be announced in the coming weeks." No readout
+    # of substance from either capital. Kyiv Independent 09-06 09:55Z
+    # (kyivindependent.com/us-envoys-witkoff-kushner-arrive-in-ukraine/), CNN.
+    status: hit
+    resolved: 2026-09-06
 
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
@@ -2853,6 +2863,13 @@ expectations:
       the loud outcome; passed-silent here means the pause held.
     logged: 2026-09-05
     logged_by: curate-add
+    # 2026-09-06 ⟨daily⟩: first night (09-05/06) HELD for Kyiv city — no hits
+    # reported inside the city despite an alert and fires in Kyiv Oblast — while
+    # Russia launched 108 drones/missiles at the rest of Ukraine from 18:00 09-05
+    # (82 drones + 6 Banderol missiles intercepted), 9 killed / 68 injured
+    # nationwide (Kharkiv 4, Kherson 3, Zaporizhzhia 1, Mykolaiv 1). Exactly the
+    # city-not-country shape Peskov stated. Two nights to go. Kyiv Independent
+    # 09-06 08:28Z, Ukrinform (Air Force figures). Still pending.
     status: pending
 
   - id: ratepayer-protection-act-floor-vote-0911
@@ -2942,5 +2959,29 @@ expectations:
       allegations against Chinese labs. Passed-silent here means Treasury's
       denial held, which is itself the finding.
     logged: 2026-09-05
+    logged_by: curate-add
+    status: pending
+
+  - id: saxony-anhalt-election-result-0906
+    claim: >
+      Saxony-Anhalt's state election on Sunday 09-06 produces a preliminary
+      official result, with the AfD — the clear poll leader going in —
+      finishing first, which would put a far-right party in position to lead
+      a German state government for the first time since 1945
+    due: 2026-09-06
+    due_precision: day
+    thread: null
+    entities: [european-union]
+    source: https://www.dw.com/en/saxony-anhalt-far-right-afd-eyes-power-in-german-state-vote/live-78754934
+    confidence: reported
+    what_confirms: >
+      the state returning officer's preliminary result (polls close 18:00
+      CET, noon ET, after the 09-06 run's cut), from DW/Reuters/ARD. An AfD
+      plurality is the expected outcome; the question that follows — whether
+      any coalition forms around or against it — is not this item. Raised by
+      the 09-06 general front-page scan; no thread holds German domestic
+      politics, and the mechanical world-news pool has been frozen since
+      09-03.
+    logged: 2026-09-06
     logged_by: curate-add
     status: pending

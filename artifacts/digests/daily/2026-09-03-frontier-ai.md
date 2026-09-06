@@ -324,6 +324,23 @@ critic pass established as sitting uncurated in the buffer, and that the
   ([Neowin](https://www.neowin.net/news/microsofts-mai-transcribe-2-model-beats-openai-and-google-while-costing-just-010-per-hour/), [Unite.AI](https://www.unite.ai/mai-transcribe-2-tops-fleurs-benchmark-across-60-languages-microsoft-says/))
   <!-- k: t=microsoft-mai-openai-decoupling e=microsoft axis=product -->
 
+- **OpenAI's Astra launch materials included a 39-page pure-mathematics
+  paper, "Improved Short Gaps Between Primes," proving that infinitely many
+  consecutive primes differ by at most 186 and stating in its abstract that
+  "the proof is due to GPT 6 Astra," with a machine-checked Lean
+  formalization** — the paper's own introduction cites Polymath 8b's 246
+  (2014) as the bound it builds past, combining Polymath 8a's and
+  Stadlmann's equidistribution estimates with new factorization conditions
+  that enlarge the multidimensional Selberg sieve's support to establish
+  DHL[40,2]. Mathematicians Weijie Su and Perry Metzger noted the result on
+  X the same day. Zero buffer hits on any day — no watchlist term catches a
+  "model solved a pure-math problem" story — flagged as a collection miss
+  by the 09-04 and 09-05 critic passes and curated on the 09-06 finalize
+  from the PDF, three days late. On `enterprise-agent-product-race`, where
+  the rest of Astra's launch-day claims live.
+  ([OpenAI — paper PDF](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), [Weijie Su on X](https://x.com/weijie444/status/2095600108956262911))
+  <!-- k: t=enterprise-agent-product-race e=openai axis=research -->
+
 ## 🔍 Coverage critic — digest-day 2026-09-03
 
 **Verdict:** five real misses, three of them clean curation failures against

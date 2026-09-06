@@ -1,0 +1,38 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-09-05T19:00:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-09-06T14:23:46Z'
+items:
+- id: gh-release-383591904
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10825
+  ts: '2026-09-06T13:22:26Z'
+- id: gh-release-383567012
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10823
+  ts: '2026-09-06T11:57:39Z'
+- id: gh-release-383560211
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10822
+  ts: '2026-09-06T11:30:39Z'
+- id: gh-release-383536569
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b10821
+  ts: '2026-09-06T09:58:54Z'
+- id: gh-release-383028723
+  url: https://github.com/ollama/ollama/releases/tag/v0.34.0-rc1
+  ts: '2026-09-05T23:49:00Z'
+- id: gh-release-383433044
+  url: https://github.com/anthropics/claude-code/releases/tag/v2.1.263
+  ts: '2026-09-06T02:54:20Z'

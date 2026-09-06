@@ -1,15 +1,19 @@
 ---
 lens: global-capital
 date: 2026-09-05
-status: building
+status: final
 window_start: 2026-09-05T05:00:00-04:00
-as_of: 2026-09-05T10:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-05
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Saturday. Sources: the
+*Curated agentic-interim, 05:00 ET Saturday → **05:00 ET Sunday**. Built at
+10:45 ET, extended at 15:00 ET (a combined macro/financing/chips sweep, a
+buffer-triage pass, a second collector round), and **finalized on the 09-06
+run** — a lens sweep over all 20 capital threads and a buffer triage over
+the Saturday-evening window, plus the coverage critic appended below.
+Sources: the
 deterministic collector lanes launched as separate processes at run start
 (`google_news_rss` 6,444 items, `sec_edgar` 428, `gdelt` 90, `rss` 70,
 `federal_register` 29), a macro/rates/allocators sweep that sourced
@@ -70,10 +74,37 @@ place for matches to land rather than a recurring line in the coverage log.
   rather than in transit. Brent settled Friday at $92.68, +7.6% on the week, its steepest weekly gain in months, with US diesel at a record $5.85/gal; no US session until Tuesday 09-08.
   ([CNN, via KVIA](https://kvia.com/news/us-world/cnn-world/2026/09/05/us-military-says-three-iranian-tankers-struck-in-gulf/), [AP, via KSAT](https://www.ksat.com/news/world/2026/09/05/iran-accuses-the-us-of-targeting-a-tanker-near-kharg-island-and-other-mideast-news/))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=united-states axis=oil sev=major interp=yes -->
+- **AI companies have pledged about $265 million to super PACs and
+  political groups for the 2026 midterms, a Wall Street Journal analysis
+  found — making AI, alongside crypto and betting, the leading industry
+  spender of the cycle — The Independent reported on Saturday, framing the
+  money as arriving "as data center backlash sweeps through communities."**
+  The parts were on the record separately: Leading the Future, the
+  Andreessen Horowitz/Greg Brockman-backed super PAC, at $140 million
+  raised per Reuters (a16z's $50 million and the Brockmans' $25 million in
+  FEC filings); Anthropic's self-disclosed $40 million to Public First
+  Action, a 501(c)(4) backing AI regulation; and Leading the Future's
+  "Build American AI" affiliate running buildout-defence ads in Wisconsin,
+  Ohio and Kansas since late August. New is the aggregate and its framing
+  as a response to local opposition — the industry's political spend set
+  against the backlash this thread tracks for the first time. A tally of
+  pledges, not disbursements; the Journal's own analysis could not be read
+  directly. ([The Independent, via Yahoo News](https://ca.news.yahoo.com/ai-companies-dumping-265m-midterms-122332804.html), [WSJ, 07-22](https://www.wsj.com/politics/policy/anthropic-doubles-midterm-spending-to-40-million-to-push-ai-regulation))
+  <!-- k: t=datacenter-backlash-capital-risk e=anthropic,openai axis=policy -->
 
 ## Deals & financing
 
-Nothing dated 09-05. Twelve issuers' EDGAR submission feeds — Nvidia, AMD,
+Nothing dated 09-05. One 09-03 item reached the record on the afternoon
+run: **FluidStack, the GPU-cloud builder holding a roughly $50 billion
+multi-year capacity agreement with Anthropic, reached an $18 billion
+valuation per Forbes**, closing the round Bloomberg reported in April as
+~$1 billion in talks led by Jane Street — a third independent capacity
+vendor alongside CoreWeave and Nebius, and a price on the counterparty
+carrying a large share of Anthropic's committed compute. The company had
+no mention anywhere in this corpus until now. On
+`anthropic-infrastructure-buildout`.
+
+Twelve issuers' EDGAR submission feeds — Nvidia, AMD,
 Intel, Broadcom, Micron, CoreWeave, Oracle, Arm, Qualcomm, GlobalFoundries,
 TSMC, ASML — were read directly for Friday-after-close filings: four
 routine Form 3/4 insider transactions and nothing else. No rating action
@@ -122,6 +153,12 @@ first doubled buyback 09-09, Oracle Q1 FY27 09-10, FOMC 09-16, BOJ 09-18.
   can retire it with a word; the case is the miss count, not a theory.**
 - `+` watchlist terms `carry trade`, `yen carry trade`, `carry trade
   unwind` (critic-add; `yen intervention`, also proposed, was already on).
+- `✎` **afternoon run:** entries merged on `datacenter-backlash-capital-risk`
+  (the $265m tally, above) and `anthropic-infrastructure-buildout`
+  (FluidStack, 09-03); the combined afternoon sweep over all 30 lens
+  threads found nothing else dated 09-05 — Canada's 09-08 counter-tariffs
+  re-checked on Finance Canada's own page, still on; no Saturday Fed or
+  Trump rate statement; no weekend BOJ/MOF comment beyond the record.
 - `✎` timeline entries merged on `chip-hyperscaler-rotation` (the close),
   `red-sea-oil-shock` (South Korea's walk-back, 09-04; the tanker strikes,
   09-05), `anthropic-ipo-timing`, `nvidia-vendor-financing` (Thinking
@@ -163,3 +200,84 @@ curve CSV (the HTML table misread on two fetches and was abandoned for the
 CSV) and from two independent market wraps; individual Intel, AMD and
 Nvidia closes could not be sourced and are left blank. ⚠️ `theprojection
 build-world-news` blocked for a third day on the BigQuery credential.
+
+## 🌙 Late catch — the 09-05 evening window (15:00 ET → 05:00 ET)
+
+One item dated 09-05 reached the record on the finalize, and it was in
+Saturday's buffer rather than the evening's:
+
+- **In the week before the Fed's 09-15/16 meeting the president, the vice
+  president, the Treasury secretary and senior counselor Peter Navarro all
+  publicly urged the Fed not to raise rates or to cut them — Navarro
+  calling FOMC members "clowns" on Steve Bannon's show on Friday and a hike
+  "careless," Vance saying "we believe that the Fed should be lowering
+  interest rates," Bessent arguing the Fed does not hike into a supply
+  shock until second- or third-order effects show — on top of Trump's
+  Friday threat to halt trade with surplus countries unless the Fed cuts,
+  the first time he has tied tariffs to Fed policy.** CNBC's Saturday tally
+  is the first to frame the four as one campaign, ten days out with the
+  hike priced near 60% and Friday's CPI the last data point; the president
+  has still not criticised Warsh by name, and the precedent CNBC reaches
+  for is May 2019, when Pence, Mnuchin and Kudlow all called for cuts and
+  the Fed cut two months later. The Navarro and Vance remarks were not on
+  `fed-independence-fight` until now.
+  ([CNBC](https://www.cnbc.com/2026/09/05/trump-warsh-fed-september-rate-hike.html))
+  <!-- k: t=fed-independence-fight e=united-states axis=policy -->
+
+Two more finalize additions are dated earlier and live in their own days'
+records: **Japan's $550 billion investment pact re-pointed at AI and
+chips** — Akazawa in Washington on Friday, nine rows of Saturday's buffer,
+caught by the critic's wire backstop — is a 🌙 late catch in
+`2026-09-04-global-capital.md` and a thread candidate on the 09-06 digest;
+and **CXMT's DRAM share reaching 10%** (Counterpoint, 09-04), already in
+Friday's frontier-AI digest, now also carried on `cxmt-memory-ipo`, the
+thread that will need it when the prospectus comes. Nothing else dated
+09-05: no weekend Fed, BOJ or MOF statement, Canada's counter-tariffs
+still on for Tuesday 12:01 a.m. per Finance Canada's own list, Oracle's
+Thursday date confirmed by its own IR page, the EDGAR lane empty on a
+Sunday as expected.
+
+## 🔍 Coverage critic — digest-day 2026-09-05
+
+**Verdict:** one real miss, and it came entirely from the wire backstop —
+the first formal run of the proposal `coverage-log.md` has carried since
+late August. **Japan and the US advanced the $550 billion investment pact
+with AI and semiconductors now at its center**, per Akazawa's own remarks
+in Washington on Friday, carried by Bloomberg (timestamped 01:31Z 09-05),
+Japan Times, SCMP and Kyodo, and sitting in nine rows of Saturday's
+`google_news_rss` buffer — eight of them tagged to the AI lens by term
+match, one to this lens via "SoftBank." A curation miss the lens-tagging
+helped cause. The benchmark set itself was null: Money Stuff silent by its
+own feed, FT Unhedged weekday-only by its own dated items, the two
+same-day-only pages unauditable and Bloomberg Technology CAPTCHA-walled on
+both documented transports.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| Money Stuff | dark 09-04 and 09-05 | `.rss` author feed's newest item Thu 09-03 18:24 GMT |
+| FT Unhedged | dark for 09-05 | `www.ft.com/unhedged?format=rss` newest item Fri 09-04 05:30 GMT; nothing over the weekend |
+| Axios Pro Rata | same-day-only, not auditable | reader proxy returned a stale generic page |
+| Bloomberg Technology | same-day-only; CAPTCHA'd | "Are you a robot?" on direct and proxy fetch — reachable 08-23, blocked 08-25, blocked again |
+
+**They led with → we missed:** the Japan pact (curated into the 09-04
+digest as a late catch, dated 09-04; no thread — candidate on 09-06).
+**Unverifiable at pass time, resolved by the main session:** CNBC's
+"Trump turns up the heat on Warsh" — the critic could not resolve the URL
+through Google News' rate limit; found in CNBC's own RSS and curated above.
+**Both covered:** the tanker strikes, Friday's close and Brent's
+settlement, the carry-trade unwind, Anthropic's S-1 slip, Canada's
+tariffs. **We had → they didn't:** the interpretation written to the
+Tuesday-open gap; the EDGAR direct reads.
+
+**Structural:** the benchmark set is a weekday instrument, and this pass
+confirms it in both directions again; Bloomberg Technology's reachability
+is unstable pass to pass; and `news.google.com` itself rate-limited the
+reader proxy mid-pass, which means a story whose only fetchable copy is
+Google-News-wrapped cannot currently be resolved to a real URL when the
+publisher also blocks — the Reuters synthetic-diamond exclusive under the
+same pact was left as corroboration for that reason. **Proposed:** the
+pact as a thread; terms `Akazawa`, `Japan investment pact`, `$550 billion
+pact`; and the backstop run on weekday passes too, lightly — the one
+finding this pass produced came from it. **Access:** FT Unhedged's working
+RSS path is `www.ft.com/unhedged?format=rss`, not `/newsletter/unhedged`;
+investing.com is now permanently blocked to anonymous fetches.

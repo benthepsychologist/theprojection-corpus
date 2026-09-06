@@ -234,7 +234,23 @@ def synthesize(text, wav_path):
             ),
         ),
     )
-    audio_bytes = response.candidates[0].content.parts[0].inline_data.data
+    # 2026-09-05: the 11:00 ET publish failed here with
+    # "'NoneType' object has no attribute 'parts'" — a candidate came back
+    # with no content (a blocked/empty generation), and the bare index chain
+    # hid WHY. Say what the API actually returned before giving up.
+    cands = getattr(response, "candidates", None) or []
+    cand = cands[0] if cands else None
+    content = getattr(cand, "content", None) if cand else None
+    parts = getattr(content, "parts", None) if content else None
+    if not parts:
+        fr = getattr(cand, "finish_reason", None) if cand else None
+        pf = getattr(response, "prompt_feedback", None)
+        sys.exit(
+            "Gemini TTS returned no content parts — "
+            f"candidates={len(cands)} finish_reason={fr!r} "
+            f"prompt_feedback={pf!r}"
+        )
+    audio_bytes = parts[0].inline_data.data
     if not audio_bytes:
         sys.exit("Gemini TTS returned no audio data")
 

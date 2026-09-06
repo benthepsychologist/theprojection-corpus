@@ -13,6 +13,10 @@ crawled: 2026-07-22
 reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
 
+## 2026-09-04 — Counterpoint Research data show CXMT's global DRAM share nearly tripled year over year
+
+- **CXMT's share of the global DRAM market by revenue reached 10% in Q2 2026, up from about 4% a year earlier**, according to Counterpoint Research data reported by TechNode — enough to push the combined share of Samsung (39%), SK Hynix (26%) and Micron (25%) down from 94% to 87% and put CXMT in fourth place globally. A separate Wall Street Journal figure cited the next day put CXMT's share slightly higher, at 11%, against Micron's 25%. For the IPO this thread tracks, a fourth-place global share is the number the prospectus will lead with, and the year-over-year tripling is the growth story behind the listing. ([Counterpoint Research](https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share), [TechNode](https://technode.com/2026/09/04/changxin-memory-reaches-10-of-global-dram-market-in-q2/), [The Motley Fool, citing WSJ](https://www.fool.com/investing/2026/09/05/chinas-memory-chip-stock-almost-as-good-as-micron/)) ⟨daily 2026-09-06⟩
+
 ## 2026-08-31 — CXMT ships its first HBM3E chips, small-batch only, at ~25% yield
 
 - **CXMT has begun small-batch production of HBM3E (high-bandwidth memory used in Nvidia H200/Blackwell-class accelerators)**, per The Information citing two insiders; Alibaba's T-Head chip-design unit and Cambricon are testing the silicon for possible integration into commercial processors as early as 2027. Yields are reported around 25%, and CXMT is still assessed 3-5 years behind Samsung/SK Hynix/Micron, who are already in HBM4 mass production. Its ~$8.6B Shanghai IPO prospectus reportedly earmarked no capital specifically for HBM development. ([the-decoder.com](https://the-decoder.com/chinas-cxmt-makes-its-first-hbm3e-chips-closing-the-ai-memory-gap/), also carried by [Investing.com](https://www.investing.com/news/stock-market-news/china-memory-leader-cxmt-begins-smallbatch-production-of-hbm3e-silicon--report-4882862)) ⟨daily 2026-08-31⟩

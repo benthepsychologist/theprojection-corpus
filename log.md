@@ -8415,3 +8415,197 @@ next.
 
 Committed and pushed as the last act of the session, with this run's
 collector and publish provenance manifests.
+
+## 2026-09-05 ~15:00 ET (Saturday) — /daily (afternoon extend) — ⚠️ reconstructed on the 2026-09-06 run: the session never closed
+
+**Written 2026-09-06 from the working tree, not by the session that did
+the work.** The 09-06 run found the afternoon extend's edits sitting
+uncommitted — six digest files, five timeline files, `threads.yaml`, four
+graph files, the audio generator — with no log entry, no commit, no push,
+no publish manifest and no readouts refresh. Everything below is read off
+the diff and the staging directory (`buffer/sweeps/2026-09-05-pm/`); where
+the digest text claims something the tree does not evidence, that is said.
+
+**What ran.** Six cluster sweeps (A frontier labs/China, B capex/power/
+sites, C geopolitics, DE mental health, FG capital, H governance/legal)
+over all 100 open threads for the 10:45 → 15:00 ET window, a buffer-triage
+agent (Z) whose primary target was the 610-row `openalex` batch that had
+landed at 14:54Z after the morning run committed, a main-session staging
+file (M), and a second round of collector lanes launched at 19:00Z. Merge
+marker `MERGED-20260905T1916Z`: **four entries merged across four threads
+from eight staging files, zero deletions**, `last_seen` bumped on
+`enterprise-agent-product-race`, `anthropic-infrastructure-buildout`,
+`ai-datacenter-sites`, `datacenter-backlash-capital-risk`.
+
+**What it found.** Fortune's Friday-evening report that OpenAI changed
+several of GPT-6 Astra's published benchmark figures after launch
+(hallucination 4.2% → 2% → 4.2%; Sol's ExploitBench 5.5% → 11.5% on a
+reasoning level OpenAI says is not commercially available; ARC-AGI-3 98.6%
+→ 99.99%), filed as a 🌙 late catch in `2026-09-04-frontier-ai.md` and
+resolving the "transcription oddity" the 09-04 critic had logged. The
+Independent/WSJ's ~$265m tally of AI-industry midterm pledges, set against
+the data-center backlash for the first time. Two out-of-window corpus gaps
+Sweep B flagged and the main session verified: FluidStack — the
+counterparty on Anthropic's ~$50bn capacity agreement — at an $18bn
+valuation per Forbes (09-03; no prior mention anywhere in the corpus), and
+the Piedmont, Oklahoma referendum petition against Cloverleaf's up-to-1.5GW
+Project Open Sky with a Kingfisher County fallback option (08-20, five
+weeks late). The OpenAI copyright MDL docket advanced from #1742 to
+≥#1892 (sealed summary-judgment declarations; H's read said #1918). The
+Yemen day-2 toll (60+) picked up AFP wire corroboration, lifting the
+single-liveblog caveat. Ledger re-checks: Canada's 09-08 counter-tariffs
+still on per Finance Canada; the envoys had met Putin with no readout; the
+Kyiv pause had not yet begun (midnight Moscow = 17:00 ET).
+
+**The `openalex` batch:** all 610 rows read, all noise — 90 two-or-more-
+term rows opened individually, every tracked term returning exactly 25
+rows (a page-size artifact). First time that file had been read.
+
+**Graph:** `06_timelines` was run — four new claim atoms (the four merged
+entries), nine sources, nine relationships, one annotation under
+`ep-daily-2026-09-05`; `validate.py` OK at 4,750 atoms.
+
+**Tooling.** ✏️ `sources/generate_audio_briefing.py` patched so the Gemini
+TTS call reports `finish_reason` and `prompt_feedback` instead of dying on
+a bare `'NoneType' object has no attribute 'parts'` when a candidate comes
+back with no content. **The patch was never tested** — the digest says
+"the 15:00 ET publish is the first test," and no publish ran (last manifest
+`publish-2026-09-05T144552Z.yaml`; the site repo's last commit is the
+morning's). ⛔ BigQuery blocked, third day, re-confirmed.
+
+**⚠️ Two claims in the afternoon digest text that the tree does not
+support.** (1) "`google_news_rss` … was read by a dedicated pass when it
+did [land]" — there is no staging file for such a pass; Z's own file
+records that at 19:07Z the file had not grown, and the merge marker is
+19:16Z, nine minutes before the lane landed at 19:25Z. The afternoon
+`google_news_rss` append and the 19:56Z `openalex` append were therefore
+**unread** until the 09-06 run's Z agent was briefed to read every 09-05
+row published after 14:00Z. (2) "Six afternoon sweeps … thirteen 'nothing
+new' verdicts" — consistent with the staging files. The `as_of`
+timestamps, Curated-from lines and Map-changes sections in all five 09-05
+digests are the afternoon session's and stand.
+
+**Not done by this session, done by the 09-06 run instead:** log entry
+(this one), commit and push (folded into the 09-06 close, with the
+afternoon's ten untracked provenance manifests), readouts refresh and
+publish (the 09-05 afternoon extension reached the public site only with
+the 09-06 publish).
+
+## 2026-09-06 ~10:00 ET (Sunday) — /daily: three buffer-present misses on a day every benchmark was dark, the week's biggest AI story caught two days late in a file three passes had read, and an afternoon session that never closed
+
+**Finalized 09-05 (all four lenses + front), opened 09-06.** The run
+started at 10:00 ET, five hours after the 09-05 digest-day closed, and
+found the Saturday-afternoon session's work sitting uncommitted — six
+digests, five timelines, `threads.yaml`, the graph, the audio generator —
+with no log entry, no commit, no publish. Reconstructed as its own entry
+above; folded into this close. All ten collector lanes launched at 14:03Z
+as separate processes with the right environment; `rss` landed in two
+minutes, `gdelt` in eleven, `google_news_rss` at 14:28Z (4,324 rows) after
+every cluster sweep had closed — fifth run running — and was read by the
+triage agent, which was briefed to wait for it. Five cluster sweeps over
+all 100 open threads (labs/China/governance merged for a Sunday; capex;
+geopolitics with a front-page scan; mental health; capital), three
+coverage critics, a buffer triage, and a main-session staging file.
+**Eleven timeline entries merged across ten threads from four staging
+files, zero deletions; `last_seen` bumped on ten; one ledger item hit; one
+logged; two watchlist terms added; three late catches into earlier days.**
+
+**The news.** The envoys reached Kyiv by train from Rzeszów — the first
+visit to Ukraine's capital by this administration's envoys, a day after
+three hours with Putin — and the only readout is the White House's
+"substantive plans for next steps" in coming weeks (`russia-ukraine-war`,
+ledger hit). The Kremlin's pause on Kyiv strikes held for the city through
+its first night while 108 drones and missiles killed nine elsewhere in
+Ukraine. An IAEA-brokered local ceasefire took effect Saturday at the
+Zaporizhzhia plant to repair its last power line, sixteen days into a
+diesel-generator outage the agency says could become a station blackout
+within days — an outage this map had not recorded (09-05 late catch).
+Iran's parliament speaker declared the "era of proportionate responses"
+over (`iran-conflict-widening`). Yemen day three, Lebanon night two, the
+Zeitoun mass funeral, Saxony-Anhalt voting with the AfD favoured (result
+after the cut; logged as an expectation). From the finalize: Anthropic's
+Fermat formalization (09-04), OpenAI's prime-gaps paper (09-03), Japan's
+$550bn pact re-pointed at AI and chips (09-04), CNBC's tally of the Fed
+pressure campaign (09-05), the Journal's Lykos recapitalization (09-05),
+CXMT's 10% DRAM share cross-posted to its own thread (09-04), the arXiv
+"AI psychosis as a clinical entity" paper (08-25).
+
+**The critic pass, and what it found about the finalize.** All twelve
+daily benchmarks dark for a Saturday, verified outlet by outlet, so the
+brief ordered the first formal run of the wire backstop `coverage-log.md`
+has carried since late August. Three misses, one per lens, **every one in
+Saturday's own `google_news_rss` buffer**: Fermat (six rows across two
+days, zero corpus mentions), the Japan pact (nine rows, eight tagged to
+the AI lens by term match), Lykos (one row). Three triage passes had read
+that file on 09-05 — by thread terms. None of the three stories is named
+by any thread; the critics found them by searching the same file for org
+names and by reading wires. The 09-03 rule (read the buffer) and the 09-05
+rule (act on the critic) both held; **the triage method is what failed.**
+Memory written (`buffer-triage-needs-name-search`): Z gets a name pass,
+critics get a weekday wire scan. Two carried assignments closed: the
+prime-gaps paper found from OpenAI's own PDF ("the proof is due to GPT 6
+Astra"), the clinical-trials conditions-field claim spot-checked clean on
+eight live registry reads.
+
+**Verification calls made in the main session.** Sweep C's Ghalibaf entry
+re-sourced from Kurdistan24/Azernews to CNBC and Anadolu (resolved from
+their own RSS); its Gaza bullet stripped of two figures the cited pages
+did not carry. Sweep FG's CXMT "gap" was already in Friday's frontier-AI
+digest — accepted only as a cross-post to `cxmt-memory-ipo`, process
+narration removed from the bullet. Sweep B's FluidStack addendum declined
+(TechTimes-only revenue projections from an unnamed memo). The critic's
+"212 → 186" prime-gap framing dropped: the paper's own introduction cites
+246 (Polymath 8b) as the bound it builds past. The ZNPP ceasefire sourced
+to Ukrinform carrying the IAEA statement after iaea.org refused every
+transport (the Ukrinform URL came from its weekly sitemap; every search
+engine and feed had failed). `e=japan` is not a watchlist or board slug —
+the Japan-pact bullet carries `e=united-states`.
+
+**Map.** Watchlist: `Lykos Therapeutics`, `Resilient Pharmaceuticals`
+(critic-add). Ledger: `witkoff-kushner-kyiv-visit-0906` hit;
+`kremlin-kyiv-strike-pause-0908` annotated (first night held);
+`saxony-anhalt-election-result-0906` logged (due today, resolves next
+run); `decart-acquisition-close` into its last day of grace. Standing
+synthesis refreshed for `united-states`, `anthropic`. Candidates offered:
+a frontier-lab formalization/mathematics thread (first offer, with terms
+`Lean proof`, `Mathlib`, `autoformalization`, `Prove2Me`), the Japan–US
+$550bn pact (first offer), Thinking Machines as an entity (second offer).
+Dropped: Venezuela (two offers), the Clancy case (third, deliberate), the
+ABA saga (two). Flash: none — Saxony-Anhalt is a scheduled election whose
+result is not in. No interpretation today: the 09-05 one written to the
+Tuesday-open gap stands, and Ghalibaf's statement sharpens its first
+scenario without being evidence for it.
+
+**Tooling.**
+- ⛔ **BigQuery, fourth consecutive day.** `build-world-news` still fails;
+  only an interactive `gcloud auth login` clears it. The candidate pool is
+  the 09-03 build; Venezuela dropped with the pool frozen.
+- ✅ **The audio-generator patch works.** Run on the 09-05 front digest at
+  14:12Z, it produced the mp3 that failed on Saturday; the failure was a
+  transient empty candidate from the TTS API.
+- ✅ All lanes launched with `CLOUD_RESEARCHER_CORPUS` + `KESTREL_INSTANCE`
+  + `KESTREL_CONTACT_EMAIL`. `sec_edgar` ten minutes of HTTP 500s, zero
+  rows; `federal_register`, `clinicaltrials` zero rows — a Sunday.
+  `github` 6. `openalex` 429-throttled; `epfr_flows`, `semantic_scholar`
+  see the lane log.
+- ⚠️ **The mental-health sweep ran 27 minutes** against 3-8 for its
+  siblings (26 threads + PubMed + the Governor's newsroom + the buffer)
+  and closed only when prompted; the merge waited on it. Split it back
+  into D and E next time, or brief a hard stop.
+- ⚠️ **The Z agent's brief told it to wait up to 15:00Z for `openalex`**
+  — too long; the workhorse lane is the one worth waiting for (~25 min),
+  `openalex` (~55 min) can be read by the main session.
+- ⚠️ One sweep prompt was dispatched empty (the DE sweep) and had to be
+  relaunched — a main-session slip, not a tool defect.
+- 📋 Access notes carried into `coverage-log.md`: FT Unhedged's working
+  RSS path; TLDR's 307; The AI Daily Brief's teaser; MobiHealthNews's
+  live-timestamp-no-items signal; Fierce's out-of-order feed; wsj.com and
+  iaea.org do not fetch; CNBC serves through the reader proxy;
+  `news.google.com` rate-limits the proxy; investing.com permanently
+  blocked.
+
+**Graph fed after the finalize:** `07_digest_bullets` (18 new S1, 1,542
+cross-posted merges), `06_timelines` (10 new S2, 643 bumped, 953
+ambiguous), `03_expectations` (1 hypothesis claim), `09_critic_annotations`
+(13 process-only). `graph/validate.py`: **OK — 4,779 atoms, 3,077 sources,
+7,842 relationships, 1,224 annotations, 127 extraction_passes.**

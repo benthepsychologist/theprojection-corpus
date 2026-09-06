@@ -1,15 +1,18 @@
 ---
 lens: mental-health
 date: 2026-09-05
-status: building
+status: final
 window_start: 2026-09-05T05:00:00-04:00
-as_of: 2026-09-05T10:45:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-05
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Saturday. Sources: two
+*Curated agentic-interim, 05:00 ET Saturday → **05:00 ET Sunday**. Built at
+10:45 ET, extended at 15:00 ET (one combined sweep over all 26 lens threads,
+which found nothing dated after the morning cut), and **finalized on the
+09-06 run** — a lens sweep and a buffer triage over the Saturday-evening
+window, plus the coverage critic appended below. Sources: two
 sweeps over the lens's 26 threads (regulation, clinical safety and payers;
 the evidence base and big tech's health arms), a PubMed E-utilities pass
 over eight journals for 09-04/05, the deterministic lanes
@@ -45,7 +48,7 @@ was read that way.
 ## Regulation & legislation
 
 Nothing dated 09-05. The Governor's newsroom carried no action on any of
-the five California bills through Saturday morning; SB 903, SB 1119 and
+the five California bills through Saturday afternoon (re-read at 15:00 ET); SB 903, SB 1119 and
 AB 2575 remain at "engrossing and enrolling," SB 503 and AB 1979 on the
 desk, all five due 09-30. No Federal Register document on 09-04 or 09-05
 touched mental or behavioral health, digital therapeutics, psychedelics or
@@ -157,3 +160,80 @@ so — which the benchmarks file should carry alongside its weekend note. The
 funds might reach youth mental health (09-03) were Cloudflare-blocked and
 are flagged for a pass with better access rather than written from
 snippets.
+
+## 🌙 Late catch — the 09-05 evening window (15:00 ET → 05:00 ET)
+
+One item dated 09-05 reached the record on the finalize, and it was in
+Saturday's afternoon buffer, not the evening's:
+
+- **Antonio Gracias, the SpaceX director and Musk ally, put $25 million of
+  family-foundation money into recapitalizing Lykos Therapeutics — the
+  sponsor whose MDMA-assisted-therapy application for PTSD the FDA
+  rejected in 2025 — taking control, renaming it Resilient Pharmaceuticals
+  and moving it to Chicago, the Wall Street Journal reported on Saturday,
+  alongside a $16 million Harvard professorship on psychedelics he endowed
+  and earlier trial funding from fellow SpaceX director Steve Jurvetson.**
+  The Journal's frame is that Musk's inner circle is now the capital behind
+  mainstreaming psychedelic psychiatry, on top of the April executive order
+  already on this thread. For the regulatory sprint it means the rejected
+  application's sponsor is refinanced and renamed rather than gone, so any
+  resubmission arrives under a name this map did not have — both names are
+  watchlist terms from today. ⚠️ The Journal's text could not be read
+  directly; the facts are from its syndicated pickup, which names the
+  Journal as the original reporter. In Saturday's buffer at 16:00Z under
+  the Journal's own headline; found by the coverage critic's wire
+  backstop.
+  ([IBTimes Australia, carrying WSJ](https://www.ibtimes.com.au/billionaires-back-psychedelic-therapies-1875100))
+  <!-- k: t=psychedelic-regulatory-sprint axis=capital -->
+
+Nothing else dated 09-05 landed after the afternoon cut: the Governor's
+newsroom carried no weekend action on the five California bills; PubMed
+returned nothing for 09-05 across the eight journals; no weekend statement
+from Character.AI, OpenAI, xAI or Meta on companion or teen safety; the
+thirteen post-19:00Z rows of Saturday's workhorse lane that matched a
+mental-health term were a fashion piece, a Grok feature listicle and a
+researcher profile.
+
+## 🔍 Coverage critic — digest-day 2026-09-05
+
+**Verdict:** one real miss, found by the wire backstop, on a day when the
+named benchmark set was a null result end to end: all four daily trade
+outlets dark for Saturday (Behavioral Health Business and Fierce
+weekday-only by their own feeds; STAT Health Tech a Tuesday/Thursday
+letter; MobiHealthNews advancing its build timestamp with no new items),
+both weekly journals and the four-journal academic backstop tier at zero
+on PubMed. The miss — **the Journal's account of Musk-circle money
+recapitalizing Lykos** — sat in Saturday's buffer under its own headline
+and was a curation failure, not a collection one. The carried assignment
+came back clean: eight rows of the 09-05 `clinicaltrials` batch that the
+digest did not name were opened on the live registry, all eight real
+mental-health conditions and all eight administrative updates, exactly as
+the digest's conditions-field read said.
+
+| benchmark | state | evidence |
+| --- | --- | --- |
+| Behavioral Health Business | dark | `lastBuildDate` Thu 09-03 21:24 GMT; newest item 09-03 |
+| STAT Health Tech | dark (Tue/Thu cadence) | newest item Thu 09-03 13:18 GMT; its own copy: "every Tuesday and Thursday" |
+| Fierce Healthcare | dark for 09-05 | newest item Sep 4 12:21pm; nothing dated Sep 5 |
+| MobiHealthNews | dark | `lastBuildDate` Sat 18:00 ET with newest item Fri 17:43 ET — a live build timestamp, no content |
+| JMIR Mental Health · npj Digital Medicine | dark | PubMed `2026/09/05[pdat]`: zero |
+| JAMA Psychiatry · Lancet Psychiatry · AJP · Nature Medicine | dark | PubMed: zero each |
+
+**They led with → we missed:** the Lykos recapitalization (curated above
+and onto `psychedelic-regulatory-sprint`). **Ruled not misses:** a
+09-05-dated piece on the VA's psychedelic trial (a republication of the
+08-05 launch); the Hi Rasmus $50m round (in the 09-03 digest). **Both
+covered:** nothing — there was nothing to cover against. **We had → they
+didn't:** the conditions-field read of the trials batch, the Governor's
+desk status, the Clancy mistrial's policy tail.
+
+**Structural:** a Saturday check against this benchmark set is a null
+result by construction and the real recall risk sits with wire and
+general press, which is where the miss came from; STAT Health Tech's
+cadence belongs in the benchmarks file so it stops reading as dark every
+Friday-to-Monday. **Acted on:** `Lykos Therapeutics` and `Resilient
+Pharmaceuticals` added as watchlist terms — the sponsor of the rejected
+application was on the thread since 08-24 and never a sweep term, and the
+rename would have orphaned it. **Proposed:** watch the thread for
+named-funder capital moves, not only regulatory milestones. **Access:**
+wsj.com does not fetch; cite the syndicated pickup that names the Journal.

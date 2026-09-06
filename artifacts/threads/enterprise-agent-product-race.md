@@ -17,9 +17,37 @@ get disclosed.
 
 - **Sam Altman publicly apologized for the Astra launch's staged access, which prioritized OpenAI's own Daybreak cybersecurity-tester cohort and left paying ChatGPT subscribers — including Pro subscribers, who normally get first access to new releases — watching enterprise customers go first instead.** In his own words on X: "first, sorry for the messy rollout. second, when we screw up, we try to make it right. third, we should be able to begin broad rollout to API customers and chatgpt subscribers in the near future. as usual we will start with pro subscribers." OpenAI is compensating with "one banked reset for every day you don't have access to Astra on your paid ChatGPT plan," and Altman said he was hopeful (not promising) Pro subscribers could use it over the 09-05/09-06 weekend. This directly complicates this thread's own 09-03 entry, which read Astra reaching "Business and Enterprise tiers alongside Plus and Pro within days" — the "within days" promise ran into the same Daybreak-first gating that `frontier-model-gov-review-precedent` already tracks as this thread's lab-run access-control pattern. ([Sam Altman on X](https://x.com/sama/status/2095678759651438887), [The Verge](https://www.theverge.com/ai-artificial-intelligence/990060/altman-apologizes-messy-astra-rollout), [Unite.AI](https://www.unite.ai/sam-altman-apologizes-as-gpt-6-astra-staged-launch-denies-paid-access/)) ⟨daily 2026-09-04⟩
 
+- **OpenAI silently changed several of GPT-6 Astra's headline benchmark
+  figures in the hours and days after its own launch post went up, Fortune
+  reported, rather than the independent-evaluator gap this thread already
+  has on record.** Astra's stated hallucination rate went from 4.2% (in the
+  version live at 2:23pm ET on launch day) to 2% roughly three hours later,
+  then back to 4.2%. On ExploitBench, the score OpenAI published for
+  predecessor GPT-5.6 Sol changed from 5.5% to 11.5%, which OpenAI told
+  Fortune reflects "a reasoning level that is not commercially available"
+  for Sol — i.e., the comparison model was tested with a configuration
+  customers cannot actually buy. On ARC-AGI-3, an embargoed draft carried
+  98.6%, the live blog post read 99.99%, and the Arc Prize Foundation's own
+  "powerful harness" test scored it 99.9% against 63% on the standard
+  harness — explaining a discrepancy the 09-04 digest's coverage-critic
+  flagged and left unresolved (two AI newsletters had quoted a 99.9%/99.99%
+  figure matching neither the 98.6% headline nor the then-known 62.7%
+  standard-harness number). OpenAI's on-record response: "we care deeply
+  about getting evaluations right. Most evaluations have noise within a few
+  percentage points based on the exact checkpoint, scaffold, and eval run
+  used in reporting," calling draft-to-final adjustment standard practice.
+  Some outside researchers call it "benchmaxxing." This is a new axis on
+  top of the Artificial Analysis/ARC Prize dispute already logged 09-04 —
+  not that outsiders measured differently, but that OpenAI's own published
+  numbers moved after the fact, and in one case a score for its own
+  predecessor model rose on a configuration customers cannot buy.
+  ([Fortune](https://fortune.com/2026/09/04/openai-quietly-boosts-some-of-astras-evaluation-metrics-amid-rare-delay-in-publication-of-the-modeblog-post-announcement/), [Startup Fortune](https://startupfortune.com/openai-changed-gpt-6-astras-benchmark-numbers-days-after-its-launch/)) ⟨daily 2026-09-05⟩
+
 ## 2026-09-03 — OpenAI markets Astra as "the world's best computer use model," publishing benchmark numbers and pricing it into Business/Enterprise ChatGPT tiers plus Azure and AWS
 
 - **OpenAI's launch materials call Astra "the world's best computer use model,"** citing an OSWorld 2.0 offline-subset score of 72.6% completed in roughly 40 minutes per task, against predecessor GPT-5.6 Sol's 65.7% at roughly 75 minutes per task — a claimed 47% completion-time improvement — for a model built to navigate browsers, spreadsheets, websites and desktop applications and carry out multistep agentic workflows. It reaches ChatGPT's Business and Enterprise tiers alongside Plus and Pro within days of the Thursday cybersecurity-tester-only start, plus the OpenAI API, AWS Bedrock and Microsoft Azure — priced at $10/million input and $50/million output tokens standard ($20/$100 in a 2.5x-faster "Fast" mode). ([TechCrunch](https://techcrunch.com/2026/09/03/openai-launches-astra-its-powerful-and-controversial-new-model/), [VentureBeat](https://venturebeat.com/technology/welcome-to-the-agi-era-openai-launches-gpt-6-astra)) ⟨daily 2026-09-03⟩
+
+- **OpenAI published a 39-page paper, "Improved Short Gaps Between Primes," proving that infinitely many consecutive primes differ by at most 186 — the paper's own introduction cites Polymath 8b's 246 from 2014 as the bound it builds past — and stating in its abstract that "the proof is due to GPT 6 Astra," with a machine-checked Lean formalization, as part of the 09-03 Astra launch materials.** The method combines Polymath 8a and Stadlmann's equidistribution estimates with new factorization conditions that enlarge the support of the multidimensional Selberg sieve, establishing DHL[40,2]; mathematicians Weijie Su and Perry Metzger noted the result the same day. The third lab pure-math claim in one week alongside Anthropic's Fermat formalization, and the second launch-day Astra claim this thread carries whose checking is left to outsiders. ([OpenAI — paper PDF](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), [Weijie Su on X](https://x.com/weijie444/status/2095600108956262911)) ⟨daily 2026-09-06⟩
 
 ## 2026-09-02 — Google's Gemini 3.8 Flash and Meta's Muse Spark 1.3 ship the same day, both pitched at long-horizon agentic work at workhorse prices
 

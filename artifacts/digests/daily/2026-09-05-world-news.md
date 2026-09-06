@@ -1,15 +1,18 @@
 ---
 lens: world-news
 date: 2026-09-05
-status: building
+status: final
 window_start: 2026-09-05T05:00:00-04:00
-as_of: 2026-09-05T10:45:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-05
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Saturday. Sources: a
+*Curated agentic-interim, 05:00 ET Saturday → **05:00 ET Sunday**. Built at
+10:45 ET, extended at 15:00 ET (an afternoon geopolitics sweep with a
+partial front-page scan), and **finalized on the 09-06 run** — a geopolitics
+sweep over all nine conflict and diplomacy threads with a full front-page
+scan, plus a buffer triage, over the Saturday-evening window. Sources: a
 geopolitics sweep over all seven world-news threads carrying a general
 front-page scan (AP, Reuters, BBC, Al Jazeera), two buffer-triage passes
 (`google_news_rss` 6,444 items, `gdelt` 90, `rss` 70), and the `gdelt`
@@ -106,7 +109,11 @@ diplomatic visit that went ahead are the day; nothing meets the invasion /
   the Americans' meetings in Kyiv.** The pause covers the city, not the
   country, and the nights ahead, not the one just past. Both halves are now
   dated expectations on the ledger: the visit on 09-06 and the pause
-  through 09-08.
+  through 09-08. By 15:00 ET the envoys had met Putin and neither side had
+  issued a substantive readout; the Kyiv leg stood as scheduled with no new
+  confirmation or slip, and the pause — midnight Moscow is 17:00 ET — had
+  not yet begun, with nothing found reaffirming, conditioning or withdrawing
+  Peskov's line since the morning.
   ([UNN, quoting Peskov](https://unn.ua/en/news/putin-instructed-that-no-strikes-be-carried-out-against-kyiv-for-three-days-peskov), [Kyiv Post](https://www.kyivpost.com/post/83846), [CNN](https://www.cnn.com/2026/09/05/europe/witkoff-kushner-moscow-kyiv-proposal-war-intl))
   <!-- k: t=russia-ukraine-war e=united-states,russia axis=diplomacy -->
 
@@ -119,8 +126,8 @@ diplomatic visit that went ahead are the day; nothing meets the invasion /
   Government forces claimed to have retaken some of the hills; Houthi
   officials renewed threats to close Bab al-Mandab if Gulf states join the
   wider war. Distinct from the Houthi maritime campaign, which stays on
-  the Red Sea threads. ⚠️ Saturday's count is a single liveblog's;
-  Friday's is wire-corroborated.
+  the Red Sea threads. Saturday's count, first seen in a single liveblog,
+  was carried with the identical breakdown by AFP's wire later in the day.
   ([Arab News, AFP](https://www.arabnews.com/middle-east/more-than-120-killed-in-yemen-clashes-since-thursday-sources-3000492), [Al Jazeera](https://www.aljazeera.com/news/2026/9/4/yemens-army-says-recaptured-key-territory-as-clashes-with-houthis-continue), [Gulf News](https://gulfnews.com/world/gulf/yemen/yemen-sees-worst-clashes-in-years-as-fighting-kills-129-1.500664105), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog-september-05-2026/))
   <!-- k: t=yemen-civil-war axis=military sev=major -->
 
@@ -196,3 +203,46 @@ The general front-page scan ran on AP, Reuters, BBC, Al Jazeera and a
 non-Western wire and found nothing at flash level. `google_news_rss`
 landed at 14:25Z, twenty-five minutes after launch and after the first
 triage pass had closed; a second dedicated pass was dispatched on it.
+
+## 🌙 Late catch — the 09-05 evening window (15:00 ET → 05:00 ET)
+
+- **A localized ceasefire brokered by the IAEA took effect on Saturday
+  around the damaged 330-kilovolt Ferosplavna-1 line at the Zaporizhzhia
+  Nuclear Power Plant, so that Ukrainian technicians could begin repairs
+  after demining — the seventh such truce of the war, at a plant that has
+  had no external power since 08-20 and has been cooling six reactors and
+  its spent-fuel pools on diesel generators since.** Director General
+  Grossi said the plant is running low on diesel and faces a possible
+  station blackout within days unless off-site power is restored or fuel
+  can be brought through an active war zone; an IAEA team is monitoring
+  the repair. The same day the Kremlin announced a three-day pause on Kyiv
+  strikes, a narrower ceasefire was already in force five hundred
+  kilometres to the south-east — and this map had not recorded the
+  sixteen-day outage that made it necessary; the item was in Saturday's
+  buffer under a finance-newsletter headline and reached the record on the
+  finalize.
+  ([Ukrinform, carrying the IAEA statement](https://www.ukrinform.net/rubric-economy/4161160-local-ceasefire-announced-near-zaporizhzhia-npp-to-repair-power-line-iaea.html), [IAEA Update 365](https://www.iaea.org/newscenter/pressreleases/update-365-iaea-director-general-statement-on-situation-in-ukraine))
+  <!-- k: t=russia-ukraine-war e=russia axis=nuclear -->
+- **The Kremlin's pause on strikes against Kyiv took effect at midnight
+  Moscow time and held for the city through its first night, while Russia
+  launched 108 drones and missiles at the rest of Ukraine from 18:00 and
+  killed at least nine** — Kharkiv four, Kherson three, Zaporizhzhia one,
+  Mykolaiv one, 68 injured, 82 drones and six Banderol missiles
+  intercepted, no hits reported inside Kyiv despite an alert and fires in
+  the oblast. The night straddles the digest-day boundary and is carried
+  in full on the 09-06 digest and `russia-ukraine-war`; it is here because
+  the pause's first test fell inside Saturday's window and passed in the
+  exact shape Peskov stated — the capital, not the country.
+  ([Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-8-injure-69-over-past-day/), [Ukrinform](https://www.ukrinform.net/rubric-ato/4161307-air-defense-neutralizes-82-russian-drones-six-banderol-missiles-overnight.html))
+  <!-- k: t=russia-ukraine-war e=russia axis=military -->
+
+Nothing else dated 09-05 landed after the afternoon cut: Iran issued no
+formal response to the tanker strikes on Saturday — its parliament
+speaker's statement came Sunday morning and is on the 09-06 digest; the
+envoys' Kyiv leg stood as scheduled overnight and happened Sunday (the
+ledger item resolves as a hit there); Yemen's third day, Lebanon's second
+night and Gaza's mass funeral are all Sunday events. The general
+front-page scan (AP, Reuters, BBC, Al Jazeera) found nothing at flash
+level; Saxony-Anhalt's state election on Sunday, where the AfD led the
+polls, is the one general-news item it raised, and it is on the 09-06
+digest as an item to be resolved after polls close.

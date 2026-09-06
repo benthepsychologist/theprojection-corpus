@@ -412,6 +412,26 @@ the tracker (Yahoo Finance 58%, TheStreet 60.2%, Investrade 65% — the live
 CME tool cannot be snapshotted after the fact, so the spread is reported
 rather than one number) · **Yen** 155 range, one-month high.
 
+- **Japan's trade minister Ryosei Akazawa said in Washington on Friday,
+  after meeting Commerce Secretary Lutnick and Trade Representative Greer,
+  that progress is being made on the $550 billion investment vehicle set up
+  under last year's tariff deal, that discussions on artificial intelligence
+  and semiconductors will carry "very significant weight" in the next round
+  of projects, and that the two sides confirmed no additional tariffs will be
+  imposed on Japan beyond that agreement.** Two project rounds have been
+  announced so far — $36 billion in US oil, gas and mineral projects
+  including an Ohio gas facility, and $73 billion for a nuclear project
+  across Tennessee and Alabama and gas plants in Pennsylvania and Texas;
+  Akazawa declined to detail a third. The vehicle was the central pillar of
+  the deal that set US levies on Japanese goods at 15%, and its re-pointing
+  toward AI and chips puts sovereign Japanese money into the same buildout
+  this lens tracks through vendor financing and hyperscaler capex. Nine rows
+  of Saturday's buffer carried it, eight tagged to the AI lens by term
+  match; caught by the 09-06 coverage critic's wire backstop. No thread
+  holds a sovereign investment pact — a candidate on the 09-06 digest.
+  ([Bloomberg, via Energy Connects](https://www.energyconnects.com/news/gas-lng/2026/september/japan-says-progress-made-on-550-billion-investment-pact-with-us/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-05/japan-says-progress-made-on-550-billion-investment-pact-with-us))
+  <!-- k: e=united-states axis=policy -->
+
 ## 🔍 Coverage critic — digest-day 2026-09-04
 
 **Verdict:** one real miss, and it is the **sixth** documented instance of

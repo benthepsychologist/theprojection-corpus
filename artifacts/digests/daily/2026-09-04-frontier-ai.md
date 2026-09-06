@@ -402,6 +402,46 @@ MAI-Transcribe-2 (09-03) likewise. The "Concord II" music-copyright docket's
 Dario Amodei and Benjamin Mann named personally there too — on
 `anthropic-copyright-exposure`.
 
+- **OpenAI changed several of GPT-6 Astra's headline benchmark figures in
+  the hours and days after its launch post went live, Fortune reported on
+  Friday evening — Astra's stated hallucination rate went from 4.2% to 2%
+  and back to 4.2%; predecessor GPT-5.6 Sol's ExploitBench score rose from
+  5.5% to 11.5% on what OpenAI says was "a reasoning level that is not
+  commercially available" for Sol and is now "investigating reverting"; and
+  the ARC-AGI-3 figure went from 98.6% in the embargoed draft to 99.99% in
+  the live post.** OpenAI's line is that "adjustments between draft and
+  final version are normal" and that evaluations carry "noise within a few
+  percentage points based on the exact checkpoint, scaffold, and eval run."
+  The Arc Prize Foundation's own assessment gave 99.9% on a "powerful
+  harness" and 63% on the standard one. This resolves the "transcription
+  oddity" this digest's critic pass logged — the newsletters quoting 99.9%
+  were reading the live post — and adds a second axis to the benchmark
+  dispute already on the record: not that outsiders measured differently,
+  but that the company's own published numbers moved after publication.
+  Published 20:12 ET, so a 09-04 event, caught on the 09-05 afternoon run.
+  ([Fortune](https://fortune.com/2026/09/04/openai-quietly-boosts-some-of-astras-evaluation-metrics-amid-rare-delay-in-publication-of-the-modeblog-post-announcement/))
+  <!-- k: t=enterprise-agent-product-race e=openai axis=product -->
+
+- **Anthropic said on Friday that Claude produced a complete, computer-
+  checked formalization of Fermat's Last Theorem in the Lean proof language,
+  working largely autonomously over eleven days: 13 million lines of Lean —
+  more than five times the size of Mathlib, the community library the proof
+  builds on — with 30,300 theorems proved along the way and 29,500 used in
+  the final proof, using only Lean's standard axioms, the largest Lean proof
+  ever written.** The work ran on Prove2Me, the open formalization platform
+  built by Tianyi Peng's group at Columbia, after a first attempt without it
+  failed; human input was limited to occasional high-level nudges. It closes
+  a community effort Kevin Buzzard kicked off in 2024 to formalize Wiles'
+  proof, and it is the second lab pure-mathematics claim of the week after
+  OpenAI's bounded-prime-gaps paper in the Astra launch materials (09-03,
+  now in `2026-09-03-frontier-ai.md`). The announcement sat in this map's
+  own buffer six times across two days — Anthropic's post, SiliconANGLE,
+  New Scientist among them — and was caught only by the 09-06 coverage
+  critic, two days late. Dated 09-04; no thread holds a lab research
+  milestone, so this is a digest-only record and a thread candidate.
+  ([Anthropic](https://www.anthropic.com/research/formalizing-fermats-last-theorem), [SiliconANGLE](https://siliconangle.com/2026/09/04/anthropic-uses-claude-to-formalize-proof-of-fermats-last-theorem/), [Anthropic on X](https://x.com/AnthropicAI/status/2095947707605266436))
+  <!-- k: e=anthropic axis=research -->
+
 ## 🔍 Coverage critic — digest-day 2026-09-04
 
 **Verdict:** four real misses, and the two that matter most are **repeats**:
@@ -433,7 +473,12 @@ fair-use brief, Microsoft's Copilot discovery figures, the Long-Term Benefit
 Trust scrutiny, the summary-judgment cross-motions — none touched by the
 three published product newsletters. **A transcription oddity:** Rundown AI
 and TLDR AI both quote Astra's ARC-AGI-3 score as 99.9%, matching neither
-the 98.6% headline figure nor the 62.7% standard-harness figure.
+the 98.6% headline figure nor the 62.7% standard-harness figure. *(✏️
+Resolved by the 09-05 afternoon run: Fortune reported that evening that
+OpenAI's live launch post had been changed from the embargoed draft's 98.6%
+to 99.99%, and that the Arc Prize Foundation's own assessment gave 99.9% on a
+"powerful harness" and 63% on the standard one — the newsletters were quoting
+the live post, not mis-transcribing. On `enterprise-agent-product-race`.)*
 
 **Structural:** the split is even — two misses the map saw and dropped, two
 it never saw. The curation half is the one with a fix already written down
