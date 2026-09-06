@@ -8609,3 +8609,20 @@ cross-posted merges), `06_timelines` (10 new S2, 643 bumped, 953
 ambiguous), `03_expectations` (1 hypothesis claim), `09_critic_annotations`
 (13 process-only). `graph/validate.py`: **OK — 4,779 atoms, 3,077 sources,
 7,842 relationships, 1,224 annotations, 127 extraction_passes.**
+
+**Published and closed.** `readouts --pack` × 4 (four sonnet briefing
+agents), `--apply` **4/4 after one mechanical repair** — the AI, Global
+Capital and Mental Health scopes each returned four `watch` lines against
+the shape's cap of three (the brief said "3-5"; the shape says 1-3 — the
+brief was wrong, trimmed); the front's gist was reworked once because the
+throughline's opening sentence, "The envoys reached Kyiv," made a
+four-word public gist. The three lens scopes each kept their two off-lens
+sections to two unlinked bullets, the honest shape when a lens pack carries
+no cross-lens URL. `--export` 154 readouts. `kestrel publish --push`: 66
+entity pages, 3 beat pages, 753 claim pages, **1,134 story pages** (2,027
+sources, 1,571 credibility-badged), 18 interpretation pages, 122 map pages,
+`data/readouts.json` at 154, **audio generated for 09-06** — the first
+successful audio publish since 09-04 — `provenance/publish-2026-09-06T144333Z.yaml`,
+site repo committed and pushed, Cloudflare build `9a0e38ee` queued at
+14:46Z. The 09-05 afternoon session's digest extension reached the public
+site with this publish.
