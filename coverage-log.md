@@ -5898,3 +5898,179 @@ benchmark — and the frontier-AI miss sat through three buffer-triage
 passes. The 09-03 rule ("read the buffer") and the 09-05 rule ("act on the
 critic") both held; what failed is the triage itself, which grepped the
 workhorse file by thread terms and never saw a story no term names.
+
+## 2026-09-07 critic pass — finalized digest-day 2026-09-06. Three lenses, one real miss, zero from the named benchmarks — and the pass's most consequential finding was an error inside the map rather than a story outside it
+
+**Shape of the pass.** Three critics, one per benchmarked lens, run on
+Monday afternoon against Sunday's editions, in a session with **no
+deterministic collectors at all** — the `cloud-researcher` CLI is not
+installed on this machine and `buffer/` does not exist, so there were no
+`google_news_rss`, `gdelt`, `rss`, `sec_edgar`, `federal_register`,
+`openalex`, `clinicaltrials` or `epfr_flows` rows for anyone to read. Every
+prior pass's real misses came out of the buffer via an organisation-name
+sweep. **That instrument did not exist today**, and the name pass had to be
+run live against the open web instead. Treat the recall guarantee on this
+day as materially weaker than the record shows, for that reason and one
+more: the wire backstop that replaced the benchmarks on the last two
+weekend passes was itself half-blocked, with Reuters returning 401 and AP
+blocked by the reader proxy's own anti-abuse throttle on two of three
+lenses.
+
+**The named benchmarks contributed zero misses across all three lenses for
+the third consecutive weekend pass.** They are a weekday instrument, as
+`sources/benchmarks.yaml` has said since 08-11. One correction to that
+generalisation is worth recording: **two AI benchmarks did publish on a
+Sunday** — The Neuron and The AI Daily Brief — so "Sunday means dark" is not
+a safe assumption to skip the check on, even though their content this time
+was retrospective or already on the map.
+
+### frontier-ai / 2026-09-06
+- **Missed (curation, one real item):** **authors say publishers and
+  literary agents are claiming shares of Anthropic's $1.5bn book-piracy
+  settlement they are not entitled to.** Under the July-approved
+  settlement, the authors of ~500,000 pirated titles get $3,000 per work,
+  split 50-50 with the publisher only where the book is still in print;
+  self-published and reverted-rights books pay 100% to the author. Writers
+  Beware's Victoria Strauss reported 09-04 that publishers are claiming
+  works whose rights reverted years ago and claiming 100% where owed 50%;
+  the Authors Guild's Mary Rasenberger told the NYT 09-05 she does not read
+  it as "a grab." Found via TechCrunch's 09-06 16:47 ET synthesis by **both**
+  the lens sweep and the critic independently. **Curated this pass** into
+  `2026-09-06-frontier-ai.md` as a 🌙 late catch, `e=anthropic`, **no
+  thread** — `anthropic-copyright-exposure` explicitly scopes this
+  settlement out as "a different, earlier case," so forcing it there would
+  have contradicted the thread's own watch text. Offered as a thread
+  candidate instead.
+- **Correction found, not a miss:** the digest's Meta AI-glasses bystander
+  amendment was dated **08-31**; Futurism's own account (published
+  2026-09-02 08:41 ET) says "amended yesterday," i.e. **09-01**. Corrected
+  at finalize, with the basis — an article's relative dating, not the
+  docket — stated on its face.
+- **Org-name sweep, run live:** caught and correctly discarded two false
+  positives that Google News re-served with fresh timestamps — a Grok CSAM
+  lawsuit (actual date 08-26) and an Anthropic Pentagon "supply chain risk"
+  ruling (08-27). The same volume-is-not-novelty failure this log has
+  recorded three times.
+- **Left open, deliberately:** a reported €3bn Mistral raise with Samsung
+  and Nvidia. Timestamped before this digest-day's window and no primary
+  source reachable at the cut. Flagged rather than asserted; carry it.
+- **Benchmarks:** The Rundown AI and TLDR AI dark, verified (feed contents;
+  TLDR's dated archive 307s for a missing edition). The Neuron and The AI
+  Daily Brief **published** — DSEWiki follow-up, a "five biggest stories"
+  retrospective, a thematic long-read. Nothing news, nothing missed.
+- **Not checked:** Bloomberg Technology; AP Technology (undated hub page);
+  the full Reuters/AP wire.
+
+### global-capital / 2026-09-06
+- **No miss inside the window, and the near-miss was correctly rejected.**
+  The pass's strongest candidate — Saudi Aramco facilities struck plus a
+  US-Iran naval exchange — checks out as dated **09-07**, one day outside
+  this digest-day's 05:00 ET Sun → 05:00 ET Mon boundary (FT publish
+  timestamp 2026-09-07T10:52:14Z; CNBC dates it "on Monday"). Correctly
+  held for the next digest-day, where this run curated it.
+- ⚠️ **The critic's own absence claim was wrong, and the main session
+  caught it.** It reported "corpus-wide grep for `aramco` came back empty."
+  It is not empty: `iran-conflict-widening` carries the 08-09 Jizan strike
+  with Saudi Energy Ministry confirmation and an earlier Jizan/Yanbu
+  attack, and `red-sea-oil-shock` carries the Yanbu throughput figure.
+  **The claim would have made a recurrence read as a first.** This is the
+  third time a scoped agent has asserted corpus-wide absence it could not
+  see; the brief demanded the grep and named the failure mode, and it
+  happened anyway. Verify absence claims in the main session — do not
+  accept a reported grep as a run grep.
+- 🔴 **The pass's real finding was inside the map: Brent's settlement
+  figure had been wrong for four days.** See the dedicated section below.
+- **Benchmarks:** Money Stuff, Axios Pro Rata, FT Unhedged and Bloomberg
+  Technology all dark for Sunday, each verified by feed item lists or
+  dated-archive jumps.
+- **Access:** Reuters 401 (login-gated). AP blocked by `r.jina.ai`'s own
+  anti-abuse throttle, unrelated to this session, time-boxed to ~20:11 UTC.
+  CNBC and Bloomberg-via-proxy worked but are rolling live pages with no
+  retrospective archive, so neither can confirm what they led with on a
+  specific past day. **Proposal, adopted into this log:** record backstop
+  access state the way `sources/benchmarks.yaml` already records benchmark
+  access state — the backstop is now the load-bearing instrument on
+  dark-benchmark days and its reachability is untracked.
+
+### mental-health / 2026-09-06
+- **No miss found — and the check is weaker than a clean verdict looks.**
+  All four benchmarks confirmed dark with specific evidence rather than
+  fetch failures. But **three of four wire-backstop channels failed on
+  access, not content**: Reuters CAPTCHA-walled (DataDome), AP's hub pages
+  client-rendered past what a raw fetch parses, the Bloomberg healthcare
+  section URL a 404 guess. Only FT's RSS was actually exercised. Since the
+  last two passes found every real miss through the backstop specifically,
+  a "no misses" verdict resting on one of four channels carries
+  correspondingly less weight, and is recorded that way rather than as a
+  clean pass.
+- **Access facts, tracked:** the **Googlebot-UA route to Behavioral Health
+  Business still works** (`curl -s -A 'Googlebot/2.1 …' https://bhbusiness.com/feed/`)
+  — newest item 09-03, out of window. **MobiHealthNews showed exactly the
+  live-timestamp-no-items pattern** this log documented: build timestamp
+  advanced into the window, newest actual item still Friday. That is "no new
+  content," not a fetch failure, and the two must not be conflated. Fierce
+  Healthcare's feed again served out of chronological order, with a
+  future-dated (09-30) webinar listing on top.
+- **Org-name sweep, 17 names, run live:** nothing dated 09-06/09-07 the map
+  lacks. It also correctly identified the UHS/Talkspace acquisition
+  surfacing in Fierce's out-of-order feed as old news, already closed and on
+  `mh-clinical-infra-funding` since 08-17.
+- **Structural proposal:** pin a verified AP/Reuters access route into
+  `sources/benchmarks.yaml` before the next dark-benchmark day. Wire-backstop
+  access is now the single point of failure in the recall guarantee, and it
+  failed on two lenses today.
+
+### 🔴 The Brent settlement was wrong for four days, and the map's own note defended the error
+
+Not a coverage miss — a data error the coverage pass surfaced, and the most
+consequential thing this pass produced.
+
+**The map carried Brent's Friday 2026-09-04 settlement as `$92.68`. The
+correct figure is `$96.28`.** It is a digit transposition. It entered on the
+09-04 afternoon run and propagated for four days into the 09-04, 09-05 and
+09-06 global-capital digests, the 09-05 and 09-06 front digests, the 09-05
+interpretation sidecar, the `red-sea-oil-shock` timeline, `readouts.json`,
+and the live public site.
+
+**The disproof was on the page the whole time, in the map's own numbers.**
+Recorded alongside the level were "+0.8% on the day" and "+7.6% on the
+week." Against the real series — 08-28 $89.31, 09-03 $95.52, 09-04 $96.28 —
+those are +0.80% and +7.8%, matching almost exactly. From $92.68 the same
+day would be **−3.0%** and the week **+3.8%**. The percentages were right;
+only the level was transposed. WTI's $91.48 and +10% week were transcribed
+correctly throughout, so the error was isolated to one number.
+
+**Worse than the typo: the map noticed the contradiction and resolved it the
+wrong way.** Secondary outlets reported $95-97 for 09-03 and 09-04. Rather
+than re-deriving the level from its own percentages, the 09-04 run wrote a
+note declaring the transposed settlement authoritative and dismissing the
+correct reads as "intraday or a different contract," and that note was
+copied onto the `red-sea-oil-shock` timeline. **A wrong number was defended
+against correct evidence for three days.** Both notes are now inverted in
+place and marked, rather than deleted.
+
+**Verified this pass against two independent instruments** plus a third
+consistency check: the daily settlement series; independent search
+consensus; and CNBC's own Monday report of Brent +1.5% at $97.73 — whose
+arithmetic implies a $96.28 reference close, confirming both the level and
+that it is Friday's settle rather than a Sunday-evening print. That third
+check matters because the global-capital critic proposed exactly the
+opposite reading, that $96.28 was a mislabeled Sunday print; its own
+arithmetic disproved its objection.
+
+**Second error in the same lens, same day:** the 09-06 digest said "markets
+are closed until Tuesday 09-08" and treated the lens as shut. **US cash
+equities and bonds were closed; oil was not.** Brent is an ICE London
+contract and WTI trades on CME Globex under modified holiday hours, and both
+reopened at 18:00 ET Sunday — **inside** that digest-day's own window. The
+digest stated the 18:00 ET reopen time on the very same line and still
+concluded nothing traded. Corrected at finalize on all three affected
+passages.
+
+**The lesson, stated so it survives:** this map now records a market level
+and a percentage change side by side. **They check each other, for free, in
+one line of arithmetic, and that check has never once been run.** Three
+separate oil-number errors have now reached the record (09-04 revision,
+09-05 two-day-stale figure, this transposition). Run the reconciliation
+before publishing a macro strip: if the level and the delta disagree, the
+delta is usually right, because it comes from the source that computed it.

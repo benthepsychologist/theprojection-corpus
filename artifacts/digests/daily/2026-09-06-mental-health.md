@@ -1,10 +1,9 @@
 ---
 lens: mental-health
 date: 2026-09-06
-status: building
+status: final
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-06
@@ -212,3 +211,38 @@ AI-chatbot crisis responses 404'd and was left out rather than written
 from a headline. The critic's benchmark set was a null result end to end
 for a Saturday, as the benchmarks file's own weekend note predicts; the
 one miss came from the wire backstop.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-07 at finalize. Full pass in `coverage-log.md`.*
+
+**Benchmark status.** All four **dark**, each verified with specific
+evidence rather than a failed fetch. Behavioral Health Business reached via
+the Googlebot user-agent route, which **still works** — newest item 09-03,
+out of window. MobiHealthNews showed the documented
+**live-timestamp-no-items** pattern: build timestamp advanced into the
+window, newest actual item still Friday. That is "no new content," not a
+fetch failure. Fierce Healthcare again served out of chronological order,
+with a future-dated 09-30 webinar listing on top. STAT is partially
+paywalled; its visible items were Novo Nordisk cardiovascular and diabetes
+stories, nothing on this lens.
+
+**They led with → we missed:** nothing.
+
+**Organisation-name sweep, 17 names, run live:** nothing dated 09-06/09-07
+the map lacks. It also correctly identified the UHS/Talkspace acquisition
+surfacing in Fierce's out-of-order feed as old news — closed and on
+`mh-clinical-infra-funding` since 08-17.
+
+**Clinical trials:** ClinicalTrials.gov returned zero studies with a last
+update posted in the window, on both a depression query and a combined
+psilocybin/MDMA/ketamine/TMS/neuromodulation query.
+
+⚠️ **Read this "no misses" verdict as weaker than a clean pass.** There were
+**no collectors this session**, so no PubMed or ClinicalTrials lane rows to
+sweep, and **three of four wire-backstop channels failed on access rather
+than content** — Reuters CAPTCHA-walled, AP client-rendered past a raw
+fetch, the Bloomberg healthcare URL a 404. Only FT's RSS was actually
+exercised. The last two passes found every real miss through the backstop
+specifically, so a verdict resting on one of four channels carries
+correspondingly less weight.

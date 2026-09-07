@@ -26,7 +26,7 @@ Friday's 15:00 ET cut — the close, the yen, Anthropic's slip — is in
 
 ## Today's throughline
 
-Brent settled Friday at $92.68, up 7.6% on the week — its steepest weekly
+Brent settled Friday at $96.28, up 7.6% on the week — its steepest weekly
 gain in months — with WTI up 10% and US diesel at a record $5.85 a gallon,
 on the Gulf-base strikes, Ukrainian refinery hits and a Hormuz transit
 count that fell to four vessels on Thursday against a fifteen-a-day
@@ -42,7 +42,7 @@ Downy was struck in its waters. Every prior oil event in this war — the
 Sidr tanker toll, the sixteen ADNOC hits, the Gulf-base strikes that
 whipsawed Brent between $95 and $99 this week — has been a shipping and
 underwriting story. A strike at the export terminal's own anchorage is
-the first that could reprice the terminal, and with Brent's last settlement at $92.68 — up 7.6% on the week, its steepest weekly gain in months — and no US session until 09-08, the first print to
+the first that could reprice the terminal, and with Brent's last settlement at $96.28 — up 7.6% on the week, its steepest weekly gain in months — and no US session until 09-08, the first print to
 carry it is three days away. The interpretation below is written to that
 gap.
 
@@ -71,7 +71,7 @@ place for matches to land rather than a recurring line in the coverage log.
   crew abandoned ship; no casualties either side. Kharg Island handles
   roughly 90% of Iran's crude exports, and the Downy was hit in its waters
   — the first US strike on Iranian tanker traffic at the terminal itself
-  rather than in transit. Brent settled Friday at $92.68, +7.6% on the week, its steepest weekly gain in months, with US diesel at a record $5.85/gal; no US session until Tuesday 09-08.
+  rather than in transit. Brent settled Friday at $96.28, +7.6% on the week, its steepest weekly gain in months, with US diesel at a record $5.85/gal; no US session until Tuesday 09-08.
   ([CNN, via KVIA](https://kvia.com/news/us-world/cnn-world/2026/09/05/us-military-says-three-iranian-tankers-struck-in-gulf/), [AP, via KSAT](https://www.ksat.com/news/world/2026/09/05/iran-accuses-the-us-of-targeting-a-tanker-near-kharg-island-and-other-mideast-news/))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=united-states axis=oil sev=major interp=yes -->
 - **AI companies have pledged about $265 million to super PACs and
@@ -121,7 +121,7 @@ pre-IPO ask.
 (-0.38%) · **Nasdaq Composite** 26,506.99 (-0.29%) · **Dow** 53,414.25
 (-0.51%) · **SOX** 11,735.26 (+3.38%) · **2-year** 4.37% · **10-year**
 4.78% (Treasury daily par yield curve) · **Dollar index** ~99.15 · **Brent**
-$92.68 settle (+7.6% w/w, Reuters) · **WTI** $91.48 · **US diesel** record $5.85/gal · **Sept hike odds** 58-65% at Friday's close by
+$96.28 settle (+7.6% w/w, Reuters) · **WTI** $91.48 · **US diesel** record $5.85/gal · **Sept hike odds** 58-65% at Friday's close by
 tracker · **Yen** 155 range, one-month high · **Next US session** Tuesday
 09-08 · **Next dated tests** Canada's counter-tariffs 09-08, Treasury's
 first doubled buyback 09-09, Oracle Q1 FY27 09-10, FOMC 09-16, BOJ 09-18.

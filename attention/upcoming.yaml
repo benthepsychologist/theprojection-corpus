@@ -207,12 +207,22 @@ expectations:
     due_precision: day
     thread: psychedelic-regulatory-sprint
     entities: []
-    source: https://www.federalregister.gov/
-    confidence: reported
+    source: https://www.federalregister.gov/documents/2026/07/14/2026-14155/considerations-for-potential-future-therapeutic-use-of-psychedelic-drugs-public-hearing-request-for
+    confidence: confirmed
     what_confirms: "the hearing convening, its docket, and whether it touches the Compass psilocybin NDA track"
     logged: 2026-08-23
-    logged_by: curate-add   # surfaced by the 08-22 mental-health sweep from a Federal Register notice; the exact FR citation still needs pinning
+    logged_by: curate-add   # surfaced by the 08-22 mental-health sweep from a Federal Register notice
     status: pending
+    # 2026-09-07 ⟨daily⟩: FR citation PINNED and the entry upgraded reported ->
+    # confirmed. Notice 2026-14155, "Considerations for Potential Future
+    # Therapeutic Use of Psychedelic Drugs; Public Hearing; Request for
+    # Comments," published 2026-07-14, docket FDA-2026-N-7542. Per FDA's own
+    # meetings page: 12:30-16:30 ET on 09-14, in person at White Oak Bldg 31
+    # Rm 1503 plus webcast. Request-to-present window closed 08-21 (no public
+    # speaker roster located). Written comments open through 2026-10-05
+    # 23:59 ET. Federal Register's own regulations.gov check at
+    # 2026-09-07T08:55:03Z shows 52 comments and no cancellation or
+    # amendment. On track; still pending.
 
   - id: fomc-september-decision
     claim: "FOMC rate decision — the hawkish bloc's next window after July's 9-3 hold"
@@ -727,6 +737,17 @@ expectations:
       sources stressing it "could still end without a transaction." No
       outlet gives a new target date, so there is no date to slip TO. Enters
       the 3-day grace; re-check before 09-07.
+
+      GRACE EXPIRED 2026-09-07. The re-check found nothing newer than the
+      08-16/08-17 Calcalist reporting: still "advanced drafts," still "no
+      agreement has yet been signed," and no outlet gives a new target
+      date, so there is again no date to slip to. Twenty-two days past the
+      08-16 report that put early-September completion odds "high," and
+      three days past the slipped due date, this stays PASSED-SILENT — the
+      loud outcome. Read it as what it is: a $6-7bn acquisition that
+      reporting twice said was about to close has not closed, and the
+      silence is now the story rather than the gap. Not withdrawn — a close
+      would still resolve it — but no further grace.
   - id: moonshot-hk-ipo-filing
     claim: "Moonshot files for a Hong Kong IPO (~$50B target) 'as soon as this month'"
     due: 2026-09-30
@@ -2841,6 +2862,34 @@ expectations:
     status: hit
     resolved: 2026-09-06
 
+  - id: iran-hormuz-restricted-zone-boundaries
+    claim: >
+      Iran publishes the boundaries of the "restricted zone" its Supreme
+      National Security Council secretary Mohsen Rezaei announced on 09-07,
+      running from the line of the US naval blockade through the Strait of
+      Hormuz into the Persian Gulf, with any ship entering it placed on
+      Iran's sanctions list
+    due: 2026-09-21
+    due_precision: week
+    thread: red-sea-oil-shock
+    entities: [iran]
+    source: https://www.aljazeera.com/news/2026/9/7/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz
+    confidence: reported
+    what_confirms: >
+      published coordinates or a named geographic limit from an Iranian
+      state source (IRNA, Nour News, the SNSC itself, or an NOTAM/NAVTEX
+      maritime warning), OR a first enforcement action against a named
+      vessel. Rezaei gave no boundaries and said only "coming days and
+      weeks," so the loud outcome here is passed-silent: a declaratory
+      zone that is never actually drawn is a different fact about Iranian
+      capability than one that is. Al Jazeera's own explainer quotes
+      Stephen Zunes doubting Iran can enforce it militarily and reading it
+      partly as leverage over an emerging Iran-Oman shipping-corridor
+      arrangement — that reading is what a silent expiry would support.
+    logged: 2026-09-07
+    logged_by: curate-add
+    status: pending
+
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
       Russia carries out no strikes on Kyiv for three days from midnight
@@ -2870,6 +2919,17 @@ expectations:
     # nationwide (Kharkiv 4, Kherson 3, Zaporizhzhia 1, Mykolaiv 1). Exactly the
     # city-not-country shape Peskov stated. Two nights to go. Kyiv Independent
     # 09-06 08:28Z, Ukrinform (Air Force figures). Still pending.
+    # 2026-09-07 ⟨daily⟩: second night (09-06/07) ALSO HELD for Kyiv city.
+    # Russia launched 92 drones nationwide from 18:00 09-06; Ukraine's Air
+    # Force downed or suppressed 71; hits at 12 locations, none in Kyiv city
+    # — Sloviansk (4 injured), a drone on a civilian facility in Kharkiv,
+    # 8 missiles on Kryvyi Rih damaging hydraulic structures. Daytime 09-07
+    # brought drone-threat and missile air-raid alerts over Kyiv (one at
+    # 19:42 local) with damage in Brovary and Boryspil districts of Kyiv
+    # OBLAST but none reported in the city. Two of three nights held; the
+    # third and deciding night (09-07/08) is open at this run's cut, so the
+    # entry resolves on the 09-08 run. Ukrinform (Air Force Command), Kyiv
+    # Independent. Still pending.
     # 2026-09-06 15:00 ET ⟨daily⟩: no daytime strike on Kyiv city through the
     # afternoon (Sweep C: buffer + search, nothing dated 09-06); Ukraine struck
     # the Ryazan refinery overnight and Russia says it hit a Ukrainian cargo

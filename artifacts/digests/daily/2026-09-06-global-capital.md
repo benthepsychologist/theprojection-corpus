@@ -1,10 +1,9 @@
 ---
 lens: global-capital
 date: 2026-09-06
-status: building
+status: final
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-06
@@ -16,8 +15,14 @@ ABC's and Al Jazeera's Sunday reporting, the coverage critic that finalized 09-0
 over Saturday's second collection round and today's lanes
 (`google_news_rss` 4,324 items, `gdelt` 77, `rss` 66; `sec_edgar` and
 `epfr_flows` empty on a Sunday), and main-session reads of CNBC's and
-Bloomberg's own feeds. Markets are closed until Tuesday 09-08 (Labor Day
-Monday); US futures open at 18:00 ET, after this run's cut. Material dated
+Bloomberg's own feeds. ⚠️ **Corrected 2026-09-07:** this line read
+"Markets are closed until Tuesday 09-08 (Labor Day Monday)." **US cash
+equity and bond markets were, but oil was not** — Brent is an ICE London
+contract and WTI trades on CME Globex under modified holiday hours, and
+both reopened at 18:00 ET Sunday, inside this digest-day's own window
+rather than after it. The digest said the reopen time on this very line
+and still treated the lens as shut. Brent went on to settle Monday's
+session at $97.73, +1.5%; see the 09-07 digest. Material dated
 09-05 that landed after Saturday's cut — the Fed pressure-campaign tally —
 is in `2026-09-05-global-capital.md` as a 🌙 late catch, and Friday's
 Japan-pact statement is in `2026-09-04-global-capital.md`.*
@@ -26,8 +31,9 @@ Japan-pact statement is in `2026-09-04-global-capital.md`.*
 
 Iran's parliament speaker declared the era of proportionate responses over
 on Sunday, the first formal answer to Saturday's tanker strikes, with the
-market that will price it closed until Tuesday and Brent's last settlement
-at $92.68. **Nothing on this lens traded, printed or filed today**, and
+market that prices it reopening at 18:00 ET that evening — inside this
+digest-day, not after it — against Brent's last settlement of $96.28.
+**Nothing on this lens printed or filed today**, and
 the weekend's capital news is a set of statements pointed at things that
 happen next week: Ghalibaf's threat pointed at Tuesday's oil open; the
 administration's pressure campaign — the president, the vice president,
@@ -78,9 +84,9 @@ page; the EDGAR lane was empty, as a Sunday should be.
   sanctions** — the first formal Iranian answer to Saturday's CENTCOM
   strikes on the Downy and Stark 1 off Kharg Island and Jask and the
   destruction of the Kylo, and a threat framed in terms of scale rather
-  than target. Brent's last settlement is Friday's $92.68, up 7.6% on the
-  week; no US session until Tuesday 09-08; Sunday's futures open at 18:00
-  ET is the first print. The concession on oil-trade disruption is the
+  than target. Brent's last settlement is Friday's $96.28, up 7.6% on the
+  week; no US cash session until Tuesday 09-08, but the 18:00 ET Sunday
+  futures reopen falls inside this digest-day and was not read at the cut. The concession on oil-trade disruption is the
   lens's read: the terminal-availability question the Saturday
   interpretation raised is one Tehran's own speaker now describes from the
   inside.
@@ -152,7 +158,7 @@ issuer over the weekend.
 *Friday's close, carried forward — no session Saturday, Sunday or Monday.*
 **S&P 500** 7,718.60 (-0.38%) · **Nasdaq Composite** 26,506.99 (-0.29%) ·
 **Dow** 53,414.25 (-0.51%) · **SOX** 11,735.26 (+3.38%) · **2-year** 4.37%
-· **10-year** 4.78% · **Dollar index** ~99.15 · **Brent** $92.68 settle
+· **10-year** 4.78% · **Dollar index** ~99.15 · **Brent** $96.28 settle
 (+7.6% w/w) · **WTI** $91.48 · **US diesel** record $5.85/gal · **Sept
 hike odds** ~60% (CME FedWatch, per CNBC Saturday) · **Yen** 155 range ·
 **Next US session** Tuesday 09-08 · **Next dated tests** Canada's
@@ -241,3 +247,51 @@ cannot currently be resolved to a URL; investing.com now permanently
 blocked. CNBC serves cleanly through the reader proxy, which is how the
 Warsh tally the critic could not reach was read. ⚠️ `theprojection
 build-world-news` blocked for a fourth day on the BigQuery credential.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-07 at finalize. Full pass in `coverage-log.md`.*
+
+**Benchmark status.** Money Stuff, Axios Pro Rata, FT Unhedged and Bloomberg
+Technology **all dark** for Sunday, each verified by feed item lists or
+dated-archive jumps rather than by a failed fetch.
+
+**They led with → we missed:** nothing inside this digest-day.
+
+**Correctly held, not missed:** the Saudi Aramco strikes and the US-Iran
+naval exchange are dated **09-07** (FT timestamp 2026-09-07T10:52:14Z), one
+day past this digest-day's 05:00 ET boundary. They are curated on the 09-07
+digest.
+
+🔴 **The pass's real finding was an error inside this lens, not a story
+outside it.** Brent's Friday 09-04 settlement was carried as **$92.68** for
+four days; the correct figure is **$96.28**, a digit transposition. The
+disproof was already on the page: the "+0.8% day / +7.6% week" recorded
+beside the level reconcile with $96.28 and would be −3.0% and +3.8% from
+$92.68. A note written on 09-04 made it worse by declaring the transposed
+figure authoritative and dismissing correct $95-97 secondary reads as
+"intraday or a different contract." Corrected across four digests, this
+lens's interpretation sidecar and the `red-sea-oil-shock` timeline; both
+notes inverted in place rather than deleted.
+
+**Second correction:** this digest said markets were "closed until Tuesday"
+and that nothing on the lens traded. US cash equities and bonds were closed;
+**oil was not** — Brent is ICE London, WTI trades on CME Globex under
+modified holiday hours, and both reopened at 18:00 ET Sunday, inside this
+digest-day's own window. The digest named that reopen time on the same line
+and still concluded the lens was shut.
+
+**We had → they didn't:** Ghalibaf's "era of proportionate responses"
+speech read for its concession on oil-trade disruption, and the Fed
+pressure-campaign tally.
+
+⚠️ **Access.** Reuters 401 (login-gated); AP blocked by the reader proxy's
+own anti-abuse throttle. CNBC and Bloomberg-via-proxy are rolling live pages
+with no retrospective archive, so neither can confirm a specific past day's
+lead. With **no collectors this session**, the wire backstop was the only
+instrument, and it ran at half strength.
+
+⚠️ **One critic claim was wrong and is recorded as such:** the pass reported
+a corpus-wide grep for `aramco` as empty. It is not — `iran-conflict-widening`
+carries the 08-09 Jizan strike and an earlier Jizan/Yanbu attack. Caught in
+the main session before it could make a recurrence read as a first.

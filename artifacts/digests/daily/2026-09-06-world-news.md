@@ -1,9 +1,8 @@
 ---
 lens: world-news
 date: 2026-09-06
-status: building
+status: final
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -233,7 +232,17 @@ wars.
   fraud claims around the vote. The vorläufiges Endergebnis was not
   complete at this cut; the ledger item resolves on the count and the
   projections, which agree on first place by more than 25 points. No
-  thread holds German domestic politics.
+  thread holds German domestic politics. ⚠️ **Updated 2026-09-07 from the
+  returning officer's own vorläufiges Endergebnis (provisional final,
+  timestamped 07.09.2026 03:21 Uhr), which supersedes the partial count
+  above: AfD 43.8, CDU 17.2, SPD 9.3, Grüne 8.9, Linke 8.6, BSW 5.3,
+  FDP 2.6, others 4.4.** The AfD's real number is 1.8 points below the
+  21:06 partial and the CDU's 0.7 above it — the direction the late
+  precincts moved. It also settles the question this bullet left open:
+  **the BSW cleared the 5% threshold at 5.3%**, so the seats it takes
+  keep the AfD short of the 42 needed to govern alone. The result is
+  still labelled provisional, not certified — German state returning
+  officers certify days to weeks after election night.
   ([Landeswahlleiterin — live count](https://wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/erg_land.html), [tagesschau — Hochrechnung](https://www.tagesschau.de/inland/innenpolitik/landtagswahl-sachsen-anhalt-172.html), [DW live](https://www.dw.com/en/saxony-anhalt-far-right-afd-secures-huge-lead-in-key-vote/live-78754934), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-06/german-far-right-afd-set-to-win-state-vote-short-of-majority))
   <!-- k: e=european-union axis=politics sev=major -->
 

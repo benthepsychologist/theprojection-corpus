@@ -1,10 +1,9 @@
 ---
 lens: frontier-ai
 date: 2026-09-06
-status: building
+status: final
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-09-06
@@ -120,7 +119,43 @@ policy**, with the RNC's ~$9,700 the largest committee spend and no
 binding FEC disclosure rule for AI-generated campaign content
 ([Crypto Briefing, carrying the Post](https://cryptobriefing.com/congressional-candidates-openai-subscriptions-election/)).
 Neither has a thread; both are noted here rather than on a timeline.
+⚠️ **Date corrected at finalize (2026-09-07): the Meta amendment was filed
+09-01, not 08-31.** Futurism's own account, published 2026-09-02 08:41 ET,
+says the suit "was amended yesterday." This rests on that article's
+relative dating, not on the docket — CourtListener searches for the case
+did not surface it and the Law360 body is paywalled — so it is one day
+better-founded than the figure it replaces, not docket-confirmed.
 <!-- k: e=meta-ai,openai axis=legal -->
+
+- 🌙 **Late catch — authors say publishers and literary agents are
+  claiming shares of Anthropic's $1.5bn book-piracy settlement that they
+  are not entitled to.** Under the settlement approved in July, the
+  authors of nearly 500,000 pirated titles get $3,000 per work, split
+  50-50 with the publisher only where the book is still in print with a
+  traditional publisher — self-published books and reverted rights go
+  100% to the author. Writers Beware's Victoria Strauss reported on 09-04
+  two recurring complaint patterns: publishers claiming works whose rights
+  reverted years ago, and publishers claiming the full 100% where they are
+  owed 50%. Mystery author April Henry said HarperCollins claimed a book
+  that reverted to her "at least 17 years ago." Strauss is "reluctant to
+  attribute to malice what can be plausibly explained by poor
+  recordkeeping" but calls the volume "much more widespread and systemic"
+  than routine glitches; Authors Guild CEO Mary Rasenberger told the New
+  York Times on 09-05 she does not read it as "a grab by the publishers."
+  Literary agencies are also filing claims, which Strauss notes is odd
+  since "agents are not rightsholders." The disputed hinge is the
+  settlement's 2022-08-10 download date: a reversion must predate it for
+  an author to claim 100%. ⚠️ **Dating:** the underlying events are 09-04
+  (Writers Beware) and 09-05 (NYT); TechCrunch's synthesis on 09-06 16:47
+  ET is what surfaced it here, and it is filed on 09-06 because 09-04 and
+  09-05 are already final. **No thread** — `anthropic-copyright-exposure`
+  explicitly scopes this settlement out as "a different, earlier case," so
+  this is offered as a thread candidate below rather than forced onto it.
+  ([TechCrunch](https://techcrunch.com/2026/09/06/authors-push-back-as-publishers-and-agents-seek-share-of-anthropic-settlement/),
+  [Writers Beware](https://writerbeware.blog/2026/09/04/anthropic-copyright-settlement-publishers-are-making-incorrect-claims-on-authors-payouts/),
+  [Authors Guild](https://authorsguild.org/news/important-information-regarding-anthropic-copyright-settlement-claim-notices/),
+  [New York Times](https://www.nytimes.com/2026/09/05/books/anthropic-settlement-ai-copyright-books.html))
+  <!-- k: e=anthropic axis=legal -->
 
 ## ⏱ Release-watch
 
@@ -183,6 +218,15 @@ them a model.
   nowhere to put them; a $40bn round with Nvidia at $2.5bn is a
   vendor-financing fact today and a lab-of-its-own fact tomorrow. **Add
   it?**
+- **The Anthropic $1.5bn settlement's administration as its own thread**
+  *(critic-argued; first offer)* — `anthropic-copyright-exposure` deliberately
+  scopes this settlement out as "a different, earlier case," so the payout
+  fight has nowhere on the map to live even though it is the largest
+  AI-copyright money actually moving. What a thread would track: publisher
+  and agent over-claiming, the dispute process, how much of the $1.5bn
+  reaches authors, and the read-through to how the next settlement gets
+  drafted. Terms: `Anthropic settlement`, `Authors Guild`, `Writers Beware`,
+  `rights reversion`, `settlement claim`. **Track it?**
 
 ## 🚨 Flash
 
@@ -209,3 +253,43 @@ dedicated pass had read the afternoon lane is not supported by any staging
 file and is corrected in the log. The critic's access notes: TLDR's dated
 archive returns 307 for a missing edition; The AI Daily Brief's homepage
 teases an unpublished Sunday edition before its URL resolves.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-07 at finalize. Full pass in `coverage-log.md`.*
+
+**Benchmark status.** The Rundown AI and TLDR AI **dark**, verified (feed
+contents; TLDR's dated archive 307s for a missing edition). The Neuron and
+The AI Daily Brief **published on a Sunday** — worth recording, because
+"weekend means dark" is the assumption that would have skipped the check —
+but carried a DSEWiki follow-up, a "five biggest stories" retrospective and
+a thematic long-read, none of it news.
+
+**They led with → we missed:** nothing from the four benchmarks.
+
+**The one real miss, found by the wire backstop:** authors saying publishers
+and literary agents are claiming shares of Anthropic's $1.5bn book-piracy
+settlement they are not entitled to (Writers Beware 09-04, NYT 09-05,
+TechCrunch 09-06). Curated above as a 🌙 late catch; offered as a thread
+candidate rather than forced onto `anthropic-copyright-exposure`, which
+scopes this settlement out by its own watch text.
+
+**Correction applied at finalize:** the Meta AI-glasses bystander amendment
+is dated **09-01**, not 08-31.
+
+**We had → they didn't:** the Anthropic IPO syndication wave, the
+Seattle Times/Newsday suit, and the US-China AI-safety talks status.
+
+**Rejected as re-serves:** a Grok CSAM lawsuit (actual date 08-26) and an
+Anthropic Pentagon "supply chain risk" ruling (08-27), both re-served with
+fresh timestamps.
+
+**Carried open:** a reported €3bn Mistral raise with Samsung and Nvidia —
+timestamped before this window, no primary source reachable at the cut.
+
+⚠️ **Read this check as weaker than usual.** There were **no collectors this
+session** — the `cloud-researcher` CLI is not installed and no buffer
+exists — so the organisation-name sweep that has produced every recent real
+miss had to run live against the open web instead of over collected rows.
+Reuters and AP were both unreachable. **Not checked:** Bloomberg Technology,
+AP Technology, the full wire.

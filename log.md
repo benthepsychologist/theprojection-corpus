@@ -8655,3 +8655,332 @@ is committed by whichever run finds it — the 09-05 pattern.
 Committed and pushed as the last act of the session, with this run's
 collector and publish provenance manifests; both repos verified at zero
 unpushed commits.
+
+## 2026-09-06 ~15:00 ET (Sunday) — /daily (afternoon extend) — ⚠️ reconstructed on the 2026-09-07 run: the session never closed
+
+**The third consecutive afternoon session to do real work and write no log
+entry.** Its output is committed and on the public site; its account
+existed nowhere except the diff until now. Reconstructed here from commit
+`a54af35`, the provenance manifests it left, and the site repo's own
+publish commit — so what follows is what the artifacts prove, not what the
+session would have said about itself.
+
+**What it did.** Relaunched the deterministic collector lanes at 19:03Z for
+the window since 14:00Z and extended all five 09-06 digests from the 10:00
+ET cut to a 15:00 ET one, on the strength of seven cluster sweeps over the
+10:45 → 15:00 window, a second front-page scan, and main-session reads of
+the Saxony-Anhalt returning officer's live count, the Kyiv press
+conference, ABC, MAPS and Artificial Analysis. Merged timeline entries into
+`enterprise-agent-product-race`, `iran-conflict-widening`,
+`psychedelic-regulatory-sprint`, `red-sea-oil-shock` and
+`russia-ukraine-war`; touched `threads.yaml`, `upcoming.yaml` and
+`actor-doing.yaml`; fed the graph.
+
+**Lanes, from the manifests it wrote:** `rss` 62 · `gdelt` 74 ·
+`google_news_rss` 4,140 · `github` 1 · `semantic_scholar` 1 ·
+`sec_edgar` 0 · `federal_register` 0 · `clinicaltrials` 0 · `epfr_flows` 0
+— the four zeros being a Sunday, as expected.
+
+**Published.** `readouts.json` refreshed and pushed;
+`provenance/publish-2026-09-06T192326Z.yaml`; the site repo's commit
+`751d45b` at 19:23:26Z carrying 108 scopes.
+
+**What it did not do:** write a `log.md` entry, and finalize the day —
+09-06 was still `status: building` / `coverage: pending` on all five
+lenses when the 09-07 run picked it up, which is correct behaviour (the
+day had not closed yet) but left the finalize, the three coverage critics
+and the graph's critic ingest to the next run.
+
+⚠️ **The pattern is now a pattern, not an incident: 09-04, 09-05 and 09-06
+afternoon sessions have all closed without a log entry**, and two of the
+three had to be reconstructed after the fact. The 09-05 reconstruction is
+seven entries above this one. Whatever is ending these sessions is ending
+them before step 8.
+
+---
+
+## 2026-09-07 ~15:00 ET (Monday, US Labor Day) — /daily: the collectors are gone, the 10:00 run never ran, and the map spent four days publishing an oil price it had argued itself into
+
+**The run in one line.** Finalized 09-06 on all five lenses with three
+coverage critics, opened 09-07, merged 13 timeline entries across six
+threads, and found that this map had been publishing a Brent settlement
+that was wrong by $3.60 for four days — having noticed the contradiction
+on 09-04 and resolved it the wrong way.
+
+**⛔ Tooling, and this is the headline.** `cloud-researcher` **is not
+installed on this machine.** Not on `PATH`, not importable as a Python
+module (`ModuleNotFoundError`), not checked out anywhere under
+`/workspace` (which holds `kestrel`, `kestrel-ops`, `mhinbrief-corpus`,
+`mhinbrief-site`, `pm`, `theprojection-corpus`, `theprojection-site`,
+`vmctl` — and no `cloud-researcher`). All seven deterministic lanes were
+unavailable, `buffer/` does not exist, and this run produced **no collector
+provenance manifests at all** — the first such run in the record. Yesterday
+the lanes ran fine and left nine manifests, so this is a change in the
+environment between 09-06 19:32Z and 09-07 19:00Z, not a misconfiguration
+in the repo. Every item in today's digests was fetched live.
+
+**The consequence, stated so it is not lost:** the organisation-name pass
+over collected rows is the instrument that produced every real coverage
+miss on the last three passes — the Fermat proof, the Japan $550bn pact,
+the WSJ psychedelic-funding story. Today it had no rows. It was run live
+against the open web by the three critics instead, which is a real
+substitute but a weaker one, and all three "no misses" verdicts should be
+read at that discount.
+
+**⚠️ The 10:00 ET unattended run failed.**
+`.agents/runs/2026-09-07T140001Z-daily.receipt`: `exit=1`,
+`outcome=FAILED`, four seconds, log reading "Not logged in · Please run
+/login." This 15:00 ET session did both days' work.
+
+---
+
+**🔴 The Brent settlement. Four days wrong, and defended.**
+
+The map carried Brent's Friday 09-04 settlement as **$92.68**. It was
+**$96.28** — a digit transposition. It entered on the 09-04 afternoon run
+and propagated into the 09-04, 09-05 and 09-06 global-capital digests, the
+09-05 and 09-06 front digests, the 09-05 interpretation sidecar, the
+`red-sea-oil-shock` timeline, `readouts.json`, and the live public site.
+
+**The disproof was on the same line the entire time.** Recorded beside the
+level were "+0.8% on the day" and "+7.6% on the week." Against the real
+series — 08-28 $89.31, 09-03 $95.52, 09-04 $96.28 — those are +0.80% and
++7.8%, matching. From $92.68 the same day is **−3.0%** and the week
+**+3.8%**. WTI's $91.48 and "+10% on the week" were transcribed correctly
+throughout (true value +9.69%), so exactly one number was wrong.
+
+**Worse than the typo.** The 09-04 run **noticed** the contradiction — its
+own secondary sources were reporting $95-97 — and wrote a note declaring
+the transposed settlement authoritative while dismissing the correct reads
+as "intraday or a different contract." That note was copied onto the
+`red-sea-oil-shock` timeline. A wrong number was defended against correct
+evidence for three days. Both notes are now inverted in place and marked
+rather than deleted, because the reasoning error is the more useful record.
+
+**Verified three ways** before touching anything: the daily settlement
+series (08-26 through 09-04, internally coherent); independent search
+consensus ("Brent crude settled at $96.28 a barrel on Friday, September 4,
+2026"); and CNBC's Monday report of Brent +1.5% at $97.73, whose own
+arithmetic implies a $96.28 reference close. That third check earned its
+keep: the global-capital critic proposed the opposite reading — that
+$96.28 was a mislabelled Sunday-evening print rather than Friday's settle —
+and its own arithmetic disproved its objection.
+
+**Second error, same lens, same day.** The 09-06 digest said "markets are
+closed until Tuesday 09-08" and concluded "nothing on this lens traded,
+printed or filed today." US cash equities and bonds were closed; **oil was
+not.** Brent is an ICE London contract, WTI trades on CME Globex under
+modified holiday hours, and both reopened at 18:00 ET Sunday — *inside*
+that digest-day's own window. The digest stated the 18:00 ET reopen time on
+the same line and still called the lens shut. Corrected in three places.
+
+**The fix that costs nothing.** This lens prints a level and a percentage
+change side by side every single day. They check each other in one line of
+arithmetic. That check has never once been run, and three oil-number errors
+have now reached this record in four days (the 09-04 revision, the 09-05
+two-day-stale figure, this transposition).
+
+---
+
+**What the run found.**
+
+**World news carried the day.** The Iran war moved from shipping lanes to
+refineries: Aramco's 400,000-b/d **Jizan** refinery struck for the third
+time since summer — on the Red Sea, which is the routing Riyadh adopted
+*to avoid* Hormuz, so the strike lands on the workaround. Attribution not
+established; the Houthis claimed the July and 08-09 hits. Alongside it,
+Hegseth's "will destroy (and sink)" and Ghalibaf's "strike our assets and
+you get struck" in the same news cycle, and Rezaei's undefined "restricted
+zone." **The day's deadliest event was Lebanon**: twelve killed at Kfar
+Roummane, a three-day south-Lebanon toll of at least 27, against the four
+this map had logged for 09-06. Zaporizhzhia regained external power at
+19:02 Kyiv time after 18 days on diesel. The Kyiv pause held a second
+night, one to go.
+
+**⚠️ The Lebanon story was nearly missed, and the reason it wasn't is worth
+keeping.** The first world-news sweep reported *its own* front-page scan as
+"incomplete, not clean" and named five of its seven threads as unswept
+rather than implying a clean pass. A second sweep dispatched to close
+exactly those gaps found Kfar Roummane, the Gaza ceasefire deaths and the
+first Yemeni government air strikes of this round. **An agent that reports
+its own gaps honestly is worth more than one that returns tidy output**, and
+the brief should keep asking for that explicitly.
+
+**AI and mental health were genuinely empty.** Two AI sweeps over ~30
+threads and two mental-health sweeps over 26 returned zero staged entries;
+a direct ClinicalTrials.gov query returned zero studies. What the sweeps
+mostly did was *reject*: roughly a dozen lab stories that looked current
+and were May-to-August items re-served with fresh aggregator timestamps
+(DeepMind's reshuffle, the Kimi sanctions fight, a Mistral round that was
+September **2025**, Microsoft MAI/OpenAI from Build in June, Genesis
+Mission awards from July). Fourth consecutive run where volume-as-novelty
+is the dominant failure mode.
+
+**The one real coverage miss:** authors saying publishers and literary
+agents are claiming shares of Anthropic's $1.5bn book-piracy settlement
+they are not owed (Writers Beware 09-04, NYT 09-05, TechCrunch 09-06
+16:47 ET). Found independently by the AI sweep *and* the AI critic. Curated
+into 09-06 as a late catch with `e=anthropic` and **no thread** —
+`anthropic-copyright-exposure` scopes this settlement out by its own watch
+text, so it was offered as a thread candidate rather than forced onto it.
+
+---
+
+**🔴 Two agent-reliability findings, both caught only by re-derivation.**
+
+**1. A sweep's market data was substantially wrong.** The capital sweep
+proposed a macro strip with the Shanghai Composite at 4,575.02 (actual
+3,932.70), the FTSE 100 at 14,666 (actual 10,822.13), gold "~$4,400,
+bearish tone" (actual $4,476.60, **up** 1.06%), and USD/JPY "above 156.00,
+dollar firm" (actual 154.34, dollar **softer**) — and computed the oil move
+off this map's own transposed baseline, reporting "+4.6%" where the true
+change was about +1.5%. Its Nikkei and Hang Seng figures were right, which
+is the dangerous part: a strip that is 40% wrong looks exactly like one
+that is right. **Every price published today was re-pulled in the main
+session against a timestamped instrument.** On a lens whose credibility is
+numbers, index levels from a sweep report are not usable without
+re-derivation.
+
+**2. A critic asserted a corpus-wide absence that was false.** The
+global-capital critic reported "corpus-wide grep for `aramco` came back
+empty." It is not empty — `iran-conflict-widening` carries the 08-09 Jizan
+strike with Saudi Energy Ministry confirmation and an earlier Jizan/Yanbu
+attack. **The claim would have made a recurrence read as a first.** The
+brief demanded the grep, named the failure mode, and required the agent to
+say it had run it; it happened anyway. This is the third occurrence.
+**Standing correction: verify absence claims in the main session. A
+reported grep is not a run grep.**
+
+---
+
+**Corrections applied this run** (four, all marked in place, none deleted):
+Brent's 09-04 settlement across six files · the "closed until Tuesday"
+claim narrowed in two 09-06 digests · **Saxony-Anhalt** updated from
+Sunday's partial count to the returning officer's provisional final
+(AfD 43.8% not 45.6%, CDU 17.2% not 16.5%, and the BSW clearing 5% is what
+keeps the AfD short of governing alone) · the **Meta AI-glasses bystander
+amendment** redated 08-31 → 09-01 on Futurism's "amended yesterday" in a
+piece published 09-02 08:41 ET, flagged as not docket-confirmed.
+
+**Ledger.** `kremlin-kyiv-strike-pause-0908` two of three nights held,
+resolves 09-08 · **logged** `iran-hormuz-restricted-zone-boundaries` (due
+09-21 — a zone that is never drawn is the informative outcome) ·
+`decart-acquisition-close` **grace expired, stays passed-silent** 22 days
+after reporting put early-September odds "high" · `fda-psychedelic-public-hearing`
+upgraded `reported → confirmed` with FR notice 2026-14155, docket
+FDA-2026-N-7542, hours and comment deadline pinned ·
+`nippon-life-openai-hearing-outcome` reclassified from pending-on-schedule
+to **genuinely unknown** (docket shows nothing past the 08-04 order that
+set the 09-02 hearing; that is RECAP lag, not evidence of nothing).
+
+**Flagged, not applied** (held for `/steer`): `restricted zone` /
+`exclusion zone` onto `red-sea-oil-shock`'s terms; the CMS ACCESS
+behavioural-health participant count, where a trade summary says 17
+providers against this map's ~85 of 150+ and **neither is primary**, so
+nothing was overwritten.
+
+**Thread candidates offered:** a **Saudi energy-infrastructure** thread
+(Jizan struck three times in three months, Yanbu once, routed across three
+threads with none owning the target set); the **Anthropic $1.5bn settlement
+administration**; and **German domestic politics** on its second and final
+offer.
+
+**Graph fed after the finalize:** `07_digest_bullets` (18 new S1, 1,560
+cross-posted merges), `06_timelines` (14 new S2, 647 bumped, 961
+ambiguous), `03_expectations` (1 hypothesis claim), `09_critic_annotations`
+(13 process-only). `graph/validate.py`: **OK — 4,817 atoms, 3,114 sources,
+7,937 relationships, 1,240 annotations, 128 extraction_passes.**
+
+**⚠️ Unchecked windows, recorded as unchecked rather than clean.** Nineteen
+global-capital threads were never reached (the sweep's hard stop hit while
+the oil story was still being worked); the Concord Music docket's current
+tail was never read; PubMed/Europe PMC were not directly queried;
+`europe-migration-schengen` and `horn-of-africa-war` each have a real
+candidate development that could not be sourced to a primary outlet in
+time — Spain reportedly opening a criminal investigation into the Ceuta
+influx, and the TPLF rejecting AU mediator Obasanjo as "not impartial,"
+the latter being exactly that thread's own watch item on a thread stale
+since 08-06. Both carry to the next run with a primary-source instruction.
+
+📋 **Access notes this pass:** Reuters (401/403) and AP were blocked on
+both direct `curl` and the `r.jina.ai` proxy across three separate agents —
+the wire backstop, now the load-bearing instrument on dark-benchmark days,
+ran at half strength on two of three lenses. Al Jazeera's front page is
+JS-rendered; its first-party RSS works. The Straits Times fetches but
+yields no headlines. The **Googlebot-UA route to Behavioral Health Business
+still works**. MobiHealthNews again showed live-timestamp-with-no-items,
+which is "no new content," not a failure. Fierce Healthcare still serves
+out of chronological order. `iaea.org`, `wsj.com` and `congress.gov`
+bill-action pages do not fetch; `investing.com` remains blocked. BBC, DW
+and France24 fetch directly. CourtListener works via `curl`, and its
+RECAP coverage lags PACER — absence there is not evidence.
+
+**Published.** `readouts --pack` × 4 (four sonnet briefing agents), all four
+validated in the main session before `--apply` against a locally-written
+checker (character bounds, terminal punctuation, the 1-3 `watch` cap, the
+typed emoji set, the 60% link floor, and a regex for pipeline words). **4/4
+applied, 0 skipped, no repairs needed** — the first clean apply in the
+record, which is attributable to putting the shape's real constraints in
+the briefs rather than paraphrasing them. `--export` 154 readouts.
+
+⚠️ **The gists came out wrong on first apply and had to be fixed at the
+source.** `--apply` overwrites `gist` with the first sentence of that
+scope's digest throughline, so the AI and mental-health gists rendered as
+"**Nothing happened on this lens today…**" and "**Nothing on this lens
+moved today.**" — markdown asterisks, pipeline vocabulary and a
+self-referential frame, all headed for the public beat pages. Global
+capital's was "The lens spent the weekend being told it was closed and it
+was not." Fixed by rewriting the opening sentence of all three
+throughlines, then re-applying. **The rule this run learned:** on a quiet
+day the throughline's *first sentence* is public copy and cannot open with
+"nothing happened on this lens" — put the honest null second and a
+world-facing sentence first.
+
+`kestrel publish --push`: 92 orgs, 753 claim pages, **1,143 story pages**
+(2,062 sources, 1,595 credibility-badged), 122 map pages, 105 thread pages,
+`data/readouts.json` at 154, `provenance/publish-2026-09-07T194048Z.yaml`,
+site repo committed and pushed as `c793d0b`, zero unpushed.
+
+⚠️ **The publish proposed deleting 19 interpretation pages and 5 entity
+pages, and that is correct behaviour, not a regression.** It was checked
+before pushing rather than after. `build_payload()` in `publish/adapter.py`
+windows on the **current ISO week** (`week_start = today - weekday()`), so
+on a Monday the payload is a single day and last week's derived pages age
+out. Confirmed against the site's own history: commit `76abe10` on Monday
+2026-08-31 deleted ten interpretation pages the same way. **Worth knowing
+before some future Monday run panics about it** — or, worse, doesn't check
+and pushes a real regression thinking it is this one.
+
+---
+
+**⛔ The environment lost more than the collectors, and the losses share a
+shape: everything gitignored or machine-local is gone.**
+
+- `cloud-researcher` — not installed, no collectors.
+- `.env` — absent, so `THEPROJECTION_SITE_DIR` was unset and `publish`
+  failed with "no site checkout configured." Worked around by passing
+  `--site-dir /workspace/theprojection-site` explicitly, which is the path
+  `kestrel.yaml`'s own `outputs.site` key declares.
+- ⚠️ **`THEPROJECTION_DEPLOY_HOOK` is therefore also unset, so no
+  Cloudflare build was queued by this run.** Every previous run's log
+  records a queued build ID; this one cannot. If the site auto-builds on
+  git push the deploy will happen anyway, but that is an assumption, not a
+  verified fact — **check theprojection.org actually reflects 09-07 before
+  trusting this publish.**
+- The **kokoro-tts venv** at `/workspace/.venvs/kokoro-tts/` — absent, so
+  `publish` skipped the audio briefing. No audio for 09-07.
+- **git identity** — unset in both repos and globally, so the site commit
+  failed on "Author identity unknown." Restored locally in both repos to
+  `Ben Armstrong <241369590+benthepsychologist@users.noreply.github.com>`,
+  matching every prior commit's author.
+
+**Read together, that is an environment reset between 09-06 19:32Z and
+09-07 19:00Z, not four unrelated faults**, and the two that silently
+degrade output rather than erroring — no collectors, no deploy hook — are
+the dangerous ones. **Recovery is not something this session can do from
+inside the repo**: `cloud-researcher` needs a checkout and install, `.env`
+needs its two real values, and the venv needs rebuilding. Flagged for Ben.
+
+**Committed and pushed** as the last act of the session; both repos
+verified at zero unpushed commits. No collector provenance manifests exist
+for this run, for the reason above.

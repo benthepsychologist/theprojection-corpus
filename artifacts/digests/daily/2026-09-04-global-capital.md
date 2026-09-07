@@ -407,7 +407,7 @@ close this digest deferred.*
 **Nasdaq Composite** 26,506.99 (-0.29%) · **Dow** 53,414.25 (-0.51%) ·
 **SOX** 11,735.26 (+3.38%) · **2-year** 4.37% · **10-year** 4.78% (Treasury
 daily par yield curve, both up on the day) · **Dollar index** ~99.15
-(+0.25-0.3%) · **Brent** settled at **$92.68** (+0.8% on the day, **+7.6% on the week**, Reuters), **WTI** $91.48 (+10% on the week), US diesel a record $5.85/gal (AAA) — ⚠️ the $95-97 "no new driver" read carried above from secondary outlets does not reconcile with the settlement print and should be read as intraday or a different contract · **Sept hike odds** 58-65% at the close depending on
+(+0.25-0.3%) · **Brent** settled at **$96.28** (+0.8% on the day, **+7.6% on the week**, Reuters), **WTI** $91.48 (+10% on the week), US diesel a record $5.85/gal (AAA) — ⚠️ **Corrected 2026-09-07:** this line read **$92.68** for four days. The correct Friday settlement is **$96.28**; $92.68 was a digit transposition of it. The map's own percentages were the proof and were never re-checked against the level — +0.8% on the day and +7.6-7.8% on the week reconcile with $96.28 (09-03 settle $95.52, 08-28 settle $89.31) and are impossible from $92.68, which would be **-3.0%** on the day. The note that stood here dismissed the $95-97 secondary reads carried above as "intraday or a different contract" — **those reads were right and this settlement figure was wrong** · **Sept hike odds** 58-65% at the close depending on
 the tracker (Yahoo Finance 58%, TheStreet 60.2%, Investrade 65% — the live
 CME tool cannot be snapshotted after the fact, so the spread is reported
 rather than one number) · **Yen** 155 range, one-month high.
