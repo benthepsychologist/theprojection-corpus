@@ -3,14 +3,15 @@ lens: frontier-ai
 date: 2026-09-06
 status: building
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T10:45:00-04:00
+as_of: 2026-09-06T15:00:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-09-06
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Sunday. Sources: two
-cluster sweeps over the lens's 49 threads (frontier labs, China, product,
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Sunday. Sources: two
+cluster sweeps over the lens's 49 threads, repeated for the 10:45 → 15:00
+ET extend with a main-session read of Artificial Analysis's own index note, (frontier labs, China, product,
 IPOs and governance merged for a Sunday; capex, power, sites and chips),
 the coverage critic that finalized 09-05, a buffer-triage pass over
 Saturday's second collection round and today's lanes (`google_news_rss`
@@ -38,11 +39,15 @@ benchmark was dark, by reading the buffer for names rather than for thread
 terms — which is the finding about the system, and the reason a
 formalization thread is offered below.
 
-Sunday itself was quiet on every thread. No weekend release from DeepSeek,
-Qwen, Moonshot, Zhipu or MiniMax; no OpenAI follow-through on Saturday's
-DseWiki admission beyond the X post, and no response from OpenAI, the Arc
-Prize Foundation or Artificial Analysis to Fortune's report that Astra's
-published benchmark figures moved after launch; no Musk statement on Grok
+Sunday itself was quiet on every thread, morning and afternoon. No weekend
+release from DeepSeek, Qwen, Moonshot, Zhipu or MiniMax; no OpenAI
+follow-through on Saturday's DseWiki admission beyond the X post, and no
+response from OpenAI or the Arc Prize Foundation to Fortune's report that
+Astra's published benchmark figures moved after launch — though the
+afternoon sweep found that Artificial Analysis, the third party whose flat
+Astra score fed the skepticism, had on Friday shipped an interim v4.2 of
+its index on which Astra gains four points and sits second behind Fable
+5.1, on new private test sets and without a word about the dispute; no Musk statement on Grok
 4.7 since the 09-02 "10 days" post, due 09-12; Decart's acquisition silent
 into its last day of grace. The dockets do not move on a Sunday and were
 not re-read: Anthropic v. DoW at #252, the OpenAI MDL past #1892, Nippon
@@ -66,6 +71,25 @@ Wednesday to Friday, and the record now has all of it.
   candidate below.
   ([Anthropic](https://www.anthropic.com/research/formalizing-fermats-last-theorem), [OpenAI — paper PDF](https://cdn.openai.com/pdf/51126fac-1b68-4128-9666-c908bcc16033/short_gaps.pdf), [SiliconANGLE](https://siliconangle.com/2026/09/04/anthropic-uses-claude-to-formalize-proof-of-fermats-last-theorem/))
   <!-- k: t=enterprise-agent-product-race e=anthropic,openai axis=research -->
+- **Artificial Analysis published an interim version 4.2 of its
+  Intelligence Index on Friday 09-04 — adding a private agentic
+  knowledge-work set (AA-Briefcase) and Surge AI's GDP.pdf, dropping the
+  saturated GPQA Diamond, and doubling the weight on held-out sets to 40% —
+  on which Claude Fable 5.1 leads and GPT-6 Astra is second with a
+  four-point gain over GPT-5.6 Sol, having scored level with Sol on v4.1.**
+  AA said it had "deliberately held back updates to keep the Index stable
+  through recent major model launches" but that "the frontier moving so
+  quickly in the past weeks" made an interim release necessary ahead of a
+  v5 eight months in the making; Meta is the third-ranked lab, ahead of
+  SpaceXAI, Moonshot, Z.AI and Google. AA's note does not mention Fortune's
+  report; The Decoder's reading that the overhaul came "likely in response
+  to criticism" of the Astra scoring is The Decoder's. For the benchmark
+  dispute this thread carries, the outside index whose flat score fed the
+  skepticism now shows a gain — on a different test set, which is the
+  point. Read in the afternoon extend; on `enterprise-agent-product-race`
+  under its 09-04 block.
+  ([Artificial Analysis](https://artificialanalysis.ai/articles/artificial-analysis-intelligence-index-v4-2), [The Decoder](https://the-decoder.com/artificial-analysis-overhauls-its-intelligence-index-after-gpt-6-astra-scoring-drew-skepticism/))
+  <!-- k: t=enterprise-agent-product-race e=openai,anthropic axis=research -->
 
 Nothing dated 09-06. The Astra benchmark dispute did not move on Sunday;
 the "OpenAI explains the ARC-AGI-3 gap" post still circulating on
@@ -124,9 +148,16 @@ them a model.
 
 ## 🔄 Map changes
 
-- `✎` timeline entry merged on `enterprise-agent-product-race` (the
+- `✎` timeline entries merged on `enterprise-agent-product-race` (×2: the
   prime-gaps paper, dated 09-03, appended to the existing Astra launch
-  block). `last_seen` bumped.
+  block; at 15:00 ET, Artificial Analysis's v4.2 index, dated 09-04,
+  appended to that day's block). `last_seen` bumped.
+- ⛔ **declined at 15:00 ET:** a sweep's `anthropic-ipo-timing` entry for
+  Reuters' "prospectus late September, marketing mid-October, $15bn
+  revolver first" — already the thread's 09-04 block since the 09-05 run,
+  same CNBC URL. The afternoon `gdelt` append carried 60+ syndications of
+  the same story with fresh Sunday timestamps, which is how a day-old
+  story reads as new; volume is not novelty.
 - `✎` **finalize of 09-05:** Fermat curated into `2026-09-04-frontier-ai.md`
   as a late catch (`e=anthropic`, no thread); the prime-gaps paper into
   `2026-09-03-frontier-ai.md`; critic appendix and `coverage-log.md` entry
@@ -159,9 +190,15 @@ them a model.
 
 ## ⚠️ Collection note
 
-All lanes launched at 14:03Z with the right environment; `google_news_rss`
-landed at 14:28Z and was read by the triage agent after the cluster sweeps
-had closed — the fifth run running in which the workhorse lane arrives
+**Afternoon extend (15:00 ET):** lanes relaunched at 19:02Z for the window
+since 14:00Z; `rss` zero new rows, `gdelt` 74 (the Anthropic-IPO
+syndication wave above, the Seattle Times/Newsday suit already on
+`anthropic-copyright-exposure`, Motley Fool), `google_news_rss` still
+running at this cut and read by the triage agent when it lands, `openalex`
+429s. Both afternoon lens sweeps closed in under three minutes with
+nothing dated 09-06. **Morning:** all lanes launched at 14:03Z with the
+right environment; `google_news_rss` landed at 14:28Z and was read by the
+triage agent after the cluster sweeps had closed — the fifth run running in which the workhorse lane arrives
 after the sweeps, and the reason the triage agent is briefed to wait for
 it. `gdelt` remains capped to 8 of 565 terms and `openalex` 429-throttled
 end to end (both filed engine issues). The Saturday afternoon append to

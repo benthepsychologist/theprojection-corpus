@@ -2870,6 +2870,11 @@ expectations:
     # nationwide (Kharkiv 4, Kherson 3, Zaporizhzhia 1, Mykolaiv 1). Exactly the
     # city-not-country shape Peskov stated. Two nights to go. Kyiv Independent
     # 09-06 08:28Z, Ukrinform (Air Force figures). Still pending.
+    # 2026-09-06 15:00 ET ⟨daily⟩: no daytime strike on Kyiv city through the
+    # afternoon (Sweep C: buffer + search, nothing dated 09-06); Ukraine struck
+    # the Ryazan refinery overnight and Russia says it hit a Ukrainian cargo
+    # vessel in the Black Sea — neither breaks a pause scoped to the capital.
+    # Second night begins ~17:00 ET, after this cut. Still pending.
     status: pending
 
   - id: ratepayer-protection-act-floor-vote-0911
@@ -2984,4 +2989,14 @@ expectations:
       09-03.
     logged: 2026-09-06
     logged_by: curate-add
-    status: pending
+    # 2026-09-06 15:00 ET ⟨daily⟩: HIT. The returning officer's own count at
+    # 21:06 CEST (2,180 of 2,660 precincts): AfD 45.6%, CDU 16.5%, SPD 8.9,
+    # Grüne 8.8, Linke 8.3, BSW 5.2, FDP 2.5; infratest dimap's 20:32
+    # Hochrechnung 44.2 / 18.0. Turnout 70.4% (2021: 60.3%). Seat projections
+    # 39-41 of 83 for the AfD, one to three short of an absolute majority,
+    # hinging on the BSW's 5% threshold. The vorläufiges Endergebnis was not
+    # complete at the cut; every reading agrees on first place by 25+ points.
+    # Sources: wahlergebnisse.sachsen-anhalt.de/wahlen/lt26/erg_land.html,
+    # tagesschau.de (Hochrechnung), DW live, Bloomberg.
+    status: hit
+    resolved: 2026-09-06

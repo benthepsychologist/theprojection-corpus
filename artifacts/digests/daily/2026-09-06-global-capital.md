@@ -3,15 +3,16 @@ lens: global-capital
 date: 2026-09-06
 status: building
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T10:45:00-04:00
+as_of: 2026-09-06T15:00:00-04:00
 coverage: pending
 ---
 
 # Global Capital — 2026-09-06
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Sunday. Sources: one
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Sunday. Sources: one
 combined sweep over all 20 capital threads (macro, rates, trade, financing,
-chips), the coverage critic that finalized 09-05, a buffer-triage pass
+chips), repeated for the 10:45 → 15:00 ET extend, main-session reads of
+ABC's and Al Jazeera's Sunday reporting, the coverage critic that finalized 09-05, a buffer-triage pass
 over Saturday's second collection round and today's lanes
 (`google_news_rss` 4,324 items, `gdelt` 77, `rss` 66; `sec_edgar` and
 `epfr_flows` empty on a Sunday), and main-session reads of CNBC's and
@@ -39,6 +40,21 @@ written on Saturday to the Tuesday-open gap stands unchanged: Ghalibaf's
 statement is the kind of input that sharpens its first scenario — a gap
 above $95 that holds — without yet being the evidence for it, and no new
 interpretation is forced onto a day with no price.
+
+The afternoon added the two inputs Tuesday's open will actually weigh. On
+supply, TankerTrackers put August's Middle East crude exports 39% below
+the pre-war baseline of 18.5 million barrels a day — a 7.2 mb/d deficit,
+down from 12.4 in May as escorted Gulf transits recover — with Iran's own
+1.68 mb/d expected to "remain at zero for the foreseeable future," and
+Bessent put Iran's unsold floating stock at about 30 million barrels. On
+policy, the Energy Secretary said on ABC that "there may not be a nuclear
+agreement" and that the answer "may be simply destroying their
+capabilities," the first cabinet-level statement that the deal the war was
+launched to get may not be sought. A narrowing regional gap with an
+Iranian zero inside it, and a Washington that says it is not negotiating
+to close it: the interpretation's first scenario gets both its supply
+premise and its policy premise sharpened on the same afternoon, and still
+no price.
 
 What the finalize found is the more useful thing. Three items were in
 Saturday's buffer that nobody on this lens read: the Japan pact (nine rows,
@@ -70,9 +86,30 @@ page; the EDGAR lane was empty, as a Sunday should be.
   inside.
   ([CNBC](https://www.cnbc.com/2026/09/06/iran-us-response-oil-tanker-strikes.html), [Anadolu](https://www.aa.com.tr/en/middle-east/iran-parliament-speaker-warns-us-of-faster-heavier-response-to-any-new-attack/4048802))
   <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=united-states axis=oil -->
+- **Middle East crude exports in August ran 39% below the January-February
+  baseline of 18.5 million barrels a day — a deficit of 7.2 mb/d, down from
+  12.4 mb/d in May — and Iran's own 1.68 mb/d baseline "may likely remain
+  at zero for the foreseeable future, depending on any agreement,"
+  TankerTrackers said on Sunday, while Treasury Secretary Bessent put the
+  Iranian crude still afloat and unsold to China at "probably only about
+  30 million barrels."** The US military says about 90 commercial vessels
+  have been redirected under the blockade; Iranian officials confirm no
+  crude has passed the warships but say up to 90 million barrels moved in
+  July's window and that floating storage outside the line is still being
+  sold to China at a discount. On the policy side of the same Sunday,
+  Energy Secretary Wright told ABC "there may not be a nuclear agreement"
+  and the blockade "will either change their regime or it'll change their
+  regime's policies." For Tuesday's open: a regional deficit that is
+  shrinking as Gulf transits recover under escort, an Iranian zero the
+  administration says it intends to keep, and a threat from Tehran's
+  parliament pointed at the next US strike — the supply picture the
+  Saturday interpretation's first scenario assumes, stated by both sides.
+  ([Al Jazeera, carrying TankerTrackers and Bessent](https://www.aljazeera.com/news/2026/9/6/iran-touts-military-response-as-us-maintains-blockade-hits-tankers), [ABC News — Wright](https://abcnews.com/Politics/energy-secretary-nuclear-agreement-iran/story?id=136237933))
+  <!-- k: t=red-sea-oil-shock,iran-conflict-widening e=united-states axis=oil -->
 
-Nothing else dated 09-06. The Fed pressure campaign is Saturday's item, on
-`fed-independence-fight` and in yesterday's 🌙 late catch; the Fed's
+Nothing else dated 09-06, morning or afternoon. The Fed pressure campaign
+is Saturday's item, on `fed-independence-fight` and in yesterday's 🌙 late
+catch; the Fed's
 blackout period is in force ahead of the 09-16 meeting, so no official
 spoke, and Sunday's talk shows carried the Energy Secretary and two House
 members rather than anyone this lens tracks. No weekend BOJ, MOF, ECB or
@@ -128,7 +165,8 @@ Oracle Q1 FY27 09-10 after the close, US CPI 09-11, FOMC 09-16, BOJ
 - 🚧 `canada-retaliatory-tariffs-effective-0908` — **still open until
   Tuesday**; Finance Canada's product list still reads "12:01 a.m.,
   September 8, 2026," stamped "updated as of August 26," with no Labor Day
-  carve-out, delay, exemption or US response found over the weekend.
+  carve-out, delay, exemption or US response found over the weekend —
+  re-checked against the same page at 15:00 ET, unchanged.
 - 🚧 `oracle-q1-fy27-earnings` (09-10) — date confirmed by Oracle's own IR
   announcement: Thursday after the close, call at 4pm Central.
 - ⚠️ `decart-acquisition-close` — passed-silent, last day of grace
@@ -139,6 +177,14 @@ Oracle Q1 FY27 09-10 after the close, US CPI 09-11, FOMC 09-16, BOJ
 
 ## 🔄 Map changes
 
+- `✎` **15:00 ET:** timeline entry merged on `red-sea-oil-shock`
+  (TankerTrackers' August deficit and Bessent's 30-million-barrel figure,
+  dated 09-06; `last_seen` bumped) and on `iran-conflict-widening` (the
+  Wright and IRGC statements, cross-lens). ⛔ **declined:** a sweep's
+  `anthropic-ipo-timing` entry restating Reuters' 09-05 "prospectus late
+  September, marketing mid-October, $15bn revolver" report — on the
+  thread since the 09-05 run with the same CNBC URL; the afternoon `gdelt`
+  append carried 60+ syndications of it with Sunday timestamps.
 - `✎` timeline entries merged on `fed-independence-fight` (the CNBC tally,
   dated 09-05), `cxmt-memory-ipo` (the Counterpoint share, dated 09-04)
   and, from the buffer triage's late pass, `datacenter-backlash-capital-risk`
@@ -175,8 +221,14 @@ Tuesday-open question, not a front page.
 
 ## ⚠️ Collection note
 
-All lanes launched at 14:03Z with the right environment. `google_news_rss`
-landed at 14:28Z (4,324 rows) and was read by the triage agent; `gdelt`
+**Afternoon extend (15:00 ET):** lanes relaunched at 19:02Z; `rss` zero
+new rows, `gdelt` 74 (mostly the Anthropic-IPO syndication wave),
+`google_news_rss` still running at the cut and read by the triage agent
+when it lands; `sec_edgar` HTTP 500s again, `epfr_flows` nothing on a
+Sunday. The capital sweep closed in two minutes with nothing dated 09-06.
+**Morning:** all lanes launched at 14:03Z with the right environment.
+`google_news_rss` landed at 14:28Z (4,324 rows) and was read by the triage
+agent; `gdelt`
 ran to 77 rows under its 8-term cap; `sec_edgar` returned zero rows after
 ten minutes of HTTP 500s on the full-text endpoint, which on a Sunday is
 indistinguishable from an empty day — the twelve-issuer direct read was

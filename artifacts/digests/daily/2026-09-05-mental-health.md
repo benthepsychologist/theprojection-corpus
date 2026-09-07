@@ -182,7 +182,15 @@ Saturday's afternoon buffer, not the evening's:
   directly; the facts are from its syndicated pickup, which names the
   Journal as the original reporter. In Saturday's buffer at 16:00Z under
   the Journal's own headline; found by the coverage critic's wire
-  backstop.
+  backstop. **[Corrected on the 09-06 afternoon run: the recapitalization
+  and rename are not Saturday's news — Lykos became Resilient
+  Pharmaceuticals in late August 2025 after a $50m Series B led by Gracias
+  and Sir Chris Hohn, with Mike Burke as CEO ([Psychedelic Alpha,
+  2025-08-28](https://psychedelicalpha.com/news/p%CE%B1-psychedelic-bulletin-207-lykos-rebrands-to-resilient-pharma-pushes-back-on-norways-ketamine-reimbursement-decision-abbvie-gilgamesh-deal-viewed-as-validation/));
+  the Journal's piece is a feature restating it, and its $25m is Gracias's
+  foundation's share. The resubmission this bullet anticipated had already
+  been filed in August 2026 without a new Phase 3 — see the 09-06 digest and
+  the thread's 2026-08-10 entry.]**
   ([IBTimes Australia, carrying WSJ](https://www.ibtimes.com.au/billionaires-back-psychedelic-therapies-1875100))
   <!-- k: t=psychedelic-regulatory-sprint axis=capital -->
 

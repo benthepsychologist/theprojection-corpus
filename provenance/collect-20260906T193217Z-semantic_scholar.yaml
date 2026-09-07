@@ -1,0 +1,14 @@
+source_id: semantic_scholar
+params:
+  endpoint: https://api.semanticscholar.org/graph/v1/paper/search
+  since: '2026-09-06'
+  to: '2026-09-06'
+  limit: 25
+  fields: title,publicationDate,externalIds,url,venue
+  keyed: false
+  terms_swept: 122
+fetched_at: '2026-09-06T19:32:17Z'
+items:
+- id: 1d533eee9136c22d8d6c3ea3f9c7e1a5ea5d5f0e
+  url: https://doi.org/10.55720/respirar.18.2.3
+  ts: '2026-09-06T00:00:00Z'

@@ -3,17 +3,20 @@ lens: mental-health
 date: 2026-09-06
 status: building
 window_start: 2026-09-06T05:00:00-04:00
-as_of: 2026-09-06T10:45:00-04:00
+as_of: 2026-09-06T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-06
 
-*Curated agentic-interim, 05:00 ET → **10:45 ET** Sunday. Sources: one
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Sunday. Sources: one
 combined sweep over all 26 lens threads (regulation, clinical safety,
 payers, the evidence base, big tech's health arms) with a PubMed
 E-utilities pass over eight journals for 09-05/06 and a read of the
-Governor's newsroom, the coverage critic that finalized 09-05, and a
+Governor's newsroom, then two split sweeps (evidence and big-tech health
+arms; regulation, safety, payers and Canada) for the 10:45 → 15:00 ET
+extend with main-session reads of MAPS's and Psychedelic Alpha's own
+texts, the coverage critic that finalized 09-05, and a
 buffer-triage pass over Saturday's second collection round and today's
 lanes (`google_news_rss` 4,324 items, `rss` 66 — all journal-issue backlog
 — `gdelt` 77; `clinicaltrials` and `federal_register` returned nothing on
@@ -23,22 +26,32 @@ a 🌙 late catch.*
 
 ## Today's throughline
 
-Musk-circle money has recapitalized the company behind the rejected MDMA
-application: Antonio Gracias, the SpaceX director, put $25 million into
-Lykos Therapeutics, took control, renamed it Resilient Pharmaceuticals and
-moved it to Chicago, the Wall Street Journal reported on Saturday — with a
-$16 million Harvard professorship on psychedelics alongside and Steve
-Jurvetson named as an earlier trial funder. **The sponsor of the
-application the FDA turned down in 2025 is refinanced and renamed rather
-than gone**, which means the psychedelic regulatory sprint this lens
-tracks now has a resubmission candidate under a name the map did not have
-until this morning, and the April executive order has a private-capital
-counterpart from the same political orbit. The story sat in Saturday's
-buffer under the Journal's own headline and was found by the coverage
-critic, not the sweep; both names are watchlist terms from today.
+The sponsor of the rejected MDMA application has already resubmitted it.
+Resilient Pharmaceuticals — the company Lykos Therapeutics became in
+August 2025 after a $50 million Series B led by Antonio Gracias and Sir
+Chris Hohn — refiled its new drug application for MDMA-assisted therapy
+for PTSD in the second week of August 2026, two years to the week after
+the FDA's Complete Response Letter, without running the new Phase 3 trial
+that letter recommended; the package leans on a small VA long-term
+follow-up, at least one other third-party dataset, a 32-subject Phase I
+safety study and an audit of the original trials. Resilient has not said
+so publicly; Psychedelic Alpha reported it from sources and MAPS, which
+funded the underlying trials, answered that report in its own statement
+on 08-10. **The thread's live question — whether approval is outrunning
+the methodology fix the FDA wrote after the MDMA rejection — is now
+being answered by the FDA on a resubmitted, not newly-generated, evidence
+package**, and a resubmission review is faster than a new one, which
+puts Resilient in a race with the voucher-holding psilocybin sponsors for
+the first US psychedelic approval decision. The map had none of this
+until the afternoon sweep chased the Journal's Saturday feature on
+Musk-circle psychedelic money — and that chase also corrected this
+morning's reading: the recapitalization and rename the Journal describes
+are a year old, its $25 million is Gracias's foundation's share of the
+Series B, and the "resubmission candidate" this digest anticipated at
+10:45 had been at the FDA for four weeks.
 
-Sunday itself was quiet on every thread. No weekend action from the
-Governor on the five California bills; nothing from PubMed for 09-05 or
+Sunday itself was quiet on every thread, morning and afternoon. No weekend
+action from the Governor on the five California bills; nothing from PubMed for 09-05 or
 09-06 across the eight journals; no weekend statement from Character.AI,
 OpenAI, xAI or Meta on companion or teen safety. Two things worth the
 record arrived by way of Sunday coverage of earlier events: a King's
@@ -78,6 +91,26 @@ aggregator trap.
 
 ## Regulation & legislation
 
+- **Resilient Pharmaceuticals, the renamed Lykos Therapeutics, resubmitted
+  its new drug application for MDMA-assisted therapy for PTSD to the FDA in
+  the second week of August 2026, almost exactly two years after the
+  Complete Response Letter of 2024-08-09, without running a new Phase 3
+  study.** The resubmission references a small VA study with long-term
+  follow-up and at least one other third-party dataset for durability, a
+  new 32-volunteer Phase I study with EKG and QT monitoring for the safety
+  characterization the CRL asked for, and an audit of the Phase 3 data;
+  the candidate may carry a new name. Resilient has not publicly discussed
+  the filing — Psychedelic Alpha reported it from sources familiar with it,
+  and MAPS, which incubated the company and funded the 2022 trials, said in
+  its 08-10 response that it "has no active role in Resilient's drug
+  development program." Psychedelic Alpha expects a resubmission review to
+  run faster than a new one and reads the FDA's July final guidance on
+  psychedelic trials as the frame the Division of Psychiatry will apply;
+  a tighter REMS than the 2024 advisory committee's is the bargaining chip
+  it names. Found in the afternoon extend; on `psychedelic-regulatory-
+  sprint` as a 2026-08-10 entry, four weeks late.
+  ([MAPS](https://maps.org/2026/08/10/maps-responds-to-report-of-progress-for-mdma-assisted-therapy-for-ptsd-with-fda/), [Psychedelic Alpha](https://psychedelicalpha.com/news/two-years-after-rejection-resilient-quietly-refiles-mdma-for-ptsd-application/), [Psychedelics Today](https://psychedelicstoday.com/2026/08/18/mdma-nda-resubmitted-fda-august-2026/))
+  <!-- k: t=psychedelic-regulatory-sprint axis=regulation sev=major -->
 - **Virginia's Joint Commission on Technology and Science is studying
   AI-companion-chatbot harms through a supplementary report rather than a
   bill, after two 2026 bills (HB 635, SB 796) stalled, and will vote on
@@ -128,8 +161,16 @@ administrative updates rather than first postings, as the digest said.
   `psychedelic-regulatory-sprint` since 08-24 and never a sweep term; the
   rename would have orphaned the old name entirely.
 - `✎` timeline entries merged on `psychedelic-regulatory-sprint` (the
-  Gracias recapitalization, dated 09-05) and `ai-psychosis` (the arXiv
-  paper, dated 08-25). `last_seen` bumped on both.
+  Gracias recapitalization, dated 09-05; at 15:00 ET, the NDA
+  resubmission, dated 08-10) and `ai-psychosis` (the arXiv paper, dated
+  08-25). `last_seen` bumped on both.
+- ✏️ **corrected at 15:00 ET:** the 09-05 timeline entry and the 09-05
+  digest's 🌙 Lykos bullet presented the recapitalization and rename as
+  Saturday's news and inferred that "any resubmission arrives under a
+  name this map did not have." Lykos became Resilient in late August 2025
+  ($50m Series B, Gracias and Hohn; CEO Mike Burke — Psychedelic Alpha
+  bulletin #207) and the resubmission was filed in August 2026. Both
+  bullets carry a bracketed correction; neither was rewritten.
 - `✎` **finalize of 09-05:** the Lykos story curated into
   `2026-09-05-mental-health.md` as a late catch; critic appendix and
   `coverage-log.md` entry written; the clinical-trials conditions-field
@@ -153,7 +194,14 @@ administrative updates rather than first postings, as the digest said.
 
 ## ⚠️ Collection note
 
-The lens sweep ran long — 26 threads plus PubMed, the Governor's newsroom
+**Afternoon extend (15:00 ET):** the lens was split back into two sweeps
+(evidence and big-tech arms; regulation, safety, payers, Canada) with a
+hard 15-minute stop, and both closed in about three minutes — the fix for
+the morning's 27-minute run worked. Lanes relaunched at 19:02Z: `rss` zero
+new rows (the two DTx rows in the window are the Frontiers/Internet
+Interventions recurrence), `clinicaltrials` and `federal_register` nothing
+on a Sunday, `google_news_rss` still running at the cut. **Morning:** the
+lens sweep ran long — 26 threads plus PubMed, the Governor's newsroom
 and the buffer — and returned after every other sweep; the main session
 prompted it to close rather than wait on a `clinicaltrials` lane that had
 already returned nothing. `gov.ca.gov`'s newsroom index 404s on the fetch
