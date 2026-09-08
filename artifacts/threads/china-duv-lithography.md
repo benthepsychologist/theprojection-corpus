@@ -21,6 +21,14 @@ export-control policy re-prices on it.
   ledger and a clean falsification test.
 -->
 
+## 2026-09-08 — CXMT and YMTC reported stockpiling three years of ASML DUV tools ahead of anticipated export limits
+
+- ⚠️ **CXMT and YMTC are reported to be stockpiling roughly three years' worth of ASML DUV lithography tools ahead of anticipated export limits.** Single-sourced through two hardware outlets; the underlying report was not located, so this is recorded as reported, not established. It reads as the same pre-buy behaviour seen before the 2023 controls — buying imported tools now rather than waiting on the homegrown tool this thread's DELIVERY test tracks. ⚠️ No source link located for this item; recorded from the digest text alone. ⟨daily 2026-09-08⟩
+
+## 2026-09-07 — FT reports Huawei is backing a Chinese DUV-lithography startup
+
+- ⚠️ **The Financial Times reported Huawei is backing a Chinese DUV-lithography startup** — the most direct evidence yet that China's answer to ASML is being assembled around Huawei rather than around SMIC's existing suppliers. Paywalled; confirmed at headline level only through a Korean secondary pickup. ⚠️ No direct FT or secondary link located; recorded from the digest text alone. ⟨daily 2026-09-07⟩
+
 ## 2026-09-01 — UBS estimates China needs 2-5 years for immersion-DUV high-volume manufacturing, a decade-plus for any EUV alternative
 
 - ⚠️ **OUT OF WINDOW (2026-09-01, before this sweep's 2026-09-02 15:00 ET start) — flagged because it directly answers this thread's central open question and is not recorded anywhere on the map.** UBS analysts, cited by TrendForce and reported separately, estimate China will reach immersion-DUV high-volume manufacturing capability within **two to five years**, based on patent activity around light-source and laser subsystems they read as comparable to where ASML stood roughly 15 years before its own EUV mass-production ramp. On EUV specifically, UBS places China's program roughly where ASML was in 2004 and does not expect a viable EUV alternative to emerge **within this decade**. This is an analyst timeline forecast, not a delivery confirmation — it does not meet this thread's own "delivery, not production" test (no installed-and-running tool at a named fab is newly confirmed here) — but it is the first dated, sourced numeric range this map has seen for the gap this thread was opened to track. ([TheNextWeb](https://thenextweb.com/news/ubs-china-asml-euv-decade-immersion-duv-dutch-export-licence), [ChipBriefing](https://chipbriefing.substack.com/p/daily-china-euv-unlikely-this-decade)) ⟨daily 2026-09-03⟩

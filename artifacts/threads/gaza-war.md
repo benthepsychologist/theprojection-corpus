@@ -17,6 +17,10 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-08 — UK, France and ten other countries sanction Israeli settlement goods as Miliband calls West Bank conduct "ethnic cleansing"
+
+- **The UK, France and ten other countries announced sanctions and import bans on goods from Israeli settlements in the West Bank.** Foreign Secretary Ed Miliband told Parliament Britain would introduce an import ban plus a "comprehensive sanctions regime," saying Britain "refuses to be bystanders" to what he called ethnic cleansing in parts of the West Bank. The US ambassador to Israel criticised the move and two Israeli ministers called for retaliation. Practical effect on the roughly £6bn UK-Israel trade relationship is expected to be small, since settlement-origin goods are hard to distinguish — the significance is the twelve-country bloc, not the trade volume. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/uk-announces-sanctions-on-illegal-israeli-settlements)) ⟨daily 2026-09-08⟩
+
 ## 2026-09-07 — Five killed in Gaza in 24 hours despite ceasefire, including two children in separate strikes
 
 - **A Gaza City Israeli strike on a vehicle killed seven-year-old Wafaa Aqila and her father, and a separate Israeli artillery strike hit the Sakina School sheltering displaced people in Deir el-Balah, killing first-grade student Saadi Ghalia; Gaza's Health Ministry said five Palestinians were killed and 30 wounded in the 24 hours to Monday, with two more dying of previous wounds, bringing the ceasefire-era toll since October to at least 1,352 killed.** The Palestinian Ministry of Education condemned the strikes. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/7/israeli-attacks-on-gaza-kill-five-palestinians-including-two-children)) ⟨daily 2026-09-07⟩

@@ -13,6 +13,10 @@ crawled: 2026-07-27
 vs. the spend, and the market's read (capex-as-confidence vs.
 capex-as-anxiety). Part of `hyperscaler-capex-big-picture`.
 
+## 2026-09-08 — Google locks in restored nuclear output from a DOE-financed Iowa reactor restart
+
+- **NextEra and Google announced a new collaboration tying the output of NextEra's Duane Arnold nuclear plant, restarting on a $1.9 billion Energy Department loan closed the same day, directly to Google's AI power demand.** The loan closing, not just the partnership, is the news — a *closed* federal loan is money committed rather than an announced intent, a different kind of fact than the PPA-and-partnership announcements that make up most of this thread's power-sourcing entries. ⚠️ The plant's capacity and restart-target year could not be confirmed from a 2026-dated source and are omitted rather than recalled. (DOE; PR Newswire; NextEra newsroom) ⟨daily 2026-09-08⟩
+
 ## 2026-08-17 — Alphabet debuts its first-ever Australian-dollar bond, priced at a striking 7% yield
 
 - **Alphabet raised roughly A$5B (~US$3.6-3.9B) in its inaugural Australian-dollar "Kangaroo" bond**, drawing over 200 investors — a new financing leg distinct from the ~$115B-order-book USD jumbo bond already on this thread's timeline (2026-08-06). Bloomberg's framing is pointed: the bond priced at 7%, read by the outlet as evidence of "the sky-high cost of AI debt." This is the financing side of the capex story continuing to widen geographically as Alphabet works through its 2026 raise. ([Reuters](https://www.reuters.com/), [Bloomberg](https://www.bloomberg.com/)) ⟨daily 2026-08-31⟩

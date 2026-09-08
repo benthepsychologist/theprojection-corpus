@@ -13,6 +13,10 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-09-07 — NYT: blacklisted Inspur kept buying Nvidia chips, including Blackwell, through a part-owned subsidiary
+
+- ⚠️ **The New York Times reported that Inspur, blacklisted by the US in 2023, kept buying advanced Nvidia chips — including Blackwell parts — through Aivres Systems, a nominally independent Silicon Valley subsidiary it part-owns (roughly one-third).** The investigation puts $5.6bn of hardware moving through that channel April 2024 → February 2026 — a live example of this thread's demand-side question (who is actually buying, through what channel) running into export-control evasion. The NYT text itself is paywalled and was not read directly; the $5.6bn figure comes from secondary outlets summarising it, so treat it as reported-not-verified. A separate $2bn Megaspeed/Malaysia claim in the same cluster appears to recycle an October 2025 story and is excluded here pending a dedupe check. ⚠️ No direct NYT link located; recorded from secondary summaries. ⟨daily 2026-09-07⟩
+
 ## 2026-09-03 — The deal closes the arc this thread tracked since 08-26 — and the confirmed total is lower than the rumor this thread carried on 09-01
 
 - **Nvidia's own 8-K puts the total deal value at $12.93bn ($11.9bn to stockholders + up to $1.0bn employee retention) — resolving this thread's 08-26 "agreed" report and its 09-01 update, and correcting the ~$14bn total the 09-01 entry carried.** The 09-01 entry (sourced to Bloomberg) read the reported $12.9B figure as the base price with a rumored $1B retention package layered on top, putting the total at "~$14B." The primary filing shows the two instruments actually sum to $12.93bn, not ~$14bn — the earlier escalation did not hold up against Nvidia's own disclosed structure. See the correction below.

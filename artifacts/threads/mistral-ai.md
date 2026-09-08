@@ -22,6 +22,10 @@ figure; does growing Microsoft compute-channel dependence complicate the
 "sovereign alternative" framing. Cross-refs `asml` (the ASML 11%-stake side
 of Mistral's cap table lives there, not here).
 
+## 2026-09-07 — Mistral closes a Samsung-led ~€3bn round at ~€21bn, with Nvidia and BlackRock joining, ending three digests of unresolved flagging
+
+- **Mistral closed a Samsung-led round of about €3 billion at a roughly €21 billion valuation, with Nvidia and BlackRock participating, confirmed on Mistral's own site at 01:03 ET on 09-08.** Roughly a doubling of the prior ~€12bn mark and the largest European AI raise to date — the round this thread's own watch line has carried as "pending... in talks since mid-June, still not closed" since it opened is now closed. This resolves a flag the map carried unresolved across three consecutive digests, where search results kept substituting the confirmed September-**2025** €1.7bn round for the pending one. ([Mistral](https://mistral.ai/news/), [CNBC](https://www.cnbc.com/2026/09/08/mistral-ai-funding-valuation-samsung.html)) ⟨daily 2026-09-07⟩
+
 ## 2026-08-20 — Critic catch: Agentic Search triples document-QA accuracy while cutting tokens
 
 - **Mistral shipped Agentic Search, a retrieval layer that gives a model

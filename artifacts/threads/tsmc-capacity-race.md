@@ -12,6 +12,11 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-09-08 — TSMC commits to ASML's High-NA EUV tools alongside Samsung and Intel; opens a joint photomask initiative with ASML
+
+- **TSMC, Samsung and Intel all committed to ASML's High-NA EUV tools for the next process node**, and TSMC and ASML separately opened a joint initiative on large-format photomasks, with a pilot production line targeted for 2031. Three competing foundries converging on the same toolmaker is the clearest signal yet of where TSMC's own capacity race goes next.
+  ([CNBC](https://www.cnbc.com/2026/09/08/tsmc-samsung-asml-high-na-euv-machine-ai-chips.html), Intel Foundry, pr.tsmc.com) ⟨daily 2026-09-08⟩
+
 ## 2026-08-25 — Apple ships the first commercial silicon on TSMC's N2 node
 
 - **Apple unveiled the M6, in a refreshed Mac mini, as the first

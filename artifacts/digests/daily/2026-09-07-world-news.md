@@ -1,15 +1,15 @@
 ---
 lens: world-news
 date: 2026-09-07
-status: building
+status: final
 window_start: 2026-09-07T05:00:00-04:00
-as_of: 2026-09-07T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-07
 
-*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday (US Labor Day).
+*Curated agentic-interim, **05:00 ET 09-07 → 05:00 ET 09-08**, the full
+digest-day; finalized on the 09-08 10:00 ET run.
 Sources: two world-news sweeps (the second dispatched specifically because
 the first reported its own front-page scan incomplete), a direct
 front-page pass over BBC, DW, France24 and Al Jazeera's first-party RSS,
@@ -246,6 +246,25 @@ governing alone.
 - `✎` **Correction, 2026-09-06 frontier-ai:** Meta AI-glasses bystander
   amendment dated `08-31 → 09-01`.
 
+## 🌙 Late catches
+
+- **Russia struck Kyiv city overnight, ending the three-day pause it had
+  declared for the US envoys' visit, hours after Witkoff and Kushner left
+  the capital.** Ukraine's Air Force reported 166 drones and 32 cruise
+  missiles launched alongside ballistic and anti-ship missiles, with 142
+  drones, 31 cruise missiles and 2 ballistic missiles downed and impacts
+  at 29 locations nationwide; Kyiv and Odesa were named the main targets.
+  Mayor Vitali Klitschko reported **3 dead and at least 10 injured inside
+  Kyiv city**, 5 hospitalised and 2 in serious condition. A drone hit the
+  building housing the We Are Ukraine TV channel while it was on air. The
+  first two nights of the pause had held for the city; the third did not.
+  ⚠️ Injury counts vary by source — the Kyiv Independent put them at 25
+  against Klitschko's 10, and this digest uses the mayor's own figure for
+  the city.
+  ([Ukrainska Pravda](https://www.pravda.com.ua/eng/news/2026/09/08/8052411/),
+  [France24](https://www.france24.com/en/), ABC News/AP)
+  <!-- k: t=russia-ukraine-war e=russia axis=military sev=major -->
+
 ## 🧵 Thread candidates
 
 - **A Saudi energy-infrastructure thread** *(curator-noticed; first
@@ -257,10 +276,14 @@ governing alone.
   west-coast routing that was the answer to Hormuz is still an answer.
   Terms: `Jizan refinery`, `Yanbu`, `Aramco facility`, `Ras Tanura`,
   `East-West pipeline`. **Track it?**
-- **German domestic politics** *(second offer — first made 09-06,
-  unanswered)* — the AfD came within a handful of seats of governing a
-  state and the map has nowhere to put it. Drops after this offer if
-  unanswered. **Track it?**
+- **German domestic politics** *(second and final offer — first made
+  09-06, unanswered)* — the AfD came within a handful of seats of
+  governing a state and the map has nowhere to put it. Unanswered again,
+  so by the candidate rule it **drops** here. ⚠️ Recorded rather than
+  dropped silently, because it is escalating as it leaves: the AfD topped
+  Saxony-Anhalt at 43.8%, protests spread across Germany on 09-08 and the
+  chancellor called the result one that "changes all of Germany." A word
+  from Ben reopens it at any time.
 
 ## 🚨 Flash
 

@@ -8984,3 +8984,226 @@ needs its two real values, and the venv needs rebuilding. Flagged for Ben.
 **Committed and pushed** as the last act of the session; both repos
 verified at zero unpushed commits. No collector provenance manifests exist
 for this run, for the reason above.
+
+---
+
+## 2026-09-08 ~10:00 ET (Tuesday) — /daily: a lens that reported an empty day while its benchmarks led with the same story, and a graph that had never once recorded an expectation resolving
+
+**What ran.** Eight agents in one batch at run start — five lens sweeps
+(AI labs/legal, AI infra/chips, global capital, mental health, world news)
+and three coverage critics finalizing 09-07 — then four timeline writers
+across disjoint thread sets, then four briefing writers. Every price,
+both same-day ledger claims and the day's biggest single assertion were
+re-verified in this session against primary sources rather than taken from
+a sweep report.
+
+**09-07 finalized on all five lenses.** `status: final`, `coverage: done`,
+three critic appendices written, one Lebanon duplicate caught and removed
+before it shipped (the world sweep proposed it as a late catch; the digest
+already carried it with better sourcing — the scoped-agent absence problem
+again, and the check that caught it was reading the digest rather than
+trusting the report).
+
+---
+
+### 🔴 The frontier-AI lens said "nothing happened here today" on 09-07, and it was wrong
+
+The critic found **three items the benchmarks led with**, the largest being
+OpenAI chief scientist Jakub Pachocki's essay **"An Alien Mind"** — public
+since Sunday 09-06, the lead item on both The Neuron's and TLDR AI's 09-07
+editions and the BBC's technology lead, and absent corpus-wide on greps for
+`pachocki`, `alien mind` and `recursive self`. **Caught two days late**,
+which is the second two-days-late catch on this lens inside a week. Also
+missed: OpenAI's formal EU AI Act incident filing over the German-wiki
+agent breach, and the UN human-rights chief calling AI an existential risk.
+
+**The failure mode, stated precisely because it is repeatable.** The 09-07
+sweep checked the labs' newsrooms, the dockets and the general tech wire,
+found all three empty, and concluded the day was empty. **All three checks
+were true and the conclusion was false.** The governance-and-posture layer
+— essays, regulatory filings, resignations, UN statements — appears on none
+of those three surfaces. An empty newsroom is not an empty day. The
+throughline was retracted in place rather than quietly overwritten.
+
+**The instrument that would have caught it is the one the outage disabled**
+— the organisation-name pass over collected rows. Second consecutive day
+with no collectors.
+
+Against that, the global-capital critic returned the opposite result:
+**every figure in the 09-07 price strip verified clean** against the
+settlement series, the Treasury's own daily curve and CNBC's own text. The
+four-day Brent transposition fix held. One line — gold's Monday level —
+could not be confirmed at any granularity across the holiday session and is
+flagged rather than asserted. Mental health: no misses at all.
+
+---
+
+### 🔴 The graph had never recorded a single expectation resolution
+
+Found while checking why today's ledger flips were not landing.
+`graph/ingest/03_expectations.py` was idempotent by **SKIPPING** an
+expectation it had already ingested — correct for creation, wrong for
+resolution. Status changes over an entry's life (`pending → hit /
+passed-silent / withdrawn / refuted`) therefore never reached the graph.
+
+**23 of 99 expectations were stale**, every one resolved in the ledger and
+still rendering as an open hypothesis. Added a reconciliation pass that
+re-derives each claim's epistemic status from the ledger on every run and
+clears `valid_to` when a claim is no longer open. It restated all 23
+immediately — and then caught a fourth flip on its very next run, which is
+the best evidence the fix works.
+
+**A second, smaller bug fixed alongside it:** `withdrawn` has been a
+documented `upcoming.yaml` status since the file was seeded but was never
+in the ingester's `STATUS` map, so withdrawn claims fell through the
+`hypothesized` default.
+
+---
+
+### ⏳ Four ledger flips, and one of them needed a status that did not exist
+
+- ⚠️ **`kremlin-kyiv-strike-pause-0908` → `refuted`.** Russia struck Kyiv
+  overnight, hours after the US envoys left, on the third and deciding
+  night of a pause that had held twice. 166 drones and 32 cruise missiles
+  launched; 3 dead and at least 10 injured inside the city per Klitschko; a
+  drone hit the We Are Ukraine TV building on air. Corroborated across
+  Ukrainska Pravda's own RSS, France24, Reuters and the Kyiv Independent.
+- ✅ **`canada-retaliatory-tariffs-effective-0908` → `hit`**, confirmed
+  against **CBSA Customs Notice 26-23** — the government's own text. Note
+  the access shape: `canada.ca` is network-blocked from this box entirely
+  (connection failure, not a 403) while `cbsa-asfc.gc.ca` and
+  `gazette.gc.ca` both serve fine. ⚠️ Scope unreconciled: ~700 products /
+  ~C$20bn logged, 629 items or C$27.6bn reported, and the notice states
+  neither. Flagged on the entry rather than restated.
+- ⚠️ **`decart-acquisition-close` → `withdrawn`.** Anthropic walked away
+  from the ~$6bn deal. Had stood `passed-silent` with grace expired since
+  09-04.
+- ✅ **`mistral-3b-round-close` → `hit`, retro-flipped eight days late.**
+  The round closed at ~€3bn Samsung-led, ~€21bn, against logged terms of
+  ~€3bn Samsung-and-EQT-led at ~€20bn — amount and lead right, valuation
+  within a billion, EQT absent from the confirmed participants and Nvidia
+  and BlackRock present. Caught only because the frontier-AI lens carried a
+  standing flag and re-checked it every run.
+
+> **Two entries resolved in opposite directions on the same day, both after
+> their grace had expired. A `passed-silent` with an expired grace is not a
+> dead claim.**
+
+**⚠️ THE VOCABULARY CHANGE, FLAGGED FOR BEN.** The Kyiv entry is a **null
+claim** — "no strikes for three nights" — so its polarity is inverted:
+silence confirms it and loud evidence refutes it. None of the four
+documented statuses fit, and the entry's own `what_confirms` had already
+noticed, writing the prose workaround *"passed-silent here means the pause
+held."* Recording a loudly disproved claim as `passed-silent` would state
+the opposite of what happened. **A fifth status, `refuted`, was added** to
+`upcoming.yaml` and mapped to the graph's existing `rejected` state, so
+graph semantics are unchanged and only the human-readable label differs.
+**This is shared vocabulary changed without asking. Reversible with a word,
+and a brief proposing it upstream belongs in the engine's queue rather than
+left as a local divergence.**
+
+---
+
+### 📋 Findings for Ben, ranked
+
+1. ⛔ **THE SITE HAS NOT UPDATED SINCE SATURDAY, AND IT IS NOT A PUBLISH
+   FAILURE.** Yesterday's run pushed to the site repo and hedged that
+   Cloudflare might auto-build on git push. **It does not.** Checked
+   directly rather than assumed: the live AI beat page reads "Updated Sep
+   6, 7:22 PM UTC" and still shows **Brent at $92.68**, the transposed
+   figure the 09-07 run corrected. There is no GitHub Action and no
+   Cloudflare-Pages git integration in the site repo; `wrangler` is not
+   installed and no Cloudflare token is in the environment, so there is no
+   second deploy path from inside a session. **Needs `.env` with
+   `THEPROJECTION_DEPLOY_HOOK`.** Everything is staged and pushed and will
+   go live the moment the hook exists.
+2. ⛔ **Second consecutive day with no collectors.** `cloud-researcher`
+   still not installed; seven deterministic lanes dark; no provenance
+   manifests. `attention/world-news.yaml` frozen at 09-03, so its eleven
+   mechanically-scored candidates were deliberately NOT offered as if
+   fresh.
+3. ⚠️ **40 of 105 thread files carry internal pipeline vocabulary that
+   publishes publicly** — 75 occurrences of "this run" (23), "coverage
+   critic" (20), "this sweep" (14), "digest-day" (13), "main session" (3),
+   "the buffer" (2). Thread and story pages are public surfaces, so this is
+   reader-facing. **Four were fixed today** (the ones this run touched:
+   `cross-border-rates`, `softbank-all-in`, `red-sea-oil-shock`,
+   `russia-ukraine-war`) and the remaining ~36 were left alone, because
+   each needs a judgment call about whether the sentence is a legitimate
+   correction-of-record or a leak. Worth a dedicated pass.
+4. ⚠️ **`capital-context.yaml` is two weeks stale** (asof 08-25) and five
+   of the collectors that feed it are among the ones that no longer run, so
+   the standing picture the global-capital lens reads interpretations
+   against cannot currently be refreshed mechanically.
+5. 📋 **Benchmark access state has changed and is still not pinned into
+   `sources/benchmarks.yaml`** — flagged on three consecutive passes now.
+   Reuters blocked both directly (401) and through `r.jina.ai` (403, plus a
+   domain-wide rate-limit block mid-session); **`openai.com` now blocks
+   plain curl and WebFetch too** (reader proxy still works); AP's proxy
+   route **now returns 200** where it did not before.
+
+---
+
+### 🧵 Thread candidates open for Ben
+
+- **A Saudi energy-infrastructure thread** — second and final offer. Today
+  the Houthis hit Aramco facilities and four Saudi cities and wounded 73;
+  the hits still route across three threads with none owning the target
+  set. The most-escalating unowned area on the map.
+- **Cross-company agent containment failures** — first offer.
+  `openai-agent-security-incident` is named and scoped for one company and
+  there are now three labs' incidents that do not fit it. Either that
+  thread widens or a companion opens.
+- **Russian energy-project capital** — first offer. Rosneft shipped first
+  crude from the $157bn Vostok Oil project; nothing on the map covers
+  Russian energy project finance or the Northern Sea Route channel.
+- **Fab materials and chemicals trade** — first offer. Today's Chinese
+  anti-dumping action on Japanese dichlorosilane has no home.
+- `−` **"German domestic politics" DROPPED** after two unanswered offers,
+  per the candidate rule. Recorded rather than dropped silently, because it
+  is escalating as it leaves: the AfD topped Saxony-Anhalt at 43.8%,
+  protests spread across Germany today, and the chancellor called it a
+  result that "changes all of Germany." A word reopens it.
+
+---
+
+### Mechanics
+
+**Map edits:** seven watchlist entities added (`huawei`, `inspur`,
+`nextera-energy`, `decart` on AI; `saudi-aramco`, `bank-of-japan`, `canada`
+on global capital) — each already a subject this map wrote about with
+nothing to tag it with. Eight `actor-doing.yaml` roll-ups refreshed
+(anthropic, openai, mistral-ai, meta-ai, qualcomm, amazon-aws, google,
+softbank). 30 thread timelines written, `last_seen` bumped on all 30.
+
+⚠️ **A self-inflicted regression caught and fixed within the session:**
+refreshing `actor-doing.yaml` via `yaml.dump` round-trip **stripped all 16
+of its header comment lines**, including its own YAML-guardrail note. The
+header was restored from a backup taken before the edit and verified
+byte-for-byte. **`yaml.dump` is not a safe way to edit any commented file
+in this repo** — take a backup first, and prefer surgical text edits.
+
+**Graph:** all four ingesters run in order, validator passes — 4,879 atoms,
+3,141 sources, 8,008 relationships, 1,269 annotations, 129 extraction
+passes, all references resolving, no duplicate ids.
+
+**Readouts and publish:** four packs, four sonnet briefing agents,
+`--apply` accepted all four with zero skips, `--export` wrote 154 readouts.
+⚠️ **A prompt error worth recording:** the front pack's `shape.sections`
+requires the three lens labels verbatim, but the LENS packs require
+*themes within that lens* — the briefing prompts copied the front-page
+wording to all four. **Both the AI and mental-health agents caught it,
+followed the pack's own `shape` field over the prompt, and flagged the
+conflict.** Correct behaviour; the prompt template is what needs fixing.
+Five bullets came back with `url: null`, which would have put the front
+briefing at a 58% link rate against a 60% floor — patched to
+`/threads/<slug>/` links, each verified to point at a page that genuinely
+carries the fact. `publish --push` ran twice (once after the vocabulary
+fixes), 1,176 story pages, 753 claim pages, 122 map pages, 154 readouts.
+**Zero page deletions** — no weekly-rollover concern on a Tuesday.
+No audio briefing: the kokoro venv is still absent.
+**No Cloudflare build was queued, for the reason in finding 1.**
+
+**Committed and pushed** as the last act of the session; both repos
+verified at zero unpushed commits. No collector provenance manifests exist
+for this run, for the reason in finding 2.

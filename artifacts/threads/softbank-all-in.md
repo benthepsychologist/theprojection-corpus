@@ -11,6 +11,11 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-07 — SoftBank's Tokyo shares jump 11.2% in a single session, its biggest one-day move since July's limit-up
+
+- **SoftBank's Tokyo-listed shares (9984.T) rose 11.2% in a single session, from Friday's ¥5,590 close to Monday's ¥6,217 close, on returning AI risk appetite across Asia — its largest one-day move since July's limit-up.** Verified directly against the settlement series rather than taken from a headline. Asia traded a full session on 09-07 while US markets were shut for Labor Day, so this was the largest single move on any thread this map tracks that day, and it landed on a lens whose own sweep had reported the day as effectively closed. **This entry is itself a late catch**: the 09-07 global-capital digest had disclosed nineteen threads — this one among them — as unchecked when its sweep hit a hard stop mid-session, and the coverage critic's name-search pass is what found the move afterward, not the original sweep.
+  ⟨daily 2026-09-07⟩
+
 ## 2026-09-04 — SoftBank's record ¥1tn retail bond priced at 4.75%, the top of its guided range
 
 - **SoftBank Group priced its record ¥1 trillion ($6.3bn) 7-year retail bond at a 4.75% coupon, landing at the top of the 4.3-4.9% indicative range disclosed 08-24 rather than in the middle or bottom of it.** That coupon is more than double the 2.3% year-to-date average for comparable yen retail corporate bonds — a direct price on the credit risk investors now attach to SoftBank's AI-concentration bet, and the top-of-range landing reads as the market demanding real compensation rather than SoftBank's brand pricing power carrying the deal. Context: yen retail-bond issuance overall has hit ¥2.88tn year-to-date, already a record for any full year, and a Nomura credit analyst framed the size and yield as likely to "draw new individual investors into the market" — this deal isn't happening in isolation, it's riding a broader retail-bond wave in Japan.

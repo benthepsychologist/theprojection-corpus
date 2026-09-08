@@ -20,6 +20,11 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-09-08 — TSMC, Samsung and Intel all commit to High-NA EUV; ASML and TSMC open a joint photomask initiative
+
+- **TSMC, Samsung and Intel all committed to ASML's High-NA EUV tools**, the clearest signal yet that the entire leading edge is converging on one toolmaker for the next node, extending ASML's standard-EUV monopoly position into High-NA. **ASML and TSMC also opened a joint initiative on large-format photomasks**, with a pilot production line targeted for 2031 — the honest timescale of this transition.
+  ([CNBC](https://www.cnbc.com/2026/09/08/tsmc-samsung-asml-high-na-euv-machine-ai-chips.html), Intel Foundry, pr.tsmc.com) ⟨daily 2026-09-08⟩
+
 ## 2026-08-25 — Chinese state media urges Dutch retaliation over the threatened ASML export ban
 
 - **Global Times published an op-ed telling the Netherlands to answer any US-forced ban on ASML China sales with a Canada-style countermeasure, arguing the move would only accelerate China's domestic DUV substitution rather than protect US leverage.** The piece is a state-media signal on the third front of this fight — China's own public response — rather than confirmation of any new US or Dutch policy action. ([Global Times](https://www.globaltimes.cn/page/202608/1368931.shtml)) ⟨daily 2026-08-25⟩

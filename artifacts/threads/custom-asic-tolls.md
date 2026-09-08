@@ -11,6 +11,11 @@ opened: 2026-07-28
 *Watch:* the sixth customer · Jalapeño tape-out · the VMware litigation
 spread · whether any major takes design fully in-house.
 
+## 2026-09-08 — Amazon buys a second custom-silicon path, not from Broadcom
+
+- **Amazon and Qualcomm announced a multi-generational collaboration on custom AI data-centre silicon, and Qualcomm's stock rose about 10%.** Qualcomm issued Amazon a warrant for up to 25 million of its own shares as part of the deal. ⚠️ The "$4 billion" figure in most headlines is the value of that warrant, not cash consideration and not a disclosed contract size. The substance for this thread: Amazon already designs Trainium in-house, and this deal is Amazon buying a *second* custom-silicon path through Qualcomm rather than deepening the first — a customer-base data point for the ASIC-toll model that sits outside Broadcom's own five/six-customer roster this thread otherwise tracks.
+  ([CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html)) ⟨daily 2026-09-08⟩
+
 ## 2026-09-02 — Broadcom's Q3 date firms to today, after the close
 
 - **Broadcom confirmed through its own investor-relations release that it reports Q3 FY2026 results Wednesday, September 2, after market close, with the call at 5:00pm ET.** That firms this thread's "next earnings (~early Sept, unconfirmed)" watch line to a company-stated date. No numbers exist yet — the release lands after this run's window. The three things to check against this thread when it does: Jalapeño tape-out status, whether a sixth co-design customer joins the five already tracked (Google, Meta, OpenAI, Apple, ByteDance), and any updated backlog figure. Analyst consensus previews point to roughly $29.4bn revenue and ~$16bn of AI semiconductor revenue, but those are estimates and are recorded here as context, not as fact.

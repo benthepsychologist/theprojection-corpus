@@ -38,7 +38,17 @@ def write(fname, rows):
     with open(os.path.join(GRAPH, fname), "w") as f:
         for r in rows: f.write(json.dumps(r, sort_keys=True) + "\n")
 
-STATUS = {"pending": "hypothesized", "hit": "accepted", "slipped": "hypothesized", "passed-silent": "rejected"}
+# 2026-09-08: `refuted` and `withdrawn` added. `refuted` is a new upcoming.yaml
+# status for a claim actively DISPROVED by events (kremlin-kyiv-strike-pause-0908
+# was the first) — distinct from `passed-silent`, which means a due date passed
+# with no evidence either way. Both land in the graph's `rejected` state, so this
+# addition changes the human-readable ledger label, not graph semantics.
+# `withdrawn` has been a documented upcoming.yaml status since the file was
+# seeded but was never in this map, so it silently fell through to the
+# `hypothesized` default — a withdrawn claim was rendering as still-open in the
+# graph. Fixed here.
+STATUS = {"pending": "hypothesized", "hit": "accepted", "slipped": "hypothesized",
+          "passed-silent": "rejected", "refuted": "rejected", "withdrawn": "rejected"}
 CONF = {"confirmed": "high", "reported": "medium", "rumored": "low"}
 ORIGIN = "graph/ingest/03_expectations.py, 2026-08-27"
 
@@ -78,6 +88,34 @@ def get_or_make_source(url_or_list, label):
                    "evidence_class": "published_document", "meta": {"origin": ORIGIN}})
         sources.append(s); refs.append(f"source:{sid}")
     return refs
+
+# --- Reconciliation pass, added 2026-09-08 ---------------------------------
+# The guard below ("if it['id'] in already: continue") makes this script
+# idempotent by SKIPPING an expectation it has already ingested. That is
+# correct for creation and wrong for RESOLUTION: an expectation's status
+# changes over its life (pending -> hit / passed-silent / withdrawn /
+# refuted), and the skip meant those changes never reached the graph. Found
+# on 2026-09-08 with 23 of 99 expectations stale -- every one resolved in
+# the ledger and still rendering as an open hypothesis. So before the
+# creation loop, re-derive the final atom's epistemic status from the
+# ledger's current status and update it in place.
+restated = 0
+by_upcoming = {a["meta"]["upcoming_id"]: a for a in atoms
+               if a.get("meta", {}).get("upcoming_id")}
+for it in items:
+    a = by_upcoming.get(it["id"])
+    if not a:
+        continue
+    want = STATUS.get(it.get("status"), "hypothesized")
+    if a.get("epistemic_status") == want:
+        continue
+    a["epistemic_status"] = want
+    # valid_to is the open-until date; a resolved claim is no longer open.
+    if want == "hypothesized":
+        a["valid_to"] = str(it["due"])
+    else:
+        a.pop("valid_to", None)
+    restated += 1
 
 new_count = 0
 for it in items:
@@ -171,4 +209,4 @@ for it in items:
 write("atoms.jsonl", atoms); write("sources.jsonl", sources); write("relationships.jsonl", rels)
 write("annotations.jsonl", annos); write("extraction_passes.jsonl", passes)
 print(f"{new_count} hypothesis claim(s) created across {len(items) - len(already)} remaining expectations "
-      f"(including slip-chain links)")
+      f"(including slip-chain links); {restated} existing claim(s) restated from the ledger's current status")

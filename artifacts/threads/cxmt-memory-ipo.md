@@ -13,6 +13,10 @@ crawled: 2026-07-22
 reception; capacity-buildout plans vs. the shortage; read-through to
 `ai-memory-shortage` and `china-stack-independence`.
 
+## 2026-09-08 — CXMT reported stockpiling three years of ASML DUV tools ahead of anticipated export limits
+
+- ⚠️ **CXMT and YMTC are reported to be stockpiling roughly three years' worth of ASML DUV lithography tools ahead of anticipated export limits.** Single-sourced through two hardware outlets; the underlying report was not located, so this is recorded as reported, not established. If true, it is the same pre-buy behaviour the map logged before the 2023 controls, run again with more warning — a live data point against this thread's capacity-buildout watch. ⚠️ No source link located for this item; recorded from the digest text alone. ⟨daily 2026-09-08⟩
+
 ## 2026-09-04 — Counterpoint Research data show CXMT's global DRAM share nearly tripled year over year
 
 - **CXMT's share of the global DRAM market by revenue reached 10% in Q2 2026, up from about 4% a year earlier**, according to Counterpoint Research data reported by TechNode — enough to push the combined share of Samsung (39%), SK Hynix (26%) and Micron (25%) down from 94% to 87% and put CXMT in fourth place globally. A separate Wall Street Journal figure cited the next day put CXMT's share slightly higher, at 11%, against Micron's 25%. For the IPO this thread tracks, a fourth-place global share is the number the prospectus will lead with, and the year-over-year tripling is the growth story behind the listing. ([Counterpoint Research](https://counterpointresearch.com/en/insights/global-dram-and-hbm-market-share), [TechNode](https://technode.com/2026/09/04/changxin-memory-reaches-10-of-global-dram-market-in-q2/), [The Motley Fool, citing WSJ](https://www.fool.com/investing/2026/09/05/chinas-memory-chip-stock-almost-as-good-as-micron/)) ⟨daily 2026-09-06⟩

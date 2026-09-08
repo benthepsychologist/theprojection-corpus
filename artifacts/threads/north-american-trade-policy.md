@@ -13,6 +13,11 @@ renegotiated before then, any Mexico- or EU-side response, and whether
 the auto-parts tariff (a genuinely new category) reaches specific
 manufacturers by name.
 
+## 2026-09-08 — Canada's counter-tariffs take effect at 15, 25 and 50 percent, and the scope figures still don't reconcile
+
+- **Canada's retaliatory surtax on US goods took effect this morning at 15%, 25% or 50% of value for duty.** Confirmed against the government's own text — CBSA Customs Notice 26-23, dated Ottawa 09-07, implementing the United States Surtax Order (2026) in response to US Section 338 tariffs, with each product's rate generally mirroring the US rate. It applies below de minimis thresholds, including postal and courier imports, and does not stack with the existing steel-derivative surtax. ⚠️ The scope figures do not reconcile: this map logged "~700 products, ~C$20bn/yr" from the 08-25 preview, and today's coverage gives either 629 items or C$27.6bn — the notice itself states rates and mechanism but no count or value, so the magnitude is unresolved and is not restated here as fact. ([CBSA](https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html), [AP](https://apnews.com/article/canada-trump-carney-trade-war-tariffs-4620ffb5ecc029322217207fa6758431), [BBC](https://www.bbc.com/news/articles/c8jdev0422jo)) ⟨daily 2026-09-08⟩
+- ✅ **The ledger entry `canada-retaliatory-tariffs-effective-0908` resolved `hit`, confirmed against CBSA's own notice — the magnitude figures are flagged unreconciled above rather than quietly restated.** ⟨daily 2026-09-08⟩
+
 ## 2026-08-26 — Republican senators break with the White House on the Canada tariffs
 
 - **Republican senators publicly urged a reversal of the Canada tariffs,

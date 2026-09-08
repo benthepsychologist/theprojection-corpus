@@ -13,6 +13,18 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-09-08 — China imposes anti-dumping deposits on Japanese dichlorosilane; Japan protests
+
+- **China imposed anti-dumping deposits of 99.2% and 80.8% on dichlorosilane imported from Japan, and Japan protested formally.** Dichlorosilane is an upstream chemical used in depositing silicon films — a real input to fabs, not a symbolic target, and the kind of chemical-supply-chain action this thread's chips/models/capital arc had not previously tracked. (SCMP, AP, Nikkei Asia — no direct links located) ⟨daily 2026-09-08⟩
+
+## 2026-09-07 — NYT: blacklisted Inspur kept buying advanced Nvidia chips through a part-owned Silicon Valley subsidiary
+
+- ⚠️ **The New York Times reported that Inspur, blacklisted by the US in 2023, kept buying advanced Nvidia chips — including Blackwell parts — through Aivres Systems, a nominally independent Silicon Valley subsidiary it part-owns (roughly one-third).** The investigation puts $5.6bn of hardware moving through that channel April 2024 → February 2026. The NYT text itself is paywalled and was not read directly; the $5.6bn figure comes from secondary outlets summarising it, so treat it as reported-not-verified. A separate $2bn Megaspeed/Malaysia claim in the same cluster appears to recycle an October 2025 story and is excluded here pending a dedupe check. ⚠️ No direct NYT link located; recorded from secondary summaries. ⟨daily 2026-09-07⟩
+
+## 2026-09-07 — FT reports Huawei is backing a Chinese DUV-lithography startup
+
+- ⚠️ **The Financial Times reported Huawei is backing a Chinese DUV-lithography startup**, the most direct evidence yet that China's answer to ASML is being assembled around Huawei rather than around SMIC's existing suppliers. Paywalled; confirmed at headline level only through a Korean secondary pickup. ⚠️ No direct FT or secondary link located; recorded from the digest text alone. ⟨daily 2026-09-07⟩
+
 ## 2026-09-04 — DeepSeek plans to order at least 160,000 Huawei Ascend chips to power the Inner Mongolia campus this thread already tracks under construction
 
 - **DeepSeek plans to deploy at least 160,000 of Huawei's next-generation Ascend 950DT accelerators at the gigawatt-scale Inner Mongolia data center this thread logged as under construction on 07-30, which would create one of the largest known clusters of Chinese AI chips and mark a real step in China's push to route around Nvidia.** Bloomberg reports the deployment is for operating (serving) DeepSeek's models rather than training them — DeepSeek has previously tried and failed to train on Huawei silicon and continues to rely on Nvidia chips for that step, so this extends rather than closes the training/inference split this thread has tracked elsewhere (Z.ai's GLM-5.3-Flash serving-only Chinese-chip claim, 08-27). Huawei's own production capacity is the binding constraint — fulfilling the full order could take more than a year. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-04/deepseek-plans-big-huawei-ai-chip-order-to-power-new-data-center), [Seeking Alpha](https://seekingalpha.com/news/4640307-deepseek-said-to-order-at-least-160k-huawei-ai-accelerators-for-new-data-center-report)) ⟨daily 2026-09-04⟩

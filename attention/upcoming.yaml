@@ -7,8 +7,16 @@
 # /week writes the week's scorecard into the weekly digest, then prunes
 # resolved entries older than the closing week.
 #
-# status: pending -> hit | slipped | passed-silent | withdrawn
+# status: pending -> hit | slipped | passed-silent | withdrawn | refuted
 #   on slip: push old date onto slips:[], update due, status back to pending
+#   refuted (added 2026-09-08, LOCAL — not yet in the engine's own vocabulary):
+#     the claim was actively DISPROVED by evidence. Distinct from passed-silent,
+#     which means the due date passed with NO evidence either way. Needed first
+#     for kremlin-kyiv-strike-pause-0908, a NULL claim ("no strikes for three
+#     nights") whose polarity is inverted — silence confirmed it and loud
+#     evidence broke it, so recording the break as `passed-silent` would have
+#     said the opposite of what happened. graph/ingest/03_expectations.py maps
+#     it to `rejected`, the same graph state passed-silent produces.
 # logged_by: ben-steer | curate-add | crawl | critic-add
 #   (lighter bar than the map files — expectations are dated claims, not
 #   attention-map structure; see AGENTS.md provenance note)
@@ -725,7 +733,26 @@ expectations:
     # Valuation has also crept ~$6B -> ~$7B across this reporting wave.
     due: 2026-09-04
     slips: [2026-08-17]
-    status: passed-silent
+    status: withdrawn
+    resolved: 2026-09-08
+    evidence: >
+      Anthropic walked away from the ~$6B Decart acquisition. Bloomberg broke
+      it 2026-09-08 02:02Z ("Anthropic Said to Walk Away From $6 Billion
+      Decart Purchase"); Calcalist, which carried the original 08-09 report
+      this entry was logged from, confirmed at 03:56Z ("Anthropic drops plans
+      to acquire Israeli AI startup Decart"), with Ynetnews (04:49Z), The Next
+      Web (07:39Z), Silicon Republic and PYMNTS following. Described as
+      scuttled, not paused. Reporting frames it against Anthropic's IPO
+      preparation.
+    outcome_note: >
+      Closes an entry that stood `passed-silent` with its 3-day grace already
+      expired since 09-04. The ledger was right to hold it as unresolved
+      rather than quietly drop it: 22 days after coverage put early-September
+      completion odds "high," the deal is dead, and that is a more useful
+      finding than the silence was. ⚠️ Every outlet traces to the same
+      Bloomberg scoop, so this is single-sourced at the reporting level
+      despite six bylines; Anthropic and Decart have not confirmed it
+      themselves.
     evidence: |
       INTERIM 2026-08-30, still in talks. No report of the ~$6bn
       Anthropic/Decart deal closing; coverage (newest ~08-13) still frames
@@ -884,7 +911,8 @@ expectations:
     what_confirms: "an official Mistral/Samsung/EQT funding-round announcement with disclosed terms"
     logged: 2026-08-04
     logged_by: crawl
-    status: passed-silent
+    status: hit
+    resolved_late: 2026-09-08
     resolved: 2026-08-31
     evidence: |
       2026-08-31 ~10:05 ET: NO EVIDENCE, window still open until end of day.
@@ -911,6 +939,25 @@ expectations:
       FINAL CHECK 2026-09-01 ~10:00 ET: window (due 08-31, month) now closed.
       No search turns up anything past "in talks"/"discussions"; no Mistral,
       Samsung, or EQT announcement, no term sheet. PASSED-SILENT.
+    outcome_note: >
+      ⚠️ RETRO-FLIPPED passed-silent → hit on 2026-09-08, eight days after
+      the 08-31 due date and five days past the 3-day grace. The round DID
+      close, and close close to the logged terms: Mistral's own site
+      confirmed at 01:03 ET on 09-08 a Samsung-led round of about €3bn at
+      roughly €21bn, with Nvidia and BlackRock participating. Against the
+      claim as logged — "~€3B (Samsung + EQT-led) at ~€20B/$23B" — the
+      amount and the lead investor are right, the valuation is within a
+      billion, and EQT is NOT named among the confirmed participants while
+      Nvidia and BlackRock are. Scored `hit` because the substance of the
+      dated claim held; the co-lead was wrong.
+      THE LESSON, and it is about this ledger rather than about Mistral:
+      the grace period expired while the story was still live, and only a
+      standing carried flag on the frontier-AI lens — re-checked every run
+      rather than filed away — caught the close when it came. A
+      `passed-silent` with an expired grace is not the same as a dead
+      claim, and this entry is the evidence for that.
+      https://mistral.ai/news/
+
   - id: globalfoundries-q3-2026-earnings
     claim: "GlobalFoundries reports Q3 2026 results (guided revenue $1.885B ± $25M, non-IFRS EPS $0.51 ± $0.05)"
     due: 2026-11-04
@@ -2083,7 +2130,7 @@ expectations:
       ~700 US products, ~C$20bn/yr) take effect
     due: 2026-09-08
     due_precision: day
-    status: pending
+    status: hit
     confidence: confirmed
     thread: north-american-trade-policy
     entities: [canada]
@@ -2095,6 +2142,27 @@ expectations:
       delaying them as part of a settlement. The thread previously tracked
       only the US side's 2027-01-01 auto/steel schedule — this is the first
       dated Canadian counter-measure on the ledger.
+    resolved: 2026-09-08
+    evidence: >
+      CBSA Customs Notice 26-23, "United States Surtax Order (2026)", dated
+      Ottawa 2026-09-07: "Effective September 8, 2026, certain goods imported
+      into Canada and originating in the U.S. are subject to a surtax of
+      either 15%, 25% or 50% of the value for duty." Framed by CBSA as
+      Canada's response to US Section 338 tariffs, with the surtax rate on
+      each product generally mirroring the US rate. Chapters 98/99 exempt
+      unless listed in Schedule 4; not cumulative with the Steel Derivative
+      Goods Surtax Order; applies below de minimis thresholds including
+      postal/courier imports.
+      https://www.cbsa-asfc.gc.ca/publications/cn-ad/cn26-23-eng.html
+    outcome_note: >
+      SCOPE UNRECONCILED. The ledger logged "~700 US products, ~C$20bn/yr"
+      from CNBC's 08-25 preview. The CBSA notice gives rates and mechanism
+      but no product count or revenue figure, and secondary coverage on the
+      day disagrees with the logged figures (one outlet reports 629 items,
+      a Canadian trade-law alert reports C$27.6bn). The in-force date and
+      the 15/25/50% rate structure are confirmed against government text;
+      the magnitude figures are NOT, and should be pinned against the
+      Order's own Schedules 1-4 before being restated.
   - id: georgia-psc-camellia-staff-decision-0826
     claim: >
       Georgia PSC staff refer-or-object decision on Georgia Power's 3.2 GW
@@ -2935,7 +3003,42 @@ expectations:
     # the Ryazan refinery overnight and Russia says it hit a Ukrainian cargo
     # vessel in the Black Sea — neither breaks a pause scoped to the capital.
     # Second night begins ~17:00 ET, after this cut. Still pending.
-    status: pending
+    status: refuted
+    resolved: 2026-09-08
+    evidence: >
+      The pause broke on the third and deciding night. Russia struck Kyiv
+      city overnight 09-07/08, hours after US envoys Steve Witkoff and Jared
+      Kushner left the capital. Ukraine's Air Force reported 166 drones and
+      32 cruise missiles launched plus ballistic and anti-ship missiles, with
+      142 drones, 31 cruise missiles and 2 ballistic missiles downed and
+      impacts at 29 locations nationwide; Kyiv and Odesa were named the main
+      targets. Mayor Vitali Klitschko reported 3 dead and at least 10 injured
+      INSIDE Kyiv city (5 hospitalised, 2 serious). A drone hit the building
+      housing the We Are Ukraine TV channel while it was on air. Corroborated
+      independently by Ukrainska Pravda (own RSS, "Russian drone hits office
+      of Ukrainian TV channel: 5 injured", 09-08 12:25 Kyiv time), France24
+      ("Russia pounds Kyiv, ending three-day halt for US talks", 11:35Z),
+      Reuters ("Russia hits Kyiv after pause for US envoys' visit, killing
+      three", 02:57Z) and the Kyiv Independent (01:04Z, which put injuries at
+      25). Nights one (09-05/06) and two (09-06/07) had held for Kyiv city;
+      night three did not.
+    outcome_note: >
+      ⚠️ STATUS VOCABULARY: `refuted` is NOT one of the four statuses this
+      file's header documents (hit | slipped | passed-silent | withdrawn).
+      It was added here on 2026-09-08 because none of the four fit, and the
+      entry's own `what_confirms` had already noticed the problem — it wrote
+      a prose workaround ("passed-silent here means the pause held") because
+      this is a NULL claim, so the ledger's polarity is inverted for it:
+      absence of evidence confirms the claim and loud evidence refutes it.
+      Recording a claim that was actively and loudly disproved as
+      `passed-silent` would state the opposite of what happened. `hit` and
+      `slipped` are both plainly wrong (the claim was false, and no new date
+      exists). graph/ingest/03_expectations.py's STATUS map was extended in
+      the same commit so `refuted` maps to the graph's `rejected` epistemic
+      status — the same state `passed-silent` already produces — so the
+      graph is unaffected either way and only the human-readable label
+      changes. Reversible with a word from Ben; a brief proposing the
+      addition upstream goes to the engine.
 
   - id: ratepayer-protection-act-floor-vote-0911
     claim: >

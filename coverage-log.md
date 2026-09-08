@@ -6074,3 +6074,139 @@ separate oil-number errors have now reached the record (09-04 revision,
 09-05 two-day-stale figure, this transposition). Run the reconciliation
 before publishing a macro strip: if the level and the delta disagree, the
 delta is usually right, because it comes from the source that computed it.
+
+---
+
+## 2026-09-08 critic pass — finalized digest-day 2026-09-07. Three lenses, three misses all on one of them, and a lens that reported an empty day while its benchmarks led with the same story
+
+*Run 2026-09-08 10:00 ET on the 09-07 digests. Second consecutive day with
+no deterministic collectors (`cloud-researcher` still not installed), so
+every check below was made live and the organisation-name pass over
+collected rows — the instrument that produced the last three passes' best
+catches — had no rows to run over.*
+
+### frontier-ai / 2026-09-07
+
+**The digest said "nothing happened here today." Three benchmark-led items
+had happened, and one of them was the week's biggest story on this lens.**
+
+- **Missed 1 — Jakub Pachocki's essay "An Alien Mind."** OpenAI's chief
+  scientist arguing that no lab including his own has solved alignment,
+  that research acceleration could outrun the ability to monitor it, and
+  that labs should agree shared safety bars and be willing to slow down.
+  **The lead item on The Neuron's 09-07 edition and TLDR AI's 09-07
+  edition, and the BBC's technology lead the same day.** Public since
+  09-06. Corpus-wide greps on `pachocki`, `alien mind` and `recursive
+  self` returned nothing — genuinely absent, and **caught two days late**.
+  https://openai.com/index/an-alien-mind/
+- **Missed 2 — OpenAI's EU AI Act incident filing** over the German-wiki
+  agent breach, the first known use of that channel by a US frontier lab,
+  with the European Commission declining to say when it was received; plus
+  collusion.wiki's allegation that OpenAI withheld other agent message
+  boards from METR and Redwood Research. A live escalation on a weight-3
+  thread the map already runs.
+- **Missed 3 — UN human-rights chief Volker Türk** calling AI an
+  existential risk and asking states to agree red lines. Wired by Reuters,
+  UN News and Euronews on 09-07; absent corpus-wide.
+- **Late catches merged:** Mistral's €3bn Samsung-led round at ~€21bn
+  (closing a flag carried unresolved across three consecutive digests),
+  Anthropic dropping the ~$6bn Decart acquisition, Matt Clifford's
+  resignation as ARIA chair over an Anthropic conflict of interest, the
+  NYT Inspur/Aivres export-evasion investigation, the FT's Huawei-DUV
+  report.
+- **Map effect:** four entities added (`huawei`, `inspur`,
+  `nextera-energy`, `decart`); the digest's throughline retracted in
+  place; ledger entry `decart-acquisition-close` → `withdrawn`.
+- **No factual corrections were found in the digest's body.** Every price,
+  date and docket claim it made held. **The failure was recall, not
+  accuracy, and it was total on the day's biggest item.**
+
+> **The failure mode, stated precisely, because it is repeatable.** The
+> 09-07 sweep checked the labs' newsrooms, the dockets and the general
+> tech wire, found all three empty, and concluded the day was empty. All
+> three checks were true and the conclusion was false. **An empty newsroom
+> is not an empty day.** The governance-and-posture layer — essays,
+> regulatory filings, resignations, UN statements — does not appear on any
+> of the three surfaces that were checked. This is the second two-days-late
+> catch on this lens inside a week.
+
+### global-capital / 2026-09-07
+
+- **Missed:** nothing from the named benchmarks. All four contributed zero
+  usable leads — Money Stuff dark (author RSS latest 09-03), Axios Pro
+  Rata dark and confirmed by its own words ("cleaning out the notebook as
+  we head into the long weekend"), FT Unhedged published but off-topic and
+  paywalled past the subhead, Bloomberg Technology structurally
+  unauditable. **Fourth consecutive pass on which the named benchmark set
+  produced nothing for a weekend or holiday.**
+- **✅ PRICE AUDIT CLEAN — and this is the entry that matters.** Every
+  figure in the 09-07 strip was independently re-derived: Brent, WTI, all
+  six equity indices, gold's Friday base, USD/JPY, EUR/USD and both
+  Treasury yields, against Yahoo's own settlement series, the US
+  Treasury's official daily par-yield curve, and CNBC's own text for the
+  two oil prints. **The four-day Brent transposition fix held and nothing
+  new crept in.** Two immaterial notes: the FTSE prints three hundredths
+  of a point off Yahoo's close, and **gold's Monday level ($4,476.60)
+  could not be independently confirmed** — no source has a bar for `GC=F`
+  at any granularity across the whole Labor Day session — so its Friday
+  base is verified exactly and the Monday print is flagged as internally
+  consistent but unconfirmed.
+- **Late catches merged:** SoftBank's Tokyo shares +11.22% Monday
+  (¥5,590 → ¥6,217, verified against the settlement series for `9984.T`),
+  found by the name-search pass on a thread the digest had itself
+  disclosed as one of nineteen the sweep never reached; and Rosneft
+  shipping first crude from the $157bn Vostok Oil project, absent
+  corpus-wide and offered as a thread candidate rather than forced.
+- **False positive, fifth instance of this trap:** a BlackRock/Larry Fink
+  "$150 oil means global recession" story carrying a 09-07 16:11 ET
+  aggregator timestamp. Real publish date, cross-checked across five
+  outlets' indexed copies: **2026-03-25.** Aggregator re-serves are not
+  new news.
+
+### mental-health / 2026-09-07
+
+- **Missed: nothing. No confirmed misses on this lens.** All four
+  benchmarks (Behavioral Health Business, MobiHealthNews, Fierce
+  Healthcare, STAT) confirmed dark for 09-05 through 09-07 by live feed
+  contents rather than assumed, consistent with Labor Day. A wire
+  backstop, a twenty-organisation name search and a ClinicalTrials.gov
+  check all came back empty.
+- **Method improvement worth adopting:** the critic ran the trials check on
+  `StudyFirstPostDate` rather than the `LastUpdatePostDate` filter this
+  lens has been using. The former separates genuinely new registrations
+  from routine record edits and is the better default.
+- **Late catch merged:** Kentucky's AG detailing state-specific terms of
+  Meta's $17.1bn teen-safety settlement — $358m to Kentucky, a school-hours
+  notification block and a midnight-to-6am curfew. ⚠️ Local television
+  paraphrase, not the settlement text.
+- **Three false positives, all the aggregator-timestamp trap, fourth
+  instance logged on this lens:** a Trump "psychedelics executive order"
+  re-served with a 09-06/07 timestamp is the **April 18, 2026** order; a
+  "Trump directs VA psilocybin trial" piece restates the VA's **August 5**
+  announcement; a Pennsylvania suit against Character.AI was filed
+  **May 5, 2026**. Google News' `when:Nd` filter is not a recency filter
+  and needs a `pubDate` cross-check every time.
+
+### Carried forward, unresolved across three consecutive passes
+
+- 📋 **A working Reuters/AP transport is still not pinned into
+  `sources/benchmarks.yaml`.** Re-checked today: Reuters blocked both
+  directly (401) and through `r.jina.ai` (403 — worse than previously
+  logged, and a domain-wide rate-limit block appeared mid-session). AP's
+  reader-proxy route **now returns 200** where it did not before. Access
+  state changes pass to pass and the file is supposed to record it.
+- 📋 **`openai.com` now blocks plain curl and WebFetch** the way the other
+  benchmarks do; the reader proxy still works. New this pass, not yet
+  recorded in the file.
+- 📋 **Bloomberg Technology has no dated archive** — a rolling homepage, so
+  it cannot confirm what it ran on a given past day. Logged on at least
+  three consecutive passes now without a fix; it needs an alternate
+  transport, not another rediscovery.
+- 📋 **The CMS ACCESS-model behavioural-health provider count** — 17 in the
+  source against this map's ~85-of-150+. The primary CMS page is
+  JS-rendered past what the reader proxy reads; needs a different fetch
+  method.
+- 📋 **Nineteen global-capital threads went unchecked on 09-07** when the
+  sweep's budget ran out mid-oil-story. This pass had budget to name-search
+  nine of them and found the SoftBank miss in that nine. **The other ten
+  remain genuinely unaudited by anyone.**

@@ -16,6 +16,11 @@ reframe holds through Amazon (07-30) and Samsung's breakdown, and whether
 it shows up in fund-flow data rather than just analyst notes and single-
 night price action.
 
+## 2026-09-08 — Qualcomm rises ~10% on an Amazon custom-silicon deal, but the "$4 billion" headline figure is a warrant, not a contract
+
+- **Qualcomm rose about 10% on a multi-generational custom-silicon agreement with Amazon for AI data-centre infrastructure.** ⚠️ **The "$4 billion" figure in most headlines is the value of a warrant Qualcomm issued Amazon for up to 25 million of Qualcomm's own shares — not cash consideration, and not a disclosed contract size.** Most coverage collapses that distinction; it matters for this thread because it means the print is a rotation signal (Amazon adding a second custom-silicon path alongside its in-house Trainium chips) rather than a disclosed revenue number for Qualcomm.
+  ([CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html)) ⟨daily 2026-09-08⟩
+
 ## 2026-09-04 — Chip-vs-tech split held through Friday's close, did not reverse
 
 - **Friday's chip-vs-tech decoupling survived the full session and shows up in the closing tape.** The PHLX Semiconductor Index (SOX) closed up 3.38% at 11,735.26 and the iShares Semiconductor ETF (SOXX) held its gains into the bell, while the S&P 500 (-0.38% to 7,718.60), Nasdaq Composite (-0.29% to 26,506.99) and Dow (-0.51% to 53,414.25) all finished the day lower on the hot August jobs print that pushed CME September-hike odds toward 58-65%. Rate-sensitivity logic said high-multiple chip names should have been hit hardest by a hawkish repricing; at the close they were the only part of the tape that was up. ⚠️ Individual Intel, AMD and Nvidia closing prices are not stated here because no closing-price page could be opened; the morning's intraday reads (Intel +4%, AMD +3%, Nvidia +2%) are the last figures on record. ([TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-sept-04-2026), [Investrade market review](https://investrade.com/market-review-september-04-2026/))⟨daily 2026-09-05⟩

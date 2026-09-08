@@ -1,15 +1,15 @@
 ---
 lens: global-capital
 date: 2026-09-07
-status: building
+status: final
 window_start: 2026-09-07T05:00:00-04:00
-as_of: 2026-09-07T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-07
 
-*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday (US Labor Day).
+*Curated agentic-interim, **05:00 ET 09-07 → 05:00 ET 09-08**, the full
+digest-day; finalized on the 09-08 10:00 ET run.
 Sources: one capital cluster sweep, the 09-06 coverage critic for this
 lens, and main-session verification of every price in the strip below
 against Yahoo's own settlement series plus CNBC. **⛔ No deterministic
@@ -80,6 +80,27 @@ check had never been run.
   defined exclusion differently from an undefined threat.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/9/7/can-iran-enforce-a-restricted-zone-in-the-strait-of-hormuz))
   <!-- k: t=red-sea-oil-shock e=iran axis=capital-in-my-markets -->
+
+## 🌙 Late catches
+
+- **SoftBank's Tokyo shares rose 11.2% in a single session, its largest
+  one-day move since July's limit-up, as AI risk appetite returned across
+  Asia.** ¥5,590 on Friday to ¥6,217 on Monday's close — verified directly
+  against the settlement series for `9984.T` rather than taken from the
+  headline. Asia traded a full session while US markets were shut, so this
+  is the day's largest single move on any thread this map tracks, and it
+  happened on a lens the sweep reported as closed.
+  <!-- k: t=softbank-all-in e=softbank axis=equities sev=major -->
+
+- **Rosneft shipped first crude from the $157bn Vostok Oil project**, the
+  Russian Arctic development that routes exports to Asia over the Northern
+  Sea Route rather than through sanctioned western channels. ⚠️
+  Single-outlet (OilPrice.com) and not independently corroborated; the
+  $157bn figure is the project's own long-standing headline number, not a
+  new disclosure. Nothing on this map has owned Russian energy-project
+  capital flows, so it is offered as a candidate below rather than forced
+  onto `russia-ukraine-war`.
+  <!-- k: e=russia axis=capital -->
 
 ## 📊 Macro strip
 
@@ -180,3 +201,56 @@ above.
 The sweep's hard stop hit while the oil story was still being worked. On a
 US holiday with no session and no filings the expected yield is low, but
 **this is an unchecked window, not a clean one**, and it is recorded as such.
+
+---
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-08 at finalize. Full pass in `coverage-log.md`.*
+
+**Benchmark status.** Money Stuff **dark** (author RSS latest item 09-03).
+Axios Pro Rata **dark**, confirmed by its own words — the 09-04 edition
+reads "cleaning out the notebook as we head into the long weekend."
+FT Unhedged **published** ("Everything is awesome," on US stock strength)
+but paywalled past the subhead and off the day's story. Bloomberg
+Technology **unauditable** — a rolling homepage with no dated archive, the
+same structural limitation logged on the prior pass and still unfixed.
+**All four named benchmarks contributed zero usable leads**, the fourth
+consecutive pass on which that has happened for a weekend or holiday.
+
+**They led with → we missed:** nothing from the benchmarks.
+
+> **The price strip is clean — every figure verified, and the Brent fix
+> held.** Brent, WTI, all six equity indices, gold's Friday base, USD/JPY,
+> EUR/USD and both Treasury yields were re-derived independently against
+> Yahoo's own settlement series, the US Treasury's official daily par-yield
+> curve, and CNBC's own text for the two oil prints. After a transposed
+> Brent settle survived four days and was defended against correct
+> evidence, this matters more than a clean audit normally would.
+
+Two immaterial notes on that audit: the FTSE level prints 10,822.13 here
+against Yahoo's 10,822.10, a three-hundredths-of-a-point closing-auction
+difference, and **gold's Monday level ($4,476.60) could not be confirmed
+against an independent source** — Yahoo has no bar at any granularity for
+`GC=F` across the whole Labor Day session, so the Friday base is verified
+exactly and the Monday print is internally consistent but unconfirmed.
+
+**The real find came from the name-search pass, not the benchmarks:**
+SoftBank's 11.2% Monday move, merged above as a late catch. It sat on one
+of the nineteen threads this digest itself disclosed as unchecked — which
+is the argument for keeping that disclosure honest rather than quiet.
+
+**A false positive worth recording so it is not "found" again:** a
+BlackRock/Larry Fink "$150 oil means global recession" story carried a
+09-07 16:11 ET aggregator timestamp and looked like a strong miss. Its
+real publish date, cross-checked across five outlets' indexed copies, is
+**2026-03-25**. Aggregator re-serves are not new news; this is the fifth
+instance logged.
+
+**We had → they didn't:** the Rezaei escalation quote, the Goldman $120
+scenario, and the whole Gulf risk-premium framing.
+
+**⚠️ Access state, re-checked:** Reuters blocked both directly (401) and
+through `r.jina.ai` (403, worse than previously logged). AP's reader-proxy
+route now returns 200 where it did not before. Neither change is yet
+pinned into `sources/benchmarks.yaml`; carried forward for a second pass.

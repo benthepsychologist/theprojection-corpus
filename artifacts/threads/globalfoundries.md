@@ -16,6 +16,10 @@ dispatched same day — entries land ⟨crawl 2026-08-04⟩.
 Finding: `artifacts/findings/globalfoundries-2026-08-04.md` · bundle:
 `artifacts/bundles/globalfoundries-2026-08-04/provenance.yaml`
 
+## 2026-09-08 — $375m Commerce Department award finalised, but for quantum tech, not AI silicon
+
+- **GlobalFoundries finalised a $375m Commerce Department award for quantum technology.** Adjacent to this thread rather than inside it — quantum hardware, not AI silicon — but it is the same industrial-policy instrument (a direct federal award) this thread already tracks on the AI-capex side, now pointed at a different technology. ⚠️ No source link located for this item; recorded from the digest text alone. ⟨daily 2026-09-08⟩
+
 ## 2026-08-10 — GlobalFoundries hands its factory data to Redpanda to run AI agents across every fab
 
 - **GlobalFoundries selected Redpanda's streaming-data platform to unify real-time manufacturing, engineering, supply-chain and business data across its global fab network and to power AI agents on top of it, announced 2026-08-10.** The deal replaces legacy change-data-capture infrastructure with a system streaming live equipment, process, and scientific data; Redpanda's own engineers are embedded with GF teams, and "Tier-0" mission-critical systems are already live. This is a concrete data point on the thread's open question of whether GlobalFoundries' "AI-centric markets" strategy (declared at its 2026 Investor Day) is being executed internally, not just sold to customers as a foundry service — it sits alongside, not inside, the capex/margin story the thread otherwise tracks. ⚠️ No dollar figure was disclosed for the deal. ([PR Newswire — GlobalFoundries](https://www.prnewswire.com/news-releases/globalfoundries-selects-redpanda-to-unify-real-time-data-and-power-ai-agents-across-its-global-manufacturing-footprint-302846473.html), [HPCwire](https://www.hpcwire.com/bigdatawire/this-just-in/redpanda-to-power-globalfoundries-real-time-manufacturing-data-and-ai-agents/)) ⟨daily 2026-08-29⟩

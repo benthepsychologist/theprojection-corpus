@@ -12,6 +12,11 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-09-08 — Amazon signs a multi-generational custom-silicon deal with Qualcomm, on top of its own Trainium program
+
+- **Amazon and Qualcomm announced a multi-generational collaboration on custom AI data-centre silicon, and Qualcomm's stock rose about 10%.** Qualcomm issued Amazon a warrant for up to 25 million of its own shares as part of the deal. ⚠️ The "$4 billion" figure most headlines led with is the value of that warrant — not cash consideration, and not a disclosed contract size. Amazon already designs Trainium in-house; this reads as a second custom-silicon path rather than a deepening of the first, a capex-diversification signal for this thread.
+  ([CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html)) ⟨daily 2026-09-08⟩
+
 ## 2026-08-28 — Four Swedish wind PPAs, 199MW
 
 - **Amazon contracted 199MW of Swedish wind across four PPAs** — Mirova's Boarp (17.5MW), Dållebo (18MW) and Fågelås (31.5MW), plus 132MW from OX2's Fageråsen farm in Dalarna County — reportedly pushing its contracted Swedish power past 1GW to support local data-centre expansion. **Filed as a power-procurement datapoint rather than a capex one:** these are offtake agreements against mostly already-operating farms, which is a different commitment from building generation. ⚠️ **UNVERIFIED DATE and secondary-sourced** — Amazon's own release could not be retrieved.

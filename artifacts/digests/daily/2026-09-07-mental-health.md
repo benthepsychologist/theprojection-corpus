@@ -1,15 +1,15 @@
 ---
 lens: mental-health
 date: 2026-09-07
-status: building
+status: final
 window_start: 2026-09-07T05:00:00-04:00
-as_of: 2026-09-07T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-07
 
-*Curated agentic-interim, 05:00 ET → **15:00 ET** Monday (US Labor Day).
+*Curated agentic-interim, **05:00 ET 09-07 → 05:00 ET 09-08**, the full
+digest-day; finalized on the 09-08 10:00 ET run.
 Sources: two mental-health sweeps (AI-therapy/harm/platform-regulation,
 and evidence/payers/psychedelics) plus the 09-06 coverage critic for this
 lens. **⛔ No deterministic collectors ran — `cloud-researcher` is not
@@ -155,3 +155,59 @@ docket; CMS's own accepted-applicants page for the ACCESS figure above;
 the CourtListener docket for the Meta AI-glasses case (CloudFront block);
 FDA and FTC newsroom pages for items 1 and 5 of the AI-therapy sweep,
 which rested on web search alone and should be treated as provisional.
+
+---
+
+## 🌙 Late catch
+
+- **Kentucky's attorney general put state-specific numbers and product
+  terms on Meta's $17.1bn teen-safety settlement: $358m to Kentucky, a
+  block on notifications during school hours, and a midnight-to-6am
+  curfew.** The product changes are the part that matters beyond the money
+  — a settlement that changes how the product behaves for minors, in
+  named hours, is a different instrument from one that only pays. ⚠️
+  Sourced to a local television paraphrase of the AG's remarks, not to the
+  settlement text; the specific hours and the state allocation should be
+  confirmed against the filed agreement before being restated.
+  <!-- k: t=social-media-causality-fight e=meta-ai axis=legal -->
+
+---
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-08 at finalize. Full pass in `coverage-log.md`.*
+
+**Benchmark status: all four dark, and confirmed dark rather than
+assumed.** Behavioral Health Business, MobiHealthNews, Fierce Healthcare
+and STAT each verified by live feed contents for 09-05 through 09-07 —
+consistent with US Labor Day closing the trade press.
+
+**They led with → we missed: nothing. No confirmed misses on this lens.**
+A wire backstop across Reuters and AP, a twenty-organisation name search,
+and a ClinicalTrials.gov check run on `StudyFirstPostDate` — a cleaner
+instrument than the digest's own `LastUpdatePostDate` method, worth
+adopting — all came back empty for anything new and uncovered.
+
+**Three false positives, all the same failure mode**, recorded because
+they will resurface: a Trump "executive order on psychedelics" re-served
+with a 09-06/07 timestamp is the **April 18, 2026** order, already on
+`psychedelic-regulatory-sprint`; a "Trump directs VA psilocybin trial"
+piece restates the VA's **August 5** announcement; and a Pennsylvania
+suit against Character.AI over a chatbot posing as a doctor was filed
+**May 5, 2026**. Google News' `when:Nd` filter is not a reliable recency
+filter and needs a `pubDate` cross-check every time — that check is what
+caught all three. This is the fourth instance of the aggregator-timestamp
+trap logged on this lens.
+
+**Two items carried forward, unresolved on both this pass and the last:**
+pinning a working Reuters/AP transport into `sources/benchmarks.yaml`
+(Reuters 401s, AP's wire pages return only navigation chrome through the
+reader proxy), and the CMS ACCESS-model behavioural-health provider-count
+discrepancy — 17 against this map's ~85-of-150+ — which the 09-07 digest
+flagged and deferred. The primary CMS page is JS-rendered past what the
+reader proxy can read, so it needs a different fetch method, not another
+attempt with the same one.
+
+**Not checked:** JAMA Psychiatry's RSS (stale/empty endpoint), Psychiatric
+Services (Cloudflare-blocked), and the two weekly-tier journals, which are
+out of a daily critic's scope by `sources/benchmarks.yaml`'s own rule.

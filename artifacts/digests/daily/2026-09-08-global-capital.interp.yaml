@@ -1,0 +1,114 @@
+# Interpretations for 2026-09-08 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25 — two weeks
+# stale, see the digest's collection note).
+
+brent-settled-the-overnight-at-98-14-up-1-93-fr:
+  mechanism: >
+    The risk premium is migrating from the chokepoint to the workaround.
+    Hormuz's closure pushed Saudi crude onto the Red Sea route, and the
+    Red Sea route is now what gets hit. That changes what the premium is
+    pricing: not the probability that one strait closes, but the
+    absence of any routing that is out of range. A premium on a
+    chokepoint is arbitrageable by re-routing; a premium on the
+    re-routing itself is not, which is why the same headline dollar move
+    is a worse fact this week than it was in July.
+  confidence: probable
+  scenarios:
+    - direction: Brent holds a floor well above the pre-war band even on de-escalation headlines
+      why: >
+        With both the primary route and its substitute demonstrated to be
+        in range, buyers have to price physical delivery risk rather than
+        transit risk, and that does not unwind on a diplomatic headline
+        the way a chokepoint premium does.
+      precedent: >
+        The September 2019 Abqaiq/Khurais strikes removed 5.7 million
+        barrels a day — about half of Saudi output — and Brent's initial
+        spike faded within weeks once spare capacity and reserves were
+        confirmed. The distinguishing feature then was that the
+        alternative routes were untouched; that is the condition now
+        absent.
+    - direction: OPEC+ spare capacity caps the move short of a sustained triple-digit break
+      why: >
+        The group left October output flat into a rising price, which is
+        the behaviour of a producer bloc that believes it retains the
+        option to add barrels later and prefers to bank the price now.
+        If that read is right, the ceiling is policy, not geology.
+      precedent: >
+        Through the 2022 Russian-invasion spike, OPEC+ repeatedly
+        declined to accelerate quota increases while prices ran, then
+        normalised output as the premium decayed — the same
+        hold-then-normalise pattern.
+  context_note: >
+    conflict_risk_premium in the standing snapshot already records the
+    Iran war as widening rather than resolving on every front, with the
+    Iran-Oman reopening deal stuck at "final drafts." Today extends that
+    reading rather than changing it; what is new is the target class, not
+    the direction.
+
+the-yen-hit-a-seven-month-high-on-bank-of-japan-hi:
+  mechanism: >
+    A carry unwind and an oil shock arrived in the same session and are
+    being read as one risk-off tone, but they transmit through different
+    channels and the tell is in the cross-rates: the yen moved 1.45%
+    while the dollar index moved 0.31%. That gap says the move is
+    funding-currency repricing on BOJ hike expectations, not a flight
+    into dollars. Carry unwinds hit levered positions in whatever they
+    funded, which in 2026 disproportionately means the AI-buildout trade.
+  confidence: probable
+  scenarios:
+    - direction: A sustained BOJ tightening path pressures AI-complex equities more than the oil move does
+      why: >
+        Yen-funded leverage is a real component of the positioning behind
+        the capex trade, and a rising funding cost forces deleveraging
+        regardless of what the underlying fundamentals do. The Dow's
+        −1.17% against the S&P's −0.48% today is the wrong shape for an
+        oil-led selloff and the right shape for a positioning one.
+      precedent: >
+        The 5 August 2024 unwind, after the BOJ's late-July hike, took
+        the Nikkei down 12.4% in a session and dragged global tech with
+        it on no change in tech fundamentals — the cleanest recent case
+        of a funding-currency move repricing an unrelated equity complex.
+    - direction: The move stalls as a repricing of one BOJ meeting and does not become a funding shock
+      why: >
+        A seven-month high is a round-trip to levels seen this year, not
+        a regime break, and the Nikkei's 1.7% is an order of magnitude
+        short of a genuine unwind.
+      precedent: >
+        Multiple 2025 yen rallies on hike speculation reversed within
+        weeks when the BOJ held, with no lasting cross-asset transmission.
+  context_note: >
+    cross_border_credit records global cross-border bank claims at
+    $47.62T and rising — the balance-sheet channel a funding shock would
+    travel through. That reading is the reason to treat a yen move as
+    more than a Japan story.
+
+the-white-house-s-pressure-on-fed-chair-kevin-wars:
+  mechanism: >
+    The political economy of Fed independence usually gets tested when a
+    president wants easier policy and the data are ambiguous. This is the
+    harder version: an oil-driven inflation impulse gives the hawks a
+    concrete case at the exact moment the political pressure is for cuts,
+    so any decision is legible as a political one. The independence cost
+    is asymmetric — cutting reads as capitulation whatever the data say,
+    while hiking reads as defiance, and only one of those is recoverable.
+  confidence: speculative
+  scenarios:
+    - direction: The Fed holds again and the dissent count grows rather than the rate changing
+      why: >
+        A hold is the only outcome that is not immediately legible as a
+        response to the White House, and the August meeting already
+        carried three dissents for a hike — the committee has a way to
+        express hawkishness without the chair having to own a move.
+    - direction: The long end, not the front end, does the tightening
+      why: >
+        If markets doubt the Fed can hike into political pressure, the
+        term premium carries the inflation risk instead. The 30-year at
+        5.231% is where that would show up first, and it has risen 6bp
+        over two weeks while the 10-year sat still.
+  context_note: >
+    rate_regime records a hawkish hold at 3.50–3.75% with three dissents
+    for a hike, up from unanimous in June, and the 09-07 interpretation
+    carried roughly 60% priced for a hike into the 09-16 decision.
+    ⚠️ Marked speculative deliberately: that figure is days old, and
+    today's "markets now expect a hike" claim comes from press reporting —
+    neither has been checked against a live futures curve.

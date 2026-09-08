@@ -107,6 +107,32 @@ lenses:
       - "Hua Hong"   # ben-steer 2026-07-29 — China's #2 foundry (mature nodes); same
                      # reason: named DUV recipient, and delivery-to-a-named-fab is the
                      # test that thread turns on
+      - term: "Huawei"
+        entity: huawei
+        name: "Huawei"
+        # curate-add 2026-09-08: named on this map repeatedly as the anchor of
+        # China's domestic chip stack but never a watchlist entity, so its own
+        # actions could not be tagged. Trigger: the FT's 09-07 report that Huawei
+        # is backing a Chinese DUV-lithography startup — a `china-duv-lithography`
+        # development with no entity to hang it on.
+      - term: "Inspur"
+        entity: inspur
+        name: "Inspur Group"
+        # curate-add 2026-09-08: the US-blacklisted (2023) Chinese server maker at
+        # the centre of the NYT's 09-07 export-control-evasion investigation
+        # ($5.6bn of Nvidia parts routed via its part-owned US subsidiary Aivres).
+      - term: "NextEra Energy"
+        entity: nextera-energy
+        name: "NextEra Energy"
+        # curate-add 2026-09-08: the utility counterparty on the Duane Arnold
+        # nuclear restart for Google — `nuclear-for-ai` had no entity for the
+        # operator actually restarting the reactor.
+      - term: "Decart"
+        entity: decart
+        name: "Decart"
+        # curate-add 2026-09-08: the Israeli real-time-video AI startup whose
+        # ~$6bn acquisition the ledger tracked for a month across two named
+        # buyers, and which Anthropic walked away from on 09-07.
       - term: "Cerebras"
         entity: cerebras
         name: "Cerebras Systems"
@@ -535,6 +561,18 @@ lenses:
     # reports, 2026-07-30), not query terms — themes below are only the
     # news-shaped macro. DRAFT seed — Ben tunes.
     orgs:
+      # curate-add 2026-09-08: three subjects this lens has been writing about
+      # for weeks with no entity to tag them with — the strip's oil prints, the
+      # carry-trade counterparty, and the counterparty on the tariff thread.
+      - term: "Saudi Aramco"
+        entity: saudi-aramco
+        name: "Saudi Aramco"
+      - term: "Bank of Japan"
+        entity: bank-of-japan
+        name: "Bank of Japan"
+      - term: "Canada"
+        entity: canada
+        name: "Canada"
       # Buyers / funders / PE in Ben's markets (seeded from internal research)
       - "Highmark"
       - term: "Blue Cross Blue Shield of Massachusetts"
