@@ -3,21 +3,21 @@ lens: mental-health
 date: 2026-09-08
 status: building
 window_start: 2026-09-08T05:00:00-04:00
-as_of: 2026-09-08T10:00:00-04:00
+as_of: 2026-09-08T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-08
 
-*Curated agentic-interim, 05:00 ET → **10:00 ET** Tuesday — the first real
-publishing day since Thursday, with Labor Day having closed the US trade
-press. Sources: one two-cluster mental-health sweep and the 09-07 coverage
-critic for this lens, plus a main-session read of the primary
-investigation below. **⛔ No deterministic collectors ran —
-`cloud-researcher` is still not installed, so no `clinicaltrials`,
-`openalex`, `federal_register` or `rss` lane ran; the trials and
-literature checks were made directly against the ClinicalTrials.gov v2 API
-and journal feeds instead.***
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday, extended in
+place from the 10:00 run. Sources: the morning's two-cluster mental-health
+sweep, an afternoon sweep over the 10:00→15:00 window that ran its
+primary-source checks first (ClinicalTrials.gov, the FDA newsroom, journal
+feeds and the Federal Register), a wire front-page backstop, and the 09-07
+coverage critic for this lens. **✅ The deterministic collectors ran again
+for the first time since 09-05** — `cloud-researcher` was missing from
+this machine rather than broken, so `clinicaltrials`, `openalex` and
+`federal_register` produced buffered rows and provenance manifests again.*
 
 ## Today's throughline
 
@@ -57,6 +57,35 @@ reported rather than merely promised.
   Wired, Bloomberg)
   <!-- k: t=meta-ai-csam-ads e=meta-ai axis=safety sev=major -->
 
+- **Florida's attorney general moved to make AI companies liable when a
+  product "participates in" a crime.** James Uthmeier announced a push for
+  legislation reaching any company with control over an AI system's design,
+  training, deployment or safety settings, with fines, victim payments and
+  court-ordered monitoring as remedies. His office cited the 2025 Florida
+  State University shooting and a University of South Florida murder case,
+  both said to involve ChatGPT use by the suspects. This is a legislative
+  push distinct from Florida's existing June 2026 civil suit against OpenAI
+  and Sam Altman — the suit tests existing law, this would write new law,
+  and the "design, training, deployment or safety settings" formulation is
+  broader than the therapy-chatbot bills this lens has been tracking, which
+  reach products marketed for mental health care. ⚠️ **Single-sourced** to a
+  local outlet's report of the announcement; no press release or bill text
+  was located, so the scope described is the AG's characterisation and not
+  statutory language.
+  ([News4Jax](https://www.news4jax.com/news/local/2026/09/08/florida-ag-pushes-to-hold-ai-chatbot-companies-accountable-for-crimes/))
+  <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans axis=policy -->
+- **HHS announced $383.4m in behavioral-health grants on "988 Day," with
+  $252m of it for the 988 Suicide and Crisis Lifeline.** The 988 tranche
+  splits across state capacity-building, tribal response, follow-up
+  programmes and adult suicide prevention. This is the routine annual
+  SAMHSA cycle rather than a policy shift, and it is recorded as background
+  for that reason — but it is the number against which any later cut to
+  crisis-line funding would be measured, which is why it is worth having on
+  the record rather than skipping as routine. ⚠️ HHS's own page 403s to
+  this session; the figures come from SAMHSA's site and secondary
+  reproduction of the release text.
+  <!-- k: axis=policy -->
+
 ## Research & evidence
 
 - **Definium Therapeutics won a second FDA Breakthrough Therapy
@@ -71,6 +100,19 @@ reported rather than merely promised.
   designation, not evidence of efficacy.
   <!-- k: t=psychedelic-regulatory-sprint axis=evidence -->
 
+- **✅ Definium's breakthrough designation is now confirmed on the primary
+  document.** The company's 8-K, filed today under Item 8.01, states that
+  "the U.S. Food and Drug Administration has granted breakthrough
+  designation to the Company's DT120 ODT program for the treatment of major
+  depressive disorder." ⚠️ **The filing itself carries no trial data** — no
+  n, no endpoint, no effect size — so the n=149 and 8.1-point
+  placebo-adjusted MADRS improvement at p<0.0001 reported this morning come
+  from the company's press release and its carriage, not from the
+  disclosure. The designation is a fact; the efficacy numbers remain the
+  sponsor's own and unpublished. Found by the restored `sec_edgar` lane.
+  ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/1813814/000119312526384403/dftx-20260908.htm))
+  <!-- k: t=psychedelic-regulatory-sprint axis=regulatory -->
+
 ## 🧪 Clinical trials
 
 The ClinicalTrials.gov v2 API was queried directly for depression, PTSD,
@@ -81,6 +123,20 @@ on `StudyFirstPostDate` — a cleaner instrument than the
 genuinely new registrations from routine record edits — and also came back
 empty. **Adopting `StudyFirstPostDate` as this section's default filter is
 the change worth making**, and it is noted here rather than done silently.
+
+✅ **The afternoon run adds a mechanical check this section has not had for
+three days:** the restored `clinicaltrials` collector returned 16 rows,
+about fifteen of them mental-health relevant, into `buffer/`. Reading them
+does not change the finding — they are small academic registrations
+(iTBS for sleep in depressed adolescents, an ACT-versus-CBT depression
+comparison, peripartum audiovisual stimulation for postpartum depression,
+music therapy for anxiety in advanced cancer) plus edits to older records,
+with nothing practice-changing. ⚠️ **But the buffered rows carry only
+`id`, `url`, `title` and a collection timestamp — no `StudyFirstPostDate`
+— so the new-registration-versus-record-edit distinction still cannot be
+made from the buffer.** That is now a demonstrated gap in the collector's
+record shape rather than an inferred one, which makes it a concrete thing
+to route to the engine rather than a preference.
 
 ## ⏳ Upcoming & expected
 
@@ -109,11 +165,22 @@ any of the six front pages checked this morning.
 
 ## ⚠️ Collection note
 
-⛔ **Second consecutive day with no collectors.** `clinicaltrials`,
-`openalex`, `federal_register` and `rss` did not run. The trials check was
-made directly against the ClinicalTrials.gov API, which is a real
-substitute; the literature check was again **not** — PubMed and Europe PMC
-were not independently queried.
+✅ **The collectors ran again.** `cloud-researcher` was absent from this
+machine rather than broken — the repo exists and had never been cloned
+here — so it was cloned and run in place this run. `clinicaltrials` (16
+rows), `federal_register` (6 items, all routine Paperwork Reduction Act
+notices), `google_news_rss` and `semantic_scholar` produced buffered rows
+and provenance manifests.
+
+⚠️ **`rss` is still dark, and it is a filed bug rather than the outage.**
+The collector looks for `feeds.yaml` inside the installed package rather
+than in this corpus, so it fails on a missing-file error regardless of
+whether the corpus has feeds — the same defect this repo briefed to the
+engine on 09-04. ⚠️ **And `openalex` returned nothing at all — HTTP 429
+on every term** (the throttle briefed 09-03). The literature check therefore
+remains this lens's weak one: `semantic_scholar` produced rows, but PubMed
+and Europe PMC were still not independently queried and the lane built for
+the academic literature is rate-limited to zero.
 
 ⚠️ **Access failures this pass:** Reuters blocked directly and through the
 reader proxy; investing.com blocked outright; Pennsylvania's attorney

@@ -12,6 +12,10 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
+## 2026-09-08 — The 10-year yield reaches 4.81%, its highest since October 2023
+
+- **The US 10-year Treasury yield rose to 4.81% intraday, its highest print since October 2023**, as traders returned from the long weekend into higher oil, a soft NFIB small-business survey and an unresolved Fed path ahead of the 09-16 FOMC. Read against this thread: the long end is selling off while Treasury's yield-suppression campaign is live, and it is doing so on a day the equity market fell. ([TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield)) ⟨daily 2026-09-08⟩
+
 ## 2026-09-04 — The long end sold off on the jobs beat — the first real-data test of Treasury's yield-suppression campaign since it was disclosed
 
 - **A hot jobs print, not TGA-funded buybacks, moved the long end today: the 2-year Treasury yield jumped 8bp to a post-January-2025 high above 4.416% and the 10-year rose to ~4.77%, reversing Thursday's Waller-driven rally.** This thread's core question — whether Treasury's ~$950bn cash cushion can keep suppressing long-end yields against the data — got its first live test since the doubled buyback ceiling was disclosed on 08-19: a genuinely hawkish data surprise moved yields up regardless. No auction or buyback operation is scheduled to have run in this window (the first operation isn't until 09 September per the standing record), so this is a read on the underlying yield pressure the intervention is meant to counter, not on the intervention's own mechanics.

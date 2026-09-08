@@ -9207,3 +9207,160 @@ No audio briefing: the kokoro venv is still absent.
 **Committed and pushed** as the last act of the session; both repos
 verified at zero unpushed commits. No collector provenance manifests exist
 for this run, for the reason in finding 2.
+
+## 2026-09-08 15:00 ET — /daily (the scheduled second run)
+
+**The collectors were never broken. Nobody had checked whether the repo
+existed.** Three consecutive runs (09-06, 09-07, 09-08 morning) recorded
+"`cloud-researcher` is not installed" and treated it as an outage to wait
+out. The check each of them ran was "is the binary on PATH," which returns
+the same answer for *installed and broken* as for *never installed here*.
+`benthepsychologist/cloud-researcher` was created 09-07 and had simply never
+been cloned onto this box. Cloning it took two minutes. ⚠️ Contributing
+cause worth recording: `kestrel/ROADMAP/CLOUD-RESEARCHER.md` still opens
+with "nothing is built, **the repo does not exist**" — true when written
+08-19, false now, and it would have confirmed the wrong assumption for any
+session that went to check. `pip install` is blocked by this session's
+permission classifier, so it runs off `PYTHONPATH`, which works but **will
+not survive into the next session** — brief filed to kestrel-ops
+(`2026-09-08-theprojection-cloud-researcher-was-never-cloned-not-broken`,
+committed).
+
+**And it paid for itself inside an hour.** 18 lanes probed, 16 wrote
+provenance manifests; the sweep returned 10,274 `google_news_rss` rows, 411
+`sec_edgar` filings, 16 `clinicaltrials` records. The
+organisation-name pass over those rows — the instrument this map has been
+without since 09-05 — found **the two biggest AI stories of the day, both
+missed by the afternoon sweeps that went and fetched the labs' own
+newsrooms**:
+
+- **OpenAI says an unreleased internal model resolved the Navier–Stokes
+  Millennium Prize Problem.** Roughly 10,000 concurrent agents, started
+  09-01, resolved 09-05, 2.7m messages and ~130bn output tokens on this
+  problem alone. **The claim is narrower than every headline:** it is
+  statements C and D of the Clay formulation — a *finite-time blowup*, that
+  a smooth fluid at rest can develop a singularity — **not** a proof that
+  flow stays smooth. Formalised in Lean (a further 17 hours via GPT-6
+  Astra); **not peer-reviewed, no full proof public**. Trailed by a priority
+  dispute: OpenAI's own post credits Levent Alpöge (Anthropic) and Tristan
+  Buckmaster (NYU) and says it acknowledges "their priority" while stating
+  its agents "did not see any of their work"; Buckmaster is reported to
+  allege the opposite. The two labs' accounts are incompatible and both are
+  recorded as attributed claims.
+- **DeepMind's AlphaGenome Atlas** — predicted molecular effects for all 9
+  billion single-letter human DNA variants, ~1PB, ~30× the AlphaFold
+  database, free to academics with the commercial path via Google Cloud.
+
+The AI sweep had fetched DeepMind's blog directly and reported nothing since
+~09-04. That was an honest check and a wrong conclusion — **the same failure
+that produced the 09-07 empty day**: an empty newsroom read as an empty day.
+Neither story has a thread; offered as a candidate.
+
+**The oil number was wrong again, in a new way, and this time the map's own
+record contained the contradiction.** The morning strip gave Brent "+1.93%
+from Friday's $96.28" on the stated rule that "Monday was a US holiday."
+That rule is right for US-exchange instruments and **wrong for Brent**: ICE
+is a London exchange and traded through Labor Day, closing near $97.16,
+while NYMEX was shut so WTI's Friday basis was correct. The morning applied
+WTI's holiday to Brent. **This map's own 09-07 entry already carried Brent
+at $97.73 on Monday.** Corrected to ~$98.6, +1.5% vs Monday, cross-checked
+between oilprice.com's front-month contract and TradingEconomics. Gold's
+morning +0.41% also reversed intraday and is now given as a direction and a
+range, because three sources disagreed on its prior close.
+
+### ⚠️ Three findings about how a re-run reaches the site, all learned the hard way
+
+Extending a digest in place is **not** the same as updating the site, and
+this run hit the same lesson in three different places:
+
+1. **`parse_front()` reads only the FIRST PARAGRAPH** of `## Today's
+   throughline` (its regex stops at the first blank line), and the
+   briefing `gist` is that paragraph's first sentence. The afternoon was
+   originally appended as *new* paragraphs, which put it in the digest and
+   **invisible to the site**. The front-briefing agent reported that none of
+   the afternoon's facts existed in its pack and refused to write them —
+   correct behaviour, and my prompt was the thing at fault. Throughline
+   restructured so paragraph one carries the whole day.
+2. **Readout packs carry a bullet's BOLD LEAD and little else.** The
+   Qualcomm afternoon bullet held "+2.91% at $173.65" in its body, so the
+   agent could only see "gave back most of its Amazon pop." Worse: **the
+   corrected Brent strip was invisible while the uncorrected bold lead was
+   what fed the site** — correcting a strip is not correcting the record.
+3. **Changing a bold lead ORPHANS its interpretation and deletes a page.**
+   The sidecar is keyed `slugify(bold_lead[:50])`; rewriting the lead broke
+   the key and the first publish deleted
+   `content/interpretation/2026-09-08--brent-settled-the-…`, writing 3
+   interpretations where there had been 4. Re-keyed, re-published: 4
+   interpretations, 4 pages, zero deletions. **Editing a bold lead is a
+   three-place edit — the bullet, the thread timeline carrying the same
+   lead, and the interpretation key.**
+
+### The afternoon's substance
+
+Four capitals answered pressure without using force: **Treasury sanctioned
+36 targets across Iranian aviation** under Operation Economic Outcast
+(primary: Treasury + State releases); **Israel closed the British consulate
+in East Jerusalem** and expelled UK officials within hours of the
+twelve-country settlement sanctions — the morning entry had recorded two
+ministers *calling* for retaliation; **Hungary expelled ten Russian
+diplomats**, its first since 2018, ending the Orban-era alignment (⚠️ the
+backstop sweep said "Geneva Convention"; the actual quote is **Vienna**);
+and **Trump and Putin spoke for an hour** in an account only the Kremlin
+has given. Kyiv's toll firmed to five.
+
+On capital: the **10-year touched 4.81%, a two-year high, then eased to
+~4.78%**; **AI-related debt reached ~$500bn, about a fifth of higher-rated
+US issuance against ~1% in 2024**, with lenders pricing construction rather
+than demand risk; Qualcomm's ~10% pop faded to +2.91%. **The Qualcomm 8-K —
+found by the restored `sec_edgar` lane — put a $60bn payment ceiling on the
+Amazon warrant** (25m shares at $161.26, 3.75m vested immediately), a number
+no coverage carried. Also: Cognition at $48bn, Samsung's MOU to run
+Mistral's models inside its own fabs, Massachusetts putting data centres
+over 25MW under local approval and banning state NDAs, Florida's AG moving
+on AI liability, and Definium's designation confirmed on its own 8-K —
+**which carries no trial data at all**, so the n=149 efficacy figures in
+circulation remain sponsor-reported.
+
+**Flash: none.** The Navier–Stokes claim led both the NYT and the WSJ, which
+is exactly what tempts the rail — rejected because the bar is
+invasion/market-halt magnitude, and more decisively because **an unrefereed,
+disputed claim is the last thing that belongs on a 24-hour rail.**
+
+### Mechanics
+
+**Merged:** 16 timeline bullets across 13 threads, additively by the staging
+script after a dry run — zero replacements, zero deletions. `last_seen`
+bumped on the five threads not already at 09-08. One watchlist entity added
+(`cognition`). Four `actor-doing` roll-ups refreshed (qualcomm, google,
+mistral-ai, samsung) by surgical text edit — **all 16 header comments
+verified intact**, per the 09-08 morning regression where `yaml.dump`
+stripped them. `safe_load` clean on every YAML touched.
+
+**Graph:** not fed — 09-08 is still `building`, and step 6b feeds only a
+finalized day. `validate.py` run anyway: OK, 4,879 atoms, all references
+resolving.
+
+**Ledger:** no `pending` entry was due and no `passed-silent` sat inside its
+3-day grace, so step 2 was a genuine no-op.
+
+**Readouts and publish:** 4 packs, 4 briefing agents, `--apply` accepted all
+4 with zero skips, `--export` wrote 154. Link rates 94% / 76% / 77% / 80%,
+all clear of the 60% floor. ⚠️ **The front and global-capital briefings had
+to be re-run** — the first pass was written against packs generated before
+the throughline restructure, and both agents correctly refused prompt-supplied
+facts they could not find in their pack. Published twice (the second to
+restore the orphaned interpretation): 1,182 story pages, 753 claim pages,
+122 map pages, 70 entity pages, 4 interpretation pages. No audio briefing —
+the kokoro venv is still absent.
+
+⛔ **The public site is STILL three days stale, and this is the one thing
+this run could not fix.** Verified directly rather than inferred:
+`theprojection.org/news/global-capital/` reads "Briefing Updated Sep 6, 7:23
+PM UTC" and still shows **"Brent's last settlement at $92.68"** — a figure
+corrected twice now. The publish path is healthy and everything is pushed;
+**only the deploy trigger is broken.** `THEPROJECTION_DEPLOY_HOOK` is unset
+because `.env` is gone from this machine, a git push does not by itself queue
+a Cloudflare Workers build (four pushes, no build), `wrangler` is not
+installed and there is no Cloudflare token here. **Needs Ben.**
+
+**Committed and pushed.**

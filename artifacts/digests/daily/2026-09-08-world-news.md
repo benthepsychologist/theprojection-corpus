@@ -3,19 +3,21 @@ lens: world-news
 date: 2026-09-08
 status: building
 window_start: 2026-09-08T05:00:00-04:00
-as_of: 2026-09-08T10:00:00-04:00
+as_of: 2026-09-08T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-08
 
-*Curated agentic-interim, 05:00 ET → **10:00 ET** Tuesday. Sources: one
-world-news sweep carrying a real front-page pass over BBC, DW, France24,
-Al Jazeera and AP's first-party feeds, plus main-session reads of the
-CBSA's own customs notice and Ukrainska Pravda's own RSS. **⛔ No
-deterministic collectors ran — `cloud-researcher` is still not installed,
-so every item here was fetched live and no provenance manifests were
-produced.** Second consecutive day.*
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday, extended in
+place from the 10:00 run. Sources: the morning's world-news sweep, an
+afternoon world sweep over the 10:00→15:00 window, a wire front-page
+backstop scan reading editors' own orderings rather than search terms, and
+main-session verification of the Treasury and State Department releases,
+the Kremlin readout's provenance, and Hungary's expulsion. **✅ The
+deterministic collectors ran again for the first time since 09-05** —
+`cloud-researcher` was missing from this machine, not broken, and was
+restored this run; provenance manifests exist for this run.*
 
 ## Today's throughline
 
@@ -72,6 +74,39 @@ the visit.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/qatar-says-reopening-strait-of-hormuz-unconditionally-is-a-priority))
   <!-- k: t=iran-conflict-widening,red-sea-oil-shock e=qatar axis=diplomacy -->
 
+- **The US Treasury sanctioned 36 targets across Iran's aviation sector,
+  grounding most of the country's remaining commercial airlines.** OFAC
+  designated Mahan Air, Iran Aseman, Air Shiraz, Fly Persia, Fly Kish, Ata
+  and Ava among others, plus logistics firms in Turkey, the UAE, Kazakhstan
+  and Malaysia, and suspended non-US airlines' ability to fly US-origin
+  aircraft into Iran. The stated case is that Iran uses civil aviation to
+  move weapons and IRGC personnel. This extends Operation Economic Outcast,
+  the campaign OFAC opened 08-24 against five Iranian sectors — aviation,
+  digital assets, gold, shipping and technology. Read against the morning:
+  the US answered the week's military exchange with an economic instrument,
+  not a military one.
+  ([Treasury](https://home.treasury.gov/news/press-releases/sb0623/),
+  [State](https://www.state.gov/releases/office-of-the-spokesperson/2026/09/operation-economic-outcast-grounds-irans-aviation-sector))
+  <!-- k: t=iran-conflict-widening e=iran axis=policy -->
+- **Trump and Putin spoke for about an hour, their first call since Witkoff
+  and Kushner visited Moscow and Kyiv — and hours after Russia broke the
+  pause those visits had bought.** Kremlin aide Yuri Ushakov called it
+  "constructive and quite frank," said the two reviewed the envoys' trip and
+  agreed to keep talking, and said Russia has "no aggressive plans regarding
+  Europe." No ceasefire resulted and Putin's demand for Ukrainian withdrawal
+  from unoccupied Donetsk is unchanged. ⚠️ **Everything known about the
+  call's content comes from the Kremlin's own readout** — there is no
+  independent account, so this is a fact about what Moscow says was said.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/trump-putin-hold-frank-phone-call-as-us-restarts-ukraine-deal-efforts),
+  [Moscow Times](https://www.themoscowtimes.com/2026/09/08/trump-presses-putin-for-swift-end-to-ukraine-war-in-confidential-call-a93663))
+  <!-- k: t=russia-ukraine-war e=russia axis=diplomacy -->
+- **Kyiv's toll from the overnight strike rose to five dead and close to 30
+  injured, with more than 50 sites damaged.** Mayor Vitali Klitschko said
+  two further people died in a warehouse strike. This is the morning's
+  figure firming over the day, not a second attack.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/russia-strikes-kyiv-as-three-day-pause-during-us-envoy-visits-ends))
+  <!-- k: t=russia-ukraine-war e=ukraine axis=conflict -->
+
 ## Trade & sanctions
 
 - **Canada's counter-tariffs on US goods took effect this morning at 15,
@@ -107,6 +142,19 @@ the visit.
   was not reachable.
   <!-- k: t=iran-conflict-widening e=united-kingdom axis=policy -->
 
+- **Israel answered the settlement sanctions within hours by closing the
+  British Consulate in East Jerusalem and expelling UK officials.** Foreign
+  Minister Gideon Sa'ar said Israel will shut the consulate, remove UK
+  representatives from Gaza-ceasefire monitoring and West Bank training
+  roles, and bar twelve British officials and citizens from entry. The
+  morning entry recorded two Israeli ministers *calling* for retaliation;
+  this is the government acting on it the same day. What it cuts is the
+  ceasefire-monitoring channel rather than trade — a diplomatic-presence
+  response to an economic measure.
+  ([Jerusalem Post](https://www.jpost.com/israel-news/article-907974),
+  [Haaretz](https://www.haaretz.com/west-bank/2026-09-08/ty-article/.premium/israel-bars-u-k-officials-closes-jerusalem-consulate-in-response-to-sanctions/000001a0-8195-d705-adfa-a5fd5f790000))
+  <!-- k: t=gaza-war e=israel,united-kingdom axis=diplomacy -->
+
 ## Europe
 
 - **Protests spread across Germany over the AfD's Saxony-Anhalt result,
@@ -117,6 +165,19 @@ the visit.
   needed to govern. Today is the reaction, not the result. ⚠️ The scale of
   the protests is not independently verified beyond headlines.
   <!-- k: e=germany axis=politics -->
+
+- **Hungary expelled ten Russian diplomats for espionage — its first public
+  expulsion since 2018, and a deliberate break with the Orban-era
+  alignment.** Foreign Minister Anita Orban said those expelled "were
+  engaged in activities in Hungary that are unacceptable for diplomats under
+  the Vienna Convention." Moscow called it an "extremely unfriendly step" and
+  promised retaliation; Budapest said it is not severing relations. The
+  significance is the sender rather than the number: the EU member that was
+  Moscow's most reliable friend, under Peter Magyar's new government, is
+  publicly repositioning.
+  ([Euronews](https://www.euronews.com/my-europe/2026/09/08/hungary-expels-10-russian-diplomats-for-unacceptable-activities),
+  [Meduza](https://meduza.io/en/news/2026/09/08/hungary-expels-10-russian-diplomats))
+  <!-- k: t=russia-ukraine-war e=russia axis=diplomacy -->
 
 ## ⏳ Upcoming & expected
 

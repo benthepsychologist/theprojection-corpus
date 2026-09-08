@@ -20,6 +20,7 @@ night price action.
 
 - **Qualcomm rose about 10% on a multi-generational custom-silicon agreement with Amazon for AI data-centre infrastructure.** ⚠️ **The "$4 billion" figure in most headlines is the value of a warrant Qualcomm issued Amazon for up to 25 million of Qualcomm's own shares — not cash consideration, and not a disclosed contract size.** Most coverage collapses that distinction; it matters for this thread because it means the print is a rotation signal (Amazon adding a second custom-silicon path alongside its in-house Trainium chips) rather than a disclosed revenue number for Qualcomm.
   ([CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html)) ⟨daily 2026-09-08⟩
+- **Qualcomm's roughly 10% premarket pop faded to +2.91% by 15:07 ET**, at $173.65 against Friday's $168.74 close. The morning entry already caught that the "$4bn" headline was a warrant rather than a contract — Amazon takes warrants on 25 million shares at $161.26 — and the afternoon tape is the market reaching the same conclusion within a session. ([Yahoo Finance](https://finance.yahoo.com/quote/QCOM/)) ⟨daily 2026-09-08⟩
 
 ## 2026-09-04 — Chip-vs-tech split held through Friday's close, did not reverse
 

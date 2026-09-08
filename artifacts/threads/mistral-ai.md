@@ -22,6 +22,10 @@ figure; does growing Microsoft compute-channel dependence complicate the
 "sovereign alternative" framing. Cross-refs `asml` (the ASML 11%-stake side
 of Mistral's cap table lives there, not here).
 
+## 2026-09-08 — Samsung signs an MOU to run Mistral's models inside its own chip fabs, a day after leading its round
+
+- **Samsung signed a memorandum of understanding to deploy Mistral's models across its semiconductor fabs** for chip-design analysis, defect prediction and manufacturing optimisation, keeping the models on Samsung's own infrastructure rather than a vendor cloud. This is the part of yesterday's Samsung-led ~€3bn round that is not a financing: the lead investor is also becoming an industrial customer, and the deployment is inside fabrication rather than in a product. ([Samsung Global Newsroom](https://news.samsung.com/global/samsung-and-mistral-ai-announce-strategic-partnership-for-intelligence-driven-semiconductor-infrastructure)) ⟨daily 2026-09-08⟩
+
 ## 2026-09-07 — Mistral closes a Samsung-led ~€3bn round at ~€21bn, with Nvidia and BlackRock joining, ending three digests of unresolved flagging
 
 - **Mistral closed a Samsung-led round of about €3 billion at a roughly €21 billion valuation, with Nvidia and BlackRock participating, confirmed on Mistral's own site at 01:03 ET on 09-08.** Roughly a doubling of the prior ~€12bn mark and the largest European AI raise to date — the round this thread's own watch line has carried as "pending... in talks since mid-June, still not closed" since it opened is now closed. This resolves a flag the map carried unresolved across three consecutive digests, where search results kept substituting the confirmed September-**2025** €1.7bn round for the pending one. ([Mistral](https://mistral.ai/news/), [CNBC](https://www.cnbc.com/2026/09/08/mistral-ai-funding-valuation-samsung.html)) ⟨daily 2026-09-07⟩
