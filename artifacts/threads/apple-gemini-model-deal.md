@@ -14,6 +14,11 @@ figure is reporter-sourced only); how much runs on Apple's own models vs.
 Google's; the EU/DMA fight over Siri AI's EU launch; whether Apple builds
 back toward its own.
 
+## 2026-09-09 — Siri AI ships publicly, still gated to a waitlist and still blocked in the EU and China
+
+- **Siri AI shipped 2026-09-09, English-only and gated by a waitlist, with Apple reconfirming at actual ship time that it remains blocked in the EU and China with no launch timeline given for either** — the thread's own EU/DMA watch item, now answered at shipping time rather than at announcement time: still unresolved. The ~$1B/yr Google deal figure remains unconfirmed by either company.
+  ([TechTimes, 2026-09-02](https://www.techtimes.com/articles/326347/20260902/siri-ai-ships-september-9-waitlisted-eu-blocked-ternuss-constrained-launch.htm)) ⟨daily 2026-09-09⟩
+
 ## 2026-06 (WWDC) — Thread opened
 
 - **Apple unveiled Siri AI with Apple Intelligence Gemini-powered via a

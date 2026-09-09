@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-08
-status: building
+status: final
 window_start: 2026-09-08T05:00:00-04:00
 as_of: 2026-09-08T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-08
@@ -196,3 +196,41 @@ another attempt with the same one.
 
 📋 **Also carried:** a working Reuters/AP transport still is not pinned
 into `sources/benchmarks.yaml`, flagged on both this pass and the last two.
+
+### Coverage critic
+
+**One near-miss, and it is a window-boundary timing issue, not a recall
+failure.** DOL/EBSA (the Department of Labor's Employee Benefits Security
+Administration) published an "Interim Enforcement Roadmap" for MHPAEA —
+the federal mental-health parity law — via a bulletin from EBSA Assistant
+Secretary Daniel Aronowitz, signaling more aggressive enforcement of the
+law's nonquantitative-treatment-limitation (NQTL) requirements while the
+administration's full replacement rule is still pending (NPRM expected
+end of 2026). Confirmed genuinely new and dated, not a re-serve, via a
+second trade outlet (Behavioral Healthcare Network) carrying the same
+story same-day. It published 2026-09-08 8:27 PM UTC (4:27 PM ET) — about
+87 minutes **after** this digest's 15:00 ET `as_of` cutoff, so it landed
+outside the window that was actually swept, not something this pass
+should have caught and missed. **It lands squarely on the open
+`mhpaea-parity-limbo` thread** (opened 07-28, last touched 08-29), whose
+own watch line names exactly this: "the NPRM actually publishing, the
+enforcement-gap consequences payers price in meanwhile, and any
+state-level parity action filling the federal void." Yesterday's 09-07
+digest logged "no new guidance, litigation or agency action" on parity —
+this bulletin is the tripwire that watch line was set to catch, firing
+the day after. Folded into `mhpaea-parity-limbo`'s timeline as a
+2026-09-08 entry at finalize (see that file), marked as a late catch
+rather than a same-day item.
+
+**Skipped as optional, inside-window:** Behavioral Health Business also
+ran "Beacon Behavioral Health Partners Acquires 2 Texas Providers" (2:47
+PM ET) — a routine M&A tuck-in with no dedicated thread. Background
+noise, not worth a bullet.
+
+**ClinicalTrials.gov filter change confirmed clean.** The
+`StudyFirstPostDate` check (the corrected filter adopted per 09-07's
+method note, replacing `LastUpdatePostDate`) came back clean and
+corroborating: 27 studies first-posted 09-08, all small academic
+registrations, nothing above the "practice-changing" bar — confirming
+this digest's own null finding on trials that day rather than surfacing
+anything it missed.

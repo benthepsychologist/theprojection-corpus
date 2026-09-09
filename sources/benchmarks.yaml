@@ -244,3 +244,27 @@ critics:
 #     critic grabbing "the newest item" off this feed risks comparing
 #     against the Robotics or Tech edition instead. Filter to the AI
 #     edition specifically.
+
+# - **ACCESS RE-VERIFIED 2026-09-09** (global-capital critic pass finalizing
+#   09-08, three benchmarks that could not actually be checked for that day
+#   — recorded as "not checkable," distinct from a clean pass with no
+#   misses).
+#
+#   - **Axios Pro Rata: CONFIRMED same-day-only, a second live
+#     demonstration of the 08-25 trap above.** The reader-proxy URL
+#     (`r.jina.ai/https://www.axios.com/newsletters/axios-pro-rata`)
+#     renders whichever day's issue is current at fetch time, with no
+#     dated-archive path. Checking 09-08's digest from 09-09 would silently
+#     compare against 09-09's edition instead. Treat as "not checkable"
+#     for anything but a same-day pass, per the 08-25 note.
+#
+#   - **FT Unhedged: WORSE — now fully unreachable**, not merely paywalled
+#     past the RSS headline as logged 08-25. No dated edition could be
+#     confirmed to exist for 09-08 at all this pass.
+#
+#   - **Bloomberg Technology: reachable again via the reader proxy**
+#     (`r.jina.ai/https://www.bloomberg.com/technology`), a flip back from
+#     the re-blocked state logged 08-25. But it remains a rolling homepage
+#     with no dated archive — access being restored does not make it
+#     checkable against a specific past day. Re-test access state
+#     periodically; the "dated archive" problem is separate and unfixed.

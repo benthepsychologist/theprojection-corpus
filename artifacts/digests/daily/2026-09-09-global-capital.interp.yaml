@@ -1,0 +1,108 @@
+# Interpretations for 2026-09-09 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25 — two weeks
+# stale, see the digest's own collection note).
+
+brent-crossed-100-a-barrel-for-the-first-time-sin:
+  mechanism: >
+    The war crossed from interdiction to direct combat between the two
+    navies, and the price is now pricing combatant risk rather than
+    transit risk. Every escalation this map has tracked through August
+    hit tankers, refineries or shadow-fleet vessels — assets, not the
+    US Navy or a treaty ally's territory directly. Disabling five
+    Iranian tankers in one operation and Iran answering with a missile
+    strike on a US-aligned state's air base changes what underwriters
+    have to model: not "does this route stay open," but "does this stay
+    a shipping war or become a state-on-state one," which is a much
+    harder premium to price down on a diplomatic headline.
+  confidence: probable
+  scenarios:
+    - direction: Brent holds above $100 even if this specific exchange doesn't repeat
+      why: >
+        A demonstrated willingness on both sides to hit military and
+        state assets directly, not just tankers, resets the floor
+        underwriters price against future incidents — the same
+        ratchet-not-reset pattern this thread has recorded through
+        every prior escalation this war.
+      precedent: >
+        Each prior escalation tier on this thread (the 08-30/31 Larak
+        Island strike, the 08-24 sanctions package, today's tanker
+        strikes) produced a step change in the price level that did not
+        fully reverse on the subsequent lull, consistent with a ratchet
+        rather than a mean-reverting shock.
+    - direction: a sharp reversal if either side visibly de-escalates within days
+      why: >
+        CENTCOM's explicit, immediate denial of Iran's destroyer-hit
+        claim is itself a signal that Washington wants this exchange
+        read as contained rather than as the start of open naval war —
+        a deliberate de-escalation move sitting inside an otherwise
+        escalatory day.
+      precedent: >
+        This thread has recorded oil falling on de-escalation signals
+        even mid-week (08-24's "Iran allows Iraqi tankers through
+        Hormuz" episode cut $1.50 off Brent before the sanctions
+        package landed hours later), so a reversal on credible
+        de-escalation language would not be unprecedented.
+  context_note: >
+    conflict_risk_premium in the standing snapshot (asof 08-24) already
+    reads the war as widening on every front rather than resolving, and
+    named a payments-rail sanction campaign as the sharpest instrument
+    then in use. Today's direct tanker-disabling and base-strike
+    exchange is a new tier above that — a kinetic escalation the
+    snapshot's last refresh had not yet seen — and this map's own
+    rate_regime reading is watching for exactly this kind of oil-driven
+    inflation shock landing a week before the 09-16 FOMC.
+
+saudi-arabia-s-humain-is-turning-to-outside-invest:
+  mechanism: >
+    This is the fiscal-pressure mechanism this thread has asked about
+    since it opened, arriving one company later than expected. The
+    08-04 opening finding showed PIF's capital contracting on giga-
+    projects (The Line suspended, Oxagon redesignated) while AI spend
+    (HUMAIN's ~$21-23B deal book) kept expanding in the same window —
+    read then as capital being reallocated within PIF's own balance
+    sheet, not as a sign the AI side itself needed outside money. Today
+    is the first evidence that reallocation wasn't enough: HUMAIN itself
+    is now raising outside capital and structuring toward an eventual
+    IPO, which means the fiscal squeeze has reached the AI arm directly
+    rather than stopping at the giga-projects it already cut.
+  confidence: probable
+  scenarios:
+    - direction: HUMAIN's AI buildout keeps pace on outside capital even as PIF's own contribution shrinks
+      why: >
+        A $10bn global AI VC fund and a dual-listing IPO path by 2029
+        are institution-building moves, not retreat signals — they read
+        as HUMAIN diversifying its funding base precisely so the
+        buildout doesn't have to track PIF's own cash position going
+        forward.
+      precedent: >
+        PIF's own 2025 Annual Report (logged on this thread 08-17)
+        showed net profit more than doubling YoY even as this thread's
+        fiscal-squeeze thesis was being tracked — PIF has repeatedly
+        proven able to keep funding HUMAIN's headline moves even while
+        under pressure elsewhere, so a shift to partly-outside capital
+        may be diversification rather than distress.
+    - direction: the AI buildout's growth rate slows as HUMAIN competes with PIF's other AI-adjacent draws
+      why: >
+        The quoted framing is explicit and adversarial to the growth
+        story: "PIF has been explicit that portfolio companies must
+        reduce their draw on the sovereign." A fund telling its own AI
+        arm to raise outside money because the sovereign draw itself is
+        the problem is a harder signal than ordinary capital-markets
+        diversification.
+      precedent: >
+        This same thread's 08-04 opening found The Line's construction
+        contract commitments collapsed 58% ($71B to $30B) once the
+        fiscal squeeze hit that project directly — the precedent inside
+        this thread's own record is that when PIF names a funding
+        constraint explicitly, the project on the receiving end has
+        subsequently slowed, not merely diversified.
+  context_note: >
+    No standing capital-context.yaml reading currently covers Gulf
+    sovereign-wealth AI financing directly — the closest is
+    cross_border_credit's rising cross-border bank-claims figure
+    ($47.62T, 2026-Q1), the balance-sheet channel HUMAIN's new debt
+    financing ($32bn of the $42bn buildout figure) would travel through.
+    Worth flagging for the next capital-context refresh: this thread now
+    has a live sovereign-fiscal-pressure mechanism running in parallel
+    with Treasury's own long-end buyback story on the same digest-day,
+    without asserting they are causally linked.

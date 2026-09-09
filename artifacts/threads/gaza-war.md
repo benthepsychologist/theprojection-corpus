@@ -17,6 +17,11 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-09 — Low-boil strikes continue; Sa'ar tells Farage Israel has "no plans" to expel Palestinians from Gaza
+
+- **Gaza's Health Ministry reported four killed and five injured in the 24 hours to today, from strikes on a home in Baten As-Sameen, the Al-Shati refugee camp, a home near Sheikh Radwan Cemetery, and naval fire and artillery shelling — bringing its cumulative post-ceasefire toll to 1,355 killed and 4,516 injured.** ⚠️ Single-sourced to the Hamas-run Health Ministry and Government Media Office, with no independent or Israeli corroboration — the standing caveat on this thread. ⟨daily 2026-09-09⟩
+- **Israeli Foreign Minister Gideon Sa'ar told Nigel Farage (Reform UK) that Israel has "no plans to expel or deport" Palestinians from Gaza** — a direct response to the UK's 09-08 "ethnic cleansing" sanctions framing already on this thread. ⚠️ Reported only via a Times of Israel liveblog so far; treated as reported, not confirmed, pending a second outlet. ⟨daily 2026-09-09⟩
+
 ## 2026-09-08 — UK, France and ten other countries sanction Israeli settlement goods as Miliband calls West Bank conduct "ethnic cleansing"
 
 - **The UK, France and ten other countries announced sanctions and import bans on goods from Israeli settlements in the West Bank.** Foreign Secretary Ed Miliband told Parliament Britain would introduce an import ban plus a "comprehensive sanctions regime," saying Britain "refuses to be bystanders" to what he called ethnic cleansing in parts of the West Bank. The US ambassador to Israel criticised the move and two Israeli ministers called for retaliation. Practical effect on the roughly £6bn UK-Israel trade relationship is expected to be small, since settlement-origin goods are hard to distinguish — the significance is the twelve-country bloc, not the trade volume. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/8/uk-announces-sanctions-on-illegal-israeli-settlements)) ⟨daily 2026-09-08⟩

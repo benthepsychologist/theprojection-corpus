@@ -429,16 +429,21 @@ expectations:
     status: pending
 
   - id: anthropic-ipo-public-flip
-    claim: "Anthropic flips its S-1 public / lists (October 2026 is the earliest date under consideration, explicitly not locked in)"
+    claim: "Anthropic flips its S-1 public / lists (no earlier than mid-October 2026, landing just before the November midterms — tighter than the prior 'October 2026 earliest, not locked in' framing)"
     due: 2026-12-31
     due_precision: month
     thread: anthropic-ipo-timing
     entities: [anthropic]
     source: https://www.cnbc.com/2026/07/15/anthropic-ipo-banks-investor-meetings.html
-    confidence: reported   # Bloomberg anonymously-sourced, via CNBC; NOT a company statement
-    what_confirms: "a public S-1/S-1A on EDGAR, or a company announcement naming a date and venue. Do NOT treat the October window or a Nasdaq venue as confirmed — October is single-chain Bloomberg reporting and Nasdaq has no traceable source at all"
+    confidence: reported   # Bloomberg/Reuters anonymously-sourced, via CNBC/Forbes; NOT a company statement
+    what_confirms: "a public S-1/S-1A on EDGAR, or a company announcement naming a date and venue. Do NOT treat mid-October or a Nasdaq venue as confirmed — this is reporting, not a filing"
     logged: 2026-08-02
     logged_by: curate-add   # successor to anthropic-ipo-filing, resolved hit 08-02
+    # 2026-09-09 ⟨daily⟩: claim text narrowed from "October 2026 earliest" to
+    # "no earlier than mid-October," per Reuters via CNBC (09-05) and Forbes
+    # (09-07) reporting, both later than this entry's prior source. due left
+    # unchanged (2026-12-31) — this is a tightening of the estimate, not a
+    # confirmed date.
     status: pending
 
   - id: eu-ai-act-high-risk-deferred
@@ -2828,6 +2833,28 @@ expectations:
     logged_by: critic-add
     status: pending
 
+  - id: treasury-tripled-buyback-program-end-1104
+    claim: >
+      Treasury's tripled long-bond buyback (up to $6bn/operation, 10-20yr
+      and 20-30yr sectors), which began 2026-09-09, runs for the remainder
+      of the current refunding quarter through 2026-11-04 per Treasury's
+      own release
+    due: 2026-11-04
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: [scott-bessent]
+    source: https://home.treasury.gov/news/press-releases/sb0607
+    confidence: confirmed   # Treasury's own release states the operation size and window
+    what_confirms: >
+      whether the quarter's remaining operations hold at the tripled size
+      through 11-04, whether the next quarterly refunding statement
+      extends or reverts it, and how long yields behaved over the window —
+      the 09-09 first operation saw yields rise on the announcement rather
+      than fall, a point against the suppression thesis this thread tracks
+    logged: 2026-09-09
+    logged_by: curate-add
+    status: pending
+
   - id: nippon-life-openai-hearing-outcome
     claim: >
       An outcome from the 2026-09-02 status hearing in Nippon Life Insurance
@@ -3163,3 +3190,29 @@ expectations:
     # tagesschau.de (Hochrechnung), DW live, Bloomberg.
     status: hit
     resolved: 2026-09-06
+
+  - id: openai-managed-agents-devday-2026
+    claim: "OpenAI plans to unveil 'managed agents' at DevDay 2026 (Sept 29)"
+    due: 2026-09-29
+    due_precision: day
+    thread: null
+    entities: [openai]
+    source: https://cnbc.com/2026/09/08/meta-personal-ai-agents-public-reckoning-privacy-safety.html
+    confidence: reported
+    what_confirms: "the DevDay keynote/announcement itself, and what 'managed agents' actually means as a product"
+    logged: 2026-09-09
+    logged_by: critic-add
+    status: pending
+
+  - id: definium-panorama-topline
+    claim: "Definium's second Phase 3 trial for DT120 ('Panorama', in generalized anxiety disorder, with a low-dose 50µg arm added to counter functional unblinding) expects topline results"
+    due: 2026-09-30
+    due_precision: month
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://www.biopharmadive.com/
+    confidence: reported
+    what_confirms: "the topline readout itself — efficacy on the primary endpoint, and whether the added low-dose arm actually addresses functional unblinding"
+    logged: 2026-09-09
+    logged_by: curate-add   # multiple trade outlets (BioPharma Dive, Clinical Trials Arena, GeneOnline) give "September 2026" with no exact date
+    status: pending

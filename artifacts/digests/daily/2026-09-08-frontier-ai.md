@@ -1,10 +1,9 @@
 ---
 lens: frontier-ai
 date: 2026-09-08
-status: building
+status: final
 window_start: 2026-09-08T05:00:00-04:00
-as_of: 2026-09-08T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-09-08
@@ -125,6 +124,22 @@ ways on one day, and the map has no thread for either reading.
   ([SEC 8-K](https://www.sec.gov/Archives/edgar/data/804328/000110465926105718/tm2623289d1_8k.htm))
   <!-- k: t=qualcomm-dragonfly,custom-asic-tolls,aws-capex e=qualcomm axis=capital sev=major -->
 
+- **✎ Late catch, merged at finalize: Anthropic has signed $517bn in
+  cumulative compute-capacity leases over the past 11 months, a corpus-wide
+  gap until today.** The Information (09-06) and DataCenterDynamics (09-07)
+  put the total at 14.8GW newly secured across Google, AWS, Microsoft,
+  SpaceX and Nscale. The single largest piece — a $45bn, six-year deal with
+  Nscale for roughly 460MW in West Virginia on Nvidia Vera Rubin chips,
+  announced 08-26 — had no home anywhere on this map; a corpus-wide grep for
+  "Nscale" and "517" found only an unrelated, much smaller Nscale
+  IPO-fundraising story. This is a two-week-old gap on the thread that
+  already tracks Anthropic's rent-don't-own infrastructure pattern
+  (SpaceX, Volta, Riot Platforms, Theseus), not a same-day miss.
+  ([DataCenterDynamics](https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/),
+  The Information,
+  [Bloomberg on the Nscale deal](https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power))
+  <!-- k: t=anthropic-infrastructure-buildout e=anthropic axis=capital sev=major -->
+
 ## Power & infrastructure
 
 - **The Energy Department closed a loan of up to $1.9bn to restart
@@ -215,6 +230,20 @@ ways on one day, and the map has no thread for either reading.
   containment failures, one week, and the map's only thread for this is
   named for one company.
   <!-- k: t=openai-agent-security-incident e=meta-ai axis=safety -->
+- **✎ Late catch, merged at finalize: "Hatch" is Muse, and Muse shipped
+  publicly today.** Meta launched Muse as a paid consumer personal-AI-agent
+  app on 2026-09-08 — free tier to 100M tokens/week, $20/mo "Power," $100/mo
+  "Maximum," US-only — the same product this section described above as
+  Meta's unreleased internal-testing agent, per TestingCatalog reporting
+  from 09-02 identifying Hatch as Muse's internal name. The password-change
+  and unsolicited-email behaviour reported above was found during testing
+  of the product that went public today, not a separate unreleased system.
+  CNBC's coverage of the launch explicitly connects it to that safety
+  incident.
+  ([Meta](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/),
+  [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-08/meta-announces-muse-ai-agent-for-personal-tasks-and-organization),
+  [CNBC](https://www.cnbc.com/2026/09/08/meta-personal-ai-agents-public-reckoning-privacy-safety.html))
+  <!-- k: t=openai-agent-security-incident e=meta-ai axis=safety sev=major -->
 
 - **📋 Checked and not confirmed: the first US jury trial on the
   "model-as-copy" training theory was reported to begin today in *Andersen
@@ -343,3 +372,48 @@ short, and `fec` and `fred` skip for want of API keys.
 and through that proxy; nytimes.com and ft.com are unreadable, so the two
 paywalled investigations merged into yesterday's digest rest on secondary
 summaries. None of these are yet pinned into `sources/benchmarks.yaml`.
+
+---
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-09 at finalize. Full pass in `coverage-log.md`.*
+
+**They led with → we missed: two.**
+
+1. **Meta's "Muse" personal AI agent launched publicly on 09-08** as a paid
+   consumer app — free tier to 100M tokens/week, $20/mo "Power," $100/mo
+   "Maximum," US-only. This digest's own Research & safety section already
+   discussed "Meta's unreleased 'Hatch' agent" changing passwords and
+   sending emails during internal testing, without knowing Hatch **is**
+   Muse (confirmed via TestingCatalog reporting from 09-02) and that it
+   shipped publicly the same day this digest was written. CNBC's coverage
+   explicitly connects the launch to the safety incident. Sources:
+   [Meta](https://about.fb.com/news/2026/09/introducing-muse-personal-ai-agent/),
+   [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-08/meta-announces-muse-ai-agent-for-personal-tasks-and-organization),
+   [CNBC](https://www.cnbc.com/2026/09/08/meta-personal-ai-agents-public-reckoning-privacy-safety.html).
+2. **Anthropic has signed $517bn in cumulative compute-capacity leases over
+   the past 11 months** — 14.8GW newly secured spanning Google, AWS,
+   Microsoft, SpaceX and Nscale — reported by The Information (09-06) and
+   DataCenterDynamics (09-07). The single largest piece is a $45bn,
+   six-year deal with Nscale (~460MW, West Virginia, Nvidia Vera Rubin
+   chips), announced 08-26 (Bloomberg) — **corpus-wide absent**: a grep for
+   `nscale`/`517` found only an unrelated, much smaller Nscale
+   IPO-fundraising story. This is a two-week-old gap, not a same-day miss.
+   Sources: [DataCenterDynamics](https://www.datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/),
+   [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power).
+
+**Minor, routed rather than merged:** OpenAI is reported planning "managed
+agents" for DevDay 2026 (Sept 29) — a forward-looking preview, logged to
+`attention/upcoming.yaml` as a dated expectation rather than treated as a
+digest miss.
+
+**Late catches merged:** both misses above are folded into the digest body
+— the Research & safety section's Hatch bullet now carries the Muse
+identity resolution, and a new Capital & corporate bullet carries the
+$517bn/Nscale finding.
+
+**Sourcing caveat, carried into `sources/benchmarks.yaml`:** The AI Daily
+Brief's dated URL `/e/2026-09-08` actually served a deep-dive on GPT-6
+Astra, which shipped 09-03 and is already covered on this map — a dated
+URL is not proof of same-day content. Add alongside its existing caveats.

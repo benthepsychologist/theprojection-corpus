@@ -20,6 +20,10 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-09-09 — OpenAI deepens its chip R&D partnership with Samsung, extending into foundry/2nm process work
+
+- **OpenAI is deepening its chip R&D partnership with Samsung, extending the collaboration into Samsung's foundry and 2nm process work.** Confirmed by OpenAI Korea GM Harrison Kim at a Seoul press conference; no technical, volume or timeline detail disclosed. Adjacent to this thread's own entity list (Samsung already carries High-NA EUV adoption and the Mistral stake here) rather than a new node in the ASML story itself — routed here for lack of a dedicated Samsung-foundry thread. ([sammyfans](https://sammyfans.com/2026/09/09/openai-deepens-samsung-partnership-for-next-gen-ai-chips), [Quartz](https://qz.com/openai-samsung-chips-enterprise-ai-partnership-090926)) ⟨daily 2026-09-09⟩
+
 ## 2026-09-08 — TSMC, Samsung and Intel all commit to High-NA EUV; ASML and TSMC open a joint photomask initiative
 
 - **TSMC, Samsung and Intel all committed to ASML's High-NA EUV tools**, the clearest signal yet that the entire leading edge is converging on one toolmaker for the next node, extending ASML's standard-EUV monopoly position into High-NA. **ASML and TSMC also opened a joint initiative on large-format photomasks**, with a pilot production line targeted for 2031 — the honest timescale of this transition.

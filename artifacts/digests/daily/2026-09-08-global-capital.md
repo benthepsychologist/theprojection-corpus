@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-08
-status: building
+status: final
 window_start: 2026-09-08T05:00:00-04:00
 as_of: 2026-09-08T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-08
@@ -269,3 +269,54 @@ against is aging and cannot currently be refreshed mechanically.
 `r.jina.ai` proxy, so every Reuters-attributed item above was read through
 another outlet's carriage of the same wire copy. AP's proxy route now
 works. Neither is yet pinned into `sources/benchmarks.yaml`.
+
+---
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-09 at finalize. Full pass in `coverage-log.md`.*
+
+**They led with → we missed: one real miss, and it points at a
+corpus-wide blind spot, not a same-day slip.** Money Stuff's (Matt
+Levine's) 09-08 column, "Robinhood Tokenized AMC," covers Robinhood
+issuing tokenized instruments that give retail buyers price exposure to
+AMC stock with no real share behind the token — synthetic exposure, not
+equity. AMC's own CEO, Adam Aron, called the tokens "contemptible,
+outrageous, disgusting" in public and questioned their legality. This is
+confirmed fresh 09-08 commentary, not a re-serve of the AMC-CEO story
+that broke 09-03 — a separate check was made for that. A corpus-wide grep
+for `tokeniz`, `AMC` and `robinhood` came back with **zero hits anywhere
+on this map** for tokenization, stablecoins or synthetic-share products
+as a genre, and two prior digest entries (08-29 and 08-30) had already
+flagged this exact gap in writing without it being closed. **This is a
+standing absence, not a one-day miss**, and it is on-genre for this lens
+— candidate for a new thread, or at minimum a named watchlist/term entry
+so a tokenization story has somewhere to land next time one appears.
+
+> **The price audit is clean, and after the four-day Brent transposition
+> this matters more than a routine clean pass would.** All ten figures in
+> the 09-08 strip were independently re-derived: S&P 500, Dow, Nasdaq, the
+> 10-year yield, Brent, WTI, Qualcomm, gold, USD/JPY and the Nikkei. No
+> errors found, and the Brent-basis correction made earlier in the day
+> held under a second, independent re-derivation.
+
+**Three named benchmarks could not actually be checked for 09-08 — this
+is a "not checkable" result, not a clean pass, and the two are not the
+same claim.** Axios Pro Rata's reader-proxy route is confirmed same-day-
+only with no dated archive — a second live demonstration of a trap this
+file already carries from 08-25 — so a check run on 09-09 against 09-08's
+edition would silently compare the wrong day. FT Unhedged is now fully
+unreachable, a worse state than the previously-logged "reachable but
+paywalled past the headline." Bloomberg Technology's reader-proxy route
+is reachable again (a flip back from the re-blocked state logged 08-25),
+but it is a rolling homepage with no dated archive, so nothing on it
+could be pinned to 09-08 specifically even with access restored. All
+three access states are recorded below in `sources/benchmarks.yaml`.
+
+**We had → they didn't:** with none of the three named benchmarks
+checkable, no comparison is possible — but this digest's own content
+(the Houthi strikes on Aramco and a Saudi air base, the Qualcomm/Amazon
+warrant-vs-contract distinction most headlines blurred, and the intraday
+10-year spike-and-retreat around 4.81%) is offered as the day's record on
+its own terms rather than measured against a benchmark that couldn't be
+read.

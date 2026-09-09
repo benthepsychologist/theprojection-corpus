@@ -9364,3 +9364,85 @@ a Cloudflare Workers build (four pushes, no build), `wrangler` is not
 installed and there is no Cloudflare token here. **Needs Ben.**
 
 **Committed and pushed.**
+
+---
+
+## /daily 2026-09-09 10:00 ET — a US-Iran naval exchange broke Brent above $100, a formal government advisory named six Chinese AI firms, and an Anthropic alignment lead went on record that AI could kill everyone within a decade
+
+**Finalized 09-08.** All three critic passes ran (frontier-ai, mental-health,
+global-capital — world-news carries no benchmark critic by design) and found:
+Meta's "Muse" agent publicly shipped 09-08 as the exact product the digest was
+still calling the unreleased, misbehaving "Hatch" — the two are the same
+agent (confirmed via TestingCatalog), now merged; Anthropic's cumulative
+$517bn in compute-capacity leases (including a $45bn Nscale deal) sat
+corpus-wide absent for two weeks, now added; the DOL/EBSA mental-health-parity
+enforcement bulletin landed 87 minutes past the digest's cutoff — a genuine
+near-miss, not a recall failure, and it's the exact tripwire `mhpaea-parity-
+limbo` was set to catch, folded into that thread's 09-08 timeline as a late
+catch; and Money Stuff's "Robinhood Tokenized AMC" column exposed a real,
+long-standing corpus-wide gap — this map has zero coverage of tokenization/
+synthetic-share stories. The global-capital price audit came back **clean**
+across ten independently re-derived figures, including the previously
+error-prone Brent number. All four lens digests flipped to `status: final`
+(world-news's `coverage: na` unchanged); coverage-log.md carries all three
+critic entries.
+
+**Today's map.** The war's biggest direct US-Iran naval exchange yet: CENTCOM
+disabled five Iranian tankers after two failed Iranian attempts on a US
+warship; Iran retaliated with missiles at Jordan's Muwaffaq Salti air base
+(18 of 20 intercepted, no deaths) and falsely claimed hits on two US
+destroyers, which CENTCOM explicitly denied. **Brent crossed $100/bbl for the
+first time since July.** Separately, CISA/NSA/FBI jointly named DeepSeek,
+Moonshot AI, Alibaba, MiniMax, StepFun and Z.AI in a formal advisory on
+"industrial-scale" model distillation against Claude/GPT/Gemini/Grok — the
+first US government attribution in a fight that had only been Amodei's
+informal accusation until today. Hours apart and unrelated on its face: an
+Anthropic researcher's viral resignation, saying his lab and OpenAI
+"earnestly believe" AI could kill everyone within a decade, got a public,
+on-record agreement from Anthropic's own alignment lead rather than a
+corporate distancing — offered as a new thread candidate, not forced onto an
+existing one. Treasury tripled its long-bond buyback operation to $6bn (its
+first actual operation at that size) and the 10-year yield hit a fresh high
+since October 2023 anyway — the market reading a bigger intervention as
+fragility, not relief. On mental health: Florida's AG chatbot-liability plan
+gained four-outlet corroboration plus criminal-penalty and state-suspension
+teeth, and HHS named the FDA's first-ever Deputy Commissioner for Technology
+and AI. **Flash: none** — both the Jordan strike and a new Russian drone
+strike on the Ukraine-Moldova border (2 civilians killed) read as an
+already-tracked war finding a new edge, not a new front, on both lenses' own
+calls.
+
+**Second thread candidate:** North Korea's second uranium-enrichment
+facility at Yongbyon (IAEA), caught by the world-news wire-backstop sweep —
+zero prior coverage, offered as "track this?"
+
+**Mechanics.** Eight background agents ran the tiered sweep (5 lens/cluster +
+1 cold-rotation, 3 coverage critics), followed by four lens-curation agents
+(finalize 09-08 + write 09-09) and one cross-lens synthesis agent (front.md +
+actor-doing.yaml refresh). Main session handled thread/watchlist edits,
+routing, and the pipeline steps agents can't do: three stale `last_seen`
+fields fixed on data-quality grounds (`stargate-buildout`, `apple-gemini-
+model-deal`, `berkshire-ai-capital-stance`, `horn-of-africa-war`), a
+`meta-ai` actor-doing correction (the sub-agent hedged Hatch≠Muse before I
+caught that the frontier-ai critic had already confirmed the identity).
+Graph fed clean: `validate.py` reports 4,962 atoms, 3,186 sources, 8,117
+relationships, 1,306 annotations, 130 extraction passes, all references
+resolving. Readouts: 4 packs, 4 briefing agents, `--apply` accepted all 4,
+`--export` wrote 154. Published: 105 threads, 70 entities, 3 beat pages, 753
+claims, 6 interpretations, 1197 stories (2126 sources, 1643 credibility-
+badged), 122 map pages — **committed and pushed to the site repo.**
+
+⛔ **The Cloudflare deploy hook is still not firing** — `THEPROJECTION_DEPLOY_
+HOOK` is empty in `.env.example` and unset in the environment, same standing
+gap as 09-08's run (`.env` is still missing from this machine). The site's
+git repo is current; the live build is not. **Still needs Ben.**
+
+📬 **Filed to kestrel-ops's INBOX** (committed there, not here): today's
+10:00 ET GDELT collector run wrote every row of `buffer/2026-09-09-
+gdelt.jsonl` tagged `lens: ai` — zero rows for world-news. That lens ran
+entirely on a manual wire-front-page backstop today. `attention/world-
+news.yaml` (built by `google_news_rss` + GDELT) is separately six days
+stale. Flagged as a likely engine-side collector/lens-routing bug, not
+something to patch from this repo.
+
+**Committed and pushed.**

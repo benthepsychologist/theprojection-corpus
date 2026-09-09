@@ -10,6 +10,11 @@ opened: 2026-08-04
 
 *Watch:* A Tigray-war reignition with cross-border spillover. Track whether federal/TPLF fighting becomes sustained rather than episodic; displacement volume and direction; whether Eritrea enters directly, which is the step-change that would turn a civil conflict back into a regional war; and any AU/UN mediation.
 
+## 2026-09-09 — AU mediation attempt has stalled; Eritrea resisting dialogue
+
+- **Human Rights Watch reports the African Union has failed to secure renewed commitment from either side to the 2022 Pretoria agreement, despite a conflict-prevention meeting in Luanda a week earlier — and describes Eritrea as resisting Ethiopia's calls for dialogue, with no serious mediation push from Washington or anyone else.** This directly answers the thread's own standing watch question (any AU/UN mediation) — the answer as of today is: attempted, and stalled. It does not itself confirm Eritrea has crossed the thread's step-change threshold into direct war (the tank-deployment/Tsimdo-coalition facts are already on the 08-06 entry below) — this is a mediation-track update layered on top of already-known military facts.
+  ([HRW, 2026-09-09](https://www.hrw.org/news/2026/09/09/rising-tigray-tensions-test-african-union)) ⟨daily 2026-09-09⟩
+
 ## 2026-08-06 — The Sherarina clash ran about 11 hours and stopped; outside analysis, not confirmed reporting, names an Eritrea/Sudan angle behind it
 
 - **The fighting logged here 08-04 (Ethiopia "repelled a Sudan-originated incursion" at Sherarina) ran roughly 6am-5pm on 08-01 and had stopped by 08-02**, with no confirmed resumption through 08-06. Regional press describes the result as "calm remains fragile," not a resolution — a TPLF source said fighting was "slowing down" but gave no casualty figures.

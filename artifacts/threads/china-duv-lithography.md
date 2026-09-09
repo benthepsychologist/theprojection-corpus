@@ -21,6 +21,10 @@ export-control policy re-prices on it.
   ledger and a clean falsification test.
 -->
 
+## 2026-09-09 — Second outlet corroborates the DUV-stockpile report and adds a new framing: a servicing ban, not a further export ban, is the remaining lever
+
+- ⚠️ **TechTimes corroborates yesterday's single-sourced report that CXMT and YMTC have stockpiled roughly three years of ASML DUV tools, and adds a new policy framing: since China's DUV pre-buy is largely complete, US leverage now rests on blocking maintenance and servicing of already-delivered tools, not on further new export bans.** Still hardware-trade-press-only — no primary customs or company data locates the underlying stockpile claim itself, so this stays reported rather than established, now with two sources rather than one. ([TechTimes](https://www.techtimes.com/articles/327083)) ⟨daily 2026-09-09⟩
+
 ## 2026-09-08 — CXMT and YMTC reported stockpiling three years of ASML DUV tools ahead of anticipated export limits
 
 - ⚠️ **CXMT and YMTC are reported to be stockpiling roughly three years' worth of ASML DUV lithography tools ahead of anticipated export limits.** Single-sourced through two hardware outlets; the underlying report was not located, so this is recorded as reported, not established. It reads as the same pre-buy behaviour seen before the 2023 controls — buying imported tools now rather than waiting on the homegrown tool this thread's DELIVERY test tracks. ⚠️ No source link located for this item; recorded from the digest text alone. ⟨daily 2026-09-08⟩

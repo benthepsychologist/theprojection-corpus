@@ -13,6 +13,10 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-09-09 — CISA, NSA and FBI jointly name six Chinese AI companies in a formal distillation advisory
+
+- **CISA, the NSA and the FBI published a joint advisory (AA26-251A) naming DeepSeek, Moonshot AI, Alibaba, MiniMax, StepFun and Z.AI as running "industrial-scale," "aggressive, malicious, and targeted" knowledge-distillation campaigns against Claude, GPT, Gemini and Grok since late 2024, via APIs, cloud resellers and proxies, "likely with Chinese government awareness."** This is the first formal US government attribution on the distillation question this thread tracks — escalating from Dario Amodei's informal June accusation against Moonshot specifically to a six-company federal naming that covers this thread's own entity list (`zhipu-ai`, `moonshot-ai`, `alibaba-qwen`, `deepseek`) in full. China's foreign ministry (Mao Ning) called it "unfounded" the same day. AI governance is separately reported on the agenda for an expected Trump-Xi summit "later this month," alongside the already-logged `us-china-ai-safety-talks-mid-sept` expectation. ([CISA](https://www.cisa.gov/news-events/cybersecurity-advisories/aa26-251a), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-09/us-says-alibaba-deepseek-have-systematically-siphoned-ai-models), NBC News, The Register, Washington Times) ⟨daily 2026-09-09⟩
+
 ## 2026-09-08 — China imposes anti-dumping deposits on Japanese dichlorosilane; Japan protests
 
 - **China imposed anti-dumping deposits of 99.2% and 80.8% on dichlorosilane imported from Japan, and Japan protested formally.** Dichlorosilane is an upstream chemical used in depositing silicon films — a real input to fabs, not a symbolic target, and the kind of chemical-supply-chain action this thread's chips/models/capital arc had not previously tracked. (SCMP, AP, Nikkei Asia — no direct links located) ⟨daily 2026-09-08⟩

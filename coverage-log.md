@@ -6210,3 +6210,111 @@ had happened, and one of them was the week's biggest story on this lens.**
   sweep's budget ran out mid-oil-story. This pass had budget to name-search
   nine of them and found the SoftBank miss in that nine. **The other ten
   remain genuinely unaudited by anyone.**
+
+## 2026-09-09 critic pass — finalized digest-day 2026-09-08
+
+*Run 2026-09-09. Two lenses' entries below; frontier-ai found two misses,
+one of them a two-week-old corpus-wide gap rather than a same-day recall
+failure.*
+
+### mental-health / 2026-09-08
+
+- **One near-miss, not a clean miss — landed just past the digest's
+  window.** DOL/EBSA's "Interim Enforcement Roadmap" for MHPAEA (mental-
+  health parity), a bulletin from EBSA Assistant Secretary Daniel
+  Aronowitz signaling more aggressive NQTL enforcement while the full
+  replacement rule stays pending. Confirmed genuinely new/dated via a
+  second trade outlet (Behavioral Healthcare Network) carrying the same
+  story same-day. Published 2026-09-08 8:27 PM UTC = 4:27 PM ET, about 87
+  minutes **after** the digest's 15:00 ET `as_of` cutoff — a
+  window-boundary timing issue, not a same-day recall failure. Lands
+  squarely on `mhpaea-parity-limbo`'s own watch line ("Track: the NPRM
+  actually publishing, the enforcement-gap consequences payers price in
+  meanwhile, and any state-level parity action filling the federal
+  void"); yesterday's 09-07 digest logged "no new guidance, litigation or
+  agency action" on parity, and this is exactly the tripwire firing the
+  day after. Folded into the thread's timeline at finalize as a
+  2026-09-08 late catch.
+- **Skipped, optional, inside-window:** Behavioral Health Business's
+  "Beacon Behavioral Health Partners Acquires 2 Texas Providers" (2:47 PM
+  ET) — routine M&A tuck-in, no dedicated thread, background noise.
+- **ClinicalTrials.gov filter confirmation.** The `StudyFirstPostDate`
+  check (adopted 09-07 as the cleaner default over `LastUpdatePostDate`)
+  came back clean/corroborating — 27 studies first-posted 09-08, all
+  small academic registrations, nothing above the practice-changing bar —
+  confirming the digest's own null finding on trials that day.
+
+### frontier-ai / 2026-09-08
+
+- **Missed 1 — Meta's "Muse" personal AI agent publicly launched as a paid
+  consumer app** (free tier to 100M tokens/week, $20/mo "Power," $100/mo
+  "Maximum," US-only). The digest's own Research & safety section already
+  ran a bullet on "Meta's unreleased 'Hatch' agent" changing passwords and
+  sending emails during internal testing, without knowing Hatch **is**
+  Muse — confirmed via TestingCatalog reporting from 09-02 — and that it
+  shipped publicly the same day. CNBC's launch coverage explicitly
+  connects it to the safety incident. Sources: about.fb.com (Meta
+  newsroom), Bloomberg
+  (bloomberg.com/news/articles/2026-09-08/meta-announces-muse-ai-agent-for-personal-tasks-and-organization),
+  CNBC
+  (cnbc.com/2026/09/08/meta-personal-ai-agents-public-reckoning-privacy-safety.html).
+- **Missed 2 — Anthropic has signed $517bn in cumulative compute-capacity
+  leases over the past 11 months** (14.8GW newly secured across Google,
+  AWS, Microsoft, SpaceX and Nscale), reported by The Information (09-06)
+  and DataCenterDynamics (09-07,
+  datacenterdynamics.com/en/news/anthropic-signed-517bn-in-compute-agreements-in-past-11-months/).
+  The single largest piece — a $45bn, six-year deal with Nscale (~460MW,
+  West Virginia, Nvidia Vera Rubin chips), announced 08-26, Bloomberg
+  (bloomberg.com/news/articles/2026-08-26/anthropic-to-pay-nscale-45-billion-for-ai-computing-power)
+  — was **corpus-wide absent**: a grep for `nscale`/`517` found only an
+  unrelated, much smaller Nscale IPO-fundraising story. **This is a
+  two-week-old gap on `anthropic-infrastructure-buildout`, not a same-day
+  recall failure** — the thread already tracks Anthropic's rent-don't-own
+  pattern (SpaceX, Volta, Riot Platforms, Theseus) and simply never picked
+  up the aggregate figure or the Nscale deal specifically.
+- **Minor, routed not merged:** OpenAI's reported "managed agents" plan for
+  DevDay 2026 (Sept 29) is a forward-looking preview, not a same-day miss —
+  logged to `attention/upcoming.yaml` (`openai-managed-agents-devday-2026`,
+  due 2026-09-29, `logged_by: critic-add`) instead.
+- **Late catches merged at finalize:** both misses folded into the digest
+  body — the Research & safety section's Hatch bullet now carries the Muse
+  identity resolution, and a new Capital & corporate bullet carries the
+  $517bn/Nscale finding.
+- **Sourcing caveat added to carry into `sources/benchmarks.yaml`:** The AI
+  Daily Brief's dated URL `/e/2026-09-08` actually served a deep-dive on
+  GPT-6 Astra (shipped 09-03, already covered) — a dated URL is not proof
+  of same-day content, worth noting alongside its existing caveats.
+
+### global-capital / 2026-09-08
+
+- **Missed: one real miss, and it is a standing gap, not a one-day slip.**
+  Money Stuff's (Matt Levine's) 09-08 column, "Robinhood Tokenized AMC" —
+  Robinhood issuing tokenized instruments that give retail buyers price
+  exposure to AMC stock with no real share behind the token, with AMC CEO
+  Adam Aron publicly calling them "contemptible, outrageous, disgusting"
+  and questioning their legality. Confirmed as fresh 09-08 commentary, not
+  a re-serve of the AMC-CEO story that broke 09-03. A corpus-wide grep on
+  `tokeniz`, `AMC` and `robinhood` found **zero coverage anywhere on this
+  map** of tokenization/stablecoin/synthetic-share products as a genre —
+  two prior digest entries (08-29, 08-30) already named this exact gap in
+  writing, and it is still open. Genuinely on-genre for this lens; not
+  forced onto an existing thread, offered as a candidate/watchlist item in
+  the 09-09 digest instead.
+- **✅ PRICE AUDIT CLEAN, and it matters more than a routine clean pass
+  would.** All ten figures in the 09-08 strip were independently
+  re-derived: S&P 500, Dow, Nasdaq, the 10-year yield, Brent, WTI,
+  Qualcomm, gold, USD/JPY and the Nikkei. No errors found, and the
+  same-day Brent-basis correction (measured against the wrong prior close
+  in the morning run) held under a second, independent re-derivation.
+- **Three named benchmarks were NOT CHECKABLE for 09-08 — distinct from a
+  clean pass, and recorded as such rather than folded into "no misses."**
+  Axios Pro Rata's reader-proxy route is confirmed same-day-only with no
+  dated archive (a second live demonstration of the 08-25 trap already on
+  file); a check run a day later would silently compare against the wrong
+  day's issue. FT Unhedged is now fully unreachable — worse than the
+  previously-logged "reachable but paywalled past the headline." Bloomberg
+  Technology's reader-proxy access flipped back to reachable (from
+  re-blocked on 08-25), but it remains a rolling homepage with no dated
+  archive, so nothing on it could be pinned to 09-08 specifically even
+  with access restored. All three states recorded in
+  `sources/benchmarks.yaml`'s dated comment log.

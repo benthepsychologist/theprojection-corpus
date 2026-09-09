@@ -12,6 +12,10 @@ opened: 2026-08-25
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.
 
+## 2026-09-09 — The first operation at the tripled size lands, and yields rise on the announcement rather than fall
+
+- **Treasury tripled its long-bond buyback to up to $6bn per operation in the 10-20yr and 20-30yr sectors, effective today — the program's first actual operation at the expanded ceiling, and larger than the "at least double" ($4bn) Treasury had previously signaled — and long yields rose on the news rather than falling.** The 10-year hit an intraday high of 4.812%, its highest since October 2023, before easing to close near 4.786%; long yields rose as much as 5bp on the announcement itself before easing back. Against this thread's own core question — whether the cash cushion can suppress long-end yields against the data — today's first real operation at the new size is a point of evidence running the other way: the market read a bigger buyback as a signal of fragility, not relief. Per Treasury's own release, the program runs "for the remainder of this refunding quarter, through 2026-11-04." ([Treasury](https://home.treasury.gov/news/press-releases/sb0607), CNBC) ⟨daily 2026-09-09⟩
+
 ## 2026-09-08 — The 10-year yield reaches 4.81%, its highest since October 2023
 
 - **The US 10-year Treasury yield rose to 4.81% intraday, its highest print since October 2023**, as traders returned from the long weekend into higher oil, a soft NFIB small-business survey and an unresolved Fed path ahead of the 09-16 FOMC. Read against this thread: the long end is selling off while Treasury's yield-suppression campaign is live, and it is doing so on a day the equity market fell. ([TradingEconomics](https://tradingeconomics.com/united-states/government-bond-yield)) ⟨daily 2026-09-08⟩
