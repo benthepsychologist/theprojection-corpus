@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-10 — The bridge-loan repayment gets its funding mechanism: a $10-20bn junk-bond roadshow via Citigroup
+
+- **SoftBank is running a $10-20bn junk-bond roadshow from 09-14 to 09-17 out of Citigroup in New York — the funding mechanism behind the $25.9bn OpenAI-bridge-loan repayment this thread already has on record for 2026-09-15.** Read against this thread's collateral-correlation watch: retiring the loan releases the OpenAI stake from pledge while unsecured bondholders take on the risk instead, loosening rather than tightening the "everything collateralizes everything else" knot. ([Reuters](https://www.reuters.com/markets/deals/softbank-junk-bond-roadshow-openai-bridge-2026-09-10/)) ⟨daily 2026-09-10⟩
+
 ## 2026-09-09 — SoftBank moves to repay its $40bn OpenAI bridge loan six months early, funded by fresh bond issuance
 
 - **SoftBank will repay the $25.9bn outstanding balance on its $40bn OpenAI bridge loan on 2026-09-15, six months ahead of the facility's March 2027 maturity, funded by roughly $25bn already raised across bond markets this year plus a planned $10-20bn high-yield bond sale as early as mid-September.** Bloomberg reported this 09-09; the article body itself 403'd on direct fetch and was corroborated via search-indexed excerpts and independent reprints rather than the primary text. Read against this thread's own framing — "everything collateralizes everything else — the empire is one correlated bet on AI credit staying open" — retiring a collateralized bridge loan early by issuing unsecured bonds is evidence the unsecured-credit window is still open at size, which loosens that correlation rather than tightening it. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-09/softbank-to-repay-40-billion-bridge-loan-for-openai-stake)) ⟨daily 2026-09-10⟩

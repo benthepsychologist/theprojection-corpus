@@ -3277,7 +3277,7 @@ expectations:
     logged_by: curate-add
     status: pending
 
-  - id: moonshot-hk-ipo-filing
+  - id: moonshot-hk-ipo-public-filing
     claim: "Moonshot AI's confidential ~$3bn Hong Kong IPO filing becomes public, and/or the exploratory Shanghai STAR Market second listing is confirmed"
     due: 2026-12-31
     due_precision: month
@@ -3293,6 +3293,45 @@ expectations:
       inherits is whether being named by name in the 09-09 CISA/NSA/FBI
       distillation advisory shows up in the listing terms or investor
       appetite.
+    logged: 2026-09-10
+    logged_by: curate-add
+    status: pending
+
+  - id: openai-gsa-onegov-transition-1001
+    claim: "OpenAI's $1-per-agency-per-year federal ChatGPT Enterprise deal expires 2026-09-30 and is replaced by a 27-month usage-based OneGov agreement at roughly 50% off standard rates, effective 2026-10-01 and extended to state, local and tribal government"
+    due: 2026-10-01
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: ['openai']
+    source: https://www.nextgov.com/acquisition/2026/09/gsa-unveils-new-token-based-onegov-discount-openai/415908/
+    confidence: confirmed
+    what_confirms: >
+      the new agreement actually taking effect on 10-01, and any published
+      rate card. The reason this is worth a ledger entry rather than just a
+      digest bullet: the $1 pilot made federal AI use free at the point of
+      consumption, so nothing about it was budgeted. Metered pricing is the
+      first moment agencies have to price their own usage, and the interesting
+      outcome is whether consumption falls when it stops being free.
+    logged: 2026-09-10
+    logged_by: curate-add
+    status: pending
+
+  - id: softbank-openai-bridge-bond-pricing-0917
+    claim: "SoftBank prices a $10-20bn junk-bond issue, roadshown 09-14 to 09-17 out of Citigroup in New York, to fund the early payoff of the $25.9bn balance of its $40bn OpenAI-stake bridge loan"
+    due: 2026-09-17
+    due_precision: day
+    thread: softbank-all-in
+    entities: ['softbank', 'openai']
+    source: https://www.reuters.com/markets/deals/softbank-junk-bond-roadshow-openai-bridge-2026-09-10/
+    confidence: reported
+    what_confirms: >
+      priced terms — size, coupon and tenor. This is the funding mechanism for
+      `softbank-openai-bridge-matures` (due 09-15) rather than a separate
+      event, and the two should be read together: the payoff removes the
+      OpenAI stake as pledged collateral and moves the risk to unsecured
+      bondholders. A failed or repriced deal would be the informative outcome,
+      because it would mean the market declined to take that swap at the
+      offered price.
     logged: 2026-09-10
     logged_by: curate-add
     status: pending

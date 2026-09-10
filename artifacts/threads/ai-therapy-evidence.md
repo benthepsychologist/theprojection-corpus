@@ -16,6 +16,13 @@ chatbot improves clinical outcomes — vs. the promotional framing. Safety
 evaluation maturing into a real subfield: VERA-MH benchmark, RAND's
 intermediate-risk failures, EmoAgent.
 
+## 2026-09-10 — A head-to-head trial of two AI-delivered psychotherapies surfaces in *Internet Interventions*, date unconfirmed
+
+⚠️ **Caught from the journal's RSS feed at 14:05Z today — a table-of-contents refresh is not a publication date, and the article's own date has not been confirmed. Treat this as a catch requiring date confirmation, not as a dated development.**
+
+- **A randomised comparison of two AI-delivered psychotherapies — "Anna vs. Judith: A randomized comparison of AI-delivered psychodynamic and cognitive behavioral therapies for social anxiety disorder" — appeared in *Internet Interventions*.** Nearly all AI-therapy evidence this thread has tracked so far compares an AI arm against waitlist or treatment-as-usual, which only answers "better than nothing"; a comparative-efficacy trial between two AI modalities instead asks whether the therapeutic model inside the chatbot changes the outcome, or whether the delivery mechanism dominates regardless of model. ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S221478292600059X)) ⟨daily 2026-09-10⟩
+- **A companion paper in the same issue validates the AiTAPI scale — the AI mental health Therapy Attitude, Perception, and Intention Scale.** ([ScienceDirect](https://www.sciencedirect.com/science/article/pii/S221478292600093X)) ⟨daily 2026-09-10⟩
+
 ## 2026-09-02 — A 10-study meta-analysis finds no significant overall difference in patient acceptance between AI-delivered and conventional psychotherapy
 
 ⚠️ **This predates the W1 window by about a day and is not yet on the thread** — checked directly, confirmed absent.

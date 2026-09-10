@@ -15,6 +15,10 @@ confirmation) or CDS move; whether Oracle's RPO-to-revenue conversion
 rate ($76.6B guided vs $67B delivered in FY26) holds; any named
 counterparty breakdown of the OpenAI-linked RPO slice.
 
+## 2026-09-10 — Oracle trades down 3% into tonight's Q1 FY2027 print, options pricing an 11% swing, as Guggenheim flags a $40bn FY27 funding gap
+
+- **Oracle traded down about 3% to $157.43 ahead of its Fiscal Q1 2027 results, due after today's close on a 5:00pm ET call — results had not landed as of this window closing — with options pricing an 11% (about $18/share) move and calls bid richer than puts.** Guggenheim flagged a $40bn fiscal-2027 funding requirement for the AI buildout, credit-default swaps at record highs, reported delays at some AI data-center sites, and backlog concentration in a single AI-lab customer. ([24/7 Wall St.](https://247wallst.com/investing/2026/09/10/coreweave-sinks-5-despite-burry-pulling-in-his-ai-short-oracle-eases-into-earnings-cloudflare-holds-steady/)) ⟨daily 2026-09-10⟩
+
 ## 2026-09-02 — Oracle's own investor-relations page puts Q1 FY2027 earnings on 09-10, not the 09-14 this map has on record
 
 - **Oracle's investor-relations press release, datelined "AUSTIN, Texas, Sept. 2, 2026," states the company "will release its first quarter fiscal year 2027 results... Thursday, September 10th, after the close of the market," with the conference call at 4:00pm Central (5:00pm ET).** This corrects the 09-14 date this thread's watch line and `attention/upcoming.yaml`'s `oracle-q1-fy27-earnings` entry (due 2026-09-14, sourced to an earlier stocktitan.net report) currently carry. Multiple outlets independently confirm 09-10 (Pluang, StockTitan's own more recent piece, Moomoo). This is a date correction only — no results exist yet — but it moves the print six days earlier than this map expects it, meaning the FY27 capex step-up and reported OpenAI shortfall this thread is tracking will show up nearly a week sooner than currently logged.

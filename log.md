@@ -9539,3 +9539,150 @@ resignation, or Christiano's on-record dissent. Three independent sweeps
 converged on this gap. (2) The OpenAI Navier-Stokes claim and its
 authorship dispute — simultaneously a capability claim and a
 research-misconduct allegation, with a home for neither.
+
+---
+
+## 2026-09-10 15:00 ET — `/daily` (afternoon extension of the 10:00 run)
+
+**The day in one line:** the war's inflation repricing stopped being a market
+inference and became central-bank action — the ECB hiked a quarter point to
+2.5% naming the Iran war, US August PPI printed 5.4% year-on-year — while
+Anthropic had the heaviest single disclosure day any lab has had, and the
+run's own slowest collector lane turned out to hold four stories no sweep
+found.
+
+**Shape of the run.** 09-10 stays `building`/`coverage: pending` — correct, the
+digest-day does not close until 05:00 ET tomorrow. All four lens digests plus
+the front were extended in place rather than rewritten, so the 10:00 bold leads
+and their interpretation keys survive.
+
+### What the run actually produced
+
+- **Seven collector lanes relaunched**, plus seven subject sweeps (AI labs,
+  infra/chips/power, capital, mental health, world, wire backstop, and a
+  main-session buffer triage).
+- **13 thread timelines** written across three dispatched agents with disjoint
+  write scopes.
+- **Two interpretations** added (ECB hike, PPI), both validator-clean.
+- **Two expectations logged**: `openai-gsa-onegov-transition-1001` (10-01),
+  `softbank-openai-bridge-bond-pricing-0917` (09-17).
+- **Six actor synthesis entries refreshed**: anthropic, alibaba-qwen, openai,
+  softbank, coreweave, oracle.
+- **Published**: 105 threads, 73 entities, 3 beat pages, 753 claims, **10
+  interpretation pages** (up from 8), 1,222 stories, 122 map pages.
+
+### 🔴 Errors found and fixed in this map's own record
+
+1. **The 10:00 front digest said the Fed decision was "eleven days" away. It is
+   six** (FOMC 09-16). That sentence sits in the first throughline paragraph,
+   which is the paragraph that becomes the public site gist. Fixed.
+2. **`2026-09-08-front.md` was still `status: building`** while all four of its
+   lens digests had been `final`/`coverage: done` for two days — a complete
+   383-line digest that never got flipped. Flipped.
+3. **A duplicate expectation id.** The 10:00 run logged a new Moonshot listing
+   claim under `moonshot-hk-ipo-filing`, an id already held by an entry marked
+   `hit`. Two ledger entries sharing a key collide in anything that looks them
+   up by id. The new one is now `moonshot-hk-ipo-public-filing`.
+4. **An invalid entity tag.** The Brent bullet carried `e=brent`; `brent` is not
+   a watchlist entity, so it would orphan rather than resolve. Tag removed.
+   **Open question for Ben: should the oil benchmark be an entity at all?**
+   Every commodity reference on this lens has the same problem.
+5. **An incomplete record of Anthropic's July disclosure.** This map recorded it
+   as "involving Opus 4.7 and an internal research model." Anthropic's own
+   2026-07-30 post names **three** models — Opus 4.7, **Mythos 5**, and an
+   internal research test model. Mythos 5 was the omitted one, and it is the
+   model in today's 1,022-page transcript. Corrected in the timeline.
+
+### ⚠️ The lesson of this run — a "dead" lane was never dead
+
+`google_news_rss` wrote **8,620 rows, 2,564 of them inside this window** — but
+about twenty minutes after launch, printing **no output line whatsoever** until
+it finished, which was after every sweep agent had already reported. **The last
+two runs recorded this lane as writing nothing. That was wrong.** It is slow and
+silent, not dead, and two consecutive runs drew a conclusion from an absence of
+output rather than from checking the file.
+
+Reading that buffer afterwards produced four in-window stories **no sweep
+found**: the **DOJ investigating Nvidia's deal with Groq**, an **Anthropic
+whistleblower giving up his equity to leave**, **US lawmakers calling for new AI
+rules** the same day as the disclosure that prompted them, and a **Treasury
+buyback taking less than expected and pushing yields up** — that last one
+speaking directly to `treasury-long-end-intervention`, the thread that exists
+to watch exactly it. Also: the **30-year at 5.34%, its highest since 2007**,
+where the 10:00 strip said "near a 52-week high" and understated it by nearly
+two decades.
+
+📋 **A real pipeline gap this exposes:** readout packs are built before the slow
+lane lands, so late-buffer catches **cannot reach the site briefings in the same
+run** — the URL-provenance validator correctly refuses a link that is not in the
+pack. It refused mine. The stories are in the digests; the briefings do not
+carry them.
+
+### ✅ The cross-sweep contradiction detector earned its keep twice
+
+- **The ECB hike — the single biggest story in the global-capital lens today —
+  was missed by both the 10:00 run and this afternoon's dedicated markets
+  sweep.** The unassigned wire backstop found it. So did August PPI. The lane
+  that reads wires with no reference to existing threads is the only reason
+  either is in today's record.
+- **A stale quote source was caught by the level-vs-percent cross-check.** A
+  TradingEconomics snippet reported Brent flat at $101.25 and gold *up* 0.18%;
+  two independent live sources agreed with each other exactly on level, percent
+  and prior close, and contradicted it. Discarded. This is the check a
+  transposed Brent settle survived four days without earlier in this record.
+
+### Verified numbers, mid-afternoon
+
+**Brent** $106.83 (+5.55%) · **WTI** $101.57 (+5.75%) · **US 10-year** 4.948%
+(session high 4.952%) · **US 30-year** 5.34%, highest since 2007 · **Gold**
+$4,372.70 (−1.97%, −$88 on the session) · **S&P 500** 7,588.26 · **Nasdaq**
+26,084.23 · **VIX** 17.89 (+13.8%) · **Fed hike odds 09-16** 63%
+
+**Oracle had NOT reported** when this window closed — the call is 5:00pm ET.
+`oracle-q1-fy27-earnings` stays `pending`; the next run resolves it.
+
+### ⛔ Standing blockers, all needing Ben
+
+- **`THEPROJECTION_DEPLOY_HOOK` unset — fifth consecutive run.** The site repo is
+  current and pushed; the live Cloudflare build is not rebuilt.
+  `THEPROJECTION_SITE_DIR` is also unset, so `publish` needs `--site-dir` passed
+  by hand.
+- **`bq`/BigQuery auth expired.** `attention/world-news.yaml` frozen at
+  `generated: 2026-09-03`, eight days stale, so the mechanical thread-candidate
+  pool contributed nothing again. A session cannot run `gcloud auth login`.
+- **`curl` refused session-wide** — worked around with `python3 urllib`, which
+  has to be briefed into every agent by hand.
+- **No kokoro audio venv** — audio briefing skipped.
+- **`openalex` 429s** on essentially every term (220 skips this run);
+  **`gdelt` caps at 8 of 587 terms**.
+
+### 💡 Thread candidates — flagged, not opened
+
+Carried from the morning: **lab-internal safety dissent at Anthropic** (now
+stronger — the whistleblower equity story is the fourth instance in a week) and
+the **OpenAI Navier-Stokes authorship dispute**. New this afternoon:
+
+1. **The Congo Ebola outbreak — nearly 4,000 cases, 1,800+ deaths, the
+   second-largest on record, running since May, with zero presence anywhere in
+   this map.** It surfaced only because the backstop lane reads wires without
+   reference to existing threads. Whether it belongs is Ben's call; that it went
+   unseen for four months is a finding about coverage regardless of the answer.
+2. **AI-boom spillover into municipal politics** — San Francisco declared a
+   citywide "rent emergency" naming AI hiring, rents +26% y/y. Same shape as the
+   Universal Music/ElevenLabs licensing story: a real AI consequence with no lens
+   that owns it.
+
+### 📋 Smaller flags
+
+- **Four interpretation entries corpus-wide use `confidence: probable`, which
+  the validator does not accept** (allowed: `speculative`, `plausible`,
+  `well-supported`). Five interp files carry it. Today's two new entries use
+  valid values; the existing ones were left alone rather than mass-rewritten,
+  because that changes published pages.
+- **Two thread files carry no YAML frontmatter at all** —
+  `israel-lebanon-escalation.md` and `neuromodulation-evidence.md` use a prose
+  header. Both publish without error, so it is a house-style inconsistency, but
+  anything reading thread frontmatter programmatically will fail on exactly
+  these two.
+- **Flash: none.** No event today would lead a general news front page. The
+  world sweep assessed it explicitly and agreed.
