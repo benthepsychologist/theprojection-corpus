@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-09
-status: building
+status: final
 window_start: 2026-09-09T05:00:00-04:00
-as_of: 2026-09-09T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-10T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-09
@@ -54,6 +54,21 @@ on one day.
   NBC News, The Register, Washington Times)
   <!-- k: t=kimi-distillation-fight,china-stack-independence e=moonshot-ai axis=policy sev=major -->
 
+- **Paul Christiano — the alignment researcher who founded the Alignment
+  Research Center — joined the OpenAI Foundation board and was seated on
+  its Safety and Security Committee, while on record that "I do not think
+  that the AI industry in general, including OpenAI, is currently on track
+  to reduce this risk."** He simultaneously advises the US government's
+  Center for AI Standards and Innovation, which evaluates frontier models
+  pre-release, and has agreed to recuse himself from OpenAI-specific CAISI
+  matters — the same government/industry entanglement this map already
+  tracks through the "Gold Eagle" clearinghouse and the SRO proposal, now
+  running through a single person. **Evening catch on the 09-10 finalize
+  pass.**
+  ([OpenAI](https://openai.com/index/paul-christiano-joins-openai-foundation-board),
+  [TechCrunch](https://techcrunch.com/2026/09/09/openai-adds-a-prominent-ai-doomer-to-its-board-of-directors/))
+  <!-- k: t=frontier-model-gov-review-precedent e=openai axis=policy-governance sev=major -->
+
 ## China
 
 - **A second outlet corroborates yesterday's single-sourced report that
@@ -66,6 +81,18 @@ on one day.
   ([TechTimes](https://www.techtimes.com/articles/327083))
   <!-- k: t=china-duv-lithography e=asml axis=supply -->
 
+- **China's Commerce Ministry said that "if the U.S. suppresses Chinese AI
+  companies under the pretext of targeting distillation, China will take
+  resolute countermeasures" — a second, harder ministry response to the
+  CISA/NSA/FBI advisory on the same day as the Foreign Ministry's
+  "unfounded" line.** Two separate arms of the Chinese government answering
+  one advisory within a day is the new information: Foreign Affairs
+  contested whether the accusation is true, Commerce threatened
+  retaliation. No specific trade or entity-list action was named.
+  **Evening catch on the 09-10 finalize pass.**
+  ([Al Jazeera](https://www.aljazeera.com/economy/2026/9/9/china-slams-us-claims-of-industrial-scale-ai-theft))
+  <!-- k: t=china-stack-independence,kimi-distillation-fight e=china axis=china -->
+
 ## Capital & corporate
 
 - **OpenAI is deepening its chip R&D partnership with Samsung, extending
@@ -75,6 +102,33 @@ on one day.
   ([sammyfans](https://sammyfans.com/2026/09/09/openai-deepens-samsung-partnership-for-next-gen-ai-chips),
   [Quartz](https://qz.com/openai-samsung-chips-enterprise-ai-partnership-090926))
   <!-- k: t=asml e=samsung axis=capital -->
+
+- **OpenAI shipped ChatGPT Images 2.5 — sharper detail, faster editing,
+  roughly 50% lower latency, new Sketch and Templates features, and two new
+  API models ("Flare" and "Sunburst").** A straightforward product ship
+  rather than a thread-critical development, recorded because the recall
+  check is what it is: this led TLDR AI's third slot on 09-09 and the corpus
+  had never once mentioned it. **Caught by the coverage critic on the 09-10
+  finalize pass.** No existing thread is a clean home — `enterprise-agent-
+  product-race` is the nearest fit if it should be folded there rather than
+  left as a standalone product note.
+  ([OpenAI](https://openai.com/index/introducing-chatgpt-images-2-5/),
+  [Axios](https://www.axios.com/2026/09/08/exclusive-hands-on-with-chatgpts-new-image-editor))
+  <!-- k: t=enterprise-agent-product-race e=openai axis=capital -->
+
+- **A class-action lawsuit against Anthropic over Claude Max usage limits —
+  `Kahn v. Anthropic, PBC`, N.D. Cal., No. 3:26-cv-05763 — has been sitting
+  in this map's own buffer since 09-08 and had never reached a digest, a
+  thread or the graph.** ⚠️ **This is a corpus gap, not a 09-09 recall
+  miss, and the mechanism is worth more than the story:** the buffer row is
+  timestamped 2026-09-08T17:36Z (13:36 ET), well inside that day's window,
+  but was tagged only `["Anthropic", "Anthropic copyright lawsuit"]` — so
+  every term-based triage pass since read it as copyright litigation, which
+  the map already covers heavily, and routed straight past a consumer-
+  pricing suit that no thread names. It is the second documented instance
+  of term-grep triage hiding a story that was already collected.
+  **Surfaced by the coverage critic on the 09-10 finalize pass.**
+  <!-- k: t=anthropic-copyright-exposure e=anthropic axis=people-accountability -->
 
 ## People & accountability
 

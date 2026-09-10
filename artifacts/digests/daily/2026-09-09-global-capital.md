@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-09
-status: building
+status: final
 window_start: 2026-09-09T05:00:00-04:00
-as_of: 2026-09-09T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-10T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-09
@@ -118,6 +118,35 @@ lean on debt and outside capital rather than the state's own book.
   remains investor talk, not company-confirmed.
   ([Reuters via CNBC, 09-05](https://www.cnbc.com), Forbes 09-07)
   <!-- k: t=frontier-lab-ipos,anthropic-ipo-timing e=anthropic axis=deals-filings -->
+
+- **SoftBank will repay the $25.9bn outstanding balance on its $40bn
+  OpenAI-stake bridge loan on 2026-09-15, six months ahead of the facility's
+  March 2027 maturity, funding it with roughly $25bn already raised in bond
+  markets this year plus a planned $10-20bn high-yield sale as early as
+  mid-September.** This runs against the direction `softbank-all-in` has
+  been tracking: the thread's thesis is that everything in the empire
+  collateralizes everything else, one correlated bet on AI credit staying
+  open — and swapping a collateralized bridge for unsecured bonds six months
+  early is evidence that window is still open to SoftBank at size, which
+  loosens the correlation rather than tightening it. ⚠️ The Bloomberg article
+  body 403'd on direct fetch; content corroborated via search-indexed
+  excerpts and independent reprints. **Caught by the coverage critic on the
+  09-10 finalize pass — it was absent from the corpus entirely.**
+  ([Bloomberg, 09-09](https://www.bloomberg.com/news/articles/2026-09-09/softbank-to-repay-40-billion-bridge-loan-for-openai-stake))
+  <!-- k: t=softbank-all-in,ai-buildout-debt-risk e=softbank,openai axis=deals-filings -->
+
+- **LIV Golf, the PIF-backed league the fund put more than $5bn into, filed
+  for Chapter 11 bankruptcy, with a BC Partners-led plan that would hand
+  players majority ownership of the reorganized entity.** PIF confirmed in
+  April it was withdrawing support after the 2026 season. Golf is well
+  outside this lens, and the reason it is here is narrow: `pif-ai-buildout`'s
+  watch line asks whether the fund's fiscal squeeze eventually forces a
+  slowdown on the AI side, and PIF walking away from a $5bn+ non-AI holding
+  entirely is corroborating evidence of that same mechanism — read alongside
+  today's HUMAIN outside-investor entry below, which is the AI-side version
+  of it. **Caught by the coverage critic on the 09-10 finalize pass.**
+  ([Axios, 09-08](https://www.axios.com/2026/09/08/liv-golf-bankruptcy-saudi))
+  <!-- k: t=pif-ai-buildout e=pif axis=deals-filings -->
 
 ## Power & lobbying
 

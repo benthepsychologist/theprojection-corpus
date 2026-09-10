@@ -20,6 +20,10 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-09-10 — Correction: OpenAI Korea walks back its own executive's "next-generation chips" comment on the Samsung partnership
+
+- **OpenAI Korea's General Manager Harrison Kim told a Seoul press conference OpenAI and Samsung would do "joint production and research on the next-generation chips," but OpenAI Korea subsequently clarified there was "nothing new to announce on this front."** This is a correction to this thread's 09-09 entry below (Kim's foundry/2nm comment) — the walk-back downgrades that disclosure from a substantive R&D-scope expansion to an unclarified remark the company itself pulled back from. Separately in the same coverage: Samsung and SK hynix have signed letters of intent to supply memory for OpenAI's Stargate project. ([KSL/AP](https://www.ksl.com/article/51622239/openai-says-working-with-samsung-on-next-generation-chips-deepening-cooperation)) ⟨daily 2026-09-10⟩
+
 ## 2026-09-09 — OpenAI deepens its chip R&D partnership with Samsung, extending into foundry/2nm process work
 
 - **OpenAI is deepening its chip R&D partnership with Samsung, extending the collaboration into Samsung's foundry and 2nm process work.** Confirmed by OpenAI Korea GM Harrison Kim at a Seoul press conference; no technical, volume or timeline detail disclosed. Adjacent to this thread's own entity list (Samsung already carries High-NA EUV adoption and the Mistral stake here) rather than a new node in the ASML story itself — routed here for lack of a dedicated Samsung-foundry thread. ([sammyfans](https://sammyfans.com/2026/09/09/openai-deepens-samsung-partnership-for-next-gen-ai-chips), [Quartz](https://qz.com/openai-samsung-chips-enterprise-ai-partnership-090926)) ⟨daily 2026-09-09⟩

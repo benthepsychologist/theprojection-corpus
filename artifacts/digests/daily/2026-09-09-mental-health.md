@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-09
-status: building
+status: final
 window_start: 2026-09-09T05:00:00-04:00
-as_of: 2026-09-09T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-10T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-09
@@ -125,6 +125,31 @@ consistent with how a similar batch was treated on 09-08.
   landing ahead of it this month.
 - Otherwise pending on this lens's threads: `mhpaea-replacement-rule`
   (due 2026-12-31, month precision) — nothing due within the next 7 days.
+
+### Coverage critic — 2026-09-09
+
+- **No misses.** Of the four named benchmarks, STAT Health Tech and Fierce
+  Healthcare were reachable and led with general health-tech rather than
+  mental-health stories (UK AI-in-medicine regulatory recommendations,
+  a study on AI's limits in emergency rooms, revenue-cycle-management
+  deals, Apple Watch, funding rounds) — none of it this lens's subject, so
+  this is a genuine null recall check rather than a clean pass hiding a gap.
+- **Two near-misses, both after the 15:00 ET cutoff and neither
+  mental-health-specific:** Behavioral Health Business's psychiatric-
+  deprescribing-clinic piece (16:38 ET) and its payer-trends investment
+  piece (16:20 ET), plus STAT's UK AI-medicine regulation piece (19:01 ET).
+- **ClinicalTrials.gov: null, and checked.** 161 mental-health-relevant rows
+  first-posted 09-09, all routine academic registrations with no tie to a
+  tracked company or a practice-changing result. Federal Register (6
+  MH-tagged rows) and the literature lane (2 rows) were incidental term
+  matches, not topical.
+- ⚠️ **One benchmark state in this pass was a transport artifact, not a real
+  block.** The critic logged Behavioral Health Business as returning 403 on
+  both its feed and homepage. Re-checked from the main session the same
+  hour using `python3 urllib`, BHB returned **HTTP 200 with a live feed** —
+  the 403 came from the tool the agent fell back to after `curl` was
+  refused by the harness, not from the outlet. Recorded in
+  `sources/benchmarks.yaml`; see this run's collection note.
 
 ## 🔄 Map changes
 

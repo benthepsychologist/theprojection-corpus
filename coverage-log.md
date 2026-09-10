@@ -6318,3 +6318,146 @@ failure.*
   archive, so nothing on it could be pinned to 09-08 specifically even
   with access restored. All three states recorded in
   `sources/benchmarks.yaml`'s dated comment log.
+
+## 2026-09-10 critic pass — finalized digest-day 2026-09-09. Three lenses, three misses, and the pass's most important finding is that most of its own tooling was reading the wrong signal
+
+*Run 2026-09-10 10:00 ET. The recall result is ordinary — two real
+global-capital misses, one frontier-ai miss, a clean null on mental
+health. The methodological result is not, and it retroactively weakens
+every "not reachable" verdict in this section.*
+
+### ⚠️ `curl` was denied session-wide, and every agent silently fell back to the one transport this file documents as blocked
+
+All four dispatched checkers this run — the three coverage critics and
+the wire backstop — had their `curl` calls **refused by the harness
+permission layer**, not by any outlet. None of them could tell the
+difference between "this site blocks me" and "my shell refused to run
+the command," so all four fell back to the **WebFetch tool**, which is
+precisely the transport this file has documented since 2026-08-10 as
+being named on Cloudflare's AI-crawler blocklists and blocked at the
+edge. They then recorded the resulting 403s as benchmark states.
+
+**At least one of those states was wrong.** The mental-health critic
+logged Behavioral Health Business as 403 on both its feed and its
+homepage for 09-09. Re-checked from the main session within the same
+hour via `python3 urllib`, BHB returned **HTTP 200 with a live feed**
+carrying two real 09-09 items. The block was never real.
+
+**The working transport is `python3 urllib`, verified live today**
+against Al Jazeera, Behavioral Health Business and STAT Health Tech, all
+HTTP 200. `curl` is blocked at the harness; urllib is not. This file's
+older notes treat the two as interchangeable ("curl, python urllib, and
+kestrel's own collector UA all verified working") — in this environment
+they are not, and the distinction decides whether a check is real.
+Recorded at the top of `sources/benchmarks.yaml`. **Brief agents with
+urllib explicitly**: naming curl first is what routes them to WebFetch.
+
+**How to read the rest of this section:** any "not reachable" verdict
+below is now a weaker claim than it looks, because the tool that produced
+it was the wrong one. MobiHealthNews is the exception — its feed 403'd
+through urllib too, so that one looks like a genuine fourth escalation on
+a benchmark that has escalated three times already.
+
+### global-capital / 2026-09-09
+
+- **Missed 1 — SoftBank will repay the $25.9bn balance on its $40bn
+  OpenAI-stake bridge loan on 2026-09-15**, six months early against a
+  March 2027 maturity, funded by ~$25bn already raised in bonds this year
+  plus a planned $10-20bn high-yield sale. Bloomberg, 09-09; the article
+  body 403'd on direct fetch and was corroborated through search-indexed
+  excerpts and reprints. **Absent from the corpus entirely** — a grep of
+  `artifacts/` and `attention/` for SoftBank across the 09-08 and 09-09
+  digests returned nothing. This is the second SoftBank miss in three
+  passes, both found by name-searching threads the sweep had run out of
+  budget for. Folded into the 09-09 digest and `softbank-all-in`;
+  `upcoming.yaml`'s `softbank-openai-bridge-matures` moved from
+  2027-03-25 to 2026-09-15 — **a slip in the earlier direction, the first
+  this ledger has recorded.**
+- **Missed 2 — LIV Golf filed for Chapter 11**, the PIF-backed league the
+  fund put $5bn+ into before confirming in April it would withdraw
+  support after the 2026 season (Axios Pro Rata's lead item, 09-08).
+  Adjacent rather than core: it matters only because `pif-ai-buildout`'s
+  watch line asks whether PIF's fiscal squeeze eventually reaches the AI
+  side, and PIF exiting a $5bn+ non-AI holding is corroborating evidence
+  of that mechanism — read against the HUMAIN outside-investor entry the
+  same digest already carried.
+- **Market-number audit: CLEAN.** Brent's $101.44 / +3.6% / $97.92 prior
+  close and the 10-year's 4.812% high into a 4.786% close both reconcile
+  exactly against independent sources. No transposition this time — the
+  discipline added after the four-day Brent error did its job.
+  ⚠️ **One framing detail is unreconciled and was deliberately not
+  resolved:** the 09-09 entry says Brent crossed $100 "for the first time
+  since July"; a second sweep this run described the same move as the
+  first since **May**. The level is not in doubt, only the how-long-since
+  clause. Recorded on `red-sea-oil-shock` as an open check against a
+  dated historical series rather than settled by picking one.
+- **Thread name-search audit: 8 of 23 covered, 15 still unaudited.** The
+  SoftBank miss came out of those eight. The carried-forward backlog from
+  09-07 is therefore still open, and shrinking slower than it accumulates.
+
+### frontier-ai / 2026-09-09
+
+- **Missed — OpenAI shipped ChatGPT Images 2.5** (sharper detail, ~50%
+  lower latency, Sketch and Templates, two new API models "Flare" and
+  "Sunburst"). Led TLDR AI's #3 slot; zero corpus hits. A real product
+  ship rather than a thread-critical development, and there is no clean
+  thread home for it — `enterprise-agent-product-race` is the nearest fit.
+- **Corpus gap, not a recall miss, and the mechanism matters more than
+  the story — `Kahn v. Anthropic, PBC`** (N.D. Cal., 3:26-cv-05763), a
+  class action over Claude Max usage limits. The buffer row is timestamped
+  2026-09-08T17:36Z (13:36 ET), **inside that day's collection window**,
+  but was tagged only `["Anthropic", "Anthropic copyright lawsuit"]`. Every
+  term-based triage pass since read it as copyright litigation — which
+  this map covers heavily — and routed past a consumer-pricing suit no
+  thread names. **This is the second documented case of term-grep triage
+  hiding a story the collectors had already caught**, after the 09-06
+  finding that produced the org-name-search rule. The rule exists; it did
+  not fire here, because the story's own tags pointed at a thread that
+  does cover it.
+- **All four AI benchmarks were reachable** (Rundown, TLDR, Neuron, AI
+  Daily Brief) and their other leads — the Navier-Stokes dispute, Meta
+  Muse, Cognition's $48bn valuation, the Coxon resignation — were already
+  on the map from 09-08 or the 09-09 throughline.
+- **Carried-forward Reuters/AP transport: still unresolved, and now a
+  regression.** AP's reader-proxy route returned 200 last pass and 403
+  this one; Reuters remained blocked. Read that against the curl finding
+  above before treating either as a settled outlet state.
+
+### mental-health / 2026-09-09
+
+- **No misses, and the null is real rather than an artifact of an
+  unreachable benchmark set.** STAT Health Tech and Fierce Healthcare were
+  reachable and led with general health-tech — UK AI-in-medicine
+  regulatory recommendations, a study on AI's limits in emergency rooms,
+  RCM deals, Apple Watch, funding rounds — none of it this lens's
+  subject.
+- **Three near-misses, all after the 15:00 ET cutoff, none
+  mental-health-specific:** BHB's psychiatric-deprescribing piece (16:38
+  ET) and payer-trends piece (16:20 ET), STAT's UK regulation piece
+  (19:01 ET).
+- **Primary lanes null and checked:** 161 mental-health-relevant
+  ClinicalTrials.gov rows first-posted 09-09, all routine academic
+  registrations; Federal Register's 6 MH-tagged rows and the literature
+  lane's 2 were incidental term matches.
+- 📋 **CMS ACCESS-model provider count — still unresolved, and now with a
+  third number.** This pass produced 47 BH-tagged organizations via a
+  tool's own summarization of a ~330-row table, against the source's 17
+  and this map's ~85-of-150+. Correctly **not** adopted — a summarized
+  table read is not a parse. Needs a real parse now that urllib is known
+  to work.
+
+### Carried forward, unresolved
+
+- 📋 **Reuters/AP transport** — regressed this pass (AP 200 → 403), and
+  every prior verdict on it was produced by the wrong tool. Re-test with
+  urllib before concluding anything.
+- 📋 **Bloomberg Technology has no dated archive** — four-plus consecutive
+  passes. Access flips; the archive problem is separate and unfixed. It
+  needs an alternate transport, not another rediscovery.
+- 📋 **Axios Pro Rata is same-day-only** — confirmed a third time. Not
+  checkable for any past day.
+- 📋 **FT Unhedged fully unreachable** — second consecutive pass.
+- 📋 **15 of 23 global-capital threads remain unaudited** by any
+  name-search pass.
+- 📋 **CMS ACCESS-model provider count** — three conflicting numbers, no
+  parse.

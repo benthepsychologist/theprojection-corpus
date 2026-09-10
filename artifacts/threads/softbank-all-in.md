@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-09 — SoftBank moves to repay its $40bn OpenAI bridge loan six months early, funded by fresh bond issuance
+
+- **SoftBank will repay the $25.9bn outstanding balance on its $40bn OpenAI bridge loan on 2026-09-15, six months ahead of the facility's March 2027 maturity, funded by roughly $25bn already raised across bond markets this year plus a planned $10-20bn high-yield bond sale as early as mid-September.** Bloomberg reported this 09-09; the article body itself 403'd on direct fetch and was corroborated via search-indexed excerpts and independent reprints rather than the primary text. Read against this thread's own framing — "everything collateralizes everything else — the empire is one correlated bet on AI credit staying open" — retiring a collateralized bridge loan early by issuing unsecured bonds is evidence the unsecured-credit window is still open at size, which loosens that correlation rather than tightening it. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-09/softbank-to-repay-40-billion-bridge-loan-for-openai-stake)) ⟨daily 2026-09-10⟩
+
 ## 2026-09-07 — SoftBank's Tokyo shares jump 11.2% in a single session, its biggest one-day move since July's limit-up
 
 - **SoftBank's Tokyo-listed shares (9984.T) rose 11.2% in a single session, from Friday's ¥5,590 close to Monday's ¥6,217 close, on returning AI risk appetite across Asia — its largest one-day move since July's limit-up.** Verified directly against the settlement series rather than taken from a headline. Asia traded a full session on 09-07 while US markets were shut for Labor Day, so this was the largest single move on any thread this map tracks that day, and it landed on a lens whose own sweep had reported the day as effectively closed. **This entry is itself a late catch**: the 09-07 global-capital digest had disclosed nineteen threads — this one among them — as unchecked when its sweep hit a hard stop mid-session, and the coverage critic's name-search pass is what found the move afterward, not the original sweep.

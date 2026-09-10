@@ -9446,3 +9446,96 @@ stale. Flagged as a likely engine-side collector/lens-routing bug, not
 something to patch from this repo.
 
 **Committed and pushed.**
+
+## 2026-09-10 10:00 ET — /daily
+
+**The run in one line:** the Gulf war finished repricing oil and started
+repricing the Fed, two AI labs asked to be regulated on the same morning
+they disclosed control failures, and most of this run's own checking tools
+were reading the wrong signal.
+
+**Finalized 2026-09-09** (all four lens digests + front → `status: final`,
+`coverage: done`, `as_of` moved to the digest-day's real 05:00 close). The
+sweep window ran 09-09 15:00 ET → 09-10 10:00 ET, which spans two
+digest-days, so evening-of-09-09 items were folded into 09-09 rather than
+mislabelled as today — the Christiano board appointment and MOFCOM's
+countermeasures threat both landed that way.
+
+**Coverage critics — three misses, one methodological finding that matters
+more.** `curl` is refused session-wide by the harness, so all four
+dispatched checkers silently fell back to WebFetch, the one transport
+`sources/benchmarks.yaml` documents as Cloudflare-blocked, and recorded the
+resulting 403s as benchmark states. At least one was wrong: Behavioral
+Health Business was logged 403 on feed and homepage; re-checked the same
+hour via `python3 urllib` it returned HTTP 200 with a live feed.
+**`python3 urllib` works where curl is blocked** — verified against Al
+Jazeera, BHB and STAT, recorded at the top of `benchmarks.yaml`, and agents
+should be briefed with urllib explicitly rather than curl. The real misses:
+SoftBank repaying its $25.9bn OpenAI bridge six months early (absent from
+the corpus entirely), LIV Golf's Chapter 11 as PIF fiscal-squeeze evidence,
+and OpenAI's ChatGPT Images 2.5. Plus a corpus gap worth more than the
+story — `Kahn v. Anthropic` (Claude Max usage limits) sat in the buffer
+from 09-08 tagged `"Anthropic copyright lawsuit"`, so every term-based
+triage pass read it as copyright and routed past it. Second documented case
+of term-grep triage hiding an already-collected story.
+
+**Data quality: 35 threads had `last_seen` older than their own newest
+timeline entry** — repaired corpus-wide. This matters beyond tidiness: a
+live thread whose `last_seen` looks stale reads as dead to `/week`'s decay
+review, and retiring a thread stops collector coverage rather than just
+display.
+
+**Ledger.** `xiaomi-18-fold-xring-o3-china-launch-0930` → **hit, three
+weeks early**, and it resolves the question the entry existed to ask in the
+useful direction: the constraint was *not* TSMC 3nm allocation to a Chinese
+customer. `softbank-openai-bridge-matures` moved 2027-03-25 → 2026-09-15 —
+**the first slip in the earlier direction this ledger has recorded.** Three
+new: two DOE RFI dates, and `moonshot-hk-ipo-filing` superseding the
+mechanism `moonshot-preipo-round` was tracking.
+
+**Written:** four 09-10 lens digests + front, a global-capital
+interpretation sidecar (2 interpretations, both validating — the oil-into-
+rates transmission and the yields-up-gold-down correlation break), 18
+timeline bullets across 14 threads via three disjoint-scope merge agents,
+four `actor-doing` refreshes (openai, anthropic, softbank, samsung), a
+coverage-log entry.
+
+**Graph fed clean:** 5,010 atoms, 3,227 sources, 8,199 relationships, 1,321
+annotations, 131 extraction passes, all references resolving.
+**Readouts:** 4 packs → 4 briefing agents → `--apply` accepted all 4 →
+`--export` wrote 154. ⚠️ Caught at export: the mental-health `gist` is
+taken from the digest's first throughline sentence, and mine contained
+internal vocabulary ("the sweep") — rewritten and re-exported, because that
+line is public copy on the beat page.
+**Published:** 105 threads, 70 entities, 3 beat pages, 753 claims, 8
+interpretations, 1,211 stories, 122 map pages — committed and pushed to the
+site repo.
+
+⛔ **Standing blockers, all needing Ben.**
+- **`THEPROJECTION_DEPLOY_HOOK` unset** — the site repo is current, the
+  live Cloudflare build is not. Fourth consecutive run.
+- **`bq`/BigQuery auth expired** — `attention/world-news.yaml` frozen at
+  `generated: 2026-09-03`, seven days stale, so the mechanical thread-
+  candidate pool contributed nothing again. A session cannot run
+  `gcloud auth login`.
+- **`curl` refused by the harness** — worked around via urllib, but the
+  workaround has to be briefed into every agent by hand until the
+  permission changes.
+- **No kokoro audio venv** — audio briefing skipped.
+
+📬 **Filed to kestrel-ops** (committed there): the world-news lens is not
+registered in the collector at all (`--lens` accepts only `{ai,
+global-capital, mental-health}`), which **supersedes yesterday's brief**
+claiming GDELT was mislabelling rows — nothing is mislabelled, there is no
+fourth lens to route to. Second item in the same brief: `google_news_rss`
+exits 0 and writes nothing, with no output line, so a dead lane looks
+identical to a quiet news day.
+
+💡 **Two thread candidates for Ben, both flagged rather than opened.**
+(1) Lab-internal safety dissent and Anthropic's own agent-security
+incidents — the map has `openai-agent-security-incident` scoped by name to
+OpenAI, and nothing for Anthropic's four disclosed incidents, the Coxon
+resignation, or Christiano's on-record dissent. Three independent sweeps
+converged on this gap. (2) The OpenAI Navier-Stokes claim and its
+authorship dispute — simultaneously a capability claim and a
+research-misconduct allegation, with a home for neither.

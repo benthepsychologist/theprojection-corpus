@@ -616,8 +616,8 @@ expectations:
     status: pending
 
   - id: softbank-openai-bridge-matures
-    claim: "SoftBank's $40B bridge loan against its OpenAI stake matures (21 new lenders added 07-27)"
-    due: 2027-03-25
+    claim: "SoftBank's $40B bridge loan against its OpenAI stake is extinguished — repayment announced for 2026-09-15, six months ahead of the March 2027 maturity"
+    due: 2026-09-15
     due_precision: day
     thread: softbank-all-in
     entities: [softbank, openai]
@@ -627,6 +627,22 @@ expectations:
     logged: 2026-07-29
     logged_by: curate-add
     status: pending
+    slips: [2027-03-25]   # moved EARLIER, not later — see evidence
+    evidence: |
+      Date moved forward six months, which is the unusual direction for this
+      ledger. Bloomberg reported 2026-09-09 that SoftBank will repay the
+      $25.9bn outstanding balance on 2026-09-15, against a March 2027
+      maturity — funded by roughly $25bn already raised in bond markets this
+      year plus a planned $10-20bn high-yield sale as early as mid-September.
+      `due` moved to 2026-09-15 accordingly and the entry stays `pending`
+      until the repayment is confirmed done rather than announced. What this
+      resolves for `softbank-all-in`: the thread's thesis is that "everything
+      collateralizes everything else," so retiring the OpenAI-stake bridge
+      early is evidence the credit window is still open to SoftBank at
+      size — it swaps a collateralized bridge for unsecured bonds, which
+      loosens the correlation the thread is built on rather than tightening
+      it. Found by the 2026-09-10 global-capital coverage critic, absent from
+      the corpus before then.
 
   - id: apple-cxmt-senate-deadline
     claim: "Apple publicly commits to rejecting memory chips from China's CXMT and YMTC, per a bipartisan Senate deadline"
@@ -791,6 +807,7 @@ expectations:
     what_confirms: "an actual HKEX filing; the $50B figure has no primary confirmation, sits above the $35B Series F, and rides atop the Fable-distillation dispute"
     logged: 2026-08-03
     logged_by: curate-add
+    status: pending
     status: hit
     resolved: 2026-09-03
     note: >
@@ -2097,7 +2114,7 @@ expectations:
       Xiaomi's TSMC-fabbed 3nm Xring/Xuanjie O3 — launch in China
     due: 2026-09-30
     due_precision: month
-    status: pending
+    status: hit
     confidence: reported
     thread: china-stack-independence
     entities: []
@@ -2109,6 +2126,18 @@ expectations:
       it would mean the constraint is TSMC 3nm allocation to a Chinese
       customer rather than Xiaomi's own design readiness, which is the
       distinction this thread cares about.
+    resolved: 2026-09-08
+    evidence: |
+      HIT, and three weeks early. The Xiaomi 18 Fold launched in China on
+      2026-09-07/08 carrying the Xring/Xuanjie O3 — the TSMC-fabbed 3nm
+      part — alongside a 200MP Leica triple camera, beating both its own
+      09-30 target and Samsung's next Fold to market. Reported by GSMArena,
+      Engadget, TechRadar, PhoneArena and SCMP. On the question this entry
+      exists to answer: the constraint was NOT TSMC 3nm allocation to a
+      Chinese customer. Xiaomi got the wafers and shipped ahead of its own
+      stated date, which is evidence against the allocation-squeeze reading
+      and for Xiaomi's design readiness being the only real gate. Caught on
+      the 2026-09-10 sweep; the launch itself predates that run's window.
 
   - id: fda-genai-device-comment-deadline-1019
     claim: >
@@ -3215,4 +3244,55 @@ expectations:
     what_confirms: "the topline readout itself — efficacy on the primary endpoint, and whether the added low-dose arm actually addresses functional unblinding"
     logged: 2026-09-09
     logged_by: curate-add   # multiple trade outlets (BioPharma Dive, Clinical Trials Arena, GeneOnline) give "September 2026" with no exact date
+    status: pending
+
+  - id: doe-bulk-power-rfi-comments-1009
+    claim: "Written comments close on DOE's Request for Information implementing Executive Order 14421, the bulk-power-system national-emergency order"
+    due: 2026-10-09
+    due_precision: day
+    thread: datacenter-power-grid
+    entities: []
+    source: https://www.federalregister.gov/documents/full_text/text/2026/09/09/2026-18370.txt
+    confidence: confirmed   # Federal Register notice, primary source
+    what_confirms: >
+      the docket closing, and — more usefully — who filed. The RFI asks
+      eight questions including how to mitigate foreign equipment ALREADY
+      installed in the grid, which is the expensive one. Utility and
+      hyperscaler comments are the tell for whether the eventual rule bites
+      on existing datacenter interconnects or only new ones.
+    logged: 2026-09-10
+    logged_by: curate-add
+    status: pending
+
+  - id: doe-bulk-power-rfi-webinar-0916
+    claim: "DOE holds its public webinar on the Executive Order 14421 bulk-power-system RFI, 3-4pm ET"
+    due: 2026-09-16
+    due_precision: day
+    thread: datacenter-power-grid
+    entities: []
+    source: https://www.federalregister.gov/documents/full_text/text/2026/09/09/2026-18370.txt
+    confidence: confirmed
+    what_confirms: "the webinar happening, and whether DOE names any Covered Foreign Entities — the order named none and the RFI names none"
+    logged: 2026-09-10
+    logged_by: curate-add
+    status: pending
+
+  - id: moonshot-hk-ipo-filing
+    claim: "Moonshot AI's confidential ~$3bn Hong Kong IPO filing becomes public, and/or the exploratory Shanghai STAR Market second listing is confirmed"
+    due: 2026-12-31
+    due_precision: month
+    thread: kimi-distillation-fight
+    entities: []
+    source: https://www.dealstreetasia.com/stories/moonshot-ai-dual-listing-hong-kong-shanghai-494805
+    confidence: reported
+    what_confirms: >
+      a public HKEX filing. This SUPERSEDES the mechanism tracked by
+      `moonshot-preipo-round` (due 2026-08-31, passed-silent): that entry
+      expected a final private pre-IPO round at ~$50bn; Moonshot appears to
+      have gone straight to a listing instead. The open question this entry
+      inherits is whether being named by name in the 09-09 CISA/NSA/FBI
+      distillation advisory shows up in the listing terms or investor
+      appetite.
+    logged: 2026-09-10
+    logged_by: curate-add
     status: pending
