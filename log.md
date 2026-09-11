@@ -9686,3 +9686,241 @@ the **OpenAI Navier-Stokes authorship dispute**. New this afternoon:
   these two.
 - **Flash: none.** No event today would lead a general news front page. The
   world sweep assessed it explicitly and agreed.
+
+## 2026-09-11 10:00 ET — `/daily`: Oracle proved the AI backlog is contracted and the funding borrowed, the Houthis closed Bab el-Mandeb, and three of the day's biggest bullets never reached the briefing packs because the pack builder truncates by position
+
+**Shape of the run.** Seven deterministic collector lanes fired at run start,
+then seven agentic sweeps (four lenses, an unassigned wire backstop, a
+due-expectations checker, and a main-session buffer/Federal Register pass),
+then three coverage critics, then three timeline writers and four briefing
+agents. Window 2026-09-10 15:00 ET → 2026-09-11 10:00 ET, straddling the
+digest-day boundary, so every finding was tagged to its own day and split
+between the 09-10 finalize and the new 09-11 digests.
+
+### The day
+
+**Global Capital.** Oracle's Q1 FY2027 resolved `oracle-q1-fy27-earnings`
+**hit** on its corrected date: RPO $664bn, up $209bn year over year, $30bn of
+new AI cloud contracts signed in one quarter, capex $28.5bn — against **minus
+$5bn of free cash flow**. That settles `oracle-stargate-bet`'s open question
+(the commitments ARE contracted backlog, not announced intentions) and
+replaces it with a duration question, because the same morning the US 10-year
+touched 4.954% inside a selloff that was global rather than American, with UK
+30-year gilts at their highest since 1998. Lagarde had named AI financing
+needs as a driver of exactly that stress the day before — the first time this
+lens has a central banker stating the channel rather than the map inferring
+it. Two interpretations written on that pair. CPI landed in line and moved
+nothing; Fed hike odds held ~69% into 09-16.
+
+**Frontier AI.** Sam Altman told OpenAI staff the company may deliberately
+slow its most advanced models, and OpenAI separately asked Congress whether
+coordinating an industry-wide slowdown trips the Sherman Act — a different
+instrument from the mandatory-testing regulation it publicly asked for two
+days earlier. Underneath that, Anthropic's threat report turned out to be far
+larger than three separate readings of it had reached (see below).
+
+**Mental Health.** California signed **SB 1119, "Adam's Law"** — the first
+legally-mandated crisis-protocol and independent-audit regime in the US for
+companion chatbots reaching children, named for the teenager whose family is
+separately suing OpenAI. The four other tracked California bills were NOT
+signed and remain enrolled, twenty days from the 09-30 deadline; that
+distinction is the finding, because "Newsom signs chatbot laws" reads as the
+whole slate moving. A Swedish factorial RCT (N=2,477) found unguided internet
+CBT and unguided internet psychodynamic therapy equally effective, found no
+benefit from doubling duration or adding peer forums, and found participants
+completed fewer than half the modules.
+
+**World News.** The Houthis seized Perim Island, completing control of Bab
+el-Mandeb, then announced the strait was "safe for all" except Saudi shipping.
+MBS called Trump twice asking for direct US strikes and was refused. The US
+answer surfaced in the Federal Register instead: **OFAC General Licence DD
+revokes three standing Iran civil-aviation authorizations** — 31 CFR §560.522
+(overflight payments), §560.529 (bunkering and emergency repairs) and Iran GL
+J-1 (civil aircraft on temporary sojourn) — wind-down ending 09-23. GL CC
+discloses a Turkish investment bank blocked under E.O. 13902 on 09-04,
+wind-down 09-19. Both found by a main-session Federal Register pass; a
+corpus-wide grep for every term in them returned zero prior hits.
+
+### ⛔ The run's most important finding is a tooling defect, and it is silent by construction
+
+**Three `sev=major` bullets never reached `readouts --pack`.** The Anthropic
+four-PRC-lab relay disclosure, the report's six weapons-development cases, and
+the coverage critic's seven-harm-areas finding were all in the 09-10 digest,
+all parsed correctly by `parse_digest()` (verified directly: 28 items
+extracted, all three present with `sev` and thread tags intact), and all
+absent from both `--pack lens:ai` and `--pack front`.
+
+**Cause:** `derive_sections()` builds `news` by iteration order and returns
+`news[:60]`. The truncation is positional. It reads `sev` into each record and
+never uses it for ordering. On a busy multi-day window, position 61 onward is
+discarded regardless of magnitude, with nothing on stderr.
+
+**This is the same defect the function's own docstring describes** — the note
+about capping the front pack at 8 having "silently hid the day's biggest
+stories." Raising 8 to 60 moved the cliff rather than fixing the class.
+
+**How it was caught, and why that is not reassuring:** the AI briefing agent
+came back leading with the smaller, one-lab version of the distillation story.
+It had ranked correctly against what it was given. The only reason anyone
+noticed is that the curator had personally written the missing bullets an hour
+earlier and remembered them. **On a run where nobody happens to remember, this
+is invisible.** Filed to `kestrel-ops` (committed) with a suggested fix:
+order by the existing `salience()` before truncating, and warn on stderr when
+it drops, per `parse_digest()`'s own precedent for failing loudly.
+
+**Also fixed in passing, three digest bullets whose bold leads contained
+` — ` inside the bold span** and would have produced degraded titles. Rewritten
+by hand. Noted in the brief only because "rewrite the prose to suit the parser"
+is the wrong direction of accommodation if it turns out to be common.
+
+### Coverage critics — five misses, and one is a reading failure rather than a sweep failure
+
+- ⚠️ **Anthropic's report covers SEVEN harm areas and this map had THREE.**
+  The four missed: a 4,700-persona dating-app fraud network against 25,000
+  real people; a mass-interception platform designed for Mali's national
+  security service; a Russian-state-aligned radio disinformation operation in
+  the Central African Republic; a recruitment operation against Uyghur targets
+  in Syria. **Three separate readers each opened the same document and each
+  stopped at the section they went in looking for.** The lesson is not "sweep
+  harder" — it is that when a primary document IS the day's story, read its
+  own statement of scope first and enumerate the sections.
+- **Andrew Tulloch**, whom Meta reportedly paid up to $1.5bn to rejoin under a
+  year ago, is leaving for Anthropic. No thread owns Meta AI talent economics.
+- **PIF weighing an Electronic Arts / Savvy Games merger** (Axios Pro Rata's
+  lead); **FT Unhedged on Kevin Warsh** — our digest covered the buyback
+  undershoot without once naming its own Fed chair.
+- **Alongside's "Kiwi" chatbot in 200+ schools across 19 states**, ~31,000
+  students — found by a name search, sitting untouched in the raw buffer. The
+  mental-health benchmarks were genuinely quiet; the miss came from the name
+  pass, which is the distinction that matters.
+- ⛔ **Market-number audit NOT clean** — first failure since the four-day Brent
+  transposition. The 09-10 digest prints a +0.089pp 10-year change against a
+  stated 4.845% prior close (4.926 − 4.845 = 0.081), and its afternoon strip
+  cites a *different* prior close, 4.840%, for the same instrument.
+- ✅ **Two long-running items closed.** The "since July vs. since May" Brent
+  flag resolves to **May**. And the thread name-search backlog — 15 of 23
+  global-capital threads unaudited and growing for four passes — is **closed**,
+  all 23 now on record.
+- ⚠️ **Carried forward for a second consecutive pass, unclosed: the 09-09
+  ChatGPT Images 2.5 miss.** Logged with a named home, never folded in. The
+  failure has moved from detection to the hand-off between a critic's report
+  and the next run's edit list.
+
+### Ledger
+
+✅ `oracle-q1-fy27-earnings` → **hit** (from the 8-K, not coverage) ·
+✅ `ca-sb1119-governor-action` → **hit** (from the Governor's release) ·
+🚧 `ratepayer-protection-act-floor-vote-0911` → **slipped** to 09-14 (the
+House's own Bills-This-Week feed; the slip is what the 09-05 logging predicted)
+· ⚠️ `nippon-life-openai-hearing-outcome` → **unresolved, and the tracked date
+looks wrong** — two independent CourtListener checks found nothing supporting
+09-11; one put the last entry at 08-04 resetting the hearing to **09-02**.
+Flagged for correction rather than guessed at.
+
+**Four new:** `ofac-gl-cc-winddown-0919`, `ofac-gl-dd-winddown-0923`,
+`openai-hawley-response-1001` (OpenAI's document production to Hawley's
+subcommittee), and `sf-datacenter-moratorium-vote-0915` — the last logged
+`confidence: rumored` with an explicit caveat, because it arrived as a Google
+News redirect that could not be resolved to a publisher page this run.
+
+**Standing synthesis refreshed** for `openai`, `anthropic`, `oracle`,
+`united-states`.
+
+### The datacenter backlash is now a national pattern, not a local story
+
+Five jurisdictions in one overnight window — Memphis (a $3.2m xAI community
+benefits fund stalled in disbursement), Nashville (NAACP town hall plus Rep.
+Behn's bill), Ypsilanti (a $1.2bn Michigan/Los Alamos centre, a new actor
+class), Iowa (a governor's-race issue), Beaver County PA (Aligned's ~$10bn 2GW
+"Project Phoenix" on a former coal site). A sixth arrived after the cut: San
+Francisco, with Bloomberg running the national framing the same hour.
+Offered as a thread candidate — possibly split into money-promised-versus-
+delivered and siting/policy — rather than opened unilaterally.
+
+### Tooling
+
+- ⛔ **The pack truncation above.** Filed, committed, unfixed.
+- ⛔ **BigQuery, fourth consecutive day.** `attention/world-news.yaml` frozen at
+  `generated: 2026-09-03`, eight days stale. Only an interactive
+  `gcloud auth login` clears it. **This needs Ben.**
+- ⛔ **The `world-news` lens is still unregistered in the collector CLI** —
+  fourth day with zero mechanical input to that lens. Brief already filed
+  2026-09-10.
+- ✅ **The 09-10 transport finding held.** Every AI benchmark and both
+  contested mental-health benchmarks cleared on `python3 urllib`, first try,
+  no proxy needed. `curl` is refused session-wide; WebFetch is Cloudflare-
+  blocked. Briefing agents with urllib explicitly is what makes the difference.
+- ⛔ **MobiHealthNews's block is REAL this time** — urllib 403'd twice, jina
+  proxy cleared it. Genuine fourth escalation, unlike last week's false alarm.
+  Its default transport should flip to jina-first.
+- ⚠️ **CourtListener rate-limits docket HTML pages** — worked once via urllib,
+  then 0-byte bodies on repeat within one session. The v4 search API stayed
+  reliable. Pace docket fetches or use the API.
+- ⚠️ `gdelt` capped at 8 of 587 terms again and returned all 139 rows tagged
+  `ai`; `openalex` 429'd on essentially every term; `sec_edgar` HTTP 500s on
+  full-text but wrote 471 rows.
+
+**Graph fed after the finalize:** `07_digest_bullets` (1 new S1, 1,748
+cross-posted merges), `06_timelines` (72 new S2, 695 bumped, 1,043 ambiguous),
+`03_expectations` (7 hypothesis claims, 3 restated from current status),
+`09_critic_annotations` (13 process-only). `graph/validate.py`: **OK — 5,160
+atoms, 3,307 sources, 8,425 relationships, 1,357 annotations, 132 extraction
+passes.** ⚠️ Worth a look next run: only **1** new S1 claim from a finalize
+that added roughly fifteen new bullets. The dedupe key may be absorbing them
+into the 1,748 merges; not diagnosed this run.
+
+**Flash: none.** Two independent assessments reached "no." The completion of
+Houthi control over Bab el-Mandeb was the closest candidate and is the
+completion of a multi-day advance already reported and priced — the same
+standard applied to the 09-10 naval exchange and the 09-01 strike wave.
+
+### Published and closed
+
+`readouts --pack` × 4 → four sonnet briefing agents → **`--apply` 4/4, zero
+repairs, zero skips** — the first clean apply in a while. `--export` wrote 154
+readouts. `publish --push` shipped 105 thread pages, 74 entity pages, 3 beat
+pages, 753 claim pages, 12 interpretation pages, 1,250 story pages (2,248
+sources, 1,727 credibility-badged) and 122 map pages; site repo committed and
+pushed, 0 unpushed.
+
+**Two corrections applied to briefings by hand before apply**, both instances
+of the same underlying problem (packs carry bold leads only, so nuance after
+the bold lead is invisible to a briefing agent):
+
+- The global-capital brief carried **"CoreWeave fell 5% to $90.27 the same
+  session"** as current. That was Thursday. CoreWeave is **up ~4% today** on
+  Oracle's backlog figure — but that fact lives in the *prose after* the Oracle
+  bullet's bold lead, so the agent could not see it. Rewritten to date the fall
+  and carry today's reversal.
+- The front brief's AI bullet carried the older one-lab Qwen framing; replaced
+  with the four-lab relay accusation.
+
+⛔ **The Cloudflare deploy hook still cannot be fired from a session.** There is
+no `.env` in this repo, so `THEPROJECTION_SITE_DIR` and
+`THEPROJECTION_DEPLOY_HOOK` are both unset — `--site-dir` had to be passed by
+hand, and no `build_uuid` came back because no hook was called. If the site is
+live it is via Pages' own git integration, not via this run. Unchanged since
+09-08; **this needs Ben.** ⛔ **No kokoro venv** at
+`/workspace/.venvs/kokoro-tts/` — audio briefing skipped again.
+
+### Open for Ben
+
+1. **Three thread candidates on frontier-ai**: the policy *response* to AI
+   safety incidents (the Sanders/Casar ban bill, the Hawley probe, the
+   bipartisan talks, the secret White House framework — four fronts of one
+   story with no home); AI-enabled conventional-weapons misuse disclosures; and
+   whether to split the datacenter backlash into money-promised-versus-delivered
+   and siting/policy.
+2. **World News, second offers**: the Congo Ebola outbreak (6,843 cases, 3,310
+   deaths, now the fastest-growing on record and spreading into rebel-held
+   territory — offered yesterday at less than half those numbers, unanswered)
+   and the Algeria–UAE rupture (second and final offer). **New**: Bangladesh's
+   measles outbreak, 1,002 child deaths.
+3. **Global Capital**: Kalshi as a venue rather than a data source; the Huawei
+   racketeering trial.
+4. **Mental Health**: population-level suicide epidemiology independent of AI.
+   Every youth-suicide thread on this map is an AI-companion-harm thread; there
+   is no thread for the base rates those cases are argued against, which for a
+   clinician reader is arguably the more load-bearing series.
+5. **Two authentications only Ben can do**: `gcloud auth login` (BigQuery,
+   blocking `build-world-news` for a fourth day) and the site `.env`.

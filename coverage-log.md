@@ -6461,3 +6461,141 @@ a benchmark that has escalated three times already.
   name-search pass.
 - 📋 **CMS ACCESS-model provider count** — three conflicting numbers, no
   parse.
+
+## 2026-09-11 critic pass — finalized digest-day 2026-09-10. Three lenses, five misses, and the biggest one was inside a document we had already opened
+
+*Run 2026-09-11 10:00 ET. The methodological result from 09-10 held: all four
+AI benchmarks and both contested mental-health benchmarks were reached, and
+the transport that reached them was `python3 urllib`, not `curl` and not
+WebFetch. The recall result is worse than ordinary — the largest miss of the
+pass is four whole sections of a report this map had already quoted twice.*
+
+### ✅ The 09-10 transport finding is confirmed, and one benchmark's block is real
+
+**Every named AI benchmark cleared on the first try via `python3 urllib`** —
+The Rundown AI, TLDR AI, The Neuron, The AI Daily Brief, no proxy and no
+Googlebot UA needed. That retroactively settles the 09-10 pass's "blocked"
+verdicts: they were the curl-refusal-to-WebFetch fallback, not site blocks.
+The Neuron and The AI Daily Brief simply had not published a 09-11 issue at
+check time, confirmed by paging their archives rather than assumed.
+
+**Behavioral Health Business is reachable**, confirming the 09-10 main-session
+re-check. ⛔ **MobiHealthNews's block is real this time** — urllib 403'd twice
+and only the `r.jina.ai` reader proxy cleared it. That is a genuine fourth
+escalation on a benchmark that had already escalated three times, and unlike
+last week's Behavioral Health Business false alarm it is not a transport
+error. **Its default should flip to jina-first.**
+
+### frontier-ai / 2026-09-10
+
+- ⚠️ **Missed 1, and it is the pass's real finding — Anthropic's September
+  threat-intelligence report covers SEVEN harm areas and this map had THREE.**
+  The report's own text names them: cyber operations, influence operations,
+  surveillance, scams and fraud, biological misuse, conventional weapons
+  development, and distillation. The 09-10 digest had biological misuse and
+  distillation; this morning's labs sweep added conventional weapons. The
+  Rundown AI led its 09-11 issue with the four we did not have, and they are
+  not filler: a China-based studio's deceptive dating-app network (GTG-15001)
+  running **over 4,700 AI personas against at least 25,000 real people**, mixed
+  with real gig workers for authenticity; a consultant for **Mali's national
+  security service** using Claude to design a mass-interception platform
+  covering every mobile operator in the country and generating target
+  dossiers; a Russian-state-aligned disinformation operation in the **Central
+  African Republic** run through FM, satellite and shortwave radio and
+  coordinated with RT, Sputnik and TASS; the **cloning of a real Iranian
+  activist's account** to hold live conversations with his contacts inside
+  Iran; **ghost-written testimony delivered at a live UN Human Rights Council
+  session**; an Iranian-built malicious Firefox extension harvesting identities
+  from social networks; and a PRC-aligned actor with no Arabic running a
+  multi-day Claude-assisted **recruitment operation against Uyghur targets in
+  Syria**. Absence check: `grep -rli "Uyghur\|mass-interception\|GTG-1500"`
+  across `artifacts/`, `attention/` and the staged sweeps returned zero hits.
+  **The lesson is specific and it is not "sweep harder."** Three separate
+  readers — the 09-10 curation, this morning's labs sweep, and its resumed
+  pass — each opened the same document and each stopped at the section they
+  were looking for. Nobody read the table of contents. **When a primary
+  document is the day's story, read its own statement of scope first and
+  enumerate the sections, then decide what to skip.** Folded into the 09-10
+  digest's appendix.
+- **Missed 2 — Andrew Tulloch, whom Meta reportedly paid up to $1.5bn to
+  rejoin under a year ago, is leaving Meta Superintelligence Labs for
+  Anthropic's inference and performance team.** Dated 09-10. A marquee
+  departure inside twelve months is evidence about whether the talent spending
+  bought retention, and **no thread owns Meta AI talent economics** —
+  `meta-capex` is capex only. Absence check: zero hits on "Tulloch" across the
+  September digests, `threads.yaml` and the staged sweeps.
+- **Missed 3, thread-update sized — Apple's Siri AI beta ships with iOS/OS 27
+  on 09-14 carrying daily usage caps and a future paid tier.** Directly on
+  `apple-gemini-model-deal`'s own watch question about how Apple rations a
+  model it does not control; the thread's notes stop at the 07-27 crawl.
+
+### global-capital / 2026-09-10
+
+- **Missed 1 — Saudi Arabia's PIF is weighing a merger of Electronic Arts with
+  its own Savvy Games Group**, Axios Pro Rata's lead item, sourced to
+  Bloomberg. Same adjacent-but-relevant shape the 09-09 pass accepted for LIV
+  Golf's Chapter 11: `pif-ai-buildout` watches whether PIF's capital
+  allocation and fiscal squeeze reach the AI side, and a transaction this size
+  on the non-AI side is evidence about that.
+- **Missed 2 — FT Unhedged ran "Why Warsh is starting to bite back"** among its
+  top five, on Fed Chair Kevin Warsh caught between his own hawkish posture and
+  Bessent's buyback programme undercutting it. The 09-10 digest covers the
+  buyback undershoot **without naming its own Fed chair once**, and
+  `fed-independence-fight` is the thread whose entire subject that is.
+- ⛔ **Market-number audit: NOT clean, first failure since the four-day Brent
+  transposition.** The 09-10 morning entry for the 10-year prints **+0.089pp**
+  against a stated Wednesday close of **4.845%** — but 4.926 − 4.845 = 0.081pp.
+  Separately the afternoon macro strip cites a *different* Wednesday close for
+  the same instrument, **4.840%**. Neither changes a conclusion drawn from
+  them. Both are exactly what the audit exists to catch: two figures inside one
+  digest that cannot both be true.
+- ✅ **The carried-forward "since July vs. since May" question on
+  `red-sea-oil-shock` is resolved: MAY was correct**, confirmed against a dated
+  CNBC quote. That flag had been open since 09-09 and was deliberately not
+  settled by picking one.
+- ✅ **Thread name-search audit: backlog CLOSED.** It stood at 8 of 23 audited
+  after the 09-10 pass, with 15 outstanding and growing faster than it shrank
+  over four passes. This pass covered the remainder by organisation and person
+  name — Berkshire, Fidelity, BlackRock, CXMT, Canada/Mexico tariffs, Commerce
+  Department equity stakes, SpaceX/xAI — and found nothing beyond the two
+  misses above. All 23 now carry an audit on record.
+
+### mental-health / 2026-09-10
+
+- **The named benchmarks led with nothing this lens missed — and that verdict
+  is narrower than it looks, because the pass's one real miss came from the
+  name search instead.** **An AI chatbot called Kiwi, built by a company called
+  Alongside, is deployed in more than 200 schools across 19 states for youth
+  mental-health triage — nearly 31,000 students and roughly 28,000 hours of use
+  in the past year, including a named crisis-intervention case.** It was
+  sitting untouched in the raw collector buffer. Absence check:
+  `grep -rli "alongside.*wellness\|Kiwi.*chatbot\|Corsicana" artifacts/
+  attention/ buffer/` → zero hits. This is the companion-chatbot regulatory
+  question arriving through district procurement rather than clinical
+  licensing, on the same day California enacted an audit regime for
+  companion chatbots that reach children.
+- **The thin 09-10 digest was substantially right to be thin on the benchmark
+  axis and substantially wrong overall** — it reported no new timeline entries
+  on a day that contained SB 1119. The signing landed after the 15:00 ET cut
+  and is now folded into the finalize, but the pattern is the one from 09-08:
+  a lens whose benchmarks are quiet is not the same thing as a quiet day.
+
+### ⚠️ Carried forward, still open — second consecutive pass
+
+**The 09-09 miss (OpenAI shipping ChatGPT Images 2.5) was never folded into
+anything.** It was logged as a critic finding with a named home
+(`enterprise-agent-product-race` as the nearest fit), it is not in the 09-10
+digest, and it was never merged into that thread file. Two days, two passes,
+closed by nobody. **This is the second consecutive pass where a logged critic
+finding did not become a map edit** — the failure is no longer in detection,
+it is in the hand-off between the critic's report and the next run's edit
+list. Assigned explicitly to the next run rather than re-logged.
+
+### Tooling
+
+- ✅ `python3 urllib` cleared every AI benchmark first try.
+- ⛔ MobiHealthNews: jina-proxy-only, genuine escalation.
+- ⚠️ **CourtListener rate-limits its docket HTML pages.** Docket pages
+  (`courtlistener.com/docket/<id>/...`) worked once via urllib then returned
+  0-byte bodies on repeated fetches within the same session; the v4 search API
+  stayed reliable throughout. Pace docket fetches or lean on the search API.

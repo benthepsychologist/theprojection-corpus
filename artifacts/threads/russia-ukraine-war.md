@@ -18,6 +18,10 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-09-11 — Zelenskyy and Carney sign a 100-year Canada-Ukraine partnership with a $1bn+ defence package
+
+- **Zelenskyy and Canadian PM Mark Carney signed a declaration establishing a 100-year Canada–Ukraine partnership, alongside a defence package Zelenskyy put at more than $1bn — Patriot systems, air-defence interceptors and ammunition for F-16s — with the total value of agreements between the two countries exceeding $2bn.** This turns Thursday's line already on this thread (Zelenskyy in Canada seeking air-defence and winter support) from an ask into a signed commitment; Canada will also fund Ukrainian veterans' support and expand energy and drone-production cooperation. ([Reuters via Yahoo News](https://www.yahoo.com/news/articles/zelenskiy-arriving-canada-says-air-064159148.html)) ⟨daily 2026-09-11⟩
+
 ## 2026-09-10 — Poland says it averted an overnight threat to a border crossing and expects Russia to target its crossings next
 
 - **Polish PM Donald Tusk, speaking in Bratislava, said an overnight threat to a Poland–Ukraine border crossing was averted: "Last night, thanks to cooperation between our services and their Ukrainian counterparts, a direct threat to one of the border crossings was averted."** He said he expects Russia to target Polish crossings next, and that he had received "a fairly precise report directly from the CIA regarding possible events in the coming months." Russia has hit four crossings on the Moldova border and one on the Romania border since late August; the Starokozache crossing with Moldova, already on this thread's 09-09 record, was hit by a 2026-09-09 drone strike that killed two civilians and injured three, with one drone briefly entering Moldovan airspace and prompting a NATO air-policing scramble. ([Euromaidan Press, quotes attributed to Reuters](https://euromaidanpress.com/2026/09/10/poland-expects-russia-to-target-border-crossings/)) ⟨daily 2026-09-10⟩

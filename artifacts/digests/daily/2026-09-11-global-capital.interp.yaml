@@ -1,0 +1,113 @@
+# Interpretations for 2026-09-11 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25 — seventeen days
+# stale; the readings below note where today's data has overtaken it).
+
+oracle-s-contracted-backlog-hit-664bn-up-209bn:
+  mechanism: >
+    The standing snapshot's open question about the AI buildout has been
+    whether hyperscaler and neocloud capex is a demand signal or a supply
+    guess — whether anyone has actually signed for the capacity being
+    built. Oracle's quarter answers that in one direction and opens a
+    harder question in the other. $664bn of remaining performance
+    obligations, up $209bn year over year, with $30bn of it written in a
+    single quarter, is contracted revenue: customers are legally on the
+    hook, and roughly half converts inside 36 months on the CFO's own
+    account. That removes the "announced intentions" read almost
+    entirely. What it does not remove is the funding gap, and the same
+    release states it plainly — capex of $28.5bn against free cash flow
+    of MINUS $5bn in the quarter. The backlog is real and the cash to
+    build against it is borrowed. The mechanism to watch is therefore not
+    demand risk but duration mismatch: Oracle is financing a multi-year
+    buildout in a quarter when the US 10-year touched 4.954% and 30-year
+    gilts hit a 1998 high. Every month the curve stays here, the spread
+    between what the backlog pays and what the buildout costs to fund
+    narrows, and the backlog's protective quality — it is contracted! —
+    stops being the relevant question.
+  confidence: plausible
+  scenarios:
+    - direction: The RPO figure gets re-read as a credit story rather than a demand story, and Oracle's cost of debt becomes the number the market watches
+      why: >
+        A backlog that converts over 36 months while capex runs $28.5bn a
+        quarter against negative free cash flow is, structurally, a
+        receivable financed with borrowing. The equity market priced the
+        receivable today (+7%, with CoreWeave and Nebius following). The
+        credit market prices the borrowing, and it has spent this week
+        repricing long-duration risk across every sovereign curve at once.
+      precedent: >
+        This map's own record on the same thread: Oracle's credit rating
+        and free cash flow have been the `oracle-stargate-bet` watch
+        items since the thread opened, precisely because the RPO number
+        was always going to be large and always going to be funded. The
+        09-10 digest separately recorded Vantage Data Centers seeking
+        $2bn from Pimco and PGIM — private credit stepping into
+        datacenter funding is the same mechanism one tier down.
+    - direction: The backlog holds and the funding proves cheap enough, in which case Oracle re-rates permanently and the neoclouds re-rate with it
+      why: >
+        If roughly half of $664bn converts inside 36 months as guided,
+        the revenue ramp outruns the financing cost even at current
+        yields, and the negative free cash flow reads as a normal
+        build-phase artifact rather than a structural gap.
+      precedent: >
+        CoreWeave's and Nebius's 4% sympathy moves against a 1% QQQ
+        today are the market already testing this reading — the
+        correlation says investors are treating Oracle's backlog as
+        evidence about the whole contracted-AI-capacity complex, not
+        about one issuer.
+  context_note: >
+    The snapshot's `asof` is 2026-08-25 and predates both the ECB hike and
+    this week's global long-end selloff. Its AI-capex readings should be
+    read as describing a lower-rate world than the one this quarter is
+    being funded in.
+
+the-us-10-year-touched-4-954-its-highest-since-o:
+  mechanism: >
+    The snapshot has tracked the "yields rise on bad news" inversion as a
+    US phenomenon driven by fiscal dominance — a Treasury General Account
+    mechanism, a buyback programme, a Fed independence fight. Two things
+    happened in 48 hours that make that framing too small. First, the
+    pattern went cross-border simultaneously: Bunds near a ten-year high,
+    OATs at 4.34%, and UK 30-year gilts at 5.89%, the highest since May
+    1998. Second, and more directly, Lagarde stood at the ECB press
+    conference and named the driver out loud — "significant financing
+    needs from AI is a key driver" of the long-end stress the Governing
+    Council is monitoring. That is the first time a central banker has
+    stated the AI-capex-to-sovereign-yield channel rather than this map
+    inferring it. The mechanism, stated plainly: the AI buildout is
+    issuing enormous amounts of long-duration corporate and structured
+    paper into the same maturity buckets sovereigns need to fund deficits
+    in, and there is not enough long-duration demand for both. Thursday's
+    Treasury buyback undershoot — $5.19bn taken against a $6bn ceiling on
+    an operation that had just been tripled in size — is the same
+    scarcity showing up on the government's side of the trade.
+  confidence: plausible
+  scenarios:
+    - direction: Long-end supply, not inflation, becomes the thing that prices the curve, and central-bank rate decisions matter less to 30-year yields than issuance calendars do
+      why: >
+        An in-line CPI print moved hike odds by essentially nothing today
+        (69.3% against Thursday's 70%) while the 10-year still pushed
+        toward 5%. If the inflation data is not moving the long end, the
+        residual is supply and duration demand.
+      precedent: >
+        Treasury tripled its buyback size and still could not fill it —
+        $5.19bn of a $6bn maximum on 09-10, with Bloomberg reporting the
+        shortfall itself pushed yields higher. A buyer of last resort
+        that cannot find sellers at its own ceiling is a demand-side
+        signal, not a policy one.
+    - direction: This is an ECB-hike aftershock that fades, and the cross-border synchrony is coincidence rather than a shared mechanism
+      why: >
+        The ECB hiked on 09-10 and Lagarde called it a "no brainer"; a
+        simultaneous European curve selloff one day later has an obvious
+        proximate cause that has nothing to do with AI financing.
+      precedent: >
+        The gilt move is the hardest fact for this reading to absorb —
+        5.89% on the 30-year is the highest since 1998 and the Bank of
+        England did not hike. But UK long-end stress has its own
+        well-documented domestic history, so a coincidence reading
+        survives here in a way it would not if every curve moved for one
+        reason.
+  context_note: >
+    ⚠️ The European levels in the bullet are aggregated from
+    TradingEconomics and Bloomberg-sourced summaries rather than fetched
+    individually, and Lagarde's quote is corroborated across two
+    aggregations rather than read off the ECB's own transcript, which
+    403'd. The US 10-year level is directly sourced.

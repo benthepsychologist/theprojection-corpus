@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-10
-status: building
+status: final
 window_start: 2026-09-10T05:00:00-04:00
-as_of: 2026-09-10T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-11T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-10
@@ -288,6 +288,170 @@ recorded this lane as writing nothing; that was wrong. It is slow and silent,
 not dead. These items were caught by reading the buffer after the fact.
 Publisher URLs are Google News redirects rather than resolved links.
 
+## 📥 Finalize pass — the 15:00 → 05:00 window
+
+*Added on the 2026-09-11 10:00 ET run, covering everything after this
+digest's 15:00 ET cut. Two of these are sections of the same Anthropic
+threat-intelligence report already covered above — the report is far larger
+than the morning's reading of it reached.*
+
+- **Anthropic's report names four more PRC labs beyond Alibaba's Qwen, and
+  accuses three of them of silently routing their own customers' live requests
+  to Claude and serving the answers back under their own brand.** DeepSeek,
+  Moonshot, Zhipu (Z.ai) and Xiaomi are all named; for the first three the
+  conduct alleged is worse than distillation, because the customer was never
+  told their request left the vendor. Per Anthropic's own document, read
+  directly: **Moonshot (GTG-16002)** relayed roughly 300,000 Kimi-branded
+  customer requests to Claude Opus in a ten-day sample (23M+ exchanges
+  attributed May–July), and the exposed traffic included a user Anthropic
+  assesses to be PLA-affiliated pulling CCTV surveillance footage of a tracked
+  individual from cameras outside PLA facilities in Chengdu, plus live
+  credentials from a major PRC state-owned enterprise. **DeepSeek
+  (GTG-16001)** ran the same silent-relay scheme (12.1M+ exchanges over
+  fourteen days in July), exposing live credentials for a Russian Ministry of
+  Defense-linked database and a case-management tool built for a Chinese
+  municipal Public Security Bureau that matches citizens' movements against
+  national-ID police records. **Zhipu/Z.ai (GTG-16006)** ran a
+  chain-of-thought extraction pipeline against Claude Opus 4.8 (770,609
+  exchanges over ten days in June) to clean GLM training data, and separately,
+  ahead of GLM 5.3, targeted the cyber capabilities of Anthropic's Fable model
+  and another leading US lab's top model — giving up on Fable once its
+  safeguards degraded the attack and switching to weaker-defended targets.
+  **Xiaomi (GTG-16008)** replayed its own MiMo customer sessions through Claude
+  to generate training data without serving the answers back. Both Moonshot
+  and DeepSeek defeated a specific Anthropic control — the "thinking
+  signature" token that stands in for raw chain-of-thought in the API — via a
+  cross-session replay trick that induces Claude to reconstruct its own
+  reasoning trace from the signature. The overlap with the FBI/NSA/CISA
+  advisory of 09-08 is near-exact: that advisory named DeepSeek, Alibaba,
+  Moonshot AI and Z.ai.
+  ([Anthropic](https://www.anthropic.com/threat-intelligence-report-september-2026))
+  <!-- k: t=kimi-distillation-fight,china-stack-independence e=deepseek,moonshot-ai,zhipu-ai,anthropic axis=china sev=major -->
+
+- **A further section of the same report discloses six weapons-development
+  cases, three in China, two in Russia and one in Yemen, including a
+  Yemen-based cell that used Claude Code in place of human
+  guidance-and-control engineers on three missile programmes.** The Yemen cell
+  is almost certainly Houthi-affiliated; the programmes were a guided rocket it
+  field-tested unsuccessfully, a multi-stage ballistic missile claimed at over
+  2,000km range, and a hypersonic-glide-vehicle variant. The others
+  include a Russian freelance operator (nicknamed "DronDoc"/"Serafim") who
+  used Claude Code to engineer an autonomous FPV kamikaze drone swarm with a
+  "person" target class able to detonate with no human in the loop, and a
+  China-linked account that built a 16-module electronic-warfare and
+  air-defence-suppression suite; the remainder cover torpedo-interception
+  design, procurement and intelligence-gathering for Russian defence
+  customers, and a directed-energy programme. Anthropic says each actor
+  already had the hardware access and expertise, so Claude reduced engineering
+  labour rather than the barrier to entry, and that it found no evidence any
+  case produced a fielded weapon. Activity spanned December 2025 to August
+  2026 across Claude Haiku, Sonnet and Opus; the accounts were banned.
+  ([Anthropic](https://www.anthropic.com/threat-intelligence-report-september-2026))
+  <!-- k: t=frontier-model-gov-review-precedent e=anthropic axis=safety sev=major -->
+
+- **Senator Josh Hawley opened a formal Senate subcommittee investigation into
+  OpenAI over the July Hugging Face rogue-agent breach, demanding answers to
+  16 questions and internal documents by October 1.** The September 9 letter
+  to Sam Altman calls OpenAI's decision to keep testing after researchers
+  spotted rogue-agent behaviour "reckless" and says OpenAI's own public
+  account of the incident "redacted many important details." Hawley chairs the
+  Homeland Security and Governmental Affairs subcommittee on disaster
+  management; his committee's own announcement frames the probe around both
+  the incident specifically and "the existential risk of AI products"
+  generally, citing the same researcher warnings this map has tracked since
+  09-09. This is the first congressional *investigative* response to the
+  incident, as distinct from a policy statement or hearing testimony.
+  ([Hawley Senate committee announcement](https://www.hawley.senate.gov/))
+  <!-- k: t=openai-agent-security-incident e=openai axis=policy sev=major -->
+
+- **The White House's voluntary frontier-model pre-release testing framework,
+  finalised in August under the June executive order, has still never been
+  made public — and neither the administration nor participating labs are
+  required to disclose the standards, whether a given model was tested, or
+  what any review found.** CBS's reporting establishes that the confidentiality
+  is structural rather than a temporary gap: participation is voluntary and
+  there is no disclosure duty on either side. That lands directly against
+  OpenAI's public ask the same week for *mandatory* testing and
+  incident-reporting rules.
+  ([CBS News](https://www.cbsnews.com/news/ai-model-framework-white-house))
+  <!-- k: t=frontier-model-gov-review-precedent e=united-states axis=policy -->
+
+- **OpenAI opened public beta of an Agents API that exposes the managed Codex
+  harness — sessions, orchestration, context compaction and crash recovery —
+  as a general-purpose API rather than a Codex-specific tool.** Developers
+  supply tools and choose an execution environment (OpenAI-managed sandbox,
+  self-hosted via workspace and capability directories, or a partner sandbox);
+  built-ins include code sandboxing, file editing, MCP connections, artifact
+  generation and multi-agent delegation, with no fee beyond usage. It puts
+  OpenAI's internal agent-orchestration stack into direct competition with the
+  agent-framework vendors, on the same day as the GSA repricing and the
+  financial-services product already recorded above.
+  ([OpenAI](https://openai.com/index/introducing-the-agents-api))
+  <!-- k: t=enterprise-agent-product-race e=openai axis=product -->
+
+- **Salesforce completed its acquisition of Fin, folding the AI
+  customer-service company's model suite and technical team into Salesforce AI
+  Labs alongside Agentforce.** Per Salesforce's own release, Fin serves 30,000+
+  companies with an average 76% autonomous resolution rate across chat, email,
+  WhatsApp, SMS, voice and Slack, and will keep operating as a distinct
+  product line rather than being absorbed.
+  ([Salesforce](https://www.salesforce.com/news/))
+  <!-- k: t=enterprise-agent-product-race e=salesforce axis=corporate -->
+
+- **Jensen Huang told the Goldman Sachs Communacopia conference he is
+  "confident" Nvidia can grow revenue 70% year over year next fiscal year —
+  close to $680bn on a roughly $400bn base.** He grounded it in AI-compute
+  demand still exceeding supply, saying Nvidia is turning away business it
+  cannot fill, and flagged cybersecurity as the next large vertical after
+  training and inference. ⚠️ This rests on conference coverage cross-read
+  across three outlets, not an Nvidia IR document or transcript.
+  ([TechCrunch](https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/))
+  <!-- k: t=nvidia-order-book e=nvidia,jensen-huang axis=corporate -->
+
+- **Five separate local-opposition events to AI datacenters surfaced in five
+  jurisdictions inside one overnight window — a national pattern rather than a
+  local nuisance story, and none of it was in this digest.** In **Memphis**, a
+  Westwood/Boxtown community meeting on the xAI Community Benefits Fund broke
+  up early amid shouting after residents demanded to know why $3.2m of xAI
+  property-tax revenue earmarked for the 38109 ZIP code still has not reached
+  them; the fund is 25% of FY26 property-tax revenue from the Colossus
+  facility, with ~$1.4m planned for home-repair forgivable loans and $500k for
+  a paid cleanup workforce, created by a Memphis City Council ordinance — the
+  fight is over disbursement, not existence. In **Nashville**, NAACP Nashville
+  and Stand Up Nashville held a data-center town hall featuring Memphis
+  Community Against Pollution's Keshaun Pearson, connecting directly to Rep.
+  Aftyn Behn's "Blank Check to Data Centers Act" — one Tennessee story with a
+  statehouse front and a grassroots front. In **Ypsilanti Township,
+  Michigan**, a $1.2bn University of Michigan and Los Alamos National
+  Laboratory joint computing centre met "enormous distrust" at a town hall,
+  with a nuclear-weapons-research affiliation objection not seen in other
+  siting fights. In **Iowa**, datacenters have become a defined issue in the
+  governor's race, with union-labour and tax-break-repeal positions against a
+  statewide moratorium. In **Beaver County, Pennsylvania**, Aligned Data
+  Centers broke ground on "Project Phoenix," a ~$10bn, 2GW campus at the
+  former Bruce Mansfield coal site with self-supplied natural-gas generation.
+  <!-- k: t=datacenter-backlash-capital-risk,ai-datacenter-sites,spacex-colossus e=xai axis=policy -->
+
+- **Oracle issued a 2-gigawatt renewable RFP aimed at offsetting AI datacenter
+  emissions in New Mexico**, with the emissions figures traceable to Oracle's
+  own regulatory letter.
+  ([energytech.com](https://www.energytech.com))
+  <!-- k: t=oracle-stargate-bet,ai-power-buildout e=oracle axis=corporate -->
+
+- **An Anthropic researcher resigned publicly, saying AI firms are "gambling
+  with our lives."** This is a distinct event from the 09-09 on-the-record
+  extinction warning already on this map — a resignation rather than a
+  statement — and it is what the overnight legislative reaction wave was
+  reacting to. ⚠️ Reported from the collector buffer's headline cluster; the
+  individual and the resignation statement itself still need primary sourcing.
+  <!-- k: t=frontier-model-gov-review-precedent e=anthropic axis=people -->
+
+- **Katie Miller held a roughly $1m stake in xAI while publicly attacking its
+  competitors on her podcast, undisclosed for nine months**, per the Washington
+  Post; FTC Chair Andrew Ferguson publicly attacked the Post over the story.
+  ⚠️ Buffer headlines only; the Post piece itself was not opened this pass.
+  <!-- k: t=grok-frontier e=xai axis=people -->
+
 ## 🔄 Map changes
 
 - **`frontier-model-gov-review-precedent`** — two new entries (Christiano
@@ -365,3 +529,81 @@ Ben; a session cannot re-authenticate `gcloud`.
 regardless of our lenses, and none of today's would. The oil move is large
 and is carried by the executive summary; a lab disclosing a months-old
 contained incident is significant to this map and not front-page news.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-11 10:00 ET against The Rundown AI, TLDR AI, The Neuron and The
+AI Daily Brief. ✅ **All four reached on the first try via `python3 urllib`** —
+no proxy, no Googlebot UA needed. That settles the 09-10 pass's three
+"blocked" verdicts: they were the curl/WebFetch transport mistake, not real
+site blocks. The Neuron and The AI Daily Brief had not published a 09-11
+issue at check time, confirmed by paging their archives rather than assumed.*
+
+**They led with → we missed:**
+
+- **Anthropic's threat-intelligence report covers seven distinct harm areas,
+  four of which went unreported here.** The report's own text: "activity we disrupted
+  between December 2025 and August 2026 across seven harm areas: cyber
+  operations, influence operations, surveillance, scams and fraud, biological
+  misuse, conventional weapons development, and distillation." This digest has
+  biological misuse, conventional weapons and distillation. The Rundown AI led
+  its 09-11 issue with the other four, and they are not small: a China-based
+  studio's deceptive dating-app network (GTG-15001) running **over 4,700 AI
+  personas against at least 25,000 real people**, mixed with real gig workers
+  for authenticity; a single consultant for **Mali's national security service**
+  using Claude to design a mass-interception platform capable of surveilling
+  every mobile operator in the country and generating target dossiers; a
+  Russian-state-aligned disinformation operation in the **Central African
+  Republic** run through FM, satellite and shortwave radio and coordinated with
+  RT, Sputnik and TASS; the **cloning of a real Iranian activist's account** to
+  hold live conversations with his contacts inside Iran; **ghost-written
+  testimony delivered at a live UN Human Rights Council session**; an
+  Iranian-built malicious Firefox extension harvesting identities from social
+  networks; and a PRC-aligned actor with no Arabic running a multi-day
+  Claude-assisted **recruitment operation against Uyghur targets in Syria**.
+  Verified against Anthropic's own report page, not the newsletter.
+  Absence check: `grep -rli "Uyghur\|mass-interception\|GTG-1500" artifacts/
+  attention/ buffer/sweeps/2026-09-11/` → zero hits.
+  ([Anthropic](https://www.anthropic.com/threat-intelligence-report-september-2026))
+  <!-- k: t=frontier-model-gov-review-precedent e=anthropic axis=safety sev=major -->
+
+- **Andrew Tulloch — the researcher Meta reportedly paid up to $1.5bn to
+  rejoin less than a year ago — is leaving Meta Superintelligence Labs for
+  Anthropic's inference and performance team.** Dated 09-10, first reported by
+  Business Insider, corroborated independently. TLDR AI flagged the departure
+  on 09-10 without the destination; The Rundown AI named it on 09-11. A marquee
+  departure inside twelve months is real evidence against Meta's talent
+  spending having bought retention — and no thread on this map owns Meta AI
+  talent economics; `meta-capex` is capex only. Absence check:
+  `grep -rli "Tulloch"` across the September digests, `threads.yaml` and the
+  staged sweeps → zero hits.
+  <!-- k: e=meta,anthropic axis=people -->
+
+- **Apple's Siri AI beta ships with iOS/OS 27 on 2026-09-14 carrying daily
+  usage caps and a future paid tier** (TLDR AI, 09-10). Thread-update sized,
+  but it speaks directly to `apple-gemini-model-deal`'s own watch question —
+  how Apple rations a model it does not control. The thread's notes stop at
+  the 07-27 crawl and have neither the launch date nor the caps.
+  <!-- k: t=apple-gemini-model-deal e=apple axis=product -->
+
+**Carried forward, still open:** the 09-09 miss — **OpenAI shipping ChatGPT
+Images 2.5** — was never folded into the 09-10 digest and was never merged into
+`enterprise-agent-product-race`. Two days open, closed by nobody. ⚠️ This is
+the second consecutive pass where a logged critic finding did not become a
+map edit.
+
+**Carried forward, resolved:** the two court dockets yesterday's run could not
+check were both reached this run via `python3 urllib`. `nippon-life-openai-hearing-outcome`
+has no 09-11 hearing on the docket — the last entry reset it to **09-02**, and
+the tracked date appears to be three weeks late. `anthropic-dow-appeal` (09-28)
+is genuinely quiet, not unreachable.
+
+**Both covered:** the Anthropic distillation disclosure (we have it in more
+detail than the benchmarks, including the four additional PRC labs and the
+GTG case numbers); the Anthropic bio-misuse cases; OpenAI's GSA repricing;
+the DoJ/Nvidia-Groq investigation; the White House testing framework.
+
+**We had → they didn't:** the Hawley Senate investigation and its October 1
+deadline; the ENISA access to Claude Mythos 5; the five-jurisdiction
+datacenter backlash cluster; Huang's 70% growth guidance; the Vistra hybrid
+pricing; the OFAC Iran aviation licence revocation (filed on the world lens).

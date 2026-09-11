@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-10
-status: building
+status: final
 window_start: 2026-09-10T05:00:00-04:00
-as_of: 2026-09-10T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-11T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-10
@@ -141,6 +141,79 @@ recorded this lane as writing nothing; that was wrong. It is slow and silent,
 not dead. These items were caught by reading the buffer after the fact.
 Publisher URLs are Google News redirects rather than resolved links.
 
+## 📥 Finalize pass — the 15:00 → 05:00 window
+
+*Added on the 2026-09-11 10:00 ET run. This digest went out reporting no new
+timeline entries on the lens; the window after its 15:00 ET cut contained the
+biggest state-level AI-and-mental-health action of the year.*
+
+- **Governor Newsom signed SB 1119, "Adam's Law," creating the first
+  legally-mandated crisis-protocol and independent-audit regime in the country
+  for companion chatbots that reach children.** The bill (Sen. Padilla, with
+  Assemblymembers Wicks and Bauer-Kahan) requires companion-chatbot operators
+  to run crisis protocols when a child user shows suicidal ideation, provide
+  parental controls, notify parents if a child disables safety settings, and —
+  the first requirement of its kind anywhere in the US — conduct independent
+  third-party child-safety audits and annual risk assessments. It was signed
+  alongside SB 867, covering companion chatbots embedded in toys, and a broader
+  package banning addictive social-media features (autoplay, algorithmic feeds)
+  for under-16 users and extending child-sexual-exploitation law to
+  AI-generated or altered depictions of minors. **The bill is named for Adam
+  Raine** — the teenager whose family's wrongful-death suit against OpenAI is
+  this lens's other live chatbot-death case, back in court 09-23 — which ties a
+  legislative track and a litigation track that had been running in parallel.
+  Verified against the Governor's own press release, not trade coverage;
+  `leginfo` still showed "Enrolled" with no Chaptered date at check time, which
+  is a legislature database lag rather than a contradiction.
+  ([California Governor's Office](https://www.gov.ca.gov/2026/09/10/governor-newsom-signs-the-strongest-child-safety-chatbot-and-social-media-laws-in-the-nation/))
+  <!-- k: t=state-therapy-chatbot-bans,ai-therapy-regulatory-reckoning,social-media-causality-fight e=california axis=policy sev=major -->
+
+- **The other four California AI-and-clinical-care bills this lens tracks were
+  not signed and remain enrolled — AB 1979 (chatbots under medical
+  confidentiality law), AB 2575 (AI clinical-harm liability), SB 903
+  (mental-health-professional AI rules) and SB 503 (clinical-decision-support
+  AI).** Each bill's own status page still shows "Active Bill – Enrolled" with
+  no Chaptered or Vetoed date. Twenty days to the 09-30 deadline. Stated
+  explicitly because "Newsom signs child-safety chatbot laws" reads as the
+  whole tracked slate moving, and only the youth-companion bill did.
+  ([leginfo.legislature.ca.gov](https://leginfo.legislature.ca.gov/))
+  <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans e=california axis=policy -->
+
+- **An AI chatbot called Kiwi, built by a company called Alongside, is now
+  deployed in more than 200 schools across 19 states for youth mental-health
+  triage — nearly 31,000 students and roughly 28,000 hours of use in the past
+  year, including a named crisis-intervention case.** This is the
+  companion-chatbot regulatory question arriving in schools, under district
+  procurement rather than clinical licensing, and it reached this map only
+  because a coverage critic ran an organisation-name search: it was sitting
+  untouched in the raw collector buffer. Absence check:
+  `grep -rli "alongside.*wellness\|Kiwi.*chatbot\|Corsicana" artifacts/
+  attention/ buffer/` → zero hits before this entry.
+  ([EdSource](https://edsource.org/), 2026-09-10)
+  <!-- k: t=ai-therapy-regulatory-reckoning,state-therapy-chatbot-bans,ai-therapy-evidence axis=product sev=major -->
+
+- **A JAMA Pediatrics study found the US suicide rate among girls aged 10–14
+  more than quadrupled between 2007 and 2024, from 0.51 to 2.28 per 100,000,
+  closing what used to be a wide gender gap.** Boys' rate in the same age band
+  fell 35% from 2018 to 2024 while girls' rose 13%, leaving boys only 4% higher
+  than girls by 2024 against nearly double in 2017; the narrowing held across
+  Black, Hispanic and White children in the sample. Suicide is the
+  second-leading cause of death for US 10–14-year-olds. ⚠️ Verified through ten
+  independent affiliate pickups of the same wire copy, all citing JAMA
+  Pediatrics — the paper itself was not opened this pass, so the design and
+  data source are not independently confirmed here.
+  <!-- k: t=social-media-causality-fight,mh-evidence-watch axis=research sev=major -->
+
+- **A small open-label Korean RCT (N=52) found a guided mobile CBT app for
+  panic disorder beat structured psychoeducation on clinician-rated panic
+  severity (least-squares mean difference −3.71, P=.02) but on no
+  self-reported outcome measure.** Kang et al., *Internet Interventions*,
+  online 2026-07-09; 21 of 26 (80.8%) completed, no serious adverse events.
+  The authors themselves flag the open-label, unblinded-rater design as
+  limiting. A real but modest result.
+  ([PubMed, PMID 42473578](https://pubmed.ncbi.nlm.nih.gov/42473578/))
+  <!-- k: t=mh-evidence-watch axis=research -->
+
 ## 🔄 Map changes
 
 - **No new timeline entries on this lens today.**
@@ -187,3 +260,32 @@ returned HTTP 200 with a live feed carrying two real 09-09 items. The 403
 came from the tool the agent fell back to after `curl` was refused by the
 harness — not from the outlet. Recorded in `sources/benchmarks.yaml` and
 `coverage-log.md`.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-11 10:00 ET against Behavioral Health Business, STAT Health Tech,
+Fierce Healthcare and MobiHealthNews.*
+
+**They led with → we missed: nothing.** The four benchmarks led with nothing
+clinically relevant in this window, and the day really was thin on their side.
+⚠️ That is a narrower verdict than it sounds, because **the pass's one real
+miss came from the name search, not the benchmarks** — the Alongside/Kiwi
+school-chatbot deployment, folded in above. A lens whose benchmarks are quiet
+is not the same as a quiet day, which is the lesson from 09-08 when the AI
+lens reported an empty day its own benchmarks had led with.
+
+**Benchmark reachability, corrected:**
+- ✅ **Behavioral Health Business is reachable.** Last week's 403 was the
+  WebFetch transport, not the site.
+- ⛔ **MobiHealthNews's block is real this time** — `urllib` 403'd twice, and
+  the jina reader proxy cleared it. Its default transport should flip to
+  jina-first. This is a genuine fourth escalation on a benchmark that has
+  escalated three times before, unlike last week's false alarm.
+
+**Both covered:** California's chatbot signings and the JAMA Pediatrics
+girls'-suicide study were both already in flight through the staged sweeps
+rather than missing, confirmed before being scored.
+
+**We had → they didn't:** the bill-by-bill California status check separating
+SB 1119 from the four still-enrolled bills; the Swedish factorial RCT and the
+German DiGA conformity review (both carried on the 09-11 digest).

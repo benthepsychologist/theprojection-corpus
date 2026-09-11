@@ -894,7 +894,15 @@ expectations:
     what_confirms: "the Q1 FY27 earnings press release/8-K"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    status: hit
+    resolved: 2026-09-10
+    resolution_note: >
+      Reported after Thursday's close, on the corrected date. RPO $664bn
+      (+$209bn y/y), revenue $19.3bn (+30% y/y), adjusted EPS $1.92 against
+      $1.74 expected, cloud infrastructure revenue +121% to $7.4bn, capex
+      $28.5bn, free cash flow MINUS $5bn, FY27 guidance raised to $8.10
+      adjusted EPS on $90bn+ revenue. Resolved from Oracle's own 8-K and
+      press release, not coverage.
 
   - id: softbank-roze-ipo
     claim: "SoftBank targets an IPO for Roze (AI/robotics data-center-construction spinout, bundling ABB Robotics + energy/land/digital-infra assets) at up to $100B valuation"
@@ -2622,7 +2630,18 @@ expectations:
     what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
     logged: 2026-09-01
     logged_by: curate-add   # successor to ca-sb1119-assembly-floor-vote, resolved hit 08-31
-    status: pending
+    status: hit
+    resolved: 2026-09-10
+    resolution_note: >
+      Signed 2026-09-10 as "Adam's Law," verified against the Governor's own
+      press release rather than trade coverage. Signed alongside SB 867
+      (companion chatbots embedded in toys) and a broader package banning
+      addictive social-media features for under-16s and extending
+      child-sexual-exploitation law to AI-generated depictions of minors.
+      Named for Adam Raine, whose family's suit against OpenAI is tracked
+      separately as raine-jccp-cmc-0923. NOTE: the four other tracked
+      California bills (AB 1979, AB 2575, SB 903, SB 503) were NOT signed and
+      remain enrolled, due 09-30.
 
   - id: ca-sb503-governor-action
     claim: >
@@ -2908,6 +2927,16 @@ expectations:
     logged: 2026-09-04
     logged_by: curate-add
     status: pending
+    check_note: >
+      2026-09-11: checked twice this run via python3 urllib against
+      CourtListener. Neither check found any entry supporting a 09-11 date.
+      One put the last entry at #39 (filed 08-04, resetting the hearing to
+      09-02, motion to dismiss still under advisement); the other found
+      nothing past 08-28. Either the docket has not been updated since the
+      09-02 hearing or nothing was filed. NOT resolved — flagged for a date
+      correction rather than guessed at. Tooling note: CourtListener docket
+      HTML pages returned 0-byte bodies on repeated fetches within one
+      session (rate limiting); the v4 search API stayed reliable throughout.
 
   - id: sk-hynix-solidigm-disclosure-1204
     claim: >
@@ -3102,7 +3131,8 @@ expectations:
       / Castor; 52-0 out of Energy and Commerce in July), which would push
       states to make data centers and other large loads cover their own
       grid-upgrade costs — targeted for the week after Labor Day
-    due: 2026-09-11
+    due: 2026-09-14
+    slips: [2026-09-11]
     due_precision: week
     thread: datacenter-backlash-capital-risk
     entities: []
@@ -3117,7 +3147,12 @@ expectations:
       the likelier outcome and is itself the signal.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
+    status: slipped
+    resolution_note: >
+      Slipped 2026-09-11. The House's own Bills-This-Week feed shows H.R. 9340
+      on the suspension calendar for the week of 09-14, not the week of 09-11.
+      The slip is the outcome this entry predicted as likelier when it was
+      logged on 09-05.
 
   - id: openai-misalignment-reporting-framework
     claim: >
@@ -3335,3 +3370,93 @@ expectations:
     logged: 2026-09-10
     logged_by: curate-add
     status: pending
+
+  - id: ofac-gl-cc-winddown-0919
+    claim: >
+      OFAC General Licence CC's wind-down authorization expires at 12:01 a.m.
+      EDT on 2026-09-19, after which all transactions with Golden Global
+      Yatirim Bankasi Anonim Sirketi, Golden Global Varlik Kiralama Anonim
+      Sirketi, Golden Global Portfoy Yonetimi Anonim Sirketi and any entity
+      they own 50% or more of are prohibited outright under E.O. 13902.
+    due: 2026-09-19
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: [iran, united-states]
+    source: https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd
+    confidence: confirmed
+    what_confirms: >
+      The deadline is in the licence text itself, so it passes by operation of
+      law. What is actually worth watching is second-order: whether Turkey
+      responds, whether further third-country financial designations follow
+      under the same order, and whether OFAC extends the wind-down.
+    logged: 2026-09-11
+    logged_by: curate-add
+    status: pending
+
+  - id: ofac-gl-dd-winddown-0923
+    claim: >
+      OFAC General Licence DD's wind-down authorization expires at 12:01 a.m.
+      EDT on 2026-09-23, after which payments for overflights of Iranian
+      airspace (31 CFR 560.522), bunkering and emergency repairs
+      (31 CFR 560.529), and reexportation of civil aircraft to Iran on
+      temporary sojourn (Iran GL J-1) are all prohibited outright.
+    due: 2026-09-23
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: [iran, united-states]
+    source: https://www.federalregister.gov/documents/2026/09/11/2026-18576/publication-of-iran-related-web-general-licenses-cc-and-dd
+    confidence: confirmed
+    what_confirms: >
+      The deadline is in the licence text. The checkable consequence is
+      operational: whether commercial overflight of Iranian airspace by
+      US-person-connected carriers actually stops, whether IATA or individual
+      carriers reroute, and what that does to Gulf routing costs. Read
+      alongside red-sea-oil-shock, since Bab el-Mandeb closure and Iranian
+      airspace closure compound on the same trade lanes.
+    logged: 2026-09-11
+    logged_by: curate-add
+    status: pending
+
+  - id: openai-hawley-response-1001
+    claim: >
+      OpenAI answers Senator Josh Hawley's 16 questions and produces internal
+      documents to the Senate Homeland Security and Governmental Affairs
+      subcommittee on disaster management, by the October 1 deadline set in
+      his 2026-09-09 letter to Sam Altman on the July Hugging Face
+      rogue-agent breach.
+    due: 2026-10-01
+    due_precision: day
+    thread: openai-agent-security-incident
+    entities: [openai]
+    source: https://www.hawley.senate.gov/
+    confidence: confirmed
+    what_confirms: >
+      A public statement from the subcommittee, a released response, or a
+      reported refusal/extension. A company declining or partially answering a
+      congressional document demand is itself the signal, so silence on
+      10-01 is a real outcome rather than a failed check.
+    logged: 2026-09-11
+    logged_by: curate-add
+    status: pending
+
+  - id: sf-datacenter-moratorium-vote-0915
+    claim: >
+      The San Francisco Board of Supervisors votes on a data-centre moratorium
+      on 2026-09-15.
+    due: 2026-09-15
+    due_precision: day
+    thread: datacenter-backlash-capital-risk
+    entities: []
+    source: "Hoodline, 2026-09-11, surfaced via Google News RSS at 10:03 ET; publisher URL not resolved this run"
+    confidence: rumored
+    what_confirms: >
+      The Board of Supervisors' own agenda or roll-call record at sfbos.org.
+      LOGGED WITH A CAVEAT: this came from a Google News redirect that could not
+      be resolved to a publisher page this run, and the headline is the only
+      evidence. Confirm the item exists on the 09-15 agenda before treating the
+      vote as scheduled. If it is real it is the sixth US jurisdiction in one
+      week with a live data-centre siting fight, and the first major city.
+    logged: 2026-09-11
+    logged_by: curate-add
+    status: pending
+

@@ -13,6 +13,10 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-09-11 — Jensen Huang tells Goldman's Communacopia conference he's confident Nvidia can grow revenue 70% next fiscal year
+
+- ⚠️ **Jensen Huang told the Goldman Sachs Communacopia + Technology conference he is "confident" Nvidia can grow revenue 70% year-over-year next fiscal year — roughly $680bn on a current-year base near $400bn — grounding the claim in AI-compute demand still exceeding supply and saying Nvidia is turning away business it cannot fill.** He separately flagged cybersecurity as the next major AI growth vertical after training and inference. This is a fresh, on-the-record demand-side number from Nvidia's own CEO to set against this thread's existing ~$1 trillion Blackwell+Rubin backlog aggregate, but it rests on conference coverage cross-read across three outlets, not an Nvidia IR document or transcript. ([TechCrunch](https://techcrunch.com/2026/09/10/jensen-huang-explains-why-nvidia-will-grow-an-astounding-70-next-year/)) ⟨daily 2026-09-11⟩
+
 ## 2026-09-07 — NYT: blacklisted Inspur kept buying Nvidia chips, including Blackwell, through a part-owned subsidiary
 
 - ⚠️ **The New York Times reported that Inspur, blacklisted by the US in 2023, kept buying advanced Nvidia chips — including Blackwell parts — through Aivres Systems, a nominally independent Silicon Valley subsidiary it part-owns (roughly one-third).** The investigation puts $5.6bn of hardware moving through that channel April 2024 → February 2026 — a live example of this thread's demand-side question (who is actually buying, through what channel) running into export-control evasion. The NYT text itself is paywalled and was not read directly; the $5.6bn figure comes from secondary outlets summarising it, so treat it as reported-not-verified. A separate $2bn Megaspeed/Malaysia claim in the same cluster appears to recycle an October 2025 story and is excluded here pending a dedupe check. ⚠️ No direct NYT link located; recorded from secondary summaries. ⟨daily 2026-09-07⟩

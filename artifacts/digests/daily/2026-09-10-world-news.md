@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-09-10
-status: building
+status: final
 window_start: 2026-09-10T05:00:00-04:00
-as_of: 2026-09-10T15:00:00-04:00
+as_of: 2026-09-11T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -137,6 +137,46 @@ formal response.
   the thread was quiet.
 - **`iran-hormuz-restricted-zone-boundaries` — 09-21, pending.**
 - **`israel-general-election` — 10-27, pending.**
+
+## 📥 Finalize pass — the 15:00 → 05:00 window
+
+*Added on the 2026-09-11 10:00 ET run, covering everything after this
+digest's 15:00 ET cut.*
+
+- **Zelenskyy and Mark Carney signed a declaration establishing a 100-year
+  Canada–Ukraine partnership, alongside a defence package Zelenskyy put at more
+  than $1bn — Patriot systems, air-defence interceptors and ammunition for
+  F-16s — with the total value of agreements between the two countries
+  exceeding $2bn.** This turns the morning's line ("Zelenskyy is in Canada
+  seeking air-defence and winter support") from an ask into a signed
+  commitment. Canada will also fund Ukrainian veterans' support and expand
+  energy and drone-production cooperation.
+  ([Reuters via wires](https://www.yahoo.com/news/articles/zelenskiy-arriving-canada-says-air-064159148.html))
+  <!-- k: t=russia-ukraine-war e=ukraine,canada axis=diplomacy sev=major -->
+
+- **The IAEA Board of Governors voted 23–3 with eight abstentions on 09-09 to
+  refer Iran's nuclear file to the UN Security Council — the first such
+  referral in twenty years — and the Council took it up the following day.**
+  The Board cited loss of "continuity of knowledge" over Iran's pre-strike
+  enriched-uranium stockpile (440.9kg at up to 60% U-235) since the June 2025
+  US–Israeli strikes, with no IAEA access to any declared Iranian nuclear
+  facility since. The US, UK, France and Germany backed it; Russia, China and
+  Niger opposed. At its 10218th meeting on 09-10 the Security Council debated
+  the moribund 1737 sanctions committee, with the US and E3 maintaining that
+  the JCPOA snapback was triggered in 2025 and restores pre-2015 sanctions and
+  Russia and China maintaining it was not — a stalemate that has left the
+  Council unable to elect a committee chair or appoint a panel of experts.
+  Practically, Russian and Chinese vetoes mean a Council vote produces nothing.
+  ([UN Meetings Coverage SC/16448](https://www.globalsecurity.org/wmd/library/news/iran/2026/09/iran-260910-unsc01.htm))
+  <!-- k: t=iran-conflict-widening e=iran,united-nations axis=diplomacy sev=major -->
+
+- ⚠️ **Correction to this digest's own thread-candidate line on the Congo Ebola
+  outbreak.** It was offered above at "nearly 4,000 cases and more than 1,800
+  deaths." Africa CDC's own 09-10 figures are **6,843 cases and 3,310 deaths** —
+  nearly double. The candidate's substance was right and its numbers were a
+  reporting period out of date. Full entry, including the spread into M23-held
+  North Kivu, is on the 2026-09-11 digest.
+  <!-- k: axis=conflict -->
 
 ## 🔄 Map changes
 

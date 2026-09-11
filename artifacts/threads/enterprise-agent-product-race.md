@@ -13,6 +13,11 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
+## 2026-09-11 — OpenAI opens its Agents API to the public and Salesforce completes buying Fin, both pushing further into managed agent infrastructure
+
+- **OpenAI opened public beta of an Agents API that exposes its managed Codex harness — sessions, orchestration, context compaction and crash recovery — as a general-purpose API rather than a Codex-specific tool.** Developers supply their own tools and choose an execution environment (OpenAI-managed sandbox, self-hosted via workspace/capability directories, or a partner sandbox); built-ins include code sandboxing, file editing, MCP connections, artifact generation and multi-agent delegation, with no fee beyond usage. It puts OpenAI's internal agent-orchestration stack into direct competition with the agent-framework vendors this thread tracks. ([OpenAI](https://openai.com/index/introducing-the-agents-api)) ⟨daily 2026-09-11⟩
+- **Salesforce completed its acquisition of Fin, folding the AI customer-service company's model suite and technical team into Salesforce AI Labs alongside Agentforce.** Per Salesforce's own release, Fin serves 30,000+ companies with an average 76% autonomous resolution rate across chat, email, WhatsApp, SMS, voice and Slack, and will keep operating as a distinct product line rather than being absorbed. ([Salesforce](https://www.salesforce.com/news/)) ⟨daily 2026-09-11⟩
+
 ## 2026-09-08 — Cognition raises over $2bn at a $48bn valuation, nearly doubling in four months
 
 - **Cognition raised more than $2bn in a Series E led by Andreessen Horowitz and Accel, valuing the maker of the Devin coding agent at $48bn** — close to double the $26bn it carried four months ago. The company put run-rate revenue at almost $900m, up from $492m, and named Nvidia, GE Aerospace, Citi and Mercedes-Benz as production customers of the agent. ⚠️ The revenue and customer figures are the company's own, reported via Bloomberg, not independently verified. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-08/ai-startup-cognition-raises-2-billion-at-a-48-billion-value)) ⟨daily 2026-09-08⟩

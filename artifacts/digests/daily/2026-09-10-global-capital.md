@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-10
-status: building
+status: final
 window_start: 2026-09-10T05:00:00-04:00
-as_of: 2026-09-10T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-11T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-10
@@ -267,6 +267,77 @@ recorded this lane as writing nothing; that was wrong. It is slow and silent,
 not dead. These items were caught by reading the buffer after the fact.
 Publisher URLs are Google News redirects rather than resolved links.
 
+## 📥 Finalize pass — the 15:00 → 05:00 window
+
+*Added on the 2026-09-11 10:00 ET run, covering everything after this
+digest's 15:00 ET cut.*
+
+- **Christine Lagarde named AI financing needs directly as a driver of the
+  long-end bond stress the ECB is watching — "significant financing needs from
+  AI is a key driver," in her words at the post-decision press conference.**
+  This is the first time this lens has a central-bank official stating the
+  AI-capex-to-sovereign-yield channel out loud, rather than the map inferring
+  it from the correlation. Markets are now pricing additional ECB hikes after
+  Lagarde called Thursday's move a "no brainer." ⚠️ The quote is corroborated
+  identically across two independent aggregations; the ECB's own transcript
+  page 403'd on direct fetch, so this is aggregator-corroborated rather than
+  read off the primary record.
+  ([Investing.com / Reuters](https://www.investing.com/news/economy-news/lagarde-comments-at-ecb-press-conference-4895975),
+  [Bloomberg](https://www.bloomberg.com/news/newsletters/2026-09-10/markets-bet-on-more-rate-hikes-as-lagarde-calls-latest-lift-a-no-brainer))
+  <!-- k: t=cross-border-rates,ai-buildout-debt-risk e=european-central-bank axis=capital sev=major -->
+
+- **Treasury's first operation under its tripled long-end buyback programme
+  undershot its own ceiling — $5.19bn of 10-to-20-year debt bought against a
+  $6bn maximum — and Bloomberg reports the shortfall itself intensified the
+  selloff that pushed yields to multi-year highs.** This is the concrete test
+  the standing capital snapshot flagged as coming: whether Bessent's TGA-funded
+  buyback is read as actually supporting the long end. The answer this
+  operation gave was no. A buyer of last resort that cannot fill its own
+  ceiling is a demand-side signal, not a policy one. This expands what the
+  morning's digest recorded as "a Treasury buyback took less than expected"
+  into the specific numbers and the mechanism.
+  ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-10/treasury-buys-less-than-maximum-in-longer-debt-buyback-operation),
+  [Treasury](https://home.treasury.gov/news/press-releases/sb0607))
+  <!-- k: t=treasury-long-end-intervention e=united-states axis=capital -->
+
+- **Saudi Arabia's own oil output has fallen to its lowest level since 1990** —
+  cited by Deutsche Bank's Jim Reid as one of Thursday's specific escalation
+  inputs alongside the Houthi capture of Mokha, distinct from the US–Iran naval
+  exchange this map has tracked as the primary mechanism. ⚠️ Single-sourced to
+  a bank strategist quoted in a market wrap; not independently corroborated.
+  ([CNBC](https://www.cnbc.com/2026/09/11/oil-price-today-iran-brent-wti-trump.html))
+  <!-- k: t=red-sea-oil-shock e=saudi-arabia axis=capital -->
+
+- **Vistra priced $1.5bn of junior subordinated hybrid notes — $850m at 7.00%
+  and $650m at 7.25%, both due 2057 — and the money is not going into new
+  generation.** Vistra's own use-of-proceeds language in the 424B5 earmarks it
+  to redeem two existing preferred series (8.0% and 7.0%) at their October and
+  December reset dates. That matters for the thread it sits on: one of the
+  largest US independent power generators supplying the grid AI datacenters
+  draw on is refinancing its own balance sheet at 7%+ for a 31-year tenor, not
+  funding buildout. Closing expected 2026-09-24.
+  ([SEC EDGAR 424B5](https://www.sec.gov/Archives/edgar/data/1692819/000114036126036130/0001140361-26-036130-index.htm),
+  [PR Newswire](https://www.prnewswire.com/news-releases/vistra-prices-registered-offering-of-1-5-billion-of-junior-subordinated-notes-302875819.html))
+  <!-- k: t=datacenter-power-grid,nuclear-for-ai,ai-buildout-debt-risk e=vistra axis=deals -->
+
+- **ARK sold another ~$9.9m of AMD (19,491 shares via ARKK) on 09-09,
+  continuing a multi-week trim ahead of the MI450/Helios ramp**, even as
+  coverage reports customer pull from Anthropic, OpenAI and Meta on MI450
+  running ahead of forecast. AMD remains ARK's third-largest holding, so this
+  reads as profit-taking into a 200%+ year-to-date rally rather than an exit —
+  but it is the second chip name ARK has trimmed just ahead of a
+  hardware-revenue inflection, which is the actual-money signal
+  `chip-hyperscaler-rotation` watches for.
+  ([24/7 Wall St.](https://247wallst.com/investing/2026/09/10/cathie-wood-is-selling-amd-before-mi450-arrives-is-she-about-to-miss-another-nvidia/))
+  <!-- k: t=amd,chip-hyperscaler-rotation e=amd axis=capital -->
+
+- **Oracle reported Q1 FY2027 after Thursday's close — RPO $664bn, up $209bn
+  year over year — resolving the `oracle-q1-fy27-earnings` expectation on its
+  due date.** The release and the 8-K are 09-10 events; the market's 7%
+  response and the full read are carried on the 2026-09-11 digest, where the
+  interpretation sits.
+  <!-- k: t=oracle-stargate-bet e=oracle axis=capital -->
+
 ## 🔄 Map changes
 
 - **`softbank-all-in`** — new 2026-09-09 entry, the early bridge-loan
@@ -341,3 +412,51 @@ which had been reported broken. Three gaps stand:
    fell back to WebFetch, the one transport documented as Cloudflare-blocked
    — see `coverage-log.md`. `python3 urllib` works and is now recorded in
    `sources/benchmarks.yaml` as the transport to brief agents with.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-11 10:00 ET against Money Stuff, Axios Pro Rata, FT Unhedged and
+Bloomberg Technology.*
+
+**They led with → we missed:**
+
+- **Saudi Arabia's Public Investment Fund is weighing a merger of Electronic
+  Arts with its own Savvy Games Group**, in a $214bn industry — Axios Pro
+  Rata's lead "BFD" item, sourced to Bloomberg. Nowhere in the corpus for
+  09-10. This is the same adjacent-but-relevant shape the 09-09 pass accepted
+  for LIV Golf's Chapter 11: it is not an AI story, but `pif-ai-buildout`'s
+  own watch line asks whether PIF's capital allocation and fiscal squeeze
+  eventually reach the AI side, and a merger of this size on the non-AI side
+  is evidence about that.
+  <!-- k: t=pif-ai-buildout e=saudi-public-investment-fund axis=deals -->
+
+- **FT Unhedged ran "Why Warsh is starting to bite back"** among its top five
+  that morning — Fed Chair Kevin Warsh caught between his own hawkish posture
+  and Bessent's buyback programme working against it. This digest covers the
+  buyback undershoot without ever naming its own Fed chair, which is the
+  `fed-independence-fight` thread's whole subject.
+  <!-- k: t=fed-independence-fight e=federal-reserve axis=power -->
+
+**⛔ Market-number audit: NOT clean.** The morning entry for the 10-year prints
+a **+0.089pp** change against a stated Wednesday close of **4.845%**, but
+4.926 − 4.845 = **0.081pp**, not 0.089. Separately, the afternoon macro strip
+cites a *different* Wednesday close for the same instrument — **4.840%**. Both
+are small, and neither changes any conclusion drawn from them, but this is
+exactly the class of internal-consistency error the audit exists to catch, and
+it is the first failure since the four-day Brent transposition. ✅ The
+carried-forward "since July vs. since May" question on `red-sea-oil-shock` is
+now **resolved: May was correct**, confirmed against a dated CNBC quote.
+
+**✅ Thread name-search audit: backlog closed.** As of the 09-10 pass, 8 of 23
+global-capital threads had been name-audited and 15 were outstanding. This
+pass covered the remainder by organisation and person name — Berkshire,
+Fidelity, BlackRock, CXMT, Canada/Mexico tariffs, Commerce Department equity
+stakes, SpaceX/xAI — and found nothing beyond the two misses above. All 23 now
+carry an audit on record. This backlog had been growing for four passes.
+
+**Both covered:** the Treasury buyback undershoot; the 30-year at 5.34%; the
+Vantage Data Centers $2bn loan approach to Pimco and PGIM; the ECB hike.
+
+**We had → they didn't:** the OFAC Iran aviation licence revocation (world
+lens); the Vistra hybrid pricing read against its use of proceeds; Lagarde's
+AI-financing quote; the five-jurisdiction datacenter backlash cluster.

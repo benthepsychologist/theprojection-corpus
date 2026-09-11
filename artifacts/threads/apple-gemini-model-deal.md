@@ -14,6 +14,10 @@ figure is reporter-sourced only); how much runs on Apple's own models vs.
 Google's; the EU/DMA fight over Siri AI's EU launch; whether Apple builds
 back toward its own.
 
+## 2026-09-11 — Siri's AI beta will ship 09-14 with daily usage caps and a future paid tier
+
+- ⚠️ **Apple's Siri AI beta ships with iOS/OS 27 on 2026-09-14 carrying daily usage caps and a future paid tier, per TLDR AI's 09-10 newsletter issue.** This speaks directly to this thread's own watch question — how Apple rations a model it does not fully control — and is new information the thread's notes (which stop at a 07-27 crawl) don't yet have. Single-sourced to a newsletter aggregator rather than an Apple statement; carried as a thread update, not an established fact from Apple itself. ([TLDR AI](https://tldr.tech/ai/2026-09-10)) ⟨daily 2026-09-11⟩
+
 ## 2026-09-09 — Siri AI ships publicly, still gated to a waitlist and still blocked in the EU and China
 
 - **Siri AI shipped 2026-09-09, English-only and gated by a waitlist, with Apple reconfirming at actual ship time that it remains blocked in the EU and China with no launch timeline given for either** — the thread's own EU/DMA watch item, now answered at shipping time rather than at announcement time: still unresolved. The ~$1B/yr Google deal figure remains unconfirmed by either company.
