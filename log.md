@@ -9924,3 +9924,34 @@ live it is via Pages' own git integration, not via this run. Unchanged since
    clinician reader is arguably the more load-bearing series.
 5. **Two authentications only Ben can do**: `gcloud auth login` (BigQuery,
    blocking `build-world-news` for a fourth day) and the site `.env`.
+
+### Addendum — the front briefing agent's rewrite landed after publish, and was worth reconciling
+
+The front-brief correction dispatched at 14:33 ran ~9.5 minutes against
+siblings that returned in 2–3. It was treated as silent per the
+re-dispatch-don't-wait rule, and the one-bullet correction was applied by hand
+and published at 14:43. **The agent's own version then arrived at 14:47**, and
+reconciling it rather than discarding it was the right call in both
+directions:
+
+- **It was better than the hand-edit in one way** — it carried the concrete
+  Moonshot detail (a sample exposing a PLA-affiliated user pulling CCTV
+  footage in Chengdu), which is the fact that actually makes the story land.
+  The hand-edit had only the abstract accusation.
+- **It was wrong in one way** — it folded **Xiaomi** into the
+  routing-and-rebranding accusation. Per Anthropic's own report Xiaomi
+  replayed its own MiMo customer sessions through Claude to generate training
+  data **without serving the answers back**, which is the whole distinction
+  between it and the other three. Publishing that would have accused a named
+  company of conduct its own accuser does not allege.
+
+Merged: the agent's Chengdu detail, the hand-edit's correct three-lab
+attribution. Re-applied 4/4, re-exported, republished
+(`publish-2026-09-11T144728Z`).
+
+⚠️ **Worth noting for next time:** the merged bullet is 210 characters against
+a 220 cap, and the agent reported trimming from 245 → 235 → 211 to fit. The
+front page's bullet cap is now the binding constraint on how much of a
+multi-actor accusation can be stated accurately in one sentence. That is a
+real editorial pressure toward exactly the kind of compression that produced
+the Xiaomi error.
