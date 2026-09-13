@@ -6599,3 +6599,326 @@ list. Assigned explicitly to the next run rather than re-logged.
   (`courtlistener.com/docket/<id>/...`) worked once via urllib then returned
   0-byte bodies on repeated fetches within the same session; the v4 search API
   stayed reliable throughout. Pace docket fetches or lean on the search API.
+
+## 2026-09-13 critic pass — finalized digest-day 2026-09-12
+
+*Run 2026-09-13, checking Saturday 2026-09-12 — a digest-day with no live
+`/daily` run at all. All three lens digests for it were reconstructed
+after the fact on 09-13 (global-capital and mental-health from thread
+material and a retroactive primary-source check; frontier-ai was still
+being written by a parallel agent when this pass started). Two of the
+three digests were available to read line-by-line; the third was not, and
+this pass says so rather than guessing at what it contains.*
+
+### global-capital / 2026-09-12 — one real miss
+
+The reconstructed digest's own throughline is Nvidia moving from funding
+AI compute demand to reportedly anchoring up to $10bn of Anthropic's own
+IPO, now sized to $100bn at a $2-2.3 trillion valuation (Reuters via
+Bloomberg/Yahoo, first published Fri evening 09-11, still the live story
+Saturday). Checked against all four named daily benchmarks:
+
+- **Money Stuff (Bloomberg/Levine):** dark since Thu 09-10, no Fri or Sat
+  edition — confirmed via the author's own `.rss` endpoint, nothing to
+  miss.
+- **Axios Pro Rata:** no Saturday edition (weekday-only deals newsletter).
+  The reader-proxy fetch (`r.jina.ai/.../axios-pro-rata`) is same-day-only
+  per the 08-25/09-09 findings, so it cannot serve Saturday's content
+  retroactively regardless — recorded as "no edition existed," distinct
+  from "not checkable."
+- **FT Unhedged:** reachable via its own `?format=rss` feed, and it
+  actually carried a genuine Saturday item — "Chart of the Week: the long
+  shadow of quantitative easing" (central bank balance sheets staying
+  large), published 09:30 UTC 09-12. Per the standing 08-25 finding, the
+  body is paywalled past the RSS headline/subhead even through the reader
+  proxy; confirmed again today (full nav/paywall page, no article text).
+  The headline describes a standing macro theme rather than a discrete
+  dated event, so this is logged as "exists, unreachable past the
+  headline," not a miss.
+- **Bloomberg Technology:** reachable via the reader proxy
+  (`r.jina.ai/.../technology`) and led Saturday with **Sam Altman telling
+  Fortune, in an interview video published 09-12, that OpenAI will not IPO
+  in 2026** — this year would be an "ill-advised moment" — and that a
+  listing won't happen until 2027, explicitly because the company is
+  prioritizing safety over commercial readiness (published
+  2026-09-12T19:36 UTC). **Absent from the corpus entirely.** The standing
+  `openai-ipo-timing` thread's last entry is 08-10 ("2027 at the earliest"
+  analyst consensus plus a flat-valuation tender offer) — this is a fresh,
+  on-the-record CEO statement, not a restatement, and it lands the same
+  Saturday this digest's own lead story has a *different* frontier lab
+  (Anthropic) moving toward a listing with Nvidia anchoring it. Folded
+  into the digest's new appendix, not merged into the body — that's for
+  `openai-ipo-timing` and `frontier-lab-ipos` to pick up.
+
+Appended as `## Appendix — Coverage check vs. benchmarks` at the bottom of
+`artifacts/digests/daily/2026-09-12-global-capital.md`; frontmatter
+`coverage:` flipped `pending` → `done` (`as_of` was already
+`2026-09-13T05:00:00-04:00`, no change needed).
+
+### mental-health / 2026-09-12 — clean, and the null is real
+
+The reconstructed digest already did its own primary-source check across
+five threads and correctly reported nothing moved (CA's four AI-therapy
+bills still enrolled/unsigned, Raine v. OpenAI docket unchanged, FDA/MHRA
+guidance pages static). Checked all four named daily benchmarks live
+rather than trusting that self-report:
+
+- **Behavioral Health Business:** reachable (Googlebot UA), newest item
+  Fri 09-11 18:16 UTC. No Saturday item — expected, weekday-only outlet.
+- **Fierce Healthcare:** reachable (Googlebot UA, `/rss/xml`), newest
+  items both Fri 09-11. No Saturday item — expected.
+- **MobiHealthNews:** reachable via the `r.jina.ai` proxy on the feed URL.
+  The feed's own `lastBuildDate` ticked to Saturday, but the newest actual
+  article (an Apple/Sonera acquisition disclosure) is dated Fri 09-11
+  16:42 ET — no Saturday article despite the metadata refresh. Worth
+  noting as a small trap: a fresh `lastBuildDate` is not proof of fresh
+  content.
+- **STAT Health Tech:** reachable directly via urllib, but genuinely
+  quiet since **Thursday 09-10** — both `lastBuildDate` and every item
+  date stop there. ⚠️ This is worth flagging rather than waving through:
+  STAT was specifically logged (08-24) as *not* weekday-only, unlike the
+  other three — a two-day-plus silence is new for this benchmark and
+  should be re-checked next pass rather than assumed to be more of the
+  same weekend shape.
+
+No misses. Appended a short "no misses, and why the null is real" appendix
+to `artifacts/digests/daily/2026-09-12-mental-health.md`; frontmatter
+`coverage:` flipped `pending` → `done`.
+
+### frontier-ai / 2026-09-12 — digest never landed; best-effort benchmark
+check only, follow-up required
+
+`artifacts/digests/daily/2026-09-12-frontier-ai.md` did not exist when
+this pass started (a separate agent was reconstructing it in parallel)
+and still did not exist when this pass had to conclude, after checking
+twice with a wait in between. **This lens could not be checked
+line-by-line and is not being marked done on the strength of a guess.**
+What was done instead: the four named AI benchmarks were checked directly
+for what they led with on Saturday, using Friday's `2026-09-11-frontier-ai.md`
+as the last known state of the map:
+
+- **The Rundown AI:** newest item Fri 09-11 14:30 GMT ("Anthropic opens
+  the files on global Claude misuse" — already on this map from Friday).
+  No Saturday edition.
+- **TLDR AI:** dated archive pages exist and differ for 09-10 and 09-11
+  (confirmed via distinct `og:description` values); 09-12 and 09-13 both
+  return TLDR's generic fallback page rather than a dated issue — **no
+  Saturday (or, as of check time, Sunday) edition published.**
+- **The Neuron:** confirmed via its own article timestamp that its most
+  recent issue (a "week's Top 5" edition covering the Altman/Congress
+  slowdown story) published **2026-09-13T17:30 UTC — Sunday**, not
+  Saturday. The prior dated issue is Friday 09-11. No Saturday edition.
+- **The AI Daily Brief:** `/e/2026-09-12` 404s; `/e/2026-09-13` returns
+  200 — confirms the already-documented Sunday-not-Saturday cadence held
+  again this week.
+
+All four AI daily benchmarks were therefore silent on Saturday by
+construction, which is expected and matches the pattern already on record
+for this set. A secondary check for anything frontier-ai-specific dated
+09-12 outside the named benchmarks turned up only the Altman/OpenAI-IPO
+item logged under global-capital above (Bloomberg Technology,
+2026-09-12T19:36 UTC) — arguably as relevant to this lens as to
+global-capital, since Altman's stated reason is safety rather than
+market timing, but it is being logged once, under global-capital, to
+avoid double-counting. Also checked: xAI's own blog shows no Grok 4.7
+announcement as of this check — the 09-11 digest's "still nothing" flag
+on `grok-4-7-ship` (due 09-12) stands unchanged, not a new finding.
+
+**⚠️ Flagged for a follow-up spot-check once the 09-12 frontier-ai digest
+exists:** does it capture the Altman OpenAI-IPO/safety framing at all, and
+does its own reconstruction (presumably drawing on primary sources beyond
+these four quiet benchmarks) turn up anything this pass's benchmark-only
+check couldn't see. Frontmatter `coverage:`/`as_of` on that file are
+untouched — do not mark this lens `done` until it has actually been read.
+
+### Guardrail check — no new watchlist/thread candidate proposed
+
+The one genuine miss found (Altman ruling out an OpenAI IPO in 2026 for
+safety reasons) fits inside the map's existing `openai-ipo-timing` and
+`frontier-lab-ipos` threads cleanly — it is a strong update to a standing
+thread, not a new pattern with no home. Nothing this pass rises to the
+repeat-pattern bar the auto-growth rule is for; no watchlist/thread
+proposal is being made.
+
+### Tooling
+
+- ✅ **FT's own `?format=rss` endpoint and Bloomberg's author-page
+  `.rss` endpoint both still work exactly as documented** (08-10/08-23
+  notes) — no escalation on either since last checked.
+- ✅ **A dated-archive probe by content diff, not just HTTP status, is a
+  reliable way to detect "no issue today" on sites that soft-200 a
+  fallback page.** TLDR AI's `/ai/<date>` paths return HTTP 200 for every
+  date whether or not an issue exists; comparing the `og:description`
+  (real headline vs. the generic tagline) or page byte-length cleanly
+  separated real 09-10/09-11 issues from the fallback served for
+  09-12/09-13. Status-code-only checks would have wrongly read this as
+  "reachable, presumably current."
+- ⚠️ **A feed's `lastBuildDate` refreshing is not evidence of new
+  content** — MobiHealthNews's proxied feed ticked its build timestamp to
+  Saturday while its newest actual item stayed dated Friday. Check item
+  `pubDate`s, not the channel-level timestamp.
+- ✅ Bloomberg Technology's reader-proxy route remains the right transport
+  for its rolling homepage and surfaced a real, otherwise-invisible miss
+  this pass — no archive problem this time since the target was "today's
+  homepage," not a specific past day.
+
+## 2026-09-13 critic pass — finalized digest-day 2026-09-11. Three lenses, three genuine misses, and two of global-capital's four benchmarks were unreachable by every documented transport
+
+*Run 2026-09-13, checking Friday 2026-09-11 — also overdue, for the same
+reason as the 09-12 pass logged just above: no `/daily` run happened at
+all on 09-12, so this map had two backlogged digest-days needing a critic
+pass on the same day. All three 09-11 digests (frontier-ai, global-capital,
+mental-health) were read in full before any benchmark was checked. `curl`
+was not attempted; every fetch went through `python3 urllib` first, with
+the Googlebot UA and `r.jina.ai` reader-proxy fallbacks used only where
+this file's access notes call for them.*
+
+### frontier-ai / 2026-09-11 — two genuine misses, one softer flag, one benchmark structurally silent
+
+All four named benchmarks were checked. The Rundown AI and TLDR AI
+cleared on the first `urllib` attempt with no proxy needed. **The Neuron
+never published a 09-11 issue at all** — confirmed not just by an empty
+archive page but by watching its very next post land on **Sunday 09-13**
+as a "week's Top 5" catch-up, so Friday was genuinely skipped rather than
+merely slow to index. The AI Daily Brief's `/e/2026-09-11` loaded cleanly
+and was a real, dated Friday edition.
+
+- **Missed 1 — Microsoft plans to triple its data-center capacity to 38
+  gigawatts by 2032, up from roughly 12GW today.** Bloomberg's report
+  broke 09-10 and was still live in The AI Daily Brief's 09-11 "By the
+  Numbers" sidebar; independently corroborated via web search (Bloomberg,
+  Cloud Computing News, Dataconomy, TechBriefly all carry the same figure
+  and date). **Absent from the corpus entirely** — `grep -rli "38 ?gw"
+  artifacts/` returned nothing anywhere. This sits squarely on the map's
+  own datacenter-capex territory (`ai-datacenter-sites`,
+  `datacenter-power-grid`, `chip-hyperscaler-rotation` are all plausible
+  homes) and is arguably a global-capital story too, given it is a
+  hyperscaler capex-sizing number of the kind that lens tracks daily.
+- **Missed 2 — Meta shares rose roughly 6% and JPMorgan upgraded the
+  stock to Overweight (price target raised to $820) on 09-10, crediting
+  Muse's App Store performance** (the agent app hit #3 in the US App
+  Store on its second day, at roughly 10x the internal testing cohort's
+  usage). Found via The AI Daily Brief's 09-11 "Business Product Finance"
+  segment; corroborated via web search (CNBC, Yahoo Finance, BigGo
+  Finance). The map has three separate entries tracking Meta Muse's
+  launch on `enterprise-agent-product-race` since 09-08 and had never
+  once carried the market's reaction to it. `grep -rli "jpmorgan.*meta\|
+  meta.*820\|83,000" artifacts/` returned nothing.
+- **Flagged with a caveat, not counted at full confidence — a Meta
+  "Shared Agents" feature for Muse, reported "coming" at Meta Connect.**
+  TLDR AI carried it as one of only three items in its top "Headlines &
+  Launches" section (alongside OpenAI's Agents API and Altman's slowdown
+  remarks, both already on the map), but the sourcing is TestingCatalog —
+  a leak/teardown site describing what Meta "will" announce, not a Meta
+  statement or a shipped feature. Logged with the same
+  `confidence: rumored`-style caveat this map already uses elsewhere
+  rather than as a clean miss.
+- **Already covered and verified present, not re-logged:** OpenAI's
+  Agents API public beta, Salesforce's completed Fin acquisition, Sam
+  Altman's slowdown/antitrust remarks, Moonshot's 300,000-query silent
+  relay to Claude (on `kimi-distillation-fight`, with exact figures), the
+  DOJ's Nvidia/Groq probe, and Anthropic's chikungunya gain-of-function
+  classifier case (on `frontier-model-gov-review-precedent`). OpenAI's
+  GPT-Live-1 launch and its $200 Pro-subscription pause were raised again
+  by these same benchmarks but were already judged below this lens's bar
+  by the prior (09-11) critic pass; that judgment stands unchanged.
+
+### global-capital / 2026-09-11 — no misses found, but half the benchmark set was unreachable
+
+- **Money Stuff (Matt Levine): no 09-11 edition**, and this looks
+  structural rather than a fresh gap — the author-page `.rss` feed's
+  newest item is Thursday 09-10 ("Dallas Gets Some Equities"), and
+  checking back six weeks of the same feed, Levine has not published on a
+  single Friday in that span.
+- **FT Unhedged: reachable, existence confirmed, substance not.** The RSS
+  gives Friday's real headline and subhead — "Oil is scary again / Plus
+  wage growth and inflation" — which matches this digest's own oil and
+  CPI coverage on topic. The article body is still fully paywalled even
+  through the `r.jina.ai` reader proxy (re-confirmed today), so the
+  wage-growth angle specifically could not be checked either way.
+- ⛔ **Axios Pro Rata: not checkable.** `r.jina.ai/https://www.axios.com/
+  newsletters/axios-pro-rata` returned a flat 403 this pass — a harder
+  block than the "same-day-only" limitation already on record, which
+  would have made a 09-13 check of 09-11's content invalid anyway even
+  had it loaded.
+- ⛔ **Bloomberg Technology: not checkable.** 403 on a direct fetch, 403
+  with a Googlebot UA, and 403 through the `r.jina.ai` reader proxy that
+  cleared it for the 09-12 pass logged above just one calendar day
+  later — access to this benchmark is flipping pass to pass exactly as
+  the 08-23/08-25 notes describe. No Wayback Machine snapshot exists for
+  09-11 either.
+- **Read the "no misses" verdict accordingly: this pass had real
+  visibility into only one full benchmark (Money Stuff, which was
+  silent) plus one headline-only benchmark (FT Unhedged).** A genuine
+  miss sitting inside either blocked outlet would not have been caught
+  this run. The Microsoft 38GW item logged under frontier-ai above is
+  cross-relevant to this lens's own hyperscaler-capex coverage.
+
+### mental-health / 2026-09-11 — one genuine miss, a repeat one
+
+Three of four named benchmarks reached; MobiHealthNews blocked outright
+(direct fetch and the `r.jina.ai` proxy on its feed both 403'd — the
+fifth consecutive escalation logged against this one benchmark).
+STAT Health Tech was reachable but genuinely quiet for 09-11 (newest item
+still Thursday 09-10). Fierce Healthcare was reachable and led with
+general health-tech/policy — ARPA-H's $63M cardiovascular-AI initiative,
+a No Surprises Act reform push, a healthcare-affordability op-ed, a CEO's
+book announcement — none of it this lens's subject, a genuine null.
+
+- **Missed — Behavioral Health Business's 09-11 lead (18:16 UTC / 14:16
+  ET, after this digest's 10:00 ET cutoff) reports that Aware Recovery
+  Care, the Connecticut-based 11-state addiction-treatment provider, is
+  now down to a disputed asset-purchase agreement dated 09-14, an
+  employee-retention deadline that fell on 09-11 itself, and a court
+  filing alleging the retention offer was unlawfully coercive.** This is
+  not this map's first brush with the story — a coverage-critic pass
+  caught Aware Recovery Care's initial financial distress back on
+  **2026-08-05**, but the map treated it as a "one-off" (its own 08-06
+  digest's words) and never opened a thread. `grep -rli "Aware Recovery"
+  artifacts/threads/` still returns nothing today. **This is now the
+  second dated update to the same story caught by a benchmark critic
+  rather than by routine curation, over five weeks apart.**
+- 📋 **Worth flagging, not fixed here: the digest's own "name pass" list
+  (companies searched by name rather than thread term) is entirely
+  digital-mental-health/AI-therapy vendors** — Character.AI, Replika,
+  Woebot, Wysa, Talkspace, and so on — with no traditional
+  behavioral-health-provider or addiction-treatment names on it at all.
+  That gap plausibly explains why the same story has now slipped past two
+  different check mechanisms a month apart.
+
+### Guardrail check — one candidate proposed, not applied
+
+**Aware Recovery Care is a repeat-pattern miss under this map's own
+auto-growth rule** — a story a benchmark critic has now caught twice
+(08-05, 09-11) with no thread ever opened for it. Per this map's
+guardrail, that is flagged here as a watchlist/thread candidate for the
+main session's own call; `attention/threads.yaml`,
+`attention/watchlist.yaml` and `attention/upcoming.yaml` were not touched
+by this pass. The Microsoft 38GW datacenter figure and the Meta/JPMorgan
+reaction (frontier-ai, above) both fit cleanly inside threads the map
+already runs and are not being proposed as new.
+
+### Frontmatter updates
+
+All three 09-11 digests now carry a `## 📋 Coverage critic — 2026-09-13
+pass` appendix and `coverage: done`, `as_of: 2026-09-12T05:00:00-04:00`.
+`artifacts/digests/daily/2026-09-11-frontier-ai.md` additionally flipped
+`status: building` → `final` — it was the one digest of the three still
+sitting unfinalized, and per `/daily`'s own rule this critic pass is
+exactly what finalizes a day once its coverage becomes checkable.
+
+### Tooling
+
+- ✅ `python3 urllib` with a standard browser User-Agent cleared every AI
+  benchmark and two of four global-capital benchmarks (Money Stuff, FT
+  Unhedged) and three of four mental-health benchmarks (BHB, STAT,
+  Fierce) on the first attempt — no proxy or Googlebot UA needed for any
+  of those seven.
+- ⛔ Axios Pro Rata and Bloomberg Technology both 403'd on every
+  transport tried today, including the `r.jina.ai` reader proxy that has
+  cleared each of them on other recent passes — re-confirms the
+  08-23/08-25 finding that access to both flips unpredictably pass to
+  pass and should never be assumed stable.
+- ⛔ MobiHealthNews: fifth consecutive escalation, jina-proxy fetch of
+  the feed itself now also 403s (it had been the one working route as
+  recently as the 09-11 pass logged earlier in this file).

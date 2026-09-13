@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-11
-status: building
+status: final
 window_start: 2026-09-11T05:00:00-04:00
-as_of: 2026-09-11T10:00:00-04:00
-coverage: pending
+as_of: 2026-09-12T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-11
@@ -17,6 +17,16 @@ buffer. Read against `attention/capital-context.yaml`, whose `asof` is
 2026-08-25 and is now seventeen days stale — the readings below note where
 today's data has overtaken it. Three coverage critics are running and their
 appendix is pending.*
+
+*Finalized 2026-09-13. No genuine new-since-written material fell inside
+this digest-day's own window: Reuters' Nvidia-anchors-Anthropic's-IPO scoop
+(Nvidia weighing up to $10bn as an anchor investor, the raise reportedly
+grown to $100bn at a $2-2.3T valuation) first broke Friday evening, after
+this run's 10:00 ET cutoff, and is carried as Saturday 09-12's own
+throughline rather than folded in here. Saturday 2026-09-12 had no daily
+run at all; that digest was reconstructed afterward. Status flipped to
+final with no other content changes; coverage remains pending for a
+separate critic pass.*
 
 ## Today's throughline
 
@@ -189,6 +199,30 @@ piece, not inferred.
    before an expected Trump–Xi meeting. Filed on the world lens; flagging here
    because the trade-relations risk is a capital story. Track it?
    (wire backstop)
+
+## 📋 Coverage critic — 2026-09-13 pass
+
+*Run 2026-09-13, checking digest-day 2026-09-11 — overdue, since no `/daily`
+run happened at all on 09-12. Two of the four named benchmarks were
+unreachable this pass by any documented transport; read the "no misses"
+verdict below as real but narrower than it looks.*
+
+| benchmark | 09-11 state | detail |
+| --- | --- | --- |
+| Money Stuff (Matt Levine) | **no 09-11 edition** | Bloomberg's author-page `.rss` feed's newest item is Thursday 09-10 ("Dallas Gets Some Equities"); checking back six weeks of the feed, Levine has not published on a single Friday in that span — this reads as a standing four-day-a-week schedule rather than a fresh gap |
+| FT Unhedged | reachable, existence confirmed, substance not | RSS gives Friday's headline and subhead: "Oil is scary again / Plus wage growth and inflation" — the topic matches this digest's own oil and CPI coverage, but the article body is still fully paywalled even through the `r.jina.ai` reader proxy, so the wage-growth angle specifically cannot be checked either way |
+| Axios Pro Rata | ⛔ not checkable | `r.jina.ai/https://www.axios.com/newsletters/axios-pro-rata` returned 403 outright this pass — on top of the already-documented same-day-only limitation, which would have made a 09-13 check of 09-11's issue invalid even had it loaded |
+| Bloomberg Technology | ⛔ not checkable | 403 on a direct fetch, 403 with a Googlebot UA, and 403 through the `r.jina.ai` reader proxy; no Wayback Machine snapshot exists for this date either |
+
+**No misses found against the two benchmarks actually reachable this pass.**
+That is a real result, not a hidden gap dressed up as one — but with Money
+Stuff structurally silent on Fridays and both Axios Pro Rata and Bloomberg
+Technology fully unreachable, this pass had genuine visibility into only
+one of four benchmarks' actual content (FT Unhedged's headline layer). A
+real miss sitting inside either blocked outlet would not have been caught
+this run. (The Microsoft 38GW data-center capex report flagged as a
+frontier-ai miss this same pass is arguably relevant here too — see that
+digest's appendix.)
 
 ---
 

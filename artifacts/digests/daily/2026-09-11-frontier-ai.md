@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-11
-status: building
+status: final
 window_start: 2026-09-11T05:00:00-04:00
-as_of: 2026-09-11T10:00:00-04:00
-coverage: pending
+as_of: 2026-09-12T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-11
@@ -156,6 +156,28 @@ framing outright.
 ## 🚨 Flash
 
 **None.** Nothing today would lead a general news front page.
+
+## 📋 Coverage critic — 2026-09-13 pass
+
+*Run 2026-09-13, checking digest-day 2026-09-11 — overdue, since no `/daily`
+run happened at all on 09-12. All four named AI benchmarks were fetched via
+`python3 urllib` with a standard browser User-Agent; no Googlebot UA or
+reader proxy was needed for any of them.*
+
+| benchmark | 09-11 state | what it led with |
+| --- | --- | --- |
+| The Rundown AI | reachable | Anthropic threat-report follow-up coverage — already folded into the 09-10 digest's appendix, not new |
+| TLDR AI | reachable | OpenAI's Agents API (already on the map), a Meta Muse "Shared Agents" leak (miss, below), Altman's slowdown remarks (already on the map) |
+| The Neuron | **no 09-11 edition** | newest dated post stayed at Thursday 09-10 through repeated archive checks; its next post is a Sunday 09-13 weekly catch-up, confirming Friday was genuinely skipped rather than merely slow to index |
+| The AI Daily Brief | reachable | a thematic voice/cost-of-inference roundup; its "By the Numbers" sidebar carried two items this map never picked up (below) alongside several already-covered stories (Moonshot's 300K-query relay, the DOJ/Nvidia-Groq probe, the Anthropic bio-misuse classifier case) |
+
+**Two genuine misses, both dated and independently corroborated, with zero corpus hits:**
+
+- **Microsoft plans to triple its data-center capacity to 38 gigawatts by 2032, up from ~12GW today** — Bloomberg's report broke 09-10 and was still being carried as a live number in The AI Daily Brief's 09-11 "By the Numbers" sidebar. Independently confirmed via web search (Bloomberg, Cloud Computing News, Dataconomy, TechBriefly all carry the same figure and date). `grep -rli "38 ?gw" artifacts/` returns nothing anywhere in the corpus. This is squarely on this map's own datacenter-capex territory — `ai-datacenter-sites`, `datacenter-power-grid` and `chip-hyperscaler-rotation` are all plausible homes, and it is arguably global-capital-relevant too (hyperscaler capex sizing).
+- **Meta shares rose roughly 6% and JPMorgan upgraded the stock to Overweight (price target raised to $820) on 09-10, crediting Muse's App Store performance** (the agent app reached #3 in the US App Store on its second day, at roughly 10x the internal testing cohort's usage rate). Found via The AI Daily Brief's 09-11 "Business Product Finance" segment; corroborated via web search (CNBC, Yahoo Finance, BigGo Finance). This is the capital market's verdict on a launch this map has tracked closely since 09-08 (`enterprise-agent-product-race`'s Meta Muse/Hatch entries) — the map has three entries on Muse itself and none on the market's reaction to it. `grep -rli "jpmorgan\|\\$820\|83,000" artifacts/threads/enterprise-agent-product-race.md` returns nothing.
+- **Softer, flagged rather than counted with full confidence:** TLDR's "Meta to announce Shared Agents for Muse at Meta Connect" — a customizable, shareable-agent feature compared to "Grokbot's system" — is sourced to TestingCatalog, a leak/teardown site reporting what Meta "will" ship, not a Meta statement or a shipped feature. Absent from the corpus (`grep -rli "shared agents" artifacts/ attention/` — no hits outside the raw RSS buffer), but logged with a caveat given the single-source, pre-announcement sourcing — same discipline as this map's own `confidence: rumored` tagging elsewhere.
+
+**Already covered and correctly present:** OpenAI's Agents API public beta, Salesforce's completed Fin acquisition, Sam Altman's slowdown/antitrust remarks, Moonshot's 300,000-query silent relay (on `kimi-distillation-fight`), the DOJ's Nvidia/Groq probe, and Anthropic's chikungunya gain-of-function classifier case (on `frontier-model-gov-review-precedent`) — all confirmed present via direct grep rather than assumed. OpenAI's GPT-Live-1 launch and its $200 Pro-subscription pause were both raised by these benchmarks again but were already judged below this lens's bar by the prior (09-11) critic pass; that judgment stands.
 
 ---
 

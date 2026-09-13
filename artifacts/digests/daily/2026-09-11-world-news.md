@@ -1,9 +1,9 @@
 ---
 lens: world-news
 date: 2026-09-11
-status: building
+status: final
 window_start: 2026-09-11T05:00:00-04:00
-as_of: 2026-09-11T10:00:00-04:00
+as_of: 2026-09-12T05:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
@@ -77,6 +77,19 @@ airspace itself.
   White House statement located.
   ([France24](https://www.france24.com/en/middle-east/20260911-middle-east-live-trump-says-he-has-no-regrets-about-launching-war-on-iran))
   <!-- k: t=yemen-civil-war,iran-conflict-widening e=united-states axis=conflict -->
+
+- 📥 **Late catch (found 09-13): Acting Navy Secretary Hung Cao told The Epoch
+  Times "they blew the hell out of Bahrain," the first official US
+  acknowledgment of how badly Naval Support Activity Bahrain — the Fifth
+  Fleet's headquarters — was damaged in Iranian strikes between February and
+  June, prompting Washington to evaluate the base's future.** Iranian FM
+  Araghchi responded on X thanking Cao for "the candor" and confirming Iran's
+  forces "did indeed 'blow the hell out of the 5th Fleet HQ in Bahrain.'"
+  Open-source imagery corroborates heavy damage to the facility. This broke
+  after this digest's own 10:00 ET cutoff and was missed at the time; it is
+  folded in now rather than left absent from the day it happened.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/9/11/blew-the-hell-out-of-it-how-iran-damaged-us-bases-in-bahrain-jordan))
+  <!-- k: t=iran-conflict-widening axis=late-catch -->
 
 - **The IDF says it killed Muhammad Yazouri, whom it names as commander of
   Hamas's Khan Younis Brigade, along with two other Hamas members, in an

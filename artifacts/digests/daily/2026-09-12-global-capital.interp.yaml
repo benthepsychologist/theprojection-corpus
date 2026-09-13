@@ -1,0 +1,60 @@
+# Interpretations for 2026-09-12 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25 — nineteen days
+# stale; this digest-day carries no /week refresh over it).
+
+nvidia-is-in-talks-to-become-an-anchor-investor-in:
+  mechanism: >
+    Nvidia's customer-financing flywheel has so far operated entirely on
+    the private and pre-revenue side of the AI buildout: the $105bn OpenAI
+    lease guarantee, $3.5bn of additional cloud-partner lease guarantees, a
+    $25bn AI-lab equity pool, and roughly $99bn of accumulated equity
+    stakes across Nebius, Naver, Intel, Groq, SB Energy, MediaTek and now
+    Hugging Face, all disclosed in Nvidia's own Q2 FY2027 10-Q. CFO Colette
+    Kress has already named the strategy out loud as a "flywheel" that
+    gives portfolio companies "balance-sheet capacity to procure tens of
+    thousands of GPUs" (nvidia-vendor-financing thread, 09-04). An anchor
+    role in Anthropic's IPO is the same logic applied one stage later: not
+    funding the demand that justifies the buildout, but backstopping the
+    public-market valuation event that lets earlier capital exit. It
+    extends the circular-financing loop this map tracks under
+    `ai-circular-financing-risk` from the private-financing stage into the
+    public-listing stage, with the same company sitting on both sides of
+    the transaction — chip supplier and now prospective anchor investor.
+  confidence: plausible
+  scenarios:
+    - direction: This becomes a repeatable template — Nvidia anchoring the eventual public listings of the labs and infrastructure companies it already holds equity in or guarantees debt for
+      why: >
+        Nvidia has already scaled the equity-stake side of this strategy
+        13-fold in a year (from ~$7bn to ~$99bn) and its own CFO frames it
+        as deliberate rather than incidental. An IPO anchor commitment is a
+        small incremental step along a strategy already named and sized,
+        not a break from it.
+      precedent: >
+        Nvidia's Q2 FY2027 10-Q (filed 2026-08-26) disclosed the ~$99bn
+        equity-investment total and Kress's "flywheel" framing in company
+        language, not analyst inference — this map's own record
+        (nvidia-vendor-financing, 09-04 entry).
+    - direction: The circularity draws the same regulatory and price-discovery scrutiny Nvidia's Hugging Face acquisition drew this same month, this time aimed at whether Nvidia is pricing rather than just participating in the offering
+      why: >
+        A dominant chip supplier underwriting the public listing of a
+        company whose valuation partly depends on continued demand for
+        that supplier's chips invites the same "who is really setting this
+        price" objection raised about Nvidia owning a neutral
+        model-distribution layer.
+      precedent: >
+        Nvidia's $12.93bn Hugging Face deal drew explicit antitrust and
+        vertical-foreclosure criticism from The Register and industry
+        analysts within days of announcement (09-03) over Nvidia occupying
+        a structural position that shapes outcomes for the same ecosystem
+        it sells chips into — this map's own record on
+        `nvidia-vendor-financing`.
+  context_note: >
+    capital-context.yaml (asof 2026-08-25, nineteen days stale) already
+    names AI financing needs as a driver of long-end sovereign stress via
+    Lagarde's ECB remarks (folded into the 09-11 digest's own
+    interpretation of the US 10-year move) — this is the same "somebody
+    has to fund it" question one layer down, at a single company's
+    balance sheet rather than the whole market's. Terms are unconfirmed
+    and sourced only through "people familiar with the matter" reporting
+    chains; treat the mechanism as real and the scenarios as contingent on
+    the deal actually closing on anything like these terms.

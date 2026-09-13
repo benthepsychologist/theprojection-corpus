@@ -390,7 +390,7 @@ expectations:
     status: pending
 
   - id: grok-4-7-ship
-    claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24; restated 08-12 to '3 to 4 weeks' from that date)"
+    claim: "Grok 4.7 ships (Musk: 'in four weeks', said 07-24; restated 08-12 to '3 to 4 weeks'; restated 09-02 to a firm 09-12 date; restated 09-11 to 'needs a few more days to cook')"
     thread: grok-frontier
     entities: [xai]
     source: https://news.google.com/rss/search?q=Grok+4.7+Musk+four+weeks
@@ -423,9 +423,18 @@ expectations:
     # which is the opposite of the failure mode this entry tracks. Same
     # sourcing caveat as above — x.com still 403s; three independent outlets
     # quote the post.
-    due: 2026-09-12
-    due_precision: day
-    slips: [2026-08-21]
+    #
+    # 2026-09-13 ⟨daily⟩: SLIPPED a third time, one day ahead of its own
+    # firmest-ever date. Musk posted 09-11 that the model "needs a few more
+    # days to cook," citing an RL response-length-penalty bug causing the
+    # model to give up early on solvable hard tasks. Checked directly against
+    # xAI's own docs.x.ai model list on 09-13: still tops out at grok-4.6, no
+    # grok-4.7 entry. No replacement date given — "a few more days" is read
+    # here as a rough week-out estimate, not a committed date; due precision
+    # downgraded from day to week accordingly.
+    due: 2026-09-19
+    due_precision: week
+    slips: [2026-08-21, 2026-09-12]
     status: pending
 
   - id: anthropic-ipo-public-flip
@@ -2736,6 +2745,33 @@ expectations:
       no signed power off-taker, and engineering only 20-30% complete.
     logged: 2026-09-02
     logged_by: curate-add
+    # 2026-09-13 ⟨daily⟩: HIT — the forum happened as scheduled on 09-12.
+    # Dozens protested outside over the proposed biomass plant near the
+    # Hiwassee River; inside, Wright Brothers Construction/Azure Energy took
+    # questions, a Boilermakers Local 454 rep voiced union support, and
+    # Hiwassee River Alliance's Matthew McCollum said the format still didn't
+    # meet what was promised as a "public forum." No vote or rezoning/
+    # annexation decision came out of it — those go to the Cleveland
+    # Municipal Planning Commission and City Council "later this month," per
+    # the same coverage. The open half of what_confirms (a vote date) is
+    # carried forward as a new entry, project-river-vote-date, below.
+    # Source: https://www.clevelandbanner.com/news/boilermakers-union-endorses-project-river/article_a5e28c4f-6913-5fb8-bb1d-c55f5c4d6981.html
+    status: hit
+
+  - id: project-river-vote-date
+    claim: >
+      Cleveland Municipal Planning Commission and/or City Council vote on
+      Project River rezoning/annexation — flagged "later this month" per
+      09-12 forum coverage, no specific date set yet.
+    due: 2026-09-30
+    due_precision: month
+    thread: ai-datacenter-sites
+    entities: []
+    source: https://www.clevelandbanner.com/news/boilermakers-union-endorses-project-river/article_a5e28c4f-6913-5fb8-bb1d-c55f5c4d6981.html
+    confidence: reported
+    what_confirms: a scheduled Planning Commission or City Council vote date, or the vote itself.
+    logged: 2026-09-13
+    logged_by: curate-add
     status: pending
 
   - id: anthropic-dow-stay-expiry
@@ -2926,7 +2962,7 @@ expectations:
       case by doing the reverse.
     logged: 2026-09-04
     logged_by: curate-add
-    status: pending
+    status: passed-silent
     check_note: >
       2026-09-11: checked twice this run via python3 urllib against
       CourtListener. Neither check found any entry supporting a 09-11 date.
@@ -2937,6 +2973,14 @@ expectations:
       correction rather than guessed at. Tooling note: CourtListener docket
       HTML pages returned 0-byte bodies on repeated fetches within one
       session (rate limiting); the v4 search API stayed reliable throughout.
+      2026-09-13 ⟨daily⟩: checked a third time — a bare urllib fetch of the
+      docket page now 403s; adding a full browser User-Agent string got it
+      through. Parsed all 26 docket entries directly: the newest is still
+      the 2026-08-04 minute entry (motion to dismiss "remains under
+      advisement"). Nothing has posted in the 11+ days since the 09-02
+      hearing. Flipped to passed-silent: the due date (09-11, week
+      precision) has now passed with no evidence either way, which is the
+      loud outcome this entry exists to catch.
 
   - id: sk-hynix-solidigm-disclosure-1204
     claim: >

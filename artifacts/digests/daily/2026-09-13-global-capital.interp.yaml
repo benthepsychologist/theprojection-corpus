@@ -1,0 +1,72 @@
+# Interpretations for 2026-09-13 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25 — nineteen days
+# stale; this digest-day carries no /week refresh over it).
+
+openai-ruled-out-an-ipo-in-2026-citing-ai-safety:
+  mechanism: >
+    OpenAI and Anthropic converged on identical language this weekend —
+    both committing to Dario Amodei's "pace the frontier" framework
+    (embedded third-party evaluators, industry-wide coordination on the
+    rate of capability gains) within hours of each other. But a shared
+    safety statement is compatible with either delaying or accelerating a
+    public listing, depending on which company's actual financing calendar
+    it lands on. OpenAI has no live process demanding a near-term public
+    print: its most pressing financing event, SoftBank's $40bn bridge loan
+    against OpenAI's own stake, is being retired via a bond roadshow
+    (`softbank-openai-bridge-bond-pricing-0917`) rather than an equity
+    liquidity event, so Altman's "we don't feel pressure on that" is
+    consistent with the facts on this map. Anthropic has the opposite
+    calendar: bankers already marketing toward an as-early-as-mid-October
+    listing, Nvidia in talks to anchor up to $10bn of it (09-11/12,
+    `nvidia-vendor-financing`), and a raise that has escalated four times
+    since July. The same industry statement reads as a real constraint for
+    one company and as background noise for the other because the
+    underlying capital-raising need, not the safety commitment itself, is
+    what is actually driving each company's public-market clock.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Anthropic proceeds on essentially its existing schedule (mid-October
+        marketing, ~$2-2.3T target) despite the shared safety framework,
+        because its listing process — bankers, an anchor investor in active
+        talks, a revenue story already public — was already in motion before
+        the essay and the essay does not touch any of those mechanics.
+      why: >
+        Every escalation on this thread since July (the $30tn TAM pitch, the
+        secondary-sale mechanics debate, the Pentagon injunction fight, the
+        community-opposition risk-factor disclosure) has been absorbed into
+        the IPO process rather than pausing it — a pattern of proceeding
+        through friction, not stopping for it.
+      precedent: >
+        This map's own record on `frontier-lab-ipos`: Anthropic's IPO
+        timeline has never slipped later in response to an external event,
+        only in response to its own bankers' revenue/valuation revisions
+        (08-20, 08-25, 09-09) — an inertia this essay would have to be the
+        first exception to.
+    - direction: >
+        A chip-stock selloff large enough to make Anthropic's own bankers
+        reconsider the October timeline materializes before the listing
+        prices, forcing Anthropic to follow OpenAI's delay rather than stay
+        the exception to it.
+      why: >
+        Bloomberg's own weekend survey of strategists already flagged the
+        pacing statement as a near-term risk specifically to chipmaker
+        valuations (even while calling the broader AI trade "intact") — the
+        market test that would force this outcome is already the subject of
+        active measurement the same weekend the essay published, not a
+        hypothetical.
+      precedent: >
+        Nvidia's own OpenAI Ohio guarantee was cut from $250B to under $120B
+        within three weeks (08-15) after investor pushback over exposure —
+        this map's own record (`nvidia-vendor-financing`) that a stated plan
+        in this exact ecosystem can shrink fast once the market prices a
+        specific new risk into it.
+  context_note: >
+    capital-context.yaml (asof 2026-08-25, nineteen days stale) has no
+    AI-lab-specific financing reading; read this instead against
+    `ai-circular-financing-risk`'s own standing thesis that the loop is
+    only as safe as the growth line under it — a voluntary pacing
+    commitment is itself a signal about that growth line, and markets were
+    closed all weekend, so none of this is priced yet as of this window.
+    Terms of both the essay's actual industry uptake and Anthropic's
+    listing are otherwise unconfirmed by primary filing.

@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-11
-status: building
+status: final
 window_start: 2026-09-11T05:00:00-04:00
-as_of: 2026-09-11T10:00:00-04:00
-coverage: pending
+as_of: 2026-09-12T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-11
@@ -153,6 +153,41 @@ Health, OpenAI/ChatGPT Health, Grok, Alan, LifeStance. Nothing dated in-window.
 A general untargeted wire scan on "mental health", "psychiatry" and
 "psychotherapy" returned World Suicide Prevention Day advocacy content
 (09-10) and no dated development.
+
+## 📋 Coverage critic — 2026-09-13 pass
+
+*Run 2026-09-13, checking digest-day 2026-09-11 — overdue, since no `/daily`
+run happened at all on 09-12. Three of the four named benchmarks were
+reached; MobiHealthNews is blocked on every documented transport for a
+fifth consecutive pass.*
+
+| benchmark | 09-11 state | what it led with |
+| --- | --- | --- |
+| Behavioral Health Business | reachable | led with "Aware Recovery Care's Financial Troubles Worsen, Sales Talk Emerges" (miss, below) |
+| STAT Health Tech | reachable, **quiet for 09-11** | newest item is still Thursday 09-10 ("Trump officials say AI will help save rural health care"); nothing posted Friday |
+| Fierce Healthcare | reachable | led with general health-tech/policy — ARPA-H's $63M cardiovascular-AI initiative, a push to reform the No Surprises Act's arbitration process, a healthcare-affordability op-ed, a CEO's book announcement — none of it this lens's subject; a genuine null rather than a miss |
+| MobiHealthNews | ⛔ blocked | both a direct fetch and the `r.jina.ai` reader-proxy fetch of its feed returned 403; the fifth consecutive escalation logged against this one benchmark |
+
+**One genuine miss.** Behavioral Health Business's 09-11 lead (18:16 UTC /
+14:16 ET, after this digest's 10:00 ET cutoff) reports that **Aware
+Recovery Care — the Connecticut-based, 11-state addiction-treatment
+provider whose financial distress this map first caught via a
+coverage-critic pass back on 2026-08-05 — is now down to a disputed asset-
+purchase agreement dated 09-14, an employee-retention deadline that fell
+on 09-11 itself, and a court filing alleging the retention offer was
+unlawfully coercive.** The map treated the 08-05 story as a "one-off" and
+never opened a thread for it (confirmed: `grep -rli "Aware Recovery"
+artifacts/threads/` returns nothing). This is now the second dated update
+to that same story caught by a benchmark critic rather than by routine
+curation, and it is still homeless.
+
+📋 **Worth flagging separately, not fixed here:** the digest's own "name
+pass" list above (searched by organisation/person name rather than thread
+term) is entirely digital-mental-health and AI-therapy vendors —
+Character.AI, Replika, Woebot, Wysa, Talkspace, and so on — with no
+traditional behavioral-health-provider or addiction-treatment names on it
+at all. That gap is plausibly why Aware Recovery Care has now been missed
+by two different mechanisms a month apart.
 
 ---
 
