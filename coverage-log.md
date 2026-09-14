@@ -6922,3 +6922,142 @@ exactly what finalizes a day once its coverage becomes checkable.
 - ⛔ MobiHealthNews: fifth consecutive escalation, jina-proxy fetch of
   the feed itself now also 403s (it had been the one working route as
   recently as the 09-11 pass logged earlier in this file).
+
+## 2026-09-14 critic pass — checking digest-day 2026-09-13 (all four lenses, still `status: building`). One genuine miss on world-news (a maritime disaster with no thread anywhere on this map), one genuine miss on global-capital (a real oil-futures print the digest's own text anticipated but was drafted too early to catch), frontier-ai and mental-health both clean
+
+*Run 2026-09-14, checking Sunday 2026-09-13's four digests (frontier-ai,
+global-capital, mental-health, world-news), all still `status: building`
+per `/daily`'s own convention for a Sunday digest-day. All four digests
+were read in full before any check was made. This lens set behaves
+differently on a Sunday than a weekday: three of the four named
+mental-health trade benchmarks (BHB, Fierce, MobiHealthNews) are
+weekday-only per the weekend-shape note in `sources/benchmarks.yaml`, and
+none of the four named global-capital benchmarks (Money Stuff, Axios Pro
+Rata, FT Unhedged, Bloomberg Technology) publish on Sundays either — so
+this pass leaned more heavily than usual on direct wire/outlet checks
+(Reuters, Bloomberg, CNN, NBC, AP, CNBC, Fortune, NPR, Al Jazeera) rather
+than the fixed benchmark list, consistent with this map's own convention
+that a quiet-benchmark Sunday is a real null result, not a passed check.
+World-news carries no benchmark list at all (`coverage: na` in its own
+frontmatter, "this lens carries no benchmark critic by design") and was
+checked entirely against wire outlets, which is what turned up its miss
+below.*
+
+### frontier-ai / 2026-09-13 — no miss
+
+Checked against The AI Daily Brief (the one named AI benchmark confirmed
+to publish on Sundays, per the 08-23 access note in `benchmarks.yaml`)
+and a broad wire/outlet sweep for any OpenAI/Anthropic/Google/xAI/Meta
+news dated inside the window. Nothing surfaced beyond what the digest
+already carries in full: Dario Amodei's CBS Sunday Morning interview
+("I think for too long the industry lied to people about the fact that
+this technology had risks") and Google DeepMind researcher Josh Engels's
+departure to outside safety evaluator METR. A general search for any
+other frontier-lab news dated 09-13 (model releases, funding, personnel)
+returned nothing not already logged as recirculation of Saturday's
+pacing-pact story in the digest's own "Research & safety" section. The
+digest's self-assessment — "Sunday's real content was volume, not
+news" — holds up against an outside check, not just its own read of the
+buffer.
+
+### global-capital / 2026-09-13 — one genuine miss: the digest's own anticipated oil reopening actually happened, with real numbers, inside the window
+
+- **Missed:** Brent crude jumped $3.62 to $108.23/bbl and WTI rose $3.15
+  to $103.20/bbl when CME Globex oil futures reopened for the week at
+  6:00pm ET Sunday (10:14pm GMT, per the print checked) — a roughly
+  3%+ move on continued vessel attacks in the Strait of Hormuz and Monday's
+  planned Iran/Gulf-states meeting in Oman being reported as postponed,
+  which removed what had briefly looked like a step toward de-escalation
+  and kept the full geopolitical premium priced in rather than reducing
+  it. This is not a new story arriving from nowhere — the digest's own
+  "Today's throughline" and macro-strip note both explicitly flag that
+  "oil futures reopen this evening (Sunday 6pm ET on CME Globex), after
+  this window closes" and that reopening is "the risk that reopening will
+  have to price, not something already reflected in these levels" — the
+  digest correctly anticipated this would happen but was drafted at
+  10:00 ET, four hours before the actual print existed to be checked
+  against. By the time this digest is finalized, the macro strip's
+  Friday-carried levels (Brent $103.78, WTI $99.23) are stale by roughly
+  $3-4/bbl against a real, dated, sourced Sunday-evening print.
+  ([investinglive.com](https://investinglive.com/commodities/globex-is-open-and-oil-has-jumped-higher-while-stocks-have-slumped/))
+- **Flagged, not counted as a miss on THIS digest-day — falls mostly
+  outside the window.** A chip-stock selloff (Nvidia, Broadcom, the Philly
+  Semiconductor Index down 5.5-6%) and the US 10-year Treasury yield
+  briefly touching 5% for the first time since 2023, both explicitly tied
+  by Bloomberg/CNBC/Fortune reporting to the same Amodei/Altman "pace the
+  frontier" weekend this digest's own throughline is built around, were
+  confirmed but appear driven mainly by Monday's 9:30am ET cash-market
+  open — after this digest-day's 05:00 ET Monday close. Worth the
+  09-14 digest's attention as a direct continuation of
+  `ai-circular-financing-risk`, not logged as a 09-13 miss.
+- **No other misses found.** The Strait of Hormuz vessel-attack and Oman-
+  meeting reporting already in the digest's "Capital in my markets"
+  section (sourced to CNN) checks out against wire coverage with nothing
+  materially added; the OpenAI/Anthropic IPO-timing divergence, Trump's
+  Fed pressure, and the Bessent bank-sanction item are all already
+  accurately logged.
+
+### mental-health / 2026-09-13 — no miss, and the "quiet weekend" read holds
+
+Three of four named benchmarks (BHB, Fierce, MobiHealthNews) are
+weekday-only per the standing weekend-shape note and were not expected to
+publish; STAT Health Tech, the one benchmark that does publish weekends,
+was checked directly and returned nothing dated 09-13 in web search or
+site search. A broad outside sweep (AI-therapy chatbot news, FDA/Raine
+docket activity, digital-health deals) turned up nothing dated inside the
+window beyond evergreen/backgrounder content already predating it. The
+digest's own targeted research pass across its five tracked threads is
+confirmed accurate by an independent check, not just internally
+consistent.
+
+### world-news / 2026-09-13 — one genuine miss: a live maritime disaster with no home anywhere on this map
+
+- **Missed:** The passenger ferry Virgo Transport 8, carrying 243 people
+  from Surabaya (East Java) to Banjarmasin (South Kalimantan, Borneo),
+  capsized in rough seas in the Java Sea on Sunday 09-13 — the captain
+  had radioed rough seas with waves up to 3 meters shortly before a
+  distress call reporting the ship listing. As of the most recent reports
+  checked, at least six people are confirmed dead and roughly 129-130
+  remain missing, with over 100 rescued and a search operation still
+  underway into Monday. This is a live, ongoing, internationally-covered
+  disaster (NPR, ABC News, Al Jazeera, KPBS all running it as a top
+  international story) that would clear this lens's own stated
+  flash-bar test — "would this lead a general news front page anywhere" —
+  as cleanly as anything else checked this pass, and it sits nowhere on
+  this map: `grep -rli "java sea\|ferry\|virgo transport" artifacts/`
+  returns no relevant hits (the four incidental "ferry" hits in old
+  August digests are unrelated). This lens carries no formal benchmark
+  list to have caught it mechanically (`coverage: na` by design) — this
+  is exactly the gap that leaves it dependent on either a targeted wire
+  sweep like this one or the digest's own general buffer read, and this
+  window's buffer read missed it.
+  ([NPR](https://www.npr.org/2026/09/14/nx-s1-5968417/indonesia-search-missing-ferry),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/9/13/one-dead-102-rescued-after-indonesian-ferry-goes-missing-in-java-sea))
+- **No other misses found.** The Polish-border-area drone strikes and the
+  Tal al-Hawa Gaza vehicle strike both check out against wire coverage
+  as logged. A Trump quote on the Iran war ending "very soon" that
+  surfaced in one search was traced back to a 09-09 statement being
+  recirculated, not a new 09-13 remark, and is not logged as a miss on
+  that basis.
+
+### Guardrail check — one candidate proposed, not applied
+
+**The Java Sea ferry disaster is a strong thread candidate under this
+map's own conventions** — a live, still-developing, internationally-led
+disaster story with real casualties and no thread anywhere on the map.
+Flagged here for the main session's own call; `attention/threads.yaml`
+and `attention/watchlist.yaml` were not touched by this pass.
+
+### Tooling
+
+- ✅ `WebSearch`/`WebFetch` (this session's own tools, not `curl`/`urllib`
+  via Bash) were sufficient for every check this pass needed — no
+  Googlebot UA or `r.jina.ai` proxy was required, since none of the
+  access-constrained benchmarks (Axios Pro Rata, Bloomberg Technology,
+  MobiHealthNews, Behavioral Health Business) were reachable-by-schedule
+  candidates on a Sunday in the first place.
+- Direct WebFetch of the one Bloomberg URL attempted (the Sunday
+  markets-wrap piece) 403'd as expected per this file's standing note on
+  Bloomberg access; the same information was obtained instead via
+  WebSearch's own synthesis plus a non-Bloomberg primary print
+  (investinglive.com) for the exact oil-futures numbers.

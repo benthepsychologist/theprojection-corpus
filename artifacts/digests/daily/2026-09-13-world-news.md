@@ -1,7 +1,7 @@
 ---
 lens: world-news
 date: 2026-09-13
-status: building
+status: final
 window_start: 2026-09-13T05:00:00-04:00
 as_of: 2026-09-13T10:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
@@ -61,6 +61,23 @@ killing two and wounding thirteen.
   [Middle East Monitor](https://www.middleeastmonitor.com/20260913-2-palestinians-killed-13-injured-in-israeli-drone-strike-on-vehicle-in-gaza/))
   <!-- k: t=gaza-war axis=conflict -->
 
+## Disaster & humanitarian
+
+- **The passenger ferry Virgo Transport 8, carrying 243 people from Surabaya
+  (East Java) to Banjarmasin (South Kalimantan, Borneo), capsized in rough
+  seas in the Java Sea on Sunday — the captain had radioed 3-metre waves
+  shortly before a distress call reporting the ship listing.** At least six
+  are confirmed dead and roughly 129-130 remain missing, with over 100
+  rescued and a search operation still underway into Monday. Critic-caught:
+  this lens carries no benchmark list to catch it mechanically
+  (`coverage: na` by design), and this window's own buffer read missed a
+  live, internationally-covered disaster story that clears this lens's own
+  "would this lead a front page" bar as cleanly as anything else checked
+  this pass.
+  ([NPR](https://www.npr.org/2026/09/14/nx-s1-5968417/indonesia-search-missing-ferry),
+  [Al Jazeera](https://www.aljazeera.com/news/2026/9/13/one-dead-102-rescued-after-indonesian-ferry-goes-missing-in-java-sea))
+  <!-- k: axis=disaster -->
+
 ## ⏳ Upcoming & expected
 
 **No flips on this lens's own ledger entries; four pending — checked against
@@ -80,6 +97,8 @@ killing two and wounding thirteen.
 - `~ artifacts/threads/russia-ukraine-war.md` — Polish-border-area drone
   strikes, including the passenger-train hit
 - `~ artifacts/threads/gaza-war.md` — Tal al-Hawa vehicle strike
+- `~ artifacts/threads/red-sea-oil-shock.md` — late-catch: the Sunday 6pm ET
+  oil-futures reopening print (Brent $108.23, WTI $103.20), critic-caught
 
 ## 🧵 Thread candidates
 
@@ -88,6 +107,13 @@ killing two and wounding thirteen.
    after a change of government.** *Second and final offer.* First offered
    09-11; unanswered since, and per this lens's carry-forward rule it drops
    after this if not picked up. Track it, or it drops? (wire backstop)
+2. **The Java Sea ferry disaster (Virgo Transport 8) — critic-caught, first
+   offer.** A live, still-developing, internationally-led disaster with real
+   casualties and no home anywhere on the map. Disaster threads on this map
+   have historically been one-off rather than tracked (no standing
+   "humanitarian disasters" thread exists), so this is a genuine judgment
+   call rather than a default add — track it, or treat as a one-off logged
+   here and in `coverage-log.md`?
 
 ⚠️ **The mechanical candidate pool still contributed nothing.**
 `attention/world-news.yaml` remains frozen at `generated: 2026-09-03`, now
@@ -110,10 +136,43 @@ market-halting-crash shape to it.
 
 ---
 
-Still building — check back at end of window. So far: Russian drones hit
-twice near the Polish border this morning, once striking a moving passenger
-train, matching a warning Poland's own PM made three days ago on this map.
-Gaza's daily strike pattern continued with a vehicle hit in Gaza City
-killing two. No flash, four pending ledger items unchanged, and Bangladesh's
-measles outbreak gets one last offer before it drops from this list for
-good.
+Final. Russian drones hit twice near the Polish border this morning, once
+striking a moving passenger train, matching a warning Poland's own PM made
+three days ago on this map. Gaza's daily strike pattern continued with a
+vehicle hit in Gaza City killing two. No flash, four pending ledger items
+unchanged, and Bangladesh's measles outbreak gets one last offer before it
+drops from this list for good. The coverage-critic pass (run 2026-09-14)
+caught one genuine miss the window itself didn't: the Java Sea ferry
+disaster, folded in above and offered as a new thread candidate.
+
+## 📋 Coverage critic — 2026-09-14 pass
+
+*Run 2026-09-14, checking digest-day 2026-09-13. This lens carries no
+named benchmark list (`coverage: na` above, "this lens carries no
+benchmark critic by design"), so this pass checked directly against wire
+outlets (NPR, ABC News, Al Jazeera, KPBS, CNN, foreignexchanges.news) for
+any major story inside the window this digest's own conflict-thread sweep
+wouldn't have caught.*
+
+**One genuine miss.** The passenger ferry *Virgo Transport 8*, carrying
+243 people from Surabaya (East Java) to Banjarmasin (Borneo), capsized in
+rough seas in the Java Sea on Sunday 09-13 after the captain radioed
+3-meter waves shortly before a distress call reporting the ship listing.
+At least six are confirmed dead and roughly 129-130 remain missing, with
+over 100 rescued and the search still underway into Monday — a live,
+internationally-led disaster story (NPR, ABC News, Al Jazeera, KPBS all
+running it top-of-page) that clears this lens's own flash-bar test —
+"would this lead a general news front page anywhere" — as cleanly as
+anything checked this pass, and it sits nowhere on this map:
+`grep -rli "java sea\|ferry\|virgo transport" artifacts/` returns no
+relevant hits. Flagged as a thread candidate for the main session's own
+call, not opened by this pass.
+([NPR](https://www.npr.org/2026/09/14/nx-s1-5968417/indonesia-search-missing-ferry),
+[Al Jazeera](https://www.aljazeera.com/news/2026/9/13/one-dead-102-rescued-after-indonesian-ferry-goes-missing-in-java-sea))
+
+**No other misses found.** The Polish-border drone strikes and the Tal
+al-Hawa Gaza strike both check out against wire coverage as logged. A
+Trump quote on the Iran war ending "very soon," which surfaced in one
+search, traced back to a 09-09 statement being recirculated rather than a
+new 09-13 remark, and is not logged as a miss on that basis. Coverage:
+done.

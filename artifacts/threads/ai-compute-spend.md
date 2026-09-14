@@ -10,6 +10,12 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia, TPU) as the giants try to stop renting from Nvidia. Category meta under where-the-capex-lands.
 
+## 2026-09-02 (late catch, added 2026-09-14) — Broadcom's Q3 print puts the fourth name in this thread's own watch line on the record
+
+- **Broadcom reported Q3 FY2026 results on 09-02 (quarter ended 08-02): AI semiconductor revenue of $16.7bn, up 221% YoY and 54% QoQ, on total revenue of $29.6bn (+86% YoY).** CEO Hock Tan guided Q4 FY2026 AI semiconductor revenue to $21.7bn (+236% YoY) and, on the earnings call, put fiscal-2027 AI semiconductor revenue at roughly $115bn — the clearest fresh number this thread has for the "Broadcom" name in its own watch line ("$ flowing to Nvidia/AMD/TSMC/Broadcom"), which until now had only carried the generic custom-silicon framing from the 07-27 crawl. ⚠️ The FY2027 $115bn figure is earnings-call commentary, not a filed number — the press release itself gives only the Q4 guide.
+  ([Broadcom investor relations — primary](https://investors.broadcom.com/news-releases/news-release-details/broadcom-inc-announces-third-quarter-fiscal-year-2026-financial), [CNBC](https://www.cnbc.com/2026/09/02/broadcom-avgo-q3-earnings-report-2026.html))
+  ⟨daily 2026-09-14⟩
+
 ## 2026-08-28 — A venture firm raises a fund aimed at the supply-chain limits this thread tracks — critic-caught
 
 - **Andreessen Horowitz announced a $1.1bn "Machine Age Fund" on 08-28 to back AI hardware and infrastructure — chips, memory, networking, storage and full systems including data centres, robotics and home AI appliances — framed on its own site around every layer of the AI stack "hitting the limits of today's supply chain capability."** New capital aimed squarely at the compute and memory scarcity `ai-memory-shortage` tracks from the price side, and a venture-scale vote that the bottleneck is physical, not model-side. ⚠️ Critic-caught from Axios Pro Rata's 08-28 fundraising lead; a16z is not a watchlist entity, so this carries no entity tag — an add is proposed to the steering loop. ([a16z, fund page](https://a16z.com/the-machine-age-fund/), [Bloomberg](https://www.bloomberg.com/news/articles/2026-08-28/andreessen-horowitz-raises-1-1-billion-for-ai-infrastructure-fund)) ⟨daily 2026-08-29⟩

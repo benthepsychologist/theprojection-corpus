@@ -220,7 +220,15 @@ expectations:
     what_confirms: "the hearing convening, its docket, and whether it touches the Compass psilocybin NDA track"
     logged: 2026-08-23
     logged_by: curate-add   # surfaced by the 08-22 mental-health sweep from a Federal Register notice
-    status: pending
+    status: hit
+    resolved: 2026-09-14
+    # 2026-09-14 ⟨daily⟩: HIT. FDA's own meeting page (as of 09-14) shows the
+    # hearing ran as scheduled: 12:30-16:30 ET, live-streamed on FDA's YouTube
+    # channel, no postponement/cancellation language anywhere on the FDA page,
+    # the Federal Register notice, or secondary coverage (Foley Hoag,
+    # Psychedelic Alpha). No public commenter roster or post-hearing writeup
+    # yet — expected same-day, not evidence against the hearing happening.
+    # Sources: https://www.fda.gov/news-events/fda-meetings-conferences-and-workshops/considerations-potential-future-therapeutic-use-psychedelic-drugs-public-hearing-09142026
     # 2026-09-07 ⟨daily⟩: FR citation PINNED and the entry upgraded reported ->
     # confirmed. Notice 2026-14155, "Considerations for Potential Future
     # Therapeutic Use of Psychedelic Drugs; Public Hearing; Request for
@@ -2085,7 +2093,6 @@ expectations:
       filing that revealed the deal
     due: 2026-09-14
     due_precision: day
-    status: pending
     confidence: reported
     thread: mh-clinical-infra-funding
     entities: []
@@ -2097,6 +2104,14 @@ expectations:
       filing, or Headspace's product/brand being folded into Sword's. A
       slip or a termination is the interesting outcome — neither company
       had announced the deal publicly when the filing surfaced it.
+    status: passed-silent
+    resolved: 2026-09-14
+    # 2026-09-14 ⟨daily⟩: PASSED-SILENT (3-day retro-flip grace open through
+    # 09-17). Every source found (STAT, Healthcare Dive, Fierce Healthcare,
+    # MobiHealthNews, Behavioral Health Business, Telehealth.org) still only
+    # reports the 08-25 MA Health Policy Commission filing's *expected*
+    # 09-14 close — none postdate today, and neither company has issued a
+    # closing announcement, further filing, or brand-integration signal.
 
   - id: softbank-retail-bond-pricing-0904
     claim: >
@@ -3504,3 +3519,27 @@ expectations:
     logged_by: curate-add
     status: pending
 
+
+  - id: bessent-large-bank-iran-sanction-0914
+    claim: >
+      Treasury Secretary Scott Bessent's plan to sanction an unnamed "large
+      bank" on 2026-09-14 for aiding Iran
+    due: 2026-09-14
+    due_precision: day
+    thread: fed-independence-fight
+    entities: [scott-bessent]
+    source: "originally reported 2026-09-10/11, re-syndicated in the 2026-09-13 global-capital digest's Power & lobbying section"
+    confidence: reported
+    what_confirms: >
+      the named bank and the sanction instrument itself, or the date passing
+      with no named target
+    logged: 2026-09-14
+    logged_by: curate-add   # proposed by the 2026-09-13 digest, added by main session on the 2026-09-14 run
+    status: hit
+    resolved: 2026-09-14
+    # 2026-09-14 ⟨daily⟩: HIT. Treasury/OFAC sanctioned Russia's VTB Bank
+    # (Russia's second-largest financial institution) Monday for helping
+    # Iran evade sanctions — the named target turned out to be Russian, not
+    # the Turkish/Gulf bank most speculative coverage expected. Confirmed
+    # via OFAC's own recent-actions page plus Investing.com, Middle East Eye,
+    # CryptoBriefing.

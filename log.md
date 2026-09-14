@@ -10060,3 +10060,111 @@ resolve). Readouts: `--apply` 4/4 with zero repairs/skips, `--export` wrote
 154 readouts, `/publish --push` shipped 45 threads, 74 entities, 3 beat pages,
 753 claims, 14 interpretations, 1270 stories (2302 sources, 1757
 credibility-badged), and 122 map pages; site repo committed and pushed.
+
+## 2026-09-14 ~15:00 ET — `/daily`: finalized Sunday, caught up Monday's AI-pacing-essay fallout across markets, politics and Beijing all at once
+
+Opened this run to find a prior session's own work sitting uncommitted:
+13 thread files already had real Monday news folded in, and a partial
+collector sweep for today had started but never finished. Continued from
+there rather than restarting — dispatched five agents in parallel (the
+09-13 coverage-critic pass, two due dated-claim checks, and two hot-cluster
+sweeps across 16 stale weight-3 threads), then four lens-drafting agents to
+write the 2026-09-14 digests, then four site-briefing agents to fill the
+readouts packs. **The full-corpus collector sweep (`cloud_researcher.cli
+collect`, no `--source` filter) was starved by today's rate limits** — five
+hours in it had processed a fraction of its term list with heavy 429/403
+backoffs and zero `google_news_rss` output — so it was killed and re-run
+`--source google_news_rss` in isolation; that isolated run was still
+producing no output as this run closed and was left running in the
+background. Every digest this run produced rests on direct primary-source
+research, not the buffer — worth telling the next run's own collector step
+to isolate `google_news_rss` from the start rather than trying the bundled
+sweep first.
+
+### The actual news, once assembled
+
+Dario Amodei's weekend "pace the frontier" essay stopped being rhetoric and
+produced consequences in three arenas on Monday: **markets** (a global chip/
+memory/EUV-tool selloff — Nvidia -2-3%, Intel -7%, ASML -6.2%, SoftBank -13%
+intraday in Tokyo, read by one outlet as a crowded-trade unwind rather than
+a genuine demand scare, since Intel fell hardest despite the least AI
+exposure), **politics** (Trump and House Speaker Johnson both rejected the
+pledge citing the race with China; Beijing's Foreign Ministry called it "a
+Cold War playbook" — both governments now citing the other's rise as reason
+not to slow down), and **institutions** (the Washington Post reported
+Anthropic/OpenAI/Google have run quiet safety-standards-body talks since
+July; Microsoft's Nadella became the fourth lab-adjacent CEO to back
+pacing, the first with a concrete deliverable). The same week the 10-year
+Treasury closed in on 5% and Brent broke above $108 — the FOMC meets
+Wednesday into a setup nobody expected three weeks ago. Separately: Treasury
+sanctioned Russia's VTB Bank (resolving Bessent's 09-11 "large bank" threat
+— the target was Russian, not Turkish/Gulf as most coverage guessed), an
+Iranian cargo vessel was struck off Qeshm Island with Trump declining to
+deny US involvement, the Houthis pushed 160km past Bab el-Mandeb, and
+mental health's two dated countdown items split — FDA's psychedelics
+hearing ran as scheduled (delivery infrastructure, not drug scheduling),
+Sword Health's Headspace close went passed-silent.
+
+### Coverage critic (09-13) found two real misses
+
+**Global-capital:** the digest's own anticipated Sunday-evening oil-futures
+reopening actually printed inside the window (Brent +$3.62 to $108.23) —
+folded into `red-sea-oil-shock` as a late catch. **World-news:** the Java
+Sea ferry disaster (Virgo Transport 8, 243 aboard, 6 dead/~130 missing) had
+no home anywhere on the map — this lens carries no benchmark list by design,
+so it depended entirely on the critic's own outside sweep. Folded into the
+09-13 digest and offered as a thread candidate (second offer today, still
+open).
+
+### Three dated claims resolved
+
+- **FDA psychedelics hearing** — hit, ran as scheduled.
+- **Sword Health / Headspace close** — passed-silent (3-day retro-flip
+  grace open through 09-17).
+- **Bessent's "large bank" Iran sanction** — hit; VTB Bank, Russia's
+  second-largest, not the Turkish/Gulf bank most coverage expected.
+
+### Known gaps left open, on purpose
+
+- **The full collector sweep's rate-limit starvation** (above) — worth a
+  standing change to run `google_news_rss` source-isolated first, always,
+  rather than the bundled `collect` call.
+- **The Cloudflare deploy hook still cannot fire from a session** — same
+  standing issue as every run since 09-08. Site repo committed and pushed
+  cleanly; no `build_uuid` came back. **This needs Ben.**
+- **`gcloud auth login`** still not run, so `build-world-news` stays frozen
+  (now eleven days stale) and the mechanical thread-candidate pool
+  contributes nothing. Same standing ask.
+- **`09_critic_annotations.py` matched 0 of 14 findings to a specific
+  claim** this run (recorded as process-outcome-only) — worth checking
+  whether the matcher's own logic, not just the `**Missed:**` marker
+  convention, needs a look; the marker was used correctly this time.
+
+### Open for Ben
+
+1. **The Java Sea ferry disaster** — a live, still-developing disaster with
+   real casualties and no home on the map; disaster stories have
+   historically been one-off here rather than tracked threads. Track it, or
+   treat as a one-off logged in `coverage-log.md`?
+2. **Meta's Applied AI division management rebuild** (new thread candidate,
+   frontier-ai) — a quiet reversal of an aggressive flattening push,
+   reported 09-11/09-12, no existing thread owns it.
+3. **`datacenters-as-targets`** is now six weeks stale on real content
+   (flagged by today's hot-cluster sweep) — worth revisiting whether the
+   thread's watch line still fits, or whether the acute phase is over.
+4. **Aware Recovery Care** (carried from 09-13, still open) — a second
+   benchmark-critic-caught miss, five weeks apart, still homeless.
+
+### Close
+
+Graph feed ran clean for the newly-finalized 09-13 day (`07_digest_bullets`
+→ `06_timelines` → `03_expectations` → `09_critic_annotations` →
+`validate.py`: 5256 atoms, 3413 sources, 8626 relationships, all references
+resolve). Readouts: `--apply` 4/4 with zero repairs/skips, `--export` wrote
+154 readouts, `kestrel publish --push` shipped 63 entity pages, 3 beat
+pages, 753 claims, 2 interpretations, 1294 stories (2362 sources, 1795
+credibility-badged), and 122 map pages; entity-page removals (Huawei,
+Alibaba, Jensen Huang, etc.) are the documented Monday weekly-rollover
+behavior, not a regression. Site repo committed and pushed. 2026-09-14
+itself stays `status: building, coverage: pending` — not finalizable until
+a future run is far enough past 5am ET 09-15.

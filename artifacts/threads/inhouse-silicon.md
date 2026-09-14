@@ -15,6 +15,12 @@ reducing Nvidia dependence, but only for INFERENCE and via two anchor cases
 dollars Nvidia demand still grows; the clearest winners are the co-design
 houses (Broadcom, Marvell), not the hyperscalers.
 
+## 2026-09-14 — Amazon signs Qualcomm as a second custom-silicon partner alongside its own Trainium line
+
+- **Qualcomm and Amazon announced a multi-generation collaboration on custom AI-inference silicon and optical interconnects for AWS data centers, with Qualcomm also issuing Amazon warrants for $4B of Qualcomm stock and AWS committing to purchase up to $60B of Qualcomm chips and technology over the deal's life.** This is a new fork in the thread's thesis: rather than one hyperscaler-designed chip line per company, Amazon is now running Trainium in-house *and* buying custom AWS-specific silicon from a merchant vendor (Qualcomm, diversifying beyond its smartphone base) — a hybrid pattern this thread hasn't tracked before, distinct from Broadcom/Marvell's co-design-house role. Qualcomm's own release names the technology (custom inference silicon, SerDes/optical DSP, 1.6T+ interconnects) but discloses no dollar figures; the $4B warrant and $60B purchase-commitment figures come from Qualcomm's SEC-linked disclosure as reported by CNBC and Bloomberg.
+  ([Qualcomm/PR Newswire](https://www.prnewswire.com/news-releases/qualcomm-announces-multi-generational-product-collaboration-with-amazon-to-build-next-generation-ai-data-center-infrastructure-302871895.html), [CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html))
+  ⟨daily 2026-09-14⟩
+
 ## 2026-08-25 — Jalapeño's first public benchmarks land at Hot Chips
 
 - **OpenAI and Broadcom published Jalapeño's first performance

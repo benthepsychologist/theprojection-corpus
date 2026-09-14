@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-13
-status: building
+status: final
 window_start: 2026-09-13T05:00:00-04:00
 as_of: 2026-09-13T10:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-13
@@ -97,3 +97,19 @@ at once — FDA's hearing and the Sword-Headspace acquisition close — with
 Raine's next conference and California's signing deadline further out. One
 open offer, the base-rate suicide-epidemiology thread, is up for a decision
 before it drops for good.
+
+## 📋 Coverage critic — 2026-09-14 pass
+
+*Run 2026-09-14, checking digest-day 2026-09-13. Three of four named
+benchmarks (Behavioral Health Business, Fierce Healthcare, MobiHealthNews)
+are weekday-only per the standing weekend-shape note in
+`sources/benchmarks.yaml` and were not expected to publish. STAT Health
+Tech, the one benchmark that does publish weekends, was checked directly
+and returned nothing dated 09-13.*
+
+**No miss.** A broad outside sweep beyond the named benchmarks — AI-therapy
+chatbot news, FDA/Raine docket activity, digital-health deals — turned up
+nothing dated inside the window beyond evergreen/backgrounder content that
+predates it. This digest's own targeted research pass across its five
+tracked threads is confirmed accurate by an independent check, not just
+internally consistent with itself. Coverage: done.

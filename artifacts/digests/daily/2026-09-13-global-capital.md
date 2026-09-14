@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-13
-status: building
+status: final
 window_start: 2026-09-13T05:00:00-04:00
 as_of: 2026-09-13T10:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-13
@@ -242,3 +242,39 @@ neither priced yet, both landing the moment futures reopen tonight. Two
 carried-forward thread candidates, Kalshi's leveraged-perpetuals push and
 the Huawei racketeering trial, get their last offer before this map lets
 them drop.
+
+## 📋 Coverage critic — 2026-09-14 pass
+
+*Run 2026-09-14, checking digest-day 2026-09-13. None of the four named
+benchmarks (Money Stuff, Axios Pro Rata, FT Unhedged, Bloomberg
+Technology) publish on Sundays, so this pass checked directly against
+wire/outlet reporting (Bloomberg, CNBC, Fortune, investinglive.com) for
+anything dated inside the window instead.*
+
+**One genuine miss.** This digest's own text flags, twice, that oil
+futures were closed for the window and would reopen at "6pm ET Sunday on
+CME Globex, after this window closes" — and correctly frames that
+reopening as "the risk that reopening will have to price." That reopening
+happened, with real numbers, inside this digest-day: **Brent crude jumped
+$3.62 to $108.23/bbl and WTI rose $3.15 to $103.20/bbl at the 6:00pm ET
+Globex reopen**, on continued Hormuz vessel attacks and Monday's planned
+Iran/Gulf-states Oman meeting being reported as postponed — removing what
+had briefly looked like a step toward de-escalation. The macro strip
+above still carries Friday's closing levels (Brent $103.78, WTI $99.23);
+by the time this digest finalizes those are stale by roughly $3-4/bbl
+against a real, sourced Sunday-evening print.
+([investinglive.com](https://investinglive.com/commodities/globex-is-open-and-oil-has-jumped-higher-while-stocks-have-slumped/))
+
+**Adjacent but not counted against this digest-day:** a chip-stock
+selloff (Nvidia, Broadcom, the Philly Semiconductor Index down 5.5-6%)
+and the US 10-year Treasury yield briefly touching 5% for the first time
+since 2023 are both being reported as continuations of this same
+weekend's pacing-pact story, but on the evidence checked they're driven
+mainly by Monday's 9:30am ET cash-market open — after this digest-day's
+05:00 ET Monday close. Worth the next digest's attention on
+`ai-circular-financing-risk`, not logged as a miss here.
+
+**No other misses found** — the Hormuz/Oman reporting already in "Capital
+in my markets," the OpenAI/Anthropic IPO-timing divergence, Trump's Fed
+pressure, and the Bessent bank-sanction item all check out as logged.
+Coverage: done.

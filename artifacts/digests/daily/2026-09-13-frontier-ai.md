@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-13
-status: building
+status: final
 window_start: 2026-09-13T05:00:00-04:00
 as_of: 2026-09-13T10:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-09-13
@@ -168,3 +168,20 @@ buffer items that looked new on a headline scan (an old OpenAI product page,
 a five-day-old math claim, a three-day-old Chinese model release) all
 checked out as recirculation rather than news. Three thread candidates first
 offered Friday are up for a final decision before they drop for good.
+
+## 📋 Coverage critic — 2026-09-14 pass
+
+*Run 2026-09-14, checking digest-day 2026-09-13. Checked against The AI
+Daily Brief (the one named AI-lens benchmark confirmed to publish on
+Sundays) plus a broad web search for any OpenAI/Anthropic/Google/xAI/Meta
+news dated inside the window, since the other three named benchmarks
+(The Rundown AI, TLDR AI, The Neuron) are not established Sunday
+publishers.*
+
+**No miss.** Nothing surfaced beyond what this digest already carries in
+full — Amodei's CBS Sunday Morning interview and Josh Engels's departure
+to METR. A general search for other frontier-lab news dated 09-13 (model
+releases, funding, personnel moves) returned nothing that isn't already
+logged here as recirculation of Saturday's pacing-pact story. This
+digest's own "Sunday's real content was volume, not news" read holds up
+against an outside check. Coverage: done.

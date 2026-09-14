@@ -12,6 +12,11 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-09-10 — August revenue breaks NT$500B for the first time, up 53% YoY, on AI-chip demand
+
+- **TSMC reported August 2026 monthly revenue of NT$514.81B (~$16.3B), up 53.3% year-over-year and 10.1% month-over-month — the first time TSMC has broken the NT$500B barrier in a single month, and its fourth consecutive month of revenue growth.** Year-to-date (January-August) consolidated revenue is NT$3,386.87B, up 39.3% over the same period in 2025. Coverage attributes the surge to AI-server-chip demand keeping TSMC's 5nm, 4nm and 3nm nodes at full capacity. This is a hard revenue number behind the capacity-race narrative this thread otherwise tracks through capex and toolmaker commitments (the 09-08 ASML/High-NA entry, the 08-11 board capex approval) — demand is still outrunning the capacity being added, not absorbing into slack.
+  ([TSMC investor relations — primary](https://pr.tsmc.com/english/news/3340), [CNBC](https://www.cnbc.com/2026/09/10/tsmc-august-revenue-chip-ai.html)) ⟨daily 2026-09-14⟩
+
 ## 2026-09-08 — TSMC commits to ASML's High-NA EUV tools alongside Samsung and Intel; opens a joint photomask initiative with ASML
 
 - **TSMC, Samsung and Intel all committed to ASML's High-NA EUV tools for the next process node**, and TSMC and ASML separately opened a joint initiative on large-format photomasks, with a pilot production line targeted for 2031. Three competing foundries converging on the same toolmaker is the clearest signal yet of where TSMC's own capacity race goes next.
