@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-14
-status: building
+status: final
 window_start: 2026-09-14T05:00:00-04:00
-as_of: 2026-09-14T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-15T05:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-14
@@ -242,3 +242,64 @@ chips, memory and EUV names down together, though the cross-section reads
 more like a positioning unwind than a demand scare. And Bessent's
 09-11 threat to sanction an unnamed "large bank" resolved loudly: Russia's
 VTB Bank, not the Turkish or Gulf institution most coverage guessed at.
+The coverage-critic pass (run 2026-09-15) caught one genuine miss the
+window itself didn't: Money Stuff's antitrust read on the pacing pledge,
+folded in below.
+
+## 📋 Coverage critic — 2026-09-15 pass
+
+*Run 2026-09-15, checking digest-day 2026-09-14 (Monday) against this
+lens's four named benchmarks — Money Stuff, Axios Pro Rata, FT Unhedged,
+Bloomberg Technology.*
+
+**One genuine miss.** Matt Levine's Monday Money Stuff column, "AI Labs
+Want Someone to Stop Them," reframes the entire pacing-pledge story this
+digest already carries in market/political terms (the equity selloff, the
+Trump/Johnson/China rejections) as a **financial-structure and antitrust
+story instead** — exactly the genre this thread's own charter tracks.
+Levine's opening move: ahead of its IPO, Anthropic will reportedly tell
+investors its total addressable market exceeds **$30 trillion** — larger
+than any previous company's TAM claim — and he asks what the *downside*
+scenario looks like for a company pitching a number that size (his answer:
+"you and everyone else on earth will be killed by our AI"). From there he
+walks through what the labs' actual coordination ask requires: permanent
+third-party evaluators with employee-like access inside the labs, common
+safety standards among democratic-country labs, **Washington brokering an
+antitrust waiver so competitors can coordinate**, and some understanding
+with China — and names the obvious read: "a pace negotiated under an
+antitrust waiver resembles a cartel described as safety policy." **The
+same day, White House AI policy chief David Sacks (co-chair, President's
+Council of Advisors on Science & Technology) publicly rejected exactly
+that ask** in a Monday Bloomberg TV interview — telling Anthropic and
+OpenAI to self-regulate without antitrust help, endorsing former FTC chair
+Lina Khan's view that ordinary product liability (including "civil or even
+criminal lawsuits") already disciplines unsafe AI, and rejecting the
+premise that the labs need government permission, an antitrust waiver, or
+a new approval regime to pace themselves voluntarily. None of this — the
+$30T TAM disclosure, the antitrust-cartel framing, or Sacks's same-day
+rebuttal — appears anywhere in this digest's IPO or capital-markets
+coverage (`grep -in "antitrust\|cartel\|sacks\|30 trillion"` on the
+09-14 file returns nothing), even though the digest's own "Deals & filings"
+section already covers Anthropic's Nasdaq IPO pick and its own
+"Capital in my markets" section already covers the same day's pacing-driven
+selloff — this is a distinct, additional angle on both, not a duplicate.
+([Techmeme summary of Levine's column](https://www.techmeme.com/260914/p43),
+[Bloomberg — Sacks](https://www.bloomberg.com/news/articles/2026-09-14/ai-labs-should-make-safe-tech-without-antitrust-help-david-sacks-says))
+<!-- Money Stuff itself sits behind Bloomberg's paywall even through the
+r.jina.ai proxy; content reconstructed from Techmeme's verbatim pull-quotes
+plus the RSS-confirmed headline/dek/pubDate (Mon 14 Sep 2026 18:40 UTC) via
+the author-page .rss endpoint, consistent with this file's own access notes
+on Money Stuff. -->
+
+**Not checkable, not counted as a miss.** Axios Pro Rata and Bloomberg
+Technology were both reachable today, but only as **today's** (09-15)
+editions — both are same-day-only via the reader-proxy/homepage
+techniques this file documents, with no dated archive, so a 09-15 fetch
+cannot be compared against 09-14's actual content. Per the 08-25/09-09
+standing notes in `sources/benchmarks.yaml`, logged as "not checkable for
+09-14," not as a clean pass. FT Unhedged's own Monday item ("High
+inflation or low credibility? — Making sense of the Fed's next move")
+checks out as already covered in full by this digest's own macro-strip
+and Treasury-yield sections.
+
+Coverage: done.

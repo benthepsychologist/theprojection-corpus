@@ -225,7 +225,7 @@ threads:
       - "Apple Intelligence Gemini"
       - "Siri Gemini Google"
     opened: 2026-06-28
-    last_seen: 2026-09-09   # /daily 2026-09-09 (Siri AI shipped publicly, still EU/China-blocked)
+    last_seen: 2026-09-15   # coverage-critic catch: Gemini-powered Siri rebuild actually shipped 09-14 with iOS 27
     watch: >
       At WWDC 2026 (06-08) Apple shipped Siri AI on Apple Foundation Models "custom-built
       in collaboration with Google and its Gemini models" (Apple's own wording), partly
@@ -361,7 +361,7 @@ threads:
       - "mental health startup acquisition"
       - "interventional psychiatry funding"
     opened: 2026-06-28
-    last_seen: 2026-08-29   # backfill: UHS closed $835M Talkspace acquisition 08-17
+    last_seen: 2026-09-15   # Aware Recovery Care distress-sale, caught late (09-11 event)
     watch: >
       MH is the #1-funded US therapeutic area (~$1.27B/14 deals to start 2026), but the
       money is going to clinician-augmentation (psychiatry copilots, AI scribes, payer-aligned
@@ -397,7 +397,7 @@ threads:
       - "AI pre-release review"
       - "30-day AI review"
     opened: 2026-07-22
-    last_seen: 2026-09-13
+    last_seen: 2026-09-15   # frontier-model-gov-review-precedent: Trump 'HOAX'/Amodei-named escalation addendum
     watch: >
       The gpt-5.6 gating dynamic made permanent — and it's all one buildout
       under EO 14409 (2026-06-02): the §3(b) 30-day voluntary access
@@ -948,7 +948,7 @@ threads:
       - "Mojtaba Khamenei"          # added 2026-08-02 — successor, see ORIGIN CORRECTED
       - "Iran nuclear deal Hormuz"  # added 2026-08-02 — the 08-01 cancellation/deal track
     opened: 2026-07-23
-    last_seen: 2026-09-12
+    last_seen: 2026-09-15   # iran-conflict-widening: Hormuz vessel strike, Trump 'open to concept' of talks, Houthi Abha/Khamis Mushait wave
     watch: >
       ⚠️ ORIGIN CORRECTED 2026-08-02 — READ THIS FIRST. This thread spent
       its first ten days framing the war as beginning 07-23/07-28. That
@@ -1038,7 +1038,7 @@ threads:
       - "National Committee for the Administration of Gaza"
       - "Gaza humanitarian"
     opened: 2026-08-01
-    last_seen: 2026-09-13   # Tal al-Hawa vehicle strike
+    last_seen: 2026-09-15   # checked 09-15, same low-boil pattern, no new development
     watch: >
       Opened on Ben's steer 2026-08-01, after a disarmament framework
       announced 07-31 surfaced it both editorially and mechanically (the
@@ -1094,7 +1094,7 @@ threads:
       - "NATO Russia airspace"
       - "Russia Ukraine ceasefire"
     opened: 2026-07-31
-    last_seen: 2026-09-13
+    last_seen: 2026-09-15   # russia-ukraine-war: overnight drone wave, suspected Gerbera drone on Poland's Baltic coast
     watch: >
       The single largest signal in kestrel's own mechanical world-news
       sweep, two days running (304-315 distinct outlets, well ahead of
@@ -1138,7 +1138,7 @@ threads:
       - "Iran Saudi oil shock"
       - "Brent crude Middle East"
     opened: 2026-07-24
-    last_seen: 2026-09-09
+    last_seen: 2026-09-15   # red-sea-oil-shock: Brent holding $107-108, Wright says pipeline restart 'soon'
     watch: >
       ⚠️ SCALE CORRECTED 2026-08-02 — this thread was reading a five-month
       structural closure as a one-week price spike. The Strait of Hormuz
@@ -1228,7 +1228,7 @@ threads:
       - "xAI supercomputer"
       - "Colossus GPU cluster"
     opened: 2026-07-24
-    last_seen: 2026-08-29   # cold rotation: Memphis first-reading permit moratorium (08-18); xAI filing says Grok would "largely cease to function" (08-24)
+    last_seen: 2026-09-11   # last_seen drift fix: file's actual latest entry is 09-11 (Community Benefits Fund meeting)
     watch: >
       SpaceXAI's self-owned training compute (Colossus, Memphis) — the
       "owns its mines" fact that makes it structurally distinct from
@@ -1258,7 +1258,7 @@ threads:
       - "xAI Grok model"
       - "Grok benchmark ranking"
     opened: 2026-07-24
-    last_seen: 2026-09-11
+    last_seen: 2026-09-15   # data-quality fix: last_seen was stale vs. the thread's own timeline (09-14 Musk roadmap entry, 09-15 Grok Bot Galaxy entry)
     watch: >
       The Grok line closing the frontier gap as a FAST FOLLOWER, not
       mid-pack (crawl 2026-07-24 corrected our seed): Grok 4.5 (07-08)
@@ -1519,7 +1519,7 @@ threads:
       - "Meta MTIA chip"
       - "Anthropic chip design"   # critic-add 2026-08-07: 3/4 benchmarks carried Anthropic's in-house chip team (08-05) and this thread's terms only swept hyperscalers — exactly why it had gone stale
     opened: 2026-07-24
-    last_seen: 2026-08-25   # /daily 2026-08-23 gap-catchup: Anthropic hires Amir Salek, Google TPU founder
+    last_seen: 2026-09-14   # last_seen drift fix: file's actual latest entry is 09-14 (Qualcomm-AWS deal)
     watch: >
       The custom-silicon revolt (TPU/Trainium/Maia/MTIA) — real but INFERENCE-
       only, anchored by Anthropic running mostly off Nvidia on Trainium + TPU.
@@ -1698,7 +1698,7 @@ threads:
       - "Apple health sensor mental health"
       - "Apple AI health coach"
     opened: 2026-07-24
-    last_seen: 2026-08-30
+    last_seen: 2026-09-15   # apple-health-arm: cold rotation, Apple Health-app Longevity/psych-wellbeing redesign
     watch: >
       Apple's AI coach ('Mulberry') keeps slipping — no AI, and no AI mental-
       health, coach ships in 2026. The only shipped MH feature is 2023's self-
@@ -2352,7 +2352,7 @@ threads:
       - "AMD OpenAI warrant"
       - "AMD Meta GPU"
     opened: 2026-08-04
-    last_seen: 2026-08-29   # cold rotation: Hot Chips MI455X/Helios specs (08-24); Anthropic $45bn Nvidia/Nscale hedge (08-26)
+    last_seen: 2026-09-11   # last_seen drift fix: file's actual latest entry is 09-11 (ARK trim)
     watch: >
       Whether the ~14GW of announced OpenAI/Meta/Anthropic compute deals
       actually convert to shipped hardware and vested warrants on their
@@ -3089,7 +3089,7 @@ threads:
     status: open
     lens: mental-health
     parent: mh-evidence-watch
-    last_seen: 2026-09-08
+    last_seen: 2026-09-15   # Definium's third positive Phase 3 (Panorama, second GAD trial)
     entities: []
     weight: 2
     terms:
@@ -3223,7 +3223,7 @@ threads:
     kind: story
     status: open
     lens: world-news
-    last_seen: 2026-09-07
+    last_seen: 2026-09-15   # Rome round-8 slipped a third time, to October
     entities: []
     weight: 2
     terms:
@@ -3381,7 +3381,7 @@ threads:
       - "long-end Treasury intervention"
       - "fiscal dominance"
     opened: 2026-08-25
-    last_seen: 2026-09-09
+    last_seen: 2026-09-15   # treasury-long-end-intervention: 10yr hit 5.041%, highest since July 2007
     watch: >
       Whether the Treasury's own cash position is being used to suppress
       long-end yields, and whether that becomes the dominant financial-

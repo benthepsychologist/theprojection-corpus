@@ -13,6 +13,12 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-15 — xAI opens a three-day live "Grok Bot Galaxy" event to demonstrate agentic Grok Bot on real work, while Grok 4.7 still hasn't shipped
+
+- **xAI began "Grok Bot Galaxy," a three-day event (09-15→09-17) at The Howard in San Francisco with a parallel Luma livestream, built around live demos of Grok Bot doing real workflow tasks by role — engineering/product (09-15), sales/support (09-16), marketing/post-sales (09-17), roughly 8:30am-6pm PT daily.** This is xAI's most public agentic-product showcase to date, distinct from a model release — it demonstrates the product layer (Grok Bot) rather than shipping a new base model, and lands while Grok 4.7 itself remains unshipped nine days past Musk's original mid-September framing and still carries no xAI model page, API ID or price.
+  ([TeslaNorth](https://teslanorth.com/2026/09/10/xai-grok-bot-galaxy-event/))
+  ⟨daily 2026-09-15⟩
+
 ## 2026-09-14 — Musk previews the roadmap through Grok 4.8, 4.9 and 5 — while 4.7 itself still hasn't shipped past its own 09-19 due date
 
 - **Elon Musk laid out xAI's model roadmap on X: Grok 4.8, a 2.5-trillion-parameter model trained on xAI's new C++ software stack, "will finish training this week and start RL," which he called "a noticeable improvement" over 4.7; Grok 4.9 is pitched as roughly Astra/Fable-class; and asked whether 4.8 approaches AGI, Musk pointed past it to Grok 5, calling it "maybe better than anything. We shall see."** He separately characterized the still-unshipped Grok 4.7 as "roughly on par with Opus 5.0, not 5.1 — better in some ways, worse in others," the first specific competitive claim this thread has for a model that, per xAI's own docs, still carries no announcement, model page, API identifier or price. ⚠️ On Musk's own precedent, "finished training" posts have preceded actual release by 25 days (Grok 4.6) and 52 days (Grok 4.5) — so a training-complete post about 4.8 is not evidence that 4.7, due 2026-09-19 per this map's `grok-4-7-ship` entry, ships any sooner; if anything it suggests xAI's attention has already moved past it.

@@ -7061,3 +7061,123 @@ and `attention/watchlist.yaml` were not touched by this pass.
   Bloomberg access; the same information was obtained instead via
   WebSearch's own synthesis plus a non-Bloomberg primary print
   (investinglive.com) for the exact oil-futures numbers.
+
+## 2026-09-15 critic pass — checking digest-day 2026-09-14 (frontier-ai, global-capital, mental-health; world-news carries no benchmark critic by design). One genuine miss per lens, all three real; one repeat miss triggered a watchlist auto-add
+
+*Run 2026-09-15, checking Monday 2026-09-14's three benchmarked digests,
+all still `status: building` at check time. All three digests were read in
+full before any check was made. Transport used per each benchmark's
+documented access note in `sources/benchmarks.yaml`: WebFetch/WebSearch for
+the frontier-ai and global-capital benchmarks (all reachable directly
+today), python3 urllib with a Googlebot UA (Bash, not WebFetch) for
+Behavioral Health Business and STAT Health Tech, plain fetch for Fierce
+Healthcare, and the r.jina.ai reader proxy for MobiHealthNews's feed —
+consistent with the 2026-09-10 transport note that curl is denied in this
+session class and WebFetch is ClaudeBot-blocked on the mental-health
+trade outlets.*
+
+### frontier-ai / 2026-09-14 — one genuine miss, and it's a repeat: Apple's Siri AI/iOS 27 launch
+
+- **Missed — Apple publicly released iOS 27 Monday with the rebuilt,
+  Gemini-powered Siri ("Siri AI"), the general non-beta release** (the
+  broad public beta had already shipped in July, logged on
+  `apple-gemini-model-deal`). English-only at launch, other languages
+  following in October, support back only to the iPhone 15 Pro. **The
+  Neuron** — one of this lens's four named benchmarks — gave this
+  substantial coverage in its own Monday edition alongside its
+  pacing-pledge lead story; this digest has zero mention
+  (`grep -in "siri\|ios 27"` returns nothing). **This is the second time
+  this exact story has been missed**: the 2026-09-10 critic pass already
+  flagged "Apple's Siri AI beta ships with iOS/OS 27 on 09-14" by name and
+  date, and the digest still missed the actual launch when the date
+  arrived. Folded into the 09-14 digest's appendix.
+  ([CNBC](https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html),
+  [The Neuron](https://www.theneuron.ai/newsletter/ai-s-biggest-rivals-agree-slow-down/))
+- **No other misses.** The Rundown AI's sole AI-edition item and The AI
+  Daily Brief's pacing-fallout rundown both check out as already covered,
+  in comparable or greater depth, by this digest's own sections. TLDR AI's
+  "OpenAI Delays IPO" recirculates the 09-12 Altman/Fortune story, already
+  logged on `frontier-lab-ipos` as of 09-13 — not new.
+
+### global-capital / 2026-09-14 — one genuine miss: Money Stuff's antitrust read on the pacing pledge
+
+- **Missed — Matt Levine's Monday Money Stuff column reframes the
+  pacing-pledge story (which this digest already covers as a market/
+  political event) as a financial-structure/antitrust story: Anthropic
+  will reportedly tell IPO investors its TAM exceeds $30 trillion, and the
+  labs' actual coordination ask — permanent evaluators, common standards,
+  a Washington-brokered antitrust waiver, some understanding with China —
+  reads, in Levine's words, like "a pace negotiated under an antitrust
+  waiver resembles a cartel described as safety policy."** Same day, White
+  House AI policy chief David Sacks (PCAST co-chair) publicly rejected
+  exactly that antitrust-waiver ask on Bloomberg TV, telling the labs to
+  self-regulate under ordinary product liability instead. Neither the TAM
+  figure, the cartel framing, nor Sacks's rebuttal appears anywhere in this
+  digest (`grep -in "antitrust\|cartel\|sacks\|30 trillion"` returns
+  nothing), despite the digest's own IPO and capital-markets sections
+  already covering the same underlying day. Folded into the 09-14 digest's
+  appendix.
+  ([Techmeme summary of Levine's column](https://www.techmeme.com/260914/p43),
+  [Bloomberg — Sacks](https://www.bloomberg.com/news/articles/2026-09-14/ai-labs-should-make-safe-tech-without-antitrust-help-david-sacks-says))
+- **Not checkable, not a clean pass.** Axios Pro Rata and Bloomberg
+  Technology were reachable today but only as *today's* (09-15) editions —
+  both are same-day-only via their documented access techniques, with no
+  dated archive, per the standing 08-25/09-09 notes. Logged as
+  "not checkable for 09-14." FT Unhedged's actual Monday item checks out
+  as already covered by the digest's own macro strip.
+
+### mental-health / 2026-09-14 — one genuine miss: UHS's outpatient-behavioral strategy update
+
+- **Missed — Behavioral Health Business's lead Monday item has UHS CFO
+  Steve Filton telling the Morgan Stanley healthcare conference that UHS
+  is deliberately shifting its behavioral-health mix away from its
+  historic 90%-inpatient base: 15 "Thousand Branches" outpatient
+  facilities now, ~10/year planned, explicitly framed — alongside the
+  already-tracked $835M Talkspace acquisition — as payer-mix
+  diversification AWAY FROM MEDICAID ahead of OBBBA reimbursement
+  headwinds.** A direct, on-the-record update to `mh-clinical-infra-
+  funding` (which already carries the Talkspace close and Marc Miller's
+  08-19 framing) with new numbers and the clearest Medicaid-avoidance
+  motive stated yet. This digest's Capital & corporate section covers
+  Beacon Behavioral's DFW deal (also BHB, dated 08-08) but has nothing on
+  UHS from today. A same-day adjacent BHB item (Shore Capital moving
+  Transformations Care Network to a continuation vehicle, citing a
+  "chilled" outpatient-MH M&A market) folded in for context, not logged as
+  a second miss. Folded into the 09-14 digest's appendix.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/09/14/uhs-eyes-outpatient-behavioral-expansion-to-capture-patient-demand-and-diversify-revenue/))
+- **No other misses.** STAT Health Tech had nothing dated 09-14 in the
+  checked window; Fierce Healthcare and MobiHealthNews's 09-14 items were
+  all general health-tech (UK AI-regulation proposal, Tandem Health's
+  raise, Owkin/Servier licensing), none behavioral/MH-specific.
+- **Homeless-item check:** Aware Recovery Care had no new BHB coverage
+  today (still Friday 09-11's item) — nothing to escalate.
+
+### Guardrail — one auto-add, flagged for review
+
+**`attention/watchlist.yaml`'s `ai.themes` gained `"Siri AI"`** (critic-add,
+2026-09-15) on the strength of a documented repeat miss: the 09-10 pass
+named this exact story and date as a miss, and the digest still missed the
+actual event on 09-14. YAML-guardrail (`python3 -c "import yaml;
+yaml.safe_load(open('attention/watchlist.yaml'))"`) ran clean after the
+edit. No thread was opened — `apple-gemini-model-deal` already exists and
+only needed today's entry (left for the main session). **Flag for review:**
+retire the term if `"Apple"` alone should have been sufficient to surface
+this and the real gap was elsewhere (e.g. curation, not collection).
+
+### Tooling
+
+- ✅ WebFetch/WebSearch sufficient for all frontier-ai and global-capital
+  benchmarks today — no proxy needed for The Rundown AI, TLDR AI, The
+  Neuron, The AI Daily Brief, FT Unhedged, or the Axios Pro Rata / Bloomberg
+  Technology same-day pages (though the latter two remain uncheckable
+  against a past day regardless of reachability).
+- Money Stuff itself sits behind Bloomberg's paywall even through the
+  r.jina.ai proxy (403 on direct WebFetch and on the proxy); its 09-14
+  column was reconstructed from Techmeme's verbatim pull-quotes plus the
+  RSS-confirmed headline/dek/pubDate via the author-page `.rss` endpoint —
+  existence and substance both confirmed, full text was not.
+- python3 urllib with a Googlebot UA (via Bash) cleared Behavioral Health
+  Business and STAT Health Tech's real feed URL on the first attempt; the
+  r.jina.ai proxy on MobiHealthNews's feed also cleared on the first
+  attempt — no fresh escalations to record on any of the four
+  mental-health benchmarks this pass.

@@ -276,6 +276,12 @@ lenses:
       - "Claude Mythos"
       - "GPT-6"
       - "OpenAI Astra"
+      - "Siri AI"  # critic-add 2026-09-15: repeat miss on
+        # `apple-gemini-model-deal` — the 09-10 critic pass already flagged
+        # the 09-14 Siri AI/iOS 27 ship date as a thread-update miss, and
+        # the actual launch was missed again on 09-14 itself despite The
+        # Neuron (a named frontier-ai benchmark) covering it substantially.
+        # "Apple" alone evidently isn't surfacing this product line.
       # Policy / governance
       - "AI export controls"
       - "AI Act enforcement"

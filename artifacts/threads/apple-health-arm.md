@@ -15,6 +15,24 @@ MH feature remains 2023's self-reported State of Mind; the rumored
 "emotional/wellbeing coach" is unverified. The live MH-adjacent trend is
 third-party AI (ChatGPT/Perplexity) ingesting Apple Health data.
 
+## 2026-09-09 — The redesign ships (via press release): "psychological wellbeing" enters as a Longevity domain, still no coach persona or validated MH measurement
+
+- **Apple's September 9, 2026 newsroom release confirms the Mulberry-era
+  features are landing as a Health app redesign, not a standalone AI
+  coach** — Apple Intelligence-powered "Health Age," a personalized
+  "Insights" tab, a "Longevity" tab scoring seven domains (cardiac,
+  sleep, **psychological wellbeing**, movement, metabolic, hearing,
+  nutrition), camera-based "movement evaluations," and a paid
+  Quest Diagnostics lab-test integration ($119, 50+ biomarkers). This is
+  the first time "psychological wellbeing" appears as a named category in
+  Apple's own materials, but the release gives it no dedicated
+  feature, metric, or sensor — it is one line item inside a longevity
+  score, not the "emotional/wellbeing coach" this thread has watched for.
+  watchOS 27 shipped 2026-09-14; the redesigned Health app itself is
+  dated only "later in 2026," so the MH-substantiation question this
+  thread tracks stays open pending the actual app release.
+  ([Apple Newsroom](https://www.apple.com/newsroom/2026/09/apple-advances-health-and-fitness-capabilities-using-apple-intelligence/)) ⟨daily 2026-09-15⟩
+
 ## 2026-08-29 — Mulberry slips again, this time to a named window
 
 - **Gurman: the AI health coach and Health app revamp are now pointed at a

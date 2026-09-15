@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-14
-status: building
+status: final
 window_start: 2026-09-14T05:00:00-04:00
-as_of: 2026-09-14T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-15T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-14
@@ -177,4 +177,63 @@ day's sharper finding was NPR's direct test of OpenAI's suicide-crisis
 safety feature, invisible to the people it's built for, and Apple's health
 redesign kept mental health out of a third straight big-tech launch. No new
 thread candidates; the base-rate suicide-epidemiology offer has now
-lapsed.
+lapsed. The coverage-critic pass (run 2026-09-15) caught one genuine miss
+the window itself didn't: UHS's own outpatient-behavioral strategy, folded
+in below.
+
+## 📋 Coverage critic — 2026-09-15 pass
+
+*Run 2026-09-15, checking digest-day 2026-09-14 (Monday) against this
+lens's four named benchmarks — Behavioral Health Business, STAT Health
+Tech, Fierce Healthcare, MobiHealthNews — via Bash/python3 urllib
+(Googlebot UA on BHB and STAT per this file's standing access notes;
+plain fetch on Fierce and the r.jina.ai proxy on MobiHealthNews's feed),
+not WebFetch directly.*
+
+**One genuine miss.** Behavioral Health Business's own lead Monday item —
+"UHS Eyes Outpatient Behavioral Expansion to Capture Patient Demand and
+Diversify Revenue" — reports UHS CFO Steve Filton telling the Morgan
+Stanley 24th Annual Global Healthcare Conference that UHS is deliberately
+shifting its behavioral-health mix away from its historic 90%-inpatient
+base: it now operates 15 "Thousand Branches" freestanding outpatient
+behavioral facilities with plans to add roughly 10 per year, and frames
+the strategy — alongside its $835M Talkspace acquisition (closed 08-17,
+already on this map) — explicitly as **payer-mix diversification away from
+Medicaid**, ahead of reimbursement headwinds Filton ties directly to the
+One Big Beautiful Bill Act: "outpatient revenue in behavioral therapy
+tends to be much less Medicaid centric and much more commercial... one of
+the additional advantages of building out the outpatient business is not
+only capturing demand... but also diversifying our payer strategy,
+reducing our reliance on Medicaid." This is a direct, on-the-record update
+to `mh-clinical-infra-funding` — which already carries UHS's Talkspace
+closing (08-17) and CEO Marc Miller's outpatient framing (08-19) — with
+new operational numbers (facility count, pace of expansion) and the
+clearest statement yet of the Medicaid-avoidance motive behind it. This
+digest's "Capital & corporate" section covers Beacon Behavioral's DFW
+acquisition (also BHB-sourced, dated 08-08) but has nothing from today on
+UHS itself (`grep -i "thousand branches\|steve filton"` across today's
+digest and `mh-clinical-infra-funding` returns nothing before this pass).
+A same-day, adjacent BHB item — Shore Capital moving outpatient-MH company
+Transformations Care Network to a continuation vehicle, citing a "chilled"
+M&A market since the LifeStance/Refresh Mental Health IPOs — is the same
+thread's other side (consolidation slowing even as UHS expands) and is
+folded in for context, not logged as a second miss.
+([Behavioral Health Business — UHS](https://bhbusiness.com/2026/09/14/uhs-eyes-outpatient-behavioral-expansion-to-capture-patient-demand-and-diversify-revenue/),
+[Behavioral Health Business — Shore Capital](https://bhbusiness.com/2026/09/14/shore-capital-moves-transformations-care-network-to-continuation-vehicle/))
+
+**No other misses found.** STAT Health Tech's feed carries nothing dated
+09-14 in the checked window (its newest items are Tuesday 09-15's Medicare
+AI prior-authorization pieces). Fierce Healthcare's four 09-14 items
+(UK healthcare-AI regulation proposal, Tandem Health's €100M European
+raise, an HIMSS TV segment, Owkin/Servier oncology licensing) and
+MobiHealthNews's four 09-14 items (the same UK AI-regulation story, the
+Tandem Health raise, a predictive-care video, and the Owkin/Servier deal)
+are all general health-tech, not behavioral/mental-health-specific, and
+none bears on this lens's tracked threads.
+
+**Homeless-item check, no update.** Aware Recovery Care (flagged homeless
+after two prior misses) had no new BHB coverage today — its most recent
+item is still Friday 09-11's "Financial Troubles Worsen, Sales Talk
+Emerges." Nothing to add or escalate this pass.
+
+Coverage: done.

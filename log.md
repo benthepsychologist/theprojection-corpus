@@ -10168,3 +10168,141 @@ Alibaba, Jensen Huang, etc.) are the documented Monday weekly-rollover
 behavior, not a regression. Site repo committed and pushed. 2026-09-14
 itself stays `status: building, coverage: pending` — not finalizable until
 a future run is far enough past 5am ET 09-15.
+
+## 2026-09-15 ~11:00 ET — `/daily`: finalized Monday (Siri AI's repeat miss, Levine's cartel read, UHS's Medicaid pivot), Trump's Amodei attacks turned personal, and SoftBank's bridge loan actually got repaid
+
+Opened to find 2026-09-14 still `building/coverage: pending` (last run closed
+15:00 ET Monday, five-plus hours short of the finalize threshold) and one
+untracked provenance file from a background `google_news_rss` run the prior
+session had left running. Dispatched seven agents in one batch (five dated-
+claim checks, a coverage-critic pass against 09-14's benchmarks, four
+weight-3 hot-cluster sweeps across all 28 threads, a cold-rotation sweep of
+11 stale threads), then four lens-drafting agents for today's digests, then
+four site-briefing agents for the readouts packs — same shape as recent
+runs. Kicked off the deterministic collectors in two background processes
+(`google_news_rss` isolated per the 09-14 lesson, the other six sources
+batched) at run start; both were still grinding through rate limits when
+the lens digests were written, so — as most recent runs — this digest rests
+on direct primary-source research, not the buffer. `google_news_rss`
+eventually finished after ~85 minutes (16,092 fetched, 11,257 kept);
+`sec_edgar` partially recovered (455 kept despite failing ~80% of terms with
+blanket HTTP 500s — a real, recurring engine-side bug, not new); `gdelt`
+returned zero kept items after its usual 8-term cap and heavy 429 backoff;
+`openalex`/`clinicaltrials` were still running as this entry was written.
+
+### 2026-09-14 finalized
+
+Coverage critic found exactly one genuine miss per benchmarked lens:
+**frontier-ai** — Apple's Gemini-powered Siri actually shipping with iOS 27,
+a **repeat miss** (the 09-10 critic had already named this exact story and
+date, and the digest still missed the ship event itself) — triggered the
+guardrail auto-add of `"Siri AI"` to `watchlist.yaml`'s `ai.themes`, flagged
+for review. **global-capital** — Matt Levine's antitrust/cartel read on the
+AI-pacing pledge (Anthropic's reported $30T pre-IPO TAM claim, the labs'
+coordination ask needing a Washington antitrust waiver, David Sacks
+rejecting exactly that on Bloomberg TV the same day). **mental-health** —
+UHS's CFO telling a Morgan Stanley conference the company is deliberately
+shifting away from its 90%-inpatient base to reduce Medicaid exposure ahead
+of OBBBA headwinds. All three folded into 09-14's appendices and
+`coverage-log.md`; frontmatter flipped to `status: final, coverage: done`
+(world-news stays `coverage: na` by design).
+
+### Five dated claims checked, two real flips
+
+- **`softbank-openai-bridge-matures` — HIT**, later confirmed twice: the
+  ledger check first found only pre-event reporting, then the global-
+  capital digest-writer's own sweep caught SoftBank actually wiring off the
+  $25.9bn balance today, six months early — even as short interest in its
+  stock hit the heaviest reading since July 2025.
+- **`israel-lebanon-rome-round-8` — SLIPPED a third time**, to ~2026-10-15
+  (no exact date given). Officially the Jewish high holidays, a Paris LAF
+  donor conference and UNGA prep; Lebanese officials privately blame Israeli
+  election politics instead — the second time the stated and off-record
+  reasons for a slip on this claim have diverged.
+- `nvidia-500b-financing-first-close`, `michigan-city-moratorium-second-
+  reading`, `sf-datacenter-moratorium-vote-0915` all stayed pending
+  (same-day/month-precision events with no outcome yet); the SF item's
+  confidence was raised rumored→reported once five outlets corroborated a
+  real urgency ordinance on the Board floor, correcting the original
+  weak-sourcing caveat.
+- New ledger entry: `trump-xi-washington-summit-0924` (White House-confirmed
+  09-24 Washington summit, AI/chip policy expected on the agenda).
+
+### The actual news, once assembled
+
+Trump's Truth Social campaign against Dario Amodei hardened from Sunday's
+dismissal into Tuesday's open attack — "HOAX," "SICK conspiracy," "Hoax
+Buster," Amodei "pretending to be a 'perfect little angel'" — while the
+safety-researcher exodus this map has tracked at Anthropic gained its first
+defector from an entirely different lab: Google DeepMind's Bilal Chughtai
+resigned warning AI "has the potential to kill us all." Markets read both
+as confirmation rather than noise — Nvidia fell a further 3.36% and the
+semiconductor index dropped 5.9%, a second straight down session — the same
+day the 10-year Treasury crossed 5.041% (highest since July 2007) with
+Fed-hike odds near 92% one day before the FOMC meets, the exact
+buyback-vs-hike collision the "fiscal dominance" framing has been watching
+for since August. Separately: Iran's war stayed in a lower gear (a second,
+minor, unclaimed Hormuz strike; Trump's first "open to the concept" line on
+negotiating with Tehran; a fresh Houthi wave on three more Saudi cities); a
+suspected Russian drone washed up on Poland's Baltic coast, new coastal
+geography in a pattern that had only shown up on land crossings; and
+mental health's Aware Recovery Care — homeless on this map after two prior
+coverage-critic misses — signed an asset purchase agreement after months of
+financial crisis, the distress-sale counterpart to the acquirer-buying-
+growth deals already tracked on the same thread.
+
+### Map hygiene
+
+Cold rotation surfaced a real data-hygiene gap: three threads
+(`inhouse-silicon`, `spacex-colossus`, `amd`) had `last_seen` dates weeks
+behind their own files' actual latest entries — something writes timeline
+content without bumping `last_seen`, which skews the cold-rotation's own
+staleness ranking. Fixed those three plus two more found the same way
+(`apple-gemini-model-deal`, `israel-lebanon-escalation`) this run; worth a
+standing fix if the pattern keeps recurring. `actor-doing.yaml` refreshed
+for the three actors that visibly moved today: `softbank` (the bridge-loan
+hit), `google` (Chughtai's resignation), `anthropic` (Trump's escalation).
+
+### Open items from 09-14, resolved or closed out this run
+
+- **Java Sea ferry disaster** — candidacy lapsed on schedule (offered
+  09-13, 09-14, no response; reappears-once-then-drops rule applied, not
+  re-offered).
+- **Meta's Applied AI division management rebuild** — offered a second and
+  final time (frontier-ai thread candidates).
+- **`datacenters-as-targets`** — geopolitics cluster confirmed this is a
+  genuine lull, not neglect: no hyperscaler strike/disclosure news since
+  08-18, and no new disclosure test available before Q3 earnings in late
+  Oct/Nov. Not re-scoped; flagged that the cadence on this one thread is
+  structurally low-yield until then.
+- **Aware Recovery Care** — resolved: added to `mh-clinical-infra-funding`
+  as the distress-sale counterpart to the thread's usual pattern.
+
+### Known gaps left open, on purpose
+
+- **`sec_edgar`'s blanket HTTP 500s** — a real, recurring engine-side bug
+  (not new to this run, seen in prior sessions' logs too); still unfiled
+  upstream, still not this session's to fix directly.
+- **The Cloudflare deploy hook still cannot fire from a session** — same
+  standing issue as every run since 09-08. Site repo committed and pushed
+  cleanly; needs Ben.
+- **`gcloud auth login`** still not run, so `build-world-news` stays frozen
+  (world-news.yaml now 12 days stale) and the mechanical thread-candidate
+  pool contributes nothing. Same standing ask.
+- One new thread candidate offered and not yet acted on: **Sudan's
+  humanitarian crisis** (world-news) — WFP funding down roughly half this
+  year against ~20M facing hunger, the largest ongoing crisis with no
+  thread anywhere on this map.
+
+### Close
+
+Graph feed ran clean for the newly-finalized 09-14 day (`07_digest_bullets`
+→ `06_timelines` → `03_expectations` → `09_critic_annotations` →
+`validate.py`: 5,298 atoms, 3,442 sources, 8,720 relationships, 1,411
+annotations, 137 extraction passes, all references resolve). Readouts:
+`--apply` 4/4 with zero skips, `--export` wrote 154 readouts, `kestrel
+publish --push` shipped 105 thread pages, 64 entity pages, 3 beat pages,
+753 claims, 2 interpretations, 1,305 story pages, and 122 map pages. Site
+repo committed and pushed. 2026-09-15 itself stays `status: building,
+coverage: pending` — not finalizable until a future run is far enough past
+5am ET 09-16.

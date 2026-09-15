@@ -643,7 +643,7 @@ expectations:
     what_confirms: "refinancing, repayment, or extension — whichever, it dates the OpenAI liquidity clock"
     logged: 2026-07-29
     logged_by: curate-add
-    status: pending
+    status: hit
     slips: [2027-03-25]   # moved EARLIER, not later — see evidence
     evidence: |
       Date moved forward six months, which is the unusual direction for this
@@ -660,6 +660,30 @@ expectations:
       loosens the correlation the thread is built on rather than tightening
       it. Found by the 2026-09-10 global-capital coverage critic, absent from
       the corpus before then.
+
+      RE-CHECK 2026-09-15 — same-day event, no post-repayment confirmation
+      found yet. Every search result still traces back to the same 09-09
+      Bloomberg announcement (Spokesman, PANews, Phemex, Parameter,
+      CoinCentral, Blockonomi, MoneyCheck, IBTimes JP all republish it);
+      none post-dates today or confirms the repayment executed. A 09-14
+      Tech Startups piece notes SoftBank separately secured $11.87bn in new
+      financing "to keep funding OpenAI," which doesn't resolve this claim
+      either way. Stays pending — re-check tomorrow rather than guessing on
+      a same-day claim.
+
+      HIT 2026-09-15, later same day — the global-capital digest-writer's
+      own sweep confirms SoftBank wired off the final $25.9bn balance on
+      its $40bn OpenAI-stake bridge loan today, its largest-ever
+      US-dollar borrowing, repaying six months early against the March
+      2027 maturity as it shifts onto unsecured longer-term debt (a
+      planned $10-20bn junk-bond sale roadshowing out of Citigroup
+      09-14→09-17, a separate ledger item due 09-17). Short interest in
+      SoftBank stock hit 2.27% of free float (~$3.9bn) the same day, the
+      heaviest since July 2025, as shares fell >4% in Tokyo — the market
+      pricing real refinancing risk into the name even as the loan itself
+      was cleanly repaid.
+      ([Bloomberg, via Spokesman-Review](https://www.spokesman.com/stories/2026/sep/09/softbank-to-repay-40-billion-bridge-loan-for-opena/),
+      [ad-hoc-news.de](https://www.ad-hoc-news.de/boerse/news/unternehmensnachrichten/softbank-s-openai-obsession-meets-a-25-9-billion-repayment-and-a-record/70086470))
 
   - id: apple-cxmt-senate-deadline
     claim: "Apple publicly commits to rejecting memory chips from China's CXMT and YMTC, per a bipartisan Senate deadline"
@@ -1362,6 +1386,16 @@ expectations:
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, frontier-ai + global-capital both surfaced it
     status: pending
+    evidence: |
+      RE-CHECK 2026-09-15 — no named deal found converting one of the six
+      MOUs (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR)
+      into a signed transaction under this specific platform. Adjacent
+      deals exist but don't count: Blue Owl-IREN $2.4bn GPU financing
+      (Aug), the Meta-Blue Owl Hyperion JV (predates the 08-10 MOU), the
+      Nvidia-Anthropic $35bn compute pact (09-01) — none involves the six
+      named partners under this platform. due_precision is month, so no
+      flip warranted yet; re-check later in September before treating a
+      full month of silence as passed-silent.
 
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
@@ -1585,8 +1619,8 @@ expectations:
 
   - id: israel-lebanon-rome-round-8
     claim: "Eighth round of Israel-Lebanon negotiations convenes in Rome"
-    due: 2026-09-15
-    due_precision: day
+    due: 2026-10-15
+    due_precision: month
     thread: israel-lebanon-escalation
     entities: []
     source: https://english.alarabiya.net/News/middle-east/2026/08/16/israel-vows-to-go-after-hezbollah-as-it-names-another-killed-4
@@ -1605,6 +1639,7 @@ expectations:
     status: pending
     slips:
       - 2026-09-01
+      - 2026-09-15
     evidence: |
       AFTERNOON RE-CHECK 2026-08-30 ~15:20 ET — independently corroborated,
       same conclusion. Asharq Al-Awsat has the US saying a new Rome round
@@ -1649,6 +1684,18 @@ expectations:
       two-week slip was given, so confidence stays at `reported` rather than
       being raised.
       https://www.maltanewsagency.com/2026/09/media-next-round-of-talks-between-lebanon-and-israel-to-be-held-in-rome-on-september-15-16/
+
+      SLIPPED AGAIN 2026-09-15 — third slip. Times of Israel, Haaretz,
+      ynetnews, Wanted in Rome and Middle East Eye all report (from ~09-12) a
+      US official confirmed the Rome round, originally set for this week, is
+      postponed to October — stated reasons: the Jewish high holidays, a
+      Paris donor conference for the Lebanese Armed Forces, and UNGA prep.
+      Lebanese officials separately tell reporters the real driver is
+      Israeli domestic politics — "they don't want to discuss the pilot
+      zones... because of the elections." No exact October date given by
+      either government, so due moves to 2026-10-15 at due_precision: month
+      rather than a false-precision day. 09-15 pushed onto slips.
+      https://www.timesofisrael.com/upcoming-round-of-israel-lebanon-talks-delayed-from-next-week-until-october-us-official
   - id: iran-us-sanctions-package-aug24
     claim: "The US Treasury announces the Iran sanctions package Bessent has publicly promised — what he calls history's 'greatest coordinated economic isolation' of a country, paired with the existing blockade"
     due: 2026-08-24
@@ -2887,6 +2934,13 @@ expectations:
     logged: 2026-09-03
     logged_by: curate-add
     status: pending
+    evidence: |
+      RE-CHECK 2026-09-15 — same-day event, no vote outcome reported yet.
+      ABC57 and WSBT confirm the second reading was on today's Common
+      Council agenda, with Councilman Bryant Dabney wanting the moratorium
+      to run at least one year past the facility's certificate of
+      operation. No source yet reports how the vote went. Stays pending;
+      re-check tomorrow.
 
   - id: boj-september-meeting-0918
     claim: >
@@ -3280,6 +3334,26 @@ expectations:
     logged_by: curate-add
     status: pending
 
+  - id: trump-xi-washington-summit-0924
+    claim: >
+      Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
+      export-control policy expected on the agenda
+    due: 2026-09-24
+    due_precision: day
+    thread: china-stack-independence
+    entities: [trump, xi-jinping]
+    source: "White House confirmation to Fox News, per 09-15 hot-cluster sweep; China has not officially confirmed"
+    confidence: reported
+    what_confirms: >
+      the summit occurring as scheduled, and whether its readout mentions
+      AI/chip/export-control terms specifically (distinct from
+      us-china-ai-safety-talks-mid-sept above, which is a narrower
+      Bessent-led AI-safety track ahead of this summit, not the summit
+      itself)
+    logged: 2026-09-15
+    logged_by: curate-add
+    status: pending
+
   - id: saxony-anhalt-election-result-0906
     claim: >
       Saxony-Anhalt's state election on Sunday 09-06 produces a preliminary
@@ -3507,7 +3581,7 @@ expectations:
     thread: datacenter-backlash-capital-risk
     entities: []
     source: "Hoodline, 2026-09-11, surfaced via Google News RSS at 10:03 ET; publisher URL not resolved this run"
-    confidence: rumored
+    confidence: reported
     what_confirms: >
       The Board of Supervisors' own agenda or roll-call record at sfbos.org.
       LOGGED WITH A CAVEAT: this came from a Google News redirect that could not
@@ -3518,7 +3592,21 @@ expectations:
     logged: 2026-09-11
     logged_by: curate-add
     status: pending
-
+    evidence: |
+      RE-CHECK 2026-09-15 — the original caveat is superseded: this is NOT
+      a single unconfirmed Hoodline story. Mission Local, SFist, SF
+      Chronicle, CBS SF and KRON4 all independently corroborate Supervisor
+      Shamann Walton (D10) introducing an urgency interim ordinance for a
+      45-day data-center moratorium today, co-sponsored by Connie Chan,
+      Jackie Fielder and Chyanne Chen, targeting the NOVVA facility in
+      Bayview. As an urgency ordinance under Cal. Gov. Code §65858 it needs
+      a 4/5 Board vote and could extend to 22 months 15 days pending a
+      Planning Commission finding. A direct sfbos.org/Legistar fetch
+      confirmed a Regular Meeting on today's calendar but didn't surface
+      agenda text or a file number, so the vote outcome itself is still
+      unconfirmed — confidence raised from `rumored` to `reported` on the
+      strength of the introduction being real; stays pending, re-check
+      tomorrow for the vote result.
 
   - id: bessent-large-bank-iran-sanction-0914
     claim: >

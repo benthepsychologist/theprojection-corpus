@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-14
-status: building
+status: final
 window_start: 2026-09-14T05:00:00-04:00
-as_of: 2026-09-14T15:00:00-04:00
-coverage: pending
+as_of: 2026-09-15T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-14
@@ -239,6 +239,59 @@ biggest labs have quietly been building the coordination body Amodei's
 essay only made public. Underneath it, Amazon picked Qualcomm as a second
 chip partner, Anthropic picked Nasdaq for its IPO, and Musk's own
 attention has visibly moved past the still-unshipped Grok 4.7 to 4.8/4.9
-and a Grok 5 tease. This digest is midday and not finalizable — a
-Meta AI-org story with no thread of its own is offered for a track/pass
-call, and this pass has not yet run against a coverage benchmark.
+and a Grok 5 tease. The coverage-critic pass (run 2026-09-15) caught one
+genuine miss the window itself didn't: Apple's public Siri AI launch,
+folded in below.
+
+## 📋 Coverage critic — 2026-09-15 pass
+
+*Run 2026-09-15, checking digest-day 2026-09-14 (Monday) against this
+lens's four named benchmarks — The Rundown AI, TLDR AI, The Neuron, The AI
+Daily Brief — via WebFetch/WebSearch, all reachable directly today.*
+
+**One genuine miss, and it's a repeat.** Apple publicly released iOS 27
+Monday, and with it the long-delayed rebuilt Siri — "Siri AI," the
+Gemini-powered assistant this map has tracked on `apple-gemini-model-deal`
+since Google and Apple's January partnership announcement. This is the
+general, non-beta release (the broad *public beta* shipped back in July,
+already logged on that thread) — Siri AI now draws on personal context
+from messages, emails and photos, reads on-screen content, pulls live web
+information, and takes systemwide app actions; it launched English-only,
+with French, Japanese, Korean, Portuguese and Spanish following in
+October, and works only as far back as 2023's iPhone 15 Pro. **The Neuron's
+own Monday edition** ("AI's biggest rivals agree: slow down") gave this
+substantial coverage alongside its pacing-pledge lead story — "Apple had
+been waiting for a Siri like this since the iPhone 15 launched, having
+first promised the smarter version for iOS 18 back in 2024, then pulled
+it because it didn't work reliably enough" — while this digest carries no
+mention of it at all (`grep -in "siri\|ios 27" 2026-09-14-frontier-ai.md`
+returns nothing). **This is the second time this exact story has been
+missed:** the 2026-09-10 critic pass already flagged "Apple's Siri AI beta
+ships with iOS/OS 27 on 09-14" as a thread-update-sized miss and named
+09-14 as the date to watch — and when the date arrived, the actual launch
+still didn't make it into the digest. `apple-gemini-model-deal`'s own
+notes stop at the 07-27 crawl; they now need this entry.
+([CNBC](https://www.cnbc.com/2026/09/14/apple-releases-ios-27-redesigned-siri-ai.html),
+[The Neuron](https://www.theneuron.ai/newsletter/ai-s-biggest-rivals-agree-slow-down/),
+[Engadget](https://www.engadget.com/2257834/siri-ai-is-here-as-apple-releases-ios-27-macos-golden-gate-and-other-major-os-updates/))
+
+**No other misses found.** The Rundown AI's sole 09-14 AI-edition item
+("Top AI labs want to pump the brakes") and The AI Daily Brief's six-point
+rundown of the pacing-pledge fallout (industry support, the three-step
+framework, recursive-self-improvement risk, IPO-cover criticism, antitrust
+concerns, Chinese-government reaction) all check out as already covered by
+this digest's own Policy/China/Capital sections, in comparable or greater
+depth. TLDR AI's "OpenAI Delays IPO" item recirculates Sam Altman's 09-12
+Fortune interview, already logged on `frontier-lab-ipos` as of the 09-13
+digest — not a new 09-14 story.
+
+**Guardrail note:** this is a documented repeat miss (same story, same
+thread, flagged 09-10 and missed again on its own ship date), so per this
+pass's standing guardrail a watchlist term was added —
+`attention/watchlist.yaml`'s `ai.themes` gained `"Siri AI"` (critic-add,
+2026-09-15). YAML parse-checked clean after the edit. No thread was
+opened — `apple-gemini-model-deal` already exists and just needed today's
+entry, which the main session should add. Flagged here for review; retire
+the term if it turns out `"Apple"` alone should have been enough.
+
+Coverage: done.

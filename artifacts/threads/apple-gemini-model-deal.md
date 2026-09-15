@@ -14,6 +14,11 @@ figure is reporter-sourced only); how much runs on Apple's own models vs.
 Google's; the EU/DMA fight over Siri AI's EU launch; whether Apple builds
 back toward its own.
 
+## 2026-09-14 (caught late by the coverage critic, added 2026-09-15) — The Gemini-powered Siri rebuild actually ships
+
+- 🕰 **CAUGHT LATE — the rebuilt, Gemini-powered Siri shipped publicly with iOS 27 on 2026-09-14, as the 09-11 entry below said it would.** The Neuron and other AI-newsletter benchmarks covered the ship substantively; this thread's own record had the pre-ship forecast (usage caps, paid-tier plan) but missed the actual event itself, a repeat miss the 09-10 coverage critic had already flagged by date. Confirms this thread's central watch question in the affirmative for now: the public product runs on Google's model, not a delayed Apple-only fallback.
+  (The Neuron, 09-14 issue — critic-corroborated, primary Apple newsroom confirmation not yet independently re-verified by the main session) ⟨daily 2026-09-15⟩
+
 ## 2026-09-11 — Siri's AI beta will ship 09-14 with daily usage caps and a future paid tier
 
 - ⚠️ **Apple's Siri AI beta ships with iOS/OS 27 on 2026-09-14 carrying daily usage caps and a future paid tier, per TLDR AI's 09-10 newsletter issue.** This speaks directly to this thread's own watch question — how Apple rations a model it does not fully control — and is new information the thread's notes (which stop at a 07-27 crawl) don't yet have. Single-sourced to a newsletter aggregator rather than an Apple statement; carried as a thread update, not an established fact from Apple itself. ([TLDR AI](https://tldr.tech/ai/2026-09-10)) ⟨daily 2026-09-11⟩
