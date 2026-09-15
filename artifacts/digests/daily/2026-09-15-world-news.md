@@ -3,13 +3,16 @@ lens: world-news
 date: 2026-09-15
 status: building
 window_start: 2026-09-15T05:00:00-04:00
-as_of: 2026-09-15T10:15:00-04:00
+as_of: 2026-09-15T15:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-15
 
-*Curated agentic-interim, 05:00 ET → **10:15 ET** Tuesday. Sources: a
+*Curated agentic-interim, 05:00 ET → **15:00 ET** Tuesday (extended by a
+second WebSearch dispatch covering 11:00 ET→15:00 ET: Iran's on-record
+rejection of Trump's talks overture, and Saudi Arabia's first
+counter-strike into Yemen in this wave). Sources: a
 conflict-thread sweep over `iran-conflict-widening` and `russia-ukraine-war`
 (both already dated 09-15 by an earlier pass today), a same-day check of
 `gaza-war`, `israel-lebanon-escalation`, `yemen-civil-war` and
@@ -25,13 +28,17 @@ entirely, and `attention/world-news.yaml` remains frozen since 09-03.*
 
 ## Today's throughline
 
-Iran's war stayed in a lower gear: a second, minor and unclaimed vessel
-strike hit the Strait of Hormuz overnight, hours after Trump said for the
-first time that the US is "open" to the "concept" of negotiating with
-Tehran — a real softening from Sunday's "keep the oil" framing — while the
-Houthis kept widening the Yemen-Saudi front with a fresh missile-and-drone
-wave on three more Saudi cities, one of them claiming a hit on a Saudi
-airbase. Russia and Ukraine's war produced new geography of its own: a
+Iran's war stayed in a lower gear on the Hormuz side but escalated on the
+Yemen-Saudi front: a second, minor and unclaimed vessel strike hit the
+Strait of Hormuz overnight, hours after Trump said for the first time
+that the US is "open" to the "concept" of negotiating with Tehran — a
+signal Iran's own security chief rejected on the record the same day,
+complicating rather than confirming the softening read. The Houthis kept
+widening the Yemen-Saudi front with a fresh missile-and-drone wave on
+three more Saudi cities, and Saudi Arabia answered in kind for the first
+time in this wave — roughly 54 airstrikes into Houthi-held Yemen, with
+reported casualties including two children. Russia and Ukraine's war
+produced new geography of its own: a
 suspected Russian drone washed up on Poland's Baltic coast, the first
 coastal find in a border-incident pattern that had only shown up on land
 crossings before, while Kyiv absorbed a roughly 200-drone overnight wave.
@@ -74,6 +81,33 @@ crisis with still no thread anywhere on this map.
   ([Arab News](https://www.arabnews.com/saudi-arabia/houthi-attacks-injure-13-civilians-and-kingdom-issues-alerts-for-several-cities-3001734),
   [Haaretz](https://www.haaretz.com/israel-news/israel-security/2026-09-15/ty-article-live/saudi-led-coalition-says-13-injured-in-houthi-attacks-on-three-saudi-cities/000001a0-a2c3-dceb-abe2-aecbaeef0000))
   <!-- k: t=iran-conflict-widening axis=conflict -->
+
+- **Iran's Supreme National Security Council secretary rejected any talks
+  with the US hours after Trump's overture, on the record, the same
+  day — directly complicating rather than confirming this digest's own
+  earlier "real softening" read.** Mohsen Rezaei posted on X Tuesday:
+  "Don't get distracted by the U.S. president's mixed signals — from 'no
+  negotiations' to 'we're ready to talk.' No talks until Iran's
+  conditions are met. Period!" Iran's stated preconditions remain war
+  reparations and sanctions relief.
+  ([The National](https://www.thenationalnews.com/news/gulf/2026/09/15/iran-dismisses-us-talks-as-hormuz-crisis-deepens/),
+  [Business Recorder/AFP](https://www.brecorder.com/news/40439580/iran-rejects-any-talks-with-us-after-trump-remarks),
+  [Israel National News](https://www.israelnationalnews.com/news/433168))
+  <!-- k: t=iran-conflict-widening axis=conflict -->
+
+- **Saudi Arabia hit back into Houthi-held Yemen Tuesday — roughly 54
+  airstrikes on Lahj, Taiz, al-Jawf, Hajjah and Marib — its own
+  retaliation rather than another attack landing on it, the reciprocal
+  turn its "respond firmly" promise had anticipated but not yet
+  delivered.** Houthi health officials say the strikes killed three
+  people, including two children, in Taiz; AP could not independently
+  verify the Houthi-sourced casualty and strike-count figures. Crown
+  Prince Mohammed bin Salman separately flew to Cairo the same day to
+  meet President Sisi, seeking regional backing against the Houthi
+  threat.
+  ([Washington Times/AP](https://www.washingtontimes.com/news/2026/sep/15/saudi-arabia-hits-back-houthi-strongholds-yemen-attacks-air-base/),
+  [AP via Local10](https://www.local10.com/news/world/2026/09/15/houthi-official-says-saudi-airstrikes-leave-3-dead-and-other-mideast-developments/))
+  <!-- k: t=iran-conflict-widening,yemen-civil-war axis=conflict -->
 
 - **Russia launched roughly 200 strike drones at Ukraine overnight —
   Shaheds including jet-powered variants, plus Gerbera and Parodiya
@@ -159,7 +193,11 @@ to 2026-10-15 at month-level precision rather than a false-precision day;
 
 - `~ artifacts/threads/iran-conflict-widening.md` — second Hormuz vessel
   strike, Trump's "open to the concept" remark, fresh Houthi strikes on
-  Abha/Khamis Mushait/Taif
+  Abha/Khamis Mushait/Taif, Iran's on-record rejection of the talks
+  overture, Saudi Arabia's counter-strike into Yemen (11:00-15:00 ET pass)
+- `~ artifacts/threads/yemen-civil-war.md` — added a 2026-09-15 entry on
+  Saudi Arabia's counter-strike, cross-referenced with
+  `iran-conflict-widening` (11:00-15:00 ET pass)
 - `~ artifacts/threads/russia-ukraine-war.md` — ~200-drone Kyiv night,
   suspected Russian drone found on Poland's Baltic coast
 - `~ attention/upcoming.yaml` — `israel-lebanon-rome-round-8` slipped a
@@ -184,22 +222,29 @@ Ben.**
 **None.** Nothing found this pass clears the rail's bar — the test is
 whether it would lead a general news front page anywhere, not whether
 it's our biggest story. The second Hormuz strike is minor and unclaimed
-(no damage, no casualties); the Houthi wave on Saudi Arabia extends an
-already-tracked axis rather than opening a new one; the Poland drone find
-is unconfirmed as a deliberate intrusion by Poland's own military; and the
-Rome-round slip is a diplomatic delay, not an event. Sudan's funding
-story is a real ongoing catastrophe but not a discrete news shock today.
+(no damage, no casualties); the Houthi wave on Saudi Arabia and Saudi
+Arabia's own counter-strike into Yemen both extend an already-tracked
+axis (reciprocal exchange within an open war) rather than opening a new
+one; Iran's on-record rejection of Trump's overture is a diplomatic
+complication, not a shock; the Poland drone find is unconfirmed as a
+deliberate intrusion by Poland's own military; and the Rome-round slip
+is a diplomatic delay, not an event. Sudan's funding story is a real
+ongoing catastrophe but not a discrete news shock today.
 
 ---
 
-Iran's war stayed at a low simmer — a second, minor and unclaimed Hormuz
-strike, a Houthi wave on three more Saudi cities, and Trump for the first
-time calling the US "open" to the "concept" of talking to Tehran. Russia
-hit Kyiv with roughly 200 drones overnight while a suspected Russian
-drone washed up on Poland's Baltic coast, new geography for a pattern
-that had stayed on land borders until now. The Israel-Lebanon Rome round
-slipped a third time, now pushed into October, with Lebanese officials
-privately blaming Israeli election politics. No flash, one ledger flip,
-and the World Food Programme's word that Sudan's funding has been cut in
-half against nearly 20 million people facing hunger opens as this lens's
-one new thread candidate — a major crisis this map has never tracked.
+Iran's war moved on two axes Tuesday: a second, minor and unclaimed
+Hormuz strike, and Trump's first-ever "open to the concept" remark on
+talks — rejected hours later, on the record, by Iran's own security
+chief. The Yemen-Saudi front turned reciprocal for the first time in
+this wave: a Houthi missile-and-drone strike on three Saudi cities, and
+Saudi Arabia hitting back with ~54 airstrikes into Houthi-held Yemen,
+reportedly killing three including two children. Russia hit Kyiv with
+roughly 200 drones overnight while a suspected Russian drone washed up
+on Poland's Baltic coast, new geography for a pattern that had stayed on
+land borders until now. The Israel-Lebanon Rome round slipped a third
+time, now pushed into October, with Lebanese officials privately blaming
+Israeli election politics. No flash, one ledger flip, and the World Food
+Programme's word that Sudan's funding has been cut in half against
+nearly 20 million people facing hunger opens as this lens's one new
+thread candidate — a major crisis this map has never tracked.

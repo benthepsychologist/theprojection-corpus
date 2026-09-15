@@ -10306,3 +10306,89 @@ publish --push` shipped 105 thread pages, 64 entity pages, 3 beat pages,
 repo committed and pushed. 2026-09-15 itself stays `status: building,
 coverage: pending` — not finalizable until a future run is far enough past
 5am ET 09-16.
+
+## 2026-09-15 ~15:00 ET — `/daily`: extended Tuesday from 11:00 to 15:00 ET, corrected a live factual error, and shipped the afternoon's site briefings
+
+Continuation run, not a new-day open: this morning's pass (11:00 ET
+entry above) had already collected, curated all four lenses, and checked
+the ledger through 11:00 ET, then stopped short of the site-briefing
+refresh. This run set `CLOUD_RESEARCHER_CORPUS`/`KESTREL_CONTACT_EMAIL`
+(memory: the collector needs these, not `KESTREL_INSTANCE`), ran a fresh
+`cloud-researcher collect` (14 of 18 sources completed — `google_news_rss`
+and `rss` stalled without output for ~55 minutes, consistent with this
+morning's own documented degradation, and were killed rather than waited
+on further), and dispatched four parallel sonnet-class agents (one per
+lens) to WebSearch-verify anything genuinely new since 11:00 ET.
+
+### What was actually new (3 of 4 lenses; mental-health came back clean)
+
+- **World news:** Iran's Supreme National Security Council secretary
+  (Rezaei) rejected any talks with the US on the record hours after
+  Trump's "open to the concept" remark — a real complication to the
+  morning digest's "softening" read, not a confirmation of it. Saudi
+  Arabia struck back into Houthi-held Yemen for the first time in this
+  wave (~54 airstrikes, reported child casualties) — the reciprocal turn
+  its "respond firmly" promise had anticipated. Both folded into
+  `iran-conflict-widening` and (the Saudi strike) `yemen-civil-war`.
+- **Global capital:** Tuesday's full market close — Dow -0.68%, S&P
+  -0.47%, Nasdaq -0.80%, the 10-year retracing off its 5.041% intraday
+  high toward 5%, Brent/WTI settling $108/$105 — the first full-day read
+  either macro thread had; the same pass caught and rejected a false
+  "pipeline restored" claim a WebSearch AI summary had conflated from an
+  unrelated April incident.
+- **Frontier AI:** Sen. Sanders and Steve Bannon shared a Washington
+  stage to jointly demand AI curbs (Future of Life Institute's "Pro-Human
+  Assembly"); Anthropic's Jacob Coxon — already on this thread over the
+  contested "PR operation" allegations — pulled out of the same event.
+- **Mental health:** clean null result. Sword-Headspace, the four CA
+  AI-therapy bills, and Aware Recovery Care all re-checked with nothing
+  new; one buffer-only clinical-trial registration (AI-dependency scale,
+  single French site) noted but not digest-worthy.
+
+### A real factual error, caught and fixed
+
+The frontier-ai agent flagged, and this session verified against the
+thread's own 09-13 entry, that this morning's Chughtai bullet — in the
+front digest, the frontier-ai digest (twice: throughline + body bullet),
+the `frontier-model-gov-review-precedent` thread file, and
+`actor-doing.yaml`'s `google` entry — miscast Josh Engels as an Anthropic
+departure when he actually left DeepMind for METR days earlier. That
+made Chughtai read as "the first exit from a second lab" when he's
+actually DeepMind's *second* exit; the safety-exodus tally is two
+Anthropic (Coxon, Benton) and two DeepMind (Engels, Chughtai), not
+three-plus-one. Corrected in all five places, each with an explicit
+correction note rather than a silent rewrite.
+
+### Site briefings shipped
+
+Four sonnet-class agents built the `theprojection readouts --pack`
+briefings (front + all three lenses) in parallel; before `--apply`, this
+session cross-checked every bullet's `url` against that scope's own pack
+(`breaking`/`news`/`recent_timeline`) — zero fabricated links found.
+`--apply` 4/4 with zero skips, `--export` wrote 154 readouts,
+`kestrel publish --site-dir /workspace/theprojection-site --push` shipped
+105 thread pages, 64 entity pages, 3 beat pages, 753 claim pages, 2
+interpretation pages, 1,306 story pages, 122 map pages. Site repo
+committed and pushed. Cloudflare deploy hook still didn't fire (no
+`.env`/`THEPROJECTION_DEPLOY_HOOK` in this repo) — same standing gap,
+needs Ben.
+
+### Known gaps left open, on purpose
+
+- **`google_news_rss`/`rss` collector stall** — killed after ~55 minutes
+  with zero output, on top of this morning's own documented
+  degradation (zero `gdelt` items, `sec_edgar` 500s). Not investigated
+  further this session; the four lens agents' direct WebSearch covered
+  the gap for today's actual content.
+- **Cloudflare deploy hook** — same standing issue as every run since
+  09-08.
+- **`gcloud auth login`** — same standing ask; `world-news.yaml` now
+  further stale.
+- Thread candidates still open, unchanged from this morning: **Meta's
+  Applied AI division management rebuild** (second and final offer) and
+  **Sudan's humanitarian crisis** (new offer).
+
+2026-09-15 stays `status: building, coverage: pending` — not
+finalizable until a future run lands far enough past 5am ET 09-16 for
+the coverage critic's benchmarks to exist. No graph feed this run (only
+finalized days get one; 09-14's was already fed by the morning pass).

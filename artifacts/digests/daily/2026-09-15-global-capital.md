@@ -3,7 +3,7 @@ lens: global-capital
 date: 2026-09-15
 status: building
 window_start: 2026-09-15T05:00:00-04:00
-as_of: 2026-09-15T11:00:00-04:00
+as_of: 2026-09-15T15:00:00-04:00
 coverage: pending
 ---
 
@@ -51,6 +51,7 @@ itself hadn't landed as of this window.
 | Gold | ~$4,282-4,299, below $4,300 | Tuesday, 09-15 | down further vs Monday's $4,284-4,310 |
 | DXY | ~99.65 (+0.15% on the day, 4th straight up session) | Tuesday, 09-15 | +0.23 vs Monday's 99.42 |
 | Sept. FOMC hike odds (CME FedWatch) | ~92% | Tuesday, 09-15 | up from ~87-89% Monday |
+| Dow / S&P 500 / Nasdaq (close) | 52,065.22 / 7,584.41 / 25,976.94 | Tuesday close, 09-15 | -0.68% / -0.47% / -0.80% on the day |
 
 ## Capital in my markets
 
@@ -85,6 +86,19 @@ itself hadn't landed as of this window.
   ([TradingEconomics](https://tradingeconomics.com/commodity/brent-crude-oil),
   [Briefs.co](https://www.briefs.co/news/saudi-east-west-pipeline-expected-back-online-soon-energy-se/))
   <!-- k: t=red-sea-oil-shock axis=capital-markets -->
+
+- **US equities closed lower Tuesday as the FOMC setup tightened into
+  the close rather than fading: the Dow down 0.68% to 52,065.22, the S&P
+  500 down 0.47% to 7,584.41 and the Nasdaq down 0.80% to 25,976.94,
+  while the 10-year retraced off its 5.041% intraday high to hover near
+  5% and Brent/WTI settled at $108/$105.** This is the first full-day
+  close read this digest has — everything above was intraday — and it
+  shows the sell-off holding into the close, with oil steady and yields
+  still elevated just off the 2007-era high heading into Wednesday's
+  decision.
+  ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-tuesday-september-15-dow-sp-500-nasdaq-081307838.html),
+  [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-sept-15-2026-dow-futures-slide-as-oil-prices-surge-and-treasury-yields-hit-2007-highs))
+  <!-- k: t=treasury-long-end-intervention,red-sea-oil-shock axis=capital-markets -->
 
 *Ambient threads checked this window with nothing new beyond what's
 already on file: the eight AI-capex/financing threads and six China/chips
@@ -188,10 +202,13 @@ in the next 7 days.**
 
 ## 🔄 Map changes
 
-- No new global-capital-owned thread entries added by this session — the
-  `⟨daily 2026-09-15⟩` updates on `treasury-long-end-intervention` and
-  `red-sea-oil-shock` cited above were already written by earlier
-  dispatches before this curation pass began.
+- `~ artifacts/threads/treasury-long-end-intervention.md` and
+  `~ artifacts/threads/red-sea-oil-shock.md` — both gained a Tuesday
+  close-of-day entry (equity closes, 10-year retracing toward 5%, Brent/
+  WTI settling $108/$105) from an 11:00-15:00 ET pass; the `red-sea-oil-
+  shock` entry also records and rejects a false "pipeline restored"
+  claim a WebSearch AI summary surfaced (it conflated this month's
+  attack with an unrelated April 2026 restoration).
 - One interpretation added (the 10-year's crossing of 5.041% against
   capital-context.yaml's fiscal-dominance framing, one day ahead of the
   FOMC) — see sidecar `2026-09-15-global-capital.interp.yaml`.
@@ -211,12 +228,15 @@ own bar for a new thread.
 ---
 
 The FOMC meets tomorrow with the setup tighter than it was yesterday: the
-10-year crossed 5.041% today, its highest since July 2007, with hike odds
-near 92% — the sharpest test yet of whether Treasury's own buyback
+10-year crossed 5.041% intraday, its highest since July 2007, with hike
+odds near 92% — the sharpest test yet of whether Treasury's own buyback
 campaign can hold the long end against a hiking Fed. Brent held near
 $107-108 rather than climbing further, with Washington promising a
-pipeline restart "soon" but no date. And two of the map's own dated bets
-resolved in different directions: SoftBank actually paid off its $25.9bn
-OpenAI bridge loan even as its stock drew a record short position, and
-San Francisco's data-center moratorium went from rumor to a real ordinance
-on the Board floor, with the vote itself still to come.
+pipeline restart "soon" but no date. Equities closed the session down
+(Dow -0.68%, S&P -0.47%, Nasdaq -0.80%) with the 10-year retracing toward
+5% into the close rather than holding its high — the sell-off held
+through the full day, not just the morning. And two of the map's own
+dated bets resolved in different directions: SoftBank actually paid off
+its $25.9bn OpenAI bridge loan even as its stock drew a record short
+position, and San Francisco's data-center moratorium went from rumor to a
+real ordinance on the Board floor, with the vote itself still to come.

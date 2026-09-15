@@ -3,13 +3,13 @@ lens: mental-health
 date: 2026-09-15
 status: building
 window_start: 2026-09-15T05:00:00-04:00
-as_of: 2026-09-15T10:20:00-04:00
+as_of: 2026-09-15T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-15
 
-*Curated agentic-interim, 05:00 ET Tuesday → 10:20 ET. The deterministic
+*Curated agentic-interim, 05:00 ET Tuesday → 15:00 ET. The deterministic
 collectors ran degraded/rate-limited today — GDELT's own scheduled pull
 this morning came back with zero items even on unrelated AI-lab terms, so
 this pass leans on direct sweeps rather than the buffer: STAT's mental-
@@ -19,7 +19,11 @@ ClinicalTrials.gov API check against this lens's watchlist conditions, the
 California Governor's office's own 09-14 signing-list press release, and
 general search across AI-therapy regulation, digital-therapeutics
 evidence, Ping An and Canadian AI-health coverage. MobiHealthNews stayed
-behind a bot-check today and could not be read directly.*
+behind a bot-check today and could not be read directly. A second
+WebSearch dispatch (11:00-15:00 ET) re-checked Sword-Headspace, the four
+CA AI-therapy bills, Aware Recovery Care and the fresh clinicaltrials/
+openalex buffer (421/670 rows, whole-corpus, not MH-filtered) for
+anything new; nothing cleared the bar — see Map changes below.*
 
 ## Today's throughline
 
@@ -132,6 +136,15 @@ registration, and is carried under Research & evidence instead.
   finalized digest; this is a sourcing and timing correction to that
   record, not new news.
 - No entities, threads, or watchlist terms added or removed.
+- **11:00-15:00 ET re-check:** nothing new. Sword-Headspace close still
+  silent (no newsroom confirmation from either company; aggregator claims
+  of a 09-14 effective date trace to the same 08-25 STAT filing story, not
+  a new confirmation); no new CA AI-therapy-bill signings past 09-14's
+  list; no new Aware Recovery Care buyer/filing. One buffer item checked
+  and not carried: `NCT07819851`, a small French single-site observational
+  trial on generative-AI dependency in addiction outpatients (first
+  posted 09-15) — thematically on-watchlist but not digest-worthy on its
+  own; worth a mention if it gathers more evidence later.
 
 ## 🧵 Thread candidates
 
