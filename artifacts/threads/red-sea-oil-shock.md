@@ -22,6 +22,11 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-16 — Brent eases on an inventory build even as the pipeline stays shut with no restart date
+
+- **Brent fell about 1% to $107.64 Wednesday as reported US crude-inventory increases outweighed the still-unresolved Saudi East-West pipeline shutdown (offline since the drone strike, no restart timeline despite Tuesday's "soon" comment from the US Energy Secretary) and intensifying Saudi-backed counter-strikes against Houthi positions near Bab al-Mandeb.** Two forces are pulling the same barrel in opposite directions — a bearish inventory print against a still-live chokepoint disruption on a route now carrying roughly 8x more Saudi export volume since Hormuz risk forced the reroute.
+  ([CNBC](https://www.cnbc.com/2026/09/16/oil-prices-today-brent-wti-hormuz-iran-war.html), [Washington Times](https://www.washingtontimes.com/news/2026/sep/16/saudi-backed-forces-yemen-step-strikes-houthis-oil-crisis-escalates/)) ⟨daily 2026-09-16⟩
+
 ## 2026-09-15 — Brent consolidates near $107-108 as the pipeline stays shut and Washington predicts a restart "soon" with no date given
 
 - **Brent held in the $107-108 range Tuesday, near but not clearly above Monday's four-month intraday levels — sources disagree on the exact prior-close figure this pass (tradingeconomics reads Monday's close at $105.68, a separate feed puts Monday's high at $108.34), so this entry states the range rather than a reconciled percentage move.** The East-West pipeline remains offline five days after the 09-10 drone attack, with no Aramco damage assessment or repair timeline yet disclosed. ([TradingEconomics](https://tradingeconomics.com/commodity/brent-crude-oil)) ⟨daily 2026-09-15⟩

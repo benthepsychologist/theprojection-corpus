@@ -7181,3 +7181,205 @@ this and the real gap was elsewhere (e.g. curation, not collection).
   r.jina.ai proxy on MobiHealthNews's feed also cleared on the first
   attempt — no fresh escalations to record on any of the four
   mental-health benchmarks this pass.
+
+## 2026-09-16 critic pass — checking digest-day 2026-09-15 (frontier-ai, global-capital, mental-health; world-news carries no benchmark critic by design). Genuine misses in all three lenses, one clustered two-day repeat pattern on global-capital's own antitrust-waiver seam
+
+*Run 2026-09-16, checking Tuesday 2026-09-15's three benchmarked digests, all
+`status: building` at check time (as_of 15:00 ET). Transport: python3 urllib
+with a Googlebot UA (via Bash, not curl or WebFetch — curl remains denied at
+the harness layer per the 2026-09-10 note) cleared Behavioral Health
+Business's and STAT Health Tech's real feed URLs and Fierce Healthcare's
+`/rss/xml` on first attempt; the same transport reached Matt Levine's Money
+Stuff author-page `.rss` and FT Unhedged's `?format=rss` directly (no proxy
+needed for either RSS layer). MobiHealthNews's feed, even through the
+r.jina.ai reader proxy, still returned Cloudflare's "Just a moment…"
+challenge — the fourth-plus escalation on this benchmark, unchanged from
+prior passes. Axios Pro Rata was not checked: per the standing 08-25/09-09
+same-day-only note, a 09-16 fetch of its reader-proxy URL would silently
+render 09-16's edition, not 09-15's, so it is logged "not checkable" rather
+than compared against the wrong day. WebSearch/WebFetch supplemented every
+benchmark to confirm dating and cross-corroborate (CNBC, TechCrunch,
+MacRumors, Cryptopolitan, and others) beyond each outlet's own RSS stub.*
+
+### frontier-ai / 2026-09-15 — two genuine misses: OpenAI's first-ever federal safety-bill endorsement, and a Product & access section that covered one story out of four
+
+- **Missed — OpenAI publicly backed a specific provision of the bipartisan
+  FRONTIER Act (H.R. 9925) on Tuesday — the first time the company has
+  endorsed a specific federal AI-safety mandate — while its global policy
+  chief Chris Lehane separately confirmed on the record that OpenAI,
+  Anthropic and Google DeepMind have been in safety-coordination talks "for
+  several weeks."** The FRONTIER Act provision would force frontier labs to
+  give independent verification organizations access to assess safety
+  practices — functionally the same "embedded evaluators" idea Dario
+  Amodei's pacing-pledge essay proposed, and the digest already devotes its
+  entire Policy & governance section to the pledge's political fallout
+  (Trump's attacks, the Sanders-Bannon rally). **The Neuron** — one of this
+  lens's four named benchmarks — led its Tuesday edition with this exact
+  story ("OpenAI Backs Safety Assessments"); this digest has zero mention
+  (`grep -in "frontier act"` returns nothing). This is the concrete
+  legislative "so what" of the pledge story the digest has tracked in depth
+  from every other angle.
+  ([TechCrunch](https://techcrunch.com/2026/09/15/openai-anthropic-google-have-been-in-talks-on-ai-safety-for-weeks/),
+  [Cryptopolitan](https://www.cryptopolitan.com/openai-backs-frontier-act-ai-safety/),
+  [The Neuron digest](https://www.theneuron.ai/digest/everything-that-happened-in-ai-today-tuesday-september-15-2026/))
+- **Missed — TLDR AI's Tuesday edition led its own news block with three
+  separate product/M&A stories this digest's Product & access section
+  (which covers only xAI's Grok Bot Galaxy event) has none of: Anthropic
+  quietly building a "Claude Money" personal-finance feature into its iOS
+  app (linked bank accounts, persistent transaction access); OpenAI's
+  $300M+ acquisition of smartphone-camera startup Glass Imaging (founded by
+  two ex-Apple Portrait Mode engineers); and hidden iOS 27 code showing
+  Apple built Siri to let Claude or GPT-5.6 replace its own model as the
+  backend, via a Model Delegation API and an Inference Provider protocol
+  (neither switched on for users yet).** All three are dated 09-14/09-15
+  and none appear in this digest
+  (`grep -in "glass imaging\|claude money\|swap"` returns nothing).
+  ([TLDR AI](https://tldr.tech/ai/2026-09-15),
+  [MacRumors](https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/),
+  [TechCrunch — Glass Imaging](https://techcrunch.com/2026/09/14/openai-buys-smartphone-camera-maker-glass-imaging-for-300-million-report-says/),
+  [testingcatalog — Claude Money](https://www.testingcatalog.com/anthropic-prepares-claude-money-for-personal-finance/))
+- **No other misses.** The Rundown AI's archive didn't resolve to a dated
+  09-15 issue this pass (see Tooling); The AI Daily Brief's 09-15 episode
+  (Amodei's pacing essay, "ladder-pulling" critique, METR-as-regulator
+  framing) is commentary on a story this digest already covers in
+  comparable depth from the politics/people/markets angles — not logged as
+  a fact-level miss.
+
+### global-capital / 2026-09-15 — one genuine miss, and it's the second day running on the same seam: three separate on-record rejections of the AI labs' antitrust-waiver ask
+
+- **Missed — Bloomberg Technology's own Tuesday coverage carried the direct
+  sequel to Money Stuff's already-logged 09-14 "cartel described as safety
+  policy" framing, and this digest has none of it.** Same day: (1) OpenAI
+  global policy chief Chris Lehane confirmed the safety-coordination talks
+  with Anthropic/DeepMind are real and stated on the record that OpenAI
+  does **not** think an antitrust waiver is needed for the three labs to
+  coordinate (Bloomberg's own newsletter headline: "AI Safety Push Raises
+  Antitrust Questions for Anthropic, OpenAI"); (2) Nvidia CEO Jensen Huang
+  went further and called the whole antitrust-waiver ask "completely
+  unnecessary," directly on a Bloomberg segment; (3) Meta CEO Mark
+  Zuckerberg separately sided with Huang over Amodei's coordinated-slowdown
+  proposal. This is three named-executive, on-record rejections of the
+  exact antitrust-waiver ask this map has tracked since Money Stuff's
+  column — a distinct axis from the government-side rejection (Trump/Sacks)
+  this digest already carries — and none of it appears
+  (`grep -in "lehane\|huang\|zuckerberg\|antitrust"` returns nothing).
+  **This is the second consecutive daily pass to find a real miss on this
+  exact seam** (09-14: Money Stuff's antitrust framing plus Sacks's
+  rejection; 09-15: Lehane's confirmation plus Huang's and Zuckerberg's
+  rejections) — see Guardrail below.
+  ([Bloomberg — AI Safety Push](https://www.bloomberg.com/news/newsletters/2026-09-15/ai-safety-push-raises-antitrust-questions-for-anthropic-openai),
+  [CNBC — Huang](https://www.cnbc.com/2026/09/15/nvidia-huang-ai-slowdown-antitrust.html),
+  [CNBC — Zuckerberg](https://www.cnbc.com/2026/09/15/meta-mark-zuckerberg-with-nvidia-huang-ai-safety-slowdown.html))
+- **Also checked, not logged as a second miss: AllianceBernstein's
+  Bloomberg-carried note that slowdown calls won't derail hyperscaler capex
+  plans (projecting >$1 trillion in combined 2027 capex).** Directly
+  on-topic for the digest's own `hyperscaler-capex-big-picture`/
+  `ai-circular-financing-risk` threads, which the digest says were "checked
+  this window with nothing new found" — this specific data point wasn't
+  surfaced by that check. Flagged for the main session's judgment on
+  whether it clears the bar as a standalone miss; not logged as a primary
+  finding given the antitrust story above is the stronger, better-
+  corroborated find.
+  ([Bloomberg — AllianceBernstein](https://www.bloomberg.com/news/articles/2026-09-15/ai-slowdown-calls-won-t-halt-fundraising-alliancebernstein-says))
+- **Not checkable.** Axios Pro Rata: same-day-only via its documented
+  reader-proxy access, and today is 09-16 — fetching it now would silently
+  compare against 09-16's edition, so it's logged not-checkable for 09-15
+  rather than compared wrong (per the standing 08-25/09-09 note). Money
+  Stuff's actual 09-15 column ("Not All the Susquehanna Puts Were Bad") is
+  confirmed to exist via its author-page RSS (options-market structure,
+  prediction-market smart beta, stablecoin arbs — no AI/antitrust content
+  in headline or dek) — off-topic for this lens today, not a miss. FT
+  Unhedged's 09-15 edition ("The great British (and American) fork in the
+  road") is confirmed to exist via RSS (pubDate 09-15 05:30 GMT) but is
+  fully paywalled past the headline even through the r.jina.ai reader
+  proxy — existence confirmed, substance not, consistent with the standing
+  08-25 note.
+
+### mental-health / 2026-09-15 — one genuine miss: two same-day Behavioral Health Business stories the digest's Capital & corporate section has neither of
+
+- **Missed — Behavioral Health Business's Tuesday feed led with two
+  separate, real behavioral-health funding/M&A stories dated 09-15, and
+  this digest's Capital & corporate section (which covers only Aware
+  Recovery Care's 09-11 asset sale, caught late) has neither.** (1) Prosper
+  Health, a Weston, FL virtual behavioral-health provider serving adults
+  with autism (a genuinely underserved niche — adult autism diagnoses aged
+  26-34 grew 452% from 2011-2022), raised ~$10M in an equity sale; it was
+  added to Headspace's specialty referral network in July alongside
+  Cortica, Charlie Health and Equip. (2) John Peloquin, the longtime CEO of
+  Discovery Behavioral Health, launched a new San Diego addiction-treatment
+  venture (Integrated Behavioral Health Group) built explicitly around
+  AI-backed patient monitoring (partnered with Videra Health) to interrupt
+  addiction treatment's "episodic cycle" — acquiring the assets of a
+  defunct provider, Right Path Recovery. Both are dated/published
+  2026-09-15 per BHB's own feed and article schema
+  (`datePublished: 2026-09-15`), and neither appears in the digest
+  (`grep -in "prosper health\|discovery behavioral"` returns nothing).
+  ([Prosper Health](https://bhbusiness.com/2026/09/15/prosper-health-raises-10m-to-support-adults-with-autism/),
+  [Integrated Behavioral Health Group](https://bhbusiness.com/2026/09/15/former-discovery-behavioral-ceo-launches-new-addiction-treatment-venture/))
+- **No other misses.** STAT Health Tech's 09-15 items (RFK Jr./D.C.
+  Diagnosis policy newsletter, Medicare's WISeR AI prior-auth pilot
+  problems) and Fierce Healthcare's 09-15 items (Ayble Health, Thatch,
+  Waystar, Evvy) are all general health-tech/policy, not behavioral/
+  MH-specific. One borderline item checked and NOT logged: CMS's same-day
+  expansion of its ACCESS chronic-care-management pilot to more conditions
+  (covered by both STAT+ and Fierce) does include depression and anxiety
+  among the newly eligible conditions per search-engine synthesis of the
+  STAT+ piece, but the article itself sits behind STAT's paywall and
+  Fierce's own article 403'd on every transport tried this pass (direct
+  Googlebot UA and r.jina.ai proxy both failed) — flagged for a follow-up
+  check rather than logged as a confirmed miss on thin sourcing.
+  MobiHealthNews could not be read at all this pass (see Tooling).
+
+### Guardrail — one watchlist auto-add applied: global-capital's antitrust-waiver seam
+
+**A genuine two-day repeat-miss pattern on global-capital's antitrust-waiver
+seam**, matching this file's own documented guardrail convention (see the
+09-15 "Siri AI" auto-add above, and the global-capital `themes` block's own
+critic-add history for JGB/carry-trade/OAT terms): the 09-14 pass logged
+Money Stuff's "cartel described as safety policy" antitrust framing plus
+Sacks's rejection as a miss; this 09-15 pass independently found Lehane's
+confirmation-plus-non-waiver-stance and Huang's/Zuckerberg's on-record
+rejections as a second, separate miss on the identical underlying question
+(does the pacing pledge need an antitrust exemption) — and
+`attention/watchlist.yaml` had **zero** terms for "antitrust" anywhere in
+either the `ai` or `global-capital` lens before this pass. Added to
+`global-capital.themes` (main session, 2026-09-16): `"AI antitrust waiver"`,
+`"AI safety coordination antitrust"`. YAML-guardrail ran clean after the
+edit.
+
+### Tooling
+
+- ✅ python3 urllib with a Googlebot UA (via Bash) cleared Behavioral Health
+  Business's `/feed/`, STAT Health Tech's `topic/health-tech/feed/`, and
+  Fierce Healthcare's `/rss/xml` on the first attempt — no fresh escalation
+  on any of the three.
+- ✅ The same transport, no UA override needed, cleared both RSS layers for
+  global-capital's paywalled/proxy-dependent benchmarks: Matt Levine's
+  author-page `.rss` endpoint and FT Unhedged's `?format=rss` both returned
+  clean dated item lists directly, consistent with the 08-23 "FT Unhedged:
+  direct fetch works again" note.
+- ⛔ **MobiHealthNews: still unreachable, now through the reader proxy too.**
+  `r.jina.ai/https://www.mobihealthnews.com/rss.xml` returned Cloudflare's
+  "Just a moment…" verification challenge rather than feed content — the
+  fix logged working as recently as 09-14's pass has decayed again,
+  consistent with this benchmark's now well-established escalation history
+  (three prior escalations logged 08-11 through 08-26). No new workaround
+  found this pass; worth a fresh investigation round rather than continuing
+  to retry the same proxy.
+- ⚠️ **Fierce Healthcare's individual article pages 403 on both direct
+  Googlebot-UA fetch and the r.jina.ai proxy**, even though the outlet's
+  own `/rss/xml` feed is fully readable — a narrower version of the "feed
+  works, article page doesn't" split this file has logged before for this
+  outlet's tag pages. Cost this pass one unconfirmed story (the CMS
+  ACCESS-model item, logged above as borderline/not-confirmed rather than
+  guessed from headline+search-snippet alone).
+- Axios Pro Rata was not attempted this pass — per the standing 08-25/09-09
+  same-day-only limitation, any fetch today would silently return 09-16's
+  content while looking like a 09-15 check, so skipping it and logging
+  "not checkable" is the safer call than a false-clean or false-miss read.
+- The Rundown AI's own archive page (`therundown.ai/archive`) does not
+  expose human-readable dates in its rendered markup — WebFetch could not
+  confirm which listed issue was 09-15's without guessing from image-URL
+  timestamps, so this benchmark is logged as not-checked-cleanly this pass
+  rather than compared on a guess. Worth a dated-URL pattern investigation
+  (similar to what fixed STAT Health Tech's URL on 08-23) if this recurs.

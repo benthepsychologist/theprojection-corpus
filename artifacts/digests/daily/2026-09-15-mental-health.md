@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-15
-status: building
+status: final
 window_start: 2026-09-15T05:00:00-04:00
 as_of: 2026-09-15T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Mental Health — 2026-09-15
@@ -83,6 +83,24 @@ August.
   market is consolidating from a position of strength.
   ([Behavioral Health Business, 09-11](https://bhbusiness.com/2026/09/11/aware-recovery-cares-financial-troubles-worsen-sales-talk-emerges/), [Behavioral Health Business, 08-05](https://bhbusiness.com/2026/08/05/aware-recovery-care-caught-in-multiple-financial-operational-crises/))
   <!-- k: t=mh-clinical-infra-funding axis=capital-corporate -->
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Behavioral Health Business's Tuesday feed
+led with two same-day funding/M&A stories this digest's Capital &
+corporate section (which had only Aware Recovery Care's late-caught asset
+sale) didn't carry: Prosper Health, a Weston FL autism-specialty virtual
+provider, raised ~$10M; and John Peloquin, former Discovery Behavioral
+Health CEO, launched a new AI-monitored addiction-treatment venture
+(Integrated Behavioral Health Group) in San Diego. Both now folded into
+`mh-clinical-infra-funding`'s 09-15 timeline entry. Full detail:
+`coverage-log.md`, 2026-09-16 pass.
+**Both covered:** Definium's third positive Phase 3 readout and the
+California AI-therapy bills' unsigned status matched general trade
+coverage.
+**We had → they didn't:** Aware Recovery Care's asset purchase agreement
+was this digest's own catch, sourced directly to BHB before wider
+pickup.
 
 ## 🧪 Clinical trials
 

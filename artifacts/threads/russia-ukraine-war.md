@@ -18,6 +18,11 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-09-16 — A Russian drone kills five on a passenger bus in Nikopol, a distinct strike from Tuesday's Kyiv wave
+
+- **A Russian drone struck a scheduled passenger bus in Ukraine's Nikopol district (Dnipropetrovsk region) early Wednesday, killing five and wounding at least seven.** Regional governor Oleksandr Hanzha confirmed the strike; Zelenskyy called it an "atrocity" with "no military rationale," tying it to Russia's continued targeting of logistics and infrastructure. Distinct from Tuesday's ~200-drone Kyiv wave already on this thread.
+  ([AP via messenger-inquirer](https://www.messenger-inquirer.com/ap/ap_international_news/russian-drone-strike-kills-5-and-injures-at-least-7-on-passenger-bus-in-ukraine/article_fe0cd380-71ec-55ec-9d20-7c33611dd85d.html), [Al Jazeera](https://www.aljazeera.com/news/2026/9/16/at-least-five-killed-in-russian-drone-strike-near-ukraine-front-line)) ⟨daily 2026-09-16⟩
+
 ## 2026-09-15 — A 200-drone night hits Kyiv's gas stations and a suspected Russian drone washes up on Poland's Baltic coast
 
 - **Russia launched roughly 200 strike drones — Shaheds including jet-powered variants, Gerbera and Parodiya decoys — from 18:00 on 09-14, with Ukrainian air defense downing or suppressing 187 by 08:00; drones hit two Kyiv gas stations plus warehouses, a restaurant and an office building, killing one man and injuring eight.** This continues the nightly-bombardment pattern already extensively logged on this thread rather than opening a new type of attack. ([Euromaidan Press](https://euromaidanpress.com/2026/09/15/russian-drones-killed-a-man-and-injured-eight-in-kyiv-hitting-two-gas-stations/)) ⟨daily 2026-09-15⟩

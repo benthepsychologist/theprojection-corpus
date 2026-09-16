@@ -1397,6 +1397,12 @@ expectations:
       flip warranted yet; re-check later in September before treating a
       full month of silence as passed-silent.
 
+      RE-CHECK 2026-09-16 — still no named deal. Same six MOU partners,
+      same "subject to execution of final agreements... expected to reach
+      market within months" language as 08-10, no dollar commitment or
+      first project disclosed by any partner. due_precision is month with
+      15 days of September left; stays pending.
+
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2151,14 +2157,26 @@ expectations:
       filing, or Headspace's product/brand being folded into Sword's. A
       slip or a termination is the interesting outcome — neither company
       had announced the deal publicly when the filing surfaced it.
-    status: passed-silent
-    resolved: 2026-09-14
+    status: pending
+    due: 2026-10-01
+    due_precision: quarter
+    slips: [2026-09-14]
     # 2026-09-14 ⟨daily⟩: PASSED-SILENT (3-day retro-flip grace open through
     # 09-17). Every source found (STAT, Healthcare Dive, Fierce Healthcare,
     # MobiHealthNews, Behavioral Health Business, Telehealth.org) still only
     # reports the 08-25 MA Health Policy Commission filing's *expected*
     # 09-14 close — none postdate today, and neither company has issued a
     # closing announcement, further filing, or brand-integration signal.
+    #
+    # SLIPPED 2026-09-16 (retro-flip inside the 09-17 grace window) — Sword
+    # Health made the acquisition official today: a signed agreement to
+    # acquire Headspace's parent OrangeDot, all-cash, with close now
+    # targeted for "the beginning of Q4 2026" per Sword's own press
+    # release — not a silent non-event, just a later real close than the
+    # filing implied. Confirmed against the primary release directly (not
+    # a search summary — one result had recycled the old "expected Sept.
+    # 14" headline as if current).
+    # ([Sword Health](https://www.globenewswire.com/news-release/2026/09/16/3363038/0/en/sword-to-acquire-headspace-bringing-ai-care-to-the-world-s-most-trusted-mental-health-brand.html))
 
   - id: softbank-retail-bond-pricing-0904
     claim: >
@@ -2933,7 +2951,8 @@ expectations:
       Bradley County, Independence MO).
     logged: 2026-09-03
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-16
     evidence: |
       RE-CHECK 2026-09-15 — same-day event, no vote outcome reported yet.
       ABC57 and WSBT confirm the second reading was on today's Common
@@ -2941,6 +2960,15 @@ expectations:
       to run at least one year past the facility's certificate of
       operation. No source yet reports how the vote went. Stays pending;
       re-check tomorrow.
+
+      PASSED-SILENT 2026-09-16 — a second day's sweep (ABC57, WSBT,
+      DatacenterDynamics, general web search) still found no post-vote
+      coverage confirming passage, rejection, or tabling. The second
+      reading itself is solidly confirmed as having been on Tuesday's
+      agenda; the actual outcome has gone unreported for two full days,
+      which is itself the loud-silence outcome this status is for. Most
+      likely a local-coverage lag rather than a non-event; re-check if
+      Michigan City local press picks it up later.
 
   - id: boj-september-meeting-0918
     claim: >
@@ -3591,7 +3619,8 @@ expectations:
       week with a live data-centre siting fight, and the first major city.
     logged: 2026-09-11
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-16
     evidence: |
       RE-CHECK 2026-09-15 — the original caveat is superseded: this is NOT
       a single unconfirmed Hoodline story. Mission Local, SFist, SF
@@ -3607,6 +3636,20 @@ expectations:
       unconfirmed — confidence raised from `rumored` to `reported` on the
       strength of the introduction being real; stays pending, re-check
       tomorrow for the vote result.
+
+      PASSED-SILENT 2026-09-16 — the 09-16 coverage-critic pass searched
+      specifically for a vote outcome (not just the introduction) across
+      Hoodline, Mission Local, SFist, SF Chronicle, CBS SF, NBC Bay Area,
+      KQED and KRON4, plus a direct sfbos.org/Legistar check, and found no
+      source reporting an actual roll-call or adoption vote — every article
+      describes the planned introduction, not a recorded vote. The claim as
+      written (`the Board votes on 2026-09-15`) has its due date passed with
+      no evidence either confirming or refuting that a vote occurred. Board
+      procedure often requires committee referral or a second reading even
+      for urgency ordinances, so the original claim may simply have been
+      imprecise about timing rather than wrong about outcome — worth a
+      direct Legistar file-number check to convert this to `slipped` with a
+      real adoption-vote date if one surfaces.
 
   - id: bessent-large-bank-iran-sanction-0914
     claim: >

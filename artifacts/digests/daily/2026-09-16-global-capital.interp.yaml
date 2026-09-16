@@ -1,0 +1,75 @@
+# Interpretations for 2026-09-16 global-capital, keyed by slugify(bold lead[:50]).
+# Read against attention/capital-context.yaml (asof 2026-08-25) and against
+# treasury-long-end-intervention's own live test of the fiscal-dominance
+# framing, which the FOMC decision resolves later today (~2pm ET, outside
+# this morning pass's window).
+
+august-retail-sales-beat-consensus-hours-before-to:
+  mechanism: >
+    A hot consumption print landing the same morning as a near-certain
+    hike removes the last plausible dovish surprise going into the
+    decision, pushing the test of capital-context's "fiscal dominance"
+    framing (can Treasury's TGA-funded buyback campaign hold the long end
+    against a hiking Fed) from hypothetical to live today.
+  confidence: reported
+  scenarios:
+    - direction: >
+        The Fed hikes 25bp with a hawkish dot plot and no pause signal.
+      why: >
+        Today's data removes the dovish case; October/December hike odds
+        are already priced at 39%/26%.
+      precedent: >
+        The 2023 tightening cycle's pattern of consecutive hikes once a
+        data-confirmed inflation resurgence broke a pause.
+    - direction: >
+        The Fed hikes but Chair Warsh's press conference signals a pause
+        after, citing the bond market's own tightening (30-year near
+        5.2%, 10-year at 5%) as doing some of the Fed's work.
+      why: >
+        Financial-conditions-already-tight arguments recur when long
+        yields spike ahead of a decision.
+      precedent: >
+        The Fed's 2023 "skip" logic after the regional-bank stress
+        episode, cited explicitly for this kind of self-tightening
+        argument.
+  context_note: >
+    Directly tests capital-context.yaml's `rate_regime` framing — a hike
+    today, on top of Treasury's own yield-suppression buybacks, is the
+    exact collision that reading has been building toward since the
+    August TGA disclosure. The decision itself lands ~2pm ET, after this
+    morning pass's window.
+
+brent-eased-on-a-reported-inventory-build-even-as:
+  mechanism: >
+    Two forces are pulling in opposite directions on the same barrel — a
+    bearish inventory data point vs. a still-live supply disruption at a
+    chokepoint capital-context's `conflict_risk_premium` reading already
+    flagged as newly load-bearing (Saudi exports through Bab al-Mandeb
+    running roughly 8x higher since Hormuz risk forced the reroute).
+  confidence: reported
+  scenarios:
+    - direction: >
+        Oil resumes climbing if the pipeline restart keeps slipping
+        without a date and Yemen fighting further threatens the
+        Bab al-Mandeb corridor.
+      why: >
+        This is now Saudi Arabia's primary alternate export route, not a
+        secondary one.
+      precedent: >
+        The 08-14 episode where Brent jumped 5%+ purely on "indefinite
+        blockade" rhetoric with no physical incident — this market has
+        already shown it will reprice hard on chokepoint risk alone.
+    - direction: >
+        Oil eases further if the inventory-build pattern continues and a
+        restart date is actually named.
+      why: >
+        Today's move already shows fundamentals-side data can outweigh
+        unresolved-but-static supply risk on a given day.
+      precedent: >
+        capital-context's own tracked pattern through mid-August of oil
+        falling on OPEC/inventory data even as incidents accumulated.
+  context_note: >
+    Read against `conflict_risk_premium`'s standing framing that Saudi's
+    Bab al-Mandeb dependence turns the Yemen civil war (previously a
+    separate thread from the Red Sea shipping story) into a direct
+    oil-supply input.

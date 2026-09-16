@@ -14,6 +14,11 @@ figure is reporter-sourced only); how much runs on Apple's own models vs.
 Google's; the EU/DMA fight over Siri AI's EU launch; whether Apple builds
 back toward its own.
 
+## 2026-09-15 (caught late by the coverage critic, added 2026-09-16) — Hidden iOS 27 code shows Apple built Siri to let a third-party model replace its own backend entirely
+
+- 🕰 **CAUGHT LATE — MacRumors found hidden iOS 27 code showing Apple built Siri with a Model Delegation API and an Inference Provider protocol that would let Claude or GPT-5.6 replace Apple's own model as the backend — neither switched on for users yet.** This is a materially bigger watch-question answer than the Gemini deal alone: rather than a single locked-in partner, Apple appears to be building Siri as model-agnostic infrastructure, with Gemini (below) as the current default rather than the architecture's ceiling. TLDR AI's 09-15 issue led its news block with this alongside two unrelated items (Anthropic's "Claude Money" personal-finance feature in development, OpenAI's ~$300M acquisition of camera startup Glass Imaging) that this map has no existing thread for — noted here for provenance, not filed to this thread.
+  ([MacRumors](https://www.macrumors.com/2026/09/14/siri-can-be-swapped-out-for-chatgpt-claude/), [TLDR AI](https://tldr.tech/ai/2026-09-15)) ⟨daily 2026-09-15⟩
+
 ## 2026-09-14 (caught late by the coverage critic, added 2026-09-15) — The Gemini-powered Siri rebuild actually ships
 
 - 🕰 **CAUGHT LATE — the rebuilt, Gemini-powered Siri shipped publicly with iOS 27 on 2026-09-14, as the 09-11 entry below said it would.** The Neuron and other AI-newsletter benchmarks covered the ship substantively; this thread's own record had the pre-ship forecast (usage caps, paid-tier plan) but missed the actual event itself, a repeat miss the 09-10 coverage critic had already flagged by date. Confirms this thread's central watch question in the affirmative for now: the public product runs on Google's model, not a delayed Apple-only fallback.

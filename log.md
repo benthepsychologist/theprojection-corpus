@@ -10392,3 +10392,84 @@ needs Ben.
 finalizable until a future run lands far enough past 5am ET 09-16 for
 the coverage critic's benchmarks to exist. No graph feed this run (only
 finalized days get one; 09-14's was already fed by the morning pass).
+
+## 2026-09-16 (Wednesday), 05:00 ET → ~10:00 ET — finalized Tuesday 09-15, opened Wednesday thin
+
+**Finalized 2026-09-15.** Coverage critic ran against all three
+benchmarked lenses (world-news carries none by design): frontier-ai and
+mental-health each had two genuine misses, global-capital had one — the
+**second consecutive day** on the same seam (Lehane/Huang/Zuckerberg
+on-record antitrust-waiver rejections), which triggered a guardrail
+watchlist add (`"AI antitrust waiver"`, `"AI safety coordination
+antitrust"` under `global-capital.themes`). All misses folded into
+09-15's four digest appendices and the relevant thread timelines
+(`frontier-model-gov-review-precedent`, `apple-gemini-model-deal`,
+`mh-clinical-infra-funding`). Full detail in `coverage-log.md`'s
+2026-09-16 entry. Two due-dated ledger items resolved after dedicated
+searches found no vote outcome: `sf-datacenter-moratorium-vote-0915` and
+`michigan-city-moratorium-second-reading` both flipped to
+**passed-silent**. One retro-flip inside its 3-day grace window:
+`sword-headspace-acquisition-close-0914` moved from passed-silent to
+**slipped** (Sword made the acquisition official today, new target close
+~2026-10-01/Q4 2026). All four 2026-09-15 lens digests plus the front
+digest flipped `status: final`.
+
+**Opened 2026-09-16** with a five-agent parallel dispatch (the critic
+above, plus one sweep per lens for 05:00→10:00 ET) — genuinely thin, as
+expected for an early-morning pass with two real events (FOMC decision,
+DOE bulk-power webinar) still hours away. Real developments: OpenAI in
+early talks for a funding round above $1.2T (~40% jump from March's
+$852B); a hot August retail-sales print removing the last dovish case
+before today's FOMC vote; Sword-Headspace made official and Aware
+Recovery Care's buyer named (Renew Health + Recovery); a fatal Russian
+drone strike on a Nikopol passenger bus; Yemen's army opening a stated
+ground-offensive prep phase near Bab al-Mandab; a routine German Schengen
+border-check renewal. No flash — nothing cleared the rail's bar. No new
+thread candidates; Sudan's humanitarian crisis gets its second and final
+offer today (Meta's Applied AI candidate dropped, unanswered after its
+own second/final offer yesterday).
+
+**Collector pipeline note:** `cloud-researcher` is not installed in this
+environment (checked `which`, `pip show`, direct import — all absent;
+the repo is cloned at `/workspace/cloud-researcher` but not pip-installed
+and no CLI entrypoint resolves). All five agents ran in agentic-interim
+mode (direct WebSearch/WebFetch) rather than via the deterministic
+collector, consistent with every recent run this week.
+
+**Graph fed:** all four ingesters ran clean (`07_digest_bullets.py`:
+21 new S1 claims from 09-15's now-final digests; `06_timelines.py`: 15
+new S2 claims; `03_expectations.py`: 3 claims restated from the ledger;
+`09_critic_annotations.py`: 14 process-outcome records) —
+`graph/validate.py` reports 5,334 atoms, 3,486 sources, 8,803
+relationships, all references resolving clean.
+
+**Site refreshed.** Four sonnet-class agents wrote the front + three lens
+briefing packs in parallel from `theprojection readouts --pack`'s own
+structured output (breaking/news/recent_timeline only, nothing invented,
+pipeline language scrubbed per the shape's rules); `--apply` 4/4 with
+zero skips, `--export` wrote 154 readouts. `kestrel publish --site-dir
+/workspace/theprojection-site --push` shipped 105 thread pages, 64 entity
+pages, 3 beat pages, 753 claim pages, 4 interpretation pages, 1,315 story
+pages, 122 map pages, `data/readouts.json` (154 readouts), `data/board.json`
+and `data/claims.json`. Site repo committed and pushed. No audio venv at
+`/workspace/.venvs/kokoro-tts` — audio briefing skipped, same standing
+gap. Cloudflare deploy hook did not fire — `THEPROJECTION_DEPLOY_HOOK` is
+still unset (no `.env` in this repo), same standing gap as every recent
+run; needs Ben.
+
+### Known gaps left open, on purpose
+
+- **`cloud-researcher` not installed** — see above; every lens ran
+  agentic-interim instead.
+- **Cloudflare deploy hook** — same standing issue as every run since
+  09-08.
+- **`gcloud auth login`** — same standing ask, unrelated to this repo's
+  own collector gap.
+- Thread candidates: Meta's Applied AI management-rebuild candidate
+  dropped today (unanswered after its second/final offer 09-15). Sudan's
+  humanitarian crisis gets its second and final offer today — drops
+  tomorrow if still unanswered.
+
+2026-09-16 stays `status: building, coverage: pending` for all four
+lenses plus front — the FOMC decision (~2pm ET) and DOE's bulk-power
+webinar (3-4pm ET) both land later today and need a follow-up pass.

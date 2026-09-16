@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-15
-status: building
+status: final
 window_start: 2026-09-15T05:00:00-04:00
 as_of: 2026-09-15T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Frontier AI — 2026-09-15
@@ -45,6 +45,28 @@ three-day live "Grok Bot Galaxy" event demonstrating its Grok Bot agent on
 real workflows — its most public agentic showcase yet — while Grok 4.7
 itself remains unshipped past Musk's own mid-September framing, nine days
 from its 09-19 due date.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** The Neuron led Tuesday with OpenAI's
+first-ever endorsement of a specific federal AI-safety mandate (a FRONTIER
+Act provision) plus Lehane's on-record confirmation of three-lab safety
+talks — the legislative "so what" of the pacing pledge this digest tracked
+from every other angle but missed the concrete bill. TLDR AI's Tuesday
+edition led with three product/M&A stories absent from this digest's
+Product & access section: Anthropic's in-development "Claude Money"
+personal-finance feature, OpenAI's ~$300M acquisition of camera startup
+Glass Imaging, and hidden iOS 27 code showing Apple built Siri with a
+Model Delegation API letting Claude/GPT-5.6 replace its own backend. Both
+now folded into `frontier-model-gov-review-precedent` and
+`apple-gemini-model-deal`'s 09-15 timeline entries. Full detail:
+`coverage-log.md`, 2026-09-16 pass.
+**Both covered:** Trump's Amodei attacks, the Chughtai DeepMind exit, and
+the chip selloff — this digest's own leads — matched what The AI Daily
+Brief and general coverage carried.
+**We had → they didn't:** The Sanders-Bannon Pro-Human Assembly pairing
+and Jacob Coxon's withdrawal from it were not picked up by any of this
+lens's four named benchmarks.
 
 ## Policy & governance
 
@@ -226,4 +248,4 @@ brought an unusual left-right pairing — Sanders and Bannon sharing a
 Washington stage to jointly demand AI curbs, with Anthropic's Jacob Coxon
 pulling out of the same event to avoid being politically misread.
 
-Coverage: pending.
+Coverage: done — see Appendix above and `coverage-log.md`, 2026-09-16 pass.

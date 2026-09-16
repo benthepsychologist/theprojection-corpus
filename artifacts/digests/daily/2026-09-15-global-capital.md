@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-15
-status: building
+status: final
 window_start: 2026-09-15T05:00:00-04:00
 as_of: 2026-09-15T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-15
@@ -160,6 +160,28 @@ only older Q1/Q2 fund-commentary, no fresh September stake.*
   [SF Chronicle](https://www.sfchronicle.com/sf/article/data-center-ban-22426013.php),
   [CBS San Francisco](https://www.cbsnews.com/sanfrancisco/news/san-francisco-data-center-moratorium-ai-artificial-intelligence/))
   <!-- k: t=datacenter-backlash-capital-risk axis=power-lobbying -->
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** Bloomberg Technology's Tuesday coverage
+carried the direct sequel to Money Stuff's already-logged 09-14
+"cartel described as safety policy" framing — three named executives
+rejecting the AI labs' antitrust-waiver ask on the record: OpenAI policy
+chief Chris Lehane said no waiver is needed, Nvidia's Jensen Huang called
+the whole idea "completely unnecessary," and Meta's Mark Zuckerberg sided
+with Huang over Amodei's coordinated-slowdown proposal. This is the
+**second consecutive day** this exact seam produced a real miss (09-14:
+Sacks's rejection and Money Stuff's cartel framing; 09-15: Lehane/Huang/
+Zuckerberg) — `attention/watchlist.yaml` had zero antitrust-related terms
+in this lens before today; two now added (`"AI antitrust waiver"`,
+`"AI safety coordination antitrust"`), guardrail-protected, this session.
+Folded into `frontier-model-gov-review-precedent`'s 09-15 timeline entry
+(cross-lens). Full detail: `coverage-log.md`, 2026-09-16 pass.
+**Both covered:** The 10-year's climb toward 5%, the FOMC setup, and the
+SF data-center ordinance all matched general financial-press coverage.
+**We had → they didn't:** SoftBank's clean bridge-loan repayment against
+its record short-interest build was this digest's own find, not picked up
+elsewhere in the same framing.
 
 ## ⏳ Upcoming & expected
 
