@@ -3,18 +3,18 @@ lens: mental-health
 date: 2026-09-16
 status: building
 window_start: 2026-09-16T05:00:00-04:00
-as_of: 2026-09-16T10:00:00-04:00
+as_of: 2026-09-16T15:00:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-16
 
-*Curated agentic-interim, 05:00 ET → ~10:00 ET Wednesday. Collector
+*Curated agentic-interim, 05:00 ET → ~15:00 ET Wednesday. Collector
 pipeline not installed in this environment; this pass rests on
 WebSearch/WebFetch against `attention/watchlist.yaml`, open threads, and
-a ClinicalTrials.gov sweep. Confirmed thin — only Capital & corporate
-cleared the bar; Product & market, Policy/regulation/legal, Research &
-evidence and Clinical safety & harm all came back empty this window.*
+a ClinicalTrials.gov sweep. Thin — only Capital & corporate cleared the
+bar; Product & market, Policy/regulation/legal, Research & evidence and
+Clinical safety & harm all came back empty across the full window.*
 
 ## Today's throughline
 
@@ -23,7 +23,9 @@ Sword Health made its Headspace acquisition official — a signed
 all-cash agreement, with close now targeted for "the beginning of Q4
 2026" rather than the 09-14 date the original filing implied — and Aware
 Recovery Care's previously-unnamed distress-sale buyer got a name: Renew
-Health + Recovery, an existing 11-state in-home provider.
+Health + Recovery, an existing 11-state in-home provider. A smaller
+third deal followed later in the day: Terra Behavioral Health made its
+first-ever acquisition, buying Latitude Recovery Center.
 
 ## Capital & corporate
 
@@ -42,6 +44,14 @@ Health + Recovery, an existing 11-state in-home provider.
   of the financially distressed Aware Recovery Care, with no stated
   interruption to existing clients.
   ([AP via Rutland Herald](https://www.rutlandherald.com/ap/state/renew-health-recovery-purchases-assets-of-aware-recovery-care/article_2193a02c-3e10-566b-ab1e-c72e0950934e.html))
+  <!-- k: t=mh-clinical-infra-funding axis=capital-corporate -->
+- **Terra Behavioral Health (Temecula, CA) made its first-ever
+  acquisition, buying Latitude Recovery Center (Carlsbad, CA)** — a
+  standalone SUD/co-occurring-mental-health facility adding ~45 patient
+  capacity plus new payer contracts including TRICARE/TriWest, with a
+  stated veteran-focused rationale. Smaller than the other two items
+  above; neither party is a watchlist entity.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/09/16/exclusive-terra-behavioral-health-buys-latitude-recovery-center/))
   <!-- k: t=mh-clinical-infra-funding axis=capital-corporate -->
 
 ## 🧪 Clinical trials
@@ -69,7 +79,7 @@ experiences — single-arm, not yet recruiting.
 ## 🔄 Map changes
 
 - `~ artifacts/threads/mh-clinical-infra-funding.md` — gained a
-  2026-09-16 entry (both items above).
+  2026-09-16 entry (all three items above).
 - `attention/upcoming.yaml`: `sword-headspace-acquisition-close-0914`
   retro-flipped from passed-silent to slipped, new due ~2026-10-01.
 - 2026-09-15 finalized today: coverage critic found one genuine miss
@@ -80,12 +90,14 @@ experiences — single-arm, not yet recruiting.
 
 ## 🧵 Thread candidates
 
-**None today.** Both items land inside the existing
+**None today.** All three items land inside the existing
 `mh-clinical-infra-funding` thread.
 
 ---
 
-A thin morning with two real resolutions: Sword Health's Headspace
+A thin day with three items on one thread: Sword Health's Headspace
 acquisition is now officially signed, closing Q4 2026 rather than the
-date the original filing implied, and Aware Recovery Care's distress-sale
-buyer finally has a name. Nothing else cleared the bar.
+date the original filing implied; Aware Recovery Care's distress-sale
+buyer finally has a name; and Terra Behavioral Health made its first-ever
+acquisition, buying Latitude Recovery Center. Nothing else cleared the
+bar across the full day.

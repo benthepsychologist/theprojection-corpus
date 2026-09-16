@@ -10473,3 +10473,87 @@ run; needs Ben.
 2026-09-16 stays `status: building, coverage: pending` for all four
 lenses plus front — the FOMC decision (~2pm ET) and DOE's bulk-power
 webinar (3-4pm ET) both land later today and need a follow-up pass.
+
+---
+
+**Extended 2026-09-16 to ~15:00 ET** with a four-agent parallel dispatch
+(one sweep per lens, 10:00→15:00 ET), tasked specifically to resolve the
+day's two due ledger items. Real developments: **the FOMC hiked 25bp to
+3.75%-4.00% at ~2pm ET, its first hike since July 2023, on a unanimous
+12-0 vote** — the three-way hawkish dissent bloc from July's 9-3 hold
+(Hammack, Kashkari, Logan) folded into full consensus, directly resolving
+the ledger's `fomc-september-decision` item (flipped to HIT). Chair
+Warsh was hawkish at the press conference and the SEP shows 16/18
+participants penciling in another hike this year; markets took it as a
+wash. **DOE's bulk-power-system RFI webinar (3-4pm ET) was still in
+progress as of the sweep's check time (~2:44pm ET)** — `doe-bulk-power-
+rfi-webinar-0916` stays pending, needs a further pass once trade press
+files a recap (recommended after ~16:30-17:00 ET; this run did not wait
+for it). Smaller items folded in: Zuckerberg publicly argued against a
+mandatory AI slowdown (caught late — happened within the morning's own
+window but was missed then); Terra Behavioral Health made its first-ever
+acquisition (Latitude Recovery Center); von der Leyen's EU State of the
+Union pledged "strongest-ever" winter support for Ukraine (caught late —
+predates even the 05:00 ET window); the Kosovo Specialist Chambers
+convicted Hashim Thaci of war crimes (off-thread, noted for the record).
+
+**A routine sweep also caught a miss on the already-finalized 09-15
+digest** that the coverage critic itself didn't catch: Treasury Secretary
+Bessent and FTC Chair Ferguson both went on the record 09-15 rejecting
+the AI labs' antitrust-waiver ask — the same seam 09-15's critic pass
+already caught three lab executives (Lehane, Huang, Zuckerberg) on, one
+day after the watchlist gained dedicated terms for it. Rather than
+reopening the already-final 09-15 digest file, this was folded into
+`frontier-model-gov-review-precedent`'s timeline as a dated, tagged late
+catch, with a note in today's digests — the finalization boundary on a
+past day's digest file stays intact even when a real miss surfaces later.
+
+**Sudan's humanitarian-crisis candidate drops from the pool** — its
+second and final offer (09-15, re-offered 09-16 morning) went unanswered,
+per the reappears-once-then-drops rule. Flagging this because it's a
+mechanical drop, not a judgment that the story doesn't matter (WFP:
+funding down roughly half year-over-year against ~20M facing hunger) —
+it can be reopened as a fresh candidate anytime.
+
+**`meta-ai`'s `actor-doing.yaml` roll-up was stale since 09-09** and had
+missed two real posture moves (Zuckerberg siding with Huang against the
+antitrust waiver 09-15, arguing against a mandatory slowdown 09-16) —
+refreshed this run per step 5b.
+
+**Graph fed:** `06_timelines.py` and `03_expectations.py` ran (no new
+`final` digest today, so `07_digest_bullets.py`/`09_critic_annotations.py`
+were skipped) — 4 new S2 claims from today's timeline entries, 747
+existing bullets matched by (thread, date), 1 hypothesis claim restated
+(the FOMC hit). `graph/validate.py`: 5,338 atoms, 3,492 sources, 8,809
+relationships, all references resolving clean.
+
+**Site refreshed.** Four sonnet-class agents wrote the front + three lens
+briefing packs in parallel from `theprojection readouts --pack`'s own
+structured output; `--apply` 4/4 with zero skips, `--export` wrote 154
+readouts. `kestrel publish --site-dir /workspace/theprojection-site
+--push` shipped 105 thread pages, 64 entity pages, 3 beat pages, 753
+claim pages, 4 interpretation pages, 1,316 story pages, 122 map pages,
+`data/readouts.json`/`board.json`/`claims.json`. Site repo committed and
+pushed. No audio venv — audio briefing skipped, same standing gap.
+Cloudflare deploy hook did not fire — `THEPROJECTION_DEPLOY_HOOK` still
+unset (no `.env` in this repo), same standing gap as every run since
+09-08; needs Ben.
+
+### Known gaps left open, on purpose
+
+- **`cloud-researcher` not installed** — every lens still ran
+  agentic-interim.
+- **Cloudflare deploy hook** — same standing issue as every run since
+  09-08.
+- **`gcloud auth login`** — same standing ask, unrelated to this repo.
+- **`doe-bulk-power-rfi-webinar-0916`** — webinar was still in progress
+  at last check; needs a follow-up `/daily` run after ~16:30-17:00 ET to
+  resolve whether DOE named any Covered Foreign Entities.
+- Sudan's humanitarian-crisis candidate dropped from the pool today,
+  unanswered — reopen anytime if wanted.
+
+2026-09-16 stays `status: building, coverage: pending` for all four
+lenses plus front — the day's two dated ledger items are now one
+resolved (FOMC, HIT) and one still open (DOE webinar), so a further pass
+is still needed before this day can finalize (also gated on the ≥5h
+coverage-critic timing rule, earliest tomorrow morning).

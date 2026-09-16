@@ -244,14 +244,21 @@ expectations:
     claim: "FOMC rate decision — the hawkish bloc's next window after July's 9-3 hold"
     due: 2026-09-16
     due_precision: day
-    thread: null
+    thread: treasury-long-end-intervention
     entities: []
     source: https://www.federalreserve.gov/newsevents/2026-september.htm
     confidence: confirmed
     what_confirms: "the FOMC statement + the vote split; does the 3-dissent bloc grow, hold, or fold"
     logged: 2026-07-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    evidence: |
+      HIT 2026-09-16 — the FOMC hiked 25bp to a 3.75%-4.00% target range,
+      its first hike since July 2023, on a unanimous 12-0 vote: the
+      3-dissent hawkish bloc from July's 9-3 hold (Hammack, Kashkari,
+      Logan) folded into consensus rather than growing or holding. SEP
+      shows 16 of 18 participants penciling in at least one more hike
+      this year. (CNBC, Fox Business, PBS NewsHour — 2026-09-16)
 
   - id: us-china-ai-talks
     claim: "First official US–China AI-policy talks ('later this year' — the September framing is UNSOURCED per crawl 2026-07-22)"

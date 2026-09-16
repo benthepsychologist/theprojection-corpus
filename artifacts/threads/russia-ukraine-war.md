@@ -22,6 +22,8 @@ substantial enough to carry on its own.
 
 - **A Russian drone struck a scheduled passenger bus in Ukraine's Nikopol district (Dnipropetrovsk region) early Wednesday, killing five and wounding at least seven.** Regional governor Oleksandr Hanzha confirmed the strike; Zelenskyy called it an "atrocity" with "no military rationale," tying it to Russia's continued targeting of logistics and infrastructure. Distinct from Tuesday's ~200-drone Kyiv wave already on this thread.
   ([AP via messenger-inquirer](https://www.messenger-inquirer.com/ap/ap_international_news/russian-drone-strike-kills-5-and-injures-at-least-7-on-passenger-bus-in-ukraine/article_fe0cd380-71ec-55ec-9d20-7c33611dd85d.html), [Al Jazeera](https://www.aljazeera.com/news/2026/9/16/at-least-five-killed-in-russian-drone-strike-near-ukraine-front-line)) ⟨daily 2026-09-16⟩
+- **European Commission President Ursula von der Leyen used her State of the Union address in Strasbourg to pledge the EU's "strongest-ever" winter support package for Ukraine and to propose a new "European Security Council" including the UK, Canada and Norway.** No specific dollar figure or concrete new commitment attached yet beyond the pledge language. Predates this digest's own 05:00-10:00 ET window (Strasbourg speeches run ~9am local, before 05:00 ET) — a miss from the earlier pass rather than a new-since-10:00 development.
+  ([France 24](https://www.france24.com/en/europe/20260916-live-eu-chief-ursula-von-der-leyen-gives-state-of-the-union-address)) ⟨daily 2026-09-16⟩
 
 ## 2026-09-15 — A 200-drone night hits Kyiv's gas stations and a suspected Russian drone washes up on Poland's Baltic coast
 

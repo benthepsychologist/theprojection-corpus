@@ -18,6 +18,8 @@ rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
   ([Sword Health, primary](https://www.globenewswire.com/news-release/2026/09/16/3363038/0/en/sword-to-acquire-headspace-bringing-ai-care-to-the-world-s-most-trusted-mental-health-brand.html), [Fierce Healthcare](https://www.fiercehealthcare.com/digital-health/sword-health-acquire-headspace-all-cash-deal)) ⟨daily 2026-09-16⟩
 - **Aware Recovery Care's previously-unnamed buyer has a name: Renew Health + Recovery, an existing 11-state in-home substance-use treatment provider, has purchased "many of the assets" and clinical teams/models of the financially distressed Aware Recovery Care, with no stated interruption to existing clients.**
   ([AP via Rutland Herald](https://www.rutlandherald.com/ap/state/renew-health-recovery-purchases-assets-of-aware-recovery-care/article_2193a02c-3e10-566b-ab1e-c72e0950934e.html)) ⟨daily 2026-09-16⟩
+- **Terra Behavioral Health (Temecula, CA) made its first-ever acquisition, buying Latitude Recovery Center (Carlsbad, CA)** — a standalone SUD/co-occurring-mental-health facility adding ~45 patient capacity plus new payer contracts including TRICARE/TriWest, with a stated veteran-focused rationale. Smaller than this thread's other 09-16 items and neither party is a watchlist entity, but genuinely new and dated today.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/09/16/exclusive-terra-behavioral-health-buys-latitude-recovery-center/)) ⟨daily 2026-09-16⟩
 
 ## 2026-09-15 (caught late by the coverage critic, added 2026-09-16) — Two same-day funding/M&A stories this thread missed: an autism-specialty raise, and a former Discovery Behavioral CEO's new AI-monitored addiction venture
 
