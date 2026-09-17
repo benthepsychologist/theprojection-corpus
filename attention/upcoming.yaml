@@ -3447,7 +3447,16 @@ expectations:
     what_confirms: "the topline readout itself — efficacy on the primary endpoint, and whether the added low-dose arm actually addresses functional unblinding"
     logged: 2026-09-09
     logged_by: curate-add   # multiple trade outlets (BioPharma Dive, Clinical Trials Arena, GeneOnline) give "September 2026" with no exact date
-    status: pending
+    status: hit
+    evidence: |
+      HIT 2026-09-14 (caught 2026-09-17, ahead of the due window) —
+      Definium announced Panorama met its primary endpoint: the 100µg dose
+      produced a 9.8-point drop on HAM-A vs 4.7 for placebo, a 5.1-point
+      placebo-adjusted improvement, close to August's Voyage trial's
+      5.4-point gap. Third straight positive Phase 3 for DT120 (MDD/Emerge
+      June, GAD/Voyage August, GAD/Panorama September) — the FDA's
+      typical two-trials-per-indication bar is now met in anxiety.
+      Topline, sponsor-reported; no independent/peer-reviewed read yet.
 
   - id: doe-bulk-power-rfi-comments-1009
     claim: "Written comments close on DOE's Request for Information implementing Executive Order 14421, the bulk-power-system national-emergency order"
@@ -3478,7 +3487,18 @@ expectations:
     what_confirms: "the webinar happening, and whether DOE names any Covered Foreign Entities — the order named none and the RFI names none"
     logged: 2026-09-10
     logged_by: curate-add
-    status: pending
+    status: hit
+    evidence: |
+      HIT 2026-09-16, caught 2026-09-17 (two independent sweeps confirmed
+      independently) — DOE's CESER office held the webinar as scheduled,
+      3-4pm ET, per DOE's own energy.gov writeup plus corroborating
+      law-firm alerts (McGuireWoods, Holland & Knight, DWT). Covered the
+      RFI's scope (supply-chain vulnerabilities, situational awareness,
+      national-security risk) and how to submit formal comments (due
+      2026-10-09, see doe-bulk-power-rfi-comments-1009 below). No Covered
+      Foreign Entities were named — that question stays deferred to the
+      implementing rules due ~2026-12-24
+      (doe-bulk-power-eo-implementing-rules).
 
   - id: moonshot-hk-ipo-public-filing
     claim: "Moonshot AI's confidential ~$3bn Hong Kong IPO filing becomes public, and/or the exploratory Shanghai STAR Market second listing is confirmed"
@@ -3681,3 +3701,19 @@ expectations:
     # the Turkish/Gulf bank most speculative coverage expected. Confirmed
     # via OFAC's own recent-actions page plus Investing.com, Middle East Eye,
     # CryptoBriefing.
+
+  - id: trump-graham-sanctions-bill-signature
+    claim: >
+      Trump signs or vetoes the Graham Russia/Iran sanctions bill (House
+      passed 262-159, sent to his desk 2026-09-16/17) — up to 100% tariffs
+      on China/India as top buyers of Russian oil/gas
+    due: 2026-09-27
+    due_precision: day   # standard 10-day (excl. Sundays) presidential action window from House passage; adjust if a Senate vote date surfaces first
+    thread: russia-ukraine-war
+    entities: []
+    source: "House vote 262-159, reported 2026-09-16/17 by world-news lens sweep"
+    confidence: reported
+    what_confirms: "the signature/veto itself, or the bill lapsing into law unsigned after 10 days"
+    logged: 2026-09-17
+    logged_by: curate-add
+    status: pending

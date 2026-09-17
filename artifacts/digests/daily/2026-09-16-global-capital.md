@@ -1,19 +1,24 @@
 ---
 lens: global-capital
 date: 2026-09-16
-status: building
+status: final
 window_start: 2026-09-16T05:00:00-04:00
 as_of: 2026-09-16T15:00:00-04:00
-coverage: pending
+coverage: done
 ---
 
 # Global Capital — 2026-09-16
 
-*Curated agentic-interim, 05:00 ET → ~15:00 ET Wednesday. Collector
-pipeline not installed in this environment; this pass rests on
-WebSearch/WebFetch against `attention/watchlist.yaml`, open threads, and
+*Curated agentic-interim, 05:00 ET → 05:00 ET Thursday (full digest-day),
+in two passes (05:00-15:00 same-day, then a close/evening extension).
+Collector pipeline not installed in this environment; this pass rests on
+WebSearch/WebFetch against `attention/watchlist.yaml`, open threads,
 `attention/capital-context.yaml` (asof 2026-08-25, read for grounding on
-the rate-regime framing, not treated as current itself).*
+the rate-regime framing, not treated as current itself), and SEC EDGAR
+primary filings for the evening extension's two deal items. Finalized
+with the coverage critic against `sources/benchmarks.yaml`'s
+`critics.global-capital.daily` list (Money Stuff, Axios Pro Rata, FT
+Unhedged, Bloomberg Technology) — see Appendix.*
 
 ## Today's throughline
 
@@ -67,6 +72,9 @@ own finalized digest.
   decision.
   ([CNBC](https://www.cnbc.com/2026/09/16/fed-rate-decision-september-2026.html), [Fox Business](https://www.foxbusiness.com/economy/federal-reserve-interest-rate-decision-september-16-2026), [PBS NewsHour](https://www.pbs.org/newshour/economy/watch-live-warsh-holds-briefing-after-fed-meeting-as-interest-rates-expected-to-rise))
   <!-- k: t=treasury-long-end-intervention axis=capital-markets sev=major -->
+- **The selloff held into the close rather than fading during the afternoon's early relief: the Dow fell 631.21 points (-1.21%) to 51,461.90, the S&P 500 fell 0.45% to 7,551.81, and the Nasdaq closed essentially flat at 25,978.42 — with bank stocks posting their worst day since February (the SPDR S&P Bank ETF down 2.6%).** All three indexes were higher earlier in the session and turned specifically during Chair Warsh's press conference, which markets read as more hawkish than the 25bp hike itself. This is the second consecutive day the "fiscal dominance" test this digest has carried since August resolved against the intervention thesis — a hiking, hawkish Fed moving markets regardless of Treasury's TGA-funded buyback campaign.
+  ([FXStreet](https://www.fxstreet.com/news/us-10-year-treasury-yield-nears-5-after-fed-rate-hike-middle-east-tensions-raise-inflation-fears-202609170501), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/stock-market-today-sept-16-133949098.html), [CNBC](https://www.cnbc.com/2026/09/16/investors-react-to-fed-hike-market-sell-off-brace-for-higher-rates-for-longer.html))
+  <!-- k: t=treasury-long-end-intervention axis=capital-markets -->
 
 ## Capital in my markets
 
@@ -101,13 +109,44 @@ own finalized digest.
   ([FedScoop](https://fedscoop.com/treasury-scott-bessent-ai-labs-liability-exemptions/), [Law360](https://www.law360.com/consumerprotection/articles/2525425))
   <!-- k: t=frontier-model-gov-review-precedent axis=policy -->
 
+## Deals & filings
+
+- **Generac and Amazon signed a long-term backup-power supply agreement
+  Wednesday evening, with Amazon receiving a warrant for up to 1.69
+  million Generac shares (exercise price ~$200.93, roughly 3% of shares
+  outstanding) that vests as Generac collects payments for backup
+  generators supplied to Amazon's AI data centers, up to $8bn total over
+  the deal's life — initial deliveries of $2.4bn are expected across
+  2027-2028, on top of Generac's existing $1.35bn data-center backlog.**
+  Per Generac's own 8-K, the Transaction Agreement and warrant were
+  executed the same day. Generac shares surged more than 40% in
+  after-hours trading on the news; Cantor Fitzgerald called it "the most
+  consequential data center announcement in Generac's history" (Overweight,
+  $333 target), with Wells Fargo and Barclays both reiterating ratings the
+  same evening. This is a distinct financing structure from the compute
+  deals this map otherwise tracks — a hyperscaler taking an equity warrant
+  in a physical-infrastructure supplier rather than the supplier taking
+  debt or the hyperscaler taking equity in a compute vendor.
+  ([SEC EDGAR, Generac 8-K](https://www.sec.gov/Archives/edgar/data/0001474735/000143774926030550/gnrc20260915_8k.htm), [TradingPedia](https://www.tradingpedia.com/2026/09/17/generac-soars-after-landmark-amazon-data-center-power-deal/))
+  <!-- k: axis=deals -->
+
 ## ⏳ Upcoming & expected
 
-**One hit today (FOMC); two flips (both passed-silent); one retro-flip
+**One hit today (FOMC); one hit found late in the evening extension (the
+DOE bulk-power webinar); two flips (both passed-silent); one retro-flip
 (slipped); 2 pending in the next 7 days.**
 
 - ✅ **`fomc-september-decision` — HIT.** 25bp hike to 3.75%-4.00%, vote
   12-0 unanimous — July's 3-dissent hawkish bloc folded into consensus.
+- ✅ **`doe-bulk-power-rfi-webinar-0916` — HIT.** DOE's CESER office held
+  its public webinar on the Executive Order 14421 bulk-power-system RFI
+  as scheduled, 3-4pm ET Wednesday — an informational overview of the RFI
+  and how to comment, not a rulemaking action itself; formal written
+  responses are due via the federal eRulemaking portal (docket
+  DOE-HQ-2026-1123) by October 9. No Covered Foreign Entity named, as the
+  underlying RFI itself already didn't name one. **Reported for the main
+  session to apply to `attention/upcoming.yaml`** (this session does not
+  edit that file directly). ([DOE CESER](https://www.energy.gov/ceser/articles/ceser-holds-industry-engagement-webinar-covering-recent-bulk-power-system-executive))
 
 - ⚠️ **`sf-datacenter-moratorium-vote-0915` — passed-silent.** Ordinance
   introduction confirmed real and heavily corroborated; no source found
@@ -149,21 +188,65 @@ own finalized digest.
 - 2026-09-15 finalized: coverage critic found one genuine miss (the
   antitrust-waiver rejections above) — folded into 09-15's digest
   appendix and `frontier-model-gov-review-precedent`'s timeline.
+- **Evening extension (15:00 ET → 05:00 ET 09-17):**
+  `~ artifacts/threads/treasury-long-end-intervention.md` gained a
+  close-of-day entry (Wednesday's equity close and the yield's return
+  toward 5% into Thursday). `~ artifacts/threads/coreweave-backlog-bet.md`
+  is unaffected by this digest-day's own window (its new entry is dated
+  09-17; see tomorrow's digest). No new thread entry needed for the
+  Generac/Amazon deal — no existing thread fits it cleanly (checked
+  against `ai-power-buildout`, `ai-datacenter-sites`,
+  `chip-hyperscaler-rotation`), and it landed ambient (no t=) rather than
+  forced onto one; proposed as a watchlist add below, not auto-added.
+- Coverage critic ran against all four `global-capital.daily` benchmarks
+  (Money Stuff, Axios Pro Rata, FT Unhedged, Bloomberg Technology) — no
+  confirmed miss this pass; two benchmarks (Money Stuff, FT Unhedged)
+  paywalled past headline+dek, Axios Pro Rata not checkable same-day. Full
+  detail: `coverage-log.md`, 2026-09-17 pass.
 
 ## 🧵 Thread candidates
 
-**None today.** Both real items land on existing threads
-(`treasury-long-end-intervention`, `red-sea-oil-shock`).
+**None today.** Both real items from the morning/midday pass land on
+existing threads (`treasury-long-end-intervention`, `red-sea-oil-shock`);
+the evening extension's Generac/Amazon deal is ambient rather than a
+candidate — see the proposed watchlist add below.
 
 ---
 
 The FOMC hiked 25bp to 3.75%-4.00% on a unanimous 12-0 vote, its first
-hike since 2023, with the dot plot signaling more to come this year. Oil
-eased about 1% on an inventory build even as the Saudi pipeline stays
-shut with no restart date. Two ledger items from the past two days went
-unresolved long enough to flip passed-silent (the SF and Michigan City
-data-center moratorium votes), while Sword Health made its Headspace
-acquisition official today — later than originally filed, but real. A
-routine sweep also caught Treasury Secretary Bessent and FTC Chair
-Ferguson publicly rejecting the AI labs' antitrust-waiver ask Tuesday,
-missed by 09-15's own finalized digest.
+hike since 2023, with the dot plot signaling more to come this year, and
+the selloff held into the close — Dow -1.21%, bank stocks' worst day
+since February — as markets read Chair Warsh's press conference as more
+hawkish than the hike itself. Oil eased about 1% on an inventory build
+even as the Saudi pipeline stayed shut with no restart date as of this
+window. Two ledger items from the past two days went unresolved long
+enough to flip passed-silent (the SF and Michigan City data-center
+moratorium votes), while Sword Health made its Headspace acquisition
+official today — later than originally filed, but real. A routine sweep
+also caught Treasury Secretary Bessent and FTC Chair Ferguson publicly
+rejecting the AI labs' antitrust-waiver ask Tuesday, missed by 09-15's
+own finalized digest, and DOE held its bulk-power-system webinar as
+scheduled. The evening's own find: Amazon took a warrant in Generac tied
+to an $8bn backup-power supply deal for its AI data centers, sending
+Generac shares up more than 40% after hours.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** No confirmed miss this pass. All four
+`global-capital.daily` benchmarks (Money Stuff, Axios Pro Rata, FT
+Unhedged, Bloomberg Technology) were checked against what they led with
+on 09-16; nothing surfaced a hard, sourceable capital-markets fact this
+digest lacked. Two of the four (Money Stuff's "BlackRock Wants Pensions,"
+FT Unhedged's "AI debt vs Treasuries") confirmed to exist via RSS but sat
+paywalled past the headline on every transport tried; Bloomberg's closest
+09-16 match wasn't branded "Bloomberg Technology" and was also
+subscriber-gated past the lede; Axios Pro Rata wasn't checkable same-day
+per the standing 08-25/09-09 limitation. Full detail, including what each
+partial-access check did surface: `coverage-log.md`, 2026-09-17 pass.
+**Both covered:** The FOMC decision, the retail-sales print, and Brent's
+inventory-driven pullback all matched general financial-press coverage.
+**We had → they didn't:** The Generac/Amazon warrant-for-backup-power
+deal and Bessent/Ferguson's antitrust-waiver rejections (the latter a
+late catch on a 09-15-dated event) were this digest's own finds, sourced
+to SEC EDGAR and direct agency/hearing coverage respectively rather than
+any of the four benchmarks.

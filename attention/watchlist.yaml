@@ -225,6 +225,8 @@ lenses:
         # exploring a ~$100B IPO or sale — the largest data-center listing on
         # record. Carried tagged only to ai-datacenter-sites + the oracle
         # entity before this, for lack of its own slug.
+      - "Periodic Labs"  # critic-add 2026-09-17 (TLDR AI's 09-16 lead): "Periodic Neon" claims to beat GPT-6 Astra/Claude Fable 5.1 on scientific tasks at lower cost, already deployed for superconductor research — zero prior map coverage.
+      - "Instinct"  # curate-add 2026-09-17: recurring AI-assistant startup ($2.5-10bn valued) with nowhere to tag it; product-race coverage, weaker case than a benchmark-led miss.
 
     # Persons of interest (leadership, safety, policy)
     people:
@@ -503,6 +505,14 @@ lenses:
         # central figure post-Assurance-Labs pivot. Term qualified because
         # bare "Brian Anderson" is too common a name to sweep clean.
       - "Michael Heinz"  # curate-add 2026-08-14: Dartmouth psychiatrist, first author on the Therabot clinical trial — parallel to Nicholas Jacobson above, a likely recurring on-record source on ai-therapy-evidence
+      - term: "Timothy Westlake"
+        name: "Timothy Westlake"
+        # critic-add 2026-09-17 (Fierce Healthcare's 09-16 lead): SAMHSA
+        # chief of staff nominated Assistant Secretary for Mental Health and
+        # Substance Use, HHS's top MH/SUD policy post — a structural gap
+        # (no term for federal MH leadership), same shape as the earlier
+        # Kaiser/UHS/Warsh auto-adds. Watch whether the confirmation vote
+        # becomes a second miss before deciding on a dedicated thread.
 
     # Themes — regulatory, accountability, and MARKET/money (radar Q3, Q6)
     themes:
@@ -737,6 +747,21 @@ lenses:
         name: "Unitree Robotics"
         # curate-add 2026-08-19: China robotics IPO, +460% debut (08-18) —
         # a Bloomberg Tech coverage-critic miss this map had no entity for.
+      - term: "Generac"
+        entity: generac
+        name: "Generac"
+        # curate-add 2026-09-17: signed a backup-power supply deal with
+        # Amazon (equity warrant for ~1.69M shares, up to $8bn total,
+        # $2.4bn initial 2027-28 deliveries), GNRC +40% after hours —
+        # primary-sourced to Generac's own 8-K, landed ambient for lack
+        # of a term.
+      - term: "Amazon"
+        entity: amazon
+        name: "Amazon"
+        # curate-add 2026-09-17 (global-capital scope): the Generac
+        # backup-power deal counterparty — distinct enough from existing
+        # compute-vendor-financing entries (equity-warrant-for-supply, not
+        # a chip/cloud deal) to be worth its own global-capital term.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

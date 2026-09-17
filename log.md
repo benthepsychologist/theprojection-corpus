@@ -10557,3 +10557,131 @@ lenses plus front — the day's two dated ledger items are now one
 resolved (FOMC, HIT) and one still open (DOE webinar), so a further pass
 is still needed before this day can finalize (also gated on the ≥5h
 coverage-critic timing rule, earliest tomorrow morning).
+
+## 2026-09-17 10:00 ET: finalized 2026-09-16 (FOMC selloff holds, coverage critic catches 3 misses), opened 2026-09-17 (Huawei's Ascend 960, a UN war-crimes finding on Iran), 8-agent dispatch across finalize/open/hot-cluster/cold-rotation
+
+**2026-09-16 finalized.** All four lenses extended from their 15:00 ET
+checkpoint through the full 05:00→05:00 window and flipped to
+`status: final` (world-news: `coverage: na` as always; the other three
+`coverage: done`). The FOMC's 25bp hike (unanimous 12-0) selloff held
+through the close rather than fading — Dow -631pts/-1.21%, worst
+bank-stock day since February, concentrated during Chair Warsh's hawkish
+press conference. The coverage critic ran clean against all three
+benchmarked lenses and caught three genuine misses, all folded in:
+Anthropic's "one Claude" product merger + Claude Docs/Slides launch and
+OpenAI's paid "Sponsored Agents" launch (frontier-ai, from The Neuron's
+lead on the OpenAI/Hugging Face compromise date moving to May 13);
+Fierce Healthcare's lead on Timothy Westlake's SAMHSA-to-HHS confirmation
+hearing (mental-health, a structural watchlist gap, now closed);
+global-capital had no confirmed miss (Money Stuff/FT Unhedged sat
+paywalled past headline on every transport tried). DOE's bulk-power RFI
+webinar, still pending at last check, is now confirmed HIT — held as
+scheduled, no Covered Foreign Entities named (deferred to December's
+rulemaking). Also caught on finalize: a federal judge ordered X Corp/xAI
+to disclose a secret Apple settlement after it dropped Apple from its
+ChatGPT-antitrust suit (new thread candidate, no thread currently owns
+the litigation) and Saudi Arabia's first-ever accused Houthi drone
+attempt on Mecca (`sev=major`).
+
+**2026-09-17 opened.** Huawei unveiled its Ascend 960 chip family and an
+8-EFLOPS SuperPoD cluster, pulling the DeepSeek-favored variant forward
+three quarters to Q1 2027. A UN Human Rights Council fact-finding mission
+found "reasonable grounds" the US committed war crimes in February
+strikes on an Iranian school (178 civilian dead) — this war's first
+independent international legal finding against a US strike, judged the
+day's closest flash-rail call but held back (a legal finding about a
+months-old event, not a fresh kinetic shock). Markets are digesting the
+FOMC hike from the other side: the 10-year cleared 5% (5.016%) while
+equities rebound on a Saudi pipeline partial-restart plan (Brent -3.6%),
+not a Fed climbdown. CoreWeave's $3.0bn convertible-notes raise (aimed
+at investment-grade credit) sold off rather than rallied — the second
+time this map has logged the market punishing a CoreWeave balance-sheet
+move.
+
+**Dispatch shape:** 8 agents in one parallel batch (this machine's
+concurrency ceiling), running the full interim-mode tiered plan at once
+for the first time — 4 lens agents (each covering both the 09-16
+finalize and the 09-17 open), 3 hot-cluster agents covering all 28
+weight-3 threads (hardware/capex/power incl. the DOE webinar check;
+AI-labs/governance/China-stack; health-AI+geopolitics/macro), 1
+cold-rotation agent covering the 14 coldest threads. One real
+cross-agent interaction worth recording: the frontier-ai lens agent
+found four thread files already carrying today-dated entries from the
+hot-cluster agents (which finished first) and correctly re-dated their
+markers from the catch-day (09-17) to the actual event day (09-16) per
+house convention — tier-1/tier-2 overlap catching a dating error rather
+than wasting the work, as the interim-mode doc says it should.
+
+**Cold-rotation and hot-cluster sweeps surfaced real news outside the
+day's live threads:** DeepMind's AlphaGenome Atlas (a precomputed map of
+molecular-effect predictions for all 9 billion possible single-letter
+human DNA variants, published 09-08); FDA's TEMPO pilot going live
+(09-03), letting four companies — two of them behavioral-health
+products — ship generative-AI Medicare devices without full marketing
+authorization; EFF's FOIA release on CMS Medicare Advantage prior-auth
+denials (one vendor denied 53% of decisions, CMS's own quality penalty
+caps at 5-10%); a Georgia regulatory filing giving Project Camellia its
+first hard numbers (3,210MW peak load, bigger than both Vogtle reactors
+combined); and Broadcom's September 2 earnings call confirming OpenAI as
+a 4th named AI-chip customer ($10B orders) — caught 15 days late via
+cold rotation, a lag worth noting given how central Jalapeño's
+production timeline is to that thread's thesis.
+
+**Map changes applied this run:** `threads.yaml` `last_seen` bumped on
+21 threads; `watchlist.yaml` gained 5 entries (Periodic Labs, Instinct —
+frontier-ai; Timothy Westlake — mental-health; Generac, Amazon —
+global-capital); `upcoming.yaml` flipped two entries to HIT (the DOE
+webinar; `definium-panorama-topline`, resolvable two weeks early since
+the GAD topline was already on the map from 09-14) and logged one new
+dated expectation (`trump-graham-sanctions-bill-signature`, due
+~09-27); `actor-doing.yaml` refreshed for `anthropic` (product merger +
+the new AI Energy Management Alliance) and `xai` (the Apple-suit
+disclosure order) — both moved today.
+
+**Flash: none filed**, on either day. Two real candidates surfaced and
+both were judged short of the bar: the Mecca drone-strike attempt
+(contested, intercepted, no casualties) and today's UN war-crimes
+finding (a legal finding about a months-old strike, not a fresh kinetic
+shock).
+
+**Graph fed:** `07_digest_bullets.py`, `06_timelines.py`,
+`03_expectations.py`, `09_critic_annotations.py` all ran.
+`graph/validate.py`: 5,395 atoms, 3,556 sources, 8,928 relationships,
+1,442 annotations, 139 extraction passes, all references resolving
+clean.
+
+**Site refreshed.** Four sonnet-class agents wrote the front + three lens
+briefing packs in parallel from `theprojection readouts --pack`'s own
+structured output; `--apply` 4/4 with zero skips (one agent's first
+handback was a prose description rather than the raw JSON asked for —
+re-requested and got it correctly the second time), `--export` wrote 154
+readouts. `kestrel publish --site-dir /workspace/theprojection-site
+--push` shipped 65 entity pages, 3 beat pages, 753 claim pages, 6
+interpretation pages, 1,338 story pages, 122 map pages,
+`data/readouts.json`/`board.json`/`claims.json`. Site repo committed and
+pushed. No audio venv — audio briefing skipped, same standing gap.
+Cloudflare deploy hook did not fire — `THEPROJECTION_DEPLOY_HOOK` still
+unset (no `.env` in this repo), same standing gap as every run since
+09-08; needs Ben.
+
+### Known gaps left open, on purpose
+
+- **`cloud-researcher` not installed** — every lens still ran
+  agentic-interim.
+- **Cloudflare deploy hook** — same standing issue as every run since
+  09-08.
+- **`gcloud auth login`** — same standing ask, unrelated to this repo.
+  `attention/world-news.yaml`'s mechanical candidate pool is now 14 days
+  stale (`generated: 2026-09-03`) as a direct consequence.
+- **WebSearch's per-session 200-call budget** was exhausted partway
+  through the frontier-ai lens agent's run (a full late-window sweep plus
+  a four-benchmark critic pass burns through it before finishing) —
+  WebFetch against direct/guessed outlet URLs held up as a fallback, but
+  Google/Bing/DuckDuckGo-via-WebFetch as a search substitute failed
+  outright. Worth knowing if a future lens run hits the same wall.
+- **X Corp/xAI's antitrust litigation against Apple/OpenAI** — new
+  thread candidate, carried forward as tomorrow's first offer (surfaced
+  too late in this run to act on).
+- 2026-09-17 stays `status: building, coverage: pending/na` for all four
+  lenses plus front — normal for an opening pass; the next run finalizes
+  it once ≥5h past the 05:00 ET 09-18 close.
