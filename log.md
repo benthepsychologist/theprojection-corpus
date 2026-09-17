@@ -10685,3 +10685,97 @@ unset (no `.env` in this repo), same standing gap as every run since
 - 2026-09-17 stays `status: building, coverage: pending/na` for all four
   lenses plus front — normal for an opening pass; the next run finalizes
   it once ≥5h past the 05:00 ET 09-18 close.
+
+## 2026-09-17 15:00 ET: afternoon extension (10:00→15:00 ET) — US-China AI talks confirmed, Musk/Apple disclosure resolved structurally, Arm reverses its dormant posture, site briefings refreshed
+
+**Dispatch shape:** 5 agents in one parallel batch (this machine's
+8-agent concurrency ceiling) — 4 lens agents extending each of today's
+digests from the 10:00 ET checkpoint, plus 1 cold-rotation agent on the
+next 11 coldest active threads. No hot-cluster re-dispatch this round:
+all 28 weight-3 threads got a deep check just 5 hours earlier in this
+morning's run, and nothing signaled they needed touching again yet — a
+same-day continuation, not a fresh open, so depth went where the day
+actually moved.
+
+**What moved.** Treasury's 10-year eased back to ~4.95-4.97% (from
+5.016%), snapping an eight-session rising streak, as the morning's
+attempted equity rebound became a real afternoon rally (S&P +1.1%,
+Nasdaq +1.6-1.7% intraday) — still tracing to the Fed/oil axis, not the
+Treasury buyback thesis. US-China AI-safety talks moved from rumor to
+fact: Bessent told Axios the US will meet Vice Premier He Lifeng in New
+York the weekend of 09-19/20, ahead of the 09-24 Trump-Xi summit
+(`upcoming.yaml`'s `us-china-ai-safety-talks-mid-sept` moved `confidence:
+rumored` → `reported`). The Musk/X Corp-xAI-Apple noon-ET disclosure
+deadline turned out to be structural, not newsy — a direct CourtListener
+docket pull (case 4:25-cv-00914) confirmed the order compels **in-camera**
+review only, so no settlement terms are expected to surface from this
+step regardless of compliance. Arm had its first real move since the
+08-15 `dormant` posture: CEO Rene Haas told CNBC his AGI-CPU demand
+confidence has rebuilt past July's level, with data-center royalties
+more than doubling y/y — caught by cold rotation, `actor-doing.yaml`
+refreshed. Meta's next two in-house chip generations got named for the
+first time (MTIA 450 "Arke" H1 2027, MTIA 500 "Astrid" later 2027), also
+via cold rotation. On Yemen, Houthi leader al-Houthi personally denied
+the Mecca drone-attempt claim on camera and Pakistan made its most
+explicit defense commitment yet to Saudi Arabia; a late-caught 09-16
+Houthi strike claim on Aramco's Yanbu facility was folded in with proper
+provenance. Mental health logged a second consecutive quiet window,
+verified rather than assumed against all five standing watch items.
+SoftBank's $10-20bn bond roadshow closed its scheduled window
+(09-14→09-17) still unpriced — left pending for a finalize-time call on
+whether it counts as passed-silent, since Reuters (not this map) set the
+due date.
+
+**Two cold-rotation aggregator traps caught and correctly discarded**
+before becoming false timeline entries: an Amazon "Health AI"/One Medical
+story re-indexing a January/March 2026 launch as 09-11 news, and an
+Entergy Louisiana "customer savings" release actually dated March 2026.
+
+**Map changes applied this run:** `threads.yaml` `last_seen` bumped to
+2026-09-17 on `treasury-long-end-intervention`, `softbank-all-in`,
+`ai-buildout-debt-risk`, `cross-border-rates`, `china-stack-independence`,
+`arm-royalty-regime`, `meta-capex`; a data-hygiene fix bumped
+`state-therapy-chatbot-bans` to 2026-09-11 (a real entry already in its
+timeline file that had never been reflected in the ledger — cold rotation
+caught the desync). `upcoming.yaml` gained a note on the US-China talks
+entry. `actor-doing.yaml` refreshed for `arm`.
+
+**Two map gaps surfaced, not auto-added — flagged in today's front
+digest for a call:** a RAND/JAMA Pediatrics study (~19.2% of
+12-21-year-olds using AI chatbots for mental-health advice, published
+August, nowhere on this map) is a decay-review/critic candidate for
+`ai-therapy-evidence` or `social-media-causality-fight`; Alan's "Alan
+Clinic" Ontario mental-health launch (February 2026) is a `/crawl`
+backfill candidate for `alan-into-canada`, predating that thread's
+07-28 opening. Also carried again: the X Corp/xAI antitrust-litigation
+thread candidate (now backed by a primary docket citation) is on its
+**second offer** — per house rule it needs a yes/no this cycle or it
+drops.
+
+**Site refreshed.** Four sonnet-class agents wrote the front + three
+lens briefing packs in parallel from `theprojection readouts --pack`'s
+own structured output; one accuracy catch before apply — the front
+pack's Mental Health section originally said Sword Health "finalized"
+its Headspace acquisition, which overstates the source (the deal was
+"made official," with the close still tracking toward Q4 2026) —
+corrected before `--apply`. `--apply` 4/4 with zero skips, `--export`
+wrote 154 readouts, `kestrel publish --site-dir /workspace/theprojection-site
+--push` shipped 65 entity pages, 3 beat pages, 753 claim pages, 6
+interpretation pages, 1,342 story pages, 122 map pages,
+`data/readouts.json`/`board.json`/`claims.json`. Site repo committed and
+pushed. No audio venv — audio briefing skipped, same standing gap.
+
+### Known gaps left open, on purpose
+
+- **`cloud-researcher` not installed** — every lens still ran
+  agentic-interim, same as every run since bootstrap.
+- **Cloudflare deploy hook** — `THEPROJECTION_DEPLOY_HOOK` still unset,
+  same standing issue as every run since 09-08; needs Ben.
+- **`gcloud auth login`** — same standing ask; `world-news.yaml`'s
+  mechanical candidate pool is now 14 days stale as a direct consequence.
+- No graph feed this run — `graph/ingest/*` only runs against a
+  finalized day, and 09-16 was already fed in this morning's run.
+- 2026-09-17 stays `status: building, coverage: pending/na` for all four
+  lenses plus front — the next run finalizes it once ≥5h past the
+  05:00 ET 09-18 close, and should resolve the SoftBank bond-pricing
+  ledger entry one way or the other at that point.

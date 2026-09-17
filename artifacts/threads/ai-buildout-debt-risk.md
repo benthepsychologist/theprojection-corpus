@@ -8,6 +8,10 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-09-17 — BOJ hike odds firm further into Friday's (Japan time) decision, no fresh substance
+
+- **Markets moved further toward pricing the Bank of Japan's 09-17/18 meeting as a hike rather than a hold: a Reuters poll of economists (conducted 09-01 to 09-08) found 97% expecting a 25bp move to 1.25%, and overnight-index-swap pricing found this pass ranged roughly 72-97% depending on source and exact timing — all at or above the 80-89% range this thread's own reads have carried since early September.** Japan's 10-year JGB held around 2.93%, essentially unchanged from this thread's 09-10 read. No new substantive development beyond the odds firming — the decision itself lands Friday Japan time (Thursday evening US time), after this pass's own window. This is the cross-border rate leg this thread and `cross-border-rates` both track; nothing here yet resolves either thread's open question about the yen/JGB reaction. ⟨daily 2026-09-17⟩
+
 ## 2026-09-11 — Oracle's own numbers show the funding gap this thread tracks, and Lagarde ties AI financing to sovereign yields directly
 
 - **Oracle's Q1 FY2027 print is this thread's clearest single data point yet on the demand-versus-funding gap: a $664bn contracted backlog, up $209bn year over year, produced by a quarter that itself burned $5bn of free cash flow against $28.5bn of capex.** The backlog proves the AI buildout's demand is real and contracted rather than announced; the cash-flow number is the other half of this thread's question — who funds the gap between signed commitments and the cash a company like Oracle is generating right now. CFO Hilary Maxson's guidance that roughly half of RPO converts to revenue over 36 months is itself a funding-timeline claim, not a funding-source one. ([Investing.com](https://www.investing.com/news/company-news/oracle-q1-fy2027-slides-cloud-infrastructure-surges-121-guides-90b-93CH-4897025), [24/7 Wall St.](https://247wallst.com/investing/2026/09/11/oracle-surges-7-as-ai-cloud-backlog-hits-664b-coreweave-and-nebius-climb-4/)) ⟨daily 2026-09-11⟩

@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-17 — The dollar-bond roadshow's own scheduled window closes with still no pricing found
+
+- **SoftBank's $10-20bn dollar-bond roadshow (Citigroup, New York) was scheduled to run 09-14 to 09-17 — today is its own last day — and as of this afternoon's check, no outlet (Bloomberg, Reuters-relay coverage, or SoftBank's own IR bond page, which lists nothing dated September 2026) has reported a coupon, size or launch.** This thread's 09-09/09-10 entries already established the roadshow as the funding mechanism for the $25.9bn bridge-loan payoff (itself completed 09-15 using cash already on hand plus prior bond proceeds, per those entries) — so a delayed dollar-bond pricing doesn't reopen the bridge-loan question, but it does leave the specific instrument this thread has been tracking since 09-10 still unpriced past its own reported timeline. Re-check at finalize; a same-week pricing after the roadshow's formal close would not be unusual for a deal this size. ⟨daily 2026-09-17⟩
+
 ## 2026-09-10 — The bridge-loan repayment gets its funding mechanism: a $10-20bn junk-bond roadshow via Citigroup
 
 - **SoftBank is running a $10-20bn junk-bond roadshow from 09-14 to 09-17 out of Citigroup in New York — the funding mechanism behind the $25.9bn OpenAI-bridge-loan repayment this thread already has on record for 2026-09-15.** Read against this thread's collateral-correlation watch: retiring the loan releases the OpenAI stake from pledge while unsecured bondholders take on the risk instead, loosening rather than tightening the "everything collateralizes everything else" knot. ([Reuters](https://www.reuters.com/markets/deals/softbank-junk-bond-roadshow-openai-bridge-2026-09-10/)) ⟨daily 2026-09-10⟩

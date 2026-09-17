@@ -3356,7 +3356,7 @@ expectations:
     thread: china-stack-independence
     entities: [scott-bessent]
     source: https://www.cnbc.com/2026/09/05/us-china-gear-up-for-mid-september-ai-safety-talks-reuters.html
-    confidence: rumored
+    confidence: reported
     what_confirms: >
       a dated meeting announced by either government, or the meeting
       itself. Reuters' 09-04 exclusive is contested on its face: a Treasury
@@ -3368,6 +3368,13 @@ expectations:
     logged: 2026-09-05
     logged_by: curate-add
     status: pending
+    note: >
+      2026-09-17 (afternoon sweep): Bessent went on record to Axios
+      (09-16) confirming a dated meeting with Vice Premier He Lifeng and
+      USTR Greer, in New York the weekend of 09-19/09-20 — the first
+      on-record confirmation since the contested 09-04/09-05 Reuters
+      exclusive. Moved confidence rumored -> reported. Still pending: the
+      meeting itself hasn't happened as of this check.
 
   - id: trump-xi-washington-summit-0924
     claim: >
