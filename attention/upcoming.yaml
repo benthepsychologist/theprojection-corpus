@@ -1410,6 +1410,12 @@ expectations:
       first project disclosed by any partner. due_precision is month with
       15 days of September left; stays pending.
 
+      RE-CHECK 2026-09-18 (two independent passes, global-capital lens +
+      semis-capex hot-cluster) — still no named deal. Same six MOU
+      partners, same "subject to execution of final agreements" language.
+      due_precision is month with 12 days of September left; stays
+      pending.
+
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2997,7 +3003,15 @@ expectations:
       publicly pressed Tokyo for "also rate hikes" (NHK, 09-01/02).
     logged: 2026-09-03
     logged_by: critic-add
-    status: pending
+    status: hit
+    resolved: 2026-09-17
+    evidence: >
+      The Bank of Japan hiked 25bp to 1.25% (highest since 1995), a split
+      7-2 vote (dissents Asada and Sato, both Takaichi-appointed
+      reflationists) — the decision landed 09-17 evening ET (Tokyo
+      morning 09-18) inside this digest-day's window. Yen weakened to
+      ¥156.64, 10-year JGB eased 4.9bp to 2.947%. Sources: CNBC,
+      Bloomberg, Japan Times, all dated 2026-09-18.
 
   - id: france-draft-finance-bill-0930
     claim: >
@@ -3351,8 +3365,9 @@ expectations:
       safety of Trump's second term, in mid-September, led by Treasury
       Secretary Bessent with Vice Premier He Lifeng the likely Chinese
       lead, ahead of an expected Trump-Xi summit
-    due: 2026-09-18
-    due_precision: week
+    due: 2026-09-20
+    due_precision: day
+    slips: [2026-09-18]
     thread: china-stack-independence
     entities: [scott-bessent]
     source: https://www.cnbc.com/2026/09/05/us-china-gear-up-for-mid-september-ai-safety-talks-reuters.html
@@ -3375,6 +3390,14 @@ expectations:
       on-record confirmation since the contested 09-04/09-05 Reuters
       exclusive. Moved confidence rumored -> reported. Still pending: the
       meeting itself hasn't happened as of this check.
+
+      2026-09-18 (frontier-ai lens re-check): original due (2026-09-18,
+      week precision, "mid-September") slipped to the now-confirmed
+      outer bound of the reported 09-19/09-20 weekend window — the
+      meeting itself still hasn't happened, so this is a slip, not a
+      hit. Re-checked against Bing News same day; nothing more specific
+      than the 09-16 Axios Bessent quote has surfaced, all newer hits are
+      same-day/next-day re-syndications of that one scoop.
 
   - id: trump-xi-washington-summit-0924
     claim: >
@@ -3564,7 +3587,19 @@ expectations:
       offered price.
     logged: 2026-09-10
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-17
+    evidence: >
+      The roadshow's full scheduled window (09-14 -> 09-17) closed with
+      zero pricing anywhere. Confirmed via direct fetch of SoftBank's own
+      IR bond page (group.softbank/en/ir/stock/bond, via python3 urllib)
+      — newest press release is still press/20260904 (the retail bond),
+      nothing later. Cross-checked against Bloomberg/Reuters-relay
+      coverage, same result. Read together with the same-day finding
+      that Apollo is separately in talks to nearly double a Vision Fund
+      2 NAV loan from $5.4bn to $9bn, and 09-18's SoftBank Arm-backed
+      margin loan increase from $20bn to $25bn — SoftBank is working
+      other financing levers in parallel rather than repricing this one.
 
   - id: ofac-gl-cc-winddown-0919
     claim: >

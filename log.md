@@ -10779,3 +10779,136 @@ pushed. No audio venv — audio briefing skipped, same standing gap.
   lenses plus front — the next run finalizes it once ≥5h past the
   05:00 ET 09-18 close, and should resolve the SoftBank bond-pricing
   ledger entry one way or the other at that point.
+
+## 2026-09-18 10:00 ET: finalized 2026-09-17 (BOJ hikes to a 30-year high, chip-selloff fully reverses, AWS still can't restore Bahrain six months on), opened 2026-09-18 thin, first full 7-agent dispatch plus a separate 4-agent site-briefing wave
+
+**Dispatch shape:** seven agents in one parallel batch (this machine's
+8-agent concurrency ceiling) — four lens agents each finalizing
+2026-09-17 and opening 2026-09-18, two hot-cluster deep checks (a
+semis/capex financing cluster and a health/security cluster, together
+covering 17 of the 28 weight-3 threads), one cold-rotation sweep (the
+11 most-stale threads in the map, including two — `openai-custom-
+silicon`, `openai-containment-breach` — that turned out to be
+`retired` and shouldn't have been in the rotation list; flagged for the
+next pass to exclude non-open threads from rotation selection). A
+separate four-agent wave then wrote the site's briefing packs.
+
+**What moved.** The Bank of Japan hiked 25bp to 1.25% — highest since
+1995, a split 7-2 vote (dissents Asada, Sato) — resolving
+`upcoming.yaml`'s `boj-september-meeting-0918` as a **hit**. SoftBank's
+bond roadshow (flagged pending at yesterday's afternoon checkpoint)
+closed its full window unpriced, resolving **passed-silent** — SoftBank
+instead worked two other levers same-week: Apollo nearly doubling a
+Vision Fund 2 loan ($5.4bn→$9bn) and an Arm-backed margin loan raised
+from $20bn to $25bn (spilling into today). `us-china-ai-safety-talks-
+mid-sept` **slipped** (old due 09-18 → `slips:`, new due 2026-09-20,
+the confirmed outer bound of the reported weekend window — the meeting
+itself still hasn't happened). `nvidia-500b-financing-first-close`
+stays pending after two independent re-checks found nothing.
+
+The chip-sector selloff this map logged 09-14 (the first real market
+reaction to Anthropic's pacing essay) **fully reversed** by the 09-17
+close — S&P to a fresh high, Intel +7.67%, AMD +6.36% — on unconfirmed
+SK Hynix-Intel Ohio-fab talks plus a Barclays upgrade. AWS's first
+public update since April confirmed it **still cannot restore Bahrain's
+cloud region**, six months after the Iran strikes that took it down
+(next update not due until early 2027) — in direct response, Reuters
+reports the UAE is redesigning its flagship 5GW Stargate campus for
+blast resistance and dispersed siting, the first named flagship AI
+project citing geopolitical risk in its own construction. An NPR/KPBS
+investigation found Google is directly drafting state AI-chatbot-safety
+bills with built-in loopholes for its own products, landing the same
+week two more California bills (AB 2575, SB 903) reached Newsom's desk.
+OpenAI shipped the misalignment-disclosure framework it promised 09-05
+and used it to reveal six previously unreported "concerning" model-
+behavior cases; a day later, TechCrunch reported researchers used
+Claude (not an OpenAI agent) to chain two vulnerabilities into OpenAI's
+own GitHub repo under an authorized bug bounty — a different flavor of
+incident than this thread's usual pattern. Trump told Axios he faces a
+"big decision" on whether to "annihilate" Iran's regime, the same day a
+Russian drone detonated 4km from the Polish border, prompting Poland to
+scramble jets — both considered for flash and both declined (see the
+front digest for the reasoning). This morning: Tehran saw its biggest
+loyalty rally since the war began (300,000+ marching), and Iran's IRGC
+Navy seized a Togo-flagged tanker in the Strait of Hormuz.
+
+**Three coverage-critic passes (frontier-ai, global-capital, mental-
+health) ran clean — zero confirmed misses across all three lenses.**
+Two new access breaks discovered: Axios Pro Rata and Bloomberg
+Technology's reader-proxy fallback started serving stale cached pages;
+CourtListener and CNBC both 403'd via previously-working transports for
+the first time. Five aggregator-recency traps caught and rejected
+across the whole run (a year-old SoftBank press release, a March-dated
+Nvidia story, a stale PIF/Humain restatement, plus two more the cold-
+rotation agent caught on Stargate-adjacent searches) — none became
+false timeline entries.
+
+**Two cross-thread reconciliation fixes applied by the main session**
+after all seven agents reported back, where one agent's research
+surfaced real news inside another agent's owned thread: Crusoe's
+$3.9bn raise (found by the semis-capex cluster) added to `stargate-
+buildout`, which the cold-rotation agent's own confirmed-quiet check on
+that same thread had missed; the Hacktron/Claude story (found by the
+frontier-ai lens after its owning cluster's pass) added to `openai-
+agent-security-incident`.
+
+**Map changes applied this run:** `threads.yaml` `last_seen` bumped to
+2026-09-18 across 33 threads spanning all four lenses' finalize/open
+passes, both hot-cluster clusters, and cold rotation (21 via direct
+edit by the lens/world-news agents, 12 via main-session reconciliation
+after all reports landed). `actor-doing.yaml` refreshed for `softbank`,
+`anthropic`, `openai` (all three moved substantially this run).
+`upcoming.yaml`: 4 resolutions applied (BOJ hit, SoftBank bond passed-
+silent, US-China talks slipped, Nvidia-500B stays pending with a fresh
+evidence note).
+
+**One known gap, not resolved this run:** two `passed-silent` ledger
+items inside their 3-day retro-flip grace
+(`michigan-city-moratorium-second-reading`, `sf-datacenter-moratorium-
+vote-0915`, both resolved 09-16) weren't assigned to any agent this
+run, and no evidence surfaced organically. Grace window runs through
+09-19 — worth a direct check next run if nothing else catches it first.
+
+**Thread candidate needing Ben's call:** the X Corp/xAI antitrust
+candidate has now been offered twice with no answer in between — per
+this map's own two-strike rule it should drop, but it's carried one
+final time as a direct decision rather than silently dropped (see the
+front digest and this run's closing chat message). Two new candidates
+offered fresh: the RAND/JAMA Pediatrics AI-chatbot-use study (mental-
+health lens judged it now has enough weight/persistence for a real
+offer) and "frontier labs building their own serving infrastructure"
+(Z.ai's GLM self-build, Anthropic's 26%-of-R&D disclosure, same week).
+
+**Site refreshed.** Four sonnet-class agents wrote the front + three
+lens briefing packs in parallel from `theprojection readouts --pack`'s
+own structured output, each explicitly instructed to scan the full
+`breaking`/`news` arrays for `sev: major` items rather than take
+pack-position order — caught the Fed's unanimous hike (the pack's only
+`sev: major` item) which would otherwise have sat below the BOJ hike by
+position. `--apply` 4/4 with zero skips, `--export` wrote 154 readouts,
+`kestrel publish --instance . --site-dir /workspace/theprojection-site
+--push` shipped 65 entity pages, 3 beat pages, 753 claim pages, 7
+interpretation pages, 1,355 story pages, 122 map pages,
+`data/readouts.json`/`board.json`/`claims.json`. Site repo committed
+and pushed. No audio venv — audio briefing skipped, same standing gap.
+
+**Graph fed** for the newly-finalized 2026-09-17 day: all four
+ingesters ran (`07_digest_bullets.py`, `06_timelines.py`,
+`03_expectations.py`, `09_critic_annotations.py`), `graph/validate.py`
+passed clean (5,457 atoms, 3,623 sources, 9,062 relationships, 1,459
+annotations, 140 extraction passes, no broken references).
+
+### Known gaps left open, on purpose
+
+- **`cloud-researcher` not installed** — confirmed again this run (the
+  repo exists at `/workspace/cloud-researcher` but has never been `pip
+  install`ed; not this session's write zone to fix). Every lens still
+  ran agentic-interim, same as every run since bootstrap.
+- **Cloudflare deploy hook** — `THEPROJECTION_DEPLOY_HOOK` still unset,
+  same standing issue as every run since 09-08; needs Ben.
+- **`gcloud auth login`** — same standing ask; `world-news.yaml`'s
+  mechanical candidate pool is now 15 days stale as a direct
+  consequence.
+- 2026-09-18 stays `status: building, coverage: pending/na` for all
+  four lenses plus front — the next run finalizes it once ≥5h past the
+  05:00 ET 09-19 close.

@@ -123,8 +123,21 @@ actors:
 
       '
   anthropic:
-    asof: 2026-09-16
+    asof: 2026-09-17
     doing: >
+      New 09-17: CLAUDE NOW DOES A QUARTER OF ANTHROPIC'S OWN R&D. Anthropic
+      disclosed Claude leads 26% of its own R&D work, up from under 1% in
+      February, running on roughly 30,000 internal agents — with a same-day
+      result that an internal Claude model sped up 30+ open-source
+      biomolecular models by roughly 4x. Also shipped a redesigned Claude
+      Code Projects (a coordinator that delegates a request across parallel
+      cloud sessions with shared memory), and was one of four labs (with
+      OpenAI, Nvidia, Google DeepMind) convened by King Charles III at
+      Dumfries House on AI control, days after the pacing-essay debate
+      below. Read together with Z.ai's same-week disclosure that GLM-5.3
+      built its own serving infrastructure: self-improving/self-building
+      lab infrastructure is becoming a pattern across labs, not just here.
+
       New 09-16: COLLAPSING THE PRODUCT SURFACE INTO ONE. Anthropic merged
       Claude chat, Cowork and Artifacts into a single unified product
       ("one Claude") and launched Claude Docs/Slides the same day — a
@@ -1356,8 +1369,24 @@ actors:
 
       '
   openai:
-    asof: 2026-09-16
+    asof: 2026-09-18
     doing: >
+      New 09-18: A NON-OPENAI-AGENT SECURITY STORY, FOR ONCE. Researchers
+      at Hacktron AI used Anthropic's Claude (not an OpenAI agent) to chain
+      two vulnerabilities into multiple OpenAI employee accounts and
+      OpenAI's own GitHub repo, as authorized bug-bounty research — the
+      underlying breach dates to late July, paid out $6,500. Distinct from
+      this map's usual "OpenAI's own agent went rogue" pattern, but the
+      same infrastructure keeps drawing scrutiny either way.
+
+      New 09-17: SHIPPING THE DISCLOSURE FRAMEWORK IT PROMISED, AND USING
+      IT TO REVEAL MORE. OpenAI published its new misalignment tracking-
+      and-disclosure framework and, in the same post, disclosed six
+      previously unreported "concerning" model-behavior cases found since
+      March: "We do not believe that the AI industry has solved alignment
+      and monitoring to a sufficient degree to continue responsibly
+      scaling at maximum speed for much longer."
+
       New 09-16: PRICING A $1.2 TRILLION VALUATION WHILE STILL ASKING FOR
       THE ANTITRUST COVER TO SLOW DOWN TOGETHER. OpenAI is in early,
       investor-initiated talks about a fresh funding round above $1.2
@@ -1567,8 +1596,21 @@ actors:
 
       '
   softbank:
-    asof: '2026-09-15'
-    doing: 'New 09-15: THE BRIDGE PAYOFF ACTUALLY HAPPENED. SoftBank wired off the final $25.9bn
+    asof: '2026-09-18'
+    doing: 'New 09-18: A FOURTH SIMULTANEOUS FINANCING LEVER, SAME WEEK. SoftBank raised its
+      Arm-backed margin loan from $20bn to $25bn, oversubscribed ($7bn demand against a $3-5bn
+      target), without reducing its Arm stake — the fourth lever in play this week alongside the
+      now-passed-silent bond roadshow (below) and the Apollo Vision Fund 2 talks. The pattern
+      reads as breadth over depth: rather than one large refinancing, SoftBank is working several
+      smaller, parallel levers.
+
+      New 09-17: THE BOND ROADSHOW CLOSED UNPRICED — PASSED-SILENT. The $10-20bn junk-bond sale
+      flagged below as "the next live test" ran its full 09-14-to-09-17 window out of Citigroup
+      with zero pricing anywhere (confirmed against SoftBank''s own IR bond page). Same day,
+      Apollo was separately reported in talks to nearly double a Vision Fund 2 NAV loan from
+      $5.4bn to $9bn — SoftBank shifting to a different lever rather than repricing this one.
+
+      New 09-15: THE BRIDGE PAYOFF ACTUALLY HAPPENED. SoftBank wired off the final $25.9bn
       balance on its $40bn OpenAI-stake bridge loan today, six months ahead of the March 2027
       maturity, exactly as the 09-10 forecast below said it would — the map''s own
       `softbank-openai-bridge-matures` ledger item resolves as a HIT. Same day, short interest in

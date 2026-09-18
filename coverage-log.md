@@ -7617,3 +7617,305 @@ verified against independent research rather than trusted blind, then kept
 `⟨daily 2026-09-17⟩` to `⟨daily 2026-09-16⟩` to match where the underlying
 events actually landed (inside the 09-16 digest-day being finalized, not
 09-17's open pass).
+
+## 2026-09-18 — mental-health: 09-17 finalize (this session's own lens)
+
+Finalized `artifacts/digests/daily/2026-09-17-mental-health.md` (now
+`status: final`, `coverage: done`) after a three-pass day (05:00-10:00,
+10:00-15:00, and this finalize pass covering 15:00 ET 09-17 → 05:00 ET
+09-18 plus a morning-of re-check through ~10:00 ET 09-18). Also opened
+`2026-09-18-mental-health.md` as `building`.
+
+### Coverage critic, mental-health / 2026-09-17
+
+All four named daily benchmarks checked directly for 09-17-dated content.
+**Behavioral Health Business** — silent all day; `lastBuildDate` on its
+feed still read Wed 09-16 21:29 UTC as of the Friday-morning re-check, no
+09-17 post at all. **STAT Health Tech** — one 09-17 edition ("Zocdoc for
+chatbots and what's new with Medicare's ACCESS," 13:09 ET), fully
+paywalled; visible teaser + same-day corroborating Fierce Healthcare
+coverage indicates general digital-health infrastructure content, not
+behavioral-health specific — not logged as a miss, full text unread.
+**Fierce Healthcare** — 09-17 leads were Ascension financials, a Walmart
+rural-health pilot, Kennedy's 8 new PSTF appointees, hospital
+operating-margin data, and Oura/Counsel Health joining CMS's ACCESS model
+under its early cardio-kidney-metabolic track (not the behavioral-health
+track `cms-access-model-bh` follows) — none behavioral-health specific.
+**MobiHealthNews** — 09-17 leads were Hello Patient/Converse Health
+(workflow automation), Vitality/Google's AI wellness platform US launch,
+an ambient-scribes video feature — none mental-health specific.
+
+**They led with → we missed:** Nothing. **Both covered:** N/A — no shared
+mental-health lead today. **We had → they didn't:** N/A.
+
+**Two apparent finds that turned out to be already-logged, not new
+misses:** Definium Therapeutics' third positive Phase 3 readout for
+DT120 ODT (Panorama study, generalized anxiety disorder, announced
+09-14) resurfaced via STAT's 09-17 Readout LOUD recap — checked against
+`artifacts/threads/psychedelic-regulatory-sprint.md` and found already
+entered there, dated 09-14, marker `⟨daily 2026-09-15⟩`. Onos Health's
+$17M behavioral-health-analytics Series A (announced 08-26) resurfaced
+via a Health IT Answers 09-17 funding roundup — checked and found already
+caught by the 08-26 coverage critic, already on both
+`mh-clinical-infra-funding` and `payer-ai-claim-denial`. Both are trade
+press re-aggregating old news, not new events; logged here as map-currency
+confirmation, not as misses.
+
+**A claim that did NOT survive a primary-source check, corrected before
+landing on the map:** an initial WebSearch synthesis reported Timothy
+Westlake (nominee for Assistant Secretary for Mental Health and Substance
+Use / SAMHSA) confirmed by the Senate 51-47, citing roll-call vote #225.
+Checked against the vote itself: #225 is real but is an unrelated en-bloc
+nomination confirmation from 2026-08-07, not Westlake. No Senate HELP
+Committee markup or floor vote on Westlake appears in any official Senate
+or committee record as of 09-18 morning — his status remains unchanged
+since the 09-16 confirmation hearing. Not added to the digest or
+`upcoming.yaml`; flagged here as a live example of search-synthesis
+output needing a primary-source check before it lands on the map.
+
+**Access:** all four benchmarks reached cleanly. BHB via `python3 urllib`
++ Googlebot UA against `bhbusiness.com/feed/` (WebFetch still blocked at
+the Cloudflare edge, per the standing note). STAT via the same transport
+against `statnews.com/feed/`. Fierce Healthcare via Googlebot UA against
+`fiercehealthcare.com/rss/xml`. MobiHealthNews via the `r.jina.ai` reader
+proxy against `/rss.xml`. No new access breakage.
+
+### Thread candidate offered (not applied — Ben's call)
+
+A RAND/JAMA Pediatrics study (nationally representative survey of
+12-21-year-olds, fielded Nov 2025, published JAMA Pediatrics ~June 2026):
+AI-chatbot use for mental-health advice rose ~13%→19.2% in a year
+(~8.2M young people), 63% of users never disclosed the use to anyone,
+92% rated it helpful (researchers flag possible sycophancy bias rather
+than genuine quality). No map coverage at all despite continuing press
+pickup across several days (Dartmouth/NH regional TV 09-16-17, MedCity
+News feature 09-16, ongoing AMA congressional advocacy). Proposed home:
+`ai-therapy-evidence` or `social-media-causality-fight`. Offered as a
+digest thread-candidate on 09-17's finalized digest; not auto-added.
+
+### Also checked, not added
+
+Alan Clinic's Ontario mental-health launch (Feb 17 2026, per Businesswire)
+predates the `alan-into-canada` thread's 07-28 opening by over five
+months — confirmed via primary press release. `alan-into-canada` is
+owned by another agent this run (cold-rotation batch); flagged in the
+session report as a `/crawl` backfill candidate for that thread rather
+than acted on here.
+
+## 2026-09-18 critic pass — finalized digest-day 2026-09-17 (global-capital only, this run's own lens)
+
+*Run 2026-09-18 ~10:00 ET, finalizing Thursday 09-17's global-capital
+digest (window 05:00 ET 09-17 → 05:00 ET 09-18, which also captured the
+BOJ decision landing late in that window after the US close). Transport:
+author-page/section RSS via `python3 urllib` (Googlebot UA) cleared
+Money Stuff and FT Unhedged directly, no proxy needed; the `r.jina.ai`
+reader proxy for Axios Pro Rata and Bloomberg Technology both returned
+stale cached pages (dated May 2026 and March 2025 respectively) rather
+than current content — logged not-checkable rather than compared
+against stale content. WebSearch/WebFetch supplemented for market data
+and the SoftBank/CoreWeave/BOJ items themselves; WebSearch's 200-call
+session budget was exhausted during this run's later 09-18 opening
+sweep, not during this critic pass.*
+
+### global-capital / 2026-09-17 — no confirmed miss
+
+**They led with → we missed:** No confirmed miss this pass. Money
+Stuff's 09-17 column ("The Whole Indian Options Trade Was Too Good,"
+pubDate 09-17 18:46 GMT) confirmed to exist via author-page RSS, its dek
+naming "compute futures manipulation, AI Ebitda add-backs and AI safety
+stereotypes" as sub-items — but the article body is fully paywalled past
+Bloomberg's own site boilerplate even through the r.jina.ai reader
+proxy, so no concrete, sourceable fact could be confirmed behind the
+dek. Background research found a real backdrop for the "compute
+futures" line (the CFTC's 08-17/08-19 comment period on AI-compute-
+futures contracts, Nodal Exchange's 09-03 launch announcement) but
+nothing dated 09-17 itself — logged checked-not-confirmed rather than a
+miss. FT Unhedged's 09-17 edition ("Getting to know Mr Warsh," pubDate
+09-17 05:30 GMT) is commentary on Chair Warsh's reaction-function
+messaging, a story this lens's own ledger already closed in depth
+(`jackson-hole-warsh-keynote`, resolved hit 2026-08-28) — not a
+fact-level miss. Axios Pro Rata's reader-proxy URL returned a stale
+cached page (title "Axios Pro Rata: Slowdown," dated May 2026) rather
+than a current edition — a transport failure, not a clean check;
+consistent with the standing 08-25/09-09 same-day-only limitation but a
+new failure mode (stale cache rather than wrong-day content). Bloomberg
+Technology's homepage likewise returned a stale cache (dated March
+2025) — not checkable, consistent with this benchmark's standing
+no-dated-archive problem.
+
+**Both covered:** The BOJ's 25bp hike to 1.25%, CoreWeave's upsized
+($3.0bn → $3.7bn) convertible-note pricing, and the oil/equity rebound
+all matched general financial-press coverage this pass checked
+independently.
+
+**We had → they didn't:** Apollo's talks to nearly double SoftBank's
+Vision Fund 2 NAV loan to $9bn, and the SoftBank dollar-bond roadshow's
+passed-silent resolution (confirmed via a direct check of SoftBank's own
+IR bond page rather than secondary reporting) — both this digest's own
+finds, sourced to Bloomberg/Japan Times and SoftBank's primary source
+respectively.
+
+### Tooling
+
+- SoftBank's own IR bond page (`group.softbank/en/ir/stock/bond`) is
+  directly fetchable via `python3 urllib` with a Googlebot UA — confirmed
+  no new September 2026 press release beyond the 09-04 retail-bond terms
+  (`press/20260904`), the primary-source basis for this pass's
+  SoftBank-bond passed-silent resolution rather than relying on secondary
+  reporting's silence alone.
+- Money Stuff's (`bloomberg.com/opinion/authors/.../matthew-s-levine.rss`)
+  and FT Unhedged's (`ft.com/unhedged?format=rss`) own RSS feeds both
+  cleared directly via `python3 urllib` with a Googlebot UA, no proxy
+  needed — consistent with prior passes; both list full recent-issue
+  history (title + dek + pubDate) even though article bodies stay
+  paywalled.
+- ⚠️ WebSearch budget (200 calls/session) was exhausted partway through
+  this run's 09-18 opening sweep (after the 09-17 finalize/critic pass
+  itself had already completed). The remainder of the 09-18 sweep ran on
+  `python3 urllib` and direct-URL WebFetch — effectiveness held up
+  (found the SoftBank Arm-margin-loan increase and the Nvidia/Huang
+  chip-doubling comments via WebFetch-reached aggregator pages) but is
+  worth flagging again: a session doing a full finalize-plus-critic pass
+  and a same-run opening sweep should expect to hit this cap, consistent
+  with the 09-16 frontier-ai pass's same note.
+
+## 2026-09-18 — frontier-ai: 09-17 finalize + 09-18 open
+
+The 09-17 digest-day closed at 05:00 ET this morning; this pass extended
+collection through the close, finalized the 09-17 digest
+(`artifacts/digests/daily/2026-09-17-frontier-ai.md`, now `status: final`,
+`coverage: done`), and opened the 09-18 digest as `building`
+(agentic-interim, mid-morning ET). WebSearch's per-session budget (200
+calls) was exhausted partway through the finalize pass; the rest of this
+run — the back half of the finalize critic and all of the 09-18 open
+sweep — ran on WebFetch against direct outlet URLs and date-path listings
+(e.g. `techcrunch.com/2026/09/17/`, `techcrunch.com/2026/09/18/`) rather
+than further WebSearch queries. See Tooling below.
+
+### Coverage critic, frontier-ai / 2026-09-17
+
+**Benchmark-day lag confirmed, worth stating explicitly since it changes
+which edition to check:** all four named benchmarks (The Rundown AI, TLDR
+AI, The Neuron, The AI Daily Brief) publish a morning-after recap — their
+09-17-dated editions covered 09-16 news (already checked and finalized by
+the prior pass), and their 09-18-dated editions are what actually covers
+09-17. Checking the wrong day's edition (09-17-dated) against the 09-17
+digest would have silently re-litigated stories already closed out in the
+09-16 finalize. Confirmed by direct comparison: TLDR's `2026-09-17` page
+led with Claude Cowork merger / OpenAI Sponsored Agents (both 09-16
+stories, already folded into the 09-16 digest per the prior pass's own
+log entry); TLDR's `2026-09-18` page led with an entirely different set —
+Google's Family Agent, Claude biomolecular-modeling speedup, Claude
+Projects redesign, a Noam Brown interview, an LLM-classification research
+paper, Anthropic's "Claude leads 26%" R&D disclosure, and GLM-5.3's
+self-built inference stack — all genuinely 09-17-dated on primary-source
+re-check.
+
+**They led with → we missed, at the time of the check:** none from TLDR
+AI's 09-18 edition — this pass's own general WebSearch/WebFetch sweep
+(not the benchmark check itself) had already found and verified five of
+its seven items (Family Agent, biomolecular speedup, Claude Projects
+redesign, the 26% R&D disclosure, GLM's self-built infra) before the
+benchmark check ran, so the check functioned as confirmation rather than
+discovery. The remaining two (a Noam Brown interview, an LLM-classification
+research paper) were swept and judged not digest-worthy — interview/
+research-methods pieces rather than developments — logged rather than
+silently dropped.
+**Both covered:** the five items above, independently found by this pass
+and also led by TLDR AI's 09-18 edition.
+**We had → they didn't:** the King Charles AI-safety summit at Dumfries
+House (OpenAI/Anthropic/Nvidia/DeepMind convened, "we need sufficient
+means of control before it is all too late"), Crusoe's $3.9bn raise
+($30.9bn valuation, finances the Abilene/Stargate-linked campus), and a
+cross-thread OpenAI misalignment-disclosure item (see note below) — none
+on TLDR's list.
+**Not checkable:** The Neuron's Friday (09-18) edition was not yet
+published/indexed as of this check — only a same-day non-digest article
+(World Labs' Atlas) was found under its byline. The Rundown AI's archive's
+newest entry was still about the 09-16 OpenAI misbehaving-models story —
+no edition covering 09-17 published yet as of this check. The AI Daily
+Brief's archive's newest episode remains 09-16 ("Why a New Class of AI
+'Judgment Models' Could Have Big Business Implications") — no 09-17
+episode, the same lag this benchmark showed 09-15→09-16 on the prior
+pass. All three logged not-checkable rather than compared against the
+wrong day.
+
+### Cross-thread finding, not folded into any timeline here
+
+Both the OpenAI six-incident misalignment disclosure and the Google
+DeepMind Institute launch show a genuine cross-outlet date split: Axios
+and CNBC's own URLs date their initial coverage 09-16 (inside the
+already-finalized 09-16 digest, not reopened by this pass), while
+TechCrunch's own fuller treatments of both are dated 09-17. The OpenAI
+item was folded into the 09-17 digest's new Research & safety section
+with this dating caveat spelled out, tagged `t=openai-agent-security-
+incident` — that thread is owned by another lens agent this run, so the
+timeline file itself was left untouched. **Flagged for reconciliation:**
+it is unresolved whether the 09-16-origin version of this story already
+reached that thread via whichever agent covers it; if so, this digest's
+09-17 entry may read as a partial duplicate from that thread's point of
+view. The DeepMind Institute item was folded into
+`frontier-model-gov-review-precedent` (owned by this lens agent) with the
+same dating caveat, no reconciliation issue.
+
+### Tooling
+
+- ⚠️ **WebSearch budget (200 calls/session) was exhausted mid-afternoon
+  this pass** — faster than the 09-16 finalize pass burned it, likely
+  because this run covered two full digest-days (09-17 finalize + 09-18
+  open) plus a four-benchmark critic check in one session. WebFetch
+  against direct outlet URLs and guessed/confirmed date-path listings
+  (`techcrunch.com/YYYY/MM/DD/`) covered the gap adequately — it is what
+  surfaced Crusoe's raise, the King Charles summit's primary sourcing, and
+  the 09-18 Hacktron/Claude story below. Worth budgeting for this cap
+  proactively on any run combining a finalize + open + critic pass.
+- CourtListener's docket page for `X Corp. v. Apple Inc.` (case
+  4:25-cv-00914), previously fetchable via `python3 urllib` with a
+  Googlebot UA per this corpus's standing transport note, returned
+  **HTTP 403 on that same transport** on a same-day re-check this pass —
+  a new access state on this specific target, not seen before. The
+  underlying finding it was rechecking (the 09-17 in-camera disclosure)
+  was already confirmed live earlier in the day before the block set in,
+  so this didn't cost a finding, but re-test before relying on the
+  urllib/Googlebot-UA path against this docket again.
+- `www.reuters.com`, `www.theverge.com` remain unfetchable via WebFetch
+  ("Claude Code is unable to fetch from ..."), consistent with prior
+  sessions. `www.cnbc.com` also 403'd on WebFetch this pass (both the
+  general tech section and the AI-specific section) — new for CNBC on
+  this transport; not previously logged as blocked. Bing's own
+  `/news/search` endpoint returned only chrome/boilerplate via WebFetch,
+  no usable article list, both times tried.
+
+### 09-18 open sweep
+
+Genuinely 09-18-dated finds as of ~10:15 ET: a TechCrunch investigation
+("Researchers used Anthropic's Claude to hack into OpenAI") published
+09-18, 07:00 PDT — Hacktron AI's three-person team chained two
+vulnerabilities (a `libheif` memory bug via OpenAI's Discourse forum, then
+an employee-ChatGPT/Codex-account takeover) to reach OpenAI's GitHub repo,
+using Claude Opus 4.8 then Opus 5 to develop the exploit; authorized
+research through OpenAI's bug-bounty program, $6,500 awarded, vulnerability
+reported 07-27 and fixed. This is a genuine 09-18 story but cross-threads
+into `openai-agent-security-incident` (owned by another lens agent this
+run) — folded into the 09-18 digest body only, tagged, not written to that
+thread file. No other independently-verified 09-18-dated development
+found as of this check; the digest says so plainly rather than padding.
+
+### upcoming.yaml — proposed edit, not applied
+
+`us-china-ai-safety-talks-mid-sept` (due 2026-09-18, due_precision: week,
+status: pending) already carries a 09-17 `note:` recording that Bessent
+confirmed a dated meeting with He Lifeng for the weekend of 09-19/20, but
+the entry's own `due`/`status`/`confidence` fields were never updated to
+match. Per the ledger's own slip protocol (header comment,
+`attention/upcoming.yaml`), a new confirmed date is a **slip**: push the
+old `due: 2026-09-18` onto `slips: [2026-09-18]`, set a new `due`, leave
+`status: pending` (the meeting itself hasn't happened yet). Re-checked
+this pass via Bing News for anything more specific than "the weekend of
+09-19/20" — found only re-syndications of the same 09-16 Axios scoop
+(MEAWW, International Business Times, Yahoo, all dated "1 day ago"/"22
+hours ago" relative to this check, i.e. still 09-17 pickups of the 09-16
+original), no single-day pin. Proposed: `due: 2026-09-20`,
+`due_precision: day` (the outer bound of the reported window),
+`confidence: reported` (up from `rumored`), `status: pending` unchanged.
+Not applied here — main-session-only per this run's brief.
