@@ -7919,3 +7919,305 @@ original), no single-day pin. Proposed: `due: 2026-09-20`,
 `due_precision: day` (the outer bound of the reported window),
 `confidence: reported` (up from `rumored`), `status: pending` unchanged.
 Not applied here — main-session-only per this run's brief.
+
+## 2026-09-19 — mental-health: 09-18 finalize + 09-19 open
+
+Friday's 2026-09-18 digest had been left `status: building` at ~15:00 ET
+(the evening window 15:00 ET Fri → 05:00 ET Sat never swept). This pass
+swept that window, finalized the digest
+(`artifacts/digests/daily/2026-09-18-mental-health.md`, now
+`status: final`, `coverage: done`), added one Friday-evening entry to
+`openai-health` (owned), and opened `artifacts/digests/daily/2026-09-19-
+mental-health.md` as `building` (a thin, honest-null Saturday).
+
+### Coverage critic, mental-health / 2026-09-18
+
+**They led with → we missed:** Nothing. All four named daily benchmarks
+checked directly for their 09-18 content — **Behavioral Health
+Business** (`bhbusiness.com/feed/`) led with a BHB+ distressed-assets
+M&A trend piece ("Damaged Goods?"), then a co-occurring-SUD/autism
+access piece and a staffing profile; **STAT Health Tech**
+(`statnews.com/topic/health-tech/feed/`) led with a UCSF geriatrician
+piece on AI risk-prediction caution for older adults; **Fierce
+Healthcare** (`fiercehealthcare.com/rss/xml`) led with a Summa Health
+CEO profile, CMS restoring $12B in frozen supplemental Medicaid funds, an
+Angle Health $600M raise, and a health-AI-regulation op-ed; **MobiHealth
+News** (`r.jina.ai` proxy on `mobihealthnews.com/rss.xml`) led with the
+same Angle Health raise, a Roche/Genentech R&D-center opening, and an
+AI-agent-cybersecurity Q&A. None of the twelve leads across all four
+benchmarks is mental-health- or AI-therapy-specific. Weekly-tier JMIR
+Mental Health / npj Digital Medicine not checked this pass (weekly
+cadence).
+
+**Both covered:** N/A — no shared mental-health-specific lead today
+across any benchmark.
+
+**We had → they didn't:** The NPR investigation that Google helped draft
+state AI-chatbot-safety bills (including California's), OpenAI's
+Australian Youth Safety Blueprint (naming real-world crisis support as a
+named design pillar for the first time), and Canada's National
+Observer's AI-health-spending investigation — none of the four
+benchmarks carried any of these as of this check.
+
+**Name pass:** every mental-health watchlist org (Talkspace, Headspace,
+Spring Health, Lyra Health, Wysa, SonderMind, Slingshot AI, Character.AI,
+Replika, COMPASS Pathways, Apple Health, Amazon Health, Microsoft Nuance,
+CVS Health, UnitedHealth, Cigna, Humana, Elevance, Kaiser Permanente,
+Definium Therapeutics) checked by name against `buffer/2026-09-18-
+rss.jsonl`, `buffer/2026-09-19-rss.jsonl`, `buffer/2026-09-18-
+sec_edgar.jsonl` (229 rows) and `buffer/2026-09-18-federal_register.jsonl`
+(47 rows) — zero hits in any file.
+
+**Wire backstop:** a Reuters/AP-focused search on AI-therapy/chatbot
+regulation, Kaiser, CMS and psychedelic-regulation subjects returned
+nothing dated to 09-18 or 09-19 beyond what's already logged above or
+already on the map.
+
+**Prior open miss, closed:** the 09-17→09-18 critic pass logged no open
+misses to carry forward (its own appendix found nothing to miss that
+day); nothing outstanding from it.
+
+**Declined, not curated:** a BHB+ trend piece ("Damaged Goods? Influx of
+Distressed Assets," 09-18) on behavioral-health M&A cites two examples
+in passing — Aware Recovery Care/Renew Health (already logged on
+`mh-clinical-infra-funding`'s 09-16 entry) and Spero Health's acquisition
+of CleanSlate, which closed **2026-07-07** (per Behavioral Health
+Business's own contemporaneous report) and has never been independently
+logged on this map. Declined as a 09-18 finalize item since it is
+~2.5 months outside this digest-day's window and was not itself news
+today — flagged below for reconciliation/awareness rather than
+backfilled.
+
+**Access:** all four benchmarks reached cleanly via `python3 urllib`
+(Googlebot UA) except MobiHealthNews, which needed the `r.jina.ai`
+reader proxy as usual. New this pass: `openai.com` returned HTTP 403 on
+direct `urllib` fetch (not previously logged as blocked for this
+domain) but was readable via the same `r.jina.ai` reader proxy —
+worth a future pass reaching for that proxy on this domain by default
+rather than treating a direct 403 as "down."
+
+### Reconciliation note (not this lens's thread, logged for awareness)
+
+Spero Health's 2026-07-07 acquisition of CleanSlate Centers (doubling
+Spero's addiction-treatment footprint) appears nowhere on this map,
+including `mh-clinical-infra-funding` (owned by this lens, consolidation
+is explicitly in its watch line). It surfaced only as background context
+in an unrelated 09-18 trend piece. Genuinely a two-month-old gap, not a
+09-18 miss — noted here rather than backfilled under today's date; a
+future pass on that thread could add it as a dated late-catch if wanted.
+
+## 2026-09-19 — frontier-ai: 09-18 finalize + 09-19 open
+
+This pass finalized the 09-18 digest (`artifacts/digests/daily/2026-09-18-
+frontier-ai.md`, now `status: final`, `coverage: done`), sweeping the
+evening window (15:00 ET 09-18 → 05:00 ET 09-19) that had never been
+swept — Friday's afternoon pass stalled before closing. It also opened
+the 09-19 digest (`2026-09-19-frontier-ai.md`, `status: building`), a
+weekend day expected and confirmed thin.
+
+### Coverage critic, frontier-ai / 2026-09-18
+
+**Benchmark access, this pass:** TLDR AI, The Rundown AI, The Neuron and
+The AI Daily Brief are all confirmed weekday-only publishers (per this
+file's 2026-08-23 access note); Saturday 09-19 gave no fresh edition
+covering Friday's evening window from any of the four. TLDR's most recent
+edition (dated 09-18) covers 09-17, already checked and folded into the
+prior finalize pass — re-checking it here would have re-litigated closed
+stories, so it wasn't. The Rundown AI's, The Neuron's and The AI Daily
+Brief's current front pages were read directly (no dated edition to pull)
+and cross-checked against this map's own record.
+
+**They led with → we missed:** none. The four benchmarks' current
+front-page items — OpenAI's misbehaving-models disclosure and its
+Suleyman/Newsom reactions, Meta's Muse momentum, TypeSafe/Jev, a Noam
+Brown interview about a already-known Millennium-Prize-problem result —
+all trace to stories already on this map before this pass started, most
+from the 09-16/09-17 finalize passes. A supplementary wire backstop
+(Reuters/AP AI-headline WebSearch sweep) surfaced nothing beyond what
+this pass independently found and folded in below.
+
+**Both covered:** the Hacktron/Claude-into-OpenAI-GitHub breach, Meta
+Muse on Mac, Manus's $500M raise, and the OpenAI six-incident disclosure
+reactions (Suleyman on CNBC, Newsom's kill-switch order) — all logged in
+the 09-18 digest before this critic check ran, and consistent with what
+every benchmark itself is covering.
+
+**We had → they didn't:** three evening-window finds, none on any
+benchmark's current front page as of this check —
+1. Anthropic named Accenture's Faculty AI unit its first outside
+   "embedded evaluator" ($1B+ committed over five years, Accenture stock
+   +8% after hours) — the first concrete implementation of the
+   embedded-evaluator model Dario Amodei proposed. Tagged
+   `t=frontier-model-gov-review-precedent` (owned by the hot-cluster agent
+   this run; not written to that timeline file, digest-only here) with
+   `sev=major` as a first-of-kind development.
+2. Anthropic operates a wet biology lab in the Bay Area running physical
+   experiments (protein-design acceleration, biomolecular modeling)
+   against its AI models' predictions.
+3. A late catch, dated to its real day: court filings unsealed 09-17 by
+   Judge Sidney H. Stein in `In re: OpenAI Copyright Infringement
+   Litigation` (MDL 1:25-md-03143-SHS-OTW, S.D.N.Y.) quote Microsoft's
+   Brent Hecht privately calling AI training "the largest theft of labor
+   in human history" and warning of a self-inflicted "doom loop" (Copilot
+   cut nytimes.com click-throughs up to 93%), and OpenAI's Nick Turley
+   admitting OpenAI's products are "largely substitutive, period." First
+   reported by TechCrunch 09-17 (inside the already-finalized 09-17
+   digest day, so not reopened there); The Verge's fuller 09-18 evening
+   treatment is what surfaced it to this pass. No existing thread tracks
+   OpenAI/Microsoft's own copyright exposure (only Anthropic's,
+   `anthropic-copyright-exposure`) — proposed as a new thread candidate
+   in the digest.
+
+**Verification note on item 3:** attempted to read the primary court
+filing directly per this repo's standing court-items discipline. A
+CourtListener search surfaced a same-MDL document at a guessed docket
+number that turned out to be an unrelated 12/10/25 filing
+(`gov.uscourts.nysd.612697.1066.0.pdf`, OpenAI's amended answer) — not the
+unsealed exhibit itself. A CourtListener full-text search for `"doom
+loop" Hecht` confirmed matching hits inside the same MDL's docket, but the
+exact exhibit PDF was not independently retrieved. Judged sufficient to
+run given four independent outlets (TechCrunch, Fast Company, MLQ News,
+tftc.io) quoting identical passages verbatim and Microsoft's own on-record
+response (not a denial that the documents exist) — logged as
+characterization from converging secondary sources with the docket
+identity confirmed, not as a directly-read primary document; a stronger
+future pass could pull the exact exhibit.
+
+**Near-miss correctly not logged:** TechCrunch's 09-18 "Google's new 'CC'
+is an AI agent that helps families run their households" describes the
+same CC household-agent launch `enterprise-agent-product-race` already
+logged from SiliconANGLE's 09-17 report — same feature set (email,
+calendar, permission slips, six-member cap), one day apart. Checked side
+by side and not re-logged as a new development.
+
+**Prior critic's open item, closed:** the 09-18 critic pass (checking
+09-17) left one reconciliation question open — whether
+`openai-agent-security-incident` was owned by this lens agent or another,
+after a morning draft's note said "owned by another lens agent this run."
+Resolved this run: it is this lens agent's own thread (per this run's
+brief), confirmed and corrected on both the digest and the timeline file.
+
+### Tooling
+
+WebSearch + `python3 urllib` (Googlebot User-Agent) for outlet fetches;
+`pdftotext` for the one CourtListener PDF pulled while verifying item 3
+above. Buffer: `buffer/2026-09-18-rss.jsonl` (104 rows, read in full) and
+`buffer/2026-09-19-rss.jsonl` (128 rows, landed 14:01 UTC 09-19, read in
+full — mostly a re-window of 09-18 material since its collection start
+predates the digest-day boundary, but surfaced three genuinely-new 09-18
+21:00-23:00 UTC rows: the Accenture, biology-lab and doom-loop items
+above). No `buffer/2026-09-18-gdelt.jsonl` exists this cycle;
+`buffer/2026-09-19-gdelt.jsonl`, `-sec_edgar.jsonl` and
+`-federal_register.jsonl` had not landed as of this check (only rss had,
+per this run's collector timing).
+
+### 09-19 open sweep
+
+Confirmed thin, as expected for a Saturday: no lab shipped a new model
+(Grok 4.7 remains unshipped past its own 09-19 deadline), no market
+session, no fresh policy action found beyond what's already carried in
+the 09-18 finalize above. The Bessent/He Lifeng US-China AI-safety
+meeting (this weekend, New York, multi-hour) had not yet been reported as
+concluded as of this check.
+
+## 2026-09-19 — global-capital: 09-18 finalize + 09-19 open
+
+*Run 2026-09-19 ~10:00-14:30 ET, sweeping the previously-uncovered 15:00 ET
+Friday → 05:00 ET Saturday window, finalizing 09-18's global-capital digest
+(`artifacts/digests/daily/2026-09-18-global-capital.md`, now `status:
+final`, `coverage: done`), and opening 09-19 as `building`. Transport:
+`python3 urllib` with a Googlebot UA cleared Money Stuff's and FT
+Unhedged's own author/section RSS feeds directly; CNBC, Reuters,
+MarketWatch, TheStreet and the `r.jina.ai` reader proxy (for Axios Pro
+Rata and Bloomberg Technology) all 403'd on every transport tried this
+pass — a broader block than the single CNBC-page 403 logged on 09-18's
+own finalize pass. Friday's US-close and settlement figures were
+triangulated across `tradingeconomics.com`'s own commodity/currency pages,
+the US Treasury's own daily par yield curve (mirrored live by
+stockmarketwatch.com/bonds), and two independent same-day recap sources
+(vittarthi.com, KBL Destinations' Substack) that reconcile arithmetically
+against Thursday 09-17's already-confirmed close — see the finalized
+09-18 digest's "Final close" table for the full reconciliation and its
+🔧 correction of the digest's own earlier "quad witching" mislabel
+(confirmed triple witching against every source checked).*
+
+### Coverage critic, global-capital / 2026-09-18
+
+**They led with → we missed:** No confirmed miss. **Money Stuff carries
+no Friday edition** — confirmed by checking its own author-page RSS
+history back to early August: pubDates cluster Mon-Thu with no Friday
+item in that entire span (e.g. Thu 09-10 → Mon 09-14, Thu 09-17 → next
+item would be Mon 09-21), a consistent publishing-schedule pattern, not a
+one-off gap. Checking 09-18 against Money Stuff is therefore not
+applicable — logged as such rather than a clean-or-missed check. **FT
+Unhedged's 09-18 edition** ("The QT endgame at the BoE," pubDate 09-18
+05:30 GMT) confirmed to exist via RSS; its dek ("Still trying for boring")
+concerns Bank of England quantitative tightening — a UK-specific story
+this lens's own 09-18 coverage (Fed/Treasury/oil/Virginia/Berkshire, all
+US- or Asia-focused) would not have carried regardless, and the article
+body is paywalled past the RSS headline/dek with no reader-proxy access
+this pass (see Tooling) — logged checked-not-confirmable-as-a-miss rather
+than compared blind. **Axios Pro Rata and Bloomberg Technology: not
+checkable this pass at all** — both direct-URL and reader-proxy access
+403'd on every attempt (see Tooling), a harder block than either
+benchmark's prior same-day-only or stale-cache failure modes. A wire
+backstop (WebSearch for Reuters/Bloomberg 09-18 market-news roundups)
+surfaced nothing beyond what this lens's own digest already carries.
+
+**Both covered:** N/A — no benchmark comparison was possible beyond FT
+Unhedged's existence check above.
+
+**We had → they didn't:** Virginia's data-center regulatory framework
+(`sev=major`), the SoftBank Arm-margin-loan increase, the Nvidia/Huang
+chip-doubling comments, Berkshire's Buffett-to-Howard chairman
+succession, and — added at this finalize pass — Friday's final US close
+(equities/10-year/30-year/oil/yen/gold, reconciled against the morning
+and afternoon passes' provisional reads) and the Paramount/Warner Bros.
+Discovery settlement-talks story (Friday-evening after-hours reaction),
+none reachable for comparison against any of the four named benchmarks
+this pass.
+
+### Tooling
+
+- Money Stuff's (`bloomberg.com/opinion/authors/.../matthew-s-levine.rss`)
+  and FT Unhedged's (`ft.com/unhedged?format=rss`) own RSS feeds both
+  cleared directly via `python3 urllib` with a Googlebot UA, consistent
+  with the 09-18 pass — no proxy needed, full recent-issue history
+  (title + dek + pubDate) even though article bodies stay paywalled.
+- ⚠️ **CNBC, Reuters, MarketWatch and TheStreet all 403'd on both
+  `python3 urllib` (Googlebot UA and a standard Chrome UA) and WebFetch
+  this pass** — broader than the single CNBC-page 403 logged on 09-18's
+  own morning pass. No genuine wire "settled at" sentence was directly
+  reachable for Friday's close; the finalized digest's Final-close table
+  documents the cross-validated alternative sourcing used instead
+  (`tradingeconomics.com`, the Treasury's own par yield curve via
+  stockmarketwatch.com/bonds, and two independent same-day recap sites)
+  rather than silently treating a secondary aggregator as a primary wire.
+- `r.jina.ai` reader-proxy access to both Axios Pro Rata and Bloomberg
+  Technology returned HTTP 403 this pass (previously: stale cached pages
+  on 09-18, same-day-only limitation before that) — worth re-testing
+  fresh each pass rather than assuming any prior failure mode persists.
+- `buffer/2026-09-18-sec_edgar.jsonl` (229 rows) and
+  `buffer/2026-09-18-federal_register.jsonl` (47 rows) were both grepped
+  for this lens's watchlist ORG/PERSON names (SoftBank, Berkshire,
+  Nvidia, Apollo, BlackRock, Blackstone, Brookfield, Goldman, KKR, Intel,
+  SK Hynix, Arm, Virginia, Spanberger, CoreWeave, Oracle) — zero matches
+  in sec_edgar, two federal_register hits (both ITAR/munitions-list
+  rulemaking, not relevant to this lens). `buffer/2026-09-19-rss.jsonl`
+  (128 rows) and `2026-09-18-rss.jsonl` (104 rows) were grepped the same
+  way — 8 and 13 matches respectively, all already-covered AI/tech
+  stories, nothing new for this lens. `gdelt`, `google_news_rss` and
+  `openalex` had not landed for either 09-18 or 09-19 as of this pass's
+  close.
+
+### upcoming.yaml — no action needed, already resolved by the main session
+
+`ratepayer-protection-act-floor-vote-0911` (thread
+`datacenter-backlash-capital-risk`) already carries `status: hit`,
+`resolved: 2026-09-16`, recorded 2026-09-19 by the main session against
+Clerk of the House Roll Call 312 (H.R. 9340 passed 417-3, 09-16) — no
+further ledger edit proposed here. The corresponding digest late-catch
+bullet is added to the 09-19 opening digest per the main session's
+instruction, tagged to `datacenter-backlash-capital-risk` and
+`datacenter-power-grid` (both owned by other lens agents this run, not
+written to their timeline files here).

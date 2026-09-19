@@ -10912,3 +10912,96 @@ annotations, 140 extraction passes, no broken references).
 - 2026-09-18 stays `status: building, coverage: pending/na` for all
   four lenses plus front — the next run finalizes it once ≥5h past the
   05:00 ET 09-19 close.
+
+## 2026-09-19 15:00 ET: afternoon extension of Saturday, plus the close the 10:00 ET run never reached. An unread 11,227-row news file held five of Friday evening's biggest stories
+
+**Why this entry also covers the morning.** The scheduled 10:00 ET run
+(`.agents/runs/2026-09-19T140001Z`) finalized 2026-09-18 (all four
+lenses, coverage critic for three), opened 2026-09-19, and applied its
+ledger and `threads.yaml` reconciliation. Then it ended its turn to "wait"
+for the slow `google_news_rss` lane. A headless run exits when the model
+ends its turn, so it wrote no log entry, made no commit, never refreshed
+the site briefings and never fed the graph. The 2026-09-18 15:00 ET run
+ended the same way (its last log line: "Still running and silent… I'll
+pick up when it lands"). Both receipts say `exit=0 outcome=ok`. Everything
+the two runs wrote sat uncommitted until this run's commit.
+
+**Dispatch shape:** seven sonnet agents in one foreground batch (four
+lens extensions, one ledger check, and two buffer-triage agents that split
+the unread morning `google_news_rss` file by lens), then a late-catch
+integrator, then a third triage agent on the afternoon collector's 3,246
+new rows, then four briefing writers. Collectors (`google_news_rss`, `rss`,
+`gdelt`, `--since 14:00Z`) ran detached under `nohup`. `gdelt` fetched 0
+rows again.
+
+**What the unread file held.** These are Friday-evening (09-18) stories.
+Each ran across dozens of outlets, and Friday's finalized digests missed
+all of them:
+- Google confirmed Gemini autonomously hacked three companies in a May
+  test run by Irregular (WSJ, 27 outlets).
+- *Buist v. Anthropic PBC*, 3:26-cv-10693 (N.D. Cal., filed 09-18, read
+  on CourtListener): a consumer antitrust class action calling the 09-12
+  pacing pledge collusion. `sev=major`.
+- Reuters: Altman will brief the UN Security Council.
+- FT: Oracle's ~$18bn Project Jupiter loan is stalled at 89-91 cents, and
+  OpenAI forecasts $278bn of cash burn through 2030.
+- Nscale's S-1 (confirmed on EDGAR, 09-18) and CXMT's move into NAND.
+
+They are recorded as `🕰 Caught late — Friday 09-18` sections in the 09-19
+AI and global-capital digests, with timeline entries dated 09-18. The
+final 09-18 digests were not reopened. Saturday's own news:
+- Aramco told European refiners they get no October crude.
+- The Houthis claimed Friday night's Riyadh strikes and a hit on Yanbu.
+- Anthropic's IPO slipped to November (WSJ), and Anthropic is weighing a
+  model to counter Astra (Reuters).
+- Iran sent war-ending conditions via Qatar.
+- The US and Denmark announced a Greenland security deal.
+- Russia reported cyberattacks on Moscow's Duma e-voting system.
+- Disney hired Character.AI's CEO as its first CTO.
+
+**Corrections made by the main session:**
+- The global-capital lens agent dated Friday night's Riyadh strike alerts
+  to Saturday and called them a first, although the final 09-18 world-news
+  digest already had them. Rewrote the bullet, throughline, staged
+  timeline entry and interp key (`saudi-aramco-told-at-least-two-european-refiners-t`)
+  to lead with Saturday's actual new fact: Aramco's cut.
+- Three lens throughlines carried process words into public copy. The AI
+  lead sentence read "…stories this map's own Friday pass missed." All
+  three were rewritten.
+- The `russia-ukraine-war` timeline had its 09-19 block below 09-18.
+  Reordered it.
+- Two briefing claims were fixed before `--apply`. Sword/Headspace was
+  called "finalized" but is signed, not closed. The front stated as fact
+  that the Houthi strikes "hit" Yanbu, which is only the Houthis' claim.
+- **Merge-script bug:** `/tmp/merge_entries.py` pasted each entry's slug
+  line into the thread file as body text (15 stray lines across 14
+  threads). Fixed by slicing off the first line, and the stray lines were
+  removed. A scan of all thread files found no older occurrences.
+
+**Map changes:** `last_seen` bumped on 19 threads. The
+`us-china-ai-safety-talks-mid-sept` note was extended (Bessent: "open and
+closed weight models", plus the tariff truce and rare earths). Actor
+roll-ups refreshed for `anthropic`, `google`, `oracle`. `grok-4-7-ship`
+stays `pending` through the 05:00 ET close; if nothing ships it should
+flip to `passed-silent` then, since Musk gave no new date.
+`nvidia-500b-financing-first-close` stays pending on its
+`due_precision: month`.
+
+**Thread candidates offered:** the US-Denmark Greenland deal; AI-generated
+false intelligence in military operations (CNN's near-boarding of a
+Chinese ship); wearable-AI privacy harm (the Meta glasses suit). The X
+Corp/xAI antitrust candidate went unanswered twice and drops. **Flash:**
+none.
+
+**Site and graph:**
+- `readouts --apply` 4/4 with 0 skipped, then `--export` (154).
+- `kestrel publish --push`: 66 entity pages, 753 claims, 14
+  interpretation pages, 1,408 stories. Site committed and pushed. The
+  deploy hook is still unset, so the live site won't refresh until a
+  deploy runs.
+- Graph fed for 2026-09-18 (all four ingesters). `validate.py` OK: 5,563
+  atoms, 3,747 sources, 9,250 relationships.
+
+**State at close:** 2026-09-19 is `building` / `coverage: pending` (world
+news `na`). The next run finalizes it after 10:00 ET Sunday, when the
+Bessent–He Lifeng readout and the Duma result will also be due.

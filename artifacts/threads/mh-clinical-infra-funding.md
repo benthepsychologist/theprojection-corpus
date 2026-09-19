@@ -277,6 +277,10 @@ rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
 ## ← Backstory
 
+## 2026-07-07 — Spero Health buys CleanSlate, doubling its addiction-treatment footprint and averting a shutdown
+
+- **Spero Health acquired CleanSlate Centers, doubling its outpatient addiction-treatment footprint and keeping CleanSlate's clinics from shutting down.** A consolidation deal in outpatient substance-use treatment of the kind this thread's watch line names, recorded 2026-09-19, when it resurfaced as background in Behavioral Health Business's 09-18 piece on distressed behavioral-health assets. ([Behavioral Health Business](https://bhbusiness.com/2026/07/07/spero-health-acquires-cleanslate-doubling-footprint-and-averting-shutdown/)) ⟨daily 2026-09-19⟩
+
 ## 2026-06-28 — Thread opened
 
 - **~$1.27B/14 deals to start 2026** flowing to clinician-augmentation

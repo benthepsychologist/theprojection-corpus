@@ -68,7 +68,7 @@ same window after the US close.*
 | --- | --- | --- |
 | US 10-year Treasury | 4.93%, -7.6bp on the day | closed back below 5% after touching 5.016% this morning — snapped the eight-session rising streak; CNBC ties the pullback to the oil move and a calmer post-Fed read, not Treasury's buyback campaign |
 | US 30-year Treasury | 5.28%, -6.6bp on the day | eased in step with the 10-year |
-| Brent | ~$104 close, extending Thursday's ~3.6% Saudi-restart drop | fourth straight down session; Friday-morning Asian trading takes it further, to ~$102.57 |
+| Brent | $104.82 settle (-1%), after trading as much as 3.6% lower intraday on the Saudi restart plan | fourth straight down session; Friday-morning Asian trading takes it further, to ~$102.57 |
 | S&P 500 | 7,637.72, +1.12% | premarket rebound became a real afternoon rally, held into the close |
 | Nasdaq Composite | 26,418.30, +1.69% | chipmakers led |
 | Dow | 51,779.85, +0.62% | recovers roughly a third of Wednesday's 631-point FOMC-day drop |
@@ -91,14 +91,15 @@ same window after the US close.*
   evidence the intervention is working.
   ([FXStreet](https://www.fxstreet.com/news/us-10-year-treasury-yield-nears-5-after-fed-rate-hike-middle-east-tensions-raise-inflation-fears-202609170501), [CNBC](https://www.cnbc.com/2026/09/16/stock-market-today-live-updates.html))
   <!-- k: t=treasury-long-end-intervention axis=capital-markets -->
-- **Brent fell roughly 3.6% to about $102 Thursday as Saudi Arabia
+- **Brent traded as much as 3.6% lower, near $102, Thursday before
+  settling down about 1% at $104.82, as Saudi Arabia
   announced a concrete partial-restart plan for the East-West pipeline —
   half its 7 million bpd capacity back "within days," full capacity
   within about six weeks — while bypassing the damaged section, and
   separately began routing extra crude to Asian refiners via
   ship-to-ship transfers near Oman's Sohar port, just outside Hormuz.**
-  This is the sharpest single-day oil move this map has logged recently,
-  and the first genuine de-escalation signal on the pipeline side of the
+  WTI settled down 52 cents at $101.91 (CNBC). The intraday swing is the
+  sharpest this map has logged recently, and the move is the first genuine de-escalation signal on the pipeline side of the
   war since the 09-10 drone strike — arriving one day after a Fed hike
   priced partly on oil-driven inflation risk.
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-16/saudis-seek-to-resume-half-of-key-oil-pipeline-within-days), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-16/oil-extends-slump-as-saudi-arabia-moves-to-restore-key-pipeline), [CNBC](https://www.cnbc.com/2026/09/17/oil-prices-today-wti-brent-hormuz-iran-war.html))

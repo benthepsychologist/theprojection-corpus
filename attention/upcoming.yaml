@@ -447,6 +447,12 @@ expectations:
     # grok-4.7 entry. No replacement date given — "a few more days" is read
     # here as a rough week-out estimate, not a committed date; due precision
     # downgraded from day to week accordingly.
+    #
+    # 2026-09-19 ⟨daily⟩: due today; not shipped as of ~10:15 ET. xAI's
+    # docs.x.ai model list still tops out at grok-4.6 (checked by the
+    # hot-cluster sweep). xAI's Grok Bot Galaxy event (09-15→09-17) shipped
+    # three enterprise agent products, not the model. Left pending until the
+    # day closes; the next run flips it (passed-silent or slipped).
     due: 2026-09-19
     due_precision: week
     slips: [2026-08-21, 2026-09-12]
@@ -1617,6 +1623,11 @@ expectations:
     # before the vote. The pairing is why this is worth a ledger entry
     # rather than a timeline line: it makes the election's competitive
     # shape a dated, checkable claim.
+    # 2026-09-18 15:00 ET: voting opened on schedule (three days, ~111M
+    # eligible, Yabloko off the party-list ballot as claimed); day-one
+    # irregularity reporting already running (Meduza: record online
+    # turnout, ~1M votes claimed in occupied Donetsk). Still pending until
+    # polls close 09-20 — the result is what confirms.
     status: pending
 
   - id: israel-general-election
@@ -3309,12 +3320,21 @@ expectations:
       the likelier outcome and is itself the signal.
     logged: 2026-09-05
     logged_by: curate-add
-    status: slipped
+    status: hit
+    resolved: 2026-09-16
     resolution_note: >
       Slipped 2026-09-11. The House's own Bills-This-Week feed shows H.R. 9340
       on the suspension calendar for the week of 09-14, not the week of 09-11.
       The slip is the outcome this entry predicted as likelier when it was
       logged on 09-05.
+    evidence: |
+      HIT 2026-09-16, recorded 2026-09-19 (three days late — no sweep caught
+      the vote until the 09-19 hot-cluster pass). Clerk of the House Roll
+      Call 312: H.R. 9340, "On Motion to Suspend the Rules and Pass, as
+      Amended", Passed 417-3 at 6:53 PM on 16-Sep-2026
+      (https://clerk.house.gov/evs/2026/roll312.xml, read directly by the
+      main session). Landed inside the slipped week-of-09-14 window. Senate
+      action still pending; not tracked here.
 
   - id: openai-misalignment-reporting-framework
     claim: >
@@ -3390,6 +3410,12 @@ expectations:
       on-record confirmation since the contested 09-04/09-05 Reuters
       exclusive. Moved confidence rumored -> reported. Still pending: the
       meeting itself hasn't happened as of this check.
+      2026-09-19 (afternoon ledger check): Bessent told Axios the Sunday
+      09-20 New York talks will cover "both open and closed weight models,"
+      framed as avoiding shared risks and "bifurcation of our two systems";
+      Bloomberg adds Iran, rare-earth magnet flows and a possible extension
+      of the tariff truce (expires 2026-11-10) to the agenda. Still pending
+      until a readout exists.
 
       2026-09-18 (frontier-ai lens re-check): original due (2026-09-18,
       week precision, "mid-September") slipped to the now-confirmed
@@ -3621,7 +3647,15 @@ expectations:
       under the same order, and whether OFAC extends the wind-down.
     logged: 2026-09-11
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-19
+    evidence: |
+      Lapsed as written at 12:01 a.m. EDT 2026-09-19. The 09-19 world-news
+      sweep read OFAC's own recent-actions page: its newest entry is dated
+      09-18 (unrelated Ethiopia/Russia actions), with no extension,
+      amendment or replacement of GL CC. No Turkish government response
+      found. Second-order watch (further third-country designations under
+      E.O. 13902) carries on the iran-conflict-widening thread.
 
   - id: ofac-gl-dd-winddown-0923
     claim: >
@@ -3757,5 +3791,18 @@ expectations:
     confidence: reported
     what_confirms: "the signature/veto itself, or the bill lapsing into law unsigned after 10 days"
     logged: 2026-09-17
+    logged_by: curate-add
+    status: pending
+
+  - id: pezeshkian-unga-address-0923
+    claim: "Iranian President Masoud Pezeshkian addresses the UN General Assembly in New York on 2026-09-23, after the US agreed to admit a scaled-down Iranian core delegation"
+    due: 2026-09-23
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: []
+    source: https://www.washingtonpost.com/politics/2026/09/17/us-will-let-iranian-leaders-attend-un-general-assembly-new-york/
+    confidence: reported
+    what_confirms: "the speech itself, and whether it offers or rejects terms for talks while Trump meets Gulf leaders at the same Assembly"
+    logged: 2026-09-18
     logged_by: curate-add
     status: pending

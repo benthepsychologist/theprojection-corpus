@@ -8,6 +8,11 @@ opened: 2026-08-25
 
 # Treasury's Long-End Defense — timeline
 
+## 2026-09-18 — The 10-year and 30-year both close at fresh highs since 2007 on a triple-witching Friday, still tracking the Fed/oil axis rather than the buyback
+
+- **The 10-year Treasury yield closed at 5.01% (+7bp) and the 30-year at 5.34% (+5bp) Friday, both closing at their highest levels since 2007, per the US Treasury's own daily par yield curve — a third consecutive day this thread's own test (whether Treasury's TGA-funded buyback campaign can hold the long end against a hiking, hawkish Fed) resolves against the intervention thesis, extending Wednesday's post-hike move and Thursday's partial pullback into a fresh push higher rather than a sustained retreat.** Equities closed little-changed on the same session — a quarterly triple-witching expiration (not "quad witching," corrected at this map's own 09-18 global-capital finalize; single-stock futures are not a live US contract) with an estimated $7 trillion of options and futures exposure rolling off: the S&P 500 finished at 7,627.99 (-0.13%), the Dow at 51,597.80 (-0.35%) and the Nasdaq at 26,415.85 (-0.01%). CNBC, Reuters and MarketWatch all 403'd direct fetch this pass; the yield and equity figures are cross-checked against the Treasury par curve (mirrored by stockmarketwatch.com/bonds) and two independent same-day recap sources that reconcile arithmetically against Thursday's already-confirmed close, rather than a single wire's own "settled at" sentence.
+  ([stockmarketwatch.com/bonds, citing official US Treasury data](https://stockmarketwatch.com/bonds), [vittarthi.com/markets/us](https://vittarthi.com/markets/us), [KBL Destinations](https://kbldestinations.substack.com/p/daily-market-report-9-18-26)) ⟨daily 2026-09-18⟩
+
 *Watch:* whether the "fiscal dominance" framing holds or fades, whether
 Warsh's Jackson Hole keynote addresses the TGA mechanism directly, and
 whether any auction result or yield move ties back to it explicitly.

@@ -6,6 +6,10 @@ the evidence part of the MH feed"). The What Works family's
 counter-case: the somatic modality where a real confirmatory trial
 landed after clearance and deployment — and replicated.
 
+## 2026-09-02 — A companion mechanistic paper shows SNT's antidepressant effect tracking measurable changes in brain excitability, not just symptom scores
+
+- **A paper published in *Molecular Psychiatry* on 2026-09-02, "Neurophysiological signatures of Stanford Neuromodulation Therapy in treatment resistant depression," used longitudinal TMS-EEG in a double-blind, sham-controlled Stanford trial (24 TMS-naive participants, 12 active/12 sham) to show that SNT produces progressive, site-specific increases in cortical excitability at the targeted left dorsolateral prefrontal cortex, alongside a selective reduction in subgenual anterior cingulate cortex activation — and that these neurophysiological changes track clinical improvement.** This is a mechanistic answer to exactly the question this thread's watch line names (whether the EEG-biomarker angle holds up), though it is a *different* metric (DLPFC cortical excitability / sgACC activation via TMS-EEG) than the left-ACC beta power biomarker already logged from the Kratter et al. *World Psychiatry* confirmatory RCT below — and a smaller, possibly overlapping sample (n=24 here vs. n=48 in the confirmatory trial), so treat this as a companion sub-study rather than confirmed replication of the same biomarker. Whether the two papers share underlying trial data was not established with confidence from the abstracts alone. ([Molecular Psychiatry](https://www.nature.com/articles/s41380-026-03837-4)) ⟨daily 2026-09-19⟩
+
 ## 2026 — The confirmatory trial lands, four years after clearance — and replicates at half the touted magnitude
 
 - **Kratter et al. published a sham-controlled confirmatory RCT of
