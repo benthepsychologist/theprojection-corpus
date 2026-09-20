@@ -11005,3 +11005,135 @@ none.
 **State at close:** 2026-09-19 is `building` / `coverage: pending` (world
 news `na`). The next run finalizes it after 10:00 ET Sunday, when the
 Bessent–He Lifeng readout and the Duma result will also be due.
+
+## 2026-09-20 ~10:00-11:45 ET — /daily
+
+Finalized digest-day **2026-09-19** (all four lens digests now `final`,
+the three lensed ones `coverage: done`) and opened **2026-09-20**. Eight
+agents in the opening batch (four lens sweeps, the coverage critic, the
+ledger check, the AI-financing-loop cluster, the cold rotation), two
+follow-up dispatches, four site-briefing agents, and one late
+buffer-triage agent still running at the time of writing.
+
+**Collectors.** `cloud-researcher` is present at `/workspace/cloud-researcher`
+but is **not installed** — it runs as
+`PYTHONPATH=/workspace/cloud-researcher python3 -m cloud_researcher.cli
+collect --corpus .`. (The project memory saying it "was never cloned" is
+stale.) It ran for well over an hour, heavily rate-limited: `semantic_scholar`
+and `openalex` returned 429 on nearly every term, `lda` 403'd on every term,
+`fred` skipped for a missing API key, and `fund_flow_reports`/`bis_stats`
+returned nothing. ⚠️ **`google_news_rss` did not land until 14:24 UTC —
+after every lens agent had finished.** All four independently reported the
+buffer as empty and worked from live search instead. This is a real and
+repeating structural problem: the sweeps are scheduled against a buffer that
+is not there yet.
+
+**What 09-19 gained at finalize.**
+- The **record 1,110-drone attack on Russia** overnight into the election's
+  final day (two dead, ~20 injured in the Moscow region, an apartment block
+  evacuated, the Moscow refinery hit again). ⏱ Filed to 09-19, not 09-20:
+  Moscow's night is Saturday afternoon/evening ET under the 05:00 ET
+  boundary, though Moscow and the wires treat it as Sunday's news.
+- **Trump's "AI Force" and coming AI czar**, calling AI-safety concern a
+  "hoax" — found independently by both the coverage critic and the AI lens
+  agent, and missing from every pass the digest ran during Saturday.
+- **Trump's and Netanyahu's unexplained same-evening itinerary changes.**
+- **A CCTV-affiliated attack on Anthropic's privacy policy**, flagged in the
+  bullet as resting on weaker sourcing than this lens's norm.
+- **The death of Sahil Wakode at IIT Bombay** (first reported 09-18), the
+  protests, and the 09-19 abetment-of-suicide FIR. Found on an
+  organisation-name pass; no benchmark carries Indian campus news and no
+  thread names Indian higher education.
+
+**Corrections made this run — five, all of them things that would have
+reached the public site:**
+1. **Ten bold lead phrases** in the 09-19 AI and global-capital digests
+   narrated our own coverage history ("a story Friday's own digest
+   missed"). `--pack` lifts the bold lead **verbatim** into the site's
+   briefings, so these were public copy. All rewritten. None carried
+   `interp=yes`, so no interpretation page was orphaned.
+2. The 09-19 world-news bullet **stated the Houthi strike on Yanbu as
+   fact**; neither Saudi Arabia nor Aramco has confirmed it. Now attributed.
+3. A cold-rotation figure of **$14.2M** for the DOE Genesis Mission award
+   was wrong — DOE's own release says **$11.5M**. Corrected against the
+   primary.
+4. **Homepage citations instead of articles.** The AI Force and IIT Bombay
+   write-ups cited `bloomberg.com/technology`, `ndtv.com/`,
+   `hindustantimes.com/` and similar. `readouts --apply` **rejected two
+   briefings outright** for it ("looks fabricated") — the validator working
+   exactly as intended. Replaced with resolved, fetch-verified article URLs
+   (Guardian, CBS, India Today, New Indian Express, Deccan Herald, TOI).
+5. A briefing agent attached the **OpenAI "Astra for Law" URL to the Grok
+   4.7 bullet** — a URL borrowed from an unrelated fact. Caught on review
+   before `--apply`.
+
+**Judgments recorded.**
+- **Trump's AI Force written WITHOUT `sev=major`** — an announcement of
+  intent with no order, appointee or budget, on a beat with a precedent for
+  titles without follow-through (the Sacks AI/crypto czar role went vacant).
+  This also brought 09-19 back to three `sev=major` from four, against a
+  discipline that says roughly one a day.
+- **`us-china-ai-safety-talks-mid-sept` held `pending` rather than flipped.**
+  The entry predicted talks *devoted to* AI safety; today's Bessent-Greer-He
+  Lifeng meeting is a broad trade negotiation with AI as one strand of three.
+  It reads `passed-silent`, but the meeting was still running, so it is held
+  one more run rather than resolved on partial evidence.
+- **The IIT Bombay material was left deliberately untagged** rather than
+  forced onto `ai-psychosis` or `ai-therapy-regulatory-reckoning`, whose
+  subject is AI causing harm as a product. All 26 mental-health threads were
+  read against it; none fits.
+- **A briefing agent "corrected" SpaceXAI to xAI**, believing it a data
+  artifact. Reverted — SpaceXAI is this map's deliberate usage and today's
+  buffer carries a rename story.
+
+**Ledger.** `grok-4-7-ship` → **`passed-silent`** (third missed date;
+verified against x.ai's own announcement index and docs.x.ai's model list,
+neither of which contains it; no new date given, attention moved to an
+unscheduled Grok 4.8). `softbank-openai-bridge-bond-pricing-0917` confirmed
+`passed-silent`. `russia-duma-election`, `nvidia-500b-financing-first-close`,
+`anthropic-public-s1-late-sept` all stay `pending`.
+
+**Map.** Timeline entries on `russia-ukraine-war`, `iran-conflict-widening`,
+`frontier-model-gov-review-precedent`, `ai-circular-financing-risk`,
+`nvidia-vendor-financing`, `red-sea-oil-shock`, plus four cold-rotation
+backfills (`nuclear-for-ai`, `aws-capex`, `genesis-mission`, `mistral-ai`).
+`last_seen` bumped on 34 threads; `neuromodulation-evidence` and
+`qualcomm-dragonfly` deliberately **not** bumped (genuinely silent).
+Actor roll-ups refreshed for `nvidia` (stale since 09-04) and `xai`.
+
+**Code change — in this repo, flag for Ben.** `theprojection_pipeline/readouts.py`
+`derive_sections()` sliced its `breaking`/`news` arrays **positionally**, so
+`sev=major` items past the cap were dropped silently. This is the INBOX brief
+fleet-ops returned today (originally filed by this repo into the retired
+`kestrel-ops` on 09-11 and never read). Now sorts by severity before
+truncating, with a stderr line when the pack path loses sev-marked items; a
+stable sort, so nothing changes under the cap. Verified: the front pack now
+carries **all 16** `sev=major` items where it previously kept whichever 60
+came first. ⚠️ **The brief's proposed fix does not exist** — it says to reuse
+"the existing `salience()` function"; there is no such function in the
+module, salience ranking is done by the model through each shape's prompt
+rules. Worth sending back to fleet-ops.
+
+**Site.** `readouts --apply` 4/4 after two validator rejections were fixed,
+`--export` 154. `kestrel publish --push` wrote 105 thread pages, 66 entity
+pages, 753 claims, 14 interpretations, 1,418 stories and 154 readouts; site
+repo committed and pushed clean. ⚠️ **`publish` needs `--site-dir
+/workspace/theprojection-site`** — `THEPROJECTION_SITE_DIR` is unset in this
+environment and the run fails without it. The Cloudflare deploy hook is still
+unset, so the live site will not refresh until a deploy runs. No audio
+briefing (no kokoro venv).
+
+**Graph.** All four ingesters run for 09-19; `validate.py` OK — 5,613 atoms,
+3,796 sources, 9,392 relationships, all references resolve.
+
+**Flash:** none filed. **Thread candidates:** the three from 09-19 re-offered
+for the final time (Greenland, AI-hallucinated military intelligence,
+wearable-AI privacy harm), plus two new — an AI oversight-institution seam,
+and campus mental health / institutional duty of care.
+
+**⚠️ Open at close.** A late buffer-triage agent was still running against the
+09-20 `google_news_rss` file that landed after the sweeps. It is chasing an
+Anthropic/Accenture **$2bn** evaluation figure this map has never recorded, a
+reported OpenAI Codex sandbox escape, an Anthropic publication on measuring
+AI pace, a possible xAI→SpaceXAI rename confirmation, and a Meta "Muse"
+privacy cluster. **09-20 stays `building` and these are unresolved.**

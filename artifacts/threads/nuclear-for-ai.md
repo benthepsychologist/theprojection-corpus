@@ -14,6 +14,12 @@ nearly the whole story: ~0 net-new nuclear MW power any AI datacenter yet;
 the first electrons arrive 2027 from a *restarted* reactor, not a new build.
 Watch which SMR/Gen-IV projects actually clear licensing (2030s-weighted).
 
+## 2026-09-16 — Holtec pulls its $900M IPO, naming data-center backlash as the reason nuclear could not price ⟨cold rotation⟩
+
+*Logged 2026-09-20 on the cold rotation, four days after the event.*
+
+- **Holtec International suspended its roughly $900 million US IPO, and its chief executive told the Financial Times the withdrawal was driven by investor sentiment against the AI data-center buildout rather than by anything about the nuclear business itself** — "our business, rightly or wrongly, is viewed as connected to [data centers]... that was a big factor in market sentiment against nuclear." Holtec supplies nuclear components and had earmarked proceeds to restart a mothballed Michigan plant and fund small-modular-reactor development, so the pulled listing delays capital for exactly the announced-but-unbuilt capacity this thread tracks. It is also the first instance on this record of the data-center backlash pricing a *nuclear supplier* out of the public market — the backlash reaching the financing of the power, not just the siting of the halls. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-16/nuclear-services-firm-holtec-is-said-to-suspend-us-ipo-plan), [World Nuclear News](https://www.world-nuclear-news.org/articles/holtec-postpones-market-launch)) ⟨daily 2026-09-20⟩
+
 ## 2026-09-08 — The Energy Department closes a $1.9bn loan restarting NextEra's Duane Arnold reactor, with the output pre-committed to Google
 
 - **The Energy Department closed a loan of up to $1.9 billion to restart NextEra's Duane Arnold nuclear plant in Iowa, alongside a new NextEra-Google collaboration tying the plant's output directly to AI demand.** A *closed* loan is a materially different fact from an announced one — this is money committed, not intent — and it is a rare instance of this thread's own "announced-to-operational gap" watch line actually narrowing rather than widening. ⚠️ The plant's capacity and restart-target year could not be confirmed from a 2026-dated source and are deliberately omitted rather than recalled from an earlier context. (DOE; PR Newswire; NextEra newsroom) ⟨daily 2026-09-08⟩

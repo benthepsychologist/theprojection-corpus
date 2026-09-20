@@ -327,6 +327,24 @@ def derive_sections(w, scope, limits=None):
     """
     b_cap, n_cap = limits or DISPLAY_LIMITS
     today = w["now"].isoformat()
+    # INBOX 2026-09-20 (fleet-ops, returning this repo's own 2026-09-11
+    # brief): both arrays below used to be sliced POSITIONALLY, in nothing
+    # but iteration order. On 2026-09-10 that silently dropped three
+    # `sev=major` bullets past position 60 from both `--pack lens:ai` and
+    # `--pack front`, and a briefing agent then led with a smaller version
+    # of the same story because the larger one was not in the file it was
+    # handed. Raising the cap only moves the cliff -- the docstring above
+    # records that exact lesson from the 8 -> 60 raise. So: sort by
+    # magnitude before truncating, and say on stderr what was cut.
+    #
+    # NOTE for whoever reads the brief: it proposed reusing "the existing
+    # salience() function". There is no such function in this module --
+    # salience ranking is done by the MODEL, instructed through each
+    # shape's prompt rules (see the `lead`/`bullets` rules). The only
+    # mechanical magnitude signal available here is the `sev` the curator
+    # writes on the bullet's own `<!-- k: -->` annotation, so that is what
+    # orders the slice. Ordering is a STABLE sort within each band, so
+    # under the cap nothing observable changes.
     cutoff = (w["now"] - timedelta(days=NEWS_DAYS - 1)).isoformat()
     its = scope_items(w, scope)
     seen, breaking, news = set(), [], []
@@ -341,7 +359,41 @@ def derive_sections(w, scope, limits=None):
             breaking.append(rec)
         elif i["day"] >= cutoff:
             news.append(rec)
-    return breaking[:b_cap], news[:n_cap]
+    # Only the PACK path warns. The DISPLAY limits are small on purpose --
+    # a page-top readout is a glance -- so a front page dropping sev-marked
+    # items at cap 8 is the design working, not a defect, and warning on it
+    # every run for 150+ scopes would bury the one line that matters.
+    warn = (b_cap, n_cap) == PACK_LIMITS
+    return _cap_by_severity(breaking, b_cap, scope, "breaking", warn), \
+           _cap_by_severity(news, n_cap, scope, "news", warn)
+
+
+# Highest first. Anything without a `sev` sits in the ordinary band; the
+# curator's default IS no sev at all (see /daily step 4), so that band
+# holds the large majority of items on any normal day.
+_SEV_RANK = {"flash": 0, "major": 1}
+
+
+def _cap_by_severity(recs, cap, scope, label, warn=False):
+    """Truncate to `cap`, keeping the highest-severity items.
+
+    Within a severity band the original iteration order is preserved, so
+    this is a no-op whenever `recs` already fits under the cap -- which is
+    the common case, and the reason this is safe to apply to every caller
+    including the small DISPLAY limits.
+    """
+    if len(recs) <= cap:
+        return recs
+    ordered = sorted(recs, key=lambda r: _SEV_RANK.get(r.get("sev"), 9))
+    kept, dropped = ordered[:cap], ordered[cap:]
+    if warn:
+        lost_sev = [r for r in dropped if r.get("sev")]
+        print(f"[derive_sections] {scope}: {label} truncated "
+              f"{len(recs)} -> {cap}, dropped {len(dropped)}"
+              + (f" -- INCLUDING {len(lost_sev)} sev-marked, the cap is "
+                 f"now too low for this scope" if lost_sev else ""),
+              file=sys.stderr)
+    return kept
 
 
 # ---------------------------------------------------------- fingerprinting

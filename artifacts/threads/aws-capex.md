@@ -12,6 +12,12 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-09-16 — Amazon locks in up to $8bn of Generac backup generators through 2033 ⟨cold rotation⟩
+
+*Logged 2026-09-20 on the cold rotation, four days after the filing.*
+
+- **Amazon signed a long-term generator-supply agreement with Generac, disclosed in a Generac 8-K filed 2026-09-16: $2.4 billion of deliveries scheduled across 2027 and 2028, with total purchases through 2033 potentially reaching $8 billion, plus a warrant granting Amazon up to 1.69 million Generac shares.** The warrant is the part worth noting — Amazon is taking equity in its own supplier rather than simply buying the hardware, the same vendor-entanglement pattern this map tracks on the chip side. Backup generation on this scale is a statement about how fast AWS expects to energise capacity it cannot get firm grid power for. ([SEC Form 8-K, primary](https://www.sec.gov/Archives/edgar/data/0001474735/000143774926030550/gnrc20260915_8k.htm), [Motley Fool](https://www.fool.com/investing/2026/09/17/generac-lands-24-billion-generator-deal-with-amazon/)) ⟨daily 2026-09-20⟩
+
 ## 2026-09-08 — Amazon signs a multi-generational custom-silicon deal with Qualcomm, on top of its own Trainium program
 
 - **Amazon and Qualcomm announced a multi-generational collaboration on custom AI data-centre silicon, and Qualcomm's stock rose about 10%.** Qualcomm issued Amazon a warrant for up to 25 million of its own shares as part of the deal. ⚠️ The "$4 billion" figure most headlines led with is the value of that warrant — not cash consideration, and not a disclosed contract size. Amazon already designs Trainium in-house; this reads as a second custom-silicon path rather than a deepening of the first, a capex-diversification signal for this thread.

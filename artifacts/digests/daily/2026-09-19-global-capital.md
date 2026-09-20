@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-19
-status: building
+status: final
 window_start: 2026-09-19T05:00:00-04:00
-as_of: 2026-09-19T15:40:00-04:00
-coverage: pending
+as_of: 2026-09-20T11:15:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-19
@@ -62,19 +62,19 @@ Friday-evening capital stories Friday's own digest missed. Each item
 below happened Friday and is dated to that day on its thread, even
 though it appears in today's digest.
 
-- **Roughly $18 billion of loans backing Oracle's Project Jupiter data-center campus in Doña Ana County, New Mexico — leased to OpenAI as part of the Stargate buildout — are quoted at 89 to 91 cents on the dollar by syndicate banks including Santander and Jefferies, and banks' efforts to sell the debt on to a wider pool of investors have stalled, the Financial Times reported Friday, a story Friday's own digest missed.** The reported cause is investor concern over Oracle's rising borrowing and weakening credit profile, after S&P downgraded Oracle in July to one notch above junk, forcing banks to retain more of the debt on their own balance sheets. This is the first hard market signal on this thread's own record that paper backed by an OpenAI compute lease is trading below par. Staged to `oracle-stargate-bet`, dated 09-18. ([Financial Times, via Investing.com/Reuters](https://www.investing.com/news/stock-market-news/oracles-18-billion-data-center-debt-under-pressure-ft-reports-4907951), [Finimize](https://finimize.com/content/oracles-18-billion-new-mexico-data-center-loans-hit-a-speed-bump))
+- **Roughly $18 billion of loans backing Oracle's Project Jupiter data-center campus in Doña Ana County, New Mexico — leased to OpenAI as part of the Stargate buildout — are quoted at 89 to 91 cents on the dollar by syndicate banks including Santander and Jefferies, and banks' efforts to sell the debt on to a wider pool of investors have stalled, the Financial Times reported Friday.** The reported cause is investor concern over Oracle's rising borrowing and weakening credit profile, after S&P downgraded Oracle in July to one notch above junk, forcing banks to retain more of the debt on their own balance sheets. This is the first hard market signal on this thread's own record that paper backed by an OpenAI compute lease is trading below par. Staged to `oracle-stargate-bet`, dated 09-18. ([Financial Times, via Investing.com/Reuters](https://www.investing.com/news/stock-market-news/oracles-18-billion-data-center-debt-under-pressure-ft-reports-4907951), [Finimize](https://finimize.com/content/oracles-18-billion-new-mexico-data-center-loans-hit-a-speed-bump))
   <!-- k: t=oracle-stargate-bet e=oracle axis=capital-markets -->
 
-- **OpenAI's own financial forecast, seen by the Financial Times, projects $278 billion in cumulative negative free cash flow through 2030 against roughly $350 billion in targeted 2030 revenue, a Friday story already logged on `openai-ipo-timing` but missed by Friday's own digest.** The same reporting has OpenAI on track to exhaust the $122 billion it raised in March by 2028, ahead of the $1.2 trillion-plus round already on this map's record as in early talks — the first hard cash-burn figure to sit alongside that valuation chatter. Also bears on `ai-buildout-debt-risk`'s own question of whether AI-capex spending is outrunning revenue. Already staged and merged; digest bullet only, no new timeline entry needed. ([Reuters, via Investing.com](https://www.investing.com/news/economy-news/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports-4907970))
+- **OpenAI's own financial forecast, seen by the Financial Times, projects $278 billion in cumulative negative free cash flow through 2030 against roughly $350 billion in targeted 2030 revenue.** The same reporting has OpenAI on track to exhaust the $122 billion it raised in March by 2028, ahead of the $1.2 trillion-plus round already on this map's record as in early talks — the first hard cash-burn figure to sit alongside that valuation chatter. Also bears on `ai-buildout-debt-risk`'s own question of whether AI-capex spending is outrunning revenue. Already staged and merged; digest bullet only, no new timeline entry needed. ([Reuters, via Investing.com](https://www.investing.com/news/economy-news/openai-expects-to-burn-through-almost-280-billion-by-2030-ft-reports-4907970))
   <!-- k: t=openai-ipo-timing,ai-buildout-debt-risk e=openai axis=capital-markets -->
 
-- **China's CXMT is preparing a NAND flash research-and-development production line at its new Beijing manufacturing site, Reuters reported Friday — its first reported move beyond core DRAM and into flash memory, missed by Friday's own digest.** The DRAM specialist has already discussed its NAND plans with potential customers, including a startup building AI/supercomputer storage products; timing for the line's start, and whether pilot work ever reaches mass production, remain undecided. This diversifies CXMT's product base at the same moment global memory stays tight on AI-server demand through at least 2027, challenging Samsung, SK Hynix and China's own YMTC on YMTC's home turf. Staged to `cxmt-memory-ipo`, dated 09-18. ([TechPowerUp, citing Reuters](https://www.techpowerup.com/352845/chinese-dram-maker-cxmt-is-reportedly-preparing-to-enter-the-nand-flash-market), [Tom's Hardware](https://www.tomshardware.com/pc-components/ssds/chinas-premiere-memory-maker-cxmt-eyes-producing-flash-for-ssds-report-claims-3d-nand-research-and-development-line-rumored-for-its-second-manufacturing-facility-near-beijing))
+- **China's CXMT is preparing a NAND flash research-and-development production line at its new Beijing manufacturing site, Reuters reported Friday — its first reported move beyond core DRAM and into flash memory.** The DRAM specialist has already discussed its NAND plans with potential customers, including a startup building AI/supercomputer storage products; timing for the line's start, and whether pilot work ever reaches mass production, remain undecided. This diversifies CXMT's product base at the same moment global memory stays tight on AI-server demand through at least 2027, challenging Samsung, SK Hynix and China's own YMTC on YMTC's home turf. Staged to `cxmt-memory-ipo`, dated 09-18. ([TechPowerUp, citing Reuters](https://www.techpowerup.com/352845/chinese-dram-maker-cxmt-is-reportedly-preparing-to-enter-the-nand-flash-market), [Tom's Hardware](https://www.tomshardware.com/pc-components/ssds/chinas-premiere-memory-maker-cxmt-eyes-producing-flash-for-ssds-report-claims-3d-nand-research-and-development-line-rumored-for-its-second-manufacturing-facility-near-beijing))
   <!-- k: t=cxmt-memory-ipo e=cxmt axis=capital-markets -->
 
-- **Nvidia-backed Nscale filed an S-1 with the SEC on Friday to list on the NYSE under ticker NSCL, disclosing a net loss of $1.02 billion on revenue of $140.6 million for the first half of 2026 — a roughly 1,252% jump from a year earlier — against a contracted backlog reported at up to $103 billion, a filing Friday's own digest missed.** Confirmed directly against SEC EDGAR's own filing index (Form S-1, filed 2026-09-18). The London-based AI-cloud builder's filing also discloses a $44.6 billion infrastructure deal with Anthropic and a $3.1 billion convertible-note financing in which Nvidia takes at least $1 billion — a new entrant on the "what the public market actually pays for an AI story" question `frontier-lab-ipos` already tracks. Staged to `frontier-lab-ipos`, dated 09-18. ([SEC EDGAR, primary](https://www.sec.gov/Archives/edgar/data/0002110365/000119312526395475/ck0002110365-20260918.htm), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-18/nvidia-backed-data-center-firm-nscale-files-publicly-for-us-ipo))
+- **Nvidia-backed Nscale filed an S-1 with the SEC on Friday to list on the NYSE under ticker NSCL, disclosing a net loss of $1.02 billion on revenue of $140.6 million for the first half of 2026 — a roughly 1,252% jump from a year earlier — against a contracted backlog reported at up to $103 billion.** Confirmed directly against SEC EDGAR's own filing index (Form S-1, filed 2026-09-18). The London-based AI-cloud builder's filing also discloses a $44.6 billion infrastructure deal with Anthropic and a $3.1 billion convertible-note financing in which Nvidia takes at least $1 billion — a new entrant on the "what the public market actually pays for an AI story" question `frontier-lab-ipos` already tracks. Staged to `frontier-lab-ipos`, dated 09-18. ([SEC EDGAR, primary](https://www.sec.gov/Archives/edgar/data/0002110365/000119312526395475/ck0002110365-20260918.htm), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-18/nvidia-backed-data-center-firm-nscale-files-publicly-for-us-ipo))
   <!-- k: t=frontier-lab-ipos e=nvidia,anthropic axis=capital-markets -->
 
-- **Fed Chair Kevin Warsh's own post-meeting framing of Tuesday's rate hike is drawing fresh Wall Street scrutiny, CNBC reported Friday, missed by Friday's own digest.** Warsh described the move as removing "a dose of accommodation" from the economy — a phrase Evercore ISI's Krishna Guha flagged in a client note as the one standout hawkish signal in otherwise measured remarks, read as suggesting more hikes could follow rather than a one-and-done move. Asked whether he weighs the policy rate against a neutral-rate estimate, Warsh called the concept "useful academically" but said it has "no" operational effect on his actual decisions — an explicit rejection of a standard policy framework that extends this thread's own forward-guidance-removal narrative from his Jackson Hole keynote. New specificity on the 09-16 hike itself, not a new decision.
+- **Fed Chair Kevin Warsh's own post-meeting framing of Tuesday's rate hike is drawing fresh Wall Street scrutiny, CNBC reported Friday.** Warsh described the move as removing "a dose of accommodation" from the economy — a phrase Evercore ISI's Krishna Guha flagged in a client note as the one standout hawkish signal in otherwise measured remarks, read as suggesting more hikes could follow rather than a one-and-done move. Asked whether he weighs the policy rate against a neutral-rate estimate, Warsh called the concept "useful academically" but said it has "no" operational effect on his actual decisions — an explicit rejection of a standard policy framework that extends this thread's own forward-guidance-removal narrative from his Jackson Hole keynote. New specificity on the 09-16 hike itself, not a new decision.
   ([CNBC, primary](https://www.cnbc.com/2026/09/18/three-words-from-kevin-warsh-have-wall-street-wondering-how-far-the-fed-will-go-with-rate-hikes.html))
   <!-- k: t=fed-independence-fight e=kevin-warsh axis=capital-markets -->
 
@@ -217,3 +217,43 @@ toward NAND flash for the first time, and Nvidia-backed Nscale filed
 its NYSE IPO. The weekend's bigger event, Sunday's Bessent-Greer-He
 Lifeng trade meeting in New York on AI, rare earths and the tariff
 truce, falls outside this window.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-20 ~10:30 ET, finalizing digest-day 2026-09-19.*
+
+**They led with → we missed: none confirmed.**
+
+**FT Unhedged genuinely published a Saturday edition** — "Chart of the
+Week: Higher rates, meet indebted consumers," dek "Will there be a
+tipping point?", with a real `Sat, 19 Sep 2026 09:30:04 GMT` pubDate
+confirmed via its own RSS. Its body is paywalled past the headline and
+dek even through the reader proxy, so its substance could not be read.
+On the visible title alone its subject is US consumer debt-service strain
+under higher rates, which does not overlap anything this lens carried
+Saturday. **Logged as existence-confirmed, content-not-comparable — not
+as clean and not as a miss.** That distinction is the point: we do not
+know what it argued.
+
+**Money Stuff and Axios Pro Rata are both confirmed weekday-only for this
+date, checked directly rather than assumed.** Money Stuff's newest item
+is Thursday 09-17; Axios Pro Rata's newest edition is Friday 09-18. No
+Saturday edition of either exists, so neither is a gap in our coverage.
+
+**Bloomberg Technology** led with the Trump AI-czar story and the
+China/Anthropic privacy story. Both are AI-policy rather than
+capital-markets content, so they were logged against the frontier-ai lens
+rather than force-fitted here or dropped.
+
+**We had → they didn't:** Oracle's $18bn Project Jupiter loan trading at
+89-91 cents, CXMT's move into NAND, Nscale's S-1, the Aramco October
+crude cutoff, the Ratepayer Protection Act vote and the Michigan/Ohio
+data-center campaign stories — none reachable for comparison against any
+benchmark publishing on a Saturday.
+
+**One number deliberately not treated as a discrepancy.** A market-data
+search returned an S&P level of 7,650.50 against this lens's own Friday
+close table of 7,627.99. The table's figures were triangulated across
+multiple primary sources on 09-18's finalize pass; the single secondary
+site was not. Recorded here rather than silently dropped, because a
+number that does not reconcile is worth leaving a trace of either way.

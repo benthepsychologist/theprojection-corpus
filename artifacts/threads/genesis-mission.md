@@ -13,6 +13,13 @@ this becomes the umbrella for nuclear-for-AI money. Opened 2026-07-28
 (row 23, ben-steer: "open all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md.
 
+## 2026-09-01 — The first named, costed Genesis Mission award: $11.5M for a Brookhaven-led grid foundation model ⟨cold rotation⟩
+
+*Logged 2026-09-20 on the cold rotation. The award was announced 09-01 and
+picked up in trade coverage around 09-17.*
+
+- **The Energy Department's Office of Electricity announced an $11.5 million research project led by Brookhaven National Laboratory under the Genesis Mission umbrella, building "GridFM" — an AI foundation model intended to simulate on the order of a billion grid-expansion scenarios within 24 hours** — with Stony Brook University, the New York Power Authority, LIPA, National Grid and NYSERDA as collaborators. This thread has been long on programme rhetoric and short on money actually attached to a named deliverable; this is the first award on its record with an agency, a dollar figure and a lab attached to it. ⚠️ The figure is DOE's own ($11.5M) — a secondary count of $14.2M circulated and does not match the department's release. ([DOE Office of Electricity, primary](https://www.energy.gov/oe/articles/does-office-electricity-announces-115m-genesis-mission-project-meet-growing-electricity), [Brookhaven National Laboratory](https://www.bnl.gov/newsroom/news.php?a=123136)) ⟨daily 2026-09-20⟩
+
 ## 2026-09-03 — DOE opens community input on a proposed Genesis Mission PhD Fellowship, a new program element not previously on this thread
 
 - ⚠️ **Out of window** (published 12:08 ET, roughly 3 hours before W1 opens at 15:30 ET) but a genuine, primary-sourced addition — the DOE Office of Science announced it will hold a virtual town hall September 24, 2026 to gather input on an "anticipated Genesis Mission Graduate Fellowship Pilot": 4-year PhD pathways combining "AI + discipline" dual-competency research with placements at a DOE National Laboratory and in industry. No funding figure, no launch date, and no relationship yet stated to the existing 278-award tranche or the Genesis Open Models program already on this thread — this is a planning-stage input request, not a new award. (via [HPCwire, republishing the DOE release](https://www.hpcwire.com/off-the-wire/doe-invites-community-input-on-genesis-mission-phd-fellowship-pilot/)) ⟨daily 2026-09-04⟩

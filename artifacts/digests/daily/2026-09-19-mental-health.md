@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-19
-status: building
+status: final
 window_start: 2026-09-19T05:00:00-04:00
-as_of: 2026-09-19T15:40:00-04:00
-coverage: pending
+as_of: 2026-09-20T11:30:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-19
@@ -133,3 +133,98 @@ four California AI-therapy bills still unsigned at eleven days to
 deadline, the Sword-Headspace close, the Raine v. OpenAI conference four
 days out, Timothy Westlake's still-pending confirmation, and Anthropic's
 wellbeing-grant window closing in two days.
+
+## 🕰 Caught late — the death of Sahil Wakode at IIT Bombay, from 09-18
+
+*Found on this lens's organisation-and-person name pass — no thread on
+this map names Indian higher education, so no term sweep would have
+routed it here. ⏱ The death and the institute's first statement are
+timestamped to digest-day 09-18 (first wire report 22:17 ET 09-18 /
+08:56 IST 09-19); 09-18 is already `final`, so they are recorded here
+against their own date rather than by reopening Friday. The criminal
+escalation below is 09-19's own.*
+
+- **A student at the Indian Institute of Technology Bombay, Sahil
+  Ravindra Wakode, died by suicide on the Powai campus, and protests
+  followed, with students pressing the institute's director for
+  transparency about how the disciplinary matter had been handled.**
+  Reported age differs across the wire: PTI and The Hindu give 22, The
+  News Minute gives 19. The reported count of student deaths at the
+  institute this year is **three**, per PTI's own wire and two other
+  outlets, which name the two earlier deaths; the best available figures
+  are not official but come from the Global IIT Alumni Support Group's
+  RTI-based dataset (three at IIT Bombay in 2026, six since September
+  2021, 74 across all the IITs). **No official count is published by the
+  institute, the Ministry of Education or any court** — the number is
+  attributed, not established. One outlet's headline says "fourth" while
+  its own article body says "third"; treated here as a headline error.
+- ⚠️ **The exam-cheating framing is the institute's account, not a
+  finding, and it is disputed.** Every early headline carried "caught
+  using ChatGPT in an exam," and that detail originates in **IIT Bombay's
+  own statement** — not from police, not from the family. A campus group,
+  the Ambedkar Periyar Phule Study Circle, publicly disputes it, saying
+  "the exact act... is not yet fully known," and also disputes the
+  institute's claim that no punitive action was taken, alleging Wakode
+  had been threatened with a one-year suspension. **This map should not
+  repeat the institute's account as the reason a student died**, and a
+  death by suicide is never attributable to a single factor in any case.
+- **On 09-19 the story became a criminal case of a different character.**
+  Mumbai police filed a first information report naming the exam
+  invigilator, Professor Suryanarayana Doolla, on abetment-of-suicide
+  charges, with provisions of the Scheduled Castes and Scheduled Tribes
+  (Prevention of Atrocities) Act invoked, after Wakode's father alleged
+  three months of casteist remarks. That is a materially more serious
+  allegation than the one the early coverage carried, and it is an
+  allegation — nothing is established, and the investigation is open.
+  ([New Indian Express](https://www.newindianexpress.com/states/maharashtra/2026/Sep/19/iit-bombay-student-dies-by-suicide-after-being-caught-using-chatgpt-during-exam),
+  [Deccan Herald](https://www.deccanherald.com/india/maharashtra/protests-rock-iit-bombay-after-student-dies-by-suicide-over-allegation-of-using-chatgpt-in-exam-4152011),
+  [Times of India — the FIR](https://timesofindia.indiatimes.com/city/mumbai/in-a-first-abetment-fir-filed-against-iit-bombay-professor-in-second-year-students-death/articleshow/134359955.cms),
+  [India Today — the father's allegation](https://www.indiatoday.in/cities/mumbai/story/iit-bombay-student-death-sahil-wakode-casteist-remarks-alleges-father-professor-2998728-2026-09-20))
+  <!-- k: axis=harm -->
+- **Why it is on this lens, and the honest caveat.** The AI element is
+  incidental — an alleged cheating tool, not a companion product or a
+  therapeutic claim — so it belongs to none of this lens's chatbot-harm
+  threads, and it is deliberately left untagged rather than forced onto
+  one. What makes it lens-relevant is campus mental-health provision,
+  disciplinary process as a stressor, and an institution's duty of care
+  to a student in distress. ⚠️ Whether that seam belongs on this lens at
+  all, or to a general India/education beat this map does not run, is a
+  scope question for Ben — it is offered as a thread candidate, not
+  adopted.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-20 ~10:30 ET, finalizing digest-day 2026-09-19.*
+
+**They led with → we missed: none.** All four daily benchmarks were
+fetched directly and none had published anything new since Friday 09-18 —
+a genuinely thin weekend across the whole set rather than a pass that
+could not reach them. Specifically: **Behavioral Health Business**
+(`lastBuildDate` Fri 18 Sep 20:19 UTC, newest item Friday) and **Fierce
+Healthcare** (newest item Friday 3:38pm) are confirmed weekday-only for
+this date; **MobiHealthNews** carries a Saturday-stamped
+`lastBuildDate`, but that is a feed-regeneration timestamp and every
+actual item's own pubDate is Friday or earlier; **STAT Health Tech** is
+*not* weekday-only, so its Saturday silence is logged as
+checked-and-clean — there was nothing to miss — rather than as not
+applicable.
+
+**Both covered:** N/A — no benchmark published a Saturday lead to compare
+against.
+
+**We had → they didn't:** the Disney/Character.AI CTO hire and the
+DEONCAi 3-1 trial registration, neither visible on any benchmark.
+
+**Weekly-tier benchmarks not checked this pass:** JMIR Mental Health and
+npj Digital Medicine, both weekly, are checked on the weekly critic run
+rather than every daily pass — consistent with prior practice, recorded
+so their absence here is not read as an oversight.
+
+⚠️ **One real miss, found outside the benchmark set.** The lens's own
+organisation-name pass surfaced a story no benchmark carried and no
+thread term would have caught: the death of an IIT Bombay student,
+reported 09-19 India time, and the campus and political response to it.
+It is written up in this digest under *Caught late*. The benchmark set is
+US-and-industry weighted, so a campus mental-health story in India sits
+in a blind spot the critic cannot see — which is the argument for keeping
+the name pass, not just the term sweep.

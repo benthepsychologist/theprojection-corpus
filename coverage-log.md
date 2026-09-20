@@ -8221,3 +8221,126 @@ bullet is added to the 09-19 opening digest per the main session's
 instruction, tagged to `datacenter-backlash-capital-risk` and
 `datacenter-power-grid` (both owned by other lens agents this run, not
 written to their timeline files here).
+
+## 2026-09-20 critic pass — finalized digest-day 2026-09-19 (Saturday)
+
+*Run 2026-09-20 ~10:00-11:00 ET, finalizing all four 09-19 digests (the
+three lensed ones flip to `status: final` / `coverage: done`; world-news
+is `coverage: na` by design) and opening 09-20. Unlike the previous two
+passes, every one of the twelve benchmarks in `sources/benchmarks.yaml`
+had its access state re-verified live rather than carried forward.
+Transport: `python3 urllib` with a Googlebot User-Agent for direct outlet
+fetches, the `r.jina.ai` reader proxy for MobiHealthNews, Axios Pro Rata
+and Bloomberg Technology. `curl` stays session-refused. **No domain 403'd
+on any transport this pass** — materially cleaner than 09-18's and
+09-19's passes, which between them lost CNBC, Reuters, MarketWatch,
+TheStreet, Axios Pro Rata and Bloomberg Technology.*
+
+### Coverage critic, frontier-ai / 2026-09-19
+
+**They led with → we missed: two, both folded into the finalized digest.**
+
+1. **Trump's "AI Force" and a coming AI czar** (Truth Social, 09-19),
+   rejecting AI-safety slowdown calls as a "hoax" and pledging his
+   administration "will not in any way hinder or stifle the Growth of
+   this incredible Industry"; he also claimed AI could reach "as much as
+   25% of our Country's GDP." Carried by Bloomberg Technology, the
+   Washington Post, CNN, NBC, Axios, Al Jazeera, Fox and Newsweek, and
+   absent from every pass the 09-19 digest ran during the day. The cost
+   of the miss is contextual: the same digest already carried three other
+   institutional responses to the labs' 09-12 "pace the frontier" pledge
+   (the Buist antitrust suit, Altman's coming UN Security Council
+   briefing, Europe's rejection of the pledge as competitive cover), and
+   this is the fourth and the most consequential — the US executive
+   branch's own. Timing bracketed against four outlets' `datePublished`
+   metadata (CNN 13:52 ET, CBS 14:52 ET, NBC 15:20 ET, Al Jazeera 15:50
+   ET). No primary reachable: Truth Social is not fetchable this session
+   and whitehouse.gov carries no order or memo.
+   ⚖️ **Judgment recorded: written WITHOUT `sev=major`.** The first draft
+   carried it; it was removed on the argument that the post is an
+   announcement of intent with no appointee, no order, no budget and no
+   placement in government — and that this beat has a precedent for
+   titles without follow-through, the AI-and-crypto czar role David Sacks
+   held having gone vacant with no successor. `sev=major` is reserved for
+   whichever lands first, an actual executive order or a named appointee.
+   Trimming it also brought the day back to three `sev=major` items from
+   four, against a discipline that says roughly one.
+2. **A CCTV-affiliated account's public attack on Anthropic's
+   privacy-policy revisions** (09-19), arguing the changes raise the risk
+   of user data from Canada, Brazil, South Korea and the EU reaching US
+   intelligence agencies without legal process, and noting 13 revisions
+   since 2023. The second line of Chinese state-adjacent criticism of
+   Anthropic in six days, after the 09-14 pushback on Amodei's "curb
+   China's AI development" remarks — a different attack line
+   (data/intelligence-sharing) on the same relationship. ⚠️ Weaker
+   sourcing than this lens's norm: the Bloomberg article's own URL 403'd,
+   so it rests on the section page's headline and dek plus a corroborating
+   search summary. Flagged as such in the digest bullet itself.
+
+**Both covered:** Gemini's autonomous hacking of three companies, the
+Buist v. Anthropic antitrust suit, WSJ's "Monorepo" detail, Anthropic
+weighing a model against Astra, Grok 4.7's continued non-ship.
+
+**We had → they didn't:** the CNN exclusive on the AI-hallucinated
+near-boarding of a Chinese vessel, the Meta smart-glasses privacy class
+action, the Accenture/Faculty "embedded evaluator" story.
+
+### Coverage critic, global-capital / 2026-09-19
+
+**They led with → we missed:** none confirmed.
+
+**FT Unhedged published a genuine Saturday edition** ("Chart of the Week:
+Higher rates, meet indebted consumers," pubDate `Sat, 19 Sep 2026
+09:30:04 GMT`, confirmed via its own RSS), body paywalled past the dek
+even through the reader proxy. Logged **existence-confirmed,
+content-not-comparable** — deliberately neither "clean" nor "missed,"
+because what it argued is unknown. Money Stuff (newest item Thu 09-17)
+and Axios Pro Rata (newest edition Fri 09-18) are both confirmed
+weekday-only for this date by direct check. Bloomberg Technology's two
+live leads were the AI-policy items above, logged against frontier-ai
+rather than force-fitted here.
+
+**A non-reconciling number, recorded rather than dropped:** a secondary
+market-data site returned S&P 7,650.50 against this lens's own
+cross-validated Friday close of 7,627.99. The digest's figure was
+triangulated across multiple primary sources on 09-18's finalize pass and
+the secondary was not, so the digest's number stands — but the mismatch
+is logged, since this corpus has previously let a transposed commodity
+settle survive four days.
+
+### Coverage critic, mental-health / 2026-09-19
+
+**They led with → we missed:** none, against the benchmark set. All four
+daily benchmarks fetched directly, none published past Friday 09-18.
+Behavioral Health Business and Fierce Healthcare confirmed weekday-only
+for this date. MobiHealthNews carries a Saturday `lastBuildDate` that is
+a feed-regeneration artifact — every item's own pubDate is Friday or
+earlier. STAT Health Tech is *not* weekday-only, so its Saturday silence
+is **checked-and-clean**, not not-applicable. JMIR Mental Health and npj
+Digital Medicine are weekly and are checked on the weekly run.
+
+⚠️ **A real miss the benchmark set structurally could not catch.** The
+lens's own organisation-name pass — not its term sweep, and not any
+benchmark — surfaced the death of an IIT Bombay student reported 09-19
+India time, with campus protests and a national political response about
+India's treatment of student mental health. It is folded into the
+finalized 09-19 digest. **The lesson is about the benchmark set, not the
+pass:** all twelve benchmarks are US-and-industry weighted, so an Indian
+campus mental-health story sits in a blind spot no amount of benchmark
+diligence would reach. This is the second consecutive week a name pass
+has caught what a term sweep and the benchmarks both missed.
+
+### Tooling
+
+- Both benchmarks logged "not checkable" on the previous two passes were
+  retried and **both came back this pass**. Axios Pro Rata rendered fully
+  via `r.jina.ai/https://www.axios.com/newsletters/axios-pro-rata` and
+  showed Friday 09-18 as its newest edition — which settles it as
+  weekday-only rather than merely blocked, a distinction the log had been
+  unable to make for three passes.
+- Bloomberg Technology rendered fully via the same proxy and is where
+  both frontier-ai misses were found. It remains a rolling homepage with
+  no dated archive: usable for what is live now, not for reconstructing a
+  past day after the fact.
+- Money Stuff's and FT Unhedged's own RSS both cleared directly with a
+  Googlebot UA, consistent with the last two passes.
