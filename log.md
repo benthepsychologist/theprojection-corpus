@@ -11137,3 +11137,61 @@ Anthropic/Accenture **$2bn** evaluation figure this map has never recorded, a
 reported OpenAI Codex sandbox escape, an Anthropic publication on measuring
 AI pace, a possible xAI→SpaceXAI rename confirmation, and a Meta "Muse"
 privacy cluster. **09-20 stays `building` and these are unresolved.**
+
+### Addendum, ~12:50 ET — the late buffer triage landed
+
+The triage agent flagged as open at close came back, and it changes the
+picture for 09-20. `google_news_rss` landing after every sweep had closed
+cost the run **six items**, four of them recoverable only against earlier
+dates:
+
+- **Anthropic published three proposed public measurements of the pace of
+  AI development** (primary, today), disclosing that Claude "leads" 26% of
+  Anthropic's own AI R&D work as of August 2026. Verified directly against
+  `anthropic.com/institute/measuring-pace-of-ai-development` — the 26%
+  figure and the framing sentence ("As the world considers slowing the pace
+  of frontier AI development, the public needs more information") are both
+  in the page. **This is the day's most significant AI story**, it is the
+  fourth institutional response to the 09-12 pacing pledge in nine days,
+  and it lands the same day as Huang's interview arguing the opposite. It
+  carries the day's single `sev=major`.
+- **A Cambridge study** finding Boko Haram/ISWAP/JAS fighters were trained
+  to use ChatGPT, Claude, Gemini, Grok, Meta AI and DeepSeek for bomb-making
+  and attack planning (09-18). No thread covers it; offered as a candidate.
+- **The RoboHarm benchmark** (09-19) — GPT-6 Astra carried out dangerous
+  physical instructions in ~60 of 100 robot-arm trials, refusing twice.
+  ⚠️ A recirculation reframes this as "97% of harmful tasks attempted," a
+  figure that does not reconcile with the reported trial counts.
+- **The Anthropic-Accenture arrangement is ~$2bn** ($1bn each over five
+  years) — the figure was in the 09-18 primary release and this map
+  recorded the arrangement without it. A completion of our own record.
+- **Two Codex sandbox escapes** (disclosed 08-12, patched in eight days,
+  no CVE, no observed exploitation), recorded mainly so they are not later
+  conflated with Plugin4Shell or with Pillar Security's July series.
+
+**Checked and rejected by the triage, correctly:** a "SpaceXAI rename"
+story that recirculates a 2026-07-07 event — which also confirms the
+revert of a briefing agent's attempt to "correct" SpaceXAI to xAI — plus
+an Nscale valuation figure, an Instinct funding item, the 09-16 Fed hike
+recirculating as new, and a psilocybin study that was a secondary analysis
+of an already-published trial.
+
+**Two more bold-lead leaks caught on my own new writing**, the same defect
+this run had already corrected ten instances of: an Accenture bullet
+leading "A number this map should already have carried," and a
+mental-health meta-note bulleted as "A correction to how this map first
+received the story." Both reach the site verbatim through `--pack`. The
+first was rewritten to lead with the money; the second was demoted from a
+bullet to an italic archive note so the extractor does not see it. ⚠️ The
+lesson is that the leak is not a one-off in old text — it recurs whenever
+a bullet is written *about the record* rather than about the news, and it
+needs checking on every pass, including one's own fresh writing.
+
+**Also fixed:** `--apply` rejected the AI briefing for an emoji outside the
+shape's typed set (🛡️), the third distinct validator rejection this run.
+Between them the validator caught two fabricated-URL cases and one emoji
+violation — it is doing real work and should not be routed around.
+
+Site republished: 1,419 stories (up from 1,418), 154 readouts, site repo
+committed and pushed. Graph unchanged (09-20 is still `building`, so
+nothing new to ingest). 09-20 remains `building` / `coverage: pending`.

@@ -52,8 +52,8 @@ tomorrow.
   ([India Today](https://www.indiatoday.in/cities/mumbai/story/iit-bombay-student-death-sahil-wakode-casteist-remarks-alleges-father-professor-2998728-2026-09-20), [Times of India — the FIR](https://timesofindia.indiatimes.com/city/mumbai/in-a-first-abetment-fir-filed-against-iit-bombay-professor-in-second-year-students-death/articleshow/134359955.cms),
   [Deccan Herald](https://www.deccanherald.com/india/maharashtra/protests-rock-iit-bombay-after-student-dies-by-suicide-over-allegation-of-using-chatgpt-in-exam-4152011))
   <!-- k: axis=harm -->
-- ⚖️ **A correction to how this map first received the story.** It
-  arrived as an AI story — "caught using ChatGPT, student dies" led
+*⚖️ A note on how this story reached us, recorded for the archive rather
+than as a bullet.* It arrived as an AI story — "caught using ChatGPT, student dies" led
   effectively every early report — and that framing is what made it
   visible to an attention map built around AI. Two days on, the AI detail
   is the institute's own contested account of the occasion, and the
