@@ -1,0 +1,26 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-09-20T13:30:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-09-20T19:01:15Z'
+items:
+- id: gh-release-392474065
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11064
+  ts: '2026-09-20T15:19:21Z'
+- id: gh-release-392538577
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3
+  ts: '2026-09-20T18:54:54Z'

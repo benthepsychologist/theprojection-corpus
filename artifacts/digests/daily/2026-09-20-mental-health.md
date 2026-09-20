@@ -3,13 +3,14 @@ lens: mental-health
 date: 2026-09-20
 status: building
 window_start: 2026-09-20T05:00:00-04:00
-as_of: 2026-09-20T11:00:00-04:00
+as_of: 2026-09-20T15:30:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-20
 
-*Curated agentic-interim, 05:00 ET → ~11:30 ET Sunday. A thin window with
+*Curated agentic-interim, 05:00 ET → ~15:30 ET Sunday, extended in
+place. A thin window with
 one real development, found on a name pass rather than a term sweep: all four daily benchmarks
 (Behavioral Health Business, Fierce Healthcare, MobiHealthNews, STAT
 Health Tech) were fetched directly and none has published since Friday
@@ -127,6 +128,19 @@ than as a bullet.* It arrived as an AI story — "caught using ChatGPT, student 
   `pending`, due 09-30.
 
 ## 🔄 Map changes
+
+- **The 11:30-to-15:30 ET afternoon sweep returned nothing new, and that
+  is the finding rather than a gap.** Every area on this lens was swept
+  again — AI chatbots and teen safety, the Character.AI and OpenAI
+  litigation, state AI-therapy regulation in Illinois, Nevada, Utah,
+  California and New Jersey, FDA and DEA action on psychedelics and
+  digital therapeutics, the major psychiatry journals, parity
+  enforcement, the workforce and access picture, ketamine clinics, and
+  988 — and everything that surfaced was either background explainer
+  content, an event dated well before this window, or a continuation of a
+  story already written up above. A Sunday afternoon in this lens is
+  routinely dead, and recording that plainly is more useful than padding
+  it.
 
 - No new thread opened. The IIT Bombay material is deliberately left
   untagged rather than forced onto `ai-psychosis` or

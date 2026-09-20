@@ -11195,3 +11195,113 @@ violation — it is doing real work and should not be routed around.
 Site republished: 1,419 stories (up from 1,418), 154 readouts, site repo
 committed and pushed. Graph unchanged (09-20 is still `building`, so
 nothing new to ingest). 09-20 remains `building` / `coverage: pending`.
+
+## 2026-09-20 ~15:00-16:45 ET — `/daily`: extended Sunday from 11:00 to 15:30 ET, resolved the Duma election, and caught two European elections the morning had no thread for
+
+Continuation run, not a new-day open. 09-19 was already `final` /
+`coverage: done` from the morning pass, and 09-20 is today, so nothing
+was finalizable: **09-20 stays `building` / `coverage: pending`.** Five
+opening agents (four lens sweeps plus a German-election verification),
+four site-briefing agents, one buffer-triage agent.
+
+**Collectors, fired at run start rather than alongside the sweeps.**
+`google_news_rss` took ~20 minutes and landed 1,673 new items — still
+after every lens sweep had closed, the second consecutive run where
+collection is slower than the run depending on it, but recoverable this
+time because it was fired first and triaged before close. ⚠️ **`rss`
+failed outright** on a missing `cloud_researcher/sources/feeds.yaml`,
+skipping every term while the run still exited 0. I drafted an INBOX
+brief for cloud-researcher and then **deleted it unfiled**: the bug is
+already on record there (`2026-09-20-fleet-ops-three-collector-briefs...`,
+item 1, "STILL LIVE"), and diagnosed more precisely than my draft had it
+— `rss` resolves `feeds.yaml` from the environment rather than from
+`--corpus`, so it is a path-resolution bug, not the packaging defect I
+had written up. Reading the target inbox before filing is what caught it.
+
+**What the day gained.**
+- **Russia's Duma election closed** — CEC early count (14-17% of
+  protocols) puts United Russia ~57.5%, turnout ~56.7%, the highest of
+  any post-Soviet parliamentary vote. Carried throughout as the Russian
+  state's account of its own election, because there is no independent
+  count and no full-scope observation mission. Plus Yabloko's account of
+  an observer arrested in St Petersburg on 09-19.
+- **Germany's two state elections — a near-miss.** No thread on this map
+  covers European domestic politics at all, so the AfD finishing first in
+  Mecklenburg-Vorpommern (37.9% to the SPD's 35.7%, CDU collapsing to
+  5.0%) and Die Linke taking Berlin for the first time had nowhere to
+  land and surfaced only because a world-news sweep volunteered it.
+  Offered as a thread candidate.
+- **Saudi Arabia broke its silence on the Yanbu claim** — the coalition
+  says the attempts on Yanbu, Taif, Baysh and Farasan were thwarted and a
+  Riyadh ballistic missile intercepted. This supersedes three days of
+  this map carrying "neither Saudi Arabia nor Aramco has confirmed." Also
+  new from the same source: Saudi Arabia is reportedly short of
+  interceptors and has asked France, Britain, Pakistan and Egypt for air
+  defence.
+- **Late buffer triage** added Pritzker calling AI "dangerous on the
+  level of nuclear weapons", Wes Moore defending Maryland's Anthropic
+  deal, **Los Angeles County's data-centre moratorium** (09-17 — the
+  largest jurisdiction yet in a pattern the map was tracking only in
+  small ones), Obama on AI regulation (09-18 backfill), Qatar's QIA
+  domestic-investment division, and Carney-Macron at
+  Saint-Pierre-et-Miquelon.
+
+**Corrections and rejections made this run.**
+1. ⚠️ **A briefing linked "Aramco cuts October crude to European
+   refiners" to an article about flames at Riyadh airport.** Not an agent
+   error — `--pack` takes the **first** URL from a multi-source digest
+   bullet, and the 09-19 bullet listed the Riyadh citation first even
+   though its own lead fact was the crude allocations. Fixed at the
+   source by reordering that bullet's citations so the October-crude
+   source leads; the pack then paired correctly. **Worth knowing
+   generally: on any multi-source bullet, the first citation must be the
+   one that supports the bold lead**, or the site links the wrong article.
+2. The validator **rejected my first corrected URL** because it was not
+   in the pack — working exactly as designed, and the reason the fix had
+   to go upstream into the digest rather than into the briefing.
+3. A front briefing had fused two distinct facts ("California bills
+   unsigned... **after** reporting found Google helped draft similar
+   bills"), implying a relation neither source establishes. Split.
+4. A Huawei Ascend 960 bullet (09-17) sat undated in a section about
+   today's US-China talks, where it read as today's news. Dated.
+5. **Ro Khanna's call for a treaty banning recursive self-improving AI
+   was dropped** — relayed by a sweep from a source I could not fetch,
+   and absent from the CNBC copy I verified directly. Unverified, so not
+   carried.
+6. A mental-health section headed "Research funding" contained a trial
+   registration, which is not funding. Retitled.
+7. The triage correctly rejected a WSJ "Biggest AI Rivals Agree They Need
+   to Slow It Down" headline as recirculating the 09-12 pledge, a
+   Character.AI suit from May 2026 folded into a weekend roundup, and
+   four other stale items.
+
+**Ledger.** `russia-duma-election` → **`hit`** (resolved on the election
+happening as claimed, explicitly **not** on the accuracy of the
+state-reported shares). `us-china-ai-safety-talks-mid-sept` **held a
+second run** — the Bessent-Greer-He Lifeng meeting was still in session
+at 15:30 ET with no readout, and it is a broad trade negotiation with AI
+as one of three strands rather than talks *devoted to* AI safety. 📋 It
+resolves next run either way; holding it a third time would be the ledger
+failing at its own job. `nvidia-500b-financing-first-close` stays
+`pending`, five days past due, with a note added so Nvidia's bilateral
+OpenAI financing is not later mistaken for a first close under the
+six-institution platform.
+
+**Map.** Timeline blocks on `russia-ukraine-war`, `red-sea-oil-shock`,
+`yemen-civil-war`, `frontier-model-gov-review-precedent`. `last_seen`
+bumped on `yemen-civil-war` (the rest were already at 09-20 from the
+morning). Actor roll-up refreshed for `china` — stale since 08-24, and
+today put AI on its bilateral agenda with open-weight models in scope.
+
+**Site.** `readouts --apply` 4/4 with zero skips after the URL fix,
+`--export` 154, `kestrel publish --push` wrote 105 thread pages, 66
+entity pages, 753 claims, 14 interpretations, **1,423 stories** (up from
+1,419) and 122 map pages; site repo committed and pushed. Graph
+`validate.py` clean at 5,613 atoms / 9,392 relationships; **no ingestion
+run, because 09-20 is still `building`** — it feeds once the day
+finalizes.
+
+💡 **Open for Ben: the German/European elections thread candidate.** The
+AfD has now finished first in three German states and this map has no
+thread for European domestic politics, so tonight's result was nearly
+missed entirely. Say the word and it opens.

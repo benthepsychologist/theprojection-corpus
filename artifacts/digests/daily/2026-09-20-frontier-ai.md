@@ -3,13 +3,14 @@ lens: frontier-ai
 date: 2026-09-20
 status: building
 window_start: 2026-09-20T05:00:00-04:00
-as_of: 2026-09-20T11:00:00-04:00
+as_of: 2026-09-20T15:30:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-09-20
 
-*Curated agentic-interim, 05:00 ET → ~12:30 ET Sunday. The morning's
+*Curated agentic-interim, 05:00 ET → ~15:30 ET Sunday, extended in
+place from the morning and midday passes. The morning's
 organisation-and-person name sweep across the labs, the Chinese stack and
 the semiconductor chain found nothing inside the window, because the
 deterministic collectors' news file did not land until after that sweep
@@ -141,6 +142,82 @@ here against its real date rather than by reopening a closed day.*
   later, and this map would have filed it to the wrong day had it taken
   the aggregator's date.
   <!-- k: t=openai-agent-security-incident axis=security -->
+
+## AI on the US-China table
+
+- **US and Chinese negotiators put AI guardrails on a bilateral agenda
+  for the first time this term, as one of three strands in a day-long
+  session that opened at 10:30am ET in Manhattan — and Treasury Secretary
+  Scott Bessent said the discussion would cover "both open- and
+  closed-weight models."** That scope is the substantive part for this
+  lens. Open-weight models, whose parameters can be downloaded and
+  fine-tuned by anyone, are where Chinese labs have taken real US
+  commercial share on price against closed-weight products from Anthropic,
+  OpenAI and others, so a guardrails conversation that includes them is a
+  conversation about the distribution channel the US does not control.
+  Bessent's framing of the American position: "The United States remains
+  the leader in AI. And we are open to discussions on avoiding shared
+  risks and avoiding bifurcation of our two systems." He has separately
+  called for the two governments to agree guardrails aimed at keeping
+  capable models out of the hands of malign non-state actors — described
+  as "not a treaty, but a framework for sustained communication" — and
+  Reuters reports the guardrails item was put on the agenda after
+  reported security breaches involving AI models, which is the same
+  causal chain running through this lens all week. ⚠️ Everything above is
+  a stated position going into the meeting, not an outcome: as of 15:30
+  ET the session was still running with no joint statement and no
+  Treasury, USTR or MOFCOM readout. Whether any AI-specific track,
+  working group or language survives into the 09-24 Trump-Xi summit is
+  unresolved, and this map's ledger entry expecting talks *devoted to* AI
+  safety is deliberately still open on exactly that question.
+  ([Reuters via CNBC](https://www.cnbc.com/2026/09/20/bessent-chinas-he-to-hold-talks-on-ai-trade-minerals-reuters.html))
+  <!-- k: t=frontier-model-gov-review-precedent,chips-equity-pivot axis=policy -->
+
+## The political register shifts
+
+- **Illinois Governor JB Pritzker said on ABC's "This Week" that AI is
+  "dangerous on the level of nuclear weapons" and called for federal and
+  international regulation**, pointing to the state law he signed in July
+  requiring AI safety audits and incident disclosure. The comparison is
+  what makes it notable rather than the position: a sitting US governor
+  reaching for the nuclear analogy on a Sunday network show is a register
+  ordinarily reserved for advocacy organisations and lab-safety
+  researchers, and it lands the same weekend the industry's most exposed
+  vendor called the same concern a doomsday narrative with no scientific
+  foundation.
+  ([ABC7 Chicago](https://abc7chicago.com/story/il-governor-jb-pritzker-says-ai-is-dangerous-level-nuclear-weapons/19852245/))
+  <!-- k: axis=policy -->
+- **Maryland Governor Wes Moore, asked on CNN's "State of the Union"
+  whether he regretted his state's AI partnership with Anthropic, said
+  "Absolutely not," and called President Trump's proposed "AI Force" an
+  "AI Farce."** The two halves are worth holding together: a Democratic
+  governor defending a state-government deal with a frontier lab against
+  pushback from his own party, while mocking the administration's
+  AI-institution announcement. The "AI Force" he is answering is the one
+  filed on this map yesterday — announced with no order, appointee or
+  budget behind it.
+  ([Washington Examiner](https://www.washingtonexaminer.com/policy/technology/4735112/wes-moore-maryland-ai-deal-anthropic/))
+  <!-- k: t=frontier-model-gov-review-precedent axis=policy -->
+- 📥 **Backfill (09-18): Barack Obama said at Colgate University that
+  government "has to" regulate AI, arguing the Trump administration is
+  "not capable of or willing to" build a serious regulatory framework and
+  comparing AI oversight to that of airlines and drug companies.** The
+  remarks were made Friday and recirculated widely through the weekend;
+  filed here on 09-20 because that is when they reached this map, with
+  the Friday date attached so they are not mistaken for a Sunday event.
+  ([WFMD](https://www.wfmd.com/2026/09/20/obama-criticizes-trump-on-approach-to-ai-escalates-warning-for-stronger-regulation/))
+  <!-- k: axis=policy -->
+- 📥 **Backfill (09-17): Los Angeles County imposed a temporary
+  moratorium on new hyperscale data centres in its unincorporated areas,
+  led by Supervisor Hilda Solis, pending a permanent ordinance.** This is
+  the largest jurisdiction yet to join a pattern this map has been
+  tracking in much smaller ones — Bulloch County, Bradley County and
+  Michigan City are the moratoria already on `ai-datacenter-sites`, and
+  Los Angeles County is the most populous county in the United States.
+  The local-siting constraint on the buildout stops being a
+  small-jurisdiction story at this scale.
+  ([MyNewsLA](https://mynewsla.com/life/2026/09/17/la-county-issues-temporary-ban-on-data-centers-across-unincorporated-areas/))
+  <!-- k: t=ai-datacenter-sites axis=policy -->
 
 ## ⏳ Upcoming & expected
 
