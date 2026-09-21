@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-21 — Fitch gives SoftBank's OpenAI-funding bond a first-time BB+ rating
+
+- **Fitch assigned SoftBank Group's proposed dollar- and euro-denominated notes a first-time BB+ rating, aligned with its long-term issuer default rating, as the company funds October's follow-on OpenAI investment and retires the rest of its bridge loan.** SoftBank arranged a $40 billion bridge facility in March, drew $30 billion of it, and prepaid the entire outstanding $25.9 billion balance on September 15; Fitch warned that weaker execution or higher sustained leverage could pressure the rating. ([TradersUnion, citing Fitch Ratings](https://tradersunion.com/news/financial-news/show/3402049-softbank-openai-notes-bb-rating/)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-20 — SoftBank launches an $11bn dollar-and-euro bond sale to fund its next OpenAI payment
 
 - **SoftBank Group launched a $10 billion dollar-denominated bond (split into 3.5-, 5.5- and 7.5-year tranches) alongside a €1 billion euro-denominated bond (4- and 6-year tranches), pricing slated for 09-24 and settlement 09-29, to fund the $10 billion payment due 10-01 on its next OpenAI investment tranche.** Should it close at the intended size it would be the largest non-financial corporate bond ever sold out of Asia-Pacific/Japan, surpassing 7-Eleven's $10.93bn January-2021 deal; SoftBank has now sold almost $15bn in bonds across currencies in 2026, making it the year's largest junk-rated corporate borrower. This is the next concrete step past this thread's 09-10 entry, which had SoftBank only in a $10-20bn roadshow — the size, currency split, tranche structure and pricing date are all new. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-21/softbank-seeks-over-11-billion-in-junk-bond-deal-for-openai-bet), [Reuters via Business Standard](https://www.business-standard.com/world-news/softbank-raises-11-billion-bond-sale-to-fund-openai-investment-126092100332_1.html)) ⟨daily 2026-09-20⟩

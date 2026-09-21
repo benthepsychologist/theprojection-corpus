@@ -11,6 +11,10 @@ opened: 2026-06-28
 *Watch:* ~$500B / ~10 GW JV (OpenAI/SoftBank/Oracle/MGX); sites actually
 energized, financing/grid bottlenecks, sovereign terms, slippage.
 
+## 2026-09-21 — SB Energy delays its IPO
+
+- **SoftBank-backed SB Energy, the developer of the Ohio Stargate campus that filed for a US listing on 09-01, has delayed its IPO, the New York Times reported**; the Reuters summary gives no reason or new timetable. ([Reuters headline, via TradingView](https://www.tradingview.com/news/reuters.com,2026:newsml_FWN45D0CD:0-softbank-backed-sb-energy-delays-its-ipo-nyt/)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-17 — Crusoe raises $3.9bn at a $30.9bn valuation to fund the Abilene campus this JV leans on
 
 - **Crusoe raised $3.9bn at a $30.9bn valuation — led by Atreides Management, Mubadala Capital and Valor Equity Partners, with Nvidia, Founders Fund, GIC, Qatar Investment Authority, Radical Ventures and TPG also participating — to finance existing data-center projects including the Abilene, Texas campus that underpins Stargate, plus development of truck-transportable modular "Spark" data centers.** CEO Chase Lochmiller framed the goal as "controlling the infrastructure from electrons to tokens." New board members: Cloudflare CFO Thomas Seifert, Primary Digital Infrastructure's Bill Stein and Redwood Materials founder JB Straubel. This map carries no dedicated Crusoe entity/thread — the raise recurs here because Abilene is a named Stargate site, and in `ai-power-buildout` on the power-siting side. ([TechCrunch](https://techcrunch.com/2026/09/17/crusoe-raises-3-9b-to-build-massive-data-centers-and-small-modular-ai-factories/)) ⟨daily 2026-09-18⟩

@@ -59,6 +59,17 @@ strikes drew no confirmed American response by day's end.
   ([Reuters, via Haaretz liveblog](https://www.haaretz.com/israel-news/israel-security/2026-09-20/ty-article-live/u-s-embassy-warns-americans-of-travel-disruptions-amid-houthi-attacks/000001a0-bcaa-d310-a9bf-bfeacbde0000),
   [Times of Israel](https://www.timesofisrael.com/liveblog_entry/irans-military-command-says-it-has-been-informed-us-plans-to-resume-strikes/))
   <!-- k: t=iran-conflict-widening axis=conflict -->
+- **A tanker was struck by an unknown projectile while making an inbound
+  transit of the Strait of Hormuz in the early hours of September 21,
+  leaving two crew members with minor injuries; the vessel continued
+  under its own power to its next port of call.** The UK Maritime Trade
+  Operations centre said military authorities informed it of the strike;
+  no environmental damage was reported and no group has claimed
+  responsibility. The strike was reported at about 2am ET, inside this
+  digest-day.
+  ([MarineLink, quoting UKMTO](https://www.marinelink.com/news/tanker-hit-projectile-strait-hormuz-543118),
+  [AP via ClickOrlando](https://www.clickorlando.com/news/2026/09/21/a-projectile-strikes-a-tanker-as-it-sails-into-the-strait-of-hormuz-and-other-mideast-developments/))
+  <!-- k: t=iran-conflict-widening axis=conflict -->
 
 ## Russia-Ukraine
 
@@ -355,6 +366,9 @@ filed as a cited bullet.
 
 ## 🔄 Map changes
 
+- 🔧 Added 09-21 15:00 ET: the Hormuz tanker strike (Iran section), reported
+  at ~2am ET 09-21 and so inside this digest-day; no pass read it until the
+  afternoon hot-cluster check. Timeline entry on `iran-conflict-widening`.
 - Timeline entries staged today: `iran-conflict-widening`,
   `russia-ukraine-war` (the Duma result and the Yabloko observer account),
   and, from the evening sweep, `horn-of-africa-war` (the Ethiopian

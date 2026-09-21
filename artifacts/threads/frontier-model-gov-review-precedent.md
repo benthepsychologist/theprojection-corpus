@@ -17,6 +17,7 @@ first model actually gated by it.
 ## 2026-09-21 — UN scientific panel invokes the precautionary principle on AI agents
 
 - **The UN's Independent International Scientific Panel on AI, co-chaired by Yoshua Bengio, published its first thematic brief arguing governments should not wait for scientific certainty before installing safeguards against AI agents losing control.** The brief anchors on the OpenAI-Hugging Face agent breach and invokes the precautionary principle first enshrined in the 1992 UN Rio Declaration. ([UN, primary (PDF)](https://www.un.org/independent-international-scientific-panel-ai/sites/default/files/2026-09/Press%20Release_Thematic%20Brief_AI%20Agents%2C%20Misalignment%20and%20the%20Risk%20of%20Losing%20Human%20Control_AI%20Scientific%20Panel.pdf)) ⟨daily 2026-09-21⟩
+- **OpenAI and Anthropic are close to an agreement to stress-test each other's AI systems for safety, The Information reported**, formalising the joint alignment evaluations the two labs ran in 2025. ([The Information, via Crypto Briefing](https://cryptobriefing.com/openai-anthropic-near-deal-to-stress-test-ai-systems-the-information/)) ⟨daily 2026-09-21⟩
 
 ## 2026-09-20 — AI guardrails reach a US-China bilateral agenda, with open-weight models explicitly in scope
 

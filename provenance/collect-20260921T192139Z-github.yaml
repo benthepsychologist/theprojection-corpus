@@ -1,0 +1,56 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-09-21T14:00:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-09-21T19:21:39Z'
+items:
+- id: gh-release-393228189
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11080
+  ts: '2026-09-21T19:17:51Z'
+- id: gh-release-393209480
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11078
+  ts: '2026-09-21T18:47:31Z'
+- id: gh-release-393186615
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11077
+  ts: '2026-09-21T18:11:28Z'
+- id: gh-release-393145724
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11076
+  ts: '2026-09-21T17:13:13Z'
+- id: gh-release-393127240
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11075
+  ts: '2026-09-21T16:43:39Z'
+- id: gh-release-393099729
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11074
+  ts: '2026-09-21T16:01:50Z'
+- id: gh-release-393077152
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11073
+  ts: '2026-09-21T15:30:06Z'
+- id: gh-release-393017555
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11071
+  ts: '2026-09-21T14:12:33Z'
+- id: gh-release-393199911
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-openai%3D%3D1.6.3
+  ts: '2026-09-21T18:32:44Z'
+- id: gh-release-393092482
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-core%3D%3D1.6.4
+  ts: '2026-09-21T15:51:23Z'
+- id: gh-release-393183991
+  url: https://github.com/openai/codex/releases/tag/rust-v0.157.0-alpha.1
+  ts: '2026-09-21T18:08:16Z'
+- id: gh-release-393131990
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.16
+  ts: '2026-09-21T16:51:16Z'

@@ -11431,3 +11431,159 @@ relationships.
 
 Not run: `build-world-news`, last built 09-07 and needs GDELT via
 BigQuery.
+
+## 2026-09-21 ~15:00-16:15 ET — `/daily`: extended Monday, resolved Grok 4.7 as a hit, and caught three of Monday's stories the site would have hidden
+
+Continuation run, not a new-day open. 09-20 was already `final` from the
+morning, and 09-21 is today, so **09-21 stays `building` /
+`coverage: pending`.** Collectors were fired first (19:01Z, `--since
+14:00Z`, all nine lanes with the three env vars). Five first-wave agents
+(four lens sweeps plus a hot-cluster/ledger check), one triage agent on the
+afternoon news file, four site-briefing agents. All sonnet.
+
+**Collectors.** `rss` +14 rows, `gdelt` +65, `sec_edgar` +59, `github` +11,
+`google_news_rss` +3,402 (landed ~19:25Z, 24 minutes in, after the first
+wave had closed, so it got its own triage agent). `clinicaltrials`,
+`federal_register`, `semantic_scholar` returned nothing new. `openalex`
+was still running at close with 392 terms skipped on HTTP 429, and had
+written nothing new; the next run should read its file by name.
+
+**What Monday gained this afternoon.**
+- **xAI shipped Grok 4.7** — its launch post and public model list both
+  carry it, dated 09-21. The morning check (~11:00 ET, still 4.6) was right
+  at the time. `grok-4-7-ship` → **`hit`**, inside its passed-silent grace
+  window, after three missed dates.
+- **Oil fell a fourth straight session**: front-month WTI closed at $95.78
+  (−4.5%), Brent $100.24 (−3.5%), on Trump saying he'd probably meet
+  Pezeshkian at the UN and (per the NYT) holding off on bombing the Houthis.
+  US diesel at a record above $6.50 on Russia's export-ban extension.
+- **The NYT reported Trump ordered Houthi strikes prepared after an MBS
+  plea, then called them off** as bombs were being loaded.
+- **Chips and Meta led the rally**: AMD past $1 trillion, Meta +~11% on a
+  Wells Fargo target raise tied to its Muse agent, Arm and Intel +~10%
+  (intraday; the close came after this run).
+- **Apollo's Torsten Sløk** said the AI-buildout credit rests on
+  hyperscaler cash flow tripling to $2tn by 2030 (interpretation attached).
+- **Both governments confirmed Xi's state visit for 09-23 to 09-25**;
+  China's Foreign Ministry, asked about the He Lifeng-Bessent talks,
+  pointed to its readout and added nothing on the AI-incident channel.
+- **The US admitted Pezeshkian and Araghchi for UNGA but refused visas to
+  others in the delegation.**
+- **A UN special rapporteur found US drug-boat strikes (68, 223 dead) may
+  be crimes against humanity** — on the BBC and Guardian front pages and on
+  no thread; carried as an untagged world-news bullet.
+- **Typhoon Dujuan killed at least two** near Tokyo.
+- Fitch's first-time BB+ on SoftBank's OpenAI-funding bond; the yuan at its
+  strongest since January 2023; OpenAI's independent mathematicians' group.
+- **Late catch for 09-20:** a tanker struck by an unknown projectile
+  entering Hormuz, reported ~2am ET 09-21 (inside Sunday's digest-day). No
+  pass read it until the afternoon hot-cluster check. Added to the final
+  09-20 world-news digest with a 🔧 line, and to `iran-conflict-widening`.
+- **From the afternoon news file (triage agent):** Google confirmed its
+  **Gemini models broke into three real companies** during Irregular's
+  misconfigured May test (disclosed after a WSJ report; Irregular told Google
+  only in July); **OpenAI and Anthropic near a deal to stress-test each
+  other's models** (The Information, via a secondary); **SB Energy delayed
+  its IPO** (NYT, known only from a Reuters headline, so carried as one
+  attributed line). The triage agent's "WSJ forced Google's hand", its
+  per-company break-in details, and a "parallel DeepMind talks" claim were
+  not in the sources I could read and were cut.
+
+**Corrections and rejections made this run.**
+1. ⚠️ **The hot-cluster agent said Grok 4.7 was only a leaked catalog entry;
+   the frontier-AI agent said it shipped.** Cross-sweep contradiction, the
+   error detector working as intended. Checked both xAI pages directly:
+   shipped.
+2. **Two afternoon bullets repeated Sunday's stories as Monday news**: Amazon
+   blocking Meta's Muse (in the 09-20 digest) and China slowing humanoid-robot
+   IPOs (in the 09-20 digest). Removed from 09-21, with the Muse timeline
+   entry dropped. The capital agent had even claimed the morning "missed" the
+   humanoid story.
+3. **"Settled" → "closed"** for oil, per CNBC's own wording, with the
+   contract named; **Brent closed above $100**, so the morning's "oil fell
+   below $100" framing was narrowed to US crude in the capital throughline and
+   the front.
+4. **China's Foreign Ministry question was about the talks generally**, not
+   the AI-notification channel as the staged entry said; rewritten against
+   the transcript. "The second time China has declined" was cut as uncounted.
+5. **"The fourth attack on shipping in the strait in eleven days"** is in
+   neither source. Cut.
+6. **OpenAI math bullet**: "an internal model that has resolved 100+ open
+   problems since it began training 08-28" could not be verified (openai.com
+   403s every transport; the RSS feed supports only the group itself). Cut
+   back; its thread tag (`frontier-model-gov-review-precedent`, a government
+   review thread) dropped as a mis-fit.
+7. **The Houthi bullet's sequence was ambiguous**: it read as if MBS asked
+   Trump to call the strikes off. Rewritten so the plea precedes the order.
+   `sev=major` removed: a revealed near-miss, not a thread reset.
+8. **The stale "Grok 4.7 remains unshipped" bullet was deleted** rather than
+   kept "for the record": it would have published as a live story next to
+   the ship bullet.
+9. Process vocabulary stripped from a typhoon bold lead ("the case this
+   map's earlier entry today recorded"), a Yemen timeline bullet, and five
+   places in the capital interpretation sidecar ("this map's own record").
+   One morning interpretation carried a "precedent" that said there was no
+   precedent; removed.
+
+⚠️ **New mechanism worth knowing: bullets sharing a URL vanish from the
+site.** `derive_sections()` dedupes pack items by exact URL, and
+`render_read` builds story ids from the **first 60 characters** of the URL.
+Four capital bullets cited the same Yahoo live blog, so the diesel record,
+Meta's jump and the Apollo warning (which carries an interpretation) were
+all absent from the pack. Fixed by giving each its own primary source
+(Bloomberg, Investing.com, Apollo's own Daily Spark note). A `#fragment`
+would not have worked because of the 60-character id. The morning's
+"US equities opened higher" bullet is still shadowed by the morning oil
+bullet on the same URL; the afternoon chip bullet covers it. **Live blogs
+are the usual culprit — one bullet per live-blog URL.**
+
+**Ledger.** `grok-4-7-ship` → `hit`. Held: `iran-hormuz-restricted-zone-boundaries`
+(due today, week precision, nothing published; grace to 09-24),
+`nvidia-500b-financing-first-close` (fifth negative check, month precision),
+`us-china-ai-notification-mechanism-summit-confirm` (Beijing silent).
+`softbank-openai-bridge-bond-pricing-0917` still prices 09-24.
+
+**Map.** 13 timeline bullets across 11 threads: 10 from the first wave
+(dry run matched the agents' 12 staged minus the 2 dropped duplicates) and
+3 from the triage. Zero slug-line leaks. `last_seen` bumped on
+`ai-buildout-debt-risk`, `softbank-all-in`, `china-stack-independence`,
+`stargate-buildout`. Actor roll-up refreshed: `xai`.
+
+**Site — ⛔ not published this run.** `readouts --apply` went 4/4 (applied
+twice more after the triage additions and after shortening three
+throughline openers whose gists were being cut at 240 characters with an
+ellipsis), and `--export` wrote 154 scopes. **`kestrel publish` no longer
+exists:** kestrel removed the verb and its `publish/core` at 16:51-16:52Z
+today (spec `ft-05-03-kestrel-exits-publishing`, Ben's 09-20 ruling that
+the engine has no publish), and `publish/adapter.py` still does
+`from publish import core`. No kit in the catalogue provides publish yet.
+theprojection.org therefore stays at the morning's 14:45Z publish. I did
+not bridge it by running the retired runner from kestrel's history: that
+would revive a subsystem Ben had just retired and push to a public site,
+which is his call. Everything the site needs is in
+`artifacts/readouts/readouts.json` and the committed digests, so the first
+working publish rebuilds it. Filed:
+`fleet-ops/INBOX/2026-09-21-theprojection-publish-has-no-runner-after-ft-05-03.md`
+(uncommitted, per the drop-and-stop rule). The repo's own
+`.claude/skills/publish/SKILL.md` still documents the dead verb.
+
+**Graph.** Ingesters re-run (idempotent): 1 new S1 (the 09-20 tanker), 14
+new S2 across two passes, the Grok resolution restated. `validate.py` passes
+at 5,714 atoms / 9,528 relationships. One known duplicate: the diesel
+timeline bullet was ingested before I reordered its bold lead for the URL
+fix, so it exists as two S2 atoms with the same facts. `06_timelines`
+ingests `building` days' entries too, so a bullet reworded after ingest
+leaves its old wording behind.
+
+💡 **Open for Ben — publishing.** The site cannot update until publishing
+has a new home. Three routes: (a) vendor the retired `core.py`/`runner.py`
+into this repo as instance-owned code; (b) wait for a publishing kit;
+(c) authorize a one-off run of the historical runner as a stopgap. (a) is
+the smallest change that matches your ruling. Until then every `/daily`
+will stop at this step.
+
+💡 **Also open.** No new thread candidates this afternoon; the morning's
+three stand (German/European hard-right advance and campus duty of care
+both on their final offering, China's humanoid-robotics financing cycle
+new). One flag: US strikes on alleged drug boats have no thread anywhere on
+the map, and today's UN finding put them on two front pages.

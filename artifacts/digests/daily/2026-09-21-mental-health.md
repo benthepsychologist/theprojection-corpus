@@ -3,26 +3,35 @@ lens: mental-health
 date: 2026-09-21
 status: building
 window_start: 2026-09-21T05:00:00-04:00
-as_of: 2026-09-21T11:00:00-04:00
+as_of: 2026-09-21T15:30:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-21
 
-*Curated agentic-interim, 05:00 ET → ~11:00 ET Monday (sources: watchlist
+*Curated agentic-interim, 05:00 ET → ~15:00 ET Monday (sources: watchlist
 name sweep of Sunday's and Monday's RSS/GDELT buffers, primary-source
 fetches on the IIT Bombay story, a direct re-check of the four California
 bills against the Legislature's own bill-history pages, and Anthropic's
-own grant page). A thin Monday morning: the one live story is a carry-over
-that is not AI-shaped anymore, and the clinicaltrials/openalex research
-buffers had not landed as of this writing.*
+own grant page; afternoon pass adds a watchlist-name check of the new
+rss.jsonl rows, a re-check of the four California bills and the Raine
+JCCP 5431 docket, and searches on FTC/FDA digital-health, chatbot-company
+policy, Canada AI-in-care, and Grok litigation). A thin Monday: the
+afternoon window (~10:45 ET → ~15:00 ET) surfaced no new on-lens
+development — the IIT Bombay story continued along the lines already
+reported (institute apology, Doolla's suspension, the director's
+disputed resignation) with no new Monday-afternoon fact; the four
+California bills and the Raine litigation are unchanged; and the
+clinicaltrials/google_news_rss/gdelt/sec_edgar/federal_register/github/
+openalex/semantic_scholar buffers had not grown past this morning's row
+counts as of 15:03 ET.*
 
 ## Today's throughline
 
 IIT Bombay suspended the professor named in the abetment-of-suicide FIR
 from his administrative post and apologised for its own earlier account of
 student Sahil Wakode's death, as Mumbai's Crime Branch took over the
-investigation and protesters demanding the institute director's
+investigation. Protesters demanding the institute director's
 resignation were detained outside campus. The week's policy clock is
 otherwise unchanged: the four California bills regulating AI in
 mental-health care remain unsigned with nine days left on the governor's

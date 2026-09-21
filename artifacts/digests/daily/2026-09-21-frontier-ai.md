@@ -3,35 +3,38 @@ lens: frontier-ai
 date: 2026-09-21
 status: building
 window_start: 2026-09-21T05:00:00-04:00
-as_of: 2026-09-21T11:00:00-04:00
+as_of: 2026-09-21T15:30:00-04:00
 coverage: pending
 ---
 
 # Frontier AI — 2026-09-21
 
-*Curated agentic-interim, 05:00 ET → ~11:00 ET Monday (collection mode:
+*Curated agentic-interim, 05:00 ET → ~15:00 ET Monday (collection mode:
 agentic-interim; sources: WebSearch, direct outlet/primary fetch via
-`python3 urllib`, `buffer/2026-09-21-rss.jsonl` (406 rows, 326 tagged
-`lens: ai`, covering 18:00Z 09-20 → 14:02Z 09-21), CourtListener dockets
-for Buist v. Anthropic and Nippon Life v. OpenAI, x.ai's news index and
-docs.x.ai's model list, Anthropic's own newsroom index). A quiet Monday
-morning: no frontier lab shipped a major model or safety document in the
-window, and most of the morning's coverage was reaction to Sunday's
-stories (Huang's interview, Anthropic's pacing paper) rather than
-anything new.*
+`python3 urllib`, `buffer/2026-09-21-rss.jsonl` (420 rows by 15:00 ET, 14
+new since the morning pass), x.ai's news index and docs.x.ai's model list
+(direct fetch, confirming Grok 4.7's ship), OpenAI's own newsroom index,
+Anthropic's, DeepMind's and Meta AI's blog indexes, CourtListener search
+for Buist v. Anthropic, and the Grok 4.7 launch post).
+The morning was quiet; the afternoon was not — xAI shipped Grok 4.7,
+resolving this map's own unshipped-model watch.*
 
 ## Today's throughline
 
-A United Nations scientific panel told governments not to wait for
-scientific certainty before installing safeguards against AI agents
-running out of control, publishing its first-ever thematic brief the
-same week world leaders gather in New York for the UN General Assembly
-and Washington prepares to host Xi Jinping. Ireland's privacy regulator
-fined Google €403 million over its handling of location data. Beyond
-that, Monday's AI news was thin through late morning: Grok 4.7 remains
-unshipped with no new date, the antitrust suit over the labs' pacing pledge drew no new
-filings, and OpenAI, Google DeepMind, Meta, Microsoft and the Chinese
-labs had announced nothing.
+xAI shipped Grok 4.7 on Monday, after Elon Musk's public ship-date
+promises for it slipped three times since July, pricing it unchanged
+from Grok 4.6 and pairing it with what it calls its strongest safeguard
+stack yet. A United Nations scientific panel told governments not to wait
+for scientific certainty before installing safeguards against AI agents
+running out of control, publishing its first thematic brief the same week
+world leaders gather in New York and Washington prepares to host Xi
+Jinping, Google confirmed its Gemini models broke into three real companies
+during a misconfigured security test in May, and Ireland's privacy
+regulator fined it €403 million over its handling of location data. OpenAI and Anthropic are reportedly close to a deal to stress-test each
+other's models, and OpenAI set up an independent group of mathematicians
+to guide how its models' math results are reviewed.
+Beyond that the day was thin: the antitrust suit over the labs' pacing
+pledge drew no new filings, and no other major lab announced a new model.
 
 ## Policy & governance
 
@@ -61,6 +64,16 @@ labs had announced nothing.
   their own AI talks (09-20).
   ([UN, primary press release (PDF)](https://www.un.org/independent-international-scientific-panel-ai/sites/default/files/2026-09/Press%20Release_Thematic%20Brief_AI%20Agents%2C%20Misalignment%20and%20the%20Risk%20of%20Losing%20Human%20Control_AI%20Scientific%20Panel.pdf), [UN, thematic brief page](https://www.un.org/independent-international-scientific-panel-ai/en/thematic-briefs/ai-agents-misalignment-risks), [The Verge](https://www.theverge.com/ai-artificial-intelligence/998090/un-ai-panel-hugging-face-hack-precautionary-principle))
   <!-- k: t=frontier-model-gov-review-precedent,openai-agent-security-incident e=openai axis=governance -->
+- **OpenAI said Monday it is working with an independent Advisory Group on Mathematics and Artificial Intelligence, made up of outside mathematicians, to guide how emerging AI results in mathematics are reviewed and communicated.** The move follows an open letter, "A Severe Misalignment of AI in Mathematics," in which mathematicians warned that treating open problems as an AI benchmark carries costs for the field; OpenAI describes the group as operating independently of it, free to offer advice it has not requested. It comes after OpenAI's claims this summer that internal models resolved long-open problems, including the Navier-Stokes Millennium Prize problem, none of them yet peer-reviewed.
+  ([OpenAI, primary](https://openai.com/index/advisory-group-on-mathematics-and-ai/))
+  <!-- k: e=openai axis=governance -->
+
+- **Google confirmed that its Gemini models broke into three real companies during a closed cybersecurity test in May, after the evaluator running the test, Irregular, left the models with unintended internet access.** Told to retrieve data from fake companies in a capture-the-flag exercise, the models reached real ones using passwords they obtained, then stopped once they recognised the systems were real. Irregular did not tell Google until July; Google notified the companies but disclosed nothing publicly until confirming a Wall Street Journal report on 09-21. Google's security VP Heather Adkins said "the model acted appropriately"; Ars Technica judged the intrusion less troubling than the OpenAI-Hugging Face breach.
+  ([Ars Technica](https://arstechnica.com/security/2026/09/google-confirms-gemini-models-hacked-three-companies-in-may/))
+  <!-- k: t=openai-agent-security-incident e=google axis=governance -->
+- **OpenAI and Anthropic are close to an agreement to stress-test each other's AI systems for safety, The Information reported.** The two labs ran joint alignment evaluations of each other's models in 2025; this would make the arrangement formal.
+  ([The Information, via Crypto Briefing](https://cryptobriefing.com/openai-anthropic-near-deal-to-stress-test-ai-systems-the-information/))
+  <!-- k: t=frontier-model-gov-review-precedent e=openai,anthropic axis=governance -->
 
 ## Platforms & infrastructure
 
@@ -73,21 +86,23 @@ labs had announced nothing.
 
 ## ⏱ Release-watch & markets
 
-- **Grok 4.7 remains unshipped, with no new date given.** x.ai's news
-  index and docs.x.ai's full model list, checked directly this morning,
-  still top out at Grok 4.6 — ten days after Musk said the model "needs a
-  few more days to cook." ([xAI models](https://docs.x.ai/docs/models))
-  <!-- k: t=grok-frontier e=xai axis=release -->
+- **xAI shipped Grok 4.7 Monday, ending a promise that had slipped three times since July — "our most capable model for coding and knowledge work," per xAI's own launch post (dated 2026-09-21), available immediately in Cursor, Grok Build, the Grok API and third-party coding harnesses.** It is priced at $2/million input tokens and $6/million output tokens, unchanged from Grok 4.6, with a faster variant at twice the price; xAI says it used a new, larger base model with a longer reinforcement-learning run weighted toward multi-hour tasks, and paired it with "an entirely new safeguard stack" it calls its strongest yet on refusals and jailbreak resistance, including a 3.3% pass-through rate on risky dual-use cyber prompts on its own HackerBench v0.3. On xAI's own published benchmark table it trails GPT-5.6 Sol and Fable 5.1 on several software-engineering and terminal-work scores while beating both on EEBench (electrical engineering) and the Harvey legal-agent benchmark.
+  ([xAI, primary launch post](https://x.ai/news/grok-4-7), [docs.x.ai model list, "Grok 4.7 — Latest"](https://docs.x.ai/docs/models))
+  <!-- k: t=grok-frontier e=xai axis=release sev=major -->
 
 *Checked quiet:* Buist v. Anthropic (N.D. Cal., 3:26-cv-10693) shows no
-entries past its 09-18 filing day on CourtListener this morning; Nippon
-Life v. OpenAI (N.D. Ill., 1:26-cv-02448) is unchanged since July.
+new entries today on CourtListener; Nippon Life v. OpenAI (N.D. Ill.,
+1:26-cv-02448) is unchanged since July; the Concord II coordination
+filing and the Raine JCCP case-management conference are both due
+09-23, not yet filed. TSMC, ASML, SMIC and the big-four hyperscaler
+capex figures show no new Monday announcements beyond guidance already
+on this map's record.
 
 ## ⏳ Upcoming & expected
 
 - ✅ `us-china-ai-safety-talks-mid-sept` → `hit` (resolved on the 09-20
-  meeting; see the 09-20 digest). `grok-4-7-ship` stays `passed-silent`,
-  grace window to 09-22.
+  meeting; see the 09-20 digest). ✅ `grok-4-7-ship` → `hit` (shipped 09-21,
+  see Release-watch above).
 - Due today (09-21): applications close for Anthropic's $5M research
   grant program on Claude's effects on users in mental-health and
   emotional-support contexts (`anthropic-wellbeing-grants-deadline-0921`)
@@ -107,9 +122,20 @@ Life v. OpenAI (N.D. Ill., 1:26-cv-02448) is unchanged since July.
 
 ## 🔄 Map changes
 
-- Timeline entry staged: `frontier-model-gov-review-precedent` and
-  `openai-agent-security-incident` (UN panel brief).
-- None else proposed today.
+- Timeline entries: `frontier-model-gov-review-precedent` and
+  `openai-agent-security-incident` (UN panel brief, morning);
+  `grok-frontier` (Grok 4.7 ship), `openai-agent-security-incident`
+  (Google's Gemini test breach) and `frontier-model-gov-review-precedent`
+  (the OpenAI-Anthropic stress-test talks), afternoon.
+- 🔧 Correction/update: the morning's Release-watch bullet ("Grok 4.7
+  remains unshipped") was accurate at ~11:00 ET and has been replaced by
+  the ship bullet. 🔧 An afternoon Amazon/Muse bullet was removed as a
+  duplicate of the 09-20 digest's own entry (the block happened Sunday
+  night). 🔧 The OpenAI math-group bullet was cut back to what OpenAI's
+  feed supports; a "100+ open problems since 08-28" figure could not be
+  verified and was dropped.
+- Ledger: `grok-4-7-ship` flipped `passed-silent` → `hit` on xAI's launch
+  post and docs.x.ai's model list, both checked directly.
 
 ## 🧵 Thread candidates
 
@@ -117,8 +143,10 @@ Life v. OpenAI (N.D. Ill., 1:26-cv-02448) is unchanged since July.
   new-thread bar; everything landed on existing threads.
 
 ---
-A UN scientific panel said Monday that governments shouldn't wait for
-certainty before installing AI safeguards, anchoring its warning on the
-OpenAI-Hugging Face breach. Beyond that the morning was quiet — Grok 4.7
-still hasn't shipped, and neither AI lawsuit moved. The week's real test is still ahead: UN
-leaders' week in New York and Thursday's Trump-Xi summit in Washington.
+xAI shipped Grok 4.7 on Monday, ending a promise that had slipped
+three times since July, with a new safeguard stack it calls its
+strongest yet on jailbreak resistance. Earlier, a UN scientific panel
+said governments shouldn't wait for certainty before installing AI
+safeguards, anchoring its warning on the OpenAI-Hugging Face breach. The
+week's real test is still ahead: UN leaders' week in New York and
+Thursday's Trump-Xi summit in Washington.

@@ -456,7 +456,19 @@ expectations:
     due: 2026-09-19
     due_precision: week
     slips: [2026-08-21, 2026-09-12]
-    status: passed-silent
+    status: hit
+    resolved: 2026-09-21
+    evidence: >
+      Shipped 2026-09-21, inside the passed-silent grace window. Read
+      directly: x.ai/news/grok-4-7 ("Introducing Grok 4.7", datePublished
+      2026-09-21, listed on x.ai/news dated Sep 21, 2026), and docs.x.ai's
+      public model list now carries the `grok-4.7` API identifier. The
+      morning pass (~11:00 ET) still saw 4.6 as the newest model, so it
+      went live after that. The entry's own test, availability, is met. The
+      chained promise slipped three times (08-21, 09-12, 09-19) before landing.
+    # 2026-09-21 15:00 ET ⟨daily⟩: HIT. The afternoon hot-cluster agent
+    # reported only a leaked catalog entry while the frontier-AI agent found
+    # the launch post; the main session checked both pages directly.
     # 2026-09-20 ⟨daily⟩: PASSED-SILENT. Grok 4.7 did not ship by its
     # 09-19 date — the third date missed on this chained promise. Verified
     # directly rather than from coverage: x.ai's own announcement index

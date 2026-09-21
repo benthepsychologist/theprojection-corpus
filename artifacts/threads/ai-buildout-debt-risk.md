@@ -8,6 +8,10 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-09-21 — Apollo's chief economist ties the AI credit boom to an unproven hyperscaler cash-flow assumption
+
+- **Apollo chief economist Torsten Sløk warned Monday that the credit propping up hundreds of billions of dollars in AI data-center investment rests on one assumption Wall Street hasn't stress-tested: hyperscalers growing combined operating cash flow from $600 billion in 2025 to $2 trillion by 2030.** "If this doesn't happen, then the risk is that the AI trade weakens, with credit spreads widening, capex plans getting cut and ultimately US GDP growth slowing," Sløk wrote in a note. ([Apollo, The Daily Spark](https://www.apollo.com/wealth/insights-news/insights/daily-spark/hyperscaler-credit-rests-on-one-consensus-assumption), [Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-18 — Nvidia's Huang: production capacity, not demand, is the actual constraint
 
 - **Nvidia CEO Jensen Huang said the company will double the number of chips it sells next year, attributing the demand surge to AI's spread across an expanding range of industries and naming production capacity — not customer demand — as the actual bottleneck.** Samsung, SK Hynix and other regional chipmakers rallied on the comments in Asian trading; Nvidia's own shares extended Thursday's ~2.5% gain. This bears directly on this thread's own open question (whether the buildout is running ahead of real demand or genuinely supply-constrained) from the most interested possible source — worth weighing against, not substituting for, the demand-risk-to-construction-risk shift this thread's 09-08 entry already logged from lenders' own pricing behavior. ([Investing.com/Reuters](https://www.investing.com/news/stock-market-news/nvidia-rises-after-signaling-longer-ai-spending-runway-4878530), [Blockonomi](https://blockonomi.com/nvidia-nvda-stock-gains-2-as-ceo-huang-forecasts-doubled-chip-demand/)) ⟨daily 2026-09-18⟩

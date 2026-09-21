@@ -40,11 +40,11 @@ brent-and-wti-both-extended-sunday-evening-s-decli:
         US-Iran diplomatic signal turns out to be as thin as Trump merely
         "considering" a Pezeshkian meeting, and Iran's Revolutionary
         Guard's same-day warning about new weapons is read as the more
-        durable signal — the same headline-reversal pattern this thread
-        has recorded repeatedly this month.
+        durable signal — the same headline-reversal pattern seen
+        repeatedly this month.
       why: >
         A single mid-session diplomatic hope is a thinner basis for a
-        multi-day trend than a verified supply number; this thread's own
+        multi-day trend than a verified supply number; this month's
         record shows Brent giving back a "diplomacy" or "de-escalation"
         move within a session more than once when the underlying military
         situation did not actually change.
@@ -89,7 +89,7 @@ chinese-customs-data-released-over-the-weekend-sho:
         of Beijing's two levers (unlike a structural export-control
         regime change) if the summit produces a genuine reset.
       precedent: >
-        This map's own record of the Busan truce shows export volumes
+        The record after the Busan truce shows export volumes
         broadly recovering from a May 2025 low of 46.4 tonnes once the
         initial truce took hold — Beijing has already demonstrated it
         will use the licensing spigot in both directions, not just tighten
@@ -107,14 +107,75 @@ chinese-customs-data-released-over-the-weekend-sho:
         firm-level chilling effect that a government-to-government
         dialogue on AI does not address and would not reverse quickly
         even if licensing eased.
-      precedent: >
-        This map does not carry a directly comparable prior instance of
-        this exact dynamic resolving either way; the caution is general
-        to the asymmetry between a reversible licensing lever and a
-        non-binding dialogue proposal, not drawn from this thread's own
-        record.
   context_note: >
     Sits alongside `cross-border-rates`' and `chips-equity-pivot`'s own
     record of the Sunday meeting — this entry is about
     the one concrete, adversarial data point inside an otherwise
     cooperative-sounding readout, not a restatement of the meeting itself.
+
+apollo-chief-economist-torsten-sl-k-warned-monday:
+  mechanism: >
+    The credit financing the AI buildout — GPU-collateralized loans,
+    data-center asset-backed securities, Nvidia's own vendor-financing
+    guarantees — is underwritten against a specific forward assumption
+    rather than against cash flow that exists today: that the
+    hyperscalers (Alphabet, Meta, Amazon and peers) roughly triple their
+    collective operating cash flow, from $600bn in 2025 to $2tn by 2030,
+    to cover the capex those loans are funding. Sløk's point is that this
+    is a single assumption carrying the whole structure — if the cash
+    flow growth comes in short, the mechanism runs in reverse: lenders
+    reprice the risk (credit spreads widen), borrowers respond by cutting
+    the capex those spreads were funding, and the slowdown is large
+    enough to register in US GDP growth. It is the debt-market mirror of
+    the same over-valuation question ESMA raised from the equity side the
+    same Monday.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The assumption holds closely enough to keep credit priced
+        roughly where it is through 2026-2027 — hyperscaler cash flow
+        grows on a path consistent with the $2tn 2030 target, the
+        buildout's investment-grade-rated financing (as distinct from the
+        junk-rated, GPU-collateralized layer beneath it) keeps clearing,
+        and capex plans are not cut.
+      why: >
+        The hyperscalers funding most of the buildout's capex
+        (Google's TPU buildout, Meta's Hyperion, Amazon's own compute
+        spend) still generate the bulk of their cash flow from
+        established, profitable core businesses (search, cloud, retail)
+        rather than from the AI trade itself, giving them room to absorb
+        a slower AI-revenue ramp without the credit structure underneath
+        needing to reprice.
+      precedent: >
+        Through 2026, BlackRock's
+        GIP, KKR and sovereign-wealth co-investors continuing to buy INTO
+        hyperscaler-adjacent infrastructure (the $40bn Aligned deal, the
+        $10bn Helix venture) rather than pulling back —
+        real capital still underwriting the buildout on the assumption
+        Sløk describes, not yet a market that has repriced it.
+    - direction: >
+        The assumption breaks first at the structure's weakest, most
+        levered layer — a CoreWeave- or Oracle-shaped credit event, not a
+        hyperscaler-wide one — before spreading into the wider financing
+        stack Sløk is describing, with capex cuts following the credit
+        event rather than preceding it.
+      why: >
+        The credit market has already shown an early version of exactly
+        this mechanism: CoreWeave financed at 9.75% GPU-collateralized just as
+        Nvidia's CDS widened (07-27) and Moody's named CoreWeave and
+        Oracle together "AI's weakest credit link" (07-25) — a real
+        credit-market reaction to leverage concerns that predates today's
+        note and shows the mechanism can activate at the leveraged edge
+        of the buildout before touching the hyperscalers' own investment-
+        grade paper.
+      precedent: >
+        The 07-25 Moody's call and the 07-27 Nvidia CDS widening are a
+        directly on-point precedent — a real, dated instance of
+        credit spreads moving on AI-buildout leverage concerns, not a
+        hypothetical.
+  context_note: >
+    Landed the same Monday as ESMA's formal warning (above) that stretched
+    AI valuations risk an "abrupt" correction — read together, one is the
+    equity-market statement of the risk and this is the credit-market
+    statement of the same underlying question: whether the cash flow the
+    buildout is being financed against actually arrives on schedule.
