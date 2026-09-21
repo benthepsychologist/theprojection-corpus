@@ -1,16 +1,16 @@
 ---
 lens: mental-health
 date: 2026-09-20
-status: building
+status: final
 window_start: 2026-09-20T05:00:00-04:00
-as_of: 2026-09-20T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-21T11:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-20
 
-*Curated agentic-interim, 05:00 ET → ~15:30 ET Sunday, extended in
-place. A thin window with
+*Curated agentic-interim, 05:00 ET 09-20 → 05:00 ET 09-21 (final; evening
+window swept 09-21). A thin window with
 one real development, found on a name pass rather than a term sweep: all four daily benchmarks
 (Behavioral Health Business, Fierce Healthcare, MobiHealthNews, STAT
 Health Tech) were fetched directly and none has published since Friday
@@ -142,6 +142,20 @@ than as a bullet.* It arrived as an AI story — "caught using ChatGPT, student 
   routinely dead, and recording that plainly is more useful than padding
   it.
 
+- **The 15:30 ET Sunday → 05:00 ET Monday evening window was swept 09-21
+  and returned nothing new for this lens.** Sunday's own late RSS batch
+  (landed 19:25 ET) was searched for this lens's watchlist org and person
+  names — Kaiser, HCA, CMS, UnitedHealth, Centene, Character.AI, Hims &
+  Hers, Anthropic, OpenAI, Microsoft, and the rest — and every hit either
+  predated 15:30 ET, was a term collision (the many "Raine" matches were
+  all "Ukraine" substrings), or restated a story already on this map. The
+  California governor's own 09-20 legislative update (checked directly)
+  does not mention any of the four AI-in-mental-health bills; a direct
+  re-check of all four bills against the Legislature's own bill-history
+  pages confirms none has moved past "enrolled and presented to the
+  Governor" — no chaptering, no veto.
+  ([Governor's 9.20.2026 legislative update](https://www.gov.ca.gov/2026/09/20/governor-newsom-issues-legislative-update-9-20-2026/))
+
 - No new thread opened. The IIT Bombay material is deliberately left
   untagged rather than forced onto `ai-psychosis` or
   `ai-therapy-regulatory-reckoning`, whose subject is AI causing harm as
@@ -151,3 +165,42 @@ than as a bullet.* It arrived as an AI story — "caught using ChatGPT, student 
   candidate on the front page.
 - `state-therapy-chatbot-bans` gains a watch item, not a list entry:
   New Jersey A-4732, committee-approved 09-17.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-21 ~10:15-11:20 ET, finalizing digest-day
+2026-09-20. All four daily benchmarks re-verified live, plus a wire
+backstop and a NAME pass against `attention/watchlist.yaml` across the
+digest-day window.*
+
+**They led with → we missed: none.**
+
+Behavioral Health Business is confirmed weekday-only (`lastBuildDate`
+Friday 18 Sep 20:19 UTC). STAT Health Tech's newest item is Friday's
+geriatrician-AI piece — not weekday-only, so this is checked-and-clean,
+not not-applicable. MobiHealthNews shows nothing between Friday 18 Sep
+16:54 and Monday. **Correction to this benchmark's characterization in
+prior passes: Fierce Healthcare is not weekday-only** — its raw RSS feed
+is not chronologically ordered, and once re-sorted by actual `pubDate` it
+shows two genuine Sunday 09-20 items ("Business Group on Health taps
+BioRadar," 11:25pm; "NCQA reports 5-star health plans jumps 64%,"
+7:49pm). Neither is mental-health content, so this Sunday is still
+checked-and-clean — but the access-state correction (it publishes
+weekends; sort by `pubDate`, not feed order) should carry forward to
+future passes.
+
+A "Definium's LSD-based anxiety, depression drug scores another trial
+win" headline, syndicated with a 09-20 crawl timestamp, traces to the
+Panorama Phase 3 GAD readout published 2026-09-14 and already fully
+written up in the 09-15 digest. Ruled out before being written up.
+
+**Both covered:** the IIT Bombay/Sahil Wakode dispute, the New Jersey
+A-4732 committee vote, the four unsigned California bills, and the
+Anthropic wellbeing-grants deadline.
+
+### Tooling
+
+`python3 urllib` with a Googlebot User-Agent for BHB, Fierce and STAT;
+the `r.jina.ai` reader proxy for MobiHealthNews. `curl` remains
+session-refused. JMIR Mental Health and npj Digital Medicine (weekly
+tier) were not checked this pass, consistent with prior practice.

@@ -13,6 +13,10 @@ silicon engagements start contributing in December, one quarter out. The
 long-range target moved instead (FY2029 non-handset to $40B). Ventana's
 fate · first silicon dates.
 
+## 2026-09-14 — Qualcomm joins Cornelis Networks' open AI-rack interconnect push
+
+- **Qualcomm Technologies joined AI-networking startup Cornelis Networks in unveiling "Active Compute Fabric," an open rack-scale and cross-rack interconnect architecture for AI data centers, as Cornelis raised $205 million to bring it to market.** The collaboration, announced at the AI Infra Summit, pairs Cornelis's programmable-fabric approach (built on open standards UALink, ESUN and Ultra Ethernet) with Qualcomm's data-center push — Tony Pialis, Qualcomm's EVP/GM of Data Center, said "moving data efficiently across the rack becomes just as important as the compute itself" as AI systems scale. It is a new named ecosystem partner for Qualcomm's Dragonfly-era data-center silicon business, alongside the already-tracked Meta, Microsoft and Amazon relationships, and reads as an explicit open-standards counter to Nvidia's proprietary NVLink. ([Cornelis Networks](https://www.cornelis.com/stories/cornelis-expands-into-scaleup-networking-with-active-compute-fabric)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-08 — Amazon signs on as a second Dragonfly-era customer, and Qualcomm stock jumps ~10%
 
 - **Amazon and Qualcomm announced a multi-generational collaboration on custom AI data-centre silicon, and Qualcomm's stock rose about 10% on the news.** As part of the deal Qualcomm issued Amazon a warrant for up to 25 million of its own shares. ⚠️ The "$4 billion" figure in most headlines is the value of that warrant — not cash consideration, and not a disclosed contract size, a distinction most coverage collapsed. Amazon is a new named customer for the Dragonfly data-center silicon business this thread tracks, alongside Meta's already-disclosed Dragonfly C1000 relationship.

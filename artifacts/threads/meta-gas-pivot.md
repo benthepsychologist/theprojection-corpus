@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* Do the other three hold their clean-power pledges? Bridge or
 base? Emissions-accounting and regulatory fallout.
 
+## 2026-09-21 — Capital Power says Meta's Alberta build is drawing other US hyperscalers
+
+- **Capital Power's CEO said Meta's C$13bn (~$9bn) Alberta data-centre build has boosted the province's appeal to other US hyperscalers, and that he does not expect Meta to be the only one to build large-scale there — Capital Power is already in talks with several unnamed proponents and is pitching its Genesee Generating Station as a site.** More than 100 data centres have now been proposed for Alberta, against Canada's current handful of operating hyperscale sites. This is the first concrete "others follow" signal on this thread's core watch question (whether Meta's gas-powered pivot is a one-off bridge or the first of a base-load pattern), from the utility positioned to supply the next ones rather than from Meta itself. ([Reuters via Investing.com](https://za.investing.com/news/stock-market-news/meta-data-center-boosts-alberta-appeal-for-hyperscalers-capital-power-says-4470995), [Globe and Mail](https://www.theglobeandmail.com/business/article-capital-power-alberta-ai-hyperscalers-from-us/)) ⟨daily 2026-09-21⟩
+
 ## 2026-08-27 — First bill-impact number lands: Pembina Institute puts the Alberta gas plant's cost on ratepayers
 
 - **The Pembina Institute published an analysis putting a dollar figure on the emissions/cost side of the Alberta gas plant this thread already logged (08-02)** — the 932MW Greenlight Electricity Centre built solely to power Meta's Sturgeon County data centre could add **$270 to $460 a year** to the average Albertan's electricity bill between 2027 and 2031, driven by Alberta's "Bring Your Own Generation" rules that let data centres connect to the grid before their own generation comes online. This is the first quantified regulatory/ratepayer fallout number this thread has tracked, directly on the "emissions-accounting and regulatory fallout" watch.

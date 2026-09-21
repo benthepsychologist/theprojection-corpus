@@ -8344,3 +8344,206 @@ has caught what a term sweep and the benchmarks both missed.
   past day after the fact.
 - Money Stuff's and FT Unhedged's own RSS both cleared directly with a
   Googlebot UA, consistent with the last two passes.
+
+## 2026-09-21 — coverage critic: 09-20 finalize
+
+*Run 2026-09-21 ~10:15-11:20 ET, finalizing digest-day 2026-09-20 (Sunday)
+across all three lensed digests. Lens agents A (frontier-ai) and G
+(global-capital) were still actively extending their 09-20 digests into
+the Sunday-evening window while this pass ran; both were re-read
+immediately before writing, per this pass's instructions, rather than
+relied on from the start-of-run read. All twelve benchmarks in
+`sources/benchmarks.yaml` had their access state re-verified live.
+Transport: `python3 urllib` with a Googlebot User-Agent for every direct
+outlet fetch; the `r.jina.ai` reader proxy for MobiHealthNews, Axios Pro
+Rata, Bloomberg Technology, The Neuron and (for archive access) the AI
+Daily Brief. `curl` was not used (session-refused). **No confirmed miss
+survived to the end of this pass in any lens** — the closest candidate,
+Sunday evening's Bessent-Greer-He Lifeng readout (the proposed
+"U.S.-China AI Dialogue" notification mechanism), was independently
+verified against CNN before this pass finished, but by the time of the
+final re-read both A and G had already written it up in full — with
+fuller sourcing (CNBC, Reuters via Korea Times, and for global-capital
+the CME reopen prices and Strait-of-Hormuz reroute volume) than this
+pass's own CNN find — so it is logged below as a cross-check, not a
+miss. Three candidates surfaced by the NAME pass and wire backstop were
+run down and ruled out as stale recirculation before being written up
+anywhere; see each lens section.*
+
+### Coverage critic, frontier-ai / 2026-09-20
+
+**They led with → we missed: none confirmed.** All four daily AI
+newsletter benchmarks were checked live for a Sunday edition:
+
+- **The Rundown AI** (`therundown.ai/feed`, direct): confirmed
+  weekday-only for this date — newest item before today's Monday 10:00am
+  edition is Friday 18 Sep 14:30 ("Meta's less-creepy smart glasses"); no
+  Saturday or Sunday item exists.
+- **The Neuron** (`r.jina.ai/theneurondaily.com`): **did** publish a
+  Sunday edition (~14:00 ET Sunday, "Gemini broke into 3 real companies
+  during a safety test PLUS: Trump's AI Force..."), but its content
+  recaps two stories this map already carries under their real dates —
+  the Gemini autonomous-hacking incident and Trump's "AI Force" Truth
+  Social post, both already in this map's record (09-19 and earlier).
+  Checked-and-clean: a Sunday edition existed, and it had nothing this
+  map didn't already have.
+- **TLDR AI** (`tldr.tech/ai`): the page is a client-rendered
+  single-page app — direct `urllib` and the `r.jina.ai` proxy both
+  return the shell with no dated issue list. **Not checkable via any
+  transport available this session**, not a clean pass. Flagged so a
+  future pass doesn't read this silence as "nothing to report."
+- **The AI Daily Brief** (`aidailybrief.ai`, `/e/<date>` archive via
+  `r.jina.ai`): **dark since Thursday 09-17.** `/e/2026-09-18`,
+  `/e/2026-09-19` and `/e/2026-09-20` all 404 directly and via the reader
+  proxy; the homepage's "Today's Edition — the Main Episode" copy is
+  actually the Sep-17 edition's own text re-served under today's calendar
+  date, not a new episode. A four-day silent gap on a benchmark that
+  normally publishes Sundays too (see its own Sep-13 Sunday edition,
+  still listed) — worth a fresh check next pass rather than assuming
+  either the gap or its cause persists.
+- **Bloomberg Technology** (`r.jina.ai/bloomberg.com/technology`): 200
+  and fully readable, but returned only site chrome (nav, footer,
+  corporate links) with no article list or dated headlines this pass —
+  a new failure mode, distinct from both the earlier 403/CAPTCHA state
+  and the "readable rolling homepage" state logged in prior passes.
+  Could not check this benchmark's 09-20 coverage at all.
+
+**Cross-check, not a miss:** Sunday night's Bessent-Greer-He Lifeng
+readout — the US proposing a standing "U.S.-China AI Dialogue" incident-
+notification mechanism — was independently verified via CNN
+(`cnn.com/2026/09/20/business/us-china-trade-talks-ai-intl-hnk`,
+`datePublished` 2026-09-21T02:15:38Z / Sun 22:15 ET) before this pass's
+final re-read of the digest. By that re-read, lens agent A had already
+written it up in the digest body (with CNBC and Reuters-via-Korea-Times
+sourcing, richer than this pass's single CNN source), so it is not
+logged as a miss.
+
+**Ruled out, not written up anywhere:** a "Pennsylvania sues Character.AI
+for impersonating a doctor" headline surfaced in the NAME pass (inside a
+09-20-dated "Morning Medical Update" compilation) traces to Governor
+Shapiro's actual suit, filed **2026-05-05** (confirmed via NPR's own
+dated URL) — a five-month-old story resurfacing in a Sunday aggregator
+digest, exactly the false-positive pattern this pass's own brief warns
+against. Not a 09-20 event.
+
+**Both covered:** Huang's Sunday CBS interview, Anthropic's pace-
+measurement paper, the four "Caught late" items (Cambridge/Boko Haram,
+RoboHarm, Accenture figure, Plugin4Shell), the political-register shifts
+(Pritzker, Moore, Obama backfill, LA County backfill), and — as of the
+final re-read — both Sunday-evening additions (the Bessent AI Dialogue
+readout and Amazon blocking Meta's Muse from shopping on Amazon.com).
+
+### Coverage critic, global-capital / 2026-09-20
+
+**They led with → we missed: none confirmed.** Money Stuff, FT Unhedged,
+Axios Pro Rata and Bloomberg Technology (this lens's own benchmark
+overlap with frontier-ai plus its own macro reading) were re-checked live
+— see Tooling for each. The Houthi/Aramco/Yanbu thread, the
+Bessent-Greer-He Lifeng meeting and its Sunday-evening conclusion, and
+the CME crude reopen were all independently verified against wire
+sources (CNN, and cross-checked prices from a TradingPedia/Reuters/
+JPMorgan citation) during this pass and found to already be in the
+digest, in more complete form than this pass's own checks — lens agent G
+had the CME reopen prices (Brent $101.75, WTI $98.34) and the
+Strait-of-Hormuz reroute volume (2.9m bpd) written up before this pass's
+final re-read.
+
+**One optional pickup, not a miss:** the NAME pass (watchlist entity
+`pif`) surfaced a genuine, primary-sourced Sunday PIF announcement not in
+the digest — **PIF launched "Tawrid," a supply-chain-financing platform,
+confirmed via PIF's own press release** (pif.gov.sa), with SAMA
+sandbox-permit status and initial bank/corporate partners named. It
+parallels the Qatar Investment Authority's "Doha Investment" item already
+in the digest's *Sovereign capital* section (same theme: a Gulf sovereign
+fund standing up a new domestic-facing vehicle), but no benchmark or wire
+source treated it as a lead story, so it is offered in `C-critic.md` as
+an optional addition rather than logged as a miss.
+
+**Ruled out, not written up anywhere:** an AP wire piece ("Federal
+Reserve rate hike reflects new world of sticky inflation and faster
+growth"), syndicated to dozens of local outlets with a 09-20 crawl
+timestamp, is a retrospective analysis of the FOMC's **Wednesday 09-16**
+rate hike — already covered on this map on its own date (confirmed:
+`artifacts/digests/daily/2026-09-16-global-capital.md`). The Sunday
+timestamp is the syndication/crawl date, not a new event; ruled out
+before being written up.
+
+### Coverage critic, mental-health / 2026-09-20
+
+**They led with → we missed: none.** All four daily benchmarks re-fetched
+live and confirmed silent since Friday 09-18, consistent with the
+digest's own finding:
+
+- **Behavioral Health Business** (`bhbusiness.com/feed/`): `lastBuildDate`
+  Fri 18 Sep 20:19 UTC, newest item Friday — confirmed weekday-only.
+- **STAT Health Tech** (`statnews.com/topic/health-tech/feed/`): newest
+  item is Friday's geriatrician-AI piece (already logged as covering
+  09-18 by the prior pass); not weekday-only, so this is
+  checked-and-clean, not not-applicable.
+- **MobiHealthNews** (`r.jina.ai/mobihealthnews.com/rss.xml`): newest
+  pre-Monday item is Friday 18 Sep 16:54 ("Angle Health secures $600M");
+  no Saturday or Sunday item.
+- **Fierce Healthcare** (`fiercehealthcare.com/rss/xml`, full item list
+  re-sorted by actual `pubDate` rather than feed order — the feed itself
+  is **not** chronologically ordered): **correction to this benchmark's
+  characterization in prior passes — Fierce Healthcare is NOT
+  weekday-only.** It published two items Sunday 09-20 ("Business Group on
+  Health taps BioRadar to boost workforce readiness for emerging
+  threats," 11:25pm, and "NCQA reports number of 5-star health plans
+  jumps 64% in latest ratings," 7:49pm). Neither is mental-health/
+  behavioral-health content — general payer/quality-ratings news — so
+  this pass logs it checked-and-clean for *this* Sunday's mental-health
+  content, but the access-state note (publishes weekends; check its
+  actual pubDates, not its feed order) should carry forward.
+
+**Ruled out, not written up anywhere:** a "Definium's LSD-based anxiety,
+depression drug scores another trial win" headline (syndicated via Yahoo
+Finance/Daily Star with a 09-20 crawl timestamp) traces to the Panorama
+Phase 3 GAD readout, published **2026-09-14** (confirmed via
+endpoints.news's own `Published Time` metadata) and already fully
+written up in `artifacts/digests/daily/2026-09-15-mental-health.md`. Not
+a 09-20 event.
+
+**Both covered:** the IIT Bombay/Sahil Wakode dispute, the New Jersey
+A-4732 committee vote, the four California bills' unsigned status, and
+the Anthropic wellbeing-grants deadline.
+
+### Tooling
+
+- **Access states re-verified live, all twelve benchmarks**, cross-lens
+  summary (per-lens detail above): Money Stuff and FT Unhedged both
+  cleared directly with a Googlebot UA — Money Stuff's newest item is
+  still Thursday 09-17 with no Friday or Monday edition yet either (a
+  wider gap than the usual weekday cadence, worth a fresh look next
+  pass); FT Unhedged shows Saturday 09-19 and Monday 09-21 editions with
+  no Sunday edition, consistent with its documented pattern. Axios Pro
+  Rata rendered via the reader proxy but, per the documented
+  same-day-only trap, today's fetch shows **Monday's** "Antitrust
+  argument" edition — not usable to check Sunday, and no dated-archive
+  path exists to work around this.
+- **Two benchmarks are effectively unreadable via any transport this
+  session**, a new state for both: TLDR AI (client-rendered SPA, no
+  dated content reachable direct or via reader proxy) and Bloomberg
+  Technology (200, but nav-chrome only, no article list, via the reader
+  proxy this pass). Neither 403'd or CAPTCHA'd — they simply returned no
+  usable content. Re-test fresh next pass rather than assuming either
+  state persists.
+- **The AI Daily Brief has not published since Thursday 09-17** — a
+  four-day gap including a Sunday it normally covers (see frontier-ai
+  section). Distinct from the documented single-Monday-miss pattern
+  logged 2026-08-25; this is longer and unexplained.
+- **Fierce Healthcare's RSS feed is not in chronological order** — item
+  position in the raw feed does not track `pubDate`; any future check of
+  this benchmark should sort by `pubDate` before reading "newest N items"
+  off the feed, as this pass did, rather than trusting feed order.
+- **Two aggregator-recirculation traps were caught and ruled out before
+  being written up**, both from stories resurfacing under a 09-20 crawl
+  timestamp for events dated weeks or months earlier (the Pennsylvania/
+  Character.AI suit, filed 05-05; the Definium Panorama trial win, dated
+  09-14 and already digested 09-15) — plus a third, an AP wire
+  retrospective on the FOMC's already-covered 09-16 hike. All three are
+  exactly the "aggregator re-indexes an old story as today" pattern this
+  run's brief names as the #1 false-positive risk; none reached
+  `C-critic.md` as a miss.
+- JMIR Mental Health and npj Digital Medicine (weekly tier) were not
+  checked this pass, consistent with prior practice.

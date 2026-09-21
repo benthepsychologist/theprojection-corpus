@@ -1,0 +1,59 @@
+source_id: github
+params:
+  endpoint: https://api.github.com/repos/{owner}/{repo}/releases?per_page=10
+  since: '2026-09-20T18:00:00Z'
+  repos:
+  - vllm-project/vllm
+  - ggml-org/llama.cpp
+  - ollama/ollama
+  - huggingface/transformers
+  - pytorch/pytorch
+  - triton-lang/triton
+  - NVIDIA/TensorRT-LLM
+  - sgl-project/sglang
+  - langchain-ai/langchain
+  - anthropics/claude-code
+  - openai/codex
+  - comfyanonymous/ComfyUI
+  keyed: false
+fetched_at: '2026-09-21T14:21:34Z'
+items:
+- id: gh-release-393017555
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11071
+  ts: '2026-09-21T14:12:33Z'
+- id: gh-release-392881969
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11070
+  ts: '2026-09-21T10:49:21Z'
+- id: gh-release-392859590
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11069
+  ts: '2026-09-21T10:14:56Z'
+- id: gh-release-392838741
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11068
+  ts: '2026-09-21T09:40:53Z'
+- id: gh-release-392787774
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11067
+  ts: '2026-09-21T08:15:18Z'
+- id: gh-release-392586685
+  url: https://github.com/ggml-org/llama.cpp/releases/tag/b11065
+  ts: '2026-09-20T21:52:35Z'
+- id: gh-release-392538577
+  url: https://github.com/langchain-ai/langchain/releases/tag/langchain-typesafe%3D%3D0.0.1a3
+  ts: '2026-09-20T18:54:54Z'
+- id: gh-release-392689673
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.14
+  ts: '2026-09-21T04:09:08Z'
+- id: gh-release-392654962
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.13
+  ts: '2026-09-21T02:15:06Z'
+- id: gh-release-392619701
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.12
+  ts: '2026-09-21T00:06:46Z'
+- id: gh-release-392600339
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.11
+  ts: '2026-09-20T22:49:40Z'
+- id: gh-release-392577676
+  url: https://github.com/openai/codex/releases/tag/rust-v0.156.0-alpha.10
+  ts: '2026-09-20T21:18:52Z'
+- id: gh-release-392485194
+  url: https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.37.0
+  ts: '2026-09-21T07:35:01Z'

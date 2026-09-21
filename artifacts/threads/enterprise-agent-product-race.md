@@ -13,6 +13,10 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
+## 2026-09-20 — Amazon blocks Meta's Muse from shopping on its site
+
+- **Amazon blocked Meta's Muse AI agent from shopping on Amazon.com on Sunday night after Meta declined to exclude the site voluntarily, telling users the agent's access violates Amazon's Conditions of Use.** Amazon's stated grounds: Meta never disclosed Muse's access, the agent doesn't identify itself, and it appears to capture customer credentials; the block cites Amazon's Conditions of Use (a contract claim) rather than an anti-hacking statute, consistent with the Ninth Circuit's 08-04 ruling against Amazon's earlier suit against Perplexity. ([GeekWire, primary](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/)) ⟨daily 2026-09-20⟩
+
 ## 2026-09-18 — Meta's Muse, barely two weeks old, expands from phone/mobile to the Mac desktop with system-level file and app access
 
 - **Meta's Muse agent shipped on Mac, where it can now interact directly with a user's files, Messages, Calendar, Notes and Mail inside their native apps rather than through a chat window alone.** A short, low-word-count TechCrunch item with no download or adoption numbers attached — distinct from this thread's usual pattern of a company disclosing its own metrics, but still a concrete platform-expansion move from a lab (Meta) this thread already tracks closely (Muse's business-calling launch and 730,000-download milestone, 09-17 entry below). Desktop, system-level file/app access is a materially wider permission surface than phone-based business-calling was — worth watching whether this draws the same safety-framing scrutiny Zuckerberg's own "we delayed shipping Muse for safety" argument (this map's `frontier-model-gov-review-precedent` thread, 09-16 entry) invited. ([TechCrunch](https://techcrunch.com/2026/09/18/metas-muse-hits-mac-letting-the-ai-take-actions-on-your-computer/)) ⟨daily 2026-09-18⟩

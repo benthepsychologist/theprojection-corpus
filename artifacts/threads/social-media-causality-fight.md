@@ -15,6 +15,10 @@ evasion at 3 months; school phone bans show real academic gains (6.4%
 test scores) but consistently null mental-health effects. Two different
 claims being cited as one.
 
+## 2026-09-16 — The EU proposes banning social media for under-13s bloc-wide
+
+- **European Commission President Ursula von der Leyen proposed a "Kids Act" that would ban social-media accounts for children under 13 across the EU and restrict 13-15-year-olds to parent-supervised "mini-accounts" with a one-hour daily screen-time cap, default-private settings and limited contact lists.** The proposal reverses the burden of proof onto platforms to show their products are safe for minors, and explicitly targets "infinite scrolling, push-notification triggers, and engagement-driven reward loops" by design mandate — a much larger natural experiment than Australia's under-16 ban already tracked here, and one that names the specific product mechanisms at the center of the causality debate rather than an age cutoff alone. ([CNN](https://www.cnn.com/2026/09/16/europe/eu-social-media-ban-children-intl)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-11 — California bans addictive under-16 feed design the same week a national suicide-trend number gives the causality fight new stakes
 
 - **California's 09-10 child-safety package, signed alongside the companion-chatbot law SB 1119, bans addictive social-media features — autoplay and algorithmic feeds — for users under 16 and extends child-sexual-exploitation law to AI-generated or altered depictions of minors.** This is a design-level regulatory intervention rather than a settlement or a research finding: a state legislature restricting the specific product mechanisms (autoplay, algorithmic feeds) at the center of the causality debate, for a defined age band, ahead of any academic resolution of whether those mechanisms cause harm.

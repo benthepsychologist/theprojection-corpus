@@ -11305,3 +11305,129 @@ finalizes.
 AfD has now finished first in three German states and this map has no
 thread for European domestic politics, so tonight's result was nearly
 missed entirely. Say the word and it opens.
+
+## 2026-09-21 ~10:00-10:50 ET — `/daily`: finalized Sunday 09-20, opened Monday 09-21, resolved the US-China AI-talks ledger entry as a hit, and caught a stale Saudi story carried as new
+
+Scheduled Monday run. **09-20 is now `final`** in all five digests (the
+three lensed ones `coverage: done`, world-news `na`), and **09-21 is open**
+(`building` / `pending`). Collectors fired first at 14:01Z; eight
+first-wave agents (four lens sweeps, coverage critic, ledger, US-China
+cluster, cold rotation), three second-wave agents once the news file
+landed (buffer triage, trials/research, backfill verification), four
+site-briefing agents. All sonnet, all foreground.
+
+**Collectors.** All nine lanes ran with the three env vars set, and `rss`
+worked this time (406 rows). `google_news_rss` landed at 14:25Z, 24 minutes
+in (6,980 rows), after the first wave had closed, and was triaged by its own
+agent. `clinicaltrials` landed at 14:21Z (234 rows), `semantic_scholar` at
+14:31Z (55) and `openalex` at 14:38Z (37). The last two were read in the main
+session: all term-collision noise. `gdelt` timed out and got 429s again.
+
+**What Sunday gained at finalize.**
+- The **Bessent–Greer–He Lifeng readout**: the two sides *discussed* a
+  "U.S.-China AI Dialogue", with the US proposing a mechanism for notifying
+  each other of AI incidents that reach a national-security level. They
+  agreed to meet again and said nothing public about the 11-10 truce.
+- **CME crude's Sunday reopen fell** on JPMorgan satellite data showing
+  2.9m bpd of Saudi crude through Hormuz.
+- **SoftBank launched an $11bn dollar-and-euro bond**, pricing 09-24, to
+  fund its 10-01 OpenAI payment.
+- **CXMT says it is mass-producing fifth-generation DRAM without EUV.**
+- China's regulator slowed humanoid-robot IPOs, PIF launched Tawrid, and
+  Amazon blocked Meta's Muse agent.
+- Official German results: CDU shut out of Mecklenburg-Vorpommern on 4.9%.
+- Seven Ethiopian armed groups formed an alliance to remove Abiy.
+- Two backfills dated to their real days: the Fastiv drone strike that
+  killed a mother and two three-year-olds (09-19), and 112,000 displaced
+  in Yemen with 3,000+ crossing to Djibouti (09-18).
+
+**Monday so far:** the UN AI scientific panel's first thematic brief
+(precautionary principle on agents); Ireland's €403m GDPR fine on Google;
+oil below $100 intraday; chip-led rally tied to the talks; rare-earth
+magnet exports to the US down 20% in August; ESMA's abrupt-correction
+warning; Typhoon Dujuan with 1.9m under evacuation orders; the IRGC's
+sharper threat; IIT Bombay suspends a dean and retracts its account.
+
+**Corrections made this run — each would have reached the public site:**
+1. **"The two governments agreed to set up an AI Dialogue"** (capital
+   agent, digest + staged entry) — CNBC's own text says *discussed*, with
+   the US *proposing* it. Corrected everywhere, including the front and
+   AI briefings, where agents were briefed on the exact wording.
+2. **A stale Saudi story carried as Sunday news.** The 09-20 world-news
+   and `yemen-civil-war` entries presented Saudi Arabia asking four
+   governments for air defence as new; Seoul Economic Daily's 09-18
+   account dates the AP report to 09-16. Correction notes added to both;
+   the agent's new "no country said yes" bullet, sourced to that 09-18
+   article, was removed rather than carried as Sunday news.
+3. **Monday oil**: the agent's "Brent down ~3%, below $100" does not
+   reconcile with Friday's $103.87 settle. Rewritten to what Yahoo's own
+   live blog supports (both below $100; November WTI $92.28, −3.96%,
+   ~10am ET), with Brent's level left unprinted.
+4. **"The first time a retailer has treated an AI agent as an intruder"**
+   (Amazon/Muse) — false on its face; Amazon sued Perplexity over Comet.
+   Cut.
+5. **"Bessent added the two sides discussed extending the truce"** — not
+   in CNBC's text. Cut.
+6. **"Certified Friday 09-24"** — 09-24 is a Thursday. Date removed.
+7. **Briefings**: "Sword Health finalized its acquisition of Headspace"
+   (it takes effect 10-01); a 09-19 URL made to carry a 09-21 Crime
+   Branch fact; "began testing" for a trial registration. All fixed
+   before `--apply`.
+8. Process vocabulary ("this thread has tracked", "this map's 09-20
+   finalize") stripped from new bold leads, throughlines, staged headlines
+   and the interp sidecar.
+
+**Ledger.**
+- `us-china-ai-safety-talks-mid-sept` → **`hit`**, resolved on the
+  entry's own test ("the meeting itself"), with its limit recorded: AI was
+  one of three strands, and Xinhua did not confirm the proposal. The
+  agents split three ways (hit / passed-silent / defer). The call turned
+  on `what_confirms`, which said a passed-silent would mean Treasury's
+  denial held. It didn't.
+- `anthropic-wellbeing-grants-deadline-0921` → **`hit`**.
+- `softbank-openai-bridge-bond-pricing-0917` → **slipped** to 09-24.
+- `iran-hormuz-restricted-zone-boundaries` held (week precision, grace to
+  09-24), overruling the world-news agent's passed-silent.
+- `nvidia-500b-financing-first-close` held: it is **month** precision, so
+  every recent digest line calling it "five/six days past due" was wrong.
+- New: `us-china-ai-notification-mechanism-summit-confirm` (due 09-24).
+
+**Map.** 34 timeline bullets merged across 23 threads (dry run matched
+every agent's stated count; zero slug-line leaks). `last_seen` bumped on
+23 threads. Actor roll-ups refreshed: `softbank`, `cxmt` (stale since
+08-31), `meta-ai`. PIF's Tawrid was added from the critic's optional
+pickup. The critic confirmed **no benchmark miss** in any lens.
+Benchmark states: TLDR AI and Bloomberg Technology returned no usable
+content; AI Daily Brief has been dark since 09-17; Fierce Healthcare *does*
+publish Sundays (correcting its weekday-only note).
+
+**Site.** `readouts --apply`: two briefings passed first time and two were
+rejected on length, both caused by my own edits, then 4/4. `--export`: 154.
+`kestrel publish --push`: 1,448 stories (up from 1,423), 2
+interpretations. Site committed and pushed. Monday rollover as documented:
+14 of last week's interpretation pages and 3 entity pages removed; all 45
+sidecars are intact on disk. Graph fed for 09-20: 47 new S1 claims, 38 new
+S2, 1 hypothesis. `validate.py` passes at 5,699 atoms and 9,508
+relationships.
+
+**Two process notes.**
+- ⚠️ **The recreated merge script silently read 0 of the world-news
+  agent's 6 entries.** The agent's prose quoted the literal string
+  `## Proposed timeline entries` near the top of its file, and a
+  `split(...,1)` took that first occurrence. The fix is to anchor on the
+  **last** line-anchored heading. Caught by reconciling the dry run against
+  the agent's stated count, which is exactly the check the memory
+  prescribes.
+- **Subagents' self-reported clock times were fiction.** Several said
+  "returned ~15:20Z", and one said it polled "past 15:05Z", when the whole
+  run finished by 14:47Z. Check `date -u` rather than trusting an agent's
+  timestamp.
+
+💡 **Open for Ben — three thread candidates.**
+- **German/European hard-right electoral advance.** Final offering.
+- **Campus mental health / institutional duty of care**, from IIT Bombay.
+  Final offering.
+- **China's humanoid-robotics financing cycle.** New.
+
+Not run: `build-world-news`, last built 09-07 and needs GDELT via
+BigQuery.

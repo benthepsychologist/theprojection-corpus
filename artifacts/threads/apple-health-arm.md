@@ -15,6 +15,10 @@ MH feature remains 2023's self-reported State of Mind; the rumored
 "emotional/wellbeing coach" is unverified. The live MH-adjacent trend is
 third-party AI (ChatGPT/Perplexity) ingesting Apple Health data.
 
+## 2026-09-20 — Apple lays off Fitness+ staff as it folds the service into Health
+
+- **Apple laid off the Fitness+ teams behind its "Time to Walk" and "Time to Run" features as part of folding Fitness+ into the Health app, with Eddy Cue — who took over Health after the Health+ subscription was scrapped earlier this year — reportedly pressing the health and fitness organization to "move faster and be more competitive."** Reported by Bloomberg's Mark Gurman. This is a concrete organizational signal behind the pace of Cue's post-Mulberry health reset already tracked here, though it says nothing new about an AI mental-health coach specifically — State of Mind mood logging remains the only shipped mental-health feature. ([9to5Mac, citing Bloomberg](https://9to5mac.com/2026/09/21/apple-fitness-team-hit-by-layoffs-as-major-changes-reportedly-loom/)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-09 — The redesign ships (via press release): "psychological wellbeing" enters as a Longevity domain, still no coach persona or validated MH measurement
 
 - **Apple's September 9, 2026 newsroom release confirms the Mulberry-era

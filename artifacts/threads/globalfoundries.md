@@ -16,6 +16,11 @@ dispatched same day — entries land ⟨crawl 2026-08-04⟩.
 Finding: `artifacts/findings/globalfoundries-2026-08-04.md` · bundle:
 `artifacts/bundles/globalfoundries-2026-08-04/provenance.yaml`
 
+## 2026-09-17 — Marvell deal expands, and Japan floats GF as operator of a new US chip plant
+
+- **GlobalFoundries and Marvell Technology expanded their multi-year manufacturing agreement to increase capacity for silicon-germanium (SiGe) chips used in high-speed AI-data-center optical connections, at GlobalFoundries' Burlington, Vermont fab.** The expanded deal is meant to meet Marvell's demand for advanced optical-networking products — pluggable optical transceivers, near-packaged and co-packaged optics — driven by AI data centers' growing data-volume needs. GlobalFoundries shares rose about 4% and Marvell about 6.3% the same session. ([Reuters via Yahoo Finance](https://ca.finance.yahoo.com/news/globalfoundries-marvell-expand-chip-capacity-131025186.html)) ⟨daily 2026-09-21⟩
+- **Separately, Japan and the US are in working-level talks for GlobalFoundries to operate a new US logic-chip plant, funded as part of Japan's $550 billion tariff-linked investment pledge to Washington — the first time that pledge has been directed at semiconductor manufacturing rather than the energy and industrial-materials projects announced so far.** The project is estimated at 2-3 trillion yen (roughly $12.8-19.3 billion); officials are still discussing how the investment would be recouped. Talks were held 2026-09-14/15 and first reported 2026-09-17. ([Yahoo Finance/Benzinga, citing Nikkei](https://finance.yahoo.com/technology/articles/globalfoundries-reportedly-operate-potential-japan-084300807.html)) ⟨daily 2026-09-21⟩
+
 ## 2026-09-08 — $375m Commerce Department award finalised, but for quantum tech, not AI silicon
 
 - **GlobalFoundries finalised a $375m Commerce Department award for quantum technology.** Adjacent to this thread rather than inside it — quantum hardware, not AI silicon — but it is the same industrial-policy instrument (a direct federal award) this thread already tracks on the AI-capex side, now pointed at a different technology. ⚠️ No source link located for this item; recorded from the digest text alone. ⟨daily 2026-09-08⟩

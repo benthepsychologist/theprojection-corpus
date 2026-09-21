@@ -1,22 +1,22 @@
 ---
 lens: frontier-ai
 date: 2026-09-20
-status: building
+status: final
 window_start: 2026-09-20T05:00:00-04:00
-as_of: 2026-09-20T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-21T11:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-20
 
-*Curated agentic-interim, 05:00 ET → ~15:30 ET Sunday, extended in
-place from the morning and midday passes. The morning's
-organisation-and-person name sweep across the labs, the Chinese stack and
-the semiconductor chain found nothing inside the window, because the
-deterministic collectors' news file did not land until after that sweep
-had closed. A later triage of that file supplied most of what follows:
-two developments dated to today, and four items recovered against their
-own earlier dates.*
+*Curated from 05:00 ET 09-20 → 05:00 ET 09-21 (final; evening window swept
+09-21), extended in place from the morning and midday passes. The
+morning's organisation-and-person name sweep across the labs, the Chinese
+stack and the semiconductor chain found nothing inside the window,
+because the deterministic collectors' news file did not land until after
+that sweep had closed. A later triage of that file supplied most of the
+day's content; the Sunday-evening window (15:30 ET → 05:00 ET) added two
+more, both dated to their real Sunday-night events.*
 
 ## Today's throughline
 
@@ -30,7 +30,12 @@ same day Anthropic proposed three public measurements of that pace and
 disclosed that Claude leads 26% of its own AI R&D work, putting the two
 positions in unusually clean opposition: one party arguing the pace
 should be unconstrained, the other proposing the instrument by which it
-could be constrained.
+could be constrained. Sunday night added two more data points to the same
+argument: Bessent told reporters the US and China had discussed a
+standing mechanism for notifying each other of AI incidents that
+threaten national security, and Amazon blocked Meta's Muse agent from
+shopping on its site, telling users that an AI agent acting for them was
+an unauthorized intruder.
 
 ## The pacing fight
 
@@ -172,6 +177,15 @@ here against its real date rather than by reopening a closed day.*
   safety is deliberately still open on exactly that question.
   ([Reuters via CNBC](https://www.cnbc.com/2026/09/20/bessent-chinas-he-to-hold-talks-on-ai-trade-minerals-reuters.html))
   <!-- k: t=frontier-model-gov-review-precedent,chips-equity-pivot axis=policy -->
+- 🌙 **Bessent told reporters Sunday that the two sides had discussed a "US China AI Dialogue," with the US proposing a standing mechanism for the two governments to notify each other of AI incidents that could threaten national security, and that they would meet again.** "We think that, just like with any cross-border activity, that moving from opaque to more transparency between the number one and the number two AI powers in the world is very important," he said. The framework picks up from where the two sides left off after Trump's May visit to Beijing; Bessent said export controls on advanced chips were not discussed in this round, and the meeting also covered trade and rare earths ahead of the 09-24 Trump-Xi summit. It is the closest thing to a readout the day produced: a proposed notification mechanism and a talks framework, not an agreement, and China's own Xinhua readout acknowledged AI was discussed without confirming the proposal.
+  ([Wired](https://www.wired.com/story/us-and-china-discuss-alerting-each-other-to-ai-national-security-threats/))
+  <!-- k: t=frontier-model-gov-review-precedent e=scott-bessent axis=governance -->
+
+## 🌙 Sunday evening
+
+- **Amazon blocked Meta's Muse AI agent from shopping on Amazon.com on Sunday night after Meta declined to exclude the site voluntarily, telling users the agent's access violates Amazon's Conditions of Use.** Users saw a popup reading "Continued access by an unauthorized AI agent violates Amazon's Conditions of Use, to which our customers have agreed." Amazon's stated grounds: Meta never told it Muse would access the store, the agent doesn't identify itself when it browses, and it appears to capture and store customer credentials. Meta has said Muse "has no visibility into people's passwords or payment methods" and that shared credentials go into secure storage the agent cannot see. The standoff sits on top of an existing business relationship — Amazon products have sold inside Facebook and Instagram since 2023, and Meta signed a multibillion-dollar deal in April to run agentic AI workloads on Amazon's own cloud — and on top of an unresolved legal fight: Amazon's preliminary injunction against Perplexity's Comet browser was reversed by the Ninth Circuit on 08-04 (the court held the *user*, not the AI company, is the one "accessing" Amazon's computers under federal anti-hacking law), and its petition for rehearing was denied 09-10. That ruling is why the Muse popup cites Amazon's Conditions of Use — a contract claim — rather than any hacking statute. Amazon says it is in direct talks with Meta and declined to say whether it would consider legal action.
+  ([GeekWire, primary](https://www.geekwire.com/2026/amazon-blocks-metas-muse-ai-assistant-in-new-standoff-over-agentic-shopping/), [The Verge](https://www.theverge.com/tech/998078/amazon-blocks-meta-muse-ai-agent-shopping))
+  <!-- k: t=enterprise-agent-product-race e=amazon-aws,meta-ai axis=product -->
 
 ## The political register shifts
 
@@ -229,22 +243,80 @@ here against its real date rather than by reopening a closed day.*
   larger model Musk has described without any ship date at all. The
   outcome is recorded loudly because a commitment that simply stops being
   mentioned is the failure mode this ledger exists to catch.
-- ⏳ **`us-china-ai-safety-talks-mid-sept` stays `pending` one more run.**
-  The Bessent-Greer-He Lifeng meeting began around 10:30am ET today, and
-  no official readout exists yet. ⚠️ On the evidence so far this looks
-  like it will resolve `passed-silent` rather than `hit`: the entry
-  predicted the first bilateral talks *devoted to* AI safety, and every
-  source describes a broad trade meeting with AI guardrails as one of
-  three strands alongside the tariff truce and rare earths. Held open
-  because the meeting is still running as this pass closes and a
-  dedicated AI readout would change the answer.
+- ✅ **`us-china-ai-safety-talks-mid-sept` → `hit`.** The entry's own
+  confirmation test was "the meeting itself," and it happened: Bessent
+  and Greer met He Lifeng for roughly eight hours in Manhattan with AI
+  guardrails a formal agenda item, and Bessent came out proposing a
+  standing "US China AI Dialogue" for mutual notification of AI
+  incidents. Recorded with its limit stated: AI was one of three strands
+  of a broad trade negotiation rather than the stand-alone safety talks
+  the claim's wording implied, and Xinhua's readout did not confirm the
+  US proposal. Treasury's denial of 09-04, which the entry said would be
+  the finding if it held, did not hold.
 
 ## 🔄 Map changes
 
 - Timeline entries staged: `ai-circular-financing-risk` and
-  `nvidia-vendor-financing` (Huang).
+  `nvidia-vendor-financing` (Huang); `frontier-model-gov-review-precedent`
+  (the Sunday-night "US China AI Dialogue" mechanism); `enterprise-agent-product-race`
+  (Amazon blocks Meta's Muse).
 - `grok-4-7-ship` flipped to `passed-silent` in `attention/upcoming.yaml`.
 - ⚖️ **`sev=major` used once today**, on Anthropic's measurement paper. The
   Cambridge/Boko Haram study is arguably the more striking item, but it is
   a late catch of a 09-18 study with no thread to reset, so it carries no
   `sev` — the term only discriminates if roughly one item a day earns it.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-21 ~10:15-11:20 ET, finalizing digest-day
+2026-09-20. All twelve benchmarks in `sources/benchmarks.yaml` had their
+access state re-verified live, plus a wire backstop and a NAME pass
+against `attention/watchlist.yaml` across the digest-day window.*
+
+**They led with → we missed: none confirmed.**
+
+All four daily AI newsletter benchmarks were checked live for a Sunday
+edition. The Rundown AI is confirmed weekday-only for this date (newest
+pre-Monday item Friday 18 Sep 14:30). The Neuron did publish a Sunday
+edition (~14:00 ET), but its content — the Gemini autonomous-hacking
+incident and Trump's "AI Force" post — was already on this map under its
+real dates; checked-and-clean. TLDR AI's page is a client-rendered app
+with no dated archive reachable via direct fetch or the reader proxy —
+**not checkable this pass**, not a clean result. The AI Daily Brief has
+not published since Thursday 09-17 — `/e/2026-09-18` through
+`/e/2026-09-20` all 404, and the homepage's "Today's Edition" text is the
+Sep-17 edition re-served under today's date — a four-day silent gap on a
+benchmark that normally covers Sundays too. Bloomberg Technology returned
+only site chrome via the reader proxy this pass (200, but no article
+list) — a new failure mode, distinct from prior 403/CAPTCHA states;
+**not checkable this pass**.
+
+Independent wire verification of Sunday night's Bessent-Greer-He Lifeng
+readout (the proposed "U.S.-China AI Dialogue" notification mechanism,
+via CNN) matched what this digest already carries — written up with
+fuller sourcing (CNBC, Reuters via Korea Times) than this pass's own
+check. Not a miss.
+
+A "Pennsylvania sues Character.AI for impersonating a doctor" headline
+surfaced by the NAME pass, inside a 09-20-dated aggregator compilation,
+traces to Governor Shapiro's actual suit filed 2026-05-05 — five months
+old, not a 09-20 event. Ruled out before being written up.
+
+**Both covered:** Huang's Sunday CBS interview, Anthropic's
+pace-measurement paper, the four "Caught late" items, the political
+register shifts (Pritzker, Moore, Obama and LA County backfills), and —
+as of this pass's final re-read — both Sunday-evening additions (the
+Bessent AI Dialogue readout and Amazon blocking Meta's Muse).
+
+### Tooling
+
+`python3 urllib` with a Googlebot User-Agent for direct fetches; the
+`r.jina.ai` reader proxy for MobiHealthNews, Axios Pro Rata, Bloomberg
+Technology, The Neuron and the AI Daily Brief's dated-archive path.
+`curl` remains session-refused. Two benchmarks were effectively
+unreadable via any transport tried this pass — TLDR AI (client-rendered,
+no dated content reachable) and Bloomberg Technology (chrome only, no
+articles) — neither 403'd or CAPTCHA'd, they simply returned no usable
+content; re-test fresh next pass. The AI Daily Brief's four-day silence
+(since 09-17) is a new, longer gap than the single-Monday-miss pattern
+logged 2026-08-25 and is worth a dedicated re-check.

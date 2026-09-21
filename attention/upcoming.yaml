@@ -1433,6 +1433,12 @@ expectations:
       due_precision is month with 12 days of September left; stays
       pending.
 
+      RE-CHECK 2026-09-21 (ledger check + global-capital lens) — still no
+      named deal from any of the six MOU partners; fourth consecutive
+      negative check. due_precision is month, so the window runs to 09-30;
+      earlier digest lines calling this "five/six days past due" read the
+      day as a hard date and are superseded. passed-silent if 09-30 passes
+      with nothing.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2508,7 +2514,15 @@ expectations:
       contexts
     due: 2026-09-21
     due_precision: day
-    status: pending
+    status: hit
+    resolved: 2026-09-21
+    evidence: |
+      Anthropic's own page, read directly on 09-21: "Applications are due by
+      September 21; applicants who are selected to submit full proposals will
+      be notified by October 5." No extension language. The window closed as
+      claimed. The entry's second question — whether funded work proves
+      independent and clinician-involved — outlives it and belongs to
+      mh-evidence-watch, not this ledger line.
     confidence: confirmed
     thread: mh-evidence-watch
     entities: [anthropic]
@@ -3249,6 +3263,9 @@ expectations:
     logged: 2026-09-07
     logged_by: curate-add
     status: pending
+    # 2026-09-21: due today at week precision — no boundaries, coordinates,
+    # NOTAM/NAVTEX or named enforcement action found (ledger check + world-news
+    # sweep). Grace runs to 09-24; passed-silent then if nothing is drawn.
 
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
@@ -3436,7 +3453,27 @@ expectations:
       denial held, which is itself the finding.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-20
+    evidence: |
+      The meeting itself — the entry's own confirmation test — happened on
+      09-20: Bessent and USTR Greer met Vice Premier He Lifeng for roughly
+      eight hours at JPMorgan's Manhattan headquarters, with AI guardrails a
+      formal agenda item alongside the tariff truce and rare earths. Bessent
+      told reporters afterward the two sides "discussed a U.S.-China AI
+      Dialogue," with the US proposing a mechanism for notifying each other
+      of AI incidents that rise "up to a national security level," and that
+      they agreed to meet again (CNBC 09-20; Reuters via Korea Times 09-21;
+      NBC; Wired). Treasury's 09-04 denial, which this entry said would be
+      the finding if it held, did not hold.
+      ⚠️ Resolved with its limit stated: AI was one of three strands of a
+      broad trade negotiation, not the stand-alone talks "devoted to AI
+      safety" the claim's wording implied; Xinhua's readout acknowledged AI
+      was discussed without confirming the US proposal, and no joint
+      statement or text exists. A follow-on entry
+      (us-china-ai-notification-mechanism-summit-confirm) tracks whether the
+      channel is confirmed at the 09-24 summit.
+      https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html
     note: >
       2026-09-17 (afternoon sweep): Bessent went on record to Axios
       (09-16) confirming a dated meeting with Vice Premier He Lifeng and
@@ -3459,6 +3496,27 @@ expectations:
       than the 09-16 Axios Bessent quote has surfaced, all newer hits are
       same-day/next-day re-syndications of that one scoop.
 
+  - id: us-china-ai-notification-mechanism-summit-confirm
+    claim: >
+      China publicly confirms or accepts the US-proposed "U.S.-China AI
+      Dialogue" mechanism for notifying each other of AI incidents that reach
+      a national-security level, at or around the Trump-Xi summit in
+      Washington on 09-24
+    due: 2026-09-24
+    due_precision: day
+    thread: china-stack-independence
+    entities: [scott-bessent]
+    source: https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html
+    confidence: reported
+    what_confirms: >
+      a Chinese government statement (MOFCOM, MFA, Xinhua readout) or a joint
+      statement naming the AI notification mechanism or dialogue. Bessent
+      called it something for the two leaders to consider; Xinhua's 09-20
+      readout acknowledged AI was discussed but did not confirm the proposal.
+      A US-only characterization after the summit does not confirm it.
+    logged: 2026-09-21
+    logged_by: curate-add
+    status: pending
   - id: trump-xi-washington-summit-0924
     claim: >
       Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
@@ -3631,7 +3689,8 @@ expectations:
 
   - id: softbank-openai-bridge-bond-pricing-0917
     claim: "SoftBank prices a $10-20bn junk-bond issue, roadshown 09-14 to 09-17 out of Citigroup in New York, to fund the early payoff of the $25.9bn balance of its $40bn OpenAI-stake bridge loan"
-    due: 2026-09-17
+    due: 2026-09-24
+    slips: [2026-09-17]
     due_precision: day
     thread: softbank-all-in
     entities: ['softbank', 'openai']
@@ -3647,8 +3706,15 @@ expectations:
       offered price.
     logged: 2026-09-10
     logged_by: curate-add
-    status: passed-silent
-    resolved: 2026-09-17
+    status: pending
+    # SLIPPED 2026-09-21 (was passed-silent 09-17, inside its grace): SoftBank
+    # launched a $10bn dollar bond (3.5/5.5/7.5-yr) plus a EUR1bn euro bond
+    # (4/6-yr) on 09-20/21, pricing slated 09-24, settlement 09-29, proceeds
+    # stated as funding the $10bn OpenAI payment due 10-01 (Bloomberg 09-21;
+    # Reuters via Business Standard 09-21). Same junk-bond programme the
+    # entry tracked; resolves on pricing.
+    # https://www.bloomberg.com/news/articles/2026-09-21/softbank-seeks-over-11-billion-in-junk-bond-deal-for-openai-bet
+    # (was passed-silent from 2026-09-17 until this slip)
     evidence: >
       The roadshow's full scheduled window (09-14 -> 09-17) closed with
       zero pricing anywhere. Confirmed via direct fetch of SoftBank's own
