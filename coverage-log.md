@@ -8613,3 +8613,204 @@ access-state changes to any other benchmark this pass.
 widening), `ai-circular-financing-risk` (Meta junk bond). **Thread
 candidate offered:** `embodied-ai-safety-benchmarks` (frontier-ai digest,
 not yet created — awaiting Ben's steer).
+
+## 2026-09-23 — coverage critic: 09-22 finalize
+
+*Run 2026-09-23 ~14:40-15:05 UTC (~10:40-11:05 ET), finalizing digest-day
+2026-09-22 (Tuesday) across the three critic-bearing lenses, after the 09-22
+10:00 and 15:00 runs both died uncommitted and left Tuesday's afternoon and
+evening unread. Twelve benchmarks in `sources/benchmarks.yaml` checked live
+via `python3 urllib` and the `r.jina.ai` reader proxy; `curl` remains
+session-refused and the session's WebSearch budget was exhausted, so the
+critic and two other agents worked from Google News RSS and DuckDuckGo-lite
+through the proxy.*
+### Coverage critic, frontier-ai / 2026-09-22
+
+**They led with → we missed: 4 benchmarks checked, 0 lead misses, 2 wire-backstop misses.**
+
+| Benchmark | 09-22 window lead | Verdict |
+|---|---|---|
+| The Rundown AI | 09-22 issue: "Amazon shuts out Meta's Muse" (plus Trump's "AI Force", a "pain axis" paper); 09-23 issue: "The pacing era's first launch day" (Opus 5.5, GPT-6 Sol/Luna, OpenAI math advisory group) | covered. Amazon's block is on `enterprise-agent-product-race` (09-20), AI Force on `frontier-model-gov-review-precedent` (09-19), the launches and math group in the digest |
+| TLDR AI | 09-22: Opus 5.5 imminent, Grok 4.7, Xiaomi MiMo-V2.6; 09-23: GPT-6 Sol/Luna, Opus 5.5, AI leaders at the UN | covered; MiMo/StepFun sit in H1's sweep, Grok 4.7 resolved in the 09-21 run. Unstaged minor product items: Devin CLI, AWS Strands harness, Google RRSI paper |
+| The Neuron | 09-22 issue: "Amazon blocked Meta's Muse from shopping" (Shopify jumped in; OpenAI/Anthropic near mutual stress tests; OpenAI's RSI standards; Googlebook; Grok 4.7 EEBench); 09-23 issue: "GPT-6 Sol vs Claude Opus 5.5" | covered. Mutual stress tests and RSI standards are on `frontier-model-gov-review-precedent`. One Monday late catch: see Googlebook below |
+| The AI Daily Brief | **No edition for 09-22 or 09-23** (`/e/2026-09-22` and `/e/2026-09-23` both 404; archive list ends 09-21; the site's "today" panel, dated Sept 23, still shows the 09-21 "State of the AI Debate" text) | not checkable, because nothing was published. Not a fresh access problem |
+
+**Carry-forward.** RoboHarm/`embodied-ai-safety-benchmarks`: no follow-up in any 09-22/23 issue of
+the Rundown, TLDR or Neuron, so the frontier-ai agent's drop stands. Neuron's Microsoft
+"AI rulebook" lead resolved to the Humanist AI Code of Conduct consultation the digest already
+carries; the Cambridge/Boko Haram lead is still unverified and was not chased here.
+
+**Two wire-backstop misses in the window (neither led a benchmark issue):**
+
+1. **Bessent as Trump's "AI czar".** Semafor (exclusive, 09-22 1:55pm ET, three sources) and a
+   Reuters follow-up (5:55pm ET) report Treasury Secretary Bessent is a frontrunner for the new
+   AI czar post that Trump promised on 09-19. The White House called unannounced personnel
+   reporting "baseless speculation." Semafor ties it to Bessent's UNGA-sidelines talks with He
+   Lifeng on a US-China AI-incident "notification mechanism." Repo grep for "czar",
+   "Semafor" and "frontrunner": the 09-19 AI-czar entry exists on
+   `frontier-model-gov-review-precedent`, but nothing on Bessent-as-czar in any digest or sweep
+   file. Staged.
+2. **Anthropic and OpenEvidence partnership.** Reuters exclusive, 09-22 5:31pm ET, read in full
+   via its Yahoo copy: a free, regionally adapted version of OpenEvidence's clinical
+   decision-support tool for physicians in about 100 low- and middle-income countries, Anthropic
+   supplying the back end. Zero repo hits for "OpenEvidence". Nearest home is
+   `bigtech-into-health` (mental-health lens, entity list omits Anthropic), so this is a
+   placement question for the main session. Staged.
+
+**Monday late catch, not staged (real date 09-21).** Google opened pre-orders for "Googlebook"
+laptops (from $899, Gemini built in; Acer, ASUS, Dell, HP, Lenovo; Qualcomm, Intel and MediaTek
+silicon) on 09-21 (TechCrunch, Axios and about 60 rows in `buffer/2026-09-22-google_news_rss.jsonl`;
+the Neuron's 09-22 issue led its treats with it). Zero repo hits for "Googlebook". No thread
+obviously owns Gemini-on-device hardware; `enterprise-agent-product-race` is the nearest.
+Main-session call whether it merits a dated entry.
+
+**Minor, unverified against a primary.** The Rundown's 09-23 issue says Opus 5.5 takes the top
+spot on Artificial Analysis's Intelligence Index at 58 against 53 for Fable 5.1 and GPT-6 Astra.
+The digest has no leaderboard fact; not staged because Artificial Analysis's own page was not read.
+
+
+### Coverage critic, global-capital / 2026-09-22
+
+**They led with → we missed: 4 benchmarks checked, 0 lead misses, 4 confirmed misses via Bloomberg and the wire.**
+
+| Benchmark | 09-22 window lead | Verdict |
+|---|---|---|
+| Money Stuff (Matt Levine) | 09-22 (14:29 ET): "Who Cares If a Merger Is Fair?" (Silver Lake/Endeavor appraisal; also problem gamblers, Steak 'n Shake, World Liberty). 09-23 column not out yet | off-lens; nothing to add. Reachable via the `.rss` author endpoint. Paywalled after the opening paragraphs |
+| Axios Pro Rata | The **09-23** issue (fetched 09-23 morning) reports 09-22's deal flow: Carta DPI data, Boehly/DFC/UAE rival bid for Lukoil assets vs Carlyle, Bamboo Insurance postpones IPO ("three makes a trend" after Holtec and SB Energy), Baseten Series G talks at $26bn, Mirendil (ex-Anthropic) talks at $5bn, Snorkel $350m, Tekever $580m, Royal Caribbean/Sandals $3bn, Tal Broda (ex-OpenAI compute VP) to Khosla | checkable, see below: SB Energy/IPO-window item staged; Baseten, Mirendil, Lukoil and the rest reported, not staged |
+| FT Unhedged | 09-22: "Quiet please, the currencies are sleeping" (plus "the end of stocks' summer of 'meh'?"); 09-23: "Private credit's 'soft' defaults" | existence confirmed via RSS; bodies fully paywalled even through the proxy. Neither reads as on-lens; "private credit" appears on the map only inside two other threads. Recorded as unread, not as a miss |
+| Bloomberg Technology | Rolling homepage now shows 09-23 items (Bessemer's $5.75bn funds, Hubble unicorn, Bird's $450m debt); the 09-22 items that matter are in the Bloomberg story links off Money Stuff's page: "Meta's Muse Drags Down Stocks That Depend on 'Consumer Inertia'" and "Nvidia's Stock Is Flashing a Warning Sign as Valuation Falls" | **two confirmed misses** (below). Also seen as headline only, not read: "AI Risk Is Everywhere and It's Making Billion Dollar Funds Nervous" (Lu Wang) |
+
+**Miss 1 (large): Muse-driven selloff in financial stocks, Tue 09-22.** Bloomberg (published 2:14pm
+ET, read via the reader proxy): "Shares of major banks, insurers and online travel agencies
+slid on Tuesday as investors fear that tools like Meta Platforms Inc.'s personal AI agent could
+disrupt businesses that benefit from so-called consumer inertia." The S&P 500 Financials
+Index "shed nearly 2% to close at the lowest level since July, trailing a broader market that
+was roughly flat"; JPMorgan and Wells Fargo down more than 3% each, Morgan Stanley 2.9%,
+Allstate 5.5%, Schwab more than 6%. Reuters (Kitco copy, read in full) confirms independently:
+Financials index down 2%, bank index down 3%, Schwab down 6.1%, Ameriprise 4.4%, Raymond James
+more than 3%; Muse "recently moving past ChatGPT as the most downloaded free app for iPhones";
+a Gabelli portfolio manager called it "another sell-without-regard reaction"; the 2-year/10-year
+spread "hit its flattest level since March 2025" (17.9bp intraday, +21bp at last read); NYT's
+Monday report on delays to data-center-linked IPOs was also cited. The buffer holds the same
+story under Barron's, Investor's Business Daily, Moomoo and biggo headlines. Repo grep for
+"consumer inertia", "Schwab", "Allstate" (artifacts, attention, sweeps): no hits in digests or
+threads. The global-capital digest calls the tape "calm" and the S&P "flat"; the frontier-ai
+digest mentions Muse only as an AMD/Meta rally driver. Staged on `ai-trade-bear-turn`.
+
+**Miss 2: Nvidia at a decade-low multiple.** Bloomberg, 09-22 5:28am ET: "At less than 17 times
+profit expected over the next 12 months, Nvidia's shares are trading near the cheapest level in
+more than a decade... The multiple is half what the stock commanded in 2025... and down from
+more than 25 times earnings estimates as recently as May." Repo grep for "cheapest" and
+"forward earnings": no hit in any digest or thread about Nvidia's multiple. Only the lede
+was readable (paywall). Staged on `ai-trade-bear-turn`.
+
+**Miss 3: SB Energy's IPO is being delayed, not "nearing pricing".** Two independent reports in
+the window. Bloomberg (7:19pm ET): SB Energy "is preparing to start formally marketing its
+initial public offering... once US regulators are finished reviewing the company's IPO filing";
+it filed an amended S-1 Monday "in part to address feedback from the SEC about disclosing
+Nvidia's total $3 billion investment... more prominently on the cover page." Reuters (in its
+financials story): SB Energy "had originally planned an IPO for this month, has postponed the
+launch of its roadshow," per a source; Holtec suspended its IPO last week. Axios Pro Rata adds
+Bamboo Insurance's postponement and Orion180 trading at $10.50 against a $12 IPO price. The
+map's 09-22 `nvidia-vendor-financing` entry and the digest bullet say the IPO "nears pricing".
+Staged as a correction-in-substance on `nvidia-vendor-financing`.
+
+**Not staged, for the main session's eye.**
+- **Baseten** in talks for a Series G at $26bn and **Mirendil**, a self-improving-model startup from former Anthropic researchers, in talks at $5bn led by Kleiner Perkins (Bloomberg via Pro Rata). Zero repo hits for either. No thread tracks AI startup mega-rounds; `frontier-lab-ipos` and `fidelity-buys-ai-labs` are the nearest and neither fits. Snorkel AI's $350m already sits in A's sweep.
+- **Lukoil.** FT's most-read on 09-22: "US government and Gulf billionaires back Todd Boehly bid for Lukoil assets", a rival to Carlyle's agreed deal for Lukoil's foreign assets. `russia-ukraine-war` has no Lukoil sale entry. Headline and Pro Rata paraphrase only; FT body not read. World-news/global-capital reconciliation.
+- **Tal Broda**, OpenAI's former VP of compute, joined Khosla Ventures as a partner (Pro Rata). Personnel; not staged.
+- **Window W items seen while checking (real date 09-23, not this pass's window):** the OECD's interim outlook (published Wed 09-23; global growth 2.9% for 2026, AI-related investment cited as offsetting the Middle East energy shock; OECD publication page and Reuters), and the FT report that Beijing is surveying Broadcom switch use in state data centers, switches possibly up to 90% of the equipment (Reuters 09-23; `china-stack-independence`). H1/G may want them for 09-23.
+
+**Corrections the global-capital digest needs (in-window, not new stories).**
+1. The throughline's "calm surface" and "S&P flat" omit the 2% Financials/3% bank selloff above. The 09-22 macro strip carries no sector line.
+2. "IPO approaches" / "nears pricing" (SB Energy) is contradicted by Miss 3.
+3. The macro strip says the 10s-2s spread "widened to 25bp from 20bp" (Treasury par curve), while Reuters says the curve hit its flattest since March 2025 during Tuesday (17.9bp intraday, +21bp at last read; CNBC's own prints, which the digest quotes, give about 21bp). Different measurement points, but the digest's direction ("widened") reads against the day's story; worth a re-check of the 2-year print (4.71% par curve vs 4.743% intraday).
+
+#### Proposed thread candidate (global-capital)
+
+**`ai-agent-disruption-trade`** (working name), one candidate only: equity sectors repricing on the
+risk that consumer AI agents route around incumbents' inertia-based revenue (banks, insurers,
+brokers, travel sites; Schwab's 6% drop; cybersecurity's 14% pop on 09-14 is the opposite leg).
+`ai-trade-bear-turn` tracks the AI-heavy index and breadth; this is a different mechanism
+(AI as revenue threat to non-AI incumbents) and Bloomberg's headline treats it as a named
+trade. If not promoted, the staged entry lives fine on `ai-trade-bear-turn`.
+
+
+### Coverage critic, mental-health / 2026-09-22
+
+**They led with → we missed: 4 benchmarks checked, 0 misses on the benchmarks (a real null result), 1 low-confidence wire item.**
+
+| Benchmark | 09-22 window output | On-lens? |
+|---|---|---|
+| Behavioral Health Business | Only 3 items in the window: a de novo addiction-treatment expansion feature; "Pipeline: UHS opens 120-bed Three Trails Behavioral Hospital (Missouri); Blackbird expands into Maryland"; a vote reminder. Feed `lastBuildDate` Tue 09-22 20:50Z. | No AI/MH-tech item |
+| STAT Health Tech | 09-22: "Epic's mortality model, and Omada's future products"; 09-23 (04:30 and 09:29 ET, window W): UnitedHealth/CVS on Medicare remote monitoring; "AI doomerism" (AI Prognosis) | Not MH-lens |
+| Fierce Healthcare | Heidi $340m AI care partner; Oracle life-sciences AI agents; CMS provider-tax and ACA-enrollment stories; **Pelago's behavioral-health platform** (09-23 00:26 ET) | Pelago is already in the digest; nothing else on-lens |
+| MobiHealthNews | Heidi Health $340m at $900m; Iambic files for IPO; Te Whatu Ora AI rostering; Adelaide endometriosis scan AI | Not MH-lens |
+
+The digest's own trade-press pass (BHB, Fierce, Psychiatric Times, STAT) matches this; nothing
+missed. Heidi, Iambic, Omada, Epic's model and UHS have zero repo hits but none is AI-in-mental-health.
+
+**One wire-backstop item, low confidence (staged, main-session call).** Tom Siegel, who founded
+Google's trust-and-safety team, said 09-22 he is joining Common Sense Media as first executive
+director of its Youth AI Safety Institute (backed by Anthropic and the OpenAI Foundation) and
+told Reuters AI could harm children more than social media did, citing suicide, psychosis and
+"cognitive offloading," and calling for independent standards "similar to car crash testing."
+Verified against USA Today's reproduction of the Reuters story; the Reuters headline and time
+(1:33pm ET) match. Zero repo hits for "Siegel" or "Youth AI Safety". It is a hire plus a public
+warning rather than a rule or a ruling, so it is a weaker development than the BC suit; it sits
+closest to `ai-therapy-regulatory-reckoning` (standards pressure on youth chatbot harm). The
+same wire scan surfaced "Prince Harry warns AI chatbots can be more dangerous than social media
+for the young" (09-23, window W).
+
+
+### Wire backstop (AP / Reuters), window 09-22 05:00 ET to 09-23 05:00 ET
+
+AP and Reuters could not be fetched directly (AP 403, Reuters 401) and the reader proxy also
+403'd; used Google News RSS `site:apnews.com when:2d` and `site:reuters.com when:2d`
+(54 AP and 69 Reuters headlines in the window), then read the on-lens ones through wire
+syndications. Result: **the lens digests lack four in-window wire stories**, all listed above:
+Financials selloff (Reuters, corroborated by Bloomberg), Bessent-as-czar (Reuters), Anthropic/OpenEvidence
+(Reuters exclusive), Siegel (Reuters). Already covered: Alibaba chip (AP), Trump at the UN and
+Iran meeting (AP/Reuters), Opus 5.5 and GPT-6 Sol/Luna (Reuters), Meta "human concierge"
+(Reuters exclusive; on the A sweep), Trump's SpaceX trades (Reuters; on the G sweep), diesel
+export ban, oil and dollar wraps, Hormuz conditions. Off-lens wire items with no repo hits
+(world-news): Lukoil bid (FT), ShinyHunters claims of an FBI breach (Reuters 09-22),
+Microsoft/DARPA quantum access, Novo Nordisk weighing a direct NYSE listing, Royal Caribbean/Sandals.
+
+
+### Summary
+
+- **Benchmarks:** 12 checked. Lead-story misses: 0 (frontier-ai), 0 (global-capital, Money Stuff and Unhedged off-lens or paywalled), 0 (mental-health).
+- **Confirmed misses staged:** 5 entries (ai-trade-bear-turn x2 bullets, nvidia-vendor-financing, frontier-model-gov-review-precedent, bigtech-into-health) plus 1 low-confidence (ai-therapy-regulatory-reckoning).
+- **Not checkable for 09-22:** The AI Daily Brief (no edition). Money Stuff has no 09-23 column yet (window W). FT Unhedged bodies unreadable (paywall).
+- **Digest corrections requested:** global-capital (sector selloff omitted; SB Energy framing; 10s-2s direction).
+
+### Tooling
+
+- **The reader proxy is User-Agent sensitive.** `r.jina.ai/<url>` returned HTTP 403 for Axios, Bloomberg, MobiHealthNews and The Neuron when called with a Chrome-style UA, and HTTP 200 for all four with a bare `Mozilla/5.0` (or `curl/8.0`) UA. The 09-10 note that MobiHealthNews's proxy feed "looks like a genuine block" was tested with the wrong UA. Neuron also loads directly (`/p/<slug>`, `/archive`) with a Googlebot UA.
+- **Axios Pro Rata:** the proxy returned the current issue. Run on the morning after the digest-day, the day-N+1 issue is the day-N deal report, so a next-morning critic pass CAN check the prior day's deals with it; the "same-day-only" note is about the calendar date printed, not about being useless. The page's `Published Time` metadata was stale (Sep 2025); the body was dated September 23, 2026.
+- **Bloomberg Technology:** reachable via proxy; homepage is a rolling 09-23 page with no dated archive. **Article-level proxy URLs give the lede** (two paragraphs before the paywall), which was enough to verify both Bloomberg misses; article URLs are discoverable from links on Money Stuff pages.
+- **Money Stuff:** `.rss` author endpoint worked (latest 09-22 14:29 ET). **FT Unhedged:** RSS worked (09-22 and 09-23 editions); bodies barrier-paged through the proxy.
+- **Rundown:** `/feed` mixes editions; the AI edition items are the two used. **TLDR AI:** `tldr.tech/ai/YYYY-MM-DD` loads directly. **AI Daily Brief:** dark 09-22 and 09-23 (see table).
+- **BHB:** feed and homepage 200 with a Googlebot UA; only 3 items dated 09-22. **STAT:** `/topic/health-tech/feed/` 200. **Fierce:** `/rss/xml` 200 with a Googlebot UA (feed carries some stale-dated items; filter by date).
+- **Search workaround with no search budget:** `r.jina.ai/https://lite.duckduckgo.com/lite/?q=<query>` (bare `Mozilla/5.0` UA) returns result titles, snippets and real publisher URLs, including Reuters syndications on Yahoo, Kitco and USA Today, which are fetchable directly. Google News RSS search (`news.google.com/rss/search?q=...`) works for headline lists but its article links cannot be decoded. Worth writing into `benchmarks.yaml` once the main session agrees.
+- Buffer: `buffer/2026-09-22-google_news_rss.jsonl` and `buffer/2026-09-23-google_news_rss.jsonl` (6.9 MB, last write 14:28Z) had both landed and were grepped for Googlebook, Muse/financials, Schwab and Siegel-adjacent terms. No other collector rows were read for this pass.
+
+**Main-session disposition (2026-09-23).** All five confirmed misses were merged
+onto their threads and folded into the 09-22 digests as annotated bullets
+(Financials selloff and Nvidia's multiple in global-capital; Bessent as AI czar in
+frontier-ai; the Anthropic and OpenEvidence rollout and Tom Siegel's move in
+mental-health). The three requested global-capital digest corrections were made:
+the throughline now carries the Financials selloff, the SB Energy "nears pricing"
+framing was replaced (and the `nvidia-vendor-financing` timeline heading fixed), and
+the 10s-2s line now says the par-curve gap read 25bp while Reuters reported an
+intraday flattest-since-March-2025 touch. Not staged: the Googlebook pre-order item
+and Baseten/Mirendil rounds (no owning thread) and the Lukoil bid (world-news
+reconciliation, FT body unread). **Thread candidate offered, not created:**
+`ai-agent-disruption-trade`. **Correction to this pass's own tooling note:** the buffer
+triage agent found Google News article links CAN be decoded (fetch the article page,
+read `data-n-a-sg` and `data-n-a-ts`, POST a `batchexecute` Fbv4je request; it 429s
+after about 20 rapid calls and recovers in about 20 seconds), contrary to the note
+above that they cannot. **Timeline entries merged from this pass:** 6 bullets across
+`ai-trade-bear-turn`, `nvidia-vendor-financing`, `frontier-model-gov-review-precedent`,
+`bigtech-into-health` and `ai-therapy-regulatory-reckoning`.

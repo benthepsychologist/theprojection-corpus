@@ -22,9 +22,14 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-23 — Brent reverses its overnight dip toward $98.50 and trades near $101 as Iran answers Trump's "annihilate" threat
+
+- **Brent crude reversed its overnight losses on 09-23, trading near $100 to $101 a barrel after dipping toward $98.50, a level that would have extended its losing streak to a sixth session, as Iran's military called President Trump's threat to "annihilate" it a sign of "strategic desperation."** Iran's General Staff warned of strikes "more crushing" than earlier in the nearly seven-month war and Tehran laid out conditions for reopening the Strait of Hormuz. WTI was near $91 (November contract). ⏱ Intraday reads as of about 10am ET; no settle yet. ([CNBC, Treasury yields and oil](https://www.cnbc.com/2026/09/23/treasury-yields-oil-inflation-fed.html), [CNBC, Iran and Hormuz](https://www.cnbc.com/2026/09/23/us-iran-war-trump-hormuz.html)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-22 — Brent drops toward $99 and WTI falls over 2% on Iran's Hormuz-reopening offer, a fifth straight losing session
 
 - **Brent crude fell below $99 a barrel Tuesday and WTI declined more than 2%, extending a losing streak into a fifth straight session, after Reuters reported Iran's offer to reopen the Strait of Hormuz within seven days if the US eases its blockade** — Brent fell more than 3.5% off the day's high. CNBC separately reported Brent down 1.8% intraday to $98.56 and WTI down 2.3% to $93.60, citing UN General Assembly diplomatic hopes and a partial recovery in Saudi exports as compounding drivers. ⏱ Intraday Tuesday quotes; no settle price found yet. ([US News, Reuters wire](https://www.usnews.com/news/world/articles/2026-09-22/iran-ready-to-reopen-strait-of-hormuz-if-us-eases-military-pressure-and-lifts-blockade-senior-official-says), [CNBC](https://www.cnbc.com/2026/09/22/oil-iran-us-bessent-un-crude.html)) ⟨daily 2026-09-22⟩
+- **Treasury Secretary Scott Bessent said on 09-22 the Trump administration is examining whether a full or partial ban on US diesel exports is feasible, and President Trump said he supports one and that a decision would come quickly "one way or another."** US diesel hit a record $6.53 a gallon (AAA), almost $3 above a year ago, with California at $8.44; Russia already has a diesel export ban, and the American Petroleum Institute warned that restricting exports "would only compound the problem." A Dow Jones Energy analyst said a ban would help prices in the short term but hurt over the long term. ([CNBC](https://www.cnbc.com/2026/09/22/trump-diesel-export-ban-urkaine-russia-iran.html)) ⟨daily 2026-09-22⟩
 
 ## 2026-09-21 — The decline holds into Monday's US session; both benchmarks trade under $100
 

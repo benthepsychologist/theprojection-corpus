@@ -1329,7 +1329,9 @@ expectations:
     logged: 2026-08-07
     logged_by: curate-add   # per-question research wave (mh-q06 memo)
     status: pending
-
+    # 2026-09-23 ⟨daily⟩: still pending, and the date itself is soft. The 09-23 conference date rests on a plaintiff's
+    # blog dated 08-25; the court portal is interactive and no report, minute order or continuance surfaced. If nothing
+    # turns up within three days treat as unverifiable rather than passed-silent.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -1461,6 +1463,9 @@ expectations:
       disclosed. due_precision is month so the window runs to 09-30;
       stays pending, flip to passed-silent only if 09-30 passes with
       nothing.
+    # 2026-09-23 ⟨daily⟩: seventh negative check. Adjacent, NOT qualifying: Nvidia's $2bn commitment to Brookfield's Global AI Infrastructure Fund
+    # (Bloomberg 09-17; anchor stake disclosed last year, this is the size reveal) and Firmus $10bn financing talks (Nvidia is investor/supplier, no lenders named).
+    # Blackstone, KKR, BlackRock and Goldman newsrooms were unreachable to urllib.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2558,8 +2563,8 @@ expectations:
 
   - id: anthropic-dow-appeal-window
     claim: "The government appeals Judge Rita F. Lin's permanent injunction in Anthropic PBC v. U.S. Department of War (N.D. Cal., No. 3:26-cv-01996-RFL) to the Ninth Circuit, or the appeal window closes without one"
-    due: 2026-09-28
-    due_precision: month
+    due: 2026-10-26
+    due_precision: day
     thread: frontier-model-gov-review-precedent
     entities: [anthropic]
     source: https://www.cnbc.com/2026/08/28/judge-blocks-pentagon-blacklist--anthropic-.html
@@ -2577,7 +2582,10 @@ expectations:
     logged: 2026-08-28
     logged_by: curate-add
     status: pending
-
+    # 2026-09-23 ⟨daily⟩: DUE DATE RE-BASED 09-28 -> 10-26. Judgment was entered 08-27 (N.D. Cal. dkt 252). The 09-28 figure was the 30-day
+    # window; where the United States or an agency is a party FRAP 4(a)(1)(B) gives 60 days, i.e. Monday 10-26. Left at 09-28 it would have gone
+    # falsely passed-silent. No notice of appeal on the CourtListener index (last entry 08-28) or in news; D.C. Cir. 26-1049 (argued 05-19) has no opinion;
+    # Ninth Cir. 26-2011 is stayed by the 04-27 order. RECAP mirrors uploads only, so silence is soft evidence.
   - id: china-remote-access-rule-to-industry
     claim: "The administration shares its draft rule restricting Chinese firms' remote/cloud access to US AI chips (the 'cut-down AI diffusion rule') with industry"
     due: 2026-09-30
@@ -3298,7 +3306,7 @@ expectations:
     # (Iran signaling it could reopen the Strait within 7 days if the US
     # eases military pressure) is about the wider conflict track, not this
     # zone declaration. Grace runs to 09-24; two days remain.
-
+    # 2026-09-23 ⟨daily⟩: no zone coordinates or named enforcement after 09-09 in any lane read; grace ends 09-24.
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
       Russia carries out no strikes on Kyiv for three days from midnight
@@ -3460,7 +3468,15 @@ expectations:
       discovery against them.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-18
+    evidence: >
+      CourtListener docket 72199828: dkt 126 (2026-09-18) is the parties' stipulation
+      with the proposed coordination / case-management order; dkt 127 (2026-09-21)
+      is Judge Lee granting it, in both 5:26-cv-00880 and 5:26-cv-02334. Filed five
+      days ahead of the 09-23 date. The order text itself sits behind PACER and was
+      not read; the docket entries were.
+    # 2026-09-23 ⟨daily⟩: HIT (ledger check). Also: Anthropic filed an amended answer 09-22 (dkt 130).
 
   - id: us-china-ai-safety-talks-mid-sept
     claim: >
@@ -3549,6 +3565,8 @@ expectations:
     logged: 2026-09-21
     logged_by: curate-add
     status: pending
+    # 2026-09-23 ⟨daily⟩: still one-sided. Only the US side (Bessent) has described the mechanism; China's MFA sidestepped twice on 09-22 and the
+    # 09-23 briefing carried no AI content. Xinhua says only that the sides 'held dialogues on AI-related issues'.
   - id: trump-xi-washington-summit-0924
     claim: >
       Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
@@ -3568,7 +3586,9 @@ expectations:
     logged: 2026-09-15
     logged_by: curate-add
     status: pending
-
+    # 2026-09-23 ⟨daily⟩: source note stale — China's foreign ministry confirmed the 09-23 to 09-25 state visit on 09-21. Xi arrives
+    # Wednesday 09-23; talks Thursday 09-24, tea/National Archives 09-25; state dinner guests reported to include Altman, Nadella, Cook,
+    # Huang, Bezos, Musk, Zuckerberg. No postponement found.
   - id: saxony-anhalt-election-result-0906
     claim: >
       Saxony-Anhalt's state election on Sunday 09-06 produces a preliminary
@@ -3758,7 +3778,10 @@ expectations:
       2 NAV loan from $5.4bn to $9bn, and 09-18's SoftBank Arm-backed
       margin loan increase from $20bn to $25bn — SoftBank is working
       other financing levers in parallel rather than repricing this one.
-
+    # 2026-09-23 ⟨daily⟩: CLAIM CORRECTED. SoftBank's own 09-09 release says the whole $25.9bn bridge was prepaid on 09-15, so this
+    # bond does not fund that payoff; per TNW/SoftBank IR the proceeds fund the $10bn third OpenAI instalment due 10-01. Deal is $10bn USD
+    # (3.5/5.5/7.5-yr, price talk 8.75%-9.875%, >$20bn early demand) + EUR1bn, books close noon ET 09-23 (Reuters term sheet via The Standard),
+    # settlement 09-29 — so pricing is likely to land the afternoon of 09-23 ET (09-24 Tokyo). Resolves on final terms.
   - id: ofac-gl-cc-winddown-0919
     claim: >
       OFAC General Licence CC's wind-down authorization expires at 12:01 a.m.
@@ -3811,7 +3834,18 @@ expectations:
       airspace closure compound on the same trade lanes.
     logged: 2026-09-11
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-23
+    evidence: >
+      The deadline passed at 12:01 a.m. EDT 2026-09-23 with no extension or
+      amendment: OFAC's recent-actions page through 09-23 shows none, and Federal
+      Register 09-23 carries only routine wind-down licences (Web GLs Y and Z). The
+      operational consequence is visible: Iran's Civil Aviation Organization said
+      flights to Baghdad and Muscat stop from midnight Wednesday (Al Jazeera 09-22),
+      and Bessent said Iranian airlines are shut down around the world from 09-23.
+      Wording note: after the deadline these payments need a specific OFAC licence
+      rather than being prohibited outright.
+    # 2026-09-23 ⟨daily⟩: HIT on the deadline; carrier rerouting fallout not yet reported.
 
   - id: openai-hawley-response-1001
     claim: >
@@ -3924,7 +3958,15 @@ expectations:
     what_confirms: "the signature/veto itself, or the bill lapsing into law unsigned after 10 days"
     logged: 2026-09-17
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-18
+    evidence: >
+      Signed 2026-09-18 as the "Lindsey O. Graham Sanctioning Russia and Iran Act of
+      2026" (CBS 09-18; Reuters via Moscow Times 09-19), nine days ahead of the 09-27
+      window. Trump repeated "last week I signed" in his 09-22 UN address (Kyiv
+      Independent). Tariff authority under the act is discretionary, so the
+      consequence to watch is whether he uses it, not whether it was signed.
+    # 2026-09-23 ⟨daily⟩: HIT (ledger check; world-news sweep concurred).
 
   - id: pezeshkian-unga-address-0923
     claim: "Iranian President Masoud Pezeshkian addresses the UN General Assembly in New York on 2026-09-23, after the US agreed to admit a scaled-down Iranian core delegation"
@@ -3936,5 +3978,224 @@ expectations:
     confidence: reported
     what_confirms: "the speech itself, and whether it offers or rejects terms for talks while Trump meets Gulf leaders at the same Assembly"
     logged: 2026-09-18
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-09-23
+    evidence: >
+      Pezeshkian addressed the General Assembly on 09-23 and answered Trump's 09-22
+      speech directly ("the US president described us as terrorists; we have been the
+      victims of terrorism"); the US delegation walked out (Guardian live blog,
+      modified 15:04Z 09-23). On the nuclear file he said "no nuclear weapons and no
+      limitations to peaceful nuclear technology"; no specific new terms in the
+      coverage read.
+    # 2026-09-23 ⟨daily⟩: HIT (world-news sweep + main-session read of the Guardian live blog).
+  - id: unsc-ai-session-2026-09-23
+    claim: >
+      The UN Security Council holds a France-chaired high-level briefing on AI and international security, its first meeting on loss-of-control risk, with Altman (in person), Amodei and Hugging Face's Delangue (remote) and Bengio briefing; DeepSeek and Moonshot were reported invited.
+    due: 2026-09-23
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: [openai, anthropic]
+    source: https://www.securitycouncilreport.org/whatsinblue/2026/09/artificial-intelligence-high-level-briefing-2.php
+    confidence: confirmed
+    what_confirms: >
+      The session held and its readout or statements; whether the Chinese labs actually spoke (Reuters exclusive, not verified).
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: trump-xi-trade-truce-extension-0925
+    claim: >
+      Trump and Xi announce an extension of the Busan trade truce, which expires 11-10.
+    due: 2026-09-25
+    due_precision: day
+    thread: china-stack-independence
+    entities: []
+    source: https://www.abc.net.au/news/2026-09-23/donald-trump-xi-jinping-meeting-washington-trade-ai/107179684
+    confidence: rumored
+    what_confirms: >
+      An announced extension or a readout naming the 11-10 expiry; the 09-20 Manhattan talks left the expiry unaddressed.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: softbank-bond-settlement-0929
+    claim: >
+      SoftBank's USD and EUR notes settle, if they price on schedule.
+    due: 2026-09-29
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank]
+    source: https://thenextweb.com/news/softbank-bond-openai-october-instalment
+    confidence: reported
+    what_confirms: >
+      Settlement of both tranches; a failed or repriced deal would be the informative outcome.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: softbank-openai-tranche3-payment-1001
+    claim: >
+      SoftBank funds its $10bn third instalment to OpenAI.
+    due: 2026-10-01
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank, openai]
+    source: https://group.softbank/en/news/press/20260909
+    confidence: confirmed
+    what_confirms: >
+      SoftBank or OpenAI confirming the payment; the bond proceeds are stated as funding it.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: digitalbridge-softbank-close-0929
+    claim: >
+      SoftBank's $16-a-share cash takeover of DigitalBridge closes, DigitalBridge having said on 09-22 it holds every regulatory approval and closing is expected within five business days.
+    due: 2026-09-29
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank]
+    source: https://citybiz.co/article/digitalbridge-secures-regulatory-approvals-for-softbank-acquisition/
+    confidence: reported
+    what_confirms: >
+      Closing announcement or delisting notice.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: anthropic-sonnet-haiku-5-5
+    claim: >
+      Anthropic ships Sonnet 5.5 and Haiku 5.5 'in the coming weeks' after Opus 5.5 (09-22).
+    due: 2026-10-31
+    due_precision: month
+    thread: enterprise-agent-product-race
+    entities: [anthropic]
+    source: https://www.anthropic.com/news/claude-opus-5-5
+    confidence: confirmed
+    what_confirms: >
+      Availability of both models on anthropic.com/news and the API model list.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: microsoft-mai-code-consultation-close
+    claim: >
+      Microsoft AI's six-week consultation on its Humanist AI Code of Conduct (opened 09-14) closes.
+    due: 2026-10-26
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: [microsoft]
+    source: https://microsoft.ai/news/mai-code-of-conduct/
+    confidence: confirmed
+    what_confirms: >
+      Close of the comment period and any published summary of responses.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: micron-fq4-earnings-0930
+    claim: >
+      Micron reports fiscal Q4 2026 results; the read is whether FY27 capex holds above the mid-$40bn range and the guide of about $50bn revenue.
+    due: 2026-09-30
+    due_precision: day
+    thread: ai-power-buildout
+    entities: [micron]
+    source: https://investors.micron.com/news/press-release/2026/Micron-Technology-to-Report-Fiscal-Fourth-Quarter-Results-on-September-30-2026/default.aspx
+    confidence: confirmed
+    what_confirms: >
+      The release itself: capex guidance and HBM commentary.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: loudoun-pause-resolution-1020
+    claim: >
+      Loudoun County staff return with the formal resolution for the 12-month pause on new data-center applications voted 09-15/16.
+    due: 2026-10-20
+    due_precision: day
+    thread: ai-datacenter-sites
+    entities: []
+    source: https://www.datacenterdynamics.com/en/news/virginias-loudoun-county-board-votes-to-pause-new-data-center-applications/
+    confidence: reported
+    what_confirms: >
+      The board adopting the resolution at or after its 10-20 meeting.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: sb-energy-ipo-prices
+    claim: >
+      SB Energy prices its roughly $50bn IPO. Reporting conflicts: NYT/FT (09-21) say it slowed for lack of buyers, Bloomberg says marketing waits on SEC review, and one unsourced report says mid-to-late October is unchanged.
+    due: 2026-10-31
+    due_precision: month
+    thread: nvidia-vendor-financing
+    entities: [nvidia, softbank]
+    source: https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002133037&type=S-1
+    confidence: rumored
+    what_confirms: >
+      A priced offering or an S-1/A with a filled price range; S-1/A No. 2 of 09-21 still has it blank.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: firmus-asx-ipo-launch-1006
+    claim: >
+      Firmus launches an ASX IPO of roughly A$7bn (about US$5bn) on 10-06 for a 10-22 debut, per a term sheet seen by Reuters.
+    due: 2026-10-06
+    due_precision: day
+    thread: nvidia-vendor-financing
+    entities: [nvidia]
+    source: https://www.startupdaily.net/topic/asx/ai-data-centre-startup-firmus-gears-up-to-raise-7-billion-for-an-asx-ipo-next-month/
+    confidence: reported
+    what_confirms: >
+      The prospectus lodging (due 10-08) and bookbuilding opening 10-06.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: dea-tryptamine-schedule-i-comments-1023
+    claim: >
+      Comment period closes on DEA's proposed Schedule I placement of five tryptamines including 4-OH-DiPT.
+    due: 2026-10-23
+    due_precision: day
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://www.federalregister.gov/documents/2026/09/23/2026-19400/schedules-of-controlled-substances-placement-of-4-hydroxy-nn-diisopropyltryptamine-4-oh-dipt
+    confidence: confirmed
+    what_confirms: >
+      Close of comments and any final rule.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: mexico-school-phone-ban-effective-1103
+    claim: >
+      Mexico's nationwide school phone ban takes effect.
+    due: 2026-11-03
+    due_precision: day
+    thread: social-media-causality-fight
+    entities: []
+    source: https://www.internazionale.it/ultime-notizie-reuters/2026/09/23/mexico-classrooms-go-phone-free-under-new-school-rules
+    confidence: reported
+    what_confirms: >
+      The rule in force and any enforcement guidance.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: ny-raise-act-registration-opens-2026-11
+    claim: >
+      New York's RAISE Act frontier-developer registration opens in November, with 72-hour incident reporting, per Gov. Hochul (09-21).
+    due: 2026-11-30
+    due_precision: month
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.nbcnewyork.com/news/tech/ai-safety-incidents-new-york/6550106/
+    confidence: reported
+    what_confirms: >
+      The registration portal opening and the DIGIT office staffed.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+  - id: board-of-peace-gaza-recovery-plan-0923
+    claim: >
+      The Board of Peace unveils a $2.45bn six-month Gaza recovery plan on 09-23 (Axios).
+    due: 2026-09-23
+    due_precision: day
+    thread: gaza-war
+    entities: []
+    source: https://www.aa.com.tr/en/middle-east/israel-kills-3-in-gaza-raising-death-toll-from-genocide-to-73-922-health-ministry-/4066156
+    confidence: rumored
+    what_confirms: >
+      The plan's publication and funding commitments; single-outlet as logged.
+    logged: 2026-09-23
     logged_by: curate-add
     status: pending

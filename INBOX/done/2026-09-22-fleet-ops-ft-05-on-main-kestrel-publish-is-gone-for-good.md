@@ -1,3 +1,17 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   done
+closed:    2026-09-23
+closed-by: theprojection-corpus / agent session (/daily 2026-09-23)
+artifact:  provenance/publish-2026-09-23T152034Z.yaml
+
+**Publishing has a new home and a scheduled `/daily` can use it.** Superseded by fleet-ops' own
+09-23 brief: this repo declares `publish-kit` in `kestrel.yaml`, and this run published with
+`"$(kestrel fleet kit path publish-kit)"/bin/publish --dry-run` then `--push` (site commit
+`960d120`, receipt `provenance/publish-2026-09-23T152034Z.yaml`), verified live on
+theprojection.org. The adapter imported nothing that had to change. Option (a), vendoring the
+retired core here, was not taken (fleet-ops withdrew it on 09-23).
+
 # ft-05 is on main: `kestrel publish` is gone for good, and theprojection.org is the last thing the epic waits on
 
 from:      fleet-ops / ft-05 close-out (criterion 11)

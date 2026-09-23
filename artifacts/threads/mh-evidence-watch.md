@@ -16,6 +16,10 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-09-23 — A randomized test of a Soteria-style inpatient unit for acute psychosis is registered
+
+- **A Jerusalem Mental Health Center randomized trial compares a closed psychiatric ward built around Soteria principles with a conventional closed ward for adults in acute psychosis.** 200 participants are planned, enrolling since September 2025; outcomes include psychotic symptom severity, therapeutic alliance, one-year readmission and antipsychotic dose. ([ClinicalTrials.gov NCT07836348](https://clinicaltrials.gov/study/NCT07836348)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-11 — A 2,477-person Swedish trial finds format, not modality, is the constraint on unguided internet therapy; a small Korean trial and a wire-sourced suicide-epidemiology finding round out the day
 
 - **A Swedish factorial RCT of 2,477 people found unguided internet-delivered CBT and unguided internet-delivered psychodynamic therapy equally effective for depression and anxiety (d = 0.38–0.65 against waitlist), gains holding at 24 months — but participants completed fewer than half the treatment modules on average, extending treatment from 8 to 16 weeks added nothing, and peer-forum access added no benefit.** Lindqvist, Mechler, Hlynsson, Andersson and Carlbring, *Internet Interventions*, a 3×2×2 design crossing treatment arm (Unified Protocol CBT, affect-focused psychodynamic therapy, waitlist) with duration (8 vs 16 weeks) and peer-forum access. Head to head, the two modalities did not differ. This is this thread's anchor finding restated with a large trial: the format's adherence ceiling, not the treatment model inside it, is what's binding — evidence that expands understanding of reach and dropout, not of efficacy beyond what's already established.

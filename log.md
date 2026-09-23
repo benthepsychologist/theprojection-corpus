@@ -11587,3 +11587,119 @@ three stand (German/European hard-right advance and campus duty of care
 both on their final offering, China's humanoid-robotics financing cycle
 new). One flag: US strikes on alleged drug boats have no thread anywhere on
 the map, and today's UN finding put them on two front pages.
+
+## 2026-09-23 ~10:00-11:50 ET — `/daily`: closed out two runs that died uncommitted, finalized Tuesday 09-22 (coverage critic found five real gaps), opened Wednesday 09-23, and published the site through publish-kit
+
+**What was found at the start.** The tree was dirty (36 modified files, the 09-22
+digests untracked) and `log.md` ended at 09-21 15:00. The `.agents/runs/` receipts
+for 09-22 10:00 ET (28 min) and 15:00 ET (6.5 min) both say `exit=0 outcome=ok`, and
+both logs end on a line about waiting for the collector. Same failure as 09-18/19:
+the runs ended their turn to wait, in a headless session where nothing wakes them.
+The 10:00 run had finalized 09-21 (critic pass, graph feed, ledger) and built Tuesday's
+morning digests; the 15:00 run collected and dispatched two sweeps but never
+integrated them. **First act: checkpoint-committed and pushed that tree** (`a7c7d71`)
+so this run could not lose it, then worked forward. Tuesday's afternoon and evening
+were therefore never read until this run.
+
+**Publishing works again.** Fleet-ops' ft-05 close-out (two INBOX briefs, 09-22 and
+09-23) had already declared `publish-kit` in `kestrel.yaml`, adopted the old engine
+`/publish` skill copy, and pushed the site once. This run used the kit's own command,
+`"$(kestrel fleet kit path publish-kit)"/bin/publish --dry-run` then `--push`, from
+this repo's root with `THEPROJECTION_SITE_DIR` and `KESTREL_INSTANCE` set. Result: 105
+thread pages, 1,525 story pages, 753 claim pages, 122 map pages, 8 interpretation
+pages; site commit `960d120` pushed 15:20Z; receipt
+`provenance/publish-2026-09-23T152034Z.yaml`. **Verified live** (not just pushed):
+theprojection.org/news/ served Tigray and the 09-23 items within a minute, and
+/threads/china-stack-independence/ carried the Alibaba Zhenwu entry. The GC page's
+"Updated Sep 6" is the audio-briefing stamp (the kokoro venv is still gone), not staleness.
+
+**Collectors and agents.** Collectors first (14:01Z, `--since 2026-09-22T14:00Z`, all
+three env vars, the four news lanes as separate detached processes plus a sequential
+fast-lane loop): rss +882, gdelt +42, sec_edgar 345, federal_register 48,
+clinicaltrials 419, github 21, semantic_scholar 67, `google_news_rss` 12,118 rows
+(landed 14:28Z, 27 min in). Wave 1, eight sonnet agents in one message: four lens
+sweeps (A, G, M, W, each owning two digest files), ledger check (L), cold rotation (R),
+two hot clusters (H1 AI/China/governance, H2 buildout). Wave 2, three agents: full
+buffer triage of the newly landed news file with a name pass (Z), coverage critic for
+09-22 (C), financing hot cluster (H3). Four site-briefing agents after the digests
+settled. **The session's WebSearch budget (200 calls) was exhausted by wave 1**; wave 2
+and everything after ran on urllib alone (Google News RSS, EDGAR, publisher pages,
+`r.jina.ai`). No agent stalled, and every one was foreground.
+
+**Merge.** 128 staged timeline bullets across 44 threads, additive dry run first, with a
+second guard added to the recreated `/tmp/merge_entries.py`: a bullet is skipped if its
+first URL is already on the thread (it skipped 5 cross-agent duplicates). Reconciled
+against every agent's own count; zero slug-line leaks; zero lint problems (two "we" hits
+were inside quotations). `last_seen` bumped on 44 threads (late catches dated to old
+days deliberately do not bump). Nine actor roll-ups refreshed.
+
+**Corrections to earlier text.**
+- The BC v. OpenAI timeline entry had called the suit "a new plaintiff type and a new
+  harm type" and said "negligence": Pennsylvania v. Character.AI and the 09-02 Tumbler
+  Ridge family suits already made both untrue, and the complaint pleads eight counts.
+  Fixed in the thread and the digest.
+- "SB Energy's IPO nears pricing" (morning digest, thread heading, this run's own first
+  draft) was contradicted by Bloomberg and Reuters (roadshow held pending SEC review;
+  NYT and FT reported buyers scarce). Fixed in the digest and thread.
+- **I wrote two source URLs from memory into the 09-22 global-capital digest while
+  patching it** (a Bloomberg and a Kitco link). The Bloomberg URLs happened to match the
+  critic's verified ones; the Kitco one did not exist and was replaced with the critic's
+  Reuters URL. Every URL added by hand in this run was then checked against a staged
+  entry. Lesson: paste from the staging file, never compose a URL.
+- The 09-22 world-news digest stated Tigray's Alamata casualty claim as fact; now
+  attributed ("Tigray said").
+
+**Ledger.** Four hits: `concord-ii-coordination-order-0923` (filed 09-18, granted 09-21),
+`trump-graham-sanctions-bill-signature` (signed 09-18), `ofac-gl-dd-winddown-0923`,
+`pezeshkian-unga-address-0923` (read the Guardian live blog myself). **`anthropic-dow-appeal-window`
+re-based 09-28 to 10-26** (60-day federal-party window under FRAP 4(a)(1)(B); the entry
+would have gone falsely passed-silent). `softbank-openai-bridge-bond-pricing-0917`'s claim
+corrected (bridge prepaid 09-15; the bond funds the 10-01 OpenAI instalment), pricing
+now expected the afternoon of 09-23. Seventh negative check on
+`nvidia-500b-financing-first-close`. 15 new dated entries (curate-add). 132 total, YAML
+safe_load clean.
+
+**Critic (09-22).** No benchmark led with a story the digests lacked, but a wire check
+found five real gaps: the S&P Financials selloff on AI-agent fears (missed entirely by
+the global-capital digest, which called the tape "calm"), Nvidia's decade-low multiple, SB
+Energy's delay, Bessent as AI-czar frontrunner, and Anthropic/OpenEvidence's free clinical
+AI for ~100 countries. All folded into digests and timelines. Tooling finding for
+`sources/benchmarks.yaml`: `r.jina.ai` returns 403 to a Chrome-style UA but 200 to a bare
+`Mozilla/5.0`, reviving Axios, Bloomberg, MobiHealth and the Neuron; the 09-10 note calling
+MobiHealth's proxy feed a "genuine block" used the wrong UA. Not edited into
+`benchmarks.yaml` this run.
+
+**Days.** 09-22 flipped `final` (`coverage: done` for the three critic lenses, `na` for
+world-news). 09-23 opened `building`: a morning-only pass, intraday reads labelled.
+Graph: ingesters run (they have no argparse, so `--help` executed them; idempotent, no
+harm), `validate.py` OK at 5,975 atoms / 10,022 relationships.
+
+**Site briefings.** Four agents, `--apply` 4/4, `--export` wrote 154 scopes. The front
+pack still holds only 60 of 261 news items (the cap is by severity then iteration order),
+so it carries no Tuesday world-news; the lens packs held what mattered. The fleet-ops
+brief on this (09-20) is already fixed in code by `a93b93f`; settled.
+
+**Map changes today.** `attention/threads.yaml`: 44 `last_seen` bumps, no opens or
+closes. `attention/upcoming.yaml`: above. `attention/actor-doing.yaml`: `anthropic`,
+`openai`, `meta-ai`, `softbank`, `coreweave`, `nvidia`, `united-states`, `alibaba-qwen`,
+`deepseek`. No flash: the Tigray fighting was the closest call and did not lead BBC's or
+Al Jazeera's front page. Thread candidates offered (Ben decides): `ai-agent-disruption-trade`,
+chatbot-enabled violence against third parties, South Sudan's election run-up (final offer).
+Dropped under the one-reoffer rule: the Greenland pact, IIT Bombay, `embodied-ai-safety-benchmarks`.
+
+**Frictions worth acting on.**
+- `.claude/skills/publish` is a dangling symlink into
+  `~/.cache/kestrel/kits/publish-kit/_floating/skills/publish`; the cache has only
+  `publish-kit/main`. `/publish` therefore cannot be invoked by name. Dropped a brief in
+  fleet-ops' INBOX (uncommitted, per the drop-and-stop rule). The kit's `bin/publish`
+  works by resolved path.
+- Sweep agents share `/tmp`; two overwrote each other's helper scripts. Brief agents to
+  use a private `/tmp/agent<X>/`.
+- One shared 200-call WebSearch budget per session: eight wave-1 agents spent it.
+
+**Where to pick up.** SoftBank's bond should have priced the afternoon of 09-23 (books
+closed noon ET): flip `softbank-openai-bridge-bond-pricing-0917` on final terms.
+Trump-Xi summit 09-24; `iran-hormuz-restricted-zone-boundaries` grace ends 09-24;
+`raine-jccp-cmc-0923` date unverified. 09-23 stays `building`; the next run finalizes it
+once ≥5h past 05:00 ET 09-24. The 09-23 morning read Zelensky's UN address and the
+Security Council session as not yet given: check both.

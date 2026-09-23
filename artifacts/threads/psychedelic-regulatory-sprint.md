@@ -15,6 +15,15 @@ rejected MDMA on unblinding/safety grounds and then wrote new trial-design
 rules (July 2026) addressing exactly the problem the accelerating trials
 share. The live question: is approval outrunning the methodology fix?
 
+## 2026-09-23 — Transcend registers a second Phase 3 of its methylone-derived PTSD drug
+
+- **Transcend Therapeutics registered EMPOWER-2, a second 300-patient Phase 3 of TSND-201, its methylone-derived drug for PTSD, with primary completion estimated February 2028.** The design mirrors EMPOWER-1 (weekly dosing for four weeks at one of two dose levels or placebo, an eight-week follow-up, CAPS-5 as primary outcome; primary completion estimated December 2027); EMPOWER-2 lists two US sites so far against 37 for EMPOWER-1. Sponsor-registered design only, no data. ([ClinicalTrials.gov NCT07836647](https://clinicaltrials.gov/study/NCT07836647), [EMPOWER-1 record](https://clinicaltrials.gov/study/NCT07456696)) ⟨daily 2026-09-23⟩
+- **The US Drug Enforcement Administration proposed on 09-23 placing five tryptamine hallucinogens (4-OH-DiPT, 5-MeO-AMT, 5-MeO-MiPT, 5-MeO-DET and DiPT) in Schedule I.** Comments are open until 10-23; if finalized the rule would apply Schedule I controls to manufacturing, distributing, importing, researching or possessing the five compounds. ([Federal Register](https://www.federalregister.gov/documents/2026/09/23/2026-19400/schedules-of-controlled-substances-placement-of-4-hydroxy-nn-diisopropyltryptamine-4-oh-dipt)) ⟨daily 2026-09-23⟩
+
+## 2026-09-22 — A university psilocybin-plus-DBT pilot for borderline personality disorder is registered
+
+- **The University of Minnesota registered ADEPT, a Phase 1 open-label pilot adding two 25 mg psilocybin sessions to dialectical behavior therapy for borderline personality disorder.** 18 participants are planned with a start estimated for December; the primary outcomes are safety, including acute suicidal ideation after dosing, and Filament Health is a collaborator. Registration only, no data. ([ClinicalTrials.gov NCT07833761](https://clinicaltrials.gov/study/NCT07833761)) ⟨daily 2026-09-22⟩
+
 ## 2026-09-16 — COMPASS gives a conference-circuit update: a possible first-half-2027 launch, and the dosing contrast with Spravato spelled out
 
 - **COMPASS Pathways told the Morgan Stanley 24th Annual Global Healthcare Conference (09-16) it is on track for a possible first-half-2027 launch for COMP360, its psilocybin depression drug, with the FDA's rolling priority review continuing toward a Q4-2026 final NDA submission.** No new trial data — the six-month Phase 3 durability figures already on this thread from July stand (remission 30-50%, response 40-50% in open-label follow-up) — but management spelled out the expected label for the first time in concrete terms: two initial doses minimum three weeks apart, then maintenance redosing "two to four times annually," against Spravato's 25-52 annual visits. That dosing contrast is the clearest read yet on how COMPASS is positioning against the market's one existing rapid-acting option.

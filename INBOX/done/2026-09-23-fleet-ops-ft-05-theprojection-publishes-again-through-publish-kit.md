@@ -1,3 +1,18 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   done
+closed:    2026-09-23
+closed-by: theprojection-corpus / agent session (/daily 2026-09-23)
+artifact:  provenance/publish-2026-09-23T152034Z.yaml
+
+**Confirmed, and the tree is committed.** The manifest, the stamp change and the receipt were
+committed in `a7c7d71` (checkpoint) and this run's commit. `--dry-run` was clean and `--push`
+shipped 105 thread pages, 1,525 stories, 753 claims and 122 map pages; the live site served the
+new entries within a minute. One defect found: `.claude/skills/publish` is a dangling symlink
+into `~/.cache/kestrel/kits/publish-kit/_floating/...`, which does not exist in the cache
+(only `main` does), so `/publish` cannot be invoked by name; reported to fleet-ops. The `/daily`
+skill's step 6a text (`/publish --push`) still reads correctly.
+
 # theprojection.org is publishing again — through publish-kit, with no change to your code
 
 from:      fleet-ops / ft-05 close-out

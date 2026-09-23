@@ -1,0 +1,42 @@
+# Interpretations for 2026-09-23 global-capital (Wednesday morning pass, as of
+# ~10am ET), keyed by slugify(bold lead[:50]). Read against
+# attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and this
+# map's treasury-long-end-intervention thread.
+
+us-business-activity-grew-at-its-fastest-pace-in-m:
+  mechanism: >
+    A composite PMI at a five-year high with input costs at a four-year high
+    and rising backlogs is the demand-led inflation story that Fed
+    presidents Musalem, Goolsbee and Collins made in words this week. It
+    raises the odds the Fed keeps hiking after 09-16, and higher expected
+    policy rates lift the 10-year, which is why yields jumped 7bp on the
+    release. The long end has mostly followed oil and the Fed rather than
+    Treasury's own buyback in September, and this is the Fed leg.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The 10-year holds above 5% through Thursday's claims data and the
+        09-24 SoftBank pricing, with October hike odds rising from about 53%,
+        tightening financing conditions for the AI-debt stack.
+      why: >
+        Strong activity plus surging input costs is the data mix that has
+        driven the long end higher before, and oil, which had been
+        offsetting it, bounced back Wednesday morning.
+      precedent: >
+        09-16 to 09-18: after the Fed's hike the 10-year cleared 5% and
+        closed at 5.01% on 09-18, its highest since 2007, tracking the
+        Fed/oil axis (`treasury-long-end-intervention` entries).
+    - direction: >
+        The PMI jump fades as a one-month survey reading, oil resumes its
+        decline on US-Iran diplomacy and the 10-year settles back below 5%.
+      why: >
+        Flash PMIs are revised and survey readings are noisy; the 10-year
+        ended Tuesday at 4.96% despite two hawkish Fed speeches because oil
+        fell for a fifth session.
+      precedent: >
+        09-17: an oil-driven rebound pulled the 10-year from above 5% to
+        4.93% at the close within a day of the post-hike selloff.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike
+    and still describes a 3.50%-3.75% hold; it is used for the long-end logic
+    only. All Wednesday levels are intraday reads.

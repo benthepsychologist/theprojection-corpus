@@ -5,6 +5,10 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-09-23 — A massive Israeli detonation in Khiam causes damage and a blackout across nearby districts
+
+- **A massive Israeli detonation overnight in the south Lebanon border town of Khiam caused widespread damage in nearby villages and a blackout across the Hasbaya, Shebaa and Arqoub regions, Lebanese outlet Naharnet reported, and Israeli artillery later shelled several villages including with white phosphorus.** Prime Minister Nawaf Salam was in New York seeking Arab and international support for Lebanon, and the US Embassy said it delivered 16 million rounds of ammunition to the Lebanese Army; the report rests on Naharnet alone and no Israeli comment was found. ([Naharnet](https://www.naharnet.com/stories/en/322661-israeli-detonation-in-khiam-leaves-widespread-destruction-across-nearby-towns)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-19 — A Hezbollah roadside bomb wounds two Israeli soldiers in the south Lebanon buffer zone; IDF strikes Hezbollah infrastructure in response
 
 - **A Hezbollah-planted roadside bomb detonated against an IDF engineering vehicle operating in Israel's military buffer zone in southern Lebanon Saturday (09-19), lightly wounding two soldiers who were evacuated to hospital in good condition.** The IDF responded with strikes on "several" Hezbollah sites across southern Lebanon, described as surveillance posts and infrastructure the group uses "to advance attacks." This is the most direct kinetic exchange this thread has logged since the France/Italy post-UNIFIL diplomatic push and the "positive" Washington envoys' meeting, both dated 09-18 below — the ceasefire's underlying friction continues alongside the diplomacy. ([Times of Israel](https://www.timesofisrael.com/liveblog-september-19-2026/)) ⟨daily 2026-09-19⟩

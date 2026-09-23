@@ -67,3 +67,128 @@ the-10-year-treasury-yield-fell-more-than-4bp-to-4:
     interpretation reads today's move against that snapshot's own
     logic (external-driver-not-buyback) rather than updating the
     standing reading itself, which is out of scope for a daily pass.
+
+# --- Added in the definitive Tuesday pass (09-23 10:00 ET run) ---
+
+softbank-s-roughly-11bn-bond-sale-to-fund-its-nex:
+  mechanism: >
+    SoftBank has to hand OpenAI $10bn on 10-01 and is raising it in the
+    junk-bond market at BB+ (S&P and Fitch), so the guidance of 8.75% to
+    9.875% is the marginal price of funding an AI-equity commitment with
+    unsecured debt when the 10-year Treasury sits near 5%. Books above $20bn
+    on a $10bn dollar deal say the window is open; the record coupons say
+    the price of keeping it open is rising, as with its 2031 notes moving
+    from 6.7% in January to 8.2% in early September.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The deal prices on 09-24 at or inside the initial talk on an
+        oversubscribed book and settles 09-29, confirming that access
+        holds at a higher price and keeping the 10-01 OpenAI payment
+        funded from the bond market rather than asset sales.
+      why: >
+        Every SoftBank financing lever this month cleared on demand above
+        target: the Arm-backed margin loan drew ~$7bn of offers against a
+        $3-5bn goal and was upsized from $20bn to $25bn on 09-18, and the
+        bridge loan was fully repaid on 09-15.
+      precedent: >
+        `softbank-all-in` 09-18 entry: the Arm margin loan was upsized to
+        $25bn on oversubscribed demand at SOFR+225bp, the same week the
+        dollar-bond timetable slipped without harm.
+    - direction: >
+        The bonds price wide of talk or trade poorly in the after-market,
+        repeating the pattern of AI-linked junk paper that clears at issue
+        and then reprices in secondary, and pushing the cost of the next
+        SoftBank raise higher.
+      why: >
+        A 9.875% seven-year coupon leaves little room; the Jane Street /
+        Oklahoma data-center green bond issued at ~8.9% in August already
+        trades at 11.3%, and Reuters reports AI issuers being forced to
+        pay concessions to complete deals.
+      precedent: >
+        The Jane Street 149MW Oklahoma lease-backed junk bond (issued
+        August, ~8.9%, now 11.3% in secondary), logged on
+        `ai-buildout-debt-risk`.
+  context_note: >
+    capital-context.yaml's rate_regime reading (asof 08-25) predates the
+    09-16 Fed hike and the 10-year's move to about 5%; it is read here for
+    its long-end-pressure logic only, not updated.
+
+investors-are-pricing-ai-related-investment-grade:
+  mechanism: >
+    Supply, not default risk: hyperscalers and their data-center vehicles
+    are expected to issue a record $420bn next year, and investors who fear
+    being over-concentrated in the same names demand a new-issue premium,
+    so AI issuers pay roughly 115bp against 78bp for the broad index. Buyers
+    are also aggregating parent-guaranteed vehicles back to the tech parent,
+    which shrinks how much any one buyer will hold and turns each large deal
+    into a test of the marginal bid.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The premium widens further as the 2027 supply arrives, and the first
+        deal that fails to clear at a workable concession forces capex
+        plans or financing structures to change.
+      why: >
+        Reuters reports some hyperscaler deals already drawing thinner
+        demand than marquee issuers are used to and trading poorly after
+        pricing, with investors deliberately holding cash to buy later at
+        wider spreads.
+      precedent: >
+        Alphabet's August sale needed a large concession (BNY research note
+        cited by Reuters) and the Jane Street Oklahoma bond has repriced
+        from ~8.9% to 11.3% in secondary.
+    - direction: >
+        The premium stays contained because the borrowers are cash-rich and
+        outside-AI buyers keep bidding, so the split is a pricing nuisance
+        rather than a rationing of credit.
+      why: >
+        Portfolio managers quoted by Reuters say they do not fear default,
+        and heavily oversubscribed AI-linked paper such as Meta's $2.3bn
+        CleanSpark-lease junk deal (~$10bn of demand) shows buyers exist at
+        the right yield.
+      precedent: >
+        Meta's 09-21 junk-rated lease deal drew about $10bn of orders for
+        $2.3bn at 8.25%, on `ai-circular-financing-risk`.
+  context_note: >
+    This reads Reuters' 09-22 survey of portfolio managers, not a market-wide
+    spread series; the 115bp and 78bp figures are Goldman and ICE BofA
+    readings cited there.
+
+st-louis-fed-president-alberto-musalem-said-monda:
+  mechanism: >
+    Two Fed presidents are tying inflation to demand, not just oil, and one
+    is naming AI data-center construction as a possible source of overheating.
+    That links the buildout to the policy rate: if officials read capex as
+    demand pressure, the reaction function that keeps the long end near 5%
+    is tied to the same spending that the bond and equity markets are
+    financing.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Hawkish talk plus strong data (Wednesday's flash PMIs, Thursday's
+        claims) firms the case for an October hike and pushes the 10-year
+        through last week's 5.04% high, tightening financing conditions for
+        the AI-debt stack.
+      why: >
+        Markets already price roughly even odds of a 10-28 hike, so any
+        confirmation of demand-led inflation moves the odds and the
+        long end together.
+      precedent: >
+        The 09-16 hike: the 10-year cleared 5% the next day and bank stocks
+        had their worst day since February (`treasury-long-end-intervention`
+        09-17 entry).
+    - direction: >
+        Falling oil offsets the hawkish tone and the long end stays in a
+        4.9-5.0% range, with Fed rhetoric largely priced.
+      why: >
+        The 10-year ended Tuesday unchanged at 4.96% despite both speeches,
+        after five oil declines took Brent down about 12%.
+      precedent: >
+        09-21: the 10-year fell more than 4bp to 4.951% on falling oil while
+        Musalem's Reuters interview was published the same day.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) still frames the Fed as
+    holding at 3.50%-3.75%; the target range is now 3.75%-4.00%, so this
+    reading is stale on the level and used here only for the reaction-function
+    logic.

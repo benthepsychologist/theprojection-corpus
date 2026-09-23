@@ -16,6 +16,10 @@ dispatched same day — entries land ⟨crawl 2026-08-04⟩.
 Finding: `artifacts/findings/globalfoundries-2026-08-04.md` · bundle:
 `artifacts/bundles/globalfoundries-2026-08-04/provenance.yaml`
 
+## 2026-09-21 — GlobalFoundries and SMART Photonics launch an open-access foundry service combining silicon and indium-phosphide photonics
+
+- **GlobalFoundries and Dutch chipmaker SMART Photonics launched what they call the industry's first commercial open-access foundry service combining silicon photonics with indium-phosphide lasers, modulators and amplifiers, targeting AI data centers, optical transceivers and lidar, with general availability planned for the second half of 2027.** The active indium-phosphide parts are flip-chip mounted into cavities in GlobalFoundries' silicon photonics chips after more than a year of joint engineering, so designers get both technologies through a foundry rather than building the integration themselves. It adds a customer-facing product to the silicon-photonics strand this thread tracks through the $300M photonics CHIPS award and the Marvell optical-capacity expansion. ([Bits&Chips](https://bits-chips.com/article/smart-photonics-and-globalfoundries-launch-joint-photonics-foundry-service/)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-17 — Marvell deal expands, and Japan floats GF as operator of a new US chip plant
 
 - **GlobalFoundries and Marvell Technology expanded their multi-year manufacturing agreement to increase capacity for silicon-germanium (SiGe) chips used in high-speed AI-data-center optical connections, at GlobalFoundries' Burlington, Vermont fab.** The expanded deal is meant to meet Marvell's demand for advanced optical-networking products — pluggable optical transceivers, near-packaged and co-packaged optics — driven by AI data centers' growing data-volume needs. GlobalFoundries shares rose about 4% and Marvell about 6.3% the same session. ([Reuters via Yahoo Finance](https://ca.finance.yahoo.com/news/globalfoundries-marvell-expand-chip-capacity-131025186.html)) ⟨daily 2026-09-21⟩

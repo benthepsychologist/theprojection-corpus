@@ -17,6 +17,14 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-23 — Three more killed; post-ceasefire toll 1,402; Board of Peace to unveil a $2.45bn six-month recovery plan
+
+- **Gaza's Health Ministry said three more Palestinians were killed and 18 injured in the 24 hours to Wednesday, taking the post-ceasefire toll to 1,402 killed and 4,881 wounded and the overall war toll to 73,922.** The ministry gave no circumstances for the latest deaths; a Board of Peace six-month, $2.45 billion, 66-project recovery plan — temporary housing, rubble clearance, hospital repair and a multinational security force — is reported, per Axios, to be unveiled at a meeting on Wednesday. ([Anadolu Agency](https://www.aa.com.tr/en/middle-east/israel-kills-3-in-gaza-raising-death-toll-from-genocide-to-73-922-health-ministry-/4066156), [Anadolu on the Board of Peace plan](https://www.aa.com.tr/en/middle-east/board-of-peace-to-unveil-245b-gaza-recovery-plan-report/4066202)) ⟨daily 2026-09-23⟩
+
+## 2026-09-22 — Israeli drone strikes kill three in Gaza City's Tuffah on the 348th day; post-ceasefire toll 1,399
+
+- **Israeli drone strikes on Tuesday evening in Gaza City's Tuffah neighbourhood killed three Palestinians — two near the Muscat school and one on al-Nafaq Street — as the Health Ministry's post-ceasefire toll reached 1,399 killed and 4,863 wounded.** The ministry's Tuesday update counted four killed by Israeli fire in 24 hours plus one who died of earlier wounds, and 25 injured; Palestinian media counted the day as the 348th consecutive day of ceasefire violations. Figures are the ministry's and local reporting, not independently verified. ([WAFA](https://english.wafa.ps/Pages/Details/175025), [Palestine Information Center](https://english.palinfo.com/news/2026/09/22/370612/), [Antiwar.com](https://news.antiwar.com/2026/09/22/israeli-strike-in-gaza-city-kills-two-palestinians/)) ⟨daily 2026-09-22⟩
+
 ## 2026-09-21 — Two more killed by Israeli fire; cumulative toll passes 1,395
 
 - **Two more Palestinians were killed by Israeli forces Monday morning: Ismail al-Bardawil, a child, died of gunshot wounds in the al-Mawasi area of Rafah, and Muhsen Ahmad Mustafa Bahja was shot in the head by an Israeli quadcopter drone in northern Gaza.** The Palestinian Health Ministry's cumulative post-ceasefire toll now stands at 1,395 killed and more than 4,830 injured, with 831 bodies recovered from rubble. Continues the low-boil pattern already extensively logged on this thread. ⚠️ Palestinian Health Ministry/family-sourced, the standing caveat for this thread. ([WAFA](https://english.wafa.ps/Pages/Details/174966)) ⟨daily 2026-09-21⟩

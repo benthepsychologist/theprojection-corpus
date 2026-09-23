@@ -1,3 +1,20 @@
+<!-- outcome block prepended on close; the brief follows unchanged below -->
+
+outcome:   done
+closed:    2026-09-23
+closed-by: theprojection-corpus / agent session (/daily 2026-09-23)
+artifact:  theprojection_pipeline/readouts.py
+
+**Already fixed in code before this brief was read; verified today.** `derive_sections()` now
+orders by severity before truncating (`_cap_by_severity`, commit `a93b93f`, 2026-09-20) and
+prints `[derive_sections] <scope>: news truncated N -> 60, dropped M` on the pack path only. On
+the 09-23 run the front pack showed 261 -> 60 with the 13 `sev=major` items first, and the
+stderr line appeared. One correction to the brief: there is no `salience()` function in the
+module (ranking is done by the model, instructed via the shape's rules); the mechanical signal
+is `sev`, which is what orders the slice. **Residual, not fixed:** among ordinary items the cut
+is still positional, so the front pack lost most of Tuesday's world-news and capital items on
+09-23 (the lens packs held them). A second-order ranking is a possible future change.
+
 # `readouts --pack` still truncates its news array by position — your own brief about it was stranded in a dead seat
 
 from:      fleet-ops / agent session

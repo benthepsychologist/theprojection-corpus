@@ -23,6 +23,10 @@ houses (Broadcom, Marvell), not the hyperscalers.
   ([Qualcomm/PR Newswire](https://www.prnewswire.com/news-releases/qualcomm-announces-multi-generational-product-collaboration-with-amazon-to-build-next-generation-ai-data-center-infrastructure-302871895.html), [CNBC](https://www.cnbc.com/2026/09/08/qualcomm-amazon-data-center-infrastructure-deal.html))
   ⟨daily 2026-09-14⟩
 
+## 2026-09-02 — Broadcom names Anthropic its likely largest custom-chip customer, with 5GW of next-generation TPUs planned for 2027
+
+- **Broadcom CEO Hock Tan said on the company's 09-02 earnings call that Anthropic "is on track to become our largest XPU customer in 2027 and sustain that in 2028."** Broadcom is deploying 1 gigawatt of Google's Ironwood TPU capacity for Anthropic in 2026, expects Anthropic to deploy another 5 gigawatts of the next-generation TPU v8i in 2027, and sees a further 10 gigawatts of potential Anthropic deployments in 2028; Tan also said production shipments of TPU v8i have begun. This is the sharpest evidence yet for this thread's anchor claim that a frontier lab running on custom silicon (rather than Nvidia GPUs) is real: the customer Broadcom expects to pass Google itself is a tenant, not a chip designer. It sits beside the OpenAI fourth-customer entry logged 09-17. ([Benzinga](https://www.benzinga.com/markets/tech/26/09/61594615/broadcom-ceo-hock-tan-anthropic-largest-xpu-customer-google-tpu-orders), [SiliconANGLE](https://siliconangle.com/2026/09/02/broadcom-beats-expectations-as-ai-labs-double-down-on-custom-chips/)) ⟨daily 2026-09-23⟩
+
 ## 2026-08-25 — Jalapeño's first public benchmarks land at Hot Chips
 
 - **OpenAI and Broadcom published Jalapeño's first performance
