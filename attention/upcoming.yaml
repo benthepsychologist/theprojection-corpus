@@ -1332,6 +1332,9 @@ expectations:
     # 2026-09-23 ⟨daily⟩: still pending, and the date itself is soft. The 09-23 conference date rests on a plaintiff's
     # blog dated 08-25; the court portal is interactive and no report, minute order or continuance surfaced. If nothing
     # turns up within three days treat as unverifiable rather than passed-silent.
+    # 2026-09-23 15:00 ET ⟨daily⟩: still nothing. CourtListener does not index the JCCP, the SF Superior Court
+    # portal is Turnstile-gated, and a Google News sweep found no post-hearing coverage. Per the note above,
+    # re-check through 09-26, then close as unverifiable rather than passed-silent.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -1466,6 +1469,8 @@ expectations:
     # 2026-09-23 ⟨daily⟩: seventh negative check. Adjacent, NOT qualifying: Nvidia's $2bn commitment to Brookfield's Global AI Infrastructure Fund
     # (Bloomberg 09-17; anchor stake disclosed last year, this is the size reveal) and Firmus $10bn financing talks (Nvidia is investor/supplier, no lenders named).
     # Blackstone, KKR, BlackRock and Goldman newsrooms were unreachable to urllib.
+    # 2026-09-23 15:00 ET ⟨daily⟩: eighth negative check (financing hot-cluster). Nvidia's newsroom RSS and
+    # the six partners show no named deal under the platform.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -3307,6 +3312,9 @@ expectations:
     # eases military pressure) is about the wider conflict track, not this
     # zone declaration. Grace runs to 09-24; two days remain.
     # 2026-09-23 ⟨daily⟩: no zone coordinates or named enforcement after 09-09 in any lane read; grace ends 09-24.
+    # 2026-09-23 15:00 ET ⟨daily⟩: still no boundaries. Pezeshkian's full UNGA address and Rezaei's same-day
+    # remarks ("will not reopen until conditions are met") drew no line. Grace ends 09-24: the next run flips
+    # this to passed-silent unless coordinates, a NOTAM/NAVTEX or a named enforcement action appear.
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
       Russia carries out no strikes on Kyiv for three days from midnight
@@ -3782,6 +3790,10 @@ expectations:
     # bond does not fund that payoff; per TNW/SoftBank IR the proceeds fund the $10bn third OpenAI instalment due 10-01. Deal is $10bn USD
     # (3.5/5.5/7.5-yr, price talk 8.75%-9.875%, >$20bn early demand) + EUR1bn, books close noon ET 09-23 (Reuters term sheet via The Standard),
     # settlement 09-29 — so pricing is likely to land the afternoon of 09-23 ET (09-24 Tokyo). Resolves on final terms.
+    # 2026-09-23 15:00 ET ⟨daily⟩: books closed at noon ET 09-23 with guidance tightened to 8.75-8.875% /
+    # 9.375-9.5% / 9.75-9.875% on $1bn / $4.5bn / $4.5bn dollar tranches and about $20bn of demand
+    # (Seoul Economic Daily; The Standard, term sheet). Pricing is Thursday 09-24, so the entry resolves
+    # on the next run.
   - id: ofac-gl-cc-winddown-0919
     claim: >
       OFAC General Licence CC's wind-down authorization expires at 12:01 a.m.
@@ -4002,7 +4014,17 @@ expectations:
       The session held and its readout or statements; whether the Chinese labs actually spoke (Reuters exclusive, not verified).
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-23
+    evidence: >
+      The Council met on the afternoon of 09-23 with France's Barrot in the chair. Amodei (remote):
+      "If managed poorly, I even believe that AI could be a risk to humanity as a whole." Altman (in
+      person): "the most important decisions cannot be made by labs in San Francisco alone." Bengio:
+      "The dangers are real and imminent." Delangue briefed (no quote surfaced). No Council product
+      (no resolution or presidential statement). Whether DeepSeek or Moonshot spoke was unconfirmed at
+      the time of the read. Reuters via Yahoo Finance (https://sg.finance.yahoo.com/news/ai-leaders-brief-un-amid-100457768.html);
+      AFP via Le Figaro.
+    # 2026-09-23 15:00 ET ⟨daily⟩: HIT (agent U read two wires; press.un.org SC/ release not yet posted).
   - id: trump-xi-trade-truce-extension-0925
     claim: >
       Trump and Xi announce an extension of the Busan trade truce, which expires 11-10.
@@ -4196,6 +4218,31 @@ expectations:
     confidence: rumored
     what_confirms: >
       The plan's publication and funding commitments; single-outlet as logged.
+    logged: 2026-09-23
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-09-23
+    evidence: >
+      The Board of Peace presented a $2.45bn, 66-project Gaza recovery plan at its own press
+      conference in New York on 09-23, with Nickolay Mladenov on the record (Al Jazeera,
+      https://www.aljazeera.com/news/2026/9/23/board-of-peace-plans-2-4bn-gaza-reconstruction-as-israel-kills-seven).
+      No longer single-outlet.
+    # 2026-09-23 15:00 ET ⟨daily⟩: HIT (world-news sweep).
+
+  - id: treasury-20-30y-buyback-0924
+    claim: "The US Treasury runs its scheduled 09-24 liquidity-support buyback of up to $6bn in 20- to 30-year nominal coupons (1:40-2pm ET, 35 issues eligible) and publishes the accepted amount"
+    due: 2026-09-24
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/buybacks_operations?sort=-operation_date&page[size]=2
+    confidence: confirmed
+    what_confirms: >
+      Treasury's results file: total par accepted against the $6bn maximum. The fill is the
+      informative part. The 09-10 operation in 10- to 20-year debt took $5.19bn of $6bn and
+      the 09-17 operation in 7- to 10-year debt took $2.385bn of $4bn; a full fill in the
+      longest bucket, a day after the 10-year hit 5.116%, would say holders want out at
+      these yields.
     logged: 2026-09-23
     logged_by: curate-add
     status: pending

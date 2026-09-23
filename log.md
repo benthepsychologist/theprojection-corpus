@@ -11703,3 +11703,96 @@ Trump-Xi summit 09-24; `iran-hormuz-restricted-zone-boundaries` grace ends 09-24
 `raine-jccp-cmc-0923` date unverified. 09-23 stays `building`; the next run finalizes it
 once ≥5h past 05:00 ET 09-24. The 09-23 morning read Zelensky's UN address and the
 Security Council session as not yet given: check both.
+
+## 2026-09-23 ~15:00-16:10 ET — `/daily`: extended Wednesday through the afternoon (the UN Security Council's AI session, the 10-year at a 2007 high, Xi en route), two ledger hits, and republished the site
+
+**Start state.** Clean tree; the 10:00 run had committed and pushed (`56eb289`) and
+its receipt matches. 09-22 is `final`, so this run only extends 09-23, which stays
+`building` until the next run (≥ 5h past 05:00 ET 09-24).
+
+**Collection.** All lanes relaunched detached at 19:00Z (`--since 13:30Z`, all
+three env vars). `rss` 19:02Z, `gdelt` 19:09Z, `sec_edgar` 19:12Z,
+`federal_register` 19:17Z, `clinicaltrials` 19:21Z (no new rows), `github` 19:21Z,
+`google_news_rss` **19:25Z** (25 minutes, 2,265 afternoon rows), `semantic_scholar`
+19:31Z. `openalex` wrote nothing: HTTP 429 on 485 terms, the known throttle.
+
+**Agents.** Wave 1 (8, foreground, sonnet): four lens agents (A, G, M, W) editing
+their 09-23 digests in place, hot clusters H1 China/Trump-Xi, H2 financing loop,
+H3 buildout, and Z buffer triage. All returned within ~15 minutes, before the
+Google News file landed. Wave 2 (3): U read the Security Council session as it ran,
+Z2 triaged the Google News file after it landed at 19:25Z, R ran the next
+cold-rotation slice (10 threads, 6 with late catches). Then four briefing agents.
+WebSearch use was light (about 43 calls in total); most discovery ran on Google
+News RSS and `r.jina.ai` + DuckDuckGo lite.
+
+**What the afternoon added.**
+- **UN Security Council, first AI loss-of-control session.** Amodei: poorly managed
+  AI "could be a risk to humanity as a whole"; Altman: the most important decisions
+  "cannot be made by labs in San Francisco alone"; Bengio: "real and imminent." No
+  Council product. From Reuters (via Yahoo) and AFP (via Le Figaro); UN News's live
+  page never updated past its preview, and no SC/ release was up.
+- **The 10-year at 5.116%** (+14bp, highest since July 2007) after the flash PMI, a
+  weak 5-year auction (5.033%, confirmed on TreasuryDirect) and Governor Barr;
+  FedWatch about 73% for October. Treasury's $6bn 20-30yr buyback for 09-24 was
+  confirmed on Fiscal Data (the prior $6bn operation was **09-10**, 10-20yr, $5.19bn;
+  the Z2 staging said 09-09 and was corrected before merge).
+- Xi left Beijing with a pared-back delegation (AP live coverage showed he had not
+  landed at read time; G's "arrived Wednesday evening" was reworded in the digest,
+  staging and throughline). SoftBank's books closed; pricing is Thursday.
+- World: Zelensky's and Pezeshkian's full UN addresses, Rubio-Lavrov, the Board of
+  Peace's $2.45bn plan, TPLF's "beginning of the war."
+- AI: Anthropic's wet-lab enzyme result, Artificial Analysis ranking Opus 5.5 first
+  (checked on AA's own page; the carry-forward from the critic is closed), Cisco
+  Talos's CLOSEDQUORUM, Schumer on chip exports, Microsoft's $10bn Gulf pledge, the
+  Gates Foundation's language-AI coalition, Oxford's colluding agents. The Cambridge
+  Boko Haram carry-forward resolved to a July study already on the map.
+- MH: OpenAI's MentalHealthBench, Prince Harry at CGI. Raine CMC: no court record.
+
+**Corrections made in this run (before anything published).**
+- A staged Buist v. Anthropic (the "pace the frontier" antitrust suit, filed 09-18)
+  as a `sev=major` late catch and wrote it into the frontier-ai throughline. The map
+  has carried it since 09-19; removed from digest, throughline and closing, and the
+  merge's URL guard skipped the staged copy.
+- U's bold lead and throughline glossed the Council remarks as "the industry cannot
+  govern itself"; replaced with the quotes (digest, thread, staging).
+- **Shared first URL, twice.** The morning Brent bullet and the afternoon 10-year
+  bullet both led with CNBC's continuously updated yields article, so the pack
+  deduped the 10-year story out of `breaking`; Brent's Iran/Hormuz CNBC link now
+  leads. The Altman/Amodei and Bengio bullets both led with the same Reuters URL;
+  Bengio was folded into the first bullet's body.
+- "CAUGHT LATE —" was in the Grok Bot bold lead (public copy); stripped in the digest
+  and the thread.
+- Gists truncate at about 240 characters, and the sentence splitter does not break
+  after a period inside a closing quote: the front, AI and capital first sentences
+  were shortened and the AI one reworded, then re-applied.
+- Main-session slip: a `str.replace('', X)` (empty search string from a mis-indexed
+  slice) interleaved text through the whole frontier-ai digest. Recovered exactly by
+  removing the unique inserted string, then re-applied the edits with asserts.
+
+**Ledger.** Hits: `unsc-ai-session-2026-09-23`, `board-of-peace-gaza-recovery-plan-0923`
+(six hits today in total). Dated notes, no flip: `softbank-openai-bridge-bond-pricing-0917`
+(prices 09-24), `raine-jccp-cmc-0923` (per its own note: re-check through 09-26, then
+unverifiable), `iran-hormuz-restricted-zone-boundaries` (flip to passed-silent at 09-24
+if still nothing), `nvidia-500b-financing-first-close` (eighth negative). New:
+`treasury-20-30y-buyback-0924`. 133 entries, safe_load clean.
+
+**Map changes.** 34 timeline bullets merged into 24 threads (dry run reconciled against
+every agent's count; one duplicate skipped by URL; slug-line check clean).
+`threads.yaml`: 14 `last_seen` bumps. `actor-doing.yaml`: anthropic, openai,
+microsoft, softbank, united-states, china. No opens or closes. No flash (BBC and
+Al Jazeera led with Pezeshkian). Thread candidates (first offer): AI-enabled malware
+and cybercrime, AI for science, Medicaid "medically frail" litigation. Dropped under
+the one-reoffer rule: `ai-agent-disruption-trade`, chatbot-enabled violence, South
+Sudan. `attention/world-news.yaml` is stale (built 09-07, GDELT event-code noise).
+
+**Site.** Four briefings applied (front 17/17 linked, AI 19/19, capital 21/21, MH
+20/21); `--export` 154 scopes. The capital briefing agent had used the morning's
+53.1% FedWatch as current; relabelled "on Wednesday morning." publish-kit dry run,
+then `--push`: 105 thread pages, 9 interpretations (3+4+2, no deletions), 154
+readouts, site commit `37a6937`. Graph: `03_expectations.py` (1 new, 2 restated) and
+`validate.py` OK at 5,976 atoms; the other ingesters wait for 09-23 to finalize.
+
+**Where to pick up.** Finalize 09-23 (closes, crude settle, coverage critic).
+Resolve SoftBank's pricing, the 20-30yr buyback fill, the Trump-Xi summit entries
+and the Hormuz grace end, all 09-24. Check press.un.org for the Council's SC/
+release and whether DeepSeek or Moonshot spoke.

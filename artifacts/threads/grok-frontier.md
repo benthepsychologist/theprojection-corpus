@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-22 — Grok Bot reported at 418,000 weekly users, a month after launch
+
+- 🕰 **SpaceXAI's enterprise Grok Bot agent reached 418,000 weekly users as of September 14, up 24% week-over-week, per a company presentation shown at a London event and reviewed by Bloomberg.** Bloomberg Intelligence separately put total Muse installs at about four times Grok Bot's. SpaceXAI did not respond to requests for comment. ([Briefs.co, citing Bloomberg](https://www.briefs.co/news/grok-bot-crosses-418-000-weekly-users-a-month-after-launch-a/), [TipRanks](https://www.tipranks.com/news/spacex-stock-socx-rises-as-grok-bot-hits-418000-weekly-users)) ⟨daily 2026-09-23, event 2026-09-22⟩
+
 ## 2026-09-21 — Grok 4.7 ships, ending three slips since July
 
 - **xAI shipped Grok 4.7 on 2026-09-21 — "our most capable model for coding and knowledge work," per its own launch post — available immediately in Cursor, Grok Build, the Grok API and third-party coding harnesses, priced at $2/$6 per million input/output tokens, flat versus Grok 4.6.** xAI says it used a new, larger base model with a longer reinforcement-learning run weighted toward multi-hour tasks, paired with "an entirely new safeguard stack" it calls its strongest yet on refusals and jailbreak resistance — 62.4% on LatchBio's biosafety benchmark and a 3.3% pass-through rate on risky dual-use cyber prompts on its own HackerBench v0.3. On xAI's own published benchmark table it trails GPT-5.6 Sol and Fable 5.1 on several software-engineering and terminal-work scores while leading both on EEBench (electrical engineering) and the Harvey legal-agent benchmark. This is the model whose ship date Musk pushed three times since a late-July "four weeks" promise, most recently slipping past a firm September 12 date on September 11 ("needs a few more days to cook"). ([xAI, primary](https://x.ai/news/grok-4-7)) ⟨daily 2026-09-21⟩

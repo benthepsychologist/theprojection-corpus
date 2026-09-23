@@ -40,3 +40,57 @@ us-business-activity-grew-at-its-fastest-pace-in-m:
     capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike
     and still describes a 3.50%-3.75% hold; it is used for the long-end logic
     only. All Wednesday levels are intraday reads.
+
+# --- Added in the afternoon pass (09-23 15:00 ET run) ---
+
+the-10-year-treasury-yield-jumped-more-than-14-bas:
+  mechanism: >
+    A weak 5-year note auction is a direct test of this thread's own
+    question — whether Treasury can keep selling duration at yields the
+    market finds attractive while the Fed is still hiking — and today it
+    failed that test: the auction priced 5.033% against a 4.186% six-auction
+    average, with indirect (largely foreign-official) bidders taking only
+    54% against a 65% average, i.e. the usual buyer base showed up in
+    smaller size and had to be paid up to clear the issue. Fed Governor
+    Barr's same-day "further policy adjustments are likely to be needed"
+    landed on top of that weak demand and pushed CME FedWatch's October-hike
+    odds from 55% to 70% in a single session, which is the reaction-function
+    logic (hawkish talk plus strong data or weak demand moves the long end)
+    this thread has tracked all month.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The 10-year holds above 5.1% into Thursday's jobless claims and
+        SoftBank's bond pricing, and a weak claims read or another hawkish
+        Fed voice pushes it toward 5.2%, raising the funding cost of
+        SoftBank's own OpenAI bond before it prices and tightening
+        financing conditions for the wider AI-debt stack this thread and
+        `softbank-all-in` both track.
+      why: >
+        Every external-driver move this thread has logged this month has
+        held through at least the next session rather than round-tripping
+        intraday, and SoftBank's own tranche guidance (up to 9.875% on its
+        longest notes) already prices in a higher-for-longer path.
+      precedent: >
+        09-16 to 09-18: the 10-year cleared 5% after the Fed hike and closed
+        at a fresh 2007-era high on 09-18, extending rather than reversing
+        over three sessions (`treasury-long-end-intervention` 09-18 entry).
+    - direction: >
+        The move partly reverses by Thursday's close if claims data comes in
+        soft or oil resumes its decline, the way this month's spikes have
+        repeatedly given back part of a hawkish-data move within a session
+        or two rather than holding the full jump.
+      why: >
+        A single weak 5-year auction is not unprecedented and this thread
+        has already logged several same-week reversals (09-17's oil-driven
+        pullback from above 5% to 4.93% is the clearest instance).
+      precedent: >
+        09-17: the 10-year eased from an intraday high above 5% to a 4.93%
+        close the same day CNBC tied an equity rebound to falling oil, on
+        `treasury-long-end-intervention`'s own 09-17 entry.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike
+    and the Fed's current 3.75%-4.00% target range; used here for the
+    long-end reaction-function logic only. The auction figures (5.033% yield,
+    54% indirect) are BMO's read as cited by CNBC, not a direct Treasury
+    auction-results fetch.

@@ -13,6 +13,10 @@ renegotiated before then, any Mexico- or EU-side response, and whether
 the auto-parts tariff (a genuinely new category) reaches specific
 manufacturers by name.
 
+## 2026-09-23 — Xi flies to Washington for the Trump summit with a much smaller business delegation than expected
+
+- **Xi Jinping flew to Washington on Wednesday for Thursday's summit with President Trump with a much smaller Chinese business delegation than expected, after reports last week anticipated a large CEO contingent — state media listed only family members and political aides, and the South China Morning Post attributed the pared-back list to a lack of progress on deals.** Trade, rare earths, AI and the Iran war are expected on the agenda; both sides face a November deadline to extend their 2025 Busan tariff truce. Xi and Trump are due to attend a Thursday dinner with US tech executives including Nvidia's Jensen Huang, OpenAI's Sam Altman and Google's Sundar Pichai. ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-wednesday-september-23-dow-sp-500-nasdaq-080556640.html)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-22 — Trump backs off Belarusian potash; Carney sets a G20 target for a deal with India
 
 - **President Trump said on 09-22 the US will keep buying Canadian potash, a day after saying he was working on a cheaper supply deal with Belarus.** Beside Ukraine's Zelensky at the UN he said "we'll continue to go with Canada, but Belarus would like to sell it for a much lower price"; the US imports 79% of its potash from Canada and 3% from Belarus, per the US Geological Survey, and Saskatchewan Premier Scott Moe had called Belarusian potash support for Russian aggression. ([Global News](https://globalnews.ca/news/12069085/trump-canadian-potash-september-22/)) ⟨daily 2026-09-22⟩

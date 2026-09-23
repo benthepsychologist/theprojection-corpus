@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-09-23 — Financials trade roughly flat Wednesday, a sharp cooldown from Tuesday's Meta-Muse-driven selloff
+
+- **The Financial Select Sector SPDR Fund (XLF) was down only about 0.25% Wednesday afternoon, a sharp cooldown from Tuesday's near-2% S&P 500 Financials Index decline that Bloomberg and Reuters tied to fears Meta's consumer AI agent Muse could erode bank and brokerage customer relationships.** Wednesday's broader equity weakness is dominated by the Treasury-yield story instead (5-year auction, Barr, FedWatch to 70%) rather than a continuation of the AI-disruption trade; no bank or brokerage name is reported making a fresh Muse-linked move Wednesday. ([GuruFocus, citing real-time XLF quote](https://www.gurufocus.com/news/9093461/xlf-looks-19-undervalued-on-gf-value-as-of-september-23-2026)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-22 — Burry writes that the Nasdaq-100 is "historically overvalued" and is reported adding to Micron, Nebius, Palantir and chip-ETF shorts
 
 - **Michael Burry told his Substack readers on 09-22 that the Nasdaq-100 is "historically overvalued, and historically top heavy" and about to drag its weight to a new all-time high, while pointing to Acer's chief executive saying there is no continuous memory-chip shortage; a tracker account reading the post says he added to short positions in Micron, Nebius, Palantir and the SOXX semiconductor ETF.** He cited Acer's comment that DDR4 has more sellers than buyers and that Chinese memory capacity is a price disruptor, and wrote that he finds market prices "rather attractive" for a set of long positions he calls full. The added-short detail comes from the tracker's summary rather than the free text of the post, and the Nasdaq closed at a record that same afternoon. ([Michael Burry, Cassandra Unchained](https://michaeljburry.substack.com/p/trading-post-september-22-2026), [Benzinga](https://www.benzinga.com/trading-ideas/short-ideas/26/09/61934793/quick-spark-michael-burry-adds-to-micron-palantir-nebius-soxx-shorts)) ⟨daily 2026-09-22⟩
