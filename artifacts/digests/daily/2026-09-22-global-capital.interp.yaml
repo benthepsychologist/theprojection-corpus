@@ -1,0 +1,69 @@
+# Interpretations for 2026-09-22 global-capital, keyed by
+# slugify(bold lead[:50]). Read against attention/capital-context.yaml
+# (asof 2026-08-25, rate_regime reading) and this map's own
+# treasury-long-end-intervention and red-sea-oil-shock threads.
+
+the-10-year-treasury-yield-fell-more-than-4bp-to-4:
+  mechanism: >
+    This snapshot's standing rate_regime reading (asof 08-25) already
+    carries a Treasury-buyback-vs-external-driver tension on the long
+    end — the 30-year sat near 5.20-5.24% off a mix of the Fed's hawkish
+    hold, structural federal-borrowing-cost pressure (three 2026 30-year
+    auctions clearing above 5%), and one direct Treasury intervention
+    (the 08-19 buyback-size doubling that produced a partial reversal).
+    Today's move is the same transmission mechanism running through a
+    different channel: falling oil (itself moved by Iran's Hormuz-
+    reopening offer, on `red-sea-oil-shock`) reads as easier global
+    borrowing conditions and pulls the long end down alongside German
+    bunds and UK gilts on the same session, with Treasury's own
+    buyback calendar reported as inactive. `treasury-long-end-intervention`'s
+    own record this month is now five-for-five: every large move has an
+    external explanation (Fed policy, jobs data, oil) rather than the
+    buyback campaign itself, in both directions — todays's move extends
+    that pattern rather than breaking it.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The long end continues easing through the UN General Assembly
+        week if Iran's Hormuz-reopening offer holds up under the
+        in-person discussions reported for this week, extending oil's
+        decline and compounding the "external driver, not the buyback"
+        pattern into a sixth consecutive instance.
+      why: >
+        Every external-driver move this thread has logged in September
+        held through at least the following session rather than
+        round-tripping intraday, unlike the standalone geopolitical-
+        headline spikes on `red-sea-oil-shock` that have repeatedly
+        failed to hold once a session's harder data caught up.
+      precedent: >
+        The 08-19 JGB/Treasury sequence is the closest precedent for a
+        cross-border rate move landing on the long end the same way —
+        though that one included a genuine Treasury intervention
+        (the buyback-size doubling) as a partial counter-move, which
+        is explicitly absent from today's reporting.
+    - direction: >
+        The move reverses within the week if the Hormuz offer turns out
+        to be a negotiating gambit rather than a real de-escalation step
+        — the same "offer, not a signed deal" gap this map's own
+        `iran-hormuz-restricted-zone-boundaries` ledger entry has been
+        unable to close since 09-07.
+      why: >
+        This map's standing rate_regime context already flags that
+        September's hawkish-hold read has been repeatedly challenged by
+        data that later proved partial or reversed (the July jobs
+        report's hike-relief read, not a recession signal) — a Hormuz
+        offer with no signed agreement behind it fits the same pattern
+        of a headline that moves markets before its substance is
+        confirmed.
+      precedent: >
+        `red-sea-oil-shock`'s own 09-18 entry: fresh Saudi-Houthi
+        clashes revived the risk premium intraday, then prices resumed
+        their decline into the close once the session's harder data
+        caught up — evidence this market has round-tripped
+        headline-only moves before.
+  context_note: >
+    capital-context.yaml's rate_regime reading is five weeks stale
+    (asof 08-25, pending its next /week-scale refresh) — this
+    interpretation reads today's move against that snapshot's own
+    logic (external-driver-not-buyback) rather than updating the
+    standing reading itself, which is out of scope for a daily pass.

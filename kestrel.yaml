@@ -9,6 +9,15 @@
 # tools actually read today.
 kind: attention
 name: theprojection
+
+# Added 2026-09-22 (ft-05): publishing left the engine and became a kit.
+# This repo keeps its own adapter (`outputs.adapter` below) — what pages
+# exist is its business — and gets the flow and the guarantees from the kit:
+# secret scan, field allow-list, entity-leak check, no-empty-wipe,
+# provenance receipt, explicit push.
+#   "$(kestrel fleet kit path publish-kit)"/bin/publish --dry-run | --push
+kits:
+  - name: publish-kit
 contract_version: 1
 layout:
   attention: attention/          # the map: watchlist, threads, upcoming, board…

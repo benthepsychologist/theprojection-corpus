@@ -22,6 +22,10 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-22 — Brent drops toward $99 and WTI falls over 2% on Iran's Hormuz-reopening offer, a fifth straight losing session
+
+- **Brent crude fell below $99 a barrel Tuesday and WTI declined more than 2%, extending a losing streak into a fifth straight session, after Reuters reported Iran's offer to reopen the Strait of Hormuz within seven days if the US eases its blockade** — Brent fell more than 3.5% off the day's high. CNBC separately reported Brent down 1.8% intraday to $98.56 and WTI down 2.3% to $93.60, citing UN General Assembly diplomatic hopes and a partial recovery in Saudi exports as compounding drivers. ⏱ Intraday Tuesday quotes; no settle price found yet. ([US News, Reuters wire](https://www.usnews.com/news/world/articles/2026-09-22/iran-ready-to-reopen-strait-of-hormuz-if-us-eases-military-pressure-and-lifts-blockade-senior-official-says), [CNBC](https://www.cnbc.com/2026/09/22/oil-iran-us-bessent-un-crude.html)) ⟨daily 2026-09-22⟩
+
 ## 2026-09-21 — The decline holds into Monday's US session; both benchmarks trade under $100
 
 - **Brent and WTI both extended Sunday evening's decline through Monday's US session, both benchmarks' futures below $100 a barrel and November WTI down nearly 4% at $92.28 by mid-morning ET, as hopes rose for US-Iran diplomatic contact around this week's UN General Assembly.** Iran's Revolutionary Guard separately warned Monday it would deploy new weapons against previously-unstruck targets if the US launched a new offensive — rhetoric that did not stop the decline. ⏱ Intraday, mid-session; no Monday settle exists yet. ([Yahoo Finance](https://finance.yahoo.com/markets/live/stock-market-today-monday-september-21-dow-sp-500-nasdaq-080214605.html)) ⟨daily 2026-09-21⟩

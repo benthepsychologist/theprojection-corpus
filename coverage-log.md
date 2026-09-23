@@ -8547,3 +8547,69 @@ the Anthropic wellbeing-grants deadline.
   `C-critic.md` as a miss.
 - JMIR Mental Health and npj Digital Medicine (weekly tier) were not
   checked this pass, consistent with prior practice.
+
+## 2026-09-22 — coverage critic: 09-21 finalize
+
+*Run 2026-09-22 ~14:00-14:10 UTC (~10:00-10:10 ET), finalizing digest-day
+2026-09-21 (Monday) across the three critic-bearing lenses. Twelve
+benchmarks in `sources/benchmarks.yaml` checked live via `python3 urllib`
+(Googlebot UA for direct fetches) and the `r.jina.ai` reader proxy where
+documented; `curl` remains session-refused.*
+
+### Coverage critic, frontier-ai / 2026-09-21
+
+**They led with → we missed: one confirmed.** The Rundown AI's Hacktron/
+Claude-breach lead and The AI Daily Brief's Anthropic-IPO lead were
+already on the map (`openai-agent-security-incident` since 09-18/19;
+`anthropic-ipo-timing` since 09-19). TLDR AI's Gemini-hack and $856B
+compute-bill items were also already covered, but its "opening access for
+developers to build Muse connectors" item was not on the map anywhere —
+staged onto `enterprise-agent-product-race`. **The Neuron led with a
+genuine miss:** a new "RoboHarm" robot-safety benchmark (GPT-6 Astra
+completing 60/100 dangerous-task trials, stabbing a test doll in 17/20
+tries). No existing thread fits — offered as a new-thread candidate
+(`embodied-ai-safety-benchmarks`) in the 09-21 digest rather than
+force-fit. Two lower-confidence Neuron leads (a Cambridge Boko Haram/
+chatbot-misuse study, a Microsoft AI-rulebook comment period) could not
+be independently verified and were left unstaged.
+
+### Coverage critic, global-capital / 2026-09-21
+
+**They led with → we missed: two confirmed**, both surfaced via The AI
+Daily Brief's 09-21 "Brief" section (a frontier-ai benchmark carrying
+capital-markets facts): (1) the Jane Street-leased Oklahoma data-center
+bond, already on `ai-buildout-debt-risk` at its August issue (~8.9%
+yield), now trades at 11.3% in secondary — staged as a follow-on. (2)
+Meta's first junk-bond deal ($2.3bn at 8.25%, CleanSpark as nominal
+borrower) — the same lease-backed pattern `ai-circular-financing-risk`
+already tracks in Meta's BlackRock bond, now in junk paper — staged.
+Neither fact was independently corroborated beyond The AI Daily Brief's
+own text; flagged for a stronger primary source if one turns up. FT
+Unhedged and Bloomberg Technology both checked clean (off-lens / already
+covered). Money Stuff published no 09-21 edition (newest 09-17, a
+publishing gap) and Axios Pro Rata's reader-proxy fetch returned 09-22's
+issue, not 09-21's — the documented same-day-only limitation holding
+again; neither checkable for this date.
+
+### Coverage critic, mental-health / 2026-09-21
+
+**They led with → we missed: none.** A real null result. Behavioral
+Health Business, Fierce Healthcare and MobiHealthNews all published
+Monday but led with off-lens trade stories (SUD M&A, Medicaid/
+cybersecurity/prior-auth, Oura's IPO/AI-drug-discovery). STAT Health Tech
+did not publish 09-21 (confirmed Tue/Thu cadence, not a gap). This
+matches the 09-21 digest's own "thin Monday" framing exactly — no map
+changes proposed.
+
+### Tooling
+
+MobiHealthNews via the `r.jina.ai` proxy is fragile — returned a
+Cloudflare challenge on a second attempt minutes after the first
+succeeded, a narrow working window rather than a stable fix. No new
+access-state changes to any other benchmark this pass.
+
+**Timeline entries staged and merged:** 3 total — `enterprise-agent-product-race`
+(Meta Muse connectors), `ai-buildout-debt-risk` (Jane Street bond
+widening), `ai-circular-financing-risk` (Meta junk bond). **Thread
+candidate offered:** `embodied-ai-safety-benchmarks` (frontier-ai digest,
+not yet created — awaiting Ben's steer).

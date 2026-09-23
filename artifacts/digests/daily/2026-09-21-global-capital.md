@@ -1,10 +1,10 @@
 ---
 lens: global-capital
 date: 2026-09-21
-status: building
+status: final
 window_start: 2026-09-21T05:00:00-04:00
-as_of: 2026-09-21T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-22T10:15:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-21
@@ -100,10 +100,52 @@ August, and the yuan touched its strongest level since January 2023.
 - No thread opens or closes proposed.
 - 🔧 An afternoon humanoid-robot IPO bullet was removed as a duplicate of the 09-20 digest's own entry (Reuters' window-guidance report, filed Sunday). 🔧 The oil-settle bullet now says "closed" per CNBC's own wording rather than "settled", and names the contract.
 - 🔧 Correction: the morning's Map-changes line proposed `chips-equity-pivot` as a destination for the rare-earth-shipment data. That thread tracks CHIPS Act grants converting to government equity stakes (Intel/TSMC/Micron) — it has no connection to rare-earth export volumes or chip-stock moves. Checked the actual thread file (`artifacts/threads/chips-equity-pivot.md`): no rare-earth content was merged there, so nothing needs undoing, but the destination in that Map-changes line was wrong and the rare-earth item's real home is `cross-border-rates` (where this pass's own proposed entry, and the digest's own `<!-- k: -->` tag on that bullet, already correctly point).
+- 🔎 **Coverage critic (run 09-22):** two timeline entries staged —
+  `ai-buildout-debt-risk` (the Jane Street data-center bond's yield
+  widening to 11.3% in secondary trading) and `ai-circular-financing-risk`
+  (Meta's first junk-bond deal, $2.3bn at 8.25% with CleanSpark as nominal
+  borrower). See appendix below.
 
 ## 🧵 Thread candidates
 
 - China's humanoid-robotics financing cycle stands as offered this morning (see the front page); nothing new today.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-22 ~14:00-14:10 UTC, finalizing digest-day
+2026-09-21. Four benchmarks checked live via `python3 urllib` (Googlebot
+UA) and the `r.jina.ai` reader proxy.*
+
+**They led with → we missed: two confirmed**, both surfaced via The AI
+Daily Brief's 09-21 "Brief" section (a frontier-ai benchmark, but the
+facts are capital-markets/debt stories that belong on this lens's
+threads). Neither could be independently corroborated against a primary
+outlet beyond The AI Daily Brief's own text — flagged for a stronger
+source (Bloomberg/FT/Reuters) if one turns up:
+
+1. The Jane Street-leased Oklahoma data-center bond (issued 08-13 at
+   ~8.9% yield, already on `ai-buildout-debt-risk`) now trades at 11.3%
+   in secondary — a follow-on stress signal on a bond already on the map,
+   not new territory, but genuinely missing until this pass.
+2. Meta's first junk-bond deal — $2.3bn at 8.25%, CleanSpark as nominal
+   borrower, Meta guaranteeing as tenant, ~$10bn of investor demand — the
+   same lease-backed "rent the credit rating" structure
+   `ai-circular-financing-risk` already tracks in Meta's BlackRock bond,
+   now in junk-rated paper.
+
+**Checked, not misses:** FT Unhedged's 09-21 edition ("Nepotism at
+Berkshire") is off-lens; Bloomberg Technology's 09-21 article is the same
+Trump-Xi/AI-agenda story already in this digest's Upcoming section. Money
+Stuff published no 09-21 edition (newest is 09-17 — a publishing gap, not
+an access break) and Axios Pro Rata's reader-proxy fetch returned 09-22's
+issue, not 09-21's — the documented same-day-only limitation holding
+again; neither is checkable for this date.
+
+### Tooling
+
+`python3 urllib` with a Googlebot User-Agent for direct fetches; the
+`r.jina.ai` reader proxy where documented. `curl` remains
+session-refused.
 
 ---
 Oil fell a fourth straight session on hopes for US-Iran diplomacy and a

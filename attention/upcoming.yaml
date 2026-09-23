@@ -1451,6 +1451,16 @@ expectations:
       earlier digest lines calling this "five/six days past due" read the
       day as a hard date and are superseded. passed-silent if 09-30 passes
       with nothing.
+
+      RE-CHECK 2026-09-22 (upcoming-ledger sweep) — fifth consecutive
+      negative check. Searched multiple angles for a named deal from any
+      of the six MOU partners converting the 08-10 memoranda into an
+      actual transaction — every result still resolves back to the
+      original 08-10 Nvidia Newsroom release, same "subject to execution
+      of final agreements" language, no dollar figure or first project
+      disclosed. due_precision is month so the window runs to 09-30;
+      stays pending, flip to passed-silent only if 09-30 passes with
+      nothing.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -3278,6 +3288,16 @@ expectations:
     # 2026-09-21: due today at week precision — no boundaries, coordinates,
     # NOTAM/NAVTEX or named enforcement action found (ledger check + world-news
     # sweep). Grace runs to 09-24; passed-silent then if nothing is drawn.
+    # 2026-09-22 (ledger sweep): still no published coordinates, named
+    # geographic limit, NOTAM/NAVTEX or enforcement action against a named
+    # vessel. Checked and ruled out a near-miss: a "Persian Gulf Strait
+    # Authority" 56-vessel non-compliant list (IBTimes UK) is dated 09-07
+    # (same day as the original Rezaei announcement), is a separate general
+    # transit-penalty mechanism not tied to this specific zone declaration,
+    # and names no individual vessels. Today's broader Hormuz coverage
+    # (Iran signaling it could reopen the Strait within 7 days if the US
+    # eases military pressure) is about the wider conflict track, not this
+    # zone declaration. Grace runs to 09-24; two days remain.
 
   - id: kremlin-kyiv-strike-pause-0908
     claim: >

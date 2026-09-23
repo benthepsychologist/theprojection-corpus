@@ -1,10 +1,10 @@
 ---
 lens: mental-health
 date: 2026-09-21
-status: building
+status: final
 window_start: 2026-09-21T05:00:00-04:00
-as_of: 2026-09-21T15:30:00-04:00
-coverage: pending
+as_of: 2026-09-22T10:15:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-21
@@ -141,6 +141,30 @@ on-topic-looking entries were registered weeks or years ago.
   naming four deaths, mental-health workshops for faculty, the
   institute's own apology) make the case for a dedicated thread stronger,
   not weaker. (Statesman, Organiser, Hans India/IANS, all 09-21)
+
+## Appendix — Coverage check vs. benchmarks
+
+*Critic pass run 2026-09-22 ~14:00-14:10 UTC, finalizing digest-day
+2026-09-21. Four benchmarks checked live via `python3 urllib` (Googlebot
+UA) and the `r.jina.ai` reader proxy.*
+
+**They led with → we missed: none.** A real null result, not a coverage
+gap. Behavioral Health Business led with routine SUD-treatment M&A;
+STAT Health Tech did not publish 09-21 (confirmed Tue/Thu cadence, not a
+gap); Fierce Healthcare led with Medicaid/cybersecurity/prior-auth
+stories, none AI/mental-health; MobiHealthNews led with Oura's IPO and
+an AI-drug-discovery deal, neither mental-health. None of the four
+carried, anywhere in their 09-21 output, a story inside this lens's
+scope — this matches the digest's own "thin Monday" framing exactly. No
+map changes proposed by this pass.
+
+### Tooling
+
+`python3 urllib` with a Googlebot User-Agent for direct fetches
+(Behavioral Health Business, Fierce Healthcare); the `r.jina.ai` reader
+proxy for MobiHealthNews (fragile — returned a Cloudflare challenge on a
+second attempt minutes later, a narrow window rather than a stable fix).
+`curl` remains session-refused.
 
 ---
 A thin Monday: IIT Bombay suspended and apologised over its own account
