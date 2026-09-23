@@ -11796,3 +11796,14 @@ readouts, site commit `37a6937`. Graph: `03_expectations.py` (1 new, 2 restated)
 Resolve SoftBank's pricing, the 20-30yr buyback fill, the Trump-Xi summit entries
 and the Hormuz grace end, all 09-24. Check press.un.org for the Council's SC/
 release and whether DeepSeek or Moonshot spoke.
+
+**⛔ The site did not deploy, and neither did this morning's publish.** After `--push`,
+theprojection.org still had nothing from 09-22 or 09-23 (checked `/news/`, the
+Tigray and Treasury thread pages; the committed site files do carry it). publish-kit
+fires the Cloudflare deploy hook only when `THEPROJECTION_DEPLOY_HOOK` is set, and it
+is not set on `fleet`; the site builds only on that hook. The newest live content
+looks like the 09-21 14:45Z publish. The 10:00 run's "served within a minute" was a
+false positive (its check strings were already live from older entries). Brief
+dropped, uncommitted, at
+`fleet-ops/INBOX/2026-09-23-theprojection-corpus-publish-kit-pushes-but-site-never-deploys.md`.
+The hook URL is a secret for Ben to supply; nothing else was changed.
