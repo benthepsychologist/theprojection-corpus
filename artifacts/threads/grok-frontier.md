@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-24 — Musk says SpaceXAI could match a Fable or GPT-6-level model in two to three months
+
+- **Elon Musk said SpaceXAI could have a model at "Fable/GPT-6 level" within two to three months and reach "pole position" in AI in about six months if its rate of improvement holds** In a Thursday exchange on X he said SpaceX's AI effort is three years old against six for Anthropic and ten for OpenAI and that bringing compute online quickly is the main constraint; it is a forecast, not a release. ([TeslaNorth](https://teslanorth.com/2026/09/24/musk-spacexai-ai-pole-position/), [Forbes](https://www.forbes.com/sites/antoniopequenoiv/2026/09/24/elon-musk-says-spacexs-ai-models-may-surpass-anthropic-and-openais-in-6-months/)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-22 — Grok Bot reported at 418,000 weekly users, a month after launch
 
 - 🕰 **SpaceXAI's enterprise Grok Bot agent reached 418,000 weekly users as of September 14, up 24% week-over-week, per a company presentation shown at a London event and reviewed by Bloomberg.** Bloomberg Intelligence separately put total Muse installs at about four times Grok Bot's. SpaceXAI did not respond to requests for comment. ([Briefs.co, citing Bloomberg](https://www.briefs.co/news/grok-bot-crosses-418-000-weekly-users-a-month-after-launch-a/), [TipRanks](https://www.tipranks.com/news/spacex-stock-socx-rises-as-grok-bot-hits-418000-weekly-users)) ⟨daily 2026-09-23, event 2026-09-22⟩

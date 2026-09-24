@@ -1340,6 +1340,9 @@ expectations:
     # 2026-09-24 ⟨daily⟩: No post-hearing coverage found by agents L and C-mental-health (JCCP 5431 is not on CourtListener; the San Francisco
     # Superior Court portal is Cloudflare-gated; Lawsuit Informer still lists the CMC as next scheduled event). Stays
     # pending through 09-26 per the earlier note, then unverifiable.
+    # 2026-09-24 ⟨daily⟩: 3pm ET read: no post-hearing report found anywhere (Google News, DuckDuckGo-lite, Lawsuit Informer, the plaintiffs' trackers, the AI Recovery
+    # Collective feed; CourtListener does not index the JCCP and the San Francisco court portal is gated). The trackers still list the 09-23
+    # 10am Dept. 304 conference as the next event. No basis to flip or to call it postponed; stays open.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -1478,6 +1481,8 @@ expectations:
     # the six partners show no named deal under the platform.
     # 2026-09-24 ⟨daily⟩: Ninth negative check: only the 08-10 announcement and later commentary; no named deal from any of the six partners (an
     # interest report on 'Blupine' is not a signed deal). due_precision is month, so the entry runs to 09-30.
+    # 2026-09-24 ⟨daily⟩: 3pm ET read: another negative check (no signed first deal under the $500B platform found). Runs to 09-30; it goes passed-silent only if that
+    # date passes empty.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -3331,6 +3336,7 @@ expectations:
     # 2026-09-23 15:00 ET ⟨daily⟩: still no boundaries. Pezeshkian's full UNGA address and Rezaei's same-day
     # remarks ("will not reopen until conditions are met") drew no line. Grace ends 09-24: the next run flips
     # this to passed-silent unless coordinates, a NOTAM/NAVTEX or a named enforcement action appear.
+    # 2026-09-24 ⟨daily⟩: 3pm ET read: still no coordinates or notice of the restricted zone's boundaries (already passed-silent; retro-flip if they appear within the grace).
   - id: kremlin-kyiv-strike-pause-0908
     claim: >
       Russia carries out no strikes on Kyiv for three days from midnight
@@ -3576,8 +3582,9 @@ expectations:
       Dialogue" mechanism for notifying each other of AI incidents that reach
       a national-security level, at or around the Trump-Xi summit in
       Washington on 09-24
-    due: 2026-09-24
+    due: 2026-09-25
     due_precision: day
+    slips: [2026-09-24]
     thread: china-stack-independence
     entities: [scott-bessent]
     source: https://www.cnbc.com/2026/09/20/bessent-he-lifeng-trump-xi-summit.html
@@ -3600,6 +3607,11 @@ expectations:
     # mentioning an incident channel. WIRED (09-23): US officials expect the hotline to take weeks, targeting a framework by
     # the Bessent-He Lifeng Shenzhen meeting in about two months. The test is a joint statement or readout after the summit
     # talks, expected through 09-25.
+    # 2026-09-24 ⟨daily⟩: 3pm ET read, SLIPPED to 09-25 (the summit's second day, plus the state dinner toasts and any fuller Xinhua or White House readout, are still to
+    # come). Nothing on 09-24 confirms it: MOFCOM confirmed only that a first US-China AI dialogue took place, the Foreign Ministry declined on the
+    # record ('competent authorities'), Xi's arrival speech said AI must be 'always under human control' and named no incident line, and the White
+    # House had issued no readout. The MFA holds no press conference on 09-25 (Mid-Autumn) and resumes 09-28, so the test is a joint document
+    # or Xinhua's readout of the second day.
   - id: trump-xi-washington-summit-0924
     claim: >
       Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
@@ -3618,7 +3630,18 @@ expectations:
       itself)
     logged: 2026-09-15
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-24
+    evidence: |
+      HIT 2026-09-24 on the summit occurring, with the second clause only partly met. Xi was
+      received on the South Lawn, held an Oval Office bilateral (began about 11:45am ET, ran
+      about 90 minutes) and expanded talks, with a state dinner at 6:45pm ET. AI was named by
+      both leaders (Xi: AI must stay "always under human control"; Trump: superintelligence a
+      "big topic"), but no chip or export-control term appears in any account; USTR Greer had said
+      export controls were off the agenda. No joint statement, fact sheet or White House readout
+      existed by about 3:10pm ET; the only account of the room was Xinhua's excerpts. Sources:
+      Xinhua (https://english.news.cn/20260925/64a72413475046f4a9a9d666dfc0c9ac/c.html), CNN and
+      Guardian live blogs, MFA transcript (https://www.mfa.gov.cn/eng/xw/fyrbt/202609/t20260924_12030731.html).
     # 2026-09-23 ⟨daily⟩: source note stale — China's foreign ministry confirmed the 09-23 to 09-25 state visit on 09-21. Xi arrives
     # Wednesday 09-23; talks Thursday 09-24, tea/National Archives 09-25; state dinner guests reported to include Altman, Nadella, Cook,
     # Huang, Bezos, Musk, Zuckerberg. No postponement found.
@@ -4067,6 +4090,10 @@ expectations:
     # China agreed, said 'I'd refer you to competent authorities'; NPR says Beijing has not officially confirmed. MOFCOM
     # listed extending the arrangements among 'multiple points of consensus'. The claim asks for Trump and Xi to announce
     # it, so it stays pending; the extension date is now 01-10.
+    # 2026-09-24 ⟨daily⟩: 3pm ET read, still pending. No leader-level or White House statement of the extension existed by about 3:30pm ET. Beijing: MOFCOM (via Global
+    # Times) says the sides reached consensus on 'extending the joint arrangement' of the Kuala Lumpur consultation, with no date; the MFA referred
+    # the question to 'competent authorities'. Bessent's January 10 date (Fox News, 09-23) remains the US side alone. If nothing lands on 09-25 this
+    # flips passed-silent or hit-by-other-means on the 'Trump and Xi announce' wording; the second-day readouts decide it.
   - id: softbank-bond-settlement-0929
     claim: >
       SoftBank's USD and EUR notes settle, if they price on schedule.
@@ -4097,7 +4124,11 @@ expectations:
       SoftBank or OpenAI confirming the payment; the bond proceeds are stated as funding it.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: withdrawn
+    resolved: 2026-09-24
+    evidence: |
+      Withdrawn 2026-09-24 as a duplicate of softbank-openai-third-tranche-close-1001 (same $10bn third tranche, same 10-01 date, same
+      thread); the later entry carries the sourced closing mechanics (SoftBank's IR release of 09-24).
   - id: digitalbridge-softbank-close-0929
     claim: >
       SoftBank's $16-a-share cash takeover of DigitalBridge closes, DigitalBridge having said on 09-22 it holds every regulatory approval and closing is expected within five business days.
@@ -4278,7 +4309,14 @@ expectations:
       these yields.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-24
+    evidence: |
+      HIT 2026-09-24: Treasury ran the operation and accepted $4.078bn of $10.468bn offered
+      against the $6bn ceiling, about a 68% fill (FiscalData buybacks_operations, read directly;
+      results file BBR_20260924_174000.pdf). Earlier operations filled 86% (09-10, 10- to 20-year)
+      and 60% (09-17, 7- to 10-year), so a partial fill in the longest bucket does not support
+      the entry's "holders want out at these yields" reading.
     # 2026-09-24 ⟨daily⟩: 10am ET read: not run yet. Fiscal Data lists the 09-24 operation (20Y to 30Y, max $6.0bn, 1:40-2:00pm ET, settles
     # 09-25) with total_par_amt_accepted null. Re-read the results after about 2:30pm ET.
   - id: softbank-openai-third-tranche-close-1001
@@ -4304,7 +4342,17 @@ expectations:
     what_confirms: "High yield, bid-to-cover and indirect share from Treasury's auction results (FiscalData auctions_query). A weak result would extend the long-end stress read; a clean one would say the 5-year was an outlier."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-24
+    evidence: |
+      HIT 2026-09-24, with a qualification: the $44bn 7-year cleared at a 5.085% high yield
+      (4.512% on 08-27), bid-to-cover 2.42 (5-year on 09-23: 2.21; August 7-year: 2.50), with
+      indirect bidders taking 24.87bn of 43.48bn competitive awards, about 57% (5-year: 54%),
+      directs 13.16bn and dealers 5.45bn (Treasury FiscalData auctions_query, read directly).
+      The tail (about 0.7bp against a 5.078% when-issued level) is BiFu's figure, not Treasury's.
+      Softer than average but not a repeat of the 5-year; the highest 7-year yield since April
+      1993 per Dow Jones. The 10-year stayed near 5.14-5.18% and the 30-year set a new high of
+      5.474% at 3:10pm ET, so the clean-auction reading did not calm the long end.
   - id: dea-tryptamine-comments-close
     claim: "The comment period on DEA's proposal to place five tryptamines, including 4-OH-DiPT, in Schedule I closes"
     due: 2026-10-23
@@ -4362,6 +4410,114 @@ expectations:
     source: https://www.ideastream.org/government-politics/2026-09-18/how-should-cleveland-regulate-data-centers-3-public-hearings-to-help-find-an-answer
     confidence: confirmed
     what_confirms: "Council action on a data-center ordinance, or an extension of the moratorium, before it lapses. Cleveland, Ohio, not Cleveland, Tennessee (Project River)."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: bls-september-jobs-report-1002
+    claim: "The Bureau of Labor Statistics publishes the September employment report on Friday 10-02, the first jobs read after the Fed's 09-16 hike"
+    due: 2026-10-02
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://www.bls.gov/schedule/news_release/empsit.htm
+    confidence: confirmed
+    what_confirms: "The BLS release: payrolls, unemployment rate and average hourly earnings against the hawkish reading behind the 10-year's 5.1% and the 77.5%-to-64% swing in October-hike odds."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: bls-september-cpi-1014
+    claim: "The BLS publishes September CPI on Wednesday 10-14 (PPI follows 10-15), the inflation print the Fed's hike path now leans on"
+    due: 2026-10-14
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://www.bls.gov/schedule/news_release/cpi.htm
+    confidence: confirmed
+    what_confirms: "The BLS release: headline and core CPI against Collins's and Williams's warnings that inflation stays notably above 2%."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: fomc-september-minutes-1007
+    claim: "The Fed publishes the minutes of the 09-15/16 meeting, at which it raised rates 25bp to 3.75%-4.00%, at 2pm ET on 10-07"
+    due: 2026-10-07
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://fedratecalc.com/fomc-calendar/
+    confidence: reported
+    what_confirms: "The minutes on federalreserve.gov (date taken from a calendar site, not yet from the Fed's own page): how many participants saw a further hike this year, and any discussion of the long end or of Treasury's buybacks."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: portland-psychedelics-ordinance-second-reading-0930
+    claim: "Portland's City Council holds the second reading of the ordinance making personal, noncommercial use of naturally occurring psychedelics a low police priority and creating a Psychedelics Advisory Commission"
+    due: 2026-09-30
+    due_precision: day
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://www.kptv.com/2026/09/24/portland-considers-deprioritizing-psychedelics/
+    confidence: reported
+    what_confirms: "The council's adoption vote (or a slip): the ordinance advanced on 09-23 and the second reading is reported for 09-30."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: dmitriev-witkoff-kushner-new-york-0924
+    claim: "Kirill Dmitriev, Putin's envoy, meets Steve Witkoff and Jared Kushner in New York on 09-24, as Axios reported, while Zelensky says Washington is pressing an energy ceasefire, a Black Sea grain corridor and trilateral talks"
+    due: 2026-09-24
+    due_precision: day
+    thread: russia-ukraine-war
+    entities: []
+    source: https://meduza.io/en/news/2026/09/24/zelensky-says-the-trump-administration-proposes-a-halt-to-energy-strikes-a-black-sea-grain-corridor-and-three-way-talks-with-russia
+    confidence: reported
+    what_confirms: "A named participant, the Kremlin or the White House confirming the meeting took place, or an outcome statement; Russia denied a separate report of a Budanov trilateral."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: ac-v-altman-fnc-hearing-1105
+    claim: "The Northern District of California hears OpenAI's forum non conveniens motion to dismiss A.C. v. Altman (3:26-cv-09342, Judge Corley; filed 09-02, motion filed 09-17), with responses due 10-06 and replies due 10-20"
+    due: 2026-11-05
+    due_precision: day
+    thread: ai-therapy-regulatory-reckoning
+    entities: [openai]
+    source: https://www.courtlistener.com/docket/74737045/ac-v-altman/
+    confidence: confirmed
+    what_confirms: "The docket: the 11-05 10am hearing and the court's ruling on the motion. The docket does not say what the suit alleges or which forum OpenAI proposes; the link to the Tumbler Ridge survivor suits is an inference from the filing date and counsel."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: wa-school-mh-grants-status-report-0925
+    claim: "The Education Department files its compliance status report under the 09-22 preliminary injunction barring it from terminating school mental-health grants in 15 states (W.D. Wash. 2:26-cv-02409, Judge Evanson)"
+    due: 2026-09-25
+    due_precision: day
+    thread: mh-clinical-infra-funding
+    entities: []
+    source: https://www.courtlistener.com/docket/73599929/106/state-of-washington-v-united-states-department-of-education/
+    confidence: confirmed
+    what_confirms: "A docket entry of the status report, and whether it says the grants are reinstated; the Ninth Circuit denied the department a stay on 09-03."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: warner-schatz-nsa-model-testing-consent-0925
+    claim: "The Senate agrees by unanimous consent to Sens. Warner and Schatz's bill making NSA assessment of frontier AI models mandatory before release, which they said they would seek on 09-24 (Warner said it 'probably won't happen'); Sen. Grassley separately sought consent on the AI Whistleblower Protection Act"
+    due: 2026-09-25
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.alexandriabrief.com/warner-says-ai-safety-cant-wait-and-ties-the-fight-to-data-centers-in-virginia-neighborhoods/
+    confidence: reported
+    what_confirms: "The Senate record or a senator's statement that the consent request was made and objected to, or agreed. Silence by the recess is the likely outcome and is itself the reading."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: spacex-lockup-tranche-1009
+    claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
+    due: 2026-10-09
+    due_precision: day
+    thread: spacexai-public-megacap
+    entities: [spacex]
+    source: https://finance.yahoo.com/markets/stocks/articles/spacex-lockup-expiry-mizuho-reiterates-153149780.html
+    confidence: reported
+    what_confirms: "The company's or an analyst's lockup schedule, and the share-price reaction on the day; the source is a Stocktwits piece relayed by Yahoo, not the prospectus."
     logged: 2026-09-24
     logged_by: curate-add
     status: pending

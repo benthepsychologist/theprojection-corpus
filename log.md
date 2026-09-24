@@ -11939,3 +11939,120 @@ late Thursday rows once a fresh collect lands.
   `sev` then iteration order, so it is dominated by AI-lens rows and carries no Iran or
   world-news items beyond what is `sev=major`. Known (INBOX 09-20 brief); the briefing
   agent leaned on `curated_front`, the hand-written front throughline, for the spine.
+
+## 2026-09-24 ~15:00-16:05 ET — `/daily`: extended Thursday through the afternoon (Trump-Xi talks with no joint text, 30-year at a 2004 high, White House testing request), three ledger hits, and republished the site (pushed, not deployed)
+
+**Start state.** Clean tree, nothing unpushed, `log.md` ending at the 10:00 ET run and its
+receipt `exit=0 dirty=0 seconds=5200`, so that run had closed properly. 09-23 was already
+`final`; 09-24 is `building` and cannot finalize until after 10:00 ET on 09-25 (5h past its
+05:00 ET close), so there was no day to finalize and no coverage critic this run. Ran to the
+end in one session and never ended a turn to wait: everything was foreground or detached.
+
+**Collection.** One detached `cloud-researcher collect` at 19:00Z (all three env vars,
+venv at `/workspace/.venv`). `rss` 19:01Z (528 kept), `gdelt` 19:08Z, `sec_edgar` 19:12Z,
+`semantic_scholar` 19:10Z, **`google_news_rss` 19:25Z** (12,011 kept, 8.8MB, about 25
+minutes in, as usual silent until then). `openalex` 429'd on essentially every term.
+`clinicaltrials` and `federal_register` did not re-land (still the morning files).
+
+**Agents (13, all foreground, all sonnet; none stalled).** Wave 1 (6, launched before the
+Google file landed): four lens sweeps (A, G, M, W), a summit primary-document read (S) and a
+ledger check (L). Wave 2 (3, after 19:25Z): one late-buffer triage agent per lens (ZA, ZG,
+ZM), each reading its lens's rows since 14:00Z by name search and editing that lens's digest.
+Wave 3 (4): the site briefings (front, AI, global-capital, mental-health). WebSearch use was
+about 36 of the 200 (A 13, S 9, W 6, G 4, M 4, the rest none), because each brief capped it
+and named the urllib fallbacks. The morning's `BRIEF.md` was reused as `BRIEF-pm.md`.
+
+**What the afternoon found.**
+- **Trump-Xi.** The Oval Office bilateral began about 11:45am ET (Xinhua's first dispatch is
+  stamped 11:48am) and ran about 90 minutes. No joint statement, fact sheet or White House
+  readout existed by about 3:10pm ET; the only account of the room was Xinhua's excerpts
+  (Xi: oppose "Taiwan independence", back a US-Iran return to the Islamabad memorandum, AI
+  "always under human control"). Beijing's Foreign Ministry again referred the truce date and
+  the AI incident channel to "competent authorities"; MOFCOM confirmed a first US-China AI
+  dialogue. State dinner 6:45pm ET, second day 09-25. Not a flash: it was scheduled and has
+  produced no outcome.
+- **Rates.** The 7-year cleared at 5.085% (2.42 bid-to-cover, indirects about 57%), the
+  20-30-year buyback took $4.078bn of $10.468bn offered (68% of the $6bn ceiling), and the
+  30-year touched 5.474% at 3:10pm ET. I re-read the auction and buyback from FiscalData
+  myself before flipping the ledger.
+- **Policy.** Politico: the White House asked OpenAI and Anthropic to hold new models from the
+  UK AI Security Institute until US testing; 26 attorneys general asked Congress for federal
+  frontier-AI oversight; Warner and Schatz sought unanimous consent for mandatory NSA testing;
+  the Senate rejected the Iran war-powers resolution 49-50; Netanyahu was met with a walkout
+  at the UN.
+- **Late lane (wave 2).** Oracle's credit default swaps at a record and its 2056 bond above
+  8% (Seeking Alpha relaying Zerohedge; level not given), Yanbu loadings still not resumed,
+  the Texas AG's data-centre probe, Palm Beach's one-year moratorium, Transluce's finding that
+  agent probes ran as late as 09-20, Acadia's Phase 2 miss, Xenon's 09-17 pause of its Phase 3
+  depression trials (the critic's carried miss, a week late), a 09-22 injunction on school
+  mental-health grants, and OpenAI's motion to dismiss A.C. v. Altman.
+
+**What changed in `attention/`.**
+- `attention/upcoming.yaml`: three hits (`treasury-7y-auction-0924` with a qualification,
+  `treasury-20-30y-buyback-0924`, `trump-xi-washington-summit-0924` on the summit occurring),
+  one withdrawn (`softbank-openai-tranche3-payment-1001`, a duplicate of the later tranche
+  entry), one slip (`us-china-ai-notification-mechanism-summit-confirm` to 09-25), five dated
+  notes, nine new entries (BLS jobs 10-02 and CPI 10-14, FOMC minutes 10-07, Portland's second
+  reading 09-30, the Dmitriev-Witkoff-Kushner meeting, A.C. v. Altman 11-05, the Education
+  Department's 09-25 status report, Warner-Schatz consent, SpaceX's 10-09 lockup tranche).
+- `attention/threads.yaml`: `last_seen` advanced on five threads (the morning run had already
+  moved the rest). `attention/actor-doing.yaml`: eight actors refreshed (United States, China,
+  Anthropic, OpenAI, Google, xAI, Oracle, SpaceX).
+- Timelines: 60 bullets merged onto 28 threads by the additive script, +81 lines and 0
+  removed; two waves, late catches dated to their real days (09-17 to 09-23). No thread
+  opened or closed. No flash filed.
+- Thread candidates offered in the front: Pakistan-Afghanistan border war (second listing),
+  Congo Ebola outbreak, federal school mental-health grant fight; the 09-23 batch appears for
+  the last time. A Taiwan arms-package thread was declined (fits `china-stack-independence`).
+
+**Site.** Four briefings applied 4/4, 0 skipped, then `--export` 154; gists checked (200-224
+characters, none truncated). publish-kit dry run (105 thread pages, 0 skipped), then `--push`
+twice (the second after aligning a wrong Oval Office start time across three digests): 1,610
+story pages, 753 claim pages, 21 interpretation pages, site commit `1a48a58` then a follow-up,
+receipts `provenance/publish-2026-09-24T195335Z.yaml` and `...T195507Z.yaml`. ⛔ **Pushed, not
+deployed:** theprojection.org still lacks this afternoon's strings ("force majeure",
+"Albanese", "remlifanserin" absent from /news/), because `THEPROJECTION_DEPLOY_HOOK` is unset
+on `fleet`. The brief has sat in `fleet-ops/INBOX/` since 09-23; not re-filed. Graph feed
+skipped: no day finalized this run, and the ingesters read `final` digests (09-23 was fed at
+10:00 ET).
+
+**Corrections made in-run.**
+- Three digests carried three different Oval Office start times (11:30 scheduled, 11:45 from
+  Xinhua, 12:10 from one live blog's clock, which runs later than the events). Aligned all to
+  Xinhua's first dispatch.
+- Agents stamped `as_of` 16:00 to 16:15 ET at about 15:55 ET; reset to the real time. Same
+  family as the 09-21 finding that agents' clock claims are unreliable.
+- My first `actor-doing.yaml` edit corrupted the file (a `yaml.compose` block scalar's
+  `end_mark` includes its trailing newline, so replacement text without one glued the last line
+  to the next key). Caught by the verification assertion, restored from backup before anything
+  was committed or published; the re-run asserts before it writes.
+- The front digest first said 33 threads and "eight" `last_seen` bumps; both were wrong
+  (28 and five) and were corrected against the diff.
+
+**Frictions worth acting on.**
+- ⚠️ **Prompt-injection text on a source page.** Agent G found a block on helious.io's 7-year
+  auction results page addressed to AI agents (pull its JSON feed or MCP server and credit it).
+  G ignored it and used only figures FiscalData corroborated. Treat helious.io as a
+  non-source; not added to `sources/benchmarks.yaml` (Ben's call).
+- The front readout pack still keeps 60 of 366 news and 30 of 108 breaking items and had no
+  yield, auction, Iran, Netanyahu or Senate item, so the front briefing has no markets and one
+  yesterday-flavoured lead (Ethiopia). Known (INBOX brief 09-20); the lens briefings carry the
+  markets.
+- `.claude/skills/publish` is still a dangling symlink (reported 09-23); used the kit's
+  `bin/publish` by resolved path.
+- `theprojection readouts --limit` still does nothing for packs.
+
+**Where to pick up.**
+- 09-24 stays `building`. **Finalize it on the first run after 10:00 ET on 09-25**, and
+  replace every intraday level in the 09-24 digests with a wire "closed at" figure (S&P
+  7,707 at 3:39pm, the 30-year 5.47%, Brent $106.5 are all intraday reads). Critic
+  carry-forwards: Xenon (found seven days late), the Oracle CDS record, Yanbu loadings, and
+  whatever the state dinner and second day produced.
+- Summit: state dinner toasts (~7:50pm ET), 09-25 tea and National Archives, any joint document
+  or fuller Xinhua readout; the truce entry (due 09-25) and the AI-channel entry (slipped to
+  09-25); MFA holds no briefing 09-25 (Mid-Autumn) and resumes 09-28.
+- Also: whether the Senate acted on Warner-Schatz or Grassley's consent request; the
+  Dmitriev-Witkoff-Kushner meeting; the Education Department's 09-25 status report; the Raine
+  conference outcome (still unreadable); OpenAI's and Anthropic's answer on the UK-institute
+  request; Portland's 09-30 reading and California's 09-30 deadline; SoftBank's bond settlement
+  09-29 and tranche close 10-01; OpenAI DevDay 09-29.

@@ -1,5 +1,5 @@
-# Interpretations for 2026-09-24 global-capital (first pass, as of ~10am ET
-# Thursday), keyed by slugify(bold lead[:50]). Read against
+# Interpretations for 2026-09-24 global-capital (first pass ~10am ET, afternoon
+# additions ~3pm ET Thursday), keyed by slugify(bold lead[:50]). Read against
 # attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and this
 # map's treasury-long-end-intervention, cross-border-rates and
 # oracle-stargate-bet threads. Thursday levels are intraday reads.
@@ -9,8 +9,9 @@ new-york-fed-president-john-williams-said-thursday:
     With the Fed saying explicit forward guidance is over, every data print
     now reprices the October meeting directly: Wednesday's PMI, weak 5-year
     auction and Barr's hike call moved the odds from 55% to about 70%, and
-    Williams' "reasonable" took them to 77.5%, which keeps short and long
-    yields rising together instead of one offsetting the other.
+    Williams' "reasonable" took them as high as 77.5% (later reads were about
+    64% to 71%), which keeps short and long yields rising together instead of
+    one offsetting the other.
   confidence: plausible
   scenarios:
     - direction: >
@@ -35,7 +36,8 @@ new-york-fed-president-john-williams-said-thursday:
   context_note: >
     capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike and
     the 3.75%-4.00% range; used for the reaction-function logic only. Odds are
-    CME FedWatch as read by CNBC on Thursday morning.
+    CME FedWatch as read by CNBC on Thursday morning; Reuters and CNBC reads
+    later in the day were lower, about 64% to 71%.
 
 france-s-10-year-borrowing-cost-rose-to-a-new-18-y:
   mechanism: >
@@ -103,3 +105,149 @@ oracle-sent-the-blue-owl-owned-developer-of-its-pr:
     payments rather than walk away as the main tenant; the loan price is one
     unnamed source's figure, and the developer (Blue Owl's Stack
     Infrastructure) is separately reported to be facing a delayed gas pipeline.
+
+treasury-sold-44bn-of-7-year-notes-on-thursday-at:
+  mechanism: >
+    An auction's coverage, tail and indirect share measure whether end-buyers
+    will take new supply at the prevailing yield without a concession. A
+    near-average result a day after a weak 5-year sale says the market cleared
+    at a small concession rather than needing a step up in yield, which limits
+    the risk that supply alone drives the next leg, though indirect demand
+    below its average leaves long paper dependent on yields staying near 5%.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Buyers keep absorbing supply at a modest concession, the 7-year stays
+        in a 5.0% to 5.2% range, and the Fed's October path and oil, not
+        auction demand, set the direction of yields.
+      why: >
+        The tail was about 0.7 basis point and dealers took a normal 12.5%;
+        strong direct bidding offset thinner indirects.
+      precedent: >
+        09-23: the 5-year sale, with a 2.21 bid-to-cover and one of the largest
+        tails on record, was followed by the 10-year's biggest one-day jump
+        since April 2025 (CNBC), the outcome this result avoided.
+    - direction: >
+        A second below-average showing at the next long-end sale would put
+        buyer depth, not Fed odds, at the centre of the selloff.
+      why: >
+        Indirect bidders took 57.2% against a 64.6% average and about 54% on
+        Wednesday, two thin reads in two days.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike, so
+    it is used for the reaction-function logic only. The 0.7 basis point tail,
+    the averages and the C- grade are BiFu's calculation against a 5.078%
+    when-issued yield; the accepted amounts and bidder shares come from
+    Treasury's own FiscalData record.
+
+treasury-s-buyback-of-20-to-30-year-bonds-on-thur:
+  mechanism: >
+    A buyback swaps cash for specific older bonds, which steadies prices on
+    those issues and improves liquidity but leaves the long end's overall
+    supply and the Fed's rate path unchanged, so taking less than the ceiling
+    in a rising-yield market means the programme's price effect is bounded and
+    cannot by itself cap the 30-year.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Yields keep rising despite the operations, and Treasury enlarges or
+        adds long-end buybacks to relieve the long end.
+      why: >
+        The 30-year rose about 7 basis points on the day of an operation that
+        Treasury filled to about 68%, and officials have already enlarged the
+        programme once.
+      precedent: >
+        08-19: Treasury doubled the buyback ceiling to $4bn per off-the-run
+        issue, funded by a Treasury General Account cushion of roughly
+        $935bn to $950bn (`treasury-long-end-intervention`).
+    - direction: >
+        The programme stays a sideshow and the 30-year is set by Fed hike odds
+        and oil, holding near 5.4% to 5.5%.
+      why: >
+        $6bn is small against the market's size, as Oxford Economics noted, and
+        yields kept climbing after earlier operations.
+      precedent: >
+        09-10 to 09-18: a week after the 10- to 20-year operation took $5.19bn
+        of a $6bn cap, the 10-year cleared 5% and closed at 5.01% on 09-18
+        (`treasury-long-end-intervention`).
+  context_note: >
+    The offers-to-ceiling ratio (about 1.7 times) is similar to 09-10's, so the
+    smaller fill is not evidence of fewer sellers; Treasury has not published
+    why it accepted 12 of 35 issues. Accepted and offered amounts are from
+    Treasury's FiscalData buybacks record; the 5.469% 30-year yield is CNBC's
+    3:10pm ET quote, an intraday read.
+
+oracle-s-credit-default-swaps-hit-a-record-high-on:
+  mechanism: >
+    Oracle funds a buildout that outruns its free cash flow with debt and
+    equity, so what lenders charge to hold or insure its paper sets its cost of
+    capital directly. A record credit default swap price and an 8% yield on a
+    Baa2/BBB- bond mean the market is pricing some chance of a downgrade toward
+    junk, which matters because index rules would force sales of bonds that
+    investment-grade funds must hold, and a higher funding cost for Oracle
+    flows into how banks and private lenders price the next Stargate-scale
+    lease.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The credit measures keep widening and Oracle's next debt or equity
+        raise costs visibly more, tightening terms across lender-financed AI
+        data-center projects.
+      why: >
+        The force majeure notice arrives while the $18bn Project Jupiter loan
+        already trades below 90 cents on the dollar (Bloomberg) and Oracle
+        told investors on 09-10 that several planned sites were not delivered
+        in the first quarter.
+      precedent: >
+        07-20: Oracle's five-year credit default swaps reached about 2.03
+        percentage points, an 18-year high (Bloomberg, ICE Data Services), and
+        this week's record is a further step on the same path.
+    - direction: >
+        Oracle's statements that Jupiter is on schedule and its $664bn backlog
+        hold, and the credit measures stabilise once the notice is read as a
+        contractual protection rather than a retreat.
+      why: >
+        Oracle and Blue Owl both say the notice does not change their
+        commitments, and Bloomberg says Oracle is not trying to walk away.
+  context_note: >
+    The record and the 8% yield are Zerohedge's figures as relayed by Seeking
+    Alpha, which gave no CDS level, so treat the magnitude as unconfirmed;
+    capital-context.yaml (asof 08-25) has no Oracle credit reading and is used
+    for the reaction-function logic only. Prices for Oracle and Blue Owl are
+    intraday reads from CNBC's quote feed at 3:39pm ET.
+
+saudi-arabia-s-red-sea-export-hub-yanbu-had-still:
+  mechanism: >
+    Saudi Arabia's Hormuz workaround only helps the oil market if crude
+    actually reaches tankers at Yanbu, and a pipeline that is pumping but not
+    loading leaves the barrels stranded while war-risk insurance at 3% of
+    vessel value makes each Red Sea voyage cost millions, so the bypass supplies
+    less than its nominal 4 million barrels a day and keeps a supply premium in
+    Brent.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Loadings restart within days as Aramco builds volumes, and Brent gives
+        back part of Thursday's supply premium.
+      why: >
+        Kpler shows about six tankers scheduled to load from 09-24 to 09-27 and
+        Aramco says it needs days to build volumes and finish pressure tests.
+      precedent: >
+        09-21: Reuters reported Saudi crude flows partially recovering as Gulf
+        loadings increased, the last time exports improved after the 09-11
+        shutdown.
+    - direction: >
+        A further Houthi strike near Yanbu or Taif or a slower repair keeps
+        loadings halted, and Brent tests Thursday's $108 high.
+      why: >
+        Saudi forces intercepted six Houthi missiles aimed at Taif and Yanbu on
+        Thursday, and it may take six weeks or more for the line to return to
+        full capacity.
+      precedent: >
+        09-11: drone attacks shut the pipeline and stopped loadings, and Brent
+        jumped nearly $3 in the following sessions (Reuters, 09-15).
+  context_note: >
+    capital-context.yaml's conflict_risk_premium (asof 08-25) predates the 09-11
+    pipeline attack, so it is used for logic only. Loading status is from
+    Reuters' industry sources and Kpler schedules, not Aramco, which did not
+    immediately comment; insurance figures are OilPrice's summary of Reuters.

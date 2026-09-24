@@ -10,6 +10,10 @@ opened: 2026-07-24
 
 *Watch:* The wave of the AI giants moving into health/MH — the cross-actor narrative Ben's lens most wants and had zero coverage of. Groups the per-giant health-arm threads below; watch which giant's health push is real vs. announced, and where MH specifically shows up.
 
+## 2026-09-24 — OpenEvidence raises $250 million at a $15 billion valuation
+
+- **OpenEvidence, the clinical AI search company, raised $250 million from hospital systems and Andreessen Horowitz at a $15 billion valuation, Business Insider reported Thursday, citing people familiar with the matter.** The valuation is up from $12 billion in January; the company has raised more than $1 billion in the past year, Business Insider said it could be open to an acquisition that includes access to compute, which it could not verify, and Anthropic announced a partnership with it this week. ([Business Insider](https://www.businessinsider.com/chatgpt-for-medicine-openevidence-fielding-valuation-2026-9)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-22 — Anthropic and OpenEvidence take free clinical AI to about 100 low- and middle-income countries
 
 - **Anthropic and OpenEvidence are rolling out a free, regionally adapted version of OpenEvidence's clinical decision-support tool to physicians in about 100 low- and middle-income countries, including Uganda, Angola, Sudan, Haiti and Mongolia, with Anthropic providing back-end technology.** OpenEvidence, whose service answers doctors' questions from peer-reviewed research and is free to clinicians in the US and Europe, said US clinicians consulted it 42 million times in August; the companies did not disclose financial terms, and Reuters noted critics' concern that systems trained mainly on high-income-country data may not fit local practice. Mental health is not named in the announcement. ([Reuters via Yahoo News](https://www.yahoo.com/news/articles/exclusive-anthropic-openevidence-partner-bring-213129315.html)) ⟨daily 2026-09-22⟩

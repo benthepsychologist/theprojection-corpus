@@ -18,6 +18,10 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-09-24 — About 328 million SpaceX shares come out of lockup, with two more tranches due in October
+
+- **About 328 million SpaceX shares came out of post-IPO lockup on Thursday, roughly $48.7bn at Wednesday's $148.36 close, with further tranches due October 9 and October 24; the stock was down about 1% at $146.95 at 3:39pm ET.** Stocktwits said the release follows 911.5 million shares on August 6 and 319 million on August 20, and that becoming eligible does not mean holders will sell; Mizuho reiterated Outperform with a $200 target, and an SEC filing dated 09-22 showed President Gwynne Shotwell proposed selling 342,170 shares worth about $52 million. ([Stocktwits via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/spacex-lockup-expiry-mizuho-reiterates-153149780.html)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-22 — OpenAI's court brief quotes SpaceX's IPO prospectus on Grok's competitive position
 
 - **OpenAI asked a Texas federal judge on 09-22 for summary judgment against SpaceXAI and X Corp.'s antitrust suit over Apple's ChatGPT integration, quoting SpaceX's IPO registration statement that Grok is "among the fastest-advancing frontier models relative to peers, including OpenAI, Anthropic, and Google."** The 59-page brief in X Corp. v. Apple (N.D. Tex., Judge Mark Pittman) notes that SpaceX, "now valued at $2 trillion," told investors in its May 20 filing (amended June 3) it holds a "formidable competitive advantage" and made no mention of the Apple agreement or the lawsuit; sealed portions were allowed 09-23, and Reuters reports a trial set for January. ([OpenAI brief, CourtListener](https://storage.courtlistener.com/recap/gov.uscourts.txnd.408471/gov.uscourts.txnd.408471.403.0.pdf), [CourtListener docket](https://www.courtlistener.com/docket/71191818/x-corp-v-apple-inc/)) ⟨daily 2026-09-22⟩
