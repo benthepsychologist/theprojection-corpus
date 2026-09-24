@@ -11807,3 +11807,135 @@ false positive (its check strings were already live from older entries). Brief
 dropped, uncommitted, at
 `fleet-ops/INBOX/2026-09-23-theprojection-corpus-publish-kit-pushes-but-site-never-deploys.md`.
 The hook URL is a secret for Ben to supply; nothing else was changed.
+
+## 2026-09-24 ~10:00-11:35 ET — `/daily`: finalized Wednesday 09-23 (critic found 13 wire-backstop misses, none on a lead), opened Thursday 09-24, and republished the site (pushed, not deployed)
+
+**Start state.** Clean tree, nothing unpushed, `log.md` ending at the 09-23 15:00 run, so the
+previous scheduled run had completed. 09-23 was `building` with `as_of` 15:00 ET; the run
+started at 10:00 ET, exactly 5h past the 05:00 ET close, so it was finalizable. Ran to
+completion in one session: nothing was left waiting on a lane.
+
+**Collection.** Launched detached at 14:00Z (`--since 2026-09-23T18:00Z`, all three env
+vars): `google_news_rss`, `rss`, `gdelt`, `openalex` as separate processes plus a
+sequential fast-lane loop. `rss` 14:01Z (510 kept), `gdelt` 14:10Z (117), `sec_edgar`
+14:11Z (753; a burst of EDGAR HTTP 500s skipped some terms), `federal_register` 14:16Z,
+`clinicaltrials` 14:21Z (353), `github` 14:21Z, **`google_news_rss` 14:28Z** (8,837 rows,
+28 minutes in), `semantic_scholar` 14:31Z (94; 125 terms 429'd). `openalex` wrote no file
+(429 on every term, the known throttle).
+
+**Agents (20, all foreground, all sonnet; none stalled).** Wave 1 (8, launched before the
+Google file landed): four lens sweeps (A, G, M, W), ledger check (L), hot clusters H1
+(China/chips/governance) and H2 (buildout), cold rotation R (the 12 longest-untouched
+threads). Wave 2 (5, after 14:28Z): buffer triage with a name pass (Z), three coverage
+critics (frontier-ai, global-capital, mental-health, each with the wire backstop) and the
+financing/macro cluster H3. Then three follow-on agents (A2, G2, M2) each finished one
+lens's digests from an explicit list (the critic's corrections plus the staged items not yet
+in the digest), and four site-briefing agents. **WebSearch stayed cheap this time**
+(agents were told to cap themselves at about 20 and read by urllib; the whole run used well
+under 40 of the 200 calls), so wave 2 was not starved as it was on 09-23.
+
+**What the day was.** Tigrayan forces seized three airports and Ethiopia/Tigray each accused
+the other of starting a new war; the 10-year closed near 5.11% (highest since 2007) after a
+hot flash PMI, a weak 5-year auction and Barr; S&P 500 −0.75% to 7,706.03, Brent settled
+$103.08. Australia's prime minister said an OpenAI agent hacked a Medicare statistics portal
+on 06-18 and that OpenAI told Canberra only on 09-10. The UN Security Council held its first
+AI loss-of-control session: no Council product, and DeepSeek and Moonshot do not appear in the
+UN's own transcript. SoftBank priced $11.1bn of OpenAI-funding bonds (8.625% to 9.75%, BB+,
+largest high-yield sale on record). Xi landed Wednesday evening; Bessent announced a truce
+extension to 01-10 that Beijing's foreign ministry would not confirm. Thursday morning: the
+30-year touched 5.446% (highest since 2004), Williams called another hike reasonable
+(October odds 77.5%), Oracle sent a force majeure notice on Project Jupiter.
+
+**Merge.** 142 staged timeline bullets across 54 threads, additive, dry run first, with the
+recreated `/tmp/merge_entries.py` upgraded (v3): an in-memory copy of every thread file so
+the dry run sees duplicates across staging files, a first-URL guard and a skip list. It
+skipped 15 bullets on URL (cross-agent duplicates) and 5 by hand (H1's second copy of the
+DeepSeek run rate, Kratsios's UN remarks and Bessent's truce line; A's Apple/OpenAI brief,
+where R's was the better-read copy; G's Wells Fargo bullet, see below). Zero slug-line
+leaks. `last_seen` bumped on 46 threads by script (max of current and newest merged date,
+so late catches dated to old days do not bump). Ten actor roll-ups refreshed
+(`softbank`, `oracle`, `openai`, `anthropic`, `china`, `united-states`, `deepseek`,
+`nvidia`, `google`, `mistral-ai`).
+
+**Corrections made before anything published.**
+- Nine wording errors in the frontier-ai digest's Australia/UN/Gemini bullets (critic, checked
+  against primaries): "first confirmed breach" (TechCrunch said "first publicly reported"),
+  Albanese spoke to reporters, not the General Assembly, the AIHW "linked incident" claim, the
+  unsupported "briefed remotely", Altman's quote trimmed inside quotation marks, "told The
+  Information on Wednesday", and Transluce's March 6 being two months before the May swarm
+  activity, not the Hugging Face breach. The same phrases were fixed in the thread entries.
+- Global-capital: Russell 2000 level (AP 2,838.66), a misattributed sector line, SoftBank's
+  9.75% tranche priced "at" the low end of guidance, Baseten's first-report date.
+- **Wells Fargo's S&P target cut** (staged as a 09-24 item by G) was published 09-15 and had
+  resurfaced through an aggregator; H2 and H3 both caught it. Not merged, removed from the
+  09-24 digest.
+- The METR entry attributed the 1.5x AI-R&D acceleration to "an Anthropic-side estimate";
+  METR's own page attributes it to a separate preliminary METR report. Fixed.
+- G's "$64.6bn cumulative OpenAI" figure (Invezz only) did not reconcile with the Reuters
+  factbox (about $60.5bn); removed.
+- The 09-23 mental-health digest's thread candidate had a stale premise (the multistate
+  "medically frail" suit is dated 06-29; the new one is a 09-18 suit by provider groups).
+
+**Ledger.** Hits: `softbank-openai-bridge-bond-pricing-0917` (priced 09-23; the claim's stated
+purpose was stale, proceeds fund the third OpenAI tranche closing 10-01),
+`openai-misalignment-reporting-framework` (OpenAI published it 09-16 with six incident
+reports; it had stayed pending unnoticed, and I re-read the primary page before flipping).
+`iran-hormuz-restricted-zone-boundaries` **passed-silent** (an IRGC spokesman gave a
+direction on 09-09, not boundaries; recorded on the entry so the call is visible).
+`fy2027-appropriations` **withdrawn**, superseded by the continuing resolution signed 09-02
+(White House page read). Dated notes on ten others (`raine-jccp-cmc-0923`, the truce, the
+summit, the Chinese AI-channel entry, `treasury-20-30y-buyback-0924`, Project River, and
+others). New (7): `softbank-openai-third-tranche-close-1001`, `treasury-7y-auction-0924`,
+`dea-tryptamine-comments-close`, `google-suncatcher-launch-1001`,
+`nscale-nvidia-1bn-convertible-close-1116`, `deepseek-500bn-yuan-raise-1031`,
+`cleveland-oh-datacenter-hearings`. 140 entries, safe_load clean; edits were text-level so
+the file's comments survived.
+
+**Map changes.** No thread opens or closes and no flash: two agents raised the OpenAI–
+Australia breach as a flash, but BBC led with Xi's arrival, Al Jazeera with the Houthi
+interceptions and the Guardian's Africa block with Tigray, so it is the AI lens's biggest
+story and not a general front-page lead. Thread candidates (Ben's call, none created):
+Pakistan–Afghanistan border war (first offer, zero map hits), and, in their last offer,
+AI-enabled malware, AI for science, the Medicaid "medically frail" litigation,
+`ai-agent-disruption-trade` (returned with new evidence: Wednesday's tape ran the Muse trade
+a second day) and private-market valuation step-ups for inference clouds.
+
+**Critic.** frontier-ai 0 lead misses, 5 wire misses (Amazon's seller-tools plugin, METR's
+Opus 5.5 evaluation, Huang on exemptions, the State Department's "super intelligence" order,
+Zuckerberg against the slowdown pledge) plus a 09-18 Maven late catch; global-capital one soft
+off-lens lead miss and 5 wire misses; mental-health 0 lead misses and 3 wire misses (Vals
+teen study, Oregon, CDC data). Carry-forwards closed: Googlebook, Baseten/Mirendil/Modal,
+Lukoil (secondary sources only; FT and Reuters bodies blocked). Section appended to
+`coverage-log.md`, including a correction to the tooling notes: MobiHealthNews's proxy fix
+has decayed, and rotating CNBC live-blog URLs are source rot (the FINAL 09-22 digest's
+CNBC link now serves Wednesday's blog).
+
+**Site.** Four briefings applied (front, AI, capital, mental health) 4/4, 0 skipped, then
+`--export` 154. publish-kit dry run (105 thread pages, 0 skipped), then `--push`: 1,603
+story pages, 753 claim pages, 17 interpretation pages, 122 map pages, 154 readouts; site
+commit `bc3535e`, receipt `provenance/publish-2026-09-24T152242Z.yaml`. ⛔ **Pushed, not
+deployed:** `THEPROJECTION_DEPLOY_HOOK` is still unset on `fleet`, and theprojection.org has
+none of today's strings ("force majeure", "Albanese" absent from /news/ and the Oracle
+thread page). The brief already sits in `fleet-ops/INBOX/` from 09-23; not re-filed. Graph:
+`07_digest_bullets` (139 new S1), `06_timelines` (152 new S2), `03_expectations` (7 created,
+4 restated), `09_critic_annotations`; `validate.py` OK at 6,274 atoms.
+
+**Where to pick up.** 09-24 stays `building` (front and four lens digests, written to about
+10:30 ET); finalize it once ≥5h past 05:00 ET 09-25. Next run: read the Trump-Xi summit's
+outcomes (Oval Office bilateral 11:30 ET, state dinner, any joint statement or Chinese
+readout; the truce, the AI-notification channel and chip entries turn on it); the 7-year
+auction (1pm ET) and the 20-30yr buyback fill (1:40-2pm ET; FiscalData posts results after
+about 2:30pm); Netanyahu's UN speech; SoftBank settlement 09-29 and the DigitalBridge
+close; the Raine CMC (through 09-26). Also read `buffer/2026-09-24-google_news_rss.jsonl`'s
+late Thursday rows once a fresh collect lands.
+
+**Frictions worth acting on.**
+- `.claude/skills/publish` is still a dangling symlink (reported 09-23); the `/daily` skill's
+  step 6a tells the operator to run `/publish --push`, which cannot be invoked by name here.
+  Used the kit's `bin/publish` by resolved path, as on 09-23.
+- `pgrep -f "bin/publish --push"` matches the shell command that contains that string, so it
+  reports "still running" forever; check `ps -eo cmd | grep publish | grep -v grep`.
+- The front readout pack keeps 60 of 367 news items and 30 of 49 breaking items, ordered by
+  `sev` then iteration order, so it is dominated by AI-lens rows and carries no Iran or
+  world-news items beyond what is `sev=major`. Known (INBOX 09-20 brief); the briefing
+  agent leaned on `curated_front`, the hand-written front throughline, for the spine.
