@@ -15,6 +15,10 @@ reducing Nvidia dependence, but only for INFERENCE and via two anchor cases
 dollars Nvidia demand still grows; the clearest winners are the co-design
 houses (Broadcom, Marvell), not the hyperscalers.
 
+## 2026-09-22 — Google pitches TPUs to Korea, outside its own cloud
+
+- **Google has offered South Korea priority supply of its TPU accelerators for the country's sovereign-AI data-center buildout, following an April announcement that it would sell TPUs to data centers outside Google Cloud.** Seoul Economic Daily reports Google met Korean AI-strategy officials on 09-09, cites Morgan Stanley's estimate of Google direct TPU sales of $84bn in 2027 and $108bn in 2028, and notes Anthropic's plan to expand TPU use from 1GW this year to 5GW next year; an unnamed Korean industry official told the paper Nvidia GPU delivery lead times run "as long as 30 weeks" and that Google is exploiting the gap. It moves the TPU from an in-house inference chip toward a product sold to third parties and governments, which is a step past the inference-only framing on this thread. ([Seoul Economic Daily](https://en.sedaily.com/technology/2026/09/22/google-joins-nvidia-amd-in-race-for-koreas-ai-infrastructure)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-17 — Broadcom's Sept 2 earnings call named OpenAI as a 4th custom-silicon customer, $10B in orders, Jalapeño already shipping
 
 - **Broadcom's September 2 earnings call confirmed OpenAI as a named fourth AI-chip customer, alongside $10B in AI-chip orders and confirmation that the Jalapeño chip (already benchmarked at Hot Chips, 08-25 entry above) shipped this quarter, on track for a 1.3GW deployment.** Caught on this thread's cold-rotation pass, 15 days after the earnings call itself — a lag worth noting given how central Jalapeño's production timeline is to this thread's thesis. (Broadcom Q3 FY2026 earnings call, 2026-09-02) ⟨daily 2026-09-17⟩

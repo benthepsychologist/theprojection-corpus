@@ -6,6 +6,10 @@ the evidence part of the MH feed"). The What Works family's
 counter-case: the somatic modality where a real confirmatory trial
 landed after clearance and deployment — and replicated.
 
+## 2026-09-23 — A stimulation device for stimulant use disorder gets a breakthrough designation
+
+- **The FDA granted Breakthrough Device Designation to NET Recovery's transcutaneous alternating-current stimulation device as an aid in reducing stimulant use in adults with cocaine or methamphetamine use disorder, a condition with no FDA-approved drug or cleared device (company announcement, 09-23).** The device is already cleared for opioid-withdrawal symptoms; the designation covers a proposed new indication and buys expedited review without changing clearance requirements, and the company says it is still designing a pivotal randomized trial and expects the De Novo pathway, so this is a regulatory status, not efficacy evidence. ([PR Newswire](https://www.prnewswire.com/news-releases/net-recovery-granted-fda-breakthrough-device-designation-for-stimulant-use-disorder-where-no-drug-is-fda-approved-or-medical-device-fda-cleared-302886966.html), [Psychiatric Times](https://www.psychiatrictimes.com/view/fda-grants-breakthrough-device-designation-to-net-recovery-s-device-for-stimulant-use-disorder)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-22 — A home-delivered spaced tDCS trial for treatment-resistant depression is registered with NIMH support
 
 - **UC San Diego registered a sham-controlled trial of home-based, remotely supervised "spaced" transcranial direct current stimulation for treatment-resistant depression, with NIMH as collaborator.** 74 participants are planned, start estimated 10-15, with the Montgomery-Åsberg Depression Rating Scale as primary outcome plus TMS-EEG mechanism measures. ([ClinicalTrials.gov NCT07834762](https://clinicaltrials.gov/study/NCT07834762)) ⟨daily 2026-09-22⟩

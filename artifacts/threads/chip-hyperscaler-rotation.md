@@ -16,9 +16,17 @@ reframe holds through Amazon (07-30) and Samsung's breakdown, and whether
 it shows up in fund-flow data rather than just analyst notes and single-
 night price action.
 
+## 2026-09-23 — Chipmakers and AI hyperscalers fall together as yields hit a 19-year high
+
+- **Chip stocks and the biggest AI cloud spenders fell together on Wednesday 09-23 as Treasury yields hit their highest since 2007: Nvidia closed down 1.4% at $225.51 and Alphabet fell 3.8% to $337.83.** The pairing is the opposite of what this thread's rotation call predicts (money leaving chipmakers for hyperscalers): the larger drop was in a hyperscaler, and the move tracked the rate shock. ([Barron's](https://www.barrons.com/articles/nvidia-stock-price-ai-chips-google-2c231d8d), [Trading Economics](https://tradingeconomics.com/united-states/stock-market), [biggo](https://finance.biggo.com/news/953e87b5-ebc7-4722-99d5-47317c1e8b15)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-22 — A single hyperscaler consumer product launch drives the sharpest chip rally of the run — CPUs, not GPUs
 
 - **Chip stocks surged Monday 09-21 on a hyperscaler's own consumer-AI-product traction rather than any hyperscaler capex disclosure: AMD rose 9.95% to close at $615.52 (crossing $1 trillion in market value, the fourth US chipmaker to do so), Arm rose 17.2% and Intel rose 12.1%, after Meta's new consumer AI agent "Muse" hit #1 on Apple's US App Store and reached 448,000 daily active users just ten days after launch — a faster ramp than ChatGPT took to reach comparable download levels.** Traders read the uptake as evidence that inference (running a deployed model for live user requests) needs more CPU capacity alongside GPUs, not just training-side GPU demand — a different mechanism than every prior entry on this thread, which has tracked capex guidance, earnings beats, and financing structures. Meta itself rose more than 11% the same session, and the Nasdaq closed at its first record high since June. This is Meta (a hyperscaler already inside this thread's own "monetization-proven" bucket) pulling the chip complex up with it via product success, rather than the hyperscaler-vs-chipmaker reallocation the thread was set up to track. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-21/amd-set-to-top-1-trillion-in-market-value-as-chip-stocks-soar), [Semafor](https://www.semafor.com/article/09/21/2026/amd-reaches-a-1-trillion-market-cap-as-chip-stocks-drive-rally)) ⟨daily 2026-09-22⟩
+
+## 2026-09-21 — JPMorgan's Dimon puts hyperscaler AI spending on course for $1 trillion in 2027
+
+- **JPMorgan chief executive Jamie Dimon said spending across the hyperscaler ecosystem has more than doubled from about $300 billion last year to around $700 billion this year and could reach $1 trillion next year.** Speaking to CNBC-TV18 at JPMorgan's India investor conference, he called the surge "like 1% increase to GDP each year" and warned it may also add to inflation. It is a direct counterweight to this thread's premise that AI infrastructure capex is peaking, from the head of a lender to the sector. ([CNBC](https://www.cnbc.com/2026/09/21/jamie-dimon-jpm-jpmorgan-indiaconference.html), [CNBC-TV18](https://www.cnbctv18.com/technology/ai/ai-capex-could-hit-1-trillion-next-year-says-jpmorgan-ceo-jamie-dimon-19995144.htm)) ⟨daily 2026-09-23⟩
 
 ## 2026-09-08 — Qualcomm rises ~10% on an Amazon custom-silicon deal, but the "$4 billion" headline figure is a warrant, not a contract
 

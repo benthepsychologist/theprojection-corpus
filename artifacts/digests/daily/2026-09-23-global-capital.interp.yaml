@@ -1,5 +1,6 @@
-# Interpretations for 2026-09-23 global-capital (Wednesday morning pass, as of
-# ~10am ET), keyed by slugify(bold lead[:50]). Read against
+# Interpretations for 2026-09-23 global-capital (Wednesday morning and afternoon
+# passes plus the definitive-day pass run Thursday ~10am ET), keyed by
+# slugify(bold lead[:50]). Read against
 # attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and this
 # map's treasury-long-end-intervention thread.
 
@@ -94,3 +95,188 @@ the-10-year-treasury-yield-jumped-more-than-14-bas:
     long-end reaction-function logic only. The auction figures (5.033% yield,
     54% indirect) are BMO's read as cited by CNBC, not a direct Treasury
     auction-results fetch.
+
+# --- Added in the definitive-day pass (Thursday ~10am ET run) ---
+
+wall-street-closed-lower-wednesday-as-the-10-year:
+  mechanism: >
+    A rising 10-year yield raises the discount rate on long-duration equities
+    and the cost of the debt behind the AI buildout at the same moment, which
+    is why the Nasdaq (-1.13%) and small caps (the Russell 2000, about -1.8%) fell hardest, utilities
+    (-1.7%) sold off as bond proxies, and only energy, tied to oil, gained.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Yields hold above 5.1% through Thursday's 7-year auction and the Fed
+        speakers, and the pullback from the Nasdaq's record extends, with
+        AI-linked names leading the losses.
+      why: >
+        Wednesday's move rested on three fresh inputs (the PMI, the weak
+        5-year auction, Barr's hike call) and none of them reverses by itself;
+        Thursday's early trading extended the slide.
+      precedent: >
+        09-16 to 09-18: after the Fed's hike the Dow fell 631 points, the
+        10-year cleared 5% and the selloff ran three sessions
+        (`treasury-long-end-intervention` 09-18 entry).
+    - direction: >
+        Oil eases on US-Iran diplomacy, yields drift back below 5.1% and
+        equities recover part of the loss.
+      why: >
+        The long end has followed oil all month, and falling oil has been the
+        input that turned hawkish-data selloffs around.
+      precedent: >
+        09-17: a rebound on lower oil pulled the 10-year from above 5% to
+        4.93% and lifted stocks the same day.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike; it
+    is used for the long-end logic only. Levels are Wednesday closes and settles.
+
+softbank-priced-11-1bn-of-dollar-and-euro-bonds-t:
+  mechanism: >
+    A BB+ issuer paid 9.75% for seven-year money to fund an unlisted-lab stake,
+    with the base rate (10-year at 5.11%) doing much of the lifting: pricing
+    at the low end of guidance on $20bn-plus of orders shows buyers exist at
+    that yield, and the coupon shows what the OpenAI exposure costs to carry.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The tight pricing reopens the window for other AI borrowers, and
+        lease-backed junk deals such as the CoreWeave-tied $1.1bn bond clear
+        at similar yields this week.
+      why: >
+        An oversubscribed $11bn high-yield deal signals depth in the
+        buyer base that other AI-linked issuers can borrow against.
+      precedent: >
+        09-21: Meta's first junk bond, $2.3bn at 8.25%, drew about $10bn of
+        demand (`ai-circular-financing-risk`, 09-22 digest).
+    - direction: >
+        The notes slip below par in secondary trading as Treasury yields rise
+        and AI credit stays wider than the rest of the market.
+      why: >
+        Reuters reported AI-issuer spreads near 115bp against 78bp for broad
+        investment-grade, and a rising base rate compounds that.
+      precedent: >
+        09-22: the Jane Street-leased Oklahoma bond issued near 8.9% traded at
+        11.3%, and Meta's Hyperion bond fell to 94.4 cents
+        (`ai-buildout-debt-risk`).
+  context_note: >
+    Coupons and dates are from SoftBank's own release; the $20bn order figure
+    is Bloomberg's preliminary read as relayed by secondary coverage.
+
+japan-s-10-year-government-bond-yield-rose-as-high:
+  mechanism: >
+    Higher US yields spill into Japanese bonds, and with the yen near 158 the
+    wide US-Japan rate gap keeps it weak, so authorities' rate checks are the
+    only brake: a JGB yield at a 30-year high raises pressure on the carry
+    trade and on Japanese AI-linked equities that borrow against rates.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        USD/JPY presses toward 159-160, Japanese authorities intervene or
+        escalate their warnings, and a sharp yen rally unwinds carry trades.
+      why: >
+        Rate checks last week and the finance minister's warning show the
+        threshold is being watched, and the hawkish Fed repricing widens the
+        gap that pushes the pair toward it.
+      precedent: >
+        09-08: a yen carry unwind took USD/JPY from 156.20 to 153.93 and the
+        Nikkei down 1,130 points in a session (`cross-border-rates`).
+    - direction: >
+        JGB yields keep climbing with Treasuries and hit Japanese AI-linked
+        stocks, as SoftBank, Kioxia and Arm fell together on the last such day.
+      why: >
+        The 10-year JGB is at its highest since 1996 and the transmission runs
+        from rates into the long-duration equities that carry the AI trade.
+      precedent: >
+        08-19: the 10-year JGB pushed toward its highest yield since 1996 and
+        took Nikkei, SoftBank, Kioxia and Arm down together (capital-context
+        rate_regime).
+  context_note: >
+    Yen and JGB levels are Thursday-morning Tokyo reads from NHK and CNBC, not
+    closes; capital-context's rate_regime notes its own BOJ leg is thin.
+
+# --- Added in the 09-24 correction pass (Wednesday's late items) ---
+
+meta-s-muse-ai-agent-kept-driving-a-selloff-in-con:
+  mechanism: >
+    Muse lets people hand shopping, travel booking and form-filling to an AI
+    agent, so the market is repricing companies whose revenue rests on
+    customer inertia or on being the place a purchase starts: online travel
+    agencies, subscription products, brokers and insurers that an agent can
+    compare on price. Firms the agent transacts through (Shopify, PayPal) and
+    the chip suppliers behind it are bid up, so this is a relative-value
+    repricing of intermediaries against infrastructure rather than a general
+    AI selloff, layered on the same day's rate shock that hit Alphabet and
+    Amazon.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The repricing spreads to more intermediary businesses (ride-hailing,
+        delivery, insurance brokers, payments) while Muse downloads keep
+        compounding.
+      why: >
+        Reuters cites 2.8 million downloads in two weeks and average daily
+        download growth of 55% over the first ten days; the move has already
+        travelled from financials on Tuesday to travel and subscriptions on
+        Wednesday, and Meta and Shopify are being paid for the same story.
+      precedent: >
+        09-22 to 09-23: the S&P 500 Financials index fell nearly 2% on
+        Tuesday to its lowest close since July, and Expedia and Airbnb each
+        lost more than 7% the next day (`ai-trade-bear-turn`).
+    - direction: >
+        The losers stabilise as the disruption fears meet slower real-world
+        adoption, and the rotation fades within days.
+      why: >
+        B. Riley's Art Hogan called the fears for financial firms
+        "far-fetched," and Truist's $28.5bn revenue estimate for Meta is a
+        fiscal-2030 figure, so nothing yet shows customers actually switching.
+      precedent: >
+        09-23: a GuruFocus read had the financials ETF down only about 0.25%
+        on Wednesday afternoon after Tuesday's near-2% drop, although
+        Reuters said financials stayed under pressure (`ai-trade-bear-turn`).
+  context_note: >
+    capital-context.yaml has no reading on consumer-AI disruption; this uses
+    the map's ai-trade-bear-turn thread and Reuters' 09-23 close wrap and
+    winners-and-losers piece. Weekly moves are as of Wednesday's close.
+
+investors-have-begun-asking-whether-6-is-the-trea:
+  mechanism: >
+    Stocks are priced against the yield on the safe alternative. With the
+    10-year at 5.11% and the S&P 500 near 19 times expected earnings, an
+    earnings yield of roughly 5.3% (a back-of-envelope figure from
+    Reuters' LSEG multiple) leaves almost no cushion over Treasuries, so each
+    further rise in the long end forces investors to re-run valuation models.
+    JPMorgan's counter is that the companies now driving spending and
+    earnings (AI, healthcare, services) do not cut back when borrowing costs
+    rise, which would push the level at which equities crack toward 5.5% to
+    6.0%.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The 10-year holds above 5% and keeps climbing, valuation models get
+        re-run, and equities give back part of the year's gains.
+      why: >
+        Every step of the September rate shock has come from data or supply
+        that has not reversed (the PMI, the weak auction, Fed hike talk), and
+        Invesco's 12-month-average test is still some way from triggering.
+      precedent: >
+        Reuters cites the last time the 10-year broke 5%, before the global
+        financial crisis, when MSCI's world index halved; on the map, the
+        09-16 to 09-18 selloff took the Dow down 631 points as the 10-year
+        cleared 5% (`treasury-long-end-intervention`).
+    - direction: >
+        Equities keep tolerating 5% yields because AI-linked spending is not
+        rate-sensitive, and dip buyers return.
+      why: >
+        The Nasdaq set consecutive record closes on 09-21 and 09-22 with the
+        10-year yield around 5%, which is the behaviour JPMorgan's structural
+        argument predicts.
+      precedent: >
+        09-18 to 09-22: the Nasdaq was flat on 09-18 with the 10-year at
+        5.01%, then closed at a record 27,244.28 on 09-22 with the 10-year at
+        4.96% (`ai-trade-bear-turn`).
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike; it
+    is used for the long-end logic only. The earnings-yield figure is this
+    map's arithmetic on the Reuters multiple, not a sourced number, and the
+    Reuters piece is analysis, not a print.

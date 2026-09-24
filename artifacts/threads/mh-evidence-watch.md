@@ -16,9 +16,15 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-09-24 — A Phase 3 of oral ketamine for depression and a VA art-therapy PTSD trial are registered
+
+- **India's JIPMER registered a Phase 3 comparing oral ketamine with oral midazolam as the comparator for major depressive episodes (first posted 09-24).** 220 participants are planned, randomized and triple-masked, with a start estimated for October and the Hamilton Depression Rating Scale as primary outcome; the sponsor frames it as a test of an affordable, scalable alternative to esketamine. Registration only, no data. ([ClinicalTrials.gov NCT07839338](https://clinicaltrials.gov/study/NCT07839338)) ⟨daily 2026-09-24⟩
+- **The VA Office of Research and Development registered ART-VET, a remotely delivered art-therapy treatment for veterans with PTSD tested against a waitlist control (first posted 09-24).** 84 participants are planned with a start estimated 10-01 and the clinician-rated CAPS-5 as primary outcome. Registration only, no data. ([ClinicalTrials.gov NCT07840079](https://clinicaltrials.gov/study/NCT07840079)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-23 — A randomized test of a Soteria-style inpatient unit for acute psychosis is registered
 
 - **A Jerusalem Mental Health Center randomized trial compares a closed psychiatric ward built around Soteria principles with a conventional closed ward for adults in acute psychosis.** 200 participants are planned, enrolling since September 2025; outcomes include psychotic symptom severity, therapeutic alliance, one-year readmission and antipsychotic dose. ([ClinicalTrials.gov NCT07836348](https://clinicaltrials.gov/study/NCT07836348)) ⟨daily 2026-09-23⟩
+- **The CDC's National Center for Health Statistics reported that the final US suicide rate for 2024 was 13.7 per 100,000, down from 14.1 in 2023, with no significant change since 2017.** The decline was concentrated in women 25 and older and in males 15 to 24 (21.2 to 20.2) and 25 to 44 (29.8 to 28.5); firearms remained the leading means for both sexes with no significant change, state rates ran from 5.7 in the District of Columbia to 29.7 in Alaska, and the rate for females 10 to 14 was 2.3 against 2.1 in 2023. ([CDC NCHS Data Brief 572](https://www.cdc.gov/nchs/data/databriefs/db572.pdf)) ⟨daily 2026-09-23⟩
 
 ## 2026-09-11 — A 2,477-person Swedish trial finds format, not modality, is the constraint on unguided internet therapy; a small Korean trial and a wire-sourced suicide-epidemiology finding round out the day
 

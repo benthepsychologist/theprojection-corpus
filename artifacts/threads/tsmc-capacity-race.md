@@ -12,6 +12,10 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-09-23 — TSMC reportedly set to raise wafer prices 3-6% from January 2027
+
+- **TSMC is reportedly planning to raise wafer foundry prices 3% to 6% from January 2027, with the steepest increases on its most advanced processes, Digitimes reported, citing supply-chain sources.** Digitimes says TSMC's order visibility now runs to 2030, with 8-inch fabs above 100% utilisation and processes at 45nm and below fully loaded; the range compares with the 5-10% baseline reported in July. TSMC did not respond to Benzinga's request for comment, so this is a report, not a company announcement. ([Digitimes](https://apps.digitimes.com/news/a20260924PD214/tsmc-wafer-price-2027-demand.html), [Benzinga](https://www.benzinga.com/markets/tech/26/09/61964879/tsmc-reportedly-plans-to-hike-wafer-price-next-year)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-10 — August revenue breaks NT$500B for the first time, up 53% YoY, on AI-chip demand
 
 - **TSMC reported August 2026 monthly revenue of NT$514.81B (~$16.3B), up 53.3% year-over-year and 10.1% month-over-month — the first time TSMC has broken the NT$500B barrier in a single month, and its fourth consecutive month of revenue growth.** Year-to-date (January-August) consolidated revenue is NT$3,386.87B, up 39.3% over the same period in 2025. Coverage attributes the surge to AI-server-chip demand keeping TSMC's 5nm, 4nm and 3nm nodes at full capacity. This is a hard revenue number behind the capacity-race narrative this thread otherwise tracks through capex and toolmaker commitments (the 09-08 ASML/High-NA entry, the 08-11 board capex approval) — demand is still outrunning the capacity being added, not absorbing into slack.

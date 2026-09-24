@@ -13,6 +13,10 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-09-23 — Supermicro says it is shipping Vera Rubin NVL72 racks
+
+- **Supermicro announced on 09-23 that it is now shipping Nvidia Vera Rubin NVL72 racks, integrated with its liquid-cooling stack, with customers able to order "Scalable Units" of production-ready systems.** The press release gives no volumes or customer names, so it is a vendor claim about availability rather than an order-book number, but Rubin availability is what the ~$1T Blackwell-plus-Rubin book depends on. ([PR Newswire](https://www.prnewswire.com/news-releases/supermicro-now-shipping-nvidia-vera-rubin-nvl72-racks-302886839.html)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-17 — Huang escalates his own growth claim from 70% revenue to a doubling of chip sales volume, made at a UK AI-safety summit alongside the frontier labs
 
 - **Jensen Huang told media ahead of a summit with King Charles III — also attended by representatives from Google DeepMind, OpenAI and Anthropic to discuss AI safety — that Nvidia will sell twice as many chips next year as this year, citing AI investment demand "in almost every single country that we're in."** This is a volume claim, one notch up from the ~70% *revenue* growth claim this thread logged from him on 09-11 at Goldman's Communacopia conference (a ~$680bn implied revenue figure on a ~$400bn base); Huang made both claims within a week of each other. Separately on 09-14, Huang told Trump directly "we're not going to let [an AI slowdown] happen," a demand-side reassurance made the same week Anthropic's Dario Amodei publicly called for the industry to slow model-capability development (see `ai-trade-bear-turn`) — Huang is the clearest industry voice pushing back on that call. Both claims rest on conference/media remarks, not an Nvidia IR filing or transcript. ([CNBC](https://www.cnbc.com/2026/09/17/nvidia-huang-ai-chip-guidance.html), [TechCrunch](https://techcrunch.com/2026/09/14/)) ⟨daily 2026-09-19⟩

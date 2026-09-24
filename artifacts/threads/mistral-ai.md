@@ -22,6 +22,14 @@ figure; does growing Microsoft compute-channel dependence complicate the
 "sovereign alternative" framing. Cross-refs `asml` (the ASML 11%-stake side
 of Mistral's cap table lives there, not here).
 
+## 2026-09-24 — Mistral's CEO says a new model is coming in weeks and attacks US labs' doom warnings
+
+- **Mistral CEO Arthur Mensch told Le Monde that US labs' AI-doom warnings are being used to close off the market, that a new Mistral model will launch "in the coming weeks," and that Europe should introduce "state guarantees" to make data-centre funding easier** The interview, given after Mistral raised €3 billion in early September, defends the company against criticism that it is falling behind American and Chinese rivals. ([Le Monde](https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html)) ⟨daily 2026-09-24⟩
+
+## 2026-09-23 — ESA and Mistral sign an AI cooperation letter of intent
+
+- **The European Space Agency and Mistral signed a letter of intent for a strategic AI cooperation framework, ESA announced this week** Signed in Paris on 16 September by ESA Director General Josef Aschbacher and Mistral CEO Arthur Mensch, it covers combining Mistral's models and infrastructure with ESA's engineering, Earth-observation and mission work. ([ESA](https://www.esa.int/Newsroom/Press_Releases/ESA_and_Mistral_strengthen_cooperation_on_artificial_intelligence)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-15 — TotalEnergies takes Mistral into oil and gas exploration in a 3-year, $115M+ partnership ⟨cold rotation⟩
 
 *Logged 2026-09-20 on the cold rotation, five days after the announcement.*

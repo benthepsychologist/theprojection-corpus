@@ -13,6 +13,10 @@ crawled: 2026-07-27
 vs. the spend, and the market's read (capex-as-confidence vs.
 capex-as-anxiety). Part of `hyperscaler-capex-big-picture`.
 
+## 2026-09-24 — Google to put its first TPUs in orbit next week
+
+- **Google said it will launch its first Project Suncatcher prototype satellite next week, putting its Tensor Processing Units into orbit for the first time.** The satellite, built with Planet, rides SpaceX's Transporter-18 rideshare mission (launch trackers list 2026-10-01 from Vandenberg; Google gave only "next week") and is meant to show how the chips handle spaceflight vibration, radiation and the cooling problem in a vacuum before any larger constellation. Suncatcher is Google's research programme for running machine-learning compute in space on solar power; this is a test flight, not capacity. ([Google](https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/), [Unite.AI](https://www.unite.ai/googles-project-suncatcher-prototype-heads-to-orbit-for-ai-chip-tests/)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-08 — Google locks in restored nuclear output from a DOE-financed Iowa reactor restart
 
 - **NextEra and Google announced a new collaboration tying the output of NextEra's Duane Arnold nuclear plant, restarting on a $1.9 billion Energy Department loan closed the same day, directly to Google's AI power demand.** The loan closing, not just the partnership, is the news — a *closed* federal loan is money committed rather than an announced intent, a different kind of fact than the PPA-and-partnership announcements that make up most of this thread's power-sourcing entries. ⚠️ The plant's capacity and restart-target year could not be confirmed from a 2026-dated source and are omitted rather than recalled. (DOE; PR Newswire; NextEra newsroom) ⟨daily 2026-09-08⟩

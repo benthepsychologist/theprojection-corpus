@@ -1,0 +1,105 @@
+# Interpretations for 2026-09-24 global-capital (first pass, as of ~10am ET
+# Thursday), keyed by slugify(bold lead[:50]). Read against
+# attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and this
+# map's treasury-long-end-intervention, cross-border-rates and
+# oracle-stargate-bet threads. Thursday levels are intraday reads.
+
+new-york-fed-president-john-williams-said-thursday:
+  mechanism: >
+    With the Fed saying explicit forward guidance is over, every data print
+    now reprices the October meeting directly: Wednesday's PMI, weak 5-year
+    auction and Barr's hike call moved the odds from 55% to about 70%, and
+    Williams' "reasonable" took them to 77.5%, which keeps short and long
+    yields rising together instead of one offsetting the other.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        October hike odds push toward 85% or more as claims and activity stay
+        strong, and the 30-year holds above 5.4% into the 10-28 meeting.
+      why: >
+        Williams and Barr both put a further hike in their base case, and
+        Thursday's 197,000 claims add a firm labor reading to the hot PMI.
+      precedent: >
+        09-16 to 09-18: after the Fed's hike the 10-year cleared 5% and closed
+        at 5.01% on 09-18, extending over three sessions
+        (`treasury-long-end-intervention`).
+    - direction: >
+        A softer data print or a drop in oil pulls hike odds back toward 60%
+        and the 10-year eases below 5.1%.
+      why: >
+        The long end has tracked oil as much as the Fed; with no guidance, a
+        soft print moves odds as fast as a hot one did on Wednesday.
+      precedent: >
+        09-22: the 10-year held at 4.96% through two hawkish Fed speeches
+        because oil fell for a fifth session.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike and
+    the 3.75%-4.00% range; used for the reaction-function logic only. Odds are
+    CME FedWatch as read by CNBC on Thursday morning.
+
+france-s-10-year-borrowing-cost-rose-to-a-new-18-y:
+  mechanism: >
+    A fractured parliament, a tough 2027 budget and a rising ECB rate path
+    raise France's risk premium: the OAT-Bund gap above 100bp, with more than
+    half the debt held by foreign investors who may be less sticky, is being
+    priced before the budget even reaches parliament, and the ECB is unlikely
+    to buy bonds unless markets turn disorderly.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The OAT-Bund spread widens toward the top of ING's 100-125bp range as
+        the draft budget goes to parliament in early October and a
+        no-confidence vote before the 11-17 budget vote becomes plausible.
+      why: >
+        Opposition to the pension freeze and spending cuts is broad, and
+        Eurasia Group says a tough draft risks toppling the government.
+      precedent: >
+        09-18: France's premium over Germany passed 100bp for the first time
+        since the 2012 euro crisis, up from about half that before the 2024
+        snap election (`cross-border-rates` 09-18 entry).
+    - direction: >
+        Lecornu forces the budget through with constitutional powers or a
+        compromise, and the spread stabilises near 100bp.
+      why: >
+        Pre-election caution makes a government collapse costly for every
+        faction, and Lecornu has used the clause before.
+      precedent: >
+        Lecornu did not pass the 2026 budget until February this year, using a
+        constitutional clause that bypasses parliament (CNBC).
+  context_note: >
+    capital-context.yaml has no France reading; this uses the map's own
+    cross-border-rates thread and CNBC's 09-24 read. OAT levels are Thursday
+    intraday reads.
+
+oracle-sent-the-blue-owl-owned-developer-of-its-pr:
+  mechanism: >
+    Lease-backed data-center debt is repaid from the anchor tenant's contracted
+    payments, so a force majeure notice from that tenant, even a precautionary
+    one, puts the cash flow behind the $18bn bank loan in doubt and hits the
+    loan's price, which is already below 90 cents and prices how banks treat
+    the next Stargate-scale lease.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The Project Jupiter loan slides further and lenders demand tighter
+        terms on other lease-backed AI data-center debt.
+      why: >
+        Bloomberg says the notice could alarm the roughly 20 lending banks, and
+        the loan was already stressed before it.
+      precedent: >
+        09-18: the $18bn Project Jupiter loan stalled in syndication at 89 to
+        91 cents on the dollar, and on 09-22 the Jane Street-leased Oklahoma
+        bond traded at 11.3% against 8.9% at issue.
+    - direction: >
+        Oracle and Blue Owl both restate their commitments, the notice reads
+        as a protective legal step, and the loan stabilises near its current
+        price.
+      why: >
+        Oracle says it is fully committed and Blue Owl says the notice does not
+        change its financial commitments.
+  context_note: >
+    Bloomberg's own caveat is that it is not certain the maneuver would free
+    Oracle from its obligations, and it says Oracle is seeking to defer
+    payments rather than walk away as the main tenant; the loan price is one
+    unnamed source's figure, and the developer (Blue Owl's Stack
+    Infrastructure) is separately reported to be facing a delayed gas pipeline.

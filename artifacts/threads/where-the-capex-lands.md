@@ -13,6 +13,10 @@ the aggregate AI capex physically land? Chips · datacenters · power · land.
 Sibling to Hyperscaler Capex (the by-spender cut); most destinations have no
 thread yet — that's the worklist.
 
+## 2026-09-24 — A BlackRock-backed group is in talks for Stack's Asia-Pacific data centers at up to $25 billion
+
+- **A consortium backed by BlackRock and IFM Investors is in exclusive talks to buy Stack Infrastructure's Asia-Pacific data-center portfolio for up to $25 billion, Bloomberg reported Thursday, citing people familiar with the matter.** The group includes the BlackRock-backed AI Infrastructure Partnership, is preparing due diligence and hopes to agree terms soon with Stack's owner, Blue Owl Capital; Bloomberg reported in May that Stack was weighing a sale of its Asia operations at more than $30 billion. Reuters could not immediately verify the report, and talks could be prolonged or fail. Stack operates in Tokyo, Osaka, Sydney and Melbourne. ([Economic Times, from Reuters](https://economictimes.indiatimes.com/tech/technology/blackrock-ifm-close-in-on-25-billion-stack-data-center-deal-bloomberg/articleshow/134461641.cms)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-10 — Microsoft's own destination number: 12GW today, 38GW by 2032
 
 - **Bloomberg reported (09-10) that Microsoft plans to more than triple its global data-center footprint to more than 38 gigawatts by 2032, from roughly 12GW today**, with AI-specific capacity growing from ~2GW of that current 12GW to about a third of the 38GW target — the single largest named-company destination figure this thread has logged, larger than any individual site tracked here so far. Reported, not filed: Microsoft has not confirmed the figure in any release or on a call. It reads directly against this thread's 09-01 Reuters entry on the national capacity-committed-vs-energized gap (700GW+ of connection requests against ~10% actual current draw) — one hyperscaler alone is now guiding to a physical build nearly as large as the entire current *installed* US data-center base, which is the destination-side scale this thread's watch line exists to track.

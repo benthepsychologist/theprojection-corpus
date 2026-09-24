@@ -15,6 +15,10 @@ confirmation) or CDS move; whether Oracle's RPO-to-revenue conversion
 rate ($76.6B guided vs $67B delivered in FY26) holds; any named
 counterparty breakdown of the OpenAI-linked RPO slice.
 
+## 2026-09-24 — Oracle sends a force majeure notice on its New Mexico Stargate campus
+
+- **Oracle sent the Blue Owl-owned developer of its Project Jupiter data center in New Mexico a force majeure notice, Bloomberg reported Thursday, seeking to put off payments if the 2.45-gigawatt Stargate campus fails to come online in 2028 as planned.** Oracle says the project "remains on our planned schedule"; Blue Owl said the notice "does not change the financial commitments to this multi-year project"; the roughly $18bn bank loan behind the campus already trades below 90 cents on the dollar, according to a person Bloomberg cited, and Oracle shares fell about 4% to 6% in morning trading. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center), [CNBC](https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-22 — A leaked document shows 546 Oracle cloud-infrastructure layoffs
 
 - **A leaked Oracle document shows 546 employees in its America cloud-infrastructure organization were laid off in a new round begun the week of 09-14, about 7.6% of the 7,185 people listed.** Business Insider, which obtained the document, said managers, software engineers and data-center maintenance staff were hit hardest and that Oracle has not disclosed a total; it is the company's second major cut this year, after a 13% (21,000-person) fall in headcount in fiscal 2026. ([Business Insider](https://www.businessinsider.com/oracle-cloud-layoffs-america-roles-hit-hardest-leaked-doc-2026-9)) ⟨daily 2026-09-22⟩

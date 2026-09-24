@@ -5,6 +5,10 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-09-24 — Israeli detonations at Bint Jbeil and al-Khiam and overnight shelling across the south
+
+- **Israeli forces carried out a large detonation around Bint Jbeil in south Lebanon on Thursday and for a second night in a row in al-Khiam, while artillery shelled Beit Yahoun, Shaqra, Kounine, Hadatha and al-Mansouri overnight and strikes hit Mayfadoun, al-Mansouri, Qantara, Wadi al-Hujair and Wadi Slouqi, Lebanese outlet Naharnet reported.** Lebanese Prime Minister Nawaf Salam, in New York, was due to meet Iranian President Masoud Pezeshkian later Thursday, al-Jadeed TV reported. The detonation and shelling reports rest on Naharnet's live summary; no Israeli comment was found. ([Naharnet](https://www.naharnet.com/stories/en/322689-south-lebanon-latest-developments)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-23 — A massive Israeli detonation in Khiam causes damage and a blackout across nearby districts
 
 - **A massive Israeli detonation overnight in the south Lebanon border town of Khiam caused widespread damage in nearby villages and a blackout across the Hasbaya, Shebaa and Arqoub regions, Lebanese outlet Naharnet reported, and Israeli artillery later shelled several villages including with white phosphorus.** Prime Minister Nawaf Salam was in New York seeking Arab and international support for Lebanon, and the US Embassy said it delivered 16 million rounds of ammunition to the Lebanese Army; the report rests on Naharnet alone and no Israeli comment was found. ([Naharnet](https://www.naharnet.com/stories/en/322661-israeli-detonation-in-khiam-leaves-widespread-destruction-across-nearby-towns)) ⟨daily 2026-09-23⟩

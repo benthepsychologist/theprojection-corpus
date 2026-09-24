@@ -18,6 +18,10 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-09-22 — OpenAI's court brief quotes SpaceX's IPO prospectus on Grok's competitive position
+
+- **OpenAI asked a Texas federal judge on 09-22 for summary judgment against SpaceXAI and X Corp.'s antitrust suit over Apple's ChatGPT integration, quoting SpaceX's IPO registration statement that Grok is "among the fastest-advancing frontier models relative to peers, including OpenAI, Anthropic, and Google."** The 59-page brief in X Corp. v. Apple (N.D. Tex., Judge Mark Pittman) notes that SpaceX, "now valued at $2 trillion," told investors in its May 20 filing (amended June 3) it holds a "formidable competitive advantage" and made no mention of the Apple agreement or the lawsuit; sealed portions were allowed 09-23, and Reuters reports a trial set for January. ([OpenAI brief, CourtListener](https://storage.courtlistener.com/recap/gov.uscourts.txnd.408471/gov.uscourts.txnd.408471.403.0.pdf), [CourtListener docket](https://www.courtlistener.com/docket/71191818/x-corp-v-apple-inc/)) ⟨daily 2026-09-22⟩
+
 ## 2026-09-18 — A construction worker's family sues SpaceXAI for $30M over a fatal fall at the same Colossus buildout that prompted the 09-01 leadership shakeup
 
 - **The family of Alexis Vincent, a construction worker who fell to his death in 2025 at SpaceXAI's Colossus II campus in Whitehaven, Memphis, filed a lawsuit seeking $30 million in damages, reported 2026-09-18.** The suit alleges Vincent fell on his first day on site from a mezzanine with no tie-off point, and that the site lacked required guardrail systems, safety-net systems, a lifeline, or a functioning personal fall-arrest anchorage system. This lands directly on the 09-01 entry below (data-center leadership overhaul after Tennessee/Mississippi reliability failures) — a second, independent strand of trouble at the same physical buildout, this one a wrongful-death claim rather than an uptime one — and adds to the site's existing environmental-permitting litigation over unpermitted gas turbines.

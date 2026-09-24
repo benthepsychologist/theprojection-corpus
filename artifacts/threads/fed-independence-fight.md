@@ -41,6 +41,10 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-09-23 — White House economic chief attacks Fed officials pushing rate hikes
+
+- **National Economic Council Director Kevin Hassett criticised Federal Reserve policymakers not appointed by President Trump for seeking rate hikes, asking "Why are they hiking" when, he said, recent annualised core inflation is 2%, and said Chairman Kevin Warsh is "managing an unusually partisan Fed."** He spoke Wednesday at Georgetown University, a week after the Fed's first hike since 2023 and a day when Governor Barr said further hikes are likely needed; CNBC describes inflation as still above 3%, so the 2% figure is Hassett's own measure. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/hassett-blasts-fed-officials-calling-for-hikes-in-recent-days), [Guavy](https://guavy.com/wire/forex/hassett-slams-fed-officials-for-seeking-hikes-amid-subdued-inflation-0nDjKWax48nEEpiEIgLjs5)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-18 — Warsh gives a rare on-the-record framing of his own approach as monetarist, and declines to address distributional effects of the hike
 
 - **In a Fortune interview, Fed Chair Kevin Warsh described his framework in explicitly monetarist terms — a break from predecessor Jerome Powell, who repeatedly rejected monetarism's basic tenets — saying the Fed cannot address individual prices (food, energy) but is responsible for preventing second- and third-order inflation effects, and that the Fed "does not deal in questions of distribution," looking only at aggregates (labor market, GDP, total spending, overall inflation).** This continues the "messaging lever" this thread has tracked since Warsh's Jackson Hole forward-guidance-removal speech — a further, voluntary disclosure of how he thinks about the job, made two days after the rate decision below and while the administration's pressure campaign (Trump, Vance, Bessent, Navarro) this thread already logged remains active. ([Fortune](https://fortune.com/2026/09/18/kevin-warsh-federal-reserve-what-is-monetarism/)) ⟨daily 2026-09-19⟩

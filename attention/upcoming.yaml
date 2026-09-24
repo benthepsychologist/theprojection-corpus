@@ -540,8 +540,10 @@ expectations:
     what_confirms: "passage, CR, or shutdown — each is a different story"
     logged: 2026-07-28
     logged_by: crawl
-    status: pending
-
+    status: withdrawn
+    resolved: 2026-09-24
+    evidence: |-
+      SUPERSEDED, not a 09-30 cliff. Trump signed H.R. 6500, the 'Continuing Appropriations and Extensions Act, 2027', on 09-02 (White House page published 09-03: https://www.whitehouse.gov/briefings-statements/2026/09/congressional-bill-h-r-6500-signed-into-law/ ). Per the 2026-09-24 ledger check it funds agencies through December 11, 2026, so the fights this entry expected on 09-30 (the DAWG $54.6B request, NIH/NSF cuts round two) move to the 12-11 deadline. Withdrawn as a 09-30 event; re-log a 12-11 entry if the fights matter.
   - id: xai-mn-preliminary-injunction
     claim: "xAI v. Ellison preliminary-injunction hearing on Minnesota's HF1606 'nudify' ban (TRO already denied 07-31; law in force since 08-01)"
     due: 2026-08-19
@@ -1335,6 +1337,9 @@ expectations:
     # 2026-09-23 15:00 ET ⟨daily⟩: still nothing. CourtListener does not index the JCCP, the SF Superior Court
     # portal is Turnstile-gated, and a Google News sweep found no post-hearing coverage. Per the note above,
     # re-check through 09-26, then close as unverifiable rather than passed-silent.
+    # 2026-09-24 ⟨daily⟩: No post-hearing coverage found by agents L and C-mental-health (JCCP 5431 is not on CourtListener; the San Francisco
+    # Superior Court portal is Cloudflare-gated; Lawsuit Informer still lists the CMC as next scheduled event). Stays
+    # pending through 09-26 per the earlier note, then unverifiable.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -1471,6 +1476,8 @@ expectations:
     # Blackstone, KKR, BlackRock and Goldman newsrooms were unreachable to urllib.
     # 2026-09-23 15:00 ET ⟨daily⟩: eighth negative check (financing hot-cluster). Nvidia's newsroom RSS and
     # the six partners show no named deal under the platform.
+    # 2026-09-24 ⟨daily⟩: Ninth negative check: only the 08-10 announcement and later commentary; no named deal from any of the six partners (an
+    # interest report on 'Blupine' is not a signed deal). due_precision is month, so the entry runs to 09-30.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2960,7 +2967,10 @@ expectations:
     logged: 2026-09-13
     logged_by: curate-add
     status: pending
-
+    # 2026-09-24 ⟨daily⟩: Slip signal, no new date. On 09-18 the developers (Wright family) asked Cleveland, Tennessee to 'temporarily delay
+    # further action' pending a third-party technical review (https://newschannel9.com/news/local/project-river-developers-
+    # ask-cleveland-to-pause-action-on-113b-campus-amid-backlash). A vote by 09-30 is unlikely; leave pending until the date
+    # passes. Cleveland, OHIO is a different city with its own data-center hearings (see cleveland-oh-datacenter-hearings).
   - id: anthropic-dow-stay-expiry
     claim: >
       The 7-day administrative stay on Judge Rita Lin's 2026-08-27 final
@@ -3076,7 +3086,10 @@ expectations:
       which is itself the loud-silence outcome this status is for. Most
       likely a local-coverage lag rather than a non-event; re-check if
       Michigan City local press picks it up later.
-
+    # 2026-09-24 ⟨daily⟩: Outcome found late; status stays passed-silent because the silence in the 09-15/09-16 window was real. WVPE reported
+    # on 09-19 that Michigan City's Common Council tabled the moratorium 8-1 on 09-15, replacing it with a different
+    # measure: https://www.wvpe.org/wvpe-news/2026-09-19/michigan-city-data-center-moratorium-delay-draws-frustration-
+    # during-council-meeting . So the second reading did not produce a moratorium.
   - id: boj-september-meeting-0918
     claim: >
       The Bank of Japan's 09-17/18 policy meeting decides on a rate hike,
@@ -3297,7 +3310,10 @@ expectations:
       arrangement — that reading is what a silent expiry would support.
     logged: 2026-09-07
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-24
+    evidence: |-
+      PASSED-SILENT at the end of its grace (2026-09-24 run). No coordinates, NAVTEX notice or first enforcement against a named vessel found through 10am ET 09-24 (agents L, W and G each checked). One partial statement exists and is recorded so the call is visible: on 09-09 IRGC spokesman Hossein Mohebbi said the zone runs 'from the direction of Chabahar into parts of the Gulf of Oman and the Arabian Sea' and that 'exact coordinates will be announced later' (Xinhua https://english.news.cn/20260909/b0942bc31e7b4f6e972481b04428e1d4/c.html ; Iran International https://www.iranintl.com/en/202609096876). That is a direction on the Gulf of Oman side, not the boundaries of the Hormuz-into-Persian-Gulf zone Rezaei described on 09-07, so it is not counted as a hit. Retro-flip if coordinates appear. Also 09-24: Pezeshkian told the UN Iran will not allow freedom of navigation through Hormuz while sanctions and the US blockade remain.
     # 2026-09-21: due today at week precision — no boundaries, coordinates,
     # NOTAM/NAVTEX or named enforcement action found (ledger check + world-news
     # sweep). Grace runs to 09-24; passed-silent then if nothing is drawn.
@@ -3455,8 +3471,10 @@ expectations:
       commitment.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
-
+    status: hit
+    resolved: 2026-09-16
+    evidence: |-
+      HIT, early. OpenAI published 'Our framework for reporting model misalignment' together with six reports on unexpected or concerning model behaviour on 09-16 (the page reads: 'a new framework for tracking, investigating, and disclosing instances of model misalignment at OpenAI, along with six reports'). Primary: https://openai.com/index/model-misalignment-reporting-framework/ . The ledger had stayed pending because the 09-17/09-18 digests carried the incident coverage but not the framework publication itself (found by the 2026-09-24 ledger check).
   - id: concord-ii-coordination-order-0923
     claim: >
       The parties in the coordinated Anthropic music-copyright cases
@@ -3575,6 +3593,13 @@ expectations:
     status: pending
     # 2026-09-23 ⟨daily⟩: still one-sided. Only the US side (Bessent) has described the mechanism; China's MFA sidestepped twice on 09-22 and the
     # 09-23 briefing carried no AI content. Xinhua says only that the sides 'held dialogues on AI-related issues'.
+    # 2026-09-24 ⟨daily⟩: Still pending, partial only. China's Foreign Ministry on 09-24, asked by NYT whether China agreed to a formalized AI
+    # dialogue that includes an incident line, said 'refer to competent authorities'
+    # (https://www.mfa.gov.cn/eng/xw/fyrbt/202609/t20260924_12030731.html), the same non-answer as 09-22. MOFCOM did confirm
+    # that a first US-China dialogue on AI took place at the eighth trade-consultation round (Global Times, 09-24), without
+    # mentioning an incident channel. WIRED (09-23): US officials expect the hotline to take weeks, targeting a framework by
+    # the Bessent-He Lifeng Shenzhen meeting in about two months. The test is a joint statement or readout after the summit
+    # talks, expected through 09-25.
   - id: trump-xi-washington-summit-0924
     claim: >
       Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
@@ -3597,6 +3622,12 @@ expectations:
     # 2026-09-23 ⟨daily⟩: source note stale — China's foreign ministry confirmed the 09-23 to 09-25 state visit on 09-21. Xi arrives
     # Wednesday 09-23; talks Thursday 09-24, tea/National Archives 09-25; state dinner guests reported to include Altman, Nadella, Cook,
     # Huang, Bezos, Musk, Zuckerberg. No postponement found.
+    # 2026-09-24 ⟨daily⟩: 10-11am ET read: IN PROGRESS. Happened: Xi landed at Joint Base Andrews Wednesday evening 09-23 for a state visit
+    # through Friday, greeted planeside by Trump; arrived at the White House shortly after 10am ET 09-24. Not yet happened
+    # at read time: Oval Office bilateral (scheduled 11:30am), state dinner (evening), any joint statement or readout, any
+    # chip or export-control announcement. USTR Greer said export controls are not on the agenda (CNBC); Trump wrote on
+    # Truth Social that superintelligence 'will be a big topic of discussion, but I want to leave it exactly where it is.'
+    # Outcomes to be read by the next run.
   - id: saxony-anhalt-election-result-0906
     claim: >
       Saxony-Anhalt's state election on Sunday 09-06 produces a preliminary
@@ -3766,7 +3797,10 @@ expectations:
       offered price.
     logged: 2026-09-10
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-23
+    evidence: |-
+      PRICED evening 09-23 New York (SoftBank's release is dated 09-24 JST): USD 10bn in three tranches, $1.0bn due 2030 at 8.625%, $4.5bn due 2032 at 9.250%, $4.5bn due 2034 at 9.750%, issued at 100; EUR 1bn, EUR 0.5bn due 2030 at 7.125% and EUR 0.5bn due 2032 at 8.000%; about $11.1bn in all, unsecured, BB+ from S&P and Fitch, expected issue date 09-29. Reuters called it the largest high-yield corporate bond sale on record. Claim correction, already noted 09-23: the stated purpose is stale. SoftBank's release says the proceeds fund the $10bn third and final tranche of its $30bn OpenAI follow-on (closing 10-01) plus general purposes, and that SoftBank expects to cancel the remaining $10bn of undrawn bridge capacity; the $25.9bn bridge balance was already prepaid on 09-15. Sources: https://group.softbank/en/news/press/20260924 ; https://www.reuters.com/business/media-telecom/softbank-issues-111-billion-bonds-openai-financing-push-2026-09-24/
     # SLIPPED 2026-09-21 (was passed-silent 09-17, inside its grace): SoftBank
     # launched a $10bn dollar bond (3.5/5.5/7.5-yr) plus a EUR1bn euro bond
     # (4/6-yr) on 09-20/21, pricing slated 09-24, settlement 09-29, proceeds
@@ -3775,17 +3809,6 @@ expectations:
     # entry tracked; resolves on pricing.
     # https://www.bloomberg.com/news/articles/2026-09-21/softbank-seeks-over-11-billion-in-junk-bond-deal-for-openai-bet
     # (was passed-silent from 2026-09-17 until this slip)
-    evidence: >
-      The roadshow's full scheduled window (09-14 -> 09-17) closed with
-      zero pricing anywhere. Confirmed via direct fetch of SoftBank's own
-      IR bond page (group.softbank/en/ir/stock/bond, via python3 urllib)
-      — newest press release is still press/20260904 (the retail bond),
-      nothing later. Cross-checked against Bloomberg/Reuters-relay
-      coverage, same result. Read together with the same-day finding
-      that Apollo is separately in talks to nearly double a Vision Fund
-      2 NAV loan from $5.4bn to $9bn, and 09-18's SoftBank Arm-backed
-      margin loan increase from $20bn to $25bn — SoftBank is working
-      other financing levers in parallel rather than repricing this one.
     # 2026-09-23 ⟨daily⟩: CLAIM CORRECTED. SoftBank's own 09-09 release says the whole $25.9bn bridge was prepaid on 09-15, so this
     # bond does not fund that payoff; per TNW/SoftBank IR the proceeds fund the $10bn third OpenAI instalment due 10-01. Deal is $10bn USD
     # (3.5/5.5/7.5-yr, price talk 8.75%-9.875%, >$20bn early demand) + EUR1bn, books close noon ET 09-23 (Reuters term sheet via The Standard),
@@ -4039,6 +4062,11 @@ expectations:
     logged: 2026-09-23
     logged_by: curate-add
     status: pending
+    # 2026-09-24 ⟨daily⟩: US side announced, not confirmed by Beijing. Bessent told Fox News on 09-23 the Busan truce is extended from its 11-10
+    # expiry to January 10 (two months; many had expected six or more). China's Foreign Ministry on 09-24, asked whether
+    # China agreed, said 'I'd refer you to competent authorities'; NPR says Beijing has not officially confirmed. MOFCOM
+    # listed extending the arrangements among 'multiple points of consensus'. The claim asks for Trump and Xi to announce
+    # it, so it stays pending; the extension date is now 01-10.
   - id: softbank-bond-settlement-0929
     claim: >
       SoftBank's USD and EUR notes settle, if they price on schedule.
@@ -4053,6 +4081,9 @@ expectations:
     logged: 2026-09-23
     logged_by: curate-add
     status: pending
+    # 2026-09-24 ⟨daily⟩: Pricing done (see softbank-openai-bridge-bond-pricing-0917). Expected issue date 09-29 for all five tranches per
+    # SoftBank's release; the same release says SoftBank expects to cancel the remaining $10bn of undrawn bridge capacity
+    # concurrently.
   - id: softbank-openai-tranche3-payment-1001
     claim: >
       SoftBank funds its $10bn third instalment to OpenAI.
@@ -4081,6 +4112,8 @@ expectations:
     logged: 2026-09-23
     logged_by: curate-add
     status: pending
+    # 2026-09-24 ⟨daily⟩: No completion announcement as of about 10:50am ET. All approvals were received 09-22. EDGAR shows a Form 25 (delisting
+    # notice) filed 09-22 that could not be opened (403); it may be the preferreds' delisting announced 09-01.
   - id: anthropic-sonnet-haiku-5-5
     claim: >
       Anthropic ships Sonnet 5.5 and Haiku 5.5 'in the coming weeks' after Opus 5.5 (09-22).
@@ -4244,5 +4277,91 @@ expectations:
       longest bucket, a day after the 10-year hit 5.116%, would say holders want out at
       these yields.
     logged: 2026-09-23
+    logged_by: curate-add
+    status: pending
+    # 2026-09-24 ⟨daily⟩: 10am ET read: not run yet. Fiscal Data lists the 09-24 operation (20Y to 30Y, max $6.0bn, 1:40-2:00pm ET, settles
+    # 09-25) with total_par_amt_accepted null. Re-read the results after about 2:30pm ET.
+  - id: softbank-openai-third-tranche-close-1001
+    claim: "SoftBank closes the $10bn third and final tranche of its $30bn OpenAI follow-on investment, the payment the 09-23 bond deal funds"
+    due: 2026-10-01
+    due_precision: day
+    thread: softbank-all-in
+    entities: [softbank, openai]
+    source: https://group.softbank/en/news/press/20260924
+    confidence: reported
+    what_confirms: "SoftBank's 'Execution of Follow-on Investment (Third Tranche)' IR release, as it issued for the earlier tranches (04-01, 07-01). The bond release states the closing is expected on 10-01."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: treasury-7y-auction-0924
+    claim: "Treasury's $44bn 7-year note auction (1pm ET) clears without a repeat of Wednesday's 5-year weakness (5.033% high yield, 2.21 bid-to-cover, 54% indirect share)"
+    due: 2026-09-24
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://api.fiscaldata.treasury.gov/services/api/fiscal_service/v1/accounting/od/upcoming_auctions?filter=auction_date:gte:2026-09-24&sort=auction_date
+    confidence: confirmed
+    what_confirms: "High yield, bid-to-cover and indirect share from Treasury's auction results (FiscalData auctions_query). A weak result would extend the long-end stress read; a clean one would say the 5-year was an outlier."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: dea-tryptamine-comments-close
+    claim: "The comment period on DEA's proposal to place five tryptamines, including 4-OH-DiPT, in Schedule I closes"
+    due: 2026-10-23
+    due_precision: day
+    thread: psychedelic-regulatory-sprint
+    entities: []
+    source: https://www.federalregister.gov/documents/2026/09/23/2026-19400/schedules-of-controlled-substances-placement-of-4-hydroxy-nn-diisopropyltryptamine-4-oh-dipt
+    confidence: confirmed
+    what_confirms: "The Federal Register comment deadline (91 FR 60338). Watch whether Reunion Neuroscience or other developers comment: 4-OH-DiPT is the active form of Reunion's luvesilocin (RE104), which has FDA breakthrough status."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: google-suncatcher-launch-1001
+    claim: "Google launches its first Project Suncatcher prototype satellite (its TPUs in orbit, built with Planet) on SpaceX Transporter-18"
+    due: 2026-10-01
+    due_precision: week
+    thread: google-capex
+    entities: [google]
+    source: https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/
+    confidence: reported
+    what_confirms: "A launch report from Google, Planet or SpaceX. Google's post said 'next week' without a date; launch trackers give 10-01 and dates can slip."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: nscale-nvidia-1bn-convertible-close-1116
+    claim: "Nvidia's $1.0bn purchase of Nscale convertible notes or non-voting shares closes on or around 11-16"
+    due: 2026-11-16
+    due_precision: week
+    thread: nvidia-vendor-financing
+    entities: [nvidia]
+    source: https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm
+    confidence: reported
+    what_confirms: "Nscale disclosure that the Nvidia convertible has closed. The S-1's 'NVIDIA Sale' section dates it about 11-16, alongside a $300m SAFE conversion and the $860.3m lease guarantee already on the map."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: deepseek-500bn-yuan-raise-1031
+    claim: "DeepSeek completes a raise of about 50bn yuan ($7.45bn) at a 500bn yuan valuation by the end of October, as The Information reports it is finalising (Reuters calls it an IPO ahead of a Shanghai listing)"
+    due: 2026-10-31
+    due_precision: month
+    thread: china-stack-independence
+    entities: [deepseek]
+    source: https://economictimes.indiatimes.com/tech/artificial-intelligence/chinas-deepseek-annualised-revenue-run-rate-hits-1-billion-report/articleshow/134458238.cms
+    confidence: reported
+    what_confirms: "DeepSeek or investor confirmation, or a wire report of the closed round. Note the two reports disagree on the wording (fundraising versus IPO)."
+    logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: cleveland-oh-datacenter-hearings
+    claim: "Cleveland, Ohio's council holds its three public hearings on data-center rules (09-24, 09-29, 10-07) before its three-month moratorium, passed 07-15, lapses around 10-20"
+    due: 2026-10-07
+    due_precision: week
+    thread: ai-datacenter-sites
+    entities: []
+    source: https://www.ideastream.org/government-politics/2026-09-18/how-should-cleveland-regulate-data-centers-3-public-hearings-to-help-find-an-answer
+    confidence: confirmed
+    what_confirms: "Council action on a data-center ordinance, or an extension of the moratorium, before it lapses. Cleveland, Ohio, not Cleveland, Tennessee (Project River)."
+    logged: 2026-09-24
     logged_by: curate-add
     status: pending
