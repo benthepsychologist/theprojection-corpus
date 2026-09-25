@@ -12300,3 +12300,12 @@ kit printed its no-deploy-hook warning. Not re-filed (fleet-ops routed it to dev
   deadline and DevDay and the Trump-Johnson-CEO meeting 09-29, SoftBank's settlement 09-29,
   Portland and California 09-30, Türkiye's ratification 10-01, and whether Anthropic seeks en banc
   review.
+
+**Addendum (16:15 ET).** The run's work was committed and pushed at 19:53Z by a commit this
+session did not make: `2957b01 "2026-09-25 - git updates"`, authored as Ben, containing every
+file above including this entry. No script in this repo or its cron runner produces that
+message, so it was left as is (pushed history is not rewritten). This follow-up commit adds only
+the late `openalex` provenance manifest (collector exit 0 at 20:07Z; 0 kept, 595 terms 429'd)
+and this note. A wait loop using `pgrep -f 'cloud-researcher collect'` matched its own command
+line and reported "still running" after the collector had exited (the known false positive);
+check `/tmp/collect_*.out` for `EXIT` instead.
