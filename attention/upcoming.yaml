@@ -1343,6 +1343,9 @@ expectations:
     # 2026-09-24 ⟨daily⟩: 3pm ET read: no post-hearing report found anywhere (Google News, DuckDuckGo-lite, Lawsuit Informer, the plaintiffs' trackers, the AI Recovery
     # Collective feed; CourtListener does not index the JCCP and the San Francisco court portal is gated). The trackers still list the 09-23
     # 10am Dept. 304 conference as the next event. No basis to flip or to call it postponed; stays open.
+    # 2026-09-25 ⟨daily⟩: 10am ET read: still no minute order, continuance or post-hearing report (agents L and M; the
+    # court portal stays gated and CourtListener does not index JCCP 5431). Three agents over three days have exhausted the
+    # reachable sources. Per the 09-23 note, one last check on 09-26, then close as unverifiable.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -1483,6 +1486,7 @@ expectations:
     # interest report on 'Blupine' is not a signed deal). due_precision is month, so the entry runs to 09-30.
     # 2026-09-24 ⟨daily⟩: 3pm ET read: another negative check (no signed first deal under the $500B platform found). Runs to 09-30; it goes passed-silent only if that
     # date passes empty.
+    # 2026-09-25 ⟨daily⟩: eleventh negative check (agent L): no named deal from any of the six MOU partners. Runs to 09-30.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -3597,7 +3601,16 @@ expectations:
       A US-only characterization after the summit does not confirm it.
     logged: 2026-09-21
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-25
+    evidence: |
+      PASSED-SILENT 2026-09-25: the state visit ended Friday morning (tea, National Archives) with no joint
+      statement, and no White House readout by about 10:15am ET. China's Foreign Ministry readout of the
+      09-24 talks (https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202609/t20260925_12031181.html) says the leaders
+      agreed to continue their dialogue on AI and keep it under human control; it never mentions an incident
+      or notification mechanism. Only the US side has described the channel. WIRED's 09-23 report that US
+      officials target a framework by the Bessent-He Lifeng Shenzhen meeting in about two months gives no
+      checkable date, so this is not a slip. A later Chinese document naming the mechanism would be a new entry.
     # 2026-09-23 ⟨daily⟩: still one-sided. Only the US side (Bessent) has described the mechanism; China's MFA sidestepped twice on 09-22 and the
     # 09-23 briefing carried no AI content. Xinhua says only that the sides 'held dialogues on AI-related issues'.
     # 2026-09-24 ⟨daily⟩: Still pending, partial only. China's Foreign Ministry on 09-24, asked by NYT whether China agreed to a formalized AI
@@ -4074,8 +4087,9 @@ expectations:
   - id: trump-xi-trade-truce-extension-0925
     claim: >
       Trump and Xi announce an extension of the Busan trade truce, which expires 11-10.
-    due: 2026-09-25
+    due: 2026-09-28
     due_precision: day
+    slips: [2026-09-25]
     thread: china-stack-independence
     entities: []
     source: https://www.abc.net.au/news/2026-09-23/donald-trump-xi-jinping-meeting-washington-trade-ai/107179684
@@ -4094,6 +4108,13 @@ expectations:
     # Times) says the sides reached consensus on 'extending the joint arrangement' of the Kuala Lumpur consultation, with no date; the MFA referred
     # the question to 'competent authorities'. Bessent's January 10 date (Fox News, 09-23) remains the US side alone. If nothing lands on 09-25 this
     # flips passed-silent or hit-by-other-means on the 'Trump and Xi announce' wording; the second-day readouts decide it.
+    # 2026-09-25 ⟨daily⟩: SLIPPED to 09-28. The visit closed with no leader or joint announcement of the
+    # extension. China's Foreign Ministry readout says the trade teams 'reached a new joint arrangement' and names no date
+    # (https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202609/t20260925_12031181.html); Bessent's January 10 remains the US side
+    # alone, and he told Reuters Thursday evening that China is lagging on its non-soybean farm purchases and rare-earth
+    # deliveries. USTR Greer told CNBC Friday that 'a lot more details' come Monday 09-28
+    # (https://www.cnbc.com/2026/09/25/stock-market-today-live-updates.html), which is the new date. A published text
+    # naming the new expiry on 09-28 is a hit; the 'Trump and Xi announce' wording will not be met literally.
   - id: softbank-bond-settlement-0929
     claim: >
       SoftBank's USD and EUR notes settle, if they price on schedule.
@@ -4472,7 +4493,16 @@ expectations:
     what_confirms: "A named participant, the Kremlin or the White House confirming the meeting took place, or an outcome statement; Russia denied a separate report of a Budanov trilateral."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-25
+    evidence: |
+      HIT (event 2026-09-24): CNN reported that Dmitriev met Witkoff and Kushner in New York on Thursday,
+      relayed by NV.ua, the Kyiv Post and RBC-Ukraine
+      (https://english.nv.ua/nation/witkoff-kushner-meet-russian-envoy-dmitriev-in-new-york-cnn-50644506.html).
+      Sourcing caveat: this rests on CNN's reporting, not on a participant, Kremlin or White House statement,
+      which is what the entry asked for; no outcome statement was found. The separately reported trilateral
+      with Ukraine's delegation did not happen (Kyiv said its delegation was already heading home). Flipped as a
+      hit because two outlets reported the meeting before and after it; revisit if a participant denies it.
   - id: ac-v-altman-fnc-hearing-1105
     claim: "The Northern District of California hears OpenAI's forum non conveniens motion to dismiss A.C. v. Altman (3:26-cv-09342, Judge Corley; filed 09-02, motion filed 09-17), with responses due 10-06 and replies due 10-20"
     due: 2026-11-05
@@ -4497,6 +4527,8 @@ expectations:
     logged: 2026-09-24
     logged_by: curate-add
     status: pending
+    # 2026-09-25 ⟨daily⟩: 10am ET read of the docket (agent L): order #106 of 09-22 is still the newest entry.
+    # The report is due by the end of 09-25, so this stays pending for the next run.
   - id: warner-schatz-nsa-model-testing-consent-0925
     claim: "The Senate agrees by unanimous consent to Sens. Warner and Schatz's bill making NSA assessment of frontier AI models mandatory before release, which they said they would seek on 09-24 (Warner said it 'probably won't happen'); Sen. Grassley separately sought consent on the AI Whistleblower Protection Act"
     due: 2026-09-25
@@ -4508,7 +4540,15 @@ expectations:
     what_confirms: "The Senate record or a senator's statement that the consent request was made and objected to, or agreed. Silence by the recess is the likely outcome and is itself the reading."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-25
+    evidence: |
+      PASSED-SILENT 2026-09-25: Warner, Schatz and Kim introduced the Artificial Intelligence Risk Management and
+      Security Act of 2026 and said they would seek unanimous consent on Thursday 09-24
+      (https://www.kim.senate.gov/press_release/kim-warner-schatz-take-to-senate-floor-to-demand-passage-of-new-ai-security-legislation/).
+      No outlet reported whether the request was made, agreed or objected to, and the Congressional Record for
+      09-24 was not yet published on govinfo (latest issue 09-23). Within the three-day grace this can still flip
+      if the Record shows the request and its outcome; re-check once the 09-24 issue posts.
   - id: spacex-lockup-tranche-1009
     claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
     due: 2026-10-09
@@ -4519,5 +4559,41 @@ expectations:
     confidence: reported
     what_confirms: "The company's or an analyst's lockup schedule, and the share-price reaction on the day; the source is a Stocktwits piece relayed by Yahoo, not the prospectus."
     logged: 2026-09-24
+    logged_by: curate-add
+    status: pending
+  - id: alabama-v-tiktok-jury-trial-opens-0928
+    claim: "Alabama's suit against TikTok and ByteDance, alleging the platform fuelled teen mental-health harm, goes to a jury trial starting 09-28 in Montgomery, the first of the state suits to reach a jury"
+    due: 2026-09-28
+    due_precision: day
+    thread: social-media-causality-fight
+    entities: []
+    source: https://www.reuters.com/world/us/first-us-trial-against-tiktok-test-claims-platform-fueled-teen-mental-health-2026-09-25/
+    confidence: reported
+    what_confirms: "Jury selection or opening statements reported on 09-28, or a settlement or continuance. The verdict (reported as two to three weeks out) is the informative outcome and would be a separate entry."
+    logged: 2026-09-25
+    logged_by: curate-add
+    status: pending
+  - id: trump-johnson-tech-ceos-ai-meeting-0929
+    claim: "President Trump and House Speaker Mike Johnson meet technology CEOs on artificial intelligence on 09-29, the same day as OpenAI's DevDay"
+    due: 2026-09-29
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://abcnews.com/Politics/trump-house-speaker-johnson-expected-meet-tech-ceos/story?id=136742304
+    confidence: reported
+    what_confirms: "A White House or Speaker's office readout, or reporting on who attended and whether any federal AI-oversight or pre-emption proposal came out of it."
+    logged: 2026-09-25
+    logged_by: curate-add
+    status: pending
+  - id: mecca-pact-turkiye-ratification-1001
+    claim: "Turkiye's parliament takes up ratification of the Saudi-Turkiye-Pakistan joint defence agreement on 10-01, after Saudi Arabia asked its partners to explore support under the pact against the Houthis"
+    due: 2026-10-01
+    due_precision: day
+    thread: yemen-civil-war
+    entities: []
+    source: https://www.aljazeera.com/news/2026/9/25/pakistan-turkiye-edge-closer-towards-joining-saudi-war-against-houthis
+    confidence: reported
+    what_confirms: "A parliamentary vote or debate on the agreement; Reuters reported it is not yet ratified by Turkiye's parliament and that support would be largely bilateral."
+    logged: 2026-09-25
     logged_by: curate-add
     status: pending

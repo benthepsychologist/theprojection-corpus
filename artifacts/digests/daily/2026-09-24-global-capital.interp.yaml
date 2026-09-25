@@ -251,3 +251,113 @@ saudi-arabia-s-red-sea-export-hub-yanbu-had-still:
     pipeline attack, so it is used for logic only. Loading status is from
     Reuters' industry sources and Kpler schedules, not Aramco, which did not
     immediately comment; insurance figures are OilPrice's summary of Reuters.
+
+akamai-said-thursday-it-signed-an-11-6-billion-s:
+  mechanism: >
+    Structuring a compute buyer's commitment as a warrant on the vendor's
+    stock, alongside cash revenue, makes the vendor's equity partly a bet on
+    its own biggest customer staying solvent and paying out its full
+    multi-year contract, the same customer-as-investor shape this map has
+    tracked in Nvidia's guarantee and share position in Nscale; Akamai's own
+    2026 capex rises to secure the memory and components the deal requires
+    before the revenue is fully booked.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The deal expands toward its disclosed $20bn ceiling as Anthropic's
+        compute needs grow, and Akamai's stock gain holds or extends past
+        Friday's premarket spike.
+      why: >
+        Akamai's release frames $11.6bn as a floor with room to $20bn, and
+        the warrant aligns Anthropic's incentive to keep expanding the
+        relationship rather than diversify away from it.
+      precedent: >
+        Nvidia's $860.3m Nscale lease guarantee and warrant, paid partly in
+        Series B shares, is the same structure at smaller scale
+        (`nvidia-vendor-financing`).
+    - direction: >
+        Anthropic's own compute needs shift to other vendors or its own
+        infrastructure, and Akamai's committed 2026 capex outruns the
+        revenue this contract was meant to secure.
+      why: >
+        Akamai said guidance is unchanged for 2026, meaning the capex lands
+        before match to revenue is proven, the same sequencing risk the
+        Brookings AI-financing paper above flags for the sector generally.
+  context_note: >
+    capital-context.yaml has no reading on vendor-financing structures
+    specifically; this draws on the map's own nvidia-vendor-financing thread.
+    Terms are Akamai's own GlobeNewswire release; the premarket move (21%
+    falling to about 14%) is CNBC's live blog, an intraday read.
+
+french-president-emmanuel-macron-said-thursday-tha:
+  mechanism: >
+    War-risk insurance and stalled loadings at Yanbu are priced off the
+    chance of another Houthi strike on the site; a French military presence
+    (radar, air-defence systems) is a physical hedge against that chance,
+    so if it is actually fielded it works on the same variable this map's
+    own Yanbu coverage already tracks — the gap between the pipeline
+    pumping and tankers actually loading.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        French radar and air-defence assets are deployed and reduce the
+        near-term odds of a further strike, and Yanbu's insurance premium
+        and loading delay both ease faster than they would have otherwise.
+      why: >
+        Macron tied the commitment directly to protecting the site rather
+        than to a broader Red Sea mission, and framed it as a response to
+        the missile attacks already disrupting Yanbu.
+    - direction: >
+        The commitment stays a stated intention with no deployed hardware
+        in the announcement itself, and Yanbu's insurance and loading
+        picture keeps moving on Aramco's own pace and further Houthi
+        attempts, unaffected by Thursday's remarks.
+      why: >
+        Macron gave no timeline, unit count or deployment date, and no
+        French assets are reported as already in place at Yanbu.
+  context_note: >
+    No historical precedent offered — kept at speculative confidence per
+    the discipline that above-speculative confidence needs one.
+    capital-context.yaml's conflict_risk_premium (asof 08-25) predates the
+    09-11 pipeline attack and has no France/Yanbu-military reading; this
+    draws on the map's own red-sea-oil-shock thread instead.
+
+the-federal-reserve-board-proposed-its-first-forma:
+  mechanism: >
+    The GENIUS Act requires payment-stablecoin issuers to hold reserves in
+    short-dated, high-quality assets such as Treasury bills, so the Fed's
+    proposed capital and reserve-asset rule sets how large and how strict
+    that statutory bid for bills becomes for every Board-supervised issuer
+    — the same reserve-rule-to-T-bill-demand mechanism this map logged when
+    the GENIUS Act itself passed.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The rule finalizes close to Barr's described shape and issuance
+        grows under it, and Board-supervised stablecoins become a durable,
+        price-insensitive structural bidder for short-dated Treasuries.
+      why: >
+        A statutory reserve requirement forces each new stablecoin dollar
+        into short-dated government paper regardless of yield, the same
+        logic this map used for the GENIUS Act's reserve regime generally.
+      precedent: >
+        US money-market fund reform in 2014-16 forced prime funds into
+        government-only paper and moved several hundred billion dollars
+        into T-bills and reverse repo — a reserve rule rerouting a private
+        float into the front end (`the GENIUS Act's reserve rule` entry,
+        2026-08-30 digest).
+    - direction: >
+        The unresolved AML "significant or systemic" fight and the 60-day
+        comment period delay a final rule for months, and today's proposal
+        stays a procedural step with no near-term effect on issuance or
+        bill demand.
+      why: >
+        Barr's own statement flags the AML standard as unresolved from a
+        July proposal that has not been finalized either, and a proposed
+        rule is not itself binding.
+  context_note: >
+    capital-context.yaml has no stablecoin-specific reading; this extends
+    the map's own reasoning from the 2026-08-30 global-capital digest's
+    GENIUS Act interpretation to today's concrete rulemaking. This bullet
+    carries no owning thread — flagged in the 09-24 digest's Map changes
+    section as a candidate rather than assigned a slug here.

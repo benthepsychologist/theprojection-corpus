@@ -16,6 +16,7 @@ coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 ## 2026-09-24 — Musk says SpaceXAI could match a Fable or GPT-6-level model in two to three months
 
 - **Elon Musk said SpaceXAI could have a model at "Fable/GPT-6 level" within two to three months and reach "pole position" in AI in about six months if its rate of improvement holds** In a Thursday exchange on X he said SpaceX's AI effort is three years old against six for Anthropic and ten for OpenAI and that bringing compute online quickly is the main constraint; it is a forecast, not a release. ([TeslaNorth](https://teslanorth.com/2026/09/24/musk-spacexai-ai-pole-position/), [Forbes](https://www.forbes.com/sites/antoniopequenoiv/2026/09/24/elon-musk-says-spacexs-ai-models-may-surpass-anthropic-and-openais-in-6-months/)) ⟨daily 2026-09-24⟩
+- **Elon Musk said early Friday that SpaceXAI's Colossus 2 data center in Memphis, currently running 110,000 Nvidia GB200 and 440,000 GB300 chips, will add another 220,000 GB300 chips next week and a further 220,000 in November** The post did not address whether Colossus 2 currently has enough power and supporting infrastructure to operate the added chips; EconoTimes' report is a secondary account of Musk's X post, not a SpaceXAI statement. ([EconoTimes](http://www.econotimes.com/SpaceXAI-to-Double-Nvidia-Chips-at-Colossus-2-by-Year-End-1753056)) ⟨daily 2026-09-24⟩
 
 ## 2026-09-22 — Grok Bot reported at 418,000 weekly users, a month after launch
 

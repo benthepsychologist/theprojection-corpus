@@ -1,25 +1,25 @@
 ---
 lens: world-news
 date: 2026-09-24
-status: building
+status: final
 window_start: 2026-09-24T05:00:00-04:00
-as_of: 2026-09-24T15:30:00-04:00
+as_of: 2026-09-25T10:00:00-04:00
 coverage: na   # this lens carries no benchmark critic by design
 ---
 
 # World News — 2026-09-24
 
-*Curated 05:00 ET → about 3pm ET Thursday (agentic-interim; sources:
+*Curated 05:00 ET Thursday → 05:00 ET Friday (agentic-interim; sources:
 WebSearch plus direct-fetched BBC, Al Jazeera, Guardian and CNN live blogs, Kyiv
 Independent, Meduza, Naharnet, Gulf News, Kurdistan24, ACLED, TRT World,
-Anadolu, Ukrinform, DW, NBC, CBS and AP (via republished copies) pages — this lens carries no watchlist-driven collector
+Anadolu, Ukrinform, DW, NBC, CBS, AFP, CGTN/Xinhua and AP (via republished copies) pages — this lens carries no watchlist-driven collector
 buffer, so it is search-first by design; Reuters, AP and NYT returned 403/401
 on direct fetch, so their reporting was read only through republished copies
-where quoted).*
+(Straits Times, Economic Times, NAMPA/RIA, New Voice of Ukraine) where quoted).*
 
 ## Today's throughline
 
-Dozens of delegations walked out as Netanyahu told the UN that attacking Iran was one of his easiest decisions, and Beijing's readout has Xi telling Trump China backs a return to the June US-Iran deal. Trump and Xi met in the Oval Office for about two hours; the White House had issued no readout of its own by about 3pm, Xinhua's account has Xi urging the US to oppose "Taiwan independence", and a state dinner with tech executives follows tonight. US and Iranian negotiators are exploring a phased deal that would reopen Hormuz in return for lifting the US blockade, the Senate rejected an Iran war-powers resolution 49-50, the UAE formally suspended Iranian airline flights, and France said it will send soldiers and radars to protect Saudi Arabia's Yanbu oil port after Saudi Arabia intercepted six Houthi missiles. Ethiopia's army says it killed at least 272 Tigrayan fighters as Tigray's leaders call it full-blown war and flights to Lalibela were suspended. In Europe, Denmark warned of escalating Russian hybrid attacks, Poland called a Starlink station fire sabotage and a Ukrainian man killed a priest in a knife attack at a Polish abbey; Zelensky said the US is pressing for an energy ceasefire, a Black Sea grain corridor and three-way talks, and that Ukraine has agreed a new Patriot missile shipment. Pakistan struck ten sites in Afghanistan for the second time in a week, and the WHO warned Congo is short of health workers as its Ebola outbreak passes 7,700 confirmed cases.
+Dozens of delegations walked out as Netanyahu told the UN attacking Iran was one of his easiest decisions, hours before Trump and Xi met for 90 minutes and a state dinner that produced no joint statement, only toasts. Xinhua's account has Xi urging the US to oppose "Taiwan independence" and backing a return to the June US-Iran deal; the White House had issued no readout of the talks by Friday morning, and Iran's foreign minister told the UN he has given Washington a seven-day plan to reopen the Strait of Hormuz. The Senate rejected an Iran war-powers resolution 49-50, the UAE suspended Iranian airline flights, and the Houthis claimed missile and drone strikes on Riyadh and Aramco's Yanbu facility hours after Saudi Arabia said it shot down six Houthi missiles and France pledged troops to guard Yanbu; Putin's envoy Kirill Dmitriev met Trump aides Steve Witkoff and Jared Kushner in New York on Russia-Ukraine and economic cooperation, while a separate three-way Ukraine-Russia-US contact did not happen as reported. Ethiopia's army said it killed at least 272 Tigrayan fighters as Tigray's leaders called it full-blown war, flights to Lalibela were suspended, and Denmark warned of escalating Russian hybrid attacks as a Ukrainian man killed a priest in a knife attack at a Polish abbey. Pakistan struck ten sites in Afghanistan for the second time in a week, and the WHO warned Congo is short of health workers as its Ebola outbreak passed 7,700 confirmed cases.
 
 ## US–China summit
 
@@ -34,6 +34,9 @@ Dozens of delegations walked out as Netanyahu told the UN that attacking Iran wa
   <!-- k: axis=elsewhere -->
 - **China's Commerce Ministry said Thursday that US and Chinese trade negotiators held their first talks focused specifically on artificial intelligence and reached consensus on several issues, a day after Treasury Secretary Scott Bessent said the trade truce had been extended to January 10.** Spokesman He Yadong said tariff reductions and continuing the arrangements from last October's Kuala Lumpur meetings were also discussed; the coverage read did not include a Chinese statement giving the January 10 date, and Bessent said Beijing might make further announcements in coming days, such as farm purchases and opening parts of financial services.
   ([Quartz, citing CNBC and NBC](https://qz.com/china-us-ai-talks-confirmed-trade-truce-extended-january-092426))
+  <!-- k: axis=elsewhere -->
+- **Trump and Xi's Thursday-evening state dinner produced toasts but no new policy substance: Xi's remarks, delivered in the East Room, dwelt on the history of US-China exchanges and said the two presidents "reached common understanding on many issues" without naming any**, and by Friday morning the White House had published no fact sheet, joint statement or readout of the talks or the dinner — only First Lady items on the menu and Smithsonian visit. Xi's Friday schedule (a private tea and a National Archives visit) remained outstanding.
+  ([Xinhua/CGTN, full text of Xi's toast](https://news.cgtn.com/news/2026-09-25/Full-text-Toast-by-Xi-at-state-dinner-hosted-by-Trump-1QILHDrtrCU/p.html), [whitehouse.gov briefings-statements, checked 09-25 ~10am ET](https://www.whitehouse.gov/briefings-statements/))
   <!-- k: axis=elsewhere -->
 
 ## Horn of Africa
@@ -65,6 +68,9 @@ Dozens of delegations walked out as Netanyahu told the UN that attacking Iran wa
 - **The Senate on Thursday rejected, 49 to 50, a resolution directing Trump to end US military action against Iran, with Republicans Rand Paul, Susan Collins, Lisa Murkowski and Thom Tillis voting yes and Democrat John Fetterman voting no.** It was a concurrent resolution, which never goes to the president and is largely symbolic; the same measure passed the House 214-208 in July. NBC reports 19 US service members have died in the war and that 62 percent of registered voters in its poll say it was not worth it.
   ([NBC News](https://www.nbcnews.com/politics/congress/senate-rejects-resolution-calling-end-iran-war-republicans-stick-trump-rcna599624))
   <!-- k: t=iran-conflict-widening axis=iran -->
+- **Iran's foreign minister Abbas Araghchi said Thursday, on the sidelines of the UN General Assembly, that Tehran has put forward a seven-day plan to reopen the Strait of Hormuz, under which the strait would be open by the end of the seventh day after Washington accepts it and peace talks would then restart.** He said the proposal resembles the collapsed June 17 memorandum of understanding and that Iran wants to settle Hormuz and sanctions relief before broader talks that include its nuclear programme, while the US wants the nuclear issue discussed as part of one package; analysts told Al Jazeera a firm deal remains unlikely and that Iran is using the public offer to pressure Trump over fuel prices before the November midterms. Qatar is passing messages between the two sides in New York; Secretary of State Marco Rubio said it would be wrong to call the contact a breakthrough.
+  ([Al Jazeera](https://www.aljazeera.com/news/2026/9/25/whats-in-irans-seven-day-plan-to-reopen-the-strait-of-hormuz))
+  <!-- k: t=iran-conflict-widening axis=iran -->
 
 ## Yemen
 
@@ -77,6 +83,9 @@ Dozens of delegations walked out as Netanyahu told the UN that attacking Iran wa
 - **France will send "soldiers, radars, and defence systems" to help protect Saudi Arabia's Red Sea oil port of Yanbu after Houthi attacks, President Emmanuel Macron said Thursday in an evening television interview.** Macron gave no timetable or numbers in the AFP report; Yanbu was among the cities Saudi Arabia said it defended against six Houthi missiles on Thursday, and Houthis claimed a strike on Aramco's Yanbu facility on 09-19.
   ([Arab News, citing AFP](https://www.arabnews.com/saudi-arabia/macron-france-to-help-protect-saudi-arabias-yanbu-oil-port-3002995), [Gulf News live blog](https://gulfnews.com/world/mena/irans-pezeshkian-vows-never-to-bend-at-the-knee-at-un-as-us-iran-talks-60-day-ceasefire-roadmap-and-hormuz-blockade-take-centre-stage-1.500685870))
   <!-- k: t=yemen-civil-war,red-sea-oil-shock axis=yemen -->
+- **The Houthis said Thursday evening they had also launched missile and drone strikes on "a sensitive target" in the Saudi capital Riyadh itself, beyond the Jazan military sites already claimed that day, and repeated a claim on Aramco facilities in Yanbu; Saudi authorities gave no confirmation of the outcome of either claim.** This extends, rather than replaces, the day's earlier Jazan claim above — the Houthis named two separate target sets on the same day. No independent verification of impact at either location was found.
+  ([Reuters via the Economic Times](https://economictimes.indiatimes.com/news/international/world-news/houthis-say-they-attacked-riyadh-and-aramco-facilities-in-yanbu/articleshow/134472598.cms), [Times of Israel liveblog](https://www.timesofisrael.com/liveblog_entry/houthis-say-they-attacked-riyadh-and-aramco-facilities-in-yanbu/))
+  <!-- k: t=yemen-civil-war axis=yemen -->
 
 ## Russia / Ukraine
 
@@ -107,6 +116,9 @@ Dozens of delegations walked out as Netanyahu told the UN that attacking Iran wa
 - **A 31-year-old Ukrainian man killed a priest and wounded four other people, two of them critically, in a knife attack at a Benedictine abbey in Jaroslaw, south-east Poland, on Thursday morning, and was arrested.** Prosecutors said he had entered Poland from Germany earlier in the day, was reportedly heading for the nearby border crossing back into Ukraine, and that the motive was unclear; Tusk promised the "full severity" of Polish law, Zelensky called it a "horrific crime", and the town declared mourning until the end of the week. The New York Times says it adds to tension between Poland and Ukraine; no link to the war was reported in the coverage read.
   ([Al Jazeera](https://www.aljazeera.com/news/2026/9/24/ukrainian-knifeman-kills-one-wounds-four-at-abbey-in-poland), [Reuters via Yahoo](https://www.yahoo.com/news/articles/one-dead-four-injured-polish-113046117.html))
   <!-- k: axis=elsewhere -->
+- **Putin's envoy Kirill Dmitriev met Trump's envoys Steve Witkoff and Jared Kushner in New York on Thursday, CNN reported citing sources, with the talks covering both US-Russia economic cooperation and a peaceful settlement of the Ukraine war; the separately reported Budanov-Witkoff-Dmitriev three-way contact did not happen as described.** A Ukrainian presidential adviser, Dmytro Lytvyn, said Ukraine's delegation (which would have included intelligence chiefs Kyrylo Budanov and Rustem Umerov) was "already on its way home," and Kyiv's presidential office did not confirm the three-way meeting ZN.UA had reported was being arranged. The Kremlin separately said a Dmitriev-Witkoff-Kushner meeting "could" happen, without giving details.
+  ([New Voice of Ukraine, citing CNN](https://english.nv.ua/nation/witkoff-kushner-meet-russian-envoy-dmitriev-in-new-york-cnn-50644506.html), [RIA Novosti via NAMPA](https://www.nampa.org/text/23024166))
+  <!-- k: t=russia-ukraine-war axis=russia -->
 
 ## Israel at the UN
 
@@ -176,30 +188,32 @@ nothing today is 9/11- or invasion-scale.
 
 **Afternoon pass (about 3pm ET).** BBC's lead is now its Trump-Xi live page ("great meeting"), with the walkout at Netanyahu's UN speech among its top items; Al Jazeera's banner is the Netanyahu walkout, with Xi urging Trump to resolve the Iran war "as soon as possible" beneath it. Other front-page items outside this lens's threads: Canadian Prime Minister Mark Carney told the New York Times his government had considered the "extreme tail risk" of US military action against Canada and prepared for it, calling it not a base case; the White House restored access for CNN, Politico and MS NOW reporters around noon after a federal judge's order, while the Xi talks were closed to the press pool; German prosecutors are investigating a 105-year-old over a Nazi prisoner-of-war camp; and the Poland abbey stabbing. **Flash verdict: no** — the Trump-Xi summit is the day's biggest story but was scheduled and is not a break in events; nothing from the afternoon is 9/11- or invasion-scale.
 
+**Evening/overnight pass (Thursday evening ET → Friday 05:00 ET), read Friday about 10am ET.** BBC's lead by Friday morning is an analysis piece, "Xi got Trump's red carpet welcome — but not everything he wanted," with a second lead video on how the visit "panned out for Beijing and Washington"; Netanyahu's UN speech is still a top item. Al Jazeera's top story by Friday morning is not the summit at all: a live blog banner reading "Saudi, Turkish and Pakistani military chiefs to hold urgent talks on Yemen" (Riyadh, Ankara and Islamabad are arranging a chiefs-of-staff meeting under their mutual-defence pact, short of a formal invocation; full detail in Yemen, above and in tomorrow's digest) alongside Iran's seven-day Hormuz plan. The Guardian's world front leads with "Pomp over progress in Xi's US summit with Trump is a win for China" and, in its Africa block, the Tigray rebel offensive. No outlet read overnight or Friday morning led with anything this lens does not already track. **Flash verdict: no** — nothing in the evening or overnight window is 9/11- or invasion-scale; the summit produced ceremony, not a shock.
+
 ## ⏳ Upcoming & expected
 
-- ⏳ `iran-hormuz-restricted-zone-boundaries` (grace ends today, 09-24): as of
-  about 3pm ET still no published coordinates, NOTAM/NAVTEX, named geographic
-  limit or enforcement action found. The only geographic language on record is
-  the Revolutionary Guards spokesman's 09-09 statement that the zone will run
-  "from the direction of Chabahar" into parts of the Gulf of Oman and Arabian
-  Sea with "precise coordinates" to come later — a direction, not boundaries.
-- ⏳ `trump-xi-washington-summit-0924`: Oval Office talks are done (began
-  about 11:45am ET, ran about 90 minutes) and only Xinhua's readout is out; the White House had
-  issued none by about 3pm. Xi returns at about 6:45pm ET for the state dinner
-  and East Room remarks, and the visit runs three days. Still open: a
-  White House account, a joint statement, and Trump's signature on the
-  Congress-approved Taiwan arms sale.
-- ✅ Netanyahu's UN General Assembly speech happened this afternoon (walkout,
-  see above); he was due to leave New York within hours to be home before
-  Sukkot begins at sundown Friday, and did not meet Trump. Israel's general
-  election is 10-27 (`israel-general-election`).
-- ⏳ US-Iran: negotiators are exploring a phased Hormuz-for-blockade deal in
-  New York; Trump has said a deal could come after the 3 November midterms.
-- ⏳ Putin's envoy Kirill Dmitriev is reported (Axios, via Meduza) to arrive in
-  New York today to meet Witkoff and Kushner on the US energy-ceasefire, grain
-  corridor and trilateral-talks proposals; Russia denied a separate report of a
-  Budanov-Witkoff-Dmitriev meeting.
+- ✅ `iran-hormuz-restricted-zone-boundaries` — already resolved passed-silent
+  by the main session at the end of its 09-24 grace; no coordinates or
+  enforcement action appeared through this run either.
+- ⏳ `trump-xi-washington-summit-0924`: Oval Office talks and the state dinner
+  are both done; only Xinhua's excerpts and Xi's own toast/ceremony remarks
+  are out, and the White House had issued no readout, fact sheet or joint
+  statement by Friday 10am ET. Xi's Friday programme (private tea, National
+  Archives visit) is still outstanding, and Trump's signature on the
+  Congress-approved Taiwan arms sale remains open.
+- ✅ Netanyahu's UN General Assembly speech happened Thursday afternoon
+  (walkout, see above); he left New York for Sukkot as planned, and Turkey
+  formally rebuked his remarks about Erdogan on Friday (see tomorrow's
+  digest). Israel's general election is 10-27 (`israel-general-election`).
+- ⏳ US-Iran: Araghchi told the UN Thursday that Iran has given Washington a
+  seven-day plan to reopen Hormuz; no US acceptance found by Friday morning,
+  and Rubio said it would be wrong to call the New York contact a
+  breakthrough.
+- ✅ Putin's envoy Kirill Dmitriev met Witkoff and Kushner in New York on
+  Thursday as reported, per CNN; the separately reported Budanov three-way
+  contact did not happen — Ukraine's delegation had already left. A new
+  US-proposed trilateral (Ukraine-Russia-US) meeting in the UAE was floated
+  Friday (see tomorrow's digest).
 - Lavrov is scheduled to address the General Assembly on Saturday.
 
 ## 🔄 Map changes
@@ -218,8 +232,24 @@ nothing today is 9/11- or invasion-scale.
   Corrected in place.
 - 🔧 **Salam-Pezeshkian meeting and Netanyahu's speech** were listed as pending in
   the morning; both happened and are now bullets.
+- 🔧 **Houthi target claims (Yemen section):** the afternoon bullet carried only
+  the Houthis' Jazan-province claim; a same-day, separate Houthi claim of
+  strikes on Riyadh and Aramco's Yanbu facility was added as its own bullet
+  rather than folded in, since the two claims run on different sourcing.
+- ✅ **Dmitriev-Witkoff-Kushner meeting** confirmed as having happened (it was
+  reported only as "due" this morning); the separately reported
+  Budanov-Witkoff-Dmitriev three-way contact is now reported as not having
+  occurred as described.
+- 🔧 **Mecca Joint Defence Agreement (evening/overnight front-page-scan pass):**
+  the parenthetical describing Al Jazeera's Friday-morning top story
+  overstated the Saudi/Turkish/Pakistani development as an "invoked... for the
+  first time" fact; neither Al Jazeera nor Reuters uses "invoke," and Reuters
+  notes the pact "has not yet been ratified by Turkey's parliament." Reworded
+  to "arranging a chiefs-of-staff meeting... short of a formal invocation" —
+  see the 09-25 digest's own Map changes and ZW-world-news.md for the full
+  verification.
 - Entries are proposed to the main session in the staging file. No thread opens or
-  closes proposed; two candidates offered below.
+  closes proposed; two candidates offered below (both repeat offers, see below).
 
 ## 🧵 Thread candidates
 
@@ -241,8 +271,12 @@ nothing today is 9/11- or invasion-scale.
 
 ---
 Dozens of delegations walked out of Netanyahu's UN speech as he called attacking
-Iran one of his easiest decisions, and Xinhua's readout has Xi urging Trump to
-return to the June Iran deal and oppose Taiwan independence. US and Iranian
-negotiators are exploring a phased Hormuz deal, France will send troops and radars
-to Saudi Arabia's Yanbu port, and Ethiopia's army says it killed 272 Tigrayan
-fighters. Trump and Xi's state dinner is tonight, with no White House readout yet.
+Iran one of his easiest decisions, and Trump and Xi's Oval Office talks and
+state dinner produced ceremony but no joint statement, with Xinhua's readout
+alone having Xi oppose Taiwan independence and back the June Iran deal. Iran's
+foreign minister told the UN he has given Washington a seven-day plan to
+reopen Hormuz, the Houthis claimed strikes on Riyadh and Yanbu after Saudi
+Arabia said it shot down six of their missiles, and Ethiopia's army said it
+killed 272 Tigrayan fighters as Tigray called it full-blown war. Putin's envoy
+met Trump's aides in New York on Russia-Ukraine, and a separately reported
+three-way meeting with Ukraine did not happen.

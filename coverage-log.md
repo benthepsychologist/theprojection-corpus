@@ -9062,3 +9062,572 @@ Google News RSS `site:reuters.com` and `site:apnews.com` (`when:2d`) plus topic 
 - Reuters, AP, NYT, The Information, Digitimes and Politico 401/403 to urllib: real evidence of a block, so those facts rest on syndications (Yahoo, Kitco, Economic Times) or headlines and are labelled as such in the digests.
 
 **Main-session disposition (2026-09-24).** Every confirmed miss was merged onto its thread and folded into the digest as an annotated bullet: frontier-ai on `enterprise-agent-product-race` (Amazon's seller-tools plugin), `frontier-model-gov-review-precedent` (METR's evaluation dated 09-22; Huang, the State Department wording order and Zuckerberg's Connect opening; Altman's words were already carried under the Council bullet, so that URL-guard skipped the duplicate) and `dod-ai-consolidation` (Maven/Minab, dated 09-18); global-capital on `red-sea-oil-shock` (two bullets), `ai-trade-bear-turn`, `nvidia-vendor-financing`, `cross-border-rates` and `treasury-long-end-intervention` (two); mental-health on `ai-therapy-evidence` (two), `psychedelic-regulatory-sprint` (Oregon, dated 09-22) and `mh-evidence-watch`. Two carry-forwards from the 09-23 pass closed: Googlebook is now a dated 09-21 entry on `enterprise-agent-product-race` from Google's own post, and Baseten, Modal and Mirendil sit on `ai-circular-financing-risk` (Baseten and Modal are reported talks, not closed rounds; Mirendil dated to Bloomberg's 09-22 report). The Lukoil bid went on `russia-ukraine-war` from Meduza and La Voce di New York summarising the FT (the FT and Reuters bodies were blocked; no on-record confirmation), dated 09-22. **Declined, with reasons:** Diller/MGM (off-lens), the EXIM Bank $7bn Argentina set-aside and the dollar-stablecoins-abroad initiative (no owning thread), the Navy suicide-attempts item (a world-news-lens story, no mental-health thread), ketamine bladder damage in children and the ibogaine coverage (no thread), the UK CMA choice-screen proposal (ambient to `enterprise-agent-product-race`), Tal Broda's move to Khosla. **Thread candidates:** `ai-agent-disruption-trade` returns with new evidence (Wednesday's tape ran the Muse trade a second day); private-market valuation step-ups for inference clouds and neolabs is offered once; both are Ben's call, and neither was created. **Raine v. OpenAI CMC:** no post-hearing coverage found by two agents, the ledger row stays open. **Agent findings that changed staged text:** a Wells Fargo S&P target cut (published 09-15) was an aggregator re-run and was not merged; H2's and R's local-moratorium and cold-thread items were kept on their threads; Z's Palisades, NRC-rule, ITC/Netlist, Suncatcher, BCBSA, Carney and basis-trade items were merged. **Correction to a critic claim:** agent A2 verified the Marles quote against the Guardian and used its wording ("interacted in a way that a member of the public might") rather than the critic's "entirely normal."
+
+
+## 2026-09-25 — coverage critic: 09-24 finalize
+
+*Run 2026-09-25 ~14:40-15:00 UTC (~10:40-11:00 ET), finalizing digest-day
+2026-09-24 (Thursday) across the three critic-bearing lenses. Eight wave-1 agents
+had rewritten the 09-24 digests as the day-in-review and opened 09-25; the critics
+then checked benchmark publications and a Reuters/AP wire backstop against those
+digests. Transport: python3 urllib and the r.jina.ai reader proxy (bare
+`Mozilla/5.0` UA); curl remains session-refused. `buffer/2026-09-25-google_news_rss.jsonl`
+landed at 14:25Z and was triaged separately (agents ZA and ZW; M and G read it too).
+Subsections use the `### <lens> / <date>` form that `graph/ingest/09_critic_annotations.py` parses.*
+
+### frontier-ai / 2026-09-24
+
+- **Missed:** four wire-backstop items, no benchmark lead: Adobe bringing its tools into Gemini and expanding its Claude plugin (09-24); a Trump, Speaker Johnson and tech-CEO meeting on AI set for 09-29 (reported 09-24 evening); Pope Leo telling the Pontifical Academy of Sciences AI brings "new dangers to security and international peace" (09-24, flagged unstaged by the two previous passes); Mustafa Suleyman's essay "A warning about 'model welfare'" (real date 09-16).
+- **Map effect:** folded into the 09-24 frontier-ai digest and merged onto `enterprise-agent-product-race` and `frontier-model-gov-review-precedent` (three entries, one dated 09-16); new ledger entry `trump-johnson-tech-ceos-ai-meeting-0929`. Winters v. OpenAI declined (filed July). Accuracy audit of the digest's five biggest claims found no wording errors.
+
+*Run 2026-09-25 ~13:55–14:55Z (about 9:55–10:55am ET). Reader transport: python3 urllib, r.jina.ai
+with a bare `Mozilla/5.0` UA, DuckDuckGo-lite through the proxy, Google News RSS for wire headline
+lists, and api.govinfo.gov (DEMO_KEY) for the Congressional Record. Digests read fully:
+`artifacts/digests/daily/2026-09-24-frontier-ai.md` (as finalized this morning by agent A) and
+`2026-09-25-frontier-ai.md`, plus agent A's own staging file
+`buffer/sweeps/2026-09-25/A-frontier-ai.md`.*
+
+**They led with → we missed: 3 daily benchmarks checked (all covered, 0 lead misses), 4
+wire-backstop misses confirmed and staged, 1 figure enrichment, 2 open questions resolved (one
+real gap found, one trap avoided), 1 open question genuinely unreachable.**
+
+#### Benchmarks
+
+| Benchmark | What it led with (09-25 issue, reporting Thursday 09-24) | Verdict |
+|---|---|---|
+| The Rundown AI | "Meta's Connect turns into a Muse takeover" (Charm keychain device, glasses integration, Realtime Avatar, PayPal/Walmart/Shopify/GitHub/Box partners); horn items: Google's Suncatcher chips to space, Amodei/Altman UN remarks, Black Forest Labs' FLUX 3 Action, WSJ's $10.3T AI-buildout estimate, OpenAI hiring Sam Yam, ChatGPT Voice's cross-app upgrade | covered on the lead (Muse Charm is in the 09-24 digest; Suncatcher is in the 09-24 digest). Sam Yam is already on-map from 09-23. FLUX 3 Action and the WSJ buildout estimate are checked below (not staged — see Corrections/Seen-not-staged) |
+| TLDR AI | 09-25 issue "ChatGPT Pro Max, Muse realtime avatar, DeepSeek $1B ARR" — Muse Realtime Avatar, Gemini 3.8 Live, OpenAI's Pro Max leak, engineering section (Contrastive Language Models) | covered on every lead — all three are already in the 09-24 digest |
+| The Neuron | "Meta unveiled Muse Charm, a pocket AI" (09-25, 09:30 UTC) — Muse Charm/glasses, Around the Horn: White House/UK-testers request, Akamai-Anthropic deal, DeepSeek $1B ARR, the Google/OpenAI/Anthropic standards group, Suncatcher, Anthropic's Project Swap, **TypeSafe AI (Jev) reportedly in talks for a $1B+ round**, Adobe-for-Claude PDF tools, Patrick Wardle's patched Mac zero-day, Skild AI robot soccer | leads covered. Two Around the Horn items are genuine misses (Adobe, below); TypeSafe/Jev fundraising talk and Skild AI are capital/robotics stories outside this lens's core, logged as seen-not-staged |
+| The AI Daily Brief | not probed this pass (yesterday's critic recorded it dark 09-22/09-23; not re-tested) | not checkable, carried over |
+
+No benchmark's Thursday-evening or Friday-morning lead was missing from the digest map. The gaps
+this pass found came from the wire scan and from following up three specific open questions the
+brief named, not from the daily-newsletter tier.
+
+#### Wire backstop
+
+Google News RSS `site:reuters.com`/`site:apnews.com when:2d` returned about 55 AI-tagged Reuters
+headlines and about 60 AP headlines for the window. Already covered by the digests: the White
+House/UK-testers request, the Akamai deal, Suncatcher, BNP Paribas/Google Cloud, Meta's Connect
+and Muse Charm, the UN Security Council session, DeepSeek's $1B ARR, Oracle's force majeure notice,
+Huang on regulatory exemptions, the Australia breach and its Canberra rebuke, and the Blue Cross
+AI-coding-costs story (now in the mental-health digest, not this lens's to carry).
+
+**Confirmed misses (verified against a primary or wire text read in full):**
+
+1. **Adobe brought its creative and productivity tools to Google's Gemini for the first time, and
+   added Acrobat PDF tools plus hands-on interactive editing to its existing Adobe-for-Claude
+   plugin (09-24).** Adobe's own blog post, read in full: Gemini users can now call on Photoshop,
+   Lightroom, Express and Firefly tools through a conversation (product photos, social-ready
+   variants, customized Express templates); inside Claude, the plugin grows from creative tools
+   alone to more than 80 tools across Acrobat, Express, Photoshop, Illustrator, Premiere,
+   Lightroom, InDesign and Adobe Stock, plus a new layer-based interactive editor for Express
+   designs and direct PDF editing rather than only describe-and-generate. Repo grep for "Adobe"
+   across `artifacts/threads`, `artifacts/digests` and `attention`: zero hits — this connector
+   ecosystem story (alongside BNP Paribas/Google Cloud and Amazon's Selling Partner plugin, both
+   already on `enterprise-agent-product-race`) had no prior mention at all. No watchlist entity
+   exists for Adobe, so the entity tag below carries only the labs (anthropic, google). Digest
+   section: Product & access. Staged.
+2. **Mustafa Suleyman published a new essay, "A warning about 'model welfare,'" on 09-16 —
+   arguing against Anthropic's Claude Constitution for asking models to consider their own
+   consciousness and moral status, and proposing a "Humanist Superintelligence" framing under
+   which AI is never trained to think it has rights or feelings.** This is the essay the brief
+   asked about; I confirmed its real date directly from Suleyman's own blog index
+   (mustafa-suleyman.ai), which dates it 16 September 2026 — nine days before this run, so a real
+   late catch, not a Thursday/Friday event. It is distinct from and much narrower than his
+   November 2025 "Towards Humanist Superintelligence" essay (which the same site dates
+   2025-11-07 — eleven months old, and NOT a live development if it resurfaces as a headline).
+   Two aggregator pieces republished the framing today, 09-25 (Times of India 03:25 UTC, Firstpost
+   09:09 UTC), both citing the 09-16 essay as if fresh — exactly the resurfacing trap the brief
+   warns about; I did not stage a 09-25 entry, only the real 09-16 one. Repo grep for "model
+   welfare" and "Claude Constitution": both terms appear only in existing digest prose about
+   Microsoft's Humanist AI Code of Conduct consultation (tracked in `upcoming.yaml`), never this
+   specific essay. It belongs directly on `frontier-model-gov-review-precedent`, the same thread
+   that already carries Huang's, Zuckerberg's and Altman's positioning in the pacing debate.
+   Staged as a late catch, dated 2026-09-16.
+3. **Axios reported, and Reuters/ABC News confirmed, that President Trump, House Speaker Mike
+   Johnson and a group of tech CEOs will meet on AI on Tuesday, September 29 — the same day as
+   OpenAI's DevDay.** Read the wire text in full (Reuters via a syndicated aggregator, ABC News
+   directly, investingLive's summary of the Axios scoop): attendees and agenda are still unclear;
+   the report frames the meeting against mounting pressure from AI-company leaders for a
+   coordinated slowdown that Trump has resisted, calling such warnings a "hoax"; ABC notes the
+   House "left town early until after the midterms," the same recess context already in the
+   09-24 digest for the Warner-Schatz unanimous-consent push. Repo grep for "Johnson" plus "tech
+   CEOs" and for "September 29" scheduling: zero hits on this meeting (DevDay's 09-29 date was
+   already tracked, this second, separate 09-29 event was not). Digest section: Policy &
+   governance, and the ⏳ Upcoming section should add the meeting as a dated expectation. Staged
+   on `frontier-model-gov-review-precedent`, dated 2026-09-24 (Axios's scoop published ~7pm ET
+   Thursday, wire-confirmed same evening).
+4. **Pope Leo XIV addressed the Pontifical Academy of Sciences on AI risk Thursday 09-24, and is
+   scheduled to speak on AI at UNESCO's Paris headquarters Friday 09-25 — the third straight day
+   of Vatican AI positioning this map has left unstaged.** This is a genuine reconciliation
+   failure: the 09-23 critic pass flagged the Reuters "For Pope Leo, the risk of an AI apocalypse"
+   headline as seen-but-unstaged, the 09-24 digest's own map-changes note repeated the same flag
+   a day later, and it was still not folded in as of this pass. Read Rappler's full syndication of
+   the Reuters piece: Pope Leo told the Academy Thursday that AI "can benefit humanity" but has
+   introduced "new dangers to security and international peace," urging leaders to "govern
+   wisely"; Vatican AI advisor Fr. Paolo Benanti (already on `frontier-model-gov-review-precedent`
+   from his 09-23 "cartel" remarks) told Reuters "this is not happening on day zero for the Holy
+   See," referencing the labs' own slowdown calls, and said he could not discuss the confidential
+   King Charles AI summit he'd attended; the piece also reports the Vatican's own AI warnings
+   date to 2019 and that Anthropic co-founder Chris Olah spoke at the Vatican's May encyclical
+   launch. Staged as an extension of the existing Benanti entry, dated 2026-09-24.
+
+**Enrichment to an already-staged entry (not a new timeline item):** Agent A's Colossus 2 bullet
+(staged in `A-frontier-ai.md`, dated 09-24) gives Musk's two confirmed tranches (220,000 GB300
+chips next week, another 220,000 in November) but drops a third, conditional one from the same
+X post, read in full via EconoTimes: "If we get lucky, yet another 220k GB300 by late December."
+Recommend the main session add that clause when merging — it is Musk's own hedge, not this map's
+inference, and materially changes the read (three tranches, one conditional, vs. two firm ones).
+
+**Seen, not staged (below the bar or another lens's lane):**
+- TypeSafe AI (Jev's maker) reportedly in talks for a $1B+ valuation round, about a week after
+  raising $40M at ~$200M (The Information's Dealmaker newsletter, via The Neuron). No frontier lab
+  attached and no thread fits a non-lab model-architecture funding story (this map logged the Jev
+  launch itself on 09-18 the same way); this is closer to global-capital's lane if it wants it.
+- Black Forest Labs' FLUX 3 Action, an open-weight "world action model" for robot control that
+  beats Nvidia's Cosmos 3 on the RoboLab benchmark (bfl.ai, published 09-22). Robotics-focused and
+  three days outside this window; a borderline lens fit either way. Not staged.
+- Skild AI trained a humanoid to play soccer through simulated self-play (The Neuron's Around the
+  Horn, 09-22). Robotics, off-lens.
+- Meta's Muse Realtime Avatar work-connector list grew to include Notion, GitHub and Box (The
+  Neuron); this is an incremental addition to the already-covered 09-23 Muse-connectors bullet
+  (Walmart/Best Buy/Sephora/Shop Pay/PayPal), not a standalone development.
+- Reuters' "China fuels rush to turn AI video into an industry" and its "Funding frenzy, chip
+  wars, and robot dreams" newsletter feature — both read as headline/summary only, not opened in
+  full; either could touch `china-stack-independence` but I did not verify a specific new fact in
+  either beyond what's already mapped.
+- SoftBank shares fell on the Oracle/Blue Owl Project Jupiter delay (EconoTimes headline) — capital
+  market reaction to an already-covered event; global-capital's lane, not restaged here.
+
+#### Accuracy audit (09-24 digest's biggest claims, checked against primaries)
+
+All five items the brief named, checked against primary text:
+
+- **China MFA readout wording** — verified word-for-word against the Ministry's own English-language
+  page (fmprc.gov.cn), read in full via direct fetch (no proxy needed, plain urllib worked): every
+  quoted phrase in the digest — "may have competition, but they may cooperate even more," "draw on
+  each other's strengths, not guard against each other," "AI must be kept under human control," and
+  Trump's "should maintain dialogue and strengthen cooperation on AI" — matches the primary exactly.
+  **No correction needed.** (One thing the digest leaves out, not wrong just incomplete: Trump's
+  fuller line was "AI concerns the future of humanity. The United States and China should maintain
+  dialogue and strengthen cooperation on AI" — the first sentence isn't quoted. Minor, optional add.)
+- **26 attorneys general letter** — verified the state count against the Washington AG's own release
+  (atg.wa.gov), read in full: Washington plus 23 other named states, plus DC and American Samoa =
+  24 states + DC + American Samoa = 26 signers total. The digest's "24 states plus DC and American
+  Samoa" is exactly right. **No correction needed.**
+- **Akamai–Anthropic $11.6bn terms** — verified against Akamai's own press release (GlobeNewswire),
+  read in full: $11.6B over seven years, up to $9B additional expansion (~$20B total), warrant for
+  ~5% of common stock (2% vesting now, 3% tied to expansion, 7.7M shares at $111.33 strike), ~$5.5B
+  associated capex, ~$1.7B added to 2026 capex, no 2026 revenue-guidance impact. Every figure in the
+  digest matches the primary exactly. **No correction needed.**
+- **Musk's Colossus 2 figures** — verified against EconoTimes' full report of Musk's X post: 110,000
+  GB200 + 440,000 GB300 chips currently, +220,000 GB300 next week, +220,000 more in November. All
+  correct — but see the enrichment note above (a third, conditional December tranche is missing).
+- **Project Jupiter's gas-pipeline slip date** — verified against TechCrunch's own report, read in
+  full: the Energy Transfer pipeline has slipped "nearly six months, to February 1, 2027," after
+  regulators repeatedly denied permits, and the state environment department has a November 23
+  deadline on the separate fuel-cell air-quality permit. Matches the digest exactly. **No
+  correction needed.**
+- **White House/UK AISI request** — Politico's own page 403'd on every transport tried (direct
+  urllib and r.jina.ai both blocked by a JS challenge); corroborated instead via Reuters' own
+  headline and via three independent secondary write-ups (IT Pro, BeInCrypto, Analytics India
+  Magazine) through Google News RSS, none of which contradicts the digest's account or shows any
+  Friday-morning update — OpenAI's compliance is still unstated as of this pass. **No correction
+  found, but the primary itself remains unread — flagging the access gap rather than certifying
+  the claim from primary text.**
+
+#### Specific open questions
+
+**(a) Warner–Schatz unanimous-consent vote — outcome remains genuinely unknown, not "no
+objection."** Tried, in order: congress.gov (CAPTCHA on every path, consistent with the brief's
+warning); the govinfo.gov public API (`api.govinfo.gov/collections/CREC/...`, DEMO_KEY) rather than
+guessing a CREC page URL directly — a direct guess at
+`CREC-2026-09-24/html/CREC-2026-09-24-pt1-PgS7000.htm` returned HTTP 200 but was actually
+govinfo's own "Page Not Found" error page, the exact silent-failure trap the brief warns about
+elsewhere for aggregators. The API confirms the truth: as of this check the most recent
+Congressional Record issue published is **09-23** (`CREC-2026-09-23`, last modified
+2026-09-24T13:56Z) — Thursday 09-24's issue is not yet up, which is normal (next-business-day lag,
+worse with the Senate near recess). `democrats.senate.gov/floor` and
+`republican.senate.gov/floor-updates` both returned HTTP 403 via urllib (not a WebFetch-only
+block — genuinely inaccessible from this transport). A fresh Google News RSS sweep for
+"Warner Schatz unanimous consent AI" turned up nothing newer than the two pre-vote pieces already
+in the 09-24 digest. **Recommend: carry the "outcome not reported" line forward into 09-25's
+digest exactly as agent A already worded it, and re-check the Congressional Record API once
+09-24's issue posts** (likely by Monday given the recess).
+
+**(b) Winters v. OpenAI (Florida pastor's ChatGPT medical-advice suit) — confirmed NOT a
+09-24/09-25 event; decline.** Google News RSS and a CourtListener search both surfaced this
+story, but every outlet dates it to **July 22–23, 2026**: CBS News (07-23), Courthouse News
+(07-22), Bloomberg Law (07-22) and the BBC (07-22) all carry the same filing under those dates.
+Nothing in this week's coverage updates or resurfaces it with a new development — it appears in
+current searches only because it keeps getting cited as background in other ChatGPT-harm stories.
+This is exactly the aggregator-resurfacing trap the brief describes; **not staged, and flagged so
+the main session doesn't file it under this week's date if it turns up again.**
+
+**(c) Suleyman's essay — resolved as a genuine, dateable late catch; see wire-backstop miss #2
+above.** The essay exists, pushes back specifically on Anthropic's model-welfare research, and is
+dated 16 September 2026 by its own author's site — confirming the brief's "~09-16" estimate almost
+exactly. Staged.
+
+#### Corrections requested
+
+None of the five audited claims above needed a wording fix — all matched their primaries exactly.
+The one thing worth the main session's attention is not a factual error but an omission: Musk's
+own X post names a third, conditional tranche ("if we get lucky, yet another 220k GB300 by late
+December") that agent A's staged Colossus 2 bullet doesn't carry. Recommend adding it when merging
+rather than reopening the bullet as wrong.
+
+#### Tooling notes
+
+- **A guessed govinfo.gov CREC URL returned HTTP 200 with a "Page Not Found" body** rather than a
+  404 status — the same class of silent failure the brief documents for the statnews.com signup
+  redirect. The govinfo public API (`api.govinfo.gov/collections/<collection>/<start>/<end>`, works
+  with `api_key=DEMO_KEY`, no registration needed) is the reliable way to check what's actually
+  published for a given date, rather than constructing a package/page URL by guessing volume/issue
+  numbers.
+- `democrats.senate.gov/floor` and `republican.senate.gov/floor-updates` both 403 on a plain
+  `Mozilla/5.0` UA and on a full Chrome UA string via urllib — did not try the r.jina.ai proxy
+  against these specifically since the brief lists them as an alternative to congress.gov, not as
+  pre-verified reachable; worth someone testing the proxy against them directly in a future pass.
+- The Rundown AI's homepage (`therundown.ai`, no `/feed` needed) loads full article teaser text
+  directly via r.jina.ai with a bare `Mozilla/5.0` UA, and its individual `/articles/<slug>` pages
+  give full issue text the same way — no Chrome UA or `/feed` endpoint needed this pass.
+- TLDR AI's dated URL (`tldr.tech/ai/YYYY-MM-DD`) does not render via plain urllib (it's a
+  client-rendered app; direct fetch returns the shell with only the `<title>` populated), but
+  renders in full through `r.jina.ai/https://tldr.tech/ai/YYYY-MM-DD`.
+- mustafa-suleyman.ai's own site (not a proxy) loads directly via r.jina.ai and carries a dated
+  post index — the fastest way to pin down a Suleyman essay's real publish date against whatever
+  date an aggregator implies.
+- Politico (politico.com) is Cloudflare-JS-gated on both direct urllib and the r.jina.ai proxy
+  (both returned a "Just a moment..." challenge) — same class of block as Bloomberg Technology and
+  MobiHealthNews already logged in `sources/benchmarks.yaml`; worth adding Politico to that file if
+  this recurs.
+- Buffer check at ~14:50Z: `ls buffer/2026-09-2[45]-*` showed 09-25's `rss` (589 rows) and `github`
+  lanes landed (matching agent A's report); `google_news_rss` for 09-25 had landed by this point
+  (file present, ~14:28Z per the brief's own expected timing) — I did not re-triage it beyond the
+  targeted RSS-search queries above, since those cover the same wire ground more precisely for a
+  critic pass. Did not check `openalex` (research-paper lane, not relevant to a news-wire critic
+  pass) or `clinicaltrials`.
+
+### global-capital / 2026-09-24
+
+- **Missed:** three wire items, no benchmark lead: Macron committing French troops, radar and air defences to protect Yanbu (09-24); the Federal Reserve's first stablecoin rulemaking under the GENIUS Act (Barr, 09-24); BoE Deputy Governor Breeden's "sparks in the tinderbox" remark (09-24).
+- **Map effect:** folded into the 09-24 global-capital digest (two with interpretations) and merged onto `red-sea-oil-shock` and `cross-border-rates`; the stablecoin rule has no thread and is offered as a candidate. The number audit confirmed all four index closes against AP's table. Two of agent H's staged items were ruled date traps and not merged: a 214.7bp Oracle CDS level (August-vintage data) and Goldman's "$1.4tn by 2027" capex figure (published earlier). H's Bloomberg force-majeure mechanism was re-dated to 09-25.
+
+Agent CG, foreground, ~10:15am-12:15pm ET. Read-only apart from this file; scratch in /tmp/agentCG/.
+Transport: python3 urllib (Chrome UA), r.jina.ai (bare `Mozilla/5.0` UA) for Bloomberg/RFI/paywalled
+previews, DuckDuckGo-lite through the proxy for headline-to-publisher resolution, Google News RSS for
+headline sweeps, `pdftotext` on the Census Bureau's own PDF, direct fetch of federalreserve.gov and
+UMich's site. WebSearch used sparingly (~6 calls) to chase the Oracle-CDS and Goldman-capex date traps
+to ground. Read `buffer/sweeps/2026-09-25/BRIEF.md`, both global-capital digests (09-24 finalized, 09-25
+new), the 09-24 interp sidecar, and staging files `G-global-capital.md` and `H-buildout-financing.md` in
+full before starting.
+
+**Headline finding: this pass caught two genuine misses (a Macron/Yanbu security commitment and the
+Fed's first formal stablecoin rulemaking) and, more importantly, caught agent H's proposed "resolution"
+of the Oracle CDS carry-forward and its "new" Goldman capex escalation as two separate date-of-event
+traps — both look like fresh Thursday/Friday news and are actually recycled figures from earlier in the
+year.** The 09-24 digest itself (agent G's finalize pass) was unusually clean: G had already done a lot
+of critic-grade work itself (closes reconciled against Treasury's own curve, a genuine second pass on
+the Oracle CDS level, date traps caught on a Burry piece and a stale Wells Fargo note). The number audit
+below confirms G's index closes and primary-source data points to the wire/document, with no corrections
+needed there.
+
+#### Benchmarks
+
+| Benchmark | What it led with (09-24 window) | Verdict |
+|---|---|---|
+| Money Stuff (Matt Levine) | Thursday's column (18:16 GMT / 2:16pm ET, `.rss` author endpoint), "Morgan Stanley Leaked Some Deals" — subtitle "Pipelines, force majeure, private equity malaise, credit card risk tranching, egg futures, and Medicaid gambling." | The "force majeure" reference is Oracle's Project Jupiter notice, already covered in depth. The Morgan Stanley lead is a real, verified story (see below) but off-lens — declined, same call as the 09-23 critic's Diller/MGM item. |
+| Axios Pro Rata | Not reachable this pass — axios.com returned a bot-check/CAPTCHA page to both direct urllib and the r.jina.ai proxy. | Unread; flagging the tooling failure rather than guessing at content. |
+| FT Unhedged | RSS worked directly (bare UA). Thursday (09-24): "The SVB postmortem continues" / "Plus: quality." Friday (09-25, early): "Bonds can keep falling" / "Easy to explain, hard to live with." | Headlines/subtitles only, bodies paywalled. Neither reads as a concrete on-lens factual claim the digest is missing; "Bonds can keep falling" is thematically already the digest's own throughline. Not staged, consistent with the 09-23 critic's treatment of this benchmark. |
+| Bloomberg Technology | Homepage unreadable through the proxy this pass (nav shell only, no headline list rendered — same JS-rendering limit the 09-23 critic hit). Substance came instead from Money Stuff, Google News RSS `site:bloomberg.com` sweeps, and direct fetch of specific Bloomberg articles already linked from the digests/staging files. | See Wire backstop below for what these sweeps turned up. |
+
+**Morgan Stanley Asia deal-pipeline leak, verified:** a Morgan Stanley banker covering financial sponsors
+in Asia accidentally sent an internal document listing 100+ investment-banking deals being pitched and
+monitored to a client, per six people with knowledge of the matter (Bloomberg broke it Wednesday 09-23
+about 1:00pm ET; Reuters filed its own version Thursday 09-24 at 13:40 UTC / 9:40am ET,
+reuters.com/legal/transactional/morgan-stanley-asia-deals-leaked-missent-email-attachment-2026-09-24/).
+Real and dated correctly, but it is an M&A-pipeline embarrassment story with no dollar figures on market
+impact and no natural thread — the same category the 09-23 critic put the Diller/MGM item in. Not
+staged.
+
+#### Confirmed misses
+
+**Miss 1. France will send troops, radar and defense systems to protect Saudi Arabia's Yanbu export
+hub (thread `red-sea-oil-shock`; digest section: Capital in my markets, the Yanbu bullet).** President
+Emmanuel Macron said in a primetime TF1/France 2 interview Thursday 09-24 ("The situation is serious"):
+"We are going to send military resources, that is to say, soldiers, radar systems and defence systems,
+to protect this site — not to get us involved in any conflicts, but to protect this site." Macron tied
+the commitment directly to the missile attacks on Yanbu, the alternate Saudi export route the map's own
+Yanbu coverage already tracks in depth (stalled loadings, tripled war-risk insurance). The 09-24 digest
+covers Yanbu's stalled loadings and Aramco's own comments (Nasser) but has no French commitment anywhere
+— zero repo hits for "Macron" combined with "Yanbu" or "Saudi." This is a genuine geopolitical
+development directly on an already-tracked thread, not an ambient mention. ([RFI, in English, quoting
+Macron's Elysée-linked interview transcript](https://www.rfi.fr/en/france/20260925-france-to-send-military-to-protect-saudi-arabia-on-red-sea-oil-route-yanbu), corroborated by a Reuters headline dated Thu 24 Sep 2026 19:51 GMT via Google News RSS).
+
+**Miss 2. The Federal Reserve Board proposed its first formal regulatory framework for payment
+stablecoin issuers under the GENIUS Act (no owning thread; carried forward unmapped since at least
+2026-08-29 per repo grep).** Fed Governor Michael Barr's own statement, dated September 24, 2026 on
+federalreserve.gov, confirms the Board issued a proposed rulemaking on reserve-asset limitations and
+capital requirements for Board-supervised stablecoin issuers, and separately flags an unresolved
+disagreement over an anti-money-laundering "significant or systemic" standard carried over from a July
+proposal. Reuters filed its own version Thursday at 18:49 UTC (2:49pm ET):
+reuters.com/legal/government/us-federal-reserve-proposes-new-stablecoin-rules-2026-09-24/. This is a
+concrete regulatory action, not the "US considering an initiative on dollar stablecoins abroad" report
+the 09-23 critic already declined for lack of a thread — repo grep shows "stablecoin" mentioned in at
+least six digests since 2026-08-29 (08-29, 08-30, 08-31, 09-08, 09-09, 09-23, 09-24) with no thread ever
+created. Given the recurrence and today's concrete federal action, flagging this explicitly as a thread
+candidate for the main session rather than inventing a slug myself (the timeline entries staged at the
+end of this file do not include one for this, deliberately).
+
+**Texture addition, not a standalone miss: Bank of England Deputy Governor Sarah Breeden's own remarks
+at the same London Macro Policy Forum where Fed's Williams spoke Thursday (thread `cross-border-rates`;
+digest section: Capital in my markets, the UK gilt bullet).** The digest's gilt bullet quotes only
+Deputy Governor Clare Lombardelli's separate remarks in Warsaw. Reuters' fuller story (David Milliken
+and Andy Bruce, reuters.com/world/uk/bank-england-rate-setters-warn-sparks-tinderbox-2026-09-24/, read
+via a Euronext syndication since Reuters itself 401'd) shows Breeden spoke at the same London forum
+Williams addressed and delivered the more vivid line: "The more sparks we're throwing in the tinderbox,
+the more likely we might have to turn the hose on it." Both deputy governors, who voted to hold last
+week at 3.75%, "said they were considering shifting position." Adds a second named BoE voice and ties
+the UK story to the same event as the Williams bullet already in the digest. Staged as a light extension
+to the existing cross-border-rates entry, not a new development in its own right.
+
+#### Digest number audit (2026-09-24-global-capital.md)
+
+Sources used: AP's own "How major US stock indexes fared Thursday 9/24/2026" (fetched direct via
+apnews.com, full point table), an AP/wire narrative piece syndicated by the LA Times ("A shaky day for
+oil prices and the bond market..."), U.S. Census Bureau's own advance durable-goods PDF (fetched direct,
+parsed with `pdftotext`), University of Michigan's own site (fetched direct).
+
+| Digest figure | Wire check | Result |
+|---|---|---|
+| S&P 500 7,704.13 (-1.90, -0.02%) | AP direct: "The S&P 500 fell 1.90 points, or less than 0.1%, to 7,704.13." | Confirmed exactly. |
+| Dow 51,349.98 (-161.61, -0.3%) | AP: "The Dow Jones Industrial Average fell 161.61 points, or 0.3%, to 51,349.98." | Confirmed exactly. |
+| Nasdaq 26,939.37 (+3.34, +0.01%) | AP: "The Nasdaq composite rose 3.34 points, or less than 0.1%, to 26,939.37." | Confirmed exactly. |
+| Russell 2000 2,835.57 (-3.09, -0.1%) | AP: "The Russell 2000 index of smaller companies fell 3.09 points, or 0.1%, to 2,835.57." | Confirmed exactly. |
+| 10-year ~5.223% (CNBC) vs. Treasury's own par-curve 5.18% — digest frames this as a vendor gap, not an error | A separate AP/wire narrative piece (via LA Times syndication) gives its own close-day sentence: "The yield on the 10-year Treasury jumped to 5.20% from 5.11% late Wednesday and is back to where it was in 2007." This is a THIRD independent read (5.20%), sitting between Treasury's 5.18% and CNBC's 5.223% — it corroborates the digest's "vendor gap, not error" framing rather than contradicting it. | No correction needed; suggest citing AP's 5.20% alongside the existing two figures so a reader sees three converging reads rather than two diverging ones. Suggested wording: "Treasury's own constant-maturity curve read 5.18%; AP's wire narrative had it at 5.20%; CNBC's quote feed had it closing near 5.223% — a vendor-quote spread, not a data error." |
+| 30-year ~5.50% (CNBC, day high 5.501%) vs. Treasury's 5.47% | No independent Thursday CLOSE-of-day wire sentence found for the 30-year beyond the intraday reads already in the digest (Reuters' 9:04am ET piece: "climbed to 5.48%"). | No contradiction found; the digest's existing vendor-gap framing stands unconfirmed-but-unchallenged for this specific figure. |
+| Brent settled $106.60 (+3.4%); WTI settled $94.61 (+2.7%) (CNBC) | The same AP/LA-Times wire narrative piece states: "[Brent] later rose to settle at $100.22, up 2.1% from the prior day." This is internally inconsistent — a rise from Wednesday's known $103.08 settle to $100.22 would be a DECLINE, not a 2.1% gain — and contradicts every other Thursday source (CNBC $106.60/+3.4%, Reuters' own intraday reads climbing toward $106-108, Kitco). | Treated as a wire-copy/templating error in that specific syndicated piece, not used. The digest's CNBC-sourced $106.60/+3.4% is the well-corroborated figure and needs no change. Flagging because it is the second instance this run of an unreliable, apparently auto-generated business-wire copy (after G's self-contradicting Yahoo gold article) — see Tooling notes. |
+| Gold ~$4,274.70 (-0.26%); silver ~$63.67 (-1.02%) (Kitco) | Not independently re-verified this pass; relied on G's existing Kitco sourcing. | Not re-checked — flagging as unverified rather than silently endorsing. |
+| Durable goods orders (Aug): $338.6bn, ~0.0% m/m; July revised to +0.9%; ex-transportation +0.3%; ex-defense +0.1%; transportation equipment -0.6% to $114.1bn; shipments -0.2% to $333.8bn; unfilled orders +0.6% to $1,609.4bn; inventories +0.5% to $608.1bn | U.S. Census Bureau's own advance-report PDF (census.gov/manufacturing/m3/adv/pdf/durgd.pdf), fetched directly and read with `pdftotext`: every one of these figures matches word-for-word, including the exact dollar amounts and percentages. | Fully confirmed against the primary document. |
+| UMich final September sentiment: 48.1 (Current 50.9, Expectations 46.3, year-ahead inflation 4.6%) | University of Michigan's own site (sca.isr.umich.edu), fetched directly: "Index of Consumer Sentiment 48.1 ... Current Economic Conditions 50.9 ... Index of Consumer Expectations 46.3," Sep/Aug/Sep-2025/M-M/Y-Y table. | Fully confirmed against the primary source; the digest's flag on a stale "47.8" secondary figure was correct to avoid. |
+
+#### Contradiction to settle — Oracle's CDS level, ruled NOT usable
+
+Agent H staged a timeline entry resolving the Oracle-CDS-level carry-forward as **214.7 basis points**
+(bonds yielding 5.8%-6.3%), plus CoreWeave at **810.9 basis points**, both sourced to Oninvest
+(en.oninvest.com, citing "Freedom Finance Global" data). Agent G, in the same run, separately traced a
+~215bp figure to an August 9 Kobeissi Letter post and ruled no genuine 09-24 level is public, leaving the
+last dateable figure at July 20's ~203bp. These are two different sweeps reaching opposite conclusions on
+the same day — I opened H's actual source to settle it.
+
+**Ruling: H's figure is a recycled/stale read, not a fresh Thursday print. Do not merge H's Oracle-CDS
+timeline entry's specific basis-point figures. G's existing ruling in the 09-24 digest stands.**
+
+What I found, opening the Oninvest article directly (fetched in full via urllib):
+- Its own page metadata (`datePublished`/`dateModified`/`article:published_time`) genuinely says
+  2026-09-24T10:55:00Z (~6:55am ET Thursday) — so the PAGE is real and dated Thursday.
+- But the article's full text (`articleSection: "Review"`, a general market-education piece, 	byline
+  Yulia Petrova) **never once mentions "force majeure," "Jupiter," "Blue Owl," or "record"** — it is a
+  standalone explainer on hyperscaler CDS spreads "over the past year," not a reaction to Thursday's
+  news. The 214.7bp figure is attributed only to "Timur Lebedev, head of debt market analysis at Freedom
+  Finance Global" with no specific as-of date beyond a vague "as of September 2026" used for a different
+  claim (Microsoft/Alphabet/Nvidia/Meta's spreads) elsewhere in the same paragraph.
+- Independent web search corroborates that a ~215bp Oracle figure has been circulating since **August**:
+  The Kobeissi Letter's own August post says Oracle's CDS "surged +70 basis points year-to-date, to a
+  record ~215 basis points" (matches G's finding almost exactly, down to the rounding). A separate
+  August post from a different account ("Global Markets Investor") independently gives the same ~215bp
+  figure and separately reports CoreWeave's CDS at **855bp** in **late July** — the same order of
+  magnitude as H's "810.9bp," not corroborating it as a fresh print either.
+- Conclusion: Oninvest/Freedom Finance Global's dashboard most likely carried a several-week-old data
+  snapshot into a Thursday-published general-interest piece that happens to coincide with, but is not
+  reporting on, Thursday's actual force-majeure-driven spike. The real size of Thursday's "record high"
+  (Seeking Alpha/Zerohedge, already in the digest with no level) remains genuinely undisclosed.
+
+H's OTHER findings in the same entry are solid and should be kept: the Bloomberg mechanism detail (a
+three-year rent deferral on Jupiter if both sides agree power delays caused the force-majeure event, full
+lease-term rent still ultimately owed, not itself a default on the $18bn loan) and Bloom Energy's own X
+statement reaffirming its 2.4GW contract are both independently verified below and are good, dateable
+additions — only the specific CDS basis-point figures should not be merged as newly confirmed.
+
+**Bloomberg mechanism piece — date correction.** I fetched the Insurance Journal syndication H cited
+directly. It is a genuine Bloomberg wire story (bylined Sridhar Natarajan, Brody Ford, Paula Seligson),
+but its own page metadata gives `datePublished: 2026-09-25T05:00:54Z` (~1:00am ET **Friday**), not
+"09-24 8:25am ET" as H's file states. The underlying force-majeure EVENT is still Thursday's; this
+specific piece of reporting (the rent-deferral mechanism) should be dated 2026-09-25, not 2026-09-24, if
+staged as its own timeline entry — a minor but real date-of-event correction.
+
+#### Second date trap — Goldman's "$1.4tn by 2027" hyperscaler capex figure is not a fresh escalation
+
+H staged Goldman Sachs "raising" its 2027 US hyperscaler AI-capex forecast to $1.4tn (from its own prior
+~$1.1tn) as a new Friday-morning (09-25) development, sourced to Crypto Briefing and a BiGGo Finance
+write-up. I checked this because the same $1.4tn-by-2027 headline number felt familiar from the map's own
+history.
+
+**Ruling: this specific $1.4tn figure is not new. It has been reported, under the identical framing, at
+least twice before — once a full year earlier and once four days before H's "new" finding.** A Seeking
+Alpha article headlined "U.S. hyperscalers' capex to almost triple to $1.4T by 2027, Goldman Sachs says"
+carries a `Published Time` of **2025-10-06**. A second Seeking Alpha article with the near-identical
+headline "Goldman Sachs expects U.S. hyperscaler capex to reach $1.4T by 2027" carries a `Published Time`
+of **2026-09-21** — four days before Crypto Briefing's 09-25 write-up. Neither the Crypto Briefing nor
+BiGGo pieces H used cite a specific new Goldman report, a specific analyst note date, or link to a primary
+Goldman document — they read as aggregator rehashes of an already-circulating number. Both Seeking Alpha
+articles were paywalled beyond their nav shell even through the r.jina.ai proxy, so I could not read their
+full bodies, but the headline-and-date evidence alone is enough to treat "Goldman raises to $1.4tn" as
+very likely a recycled figure being reported as new, exactly the pattern the brief's #1 false-positive
+warning describes. **Recommend NOT merging H's Goldman-capex timeline entry as a fresh escalation.** If
+the main session wants to keep any of it, it should be reworded to avoid implying Thursday/Friday
+novelty (e.g., as a passing note that the widely-cited $1.4tn figure resurfaced again this week, not as
+"Goldman raises its forecast"). H's second Goldman item (the ROIC/$1.42tn revenue-needed framework) is a
+more specific, less commonly-repeated calculation and was not independently checked for staleness in the
+time available — flagging as lower-confidence-but-unchecked rather than clearing it.
+
+#### Other H items checked
+
+- **Palm Beach County scraps its resident task force for paid consultants** — not independently
+  re-verified against a second source in the time available; WFLX's specific dollar range ($200k-$2M)
+  and named commissioner quote read as normal local-news specificity, not a red flag. Accepted as-is.
+- **Nscale's $3.36bn pre-IPO round, Bloom Energy's statement** — not independently re-verified; both read
+  as plausible, specific, single-sourced items H correctly flagged as belonging to threads it doesn't own
+  (Nscale) or verified directly (Bloom Energy, see above).
+
+#### Not staged, for the main session's eye
+
+- **A stablecoin thread does not exist** despite the topic recurring in six digests since 2026-08-29 and
+  today's concrete Fed rulemaking (Miss 2 above) being the most substantive stablecoin development yet.
+  Recommend the main session consider opening one (candidate slug: `stablecoin-regulatory-framework` or
+  similar) rather than letting a seventh mention go homeless.
+- **BP eyes Devon Energy asset amid renewed US M&A ambitions** (Reuters EXCLUSIVE, Thu 24 Sep 22:33 GMT)
+  — real per the headline, not independently read in full; no obvious thread fit (energy M&A rather than
+  AI-buildout or rates); flagging rather than silently dropping.
+- **Global equity funds snap two-week outflow as AI optimism returns** (Reuters, Fri 25 Sep 12:02 GMT) —
+  landed just as this pass was finishing; a fund-flow data point that could support `ai-trade-bear-turn`
+  or a broader risk-appetite read, not chased down in the time remaining.
+- **Five French market hot spots on investors' radars amid debt jitters** (Reuters, Fri 25 Sep 04:31 GMT)
+  — a listicle-style piece on the same France/OAT story already well covered on `cross-border-rates`; not
+  a new fact by itself.
+
+#### Wire backstop result
+
+Google News RSS `site:reuters.com` and `site:bloomberg.com` sweeps (`when:1d`, ~120 headlines scanned
+across markets/bonds/stocks/oil/Fed queries) plus DuckDuckGo-lite-through-jina resolution for specific
+headlines, then read on-lens ones via direct fetch, r.jina.ai, or a Yahoo/Euronext/Insurance Journal/RFI
+syndication. **Confirmed misses from this sweep: 2** (Macron/Yanbu, Fed stablecoin rulemaking), plus one
+texture addition (Breeden's BoE quote) and one declined soft-lead (Morgan Stanley's Asia deal leak,
+off-lens). Already covered and confirmed by cross-check: Wall Street's close (AP), the 7-year auction and
+buyback, durable goods (Census primary), UMich sentiment (primary), the Oracle force-majeure notice and
+its market reaction, JGB/Bund/gilt levels, the SNB-adjacent items, and the Trump-Xi summit's lack of a
+trade announcement.
+
+#### Tooling notes
+
+- **A page's own `datePublished` metadata is necessary but not sufficient to date a claim inside it.**
+  The Oninvest article is genuinely dated 09-24, but its content (CDS levels) is not about that day's
+  news at all — it never mentions the event the sweep needed it to corroborate. Checking whether an
+  article's BODY references the specific event in question, not just its publish timestamp, was the
+  decisive check both times this pass (Oninvest CDS figures, Crypto Briefing's Goldman capex figure).
+- **Two Seeking Alpha articles with near-identical headlines a year apart** (`Published Time` 2025-10-06
+  vs 2026-09-21, both "$1.4T by 2027... hyperscaler capex... Goldman Sachs") was the tell for the Goldman
+  staleness; both were paywalled past the nav shell even through r.jina.ai, so this is headline/date
+  evidence, not full-body confirmation.
+- **`pdftotext` on a directly-fetched Census Bureau PDF** was fast, clean, and required no proxy —
+  worth remembering as the default path for BEA/Census advance releases generally.
+- **insurancejournal.com syndicates full bylined Bloomberg wire copy**, readable directly via urllib with
+  a Chrome UA, no proxy needed — a second Bloomberg-paywall workaround alongside r.jina.ai.
+- **rfi.fr required the r.jina.ai proxy** (direct urllib got a 403); the proxy rendered the full article
+  including a cookie-consent preamble that had to be skipped past to reach the real text.
+- **federalreserve.gov press releases and Governor statements are directly fetchable** with a Chrome UA,
+  no proxy — a reliable primary source, distinct from `federalreserve.gov`'s JS-rendered speech-calendar
+  page which agent G found unreadable via urllib.
+- **Direct Reuters fetches (plain urllib and via r.jina.ai) both failed with 401/403 this entire pass** —
+  consistent with prior critic passes; DuckDuckGo-lite-through-jina for headline/snippet plus a
+  Yahoo/Kitco/Business Times/Euronext/Insurance Journal/RFI syndication remains the reliable path.
+- **A second instance of apparently AI-templated/corrupted business-wire copy this run**: the AP/LA
+  Times "shaky day" narrative piece states a Brent settle ($100.22, +2.1%) that is arithmetically
+  impossible given Wednesday's known $103.08 settle. Combined with G's finding of a self-contradicting
+  Yahoo gold article ("up 0.3%" and "down 0.3%" in consecutive paragraphs) from the prior day, this is
+  worth a standing caution: syndicated wire narrative copy (as opposed to primary wire tables like AP's
+  own "how indexes fared" page) is showing real, internally-detectable numeric corruption this run, not
+  just staleness.
+- WebSearch calls used: approximately 6, well under the ~20 guideline, spent entirely on tracing the
+  Oracle-CDS and Goldman-capex figures to their original dated posts.
+
+#### Buffer files read
+
+Not read directly this pass — this critic's checks relied on live wire/primary-source fetches (per the
+brief's allowance not to wait on or duplicate buffer-file reads other agents already did) plus the fully
+loaded G and H staging files, which both report their own buffer-file reads in detail (G: today's
+`google_news_rss` landed by ~10:55am ET, 11,951 rows, watchlist-name grep done; H: `rss`, `sec_edgar`
+checked directly, `google_news_rss`/`gdelt` not yet landed as of 14:20Z when H stopped). `ls -la
+buffer/2026-09-2[45]-*` not independently re-run; no reason to doubt G's and H's reports on this point.
+
+### mental-health / 2026-09-24
+
+- **Missed:** nothing that clears the bar: no benchmark lead or wire miss. Two corrections to agent M's drafts instead.
+- **Map effect:** Cigna's OpenAI partnership re-dated to 09-23 (Cigna's own newsroom) on `payer-ai-claim-denial`; the 09-25 WISeR bullet reframed to lead with the GAO's May finding and the 09-16 Klomp/Murray exchange, since the denial-rate documents were already on the thread from 09-17; Alabama v. TikTok sourced to Reuters (the "first to reach a jury" claim is Reuters' own).
+
+Read about 11:15 to 12:45 ET Friday 09-25. Read-only apart from this file. Scratch in /tmp/agentCM/. Transport was python3 urllib (Googlebot UA for BHB/Fierce/STAT feeds, a bare `Mozilla/5.0` UA for the r.jina.ai reader, Chrome UA for Ars Technica), Google News RSS `site:` queries, and DuckDuckGo-lite via the reader. Read in full: `artifacts/digests/daily/2026-09-24-mental-health.md` (M's rewritten day-in-review), `2026-09-25-mental-health.md` (new), and M's staging file `buffer/sweeps/2026-09-25/M-mental-health.md`. No WebSearch calls used (everything reachable via urllib + Google News RSS + the reader proxy).
+
+**Headline: 0 net-new misses staged. This pass's real yield is two sourcing/dating corrections to items M already drafted — one wrong date on a primary-sourced item, and one bullet that presents a restated document tranche as newly revealed when the genuinely new content is different facts inside the same Ars Technica article.** 4 benchmarks checked, 0 lead misses. Wire backstop and a clinicaltrials.gov spot-check both came back clean (no confirmed on-topic first-posted trial or wire story missing from either digest).
+
+#### Benchmark table
+
+| Benchmark | What it published for the window | Verdict |
+|---|---|---|
+| Behavioral Health Business | Feed `lastBuildDate` items run through Thu 09-24 21:46Z ("Quality Behavioral Health Facing Federal Medicaid Fraud, Forced Labor Investigation" — already the digest's Clinical safety & harm item). Nothing dated 09-25 in the feed as of ~12:00 ET. | covered. |
+| STAT Health Tech | Feed's newest items: two radiology-AI STAT+ pieces (Thu 09-24, 08:30 and 13:21) and the AI-doomerism/UnitedHealth-CVS pieces already ruled off-lens by M. Nothing mental-health-specific for 09-24 or 09-25. | covered (nothing to miss). |
+| Fierce Healthcare | `/rss/xml` feed's newest 09-24 item, 4:57pm: "Cigna Group, OpenAI team up to support patients with complex conditions" — Fierce's own headline timestamp, used below in the dating correction. Nothing else on-lens in the feed through 09-25. | covered, but see Correction 1 below — Fierce's *coverage* date (09-24 4:57pm) is not Cigna's *announcement* date. |
+| MobiHealthNews | Feed fully decayed again — even the r.jina.ai proxy with a bare `Mozilla/5.0` UA now returns Cloudflare's "Just a moment" challenge (worse than the 09-24 critic's read, where the feed path still worked). Worked instead: Google News `site:mobihealthnews.com when:2d`, 9 headlines Wed–Fri: Claude Opus 5.5 biology capabilities, an AI-care-access stakeholder piece, Oura/women's-care integration, a $155M pharmacy-benefits raise (Rightway), a $250M brain-computer-interface raise (Precision Neuroscience), a healthcare-environmental-impact piece, the Neuralink ALS-speech implant, a clinical-AI-search piece, and a Teal Health cervical-cancer-screening raise. None are mental-health-specific (Precision Neuroscience and Neuralink are both general neural-interface/assistive-communication stories, not psychiatric). | no lead miss, but flag the further decay for `sources/benchmarks.yaml` (see Tooling notes). |
+
+Psychiatric Times and KFF Health News are not in `sources/benchmarks.yaml`'s configured mental-health daily set (only BHB, STAT Health Tech, Fierce Healthcare, MobiHealthNews are) — not checked as benchmarks, per the file that actually governs this check.
+
+#### Wire backstop
+
+Google News RSS `site:reuters.com` and `site:apnews.com` (`when:1d`/`when:2d`/`when:3d`) across mental health, psychiatric, suicide, depression, addiction, chatbot-mental-health, 988, Medicaid mental health, opioid, ketamine, psychedelic, teen social media, Character.AI, and autism. Nothing on-lens surfaced that isn't already in one of the two digests, with one recurring exception already ruled off-lens twice before (09-24 and 09-25 passes): **8 sailors in the USS Abraham Lincoln carrier strike group attempted suicide during its extended Iran-war deployment**, per acting Navy Secretary Hung Cao's letter to Congress — re-covered today by both Reuters and AP (09-25 dateline, same facts as the original NYT/NBC 09-23 reporting). Still no military-mental-health thread to sit on; not staged, flagged again for the main session's eye in case a thread is ever wanted. One other hit worth naming and ruling out: "Australia steps up response to AI after OpenAI bot breaches health system database" (Reuters, 09-25) — a general health-system data-breach/AI-security story, not mental-health-specific; off-lens.
+
+#### Clinical-trials spot-check
+
+Per the brief's warning that a blanket "all term collisions" verdict is itself a known misread: `buffer/2026-09-24-clinicaltrials.jsonl` (353 rows) and `buffer/2026-09-25-clinicaltrials.jsonl` (434 rows) carry a `terms_matched` field, but it matches on **watchlist entity names** (Samsung, AMD, Kaiser Permanente, Canada, Jensen Huang), not psychiatric-condition terms — genuinely all noise for this lens, confirming rather than contradicting the "term collision" read M and prior critics have made. I instead grepped both files' `title` fields directly against a psychiatric-condition term list and checked every high-numbered (recently-registered) hit's real `StudyFirstPostDate` against the live ClinicalTrials.gov API v2.
+
+One hit needed a real check: **NCT07836647, "An Evaluation of the Safety and Efficacy of TSND-201 for the Treatment of PTSD"** — a genuine Phase 3, 300-participant trial, first posted 2026-09-23. This turned out to be a false alarm, not a miss: it is Transcend Therapeutics' EMPOWER-2 trial, already logged in the 09-23 digest and on the `psychedelic-regulatory-sprint` thread (`⟨daily 2026-09-23⟩`) the day it posted. Two other 09-23-first-posted hits from the buffer (NCT07836972, a Florida International University ADHD-in-schools trial; NCT07836582, a physical-activity-for-depression feasibility study) — the first is also already in the 09-23 digest's "also posted" line; the second is a thin feasibility study that the 09-23 digest's own text doesn't claim to list exhaustively ("a direct ClinicalTrials.gov query ... turned up the rest," not "turned up everything"), and in any case it is a 09-23 item outside this pass's 09-24/09-25 remit. Everything else matching a condition term in the two buffer files was either already in one of the two digests (Slingshot/Ash NCT07841483, the Kentucky depression/OUD trial NCT07842601, the deep-brain-reorienting PTSD trial NCT07840417, the Johns Hopkins trauma-informed-intervention trial NCT07842432, the JIPMER ketamine trial NCT07839338, the VA ART-VET trial NCT07840079) or long pre-dated the window (NCT numbers in the 04–07680 range, first-posted 2024–07-2026, resurfacing in the buffer on a status update, not a new posting — e.g. NRx's SPARC-TMS trial, Cybin's CYB003, J&J's JNJ-89495120, all first posted well before September). **No confirmed on-topic first-posted trial is missing from either digest.**
+
+#### Verification of M's new Friday items (task 4)
+
+**(a) Alabama v. TikTok — CONFIRMED, sourcing improved, `sev=major` judgment is defensible but genuinely borderline.** Found the Reuters original via a qz.com syndication that names and links it directly: `https://www.reuters.com/world/us/first-us-trial-against-tiktok-test-claims-platform-fueled-teen-mental-health-2026-09-25/` (the qz.com copy itself, published 2026-09-25T13:01:39Z, is a full, readable syndication — direct Reuters.com still 401s, matching M's finding). It confirms every fact in M's bullet: Alabama AG Steve Marshall, TikTok and ByteDance, trial begins **Monday 09-28 in Montgomery** (Alabama **state** court, not federal — worth being explicit about in the digest, since "Montgomery" alone doesn't say which), 2-3 weeks of testimony, at least 27 other states plus D.C. have filed similar suits, and — critically — **"first case against the company to reach a jury" is Reuters' own claim, quoted directly, not M's inference or elaboration.** The Alabama AG's original complaint (filed last year, 2025) matches the PDF M cited. On `sev=major`: the daily skill reserves it for "a development that resets a thread — resolution / reversal / first-of-kind." A trial *starting* is neither a resolution nor a reversal; it only qualifies under "first-of-kind," and it qualifies for real — this is genuinely the first jury trial in a 27-plus-state litigation wave that has so far only produced settlements (Meta's $17.1bn) and refusals to settle (YouTube). I'd call this a defensible, not automatic, application of the rule: the archetypal sev=major examples are endpoints (a verdict, a reversal), and the real "resets the thread" moment for this story is more plausibly the eventual verdict than the trial's start. I'm not recommending it be downgraded — it is the digest's only `sev=major` today, which respects the "~1 per lens per day" ceiling, and "first trial to reach a jury" is a genuine one-time milestone — but flag the judgment call rather than rubber-stamp it. **Recommend adding the Reuters URL above as a second citation alongside the ThriveNews syndication**, since it's the real primary link, found (not composed) via qz.com's own hyperlink to it.
+
+**(b) Cigna–OpenAI partnership — DATE CORRECTION NEEDED.** Cigna's own newsroom press-release feed (`https://newsroom.thecignagroup.com/latest-press-releases?pagetemplate=rss`) dates this release **Wed, 23 Sep 2026 06:05:00 -0400** — not 09-24. The release itself, read in full, is datelined "BLOOMFIELD, Conn., Sept. 23, 2026." Fierce Healthcare's own feed shows Fierce covered it a day later, Thu 09-24 4:57pm — that's the timestamp M's digest actually dated the item to (Fierce's own article was Cloudflare-blocked, so M sourced facts to Digital Health News's republication, whose own timestamp is later still, Fri 09-25 ~7am ET). **M correctly triangulated the facts but dated the event to the wrong intermediary's coverage rather than the primary source's own dateline.** Every substantive fact in M's bullet checks out against Cigna's own release: Katya Andresen (Chief Data, Digital & AI Officer), Nate Gross (Head of Health, OpenAI), oncology-first rollout across Cigna Healthcare and Accredo Specialty Pharmacy, and — confirmed word-for-word — "clinical, pharmacy, behavioral and benefits information" combined into one view. Only the date is wrong. See Corrections requested below for the exact fix and the primary-source URL to add.
+
+**(c) Ars Technica's WISeR/EFF story — real date confirmed, but the "what's new" framing is wrong and should be corrected.** Ars Technica's own page metadata confirms `datePublished: 2026-09-25T11:00:28Z` (7:00am ET, matching Beth Mole's byline) — genuinely a 09-25 publication, not a resurfaced older piece. But **the EFF documents themselves, and their headline facts, are not new: they are the same ~1,000-page FOIA tranche `payer-ai-claim-denial` already logged on 2026-09-15/16** (⟨daily 2026-09-17⟩) — Virtix's 53% denial rate on 6,096-plus requests, the 83-day-pending request, and Innovaccer's forced auto-approval are word-for-word the same facts already on the thread, sourced there to EFF directly and STAT's own 09-15 coverage (STAT's feed confirms this: "New documents reveal problems with Medicare's prior-authorization pilot," Sep 15 08:30 and 13:06). **The genuinely new material in Ars's 09-25 piece — none of it in M's bullet or the existing thread — is:** the Government Accountability Office's **May finding that CMS officials skipped required procedure setting up WISeR, calling its legality into question** (grepped the whole thread file: no GAO mention anywhere); Rep. Suzan DelBene's committee vote "last week," which Republicans voted down, to force release of more WISeR documents; and a Senate HELP Committee hearing on 09-16 in which Sen. Patty Murray directly asked HHS deputy-secretary nominee Chris Klomp whether WISeR contractors are paid more for denying care, Klomp said "my understanding is no," and Murray corrected him on the record using a CMS Office of the Actuary memo — putting the financial-incentive mechanism on record from CMS's own regulator-facing testimony for the first time (the *mechanism itself* — a 25%-of-averted-cost payment with only a 5-10% quality-score penalty for excess denials — was already on the thread as of 09-17, so this is a new confirmation of an old finding, not a new fact about the mechanism). Also new: Virtix's CAP was imposed in June and **closed 08-14**, with Virtix now claiming a 1.18-day average turnaround, and vendor Zyter confused Medicare Part A and Part B billing for months. **Recommend reframing the bullet** — see Corrections requested.
+
+**(d) The two neuromodulation distribution deals — CONFIRMED, dates check out.** neurocare/Wave Neuroscience: the Manila Times/GlobeNewswire syndication's own `datePublished` is `2026-09-25T20:08:32+08:00` = 08:08 ET Friday — a genuine same-day release, matching the digest. Firefly Neuroscience/NeuroSigma: the Yahoo Finance/GlobeNewswire page's `datePublished` is `2026-09-25T11:45:00Z` = 07:45 ET Friday — also confirmed same-day. No date corrections needed on either.
+
+#### Carry-forwards (task 5)
+
+**Acadia's remlifanserin:** read Acadia's own press release in full (`acadia.com`, datelined September 24, 2026). Every number in the digest matches exactly: SAPS-H+D −12.6 (60mg) vs. −10.4 (placebo), effect size 0.26, p=0.0603; CGI-S-ADP −1.3 vs. −0.9, effect size 0.37, p=0.0077 nominal; safety/AE rates similar to placebo, no QT signal. No correction needed.
+
+**Xenon's azetukalner pause:** read Fierce Biotech's article in full (byline dated Sep 18, 2026 6:03am, reporting Xenon's Thursday-09-17 after-market-close analyst call — consistent with the digest's "paused 09-17" dating). Every number matches: ~360 participants enrolled in X-Nova2 (80% of target), shares down 26% to $42.25 premarket from a $57.35 Thursday close, William Blair's probability-of-success cut from 60% to 50%. No correction needed. (One piece of unused context: Fierce notes Xenon's pause came "one week after Biohaven paused enrollment in focal-epilepsy trials of a rival Kv7 candidate, BHV-7000" — background, not required, not staged.)
+
+#### Corrections requested
+
+1. **Cigna–OpenAI date, three places:** `artifacts/digests/daily/2026-09-24-mental-health.md` Capital & corporate bullet ("The Cigna Group said on 09-24 it is partnering with OpenAI...") → change to **09-23**; the throughline's "Thursday evening brought two corporate items: the Cigna Group said it is partnering with OpenAI..." → reframe as one Wednesday-evening item (Cigna, actually 09-23) and one Thursday item (Quality Behavioral Health, genuinely 09-24); and the frontmatter's *Curated from* note ("Thursday evening added two corporate items"). Also correct `buffer/sweeps/2026-09-25/M-mental-health.md`'s staged timeline entry header from `### DATE: 2026-09-24` to `### DATE: 2026-09-23`, and its `⟨daily 2026-09-24⟩` tag to `⟨daily 2026-09-23⟩`. **Add Cigna's own press release as the primary citation:** [The Cigna Group](https://newsroom.thecignagroup.com/the-cigna-group-and-openai-collaborate-to-advance-support-for-patients-with-complex-conditions) (datelined Sept. 23, 2026, Bloomfield, Conn.) — this is directly reachable (200, no Cloudflare block), so it can replace or sit alongside the Digital Health News republication.
+
+2. **Ars Technica/WISeR bullet reframing**, in both `artifacts/digests/daily/2026-09-25-mental-health.md`'s Policy section and `buffer/sweeps/2026-09-25/M-mental-health.md`'s staged entry. Old bold lead: *"Ars Technica's review of documents the Electronic Frontier Foundation obtained through litigation, published 09-25, details how CMS's AI-driven Medicare prior-authorization pilot (WISeR) has produced auto-approvals, wrong-Medicare-part errors and high denial rates since its January rollout across six states."* This restates, as if newly revealed, facts (53% denial rate, auto-approval, the 83-day delay) already on `payer-ai-claim-denial` since 09-17. Suggested replacement: *"Ars Technica's 09-25 report adds the Government Accountability Office's May finding that CMS officials skipped required procedure setting up WISeR, calling the program's legality into question, and a 09-16 Senate hearing exchange in which HHS deputy-secretary nominee Chris Klomp wrongly told Sen. Patty Murray that WISeR contractors don't get paid more for denying care — Murray corrected him on the record using a CMS Office of the Actuary memo — on top of the denial-rate documents this thread already logged 09-17."* Keep the CAP-closure detail (Virtix's corrective action plan, imposed June, closed 08-14, now claiming 1.18-day turnaround) and DelBene's blocked document-release vote as supporting sentences; both are genuinely new. Source: [Ars Technica](https://arstechnica.com/health/2026/09/trump-admin-using-ai-to-deny-medical-care-for-seniors-in-disastrous-experiment/) (confirmed `datePublished: 2026-09-25T11:00:28Z`, fully readable, no paywall hit).
+
+3. **Alabama v. TikTok, minor addition, not a wording error:** add the Reuters original as a second citation — `https://www.reuters.com/world/us/first-us-trial-against-tiktok-test-claims-platform-fueled-teen-mental-health-2026-09-25/` (found via a qz.com syndication's own direct hyperlink to it, not composed) — alongside the existing ThriveNews link. Consider specifying "Montgomery **state** court" rather than just "Montgomery," since the case is in Alabama circuit court, not federal.
+
+#### Tooling notes
+
+- **MobiHealthNews has decayed further since the 09-24 critic pass.** That pass found the feed URL still worked through `r.jina.ai` with a bare `Mozilla/5.0` UA; today the same request returns Cloudflare's "Just a moment" challenge even through the reader proxy. Google News `site:mobihealthnews.com when:2d` is the only working substitute (headlines only, no bodies) — worth a line in `sources/benchmarks.yaml` next to the existing escalation history for this outlet.
+- **`buffer/*-clinicaltrials.jsonl`'s `terms_matched` field is a watchlist-entity matcher (company/person names), not a condition matcher** — useless for a mental-health-condition spot-check and easy to mistake for one. Direct title-text grep against a condition-term list, cross-checked against the live API's `StudyFirstPostDate`, is what actually works; noting this since the brief specifically flagged "blanket term-collision verdict" as a known failure mode and the raw field name invites exactly that mistake.
+- **Cigna's own newsroom (`newsroom.thecignagroup.com`) and its RSS feed (`?pagetemplate=rss`) are both directly reachable with a plain `Mozilla/5.0` UA, no Cloudflare block** — a cleaner primary source than Fierce Healthcare (which is Cloudflare-blocked to every transport tried, per M) for Cigna corporate news going forward.
+- **Reuters articles remain 401-blocked to every direct transport tried** (confirmed again on the TikTok story), but syndication partners that hyperlink the Reuters URL directly (qz.com in this case) are a reliable way to recover the real Reuters URL for citation even when the syndicating page itself needs a reader-proxy fetch.
+
+#### Buffer files read
+
+Not re-read wholesale this pass (M's and the digests' own sourcing notes cover what landed); spot-checked `buffer/2026-09-24-clinicaltrials.jsonl` (353 rows) and `buffer/2026-09-25-clinicaltrials.jsonl` (434 rows) in full by title-text grep against a psychiatric-condition term list, as described above. Both `google_news_rss` files were confirmed already landed by M's report (09-24 file 19:25Z, 09-25 file ~14:25Z/10:25am ET) before I started; I relied on live Google News RSS queries rather than re-reading those large files directly.
+
+### Main-session disposition (2026-09-25)
+
+All seven confirmed misses were merged onto their threads and folded into the 09-24 digests as annotated bullets by follow-on agents A2 and G2; M2 applied the mental-health corrections. The merge skipped H's Oracle CDS and Goldman bullets on the critic's ruling, W's overstated "Saudi Arabia invokes the Mecca pact" bullet (agent ZW's corrected version merged instead: a request to explore support under a pact Türkiye has not ratified; `sev=major` removed), and A's copy of the China MFA readout in favour of agent S's fuller one. The 09-24 frontier-ai, global-capital and mental-health digests flipped to `final` / `coverage: done`; world-news to `final` (`coverage: na` by design).
+

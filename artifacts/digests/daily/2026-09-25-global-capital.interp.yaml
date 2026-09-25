@@ -1,0 +1,47 @@
+# Interpretations for 2026-09-25 global-capital (single pass, ~10am ET
+# Friday), keyed by slugify(bold lead[:50]). Read against
+# attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and
+# this map's treasury-long-end-intervention thread. Friday levels are
+# intraday reads unless a primary release (Census, UMich) is cited directly.
+
+us-durable-goods-orders-were-essentially-flat-in-a:
+  mechanism: >
+    A durable-goods print that beats a decline forecast, even by a small
+    margin, is one more data point the Fed's hawkish bloc can cite for
+    "the economy is not cooling enough to justify a pause," directly
+    feeding the October hike-odds debate this map has tracked since
+    Wednesday's PMI; a soft print would have cut the other way.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Hike odds hold near or above the 66-69% Friday-morning range into
+        next week, and the 10-year stays close to its Thursday closing
+        level rather than easing back toward 5%.
+      why: >
+        The print undercuts the "economy is cooling" read that a soft
+        UMich sentiment number alone would otherwise support, leaving the
+        Fed's hawks with a firmer data case.
+      precedent: >
+        09-24: Thursday's 197,000 jobless-claims print (fewest since
+        mid-July) added a similarly firm labor reading that helped push
+        October hike odds toward Thursday's 77.5% peak
+        (`treasury-long-end-intervention`).
+    - direction: >
+        A weak UMich expectations sub-index (down 10.1% to 46.3) and
+        rising inflation expectations (4.6%) are read as demand-side
+        cooling despite the flat durable-goods headline, and hike odds
+        drift back toward 60% into next week.
+      why: >
+        Consumer sentiment and inflation expectations feed the Fed's
+        demand-side read more directly than a single manufacturing-orders
+        print that was flat, not strong.
+      precedent: >
+        08-15: a weak retail-sales print and a cratering consumer-
+        sentiment reading both cut toward "cooling" the same week, even
+        as other data pointed the opposite way.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike
+    and the 3.75%-4.00% range; used for the reaction-function logic only.
+    Durable-goods and UMich figures are both primary-source (Census Bureau,
+    University of Michigan); CME FedWatch odds are CNBC's Friday-morning
+    read, an intraday figure.

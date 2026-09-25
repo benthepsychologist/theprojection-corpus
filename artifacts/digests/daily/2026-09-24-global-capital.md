@@ -1,24 +1,24 @@
 ---
 lens: global-capital
 date: 2026-09-24
-status: building
+status: final
 window_start: 2026-09-24T05:00:00-04:00
-as_of: 2026-09-24T15:55:00-04:00
-coverage: pending
+as_of: 2026-09-25T10:00:00-04:00
+coverage: done
 ---
 
 # Global Capital — 2026-09-24
 
-*Curated from ~70 items (agentic-interim; sources: CNBC, Reuters (via Yahoo
-Finance, CNA and LSE.co.uk), AP, Bloomberg (headline and syndication), Yonhap, The Guardian, The Telegraph (via Yahoo Finance), Investor's Business Daily,
-Benzinga, GuruFocus, TradingView, MEED, Brookings, Reuters copies via Global Banking & Finance, Kitco, Baird Maritime, Devdiscourse and The Economic Times, Seeking Alpha, Business Insider, Investing.com, Asharq Al-Awsat, Saudi Gazette, OilPrice, Source NM, Mingtiandi, Stocktwits, BiFu, U.S. Treasury and FiscalData). Curated
-05:00 ET → about 3:40pm ET Thursday; every market level below is an
-intraday read, not a close (stocks and crude are read as of the time stated), and the
-Trump-Xi talks and state dinner were still under way at the time of writing.*
+*Curated from ~75 items (agentic-interim; sources: CNBC, Reuters (via Yahoo
+Finance, CNA, LSE.co.uk and The Economic Times), AP (via ABC News wire), Bloomberg (headline, syndication and via r.jina.ai), Yonhap, The Guardian, The Telegraph (via Yahoo Finance), Investor's Business Daily,
+Benzinga, GuruFocus, TradingView, MEED, Brookings, Reuters copies via Global Banking & Finance, Kitco, Baird Maritime, Devdiscourse and The Economic Times, Seeking Alpha, Business Insider, Investing.com, Asharq Al-Awsat, Saudi Gazette, OilPrice, Source NM, Mingtiandi, Stocktwits, BiFu, U.S. Treasury, FiscalData, U.S. Census Bureau, Akamai via GlobeNewswire, and Yahoo Finance's live blog). Curated
+05:00 ET Thursday → 05:00 ET Friday, finalized about 10am ET Friday; the
+Trump-Xi talks and state dinner had concluded and Thursday's closes are used
+throughout (Friday intraday reads are labelled as such).*
 
 ## Today's throughline
 
-The 30-year Treasury yield hit its highest level since 2004 on Thursday after a slightly soft 7-year auction and a buyback that took less than its ceiling, while US stocks pared their losses to roughly flat by mid-afternoon. As of about 3pm ET the S&P 500 was down 0.03% near 7,704 after the Dow touched a more than three-month low in late morning, the 10-year yield was near 5.18% and the 30-year near 5.47%, and Brent was near $106 after spiking toward $108 on a Houthi missile attack on Saudi Arabia that Saudi forces said they intercepted, then easing on a Reuters report that US and Iranian negotiators are exploring a phased deal to reopen the Strait of Hormuz. Treasury sold $44bn of 7-year notes at 5.085% (2.42 bid-to-cover, a tail of about 0.7 basis point) and accepted $4.08bn of offers against a $6bn buyback ceiling in 20- to 30-year bonds. Philadelphia Fed President Anna Paulson joined Williams in saying more tightening may be needed, a day after Hammack warned that inflation risks are tilted to the upside, though October hike odds read anywhere from about 64% to 77% depending on the hour and the source. Oracle was down about 4% and Blue Owl about 5% on the force majeure notice, while CoreWeave rose about 4% and Nebius about 9% on analyst upgrades. Trump and Xi opened their White House summit with warm remarks and no announced trade, tariff or chip agreement by mid-afternoon, and the January 10 truce extension still rests on Bessent's Wednesday statement rather than a joint text. By 3:40pm ET the S&P 500 had edged to 7,707 (+0.02%) while the 30-year yield held near 5.47%, Oracle's credit default swaps hit a record high and the yield on its 2056 bonds crossed 8% for the first time, Reuters reported that crude loadings at Saudi Arabia's Yanbu terminal had still not resumed, and about 328 million SpaceX shares came out of lockup. Costco reports after the close.
+Wall Street closed roughly flat Thursday while the bond market kept selling off: the S&P 500 fell 1.90 points (less than 0.1%) to 7,704.13, the Dow fell 161.61 points (0.3%) to 51,349.98, the Nasdaq rose 3.34 points to 26,939.37 and the Russell 2000 fell 3.09 points to 2,835.57 (AP), even as the 10-year Treasury yield closed near 5.22% (highest since June 2007) and the 30-year near 5.50% (highest since June 2004) on CNBC's quote feed — a day after a slightly soft 7-year auction (5.085% high yield) and a 20-to-30-year buyback that took $4.08bn of its $6bn ceiling. Brent settled up 3.4% at $106.60 a barrel and WTI up 2.7% at $94.61 (CNBC), having spiked toward $108 intraday on a Houthi missile attack on Saudi Arabia that Saudi forces said they intercepted, then eased on a Reuters report that US and Iranian negotiators are exploring a phased deal to reopen the Strait of Hormuz; spot gold eased to about $4,274.70 (-0.26%) and spot silver to about $63.67 (-1.02%) in late trading (Kitco). Philadelphia Fed President Anna Paulson joined Williams in saying more tightening may be needed, a day after Hammack warned that inflation risks are tilted to the upside, and October hike odds closed the day near two-thirds to 70% depending on the source, down from a 77.5% morning peak. Oracle fell to $139.21 (-3.7%) on the Project Jupiter force majeure notice and its credit default swaps hit a record high with no level disclosed, while CoreWeave and Nebius rose on analyst upgrades and Reuters reported Yanbu's crude tanker loadings had still not resumed. Trump and Xi's White House summit produced warm remarks, a state dinner, and no announced trade, tariff, chip or rare-earths agreement; the January 10 truce extension still rests on Bessent's Wednesday statement, not a joint text or Beijing confirmation. After the close, Akamai said Thursday it signed an $11.6bn, seven-year deal to run Anthropic's compute workloads (issuing Anthropic a warrant for up to about 5% of its stock), and Costco beat estimates with fiscal Q4 revenue of $95.72bn and adjusted EPS of $6.60, with executives calling members "very resilient."
 
 ## Capital in my markets
 
@@ -43,6 +43,9 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **Philadelphia Fed President Anna Paulson said Thursday that "some modest further tightening may be warranted" after last week's rate increase to 3.75%-4%, and fed funds futures now imply roughly four more quarter-point increases by the end of 2027.** In prepared remarks for a fintech conference, Paulson said underlying inflation is running around 2.5% to 3%, "well above our 2% target", and "the best I can say about underlying inflation this year is that it hasn't gotten worse"; she said policy now sits closer to what is needed but the gap has shown little sign of closing. CNBC put the October hike probability at 64% with another move expected in January, and futures implied a 4.8% funds rate by the end of 2027.
   ([CNBC](https://www.cnbc.com/2026/09/24/philadelphia-feds-anna-paulson-says-modest-rate-moves-likely-ahead-to-tame-inflation.html))
   <!-- k: t=treasury-long-end-intervention e=federal-reserve-rate-decision axis=capital -->
+- **The Federal Reserve Board proposed its first formal regulatory framework for payment stablecoin issuers under the GENIUS Act on Thursday, seeking comment on reserve-asset and capital requirements for Board-supervised issuers.** Governor Michael Barr said in a statement that stablecoins "will only be stable if they can be reliably and promptly redeemed at par" during market stress, and flagged an unresolved disagreement carried over from a July proposal: whether the Board can only act on an anti-money-laundering deficiency that is "significant or systemic," a standard he said may limit the Board's ability to substantiate that an institution's compliance programs are adequate; the Board will take public comment for 60 days once the two proposals publish in the Federal Register.
+  ([Federal Reserve, Barr statement](https://www.federalreserve.gov/newsevents/pressreleases/barr-statement-20260924.htm), [Federal Reserve press release](https://www.federalreserve.gov/newsevents/pressreleases/bcreg20260924a.htm))
+  <!-- k: axis=capital interp=yes -->
 - **Initial US jobless claims fell to 197,000 last week, the fewest since mid-July, the Labor Department said Thursday, as layoffs stayed rare.** The prior week was revised to 198,000 and the four-week average eased to 202,250 from 204,000; claims have mostly stayed below 220,000 this year. The print adds a firm labor reading to the hot business-activity data that drove Wednesday's repricing of Fed hike odds.
   ([AP, via Bozeman Daily Chronicle](https://www.bozemandailychronicle.com/wire/business/claims-for-unemployment-benefits-drop-to-197-000-the-lowest-since-mid-july-as-layoffs/article_9bb8e705-cd54-5bc2-b8c4-56a416401f09.html))
   <!-- k: t=treasury-long-end-intervention e=federal-reserve-rate-decision axis=capital -->
@@ -58,14 +61,17 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **Saudi Aramco chief executive Amin Nasser said Thursday that any disruption to its operations can be fixed "within days" and that Aramco is studying a fourth and a fifth crude export route and more storage abroad, including in Japan.** Speaking to Nikkei Asia in Tokyo, Nasser said Aramco has three main routes and can also use the 320km Sumed pipeline that carries Red Sea crude to the Mediterranean through Egypt, that "we never stopped" supplying customers, and that barrels offered outside existing sales agreements will not return to the market "until the situation improves"; he cited the 2019 drone attack, after which operations were fully restored in 11 days, and said Aramco is in talks with Japanese authorities and partners on storage there.
   ([Asharq Al-Awsat](https://english.aawsat.com/business/5322038-saudi-aramco-chief-any-interruption-can-be-fixed-within-days), [Saudi Gazette](https://saudigazette.com.sa/article/664847/saudi-arabia/aramco-ceo-we-can-fix-any-disruption-within-days))
   <!-- k: t=red-sea-oil-shock e=saudi-aramco axis=capital -->
+- **French President Emmanuel Macron said Thursday that France will send troops, radar systems and other defence systems to protect Saudi Arabia's Yanbu export hub, the Red Sea alternative export route hit by Houthi missile attacks.** "We are going to send military resources, that is to say, soldiers, radar systems and defence systems, to protect this site — not to get us involved in any conflicts, but to protect this site," Macron said in a primetime TF1/France 2 interview, tying the commitment to the region's missile attacks and telling the French public that France has adequate winter fuel supplies despite high prices at home.
+  ([RFI](https://www.rfi.fr/en/france/20260925-france-to-send-military-to-protect-saudi-arabia-on-red-sea-oil-route-yanbu))
+  <!-- k: t=red-sea-oil-shock axis=capital interp=yes -->
 - **Hedge funds' leveraged Treasury basis trades have shrunk about 20% this year to roughly $1.2 trillion, Morgan Stanley estimates, removing some of the borrowed-money amplification that worsened past bond selloffs.** A Reuters analysis attributes the pullback to lower profits rather than forced selling: a mostly orderly rise in rate expectations, softer asset-manager demand for Treasury futures, higher Treasury inventories at big dealer banks after a rule change, and Treasury's buybacks, which have lifted prices of older off-the-run bonds and squeezed the trade's gains. Bank of America's Meghan Swiber says the opportunity set is simply smaller; the retreat so far is concentrated in 2-year and 5-year futures. Whether the buyback is what tipped it is Reuters' framing of one contributing factor among several, not a finding.
   ([Reuters via Kitco](https://www.kitco.com/news/off-the-wire/2026-09-24/hedge-funds-sour-basis-trade-treasury-selloff-continues), [Reuters](https://www.reuters.com/legal/transactional/hedge-funds-sour-basis-trade-treasury-selloff-continues-2026-09-24/))
   <!-- k: t=treasury-long-end-intervention axis=capital -->
 - **France's 10-year borrowing cost rose to a new 18-year high of about 4.7% on Thursday, more than a full percentage point above Germany's, as strategists warned the 2027 budget fight could topple the government.** CNBC saw the 10-year OAT at 4.6696%, and TradingView reported the 4.7% high as elevated oil and strong data, including euro-zone private-sector activity growing at its fastest pace in nearly three and a half years on Wednesday, reinforced bets on further European Central Bank tightening, with money markets pricing at least one more hike by year-end. Prime Minister Sébastien Lecornu's draft 2027 budget, with about €54bn of spending cuts, goes to parliament in early October ahead of a November 17 vote; France projects debt at 119.3% of GDP in 2026, and HSBC noted that non-domestic holders now own more than half of OATs. Eurasia Group's Mujtaba Rahman said in a Monday note that a tough draft "risks toppling the government."
   ([CNBC](https://www.cnbc.com/2026/09/24/france-budget-debt-deficit-government.html), [TradingView](https://www.tradingview.com/news/te_news:586507:0-french-10-year-oat-yield-hits-fresh-18-year-high/))
   <!-- k: t=cross-border-rates e=france-oat,france-budget-deficit axis=capital interp=yes -->
-- **The UK 10-year gilt yield rose to 5.38% by mid-morning Thursday, close to last week's 19-year high, adding pressure on Chancellor John Healey's budget next month.** Analysts say recent rises have wiped out more than half of the £24bn of headroom against Labour's fiscal rules, and Bank of England chief economist Clare Lombardelli said in Warsaw that policy "is increasingly likely to need to tighten if elevated energy prices persist, absent clear evidence of disinflation or weaker activity." By the London close CNBC's tracker had the 10-year gilt at 5.371%, slightly lower on the day after a 5.397% high, and the Telegraph put the 30-year gilt at 5.87%, near its highest since 1998.
-  ([The Guardian](https://www.theguardian.com/business/2026/sep/24/global-bond-sell-off-pressures-uk-borrowing-costs-budget))
+- **The UK 10-year gilt yield rose to 5.38% by mid-morning Thursday, close to last week's 19-year high, adding pressure on Chancellor John Healey's budget next month.** Analysts say recent rises have wiped out more than half of the £24bn of headroom against Labour's fiscal rules, and Bank of England chief economist Clare Lombardelli said in Warsaw that policy "is increasingly likely to need to tighten if elevated energy prices persist, absent clear evidence of disinflation or weaker activity." Deputy Governor Sarah Breeden, speaking the same day at the London Macro Policy Forum, sounded a similar warning: "The more sparks we're throwing in the tinderbox, the more likely we might have to turn the hose on it"; both deputy governors voted to hold the BoE's rate at 3.75% last week but are now considering shifting position as elevated energy prices raise the risk that inflation expectations become unanchored. By the London close CNBC's tracker had the 10-year gilt at 5.371%, slightly lower on the day after a 5.397% high, and the Telegraph put the 30-year gilt at 5.87%, near its highest since 1998.
+  ([The Guardian](https://www.theguardian.com/business/2026/sep/24/global-bond-sell-off-pressures-uk-borrowing-costs-budget), [Reuters, via Euronext syndication](https://live.euronext.com/en/financial-news/bank-england-rate-setters-warn-sparks-tinderbox))
   <!-- k: t=cross-border-rates e=uk-gilt axis=capital -->
 - **Germany's 10-year Bund yield reached 3.57% on Thursday, its highest since June 2009, as Berlin's finance agency said it expects record borrowing this year and more next.** The Telegraph's live blog said demand from traditional buyers such as pension funds is declining while defence spending lifts issuance; CNBC's tracker had the Bund at 3.598% at the European close after a 3.615% day high, and the 10-year OAT at 4.657% (-5.7 basis points on the day) after a 4.719% high, so European yields eased into the close while US yields kept rising.
   ([The Telegraph live blog via Yahoo Finance](https://finance.yahoo.com/energy/articles/oil-jumps-saudi-thwarts-missile-170126494.html), [CNBC](https://www.cnbc.com/2026/09/24/us-treasury-yields-bonds-fed-inflation.html))
@@ -85,9 +91,12 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **Oracle sent the Blue Owl-owned developer of its Project Jupiter data center in New Mexico a force majeure notice, Bloomberg reported Thursday, seeking to put off payments if the 2.45-gigawatt Stargate campus fails to come online in 2028 as planned.** Oracle says the project "remains on our planned schedule" and it is "fully committed to New Mexico"; Blue Owl said the notice "does not change the financial commitments to this multi-year project." Bloomberg says Oracle is not trying to walk away as the site's main tenant, that it is "not certain" the maneuver would free Oracle from its agreed obligations, and that the notice could alarm the roughly 20 banks behind an $18bn loan that, according to one person, trades below 90 cents on the dollar. The developer is Stack Infrastructure, a Blue Owl portfolio company; the campus's gas pipeline has already slipped to February 2027 after state land-office denials, and on Oracle's 09-10 earnings call co-CEO Clay Magouyrk said Jupiter would not affect fiscal 2027 guidance (CNBC). Oracle shares fell about 4% to 6% in morning trading, Blue Owl about 4% to 5% and Bloom Energy about 6%. By about 2:35pm ET Reuters had Oracle down 4.1% and Blue Owl down 5%, and at 3:10pm CNBC's quotes had Oracle at $139.42 (-3.6%, after a $133.48 low) and Blue Owl at $9.14 (-4.8%).
   ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-24/oracle-cites-force-majeure-to-shield-itself-on-controversial-data-center), [Bloomberg via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/oracle-cites-force-majeure-shield-122536420.html), [CNBC](https://www.cnbc.com/2026/09/24/oracle-data-center-force-majeure.html))
   <!-- k: t=oracle-stargate-bet,ai-buildout-debt-risk e=oracle axis=deals interp=yes -->
-- **Oracle's credit default swaps hit a record high on Thursday and the yield on its 6.7% bonds due 2056 crossed 8% for the first time, Seeking Alpha reported, citing Zerohedge.** Seeking Alpha said the cost of insuring Oracle's debt reached unprecedented levels on the day of Bloomberg's force majeure report, that the 2056 yield now sits above a 7.5% average for B2/B-rated bonds although Oracle is rated Baa2/BBB-, and, per Zerohedge, that a downgrade to junk would remove about $120bn of its bonds from investment-grade indexes; the article gave no CDS level, and Oracle's five-year CDS had already reached about 2.03 percentage points in July, then an 18-year high (Bloomberg, ICE Data Services). Blue Owl, whose Stack unit developed Jupiter, was down about 4% near $9.18 at 3:39pm ET and about 47% over the past year; Oracle was at $139.21 (-3.7%) after a $133.48 low.
+- **Oracle's credit default swaps hit a record high on Thursday and the yield on its 6.7% bonds due 2056 crossed 8% for the first time, Seeking Alpha reported, citing Zerohedge.** Seeking Alpha said the cost of insuring Oracle's debt reached unprecedented levels on the day of Bloomberg's force majeure report, that the 2056 yield now sits above a 7.5% average for B2/B-rated bonds although Oracle is rated Baa2/BBB-, and, per Zerohedge, that a downgrade to junk would remove about $120bn of its bonds from investment-grade indexes; the article gave no CDS level, and Oracle's five-year CDS had already reached about 2.03 percentage points in July, then an 18-year high (Bloomberg, ICE Data Services). Blue Owl, whose Stack unit developed Jupiter, was down about 4% near $9.18 at 3:39pm ET and about 47% over the past year; Oracle was at $139.21 (-3.7%) after a $133.48 low. A further check Friday morning found no dated, sourced CDS level for the 09-24 record: TipRanks' ~198.6bp figure is misdated (its own page metadata shows March 2026) and a widely shared ~215bp figure is from an August 9 Kobeissi Letter post, so the last level this map can actually date remains July 20's ~203bp (2.03 points); the record's real size stays undisclosed.
   ([Seeking Alpha](https://seekingalpha.com/news/4646794-oracle-credit-default-swaps-hit-new-record-high-as-ai-debt-worries-mount), [24/7 Wall St. via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/bad-news-keeps-piling-blue-162527384.html))
   <!-- k: t=oracle-stargate-bet,ai-buildout-debt-risk e=oracle axis=deals interp=yes -->
+- **Oracle's force majeure notice on Project Jupiter is delaying the campus by about a year and sent "a chill through the trillion-dollar market for AI infrastructure financing," Reuters reported Thursday evening, citing bankers and investors.** Oracle invoked the clause over delays securing power to the site, a person familiar with the matter said; Blue Owl has about $3 billion of equity invested in Jupiter and earns a lower return during construction, so the delay pushes back its higher post-completion returns. A person close to SB Energy's financing said the episode is reverberating into other deals, including SB Energy's own OpenAI-serving Ohio campus, which delayed its IPO this week; Moody's projects AI capital spending by the six biggest US tech companies will reach about $1 trillion in 2027, and lenders are asking whether markets can absorb that volume without tighter terms. Quinn Emanuel's Rajat Rana said data-center contracts are changing so fast that "a contract from January this year and a contract today" are "massively different," and Data Center Watch counted 45 projects worth $68 billion facing community opposition in the second quarter of 2026, after 75 projects worth $130 billion in the first. Blue Owl separately struggled earlier this year to syndicate financing for a $4 billion CoreWeave-anchored project in Lancaster, Pennsylvania.
+  ([Reuters via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/analysis-oracle-blue-owl-project-225500245.html), [Investing.com](https://www.investing.com/news/stock-market-news/analysisoracle-blue-owl-project-delaysends-ripples-through-ai-financing-sources-say-4916397))
+  <!-- k: t=oracle-stargate-bet,ai-buildout-debt-risk,datacenter-backlash-capital-risk e=oracle axis=deals -->
 - **U.S. Rep. Teresa Leger Fernández called Thursday for a "pause" on data centers in New Mexico and published "No Blank Checks for Data Centers" standards, on the day Bloomberg reported Oracle's force majeure notice on Project Jupiter.** Source NM said the standards require a data center to show it will not raise electricity bills or harm water resources, meet the state's renewable-energy requirements, create well-paid union jobs, take no taxpayer subsidies and win community approval; state lawmakers are preparing to consider a moratorium next session, Democratic gubernatorial candidate Deb Haaland says she would sign a moratorium order on her first day, and the State Ethics Commission reported last week that Oracle spent more than $3.4 million on advertising aimed at influencing Jupiter's air-permit process.
   ([Source NM](https://sourcenm.com/2026/09/24/u-s-rep-leger-fernandez-calls-for-pause-on-data-centers-in-new-mexico-as-oracle-stock-falls/))
   <!-- k: t=datacenter-backlash-capital-risk,oracle-stargate-bet e=oracle axis=deals -->
@@ -122,12 +131,48 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **CDC Data Centres, part-owned by Australia's Future Fund and Infratil, is pitching a A$15 billion (US$10.5bn), 1.4-gigawatt data-centre campus near Wagga Wagga in New South Wales, according to a scoping report lodged with the state on September 16.** Mingtiandi, reporting it Thursday, said the campus on 103.8 hectares of grazing land at Gregadoo would be the largest planned in the state and is pitched as sovereign computing for government, defence and AI workloads, echoing Prime Minister Anthony Albanese's July 15 speech on AI and national security.
   ([Mingtiandi](https://www.mingtiandi.com/real-estate/data-centres/cdc-proposes-10-5b-new-south-wales-data-centre/))
   <!-- k: t=ai-datacenter-sites axis=deals -->
+- **Akamai said Thursday it signed an $11.6 billion, seven-year agreement for Anthropic to run CPU workloads on Akamai Cloud's distributed infrastructure, an arrangement that could expand to $20 billion, and issued Anthropic a warrant for up to about 5% of its common stock.** Akamai's own release said capital expenditure tied to the commitment will run about $5.5 billion, with roughly $1.7 billion added to 2026 capex to secure supply-chain components including memory, and that the deal will not change 2026 revenue guidance; Akamai shares jumped as much as 21% in Friday premarket trading before easing to about 14% by mid-morning. The deal is the same customer-as-investor structure this map has tracked in Nvidia's Nscale guarantee and warrants (`nvidia-vendor-financing`).
+  ([Akamai via GlobeNewswire](https://www.globenewswire.com/news-release/2026/09/24/3368729/0/en/akamai-announces-11-6-billion-multi-year-agreement-with-anthropic-to-support-growing-demand.html), [CNBC premarket movers](https://www.cnbc.com/2026/09/25/stock-market-today-live-updates.html))
+  <!-- k: t=where-the-capex-lands e=anthropic axis=deals interp=yes -->
+- **Costco beat Wall Street estimates in fiscal fourth-quarter results reported after Thursday's close, with revenue of $95.72 billion against a $94.9 billion consensus and adjusted earnings of $6.60 a share against $6.53 expected; membership fees of $1.85 billion came in slightly below the $1.86 billion FactSet estimate.** CFO Gary Millerchip said on the earnings call that "our members are very resilient, and they continue to show a willingness to spend on discretionary items," and that non-food inflation rose during the quarter "predominantly due to memory costs in consumer electronics, gas, and petroleum-based items" while food and sundries inflation held steady; shares were little changed in Friday premarket trading.
+  ([CNBC premarket movers](https://www.cnbc.com/2026/09/25/stock-market-today-live-updates.html))
+  <!-- k: axis=deals -->
 
 ## 📊 Macro strip
 
-*All Thursday figures are intraday reads, not closes: the first group is as of about 9:20 to 9:40am ET, the afternoon group as of about 3pm to 3:10pm ET; Wednesday figures are settles (see the 09-23 digest).*
+*Thursday's closes/settles are now available and lead this section (finalized Friday ~10am ET); the intraday progression below is kept for the day's texture and superseded by the close block. Wednesday figures are settles (see the 09-23 digest).*
 
-**Late update, about 3:40pm ET (CNBC quote feed, each reconciled to the change beside it):**
+**Thursday close/settle, final (AP wire, CNBC quote feed and Kitco PM report; each reconciled to the change beside it):**
+
+- **S&P 500 7,704.13 (-1.90, -0.02%), Dow 51,349.98 (-161.61, -0.3%), Nasdaq
+  26,939.37 (+3.34, +0.01%), Russell 2000 2,835.57 (-3.09, -0.1%)** (AP, via
+  ABC News wire) — from Wednesday's closes of 7,706.03, 26,936.04, 51,511.59
+  and 2,838.66.
+- **10-year Treasury yield closed near 5.223% (+10bp), highest since June
+  2007; 30-year closed near 5.50% (day high 5.501%), highest since June 2004**
+  (CNBC, article updated 4:25pm ET) — Treasury's own par-curve constant-
+  maturity read for 09-24 (published next business day) shows 5.18% and
+  5.47%, a vendor gap consistent with CNBC/ICE quotes running a few basis
+  points above Treasury's own curve all week. AP's own wire narrative gives a
+  third, in-between read: "the yield on the 10-year Treasury jumped to 5.20%
+  from 5.11% late Wednesday and is back to where it was in 2007" (AP, via DTN)
+  — three converging vendor reads (5.18%, 5.20%, 5.223%), not a data error.
+  ([AP, via DTN](https://www.dtnpf.com/agriculture/web/ag/news/world-policy/article/2026/09/24/shaky-day-oil-prices-bond-market-us))
+- **Brent settled at $106.60 (+3.4%); WTI settled at $94.61 (+2.7%)** (CNBC) —
+  from Wednesday's settles of $103.08 and $92.16; Brent has gained more than
+  17% in September and WTI more than 10%.
+- **Spot gold about $4,274.70 (-0.26%); spot silver about $63.67 (-1.02%)**
+  (Kitco PM Report, late Thursday trading) — pressured by higher Treasury
+  yields, a firmer dollar and renewed oil strength.
+- **European closes: Stoxx 600 -0.55% to 636.43, DAX -0.57% to 25,266.53, CAC
+  40 -0.52% to 8,081.43, FTSE 100 -0.24% to 10,679.99, FTSE MIB -0.85% to
+  51,543.45** (Kitco PM Report).
+- **National average gasoline price $4.48/gallon Thursday** (AAA, via CNBC),
+  up from $4.44 a week earlier and $3.16 a year earlier; **30-year fixed
+  mortgage rate 7.45% Thursday** (Mortgage News Daily, via CNBC), highest in
+  more than two years.
+
+**Late update, about 3:40pm ET, intraday — superseded by the close block above (CNBC quote feed, each reconciled to the change beside it):**
 
 - **S&P 500 7,707.46 (+0.02%), Dow 51,372.04 (-0.27%), Nasdaq 26,931.35
   (-0.02%); 10-year 5.185% (day high 5.192%, +7.1bp), 30-year 5.470% (day high
@@ -137,7 +182,7 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **Oracle $139.21 (-3.70%); Blue Owl $9.18 (-4.38%); SpaceX $146.95 (-0.95%);
   Nebius $245.50 (+8.33%); CoreWeave $90.78 (+4.46%)** — 3:39pm ET.
 
-**Afternoon update, about 3:10pm ET (CNBC quote pages, delayed where noted; each reconciled to the change beside it):**
+**Afternoon update, about 3:10pm ET, intraday — superseded (CNBC quote pages, delayed where noted; each reconciled to the change beside it):**
 
 - **Treasury yields: 2-year 4.91%, 5-year 5.038%, 7-year 5.10%, 10-year 5.177%
   (day high 5.181%, +6.3bp from 5.114%), 30-year 5.469% (day high 5.474%, +6.7bp
@@ -158,7 +203,7 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - **Gold about $4,309; bitcoin about $84,300** (Yahoo Finance tickers, about
   3pm ET).
 
-**Morning reads (about 9:20 to 9:40am ET):**
+**Morning reads, about 9:20 to 9:40am ET, intraday — superseded:**
 
 
 - **30-year Treasury yield: 5.446% at the high** (CNBC, early trading) — highest
@@ -184,23 +229,29 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 
 ## ⏳ Upcoming & expected
 
-- 09-24: **Trump hosts Xi** — arrival ceremony and Oval Office talks have
-  begun, with no joint statement or White House text on the truce extension seen
-  by about 2:35pm ET; the state dinner is tonight, and a private tea and National
-  Archives tour follow Friday.
+- 09-24: ✅ **Trump hosted Xi** — the Oval Office meeting ran about three hours
+  and ended with warm remarks and no joint statement; the state dinner
+  followed, and Friday's tea and National Archives visit closed the state
+  visit with no chip, tariff or new agricultural-purchase agreement announced
+  by either side.
 - 09-24: ✅ Treasury sold **$44bn of 7-year notes at 5.085%** at 1pm ET and its
   **20- to 30-year buyback took $4.08bn of the $6bn ceiling** (12 of 35 issues);
-  `treasury-20-30y-buyback-0924` can resolve on Treasury's results record.
-- 09-24: Costco reports after the bell; more Fed speakers may follow after
-  Williams, Hammack and Paulson.
+  `treasury-20-30y-buyback-0924` resolves on Treasury's results record.
+- 09-24: ✅ Costco reported fiscal Q4 revenue of $95.72bn and adjusted EPS of
+  $6.60, both above estimates, after the bell.
 - 09-25: Brookings' fall economics conference presents its "Financing the AI
   buildout" paper (the $10.3tn estimate above).
 - 09-24: Iran's "restricted zone" boundaries (`iran-hormuz-restricted-zone-boundaries`)
-  — no published boundaries turned up in this pass's searches through about 10am ET.
-- 09-25: `trump-xi-trade-truce-extension-0925` — Bessent has said the truce is
-  extended to 01-10; as of about 2:35pm ET Beijing had not confirmed it and no
-  White House text existed, so the ledger claim still awaits the leaders' own
-  announcement.
+  — no published boundaries turned up in this pass's searches through Friday morning.
+- 09-25: ⚠️ `trump-xi-trade-truce-extension-0925` — still not a joint
+  announcement as of Friday morning: Bessent's Wednesday statement is the only
+  government confirmation the truce runs to 01-10, China's Foreign Ministry
+  and Commerce Ministry have each declined to confirm it directly, the MFA
+  holds no briefing today (Mid-Autumn Festival), and USTR Jamieson Greer told
+  CNBC Friday that "a lot more details" on the negotiations will come Monday
+  — main session's call on whether Bessent's statement plus MOFCOM's
+  acknowledgment of "discussions to extend the arrangements" is enough to
+  flip this, or whether it stays pending for Monday's detail.
 - 09-28: SpaceX's Starship Flight 14 is targeted; SpaceX lockup tranches follow
   on 10-09 and 10-24 (Stocktwits).
 - 09-29: SoftBank's bonds settle; DigitalBridge takeover expected to close;
@@ -224,6 +275,8 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
 - 🔧 Correction to the France bullet: the 10-year OAT did print a Thursday high of 4.719%, just above CNBC tracker's previous close of 4.714%, but it closed near 4.657%, down about 5.7 basis points on the day, so "18-year high" describes the intraday peak rather than where the bond ended; Germany's Bund (3.598%) and the UK gilt (5.371%) also eased slightly into their closes while US yields kept rising.
 - 🔧 Superseded morning reads: the 9:20am and 9:40am levels in the first bullets (Brent $105.11, WTI $93.64, S&P 500 -0.5%, Nasdaq -0.8%) are replaced by the afternoon reads above; the S&P 500 and Nasdaq had recovered to roughly flat by about 2:35pm ET, and the 30-year yield went from a 5.446% morning high to 5.474% at the afternoon's.
 - 🔧 Removed the Wells Fargo bullet (year-end S&P 500 target cut to 7,700 from 7,950): the note is dated 09-15 (Briefs Finance, published Sep 15) and 24/7 Wall St.'s 09-24 piece re-summarised it, so it was an aggregator re-run, not a Thursday development. Firmus's IPO-loss report (Reuters, about 2:30am ET Thursday) is in the 09-23 digest, dated to that digest-day.
+- **Finalize pass (2026-09-25, about 10am ET):** replaced every Thursday intraday market read with the wire's close/settle in the throughline and the Macro strip's new lead block (S&P 500, Dow, Nasdaq, Russell 2000, 10-year and 30-year yields, Brent, WTI, gold, silver, European closes, gasoline and mortgage rates), reconciling the CNBC/ICE close reads (10-year ~5.223%, 30-year ~5.50%) against Treasury's own par-curve figures (5.18%/5.47%) as two different vendors rather than an error. Added two late-Thursday items that landed after this digest's last pass: Akamai's $11.6bn seven-year Anthropic compute deal (with a ~5% warrant) and Costco's fiscal Q4 beat, both reported after Thursday's close. Extended the Oracle CDS bullet's trailing sentence with a dated result: no genuine 09-24 CDS level was found on a second pass — a ~198.6bp figure is misdated to March 2026 and a ~215bp figure to August 9, so the last dateable level stays July 20's ~203bp. Timeline entries staged to `where-the-capex-lands` (new tag for this lens) in addition to the threads already listed above. No thread opens or closes proposed.
+- **Coverage critic (2026-09-25 pass, checking this 09-24 digest):** 0 lead misses against four benchmarks; two genuine misses folded in above — Macron's Yanbu troop/radar/air-defence commitment (`red-sea-oil-shock`) and the Fed's first formal GENIUS Act stablecoin rulemaking (Barr's statement; no owning thread, flagged as a candidate) — plus BoE Deputy Governor Breeden's "sparks in the tinderbox" line added to the existing gilt bullet. The critic's number audit reconciled this digest's index closes and primary-source data points (durable goods, UMich sentiment) against AP's own tables and found them exact, separately confirmed AP's wire narrative reads the 10-year at 5.20% (added above as a third vendor read), and ruled a widely-shared 214.7bp/215bp Oracle CDS figure a recycled August read rather than a fresh Thursday print — this digest's own ~203bp (07-20) last-dateable-level call stands, unchanged. Declined as off-lens: Morgan Stanley's Asia deal-leak story. Not merged: a same-run staging file's proposed Oracle-CDS resolution and its "Goldman raises 2027 capex to $1.4tn" item, both traced by the critic to recycled figures (August/2025-vintage), not fresh developments.
 
 ## 🧵 Thread candidates
 
@@ -231,4 +284,4 @@ The 30-year Treasury yield hit its highest level since 2004 on Thursday after a 
   Mirendil) is in the 09-23 digest.
 
 ---
-The 30-year Treasury yield hit its highest level since 2004 on Thursday after a slightly soft 7-year auction and a buyback that took $4.08bn against a $6bn ceiling, while US stocks recovered to roughly flat by mid-afternoon. Brent spiked toward $108 on a Houthi missile attack on Saudi Arabia, then eased on a report of a phased US-Iran deal to reopen Hormuz; Fed officials Williams and Paulson said more hikes may be needed, Oracle fell on a force majeure notice as its credit default swaps hit a record, and CoreWeave and Nebius rose on upgrades. Trump and Xi opened their summit with no announced trade or chip agreement by mid-afternoon; the state dinner is tonight.
+Wall Street closed roughly flat Thursday — the S&P 500 at 7,704.13, the Dow at 51,349.98 — while the 10-year Treasury yield closed near 5.22% and the 30-year near 5.50%, both multi-decade highs, after a slightly soft 7-year auction and a partial buyback. Brent settled up 3.4% at $106.60 after a Houthi missile attack on Saudi Arabia and a report of a phased US-Iran Hormuz deal; Fed officials Williams, Hammack and Paulson all said more hikes may be needed, Oracle fell on a force majeure notice as its credit-default swaps hit a record high, and CoreWeave and Nebius rose on analyst upgrades. Trump and Xi's summit produced a state dinner and no trade, tariff or chip deal; after the close, Akamai signed an $11.6 billion compute deal with Anthropic and Costco beat earnings estimates.

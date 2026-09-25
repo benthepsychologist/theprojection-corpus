@@ -12056,3 +12056,129 @@ skipped: no day finalized this run, and the ingesters read `final` digests (09-2
   conference outcome (still unreadable); OpenAI's and Anthropic's answer on the UK-institute
   request; Portland's 09-30 reading and California's 09-30 deadline; SoftBank's bond settlement
   09-29 and tranche close 10-01; OpenAI DevDay 09-29.
+
+## 2026-09-25 ~10:00-11:35 ET — `/daily`: finalized Thursday 09-24 (critics found 7 wire misses, no lead miss), opened Friday 09-25, resolved four ledger entries, and republished the site (pushed, not deployed)
+
+**Start state.** Clean tree apart from the 09-24 run's late `openalex` manifest, nothing
+unpushed, `log.md` ending at the 09-24 15:00 run, receipt `outcome=ok dirty=0`. 09-24 was
+`building` with `as_of` 3:55pm ET; the run started at 10:00 ET, 5h past the 05:00 ET close,
+so it was finalizable. Ran to completion in one session.
+
+**Collection.** One detached batch collect at 14:00Z (all three env vars). `rss` 14:01Z (589
+rows), `clinicaltrials` and `federal_register` 14:05Z, `gdelt` 14:09Z (148), `semantic_scholar`
+14:10Z, `sec_edgar` 14:12Z (653), **`google_news_rss` 14:25Z** (11,951 rows, 25 minutes in),
+`openalex` 14:58Z (637 kept, 495 terms skipped on 429). I read the openalex file after every
+agent had closed: term collisions and self-deposited datasets, nothing on-lens.
+
+**Agents (21, all sonnet, none stalled).** Wave 1 (8): four lens sweeps (A, G, M, W), a
+Trump-Xi summit primary-document agent (S), ledger (L), a buildout-and-financing cluster (H)
+and the cold rotation (R, the 14 longest-untouched threads). Wave 2 (5): three coverage
+critics and two late-buffer agents (ZA for frontier AI; ZW, which also verified W's biggest
+claims, since world news has no critic). Then three finishers (A2, G2, M2) folded the critic
+results into the digests, one agent (G3) re-sourced shared-URL bullets, and four
+site-briefing agents wrote the readouts. WebSearch use stayed low; G spent about 28 calls
+chasing date traps, over its cap of 20.
+
+**What the day was (09-24, now final).** Trump and Xi ended the talks and a state dinner with
+no joint statement. China's Foreign Ministry readout is the only official account: "a new
+joint arrangement" with no date, an AI dialogue kept "under human control", and no incident
+channel. The 10-year closed between 5.18% (Treasury's curve) and about 5.22% (market quotes),
+its highest since 2007. The S&P 500 closed at 7,704.13, Brent settled at $106.60 (+3.4%) and
+Oracle fell 3.7% on Project Jupiter. After the close Akamai announced an $11.6bn, seven-year
+Anthropic compute deal (signed 09-18 per its 8-K). Also Netanyahu's UN speech and the walkout,
+the Senate's 49-50 Iran vote, Iran's seven-day Hormuz plan, and Dmitriev meeting Witkoff and
+Kushner. **Friday morning (09-25):** the visit closed with tea and the National Archives, and
+USTR Greer said details come Monday. Saudi Arabia, Türkiye and Pakistan arranged an urgent
+chiefs' meeting under their pact. Alabama v. TikTok goes to a jury from 09-28. Microsoft
+rebuilt Copilot. Durable goods were flat and UMich sentiment fell to 48.1.
+
+**Merge.** 45 staged bullets onto 24 threads, additive, dry run first (`/tmp/merge_entries.py`
+v3). Seven skipped: H's Oracle CDS "214.7bp" and two Goldman "$1.4tn 2027 capex" bullets
+(the critic traced both to earlier publications); W's "Saudi Arabia invokes the Mecca pact
+for the first time" (ZW's corrected version merged instead); A's copy of the MFA readout (S's
+fuller one kept); two cross-agent URL duplicates. H's Bloomberg force-majeure mechanism was
+re-staged under 09-25, its page date. Zero slug leaks, zero deletions. `last_seen` bumped on
+25 threads by script. R's "bump the 12 quiet threads" proposal was not applied: a sweep that
+found nothing is not a sighting. `actor-doing.yaml` refreshed 9 actors (OpenAI, Anthropic,
+Oracle, China, United States, Microsoft, xAI, Cigna, ByteDance) via `yaml.compose`, and every
+other actor was verified parse-equal before the write.
+
+**Corrections made before anything published.**
+- W's world-news bullet said Saudi Arabia had **invoked** the Mecca Joint Defence Agreement for
+  the first time and tagged it `sev=major`. Al Jazeera and Reuters describe a request to explore
+  support under a pact Türkiye's parliament has not ratified. ZW rewrote it and removed the
+  `sev`, and the 09-24 digest's overnight note was corrected too.
+- Cigna's OpenAI partnership was announced 09-23 (Cigna's newsroom), not 09-24.
+- The 09-25 WISeR bullet had presented the 53% denial-rate documents (on the thread since
+  09-17) as new. It now leads with the GAO's May finding and the 09-16 Klomp/Murray exchange.
+- **Six bullets in the 09-25 global-capital digest led with one CNBC live-blog URL**, so five
+  would have vanished on the site (the 09-21 failure again). G3 gave each its own source, and
+  that corrected the Hang Seng close (-1.01%, not -1.2%), oil (Brent $105.43, WTI $93.40) and
+  gold (now sourced to Kitco). It also surfaced Akamai's $1.7bn Lenovo/Jabil hardware deal.
+- Thread-entry bold lead on the Crane (Three Mile Island) restart said "the map has tracked";
+  reworded. Friday's frontier-AI headline sentence ("Friday morning has been thin so far") and
+  mental-health paragraph (process wording) were rewritten in the main session.
+- The AI briefing's lead had put a 09-21 Grok 4.7 release and the 09-23 Australia breach ahead
+  of Thursday's White House testing request and the Akamai deal; re-ranked from the pack's own
+  items.
+
+**Ledger.** `dmitriev-witkoff-kushner-new-york-0924` **hit**, resting on CNN's report relayed by
+NV.ua and the Kyiv Post; no participant statement, and the reported trilateral did not happen.
+`us-china-ai-notification-mechanism-summit-confirm` **passed-silent**: the visit ended and
+China's readout has no incident mechanism.
+`warner-schatz-nsa-model-testing-consent-0925` **passed-silent**: no report either way, and the
+09-24 Congressional Record is not yet on govinfo; it can still flip in grace.
+`trump-xi-trade-truce-extension-0925` **slipped to 09-28** on Greer's "details Monday". Notes
+on Raine (one last check 09-26, then unverifiable), the Nvidia $500B platform (runs to 09-30)
+and the Washington school-grants status report (due end of 09-25; nothing on the docket at
+10am). New (3): `alabama-v-tiktok-jury-trial-opens-0928`,
+`trump-johnson-tech-ceos-ai-meeting-0929`, `mecca-pact-turkiye-ratification-1001`. 152
+entries, `safe_load` clean, text-level edits.
+
+**Critic.** frontier-ai: 0 lead misses, 4 wire misses (Adobe in Gemini and Claude, the 09-29
+Trump-Johnson-CEO meeting, Pope Leo, Suleyman's 09-16 "model welfare" essay); Winters v. OpenAI
+declined (filed July). global-capital: 0 lead misses, 3 wire misses (Macron and Yanbu, the
+Fed's first GENIUS Act stablecoin rules, Breeden); the four index closes matched AP's table.
+mental-health: 0 misses, two corrections (above). Section appended to `coverage-log.md` with
+`### <lens> / <date>` subsections so `09_critic_annotations.py` can parse them.
+
+**Map changes.** No thread opened or closed; no flash (front pages led with the summit's close).
+Candidates in the 09-25 front: Fed and stablecoin regulation (first offer), Congo Ebola and
+the school mental-health grant fight (second and last offers), and Medicaid-fraud enforcement
+against behavioral-health providers (thin, first offer). Pakistan-Afghanistan dropped off
+after two offers despite a fresh 09-25 clash.
+
+**Site.** Four briefings applied 4/4, 0 skipped, `--export` 154; gists come from the curated
+first sentences. publish-kit dry run (105 thread pages, 0 skipped), then `--push`: 1,626 story
+pages, 753 claim pages, 25 interpretation pages, 122 map pages; site commit `8abc8ff`, receipt
+`provenance/publish-2026-09-25T152423Z.yaml`. ⛔ **Pushed, not deployed:** none of today's
+strings ("Akamai", "Mecca", "National Archives") are on theprojection.org, and
+`THEPROJECTION_DEPLOY_HOOK` is still unset on `fleet`. Fleet-ops has routed a publish-kit
+Secret Manager request to dev-hub (its commit 83b4494); the 09-23 brief is still in its inbox,
+not re-filed. Graph: `07_digest_bullets` (132 new S1), `06_timelines` (99 new S2),
+`03_expectations` (12 hypotheses), `09_critic_annotations` (2 passes annotated to claims);
+`validate.py` OK at 6,517 atoms.
+
+**Where to pick up.**
+- 09-25 stays `building`; finalize after 10:00 ET on 09-26 (Saturday). Replace Friday's
+  intraday reads with closes.
+- The Washington school-grants status report (due end of 09-25), the 09-24 Congressional Record
+  for Warner-Schatz, the last Raine check (09-26), USTR's Monday detail (the truce entry, now
+  09-28), Alabama v. TikTok opening 09-28, the Trump-Johnson-CEO meeting and DevDay 09-29,
+  SoftBank settlement 09-29, Portland and California 09-30, Türkiye's ratification 10-01.
+
+**Frictions worth acting on.**
+- **Treasury yield vendors disagree by more than the moves being reported.** CNBC's Thursday
+  close (~5.223%) cannot square with CNBC's own 4am Friday article ("up more than 4bp to
+  5.209%"), and Kitco put the 10-year "near 5.1%" the same morning. Treasury's par curve (5.18%)
+  is the only stable reference; the digests now print ranges with sources.
+- `graph/ingest/09_critic_annotations.py` matches only `### <lens> / <date>` headings exactly,
+  so every critic section written as `### Coverage critic, <lens> / <date>` (09-17 onward) was
+  invisible to it. Today's section uses the parseable form; older sections are unchanged.
+- `attention/watchlist.yaml` has no Cigna, Humana or Elevance entry although `actor-doing.yaml`
+  and `payer-ai-claim-denial` name them (M). A map add, not made.
+- The clinicaltrials lane tags ordinary trials `lens=ai`, and its `terms_matched` is an entity
+  matcher (critic CM), so neither field is a triage signal.
+- Politico is now Cloudflare-gated to urllib and the proxy; congress.gov CAPTCHAs; govinfo's
+  API works with `DEMO_KEY`, but a guessed CREC page URL returns 200 with a "Page Not Found" body.
+- `.claude/skills/publish` now resolves (dangling 09-23 to 09-24), so that friction is closed.

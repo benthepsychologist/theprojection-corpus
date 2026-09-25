@@ -16,6 +16,10 @@ finding at open: therapy beats control but absolute response rates run
 only 24-42% across disorders (Cuijpers 2024, 441 RCTs) — most of what's
 new expands REACH, not efficacy.
 
+## 2026-09-25 — Slingshot AI registers a pilot trial of its Ash chatbot against psychoeducation for depression
+
+- **Slingshot AI, maker of the "Ash" AI mental-health chatbot, registered a pilot randomized controlled trial testing Ash against a psychoeducation control for depression, with the primary outcome a change in PHQ-9 score at six weeks framed as a non-inferiority comparison (first posted 09-25, status "active, not recruiting").** About 500 adult US residents already using Ash with at least moderate depressive symptoms (PHQ-9 ≥10) are split between immediate free access to Ash for four weeks and four weeks of standard psychoeducation before getting access, with follow-up to 36 weeks. Slingshot is both sponsor and app-maker; this is registration only, with no results yet, but it is the company generating its own outcome data for a chatbot this map already tracks as part of the AI-therapy evidence gap the industry is under pressure to close. ([ClinicalTrials.gov NCT07841483](https://clinicaltrials.gov/study/NCT07841483)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-24 — A Phase 3 of oral ketamine for depression and a VA art-therapy PTSD trial are registered
 
 - **India's JIPMER registered a Phase 3 comparing oral ketamine with oral midazolam as the comparator for major depressive episodes (first posted 09-24).** 220 participants are planned, randomized and triple-masked, with a start estimated for October and the Hamilton Depression Rating Scale as primary outcome; the sponsor frames it as a test of an affordable, scalable alternative to esketamine. Registration only, no data. ([ClinicalTrials.gov NCT07839338](https://clinicaltrials.gov/study/NCT07839338)) ⟨daily 2026-09-24⟩

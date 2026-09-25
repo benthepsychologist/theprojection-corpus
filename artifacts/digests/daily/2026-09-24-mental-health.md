@@ -1,36 +1,54 @@
 ---
 lens: mental-health
 date: 2026-09-24
-status: building
+status: final
 window_start: 2026-09-24T05:00:00-04:00
-as_of: 2026-09-24T15:55:00-04:00
-coverage: pending
+as_of: 2026-09-25T10:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-24
 
-*Curated agentic-interim, 05:00 ET → about 4pm ET Thursday (sources: the
-collector buffer's 09-24 rss and gdelt files, both re-landed this afternoon
-and carrying nothing new for this lens; the google_news_rss file that landed
-at 19:25 UTC, triaged for mental-health rows from Wednesday evening onward;
-ClinicalTrials.gov's own API queried by psychiatric condition and 09-24
-first-posted date; Google News RSS queries by topic; the Legislature's
-bill-status pages for the four California bills; CourtListener dockets for
-the OpenAI, Washington-state and Education Department cases; the Missouri
+*Curated from 05:00 ET Thursday through 05:00 ET Friday (agentic-interim;
+sources: the collector buffer's 09-24 rss and gdelt files, re-landed
+Thursday afternoon and carrying nothing new for this lens; the
+google_news_rss file that landed at 19:25 UTC, triaged for mental-health
+rows from Wednesday evening onward; ClinicalTrials.gov's own API queried
+by psychiatric condition and 09-24 first-posted date; Google News RSS
+queries by topic; the Legislature's bill-status pages for the four
+California bills, re-checked live Friday morning; CourtListener dockets
+for the OpenAI, Washington-state and Education Department cases, the
+latter re-checked Friday morning for a compliance filing; the Missouri
 Independent, KPTV, KXL, Roll Call and KFF Health News pages read directly;
-the European Commission's own KIDS Act pages; Acadia's own press release and
-BioSpace, Fierce Biotech and Medscape on the trial news; the Pennsylvania
-House's co-sponsorship memo; and the trade-press front pages (Behavioral
-Health Business, STAT, Fierce Healthcare, MedPage Today, Healthcare Dive)).
-Still a thin day for mental-health technology, payers and AI-and-mental-health
-law, stated plainly. The afternoon added policy items, most of them dated to
-earlier days, three trial or study reports, and no new outcome in the ChatGPT
-chatbot-death proceeding.*
+the European Commission's own KIDS Act pages; Acadia's own press release
+and BioSpace, Fierce Biotech and Medscape on the trial news; the
+Pennsylvania House's co-sponsorship memo; the trade-press front pages
+(Behavioral Health Business, STAT Health Tech, Fierce Healthcare,
+MedPage Today, Healthcare Dive), read again Friday morning for
+Thursday-evening stories; and the Cigna Group's own newsroom release plus
+Digital Health News's republication on the Cigna-OpenAI partnership, whose
+Fierce Healthcare coverage was Cloudflare-blocked to every transport
+tried). Still a thin day for mental-health technology, payers and
+AI-and-mental-health law, stated plainly. Wednesday evening and Thursday
+added two corporate items — a payer-OpenAI partnership, announced
+Wednesday evening, and a Medicaid fraud and forced-labor case against an
+addiction-treatment provider, reported Thursday — on top of the
+afternoon's policy items (most of them dated to earlier days), three
+trial or study reports, and no new outcome in the ChatGPT chatbot-death
+proceeding.*
 
 ## Today's throughline
 
 Acadia's experimental Alzheimer's-psychosis drug narrowly missed its main Phase 2 goal on Thursday, while Portland's council advanced a psychedelics ordinance and California's four chatbot bills stayed unsigned.
-Several items reached Thursday's news a day or more late. A federal judge in Seattle barred the Education
+Wednesday evening and Thursday brought two corporate items: the Cigna
+Group said Wednesday evening it is partnering with OpenAI to bring AI
+tools built on its frontier models into oncology, pharmacy and
+behavioral-health workflows, starting with cancer care, and, on Thursday,
+a Michigan addiction-treatment provider, Quality Behavioral Health, asked
+a federal court to return $18.8 million in cash and assets seized in a
+Medicaid-fraud and forced-labor investigation that has already shut two of
+its facilities. Several other items reached Thursday's news a
+day or more late. A federal judge in Seattle barred the Education
 Department on 09-22 from terminating school mental-health grants in 15 states,
 Pennsylvania House members circulated a memo on 09-23 seeking co-sponsors for a
 bill to stop chatbots posing as licensed professionals, the White House was
@@ -45,10 +63,11 @@ medical groups and the City of Columbus over CMS's "medically frail"
 work-requirement exemption rule got fresh coverage, but it is the suit already
 filed 09-18, not a third one. On the research side, the day's newly posted trials
 include a Phase 3 comparing oral ketamine with oral midazolam for depression and
-a Department of Veterans Affairs test of art teletherapy for PTSD. As of about
-4pm ET no outcome has been reported
-from Wednesday's case-management conference in the coordinated ChatGPT
-chatbot-death suits.
+a Department of Veterans Affairs test of art teletherapy for PTSD. By the
+5am Friday close of the digest-day, no outcome had been reported from
+Wednesday's case-management conference in the coordinated ChatGPT
+chatbot-death suits, and a Friday-morning docket check found the Education
+Department's compliance status report, due that day, not yet filed.
 
 ## Policy, regulation & legal
 
@@ -80,6 +99,15 @@ chatbot-death suits.
 - **The Blue Cross Blue Shield Association said hospitals' growing use of AI coding tools cost its member plans an estimated $942 million more over two years for similar care.** Its claims analysis found the share of inpatient stays classed as medically complex rose from 37% at the start of 2023 to 40% by the end of 2025, about 70% of the increase coming from more than 55,000 extra cases where secondary diagnoses pushed a claim into a higher-paying diagnosis-related group ($653 million, roughly $11,000 per excess case), with, BCBSA says, no matching change in care delivered. This is an insurer's own analysis of its own claims, not an independent study; it follows a March 2026 BCBSA maternity-coding analysis that put similar spending at about $2.3 billion, and the New York Times frames the pair as an AI-versus-AI escalation of the hospital-insurer feud over payment, the mirror image of the insurer-denial story.
   ([Fierce Healthcare](https://www.fiercehealthcare.com/finance/hospitals-use-ai-coding-tools-cost-bcbsa-plans-942m-more-similar-care-analysis), [Reuters](https://www.reuters.com/legal/litigation/ai-tools-generated-nearly-1-billion-extra-costs-blue-cross-insurers-say-2026-09-24/), [New York Times](https://www.nytimes.com/2026/09/24/business/ai-hospitals-insurers-health-care-costs.html))
   <!-- k: t=payer-ai-claim-denial axis=capital -->
+- **The Cigna Group said on 09-23 it is partnering with OpenAI to build AI tools for patients with complex health conditions, starting with cancer care, integrating OpenAI's frontier reasoning models into Cigna's clinical workflows.** Oncology nurses and case managers at Cigna Healthcare and Accredo Specialty Pharmacy will get tools combining clinical, pharmacy, behavioral-health and benefits information into one view meant to help identify patient needs earlier and coordinate care; the companies plan to expand beyond oncology over time. Cigna's Katya Andresen (chief data, digital and AI officer) and OpenAI's Nate Gross (head of health) are named; this is a care-coordination tool, not a claims or denial system, the opposite framing from Cigna's role in the payer-AI-denial fight this map already tracks. Cigna's own newsroom dates the release Wednesday 09-23; Fierce Healthcare covered it a day later (09-24, 4:57pm) and its own article was unreachable through every transport tried (urllib direct, Googlebot UA, r.jina.ai all 403) — Digital Health News's republication is cited as a secondary source.
+  ([The Cigna Group](https://newsroom.thecignagroup.com/the-cigna-group-and-openai-collaborate-to-advance-support-for-patients-with-complex-conditions), [Digital Health News](https://digitalhealthnews.com/cigna-group-and-openai-partner-to-support-patients-with-complex-conditions))
+  <!-- k: t=payer-ai-claim-denial e=openai axis=capital -->
+
+## Clinical safety & harm
+
+- **Quality Behavioral Health, a Detroit-area addiction-treatment provider, and its CEO Naveed Syed have asked a federal court to return $18.8 million in cash, precious metals and records seized in an FBI-led Medicaid-fraud and forced-labor raid on 08-25/08-26, a filing reported 09-24 shows.** The government's civil forfeiture complaint (filed 09-22) alleges Quality billed Detroit Wayne Integrated Health Network for outpatient, residential and opioid-treatment services patients never received, directed staff to fabricate progress notes and use ChatGPT to backdate files, and required some Medicaid beneficiaries to work 12-hour days for as little as $40 a week under "volunteer agreements," living in Syed-controlled housing and fearing eviction if they didn't comply. No criminal charges have been filed against Syed or the company; two of its six facilities have closed, about 275 patients remain in its care, and a hearing on the asset-return motion is set for 10-08. A genuine patient-harm and provider-fraud story inside the addiction-treatment system this lens tracks, not an AI-and-mental-health item beyond the ChatGPT detail.
+  ([Behavioral Health Business](https://bhbusiness.com/2026/09/24/quality-behavioral-health-facing-federal-medicaid-fraud-forced-labor-investigation/))
+  <!-- k: axis=clinical-safety -->
 
 ## 🧪 Clinical trials
 
@@ -112,20 +140,23 @@ Results and safety signals reported in trial news rather than registry postings:
 
 ## ⏳ Upcoming & expected
 
-- **`raine-jccp-cmc-0923` (due 09-23) — outcome still unreported at about 3pm
-  ET Thursday.** The case-management conference in the coordinated ChatGPT
-  chatbot-harm proceeding (JCCP 5431, Judge Ethan Schulman, San Francisco)
-  was set for Wednesday 10am in Department 304. CourtListener does not index
-  the state-court proceeding and the San Francisco Superior Court portal is
-  Cloudflare-gated; Google News, DuckDuckGo, two web searches, Lawsuit
-  Informer's JCCP page, the Tech Justice Law Project and a plaintiff's
-  Substack turned up no post-hearing report, and every page found still lists
-  the conference as upcoming. Nothing supports either a flip or a claim that
-  it was postponed.
-- **California governor's deadline 09-30 — no action at about 3pm ET
-  Thursday.** The Legislature's bill-history pages still show AB 1979 (presented
+- **`raine-jccp-cmc-0923` (due 09-23) — outcome still unreported as of a
+  fresh check ~10am ET Friday.** The case-management conference in the
+  coordinated ChatGPT chatbot-harm proceeding (JCCP 5431, Judge Ethan
+  Schulman, San Francisco) was set for Wednesday 10am in Department 304.
+  CourtListener does not index the state-court proceeding and the San
+  Francisco Superior Court portal is Cloudflare-gated; Google News,
+  DuckDuckGo (via r.jina.ai), Lawsuit Informer's JCCP page and a title
+  sweep of the day's collector buffer for "Raine"/"JCCP 5431"/"wrongful
+  death" all turned up nothing past "conference scheduled." Three
+  agents across two days have now exhausted the reachable sources with
+  the same result: nothing supports either a flip or a claim that it was
+  postponed, and this stays plainly unreadable rather than assumed either
+  way.
+- **California governor's deadline 09-30 — no action as of a live re-check
+  ~10am ET Friday.** The Legislature's bill-history pages still show AB 1979 (presented
   09-04), SB 903 (09-09), AB 2575 (09-15) and SB 503 (08-30) at "Enrolled and
-  presented to the Governor."
+  presented to the Governor," each page's history table unchanged since Thursday afternoon.
 - **Portland psychedelics ordinance — second reading Wednesday 09-30**
   (KPTV, KXL), after the council advanced it on 09-23.
 - **British Columbia v. Altman (4:26-cv-10743):** the 09-22 relatedness
@@ -138,6 +169,8 @@ Results and safety signals reported in trial news rather than registry postings:
 - **Education Department status report on the school mental-health grants
   injunction — due Friday 09-25** (order of 09-22, W.D. Wash. 2:26-cv-02409),
   documenting the steps taken to comply and the notice sent to grantees.
+  Not yet on the docket as of a check ~10:05am ET Friday (entry 106, the
+  injunction order itself, is still the newest entry).
 - **Pennsylvania's licensed-professional chatbot bill** — a co-sponsorship memo
   only as of 09-23; "not submitted for introduction yet" on the House site.
 - **Trial readouts and meetings:** Xenon's X-Nova2 topline in the first quarter of
@@ -149,6 +182,34 @@ Results and safety signals reported in trial news rather than registry postings:
 
 ## 🔄 Map changes
 
+- **Coverage critic (2026-09-25 midday pass, on the finalized 09-24 day).**
+  0 lead misses, 0 wire misses; the one correction was the Cigna-OpenAI
+  item's date, re-dated from 09-24 to its real announcement day, Wednesday
+  09-23 (Cigna's own newsroom dateline), with Cigna's own release added as
+  the primary citation ahead of Digital Health News — see the Capital &
+  corporate section above.
+- **Friday-morning pass (checked ~10am ET 09-25).** Added two Thursday-evening
+  items with no existing thread: the Cigna Group/OpenAI oncology-and-behavioral-health
+  AI partnership (placed on `payer-ai-claim-denial` as the care-coordination
+  counterpart to that thread's denial-machine framing, tagged `e=openai`) and
+  the Quality Behavioral Health Medicaid-fraud/forced-labor case (left
+  deliberately unmapped/ambient — no existing thread covers provider-fraud
+  enforcement in addiction treatment; Ben's call whether it merits one).
+  Re-checked and found unchanged since the afternoon pass: the four
+  California bills (still "Enrolled and presented to the Governor," no
+  signature or veto), the Raine JCCP case-management-conference outcome
+  (still unreported — SF Superior Court portal, Lawsuit Informer, DuckDuckGo
+  and Google News all re-checked, nothing past "scheduled"), and Acadia's
+  and Xenon's trial facts (a same-day follow-up, Citeline's "Acadia Alters
+  Phase III Trials," restates the 30mg-arm-dropped decision already here,
+  no new substance). The Education Department's compliance status report
+  (due 09-25 under the 09-22 injunction) had NOT been filed as of the
+  docket check ~10:05am ET Friday — entry 106 (the injunction order) is
+  still the last docket entry. The reported NIH grant-order withdrawal
+  gained one more named on-record source (Sen. Collins telling The Hill
+  09-23 the White House "is backing down"), but a same-day Harvard Crimson
+  piece (09-25) still calls it "Trump's proposed order," so this stays a
+  reported walk-back, not a confirmed rescission or announcement.
 - Staged for merge: `ai-therapy-regulatory-reckoning` and
   `social-media-causality-fight` (the KIDS Act's AI-companion provisions,
   dated 09-17); `payer-ai-claim-denial` (the Blue Cross Blue Shield
@@ -247,13 +308,26 @@ Results and safety signals reported in trial news rather than registry postings:
   near-term date, currently filed under `mh-clinical-infra-funding`. Whether it
   earns its own thread is Ben's call.
 
+- **Federal Medicaid-fraud/forced-labor enforcement against behavioral-health
+  and addiction-treatment providers** (grep of the whole repo finds no
+  thread on provider fraud in this sector). Quality Behavioral Health
+  (Detroit-area, six facilities, ~275 patients) is fighting a civil
+  forfeiture of $18.8 million seized 08-25/08-26 over alleged billing fraud
+  and forced labor of Medicaid beneficiaries; a hearing is set 10-08. A
+  single case so far, not yet a pattern this map has evidence for elsewhere,
+  so this is a thinner candidate than the two above. Whether it earns a
+  thread or stays a one-off ambient item is Ben's call.
+
 ---
-Thursday's mental-health news was thin.
-The afternoon added Acadia's Phase 2 result and a Swedish serious-game trial
-report as Thursday items, plus late catches: the school mental-health grants injunction (09-22), Pennsylvania's
-licensed-professional chatbot memo (09-23), Portland's psychedelics ordinance,
-the reported drop of the NIH grant-veto order, Xenon's 09-17 enrollment pause,
-OpenAI's 09-17 motion in A.C. v. Altman and the Missouri coverage of the
-Medicaid exemption suit.
-The California bills are still with the governor, and the Raine conference
-outcome is still unreported.
+Thursday's mental-health news was thin but not empty: Acadia's Phase 2 miss,
+a Swedish serious-game trial and, in the evening, a Cigna-OpenAI care
+partnership and a Medicaid fraud and forced-labor case against an
+addiction-treatment provider were real Thursday events, alongside late
+catches — the school mental-health grants injunction (09-22), Pennsylvania's
+licensed-professional chatbot memo (09-23), Portland's psychedelics
+ordinance, the reported drop of the NIH grant-veto order, Xenon's 09-17
+enrollment pause, OpenAI's 09-17 motion in A.C. v. Altman and the Missouri
+coverage of the Medicaid exemption suit.
+The California bills are still with the governor, the Education Department's
+compliance report had not been filed by Friday morning, and the Raine
+conference outcome is still unreported after three agents tried.
