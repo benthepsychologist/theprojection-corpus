@@ -12182,3 +12182,121 @@ not re-filed. Graph: `07_digest_bullets` (132 new S1), `06_timelines` (99 new S2
 - Politico is now Cloudflare-gated to urllib and the proxy; congress.gov CAPTCHAs; govinfo's
   API works with `DEMO_KEY`, but a guessed CREC page URL returns 200 with a "Page Not Found" body.
 - `.claude/skills/publish` now resolves (dangling 09-23 to 09-24), so that friction is closed.
+
+## 2026-09-25 ~15:00-16:00 ET — `/daily`: extended Friday through the afternoon (a 2-1 appeals ruling for the Pentagon over Anthropic, Greer's partial US-China goods deal, the Riyadh chiefs' meeting, Mother Jones's Tumbler Ridge logs), no ledger flips, one new entry, and republished the site (pushed, not deployed)
+
+**Start state.** Clean tree, nothing unpushed, `log.md` ending at the 10:00 ET run, whose
+receipt reads `exit=0 dirty=0 seconds=5200`, so it closed properly. 09-24 is `final`; 09-25 is
+`building` and cannot finalize until after 10:00 ET on 09-26, so there was no day to finalize,
+no coverage critic and no graph ingest this run. Everything ran foreground or detached; no turn
+ended to wait.
+
+**Collection.** One detached `cloud-researcher collect` at 19:00Z (all three env vars, venv at
+`/workspace/.venv`). `rss` 19:01Z (592 kept), `gdelt` 19:05Z (429s on most terms),
+`semantic_scholar` 19:10Z, `sec_edgar` 19:11Z, **`google_news_rss` 19:25Z** (12,048 kept,
+14,868 rows in the file, 8.4MB), of which 1,698 rows were stamped after 14:00Z (1,088 AI, 391
+global-capital, 219 mental-health). `openalex` was still 429ing through its terms at close.
+
+**Agents (13, all foreground, all sonnet; none stalled).** Wave 1 (6): four lens sweeps (A, G,
+M, W) editing their own 09-25 digests, a primary-documents agent (S, staging only) and a ledger
+check (L, proposals only). Wave 2 (3, after 19:25Z): late-buffer triage per lens (ZA, ZG, ZM) by
+name search. Wave 3 (4): the site briefings. WebSearch use was about 40 of 200 (G 19, W 15, A 6,
+the rest none; they used urllib, Google News RSS and DuckDuckGo through `r.jina.ai`). Shared
+brief: `buffer/sweeps/2026-09-25/BRIEF-pm.md`, adapted from the morning's.
+
+**What the afternoon found.**
+- **Anthropic v. the Pentagon.** A divided D.C. Circuit panel ruled 2-1 that the Pentagon may
+  keep its second supply-chain-risk designation of Anthropic; the majority found "ample support"
+  for the national-security finding and rejected the due-process and free-speech claims. Judge
+  Lin's August ruling against the other designation stands. It is the first appellate merits
+  ruling in either case (the same panel refused a temporary block in April). Source: Wired,
+  quoting the opinion; the opinion PDF itself was not reachable (cadc 404/timeout, CourtListener
+  403). `sev=major` on the AI digest.
+- **US-China.** Xi left Joint Base Andrews at 1:10pm ET; Nikkei reports Trump accepted APEC in
+  Shenzhen (November). Greer told CNBC "we've actually reached agreement with the Chinese on a
+  number of these things" (a subset of nonsensitive goods, details Monday); CNBC reports a
+  two-month truce extension, which Greer called "compliance periods". Beijing has named no date.
+  Taiwan's foreign ministry said Xi "distorted facts". Trump ruled out Bessent as "Super
+  Intelligence Czar".
+- **World.** The Saudi, Turkish and Pakistani chiefs met in Riyadh with no joint statement; Iran's
+  Rezaei gave Washington "four or five days" (Thursday evening, dated 09-24) while Araghchi said
+  Tehran is "not in a hurry"; the US ambassador says Xi gave assurances on Iran, an Iranian
+  official says China assured Tehran of the opposite; Qatar rejected Netanyahu's UN accusation.
+- **Capital.** Afternoon reads only (the run ended before the close): S&P 500 about +0.4% near
+  3pm ET, the 10-year near 5.19% and the 30-year near 5.51%, Brent about $104; Stoxx 600 +0.3%
+  for its first weekly gain in four; Katayama says Trump raised the weak yen with Takaichi;
+  Greer sees "no urgency" on Canada; Nscale's $3.36bn convertible; Anthropic's founders seek
+  50.1% voting control; Solidigm weighs a US IPO at up to $150bn.
+- **Mental health.** Mother Jones (09-24) published the Tumbler Ridge shooter's ChatGPT
+  conversations; British Columbia's attorney general and Canada's AI minister reacted on 09-25.
+  The Senate passed S. 3257 (the John A. Hauser Mental Health in Aviation Act) and S. 3258 by
+  consent on 09-24, read in the Congressional Record. SAMHSA awarded $247.9m. Spring Health opened
+  a "harm from others" rubric for comment. The Education Department's status report was still
+  not on the docket at 3pm ET (due by end of day).
+
+**What changed in `attention/`.**
+- `attention/upcoming.yaml`: no flips. Dated notes on five entries: the 09-24 Congressional Record
+  (now on govinfo; its 77 Senate sections include no consent request on the Warner-Schatz bill,
+  which confirms the passed-silent reading), the WA school-grants docket at 3pm ET, the Raine
+  venue (San Francisco, Judge Schulman), the AI-notification entry after the visit closed, and
+  the truce entry (stays open to 09-28). New: `iran-rezaei-hormuz-deadline-0929`. 153 entries,
+  `safe_load` clean.
+- `attention/threads.yaml`: `last_seen` advanced on nine threads. `attention/actor-doing.yaml`:
+  six actors refreshed (Anthropic, OpenAI, China, United States, Meta, SK Hynix), verified by
+  assertion against the previous content before writing.
+- Timelines: 26 bullets merged onto 19 threads in two dry-run-first passes, 0 lost, no slug
+  leaks. Two dated to their real days: the Sony/UMG suit against Suno (filed 09-18, previously
+  absent) and the Mother Jones investigation (09-24). No thread opened or closed. No flash.
+- New thread candidate in the mental-health digest only: federal aviation mental-health reform.
+
+**Site.** Packs built for front and the three lenses; the front pack's position cap (breaking
+52→30, news 453→60) dropped the Greer item. Briefings: first `--apply` went 3/4 because the
+validator rejects any URL outside the scope's own pack, even a verified one; relinked that bullet
+to `/threads/china-stack-independence/`, then 4/4 with 0 skipped; `--export` 154. Gists checked.
+`graph/validate.py` OK (6,517 atoms). publish-kit dry run (105 thread pages, 0 skipped), then
+`--push`: 1,640 story pages, 753 claim pages, 26 interpretation pages, site commit `335111f`,
+receipt `provenance/publish-2026-09-25T194826Z.yaml`. ⛔ **Pushed, not deployed:** theprojection.org
+lacks every one of today's check strings ("Solidigm", "Akamai", "Hauser", "Tumbler") and the
+kit printed its no-deploy-hook warning. Not re-filed (fleet-ops routed it to dev-hub).
+
+**Corrections made before publishing.**
+- G's Greer bullet misquoted him ("have actually reached agreement"), had him confirming a
+  January 10 truce date the CNBC article never gives, and reversed the $60.6bn Mexico figure (it
+  is US imports from Mexico). The bullet, the global-capital throughline, three ⏳/map lines and
+  the staged timeline entry were corrected against the article. The global-capital headline had
+  said "the US and China confirmed" a deal; only the US side has spoken.
+- The AI throughline, the front throughline and a front-briefing bullet called the appeals ruling
+  Anthropic's "first courtroom loss", and one bullet said it "breaks the company's run of wins";
+  the same panel denied Anthropic a stay in April. Reworded to "first appellate ruling on the
+  merits" everywhere.
+- The Bessent "AI czar" story was staged on `china-stack-independence` (ZA) and
+  `treasury-long-end-intervention` (ZG); moved to `frontier-model-gov-review-precedent`, where
+  the czar role has lived since 09-19.
+- Staged entries carried internal wording ("this thread's record", "late catch", "staged
+  separately by ZW", a section-homepage link); rewritten before merge. The mental-health
+  briefing called the grants report "overdue" (it is due tonight) and asked whether BC's federal
+  suit would join the state JCCP; both watch lines replaced.
+
+**Frictions worth acting on.**
+- The readout validator refuses any off-pack URL, so the "authorized exception" workaround for
+  pack truncation (memory `readout-pack-truncates-by-position`) cannot carry a real link; only a
+  `/threads/<slug>/` link for a thread in that pack's own list, or null. The truncation now at
+  least warns on stderr.
+- CourtListener's REST v4 search now 401s without a token (agent L), and a direct docket fetch
+  can return HTTP 202 with an empty body when throttled (agent M); `r.jina.ai` with a bare UA
+  worked both times.
+- govinfo's `DEMO_KEY` 429s after about five calls, but the package MODS
+  (`govinfo.gov/metadata/pkg/CREC-<date>/mods.xml`) lists every Record section title in one
+  request, which settles "did X happen on the floor" without walking pages.
+- leginfo.legislature.ca.gov served stale bill histories to urllib (agent A); agent M read
+  current histories the same afternoon, so treat a stale-looking page as a fetch artefact.
+
+**Where to pick up.**
+- 09-25 stays `building`; finalize after 10:00 ET on 09-26 (Saturday) and replace every Friday
+  intraday level with the wire close.
+- First thing 09-26: the WA school-grants status report (due by end of 09-25), the last Raine
+  check, and whether OpenAI answers the Mother Jones disclosures.
+- Then: USTR's Monday detail (truce entry 09-28), Alabama v. TikTok opening 09-28, the Rezaei
+  deadline and DevDay and the Trump-Johnson-CEO meeting 09-29, SoftBank's settlement 09-29,
+  Portland and California 09-30, Türkiye's ratification 10-01, and whether Anthropic seeks en banc
+  review.

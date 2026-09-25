@@ -12,6 +12,10 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-09-25 — SK Hynix's Solidigm weighs a $150bn US IPO
+
+- **SK Hynix's US-based NAND/SSD subsidiary Solidigm is weighing an IPO as soon as next year that could value the unit at up to $150 billion and raise about $15 billion, Reuters reported, citing three people familiar with the matter** The chipmaker held pitch meetings this week with investment banks competing for roles; a deal at that size would rank as the largest-ever US semiconductor listing. Solidigm, formed when SK Hynix bought Intel's NAND/SSD business for about $9bn in 2020, supplies the high-capacity enterprise SSDs used in AI servers and data centers; deal size and timing remain early-stage and could change with market conditions. ([Yahoo Finance/Investing.com, citing Reuters](https://finance.yahoo.com/markets/stocks/articles/sk-hynix-u-based-solidigm-175825373.html)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-24 — China's memory expansion is expected to feed China first
 
 - **TrendForce, summarizing Taiwanese and Korean press, reports CXMT's monthly DRAM capacity rising from about 320,000 to 420,000 wafers by 2027 and YMTC's third Wuhan fab starting up by end-2026, but says institutional investors expect China's own AI and cloud demand to absorb most of the new supply, so it will not ease the global shortage until 2027 or later.** TrendForce's own tracker puts CXMT at 9.5% of global DRAM revenue in 2Q26, up from 7.6% in 1Q26 and fourth behind Samsung (39.4%), SK hynix (24.9%) and Micron (23.3%); Counterpoint's ">10%" figure logged 09-01 uses a different tracker. ([TrendForce](https://www.trendforce.com/news/2026/09/24/news-cxmt-ymtc-ramp-memory-capacity-but-chinas-ai-cloud-boom-could-soak-up-new-supply-through-2027/)) ⟨daily 2026-09-24⟩

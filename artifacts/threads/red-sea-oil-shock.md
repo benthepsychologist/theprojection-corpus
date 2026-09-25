@@ -22,6 +22,10 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-25 — Iran says it is "not in a hurry" for a US response to its Hormuz proposal
+
+- **Iran's foreign minister Abbas Araghchi said Friday that Tehran has not yet received a US response to its seven-day Hormuz-reopening proposal and is "not in a hurry," though he said a deal would ideally come "before the midterm election."** "It depends on the U.S. administration to decide," Araghchi told reporters, reiterating that Iran wants Washington to return to the terms of the June 17 memorandum of understanding that collapsed amid renewed fighting over the summer; it remains unclear how the current proposal would prevent hostilities from resuming. Oil extended its Friday fall on the diplomatic overture, with CNBC's updated report (~1:25pm ET) putting Brent down 2.3% to $104.09 and WTI down 2.5% to $92.21. ([CNBC](https://www.cnbc.com/2026/09/25/oil-falls-as-potential-diplomatic-solution-to-iran-conflict-arises.html)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-24 — Brent tops $105 on stalled talks and diesel-ban uncertainty
 
 - **Brent crude rose about 2% to above $105 a barrel on Thursday, touching $106.50, as US-Iran talks showed little sign of progress and traders weighed a possible US ban on diesel exports.** Brent was up $2.03 at $105.11 and WTI up $1.48 at $93.64 by about 9:20am ET; reports said Iran gave the US a week to meet its demands including lifting the naval blockade, a White House official on Wednesday denied a report of a 90-day diesel export ban, and the European Commission said it is concerned. These are intraday quotes. ([Reuters via Yahoo Finance](https://finance.yahoo.com/energy/articles/oil-extends-gains-little-sign-070623934.html)) ⟨daily 2026-09-24⟩

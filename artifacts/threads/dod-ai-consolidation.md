@@ -10,6 +10,10 @@ all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md — first
 dedicated crawl rides the /daily dispatch tiers.
 
+## 2026-09-25 — A divided D.C. Circuit panel lets the Pentagon keep Anthropic designated a supply-chain risk
+
+- **A divided D.C. Circuit panel ruled 2-1 on Friday that the Pentagon may keep its second supply-chain-risk designation of Anthropic in place, so the block on Claude in defence systems can continue** The majority wrote that the department "had ample support for its conclusion" that integrating Claude "presented a statutorily covered national-security risk," and rejected Anthropic's due-process and free-speech claims. Judge Rita Lin's August ruling against the other designation stands. Anthropic said it is "considering all options," which could include asking the full court or the Supreme Court to review it. ([Wired](https://www.wired.com/story/appeals-court-lets-the-pentagon-designate-anthropic-a-supply-chain-risk/)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-18 — Pentagon investigators cite overreliance on Palantir's Maven in the Minab school strike
 
 - **Pentagon investigators found that flawed intelligence, outdated imagery, a compressed targeting timetable, cuts to civilian-protection staff and overreliance on the AI in Palantir's Maven Smart System contributed to the February 28 missile strike that killed at least 123 children at an elementary school in Minab, Iran, Bloomberg reported** — officials said some Central Command personnel expected Maven to flag stale information in the underlying intelligence; Palantir said there is no evidence its software was at fault and that it is not responsible for the underlying data. The full investigation report has not been released. ([Bloomberg](https://www.bloomberg.com/graphics/2026-iran-school-attack/)) ⟨daily 2026-09-18⟩

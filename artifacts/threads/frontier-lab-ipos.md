@@ -12,6 +12,10 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-09-25 — Nscale's convertible financing grows to $3.36B, with Nvidia's $1B arriving mid-November
+
+- **British AI neocloud Nscale secured $3.36 billion in convertible-note financing ahead of its NYSE IPO, led by hedge fund Third Point, with $2.36 billion available to the company immediately and $1 billion from existing investor Nvidia arriving in mid-November, the company said Friday.** The notes convert into equity once the IPO completes. The total is up from the roughly $3.1 billion reported on 09-18, when Nvidia's share was given only as "at least $1 billion". Nscale, which filed its S-1 on 09-18, has amassed more than $103 billion in contracts since spinning out of Australian crypto-mining company Arkon Energy two years ago; the Financial Times puts its expected NYSE valuation at $35 billion, and Bloomberg reports it is seeking to raise $3 billion in the offering. ([TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-23 — Nscale's biggest customer supplied 73% of its revenue and is not named in the IPO filing
 
 - **One unnamed customer accounted for 73% of Nscale's 2025 revenue and 52% of its first-half 2026 revenue, the company's IPO filing says, and the Financial Times reported the customer is a ByteDance-linked Singapore unit mentioned only in an appendix.** The S-1 says the same customer should fall below 20% of revenue in 2026 as Microsoft (up to about $43.8bn of statements of work through 2033) and Anthropic (about $44.6bn) contracts scale, which together make up roughly $88bn of its $103.4bn contracted backlog, and the filing's own text does not name the customer. ([Nscale S-1 on SEC EDGAR](https://www.sec.gov/Archives/edgar/data/2110365/000119312526395475/ck0002110365-20260918.htm), [The Decoder, citing the Financial Times](https://the-decoder.com/nvidia-backed-nscale-keeps-its-biggest-customer-bytedance-out-of-its-ipo-filing/)) ⟨daily 2026-09-23⟩

@@ -1346,6 +1346,8 @@ expectations:
     # 2026-09-25 ⟨daily⟩: 10am ET read: still no minute order, continuance or post-hearing report (agents L and M; the
     # court portal stays gated and CourtListener does not index JCCP 5431). Three agents over three days have exhausted the
     # reachable sources. Per the 09-23 note, one last check on 09-26, then close as unverifiable.
+    # 2026-09-25 pm ⟨daily⟩: case identity confirmed as Raine v. OpenAI, CGC-25-628528, coordinated into JCCP No. 5431 before
+    # Judge Ethan P. Schulman, San Francisco Superior Court Dept. 304. Still no report of the 09-23 conference's outcome.
   - id: diga-performance-data-delivery
     claim: "BfArM receives the first mandatory performance-data delivery under Germany's 2026 DiGA reform — the first moment any digital therapeutic can actually be re-priced on outcomes"
     due: 2027-04-15
@@ -3625,6 +3627,9 @@ expectations:
     # record ('competent authorities'), Xi's arrival speech said AI must be 'always under human control' and named no incident line, and the White
     # House had issued no readout. The MFA holds no press conference on 09-25 (Mid-Autumn) and resumes 09-28, so the test is a joint document
     # or Xinhua's readout of the second day.
+    # 2026-09-25 pm ⟨daily⟩: the visit closed with Xi's departure at 1:10pm ET. CNBC's wrap-up (2:52pm ET,
+    # https://www.cnbc.com/2026/09/25/trump-xi-summit-takeaways.html): "Neither side signaled major steps to curtail AI."
+    # No incident-notification mechanism named by either side. Stays passed-silent, not refuted.
   - id: trump-xi-washington-summit-0924
     claim: >
       Trump hosts Xi in Washington DC for a second 2026 summit, with AI/chip
@@ -4115,6 +4120,10 @@ expectations:
     # deliveries. USTR Greer told CNBC Friday that 'a lot more details' come Monday 09-28
     # (https://www.cnbc.com/2026/09/25/stock-market-today-live-updates.html), which is the new date. A published text
     # naming the new expiry on 09-28 is a hit; the 'Trump and Xi announce' wording will not be met literally.
+    # 2026-09-25 pm ⟨daily⟩: Greer on CNBC (published 8:55am ET, https://www.cnbc.com/2026/09/25/trump-xi-china-trade-greer.html):
+    # agreements on "a subset" of nonsensitive goods under the Board of Trade, details Monday; CNBC reports the truce extended by
+    # two months, which Greer called "compliance periods". Still US-side only; Beijing's readout names "a new joint arrangement"
+    # with no date. Stays pending to 09-28.
   - id: softbank-bond-settlement-0929
     claim: >
       SoftBank's USD and EUR notes settle, if they price on schedule.
@@ -4529,6 +4538,8 @@ expectations:
     status: pending
     # 2026-09-25 ⟨daily⟩: 10am ET read of the docket (agent L): order #106 of 09-22 is still the newest entry.
     # The report is due by the end of 09-25, so this stays pending for the next run.
+    # 2026-09-25 pm ⟨daily⟩: 3pm ET read of the docket (agents L and M): order #106 is still the newest entry, so no
+    # status report yet. The order says "no later than 9/25/2026" with no hour; keep the due date and check first thing 09-26.
   - id: warner-schatz-nsa-model-testing-consent-0925
     claim: "The Senate agrees by unanimous consent to Sens. Warner and Schatz's bill making NSA assessment of frontier AI models mandatory before release, which they said they would seek on 09-24 (Warner said it 'probably won't happen'); Sen. Grassley separately sought consent on the AI Whistleblower Protection Act"
     due: 2026-09-25
@@ -4549,6 +4560,12 @@ expectations:
       No outlet reported whether the request was made, agreed or objected to, and the Congressional Record for
       09-24 was not yet published on govinfo (latest issue 09-23). Within the three-day grace this can still flip
       if the Record shows the request and its outcome; re-check once the 09-24 issue posts.
+      RE-CHECK 2026-09-25 pm: the 09-24 Congressional Record is now on govinfo (Vol. 172, No. 152). None of its 77
+      Senate sections is a consent request on the AI bill: the section list (govinfo MODS for CREC-2026-09-24) has
+      no AI, Warner or Schatz item, the bill is not among the day's introductions, and the "Statements on Introduced
+      Bills" section (S4998-S5006) carries only unrelated bills. Bills passed by consent that day included S. 3257,
+      the John A. Hauser Mental Health in Aviation Act, and S. 3258. The Record's silence confirms the passed-silent
+      reading: no request on the AI bill was recorded on 09-24.
   - id: spacex-lockup-tranche-1009
     claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
     due: 2026-10-09
@@ -4594,6 +4611,18 @@ expectations:
     source: https://www.aljazeera.com/news/2026/9/25/pakistan-turkiye-edge-closer-towards-joining-saudi-war-against-houthis
     confidence: reported
     what_confirms: "A parliamentary vote or debate on the agreement; Reuters reported it is not yet ratified by Turkiye's parliament and that support would be largely bilateral."
+    logged: 2026-09-25
+    logged_by: curate-add
+    status: pending
+  - id: iran-rezaei-hormuz-deadline-0929
+    claim: "Iran's four-to-five-day deadline for the US to meet its Strait of Hormuz conditions, set by Supreme National Security Council secretary Mohsen Rezaei on the evening of 09-24, runs out around 09-29 with either a US answer or an Iranian next step"
+    due: 2026-09-29
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: []
+    source: https://gulfnews.com/world/mena/iran-puts-washington-on-a-4-day-clock-over-strait-of-hormuz-1.500687125
+    confidence: reported
+    what_confirms: "A US response to the 09-16 proposal, or an Iranian statement or action on the strait tied to the deadline. Foreign Minister Araghchi said on 09-25 Tehran is 'not in a hurry', so a lapse without either is plausible and is itself the reading."
     logged: 2026-09-25
     logged_by: curate-add
     status: pending
