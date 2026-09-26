@@ -10,6 +10,10 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in POWER — the real bottleneck. Nuclear-for-AI (SMRs, Oklo/X-Energy), gas turbines (the Colossus permit fights), grid deals, and the energy-justice/permitting battles. Category meta under where-the-capex-lands.
 
+## 2026-09-25 — Crusoe drops Boom Supersonic's turbine power plants
+
+- **Crusoe ended its plan to buy Boom Supersonic's gas-turbine power plants for its AI data centers, a $1.25 billion deal in TechCrunch's telling, after saying turbines are no longer part of its near-term primary power mix at Abilene and other sites** Boom's CEO said Boom will deliver about 250 megawatts to other sites next year and target 1 gigawatt in 2028; Crusoe says its 1.2-gigawatt Abilene campus for Oracle and OpenAI runs on the grid with turbines only as backup, while a separate 900-megawatt Abilene campus for Microsoft is planned to run on on-site gas turbines. ([TechCrunch](https://techcrunch.com/2026/09/25/crusoe-abandons-1-25b-plan-to-use-boom-turbines-at-ai-data-centers/)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-24 — Fervo's Cape Station puts its first enhanced-geothermal power on the grid
 
 - **Fervo Energy said its Cape Station in Beaver County, Utah reached First Power on Thursday, the first utility-scale enhanced geothermal project to do so anywhere in the world.** The first of three 33-megawatt "GeoBlocks" in the roughly 100MW first phase is exporting electricity and is due to reach commercial operation by 10-01, the other two by 01-01-2027, with a further 400MW under construction for 2028 and about 900MW of offtake contracted. Cape Station is the project behind the record 396MW enhanced-geothermal deal Google signed on 09-01. Fervo's release names data centers and AI infrastructure among the demand drivers. ([Fervo Energy](https://fervoenergy.com/fervo-energy-achieves-first-power-at-cape-station-a-landmark-moment-for-the-future-of-enhanced-geothermal-systems/)) ⟨daily 2026-09-24⟩

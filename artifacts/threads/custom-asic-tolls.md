@@ -11,6 +11,18 @@ opened: 2026-07-28
 *Watch:* the sixth customer · Jalapeño tape-out · the VMware litigation
 spread · whether any major takes design fully in-house.
 
+## 2026-09-23 — China surveys Broadcom switch use in state-backed data centres
+
+- **China's state asset regulator has spent recent weeks surveying how widely Broadcom's switches are used in state-controlled data centres, and the survey found they could account for as much as 90% of the equipment, the Financial Times reported on 2026-09-23.** The review is part of Beijing's "domestic chips for domestic use" push; Nvidia products are already barred from those facilities while Broadcom's remain widely present. Reuters could not verify the report and neither Broadcom nor the regulator had commented. It concerns Broadcom's networking business, not its custom-chip or VMware tolls. ([Reuters via WHBL](https://whbl.com/2026/09/23/china-surveys-broadcom-switch-use-in-state-data-centers-ft-reports/), [Reuters](https://www.reuters.com/world/china/china-surveys-broadcom-switch-use-state-data-centers-ft-reports-2026-09-23/)) ⟨daily 2026-09-26⟩
+
+## 2026-09-16 — A European cloud watchdog says Broadcom's conduct toward VMware cloud partners has worsened and accuses it of obstructing the Commission's probe
+
+- **The European Cloud Competition Observatory, set up by the cloud trade group CISPE, said in its annual report on 2026-09-16 that Broadcom's conduct toward European VMware cloud providers had "deteriorated markedly" over the past year.** It attributes this to Broadcom closing its Advantage Partner Program for VMware cloud service providers in Europe in favour of a more selective scheme, calls it a "serious and continuing attempt to restructure the market in its favour," and accuses Broadcom of obstructing the European Commission's investigation into its VMware licensing. Broadcom's response was not in the coverage read. ([The Stack](https://www.thestack.technology/euro-cloud-watchdog-broadcom-criticism-vmware/)) ⟨daily 2026-09-26⟩
+
+## 2026-09-11 — EU competition officials escalate scrutiny of Broadcom's VMware licensing
+
+- **European Commission competition officials have escalated their scrutiny of Broadcom's VMware licensing changes, questioning European cloud providers on how replaceable VMware is and on any certification terms they consider unfair, Bloomberg reported on 2026-09-11.** The questions went out in July; the Commission could still open a formal investigation or seek interim measures. It is a new regulatory front on Broadcom's VMware licensing business, alongside the Tesco litigation. ([SDxCentral](https://www.sdxcentral.com/news/broadcom-faces-escalating-eu-scrutiny-over-vmware-licensing-changes-report/), [Tech Policy Law](https://www.techpolicylaw.org/updates/broadcom-s-vmware-licensing-changes-draw-deeper-eu-antitrust-scrutiny)) ⟨daily 2026-09-26⟩
+
 ## 2026-09-08 — Amazon buys a second custom-silicon path, not from Broadcom
 
 - **Amazon and Qualcomm announced a multi-generational collaboration on custom AI data-centre silicon, and Qualcomm's stock rose about 10%.** Qualcomm issued Amazon a warrant for up to 25 million of its own shares as part of the deal. ⚠️ The "$4 billion" figure in most headlines is the value of that warrant, not cash consideration and not a disclosed contract size. The substance for this thread: Amazon already designs Trainium in-house, and this deal is Amazon buying a *second* custom-silicon path through Qualcomm rather than deepening the first — a customer-base data point for the ASIC-toll model that sits outside Broadcom's own five/six-customer roster this thread otherwise tracks.

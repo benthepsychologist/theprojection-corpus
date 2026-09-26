@@ -13,6 +13,10 @@ on track to lose ~$14B in 2026. Loss/revenue trajectory, unwinding or
 write-downs, GPU-demand softening, credit/equity-market reaction. A
 correction here hits everything in radar Q1/Q2.
 
+## 2026-09-25 — CleanSpark closes its $2.276 billion data-center notes at a 7.875% coupon
+
+- **CleanSpark's finance subsidiary closed its $2.276 billion offering of 7.875% senior secured notes due 2031 on Friday, the debt behind its Sandersville, Georgia data center.** The notes were priced on September 18 at 98.5% of principal; CleanSpark's release says the proceeds fund the remaining build-out cost, reimburse earlier equity contributions and fund debt-service reserves, with CleanSpark giving a completion guarantee. ([CleanSpark](https://www.prnewswire.com/news-releases/cleanspark-inc-announces-closing-of-2-276-billion-of-senior-secured-notes-302890605.html), [CleanSpark pricing release](https://www.prnewswire.com/news-releases/cleanspark-inc-announces-pricing-of-2-276-billion-of-senior-secured-notes-302883634.html)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-23 — Baseten and Modal Labs are in talks at $26bn and $15bn valuations
 
 - **Inference-cloud startups Baseten and Modal Labs are both in talks to raise at sharply higher valuations, Baseten at $26bn and Modal at $15bn, Bloomberg and Axios reported Wednesday.** Modal raised $355m at a $4.65bn valuation four months ago, so $15bn would nearly triple it; both are talks, not closed rounds. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/startups-modal-baseten-in-funding-talks-to-help-businesses-run-ai), [Axios Pro](https://www.axios.com/pro/all-deals/2026/09/22/baseten-talks-26-billion-valuation), [Tech Funding News on Modal](https://techfundingnews.com/modal-labs-funding-talks-15b-valuation-ai-inference/)) ⟨daily 2026-09-23⟩

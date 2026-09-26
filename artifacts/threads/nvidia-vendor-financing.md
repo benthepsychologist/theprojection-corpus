@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-09-25 — SB Energy holds back its IPO marketing to answer SEC questions
+
+- **SoftBank-backed SB Energy postponed the formal marketing of its IPO this week while it answers additional SEC questions, and is seeking a valuation of about $60 billion, Reuters reported, citing people familiar.** Investors are also concerned about the valuation and about the company's reliance on OpenAI as its main customer; the figure compares with the roughly $50 billion valuation reported by the New York Times on 09-21, and Reuters notes Nvidia's guarantee of up to $105 billion for OpenAI's lease of SB Energy's Ohio campus. ([Reuters](https://www.reuters.com/legal/transactional/data-center-ipo-hopefuls-brave-tougher-market-investor-scrutiny-grows-2026-09-25/)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-23 — Credit-default-swap trading in Nvidia's debt jumps tenfold after June's $25bn bond sale
 
 - **Credit default swaps tied to Nvidia are now among the most traded in the US market as investors hedge its debt: protection on $6.9 billion of debt changed hands in the past six months, against $640 million in the six months before.** The figures come from S&P Dow Jones Indices' Nicholas Godec, citing DTCC data, and follow Nvidia's $25 billion bond sale in June. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/nvidia-among-top-traded-us-credit-swaps-as-hedging-demand-soars)) ⟨daily 2026-09-23⟩

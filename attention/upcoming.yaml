@@ -1330,7 +1330,15 @@ expectations:
     what_confirms: "the CMC occurring and any scheduling/consolidation orders out of it — the coordinated docket is where a liability standard would first take shape"
     logged: 2026-08-07
     logged_by: curate-add   # per-question research wave (mh-q06 memo)
-    status: pending
+    status: hit
+    resolved: 2026-09-26
+    evidence: |
+      HIT (event 2026-09-23; secondary sourcing, flipped on the conference itself and not on its dates): the Daily Journal's 09-23
+      headline and standfirst say the coordinated-case management conference took place and set pleading and discovery deadlines (article
+      body firewalled). Lawsuit Informer's tracker, a plaintiff-side lead-generation site updated 09-25, reports Case Management Order No. 2
+      entered 09-24: discovery opened, proposals for a protective order and a data-production plan due 10-15, OpenAI's answers due 10-30,
+      next conference 11-13. Those CMO-2 dates are tracker-only; CourtListener does not index the JCCP and the San Francisco Superior Court
+      portal is gated, so no court page was read.
     # 2026-09-23 ⟨daily⟩: still pending, and the date itself is soft. The 09-23 conference date rests on a plaintiff's
     # blog dated 08-25; the court portal is interactive and no report, minute order or continuance surfaced. If nothing
     # turns up within three days treat as unverifiable rather than passed-silent.
@@ -1489,6 +1497,8 @@ expectations:
     # 2026-09-24 ⟨daily⟩: 3pm ET read: another negative check (no signed first deal under the $500B platform found). Runs to 09-30; it goes passed-silent only if that
     # date passes empty.
     # 2026-09-25 ⟨daily⟩: eleventh negative check (agent L): no named deal from any of the six MOU partners. Runs to 09-30.
+    # 2026-09-26 ⟨daily⟩: 13th negative check (agents L and H): no signed deal under the platform; EDGAR shows no Nvidia filing since 09-24.
+    # The window runs to 09-30.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -3136,8 +3146,9 @@ expectations:
       France's government presents its draft 2027 Finance Bill by 09-30,
       with 10-year OAT yields near 2008-crisis highs and the OAT-Bund spread
       around 85bp — FT Unhedged's 09-02 lead ("France's debt crisis-in-waiting")
-    due: 2026-09-30
+    due: 2026-10-01
     due_precision: day
+    slips: [2026-09-30]
     thread: treasury-long-end-intervention
     entities: []
     source: https://www.cnbc.com/2026/08/31/france-debt-bond-yields-budget.html
@@ -3152,7 +3163,9 @@ expectations:
     logged: 2026-09-03
     logged_by: critic-add
     status: pending
-
+    # 2026-09-26 ⟨daily⟩: SLIPPED to 10-01. Bank of France Governor Moulin said Friday the 2027 budget bill goes to lawmakers "next
+    # Thursday" (Reuters via WIFC, https://wtvbam.com/2026/09/25/france-cant-count-on-ecb-to-fix-debt-woes-central-bank-chief-says/);
+    # the Council of Ministers is expected 10-01. 10-year OAT about 4.7%, highest since 2008.
   - id: treasury-tripled-buyback-program-end-1104
     claim: >
       Treasury's tripled long-bond buyback (up to $6bn/operation, 10-20yr
@@ -3183,8 +3196,9 @@ expectations:
       14, "under advisement" since 08-04), a minute entry, or a further
       reset. As of 2026-09-04 the docket ends at the 08-04 minute entry that
       reset the hearing from 08-05 to 09-02, with nothing after it.
-    due: 2026-09-11
-    due_precision: week
+    due: 2026-10-20
+    due_precision: day
+    slips: [2026-09-11]
     thread: nippon-life-openai-suit
     entities: []
     source: https://www.courtlistener.com/docket/72365583/nippon-life-insurance-company-of-america-v-openai-foundation/
@@ -3198,7 +3212,7 @@ expectations:
       case by doing the reverse.
     logged: 2026-09-04
     logged_by: curate-add
-    status: passed-silent
+    status: pending
     check_note: >
       2026-09-11: checked twice this run via python3 urllib against
       CourtListener. Neither check found any entry supporting a 09-11 date.
@@ -3217,7 +3231,10 @@ expectations:
       hearing. Flipped to passed-silent: the due date (09-11, week
       precision) has now passed with no evidence either way, which is the
       loud outcome this entry exists to catch.
-
+    # 2026-09-26 ⟨daily⟩: SLIPPED to 10-20. Docket entry 40 (minute entry, 2026-08-28) struck the 09-02 status hearing and reset it to
+    # 10/20/2026 at 9:45 AM; OpenAI's motion to dismiss is still "under advisement". Every earlier read of this docket (09-04, 09-11,
+    # 09-13) stopped at entry 39 or 26 and missed entry 40, so the 09-02 hearing never occurred and the passed-silent flip was wrong.
+    # Source: CourtListener docket 72365583 (agent R, read 09-26).
   - id: sk-hynix-solidigm-disclosure-1204
     claim: >
       SK hynix discloses a decision on the rumored ~5-10 trillion won
@@ -3603,16 +3620,16 @@ expectations:
       A US-only characterization after the summit does not confirm it.
     logged: 2026-09-21
     logged_by: curate-add
-    status: passed-silent
-    resolved: 2026-09-25
+    status: hit
+    resolved: 2026-09-26
     evidence: |
-      PASSED-SILENT 2026-09-25: the state visit ended Friday morning (tea, National Archives) with no joint
-      statement, and no White House readout by about 10:15am ET. China's Foreign Ministry readout of the
-      09-24 talks (https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202609/t20260925_12031181.html) says the leaders
-      agreed to continue their dialogue on AI and keep it under human control; it never mentions an incident
-      or notification mechanism. Only the US side has described the channel. WIRED's 09-23 report that US
-      officials target a framework by the Bessent-He Lifeng Shenzhen meeting in about two months gives no
-      checkable date, so this is not a slip. A later Chinese document naming the mechanism would be a new entry.
+      HIT (retro-flip inside the three-day grace; event 2026-09-26): China's Foreign Ministry deliverables list, updated 09-26
+      Beijing time, item 7: "establishment of the China-U.S. AI Dialogue" with the next exchange in November 2026, and agreement "to
+      establish a bilateral communication channel for AI incidents"
+      (https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202609/t20260926_12031663.html; Reuters via CNBC,
+      https://www.cnbc.com/2026/09/26/china-us-tariff-cut-ai-dialogue.html). The White House fact sheet dated 09-25 calls the same
+      mechanism a "Super Intelligence (SI) Dialogue" and a channel for "SI incidents", next exchange "by November 2026". Caveat: neither
+      text mentions the national-security-level threshold in the claim, so this confirms the mechanism, not that qualifier.
     # 2026-09-23 ⟨daily⟩: still one-sided. Only the US side (Bessent) has described the mechanism; China's MFA sidestepped twice on 09-22 and the
     # 09-23 briefing carried no AI content. Xinhua says only that the sides 'held dialogues on AI-related issues'.
     # 2026-09-24 ⟨daily⟩: Still pending, partial only. China's Foreign Ministry on 09-24, asked by NYT whether China agreed to a formalized AI
@@ -4124,6 +4141,10 @@ expectations:
     # agreements on "a subset" of nonsensitive goods under the Board of Trade, details Monday; CNBC reports the truce extended by
     # two months, which Greer called "compliance periods". Still US-side only; Beijing's readout names "a new joint arrangement"
     # with no date. Stays pending to 09-28.
+    # 2026-09-26 ⟨daily⟩: Beijing's Saturday deliverables list (MFA item 5) has both leaders "endorse the extension of the outcomes of
+    # economic and trade consultations in Kuala Lumpur", with a $30bn reciprocal tariff reduction and a Board of Trade; it gives no length
+    # or date. The White House fact sheet of 09-25 never mentions the truce. January 10 is still US-side only (Bessent 09-23, Greer 09-25).
+    # Stays pending to Greer's Monday 09-28 detail; a stricter reader could already call this a qualified hit.
   - id: softbank-bond-settlement-0929
     claim: >
       SoftBank's USD and EUR notes settle, if they price on schedule.
@@ -4535,7 +4556,14 @@ expectations:
     what_confirms: "A docket entry of the status report, and whether it says the grants are reinstated; the Ninth Circuit denied the department a stay on 09-03."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-26
+    evidence: |
+      HIT (event 2026-09-25): CourtListener docket 73599929 shows ECF No. 107, "Status Report", filed 2026-09-25 6:23pm PDT
+      (9:23pm ET), inside the order's 9/25 deadline
+      (https://www.courtlistener.com/docket/73599929/107/state-of-washington-v-united-states-department-of-education/). Both Friday reads
+      (10am and 3pm ET) predate it. The document is not in RECAP and no coverage was found, so whether the grants were reinstated is
+      unknown; that half of what_confirms stays open.
     # 2026-09-25 ⟨daily⟩: 10am ET read of the docket (agent L): order #106 of 09-22 is still the newest entry.
     # The report is due by the end of 09-25, so this stays pending for the next run.
     # 2026-09-25 pm ⟨daily⟩: 3pm ET read of the docket (agents L and M): order #106 is still the newest entry, so no
@@ -4566,6 +4594,9 @@ expectations:
       Bills" section (S4998-S5006) carries only unrelated bills. Bills passed by consent that day included S. 3257,
       the John A. Hauser Mental Health in Aviation Act, and S. 3258. The Record's silence confirms the passed-silent
       reading: no request on the AI bill was recorded on 09-24.
+    # 2026-09-26 ⟨daily⟩: the 09-24 Congressional Record (govinfo S4959-S5020) shows no floor request on either bill; Warner and Schatz
+    # appear only in the war-powers roll call, and the Senate adjourned to Mon 09-28. The 09-25 package is not yet posted. Stays
+    # passed-silent, grace to 09-28.
   - id: spacex-lockup-tranche-1009
     claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
     due: 2026-10-09
@@ -4589,7 +4620,14 @@ expectations:
     what_confirms: "Jury selection or opening statements reported on 09-28, or a settlement or continuance. The verdict (reported as two to three weeks out) is the informative outcome and would be a separate entry."
     logged: 2026-09-25
     logged_by: curate-add
-    status: pending
+    status: refuted
+    resolved: 2026-09-26
+    evidence: |
+      REFUTED (event 2026-09-25): Alabama Attorney General Steve Marshall announced a settlement with TikTok and ByteDance on 09-25,
+      three days before the trial (https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/;
+      AP 8:02pm ET; CNBC 09-26): at least $100M in restitution plus fees, tiered payments that could reach about $300M, and teen-safety
+      terms in a consent decree entered without admission of wrongdoing. No jury trial opens 09-28. Follow-on: restitution due within 45
+      days of the decree and fees within 30 (decree section 4.1 as read by the coverage critic).
   - id: trump-johnson-tech-ceos-ai-meeting-0929
     claim: "President Trump and House Speaker Mike Johnson meet technology CEOs on artificial intelligence on 09-29, the same day as OpenAI's DevDay"
     due: 2026-09-29
@@ -4603,9 +4641,10 @@ expectations:
     logged_by: curate-add
     status: pending
   - id: mecca-pact-turkiye-ratification-1001
-    claim: "Turkiye's parliament takes up ratification of the Saudi-Turkiye-Pakistan joint defence agreement on 10-01, after Saudi Arabia asked its partners to explore support under the pact against the Houthis"
-    due: 2026-10-01
-    due_precision: day
+    claim: "Turkiye's parliament takes up ratification of the Saudi-Turkiye-Pakistan joint defence agreement in its October session, after Saudi Arabia asked its partners to explore support under the pact against the Houthis"
+    due: 2026-10-31
+    due_precision: month
+    slips: [2026-10-01]
     thread: yemen-civil-war
     entities: []
     source: https://www.aljazeera.com/news/2026/9/25/pakistan-turkiye-edge-closer-towards-joining-saudi-war-against-houthis
@@ -4614,6 +4653,10 @@ expectations:
     logged: 2026-09-25
     logged_by: curate-add
     status: pending
+    # 2026-09-26 ⟨daily⟩: 10-01 is when Turkiye's parliament returns from recess, not a vote date. Speaker Numan Kurtulmus said Friday
+    # parliament will take the pact up when it reopens in October, and that it could widen to include Iran (Geo TV/Reuters,
+    # https://www.geo.tv/latest/683657-pact-with-saudi-and-pakistan-could-expand-to-muslim-world-iran-says-turkish-speaker).
+    # Due moved to the end of October; a silent 10-01 is a slip, not a miss.
   - id: iran-rezaei-hormuz-deadline-0929
     claim: "Iran's four-to-five-day deadline for the US to meet its Strait of Hormuz conditions, set by Supreme National Security Council secretary Mohsen Rezaei on the evening of 09-24, runs out around 09-29 with either a US answer or an Iranian next step"
     due: 2026-09-29
@@ -4624,5 +4667,105 @@ expectations:
     confidence: reported
     what_confirms: "A US response to the 09-16 proposal, or an Iranian statement or action on the strait tied to the deadline. Foreign Minister Araghchi said on 09-25 Tehran is 'not in a hurry', so a lapse without either is plausible and is itself the reading."
     logged: 2026-09-25
+    logged_by: curate-add
+    status: pending
+    # 2026-09-26 ⟨daily⟩: the Wall Street Journal reported late Friday, citing unnamed US officials, that Trump rejected Iran's seven-day
+    # Hormuz plan and expects renewed bombing after the midterms; CNBC could not confirm and Washington has said nothing on the record.
+    # Pezeshkian said Saturday Iran "no longer trusts talks" but awaits an official US reply, and a senior Iranian official told Reuters there
+    # is no flexibility on the nuclear programme. Stays pending.
+  - id: greer-us-china-goods-deal-details-0928
+    claim: "USTR Jamieson Greer publishes the fuller US details of the US-China partial goods arrangement he said would come Monday, with a product-level list, tariff rates or an effective date"
+    due: 2026-09-28
+    due_precision: day
+    thread: north-american-trade-policy
+    entities: []
+    source: https://www.cnbc.com/2026/09/25/trump-xi-china-trade-greer.html
+    confidence: reported
+    what_confirms: "A USTR or White House document or a Greer statement listing products, rates or a start date, and whether it squares with Beijing's '$30 billion reciprocal tariff reduction' and the White House fact sheet's roughly $30bn of goods each way. The fact sheet already names categories but no rates or dates."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: us-china-ai-dialogue-first-exchange-1130
+    claim: "The first exchange of the US-China AI dialogue (the White House's 'Super Intelligence (SI) Dialogue') takes place by November 2026, with the bilateral AI-incident communication channel set up"
+    due: 2026-11-30
+    due_precision: month
+    thread: china-stack-independence
+    entities: []
+    source: https://www.fmprc.gov.cn/mfa_eng/xw/zyxw/202609/t20260926_12031663.html
+    confidence: confirmed
+    what_confirms: "A meeting date announced or the exchange reported; both governments' 09-25/09-26 texts give November 2026."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: senate-rogue-ai-hearing-0930
+    claim: "The Senate Homeland Security and Governmental Affairs Subcommittee on Disaster Management, District of Columbia and Census (Chair Hawley, ranking member Kim) holds its 'Rogue AI' hearing on Wed 09-30 at 2:30pm ET in Dirksen SD-342"
+    due: 2026-09-30
+    due_precision: day
+    thread: openai-agent-security-incident
+    entities: [openai, anthropic]
+    source: https://www.hsgac.senate.gov/hearings/
+    confidence: confirmed
+    what_confirms: "The hearing held, its witness list (none was posted on 09-26), and whether OpenAI or Anthropic testifies; the committee's own hearings page lists it."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: australia-senate-ai-inquiry-hearing-1001
+    claim: "Australia's Greens-led Senate inquiry into AI and datacentres resumes hearings in Canberra on 10-01, having invited OpenAI's Sam Altman and Anthropic's Dario Amodei to appear"
+    due: 2026-10-01
+    due_precision: day
+    thread: openai-agent-security-incident
+    entities: [openai, anthropic]
+    source: https://www.theguardian.com/australia-news/2026/sep/27/sam-altman-openai-dario-amodei-anthropic-senate-inquiry-medicare-hack-rogue-ai-agent-leak
+    confidence: reported
+    what_confirms: "Hearings held 10-01 and whether either chief executive appears; the request is voluntary."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: israel-supreme-court-arab-lists-ruling-1003
+    claim: "Israel's Supreme Court rules on the Central Elections Committee's 09-23 disqualification of the Joint List and Ra'am, and of candidates Ofer Cassif and Sami Abu Shehadeh, ahead of the 10-27 election; review is due 'next week'"
+    due: 2026-10-03
+    due_precision: week
+    thread: gaza-war
+    entities: []
+    source: https://www.aljazeera.com/news/2026/9/26/israel-bans-arab-parties-from-election-who-they-are-why-it-matters
+    confidence: reported
+    what_confirms: "A Supreme Court ruling upholding or overturning the committee's 18-5 vote."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: tiktok-alabama-restitution-payment-1109
+    claim: "TikTok pays Alabama the $100 million restitution within 45 days of the settlement decree (fees and costs within 30 days, about 10-25)"
+    due: 2026-11-09
+    due_precision: week
+    thread: social-media-causality-fight
+    entities: []
+    source: https://www.alabamaag.gov/attorney-general-marshall-announces-historic-multi-million-dollar-settlement-with-tiktok/
+    confidence: reported
+    what_confirms: "The Alabama AG or a court filing confirming payment; the decree's effective date sets the clock, and tiered contingent payments follow as other states settle (10, 20, 30 and 40 states, ten-year payouts)."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: micron-taiwan-strike-vote-1015
+    claim: "Micron's Taoyuan union in Taiwan holds a strike vote in early October after mediation failed on 09-21; it wants 15% of operating profit shared"
+    due: 2026-10-15
+    due_precision: month
+    thread: ai-memory-shortage
+    entities: []
+    source: https://www.taiwannews.com.tw/en/news/6444345
+    confidence: reported
+    what_confirms: "A strike vote reported, its result, and any effect on Micron's Taiwan output."
+    logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: uk-budget-1028
+    claim: "The UK government presents its Budget on 10-28, with the Bank of England's Bailey saying high energy prices make it harder to hold rates"
+    due: 2026-10-28
+    due_precision: day
+    thread: cross-border-rates
+    entities: []
+    source: https://wifc.com/2026/09/25/boes-bailey-says-high-energy-prices-make-it-harder-to-leave-rates-on-hold/
+    confidence: reported
+    what_confirms: "The Budget delivered on 10-28 and the gilt market's reaction."
+    logged: 2026-09-26
     logged_by: curate-add
     status: pending

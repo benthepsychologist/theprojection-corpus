@@ -13,6 +13,10 @@ triage layer, regulatory reception, and whether the AI-first model
 imports the payer-denial pattern canada-ai-vs-care and
 payer-ai-claim-denial track from the US side.
 
+## 2026-09-02 — Alan buys a Senegalese digital-health company and names Canada among its four operating markets
+
+- **French health insurer Alan finalised its acquisition of Dakar-based Tanel on 2026-09-02, its first move into Africa, and described itself as serving more than 1.2 million members across France, Spain, Belgium and Canada.** Tanel operates in Senegal and Côte d'Ivoire; Alan's own release puts its 2026 annual recurring revenue above EUR 800 million and gives a EUR 5.5 billion valuation, a figure that does not match the roughly $8.9 billion valuation reported at July's $780 million raise, and does not say what its Canadian operation currently consists of. ([Alan](https://alan.com/en/blog/discover-alan/a/alan-acquisition-tanel-west-africa), [TechCabal](https://techcabal.com/2026/09/02/alan-tanel/)) ⟨daily 2026-09-26⟩
+
 ## 2026-08-12 (approx.) — The triage layer this thread was watching for: "Mo"
 
 - **Follow-up reporting (The Logic) details Alan's actual AI-triage product for Canada: an assistant called Mo, built on ~20 agents, with a safety layer that escalates any conversation flagged as risky to a human medical team within 15 minutes.** Alan is now recruiting doctors in Canada for a virtual-care service and targeting an AI-helper launch there around 2027, part of a plan to enter four new countries over the next 18 months — directly on this thread's declared watch for "any mh triage layer." Exact byline date unconfirmed (site blocked direct fetch); content postdates the 07-28/07-30 funding coverage. ([The Logic](https://thelogic.co/news/alan-insurance-expansion-ai/)) ⟨daily 2026-08-20⟩

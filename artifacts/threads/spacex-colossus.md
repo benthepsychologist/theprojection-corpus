@@ -14,6 +14,10 @@ crawled: 2026-07-24
 Anthropic. Live scale, the power/permit constraints, and whether owning the
 mines yields a frontier Grok.
 
+## 2026-09-25 — Justice Department asks to pause the NAACP's Clean Air Act suit over SpaceXAI's Southaven turbines
+
+- **The Justice Department asked a federal judge Friday to pause the NAACP's Clean Air Act suit against SpaceXAI over its unpermitted gas turbines in Southaven, Mississippi, while its appeal of the judge's refusal to let it intervene is decided** The department moved in June to intervene for the EPA and have the suit dismissed, arguing SpaceXAI's importance to national security; the judge did not allow it, and the department appealed to the Fifth Circuit on September 18. ([Action News 5](https://www.actionnews5.com/2026/09/25/doj-asks-judge-pause-spacexai-suit-appeal-be-determined/)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-18 — The Justice Department appeals to the Fifth Circuit to join the NAACP's Clean Air Act suit over xAI's Southaven turbines
 
 - **The Justice Department filed a notice of appeal to the Fifth Circuit on 09-18 in an effort to intervene in the NAACP's Clean Air Act case against xAI's unpermitted gas turbines at Southaven, Mississippi, arguing the district court's failure to rule in time on its request to join amounted to an "effective denial."** The suit, brought by the NAACP through Earthjustice and the Southern Environmental Law Center, targets the power plant that runs Colossus 2 across the state line in Memphis; DOJ first signaled in May that it might step in, then asked the court in June to dismiss the case, citing what it called the government's "priorities with respect to promotion of artificial intelligence." Taking the intervention fight to the appeals court moves the federal shield already on this thread (the July "national security" framing) from a district-court motion into a higher-court test. ([Bloomberg Law](https://news.bloomberglaw.com/environment-and-energy/doj-files-appeal-in-effort-to-join-naacp-xai-data-center-suit), [CNBC](https://www.cnbc.com/2026/06/16/usdepartment-of-justice-calls-for-dismissal-of-naacp-xai-lawsuit-.html)) ⟨daily 2026-09-23⟩

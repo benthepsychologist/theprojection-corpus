@@ -1,8 +1,10 @@
 # Interpretations for 2026-09-25 global-capital (single pass, ~10am ET
 # Friday), keyed by slugify(bold lead[:50]). Read against
 # attention/capital-context.yaml (asof 2026-08-25, rate_regime reading) and
-# this map's treasury-long-end-intervention thread. Friday levels are
-# intraday reads unless a primary release (Census, UMich) is cited directly.
+# this map's treasury-long-end-intervention thread. Levels cited are Friday
+# closes/settles where a close exists (Treasury par curve, oil settles, CNBC's
+# and Reuters' hike odds); FX levels are Reuters' New York afternoon reads
+# (no closing print found); Census and UMich are primary releases.
 
 us-durable-goods-orders-were-essentially-flat-in-a:
   mechanism: >
@@ -10,13 +12,20 @@ us-durable-goods-orders-were-essentially-flat-in-a:
     margin, is one more data point the Fed's hawkish bloc can cite for
     "the economy is not cooling enough to justify a pause," directly
     feeding the October hike-odds debate this map has tracked since
-    Wednesday's PMI; a soft print would have cut the other way.
+    Wednesday's PMI; a soft print would have cut the other way. The
+    underlying detail leans the same hawkish way: core capital-goods orders
+    (non-defense excluding aircraft) jumped 1.6% against a 0.5% forecast,
+    with July revised up to +0.6% from unchanged, which Reuters read as AI
+    build-out equipment spending still accelerating, so the "flat" headline
+    is dragged down by aircraft (Boeing) rather than by weak business
+    investment.
   confidence: plausible
   scenarios:
     - direction: >
-        Hike odds hold near or above the 66-69% Friday-morning range into
-        next week, and the 10-year stays close to its Thursday closing
-        level rather than easing back toward 5%.
+        Hike odds hold near their Friday-close range (CNBC 64%, Reuters
+        about 66%, Kitco 68.6%, down from Thursday's 77.5% peak even after
+        this print) into next week, and the 10-year stays close to its
+        Thursday closing level rather than easing back toward 5%.
       why: >
         The print undercuts the "economy is cooling" read that a soft
         UMich sentiment number alone would otherwise support, leaving the
@@ -34,7 +43,9 @@ us-durable-goods-orders-were-essentially-flat-in-a:
       why: >
         Consumer sentiment and inflation expectations feed the Fed's
         demand-side read more directly than a single manufacturing-orders
-        print that was flat, not strong.
+        print whose headline was flat, even though core capital-goods orders
+        were strong: those reflect AI-linked business equipment spending
+        more than household demand.
       precedent: >
         08-15: a weak retail-sales print and a cratering consumer-
         sentiment reading both cut toward "cooling" the same week, even
@@ -43,8 +54,11 @@ us-durable-goods-orders-were-essentially-flat-in-a:
     capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike
     and the 3.75%-4.00% range; used for the reaction-function logic only.
     Durable-goods and UMich figures are both primary-source (Census Bureau,
-    University of Michigan); CME FedWatch odds are CNBC's Friday-morning
-    read, an intraday figure.
+    University of Michigan); CME FedWatch odds are the Friday-close reads
+    (CNBC 64%, Reuters about 66%, Kitco 68.6%). The core capital-goods
+    figures are Reuters' reading of the same Census release; UMich's 47.8
+    is its preliminary September figure, so the 48.1 final is a small
+    upward revision.
 
 japan-s-finance-minister-satsuki-katayama-said-fri:
   mechanism: >
@@ -52,10 +66,12 @@ japan-s-finance-minister-satsuki-katayama-said-fri:
     or the "desirability of a strong yen," paired with the same finance
     minister explicitly citing standing coordinated-intervention principles,
     is this map's own documented precursor to actual Bank of Japan/Ministry
-    of Finance yen-buying intervention — not merely commentary. The yen
-    sitting back near the 158 level that triggered rate checks and
-    intervention talk earlier this same week raises the odds this verbal
-    step is followed by an operational one within days, not weeks.
+    of Finance yen-buying intervention — not merely commentary. The yen,
+    near 158 early Friday (the level that triggered rate checks and
+    intervention talk earlier this same week) and about 157.1 after a 1%
+    rally in New York afternoon trading (Reuters; no closing print found),
+    is still close enough to that level to raise the odds this verbal step
+    is followed by an operational one within days, not weeks.
   confidence: plausible
   scenarios:
     - direction: >
@@ -79,7 +95,7 @@ japan-s-finance-minister-satsuki-katayama-said-fri:
     - direction: >
         The exchange stays purely verbal — a shared talking point ahead of
         further US-Japan trade and currency coordination — and the yen
-        drifts sideways near 158 without an operational intervention,
+        drifts sideways near 157-158 without an operational intervention,
         consistent with how the "principles remain in place" language was
         used earlier this week without a fresh intervention following it
         immediately.
@@ -98,3 +114,103 @@ japan-s-finance-minister-satsuki-katayama-said-fri:
     reproduces his social-media post verbatim); no capital-context.yaml
     reading covers bilateral FX-intervention mechanics directly, so this
     entry relies on the thread's own prior-week record instead.
+
+# Added in the Saturday 09-26 finalize pass (agent G): the WSJ report landed
+# after Friday's settle, so the market has not priced it yet.
+the-wall-street-journal-reported-late-friday-that:
+  mechanism: >
+    Friday's oil settle (Brent $104.32, WTI $92.41, each down about 2%)
+    removed some of the conflict premium on hopes that Iran's seven-day plan
+    would lead to a Hormuz reopening. A report that the US president has
+    rejected that plan, and expects renewed bombing after the midterms,
+    arrived after the settle. The first tradable reaction comes at Sunday
+    evening's futures open, so the premium removed on diplomacy hopes is
+    exposed to being put back if Washington confirms the rejection, while
+    Iran's public position (its president says the plan was coordinated with the
+    supreme leader and a six-member team can decide) keeps some diplomatic door visibly open.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Brent gaps back toward or above the $105-107 range at the Sunday
+        evening open if the White House or Trump confirms the rejection, and
+        the week's Hormuz-optimism discount is largely reversed.
+      why: >
+        The Friday selloff was explicitly a diplomacy trade; an on-record US
+        "no" removes its premise, and physical supply risks (Houthi attacks
+        on Saudi Arabia, tight diesel) were never resolved.
+      precedent: >
+        09-24: Brent topped $105 and settled at $106.60 on stalled talks and
+        diesel-ban uncertainty, the day before Friday's diplomacy-driven
+        drop (`red-sea-oil-shock`).
+    - direction: >
+        Oil barely moves on the report because it rests on unnamed officials,
+        Trump has not said it on the record, and Washington's public line
+        (mediated talks "positive and constructive") has not changed;
+        prices then trade off Monday's US-China details and any on-record
+        US answer.
+      why: >
+        A report resting on unnamed officials is weaker evidence than an
+        on-record statement, and the Qatari mediation channel is still
+        open on both sides' accounts.
+      precedent: >
+        09-22: Brent fell toward $99 and WTI more than 2% on Iran's first
+        Hormuz-reopening offer, even though Washington had not answered
+        (`red-sea-oil-shock`).
+  context_note: >
+    capital-context.yaml's conflict_risk_premium reading (asof 08-24)
+    predates this week's seven-day plan and describes the earlier
+    maximalist-conditions stage; used for the premium-and-reversal logic
+    only. The rejection itself is a fact about the Wall Street Journal's
+    unnamed sources, not a US on-record statement, and no Sunday-open price
+    exists yet.
+
+# Added in the Saturday 09-26 late-lane triage pass (agent ZG): Hammack's
+# Friday policy-panel remarks, which the earlier passes had ruled a Thursday
+# date trap; the Cleveland Fed's own agenda and two Friday Reuters dispatches
+# place them on Friday 2pm-3pm ET.
+cleveland-fed-president-beth-hammack-said-friday-t:
+  mechanism: >
+    A Fed voter who was an early supporter of hiking says the bond-yield
+    surge is a real-rate move (solid growth, tech-investment demand for
+    capital, repricing for the policy path), not a loss of confidence in the
+    Fed's inflation control, and that policy must stay restrictive. If that
+    reading is shared inside the FOMC, the long-end selloff is not treated as
+    a disorderly-market reason to pause or lean against, so the October
+    decision stays a data call on inflation, which leaves yields, not the
+    Fed, as the variable that has to give.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        October hike odds stay in the mid-60s to 70s percent range and the
+        10-year holds near 5.1-5.2% into next week, because the Fed's
+        hawkish voters are not signalling relief for the long end.
+      why: >
+        Hammack frames higher yields as growth and real rates rather than
+        fear, and says a restrictive stance is needed, so the yield surge
+        gives her no reason to soften and the October debate turns on the
+        PCE and jobs prints.
+      precedent: >
+        2026-09-16: the FOMC hiked 25bp to 3.75%-4.00% on a unanimous 12-0
+        vote, with Hammack, Kashkari and Logan folding their July hike
+        dissents into consensus and the 10-year near 4.97% into the decision
+        (`treasury-long-end-intervention`).
+    - direction: >
+        Long yields keep rising despite a restrictive Fed and Treasury's
+        buybacks, and the selloff itself becomes the story, reviving the
+        "fiscal dominance" question about whether the Fed and Treasury can
+        both stay on their current paths.
+      why: >
+        If the drivers are real rates and heavy supply rather than inflation
+        fears, a hawkish Fed does not by itself pull the long end down, and
+        Friday's own tape (10-year touched 5.2297% after the 10am UMich
+        release, then closed near 5.17%; the 30-year closed higher, at a new
+        closing high near 5.49%) shows the level sits close to its highs.
+      precedent: >
+        2026-09-24: Treasury's buyback accepted $4.08bn of long bonds and the
+        30-year still stood at 5.469% that afternoon, above its morning high
+        (`treasury-long-end-intervention`).
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-25) predates the 09-16 hike;
+    used for the reaction-function logic only. Hammack's remarks are one
+    FOMC voter's view as reported by Reuters (Michael Derby), not committee
+    guidance, and she did not say what she wants on rates.

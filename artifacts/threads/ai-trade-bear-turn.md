@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-09-25 — Equity funds see their biggest inflow since July despite the bond selloff
+
+- **Investors bought a net $44.1 billion of global equity funds in the week to September 25, the most since July 8, snapping a two-week selling streak on AI enthusiasm and lower oil despite a sharp rise in government bond yields, LSEG Lipper data show.** US equity funds took in $37.6 billion, a three-month high, and technology funds $5.29 billion, the most since July 29, while government-bond funds saw $1.47 billion of outflows. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/global-equity-funds-snap-two-111746201.html)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-23 — Financials trade roughly flat Wednesday, a sharp cooldown from Tuesday's Meta-Muse-driven selloff
 
 - **The Financial Select Sector SPDR Fund (XLF) was down only about 0.25% Wednesday afternoon, a sharp cooldown from Tuesday's near-2% S&P 500 Financials Index decline that Bloomberg and Reuters tied to fears Meta's consumer AI agent Muse could erode bank and brokerage customer relationships.** Wednesday's broader equity weakness is dominated by the Treasury-yield story instead (5-year auction, Barr, FedWatch to 70%) rather than a continuation of the AI-disruption trade; no bank or brokerage name is reported making a fresh Muse-linked move Wednesday. ([GuruFocus, citing real-time XLF quote](https://www.gurufocus.com/news/9093461/xlf-looks-19-undervalued-on-gf-value-as-of-september-23-2026)) ⟨daily 2026-09-23⟩

@@ -11,9 +11,14 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-25 — SoftBank falls about 3% in Tokyo on Oracle's Project Jupiter notice
+
+- **SoftBank Group shares fell about 3% in Tokyo on Friday, to roughly 6,154 yen, after Oracle's force-majeure notice on the New Mexico Project Jupiter data-center campus, a Stargate site, days after SoftBank's record $11.1 billion bond sale.** Reuters reported that spreads on AI-linked bonds had widened to about 115 basis points against 78 for the broader market. ([Yahoo Finance/Investing.com](https://finance.yahoo.com/technology/ai/articles/softbank-shares-fall-oracle-data-034800958.html)) ⟨daily 2026-09-25⟩
+
 ## 2026-09-24 — SoftBank will hold about 13% of OpenAI once its final $10bn tranche closes
 
 - **SoftBank's stake in OpenAI will reach about 13% of its equity once the $10 billion third tranche of its $30 billion 2026 commitment closes, due next week, Reuters said in a factbox on the day SoftBank priced its record $11.1bn bond sale.** SoftBank first put $500 million into OpenAI in 2024, about $30bn more in 2025 and committed $30bn in 2026; rising OpenAI valuations had produced $45bn of unrealised gains by the end of June, but OpenAI has delayed its own listing, which holds up SoftBank's ability to realise them. ([Reuters via Global Banking & Finance](https://www.globalbankingandfinance.com/factbox-softbanks-growing-bets-ai-semiconductor-assets/), [SoftBank Group release](https://group.softbank/en/news/press/20260924)) ⟨daily 2026-09-24⟩
+- **SoftBank Group invested $225 million in Utah-based Autonomous Solutions Inc. and formed a joint venture with the company, capitalized by SoftBank, to develop and sell autonomous construction equipment for large infrastructure projects.** The company's own September 24 release says the venture is OEM-agnostic and aimed at roads, airports, railways and waste management, with CEO Mel Torrie saying it will let customers run mixed fleets of haul trucks, dozers, loaders and compactors autonomously; the release does not state the joint venture's size. ([Autonomous Solutions release](https://asirobots.com/asi-and-softbank-group-form-joint-venture-to-advance-autonomous-construction-at-scale/)) ⟨daily 2026-09-24⟩
 
 ## 2026-09-23 — The OpenAI bond's books close at noon New York time, and a $10bn deal would be the largest high-yield sale ever by an Asian issuer
 

@@ -13,6 +13,14 @@ this becomes the umbrella for nuclear-for-AI money. Opened 2026-07-28
 (row 23, ben-steer: "open all four real threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md.
 
+## 2026-09-25 — DOE's science advisory committee delivers its Genesis Mission "frameworks" report
+
+- **Energy Under Secretary for Science Darío Gil released the Office of Science Advisory Committee's report "Genesis Mission Frameworks for AI-Accelerated National Breakthroughs" on 2026-09-25, a deep dive into three of the Mission's 33 national science and technology challenges: AI-driven biology, fusion energy and rare-earth "magnet sovereignty."** Gil's accompanying essay says the platform connects supercomputing, AI, quantum systems and experimental facilities across the 17 National Laboratories; the report proposes an urgent five-year AI mission to build a closed-loop domestic system for discovering and recycling magnet materials that avoid scarce minerals. It is a strategy document; it carries no new funding figure. ([DOE Office of Science via Newswise](https://www.newswise.com/articles/genesis-mission-frameworks-advancing-the-frontiers-of-american-discovery)) ⟨daily 2026-09-25⟩
+
+## 2026-09-16 — DOE opens a $215 million competition for the first fault-tolerant quantum computers
+
+- **The Energy Department launched the Quantum Genesis Q Competition on 2026-09-16, with up to $215 million to demonstrate the first fault-tolerant, scientifically relevant quantum computers of at least 100 logical qubits; applications from private companies are due 2026-10-19.** Phase I pays up to $1.5 million per awardee for early milestones; Phase II is a $100 million incentive pool plus two $50 million bonus pools for 150 and 200 logical qubits, with only $2.5 million in fiscal 2026 dollars and the rest contingent on appropriations. DOE's release ties the competition to the President's quantum executive order and does not mention the Genesis Mission; GovCIO Media describes it as one of the Mission's key components. ([DOE](https://www.energy.gov/science/articles/doe-launches-competition-accelerate-development-worlds-first-fault-tolerant), [GovCIO Media](https://govciomedia.com/doe-opens-applications-for-215m-genesis-mission-competition/)) ⟨daily 2026-09-26⟩
+
 ## 2026-09-01 — The first named, costed Genesis Mission award: $11.5M for a Brookhaven-led grid foundation model ⟨cold rotation⟩
 
 *Logged 2026-09-20 on the cold rotation. The award was announced 09-01 and

@@ -12,6 +12,11 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-09-18 — Amazon agrees to buy two Hong Kong data-centre properties for up to HK$2.4 billion
+
+- **Hong Kong developer Grand Ming Group conditionally agreed on 2026-09-18 to sell two data-centre properties in Fanling to Amazon Data Services Hong Kong for up to HK$2.445 billion (about US$312 million).** The price is a minimum HK$2.179 billion at closing plus up to HK$265.8 million tied to construction milestones; the deal is a "very substantial transaction" for Grand Ming, which is expected to use the proceeds to cut debt and whose shares rose 41% on the news. ([Grand Ming filing via FilingReader](https://filingreader.com/news-wire/hongkong/2026-09-18/grand-ming-agrees-hk245bn-data-centre-disposal-to-amazon), [MarketScreener](https://www.marketscreener.com/news/grand-ming-sells-data-center-properties-to-amazon-for-hk-2-4-billion-shares-soar-41-ce785adbdb8cf526)) ⟨daily 2026-09-26⟩
+- **The Ohio Supreme Court ruled 6-1 on 2026-09-18 that Wilmington residents cannot use a ballot initiative to create a new private right to sue data centres, keeping the measure off the November 3 ballot in the city where Amazon Web Services has proposed a $4 billion, nine-building campus on 471 acres.** The court held that a municipality cannot create a new cause of action through a citizen initiative; opponents say they will try again and have a separate suit over the city's emergency rezoning of the site, which took effect in early September after a federal judge forced the city to redo ordinances under Ohio's open-meetings law. ([WCPO](https://www.wcpo.com/news/local-news/ohio-supreme-court-blocks-wilmington-data-center-ballot-measure-residents-vow-to-try-again), [Engineering News-Record](https://www.enr.com/articles/63684-ohio-supreme-court-blocks-ballot-measure-targeting-4b-aws-data-center)) ⟨daily 2026-09-26⟩
+
 ## 2026-09-16 — Amazon locks in up to $8bn of Generac backup generators through 2033 ⟨cold rotation⟩
 
 *Logged 2026-09-20 on the cold rotation, four days after the filing.*
