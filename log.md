@@ -12446,3 +12446,12 @@ deployed" gap fleet-ops's note asked about. Graph: `07_digest_bullets` (126 new 
   ADHD terms; Eli Lilly, AtaiBeckley, Cybin, Otsuka; Adobe; Cigna/Humana/Elevance from 09-25) are
   map adds, not made; the evening re-sweep and front-page-scan brief fixes are still unadopted
   into `/daily`.
+
+**Addendum (11:25 ET).** The deploy hook worked: build queued 15:15:55Z, and by 15:19Z theprojection.org
+carried "Desert Willow", "Bodleian" and "AtaiBeckley" (checked on the mental-health and AI pages).
+fleet-ops's 09-25 note is closed to `INBOX/done/`. Existing (not today's) process wording still in
+public thread copy, not fixed here: `chip-hyperscaler-rotation.md:45` ("Note for the main session"),
+`apple-gemini-model-deal.md:29` ("re-verified by the main session"), and the 🔄 Map changes sections of
+older digests ("Timeline entries merged by the main session"), which reach the site's map-changes
+payload. A cleanup pass over those is a decision for Ben (they are older-run text, and the map-changes
+sections are a house pattern).
