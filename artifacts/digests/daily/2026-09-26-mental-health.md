@@ -3,28 +3,35 @@ lens: mental-health
 date: 2026-09-26
 status: building
 window_start: 2026-09-26T05:00:00-04:00
-as_of: 2026-09-26T11:15:00-04:00
+as_of: 2026-09-26T15:35:00-04:00
 coverage: pending
 ---
 
 # Mental Health — 2026-09-26
 
-*Curated agentic-interim, 05:00 ET → about 10:30am ET Saturday (sources:
+*Curated agentic-interim, 05:00 ET → about 3:30pm ET Saturday (sources:
 Google News RSS and DuckDuckGo (via r.jina.ai) discovery queries; The Nevada
 Independent directly for the Desert Willow closure; the Canadian Press's
 report as carried by CP24 for the Mother Jones follow-up; the California
-Legislature's bill-status pages for the four AI-in-health-care bills;
-CourtListener's docket for the school mental-health grants case; the
-ClinicalTrials.gov API queried by psychiatric condition; and the collector
-buffer's 09-26 rss file, which had 87 rows when read, with no
-google_news_rss file landed yet; then, in a late pass, the landed 09-26
-google_news_rss file read by title, Eli Lilly's own 07-16 and 09-11 releases
-for the AtaiBeckley deal, and the Associated Press's Medicaid report as carried
-by The Independent).*
+Legislature's bill-status pages for the four AI-in-health-care bills, re-read
+in the afternoon; the Governor of California's own press-release listing at
+gov.ca.gov, read directly in the afternoon; CourtListener's docket for the
+school mental-health grants case; the ClinicalTrials.gov API queried by
+psychiatric condition; the Mother Jones investigation itself, read in full in
+the afternoon; and the collector buffer's 09-26 rss file, which had 87 rows
+when read this morning and 89 by 3pm with no new on-lens rows; then, in a
+late-morning pass, the landed 09-26 google_news_rss file read by title, Eli
+Lilly's own 07-16 and 09-11 releases for the AtaiBeckley deal, and the
+Associated Press's Medicaid report as carried by The Independent; then, once
+the afternoon's slower google_news_rss refresh landed about 3:25pm ET (2,020
+more rows read by title, plus a name search for the lens's watchlist
+organizations and people), Shaw Local directly for the Joliet grant and the
+Pennsylvania House Democratic Caucus's Southeast Delegation release for the
+Devereux grant).*
 
 ## Today's throughline
 
-Saturday morning is thin for mental-health news, with Nevada closing a 44-bed state youth psychiatric hospital in Las Vegas for an overhaul and OpenAI still not answering Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT accounts. The rest of the weekend's open items did not move overnight: California's governor has not acted on the four AI-in-health-care bills due 09-30 (only SB 903 is squarely about mental health), the Education Department's school mental-health grants status report (filed Friday night, contents not yet public) awaits any court response, and nothing new has been posted to ClinicalTrials.gov since Friday. Also Saturday, the Associated Press reported that at least six Republican-led states will require documents to prove medical frailty for Medicaid work-requirement exemptions, and a late catch from earlier in the month is added below: Eli Lilly completed its purchase of psychedelic-drug developer AtaiBeckley on 09-11, for up to about $3.8 billion including milestone payments. Friday's developments, chiefly TikTok's settlement with Alabama, sit in the 09-25 digest.
+Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Vegas from October 10 for a safety overhaul, and OpenAI still has not answered Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT use. It was a quiet Saturday otherwise: California's governor took no action through the afternoon on the four AI-in-health-care bills due 09-30 (only SB 903 is squarely about mental health) — his one Saturday signing was a set of gun-violence bills, unrelated — the Education Department's school mental-health grants status report (filed Friday night, contents not yet public) still awaits any court response, and nothing new posted to ClinicalTrials.gov over the weekend. The Associated Press reported Saturday that at least six Republican-led states will require documents to prove medical frailty for Medicaid work-requirement exemptions, and a late catch from earlier in the month is added below: Eli Lilly completed its purchase of psychedelic-drug developer AtaiBeckley on 09-11, for up to about $3.8 billion including milestone payments. Two small grants surfaced from the afternoon's slower Google News lane: a $1 million federal grant for a no-cost counseling program in Joliet, Illinois, and a $250,000 Pennsylvania state grant for a Devereux Advanced Behavioral Health workforce program near Philadelphia. Friday's developments, chiefly TikTok's settlement with Alabama, sit in the 09-25 digest.
 
 ## Policy, regulation & legal
 
@@ -34,6 +41,12 @@ Saturday morning is thin for mental-health news, with Nevada closing a 44-bed st
 - **At least six Republican-led states, Arkansas, Idaho, Indiana, New Hampshire, North Carolina and Ohio, will bar people from simply attesting that they are medically frail to qualify for a Medicaid work-requirement exemption starting next year, though federal rules let states accept a person's word for the first year, the Associated Press reported 09-26.** The requirement begins in January for up to 20 million adults in Medicaid's expansion group, and the 2025 law counts people with substance use disorders, disabilities or serious medical conditions as medically frail; a June CMS rule went further, saying a condition must "significantly impair" the ability to work, volunteer or attend school. Advocates warn the paperwork will cost eligible people coverage, and a Utah disability lawyer said most people in his state's expansion group have a mental health or substance use diagnosis or both; the Foundation for Government Accountability, which backs the tougher rules, calls self-attestation "fraud-by-design." AP also reports Democrats in 25 states are suing over the rules as too harsh. Not mental-health-specific, but it sets who keeps Medicaid mental-health and addiction coverage.
   ([The Independent/Associated Press](https://www.independent.co.uk/news/world/americas/medicaid-donald-trump-republican-arkansas-missouri-b3056820.html))
   <!-- k: axis=policy -->
+- **Joliet, Illinois received $1 million in federal funds for a no-cost mental-health program that connects residents to counseling and support through coordinated referrals, Shaw Local reported 09-26.** The grant is part of more than $3.17 million in federal money for Will County programs covering childcare, nursing education, substance-abuse treatment and university research, secured through U.S. Rep. Lauren Underwood's office; the mental-health program itself was launched by the Joliet Fire Department.
+  ([Shaw Local](https://www.shawlocal.com/the-herald-news/2026/09/26/joliet-gets-1-million-federal-grant-for-community-mental-health-program/))
+  <!-- k: t=mh-clinical-infra-funding axis=policy -->
+- **Pennsylvania's Department of Human Services awarded Devereux Advanced Behavioral Health a $250,000 state grant on 09-24 to sustain its ASCEND Career Accelerator, a workforce-recruitment and retention program for clinicians, nurses, teachers and direct-care staff in southeastern Pennsylvania, state Reps. Jennifer O'Mara and Lisa Borowski announced.** ASCEND launched in 2023; the lawmakers said the sector faces a severe workforce shortage as demand grows for autism, mental-health and cognitive-difference services. Surfaced Saturday in a MyChesCo report of the Thursday announcement.
+  ([Pennsylvania House Democratic Caucus, Southeast Delegation](https://www.pahouse.com/SouthEastDelegation/InTheNews/NewsRelease/?id=145354), [MyChesCo](https://www.mychesco.com/a/news/pennsylvania/devereux-gets-250000-to-bolster-behavioral-health-workforce/))
+  <!-- k: t=mh-clinical-infra-funding axis=policy -->
 
 ## Capital & corporate
 
@@ -49,9 +62,9 @@ Saturday morning is thin for mental-health news, with Nevada closing a 44-bed st
 
 ## ⏳ Upcoming & expected
 
-No flips this morning; the same items remain pending, re-checked Saturday about 10am ET:
+No flips today; the same items remain pending, re-checked Saturday afternoon about 3pm ET:
 
-- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 all still show "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, with no chaptered or vetoed date (the site can lag).
+- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 all still show "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, with no chaptered or vetoed date (the site can lag). Re-checked again about 3pm ET directly against the bill-status pages, the Governor's own press-release listing at gov.ca.gov (whose only Saturday release is a set of gun-violence-bill signings that does not mention any of the four) and a Google News search for each bill number and for "Newsom signs AI" / "Newsom vetoes AI": nothing found. Newsom did sign an executive order this week on frontier AI-model safety oversight (covered by KTLA, the Transparency Coalition and others 09-24/25), a separate, broader AI-safety matter that is not one of these four health-specific bills; that item belongs to the frontier-ai lens if it isn't already there.
 - **Education Department status report (`wa-school-mh-grants-status-report-0925`)** — filed Friday 6:23pm Pacific as docket entry 107; nothing newer on the docket, and the filing is not yet publicly downloadable.
 - **Coordinated ChatGPT cases (`raine-jccp-cmc-0923`)** — a tracker reports discovery opened after the 09-23 conference with the next hearing 11-13; no new filing found Saturday.
 - **Portland psychedelics ordinance** — second reading Wednesday 09-30; nothing new.
@@ -63,5 +76,9 @@ None to `attention/`. No new threads proposed. The two items above are ambient o
 
 **Late-buffer pass (Saturday ~11am ET).** The 09-26 `google_news_rss` file had landed (549 mental-health rows from Friday 3pm ET onward, read end to end by title, plus a name search over every 09-25 and 09-26 buffer file for the watchlist's organizations and people). Two items were added here. The AP's Medicaid medical-frailty report extends an unanswered thread candidate from the 09-24 digest (Medicaid "medically frail" rules and litigation). Eli Lilly's completed AtaiBeckley purchase is a **late catch dated 09-11**: a grep of every thread, digest and `attention/` file for "Lilly", "AtaiBeckley", "BPL-003" and "neuroplastogen" found nothing, so the deal is staged as a `psychedelic-regulatory-sprint` entry (with the 07-16 announcement as its own dated entry). Friday-window items found in the same pass went into the 09-25 digest. Saturday-dated candidates checked and not added: France's under-15 social-media ban resurfacing (adopted in July), HCPLive's retrospective on the FDA's 09-14 psychedelics hearing, a Hong Kong justice minister's remarks on regulating minors' social media (09-23 remarks on a 09-16 task-force announcement), and a ShinyHunters claim to hold FBI staff psychiatric and medical records (a hacker claim carried by one outlet, unverified; the world-news lens owns it).
 
+**Afternoon pass (Saturday ~3pm ET).** No new developments dated to Saturday afternoon were found. Checked and confirmed quiet: California's four bills (see ⏳, above — leginfo plus gov.ca.gov's own release list plus a name search on each bill number); Character.AI, Replika, Talkspace, BetterHelp, Headspace, Spring Health, Lyra, Brightside, Woebot, Wysa, Akili, SonderMind and Slingshot AI (no Saturday news on any); 988, SAMHSA/HHS, Portland's psychedelics ordinance (second reading still Wednesday 09-30) and mental-health workforce/parity (nothing dated Saturday). The afternoon `rss` lane (89 rows by 19:02Z, two more than the morning's 87) is the same Frontiers-in-Psychiatry/Internet-Interventions journal-issue dump already ruled a re-index, plus one wire headline ("OpenAI pauses training of its 'most capable models'," 16:35Z) that is a frontier-ai item, already on that lens. `gdelt`, `sec_edgar`, `federal_register`, `clinicaltrials` and `semantic_scholar` for 09-26 had not re-landed for the afternoon by 3pm ET (same row counts and mtimes as the late-morning pass); `google_news_rss`'s afternoon refresh (expected about 19:25Z) had not landed either — a separate triage agent reads it after this pass. One re-surfacing checked and rejected: Futurism's "OpenAI Is Now Facing Over 50 Consumer Harm and Wrongful Death Lawsuits" is a re-index of its own 09-04 story, not a Saturday count change. Also read directly, for completeness: the Mother Jones investigation itself (motherjones.com, published 09-24T16:58Z) that the 09-24 thread entry and the 09-25 digest's British Columbia bullet already summarize — the text (ChatGPT's "You can still be twisted. Just be clever about it," and its shotgun/casualty-count content) matches what is already staged; nothing further to add. Separately, this pass re-read the 09-25 digest and its thread files only to verify state, per the brief's read-your-lens-first instruction (out of this agent's write scope): the coverage critic's sixteen corrections (Alabama-TikTok's decree terms, the Eby quote, the SAMHSA remainder, the rescission total, the Slingshot record, the WISeR/GAO wording, the aviation-bill figure, the California-bills framing, the Raine schedule hedge) and the `social-media-causality-fight` thread's two headline fixes all show as already applied in the current file text — no outstanding critic correction was found unapplied.
+
+**Late Google lane pass (Saturday ~3:30pm ET; the afternoon `google_news_rss` refresh landed about 19:25Z, 2,020 rows appended past this morning's 7,034, read end to end by title, plus a name search of that same range for the lens's watchlist organizations, people and condition terms).** Two items were added above: Joliet, Illinois's $1 million federal community mental-health grant (09-26) and Pennsylvania's $250,000 Devereux ASCEND workforce grant (a **late catch dated 09-24**, surfaced Saturday by MyChesCo). Both are staged below to `mh-clinical-infra-funding`, which already carries comparable small state/federal grant items (Idaho's hub hold, SAMHSA's award). Checked and rejected: a Marijuana Moment/Oregon Capital Chronicle piece on Oregon psilocybin businesses "celebrating" the state's fee-hike rescission is dated 09-26 but reports on the Oregon Health Authority's Tuesday 09-22 decision, which the map already carries via the 09-23 digest — a re-index of a covered event, not a new development. Also rejected: a Globe and Mail wire-distributed press release on a private ADHD brain-scan-network partnership (marketing copy, not a policy or clinical development) and a scatter of weak name-collisions (ICER/"officers", Hims/"Him", Munich Re/"Bayern Munich", Two Chairs/a "The Voice" contestant headline) that were checked and are not the watchlist entities. No gdelt, sec_edgar, federal_register or clinicaltrials growth since the late-morning pass (federal_register still 31 rows, clinicaltrials still 310); rss stayed at 89. This closes out the "no afternoon lane turned up anything further" line the throughline previously carried, which was pipeline wording and, once this lane landed, also inaccurate.
+
 ---
-A thin Saturday morning: Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Vegas from 10-10 for an overhaul, and OpenAI has still not answered Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT accounts. California's four AI-in-health-care bills, the school mental-health grants case and Portland's psychedelics vote all remain open.
+A quiet Saturday: Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Vegas from 10-10 for an overhaul, and OpenAI still has not answered Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT accounts. California's governor took no action through the afternoon on the state's four AI-in-health-care bills, the school mental-health grants case and Portland's psychedelics vote all remain open.

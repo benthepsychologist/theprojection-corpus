@@ -12455,3 +12455,72 @@ public thread copy, not fixed here: `chip-hyperscaler-rotation.md:45` ("Note for
 older digests ("Timeline entries merged by the main session"), which reach the site's map-changes
 payload. A cleanup pass over those is a decision for Ben (they are older-run text, and the map-changes
 sections are a house pattern).
+
+## 2026-09-26 ~15:00-15:50 ET — `/daily`: extended Saturday through the afternoon (Trump rejected Iran's Hormuz plan on the record, Aramco hired Evercore for a gas-unit spin-off, Germany's and Russia's foreign ministers met for the first time since 2022), no ledger flips, and republished the site
+
+**Start state.** Clean tree, nothing unpushed, `log.md` ending at the 10:00 ET run's addendum; the
+10:00 receipt reads `exit=0 outcome=ok dirty=0`. 09-26 is `building`; nothing was finalizable (09-26
+closes at 05:00 ET on 09-27), so no critic and no graph feed this run. All agents foreground.
+
+**Collection.** Detached batch at 19:01Z (`/tmp/collect-0926pm/run.sh`, all three env vars, `--since
+13:30Z`); the lanes APPEND to the morning's `buffer/2026-09-26-*.jsonl`, so the afternoon rows start
+after each file's morning line count. `rss` 19:02Z (+2 rows), **`google_news_rss` 19:25Z (+2,020 kept
+of 8,995 fetched)**, `gdelt` zero rows again (429 from its first term), fast lanes by 19:32Z (no new
+EDGAR, Federal Register or ClinicalTrials rows), ⚠️ `openalex` killed by its own `timeout 2400`
+(EXIT 124, every term 429) with no file and no manifest, the third run in a row.
+
+**Agents (12, all sonnet).** Wave 1 (4 lens sweeps, 9-14 min), wave 2 (4 late-buffer triage passes
+over per-lens TSVs of the afternoon Google rows, `/tmp/triagepm/`, 7-12 min), wave 3 (4 briefing
+agents, 2-4 min). Briefs: `buffer/sweeps/2026-09-26/BRIEF-pm.md`, `BRIEF-wave2-pm.md`,
+`/tmp/packs/pm0926/BRIEF.md`. WebSearch use about 30 of 200.
+
+**What Saturday afternoon added.** Trump told reporters at the White House he rejects Iran's
+seven-day Hormuz plan, the first on-record US answer after Friday's WSJ report; Iran had not answered
+by 3pm ET. Bloomberg reported Saudi Aramco hired Evercore for a standalone gas unit. Wadephul and
+Lavrov met at the UN, the first German-Russian foreign ministers' meeting since 2022. Iraq is seeking
+a US exemption from the Iranian flight ban. The 09-30 Senate rogue-AI hearing lists five outside
+witnesses (METR, Apollo Research, Georgetown Law, Dragos, AI Futures Project) and no lab executive.
+Australia's inquiry is summoning Altman and Amodei to 10-01 but cannot compel foreign executives. Two
+mental-health grants (Joliet $1M, Devereux $250,000 on 09-24). A late catch: the US and Russia
+stripped human-oversight language from the draft UN autonomous-weapons text in Geneva on 09-05
+(Washington Post, 09-26). Dera Ismail Khan's toll rose to 13 with a TTP claim; Hurricane Polo is back
+to Category 4. California's governor acted on none of the four ledger bills.
+
+**Corrections.** Trump's words differ by outlet: "I reject their proposal" (CNN, Al Jazeera) and "I
+rejected their deal" (NBC). The capital digest, its throughline and the `red-sea-oil-shock` entry now
+use the two-outlet wording with CNN as the first link; the bullet's first 50 characters were left
+alone so its interpretation key holds. The AI digest had said Australia's inquiry can compel
+attendance; it cannot. The world-news bullet now says Araghchi's before-the-midterms line was Friday's.
+The mental-health throughline lost a sentence naming collector lanes.
+
+**Merge.** 9 bullets on 8 threads by `/tmp/merge_entries.py` v3, dry run first. Skipped by hand:
+G's `iran-conflict-widening` duplicate of W's entry, and ZW's WSJ-midterms bullet (Friday's report,
+already in the thread on 09-25). Zero slug leaks; the thread diff is clean of process words (the
+digests' Curated-from and 🔄 lines still name passes and agents, the existing house pattern).
+`last_seen` advanced on `red-sea-oil-shock` and `mh-clinical-infra-funding`. `upcoming.yaml`: dated
+notes, no flips, on `iran-rezaei-hormuz-deadline-0929`, `senate-rogue-ai-hearing-0930`,
+`australia-senate-ai-inquiry-hearing-1001`, the four California governor-action entries,
+`warner-schatz-nsa-model-testing-consent-0925` and `nvidia-500b-financing-first-close` (14th negative
+check); parse-equality asserted. `actor-doing.yaml`: `united-states` refreshed via `yaml.compose`,
+and its morning line "Washington has said nothing on the record" now ends at Trump's Saturday remarks.
+
+**Map changes.** No thread opened or closed. **No flash**: Trump's remarks led several front pages but
+confirm a story reported Friday. Candidates unchanged from the morning; world news raised Pakistan's
+internal and border security a fourth time, and it stays off the list under the one-reoffer rule
+(a decision for Ben if he wants it tracked).
+
+**Site.** Packs rebuilt after the digests (front 542→60 news, `breaking` held all of Saturday's items);
+four briefings applied 4/4, 0 skipped, `--export` 154. publish-kit dry run clean (105 thread pages),
+then `--push`: 1,680 story pages, 29 interpretation pages (one new, none deleted), 753 claim pages,
+receipt `provenance/publish-2026-09-26T194625Z.yaml` with `deploy_hook_configured`, `deploy_fired`
+and `deploy_ok` all true (build queued 19:46:36Z). Graph not fed: no day finalized this run.
+
+**Where to pick up.**
+- Finalize 09-26 after 10:00 ET on 09-27 (Sunday), with the critic. Two entries merged today carry
+  older dates (09-05 on `frontier-model-gov-review-precedent`, 09-24 on `mh-clinical-infra-funding`);
+  check the graph ingesters pick them up at that finalize.
+- China's NBS industrial profits (9:30pm ET tonight) and Sunday evening's oil and futures open, the
+  first market read on Trump's rejection. Monday 09-28: Greer's details, the truce entry, the
+  Warner–Schatz grace end. 09-29: Rezaei's deadline, DevDay, the Trump–Johnson tech meeting, SoftBank.
+- `openalex` has now timed out three runs running; either drop it from the afternoon batch or report
+  its 429s to its owner.

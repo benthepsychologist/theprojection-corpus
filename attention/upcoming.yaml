@@ -1499,6 +1499,7 @@ expectations:
     # 2026-09-25 ⟨daily⟩: eleventh negative check (agent L): no named deal from any of the six MOU partners. Runs to 09-30.
     # 2026-09-26 ⟨daily⟩: 13th negative check (agents L and H): no signed deal under the platform; EDGAR shows no Nvidia filing since 09-24.
     # The window runs to 09-30.
+    # 2026-09-26 15:00 ⟨daily⟩: 14th negative check (agent G): still no signed deal under the platform.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -2816,6 +2817,8 @@ expectations:
     logged: 2026-08-29
     logged_by: curate-add
     status: pending
+    # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
+    # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
   - id: ca-ab2575-governor-action
     claim: "Gov. Newsom signs or vetoes California AB 2575 (AI-caused clinical-harm liability bill), which cleared both chambers 2026-08-31"
@@ -2829,6 +2832,8 @@ expectations:
     logged: 2026-09-01
     logged_by: curate-add   # successor to ca-ab2575-senate-floor-vote, resolved hit 08-31
     status: pending
+    # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
+    # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
   - id: ca-sb903-governor-action
     claim: "Gov. Newsom signs or vetoes California SB 903 (bars marketing a chatbot as 'therapy'; requires licensed-professional oversight of AI in mental-health care), which cleared both chambers 2026-08-31"
@@ -2842,6 +2847,8 @@ expectations:
     logged: 2026-09-01
     logged_by: curate-add
     status: pending
+    # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
+    # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
   - id: ca-sb1119-governor-action
     claim: "Gov. Newsom signs or vetoes California SB 1119 (children's companion-chatbot safety — annual child-safety risk assessments, real-time crisis referrals, AG-reported independent audits by 2027-07-01), which cleared both chambers 2026-08-31"
@@ -2894,6 +2901,8 @@ expectations:
       clock — the bill has cleared the Legislature entirely. Status stays
       pending because this entry resolves on a signature or a veto, not on
       presentment. Due date 09-30 unchanged.
+    # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
+    # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
   - id: doe-bulk-power-eo-implementing-rules
     claim: >
@@ -4597,6 +4606,8 @@ expectations:
     # 2026-09-26 ⟨daily⟩: the 09-24 Congressional Record (govinfo S4959-S5020) shows no floor request on either bill; Warner and Schatz
     # appear only in the war-powers roll call, and the Senate adjourned to Mon 09-28. The 09-25 package is not yet posted. Stays
     # passed-silent, grace to 09-28.
+    # 2026-09-26 15:00 ⟨daily⟩: the 09-25 Record package still returns govinfo's error page on Saturday afternoon; with the Senate
+    # adjourned from 09-24 to Mon 09-28, no floor request could have come Friday. Grace to 09-28 stands.
   - id: spacex-lockup-tranche-1009
     claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
     due: 2026-10-09
@@ -4673,6 +4684,9 @@ expectations:
     # Hormuz plan and expects renewed bombing after the midterms; CNBC could not confirm and Washington has said nothing on the record.
     # Pezeshkian said Saturday Iran "no longer trusts talks" but awaits an official US reply, and a senior Iranian official told Reuters there
     # is no flexibility on the nuclear programme. Stays pending.
+    # 2026-09-26 15:00 ⟨daily⟩: Trump rejected Iran's seven-day plan on the record Saturday ("I reject their proposal", CNN and
+    # Al Jazeera; NBC transcribes "I rejected their deal"), the first on-record US answer after the WSJ's unnamed-officials report.
+    # No Iranian on-record reaction to that rejection by about 3pm ET. Stays pending to 09-29.
   - id: greer-us-china-goods-deal-details-0928
     claim: "USTR Jamieson Greer publishes the fuller US details of the US-China partial goods arrangement he said would come Monday, with a product-level list, tariff rates or an effective date"
     due: 2026-09-28
@@ -4709,6 +4723,9 @@ expectations:
     logged: 2026-09-26
     logged_by: curate-add
     status: pending
+    # 2026-09-26 15:00 ⟨daily⟩: the subcommittee's hearing page now lists five witnesses: Chris Painter (METR), Marius Hobbhahn
+    # (Apollo Research), Paul Ohm (Georgetown Law), Kurt Gaudette (Dragos) and Daniel Kokotajlo (AI Futures Project); no lab witness
+    # (https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/).
   - id: australia-senate-ai-inquiry-hearing-1001
     claim: "Australia's Greens-led Senate inquiry into AI and datacentres resumes hearings in Canberra on 10-01, having invited OpenAI's Sam Altman and Anthropic's Dario Amodei to appear"
     due: 2026-10-01
@@ -4721,6 +4738,9 @@ expectations:
     logged: 2026-09-26
     logged_by: curate-add
     status: pending
+    # 2026-09-26 15:00 ⟨daily⟩: the Sydney Morning Herald reports the inquiry is summoning Altman and Amodei to the Thursday
+    # 10-01 hearing specifically, and that it cannot compel foreign executives to appear (it could press their Australian
+    # representatives). Altman apologised on Friday for the pace of OpenAI's notifications.
   - id: israel-supreme-court-arab-lists-ruling-1003
     claim: "Israel's Supreme Court rules on the Central Elections Committee's 09-23 disqualification of the Joint List and Ra'am, and of candidates Ofer Cassif and Sami Abu Shehadeh, ahead of the 10-27 election; review is due 'next week'"
     due: 2026-10-03
