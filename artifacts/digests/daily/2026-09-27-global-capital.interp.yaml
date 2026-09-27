@@ -1,0 +1,138 @@
+# Interpretations for 2026-09-27 global-capital (afternoon pass, ~15:20 ET
+# Sunday), keyed by slugify(bold lead[:50]). Read against
+# attention/capital-context.yaml (asof 2026-08-25, conflict_risk_premium
+# reading) and this map's own red-sea-oil-shock / iran-conflict-widening
+# threads. Sunday has no US market prints in this window, so there is no
+# same-day price reaction to check this against; the first test is Sunday
+# evening's oil-futures open, which had not happened by this pass's
+# finish time.
+
+treasury-secretary-scott-bessent-said-sunday-that:
+  mechanism: >
+    Bessent's claim quantifies, for the first time by a named US official,
+    how much of Iran's sanctioned oil-export channel to China remains open
+    — "15 million more barrels ... on the water" and a roughly two-week
+    delivery horizon — as part of the administration's declared sanctions
+    campaign (Treasury's "Operation Economic Outcast," announced 08-24) to
+    cut off Iran's remaining revenue. China has been the one buyer this
+    map's own coverage has repeatedly named as still taking Iranian oil
+    despite the broader blockade; if the volume and timeline Bessent
+    describes are accurate, the one channel keeping any Iranian oil moving
+    closes within the window this map is already watching for the next
+    price test (Sunday evening's futures open). The claim is Bessent's own
+    number, not sourced to tanker-tracking (Kpler/Vortexa-style) or Chinese
+    customs data in any coverage found this pass, so it functions as
+    sanctions messaging with a specific, checkable prediction attached
+    rather than as confirmed trade data.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Sunday evening's oil futures treat the claim as confirming an
+        already-priced supply squeeze — a continuation of Friday's settle
+        rather than a fresh jump — because the market has been pricing a
+        tightening Iran-sanctions channel for weeks and a Treasury
+        official's timeline on an outlet already assumed to be closing is
+        incremental information, not new information.
+      why: >
+        Brent/WTI's recent settles already reflect the blockade and
+        sanctions regime as an ongoing supply constraint; a specific
+        two-week number on a channel already understood to be shrinking
+        confirms direction without changing it.
+      precedent: >
+        This map's own `red-sea-oil-shock` thread recorded Brent firming
+        gradually, not jumping, on prior confirmations of tightening
+        supply that the market had already been discounting (e.g. the
+        08-09 IRGC rejection of interim terms firmed price without a sharp
+        one-day move) — distinct from the sharper repricings that followed
+        genuinely new shocks (the 07-23 Houthi tanker strikes, a ~7% jump).
+    - direction: >
+        Futures largely shrug off the claim on the Sunday-evening open,
+        treating it as sanctions messaging rather than a tradeable fact,
+        because neither the 15-million-barrel figure nor China's compliance
+        with an end date is independently confirmed, and a Treasury
+        secretary predicting Iran's near-term economic exhaustion is not
+        itself new (Bessent made a similar "on their knees" case publicly
+        at the G20 finance ministerial in August, and Treasury's broader
+        "Operation Economic Outcast" campaign was announced over a month
+        ago without a market-moving reaction on the announcement itself).
+      why: >
+        Oil desks have historically waited for confirmable flow data
+        (tanker-tracking, customs releases) rather than administration
+        timelines before repricing off an Iran-sanctions claim, and this
+        specific figure has no independent corroboration as of this pass.
+  context_note: >
+    capital-context.yaml's conflict_risk_premium reading (asof 08-25) is a
+    month stale and describes an earlier phase of the same war; it is used
+    here only for the general pattern — that this war's diplomatic and
+    sanctions signals have moved price unevenly, sometimes confirming what
+    was already priced and sometimes producing a sharp repricing — not for
+    any current-week detail. No Chinese government or state-refiner
+    response to Bessent's remarks was found by 15:20 ET Sunday, and no
+    tanker-tracking or customs figure corroborating "15 million barrels"
+    was found in any coverage checked this pass.
+
+# Added by the ~15:30 ET late-buffer triage pass (a detached collector's
+# 526-row global-capital extract + 61-row gdelt extract, read against
+# threads.yaml/watchlist.yaml). Same no-same-day-price-reaction caveat as
+# above: the first test is still Sunday evening's futures open.
+
+president-trump-told-reporters-on-the-white-house:
+  mechanism: >
+    Trump's South Lawn claim — a "record amount" of oil moved through
+    Hormuz overnight, with prices set to fall once the war ends — and
+    Bessent's Fox claim (above), made the same day, describe the same
+    strait's oil flow in opposite terms: Bessent frames Iran's own
+    export outlet to China as closing (a shrinking, sanctions-driven
+    supply of Iranian barrels specifically); Trump frames the strait's
+    total throughput as already at a record, driven by the US-secured
+    shipping lane and Saudi Arabia's own rerouted exports (a story this
+    map has independently tracked since 09-21, corroborated by
+    Bloomberg/CNBC, of Saudi exports rising toward 6 million bpd). The
+    two claims are not strictly contradictory — Iran's specific export
+    channel could be closing while the strait's aggregate volume rises
+    on Saudi supply — but they carry opposite price implications and
+    neither official's specific figure (Bessent's "15 million barrels,"
+    Trump's unspecified "record") is corroborated by independent
+    tanker-tracking or customs data as of this pass. Both statements
+    function as pre-positioning for Sunday evening's futures reopen, the
+    first actual price test either framing will face.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Futures open flat-to-lower, tracking the corroborated Saudi
+        supply-surge story rather than either administration claim,
+        because the Saudi export data has independent wire sourcing
+        (Bloomberg, CNBC) that neither Bessent's nor Trump's Sunday
+        remarks have.
+      why: >
+        Traders have historically weighted verified flow/customs data
+        over administration rhetoric on this conflict; a real, sourced
+        supply increase should dominate two dueling, unsourced claims
+        made on the same news cycle.
+      precedent: >
+        This map's own `red-sea-oil-shock` thread has recorded price
+        firming tracking verified supply/demand data (the Libya
+        pipeline reopening, the Saudi Gulf-of-Oman rerouting) more
+        reliably than it has tracked one-off rhetorical claims from
+        either side of the conflict.
+    - direction: >
+        Futures open higher on continued Hormuz/Iran risk premium,
+        because both claims are Sunday-news-cycle messaging rather than
+        tradeable data, and the standing sanctions-squeeze narrative
+        (Bessent's, and this map's own tracking since Operation Economic
+        Outcast was announced 08-24) has proven stickier with traders
+        than one-off supply claims from the administration.
+      why: >
+        Oil desks have repeatedly discounted unverified administration
+        oil-flow claims on this conflict before (see the capital-context
+        note above on uneven price reactions to diplomatic/sanctions
+        signals); the risk premium from an active blockade and an
+        unresolved Hormuz standoff is the more persistent input.
+  context_note: >
+    No independent tanker-tracking, customs, or third-party flow data
+    corroborating either Bessent's "15 million barrels" or Trump's
+    "record amount" was found as of this pass (~15:30 ET Sunday). The
+    Saudi 80%/6-million-bpd export-surge figure is real and independently
+    sourced (Bloomberg 09-24, CNBC 09-25) but is a distinct claim about
+    Saudi Arabia's own exports, not a corroboration of either official's
+    Sunday statement.

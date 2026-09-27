@@ -12626,3 +12626,79 @@ build: Araghchi, UBS and Altman all present.
   09-29: Rezaei's Hormuz deadline, OpenAI DevDay, the Trump-Johnson tech-CEO meeting, SoftBank
   settlement. 09-30: Senate "Rogue AI" hearing, California's four-bill signing deadline, Portland's
   second reading, Micron earnings.
+
+## 2026-09-27 ~19:00-20:03 UTC (~15:00-16:00 ET) — `/daily`: extended Sunday 09-27 through the afternoon and republished the site
+
+**Start state.** Clean tree, up to date with origin. Sunday 09-27 was opened by the 10:00 ET run
+already (thin, mostly-WebSearch digests, `as_of` 10:15-11:30am ET); no day to finalize this run and
+no critic, same as any weekend afternoon extension.
+
+**Collection.** One detached `cloud-researcher collect --since 2026-09-27T14:00:00Z` at 19:01Z.
+`gdelt`, `rss`, `github`, `semantic_scholar`, `clinicaltrials` landed within ~10 min; `sec_edgar`
+failed on essentially every term with `HTTP 500` (an EDGAR-side outage, not this run's doing);
+`google_news_rss` landed at ~19:23Z (+2,329 rows). **`openalex` was killed after 51 minutes** of
+100% `429`s (455/~600 terms skipped, zero yield) — the same dead-lane pattern flagged on four prior
+runs; still not fixed, still worth dropping from the batch or reporting upstream.
+
+**Wave 1 (4 sonnet agents, one per lens, foreground, ~12-21 min each).** Each extended its 09-27
+digest in place from its morning `as_of` to ~15:20 ET, using WebSearch/WebFetch (the buffer hadn't
+landed yet when they started). Real finds: frontier-ai added a UNCTAD (UN trade-statistics site)
+forensic-scan finding tied to `openai-agent-security-incident`, and corrected a stale "misalignment
+framework still outstanding" line the ledger already shows resolved `hit` on 09-16; global-capital
+added Bessent's on-record Fox "Sunday Morning Futures" claim that Iran has ~2 weeks of oil left to
+sell China (with an interpretation sidecar) and confirmed China's NBS industrial-profit release still
+unposted via a direct `stats.gov.cn` check; mental-health confirmed via `leginfo.legislature.ca.gov`
+that all four California AI-health-care bills are now formally presented (still unsigned) and
+Portland's psychedelics ordinance second reading is confirmed Wed 09-30, otherwise genuinely quiet;
+world-news added CENTCOM's on-record rejection of Iran's second drone-capture claim, Eritrea's denial
+of Ethiopia's funding accusation, and a new Serbia item (President Vučić resigned to run for PM in
+snap 10-25 elections) — offered as a possible thread but not written to `threads.yaml`. Caught and
+fixed one process-word leak before it shipped: the frontier-ai digest's Upcoming/Map-changes bullets
+said "the ledger flips are the main session's" and "see report to the main session" — both public
+copy, both stripped.
+
+**Wave 2 (3 sonnet agents, late-buffer triage on the newly-landed `google_news_rss` rows, split by
+lens: 1,476 frontier-ai / 526 global-capital / 327 mental-health; world-news has no lens-tagged
+buffer and was already self-verified in wave 1).** frontier-ai: two genuinely new items — Singapore's
+foreign minister proposed a UN "Framework Convention on AI Safeguards" at the UNGA (also surfaced a
+week-old, never-mapped 21-country frontier-model-control declaration), and Bill Gates warned on Meet
+the Press that AI could "cause a billion deaths." global-capital: three new items — a second Bessent
+segment (on Fed Chair Warsh and productivity), Trump's separate, more bearish South Lawn remarks on
+Hormuz oil flow, and 8 foreign banks signaling UBS merger interest (proposed as a thread candidate,
+not opened). mental-health: nothing cleared the bar — confirmed ~90% of the 327-row buffer was
+watchlist-term noise (`Big Health`, `Two Chairs`, `Amazon Health` etc. matching as generic English
+strings), and the four look-real items were all re-indexes of already-mapped stories.
+
+**Leak-grep re-run clean** after both waves (`git diff -U0 ... | grep process-word patterns` → no
+hits). `attention/actor-doing.yaml`: `openai` got a light-touch addendum for the UNCTAD finding
+(asof already 09-27 from the morning run).
+
+**Map changes.** No thread opened or closed. Two thread candidates offered and not acted on (UBS,
+Serbia); the standing Venezuela candidate from this morning stays unanswered too. **No flash**:
+nothing today reached the 9/11-scale bar.
+
+**Site.** Rebuilt all four briefing packs (front 525→60 news, `lens:ai` 174→60, `lens:global-capital`
+152→60, `lens:mental-health` 75→60 — the known truncation-by-position defect, not a regression).
+Four briefings applied 4/4, 0 skipped; `--export` 154. publish-kit dry run clean (105 thread pages),
+then `--push`: 1,686 story pages, 29 interpretation pages, 753 claim pages, 122 map pages, receipt
+`provenance/publish-2026-09-27T195752Z.yaml` with `deploy_hook_configured`/`deploy_fired`/`deploy_ok`
+all true. **Re-published once more** (receipt `provenance/publish-2026-09-27T200239Z.yaml`, also all
+true) after the `actor-doing.yaml` addendum landed a few minutes later than the first push. Verified
+live on theprojection.org/news/ after both builds: UNCTAD, CENTCOM and Vučić/Serbia all present.
+Graph not fed: no day finalized this run.
+
+**Where to pick up.**
+- Two new thread-candidate decisions for Ben, both unanswered: **UBS's Swiss capital-rules fight**
+  (8 foreign banks now signaling merger interest — the first concrete development since the 09-26
+  critic pass added `ubs` to the watchlist with no thread home); **Serbia's political transition**
+  (President Vučić resigned Sunday to run for PM in snap 10-25 elections after ~2 years of
+  anti-corruption protests — this map has no Serbia thread or entity at all).
+- Carried from this morning, still unanswered: Pakistan's border-security candidate (4th offer),
+  Venezuela's political-transition candidate (1st offer), `apple-v-openai-trade-secrets`'s lapsed
+  re-offer window, `north-american-trade-policy`'s mis-fitting home for US-China trade content.
+- `nvidia-500b-financing-first-close`: still needs a decision on `passed-silent` conversion before
+  its `due_precision: month` window closes 09-30 (not re-checked this run, per this morning's note).
+- `warner-schatz-nsa-model-testing-consent-0925`: re-checked directly against govinfo twice more
+  today (still not posted); grace ends Monday 09-28.
+- `sec_edgar`'s `HTTP 500`s on every term this run are worth a one-off recheck next run before
+  assuming it's a standing outage.
