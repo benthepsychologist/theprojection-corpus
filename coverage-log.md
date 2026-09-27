@@ -10063,3 +10063,78 @@ Numbered; digest file is `artifacts/digests/daily/2026-09-25-mental-health.md` u
 ### Main-session disposition (2026-09-26)
 
 Every confirmed miss was merged onto its thread and folded into the 09-25 digests by follow-on agents A2, G2 and M2 (W2 fixed earlier-merged world-news thread bullets ZW found wrong). Duplicate wire items on the same thread were merged once (Hammack, Schmid, Moulin, Jorgensen, Ferguson, the optical-transceiver bill). The Alabama settlement reversed the 09-25 mental-health digest's `sev=major` ground (a trial preview became a settlement); the tag stayed on the new ground the critic proposed (first state settlement with TikTok, resolves the first-of-kind trial, a template for other states), and the digest says it resolves nothing about causation. Two errors from earlier in the week surfaced in passing: a thread bullet from the 09-25 morning run still carried internal wording ("Main session: use this entry in place of W's") and was rewritten, and the Oracle Japan bullet's "more than 3%" for the US parent became 4.4%. Not acted on: the critic's suggested watchlist terms (eating disorder, ADHD), Eli Lilly, AtaiBeckley, Cybin and Otsuka as mental-health entities, and two unopened thread candidates.
+
+## 2026-09-27 — coverage critic: 09-26 finalize
+
+*Run 2026-09-27 ~14:15-14:40 UTC (~10:15-10:40 ET), finalizing digest-day 2026-09-26 (Saturday)
+across the three critic-bearing lenses. Four wave-1 agents (one per lens) had already finalized
+09-26's digests and opened 09-27's before three critic agents checked benchmark publications and a
+wire backstop against the finalized 09-26 digests, in parallel. World-news carries no critic by
+design; its own wave-1 agent did the wire-verification pass instead (see below). Weekend shape: most
+trade-press benchmarks gave a real null for Saturday, consistent with every prior Saturday pass
+logged here. Subsections use the `### <lens> / <date>` form that `graph/ingest/09_critic_annotations.py`
+parses.*
+
+### frontier-ai / 2026-09-26
+
+- **Missed:** nothing. All four daily AI benchmarks published no checkable Saturday lead (three dark
+  on the documented weekend gap, one publishing a same-day special edition that is a rehash of the
+  already-mapped 08-05 UK AI Security Institute finding), and a Reuters/AP/CBC/CNBC wire backstop
+  turned up no on-lens item absent from the digest.
+- **Map effect:** none. No new threads, entities or watchlist terms proposed. No factual error found
+  in the digest body.
+
+### global-capital / 2026-09-26
+
+- **Missed:** three confirmed misses, all Reuters, all Saturday-dated: the Swiss finance minister
+  dismissing UBS exit talk amid a live $18-billion capital-rule fight (a week-long story with zero
+  prior map coverage), the White House/DOT's approval of sharply lower vehicle fuel-economy standards
+  (finalizing Monday), and Libya's NOC reopening the Sharara-Zawiya pipeline. All four daily
+  benchmarks (Money Stuff, Axios Pro Rata, FT Unhedged, Bloomberg Technology) gave a real null for
+  the window.
+- **Map effect:** `+ org global-capital/"UBS"` (critic-add 09-27, applied by the main session — see
+  `attention/watchlist.yaml`). The fuel-economy and Libya-pipeline misses were not added as map
+  entries (single-day items without an obvious recurring home); flagged here for visibility rather
+  than dropped. No factual error found in the digest body.
+
+### mental-health / 2026-09-26
+
+- **Missed:** nothing. All four daily trade-press benchmarks published no checkable Friday-evening
+  or Saturday issue (weekday-cadence outlets, plus MobiHealthNews's ongoing Cloudflare block), a
+  Reuters/AP wire backstop found nothing absent from the digest, and a live ClinicalTrials.gov query
+  independently confirmed zero studies posted over the weekend. The standing watchlist-gap backlog
+  (eating disorder/ADHD terms, Lilly, AtaiBeckley, Cybin, Otsuka, Cigna/Humana/Elevance) was
+  re-checked and did not resurface.
+- **Map effect:** none this pass. `sources/benchmarks.yaml`'s STAT Health Tech note ("publishes
+  across the weekend gap") was corrected by the main session after two consecutive critic passes
+  (09-25's and this one) both found it silent Friday-through-Saturday — see the benchmarks.yaml diff.
+
+### world-news / 2026-09-26 (self-verification, no automated critic)
+
+- **Checked:** the wave-1 world-news agent re-verified Trump's quote, the Wadephul-Lavrov meeting and
+  Iran's plan terms against additional wire sources (no contradictions), tracked Hurricane Polo's
+  continued weakening (Cat 4→Cat 3 overnight), and flagged that the Dera Ismail Khan death toll
+  doesn't converge across outlets (11-13 from the blast depending on source, 14-15 including the two
+  rescue workers) — ordinary same-day toll churn, not a retraction, left as sourced rather than
+  force-reconciled.
+- **Map effect:** none applied by the critic step; see the main-session disposition below for the
+  cross-lens Araghchi reconciliation this run also required.
+
+### Main-session disposition (2026-09-27)
+
+Full critic reports: `buffer/sweeps/2026-09-27/CRITIC-frontier-ai.md`, `CRITIC-global-capital.md`,
+`CRITIC-mental-health.md`. Applied: `+ org global-capital/"UBS"` to `attention/watchlist.yaml`
+(critic-add, global-capital's UBS/Swiss-capital-rule miss); corrected `sources/benchmarks.yaml`'s
+stale STAT Health Tech weekend-cadence claim. Fixed a stale factual error unrelated to this critic
+pass: `artifacts/threads/openai-agent-security-incident.md`'s 09-26 block still said Australia's
+Senate inquiry "can compel attendance," contradicting both its own next bullet and the already-correct
+digest text — corrected to "cannot compel." **Cross-lens duplicate reconciled:** the wave-1
+global-capital and world-news agents independently drafted the same Iran/Araghchi "awaiting a
+definitive reply" development into two different digest-days (global-capital dated it 09-26 via a
+CBS live-blog timestamp of 4:06am ET 09-27, inside the 09-26 digest-day's window; world-news dated it
+09-27 by calendar day). Kept on 09-26 per the digest-day boundary in both lenses' digests and in
+`artifacts/threads/iran-conflict-widening.md`; removed from the 09-27 world-news digest, whose
+throughline and closing summary were rewritten to lead with what's actually new to that day. Not
+acted on: global-capital's fuel-economy/Libya-pipeline misses (no recurring home identified), the
+Axios Pro Rata CAPTCHA-wall and Reuters-direct-401 transport escalations (flagged in the critic
+reports for a future benchmarks.yaml transport-notes update, not applied this pass).

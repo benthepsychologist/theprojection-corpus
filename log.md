@@ -12524,3 +12524,105 @@ and `deploy_ok` all true (build queued 19:46:36Z). Graph not fed: no day finaliz
   Warner–Schatz grace end. 09-29: Rezaei's deadline, DevDay, the Trump–Johnson tech meeting, SoftBank.
 - `openalex` has now timed out three runs running; either drop it from the afternoon batch or report
   its 429s to its owner.
+
+## 2026-09-27 ~14:00-15:00 UTC (~10:00-11:00 ET) — `/daily`: finalized Saturday 09-26 with critics (one map add, UBS/Swiss-capital-rules; one cross-lens duplicate reconciled), opened Sunday 09-27, fed the graph, and republished the site
+
+**Start state.** Clean tree, nothing unpushed, `log.md` ending at Saturday afternoon's addendum.
+09-26 closed at 05:00 ET this morning, more than 5h before this run (10:00 ET exactly) — finalizable
+with the critic, per the skill's per-day rule.
+
+**Machinery correction, worth recording.** The standing background-collect invocation used
+`KESTREL_INSTANCE=theprojection` (the instance name) and the `rss` lane died immediately
+(`FileNotFoundError: theprojection/sources/feeds.yaml`) — `cloud-researcher`'s `rss.py` treats
+`KESTREL_INSTANCE` as a literal directory PATH, not a label, matching the already-documented
+both-halves invocation in the 08-26 log entry (`KESTREL_INSTANCE=/workspace/theprojection-corpus
+cloud-researcher collect --corpus /workspace/theprojection-corpus`). Killed and relaunched correctly;
+the existing collector-env memory should be updated to say "path", not just "set both". ⚠️
+**`openalex` has now stalled and been manually killed on a 4th consecutive run** — same 429-retry
+loop as the three prior runs, no file or manifest produced. Every other lane (`rss`, `github`,
+`gdelt`, `sec_edgar`, `federal_register`, `clinicaltrials`, `google_news_rss`, `semantic_scholar`,
+`lda`) completed or gave its documented keyless 403/429. Worth dropping `openalex` from the
+automated batch or reporting it upstream — not fixed this run.
+
+**Wave 1 (4 sonnet agents, one per lens, foreground, ~8-19 min each).** Each finalized its 09-26
+digest (folding in the ~19:30 ET Saturday → 05:00 ET Sunday overnight window, flipping
+`status: final`/`coverage: done`, `na` for world-news) and opened 09-27's, using the existing buffer
+plus their own supplementary WebSearch/WebFetch and (global-capital) a targeted lens-scoped collect.
+Staged proposed timeline entries to `buffer/sweeps/2026-09-27/BRIEF-<lens>.md` rather than touching
+`artifacts/threads/*.md` directly (disjoint-write discipline). Real finds: frontier-ai corrected the
+D.C. Circuit rehearing window (45 days, not 14, since the US is a party) and rejected two re-index
+traps (a six-week-old Anthropic "Riemann hypothesis" post, a repeat DNS-sandbox story); global-capital
+added Iran's first on-record answer (Araghchi, early Sunday) and the rial's fresh record low, plus a
+15th consecutive `nvidia-500b-financing-first-close` negative check; mental-health caught that two
+ledger flips (`raine-jccp-cmc-0923`, `wa-school-mh-grants-status-report-0925`) had landed in
+`upcoming.yaml` without the digest's own Upcoming section reflecting them, and found this lens's
+09-27 collector lanes completely silent (an ~18h gap); world-news tracked Hurricane Polo's further
+weakening (Cat 4→3) and flagged that the Dera Ismail Khan toll genuinely doesn't converge across
+outlets (11-15 depending on source and what's counted) without forcing a single number.
+
+**Cross-lens duplicate caught and reconciled.** The global-capital and world-news agents
+independently drafted the same Iran/Araghchi "awaiting a definitive reply" development into two
+different digest-days — global-capital dated it 09-26 (a CBS live-blog timestamp of 4:06am ET 09-27,
+inside the 09-26 digest-day's window), world-news dated it 09-27 by calendar day. Kept on 09-26 per
+the digest-day boundary in both digests and in `artifacts/threads/iran-conflict-widening.md`; the
+09-27 world-news digest's throughline and closing summary were rewritten to lead with what's actually
+new to that day (the IRGC's second drone-capture claim, Ethiopia, Yemen, Venezuela) instead. Also
+fixed, unrelated to this duplicate: `artifacts/threads/openai-agent-security-incident.md`'s 09-26
+block still said Australia's inquiry "can compel attendance," contradicting its own next bullet and
+the already-correct digest text — corrected to "cannot compel."
+
+**Merge.** 9 bullets across 5 threads via `/tmp/merge_entries.py` (dry run first, one bullet skipped
+by `--skip` to avoid the duplicate above), plus 1 more added by hand with the correct 09-26 date.
+
+**Wave 2 — coverage critics (3 sonnet agents, parallel, ~5-12 min each; world-news has no critic by
+design, self-verified in wave 1).** frontier-ai: clean, no misses (a Neuron "special edition" turned
+out to rehash the already-mapped 08-05 UK AI Security Institute finding). global-capital: 3 confirmed
+Reuters misses — UBS/Swiss capital-rule exit talk (Keller-Sutter dismissing chairman Kelleher's
+relocation warning amid an $18bn extra-capital fight, six-plus dated stories 09-16→09-26 with zero
+prior map coverage), US fuel-economy-standard rollback (finalizing Monday), and Libya's Sharara-Zawiya
+pipeline reopening. mental-health: clean — a live ClinicalTrials.gov query independently confirmed the
+digest's own "nothing posted this weekend" claim, and a spot-check of the AP Medicaid bullet matched
+the primary text exactly. **Applied:** `+ org global-capital/"UBS"` (critic-add) to
+`attention/watchlist.yaml`; corrected `sources/benchmarks.yaml`'s stale "STAT Health Tech publishes
+across weekends" note after two consecutive critic passes (09-25's and this one) both found it dark
+Friday-through-Saturday. **Not applied:** the fuel-economy and Libya-pipeline misses (single-day items,
+no obvious recurring thread/entity home — flagged in `coverage-log.md` for visibility only).
+
+**Graph fed** for the newly-finalized 09-26 day: `07_digest_bullets.py` (31 new S1 claims),
+`06_timelines.py` (17 new S2, 892 bumped), `03_expectations.py` (0, no new resolutions this run),
+`09_critic_annotations.py` (1 extraction pass, 15 process-outcome annotations). `graph/validate.py`:
+clean, 6,812 atoms, 4,907 sources, 11,660 relationships, all references resolve.
+
+**`attention/actor-doing.yaml`**: refreshed `openai`'s synthesis for Australia's Senate inquiry moving
+from an invitation to a formal written request (still cannot compel attendance) — the one actor that
+genuinely moved today; not a full pass.
+
+**Site.** Rebuilt all four briefing packs. ⚠️ **Own mistake caught before it shipped:** first built
+`--pack lens:frontier-ai`, which doesn't exist as a scope — the digest *file* is named `frontier-ai`
+but the internal lens slug is `ai` (`LENS_OF_FILE` maps `"frontier-ai": "ai"` in `render_read.py`).
+The wrong scope silently returned a pack with every field empty (0 breaking/news/threads/upcoming),
+and a briefing agent dutifully built a briefing from prose fields never meant to be a source, with
+every url null — caught by inspecting the pack's own field counts before applying, discarded, and
+rebuilt correctly as `lens:ai`. Four briefings applied 4/4, 0 skipped; `--export` 154. publish-kit dry
+run clean (105 thread pages, no secret-scan/empty-wipe trips), then `--push`: 1,686 story pages, 29
+interpretation pages, 753 claim pages, 122 map pages, receipt
+`provenance/publish-2026-09-27T145437Z.yaml` with `deploy_hook_configured`, `deploy_fired` and
+`deploy_ok` all true (build queued 14:54:54Z). Verified live on theprojection.org/news/ after the
+build: Araghchi, UBS and Altman all present.
+
+**Where to pick up.**
+- Four decisions flagged for Ben, none acted on: **Pakistan's internal/border-security thread
+  candidate** (4th unanswered offer — track it or drop it); **a Venezuela political-transition thread
+  candidate** (first offer — this map has no Venezuela thread or entity at all despite Maduro's
+  January removal); **`apple-v-openai-trade-secrets`** treated by the frontier-ai agent as lapsed past
+  its one-reoffer window (not re-offered — overrule if wrong); **`north-american-trade-policy`**
+  flagged as a mis-fitting home for recurring US-China trade content (its own `watch:` text is about
+  the Canada tariff fight).
+- `nvidia-500b-financing-first-close`: 15th consecutive negative check, `due_precision: month` window
+  closes 09-30 — a decision is needed on whether a clean miss there converts it to `passed-silent`.
+- `warner-schatz-nsa-model-testing-consent-0925` stays `passed-silent`; grace ends Monday 09-28, one
+  more govinfo check recommended before then.
+- Monday 09-28: Greer's fuller US-China details, the trade-truce entry, the Warner-Schatz grace end.
+  09-29: Rezaei's Hormuz deadline, OpenAI DevDay, the Trump-Johnson tech-CEO meeting, SoftBank
+  settlement. 09-30: Senate "Rogue AI" hearing, California's four-bill signing deadline, Portland's
+  second reading, Micron earnings.

@@ -22,9 +22,15 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-27 — Saudi equities post the first live market read since Trump's Hormuz rejection
+
+- **Saudi Arabia's Tadawul All Share Index closed Sunday's session up 0.78%, the first market of any kind to trade since Friday's US close.** ([Investing.com](https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-078-4918993)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-26 — Trump gives the first on-record US rejection of Iran's seven-day Hormuz plan
 
 - **President Trump told reporters Saturday, as he boarded Marine One, that he has rejected Iran's seven-day plan to reopen the Strait of Hormuz: "I reject their proposal... that deal would not be acceptable."** He said Iran wants an immediate reopening only because "they're losing so badly" and is short of oil revenue under the US blockade, which he called "the greatest blockade ever in military history," and posted an image of the strait on Truth Social relabelled the "Trump Strait." The remarks are the first on-the-record US answer since Friday's Wall Street Journal report (unnamed officials) and Foreign Minister Araghchi's Friday statement that the choice "rests with the United States"; no Iranian on-record reaction to this specific rejection was found by 3:10pm ET, and oil futures do not reopen until Sunday evening. ([CNN](https://www.cnn.com/2026/09/26/middleeast/trump-rejects-iran-proposal-hormuz-intl), [NBC News](https://www.nbcnews.com/world/iran/iran-says-choice-reopening-hormuz-rests-united-states-offer-rcna599956)) ⟨daily 2026-09-26⟩
+- **Iran's Foreign Minister Abbas Araghchi said Iran is still awaiting a "definitive" US response to its Hormuz plan through mediators and that its conditions have not changed, hours after Trump rejected the plan on the record.** ([Al Jazeera](https://www.aljazeera.com/news/2026/9/26/trump-rejects-irans-seven-day-roadmap-to-reopen-strait-of-hormuz), [CBS News](https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal/)) ⟨daily 2026-09-26⟩
+- **Iran's rial fell to a fresh record low of roughly 2,357,000 to the dollar, extending its slide under the US blockade and sanctions campaign.** ([alanchand.com open-market tracker](https://alanchand.com/en/currencies-price/usd-hav)) ⟨daily 2026-09-26⟩
 
 ## 2026-09-25 — Iran says it is "not in a hurry" for a US response to its Hormuz proposal
 

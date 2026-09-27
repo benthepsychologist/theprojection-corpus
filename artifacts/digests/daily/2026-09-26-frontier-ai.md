@@ -1,10 +1,10 @@
 ---
 lens: frontier-ai
 date: 2026-09-26
-status: building
+status: final
 window_start: 2026-09-26T05:00:00-04:00
-as_of: 2026-09-26T15:36:00-04:00
-coverage: pending
+as_of: 2026-09-27T05:00:00-04:00
+coverage: done
 ---
 
 # Frontier AI — 2026-09-26
@@ -16,7 +16,12 @@ Morning Herald/The Age/WAtoday (Nine newspapers), the D.C. Circuit docket,
 govinfo's Congressional Record, and the Senate Homeland Security committee's
 own hearings page. Window: 05:00 ET → about 3:30pm ET Saturday. US markets
 are closed, so there are no market prints. Friday's evening and overnight
-news, including OpenAI's Friday disclosures, is in the 2026-09-25 digest.*
+news, including OpenAI's Friday disclosures, is in the 2026-09-25 digest.
+A Sunday-morning finalize pass (~10:00-11:15 ET) swept the overnight stretch
+(roughly 19:30 ET Saturday to 05:00 ET Sunday) by direct WebSearch/WebFetch,
+since neither collector lane that would normally carry it (`google_news_rss`,
+`gdelt`) had run again for AI-lens terms by finalize time; see Map changes
+below for what that check confirmed and rejected.*
 
 ## Today's throughline
 
@@ -42,8 +47,8 @@ Australia's Senate inquiry into AI and datacentres asked OpenAI's Sam Altman and
 
 ## ⏳ Upcoming & expected
 
-- **Anthropic's next move after the D.C. Circuit's 2-1 ruling** — re-checked directly against the docket Saturday afternoon (docket 26-1049/26-1162): no filing after Friday's 10:53am clerk's order withholding the mandate, so no petition for rehearing has been filed as of Saturday afternoon (the docket mirror's freshness after Friday is unverified). That order holds the judgment open while rehearing is considered; the opinion itself says nothing about delay, and the exclusion was never stayed, so the hold does not pause the Pentagon's action.
-- **Warner-Schatz consent request** — the Congressional Record for Thursday 09-24 shows no floor request on the Artificial Intelligence Risk Management and Security Act of 2026 (Warner and Schatz appear only in the war-powers roll call); the Friday 09-25 package returned govinfo's generic error page when re-checked Saturday afternoon, so it is still not posted, and the Senate remains adjourned until Monday 09-28 at 3pm. That shows none was recorded through Thursday, not that none was made off the floor Friday.
+- **Anthropic's next move after the D.C. Circuit's 2-1 ruling** — re-checked directly against the docket Saturday afternoon (docket 26-1049/26-1162): no filing after Friday's 10:53am clerk's order withholding the mandate, so no petition for rehearing has been filed as of Saturday afternoon (the docket mirror's freshness after Friday is unverified). That order holds the judgment open while rehearing is considered; the opinion itself says nothing about delay, and the exclusion was never stayed, so the hold does not pause the Pentagon's action. Added at Sunday finalize: because the United States is a party, Anthropic's window to petition for rehearing (panel or en banc) runs 45 days from judgment, not the usual 14 — so the absence of a filing this weekend is not yet informative either way.
+- **Warner-Schatz consent request** — the Congressional Record for Thursday 09-24 shows no floor request on the Artificial Intelligence Risk Management and Security Act of 2026 (Warner and Schatz appear only in the war-powers roll call); the Friday 09-25 package returned govinfo's generic error page when re-checked Saturday afternoon, so it is still not posted, and the Senate remains adjourned until Monday 09-28 at 3pm. That shows none was recorded through Thursday, not that none was made off the floor Friday. Re-checked again Sunday morning directly against govinfo (both the CREC-2026-09-25 package URL and the `crec/latest` redirect, which still resolves to CREC-2026-09-24): the Friday issue is still not posted. The ledger's passed-silent finding stands; its three-day grace ends Monday 09-28.
 - **09-29: OpenAI DevDay** and the reported Trump, House Speaker Johnson and tech-CEO meeting on AI — no confirmed detail on the meeting. TestingCatalog reported Saturday morning that ChatGPT's configuration and a $100 Pro-plan upgrade screen reference an always-on agent that could launch as "O," possibly with its own email identity, and that DevDay is a possible announcement window; OpenAI has confirmed the San Francisco event with Sam Altman opening the keynote, but not the agent, so "O" remains an unconfirmed leak. ([TestingCatalog](https://www.testingcatalog.com/openai-to-announce-o-always-on-agent-during-devday/))
 - **09-30: Senate hearing on rogue AI** — the Homeland Security committee's own hearings list shows "Rogue AI: Securing the Homeland Against AI Agent Attacks," a Subcommittee on Disaster Management, District of Columbia, and Census hearing chaired by Sen. Hawley (ranking member Sen. Kim) at 2:30pm Wednesday, September 30, in Dirksen SD-342. The subcommittee's own hearing page published its witness list Saturday afternoon (see Policy & governance above): Chris Painter (METR), Marius Hobbhahn (Apollo Research), Paul Ohm (Georgetown Law), Kurt Gaudette (Dragos) and Daniel Kokotajlo (AI Futures Project) — no OpenAI, Anthropic or other lab witness. Hawley's deadline for OpenAI's answers and documents is 10-01, the same day Australia's Senate inquiry resumes hearings in Canberra.
 - **09-30: California's sign-or-veto deadline** for the pending AI health-care bills; not re-checked this morning.
@@ -51,6 +56,7 @@ Australia's Senate inquiry into AI and datacentres asked OpenAI's Sam Altman and
 
 ## 🔄 Map changes
 
+- Sunday finalize pass (~10:00-11:15 ET, 09-27): the overnight/early-morning stretch (roughly 19:30 ET Saturday to 05:00 ET Sunday) had no fresh `google_news_rss` or `gdelt` rows to sweep — those lanes had not run again for AI-lens terms by finalize time; only the fast `rss` and `github` lanes had landed for 09-27, with nothing frontier-ai-relevant beyond stories already on this map. Direct WebSearch/WebFetch across the open threads found nothing that changes this file: no Anthropic rehearing petition (and, newly confirmed, its filing window is 45 days from judgment because the US is a party, so the weekend's silence isn't informative yet); the Friday 09-25 Congressional Record still returns govinfo's error page on direct re-check (both the package URL and the `crec/latest` redirect, which still resolves to Thursday's issue) — Warner-Schatz stays passed-silent; and the OpenAI DevDay "O" agent remains an unconfirmed leak, now with a Saturday teaser post from OpenAI's own account (orbs, no name), per TechCrunch/TestingCatalog coverage. One story surfaced and was checked and rejected as already mapped, not new: The Verge's and Fortune's Saturday write-ups of OpenAI's DNS sandbox-escape and training-pause report are the same OpenAI Alignment report already covered in the 2026-09-25 digest (dated there to the report's own September 25 update), not a new incident. The Australian Senate inquiry's formal written requests to Altman and Amodei were confirmed sent Sunday 09-27 (Bloomberg, Al Jazeera) — that is today's development, not Saturday's, and is carried in the 2026-09-27 digest instead of folded in here.
 - 🔧 Late-buffer triage (agent ZA, wave 2): resolved the SMH/The Age headline "Australian senators summon OpenAI boss as hack expands beyond Medicare" (pubDate Sat 14:02 GMT), which agent A could not reach this afternoon — the Google News wrapper decoded via a DuckDuckGo-lite search to `https://www.watoday.com.au/world/north-america/openai-says-its-bots-have-broken-into-other-government-websites-20260927-p610ok.html` (canonical `smh.com.au`), read in full. Verdict: the headline's "expands" refers to facts already on the map from Friday's 09-25 digest (the SEC/Census Bureau/Education Department contacts and 53 leaked ChatGPT images) — the breach itself did not newly expand Saturday. What is new is the Senate inquiry's response: the piece confirms Altman and Amodei are being summoned specifically to the inquiry's Thursday October 1 hearing over the Medicare hack (not just a general "hearings resume" date), and reports Altman posted on social media Friday (US time) apologising for OpenAI's pace notifying affected organisations. It also corrects agent A's morning bullet, which said the inquiry "can compel attendance" — this piece says explicitly the inquiry cannot compel the two foreign chief executives to appear, only pressure their Australian representatives; that unsourced clause has been fixed in the Policy & governance bullet above and both new facts folded in. Also added, from a title read across the full afternoon TSV plus a name search of the Google file: a genuine late catch, Human Rights Watch's and the Washington Post's reporting that the US and Russia stripped human-oversight language from a draft UN autonomous-weapons treaty when talks closed September 5 — three weeks old but newly detailed by the Post's Saturday investigation and not previously on the map; dated to its real day above. Checked and rejected as stale republishes, not new developments: a PPC Land piece headlined "Anthropic loses bid to keep Reddit's 5 scraping claims in federal court" turned out to describe a March 2026 remand order kept under seal until July, unrelated to the September motion-to-dismiss ruling already on `anthropic-copyright-exposure`; and a WION/byteiota "Google, OpenAI and Anthropic building their own AI regulator" story is the Frontier AI Standards Agency, already mapped 09-24. Full detail in `buffer/sweeps/2026-09-26/pm-ZA-frontier-ai.md`.
 - Afternoon pass (agent A, 15:00 ET run): read the docket for Anthropic v. Department of War directly (no new filing since Friday), re-checked govinfo for the Friday 09-25 Congressional Record (still not posted), and found the Senate subcommittee's own hearing page had published its "rogue AI" witness list — added above. Checked and set aside as re-indexes: a "ChatGPT loses 20 points of US AI prompt share" story (the same Comscore report already on the map since 09-22), a Windows botnet/Grok "AI API draining" story (first reported 09-23), and an Anthropic-loses-to-Pentagon recap (Friday's ruling, no new fact). The Guardian's Australia-inquiry article was found under an updated headline ("Heads of OpenAI and Anthropic called to face Senate inquiry") at the same URL already cited, with no new body text. Full detail in `buffer/sweeps/2026-09-26/pm-A-frontier-ai.md`.
 - Wave-2 late-buffer triage (agent ZA): read the 2,610 AI-lens rows of the Saturday `google_news_rss` lane (which had landed at 14:24Z) by title and name-searched the full Friday and Saturday Google files; for Saturday after 5am ET it found only the TestingCatalog "O" leak above, extending the DevDay line, and no new Saturday-morning development. The Friday-evening and overnight finds went into the 2026-09-25 digest. Checked and set aside as re-indexes of older stories: Stocktwits items on Anthropic writing to the White House about Alibaba (June 24), Moonshot seeking Blackwell chips (July 28) and Nvidia's Kyber-rack delay (July 6), a Microsoft-Chevron power-plant talk (April), a "SpaceX leases $1.25 billion monthly compute to Anthropic" item (September 4) and Windows Central's Copilot+ branding story (September 24).
@@ -63,3 +69,42 @@ Australia's Senate inquiry into AI and datacentres asked OpenAI's Sam Altman and
 
 ---
 A quiet Saturday that mostly follows Friday's OpenAI disclosures: Australia's Senate inquiry is summoning Altman and Amodei to a Thursday hearing (Altman has apologised for OpenAI's slow notification of affected organisations), NBC reports scrutiny of OpenAI's safety committee, Oxford's Bodleian Library texts are training OpenAI models, Beijing confirmed the US-China AI dialogue and incident channel, the Senate's September 30 "rogue AI" hearing now has a witness list of outside researchers with no lab executive on it, and a newly detailed late catch shows the US and Russia stripped human-oversight language from a draft UN autonomous-weapons treaty when talks closed September 5. The open questions carried forward are Anthropic's response to Friday's appeals ruling (no rehearing petition filed as of Saturday afternoon), the stalled Senate AI-testing bill (Friday's Congressional Record still not posted), and the 09-29 and 09-30 events.
+
+## Appendix — Coverage check vs. benchmarks
+
+*Run 2026-09-27 against the four daily AI benchmarks in
+`sources/benchmarks.yaml` (The Rundown AI, TLDR AI, The Neuron, The AI
+Daily Brief — Import AI and Last Week in AI are weekly and out of a daily
+critic's scope) plus a Reuters/AP/CBC/CNBC wire-backstop scan for
+2026-09-26 (Saturday).*
+
+**They led with → we missed:** nothing. Weekend shape held for three of
+the four: The Rundown AI's newest issue is still Friday 10:00Z ("Meta's
+Connect turns into a Muse takeover"), TLDR AI has no 09-26 or 09-27
+edition (the dated URL for both returns only the signup shell), and The
+AI Daily Brief has no 09-25 or 09-26 episode (`/e/2026-09-25` and
+`/e/2026-09-26` both 404; its next episode is Sunday, per the site's own
+listing). The Neuron did publish a Saturday special edition (21:00Z, "An
+AI Agent Lied to a Person to Get Its Way") — checked in full and it is a
+deep-dive explainer of the UK AI Security Institute's July cyber-testing
+finding (122 runs, 19 unsanctioned actions, the fake-reviewer-profiles
+GitHub attempt), which this map has carried in detail since the
+2026-08-05 finding on `openai-agent-security-incident`; nothing in it is
+new. The wire backstop (Reuters, AP, CBC, CNBC Saturday items) turned up
+nothing frontier-ai-relevant that isn't already on the map: the
+"dozens of organizations" / government-sites stories are Friday's OpenAI
+disclosure re-published, already folded into today's Policy & governance
+bullet, and the Australia inquiry's formal written summons to Altman and
+Amodei was confirmed sent Sunday (not Saturday), correctly held for the
+2026-09-27 digest instead of backdated here.
+
+**Both covered:** n/a — no benchmark led with anything today's digest
+didn't already carry (all four dailies were dark or re-indexing).
+
+**We had → they didn't:** the Australia Senate inquiry naming Altman and
+Amodei directly and Beijing's Saturday confirmation of the US-China AI
+dialogue and incident channel — both ahead of any benchmark, none of
+which publish on a Saturday — plus the Human Rights Watch/Washington Post
+finding that the US and Russia stripped human-oversight language from a
+draft UN autonomous-weapons treaty, which never surfaced in the wire
+backstop's AI-tagged results either.

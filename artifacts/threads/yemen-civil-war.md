@@ -16,6 +16,11 @@ the daily toll, Houthi threats to close the strait if Gulf states join the
 wider war, and whether the UN envoy's warning of a return to full-scale war
 becomes a formal collapse of the 2022 truce.
 
+## 2026-09-27 — Saudi-led coalition intercepts Houthi fire on Riyadh as a Saudi strike kills seven in Taiz
+
+- **A Saudi-led coalition intercepted Houthi drones and missiles aimed at the Riyadh area early Sunday, hours before several Riyadh schools abruptly shifted to a week of remote learning with no official explanation.** ([Arab News, citing AFP](https://www.arabnews.com/saudi-arabia/saudi-authorities-shift-schools-in-riyadh-to-remote-learning-for-week-afp-3003343)) ⟨daily 2026-09-27⟩
+- **A Saudi air strike on a market in Yemen's Taiz killed at least seven people and wounded 40, Houthi health authorities said, while Saudi-backed Yemeni government forces said they hit a Houthi weapons depot in the area.** ([Yahoo, citing DPA](https://www.yahoo.com/news/world/articles/least-seven-killed-airstrike-market-124845471.html)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-25 — Saudi Arabia, Turkiye and Pakistan arrange urgent chiefs-of-staff talks under their mutual-defence pact — short of a formal invocation
 
 - **Saudi Arabia, Turkiye and Pakistan are arranging an urgent meeting of their military chiefs of staff in Riyadh under the Mecca Joint Defence Agreement after weeks of Houthi missile and drone attacks on Saudi territory, Al Jazeera and Reuters reported Friday — a step short of a formal invocation: Turkey's parliament has not yet ratified the pact, and Pakistan's and Turkiye's own statements have been markedly more cautious than Riyadh's.** Neither Al Jazeera nor Reuters says Saudi Arabia "invoked" the pact: Reuters notes it "has not yet been ratified by Turkey's parliament," and a month of earlier "could activate" and "hasn't triggered action" coverage (09-08 through 09-19) shows a continuing process rather than a first. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/25/pakistan-turkiye-edge-closer-towards-joining-saudi-war-against-houthis), [Reuters via Devdiscourse](https://www.devdiscourse.com/article/international/3982483-wrapup-4-allies-unite-behind-saudi-arabia-as-more-iranian-flights-curtailed)) ⟨daily 2026-09-25⟩

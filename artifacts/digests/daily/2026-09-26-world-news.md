@@ -1,29 +1,33 @@
 ---
 lens: world-news
 date: 2026-09-26
-status: building
+status: final
 window_start: 2026-09-26T05:00:00-04:00
-as_of: 2026-09-26T15:32:00-04:00
+as_of: 2026-09-27T10:15:00-04:00
 coverage: na   # this lens carries no benchmark critic by design, same as the 09-24 file
 ---
 
 # World News — 2026-09-26
 
-*Curated 05:00 ET → about 3:30pm ET Saturday (agentic-interim; sources: Al
-Jazeera, the Guardian, BBC, CNN, Reuters (via CNBC, Yahoo, JPost and Devdiscourse
-republished copies), AP (via WRAL and The Hill republished copies), Geo News,
-Nukta, Newsweek, Seoul Economic Daily, the US National Hurricane Center,
+*Curated 05:00 ET Saturday → 05:00 ET Sunday, finalized with a wire-verification
+pass Sunday morning (agentic-interim; sources: Al Jazeera, the Guardian, BBC,
+CNN, Reuters (via CNBC, Yahoo, JPost and Devdiscourse republished copies), AP
+(via WRAL, The Hill and clickondetroit republished copies), Geo News, Nukta,
+Newsweek, Seoul Economic Daily, Dawn, the US National Hurricane Center,
 WebSearch discovery and Google News RSS discovery — this lens carries no
 watchlist-driven collector buffer, so it is search-first by design; direct
 Reuters and AP fetches returned 401/403, so their reporting was read only
-through republished copies where quoted). A quiet Saturday: US markets are
-closed and several capitals are in weekend mode, but Trump went on the record
-on Iran and Pakistan's Dera Ismail
-Khan bombing grew through the afternoon.*
+through republished copies where quoted). A quiet Saturday: US markets were
+closed and several capitals were in weekend mode, but Trump went on the record
+on Iran, Pakistan's Dera Ismail Khan bombing grew through the afternoon, and
+Hurricane Polo kept weakening overnight. No hard events were found in the
+narrow 7:30pm ET Saturday–5am ET Sunday gap beyond Polo's continued weakening
+(below); the Sunday-morning Ukraine strikes and Iran's on-record reply belong
+to the next digest-day and are carried there.*
 
 ## Today's throughline
 
-President Trump said Saturday he rejects Iran's seven-day plan to reopen the Strait of Hormuz, telling reporters outside the White House the terms Tehran offered would not be acceptable. It is the first on-the-record US confirmation of a rejection previously reported only via unnamed officials, and it came as Iran's president said Tehran no longer trusts talks with Washington and Beijing's account of Xi's US visit continued to differ from the White House's; the Wall Street Journal separately reported Trump expects the US bombing campaign against Iran to resume after the midterm elections, while Iraq sought a US exemption from the Iranian flight ban amid Baghdad protests. A suicide bombing and a follow-up attack on an ambulance in northwest Pakistan's Dera Ismail Khan killed at least 13 people through the day, and the Pakistani Taliban claimed responsibility. Russian and Ukrainian strikes killed at least 10 people, including a Russian hit on a Kyiv data centre Moscow says supports Starlink; Germany's and Russia's foreign ministers held their first meeting since 2022 at the UN. Six were confirmed dead in an Athens building explosion, Bangkok declared all 50 of its districts disaster zones after flooding, and Hurricane Polo weakened to a still-powerful Category 4 as it heads toward a Monday landfall in Baja California Sur.
+President Trump said Saturday he rejects Iran's seven-day plan to reopen the Strait of Hormuz, telling reporters outside the White House the terms Tehran offered would not be acceptable; Iran gave its first on-record answer early Sunday, with Foreign Minister Araghchi saying Tehran is still awaiting a "definitive" reply through mediators and holding its conditions unchanged. It is the first on-the-record US confirmation of a rejection previously reported only via unnamed officials, and it came as Iran's president said Tehran no longer trusts talks with Washington and Beijing's account of Xi's US visit continued to differ from the White House's; the Wall Street Journal separately reported Trump expects the US bombing campaign against Iran to resume after the midterm elections, while Iraq sought a US exemption from the Iranian flight ban amid Baghdad protests. A suicide bombing and a follow-up attack on an ambulance in northwest Pakistan's Dera Ismail Khan killed at least 13 people through the day, and the Pakistani Taliban claimed responsibility. Russian and Ukrainian strikes killed at least 10 people, including a Russian hit on a Kyiv data centre Moscow says supports Starlink; Germany's and Russia's foreign ministers held their first meeting since 2022 at the UN. Six were confirmed dead in an Athens building explosion, Bangkok declared all 50 of its districts disaster zones after flooding, and Hurricane Polo weakened to a still-powerful Category 4 as it heads toward a Monday landfall in Baja California Sur.
 
 ## Yemen / Iran
 
@@ -35,6 +39,9 @@ President Trump said Saturday he rejects Iran's seven-day plan to reopen the Str
   <!-- k: t=iran-conflict-widening axis=iran -->
 - **Iran's Supreme National Security Council said Saturday it does not plan military retaliation over the flight bans imposed on Iranian airlines, but that non-military reciprocal measures could be applied to some airports, the semi-official Tasnim agency reported.** The statement followed warnings days earlier from the council's secretary, Mohsen Rezaei, to neighbouring states. The bans followed US sanctions on 27 Iranian airlines announced on 09-08: the UAE and Oman barred Iranian airlines on Thursday and Iraq's airports joined Friday, Reuters reported. Iraq is now seeking a US exemption for its own airports, with Baghdad's government saying flights should resume "on humanitarian grounds related to medical treatment, education, religious visits, and the interests of civilians"; the suspension has forced pilgrims and travellers onto 12-hour land journeys, and demonstrators organised by Iran-allied Iraqi militias protested in Baghdad on Saturday.
   ([Türkiye Today, citing Tasnim](https://www.turkiyetoday.com/region/iran-denies-military-retaliation-over-flight-bans-3229016), [Reuters via Devdiscourse](https://www.devdiscourse.com/article/international/3982483-wrapup-4-allies-unite-behind-saudi-arabia-as-more-iranian-flights-curtailed), [Al Jazeera](https://www.aljazeera.com/news/2026/9/26/iraq-seeks-us-exemption-from-ban-on-iranian-flights))
+  <!-- k: t=iran-conflict-widening axis=iran -->
+- **Iran gave its first on-record answer to Trump's rejection early Sunday, with Foreign Minister Abbas Araghchi saying Tehran is still waiting for mediators to convey a "definitive" US position and that its conditions for reopening the Strait of Hormuz have not changed.** "We have seen the first reaction from the US president, but nothing has been conveyed to us from the mediators yet," Araghchi said, adding "our conditions are clear, and any move toward reopening the Strait of Hormuz is contingent on these conditions being met" and that "only a negotiated solution" can end the standoff. A White House official told CNN the two sides are having "positive and constructive discussions through the mediators" and that the US is "not in a rush." A senior Islamic Revolutionary Guard Corps commander said separately, in remarks aired Sunday, that "the war is not over" and Hormuz will stay closed until US economic pressure ends.
+  ([CBS News](https://www.cbsnews.com/live-updates/iran-war-us-trump-strait-of-hormuz-7-day-proposal/), [Anadolu Agency](https://aa.com.tr/en/world/araghchi-says-iran-awaits-formal-us-response-on-hormuz-proposal/4070470), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-27/iran-says-won-t-soften-demands-after-trump-rejects-hormuz-offer))
   <!-- k: t=iran-conflict-widening axis=iran -->
 
 ## US–China after the Xi visit
@@ -93,9 +100,9 @@ Checked about 9:00-10:00am ET and again about 3:00pm ET Saturday: BBC, Al Jazeer
 - ⏳ Turkiye's parliament returns from recess in October; the Mecca pact is expected on its agenda with no vote date set.
 - ⏳ Israel's Supreme Court reviews the Central Elections Committee's bar on the Joint List and Ra'am the week of 09-28.
 - ⏳ Ukraine-Russia-US meeting in the UAE: no date.
-- ⏳ Hurricane Polo landfall in Baja California Sur: Monday 09-28, now forecast as a strong Category 4 rather than Category 5.
+- ⏳ Hurricane Polo landfall in Baja California Sur: Monday 09-28; the storm kept weakening overnight to a Category 3 with 120 mph winds by Sunday morning (see Map changes).
 - ⏳ Imran Khan's party march from Peshawar to Islamabad: announced for October 4.
-- ⏳ Dera Ismail Khan: no arrests reported yet; the toll was still described as provisional by Rescue 1122 as of this writing.
+- ⏳ Dera Ismail Khan: no arrests reported yet; the death toll varies by outlet as of this writing (see Map changes) and has not converged on a single final figure.
 
 ## 🔄 Map changes
 
@@ -118,6 +125,25 @@ Checked about 9:00-10:00am ET and again about 3:00pm ET Saturday: BBC, Al Jazeer
   (2pm ET) Saturday advisory has Polo as a still-powerful Category 4 with 145
   mph winds and 936 mb central pressure. Corrected; landfall timing (Baja
   California Sur, Monday) is unchanged.
+- 🔧 **Hurricane Polo downgraded again (finalize pass):** the weakening trend
+  continued past this digest's last update — by Sunday morning the National
+  Hurricane Center had Polo as a Category 3 with 120 mph winds, about 285
+  miles west-southwest of Cabo San Lucas and moving north-northwest at 10 mph.
+  Landfall timing is unchanged (Baja California Sur, Monday); the 09-27 digest
+  carries the current reading. Sources: UPI, CBS News, NHC advisories.
+- ⚠️ **Dera Ismail Khan toll does not converge on one number (finalize
+  verification pass):** this digest's bullet followed Geo News/Rescue 1122's
+  count of 13 bodies from the checkpoint blast, separate from the two rescue
+  workers killed in the ambulance attack. Pakistan's Dawn, in a report updated
+  01:42am Sunday, gives 12 dead (nine men, two women and a minor) and 35
+  wounded from the blast itself, plus the two rescue workers as a distinct
+  count — a total of 14 rather than 15. Reuters' earliest count was 11;
+  several other outlets (Al Jazeera, India TV, APA) settled on "at least 12."
+  No outlet's count has been retracted; this looks like ordinary same-day toll
+  churn rather than a specific error to fix, but readers should treat 12-13
+  from the primary blast (14-15 including the ambulance attack) as the honest
+  range rather than a single settled figure. Not corrected in the bullet text
+  above, which stays as originally sourced to Geo News; flagged here instead.
 - 🔧 **Dera Ismail Khan bombing revised twice:** the morning bullet said "at
   least 12 killed... no group has claimed it." Rescue 1122's toll rose through
   the day (11 to 12 to 13, plus two rescue workers killed separately when
@@ -140,6 +166,12 @@ Checked about 9:00-10:00am ET and again about 3:00pm ET Saturday: BBC, Al Jazeer
   Russia's foreign ministers met at the UN Saturday, the first such meeting
   since Russia's 2022 invasion. None of these change any existing fact; all
   are net-new additions, verified against wire/primary text.
+- ✅ **Cross-lens reconciliation:** Iran's overnight Araghchi response (CBS's
+  live blog timestamps it 4:06am ET Sunday, inside this digest-day's window)
+  had been drafted into both this file and the 09-27 digest. Kept here, per
+  the digest-day boundary; removed from 09-27, where its throughline and
+  closing summary were rewritten to lead with what's actually new to that
+  day instead.
 
 ## 🧵 Thread candidates
 

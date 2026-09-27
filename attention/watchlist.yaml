@@ -762,6 +762,16 @@ lenses:
         # backup-power deal counterparty — distinct enough from existing
         # compute-vendor-financing entries (equity-warrant-for-supply, not
         # a chip/cloud deal) to be worth its own global-capital term.
+      - term: "UBS"
+        entity: ubs
+        name: "UBS"
+        # critic-add 2026-09-27 (global-capital coverage critic, digest-day
+        # 09-26): Reuters reported Swiss Finance Minister Keller-Sutter says
+        # it's unlikely UBS would leave Switzerland after the upper house
+        # voted for a rule requiring ~$18bn in extra capital — a live,
+        # multi-week systemic-bank fight (six-plus Reuters stories 09-16
+        # through 09-26, UBS's own chairman had warned of rethinking its
+        # Swiss base) with zero prior map coverage and no entity to tag it.
     people:
       # auto-added 2026-08-02 (critic) — a structural gap, not a missed story.
       # This lens has carried detailed FOMC coverage for two weeks (the 07-29

@@ -223,11 +223,16 @@ critics:
 #     URL to use. It immediately produced a genuine 08-23 miss (the FDA
 #     generative-AI guidance piece, 08-24 08:30 UTC / 04:30 ET).
 #
-#   - **STAT Health Tech is NOT weekday-only** — unlike BHB, Fierce and
-#     MobiHealthNews, it publishes across the weekend gap. A Sunday
-#     "no misses" against the mental-health set must therefore still
-#     check this one live; it is not covered by the weekend-shape note
-#     above.
+#   - **STAT Health Tech's "publishes across the weekend gap" claim above
+#     did NOT hold up — CORRECTED 2026-09-27.** Two consecutive critic
+#     passes (09-25's and 09-26's finalize, both checking this same feed)
+#     found it silent Friday evening through Saturday, with its full item
+#     history back to 08-27 showing zero weekend-dated entries at all.
+#     Treat it as weekday-only, same as BHB/Fierce/MobiHealthNews, until a
+#     future pass finds it publishing on an actual weekend — a live check
+#     is still worthwhile (this note may simply have been true once and
+#     lapsed), but a weekend null against it is the expected result, not a
+#     gap.
 #
 #   - Behavioral Health Business, Fierce Healthcare, MobiHealthNews: all
 #     three reachable today on their documented transports (Googlebot UA

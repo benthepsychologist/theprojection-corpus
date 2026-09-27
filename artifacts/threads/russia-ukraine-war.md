@@ -18,6 +18,10 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-09-27 — Russian overnight barrage kills at least 14 across Ukraine, the week's heaviest single-night toll
+
+- **Russian drone and missile strikes killed at least 14 people and injured 57 across Ukraine overnight into Sunday, the heaviest single-night toll of the past week, hours after Russia's foreign minister dismissed Saturday's rare UN meeting with his German counterpart.** ([Kyiv Independent](https://kyivindependent.com/russian-attacks-kill-14-injure-57-across-ukraine-with-odesa-oblast-targeted-in-mass-strike/)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-26 — Russian and Ukrainian strikes kill at least 10; Russia says it hit a Kyiv data centre supporting Starlink
 
 - **Russian and Ukrainian strikes killed at least 10 people on Saturday, and Russia's Defence Ministry said it hit a Kyiv data centre that supports mobile internet service and Starlink satellite communications.** Russian attacks killed four across Ukraine, AP reported, two in Zaporizhzhia and two in Sumy; a Ukrainian drone strike in Russia's Krasnodar region killed three, local officials said, and Moscow's appointed head of the occupied part of Zaporizhzhia region said Ukrainian attacks killed three there overnight. ([AP via WRAL](https://www.wral.com/news/ap/50b70-7-dead-as-russia-ukraine-exchange-strikes-and-aerial-war-intensifies/), [Newsweek](https://www.newsweek.com/russian-forces-strike-starlink-data-center-in-ukraine-12492220)) ⟨daily 2026-09-26⟩

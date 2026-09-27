@@ -1,15 +1,15 @@
 ---
 lens: mental-health
 date: 2026-09-26
-status: building
+status: final
 window_start: 2026-09-26T05:00:00-04:00
-as_of: 2026-09-26T15:35:00-04:00
-coverage: pending
+as_of: 2026-09-27T05:00:00-04:00
+coverage: done
 ---
 
 # Mental Health — 2026-09-26
 
-*Curated agentic-interim, 05:00 ET → about 3:30pm ET Saturday (sources:
+*Curated agentic-interim, 05:00 ET Saturday → 05:00 ET Sunday (sources:
 Google News RSS and DuckDuckGo (via r.jina.ai) discovery queries; The Nevada
 Independent directly for the Desert Willow closure; the Canadian Press's
 report as carried by CP24 for the Mother Jones follow-up; the California
@@ -27,7 +27,15 @@ the afternoon's slower google_news_rss refresh landed about 3:25pm ET (2,020
 more rows read by title, plus a name search for the lens's watchlist
 organizations and people), Shaw Local directly for the Joliet grant and the
 Pennsylvania House Democratic Caucus's Southeast Delegation release for the
-Devereux grant).*
+Devereux grant; then, finalizing Sunday morning, the California Legislature's
+bill-status pages re-read a third time for all four AI-in-health-care bills, a
+search of gov.ca.gov's own signing-announcement archive, CTV News/CP24's
+report and a targeted search for any newer OpenAI statement (finding only a
+09-02 Jason Kwon statement responding to that month's earlier round of
+Tumbler Ridge suits, not a new one), `attention/upcoming.yaml` and this
+thread's own timeline file for the two items the tracker ledger flipped to
+hit on 09-26, and the landed 09-27 `rss` and `github` buffer files, which
+carried nothing on-lens beyond a known journal-issue re-index).*
 
 ## Today's throughline
 
@@ -62,11 +70,14 @@ Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Veg
 
 ## ⏳ Upcoming & expected
 
-No flips today; the same items remain pending, re-checked Saturday afternoon about 3pm ET:
+Two ledger entries formally flipped to hit on 09-26, though both rest on developments this digest and its predecessors already reported under earlier dates — flagged here because `attention/upcoming.yaml` recorded the flip on 09-26 and the rubric asks that flips be surfaced:
 
-- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 all still show "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, with no chaptered or vetoed date (the site can lag). Re-checked again about 3pm ET directly against the bill-status pages, the Governor's own press-release listing at gov.ca.gov (whose only Saturday release is a set of gun-violence-bill signings that does not mention any of the four) and a Google News search for each bill number and for "Newsom signs AI" / "Newsom vetoes AI": nothing found. Newsom did sign an executive order this week on frontier AI-model safety oversight (covered by KTLA, the Transparency Coalition and others 09-24/25), a separate, broader AI-safety matter that is not one of these four health-specific bills; that item belongs to the frontier-ai lens if it isn't already there.
-- **Education Department status report (`wa-school-mh-grants-status-report-0925`)** — filed Friday 6:23pm Pacific as docket entry 107; nothing newer on the docket, and the filing is not yet publicly downloadable.
-- **Coordinated ChatGPT cases (`raine-jccp-cmc-0923`)** — a tracker reports discovery opened after the 09-23 conference with the next hearing 11-13; no new filing found Saturday.
+- ✅ **Coordinated ChatGPT cases (`raine-jccp-cmc-0923`)** — hit. The 09-23 case-management conference happened; a tracker reports Case Management Order No. 2 (entered 09-24) opened discovery, with OpenAI's answers due 10-30 and the next hearing set 11-13 — already carried in the 09-24 timeline entry. No new filing found since.
+- ✅ **Education Department status report (`wa-school-mh-grants-status-report-0925`)** — hit. Filed Friday 6:23pm Pacific as docket entry 107, inside the court's 09-25 deadline — already carried in the 09-25 digest and timeline. Still not publicly downloadable, so whether the grants are reinstated remains unknown; nothing newer on the docket as of Sunday morning.
+
+Everything else pending, re-checked through Sunday morning:
+
+- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 all still show "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, with no chaptered or vetoed date (the site can lag; SB 903's own history page shows presentment 09-09). Re-checked three times now — Saturday afternoon and again Sunday morning directly against the bill-status pages, gov.ca.gov's own release archive (whose only 09-26 releases are an LGBTQ-protection package and a gun-violence-bill signing, neither mentioning any of the four) and a web search for each bill number and for "Newsom signs AI" / "Newsom vetoes AI": nothing found either time. Newsom did sign an executive order this week on frontier AI-model safety oversight (covered by KTLA, the Transparency Coalition and others 09-24/25), a separate, broader AI-safety matter that is not one of these four health-specific bills; that item belongs to the frontier-ai lens if it isn't already there.
 - **Portland psychedelics ordinance** — second reading Wednesday 09-30; nothing new.
 - **TikTok's Alabama payment** — the decree's $100 million restitution portion is due within 45 days of its effective date and fees within 30; the 09-28 trial will not occur.
 
@@ -80,5 +91,15 @@ None to `attention/`. No new threads proposed. The two items above are ambient o
 
 **Late Google lane pass (Saturday ~3:30pm ET; the afternoon `google_news_rss` refresh landed about 19:25Z, 2,020 rows appended past this morning's 7,034, read end to end by title, plus a name search of that same range for the lens's watchlist organizations, people and condition terms).** Two items were added above: Joliet, Illinois's $1 million federal community mental-health grant (09-26) and Pennsylvania's $250,000 Devereux ASCEND workforce grant (a **late catch dated 09-24**, surfaced Saturday by MyChesCo). Both are staged below to `mh-clinical-infra-funding`, which already carries comparable small state/federal grant items (Idaho's hub hold, SAMHSA's award). Checked and rejected: a Marijuana Moment/Oregon Capital Chronicle piece on Oregon psilocybin businesses "celebrating" the state's fee-hike rescission is dated 09-26 but reports on the Oregon Health Authority's Tuesday 09-22 decision, which the map already carries via the 09-23 digest — a re-index of a covered event, not a new development. Also rejected: a Globe and Mail wire-distributed press release on a private ADHD brain-scan-network partnership (marketing copy, not a policy or clinical development) and a scatter of weak name-collisions (ICER/"officers", Hims/"Him", Munich Re/"Bayern Munich", Two Chairs/a "The Voice" contestant headline) that were checked and are not the watchlist entities. No gdelt, sec_edgar, federal_register or clinicaltrials growth since the late-morning pass (federal_register still 31 rows, clinicaltrials still 310); rss stayed at 89. This closes out the "no afternoon lane turned up anything further" line the throughline previously carried, which was pipeline wording and, once this lane landed, also inaccurate.
 
+**Finalize pass (Sunday ~10am ET, closing the 09-26 digest-day at 05:00 ET Sunday).** No collector run landed for this repo between the Saturday afternoon pass (last mtimes ~19:30 UTC / 3:30pm ET, 09-26) and Sunday's ~14:00 UTC (10am ET) run, so the roughly 18-hour Saturday-evening-through-overnight window has no buffer coverage of its own; checked instead by web search. Confirmed quiet: no OpenAI statement on the Mother Jones report (the only OpenAI statement found anywhere near this story is Jason Kwon's 09-02 response to that month's earlier round of Tumbler Ridge suits, not a new one); no further Desert Willow developments; no governor action on the four California bills (see ⏳, above); no Character.AI/Replika/Slingshot AI news. The 09-27 `rss` (72 rows) and `github` (16 rows) buffer files, the only two collectors that had landed for Sunday as of this pass, carried nothing on-lens beyond the same Frontiers-in-Psychiatry/Internet-Interventions/Internet Interventions journal-issue re-index pattern already ruled ambient, plus one frontier-ai wire item (OpenAI training pause) already on that lens. Separately, cross-checked `attention/upcoming.yaml` against this thread's own timeline files: two items (`raine-jccp-cmc-0923`, `wa-school-mh-grants-status-report-0925`) show `resolved: 2026-09-26` and `status: hit` even though the underlying events were already reported and timelined under 09-24/09-25 dates — the Upcoming section above now marks both explicitly as hits rather than leaving them read as "no flips," which was the more material finding of this pass (see Corrections, staged separately).
+
 ---
-A quiet Saturday: Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Vegas from 10-10 for an overhaul, and OpenAI still has not answered Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT accounts. California's governor took no action through the afternoon on the state's four AI-in-health-care bills, the school mental-health grants case and Portland's psychedelics vote all remain open.
+A quiet weekend day overall: Nevada is closing its 44-bed Desert Willow youth psychiatric hospital in Las Vegas from 10-10 for an overhaul, and OpenAI still has not answered Mother Jones's questions about the Tumbler Ridge shooter's ChatGPT accounts. Two small grants — $1 million for Joliet, Illinois and $250,000 for a Pennsylvania Devereux workforce program — and Eli Lilly's completed AtaiBeckley psychedelics acquisition rounded out the day. California's governor took no action on the state's four AI-in-health-care bills through Sunday morning, and the school mental-health grants case and Portland's psychedelics vote remain open into the coming week.
+
+## Appendix — Coverage check vs. benchmarks
+
+**They led with → we missed:** nothing. All four daily trade-press benchmarks (Behavioral Health Business, STAT Health Tech, Fierce Healthcare, MobiHealthNews) are weekday-cadence outlets with no Friday-evening or Saturday output to check against a Saturday digest-day; BHB's feed (`lastBuildDate` Fri 09-25 20:02Z) and Fierce's feed (newest item Fri 09-25 5:33pm) both stop at Friday, STAT Health Tech's vertical feed stops at Thursday 09-24 (its "publishes across weekends" note from 08-23 did not hold this week either — worth a benchmarks.yaml update, flagged below), and MobiHealthNews remains fully Cloudflare-blocked on every transport (direct urllib, Googlebot UA and the r.jina.ai reader proxy on `/rss.xml` all returned the CAPTCHA challenge page). A Reuters/AP Google News RSS wire backstop across mental-health, ChatGPT/AI-therapy, psychedelic, eating-disorder and ADHD terms for the Fri 09-25–Sat 09-26 window returned nothing on-lens beyond stories already in this digest or the 09-25 digest (the AP's Saturday Medicaid work-requirement piece, spot-checked against the Independent/AP text, matches the digest's bullet on every figure and state name). A live ClinicalTrials.gov query for `StudyFirstPostDate` = 2026-09-26 returned zero studies, confirming the digest's own "nothing new posted over the weekend" claim.
+
+**Both covered:** the AP's Saturday Medicaid medical-frailty/work-requirement report (six states, January start, self-attestation) — verified word-for-word against the Independent/AP syndication, no discrepancies found.
+
+**We had → they didn't:** the Nevada Desert Willow closure, the Joliet and Devereux grants, and the Eli Lilly/AtaiBeckley completion — none of these appear in any of the four trade-press benchmarks' latest issues (all dated Thursday or Friday) or in the Reuters/AP wire scan; they came from the digest's own Google News RSS buffer sweeps.
