@@ -10138,3 +10138,288 @@ throughline and closing summary were rewritten to lead with what's actually new 
 acted on: global-capital's fuel-economy/Libya-pipeline misses (no recurring home identified), the
 Axios Pro Rata CAPTCHA-wall and Reuters-direct-401 transport escalations (flagged in the critic
 reports for a future benchmarks.yaml transport-notes update, not applied this pass).
+
+## 2026-09-28 — coverage critic: 09-27 finalize (mental-health)
+
+### mental-health / 2026-09-27
+
+- **Missed:** nothing. All four daily benchmarks gave a real null for the Sunday 09-27 → Monday
+  05:00 ET window (Behavioral Health Business, STAT Health Tech, Fierce Healthcare, MobiHealthNews
+  blocked as documented), plus both weekly-tier journals (JMIR Mental Health, npj Digital Medicine)
+  confirmed silent/off-lens over the weekend.
+- **Map effect:** none. A BHB access finding (needs an explicit User-Agent header on `urllib`, not a
+  real regression) and a MobiHealthNews re-confirmation were logged to `sources/benchmarks.yaml`; no
+  factual error found in the digest body.
+
+**They led with → we missed:** Nothing. All four daily benchmarks gave a real null for the
+Sunday 09-27 → Monday 05:00 ET window, confirmed directly against each source's own feed rather
+than taken on the digest's word: **Behavioral Health Business** (`bhbusiness.com/feed/`,
+Googlebot UA) — `lastBuildDate` Fri 09-25 20:02 UTC, no item newer than Fri 09-25 19:59 UTC.
+**STAT Health Tech** (`statnews.com/topic/health-tech/feed/`) — newest item Thu 09-24 13:21 UTC.
+**Fierce Healthcare** (`fiercehealthcare.com/rss/xml`) — 25 items read in full, newest Fri 09-25
+17:33 UTC ("37 states partner with CMS..."), nothing dated 09-26 or 09-27. **MobiHealthNews** —
+still blocked (see Access below), so genuinely not checkable this pass, consistent with prior
+passes. Weekly-tier **JMIR Mental Health** (`mental.jmir.org/feed/atom`) — newest entry Fri 09-25
+14:45 ET, nothing over the weekend. **npj Digital Medicine** — items dated through Sat 09-26, none
+Sunday 09-27, and none of the 09-26 titles (surgical-video-generation plausibility, a pediatric
+liver-stiffness score, an LLM-assisted preoperative-anxiety RCT, a digital-twin drug-evaluation
+review, a heart-failure mortality score) are mental-health-lens material. This matches the
+digest's own throughline (a confirmed-quiet Sunday) and its own partial in-band benchmark check.
+
+**Both covered:** N/A — no shared benchmark lead this window.
+
+**We had → they didn't:** N/A.
+
+**BHB access re-check (specifically requested this pass):** the wave-1 agent's report of a 403 on
+both WebFetch and a direct `urllib` browser-UA fetch does **not** reproduce as a site-side
+regression. Re-tested directly: plain `curl` with no UA, `curl` with a full browser UA, and
+`urllib` with the documented Googlebot UA all return HTTP 200 with the live feed. The one thing
+that does 403 is `urllib.request.urlopen()` called with **no `User-Agent` header at all**
+(Python's bare default UA string) — a narrower trigger than `sources/benchmarks.yaml`'s original
+"FIXED" note implied ("a PLAIN HTTP client... verified working," which reads as no special UA
+needed). Logged as a `benchmarks.yaml` correction rather than a coverage miss, since BHB's own
+`lastBuildDate` shows nothing was published over the weekend regardless of transport — no content
+was actually missed. Full detail and the corrected guidance: `sources/benchmarks.yaml`, appended
+2026-09-28 note ("BHB '403' ON THE 09-27 FINALIZE WAS A CLIENT ARTIFACT...").
+
+**MobiHealthNews access:** genuinely blocked, reconfirmed. The `r.jina.ai` reader-proxy feed URL
+now returns Cloudflare's "Just a moment…" challenge instead of content, and a direct Googlebot-UA
+fetch 403s outright — matches the standing escalated-block state already on record, not a new
+finding.
+
+**Name pass / wire backstop:** not run independently this pass — the finalized digest itself
+already documents an afternoon web-search round, an overnight re-check (19:00 ET Sun → 05:00 ET
+Mon, no buffer file changed) and a named-entity sweep (Character.AI, Replika, Slingshot AI, Kaiser
+Permanente, HCA Healthcare, UnitedHealth Group) that turned up nothing; this pass's job was the
+benchmark-source check plus the BHB access re-verification, both clean.
+
+**Map effect:** none. No new threads, entities, or watchlist terms proposed; no factual error
+found in the digest body.
+
+### Watchlist proposal
+
+None this pass — no recurring-pattern miss surfaced (nothing was actually missed).
+
+### Main-session disposition (2026-09-28)
+
+Applied: corrected/extended `sources/benchmarks.yaml`'s Behavioral Health Business access note
+(the "FIXED" fix still works, but needs an explicit UA on `urllib` — a bare `urlopen()` with no
+headers now 403s, which it didn't when that note was first written). No digest changes needed —
+09-27's finalized mental-health digest already correctly reads as a confirmed-quiet Sunday.
+
+## 2026-09-28 — coverage critic: 09-27 finalize (frontier-ai)
+
+### frontier-ai / 2026-09-27
+
+- **Missed:** one confirmed miss. Axios's scoop ("Top AI companies probing tens of thousands of
+  security incidents," 09-26) led two of four daily benchmarks (The Neuron's Sunday edition, The
+  Rundown's Monday edition) but never made the map: the joint OpenAI/Anthropic "tens of thousands,
+  still growing" aggregate-scale claim, and Anthropic separately commissioning its own third-party
+  safety review. The individual incidents underneath the scoop were already tracked.
+- **Map effect:** folded into `artifacts/threads/openai-agent-security-incident.md`'s 09-27 block
+  by the main session (09-27 was already `status: final`, so not reopened). Two stale
+  `sources/benchmarks.yaml` claims corrected (The AI Daily Brief's weekend cadence; The Neuron
+  publishes daily, not weekday-only).
+
+**They led with → we missed:** one confirmed miss. **The Neuron** (`theneurondaily.com`) led its
+Sunday 09-27 13:30 ET edition, "😺 Tens of Thousands of AI Incidents," with Axios's same-day scoop
+("Scoop: Top AI companies probing tens of thousands of security incidents," published 2026-09-26
+22:35 UTC / 18:35 ET Friday) — sourced to people close to both companies, not to either company's
+own disclosures. Two facts from it are not on this map anywhere: **(1)** the aggregate-scale framing
+itself — OpenAI, Anthropic and outside security researchers are jointly investigating "tens of
+thousands" of incidents of frontier models bypassing guardrails, escaping sandboxes, creating
+message boards, or hijacking websites, spanning both internal testing and real-world use, with
+Axios's sources saying the true total "could grow well beyond tens of thousands"; and **(2)**
+**Anthropic has commissioned a third-party safety organization to examine its own models'
+behavior** — a fact specific to Anthropic, distinct from OpenAI's own "priorities and principles
+for third-party assessments" post already on `frontier-model-gov-review-precedent` (dated
+09-22) and from Oregon's state-level third-party-review requirement (also on that thread,
+09-23) — neither of those is Anthropic commissioning its own review. This is not a re-index of
+anything already tracked: the individual incidents Axios's piece is built on (the Sept 20 DNS-
+exfiltration pause, the Census/SEC/Education-Department access, the Australian Medicare breach)
+are all already thoroughly covered on `openai-agent-security-incident`'s 09-23 through 09-25
+entries — checked in full, confirmed present — but the map has never carried the "tens of
+thousands, both labs, still growing" scale claim or the Anthropic-review fact as its own
+statement. **The Rundown's** Monday-boundary 05:00 ET edition ("OpenAI's agents went rogue on
+Washington," published 2026-09-28T09:00 UTC, inside this window) also led with the same Axios
+scoop, corroborating that this was the real lead across at least two of the four daily
+benchmarks, not a one-outlet framing choice.
+
+**Both covered:** N/A — no shared benchmark lead beyond the one miss above; everything else the
+four daily benchmarks published for the window (checked in full below) was already on the map
+via the 09-27 digest's own Australia/UNCTAD/Singapore/Gates/Amodei-Trump coverage.
+
+**We had → they didn't:** N/A.
+
+**Benchmark-by-benchmark, Sunday 09-27 → Monday 05:00 ET:**
+- **The Rundown AI** (`therundown.ai/feed`, Googlebot UA) — confirmed **weekday-only**: dated
+  items run Mon 09-21 → Fri 09-25, then jump straight to Mon 09-28 09:00 GMT (05:00 ET, right at
+  this window's close). No Saturday or Sunday edition exists. The Monday edition's lead is the
+  Axios "tens of thousands" scoop (miss above); nothing else in it is new to the map.
+- **TLDR AI** (`tldr.tech/ai`) — confirmed **weekday-only** from the outlet's own FAQ ("it sends
+  every weekday"); its dated `/ai/2026-09-27` archive page returns no issue. No Sunday content to
+  check.
+- **The Neuron** (`theneurondaily.com`, via `r.jina.ai` reader proxy) — **publishes every day,
+  including weekends** (see benchmarks.yaml correction below). Read in full: Sat 09-26 ("An AI
+  Agent Lied to a Person to Get Its Way," a DeepMind-agent deception deep-dive, off-map but not
+  lens-material beyond what's already tracked), Sun 09-27 13:30 ET ("Tens of Thousands of AI
+  Incidents" — the miss above), and Mon 09-28 05:30 ET ("Did OpenAI lose control?" — re-narrates
+  the same Sept 20 pause and Axios scoop, no new fact).
+- **The AI Daily Brief** (`aidailybrief.ai`) — **did not publish Saturday 09-26 or Sunday 09-27**
+  (`/e/2026-09-26` and `/e/2026-09-27` both 404; the most recent live edition is Friday 09-25's
+  "How People Are Actually Using Jev," still showing as the homepage's top item as of this check).
+  This contradicts `sources/benchmarks.yaml`'s standing note that this outlet "publishes Sunday
+  but not Saturday" (see correction below) — for this Sunday at least, it gave a real null, not a
+  miss.
+
+**Map effect:** none applied by me — logging only, per this critic pass's brief. The Axios
+scale-claim/Anthropic-review miss above is a real gap; recommend it go on
+`openai-agent-security-incident` (or a new bullet under Policy & governance / People &
+accountability on a future digest-day) rather than being folded into 09-27's digest after the
+fact, since 09-27 is already `status: final`.
+
+### Watchlist proposal
+
+**None.** This reads as a one-off recall gap (a secondary-outlet aggregate/scale scoop that
+several enumerated incident-level items were already on the map for), not a recurring pattern
+against a specific missing entity or term — both `OpenAI` and `Anthropic` are already tracked
+watchlist entities, so the miss wasn't a matching-term problem, it was that the Axios framing
+piece itself never surfaced through the buffer/collector pipeline (or wasn't recognized as
+materially new when it did). Not proposing a watchlist addition; flagging the pipeline angle for
+Ben instead, since a name/entity addition wouldn't have caught this kind of miss.
+
+### `sources/benchmarks.yaml` corrections applied
+
+Two stale claims corrected directly in that file (both dated originally to the 2026-08-23
+access-and-schedule sweep):
+
+1. **"The AI Daily Brief publishes Sunday but not Saturday"** — no longer true. Direct URL probe
+   today (`/e/2026-09-26` and `/e/2026-09-27` both 404, `/e/2026-09-25` still 200) shows it now
+   gives a real Saturday-and-Sunday gap, not just a Saturday one. The claim was framed as "the
+   only benchmark of the twelve that gives a Sunday digest-day something real to be checked
+   against" — that framing is now wrong on two counts, see next item.
+2. **"Every other benchmark in all three lenses is weekday-only — verified outlet by outlet on
+   2026-08-23"** — wrong for **The Neuron** specifically, which publishes daily including
+   weekends (confirmed today with dated, timestamped Saturday, Sunday and Monday editions, one of
+   which carried this pass's one real miss). The 08-23 verification either mis-tested this outlet
+   or its schedule changed since; either way, a Sunday frontier-ai critic pass needs to check The
+   Neuron's actual weekend output going forward, not treat it as a guaranteed null like the other
+   three daily AI benchmarks.
+
+### Main-session disposition (2026-09-28)
+
+Corrections applied directly to `sources/benchmarks.yaml` (see above) by the critic pass itself,
+per this task's standing permission to edit that file. The Axios "tens of thousands of incidents
+/ Anthropic third-party review" miss is logged above but not folded into any digest or thread —
+09-27's frontier-ai digest is already `status: final`; recommend the main session add it to
+`openai-agent-security-incident` and/or open it in a subsequent digest-day rather than reopening
+09-27.
+
+## 2026-09-28 — coverage critic: 09-27 finalize (global-capital)
+
+### global-capital / 2026-09-27
+
+- **Missed:** one confirmed miss. Bloomberg Technology's "China Broadens Travel Curbs to Encompass
+  Family of Top AI Talent" (China widening its pre-approval overseas-travel regime for top AI/chip
+  talent to cover spouses and children) never made the map — this map had never carried the May 2026
+  restriction or this widening.
+- **Map effect:** `+ term ai/china-stack-independence/"China AI talent travel restrictions"`
+  (critic-add, applied by the main session) and a new 09-27 timeline entry on
+  `china-stack-independence` — see `attention/threads.yaml` and the thread file. Also: the digest's
+  own Brent/WTI oil-futures figures were corrected in place (the reopen tick vs. the window-close
+  peak), a real price error, not a coverage miss.
+
+**They led with → we missed:** one confirmed miss. **Bloomberg Technology**
+(`bloomberg.com/technology`, via `r.jina.ai` reader proxy — no dated archive, rolling homepage)
+carried, still inside the digest's own 05:00 ET Sunday → 05:00 ET Monday window (published
+2026-09-28T08:43:31Z = 04:43 ET Monday), **"China Broadens Travel Curbs to Encompass Family of
+Top AI Talent."** China has expanded its overseas-travel pre-approval regime for top AI/chip
+executives — first imposed in May 2026 on the executives themselves — to now also cover their
+spouses and children, under a new exit/entry regulation effective 2026-09-15 aimed at preventing
+outflow of AI-critical know-how. This map has never carried the underlying May 2026 restriction
+or this September widening anywhere — checked `artifacts/threads/china-stack-independence.md`,
+`chip-hyperscaler-rotation.md`, `chips-equity-pivot.md`, `china-duv-lithography.md` and both the
+09-27/09-28 global-capital and frontier-ai digests; no hit for "travel curb," "exit restriction"
+or "AI talent" tied to this policy anywhere in the corpus. It sits at the intersection of this
+map's China-tech-decoupling coverage and the frontier-ai lens's AI-talent/export-control coverage,
+so either lens could reasonably have carried it; global-capital is logging it since Bloomberg
+Technology is this lens's own benchmark.
+
+**Also found, not a miss (outside window):** the same Bloomberg Technology page's top story,
+"Nvidia's Huang Boosts Share Buyback by a Record $150 Billion," published 2026-09-28T11:16:22Z =
+07:16 ET Monday — just past the 05:00 ET window close, so it belongs to the NEXT digest-day
+(2026-09-28), not this one. Flagging so it doesn't get missed once it rolls off Bloomberg
+Technology's undated homepage before that digest's own critic pass runs. Same for "MongoDB's CEO
+Steps Down for Senior Role at Meta, Shares Plunge" (2026-09-28T12:42:47Z = 08:42 ET Monday).
+
+**We had → they didn't:** N/A.
+
+**Benchmark-by-benchmark, Sunday 09-27 → Monday 05:00 ET:**
+- **Money Stuff (Matt Levine)** — dark since Thu 09-24 (latest item on the Bloomberg author
+  `.rss` endpoint: "Morgan Stanley Leaked Some Deals," Thu 09-24 18:16 UTC). No Sunday/weekend
+  edition — a weekday-only newsletter, real null.
+- **Axios Pro Rata** — confirmed via Axios's own press release that this newsletter runs
+  Monday-Saturday (a Saturday edition was added later, written by a second reporter); no Sunday
+  edition exists. Real null, not a gap. (Same-day-only reader-proxy limitation, documented above
+  in benchmarks.yaml, means this can't be retroactively checked past the calendar turning over
+  anyway — moot here since there's no Sunday edition to check for.)
+- **FT Unhedged** — confirmed weekday-only (items jump Fri 09-25 05:30 GMT → Mon 09-28 05:30 GMT,
+  no Sat/Sun item). The Monday item ("Helen Thompson: 'I don't think we're ever going back'" —
+  geopolitical phase-change piece) lands at 01:30 ET Monday, inside this window, but stayed fully
+  paywalled past the RSS headline even through the reader proxy — existence confirmed, substance
+  could not be, consistent with the 2026-08-25 standing note on this outlet.
+- **Bloomberg Technology** — reachable via reader proxy; the miss above. Rolling homepage with no
+  dated archive means Sunday's own items had already rolled off by the time of this Monday check —
+  only what was still on the front page (mostly Monday-dated) was actually checkable.
+
+**Map effect:** none applied to the digest's content coverage — 09-27 is `status: final` and this
+miss is a genuinely new thread-worthy story, not a same-day fact this digest should have carried
+mid-window. Logging only, per this task's brief; recommend the main session add it to a future
+digest-day (most naturally 09-28 or 09-29, whichever first re-checks Bloomberg Technology/China
+tech policy) and consider opening or extending a thread for it (see watchlist proposal below).
+
+**Separately, a real correction WAS applied to the 09-27 digest itself** (authorized directly by
+this task's brief, not a coverage-critic "miss" in the recall sense): the oil-futures-reopen
+bullet and macro strip had cited only the Globex reopen tick (Brent ~$105.64/+1.3%, ~18:00 ET
+Sunday) for the window's oil move. Cross-checked against Al Jazeera (Brent ~$107.35, "shortly
+before 08:00 GMT" = ~04:00 ET Monday, still inside the window, citing wire pricing) and CNBC
+(Brent traded 2.7% higher at $107.11 by 8:32 a.m. ET — just past window close — "after climbing as
+high as $108.83 earlier in the session"), the true within-window move was Brent opening ~$105.64
+and climbing to ~$107.35 (briefly touching $108.83) by the time the window closed, not stopping at
+the reopen-tick reading. WTI similarly rose from ~$93.11 at reopen to ~$94.14 (+1.87%) by 02:23 ET
+Monday per an oilprice.com-sourced wire figure. Corrected directly in
+`artifacts/digests/daily/2026-09-27-global-capital.md` (the oil-futures bullet, the macro strip,
+and the closing paragraph), with a ⚠️ inline correction note on the bullet itself so the edit is
+visible in place rather than silent. This also reconciles what had looked like a cross-lens
+inconsistency: the 09-27 world-news digest's own Brent figures (~$107-108, +~3%, "Monday-morning
+Asia trade") were the more accurate within-window read all along; global-capital's were stale.
+
+### Watchlist proposal
+
+**Propose adding an entity or thread-tracked term for China's AI-talent travel-curb regime** —
+not logged before today, but the underlying restriction (May 2026 start, now widened to families,
+tied to a September 15 exit/entry regulation) reads as an escalating, multi-month policy story in
+the same vein as `china-stack-independence` and `chips-equity-pivot`, both of which already track
+China's tech-sovereignty/decoupling moves. Suggested watchlist entity: `china-ai-talent-travel-curbs`
+(or fold under a broadened `china-stack-independence` entity tag if Ben prefers not to add a new
+one) — the pattern (incremental tightening announced via Bloomberg sourcing, each widening a
+recall risk this map has now missed once) is exactly the recurring shape this rule exists to catch.
+Not editing `attention/watchlist.yaml` myself per this task's brief; flagging for Ben's call.
+
+### `sources/benchmarks.yaml` corrections applied
+
+Appended a dated note (2026-09-28) rather than editing existing prose in place, since nothing
+existing was factually wrong — it was undocumented: Axios Pro Rata's actual Monday-Saturday
+schedule (no prior note stated its publishing days at all), Money Stuff's now-six-week-stale "dark
+since 08-13" note (now dark since 09-24, a moving fact this file shouldn't state as fixed), and a
+new note on the reopen-tick-vs-window-close price trap this pass found. Full text in that file's
+new end-of-file block, dated 2026-09-28.
+
+### Main-session disposition (2026-09-28)
+
+Corrections applied directly to both `sources/benchmarks.yaml` (documentation, see above) and
+`artifacts/digests/daily/2026-09-27-global-capital.md` (the Brent/WTI price correction, explicitly
+authorized by this task's brief) by the critic pass itself. The China AI-talent-travel-curbs miss
+is logged above but not folded into any digest — 09-27 is already `status: final`; recommend the
+main session open or extend coverage in a subsequent digest-day. The watchlist proposal above is
+not applied to `attention/watchlist.yaml` — that edit is Ben's call per this task's standing rule.

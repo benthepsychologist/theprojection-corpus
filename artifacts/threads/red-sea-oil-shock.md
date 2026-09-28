@@ -25,6 +25,7 @@ itself (who's fighting whom, where it's widening) — see
 ## 2026-09-27 — Saudi equities post the first live market read since Trump's Hormuz rejection
 
 - **Saudi Arabia's Tadawul All Share Index closed Sunday's session up 0.78%, the first market of any kind to trade since Friday's US close.** ([Investing.com](https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-078-4918993)) ⟨daily 2026-09-27⟩
+- **Oil futures reopened on Globex Sunday evening already pricing in the day's dueling Bessent/Trump oil claims: Brent gained roughly 1.3% to about $105.64 and WTI about 0.8% to $93.11 by shortly after 18:00 ET.** The first actual price test of Saturday's Trump rejection of Iran's Hormuz plan and Iran's refusal to soften its conditions — it resolved toward continued risk-premium pricing, not a shrug. ([tradingeconomics.com/oilprice.com](https://tradingeconomics.com/commodity/crude-oil), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-27/latest-oil-market-news-and-analysis-for-sept-28)) ⟨daily 2026-09-27⟩
 
 ## 2026-09-26 — Trump gives the first on-record US rejection of Iran's seven-day Hormuz plan
 

@@ -13,6 +13,10 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-09-27 — Beijing widens its outbound travel curbs on AI talent to cover spouses and children
+
+- **China has broadened its pre-approval overseas-travel regime for top AI and chip talent at private firms — first imposed in May 2026 — to now also cover spouses and children, under a new exit/entry regulation effective 09-15 aimed at stopping AI know-how outflow.** Direct relatives of executives and founders whose work is considered paramount to state security must now get Beijing's approval before travelling abroad, even for short trips; the tightening follows Beijing forcing Meta to scrap its $2bn acquisition of Chinese AI startup Manus. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/china-broadens-travel-curbs-to-encompass-family-of-top-ai-talent)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-26 — Beijing confirms the AI dialogue and the AI-incident channel it had declined to confirm
 
 - **China's Foreign Ministry said Saturday that the US and China will hold an AI dialogue on risks and benefits, with the next exchange in November 2026, and set up a bilateral communication channel for AI-related incidents.** It also said Beijing valued Washington's use of the term "super intelligence" in place of "artificial intelligence", and that the two militaries agreed to conclude a crisis-communication memorandum as soon as possible; until Saturday only the US side had described the AI incident channel on the record; on 09-24 the Foreign Ministry had referred that question to "competent authorities" (see the 09-24 entry). ([Reuters, via Yahoo](https://www.yahoo.com/news/articles/china-us-agree-30-billion-083836628.html), [Embassy of the PRC in the US](https://us.china-embassy.gov.cn/eng/zgyw/202609/t20260926_12031663.htm)) ⟨daily 2026-09-26⟩

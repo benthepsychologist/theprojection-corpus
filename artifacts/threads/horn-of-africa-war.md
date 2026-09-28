@@ -13,6 +13,11 @@ opened: 2026-08-04
 ## 2026-09-27 — Ethiopia's army pledges "restraint" amid fears of a new civil war
 
 - **Ethiopia's army chief said Sunday the military is meeting Tigray-front "provocations" with "wisdom and restraint," even as fears grow the country is sliding back into full civil war days after a rebel coalition launched a large-scale offensive across Tigray, Afar and Amhara.** ([Al Jazeera](https://www.aljazeera.com/news/2026/9/27/ethiopias-army-promises-restraint-amid-fears-of-new-civil-war)) ⟨daily 2026-09-27⟩
+- **The rebel coalition captured the Afar town of Erebti on Sunday after heavy artillery bombardment and was advancing toward Afdeera, about 100km further east; Ethiopia's army commander separately extended his accusation of foreign backing to include Sudan alongside Eritrea.** ([Euronews](https://www.euronews.com/2026/09/28/tigray-rebels-push-into-afar-as-ethiopia-blames-neighbours), [France 24](https://www.france24.com/en/africa/20260927-ethiopia-accuses-eritrea-sudan-backing-tigray-rebels)) ⟨daily 2026-09-27⟩
+
+## 2026-09-28 — Rebel coalition hits a Tigray TV station with a drone, pushes toward Afdeera aiming at Ethiopia's Djibouti supply corridor
+
+- **Ethiopia's rebel coalition struck a Tigray regional television station with a drone Monday and continued advancing in Afar toward the town of Afdeera, a week into an offensive that has displaced more than 150,000 people; wire reporting describes the Afar push as aimed at cutting the road corridor that carries almost all of landlocked Ethiopia's imported cargo, including fuel, from the port of Djibouti.** ([Arab News](https://www.arabnews.com/world/tigray-tv-station-hit-by-drone-rebels-advance-in-north-ethiopia-3003470), [Euronews](https://www.euronews.com/2026/09/28/tigray-rebels-push-into-afar-as-ethiopia-blames-neighbours)) ⟨daily 2026-09-28⟩
 
 ## 2026-09-25 — Reuters sources say the TPLF ordered Tigray's telecoms blackout, which a source close to the TPLF denies; fighting continues in Afar and Amhara
 

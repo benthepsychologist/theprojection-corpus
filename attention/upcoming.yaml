@@ -1500,6 +1500,10 @@ expectations:
     # 2026-09-26 ⟨daily⟩: 13th negative check (agents L and H): no signed deal under the platform; EDGAR shows no Nvidia filing since 09-24.
     # The window runs to 09-30.
     # 2026-09-26 15:00 ⟨daily⟩: 14th negative check (agent G): still no signed deal under the platform.
+    # 2026-09-28 ⟨daily⟩ ~10:15 ET: another consecutive negative check (global-capital lens, Monday finalize/open pass). Same six MOU partners
+    # (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR); every result still resolves to the 08-10 MOU announcement, same
+    # "subject to execution of final agreements" language, no dollar figure or first project disclosed. due_precision is month; window
+    # closes 09-30 — do NOT flip to passed-silent yet, two days remain.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -4129,7 +4133,23 @@ expectations:
       An announced extension or a readout naming the 11-10 expiry; the 09-20 Manhattan talks left the expiry unaddressed.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-28
+    evidence: |
+      HIT (qualified) 2026-09-28: Not a literal Trump-and-Xi joint announcement, but both governments have now
+      independently confirmed the extension to 01-10 with concrete deliverables, meeting the substance the claim was
+      tracking. China's commerce ministry (MOFCOM) said Monday the truce (30% US tariffs on Chinese goods, 10% Chinese
+      tariffs on US goods) is extended through January 10, explicitly tied to "the second summit this year between
+      President Xi Jinping and US President Donald Trump, hosted in Washington" the previous week — the leader-level
+      framing the claim asked for, delivered via ministry readout rather than a joint statement. Simultaneously, USTR
+      Greer's promised Monday detail landed: the US and China published reciprocal $30bn product lists (a combined
+      $60bn) for tariff cuts on "nonsensitive goods" under the Board of Trade established in May — China's list covers
+      1,619 items (corn, wheat, frozen meat, seafood, wood products, cosmetics, medical devices; notably no soybeans),
+      the US list covers 77 items (toys, tableware, kitchen accessories, electric shavers); strategic sectors (chips,
+      EVs, batteries) are excluded from both lists. The White House said China will import at least 10 million metric
+      tons of US coal in 2027 and 2028. (MOFCOM statement via Business Recorder/FMT wire, 09-28; CNN, 09-28, citing the
+      White House product list and Greer.) Given the ledger's own 09-26 note that "a stricter reader could already call
+      this a qualified hit," today's concrete, dated, jointly-confirmed deliverables settle it.
     # 2026-09-24 ⟨daily⟩: US side announced, not confirmed by Beijing. Bessent told Fox News on 09-23 the Busan truce is extended from its 11-10
     # expiry to January 10 (two months; many had expected six or more). China's Foreign Ministry on 09-24, asked whether
     # China agreed, said 'I'd refer you to competent authorities'; NPR says Beijing has not officially confirmed. MOFCOM
@@ -4698,7 +4718,33 @@ expectations:
     what_confirms: "A USTR or White House document or a Greer statement listing products, rates or a start date, and whether it squares with Beijing's '$30 billion reciprocal tariff reduction' and the White House fact sheet's roughly $30bn of goods each way. The fact sheet already names categories but no rates or dates."
     logged: 2026-09-26
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-28
+    evidence: |
+      USTR Ambassador Jamieson Greer issued a statement 09-28 announcing
+      recommendations from the newly established "U.S.-China Board of
+      Trade" — a reciprocal $30-billion-each-way list of "non-sensitive"
+      goods for more favorable tariff treatment: 1,619 US items (farm
+      goods, fish/seafood, logs/wood, cosmetics, medical devices, coal)
+      into China, and 77 Chinese categories (small appliances, toys,
+      holiday decor, children's car seats, fireworks, tableware, glass/
+      wood ornaments, soccer balls) into the US. This is the product-level
+      list `what_confirms` asks for, satisfying the claim on that count —
+      but it is explicitly a RECOMMENDATION, not a final rate or date:
+      Greer's own statement and the paired White House release say the US
+      and China "will consider" the lists "with a view toward providing
+      reduced tariff treatment ... consistent with their respective
+      domestic laws and processes," and neither document discloses an
+      exact percentage or an effective date (one wire report says >90% of
+      products would land at "most-favored-nation" levels, unconfirmed
+      against the primary text). Chips, EVs and batteries are explicitly
+      excluded. Squares with Beijing's own "$30bn reciprocal tariff
+      reduction" framing and the earlier White House fact sheet's ~$30bn
+      each-way figure — no discrepancy found. Sources: USTR's own release
+      (ustr.gov, "Ambassador Greer Issues a Statement on Announcement of
+      Recommendations from the U.S.-China Board of Trade," 09-28), the
+      White House's paired release, corroborated by Bloomberg, CNN,
+      US News and Reuters-syndicated wire coverage, all dated 09-28.
   - id: us-china-ai-dialogue-first-exchange-1130
     claim: "The first exchange of the US-China AI dialogue (the White House's 'Super Intelligence (SI) Dialogue') takes place by November 2026, with the bilateral AI-incident communication channel set up"
     due: 2026-11-30
@@ -4775,6 +4821,18 @@ expectations:
     confidence: reported
     what_confirms: "A strike vote reported, its result, and any effect on Micron's Taiwan output."
     logged: 2026-09-26
+    logged_by: curate-add
+    status: pending
+  - id: serbia-snap-election-1025
+    claim: "Serbia holds its October 25 snap parliamentary election, called after President Vučić resigned 09-27 to run for prime minister"
+    due: 2026-10-25
+    due_precision: day
+    thread: serbia-political-transition
+    entities: []
+    source: https://www.euronews.com/2026/09/28/serbias-president-aleksandar-vucic-resigns-to-run-for-prime-minister-in-snap-elections
+    confidence: reported
+    what_confirms: "The election held on/near 10-25, its result (Vučić's party vs. the student movement's new party, Students Win, vs. the pro-Western opposition), and whether it's seen as free/fair."
+    logged: 2026-09-28
     logged_by: curate-add
     status: pending
   - id: uk-budget-1028

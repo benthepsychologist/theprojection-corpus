@@ -23,6 +23,10 @@ France's 09-30 draft Finance Bill.
   digests and their critic sections, not re-copied here.
 -->
 
+## 2026-09-28 — France previews record debt ahead of 2027 budget bill
+
+- **France's finance ministry projected national debt will hit a record 119.3% of GDP in 2026, and unions announced Tuesday strikes ahead of PM Lecornu's 2027 budget bill (due to parliament this week, proposing ~€54bn of spending restraint).** ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/french-unions-plan-strikes-to-pressure-government-over-budget), [MNI Markets](https://www.mnimarkets.com/articles/budget-deficit-to-be-47-50percent-in-2026-watchdog-expresses-doubts-1760432090320)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-25 — Europe's Stoxx 600 posts its first weekly gain in a month as UK gilt yields keep climbing
 
 - **Europe's Stoxx 600 closed up 0.3% Friday, its first weekly gain in four weeks, as bond yields stabilized and oil pulled back on Hormuz-reopening hopes, Bloomberg reported; financials outperformed on a 1.3% gain in UBS Group after a report the Swiss lender is weighing a combination with a foreign bank.** UK 10-year gilt yields, by contrast, kept climbing through the day to about 5.35-5.4% — a near two-decade high, per secondary market-data reads rather than a single wire close — even as euro-area and Japanese yields eased Friday. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-25/european-stocks-set-for-first-weekly-gain-in-four-as-oil-eases)) ⟨daily 2026-09-25⟩

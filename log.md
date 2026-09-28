@@ -12702,3 +12702,69 @@ Graph not fed: no day finalized this run.
   today (still not posted); grace ends Monday 09-28.
 - `sec_edgar`'s `HTTP 500`s on every term this run are worth a one-off recheck next run before
   assuming it's a standing outage.
+
+## 2026-09-28 ~14:00-14:35 UTC (~10:00-10:35 ET) — `/daily`: finalized Sunday 09-27 with critics (two map effects: a China AI-talent-travel-curbs term/timeline add on `china-stack-independence`, and three long-stalled thread candidates promoted), opened Monday 09-28, resolved two ledger entries, fed the graph, and republished the site
+
+Landed at ~15:00 ET as a separate pass: this run's own work (collectors through publish) had
+completed but never reached step 8 — found sitting fully built but uncommitted in the tree
+(24 modified/new tracked files, 27 new provenance manifests, no `log.md` entry). Verified before
+committing: `graph/validate.py` clean (6,850 atoms / 4,963 sources / 11,749 relationships / 1,806
+annotations / 160 extraction passes, all references resolve); the publish receipt
+(`provenance/publish-2026-09-28T143451Z.yaml`) shows `deploy_fired`/`deploy_ok` both true. Also
+caught and fixed five process-word leaks the original pass missed — "flagged for the main
+session"/"main-session territory"/"main-session decision" phrasing sitting in public digest copy
+across `2026-09-27-front.md`, `2026-09-27-world-news.md`, `2026-09-28-world-news.md` and
+`2026-09-28-global-capital.md` — reworded to drop the internal reference before commit.
+
+**Finalize (Sunday 09-27), three critic passes.** mental-health: genuinely clean — all four daily
+benchmarks (Behavioral Health Business, STAT Health Tech, Fierce Healthcare, MobiHealthNews
+blocked as documented) and both weekly journals gave a real null over the weekend; re-verified
+BHB's earlier "403" wasn't a site regression but a bare `urlopen()`-with-no-headers artifact
+(`curl` and UA'd `urllib` both 200), `benchmarks.yaml` note corrected. frontier-ai: one miss —
+Axios's "tens of thousands" joint OpenAI/Anthropic agent-incident-investigation scoop (two
+benchmarks led with it) — folded into `openai-agent-security-incident.md`'s 09-27 block since
+09-27 was already `final`. global-capital: one miss — Bloomberg Technology's China widening its
+May 2026 AI-talent overseas-travel pre-approval regime to cover executives' families — added as
+a `china-stack-independence` term plus a 09-27 timeline entry; also corrected an in-place Brent/WTI
+figure (reopen tick vs. window-close peak, a price error not a coverage gap). Also fixed a stale
+`status: building` on `2026-09-26-front.md` (left that way after Saturday was actually finalized
+on 09-27's own 10:00 ET run) — flipped to `final`, with a note pointing at `coverage-log.md`'s
+09-27 entry for the finalize detail the body text doesn't carry.
+
+**Ledger.** Two hits: `busan-truce-extension-signed-1010`-style US-China tariff-truce extension
+now independently confirmed by both governments (MOFCOM's Monday statement ties the extension to
+last week's Trump-Xi Washington summit; separately, USTR Greer's promised detail landed — reciprocal
+$30bn product-list recommendations, 1,619 US items into China / 77 Chinese categories into the US,
+chips/EVs/batteries excluded, framed as a recommendation not a final rate/date). Checked, still
+pending: `nvidia-500b-financing-first-close` (14th+ negative check, window closes 09-30).
+
+**Open Monday 09-28.** Collectors ran the full lane set (`rss`, `github`, `gdelt`, `sec_edgar`,
+`federal_register`, `semantic_scholar`, `clinicaltrials`, plus the finance lanes `fec`/`fred`/
+`page_diff`/`treasury_tic`/`imf_data`/`bis_stats`/`fund_flow_reports`/`epfr_flows`/`lda`;
+`google_news_rss` and `openalex` still running/looping as of the 10:20-10:30 curate pass). All four
+lenses curated as `building`. Nvidia's day: an industry-backed "Open Agent Safety Platform" (open
+OpenShell runtime + BlueField-4 Sentry watchdog, 18 backers including Anthropic) launched the same
+day as a record $150bn buyback-authorization increase — two interpretation sidecars written
+(`2026-09-28-global-capital.interp.yaml`). Dario Amodei's first Trump meeting (private Sunday
+dinner, no readout).
+
+**Map changes — three threads opened, no longer candidates.** `ubs-swiss-capital-rules`,
+`serbia-political-transition` (Vučić resigned 09-27 to run for PM in the 10-25 snap election) and
+`venezuela-political-transition` (post-Maduro transition, Machado's return) — each had been offered
+as a candidate at least twice running with no decision either way, past this map's reappear-once
+norm; opened on the standing critic-auto-growth basis (repeat unanswered offers), same as
+`enterprise-agent-product-race`'s precedent. **Flagging loudly per that rule: all three are Ben's
+to retire with a word if unwanted.** A new dated expectation logged: `serbia-snap-election-1025`
+(due 10-25).
+
+**Graph fed** for the newly-finalized 09-27 day (all four ingesters, then `validate.py` — clean,
+figures above).
+
+**Site.** `readouts --scan`/`--pack` × 4 (front + 3 lenses) → `--apply` → `--export` → publish-kit
+`--push`: 10 payload items / 65 entities, receipt confirms `deploy_ok: true`
+(`provenance/publish-2026-09-28T143451Z.yaml`).
+
+**Where to pick up.** The three new thread opens above need a look. `nvidia-500b-financing-first-close`'s
+window closes 09-30 (2 days). `warner-schatz-nsa-model-testing-consent-0925`'s grace period ends
+today, 09-28 — still not posted per govinfo as of the last check logged. `sec_edgar`'s `HTTP 500`s
+from the prior run weren't rechecked this pass.

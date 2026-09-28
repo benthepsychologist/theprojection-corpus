@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-09-28 — Nvidia's $150bn buyback increase, the largest single authorization in US history
+
+- **Nvidia's board authorized a $150 billion increase to its share-buyback program, lifting total remaining authorization to $235 billion, the same day it launched an Open Agent Safety Platform with over 100 partners.** Jensen Huang: "Our cash generation gives us the capacity to invest in the technologies that advance this transformation and return capital to shareholders." ([Nvidia Newsroom](https://nvidianews.nvidia.com/news/nvidia-announces-a-150-billion-share-repurchase-authorization-increase), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/nvidia-boosts-share-buyback-authorization-by-150-billion-mul5jmu7)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-25 — SB Energy holds back its IPO marketing to answer SEC questions
 
 - **SoftBank-backed SB Energy postponed the formal marketing of its IPO this week while it answers additional SEC questions, and is seeking a valuation of about $60 billion, Reuters reported, citing people familiar.** Investors are also concerned about the valuation and about the company's reliance on OpenAI as its main customer; the figure compares with the roughly $50 billion valuation reported by the New York Times on 09-21, and Reuters notes Nvidia's guarantee of up to $105 billion for OpenAI's lease of SB Energy's Ohio campus. ([Reuters](https://www.reuters.com/legal/transactional/data-center-ipo-hopefuls-brave-tougher-market-investor-scrutiny-grows-2026-09-25/)) ⟨daily 2026-09-25⟩
