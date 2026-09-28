@@ -22,6 +22,10 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-28 — Oil reverses off session highs on twin de-escalation signals
+
+- **Brent touched $108.83 and WTI $96.54 intraday Monday before both pulled back — Brent to about $105.16 (still up 84 cents on the day) and WTI to about $92.59 — after a White House official told CNN and Axios that President Trump is open to Iran sanctions relief and releasing frozen Iranian funds for "concrete progress" on the nuclear file, landing within the same hour as reports that Saudi Arabia had restored roughly 3.5 of its East-West pipeline's 7 million barrel-per-day capacity and resumed export loadings at the Red Sea port of Yanbu.** A US official called the indirect talks (Qatari/Pakistani mediators meeting Iran's FM Araghchi in New York Monday) "positive and constructive" and said Iran "has indicated they are flexible on the nuclear issues," but stressed gaps remain on timing and sequencing and that there is no deal "unless the nuclear issues are addressed." US equities stayed lower on the day (Dow/S&P/Nasdaq all down roughly 0.6-0.7% by early afternoon) despite the oil pullback. ([CNBC](https://www.cnbc.com/2026/09/28/oil-price-today-wti-brent-trump-iran.html), [Axios](https://www.axios.com/2026/09/28/trump-iran-war-sanctions-blockade-nuclear), [CNN](https://www.cnn.com/2026/09/28/politics/trump-iran-deal-sanctions-nuclear)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-27 — Saudi equities post the first live market read since Trump's Hormuz rejection
 
 - **Saudi Arabia's Tadawul All Share Index closed Sunday's session up 0.78%, the first market of any kind to trade since Friday's US close.** ([Investing.com](https://www.investing.com/news/stock-market-news/saudi-arabia-stocks-higher-at-close-of-trade-tadawul-all-share-up-078-4918993)) ⟨daily 2026-09-27⟩

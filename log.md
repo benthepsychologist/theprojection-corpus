@@ -12768,3 +12768,67 @@ figures above).
 window closes 09-30 (2 days). `warner-schatz-nsa-model-testing-consent-0925`'s grace period ends
 today, 09-28 — still not posted per govinfo as of the last check logged. `sec_edgar`'s `HTTP 500`s
 from the prior run weren't rechecked this pass.
+
+## 2026-09-28 ~19:00-19:25 UTC (~15:00-15:25 ET) — `/daily`: extended Monday through the afternoon (Ethiopia's Alamata recapture claim, an Iran/Hormuz oil reversal, UBS's first third-party EPS-cost estimate, Nvidia follow-on reaction, a corrected Fairford-nationality error) and republished the site
+
+Four parallel lens sweeps (all foreground/dispatched-and-awaited, per the standing afternoon
+pattern) extended each of today's `building` digests through ~15:00 ET, plus a fresh
+`cloud-researcher collect` pass across all lanes (stopped after ~20 min once the known slow tail —
+`google_news_rss`/`openalex` — stopped producing files with every other lane already landed; not a
+regression, matches this map's documented history with those two lanes).
+
+**frontier-ai:** White House AI czar David Sacks publicly framed Nvidia's morning "Open Agent Safety
+Platform" launch as proof agent safety is "an engineering problem," and TechCrunch noted OpenAI is
+not among the platform's backers despite its own agents being central to the incidents it responds
+to; separately, a Cambridge (CASP) paper signed by 20+ researchers/executives (OpenAI's Pachocki,
+Anthropic's Clark, Microsoft's Horvitz, Hinton, Bengio) warned automating AI R&D could trigger an
+"intelligence explosion." Two traps caught and excluded: a Fortune piece re-reporting the already-
+mapped 09-20 DNS-exfiltration incident as if new, and fresh Amodei-Trump-dinner coverage with no
+actual readout beyond what 09-27's digest already had.
+
+**global-capital:** oil reversed hard off Monday's highs (Brent $108.83→~$105, WTI $96.54→~$92.6)
+within the same hour as a White House sanctions-relief signal on Iran and Saudi Arabia restoring
+~3.5 of 7M bpd East-West pipeline capacity — equities stayed down (~-0.6 to -0.7%) despite the oil
+pullback. New interpretation sidecar entry written for the reversal. RBC put the first third-party
+dollar figure on the UBS Swiss-capital fight (a 9% EPS hit). China's industrial-profit deceleration
+got real color (fourth straight month slowing, weakest since Nov 2025) and soybeans' exclusion from
+Greer's US-China tariff list was tied to a separate standing purchase commitment. One self-caught
+correction: this morning's UBS "still just a candidate" language was stale — the thread had already
+been opened earlier the same day — withdrawn rather than compounded.
+
+**mental-health:** genuinely quiet, confirmed rather than assumed — the newly-landed 09-28 collector
+lanes and a full watchlist web sweep turned up nothing beyond what the morning digest already had;
+California's four AI-health bills and Portland's 09-30 psychedelics-ordinance reading both reconfirmed
+unchanged via direct primary-source fetch.
+
+**world-news:** federal-allied forces claimed recapture of Alamata, a Tigray supply-hub town, even as
+the rebel coalition kept advancing toward Afdeera/the Djibouti corridor in Afar — MSF reported wounded
+patients at two hospitals more than doubled in 48h; Ethiopia's army chief widened his foreign-backing
+accusation to include Egypt (Eritrea and Sudan both denied). RAF Fairford: the five suspects were
+bailed and confirmed as British nationals, not Iranian as originally reported — **a real factual
+correction**, made transparently in `iran-conflict-widening.md` with an inline note rather than a
+silent edit; re-fetched NPR/PBS directly and neither actually supported the original "four Iranian
+nationals"/"Iran most likely" claims. Hurricane Polo confirmed still Cat 3/115mph (not yet landfall)
+via direct NHC advisory, correcting an earlier 120mph figure. Venezuela: a Machado aide's return from
+exile. No flash — nothing cleared the front-page bar.
+
+**Ledger.** One new dated expectation applied by the main session (agents flag, don't write
+`upcoming.yaml` directly): `ethiopia-alamata-corridor-1005` (due 2026-10-05), tracking whether
+Alamata's recapture holds and whether the rebel coalition reaches or is stopped short of the Djibouti
+corridor — the fourth time this lens flagged Ethiopia/Tigray's missing ledger coverage before it got
+logged.
+
+**Site.** Rebuilt all four briefing packs (front 512→60 news, `lens:ai` 173→60, `lens:global-capital`
+146→60, `lens:mental-health` 72→60 — the documented truncation-by-position behavior, not a
+regression), four sonnet-class briefing-writer agents wrote the shaped `{gist, lead, sections, watch}`
+JSON for each from the raw packs, applied 4/4 with 0 skipped, `--export` 154 readouts. publish-kit
+dry run clean, `--push`: 1,698 story pages, 3 interpretation pages, 753 claim pages, 122 map pages,
+21 payload items / 66 entities, receipt `provenance/publish-2026-09-28T192452Z.yaml` with
+`deploy_fired`/`deploy_ok` both true. Spot-verified live on theprojection.org/news/ shortly after the
+deploy queued (Vučić, Hurricane Polo and the Open Agent Safety Platform all present; Alamata not yet
+checked live — the deploy had only just been queued).
+
+**Where to pick up.** `ethiopia-alamata-corridor-1005` is new and needs no action yet (due 10-05).
+`nvidia-500b-financing-first-close`'s window closes tomorrow, 09-30. No open thread-candidate
+decisions outstanding — Serbia, UBS and Venezuela were promoted this morning and both afternoon
+sweeps found nothing pending a decision.

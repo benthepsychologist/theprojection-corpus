@@ -28,6 +28,7 @@ implementation timeline firms up.
 
 - **UBS chairman Colm Kelleher has called Bern's post-Credit-Suisse extra-capital requirement, roughly $18bn, existential for the bank, and has floated relocating UBS's headquarters over it; Swiss Finance Minister Karin Keller-Sutter told CH Media a relocation is unlikely, calling it "more expensive" than the new capital rules and "legally complicated."** ([Reuters, via Euronext](https://live.euronext.com/en/financial-news/swiss-finance-minister-says-unlikely-ubs-would-leave-its-home-base)) ⟨daily 2026-09-28⟩
 - **At least eight foreign banks have signaled interest in a UBS merger amid the standoff, the first concrete sign the fight is reshaping how the market sees UBS's options, not just rhetoric.** ([Investing.com, citing Reuters](https://www.investing.com/news/stock-market-news/foreign-banks-have-expressed-ubs-merger-interest-swiss-newspaper-reports-4919063)) ⟨daily 2026-09-28⟩
+- **RBC estimated the upper house's adopted capital plan (90% CET1 backing on UBS's foreign units, versus the government's original 100% proposal) would cut UBS's earnings per share by 9%, the first third-party quantification of the fight's bottom-line cost logged on this thread.** ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/ubs-faces-9-profit-hit-from-latest-swiss-capital-plan-rbc-says)) ⟨daily 2026-09-28⟩
 
 ## ← Backstory
 

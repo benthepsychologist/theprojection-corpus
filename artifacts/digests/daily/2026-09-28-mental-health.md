@@ -3,7 +3,7 @@ lens: mental-health
 date: 2026-09-28
 status: building
 window_start: 2026-09-28T05:00:00-04:00
-as_of: 2026-09-28T10:00:00-04:00
+as_of: 2026-09-28T15:00:00-04:00
 coverage: pending
 ---
 
@@ -41,20 +41,34 @@ collector lanes most likely to catch a real story (`gdelt`, `google_news_rss`,
 background collect run was still active — so this digest will extend later
 today as those lanes fill in, per the standing re-run pattern.
 
+**Afternoon update (through ~15:00 ET):** still quiet. The `gdelt`,
+`federal_register`, `semantic_scholar` and `sec_edgar` lanes have now
+landed for 09-28 and none carried an on-lens hit beyond the same academic
+re-index pattern the morning's `rss` file already showed; `google_news_rss`
+and `clinicaltrials` still had not written a 09-28 file as of this pass. No
+governor action on any of the four California bills and no change to the
+Portland ordinance's Wednesday second reading, both re-confirmed directly
+against primary sources this afternoon (below). No genuine news-value
+story turned up on any of this lens's other open threads either. The day
+remains open pending the still-missing `google_news_rss`/`clinicaltrials`
+lanes and finalize.
+
 ## ⏳ Upcoming & expected
 
 No flips today; the same two items remain pending, due in the next 7 days:
 
-- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 remain "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, no chaptered or vetoed date recorded. Only SB 903 is squarely mental-health-specific (bars marketing a chatbot as "therapy"); AB 2575 (AI-caused clinical-harm liability) and SB 503 (bias testing for clinical-decision-support AI) both touch this lens too.
-- **Portland psychedelics ordinance** — second-reading vote remains confirmed for Wednesday 09-30, 9:30am, Council Chambers; no public testimony taken at a second reading.
+- **California governor's 09-30 deadline** — AB 1979, SB 903, AB 2575 and SB 503 remain "Enrolled and presented to the Governor" on the Legislature's own bill-status pages, no chaptered or vetoed date recorded. Only SB 903 is squarely mental-health-specific (bars marketing a chatbot as "therapy"); AB 2575 (AI-caused clinical-harm liability) and SB 503 (bias testing for clinical-decision-support AI) both touch this lens too. Re-confirmed directly against `leginfo.legislature.ca.gov`'s own bill-status pages this afternoon (~14:00 ET): all four still show "House Location: Governor" with no chaptered/vetoed date — unchanged since morning.
+- **Portland psychedelics ordinance** — second-reading vote remains confirmed for Wednesday 09-30, 9:30am, Council Chambers; no public testimony taken at a second reading. Re-checked this afternoon against Portland.gov's council agenda and current local coverage — no change.
 
 ## 🔄 Map changes
 
 None.
 
+**Afternoon pass (Monday ~15:00 ET).** No `attention/` edit proposed. Checked and confirmed quiet against this lens's full open-thread list (`ai-therapy-regulatory-reckoning`, `mh-clinical-infra-funding`, `state-therapy-chatbot-bans`, `kaiser-ai-clinician-backlash`, `hca-healthcare`, `cms-access-model-bh`, `grok-companion-harm`, `bigtech-into-health` and its four per-giant sub-threads, `payer-ai-claim-denial`, `mhpaea-parity-limbo`, `meta-ai-csam-ads`, `mh-evidence-watch`/`ai-therapy-evidence`, `psychedelic-regulatory-sprint`, `dtx-payment-paradox`, `social-media-causality-fight`, `mh-evidence-infrastructure`, `ai-psychosis`, `neuromodulation-evidence`): a live-fetched `leginfo.legislature.ca.gov` status check on all four California bills, Portland's own council agenda, Behavioral Health Business's RSS feed read end to end (its only 09-28 item is a generic revenue-cycle/billing explainer with no AI or policy angle — off-lens), and web searches across Kaiser/AI-clinician backlash, Character.AI/Slingshot AI/Replika, OpenAI health litigation, Grok, AI psychosis, COMPASS Pathways, MHPAEA, Meta CSAM ads, social-media-adolescent-mental-health, and Apple/Google/Microsoft/Amazon health. Every substantive hit found was dated before today (09-22 through 09-25) and already reflected in prior digests or this lens's threads — nothing new landed in the window. The collector buffer's `gdelt` (106 rows), `federal_register` (26 rows) and `sec_edgar` (243 rows) 09-28 files were also grepped directly for watchlist terms and orgs; no on-lens hits in any of the three.
+
 ## 🧵 Thread candidates
 
-None offered — nothing surfaced that clears the bar this morning.
+None offered — nothing surfaced that clears the bar today.
 
 ---
-A quiet Monday morning open: nothing new on-lens in the buffer's first two 09-28 lanes or in a fresh web check, both open California-bill and Portland-ordinance deadlines still land 09-30, and several collector lanes are still catching up from an in-progress collect run.
+A quiet Monday, morning through afternoon: nothing new on-lens turned up in the collector buffer's landed 09-28 lanes or in direct web/primary-source checks across this lens's full open-thread list. Both live deadlines — the four California AI-in-health-care bills and Portland's psychedelics ordinance second reading — were re-confirmed unchanged, still due 09-30, directly against the Legislature's own bill-status pages and Portland's council agenda. The day stays open pending the `google_news_rss` and `clinicaltrials` lanes, which still had not landed a 09-28 file as of this pass.

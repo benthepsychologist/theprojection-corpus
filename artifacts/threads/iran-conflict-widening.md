@@ -15,11 +15,27 @@ confirmed ceasefire, any further combatant, and whether Saudi Arabia's
 coalition-building or China's separate Houthi track produces anything
 concrete.
 
+## 2026-09-28 — Fairford suspects bailed; UK police correct the record on nationality; COBRA convened
+
+- **The five men arrested near RAF Fairford were released on bail Monday, and UK counterterror police named "multiple lines of inquiry" — including whether a foreign state (Iran or Russia specifically named) or a non-state group used "proxies or individuals, either knowingly or unknowingly" — while confirming all five are British nationals from London in their 20s, not the Iranian nationals the 09-27 entry below reported.** Police said no viable explosives were found; the head of UK Counter Terrorism Policing, Laurence Taylor, said the suspects face "stringent conditions" and "absolutely remain under investigation." Home Secretary Shabana Mahmood said Monday afternoon the scene is now safe; Prime Minister Andy Burnham chaired a COBRA emergency-committee meeting Monday "to make sure we have the full picture." Iran's London embassy again denied involvement, calling the speculation "unfounded and malicious." ([NPR](https://www.npr.org/2026/09/28/g-s1-145245/britain-us-base-suspected-foiled-attack), [PBS NewsHour](https://www.pbs.org/newshour/world/uk-police-say-5-men-arrested-near-a-u-s-run-air-base-will-be-released-on-bail)) ⟨daily 2026-09-28⟩ <!-- k: t=iran-conflict-widening axis=iran -->
+
+<!-- CORRECTION 2026-09-28 (afternoon pass): the 09-27 entry below originally
+     read "four confirmed Iranian nationals" and "UK police say Iran is the
+     most likely state actor," attributed to NPR and PBS NewsHour. Re-fetched
+     both cited articles directly: neither supports either claim. NPR's
+     09-27 piece states plainly "Police gave no details as to the nationality
+     of those arrested." PBS's 09-27 piece says only that "authorities are
+     investigating a link between the Fairford arrests and Iran as one
+     possibility" — not that Iran is the most likely actor. The nationality
+     claim is corrected below rather than deleted, so the record shows what
+     was actually reported that day (no nationality given, one possible
+     Iran link) instead of a fabricated specific. -->
+
 ## 2026-09-27 — Iran holds firm on Hormuz terms as IRGC claims a second US drone capture
 
 - **Iran's Revolutionary Guards said Sunday they captured a second US underwater drone in the Strait of Hormuz this month, a Remus 600 they say was operating for espionage.** ([Arab News](https://www.arabnews.com/middle-east/iran-guards-say-seized-us-underwater-drone-in-hormuz-3003391)) ⟨daily 2026-09-27⟩
 - **The IRGC re-identified the drone it says it captured Sunday, first calling it a Remus 600 and then, in a repeated claim, a "Mk 18 Mod 2 Kingfish"; CENTCOM spokesman Capt. Tim Hawkins called the whole claim "clearly desperate," saying the US maintains "positive control of all of our operational drone assets."** ([Tribune India](https://www.tribuneindia.com/news/usa-news/clearly-desperate-us-military-refutes-irans-claim-of-seizing-underwater-drone-in-strait-of-hormuz/), [India TV News](https://www.indiatvnews.com/news/world/iran-claims-second-us-drone-seized-in-strait-of-hormuz-identifies-it-as-mk-18-mod-2-kingfish-us-denies-latest-updates-2026-09-28-1055460)) ⟨daily 2026-09-27⟩
-- **UK police arrested five men — four confirmed Iranian nationals — near RAF Fairford, the airbase the US has used to strike Iran, early Sunday on suspicion of preparing a terrorist act; UK police say Iran is the most likely state actor behind the plot, which Iran's London embassy "categorically" denied Monday.** ([NPR](https://www.npr.org/2026/09/27/nx-s1-5982480/multiple-arrests-suspicion-explosives-offenses-uk-base-us-forces), [PBS NewsHour](https://www.pbs.org/newshour/world/uk-police-arrest-5-men-near-an-air-base-used-by-u-s-on-suspicion-of-preparing-a-terrorist-act)) ⟨daily 2026-09-27⟩
+- **UK police arrested five men near RAF Fairford, the airbase the US has used to strike Iran, early Sunday on suspicion of preparing a terrorist act; police gave no nationality details at the time and said only that a link to Iran was being investigated as one possibility, which Iran's London embassy "categorically" denied Monday.** *(Corrected 09-28 — see note above: this entry originally misreported "four confirmed Iranian nationals" and "Iran as the most likely state actor," neither supported by the cited sources; 09-28's follow-up confirms all five are British nationals.)* ([NPR](https://www.npr.org/2026/09/27/nx-s1-5982480/multiple-arrests-suspicion-explosives-offenses-uk-base-us-forces), [PBS NewsHour](https://www.pbs.org/newshour/world/uk-police-arrest-5-men-near-an-air-base-used-by-u-s-on-suspicion-of-preparing-a-terrorist-act)) ⟨daily 2026-09-27⟩
 
 ## 2026-09-26 — Pezeshkian says the supreme leader backs the seven-day plan and a six-member team can decide
 
