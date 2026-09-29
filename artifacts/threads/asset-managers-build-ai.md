@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* who buys the next hyperscaler asset; the SWF co-investor
 pattern; locked capital sliding into physical infra.
 
+## 2026-09-28 — Samsung commits $1 billion to KKR's Helix AI-infrastructure company
+
+- **Samsung Electronics and five affiliates committed a combined $1 billion to Helix Digital Infrastructure, the AI-infrastructure company KKR launched in June and Nvidia backs.** Samsung Electronics puts in $500 million, with Samsung C&T, SDS, SDI, Life Insurance and Fire and Marine contributing the rest; KKR, Nvidia, the Kuwait Investment Authority and Vistra are founding investors, and former AWS chief Adam Selipsky leads Helix, which targets hyperscale data centers, power generation and fiber networks. ([CNBC](https://www.cnbc.com/2026/09/29/samsung-investment-nvidia-kkr-ai-helix-digital.html), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/samsung-to-invest-1-billion-in-kkr-s-ai-infrastructure-company)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-24 — A BlackRock-led consortium is in exclusive talks for Stack Infrastructure's $25bn Asia data-center portfolio
 
 - **A consortium including BlackRock's Artificial Intelligence Infrastructure Partnership and IFM Investors is in exclusive talks to buy Stack Infrastructure's Asia-Pacific data-center portfolio — spanning Tokyo, Osaka, Sydney and Melbourne — from Blue Owl Capital for up to $25 billion, Bloomberg reported Thursday.** The buyer group is preparing due diligence and hopes to reach agreement soon; Reuters could not independently verify the report, and BlackRock, IFM, Stack and AIP all declined to comment. Bloomberg had reported in May that Stack was weighing a sale of its Asia operations at more than $30bn, with IFM and AIP among the potential bidders as of June. It is a fresh acquisition target for the same BlackRock/AIP cohort already tracked on this thread through the Aligned and Hyperion deals, and the same Blue Owl that sold 80% of Meta's Hyperion venture is the seller here. ([Reuters, via KFGO](https://www.kfgo.com/2026/09/24/blackrock-ifm-close-in-on-25-billion-stack-data-center-deal-bloomberg-news-reports/)) ⟨daily 2026-09-25⟩

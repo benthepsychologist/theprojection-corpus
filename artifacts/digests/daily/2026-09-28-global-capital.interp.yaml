@@ -12,7 +12,8 @@ nvidia-s-board-authorized-a-150-billion-increase:
     platform mobilizing outside capital into AI buildout around its own
     hardware (this map's own `nvidia-vendor-financing` thread, still with
     no named deal as of this pass) and, announced the same day, the
-    largest single share-buyback authorization in US corporate history —
+    largest share-repurchase authorization increase in history, according
+    to Nvidia (the $235 billion total is not itself described as a record) —
     returning Nvidia's OWN capital to shareholders. The transmission
     channel is capital-allocation signaling: a buyback this size, paired
     with CEO Jensen Huang's stated rationale ("our cash generation gives
@@ -24,7 +25,7 @@ nvidia-s-board-authorized-a-150-billion-increase:
     (that a company has run out of high-return growth investments), by
     pairing it with a same-day AI-safety-platform PR push signaling
     continued platform investment, not retrenchment.
-  confidence: plausible
+  confidence: speculative
   scenarios:
     - direction: >
         The market reads the buyback as confirmation of durable,
@@ -39,10 +40,11 @@ nvidia-s-board-authorized-a-150-billion-increase:
         read as a strength signal, not a maturity signal, when paired
         with continued growth guidance rather than a growth slowdown.
       precedent: >
-        Nvidia's own prior buyback authorizations through fiscal 2026
-        coincided with continued stock strength rather than a "growth
-        story is over" re-rating, per this map's own earnings-ledger
-        coverage of its Q2 FY2027 print (08-26).
+        None sourced. This map holds no dated prior Nvidia buyback
+        authorization with its stock reaction (its earnings-ledger entry
+        covers the $108 billion Q3 guide, not a repurchase), so this branch
+        rests on the mechanism alone. Nvidia rose about 2% on the day of the
+        announcement, against falling indices.
     - direction: >
         Critics fold the buyback into the standing "circular AI
         financing" critique already attached to this map's
@@ -203,3 +205,57 @@ oil-reversed-off-monday-s-session-highs-after-twin:
     restoration and the sanctions-relief signal; the next `/week` refresh
     should fold in whether this afternoon's pullback held into Tuesday's
     session.
+
+trump-denied-offering-iran-sanctions-relief-or-fro:
+  mechanism: >
+    Oil has been trading almost entirely on Iran-diplomacy headlines, and
+    Monday's pullback rested partly on one of them: an Axios and CNN report
+    that Washington would trade sanctions relief and some frozen funds for
+    concrete nuclear steps. Trump's flat public denial removes that
+    supportive reading of US intent, so the war-risk premium that had
+    drained out of November Brent (from $108.83 to a $105.28 settle) has a reason to
+    rebuild. It acts through the same variable as the afternoon
+    catalysts, the probability-weighted length of the blockade, but in the
+    opposite direction. The counterweight is that the physical supply return
+    (Saudi pipeline flows) and the mediated talks are untouched by a
+    social-media post.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The denial is absorbed with little price effect, and oil keeps
+        drifting lower on Saudi flows and the Qatari-mediated talks.
+      why: >
+        Oil had already settled before the post, and on Tuesday morning WTI
+        traded near $91-92, below Monday's $92.60 settle, so the first
+        market test did not show a rebuilt premium. Axios has reported that
+        price reactions to Trump's war posts have been shrinking.
+      precedent: >
+        On 09-22, November Brent settled near $99, down about $1 after being
+        down more than $2, as Saudi Arabia restarted its East-West pipeline
+        and US-Iran contacts continued; Trump's remark that a peace deal
+        would come after the midterms helped prices recover from session
+        lows but did not reverse the move (investingLive oil recap, 09-22).
+    - direction: >
+        The denial plus a lapse of Rezaei's four-to-five-day Hormuz
+        deadline with no US concession pushes Brent back toward Monday's
+        early-session highs.
+      why: >
+        The relief report was the only US signal of flexibility on offer,
+        and Iran has said it will not reopen Hormuz or negotiate until
+        Washington acts first, so an unanswered deadline leaves both sides
+        further apart than the mediators' framing suggests.
+      precedent: >
+        On 09-23, Brent dipped toward $98.50 overnight, then settled at
+        $103.08 (+3.86%) after Trump threatened to "annihilate" Iran, which
+        shows rhetoric alone rebuilding the premium (this map's
+        red-sea-oil-shock thread, 09-23). Monday's own open is a second case:
+        Brent jumped more than $4 within hours of Trump rejecting Iran's
+        seven-day Hormuz proposal, before the relief report and Saudi flows
+        pulled it back.
+  context_note: >
+    capital-context.yaml's conflict_risk_premium (asof 08-24, about five
+    weeks stale) describes prices falling into escalation and rising on
+    rhetoric only unevenly; it predates the current mediated-talks phase, so
+    it supports the two-way framing above but not either branch. The next
+    /week refresh should note whether the Rezaei deadline passed without a
+    price response.

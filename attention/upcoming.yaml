@@ -3124,6 +3124,7 @@ expectations:
     # on 09-19 that Michigan City's Common Council tabled the moratorium 8-1 on 09-15, replacing it with a different
     # measure: https://www.wvpe.org/wvpe-news/2026-09-19/michigan-city-data-center-moratorium-delay-draws-frustration-
     # during-council-meeting . So the second reading did not produce a moratorium.
+    # 2026-09-29 ⟨daily⟩: WVPE (09-19): the council tabled the ordinance 8-1 on 09-15, so the second reading did not proceed. Stays passed-silent.
   - id: boj-september-meeting-0918
     claim: >
       The Bank of Japan's 09-17/18 policy meeting decides on a rate hike,
@@ -4025,7 +4026,7 @@ expectations:
       imprecise about timing rather than wrong about outcome — worth a
       direct Legistar file-number check to convert this to `slipped` with a
       real adoption-vote date if one surfaces.
-
+    # 2026-09-29 ⟨daily⟩: misframed. Supervisor Walton introduced a 45-day moratorium on 09-15; no board vote found through 09-29. Stays passed-silent.
   - id: bessent-large-bank-iran-sanction-0914
     claim: >
       Treasury Secretary Scott Bessent's plan to sanction an unnamed "large
@@ -4628,6 +4629,8 @@ expectations:
     # passed-silent, grace to 09-28.
     # 2026-09-26 15:00 ⟨daily⟩: the 09-25 Record package still returns govinfo's error page on Saturday afternoon; with the Senate
     # adjourned from 09-24 to Mon 09-28, no floor request could have come Friday. Grace to 09-28 stands.
+    # 2026-09-29 ⟨daily⟩: WVVA (09-27) says Warner's unanimous-consent attempt 'failed' (attempt made about 09-24). The Senate is in recess; no passage found.
+    # Stays passed-silent (grace over); the reading is a failed consent request, not a Senate agreement.
   - id: spacex-lockup-tranche-1009
     claim: "The next tranche of SpaceX post-IPO lockup expiries comes on 10-09 (another on 10-24), after about 328 million shares, roughly $48.7bn at Wednesday's close, were released on 09-24"
     due: 2026-10-09
@@ -4707,6 +4710,9 @@ expectations:
     # 2026-09-26 15:00 ⟨daily⟩: Trump rejected Iran's seven-day plan on the record Saturday ("I reject their proposal", CNN and
     # Al Jazeera; NBC transcribes "I rejected their deal"), the first on-record US answer after the WSJ's unnamed-officials report.
     # No Iranian on-record reaction to that rejection by about 3pm ET. Stays pending to 09-29.
+    # 2026-09-29 ⟨daily⟩: Rezaei's clock was set on the evening of 09-23 (Gulf News), not 09-24. Araghchi met Qatari mediators in New York on 09-28
+    # and said he expects the US 'final response' on Tuesday 09-29 (France 24, Al Jazeera). Trump denied offering sanctions relief (Truth Social, Monday
+    # evening). No US concession and no Iranian declaration that the window lapsed as of ~10:30am ET. Stays pending; recheck this evening and 09-30.
   - id: greer-us-china-goods-deal-details-0928
     claim: "USTR Jamieson Greer publishes the fuller US details of the US-China partial goods arrangement he said would come Monday, with a product-level list, tariff rates or an effective date"
     due: 2026-09-28
@@ -4857,5 +4863,53 @@ expectations:
     confidence: reported
     what_confirms: "Confirmed (not just claimed) control of Alamata by either side, and whether the rebel coalition reaches Afdeera/the Djibouti corridor or is repelled — either a Reuters/AP/wire confirmation or a further reversal in the fighting."
     logged: 2026-09-28
+    logged_by: curate-add
+    status: pending
+  - id: us-iran-hormuz-final-response-0929
+    claim: "The US delivers its 'final response' to Iran's Hormuz proposals via Qatari mediators on 09-29, as Foreign Minister Araghchi said he expects"
+    due: 2026-09-29
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: []
+    source: https://www.aljazeera.com/news/2026/9/29/irans-araghchi-meets-qatari-mediators-as-us-insists-on-nuclear-talks
+    confidence: reported
+    what_confirms: "A US or Qatari statement that a reply was delivered, or Iranian comment on it. A US official said there is no deal without nuclear progress."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: openai-kwon-sydney-hearing-1006
+    claim: "OpenAI chief strategy officer Jason Kwon appears before the Australian joint parliamentary committee in Sydney on 10-06 on the rogue-agent incident; Altman and Amodei are skipping the Canberra Senate hearing on 10-01"
+    due: 2026-10-06
+    due_precision: day
+    thread: openai-agent-security-incident
+    entities: []
+    source: https://www.startupdaily.net/topic/politics-news-analysis/sam-altman-stays-home-but-a-senior-openai-exec-heads-to-australia-for-parliamentary-inquiry-into-medicares-rogue-agent-attack/
+    confidence: reported
+    what_confirms: "Kwon's testimony on 10-06 and what he says about the June access to Australian government sites."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: nyc-council-ai-hearing-1005
+    claim: "The New York City Council holds a full-council AI-safety hearing on 10-05; it subpoenaed Elon Musk / SpaceXAI to testify, and Anthropic, OpenAI, Google and Meta agreed to send representatives"
+    due: 2026-10-05
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://council.nyc.gov/press/2026/09/28/3266/
+    confidence: reported
+    what_confirms: "The hearing held, who testified (whether Musk or SpaceXAI complied with the subpoena), and what the labs' representatives said."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: openai-pro-200-signups-reopen-0930
+    claim: "OpenAI reopens new sign-ups for its $200-a-month ChatGPT Pro plan on 09-30, with a recalculated (roughly halved) API-value allowance"
+    due: 2026-09-30
+    due_precision: day
+    thread: enterprise-agent-product-race
+    entities: []
+    source: https://www.unite.ai/openai-reopens-chatgpt-pro-200-sign-ups-with-new-usage-calculation/
+    confidence: reported
+    what_confirms: "OpenAI's own announcement or help page showing Pro sign-ups open on 09-30 and the new usage calculation."
+    logged: 2026-09-29
     logged_by: curate-add
     status: pending

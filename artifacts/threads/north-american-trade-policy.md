@@ -16,6 +16,7 @@ manufacturers by name.
 ## 2026-09-28 — Greer publishes US-China Board of Trade tariff recommendations
 
 - **USTR Jamieson Greer published product-level lists for a reciprocal $30 billion-each-way US-China tariff-reduction recommendation — 1,619 US items, 77 Chinese categories — under a newly established "US-China Board of Trade," but with no disclosed rates or effective date.** ([USTR](https://ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/us-releases-details-on-30-billion-of-goods-with-tariff-cuts)) ⟨daily 2026-09-28⟩
+- **A US ban on imports of Canadian alcohol, motorcycles, whey and molasses took effect at the start of Tuesday, a day after Trump said he expects a "fair deal" with Canada within weeks.** The list includes petrol motorcycles above 800cc and beer, cider, wine, whiskey and vodka packaged for direct consumption; no escalation has been announced since Sept. 9 and talks continue. ([CNBC](https://www.cnbc.com/2026/09/29/canada-import-ban-trade-war.html)) ⟨daily 2026-09-28⟩
 
 ## 2026-09-26 — Beijing lists eight outcomes of Xi's Washington visit, including a $30 billion reciprocal tariff reduction
 

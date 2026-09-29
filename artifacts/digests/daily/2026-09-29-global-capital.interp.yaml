@@ -1,0 +1,48 @@
+# Interpretations for 2026-09-29 global-capital, keyed by
+# slugify(bold lead[:50]). Read against attention/capital-context.yaml
+# (asof 2026-08-25, about five weeks stale; used for its described pattern
+# only) and this map's fed-independence-fight thread.
+
+us-consumer-confidence-fell-6-7-points-to-81-9-in:
+  mechanism: >
+    A fuel-cost squeeze is now showing up in household sentiment: the
+    Conference Board says consumers' mentions of prices, oil and gas hit
+    new highs and that they expect business conditions and the labor market
+    to weaken over six months, while job openings (7.1 million) and layoffs
+    (1.6 million) show no labor-market break yet. That combination is the
+    stagflation-shaped mix the oil-driven rise in yields has been pricing.
+    It bears on the Fed's 10-28 decision because the committee, which hiked
+    25bp on 09-16, is weighing an inflation impulse from oil against
+    softening demand signals, and soft sentiment alone has not stopped it
+    from tightening.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Sentiment weakness does not change the Fed's path, and October hike
+        odds stay high while long-end yields keep climbing.
+      why: >
+        The hard labor data (openings little changed, layoffs flat) gives no
+        recession signal, and oil-led price pressure is what consumers
+        themselves cite.
+      precedent: >
+        The FOMC hiked 25bp on 09-16, 12-0, after July payrolls fell 23,000,
+        July retail sales fell 0.6% and August sentiment printed 51.0, all
+        recorded in capital-context.yaml's rate_regime reading.
+    - direction: >
+        A further slide in confidence and spending data starts to pull
+        October hike odds down, easing the long end even with oil high.
+      why: >
+        Expectations components are already deep in negative territory and
+        consumers expect the labor market to weaken; if that reaches payrolls
+        in the 10-02 report, the case for a second hike weakens.
+      precedent: >
+        The 08-07 payrolls miss, which capital-context.yaml records as the
+        sharpest challenge to the hawkish read, produced relief in yields
+        before the Fed then hiked anyway, so the branch needs hard labor
+        data and not sentiment alone.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-24) predates the 09-16 hike
+    and the current 5.24% 10-year; it describes the same
+    cooling-data-versus-hawkish-Fed tension but not today's level. The next
+    /week refresh should fold in the hike, the 10-year at a two-decade high
+    and today's confidence print.

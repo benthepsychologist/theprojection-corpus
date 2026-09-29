@@ -8,6 +8,10 @@ opened: 2026-08-04
 
 # AMD — timeline
 
+## 2026-09-28 — AMD agrees to buy Fei-Fei Li's World Labs for $8.2 billion
+
+- **AMD agreed to acquire Fei-Fei Li's World Labs for about $8.2 billion in stock, with Li joining AMD as executive vice president and chief scientist** AMD's release says the deal is expected to close by the end of 2026, subject to regulatory approvals, and that World Labs' spatial-intelligence models will inform AMD's hardware and software roadmaps. CNBC notes AMD is chasing Nvidia, which already offers open-weight world models. ([AMD](https://ir.amd.com/news-events/press-releases/detail/1299/amd-to-acquire-world-labs-to-advance-the-future-of-ai-compute), [CNBC](https://www.cnbc.com/2026/09/28/amd-fei-fei-li-world-labs.html)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-22 — AMD crosses $1 trillion in market value, on a hyperscaler-customer product catalyst rather than its own numbers
 
 - **AMD shares jumped 9.95% to close at $615.52 on Monday 09-21, taking its market capitalization above $1 trillion for the first time, on a rally triggered by Meta's new consumer AI agent "Muse" hitting #1 on Apple's App Store (448,000 daily active users ten days after launch) rather than by any AMD-specific news.** Coverage frames the connection directly: AMD has a standing commercial relationship with Meta (the February 2026 agreement already on this thread, covering up to 6GW of AMD accelerator deployment), and traders read Muse's rapid inference-traffic growth as demand validation for the CPU-plus-accelerator capacity AMD is building toward. It's a new kind of catalyst for this thread to track — AMD's valuation moving on a customer's downstream product success rather than AMD's own earnings, financing, or shipment news. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-21/amd-set-to-top-1-trillion-in-market-value-as-chip-stocks-soar), [Benzinga](https://www.benzinga.com/markets/tech/26/09/61908373/meta-muse-app-store-amd-stock-trillion-ai-agents)) ⟨daily 2026-09-22⟩

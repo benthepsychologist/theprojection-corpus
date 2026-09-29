@@ -16,6 +16,15 @@ the daily toll, Houthi threats to close the strait if Gulf states join the
 wider war, and whether the UN envoy's warning of a return to full-scale war
 becomes a formal collapse of the 2022 truce.
 
+## 2026-09-29 — UN envoy meets the Houthis' chief negotiator; the US flags Houthi ties to al-Shabaab
+
+- **Yemen's UN envoy, Hans Grundberg, said Tuesday he met the Houthis' chief negotiator in Muscat over the weekend to try to head off further escalation, calling the Houthis' attacks on Saudi Arabia "unprecedented"; the UN counts at least 838 killed and more than 3,640 wounded in the offensive.** More than 145,000 people are displaced inside Yemen and over 3,000 have fled to Djibouti. ([Naharnet, AP](https://www.naharnet.com/stories/322809-un-envoy-meets-houthi-negotiators-in-a-bid-to-halt-escalating-violence-in-yemen)) ⟨daily 2026-09-29⟩
+- **The US military's Africa Command called the growing ties between the Houthis and Somalia's al-Shabaab a "highly concerning, escalatory threat to regional stability," the Financial Times reported.** Experts say the Houthis have sold weapons to al-Shabaab and trained hundreds of its fighters in drone and explosive use. ([Financial Times, via Horseed Media](https://horseedmedia.net/us-warns-houthi-ties-with-al-shabaab-threaten-red-sea-trade/426023/)) ⟨daily 2026-09-29⟩
+
+## 2026-09-28 — Yemen's parliament approves general mobilisation
+
+- **Yemen's internationally recognised parliament approved a general mobilisation of the population of military age on Monday, at the request of Presidential Leadership Council chairman Rashad al-Alimi, to counter the Houthi offensive on the western coast.** It follows Alimi's call for mobilisation on Friday 09-25; the government-side news agency Saba reported the virtual session. ([Saba](http://sabanew.net/story/en/153142)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-27 — Saudi-led coalition intercepts Houthi fire on Riyadh as a Saudi strike kills seven in Taiz
 
 - **A Saudi-led coalition intercepted Houthi drones and missiles aimed at the Riyadh area early Sunday, hours before several Riyadh schools abruptly shifted to a week of remote learning with no official explanation.** ([Arab News, citing AFP](https://www.arabnews.com/saudi-arabia/saudi-authorities-shift-schools-in-riyadh-to-remote-learning-for-week-afp-3003343)) ⟨daily 2026-09-27⟩

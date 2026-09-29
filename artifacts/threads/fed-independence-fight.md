@@ -41,6 +41,10 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-09-29 — Consumer confidence drops to 81.9 as fuel-cost worries hit new highs
+
+- **US consumer confidence fell 6.7 points to 81.9 in September, with oil and gas prices the most-cited worry.** The Conference Board's survey ran September 1-23 and included the Fed's 09-16 rate hike; job openings held at 7.1 million in August. ([Conference Board via PR Newswire](https://www.prnewswire.com/news-releases/us-consumer-confidence-fell-in-september-302892867.html), [BLS](https://www.bls.gov/news.release/jolts.nr0.htm)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-23 — White House economic chief attacks Fed officials pushing rate hikes
 
 - **National Economic Council Director Kevin Hassett criticised Federal Reserve policymakers not appointed by President Trump for seeking rate hikes, asking "Why are they hiking" when, he said, recent annualised core inflation is 2%, and said Chairman Kevin Warsh is "managing an unusually partisan Fed."** He spoke Wednesday at Georgetown University, a week after the Fed's first hike since 2023 and a day when Governor Barr said further hikes are likely needed; CNBC describes inflation as still above 3%, so the 2% figure is Hassett's own measure. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/hassett-blasts-fed-officials-calling-for-hikes-in-recent-days), [Guavy](https://guavy.com/wire/forex/hassett-slams-fed-officials-for-seeking-hikes-amid-subdued-inflation-0nDjKWax48nEEpiEIgLjs5)) ⟨daily 2026-09-23⟩

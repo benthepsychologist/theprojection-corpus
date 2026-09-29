@@ -22,6 +22,10 @@ figure; does growing Microsoft compute-channel dependence complicate the
 "sovereign alternative" framing. Cross-refs `asml` (the ASML 11%-stake side
 of Mistral's cap table lives there, not here).
 
+## 2026-09-28 — Mistral's CEO says the US safety debate covers rivals' negligence and Mistral will not slow down
+
+- **Mistral CEO Arthur Mensch said the US debate over AI safety has been "a cover for the negligence of some of our competitors," and that Mistral will not slow down** He told CNBC that systems to contain AI agents are needed, that the US labs' lead is "not extremely large," and that Mistral's next model will "close the gap very significantly"; CNBC notes Mistral raised €3 billion led by Samsung earlier this month. ([CNBC](https://www.cnbc.com/2026/09/29/mistral-ai-safety-openai-anthropic.html)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-24 — Mistral's CEO says a new model is coming in weeks and attacks US labs' doom warnings
 
 - **Mistral CEO Arthur Mensch told Le Monde that US labs' AI-doom warnings are being used to close off the market, that a new Mistral model will launch "in the coming weeks," and that Europe should introduce "state guarantees" to make data-centre funding easier** The interview, given after Mistral raised €3 billion in early September, defends the company against criticism that it is falling behind American and Chinese rivals. ([Le Monde](https://www.lemonde.fr/en/economy/article/2026/09/24/arthur-mensch-ceo-of-french-start-up-mistral-ai-ai-is-software-it-can-be-controlled_6757890_19.html)) ⟨daily 2026-09-24⟩

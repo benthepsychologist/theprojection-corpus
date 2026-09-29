@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-28 — SpaceXAI ships Team Bots for shared Grok agents
+
+- **SpaceXAI launched Team Bots, Grok Bots that a team shares so everyone works from the same context** Each combines shared files and instructions, plugins for Salesforce, Notion and GitHub, credentials and per-user memories, keeps each person's conversations private, and can join Slack channels; SpaceXAI says it uses them internally to brief account teams each morning. ([SpaceXAI](https://x.ai/news/team-bots)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-25 — Musk says SpaceXAI's Colossus 2 will add 220,000 more Nvidia chips next week
 
 - **Elon Musk said early Friday that SpaceXAI's Colossus 2 data center in Memphis, currently running 110,000 Nvidia GB200 and 440,000 GB300 chips, will add another 220,000 GB300 chips next week and a further 220,000 in November** The post did not address whether Colossus 2 currently has enough power and supporting infrastructure to operate the added chips; EconoTimes' report is a secondary account of Musk's X post, not a SpaceXAI statement. ([EconoTimes](http://www.econotimes.com/SpaceXAI-to-Double-Nvidia-Chips-at-Colossus-2-by-Year-End-1753056)) ⟨daily 2026-09-25⟩

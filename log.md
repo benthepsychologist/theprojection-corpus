@@ -12832,3 +12832,54 @@ checked live — the deploy had only just been queued).
 `nvidia-500b-financing-first-close`'s window closes tomorrow, 09-30. No open thread-candidate
 decisions outstanding — Serbia, UBS and Venezuela were promoted this morning and both afternoon
 sweeps found nothing pending a decision.
+
+## 2026-09-29 ~14:00-14:50 UTC (~10:00-10:50 ET) — `/daily`: finalized Monday 09-28 with critics (12 misses folded in, 16 corrections applied), opened Tuesday 09-29, updated the ledger and eight actor syntheses, fed the graph, and republished the site
+
+**What ran.** A morning run that finalized Monday 09-28 and opened Tuesday 09-29. The collectors were launched
+detached first (`google_news_rss`, `gdelt` and the fast lanes as separate processes; `openalex` dropped, since it
+has stalled on 429s four runs in a row). Wave 1 was four lens sweeps (frontier-ai, global-capital, mental-health,
+world-news), each finalizing Monday's evening and overnight window and opening Tuesday, plus a ledger checker. Wave 2
+was three coverage critics against Monday, then four late-buffer triage agents that also applied the critics'
+corrections to the digests once `google_news_rss` landed (11,265 rows, 14:25Z). Twenty-four foreground sonnet
+agents in all, no waiting on background work. 09-28 flipped to `final`, with `coverage: done` for the three
+benchmarked lenses and `na` for world-news; Tuesday's digests stay `building`.
+
+**Day in review (09-28).** OpenAI shelved its next model, GPT-6.1 "Astra", over safety concerns and apologized to
+Australia; Anthropic's IPO prospectus was reported (about $4.6B 2025 revenue, $42B net loss including about $34B of
+accounting charges, $518B planned compute, a "Founder LLC" of the seven co-founders directing a 50.1%-vote share; not a
+public filing); Nvidia launched the Open Agent Safety Platform and raised its buyback by $150B; AMD agreed to buy World
+Labs for $8.2B. Stocks and bonds fell on the Hormuz standoff (S&P 500 -0.77%, 10-year 5.24% on Treasury's par curve, Brent
+November $105.28 vs December $97.83, gold -3.5%); Trump denied offering Iran sanctions relief. Ethiopia's war swung both
+ways (Alamata claimed, Afdeera pushed); the RAF Fairford suspects are all British nationals and UK police named no state;
+a ship was set ablaze in Hormuz. Mental health: Florida's full injunction motion against OpenAI, the VA consent rule,
+Pennsylvania's HB 2006 (133-70), CT-155's phase 3 result. No flash.
+
+**Coverage critics.** Twelve confirmed misses (six frontier-ai, four global-capital, two mental-health) and 16
+corrections, all applied after checking each against its source. Notable: the Astra "deception" quote is the Journal's,
+not the safety lead's; Nvidia's "record" is the largest buyback *increase*; Brent figures now name their contract; the
+Tigray TV strike was Sunday; the Warner–Schatz consent attempt is most likely 09-23. Two wording corrections went into
+thread files (`openai-agent-security-incident`, `frontier-model-gov-review-precedent`, `nvidia-vendor-financing`,
+`iran-conflict-widening`, `horn-of-africa-war`, `anthropic-ipo-timing`). The collector's 09-28 clinical-trials file
+lacked the Charité DHEA phase 3 registration (NCT07843927) entirely.
+
+**Ledger.** No flips. Corrected notes on `iran-rezaei-hormuz-deadline-0929` (clock set 09-23, not 09-24),
+`warner-schatz-nsa-model-testing-consent-0925` (consent attempt failed per WVVA), `michigan-city-moratorium-second-reading`
+(tabled 8-1) and `sf-datacenter-moratorium-vote-0915` (introduced, not voted). Four new entries:
+`us-iran-hormuz-final-response-0929`, `openai-kwon-sydney-hearing-1006`, `nyc-council-ai-hearing-1005`,
+`openai-pro-200-signups-reopen-0930`. Not resolvable at 10:50 ET (due today): OpenAI DevDay, the Trump–Johnson tech-CEO
+meeting, Rezaei's deadline, the DigitalBridge close, SoftBank's bond settlement. `anthropic-public-s1-filing` stays
+passed-silent (prospectus reported, not filed). Also: 28 + 9 + 21 timeline bullets merged in three passes, `last_seen`
+bumped on 25 threads, and eight actor syntheses refreshed (openai, anthropic, nvidia, amd, meta-ai, mistral-ai, spacex,
+samsung).
+
+**Site.** Four briefing packs rebuilt and written by four sonnet-class agents; `--apply` took 3 of 4 on the first try and
+the AI lens on the second (one section had 5 bullets, limit 4); `--export` 154 readouts. Graph fed (87 new S1 claims,
+59 new S2, 3 critic passes) and `graph/validate.py` OK (7,001 atoms). publish-kit dry run then `--push`: 1,721 story
+pages, 5 interpretation pages, 753 claim pages, 122 map pages, 70 entity pages; receipt
+`provenance/publish-2026-09-29T144556Z.yaml` with `deploy_fired` and `deploy_ok` both true.
+
+**Where to pick up.** The 15:00 ET run should read DevDay, the East Room meeting, the Rezaei/Qatar reply and the
+DigitalBridge/SoftBank items first. `nvidia-500b-financing-first-close` closes 09-30. California's four AI health-care
+bills and Portland's psychedelics ordinance land 09-30. Open for Ben: a West Bank settler-violence thread (first offer);
+the `north-american-trade-policy` mis-fit (third day); Northern Star/Gold Fields' bid is a 09-27-day story missing from
+the finalized 09-27 digest.
