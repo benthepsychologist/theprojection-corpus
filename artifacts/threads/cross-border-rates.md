@@ -23,6 +23,10 @@ France's 09-30 draft Finance Bill.
   digests and their critic sections, not re-copied here.
 -->
 
+## 2026-09-29 — France's debt hits a record 119% of GDP and its agency plans record 2027 borrowing
+
+- **France's public debt reached a record 119% of GDP at the end of June, and its debt agency said it will sell a record €340 billion of bonds in 2027, as the premium over German bonds hit its highest since 2012.** Insee put debt at €3,595.5 billion, the highest ratio since 1946; the agency's €340 billion compares with €310 billion this year and assumes the 10-year yield eases to 4.3% from about 4.8%. ([Euronews](https://www.euronews.com/business/2026/09/29/frances-public-debt-soars-to-a-record-119-of-gdp), [Reuters via Devdiscourse](https://www.devdiscourse.com/article/international/3984042-france-plans-record-bond-sales-in-2027-as-covid-era-debt-comes-due)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-28 — France previews record debt ahead of 2027 budget bill
 
 - **France's finance ministry projected national debt will hit a record 119.3% of GDP in 2026, and unions announced Tuesday strikes ahead of PM Lecornu's 2027 budget bill (due to parliament this week, proposing ~€54bn of spending restraint).** ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/french-unions-plan-strikes-to-pressure-government-over-budget), [MNI Markets](https://www.mnimarkets.com/articles/budget-deficit-to-be-47-50percent-in-2026-watchdog-expresses-doubts-1760432090320)) ⟨daily 2026-09-28⟩

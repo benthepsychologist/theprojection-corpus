@@ -3745,7 +3745,9 @@ expectations:
     what_confirms: "the DevDay keynote/announcement itself, and what 'managed agents' actually means as a product"
     logged: 2026-09-09
     logged_by: critic-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    note: "DevDay held 09-29. OpenAI launched Bedrock Managed Agents with AWS (limited preview), plus dots always-on agents, GPT-6.1 Sol and a computer-use Agents API (openai.com/index/devday-2026-recap/; thenextweb.com/news/openai-bedrock-managed-agents-aws-devday). The 'managed agents' name predates DevDay (an OpenAI-on-AWS page dated 04-28 listed it)."
 
   - id: definium-panorama-topline
     claim: "Definium's second Phase 3 trial for DT120 ('Panorama', in generalized anxiety disorder, with a low-dose 50µg arm added to counter functional unblinding) expects topline results"
@@ -4673,7 +4675,9 @@ expectations:
     what_confirms: "A White House or Speaker's office readout, or reporting on who attended and whether any federal AI-oversight or pre-emption proposal came out of it."
     logged: 2026-09-25
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    note: "The lunch took place about 1:08pm ET with roughly 20 CEOs. Trump spoke of 'tremendous self-regulation'; Johnson said oversight could be voluntary and opposed a moratorium; no signed commitment or oversight measure reported (cnbc.com/2026/09/29/tech-white-house-ai-lunch-trump.html)."
   - id: mecca-pact-turkiye-ratification-1001
     claim: "Turkiye's parliament takes up ratification of the Saudi-Turkiye-Pakistan joint defence agreement in its October session, after Saudi Arabia asked its partners to explore support under the pact against the Houthis"
     due: 2026-10-31
@@ -4910,6 +4914,42 @@ expectations:
     source: https://www.unite.ai/openai-reopens-chatgpt-pro-200-sign-ups-with-new-usage-calculation/
     confidence: reported
     what_confirms: "OpenAI's own announcement or help page showing Pro sign-ups open on 09-30 and the new usage calculation."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: trump-super-intelligence-rename-order-0929
+    claim: "President Trump signs an order formally renaming artificial intelligence 'super intelligence' in federal usage on 09-29 (Fox said 5pm ET)"
+    due: 2026-09-29
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.usatoday.com/story/news/politics/2026/09/29/trump-official-rebranding-ai-to-super-intelligence/92003107007/
+    confidence: reported
+    what_confirms: "The signed order text or a White House release; unsigned by about 3pm ET."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: openai-30b-round-terms
+    claim: "OpenAI finalizes its bridge raise of at least $30 billion at about $1.4 trillion pre-money, reported by Bloomberg as talks"
+    due: 2026-10-31
+    due_precision: month
+    thread: openai-ipo-timing
+    entities: [openai]
+    source: https://www.bloomberg.com/news/articles/2026-09-29/openai-targets-30-billion-in-new-funding-at-1-4-trillion-value
+    confidence: rumored
+    what_confirms: "An OpenAI announcement or a filing giving the amount, valuation and investors."
+    logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+  - id: spr-loan-bids-1006
+    claim: "Bids are due 10-06 on the Energy Department's offer to loan up to 40 million barrels from the Strategic Petroleum Reserve, the last of March's 172 million"
+    due: 2026-10-06
+    due_precision: day
+    thread: red-sea-oil-shock
+    entities: []
+    source: https://www.thenationalnews.com/news/us/2026/09/29/us-to-withdraw-more-oil-from-emergency-stockpile-as-country-faces-rising-fuel-prices/
+    confidence: reported
+    what_confirms: "The Energy Department's award notice or wire reporting on volumes awarded."
     logged: 2026-09-29
     logged_by: curate-add
     status: pending

@@ -13,6 +13,10 @@ renegotiated before then, any Mexico- or EU-side response, and whether
 the auto-parts tariff (a genuinely new category) reaches specific
 manufacturers by name.
 
+## 2026-09-29 — Canada's economy stalls in July and Deloitte cuts its 2027 forecast
+
+- **Canada's real GDP was unchanged in July, Statistics Canada said, and Deloitte cut its 2027 growth forecast for the country to 1.6% from 2.0%.** Manufacturing fell 0.9% and mining and oil and gas extraction 0.5%; Deloitte's outlook rests on the 50% US tariffs that began August 22 and Canada's reciprocal tariffs from September 8. ([Statistics Canada](https://www150.statcan.gc.ca/n1/daily-quotidien/260929/dq260929a-eng.htm), [CBC](https://www.cbc.ca/news/business/trump-gdp-canada-9.7362091)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-28 — Greer publishes US-China Board of Trade tariff recommendations
 
 - **USTR Jamieson Greer published product-level lists for a reciprocal $30 billion-each-way US-China tariff-reduction recommendation — 1,619 US items, 77 Chinese categories — under a newly established "US-China Board of Trade," but with no disclosed rates or effective date.** ([USTR](https://ustr.gov/about/policy-offices/press-office/press-releases/2026/september/ambassador-greer-issues-statement-announcement-recommendations-us-china-board-trade), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-28/us-releases-details-on-30-billion-of-goods-with-tariff-cuts)) ⟨daily 2026-09-28⟩

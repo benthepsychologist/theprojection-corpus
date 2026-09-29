@@ -12,6 +12,10 @@ opened: 2026-06-28
 regulatory reckoning; consolidation. Tests whether the market prices in
 rigor — the evidence-gap thesis. Cross-refs ai-therapy-regulatory-reckoning.
 
+## 2026-09-29 — VA awards $111.9 million in Fox suicide-prevention grants to 191 community organizations
+
+- **The Department of Veterans Affairs announced on 09-29 that it awarded $111.9 million in Staff Sergeant Parker Gordon Fox Suicide Prevention Grants to 191 community organizations, funds that become available at the start of fiscal year 2027.** VA Secretary Doug Collins said community groups are critical to reaching veterans who may not connect with VA care; VA says 61% of veterans who died by suicide in 2023 were not receiving VA health care in their last year of life. ([Department of Veterans Affairs](https://news.va.gov/press-room/va-awards-112-million-in-suicide-prevention-grants/)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-28 — LifeStance names interventional psychiatry its 2027 growth lead, and a Massachusetts ABA provider sues over Medicaid clawbacks
 
 - **LifeStance Health, the Nasdaq-listed outpatient mental-health chain, said on 09-28 that it plans to grow from 34 states to all major US markets in 2027, led by new clinics and targeted acquisitions, with interventional psychiatry at the top of its priority list.** Chief growth officer Dan Ferris named treatment-resistant depression, psychological and neuropsychological testing and scalable therapy practices as targets, and chief medical officer Dr. Stephanie Eken said the company is also evaluating at-home neuromodulation devices to complement TMS. ([Behavioral Health Business](https://bhbusiness.com/2026/09/28/lifestance-execs-say-interventional-psychiatry-critical-to-companys-expansion-plans-in-2027/)) ⟨daily 2026-09-28⟩

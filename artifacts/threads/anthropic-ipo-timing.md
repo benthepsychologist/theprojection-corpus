@@ -12,6 +12,10 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-09-29 — Anthropic tells investors rogue agents create uncertain legal risk
+
+- **Anthropic told investors in its IPO prospectus that rogue AI agents could expose it to legal claims from customers and users, and that the legal framework is uncertain, Reuters reported** Reuters described it as an exclusive drawn from the prospectus, a document it reviewed rather than a public filing. ([Reuters](https://www.reuters.com/legal/litigation/anthropic-says-rogue-ai-agents-pose-uncertain-legal-risk-company-2026-09-29/)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-28 — Anthropic's IPO prospectus is reported: $42 billion loss, $518 billion of spending plans, 80 pages of risk factors
 
 - **Anthropic's IPO prospectus, as reported by Reuters on Monday evening, shows a $42 billion net loss in 2025 on nearly $4.6 billion of revenue, and plans to spend $518 billion on cloud, computing and infrastructure in coming years** Reuters says about $34 billion of the loss was an accounting charge tied to the rising value of financing that could convert into shares; operating loss was above $8 billion, operating expenses $12.65 billion and year-end cash $20.28 billion, and nearly a quarter of revenue came from two customers. Backers reportedly see a listing above $2 trillion versus $965 billion in May, and Reuters says the debut is likely after the November midterms, later than earlier reporting of a listing days before them. Reuters and the FT reviewed the prospectus; neither reported a public filing. ([CNBC, citing Reuters](https://www.cnbc.com/2026/09/28/anthropics-ipo-prospectus-shows-sweeping-ai-vision-surging-costs-reuters.html), [TechCrunch](https://techcrunch.com/2026/09/28/anthropics-prospectus-details-losses-growth-and-yes-a-warning-that-its-ai-could-end-humanity/)) ⟨daily 2026-09-28⟩

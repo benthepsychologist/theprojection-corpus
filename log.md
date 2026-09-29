@@ -12883,3 +12883,34 @@ DigitalBridge/SoftBank items first. `nvidia-500b-financing-first-close` closes 0
 bills and Portland's psychedelics ordinance land 09-30. Open for Ben: a West Bank settler-violence thread (first offer);
 the `north-american-trade-policy` mis-fit (third day); Northern Star/Gold Fields' bid is a 09-27-day story missing from
 the finalized 09-27 digest.
+
+## 2026-09-29 ~19:00-19:55 UTC (~15:00-15:55 ET) — `/daily`: extended Tuesday 09-29 through the afternoon (DevDay, the White House AI lunch, the 30-year at a 24-year high, Hormuz deadline unanswered) and republished the site
+
+**What ran.** The 15:00 ET afternoon run. There was no day to finalize and no critic (Monday was finalized at 10:00 ET). Collectors
+launched detached first, without `openalex` (stalled four runs in a row); `google_news_rss` landed at 19:25Z with 3,194 new rows.
+Wave 1 was four lens sweepers (PA, PG, PM, PW, each editing its own 09-29 digest in place); wave 2 was four late-buffer triage
+agents (ZA, ZG, ZM, ZW) reading the afternoon rows; wave 3 was four briefing agents. Twelve sonnet agents, all foreground, waves of 4.
+
+**Map effects (`attention/`).**
+- `upcoming.yaml`: two flips to `hit` (`openai-managed-agents-devday-2026`, `trump-johnson-tech-ceos-ai-meeting-0929`); three new
+  entries (`trump-super-intelligence-rename-order-0929`, `openai-30b-round-terms`, `spr-loan-bids-1006`). Still pending and unresolved
+  at about 3:45pm ET: Rezaei's Hormuz deadline, the US reply, DigitalBridge close, SoftBank bond settlement, the rename order (unsigned).
+- `threads.yaml`: `last_seen` bumped on 17 threads. No thread opened or closed; two first-offer candidates in the front digest
+  (West Bank settler violence carried; UniCredit-Commerzbank new).
+- `actor-doing.yaml`: `openai`, `anthropic`, `united-states` refreshed.
+
+**Timeline.** 17 bullets merged from wave 1 and 28 from wave 2 (22 threads). Late catches went into Monday's blocks (Cook's speech,
+Zervos, JAMA umbrella review, India's under-18 rule, Pennsylvania HB 2637, Yemen, Starship's first orbit) and the CDC's 09-21 youth survey
+into its own day. **Correction:** the morning-merged `red-sea-oil-shock` SPR entry implied the loan caused oil's 2% fall; Reuters
+attributes it to Middle East export recovery, so the heading and bold lead were fixed. The digest also dropped a 7-year auction
+wrongly listed for 09-30 (cleared 09-24).
+
+**Site and graph.** Four briefings applied 4/4 first try; `--export` 154 readouts. Graph: `06_timelines.py` (42 new S2) then
+`graph/validate.py` OK (7,043 atoms). publish-kit dry run then `--push`: receipt `provenance/publish-2026-09-29T194054Z.yaml`,
+`deploy_fired` and `deploy_ok` true. Fetched the 25 digest URLs no staging file carried: 21 returned 200; four were Reuters, FT and NYT
+pages that 401/403 to urllib and were carried by agents from syndicated copies.
+
+**Where to pick up.** Evening/overnight window (Tuesday 5pm ET onward) is unread: the 4pm closes, the rename order, Rezaei's deadline,
+DigitalBridge and SoftBank, Nvidia's 09-30 first close, California's four AI health-care bills and Portland's ordinance (both 09-30),
+Micron's 09-30 earnings. Open for Ben: the two thread candidates above; `north-american-trade-policy` still a mis-fit; AMD's $8.2B World Labs
+purchase (release dated late 09-28) is not in the finalized 09-28 digest; Northern Star/Gold Fields still missing from 09-27.

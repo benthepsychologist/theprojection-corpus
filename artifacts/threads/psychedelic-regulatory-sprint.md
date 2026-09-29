@@ -15,6 +15,10 @@ rejected MDMA on unblinding/safety grounds and then wrote new trial-design
 rules (July 2026) addressing exactly the problem the accelerating trials
 share. The live question: is approval outrunning the methodology fix?
 
+## 2026-09-29 — Filament ships psilocybin to Calgary for a phase 2 PTSD trial in intimate-partner-violence survivors
+
+- **Filament Health, the psilocybin developer owned by Ontario-based Rhelion Life Sciences, said on 09-29 that it shipped its botanical psilocybin candidate PEX010 to the University of Calgary for PsiPTSD, a Phase 2 trial of psilocybin-assisted therapy for chronic PTSD in adult survivors of intimate partner violence (NCT06885996).** The university is the sponsor, led by Dr. Chantel Debert; Filament says it only supplies the drug, and the release gives no start date or enrolment figure. ([Rhelion Life Sciences via Newsfile](https://www.newsfilecorp.com/release/316514/Rhelion-Life-Sciences-Wholly-Owned-Subsidiary-Filament-Health-Ships-PEX010-to-the-University-of-Calgary-for-Phase-2-Trial-of-PsilocybinAssisted-Therapy-for-PTSD-in-Survivors-of-Intimate-Partner-Violence)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-25 — Filament Health expands psilocybin supply for Italy's first psilocybin trial
 
 - **Rhelion Life Sciences' subsidiary Filament Health expanded its supply agreement with the University of Chieti-Pescara on 09-25 for its botanical psilocybin capsules, PEX010, after the European Union authorized the university's TEMPO trial in treatment-resistant depression and raised its participant number during review.** The company says Italian press has reported TEMPO as the first psilocybin clinical trial in Italy; the university is the sponsor and the trial is coordinated with Italy's national health institute. A company release; the trial's registry entry was not read. ([Newsfile via Barchart](https://www.barchart.com/press-releases/4799307/rhelion-life-sciences-wholly-owned-subsidiary-filament-health-expands-supply-agreement-with-the-university-of-chieti-pescara-for-pex010-in-the-tempo-clinical-trial-of-psilocybin-for-treatment-resistant-depression-in-italy)) ⟨daily 2026-09-25⟩

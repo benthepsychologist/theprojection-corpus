@@ -18,6 +18,10 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-09-28 — Starship reaches orbit for the first time and deploys 26 Starlink V3 satellites
+
+- **SpaceX's Starship flew into orbit for the first time on Monday, September 28, and released 26 Starlink V3 satellites, the first operational satellites delivered by Starship.** One of Ship 41's engines shut down early on ascent and controllers held the ship for about 20 minutes before giving the go for orbit; it then splashed down in the Pacific north of Hawaii about three hours after liftoff, roughly two orbits instead of the six SpaceX had described, and tipped over and burned after splashdown. SpaceX said the satellites should start serving customers within a few weeks. ([SpaceQ](https://spaceq.ca/starship-flight-14-reaches-orbit-starlink-satellites/), [Wikipedia, Starship flight 14](https://en.wikipedia.org/wiki/Starship_flight_14)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-24 — About 328 million SpaceX shares come out of lockup, with two more tranches due in October
 
 - **About 328 million SpaceX shares came out of post-IPO lockup on Thursday, roughly $48.7bn at Wednesday's $148.36 close, with further tranches due October 9 and October 24; the stock was down about 1% at $146.95 at 3:39pm ET.** Stocktwits said the release follows 911.5 million shares on August 6 and 319 million on August 20, and that becoming eligible does not mean holders will sell; Mizuho reiterated Outperform with a $200 target, and an SEC filing dated 09-22 showed President Gwynne Shotwell proposed selling 342,170 shares worth about $52 million. ([Stocktwits via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/spacex-lockup-expiry-mizuho-reiterates-153149780.html)) ⟨daily 2026-09-24⟩

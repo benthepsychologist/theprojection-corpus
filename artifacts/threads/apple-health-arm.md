@@ -15,6 +15,10 @@ MH feature remains 2023's self-reported State of Mind; the rumored
 "emotional/wellbeing coach" is unverified. The live MH-adjacent trend is
 third-party AI (ChatGPT/Perplexity) ingesting Apple Health data.
 
+## 2026-09-29 — Apple and the American Academy of Pediatrics publish a family screen-time and parental-controls guide
+
+- **Apple and the American Academy of Pediatrics released "Building Healthy Digital Habits: A Guide for Families" on 09-29, a six-step guide to setting up children's iPhone, iPad and Mac parental controls alongside AAP screen-time guidance by age.** It follows the June announcement of expanded parental controls built with the AAP; Communication Safety is on by default for under-18s; no outcome data. ([Apple Support](https://support.apple.com/guide/aap-apple/screen-time-guidance-american-academy-dwpwek4yury5/web), [AppleInsider](https://appleinsider.com/articles/26/09/29/apple-american-academy-of-pediatrics-team-up-for-new-screen-time-guide)) ⟨daily 2026-09-29⟩
+
 ## 2026-09-22 — Apple prototypes a screenless Whoop-style band
 
 - **Apple is developing a screenless, Whoop-style health and fitness band, Bloomberg reported on 09-22, but has not decided whether to release it and it would not ship before 2028.** Prototypes pair a thin fabric band with a sensor-equipped computing module; the project is in a "technology investigation" phase with backing from Tim Cook and Eddy Cue, who runs Apple's health teams and has pushed simpler, Whoop- and Oura-style interfaces. ([9to5Mac](https://9to5mac.com/2026/09/22/apple-working-on-whoop-style-screenless-fitness-tracker-per-report/), [MacRumors](https://www.macrumors.com/2026/09/22/apple-screenless-fitness-band/)) ⟨daily 2026-09-22⟩

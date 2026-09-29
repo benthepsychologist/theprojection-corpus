@@ -46,3 +46,98 @@ us-consumer-confidence-fell-6-7-points-to-81-9-in:
     cooling-data-versus-hawkish-Fed tension but not today's level. The next
     /week refresh should fold in the hike, the 10-year at a two-decade high
     and today's confidence print.
+
+new-york-fed-president-williams-said-one-more-rate:
+  mechanism: >
+    Williams is a permanent FOMC voter, and his text splits the market's
+    worry in two. He says one more hike "may be appropriate late this
+    year" and sees inflation at 3.5% in 2026 because of energy and
+    AI-related goods prices, which keeps the hike path alive. But he also
+    says there is "no need for urgency" after the 09-16 hike, which argues
+    against the near-70% October hike odds the CME FedWatch tool showed
+    before he spoke. Long yields depend on both the expected policy path
+    and the inflation risk premium that oil adds, so the speech can pull
+    the front end down (the 2-year eased to about 4.90%) without settling
+    the 30-year, which had just touched 5.61%.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        October hike odds fade toward one hike by year-end, the 2-year yield
+        stays near 4.90% and the long end stops rising unless oil rebounds.
+      why: >
+        A voter who anchors the committee has signalled a slower path, and
+        the SPR loan plus recovering Saudi exports are trimming oil, the
+        input that has been driving the inflation forecasts.
+      precedent: >
+        The 09-16 hike was followed by a run of higher yields only after
+        officials such as Williams on 09-24 called another 2026 hike
+        reasonable (investingLive and Invezz reporting of that day; October
+        odds jumped from about 53% to 77.5% in a day), which shows that a
+        voter's words move the odds by tens of points in one session.
+    - direction: >
+        A hot PCE report on 09-30 or a firm payrolls print on 10-02 revives
+        October hike pricing despite Williams's "no urgency", and the
+        30-year keeps making 24-year highs.
+      why: >
+        Williams himself says the inflation risk has increased and that he
+        expects longer-lasting energy effects; other officials, including
+        Goolsbee as reported by investingLive, are arguing against looking
+        through supply shocks.
+      precedent: >
+        Monday 09-28's 5.24% 10-year close (Treasury par curve, in the
+        09-28 digest) came as oil jumped, before Trump's denial of sanctions
+        relief, so the recent yield climb has tracked oil headlines more
+        than Fed language.
+  context_note: >
+    capital-context.yaml's rate_regime (asof 08-24) predates the 09-16 hike
+    and the 09-29 yield highs; it describes the same cooling-data versus
+    hawkish-Fed tension but not the current levels. The Williams precedent
+    for 09-24 rests on two secondary reports read only as search summaries,
+    not on the speech text itself.
+
+france-s-public-debt-reached-a-record-119-of-gdp:
+  mechanism: >
+    France's debt is now rolled at much higher rates than it was issued, so
+    the arithmetic worsens on its own: redemptions rise to a record
+    EUR189.2 billion in 2027 and the agency's debt-service bill rises to
+    EUR72.9 billion from EUR62.6 billion, with a record EUR340 billion to be
+    sold into a market where France's premium over German bonds is already
+    the widest since 2012. The agency's plan assumes the 10-year yield eases
+    to 4.3% from about 4.8%, so the plan itself depends on the rate backdrop
+    calming, which in turn depends on the global long-end selloff that this
+    map's cross-border-rates thread tracks. Supply on that scale meets a
+    budget bill that goes to a divided parliament on Thursday and a
+    presidential election next spring, which is why the premium, not the
+    level, is the number to watch.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        The premium over Bunds stays above 100 basis points and the OAT
+        makes new post-2008 highs around the budget votes, pushing the
+        agency's 4.3% assumption out of reach.
+      why: >
+        Record issuance, a deficit target the government has already
+        acknowledged slipping, and a budget that needs a hostile parliament
+        all add supply and political risk together.
+      precedent: >
+        On 09-22 the OAT traded about 102 basis points over the Bund, and on
+        09-24 France's 10-year reached an 18-year high near 4.7% as
+        strategists warned the budget fight could topple the government
+        (both logged in the cross-border-rates thread).
+    - direction: >
+        The premium narrows if US and German long yields stop rising, and the
+        OAT eases toward the agency's assumed range without a budget shock.
+      why: >
+        France's spread has moved with the global bond selloff and with oil,
+        so a pause in US long-end yields would take pressure off before the
+        issuance calendar starts.
+      precedent: >
+        On 09-24 the 10-year OAT closed down 5.7 basis points after a 4.719%
+        intraday high while US yields were still rising (CNBC tracker, in
+        the cross-border-rates thread), showing French yields can retrace in
+        a session when the day's global move fades.
+  context_note: >
+    capital-context.yaml (asof 08-25) predates the long-end selloff and has
+    no France reading. The 4.8% "current" 10-year is the agency's figure via
+    Reuters; other vendors today show 4.73% to 4.74%, so the level is a range
+    and the premium is the firmer read.

@@ -8,6 +8,14 @@ opened: 2026-08-25
 
 # Treasury's Long-End Defense — timeline
 
+## 2026-09-29 — 30-year Treasury yield touches its highest since 2002
+
+- **The 30-year Treasury yield touched 5.612% on Tuesday, its highest since June 2002, with the 10-year near 5.28%.** Reuters had the 30-year at 5.6114% and the 10-year at 5.285% at about 1pm ET, from 5.562% and 5.242% late Monday; the 2-year eased to about 4.90% after the Fed's Williams said there was no urgency to hike again. ([Morningstar/Dow Jones](https://www.morningstar.com/news/dow-jones/202609295962/us-30-year-treasury-yield-sets-new-24-year-high), [Reuters via LSE](https://www.lse.co.uk/news/global-markets-bond-yields-extend-run-higher-stocks-ease-but-anthropic-ipo-optimism-boosts-tech-dtsbk6tj4be58dx.html)) ⟨daily 2026-09-29⟩
+
+## 2026-09-28 — (LATE MONDAY, main session decides) Bessent hires Jefferies strategist David Zervos as Treasury counselor
+
+- **Treasury Secretary Scott Bessent hired David Zervos, Jefferies' longtime chief market strategist, as a counselor to the Treasury, announced Monday.** CNBC said the hire was previously unreported and follows departures of seven of the department's 16 Senate-confirmed appointees as of mid-August; Newsmax described him as having publicly argued for lower interest rates and supported the department's buyback of longer-term Treasury debt. ([CNBC](https://www.cnbc.com/2026/09/28/david-zervos-treasury-department-scott-bessent.html), [Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/scott-bessent-hires-jefferies-economist-130618664.html)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-25 — The 10-year eases while the 30-year edges up to a new closing high near 5.49% on Friday
 
 - **The 10-year Treasury yield ended Friday near 5.17%, a hair below Thursday, while the 30-year rose to about 5.49% at the close, a new closing high for this selloff, with Treasury's own par curve and market vendors differing by a couple of basis points.** The par curve put the 10-year at 5.17% (5.18% Thursday), the 30-year at 5.49% (5.47%, up 2bp; Reuters had it up 2.63bp to 5.4883%) and the 2-year at 4.81% (4.87%); CNBC's last read was 5.163%, 5.488% and 4.856%, and October Fed-hike odds were about 64-69%, down from Thursday's 77.5% peak. ([CNBC](https://www.cnbc.com/2026/09/25/treasury-yields-bonds-debt.html), [U.S. Treasury par yield curve](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202609)) ⟨daily 2026-09-25⟩
