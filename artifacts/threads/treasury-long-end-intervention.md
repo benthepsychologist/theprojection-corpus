@@ -8,6 +8,10 @@ opened: 2026-08-25
 
 # Treasury's Long-End Defense — timeline
 
+## 2026-09-30 — Long-term Treasury yields rise after the inflation data
+
+- **Long-term Treasury yields rose after the inflation data, with the 10-year at 5.29% and the 30-year at 5.63% at about 12:30pm ET, above Tuesday's closes of 5.26% and 5.59%.** AP said the 10-year briefly dropped to 5.20% before climbing, the 2-year eased to 4.88%, and it tied the long end to government debt loads, a solid economy and higher oil. These are midday reads, not closes. ([AP](https://apnews.com/article/stocks-markets-oil-bonds-us-ai-chips-e61d3d7b947a390c7eee6c8758e3095d)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — 30-year Treasury yield touches its highest since 2002
 
 - **The 30-year Treasury yield touched 5.612% on Tuesday, its highest since June 2002, with the 10-year near 5.28%.** Reuters had the 30-year at 5.6114% and the 10-year at 5.285% at about 1pm ET, from 5.562% and 5.242% late Monday; the 2-year eased to about 4.90% after the Fed's Williams said there was no urgency to hike again. ([Morningstar/Dow Jones](https://www.morningstar.com/news/dow-jones/202609295962/us-30-year-treasury-yield-sets-new-24-year-high), [Reuters via LSE](https://www.lse.co.uk/news/global-markets-bond-yields-extend-run-higher-stocks-ease-but-anthropic-ipo-optimism-boosts-tech-dtsbk6tj4be58dx.html)) ⟨daily 2026-09-29⟩

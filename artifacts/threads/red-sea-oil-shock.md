@@ -22,6 +22,10 @@ itself (who's fighting whom, where it's widening) — see
   underwriting/capital-markets content only.
 -->
 
+## 2026-09-30 — Brent rebounds on stalled US-Iran talks and tight US fuel stocks
+
+- **Brent's more active December contract rose 2.8% to $98.81 by 10:50am ET Wednesday on stalled US-Iran talks and tight US fuel stocks, while the expiring November contract traded near $103.71.** Reuters said Brent was headed for a monthly gain of about 14%, its biggest since July; EIA data showed US distillate stocks down 2.3 million barrels and gasoline down 1.7 million, and Goldman Sachs estimates Gulf exports have recovered to 23.3 million barrels a day. ([Reuters via Yahoo Finance](https://finance.yahoo.com/energy/articles/oil-gains-trump-denies-willing-043538093.html), [Sharecast](https://www.lse.co.uk/news/europe-close-stocks-fall-as-inflation-accelerates-oil-prices-rise-3q0b2u583xzkeou.html)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — US offers 40 million barrels from the Strategic Petroleum Reserve
 
 - **The US offered to loan up to 40 million barrels from the Strategic Petroleum Reserve on Tuesday, with WTI near $90.5 after a fall of about 2% that Reuters attributed to recovering Middle East exports rather than the loan.** It is the last of the 172 million barrels ordered in March, bids are due October 6, and the reserve is projected to reach its lowest level since 1982; Reuters had Brent's November contract at $104.28 at about 1pm ET. ([The National](https://www.thenationalnews.com/news/us/2026/09/29/us-to-withdraw-more-oil-from-emergency-stockpile-as-country-faces-rising-fuel-prices/), [Trading Economics](https://tradingeconomics.com/commodity/crude-oil/news/587818)) ⟨daily 2026-09-29⟩

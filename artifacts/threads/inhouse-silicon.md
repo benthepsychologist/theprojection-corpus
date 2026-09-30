@@ -15,6 +15,10 @@ reducing Nvidia dependence, but only for INFERENCE and via two anchor cases
 dollars Nvidia demand still grows; the clearest winners are the co-design
 houses (Broadcom, Marvell), not the hyperscalers.
 
+## 2026-09-30 — AWS signs a $1 billion-plus chip-design licence with Synopsys
+
+- **Amazon Web Services agreed a multi-year deal worth more than $1 billion to license chip-design intellectual property from Synopsys, which names Amazon the lead customer for its new "application-optimized" silicon IP** The deal moves Synopsys to a license-plus-royalty model with payments tied to production volumes, extends AWS's use of Synopsys's design software and agentic AI tools, and does not say which AWS chips will use the designs. ([Synopsys](https://news.synopsys.com/2026-09-30-Synopsys-and-Amazon-Announce-Strategic,-Multi-year-IP-Agreement-for-Custom-Silicon-Collaboration-Also-Extends-to-Cloud-and-AI-Powered-Engineering), [Quartz via Yahoo Finance](https://finance.yahoo.com/technology/articles/aws-signs-1b-chip-design-134633158.html)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-22 — Google pitches TPUs to Korea, outside its own cloud
 
 - **Google has offered South Korea priority supply of its TPU accelerators for the country's sovereign-AI data-center buildout, following an April announcement that it would sell TPUs to data centers outside Google Cloud.** Seoul Economic Daily reports Google met Korean AI-strategy officials on 09-09, cites Morgan Stanley's estimate of Google direct TPU sales of $84bn in 2027 and $108bn in 2028, and notes Anthropic's plan to expand TPU use from 1GW this year to 5GW next year; an unnamed Korean industry official told the paper Nvidia GPU delivery lead times run "as long as 30 weeks" and that Google is exploiting the gap. It moves the TPU from an in-house inference chip toward a product sold to third parties and governments, which is a step past the inference-only framing on this thread. ([Seoul Economic Daily](https://en.sedaily.com/technology/2026/09/22/google-joins-nvidia-amd-in-race-for-koreas-ai-infrastructure)) ⟨daily 2026-09-23⟩

@@ -18,6 +18,10 @@ split to a global-capital sibling thread the same way
 `iran-conflict-widening` / `red-sea-oil-shock` did, if that read grows
 substantial enough to carry on its own.
 
+## 2026-09-30 — Russian attacks kill at least seven across Ukraine on Wednesday
+
+- **Russian attacks have killed at least seven people, including a child, and wounded 24 across Ukraine since the start of Wednesday, President Zelenskyy said, with Kyiv and three regions placed on emergency power outages.** Ukraine's air force says it neutralised 254 of 285 drones launched during the day. ([Ukrinform](https://www.ukrinform.net/rubric-ato/4169664-death-toll-from-todays-russian-attack-rises-to-seven-24-injured-zelensky.html)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — Estonia blames Russian special services for an arson attack on a defence firm
 
 - **Estonia's foreign minister said Tuesday that an August arson attack on the defence company Milrem Robotics in Tallinn was sabotage ordered by Russia's special services, and summoned the Russian ambassador; the Kremlin called the accusation "baseless."** NATO Secretary General Mark Rutte said Russia "continues its reckless campaign of hostile actions against NATO allies," and France, Lithuania, Latvia and Sweden condemned the attack. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/29/estonia-says-russia-ordered-august-arson-attack-on-defence)) ⟨daily 2026-09-29⟩

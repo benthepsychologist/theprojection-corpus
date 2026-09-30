@@ -12,6 +12,10 @@ opened: 2026-07-24
 independent verification one way or the other, and whether it chills
 enterprise adoption of Kimi K3's open weights (due 07-27).
 
+## 2026-09-30 — OpenAI attributes a reasoning-extraction campaign to Moonshot-linked users
+
+- **OpenAI said it disrupted a coordinated campaign to extract its models' protected reasoning and attributed a core cluster of it to individuals associated with Moonshot AI, maker of Kimi** The activity began 1 July, peaked on 24 and 25 July with 16,000 attempted requests from more than 4,000 users, and a cluster of more than 15,000 users was fully disrupted by 28 July; OpenAI says it cannot tell whether all operators were one actor. ([OpenAI](https://openai.com/index/disrupting-a-coordinated-model-distillation-campaign/), [Unite.AI](https://www.unite.ai/openai-disrupts-coordinated-model-reasoning-extraction-campaign/)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-23 — Chinese AI shares fall on the reported probe
 
 - **Shares of Chinese AI companies fell after the report that China's internet regulator is investigating DeepSeek and Moonshot AI, with Alibaba down about 4%** Bloomberg's headline tied the selloff to the report, which undercut the lift from Alibaba's new-chip announcement. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-23/chinese-ai-firms-fall-on-report-of-deepseek-moonshot-probe)) ⟨daily 2026-09-23⟩

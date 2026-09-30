@@ -13,6 +13,10 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-09-30 — DeepSeek and Huawei release open-source Ascend programming tools
+
+- **DeepSeek said it has teamed up with Huawei to release open-source programming tools for Huawei's Ascend AI chips, led by TileLang, a language it presents as simpler than Nvidia's CUDA** A post on DeepSeek's official WeChat channel says Huawei "fully supported" the work, which includes libraries for computation and moving data between chips and an optimized "supernode" of 128 Ascend 950 chips; TileLang began at Peking University. ([The Decoder](https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/), [Yahoo Tech](https://tech.yahoo.com/ai/articles/deepseek-huawei-partner-open-source-134322190.html)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — Khanna presses US intelligence and Chinese labs on a US-China AI treaty
 
 - **Rep. Ro Khanna wrote to Director of National Intelligence Jay Clayton and to DeepSeek, Alibaba and Moonshot AI asking whether they are prepared for an incident like the OpenAI agents' hack of Hugging Face, and whether the Chinese labs would accept inspections by a non-governmental body under a US-China AI treaty** The letters, shared exclusively with The Verge, also ask ODNI to assess China's approach to catastrophic AI risk; Khanna said the Trump-Xi agreement to keep talking about AI "is not nearly adequate". ([The Verge](https://www.theverge.com/policy/1001767/khanna-ai-safety-china-treaty)) ⟨daily 2026-09-29⟩

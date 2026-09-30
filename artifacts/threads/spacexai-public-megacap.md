@@ -18,6 +18,10 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-09-30 — SpaceXAI weighs four-tier Grok and X subscriptions
+
+- **SpaceXAI is considering a four-tier subscription overhaul for Grok and X, including a $100 a month "Ultra" plan with access to its Grok Bot agent and an $8 "Lite" plan, Bloomberg reported from an internal document** The plan is under consideration and has not been announced. ([Investing.com via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/spacexai-considers-four-tier-pricing-181516980.html)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-28 — Starship reaches orbit for the first time and deploys 26 Starlink V3 satellites
 
 - **SpaceX's Starship flew into orbit for the first time on Monday, September 28, and released 26 Starlink V3 satellites, the first operational satellites delivered by Starship.** One of Ship 41's engines shut down early on ascent and controllers held the ship for about 20 minutes before giving the go for orbit; it then splashed down in the Pacific north of Hawaii about three hours after liftoff, roughly two orbits instead of the six SpaceX had described, and tipped over and burned after splashdown. SpaceX said the satellites should start serving customers within a few weeks. ([SpaceQ](https://spaceq.ca/starship-flight-14-reaches-orbit-starlink-satellites/), [Wikipedia, Starship flight 14](https://en.wikipedia.org/wiki/Starship_flight_14)) ⟨daily 2026-09-28⟩

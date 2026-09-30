@@ -47,3 +47,82 @@ core-pce-inflation-cooled-to-3-0-in-august-below:
     and today's data; it describes the same cooling-data-versus-hawkish-Fed
     tension without the current levels. The next /week refresh should fold
     in the hike, the 5.6% 30-year and this print.
+
+hedge-funds-borrowing-from-banks-reached-nearly:
+  mechanism: >
+    Leverage turns a price drop into forced selling. When AI stocks fell
+    this summer, Situational Awareness's lenders called margin and the fund
+    had to sell about $20 billion of stocks to Citadel at a discount; with
+    hedge-fund bank borrowing at about $3.7 trillion, the largest in over a
+    decade, a similar shock in a crowded trade can spread from one fund to
+    the banks that lent to it and to the stocks it held. Rising yields and
+    an AI-earnings disappointment are the triggers the Bank of England and
+    the Bank for International Settlements have both named recently.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Leverage stays high and nothing forces it lower, so the risk remains
+        a tail that shows up only in a sharp AI-stock drawdown.
+      why: >
+        Morgan Stanley's talks on additional borrowing for the fund have
+        resumed, and the SEC has proposed easing borrowing-disclosure rules,
+        so neither lenders nor regulators are tightening yet.
+      precedent: >
+        The July episode itself: the fund's forced sale to Citadel did not
+        start a wider selloff, because the stock market was otherwise calm
+        (CNBC, 07-31, which described a forced cut of positions after a
+        momentum reversal).
+    - direction: >
+        A fresh drop in AI-linked stocks or a further jump in long-term
+        yields hits another leveraged fund and lenders pull back together.
+      why: >
+        The long end is at 2002 highs and 30-year yields are near 5.6%,
+        which lowers the value of collateral and raises funding costs at the
+        same moment.
+      precedent: >
+        The summer's Situational Awareness margin calls followed a sharp
+        fall in AI stocks and ended with the SEC subpoenaing four large
+        banks in August.
+  context_note: >
+    capital-context.yaml (asof 08-25) has no leverage or prime-brokerage
+    reading, so this entry rests on the Times report as summarized by Quartz
+    and on this map's ai-buildout-debt-risk thread; the next /week refresh
+    could add a leverage line.
+
+federal-reserve-inspector-general-found-no-grounds:
+  mechanism: >
+    The report removes the only official finding that could have supported
+    a for-cause case against Powell over the renovation: the inspector
+    general found mismanagement but no criminal violation and no
+    administrative misconduct. What remains are two other levers, a Justice
+    Department decision by US attorney Jeanine Pirro to reopen her dropped
+    probe, which she said in April she would not hesitate to do "should the
+    facts warrant," and pressure from the White House on the Board. Markets
+    price this through how much political risk they attach to the Fed's
+    independence, which matters most now because the 30-year yield is at its
+    highest since 2002 and the Fed raised rates on 09-16.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        The report is treated as closing the renovation line of attack, and
+        the Fed-independence discussion moves back to the rate path and the
+        Cook removal fight.
+      why: >
+        Chair Warsh, Trump's own appointee, welcomed the findings and
+        ordered an audit with the General Services Administration as project
+        executive, which gives critics a remediation story without a
+        dispute with the inspector general.
+    - direction: >
+        The Justice Department or the White House disputes the report, and
+        the Powell matter re-enters the news as a removal or prosecution
+        threat.
+      why: >
+        Pirro said she would review the report and had not ruled out
+        reopening; Trump has insisted there was "criminality" and blames a
+        "hostile" Board for this month's rate rise.
+  context_note: >
+    capital-context.yaml (asof 08-25) predates Warsh's confirmation as
+    chair and the 09-16 hike; this entry rests on this map's
+    fed-independence-fight thread and on CNBC's and CBS's accounts of the
+    report. Confidence is speculative because no market reaction to the
+    report was observed in the reads available at about 3:30pm ET.
