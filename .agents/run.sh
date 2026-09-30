@@ -164,11 +164,24 @@ fi
 #
 # And the receipt below is the third leg: a failed 3am run is detectable
 # the next morning rather than invisible.
+
+# ── Cloudflare deploy-hook secret, resolved per run (ft-09, 2026-09-30) ─────
+# The scheduled invocation resolves theprojection's Cloudflare deploy-hook
+# URL through authctl at run time instead of reading it from this repo's own
+# .env. These three backend variables belong HERE, in the runner, never in
+# the crontab line: kestrel fleet cron generates that line and would
+# overwrite any hand-added settings on its next regen.
+export AUTHCTL_BACKEND=gsm
+export AUTHCTL_GSM_PREFIX=authctl-fleet
+export AUTHCTL_GSM_PROJECT=lifeos-cloud-prod
+
 start_epoch=$(date -u +%s)
 set +e
 (
   cd "$REPO"
-  claude -p "/${SKILL}" \
+  "$HOME/.local/bin/authctl" exec cloudflare:theprojection \
+      --field deploy_hook_url --as THEPROJECTION_DEPLOY_HOOK -- \
+      claude -p "/${SKILL}" \
       --permission-mode auto \
       "${ADD_DIRS[@]}"
 ) >>"$LOG" 2>&1
