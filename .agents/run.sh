@@ -69,7 +69,7 @@ REPO="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 # The site sibling, as this repo's own manifest declares it. A relative
 # declaration resolves against THIS repo, so it travels; an absolute one is
 # honoured as given, for a target that genuinely lives elsewhere.
-SITE_DECL="../theprojection-site"
+SITE_DECL="/workspace/fleet/sites/theprojection-site"
 SITE=""
 if [ -n "$SITE_DECL" ]; then
   case "$SITE_DECL" in

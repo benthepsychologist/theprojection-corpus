@@ -33,7 +33,7 @@ governance:
   yaml: safe-load-or-revert
   attention_edits: steering-loop-only   # provenance tag every change (CLAUDE.md)
 outputs:
-  site: /workspace/theprojection-site
+  site: /workspace/fleet/sites/theprojection-site
   # Path relative to this repo's own root — kestrel's tools/publish.py loads
   # this file directly (no per-site code lives in the kestrel checkout;
   # relocated 2026-07-31 out of tools/publish/adapters/theprojection.py).
