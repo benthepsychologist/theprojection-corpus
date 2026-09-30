@@ -17,10 +17,15 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-09-30 — Israeli strikes kill at least seven in Gaza
+
+- **Israeli attacks killed at least seven Palestinians and wounded more than 10 in the Gaza Strip on Wednesday, six of them in a drone strike on a passenger van in Tal al-Hawa in southwest Gaza City.** Al Jazeera's reporter in Gaza City said the toll could rise; Israel's account was not read. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — Israel kills Hamas's northern Gaza commander
 
 - **Israel killed Izz al-Din al-Beik, head of Hamas's armed wing in northern Gaza, in an airstrike on a Gaza City apartment building early Tuesday; Hamas confirmed his death.** Netanyahu and Defence Minister Katz announced it jointly; Israel says it has killed at least 20 Hamas members this month, while Hamas accuses Israel of undermining the October ceasefire and Gaza's health ministry counts more than 1,400 Palestinians killed since it took effect. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/29/israeli-forces-kill-hamas-commander-izz-al-din-al-beik-in-gaza-attack)) ⟨daily 2026-09-29⟩
 - **Prime Minister Netanyahu said Tuesday that Israel has "indications" its enemies will try to attack ahead of the elections scheduled for the end of October, and warned: "Don't mess with us."** He spoke in a video filmed at the Tel Nof air base and gave no details. ([The Times of Israel](https://www.timesofisrael.com/netanyahu-claims-indications-of-attack-plot-by-enemies-ahead-of-election-lapid-to-be-briefed/), [CNA, AFP](https://www.channelnewsasia.com/world/israel/elections-netanyahu-enemies-attack-6419221)) ⟨daily 2026-09-29⟩
+- **The US Senate on Tuesday blocked a resolution by Sen. Chris Van Hollen that would have required the Trump administration to report on the killing of nine Americans in the occupied West Bank and on Israel's treatment of Palestinian children in military detention.** Van Hollen forced the vote under the Foreign Assistance Act of 1961; Democrat John Fetterman voted against advancing it and Republican Rand Paul voted for it. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/30/us-senate-blocks-resolution-seeking-report-on-americans-killed-in-west-bank)) ⟨daily 2026-09-29⟩
 
 ## 2026-09-25 — AP: the Board of Peace has quietly met UNRWA despite saying it has no Gaza role; Turkey formally rebukes Netanyahu at the UN
 

@@ -15,6 +15,7 @@ deals get positioned in the roadshow story.
 ## 2026-09-29 — Anthropic tells investors rogue agents create uncertain legal risk
 
 - **Anthropic told investors in its IPO prospectus that rogue AI agents could expose it to legal claims from customers and users, and that the legal framework is uncertain, Reuters reported** Reuters described it as an exclusive drawn from the prospectus, a document it reviewed rather than a public filing. ([Reuters](https://www.reuters.com/legal/litigation/anthropic-says-rogue-ai-agents-pose-uncertain-legal-risk-company-2026-09-29/)) ⟨daily 2026-09-29⟩
+- **Anthropic routed 47% of its 2025 sales, about $2.16 billion, through Amazon's and Google's cloud marketplaces, according to its IPO prospectus as seen by Reuters** By Reuters' analysis the two partners kept roughly 16 cents of each dollar in distribution fees; their share was 11% of sales in 2023 and 32% in 2024, and two unnamed customers each generated 12% of revenue. Reuters describes the document as a confidential filing it reviewed, not a public filing. ([Reuters](https://www.reuters.com/world/anthropic-ipo-prospectus-lays-bare-deep-dependence-big-tech-partners-2026-09-29/), [Reuters via Euronext](https://live.euronext.com/en/financial-news/exclusive-anthropic-ipo-prospectus-lays-bare-deep-dependence-big-tech-partners)) ⟨daily 2026-09-29⟩
 
 ## 2026-09-28 — Anthropic's IPO prospectus is reported: $42 billion loss, $518 billion of spending plans, 80 pages of risk factors
 

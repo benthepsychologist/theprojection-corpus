@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-09-30 — SoftBank completes the DigitalBridge acquisition
+
+- **SoftBank completed its roughly $3.1 billion acquisition of DigitalBridge on September 30, US time, making it a controlled subsidiary led by Marc Ganzi.** SoftBank's release says DigitalBridge will keep operating as a separately managed platform; the deal had all regulatory approvals as of 09-22. ([SoftBank Group](https://group.softbank/en/news/press/20260930), [DigitalBridge](https://ir.digitalbridge.com/news-releases/news-release-details/digitalbridge-receives-all-regulatory-approvals-required)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-25 — SoftBank falls about 3% in Tokyo on Oracle's Project Jupiter notice
 
 - **SoftBank Group shares fell about 3% in Tokyo on Friday, to roughly 6,154 yen, after Oracle's force-majeure notice on the New Mexico Project Jupiter data-center campus, a Stargate site, days after SoftBank's record $11.1 billion bond sale.** Reuters reported that spreads on AI-linked bonds had widened to about 115 basis points against 78 for the broader market. ([Yahoo Finance/Investing.com](https://finance.yahoo.com/technology/ai/articles/softbank-shares-fall-oracle-data-034800958.html)) ⟨daily 2026-09-25⟩

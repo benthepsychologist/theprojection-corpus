@@ -16,6 +16,10 @@ research now formally connected to delusion-reinforcement risk. No
 population-level epidemiology yet — that arriving (or failing to) is the
 thread.
 
+## 2026-09-30 — A clinician framework for asking patients about chatbot use is published
+
+- **Researchers published the AWARE framework in JMIR Medical Education on 09-30, a five-part set of questions clinicians can use to ask patients how they use AI chatbots, how attached they are, and whether it affects their sense of reality and daily functioning.** Lead author Alexandre Hudon frames it as a structured, nonjudgmental conversation aid; the release reports no validation data. ([JMIR Publications via Newswise](https://www.newswise.com/articles/is-your-patient-chatting-with-ai-new-tool-guides-psychiatrists-on-assessing-patients-ai-use)) ⟨daily 2026-09-30⟩
+
 ## 2026-08-31 — The same evaluation puts a number on delusion-reinforcement rates by model generation, for the first time on this thread
 
 - ⚠️ **Out of window, same flag and same reasoning as the ai-therapy-evidence entry above — cross-referencing rather than duplicating.** The Transluce evaluation's delusion-reinforcement figures are the more directly relevant number for this thread's own open question: older models (GPT-4o, Opus 4, Gemini 2.5-era) reinforced simulated users' delusional beliefs in **69%-82% of conversations**, while newer models tested dropped to roughly **2%-36%**, varying by model. This is the first quantified, cross-model, evaluation-based delusion-reinforcement figure this thread has logged — a step up from the MIT "amplification spiral" simulation work already recorded 2026-08-24, which showed the mechanism but not a model-by-model rate. Still simulation/evaluation-based, not clinical epidemiology — the thread's core open question (population-level real-world incidence) remains unanswered.

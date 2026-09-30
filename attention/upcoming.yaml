@@ -1504,6 +1504,7 @@ expectations:
     # (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR); every result still resolves to the 08-10 MOU announcement, same
     # "subject to execution of final agreements" language, no dollar figure or first project disclosed. due_precision is month; window
     # closes 09-30 — do NOT flip to passed-silent yet, two days remain.
+    # 2026-09-30 ⟨daily⟩: seventh negative check. Nothing named or signed as of about 10:30am ET; the month window ends today. Flips to passed-silent on the 10-01 run if nothing lands.
   - id: microsoft-maia-300-unveil
     claim: "Microsoft publicly unveils the Maia 300 accelerator, following a reported ~300,000-unit TSMC order"
     due: 2026-09-30
@@ -4194,6 +4195,7 @@ expectations:
     # 2026-09-24 ⟨daily⟩: Pricing done (see softbank-openai-bridge-bond-pricing-0917). Expected issue date 09-29 for all five tranches per
     # SoftBank's release; the same release says SoftBank expects to cancel the remaining $10bn of undrawn bridge capacity
     # concurrently.
+    # 2026-09-30 ⟨daily⟩: still no settlement notice found as of about 10:30am ET (The Next Web had 09-29 as the scheduled date). Stays pending; recheck.
   - id: softbank-openai-tranche3-payment-1001
     claim: >
       SoftBank funds its $10bn third instalment to OpenAI.
@@ -4225,7 +4227,9 @@ expectations:
       Closing announcement or delisting notice.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "SoftBank's release says it completed the roughly $3.1B acquisition of DigitalBridge on 09-30, US time, one day after the 09-29 the five-business-day window implied (group.softbank/en/news/press/20260930)."
     # 2026-09-24 ⟨daily⟩: No completion announcement as of about 10:50am ET. All approvals were received 09-22. EDGAR shows a Form 25 (delisting
     # notice) filed 09-22 that could not be opened (403); it may be the preferreds' delisting announced 09-01.
   - id: anthropic-sonnet-haiku-5-5
@@ -4706,7 +4710,9 @@ expectations:
     what_confirms: "A US response to the 09-16 proposal, or an Iranian statement or action on the strait tied to the deadline. Foreign Minister Araghchi said on 09-25 Tehran is 'not in a hurry', so a lapse without either is plausible and is itself the reading."
     logged: 2026-09-25
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    evidence: "The deadline lapsed with a US answer relayed through Qatar (see us-iran-hormuz-final-response-0929) rather than a strike or a declared Iranian next step; no Iranian statement tied a lapse to the deadline and no US strike was reported through 10am ET 09-30. Reading: the clock was overtaken by the mediated exchange."
     # 2026-09-26 ⟨daily⟩: the Wall Street Journal reported late Friday, citing unnamed US officials, that Trump rejected Iran's seven-day
     # Hormuz plan and expects renewed bombing after the midterms; CNBC could not confirm and Washington has said nothing on the record.
     # Pezeshkian said Saturday Iran "no longer trusts talks" but awaits an official US reply, and a senior Iranian official told Reuters there
@@ -4880,7 +4886,9 @@ expectations:
     what_confirms: "A US or Qatari statement that a reply was delivered, or Iranian comment on it. A US official said there is no deal without nuclear progress."
     logged: 2026-09-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    evidence: "Iran said it received a formal US reply to its seven-day plan through Qatari mediators in Doha on Tuesday 09-29 and Araghchi briefed the cabinet Wednesday (CNBC, cnbc.com/2026/09/30/us-iran-war-trump-hormuz.html; Reuters via US News). Contents undisclosed; no source calls it 'final'. Hit on delivery only."
   - id: openai-kwon-sydney-hearing-1006
     claim: "OpenAI chief strategy officer Jason Kwon appears before the Australian joint parliamentary committee in Sydney on 10-06 on the rogue-agent incident; Altman and Amodei are skipping the Canberra Senate hearing on 10-01"
     due: 2026-10-06
@@ -4916,7 +4924,9 @@ expectations:
     what_confirms: "OpenAI's own announcement or help page showing Pro sign-ups open on 09-30 and the new usage calculation."
     logged: 2026-09-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    evidence: "OpenAI reopened the $200 Pro plan to new subscribers on Tuesday 09-29, a day earlier than logged, with roughly half the API-dollar allowance; existing subscribers keep the old allowance through 10-29 (The Verge, 12:15pm ET: theverge.com/ai-artificial-intelligence/1002092/openai-reopens-its-200-chatgpt-pro-tier)."
   - id: trump-super-intelligence-rename-order-0929
     claim: "President Trump signs an order formally renaming artificial intelligence 'super intelligence' in federal usage on 09-29 (Fox said 5pm ET)"
     due: 2026-09-29
@@ -4928,7 +4938,9 @@ expectations:
     what_confirms: "The signed order text or a White House release; unsigned by about 3pm ET."
     logged: 2026-09-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-29
+    evidence: "Trump signed the order on 09-29 directing agencies to say 'Super Intelligence' instead of 'AI' and giving the science adviser 60 days to propose a legal definition (whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/; fact sheet stamped 21:21Z). He also signed a one-page voluntary accord with six AI leaders at about 4pm ET (CBS)."
   - id: openai-30b-round-terms
     claim: "OpenAI finalizes its bridge raise of at least $30 billion at about $1.4 trillion pre-money, reported by Bloomberg as talks"
     due: 2026-10-31
@@ -4951,5 +4963,66 @@ expectations:
     confidence: reported
     what_confirms: "The Energy Department's award notice or wire reporting on volumes awarded."
     logged: 2026-09-29
+    logged_by: curate-add
+    status: pending
+
+  - id: trump-ai-czar-named-1003
+    claim: "Trump names an AI 'czar' within three to four days of the 09-29 accord signing"
+    due: 2026-10-03
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.cbsnews.com/news/trump-ai-constitution-tech-execs-openai-anthropic-voluntary-controls/
+    confidence: rumored
+    what_confirms: "A White House announcement naming the person."
+    logged: 2026-09-30
+    logged_by: curate-add
+    status: pending
+  - id: trump-si-legal-definition-1128
+    claim: "The president's science adviser proposes a legal definition of 'super intelligence' within the 60 days the 09-29 executive order allows"
+    due: 2026-11-28
+    due_precision: day
+    thread: frontier-model-gov-review-precedent
+    entities: []
+    source: https://www.whitehouse.gov/presidential-actions/2026/09/inaugurating-the-era-of-super-intelligence/
+    confidence: reported
+    what_confirms: "A published definition or draft legislation from the Office of Science and Technology Policy."
+    logged: 2026-09-30
+    logged_by: curate-add
+    status: pending
+  - id: ftc-frontier-lab-cids-1031
+    claim: "The FTC issues civil investigative demands to Anthropic, OpenAI and other frontier labs, which the New York Post reported on 09-30 are being prepared for 'the coming weeks'"
+    due: 2026-10-31
+    due_precision: month
+    thread: frontier-model-gov-review-precedent
+    entities: [openai, anthropic]
+    source: https://nypost.com/2026/09/30/us-news/ftc-opens-sweeping-probe-of-anthropic-openai-and-other-super-intelligence-models/
+    confidence: rumored
+    what_confirms: "A named demand, a company disclosure, or an FTC statement; Reuters carried the report as the Post's."
+    logged: 2026-09-30
+    logged_by: curate-add
+    status: pending
+  - id: iran-reply-to-us-proposal-1003
+    claim: "Iran gives a public answer to the US reply it received through Qatari mediators on 09-29"
+    due: 2026-10-03
+    due_precision: day
+    thread: iran-conflict-widening
+    entities: []
+    source: https://www.usnews.com/news/world/articles/2026-09-30/iran-receives-us-feedback-on-seven-day-trust-building-plan
+    confidence: reported
+    what_confirms: "An Iranian foreign ministry or Supreme National Security Council statement accepting, rejecting or countering the US document."
+    logged: 2026-09-30
+    logged_by: curate-add
+    status: pending
+  - id: roiz-blue-shield-amended-complaint-1013
+    claim: "Plaintiffs in Roiz v. Blue Shield file an amended complaint after Judge Orrick's 09-23 order dismissing some claims with leave to amend"
+    due: 2026-10-13
+    due_precision: day
+    thread: payer-ai-claim-denial
+    entities: []
+    source: https://litigationtracker.law.georgetown.edu/wp-content/uploads/2026/02/Roiz_2026.09.23_OPINION.pdf
+    confidence: reported
+    what_confirms: "The docket entry for the amended complaint."
+    logged: 2026-09-30
     logged_by: curate-add
     status: pending

@@ -10,6 +10,11 @@ opened: 2026-08-04
 
 *Watch:* A Tigray-war reignition with cross-border spillover. Track whether federal/TPLF fighting becomes sustained rather than episodic; displacement volume and direction; whether Eritrea enters directly, which is the step-change that would turn a civil conflict back into a regional war; and any AU/UN mediation.
 
+## 2026-09-30 — Pope appeals for dialogue in Tigray as Israelis are evacuated from Lalibela
+
+- **Pope Leo XIV appealed on Wednesday to all parties in Tigray to "choose the path of dialogue," saying he follows "with deep concern" the renewed hostilities in Tigray, Afar and Amhara.** ([Vatican News](https://www.vaticannews.va/en/pope/news/2026-09/pope-appeals-for-dialogue-in-tigray-region.html)) ⟨daily 2026-09-30⟩
+- **Israel's Foreign Ministry said a group of Israelis stranded in Lalibela, in Ethiopia's Amhara region, was evacuated by helicopter after a three-day diplomatic effort.** Flights to Lalibela have been suspended since September 24 because of nearby clashes. ([i24NEWS](https://www.i24news.tv/en/news/israel/diplomacy/artc-israelis-airlifted-from-ethiopia-s-lalibela-as-fighting-escalates)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — Afar governor says Eritrean forces are fighting alongside the rebel coalition
 
 - **The governor of Ethiopia's Afar region told Al Jazeera that Eritrean forces are taking part in the fighting, control more than two-thirds of the region and are moving to cut the road linking Djibouti and Eritrea; Eritrea has not responded.** Al Jazeera could not independently verify the claim; Ethiopia's army separately says it has killed about 270 Tigrayan fighters and wounded more than 200 in North Wollo, and Eritrea and Sudan have denied the army chief's accusations of backing the rebels. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/29/fighting-in-ethiopia-intensifies-whats-the-latest)) ⟨daily 2026-09-29⟩
