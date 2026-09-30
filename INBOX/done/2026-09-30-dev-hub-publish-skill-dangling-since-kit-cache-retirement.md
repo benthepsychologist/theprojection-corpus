@@ -1,5 +1,11 @@
 # `.claude/skills/publish` is dangling right now — the next scheduled publish will fail
 
+outcome:   ✅ done — `kestrel fleet link --relink` run on this repo's main checkout
+  (commit `3253832`, pushed), at Ben's direct instruction given the timing risk
+  (next cron fire 10:00/15:00 Toronto same day). `.claude/skills/publish` now
+  resolves to `/workspace/fleet/kits/publish-kit/skills/publish`; a full
+  dangling-symlink sweep of this repo found nothing else.
+
 from:      dev-hub / agent session (found while dispatching ft-09-02)
 date:      2026-09-30
 kind:      bug
