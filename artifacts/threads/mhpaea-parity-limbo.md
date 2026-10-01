@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the NPRM publishing (or slipping) · the enforcement gap's payer
 behavior · state fills.
 
+## 2026-10-01 — Replacement parity proposal now expected in 2027
+
+- **The Trump administration's replacement proposal for the federal mental-health parity rule is now expected in 2027, according to a government legal filing reported by Bloomberg Law on 10-01.** The proposal would overhaul how federal rules treat employers' mental-health coverage; enforcement of the 2024 rule was paused in May 2025 and narrower enforcement priorities were issued last month. ([Bloomberg Law](https://news.bloomberglaw.com/health-law-and-business/expected-timeline-for-mental-health-coverage-rule-slips-to-2027)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — California writes the 2024 federal parity rules into state law
 
 - **California Governor Gavin Newsom signed AB 2011 on 09-30, requiring health plans and insurers to follow the federal mental-health parity law and its rules and guidance as they stood on 2025-01-01, which locks the 2024 federal parity rules into state law (Chapter 915).** Assemblymember Gregg Hart's bill amends the Health and Safety Code and Insurance Code so the Department of Managed Health Care and the Department of Insurance enforce the 2024 rules' standards for nonquantitative treatment limits such as prior authorization, medical-necessity standards and network composition; its findings cite litigation over the federal rules as creating uncertainty about their enforceability and say the Legislature intends to preserve existing protections rather than add new benefit mandates. ([AB 2011 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260AB2011), [AB 2011 bill text](https://leginfo.legislature.ca.gov/faces/billTextClient.xhtml?bill_id=202520260AB2011), [Governor's legislative update](https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/)) ⟨daily 2026-09-30⟩

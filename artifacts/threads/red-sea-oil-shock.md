@@ -25,6 +25,7 @@ itself (who's fighting whom, where it's widening) — see
 ## 2026-10-01 — Brent returns to about $100 as Trump says the US will "blow them up or make a deal"
 
 - **Brent crude traded near $100 a barrel on Thursday, up about 2% from Wednesday's $98.03 settle, as President Trump said the US would "blow them up or make a deal" with Iran.** Euronews had Brent up 2.6% just above $100 at about 5am ET and AP had the December contract at $99.88 at 9:35am ET; Gulf exports are back close to pre-war levels, Iran says it has received a US response, and OPEC+ is expected to hold November output targets on Sunday. ([Euronews](https://www.euronews.com/2026/10/01/oil-rebounds-above-100-as-us-bonds-suffer-their-worst-quarter-since-1994), [AP via KDVR](https://kdvr.com/news/money/ap-asian-shares-mostly-rise-amid-market-optimism-about-ai-despite-iran-worries/)) ⟨daily 2026-10-01⟩
+- **Brent's December contract settled at $102.31 a barrel on Thursday, up 4.37%, as Chinese refiners suspended October fuel exports and the Wall Street Journal reported the US is sending a third carrier group and up to 10,000 more troops to the Middle East.** WTI settled at $92.87, up 2.71%; both reconcile to Wednesday's settles of $98.03 and $90.42. ([Reuters via Yahoo Finance](https://finance.yahoo.com/energy/articles/oil-dips-recovering-gulf-exports-044504275.html)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-30 — Brent rebounds on stalled US-Iran talks and tight US fuel stocks
 

@@ -2319,6 +2319,10 @@ expectations:
     # 2026-10-01 ⟨daily⟩: due today; no completion notice found by about 11am ET (Sword's 09-16
     # announcement said close 'by the beginning of Q4'; Headspace's page says 'officially closed Fall
     # 2026' with no date; Sword's newsroom returns 429). Left pending for the afternoon run.
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) Headspace's homepage banner now reads 'Sword has acquired
+    # Headspace', but neither it nor the announcement page ('officially closed Fall 2026') carries a
+    # date, and no dated closing release from either company was found by about 4pm ET
+    # (headspace.com/articles/headspace-and-sword-a-new-era-for-mental-health).
   - id: softbank-retail-bond-pricing-0904
     claim: >
       SoftBank's record ¥1tn ($6.3bn) 7-year retail bond prices, against an
@@ -2586,6 +2590,7 @@ expectations:
       the price-of-permission fights the siting thread tracks.
     # 2026-10-01 ⟨daily⟩: due today; local reports said the rate applies 'by October 1' but no day-of
     # confirmation was found by about 11am ET. Left pending.
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) no day-of report found by about 4pm ET.
   - id: anthropic-wellbeing-grants-deadline-0921
     claim: >
       Applications close for Anthropic's $5M research grant program on
@@ -3884,6 +3889,8 @@ expectations:
     status: pending
     # 2026-10-01 ⟨daily⟩: due today; GSA said the agreement was 'expected to take effect Oct. 1';
     # nothing yet confirms it did. Left pending.
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) only a secondary piece (Forkast via Yahoo Finance) says the
+    # 27-month agreement took effect 10-01; no GSA or OpenAI day-of statement by about 4pm ET.
   - id: softbank-openai-bridge-bond-pricing-0917
     claim: "SoftBank prices a $10-20bn junk-bond issue, roadshown 09-14 to 09-17 out of Citigroup in New York, to fund the early payoff of the $25.9bn balance of its $40bn OpenAI-stake bridge loan"
     due: 2026-09-24
@@ -4012,6 +4019,8 @@ expectations:
     # 2026-10-01 ⟨daily⟩: no written answers reported by about 11am ET; a Hawley spokesperson said
     # OpenAI will provide documents 'by the end of the week', so the 10-01 date looks soft. Left
     # pending.
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) still no written answers reported by about 4pm ET; a Hawley
+    # spokesperson expects further documents by the end of the week.
   - id: sf-datacenter-moratorium-vote-0915
     claim: >
       The San Francisco Board of Supervisors votes on a data-centre moratorium
@@ -4502,7 +4511,9 @@ expectations:
     what_confirms: "A launch report from Google, Planet or SpaceX. Google's post said 'next week' without a date; launch trackers give 10-01 and dates can slip."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "Launched 10-01 at about 2:32pm ET on SpaceX's Transporter-18 Falcon 9 from Vandenberg (scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/; nasaspaceflight.com/2026/10/transporter-18/). The satellite's separation (manifested about 3:33pm ET) and first contact were not confirmed by about 4pm ET; follow-up logged as google-suncatcher-m1-first-contact-1008."
     # 2026-10-01 ⟨daily⟩: launch is scheduled for 11:15am PT (2:15pm ET) today per CNBC
     # (cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-
     # satellites.html); not resolvable at the morning run.
@@ -4855,6 +4866,7 @@ expectations:
     # 2026-10-01 ⟨daily⟩: no account of the Canberra hearing found by about 11am ET. Altman and
     # Amodei were not attending (Reuters 09-28); Anthropic was sending other executives; OpenAI's
     # Jason Kwon appears before a different committee in Sydney on 10-06. Left pending.
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) still no account of the Canberra hearing by about 4pm ET.
   - id: israel-supreme-court-arab-lists-ruling-1003
     claim: "Israel's Supreme Court rules on the Central Elections Committee's 09-23 disqualification of the Joint List and Ra'am, and of candidates Ofer Cassif and Sami Abu Shehadeh, ahead of the 10-27 election; review is due 'next week'"
     due: 2026-10-03
@@ -4871,6 +4883,9 @@ expectations:
     # majority appeared prepared to approve Balad chairman Sami Abu Shehadeh's disqualification and
     # asked him to withdraw by 8am Friday; a ruling follows by Sunday 10-04 if he stays in. The
     # Cassif, Ra'am and Joint List cases were still being heard (Jerusalem Post article-910271).
+    # 2026-10-01 ⟨daily⟩: (15:00 ET run) no ruling as of the Jerusalem Post's 2:11pm ET update; the
+    # Attorney General opposes disqualifying Cassif and the Joint List and backs disqualifying only
+    # Abu Shehadeh, on the armed-struggle ground.
   - id: tiktok-alabama-restitution-payment-1109
     claim: "TikTok pays Alabama the $100 million restitution within 45 days of the settlement decree (fees and costs within 30 days, about 10-25)"
     due: 2026-11-09
@@ -5133,6 +5148,56 @@ expectations:
     source: https://www.933thedrive.com/2026/10/01/treasurys-smaller-than-expected-buybacks-fuel-debate-over-aims/
     confidence: confirmed
     what_confirms: "TreasuryDirect's buyback results table for the operation: amount offered, amount accepted."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: hit
+    resolved: 2026-10-01
+    evidence: "The Treasury accepted the full $6.0bn of $46.391bn offered in its 10-01 buyback of 10- to 20-year bonds (two of 41 eligible issues, weighted average prices 67.398 and 75.976), per the results sheet (fiscaldata.treasury.gov/static-data/published-reports/buybacks/result/BBR_20261001174000.pdf). The claim's 'about half, short of the cap' pattern held for the 09-24 20- to 30-year operation ($4.078bn of $10.468bn), not this one."
+  - id: anthropic-ipo-marketing-1109
+    claim: "Anthropic begins formal marketing of its IPO the week of 11-09 and aims to list before Thanksgiving (11-26), as Bloomberg reported on 10-01"
+    due: 2026-11-09
+    due_precision: week
+    thread: anthropic-ipo-timing
+    entities: [anthropic]
+    source: https://financialpost.com/investing/anthropic-target-mega-ipo-before-u-s-thanksgiving
+    confidence: reported
+    what_confirms: "A public S-1 on EDGAR with a price range, or Anthropic launching its roadshow."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: google-suncatcher-m1-first-contact-1008
+    claim: "Google or Planet confirms the Suncatcher M1 prototype separated from Transporter-18 and made first contact, with its TPUs powered on in orbit"
+    due: 2026-10-08
+    due_precision: week
+    thread: google-capex
+    entities: [google]
+    source: https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/
+    confidence: reported
+    what_confirms: "A Google, Planet or SpaceX statement of deployment, first contact or first TPU operation."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: germany-growth-forecast-official-1008
+    claim: "Germany's government officially presents raised growth forecasts on 10-08: 1.3% for 2026 (from 0.5%) and 1.1% for 2027 (from 0.9%), as a source told Reuters on 10-01"
+    due: 2026-10-08
+    due_precision: day
+    thread: cross-border-rates
+    entities: []
+    source: https://dukecountry.fm/2026/10/01/exclusive-german-government-raises-forecasts-for-2026-and-2027-source-said/
+    confidence: reported
+    what_confirms: "The economy ministry's 10-08 projection release."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: firmus-asx-listing-1023
+    claim: "Firmus, the Australian AI data-centre operator, begins trading on the ASX on 10-23 after pricing its IPO at A$11 a share to raise A$7.1bn"
+    due: 2026-10-23
+    due_precision: day
+    thread: ai-buildout-debt-risk
+    entities: []
+    source: https://www.marketscreener.com/news/australia-s-firmus-prices-shares-to-raise-5-billion-term-sheet-shows-ce785ad3d088f026
+    confidence: reported
+    what_confirms: "ASX listing announcement or first-day trading coverage."
     logged: 2026-10-01
     logged_by: curate-add
     status: pending

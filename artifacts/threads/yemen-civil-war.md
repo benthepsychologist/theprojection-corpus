@@ -19,6 +19,7 @@ becomes a formal collapse of the 2022 truce.
 ## 2026-10-01 — Yemeni army reports six airstrikes in Taiz as fighting continues
 
 - **Yemen's army said Thursday its warplanes carried out six airstrikes on Houthi positions in Taiz province, in the Al-Akboush area and Hayfan district, as fierce fighting continued on several Taiz fronts.** The army claimed casualties and equipment losses for the Houthis without giving figures; the Houthis did not immediately comment. ([Anadolu](https://aa.com.tr/en/middle-east/yemeni-army-says-it-carried-out-6-airstrikes-on-houthi-positions-in-taiz/4074505)) ⟨daily 2026-10-01⟩
+- **The Saudi-led coalition said a Houthi drone attack on Tuesday put one transformer out of service at a Medina power distribution station that supplies the Prophet's Mosque, without affecting the grid, and the Houthis called the accusation a lie.** The coalition said wreckage examination confirmed Houthi involvement; a Houthi military source via Saba denied it, and the coalition also claimed four drones and two ballistic missiles intercepted over Khamis Mushait and Jazan on Thursday. The damage and attribution are the coalition's account. ([Al Jazeera, with Reuters](https://www.aljazeera.com/news/2026/10/1/saudi-led-coalition-says-power-station-attacked-in-medina-blames-houthis)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-30 — Saudi crown prince says the Houthis chose "chaos"; Yemen's army claims 468 operations
 

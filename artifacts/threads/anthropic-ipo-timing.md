@@ -12,6 +12,10 @@ opened: 2026-07-27
 filing; valuation vs the $965B print; how Opus 5 + the AMD/Azure/Google-TPU
 deals get positioned in the roadshow story.
 
+## 2026-10-01 — Anthropic reported to target a mid-November IPO
+
+- **Anthropic is seeking to go public as soon as the middle of November, with formal marketing possibly starting the week of November 9, Bloomberg reported** Citing people familiar with the matter, Bloomberg says that would put Anthropic in line to begin trading before Thanksgiving on November 26, after the company pushed back earlier listing plans; this is a report, not a company announcement. ([Financial Post, carrying Bloomberg](https://financialpost.com/investing/anthropic-target-mega-ipo-before-u-s-thanksgiving)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-29 — Anthropic tells investors rogue agents create uncertain legal risk
 
 - **Anthropic told investors in its IPO prospectus that rogue AI agents could expose it to legal claims from customers and users, and that the legal framework is uncertain, Reuters reported** Reuters described it as an exclusive drawn from the prospectus, a document it reviewed rather than a public filing. ([Reuters](https://www.reuters.com/legal/litigation/anthropic-says-rogue-ai-agents-pose-uncertain-legal-risk-company-2026-09-29/)) ⟨daily 2026-09-29⟩

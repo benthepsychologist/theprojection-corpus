@@ -13,6 +13,10 @@ crawled: 2026-07-27
 vs. the spend, and the market's read (capex-as-confidence vs.
 capex-as-anxiety). Part of `hyperscaler-capex-big-picture`.
 
+## 2026-10-01 — Google's first Suncatcher satellite launches with four TPUs aboard
+
+- **Google's first Project Suncatcher satellite, carrying four of its TPU AI chips, launched into low-Earth orbit on a SpaceX Falcon 9 at about 2:32pm ET** The Planet Labs-built prototype flew on the Transporter-18 rideshare from Vandenberg to test how the chips fare through launch and in orbit, running a version of Google's Gemma model about 15 minutes at a time; no separation or first-contact report had appeared by about 4pm ET. ([Scientific American](https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/), [NPR via WVIK](https://www.wvik.org/npr-top-stories/2026-10-01/google-launches-project-suncatcher-a-step-towards-ai-data-centers-in-space)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-24 — Google to put its first TPUs in orbit next week
 
 - **Google said it will launch its first Project Suncatcher prototype satellite next week, putting its Tensor Processing Units into orbit for the first time.** The satellite, built with Planet, rides SpaceX's Transporter-18 rideshare mission (launch trackers list 2026-10-01 from Vandenberg; Google gave only "next week") and is meant to show how the chips handle spaceflight vibration, radiation and the cooling problem in a vacuum before any larger constellation. Suncatcher is Google's research programme for running machine-learning compute in space on solar power; this is a test flight, not capacity. ([Google](https://blog.google/innovation-and-ai/models-and-research/google-research/google-project-suncatcher-facts/), [Unite.AI](https://www.unite.ai/googles-project-suncatcher-prototype-heads-to-orbit-for-ai-chip-tests/)) ⟨daily 2026-09-24⟩

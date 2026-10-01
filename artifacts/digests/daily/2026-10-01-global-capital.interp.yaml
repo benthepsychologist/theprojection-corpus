@@ -25,8 +25,10 @@ the-10-year-treasury-yield-rose-to-about-5-33-ear:
       why: >
         The quarter's rise in the US 10-year was the largest since 1994
         (Euronews), no buyer has yet stepped in at these levels, and the
-        Treasury's own buybacks are taking in only about half of what is
-        offered, so official support is limited.
+        Treasury's buybacks took in only about half of what was offered in
+        the 20- to 30-year bucket on September 24 (the October 1 operation in
+        10- to 20-year bonds filled its $6 billion cap), so official support
+        is real but small against the size of the move.
       precedent: >
         The 2022 bond rout, when the US 10-year rose for several months
         together with oil-driven inflation and only stabilised after the Bank
@@ -118,3 +120,36 @@ broadcom-has-agreed-to-lend-anthropic-up-to-42-bi:
     speculative because the facility is undrawn and no scenario has a
     close precedent for a chip supplier lending to its largest customer ahead
     of that customer's IPO.
+
+the-treasury-bought-back-the-full-6-0-billion-of:
+  mechanism: >
+    A buyback lets holders sell old, low-coupon bonds to the Treasury for
+    cash, which adds a buyer at the long end on the day, and the Treasury
+    pays for it with new debt, so it moves duration risk around more than
+    it removes it. Offers of $46.4 billion against a $6.0 billion cap show
+    holders want to sell these deeply discounted bonds (prices near 67 and
+    76 per $100), which is a statement about demand for liquidity, and it
+    follows operations that were only half taken up. The operation is small
+    against the roughly 50 basis point rise in the 10-year over 18 trading
+    days that CNBC's interviewee cited.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        The Treasury keeps filling its cap on larger long-end operations and
+        the long end stabilises as the 10-year holds near 5.25%.
+      why: >
+        Offers were more than seven times the cap this time, so supply of
+        bonds for sale is not the constraint, and the cap can be raised.
+    - direction: >
+        Buybacks fail to slow the rise because they are too small against
+        oil-driven inflation and fiscal worries, and the long end resumes
+        its climb after Friday's jobs report.
+      why: >
+        Yields rose after the $6 billion size was announced in September and
+        the 10-year touched 5.342% on a day the cap was filled.
+  context_note: >
+    capital-context.yaml (asof 08-25) describes the buyback mechanism only
+    in general terms; this entry rests on the Treasury's own results sheet
+    and FiscalData's operations table. Confidence is speculative because one
+    operation does not make a pattern and no close precedent exists for
+    buybacks during a bond sell-off of this size.

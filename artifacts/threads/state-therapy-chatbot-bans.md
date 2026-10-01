@@ -16,6 +16,7 @@ FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 ## 2026-10-01 — Connecticut's AI law begins taking effect
 
 - **Connecticut's omnibus AI law began taking effect on 10-01, with its AI-companion duties to detect suicide and self-harm risk and to refer users to resources such as 988 set to start on 2027-01-01.** The Daily Campus reports the first provisions to apply cover subscription-renewal consent and anonymous-reporting protections for frontier-lab employees. ([The Daily Campus](https://dailycampus.com/2026/09/30/new-ai-regulation-law-goes-into-effect-oct-1/)) ⟨daily 2026-10-01⟩
+- **Four House members from both parties announced the Protecting Kids from Human-Like Chatbots Act, which would bar chatbots from communicating with minors in a human-like way by default.** Reps. Whitesides, Matsui, Kennedy and Miller-Meeks announced it in a press release dated 10-01; it would stop chatbots claiming to be human, simulating emotions or using relationship-building language with minors. ([SCVNews](https://scvnews.com/whitesides-introduces-bipartisan-legislation-to-protect-children-from-chatbots/)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-30 — California's governor vetoes the AI-psychotherapy bill
 
