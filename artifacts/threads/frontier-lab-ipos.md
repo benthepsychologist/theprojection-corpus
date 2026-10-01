@@ -12,6 +12,10 @@ opened: 2026-07-27
 at what valuation, and at what haircut to the private/vendor-financed
 print. Children: OpenAI · SpaceXAI · Anthropic.
 
+## 2026-09-30 — SEC charges advisers who sold fake pre-IPO stakes
+
+- **The SEC charged private fund advisers in two cases involving funds that claimed pre-IPO stakes in SpaceX, OpenAI and xAI, alleging misappropriated investor money and false statements.** One complaint alleges at least $1.27 million was misappropriated from funds that raised at least $18.5 million from nearly 100 investors; the other, brought with federal prosecutors, alleges a fund raised $8.7 million from 35 investors while falsely listing SpaceX and xAI as holdings; none of the companies is accused of wrongdoing. ([SEC](https://www.sec.gov/newsroom/press-releases/2026-98-sec-charges-meyer-global-management-its-ceo-defrauding-retail-investors-private-funds-held-interests), [Fortune](https://fortune.com/2026/09/30/openai-spacex-private-fund-advisers-charged/)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-25 — Nscale's convertible financing grows to $3.36B, with Nvidia's $1B arriving mid-November
 
 - **British AI neocloud Nscale secured $3.36 billion in convertible-note financing ahead of its NYSE IPO, led by hedge fund Third Point, with $2.36 billion available to the company immediately and $1 billion from existing investor Nvidia arriving in mid-November, the company said Friday.** The notes convert into equity once the IPO completes. The total is up from the roughly $3.1 billion reported on 09-18, when Nvidia's share was given only as "at least $1 billion". Nscale, which filed its S-1 on 09-18, has amassed more than $103 billion in contracts since spinning out of Australian crypto-mining company Arkon Energy two years ago; the Financial Times puts its expected NYSE valuation at $35 billion, and Bloomberg reports it is seeking to raise $3 billion in the offering. ([TechCrunch](https://techcrunch.com/2026/09/25/ahead-of-u-s-ipo-british-ai-neocloud-nscale-secures-3-36b-in-convertible-finacing/)) ⟨daily 2026-09-25⟩

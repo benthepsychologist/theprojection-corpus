@@ -8,9 +8,15 @@ opened: 2026-08-25
 
 # Treasury's Long-End Defense — timeline
 
+## 2026-10-01 — The 10-year hits 5.33% and Treasury buybacks draw thinner offers
+
+- **The 10-year Treasury yield rose to about 5.33% early Thursday, its highest since April 2002, as a global bond sell-off lifted Germany's 10-year to 3.62%, France's to 4.95% and Japan's to 3.13%.** LSEG data cited by CNBC at about 4am ET had the 30-year at 5.67%, its highest since July 2002; by 9:35am ET AP had the 10-year at 5.30% against 5.29% late Wednesday. ([CNBC](https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html), [AP via KDVR](https://kdvr.com/news/money/ap-asian-shares-mostly-rise-amid-market-optimism-about-ai-despite-iran-worries/)) ⟨daily 2026-10-01⟩
+- **The Treasury is accepting about half the bonds offered in its long-end buybacks and falling short of its cap, with $10.47 billion offered at the latest operation against $20 billion to $30 billion earlier, before Thursday's operation of up to $6 billion.** The cap was raised last month to $6 billion from $2 billion; Treasury Secretary Scott Bessent has called the purchases a technical liquidity measure, and Jefferies' Thomas Simons read the lower take-up as a sign holders do not need the liquidity badly. ([Reuters via 93.3 The Drive](https://www.933thedrive.com/2026/10/01/treasurys-smaller-than-expected-buybacks-fuel-debate-over-aims/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — Long-term Treasury yields rise after the inflation data
 
 - **Long-term Treasury yields rose after the inflation data, with the 10-year at 5.29% and the 30-year at 5.63% at about 12:30pm ET, above Tuesday's closes of 5.26% and 5.59%.** AP said the 10-year briefly dropped to 5.20% before climbing, the 2-year eased to 4.88%, and it tied the long end to government debt loads, a solid economy and higher oil. These are midday reads, not closes. ([AP](https://apnews.com/article/stocks-markets-oil-bonds-us-ai-chips-e61d3d7b947a390c7eee6c8758e3095d)) ⟨daily 2026-09-30⟩
+- **The 10-year Treasury yield closed Wednesday at 5.29% and the 30-year at 5.64% on Treasury's par curve, both above Tuesday's 5.26% and 5.59%, with the 10-year at its highest since 2002.** The 2-year closed at 4.88%; AP said the 10-year had dropped to 5.20% in the morning on the cooler PCE data, and that traders cut October hike odds to 37% from a coin flip a day earlier. ([U.S. Treasury par yield curve](https://home.treasury.gov/resource-center/data-chart-center/interest-rates/pages/xml?data=daily_treasury_yield_curve&field_tdr_date_value_month=202609), [AP via BNN Bloomberg](https://www.bnnbloomberg.ca/markets/2026/09/30/wall-street-closes-in-on-a-winning-september-following-an-encouraging-update-on-inflation/)) ⟨daily 2026-09-30⟩
 
 ## 2026-09-29 — 30-year Treasury yield touches its highest since 2002
 

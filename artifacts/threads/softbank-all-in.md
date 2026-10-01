@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the loan stack vs the AI-credit repricing; forced Arm
 monetization; Stargate milestones.
 
+## 2026-10-01 — SoftBank completes its $30 billion OpenAI follow-on
+
+- **SoftBank executed the third and final $10.0 billion tranche of its follow-on investment in OpenAI on October 1 (Japan time), completing the $30.0 billion commitment and lifting its cumulative investment to $64.6 billion and its stake to about 13%.** SoftBank says the tranche was funded with the proceeds of the senior notes it announced on September 24, and that it cancelled the last $10.0 billion of undrawn capacity on its $40.0 billion bridge facility effective September 30, so no bridge borrowing remains. ([SoftBank Group](https://group.softbank/en/news/press/20261001)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — SoftBank completes the DigitalBridge acquisition
 
 - **SoftBank completed its roughly $3.1 billion acquisition of DigitalBridge on September 30, US time, making it a controlled subsidiary led by Marc Ganzi.** SoftBank's release says DigitalBridge will keep operating as a separately managed platform; the deal had all regulatory approvals as of 09-22. ([SoftBank Group](https://group.softbank/en/news/press/20260930), [DigitalBridge](https://ir.digitalbridge.com/news-releases/news-release-details/digitalbridge-receives-all-regulatory-approvals-required)) ⟨daily 2026-09-30⟩

@@ -5,6 +5,10 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
+## 2026-10-01 — Syria and Hezbollah held secret talks in Turkey
+
+- **Syrian government officials and Hezbollah representatives held face-to-face talks in Turkey last month, the first known meeting between the longtime foes, six sources told Reuters.** Turkish security and intelligence agencies hosted the meeting to de-escalate; no agreement was reached and none was to be announced. ([Reuters, via KFGO](https://kfgo.com/2026/10/01/exclusive-syrian-government-officials-and-hezbollah-held-secret-talks-in-turkey-sources-say/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-24 — Israeli detonations at Bint Jbeil and al-Khiam and overnight shelling across the south
 
 - **Israeli forces carried out a large detonation around Bint Jbeil in south Lebanon on Thursday and for a second night in a row in al-Khiam, while artillery shelled Beit Yahoun, Shaqra, Kounine, Hadatha and al-Mansouri overnight and strikes hit Mayfadoun, al-Mansouri, Qantara, Wadi al-Hujair and Wadi Slouqi, Lebanese outlet Naharnet reported.** Lebanese Prime Minister Nawaf Salam, in New York, was due to meet Iranian President Masoud Pezeshkian later Thursday, al-Jadeed TV reported. The detonation and shelling reports rest on Naharnet's live summary; no Israeli comment was found. ([Naharnet](https://www.naharnet.com/stories/en/322689-south-lebanon-latest-developments)) ⟨daily 2026-09-24⟩

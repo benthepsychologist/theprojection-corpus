@@ -18,6 +18,10 @@ counterparty mix drifting from clouds toward miners and infrastructure
 funds; and the Theseus consumer-electricity commitment, the first
 contractual concession this map has seen a lab make to ratepayer politics.
 
+## 2026-10-01 — Broadcom to lend Anthropic up to $42 billion
+
+- **Broadcom has agreed to lend Anthropic up to $42 billion to finance its chip leases, according to Anthropic's confidential IPO filing as described by Reuters** The convertible note could fund about a third of a $125.2 billion five-year TPU lease, and the filing flags "potential conflicts of interest" in Broadcom's dual role as supplier and lender. ([CNBC, carrying Reuters](https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-29 — Anthropic's prospectus breaks down a $518 billion, mostly non-cancelable buildout
 
 - **Anthropic's prospectus commits it to at least $518 billion of infrastructure spending over a decade with six partners, about 80% non-cancelable or payable regardless of usage, Reuters reported** At least $111.1 billion with Google, $110 billion with Amazon and $31.4 billion with Microsoft, plus about $161.2 billion of largely non-cancelable Broadcom-related equipment leases; xAI agreements could reach $84.5 billion but are largely cancelable on 90 days' notice, and AMD committed to buy up to $5 billion of Anthropic stock. ([Reuters](https://www.reuters.com/business/anthropics-518-billion-ai-buildout-hinges-largely-deals-that-cannot-be-canceled-2026-09-29/), [Northland News Radio](https://northlandnewsradio.com/2026/09/29/anthropics-518-billion-ai-buildout-hinges-largely-on-deals-that-cannot-be-canceled-filing-shows/)) ⟨daily 2026-09-29⟩

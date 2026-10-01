@@ -10,6 +10,10 @@ opened: 2026-07-24
 
 *Watch:* Where the capex lands in SILICON — the $ flowing to Nvidia/AMD/TSMC/ Broadcom, plus the custom-silicon revolt (Jalapeño, Trainium, Maia, TPU) as the giants try to stop renting from Nvidia. Category meta under where-the-capex-lands.
 
+## 2026-09-27 — China signals it may let ByteDance and Alibaba buy Nvidia's RTX PRO 5500
+
+- **China's industry ministry has signaled it intends to approve purchases of Nvidia's RTX PRO 5500 chip by firms including ByteDance and Alibaba, The Information reported on 2026-09-27, citing two people familiar.** The ministry asked the companies to report their purchase plans, and some executives expect the chip to fall outside US export restrictions. Reuters said it could not immediately verify the report, and an Nvidia spokesperson said US firms remain restricted by outdated US export controls and by China's own import limits. ([CNBC](https://www.cnbc.com/2026/09/27/china-bytedance-alibaba-nvidia-chips.html), [Reuters](https://www.reuters.com/business/retail-consumer/china-weighs-allowing-bytedance-alibaba-buy-new-nvidia-chips-information-reports-2026-09-27/)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-02 (late catch, added 2026-09-14) — Broadcom's Q3 print puts the fourth name in this thread's own watch line on the record
 
 - **Broadcom reported Q3 FY2026 results on 09-02 (quarter ended 08-02): AI semiconductor revenue of $16.7bn, up 221% YoY and 54% QoQ, on total revenue of $29.6bn (+86% YoY).** CEO Hock Tan guided Q4 FY2026 AI semiconductor revenue to $21.7bn (+236% YoY) and, on the earnings call, put fiscal-2027 AI semiconductor revenue at roughly $115bn — the clearest fresh number this thread has for the "Broadcom" name in its own watch line ("$ flowing to Nvidia/AMD/TSMC/Broadcom"), which until now had only carried the generic custom-silicon framing from the 07-27 crawl. ⚠️ The FY2027 $115bn figure is earnings-call commentary, not a filed number — the press release itself gives only the Q4 guide.

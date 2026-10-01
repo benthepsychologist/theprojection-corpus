@@ -20,6 +20,7 @@ of the population?
 ## 2026-09-30 — Israeli strikes kill at least seven in Gaza
 
 - **Israeli attacks killed at least seven Palestinians and wounded more than 10 in the Gaza Strip on Wednesday, six of them in a drone strike on a passenger van in Tal al-Hawa in southwest Gaza City.** Al Jazeera's reporter in Gaza City said the toll could rise; Israel's account was not read. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue)) ⟨daily 2026-09-30⟩
+- **A drone strike killed Mohammed al-Najjar, a Gaza radio presenter and imam, among at least eight Palestinians killed in Israeli attacks on Wednesday, raising the day's toll from the seven first reported.** Gaza's government media office counts him as the 263rd Palestinian journalist killed since October 2023; Israel's account of the strike was not read. ([Anadolu, via Siasat](https://www.siasat.com/israeli-strike-kills-gaza-journalist-while-reporting-on-quran-3550949/)) ⟨daily 2026-09-30⟩
 
 ## 2026-09-29 — Israel kills Hamas's northern Gaza commander
 

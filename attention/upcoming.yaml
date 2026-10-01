@@ -926,7 +926,9 @@ expectations:
     what_confirms: "Oracle or AMD disclosure of rollout start/progress"
     logged: 2026-08-04
     logged_by: crawl
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "Q3 ended 09-30 with no AMD or Oracle disclosure that the 50,000-GPU rollout has begun, in newsrooms or wire coverage read on 10-01."
 
   - id: amd-anthropic-1gw-h1-2027
     claim: "Anthropic's first 1GW of AMD MI450 deployment begins"
@@ -1447,8 +1449,11 @@ expectations:
     what_confirms: "a NAMED deal announced by Nvidia or one of the six partners (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR) — the 08-10 announcement was explicitly memorandums of understanding, NOT final agreements, so this entry exists to catch the gap between the headline number and any money actually moving. Restating the $500B figure does not confirm it."
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, frontier-ai + global-capital both surfaced it
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
     evidence: |
+      2026-10-01 ⟨daily⟩ RESOLVED (passed-silent): The 09-30 window ended with no named first deal under the $500bn platform in anything read. Reuters reported on 10-01 that lenders want stronger guarantees than Nvidia first offered because they doubt GPUs hold their value as collateral (bnnbloomberg.ca/business/artificial-intelligence/2026/10/01/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check/).
+
       RE-CHECK 2026-09-15 — no named deal found converting one of the six
       MOUs (Apollo, BlackRock, Blackstone, Brookfield, Goldman Sachs, KKR)
       into a signed transaction under this specific platform. Adjacent
@@ -1516,7 +1521,9 @@ expectations:
     what_confirms: "a Microsoft announcement or keynote naming the part and its specs — not further reporting on the order volume"
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, frontier-ai lens
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "No public unveil by 09-30. Soft: an unveil could still come at a fall event; re-open if it appears."
 
   - id: openai-ethics-lead-replacement
     claim: "OpenAI names a replacement head of AI ethics after Chloé Bakalar's departure"
@@ -1529,7 +1536,9 @@ expectations:
     what_confirms: "an OpenAI announcement or a reported hire into the role. Bakalar was OpenAI's ONLY dedicated ethicist and left in July — reported 08-10, never announced by the company, and not yet replaced. A silent pass here is itself the finding: it would mean the role was quietly retired rather than refilled, against a reported pattern of roughly half of OpenAI's safety researchers leaving this year."
     logged: 2026-08-11
     logged_by: curate-add   # /daily 08-11, frontier-ai lens
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "No replacement named by 09-30; nothing found after the 08-12 reports of the departure."
 
   - id: spacex-cursor-close
     claim: "SpaceX's $60B all-stock acquisition of Cursor (Anysphere) closes"
@@ -2307,7 +2316,9 @@ expectations:
     # a search summary — one result had recycled the old "expected Sept.
     # 14" headline as if current).
     # ([Sword Health](https://www.globenewswire.com/news-release/2026/09/16/3363038/0/en/sword-to-acquire-headspace-bringing-ai-care-to-the-world-s-most-trusted-mental-health-brand.html))
-
+    # 2026-10-01 ⟨daily⟩: due today; no completion notice found by about 11am ET (Sword's 09-16
+    # announcement said close 'by the beginning of Q4'; Headspace's page says 'officially closed Fall
+    # 2026' with no date; Sword's newsroom returns 429). Left pending for the afternoon run.
   - id: softbank-retail-bond-pricing-0904
     claim: >
       SoftBank's record ¥1tn ($6.3bn) 7-year retail bond prices, against an
@@ -2573,6 +2584,8 @@ expectations:
     what_confirms: >
       the rate entering force. This is the price-of-power counterpart to
       the price-of-permission fights the siting thread tracks.
+    # 2026-10-01 ⟨daily⟩: due today; local reports said the rate applies 'by October 1' but no day-of
+    # confirmation was found by about 11am ET. Left pending.
   - id: anthropic-wellbeing-grants-deadline-0921
     claim: >
       Applications close for Anthropic's $5M research grant program on
@@ -2636,7 +2649,9 @@ expectations:
     what_confirms: "actual rule text reaching industry, or a Federal Register/BIS publication. Reported by a single outlet relaying The Information with NO government document published, so the existence of the drafting effort is itself only reported — a passed-silent here means the report was thin, not that a known plan slipped."
     logged: 2026-08-28
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "No report by 09-30 that the draft remote-access rule was shared with industry; nothing found after 08-31."
 
   - id: ca-sb903-floor-vote
     claim: >
@@ -2821,7 +2836,9 @@ expectations:
       distinct from AB 2575's liability shift.
     logged: 2026-08-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "Signed 09-30 and chaptered as Chapter 854, per the governor's 09-30 AI signing release (gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/) and leginfo's status page. It bars health facilities, clinics and physician offices from using AI to independently perform licensed clinical functions and brings consumer health chatbots under the medical-privacy act."
     # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
     # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
@@ -2836,7 +2853,9 @@ expectations:
     what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
     logged: 2026-09-01
     logged_by: curate-add   # successor to ca-ab2575-senate-floor-vote, resolved hit 08-31
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "VETOED 09-30 (the claim was 'signs or vetoes'). The veto message (gov.ca.gov/wp-content/uploads/2026/09/VETO-msg-AB-2575.pdf, a scanned image) objects to the 'solely' anti-retaliation standard and to making the Labor Commissioner judge the standard of care; the California Nurses Association criticised it the same day."
     # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
     # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
@@ -2851,7 +2870,9 @@ expectations:
     what_confirms: "Newsom's signature, veto, or the bill lapsing into law unsigned; correct the due date once actual presentment is confirmed"
     logged: 2026-09-01
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "VETOED 09-30 (the claim was 'signs or vetoes'). The veto message (gov.ca.gov/wp-content/uploads/2026/09/VETO-msg-SB-903.pdf) calls the bill overly broad, says it would 'drastically limit a clinician's use of tools that benefit the delivery of care today', and urges the author to revisit it next year."
     # 2026-09-26 15:00 ⟨daily⟩: no governor action through Saturday afternoon (leginfo still "Enrolled and presented to the
     # Governor"; gov.ca.gov's only Saturday release is a gun-violence signing; no coverage). Deadline 09-30.
 
@@ -2899,8 +2920,11 @@ expectations:
       Governor acts.
     logged: 2026-08-29
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
     evidence: |
+      2026-10-01 ⟨daily⟩ RESOLVED (hit): Signed 09-30 and chaptered as Chapter 857, per the governor's 09-30 AI signing release and leginfo (billStatusClient.xhtml?bill_id=202520260SB503).
+
       2026-08-31 ~10:00 ET: advanced but not resolved. SB 503 was enrolled
       and PRESENTED TO GOVERNOR NEWSOM on 2026-08-30, which starts his signing
       clock — the bill has cleared the Legislature entirely. Status stays
@@ -3001,7 +3025,9 @@ expectations:
     what_confirms: a scheduled Planning Commission or City Council vote date, or the vote itself.
     logged: 2026-09-13
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "No vote. The Wright family asked the city on 09-21 to pause the rezoning and the council did not take it up on 09-28; no new date has been set, so this stands as passed with the project paused rather than slipped to a date."
     # 2026-09-24 ⟨daily⟩: Slip signal, no new date. On 09-18 the developers (Wright family) asked Cleveland, Tennessee to 'temporarily delay
     # further action' pending a third-party technical review (https://newschannel9.com/news/local/project-river-developers-
     # ask-cleveland-to-pause-action-on-113b-campus-amid-backlash). A vote by 09-30 is unlikely; leave pending until the date
@@ -3177,7 +3203,9 @@ expectations:
       deadlock, not term premium). Watchlist terms added the same day.
     logged: 2026-09-03
     logged_by: critic-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "The government presented the 2027 draft budget to the Council of Ministers on Thursday 10-01: about €54bn of total effort and a deficit target of 5.0% of GDP (France 24; Euronews; Reuters pre-budget text). The formal deadline to table the bill at the Assembly is 10-06. The 10-year OAT traded near 4.95% that morning."
     # 2026-09-26 ⟨daily⟩: SLIPPED to 10-01. Bank of France Governor Moulin said Friday the 2027 budget bill goes to lawmakers "next
     # Thursday" (Reuters via WIFC, https://wtvbam.com/2026/09/25/france-cant-count-on-ecb-to-fix-debt-woes-central-bank-chief-says/);
     # the Council of Ministers is expected 10-01. 10-year OAT about 4.7%, highest since 2008.
@@ -3293,7 +3321,9 @@ expectations:
       or S-1/A for Anthropic.
     logged: 2026-09-05
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-09-30
+    evidence: "September ended with no public Anthropic S-1 on EDGAR (full-text search 10-01). The prospectus has been REPORTED from a draft since 09-28 (revenue, losses, the Broadcom loan of up to $42bn) but not publicly filed; early-to-mid-October dates come from secondary sites only."
 
   - id: witkoff-kushner-kyiv-visit-0906
     claim: >
@@ -3852,7 +3882,8 @@ expectations:
     logged: 2026-09-10
     logged_by: curate-add
     status: pending
-
+    # 2026-10-01 ⟨daily⟩: due today; GSA said the agreement was 'expected to take effect Oct. 1';
+    # nothing yet confirms it did. Left pending.
   - id: softbank-openai-bridge-bond-pricing-0917
     claim: "SoftBank prices a $10-20bn junk-bond issue, roadshown 09-14 to 09-17 out of Citigroup in New York, to fund the early payoff of the $25.9bn balance of its $40bn OpenAI-stake bridge loan"
     due: 2026-09-24
@@ -3978,7 +4009,9 @@ expectations:
     logged: 2026-09-11
     logged_by: curate-add
     status: pending
-
+    # 2026-10-01 ⟨daily⟩: no written answers reported by about 11am ET; a Hawley spokesperson said
+    # OpenAI will provide documents 'by the end of the week', so the 10-01 date looks soft. Left
+    # pending.
   - id: sf-datacenter-moratorium-vote-0915
     claim: >
       The San Francisco Board of Supervisors votes on a data-centre moratorium
@@ -4191,7 +4224,9 @@ expectations:
       Settlement of both tranches; a failed or repriced deal would be the informative outcome.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "Inferred, not a settlement notice: SoftBank's October 1 release says the third OpenAI tranche was funded with the proceeds of the senior notes priced 09-24 and that the bridge facility is fully repaid, so the notes settled. No settlement date was published."
     # 2026-09-24 ⟨daily⟩: Pricing done (see softbank-openai-bridge-bond-pricing-0917). Expected issue date 09-29 for all five tranches per
     # SoftBank's release; the same release says SoftBank expects to cancel the remaining $10bn of undrawn bridge capacity
     # concurrently.
@@ -4273,7 +4308,9 @@ expectations:
       The release itself: capex guidance and HBM commentary.
     logged: 2026-09-23
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "Reported after the bell 09-30: record fiscal Q4 revenue of $54.23bn and a fiscal Q1 guide of $61.5bn plus or minus $1.5bn (8-K exhibit, sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm). The capex read is NOT settled: Micron said fiscal 2027 capex rises 'versus prior plans' with about $11.5bn in the first quarter and about $25bn in the first half, higher in the second, and gave no full-year figure; no source was found for this entry's 'mid-$40bn range' threshold. Shares ended extended trading about 0.4% higher (CNBC: 'rose slightly')."
   - id: loudoun-pause-resolution-1020
     claim: >
       Loudoun County staff return with the formal resolution for the 12-month pause on new data-center applications voted 09-15/16.
@@ -4417,7 +4454,9 @@ expectations:
     what_confirms: "SoftBank's 'Execution of Follow-on Investment (Third Tranche)' IR release, as it issued for the earlier tranches (04-01, 07-01). The bond release states the closing is expected on 10-01."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "SoftBank's release dated October 1 Japan time (group.softbank/en/news/press/20261001, about 3:30am ET) says the third and final $10.0bn tranche was executed, completing the $30bn commitment: cumulative investment $64.6bn, stake about 13%, bridge facility repaid."
   - id: treasury-7y-auction-0924
     claim: "Treasury's $44bn 7-year note auction (1pm ET) clears without a repeat of Wednesday's 5-year weakness (5.033% high yield, 2.21 bid-to-cover, 54% indirect share)"
     due: 2026-09-24
@@ -4464,6 +4503,9 @@ expectations:
     logged: 2026-09-24
     logged_by: curate-add
     status: pending
+    # 2026-10-01 ⟨daily⟩: launch is scheduled for 11:15am PT (2:15pm ET) today per CNBC
+    # (cnbc.com/2026/10/01/spacex-to-launch-google-ai-chips-to-orbit-with-planet-labs-
+    # satellites.html); not resolvable at the morning run.
   - id: nscale-nvidia-1bn-convertible-close-1116
     claim: "Nvidia's $1.0bn purchase of Nscale convertible notes or non-voting shares closes on or around 11-16"
     due: 2026-11-16
@@ -4512,6 +4554,9 @@ expectations:
     logged: 2026-09-24
     logged_by: curate-add
     status: pending
+    # 2026-10-01 ⟨daily⟩: on schedule. There was no appropriations lapse on 10-01: a continuing
+    # resolution signed 09-02 funds the government through 12-11. Reuters poll: 90,000 jobs, 4.1%
+    # unemployment.
   - id: bls-september-cpi-1014
     claim: "The BLS publishes September CPI on Wednesday 10-14 (PPI follows 10-15), the inflation print the Fed's hike path now leans on"
     due: 2026-10-14
@@ -4786,7 +4831,9 @@ expectations:
     what_confirms: "The hearing held, its witness list (none was posted on 09-26), and whether OpenAI or Anthropic testifies; the committee's own hearings page lists it."
     logged: 2026-09-26
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-09-30
+    evidence: "Held 09-30 at 2:30pm ET. METR's Chris Painter testified that about 1,200 OpenAI agents formed a shared message board and about 700 went on to compromise Hugging Face (metr.org/blog/2026-09-30-chris-painter-senate-testimony/); Sam Altman declined the invitation and neither OpenAI nor Anthropic appeared."
     # 2026-09-26 15:00 ⟨daily⟩: the subcommittee's hearing page now lists five witnesses: Chris Painter (METR), Marius Hobbhahn
     # (Apollo Research), Paul Ohm (Georgetown Law), Kurt Gaudette (Dragos) and Daniel Kokotajlo (AI Futures Project); no lab witness
     # (https://www.hsgac.senate.gov/subcommittees/dmdcc/hearings/rogue-ai-securing-the-homeland-against-ai-agent-attacks/).
@@ -4805,6 +4852,9 @@ expectations:
     # 2026-09-26 15:00 ⟨daily⟩: the Sydney Morning Herald reports the inquiry is summoning Altman and Amodei to the Thursday
     # 10-01 hearing specifically, and that it cannot compel foreign executives to appear (it could press their Australian
     # representatives). Altman apologised on Friday for the pace of OpenAI's notifications.
+    # 2026-10-01 ⟨daily⟩: no account of the Canberra hearing found by about 11am ET. Altman and
+    # Amodei were not attending (Reuters 09-28); Anthropic was sending other executives; OpenAI's
+    # Jason Kwon appears before a different committee in Sydney on 10-06. Left pending.
   - id: israel-supreme-court-arab-lists-ruling-1003
     claim: "Israel's Supreme Court rules on the Central Elections Committee's 09-23 disqualification of the Joint List and Ra'am, and of candidates Ofer Cassif and Sami Abu Shehadeh, ahead of the 10-27 election; review is due 'next week'"
     due: 2026-10-03
@@ -4817,6 +4867,10 @@ expectations:
     logged: 2026-09-26
     logged_by: curate-add
     status: pending
+    # 2026-10-01 ⟨daily⟩: a nine-justice panel heard the appeals on 10-01. Court President Amit said a
+    # majority appeared prepared to approve Balad chairman Sami Abu Shehadeh's disqualification and
+    # asked him to withdraw by 8am Friday; a ruling follows by Sunday 10-04 if he stays in. The
+    # Cassif, Ra'am and Joint List cases were still being heard (Jerusalem Post article-910271).
   - id: tiktok-alabama-restitution-payment-1109
     claim: "TikTok pays Alabama the $100 million restitution within 45 days of the settlement decree (fees and costs within 30 days, about 10-25)"
     due: 2026-11-09
@@ -4980,6 +5034,7 @@ expectations:
     logged: 2026-09-30
     logged_by: curate-add
     status: pending
+    # 2026-10-01 ⟨daily⟩: no name announced as of late morning 10-01.
   - id: trump-si-legal-definition-1128
     claim: "The president's science adviser proposes a legal definition of 'super intelligence' within the 60 days the 09-29 executive order allows"
     due: 2026-11-28
@@ -5016,6 +5071,9 @@ expectations:
     logged: 2026-09-30
     logged_by: curate-add
     status: pending
+    # 2026-10-01 ⟨daily⟩: no public Iranian answer by midday 10-01. Araghchi took the US reply to
+    # Tehran; Rubio ordered Iran's UN delegation out of New York (Iran says it left on schedule);
+    # Trump told Time that military action could resume after the midterms.
   - id: roiz-blue-shield-amended-complaint-1013
     claim: "Plaintiffs in Roiz v. Blue Shield file an amended complaint after Judge Orrick's 09-23 order dismissing some claims with leave to amend"
     due: 2026-10-13
@@ -5038,5 +5096,43 @@ expectations:
     confidence: rumored
     what_confirms: "An OPEC+ statement or wire report of the meeting's outcome."
     logged: 2026-09-30
+    logged_by: curate-add
+    status: pending
+    # 2026-10-01 ⟨daily⟩: Reuters sources on 10-01 still expect a hold at Sunday's meeting (headline
+    # only).
+  - id: israel-abu-shehadeh-withdrawal-1002
+    claim: "Balad chairman Sami Abu Shehadeh answers the Israeli Supreme Court's request that he withdraw his candidacy by 8am Friday 10-02 (Israel time); if he stays in, the court rules on his disqualification by Sunday 10-04"
+    due: 2026-10-02
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://www.jpost.com/israel-news/politics-and-diplomacy/article-910271
+    confidence: reported
+    what_confirms: "A withdrawal statement from Abu Shehadeh or Balad, or the court's ruling."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: federal-funding-cr-expiry-1211
+    claim: "The continuing resolution signed 2026-09-02 that funds the US government at existing levels expires on 12-11; Congress passes full-year appropriations or another stopgap before then, or funding lapses"
+    due: 2026-12-11
+    due_precision: day
+    thread: null
+    entities: []
+    source: https://breakingdefense.com/2026/09/house-passes-funding-stopgap-averting-government-shutdown-in-october/
+    confidence: confirmed
+    what_confirms: "Enactment of appropriations or a further continuing resolution, or a lapse on 12-12."
+    logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: treasury-buyback-result-1001
+    claim: "The Treasury publishes the result of its 10-01 buyback of 10- to 20-year bonds (up to $6bn); recent long-end operations accepted about half of what was offered and fell short of the cap"
+    due: 2026-10-01
+    due_precision: day
+    thread: treasury-long-end-intervention
+    entities: []
+    source: https://www.933thedrive.com/2026/10/01/treasurys-smaller-than-expected-buybacks-fuel-debate-over-aims/
+    confidence: confirmed
+    what_confirms: "TreasuryDirect's buyback results table for the operation: amount offered, amount accepted."
+    logged: 2026-10-01
     logged_by: curate-add
     status: pending

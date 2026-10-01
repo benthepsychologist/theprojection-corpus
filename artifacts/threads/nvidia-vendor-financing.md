@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-10-01 — Lenders press Nvidia for stronger guarantees
+
+- **Lenders want more guarantees than Nvidia first offered on its $500 billion chip-backed financing plan because they doubt GPUs will earn revenue for a decade, Reuters reported** Sources say Nvidia may need to guarantee all deals or tie them to investment-grade customers' revenue; Nvidia called its compute "a productive, durable and fungible asset." ([Reuters via BNN Bloomberg](https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/01/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-29 — Nvidia reported in talks with insurers over chip-backed loans
 
 - **Nvidia has held talks with insurers, including reinsurance broker Howden Re, about taking on the default risk of loans backed by its AI chips, the Financial Times reported Tuesday.** One structure would protect lenders if a smaller cloud provider defaults and the pledged chips resell for less than the debt; the talks are early and may not produce deals, and Nvidia has shared chip-depreciation data with at least one insurer. ([The Next Web on the FT](https://thenextweb.com/news/nvidia-insurers-ai-chip-loans-neoclouds-ft), [Benzinga](https://www.benzinga.com/markets/tech/26/09/62043405/nvidia-reportedly-turns-to-insurers-to-de-risk-ai-chip-loans-as-jensen-huang-pushes-beyond-big-tech-could-this-unlock-billions-for-smaller-cloud-players)) ⟨daily 2026-09-29⟩

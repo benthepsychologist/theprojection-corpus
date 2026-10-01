@@ -13,9 +13,15 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-10-01 — Khanna presses five AI labs on Chinese theft of model weights; China's ambassador urges cooperation
+
+- **Rep. Ro Khanna, the top Democrat on the House Select Committee on China, wrote to the chief executives of OpenAI, Anthropic, Google, Meta and SpaceX asking what they know about attempts by China or other hostile actors to steal their model weights** He also asked each company to describe its security measures, writing that "the theft of such a model weight by (China) could erode America's AI lead with the stroke of a keyboard"; he also wrote this week to DeepSeek, Alibaba and Moonshot AI and to the US intelligence community. ([The Next Web, citing Reuters](https://thenextweb.com/news/ai-firms-chinese-model-weight-theft), [Reuters](https://www.reuters.com/legal/litigation/leading-democrat-asks-ai-firms-data-any-chinese-access-sensitive-code-2026-10-01/)) ⟨daily 2026-10-01⟩
+- **China's ambassador to the United States, Xie Feng, told Newsweek that Beijing wants AI cooperation with Washington so that "rather than heralding the dusk of humanity, new technologies such as AI will usher in the dawn of a new era"** In a written interview after the Xi-Trump summit he said Xi told Trump the two countries "have both the capability and responsibility to develop and manage AI for good" under human control, and blamed "technological decoupling, enclosure, and self-isolation" rather than openness for risk. ([Newsweek](https://www.newsweek.com/exclusive-china-urges-us-cooperation-on-ai-to-avoid-human-extinction-12506809)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — DeepSeek and Huawei release open-source Ascend programming tools
 
 - **DeepSeek said it has teamed up with Huawei to release open-source programming tools for Huawei's Ascend AI chips, led by TileLang, a language it presents as simpler than Nvidia's CUDA** A post on DeepSeek's official WeChat channel says Huawei "fully supported" the work, which includes libraries for computation and moving data between chips and an optimized "supernode" of 128 Ascend 950 chips; TileLang began at Peking University. ([The Decoder](https://the-decoder.com/chinas-ai-industry-closes-ranks-as-deepseek-ships-open-source-software-for-huaweis-ascend-chips/), [Yahoo Tech](https://tech.yahoo.com/ai/articles/deepseek-huawei-partner-open-source-134322190.html)) ⟨daily 2026-09-30⟩
+- **Tencent has leased about 100,000 advanced AI chips from Oracle in a five-year deal worth about $7 billion, the Financial Times reported** The capacity is in Southeast Asian data centers with about 30% payable upfront; neither company has confirmed it. ([The Nation, summarizing the FT](https://www.nation.com.pk/01-Oct-2026/china-s-tencent-leases-100-000-chips-us-oracle-amid-escalating-ai-race-report)) ⟨daily 2026-09-30⟩
 
 ## 2026-09-29 — Khanna presses US intelligence and Chinese labs on a US-China AI treaty
 

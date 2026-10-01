@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* Breadth (AI-specific vs macro) · the earnings verdicts · whether
 the drawdown changes real capex behavior.
 
+## 2026-10-01 — Volatility-control funds are stretched on equities
+
+- **Volatility control funds have pushed their equity allocations to the 98th percentile since 2010, leaving them positioned to force billions of dollars of share sales if volatility rises, Reuters reported.** Banks estimate the strategies manage $300 billion to $500 billion, and Barclays' Stefano Pascale said "even a mild rise in volatility would theoretically cause a significant exposure unwind." ([Reuters via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/analysis-volatility-control-funds-near-100442724.html)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-25 — Equity funds see their biggest inflow since July despite the bond selloff
 
 - **Investors bought a net $44.1 billion of global equity funds in the week to September 25, the most since July 8, snapping a two-week selling streak on AI enthusiasm and lower oil despite a sharp rise in government bond yields, LSEG Lipper data show.** US equity funds took in $37.6 billion, a three-month high, and technology funds $5.29 billion, the most since July 29, while government-bond funds saw $1.47 billion of outflows. ([Reuters, via Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/global-equity-funds-snap-two-111746201.html)) ⟨daily 2026-09-25⟩

@@ -13,6 +13,14 @@ crawled: 2026-07-22
 preemption pressure from any federal framework. Distinct from the
 FDA/court tracks in `ai-therapy-regulatory-reckoning`.
 
+## 2026-10-01 — Connecticut's AI law begins taking effect
+
+- **Connecticut's omnibus AI law began taking effect on 10-01, with its AI-companion duties to detect suicide and self-harm risk and to refer users to resources such as 988 set to start on 2027-01-01.** The Daily Campus reports the first provisions to apply cover subscription-renewal consent and anonymous-reporting protections for frontier-lab employees. ([The Daily Campus](https://dailycampus.com/2026/09/30/new-ai-regulation-law-goes-into-effect-oct-1/)) ⟨daily 2026-10-01⟩
+
+## 2026-09-30 — California's governor vetoes the AI-psychotherapy bill
+
+- **Governor Newsom vetoed SB 903 on 09-30, Senator Steve Padilla's bill to bar companion chatbots from providing psychotherapy and to limit licensed professionals' use of AI in therapy, calling it overly broad.** His veto message says the bill would "drastically limit a clinician's use of tools that benefit the delivery of care today" and that its definition of psychotherapy services would capture general-purpose AI systems not deployed to deliver that care; he urged the author to revisit the issue next year. ([Veto message](https://www.gov.ca.gov/wp-content/uploads/2026/09/VETO-msg-SB-903.pdf), [SB 903 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB903)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-28 — Pennsylvania's House passes HB 2006, parental consent and crisis protocols for minors' AI companions
 
 - **The Pennsylvania House passed HB 2006 on 09-28 by 133-70, requiring verifiable parental consent before minors can use AI companion chatbots and crisis-response protocols when a conversation signals suicidal thoughts, self-harm, certain eating-disorder behaviour or interest in harming another person.** Thirty Republicans joined all 103 Democrats in backing the bill by Rep. Melissa Shusterman (D-Chester). Operators would also have to stop companions from encouraging harmful acts or giving instructions for suicide or violence, remind users every two hours that they are talking to an AI, and label a companion that could be mistaken for a person; the Attorney General would enforce it with civil penalties of up to $100,000 per day, effective 180 days after enactment. A ranking Republican objected that it would force companies to "collect more information on everyone" to establish age. It now goes to the Republican-controlled Senate; the thread's 09-23 entry logged a separate House memo on chatbots posing as licensed professionals. ([The Center Square](https://www.thecentersquare.com/pennsylvania/article_54c11d69-8a2d-40b4-a45d-f01bd3195074.html), [Law Commentary](https://www.lawcommentary.com/articles/pennsylvania-ai-companions-parental-consent-minors)) ⟨daily 2026-09-28⟩

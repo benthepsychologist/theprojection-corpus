@@ -18,6 +18,10 @@ the watch toward whether the post-earnings recovery holds through the next
 reporting cycle and whether the Tesla-merger Change-in-Control question
 (08-11, below) resurfaces.
 
+## 2026-10-01 — SpaceXAI reported in compute-leasing talks with Microsoft
+
+- **SpaceX's AI unit held talks over the summer about leasing computing capacity to Microsoft, The Information reported** The report, citing people familiar with the matter, was published Thursday. ([MarketScreener, relaying The Information](https://ae.marketscreener.com/news/spacex-s-ai-unit-in-talks-to-lease-compute-capacity-to-microsoft-ce785ddad98df62d)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — SpaceXAI weighs four-tier Grok and X subscriptions
 
 - **SpaceXAI is considering a four-tier subscription overhaul for Grok and X, including a $100 a month "Ultra" plan with access to its Grok Bot agent and an $8 "Lite" plan, Bloomberg reported from an internal document** The plan is under consideration and has not been announced. ([Investing.com via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/spacexai-considers-four-tier-pricing-181516980.html)) ⟨daily 2026-09-30⟩

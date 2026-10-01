@@ -1,0 +1,120 @@
+# Interpretations for 2026-10-01 global-capital, keyed by
+# slugify(bold lead[:50]). Read against attention/capital-context.yaml
+# (asof 2026-08-25, about five weeks stale; used for its described pattern
+# only) and this map's treasury-long-end-intervention and
+# nvidia-vendor-financing threads.
+
+the-10-year-treasury-yield-rose-to-about-5-33-ear:
+  mechanism: >
+    Yields are rising together across the US, Germany, France, Britain and
+    Japan, which points to a shared driver rather than one country's news:
+    energy-driven inflation (September flash inflation in Germany, France
+    and Italy came in at multi-year highs), larger government borrowing, and
+    central banks that are raising or holding rates. When a US 10-year at
+    5.33% sits beside a German 10-year at 3.62%, buyers of long bonds can
+    demand more from every issuer at once, and the weakest fiscal stories,
+    France this week, pay the most. CNBC's reading that bonds are now moving
+    in step with oil makes the Iran talks a bond-market variable as well as
+    an energy one.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Yields keep grinding up while oil stays near $100, and a failed
+        Iran deal or a hot September jobs report pushes the 10-year well
+        through 5.4%.
+      why: >
+        The quarter's rise in the US 10-year was the largest since 1994
+        (Euronews), no buyer has yet stepped in at these levels, and the
+        Treasury's own buybacks are taking in only about half of what is
+        offered, so official support is limited.
+      precedent: >
+        The 2022 bond rout, when the US 10-year rose for several months
+        together with oil-driven inflation and only stabilised after the Bank
+        of England's September 2022 gilt intervention.
+    - direction: >
+        A concrete Iran deal drops oil sharply and long-term yields retrace
+        part of the quarter's rise.
+      why: >
+        Analysts quoted by CNBC say yields could fall if oil falls
+        significantly; Gulf exports are already back close to pre-war levels.
+      precedent: >
+        On 09-30 the 10-year briefly fell to 5.20% on cooler PCE data before
+        closing at 5.29% (Treasury par curve), showing relief can be brief
+        when oil and debt supply pull the other way.
+  context_note: >
+    capital-context.yaml (asof 08-25) has the 30-year at 5.24% and predates
+    the 09-16 hike; the current levels are far above it. The next /week
+    refresh should reset the rate_regime reading to the early-October levels.
+
+lenders-want-stronger-guarantees-on-nvidia-s-500:
+  mechanism: >
+    Chip-backed loans work only if the chips keep earning enough to repay the
+    debt, so the lender's question is how long a GPU stays productive and
+    what it will fetch if the borrower fails. Nvidia says up to a decade;
+    credit investors quoted by Reuters assume less. When lenders doubt the
+    collateral, the cost falls back on guarantees: Nvidia standing behind the
+    loans, or contracts from investment-grade customers, which makes the
+    risk partly Nvidia's own and the financing more circular. That is the
+    outcome Nvidia's plan was meant to avoid.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        First deals close with stronger guarantees than the 25% residual-value
+        cap Nvidia floated, and the platform proceeds on lenders' terms.
+      why: >
+        One source told Reuters tens of billions of loans in the pipeline are
+        likely to carry strong guarantees and customer contracts, and
+        demand to finance the deals remains high.
+    - direction: >
+        Lenders hold out and the first closes slip, leaving AI developers
+        reliant on equity and vendor financing.
+      why: >
+        Three banking sources said the market is not ready to treat compute
+        like aircraft, and the August 10 announcement was non-binding.
+  context_note: >
+    capital-context.yaml (asof 08-25) predates Nvidia's 08-10 announcement;
+    this entry rests on Reuters's 10-01 report and this map's
+    nvidia-vendor-financing thread. Confidence is speculative because the
+    report relies on unnamed sources and no deal terms have been published.
+
+broadcom-has-agreed-to-lend-anthropic-up-to-42-bi:
+  mechanism: >
+    When the company that sells the chips also lends the money to lease
+    them, demand for the chips and the credit that pays for them come from
+    the same place. Broadcom is Anthropic's chip partner, its
+    equipment lessor and, under this facility, a lender whose convertible
+    notes could become Anthropic shares; if Anthropic's revenue falls short,
+    the loss would fall on both Anthropic's lease obligations and Broadcom's
+    receivable. The prospectus language about "potential conflicts of
+    interest" and about defaults that could accelerate lease payments while
+    limiting use of the facility describes that coupling. It follows the
+    pattern the map tracks at Nvidia, where a supplier's balance sheet
+    stands behind its customers' purchases.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        Anthropic's IPO prices and the facility stays an unused backstop,
+        so the notes are never sold and the lease commitments are paid from
+        revenue and equity proceeds.
+      why: >
+        Anthropic said it does not expect any notes to be sold before its
+        IPO, and a successful offering would give it a different funding
+        source for the TPU lease.
+    - direction: >
+        A weaker IPO or a revenue miss forces Anthropic to draw on the
+        facility, and Broadcom's lending and its chip sales to Anthropic
+        become one concentrated exposure that credit investors price
+        explicitly.
+      why: >
+        The notes could finance about a third of a $125.2 billion lease
+        commitment, and lenders are already asking for stronger guarantees
+        on Nvidia's chip-backed financing and for more compensation on
+        AI-related junk-rated borrowing.
+  context_note: >
+    capital-context.yaml (asof 08-25) predates this filing and has no
+    reading on supplier financing of AI labs; the entry rests on CNBC's and
+    Reuters's account of the prospectus and on this map's
+    nvidia-vendor-financing and ai-buildout-debt-risk threads. Confidence is
+    speculative because the facility is undrawn and no scenario has a
+    close precedent for a chip supplier lending to its largest customer ahead
+    of that customer's IPO.

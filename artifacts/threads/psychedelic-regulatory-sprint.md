@@ -15,6 +15,10 @@ rejected MDMA on unblinding/safety grounds and then wrote new trial-design
 rules (July 2026) addressing exactly the problem the accelerating trials
 share. The live question: is approval outrunning the methodology fix?
 
+## 2026-10-01 — A bipartisan House caucus publishes its psychedelic-therapy report
+
+- **The bipartisan Congressional Psychedelics Advancing Therapies (PATH) Caucus published a report on 10-01 finding broad stakeholder consensus that psychedelic-assisted therapy could treat a range of treatment-resistant conditions, and urging coordination among federal agencies, states and tribes.** Built on responses to a 2024 request for information, it recommends federal therapy guidelines, multiple credentialing pathways, a national adverse-event monitoring system and work on insurance coverage; co-chairs Reps. Jack Bergman and Lou Correa said President Trump's executive order on psychedelic research had pushed colleagues to take the issue seriously. ([Marijuana Moment](https://www.marijuanamoment.net/bipartisan-congressional-psychedelics-caucus-lays-out-plan-for-federal-and-state-cooperation-to-increase-therapeutic-access/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — Portland council finalizes low-priority psychedelics ordinance
 
 - **Portland's City Council passed, as amended, an ordinance making non-commercial personal use of naturally occurring psychedelics a low law-enforcement priority and creating a Psychedelics Advisory Commission (10 aye, two absent).** The ordinance adds Chapter 14B.140 to city code and keeps enforcement against illegal sales and impaired driving; it had passed to second reading on 09-23. ([City of Portland](https://www.portland.gov/council/documents/ordinance/psychedelic-health-and-safety-act)) ⟨daily 2026-09-30⟩

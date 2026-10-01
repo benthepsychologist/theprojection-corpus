@@ -15,6 +15,10 @@ signal is a tension: Suleyman is the loudest Big-Tech voice on chatbot
 "AI psychosis" harm *while* shipping consumer AI companions, and MH is
 conspicuously absent from Microsoft's flagship health products.
 
+## 2026-09-25 — Microsoft folds its consumer Copilot into the workplace product
+
+- **Microsoft is merging the consumer and workplace versions of Copilot into one product aimed at corporate customers, ending its separate personal-chatbot effort, the Los Angeles Times reported on 2026-09-25.** Executives previewed the new Copilot to business leaders in Seattle on 09-23; Mustafa Suleyman, who was tapped two years ago to lead the consumer assistant, handed Copilot product development to Jacob Andreou in March. The change removes the consumer companion-chatbot line that sat beside Suleyman's public warnings about chatbot harm. ([Los Angeles Times](https://www.latimes.com/business/story/2026-09-25/microsoft-retreats-from-personal-ai-chatbot-race-refocusing-copilot-on-workplace), [Straits Times](https://www.straitstimes.com/world/microsoft-abandons-personal-ai-chatbot-race-with-copilot-reboot)) ⟨daily 2026-09-25⟩
+
 ## 2026-08-25 — Dragon Copilot opens a physician-app marketplace, still no MH angle
 
 - **Microsoft took Dragon Copilot AI Apps and Agents to general availability on Microsoft Marketplace (August 17, 2026)** — a new discovery/procurement channel letting third-party partners build and sell specialized clinical/operational add-ons (documentation, prior authorization, revenue-cycle, clinical decision support) directly into physician workflows, US-only for now. Distribution-layer expansion, not a new product; the listed capability categories remain administrative/somatic, with no mental-health-specific offering called out. ([Microsoft Community Hub](https://techcommunity.microsoft.com/blog/healthcareandlifesciencesblog/extend-clinical-workflows-with-dragon-copilot-ai-apps-and-agents-in-microsoft-ma/4548688)) ⟨daily 2026-08-25⟩

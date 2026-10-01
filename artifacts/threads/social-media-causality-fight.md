@@ -18,6 +18,7 @@ claims being cited as one.
 ## 2026-09-30 — WhatsApp adds optional parent-managed controls for teen accounts
 
 - **WhatsApp began rolling out optional parent-managed controls for teen accounts on 09-30, letting parents see when a teen joins or leaves a group and set profile privacy, Channels use and whether Meta AI runs at its default 13+ level or a stricter "Limited Content" setting.** The controls are PIN-locked, and messages and calls stay end-to-end encrypted and unreadable to parents; social-media analyst Matt Navarra told the BBC the optional design is an "obvious weakness" and "fairly convenient" for Meta because it reduces reliance on age verification. ([BBC](https://www.bbc.com/news/articles/cm986x65we88o)) ⟨daily 2026-09-30⟩
+- **A Brasília judge ordered Discord on 09-30 to strengthen parental controls and age verification, on pain of a fine of about $20,000 a day, after the July suicide of a 13-year-old girl during a livestream.** The order is an emergency measure; the court has not ruled on the government's suit against Discord for nearly $100 million, filed last month. ([AFP via The Star](https://www.thestar.com.my/tech/tech-news/2026/10/01/brazil-orders-discord-to-bolster-child-safety-after-teen-suicide)) ⟨daily 2026-09-30⟩
 
 ## 2026-09-29 — Australia tells its High Court there is no scientific consensus on social media's mental-health harm, but credible risks justify the ban
 

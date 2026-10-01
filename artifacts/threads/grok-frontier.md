@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-09-30 — SpaceXAI signs a Grok memorandum with Azerbaijan
+
+- **Azerbaijan's Ministry of Digital Development and Transport signed a memorandum with SpaceXAI to explore using its Grok models in government services** The agreement is a cooperation framework rather than a purchase: the parties will jointly assess AI uses across public-sector institutions and consider scaling successful ones, and Deputy Minister Rashad Hasanov said Azerbaijan has "moved from discussing AI to implementing it." ([AzerNews](https://www.azernews.az/nation/264803.html), [Report.az](https://report.az/en/ict/azerbaijan-and-spacexai-sign-ai-cooperation-memorandum)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-28 — SpaceXAI ships Team Bots for shared Grok agents
 
 - **SpaceXAI launched Team Bots, Grok Bots that a team shares so everyone works from the same context** Each combines shared files and instructions, plugins for Salesforce, Notion and GitHub, credentials and per-user memories, keeps each person's conversations private, and can join Slack channels; SpaceXAI says it uses them internally to brief account teams each morning. ([SpaceXAI](https://x.ai/news/team-bots)) ⟨daily 2026-09-28⟩

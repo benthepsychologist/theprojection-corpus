@@ -11,6 +11,10 @@ opened: 2026-07-28
 *Watch:* the UHC discovery outputs · WISeR's fate · state bans spreading ·
 the ghost-network/network-adequacy strand.
 
+## 2026-09-30 — California signs its bias-testing law for AI clinical decision tools
+
+- **Governor Newsom signed SB 503 on 09-30, requiring developers and deployers of AI clinical decision-support systems to take reasonable steps to identify and reduce biased impacts in health programs.** The law (Weber Pierson, Chapter 857) has developers publish intended uses and foreseeable risks and has deployers monitor the tools in use; the governor's release frames it as keeping clinicians' professional judgment at the center of AI-assisted care. ([SB 503 bill status](https://leginfo.legislature.ca.gov/faces/billStatusClient.xhtml?bill_id=202520260SB503), [Governor's legislative update](https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-29 — A federal judge lets the Blue Shield of California "ghost network" class action proceed
 
 - **A federal judge ruled on 09-23 that a class action accusing Blue Shield of California and its behavioral-health contractor Magellan of publishing a grossly inaccurate directory of mental-health clinicians can go forward, granting the motions to dismiss in part and denying the rest (reported 09-29).** Judge William Orrick's order in Roiz v. Blue Shield dismissed two causes of action against Blue Shield and five against Magellan, with leave to amend within 20 days; Behavioral Health Business reports the amended complaint is due 10-13, after which discovery and class certification follow, and that Blue Shield does not comment on pending litigation. ([Order, N.D. Cal.](https://litigationtracker.law.georgetown.edu/wp-content/uploads/2026/02/Roiz_2026.09.23_OPINION.pdf), [Behavioral Health Business](https://bhbusiness.com/2026/09/29/blue-shield-of-california-magellan-ghost-network-lawsuit-continues-after-failed-motion-to-dismiss/)) ⟨daily 2026-09-29⟩

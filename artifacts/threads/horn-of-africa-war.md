@@ -10,10 +10,16 @@ opened: 2026-08-04
 
 *Watch:* A Tigray-war reignition with cross-border spillover. Track whether federal/TPLF fighting becomes sustained rather than episodic; displacement volume and direction; whether Eritrea enters directly, which is the step-change that would turn a civil conflict back into a regional war; and any AU/UN mediation.
 
+## 2026-10-01 — Eritrea denies backing Ethiopia's rebel alliance
+
+- **Eritrea's information minister told the BBC his government is not backing Ethiopia's rebel alliance, accusing Ethiopia's ruling Prosperity Party of seeking external scapegoats, while a pro-government militia commander told the BBC that Eritrean soldiers are on the front lines in Tigray.** The BBC could not verify either claim and cannot report from Tigray, where internet and telecoms are cut. ([BBC](https://www.bbc.co.uk/news/articles/c3vgygpqky9zo)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — Pope appeals for dialogue in Tigray as Israelis are evacuated from Lalibela
 
 - **Pope Leo XIV appealed on Wednesday to all parties in Tigray to "choose the path of dialogue," saying he follows "with deep concern" the renewed hostilities in Tigray, Afar and Amhara.** ([Vatican News](https://www.vaticannews.va/en/pope/news/2026-09/pope-appeals-for-dialogue-in-tigray-region.html)) ⟨daily 2026-09-30⟩
 - **Israel's Foreign Ministry said a group of Israelis stranded in Lalibela, in Ethiopia's Amhara region, was evacuated by helicopter after a three-day diplomatic effort.** Flights to Lalibela have been suspended since September 24 because of nearby clashes. ([i24NEWS](https://www.i24news.tv/en/news/israel/diplomacy/artc-israelis-airlifted-from-ethiopia-s-lalibela-as-fighting-escalates)) ⟨daily 2026-09-30⟩
+- **Explosions were heard overnight in Addis Ababa, hours after Ethiopia banned drone flights over the capital, and a source linked to the Ethiopian Peoples' Forces Alliance for Survival told Reuters the rebel alliance carried out drone strikes, including on the military's headquarters.** There was no official word on the cause, damage or casualties; Al Jazeera's reporter said federal forces had advanced to within about 40 kilometres of Mekelle, and in Afar government forces told Reuters they had retaken Erebti and Abaala, a claim not independently confirmed. ([Al Jazeera, citing Reuters](https://www.aljazeera.com/news/2026/10/1/blasts-heard-in-addis-ababa-as-ethiopia-conflict-widens-in-the-north), [BBC](https://www.bbc.co.uk/news/articles/c3vgygpqky9zo)) ⟨daily 2026-09-30⟩
+- **A drone strike by Sudan's Rapid Support Forces on a Kordofan University dormitory in El-Obeid killed at least five people and wounded 47 on Wednesday, the Sudan Doctors Network said.** El-Obeid, the capital of North Kordofan, has been hit repeatedly, including a September 20 attack that killed two and wounded 20. ([Anadolu](https://www.aa.com.tr/en/middle-east/5-killed-47-injured-in-rsf-drone-attack-on-university-dormitory-in-sudan-doctors-group/4075068)) ⟨daily 2026-09-30⟩
 
 ## 2026-09-29 — Afar governor says Eritrean forces are fighting alongside the rebel coalition
 

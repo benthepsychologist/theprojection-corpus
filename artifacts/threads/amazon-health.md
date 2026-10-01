@@ -14,6 +14,10 @@ Pharmacy + a Bedrock "Health AI" layer) — but MH is adjacent, not headline.
 The MH-native move sits upstream in AWS (HealthScribe's behavioral-health
 scribe), positioning Amazon as therapy-sector *infrastructure*.
 
+## 2026-09-29 — Amazon's $5 RxPass and GoodRx's subscription are drawing cost-squeezed patients, with mental-health refills among the top uses
+
+- **Amazon's $5-a-month RxPass prescription subscription has grown nearly threefold in users since its 2023 launch, with more than 70% of customers filling three or more medications, Amazon Pharmacy's John Love told Reuters on 2026-09-29.** Love said many refills are for mental-health and cardiovascular drugs and that the plan draws people with and without insurance; GoodRx's $14.99 Companion plan reported subscription revenue up 39% to $28.5 million in the second quarter. Amazon's plan covers around 50 generics against GoodRx's 250-plus. ([Reuters](https://www.reuters.com/legal/litigation/amazon-goodrx-target-us-prescription-subscribers-health-insurance-coverage-slips-2026-09-29/), [Reuters text via Y94](https://y94.com/2026/09/29/amazon-goodrx-target-us-prescription-subscribers-as-health-insurance-coverage-slips/)) ⟨daily 2026-09-29⟩
+
 ## 2026-08-06 — A $50/month Medicare GLP-1 channel
 
 - **Amazon Pharmacy began offering Wegovy, Zepbound and Foundayo to eligible

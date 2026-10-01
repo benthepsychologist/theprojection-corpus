@@ -20,6 +20,10 @@ crawl dispatched same day as opening — entries below land
 Finding: `artifacts/findings/asml-2026-08-04.md` · bundle:
 `artifacts/bundles/asml-2026-08-04/provenance.yaml`
 
+## 2026-09-24 — Dutch prime minister says he expects a deal with Washington on the MATCH Act
+
+- **Dutch Prime Minister Rob Jetten said on 2026-09-24 he has spoken with President Trump and US lawmakers about the MATCH Act and is "pretty confident we will come to some agreement that is workable for each and every one."** Speaking to Bloomberg Television in New York, Jetten described the Act as stopping all sales to China of ASML's immersion DUV machines, on top of existing EUV controls; Bloomberg noted China was 14% of ASML's net system sales in the second quarter, down from 19% in the first. No agreement has been announced. ([Bloomberg via Livemint](https://www.livemint.com/companies/dutch/dutch-premier-hopes-to-prevent-more-us-export-curbs-on-asml-11790277201761.html), [Bloomberg](https://www.bloomberg.com/news/articles/2026-09-24/dutch-premier-hopes-to-prevent-more-us-export-curbs-on-asml)) ⟨daily 2026-09-24⟩
+
 ## 2026-09-22 — ASML's own public-affairs chief says the EUV monopoly is selling nothing at all in its home region
 
 - **ASML Executive Vice President Frank Heemskerk said at an Amsterdam event Monday evening that ASML "is not selling anything at all in Europe," and that the region risks being left behind as the US, China and India all build out domestic chip manufacturing that actually buys ASML's tools.** This doesn't touch the thread's core export-control/China-DUV fight directly, but it is a new, dated, on-the-record data point that sharpens the thread's "structural chokepoint" framing from its own opening rationale — the sole global supplier of EUV lithography has zero commercial demand in the one region that hosts it, because that region isn't building the fabs that would buy the tools. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-09-22/asml-executive-says-europe-s-biggest-firm-has-no-sales-in-europe)) ⟨daily 2026-09-22⟩

@@ -7,7 +7,7 @@ core-pce-inflation-cooled-to-3-0-in-august-below:
   mechanism: >
     A lower-than-forecast core reading (3.0% against 3.3%) removes the
     near-term case for an October hike, which is why the 2-year yield fell
-    about 5 basis points and hike odds dropped from about 51% to about 35%.
+    about 5 basis points and hike odds dropped from roughly a coin flip to about 37%.
     Two caveats keep it from settling the long end: BEA changed how it
     measures legal services, software and portfolio management, so part of
     the miss may be method rather than price behaviour, and the data
@@ -23,7 +23,7 @@ core-pce-inflation-cooled-to-3-0-in-august-below:
         meeting, are driving it.
       why: >
         Two days of Fed-speak and data (Williams's "no urgency" on 09-29,
-        this print) moved October odds from about 71% to about 35%, but
+        this print) moved October odds from about 71% to about 37%, but
         Tuesday's 30-year still closed at 5.59% on Treasury's par curve.
       precedent: >
         On 09-29 the 2-year eased to about 4.90% after Williams spoke, yet
@@ -68,10 +68,11 @@ hedge-funds-borrowing-from-banks-reached-nearly:
         resumed, and the SEC has proposed easing borrowing-disclosure rules,
         so neither lenders nor regulators are tightening yet.
       precedent: >
-        The July episode itself: the fund's forced sale to Citadel did not
-        start a wider selloff, because the stock market was otherwise calm
-        (CNBC, 07-31, which described a forced cut of positions after a
-        momentum reversal).
+        The July episode itself: the fund's forced sale to Citadel spilled
+        into specific names (Micron fell 4.3% to 6.0% on 07-31) but not into
+        the indexes, which rose that day (Nasdaq +1.00%, Dow +0.53%) (this
+        map's ai-trade-bear-turn and ai-circular-financing-risk threads,
+        07-31).
     - direction: >
         A fresh drop in AI-linked stocks or a further jump in long-term
         yields hits another leveraged fund and lenders pull back together.
@@ -119,10 +120,59 @@ federal-reserve-inspector-general-found-no-grounds:
       why: >
         Pirro said she would review the report and had not ruled out
         reopening; Trump has insisted there was "criminality" and blames a
-        "hostile" Board for this month's rate rise.
+        "hostile" Board for this month's rate rise, and late Wednesday he
+        wrote on Truth Social that Powell "should be forced to resign,
+        IMMEDIATELY" and be sued by the government (NBC News), so the
+        second path was already being pressed hours after the report.
   context_note: >
     capital-context.yaml (asof 08-25) predates Warsh's confirmation as
     chair and the 09-16 hike; this entry rests on this map's
     fed-independence-fight thread and on CNBC's and CBS's accounts of the
     report. Confidence is speculative because no market reaction to the
     report was observed in the reads available at about 3:30pm ET.
+
+micron-reported-record-fiscal-fourth-quarter-reven:
+  mechanism: >
+    Micron's record quarter came from price, not volume: revenue rose 379%
+    to $54.23 billion with an 87.0% gross margin because supply cannot keep
+    up with AI-driven memory demand, and an analyst quoted by Benzinga
+    noted that DRAM and NAND revenue growth far outpaced shipment growth.
+    Management is now spending against that shortage, raising fiscal 2027
+    capex mostly for construction that opens cleanroom space in late
+    calendar 2028 and beyond, while saying more than 75% of 2027 output is
+    already committed and that 26 multi-year customer agreements cover over
+    35% of revenue through 2030. The flat after-hours reaction fits a
+    market that had already priced a very strong print (the stock was up
+    roughly 275% for the year, per CNBC) and is now weighing the capex
+    bill. The mechanism worth watching is the lag: shortage pricing holds
+    until new capacity lands, and the capex announced now is what ends it.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Memory stays tight through 2027 and 2028, margins stay near 85% or
+        higher and the capex step-up is absorbed by cash flow.
+      why: >
+        New cleanroom space is not due until late 2028, supply is largely
+        pre-committed, and operating cash flow was $43.97 billion in the
+        quarter against $10.77 billion of capex.
+      precedent: >
+        The 2017 to 2018 memory upcycle, when contract DRAM prices kept
+        rising for several quarters while the industry's new fabs were still
+        being built.
+    - direction: >
+        Pricing rolls over once the 2028-era capacity arrives, or sooner if
+        AI orders pause, and today's capex raise reads as the cycle's late
+        signal.
+      why: >
+        Revenue growth is mostly price, so a modest rise in supply or fall
+        in orders moves margins sharply; the capex is committed years ahead
+        of the demand it is meant to serve.
+      precedent: >
+        The 2019 memory downturn, when DRAM prices fell and Micron's revenue
+        dropped after the 2017 to 2018 capacity build.
+  context_note: >
+    capital-context.yaml (asof 08-25) has no memory-cycle reading; this entry
+    rests on Micron's own release, CNBC's and Benzinga's accounts of the
+    call, and this map's ai-memory-shortage thread. Short-seller Michael
+    Burry's September 22 bet that chip prices fall when capacity arrives
+    (in that thread) is the opposing view, not evidence for this entry.
