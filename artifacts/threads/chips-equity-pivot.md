@@ -16,6 +16,10 @@ unresolved. Track: which awards convert, the legal instrument used, and
 whether equity terms start steering corporate behavior (links
 intel-rescue).
 
+## 2026-10-01 — Trump says the government might take stakes in OpenAI and Anthropic as it did in Intel
+
+- **Asked in a TIME interview why not take stakes in OpenAI and Anthropic as it did with Intel, Trump answered "I might. Maybe I could do that. I have many deals like that"** He described the Intel deal as the government getting 10% of the company, said "I think we made $60 billion," and rejected nationalizing the frontier labs, saying the Justice Department is the guardrail. ([TIME interview transcript](https://time.com/article/2026/10/01/donald-trump-2026-interview-transcript/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-16 — IBM's quantum-foundry unit finalises the largest quantum CHIPS award, $1 billion
 
 - **IBM's quantum-foundry subsidiary Anderon finalised a $1 billion CHIPS Act award with the Commerce Department on 2026-09-16, the largest of the quantum awards, matched by $1 billion from IBM.** GovConWire reports that Commerce takes a minority, non-controlling equity stake as a condition of the funding and that two other $100 million awards and one of up to $38 million (Diraq) are not yet finalised; IBM's own release announces the finalisation without mentioning the stake. The first wafers are already running through the Albany, New York facility. ([GovConWire](https://www.govconwire.com/articles/anderon-ibm-finalized-1b-chips-quantum-foundry-award), [IBM](https://newsroom.ibm.com/2026-09-16-anderon,-an-ibm-company,-finalizes-agreement-with-the-u-s-department-of-commerce-for-a-1-billion-chips-award-to-accelerate-r-d-for-u-s-based-pure-play-quantum-foundry)) ⟨daily 2026-09-26⟩

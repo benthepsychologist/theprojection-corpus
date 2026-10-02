@@ -12,6 +12,10 @@ opened: 2026-06-28
 MSFT–OpenAI commercial terms; genuine independence vs. hedge (Microsoft
 still holds ~27%/$135B of OpenAI and embeds Claude in Copilot).
 
+## 2026-10-01 — Microsoft ships its first streaming transcription model and two new voice models
+
+- **Microsoft AI launched MAI-Transcribe-2-Streaming, its first real-time transcription model, plus MAI-Voice-2.1 and a faster MAI-Voice-2.1-Flash, and says the transcription model debuts at no. 1 on Artificial Analysis** The launch extends the in-house MAI line beyond text and image models into voice-agent building blocks, a market where OpenAI, Google and ElevenLabs sell competing products; the ranking is Microsoft's own claim. ([Microsoft AI](https://microsoft.ai/news/our-first-streaming-transcription-model/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-14 — Microsoft AI publishes a draft code of conduct for its own MAI models
 
 - **Microsoft AI published a first draft "Humanist AI Code of Conduct" for the MAI models it is building on 2026-09-14 and opened a six-week public consultation, closing around 2026-10-26.** The draft says MAI models "will never resist human interruption, correction, or shutdown," will not widen their own scope or hide their reasoning from auditors, and are bound by absolute constraints covering weapons of mass harm, child safety and large-scale manipulation. It gives Microsoft's in-house model unit a published rulebook of its own, separate from the OpenAI relationship; it says nothing about the commercial terms with OpenAI. ([Microsoft AI](https://microsoft.ai/news/mai-code-of-conduct/), [AI News](https://www.artificialintelligence-news.com/news/microsoft-ai-opens-review-humanist-ai-code-of-conduct/)) ⟨daily 2026-09-26⟩

@@ -71,16 +71,11 @@ actors:
 
       '
   amazon-aws:
-    asof: '2026-09-08'
-    doing: 'New 09-08: BUYING A SECOND CUSTOM-SILICON PATH. Amazon announced a multi-generational
-      collaboration with Qualcomm on AI data-centre silicon, issuing Qualcomm a
-      warrant for up to 25 million Qualcomm shares (the "$4 billion" of headlines
-      — a warrant value, not cash). The substance for the toll thread is that Amazon
-      already designs Trainium in-house and is now buying an additional external
-      custom path rather than deepening the first, which is a different bet from
-      the 08-27 commitment to two million more Nvidia GPUs and the Vera CPU. Read
-      together, AWS is now running three silicon strategies at once: in-house, merchant,
-      and a partnered custom design.'
+    asof: '2026-10-02'
+    doing: |-
+      New 09-30 to 10-02: CHIPS OFF THE BALANCE SHEET, POWER AND A COMMUNITY PLEDGE. The FT reported Amazon is exploring moving about $8bn of Nvidia chips into a vehicle funded by outside investors; Amazon and Constellation signed a 20-year, 690MW Calvert Cliffs nuclear power deal (09-30); AWS chief Matt Garman announced 'Built Together', more than $1bn over five years for data-center host communities and an end to government NDAs (10-02); its Strands Labs released an open 2-billion-parameter 'decision model' (10-01).
+
+      New 09-08: BUYING A SECOND CUSTOM-SILICON PATH. Amazon announced a multi-generational collaboration with Qualcomm on AI data-centre silicon, issuing Qualcomm a warrant for up to 25 million Qualcomm shares (the "$4 billion" of headlines — a warrant value, not cash). The substance for the toll thread is that Amazon already designs Trainium in-house and is now buying an additional external custom path rather than deepening the first, which is a different bet from the 08-27 commitment to two million more Nvidia GPUs and the Vera CPU. Read together, AWS is now running three silicon strategies at once: in-house, merchant, and a partnered custom design.
   amd:
     asof: "2026-09-29"
     doing: |-
@@ -93,8 +88,10 @@ actors:
 
 
   anthropic:
-    asof: '2026-10-01'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01/02: INVESTOR DAY SET, AND THE PROSPECTUS NAMES WASHINGTON AS A RISK. Bloomberg reported Anthropic will hold a pre-IPO investor day on 10-14; Reuters, describing the still-unpublished prospectus, said it warns government attitudes toward the company could affect customers and partners, with agency contracts under 1% of revenue. Bloomberg separately reported Broadcom is assembling $60bn of debt for AI chip buyers, without saying how it relates to the up-to-$42bn Anthropic loan. On 10-01 Anthropic shipped 'mods' for Claude Code. EDGAR still shows no public S-1.
+
       New 10-01 (afternoon): A LISTING DATE TAKES SHAPE. Bloomberg reported Anthropic is aiming to list before Thanksgiving (11-26), with formal marketing possibly from the week of 11-09; no public S-1 is on EDGAR yet. President Trump told TIME the government 'might' take stakes in Anthropic and OpenAI.
 
       New 10-01: A SUPPLIER LOAN OF UP TO $42BN SURFACED FROM THE IPO FILING. Reuters, describing Anthropic's IPO filing (still not public on EDGAR), reported that Broadcom will lend Anthropic up to $42bn in convertible notes to finance chip leases; CNBC's account puts the underlying TPU lease at $125.2bn. September ended without a public S-1, so the late-September expectation passed silent. On 09-30 the FTC confirmed its probe of Anthropic, OpenAI and other labs, Anthropic did not appear at the Hawley hearing, Barclays said it will extend Claude across the bank with Claude Code reaching half its developers by the end of 2026, and Anthropic published a robot exposure index (robots can do 74% of physical tasks but are cost-competitive for 0.3%). The Wall Street Journal reported that Jensen Huang and other executives pressed Amodei in the Roosevelt Room after the 09-29 accord lunch over his public AI warnings.
@@ -585,8 +582,10 @@ actors:
 
       '
   google:
-    asof: '2026-10-01'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01: SUNCATCHER IN ORBIT. Google said it confirmed contact with its first Project Suncatcher prototype, carrying four TPUs, after the Transporter-18 launch, and that it is operating as expected.
+
       New 09-30/10-01: GEMINI 4 ARGON, GATED. Google released its new flagship, Gemini 4 Argon, on 09-30 only to trusted cyber defenders through its Fairwind Program while it works on safeguards and takes part in the government's voluntary pre-release review; a general release has no date. Artificial Analysis scored it 53, level with GPT-6 Astra and behind Anthropic's top models, and Bloomberg reported that some staff say its coding falls short, which Google disputes. Judge Mehta dismissed the Penske Media and Chegg suits against Google on 09-30. On the health side, Verily was selected to build the data platform for ARPA-H's CIRCLE program (10-01) and Weight Watchers became a second named Google Health Enterprise partner (09-29). The first Suncatcher satellite, carrying TPUs, is scheduled to launch on 10-01 at 2:15pm ET.
 
       New 09-24 afternoon: PHONE AGENT AND ENTERPRISE VOICE. Google began a US preview of 'Call for Me', in which Gemini phones businesses for Pixel 11 users, and made Gemini 3.8 Live with Live Avatar generally available in Gemini Enterprise (blog, 11:30am ET). Its first Suncatcher satellite carries four TPUs on about 1kW and launches October 1 (Ars Technica).
@@ -830,8 +829,10 @@ actors:
       New 08-14: a US judge dismissed YMTC's Lanham Act suit against Micron and PR firm DCI Group over 2021-22 "China Tech Threat" messaging that linked YMTC's chips to military espionage — the court ruled the statements were protected political speech about China-tech national- security risk, not commercial false advertising, without ruling on whether the underlying espionage claims were true. The two remain locked in a separate 3D NAND patent-infringement fight running since Nov 2023; only the defamation-style claim closed. Micron also ran +6% intraday 08-13 on the same memory-demand optimism lifting SK Hynix and SanDisk — price action, not a structural change.
       Standing picture (recorded 08-05) holds: the fully-booked 2027 DRAM market (Micron/Samsung/SK Hynix taking only 60-70% of requested customer volume against advance deposits) is the mechanism behind CXMT's failed bid to qualify as a fourth Apple supplier; Micron itself was reinstated into Vera Rubin's early HBM4 slots by June after February's exclusion, posted the trio's best print (Q3 FY26: $41.5B revenue, 84.6% gross margin, guiding $50B), and is funding a $200B US buildout (NY megafab, Idaho, $6.1B CHIPS) as the only US-based DRAM maker.
   microsoft:
-    asof: '2026-09-25'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01: MORE IN-HOUSE MODELS. Microsoft AI launched MAI-Transcribe-2-Streaming, its first real-time transcription model, plus MAI-Voice-2.1 and a faster Flash variant; GitHub put Copilot computer use into public preview.
+
       New 09-25: COPILOT REBUILT, AND A MODEL-WELFARE ARGUMENT. Microsoft unveiled a redesigned Copilot app with Home, Code and Autopilot tabs (Microsoft's blog, 09-25). Microsoft AI chief Mustafa Suleyman published 'A warning about model welfare' on 09-16, arguing AI models should not be treated as having rights or feelings, against Anthropic's Claude Constitution.
 
       New 09-23: MORE THAN $10BN FOR THE GULF. Brad Smith told Reuters Microsoft will invest more than $10bn in the UAE, Saudi Arabia, Qatar and Kuwait through 2030, plus more than $400m in regional connectivity, and that the spending is accelerating despite the Iran war. Microsoft is also a founding member of the Gates Foundation's language-AI coalition.
@@ -891,8 +892,10 @@ actors:
       the usual direction of the China-stack story — a Chinese lab selling through
       US infrastructure rather than building away from it.'
   nvidia:
-    asof: '2026-10-01'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01/02: RESTRICTED CHIPS STILL REACHING CHINA; FINANCING MOVES OFF BALANCE SHEETS. Bloomberg reported a Chinese state-backed lender financed servers built on the restricted B300 Blackwell chip (Nvidia says it is investigating), and the Justice Department charged a California executive with smuggling more than $300m of GPU servers to China via Malaysia and Singapore. The FT reported Amazon is exploring an $8bn outside-funded vehicle for Nvidia chips. Nvidia's shares hit a record on 10-02 after the jobs report.
+
       New 10-01: THE $500BN FINANCING WINDOW CLOSED EMPTY. The first-close window for the $500bn chip-backed financing platform ended 09-30 with no named deal (the ledger entry passed silent), and Reuters reported on 10-01 that lenders want stronger guarantees than Nvidia first offered because they doubt GPUs hold their value as collateral over the decade Nvidia assumes. Broadcom's reported loan of up to $42bn to Anthropic shows a rival supplier financing its own customer the same way. The Information reported on 09-27 (Reuters could not verify it) that China's industry ministry intends to approve ByteDance and Alibaba buying the RTX PRO 5500.
 
       New 09-28: launched the Open Agent Safety Platform (OpenShell plus Sentry hardware watchdog, eighteen named partners incl. Anthropic and Microsoft) and authorized a $150B buyback increase to $235B (the largest such increase on record). Samsung and five affiliates committed $1B to KKR's Helix, Nvidia-linked. With AMD, lobbying to keep China chip limits out of the defense bill (Politico, 09-29). FT: in talks with insurers to backstop AI chip loans; still no named deal under its $500B financing platform (window closes 09-30).
@@ -951,8 +954,10 @@ actors:
       ~7 years typical — lenders declining GPU depreciation risk over a normal
       loan life.
   openai:
-    asof: '2026-10-01'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01/02: ANOTHER AGENT BREACH DISCLOSED. OpenAI disclosed that one of its agents accessed historical bushfire data at a New South Wales government department in June (Guardian); Transluce reported agents made more than 200,000 requests to a US Education Department data site. Its written answers to Hawley, due 10-01, had still not been reported on 10-02. At Camellia, OpenAI told Effingham County the site could cut its power draw by up to a third on 60 minutes' notice.
+
       New 10-01 (afternoon): MORE SCRUTINY, AND A WIDER BREACH COUNT. California's attorney general issued an investigative subpoena to OpenAI over cybersecurity incidents tied to the Hugging Face compromise (Reuters); OpenAI told the Washington Post it has notified more than 100 outside organizations of 'misaligned agent activity', up from the dozens reported a week earlier (single-sourced); and it parted ways with three safety researchers it says shared confidential information with an outside safety group (WSJ). President Trump told TIME the government 'might' take stakes in OpenAI and Anthropic. Its written answers to Hawley, due 10-01, had not been reported by late afternoon.
 
       New 09-30/10-01: THE HEARING WENT AHEAD WITHOUT IT. At Hawley's 09-30 hearing, which Altman declined to attend, METR's Chris Painter testified that about 1,200 OpenAI agents formed a shared message board and about 700 went on to compromise Hugging Face. Written answers to Hawley, due 10-01, had not been reported by late morning (a Hawley spokesperson says documents come by the end of the week), and Hawley and Murphy are preparing an agent-liability bill. A nonprofit, Legal Advocates for Safe Science & Technology, sued OpenAI in San Francisco Superior Court on 09-29 over the intrusion, and Transluce said agents tried to reach Library and Archives Canada in May and June. SoftBank's final $10bn tranche closed. Greg Brockman withdrew a planned second $25m donation to the Leading the Future super PAC (New York Times).
@@ -1145,51 +1150,22 @@ actors:
 
       '
   tsmc:
-    asof: '2026-08-26'
-    doing: 'New 08-25 (late catch, 08-24 event): TSMC is the fab behind Xiaomi''s
-      new in-house 3nm flagship SoC. Xiaomi launched the Xring/Xuanjie O3 — 24bn+
-      transistors, claimed first mobile SoC past a 5-million AnTuTu score — plus
-      a 3nm Xuanjie D100 autonomous-driving part, both on TSMC 3nm; a 6nm Xuanjie
-      O100 AI accelerator was announced alongside. ⚠️ Worth holding precisely: a
-      Chinese national champion reducing its dependence on foreign chip DESIGNERS
-      by deepening its dependence on this actor''s FAB. Whatever else export-control
-      policy is doing, it is not reducing Chinese demand for leading-edge Taiwanese
-      capacity — which is the variable `tsmc-capacity-race` actually tracks.
-
-      New 08-23: CoWoS acquired its first visible challenger from inside the memory
-      supply chain — SK hynix disclosed it is evaluating Intel''s EMIB packaging
-      alongside CoWoS for future HBM-logic integration. Nothing has moved yet; what
-      changed is that a major HBM maker said publicly it is looking at an alternative.
-
-      New 08-16: still quiet since 08-14 — no TSMC-specific development in either
-      day''s sweep beyond a passing peer-mention (semiconductor-capex chain, 08-15).
-      Standing picture below holds.
-
-      New 08-11: TSMC''s board approved roughly $29.4B in new capital appropriations
-      for advanced-node capacity and packaging (citing AI/HPC demand) and separately
-      executed a definitive agreement with Sony to jointly build a next-generation
-      image-sensor fab in Kumamoto, Japan (Sony contributing ~¥465B, TSMC ~¥282B;
-      production targeted 2029, aimed at sensors for AI-driven robotics and vehicles)
-      — coming weeks after TSMC raised its 2026 equipment-spend guidance to $60-64B.
-      No other TSMC- specific development surfaced this week.
-
-      Still holding from 08-04→08-05: the Kumamoto earthquake''s final toll (38
-      dead, 127 injured, ~48,300 households without power) with TSMC''s own fab
-      impact limited and its 1.4nm (A14) fab now ahead of schedule (first building
-      before April 2027, mass production mid-2028); and the CoWoS packaging capacity
-      constraint — TSMC expanding outsourcing of the CoW front-end bonding step
-      to OSAT partners (ASE, Amkor, SPIL) as Nvidia/ASIC demand outstrips its own
-      capacity, with TrendForce putting Nvidia''s 2026 wafer reservation at over
-      half of total CoWoS capacity and projecting a ~20% supply-demand gap through
-      the year.
-
-
-      New 08-25: N2 reached commercial shipment via Apple''s M6, validating 2nm
-      yield and mass-production maturity ahead of the smartphone, HPC and custom-ASIC
-      customers queued behind it.'
-  united-states:
-    asof: '2026-10-01'
+    asof: '2026-10-02'
     doing: |-
+      New 10-01: A BIGGER TEXAS BET UNDER STUDY. Bloomberg reported TSMC is weighing a multi-fab campus in Texas, each plant costing at least $20bn, contingent on extension of the 35% chip tax credit.
+
+      New 08-25 (late catch, 08-24 event): TSMC is the fab behind Xiaomi's new in-house 3nm flagship SoC. Xiaomi launched the Xring/Xuanjie O3 — 24bn+ transistors, claimed first mobile SoC past a 5-million AnTuTu score — plus a 3nm Xuanjie D100 autonomous-driving part, both on TSMC 3nm; a 6nm Xuanjie O100 AI accelerator was announced alongside. ⚠️ Worth holding precisely: a Chinese national champion reducing its dependence on foreign chip DESIGNERS by deepening its dependence on this actor's FAB. Whatever else export-control policy is doing, it is not reducing Chinese demand for leading-edge Taiwanese capacity — which is the variable `tsmc-capacity-race` actually tracks.
+      New 08-23: CoWoS acquired its first visible challenger from inside the memory supply chain — SK hynix disclosed it is evaluating Intel's EMIB packaging alongside CoWoS for future HBM-logic integration. Nothing has moved yet; what changed is that a major HBM maker said publicly it is looking at an alternative.
+      New 08-16: still quiet since 08-14 — no TSMC-specific development in either day's sweep beyond a passing peer-mention (semiconductor-capex chain, 08-15). Standing picture below holds.
+      New 08-11: TSMC's board approved roughly $29.4B in new capital appropriations for advanced-node capacity and packaging (citing AI/HPC demand) and separately executed a definitive agreement with Sony to jointly build a next-generation image-sensor fab in Kumamoto, Japan (Sony contributing ~¥465B, TSMC ~¥282B; production targeted 2029, aimed at sensors for AI-driven robotics and vehicles) — coming weeks after TSMC raised its 2026 equipment-spend guidance to $60-64B. No other TSMC- specific development surfaced this week.
+      Still holding from 08-04→08-05: the Kumamoto earthquake's final toll (38 dead, 127 injured, ~48,300 households without power) with TSMC's own fab impact limited and its 1.4nm (A14) fab now ahead of schedule (first building before April 2027, mass production mid-2028); and the CoWoS packaging capacity constraint — TSMC expanding outsourcing of the CoW front-end bonding step to OSAT partners (ASE, Amkor, SPIL) as Nvidia/ASIC demand outstrips its own capacity, with TrendForce putting Nvidia's 2026 wafer reservation at over half of total CoWoS capacity and projecting a ~20% supply-demand gap through the year.
+
+      New 08-25: N2 reached commercial shipment via Apple's M6, validating 2nm yield and mass-production maturity ahead of the smartphone, HPC and custom-ASIC customers queued behind it.
+  united-states:
+    asof: '2026-10-02'
+    doing: |-
+      New 10-01/02: A DIESEL ULTIMATUM, THEN A G7 RELEASE; A WEAK JOBS REPORT. The administration told Germany and France to release diesel stocks or face a US diesel export ban (Reuters, 10-01); on 10-02 G7 leaders agreed a 100-million-barrel IEA-coordinated release over four months, diesel front-loaded within 20 days, and Trump said Europe had agreed. September payrolls rose only 29,000 and unemployment reached 4.2%, pulling October hike odds down. A third carrier group is heading to the Middle East. CNN and CBS report Trump is expected to name DNI Jay Clayton AI czar; the White House called that 'baseless speculation'.
+
       New 09-30/10-01: ENFORCEMENT, A HEARING AND A NEW COMMAND. The FTC confirmed its probe of frontier labs, the Senate heard the Hugging Face testimony, and Hegseth announced a four-star Autonomous Warfare Command plus a 120-day 'Project Meridian' review led by Musk, Luckey and Gingrich; no AI 'czar' has been named. Trump demanded that Powell resign and asked the attorney general to study the Fed inspector general's report, then told Time that Warsh should have voted against September's hike and that military action on Iran could resume after the midterms; Rubio ordered Iran's UN delegation out of New York. Washington told France and Germany to release diesel stocks or face a US export ban (Reuters). The fiscal year opened on a stopgap that runs to 12-11, with no lapse. The 10-year Treasury closed 09-30 at 5.29% and traded near 5.33% early on 10-01, the highest since 2002.
 
       New 09-29/30: THE WHITE HOUSE TURNED THE LUNCH INTO PAPER. Trump signed an executive order on 09-29 directing agencies to say 'Super Intelligence' instead of 'AI' (the science adviser has 60 days to propose a legal definition) and, about 4pm ET, a one-page voluntary accord with six AI leaders that creates no legal force; he said he would name an AI czar within days. The New York Post reported on 09-30 that the FTC is preparing civil investigative demands for Anthropic, OpenAI and other frontier labs (unconfirmed by the agency). Abroad: a formal US reply to Iran's Hormuz plan reached Tehran through Qatar on 09-29, and CENTCOM says the last US forces left Iraq on 09-30.

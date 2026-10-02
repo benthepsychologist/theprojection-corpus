@@ -18,6 +18,10 @@ counterparty mix drifting from clouds toward miners and infrastructure
 funds; and the Theseus consumer-electricity commitment, the first
 contractual concession this map has seen a lab make to ratepayer politics.
 
+## 2026-10-02 — Broadcom's $60 billion debt package
+
+- **Broadcom is assembling $60 billion of debt financing to help Anthropic and other companies buy AI chips, Bloomberg reported** The package has a $42 billion senior-secured Class A tranche and an $18 billion junior tranche led by Blackstone, which is putting up $9 billion of its own capital; Broadcom declined to comment. ([Quartz via Yahoo Finance, citing Bloomberg](https://finance.yahoo.com/technology/ai/articles/broadcom-raises-60-billion-debt-113047288.html)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Broadcom to lend Anthropic up to $42 billion
 
 - **Broadcom has agreed to lend Anthropic up to $42 billion to finance its chip leases, according to Anthropic's confidential IPO filing as described by Reuters** The convertible note could fund about a third of a $125.2 billion five-year TPU lease, and the filing flags "potential conflicts of interest" in Broadcom's dual role as supplier and lender. ([CNBC, carrying Reuters](https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html)) ⟨daily 2026-10-01⟩

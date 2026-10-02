@@ -11,6 +11,14 @@ opened: 2026-07-28
 *Watch:* Do the other three hold their clean-power pledges? Bridge or
 base? Emissions-accounting and regulatory fallout.
 
+## 2026-09-30 — Meta signs a 144MW Texas solar deal while telling reporters it still uses gas
+
+- **Meta entered a power purchase agreement for a 144-megawatt Apex Clean Energy solar project in Gonzales County, Texas, which the developer says would not have been built without Meta's backing** Meta told Inside Climate News that natural gas options are part of its AI data-center plans, that leaving the RE100 initiative does not change its clean-energy commitment, and that it has contributed more than 30 gigawatts of new clean energy to US grids. ([Inside Climate News](https://insideclimatenews.org/news/30092026/meta-texas-solar-purchase-smaller-than-data-center-gas-plant/)) ⟨daily 2026-09-30⟩
+
+## 2026-09-23 — Texas judges say El Paso Electric did not weigh alternatives to the gas plant serving Meta
+
+- **Administrative law judges at the Public Utility Commission of Texas proposed approving El Paso Electric's 366-megawatt gas plant for Meta's El Paso data center only if the utility does not pass its capital and operating costs to ratepayers, and otherwise denying it** The judges found El Paso Electric failed to adequately consider alternatives to the McCloud facility and did not issue a request for proposals; the full commission still has to decide. ([Inside Climate News](https://insideclimatenews.org/news/24092026/el-paso-electric-only-considered-gas-to-power-meta-data-center/)) ⟨daily 2026-09-23⟩
+
 ## 2026-09-21 — Capital Power says Meta's Alberta build is drawing other US hyperscalers
 
 - **Capital Power's CEO said Meta's C$13bn (~$9bn) Alberta data-centre build has boosted the province's appeal to other US hyperscalers, and that he does not expect Meta to be the only one to build large-scale there — Capital Power is already in talks with several unnamed proponents and is pitching its Genesee Generating Station as a site.** More than 100 data centres have now been proposed for Alberta, against Canada's current handful of operating hyperscale sites. This is the first concrete "others follow" signal on this thread's core watch question (whether Meta's gas-powered pivot is a one-off bridge or the first of a base-load pattern), from the utility positioned to supply the next ones rather than from Meta itself. ([Reuters via Investing.com](https://za.investing.com/news/stock-market-news/meta-data-center-boosts-alberta-appeal-for-hyperscalers-capital-power-says-4470995), [Globe and Mail](https://www.theglobeandmail.com/business/article-capital-power-alberta-ai-hyperscalers-from-us/)) ⟨daily 2026-09-21⟩

@@ -12,6 +12,10 @@ crawled: 2026-07-28
 *Watch:* see threads.yaml. Seeded 2026-07-28 (backlog W2); backstory
 crawl dispatched same day — entries land ⟨crawl 2026-07-28⟩.
 
+## 2026-10-01 — TSMC weighs a multi-fab Texas campus
+
+- **TSMC is weighing a new multi-fab chip campus in Texas that would add tens of billions of dollars to its US investment, Bloomberg reported, citing people familiar with its plans.** Each plant would cost at least $20 billion and the plans are at an early stage; the project is contingent on Congress extending the 35% advanced-manufacturing tax credit that expires at the end of the year. TSMC has already committed $265 billion to its Arizona site, and North America is more than 75% of its wafer revenue this year. ([Bloomberg via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/tsmc-mulls-multibillion-dollar-texas-102454782.html)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-23 — TSMC reportedly set to raise wafer prices 3-6% from January 2027
 
 - **TSMC is reportedly planning to raise wafer foundry prices 3% to 6% from January 2027, with the steepest increases on its most advanced processes, Digitimes reported, citing supply-chain sources.** Digitimes says TSMC's order visibility now runs to 2030, with 8-inch fabs above 100% utilisation and processes at 45nm and below fully loaded; the range compares with the 5-10% baseline reported in July. TSMC did not respond to Benzinga's request for comment, so this is a report, not a company announcement. ([Digitimes](https://apps.digitimes.com/news/a20260924PD214/tsmc-wafer-price-2027-demand.html), [Benzinga](https://www.benzinga.com/markets/tech/26/09/61964879/tsmc-reportedly-plans-to-hike-wafer-price-next-year)) ⟨daily 2026-09-23⟩

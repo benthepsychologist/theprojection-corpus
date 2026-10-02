@@ -16,6 +16,7 @@ capex-as-anxiety). Part of `hyperscaler-capex-big-picture`.
 ## 2026-10-01 — Google's first Suncatcher satellite launches with four TPUs aboard
 
 - **Google's first Project Suncatcher satellite, carrying four of its TPU AI chips, launched into low-Earth orbit on a SpaceX Falcon 9 at about 2:32pm ET** The Planet Labs-built prototype flew on the Transporter-18 rideshare from Vandenberg to test how the chips fare through launch and in orbit, running a version of Google's Gemma model about 15 minutes at a time; no separation or first-contact report had appeared by about 4pm ET. ([Scientific American](https://www.scientificamerican.com/article/googles-project-suncatcher-ai-data-center-test-has-officially-launched-to-space-aboard-spacex-rocket/), [NPR via WVIK](https://www.wvik.org/npr-top-stories/2026-10-01/google-launches-project-suncatcher-a-step-towards-ai-data-centers-in-space)) ⟨daily 2026-10-01⟩
+- **Google said its team confirmed contact with its Project Suncatcher prototype satellite after the Thursday launch and that it is operating as expected** The post says Google will gather in-orbit data on how its TPUs handle spaceflight stress over the coming weeks. ([Google](https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-24 — Google to put its first TPUs in orbit next week
 

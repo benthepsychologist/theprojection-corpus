@@ -12,6 +12,10 @@ opened: 2026-06-27
 prices and forcing consumer-hardware price hikes; how far the squeeze
 spreads; capacity-expansion responses (Samsung/SK Hynix/Micron).
 
+## 2026-10-02 — Toshiba's plan to double hard-drive output hits Seagate and Western Digital
+
+- **Seagate fell about 10% and Western Digital about 7% in early Friday trading after Nikkei Asia reported that Toshiba plans to double its hard-disk-drive output.** Toshiba plans to spend about 60 billion yen expanding production in the Philippines for AI data-center storage; a memory-stock ETF rose 0.8%, so the sell-off was confined to drive makers. ([Nikkei Asia](https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap), [Yahoo Finance](https://finance.yahoo.com/markets/stocks/articles/seagate-tumbles-10-western-digital-125250923.html)) ⟨daily 2026-10-02⟩
+
 ## 2026-09-30 — Micron reports $54.2 billion quarter and guides to $61.5 billion
 
 - **Micron reported fiscal fourth-quarter revenue of $54.23 billion after the bell on September 30, against a guide of about $50 billion, and guided fiscal first-quarter revenue to $61.5 billion plus or minus $1.5 billion.** Non-GAAP gross margin was 87.0% and non-GAAP earnings per share $33.42; on the call, management said it will raise fiscal 2027 capital spending versus prior plans, with about $11.5 billion in the first quarter and about $25 billion in the first half, higher in the second half, and that supply and demand will not return to balance within sight. ([Micron 8-K](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000018/a2026q4ex991-pressrelease.htm), [Q4 call transcript](https://www.benzinga.com/news/26/09/62095451/transcript-micron-technology-q4-2026-earnings-conference-call)) ⟨daily 2026-09-30⟩

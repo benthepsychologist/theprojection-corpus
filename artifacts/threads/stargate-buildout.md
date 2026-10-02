@@ -11,6 +11,10 @@ opened: 2026-06-28
 *Watch:* ~$500B / ~10 GW JV (OpenAI/SoftBank/Oracle/MGX); sites actually
 energized, financing/grid bottlenecks, sovereign terms, slippage.
 
+## 2026-10-01 — SoftBank completes its $30 billion follow-on in OpenAI
+
+- **SoftBank executed the third and final $10 billion tranche of its $30 billion follow-on investment in OpenAI on 10-01, taking its cumulative OpenAI investment to $64.6 billion and its stake to about 13%** SoftBank says the tranche was paid for with the senior notes it issued on 09-24, and that it cancelled the last $10 billion of undrawn bridge-loan capacity, so all borrowing under the $40 billion bridge facility has been repaid. ([SoftBank Group](https://group.softbank/en/news/press/20261001)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-21 — SB Energy delays its IPO
 
 - **SoftBank-backed SB Energy, the developer of the Ohio Stargate campus that filed for a US listing on 09-01, has delayed its IPO, the New York Times reported**; the Reuters summary gives no reason or new timetable. ([Reuters headline, via TradingView](https://www.tradingview.com/news/reuters.com,2026:newsml_FWN45D0CD:0-softbank-backed-sb-energy-delays-its-ipo-nyt/)) ⟨daily 2026-09-21⟩

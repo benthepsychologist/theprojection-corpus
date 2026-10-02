@@ -2323,6 +2323,10 @@ expectations:
     # Headspace', but neither it nor the announcement page ('officially closed Fall 2026') carries a
     # date, and no dated closing release from either company was found by about 4pm ET
     # (headspace.com/articles/headspace-and-sword-a-new-era-for-mental-health).
+    # 2026-10-02 ⟨daily⟩: still no dated close: Headspace's page says the acquisition 'officially
+    # closed Fall 2026' (a Wayback capture of 09-29 21:59Z still read 'Sword is acquiring Headspace'),
+    # while Sword's newsroom banner still reads 'Sword is acquiring Headspace'; EDGAR full-text search
+    # for Headspace since 08-15 returned nothing.
   - id: softbank-retail-bond-pricing-0904
     claim: >
       SoftBank's record ¥1tn ($6.3bn) 7-year retail bond prices, against an
@@ -2591,6 +2595,8 @@ expectations:
     # 2026-10-01 ⟨daily⟩: due today; local reports said the rate applies 'by October 1' but no day-of
     # confirmation was found by about 11am ET. Left pending.
     # 2026-10-01 ⟨daily⟩: (15:00 ET run) no day-of report found by about 4pm ET.
+    # 2026-10-02 ⟨daily⟩: no day-of report found by about 11am ET 10-02 (TVA newsroom 403 to urllib);
+    # only pre-event coverage ('by October 1', WAFF 09-25).
   - id: anthropic-wellbeing-grants-deadline-0921
     claim: >
       Applications close for Anthropic's $5M research grant program on
@@ -3283,6 +3289,9 @@ expectations:
     # 10/20/2026 at 9:45 AM; OpenAI's motion to dismiss is still "under advisement". Every earlier read of this docket (09-04, 09-11,
     # 09-13) stopped at entry 39 or 26 and missed entry 40, so the 09-02 hearing never occurred and the passed-silent flip was wrong.
     # Source: CourtListener docket 72365583 (agent R, read 09-26).
+    # 2026-10-02 ⟨daily⟩: the CourtListener docket (72365583) shows the 09-02 hearing was reset on
+    # 08-28 to 10-20 at 9:45am, with OpenAI's motion to dismiss under advisement; the latest entry
+    # (09-23) is a change of address. The 'docket ends at 08-04' line above is stale.
   - id: sk-hynix-solidigm-disclosure-1204
     claim: >
       SK hynix discloses a decision on the rumored ~5-10 trillion won
@@ -3891,6 +3900,8 @@ expectations:
     # nothing yet confirms it did. Left pending.
     # 2026-10-01 ⟨daily⟩: (15:00 ET run) only a secondary piece (Forkast via Yahoo Finance) says the
     # 27-month agreement took effect 10-01; no GSA or OpenAI day-of statement by about 4pm ET.
+    # 2026-10-02 ⟨daily⟩: no GSA or OpenAI day-of notice found by about 11am ET 10-02; GSA's 09-10
+    # release says the agreement was 'expected to take effect Oct. 1, 2026'.
   - id: softbank-openai-bridge-bond-pricing-0917
     claim: "SoftBank prices a $10-20bn junk-bond issue, roadshown 09-14 to 09-17 out of Citigroup in New York, to fund the early payoff of the $25.9bn balance of its $40bn OpenAI-stake bridge loan"
     due: 2026-09-24
@@ -4021,6 +4032,10 @@ expectations:
     # pending.
     # 2026-10-01 ⟨daily⟩: (15:00 ET run) still no written answers reported by about 4pm ET; a Hawley
     # spokesperson expects further documents by the end of the week.
+    # 2026-10-02 ⟨daily⟩: no public answer or released documents found by about 11am ET 10-02
+    # (Hawley's site, subcommittee, coverage); a Hawley spokesperson told CNBC on 09-30 that OpenAI
+    # would provide additional documents by the end of the week. Inside the 3-day grace; the next run
+    # flips it.
   - id: sf-datacenter-moratorium-vote-0915
     claim: >
       The San Francisco Board of Supervisors votes on a data-centre moratorium
@@ -4564,7 +4579,9 @@ expectations:
     what_confirms: "The BLS release: payrolls, unemployment rate and average hourly earnings against the hawkish reading behind the 10-year's 5.1% and the 77.5%-to-64% swing in October-hike odds."
     logged: 2026-09-24
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-02
+    evidence: "BLS published the September Employment Situation on schedule at 8:30am ET 10-02 (bls.gov/news.release/empsit.nr0.htm, read via a reader proxy): nonfarm payrolls +29,000 (consensus about 85,000), unemployment 4.2% from 4.1%, average hourly earnings +0.1% m/m and +3.0% y/y to $37.81; July revised to -10,000 and August to +133,000, 60,000 lower combined. The 10-year fell to about 5.18% by about 10am ET and CME FedWatch priced about 86% for an October hold (CNBC)."
     # 2026-10-01 ⟨daily⟩: on schedule. There was no appropriations lapse on 10-01: a continuing
     # resolution signed 09-02 funds the government through 12-11. Reuters poll: 90,000 jobs, 4.1%
     # unemployment.
@@ -4867,6 +4884,10 @@ expectations:
     # Amodei were not attending (Reuters 09-28); Anthropic was sending other executives; OpenAI's
     # Jason Kwon appears before a different committee in Sydney on 10-06. Left pending.
     # 2026-10-01 ⟨daily⟩: (15:00 ET run) still no account of the Canberra hearing by about 4pm ET.
+    # 2026-10-02 ⟨daily⟩: the parliament's hearing program lists a 10-01 Canberra hearing (aph.gov.au,
+    # ref 32616), but no Hansard or post-hearing coverage was found by about 11am ET 10-02, so whether
+    # Altman or Amodei appeared is unconfirmed; OpenAI sends Jason Kwon to a separate Sydney committee
+    # on 10-06.
   - id: israel-supreme-court-arab-lists-ruling-1003
     claim: "Israel's Supreme Court rules on the Central Elections Committee's 09-23 disqualification of the Joint List and Ra'am, and of candidates Ofer Cassif and Sami Abu Shehadeh, ahead of the 10-27 election; review is due 'next week'"
     due: 2026-10-03
@@ -4878,7 +4899,9 @@ expectations:
     what_confirms: "A Supreme Court ruling upholding or overturning the committee's 18-5 vote."
     logged: 2026-09-26
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-02
+    evidence: "Ruled early, on Friday 10-02 (first reports about 1:14pm Israel time): the Supreme Court overturned the Central Elections Committee's disqualification of the Joint List and Ra'am unanimously and ruled 7-2 (Justices Mintz and Stein dissenting) that MK Ofer Cassif may run, so all three can contest the 10-27 election; full written reasoning to follow (Israel National News israelnationalnews.com/news/434004; Jerusalem Post article-910410; Ynet). The court's own text was not read."
     # 2026-10-01 ⟨daily⟩: a nine-justice panel heard the appeals on 10-01. Court President Amit said a
     # majority appeared prepared to approve Balad chairman Sami Abu Shehadeh's disqualification and
     # asked him to withdraw by 8am Friday; a ruling follows by Sunday 10-04 if he stays in. The
@@ -5050,6 +5073,9 @@ expectations:
     logged_by: curate-add
     status: pending
     # 2026-10-01 ⟨daily⟩: no name announced as of late morning 10-01.
+    # 2026-10-02 ⟨daily⟩: CNN and CBS reported on 10-02 that Trump is expected to name DNI Jay
+    # Clayton, who would keep the DNI post, possibly as early as Friday; the White House called it
+    # 'baseless speculation'. Not announced by about 11am ET.
   - id: trump-si-legal-definition-1128
     claim: "The president's science adviser proposes a legal definition of 'super intelligence' within the 60 days the 09-29 executive order allows"
     due: 2026-11-28
@@ -5089,6 +5115,8 @@ expectations:
     # 2026-10-01 ⟨daily⟩: no public Iranian answer by midday 10-01. Araghchi took the US reply to
     # Tehran; Rubio ordered Iran's UN delegation out of New York (Iran says it left on schedule);
     # Trump told Time that military action could resume after the midterms.
+    # 2026-10-02 ⟨daily⟩: no public Iranian answer by about 11am ET 10-02. Bloomberg reported 10-01
+    # that Araghchi privately offered inspector access for sanctions relief, which Iran denied.
   - id: roiz-blue-shield-amended-complaint-1013
     claim: "Plaintiffs in Roiz v. Blue Shield file an amended complaint after Judge Orrick's 09-23 order dismissing some claims with leave to amend"
     due: 2026-10-13
@@ -5126,7 +5154,9 @@ expectations:
     what_confirms: "A withdrawal statement from Abu Shehadeh or Balad, or the court's ruling."
     logged: 2026-10-01
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "Balad chairman Sami Abu Shehadeh withdrew his candidacy before the 8am Friday deadline: AFP (via Yahoo, 04:29Z 10-02) and Haaretz/Ynet items stamped about 20:46Z 10-01 put the announcement on Thursday evening, while the Jerusalem Post and Israel National News describe a Friday-morning announcement and formal notice reached the court about 11am Israel time Friday. The court dismissed his case (jpost.com/israel-election-2026/article-910410; yahoo.com/news/politics/articles/arab-israeli-candidate-drops-election-034502017.html). He remains Balad's leader."
   - id: federal-funding-cr-expiry-1211
     claim: "The continuing resolution signed 2026-09-02 that funds the US government at existing levels expires on 12-11; Congress passes full-year appropriations or another stopgap before then, or funding lapses"
     due: 2026-12-11
@@ -5176,7 +5206,9 @@ expectations:
     what_confirms: "A Google, Planet or SpaceX statement of deployment, first contact or first TPU operation."
     logged: 2026-10-01
     logged_by: curate-add
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: "Google's own post says its team 'confirmed contact with the satellite' after the 10-01 Transporter-18 launch and that it is operating as expected (blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/). NASASpaceflight's post-launch report gives deployment at T+1:01:25, about 3:33pm ET, possibly restating the manifest; no separate statement of TPUs running in orbit was found."
   - id: germany-growth-forecast-official-1008
     claim: "Germany's government officially presents raised growth forecasts on 10-08: 1.3% for 2026 (from 0.5%) and 1.1% for 2027 (from 0.9%), as a source told Reuters on 10-01"
     due: 2026-10-08
@@ -5199,5 +5231,29 @@ expectations:
     confidence: reported
     what_confirms: "ASX listing announcement or first-day trading coverage."
     logged: 2026-10-01
+    logged_by: curate-add
+    status: pending
+  - id: anthropic-investor-day-1014
+    claim: "Anthropic holds a pre-IPO investor day for prospective institutional investors on 10-14, as Bloomberg reported on 10-01"
+    due: 2026-10-14
+    due_precision: day
+    thread: anthropic-ipo-timing
+    entities: [anthropic]
+    source: https://finance.yahoo.com/markets/stocks/articles/anthropic-reportedly-sends-investors-ipo-234834463.html
+    confidence: reported
+    what_confirms: "Coverage of the event taking place, or Anthropic's public S-1 naming it; a postponement is a slip."
+    logged: 2026-10-02
+    logged_by: curate-add
+    status: pending
+  - id: g7-iea-diesel-release-report-1022
+    claim: "Within 20 days of the G7 leaders' 10-02 agreement, the front-loaded diesel tranche of the 100-million-barrel IEA-coordinated release is delivered and the IEA reports on the market, as the leaders' statement commits"
+    due: 2026-10-22
+    due_precision: day
+    thread: red-sea-oil-shock
+    entities: []
+    source: https://www.elysee.fr/emmanuel-macron/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability
+    confidence: confirmed
+    what_confirms: "An IEA report or statement on the release's progress, or member-country announcements of diesel volumes released."
+    logged: 2026-10-02
     logged_by: curate-add
     status: pending

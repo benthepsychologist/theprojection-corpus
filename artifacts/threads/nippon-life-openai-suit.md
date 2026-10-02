@@ -18,6 +18,10 @@ motion-to-dismiss activity (waivers of service executed 2026-03-18,
 original answer deadline 2026-05-15), and whether any other insurer or
 company cites this case as precedent.
 
+## 2026-08-28 — Judge resets the Nippon Life hearing to October 20 with OpenAI's motion to dismiss still undecided
+
+- **The judge in Nippon Life v. OpenAI struck the 09-02 hearing and reset it to 10-20 at 9:45 a.m., with OpenAI's motion to dismiss still "under advisement"** The docket since the 05-15 motion shows Nippon's opposition on 07-03, OpenAI's reply on 07-17, and on 08-04 an order denying Nippon's request to file a surreply; no ruling has been entered, and the latest entry (09-23) is a lawyer's change of address. ([CourtListener docket](https://www.courtlistener.com/docket/72365583/nippon-life-insurance-company-of-america-v-openai-foundation/)) ⟨daily 2026-10-02⟩
+
 ## 2026-05-15 — OpenAI actually files: ChatGPT is "a tool," not a person who can practice law
 
 - **OpenAI Foundation and OpenAI Group PBC filed their motion to dismiss for

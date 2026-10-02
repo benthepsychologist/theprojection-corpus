@@ -1,0 +1,128 @@
+# Interpretations for 2026-10-02 global-capital, keyed by
+# slugify(bold lead[:50]). Read against attention/capital-context.yaml
+# (asof 2026-08-25, about five weeks stale; used for its described pattern
+# only) and this map's cross-border-rates and red-sea-oil-shock threads.
+
+us-stocks-rose-toward-their-august-record-and-the:
+  mechanism: >
+    A weak payrolls print changes what the Fed is expected to do before it
+    changes the economy. The Fed raised rates on September 16 because
+    inflation is far above target, so the market had been pricing a second
+    hike, and yields rose with it: the 10-year reached 5.34% on Thursday.
+    A gain of 29,000 jobs (against about 84,000 expected), a slower wage
+    rise (3.0% a year, the lowest since May 2021) and a downward revision to
+    July and August cut the October hike odds to about 17% to 18%, and the
+    10-year fell to about 5.2%. Falling long yields ease the pressure on
+    stocks, which is why the S&P 500 rose toward its August record. The
+    relief is conditional: a December hike is still priced above 75% (CNBC),
+    euro-area inflation printed 3.8% the same morning, and oil is still near
+    $100, so the same inflation worry that drove yields up has not gone.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Yields stay lower and stocks hold gains if the next inflation report
+        (CPI on October 14) is soft and oil keeps easing.
+      why: >
+        The market is now treating the labor data as a reason for the Fed to
+        wait, and the 10-year has already given back about 15 basis points
+        from Thursday's high, so a cool CPI would confirm that the October
+        hike is off the table and leave the December decision open.
+      precedent: >
+        The August jobs report (+162,000 against 53,000 expected, published
+        in early September) moved the other way: stocks fell and hike odds
+        rose sharply, and the Fed raised rates on September 16. The market
+        has been trading the jobs report as a Fed signal since.
+    - direction: >
+        Yields rebound if inflation or oil surprises up, because a weak jobs
+        number does not remove the inflation problem.
+      why: >
+        Core PCE inflation is 3% (CNBC), the ISM prices-paid gauge jumped to
+        77.9 on Thursday, and euro-area inflation reached 3.8%. A hot CPI or
+        a new oil spike would put the December hike, and a higher long-term
+        yield, back in play.
+      precedent: >
+        On September 30 the 10-year fell to 5.20% on cooler PCE data and
+        closed at 5.29% the same day (Treasury par curve), and the 10-year
+        was back at 5.34% by Thursday: relief on one data point lasted hours.
+  context_note: >
+    capital-context.yaml (asof 08-25) predates the September 16 hike and
+    describes a 30-year near 5.24%; the current 10-year (about 5.2%) is
+    above that. The next /week refresh should reset the rate_regime reading.
+
+france-proposed-that-eu-countries-release-50-milli:
+  mechanism: >
+    Oil is pricing two different shortages. Crude is recovering, with Gulf
+    exports back near pre-war levels, but refined products, above all
+    diesel, are still short because the Strait of Hormuz is effectively
+    closed and tankers have been struck. Washington, which supplies about
+    half of the EU's diesel imports, is using the threat of a US diesel
+    export ban to push Europe to release its stocks, and the report of a
+    possible release pulled Brent below $100 early Friday. A stock release
+    adds supply for a limited time and does not reopen the Strait, so it can
+    lower prices but cannot end the shortage; Germany's reluctance and the
+    split over who coordinates it (the EU, the International Energy Agency
+    or individual countries) make the size and timing uncertain.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        A coordinated G7 or IEA release is agreed and Brent drifts lower,
+        taking some pressure off long-term yields.
+      why: >
+        Bond yields have been moving with crude, so a visible supply release
+        would help the inflation argument, and Macron has said he will
+        convene G7 leaders.
+    - direction: >
+        The talks stall or the US imposes a diesel export ban, and diesel and
+        Brent spike again.
+      why: >
+        The US supplies about half of EU diesel imports (IEA), Germany is
+        reluctant, and the Commission has said a ban would damage trust in
+        the US.
+  context_note: >
+    capital-context.yaml (asof 08-25) has no reading for refined-product
+    supply; its conflict_risk_premium predates the September Hormuz strikes
+    and should be refreshed.
+
+g7-leaders-agreed-on-friday-to-a-coordinated-relea:
+  mechanism: >
+    The shortage is mostly in refined products rather than crude. Diesel is
+    scarce because the Strait of Hormuz is effectively closed, Russia has
+    said its diesel will stay off world markets until sanctions end, and
+    Washington has threatened a US export ban to force Europe to share its
+    stocks. A coordinated release through the International Energy Agency
+    puts barrels on the market quickly, with the diesel share frontloaded
+    into the first 20 days, and the pledge not to restrict exports between
+    G7 countries removes the threat that would have cut supply to Europe.
+    It lowers prices only while the barrels flow and does not reopen the
+    Strait, so the effect depends on how fast the diesel is actually
+    delivered and on the "additional diesel releases" the IEA is to discuss
+    in the coming days. Lower oil would also ease the inflation pressure
+    behind this week's bond sell-off.
+  confidence: plausible
+  scenarios:
+    - direction: >
+        Diesel and Brent drift lower over the next weeks as the frontloaded
+        release arrives, taking some pressure off inflation and long-term
+        yields.
+      why: >
+        Oil fell on the first reports of a release even before the
+        announcement, and the statement commits to deliveries within 20 days
+        and a follow-up IEA report, so the supply is visible and scheduled.
+      precedent: >
+        The IEA's March 2026 release of 400 million barrels helped partly
+        ease supply and keep a lid on prices (NBC News), so a coordinated
+        release has moved the market before.
+    - direction: >
+        The relief is brief and prices rise again because the underlying
+        shortage is unchanged.
+      why: >
+        The Strait of Hormuz is still disrupted, tankers have been struck and
+        Russian diesel is withheld; a release replaces supply for months, not
+        the lost flow.
+      precedent: >
+        After the March release, prices continued to rise (NBC News), and US
+        diesel is up about 70% since late February.
+  context_note: >
+    capital-context.yaml (asof 08-25) has no reading for refined-product
+    supply or for the G7's March stock release; the file predates both and
+    should be refreshed.

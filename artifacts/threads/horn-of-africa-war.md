@@ -10,10 +10,15 @@ opened: 2026-08-04
 
 *Watch:* A Tigray-war reignition with cross-border spillover. Track whether federal/TPLF fighting becomes sustained rather than episodic; displacement volume and direction; whether Eritrea enters directly, which is the step-change that would turn a civil conflict back into a regional war; and any AU/UN mediation.
 
+## 2026-10-02 — Government forces reported closing on Mekelle
+
+- **Residents told Reuters on Friday that Ethiopian government forces were closing on Tigray's capital Mekelle, while the commander of the government-aligned Tigray Peace Forces claimed late Thursday that TPLF forces had been wiped out and TPLF chairman Debretsion Gebremichael said his fighters would counter-attack "in due course".** Al Jazeera could not verify the claim, and Debretsion acknowledged federal forces occupy parts of Tigray. ([Al Jazeera](https://www.aljazeera.com/news/2026/10/2/ethiopian-govt-aligned-group-claims-close-to-full-control-of-tigray-region)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Eritrea denies backing Ethiopia's rebel alliance
 
 - **Eritrea's information minister told the BBC his government is not backing Ethiopia's rebel alliance, accusing Ethiopia's ruling Prosperity Party of seeking external scapegoats, while a pro-government militia commander told the BBC that Eritrean soldiers are on the front lines in Tigray.** The BBC could not verify either claim and cannot report from Tigray, where internet and telecoms are cut. ([BBC](https://www.bbc.co.uk/news/articles/c3vgygpqky9zo)) ⟨daily 2026-10-01⟩
 - **Ethiopia ordered 10 Eritrean diplomats out within 48 hours and closed its embassy in Eritrea; Eritrea said it would sever all diplomatic ties in return.** Ethiopia cited a "direct threat to Ethiopia's national security"; AP says it is unclear whether the overnight Addis Ababa blasts were an attack or training. ([AP, via WSLS](https://www.wsls.com/news/world/2026/10/01/blasts-reported-in-ethiopian-capital-hours-after-government-banned-drone-flights/)) ⟨daily 2026-10-01⟩
+- **Egypt and Ethiopia each ordered a diplomat to leave within 48 hours, and the African Union urged Ethiopia, Eritrea and Egypt to show "maximum restraint," after Eritrea severed relations with Ethiopia.** Ethiopian state media said it expelled an Egyptian diplomat without giving a reason and Egypt's state-affiliated Al Qahera News said it ordered an Ethiopian embassy official out in return; Eritrea's foreign ministry said Ethiopia's expulsion of its ambassador left it no option but to cut all ties. ([BBC](https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o), [Al Jazeera](https://www.aljazeera.com/news/2026/10/2/ethiopian-govt-aligned-group-claims-close-to-full-control-of-tigray-region)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-30 — Pope appeals for dialogue in Tigray as Israelis are evacuated from Lalibela
 

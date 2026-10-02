@@ -13,6 +13,10 @@ crawled: 2026-07-24
 frontier gap as a fast follower (4th on the intelligence index, strong on
 coding/price, weak on factuality), not the leader. Grok 5 and the frontier gap.
 
+## 2026-10-01 — Grok and the Venezuela decision
+
+- **Time reported that President Trump spent hours in a December 2025 meeting asking Musk's Grok chatbot how Venezuelans would respond if their president were captured** A source told Time that Trump "came away thinking Grok was ingenious"; TechCrunch notes the Pentagon's AI head said in June the military used Grok Gov during the Iran war. ([TechCrunch](https://techcrunch.com/2026/10/01/musks-ai-chatbot-grok-reportedly-encouraged-trump-to-capture-venezuelas-president/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — SpaceXAI signs a Grok memorandum with Azerbaijan
 
 - **Azerbaijan's Ministry of Digital Development and Transport signed a memorandum with SpaceXAI to explore using its Grok models in government services** The agreement is a cooperation framework rather than a purchase: the parties will jointly assess AI uses across public-sector institutions and consider scaling successful ones, and Deputy Minister Rashad Hasanov said Azerbaijan has "moved from discussing AI to implementing it." ([AzerNews](https://www.azernews.az/nation/264803.html), [Report.az](https://report.az/en/ict/azerbaijan-and-spacexai-sign-ai-cooperation-memorandum)) ⟨daily 2026-09-30⟩

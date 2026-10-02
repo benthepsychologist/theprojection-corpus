@@ -11,6 +11,10 @@ opened: 2026-07-27
 *Watch:* The guarantee's actual structure and figure; rating-agency
 treatment; each new customer-equity position.
 
+## 2026-10-02 — Amazon explores an outside-funded chip vehicle
+
+- **Amazon is exploring moving about $8 billion of Nvidia chips into a separate vehicle funded by outside investors, the Financial Times reported** The vehicle could issue debt and sell up to a 10% equity stake while Amazon keeps using the chips. ([Financial Times](https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62), [GuruFocus via Yahoo Finance](https://finance.yahoo.com/technology/ai/articles/amazon-takes-drastic-step-finance-123622467.html)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Lenders press Nvidia for stronger guarantees
 
 - **Lenders want more guarantees than Nvidia first offered on its $500 billion chip-backed financing plan because they doubt GPUs will earn revenue for a decade, Reuters reported** Sources say Nvidia may need to guarantee all deals or tie them to investment-grade customers' revenue; Nvidia called its compute "a productive, durable and fungible asset." ([Reuters via BNN Bloomberg](https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/01/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check/)) ⟨daily 2026-10-01⟩

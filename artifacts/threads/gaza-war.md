@@ -17,6 +17,10 @@ heavy weapons, or does disarmament stay symbolic? And does the low-boil
 strike pattern hold, escalate, or taper while food insecurity sits at 67%
 of the population?
 
+## 2026-10-01 — Eight more deaths reported; ceasefire-era toll 1,439
+
+- **Gaza's health ministry reported eight more Palestinians killed and 26 wounded in 24 hours on Thursday, putting the toll since the October 2025 ceasefire at 1,439 killed and 5,052 wounded, and the war's total at least 74,040 dead.** An Israeli drone strike on a tent sheltering displaced people in al-Mawasi killed one man and wounded three; the figures are the ministry's own count. ([Al Jazeera](https://www.aljazeera.com/news/2026/10/1/israeli-drone-kills-palestinian-in-gaza-settlers-kill-another-in-west-bank)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-30 — Israeli strikes kill at least seven in Gaza
 
 - **Israeli attacks killed at least seven Palestinians and wounded more than 10 in the Gaza Strip on Wednesday, six of them in a drone strike on a passenger van in Tal al-Hawa in southwest Gaza City.** Al Jazeera's reporter in Gaza City said the toll could rise; Israel's account was not read. ([Al Jazeera](https://www.aljazeera.com/news/2026/9/30/israeli-attacks-on-gaza-kill-several-as-ceasefire-violations-continue)) ⟨daily 2026-09-30⟩

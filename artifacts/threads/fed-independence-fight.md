@@ -41,10 +41,15 @@ decision.
     frontmatter via /steer only.
 -->
 
+## 2026-10-02 — A weak jobs report cuts October hike odds to under a fifth
+
+- **US employers added 29,000 jobs in September and the unemployment rate rose to 4.2% from 4.1%, with July and August revised down by a combined 60,000 jobs and wages up 3.0% from a year earlier.** CME FedWatch put the chance of a quarter-point rise on October 28 at 17% (CNBC) or 18% (AP), with a December hike still priced above 75%; the 10-year Treasury yield fell to about 5.2% from 5.34% on Thursday. ([Bureau of Labor Statistics](https://www.bls.gov/news.release/empsit.nr0.htm), [CNBC](https://www.cnbc.com/2026/10/02/fed-rate-hike-odds-decline-after-september-jobs-report.html), [AP](https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Trump says Warsh should have voted against the rate hike
 
 - **President Trump said in a Time interview published Thursday that Fed Chair Kevin Warsh should have voted against the Fed's September rate hike: "I don't blame Kevin Warsh. I probably would have voted against the board if I were him."** He called the board "very hostile," said it was acting out of "Trump derangement syndrome," and said of further increases this year, "I don't think they should." ([Time](https://time.com/article/2026/10/01/donald-trump-2026-interview-transcript/), [Quartz via Yahoo Finance](https://finance.yahoo.com/economy/policy/articles/trump-says-fed-chair-kevin-140629973.html)) ⟨daily 2026-10-01⟩
 - **Trump could seek to remove as many as three of the Fed's seven governors, Jerome Powell, Lisa Cook and Michael Barr, but court rulings would make any attempt slow and uncertain, CNBC reported Thursday.** The Supreme Court blocked Cook's removal in June pending notice and a chance to respond, which she received by August; the administration faces a deadline in her case shortly after the November 3 midterm, and the Fed's next rate decision is October 28. Former Fed general counsel Scott Alvarez said the inspector-general report would not be enough to remove Powell for cause. ([CNBC](https://www.cnbc.com/2026/10/01/trump-fed-powell-lisa-cook-michael-barr-removal.html)) ⟨daily 2026-10-01⟩
+- **Minneapolis Fed President Neel Kashkari said Thursday he expects additional rate increases into 2027 but has no strong view on whether the next should come at the October 27-28 meeting.** He told Reuters the data since September suggest the economy is "doing even better" than he anticipated and that policy is "probably not particularly restrictive right now." ([Reuters via Y94](https://y94.com/2026/10/01/feds-kashkari-expects-more-rate-hikes-unsure-on-need-to-act-this-month/)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-30 — Core PCE inflation cools to 3.0%, October hike odds fall
 

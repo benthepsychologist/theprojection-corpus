@@ -5,9 +5,10 @@ Thread: `israel-lebanon-escalation` · lens: world-news · opened
 mechanical signal, primary-verified). Cross-references:
 `iran-conflict-widening` (distinct theatre, same regional war context).
 
-## 2026-10-01 — Syria and Hezbollah held secret talks in Turkey
+## 2026-10-01 — Reuters reports secret Syria–Hezbollah talks in Turkey; Damascus and Ankara deny them
 
-- **Syrian government officials and Hezbollah representatives held face-to-face talks in Turkey last month, the first known meeting between the longtime foes, six sources told Reuters.** Turkish security and intelligence agencies hosted the meeting to de-escalate; no agreement was reached and none was to be announced. ([Reuters, via KFGO](https://kfgo.com/2026/10/01/exclusive-syrian-government-officials-and-hezbollah-held-secret-talks-in-turkey-sources-say/)) ⟨daily 2026-10-01⟩
+- **Six sources told Reuters that Syrian government officials and Hezbollah representatives held face-to-face talks in Turkey last month, which would be the first known meeting between the longtime foes.** Turkish security and intelligence agencies hosted the meeting to de-escalate; no agreement was reached and none was to be announced. ([Reuters, via KFGO](https://kfgo.com/2026/10/01/exclusive-syrian-government-officials-and-hezbollah-held-secret-talks-in-turkey-sources-say/)) ⟨daily 2026-10-01⟩
+- **Syria's Information Ministry said Thursday that Reuters' report of face-to-face talks between Syrian officials and Hezbollah in Turkey is "false" and that "no such meeting took place", and Turkey's Directorate of Communications called it "entirely unfounded".** Reuters had cited six sources, including two Syrian officials, a US official and a Lebanese security source close to Hezbollah; the entry from earlier on 10-01 stated the meeting as fact and should be read with these denials. ([Al Jazeera](https://www.aljazeera.com/news/2026/10/1/syria-denies-officials-held-secret-talks-with-hezbollah-in-turkiye), [Arab News](https://www.arabnews.com/middle-east/syria-and-turkiye-deny-report-secret-talks-hezbollah-3004052)) ⟨daily 2026-10-01⟩
 
 ## 2026-09-24 — Israeli detonations at Bint Jbeil and al-Khiam and overnight shelling across the south
 

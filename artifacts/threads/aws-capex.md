@@ -12,6 +12,14 @@ crawled: 2026-07-27
 *Watch:* Amazon reports earnings ~07-31 — the first real test of this
 thread. Part of `hyperscaler-capex-big-picture`.
 
+## 2026-10-02 — Amazon adds a $1 billion community programme and a data-center code of conduct
+
+- **Amazon announced "Built Together," adding more than $1 billion over five years for communities that host its US data centers, alongside a published "Data Center Commitment" that ends nondisclosure agreements with government agencies** AWS chief executive Matt Garman's post also pledges Tier 4 backup generators at new sites, annual public reporting of energy and water use, and says Amazon has put more than $1 billion into such communities over the past three years. ([Amazon](https://www.aboutamazon.com/news/company-news/amazon-data-centers-built-together)) ⟨daily 2026-10-02⟩
+
+## 2026-09-30 — Amazon signs a 20-year Maryland nuclear deal after pulling out of a data-center campus beside the plant
+
+- **Amazon and Constellation announced a 20-year power purchase agreement for 690 megawatts from the Calvert Cliffs nuclear plant in Maryland, enabling more than $3 billion of plant investment and about 190 megawatts of new capacity between 2030 and 2032** The deal also covers a retail supply agreement for Amazon's operations in the 13-state PJM market; Amazon had planned a large data-center campus next to the plant but pulled out in August. ([Data Center Dynamics](https://www.datacenterdynamics.com/en/news/amazon-signs-ppa-with-constellation-for-maryland-nuclear-plant/)) ⟨daily 2026-09-30⟩
+
 ## 2026-09-18 — Amazon agrees to buy two Hong Kong data-centre properties for up to HK$2.4 billion
 
 - **Hong Kong developer Grand Ming Group conditionally agreed on 2026-09-18 to sell two data-centre properties in Fanling to Amazon Data Services Hong Kong for up to HK$2.445 billion (about US$312 million).** The price is a minimum HK$2.179 billion at closing plus up to HK$265.8 million tied to construction milestones; the deal is a "very substantial transaction" for Grand Ming, which is expected to use the proceeds to cut debt and whose shares rose 41% on the news. ([Grand Ming filing via FilingReader](https://filingreader.com/news-wire/hongkong/2026-09-18/grand-ming-agrees-hk245bn-data-centre-disposal-to-amazon), [MarketScreener](https://www.marketscreener.com/news/grand-ming-sells-data-center-properties-to-amazon-for-hk-2-4-billion-shares-soar-41-ce785adbdb8cf526)) ⟨daily 2026-09-26⟩

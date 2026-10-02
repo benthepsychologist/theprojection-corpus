@@ -14,6 +14,10 @@ on suicide/psychosis reinforcement; no filed MH suit yet) and (B) deepfake/
 CSAM (litigated + regulated). Root cause of both: the explicit anti-guardrail
 design. The catalyst to watch: the first named-plaintiff Grok MH/suicide suit.
 
+## 2026-09-18 — Two Arkansas families dismiss their lawsuits against xAI
+
+- **Two Arkansas families dismissed their lawsuits against X.AI that alleged its Grok system created child sexual abuse material, the Arkansas Democrat-Gazette reported on 09-18** The report's headline does not say whether the cases were settled or refiled. ([Arkansas Democrat-Gazette](https://www.arkansasonline.com/news/2026/sep/18/families-dismiss-2-lawsuits-against-xai-alleging/)) ⟨daily 2026-09-18⟩
+
 ## 2026-09-14 — xAI takes its fight over Minnesota's AI "nudification" ban to the Eighth Circuit
 
 - **xAI asked the US Court of Appeals for the Eighth Circuit on 2026-09-14 to block enforcement of Minnesota's first-in-the-nation AI "nudification" law while it appeals the district court's 09-04 refusal to pause it.** The appeal is X.AI LLC v. Ellison, docketed as No. 26-2806 according to InsideAI, which says no briefing schedule had been set and that it could not verify what relief xAI is seeking; no appellate ruling has been reported as of 2026-09-26. The law stays in force in the meantime. ([Reuters](https://www.reuters.com/legal/government/musks-xai-asks-court-block-minnesota-ai-nudification-law-during-appeal-2026-09-14/), [InsideAI](https://insideai.news/news/ai-policy-and-regulation/xai-minnesota-ai-nudification-law/11848/)) ⟨daily 2026-09-26⟩

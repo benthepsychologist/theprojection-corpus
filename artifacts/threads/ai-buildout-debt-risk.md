@@ -8,6 +8,10 @@ opened: 2026-08-11
 
 # AI Debt Gets Rated — timeline
 
+## 2026-10-02 — Blue Owl again caps withdrawals from two private credit funds
+
+- **Blue Owl again limited withdrawals from two of its private credit funds to 5% after investors asked to pull 39% of shares in its technology lending fund and 17% in a second fund, Bloomberg reported.** The roughly $5 billion Blue Owl Technology Income Corp. is the largest fund of its kind focused on technology lending; requests rose slightly from 38.1% in the prior quarter, and fears about artificial intelligence kept them well above industry peers. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Broadcom's convertible loan extends supplier financing of AI labs
 
 - **Broadcom has agreed to lend Anthropic up to $42 billion to finance infrastructure spending, including leases of its chips, through convertible notes, according to Anthropic's IPO prospectus as reported by Reuters and CNBC.** The notes could finance about a third of a $125.2 billion five-year TPU lease, Anthropic said it does not expect any notes to be sold before its IPO, and Seaport's Jay Goldberg said Broadcom "is having to follow suit" after Nvidia's use of its balance sheet. ([CNBC, citing Reuters](https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html)) ⟨daily 2026-10-01⟩
