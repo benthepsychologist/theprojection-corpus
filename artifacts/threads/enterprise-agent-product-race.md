@@ -13,6 +13,11 @@ whether any lab treats this as a distinct product line with its own
 roadmap; whether enterprise adoption numbers (seats, IDE installs) ever
 get disclosed.
 
+## 2026-10-02 — Apple moves to restrict AI agents' disk access
+
+- **Apple said it will add new controls around macOS "Full Disk Access," citing the risks AI agents pose when granted that level of access** Apple's developer post says some developers use the permission in ways that expose a user's files, mail, messages and browsing history without full understanding, and that users will need "very explicit user action" to grant it; no date or macOS version was given. TechCrunch ties it to the dispute over Meta's Muse app reading a journalist's messages, which Meta disputes. ([Apple Developer](https://developer.apple.com/news/?id=p6zjojqw), [TechCrunch](https://techcrunch.com/2026/10/02/apple-says-its-tightening-macos-full-disk-access-controls-due-to-new-risks-from-ai-agents/)) ⟨daily 2026-10-02⟩
+- **Anthropic launched Claude Frontier Academy, committing $100 million to train 10,000 "Frontier Deployed Engineers" by the end of 2027** First cohorts are running in San Francisco, New York and London with engineers from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk; the first full credentials are expected in early 2027. ([Anthropic](https://www.anthropic.com/news/claude-frontier-academy), [Techmeme](https://www.techmeme.com/261002/p18)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Claude Code mods, Copilot computer use, Tavus's Griffin and a new class of decision models
 
 - **Anthropic introduced "mods" for Claude Code, small TypeScript functions that can rewrite prompts, block or retry tool calls, redact secrets and replace parts of the interface in the terminal and desktop app** Mods ship inside plugins, the built-in `/diff` feature is now a mod, and Team and Enterprise plans load a "sec-default" mod first to stop user-installed mods from overriding permission deny rules; Anthropic says mods are not sandboxed. ([Anthropic](https://claude.com/blog/claude-code-mods)) ⟨daily 2026-10-01⟩

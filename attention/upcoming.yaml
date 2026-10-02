@@ -2296,7 +2296,17 @@ expectations:
       filing, or Headspace's product/brand being folded into Sword's. A
       slip or a termination is the interesting outcome — neither company
       had announced the deal publicly when the filing surfaced it.
-    status: pending
+    status: hit
+    resolved: 2026-10-01
+    evidence: |
+      HIT 2026-10-01 (found 2026-10-02): Headspace's help-center article "Has the deal
+      closed?" reads "Yes. The acquisition officially closed on October 1st, 2026.
+      Headspace is now part of Sword." A company-side statement from the acquired
+      party; Sword's own newsroom still read "Sword is acquiring Headspace" on 10-02 and
+      no completion press release from either company was found. Closed inside the
+      "beginning of Q4 2026" window Sword gave on 09-16, two and a half weeks after the
+      filing's 09-14 date.
+      (https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed)
     due: 2026-10-01
     due_precision: quarter
     slips: [2026-09-14]
@@ -4036,6 +4046,8 @@ expectations:
     # (Hawley's site, subcommittee, coverage); a Hawley spokesperson told CNBC on 09-30 that OpenAI
     # would provide additional documents by the end of the week. Inside the 3-day grace; the next run
     # flips it.
+    # 2026-10-02 ⟨daily⟩: (15:00 ET run) no delivery of OpenAI's documents reported by about 4pm ET;
+    # the 'by the end of the week' promise runs through 10-03.
   - id: sf-datacenter-moratorium-vote-0915
     claim: >
       The San Francisco Board of Supervisors votes on a data-centre moratorium
@@ -5076,6 +5088,9 @@ expectations:
     # 2026-10-02 ⟨daily⟩: CNN and CBS reported on 10-02 that Trump is expected to name DNI Jay
     # Clayton, who would keep the DNI post, possibly as early as Friday; the White House called it
     # 'baseless speculation'. Not announced by about 11am ET.
+    # 2026-10-02 ⟨daily⟩: (15:00 ET run) still not named by about 4pm ET; Reuters, Bloomberg, Axios,
+    # CNN and NBC all still say Clayton is 'expected', and the White House says any announcement
+    # will come from the President. No statement or presidential post found.
   - id: trump-si-legal-definition-1128
     claim: "The president's science adviser proposes a legal definition of 'super intelligence' within the 60 days the 09-29 executive order allows"
     due: 2026-11-28
@@ -5117,6 +5132,10 @@ expectations:
     # Trump told Time that military action could resume after the midterms.
     # 2026-10-02 ⟨daily⟩: no public Iranian answer by about 11am ET 10-02. Bloomberg reported 10-01
     # that Araghchi privately offered inspector access for sanctions relief, which Iran denied.
+    # 2026-10-02 ⟨daily⟩: (15:00 ET run) no public Iranian answer by about 4pm ET. Iraq's foreign
+    # minister Fuad Hussein offered to mediate between Iran and the US, and a Foreign Ministry
+    # research-centre head told Russia-1 on 10-01 that Araghchi gave Qatar an 'initial response'
+    # (Anadolu).
   - id: roiz-blue-shield-amended-complaint-1013
     claim: "Plaintiffs in Roiz v. Blue Shield file an amended complaint after Judge Orrick's 09-23 order dismissing some claims with leave to amend"
     due: 2026-10-13
@@ -5254,6 +5273,30 @@ expectations:
     source: https://www.elysee.fr/emmanuel-macron/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability
     confidence: confirmed
     what_confirms: "An IEA report or statement on the release's progress, or member-country announcements of diesel volumes released."
+    logged: 2026-10-02
+    logged_by: curate-add
+    status: pending
+  - id: mecca-pact-houthi-emergency-meeting-1009
+    claim: "Saudi Arabia, Turkey and Pakistan, the Mecca defence pact's members, hold an emergency meeting in Riyadh the week of 10-05 on Iran's suggestion to engage the Houthis politically, as Pakistan's foreign minister Ishaq Dar said on 10-02"
+    due: 2026-10-09
+    due_precision: week
+    thread: yemen-civil-war
+    entities: []
+    source: https://www.straitstimes.com/world/middle-east/pakistan-says-mecca-pact-members-to-hold-emergency-talks-on-engaging-houthis
+    confidence: reported
+    what_confirms: "A readout or wire report of the Riyadh meeting taking place; a Saudi-led offensive launched before it is the other outcome Reuters reported as under planning."
+    logged: 2026-10-02
+    logged_by: curate-add
+    status: pending
+  - id: ubs-swiss-lower-house-committee-1027
+    claim: "The Swiss lower house's committees take up the capital rules for UBS on 10-26/27, after the upper house's vote, as Bloomberg reported on 10-02; UBS reports third-quarter results on 10-28"
+    due: 2026-10-27
+    due_precision: day
+    thread: ubs-swiss-capital-rules
+    entities: []
+    source: https://www.swissinfo.ch/eng/ubs-faces-swiss-exit-or-stay-and-pay-as-capital-defeat-nears/92158188
+    confidence: reported
+    what_confirms: "Committee meeting coverage or a parliamentary statement; UBS's 10-28 results commentary on the capital rules."
     logged: 2026-10-02
     logged_by: curate-add
     status: pending

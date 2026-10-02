@@ -48,6 +48,12 @@ us-stocks-rose-toward-their-august-record-and-the:
     capital-context.yaml (asof 08-25) predates the September 16 hike and
     describes a 30-year near 5.24%; the current 10-year (about 5.2%) is
     above that. The next /week refresh should reset the rate_regime reading.
+    Afternoon update (about 3pm ET): the second scenario is the one now
+    playing out. The 10-year had fallen to about 5.18% in the morning but
+    CNBC had it back at 5.281% by about 3pm ET, above Thursday's 5.24% par
+    curve, with October hold odds at 77% (down from 86% in the morning) and
+    the S&P 500's gain narrowed to 0.7%; the labor data moved the Fed's
+    near-term path but not the inflation and oil forces behind long yields.
 
 france-proposed-that-eu-countries-release-50-milli:
   mechanism: >
@@ -125,4 +131,42 @@ g7-leaders-agreed-on-friday-to-a-coordinated-relea:
   context_note: >
     capital-context.yaml (asof 08-25) has no reading for refined-product
     supply or for the G7's March stock release; the file predates both and
-    should be refreshed.
+    should be refreshed. Afternoon update (2:52pm ET): Brent was $102.25,
+    flat on the day, after about $100.8 shortly after the announcement and
+    under $100 before it, so the first day's reaction fits the second
+    scenario (a brief dip) rather than the first; a longer record is needed
+    before reading the release as ineffective, since deliveries only start.
+
+hedge-funds-caught-in-carry-trades-on-french-bonds:
+  mechanism: >
+    Leveraged funds had borrowed against French bonds to earn the gap
+    between interest-rate swap rates and French yields. When French yields
+    jumped on Thursday, losses on those positions forced the funds to sell
+    bonds to cut risk, and the selling pushed yields higher still, which is
+    why the move in France was faster than the move in Germany. Forced
+    selling of this kind tends to stop once the crowded positions are gone,
+    but it can repeat if the underlying worry (missed deficit targets,
+    budget gridlock, next year's presidential election) keeps driving yields
+    up. The mechanism comes from Bloomberg's report; the size of the
+    positions was not disclosed.
+  confidence: speculative
+  scenarios:
+    - direction: >
+        French yields stop rising once the crowded positions have been
+        closed, and the spread to Germany narrows from its widest.
+      why: >
+        Once the forced sellers are out, the selling pressure that is not
+        tied to France's finances is gone, and Friday's yields did come off
+        their morning highs.
+    - direction: >
+        The spread keeps widening because the budget and election worries are
+        unresolved.
+      why: >
+        Hedge funds supplied about half of trading in European government
+        bonds by some estimates, so a second wave of de-risking would meet
+        thin buying, and a rating downgrade in October (Candriam's warning)
+        could trigger one.
+  context_note: >
+    capital-context.yaml (asof 08-25) has no reading for French sovereign
+    stress or hedge-fund positioning in European bonds; it predates this
+    week's rout and should be refreshed.

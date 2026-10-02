@@ -13,6 +13,10 @@ explicitly discounting for this risk; any state or federal moratorium
 that actually stops a named project; whether an industry messaging
 campaign, if one emerges, changes the polling or the moratorium count.
 
+## 2026-10-02 — AWS pledges $1 billion to host communities and drops government NDAs
+
+- **Amazon Web Services said Friday it will invest more than $1 billion over five years in communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects** AWS chief executive Matt Garman's blog post says AWS is 75% of the way to being water positive by 2030 and that more than 100 data-center moratoriums are being considered across the country; AWS did not say which communities get the money. ([The Hill](https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/), [DCD](https://www.datacenterdynamics.com/en/news/aws-drops-non-disclosure-agreements-for-data-center-projects/)) ⟨daily 2026-10-02⟩
+
 ## 2026-09-25 — SpaceXAI offers to buy Southaven neighbours' homes if they drop out of the noise lawsuit
 
 - **SpaceXAI has sent residents near its Southaven, Mississippi power plant letters offering to buy their homes if they sign away claims in a pending class action over turbine noise.** The letters, reported Thursday and Friday, say the company denies the allegations but "requires property for its business purposes"; offers are reportedly based on Zillow estimates and list no prices. Three residents filed the suit in the Northern District of Mississippi in June, estimating more than 10,000 people live in the affected area, and a first conference is set for October 29 in Oxford. ([DeSoto Times-Tribune](https://www.desototimes.com/news/spacexai-offering-to-buy-homes-affected-by-noise-in-southaven/article_6effb2e9-9334-4a69-9ccf-f2da859996a8.html), [DeSoto County News](https://desotocountynews.com/mississippi-news/xai-southaven-home-buyout-offer/)) ⟨daily 2026-09-25⟩

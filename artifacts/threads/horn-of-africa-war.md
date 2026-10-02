@@ -13,6 +13,7 @@ opened: 2026-08-04
 ## 2026-10-02 — Government forces reported closing on Mekelle
 
 - **Residents told Reuters on Friday that Ethiopian government forces were closing on Tigray's capital Mekelle, while the commander of the government-aligned Tigray Peace Forces claimed late Thursday that TPLF forces had been wiped out and TPLF chairman Debretsion Gebremichael said his fighters would counter-attack "in due course".** Al Jazeera could not verify the claim, and Debretsion acknowledged federal forces occupy parts of Tigray. ([Al Jazeera](https://www.aljazeera.com/news/2026/10/2/ethiopian-govt-aligned-group-claims-close-to-full-control-of-tigray-region)) ⟨daily 2026-10-02⟩
+- **Pro-government Tigray Peace Forces said Friday they had captured Milazat, about 20 kilometres south-east of Mekelle, as banks and shops closed in the Tigrayan capital and a diplomatic source said senior TPLF leaders had already left.** Reuters and the BBC could not verify the claim; the African Union Commission urged Ethiopia, Eritrea and Egypt to exercise "maximum restraint". ([Reuters, via Yahoo](https://www.yahoo.com/news/world/articles/ethiopian-forces-near-tigray-capital-120335665.html), [BBC](https://www.bbc.co.uk/news/articles/crpd0d0jl0y0o)) ⟨daily 2026-10-02⟩
 
 ## 2026-10-01 — Eritrea denies backing Ethiopia's rebel alliance
 

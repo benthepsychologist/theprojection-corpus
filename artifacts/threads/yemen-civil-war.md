@@ -16,6 +16,12 @@ the daily toll, Houthi threats to close the strait if Gulf states join the
 wider war, and whether the UN envoy's warning of a return to full-scale war
 becomes a formal collapse of the 2022 truce.
 
+## 2026-10-02 — Saudi Arabia reportedly plans an offensive to retake the Bab el-Mandeb coast
+
+- **Saudi Arabia is planning an offensive against the Houthis in Yemen, expected within weeks, to retake the Bab el-Mandeb coast, six officials told Reuters.** The options are a narrow push around the strait or a multi-front assault in Al-Bayda, Marib, Taiz and Al-Jawf, led by Yemeni forces overseen by Riyadh with Saudi air support and possibly more than 100,000 troops; timing estimates range from within a week to after the US midterms, and no government or Houthi spokesperson had responded. ([Reuters, via Yahoo](https://hk.news.yahoo.com/articles/saudis-plan-assault-houthis-break-160352911.html)) ⟨daily 2026-10-02⟩
+- **The Houthis said Friday that Saudi forces launched 94 strikes on their areas in 24 hours and 1,350 since the renewed fighting began.** This is a Houthi claim, unverified by Saudi Arabia. ([Middle East Eye](https://www.middleeasteye.net/live-blog/live-blog-update/houthis-say-saudi-forces-launched-94-strikes-yemen-24-hours)) ⟨daily 2026-10-02⟩
+- **Pakistan's foreign minister said Friday that Iran has suggested engaging the Houthis politically, and that the Mecca defence pact's three members (Saudi Arabia, Turkey, Pakistan) will discuss it at an emergency meeting in Riyadh next week.** Ishaq Dar called it "brainstorming between two foreign ministers", not a written offer, to be weighed as an alternative to "kinetic action". ([Reuters, via Straits Times](https://www.straitstimes.com/world/middle-east/pakistan-says-mecca-pact-members-to-hold-emergency-talks-on-engaging-houthis)) ⟨daily 2026-10-02⟩
+
 ## 2026-10-01 — Yemeni army reports six airstrikes in Taiz as fighting continues
 
 - **Yemen's army said Thursday its warplanes carried out six airstrikes on Houthi positions in Taiz province, in the Al-Akboush area and Hayfan district, as fierce fighting continued on several Taiz fronts.** The army claimed casualties and equipment losses for the Houthis without giving figures; the Houthis did not immediately comment. ([Anadolu](https://aa.com.tr/en/middle-east/yemeni-army-says-it-carried-out-6-airstrikes-on-houthi-positions-in-taiz/4074505)) ⟨daily 2026-10-01⟩

@@ -15,6 +15,10 @@ threads"); evidence base in
 artifacts/findings/{us,canada}-gov-pockets-2026-07-28.md — first
 dedicated crawl rides the /daily dispatch tiers.
 
+## 2026-10-01 — Canada's health ministers formally ask Ottawa to renew expiring mental-health funding
+
+- **Canada's provincial and territorial health ministers said in a statement on Thursday 10-01 that they are "united in calling on the federal government" to renew about $1.2 billion in mental-health, addictions and home-care funding that expires next March.** The ministers met earlier in the week with their finance counterparts and warned of "profound and negative" effects on patients and health-care jobs if the agreements are not renewed in this year's budget; the Canadian Mental Health Association's president said any cut to targeted funding "would be problematic and concerning." ([Global News](https://globalnews.ca/news/12085236/mental-health-home-care-funding/), [CTV News](https://www.ctvnews.ca/health/article/health-ministers-say-ottawa-needs-to-renew-mental-health-home-care-funding/)) ⟨daily 2026-10-01⟩
+
 ## 2026-09-28 — Provincial health ministers call an emergency meeting over the 2027 funding cliff
 
 - **Ontario Health Minister Sylvia Jones said on 2026-09-28 that Canada's provincial and territorial health ministers would meet on 09-29 to warn of a "fiscal cliff" if federal funding agreements for home care and mental health are not renewed.** The $4.8 billion earmarked for home care, community care and mental-health and addiction services under the 2023 health deal ends in 2027, and Jones said Ottawa appears to be walking away from part of the Canada Health Transfer. A spokesperson for federal Health Minister Marjorie Michel said she will talk with counterparts at a meeting next month, and the federal budget is due later this fall. ([Global News](https://globalnews.ca/news/12076426/as-feds-budget-nears-canadas-health-ministers-to-meet-to-talk-funding/), [Canadian Press via Times Colonist](https://www.pressreader.com/canada/times-colonist/20260929/281603837395005)) ⟨daily 2026-09-28⟩

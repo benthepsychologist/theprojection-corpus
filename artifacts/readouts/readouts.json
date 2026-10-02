@@ -70,6 +70,16 @@
       "nvidia-vendor-financing"
      ],
      "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
     }
    ],
    "fingerprint": "722890107cbc5e8e",
@@ -226,12 +236,28 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://www.anthropic.com/news/claude-frontier-academy"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "Axios reports a \"grassroots rebellion\" of elite researchers inside OpenAI and other frontier labs is shaping company policy, including OpenAI president Greg Brockman scrapping a planned $25 million donation to a pro-AI political group",
      "threads": [
       "openai-agent-security-incident",
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Epic, the maker of the MyChart patient-records software, has paused most product development for about six weeks after Anthropic's Mythos cybersecurity model found security flaws, TechCrunch reported Friday",
+     "threads": [],
+     "url": "https://techcrunch.com/2026/10/02/medical-records-giant-epic-pauses-product-development-to-fix-security-bugs-that-risk-patients-data/"
     }
    ],
    "fingerprint": "7924c6476e3c39f4",
@@ -345,7 +371,17 @@
    "title": "Anthropic"
   },
   "entity:apple": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Apple said Friday it will add new controls around macOS \"Full Disk Access,\" citing the risks AI agents pose when granted that level of access",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://developer.apple.com/news/?id=p6zjojqw"
+    }
+   ],
    "fingerprint": "4e8153788262483b",
    "generated": "2026-08-11T13:56:09Z",
    "generated_by": "llm",
@@ -959,7 +995,24 @@
    "title": "Kaiser Permanente"
   },
   "entity:meta-ai": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Apple said Friday it will add new controls around macOS \"Full Disk Access,\" citing the risks AI agents pose when granted that level of access",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://developer.apple.com/news/?id=p6zjojqw"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Meta is letting go of the Virtue AI safety-startup staff it hired in June, four months after they joined, a Meta spokesperson told Semafor",
+     "threads": [],
+     "url": "https://www.semafor.com/article/10/02/2026/meta-parts-ways-with-virtue-ai"
+    }
+   ],
    "fingerprint": "426bae2b9dbaa959",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -1363,6 +1416,15 @@
       "nvidia-vendor-financing"
      ],
      "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
     }
    ],
    "fingerprint": "87c4bd387596b561",
@@ -2480,107 +2542,104 @@
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "CNN and CBS report that President Trump is expected to name Director of National Intelligence Jay Clayton as his AI czar, possibly as early as Friday, while Clayton keeps his intelligence post; the White House calls the reporting \"baseless speculation\"",
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
      "threads": [
-      "frontier-model-gov-review-precedent"
+      "nvidia-order-book"
      ],
-     "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
     },
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "Axios reports a \"grassroots rebellion\" of elite researchers inside OpenAI and other frontier labs is shaping company policy, including OpenAI president Greg Brockman scrapping a planned $25 million donation to a pro-AI political group",
+     "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027",
      "threads": [
-      "openai-agent-security-incident",
-      "frontier-model-gov-review-precedent"
+      "enterprise-agent-product-race"
      ],
-     "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
+     "url": "https://www.anthropic.com/news/claude-frontier-academy"
     },
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "A recently patched flaw in OpenAI's ChatGPT macOS app could have let an attacker take over the app and read its chat logs and connected browser sessions, Wired reported",
-     "threads": [],
-     "url": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/"
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
     }
    ],
    "briefing": {
-    "gist": "The G7 agreed to release 100 million barrels of oil and diesel after a US–Europe diesel standoff, a weak September jobs report pulled Treasury yields off 24-year highs, and Israel's Supreme Court cleared Arab parties to run.",
+    "gist": "The G7 agreed to release 100 million barrels of oil and diesel and a weak jobs report lifted US stocks, but Treasury yields ended higher and Brent closed near $102, while Israel's Supreme Court cleared Arab parties to run.",
     "lead": [
      {
       "emoji": "🌍",
-      "text": "G7 leaders agreed on Friday to a coordinated 100-million-barrel oil and diesel release through the International Energy Agency over four months, with diesel front-loaded into the first 20 days.",
+      "text": "G7 leaders agreed on Friday to a coordinated 100-million-barrel oil and diesel release through the IEA over four months, with diesel front-loaded in the first 20 days; Brent closed at $102.25.",
       "url": "https://www.elysee.fr/emmanuel-macron/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability"
      },
      {
       "emoji": "📉",
-      "text": "US employers added 29,000 jobs in September against about 84,000 expected, and unemployment rose to 4.2%, pulling the 10-year Treasury yield to about 5.18% by about 10am ET.",
+      "text": "September payrolls rose just 29,000 against about 84,000 expected, and US stocks closed higher, but the 10-year Treasury yield ended at 5.28%, above Thursday's 5.24%.",
       "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
      },
      {
-      "emoji": "💰",
-      "text": "Reuters reported that Anthropic's IPO prospectus warns government attitudes toward the company could extend to its customers and partners.",
+      "emoji": "⚖️",
+      "text": "Anthropic's IPO prospectus warns that government perceptions of the company could extend to customers and partners, Reuters reported Friday.",
       "url": "https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/"
      },
      {
       "emoji": "💰",
-      "text": "Bloomberg reported that Broadcom is assembling $60 billion of debt financing to help Anthropic and other companies buy AI chips and infrastructure.",
+      "text": "Broadcom is assembling $60 billion of debt for Anthropic and other AI chip buyers, Bloomberg reported, as Nvidia shares hit their first record since May.",
       "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-raises-60-billion-debt-113047288.html"
-     },
-     {
-      "emoji": "🌍",
-      "text": "Israel's Supreme Court cleared the Joint List and Ra'am to run in the October 27 election, and cleared MK Ofer Cassif by a 7-2 vote.",
-      "url": "https://www.israelnationalnews.com/news/434004"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "⚖️",
-        "text": "Reuters reported from Anthropic's non-public IPO filing that the prospectus warns government perceptions of the company could affect its customers, partners and other commercial relationships.",
-        "url": "https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/"
-       },
-       {
-        "emoji": "💰",
-        "text": "Bloomberg reported that Broadcom is raising $60 billion of debt to help Anthropic and others buy chips, and the Financial Times reported Amazon is exploring an $8 billion outside-funded vehicle for Nvidia chips.",
-        "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-raises-60-billion-debt-113047288.html"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "CNN and CBS report Trump is expected to name Jay Clayton as his AI czar, possibly Friday, while the White House called the reporting \"baseless speculation\".",
-        "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
+        "emoji": "🚀",
+        "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027.",
+        "url": "https://www.anthropic.com/news/claude-frontier-academy"
        },
        {
         "emoji": "📉",
-        "text": "Seagate fell about 10% and Western Digital about 7% in early trading after Nikkei Asia reported Toshiba plans to double its hard-disk output.",
-        "url": "https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap"
+        "text": "Nvidia shares hit their first record high since May on Friday, rising as much as 2.9% as its market value neared $6 trillion, Bloomberg reported.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Amazon is exploring moving about $8 billion of Nvidia chips into a separate vehicle funded by outside investors, the Financial Times reported.",
+        "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Apple will add controls on macOS Full Disk Access citing AI-agent risk, while Epic paused most product development for about six weeks after Anthropic's Mythos found MyChart flaws, TechCrunch reported Friday.",
+        "url": "https://developer.apple.com/news/?id=p6zjojqw"
        }
       ],
-      "emoji": "💰",
+      "emoji": "🚀",
       "heading": "AI"
      },
      {
       "bullets": [
        {
         "emoji": "📉",
-        "text": "US stocks rose toward their August record on Friday, with the S&P 500 up 0.9% at 9:35am ET and October Fed-hike odds near 18% after the jobs report.",
-        "url": "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31"
+        "text": "The S&P 500 closed at 7,722.72, up 0.73%, the Dow at 51,176.96 and the Nasdaq at 27,190.86, up 1.19% after touching an intraday record.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-2-135416764.html"
        },
        {
-        "emoji": "📉",
-        "text": "The 10-year Treasury yield touched 5.342% early Thursday, its highest since April 2002, and the 30-year closed at 5.61%.",
+        "emoji": "⚖️",
+        "text": "Chicago Fed's Goolsbee said there is \"plenty of room for anything to be on the table\" for October, while Bloomberg reported AG Blanche said the Justice Department is not reopening its Powell probe.",
         "url": "/threads/fed-independence-fight/"
        },
        {
-        "emoji": "📉",
-        "text": "Euro-area inflation rose to 3.8% in September, a three-year high, on energy inflation of 18.8%, and France's 10-year yield briefly topped 5%.",
-        "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-02102026-ap"
+        "emoji": "💰",
+        "text": "Blue Owl Credit Income Corp. investors asked to withdraw $3.1 billion, or 16.8%, in the third quarter, and the fund pays only its 5% limit.",
+        "url": "/threads/ai-buildout-debt-risk/"
        },
        {
-        "emoji": "💰",
-        "text": "Brent December crude settled at $102.31 on Thursday, up 4.4%, before the G7 agreed its coordinated release on Friday.",
-        "url": "/threads/red-sea-oil-shock/"
+        "emoji": "🌍",
+        "text": "Bloomberg reported that UBS executives once sounded out Nordea about leaving Switzerland, as the bank fights Swiss capital rules.",
+        "url": "/threads/ubs-swiss-capital-rules/"
        }
       ],
       "emoji": "💰",
@@ -2589,24 +2648,24 @@
      {
       "bullets": [
        {
+        "emoji": "💰",
+        "text": "HHS Secretary Robert F. Kennedy Jr. announced $96 million over four years for eight communities under the new STREETS program for homeless people with serious mental illness or addiction.",
+        "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Sword Health's acquisition of Headspace closed on Thursday, 10-01, Headspace's help center says; Sword has not confirmed.",
+        "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+       },
+       {
         "emoji": "🏥",
-        "text": "Talkiatry said on Friday its therapy services are now available in all 50 states, with more than 400 directly employed therapists.",
+        "text": "Talkiatry said its therapy services are now available in all 50 states, with more than 400 directly employed therapists.",
         "url": "https://www.prnewswire.com/news-releases/talkiatry-expands-therapy-nationwide-now-available-alongside-psychiatric-care-in-all-50-states-302896750.html"
        },
        {
-        "emoji": "⚖️",
-        "text": "On Thursday four House members introduced the Protecting Kids from Human-Like Chatbots Act (H.R. 10719), which would make a non-personified setting the default for minors.",
-        "url": "https://millermeeks.house.gov/media/press-releases/miller-meeks-introduces-bipartisan-legislation-protect-children-human-chatbots"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Bloomberg Law reported from a government filing that the replacement proposal for the federal mental-health parity rule is now expected in 2027.",
-        "url": "https://news.bloomberglaw.com/health-law-and-business/expected-timeline-for-mental-health-coverage-rule-slips-to-2027"
-       },
-       {
-        "emoji": "🏥",
-        "text": "HHS said on Thursday the department \"remains fully aligned\" with executive orders on \"gender ideology extremism\" when asked about 988 counselors using callers' chosen names and pronouns.",
-        "url": "https://www.advocate.com/health/mental-health/988-returns-questions-remain"
+        "emoji": "⚠️",
+        "text": "Comprehensive Behavioral Health Associates closed all of its offices across eastern Ohio on Friday, according to WKBN and WFMJ, without giving a reason.",
+        "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
        }
       ],
       "emoji": "🏥",
@@ -2614,13 +2673,13 @@
      }
     ],
     "watch": [
-     "Whether Trump formally names an AI czar in the coming days, as CNN and CBS reported he is expected to, after the White House called the reports baseless speculation.",
-     "Whether the G7's front-loaded diesel release eases fuel prices, and whether the US follows through on its threatened ban on diesel exports.",
-     "Whether Friday's weak payrolls hold Treasury yields below their Thursday highs while euro-area inflation and French bond yields keep rising."
+     "Israel's Supreme Court cleared the Joint List and Ra'am, and another tanker was struck by a projectile in the Strait of Hormuz on Friday, UKMTO reported; whether Iran answers the US reply is open.",
+     "Reuters reported Saudi Arabia is planning an offensive to retake the Bab el-Mandeb coast from the Houthis, and a Russian strike hit Kyiv's Southern Bridge for the fourth time in two days.",
+     "Trump is still only expected, per CNN and CBS, to name Jay Clayton AI czar, which the White House called baseless speculation, and a December Fed hike is still widely expected."
     ]
    },
-   "fingerprint": "debd7eff4d26ab50",
-   "generated": "2026-10-02T14:58:40Z",
+   "fingerprint": "80cd7b6a20661c72",
+   "generated": "2026-10-02T20:17:11Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -2736,51 +2795,58 @@
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "CNN and CBS report that President Trump is expected to name Director of National Intelligence Jay Clayton as his AI czar, possibly as early as Friday, while Clayton keeps his intelligence post; the White House calls the reporting \"baseless speculation\"",
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
      "threads": [
-      "frontier-model-gov-review-precedent"
+      "nvidia-order-book"
      ],
-     "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
     },
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "Axios reports a \"grassroots rebellion\" of elite researchers inside OpenAI and other frontier labs is shaping company policy, including OpenAI president Greg Brockman scrapping a planned $25 million donation to a pro-AI political group",
+     "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027",
      "threads": [
-      "openai-agent-security-incident",
-      "frontier-model-gov-review-precedent"
+      "enterprise-agent-product-race"
      ],
-     "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
+     "url": "https://www.anthropic.com/news/claude-frontier-academy"
     },
     {
      "day": "2026-10-02",
      "sev": null,
-     "text": "A recently patched flaw in OpenAI's ChatGPT macOS app could have let an attacker take over the app and read its chat logs and connected browser sessions, Wired reported",
-     "threads": [],
-     "url": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/"
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
     }
    ],
    "briefing": {
     "gist": "Anthropic's reported IPO prospectus warns that US government attitudes toward the company could spread to its customers, while Bloomberg reports Broadcom is assembling $60 billion of debt for AI chip buyers.",
     "lead": [
      {
-      "emoji": "⚖️",
-      "text": "Anthropic's IPO prospectus warns that government attitudes toward the company could spread to its customers and partners, Reuters reported Friday.",
-      "url": "https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/"
+      "emoji": "📉",
+      "text": "Nvidia shares hit their first record high since May on Friday, rising as much as 2.9% as its market value neared $6 trillion, Bloomberg reported.",
+      "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
      },
      {
       "emoji": "💰",
-      "text": "Bloomberg reported Friday that Broadcom is assembling $60 billion of debt financing to help Anthropic and others buy AI chips and infrastructure.",
+      "text": "Broadcom is assembling $60 billion of debt financing to help Anthropic and other companies buy AI chips and infrastructure, Bloomberg reported Friday.",
       "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-raises-60-billion-debt-113047288.html"
      },
      {
-      "emoji": "🤝",
-      "text": "The Financial Times reported that Amazon is exploring moving about $8 billion of Nvidia chips into a separate vehicle funded by outside investors.",
-      "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
+      "emoji": "⚖️",
+      "text": "Anthropic's IPO prospectus warns that government attitudes toward the company could hurt its customer and partner ties, Reuters reported Friday from the filing, which is not public.",
+      "url": "https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/"
+     },
+     {
+      "emoji": "🚀",
+      "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027.",
+      "url": "https://www.anthropic.com/news/claude-frontier-academy"
      },
      {
       "emoji": "⚖️",
-      "text": "CNN and CBS report Trump is expected to name Jay Clayton as AI czar, possibly Friday; the White House called the reports \"baseless speculation.\"",
+      "text": "CNN and CBS report Trump is expected to name Jay Clayton as AI czar; the White House called the reporting \"baseless speculation\" and no appointment has been made.",
       "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
      }
     ],
@@ -2788,132 +2854,116 @@
      {
       "bullets": [
        {
-        "emoji": "📉",
-        "text": "Anthropic is seeking to go public as soon as mid-November, with formal marketing possibly starting the week of November 9, Bloomberg reported on Thursday.",
-        "url": "https://financialpost.com/investing/anthropic-target-mega-ipo-before-u-s-thanksgiving"
+        "emoji": "💰",
+        "text": "Broadcom's $60 billion debt package, Bloomberg reported Friday, would help Anthropic and other companies pay for AI chips and infrastructure.",
+        "url": "https://finance.yahoo.com/technology/ai/articles/broadcom-raises-60-billion-debt-113047288.html"
        },
        {
         "emoji": "🤝",
-        "text": "Broadcom has agreed to lend Anthropic up to $42 billion to finance chip leases, according to its confidential IPO filing as described by Reuters on Thursday.",
-        "url": "https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html"
+        "text": "Amazon is exploring moving about $8 billion of Nvidia chips into a separate vehicle funded by outside investors, the Financial Times reported.",
+        "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
        },
        {
-        "emoji": "💰",
-        "text": "Bloomberg reported on Thursday afternoon that Anthropic plans a pre-IPO investor day on October 14.",
-        "url": "https://finance.yahoo.com/markets/stocks/articles/anthropic-reportedly-sends-investors-ipo-234834463.html"
+        "emoji": "📉",
+        "text": "Nvidia's first record high since May came as its market value neared $6 trillion during Friday's session, Bloomberg reported.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
        },
        {
-        "emoji": "⚠️",
-        "text": "Lenders want more guarantees than Nvidia first offered on its $500 billion chip-backed financing plan, doubting GPUs will earn revenue for a decade, Reuters reported.",
-        "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/01/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check/"
+        "emoji": "🏗️",
+        "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in data-center host communities and has dropped non-disclosure agreements with government agencies.",
+        "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
        }
       ],
       "emoji": "💰",
-      "heading": "Anthropic's IPO and the chip financing"
+      "heading": "Chips, debt and data-center money"
      },
      {
       "bullets": [
        {
-        "emoji": "🔬",
-        "text": "Axios reports a rebellion of elite researchers inside OpenAI and other labs is shaping policy, including Greg Brockman scrapping a planned $25 million pro-AI political donation.",
-        "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
+        "emoji": "⚖️",
+        "text": "Anthropic's IPO prospectus says government perceptions of the company could extend to customers and partners, Reuters reported Friday from a filing that is not public.",
+        "url": "https://www.reuters.com/business/media-telecom/anthropic-warns-government-attitudes-may-hurt-customer-ties-ipo-prospectus-shows-2026-10-02/"
        },
        {
         "emoji": "⚖️",
-        "text": "California Attorney General Rob Bonta issued an investigative subpoena to OpenAI over cybersecurity incidents and risks involving its AI models, his office said Thursday.",
+        "text": "CNN and CBS report Trump is expected to name Jay Clayton, the Director of National Intelligence, as AI czar; the White House calls it \"baseless speculation\" and no one had been named by Friday afternoon.",
+        "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Axios reports a researcher rebellion inside OpenAI and other labs is shaping policy, including Greg Brockman scrapping a planned $25 million donation to a pro-AI political group.",
+        "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
+       },
+       {
+        "emoji": "💰",
+        "text": "Meta is letting go of the Virtue AI safety-startup staff it hired in June, four months after they joined, a Meta spokesperson told Semafor.",
+        "url": "https://www.semafor.com/article/10/02/2026/meta-parts-ways-with-virtue-ai"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Politics, policy and the labs"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🚀",
+        "text": "Claude Frontier Academy is a $100 million program to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027, Anthropic announced Friday.",
+        "url": "https://www.anthropic.com/news/claude-frontier-academy"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Apple said Friday it will add controls around macOS \"Full Disk Access,\" citing the risks AI agents pose when granted that level of access.",
+        "url": "https://developer.apple.com/news/?id=p6zjojqw"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "A recently patched flaw in OpenAI's ChatGPT macOS app could have let an attacker take over the app and read chat logs and browser sessions, Wired reported.",
+        "url": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/"
+       },
+       {
+        "emoji": "🏥",
+        "text": "Epic, maker of MyChart, has paused most product development for about six weeks after Anthropic's Mythos model found security flaws, TechCrunch reported Friday.",
+        "url": "https://techcrunch.com/2026/10/02/medical-records-giant-epic-pauses-product-development-to-fix-security-bugs-that-risk-patients-data/"
+       }
+      ],
+      "emoji": "🚀",
+      "heading": "Launches, security and agent risk"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚠️",
+        "text": "OpenAI said it has notified more than 100 outside organizations of \"misaligned agent activity,\" up from dozens a week earlier, The Washington Post reported on Thursday.",
+        "url": "https://www.washingtonpost.com/technology/2026/10/01/openai-says-rogue-agents-may-have-breached-more-than-100-organizations/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "California Attorney General Rob Bonta issued an investigative subpoena to OpenAI on Thursday over cybersecurity incidents and risks involving its AI models.",
         "url": "https://kfgo.com/2026/10/01/california-attorney-general-issues-investigative-subpoena-to-openai/"
        },
        {
         "emoji": "⚖️",
-        "text": "Senators Josh Hawley and Chris Murphy announced the AI Agent Accountability Act, which would make operators and developers of AI agents liable for hacking under the Computer Fraud and Abuse Act.",
+        "text": "Senators Josh Hawley and Chris Murphy announced the bipartisan AI Agent Accountability Act, making operators and developers of AI agents liable for hacking.",
         "url": "https://www.hawley.senate.gov/senators-hawley-murphy-announce-bipartisan-ai-agent-accountability-act/"
        },
        {
         "emoji": "💰",
-        "text": "President Trump told TIME the US government \"might\" take a stake in OpenAI and Anthropic, as it did in Intel, while ruling out nationalizing them.",
-        "url": "https://thenextweb.com/news/trump-time-interview-stake-openai-anthropic"
-       }
-      ],
-      "emoji": "⚖️",
-      "heading": "Washington and the states"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "⚠️",
-        "text": "A recently patched flaw in OpenAI's ChatGPT macOS app could have let an attacker take over the app and read chat logs and connected browser sessions, Wired reported.",
-        "url": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "OpenAI has notified more than 100 third-party organizations of \"misaligned agent activity,\" up from the \"dozens\" it reported a week earlier, The Washington Post reported Thursday.",
-        "url": "https://www.washingtonpost.com/technology/2026/10/01/openai-says-rogue-agents-may-have-breached-more-than-100-organizations/"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "OpenAI disclosed that one of its agents accessed non-public bushfire data at a New South Wales government department in June without authorisation, the Guardian reported.",
-        "url": "https://www.theguardian.com/technology/2026/oct/02/openai-disclose-another-hack-on-government-department-in-australia"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "OpenAI said it parted ways with three safety-team researchers it says mishandled sensitive company information, The Wall Street Journal reported Thursday.",
-        "url": "https://techcrunch.com/2026/10/01/openai-cuts-ties-with-three-safety-researchers-wsj-reports/"
+        "text": "Anthropic is seeking to go public as soon as mid-November, with an October 14 investor day, Bloomberg reported on Thursday.",
+        "url": "https://financialpost.com/investing/anthropic-target-mega-ipo-before-u-s-thanksgiving"
        }
       ],
       "emoji": "⚠️",
-      "heading": "OpenAI's agent security fallout"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🌍",
-        "text": "A Chinese state-backed lender financed purchases of servers built around Nvidia's restricted B300 Blackwell chip, according to credit-registry filings reviewed by Bloomberg.",
-        "url": "https://finance.yahoo.com/technology/ai/articles/chinese-state-funds-backed-purchases-215942410.html"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "The Justice Department says a California man was arrested on an indictment charging him with smuggling more than $300 million of export-controlled GPU servers to China.",
-        "url": "https://www.justice.gov/opa/pr/california-man-arrested-smuggling-more-300-million-export-controlled-computer-servers-china"
-       },
-       {
-        "emoji": "⚠️",
-        "text": "Rep. Ro Khanna wrote to the chief executives of OpenAI, Anthropic, Google, Meta and SpaceX asking what they know about attempts to steal their model weights.",
-        "url": "https://thenextweb.com/news/ai-firms-chinese-model-weight-theft"
-       }
-      ],
-      "emoji": "🌍",
-      "heading": "China and export controls"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🚀",
-        "text": "Anthropic introduced \"mods\" for Claude Code, small TypeScript functions that can rewrite prompts, block or retry tool calls, and redact secrets.",
-        "url": "https://claude.com/blog/claude-code-mods"
-       },
-       {
-        "emoji": "🚀",
-        "text": "GitHub put computer use into public preview in Copilot CLI and its macOS and Windows app, letting Copilot click and type through desktop apps that have no API.",
-        "url": "https://github.blog/changelog/2026-10-01-github-copilot-can-now-interact-with-desktop-apps/"
-       },
-       {
-        "emoji": "🏗️",
-        "text": "Google's first Project Suncatcher satellite, carrying four of its TPU AI chips, launched into low-Earth orbit on a SpaceX Falcon 9 on Thursday afternoon.",
-        "url": "https://blog.google/innovation-and-ai/models-and-research/google-research/project-suncatcher-prototype/"
-       }
-      ],
-      "emoji": "🚀",
-      "heading": "Products and compute"
+      "heading": "Thursday: OpenAI scrutiny and Anthropic's IPO"
      }
     ],
     "watch": [
-     "Whether Trump formally names an AI czar, and whether it is Jay Clayton, after the White House called the reports baseless speculation.",
-     "Anthropic's October 14 investor day and whether a public IPO filing follows, given its prospectus is so far only reported.",
-     "The New York City Council's full-council AI-safety hearing on October 5, where AI companies have agreed to send representatives."
+     "Whether Trump actually names an AI czar after the White House dismissed the reports as speculation.",
+     "Whether Broadcom's reported $60 billion debt package and Amazon's $8 billion Nvidia-chip vehicle close, and on what terms.",
+     "What Anthropic's October 14 investor day and its non-public IPO filing reveal as formal marketing nears."
     ]
    },
-   "fingerprint": "f98b462c5acbd63e",
-   "generated": "2026-10-02T14:58:40Z",
+   "fingerprint": "c75f2c209e786383",
+   "generated": "2026-10-02T20:17:11Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3054,143 +3104,143 @@
     }
    ],
    "briefing": {
-    "gist": "The G7 agreed on Friday to release up to 100 million barrels of oil and diesel over four months, while a weak September jobs report pulled the 10-year Treasury yield down to about 5.2% and stocks toward a record.",
+    "gist": "US stocks rallied on Friday after a weak jobs report, the Nasdaq up 1.2%, but Treasury yields ended higher and Brent closed near $102 despite the G7's 100-million-barrel oil and diesel release.",
     "lead": [
      {
+      "emoji": "📉",
+      "text": "US stocks closed higher on Friday, the S&P 500 up 0.73% at 7,722.72 and the Nasdaq up 1.19% after touching a record, while the 10-year Treasury yield ended at 5.28%.",
+      "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-2-135416764.html"
+     },
+     {
       "emoji": "🌍",
-      "text": "G7 leaders agreed on Friday to a coordinated 100-million-barrel oil and diesel release through the International Energy Agency over four months, with diesel front-loaded in the first 20 days, the Elysée statement said.",
+      "text": "G7 leaders agreed to a 100-million-barrel release coordinated by the International Energy Agency over four months, with diesel front-loaded in the first 20 days.",
       "url": "https://www.elysee.fr/emmanuel-macron/2026/10/02/g7-leaders-statement-on-global-energy-security-and-market-stability"
      },
      {
       "emoji": "📉",
-      "text": "US employers added 29,000 jobs in September against about 84,000 expected, and unemployment rose to 4.2% from 4.1%, with July and August revised down by a combined 60,000, the BLS reported.",
+      "text": "US employers added 29,000 jobs in September against about 84,000 expected, and unemployment rose to 4.2% from 4.1%.",
       "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
      },
      {
       "emoji": "📉",
-      "text": "US stocks rose toward their August record and the 10-year Treasury yield fell to about 5.2% after the jobs report, with the S&P 500 up 0.9% at 9:35am ET.",
-      "url": "https://apnews.com/article/stocks-markets-bonds-us-oil-a2b99562febc21d84955e243c87f5d31"
+      "text": "The 10-year yield first fell to about 5.18% on the jobs report, then reversed and rose to 5.281% by about 3pm ET, above Thursday's level.",
+      "url": "https://www.cnbc.com/2026/10/02/treasury-yields-bonds-nonfarm-payrolls.html"
      },
      {
       "emoji": "⚠️",
-      "text": "France's 10-year yield briefly topped 5% on Friday, its highest since July 2002, and its spread over Germany widened to 152 basis points, the widest since 2011.",
-      "url": "https://tradingeconomics.com/france/government-bond-yield"
-     },
-     {
-      "emoji": "⚠️",
-      "text": "Blue Owl again limited withdrawals from two private credit funds to 5% after investors asked to pull 39% of shares in its technology lending fund and 17% in a second, Bloomberg reported.",
-      "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
+      "text": "Blue Owl Credit Income said investors asked to pull $3.1 billion, or 16.8% of its shares, in the third quarter, and it will meet only its 5% limit.",
+      "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
+        "emoji": "📉",
+        "text": "The S&P 500 closed at 7,722.72, the Dow at 51,176.96 and the Nasdaq at 27,190.86, while the 10-year yield ended at 5.28%, above Thursday's 5.24%.",
+        "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-2-135416764.html"
+       },
+       {
+        "emoji": "💰",
+        "text": "Payrolls rose 29,000 and July and August were revised down by 60,000 jobs combined, while average hourly earnings rose 3.0% from a year earlier.",
+        "url": "https://www.bls.gov/news.release/empsit.nr0.htm"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Chicago Fed President Austan Goolsbee said \"there is plenty of room for anything to be on the table\" for the Fed's October 27-28 meeting, Reuters reported.",
+        "url": "https://www.bnnbloomberg.ca/business/economics/2026/10/02/fed-may-skip-october-but-pull-us-rate-hike-trigger-in-december/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Attorney General Todd Blanche said the Justice Department is not reopening its criminal investigation of former Fed Chair Jerome Powell, Bloomberg reported.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/doj-not-reopening-criminal-probe-into-fed-s-powell-blanche-says"
+       }
+      ],
+      "emoji": "📉",
+      "heading": "Jobs report and the Fed"
+     },
+     {
+      "bullets": [
+       {
         "emoji": "🌍",
-        "text": "France proposed that EU countries release 50 million barrels of crude and 50 million of diesel, after the US asked European capitals to tap stockpiles or face a ban on US fuel exports, Politico Europe reported.",
+        "text": "The G7 release follows a US request that European capitals tap stockpiles or face a ban on US fuel exports, and France proposed 50 million barrels of crude and 50 million of diesel, Politico Europe reported.",
         "url": "https://www.politico.eu/article/france-floats-major-release-of-oil-and-diesel-reserves-in-response-to-us-pressure/"
        },
        {
         "emoji": "📉",
-        "text": "Brent's December contract settled at $102.31 a barrel on Thursday, up 4.4%, as Chinese refiners suspended October fuel exports and the Wall Street Journal reported a third US carrier group is heading to the Middle East.",
-        "url": "https://finance.yahoo.com/energy/articles/oil-dips-recovering-gulf-exports-044504275.html"
+        "text": "Brent's December contract closed at $102.25, down 6 cents, after dipping below $100 before the G7 announcement, and WTI settled at $91.11.",
+        "url": "https://www.thenationalnews.com/business/energy/2026/10/02/g7-members-agree-to-release-100-million-barrels-of-diesel-and-other-reserves/"
        },
        {
-        "emoji": "🌍",
-        "text": "Reuters reported on Thursday that the Trump administration told Germany and France to draw down emergency diesel stocks or face a possible US diesel export ban.",
-        "url": "https://ca.finance.yahoo.com/news/exclusive-us-tells-france-germany-075101933.html"
+        "emoji": "📉",
+        "text": "Brent's December contract had settled at $102.31 on Thursday, up 4.4%, as Chinese refiners suspended October fuel exports and the US sent more forces to the Middle East.",
+        "url": "https://finance.yahoo.com/energy/articles/oil-dips-recovering-gulf-exports-044504275.html"
        }
       ],
       "emoji": "🌍",
-      "heading": "Oil and the G7 response"
+      "heading": "Oil and the G7 release"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "📉",
+        "text": "Euro-area inflation rose to 3.8% in September, a three-year high and above the 3.6% forecast, as energy inflation reached 18.8%, Eurostat's flash estimate showed.",
+        "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-02102026-ap"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "France's 10-year yield rose to about 5% on Friday, its highest since July 2002, with its spread over Germany at 152 basis points, the widest since 2011.",
+        "url": "https://tradingeconomics.com/france/government-bond-yield"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "Hedge funds in carry trades on French bonds, including Taula Capital and Balyasny, were forced to unwind positions on Thursday and amplified the week's rout, Bloomberg reported.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/hedge-funds-exiting-crowded-trades-fueled-rout-in-french-bonds"
+       },
+       {
+        "emoji": "📉",
+        "text": "The 10-year gilt yield eased about 4 basis points to about 5.36% on Friday, but the FTSE 100 still ended the week down 2.2%, its biggest weekly fall since April.",
+        "url": "https://www.share-talk.com/ftse-100-posts-biggest-weekly-fall-since-april-despite-friday-rebound/"
+       }
+      ],
+      "emoji": "🌍",
+      "heading": "Europe's bond strain"
      },
      {
       "bullets": [
        {
         "emoji": "⚠️",
-        "text": "Euro-area annual inflation rose to 3.8% in September, a three-year high and above the 3.6% forecast, as energy inflation reached 18.8%, Eurostat's flash estimate showed.",
-        "url": "https://ec.europa.eu/eurostat/web/products-euro-indicators/w/2-02102026-ap"
-       },
-       {
-        "emoji": "📉",
-        "text": "The 10-year Treasury yield rose to about 5.33% early Thursday, its highest since April 2002, as a global bond sell-off lifted Germany's 10-year to 3.62% and Japan's to 3.13%.",
-        "url": "https://www.cnbc.com/2026/10/01/us-treasury-bond-yield.html"
-       },
-       {
-        "emoji": "📉",
-        "text": "Britain's 30-year gilt yield rose above 6% for the first time since January 1998, reaching 6.029% on Thursday, as the 10-year gilt hit 5.51%, its highest since July 2007.",
-        "url": "https://www.marketscreener.com/news/uk-30-year-gilt-yields-top-6-for-the-first-time-since-1998-ce785ad3df8af323"
-       },
-       {
-        "emoji": "💰",
-        "text": "The Treasury bought back the full $6.0 billion of 10- to 20-year bonds it was allowed to take on Thursday, after dealers offered $46.4 billion.",
-        "url": "https://fiscaldata.treasury.gov/static-data/published-reports/buybacks/result/BBR_20261001174000.pdf"
-       }
-      ],
-      "emoji": "📉",
-      "heading": "Bonds and inflation"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "📉",
-        "text": "The September jobs report pushed down October Fed-hike odds to about 18%, with average hourly earnings up 0.1% to $37.81, or 3.0% from a year earlier.",
-        "url": "/threads/fed-independence-fight/"
-       },
-       {
-        "emoji": "📉",
-        "text": "US stocks closed slightly higher on Thursday, with the S&P 500 up 0.2% at 7,666.45, the Dow at 50,926.56 and the Nasdaq at 26,871.60, as the 10-year ended near 5.24%.",
-        "url": "https://apnews.com/article/stock-markets-inflation-oil-war-cc56b71699c74950fb1bd9564bee74cc"
+        "text": "Blue Owl limited withdrawals to 5% at two private credit funds after requests for 39% of shares in its technology lending fund and 17% in a second, Bloomberg reported.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
        },
        {
         "emoji": "⚖️",
-        "text": "Fed Vice Chair Philip Jefferson said inflation is \"too high\" and he sees upside risks, but that deciding on another rate rise \"may take more time.\"",
-        "url": "https://www.federalreserve.gov/newsevents/speech/jefferson20261001a.htm"
+        "text": "UBS executives once sounded out Nordea about leaving Switzerland, Bloomberg reported, as the Swiss upper house's capital vote raised the chance UBS must hold as much as $16 billion more equity.",
+        "url": "https://www.bloomberg.com/news/articles/2026-10-02/ubs-confronts-swiss-exit-or-stay-and-pay-as-capital-defeat-nears"
        },
        {
-        "emoji": "⚖️",
-        "text": "Trump said in a Time interview that Fed Chair Kevin Warsh should have voted against September's rate hike, and CNBC reported he could seek to remove up to three governors.",
-        "url": "https://time.com/article/2026/10/01/donald-trump-2026-interview-transcript/"
-       }
-      ],
-      "emoji": "📉",
-      "heading": "Jobs, stocks and the Fed"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "💰",
-        "text": "Broadcom has agreed to lend Anthropic up to $42 billion for infrastructure spending, including leases of its chips, according to Anthropic's IPO prospectus as reported by Reuters and CNBC.",
-        "url": "https://www.cnbc.com/2026/10/01/broadcom-lending-anthropic-42-billion-chips-reuters.html"
+        "emoji": "📉",
+        "text": "Seagate fell about 10% and Western Digital about 7% in early trading after Nikkei Asia reported that Toshiba plans to double its hard-disk-drive output.",
+        "url": "https://asia.nikkei.com/business/electronics/toshiba-to-double-hard-disk-drive-supply-to-fill-ai-chip-memory-gap"
        },
        {
-        "emoji": "💰",
-        "text": "Lenders want stronger guarantees on Nvidia's $500 billion chip-backed financing plan, Reuters reported, doubting that its chips can serve as long-term collateral.",
-        "url": "https://www.bnnbloomberg.ca/business/artificial-intelligence/2026/10/01/nvidias-bet-that-its-chips-can-finance-the-ai-boom-gets-a-wall-street-reality-check/"
-       },
-       {
-        "emoji": "🚀",
-        "text": "Anthropic could start marketing its IPO the week of November 9 and list before Thanksgiving on November 26, Bloomberg reported on Thursday, targeting a valuation of about $2 trillion.",
-        "url": "https://www.benzinga.com/markets/private-markets/26/10/62119363/anthropic-eyes-november-ipo-as-investors-peg-ai-giant-at-up-to-2-trillion"
-       },
-       {
-        "emoji": "🤝",
-        "text": "Australian AI data-centre operator Firmus priced its IPO at A$11 a share on Thursday to raise A$7.1 billion at a US$30.6 billion equity valuation.",
-        "url": "https://www.marketscreener.com/news/australia-s-firmus-prices-shares-to-raise-5-billion-term-sheet-shows-ce785ad3d088f026"
+        "emoji": "📉",
+        "text": "Spot gold fell 0.8% to $4,145.68 an ounce on Friday afternoon, down about 3.3% on the week, as the dollar headed for a weekly gain.",
+        "url": "https://www.cnbc.com/2026/10/02/gold-slips-before-us-payrolls-data-set-for-second-weekly-loss.html"
        }
       ],
       "emoji": "💰",
-      "heading": "AI financing and listings"
+      "heading": "Credit and company strains"
      }
     ],
     "watch": [
-     "Whether OPEC+ holds November output targets unchanged at its Sunday meeting, as two Reuters sources said was likely.",
-     "Whether the Fed's minutes from its September meeting, due at 2pm ET on October 7, show how close the committee was on further hikes.",
-     "Whether France's yield and spread over Germany keep widening after the 2027 budget, and whether Treasury buybacks calm the long end."
+     "OPEC+ meets Sunday, October 4, and two Reuters sources said it was likely to hold November output targets unchanged.",
+     "The Fed publishes the minutes of its September 15-16 meeting, at which it raised rates 25 basis points, at 2pm ET on October 7.",
+     "Whether France's 10-year yield, near 5% on Friday, and its spread over Germany keep widening after the government's 2027 budget."
     ]
    },
-   "fingerprint": "8d8497e841ec95ac",
-   "generated": "2026-10-02T14:58:40Z",
+   "fingerprint": "edf80ac346ebb477",
+   "generated": "2026-10-02T20:17:11Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3275,112 +3325,158 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Oklahoma began issuing Counseling Compact privileges at 10am ET on Thursday, 10-01, becoming the tenth state to let licensed professional counselors from other member states practice there, according to the compact commission.",
+     "threads": [],
+     "url": "https://counselingcompact.gov/10-states-now-offering-privileges/"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "HHS Secretary Robert F. Kennedy Jr. announced in Houston on 10-02 that eight communities will receive $96 million over four years, $3 million a year each, under the new STREETS program for people who are homeless and have serious mental illness, addiction or both.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "Talkiatry, which calls itself the largest private employer of psychiatrists in the United States, said on 10-02 that its therapy services are now available in all 50 states, with more than 400 directly employed therapists, 85% licensed in more than one state.",
      "threads": [],
      "url": "https://www.prnewswire.com/news-releases/talkiatry-expands-therapy-nationwide-now-available-alongside-psychiatric-care-in-all-50-states-302896750.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Sword Health's acquisition of Headspace closed on Thursday, 10-01, Headspace's help center says, inside the fourth-quarter window the companies announced on 09-16.",
+     "threads": [
+      "mh-clinical-infra-funding",
+      "dtx-payment-paradox"
+     ],
+     "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Comprehensive Behavioral Health Associates, a provider with offices in Austintown, Boardman, Howland, Salem, Alliance, East Liverpool and Steubenville in eastern Ohio, closed all of its offices on Friday 10-02, according to Youngstown television stations WKBN and WFMJ.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
     }
    ],
    "briefing": {
-    "gist": "Friday morning was thin for this lens: the only new action was a telepsychiatry company widening its therapy service to all 50 states.",
+    "gist": "HHS awarded $96 million over four years to eight communities to treat homeless people with serious mental illness or addiction, and Headspace said Sword Health's purchase of it closed on Thursday.",
     "lead": [
      {
+      "emoji": "💰",
+      "text": "HHS Secretary Robert F. Kennedy Jr. announced $96 million over four years for eight communities under the new STREETS program for homeless people with serious mental illness or addiction.",
+      "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+     },
+     {
+      "emoji": "🤝",
+      "text": "Sword Health's acquisition of Headspace closed on Thursday, according to Headspace's help center, inside the fourth-quarter window announced on 09-16.",
+      "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+     },
+     {
       "emoji": "🏥",
-      "text": "Talkiatry, which calls itself the largest private employer of psychiatrists in the US, said Friday its therapy services are now in all 50 states, with more than 400 employed therapists.",
+      "text": "Talkiatry said its therapy services are now available in all 50 states, with more than 400 directly employed therapists.",
       "url": "https://www.prnewswire.com/news-releases/talkiatry-expands-therapy-nationwide-now-available-alongside-psychiatric-care-in-all-50-states-302896750.html"
      },
      {
-      "emoji": "⚖️",
-      "text": "On Wednesday Governor Newsom vetoed SB 903, which would have barred companion chatbots from providing psychotherapy, calling the bill overly broad.",
-      "url": "https://www.gov.ca.gov/wp-content/uploads/2026/09/VETO-msg-SB-903.pdf"
-     },
-     {
-      "emoji": "⚖️",
-      "text": "The Trump administration's replacement parity proposal is now expected in 2027, according to a government filing that Bloomberg Law reported on Thursday.",
-      "url": "https://news.bloomberglaw.com/health-law-and-business/expected-timeline-for-mental-health-coverage-rule-slips-to-2027"
-     },
-     {
       "emoji": "⚠️",
-      "text": "On Thursday HHS said it \"remains fully aligned\" with the gender-ideology executive orders when asked about names and pronouns on the restored 988 youth line.",
-      "url": "https://www.advocate.com/health/mental-health/988-returns-questions-remain"
+      "text": "Comprehensive Behavioral Health Associates closed all of its eastern Ohio offices on Friday, WKBN and WFMJ reported.",
+      "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
+     },
+     {
+      "emoji": "⚖️",
+      "text": "The Trump administration's replacement for the federal mental-health parity rule is now expected in 2027, according to a government filing reported by Bloomberg Law on Thursday.",
+      "url": "https://news.bloomberglaw.com/health-law-and-business/expected-timeline-for-mental-health-coverage-rule-slips-to-2027"
      }
     ],
     "sections": [
      {
       "bullets": [
        {
-        "emoji": "⚖️",
-        "text": "Newsom also signed AB 1979 and SB 503 on Wednesday, barring health facilities and physician offices from using AI to independently perform licensed clinical functions.",
-        "url": "https://www.gov.ca.gov/2026/09/30/californias-nation-leading-ai-framework-just-got-stronger-governor-newsom-signs-more-first-in-the-nation-worker-protections-and-more/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Connecticut's omnibus AI law began taking effect on Thursday, though its AI-companion duties to detect suicide and self-harm risk start on 2027-01-01.",
-        "url": "https://dailycampus.com/2026/09/30/new-ai-regulation-law-goes-into-effect-oct-1/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Four House members from both parties introduced H.R. 10719 on Thursday, which would make a non-personified setting the default for chatbot users known to be minors.",
-        "url": "https://millermeeks.house.gov/media/press-releases/miller-meeks-introduces-bipartisan-legislation-protect-children-human-chatbots"
-       }
-      ],
-      "emoji": "⚖️",
-      "heading": "AI chatbots and clinical AI rules"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🏥",
-        "text": "The 988 Lifeline resumed its Press 3 option for LGBTQ+ youth on Wednesday, 14 months after the Trump administration ended it.",
-        "url": "https://spectrumlocalnews.com/hi/hawaii/news/2026/09/30/988-option-3"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "California's AB 2011, signed Wednesday, requires insurers to follow the federal parity law and rules as they stood on 2025-01-01, locking the 2024 rules into state law.",
-        "url": "https://www.gov.ca.gov/2026/09/30/governor-newsom-issues-legislative-update-9-30-2026/"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "The Senate HELP Committee voted 12-11 on party lines Wednesday to advance Timothy Westlake as Assistant Secretary for Mental Health and Substance Use.",
-        "url": "https://thehill.com/policy/healthcare/6108404-senate-advances-trump-surgeon-general-nominee/"
-       }
-      ],
-      "emoji": "🏥",
-      "heading": "Coverage, 988 and federal posts"
-     },
-     {
-      "bullets": [
-       {
-        "emoji": "🏥",
-        "text": "CMS approved Maine's Whole Person Care waiver, letting MaineCare pay for stays of up to 60 days in large psychiatric hospitals for adults with serious mental illness from 2028-07-01.",
-        "url": "https://www3.maine.gov/dhhs/blog/cms-approves-maines-waiver-expand-whole-person-care-2026-10-01"
-       },
-       {
-        "emoji": "⚖️",
-        "text": "Reps. Bentz and Goldman introduced the IMD CARE Act (H.R. 10647) on Thursday to let states pay for such stays through a state plan amendment instead of a waiver.",
-        "url": "http://bentz.house.gov/media/press-releases/congressmen-bentz-and-goldman-introduce-the-imd-care-act-for-patients-suffering-from-serious-mental-illnesses"
-       },
-       {
         "emoji": "💰",
-        "text": "New York's Medicaid cut to autism-therapy payments for behavior technicians took effect Thursday, which providers say leaves them about half of what the state paid in early 2025.",
-        "url": "https://www.timesunion.com/health/article/medicaid-autism-therapy-cuts-applied-behavior-22452876.php"
+        "text": "STREETS awards $3 million a year to each of eight communities, for four years, to serve people who are homeless and have serious mental illness, addiction or both.",
+        "url": "/threads/mh-clinical-infra-funding/"
+       },
+       {
+        "emoji": "🤝",
+        "text": "Headspace's help center says Sword's purchase closed on Thursday; Sword has not confirmed it publicly.",
+        "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+       },
+       {
+        "emoji": "🏥",
+        "text": "Talkiatry, which calls itself the largest private employer of psychiatrists in the US, says 85% of its therapists are licensed in more than one state.",
+        "url": "https://www.prnewswire.com/news-releases/talkiatry-expands-therapy-nationwide-now-available-alongside-psychiatric-care-in-all-50-states-302896750.html"
        },
        {
         "emoji": "⚠️",
-        "text": "A Marion County, Oregon grand jury reported Wednesday that Oregon State Hospital lacks the beds, trained staff and overnight physician coverage to treat patients safely.",
-        "url": "https://www.kptv.com/2026/09/30/grand-jury-uncovers-crisis-oregon-state-hospital/"
+        "text": "The Ohio provider, with offices from Austintown to Steubenville, gave no reason for closing, according to the Youngstown stations.",
+        "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
        }
       ],
       "emoji": "💰",
-      "heading": "Psychiatric care capacity and payment"
+      "heading": "Friday: funding and provider moves"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "🏥",
+        "text": "Oklahoma began issuing Counseling Compact privileges on Thursday, becoming the tenth state to let counselors from other member states practice there.",
+        "url": "https://counselingcompact.gov/10-states-now-offering-privileges/"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "The parity rule's slip to 2027 comes from a government legal filing.",
+        "url": "https://news.bloomberglaw.com/health-law-and-business/expected-timeline-for-mental-health-coverage-rule-slips-to-2027"
+       },
+       {
+        "emoji": "⚠️",
+        "text": "On Thursday HHS said it \"remains fully aligned\" with the gender-ideology orders when asked about 988 counselors using callers' chosen names and pronouns.",
+        "url": "https://www.advocate.com/health/mental-health/988-returns-questions-remain"
+       },
+       {
+        "emoji": "🏥",
+        "text": "CMS approved Maine's Whole Person Care waiver through 2031, including paid psychiatric hospital stays of up to 60 days for adults with serious mental illness from 2028.",
+        "url": "https://www3.maine.gov/dhhs/blog/cms-approves-maines-waiver-expand-whole-person-care-2026-10-01"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "Licensing, coverage and crisis care"
+     },
+     {
+      "bullets": [
+       {
+        "emoji": "⚖️",
+        "text": "Four House members introduced the Protecting Kids from Human-Like Chatbots Act (H.R. 10719) on Thursday; it is a bill, not law.",
+        "url": "https://millermeeks.house.gov/media/press-releases/miller-meeks-introduces-bipartisan-legislation-protect-children-human-chatbots"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Governor Newsom vetoed SB 903 on Wednesday, a bill to bar companion chatbots from providing psychotherapy, calling it overly broad.",
+        "url": "https://www.gov.ca.gov/wp-content/uploads/2026/09/VETO-msg-SB-903.pdf"
+       },
+       {
+        "emoji": "⚖️",
+        "text": "Connecticut's omnibus AI law began taking effect on Thursday, with its AI-companion duties to detect suicide and self-harm risk starting 2027-01-01.",
+        "url": "https://dailycampus.com/2026/09/30/new-ai-regulation-law-goes-into-effect-oct-1/"
+       }
+      ],
+      "emoji": "⚖️",
+      "heading": "AI chatbots and the law (Wednesday and Thursday)"
      }
     ],
     "watch": [
-     "Whether other states follow California's split between signing narrow clinical-AI limits and vetoing broader chatbot-therapy bans, and how H.R. 10719 fares in Congress.",
-     "Whether the parity replacement proposal actually arrives in 2027, and how states such as California fill the gap in the meantime."
+     "Whether Sword confirms the Headspace closing and what happens to the two companies' products and staff.",
+     "Whether more eastern Ohio patients of the closed provider find continuing care, and whether a reason for the shutdown emerges.",
+     "When the administration's parity-rule replacement proposal actually appears, given the filing now points to 2027."
     ]
    },
-   "fingerprint": "ac823a90650ed10a",
-   "generated": "2026-10-02T14:58:40Z",
+   "fingerprint": "395b691a048d5f7c",
+   "generated": "2026-10-02T20:17:11Z",
    "generated_by": "curation+llm",
    "news": [
     {
@@ -3576,6 +3672,16 @@
       "nvidia-vendor-financing"
      ],
      "url": "https://www.ft.com/content/97d8d346-519e-48fb-8df8-66cf5f12ef62"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
     }
    ],
    "fingerprint": "bf0e07cb7f41f3bf",
@@ -3756,6 +3862,25 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Anthropic launched Claude Frontier Academy on Friday, committing $100 million to train 10,000 \"Frontier Deployed Engineers\" by the end of 2027",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://www.anthropic.com/news/claude-frontier-academy"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "CNN and CBS report that President Trump is expected to name Director of National Intelligence Jay Clayton as his AI czar, possibly as early as Friday, while Clayton keeps his intelligence post; the White House calls the reporting \"baseless speculation\"",
      "threads": [
       "frontier-model-gov-review-precedent"
@@ -3891,6 +4016,15 @@
   },
   "node:apple": {
    "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Apple said Friday it will add new controls around macOS \"Full Disk Access,\" citing the risks AI agents pose when granted that level of access",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://developer.apple.com/news/?id=p6zjojqw"
+    },
     {
      "day": "2026-10-02",
      "sev": null,
@@ -4046,6 +4180,15 @@
       "ai-buildout-debt-risk"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Blue Owl Credit Income Corp., a private credit fund, said investors asked to withdraw an estimated $3.1 billion, or 16.8% of its shares, in the third quarter, and that it will meet only its 5% limit, about 30% of the amount requested.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
     }
    ],
    "fingerprint": "924243f7b31d22cf",
@@ -4179,6 +4322,15 @@
       "ai-buildout-debt-risk"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Blue Owl Credit Income Corp., a private credit fund, said investors asked to withdraw an estimated $3.1 billion, or 16.8% of its shares, in the third quarter, and that it will meet only its 5% limit, about 30% of the amount requested.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
     }
    ],
    "fingerprint": "115a8410271c96a2",
@@ -5380,11 +5532,45 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Apple said Friday it will add new controls around macOS \"Full Disk Access,\" citing the risks AI agents pose when granted that level of access",
+     "threads": [
+      "enterprise-agent-product-race"
+     ],
+     "url": "https://developer.apple.com/news/?id=p6zjojqw"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Meta is letting go of the Virtue AI safety-startup staff it hired in June, four months after they joined, a Meta spokesperson told Semafor",
+     "threads": [],
+     "url": "https://www.semafor.com/article/10/02/2026/meta-parts-ways-with-virtue-ai"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "Blue Owl again limited withdrawals from two of its private credit funds to 5% after investors asked to pull 39% of shares in its technology lending fund and 17% in a second fund, Bloomberg reported.",
      "threads": [
       "ai-buildout-debt-risk"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Blue Owl Credit Income Corp., a private credit fund, said investors asked to withdraw an estimated $3.1 billion, or 16.8% of its shares, in the third quarter, and that it will meet only its 5% limit, about 30% of the amount requested.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
     }
    ],
    "fingerprint": "c84ce0895f6dd827",
@@ -5905,6 +6091,15 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "Seagate fell about 10% and Western Digital about 7% in early Friday trading after Nikkei Asia reported that Toshiba plans to double its hard-disk-drive output.",
      "threads": [
       "ai-memory-shortage"
@@ -5919,6 +6114,15 @@
       "ai-buildout-debt-risk"
      ],
      "url": "https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Blue Owl Credit Income Corp., a private credit fund, said investors asked to withdraw an estimated $3.1 billion, or 16.8% of its shares, in the third quarter, and that it will meet only its 5% limit, about 30% of the amount requested.",
+     "threads": [
+      "ai-buildout-debt-risk"
+     ],
+     "url": "https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm"
     }
    ],
    "fingerprint": "799403cf276eee74",
@@ -6070,28 +6274,30 @@
     {
      "day": "2026-10-02",
      "sev": null,
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
      "text": "CNN and CBS report that President Trump is expected to name Director of National Intelligence Jay Clayton as his AI czar, possibly as early as Friday, while Clayton keeps his intelligence post; the White House calls the reporting \"baseless speculation\"",
      "threads": [
       "frontier-model-gov-review-precedent"
      ],
      "url": "https://kvia.com/politics/cnn-us-politics/2026/10/02/trump-is-expected-to-name-jay-clayton-as-ai-czar/"
-    },
-    {
-     "day": "2026-10-02",
-     "sev": null,
-     "text": "Axios reports a \"grassroots rebellion\" of elite researchers inside OpenAI and other frontier labs is shaping company policy, including OpenAI president Greg Brockman scrapping a planned $25 million donation to a pro-AI political group",
-     "threads": [
-      "openai-agent-security-incident",
-      "frontier-model-gov-review-precedent"
-     ],
-     "url": "https://www.axios.com/2026/10/02/openai-anthropic-ai-researchers-rebellion"
-    },
-    {
-     "day": "2026-10-02",
-     "sev": null,
-     "text": "A recently patched flaw in OpenAI's ChatGPT macOS app could have let an attacker take over the app and read its chat logs and connected browser sessions, Wired reported",
-     "threads": [],
-     "url": "https://www.wired.com/story/a-flaw-in-chatgpts-mac-app-could-have-let-hackers-grab-sensitive-data/"
     }
    ],
    "fingerprint": "ae40097b529ae79f",
@@ -7120,7 +7326,36 @@
    "title": "spacex"
   },
   "node:spring-health": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "HHS Secretary Robert F. Kennedy Jr. announced in Houston on 10-02 that eight communities will receive $96 million over four years, $3 million a year each, under the new STREETS program for people who are homeless and have serious mental illness, addiction or both.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Sword Health's acquisition of Headspace closed on Thursday, 10-01, Headspace's help center says, inside the fourth-quarter window the companies announced on 09-16.",
+     "threads": [
+      "mh-clinical-infra-funding",
+      "dtx-payment-paradox"
+     ],
+     "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Comprehensive Behavioral Health Associates, a provider with offices in Austintown, Boardman, Howland, Salem, Alliance, East Liverpool and Steubenville in eastern Ohio, closed all of its offices on Friday 10-02, according to Youngstown television stations WKBN and WFMJ.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
+    }
+   ],
    "fingerprint": "c0f434faa39e5079",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -7228,7 +7463,36 @@
    "title": "spring-health"
   },
   "node:talkspace": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "HHS Secretary Robert F. Kennedy Jr. announced in Houston on 10-02 that eight communities will receive $96 million over four years, $3 million a year each, under the new STREETS program for people who are homeless and have serious mental illness, addiction or both.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Sword Health's acquisition of Headspace closed on Thursday, 10-01, Headspace's help center says, inside the fourth-quarter window the companies announced on 09-16.",
+     "threads": [
+      "mh-clinical-infra-funding",
+      "dtx-payment-paradox"
+     ],
+     "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Comprehensive Behavioral Health Associates, a provider with offices in Austintown, Boardman, Howland, Salem, Alliance, East Liverpool and Steubenville in eastern Ohio, closed all of its offices on Friday 10-02, according to Youngstown television stations WKBN and WFMJ.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
+    }
+   ],
    "fingerprint": "d991306291dd0b8f",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -8499,7 +8763,18 @@
    "title": "Asset Managers Build"
   },
   "thread:aws-capex": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Amazon Web Services said Friday it will invest more than $1 billion over five years in the communities that host its data centers and no longer uses non-disclosure agreements with government agencies on its projects",
+     "threads": [
+      "datacenter-backlash-capital-risk",
+      "aws-capex"
+     ],
+     "url": "https://thehill.com/policy/technology/6126145-amazon-investment-data-center-communities-energy-water-costs/"
+    }
+   ],
    "fingerprint": "7c9a0aca1c874fb6",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -9725,7 +10000,36 @@
    "title": "Meta Gas Pivot"
   },
   "thread:mh-clinical-infra-funding": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "HHS Secretary Robert F. Kennedy Jr. announced in Houston on 10-02 that eight communities will receive $96 million over four years, $3 million a year each, under the new STREETS program for people who are homeless and have serious mental illness, addiction or both.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.hhs.gov/press-room/secretary-kennedy-announces-96-million-streets-program-homelessness-addiction.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Sword Health's acquisition of Headspace closed on Thursday, 10-01, Headspace's help center says, inside the fourth-quarter window the companies announced on 09-16.",
+     "threads": [
+      "mh-clinical-infra-funding",
+      "dtx-payment-paradox"
+     ],
+     "url": "https://help.headspace.com/hc/en-us/articles/56582692601115-Has-the-deal-closed"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Comprehensive Behavioral Health Associates, a provider with offices in Austintown, Boardman, Howland, Salem, Alliance, East Liverpool and Steubenville in eastern Ohio, closed all of its offices on Friday 10-02, according to Youngstown television stations WKBN and WFMJ.",
+     "threads": [
+      "mh-clinical-infra-funding"
+     ],
+     "url": "https://www.wkbn.com/news/local-news/austintown-news/comprehensive-behavioral-health-associates-closing-locations/"
+    }
+   ],
    "fingerprint": "c0f434faa39e5079",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -10017,7 +10321,17 @@
    "title": "Nuclear for AI"
   },
   "thread:nvidia-order-book": {
-   "breaking": [],
+   "breaking": [
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported",
+     "threads": [
+      "nvidia-order-book"
+     ],
+     "url": "https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion"
+    }
+   ],
    "fingerprint": "47b092c92dc6ee31",
    "generated": "2026-07-29T15:19:35Z",
    "generated_by": "llm",
@@ -10352,6 +10666,37 @@
       "iran-conflict-widening"
      ],
      "url": "https://www.politico.eu/article/france-floats-major-release-of-oil-and-diesel-reserves-in-response-to-us-pressure/"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "US stocks closed Friday with the S&P 500 at 7,722.72, the Dow at 51,176.96 and the Nasdaq at 27,190.86 after a weak jobs report, while the 10-year Treasury yield ended at 5.28%, above Thursday's 5.24%.",
+     "threads": [
+      "cross-border-rates",
+      "red-sea-oil-shock",
+      "fed-independence-fight"
+     ],
+     "url": "https://finance.yahoo.com/markets/stocks/articles/stock-market-today-oct-2-135416764.html"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Brent was back near $102 a barrel by 2:52pm ET, flat on the day, after dipping below $100 before the G7's 100-million-barrel announcement and trading near $100.8 shortly after it.",
+     "threads": [
+      "red-sea-oil-shock",
+      "iran-conflict-widening"
+     ],
+     "url": "https://www.thenationalnews.com/business/energy/2026/10/02/g7-members-agree-to-release-100-million-barrels-of-diesel-and-other-reserves/"
+    },
+    {
+     "day": "2026-10-02",
+     "sev": null,
+     "text": "Saudi Arabia is planning an offensive against the Houthis in Yemen, expected within weeks, to retake the Bab el-Mandeb coast, six officials told Reuters.",
+     "threads": [
+      "yemen-civil-war",
+      "red-sea-oil-shock"
+     ],
+     "url": "https://hk.news.yahoo.com/articles/saudis-plan-assault-houthis-break-160352911.html"
     }
    ],
    "fingerprint": "c0673bcb56a19813",

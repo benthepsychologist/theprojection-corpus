@@ -13,6 +13,10 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
+## 2026-10-02 — Nvidia hits first record high since May
+
+- **Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported** Bloomberg's first dispatch was at about 9:47am ET and its headline says the value "nears $6 trillion"; Quartz puts the value at around $5.7 trillion and attributes the run to the $150 billion buyback increase Nvidia's board approved on Monday, September 28, and the company's agent-security system. Friday's close was not yet in. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion), [Quartz](https://qz.com/nvidia-stock-record-high-market-cap-6-trillion-100226)) ⟨daily 2026-10-02⟩
+
 ## 2026-09-23 — Supermicro says it is shipping Vera Rubin NVL72 racks
 
 - **Supermicro announced on 09-23 that it is now shipping Nvidia Vera Rubin NVL72 racks, integrated with its liquid-cooling stack, with customers able to order "Scalable Units" of production-ready systems.** The press release gives no volumes or customer names, so it is a vendor claim about availability rather than an order-book number, but Rubin availability is what the ~$1T Blackwell-plus-Rubin book depends on. ([PR Newswire](https://www.prnewswire.com/news-releases/supermicro-now-shipping-nvidia-vera-rubin-nvl72-racks-302886839.html)) ⟨daily 2026-09-23⟩

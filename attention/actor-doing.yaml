@@ -90,6 +90,8 @@ actors:
   anthropic:
     asof: '2026-10-02'
     doing: |-
+      New 10-02 (afternoon): A $100M TRAINING PUSH. Anthropic launched Claude Frontier Academy, committing $100 million to train 10,000 'Frontier Deployed Engineers' by the end of 2027, with first cohorts in San Francisco, New York and London drawn from Accenture, Bain, Capgemini, Commonwealth Bank of Australia, Deloitte, McKinsey, Morgan Stanley and Novo Nordisk.
+
       New 10-01/02: INVESTOR DAY SET, AND THE PROSPECTUS NAMES WASHINGTON AS A RISK. Bloomberg reported Anthropic will hold a pre-IPO investor day on 10-14; Reuters, describing the still-unpublished prospectus, said it warns government attitudes toward the company could affect customers and partners, with agency contracts under 1% of revenue. Bloomberg separately reported Broadcom is assembling $60bn of debt for AI chip buyers, without saying how it relates to the up-to-$42bn Anthropic loan. On 10-01 Anthropic shipped 'mods' for Claude Code. EDGAR still shows no public S-1.
 
       New 10-01 (afternoon): A LISTING DATE TAKES SHAPE. Bloomberg reported Anthropic is aiming to list before Thanksgiving (11-26), with formal marketing possibly from the week of 11-09; no public S-1 is on EDGAR yet. President Trump told TIME the government 'might' take stakes in Anthropic and OpenAI.
@@ -119,84 +121,26 @@ actors:
       New 09-15: TRUMP'S ATTACKS ON AMODEI TURNED PERSONAL. What was dismissal on 09-14 ("guardrails, not a slowdown") hardened into open attack by the next news cycle: Truth Social posts styling Trump the "Hoax Buster," calling the pacing warnings a "HOAX" and "SICK conspiracy," and mocking Amodei as "pretending to be a 'perfect little angel.'" This is now a direct, named political target rather than a generic rejection of "the CEOs" — the clearest escalation yet in the pacing-pledge fight this map has tracked since 09-12.
       New 09-11: THE THREAT REPORT IS BIGGER THAN ANYONE'S READING OF IT. Anthropic's September threat-intelligence report covers SEVEN harm areas by its own text — cyber operations, influence operations, surveillance, scams and fraud, biological misuse, conventional weapons development, and distillation. Beyond the bio-misuse and Alibaba/Qwen distillation material already recorded: it names DeepSeek, Moonshot, Zhipu and Xiaomi, and for the first three documents SILENT RELAY — routing their own customers' live requests to Claude, serving the answers back under their own brand, and harvesting the exchange, which exposed a PLA-affiliated user pulling Chengdu CCTV surveillance through Kimi and live Russian MoD-linked database credentials through DeepSeek. It documents six weapons-development cases (Yemen/Houthi missile programmes, a Russian autonomous drone swarm with a no-human-in-the-loop 'person' target class, a Chinese electronic-warfare suite). And its influence/surveillance sections — which this map did not reach until a coverage critic caught it — carry a 4,700-persona dating-app fraud network, a mass-interception platform designed for Mali's national security service, and a recruitment operation against Uyghur targets in Syria. Separately: Andrew Tulloch, whom Meta reportedly paid up to $1.5bn to rejoin under a year ago, is joining Anthropic's inference and performance team; and a researcher resigned publicly saying AI firms are "gambling with our lives," which is what the overnight congressional reaction wave was reacting to.
   apple:
-    asof: '2026-08-30'
-    doing: 'New 08-30: the AI health coach has a concrete window again. Gurman,
-      via
+    asof: '2026-10-02'
+    doing: |-
+      New 10-02: TIGHTENING WHAT AGENTS CAN READ. Apple said it will add controls around macOS 'Full Disk Access', requiring 'very explicit user action' to grant it, and framed the change around AI agents growing more capable and autonomous; it gave no date or macOS version. TechCrunch tied it to the dispute over Meta's Muse app reading a journalist's messages.
 
+      New 08-30: the AI health coach has a concrete window again. Gurman, via
       9to5Mac (08-29), puts the long-slipping "Mulberry" coach at a September
-
       hardware event or, failing that, iOS 27.1 in October -- replacing the
-
       open-ended timeline carried since July. Still no mental-health-specific
-
       detail, which is the part this map actually needs from it: everything
-
       known describes a general wellness coach, and nothing says whether it will
-
       make claims that would engage a standard of care.
 
+      New 08-21: the Senate deadline arrived and Apple said nothing. The bipartisan letter of 07-29 — seven senators, Jim Banks (R-IN) and Chuck Schumer leading, with Andy Kim, Jeanne Shaheen, Mike Crapo, Pete Ricketts and James Risch — demanded a written commitment not to source memory from CXMT or YMTC, both on the Pentagon's list of Chinese military-linked companies. Due today; no public response from Apple, nothing on Banks's press page since 08-17, and Schumer's most recent Apple/CXMT item is still the original 07-30 release. `apple-cxmt-senate-deadline` flipped to passed-silent — ⚠️ at ~10:00 ET on the deadline day itself, so the 3-day grace re-sweep is what would catch a late answer. Silence is the posture here: refusing in writing and complying quietly are different things, and Apple has done neither visibly.
+      New 08-16: still quiet since 08-14 — no Apple-specific development in either day's sweep; `apple-cxmt-senate-deadline` (the bipartisan Senate group's deadline for Apple to reject CXMT/YMTC) remains pending, due 08-21. Standing picture below holds.
+      New 08-14: confirmed it trained its own proprietary China-specific AI model with Alibaba's support — Alibaba's Qwen will be integrated into the China experience across iOS/iPadOS/macOS/visionOS — ending its reliance on third-party models for Apple Intelligence in mainland China and reportedly making Apple the first foreign company Beijing has cleared to deploy a proprietary AI model domestically. Follows China's cyberspace regulator registering Apple Intelligence, clearing a rollout in coming months; distinct from the Gemini deal that serves the rest-of- world Apple Intelligence experience, and read as Apple's push to counter Huawei in China with a compliant local offering. This gives the 08-09 CXMT-testing tension a cleaner resolution than the map could confirm at the time: Apple is running two separate China tracks (a domestic model track, now confirmed, and a memory-sourcing track, still open).
+      New 08-13: China's CXMT overtook Tencent to become China's most valuable listed company on continued AI-driven semiconductor demand — the same memory maker Apple has been testing as a China-market DRAM source since 08-09.
+      New 08-12: in talks with publishers on multiyear licensing deals — a pay-per-use structure with a reported nine-figure budget — to feed real- time news content into a rebuilt, AI-powered Siri due later this year (WSJ), distinct from typical flat-fee AI licensing and a direct response to years of criticism over Siri's capability relative to ChatGPT/Gemini.
+      Standing picture: the global memory fight resolved against Apple (07-30→08-07) — it gave up qualifying CXMT as a fourth global DRAM supplier after CXMT wouldn't price below Samsung/SK Hynix, having committed capacity to Huawei/Xiaomi at premium rates. A bipartisan Senate group set an 08-21 deadline for Apple to commit to rejecting CXMT/YMTC entirely; Micron is lobbying against Apple's China-market plan. TSMC reportedly sitting on ~$1B of finished A20 Pro chips it can't complete without matching DRAM. Cook (final earnings call as CEO, 07-31) called the shortage "a hundred year flood on memory pricing," confirmed Mac/iPad price hikes. Still the free-but-idle vault (≈$0 net thrust, ~$94B/yr returned), extended a >$30B Broadcom supply deal that functions like thrust off-books. Trade-secret letters to 400+ ex-staff over the OpenAI poach fight.
 
-      New 08-21: the Senate deadline arrived and Apple said nothing. The bipartisan
-      letter of 07-29 — seven senators, Jim Banks (R-IN) and Chuck Schumer leading,
-      with Andy Kim, Jeanne Shaheen, Mike Crapo, Pete Ricketts and James Risch —
-      demanded a written commitment not to source memory from CXMT or YMTC, both
-      on the Pentagon''s list of Chinese military-linked companies. Due today; no
-      public response from Apple, nothing on Banks''s press page since 08-17, and
-      Schumer''s most recent Apple/CXMT item is still the original 07-30 release.
-      `apple-cxmt-senate-deadline` flipped to passed-silent — ⚠️ at ~10:00 ET on
-      the deadline day itself, so the 3-day grace re-sweep is what would catch a
-      late answer. Silence is the posture here: refusing in writing and complying
-      quietly are different things, and Apple has done neither visibly.
-
-      New 08-16: still quiet since 08-14 — no Apple-specific development in either
-      day''s sweep; `apple-cxmt-senate-deadline` (the bipartisan Senate group''s
-      deadline for Apple to reject CXMT/YMTC) remains pending, due 08-21. Standing
-      picture below holds.
-
-      New 08-14: confirmed it trained its own proprietary China-specific AI model
-      with Alibaba''s support — Alibaba''s Qwen will be integrated into the China
-      experience across iOS/iPadOS/macOS/visionOS — ending its reliance on third-party
-      models for Apple Intelligence in mainland China and reportedly making Apple
-      the first foreign company Beijing has cleared to deploy a proprietary AI model
-      domestically. Follows China''s cyberspace regulator registering Apple Intelligence,
-      clearing a rollout in coming months; distinct from the Gemini deal that serves
-      the rest-of- world Apple Intelligence experience, and read as Apple''s push
-      to counter Huawei in China with a compliant local offering. This gives the
-      08-09 CXMT-testing tension a cleaner resolution than the map could confirm
-      at the time: Apple is running two separate China tracks (a domestic model
-      track, now confirmed, and a memory-sourcing track, still open).
-
-      New 08-13: China''s CXMT overtook Tencent to become China''s most valuable
-      listed company on continued AI-driven semiconductor demand — the same memory
-      maker Apple has been testing as a China-market DRAM source since 08-09.
-
-      New 08-12: in talks with publishers on multiyear licensing deals — a pay-per-use
-      structure with a reported nine-figure budget — to feed real- time news content
-      into a rebuilt, AI-powered Siri due later this year (WSJ), distinct from typical
-      flat-fee AI licensing and a direct response to years of criticism over Siri''s
-      capability relative to ChatGPT/Gemini.
-
-      Standing picture: the global memory fight resolved against Apple (07-30→08-07)
-      — it gave up qualifying CXMT as a fourth global DRAM supplier after CXMT wouldn''t
-      price below Samsung/SK Hynix, having committed capacity to Huawei/Xiaomi at
-      premium rates. A bipartisan Senate group set an 08-21 deadline for Apple to
-      commit to rejecting CXMT/YMTC entirely; Micron is lobbying against Apple''s
-      China-market plan. TSMC reportedly sitting on ~$1B of finished A20 Pro chips
-      it can''t complete without matching DRAM. Cook (final earnings call as CEO,
-      07-31) called the shortage "a hundred year flood on memory pricing," confirmed
-      Mac/iPad price hikes. Still the free-but-idle vault (≈$0 net thrust, ~$94B/yr
-      returned), extended a >$30B Broadcom supply deal that functions like thrust
-      off-books. Trade-secret letters to 400+ ex-staff over the OpenAI poach fight.
-
-
-      New 08-25: shipped the first commercial silicon on TSMC''s N2 (2nm) node —
-      the M6 in a refreshed Mac mini, with the M5 Ultra in a refreshed Mac Studio.
-      The significance is the node, not the Macs: N2 is now proven in mass production
-      for every customer queued behind it. Separately still silent on the Senate''s
-      CXMT/YMTC memory-sourcing demand, five days past a deadline that passed with
-      no statement from Apple and no follow-up from any signer.
-
-      '
+      New 08-25: shipped the first commercial silicon on TSMC's N2 (2nm) node — the M6 in a refreshed Mac mini, with the M5 Ultra in a refreshed Mac Studio. The significance is the node, not the Macs: N2 is now proven in mass production for every customer queued behind it. Separately still silent on the Senate's CXMT/YMTC memory-sourcing demand, five days past a deadline that passed with no statement from Apple and no follow-up from any signer.
   arm:
     asof: '2026-09-17'
     doing: 'New 09-17: CEO Rene Haas told CNBC (09-16) his confidence in the $2bn
@@ -772,8 +716,10 @@ actors:
 
       '
   meta-ai:
-    asof: "2026-09-29"
+    asof: '2026-10-02'
     doing: |-
+      New 10-02: A SAFETY ACQUI-HIRE UNWINDS; MUSE UNDER SCRUTINY. Meta is letting go of the Virtue AI staff it hired in June (Semafor; spokesperson Andy Stone: 'the arrangement didn't work out as planned'), and Apple's new macOS Full Disk Access controls were tied by TechCrunch to a dispute over Muse reading a journalist's messages, which Meta disputes.
+
       New 09-28/29: launched Meta Enterprise Platform, hiring MongoDB's CEO to run it (MongoDB fell over 17%); extended its Muse agent to small businesses on 09-29 (Shopify, Dropbox, Slack, Stripe, QuickBooks, Notion); two users reported Muse acting without permission (a Marketplace address leak; 187,000 Mac Messages lines).
       New 09-25: MUSE CLIMBS. Meta's Muse app passed 3.4 million downloads by 09-24 per Sensor Tower and has held the top spot on the US App Store since 09-18 and on Google Play since 09-19, with daily users up 27% after Connect (TechCrunch, 09-25). Other trackers put downloads between about 2.3 and 4.3 million.
 

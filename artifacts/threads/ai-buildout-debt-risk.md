@@ -11,6 +11,7 @@ opened: 2026-08-11
 ## 2026-10-02 — Blue Owl again caps withdrawals from two private credit funds
 
 - **Blue Owl again limited withdrawals from two of its private credit funds to 5% after investors asked to pull 39% of shares in its technology lending fund and 17% in a second fund, Bloomberg reported.** The roughly $5 billion Blue Owl Technology Income Corp. is the largest fund of its kind focused on technology lending; requests rose slightly from 38.1% in the prior quarter, and fears about artificial intelligence kept them well above industry peers. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-02/blue-owl-again-caps-two-bdcs-after-39-17-withdrawal-requests)) ⟨daily 2026-10-02⟩
+- **Blue Owl Credit Income Corp., a private credit fund, said investors asked to withdraw an estimated $3.1 billion, or 16.8% of its shares, in the third quarter, and that it will meet only its 5% limit, about 30% of the amount requested.** Its 8-K said demand was down from 18.8% in the second quarter and 21.9% in the first, that it will have returned $2.8 billion within six months, and that more than 90% of its 90,000 shareholders remain fully invested. ([SEC 8-K, Exhibit 99.1](https://www.sec.gov/Archives/edgar/data/1812554/000119312526411315/d136475dex991.htm)) ⟨daily 2026-10-02⟩
 
 ## 2026-10-01 — Broadcom's convertible loan extends supplier financing of AI labs
 
