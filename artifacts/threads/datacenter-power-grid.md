@@ -15,6 +15,14 @@ via behind-the-meter gas at gigawatt scale, a hard equipment ceiling
 (turbines sold out to 2030, transformers ~3yr), and the ratepayer +
 environmental-justice fights that improvisation generates.
 
+## 2026-09-29 — Parallax comes out of stealth with $117 million to build a turbine for data centers
+
+- **Parallax came out of stealth with $117 million raised to build a roughly 10-megawatt gas turbine, small enough to ship in a container, designed specifically for AI data centers** The $75 million Series A was led by Greylock and General Catalyst after a $42 million seed co-led by Eclipse and Lux; the company says a 3D-printed core and a cooler-running design avoid single-crystal blades and rhenium superalloy, with a prototype by year-end, testing next year and deliveries in 2028. ([WOWTALE](https://en.wowtale.net/2026/09/29/235268/)) ⟨daily 2026-09-29⟩
+
+## 2026-09-28 — Small gas turbines become the fast path to data-center power, at a cost
+
+- **Sales of small and aeroderivative gas turbines are surging as data-center builders avoid long lead times, with 29.6 gigawatts of behind-the-meter gas generation due to be added in the US through 2030, about 88% of it for data centers, according to Enverus** Lead times for large combined-cycle plants can stretch to six years against about 40 months for aeroderivatives; Crusoe says it ordered 29 GE Vernova 35MW aeroderivative turbines, and Reuters Events says the shift raises long-term power costs and emissions. ([Reuters Events via Pipeline & Gas Journal](https://pgjonline.com/news/2026/september/dash-for-small-gas-turbines-set-to-impact-data-center-costs)) ⟨daily 2026-09-28⟩
+
 ## 2026-09-24 — Energy Department to fund grid-upgrade projects worth 23 gigawatts
 
 - **The Energy Department is set to announce almost $2 billion for 31 grid-upgrade projects across 26 states that it says would add more than 23 gigawatts of capacity, the Associated Press reported Thursday, with Energy Secretary Chris Wright due to announce the grants in Allentown, Pennsylvania.** The projects use sensors and other technology to move more power over existing lines (component upgrades on more than 1,500 miles of transmission lines and technology enhancements across nearly 21,000 miles), the federal $1.9 billion is matched by $3.35 billion from recipients, and the money comes from the 2021 bipartisan infrastructure law. The AP framed it as a response to AI-driven demand and to opposition that "has thrown a wrench into the plans of the world's richest companies." This is a separate program from the $1.9 billion Duane Arnold nuclear restart loan closed 09-08. ([AP via ABC News](https://www-cdn.abcnews.com/Business/wireStory/energy-department-spend-2-billion-squeeze-electricity-aging-136712117)) ⟨daily 2026-09-24⟩

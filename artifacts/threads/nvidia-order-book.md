@@ -13,9 +13,9 @@ crawled: 2026-07-24
 book (a management aggregate, not audited backlog), who's buying, and where the
 constraint has shifted (supply/HBM4, not demand). The circular-financing angle.
 
-## 2026-10-02 — Nvidia hits first record high since May
+## 2026-10-02 — Nvidia touches its first record since May, then closes just short of one
 
-- **Nvidia shares hit their first record high since May on Friday, gaining 2.9% as its market value neared $6 trillion, Bloomberg reported** Bloomberg's first dispatch was at about 9:47am ET and its headline says the value "nears $6 trillion"; Quartz puts the value at around $5.7 trillion and attributes the run to the $150 billion buyback increase Nvidia's board approved on Monday, September 28, and the company's agent-security system. Friday's close was not yet in. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion), [Quartz](https://qz.com/nvidia-stock-record-high-market-cap-6-trillion-100226)) ⟨daily 2026-10-02⟩
+- **Nvidia shares touched their first record high since May on Friday, up as much as 3%, then closed up 1.3%, just short of the May record, as its market value neared $6 trillion, Bloomberg reported** Bloomberg's first dispatch was at about 9:47am ET and its headline says the value "nears $6 trillion"; Quartz puts the value at around $5.7 trillion and attributes the run to the $150 billion buyback increase Nvidia's board approved on Monday, September 28, and the company's agent-security system. Bloomberg's closing account says the stock trimmed its gains after a two-month selloff that wiped out more than $1 trillion of market value, leaving its value at roughly $5.6 trillion. ([Bloomberg](https://www.bloomberg.com/news/articles/2026-10-02/nvidia-hits-first-record-since-may-as-value-nears-6-trillion), [Bloomberg close, via Economic Times](https://economictimes.indiatimes.com/tech/technology/nvidia-falls-short-of-may-record-as-value-nears-6-trillion/articleshow/134657856.cms), [Quartz](https://qz.com/nvidia-stock-record-high-market-cap-6-trillion-100226)) ⟨daily 2026-10-02⟩
 
 ## 2026-09-23 — Supermicro says it is shipping Vera Rubin NVL72 racks
 

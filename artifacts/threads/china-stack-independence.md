@@ -13,6 +13,10 @@ crawled: 2026-07-22
 models, capital) and Washington's response; US chip-equity reaction is the
 measure.
 
+## 2026-10-03 — Bessent: US to propose an AI-incident channel to China
+
+- **Treasury Secretary Scott Bessent said the US plans to propose to China a notification process for AI incidents and told AI executives who fear losing control of their models "then they should slow down," Axios reported Saturday** Bessent told The Axios Show he thinks Beijing would agree, that he and Vice Premier He Lifeng discussed AI safety before Xi Jinping's state visit, that China has realised "how powerful their open source models are" and that the US government's model reviews are voluntary though it reserves the right to intervene; the date of the interview was not stated. ([Axios](https://www.axios.com/2026/10/03/china-ai-bessent-axios-show)) ⟨daily 2026-10-03⟩
+
 ## 2026-10-01 — Khanna presses five AI labs on Chinese theft of model weights; China's ambassador urges cooperation
 
 - **Rep. Ro Khanna, the top Democrat on the House Select Committee on China, wrote to the chief executives of OpenAI, Anthropic, Google, Meta and SpaceX asking what they know about attempts by China or other hostile actors to steal their model weights** He also asked each company to describe its security measures, writing that "the theft of such a model weight by (China) could erode America's AI lead with the stroke of a keyboard"; he also wrote this week to DeepSeek, Alibaba and Moonshot AI and to the US intelligence community. ([The Next Web, citing Reuters](https://thenextweb.com/news/ai-firms-chinese-model-weight-theft), [Reuters](https://www.reuters.com/legal/litigation/leading-democrat-asks-ai-firms-data-any-chinese-access-sensitive-code-2026-10-01/)) ⟨daily 2026-10-01⟩

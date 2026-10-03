@@ -2592,7 +2592,9 @@ expectations:
       increase) takes effect
     due: 2026-10-01
     due_precision: day
-    status: pending
+    status: passed-silent
+    resolved: 2026-10-03
+    evidence: "No confirming document by 10-03: no TVA, local power company or press report that the data-center wholesale rate took effect on 10-01 was found on 10-02 or 10-03 (TVA newsroom 403 to urllib); only pre-event coverage ('by October 1', WAFF 09-25; a local power board's 09-29 approval). Still inside the 3-day grace if a confirming notice turns up."
     confidence: confirmed
     thread: datacenter-power-grid
     entities: []
@@ -3905,7 +3907,9 @@ expectations:
       outcome is whether consumption falls when it stops being free.
     logged: 2026-09-10
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-10-03
+    evidence: "No GSA or OpenAI notice that the 27-month usage-based OneGov agreement took effect on 10-01 was found on 10-02 or 10-03; the only source remains GSA's 09-10 release ('expected to take effect Oct. 1, 2026'). Still inside the 3-day grace."
     # 2026-10-01 ⟨daily⟩: due today; GSA said the agreement was 'expected to take effect Oct. 1';
     # nothing yet confirms it did. Left pending.
     # 2026-10-01 ⟨daily⟩: (15:00 ET run) only a secondary piece (Forkast via Yahoo Finance) says the
@@ -4048,6 +4052,10 @@ expectations:
     # flips it.
     # 2026-10-02 ⟨daily⟩: (15:00 ET run) no delivery of OpenAI's documents reported by about 4pm ET;
     # the 'by the end of the week' promise runs through 10-03.
+    # 2026-10-03 ⟨daily⟩: still no public delivery of documents by about 10am ET 10-03; Forkast
+    # (10-02, secondary) says OpenAI sent written answers and Hawley's office expects more documents
+    # 'by the end of the week', with a subpoena possible if they fall short. If nothing is public by
+    # the next weekday run, flip to passed-silent.
   - id: sf-datacenter-moratorium-vote-0915
     claim: >
       The San Francisco Board of Supervisors votes on a data-centre moratorium
@@ -4389,6 +4397,9 @@ expectations:
     logged: 2026-09-23
     logged_by: curate-add
     status: pending
+    # 2026-10-03 ⟨daily⟩: a 10-03 search summary (not read at source) gives an A$11 offer price,
+    # bookbuild 10-06 to 10-09, prospectus 10-08 and an ASX debut targeted for 10-23 rather than
+    # 10-22; unverified.
   - id: dea-tryptamine-schedule-i-comments-1023
     claim: >
       Comment period closes on DEA's proposed Schedule I placement of five tryptamines including 4-OH-DiPT.
@@ -4888,7 +4899,9 @@ expectations:
     what_confirms: "Hearings held 10-01 and whether either chief executive appears; the request is voluntary."
     logged: 2026-09-26
     logged_by: curate-add
-    status: pending
+    status: passed-silent
+    resolved: 2026-10-03
+    evidence: "No Hansard, readable hearing program or post-hearing report of the 10-01 Canberra hearing was found on 10-02 or 10-03 (aph.gov.au unreachable to urllib), so neither the hearing's proceedings nor who appeared is confirmed; Altman's and Amodei's non-attendance rests on advance reporting (Reuters 09-28, The Next Web). Jason Kwon appears before a separate joint committee in Sydney on 10-06 (openai-kwon-sydney-hearing-1006)."
     # 2026-09-26 15:00 ⟨daily⟩: the Sydney Morning Herald reports the inquiry is summoning Altman and Amodei to the Thursday
     # 10-01 hearing specifically, and that it cannot compel foreign executives to appear (it could press their Australian
     # representatives). Altman apologised on Friday for the pace of OpenAI's notifications.
@@ -4981,6 +4994,9 @@ expectations:
     logged: 2026-09-28
     logged_by: curate-add
     status: pending
+    # 2026-10-03 ⟨daily⟩: Al Jazeera (Reuters and AFP sources, 10-03): government forces retook
+    # Mekelle's Alula Aba Nega airport and TPLF fighters were reported leaving the city; nothing yet
+    # on the Afar/Djibouti road or Afdera.
   - id: us-iran-hormuz-final-response-0929
     claim: "The US delivers its 'final response' to Iran's Hormuz proposals via Qatari mediators on 09-29, as Foreign Minister Araghchi said he expects"
     due: 2026-09-29
@@ -5019,6 +5035,8 @@ expectations:
     logged: 2026-09-29
     logged_by: curate-add
     status: pending
+    # 2026-10-03 ⟨daily⟩: a Council spokesperson confirmed on 10-02 that SpaceXAI is now expected to
+    # testify (amNewYork); the hearing is a full-Council Committee of the Whole.
   - id: openai-pro-200-signups-reopen-0930
     claim: "OpenAI reopens new sign-ups for its $200-a-month ChatGPT Pro plan on 09-30, with a recalculated (roughly halved) API-value allowance"
     due: 2026-09-30
@@ -5091,6 +5109,9 @@ expectations:
     # 2026-10-02 ⟨daily⟩: (15:00 ET run) still not named by about 4pm ET; Reuters, Bloomberg, Axios,
     # CNN and NBC all still say Clayton is 'expected', and the White House says any announcement
     # will come from the President. No statement or presidential post found.
+    # 2026-10-03 ⟨daily⟩: no appointment by about 10am ET 10-03: the New York Times, Reuters, the Wall
+    # Street Journal, the Washington Post and Axios still say Trump is 'expected to name' Jay Clayton;
+    # whitehouse.gov's statements and presidential-actions pages name no one.
   - id: trump-si-legal-definition-1128
     claim: "The president's science adviser proposes a legal definition of 'super intelligence' within the 60 days the 09-29 executive order allows"
     due: 2026-11-28
@@ -5136,6 +5157,11 @@ expectations:
     # minister Fuad Hussein offered to mediate between Iran and the US, and a Foreign Ministry
     # research-centre head told Russia-1 on 10-01 that Araghchi gave Qatar an 'initial response'
     # (Anadolu).
+    # 2026-10-03 ⟨daily⟩: no formal public answer by about 10am ET 10-03. Khatibzadeh (Russia-1
+    # interview 10-01; Tehran Times 10-02) said Iran received the US views via Qatar and wants
+    # 'concrete' guarantees; Supreme National Security Council secretary Mohsen Rezaei's Friday post
+    # rebutted Trump's 'ready to fold up' remark, which is rhetoric, not the answer. Axios: Vance
+    # chaired a Camp David meeting on Iran and the Houthis Friday.
   - id: roiz-blue-shield-amended-complaint-1013
     claim: "Plaintiffs in Roiz v. Blue Shield file an amended complaint after Judge Orrick's 09-23 order dismissing some claims with leave to amend"
     due: 2026-10-13
@@ -5162,6 +5188,8 @@ expectations:
     status: pending
     # 2026-10-01 ⟨daily⟩: Reuters sources on 10-01 still expect a hold at Sunday's meeting (headline
     # only).
+    # 2026-10-03 ⟨daily⟩: Reuters reported on 10-02 that OPEC+ has delayed the capacity review that
+    # sets 2027 quotas (one source: mid-November); no new reporting on Sunday's November decision.
   - id: israel-abu-shehadeh-withdrawal-1002
     claim: "Balad chairman Sami Abu Shehadeh answers the Israeli Supreme Court's request that he withdraw his candidacy by 8am Friday 10-02 (Israel time); if he stays in, the court rules on his disqualification by Sunday 10-04"
     due: 2026-10-02
@@ -5298,5 +5326,17 @@ expectations:
     confidence: reported
     what_confirms: "Committee meeting coverage or a parliamentary statement; UBS's 10-28 results commentary on the capital rules."
     logged: 2026-10-02
+    logged_by: curate-add
+    status: pending
+  - id: headway-marketplace-fee-start-1008
+    claim: "Headway begins charging clinicians a $9.99-per-session marketplace fee for patients found through its new opt-in patient marketplace on 10-08 in Virginia, Washington, Georgia, Ohio and Illinois, with other states later in 2026"
+    due: 2026-10-08
+    due_precision: day
+    thread: mh-clinical-infra-funding
+    entities: []
+    source: https://help.headway.co/hc/en-us/articles/54117060370068-Understanding-the-marketplace-service-fee
+    confidence: confirmed
+    what_confirms: "Headway's help center or clinician communications showing the fee live in the five states, or trade-press coverage of the start; a postponement amid the clinician backlash is a slip."
+    logged: 2026-10-03
     logged_by: curate-add
     status: pending

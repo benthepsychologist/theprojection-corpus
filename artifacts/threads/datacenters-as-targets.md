@@ -17,6 +17,18 @@ filing or on a call, war-risk underwriting and premia for datacentre
 assets, siting decisions citing geopolitical risk — and whether the
 precedent outlives this particular war.
 
+## 2026-10-01 — A third Kyiv data center goes down as dline.ua's is destroyed
+
+- **The dline.ua data center on Predslavynska Street in Kyiv was destroyed in a Russian strike on 10-01, the company said, with all services and customer data moved to backup facilities** Ukrinform counts it as the third Kyiv data center to report suspending operations in recent days; the Parkovy business-center facility ceased operations on 10-01 after critical damage. ([Ukrinform](https://www.ukrinform.net/rubric-ato/4170349-russians-destroy-dlineua-data-center-in-kyiv.html)) ⟨daily 2026-10-01⟩
+
+## 2026-09-30 — Russia strikes the Bi-mobile and Parkovy data centers in Kyiv
+
+- **Russia's overnight attack on Kyiv hit the Bi-mobile data center, which Russia's Defense Ministry called one of the city's main internet exchange points, and the Parkovy data center** CNBC reports Russia has stepped up strikes on Ukrainian data centers and internet providers in recent days to disrupt the flow of information; the Ministry's descriptions are its own claims. ([CNBC](https://www.cnbc.com/2026/09/30/ukraine-war-russia-nato-nuclear-kyiv.html)) ⟨daily 2026-09-30⟩
+
+## 2026-09-27 — Russia hits Kyivstar's headquarters and claims a strike on Vodafone Ukraine's data center
+
+- **A Russian drone struck the headquarters of Ukraine's largest mobile operator Kyivstar on 09-27, and Russia's Defense Ministry claimed it also targeted the data center of Vodafone Ukraine** Breaking Defense, citing Reuters for the ministry claim, reports a recent surge in Russian attacks on Ukrainian data centers; Ukraine's former deputy defense minister Kateryna Chernohorenko says the answer is more underground facilities and far more anti-ballistic and counter-drone capacity, which she calls critically short. ([Breaking Defense](https://breakingdefense.com/2026/10/in-ukraine-data-centers-facing-increased-attacks-in-recent-weeks-ex-official/)) ⟨daily 2026-09-27⟩
+
 ## 2026-09-23 — A Russian strike on Kyiv damages two internet providers' data centers
 
 - **Russian strikes on Kyiv on the morning of 09-23 damaged data centers run by the internet providers Pavutyna and UTELS, leaving about 100,000 households in the capital region with unstable internet, Ukraine's Ministry of Digital Transformation said.** UTELS said the data center holding its core network equipment lost power and Pavutyna said its engineers were working to restore connectivity; the same attack killed two people and wounded about 25, according to Kyiv's mayor. ([Interfax-Ukraine](https://en.interfax.com.ua/news/general/1208652-amp.html), [UA.NEWS](https://ua.news/en/ukraine/rosiiska-ataka-zalishila-blizko-100-tisiach-domogospodarstv-u-kiievi-ta-oblasti-bez-stabilnogo-internetu)) ⟨daily 2026-09-23⟩
