@@ -2067,7 +2067,6 @@ The bizdev digest operation is **dormant — 23 days dark**:
 coordinate with — kestrel launches fresh, which is exactly what
 zero-dependency wants anyway.
 
-<!-- >>> kestrel: base/status#keeping-it-honest @2026-08-21.4 -->
 <!-- ── How to keep this file honest ──────────────────────────────────────
 Rules the engine seeds; the content above is entirely this repo's.
 
@@ -2090,4 +2089,3 @@ Rules the engine seeds; the content above is entirely this repo's.
    worse than a missing one, because it reads as current. This file is a
    snapshot, not a log; the log is `git log`.
 ─────────────────────────────────────────────────────────────────────── -->
-<!-- <<< kestrel: base/status#keeping-it-honest -->

@@ -1,8 +1,4 @@
-<!-- kit: base/INBOX@2026-08-21.4 — canonical: kestrel/library/agentdocs/base/INBOX.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
-
 # INBOX.md — the contract for handing work to theprojection
-
-<!-- >>> kestrel: base/inbox#contract @2026-08-21.4 -->
 
 **If you are an agent in another repo and you have found work that
 belongs to this one, this file is everything you need.** Read it and drop
@@ -177,7 +173,6 @@ This inbox retires if this repo ever becomes governed. At that point open
 entries hand off to the governance layer's own inbox, which is the
 terminal receiver and never retires. Until then, this file is the
 contract.
-<!-- <<< kestrel: base/inbox#contract -->
 
 ---
 

@@ -1,15 +1,3 @@
-<!-- kit: base/AGENTS@2026-08-21.4 — canonical: kestrel/library/agentdocs/base/AGENTS.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
-<!-- THE `>>> kestrel:` FENCES BELOW ARE LOAD-BEARING (since 2026-08-18).
-     They mark the sections the engine owns. kit.py hashes each region
-     separately, so: everything OUTSIDE a fence is yours to write and is
-     never compared — filling in the prompts below is not drift and never
-     reports as one. Everything INSIDE a fence is the engine's; editing it
-     reports as a conflict, and on a library update the engine replaces
-     only those blocks and leaves every other byte of this file alone.
-     Do not delete or reorder a fence marker: a document whose regions are
-     undefined cannot be updated in place, and kestrel refuses to guess
-     rather than risk eating your writing. -->
-
 # AGENTS.md — operating manual for theprojection
 
 **Two things are in this file.** The sections the engine owns state what is
@@ -48,8 +36,6 @@ whether or not it has said so.
 
 ---
 
-<!-- >>> kestrel: base/agents#what-a-kestrel-repo-is @2026-08-21.4 -->
-
 ## 3. What a kestrel-administered agent repo is
 
 **This section is the engine's, and it is identical everywhere.** It exists
@@ -83,10 +69,6 @@ directory should exist, even empty.
 any of these repos, can orient without asking a human where things are. The
 moment a repo invents its own answer to one of these, that stops being true
 for everyone, not just here.
-
-<!-- <<< kestrel: base/agents#what-a-kestrel-repo-is -->
-
-<!-- >>> kestrel: base/agents#shared-disciplines @2026-08-21.4 -->
 
 ## 4. The disciplines every repo here shares
 
@@ -146,8 +128,6 @@ because the local copy is the one someone is reading.
    *Why:* a silently corrupted manifest is not found by the thing that
    broke it. It is found much later, by something unrelated, with the
    cause long out of the window.
-
-<!-- <<< kestrel: base/agents#shared-disciplines -->
 
 ---
 
@@ -272,8 +252,6 @@ delete this section if the repo has none.
 
 ---
 
-<!-- >>> kestrel: base/agents#extending @2026-08-21.4 -->
-
 ## 9. Extending this file — the rules
 
 **Adding to this file is normal and needs no permission.** The engine seeds
@@ -285,12 +263,10 @@ convention:
    sections are the questions every repo has to answer. Answer them in your
    own words. Renumbering or repurposing them makes the fleet's docs stop
    being comparable, which is the one thing a shared skeleton buys.
-2. **Do not edit inside an engine region — and everything outside one is
-   genuinely yours.** The `>>> kestrel:` fences mark content the engine
-   maintains for the whole fleet; it is hashed per region, so an edit
-   inside reports as a conflict while your own sections are never compared
-   at all. If one of those fleet-wide rules is wrong, it is wrong
-   everywhere — route it, do not patch it locally.
+2. **The shared sections carry the fleet's rules, not this repo's.** They
+   were copied in from the engine's base kit; nothing marks them off or
+   keeps them in sync any more. If one of those fleet-wide rules is wrong,
+   it is wrong everywhere — route it, do not patch it locally.
 3. **Say what a thing IS before you say how it is doing.** A name, an
    identifier, a status marker, a filename — each is a pointer. A pointer
    with no unpacking beside it has told the reader nothing. This applies to
@@ -304,17 +280,11 @@ everyone. The test is not "is this useful elsewhere" — most things are — it
 is **"would another repo want this unchanged."** Route it per
 `OPERATING.md`'s jurisdiction section.
 
-<!-- <<< kestrel: base/agents#extending -->
-
 ---
 
 📋 **Everything below this line is yours.** Add whatever this repo needs
 that the sections above did not anticipate — a data model, a CLI reference,
 a cookbook, a runbook, an architecture note.
-
-<!-- kit: composed from attention/AGENTS.md.part.tmpl -->
-
-<!-- kit: attention/AGENTS.part@2026-08-21.4 — canonical: kestrel/library/agentdocs/attention/AGENTS.md.part.tmpl — provenance only. This is a PART: it appends to the base AGENTS.md rather than replacing it (kit.py PART_SUFFIX), so a reader gets the shared layer AND this kind's disciplines in one file. -->
 
 ---
 

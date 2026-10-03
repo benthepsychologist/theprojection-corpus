@@ -1,8 +1,4 @@
-<!-- kit: base/OPERATING@2026-08-21.4 — canonical: kestrel/library/agentdocs/base/OPERATING.md.tmpl — provenance only. A local edit is fine; kit.py sync will flag drift. Route a wanted template change to the engine's issue tracker (dev) or its ops inbox (anything naming a live repo), never a direct edit. -->
-
 # OPERATING.md — the shared contract for theprojection
-
-<!-- >>> kestrel: base/operating#contract @2026-08-21.4 -->
 
 **This file is the same in every repo the engine tends.** It answers the
 questions that are not specific to what this repo is *for*: what you own,
@@ -232,7 +228,6 @@ closed without checking.
 4. **If you edited an engine-rendered file, do not back-port it
    yourself.** File the brief (§3) and stop. This repo showing `dirty`
    afterwards is the expected state until the engine's side acts.
-<!-- <<< kestrel: base/operating#contract -->
 
 ---
 
